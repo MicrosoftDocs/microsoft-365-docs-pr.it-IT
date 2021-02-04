@@ -17,19 +17,19 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 feedback_system: None
-description: La prevenzione della perdita di dati (DLP) nel &amp; Centro sicurezza e conformità include 80 tipi di informazioni riservate pronte per l'uso nei criteri DLP. In questo argomento vengono elencati tutti questi tipi di informazioni riservate e illustrata la ricerca eseguita dal criterio DLP quando rileva ciascun tipo di informazioni.
-ms.openlocfilehash: b70f335fd0742e6bc34957058c6e695530e83507
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: La prevenzione della perdita dei dati (DLP) nel Centro sicurezza e conformità include 80 tipi di informazioni riservate pronte per l'uso &amp; nei criteri DLP. In questo articolo vengono elencati tutti questi tipi di informazioni riservate e viene mostrato cosa cerca un criterio DLP quando rileva ogni tipo.
+ms.openlocfilehash: 431349ffdfc1a9aa05d071ec5ef10d76919f7465
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927132"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094745"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definizioni delle entità tipo di informazioni sensibili
 
-Una tipologia di informazioni riservate viene definita da un modello identificato da un'espressione regolare o da una funzione. Inoltre, è possibile utilizzare elementi probatori, ad esempio, parole chiave e checksum per identificare una tipologia di informazioni riservate. In questa procedura di valutazione vengono usati anche il livello di probabilità e la prossimità.
+La prevenzione della perdita dei dati (DLP) nel Centro conformità include molti tipi di informazioni riservate pronti per l'uso nei criteri DLP. In questo articolo vengono elencati tutti questi tipi di informazioni riservate e viene mostrato cosa cerca un criterio DLP quando rileva ogni tipo. Una tipologia di informazioni riservate viene definita da un modello identificato da un'espressione regolare o da una funzione. Le prove avvaloranti, come parole chiave e checksum, possono essere usate per identificare un tipo di informazione sensibile. In questa procedura di valutazione vengono usati anche il livello di probabilità e la prossimità.
 
-I tipi di informazioni riservate richiedono una delle sottoscrizioni seguenti:
+I tipi di informazioni riservate richiedono uno di questi abbonamenti:
 - Microsoft 365 E3
 - Microsoft 365 E5
 
@@ -39,17 +39,17 @@ I tipi di informazioni riservate vengono utilizzati in:
 - [Etichette di riservatezza](sensitivity-labels.md)
 - [Etichette di conservazione](retention.md)
 - [Conformità delle comunicazioni](communication-compliance.md)
-- [Criteri di etichettatura automatica](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
+- [Criteri di applicazione automatica di etichette](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 
-## <a name="aba-routing-number"></a>Numero di Routing ABA
+## <a name="aba-routing-number"></a>Numero di routing ABA
 
 ### <a name="format"></a>Formato
 
-nove cifre che possono trovarsi in un modello formattato o non formattato
+nove cifre che possono essere formattate o non formattate
 
 ### <a name="pattern"></a>Modello
 
-Formattato
+Formattato:
 - quattro cifre che iniziano con 0, 1, 2, 3, 6, 7 o 8
 - un trattino
 - quattro cifre
@@ -64,11 +64,11 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio ha la sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_aba_routing restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_ABA_Routing.
 
-Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni riservate se, entro 300 caratteri:
+Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - La funzione Func_aba_routing restituisce contenuti che corrispondono al modello.
 
 ```xml
@@ -90,8 +90,8 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 #### <a name="keyword_aba_routing"></a>Keyword_aba_routing
 
 - aba number
-- ABA #
-- ABA
+- aba #
+- aba
 - abarouting #
 - abaroutingnumber
 - americanbankassociationrouting #
@@ -99,26 +99,26 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 - bankrouting #
 - bankroutingnumber
 - routing #
-- instradamento No
-- numero di routing
+- routing no
+- routing number
 - routing transit number
 - routing #
 - RTN
 
 
-## <a name="argentina-national-identity-dni-number"></a>Numero di identità nazionale Argentina (DNI)
+## <a name="argentina-national-identity-dni-number"></a>Argentina - Numero di identità nazionale (DNI)
 
 ### <a name="format"></a>Formato
 
-Otto cifre con o senza periodi
+Otto cifre con o senza punti
 
 ### <a name="pattern"></a>Modello
 
 Otto cifre
 - due cifre
-- un periodo facoltativo
+- un punto facoltativo
 - tre cifre
-- un periodo facoltativo
+- un punto facoltativo
 - tre cifre
 
 ### <a name="checksum"></a>Checksum
@@ -127,9 +127,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare Regex_argentina_national_id trova contenuti che corrispondono al modello.
-- Viene trovata una parola chiave da Keyword_argentina_national_id.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione regolare Regex_argentina_national_id trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_argentina_national_id da un utente.
 
 ```xml
 <!-- Argentina National Identity (DNI) Number -->
@@ -148,22 +148,22 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - Argentina - Numero di identità nazionale 
 - cedula 
 - cédula 
-- DNI 
-- documento Nacional de Identidad 
+- dni 
+- documento nacional de identidad 
 - documento número 
-- numero documento 
-- Registro Nacional de las personas 
-- RNP 
+- documento numero 
+- registro nacional de las personas 
+- rnp 
    
-## <a name="australia-bank-account-number"></a>Australia-numero di conto corrente bancario
+## <a name="australia-bank-account-number"></a>Numero di conto corrente bancario Australia
 
 ### <a name="format"></a>Formato
 
-da sei a dieci cifre con o senza un numero di succursale dello stato della banca
+da sei a dieci cifre con o senza un numero di filiale della banca
 
 ### <a name="pattern"></a>Modello
 
-Il numero dell'account è compreso tra sei e dieci cifre.
+Il numero di conto è da 6 a 10 cifre.
 
 Numero BSB australiano:
 - tre cifre 
@@ -176,13 +176,14 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare Regex_australia_bank_account_number restituisce contenuti che corrispondono al modello.
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- L'espressione regolare Regex_australia_bank_account_number trova contenuto che corrisponde al modello.
 - Viene trovata una parola chiave da Keyword_australia_bank_account_number.
 - L'espressione regolare Regex_australia_bank_account_number_bsb restituisce contenuti che corrispondono al modello.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare Regex_australia_bank_account_number restituisce contenuti che corrispondono al modello.
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- L'espressione regolare Regex_australia_bank_account_number trova contenuto che corrisponde al modello.
+
 - Viene trovata una parola chiave da Keyword_australia_bank_account_number.
 
 ```xml
@@ -216,20 +217,20 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - bank details
 - banking information
 - full names
-- AIEA
+- iaea
 
-## <a name="australia-business-number"></a>Numero dell'azienda Australia
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="australia-business-number"></a>Numero di azienda Australia
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 
 ### <a name="format"></a>Formato
 
-11 cifre con delimitatori opzionali
+11 cifre con delimitatori facoltativi
 
 ### <a name="pattern"></a>Modello
 
@@ -249,12 +250,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_australian_business_number trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keywords_australian_business_number.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_australian_business_number trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keywords_australian_business_number di codice.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_australian_business_number trova contenuto corrispondente al modello.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_australian_business_number trova contenuto che corrisponde al modello.
 
 ```xml
       <!-- Australia Business Number -->
@@ -272,21 +273,21 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keyword_australia_business_number"></a>Keyword_australia_business_number
 
-- Australia business No
-- numero aziendale
-- ABN #
+- australia business no
+- numero dell'azienda
+- abn #
 - businessid #
-- ID business
-- ABN
+- business id
+- abn
 - businessno #
 
-## <a name="australia-company-number"></a>Numero dell'azienda Australia
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="australia-company-number"></a>Numero di società Australia
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -309,12 +310,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_Australian_Company_Number trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keyword_Australian_Company_Number.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_Australian_Company_Number trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_Australian_Company_Number di codice.
 
-Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni riservate se, entro 300 caratteri:
-- La funzione Func_Australian_Company_Number trova contenuto corrispondente al modello.
+Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- La funzione Func_Australian_Company_Number trova contenuto che corrisponde al modello.
 
 ```xml
       <!-- Australia Company Number -->
@@ -332,15 +333,15 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 
 #### <a name="keyword_australia_company_number"></a>Keyword_australia_company_number
 
-- possibile
-- Australia Company No
-- Australia Company No #
-- numero dell'azienda Australia
-- società australiana No
-- società australiana No #
-- numero dell'azienda australiana
+- can
+- australia company no
+- australia company no #
+- australia company number
+- australian company no
+- australian company no #
+- australian company number
 
-## <a name="australia-drivers-license-number"></a>Australia-numero della patente di guida
+## <a name="australia-drivers-license-number"></a>Australia - Numero della patente di guida
 
 ### <a name="format"></a>Formato
 
@@ -356,7 +357,7 @@ nove lettere e cifre:
 
 OPPURE
 
-- da 1 a 2 lettere facoltative (senza distinzione tra maiuscole e minuscole) 
+- Da una a due lettere facoltative (senza distinzione tra maiuscole e minuscole) 
 - da quattro a nove cifre
 
 OPPURE
@@ -369,7 +370,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_australia_drivers_license_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_australia_drivers_license_number.
 - Non vengono trovate parole chiava da Keyword_australia_drivers_license_number_exclusions.
@@ -407,7 +408,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - Drivers Licence
 - Drivers Licences
 - Driver'Lic
-- Driver ' LiCS
+- Driver'Lics
 - Driver'Licence
 - Driver'Licences
 - Driver'Lic
@@ -439,7 +440,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - Drivers Licence#
 - Drivers Licences#
 - Driver'Lic #
-- Driver ' LiCS #
+- Driver'Lics #
 - Driver'Licence #
 - Driver'Licences #
 - Driver' Lic#
@@ -457,7 +458,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keyword_australia_drivers_license_number_exclusions"></a>Keyword_australia_drivers_license_number_exclusions
 
-- AAA
+- aaa
 - DriverLicense
 - DriverLicenses
 - Driver License
@@ -466,11 +467,11 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - DriversLicenses
 - Drivers License
 - Drivers Licenses
-- Driver ' License
-- Driver ' licenses
+- Driver'License
+- Driver'Licenses
 - Driver' License
 - Driver' Licenses
-- Secondola
+- Driver'sLicense
 - Driver'sLicenses
 - Driver's License
 - Driver's Licenses
@@ -482,16 +483,16 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - DriversLicenses #
 - Drivers License#
 - Drivers Licenses#
-- Driver ' License #
-- Driver ' licenses #
+- Driver'License #
+- Driver'Licenses #
 - Driver' License#
 - Driver' Licenses#
-- Secondola #
+- Driver'sLicense #
 - Driver'sLicenses #
 - Driver's License#
 - Driver's Licenses#
    
-## <a name="australia-medical-account-number"></a>Numero di conto medica australiano
+## <a name="australia-medical-account-number"></a>Australia - numero di conto medico
 
 ### <a name="format"></a>Formato
 
@@ -500,10 +501,10 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 ### <a name="pattern"></a>Modello
 
 10-11 cifre:
-- la prima cifra è compresa nell'intervallo 2-6
-- la nona cifra è una cifra di controllo
-- decima cifra è la cifra del problema
-- undicesima cifra (facoltativa) è il numero individuale
+- La prima cifra è nell'intervallo 2-6
+- La nona cifra è una cifra di controllo
+- La decima cifra è la cifra del problema
+- L'undicesimo numero (facoltativo) è il numero singolo
 
 ### <a name="checksum"></a>Checksum
 
@@ -511,7 +512,7 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_australian_medical_account_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_Australia_Medical_Account_Number.
 - Il checksum ha esito positivo.
@@ -539,10 +540,10 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 - credit card loan
 - department of human services
 - local service
-- Medicare
+- medicare
 
    
-## <a name="australia-passport-number"></a>Australia-numero di passaporto
+## <a name="australia-passport-number"></a>Numero di passaporto Australia
 
 ### <a name="format"></a>Formato
 
@@ -550,7 +551,7 @@ Una lettera seguita da sette cifre
 
 ### <a name="pattern"></a>Modello
 
-Una lettera (senza distinzione tra maiuscole/minuscole) seguita da sette cifre
+Una lettera (senza distinzione tra maiuscole e minuscole) seguita da sette cifre
 
 ### <a name="checksum"></a>Checksum
 
@@ -558,9 +559,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_australia_passport_number restituisce contenuti che corrispondono al modello.
-- Viene trovata una parola chiave da Keyword_passport o Keyword_australia_passport_number.
+- Viene trovata una parola Keyword_passport o Keyword_australia_passport_number parola chiave.
 
 ```xml
 <!-- Australia Passport Number -->
@@ -582,7 +583,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - Passport Number
 - Passport No
 - Passport#
-- Passaporto #
+- Passport #
 - PassportID
 - Passportno
 - passportnumber
@@ -600,28 +601,28 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keyword_australia_passport_number"></a>Keyword_australia_passport_number
 
-- passaporto
+- passport
 - passport details
 - immigration and citizenship
 - commonwealth of australia
 - department of immigration
 - residential address
 - department of immigration and citizenship
-- esempio
+- visa
 - national identity card
 - passport number
 - travel document
 - issuing authority
    
-## <a name="australia-tax-file-number"></a>Australia-numero di file fiscale
+## <a name="australia-tax-file-number"></a>Numero di file fiscale Australia
 
 ### <a name="format"></a>Formato
 
-otto-nove cifre
+da otto a nove cifre
 
 ### <a name="pattern"></a>Modello
 
-otto-nove cifre in genere presentate con spazi come indicato di seguito:
+Da otto a nove cifre in genere presentate con spazi, come indicato di seguito:
 - tre cifre 
 - uno spazio facoltativo 
 - tre cifre 
@@ -634,7 +635,7 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_australian_tax_file_number restituisce contenuti che corrispondono al modello.
 - Non vengono trovate parole chiave da Keyword_Australia_Tax_File_Number o da Keyword_number_exclusions.
 - Il checksum ha esito positivo.
@@ -661,9 +662,9 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 - withholding tax
 - individual tax return
 - tax file number
-- TFN
+- tfn
 
-## <a name="austria-drivers-license-number"></a>Austria-numero della patente di guida
+## <a name="austria-drivers-license-number"></a>Austria - Numero della patente di guida
 
 ### <a name="format"></a>Formato
 
@@ -679,10 +680,10 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
   
-- L'espressione regolare  `Regex_austria_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_austria_eu_driver's_license_number` viene trovata. 
+- L'espressione  `Regex_austria_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_austria_eu_driver's_license_number` . 
     
 ```xml
       <!-- Austria Driver's License Number -->
@@ -699,7 +700,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -707,121 +708,121 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - driverlicenses
 - driverlicence
 - driverlicences
-- LIC del driver
-- driver driver'lics
+- driver lic
+- driver lics
 - driver license
 - driver licenses
-- patente di guida
-- licenze per i driver
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- driver Lic
-- driver driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- licenze per i conducenti
+- drivers licences
 - driver'lic
-- driver ' LiCS
-- driver ' License
-- driver ' licenses
+- driver'lics
+- driver'license
+- driver'licenses
 - driver'licence
 - driver'licences
-- LIC del driver
-- driver ' driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
-- patenti del conducente
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
-- secondola
+- driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- LIC del conducente
-- driver'lics del conducente
+- driver's lic
+- driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- patenti di guida
-- DL #
-- DLS #
+- driver's licences
+- dl #
+- dls #
 - driverlic #
 - driverlics #
 - driverlicense #
 - driverlicenses #
 - driverlicence #
 - driverlicences #
-- LIC del driver #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- licenze per i driver #
+- driver lic #
+- driver lics #
+- driver license #
+- driver licenses #
+- driver licences #
 - driverslic #
 - driverslics #
 - driverslicense #
 - driverslicenses #
 - driverslicence #
 - driverslicences #
-- driver Lic #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- licenze per i conducenti #
+- drivers lic #
+- drivers lics #
+- drivers license #
+- driver licenses #
+- drivers licence #
+- drivers licences #
 - driver'lic #
-- driver ' LiCS #
-- driver ' License #
-- driver ' licenses #
+- driver'lics #
+- driver'license #
+- driver'licenses #
 - driver'licence #
 - driver'licences #
-- LIC del driver #
-- driver ' driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- patenti del conducente #
+- driver' lic #
+- driver' lics #
+- driver' license #
+- driver' licenses #
+- driver' licence #
+- driver' licences #
 - driver'slic #
 - driver'slics #
-- secondola #
+- driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- LIC del conducente #
-- driver'lics del conducente #
-- patente di guida #
-- licenze del conducente #
-- patente di guida #
-- patenti di guida #
+- driver's lic #
+- driver's lics #
+- driver's license #
+- driver's licenses #
+- driver's licence #
+- driver's licences #
 - driving licence 
 - driving license
 - dlno #
-- driv Lic
+- driv lic
 - driv licen
-- licenza di driv
-- licenze di driv
-- licenza driv
-- licenze di driv
+- driv license
+- driv licenses
+- driv licence
+- driv licences
 - driver licen
-- driver licen
-- licei del conducente
-- Guida di Lic
-- Guida licen
-- patenti di guida
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- permesso di guida
-- DL No
+- driving permit
+- dl no
 - dlno
-- numero DL
+- dl number
 
 
-#### <a name="keywords_austria_eu_drivers_license_number"></a>Keywords_austria_eu_driver ' s_license_number
+#### <a name="keywords_austria_eu_drivers_license_number"></a>Keywords_austria_eu_driver's_license_number
 
 - fuhrerschein
 - führerschein
@@ -829,17 +830,17 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - Führerscheinnummer
 - Führerscheinnummern
 
-## <a name="austria-identity-card"></a>Carta d'identità Austria
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="austria-identity-card"></a>Carta di identità Austria
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
-Combinazione a 24 caratteri di lettere, cifre e caratteri speciali
+Combinazione di 24 caratteri di lettere, cifre e caratteri speciali
   
 ### <a name="pattern"></a>Modello
 
@@ -847,7 +848,7 @@ Combinazione a 24 caratteri di lettere, cifre e caratteri speciali
   
 -  22 lettere (senza distinzione tra maiuscole e minuscole), cifre, barre rovesciate, barre o segni più 
     
-- due lettere (senza distinzione tra maiuscole e minuscole), cifre, barre rovesciate, barre, segni più o segni uguali
+- due lettere (senza distinzione tra maiuscole e minuscole), cifre, barre rovesciate, barre, segni più o segni di uguale
     
 ### <a name="checksum"></a>Checksum
 
@@ -855,10 +856,10 @@ Non applicabile
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
   
-- L'espressione regolare  `Regex_austria_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_austria_eu_national_id_card` . 
+- L'espressione  `Regex_austria_eu_national_id_card` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una parola  `Keywords_austria_eu_national_id_card` chiave da. 
    
 ```xml
       <!-- Austria Identity Card -->
@@ -874,11 +875,11 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_austria_eu_national_id_card"></a>Keywords_austria_eu_national_id_card
 
-- numero di identità
+- identity number
 - national id
-- Personalausweis Republik Österreich
+- personalausweis republik österreich
 
-## <a name="austria-passport-number"></a>Numero di passaporto Austria
+## <a name="austria-passport-number"></a>Austria - numero di passaporto
 
 ### <a name="format"></a>Formato
 
@@ -898,14 +899,14 @@ non applicabile
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_austria_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_austria_eu_passport_number` viene trovata. 
-- L'espressione regolare `Regex_eu_passport_date1` trova la data nel formato dd. mm. yyyy o una parola chiave from `Keywords_eu_passport_date` si trova
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_austria_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_austria_eu_passport_number` . 
+- L'espressione regolare trova la data nel formato `Regex_eu_passport_date1` GG.MM.AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_austria_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_austria_eu_passport_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_austria_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_austria_eu_passport_number` . 
     
 ```xml
       <!-- Austria Passport Number -->
@@ -935,12 +936,12 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passaporto #
-- passaporto #
+- passport #
+- passport #
 - passportid
-- passaporti
+- passports
 - passportno
-- Passport No
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -957,7 +958,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - reisepässe
 
 
-## <a name="austria-social-security-number"></a>Austria codice di previdenza sociale
+## <a name="austria-social-security-number"></a>Austria - numero di previdenza sociale
 
 ### <a name="format"></a>Formato
 
@@ -969,7 +970,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
   
 - tre cifre che corrispondono a un numero di serie 
 - una cifra di controllo
-- sei cifre che corrispondono alla data di nascita (GGMMAA)
+- sei cifre che corrispondono alla data di nascita (DDMMYY)
     
 ### <a name="checksum"></a>Checksum
 
@@ -977,11 +978,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha elevata fiducia nel rilevare questo tipo di informazioni riservate se, entro 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_austria_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
-- viene trovata una parola chiave from  `Keywords_austria_eu_ssn_or_equivalent` . 
+- viene trovata una  `Keywords_austria_eu_ssn_or_equivalent` parola chiave da. 
     
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_austria_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -1005,39 +1006,39 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_austria_eu_ssn_or_equivalent"></a>Keywords_austria_eu_ssn_or_equivalent
 
-- SSN austriaco
-- numero team
-- Team No
-- codice assicurativo
+- austria ssn
+- ehic number
+- ehic no
+- codice di assicurazione
 - insurancecode #
-- numero assicurativo
-- assicurazioni No
+- numero di assicurazione
+- insurance no
 - krankenkassennummer
-- Krankenversicherung
+- krankenversicherung
 - socialsecurityno
 - socialsecurityno #
-- previdenza sociale No
+- social security no
 - social security number
 - social security code
 - sozialversicherungsnummer
 - sozialversicherungsnummer #
-- soziale Sicherheit kein
+- soziale sicherheit kein
 - sozialesicherheitkein #
-- SSN #
-- SSN
+- ssn #
+- ssn
 - versicherungscode
 - versicherungsnummer
 - zdravstveno zavarovanje
 
-## <a name="austria-tax-identification-number"></a>Austria codice di identificazione fiscale
+## <a name="austria-tax-identification-number"></a>Numero di identificazione fiscale Austria
 
 ### <a name="format"></a>Formato
 
-nove cifre con trattino e barra di inoltro opzionali
+nove cifre con trattino facoltativo e barra
   
 ### <a name="pattern"></a>Modello
 
-nove cifre con trattino e barra di inoltro facoltativi:
+nove cifre con trattino facoltativo e barra:
   
 - due cifre
 - un trattino (facoltativo)
@@ -1051,11 +1052,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_austria_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_austria_eu_tax_file_number` . 
+- Viene trovata una parola  `Keywords_austria_eu_tax_file_number` chiave da. 
     
-Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni riservate se, entro 300 caratteri:
+Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - La funzione  `Func_austria_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -1075,42 +1076,42 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 
 #### <a name="keywords_austria_eu_tax_file_number"></a>Keywords_austria_eu_tax_file_number
 
-- Österreich
+- österreich
 - st.nr.
 - steuernummer
 - tax id
-- identificazione fiscale No
-- codice di identificazione fiscale
+- tax identification no
+- tax identification number
 - tax no #
 - tax no
-- codice fiscale
-- numero di registrazione fiscale
-- taxid #
-- taxidno #
-- taxidnumber #
+- tax number
+- tax registration number
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
-- ID Tin
-- Tin No
-- latta #
-- codice fiscale
+- tin id
+- tin no
+- tin #
+- tax number
  
-## <a name="austria-value-added-tax"></a>Tassa sul valore aggiunto Austria
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="austria-value-added-tax"></a>Imposta sul valore aggiunto in Austria
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
-motivo alfanumerico di 11 caratteri
+Motivo alfanumerico a 11 caratteri
 
 ### <a name="pattern"></a>Modello
 
-motivo alfanumerico di 11 caratteri:
+Motivo alfanumerico a 11 caratteri:
 
 - A o a
 - T o t
@@ -1129,12 +1130,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_Austria_Value_Added_Tax trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keyword_Austria_Value_Added_Tax.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_Austria_Value_Added_Tax trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_Austria_Value_Added_Tax di codice.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_Austria_Value_Added_Tax trova contenuto corrispondente al modello.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_Austria_Value_Added_Tax trova contenuto che corrisponde al modello.
 
 ```xml
       <!-- Austria Value Added Tax -->
@@ -1153,35 +1154,35 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 #### <a name="keyword_austria_value_added_tax"></a>Keyword_austria_value_added_tax
 
 - numero di partita IVA
-- IVA #
-- numero di partita IVA austriaca
-- IVA No.
+- vat #
+- numero di partita IVA austriache
+- iva n.
 - vatno #
 - numero di imposta sul valore aggiunto
-- IVA austriaca
-- MWST
+- iva per l'austria
+- mwst
 - umsatzsteuernummer
 - mwstnummer
-- UST.-Identifikationsnummer
+- ust.-identifikationsnummer
 - umsatzsteuer-identifikationsnummer
-- numero di identificazione IVA
-- numero ATU
-- Numero UID
+- numero di partita IVA
+- atu number
+- uid number
 
 
-## <a name="azure-documentdb-auth-key"></a>Chiave di autenticazione di DocumentDB di Azure
+## <a name="azure-documentdb-auth-key"></a>Chiave di autenticazione di Azure DocumentDB
 
 ### <a name="format"></a>Formato
 
-La stringa "DocumentDb" seguita dai caratteri e dalle stringhe delineate nel modello seguente.
+La stringa "DocumentDb" seguita dai caratteri e dalle stringhe delineati nel modello seguente.
 
 ### <a name="pattern"></a>Modello
 
 - La stringa "DocumentDb"
-- Qualsiasi combinazione tra 3-200 lettere, cifre, simboli, caratteri speciali o spazi in maiuscolo o minuscolo
-- Un simbolo maggiore di (>), un segno di uguale (=), un segno di virgolette (") oppure un apostrofo (')
-- Qualsiasi combinazione di 86 lettere maiuscole e minuscole, cifre, barra (/) o segno più (+)
-- Due segni uguali (=)
+- Qualsiasi combinazione di 3-200 lettere minuscole o maiuscole, cifre, simboli, caratteri speciali o spazi
+- Simbolo di maggiore di (>), segno di uguale (=), virgolette (") o apostrofo (')
+- Qualsiasi combinazione di 86 lettere minuscole o maiuscole, cifre, barre (/) o segno più (+)
+- Due segni di uguale (=)
 
 ### <a name="checksum"></a>Checksum
 
@@ -1189,9 +1190,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare CEP_Regex_AzureDocumentDBAuthKey trova contenuti che corrispondono al modello.
-- L'espressione regolare CEP_CommonExampleKeywords **non** trova il contenuto corrispondente al modello.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione regolare CEP_Regex_AzureDocumentDBAuthKey trova contenuto che corrisponde al modello.
+- L'espressione CEP_CommonExampleKeywords non trova contenuto che corrisponde al modello.
 
 ```xml
 <!-- Azure Document DB Auth Key -->
@@ -1209,38 +1210,38 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 
 #### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
-Si noti che tecnicamente questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare, non un elenco di parola chiave.
+Tecnicamente, questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare e non un elenco di parole chiave.
 
 - contoso
-- Fabrikam
-- Northwind
+- fabrikam
+- northwind
 - sandbox
-- OneBox
+- onebox
 - localhost
 - 127.0.0.1
 - testacs.<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->NET
+- s-int.<!--no-hyperlink-->net
 
-## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Stringa di connessione del database di Azure IAAS e stringa di connessione SQL di Azure
+## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Stringa di connessione del database IAAS di Azure e stringa di connessione SQL azure
 
 ### <a name="format"></a>Formato
 
-Stringa "Server", "Server" o "Data Source" seguito dai caratteri e dalle stringhe delineati nel modello seguente, inclusa la stringa "cloudapp. Azure.<!--no-hyperlink-->com "o" cloudapp. Azure.<!--no-hyperlink-->NET "o" database. Windows.<!--no-hyperlink-->NET "e la stringa" password "o" password "o" pwd ".
+La stringa "Server", "server" o "data source" seguita dai caratteri e dalle stringhe delineati nel modello seguente, inclusa la stringa "cloudapp.azure.<!--no-hyperlink-->com" o "cloudapp.azure.<!--no-hyperlink-->net" o "database.windows.<!--no-hyperlink-->net" e la stringa "Password" o "password" o "pwd".
 
 ### <a name="pattern"></a>Modello
 
-- la stringa "Server", "Server" o "Data Source"
-- zero a due caratteri dello spazio vuoto
-- segno di uguale (=)
-- zero a due caratteri dello spazio vuoto
-- qualsiasi combinazione tra 1-200 lettere, cifre, simboli, caratteri speciali o spazi in maiuscolo o minuscolo
-- La stringa "cloudapp. Azure.<!--no-hyperlink-->com "," cloudapp. Azure.<!--no-hyperlink-->NET "o" database. Windows.<!--no-hyperlink-->NET
-- qualsiasi combinazione tra 1-300 lettere, cifre, simboli, caratteri speciali o spazi in maiuscolo o minuscolo
-- la stringa "password", "password" o "pwd"
-- zero a due caratteri dello spazio vuoto
-- segno di uguale (=)
-- zero a due caratteri dello spazio vuoto
-- uno o più caratteri non costituiti da un punto e virgola (;), virgolette (") o apostrofo (')
+- stringa "Server", "server" o "origine dati"
+- Da zero a due spazi vuoti
+- un segno di uguale (=)
+- Da zero a due spazi vuoti
+- qualsiasi combinazione di 1-200 lettere minuscole o maiuscole, cifre, simboli, caratteri speciali o spazi
+- Stringa "cloudapp.azure.<!--no-hyperlink-->com", "cloudapp.azure.<!--no-hyperlink-->net" o "database.windows.<!--no-hyperlink-->net"
+- qualsiasi combinazione di 1-300 lettere minuscole o maiuscole, cifre, simboli, caratteri speciali o spazi
+- la stringa "Password", "password" o "pwd"
+- Da zero a due spazi vuoti
+- un segno di uguale (=)
+- Da zero a due spazi vuoti
+- uno o più caratteri che non sono un punto e virgola (;), virgolette (") o apostrofo (')
 - un punto e virgola (;), virgolette (") o apostrofo (')
 
 ### <a name="checksum"></a>Checksum
@@ -1249,9 +1250,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare CEP_Regex_AzureConnectionString trova contenuti che corrispondono al modello.
-- L'espressione regolare CEP_CommonExampleKeywords **non** trova il contenuto corrispondente al modello.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione CEP_Regex_AzureConnectionString trova contenuto che corrisponde al modello.
+- L'espressione CEP_CommonExampleKeywords non trova contenuto che corrisponde al modello.
 
 ```xml
 <!--Azure IAAS Database Connection String and Azure SQL Connection String-->
@@ -1269,39 +1270,39 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
-Si noti che tecnicamente questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare, non un elenco di parola chiave.
+Tecnicamente, questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare e non un elenco di parole chiave.
 
 - contoso
-- Fabrikam
-- Northwind
+- fabrikam
+- northwind
 - sandbox
-- OneBox
+- onebox
 - localhost
 - 127.0.0.1
 - testacs.<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->NET
+- s-int.<!--no-hyperlink-->net
 
-## <a name="azure-iot-connection-string"></a>Stringa di connessione di Azure.
+## <a name="azure-iot-connection-string"></a>Stringa di connessione IoT di Azure
 
 ### <a name="format"></a>Formato
 
-La stringa "HostName" seguita dai caratteri e dalle stringhe delineati nel modello seguente, incluse le stringhe "Azure-Devices.<!--no-hyperlink-->NET "e" SharedAccessKey ".
+La stringa "HostName" seguita dai caratteri e dalle stringhe delineati nel modello seguente, incluse le stringhe "azure-devices.<!--no-hyperlink-->net" e "SharedAccessKey".
 
 ### <a name="pattern"></a>Modello
 
 - la stringa "HostName"
-- zero a due caratteri dello spazio vuoto
-- segno di uguale (=)
-- zero a due caratteri dello spazio vuoto
-- qualsiasi combinazione tra 1-200 lettere, cifre, simboli, caratteri speciali o spazi in maiuscolo o minuscolo
-- la stringa "Azure-Devices.<!--no-hyperlink-->NET
-- qualsiasi combinazione tra 1-200 lettere, cifre, simboli, caratteri speciali o spazi in maiuscolo o minuscolo
+- Da zero a due spazi vuoti
+- un segno di uguale (=)
+- Da zero a due spazi vuoti
+- qualsiasi combinazione di 1-200 lettere minuscole o maiuscole, cifre, simboli, caratteri speciali o spazi
+- la stringa "azure-devices.<!--no-hyperlink-->net"
+- qualsiasi combinazione di 1-200 lettere minuscole o maiuscole, cifre, simboli, caratteri speciali o spazi
 - la stringa "SharedAccessKey"
-- zero a due caratteri dello spazio vuoto
-- segno di uguale (=)
-- zero a due caratteri dello spazio vuoto
-- qualsiasi combinazione di 43 lettere maiuscole e minuscole, cifre, barra (/) o segno più (+)
-- segno di uguale (=)
+- Da zero a due spazi vuoti
+- un segno di uguale (=)
+- Da zero a due spazi vuoti
+- qualsiasi combinazione di 43 lettere minuscole o maiuscole, cifre, barre (/) o segno più (+)
+- un segno di uguale (=)
 
 ### <a name="checksum"></a>Checksum
 
@@ -1309,9 +1310,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare CEP_Regex_AzureIoTConnectionString trova contenuti che corrispondono al modello.
-- L'espressione regolare CEP_CommonExampleKeywords **non** trova il contenuto corrispondente al modello.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione regolare CEP_Regex_AzureIoTConnectionString trova contenuto che corrisponde al modello.
+- L'espressione CEP_CommonExampleKeywords non trova contenuto che corrisponde al modello.
 
 ```xml
 <!--Azure IoT Connection String-->
@@ -1329,28 +1330,28 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
-Si noti che tecnicamente questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare, non un elenco di parola chiave.
+Tecnicamente, questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare e non un elenco di parole chiave.
 
 - contoso
-- Fabrikam
-- Northwind
+- fabrikam
+- northwind
 - sandbox
-- OneBox
+- onebox
 - localhost
 - 127.0.0.1
 - testacs.<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->NET
+- s-int.<!--no-hyperlink-->net
 
-## <a name="azure-publish-setting-password"></a>Password per l'impostazione di pubblicazione di Azure
+## <a name="azure-publish-setting-password"></a>Password dell'impostazione di pubblicazione di Azure
 
 ### <a name="format"></a>Formato
 
-La stringa "UserPwd =" seguita da una stringa alfanumerica.
+Stringa "userpwd=" seguita da una stringa alfanumerica.
 
 ### <a name="pattern"></a>Modello
 
-- la stringa "UserPwd ="
-- qualsiasi combinazione di lettere o cifre minuscole di 60
+- la stringa "userpwd="
+- qualsiasi combinazione di 60 lettere minuscole o cifre
 - virgolette (")
 
 ### <a name="checksum"></a>Checksum
@@ -1359,9 +1360,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare CEP_Regex_AzurePublishSettingPasswords trova contenuti che corrispondono al modello.
-- L'espressione regolare CEP_CommonExampleKeywords **non** trova il contenuto corrispondente al modello.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione regolare CEP_Regex_AzurePublishSettingPasswords trova contenuto che corrisponde al modello.
+- L'espressione CEP_CommonExampleKeywords non trova contenuto che corrisponde al modello.
 
 
 ```xml
@@ -1380,34 +1381,34 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
-Si noti che tecnicamente questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare, non un elenco di parola chiave.
+Tecnicamente, questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare e non un elenco di parole chiave.
 
 - contoso
-- Fabrikam
-- Northwind
+- fabrikam
+- northwind
 - sandbox
-- OneBox
+- onebox
 - localhost
 - 127.0.0.1
 - testacs.<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->NET
+- s-int.<!--no-hyperlink-->net
 
 ## <a name="azure-redis-cache-connection-string"></a>Stringa di connessione della cache di Azure Redis
 
 ### <a name="format"></a>Formato
 
-La stringa "Redis. cache. Windows.<!--no-hyperlink-->NET "seguito dai caratteri e dalle stringhe delineati nel modello seguente, inclusa la stringa" password "o" pwd ".
+Stringa "redis.cache.windows.<!--no-hyperlink-->net" seguito dai caratteri e dalle stringhe delineati nel modello seguente, inclusa la stringa "password" o "pwd".
 
 ### <a name="pattern"></a>Modello
 
-- la stringa "Redis. cache. Windows.<!--no-hyperlink-->NET
-- qualsiasi combinazione tra 1-200 lettere, cifre, simboli, caratteri speciali o spazi in maiuscolo o minuscolo
+- la stringa "redis.cache.windows.<!--no-hyperlink-->net"
+- qualsiasi combinazione di 1-200 lettere minuscole o maiuscole, cifre, simboli, caratteri speciali o spazi
 - la stringa "password" o "pwd"
-- zero a due caratteri dello spazio vuoto
-- segno di uguale (=)
-- zero a due caratteri dello spazio vuoto
-- qualsiasi combinazione di 43 caratteri che sono lettere maiuscole o minuscole, cifre, barra (/) o segno più (+)
-- segno di uguale (=)
+- Da zero a due spazi vuoti
+- un segno di uguale (=)
+- Da zero a due spazi vuoti
+- qualsiasi combinazione di 43 caratteri minuscoli o maiuscoli, cifre, barra (/) o segno più (+)
+- un segno di uguale (=)
 
 ### <a name="checksum"></a>Checksum
 
@@ -1415,9 +1416,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare CEP_Regex_AzureRedisCacheConnectionString trova contenuti che corrispondono al modello.
-- L'espressione regolare CEP_CommonExampleKeywords **non** trova il contenuto corrispondente al modello.
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- L'espressione regolare CEP_Regex_AzureRedisCacheConnectionString trova contenuto che corrisponde al modello.
+- L'espressione CEP_CommonExampleKeywords non trova contenuto che corrisponde al modello.
 
 ```xml
 <!--Azure Redis Cache Connection String-->
@@ -1435,33 +1436,33 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
-Si noti che tecnicamente questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare, non un elenco di parola chiave.
+Tecnicamente, questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare e non un elenco di parole chiave.
 
 - contoso
-- Fabrikam
-- Northwind
+- fabrikam
+- northwind
 - sandbox
-- OneBox
+- onebox
 - localhost
 - 127.0.0.1
 - testacs.<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->NET
+- s-int.<!--no-hyperlink-->net
 
-## <a name="azure-sas"></a>SAS di Azure
+## <a name="azure-sas"></a>Azure SAS
 
 ### <a name="format"></a>Formato
 
-La stringa "sig" seguita dai caratteri e dalle stringhe delineate nel modello seguente.
+La stringa "sig" seguita dai caratteri e dalle stringhe delineati nel modello seguente.
 
 ### <a name="pattern"></a>Modello
 
 - la stringa "sig"
-- zero a due caratteri dello spazio vuoto
-- segno di uguale (=)
-- zero a due caratteri dello spazio vuoto
-- qualsiasi combinazione tra 43-53 caratteri che sono minuscoli o maiuscoli, cifre o il segno di percentuale (%)
-- la stringa "% 3D"
-- qualsiasi carattere che non sia una lettera, una cifra o un segno di percentuale inferiore o maiuscolo (%)
+- Da zero a due spazi vuoti
+- un segno di uguale (=)
+- Da zero a due spazi vuoti
+- qualsiasi combinazione di caratteri compresi tra 43 e 53 caratteri minuscoli o maiuscoli, cifre o il segno di percentuale (%)
+- stringa "%3d"
+- qualsiasi carattere che non sia una lettera minuscola o maiuscola, una cifra o un segno di percentuale (%)
 
 ### <a name="checksum"></a>Checksum
 
@@ -1469,8 +1470,8 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare CEP_Regex_AzureSAS trova contenuti che corrispondono al modello.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione regolare CEP_Regex_AzureSAS trova contenuto che corrisponde al modello.
 
 ```xml
 <!--Azure SAS-->
@@ -1481,27 +1482,27 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 </Entity>
 ```
 
-## <a name="azure-service-bus-connection-string"></a>Stringa di connessione bus di servizio di Azure
+## <a name="azure-service-bus-connection-string"></a>Stringa di connessione del bus di servizio di Azure
 
 ### <a name="format"></a>Formato
 
-Stringa "EndPoint" seguita dai caratteri e dalle stringhe delineati nel modello seguente, incluse le stringhe "ServiceBus. Windows.<!--no-hyperlink-->NET "e" SharedAccesKey ".
+La stringa "EndPoint" seguita dai caratteri e dalle stringhe delineati nel modello seguente, incluse le stringhe "servicebus.windows.<!--no-hyperlink-->net" e "SharedAccesKey".
 
 ### <a name="pattern"></a>Modello
 
 - la stringa "EndPoint"
-- zero a due caratteri dello spazio vuoto
-- segno di uguale (=)
-- zero a due caratteri dello spazio vuoto
-- qualsiasi combinazione tra 1-200 lettere, cifre, simboli, caratteri speciali o spazi in maiuscolo o minuscolo
-- la stringa "ServiceBus. Windows.<!--no-hyperlink-->NET
-- qualsiasi combinazione tra 1-200 lettere, cifre, simboli, caratteri speciali o spazi in maiuscolo o minuscolo
+- Da zero a due spazi vuoti
+- un segno di uguale (=)
+- Da zero a due spazi vuoti
+- qualsiasi combinazione di 1-200 lettere minuscole o maiuscole, cifre, simboli, caratteri speciali o spazi
+- la stringa "servicebus.windows.<!--no-hyperlink-->net"
+- qualsiasi combinazione di 1-200 lettere minuscole o maiuscole, cifre, simboli, caratteri speciali o spazi
 - la stringa "SharedAccessKey"
-- zero a due caratteri dello spazio vuoto
-- segno di uguale (=)
-- zero a due caratteri dello spazio vuoto
-- qualsiasi combinazione di 43 caratteri che sono lettere maiuscole o minuscole, cifre, barra (/) o segno più (+)
-- segno di uguale (=)
+- Da zero a due spazi vuoti
+- un segno di uguale (=)
+- Da zero a due spazi vuoti
+- qualsiasi combinazione di 43 caratteri minuscoli o maiuscoli, cifre, barra (/) o segno più (+)
+- un segno di uguale (=)
 
 ### <a name="checksum"></a>Checksum
 
@@ -1509,9 +1510,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare CEP_Regex_AzureServiceBusConnectionString trova contenuti che corrispondono al modello.
-- L'espressione regolare CEP_CommonExampleKeywords **non** trova il contenuto corrispondente al modello.
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- L'espressione regolare CEP_Regex_AzureServiceBusConnectionString trova contenuto che corrisponde al modello.
+- L'espressione CEP_CommonExampleKeywords non trova contenuto che corrisponde al modello.
 
 ```xml
 <!--Azure Service Bus Connection String-->
@@ -1529,37 +1530,37 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
-Si noti che tecnicamente questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare, non un elenco di parola chiave.
+Tecnicamente, questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare e non un elenco di parole chiave.
 
 - contoso
-- Fabrikam
-- Northwind
+- fabrikam
+- northwind
 - sandbox
-- OneBox
+- onebox
 - localhost
 - 127.0.0.1
 - testacs.<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->NET
+- s-int.<!--no-hyperlink-->net
 
 ## <a name="azure-storage-account-key"></a>Chiave dell'account di archiviazione di Azure
 
 ### <a name="format"></a>Formato
 
-La stringa "DefaultEndpointsProtocol" seguita dai caratteri e dalle stringhe delineate nel modello seguente, inclusa la stringa "AccountKey".
+La stringa "DefaultEndpointsProtocol" seguita dai caratteri e dalle stringhe delineati nel modello seguente, inclusa la stringa "AccountKey".
 
 ### <a name="pattern"></a>Modello
 
 - la stringa "DefaultEndpointsProtocol"
-- zero a due caratteri dello spazio vuoto
-- segno di uguale (=)
-- zero a due caratteri dello spazio vuoto
-- qualsiasi combinazione tra 1-200 lettere, cifre, simboli, caratteri speciali o spazi in maiuscolo o minuscolo
+- Da zero a due spazi vuoti
+- un segno di uguale (=)
+- Da zero a due spazi vuoti
+- qualsiasi combinazione di 1-200 lettere minuscole o maiuscole, cifre, simboli, caratteri speciali o spazi
 - la stringa "AccountKey"
-- zero a due caratteri dello spazio vuoto
-- segno di uguale (=)
-- zero a due caratteri dello spazio vuoto
-- qualsiasi combinazione di 86 caratteri che sono lettere maiuscole o minuscole, cifre, barra (/) o segno più (+)
-- due segni uguali (=)
+- Da zero a due spazi vuoti
+- un segno di uguale (=)
+- Da zero a due spazi vuoti
+- qualsiasi combinazione di 86 caratteri minuscoli o maiuscoli, cifre, barra (/) o segno più (+)
+- due segni di uguale (=)
 
 ### <a name="checksum"></a>Checksum
 
@@ -1567,10 +1568,10 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare CEP_Regex_AzureStorageAccountKey trova contenuti che corrispondono al modello.
-- L'espressione regolare CEP_AzureEmulatorStorageAccountFilter **non** trova il contenuto corrispondente al modello.
-- L'espressione regolare CEP_CommonExampleKeywords **non** trova il contenuto corrispondente al modello.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione regolare CEP_Regex_AzureStorageAccountKey trova contenuto che corrisponde al modello.
+- L'espressione CEP_AzureEmulatorStorageAccountFilter non trova contenuto che corrisponde al modello.
+- L'espressione CEP_CommonExampleKeywords non trova contenuto che corrisponde al modello.
 
 ```xml
 <!--Azure Storage Account Key-->
@@ -1589,35 +1590,35 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 
 #### <a name="cep_azure_emulator_storage_account_filter"></a>CEP_azure_emulator_storage_account_filter
 
-Si noti che tecnicamente questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare, non un elenco di parola chiave.
+Tecnicamente, questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare e non un elenco di parole chiave.
 
-- Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw = =
+- Eby8vdM02xNOcqFlqUwJPLlmEtlCDXJ1OUzFT50uSRZ6IFsuFq2UVErCz4I6tq/K1SZFPTOtr/KBHBeksoGMGw==
 
 #### <a name="cep_common_example_keywords"></a>CEP_common_example_keywords
 
-Si noti che tecnicamente questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare, non un elenco di parola chiave.
+Tecnicamente, questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare e non un elenco di parole chiave.
 
 - contoso
-- Fabrikam
-- Northwind
+- fabrikam
+- northwind
 - sandbox
-- OneBox
+- onebox
 - localhost
 - 127.0.0.1
 - testacs.<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->NET
+- s-int.<!--no-hyperlink-->net
 
-## <a name="azure-storage-account-key-generic"></a>Chiave dell'account di archiviazione di Azure (generico)
+## <a name="azure-storage-account-key-generic"></a>Chiave dell'account di archiviazione di Azure (generica)
 
 ### <a name="format"></a>Formato
 
-Qualsiasi combinazione di 86 lettere maiuscole e minuscole, cifre, barra (/) o segno più (+), preceduto o seguito dai caratteri delineati nel modello seguente.
+Qualsiasi combinazione di 86 lettere minuscole o maiuscole, cifre, barra (/) o segno più (+), preceduta o seguita dai caratteri delineati nel modello seguente.
 
 ### <a name="pattern"></a>Modello
 
-- zero a uno dei simboli maggiori di (>), apostrofo ('), segno di uguale (=), virgolette (") o segno numerico (#)
-- qualsiasi combinazione di 86 caratteri che sono lettere maiuscole o minuscole, cifre, barra (/) o segno più (+)
-- due segni uguali (=)
+- da zero a uno dei simboli di maggiore di (>), apostrofo ('), segno di uguale (=), virgolette (") o simbolo di numero (#)
+- qualsiasi combinazione di 86 caratteri minuscoli o maiuscoli, cifre, barra (/) o segno più (+)
+- due segni di uguale (=)
 
 ### <a name="checksum"></a>Checksum
 
@@ -1625,8 +1626,8 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare CEP_Regex_AzureStorageAccountKeyGeneric trova contenuti che corrispondono al modello.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione regolare CEP_Regex_AzureStorageAccountKeyGeneric trova contenuto che corrisponde al modello.
 
 ```xml
 <!--Azure Storage Account Key (Generic)-->
@@ -1636,15 +1637,15 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
   </Pattern>
 </Entity>
 ```
-## <a name="belgium-drivers-license-number"></a>Numero della patente di guida belga
+## <a name="belgium-drivers-license-number"></a>Belgio - Numero della patente di guida
 
 ### <a name="format"></a>Formato
 
-dieci cifre senza spazi e delimitatori
+10 cifre senza spazi e delimitatori
   
 ### <a name="pattern"></a>Modello
 
-dieci cifre
+10 cifre
   
 ### <a name="checksum"></a>Checksum
 
@@ -1652,9 +1653,9 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_belgium_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da `Keywords_eu_driver's_license_number` o `Keywords_belgium_eu_driver's_license_number` viene trovata.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_belgium_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_belgium_eu_driver's_license_number` .
     
 ```xml
       <!-- Belgium Driver's License Number -->
@@ -1672,7 +1673,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 ### <a name="keywords"></a>Parole chiave
 
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -1680,120 +1681,120 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - driverlicenses
 - driverlicence
 - driverlicences
-- LIC del driver
-- driver driver'lics
+- driver lic
+- driver lics
 - driver license
 - driver licenses
-- patente di guida
-- licenze per i driver
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- driver Lic
-- driver driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- licenze per i conducenti
+- drivers licences
 - driver'lic
-- driver ' LiCS
-- driver ' License
-- driver ' licenses
+- driver'lics
+- driver'license
+- driver'licenses
 - driver'licence
 - driver'licences
-- LIC del driver
-- driver ' driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
-- patenti del conducente
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
-- secondola
+- driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- LIC del conducente
-- driver'lics del conducente
+- driver's lic
+- driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- patenti di guida
-- DL #
-- DLS #
+- driver's licences
+- dl #
+- dls #
 - driverlic #
 - driverlics #
 - driverlicense #
 - driverlicenses #
 - driverlicence #
 - driverlicences #
-- LIC del driver #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- licenze per i driver #
+- driver lic #
+- driver lics #
+- driver license #
+- driver licenses #
+- driver licences #
 - driverslic #
 - driverslics #
 - driverslicense #
 - driverslicenses #
 - driverslicence #
 - driverslicences #
-- driver Lic #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- licenze per i conducenti #
+- drivers lic #
+- drivers lics #
+- drivers license #
+- driver licenses #
+- drivers licence #
+- drivers licences #
 - driver'lic #
-- driver ' LiCS #
-- driver ' License #
-- driver ' licenses #
+- driver'lics #
+- driver'license #
+- driver'licenses #
 - driver'licence #
 - driver'licences #
-- LIC del driver #
-- driver ' driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- patenti del conducente #
+- driver' lic #
+- driver' lics #
+- driver' license #
+- driver' licenses #
+- driver' licence #
+- driver' licences #
 - driver'slic #
 - driver'slics #
-- secondola #
+- driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- LIC del conducente #
-- driver'lics del conducente #
-- patente di guida #
-- licenze del conducente #
-- patente di guida #
-- patenti di guida #
+- driver's lic #
+- driver's lics #
+- driver's license #
+- driver's licenses #
+- driver's licence #
+- driver's licences #
 - driving licence 
 - driving license
 - dlno #
-- driv Lic
+- driv lic
 - driv licen
-- licenza di driv
-- licenze di driv
-- licenza driv
-- licenze di driv
+- driv license
+- driv licenses
+- driv licence
+- driv licences
 - driver licen
-- driver licen
-- licei del conducente
-- Guida di Lic
-- Guida licen
-- patenti di guida
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- permesso di guida
-- DL No
+- driving permit
+- dl no
 - dlno
-- numero DL
+- dl number
 
-#### <a name="keywords_belgium_eu_drivers_license_number"></a>Keywords_belgium_eu_driver ' s_license_number
+#### <a name="keywords_belgium_eu_drivers_license_number"></a>Keywords_belgium_eu_driver's_license_number
 
 - rijbewijs
 - rijbewijsnummer
@@ -1805,22 +1806,22 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - fuhrerscheinnummer
 - fuehrerscheinnummer
 - permis de conduire
-- numéro Permis conduire
+- numéro permis conduire
 
 
-## <a name="belgium-national-number"></a>Numero nazionale belga
+## <a name="belgium-national-number"></a>Belgio - numero nazionale
 
 ### <a name="format"></a>Formato
 
-11 cifre più delimitatori opzionali
+11 cifre più delimitatori facoltativi
 
 ### <a name="pattern"></a>Modello
 
 11 cifre più delimitatori:
-- sei cifre e due periodi facoltativi nel formato AA. MM.DD per data di nascita 
-- Delimitatore facoltativo da dot, Dash, Space 
-- tre cifre sequenziali (dispari per i maschi, anche per le femmine) 
-- Delimitatore facoltativo da dot, Dash, Space 
+- sei cifre e due punti facoltativi nel formato AA. MM.DD data di nascita 
+- Delimitatore facoltativo da punto, trattino, spazio 
+- tre cifre sequenziali (dispari per i maschi, anche per le femminile) 
+- Delimitatore facoltativo da punto, trattino, spazio 
 - due cifre di controllo
 
 ### <a name="checksum"></a>Checksum
@@ -1829,13 +1830,13 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_belgium_national_number trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keyword_belgium_national_number.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_belgium_national_number trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_belgium_national_number di codice.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni riservate se, entro 300 caratteri:
-- La funzione Func_belgium_national_number trova contenuto corrispondente al modello.
+Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- La funzione Func_belgium_national_number trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
 ```xml
@@ -1855,11 +1856,11 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 
 #### <a name="keyword_belgium_national_number"></a>Keyword_belgium_national_number
 
-- Ultimo aantal
-- BNN #
-- BNN
+- belasting aantal
+- bnn #
+- bnn
 - carte d'identité
-- identificazione nazionale
+- identifiant national
 - identifiantnational #
 - identificatie
 - identificazione
@@ -1869,50 +1870,50 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 - identité
 - identiteit
 - identiteitskaart
-- identità
+- identity
 - iscrizione
-- numero nazionale
-- Registro nazionale
+- national number
+- national register
 - nationalnumber #
 - nationalnumber
-- NIF #
-- NIF
+- nif #
+- nif
 - numéro d'assuré
-- numéro de Registre National
+- numéro de registre national
 - numéro de sécurité
 - numéro d'identification
 - numéro d'immatriculation
-- numéro nazionale
+- numéro national
 - numéronational #
-- numero ID personale
+- personal id number
 - personalausweis
 - personalidnumber #
-- Registratie
+- registratie
 - registrazione
 - registrationsnumme
 - registrierung
 - social security number
-- SSN #
-- SSN
+- ssn #
+- ssn
 - steuernummer
 - tax id
-- identificazione fiscale No
-- codice di identificazione fiscale
+- tax identification no
+- tax identification number
 - tax no #
 - tax no
-- codice fiscale
-- numero di registrazione fiscale
-- taxid #
-- taxidno #
-- taxidnumber #
+- tax number
+- tax registration number
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
-- ID Tin
-- Tin No
-- latta #
+- tin id
+- tin no
+- tin #
 
-## <a name="belgium-passport-number"></a>Numero di passaporto belga
+## <a name="belgium-passport-number"></a>Belgio - numero di passaporto
 
 ### <a name="format"></a>Formato
 
@@ -1928,14 +1929,14 @@ non applicabile
   
 ### <a name="definition"></a>Definizione
 
- Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_belgium_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_belgium_eu_passport_number` viene trovata. 
-- L'espressione regolare `Regex_eu_passport_date2` trova la data nel formato dd mm AA o una parola chiave da `Keywords_eu_passport_date` o `Keywords_belgium_eu_passport_number` trovato
+ Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_belgium_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_belgium_eu_passport_number` . 
+- L'espressione `Regex_eu_passport_date2` regolare trova la data nel formato GG MM AA o una parola chiave da o viene `Keywords_eu_passport_date` `Keywords_belgium_eu_passport_number` trovata
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_belgium_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_belgium_eu_passport_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_belgium_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_belgium_eu_passport_number` . 
 
 ```xml
       <!-- Belgium Passport Number -->
@@ -1967,12 +1968,12 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passaporto #
-- passaporto #
+- passport #
+- passport #
 - passportid
-- passaporti
+- passports
 - passportno
-- Passport No
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -1980,41 +1981,41 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_belgium_eu_passport_number"></a>Keywords_belgium_eu_passport_number
 
-- numéro Passeport
-- PASPOORT Nr
-- PASPOORT-Nr
+- numéro passeport
+- paspoort nr
+- paspoort-nr
 - paspoortnummer
 - paspoortnummers
-- Passeport carte
-- Passeport Livre
+- Carte passeport
+- Passeport livre
 - Pass-Nr
 - Passnummer
-- Reisepass kein
+- reisepass kein
 
 
-## <a name="belgium-value-added-tax-number"></a>Numero di imposta sul valore aggiunto belga
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="belgium-value-added-tax-number"></a>Belgio - numero di imposta sul valore aggiunto
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
-motivo alfanumerico di 12 caratteri
+Motivo alfanumerico a 12 caratteri
 
 ### <a name="pattern"></a>Modello
 
-motivo alfanumerico di 12 caratteri:
+Motivo alfanumerico a 12 caratteri:
 
 - una lettera B o b
 - una lettera E o e
 - una cifra 0
 - una cifra da 1 a 9
-- un punto o un segno meno facoltativo o uno spazio
+- un punto o un trattino o uno spazio facoltativo
 - quattro cifre
-- un punto o un segno meno facoltativo o uno spazio
+- un punto o un trattino o uno spazio facoltativo
 - quattro cifre
 
 
@@ -2025,12 +2026,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_belgium_value_added_tax_number trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keywords_belgium_value_added_tax_number.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_belgium_value_added_tax_number trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keywords_belgium_value_added_tax_number da un utente.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_belgium_value_added_tax_number trova contenuto corrispondente al modello.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_belgium_value_added_tax_number trova contenuto che corrisponde al modello.
 
 ```xml
       <!-- Belgium Value Added Tax Number -->
@@ -2049,18 +2050,18 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keyword_belgium_value_added_tax_number"></a>Keyword_belgium_value_added_tax_number
 
-- n º TVA
+- nº tva
 - numero di partita IVA
-- IVA No
-- numéro t. v. a
+- vat no
+- numéro t.v.a
 - umsatzsteuer-identifikationsnummer
 - umsatzsteuernummer
-- BTW
-- BTW #
-- IVA #
+- btw
+- btw #
+- vat #
 
 
-## <a name="brazil-cpf-number"></a>Brasile CPF numero
+## <a name="brazil-cpf-number"></a>Numero CPF Brasile
 
 ### <a name="format"></a>Formato
 
@@ -2068,7 +2069,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 ### <a name="pattern"></a>Modello
 
-Formattato
+Formattato:
 - tre cifre
 - un punto
 - tre cifre
@@ -2077,7 +2078,7 @@ Formattato
 - un trattino
 - due cifre che sono cifre di controllo
 
-Formattato
+Non formattato:
 - 11 cifre dove le ultime due sono cifre di controllo
 
 ### <a name="checksum"></a>Checksum
@@ -2086,13 +2087,13 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_brazil_cpf trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keyword_brazil_cpf.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_brazil_cpf trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_brazil_cpf da un utente.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_brazil_cpf trova contenuto corrispondente al modello.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_brazil_cpf trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
 ```xml
@@ -2115,7 +2116,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - CPF
 - Identificazione
 - Registrazione
-- Entrate
+- Ricavi
 - Cadastro de Pessoas Físicas 
 - Imposto 
 - Identificação 
@@ -2123,7 +2124,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - Receita 
 
    
-## <a name="brazil-legal-entity-number-cnpj"></a>Numero di persona giuridica brasiliana (CNPJ)
+## <a name="brazil-legal-entity-number-cnpj"></a>Numero di persona giuridica del Brasile (CNPJ)
 
 ### <a name="format"></a>Formato
 
@@ -2139,7 +2140,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - un punto 
 - tre cifre (queste prime otto cifre sono il numero di registrazione) 
 - una barra 
-- numero di diramazione a quattro cifre 
+- numero di ramo a quattro cifre 
 - un trattino 
 - due cifre che sono cifre di controllo
 
@@ -2149,13 +2150,13 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_brazil_cnpj trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keyword_brazil_cnpj.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_brazil_cnpj trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_brazil_cnpj da un utente.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_brazil_cnpj trova contenuto corrispondente al modello.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_brazil_cnpj trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
 ```xml
@@ -2196,7 +2197,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - Empresa 
 
    
-## <a name="brazil-national-identification-card-rg"></a>Carta di identità nazionale brasiliana (RG)
+## <a name="brazil-national-identification-card-rg"></a>Carta di identificazione nazionale (RG) del Brasile
 
 ### <a name="format"></a>Formato
 
@@ -2213,12 +2214,12 @@ Registro Geral (formato precedente):
 - un punto 
 - tre cifre 
 - un trattino 
-- una cifra che corrisponde a una cifra di controllo
+- una cifra che è una cifra di controllo
 
 Registro de Identidade (RIC) (nuovo formato):
-- dieci cifre 
+- 10 cifre 
 - un trattino 
-- una cifra che corrisponde a una cifra di controllo
+- una cifra che è una cifra di controllo
 
 ### <a name="checksum"></a>Checksum
 
@@ -2226,26 +2227,20 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_brazil_rg trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keyword_brazil_rg.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_brazil_rg trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_brazil_rg da un utente.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_brazil_rg trova contenuto corrispondente al modello.
-- Il checksum ha esito positivo.
 
 ```xml
-<!-- Brazil National ID Card (RG) -->
-<Entity id="486de900-db70-41b3-a886-abdf25af119c" recommendedConfidence="85" patternsProximity="300">
-  <Pattern confidenceLevel="85">
-     <IdMatch idRef="Func_brazil_rg"/>
-     <Match idRef="Keyword_brazil_rg"/>
-  </Pattern>
-  <Pattern confidenceLevel="75">
-     <IdMatch idRef="Func_brazil_rg"/>
-  </Pattern>
-</Entity>
+      <!-- Brazil National ID Card (RG) -->
+      <Entity id="486de900-db70-41b3-a886-abdf25af119c" patternsProximity="300" recommendedConfidence="85">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_brazil_rg" />
+          <Match idRef="Keyword_brazil_rg" />
+        </Pattern>
+      </Entity>
 ```
 
 ### <a name="keywords"></a>Parole chiave
@@ -2258,11 +2253,11 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - número de rregistro
 - registro de Iidentidade 
 - registro geral
-- RG (per questa parola chiave viene fatta distinzione tra maiuscole e minuscole) 
-- RIC (per questa parola chiave viene fatta distinzione tra maiuscole e minuscole) 
+- RG (questa parola chiave fa distinzione tra maiuscole e minuscole) 
+- RIC (questa parola chiave fa distinzione tra maiuscole e minuscole) 
 
 
-## <a name="bulgaria-drivers-license-number"></a>Bulgaria-numero della patente di guida
+## <a name="bulgaria-drivers-license-number"></a>Bulgaria - Numero della patente di guida
 
 ### <a name="format"></a>Formato
 
@@ -2278,9 +2273,9 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_bulgaria_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_bulgaria_eu_driver's_license_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_bulgaria_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_bulgaria_eu_driver's_license_number` . 
     
 ```xml
       <!-- Bulgaria Driver's License Number -->
@@ -2297,7 +2292,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -2305,147 +2300,147 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - driverlicenses
 - driverlicence
 - driverlicences
-- LIC del driver
-- driver driver'lics
+- driver lic
+- driver lics
 - driver license
 - driver licenses
-- patente di guida
-- licenze per i driver
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- driver Lic
-- driver driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- licenze per i conducenti
+- drivers licences
 - driver'lic
-- driver ' LiCS
-- driver ' License
-- driver ' licenses
+- driver'lics
+- driver'license
+- driver'licenses
 - driver'licence
 - driver'licences
-- LIC del driver
-- driver ' driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
-- patenti del conducente
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
-- secondola
+- driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- LIC del conducente
-- driver'lics del conducente
+- driver's lic
+- driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- patenti di guida
-- DL #
-- DLS #
+- driver's licences
+- dl #
+- dls #
 - driverlic #
 - driverlics #
 - driverlicense #
 - driverlicenses #
 - driverlicence #
 - driverlicences #
-- LIC del driver #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- licenze per i driver #
+- driver lic #
+- driver lics #
+- driver license #
+- driver licenses #
+- driver licences #
 - driverslic #
 - driverslics #
 - driverslicense #
 - driverslicenses #
 - driverslicence #
 - driverslicences #
-- driver Lic #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- licenze per i conducenti #
+- drivers lic #
+- drivers lics #
+- drivers license #
+- driver licenses #
+- drivers licence #
+- drivers licences #
 - driver'lic #
-- driver ' LiCS #
-- driver ' License #
-- driver ' licenses #
+- driver'lics #
+- driver'license #
+- driver'licenses #
 - driver'licence #
 - driver'licences #
-- LIC del driver #
-- driver ' driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- patenti del conducente #
+- driver' lic #
+- driver' lics #
+- driver' license #
+- driver' licenses #
+- driver' licence #
+- driver' licences #
 - driver'slic #
 - driver'slics #
-- secondola #
+- driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- LIC del conducente #
-- driver'lics del conducente #
-- patente di guida #
-- licenze del conducente #
-- patente di guida #
-- patenti di guida #
+- driver's lic #
+- driver's lics #
+- driver's license #
+- driver's licenses #
+- driver's licence #
+- driver's licences #
 - driving licence 
 - driving license
 - dlno #
-- driv Lic
+- driv lic
 - driv licen
-- licenza di driv
-- licenze di driv
-- licenza driv
-- licenze di driv
+- driv license
+- driv licenses
+- driv licence
+- driv licences
 - driver licen
-- driver licen
-- licei del conducente
-- Guida di Lic
-- Guida licen
-- patenti di guida
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- permesso di guida
-- DL No
+- driving permit
+- dl no
 - dlno
-- numero DL
+- dl number
 
 
-#### <a name="keywords_bulgaria_eu_drivers_license_number"></a>Keywords_bulgaria_eu_driver ' s_license_number
+#### <a name="keywords_bulgaria_eu_drivers_license_number"></a>Keywords_bulgaria_eu_driver's_license_number
 
 - свидетелство за управление на мпс
-- свидетелство за управление на моторно превозно d'средство
+- свидетелство за управление на моторно превозно средство
 - сумпс
 - шофьорска книжка
 - шофьорски книжки
 
-## <a name="bulgaria-uniform-civil-number"></a>Bulgaria (Uniform Civil Number)
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="bulgaria-uniform-civil-number"></a>Bulgaria - numero civile uniforme
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
-dieci cifre senza spazi e delimitatori
+10 cifre senza spazi e delimitatori
   
 ### <a name="pattern"></a>Modello
 
-dieci cifre senza spazi e delimitatori
+10 cifre senza spazi e delimitatori
   
-- sei cifre che corrispondono alla data di nascita (AAMMGG) 
+- sei cifre che corrispondono alla data di nascita (AAMMMMD) 
 - due cifre che corrispondono all'ordine di nascita
-- una cifra che corrisponde al sesso: una cifra pari per il maschio e una cifra dispari per la femmina
+- una cifra che corrisponde al sesso: una cifra pari per il maschile e una cifra dispari per la donna
 - una cifra di controllo
 
 ### <a name="checksum"></a>Checksum
@@ -2454,11 +2449,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_bulgaria_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_bulgaria_eu_national_id_card` . 
+- Viene trovata una parola  `Keywords_bulgaria_eu_national_id_card` chiave da. 
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_bulgaria_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -2482,28 +2477,28 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_bulgaria_eu_national_id_card"></a>Keywords_bulgaria_eu_national_id_card
 
-- BNN #
-- BNN
+- bnn #
+- bnn
 - bucn #
 - bucn
-- grazhdanski nomer
-- EGN #
-- EGN
+- edinen grazhdanski nomer
+- egn #
+- egn
 - identification number
 - national id
-- numero nazionale
+- national number
 - nationalnumber #
 - nationalnumber
-- ID personale
-- No personale
+- id personale
+- personal no
 - numero personale
 - personalidnumber #
 - social security number
-- SSN #
-- SSN
-- ID civile uniforme
-- uniforme civile No
-- numero civile uniforme
+- ssn #
+- ssn
+- uniform civil id
+- uniform civil no
+- uniform civil number
 - uniformcivilno #
 - uniformcivilno
 - uniformcivilnumber #
@@ -2517,16 +2512,16 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - лична идентификация
 - лично не
 - национален номер
-- Номер на гражданството
-- ID униформ
-- ID граждански униформ
+- номер на гражданството
+- униформ id
+- униформ граждански id
 - униформ граждански не
 - униформ граждански номер
 - униформгражданскиid #
 - униформгражданскине. #
 
 
-## <a name="bulgaria-passport-number"></a>Bulgaria-numero di passaporto
+## <a name="bulgaria-passport-number"></a>Numero di passaporto Bulgaria
 
 ### <a name="format"></a>Formato
 
@@ -2542,14 +2537,14 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_bulgaria_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_bulgaria_eu_passport_number` viene trovata. 
-- L'espressione regolare `Regex_eu_passport_date1` trova la data nel formato dd. mm. yyyy o una parola chiave from `Keywords_eu_passport_date` si trova
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_bulgaria_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_bulgaria_eu_passport_number` . 
+- L'espressione regolare trova la data nel formato `Regex_eu_passport_date1` GG.MM.AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_bulgaria_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_bulgaria_eu_passport_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_bulgaria_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_bulgaria_eu_passport_number` . 
 
 ```xml
       <!-- Bulgaria Passport Number -->
@@ -2578,12 +2573,12 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passaporto #
-- passaporto #
+- passport #
+- passport #
 - passportid
-- passaporti
+- passports
 - passportno
-- Passport No
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -2591,29 +2586,29 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_bulgaria_eu_passport_number"></a>Keywords_bulgaria_eu_passport_number
 
-- Номер на паспорта
-- Номер на паспорт
+- номер на паспорта
+- номер на паспорт
 - паспорт No
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Data di emissione
-- Data di scadenza
+- data di emissione
+- data di scadenza
 
-## <a name="canada-bank-account-number"></a>Canada-numero di conto corrente bancario
+## <a name="canada-bank-account-number"></a>Canada - numero di conto corrente bancario
 
 ### <a name="format"></a>Formato
 
-sette o dodici cifre
+7 o 12 cifre
 
 ### <a name="pattern"></a>Modello
 
-Un numero di conto corrente canadese comprende 7 o 12 cifre.
+Un numero di conto corrente canadese è di 7 o 12 cifre.
 
 Un numero di transito bancario canadese comprende:
 - cinque cifre 
 - un trattino 
-- tre cifre o
+- tre cifre OR
 - zero "0" 
 - otto cifre
 
@@ -2623,12 +2618,12 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_canada_bank_account_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_canada_bank_account_number.
 - L'espressione regolare Regex_canada_bank_account_transit_number restituisce contenuti che corrispondono al modello.
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_canada_bank_account_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_canada_bank_account_number.
 
@@ -2674,7 +2669,7 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 - direct deposit
 
    
-## <a name="canada-drivers-license-number"></a>Canada-numero della patente di guida
+## <a name="canada-drivers-license-number"></a>Canada - Numero della patente di guida
 
 ### <a name="format"></a>Formato
 
@@ -2690,7 +2685,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_[province_name]_drivers_license_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_[province_name]_drivers_license_name.
 - Viene trovata una parola chiave da Keyword_canada_drivers_license.
@@ -2753,7 +2748,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keyword_province_name_drivers_license_name"></a>Keyword_ [province_name] _drivers_license_name
+#### <a name="keyword_province_name_drivers_license_name"></a>Keyword_[province_name]_drivers_license_name
 
 - L'abbreviazione della provincia, ad esempio, AB
 - Il nome della provincia, ad esempio, Alberta
@@ -2789,9 +2784,9 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - Drivers Licence
 - Drivers Licences
 - Driver'Lic
-- Driver ' LiCS
-- Driver ' License
-- Driver ' licenses
+- Driver'Lics
+- Driver'License
+- Driver'Licenses
 - Driver'Licence
 - Driver'Licences
 - Driver'Lic
@@ -2802,7 +2797,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - Driver' Licences
 - Driver'sLic
 - Driver'sLics
-- Secondola
+- Driver'sLicense
 - Driver'sLicenses
 - Driver'sLicence
 - Driver'sLicences
@@ -2814,7 +2809,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - Driver's Licences
 - Permis de Conduire
 - id
-- ID
+- ids
 - idcard number
 - idcard numbers
 - idcard #
@@ -2858,9 +2853,9 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - Drivers Licence# 
 - Drivers Licences# 
 - Driver'Lic # 
-- Driver ' LiCS # 
-- Driver ' License # 
-- Driver ' licenses # 
+- Driver'Lics # 
+- Driver'License # 
+- Driver'Licenses # 
 - Driver'Licence # 
 - Driver'Licences # 
 - Driver' Lic# 
@@ -2871,7 +2866,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - Driver' Licences# 
 - Driver'sLic # 
 - Driver'sLics # 
-- Secondola # 
+- Driver'sLicense # 
 - Driver'sLicenses # 
 - Driver'sLicence # 
 - Driver'sLicences # 
@@ -2882,8 +2877,8 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - Driver's Licence# 
 - Driver's Licences# 
 - Permis de Conduire# 
-- ID # 
-- ID # 
+- id # 
+- ids # 
 - idcard card# 
 - idcard cards# 
 - idcard # 
@@ -2892,15 +2887,15 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - identificazione # 
 
    
-## <a name="canada-health-service-number"></a>Numero del servizio sanitario in Canada
+## <a name="canada-health-service-number"></a>Canada - numero del servizio sanitario
 
 ### <a name="format"></a>Formato
 
-dieci cifre
+ 10 cifre
 
 ### <a name="pattern"></a>Modello
 
-dieci cifre
+10 cifre
 
 ### <a name="checksum"></a>Checksum
 
@@ -2908,7 +2903,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_canada_health_service_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_canada_health_service_number.
 
@@ -2934,12 +2929,12 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - speciality services
 - automobile accident
 - patient hospital
-- psichiatra
+- ergasto
 - workers compensation
-- Disability
+- disabilità
 
       
-## <a name="canada-passport-number"></a>Canada-numero di passaporto
+## <a name="canada-passport-number"></a>Canada - numero di passaporto
 
 ### <a name="format"></a>Formato
 
@@ -2955,9 +2950,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_canada_passport_number restituisce contenuti che corrispondono al modello.
-- Viene trovata una parola chiave da Keyword_canada_passport_number o Keyword_passport.
+- Viene trovata una parola Keyword_canada_passport_number o Keyword_passport parola chiave.
 
 ```xml 
 <!-- Canada Passport Number -->
@@ -2990,7 +2985,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - Passport Number
 - Passport No
 - Passport#
-- Passaporto #
+- Passport #
 - PassportID
 - Passportno
 - passportnumber
@@ -3007,7 +3002,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - Passeportn °
 
    
-## <a name="canada-personal-health-identification-number-phin"></a>Canada Personal Health Identification Number (PHIN)
+## <a name="canada-personal-health-identification-number-phin"></a>Canada - NUMERO DI IDENTIFICAZIONE PERSONALE (PHIN)
 
 ### <a name="format"></a>Formato
 
@@ -3023,9 +3018,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_canada_phin restituisce contenuti che corrispondono al modello.
-- Sono state trovate almeno due parole chiave provenienti da Keyword_canada_phin o Keyword_canada_provinces.
+- Vengono trovate almeno due parole Keyword_canada_phin o Keyword_canada_provinces ricerca.
 
 ```xml
 <!-- Canada PHIN -->
@@ -3063,11 +3058,11 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 #### <a name="keyword_canada_provinces"></a>Keyword_canada_provinces
 
 - Nunavut
-- Quebec
+- Québec
 - Northwest Territories
 - Ontario
 - British Columbia
-- Filippa
+- Alberta
 - Saskatchewan
 - Manitoba
 - Yukon
@@ -3078,7 +3073,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - Canada
 
    
-## <a name="canada-social-insurance-number"></a>Canada-numero di previdenza sociale
+## <a name="canada-social-insurance-number"></a>Canada - numero di previdenza sociale
 
 ### <a name="format"></a>Formato
 
@@ -3086,7 +3081,7 @@ nove cifre con trattini o spazi facoltativi
 
 ### <a name="pattern"></a>Modello
 
-Formattato
+Formattato:
 - tre cifre 
 - un trattino o uno spazio 
 - tre cifre 
@@ -3101,7 +3096,7 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_canadian_sin restituisce contenuti che corrispondono al modello.
 - Almeno due delle seguenti combinazioni:
     - Viene trovata una parola chiave da Keyword_sin.
@@ -3109,7 +3104,7 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
     - La funzione Func_eu_date rileva una data nel formato corretto.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_unformatted_canadian_sin restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_sin.
 - Il checksum ha esito positivo.
@@ -3139,9 +3134,9 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - sin 
 - social insurance 
 - numero d'assurance sociale 
-- peccati 
-- SSN 
-- SNSS 
+- sins 
+- ssn 
+- ssns 
 - social security 
 - numero d'assurance social 
 - national identification number 
@@ -3162,22 +3157,22 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - Date of Birth 
 
    
-## <a name="chile-identity-card-number"></a>Cile-numero di carta d'identità
+## <a name="chile-identity-card-number"></a>Cile - Numero di carta di identità
 
 ### <a name="format"></a>Formato
 
-da sette a otto cifre più delimitatori una cifra di controllo o una lettera
+da sette a otto cifre più delimitatori di una cifra di controllo o di una lettera
 
 ### <a name="pattern"></a>Modello
 
 da sette a otto cifre più delimitatori:
-- una o due cifre 
-- un periodo facoltativo 
+- da una a due cifre 
+- un punto facoltativo 
 - tre cifre 
-- un periodo facoltativo 
+- un punto facoltativo 
 - tre cifre 
 - un trattino 
-- una cifra o una lettera (senza distinzione tra maiuscole/minuscole) che corrisponde a una cifra di controllo
+- una cifra o una lettera (senza distinzione tra maiuscole e minuscole) che è una cifra di controllo
 
 ### <a name="checksum"></a>Checksum
 
@@ -3185,13 +3180,13 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_chile_id_card trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keyword_chile_id_card.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_chile_id_card trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_chile_id_card di codice.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_chile_id_card trova contenuto corrispondente al modello.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_chile_id_card trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
 ```xml
@@ -3211,43 +3206,43 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keyword_chile_id_card"></a>Keyword_chile_id_card
 
-- Cédula de Identidad
-- Identificación
+- cédula de identidad
+- identificación
 - national identification
 - national identification number
 - national id
-- número de identificación Nacional
-- ROL único Nacional
-- ROL único tributario
+- número de identificación nacional
+- rol único nacional
+- rol único tributario
 - Correre
-- CARREGGIATA
-- Tarjeta de identificación
-- ROL unico Nacional
-- ROL unico tributario
+- RUT
+- tarjeta de identificación
+- Rol Unico Nacional
+- Rol Unico Tributario
 - Correre #
-- CARREGGIATA #
+- RUT #
 - nationaluniqueroleID #
-- Nacional Identidad
+- nacional identidad
 - número identificación
-- Identidad número
-- numero Identificacion
-- numero Identidad
-- Identità cilena No.
-- Numero dell'identità cilena
+- identidad número
+- numero identificacion
+- identidad numero
+- Identità cilena n.
+- Numero di identità cileno
 - Identità cilena #
 - Registro fiscale univoco
 - Ruolo tributario univoco
 - Ruolo fiscale univoco
-- Numero tributario univoco
+- Numero affluenti univoco
 - Numero nazionale univoco
 - Ruolo nazionale univoco
 - Ruolo univoco nazionale
-- Cile identità n.
-- Numero di identità Cile
+- Cile - Identità no.
+- Cile - Numero di identità
 - Identità Cile #
 
    
-## <a name="china-resident-identity-card-prc-number"></a>Numero di carta di identità residente in Cina (RPC)
+## <a name="china-resident-identity-card-prc-number"></a>Numero di carta di identità (PRC) residente in Cina
 
 ### <a name="format"></a>Formato
 
@@ -3256,10 +3251,10 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 ### <a name="pattern"></a>Modello
 
 18 cifre:
-- sei cifre che corrispondono a un codice di indirizzo 
-- otto cifre nel formato AAAAMMGG, ovvero la data di nascita 
-- tre cifre che sono un codice di ordinazione 
-- una cifra che corrisponde a una cifra di controllo
+- sei cifre che sono un codice indirizzo 
+- otto cifre nel formato AAAAMMMMD, ovvero la data di nascita 
+- tre cifre che sono un codice d'ordine 
+- una cifra che è una cifra di controllo
 
 ### <a name="checksum"></a>Checksum
 
@@ -3267,13 +3262,13 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_china_resident_id trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keyword_china_resident_id.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_china_resident_id trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_china_resident_id da un utente.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_china_resident_id trova contenuto corrispondente al modello.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_china_resident_id trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
 ```xml
@@ -3294,7 +3289,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 ### <a name="keyword_china_resident_id"></a>Keyword_china_resident_id
 
 - Carta d’identità per residenti 
-- RPC 
+- PRC 
 - Carta d’identità 
 - 身份证 
 - 居民 身份证 
@@ -3309,11 +3304,11 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 ### <a name="format"></a>Formato
 
-da 14 a 16 cifre che possono essere formattate o non formattate (dddddddddddddddd) e che devono superare il test di Luhn.
+Da 14 a 16 cifre che possono essere formattate o non formattate (ddddddddddddd) e che devono superare il test Luhn.
 
 ### <a name="pattern"></a>Modello
 
-Modello molto complesso e solido che rileva carte di credito dei maggiori circuiti del mondo, ad esempio, Visa, MasterCard, Discover Card, JCB, American Express, nonché carte regalo e ticket restaurant.
+Modello complesso e affidabile che rileva le carte di tutti i principali marchi in tutto il mondo, tra cui Visa, MasterCard, Discover Card, JCB, American Express, carte da disegno e biglietti da pranzo.
 
 ### <a name="checksum"></a>Checksum
 
@@ -3321,7 +3316,7 @@ Yes, il checksum Luhn
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_credit_card restituisce contenuti che corrispondono al modello.
 - Si verifica una delle situazioni seguenti:
     - Viene trovata una parola chiave da Keyword_cc_verification.
@@ -3329,7 +3324,7 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
     - La funzione Func_expiration_date rileva una data nel formato corretto.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni riservate se, entro 300 caratteri:
+Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - La funzione Func_credit_card restituisce contenuti che corrispondono al modello.
 - Il checksum ha esito positivo.
 
@@ -3356,10 +3351,10 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 
 - card verification
 - card identification number
-- CVN
-- ID
-- CVC2
-- CVV2
+- cvn
+- cid
+- cvc2
+- cvv2
 - pin block
 - security code
 - security number
@@ -3372,26 +3367,26 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 - kreditkartenprüfnummer
 - kreditkartenprufnummer
 - prüfziffer
-- Prufziffer
+- prufziffer
 - sicherheits Kode
 - sicherheitscode
 - sicherheitsnummer
 - verfalldatum
 - codice di verifica
-- Cod. sicurezza
+- cod. sicurezza
 - cod sicurezza
 - n autorizzazione
-- Código
-- Codigo
-- Cod. SEG
+- código
+- codigo
+- cod. seg
 - cod seg
 - código de segurança
 - codigo de seguranca
 - codigo de segurança
 - código de seguranca
-- cód. Segurança
-- Cod. seguranca
-- Cod. Segurança
+- cód. segurança
+- cod. seguranca
+- cod. segurança
 - cód. seguranca
 - cód segurança
 - cod seguranca
@@ -3411,15 +3406,15 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 - vencimiento
 - válido hasta
 - valido hasta
-- VTO
+- vto
 - data de expiração
 - data de expiracao
 - data em que expira
 - validade
-- Valor
+- valor
 - vencimento
-- delle transazioni
-- numero transazione
+- transazione
+- numero di transazione
 - numero di riferimento
 - セキュリティコード
 - セキュリティ コード
@@ -3429,20 +3424,20 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 
 #### <a name="keyword_cc_name"></a>Keyword_cc_name
 
-- Amex
+- amex
 - american express
-- AmericanExpress
+- americanexpress
 - americano espresso
-- Esempio
-- Mastercard
+- Visa
+- mastercard
 - master card
-- MC
-- Mastercard
+- mc
+- mastercard
 - master cards
 - diner's Club
 - diners club
-- DinersClub
-- individuare
+- dinersclub
+- discover
 - discover card
 - discovercard
 - discover cards
@@ -3452,8 +3447,8 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 - carte blanche
 - carteblanche
 - credit card
-- CC #
-- CC #:
+- cc #
+- cc#:
 - expiration date
 - exp date
 - expiry date
@@ -3461,20 +3456,20 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 - date d'exp
 - date expiration
 - bank card
-- Bankcard
+- bankcard
 - card number
 - card num
 - cardnumber
 - cardnumbers
 - card numbers
-- CreditCard
+- creditcard
 - credit cards
-- creditcards.com
-- Ccn
+- creditcards
+- ccn
 - card holder
-- titolare
+- cardholder
 - card holders
-- titolari
+- titolari di carte
 - check card
 - checkcard
 - check cards
@@ -3487,20 +3482,20 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 - atmcard
 - atm cards
 - atmcards
-- Enroute
+- enroute
 - en route
 - card type
 - Cardmember Acct
-- account cardmember
+- cardmember account
 - Cardno
 - Scheda aziendale
-- Schede Corporate
+- Schede aziendali
 - Tipo di scheda
-- numero account scheda
-- account del membro della scheda
+- numero di conto della carta
+- account del membro della carta
 - Cardmember Acct.
 - card no.
-- scheda No
+- card no
 - card number
 - carte bancaire
 - carte de crédit
@@ -3510,7 +3505,7 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 - nº de la carte
 - nº de carte
 - kreditkarte
-- Karte
+- karte
 - karteninhaber
 - karteninhabers
 - kreditkarteninhaber
@@ -3520,12 +3515,12 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 - kartennr
 - kartennummer
 - kreditkartennummer
-- Kreditkarten-Nummer
+- kreditkarten-nummer
 - carta di credito
 - carta credito
 - n. carta
 - n carta
-- Nr. carta
+- nr. carta
 - nr carta
 - numero carta
 - numero della carta
@@ -3567,7 +3562,7 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 - numero de cartao
 - nº do cartão
 - nº do cartao
-- n º. do cartão
+- nº. do cartão
 - no do cartão
 - no do cartao
 - No. do cartão
@@ -3603,7 +3598,7 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 - デビットカード
 
 
-## <a name="croatia-drivers-license-number"></a>Numero della patente di guida croata
+## <a name="croatia-drivers-license-number"></a>Croatia driver's license number
 
 ### <a name="format"></a>Formato
 
@@ -3619,10 +3614,10 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
   
-- L'espressione regolare  `Regex_croatia_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da `Keywords_eu_driver's_license_number` o `Keywords_croatia_eu_driver's_license_number` viene trovata. 
+- L'espressione  `Regex_croatia_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_croatia_eu_driver's_license_number` . 
 
 ```xml
       <!-- Croatia Driver's License Number -->
@@ -3639,7 +3634,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -3647,128 +3642,128 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - driverlicenses
 - driverlicence
 - driverlicences
-- LIC del driver
-- driver driver'lics
+- driver lic
+- driver lics
 - driver license
 - driver licenses
-- patente di guida
-- licenze per i driver
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- driver Lic
-- driver driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- licenze per i conducenti
+- drivers licences
 - driver'lic
-- driver ' LiCS
-- driver ' License
-- driver ' licenses
+- driver'lics
+- driver'license
+- driver'licenses
 - driver'licence
 - driver'licences
-- LIC del driver
-- driver ' driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
-- patenti del conducente
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
-- secondola
+- driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- LIC del conducente
-- driver'lics del conducente
+- driver's lic
+- driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- patenti di guida
-- DL #
-- DLS #
+- driver's licences
+- dl #
+- dls #
 - driverlic #
 - driverlics #
 - driverlicense #
 - driverlicenses #
 - driverlicence #
 - driverlicences #
-- LIC del driver #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- licenze per i driver #
+- driver lic #
+- driver lics #
+- driver license #
+- driver licenses #
+- driver licences #
 - driverslic #
 - driverslics #
 - driverslicense #
 - driverslicenses #
 - driverslicence #
 - driverslicences #
-- driver Lic #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- licenze per i conducenti #
+- drivers lic #
+- drivers lics #
+- drivers license #
+- driver licenses #
+- drivers licence #
+- drivers licences #
 - driver'lic #
-- driver ' LiCS #
-- driver ' License #
-- driver ' licenses #
+- driver'lics #
+- driver'license #
+- driver'licenses #
 - driver'licence #
 - driver'licences #
-- LIC del driver #
-- driver ' driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- patenti del conducente #
+- driver' lic #
+- driver' lics #
+- driver' license #
+- driver' licenses #
+- driver' licence #
+- driver' licences #
 - driver'slic #
 - driver'slics #
-- secondola #
+- driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- LIC del conducente #
-- driver'lics del conducente #
-- patente di guida #
-- licenze del conducente #
-- patente di guida #
-- patenti di guida #
+- driver's lic #
+- driver's lics #
+- driver's license #
+- driver's licenses #
+- driver's licence #
+- driver's licences #
 - driving licence 
 - driving license
 - dlno #
-- driv Lic
+- driv lic
 - driv licen
-- licenza di driv
-- licenze di driv
-- licenza driv
-- licenze di driv
+- driv license
+- driv licenses
+- driv licence
+- driv licences
 - driver licen
-- driver licen
-- licei del conducente
-- Guida di Lic
-- Guida licen
-- patenti di guida
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- permesso di guida
-- DL No
+- driving permit
+- dl no
 - dlno
-- numero DL
+- dl number
 
 
-#### <a name="keywords_croatia_eu_drivers_license_number"></a>Keywords_croatia_eu_driver ' s_license_number
+#### <a name="keywords_croatia_eu_drivers_license_number"></a>Keywords_croatia_eu_driver's_license_number
 
 - vozačka dozvola
 - vozačke dozvole
 
 
-## <a name="croatia-identity-card-number"></a>Croazia-numero di carta d'identità
-Questa entità di tipo di informazioni riservate è inclusa nel tipo di informazioni riservate del numero di identificazione nazionale dell'Unione europea ed è disponibile come entità di tipo di informazioni riservate stand-alone.
+## <a name="croatia-identity-card-number"></a>Numero di carta di identità della Croazia
+Questa entità del tipo di informazioni riservate è inclusa nel tipo di informazioni riservate del numero di identificazione nazionale dell'Unione Europea. È disponibile come entità autonoma del tipo di informazioni riservate.
 
 ### <a name="format"></a>Formato
 
@@ -3784,9 +3779,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_croatia_id_card trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keyword_croatia_id_card.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_croatia_id_card trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_croatia_id_card di codice.
 
 ```xml
 <!--Croatia Identity Card Number-->
@@ -3803,36 +3798,36 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 #### <a name="keyword_croatia_id_card"></a>Keyword_croatia_id_card
 
 - majstorski broj građana
-- numero di cittadino Master
-- Nacionalni identifikacijski broj
+- master citizen number
+- nacionalni identifikacijski broj
 - national identification number
-- OIB #
-- OIB
+- oib #
+- oib
 - osobna iskaznica
-- ID Osobni
-- Osobni identifikacijski broj
-- numero di identificazione personale
-- Porezni broj
-- Porezni identifikacijski broj
+- osobni id
+- osobni identifikacijski broj
+- personal identification number
+- porezni broj
+- porezni identifikacijski broj
 - tax id
-- identificazione fiscale No
-- codice di identificazione fiscale
+- tax identification no
+- tax identification number
 - tax no #
 - tax no
-- codice fiscale
-- numero di registrazione fiscale
-- taxid #
-- taxidno #
-- taxidnumber #
+- tax number
+- tax registration number
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
-- ID Tin
-- Tin No
-- latta #
+- tin id
+- tin no
+- tin #
 
 
-## <a name="croatia-passport-number"></a>Numero del passaporto Croatia
+## <a name="croatia-passport-number"></a>Numero di passaporto croazia
 
 ### <a name="format"></a>Formato
 
@@ -3848,14 +3843,14 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_croatia_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_croatia_eu_passport_number` viene trovata. 
-- L'espressione regolare `Regex_eu_passport_date1` trova la data nel formato dd. mm. yyyy o una parola chiave from `Keywords_eu_passport_date` si trova
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_croatia_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_croatia_eu_passport_number` . 
+- L'espressione regolare trova la data nel formato `Regex_eu_passport_date1` GG.MM.AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_croatia_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_croatia_eu_passport_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_croatia_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_croatia_eu_passport_number` . 
     
 ```xml
       <!-- Croatia Passport Number -->
@@ -3884,12 +3879,12 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passaporto #
-- passaporto #
+- passport #
+- passport #
 - passportid
-- passaporti
+- passports
 - passportno
-- Passport No
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -3898,10 +3893,10 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 #### <a name="keywords_croatia_eu_passport_number"></a>Keywords_croatia_eu_passport_number
 
 - broj putovnice
-- BR. Putovnice
-- BR putovnice
+- br. Putovnice
+- br putovnice
    
-## <a name="croatia-personal-identification-oib-number"></a>Numero di identificazione personale (OIB) (Croazia)
+## <a name="croatia-personal-identification-oib-number"></a>Numero di identificazione personale (OIB) della Croazia
 
 ### <a name="format"></a>Formato
 
@@ -3910,7 +3905,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 ### <a name="pattern"></a>Modello
 
 11 cifre:
-- dieci cifre 
+- 10 cifre 
 - la cifra finale è una cifra di controllo
 
 ### <a name="checksum"></a>Checksum
@@ -3919,13 +3914,13 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_croatia_oib_number trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keywords_croatia_eu_tax_file_number.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_croatia_oib_number trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keywords_croatia_eu_tax_file_number di codice.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_croatia_oib_number trova contenuto corrispondente al modello.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_croatia_oib_number trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
 ```xml
@@ -3946,36 +3941,96 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 #### <a name="keyword_croatia_oib_number"></a>Keyword_croatia_oib_number
 
 - majstorski broj građana
-- numero di cittadino Master
-- Nacionalni identifikacijski broj
+- master citizen number
+- nacionalni identifikacijski broj
 - national identification number
-- OIB #
-- OIB
+- oib #
+- oib
 - osobna iskaznica
-- ID Osobni
-- Osobni identifikacijski broj
-- numero di identificazione personale
-- Porezni broj
-- Porezni identifikacijski broj
+- osobni id
+- osobni identifikacijski broj
+- personal identification number
+- porezni broj
+- porezni identifikacijski broj
 - tax id
-- identificazione fiscale No
-- codice di identificazione fiscale
+- tax identification no
+- tax identification number
 - tax no #
 - tax no
-- codice fiscale
-- numero di registrazione fiscale
-- taxid #
-- taxidno #
-- taxidnumber #
+- tax number
+- tax registration number
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
-- ID Tin
-- Tin No
-- latta #
+- tin id
+- tin no
+- tin #
 
+## <a name="croatia-social-security-number-or-equivalent-identification"></a>Numero di previdenza sociale della Croazia o identificazione equivalente
+Questa entità del tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate PER ID equivalente o numero di previdenza sociale dell'Unione Europea.
 
-## <a name="cyprus-drivers-license-number"></a>Numero della patente di guida cipriota
+### <a name="format"></a>Formato
+
+11 cifre senza spazi e delimitatori
+  
+### <a name="pattern"></a>Modello
+
+11 cifre:
+  
+- 10 cifre
+- una cifra di controllo
+    
+### <a name="checksum"></a>Checksum
+
+Sì
+  
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+  
+- La funzione  `Func_croatia_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola  `Keywords_croatia_eu_ssn_or_equivalent` chiave da. 
+    
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+  
+- La funzione  `Func_croatia_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
+    
+```xml
+ <!-- EU SSN or Equivalent Number -->
+<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_croatia_eu_ssn_or_equivalent" />
+          <Match idRef="Keywords_croatia_eu_ssn_or_equivalent" />
+        </Pattern> 
+       <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_croatia_eu_ssn_or_equivalent" />
+        </Pattern>      
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywords_croatia_eu_ssn_or_equivalent"></a>Keywords_croatia_eu_ssn_or_equivalent
+
+- personal identification number
+- master citizen number
+- national identification number
+- social security number
+- nationalnumber #
+- ssn #
+- ssn
+- nationalnumber
+- bnn #
+- bnn
+- personal id number
+- personalidnumber #
+- oib
+- osobni identifikacijski broj
+
+## <a name="cyprus-drivers-license-number"></a>Numero di patente di guida a Cipro
 
 ### <a name="format"></a>Formato
 
@@ -3991,9 +4046,9 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_cyprus_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_cyprus_eu_driver's_license_number` viene trovata.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_cyprus_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_cyprus_eu_driver's_license_number` .
 
 ```xml
       <!-- Cyprus Driver's License Number -->
@@ -4010,7 +4065,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -4018,141 +4073,141 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - driverlicenses
 - driverlicence
 - driverlicences
-- LIC del driver
-- driver driver'lics
+- driver lic
+- driver lics
 - driver license
 - driver licenses
-- patente di guida
-- licenze per i driver
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- driver Lic
-- driver driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- licenze per i conducenti
+- drivers licences
 - driver'lic
-- driver ' LiCS
-- driver ' License
-- driver ' licenses
+- driver'lics
+- driver'license
+- driver'licenses
 - driver'licence
 - driver'licences
-- LIC del driver
-- driver ' driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
-- patenti del conducente
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
-- secondola
+- driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- LIC del conducente
-- driver'lics del conducente
+- driver's lic
+- driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- patenti di guida
-- DL #
-- DLS #
+- driver's licences
+- dl #
+- dls #
 - driverlic #
 - driverlics #
 - driverlicense #
 - driverlicenses #
 - driverlicence #
 - driverlicences #
-- LIC del driver #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- licenze per i driver #
+- driver lic #
+- driver lics #
+- driver license #
+- driver licenses #
+- driver licences #
 - driverslic #
 - driverslics #
 - driverslicense #
 - driverslicenses #
 - driverslicence #
 - driverslicences #
-- driver Lic #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- licenze per i conducenti #
+- drivers lic #
+- drivers lics #
+- drivers license #
+- driver licenses #
+- drivers licence #
+- drivers licences #
 - driver'lic #
-- driver ' LiCS #
-- driver ' License #
-- driver ' licenses #
+- driver'lics #
+- driver'license #
+- driver'licenses #
 - driver'licence #
 - driver'licences #
-- LIC del driver #
-- driver ' driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- patenti del conducente #
+- driver' lic #
+- driver' lics #
+- driver' license #
+- driver' licenses #
+- driver' licence #
+- driver' licences #
 - driver'slic #
 - driver'slics #
-- secondola #
+- driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- LIC del conducente #
-- driver'lics del conducente #
-- patente di guida #
-- licenze del conducente #
-- patente di guida #
-- patenti di guida #
+- driver's lic #
+- driver's lics #
+- driver's license #
+- driver's licenses #
+- driver's licence #
+- driver's licences #
 - driving licence 
 - driving license
 - dlno #
-- driv Lic
+- driv lic
 - driv licen
-- licenza di driv
-- licenze di driv
-- licenza driv
-- licenze di driv
+- driv license
+- driv licenses
+- driv licence
+- driv licences
 - driver licen
-- driver licen
-- licei del conducente
-- Guida di Lic
-- Guida licen
-- patenti di guida
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- permesso di guida
-- DL No
+- driving permit
+- dl no
 - dlno
-- numero DL
+- dl number
 
-#### <a name="keywords_cyprus_eu_drivers_license_number"></a>Keywords_cyprus_eu_driver ' s_license_number
+#### <a name="keywords_cyprus_eu_drivers_license_number"></a>Keywords_cyprus_eu_driver's_license_number
 
 - άδεια οδήγησης
 - αριθμό άδειας οδήγησης
 - άδειες οδήγησης
 
 
-## <a name="cyprus-identity-card"></a>Carta d'identità di Cipro
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="cyprus-identity-card"></a>Carta di identità di Cipro
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
-dieci cifre senza spazi e delimitatori
+10 cifre senza spazi e delimitatori
   
 ### <a name="pattern"></a>Modello
 
-dieci cifre 
+10 cifre 
   
 ### <a name="checksum"></a>Checksum
 
@@ -4160,9 +4215,9 @@ non applicabile
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_cyprus_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_cyprus_eu_national_id_card` . 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_cyprus_eu_national_id_card` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una parola  `Keywords_cyprus_eu_national_id_card` chiave da. 
     
 ```xml 
       <!-- Cyprus Identity Card -->
@@ -4178,15 +4233,15 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_cyprus_eu_national_id_card"></a>Keywords_cyprus_eu_national_id_card
 
+- id card number
 - numero di carta di identità
-- numero di carta di identità
-- Kimlik karti
+- kimlik karti
 - national identification number
-- numero ID personale
+- personal id number
 - ταυτοτητασ
 
 
-## <a name="cyprus-passport-number"></a>Numero di passaporto di Cipro
+## <a name="cyprus-passport-number"></a>Cipro - numero di passaporto
 
 ### <a name="format"></a>Formato
 
@@ -4194,7 +4249,7 @@ una lettera seguita da 6-8 cifre senza spazi o delimitatori
   
 ### <a name="pattern"></a>Modello
 
-una lettera seguita da sei a otto cifre
+una lettera seguita da sei-otto cifre
   
 ### <a name="checksum"></a>Checksum
 
@@ -4202,14 +4257,14 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_cyprus_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_cyprus_eu_passport_number` viene trovata. 
-- L'espressione regolare `Regex_cyprus_eu_passport_date` trova la data nel formato gg/mm/aaaa o una parola chiave from `Keywords_cyprus_eu_passport_date` si trova
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_cyprus_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_cyprus_eu_passport_number` . 
+- L'espressione regolare trova la data nel formato `Regex_cyprus_eu_passport_date` GG/MM/AAAA o viene trovata una parola chiave `Keywords_cyprus_eu_passport_date` da
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_cyprus_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_cyprus_eu_passport_number` viene trovata.  
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_cyprus_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_cyprus_eu_passport_number` .  
     
 ```xml
       <!-- Cyprus Passport Number -->
@@ -4239,12 +4294,12 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passaporto #
-- passaporto #
+- passport #
+- passport #
 - passportid
-- passaporti
+- passports
 - passportno
-- Passport No
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -4260,33 +4315,33 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - διαβατήριο
 - αριθμός διαβατηρίου
 - Pasaport Kimliği
-- Pasaport numarası
-- Pasaport No.
+- pasaport numarası
+- Pasaport no.
 - Αρ. Διαβατηρίου
 
 #### <a name="keywords_cyprus_eu_passport_date"></a>Keywords_cyprus_eu_passport_date
 
-- scade su
-- emesso il
+- scade il
+- rilasciato il
 
 
-## <a name="cyprus-tax-identification-number"></a>Numero di identificazione fiscale cipriota
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="cyprus-tax-identification-number"></a>Numero di identificazione fiscale di Cipro
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
-otto cifre e una lettera nel modello specificato
+otto cifre e una lettera nel formato specificato
   
 ### <a name="pattern"></a>Modello
 
 otto cifre e una lettera:
   
-- "0" o "9"
+- a "0" o "9"
 - sette cifre
 - una lettera (senza distinzione tra maiuscole e minuscole)
     
@@ -4296,11 +4351,11 @@ non applicabile
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_cyprus_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_cyprus_eu_tax_file_number` . 
+- Viene trovata una parola  `Keywords_cyprus_eu_tax_file_number` chiave da. 
     
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_cyprus_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -4321,25 +4376,25 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 #### <a name="keywords_cyprus_eu_tax_file_number"></a>Keywords_cyprus_eu_tax_file_number
 
 - tax id
-- codice di identificazione fiscale
-- identificazione fiscale No
-- codice di identificazione fiscale
+- tax identification code
+- tax identification no
+- tax identification number
 - tax no #
 - tax no
-- codice fiscale
-- numero di registrazione fiscale
-- taxid #
-- taxidno #
-- taxidnumber #
+- tax number
+- tax registration number
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
-- TIC #
-- TIC
-- ID Tin
-- Tin No
-- latta #
-- vergi Kimlik Kodu
+- tic #
+- tic
+- tin id
+- tin no
+- tin #
+- vergi kimlik kodu
 - vergi kimlik numarası
 - αριθμός φορολογικού μητρώου
 - κωδικός φορολογικού μητρώου
@@ -4357,7 +4412,7 @@ due lettere seguite da sei cifre
 
 otto lettere e cifre:
   
-- letterà È (senza distinzione tra maiuscole E minuscole)
+- lettera "E" (senza distinzione tra maiuscole e minuscole)
 - Una lettera
 - uno spazio (facoltativo)
 - sei cifre
@@ -4368,9 +4423,9 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_czech_republic_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_czech_republic_eu_driver's_license_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_czech_republic_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_czech_republic_eu_driver's_license_number` . 
 
 ```xml
       <Entity id="86b40d3b-d8ea-4c36-aab0-ef9416a6769c" patternsProximity="300" recommendedConfidence="75">
@@ -4387,7 +4442,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -4395,120 +4450,120 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - driverlicenses
 - driverlicence
 - driverlicences
-- LIC del driver
-- driver driver'lics
+- driver lic
+- driver lics
 - driver license
 - driver licenses
-- patente di guida
-- licenze per i driver
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- driver Lic
-- driver driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- licenze per i conducenti
+- drivers licences
 - driver'lic
-- driver ' LiCS
-- driver ' License
-- driver ' licenses
+- driver'lics
+- driver'license
+- driver'licenses
 - driver'licence
 - driver'licences
-- LIC del driver
-- driver ' driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
-- patenti del conducente
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
-- secondola
+- driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- LIC del conducente
-- driver'lics del conducente
+- driver's lic
+- driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- patenti di guida
-- DL #
-- DLS #
+- driver's licences
+- dl #
+- dls #
 - driverlic #
 - driverlics #
 - driverlicense #
 - driverlicenses #
 - driverlicence #
 - driverlicences #
-- LIC del driver #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- licenze per i driver #
+- driver lic #
+- driver lics #
+- driver license #
+- driver licenses #
+- driver licences #
 - driverslic #
 - driverslics #
 - driverslicense #
 - driverslicenses #
 - driverslicence #
 - driverslicences #
-- driver Lic #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- licenze per i conducenti #
+- drivers lic #
+- drivers lics #
+- drivers license #
+- driver licenses #
+- drivers licence #
+- drivers licences #
 - driver'lic #
-- driver ' LiCS #
-- driver ' License #
-- driver ' licenses #
+- driver'lics #
+- driver'license #
+- driver'licenses #
 - driver'licence #
 - driver'licences #
-- LIC del driver #
-- driver ' driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- patenti del conducente #
+- driver' lic #
+- driver' lics #
+- driver' license #
+- driver' licenses #
+- driver' licence #
+- driver' licences #
 - driver'slic #
 - driver'slics #
-- secondola #
+- driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- LIC del conducente #
-- driver'lics del conducente #
-- patente di guida #
-- licenze del conducente #
-- patente di guida #
-- patenti di guida #
+- driver's lic #
+- driver's lics #
+- driver's license #
+- driver's licenses #
+- driver's licence #
+- driver's licences #
 - driving licence 
 - driving license
 - dlno #
-- driv Lic
+- driv lic
 - driv licen
-- licenza di driv
-- licenze di driv
-- licenza driv
-- licenze di driv
+- driv license
+- driv licenses
+- driv licence
+- driv licences
 - driver licen
-- driver licen
-- licei del conducente
-- Guida di Lic
-- Guida licen
-- patenti di guida
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- permesso di guida
-- DL No
+- driving permit
+- dl no
 - dlno
-- numero DL
+- dl number
 
-#### <a name="keywords_czech_republic_eu_drivers_license_number"></a>Keywords_czech_republic_eu_driver ' s_license_number
+#### <a name="keywords_czech_republic_eu_drivers_license_number"></a>Keywords_czech_republic_eu_driver's_license_number
 
 - řidičský prúkaz
 - řidičské průkazy
@@ -4532,14 +4587,14 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_czech_republic_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_czech_republic_eu_passport_number` viene trovata. 
-- L'espressione regolare `Regex_eu_passport_date1` trova la data nel formato dd. mm. yyyy o una parola chiave from `Keywords_eu_passport_date` si trova
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_czech_republic_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_czech_republic_eu_passport_number` . 
+- L'espressione regolare trova la data nel formato `Regex_eu_passport_date1` GG.MM.AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_czech_republic_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_czech_republic_eu_passport_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_czech_republic_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_czech_republic_eu_passport_number` . 
     
 ```xml
       <!-- Czech Republic Passport Number -->
@@ -4569,12 +4624,12 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passaporto #
-- passaporto #
+- passport #
+- passport #
 - passportid
-- passaporti
+- passports
 - passportno
-- Passport No
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -4582,34 +4637,34 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_czech_republic_eu_passport_number"></a>Keywords_czech_republic_eu_passport_number
 
-- Cestovní pas
-- číslo Pasu
-- Cestovní Pasu
-- Passeport No
-- čísla Pasu
+- cestovní pas
+- číslo pasu
+- cestovní pasu
+- passeport no
+- čísla pasu
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Data di emissione
-- Data di scadenza
+- data di emissione
+- data di scadenza
 
 
 ## <a name="czech-personal-identity-number"></a>Numero di identità personale ceco
 
 ### <a name="format"></a>Formato
 
-nove cifre con barra opzionale (vecchio formato) a dieci cifre con barra di inoltro facoltativa (nuovo formato)
+nove cifre con barra facoltativa (formato precedente) 10 cifre con barra facoltativa (nuovo formato)
 
 ### <a name="pattern"></a>Modello
 
-nove cifre (formato obsoleto):
+nove cifre (formato precedente):
 - sei cifre che rappresentano la data di nascita
-- barra di inoltro facoltativa
+- una barra facoltativa
 - tre cifre
 
-dieci cifre (nuovo formato):
+10 cifre (nuovo formato):
 - sei cifre che rappresentano la data di nascita
-- barra di inoltro facoltativa 
+- una barra facoltativa 
 - quattro cifre in cui l'ultima cifra è una cifra di controllo
 
 ### <a name="checksum"></a>Checksum
@@ -4618,15 +4673,15 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 
-- La funzione Func_czech_id_card trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keyword_czech_id_card.
+- La funzione Func_czech_id_card trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_czech_id_card da un utente.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 
-- La funzione Func_czech_id_card_new_format trova contenuto corrispondente al modello.
+- La funzione Func_czech_id_card_new_format trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
 ```xml
@@ -4649,52 +4704,112 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 #### <a name="keyword_czech_id_card"></a>Keyword_czech_id_card
 
 - numero di nascita
-- ID Repubblica Ceca
+- czech republic id
 - czechidno #
 - daňové číslo
 - identifikační číslo
-- identità No
-- numero di identità
+- identity no
+- identity number
 - identityno #
 - identityno
-- numero assicurativo
+- numero di assicurazione
 - national identification number
 - nationalnumber #
-- numero nazionale
+- national number
 - osobní číslo
 - personalidnumber #
-- numero ID personale
-- numero di identificazione personale
+- personal id number
+- personal identification number
 - numero personale
-- PID #
-- PID
+- pid #
+- pid
 - pojištění číslo
 - rč
 - rodne cislo
 - rodné číslo
-- SSN
-- SSN #
+- ssn
+- ssn #
 - social security number
 - tax id
-- identificazione fiscale No
-- codice di identificazione fiscale
+- tax identification no
+- tax identification number
 - tax no #
 - tax no
-- codice fiscale
-- numero di registrazione fiscale
-- taxid #
-- taxidno #
-- taxidnumber #
+- tax number
+- tax registration number
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
-- ID Tin
-- Tin No
-- latta #
+- tin id
+- tin no
+- tin #
 - numero di identificazione univoco
 
+## <a name="czech-social-security-number-or-equivalent-identification"></a>Numero di previdenza sociale ceco o identificazione equivalente
 
-## <a name="denmark-drivers-license-number"></a>Danimarca-numero della patente di guida
+Questa entità del tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate PER ID equivalente o numero di previdenza sociale dell'Unione Europea.
+
+### <a name="format"></a>Formato
+
+10 cifre e una barra rovesciata nel modello specificato
+  
+### <a name="pattern"></a>Modello
+
+10 cifre e una barra rovesciata:
+  
+- sei cifre che corrispondono alla data di nascita (AAMMDD): 
+- barra rovesciata
+- tre cifre che corrispondono a un numero seriale che separa le persone nate alla stessa data
+- una cifra di controllo
+    
+### <a name="checksum"></a>Checksum
+
+Sì
+  
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione  `Func_czech_republic_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola  `Keywords_czech_republic_eu_ssn_or_equivalent` chiave da. 
+    
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione  `Func_czech_republic_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
+
+```xml
+ <!-- EU SSN or Equivalent Number -->
+<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_czech_republic_eu_ssn_or_equivalent" />
+          <Match idRef="Keywords_czech_republic_eu_ssn_or_equivalent" />
+        </Pattern> 
+       <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_czech_republic_eu_ssn_or_equivalent" />
+        </Pattern>      
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywords_czech_republic_eu_ssn_or_equivalent"></a>Keywords_czech_republic_eu_ssn_or_equivalent
+
+- numero di nascita
+- national identification number
+- personal identification number
+- social security number
+- nationalnumber #
+- ssn #
+- ssn
+- national number
+- personal id number
+- personalidnumber #
+- rč
+- rodné číslo
+- rodne cislo
+
+## <a name="denmark-drivers-license-number"></a>Danimarca - Numero della patente di guida
 
 ### <a name="format"></a>Formato
 
@@ -4710,9 +4825,9 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_denmark_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_denmark_eu_driver's_license_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_denmark_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_denmark_eu_driver's_license_number` . 
     
 ```xml
       <!-- Denmark Driver's License Number -->
@@ -4729,7 +4844,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -4737,126 +4852,126 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - driverlicenses
 - driverlicence
 - driverlicences
-- LIC del driver
-- driver driver'lics
+- driver lic
+- driver lics
 - driver license
 - driver licenses
-- patente di guida
-- licenze per i driver
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- driver Lic
-- driver driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- licenze per i conducenti
+- drivers licences
 - driver'lic
-- driver ' LiCS
-- driver ' License
-- driver ' licenses
+- driver'lics
+- driver'license
+- driver'licenses
 - driver'licence
 - driver'licences
-- LIC del driver
-- driver ' driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
-- patenti del conducente
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
-- secondola
+- driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- LIC del conducente
-- driver'lics del conducente
+- driver's lic
+- driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- patenti di guida
-- DL #
-- DLS #
+- driver's licences
+- dl #
+- dls #
 - driverlic #
 - driverlics #
 - driverlicense #
 - driverlicenses #
 - driverlicence #
 - driverlicences #
-- LIC del driver #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- licenze per i driver #
+- driver lic #
+- driver lics #
+- driver license #
+- driver licenses #
+- driver licences #
 - driverslic #
 - driverslics #
 - driverslicense #
 - driverslicenses #
 - driverslicence #
 - driverslicences #
-- driver Lic #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- licenze per i conducenti #
+- drivers lic #
+- drivers lics #
+- drivers license #
+- driver licenses #
+- drivers licence #
+- drivers licences #
 - driver'lic #
-- driver ' LiCS #
-- driver ' License #
-- driver ' licenses #
+- driver'lics #
+- driver'license #
+- driver'licenses #
 - driver'licence #
 - driver'licences #
-- LIC del driver #
-- driver ' driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- patenti del conducente #
+- driver' lic #
+- driver' lics #
+- driver' license #
+- driver' licenses #
+- driver' licence #
+- driver' licences #
 - driver'slic #
 - driver'slics #
-- secondola #
+- driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- LIC del conducente #
-- driver'lics del conducente #
-- patente di guida #
-- licenze del conducente #
-- patente di guida #
-- patenti di guida #
+- driver's lic #
+- driver's lics #
+- driver's license #
+- driver's licenses #
+- driver's licence #
+- driver's licences #
 - driving licence 
 - driving license
 - dlno #
-- driv Lic
+- driv lic
 - driv licen
-- licenza di driv
-- licenze di driv
-- licenza driv
-- licenze di driv
+- driv license
+- driv licenses
+- driv licence
+- driv licences
 - driver licen
-- driver licen
-- licei del conducente
-- Guida di Lic
-- Guida licen
-- patenti di guida
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- permesso di guida
-- DL No
+- driving permit
+- dl no
 - dlno
-- numero DL
+- dl number
 
-#### <a name="keywords_denmark_eu_drivers_license_number"></a>Keywords_denmark_eu_driver ' s_license_number
+#### <a name="keywords_denmark_eu_drivers_license_number"></a>Keywords_denmark_eu_driver's_license_number
 
 - kørekort
-- Kørekortnummer
+- kørekortnummer
 
 
-## <a name="denmark-passport-number"></a>Numero di passaporto Danimarca
+## <a name="denmark-passport-number"></a>Danimarca - numero di passaporto
 
 ### <a name="format"></a>Formato
 
@@ -4872,14 +4987,14 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_denmark_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_denmark_eu_passport_number` viene trovata. 
-- L'espressione regolare `Regex_eu_passport_date2` trova la data nel formato dd mm AA o una parola chiave from `Keywords_eu_passport_date` si trova
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_denmark_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_denmark_eu_passport_number` . 
+- L'espressione `Regex_eu_passport_date2` regolare trova la data nel formato GG MM AA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_denmark_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_denmark_eu_passport_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_denmark_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_denmark_eu_passport_number` . 
     
 ```xml
       <!-- Denmark Passport Number -->
@@ -4910,12 +5025,12 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passaporto #
-- passaporto #
+- passport #
+- passport #
 - passportid
-- passaporti
+- passports
 - passportno
-- Passport No
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -4923,26 +5038,26 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_denmark_eu_passport_number"></a>Keywords_denmark_eu_passport_number
 
-- Pasnummer
-- Passeport n °
+- pasnummer
+- Passeport n°
 - pasnumre
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Data di emissione
-- Data di scadenza
+- data di emissione
+- data di scadenza
 
 
-## <a name="denmark-personal-identification-number"></a>Danimarca-numero di identificazione personale
+## <a name="denmark-personal-identification-number"></a>Danimarca - Numero di identificazione personale
 
 ### <a name="format"></a>Formato
 
-dieci cifre contenenti un segno meno
+10 cifre contenenti una lineetta
 
 ### <a name="pattern"></a>Modello
 
-dieci cifre:
-- sei cifre nel formato GGMMAA, ovvero la data di nascita 
+10 cifre:
+- sei cifre nel formato MMMMAA, ovvero la data di nascita 
 - un trattino 
 - quattro cifre in cui la cifra finale è una cifra di controllo
 
@@ -4952,13 +5067,13 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare Func_denmark_eu_tax_file_number trova contenuti che corrispondono al modello.
-- Viene trovata una parola chiave da Keyword_denmark_id.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione Func_denmark_eu_tax_file_number trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_denmark_id di codice.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni riservate se, entro 300 caratteri:
-- L'espressione regolare Func_denmark_eu_tax_file_number trova contenuti che corrispondono al modello.
+Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- L'espressione Func_denmark_eu_tax_file_number trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
 ```xml
@@ -4981,33 +5096,33 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 
 - centrale personregister
 - civilt registreringssystem
-- CPR
-- CPR #
-- gesundheitskarte Nummer
-- gesundheitsversicherungkarte Nummer
-- scheda integrità
-- numero di tessera di assicurazione malattia
-- numero di assicurazione sanitaria
+- cpr
+- cpr #
+- gesundheitskarte nummer
+- gesundheitsversicherungkarte nummer
+- health card
+- health insurance card number
+- health insurance number
 - identification number
 - identifikationsnummer
 - identifikationsnummer #
-- numero di identità
+- identity number
 - krankenkassennummer
 - nationalid #
 - nationalnumber #
-- numero nazionale
+- national number
 - personalidnumber #
 - personalidentityno #
-- numero ID personale
+- personal id number
 - personnummer
 - personnummer #
 - reisekrankenversicherungskartenummer
 - rejsesygesikringskort
-- SSN
-- SSN #
-- ID pattina
-- Kode di pattinaggio
-- Nummer di pattinaggio
+- ssn
+- ssn #
+- skat id
+- skat kode
+- skat nummer
 - skattenummer
 - social security number
 - sundhedsforsikringskort
@@ -5016,25 +5131,25 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 - sundhedskortnummer
 - sygesikring
 - sygesikringkortnummer
-- codice fiscale
-- Travel Health Insurance Card
+- tax code
+- travel health insurance card
 - uniqueidentityno #
-- codice fiscale
-- numero di registrazione fiscale
+- tax number
+- tax registration number
 - tax id
-- codice di identificazione fiscale
-- taxid #
+- tax identification number
+- taxd #
 - taxnumber #
 - tax no
 - taxno #
 - taxnumber
-- identificazione fiscale No
-- latta #
-- taxidno #
-- taxidnumber #
+- tax identification no
+- tin #
+- taxdno #
+- taxdnumber #
 - tax no #
-- ID Tin
-- Tin No
+- tin id
+- tin no
 - cpr.nr
 - cprnr
 - cprnummer
@@ -5049,8 +5164,64 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 - sygesikringsnr
 - sygesikringsnummer
 
+## <a name="denmark-social-security-number-or-equivalent-identification"></a>Numero di previdenza sociale danimarca o identificazione equivalente
+Questa entità tipo di informazioni riservate è disponibile solo per il numero di previdenza sociale dell'Unione Europea o per l'ID equivalente.
 
-## <a name="drug-enforcement-agency-dea-number"></a>Numero dell'agenzia di applicazione della droga (DEA)
+### <a name="format"></a>Formato
+
+10 cifre e un trattino nel formato specificato
+  
+### <a name="pattern"></a>Modello
+
+10 cifre e un trattino:
+  
+- sei cifre che corrispondono alla data di nascita (DDMMYY) 
+- un trattino
+- quattro cifre che corrispondono a un numero di sequenza
+
+### <a name="checksum"></a>Checksum
+
+Sì
+  
+### <a name="definition"></a>Definizione
+
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione  `Func_denmark_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola  `Keywords_denmark_eu_ssn_or_equivalent` chiave da. 
+    
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione  `Func_denmark_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
+    
+```xml
+ <!-- EU SSN or Equivalent Number -->
+<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_denmark_eu_ssn_or_equivalent" />
+          <Match idRef="Keywords_denmark_eu_ssn_or_equivalent" />
+        </Pattern> 
+       <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_denmark_eu_ssn_or_equivalent" />
+        </Pattern>      
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywords_denmark_eu_ssn_or_equivalent"></a>Keywords_denmark_eu_ssn_or_equivalent
+
+- personal identification number
+- national identification number
+- social security number
+- nationalnumber #
+- ssn #
+- ssn
+- national number
+- personal id number
+- personalidnumber #
+- cpr-nummer
+- personnummer
+
+## <a name="drug-enforcement-agency-dea-number"></a>Numero dea (Drug Enforcement Agency)
 
 ### <a name="format"></a>Formato
 
@@ -5059,8 +5230,8 @@ due lettere seguite da sette cifre
 ### <a name="pattern"></a>Modello
 
 Il modello deve includere tutti gli elementi seguenti:
-- una lettera (senza distinzione tra maiuscole/minuscole) da questo set di lettere possibili: abcdefghjklmnprstux, che è un codice dichiarante 
-- una lettera (senza distinzione tra maiuscole/minuscole), che è la prima lettera del cognome del dichiarante o della cifra "9"
+- una lettera (senza distinzione tra maiuscole e minuscole) da questo set di lettere possibili: abcdefghjklmnprstux, che è un codice registrante 
+- una lettera (senza distinzione tra maiuscole e minuscole), ovvero la prima lettera del cognome o della cifra "9" del registrante
 - sette cifre, l'ultima delle quali è la cifra di controllo
 
 ### <a name="checksum"></a>Checksum
@@ -5069,12 +5240,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_dea_number restituisce contenuti che corrispondono al modello.
-- Viene trovata una parola chiave `Keyword_dea_number`
+- Viene trovata una parola `Keyword_dea_number` chiave da
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_dea_number restituisce contenuti che corrispondono al modello.
 - Il checksum ha esito positivo.
 
@@ -5102,13 +5273,13 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keyword_dea_number"></a>Keyword_dea_number
 
-- Dea
-- Dea #
-- amministrazione di applicazione della droga
-- Drug Enforcement Agency
+- dea
+- dea #
+- drug enforcement administration
+- drug enforcement agency
 
 
-## <a name="estonia-drivers-license-number"></a>Numero della patente di guida estone
+## <a name="estonia-drivers-license-number"></a>Estonia - Numero della patente di guida
 
 ### <a name="format"></a>Formato
 
@@ -5118,7 +5289,7 @@ due lettere seguite da sei cifre
 
 due lettere e sei cifre:
   
-- lettere "ET" (senza distinzione tra maiuscole e minuscole) 
+- le lettere "ET" (senza distinzione tra maiuscole e minuscole) 
 - sei cifre
     
 ### <a name="checksum"></a>Checksum
@@ -5127,9 +5298,9 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_estonia_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_estonia_eu_driver's_license_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_estonia_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_estonia_eu_driver's_license_number` . 
     
 ```xml
       <!-- Estonia Driver's License Number -->
@@ -5146,7 +5317,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -5154,134 +5325,134 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - driverlicenses
 - driverlicence
 - driverlicences
-- LIC del driver
-- driver driver'lics
+- driver lic
+- driver lics
 - driver license
 - driver licenses
-- patente di guida
-- licenze per i driver
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- driver Lic
-- driver driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- licenze per i conducenti
+- drivers licences
 - driver'lic
-- driver ' LiCS
-- driver ' License
-- driver ' licenses
+- driver'lics
+- driver'license
+- driver'licenses
 - driver'licence
 - driver'licences
-- LIC del driver
-- driver ' driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
-- patenti del conducente
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
-- secondola
+- driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- LIC del conducente
-- driver'lics del conducente
+- driver's lic
+- driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- patenti di guida
-- DL #
-- DLS #
+- driver's licences
+- dl #
+- dls #
 - driverlic #
 - driverlics #
 - driverlicense #
 - driverlicenses #
 - driverlicence #
 - driverlicences #
-- LIC del driver #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- licenze per i driver #
+- driver lic #
+- driver lics #
+- driver license #
+- driver licenses #
+- driver licences #
 - driverslic #
 - driverslics #
 - driverslicense #
 - driverslicenses #
 - driverslicence #
 - driverslicences #
-- driver Lic #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- licenze per i conducenti #
+- drivers lic #
+- drivers lics #
+- drivers license #
+- driver licenses #
+- drivers licence #
+- drivers licences #
 - driver'lic #
-- driver ' LiCS #
-- driver ' License #
-- driver ' licenses #
+- driver'lics #
+- driver'license #
+- driver'licenses #
 - driver'licence #
 - driver'licences #
-- LIC del driver #
-- driver ' driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- patenti del conducente #
+- driver' lic #
+- driver' lics #
+- driver' license #
+- driver' licenses #
+- driver' licence #
+- driver' licences #
 - driver'slic #
 - driver'slics #
-- secondola #
+- driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- LIC del conducente #
-- driver'lics del conducente #
-- patente di guida #
-- licenze del conducente #
-- patente di guida #
-- patenti di guida #
+- driver's lic #
+- driver's lics #
+- driver's license #
+- driver's licenses #
+- driver's licence #
+- driver's licences #
 - driving licence 
 - driving license
 - dlno #
-- driv Lic
+- driv lic
 - driv licen
-- licenza di driv
-- licenze di driv
-- licenza driv
-- licenze di driv
+- driv license
+- driv licenses
+- driv licence
+- driv licences
 - driver licen
-- driver licen
-- licei del conducente
-- Guida di Lic
-- Guida licen
-- patenti di guida
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- permesso di guida
-- DL No
+- driving permit
+- dl no
 - dlno
-- numero DL
+- dl number
 
-#### <a name="keywords_estonia_eu_drivers_license_number"></a>Keywords_estonia_eu_driver ' s_license_number
+#### <a name="keywords_estonia_eu_drivers_license_number"></a>Keywords_estonia_eu_driver's_license_number
 
---Permis de conduire
+-- permis de conduire
 - juhilubade numbrid
-- numero juhiloa
+- juhiloa number
 - juhiluba
 
 
-## <a name="estonia-personal-identification-code"></a>Estonia Codice di identificazione personale
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="estonia-personal-identification-code"></a>Estonia Personal Identification Code
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -5291,9 +5462,9 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 
 11 cifre:
   
-- una cifra che corrisponde al sesso e al secolo di nascita (numero dispari maschio, anche numero femmina; 1-2: XIX secolo; 3-4: XX secolo; 5-6: XXI secolo)
-- sei cifre che corrispondono alla data di nascita (AAMMGG)
-- tre cifre che corrispondono a un numero di serie che separa le persone nate nella stessa data
+- una cifra che corrisponde al sesso e al secolo di nascita (numero dispari maschile, numero pari femminile; 1-2: 19° secolo; 3-4: 20° secolo; 5-6: 21° secolo)
+- sei cifre che corrispondono alla data di nascita (AAMMMMD)
+- tre cifre che corrispondono a un numero seriale che separa le persone nate nella stessa data
 - una cifra di controllo
     
 ### <a name="checksum"></a>Checksum
@@ -5302,11 +5473,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_estonia_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_estonia_eu_national_id_card` . 
+- Viene trovata una parola  `Keywords_estonia_eu_national_id_card` chiave da. 
     
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_estonia_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -5330,39 +5501,39 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_estonia_eu_national_id_card"></a>Keywords_estonia_eu_national_id_card
 
-- ID-kaart
-- IK
+- id-kaart
+- ik
 - isikukood #
 - isikukood
-- ID maksu
+- maksu id
 - maksukohustuslase identifitseerimisnumber
 - maksunumber
 - national identification number
-- numero nazionale
+- national number
 - codice personale
-- numero ID personale
+- personal id number
 - codice di identificazione personale
-- numero di identificazione personale
+- personal identification number
 - personalidnumber #
 - tax id
-- identificazione fiscale No
-- codice di identificazione fiscale
+- tax identification no
+- tax identification number
 - tax no #
 - tax no
-- codice fiscale
-- numero di registrazione fiscale
-- taxid #
-- taxidno #
-- taxidnumber #
+- tax number
+- tax registration number
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
-- ID Tin
-- Tin No
-- latta #
+- tin id
+- tin no
+- tin #
 
 
-## <a name="estonia-passport-number"></a>Numero di passaporto Estonia
+## <a name="estonia-passport-number"></a>Estonia - numero di passaporto
 
 ### <a name="format"></a>Formato
 
@@ -5378,14 +5549,14 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_estonia_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_estonia_eu_passport_number` viene trovata. 
-- L'espressione regolare `Regex_eu_passport_date1` trova la data nel formato dd. mm. yyyy o una parola chiave from `Keywords_eu_passport_date` si trova
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_estonia_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_estonia_eu_passport_number` . 
+- L'espressione regolare trova la data nel formato `Regex_eu_passport_date1` GG.MM.AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_estonia_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_estonia_eu_passport_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_estonia_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_estonia_eu_passport_number` . 
     
 ```xml
       <!-- Estonia Passport Number -->
@@ -5415,12 +5586,12 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passaporto #
-- passaporto #
+- passport #
+- passport #
 - passportid
-- passaporti
+- passports
 - passportno
-- Passport No
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -5428,15 +5599,15 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_estonia_eu_passport_number"></a>Keywords_estonia_eu_passport_number
 
-Eesti kodaniku pass passinumbrid numero documento n ° dokumendi Nr
+eesti kodaniku pass passi number passinumbrid document no dokumendi nr
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Data di emissione
-- Data di scadenza
+- data di emissione
+- data di scadenza
 
 
-## <a name="eu-debit-card-number"></a>Numero di carta di debito dell'Unione europea
+## <a name="eu-debit-card-number"></a>Numero di carta di debito DELL
 
 ### <a name="format"></a>Formato
 
@@ -5444,7 +5615,7 @@ Eesti kodaniku pass passinumbrid numero documento n ° dokumendi Nr
 
 ### <a name="pattern"></a>Modello
 
-Modello molto complesso e solido
+Modello complesso e affidabile
 
 ### <a name="checksum"></a>Checksum
 
@@ -5452,7 +5623,7 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_eu_debit_card restituisce contenuti che corrispondono al modello.
 - Si verifica almeno una delle situazioni seguenti:
     - Viene trovata una parola chiave da Keyword_eu_debit_card.
@@ -5486,7 +5657,7 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 - card number 
 - card no. 
 - security number 
-- CC # 
+- cc # 
 
 #### <a name="keyword_card_terms_dict"></a>Keyword_card_terms_dict
 
@@ -5494,9 +5665,9 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 - acct num 
 - acct no 
 - american express 
-- AmericanExpress 
+- americanexpress 
 - americano espresso 
-- Amex 
+- amex 
 - atm card 
 - atm cards 
 - atm kaart 
@@ -5504,7 +5675,7 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 - atmcards 
 - atmkaart 
 - atmkaarten 
-- Bancontact 
+- bancontact 
 - bank card 
 - bankkaart 
 - card holder 
@@ -5514,8 +5685,8 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 - card numbers 
 - card type 
 - cardano numerico 
-- titolare 
-- titolari 
+- cardholder 
+- titolari di carte 
 - cardnumber 
 - cardnumbers 
 - carta bianca 
@@ -5536,37 +5707,37 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 - cartão de crédito 
 - cartão de debito 
 - cartão de débito 
-- CB 
-- Ccn 
+- cb 
+- ccn 
 - check card 
 - check cards 
 - checkcard
 - checkcards 
 - chequekaart 
-- Cirrus 
-- Cirrus-Edc-Maestro 
+- cirrus 
+- cirrus-edc-tuttora 
 - controlekaart 
 - controlekaarten 
 - credit card 
 - credit cards 
-- CreditCard 
-- creditcards.com 
+- creditcard 
+- creditcards 
 - debetkaart 
-- carte 
+- debetkaarten 
 - debit card 
 - debit cards 
 - debitcard 
 - debitcards 
 - debito automatico 
 - diners club 
-- DinersClub 
-- individuare 
+- dinersclub 
+- discover 
 - discover card 
 - discover cards 
 - discovercard 
 - discovercards 
 - débito automático
-- EDC 
+- edc 
 - eigentümername 
 - european debit card 
 - hoofdkaart 
@@ -5574,30 +5745,30 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 - in viaggio 
 - japanese card bureau 
 - japanse kaartdienst 
-- JCB 
+- jcb 
 - kaart 
 - kaart num 
 - kaartaantal 
 - kaartaantallen 
 - kaarthouder 
 - kaarthouders 
-- Karte  
+- karte  
 - karteninhaber 
 - karteninhabers
 - kartennr 
 - kartennummer 
 - kreditkarte 
-- Kreditkarten-Nummer 
+- kreditkarten-nummer 
 - kreditkarteninhaber 
 - kreditkarteninstitut 
 - kreditkartennummer 
 - kreditkartentyp 
-- Maestro 
+- sinisa 
 - master card 
 - master cards 
-- Mastercard 
-- Mastercard 
-- MC 
+- mastercard 
+- mastercard 
+- mc 
 - mister cash 
 - n carta 
 - carta 
@@ -5608,7 +5779,7 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 - No. do cartao 
 - No. do cartão 
 - nr carta 
-- Nr. carta 
+- nr. carta 
 - numeri di scheda 
 - numero carta 
 - numero de cartao 
@@ -5627,7 +5798,7 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 - nº de tarjeta 
 - nº do cartao 
 - nº do cartão 
-- n º. do cartão 
+- nº. do cartão 
 - número de cartao 
 - número de cartão 
 - número de tarjeta 
@@ -5648,7 +5819,7 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 - solo 
 - supporti di scheda 
 - supporto di scheda 
-- opzione 
+- switch 
 - tarjeta atm 
 - tarjeta credito 
 - tarjeta de atm 
@@ -5662,11 +5833,11 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 - scheda 
 - v pay 
 - v-pay 
-- esempio 
+- visa 
 - visa plus 
 - visa electron 
 - visto 
-- Visum 
+- visum 
 - vpay   
 
 #### <a name="keyword_card_security_terms_dict"></a>Keyword_card_security_terms_dict
@@ -5674,34 +5845,34 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 - card identification number
 - card verification 
 - cardi la verifica 
-- ID 
+- cid 
 - cod seg 
 - cod seguranca 
 - cod segurança 
 - cod sicurezza 
-- Cod. SEG 
-- Cod. seguranca 
-- Cod. Segurança 
-- Cod. sicurezza 
+- cod. seg 
+- cod. seguranca 
+- cod. segurança 
+- cod. sicurezza 
 - codice di sicurezza 
 - codice di verifica 
-- Codigo 
+- codigo 
 - codigo de seguranca 
 - codigo de segurança 
 - crittogramma 
-- crittogramma 
+- cryptogram 
 - cryptogramme 
-- CV2 
-- CVC 
-- CVC2 
-- CVN 
-- CVV 
-- CVV2 
+- cv2 
+- cvc 
+- cvc2 
+- cvn 
+- cvv 
+- cvv2 
 - cód seguranca 
 - cód segurança 
 - cód. seguranca 
-- cód. Segurança 
-- Código 
+- cód. segurança 
+- código 
 - código de seguranca 
 - código de segurança 
 - de kaart controle 
@@ -5726,7 +5897,7 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 - número de verificação 
 - perno il blocco 
 - pin block 
-- Prufziffer 
+- prufziffer 
 - prüfziffer 
 - security code 
 - security no 
@@ -5736,9 +5907,9 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 - sicherheitsnummer 
 - speldblok 
 - veiligheid nr 
-- veiligheidsaantal 
-- veiligheidscode 
-- veiligheidsnummer 
+- perigheidsaantal 
+- perigheidscode 
+- perigheidsnummer 
 - verfalldatum 
 
 #### <a name="keyword_card_expiration_terms_dict"></a>Keyword_card_expiration_terms_dict
@@ -5775,20 +5946,20 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 - valable 
 - validade 
 - valido hasta 
-- Valor 
+- valor 
 - venc 
 - vencimento 
 - vencimiento 
 - verloopt 
 - vervaldag 
 - vervaldatum 
-- VTO 
+- vto 
 - válido hasta 
 
 
-## <a name="eu-drivers-license-number"></a>Numero della patente di guida dell'Unione europea
+## <a name="eu-drivers-license-number"></a>Numero della patente di guida dell'Unione Europea
 
-Queste sono le entità nel tipo di informazioni riservate del conducente dell'Unione europea.
+Queste entità sono nel numero di patente di guida dell'Unione Europea e sono tipi di informazioni riservate.
 
 - [Austria](#austria-drivers-license-number) 
 - [Belgio](#belgium-drivers-license-number)
@@ -5807,7 +5978,7 @@ Queste sono le entità nel tipo di informazioni riservate del conducente dell'Un
 - [Italia](#italy-drivers-license-number)
 - [Lettonia](#latvia-drivers-license-number)
 - [Lituania](#lithuania-drivers-license-number)
-- [Lussemburgo](#luxemburg-drivers-license-number)
+- [Luvamburgo](#luxemburg-drivers-license-number)
 - [Malta](#malta-drivers-license-number)
 - [Paesi Bassi](#netherlands-drivers-license-number)
 - [Polonia](#poland-drivers-license-number) 
@@ -5817,12 +5988,12 @@ Queste sono le entità nel tipo di informazioni riservate del conducente dell'Un
 - [Slovenia](#slovenia-drivers-license-number)
 - [Spagna](#spain-drivers-license-number)
 - [Svezia](#sweden-drivers-license-number)
-- [U.K.](#uk-drivers-license-number)
+- [Regno Unito](#uk-drivers-license-number)
 
 
-## <a name="eu-national-identification-number"></a>Numero di identificazione nazionale dell'Unione europea
+## <a name="eu-national-identification-number"></a>Numero di identificazione nazionale dell'Unione Europea
 
-Queste sono le entità del tipo di informazioni riservate del numero di identificazione nazionale dell'Unione europea.
+Queste entità sono nel numero di identificazione nazionale dell'Unione Europea e sono tipi di informazioni riservate.
 
 - [Austria](#austria-identity-card)
 - [Belgio](#belgium-national-number)
@@ -5841,7 +6012,7 @@ Queste sono le entità del tipo di informazioni riservate del numero di identifi
 - [Italia](#italy-fiscal-code)
 - [Lettonia](#latvia-personal-code)
 - [Lituania](#lithuania-personal-code)
-- [Lussemburgo](#luxemburg-national-identification-number-natural-persons)
+- [Luvamburgo](#luxemburg-national-identification-number-natural-persons)
 - [Malta](#malta-identity-card-number)
 - [Paesi Bassi](#netherlands-citizens-service-bsn-number)
 - [Polonia](#poland-national-id-pesel)
@@ -5850,12 +6021,12 @@ Queste sono le entità del tipo di informazioni riservate del numero di identifi
 - [Slovacchia](#slovakia-personal-number)
 - [Slovenia](#slovenia-unique-master-citizen-number)
 - [Spagna](#spain-dni)
-- [U.K.](#uk-national-insurance-number-nino)                                        
+- [Regno Unito](#uk-national-insurance-number-nino)                                        
 
 
-## <a name="eu-passport-number"></a>Numero di passaporto EU 
+## <a name="eu-passport-number"></a>Numero di passaporto UE 
 
-Queste sono le entità del numero di passaporto typeThese informazioni riservate dell'Unione europea sono le entità nel bundle del numero di passaporto dell'Unione europea.
+Queste entità sono nel numero di passaporto dell'Unione Europea e sono tipi di informazioni riservate. Queste entità sono nel bundle dei numeri di passaporto dell'Unione Europea.
 
 - [Austria](#austria-passport-number)
 - [Belgio](#belgium-passport-number)
@@ -5874,7 +6045,7 @@ Queste sono le entità del numero di passaporto typeThese informazioni riservate
 - [Italia](#italy-passport-number)
 - [Lettonia](#latvia-passport-number)
 - [Lituania](#lithuania-passport-number)
-- [Lussemburgo](#luxemburg-passport-number)
+- [Luvamburgo](#luxemburg-passport-number)
 - [Malta](#malta-passport-number)
 - [Paesi Bassi](#netherlands-passport-number)
 - [Polonia](#poland-passport-number)
@@ -5884,12 +6055,12 @@ Queste sono le entità del numero di passaporto typeThese informazioni riservate
 - [Slovenia](#slovenia-passport-number)
 - [Spagna](#spain-passport-number)
 - [Svezia](#sweden-passport-number)
-- [U.K.](#us--uk-passport-number)
+- [Regno Unito](#us--uk-passport-number)
 
 
-## <a name="eu-social-security-number-or-equivalent-identification"></a>Codice di previdenza sociale dell'Unione europea o identificazione equivalente
+## <a name="eu-social-security-number-or-equivalent-identification"></a>Numero di previdenza sociale dell'Unione Europea o identificazione equivalente
 
-Queste sono le entità che si trovano nel codice di previdenza sociale dell'Unione europea o nel tipo di informazioni riservate di identificazione equivalente.
+Queste entità che sono nel numero di previdenza sociale dell'Unione Europea o in un'identificazione equivalente e sono tipi di informazioni riservate.
 
 - [Austria](#austria-social-security-number)
 - [Belgio](#belgium-national-number)
@@ -5906,9 +6077,9 @@ Queste sono le entità che si trovano nel codice di previdenza sociale dell'Unio
 - [Svezia](#sweden-national-id)
 
 
-## <a name="eu-tax-identification-number"></a>Numero di identificazione fiscale dell'Unione europea
+## <a name="eu-tax-identification-number"></a>Numero di identificazione fiscale UE
 
-Tali entità sono incluse nel tipo di informazioni riservate del numero di identificazione fiscale dell'Unione europea.
+Queste entità sono nel tipo di informazioni riservate del numero di identificazione fiscale dell'Unione Europea.
 
 - [Austria](#austria-tax-identification-number)
 - [Belgio](#belgium-national-number)
@@ -5927,7 +6098,7 @@ Tali entità sono incluse nel tipo di informazioni riservate del numero di ident
 - [Italia](#italy-fiscal-code)
 - [Lettonia](#latvia-personal-code)
 - [Lituania](#lithuania-personal-code)
-- [Lussemburgo](#luxemburg-national-identification-number-non-natural-persons)
+- [Luvamburgo](#luxemburg-national-identification-number-non-natural-persons)
 - [Malta](#malta-tax-identification-number)
 - [Paesi Bassi](#netherlands-tax-identification-number)
 - [Polonia](#poland-tax-identification-number)
@@ -5937,18 +6108,18 @@ Tali entità sono incluse nel tipo di informazioni riservate del numero di ident
 - [Slovenia](#slovenia-tax-identification-number)
 - [Spagna](#spain-tax-identification-number)
 - [Svezia](#sweden-tax-identification-number)
-- [U.K.](#uk-unique-taxpayer-reference-number)
+- [Regno Unito](#uk-unique-taxpayer-reference-number)
 
 
-## <a name="finland-drivers-license-number"></a>Finlandia-numero della patente di guida
+## <a name="finland-drivers-license-number"></a>Finlandia - Numero della patente di guida
 
 ### <a name="format"></a>Formato
 
-dieci cifre e lettere contenenti un trattino
+10 cifre contenenti una lineetta
   
 ### <a name="pattern"></a>Modello
 
-dieci cifre e lettere contenenti un trattino:
+10 cifre contenenti un trattino:
   
 - sei cifre 
 - un trattino
@@ -5961,9 +6132,9 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_finland_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_finland_eu_driver's_license_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_finland_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_finland_eu_driver's_license_number` . 
     
 ```xml
       <!-- Finland Driver's License Number -->
@@ -5980,7 +6151,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -5988,152 +6159,152 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - driverlicenses
 - driverlicence
 - driverlicences
-- LIC del driver
-- driver driver'lics
+- driver lic
+- driver lics
 - driver license
 - driver licenses
-- patente di guida
-- licenze per i driver
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- driver Lic
-- driver driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- licenze per i conducenti
+- drivers licences
 - driver'lic
-- driver ' LiCS
-- driver ' License
-- driver ' licenses
+- driver'lics
+- driver'license
+- driver'licenses
 - driver'licence
 - driver'licences
-- LIC del driver
-- driver ' driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
-- patenti del conducente
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
-- secondola
+- driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- LIC del conducente
-- driver'lics del conducente
+- driver's lic
+- driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- patenti di guida
-- DL #
-- DLS #
+- driver's licences
+- dl #
+- dls #
 - driverlic #
 - driverlics #
 - driverlicense #
 - driverlicenses #
 - driverlicence #
 - driverlicences #
-- LIC del driver #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- licenze per i driver #
+- driver lic #
+- driver lics #
+- driver license #
+- driver licenses #
+- driver licences #
 - driverslic #
 - driverslics #
 - driverslicense #
 - driverslicenses #
 - driverslicence #
 - driverslicences #
-- driver Lic #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- licenze per i conducenti #
+- drivers lic #
+- drivers lics #
+- drivers license #
+- driver licenses #
+- drivers licence #
+- drivers licences #
 - driver'lic #
-- driver ' LiCS #
-- driver ' License #
-- driver ' licenses #
+- driver'lics #
+- driver'license #
+- driver'licenses #
 - driver'licence #
 - driver'licences #
-- LIC del driver #
-- driver ' driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- patenti del conducente #
+- driver' lic #
+- driver' lics #
+- driver' license #
+- driver' licenses #
+- driver' licence #
+- driver' licences #
 - driver'slic #
 - driver'slics #
-- secondola #
+- driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- LIC del conducente #
-- driver'lics del conducente #
-- patente di guida #
-- licenze del conducente #
-- patente di guida #
-- patenti di guida #
+- driver's lic #
+- driver's lics #
+- driver's license #
+- driver's licenses #
+- driver's licence #
+- driver's licences #
 - driving licence 
 - driving license
 - dlno #
-- driv Lic
+- driv lic
 - driv licen
-- licenza di driv
-- licenze di driv
-- licenza driv
-- licenze di driv
+- driv license
+- driv licenses
+- driv licence
+- driv licences
 - driver licen
-- driver licen
-- licei del conducente
-- Guida di Lic
-- Guida licen
-- patenti di guida
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- permesso di guida
-- DL No
+- driving permit
+- dl no
 - dlno
-- numero DL
+- dl number
 
 
-#### <a name="keywords_finland_eu_drivers_license_number"></a>Keywords_finland_eu_driver ' s_license_number
+#### <a name="keywords_finland_eu_drivers_license_number"></a>Keywords_finland_eu_driver's_license_number
 
 - ajokortti
 - permis de conduire
-- numero ajokortin
-- kuljettaja Lic.
+- ajokortin numero
+- kuljettaja lic.
 - körkort
 - körkortnummer
-- förare Lic.
+- förare lic.
 - ajokortit
 - ajokortin numerot
 
 
-## <a name="finland-european-health-insurance-number"></a>Finlandia-numero di assicurazione sanitaria europea
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="finland-european-health-insurance-number"></a>Finlandia - Numero di assicurazione sanitaria europea
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
-numero di 20 cifre
+Numero a 20 cifre
 
 ### <a name="pattern"></a>Modello
 
-numero di 20 cifre:
+Numero a 20 cifre:
 
-- dieci cifre-8024680246
+- 10 cifre - 8024680246
 - uno spazio o un trattino facoltativo
-- dieci cifre
+- 10 cifre
 
 ### <a name="checksum"></a>Checksum
 
@@ -6141,9 +6312,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La Regex_Finland_European_Health_Insurance_Number Regex trova contenuto che corrisponde al modello.
-- Viene trovata una parola chiave da Keyword_Finland_European_Health_Insurance_Number.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione Regex_Finland_European_Health_Insurance_Number trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_Finland_European_Health_Insurance_Number da un utente.
 
 ```xml
       <!-- Finland European Health Insurance Number -->
@@ -6158,24 +6329,24 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keyword_finland_european_health_insurance_number"></a>Keyword_finland_european_health_insurance_number
 
-- Team #
-- Team
+- ehic #
+- ehic
 - finlandehicnumber #
-- Finlandia sjukförsäkringskort
-- scheda integrità
-- tessera sanitaria
-- numero di assicurazione sanitaria
+- finska sjukförsäkringskort
+- health card
+- health insurance card
+- health insurance number
 - hälsokort
 - sairaanhoitokortin
 - sairausvakuutuskortti
 - sairausvakuutusnumero
-- sjukförsäkring Nummer
+- sjukförsäkring nummer
 - sjukförsäkringskort
-- Suomen sairausvakuutuskortti
+- suomen sairausvakuutuskortti
 - terveyskortti
 
 
-## <a name="finland-national-id"></a>ID nazionale Finlandia
+## <a name="finland-national-id"></a>Finlandia - ID nazionale
 
 ### <a name="format"></a>Formato
 
@@ -6184,10 +6355,10 @@ sei cifre più un carattere che indica un secolo più tre cifre più una cifra d
 ### <a name="pattern"></a>Modello
 
 Il modello deve includere tutti gli elementi seguenti:
-- sei cifre nel formato formato GGMMAA che sono una data di nascita 
-- indicatore Century ('-',' +' or ' a') 
+- sei cifre nel formato MMMMAA, che sono una data di nascita 
+- indicatore del secolo ('-', '+' o 'a') 
 - numero di identificazione personale a tre cifre 
-- una cifra o una lettera (senza distinzione tra maiuscole e minuscole) che corrisponde a una cifra di controllo
+- una cifra o una lettera (senza distinzione tra maiuscole e minuscole) che è una cifra di controllo
 
 ### <a name="checksum"></a>Checksum
 
@@ -6195,14 +6366,14 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - la funzione Func_finnish_national_id trova contenuto che corrisponde al modello
-- viene trovata una parola chiave da Keyword_finnish_national_id
-- il checksum passa
+- viene trovata una parola Keyword_finnish_national_id di codice
+- checksum superato
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - la funzione Func_finnish_national_id trova contenuto che corrisponde al modello
-- il checksum passa
+- checksum superato
 
 ```xml
       <!-- Finnish National ID-->
@@ -6220,46 +6391,46 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 ### <a name="keywords"></a>Parole chiave
 
 - ainutlaatuinen henkilökohtainen tunnus
-- henkilökohtainen tunnus
+- henkilökohtainen tunnus
 - henkilötunnus
 - henkilötunnusnumero #
-- henkilötunnusnumero
+- henkilötunnusnumero
 - hetu
-- ID No
-- numero ID
+- id no
+- id number
 - identification number
-- numero identiteetti
-- numero di identità
-- NumeroID del
-- Kansallinen henkilötunnus
+- identiteetti numero
+- identity number
+- idnumber
+- kansallinen henkilötunnus
 - kansallisen henkilökortin
-- carta d'identità nazionale
-- ID nazionale No.
-- ID personale
-- codice identità personale
+- national id card
+- national id no.
+- id personale
+- personal identity code
 - personalidnumber #
 - personbeteckning
 - personnummer
 - social security number
 - sosiaaliturvatunnus
 - tax id
-- identificazione fiscale No
-- codice di identificazione fiscale
+- tax identification no
+- tax identification number
 - tax no #
 - tax no
-- codice fiscale
-- numero di registrazione fiscale
-- taxid #
-- taxidno #
-- taxidnumber #
+- tax number
+- tax registration number
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
-- ID Tin
-- Tin No
-- latta #
+- tin id
+- tin no
+- tin #
 - tunnistenumero
-- numero tunnus
+- tunnus numero
 - tunnusluku
 - tunnusnumero
 - verokortti
@@ -6268,7 +6439,9 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - verotunnus
 
 
-## <a name="finland-passport-number"></a>Numero di passaporto Finlandia
+## <a name="finland-passport-number"></a>Finlandia - numero di passaporto
+
+Questa entità tipo di informazioni riservate è disponibile nel tipo di informazioni riservate Numero di passaporto UE ed è disponibile come entità autonoma del tipo di informazioni riservate.
 
 ### <a name="format"></a>Formato
 combinazione di nove lettere e cifre
@@ -6284,9 +6457,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare Regex_finland_passport_number trova contenuti che corrispondono al modello.
-- Viene trovata una parola chiave da Keywords_eu_passport_number_common o Keyword_finland_passport_number.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione Regex_finland_passport_number trova contenuto che corrisponde al modello.
+- Viene trovata una parola chiave Keywords_eu_passport_number_common o Keyword_finland_passport_number ricerca.
 
 ```xml
 <!-- Finland Passport Number -->
@@ -6304,12 +6477,12 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passaporto #
-- passaporto #
+- passport #
+- passport #
 - passportid
-- passaporti
+- passports
 - passportno
-- Passport No
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -6317,16 +6490,18 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keyword_finland_passport_number"></a>Keyword_finland_passport_number
 
-- Suomalainen passi
-- numero passin
+- suomalainen passi
+- passin numero
 - passin numero. #
-- numero passin #
+- passin numero #
 - passin numero.
 - passi #
-- numero di passi
+- passi number
 
 
-## <a name="france-drivers-license-number"></a>Francia-numero della patente di guida
+## <a name="france-drivers-license-number"></a>Francia - Numero della patente di guida
+
+Questa entità tipo di informazioni riservate è disponibile nel tipo di informazione sensibile Numero di patente dell'ue ed è disponibile come entità autonoma del tipo di informazioni riservate.
 
 ### <a name="format"></a>Formato
 
@@ -6342,9 +6517,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- la funzione Func_french_drivers_license trova contenuto corrispondente al modello.
-- viene trovata una parola chiave da Keyword_french_drivers_license.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- la funzione Func_french_drivers_license trova contenuto che corrisponde al modello.
+- viene trovata una parola Keyword_french_drivers_license da un utente.
 
 ```xml
     <!-- France Driver's License Number -->
@@ -6366,145 +6541,145 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - driverlicenses
 - driverlicence
 - driverlicences
-- LIC del driver
-- driver driver'lics
+- driver lic
+- driver lics
 - driver license
 - driver licenses
-- patente di guida
-- licenze per i driver
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- driver Lic
-- driver driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- licenze per i conducenti
+- drivers licences
 - driver'lic
-- driver ' LiCS
-- driver ' License
-- driver ' licenses
+- driver'lics
+- driver'license
+- driver'licenses
 - driver'licence
 - driver'licences
-- LIC del driver
-- driver ' driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
-- patenti del conducente
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
-- secondola
+- driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- LIC del conducente
-- driver'lics del conducente
+- driver's lic
+- driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- patenti di guida
-- DL #
-- DLS #
+- driver's licences
+- dl #
+- dls #
 - driverlic #
 - driverlics #
 - driverlicense #
 - driverlicenses #
 - driverlicence #
 - driverlicences #
-- LIC del driver #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- licenze per i driver #
+- driver lic #
+- driver lics #
+- driver license #
+- driver licenses #
+- driver licences #
 - driverslic #
 - driverslics #
 - driverslicense #
 - driverslicenses #
 - driverslicence #
 - driverslicences #
-- driver Lic #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- licenze per i conducenti #
+- drivers lic #
+- drivers lics #
+- drivers license #
+- driver licenses #
+- drivers licence #
+- drivers licences #
 - driver'lic #
-- driver ' LiCS #
-- driver ' License #
-- driver ' licenses #
+- driver'lics #
+- driver'license #
+- driver'licenses #
 - driver'licence #
 - driver'licences #
-- LIC del driver #
-- driver ' driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- patenti del conducente #
+- driver' lic #
+- driver' lics #
+- driver' license #
+- driver' licenses #
+- driver' licence #
+- driver' licences #
 - driver'slic #
 - driver'slics #
-- secondola #
+- driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- LIC del conducente #
-- driver'lics del conducente #
-- patente di guida #
-- licenze del conducente #
-- patente di guida #
-- patenti di guida #
+- driver's lic #
+- driver's lics #
+- driver's license #
+- driver's licenses #
+- driver's licence #
+- driver's licences #
 - driving licence 
 - driving license
 - dlno #
-- driv Lic
+- driv lic
 - driv licen
-- licenza di driv
-- licenze di driv
-- licenza driv
-- licenze di driv
+- driv license
+- driv licenses
+- driv licence
+- driv licences
 - driver licen
-- driver licen
-- licei del conducente
-- Guida di Lic
-- Guida licen
-- patenti di guida
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- permesso di guida
-- DL No
+- driving permit
+- dl no
 - dlno
-- numero DL
+- dl number
 - permis de conduire
 - licence number
 - license number
 - licence numbers
 - license numbers
-- Numéros de licence
+- numéros de licence
 
 
-## <a name="france-health-insurance-number"></a>Francia-numero di assicurazione malattia
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="france-health-insurance-number"></a>Numero di assicurazione sanitaria francese
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
-numero 21 cifre
+Numero a 21 cifre
 
 ### <a name="pattern"></a>Modello
 
-numero 21 cifre:
+Numero a 21 cifre:
 
-- dieci cifre
+- 10 cifre
 - uno spazio facoltativo
-- dieci cifre
+- 10 cifre
 - uno spazio facoltativo
 - una cifra
 
@@ -6515,9 +6690,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- la Regex_France_Health_Insurance_Number Regex trova contenuto che corrisponde al modello.
-- viene trovata una parola chiave da Keyword_France_Health_Insurance_Number.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- l'Regex_France_Health_Insurance_Number regex trova contenuto che corrisponde al modello.
+- viene trovata una parola Keyword_France_Health_Insurance_Number da un utente.
 
 ```xml
       <!-- France Health Insurance Number -->
@@ -6532,12 +6707,12 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keyword_france_health_insurance_number"></a>Keyword_France_health_insurance_number
 
-- scheda assicurazioni
+- carta di assicurazione
 - carte vitale
 - carte d'assuré social
 
 
-## <a name="france-national-id-card-cni"></a>Carta di identità nazionale francese (CNI)
+## <a name="france-national-id-card-cni"></a>Carta di identità francese (CNI)
 
 ### <a name="format"></a>Formato
 
@@ -6553,9 +6728,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni riservate se, entro 300 caratteri:
+Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - L'espressione regolare Regex_france_cni restituisce contenuti che corrispondono al modello.
-- Viene trovata una parola chiave da Keywords_france_eu_national_id_card.
+- Viene trovata una parola Keywords_france_eu_national_id_card da un utente.
 
 ```xml
     <!-- France CNI -->
@@ -6572,20 +6747,20 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 #### <a name="keywords_france_eu_national_id_card"></a>Keywords_france_eu_national_id_card
 
 - card number
-- Carte nationale d'identité
-- Carte nationale d'idenite No
-- CNI #
-- CNI
+- carte nationale d'identité
+- carte nationale d'idenite no
+- cni #
+- cni
 - compte bancaire
 - national identification number
-- identità nazionale
+- national identity
 - nationalidno #
 - numéro d'assurance maladie
 - numéro de carte vitale
 
    
-## <a name="france-passport-number"></a>Francia-numero di passaporto
-Questa entità di tipo di informazioni riservate è disponibile nel tipo di informazioni riservate del numero di passaporto dell'Unione europea ed è disponibile come entità di tipo di informazioni riservate stand-alone.
+## <a name="france-passport-number"></a>Francia - numero di passaporto
+Questa entità del tipo di informazioni riservate è disponibile nel tipo di informazione sensibile Numero di passaporto UE. È disponibile come entità autonoma del tipo di informazioni riservate.
 
 ### <a name="format"></a>Formato
 
@@ -6604,7 +6779,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_fr_passport restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_passport.
 
@@ -6625,7 +6800,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - Passport Number
 - Passport No
 - Passport#
-- Passaporto #
+- Passport #
 - PassportID
 - Passportno
 - passportnumber
@@ -6642,8 +6817,8 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - Passeportn °
 
       
-## <a name="france-social-security-number-insee-or-equivalent-identification"></a>Francia-numero di previdenza sociale (INSEE) o identificazione equivalente
-Questa entità di tipo di informazioni riservate è inclusa nel codice di previdenza sociale dell'Unione europea e nel tipo di informazioni riservate ID equivalente ed è disponibile come entità di tipo di informazioni riservate stand-alone.
+## <a name="france-social-security-number-insee-or-equivalent-identification"></a>Codice fiscale francese (INSEE) o identificazione equivalente
+Questa entità del tipo di informazioni riservate è inclusa nel tipo di informazioni riservate PER ID equivalente e numero di previdenza sociale dell'Unione Europea. È disponibile come entità autonoma del tipo di informazioni riservate.
 
 ### <a name="format"></a>Formato
 
@@ -6653,7 +6828,7 @@ Questa entità di tipo di informazioni riservate è inclusa nel codice di previd
 
 Deve corrispondere a uno di questi due modelli:
 - 13 cifre seguite da uno spazio seguito da due cifre<br/>
-o
+oppure
 - 15 cifre consecutive
 
 ### <a name="checksum"></a>Checksum
@@ -6663,12 +6838,12 @@ Sì
 ### <a name="definition"></a>Definizione
 
 Un criterio DLP rileva questo tipo di informazioni con una probabilità del 95%, entro 300 caratteri, se:
-- La funzione Func_french_insee o Func_fr_insee trova contenuto corrispondente al modello.
+- La funzione Func_french_insee o Func_fr_insee trova contenuto che corrisponde al modello.
 - Viene trovata una parola chiave da Keyword_fr_insee.
 - Il checksum ha esito positivo.
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_french_insee o Func_fr_insee trova contenuto corrispondente al modello.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_french_insee o Func_fr_insee trova contenuto che corrisponde al modello.
 - Non vengono trovate parole chiave da Keyword_fr_insee.
 - Il checksum ha esito positivo.
 
@@ -6696,7 +6871,7 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 
 #### <a name="keyword_fr_insee"></a>Keyword_fr_insee
 
-- INSEE
+- insee
 - securité sociale
 - securite sociale
 - national id
@@ -6718,7 +6893,7 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 - numéro de sécu
 - code sécu 
 
-## <a name="france-tax-identification-number"></a>Francia-numero di identificazione fiscale
+## <a name="france-tax-identification-number"></a>Numero di identificazione fiscale francia
 
 ### <a name="format"></a>Formato
 
@@ -6729,15 +6904,15 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 13 cifre
   
 - Una cifra che deve essere 0, 1, 2 o 3
-- 1 cifra
+- Una cifra
 - Uno spazio (facoltativo)
-- 2 cifre 
+- Due cifre 
 - Uno spazio (facoltativo)
-- 3 cifre 
+- Tre cifre 
 - Uno spazio (facoltativo)
-- 3 cifre 
+- Tre cifre 
 - Uno spazio (facoltativo)
-- 3 cifre di controllo 
+- Tre cifre di controllo 
 
   
 ### <a name="checksum"></a>Checksum
@@ -6746,11 +6921,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_france_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_france_eu_tax_file_number` . 
+- Viene trovata una parola  `Keywords_france_eu_tax_file_number` chiave da. 
     
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_france_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -6777,40 +6952,40 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 - numéro d'identification fiscale
 - tax id
-- identificazione fiscale No
-- codice di identificazione fiscale
+- tax identification no
+- tax identification number
 - tax no #
 - tax no
-- codice fiscale
-- numero di registrazione fiscale
-- taxid #
-- taxidno #
-- taxidnumber #
+- tax number
+- tax registration number
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
-- ID Tin
-- Tin No
-- latta #
+- tin id
+- tin no
+- tin #
 
 
-## <a name="france-value-added-tax-number"></a>Francia-numero di imposta sul valore aggiunto
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="france-value-added-tax-number"></a>Numero di imposta sul valore aggiunto della Francia
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
-13 caratteri alfanumerici
+Motivo alfanumerico a 13 caratteri
 
 ### <a name="pattern"></a>Modello
 
-13 caratteri alfanumerici:
+Motivo alfanumerico a 13 caratteri:
 
-- due lettere-FR (senza distinzione tra maiuscole e minuscole)
+- due lettere - FR (senza distinzione tra maiuscole e minuscole)
 - uno spazio o un trattino facoltativo
 - due lettere o cifre
 - uno spazio facoltativo, un punto, un trattino o una virgola
@@ -6826,12 +7001,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_france_value_added_tax_number trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keywords_france_value_added_tax_number.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_france_value_added_tax_number trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keywords_france_value_added_tax_number di codice.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_france_value_added_tax_number trova contenuto corrispondente al modello.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_france_value_added_tax_number trova contenuto che corrisponde al modello.
 
 ```xml
       <!-- France Value Added Tax Number -->
@@ -6850,18 +7025,20 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 #### <a name="keyword_france_value_added_tax_number"></a>Keyword_France_value_added_tax_number
 
 - numero di partita IVA
-- IVA No
-- IVA #
+- vat no
+- vat #
 - imposta sul valore aggiunto
-- identificazione della sirena No Numéro d'identification taxe sur valeur ajoutée
+- identificazione della sirena no numéro d'identification taxe sur valeur ajoutée
 - taxe valeur ajoutée
 - taxe sur la valeur ajoutée
-- n ° TVA
-- numéro de TVA
-- Sirena d'identification numéro
+- n° tva
+- numéro de tva
+- numéro d'identification siren
 
 
-## <a name="germany-drivers-license-number"></a>Germania-numero della patente di guida
+## <a name="germany-drivers-license-number"></a>Germania - Numero della patente di guida
+
+Questa entità del tipo di informazioni sensibili è inclusa nel tipo di informazione sensibile Numero di patente di guida dell'Unione Europea. È disponibile come entità autonoma del tipo di informazioni riservate.
 
 ### <a name="format"></a>Formato
 
@@ -6869,7 +7046,7 @@ combinazione di 11 cifre e lettere
 
 ### <a name="pattern"></a>Modello
 
-11 cifre e lettere (senza distinzione tra maiuscole/minuscole):
+11 cifre e lettere (senza distinzione tra maiuscole e minuscole):
 - una cifra o una lettera 
 - due cifre 
 - sei cifre o lettere 
@@ -6882,7 +7059,7 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_german_drivers_license restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_german_drivers_license_number.
 - Il checksum ha esito positivo.
@@ -6921,13 +7098,13 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - führerscheinnummerklasse
 - fuhrerscheinnummerklasse
 - fuehrerscheinnummerklasse
-- Nr-Führerschein
-- Nr-fuhrerschein
-- Nr-fuehrerschein
-- No-Führerschein
-- No-fuhrerschein
-- No-fuehrerschein
-- n-Führerschein
+- nr-führerschein
+- nr-fuhrerschein
+- nr-fuehrerschein
+- no-führerschein
+- no-fuhrerschein
+- no-fuehrerschein
+- n-führerschein
 - n-fuhrerschein
 - n-fuehrerschein
 - permis de conduire
@@ -6937,134 +7114,134 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - driverlicenses
 - driverlicence
 - driverlicences
-- LIC del driver
-- driver driver'lics
+- driver lic
+- driver lics
 - driver license
 - driver licenses
-- patente di guida
-- licenze per i driver
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- driver Lic
-- driver driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- licenze per i conducenti
+- drivers licences
 - driver'lic
-- driver ' LiCS
-- driver ' License
-- driver ' licenses
+- driver'lics
+- driver'license
+- driver'licenses
 - driver'licence
 - driver'licences
-- LIC del driver
-- driver ' driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
-- patenti del conducente
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
-- secondola
+- driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- LIC del conducente
-- driver'lics del conducente
+- driver's lic
+- driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- patenti di guida
-- DL #
-- DLS #
+- driver's licences
+- dl #
+- dls #
 - driverlic #
 - driverlics #
 - driverlicense #
 - driverlicenses #
 - driverlicence #
 - driverlicences #
-- LIC del driver #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- licenze per i driver #
+- driver lic #
+- driver lics #
+- driver license #
+- driver licenses #
+- driver licences #
 - driverslic #
 - driverslics #
 - driverslicense #
 - driverslicenses #
 - driverslicence #
 - driverslicences #
-- driver Lic #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- licenze per i conducenti #
+- drivers lic #
+- drivers lics #
+- drivers license #
+- driver licenses #
+- drivers licence #
+- drivers licences #
 - driver'lic #
-- driver ' LiCS #
-- driver ' License #
-- driver ' licenses #
+- driver'lics #
+- driver'license #
+- driver'licenses #
 - driver'licence #
 - driver'licences #
-- LIC del driver #
-- driver ' driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- patenti del conducente #
+- driver' lic #
+- driver' lics #
+- driver' license #
+- driver' licenses #
+- driver' licence #
+- driver' licences #
 - driver'slic #
 - driver'slics #
-- secondola #
+- driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- LIC del conducente #
-- driver'lics del conducente #
-- patente di guida #
-- licenze del conducente #
-- patente di guida #
-- patenti di guida #
+- driver's lic #
+- driver's lics #
+- driver's license #
+- driver's licenses #
+- driver's licence #
+- driver's licences #
 - driving licence 
 - driving license
 - dlno #
-- driv Lic
+- driv lic
 - driv licen
-- licenza di driv
-- licenze di driv
-- licenza driv
-- licenze di driv
+- driv license
+- driv licenses
+- driv licence
+- driv licences
 - driver licen
-- driver licen
-- licei del conducente
-- Guida di Lic
-- Guida licen
-- patenti di guida
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- permesso di guida
+- driving permit
 - dlno
 
 
-## <a name="germany-identity-card-number"></a>Germania-numero di carta d'identità
+## <a name="germany-identity-card-number"></a>Germania - Numero di carta di identità
 
 ### <a name="format"></a>Formato
 
-dal 1 ° novembre 2010: nove lettere e cifre
+Dal 1° novembre 2010: Nove lettere e cifre
 
-dal 1 ° aprile 1987 al 31 ottobre 2010:10 cifre
+dal 1° aprile 1987 al 31 ottobre 2010: 10 cifre
 
 ### <a name="pattern"></a>Modello
 
-dal 1 ° novembre 2010:
+dal 1° novembre 2010:
 - una lettera (senza distinzione tra maiuscole e minuscole) 
 - otto cifre
 
-dal 1 ° aprile 1987 al 31 ottobre 2010:
-- dieci cifre
+dal 1° aprile 1987 al 31 ottobre 2010:
+- 10 cifre
 
 ### <a name="checksum"></a>Checksum
 
@@ -7072,9 +7249,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni riservate se, entro 300 caratteri:
-- L'espressione regolare Regex_germany_id_card trova contenuti che corrispondono al modello.
-- Viene trovata una parola chiave da Keyword_germany_id_card.
+Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- L'espressione Regex_germany_id_card trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_germany_id_card da un utente.
 
 ```xml
 <!-- Germany Identity Card Number -->
@@ -7096,27 +7273,29 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 - identifikation
 - identifizierungsnummer
 - carta di identità
-- numero di identità
-- ID-Nummer
-- ID personale
+- identity number
+- id-nummer
+- id personale
 - personalausweis
-- persönliche ID Nummer
-- persönliche identifikationsnummer
-- persönliche-ID-Nummer
+- persönliche id nummer
+- persönliche identifikationsnummer
+- persönliche-id-nummer
 
 
-## <a name="germany-passport-number"></a>Germania-numero di passaporto
+## <a name="germany-passport-number"></a>Germania - Numero di passaporto
+
+Questa entità del tipo di informazioni riservate è inclusa nel tipo di informazioni riservate numero di passaporto ue ed è disponibile come entità di tipo di informazioni riservate autonoma.
 
 ### <a name="format"></a>Formato
 
-dieci cifre o lettere
+10 cifre o lettere
 
 ### <a name="pattern"></a>Modello
 
 Il modello deve includere tutti gli elementi seguenti:
 - il primo carattere è una cifra o una lettera di questo set (C, F, G, H, J, K) 
 - tre cifre 
-- cinque cifre o lettere da questo set (C,-H, J-N, P, R, T, V-Z) 
+- cinque cifre o lettere di questo set (C, -H, J-N, P, R, T, V-Z) 
 - una cifra
 
 ### <a name="checksum"></a>Checksum
@@ -7125,14 +7304,14 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_german_passport restituisce contenuti che corrispondono al modello.
-- Una parola chiave da `Keyword_german_passport` o `Keywords_eu_passport_number_common` viene trovata.
+- Viene trovata una `Keyword_german_passport` parola chiave da o `Keywords_eu_passport_number_common` .
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_german_passport_data restituisce contenuti che corrispondono al modello.
-- Una parola chiave da `Keyword_german_passport` o `Keywords_eu_passport_number_common` viene trovata.
+- Viene trovata una `Keyword_german_passport` parola chiave da o `Keywords_eu_passport_number_common` .
 - Il checksum ha esito positivo.
 
 ```xml
@@ -7166,24 +7345,24 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - Reisepass-Nr
 - Passnummer
 - reisepässe
-- Passeport No.
-- Passeport No
+- passeport no.
+- passeport no
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passaporto #
-- passaporto #
+- passport #
+- passport #
 - passportid
-- passaporti
+- passports
 - passportno
-- Passport No
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
 - numeri di passaporto
 
 
-## <a name="germany-tax-identification-number"></a>Germania-codice fiscale
+## <a name="germany-tax-identification-number"></a>Germania - Numero di identificazione fiscale
 
 ### <a name="format"></a>Formato
 
@@ -7191,7 +7370,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
   
 ### <a name="pattern"></a>Modello
 
-11 cifre:
+11 cifre
   
 - Due cifre 
 - Uno spazio facoltativo
@@ -7208,11 +7387,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_germany_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_germany_eu_tax_file_number` . 
+- Viene trovata una parola  `Keywords_germany_eu_tax_file_number` chiave da. 
     
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_germany_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -7233,53 +7412,53 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 #### <a name="keywords_germany_eu_tax_file_number"></a>Keywords_germany_eu_tax_file_number
 
 - identifikationsnummer
-- ID Steuer
+- steuer id
 - steueridentifikationsnummer
 - steuernummer
 - tax id
-- identificazione fiscale No
-- codice di identificazione fiscale
+- tax identification no
+- tax identification number
 - tax no #
 - tax no
-- codice fiscale
-- numero di registrazione fiscale
-- taxid #
-- taxidno #
-- taxidnumber #
+- tax number
+- tax registration number
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
-- ID Tin
-- Tin No
-- latta #
-- Zinn #
-- Zinn
+- tin id
+- tin no
+- tin #
+- zinn #
+- zinn
 - zinnnummer
 
 
-## <a name="germany-value-added-tax-number"></a>Germania-numero di imposta sul valore aggiunto
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="germany-value-added-tax-number"></a>Germania - numero di imposta sul valore aggiunto
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
-modello alfanumerico a 11 caratteri
+Motivo alfanumerico a 11 caratteri
 
 ### <a name="pattern"></a>Modello
 
-motivo alfanumerico di 11 caratteri:
+Motivo alfanumerico a 11 caratteri:
 
 - una lettera D o d
 - una lettera E o e
 - uno spazio facoltativo
 - tre cifre
-- uno spazio o una virgola facoltativo
+- uno spazio facoltativo o una virgola
 - tre cifre
-- uno spazio o una virgola facoltativo
+- uno spazio facoltativo o una virgola
 - tre cifre
 
 ### <a name="checksum"></a>Checksum
@@ -7288,12 +7467,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_germany_value_added_tax_number trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keywords_germany_value_added_tax_number.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_germany_value_added_tax_number trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keywords_germany_value_added_tax_number di codice.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_germany_value_added_tax_number trova contenuto corrispondente al modello.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_germany_value_added_tax_number trova contenuto che corrisponde al modello.
 
 ```xml
       <!-- Germany Value Added Tax Number -->
@@ -7312,15 +7491,17 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 #### <a name="keyword_germany_value_added_tax_number"></a>Keyword_germany_value_added_tax_number
 
 - numero di partita IVA
-- IVA No
-- IVA #
-- IVA # Mehrwertsteuer
-- MWST
+- vat no
+- vat #
+- vat# mehrwertsteuer
+- mwst
 - mehrwertsteuer identifikationsnummer
-- Mehrwertsteuer Nummer
+- mehrwertsteuer nummer
 
 
-## <a name="greece-drivers-license-number"></a>Grecia-Numero della patente di guida
+## <a name="greece-drivers-license-number"></a>Grecia - Numero della patente di guida
+
+Questa entità del tipo di informazioni riservate è inclusa nel tipo di informazioni riservate numero di patente dell'ue ed è disponibile come entità autonoma del tipo di informazioni riservate.
 
 ### <a name="format"></a>Formato
 
@@ -7336,9 +7517,9 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_greece_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_greece_eu_driver's_license_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_greece_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_greece_eu_driver's_license_number` . 
     
 ```xml
       <!-- Greece Driver's License Number -->
@@ -7355,7 +7536,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -7363,121 +7544,121 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - driverlicenses
 - driverlicence
 - driverlicences
-- LIC del driver
-- driver driver'lics
+- driver lic
+- driver lics
 - driver license
 - driver licenses
-- patente di guida
-- licenze per i driver
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- driver Lic
-- driver driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- licenze per i conducenti
+- drivers licences
 - driver'lic
-- driver ' LiCS
-- driver ' License
-- driver ' licenses
+- driver'lics
+- driver'license
+- driver'licenses
 - driver'licence
 - driver'licences
-- LIC del driver
-- driver ' driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
-- patenti del conducente
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
-- secondola
+- driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- LIC del conducente
-- driver'lics del conducente
+- driver's lic
+- driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- patenti di guida
-- DL #
-- DLS #
+- driver's licences
+- dl #
+- dls #
 - driverlic #
 - driverlics #
 - driverlicense #
 - driverlicenses #
 - driverlicence #
 - driverlicences #
-- LIC del driver #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- licenze per i driver #
+- driver lic #
+- driver lics #
+- driver license #
+- driver licenses #
+- driver licences #
 - driverslic #
 - driverslics #
 - driverslicense #
 - driverslicenses #
 - driverslicence #
 - driverslicences #
-- driver Lic #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- licenze per i conducenti #
+- drivers lic #
+- drivers lics #
+- drivers license #
+- driver licenses #
+- drivers licence #
+- drivers licences #
 - driver'lic #
-- driver ' LiCS #
-- driver ' License #
-- driver ' licenses #
+- driver'lics #
+- driver'license #
+- driver'licenses #
 - driver'licence #
 - driver'licences #
-- LIC del driver #
-- driver ' driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- patenti del conducente #
+- driver' lic #
+- driver' lics #
+- driver' license #
+- driver' licenses #
+- driver' licence #
+- driver' licences #
 - driver'slic #
 - driver'slics #
-- secondola #
+- driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- LIC del conducente #
-- driver'lics del conducente #
-- patente di guida #
-- licenze del conducente #
-- patente di guida #
-- patenti di guida #
+- driver's lic #
+- driver's lics #
+- driver's license #
+- driver's licenses #
+- driver's licence #
+- driver's licences #
 - driving licence 
 - driving license
 - dlno #
-- driv Lic
+- driv lic
 - driv licen
-- licenza di driv
-- licenze di driv
-- licenza driv
-- licenze di driv
+- driv license
+- driv licenses
+- driv licence
+- driv licences
 - driver licen
-- driver licen
-- licei del conducente
-- Guida di Lic
-- Guida licen
-- patenti di guida
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- permesso di guida
-- DL No
+- driving permit
+- dl no
 - dlno
-- numero DL
+- dl number
 
 
-#### <a name="keywords_greece_eu_drivers_license_number"></a>Keywords_greece_eu_driver ' s_license_number
+#### <a name="keywords_greece_eu_drivers_license_number"></a>Keywords_greece_eu_driver's_license_number
 
 - δεια οδήγησης
 - Adeia odigisis
@@ -7485,7 +7666,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - Δίπλωμα οδήγησης
 
 
-## <a name="greece-national-id-card"></a>Carta d'identità nazionale (Grecia)
+## <a name="greece-national-id-card"></a>Carta d'identità della Grecia
 
 ### <a name="format"></a>Formato
 
@@ -7509,12 +7690,12 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare Regex_greece_id_card trova contenuti che corrispondono al modello.
-- Viene trovata una parola chiave da Keyword_greece_id_card.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione regolare Regex_greece_id_card trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_greece_id_card da un utente.
 
-Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni riservate se, entro 300 caratteri:
-- L'espressione regolare Regex_greece_id_card trova contenuti che corrispondono al modello.
+Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- L'espressione regolare Regex_greece_id_card trova contenuto che corrisponde al modello.
 
 ```xml
       <!-- Greece National ID Card -->
@@ -7533,17 +7714,17 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 
 #### <a name="keyword_greece_id_card"></a>Keyword_greece_id_card
 
-- ID greco
-- ID nazionale greco
-- scheda ID personale greco
-- ID polizia greco
+- greek id
+- greek national id
+- carta d'identità personale greca
+- greek police id
 - carta di identità
 - tautotita
 - ταυτότητα
 - ταυτότητας
 
 
-## <a name="greece-passport-number"></a>Grecia-numero di passaporto
+## <a name="greece-passport-number"></a>Grecia - numero di passaporto
 
 ### <a name="format"></a>Formato
 
@@ -7559,14 +7740,14 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_greece_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_greece_eu_passport_number` viene trovata. 
-- L'espressione regolare `Regex_greece_eu_passport_date` trova la data nel formato gg MMM AA (esempio-28 agosto 19) oppure viene trovata una parola chiave `Keywords_greece_eu_passport_date`
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_greece_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_greece_eu_passport_number` . 
+- L'espressione regolare trova la data nel formato `Regex_greece_eu_passport_date` D MMM AA (esempio - 28 agosto 19) o viene trovata una parola chiave `Keywords_greece_eu_passport_date` da
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_greece_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_greece_eu_passport_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_greece_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_greece_eu_passport_number` . 
     
 ```xml
       <!-- Greece Passport Number -->
@@ -7596,12 +7777,12 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passaporto #
-- passaporto #
+- passport #
+- passport #
 - passportid
-- passaporti
+- passports
 - passportno
-- Passport No
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -7614,21 +7795,21 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - αριθμός διαβατηριο
 
 
-## <a name="greece-social-security-number-amka"></a>Grecia-codice di previdenza sociale (AMKA)
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="greece-social-security-number-amka"></a>Grecia - Numero di previdenza sociale (AMKA)
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
-Undici cifre senza spazi e delimitatori
+111 cifre senza spazi e delimitatori
   
 ### <a name="pattern"></a>Modello
 
-- 6 cifre come data di nascita AAMMGG
+- 6 cifre come data di nascita AAMMMMAD
 - 4 cifre
 - una cifra di controllo
   
@@ -7638,11 +7819,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_greece_eu_ssn` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_greece_eu_ssn_or_equivalent` . 
+- Viene trovata una parola  `Keywords_greece_eu_ssn_or_equivalent` chiave da. 
     
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_greece_eu_ssn` trova contenuto che corrisponde al modello. 
 
 ```xml
@@ -7662,23 +7843,23 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_greece_eu_ssn_or_equivalent"></a>Keywords_greece_eu_ssn_or_equivalent
 
-- SSN
-- SSN #
-- previdenza sociale No
+- ssn
+- ssn #
+- social security no
 - socialsecurityno #
 - social security number
-- AMKA
+- amka
 - a.m.k.a.
 - Αριθμού Μητρώου Κοινωνικής Ασφάλισης
 
 
-## <a name="greece-tax-identification-number"></a>Grecia-codice fiscale
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="greece-tax-identification-number"></a>Numero di identificazione fiscale grecia
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -7694,10 +7875,10 @@ Non applicabile
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
   
-- L'espressione regolare  `Regex_greece_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_greece_eu_tax_file_number` . 
+- L'espressione  `Regex_greece_eu_tax_file_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una parola  `Keywords_greece_eu_tax_file_number` chiave da. 
     
 ```xml
       <!-- Greek Tax Identification Number -->
@@ -7713,29 +7894,29 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_greece_eu_tax_file_number"></a>Keywords_greece_eu_tax_file_number
 
-- AFM #
-- AFM
-- aφμ | aφμ Αριθμός
+- afm #
+- afm
+- aφμ|aφμ αριθμός
 - aφμ
 - tax id
-- identificazione fiscale No
-- codice di identificazione fiscale
+- tax identification no
+- tax identification number
 - tax no #
 - tax no
-- codice fiscale
-- numero di registrazione fiscale
-- Tax Registry No
-- numero del registro di sistema fiscale
-- taxid #
-- taxidno #
-- taxidnumber #
+- tax number
+- tax registration number
+- tax registry no
+- tax registry number
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - taxregistryno #
-- ID Tin
-- Tin No
-- latta #
+- tin id
+- tin no
+- tin #
 - αριθμός φορολογικού μητρώου
 - τον αριθμό φορολογικού μητρώου
 - φορολογικού μητρώου νο
@@ -7760,13 +7941,13 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_hong_kong_id_card trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keyword_hong_kong_id_card.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_hong_kong_id_card trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_hong_kong_id_card da un utente.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni riservate se, entro 300 caratteri:
-- La funzione Func_hong_kong_id_card trova contenuto corrispondente al modello.
+Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- La funzione Func_hong_kong_id_card trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
 ```xml
@@ -7787,12 +7968,12 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 #### <a name="keyword_hong_kong_id_card"></a>Keyword_hong_kong_id_card
 
 - hkid
-- carta di identità di Hong Kong
+- hong kong identity card
 - HKIDC
 - id card
 - carta di identità
-- carta di identità HK
-- ID Hong Kong
+- hk identity card
+- hong kong id
 - 香港身份證
 - 香港永久性居民身份證
 - 身份證
@@ -7825,7 +8006,7 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 - 香港特別行政區非永久性居民身分証
 
    
-## <a name="hungary-drivers-license-number"></a>Numero della patente di guida ungherese
+## <a name="hungary-drivers-license-number"></a>Numero della patente di guida in Ungheria
 
 ### <a name="format"></a>Formato
 
@@ -7844,10 +8025,10 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
   
-- L'espressione regolare  `Regex_hungary_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_hungary_eu_driver's_license_number` viene trovata. 
+- L'espressione  `Regex_hungary_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_hungary_eu_driver's_license_number` . 
     
 ```xml
       <Entity id="9d31c46b-6e6b-444c-aeb1-6dd7e604bb24" patternsProximity="300" recommendedConfidence="75">
@@ -7863,7 +8044,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -7871,134 +8052,134 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - driverlicenses
 - driverlicence
 - driverlicences
-- LIC del driver
-- driver driver'lics
+- driver lic
+- driver lics
 - driver license
 - driver licenses
-- patente di guida
-- licenze per i driver
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- driver Lic
-- driver driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- licenze per i conducenti
+- drivers licences
 - driver'lic
-- driver ' LiCS
-- driver ' License
-- driver ' licenses
+- driver'lics
+- driver'license
+- driver'licenses
 - driver'licence
 - driver'licences
-- LIC del driver
-- driver ' driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
-- patenti del conducente
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
-- secondola
+- driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- LIC del conducente
-- driver'lics del conducente
+- driver's lic
+- driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- patenti di guida
-- DL #
-- DLS #
+- driver's licences
+- dl #
+- dls #
 - driverlic #
 - driverlics #
 - driverlicense #
 - driverlicenses #
 - driverlicence #
 - driverlicences #
-- LIC del driver #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- licenze per i driver #
+- driver lic #
+- driver lics #
+- driver license #
+- driver licenses #
+- driver licences #
 - driverslic #
 - driverslics #
 - driverslicense #
 - driverslicenses #
 - driverslicence #
 - driverslicences #
-- driver Lic #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- licenze per i conducenti #
+- drivers lic #
+- drivers lics #
+- drivers license #
+- driver licenses #
+- drivers licence #
+- drivers licences #
 - driver'lic #
-- driver ' LiCS #
-- driver ' License #
-- driver ' licenses #
+- driver'lics #
+- driver'license #
+- driver'licenses #
 - driver'licence #
 - driver'licences #
-- LIC del driver #
-- driver ' driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- patenti del conducente #
+- driver' lic #
+- driver' lics #
+- driver' license #
+- driver' licenses #
+- driver' licence #
+- driver' licences #
 - driver'slic #
 - driver'slics #
-- secondola #
+- driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- LIC del conducente #
-- driver'lics del conducente #
-- patente di guida #
-- licenze del conducente #
-- patente di guida #
-- patenti di guida #
+- driver's lic #
+- driver's lics #
+- driver's license #
+- driver's licenses #
+- driver's licence #
+- driver's licences #
 - driving licence 
 - driving license
 - dlno #
-- driv Lic
+- driv lic
 - driv licen
-- licenza di driv
-- licenze di driv
-- licenza driv
-- licenze di driv
+- driv license
+- driv licenses
+- driv licence
+- driv licences
 - driver licen
-- driver licen
-- licei del conducente
-- Guida di Lic
-- Guida licen
-- patenti di guida
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- permesso di guida
-- DL No
+- driving permit
+- dl no
 - dlno
-- numero DL
+- dl number
 
 
-#### <a name="keywords_hungary_eu_drivers_license_number"></a>Keywords_hungary_eu_driver ' s_license_number
+#### <a name="keywords_hungary_eu_drivers_license_number"></a>Keywords_hungary_eu_driver's_license_number
 
 - vezetoi engedely
 - vezetői engedély
 - vezetői engedélyek
 
 
-## <a name="hungary-personal-identification-number"></a>Numero di identificazione personale Ungheria
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="hungary-personal-identification-number"></a>Ungheria - numero di identificazione personale
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -8008,8 +8189,8 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 
 11 cifre:
   
-- Una cifra che corrisponde al sesso (1-maschio, 2-Femmina, altri numeri sono possibili anche per i cittadini nati prima del 1900 o cittadini con doppia cittadinanza) 
-- Sei cifre che corrispondono alla data di nascita (AAMMGG)
+- Una cifra che corrisponde al sesso (1-maschile, 2-femminile, altri numeri sono possibili anche per i cittadini nate prima del 1900 o i cittadini con doppia cittadinanza) 
+- Sei cifre che corrispondono alla data di nascita (AAMMMMD)
 - Tre cifre che corrispondono a un numero di serie
 - Una cifra di controllo
     
@@ -8019,12 +8200,12 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
   
 - La funzione  `Func_hungary_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_hungary_eu_national_id_card` . 
+- Viene trovata una parola  `Keywords_hungary_eu_national_id_card` chiave da. 
     
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
   
 - La funzione  `Func_hungary_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
@@ -8049,16 +8230,16 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_hungary_eu_national_id_card"></a>Keywords_hungary_eu_national_id_card
 
-- numero ID
+- id number
 - identification number
-- SZ IG
-- SZ. IG.
-- SZ. IG.
+- sz ig
+- sz. ig.
+- sz.ig.
 - személyazonosító igazolvány
 - személyi igazolvány
 
 
-## <a name="hungary-passport-number"></a>Numero di passaporto ungherese
+## <a name="hungary-passport-number"></a>Numero di passaporto ungheria
 
 ### <a name="format"></a>Formato
 
@@ -8074,14 +8255,14 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_hungary_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_hungary_eu_passport_number` viene trovata. 
-- L'espressione regolare `Regex_hungary_eu_passport_date` trova la data nel formato dd MMM/MMM AA (esempio-01 MÁR/Mar 12) oppure viene trovata una parola chiave from `Keywords_eu_passport_date`
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_hungary_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_hungary_eu_passport_number` . 
+- L'espressione regolare trova la data nel formato `Regex_hungary_eu_passport_date` D MMM/MMM AA (esempio - 01 MÁR/MAR 12) o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_hungary_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_hungary_eu_passport_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_hungary_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_hungary_eu_passport_number` . 
     
 ```xml
       <!-- Hungary Passport Number -->
@@ -8110,12 +8291,12 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passaporto #
-- passaporto #
+- passport #
+- passport #
 - passportid
-- passaporti
+- passports
 - passportno
-- Passport No
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -8128,7 +8309,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - útlevél szám
 
 
-## <a name="hungary-social-security-number-taj"></a>Numero di previdenza sociale (TAJ) Ungheria
+## <a name="hungary-social-security-number-taj"></a>Ungheria - numero di previdenza sociale (TAJ)
 
 ### <a name="format"></a>Formato
 
@@ -8144,12 +8325,12 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
   
 - La funzione  `Func_hungary_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_hungary_eu_ssn_or_equivalent` . 
+- Viene trovata una parola  `Keywords_hungary_eu_ssn_or_equivalent` chiave da. 
     
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
   
 - La funzione  `Func_hungary_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
     
@@ -8170,40 +8351,40 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_hungary_eu_ssn_or_equivalent"></a>Keywords_hungary_eu_ssn_or_equivalent
 
-- codice di previdenza sociale ungherese
+- numero di previdenza sociale ungherese
 - social security number
 - socialsecuritynumber #
 - hssn #
 - socialsecuritynno
 - hssn
-- Taj
-- Taj #
-- SSN
-- SSN #
-- previdenza sociale No
+- taj
+- taj #
+- ssn
+- ssn #
+- social security no
 - áfa
 - közösségi adószám
 - általános forgalmi adó szám
 - hozzáadottérték adó
 - áfa szám
-- Magyar ÁFA szám
+- magyar áfa szám
 
 
-## <a name="hungary-tax-identification-number"></a>Numero di identificazione fiscale ungherese
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="hungary-tax-identification-number"></a>Numero di identificazione fiscale ungheria
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
-Dieci cifre senza spazi o delimitatori
+10 cifre senza spazi o delimitatori
   
 ### <a name="pattern"></a>Modello
 
-Dieci cifre:
+10 cifre:
   
 - Una cifra che deve essere "8" 
 - Otto cifre
@@ -8215,12 +8396,12 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
   
 - La funzione  `Func_hungary_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_hungary_eu_tax_file_number` . 
+- Viene trovata una parola  `Keywords_hungary_eu_tax_file_number` chiave da. 
     
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
   
 - La funzione  `Func_hungary_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
@@ -8248,47 +8429,47 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - adóazonosító szám
 - adóhatóság szám
 - adószám
-- Tin ungherese
+- ungherese
 - hungatiantin #
-- autorità tributaria No
+- tax authority no
 - tax id
-- identificazione fiscale No
-- codice di identificazione fiscale
+- tax identification no
+- tax identification number
 - tax no #
 - tax no
-- codice fiscale
-- numero di registrazione fiscale
-- taxid #
-- taxidno #
-- taxidnumber #
+- tax number
+- tax registration number
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
-- ID Tin
-- Tin No
-- latta #
+- tin id
+- tin no
+- tin #
 - numero di partita IVA
 
 
-## <a name="hungary-value-added-tax-number"></a>Numero dell'imposta sul valore aggiunto (Ungheria)
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="hungary-value-added-tax-number"></a>Numero di imposta sul valore aggiunto dell'Ungheria
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
-motivo alfanumerico di 10 caratteri
+Motivo alfanumerico a 10 caratteri
 
 ### <a name="pattern"></a>Modello
 
-motivo alfanumerico di 10 caratteri:
+Motivo alfanumerico a 10 caratteri:
 
-- 2 lettere-HU o Hu
+- due lettere - HU o hu
 - spazio facoltativo
-- 8 cifre
+- otto cifre
 
 ### <a name="checksum"></a>Checksum
 
@@ -8296,14 +8477,14 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 
-- La funzione Func_hungarian_value_added_tax_number trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keywords_hungarian_value_added_tax_number.
+- La funzione Func_hungarian_value_added_tax_number trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keywords_hungarian_value_added_tax_number da un utente.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 
-- La funzione Func_hungarian_value_added_tax_number trova contenuto corrispondente al modello.
+- La funzione Func_hungarian_value_added_tax_number trova contenuto che corrisponde al modello.
 
 ```xml
       <!-- Hungarian Value Added Tax Number -->
@@ -8322,20 +8503,20 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keyword_hungary_value_added_tax_number"></a>Keyword_Hungary_value_added_tax_number
 
-- IVA
+- vat
 - numero di imposta sul valore aggiunto
-- IVA #
+- vat #
 - vatno #
 - hungarianvatno #
-- tassa no.
-- ÁFA d'imposta sul valore aggiunto
+- tax no.
+- imposte sul valore aggiunto
 - közösségi adószám
 - általános forgalmi adó szám
 - hozzáadottérték adó
 - áfa szám
 
 
-## <a name="india-permanent-account-number-pan"></a>India-numero di conto permanente (PAN)
+## <a name="india-permanent-account-number-pan"></a>India - numero di account permanente (PAN)
 
 ### <a name="format"></a>Formato
 
@@ -8348,7 +8529,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - Lettera in C, P, H, F, A, T, B, L, J, G (senza distinzione tra maiuscole e minuscole)
 - Una lettera
 - Quattro cifre 
-- Una lettera (senza distinzione tra maiuscole e minuscole)
+- Una lettera che è una cifra di controllo alfabetica
 
 ### <a name="checksum"></a>Checksum
 
@@ -8356,12 +8537,12 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare Regex_india_permanent_account_number trova contenuti che corrispondono al modello.
-- Viene trovata una parola chiave da Keyword_india_permanent_account_number.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione regolare Regex_india_permanent_account_number trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_india_permanent_account_number da un utente.
 
-Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni riservate se, entro 300 caratteri:
-- L'espressione regolare Regex_india_permanent_account_number trova contenuti che corrispondono al modello.
+Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- L'espressione regolare Regex_india_permanent_account_number trova contenuto che corrisponde al modello.
 
 
 ```xml
@@ -8386,7 +8567,7 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 - Permanent Account Number 
 - PAN 
    
-## <a name="india-unique-identification-aadhaar-number"></a>Numero Aadhaar (India Unique Identification)
+## <a name="india-unique-identification-aadhaar-number"></a>India - numero di identificazione univoco (Aadhaar)
 
 ### <a name="format"></a>Formato
 
@@ -8400,7 +8581,7 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 - Uno spazio o un trattino facoltativo  
 - Quattro cifre 
 - Uno spazio o un trattino facoltativo  
-- L'ultimo carattere, ovvero il numero di controllo
+- La cifra finale, che è la cifra di controllo
 
 ### <a name="checksum"></a>Checksum
 
@@ -8408,14 +8589,14 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_india_aadhaar trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keyword_india_aadhar.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_india_aadhaar trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_india_aadhar di codice.
 - Il checksum ha esito positivo.
 - 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 
-- La funzione Func_india_aadhaar trova contenuto corrispondente al modello.
+- La funzione Func_india_aadhaar trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
 ```xml
@@ -8436,11 +8617,11 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - aadhaar
 - aadhar
 - aadhar #
-- UID
+- uid
 - आधार
 - uidai
    
-## <a name="indonesia-identity-card-ktp-number"></a>Numero di carta di identità (KTP) (Indonesia)
+## <a name="indonesia-identity-card-ktp-number"></a>Indonesia - numero di carta di identità (KTP)
 
 ### <a name="format"></a>Formato
 
@@ -8454,7 +8635,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - Codice città o area a due cifre  
 - Codice sotto-distretto a due cifre  
 - Un punto (facoltativo)  
-- Sei cifre nel formato GGMMAA, ovvero la data di nascita 
+- Sei cifre nel formato MMAAA, ovvero la data di nascita 
 - Un punto (facoltativo)  
 - Quattro cifre
 
@@ -8464,10 +8645,10 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 
-- L'espressione regolare Regex_indonesia_id_card trova contenuti che corrispondono al modello.
-- Viene trovata una parola chiave da Keyword_indonesia_id_card.
+- L'espressione regolare Regex_indonesia_id_card trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_indonesia_id_card da un utente.
 
 ```xml
 <!-- Indonesia Identity Card (KTP) Number -->
@@ -8490,7 +8671,7 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 
 ### <a name="format"></a>Formato
 
-Codice paese (due lettere) più cifre di controllo (due cifre) più numero BBAN (fino a 30 caratteri)
+Codice paese (due lettere) più cifre di controllo (due cifre) più il numero bban (fino a 30 caratteri)
 
 ### <a name="pattern"></a>Modello
 
@@ -8501,9 +8682,9 @@ Il modello deve includere tutti gli elementi seguenti:
 - 1-7 gruppi di quattro lettere o cifre (possono essere separati da spazi)
 - 1-3 lettere o cifre
 
-Il formato di ogni paese è leggermente diverso. Il tipo di informazioni riservate IBAN copre questi 60 paesi:
+Il formato di ogni paese è leggermente diverso. Il tipo di informazioni riservate IBAN riguarda questi 60 paesi:
 
-ad, AE, al, at, AZ, BA, be, BG, BH, ch, CR, CY, CZ, de, DK, do, EE, es, Fi, fo, fr, GB, GE, Gi, GL, gr, HR, HU, IE, il, is, it, kW, KZ, lb, li, LT, Lu, LV, MC, MD, me, MK, Mr, MT, MU, NL, no, pl, PT, ro, RS, SA, se, si, SK, SM, TN, TR, VG
+ad, ae, al, at, az, ba, be, bg, bh, ch, cr, cy, cz, de, dk, do, ee, es, fi, fo, fr, gb, ge, gi, gl, gr, hr, hu, ie, il, is, it, kw, kz, lb, li, lt, lu, lv, mc, md, me, mk, mr, mt, mu, nl, no, pl, pt, ro, rs, sa, se, si, sk, sm, tn, tr, vg
 
 ### <a name="checksum"></a>Checksum
 
@@ -8511,7 +8692,7 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 
 - La funzione Func_iban restituisce contenuti che corrispondono al modello.
 - Il checksum ha esito positivo.
@@ -8529,7 +8710,7 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 Nessuno
 
    
-## <a name="international-classification-of-diseases-icd-10-cm"></a>Classificazione internazionale delle malattie (ICD-10-CM)
+## <a name="international-classification-of-diseases-icd-10-cm"></a>Classificazione internazionale delle malattia (ICD-10-CM)
 
 ### <a name="format"></a>Formato
 
@@ -8545,12 +8726,12 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- Viene trovata una parola chiave da Dictionary_icd_10_updated.
-- Viene trovata una parola chiave da Dictionary_icd_10_codes.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- Viene trovata una parola Dictionary_icd_10_updated di codice.
+- Viene trovata una parola Dictionary_icd_10_codes di codice.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- Viene trovata una parola chiave da Dictionary_icd_10_ aggiornata.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- Viene trovata una parola chiave Dictionary_icd_10_ aggiornata.
 
 ```xml
       <!-- ICD-10 CM -->
@@ -8567,11 +8748,11 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 ### <a name="keywords"></a>Parole chiave
 
-Qualsiasi termine del dizionario di parole chiave Dictionary_icd_10_updated, basato sulla [classificazione internazionale delle malattie, la decima revisione, la modifica clinica (ICD-10-cm)](https://go.microsoft.com/fwlink/?linkid=852604). Questo tipo di ricerca viene visualizzato solo per il termine, non per i codici assicurativi.
+Qualsiasi termine del dizionario di parole Dictionary_icd_10_updated, che si basa sulla classificazione internazionale di malattia, decima revisione, modifica clinicha [(ICD-10-CM).](https://go.microsoft.com/fwlink/?linkid=852604) Questo tipo cerca solo il termine e non i codici di assicurazione.
 
-Qualsiasi termine del dizionario di parole chiave Dictionary_icd_10_codes, basato sulla [classificazione internazionale delle malattie, la decima revisione, la modifica clinica (ICD-10-cm)](https://go.microsoft.com/fwlink/?linkid=852604). Questo tipo di ricerca è solo per i codici assicurativi, non per la descrizione.
+Qualsiasi termine del dizionario di parole Dictionary_icd_10_codes, che si basa sulla classificazione internazionale di malattia, decima revisione, modifica clinicha [(ICD-10-CM).](https://go.microsoft.com/fwlink/?linkid=852604) Questo tipo cerca solo i codici di assicurazione, non la descrizione.
 
-## <a name="international-classification-of-diseases-icd-9-cm"></a>Classificazione internazionale delle malattie (ICD-9-CM)
+## <a name="international-classification-of-diseases-icd-9-cm"></a>Classificazione internazionale delle malattia (ICD-9-CM)
 
 ### <a name="format"></a>Formato
 
@@ -8587,12 +8768,12 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- Viene trovata una parola chiave da Dictionary_icd_9_updated.
-- Viene trovata una parola chiave da Dictionary_icd_9_codes.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- Viene trovata una parola Dictionary_icd_9_updated da un utente.
+- Viene trovata una parola Dictionary_icd_9_codes da un utente.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- Viene trovata una parola chiave da Dictionary_icd_9_updated.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- Viene trovata una parola Dictionary_icd_9_updated da un utente.
 
 ```xml
     <Entity id="fa3f9c74-ee07-4c52-b5f2-085d6b2c0ec4" patternsProximity="300" recommendedConfidence="85">
@@ -8608,19 +8789,19 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 ### <a name="keywords"></a>Parole chiave
 
-Qualsiasi termine del dizionario di parole chiave Dictionary_icd_9_updated, basato sulla [classificazione internazionale delle malattie, la nona revisione, la modifica clinica (ICD-9-cm)](https://go.microsoft.com/fwlink/?linkid=852605). Questo tipo di ricerca viene visualizzato solo per il termine, non per i codici assicurativi.
+Qualsiasi termine del dizionario di parole Dictionary_icd_9_updated, che si basa sulla classificazione internazionale di malattia, nona revisione, modifica clinicha [(ICD-9-CM).](https://go.microsoft.com/fwlink/?linkid=852605) Questo tipo cerca solo il termine e non i codici di assicurazione.
 
-Qualsiasi termine del dizionario di parole chiave Dictionary_icd_9_codes, basato sulla [classificazione internazionale delle malattie, la nona revisione, la modifica clinica (ICD-9-cm)](https://go.microsoft.com/fwlink/?linkid=852605). Questo tipo di ricerca è solo per i codici assicurativi, non per la descrizione.
+Qualsiasi termine del dizionario di parole Dictionary_icd_9_codes, che si basa sulla classificazione internazionale di malattia, nona revisione, modifica clinicha [(ICD-9-CM).](https://go.microsoft.com/fwlink/?linkid=852605) Questo tipo cerca solo i codici di assicurazione, non la descrizione.
 
 ## <a name="ip-address"></a>Indirizzo IP
 
 ### <a name="format"></a>Formato
 
-#### <a name="ipv4"></a>IPv4
-Modello complesso che rappresenta le versioni formattate (punti) e quelle non formattate (senza punti) degli indirizzi IPv4
+#### <a name="ipv4"></a>IPv4:
+Modello complesso che rappresenta le versioni formattate (punti) e non formattate (senza punti) degli indirizzi IPv4
 
-#### <a name="ipv6"></a>IPv6
-Modello complesso che rappresenta i numeri dell'indirizzo IPv6 non formattati (include i due punti)
+#### <a name="ipv6"></a>IPv6:
+Modello complesso che rappresenta i numeri IPv6 formattati (che includono i due punti)
 
 ### <a name="pattern"></a>Modello
 
@@ -8630,7 +8811,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Per IPv6, un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Per IPv6, un criterio DLP ha alta probabilità di aver rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_ipv6_address restituisce contenuti che corrispondono al modello.
 - Non vengono trovate parole chiave da Keyword_ipaddress.
 
@@ -8670,13 +8851,13 @@ Nel caso di IPv6, un criterio DLP rileva questo tipo di informazioni con una pro
 
 #### <a name="keyword_ipaddress"></a>Keyword_ipaddress
 
-- IP (per questa parola chiave viene fatta distinzione tra maiuscole e minuscole)
+- IP (questa parola chiave fa distinzione tra maiuscole e minuscole)
 - ip address 
 - Indirizzi IP
 - internet protocol
 - IP-כתובת ה 
 
-## <a name="ireland-drivers-license-number"></a>Numero di patente d'Irlanda
+## <a name="ireland-drivers-license-number"></a>Irlanda - Numero della patente di guida
 
 ### <a name="format"></a>Formato
 
@@ -8695,10 +8876,10 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
   
-- L'espressione regolare  `Regex_ireland_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_ireland_eu_driver's_license_number` viene trovata. 
+- L'espressione  `Regex_ireland_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_ireland_eu_driver's_license_number` . 
     
 ```xml
       <!-- Ireland Driver's License Number -->
@@ -8715,7 +8896,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -8723,126 +8904,126 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - driverlicenses
 - driverlicence
 - driverlicences
-- LIC del driver
-- driver driver'lics
+- driver lic
+- driver lics
 - driver license
 - driver licenses
-- patente di guida
-- licenze per i driver
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- driver Lic
-- driver driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- licenze per i conducenti
+- drivers licences
 - driver'lic
-- driver ' LiCS
-- driver ' License
-- driver ' licenses
+- driver'lics
+- driver'license
+- driver'licenses
 - driver'licence
 - driver'licences
-- LIC del driver
-- driver ' driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
-- patenti del conducente
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
-- secondola
+- driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- LIC del conducente
-- driver'lics del conducente
+- driver's lic
+- driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- patenti di guida
-- DL #
-- DLS #
+- driver's licences
+- dl #
+- dls #
 - driverlic #
 - driverlics #
 - driverlicense #
 - driverlicenses #
 - driverlicence #
 - driverlicences #
-- LIC del driver #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- licenze per i driver #
+- driver lic #
+- driver lics #
+- driver license #
+- driver licenses #
+- driver licences #
 - driverslic #
 - driverslics #
 - driverslicense #
 - driverslicenses #
 - driverslicence #
 - driverslicences #
-- driver Lic #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- licenze per i conducenti #
+- drivers lic #
+- drivers lics #
+- drivers license #
+- driver licenses #
+- drivers licence #
+- drivers licences #
 - driver'lic #
-- driver ' LiCS #
-- driver ' License #
-- driver ' licenses #
+- driver'lics #
+- driver'license #
+- driver'licenses #
 - driver'licence #
 - driver'licences #
-- LIC del driver #
-- driver ' driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- patenti del conducente #
+- driver' lic #
+- driver' lics #
+- driver' license #
+- driver' licenses #
+- driver' licence #
+- driver' licences #
 - driver'slic #
 - driver'slics #
-- secondola #
+- driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- LIC del conducente #
-- driver'lics del conducente #
-- patente di guida #
-- licenze del conducente #
-- patente di guida #
-- patenti di guida #
+- driver's lic #
+- driver's lics #
+- driver's license #
+- driver's licenses #
+- driver's licence #
+- driver's licences #
 - driving licence 
 - driving license
 - dlno #
-- driv Lic
+- driv lic
 - driv licen
-- licenza di driv
-- licenze di driv
-- licenza driv
-- licenze di driv
+- driv license
+- driv licenses
+- driv licence
+- driv licences
 - driver licen
-- driver licen
-- licei del conducente
-- Guida di Lic
-- Guida licen
-- patenti di guida
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- permesso di guida
-- DL No
+- driving permit
+- dl no
 - dlno
-- numero DL
+- dl number
 
 
-#### <a name="keywords_ireland_eu_drivers_license_number"></a>Keywords_ireland_eu_driver ' s_license_number
+#### <a name="keywords_ireland_eu_drivers_license_number"></a>Keywords_ireland_eu_driver's_license_number
 
 - ceadúnas tiomána
 - ceadúnais tiomána
 
-## <a name="ireland-passport-number"></a>Irlanda-numero di passaporto
+## <a name="ireland-passport-number"></a>Irlanda - Numero di passaporto
 
 ### <a name="format"></a>Formato
 
@@ -8852,7 +9033,7 @@ Due lettere o cifre seguite da sette cifre senza spazi o delimitatori
 
 Due lettere o cifre seguite da sette cifre:
   
-- Due cifre o lettere (senza distinzione tra maiuscole/minuscole)
+- Due cifre o lettere (senza distinzione tra maiuscole e minuscole)
 - Sette cifre
     
 ### <a name="checksum"></a>Checksum
@@ -8861,14 +9042,14 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_ireland_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_ireland_eu_passport_number` viene trovata. 
-- L'espressione regolare `Regex_ireland_eu_passport_date` trova la data nel formato dd MMM/MMM yyyy (example-01 Bea/MAY 1988) oppure viene trovata una parola chiave from `Keywords_eu_passport_date`
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_ireland_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_ireland_eu_passport_number` . 
+- L'espressione regolare trova la data nel formato `Regex_ireland_eu_passport_date` D MMM/MMM AAAA (esempio - 01 BEA/MAGGIO 1988) o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_ireland_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_ireland_eu_passport_number` viene trovata.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_ireland_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_ireland_eu_passport_number` .
     
 ```xml
       <!-- Ireland Passport Number -->
@@ -8898,12 +9079,12 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passaporto #
-- passaporto #
+- passport #
+- passport #
 - passportid
-- passaporti
+- passports
 - passportno
-- Passport No
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -8911,39 +9092,39 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_ireland_eu_passport_number"></a>Keywords_ireland_eu_passport_number
 
-- numero Passeport
+- passeport numero
 - uimhreacha pasanna
 - uimhir pas
-- uimhir fasi
+- uimhir phas
 - uimhreacha pas
 - uimhir cárta
 - uimhir chárta
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Data di emissione
-- Data di scadenza
+- data di emissione
+- data di scadenza
 
 
-## <a name="ireland-personal-public-service-pps-number"></a>Irlanda-numero di servizio pubblico personale (PPS)
+## <a name="ireland-personal-public-service-pps-number"></a>Irlanda - Numero di servizio pubblico personale (PPS)
 
 ### <a name="format"></a>Formato
 
 Formato precedente (fino al 31 dicembre 2012):
 - sette cifre seguite da 1-2 lettere 
 
-Nuovo formato (1 gen 2013 e successive):
+Nuovo formato (1 gennaio 2013 e dopo):
 - sette cifre seguite da due lettere
 
 ### <a name="pattern"></a>Modello
 
 Formato precedente (fino al 31 dicembre 2012):
 - sette cifre 
-- una o due lettere (senza distinzione tra maiuscole e minuscole) 
+- da una a due lettere (senza distinzione tra maiuscole e minuscole) 
 
-Nuovo formato (1 gen 2013 e successive):
+Nuovo formato (1 gennaio 2013 e dopo):
 - sette cifre 
-- una lettera (senza distinzione tra maiuscole/minuscole) che corrisponde a una cifra di controllo alfabetica 
+- una lettera (senza distinzione tra maiuscole e minuscole) che è una cifra di controllo alfabetica 
 - Una lettera facoltativa nell'intervallo A-I o "W"
 
 ### <a name="checksum"></a>Checksum
@@ -8952,13 +9133,13 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_ireland_pps trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keywords_ireland_eu_national_id_card.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_ireland_pps trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keywords_ireland_eu_national_id_card da un utente.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni riservate se, entro 300 caratteri:
-- La funzione Func_ireland_pps trova contenuto corrispondente al modello.
+Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- La funzione Func_ireland_pps trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
 ```xml
@@ -8978,51 +9159,51 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 
 #### <a name="keywords_ireland_eu_national_id_card"></a>Keywords_ireland_eu_national_id_card
 
-- servizio identità client
+- client identity service
 - identification number
-- numero ID personale
+- personal id number
 - numero di servizio pubblico personale
-- servizio personale No
-- phearsanta seirbhíse poiblí
-- PPS No
-- numero PPS
-- PP num
-- servizio PPS No
+- servizio personale no
+- phearsanta seirbhíse poiblí
+- pps no
+- pps number
+- pps num
+- pps service no
 - ppsn
 - ppsno #
 - ppsno
-- PSP
+- psp
 - servizio pubblico no
 - publicserviceno #
 - publicserviceno
-- reddito e numero di previdenza sociale
-- RSI No
-- numero RSI
+- ricavi e numero di previdenza sociale
+- rsi no
+- rsi number
 - rsin
-- client di aitheantais di Seirbhís
+- seirbhís aitheantais client
 - uimh
 - uimhir aitheantais chánach
 - uimhir aitheantais phearsanta
 - uimhir phearsanta seirbhíse poiblí
 - tax id
-- identificazione fiscale No
-- codice di identificazione fiscale
+- tax identification no
+- tax identification number
 - tax no #
 - tax no
-- codice fiscale
-- numero di registrazione fiscale
-- taxid #
-- taxidno #
-- taxidnumber #
+- tax number
+- tax registration number
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
-- ID Tin
-- Tin No
-- latta #
+- tin id
+- tin no
+- tin #
 
 
-## <a name="israel-bank-account-number"></a>Israele-numero di conto corrente bancario
+## <a name="israel-bank-account-number"></a>Israele - numero di conto corrente bancario
 
 ### <a name="format"></a>Formato
 
@@ -9030,14 +9211,14 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 
 ### <a name="pattern"></a>Modello
 
-Formattato
+Formattato:
 - due cifre 
 - un trattino 
 - tre cifre 
 - un trattino 
 - otto cifre
 
-Formattato
+Non formattato:
 - 13 cifre consecutive
 
 ### <a name="checksum"></a>Checksum
@@ -9046,7 +9227,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_israel_bank_account_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_israel_bank_account_number.
 
@@ -9071,7 +9252,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - Account Number 
 - מספר חשבון בנק 
    
-## <a name="israel-national-identification-number"></a>Israele-numero di identificazione nazionale
+## <a name="israel-national-identification-number"></a>Israel national identification number
 
 ### <a name="format"></a>Formato
 
@@ -9087,7 +9268,7 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_israeli_national_id_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_Israel_National_ID.
 - Il checksum ha esito positivo.
@@ -9116,17 +9297,19 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 -   هوية إسرائ يلية
 -   رقم الهوية
 -   عدد هوية فريدة من نوعها
--   NumeroID del #
--   numero ID
--   identità No        
+-   idnumber #
+-   id number
+-   identity no        
 -   identitynumber #
--   numero di identità
--   israeliidentitynumber       
--   ID personale
--   ID univoco  
+-   identity number
+-   israelidentitynumber       
+-   id personale
+-   id univoco  
 
    
-## <a name="italy-drivers-license-number"></a>Italiano numero di patente di guida
+## <a name="italy-drivers-license-number"></a>Italia - Numero della patente di guida
+
+Questa entità del tipo di informazioni riservate è inclusa nel tipo di informazioni riservate numero di patente dell'ue ed è disponibile come entità autonoma del tipo di informazioni riservate.
 
 ### <a name="format"></a>Formato
 
@@ -9136,7 +9319,7 @@ una combinazione di 10 lettere e cifre
 
 una combinazione di 10 lettere e cifre:
 - una lettera (senza distinzione tra maiuscole e minuscole) 
-- la lettera "A" o "V" (senza distinzione tra maiuscole e minuscole) 
+- lettera "A" o "V" (senza distinzione tra maiuscole e minuscole) 
 - sette cifre
 - una lettera (senza distinzione tra maiuscole e minuscole)
 
@@ -9146,7 +9329,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_italy_drivers_license_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_italy_drivers_license_number.
 
@@ -9166,33 +9349,33 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keyword_italy_drivers_license_number"></a>Keyword_italy_drivers_license_number
 
-- numero di brevetto
+- numero di patente
 - patente di guida 
 - patente guida
 - patenti di guida
 - patenti guida
 
 ## <a name="italy-fiscal-code"></a>Codice fiscale Italia
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
-una combinazione di 16 caratteri di lettere e cifre nel modello specificato
+Una combinazione di 16 caratteri di lettere e cifre nel modello specificato
   
 ### <a name="pattern"></a>Modello
 
-Combinazione di lettere e cifre di 16 caratteri:
-- tre lettere che corrispondono alle prime tre consonanti del nome di famiglia
-- tre lettere che corrispondono alla prima, terza e quarta consonante del primo nome
+Una combinazione di 16 caratteri di lettere e cifre:
+- tre lettere che corrispondono alle prime tre consonanti nel nome della famiglia
+- tre lettere che corrispondono alla prima, alla terza e alla quarta consonanti nel nome
 - due cifre che corrispondono alle ultime cifre dell'anno di nascita
-- una lettera che corrisponde alla lettera per il mese di nascita: le lettere vengono utilizzate in ordine alfabetico, ma vengono utilizzate solo le lettere da a a E, H, L, M, P, R e T (pertanto, gennaio è A e ottobre è R)
-- due cifre che corrispondono al giorno del mese di nascita, al fine di distinguere tra i sessi, 40 viene aggiunto al giorno di nascita per le donne
-- quattro cifre che corrispondono al codice di area specifico per il comune in cui è nata la persona (i codici a livello nazionale vengono utilizzati per i paesi esteri)
+- una lettera che corrisponde alla lettera del mese di nascita; le lettere vengono utilizzate in ordine alfabetico, ma vengono utilizzate solo le lettere da A a E, H, L, M, P, R a T (quindi gennaio è A e Ottobre è R)
+- due cifre che corrispondono al giorno del mese di nascita: per distinguere i sessi, 40 viene aggiunto al giorno di nascita per le figlie
+- quattro cifre che corrispondono all'area geografica specifica del paese di nascita della persona (i codici di paese vengono utilizzati per paesi esterni)
 - una cifra di parità
     
 ### <a name="checksum"></a>Checksum
@@ -9201,11 +9384,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_italy_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_italy_eu_national_id_card` . 
+- Viene trovata una parola  `Keywords_italy_eu_national_id_card` chiave da. 
     
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_italy_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -9225,41 +9408,41 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_italy_eu_national_id_card"></a>Keywords_italy_eu_national_id_card
 
-- codice Fiscal
 - codice fiscale
-- codice ID personale
+- codice fiscale
+- codice id personale
 - codice personale
 - codice fiscale
-- Numero certificato personale
+- numero certificato personale
 - numero di identificazione fiscale
-- numero ID personale
+- numero id personale
 - numero personale
 - numero di certificato personale
 - codice personale
 - codice ID personale
-- numero ID personale
+- personal id number
 - personalcodeno #
-- codice fiscale
+- tax code
 - tax id
-- identificazione fiscale No
-- codice di identificazione fiscale
-- numero dell'identità fiscale
+- tax identification no
+- tax identification number
+- tax identity number
 - tax no #
 - tax no
-- codice fiscale
-- numero di registrazione fiscale
-- taxid #
-- taxidno #
-- taxidnumber #
+- tax number
+- tax registration number
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
-- ID Tin
-- Tin No
-- latta #
+- tin id
+- tin no
+- tin #
 
 
-## <a name="italy-passport-number"></a>Numero di passaporto Italia
+## <a name="italy-passport-number"></a>Italia - Numero di passaporto
 
 ### <a name="format"></a>Formato
 
@@ -9278,14 +9461,14 @@ non applicabile
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_italy_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_italy_eu_passport_number` viene trovata. 
-- L'espressione regolare `Regex_italy_eu_passport_date` trova la data nel formato dd MMM/MMM yyyy (example-01 gen/gen 1988) oppure viene trovata una parola chiave from `Keywords_eu_passport_date`
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_italy_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_italy_eu_passport_number` . 
+- L'espressione regolare trova la data nel formato `Regex_italy_eu_passport_date` D MMM/MMM AAAA (esempio - 01 GEN/GEN 1988) o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_italy_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_italy_eu_passport_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_italy_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_italy_eu_passport_number` . 
     
 ```xml
       <!-- Italy Passport Number -->
@@ -9315,12 +9498,12 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passaporto #
-- passaporto #
+- passport #
+- passport #
 - passportid
-- passaporti
+- passports
 - passportno
-- Passport No
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -9329,38 +9512,38 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 #### <a name="keywords_italy_eu_passport_number"></a>Keywords_italy_eu_passport_number
 
 - italiana passaporto
-- passaporto italiana
-- Numero passaporto
-- numéro Passeport
+- passaporto italiano
+- passaporto numero
+- numéro passeport
 - numero di passaporto
 - numeri del passaporto
-- Passeport Italien
+- passeport italien
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Data di emissione
-- Data di scadenza
+- data di emissione
+- data di scadenza
 
 
-## <a name="italy-value-added-tax-number"></a>Numero di imposta sul valore aggiunto Italia
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="italy-value-added-tax-number"></a>Italia - numero di imposta sul valore aggiunto
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
-13 caratteri alfanumerici con delimitatori opzionali
+Motivo alfanumerico a 13 caratteri con delimitatori facoltativi
 
 ### <a name="pattern"></a>Modello
 
-13 caratteri alfanumerici con delimitatori facoltativi:
+Motivo alfanumerico a 13 caratteri con delimitatori facoltativi:
 
 - I o i
 - T o t
-- spazio facoltativo, punto, segno meno o virgola
+- spazio facoltativo, punto, trattino o virgola
 - 11 cifre
 
 ### <a name="checksum"></a>Checksum
@@ -9369,12 +9552,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_italy_value_added_tax_number trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keywords_italy_value_added_tax_number.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_italy_value_added_tax_number trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keywords_italy_value_added_tax_number da un utente.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_italy_value_added_tax_number trova contenuto corrispondente al modello.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_italy_value_added_tax_number trova contenuto che corrisponde al modello.
 
 ```xml
       <!-- Italy Value Added Tax -->
@@ -9394,13 +9577,13 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 #### <a name="keyword_italy_value_added_tax_number"></a>Keyword_italy_value_added_tax_number
 
 - numero di partita IVA
-- IVA No
-- IVA #
-- IVA
-- IVA #
+- vat no
+- vat #
+- iva
+- iva #
 
 
-## <a name="japan-bank-account-number"></a>Giappone-numero di conto corrente bancario
+## <a name="japan-bank-account-number"></a>Giappone - numero di conto corrente bancario
 
 ### <a name="format"></a>Formato
 
@@ -9410,7 +9593,7 @@ sette o otto cifre
 
 numero di conto corrente bancario:
 - sette o otto cifre
-- codice della filiale del conto corrente bancario:
+- codice di succursale del conto corrente bancario:
 - quattro cifre 
 - uno spazio o un trattino (facoltativo) 
 - tre cifre
@@ -9421,14 +9604,14 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_jp_bank_account restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_jp_bank_account.
 - Si verifica una delle situazioni seguenti:
 - La funzione Func_jp_bank_account_branch_code restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_jp_bank_branch_code.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_jp_bank_account restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_jp_bank_account.
 
@@ -9503,7 +9686,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - 支店コード
 - 店番号
 
-## <a name="japan-drivers-license-number"></a>Giappone-numero della patente di guida
+## <a name="japan-drivers-license-number"></a>Giappone - Numero della patente di guida
 
 ### <a name="format"></a>Formato
 
@@ -9519,7 +9702,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_jp_drivers_license_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_jp_drivers_license_number.
 
@@ -9539,14 +9722,14 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 - driverlicense
 - driverslicense
-- secondola
+- driver'slicense
 - driverslicenses
 - driver'slicenses
 - driverlicenses
-- DL #
-- DLS #
-- driver'lic #
-- driver'lics #
+- dl #
+- dls #
+- lic #
+- lics #
 - 運転免許証
 - 運転免許
 - 免許証
@@ -9574,23 +9757,23 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - 免許 #
 
 
-## <a name="japan-my-number---corporate"></a>Giappone My Number-Corporate
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="japan-my-number---corporate"></a>Giappone - Corporate
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
-numero di 13 cifre
+Numero a 13 cifre
 
 ### <a name="pattern"></a>Modello
 
-numero 13 cifre:
+Numero a 13 cifre:
 
-- una cifra da 1 a 9
+- una cifra da una a nove
 - 12 cifre
 
 ### <a name="checksum"></a>Checksum
@@ -9599,12 +9782,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_japanese_my_number_corporate trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keywords_japanese_my_number_corporate.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_japanese_my_number_corporate trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keywords_japanese_my_number_corporate da un utente.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_japanese_my_number_corporate trova contenuto corrispondente al modello.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_japanese_my_number_corporate trova contenuto che corrisponde al modello.
 
 ```xml
       <!-- Japanese My Number – Corporate -->
@@ -9623,7 +9806,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keyword_japan_my_number_corporate"></a>Keyword_japan_my_number_corporate
 
-- numero aziendale
+- corporate number
 - マイナンバー
 - 共通番号
 - マイナンバーカード
@@ -9635,26 +9818,26 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - 指定通知書
 
 
-## <a name="japan-my-number---personal"></a>Giappone il mio numero-personale
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="japan-my-number---personal"></a>Giappone - Personale
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
-numero di 12 cifre
+Numero a 12 cifre
 
 ### <a name="pattern"></a>Modello
 
-numero di 12 cifre:
+Numero a 12 cifre:
 
 - quattro cifre
-- spazio facoltativo, punto o segno meno
+- uno spazio facoltativo, un punto o un trattino
 - quattro cifre
-- spazio facoltativo, punto o segno meno
+- uno spazio facoltativo, un punto o un trattino
 - quattro cifre
 
 ### <a name="checksum"></a>Checksum
@@ -9663,12 +9846,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_japanese_my_number_personal trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keywords_japanese_my_number_personal.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_japanese_my_number_personal trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keywords_japanese_my_number_personal da un utente.
 
-Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni riservate se, entro 300 caratteri:
-- La funzione Func_japanese_my_number_personal trova contenuto corrispondente al modello.
+Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- La funzione Func_japanese_my_number_personal trova contenuto che corrisponde al modello.
 
 ```xml
       <!-- Japanese My Number – Personal -->
@@ -9687,7 +9870,7 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 
 #### <a name="keyword_japan_my_number_personal"></a>Keyword_japan_my_number_personal
 
-- numero personale
+- my number
 - マイナンバー
 - 個人番号
 - 共通番号
@@ -9699,7 +9882,7 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 - 通知カード
 
    
-## <a name="japan-passport-number"></a>Giappone-numero di passaporto
+## <a name="japan-passport-number"></a>Giappone - numero di passaporto
 
 ### <a name="format"></a>Formato
 
@@ -9707,7 +9890,7 @@ due lettere seguite da sette cifre
 
 ### <a name="pattern"></a>Modello
 
-due lettere (senza distinzione tra maiuscole/minuscole) seguite da sette cifre
+due lettere (senza distinzione tra maiuscole e minuscole) seguite da sette cifre
 
 ### <a name="checksum"></a>Checksum
 
@@ -9715,7 +9898,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_jp_passport restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_jp_passport.
 
@@ -9733,9 +9916,9 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keyword_jp_passport"></a>Keyword_jp_passport
 
-- Passaporto
+- Passport
 - Passport Number
-- Passaporto No.
+- Passport No.
 - Passport#
 - パスポート
 - パスポート番号
@@ -9745,11 +9928,11 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - パスポートNo.
 - 旅券番号
 - 旅券番号＃
-- ♯ di 旅券番号
+- 旅券番号♯
 - 旅券ナンバー
 
 
-## <a name="japan-residence-card-number"></a>Giappone-numero di carta di soggiorno
+## <a name="japan-residence-card-number"></a>Giappone - numero di carta di residenza
 
 ### <a name="format"></a>Formato
 
@@ -9768,9 +9951,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare Regex_jp_residence_card_number trova contenuti che corrispondono al modello.
-- Viene trovata una parola chiave da Keyword_jp_residence_card_number.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione regolare Regex_jp_residence_card_number trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_jp_residence_card_number di codice.
 
 ```xml
 <!--Japan Residence Card Number-->
@@ -9786,14 +9969,14 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keyword_jp_residence_card_number"></a>Keyword_jp_residence_card_number
 
-- Numero di carta di soggiorno
-- Carta di soggiorno No
-- Carta di soggiorno #
+- Numero di carta di residenza
+- Carta di residenza no
+- Carta di residenza #
 - 在留カード番号
 - 在留カード
 - 在留番号
 
-## <a name="japan-resident-registration-number"></a>Giappone-numero di registrazione residente
+## <a name="japan-resident-registration-number"></a>Giappone - Numero di registrazione residente
 
 ### <a name="format"></a>Formato
 
@@ -9809,7 +9992,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_jp_resident_registration_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_jp_resident_registration_number.
 
@@ -9839,7 +10022,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - 外国人登録証
 
    
-## <a name="japan-social-insurance-number-sin"></a>Giappone-numero di previdenza sociale (SIN)
+## <a name="japan-social-insurance-number-sin"></a>Giappone - numero di previdenza sociale (SIN)
 
 ### <a name="format"></a>Formato
 
@@ -9850,7 +10033,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 7-12 cifre:
 - quattro cifre 
 - un trattino (facoltativo) 
-- sei cifre o
+- sei cifre OR
 - 7-12 cifre consecutive
 
 ### <a name="checksum"></a>Checksum
@@ -9859,11 +10042,11 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_jp_sin restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_jp_sin.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_jp_sin_pre_1997 restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_jp_sin.
 
@@ -9905,7 +10088,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - 厚生年金被保険者整理番号
 
 
-## <a name="latvia-drivers-license-number"></a>Numero della patente di guida in Lettonia
+## <a name="latvia-drivers-license-number"></a>Numero della patente lettone
 
 ### <a name="format"></a>Formato
 
@@ -9924,9 +10107,9 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_latvia_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_latvia_eu_driver's_license_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_latvia_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_latvia_eu_driver's_license_number` . 
     
 ```xml
       <!-- Latvia Driver's License Number -->
@@ -9943,7 +10126,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -9951,121 +10134,121 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - driverlicenses
 - driverlicence
 - driverlicences
-- LIC del driver
-- driver driver'lics
+- driver lic
+- driver lics
 - driver license
 - driver licenses
-- patente di guida
-- licenze per i driver
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- driver Lic
-- driver driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- licenze per i conducenti
+- drivers licences
 - driver'lic
-- driver ' LiCS
-- driver ' License
-- driver ' licenses
+- driver'lics
+- driver'license
+- driver'licenses
 - driver'licence
 - driver'licences
-- LIC del driver
-- driver ' driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
-- patenti del conducente
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
-- secondola
+- driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- LIC del conducente
-- driver'lics del conducente
+- driver's lic
+- driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- patenti di guida
-- DL #
-- DLS #
+- driver's licences
+- dl #
+- dls #
 - driverlic #
 - driverlics #
 - driverlicense #
 - driverlicenses #
 - driverlicence #
 - driverlicences #
-- LIC del driver #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- licenze per i driver #
+- driver lic #
+- driver lics #
+- driver license #
+- driver licenses #
+- driver licences #
 - driverslic #
 - driverslics #
 - driverslicense #
 - driverslicenses #
 - driverslicence #
 - driverslicences #
-- driver Lic #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- licenze per i conducenti #
+- drivers lic #
+- drivers lics #
+- drivers license #
+- driver licenses #
+- drivers licence #
+- drivers licences #
 - driver'lic #
-- driver ' LiCS #
-- driver ' License #
-- driver ' licenses #
+- driver'lics #
+- driver'license #
+- driver'licenses #
 - driver'licence #
 - driver'licences #
-- LIC del driver #
-- driver ' driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- patenti del conducente #
+- driver' lic #
+- driver' lics #
+- driver' license #
+- driver' licenses #
+- driver' licence #
+- driver' licences #
 - driver'slic #
 - driver'slics #
-- secondola #
+- driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- LIC del conducente #
-- driver'lics del conducente #
-- patente di guida #
-- licenze del conducente #
-- patente di guida #
-- patenti di guida #
+- driver's lic #
+- driver's lics #
+- driver's license #
+- driver's licenses #
+- driver's licence #
+- driver's licences #
 - driving licence 
 - driving license
 - dlno #
-- driv Lic
+- driv lic
 - driv licen
-- licenza di driv
-- licenze di driv
-- licenza driv
-- licenze di driv
+- driv license
+- driv licenses
+- driv licence
+- driv licences
 - driver licen
-- driver licen
-- licei del conducente
-- Guida di Lic
-- Guida licen
-- patenti di guida
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- permesso di guida
-- DL No
+- driving permit
+- dl no
 - dlno
-- numero DL
+- dl number
 
 
-#### <a name="keywords_latvia_eu_drivers_license_number"></a>Keywords_latvia_eu_driver ' s_license_number
+#### <a name="keywords_latvia_eu_drivers_license_number"></a>Keywords_latvia_eu_driver's_license_number
 
 - autovadītāja apliecība
 - autovadītāja apliecības
@@ -10075,7 +10258,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 ### <a name="format"></a>Formato
 
-11 cifre e un segno meno facoltativo
+11 cifre e un trattino facoltativo
   
 ### <a name="pattern"></a>Modello
 
@@ -10083,10 +10266,10 @@ Formato precedente
 
 11 cifre e un trattino:
   
-- sei cifre che corrispondono alla data di nascita (GGMMAA) 
+- sei cifre che corrispondono alla data di nascita (DDMMYY) 
 - un trattino
-- una cifra che corrisponde al secolo di nascita ("0" per il XIX secolo, "1" per il XX secolo e "2" per il XXI secolo)
-- quattro cifre, generate in modo casuale
+- una cifra che corrisponde al secolo di nascita ("0" per il 19° secolo, "1" per il 20° e "2" per il 21° secolo)
+- quattro cifre generate in modo casuale
 
 Nuovo formato
 
@@ -10101,12 +10284,12 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione  `Func_latvia_eu_national_id_card` o l'espressione Regex `Regex_latvia_eu_national_id_card_new_format` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_latvia_eu_national_id_card` . 
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione  `Func_latvia_eu_national_id_card` o il regex `Regex_latvia_eu_national_id_card_new_format` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola  `Keywords_latvia_eu_national_id_card` chiave da. 
     
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione  `Func_latvia_eu_national_id_card` o l'espressione Regex `Regex_latvia_eu_national_id_card_new_format` trova contenuto che corrisponde al modello. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione  `Func_latvia_eu_national_id_card` o il regex `Regex_latvia_eu_national_id_card_new_format` trova contenuto che corrisponde al modello. 
     
 ```xml
       <!-- Latvia Personal Code -->
@@ -10142,67 +10325,67 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 #### <a name="keywords_latvia_eu_national_id_card"></a>Keywords_latvia_eu_national_id_card
 
 - numero amministrativo
-- Alvas n ē
+- alvas nē
 - numero di nascita
-- numero cittadino
+- citizen number
 - numero civile
-- numero del censimento elettronico
+- numero di censimento elettronico
 - numero elettronico
 - codice fiscale
-- numero utente di assistenza sanitaria
-- ID #
-- ID-code
+- healthcare user number
+- id #
+- id-code
 - identification number
 - identifikācijas numurs
-- ID-Number
-- numero individuale
-- Latvija Alva
-- ID Nacionālais
+- id-number
+- numero singolo
+- latvija alva
+- nacionālais id
 - national id
-- numero di identificazione nazionale
-- numero di identità nazionale
+- national identifying number
+- national identity number
 - national insurance number
-- numero del registro nazionale
+- national register number
 - nodokļa numurs
-- ID nodokļu
+- nodokļu id
 - nodokļu identifikācija numurs
 - numero di certificato personale
 - codice personale
 - codice ID personale
-- numero ID personale
+- personal id number
 - codice di identificazione personale
 - identificatore personale
-- numero di identità personale
+- personal identity number
 - numero personale
 - codice numerico personale
 - personalcodeno #
-- personas Kods
-- codice di identificazione della popolazione
+- personas kods
+- population identification code
 - numero di servizio pubblico
 - registration number
-- numero di ricavo
+- revenue number
 - social insurance number
 - social security number
 - codice fiscale dello stato
 - tax file number
 - tax id
-- identificazione fiscale No
-- codice di identificazione fiscale
+- tax identification no
+- tax identification number
 - tax no #
 - tax no
-- codice fiscale
-- taxid #
-- taxidno #
-- taxidnumber #
+- tax number
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
-- ID Tin
-- Tin No
-- latta #
-- numero degli elettori
+- tin id
+- tin no
+- tin #
+- voter's number
 
-## <a name="latvia-passport-number"></a>Lettonia-numero di passaporto
+## <a name="latvia-passport-number"></a>Numero di passaporto lettone
 
 ### <a name="format"></a>Formato
 
@@ -10221,14 +10404,14 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_latvia_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_latvia_eu_passport_number` viene trovata. 
-- L'espressione regolare `Regex_eu_passport_date1` trova la data nel formato dd. mm. yyyy o una parola chiave from `Keywords_eu_passport_date` si trova
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_latvia_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_latvia_eu_passport_number` . 
+- L'espressione regolare trova la data nel formato `Regex_eu_passport_date1` GG.MM.AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_latvia_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_latvia_eu_passport_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_latvia_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_latvia_eu_passport_number` . 
     
 ```xml
       <!-- Latvia Passport Number -->
@@ -10258,12 +10441,12 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_eu_passport_number_common"></a>Keywords_eu_passport_number_common
 
-- passaporto #
-- passaporto #
+- passport #
+- passport #
 - passportid
-- passaporti
+- passports
 - passportno
-- Passport No
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -10273,18 +10456,18 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 - pase numurs
 - pase numur
-- Pases numuri
-- Pases Nr
-- Passeport No
-- n ° du Passeport
+- pases numuri
+- pases nr
+- passeport no
+- n° du Passeport
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Data di emissione
-- Data di scadenza
+- data di emissione
+- data di scadenza
 
 
-## <a name="lithuania-drivers-license-number"></a>Lituania-numero della patente di guida
+## <a name="lithuania-drivers-license-number"></a>Numero della patente di guida in Lituania
 
 ### <a name="format"></a>Formato
 
@@ -10300,9 +10483,9 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_lithuania_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_lithuania_eu_driver's_license_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_lithuania_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_lithuania_eu_driver's_license_number` . 
     
 ```xml
       <!-- Lithuania Driver's License Number -->
@@ -10319,7 +10502,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -10327,133 +10510,133 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - driverlicenses
 - driverlicence
 - driverlicences
-- LIC del driver
-- driver driver'lics
+- driver lic
+- driver lics
 - driver license
 - driver licenses
-- patente di guida
-- licenze per i driver
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- driver Lic
-- driver driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- licenze per i conducenti
+- drivers licences
 - driver'lic
-- driver ' LiCS
-- driver ' License
-- driver ' licenses
+- driver'lics
+- driver'license
+- driver'licenses
 - driver'licence
 - driver'licences
-- LIC del driver
-- driver ' driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
-- patenti del conducente
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
-- secondola
+- driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- LIC del conducente
-- driver'lics del conducente
+- driver's lic
+- driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- patenti di guida
-- DL #
-- DLS #
+- driver's licences
+- dl #
+- dls #
 - driverlic #
 - driverlics #
 - driverlicense #
 - driverlicenses #
 - driverlicence #
 - driverlicences #
-- LIC del driver #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- licenze per i driver #
+- driver lic #
+- driver lics #
+- driver license #
+- driver licenses #
+- driver licences #
 - driverslic #
 - driverslics #
 - driverslicense #
 - driverslicenses #
 - driverslicence #
 - driverslicences #
-- driver Lic #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- licenze per i conducenti #
+- drivers lic #
+- drivers lics #
+- drivers license #
+- driver licenses #
+- drivers licence #
+- drivers licences #
 - driver'lic #
-- driver ' LiCS #
-- driver ' License #
-- driver ' licenses #
+- driver'lics #
+- driver'license #
+- driver'licenses #
 - driver'licence #
 - driver'licences #
-- LIC del driver #
-- driver ' driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- patenti del conducente #
+- driver' lic #
+- driver' lics #
+- driver' license #
+- driver' licenses #
+- driver' licence #
+- driver' licences #
 - driver'slic #
 - driver'slics #
-- secondola #
+- driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- LIC del conducente #
-- driver'lics del conducente #
-- patente di guida #
-- licenze del conducente #
-- patente di guida #
-- patenti di guida #
+- driver's lic #
+- driver's lics #
+- driver's license #
+- driver's licenses #
+- driver's licence #
+- driver's licences #
 - driving licence 
 - driving license
 - dlno #
-- driv Lic
+- driv lic
 - driv licen
-- licenza di driv
-- licenze di driv
-- licenza driv
-- licenze di driv
+- driv license
+- driv licenses
+- driv licence
+- driv licences
 - driver licen
-- driver licen
-- licei del conducente
-- Guida di Lic
-- Guida licen
-- patenti di guida
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- permesso di guida
-- DL No
+- driving permit
+- dl no
 - dlno
-- numero DL
+- dl number
 
 
-#### <a name="keywords_lithuania_eu_drivers_license_number"></a>Keywords_lithuania_eu_driver ' s_license_number
+#### <a name="keywords_lithuania_eu_drivers_license_number"></a>Keywords_lithuania_eu_driver's_license_number
 
 - vairuotojo pažymėjimas
 - vairuotojo pažymėjimo numeris
 - vairuotojo pažymėjimo numeriai
 
 ## <a name="lithuania-personal-code"></a>Codice personale Lituania
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -10463,9 +10646,9 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 
 11 cifre senza spazi e delimitatori:
   
-- una cifra (1-6) che corrisponde al sesso e al secolo della nascita della persona
-- sei cifre che corrispondono alla data di nascita (AAMMGG) 
-- tre cifre che corrispondono al numero di serie della data di nascita
+- una cifra (1-6) che corrisponde al sesso e al secolo di nascita della persona
+- sei cifre che corrispondono alla data di nascita (AAMMMMD) 
+- tre cifre che corrispondono al numero seriale della data di nascita
 - una cifra di controllo
     
 ### <a name="checksum"></a>Checksum
@@ -10474,11 +10657,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_lithuania_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_lithuania_eu_tax_file_number` . 
+- Viene trovata una parola  `Keywords_lithuania_eu_tax_file_number` chiave da. 
     
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_lithuania_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -10504,38 +10687,38 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 - asmeninis skaitmeninis kodas
 - asmens kodas
-- numero di servizio Citizen
-- ID mokesčių
-- mokesčių identifikavimas numeris
-- mokesčių identifikavimo numeris
-- numeri mokesčių
+- citizen service number
+- mokesčiello id
+- mokesčife identifikavimas numeris
+- mokesčife identifikavimo numeris
+- mokesčiello numeris
 - national identification number
 - codice personale
 - codice numerico personale
 - piliečio paslaugos numeris
 - tax id
-- identificazione fiscale No
-- codice di identificazione fiscale
+- tax identification no
+- tax identification number
 - tax no #
 - tax no
-- codice fiscale
-- numero di registrazione fiscale
-- taxid #
-- taxidno #
-- taxidnumber #
+- tax number
+- tax registration number
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
-- ID Tin
-- Tin No
-- latta #
+- tin id
+- tin no
+- tin #
 - unikalus identifikavimo kodas
 - unikalus identifikavimo numeris
 - numero di identificazione univoco
 - numero di identità univoco
 - uniqueidentityno #
 
-## <a name="lithuania-passport-number"></a>Numero del passaporto della Lituania
+## <a name="lithuania-passport-number"></a>Numero di passaporto lituania
 
 ### <a name="format"></a>Formato
 
@@ -10551,14 +10734,14 @@ non applicabile
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_lithuania_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_lithuania_eu_passport_number` viene trovata. 
-- L'espressione regolare `Regex_eu_passport_date3` trova la data nel formato dd mm yyyy o una parola chiave from `Keywords_eu_passport_date` si trova
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_lithuania_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_lithuania_eu_passport_number` . 
+- L'espressione `Regex_eu_passport_date3` regolare trova la data nel formato GG MM AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_lithuania_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_lithuania_eu_passport_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_lithuania_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_lithuania_eu_passport_number` . 
     
 ```xml
       <!-- Lithuania Passport Number -->
@@ -10588,12 +10771,12 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passaporto #
-- passaporto #
+- passport #
+- passport #
 - passportid
-- passaporti
+- passports
 - passportno
-- Passport No
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -10601,17 +10784,17 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_lithuania_eu_passport_number"></a>Keywords_lithuania_eu_passport_number
 
-- numero di Paso
-- Paso numeriai
-- Paso Nr
+- paso numeris
+- paso numeriai
+- paso nr
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Data di emissione
-- Data di scadenza
+- data di emissione
+- data di scadenza
 
 
-## <a name="luxemburg-drivers-license-number"></a>Numero della patente di guida del Lussemburgo
+## <a name="luxemburg-drivers-license-number"></a>Numero della patente di guida di Lussemburgo
 
 ### <a name="format"></a>Formato
 
@@ -10627,9 +10810,9 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_luxemburg_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_luxemburg_eu_driver's_license_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_luxemburg_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_luxemburg_eu_driver's_license_number` . 
     
 ```xml
       <!-- Luxemburg Driver's License Number -->
@@ -10646,7 +10829,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -10654,132 +10837,132 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - driverlicenses
 - driverlicence
 - driverlicences
-- LIC del driver
-- driver driver'lics
+- driver lic
+- driver lics
 - driver license
 - driver licenses
-- patente di guida
-- licenze per i driver
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- driver Lic
-- driver driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- licenze per i conducenti
+- drivers licences
 - driver'lic
-- driver ' LiCS
-- driver ' License
-- driver ' licenses
+- driver'lics
+- driver'license
+- driver'licenses
 - driver'licence
 - driver'licences
-- LIC del driver
-- driver ' driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
-- patenti del conducente
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
-- secondola
+- driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- LIC del conducente
-- driver'lics del conducente
+- driver's lic
+- driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- patenti di guida
-- DL #
-- DLS #
+- driver's licences
+- dl #
+- dls #
 - driverlic #
 - driverlics #
 - driverlicense #
 - driverlicenses #
 - driverlicence #
 - driverlicences #
-- LIC del driver #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- licenze per i driver #
+- driver lic #
+- driver lics #
+- driver license #
+- driver licenses #
+- driver licences #
 - driverslic #
 - driverslics #
 - driverslicense #
 - driverslicenses #
 - driverslicence #
 - driverslicences #
-- driver Lic #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- licenze per i conducenti #
+- drivers lic #
+- drivers lics #
+- drivers license #
+- driver licenses #
+- drivers licence #
+- drivers licences #
 - driver'lic #
-- driver ' LiCS #
-- driver ' License #
-- driver ' licenses #
+- driver'lics #
+- driver'license #
+- driver'licenses #
 - driver'licence #
 - driver'licences #
-- LIC del driver #
-- driver ' driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- patenti del conducente #
+- driver' lic #
+- driver' lics #
+- driver' license #
+- driver' licenses #
+- driver' licence #
+- driver' licences #
 - driver'slic #
 - driver'slics #
-- secondola #
+- driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- LIC del conducente #
-- driver'lics del conducente #
-- patente di guida #
-- licenze del conducente #
-- patente di guida #
-- patenti di guida #
+- driver's lic #
+- driver's lics #
+- driver's license #
+- driver's licenses #
+- driver's licence #
+- driver's licences #
 - driving licence 
 - driving license
 - dlno #
-- driv Lic
+- driv lic
 - driv licen
-- licenza di driv
-- licenze di driv
-- licenza driv
-- licenze di driv
+- driv license
+- driv licenses
+- driv licence
+- driv licences
 - driver licen
-- driver licen
-- licei del conducente
-- Guida di Lic
-- Guida licen
-- patenti di guida
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- permesso di guida
-- DL No
+- driving permit
+- dl no
 - dlno
-- numero DL
+- dl number
 
 
-#### <a name="keywords_luxemburg_eu_drivers_license_number"></a>Keywords_luxemburg_eu_driver ' s_license_number
+#### <a name="keywords_luxemburg_eu_drivers_license_number"></a>Keywords_luxemburg_eu_driver's_license_number
 
 - fahrerlaubnis
 - Führerschäin
 
-## <a name="luxemburg-national-identification-number-natural-persons"></a>Numero di identificazione nazionale del Lussemburgo (persone fisiche)
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="luxemburg-national-identification-number-natural-persons"></a>Numero di identificazione nazionale (persone fisiche)
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -10798,11 +10981,11 @@ sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_luxemburg_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_luxemburg_eu_national_id_card` . 
+- Viene trovata una parola  `Keywords_luxemburg_eu_national_id_card` chiave da. 
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_luxemburg_eu_tax_file_number` trova contenuto che corrisponde al modello. 
 
 
@@ -10827,28 +11010,28 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_luxemburg_eu_national_id_card"></a>Keywords_luxemburg_eu_national_id_card
 
-- ID eindeutige
-- ID eindeutige-Nummer
+- eindeutige id
+- eindeutige id-nummer
 - eindeutigeid #
-- ID personnelle
+- id personnelle
 - idpersonnelle #
 - idpersonnelle
 - codice singolo
-- ID individuale
+- individual id
 - identificazione individuale
 - identità individuale
-- personale di Numéro d'identification
-- ID personale
+- numéro d'identification personnel
+- id personale
 - identificazione personale
 - identità personale
 - personalidno #
 - personalidnumber #
 - persönliche identifikationsnummer
-- ID univoco
+- id univoco
 - identità univoca
 - uniqueidkey #
 
-## <a name="luxemburg-passport-number"></a>Numero di passaporto del Lussemburgo
+## <a name="luxemburg-passport-number"></a>Numero di passaporto di Lussemburgo
 
 ### <a name="format"></a>Formato
 
@@ -10864,14 +11047,14 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_luxemburg_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_luxemburg_eu_passport_number` viene trovata. 
-- L'espressione regolare `Regex_eu_passport_date3` trova la data nel formato dd mm yyyy o una parola chiave from `Keywords_eu_passport_date` si trova
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_luxemburg_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_luxemburg_eu_passport_number` . 
+- L'espressione `Regex_eu_passport_date3` regolare trova la data nel formato GG MM AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_luxemburg_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_luxemburg_eu_passport_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_luxemburg_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_luxemburg_eu_passport_number` . 
     
 ```xml
       <!-- Luxemburg Passport Number -->
@@ -10901,12 +11084,12 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passaporto #
-- passaporto #
+- passport #
+- passport #
 - passportid
-- passaporti
+- passports
 - passportno
-- Passport No
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -10914,28 +11097,28 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_luxemburg_eu_passport_number"></a>Keywords_luxemburg_eu_passport_number
 - ausweisnummer
-- passaggio Lussemburgo
-- Lussemburgo Passeport
-- passaporto lussemburghese
-- No de Passeport
-- No-Reisepass
-- Nr-Reisepass
-- numéro de Passeport
-- passare NET
-- passare Nr
+- passaggio lussemburgo
+- luxembourg passeport
+- passaporto lussemburgo
+- no de passeport
+- no-reisepass
+- nr-reisepass
+- numéro de passeport
+- pass net
+- pass nr
 - passnummer
-- Passeport Nombre
+- passeport nombre
 - reisepässe
-- Reisepass-Nr
+- reisepass-nr
 - reisepassnummer
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Data di emissione
-- Data di scadenza
+- data di emissione
+- data di scadenza
 
 
-## <a name="luxemburg-national-identification-number-non-natural-persons"></a>Numero di identificazione nazionale del Lussemburgo (persone non fisiche)
+## <a name="luxemburg-national-identification-number-non-natural-persons"></a>Numero di identificazione nazionale (persone non fisiche)
 
 ### <a name="format"></a>Formato
 
@@ -10960,11 +11143,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_luxemburg_eu_tax_file_number_non_natural` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_luxemburg_eu_tax_file_number` . 
+- Viene trovata una parola  `Keywords_luxemburg_eu_tax_file_number` chiave da. 
     
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_luxemburg_eu_tax_file_number_non_natural` trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -10989,45 +11172,45 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 #### <a name="keywords_luxemburg_eu_tax_file_number"></a>Keywords_luxemburg_eu_tax_file_number
 
 - carte de sécurité sociale
-- Étain non
+- étain non
 - étain #
-- d'impôt di identificazione
-- identifikatiounsnummer Tax Luxembourg
+- identifiant d'impôt
+- luxembourg tax identifikatiounsnummer
 - numéro d'étain
-- luxembourgeois fiscale di Numéro d'identification
+- numéro d'identification fiscal luxembourgeois
 - numéro d'identification fiscale
 - social security
 - sozialunterstützung
 - sozialversécherung
 - sozialversicherungsausweis
-- ID Steier
-- Steier identifikatiounsnummer
-- Steier Nummer
-- ID Steuer
+- steier id
+- steier identifikatiounsnummer
+- steier nummer
+- steuer id
 - steueridentifikationsnummer
 - steuernummer
 - tax id
-- identificazione fiscale No
-- codice di identificazione fiscale
+- tax identification no
+- tax identification number
 - tax no #
 - tax no
-- codice fiscale
-- numero di registrazione fiscale
-- taxid #
-- taxidno #
-- taxidnumber #
+- tax number
+- tax registration number
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
-- ID Tin
-- Tin No
-- latta #
-- Zinn #
-- Zinn
+- tin id
+- tin no
+- tin #
+- zinn #
+- zinn
 - zinnzahl
 
 
-## <a name="malaysia-identification-card-number"></a>Numero di carta di identificazione Malaysia
+## <a name="malaysia-identification-card-number"></a>Malaysia - Numero di carta di identità
 
 ### <a name="format"></a>Formato
 
@@ -11036,9 +11219,9 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 ### <a name="pattern"></a>Modello
 
 12 cifre:
-- sei cifre nel formato AAMMGG, ovvero la data di nascita 
+- sei cifre nel formato AAMMMMD, ovvero la data di nascita 
 - un trattino (facoltativo) 
-- codice posto-di-nascita a due lettere 
+- codice luogo di nascita a due lettere 
 - un trattino (facoltativo) 
 - tre cifre casuali 
 - codice di genere a una cifra
@@ -11049,9 +11232,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare Regex_malaysia_id_card_number trova contenuti che corrispondono al modello.
-- Viene trovata una parola chiave da Keyword_malaysia_id_card_number.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione Regex_malaysia_id_card_number trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_malaysia_id_card_number da un utente.
 
 ```xml
 <!-- Malaysia ID Card Number -->
@@ -11068,42 +11251,42 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
    
 #### <a name="keyword_malaysia_id_card_number"></a>Keyword_malaysia_id_card_number
 
-- scheda dell'applicazione digitale
+- scheda applicazione digitale
 - i/c
 - i/c no
-- IC
-- IC No
+- ic
+- ic no
 - id card
-- Scheda di identificazione
+- scheda di identificazione
 - carta di identità
 - k/p
 - k/p no
-- diri akuan Kad
-- Kad Aplikasi digitale
-- Kad Pengenalan Malaysia
-- KP
-- KP No
-- MyKad
-- MYKAS
+- kad akuan diri
+- kad aplikasi digital
+- kad pengenalan malaysia
+- kp
+- kp no
+- mykad
+- mykas
 - mykid
 - mypr
 - mytentera
-- carta di identità Malaysia
-- carta di identità malaysiana
-- NRIC
+- malaysia identity card
+- malaysian identity card
+- nric
 - scheda di identificazione personale
 
 ## <a name="malta-drivers-license-number"></a>Numero della patente di guida di Malta
 
 ### <a name="format"></a>Formato
 
-Combinazione di due caratteri e di sei cifre nel modello specificato
+Combinazione di due caratteri e sei cifre nel formato specificato
   
 ### <a name="pattern"></a>Modello
 
-combinazione di due caratteri e di sei cifre:
+combinazione di due caratteri e sei cifre:
   
-- due caratteri (cifre o lettere, non con distinzione tra maiuscole e minuscole)
+- due caratteri (cifre o lettere, senza distinzione tra maiuscole e minuscole)
 - uno spazio (facoltativo)
 - tre cifre
 - uno spazio (facoltativo)
@@ -11115,9 +11298,9 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_malta_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_malta_eu_driver's_license_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_malta_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_malta_eu_driver's_license_number` . 
     
 ```xml
       <!-- Malta Driver's License Number -->
@@ -11134,7 +11317,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -11142,133 +11325,133 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - driverlicenses
 - driverlicence
 - driverlicences
-- LIC del driver
-- driver driver'lics
+- driver lic
+- driver lics
 - driver license
 - driver licenses
-- patente di guida
-- licenze per i driver
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- driver Lic
-- driver driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- licenze per i conducenti
+- drivers licences
 - driver'lic
-- driver ' LiCS
-- driver ' License
-- driver ' licenses
+- driver'lics
+- driver'license
+- driver'licenses
 - driver'licence
 - driver'licences
-- LIC del driver
-- driver ' driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
-- patenti del conducente
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
-- secondola
+- driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- LIC del conducente
-- driver'lics del conducente
+- driver's lic
+- driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- patenti di guida
-- DL #
-- DLS #
+- driver's licences
+- dl #
+- dls #
 - driverlic #
 - driverlics #
 - driverlicense #
 - driverlicenses #
 - driverlicence #
 - driverlicences #
-- LIC del driver #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- licenze per i driver #
+- driver lic #
+- driver lics #
+- driver license #
+- driver licenses #
+- driver licences #
 - driverslic #
 - driverslics #
 - driverslicense #
 - driverslicenses #
 - driverslicence #
 - driverslicences #
-- driver Lic #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- licenze per i conducenti #
+- drivers lic #
+- drivers lics #
+- drivers license #
+- driver licenses #
+- drivers licence #
+- drivers licences #
 - driver'lic #
-- driver ' LiCS #
-- driver ' License #
-- driver ' licenses #
+- driver'lics #
+- driver'license #
+- driver'licenses #
 - driver'licence #
 - driver'licences #
-- LIC del driver #
-- driver ' driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- patenti del conducente #
+- driver' lic #
+- driver' lics #
+- driver' license #
+- driver' licenses #
+- driver' licence #
+- driver' licences #
 - driver'slic #
 - driver'slics #
-- secondola #
+- driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- LIC del conducente #
-- driver'lics del conducente #
-- patente di guida #
-- licenze del conducente #
-- patente di guida #
-- patenti di guida #
+- driver's lic #
+- driver's lics #
+- driver's license #
+- driver's licenses #
+- driver's licence #
+- driver's licences #
 - driving licence 
 - driving license
 - dlno #
-- driv Lic
+- driv lic
 - driv licen
-- licenza di driv
-- licenze di driv
-- licenza driv
-- licenze di driv
+- driv license
+- driv licenses
+- driv licence
+- driv licences
 - driver licen
-- driver licen
-- licei del conducente
-- Guida di Lic
-- Guida licen
-- patenti di guida
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- permesso di guida
-- DL No
+- driving permit
+- dl no
 - dlno
-- numero DL
+- dl number
 
 
-#### <a name="keywords_malta_eu_drivers_license_number"></a>Keywords_malta_eu_driver ' s_license_number
+#### <a name="keywords_malta_eu_drivers_license_number"></a>Keywords_malta_eu_driver's_license_number
 
-- Liċenzja TAS-sewqan
-- liċenzji TAS-sewwieq
+- liċenzja tas-sewqan
+- liċenzji tas-sewwieq
 
 
 ## <a name="malta-identity-card-number"></a>Numero di carta di identità di Malta
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -11287,12 +11470,12 @@ Non applicabile
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_malta_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_malta_eu_national_id_card` . 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_malta_eu_national_id_card` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una parola  `Keywords_malta_eu_national_id_card` chiave da. 
     
-Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni riservate se, entro 300 caratteri:
-- L'espressione regolare  `Regex_malta_eu_national_id_card` trova contenuto che corrisponde al modello. 
+Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- L'espressione  `Regex_malta_eu_national_id_card` regolare trova contenuto che corrisponde al modello. 
     
 ```xml
       <!-- Malta Identity Card Number -->
@@ -11311,16 +11494,16 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 
 #### <a name="keywords_malta_eu_national_id_card"></a>Keywords_malta_eu_national_id_card
 
-- numero di servizio Citizen
-- ID Tat-Taxxa
-- identifika numru tal-Biljett
-- Kodiċi numerai personali
-- numru ta ' identifikazzjoni personali
-- numru ta ' identifikazzjoni Tat-Taxxa
-- numru ta ' identifikazzjoni uniku
-- numru ta ' identità uniku
-- numru TAS-Servizz taċ-ċittadin
-- numru Tat-Taxxa
+- citizen service number
+- id tat-taxxa
+- identifika numru tal-biljett
+- kodiċi numerali personali
+- numru ta 'identifikazzjoni personali
+- numru ta 'identifikazzjoni tat-taxxa
+- numru ta 'identifikazzjoni uniku
+- numru ta' identità uniku
+- numru tas-servizz taċ-ċittadin
+- numru tat-taxxa
 - codice numerico personale
 - numero di identificazione univoco
 - numero di identità univoco
@@ -11343,14 +11526,14 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_malta_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_malta_eu_passport_number` viene trovata. 
-- Viene trovata una parola chiave `Keywords_eu_passport_date`
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_malta_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_malta_eu_passport_number` . 
+- Viene trovata una parola `Keywords_eu_passport_date` chiave da
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_malta_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_malta_eu_passport_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_malta_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_malta_eu_passport_number` . 
     
 ```xml
       <!-- Malta Passport Number -->
@@ -11377,12 +11560,12 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passaporto #
-- passaporto #
+- passport #
+- passport #
 - passportid
-- passaporti
+- passports
 - passportno
-- Passport No
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -11392,22 +11575,22 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 - numru tal-passaport
 - numri tal-passaport
-- NRU tal-passaport
+- Nru tal-passaport
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Data di emissione
-- Data di scadenza
+- data di emissione
+- data di scadenza
 
 
 ## <a name="malta-tax-identification-number"></a>Numero di identificazione fiscale di Malta
 
 ### <a name="format"></a>Formato
 
-Per cittadini maltesi:
-- sette cifre e una lettera nel modello specificato
+Per i cittadini maltesi:
+- sette cifre e una lettera nel formato specificato
   
-Nazionali non maltesi e soggetti maltesi:
+Nazionali non maltesi ed entità maltesi:
 - nove cifre
   
 ### <a name="pattern"></a>Modello
@@ -11417,7 +11600,7 @@ Nazionali maltesi: sette cifre e una lettera
 - sette cifre 
 - una lettera (senza distinzione tra maiuscole e minuscole)
     
-Nazionali non maltesi e soggetti maltesi: nove cifre
+Nazionali non maltesi ed entità maltesi: nove cifre
   
 - nove cifre 
     
@@ -11427,12 +11610,12 @@ Non applicabile
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La Regex  `Regex_malta_eu_tax_file_number`  o `Regex_malta_eu_tax_file_number_non_maltese_national` trova il contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_malta_eu_tax_file_number` . 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- Il regex  `Regex_malta_eu_tax_file_number`  o trova contenuto che corrisponde al `Regex_malta_eu_tax_file_number_non_maltese_national` modello. 
+- Viene trovata una parola  `Keywords_malta_eu_tax_file_number` chiave da. 
     
-Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni riservate se, entro 300 caratteri:
-- La Regex  `Regex_malta_eu_tax_file_number` o `Regex_malta_eu_tax_file_number_non_maltese_national` trova il contenuto che corrisponde al modello. 
+Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- Il regex  `Regex_malta_eu_tax_file_number` o trova contenuto che corrisponde al `Regex_malta_eu_tax_file_number_non_maltese_national` modello. 
     
 ```xml
       <!-- Malta Tax ID Number -->
@@ -11458,42 +11641,42 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 
 #### <a name="keywords_malta_eu_tax_file_number"></a>Keywords_malta_eu_tax_file_number
 
-- numero di servizio Citizen
-- ID Tat-Taxxa
-- identifika numru tal-Biljett
-- Kodiċi numerai personali
-- numru ta ' identifikazzjoni personali
-- numru ta ' identifikazzjoni Tat-Taxxa
-- numru ta ' identifikazzjoni uniku
-- numru ta ' identità uniku
-- numru TAS-Servizz taċ-ċittadin
-- numru Tat-Taxxa
+- citizen service number
+- id tat-taxxa
+- identifika numru tal-biljett
+- kodiċi numerali personali
+- numru ta 'identifikazzjoni personali
+- numru ta 'identifikazzjoni tat-taxxa
+- numru ta 'identifikazzjoni uniku
+- numru ta' identità uniku
+- numru tas-servizz taċ-ċittadin
+- numru tat-taxxa
 - codice numerico personale
 - tax id
-- identificazione fiscale No
-- codice di identificazione fiscale
+- tax identification no
+- tax identification number
 - tax no #
 - tax no
-- codice fiscale
-- numero di registrazione fiscale
-- taxid #
-- taxidno #
-- taxidnumber #
+- tax number
+- tax registration number
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
-- ID Tin
-- Tin No
-- latta #
+- tin id
+- tin no
+- tin #
 - numero di identificazione univoco
 - numero di identità univoco
 - uniqueidentityno #
 
-## <a name="netherlands-citizens-service-bsn-number"></a>Numero di servizio del cittadino (BSN) (Paesi Bassi)
+## <a name="netherlands-citizens-service-bsn-number"></a>Paesi Bassi - numero di servizio cittadino (BSN)
 
 ### <a name="format"></a>Formato
 
-otto-nove cifre contenenti spazi facoltativi
+otto o nove cifre contenenti spazi facoltativi
 
 ### <a name="pattern"></a>Modello
 
@@ -11510,9 +11693,9 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_netherlands_bsn trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keyword_netherlands_bsn.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_netherlands_bsn trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_netherlands_bsn di codice.
 - Il checksum ha esito positivo.
 
 ```xml
@@ -11529,21 +11712,21 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_netherlands_eu_national_id_card"></a>Keywords_netherlands_eu_national_id_card
   
-- BSN #
-- BSN
-- burgerservicenummer
-- numero di servizio Citizen
-- numero persona
+- bsn #
+- bsn
+- hamburgerservicenummer
+- citizen service number
+- numero di persona
 - numero personale
 - codice numerico personale
-- numero relativo alla persona
-- persoonlijk Nummer
-- codice Numerieke di persoonlijke
+- numero correlato alla persona
+- persoonlijk nummer
+- persoonlijke numerieke code
 - persoonsgebonden
 - persoonsnummer
-- Sociaal-fiscaal Nummer
-- numero di social-Fiscal
-- Sofi
+- sociaal-fiscaal nummer
+- social-fiscal number
+- sofi
 - sofinummer
 - uniek identificatienummer
 - uniek identiteitsnummer
@@ -11551,7 +11734,7 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 - numero di identità univoco
 - uniqueidentityno #
 
-## <a name="netherlands-drivers-license-number"></a>Numero della patente di guida (Paesi Bassi)
+## <a name="netherlands-drivers-license-number"></a>Numero della patente olandese
 
 ### <a name="format"></a>Formato
 
@@ -11567,9 +11750,9 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_netherlands_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_netherlands_eu_driver's_license_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_netherlands_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_netherlands_eu_driver's_license_number` . 
     
 ```xml
       <!-- Netherlands Driver's License Number -->
@@ -11586,7 +11769,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -11594,131 +11777,131 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - driverlicenses
 - driverlicence
 - driverlicences
-- LIC del driver
-- driver driver'lics
+- driver lic
+- driver lics
 - driver license
 - driver licenses
-- patente di guida
-- licenze per i driver
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- driver Lic
-- driver driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- licenze per i conducenti
+- drivers licences
 - driver'lic
-- driver ' LiCS
-- driver ' License
-- driver ' licenses
+- driver'lics
+- driver'license
+- driver'licenses
 - driver'licence
 - driver'licences
-- LIC del driver
-- driver ' driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
-- patenti del conducente
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
-- secondola
+- driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- LIC del conducente
-- driver'lics del conducente
+- driver's lic
+- driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- patenti di guida
-- DL #
-- DLS #
+- driver's licences
+- dl #
+- dls #
 - driverlic #
 - driverlics #
 - driverlicense #
 - driverlicenses #
 - driverlicence #
 - driverlicences #
-- LIC del driver #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- licenze per i driver #
+- driver lic #
+- driver lics #
+- driver license #
+- driver licenses #
+- driver licences #
 - driverslic #
 - driverslics #
 - driverslicense #
 - driverslicenses #
 - driverslicence #
 - driverslicences #
-- driver Lic #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- licenze per i conducenti #
+- drivers lic #
+- drivers lics #
+- drivers license #
+- driver licenses #
+- drivers licence #
+- drivers licences #
 - driver'lic #
-- driver ' LiCS #
-- driver ' License #
-- driver ' licenses #
+- driver'lics #
+- driver'license #
+- driver'licenses #
 - driver'licence #
 - driver'licences #
-- LIC del driver #
-- driver ' driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- patenti del conducente #
+- driver' lic #
+- driver' lics #
+- driver' license #
+- driver' licenses #
+- driver' licence #
+- driver' licences #
 - driver'slic #
 - driver'slics #
-- secondola #
+- driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- LIC del conducente #
-- driver'lics del conducente #
-- patente di guida #
-- licenze del conducente #
-- patente di guida #
-- patenti di guida #
+- driver's lic #
+- driver's lics #
+- driver's license #
+- driver's licenses #
+- driver's licence #
+- driver's licences #
 - driving licence 
 - driving license
 - dlno #
-- driv Lic
+- driv lic
 - driv licen
-- licenza di driv
-- licenze di driv
-- licenza driv
-- licenze di driv
+- driv license
+- driv licenses
+- driv licence
+- driv licences
 - driver licen
-- driver licen
-- licei del conducente
-- Guida di Lic
-- Guida licen
-- patenti di guida
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- permesso di guida
-- DL No
+- driving permit
+- dl no
 - dlno
-- numero DL
+- dl number
 
 
-#### <a name="keywords_netherlands_eu_drivers_license_number"></a>Keywords_netherlands_eu_driver ' s_license_number
+#### <a name="keywords_netherlands_eu_drivers_license_number"></a>Keywords_netherlands_eu_driver's_license_number
 
 - permis de conduire
 - rijbewijs
 - rijbewijsnummer
 - rijbewijzen
-- Rijbewijs Nummer
+- rijbewijs nummer
 - rijbewijsnummers
 
 
-## <a name="netherlands-passport-number"></a>Numero di passaporto per i Paesi Bassi
+## <a name="netherlands-passport-number"></a>Numero di passaporto Paesi Bassi
 
 ### <a name="format"></a>Formato
 
@@ -11734,14 +11917,14 @@ non applicabile
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_netherlands_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_netherlands_eu_passport_number` viene trovata. 
-- L'espressione regolare `Regex_netherlands_eu_passport_date` trova la data nel formato dd MMM/MMM yyyy (esempio-26 Maa/MAR 2012)
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_netherlands_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_netherlands_eu_passport_number` . 
+- L'espressione regolare trova la data nel formato `Regex_netherlands_eu_passport_date` D MMM/MMM AAAA (esempio - 26 MAA/MAR 2012)
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_netherlands_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_netherlands_eu_passport_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_netherlands_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_netherlands_eu_passport_number` . 
     
 ```xml
       <!-- Netherlands Passport Number -->
@@ -11768,12 +11951,12 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passaporto #
-- passaporto #
+- passport #
+- passport #
 - passportid
-- passaporti
+- passports
 - passportno
-- Passport No
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -11781,18 +11964,18 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_netherlands_eu_passport_number"></a>Keywords_netherlands_eu_passport_number
 
-- PASPOORT Nummer
+- paspoort nummer
 - paspoortnummers
 - paspoortnummer
-- PASPOORT Nr
+- paspoort nr
 
-## <a name="netherlands-tax-identification-number"></a>Numero di identificazione fiscale per i Paesi Bassi
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="netherlands-tax-identification-number"></a>Numero di identificazione fiscale Paesi Bassi
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -11808,11 +11991,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_netherlands_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_netherlands_eu_tax_file_number` . 
+- Viene trovata una parola  `Keywords_netherlands_eu_tax_file_number` chiave da. 
     
-Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni riservate se, entro 300 caratteri:
+Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - La funzione  `Func_netherlands_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -11832,64 +12015,64 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 
 #### <a name="keywords_netherlands_eu_tax_file_number"></a>Keywords_netherlands_eu_tax_file_number
 
-- BTW nummer
-- identificazione fiscale di Hollânske
-- numero ID Impuesto di Hulandes
-- identificazione Impuesto di Hulandes
-- identificatienummer che dura
-- identificatienummer van delasting
-- numero di identificazione di Impuesto
-- numero Impuesto
-- l'ID di Nummer del Nederlands
-- Nederlands identificatie di recente
-- Nederlands identificatienummer di recente
-- Nederlands belastingnummer
-- Nederlandse che durerà identificatie
-- identificazione fiscale per i Paesi Bassi
-- identificazione fiscale per i Paesi Bassi
-- Tin olandesi
-- stagno degli olandesi
+- btw nummer
+- hollânske tax identification
+- hulandes impuesto id number
+- hulandes impuesto identification
+- identificatienummer belasting
+- identificatienummer van belasting
+- impuesto identification number
+- impuesto number
+- nederland belasting id nummer
+- nederland belasting identificatie
+- nederland belasting identificatienummer
+- nederland belastingnummer
+- nederlande belasting identificatie
+- identificazione fiscale paesi Bassi
+- Identificazione fiscale di Netherland
+- netherlands tin
+- stagno di Netherland
 - tax id
-- identificazione fiscale No
-- codice di identificazione fiscale
-- identificazione fiscale tal
+- tax identification no
+- tax identification number
+- tax identification tal
 - tax no #
 - tax no
-- codice fiscale
-- numero di registrazione fiscale
-- tal fiscale
-- taxid #
-- taxidno #
-- taxidnumber #
+- tax number
+- tax registration number
+- tax tal
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
-- ID Tin
-- Tin No
-- latta #
+- tin id
+- tin no
+- tin #
 
 
-## <a name="netherlands-value-added-tax-number"></a>Paesi Bassi-numero di imposta sul valore aggiunto
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="netherlands-value-added-tax-number"></a>Numero di imposta sul valore aggiunto dei Paesi Bassi
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
-14 caratteri alfanumerici
+Motivo alfanumerico a 14 caratteri
 
 ### <a name="pattern"></a>Modello
 
-motivo alfanumerico di 14 caratteri:
+Motivo alfanumerico di 14 caratteri:
 
 - N o n
 - L o l
-- spazio facoltativo, punto o segno meno
+- spazio facoltativo, punto o trattino
 - nove cifre
-- spazio facoltativo, punto o segno meno
+- spazio facoltativo, punto o trattino
 - B o b
 - due cifre
 
@@ -11899,12 +12082,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_netherlands_value_added_tax_number trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keywords_netherlands_value_added_tax_number.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_netherlands_value_added_tax_number trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keywords_netherlands_value_added_tax_number di codice.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_netherlands_value_added_tax_number trova contenuto corrispondente al modello.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_netherlands_value_added_tax_number trova contenuto che corrisponde al modello.
 
 ```xml
       <!-- Netherlands Value Added Tax Number -->
@@ -11924,28 +12107,28 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 #### <a name="keyword_netherlands_value_added_tax_number"></a>Keyword_netherlands_value_added_tax_number
 
 - numero di partita IVA
-- IVA No
-- IVA #
-- wearde tafoege Tax Geta
-- BTW nûmer
-- BTW-nummer
+- vat no
+- vat #
+- wearde tafoege tax getal
+- btw nûmer
+- btw-nummer
 
 
-## <a name="new-zealand-bank-account-number"></a>Numero di conto corrente bancario neozelandese
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="new-zealand-bank-account-number"></a>Numero di conto corrente della Nuova Zelanda
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
-modello da 14 a 16 cifre con delimitatore facoltativo
+Formato da 14 a 16 cifre con delimitatore facoltativo
 
 ### <a name="pattern"></a>Modello
 
-modello da 14 a 16 cifre con delimitatore facoltativo:
+Formato da 14 cifre a 16 cifre con delimitatore facoltativo:
 
 - due cifre
 - un trattino o uno spazio facoltativo
@@ -11954,7 +12137,7 @@ modello da 14 a 16 cifre con delimitatore facoltativo:
 - sette cifre
 - un trattino o uno spazio facoltativo
 - da due a tre cifre
-- un trattino delle opzioni o uno spazio
+- un trattino o uno spazio delle opzioni
 
 ### <a name="checksum"></a>Checksum
 
@@ -11962,12 +12145,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_new_zealand_bank_account_number trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keywords_new_zealand_bank_account_number.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_new_zealand_bank_account_number trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keywords_new_zealand_bank_account_number da un utente.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_new_zealand_bank_account_number trova contenuto corrispondente al modello.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_new_zealand_bank_account_number trova contenuto che corrisponde al modello.
 
 ```xml
       <!-- New Zealand Bank Account Number -->
@@ -11993,21 +12176,21 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - bank_acct_nbr
 
 
-## <a name="new-zealand-drivers-license-number"></a>Numero della patente di guida neozelandese
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="new-zealand-drivers-license-number"></a>Numero della patente di guida in Nuova Zelanda
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
-motivo alfanumerico di otto caratteri
+schema alfanumerico a otto caratteri
 
 ### <a name="pattern"></a>Modello
 
-motivo alfanumerico di otto caratteri
+schema alfanumerico a otto caratteri
 
 - due lettere 
 - sei cifre
@@ -12018,12 +12201,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_newzealand_driver_license_number trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keywords_newzealand_driver_license_number.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_newzealand_driver_license_number trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keywords_newzealand_driver_license_number di codice.
 
-Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni riservate se, entro 300 caratteri:
-- La funzione Func_newzealand_driver_license_number trova contenuto corrispondente al modello.
+Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- La funzione Func_newzealand_driver_license_number trova contenuto che corrisponde al modello.
 
 ```xml
       <!-- New Zealand Driver License Number -->
@@ -12044,85 +12227,85 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 
 - driverlicence
 - driverlicences
-- LIC del driver
-- patente di guida
-- licenze per i driver
+- driver lic
+- driver licence
+- driver licences
 - driverslic
 - driverslicence
 - driverslicences
-- driver Lic
-- driver driver'lics
+- drivers lic
+- drivers lics
 - drivers licence
-- licenze per i conducenti
+- drivers licences
 - driver'lic
-- driver ' LiCS
+- driver'lics
 - driver'licence
 - driver'licences
-- LIC del driver
-- driver ' driver'lics
-- patente di guida
-- patenti del conducente
+- driver' lic
+- driver' lics
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
 - driver'slicence
 - driver'slicences
-- LIC del conducente
-- driver'lics del conducente
+- driver's lic
+- driver's lics
 - driver's licence
-- patenti di guida
+- driver's licences
 - driverlic #
 - driverlics #
 - driverlicence #
 - driverlicences #
-- LIC del driver #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
+- driver lic #
+- driver lics #
+- driver licence #
+- driver licences #
 - driverslic #
 - driverslics #
 - driverslicence #
 - driverslicences #
-- driver Lic #
-- driver driver'lics #
-- patente di guida #
-- licenze per i conducenti #
+- drivers lic #
+- drivers lics #
+- drivers licence #
+- drivers licences #
 - driver'lic #
-- driver ' LiCS #
+- driver'lics #
 - driver'licence #
 - driver'licences #
-- LIC del driver #
-- driver ' driver'lics #
-- patente di guida #
-- patenti del conducente #
+- driver' lic #
+- driver' lics #
+- driver' licence #
+- driver' licences #
 - driver'slic #
 - driver'slics #
 - driver'slicence #
 - driver'slicences #
-- LIC del conducente #
-- driver'lics del conducente #
-- patente di guida #
-- patenti di guida #
+- driver's lic #
+- driver's lics #
+- driver's licence #
+- driver's licences #
 - international driving permit
 - international driving permits
-- Associazione automobilistica NZ
-- Associazione automobilistica neozelandese
+- nz automobile association
+- new zealand automobile association
 
 
-## <a name="new-zealand-inland-revenue-number"></a>Numero di ricavo interno della Nuova Zelanda
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="new-zealand-inland-revenue-number"></a>New Zealand inland revenue number
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
-otto o nove cifre con delimitatori opzionali
+otto o nove cifre con delimitatori facoltativi
 
 ### <a name="pattern"></a>Modello
 
-otto o nove cifre con delimitatori opzionali
+otto o nove cifre con delimitatori facoltativi
 
 - due o tre cifre
 - uno spazio o un trattino facoltativo
@@ -12136,12 +12319,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_new_zealand_inland_revenue_number trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keywords_new_zealand_inland_revenue_number.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_new_zealand_inland_revenue_number trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keywords_new_zealand_inland_revenue_number da un utente.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_new_zealand_inland_revenue_number trova contenuto corrispondente al modello.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_new_zealand_inland_revenue_number trova contenuto che corrisponde al modello.
 
 ```xml
       <!-- New Zealand Inland Revenue Number -->
@@ -12160,15 +12343,15 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keyword_new_zealand_inland_revenue_number"></a>Keyword_new_zealand_inland_revenue_number
 
-- IRD No.
-- IRD No #
-- NZ IRD
-- Nuova Zelanda IRD
-- numero IRD
-- numero di ricavo interno
+- ird no.
+- ird no #
+- nz ird
+- new zealand ird
+- ird number
+- numero di ricavi interno
 
 
-## <a name="new-zealand-ministry-of-health-number"></a>Numero del Ministero della sanità neozelandese
+## <a name="new-zealand-ministry-of-health-number"></a>New Zealand ministry of health number
 
 ### <a name="format"></a>Formato
 
@@ -12176,7 +12359,7 @@ tre lettere, uno spazio (facoltativo) e quattro cifre
 
 ### <a name="pattern"></a>Modello
 
-- tre lettere (senza distinzione tra maiuscole/minuscole) eccetto ' I ' è O '
+- tre lettere (senza distinzione tra maiuscole e minuscole) ad eccezione di "I" e "O"
 - uno spazio (facoltativo) 
 - quattro cifre
 
@@ -12186,12 +12369,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_new_zealand_ministry_of_health_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_nz_terms.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_new_zealand_ministry_of_health_number restituisce contenuti che corrispondono al modello.
 - Il checksum ha esito positivo.
 
@@ -12216,22 +12399,22 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - New Zealand
 - Sanità
 - trattamento
-- Numero dell'indice di integrità nazionale
-- numero sanitario
-- Nr.
+- National Health Index Number
+- nhi number
+- nhi no.
 - NHI #
-- Indice di integrità nazionale n.
-- ID dell'indice di integrità nazionale
-- Indice di integrità nazionale #
+- National Health Index No.
+- National Health Index Id
+- National Health Index #
 
-## <a name="new-zealand-social-welfare-number"></a>Numero di welfare sociale neozelandese
+## <a name="new-zealand-social-welfare-number"></a>New Zealand social assiste number
 
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -12242,9 +12425,9 @@ nove cifre
 nove cifre
 
 - tre cifre
-- un segno meno facoltativo
+- un trattino facoltativo
 - tre cifre
-- un segno meno facoltativo
+- un trattino facoltativo
 - tre cifre
 
 ### <a name="checksum"></a>Checksum
@@ -12253,12 +12436,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_newzealand_social_welfare_number trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keywords_newzealand_social_welfare_number.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_newzealand_social_welfare_number trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keywords_newzealand_social_welfare_number da un utente.
 
-Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni riservate se, entro 300 caratteri:
-- La funzione Func_newzealand_social_welfare_number trova contenuto corrispondente al modello.
+Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- La funzione Func_newzealand_social_welfare_number trova contenuto che corrisponde al modello.
 
 ```xml
       <!-- Newzealand Social Welfare Number -->
@@ -12278,14 +12461,14 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 
 #### <a name="keyword_new_zealand_social_welfare_number"></a>Keyword_new_zealand_social_welfare_number
 
-- previdenza sociale #
-- previdenza sociale #
-- previdenza sociale No.
-- numero di previdenza sociale
-- SWN #
+- social social social #
+- social social social #
+- social social no.
+- social social number
+- swn #
 
    
-## <a name="norway-identification-number"></a>Numero di identificazione norvegese
+## <a name="norway-identification-number"></a>Norvegia - numero di identificazione
 
 ### <a name="format"></a>Formato
 
@@ -12294,7 +12477,7 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 ### <a name="pattern"></a>Modello
 
 11 cifre:
-- sei cifre nel formato GGMMAA, ovvero la data di nascita 
+- sei cifre nel formato MMMMAA, ovvero la data di nascita 
 - numero individuale a tre cifre 
 - due cifre di controllo
 
@@ -12304,13 +12487,13 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_norway_id_number trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keyword_norway_id_number.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_norway_id_number trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_norway_id_number di codice.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_norway_id_numbe trova contenuto corrispondente al modello.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_norway_id_numbe trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
 ```xml
@@ -12339,7 +12522,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - Fødselsnummer
 
    
-## <a name="philippines-unified-multi-purpose-identification-number"></a>Numero di identificazione multifunzione unificato Filippine
+## <a name="philippines-unified-multi-purpose-identification-number"></a>Numero di identificazione multi-scopo unificato delle Filippine
 
 ### <a name="format"></a>Formato
 
@@ -12360,9 +12543,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare Regex_philippines_unified_id trova contenuti che corrispondono al modello.
-- Viene trovata una parola chiave da Keyword_philippines_id.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione regolare Regex_philippines_unified_id trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_philippines_id di codice.
 
 ```xml
 <!-- Philippines Unified Multi-Purpose ID number -->
@@ -12383,7 +12566,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - Carta di identità 
 - Pinag-isang Multi-Layunin ID
 
-## <a name="poland-drivers-license-number"></a>Numero della patente di guida (Polonia)
+## <a name="poland-drivers-license-number"></a>Numero della patente di guida polonia
 
 ### <a name="format"></a>Formato
 
@@ -12405,9 +12588,9 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_poland_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_poland_eu_driver's_license_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_poland_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_poland_eu_driver's_license_number` . 
     
 ```xml
       <!-- Poland Driver's License Number -->
@@ -12424,7 +12607,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -12432,126 +12615,126 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - driverlicenses
 - driverlicence
 - driverlicences
-- LIC del driver
-- driver driver'lics
+- driver lic
+- driver lics
 - driver license
 - driver licenses
-- patente di guida
-- licenze per i driver
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- driver Lic
-- driver driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- licenze per i conducenti
+- drivers licences
 - driver'lic
-- driver ' LiCS
-- driver ' License
-- driver ' licenses
+- driver'lics
+- driver'license
+- driver'licenses
 - driver'licence
 - driver'licences
-- LIC del driver
-- driver ' driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
-- patenti del conducente
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
-- secondola
+- driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- LIC del conducente
-- driver'lics del conducente
+- driver's lic
+- driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- patenti di guida
-- DL #
-- DLS #
+- driver's licences
+- dl #
+- dls #
 - driverlic #
 - driverlics #
 - driverlicense #
 - driverlicenses #
 - driverlicence #
 - driverlicences #
-- LIC del driver #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- licenze per i driver #
+- driver lic #
+- driver lics #
+- driver license #
+- driver licenses #
+- driver licences #
 - driverslic #
 - driverslics #
 - driverslicense #
 - driverslicenses #
 - driverslicence #
 - driverslicences #
-- driver Lic #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- licenze per i conducenti #
+- drivers lic #
+- drivers lics #
+- drivers license #
+- driver licenses #
+- drivers licence #
+- drivers licences #
 - driver'lic #
-- driver ' LiCS #
-- driver ' License #
-- driver ' licenses #
+- driver'lics #
+- driver'license #
+- driver'licenses #
 - driver'licence #
 - driver'licences #
-- LIC del driver #
-- driver ' driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- patenti del conducente #
+- driver' lic #
+- driver' lics #
+- driver' license #
+- driver' licenses #
+- driver' licence #
+- driver' licences #
 - driver'slic #
 - driver'slics #
-- secondola #
+- driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- LIC del conducente #
-- driver'lics del conducente #
-- patente di guida #
-- licenze del conducente #
-- patente di guida #
-- patenti di guida #
+- driver's lic #
+- driver's lics #
+- driver's license #
+- driver's licenses #
+- driver's licence #
+- driver's licences #
 - driving licence 
 - driving license
 - dlno #
-- driv Lic
+- driv lic
 - driv licen
-- licenza di driv
-- licenze di driv
-- licenza driv
-- licenze di driv
+- driv license
+- driv licenses
+- driv licence
+- driv licences
 - driver licen
-- driver licen
-- licei del conducente
-- Guida di Lic
-- Guida licen
-- patenti di guida
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- permesso di guida
-- DL No
+- driving permit
+- dl no
 - dlno
-- numero DL
+- dl number
 
 
-#### <a name="keywords_poland_eu_drivers_license_number"></a>Keywords_poland_eu_driver ' s_license_number
+#### <a name="keywords_poland_eu_drivers_license_number"></a>Keywords_poland_eu_driver's_license_number
 
 - prawo jazdy
 - prawa jazdy
 
-## <a name="poland-identity-card"></a>Carta di identità in Polonia
+## <a name="poland-identity-card"></a>Carta di identità Polonia
 
 ### <a name="format"></a>Formato
 
@@ -12559,7 +12742,7 @@ tre lettere e sei cifre
 
 ### <a name="pattern"></a>Modello
 
-tre lettere (senza distinzione tra maiuscole/minuscole) seguite da sei cifre
+tre lettere (senza distinzione tra maiuscole e minuscole) seguite da sei cifre
 
 ### <a name="checksum"></a>Checksum
 
@@ -12567,7 +12750,7 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_polish_national_id restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_polish_national_id_passport_number.
 - Il checksum ha esito positivo.
@@ -12587,12 +12770,12 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 #### <a name="keyword_poland_national_id_passport_number"></a>Keyword_poland_national_id_passport_number
 
 - Dowód osobisty
-- Numero dowodu osobistego
-- Nazwa i numeri dowodu osobistego
-- Nazwa i Nr dowodu osobistego
+- Numer dowodu osobistego
+- Nazwa i numer dowodu osobistego
+- Nazwa i nr dowodu osobistego
 - Nazwa i nr dowodu tożsamości
 - Dowód Tożsamości
-- Dow. OS.
+- dow. os.
 
    
 ## <a name="poland-national-id-pesel"></a>ID nazionale Polonia (PESEL)
@@ -12603,9 +12786,9 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 ### <a name="pattern"></a>Modello
 
-- 6 cifre che rappresentano la data di nascita nel formato AAMMGG
-- 4 cifre
-- 1 cifra di controllo
+- sei cifre che rappresentano la data di nascita nel formato AAMMMMD
+- quattro cifre
+- una cifra di controllo
 
 ### <a name="checksum"></a>Checksum
 
@@ -12613,12 +12796,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_pesel_identification_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_pesel_identification_number.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_pesel_identification_number restituisce contenuti che corrispondono al modello.
 - Il checksum ha esito positivo.
 
@@ -12639,19 +12822,19 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keyword_pesel_identification_number"></a>Keyword_pesel_identification_number
 
-- Dowód osobisty
-- dowódosobisty
-- numero Niepowtarzalny
+- dowód osobisty
+- dowódosobisty
+- niepowtarzalny numer
 - niepowtarzalnynumer
-- Nr.-PESEL
-- Nr-PESEL
-- numero identyfikacyjny
-- PESEL
-- tożsamości Narodowej
+- nr.-pesel
+- nr-pesel
+- numer identyfikacyjny
+- pesel
+- tożsamości narodowej
 
    
-## <a name="poland-passport-number"></a>Polonia-numero del passaporto
-Questa entità di tipo di informazioni riservate è inclusa nel tipo di informazioni riservate del numero di passaporto dell'Unione europea ed è disponibile come entità di tipo di informazioni riservate stand-alone.
+## <a name="poland-passport-number"></a>Numero di passaporto Polonia
+Questa entità tipo di informazioni riservate è inclusa nel tipo di informazione sensibile Numero di passaporto UE. È disponibile come entità autonoma del tipo di informazioni riservate.
 
 ### <a name="format"></a>Formato
 
@@ -12659,7 +12842,7 @@ due lettere e sette cifre
 
 ### <a name="pattern"></a>Modello
 
-Due lettere (senza distinzione tra maiuscole/minuscole) seguite da sette cifre
+Due lettere (senza distinzione tra maiuscole e minuscole) seguite da sette cifre
 
 ### <a name="checksum"></a>Checksum
 
@@ -12667,7 +12850,7 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_polish_passport_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_polish_national_id_passport_number.
 - Il checksum ha esito positivo.
@@ -12687,25 +12870,25 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 
 #### <a name="keyword_poland_national_id_passport_number"></a>Keyword_poland_national_id_passport_number
 
-- Numero Paszportu
+- Numer paszportu
 - Nr. Paszportu
 - Paszport
 
-## <a name="poland-regon-number"></a>Polonia numero REGOn
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="poland-regon-number"></a>Numero REGON Polonia
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
-numero di nove cifre o 14 cifre
+Numero a 9 o 14 cifre
 
 ### <a name="pattern"></a>Modello
 
-numero di nove cifre o 14 cifre:
+nove cifre o 14 cifre:
 
 - nove cifre o 
 - nove cifre
@@ -12718,12 +12901,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_polish_regon_number trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keywords_polish_regon_number.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_polish_regon_number trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keywords_polish_regon_number da un utente.
 
-Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni riservate se, entro 300 caratteri:
-- La funzione Func_polish_regon_number trova contenuto corrispondente al modello.
+Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- La funzione Func_polish_regon_number trova contenuto che corrisponde al modello.
 
 ```xml
       <!-- Polish REGON Number  -->
@@ -12741,29 +12924,29 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 
 #### <a name="keywords_poland_regon_number"></a>Keywords_poland_regon_number
 
-- ID REGON
+- regon id
 - numero statistico
-- ID statistico
-- statistica No
-- numero REGON
+- id statistico
+- statistico no
+- numero di rigonismo
 - regonid #
 - regonno #
-- ID società
-- CompanyID #
+- id società
+- companyid #
 - companyidno #
-- numero area
-- numero REGON
+- numer statystyczny
+- numeru regon
 - numerstatystyczny #
 - numeruregon #
 
 
-## <a name="poland-tax-identification-number"></a>Polonia-codice fiscale
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="poland-tax-identification-number"></a>Numero di identificazione fiscale polonia
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -12779,9 +12962,9 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_poland_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_poland_eu_tax_file_number` . 
+- Viene trovata una parola  `Keywords_poland_eu_tax_file_number` chiave da. 
     
   
 ```xml
@@ -12798,36 +12981,36 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_poland_eu_tax_file_number"></a>Keywords_poland_eu_tax_file_number
 
-- NIP #
-- NIP
-- numero Identyfikacji Podatkowej
+- nip #
+- nip
+- numer identyfikacji podatkowej
 - numeridentyfikacjipodatkowej #
 - tax id
-- identificazione fiscale No
-- codice di identificazione fiscale
+- tax identification no
+- tax identification number
 - tax no #
 - tax no
-- codice fiscale
-- numero di registrazione fiscale
-- taxid #
-- taxidno #
-- taxidnumber #
+- tax number
+- tax registration number
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
-- ID Tin
-- Tin No
-- latta #
-- ID partita IVA #
-- ID partita IVA
-- IVA No
+- tin id
+- tin no
+- tin #
+- partita IVA #
+- partita IVA
+- vat no
 - numero di partita IVA
 - vatid #
 - vatid
 - vatno #
    
 
-## <a name="portugal-citizen-card-number"></a>Portogallo-numero di carta Citizen
+## <a name="portugal-citizen-card-number"></a>Portogallo - numero di carta di cittadinanza
 
 ### <a name="format"></a>Formato
 
@@ -12843,9 +13026,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare Regex_portugal_citizen_card trova contenuti che corrispondono al modello.
-- Viene trovata una parola chiave da Keyword_portugal_citizen_card.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione regolare Regex_portugal_citizen_card trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_portugal_citizen_card da un utente.
 
 ```xml
 <!-- Portugal Citizen Card Number -->
@@ -12861,41 +13044,41 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 
 #### <a name="keyword_portugal_citizen_card"></a>Keyword_portugal_citizen_card
 
-- bilhete de Identidade
-- una cartão de Cidadão
-- scheda Citizen
-- numero del documento
+- bilhete de identidade
+- cartão de cidadão
+- citizen card
+- numero documento
 - documento de identificação
-- numero ID
-- identificazione no
+- id number
+- identification no
 - identification number
-- carta di identità No
+- identity card no
 - numero di carta di identità
-- carta d'identità nazionale
-- NIC
-- número bi de Portugal
-- número de identificação Civil
-- número de identificação Fiscal
+- national id card
+- nic
+- número bi de portugal
+- número de identificação civil
+- número de identificação fiscal
 - número do documento
-- numero bi Portogallo
+- portugal bi number
 
 
-## <a name="portugal-drivers-license-number"></a>Portogallo-numero della patente di guida
+## <a name="portugal-drivers-license-number"></a>Portogallo - numero della patente di guida
 
 ### <a name="format"></a>Formato
 
-due modelli: due lettere seguite da 5-8 cifre con caratteri speciali
+due motivi - due lettere seguite da 5-8 cifre con caratteri speciali
   
 ### <a name="pattern"></a>Modello
 
-Schema 1: due lettere seguite da 5/6 con caratteri speciali:
+Modello 1: due lettere seguite da 5/6 con caratteri speciali:
 - Due lettere (senza distinzione tra maiuscole e minuscole)
 - Una lineetta
 - Cinque o sei cifre
 - Uno spazio
 - Una cifra
 
-Schema 2: una lettera seguita da 6/8 cifre con caratteri speciali:
+Modello 2: una lettera seguita da 6/8 cifre con caratteri speciali:
 - Una lettera (senza distinzione tra maiuscole e minuscole)
 - Una lineetta
 - Sei o otto cifre
@@ -12909,9 +13092,9 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_portugal_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_portugal_eu_driver's_license_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_portugal_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_portugal_eu_driver's_license_number` . 
     
 ```xml
       <!-- Portugal Driver's License Number -->
@@ -12928,7 +13111,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -12936,121 +13119,121 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - driverlicenses
 - driverlicence
 - driverlicences
-- LIC del driver
-- driver driver'lics
+- driver lic
+- driver lics
 - driver license
 - driver licenses
-- patente di guida
-- licenze per i driver
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- driver Lic
-- driver driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- licenze per i conducenti
+- drivers licences
 - driver'lic
-- driver ' LiCS
-- driver ' License
-- driver ' licenses
+- driver'lics
+- driver'license
+- driver'licenses
 - driver'licence
 - driver'licences
-- LIC del driver
-- driver ' driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
-- patenti del conducente
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
-- secondola
+- driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- LIC del conducente
-- driver'lics del conducente
+- driver's lic
+- driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- patenti di guida
-- DL #
-- DLS #
+- driver's licences
+- dl #
+- dls #
 - driverlic #
 - driverlics #
 - driverlicense #
 - driverlicenses #
 - driverlicence #
 - driverlicences #
-- LIC del driver #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- licenze per i driver #
+- driver lic #
+- driver lics #
+- driver license #
+- driver licenses #
+- driver licences #
 - driverslic #
 - driverslics #
 - driverslicense #
 - driverslicenses #
 - driverslicence #
 - driverslicences #
-- driver Lic #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- licenze per i conducenti #
+- drivers lic #
+- drivers lics #
+- drivers license #
+- driver licenses #
+- drivers licence #
+- drivers licences #
 - driver'lic #
-- driver ' LiCS #
-- driver ' License #
-- driver ' licenses #
+- driver'lics #
+- driver'license #
+- driver'licenses #
 - driver'licence #
 - driver'licences #
-- LIC del driver #
-- driver ' driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- patenti del conducente #
+- driver' lic #
+- driver' lics #
+- driver' license #
+- driver' licenses #
+- driver' licence #
+- driver' licences #
 - driver'slic #
 - driver'slics #
-- secondola #
+- driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- LIC del conducente #
-- driver'lics del conducente #
-- patente di guida #
-- licenze del conducente #
-- patente di guida #
-- patenti di guida #
+- driver's lic #
+- driver's lics #
+- driver's license #
+- driver's licenses #
+- driver's licence #
+- driver's licences #
 - driving licence 
 - driving license
 - dlno #
-- driv Lic
+- driv lic
 - driv licen
-- licenza di driv
-- licenze di driv
-- licenza driv
-- licenze di driv
+- driv license
+- driv licenses
+- driv licence
+- driv licences
 - driver licen
-- driver licen
-- licei del conducente
-- Guida di Lic
-- Guida licen
-- patenti di guida
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- permesso di guida
-- DL No
+- driving permit
+- dl no
 - dlno
-- numero DL
+- dl number
 
 
-#### <a name="keywords_portugal_eu_drivers_license_number"></a>Keywords_portugal_eu_driver ' s_license_number
+#### <a name="keywords_portugal_eu_drivers_license_number"></a>Keywords_portugal_eu_driver's_license_number
 
 - carteira de motorista
 - carteira motorista
@@ -13058,12 +13241,12 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - carteira habilitação
 - número de licença
 - número licença
-- Permissão de condução
+- permissão de condução
 - permissão condução
 - Licença condução Portugal
 - carta de condução
 
-## <a name="portugal-passport-number"></a>Portogallo-numero di passaporto
+## <a name="portugal-passport-number"></a>Portogallo - numero di passaporto
 
 ### <a name="format"></a>Formato
 
@@ -13082,14 +13265,14 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_portugal_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_portugal_eu_passport_number` viene trovata. 
-- L'espressione regolare `Regex_eu_passport_date1` trova la data nel formato dd. mm. yyyy o una parola chiave from `Keywords_eu_passport_date` si trova
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_portugal_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_portugal_eu_passport_number` . 
+- L'espressione regolare trova la data nel formato `Regex_eu_passport_date1` GG.MM.AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_portugal_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_portugal_eu_passport_number` viene trovata.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_portugal_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_portugal_eu_passport_number` .
     
 ```xml
       <!-- Portugal Passport Number -->
@@ -13119,12 +13302,12 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passaporto #
-- passaporto #
+- passport #
+- passport #
 - passportid
-- passaporti
+- passports
 - passportno
-- Passport No
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -13134,22 +13317,22 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 - número do passaporte
 - passaporto portoghese
-- Passeport portoghese
+- portoghese passeport
 - passaporte portoghese
-- passaporte n º
-- Passeport n º
+- passaporte nº
+- passeport nº
 - números de passaporte
-- passaporti portoghesi
+- passport portoghese
 - número passaporte
 - números passaporte
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Data di emissione
-- Data di scadenza
+- data di emissione
+- data di scadenza
 
 
-## <a name="portugal-tax-identification-number"></a>Portogallo codice di identificazione fiscale
+## <a name="portugal-tax-identification-number"></a>Portogallo - numero di identificazione fiscale
 
 ### <a name="format"></a>Formato
 
@@ -13157,11 +13340,11 @@ nove cifre con spazi facoltativi
   
 ### <a name="pattern"></a>Modello
 
-- 3 cifre
+- tre cifre
 - uno spazio facoltativo
-- 3 cifre
+- tre cifre
 - uno spazio facoltativo
-- 3 cifre
+- tre cifre
   
 ### <a name="checksum"></a>Checksum
 
@@ -13169,11 +13352,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_portugal_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_portugal_eu_tax_file_number` . 
+- Viene trovata una parola  `Keywords_portugal_eu_tax_file_number` chiave da. 
     
-Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni riservate se, entro 300 caratteri:
+Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - La funzione  `Func_portugal_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -13193,31 +13376,31 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 
 #### <a name="keywords_portugal_eu_tax_file_number"></a>Keywords_portugal_eu_tax_file_number
 
-- CPF #
-- CPF
-- NIF #
-- NIF
-- número de identificação Fisca
+- cpf #
+- cpf
+- nif #
+- nif
+- número de identificação fisca
 - numero fiscale
 - tax id
-- identificazione fiscale No
-- codice di identificazione fiscale
+- tax identification no
+- tax identification number
 - tax no #
 - tax no
-- codice fiscale
-- numero di registrazione fiscale
-- taxid #
-- taxidno #
-- taxidnumber #
+- tax number
+- tax registration number
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
-- ID Tin
-- Tin No
-- latta #
+- tin id
+- tin no
+- tin #
 
 
-## <a name="romania-drivers-license-number"></a>Numero della patente di guida Romania
+## <a name="romania-drivers-license-number"></a>Numero della patente di guida in Romania
 
 ### <a name="format"></a>Formato
 
@@ -13226,7 +13409,7 @@ un carattere seguito da otto cifre
 ### <a name="pattern"></a>Modello
 
 un carattere seguito da otto cifre:
-- una lettera (senza distinzione tra maiuscole e minuscole) o cifra 
+- una lettera (senza distinzione tra maiuscole e minuscole) o una cifra 
 - otto cifre
     
 ### <a name="checksum"></a>Checksum
@@ -13235,9 +13418,9 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_romania_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_romania_eu_driver's_license_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_romania_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_romania_eu_driver's_license_number` . 
     
 ```xml
       <!-- Romania Driver's License Number -->
@@ -13254,7 +13437,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -13262,136 +13445,136 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - driverlicenses
 - driverlicence
 - driverlicences
-- LIC del driver
-- driver driver'lics
+- driver lic
+- driver lics
 - driver license
 - driver licenses
-- patente di guida
-- licenze per i driver
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- driver Lic
-- driver driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- licenze per i conducenti
+- drivers licences
 - driver'lic
-- driver ' LiCS
-- driver ' License
-- driver ' licenses
+- driver'lics
+- driver'license
+- driver'licenses
 - driver'licence
 - driver'licences
-- LIC del driver
-- driver ' driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
-- patenti del conducente
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
-- secondola
+- driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- LIC del conducente
-- driver'lics del conducente
+- driver's lic
+- driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- patenti di guida
-- DL #
-- DLS #
+- driver's licences
+- dl #
+- dls #
 - driverlic #
 - driverlics #
 - driverlicense #
 - driverlicenses #
 - driverlicence #
 - driverlicences #
-- LIC del driver #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- licenze per i driver #
+- driver lic #
+- driver lics #
+- driver license #
+- driver licenses #
+- driver licences #
 - driverslic #
 - driverslics #
 - driverslicense #
 - driverslicenses #
 - driverslicence #
 - driverslicences #
-- driver Lic #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- licenze per i conducenti #
+- drivers lic #
+- drivers lics #
+- drivers license #
+- driver licenses #
+- drivers licence #
+- drivers licences #
 - driver'lic #
-- driver ' LiCS #
-- driver ' License #
-- driver ' licenses #
+- driver'lics #
+- driver'license #
+- driver'licenses #
 - driver'licence #
 - driver'licences #
-- LIC del driver #
-- driver ' driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- patenti del conducente #
+- driver' lic #
+- driver' lics #
+- driver' license #
+- driver' licenses #
+- driver' licence #
+- driver' licences #
 - driver'slic #
 - driver'slics #
-- secondola #
+- driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- LIC del conducente #
-- driver'lics del conducente #
-- patente di guida #
-- licenze del conducente #
-- patente di guida #
-- patenti di guida #
+- driver's lic #
+- driver's lics #
+- driver's license #
+- driver's licenses #
+- driver's licence #
+- driver's licences #
 - driving licence 
 - driving license
 - dlno #
-- driv Lic
+- driv lic
 - driv licen
-- licenza di driv
-- licenze di driv
-- licenza driv
-- licenze di driv
+- driv license
+- driv licenses
+- driv licence
+- driv licences
 - driver licen
-- driver licen
-- licei del conducente
-- Guida di Lic
-- Guida licen
-- patenti di guida
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- permesso di guida
-- DL No
+- driving permit
+- dl no
 - dlno
-- numero DL
+- dl number
 
 
-#### <a name="keywords_romania_eu_drivers_license_number"></a>Keywords_romania_eu_driver ' s_license_number
+#### <a name="keywords_romania_eu_drivers_license_number"></a>Keywords_romania_eu_driver's_license_number
 
-- Permis de conducere
+- permis de conducere
 - permisului de conducere
 - permisului conducere
 - permisele de conducere
 - permisele conducere
-- Permis conducere
+- permis conducere
 
-## <a name="romania-personal-numeric-code-cnp"></a>Codice numerico personale Romania (CNP)
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="romania-personal-numeric-code-cnp"></a>Romania - codice numerico personale (CNP)
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -13399,10 +13582,10 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
   
 ### <a name="pattern"></a>Modello
 
-- 1 cifra da 1-9
-- 6 cifre che rappresentano la data di nascita (AAMMGG)
-- 2 cifre che possono essere 01-52 o 99
-- 4 cifre
+- una cifra da 1 a 9
+- sei cifre che rappresentano la data di nascita (AAMMMMD)
+- due cifre, che possono essere 01-52 o 99
+- quattro cifre
 
 ### <a name="checksum"></a>Checksum
 
@@ -13410,11 +13593,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_romania_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_romania_eu_national_id_card` . 
+- Viene trovata una parola  `Keywords_romania_eu_national_id_card` chiave da. 
     
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_romania_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -13434,50 +13617,50 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_romania_eu_national_id_card"></a>Keywords_romania_eu_national_id_card
 
-- CNP #
-- CNP
-- Cod identificare Personal
-- Cod numerico personale
-- Cod Unic identificare
+- cnp #
+- cnp
+- cod identificare personal
+- cod numeric personal
+- cod unic identificare
 - codnumericpersonal #
-- Nr fiscale codul.
-- identificarea fiscală Nr #
-- ID-ul taxei
-- numero assicurativo
+- codul fiscal nr.
+- identificarea fiscală nr #
+- id-ul taxei
+- numero di assicurazione
 - insurancenumber #
-- ID nazionale #
+- national id #
 - national id
 - national identification number
-- Număr identificare Personal
-- număr identitate
-- Număr personale Unic
+- număr identificare personal
+- număr identitate
+- număr personal unic
 - număridentitate #
-- număridentitate
+- număridentitate
 - numărpersonalunic #
-- numărpersonalunic
+- numărpersonalunic
 - număru de identificare fiscală
 - numărul de identificare fiscală
 - codice numerico personale
 - pin #
 - pin
-- Tax File No
+- tax file no
 - tax file number
 - tax id
-- identificazione fiscale No
-- codice di identificazione fiscale
+- tax identification no
+- tax identification number
 - tax no #
 - tax no
-- codice fiscale
-- numero di registrazione fiscale
-- taxid #
-- taxidno #
-- taxidnumber #
+- tax number
+- tax registration number
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
-- ID Tin
-- Tin No
-- latta #
+- tin id
+- tin no
+- tin #
 - numero di identificazione univoco
 - numero di identità univoco
 - uniqueidentityno #
@@ -13499,14 +13682,14 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_romania_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_romania_eu_passport_number` viene trovata. 
-- L'espressione regolare `Regex_romania_eu_passport_date` trova la data nel formato dd MMM/MMM AA (esempio-01 feb/feb 10) oppure viene trovata una parola chiave `Keywords_eu_passport_date`
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_romania_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_romania_eu_passport_number` . 
+- L'espressione regolare trova la data nel formato `Regex_romania_eu_passport_date` D MMM/MMM AA (esempio- 01 FEB/FEB 10) o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_romania_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_romania_eu_passport_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_romania_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_romania_eu_passport_number` . 
     
 ```xml
       <!-- Romania Passport Number -->
@@ -13536,12 +13719,12 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passaporto #
-- passaporto #
+- passport #
+- passport #
 - passportid
-- passaporti
+- passports
 - passportno
-- Passport No
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -13549,29 +13732,29 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_romania_eu_passport_number"></a>Keywords_romania_eu_passport_number
 
-numarul pașaportului numărul pasaportului numerele pașaportului Pașaport Nr
+numărul paşaportului numarul pasaportului numerele paşaportului Paşaport nr
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Data di emissione
-- Data di scadenza
+- data di emissione
+- data di scadenza
 
 
-## <a name="russia-passport-number-domestic"></a>Numero di passaporto russo nazionale
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="russia-passport-number-domestic"></a>Russia - numero di passaporto nazionale
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
-numero di dieci cifre
+Numero a 10 cifre
 
 ### <a name="pattern"></a>Modello
 
-numero di dieci cifre:
+Numero a 10 cifre:
 
 - due cifre
 - uno spazio o un trattino facoltativo
@@ -13585,9 +13768,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La Regex_Russian_Passport_Number_Domestic Regex trova contenuto che corrisponde al modello.
-- Viene trovata una parola chiave da Keyword_Russian_Passport_Number.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione Regex_Russian_Passport_Number_Domestic trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_Russian_Passport_Number da un utente.
 
 ```xml
       <!-- Russian Passport Number Domestic -->
@@ -13604,28 +13787,28 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 #### <a name="keyword_russia_passport_number_domestic"></a>Keyword_russia_passport_number_domestic
 
 - passport number
-- Passport No
-- passaporto #
-- ID passaporto
+- passport no
+- passport #
+- passport id
 - passportno #
 - passportnumber #
 - паспорт нет
-- ID паспорт
+- паспорт id
 - pоссийской паспорт
-- Pусский Номер паспорта
+- pусский номер паспорта
 - паспорт #
 - паспортid #
 - номер паспорта
 - номерпаспорта #
 
 
-## <a name="russia-passport-number-international"></a>Numero di passaporto russo International
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="russia-passport-number-international"></a>Russia - numero di passaporto internazionale
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -13633,7 +13816,7 @@ numero di nove cifre
 
 ### <a name="pattern"></a>Modello
 
-numero di nove cifre:
+numero a nove cifre:
 
 - due cifre
 - uno spazio o un trattino facoltativo
@@ -13645,9 +13828,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La Regex_Russian_Passport_Number_International Regex trova contenuto che corrisponde al modello.
-- Viene trovata una parola chiave da Keyword_Russian_Passport_Number.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione Regex_Russian_Passport_Number_International trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_Russian_Passport_Number da un utente.
 
 ```xml
       <!-- Russian Passport Number International -->
@@ -13664,15 +13847,15 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 #### <a name="keywords_russia_passport_number_international"></a>Keywords_russia_passport_number_international
 
 - passport number
-- Passport No
-- passaporto #
-- ID passaporto
+- passport no
+- passport #
+- passport id
 - passportno #
 - passportnumber #
 - паспорт нет
-- ID паспорт
+- паспорт id
 - pоссийской паспорт
-- Pусский Номер паспорта
+- pусский номер паспорта
 - паспорт #
 - паспортid #
 - номер паспорта
@@ -13683,11 +13866,11 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 ### <a name="format"></a>Formato
 
-dieci cifre
+10 cifre
 
 ### <a name="pattern"></a>Modello
 
-dieci cifre consecutive
+10 cifre consecutive
 
 ### <a name="checksum"></a>Checksum
 
@@ -13695,7 +13878,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_saudi_arabia_national_id restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_saudi_arabia_national_id.
 
@@ -13721,7 +13904,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - الوطنية الهوية بطاقة رقم 
 
    
-## <a name="singapore-national-registration-identity-card-nric-number"></a>Numero di carta di identità di registrazione nazionale (NRIC) (Singapore)
+## <a name="singapore-national-registration-identity-card-nric-number"></a>Numero NRIC (National Registration Identity Card) di Singapore
 
 ### <a name="format"></a>Formato
 
@@ -13730,7 +13913,7 @@ nove lettere e cifre
 ### <a name="pattern"></a>Modello
 
 - nove lettere e cifre:
-- la lettera "F", "G", "S" o "T" (senza distinzione tra maiuscole e minuscole) 
+- lettera "F", "G", "S" o "T" (senza distinzione tra maiuscole e minuscole) 
 - sette cifre 
 - una cifra di controllo alfabetica
 
@@ -13740,13 +13923,13 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare Regex_singapore_nric trova contenuti che corrispondono al modello.
-- Viene trovata una parola chiave da Keyword_singapore_nric.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione regolare Regex_singapore_nric trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_singapore_nric da un utente.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare Regex_singapore_nric trova contenuti che corrispondono al modello.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione regolare Regex_singapore_nric trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
 ```xml
@@ -13775,7 +13958,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - 身份证 
 - 身份證 
 
-## <a name="slovakia-drivers-license-number"></a>Slovacchia-numero della patente di guida
+## <a name="slovakia-drivers-license-number"></a>Slovacchia - Numero della patente di guida
 
 ### <a name="format"></a>Formato
 
@@ -13785,7 +13968,7 @@ un carattere seguito da sette cifre
 
 un carattere seguito da sette cifre
   
-- una lettera (senza distinzione tra maiuscole e minuscole) o cifra
+- una lettera (senza distinzione tra maiuscole e minuscole) o una cifra
 - sette cifre 
     
 ### <a name="checksum"></a>Checksum
@@ -13794,9 +13977,9 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_slovakia_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_slovakia_eu_driver's_license_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_slovakia_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_slovakia_eu_driver's_license_number` . 
     
 ```xml
       <!-- Slovakia Driver's License Number -->
@@ -13813,7 +13996,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -13821,145 +14004,145 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - driverlicenses
 - driverlicence
 - driverlicences
-- LIC del driver
-- driver driver'lics
+- driver lic
+- driver lics
 - driver license
 - driver licenses
-- patente di guida
-- licenze per i driver
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- driver Lic
-- driver driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- licenze per i conducenti
+- drivers licences
 - driver'lic
-- driver ' LiCS
-- driver ' License
-- driver ' licenses
+- driver'lics
+- driver'license
+- driver'licenses
 - driver'licence
 - driver'licences
-- LIC del driver
-- driver ' driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
-- patenti del conducente
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
-- secondola
+- driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- LIC del conducente
-- driver'lics del conducente
+- driver's lic
+- driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- patenti di guida
-- DL #
-- DLS #
+- driver's licences
+- dl #
+- dls #
 - driverlic #
 - driverlics #
 - driverlicense #
 - driverlicenses #
 - driverlicence #
 - driverlicences #
-- LIC del driver #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- licenze per i driver #
+- driver lic #
+- driver lics #
+- driver license #
+- driver licenses #
+- driver licences #
 - driverslic #
 - driverslics #
 - driverslicense #
 - driverslicenses #
 - driverslicence #
 - driverslicences #
-- driver Lic #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- licenze per i conducenti #
+- drivers lic #
+- drivers lics #
+- drivers license #
+- driver licenses #
+- drivers licence #
+- drivers licences #
 - driver'lic #
-- driver ' LiCS #
-- driver ' License #
-- driver ' licenses #
+- driver'lics #
+- driver'license #
+- driver'licenses #
 - driver'licence #
 - driver'licences #
-- LIC del driver #
-- driver ' driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- patenti del conducente #
+- driver' lic #
+- driver' lics #
+- driver' license #
+- driver' licenses #
+- driver' licence #
+- driver' licences #
 - driver'slic #
 - driver'slics #
-- secondola #
+- driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- LIC del conducente #
-- driver'lics del conducente #
-- patente di guida #
-- licenze del conducente #
-- patente di guida #
-- patenti di guida #
+- driver's lic #
+- driver's lics #
+- driver's license #
+- driver's licenses #
+- driver's licence #
+- driver's licences #
 - driving licence 
 - driving license
 - dlno #
-- driv Lic
+- driv lic
 - driv licen
-- licenza di driv
-- licenze di driv
-- licenza driv
-- licenze di driv
+- driv license
+- driv licenses
+- driv licence
+- driv licences
 - driver licen
-- driver licen
-- licei del conducente
-- Guida di Lic
-- Guida licen
-- patenti di guida
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- permesso di guida
-- DL No
+- driving permit
+- dl no
 - dlno
-- numero DL
+- dl number
 
 
-#### <a name="keywords_slovakia_eu_drivers_license_number"></a>Keywords_slovakia_eu_driver ' s_license_number
+#### <a name="keywords_slovakia_eu_drivers_license_number"></a>Keywords_slovakia_eu_driver's_license_number
 
 - vodičský preukaz
 - vodičské preukazy
 - vodičského preukazu
 - vodičských preukazov
 
-## <a name="slovakia-personal-number"></a>Slovacchia-numero personale
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="slovakia-personal-number"></a>Slovacchia - numero personale
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
-nove o dieci cifre che contengono una barra rovesciata facoltativa
+nove o dieci cifre contenenti barra rovesciata facoltativa
   
 ### <a name="pattern"></a>Modello
 
-- 6 cifre che rappresentano la data di nascita
+- sei cifre che rappresentano la data di nascita
 - barra facoltativa (/)
-- 3 cifre
-- 1 cifra di controllo facoltativa
+- tre cifre
+- una cifra di controllo facoltativa
   
 ### <a name="checksum"></a>Checksum
 
@@ -13967,11 +14150,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_slovakia_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_slovakia_eu_national_id_card` . 
+- Viene trovata una parola  `Keywords_slovakia_eu_national_id_card` chiave da. 
     
-Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni riservate se, entro 300 caratteri:
+Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - La funzione  `Func_slovakia_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -13994,50 +14177,50 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 
 - azonosító szám
 - numero di nascita
-- číslo Národnej identifikačnej karty
+- číslo národnej identifikačnej sky
 - číslo občianského preukazu
 - daňové číslo
-- numero ID
-- identificazione no
+- id number
+- identification no
 - identification number
-- identifikačná Karta č
+- identifikačná karta č
 - identifikačné číslo
-- carta di identità No
+- identity card no
 - numero di carta di identità
-- Národná identifikačná značka č
-- numero nazionale
+- národná identifikačná značka č
+- national number
 - nationalnumber #
-- Nemzeti személyazonosító igazolvány
+- nemzeti személyazonosító igazolvány
 - personalidnumber #
 - rč
 - rodne cislo
 - rodné číslo
 - social security number
-- SSN #
-- SSN
+- ssn #
+- ssn
 - személyi igazolvány szám
 - személyi igazolvány száma
 - személyigazolvány szám
-- Tax File No
+- tax file no
 - tax file number
 - tax id
-- identificazione fiscale No
-- codice di identificazione fiscale
+- tax identification no
+- tax identification number
 - tax no #
 - tax no
-- codice fiscale
-- numero di registrazione fiscale
-- taxid #
-- taxidno #
-- taxidnumber #
+- tax number
+- tax registration number
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
-- ID Tin
-- Tin No
-- latta #
+- tin id
+- tin no
+- tin #
 
-## <a name="slovakia-passport-number"></a>Slovacchia-numero di passaporto
+## <a name="slovakia-passport-number"></a>Numero di passaporto slovacchia
 
 ### <a name="format"></a>Formato
 
@@ -14045,7 +14228,7 @@ una cifra o una lettera seguita da sette cifre senza spazi o delimitatori
   
 ### <a name="pattern"></a>Modello
 
-una cifra o una lettera (senza distinzione tra maiuscole/minuscole) seguita da sette cifre
+una cifra o una lettera (senza distinzione tra maiuscole e minuscole) seguita da sette cifre
   
 ### <a name="checksum"></a>Checksum
 
@@ -14053,14 +14236,14 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_slovakia_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_slovakia_eu_passport_number` viene trovata. 
-- L'espressione regolare `Regex_eu_passport_date1` trova la data nel formato dd. mm. yyyy o una parola chiave from `Keywords_eu_passport_date` si trova
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_slovakia_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_slovakia_eu_passport_number` . 
+- L'espressione regolare trova la data nel formato `Regex_eu_passport_date1` GG.MM.AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_slovakia_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_slovakia_eu_passport_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_slovakia_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_slovakia_eu_passport_number` . 
     
 ```xml
       <!-- Slovakia Passport Number -->
@@ -14090,12 +14273,12 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passaporto #
-- passaporto #
+- passport #
+- passport #
 - passportid
-- passaporti
+- passports
 - passportno
-- Passport No
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -14103,16 +14286,16 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_slovakia_eu_passport_number"></a>Keywords_slovakia_eu_passport_number
 
-- číslo Pasu
+- číslo pasu
 - čísla pasov
 - pas č.
-- Passeport n °
-- n ° Passeport
+- Passeport n°
+- n° Passeport
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Data di emissione
-- Data di scadenza
+- data di emissione
+- data di scadenza
 
 
 ## <a name="slovenia-drivers-license-number"></a>Numero della patente di guida sloveno
@@ -14131,9 +14314,9 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_slovenia_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_slovenia_eu_driver's_license_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_slovenia_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_slovenia_eu_driver's_license_number` . 
     
 ```xml
       <!-- Slovenia Driver's License Number -->
@@ -14150,7 +14333,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -14158,135 +14341,135 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - driverlicenses
 - driverlicence
 - driverlicences
-- LIC del driver
-- driver driver'lics
+- driver lic
+- driver lics
 - driver license
 - driver licenses
-- patente di guida
-- licenze per i driver
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- driver Lic
-- driver driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- licenze per i conducenti
+- drivers licences
 - driver'lic
-- driver ' LiCS
-- driver ' License
-- driver ' licenses
+- driver'lics
+- driver'license
+- driver'licenses
 - driver'licence
 - driver'licences
-- LIC del driver
-- driver ' driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
-- patenti del conducente
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
-- secondola
+- driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- LIC del conducente
-- driver'lics del conducente
+- driver's lic
+- driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- patenti di guida
-- DL #
-- DLS #
+- driver's licences
+- dl #
+- dls #
 - driverlic #
 - driverlics #
 - driverlicense #
 - driverlicenses #
 - driverlicence #
 - driverlicences #
-- LIC del driver #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- licenze per i driver #
+- driver lic #
+- driver lics #
+- driver license #
+- driver licenses #
+- driver licences #
 - driverslic #
 - driverslics #
 - driverslicense #
 - driverslicenses #
 - driverslicence #
 - driverslicences #
-- driver Lic #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- licenze per i conducenti #
+- drivers lic #
+- drivers lics #
+- drivers license #
+- driver licenses #
+- drivers licence #
+- drivers licences #
 - driver'lic #
-- driver ' LiCS #
-- driver ' License #
-- driver ' licenses #
+- driver'lics #
+- driver'license #
+- driver'licenses #
 - driver'licence #
 - driver'licences #
-- LIC del driver #
-- driver ' driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- patenti del conducente #
+- driver' lic #
+- driver' lics #
+- driver' license #
+- driver' licenses #
+- driver' licence #
+- driver' licences #
 - driver'slic #
 - driver'slics #
-- secondola #
+- driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- LIC del conducente #
-- driver'lics del conducente #
-- patente di guida #
-- licenze del conducente #
-- patente di guida #
-- patenti di guida #
+- driver's lic #
+- driver's lics #
+- driver's license #
+- driver's licenses #
+- driver's licence #
+- driver's licences #
 - driving licence 
 - driving license
 - dlno #
-- driv Lic
+- driv lic
 - driv licen
-- licenza di driv
-- licenze di driv
-- licenza driv
-- licenze di driv
+- driv license
+- driv licenses
+- driv licence
+- driv licences
 - driver licen
-- driver licen
-- licei del conducente
-- Guida di Lic
-- Guida licen
-- patenti di guida
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- permesso di guida
-- DL No
+- driving permit
+- dl no
 - dlno
-- numero DL
+- dl number
 
 
-#### <a name="keywords_slovenia_eu_drivers_license_number"></a>Keywords_slovenia_eu_driver ' s_license_number
+#### <a name="keywords_slovenia_eu_drivers_license_number"></a>Keywords_slovenia_eu_driver's_license_number
 
 - vozniško dovoljenje
-- licenza di številka vozniška
+- vozniška številka licence
 - vozniških dovoljenj
 - številka vozniškega dovoljenja
 - številke vozniških dovoljenj
 
-## <a name="slovenia-unique-master-citizen-number"></a>Slovenia numero di cittadini Master Unique
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="slovenia-unique-master-citizen-number"></a>Slovenia Unique Master Citizen Number
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -14294,11 +14477,11 @@ Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
   
 ### <a name="pattern"></a>Modello
 
-13 cifre nel modello specificato:
+13 cifre nel formato specificato:
   
 - sette cifre che corrispondono alla data di nascita (DDMMLLL), dove "LLL" corrisponde alle ultime tre cifre dell'anno di nascita 
 - due cifre che corrispondono all'area di nascita "50"
-- tre cifre che corrispondono a una combinazione di genere e numero di serie per le persone nate nello stesso giorno (000-499 per il maschio e 500-999 per le femmine)
+- tre cifre che corrispondono a una combinazione di sesso e numero di serie per le persone nate nello stesso giorno (000-499 per il sesso maschile e 500-999 per la donna)
 - una cifra di controllo
     
 ### <a name="checksum"></a>Checksum
@@ -14307,11 +14490,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_slovenia_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_slovenia_eu_national_id_card` . 
+- Viene trovata una parola  `Keywords_slovenia_eu_national_id_card` chiave da. 
     
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_slovenia_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -14338,26 +14521,26 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - identification number
 - identifikacijska številka
 - carta di identità
-- ID Nacionalna
-- elenco potni di Nacionalni
+- nacionalna id
+- nacionalni potni list
 - national id
 - osebna izkaznica
-- osebni Koda
+- osebni koda
 - osebni ne
 - osebni številka
 - codice personale
 - numero personale
 - codice numerico personale
 - številka državljana
-- numero di cittadino univoco
+- numero cittadino univoco
 - numero ID univoco
 - numero di identità univoco
-- numero di cittadino Master univoco
+- unique master citizen number
 - numero di registrazione univoco
 - uniqueidentityno #
 - uniqueidentityno #
 
-## <a name="slovenia-passport-number"></a>Slovenia-numero di passaporto
+## <a name="slovenia-passport-number"></a>Numero di passaporto slovenia
 
 ### <a name="format"></a>Formato
 
@@ -14377,14 +14560,14 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_slovenia_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_slovenia_eu_passport_number` viene trovata. 
-- L'espressione regolare `Regex_eu_passport_date1` trova la data nel formato dd. mm. yyyy o una parola chiave from `Keywords_eu_passport_date` si trova
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_slovenia_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_slovenia_eu_passport_number` . 
+- L'espressione regolare trova la data nel formato `Regex_eu_passport_date1` GG.MM.AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_slovenia_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_slovenia_eu_passport_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_slovenia_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_slovenia_eu_passport_number` . 
     
 ```xml
       <!-- Slovenia Passport Number -->
@@ -14414,12 +14597,12 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passaporto #
-- passaporto #
+- passport #
+- passport #
 - passportid
-- passaporti
+- passports
 - passportno
-- Passport No
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -14428,25 +14611,25 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 #### <a name="keywords_slovenia_eu_passport_number"></a>Keywords_slovenia_eu_passport_number
 
 - številka potnega lista
-- Potek veljavnosti
-- elenco potni #
-- rojstva Datum
-- elenco potni
+- potek veljavnosti
+- potni list #
+- datum rojstva
+- potni list
 - številke potnih listov
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Data di emissione
-- Data di scadenza
+- data di emissione
+- data di scadenza
 
 
-## <a name="slovenia-tax-identification-number"></a>Slovenia-numero di identificazione fiscale
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="slovenia-tax-identification-number"></a>Numero di identificazione fiscale slovenia
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -14454,7 +14637,7 @@ otto cifre senza spazi o delimitatori
   
 ### <a name="pattern"></a>Modello
 
-- una cifra da 1-9
+- una cifra da 1 a 9
 - sei cifre
 - una cifra di controllo
   
@@ -14464,11 +14647,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_slovenia_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_slovenia_eu_tax_file_number` . 
+- Viene trovata una parola  `Keywords_slovenia_eu_tax_file_number` chiave da. 
     
-Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni riservate se, entro 300 caratteri:
+Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - La funzione  `Func_slovenia_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -14491,27 +14674,27 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 - davčna številka
 - identifikacijska številka davka
 - številka davčne datoteke
-- Tax File No
+- tax file no
 - tax file number
 - tax id
-- identificazione fiscale No
-- codice di identificazione fiscale
+- tax identification no
+- tax identification number
 - tax no #
 - tax no
-- codice fiscale
-- numero di registrazione fiscale
-- taxid #
-- taxidno #
-- taxidnumber #
+- tax number
+- tax registration number
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
-- ID Tin
-- Tin No
-- latta #
+- tin id
+- tin no
+- tin #
 
 
-## <a name="south-africa-identification-number"></a>Numero di identificazione Sud Africa
+## <a name="south-africa-identification-number"></a>South Africa identification number
 
 ### <a name="format"></a>Formato
 
@@ -14520,11 +14703,11 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 ### <a name="pattern"></a>Modello
 
 13 cifre:
-- sei cifre nel formato AAMMGG, ovvero la data di nascita 
+- sei cifre nel formato AAMMMMD, ovvero la data di nascita 
 - quattro cifre 
-- un indicatore di cittadinanza a una cifra 
+- indicatore di cittadinanza a una cifra 
 - la cifra "8" o "9" 
-- una cifra che corrisponde a una cifra di checksum
+- una cifra, che è una cifra di checksum
 
 ### <a name="checksum"></a>Checksum
 
@@ -14532,9 +14715,9 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_south_africa_identification_number trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keyword_south_africa_identification_number.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_south_africa_identification_number trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_south_africa_identification_number da un utente.
 - Il checksum ha esito positivo.
 
 ```xml
@@ -14555,7 +14738,7 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 - ID
 - Identificazione 
    
-## <a name="south-korea-resident-registration-number"></a>Numero di registrazione residente in Corea del sud
+## <a name="south-korea-resident-registration-number"></a>South Korea resident registration number
 
 ### <a name="format"></a>Formato
 
@@ -14564,11 +14747,11 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 ### <a name="pattern"></a>Modello
 
 13 cifre:
-- sei cifre nel formato AAMMGG, ovvero la data di nascita 
+- sei cifre nel formato AAMMMMD, ovvero la data di nascita 
 - un trattino 
 - una cifra determinata dal secolo e dal sesso 
-- codice regione-di-nascita a quattro cifre 
-- una cifra utilizzata per distinguere gli utenti per i quali i numeri precedenti sono identici 
+- Codice dell'area geografica di nascita a quattro cifre 
+- una cifra usata per distinguere le persone per le quali i numeri precedenti sono identici 
 - una cifra di controllo.
 
 ### <a name="checksum"></a>Checksum
@@ -14577,13 +14760,13 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_south_korea_resident_number trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keyword_south_korea_resident_number.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_south_korea_resident_number trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_south_korea_resident_number da un utente.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_south_korea_resident_number trova contenuto corrispondente al modello.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_south_korea_resident_number trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
 ```xml
@@ -14609,7 +14792,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - RRN 
 - 주민등록번호
 
-## <a name="spain-drivers-license-number"></a>Spagna-numero della patente di guida
+## <a name="spain-drivers-license-number"></a>Spagna - Numero della patente di guida
 
 ### <a name="format"></a>Formato
 
@@ -14628,12 +14811,12 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione  `Func_spain_eu_DL_and_NI_number_citizen` o `Func_spain_eu_DL_and_NI_number_foreigner` trova il contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_spain_eu_driver's_license_number` viene trovata. 
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione  `Func_spain_eu_DL_and_NI_number_citizen` o trova contenuto che corrisponde al `Func_spain_eu_DL_and_NI_number_foreigner` modello. 
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_spain_eu_driver's_license_number` . 
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione  `Func_spain_eu_DL_and_NI_number_citizen` o `Func_spain_eu_DL_and_NI_number_foreigner` trova il contenuto che corrisponde al modello. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione  `Func_spain_eu_DL_and_NI_number_citizen` o trova contenuto che corrisponde al `Func_spain_eu_DL_and_NI_number_foreigner` modello. 
     
 ```xml
       <!-- Spain Driver's License Number -->
@@ -14663,7 +14846,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -14671,142 +14854,142 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - driverlicenses
 - driverlicence
 - driverlicences
-- LIC del driver
-- driver driver'lics
+- driver lic
+- driver lics
 - driver license
 - driver licenses
-- patente di guida
-- licenze per i driver
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- driver Lic
-- driver driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- licenze per i conducenti
+- drivers licences
 - driver'lic
-- driver ' LiCS
-- driver ' License
-- driver ' licenses
+- driver'lics
+- driver'license
+- driver'licenses
 - driver'licence
 - driver'licences
-- LIC del driver
-- driver ' driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
-- patenti del conducente
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
-- secondola
+- driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- LIC del conducente
-- driver'lics del conducente
+- driver's lic
+- driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- patenti di guida
-- DL #
-- DLS #
+- driver's licences
+- dl #
+- dls #
 - driverlic #
 - driverlics #
 - driverlicense #
 - driverlicenses #
 - driverlicence #
 - driverlicences #
-- LIC del driver #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- licenze per i driver #
+- driver lic #
+- driver lics #
+- driver license #
+- driver licenses #
+- driver licences #
 - driverslic #
 - driverslics #
 - driverslicense #
 - driverslicenses #
 - driverslicence #
 - driverslicences #
-- driver Lic #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- licenze per i conducenti #
+- drivers lic #
+- drivers lics #
+- drivers license #
+- driver licenses #
+- drivers licence #
+- drivers licences #
 - driver'lic #
-- driver ' LiCS #
-- driver ' License #
-- driver ' licenses #
+- driver'lics #
+- driver'license #
+- driver'licenses #
 - driver'licence #
 - driver'licences #
-- LIC del driver #
-- driver ' driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- patenti del conducente #
+- driver' lic #
+- driver' lics #
+- driver' license #
+- driver' licenses #
+- driver' licence #
+- driver' licences #
 - driver'slic #
 - driver'slics #
-- secondola #
+- driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- LIC del conducente #
-- driver'lics del conducente #
-- patente di guida #
-- licenze del conducente #
-- patente di guida #
-- patenti di guida #
+- driver's lic #
+- driver's lics #
+- driver's license #
+- driver's licenses #
+- driver's licence #
+- driver's licences #
 - driving licence 
 - driving license
 - dlno #
-- driv Lic
+- driv lic
 - driv licen
-- licenza di driv
-- licenze di driv
-- licenza driv
-- licenze di driv
+- driv license
+- driv licenses
+- driv licence
+- driv licences
 - driver licen
-- driver licen
-- licei del conducente
-- Guida di Lic
-- Guida licen
-- patenti di guida
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- permesso di guida
-- DL No
+- driving permit
+- dl no
 - dlno
-- numero DL
+- dl number
 
 
-#### <a name="keywords_spain_eu_drivers_license_number"></a>Keywords_spain_eu_driver ' s_license_number
+#### <a name="keywords_spain_eu_drivers_license_number"></a>Keywords_spain_eu_driver's_license_number
 
-- Permiso de conducción
-- Permiso conducción
+- permiso de conducción
+- permiso conducción
 - licencia de conducir
 - licencia conducir
 - permiso conducir
-- Permiso de conducir
+- permiso de conducir
 - permisos de conducir
 - permisos conducir
 - carnet conducir
-- Carnet de conducir
+- carnet de conducir
 - licencia de manejo
-- licencia Manejo
+- licencia manejo
 
-## <a name="spain-dni"></a>DNI Spagna
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="spain-dni"></a>Spagna DNI
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -14826,12 +15009,12 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione  `Func_spain_eu_DL_and_NI_number_citizen` o `Func_spain_eu_DL_and_NI_number_foreigner` trova il contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_spain_eu_national_id_card"` . 
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione  `Func_spain_eu_DL_and_NI_number_citizen` o trova contenuto che corrisponde al `Func_spain_eu_DL_and_NI_number_foreigner` modello. 
+- Viene trovata una parola  `Keywords_spain_eu_national_id_card"` chiave da. 
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione  `Func_spain_eu_DL_and_NI_number_citizen` o `Func_spain_eu_DL_and_NI_number_foreigner` trova il contenuto che corrisponde al modello. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione  `Func_spain_eu_DL_and_NI_number_citizen` o trova contenuto che corrisponde al `Func_spain_eu_DL_and_NI_number_foreigner` modello. 
 
     
 ```xml
@@ -14858,40 +15041,40 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_spain_eu_national_id_card"></a>Keywords_spain_eu_national_id_card
 
-- Carné de Identidad
-- DNI #
-- DNI
+- carné de identidad
+- dni #
+- dni
 - dninúmero #
-- documento Nacional de Identidad
-- Identidad único
+- documento nacional de identidad
+- identidad único
 - identidadúnico #
-- numero assicurativo
+- numero di assicurazione
 - national identification number
-- identità nazionale
+- national identity
 - nationalid #
 - nationalidno #
 - nie #
 - nie
 - nienúmero #
 - número de identificación
-- número Nacional Identidad
-- numero di identificazione personale
-- identità personale No
+- número nacional identidad
+- personal identification number
+- identità personale no
 - numero di identità univoco
-- UniqueId #
+- uniqueid #
 
-## <a name="spain-passport-number"></a>Spagna-numero di passaporto
+## <a name="spain-passport-number"></a>Spagna - numero di passaporto
 
 ### <a name="format"></a>Formato
 
-combinazione di otto o nove caratteri di lettere e numeri senza spazi o delimitatori
+una combinazione di lettere e numeri di otto o nove caratteri senza spazi o delimitatori
   
 ### <a name="pattern"></a>Modello
 
-combinazione di lettere e numeri di otto o nove caratteri:
+una combinazione di lettere e numeri di otto o nove caratteri:
   
 - due cifre o lettere 
-- una cifra o una lettera (facoltativa)
+- una cifra o una lettera (facoltativo)
 - sei cifre
     
 ### <a name="checksum"></a>Checksum
@@ -14900,14 +15083,14 @@ Non applicabile
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_spain_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_spain_eu_passport_number` viene trovata. 
-- L'espressione regolare `Regex_spain_eu_passport_date` trova la data nel formato dd-mm-yyyy o una parola chiave from `Keywords_eu_passport_date` si trova
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_spain_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_spain_eu_passport_number` . 
+- L'espressione regolare trova la `Regex_spain_eu_passport_date` data nel formato GG-MM-AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_spain_eu_passport_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_passport_number` o `Keywords_spain_eu_passport_number` viene trovata.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_spain_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_spain_eu_passport_number` .
     
 ```xml
       <!-- Spain Passport Number -->
@@ -14937,12 +15120,12 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_eu_passport_number"></a>Keywords_eu_passport_number
 
-- passaporto #
-- passaporto #
+- passport #
+- passport #
 - passportid
-- passaporti
+- passports
 - passportno
-- Passport No
+- passport no
 - passportnumber
 - passport number
 - passportnumbers
@@ -14952,24 +15135,26 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 - libreta pasaporte
 - número pasaporte
-- pasaporte España
+- españa pasaporte
 - números de pasaporte
 - número de pasaporte
 - números pasaporte
-- pasaporte No
-- Passeport n °
-- n ° Passeport
-- pasaporte No.
-- pasaporte n °
-- passaporto della Spagna
+- pasaporte no
+- Passeport n°
+- n° Passeport
+- pasaporte no.
+- pasaporte n°
+- spagna passport
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
-- Data di emissione
-- Data di scadenza
+- data di emissione
+- data di scadenza
 
 
-## <a name="spain-social-security-number-ssn"></a>Spagna-codice di previdenza sociale (SSN)
+## <a name="spain-social-security-number-ssn"></a>Spagna - numero di previdenza sociale (SSN)
+
+Questa entità del tipo di informazioni riservate è inclusa nel tipo di informazioni riservate PER ID equivalente o numero di previdenza sociale dell'Unione Europea. È disponibile come entità autonoma del tipo di informazioni riservate.
 
 ### <a name="format"></a>Formato
 
@@ -14990,7 +15175,7 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_spanish_social_security_number restituisce contenuti che corrispondono al modello.
 - Il checksum ha esito positivo.
 
@@ -15007,48 +15192,48 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 
 Nessuno
 
-## <a name="spain-tax-identification-number"></a>Spagna-codice fiscale
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="spain-tax-identification-number"></a>Spagna - Numero di identificazione fiscale
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
-sette o otto cifre e una o due lettere nel modello specificato
+sette o otto cifre e una o due lettere nel formato specificato
   
 ### <a name="pattern"></a>Modello
 
-Persone fisiche spagnole con carta d'identità nazionale spagnola:
+Spagnolo natural persons with a Spain National Identity Card:
   
 - otto cifre 
-- una lettera maiuscola (con distinzione tra maiuscole e minuscole) 
+- una lettera maiuscola (maiuscole/minuscole) 
     
-Spagnoli non residenti senza una carta d'identità nazionale spagnola
+Spagnoli non residenti senza carta di identità nazionale della Spagna
   
-- una lettera maiuscola "L" (con distinzione tra maiuscole e minuscole)
+- una lettera maiuscola "L" (distinzione tra maiuscole e minuscole)
 - sette cifre
-- una lettera maiuscola (con distinzione tra maiuscole e minuscole) 
+- una lettera maiuscola (maiuscole/minuscole) 
     
-Spagnoli residenti di età inferiore ai 14 anni senza una carta d'identità nazionale spagnola:
+Spagnoli residenti di età inferiore a 14 anni senza carta di identità nazionale della Spagna:
   
-- una lettera maiuscola "K" (con distinzione tra maiuscole e minuscole)
+- una lettera maiuscola "K" (maiuscole/minuscole)
 - sette cifre 
-- una lettera maiuscola (con distinzione tra maiuscole e minuscole)
+- una lettera maiuscola (maiuscole/minuscole)
     
-Stranieri con il numero di identificazione di un forestiero
+Avari con un numero di identificazione di un avariato
   
-- una lettera maiuscola che è "X", "Y" o "Z" (con distinzione tra maiuscole e minuscole) 
+- una lettera maiuscola che è "X", "Y" o "Z" (maiuscole/minuscole) 
 - sette cifre
-- una lettera maiuscola (con distinzione tra maiuscole e minuscole) 
+- una lettera maiuscola (maiuscole/minuscole) 
     
-Stranieri senza il numero di identificazione di un forestiero
+Avari senza un numero di identificazione per gli incisi
   
-- una lettera maiuscola che è "M" (con distinzione tra maiuscole e minuscole) 
+- una lettera maiuscola che è "M" (maiuscole/minuscole) 
 - sette cifre
-- una lettera maiuscola (con distinzione tra maiuscole e minuscole) 
+- una lettera maiuscola (maiuscole/minuscole) 
     
 ### <a name="checksum"></a>Checksum
 
@@ -15056,12 +15241,12 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione  `Func_spain_eu_tax_file_number` o `Func_spain_eu_DL_and_NI_number_citizen` trova il contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_spain_eu_tax_file_number` . 
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione  `Func_spain_eu_tax_file_number` o trova contenuto che corrisponde al `Func_spain_eu_DL_and_NI_number_citizen` modello. 
+- Viene trovata una parola  `Keywords_spain_eu_tax_file_number` chiave da. 
     
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione  `Func_spain_eu_tax_file_number` o `Func_spain_eu_DL_and_NI_number_citizen` trova il contenuto che corrisponde al modello. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione  `Func_spain_eu_tax_file_number` o trova contenuto che corrisponde al `Func_spain_eu_DL_and_NI_number_citizen` modello. 
     
 ```xml
       <!-- Spain Tax Identification Number -->
@@ -15087,51 +15272,51 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_spain_eu_tax_file_number"></a>Keywords_spain_eu_tax_file_number
 
-- CIF
+- cif
 - cifid #
 - cifnúmero #
 - número de contribuyente
-- número de Identificación Fiscal
-- número de Impuesto corporativo
+- número de identificación fiscal
+- número de impuesto corporativo
 - spanishcifid #
 - spanishcifid
 - spanishcifno #
 - spanishcifno
-- Tax File No
+- tax file no
 - tax file number
 - tax id
-- identificazione fiscale No
-- codice di identificazione fiscale
+- tax identification no
+- tax identification number
 - tax no #
 - tax no
-- codice fiscale
-- numero di registrazione fiscale
-- taxid #
-- taxidno #
-- taxidnumber #
+- tax number
+- tax registration number
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
-- ID Tin
-- Tin No
-- latta #
+- tin id
+- tin no
+- tin #
 
 
-## <a name="sql-server-connection-string"></a>Stringa di connessione di SQL Server
+## <a name="sql-server-connection-string"></a>SQL Server stringa di connessione
 
 ### <a name="format"></a>Formato
 
-Stringa "ID utente", "ID utente", "UID" o "UserId" seguito dai caratteri e dalle stringhe delineati nel modello seguente.
+La stringa "User Id", "User ID", "uid" o "UserId" seguita dai caratteri e dalle stringhe delineati nel modello seguente.
 
 ### <a name="pattern"></a>Modello
 
-- stringa "ID utente", "ID utente", "UID" o "UserId"
-- qualsiasi combinazione tra 1-200 lettere, cifre, simboli, caratteri speciali o spazi in maiuscolo o minuscolo
-- la stringa "password" o "pwd", dove "pwd" non è preceduta da una lettera minuscola
-- segno di uguale (=)
-- qualsiasi carattere che non sia un segno di dollaro ($), un simbolo di percentuale (%), un simbolo maggiore di (>), il simbolo (@), le virgolette ("), il punto e virgola (;), parentesi graffa sinistra ([) o parentesi quadra sinistra ({)
-- qualsiasi combinazione di 7-128 caratteri che non sono un punto e virgola (;), barra (/) o virgolette (")
-- un punto e virgola (;) o virgolette (")
+- la stringa "User Id", "User ID", "uid" o "UserId"
+- qualsiasi combinazione di 1-200 lettere minuscole o maiuscole, cifre, simboli, caratteri speciali o spazi
+- la stringa "Password" o "pwd" dove "pwd" non è preceduta da una lettera minuscola
+- un segno di uguale (=)
+- qualsiasi carattere diverso dal simbolo del dollaro ($), dal simbolo di percentuale (%), dal simbolo di maggiore di (>), dal simbolo (@), dal segno di virgolette ("), dal punto e virgola (;), dalla parentesi graffa sinistra([) o dalla parentesi quadra aperta ({)
+- qualsiasi combinazione di 7-128 caratteri che non sia un punto e virgola (;), barra (/) o virgolette (")
+- punto e virgola (;) o virgolette (")
 
 ### <a name="checksum"></a>Checksum
 
@@ -15139,11 +15324,11 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare CEP_Regex_SQLServerConnectionString trova contenuti che corrispondono al modello.
-- **Non** viene trovata una parola chiave da CEP_GlobalFilter.
-- L'espressione regolare CEP_PasswordPlaceHolder **non** trova il contenuto corrispondente al modello.
-- L'espressione regolare CEP_CommonExampleKeywords **non** trova il contenuto corrispondente al modello.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione regolare CEP_Regex_SQLServerConnectionString trova contenuto che corrisponde al modello.
+- Non viene trovata CEP_GlobalFilter parola chiave da un utente.
+- L'espressione CEP_PasswordPlaceHolder non trova contenuto che corrisponde al modello.
+- L'espressione CEP_CommonExampleKeywords non trova contenuto che corrisponde al modello.
 
 ```sql
 <!---SQL Server Connection String>
@@ -15170,34 +15355,34 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 
 #### <a name="cep_passwordplaceholder"></a>CEP_PasswordPlaceHolder
 
-Si noti che tecnicamente questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare, non un elenco di parola chiave.
+Tecnicamente, questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare e non un elenco di parole chiave.
 
-- Password o pwd seguito da 0-2 spazi, un segno di uguale (=), 0-2 spazi e un asterisco (*)-----------------
+- Password o pwd seguito da 0-2 spazi, un segno di uguale (=), 0-2 spazi e un asterisco (*) -OR-
 - Password o pwd seguito da:
     - Segno di uguale (=)
-    - Meno di simbolo (<)
-    - Qualsiasi combinazione di 1-200 caratteri che sono lettere maiuscole o minuscole, cifre, asterisco (*), segno meno (-), sottolineatura (_) o carattere dello spazio vuoto
-    - Valore maggiore di Symbol (>)
+    - Simbolo minore di (<)
+    - Qualsiasi combinazione di 1-200 caratteri maiuscoli o minuscoli, cifre, asterisco (*), trattino (-), sottolineatura (_) o spazi vuoti
+    - Simbolo di maggiore di (>)
 
 #### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
-Si noti che tecnicamente questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare, non un elenco di parola chiave.
+Tecnicamente, questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare e non un elenco di parole chiave.
 
 - contoso
-- Fabrikam
-- Northwind
+- fabrikam
+- northwind
 - sandbox
-- OneBox
+- onebox
 - localhost
 - 127.0.0.1
 - testacs.<!--no-hyperlink-->com
-- s-int.<!--no-hyperlink-->NET
+- s-int.<!--no-hyperlink-->net
 
-## <a name="sweden-drivers-license-number"></a>Svezia-numero della patente di guida
+## <a name="sweden-drivers-license-number"></a>Svezia - numero della patente di guida
 
 ### <a name="format"></a>Formato
 
-dieci cifre contenenti un segno meno
+dieci cifre contenenti un trattino
   
 ### <a name="pattern"></a>Modello
 
@@ -15213,9 +15398,9 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare  `Regex_sweden_eu_driver's_license_number` trova contenuto che corrisponde al modello. 
-- Una parola chiave da  `Keywords_eu_driver's_license_number` o `Keywords_sweden_eu_driver's_license_number` viene trovata. 
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_sweden_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
+- Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_sweden_eu_driver's_license_number` . 
     
 ```xml
       <!-- Sweden Driver's License Number -->
@@ -15232,7 +15417,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 ### <a name="keywords"></a>Parole chiave
 
-#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver ' s_license_number
+#### <a name="keywords_eu_drivers_license_number"></a>Keywords_eu_driver's_license_number
 
 - driverlic
 - driverlics
@@ -15240,144 +15425,144 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - driverlicenses
 - driverlicence
 - driverlicences
-- LIC del driver
-- driver driver'lics
+- driver lic
+- driver lics
 - driver license
 - driver licenses
-- patente di guida
-- licenze per i driver
+- driver licence
+- driver licences
 - driverslic
 - driverslics
 - driverslicence
 - driverslicences
 - driverslicense
 - driverslicenses
-- driver Lic
-- driver driver'lics
+- drivers lic
+- drivers lics
 - drivers license
 - drivers licenses
 - drivers licence
-- licenze per i conducenti
+- drivers licences
 - driver'lic
-- driver ' LiCS
-- driver ' License
-- driver ' licenses
+- driver'lics
+- driver'license
+- driver'licenses
 - driver'licence
 - driver'licences
-- LIC del driver
-- driver ' driver'lics
-- patente di guida
-- licenze per i driver
-- patente di guida
-- patenti del conducente
+- driver' lic
+- driver' lics
+- driver' license
+- driver' licenses
+- driver' licence
+- driver' licences
 - driver'slic
 - driver'slics
-- secondola
+- driver'slicense
 - driver'slicenses
 - driver'slicence
 - driver'slicences
-- LIC del conducente
-- driver'lics del conducente
+- driver's lic
+- driver's lics
 - driver's license
 - driver's licenses
 - driver's licence
-- patenti di guida
-- DL #
-- DLS #
+- driver's licences
+- dl #
+- dls #
 - driverlic #
 - driverlics #
 - driverlicense #
 - driverlicenses #
 - driverlicence #
 - driverlicences #
-- LIC del driver #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- licenze per i driver #
+- driver lic #
+- driver lics #
+- driver license #
+- driver licenses #
+- driver licences #
 - driverslic #
 - driverslics #
 - driverslicense #
 - driverslicenses #
 - driverslicence #
 - driverslicences #
-- driver Lic #
-- driver driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- licenze per i conducenti #
+- drivers lic #
+- drivers lics #
+- drivers license #
+- driver licenses #
+- drivers licence #
+- drivers licences #
 - driver'lic #
-- driver ' LiCS #
-- driver ' License #
-- driver ' licenses #
+- driver'lics #
+- driver'license #
+- driver'licenses #
 - driver'licence #
 - driver'licences #
-- LIC del driver #
-- driver ' driver'lics #
-- patente di guida #
-- licenze per i driver #
-- patente di guida #
-- patenti del conducente #
+- driver' lic #
+- driver' lics #
+- driver' license #
+- driver' licenses #
+- driver' licence #
+- driver' licences #
 - driver'slic #
 - driver'slics #
-- secondola #
+- driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
-- LIC del conducente #
-- driver'lics del conducente #
-- patente di guida #
-- licenze del conducente #
-- patente di guida #
-- patenti di guida #
+- driver's lic #
+- driver's lics #
+- driver's license #
+- driver's licenses #
+- driver's licence #
+- driver's licences #
 - driving licence 
 - driving license
 - dlno #
-- driv Lic
+- driv lic
 - driv licen
-- licenza di driv
-- licenze di driv
-- licenza driv
-- licenze di driv
+- driv license
+- driv licenses
+- driv licence
+- driv licences
 - driver licen
-- driver licen
-- licei del conducente
-- Guida di Lic
-- Guida licen
-- patenti di guida
+- drivers licen
+- driver's licen
+- driving lic
+- driving licen
+- driving licenses
 - driving licence
 - driving licences
-- permesso di guida
-- DL No
+- driving permit
+- dl no
 - dlno
-- numero DL
+- dl number
 
 
-#### <a name="keywords_sweden_eu_drivers_license_number"></a>Keywords_sweden_eu_driver ' s_license_number
+#### <a name="keywords_sweden_eu_drivers_license_number"></a>Keywords_sweden_eu_driver's_license_number
 
 - ajokortti
-- Permis de conducere
-- numero ajokortin
-- kuljettajat Lic.
-- driver Lic.
+- permis de conducere
+- ajokortin numero
+- kuljettajat lic.
+- drivere lic.
 - körkort
 - numărul permisului de conducere
 -  שאָפער דערלויבעניש נומער
-- förare Lic.
+- förare lic.
 -  דריווערס דערלויבעניש
 - körkortsnummer
 
-## <a name="sweden-national-id"></a>Svezia-ID nazionale
+## <a name="sweden-national-id"></a>Svezia - ID nazionale
 
 ### <a name="format"></a>Formato
 
-dieci o 12 cifre e un delimitatore facoltativo
+10 o 12 cifre e un delimitatore facoltativo
 
 ### <a name="pattern"></a>Modello
 
-dieci o 12 cifre e un delimitatore facoltativo:
-- due cifre (facoltativa) 
+10 o 12 cifre e un delimitatore facoltativo:
+- due cifre (facoltativo) 
 - Sei cifre nel formato data AAMMGG 
 - delimitatore di "-" o "+" (facoltativo)
 - quattro cifre
@@ -15388,12 +15573,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione `Func_swedish_national_identifier` trova contenuto che corrisponde al modello.
-- Viene trovata una parola chiave `Keywords_swedish_national_identifier`
+- Viene trovata una parola `Keywords_swedish_national_identifier` chiave da
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione `Func_swedish_national_identifier` trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
@@ -15415,25 +15600,25 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_swedish_national_identifier"></a>Keywords_swedish_national_identifier
 
-- ID No
-- numero ID
-- ID #
-- identificazione no
+- id no
+- id number
+- id #
+- identification no
 - identification number
 - identifikationsnumret #
 - identifikationsnumret
 - identitetshandling
 - documento di identità
-- identità No
-- numero di identità
-- ID-Nummer
-- ID personale
+- identity no
+- identity number
+- id-nummer
+- id personale
 - personnummer #
 - personnummer
 - skatteidentifikationsnummer
    
-## <a name="sweden-passport-number"></a>Svezia-numero del passaporto
-Questa entità di tipo di informazioni riservate è inclusa nel tipo di informazioni riservate del numero di passaporto dell'Unione europea ed è disponibile come entità di tipo di informazioni riservate stand-alone.
+## <a name="sweden-passport-number"></a>Svezia - numero di passaporto
+Questa entità tipo di informazioni riservate è inclusa nel tipo di informazioni riservate numero di passaporto ue ed è disponibile come entità autonoma del tipo di informazioni riservate.
 
 ### <a name="format"></a>Formato
 
@@ -15449,11 +15634,11 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- l'espressione regolare Regex_sweden_passport_number trova contenuti che corrispondono al modello.
-- si verifica una delle condizioni seguenti:
-    - viene trovata una parola chiave da Keyword_passport.
-    - viene trovata una parola chiave da Keyword_sweden_passport.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione regolare Regex_sweden_passport_number trova contenuto che corrisponde al modello.
+- è vera una delle condizioni seguenti:
+    - viene trovata una parola Keyword_passport da un utente.
+    - Viene trovata una parola Keyword_sweden_passport da un utente.
 
 ```xml
 <!-- Sweden Passport Number -->
@@ -15487,7 +15672,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - Passport Number 
 - Passport No 
 - Passport# 
-- Passaporto # 
+- Passport # 
 - PassportID 
 - Passportno 
 - passportnumber 
@@ -15503,28 +15688,21 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - PasseportNon 
 - Passeportn ° 
 
-
-## <a name="sweden-tax-identification-number"></a>Svezia-codice fiscale
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
-- criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
-- governance delle informazioni
-- gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+## <a name="sweden-social-security-number-or-equivalent-identification"></a>Svezia - numero di previdenza sociale o identificazione equivalente
+Questa entità del tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate PER ID equivalente o numero di previdenza sociale dell'Unione Europea.
 
 ### <a name="format"></a>Formato
 
-dieci cifre e un simbolo nel modello specificato
+12 cifre senza spazi e delimitatori
   
 ### <a name="pattern"></a>Modello
 
-dieci cifre e un simbolo:
+12 cifre:
   
-- sei cifre che corrispondono alla data di nascita (AAMMGG) 
-- un segno di addizione o segno meno
-- tre cifre che rendono il numero di identificazione univoco dove: 
-  - per i numeri emessi prima del 1990, la settima e la terza cifra identificano la Contea di nascita o gli stranieri nati
-  - la cifra nella nona posizione indica il sesso per il maschio o per la femmina.
+- otto cifre che corrispondono alla data di nascita (AAAAMMMMDD) 
+- tre cifre che corrispondono a un numero di serie dove: 
+  - L'ultima cifra nel numero di serie indica il sesso in base all'assegnazione di un numero dispari per il maschile e un numero pari per la donna
+  - Prima del 1990, l'assegnazione di un numero di serie corrispondeva alla provincia in cui è stato portatore del numero. Oppure( se sono nate prima del 1947) in cui erano residenti, in base alle registrazioni fiscali, il 1 gennaio 1947, con un codice speciale (in genere 9 come la settima cifra) per l'evasore.
 - una cifra di controllo
     
 ### <a name="checksum"></a>Checksum
@@ -15533,11 +15711,78 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione  `Func_sweden_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_sweden_eu_tax_file_number` . 
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+- La funzione  `Func_sweden_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola  `Keywords_sweden_eu_ssn_or_equivalent` chiave da. 
     
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+- La funzione  `Func_sweden_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
+    
+```xml
+ <!-- EU SSN or Equivalent Number -->
+<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
+        <Pattern confidenceLevel="85">
+          <IdMatch idRef="Func_sweden_eu_ssn_or_equivalent" />
+          <Match idRef="Keywords_sweden_eu_ssn_or_equivalent" />
+        </Pattern> 
+       <Pattern confidenceLevel="75">
+          <IdMatch idRef="Func_sweden_eu_ssn_or_equivalent" />
+        </Pattern>      
+</Entity>
+```
+
+### <a name="keywords"></a>Parole chiave
+
+#### <a name="keywords_sweden_eu_ssn_or_equivalent"></a>Keywords_sweden_eu_ssn_or_equivalent
+
+- personal id number
+- identification number
+- id personale no
+- identity no
+- identification no
+- identificazione personale no
+- personnummer id
+- personligt id-nummer
+- unikt id-nummer
+- personnummer
+- identifikationsnumret
+- personnummer #
+- identifikationsnumret #
+
+## <a name="sweden-tax-identification-number"></a>Svezia - Numero di identificazione fiscale
+Questo tipo di informazioni riservate è disponibile solo in:
+- criteri di prevenzione della perdita di dati
+- criteri di conformità delle comunicazioni
+- governance delle informazioni
+- gestione dei record
+- Microsoft Cloud App Security
+
+### <a name="format"></a>Formato
+
+10 cifre e un simbolo nel formato specificato
+  
+### <a name="pattern"></a>Modello
+
+10 cifre e un simbolo:
+  
+- sei cifre che corrispondono alla data di nascita (AAMMMMD) 
+- segno più o meno
+- tre cifre che rendono univoco il numero di identificazione dove: 
+  - per i numeri emessi prima del 1990, la settima e l'ottava cifra identificano la provincia di nascita o di persone di origine esterna
+  - la cifra nella nona posizione indica il sesso per dispari per il maschile o anche per la donna
+- una cifra di controllo
+    
+### <a name="checksum"></a>Checksum
+
+Sì
+  
+### <a name="definition"></a>Definizione
+
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione  `Func_sweden_eu_tax_file_number` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola  `Keywords_sweden_eu_tax_file_number` chiave da. 
+    
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_sweden_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -15561,29 +15806,29 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_sweden_eu_tax_file_number"></a>Keywords_sweden_eu_tax_file_number
 
-- numero ID personale
+- personal id number
 - personnummer
-- ID pattinat Nummer
-- Identifikation skatet
+- skatt id nummer
+- skatt identifikation
 - skattebetalarens identifikationsnummer
-- Tin Sverige
-- file fiscale
+- sverige tin
+- tax file
 - tax id
-- identificazione fiscale No
-- codice di identificazione fiscale
+- tax identification no
+- tax identification number
 - tax no #
 - tax no
-- codice fiscale
-- numero di registrazione fiscale
-- taxid #
-- taxidno #
-- taxidnumber #
+- tax number
+- tax registration number
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
-- ID Tin
-- Tin No
-- latta #
+- tin id
+- tin no
+- tin #
 
 
 ## <a name="swift-code"></a>Codice SWIFT
@@ -15595,11 +15840,11 @@ quattro lettere seguite da 5-31 lettere o cifre
 ### <a name="pattern"></a>Modello
 
 quattro lettere seguite da 5-31 lettere o cifre:
-- codice bancario di quattro lettere (senza distinzione tra maiuscole e minuscole) 
+- Codice bancario di quattro lettere (senza distinzione tra maiuscole e minuscole) 
 - uno spazio facoltativo 
 - 4-28 lettere o cifre (BBAN) 
 - uno spazio facoltativo 
-- una o tre lettere o cifre (parte restante del BBAN)
+- da una a tre lettere o cifre (resto del BBAN)
 
 ### <a name="checksum"></a>Checksum
 
@@ -15607,7 +15852,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_swift restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_swift.
 
@@ -15627,7 +15872,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - international organization for standardization 9362
 - iso 9362
 - iso9362
-- Swift #
+- swift #
 - swiftcode
 - swiftnumber
 - swiftroutingnumber
@@ -15637,7 +15882,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - bic number
 - bic code
 - bic #
-- BIC #
+- bic #
 - bank identifier code
 - Organisation internationale de normalisation 9362
 - rapide #
@@ -15651,31 +15896,31 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - SWIFT番号
 - BIC番号
 - BICコード
-- コード SWIFT
-- 番号 SWIFT
-- BIC 番号
-- BIC コード
+- SWIFT コード
+- SWIFT 番号
+- Bic 番号
+- Bic コード
 - 金融機関識別コード
 - 金融機関コード
 - 銀行コード
 
-## <a name="switzerland-ssn-ahv-number"></a>Svizzera SSN numero dell'AVS
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="switzerland-ssn-ahv-number"></a>Svizzera - Numero AVSN SSN
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
-numero di 13 cifre
+Numero a 13 cifre
 
 ### <a name="pattern"></a>Modello
 
-numero 13 cifre:
+Numero a 13 cifre:
 
-- tre cifre-756
+- tre cifre - 756
 - un punto facoltativo
 - quattro cifre
 - un punto facoltativo
@@ -15689,12 +15934,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_swiss_social_security_number_ahv trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keywords_swiss_social_security_number_ahv.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_swiss_social_security_number_ahv trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keywords_swiss_social_security_number_ahv da un utente.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_swiss_social_security_number_ahv trova contenuto corrispondente al modello.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_swiss_social_security_number_ahv trova contenuto che corrisponde al modello.
 
 ```xml
       <!-- Swiss SSN AHV Number -->
@@ -15713,35 +15958,35 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keyword_swiss_ssn_ahv_number"></a>Keyword_swiss_ssn_AHV_number
 
-- AVS
-- SSN
-- PID
-- numero assicurativo
+- avv
+- ssn
+- pid
+- numero di assicurazione
 - personalidno #
 - social security number
-- numero ID personale
-- identificazione personale No.
+- personal id number
+- personal identification no.
 - insuranceno #
 - uniqueidno #
-- identificazione univoca No.
-- numero AVS
-- identità personale no Versicherungsnummer
+- unique identification no.
+- avs number
+- identità personale no versicherungsnummer
 - identifikationsnummer
-- einzigartige Identität nicht
+- einzigartige identität nicht
 - sozialversicherungsnummer
-- ID personnelle di identificazione
+- id personale di identificazione
 - numéro de sécurité sociale
 
    
-## <a name="taiwan-national-identification-number"></a>Numero di identificazione nazionale di Taiwan
+## <a name="taiwan-national-identification-number"></a>Taiwan national identification number
 
 ### <a name="format"></a>Formato
 
-una lettera (in lingua inglese) seguita da nove cifre
+una lettera (in inglese) seguita da nove cifre
 
 ### <a name="pattern"></a>Modello
 
-una lettera (in lingua inglese) seguita da nove cifre:
+una lettera (in inglese) seguita da nove cifre:
 - una lettera (in inglese, senza distinzione tra maiuscole e minuscole) 
 - la cifra "1" o "2" 
 - otto cifre
@@ -15752,12 +15997,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_taiwanese_national_id restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_taiwanese_national_id.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_taiwanese_national_id restituisce contenuti che corrispondono al modello.
 - Il checksum ha esito positivo.
 
@@ -15793,16 +16038,16 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - 簽名或蓋章 
 - 簽章   
    
-## <a name="taiwan-passport-number"></a>Taiwan-numero di passaporto
+## <a name="taiwan-passport-number"></a>Taiwan passport number
 
 ### <a name="format"></a>Formato
 
-- numero di passaporto biometrico: nove cifre
+- Numero di passaporto biometrico: nove cifre
 - numero di passaporto non biometrico: nove cifre
 
 ### <a name="pattern"></a>Modello
-numero di passaporto biometrico:
-- il carattere "3" 
+Numero di passaporto biometrico:
+- carattere "3" 
 - otto cifre
 
 numero di passaporto non biometrico:
@@ -15814,9 +16059,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare Regex_taiwan_passport trova contenuti che corrispondono al modello.
-- Viene trovata una parola chiave da Keyword_taiwan_passport.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione Regex_taiwan_passport trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_taiwan_passport da un utente.
 
 ```xml
 <!-- Taiwan Passport Number -->
@@ -15842,15 +16087,15 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - 中華民國護照 
 - Zhōnghuá Mínguó hùzhào
    
-## <a name="taiwan-resident-certificate-arctarc-number"></a>Numero di certificato residente taiwanese (ARC/TARC Tax)
+## <a name="taiwan-resident-certificate-arctarc-number"></a>Taiwan resident certificate (ARC/TARC) number
 
 ### <a name="format"></a>Formato
 
-dieci lettere e cifre
+10 lettere e cifre
 
 ### <a name="pattern"></a>Modello
 
-dieci lettere e cifre:
+10 lettere e cifre:
 - due lettere (senza distinzione tra maiuscole e minuscole) 
 - otto cifre
 
@@ -15860,9 +16105,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- L'espressione regolare Regex_taiwan_resident_certificate trova contenuti che corrispondono al modello.
-- Viene trovata una parola chiave da Keyword_taiwan_resident_certificate.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione Regex_taiwan_resident_certificate trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_taiwan_resident_certificate da un utente.
 
 ```xml
 <!-- Taiwan Resident Certificate (ARC/TARC) -->
@@ -15887,12 +16132,12 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - Certificato residente straniero 
 - ARC 
 - Certificato residente nell’area di Taiwan 
-- TARC Tax 
+- TARC 
 - 居留證 
 - 外僑居留證 
 - 台灣地區居留證 
 
-## <a name="thai-population-identification-code"></a>Codice di identificazione della popolazione tailandese
+## <a name="thai-population-identification-code"></a>Codice di identificazione della popolazione thai
 
 ### <a name="format"></a>Formato
 
@@ -15901,7 +16146,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 ### <a name="pattern"></a>Modello
 
 13 cifre:
-- la prima cifra non è pari a zero o nove 
+- la prima cifra non è zero o nove 
 - 12 cifre
 
 ### <a name="checksum"></a>Checksum
@@ -15910,12 +16155,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_Thai_Citizen_Id trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keyword_Thai_Citizen_Id.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_Thai_Citizen_Id trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_Thai_Citizen_Id di codice.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_Thai_Citizen_Id trova contenuto corrispondente al modello.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_Thai_Citizen_Id trova contenuto che corrisponde al modello.
 
 ```xml
 <!-- Thai Citizen ID -->
@@ -15958,12 +16203,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_Turkish_National_Id trova contenuto corrispondente al modello.
-- Viene trovata una parola chiave da Keyword_Turkish_National_Id.
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_Turkish_National_Id trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_Turkish_National_Id da un utente.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_Turkish_National_Id trova contenuto corrispondente al modello.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_Turkish_National_Id trova contenuto che corrisponde al modello.
 
 ```xml
 <!-- Turkish National Identity -->
@@ -15983,12 +16228,12 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 #### <a name="keyword_turkish_national_id"></a>Keyword_turkish_national_id
 
 - TC Kimlik No
-- Numarası Kimlik TC
+- TC Kimlik numarası
 - Vatandaşlık numarası
-- Vatandaşlık No
+- Vatandaşlık no
 
-## <a name="uk-drivers-license-number"></a>U.K. numero della patente di guida
-Questa entità di tipo di informazioni riservate è inclusa nel tipo di informazioni riservate del conducente dell'Unione europea ed è disponibile come entità di tipo di informazioni riservate stand-alone.
+## <a name="uk-drivers-license-number"></a>Regno Unito driver's license number
+Questa entità del tipo di informazioni sensibili è inclusa nel tipo di informazione sensibile Numero di patente di guida dell'Unione Europea. È disponibile come entità autonoma del tipo di informazioni riservate.
 
 ### <a name="format"></a>Formato
 
@@ -15997,11 +16242,11 @@ Combinazione di 18 lettere e numeri nel formato specificato
 ### <a name="pattern"></a>Modello
 
 18 lettere e cifre:
-- cinque lettere (senza distinzione tra maiuscole/minuscole) o la cifra "9" al posto di una lettera 
-- una cifra 
-- cinque cifre nel formato data MMDDY per data di nascita (il settimo carattere viene incrementato di 50 se il driver è di tipo femminile, ovvero 51 a 62 invece di 01 a 12)
-- due lettere (senza distinzione tra maiuscole/minuscole) o la cifra "9" al posto di una lettera 
-- cinque cifre
+- Cinque lettere (senza distinzione tra maiuscole e minuscole) o la cifra "9" al posto di una lettera. 
+- Una cifra.
+- Cinque cifre nel formato data MMDDY per la data di nascita. Il settimo carattere viene incrementato di 50 se il driver è di tipo femminile. per esame, da 51 a 62 invece che da 01 a 12.
+- Due lettere (senza distinzione tra maiuscole e minuscole) o la cifra "9" al posto di una lettera. 
+- Cinque cifre.
 
 ### <a name="checksum"></a>Checksum
 
@@ -16009,7 +16254,7 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_uk_drivers_license restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_uk_drivers_license.
 - Il checksum ha esito positivo.
@@ -16030,12 +16275,12 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 - DVLA 
 - light vans 
-- quadbikes 
+- quadbike 
 - motor cars 
 - 125cc 
 - sidecar 
 - tricicli 
-- moto 
+- endosezioni 
 - photocard licence 
 - learner drivers 
 - licence holder 
@@ -16044,7 +16289,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - driving licence 
 - dual control car 
    
-## <a name="uk-electoral-roll-number"></a>U.K. numero di registrazione elettorale
+## <a name="uk-electoral-roll-number"></a>Regno Unito electoral roll number
 
 ### <a name="format"></a>Formato
 
@@ -16052,7 +16297,7 @@ due lettere seguite da 1-4 cifre
 
 ### <a name="pattern"></a>Modello
 
-due lettere (senza distinzione tra maiuscole/minuscole) seguite da 1-4 numeri
+due lettere (senza distinzione tra maiuscole e minuscole) seguite da 1-4 numeri
 
 ### <a name="checksum"></a>Checksum
 
@@ -16060,7 +16305,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_uk_electoral restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_uk_electoral.
 
@@ -16086,7 +16331,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - electoral roll
 
    
-## <a name="uk-national-health-service-number"></a>U.K. numero del servizio sanitario nazionale
+## <a name="uk-national-health-service-number"></a>Regno Unito national health service number
 
 ### <a name="format"></a>Formato
 
@@ -16095,7 +16340,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 ### <a name="pattern"></a>Modello
 
 10-17 cifre:
-- tre o dieci cifre 
+- 3 o 10 cifre 
 - uno spazio 
 - tre cifre 
 - uno spazio 
@@ -16107,7 +16352,7 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_uk_nhs_number restituisce contenuti che corrispondono al modello.
 - Si verifica una delle situazioni seguenti:
     - Viene trovata una parola chiave da Keyword_uk_nhs_number.
@@ -16134,7 +16379,7 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 #### <a name="keyword_uk_nhs_number"></a>Keyword_uk_nhs_number
 
 - national health service 
-- NHS 
+- nhs 
 - health services authority 
 - health authority
 
@@ -16147,26 +16392,26 @@ Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazio
 
 #### <a name="keyword_uk_nhs_number_dob"></a>Keyword_uk_nhs_number_dob
 
-- GP 
+- Criteri di gruppo 
 - DOB 
-- D. O. B 
+- D.O.B 
 - Date of Birth 
 - Birth Date 
    
-## <a name="uk-national-insurance-number-nino"></a>U.K. numero di assicurazione nazionale (NINO)
-Questa entità di tipo di informazioni riservate è inclusa nel tipo di informazioni riservate del numero di Identificaiton nazionale dell'Unione europea ed è disponibile come entità di tipo di informazioni riservate stand-alone.
+## <a name="uk-national-insurance-number-nino"></a>Regno Unito national insurance number (NINO)
+Questa entità del tipo di informazioni riservate è inclusa nel tipo di informazioni riservate del numero di identificazione nazionale dell'Unione Europea. È disponibile come entità autonoma del tipo di informazioni riservate.
 
 ### <a name="format"></a>Formato
 
-sette caratteri o nove caratteri separati da spazi o trattini
+sette o nove caratteri separati da spazi o trattini
 
 ### <a name="pattern"></a>Modello
 
 due modelli possibili:
 
-- due lettere (NINOs valido utilizza solo alcuni caratteri in questo prefisso, che questo modello convalida; senza distinzione tra maiuscole e minuscole)
+- due lettere (i NINO validi utilizzano solo determinati caratteri in questo prefisso, convalidati da questo modello, senza distinzione tra maiuscole e minuscole)
 - sei cifre
-- ' A ',' B ',' c'o ' d'(come il prefisso, solo alcuni caratteri sono consentiti nel suffisso, senza distinzione tra maiuscole e minuscole)
+- 'A', 'B', 'C' o 'D' (come il prefisso, nel suffisso sono consentiti solo determinati caratteri, senza distinzione tra maiuscole e minuscole)
 
 OPPURE
 
@@ -16178,7 +16423,7 @@ OPPURE
 - uno spazio o un trattino
 - due cifre
 - uno spazio o un trattino
-- ' A ',' B ',' c'o ' d'
+- 'A', 'B', 'C' o 'D'
 
 ### <a name="checksum"></a>Checksum
 
@@ -16186,11 +16431,11 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_uk_nino restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_uk_nino.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_uk_nino restituisce contenuti che corrispondono al modello.
 
 ```xml
@@ -16213,7 +16458,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - national insurance number
 - national insurance contributions
 - protection act
-- Insurance
+- assicurazione
 - social security number
 - insurance application
 - medical application
@@ -16221,23 +16466,23 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - medical attention
 - social security
 - great britain
-- Numero NI
+- NI Number
 - NI No.
 - NI #
 - NI #
-- Insurance #
+- assicurazione #
 - insurancenumber
 - nationalinsurance #
 - nationalinsurancenumber
 
     
-## <a name="uk-unique-taxpayer-reference-number"></a>U.K. Numero di riferimento del contribuente univoco
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="uk-unique-taxpayer-reference-number"></a>Regno Unito Numero di riferimento del contribuente univoco
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -16254,9 +16499,9 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_uk_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola chiave from  `Keywords_uk_eu_tax_file_number` . 
+- Viene trovata una parola  `Keywords_uk_eu_tax_file_number` chiave da. 
     
 ```xml
       <!-- U.K. Unique Taxpayer Reference Number -->
@@ -16272,25 +16517,25 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keywords_uk_eu_tax_file_number"></a>Keywords_uk_eu_tax_file_number
 
-- codice fiscale
-- file fiscale
+- tax number
+- tax file
 - tax id
-- identificazione fiscale No
-- codice di identificazione fiscale
+- tax identification no
+- tax identification number
 - tax no #
 - tax no
-- numero di registrazione fiscale
-- taxid #
-- taxidno #
-- taxidnumber #
+- tax registration number
+- taxd #
+- taxdno #
+- taxdnumber #
 - taxno #
 - taxnumber #
 - taxnumber
-- ID Tin
-- Tin No
-- latta #
+- tin id
+- tin no
+- tin #
 
-## <a name="us-bank-account-number"></a>Numero di conto corrente bancario degli Stati Uniti
+## <a name="us-bank-account-number"></a>Numero di conto corrente bancario (Stati Uniti)
 
 ### <a name="format"></a>Formato
 
@@ -16306,7 +16551,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_usa_bank_account_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_usa_Bank_Account.
 
@@ -16352,7 +16597,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - Debit Acct No. 
 - Debit Account No. 
 
-## <a name="us-drivers-license-number"></a>Numero della patente di guida statunitense
+## <a name="us-drivers-license-number"></a>Numero della patente di guida negli Stati Uniti
 
 ### <a name="format"></a>Formato
 
@@ -16361,8 +16606,8 @@ Varia in base allo stato
 ### <a name="pattern"></a>Modello
 
 dipende dallo stato, ad esempio New York:
-- nove cifre formattate come ddd ddd ddd corrisponderanno.
-- nove cifre come ddddddddd non corrispondono.
+- verranno utilizzate nove cifre formattate come ddd ddd ddd.
+- nove cifre come dddddddddd non corrisponderanno.
 
 ### <a name="checksum"></a>Checksum
 
@@ -16370,12 +16615,12 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_new_york_drivers_license_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_[state_name]_drivers_license_name.
-- Viene trovata una parola chiave da Keyword_us_drivers_license.
+- Viene trovata una parola Keyword_us_drivers_license da un utente.
 
-Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni riservate se, entro 300 caratteri:
+Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - La funzione Func_new_york_drivers_license_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_[state_name]_drivers_license_name.
 - Viene trovata una parola chiave da Keyword_us_drivers_license_abbreviations.
@@ -16417,8 +16662,8 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 - ID # 
 - ID number 
 - ID numbers 
-- DRIVER'LIC 
-- DRIVER'LIC # 
+- LIC 
+- LIC # 
 
 #### <a name="keyword_us_drivers_license"></a>Keyword_us_drivers_license
 
@@ -16439,16 +16684,16 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 - Drivers License 
 - Drivers Licenses 
 - Driver'Lic 
-- Driver ' LiCS 
-- Driver ' License 
-- Driver ' licenses 
+- Driver'Lics 
+- Driver'License 
+- Driver'Licenses 
 - Driver'Lic 
 - Driver' Lics 
 - Driver' License 
 - Driver' Licenses
 - Driver'sLic 
 - Driver'sLics 
-- Secondola 
+- Driver'sLicense 
 - Driver'sLicenses 
 - Driver's Lic 
 - Driver's Lics 
@@ -16478,16 +16723,16 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 - Drivers License# 
 - Drivers Licenses# 
 - Driver'Lic # 
-- Driver ' LiCS # 
-- Driver ' License # 
-- Driver ' licenses # 
+- Driver'Lics # 
+- Driver'License # 
+- Driver'Licenses # 
 - Driver' Lic# 
 - Driver' Lics# 
 - Driver' License# 
 - Driver' Licenses# 
 - Driver'sLic # 
 - Driver'sLics # 
-- Secondola # 
+- Driver'sLicense # 
 - Driver'sLicenses # 
 - Driver's Lic# 
 - Driver's Lics# 
@@ -16499,32 +16744,32 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 - identification cards# 
 
 
-#### <a name="keyword_state_name_drivers_license_name"></a>Keyword_ [state_name] _drivers_license_name
+#### <a name="keyword_state_name_drivers_license_name"></a>Keyword_[state_name]_drivers_license_name
 
-- abbreviazione dello stato (ad esempio, "NY") 
+- abbreviazione di stato (ad esempio, "NY") 
 - nome dello stato (ad esempio, "New York")
 
-## <a name="us-individual-taxpayer-identification-number-itin"></a>Numero di identificazione individuale del contribuente statunitense (it)
+## <a name="us-individual-taxpayer-identification-number-itin"></a>CODICE ITIN (Individual Taxpayer Identification Number) degli Stati Uniti
 
 ### <a name="format"></a>Formato
 
-nove cifre che iniziano con un "9" e contengono "7" o "8" come quarta cifra, formattata facoltativamente con spazi o trattini
+nove cifre che iniziano con "9" e contengono "7" o "8" come quarta cifra, facoltativamente formattate con spazi o trattini
 
 ### <a name="pattern"></a>Modello
 
-formattato
+formattato:
 - la cifra "9" 
 - due cifre 
 - uno spazio o un trattino 
-- a "7" o "8" 
+- un "7" o "8" 
 - una cifra 
 - uno spazio o un trattino 
 - quattro cifre
 
-formattato
+non formattato:
 - la cifra "9" 
 - due cifre 
-- a "7" o "8" 
+- un "7" o "8" 
 - cinque cifre
 
 ### <a name="checksum"></a>Checksum
@@ -16533,16 +16778,16 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_formatted_itin restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_itin.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_unformatted_itin restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_itin.
 
-Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni riservate se, entro 300 caratteri:
-- La funzione Func_formatted_itin o Func_unformatted_itin trova contenuto corrispondente al modello.
+Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+- La funzione Func_formatted_itin o Func_unformatted_itin trova contenuto che corrisponde al modello.
 
 ```xml
     <!-- U.S. Individual Taxpayer Identification Number (ITIN) -->
@@ -16568,36 +16813,36 @@ Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni rise
 
 #### <a name="keyword_itin"></a>Keyword_itin
 
-- contribuente 
+- taxpayer 
 - tax id 
 - tax identification 
-- Itin 
+- itin 
 - i.t.i.n.
-- SSN 
-- latta 
+- ssn 
+- tin 
 - social security 
 - tax payer 
 - itins 
-- taxid 
+- taxd 
 - individual taxpayer 
 
 
-## <a name="us-social-security-number-ssn"></a>Codice di previdenza sociale degli Stati Uniti (SSN)
+## <a name="us-social-security-number-ssn"></a>Numero di previdenza sociale (SSN) degli Stati Uniti
 
 ### <a name="format"></a>Formato
 
-nove cifre, che possono trovarsi in un modello formattato o non formattato
+nove cifre, che possono essere formattate o non formattate
 
 > [!NOTE]
-> Se emesso prima della metà del 2011, un SSN ha una formattazione complessa in cui alcune parti del numero devono rientrare in alcuni intervalli per essere valide (ma non c'è nessun checksum).
+> Se emesso prima della metà del 2011, un SSN ha una formattazione forte in cui alcune parti del numero devono rientrare in determinati intervalli per essere valide (ma non esiste alcun checksum).
 
 ### <a name="pattern"></a>Modello
 
-quattro funzioni cercano SNSS in quattro modelli diversi:
-- Func_ssn trova SNSS con una formattazione complessa pre2011 formattata con trattini o spazi (ddd-dd-dddd o ddd dd dddd)
-- Func_unformatted_ssn trova SNSS con una formattazione complessa pre2011 che non è formattata come nove cifre consecutive (ddddddddd)
-- Func_randomized_formatted_ssn trova post-2011 SNSS formattati con trattini o spazi (ddd-dd-dddd o ddd dd dddd)
-- Func_randomized_unformatted_ssn trova post-2011 SNSS che non sono formattati come nove cifre consecutive (ddddddddd)
+Quattro funzioni ricercano i nomi SSN in quattro modelli diversi:
+- Func_ssn trova SSN con formattazione forte precedente alla 2011 formattata con trattini o spazi (ddd-dd-dddd OR ddd ddd dddd)
+- Func_unformatted_ssn trova numeri SSN con formattazione forte precedente alla versione 2011 non formattati come nove cifre consecutive (ddddddddd)
+- Func_randomized_formatted_ssn trova i codici SSN post-2011 formattati con trattini o spazi (ddd-dd-dddd OR ddd ddd dddd)
+- Func_randomized_unformatted_ssn trova i numeri SSN post-2011 non formattati come nove cifre consecutive (dddddddd)
 
 ### <a name="checksum"></a>Checksum
 
@@ -16606,15 +16851,15 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP è estremamente sicuro che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_ssn restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_ssn.
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La funzione Func_unformatted_ssn trova contenuto corrispondente al modello.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione Func_unformatted_ssn trova contenuto che corrisponde al modello.
 - Viene trovata una parola chiave da Keyword_ssn.
 
-Un criterio DLP ha poca fiducia che ha rilevato questo tipo di informazioni riservate se, entro 300 caratteri:
+Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - La funzione Func_randomized_formatted_ssn restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_ssn.
 
@@ -16651,19 +16896,19 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 55%,
 
 - Numero SSA
 - social security number
-- previdenza sociale #
-- previdenza sociale #
-- previdenza sociale No
+- social security #
+- social security #
+- social security no
 - Social Security#
 - Soc Sec
 - SSN
-- SNSS
+- SSNS
 - SSN #
 - SS #
 - SSID
    
-## <a name="us--uk-passport-number"></a>STATI UNITI/REGNO UNITO passport number
-Regno Unito numero di passaporto le informazioni riservate entità sono disponibili nel tipo di informazioni riservate del numero di passaporto dell'Unione europea e sono disponibili come entità di tipo di informazioni riservate stand-alone.
+## <a name="us--uk-passport-number"></a>Stati Uniti/Regno Unito passport number
+Regno Unito L'entità tipo di informazioni riservate numero di passaporto è disponibile nel tipo di informazione sensibile Numero di passaporto UE. È disponibile come entità autonoma del tipo di informazioni riservate.
 
 ### <a name="format"></a>Formato
 
@@ -16679,7 +16924,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_usa_uk_passport restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_passport.
 
@@ -16699,7 +16944,7 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - Passport Number 
 - Passport No 
 - Passport# 
-- Passaporto # 
+- Passport # 
 - PassportID 
 - Passportno 
 - passportnumber 
@@ -16716,12 +16961,12 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 - Passeportn ° 
 
 ## <a name="ukraine-passport-domestic"></a>Passaporto ucraino nazionale
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
@@ -16737,9 +16982,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La Regex_Ukraine_Passport_Domestic Regex trova contenuto che corrisponde al modello.
-- Viene trovata una parola chiave da Keyword_Ukraine_Passport_Domestic.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione Regex_Ukraine_Passport_Domestic trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_Ukraine_Passport_Domestic di codice.
 
 ```xml
       <!-- Ukraine Passport Domestic -->
@@ -16755,29 +17000,29 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keyword_ukraine_passport_domestic"></a>Keyword_ukraine_passport_domestic
 
-- passaporto ucraino
+- passaporto ucraina
 - passport number
-- Passport No
+- passport no
 - паспорт України
 - номер паспорта
 - персональний
 
 
-## <a name="ukraine-passport-international"></a>Ukraine Passport International
-Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
+## <a name="ukraine-passport-international"></a>Passaporto ucraino internazionale
+Questo tipo di informazioni riservate è disponibile solo in:
 - criteri di prevenzione della perdita di dati
-- criteri di conformità della comunicazione
+- criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Sicurezza delle app di Microsoft Cloud
+- Microsoft Cloud App Security
 
 ### <a name="format"></a>Formato
 
-motivo alfanumerico di otto caratteri
+schema alfanumerico a otto caratteri
 
 ### <a name="pattern"></a>Modello
 
-motivo alfanumerico di otto caratteri:
+Schema alfanumerico a otto caratteri:
 - due lettere o cifre
 - sei cifre
 
@@ -16787,9 +17032,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazioni riservate se, in prossimità di 300 caratteri:
-- La Regex_Ukraine_Passport_International Regex trova contenuto che corrisponde al modello.
-- Viene trovata una parola chiave da Keyword_Ukraine_Passport_International.
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione Regex_Ukraine_Passport_International trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_Ukraine_Passport_International di codice.
 
 ```xml
       <!-- Ukraine Passport International -->
@@ -16805,8 +17050,8 @@ Un criterio DLP ha una sicurezza media che ha rilevato questo tipo di informazio
 
 #### <a name="keyword_ukraine_passport_international"></a>Keyword_ukraine_passport_international
 
-- passaporto ucraino
+- passaporto ucraina
 - passport number
-- Passport No
+- passport no
 - паспорт України
 - номер паспорта

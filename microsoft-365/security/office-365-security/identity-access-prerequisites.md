@@ -1,6 +1,6 @@
 ---
 title: Lavoro prerequisito per l'implementazione di criteri di identità e accesso ai dispositivi - Microsoft 365 per le aziende | Microsoft Docs
-description: In questo articolo vengono descritti i prerequisiti necessari per utilizzare i criteri e le configurazioni di identità e accesso ai dispositivi.
+description: In questo articolo vengono descritti i prerequisiti che è necessario soddisfare per utilizzare i criteri e le configurazioni di identità e accesso ai dispositivi.
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: Laurawi
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: a479d1bf7fee95a7d8ba862674cd75bfd3c699c7
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: df09f72e8bb5aee78ca4b45ce2804774ee16cbf2
+ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932563"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50097117"
 ---
 # <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Lavoro prerequisito per l'implementazione dei criteri di identità e accesso ai dispositivi
 
@@ -51,7 +51,7 @@ Nella tabella seguente sono riportate informazioni dettagliate sulle caratterist
 |**Preparare il team di supporto**. Predisporre un piano per gli utenti che non riescono a portare a termine l'autenticazione a più fattori. Ciò potrebbe essere l'aggiunta a un gruppo di esclusione dei criteri o la registrazione di nuove informazioni MFA per loro. Prima di apportare una di queste modifiche sensibili alla sicurezza, devi assicurarti che l'utente effettivo eserciti la richiesta. Un passaggio efficace consiste nel richiedere ai responsabili degli utenti di offrire assistenza nel processo di approvazione.||
 |[Configurare il writeback delle password nell'AD locale](https://docs.microsoft.com/azure/active-directory/active-directory-passwords-getting-started). Il writeback delle password consente ad Azure AD di richiedere agli utenti di modificare le password locali quando viene rilevata una compromissione dell'account ad alto rischio. Puoi abilitare questa funzionalità con Azure AD Connect in uno dei due modi seguenti: abilitare il **writeback** delle password nella schermata delle funzionalità facoltative della configurazione guidata di Azure AD Connect o abilitarla tramite Windows PowerShell.|Solo cloud|
 |[Configurare la protezione con password di Azure AD.](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) La protezione delle password di Azure AD rileva e blocca le password deboli note e le loro varianti, e può anche bloccare altri elementi vulnerabili specifici delle organizzazioni. Gli elenchi predefiniti di password escluse globalmente sono applicate automaticamente a tutti gli utenti dei tenant di Azure AD. È possibile definire altre voci in un elenco di password escluse personalizzato. Quando gli utenti modificano o reimpostano le loro password, gli elenchi di password escluse sono controllati per applicare l'uso di password sicure.||
-|[Abilitare Azure Active Directory Identity Protection.](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection) Azure AD Identity Protection consente di rilevare potenziali vulnerabilità che influiscono sulle identità dell'organizzazione e di configurare un criterio di correzione automatizzato per un rischio di accesso basso, medio e elevato e un rischio utente.||
+|[Abilitare Azure Active Directory Identity Protection.](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection) Azure AD Identity Protection consente di rilevare potenziali vulnerabilità che influiscono sulle identità dell'organizzazione e di configurare un criterio di correzione automatizzato per il rischio di accesso basso, medio e elevato e per gli utenti.||
 |**Abilitare l'autenticazione** moderna [per Exchange Online](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online) e skype for Business [online.](https://social.technet.microsoft.com/wiki/contents/articles/34339.skype-for-business-online-enable-your-tenant-for-modern-authentication.aspx) L'autenticazione moderna è un prerequisito per l'utilizzo dell'autenticazione a più fattori. L'autenticazione moderna è abilitata per impostazione predefinita per i client di Office 2016 e 2019, SharePoint e OneDrive for Business.||
 |
 
@@ -61,7 +61,7 @@ In questa sezione vengono descritte le configurazioni client della piattaforma p
 
 ### <a name="windows-devices"></a>Dispositivi Windows
 
-Ti consigliamo Windows 10 (versione 2004 o successiva), poiché Azure è progettato per offrire l'esperienza SSO più fluida possibile sia per l'ambiente locale che per Azure AD. I dispositivi emessi dall'azienda o dall'istituto di istruzione devono essere configurati per l'aggiunta diretta ad Azure AD o se l'organizzazione usa l'aggiunta a un dominio AD locale, questi dispositivi devono essere configurati per la registrazione automatica e invisibile all'utente [con Azure AD.](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup)
+Consigliamo Windows 10 (versione 2004 o successiva), poiché Azure è progettato per offrire l'esperienza SSO più fluida possibile sia per l'ambiente locale che per Azure AD. I dispositivi emessi dall'azienda o dall'istituto di istruzione devono essere configurati per l'aggiunta diretta ad Azure AD o se l'organizzazione usa l'aggiunta a un dominio AD locale, questi dispositivi devono essere configurati per la registrazione automatica e invisibile all'utente [con Azure AD.](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-automatic-device-registration-setup)
 
 Per i dispositivi Windows BYOD, gli utenti possono usare **Aggiungi account aziendale o dell'istituto di istruzione.** Tieni presente che gli utenti del browser Google [](https://chrome.google.com/webstore/detail/windows-10-accounts/ppnbnpeolgkicgegkbkbjmhlideopiji?utm_source=chrome-app-launcher-info-dialog) Chrome nei dispositivi Windows 10 devono installare un'estensione per ottenere la stessa esperienza di accesso uniforme degli utenti di Microsoft Edge. Inoltre, se l'organizzazione ha dispositivi Windows 8 o 8.1 aggiunti a un dominio, puoi installare Microsoft Workplace Join per computer non Windows 10. [Scarica il pacchetto per registrare](https://www.microsoft.com/download/details.aspx?id=53554) i dispositivi con Azure AD.
 
@@ -71,7 +71,7 @@ Per i dispositivi Windows BYOD, gli utenti possono usare **Aggiungi account azie
 
 ### <a name="android-devices"></a>Dispositivi Android
 
-È consigliabile che gli utenti installino [l'app Portale](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal&hl=en) aziendale Intune e [l'app Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) prima della distribuzione dei criteri di accesso condizionale o, se necessario, durante determinati tentativi di autenticazione. Dopo l'installazione delle app, è possibile che venga richiesto agli utenti di registrarsi con Azure AD o di registrare il dispositivo con Intune. Ciò dipende dal criterio di accesso condizionale configurato.
+È consigliabile che gli utenti installino [l'app Portale](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal&hl=en) aziendale Intune e [l'app Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) prima della distribuzione dei criteri di accesso condizionale o, se necessario, durante determinati tentativi di autenticazione. Dopo l'installazione delle app, è possibile che venga richiesto agli utenti di registrarsi con Azure AD o di registrare il dispositivo con Intune. Dipende dal criterio di accesso condizionale configurato.
 
 È inoltre consigliabile che i dispositivi di proprietà dell'organizzazione siano standardizzati su OEM e versioni che supportano Android for Work o Samsung Knox per consentire agli account di posta elettronica di essere gestiti e protetti dai criteri MDM di Intune.
 
@@ -107,7 +107,7 @@ Quando viene applicato un criterio di protezione dei documenti, è consigliabile
 Per ulteriori informazioni sul supporto client in Microsoft 365, vedere gli articoli seguenti:
 
 - [Supporto app client Microsoft 365 - Accesso condizionale](../../enterprise/microsoft-365-client-support-conditional-access.md)
-- [Supporto app client Microsoft 365 - Autenticazione moderna](../../enterprise/microsoft-365-client-support-modern-authentication.md)
+- [Supporto app client Microsoft 365 - Autenticazione a più fattori](../../enterprise/microsoft-365-client-support-multi-factor-authentication.md)
 
 ## <a name="protecting-administrator-accounts"></a>Protezione degli account amministratore
 

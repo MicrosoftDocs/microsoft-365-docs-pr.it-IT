@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: f3654762bf4d4c28a82b1e93829094b9e0386a60
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 261c375aa17e4a3bc8f7d1b469d82621cf4ae45b
+ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926523"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50097129"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Criteri consigliati per la protezione della posta elettronica
 
@@ -49,7 +49,7 @@ Se Exchange Online e Outlook sono stati inclusi nell'ambito dei criteri durante 
 |Livello di protezione|Criteri|Ulteriori informazioni|
 |---|---|---|
 |**Protezione di base**|[Richiedere l'autenticazione a più fattori quando il rischio di accesso *è medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Includere Exchange Online nell'assegnazione delle app cloud|
-||[Bloccare i client che non supportano l'autenticazione moderna](identity-access-policies.md#block-clients-that-dont-support-modern-authentication)|Includere Exchange Online nell'assegnazione delle app cloud|
+||[Bloccare i client che non supportano l'autenticazione moderna](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|Includere Exchange Online nell'assegnazione delle app cloud|
 ||[Applicare i criteri di protezione dei dati app](identity-access-policies.md#apply-app-data-protection-policies)|Assicurarsi che Outlook sia incluso nell'elenco delle app. Assicurati di aggiornare i criteri per ogni piattaforma (iOS, Android, Windows)|
 ||[Richiedi app approvate e protezione APP](identity-access-policies.md#require-approved-apps-and-app-protection)|Includere Exchange Online nell'elenco delle app cloud|
 ||[Richiedere computer conformi](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Includere Exchange Online nell'elenco delle app cloud|
@@ -91,7 +91,7 @@ Di seguito sono illustrati i passaggi:
 
    **Assegnazioni** \> **Utenti e gruppi:** selezionare gli utenti e i gruppi appropriati da includere ed escludere.
 
-   **Assegnazioni** \> **App o azioni cloud** \> **App cloud** \> **Includi** \> **Selezionare le app**: Selezionare **Office 365 Exchange Online**
+   **Assegnazioni** \> **App o azioni cloud** \> **App cloud** \> **Includi** \> **Select apps**: Select **Office 365 Exchange Online**
 
    **Controlli di accesso** \> **Sessione:** selezionare **Usa restrizioni applicate dall'app**
 
@@ -99,7 +99,7 @@ Di seguito sono illustrati i passaggi:
 
 Per garantire che gli utenti di dispositivi iOS e Android possano accedere solo ai contenuti aziendali o dell'istituto di istruzione tramite Outlook per iOS e Android, è necessario un criterio di accesso condizionale destinato a questi potenziali utenti.
 
-Vedere la procedura per configurare questo criterio in [Gestire l'accesso alla collaborazione di messaggistica tramite Outlook per iOS e Android.]( https://docs.microsoft.com/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access)
+Vedere la procedura per configurare questo criterio in [Gestire l'accesso di collaborazione alla messaggistica tramite Outlook per iOS e Android.]( https://docs.microsoft.com/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access)
 
 ## <a name="set-up-message-encryption"></a>Configurare la crittografia dei messaggi
 

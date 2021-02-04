@@ -1,5 +1,5 @@
 ---
-title: 'Topic experiences individuazione e curation (anteprima) '
+title: "Individuazione e cura dell'argomento esperienze di argomento (anteprima) "
 description: Panoramica del modo in cui vengono individuati gli argomenti.
 ms.author: efrene
 author: efrene
@@ -13,47 +13,63 @@ ms.collection:
 - m365initiative-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 08860b32b6809f489a9c108dcfaed3f61fb2e306
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: b9f4d0e33cb7a74b921681709e3ef68780dd76c4
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029639"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094844"
 ---
-# <a name="topic-experiences-discovery-and-curation-preview"></a>Argomento Experience Discovery and curation (Preview)
+# <a name="topic-discovery-and-curation-preview"></a>Individuazione e cura degli argomenti (anteprima)
 
 > [!Note] 
-> Il contenuto di questo articolo è relativo all'anteprima privata di Project Cortex. [Altre informazioni su Project Cortex](https://aka.ms/projectcortex).
+> Il contenuto di questo articolo è per Project Cortex Private Preview. [Altre informazioni su Project Cortex](https://aka.ms/projectcortex).
 
-L'argomento experiences converte le informazioni sulla conoscenza nell'ambiente Microsoft 365. Tutte le letture sono state verificate attraverso documenti e pagine del sito in cui sono presenti termini che non sono familiari. Molte volte si interrompe ciò che si sta facendo per passare del tempo prezioso alla ricerca di ulteriori informazioni.
+Le esperienze degli argomenti convertono le informazioni di conoscenza in conoscenze nell'ambiente Microsoft 365. Tutti gli utenti hanno letto documenti e pagine del sito in cui si riscontrano termini con cui non si ha familiarità. Molte volte interrompiamo ciò che stiamo facendo per dedicare tempo prezioso alla ricerca di altre informazioni.
 
-Quali esperienze di argomento è possibile utilizzare Microsoft Graph e AI per identificare gli **argomenti** nell'organizzazione.  Un argomento è una frase o un termine che ha un significato specifico per un'organizzazione, in cui gli utenti potrebbero trarre vantaggio dall'essere in grado di visualizzare una pagina wiki su di esso. AI Cerca persone e contenuti connessi all'argomento e, se lo si è già scoperto, diventa un argomento suggerito.
+Esperienze degli argomenti usa Microsoft Graph e L'intelligenza artificiale per **identificare gli argomenti** nell'organizzazione.  Un argomento è una frase o un termine che ha un significato specifico per l'organizzazione e contiene risorse ad esso correlate che possono aiutare gli utenti a capire cos'è e a trovare ulteriori informazioni su di esso. Esistono molti tipi diversi di argomenti che saranno importanti per l'organizzazione. Inizialmente, è possibile identificare i seguenti tipi di argomenti:
+- Project
+- Evento
+- Organizzazione
+- Posizione
+- Prodotto
+- Lavoro creativo
+- Campo di studio
 
-L'argomento AI suggerito informazioni viene aggiunto a una **pagina di argomento**, che può contenere:
+L'intelligenza artificiale identifica le persone e i contenuti connessi all'argomento e, se ne viene individuato abbastanza, diventa un argomento consigliato. Cerca di identificare le proprietà seguenti e visualizzarle in una **pagina Dell'argomento:**
+- Nomi alternativi e/o acronimi.
 - Breve descrizione dell'argomento.
-- Nomi alternativi per l'argomento.
-- Utenti che potrebbero sapere di più sull'argomento.
-- Siti, file e pagine che potrebbero essere correlate all'argomento.
+- Persone che potrebbero essere a conoscenza dell'argomento.
+- File, pagine e siti correlati all'argomento.
 
-Esperienze degli argomenti quindi, quando il contesto è appropriato, è opportuno evidenziarli in tutte le pagine del sito di SharePoint moderne del tenant. Quando un utente è curioso di saperne di più su un argomento, è possibile selezionare l'argomento evidenziato per visualizzare una scheda di **Riepilogo degli argomenti** che fornisce una breve descrizione. Se si desiderano ulteriori informazioni, è possibile selezionare un collegamento **Dettagli argomento** nel riepilogo per aprire la pagina dell'argomento dettagliato.
+Le proprietà vengono identificate dai file e dalle pagine che fanno parte della prova per identificare l'argomento. I nomi alternativi e gli acronimi derivano da questi file e pagine. La breve descrizione viene fornita da questi file e pagine o da Internet tramite Wikipedia. Al file di origine, alla pagina o all'articolo di Wikipedia viene fatto riferimento insieme alle proprietà suggerite. Le persone vengono suggerite in base ai contributi attivi (come le modifiche) ai file e alle pagine. Un riferimento all'importo dei contributi di una determinata persona fornisce un suggerimento sul motivo per cui la persona è stata identificata. I file, le pagine e i siti vengono classificati in base al fatto che siano o meno centrali per l'argomento, indipendentemente dal fatto che possano fornire una panoramica o un'introduzione all'argomento. 
 
-![Highlights dell'argomento](../media/knowledge-management/saturn.png) </br>
+Non tutti gli argomenti identificati saranno utili per l'organizzazione o hanno identificato nomi alternativi o una descrizione corretti, le persone o i contenuti appropriati, quindi la possibilità di aggiungere argomenti non identificati, mantenere gli argomenti suggeriti e curarne gli argomenti è fondamentale per migliorare la qualità degli argomenti individuabili nell'organizzazione.
 
-Inoltre, gli utenti saranno anche in grado di trovare argomenti tramite Microsoft Search.
+Le esperienze degli argomenti, quando il contesto è appropriato, suggerisce questi argomenti da evidenziare in tutte le pagine moderne del sito di SharePoint nel tenant. È inoltre possibile fare riferimento direttamente all'argomento nella pagina del sito moderno di SharePoint da parte di un autore della pagina. Quando un utente è incuriosito di saperne di  più su un argomento, può selezionare l'argomento evidenziato per visualizzare una scheda di riepilogo dell'argomento che fornisce una breve descrizione. Se vogliono saperne di più, possono selezionare un collegamento **Dettagli** argomento nel riepilogo per aprire la pagina dell'argomento dettagliata.
 
+![Evidenziazioni degli argomenti](../media/knowledge-management/saturn.png) </br>
 
-## <a name="topic-curation"></a>Tema curation
+Inoltre, gli utenti saranno in grado di trovare gli argomenti anche tramite Microsoft Search.
 
-Esperienze di argomento si compiace del contributo umano per migliorare la qualità degli argomenti. Sebbene AI inizialmente identifichi e suggerisca argomenti, le modifiche apportate manualmente ai contenuti dei collaboratori, la conferma da parte degli utenti per i contenuti generati AI e i commenti e suggerimenti sull'utilità degli argomenti sono tutti elementi essenziali.
+## <a name="topic-curation-and-feedback"></a>Feedback e cura degli argomenti
 
-- Gli argomenti generati da AI ("argomenti suggeriti") possono essere esaminati dai **responsabili della conoscenza** nell'organizzazione. Nella pagina Gestisci argomenti del centro argomenti possono scegliere se confermarli come validi oppure rifiutarli per impedire che vengano visualizzati.
+Le esperienze degli argomenti sono di grande favore per il contributo umano per migliorare la qualità dei tuoi argomenti. Mentre l'intelligenza artificiale inizialmente identifica e suggerisce argomenti, le modifiche apportate manualmente al contenuto dai collaboratori, gli argomenti aggiunti manualmente, la conferma da parte degli utenti per le proprietà e i contenuti individuati dall'intelligenza artificiale e il feedback sull'utilità degli argomenti sono tutti essenziali.
 
-- È possibile assegnare le autorizzazioni *Crea e modifica argomenti* a uno qualsiasi degli utenti con licenza in modo che possano apportare modifiche agli argomenti esistenti o creare nuovi argomenti se necessario. 
+- Gli argomenti possono essere esaminati **dai knowledge manager** dell'organizzazione. Il responsabile della knowledge base può esaminare gli argomenti di cui dispone delle autorizzazioni necessarie. Nella pagina Gestisci argomenti del Centro argomenti possono scegliere di confermare gli argomenti generati dall'intelligenza artificiale ("argomenti suggeriti") come validi, rifiutare gli argomenti per impedire che il contenuto venga visualizzato come argomento, creare argomenti non individuati dall'intelligenza artificiale o identificare argomenti che potrebbero trarre vantaggio da alcune modifiche da parte di esperti in materia per essere più utili o accurati. Per [ulteriori informazioni, vedere](manage-topics.md) Gestire gli argomenti nel Centro argomenti.
 
-- Anche gli utenti che hanno solo accesso in lettura all'argomento (argomenti visualizzatori) verranno invitati a verificare l'utilità di argomenti specifici. I commenti e suggerimenti vengono inoltre eseguiti per confermare o rifiutare un argomento suggerito.
+- È possibile *assegnare autorizzazioni per la* creazione e la modifica di argomenti a qualsiasi utente con licenza in modo che possa apportare modifiche agli argomenti esistenti o creare nuovi argomenti. Ciò consente agli utenti esperti dell'argomento di aggiornare direttamente la pagina dell'argomento per apportare correzioni o aggiungere ulteriori informazioni. Possono anche aggiungere nuovi argomenti che l'intelligenza artificiale non è stata in grado di identificare. Se sono disponibili informazioni sufficienti su questi argomenti aggiunti manualmente e l'intelligenza artificiale è in grado di identificare questo tipo di argomento, ulteriori suggerimenti dell'intelligenza artificiale potrebbero migliorare questi argomenti aggiunti manualmente. Insieme, gli umani e l'intelligenza artificiale possono mantenere la conoscenza accurata nel tempo e non avere questo resto su una singola persona. Per [ulteriori informazioni, vedere](https://docs.microsoft.com/microsoft-365/knowledge/create-a-topic) Creare un nuovo argomento [e](https://docs.microsoft.com/microsoft-365/knowledge/edit-a-topic) Modificare un argomento.
 
-Anche con modifiche umane, AI continuerà a cercare ulteriori informazioni sugli argomenti e verificherà la verifica umana. Ad esempio, se al pensa di essere una persona che deve essere elencata come esperta in un argomento, verrà chiesto di confermarla. 
+- Anche gli utenti che dispongono solo dell'accesso in lettura all'argomento (visualizzatori di argomenti) verranno invitati a verificare l'utilità di argomenti specifici. Le domande relative al feedback vengono poste nella **scheda di riepilogo** dell'argomento per migliorare il valore dell'argomento e le relative informazioni. Le domande sulla qualità e l'utilità dei suggerimenti di intelligenza artificiale vengono presentate agli utenti una alla volta. Le domande includono:
+1. Se l'identificazione dell'argomento nella pagina di SharePoint è stata utile. C'è la possibilità di rimuovere l'evidenziazione se non è accurata o utile. Se un numero sufficiente di persone indica che un argomento non è identificato correttamente in una determinata pagina, questa evidenziazione verrà rimossa per tutti gli utenti. 
 
+2. Indica se l'argomento consigliato è utile per l'organizzazione. Se un numero sufficiente di persone indica che l'argomento consigliato è importante, l'argomento viene confermato automaticamente. In alternativa, se l'argomento suggerito non è utile, l'argomento viene automaticamente rifiutato. Il Knowledge Manager può osservare questa attività nella visualizzazione Gestisci argomenti.
+
+3. Indica se le persone e i suggerimenti per le risorse sono utili.
+
+4. Nella home page del Centro argomenti è possibile visualizzare gli argomenti dell'organizzazione a cui si dispone di una connessione. È possibile scegliere di rimanere nell'elenco dell'argomento o di rimuoverlo manualmente. Questo feedback si riflette su tutti gli utenti che individuano questo argomento. Per [ulteriori informazioni, vedere](https://docs.microsoft.com/microsoft-365/knowledge/topic-center-overview) panoramica del Centro argomenti nella home page del Centro argomenti.
+
+Anche con le modifiche umane, l'intelligenza artificiale cerca continuamente ulteriori informazioni sugli argomenti e cerca la verifica umana. Ad esempio, se l'intelligenza artificiale pensa che tu sia una persona che dovrebbe essere elencata come esperta in un argomento, ti chiederà di confermarlo. 
 
 
 ## <a name="see-also"></a>Vedere anche

@@ -1,5 +1,5 @@
 ---
-title: 'Supporto app client Microsoft 365: accesso condizionale'
+title: 'Supporto app client Microsoft 365: autenticazione a più fattori'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -7,34 +7,36 @@ audience: ITPro
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-search.appverid:
-- MET150
 ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
+search.appverid:
+- MET150
 f1.keywords:
 - NOCSH
-description: In questo articolo vengono apprese le piattaforme, i client e i moduli di PowerShell che supportano l'accesso condizionale per Microsoft 365.
+description: In questo articolo vengono apprese le piattaforme, i client e i moduli di PowerShell che supportano l'autenticazione a più fattori per Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 969dd9d712fe124458273144b3e7974e03ade9e0
+ms.openlocfilehash: fdec611fc595cdc15abb0fc1fb7a998f7a615ff7
 ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097247"
+ms.locfileid: "50097469"
 ---
-# <a name="microsoft-365-client-app-support-conditional-access"></a>Supporto app client Microsoft 365: accesso condizionale
+# <a name="microsoft-365-client-app-support-multi-factor-authentication"></a>Supporto app client Microsoft 365: autenticazione a più fattori
 
-Nell'ambiente di lavoro moderno, gli utenti possono accedere alle risorse dell'organizzazione usando vari dispositivi e app da qualsiasi luogo. Di conseguenza, concentrarsi solo su chi può accedere a una risorsa non è più sufficiente. L'organizzazione deve inoltre supportare come e dove accedere a una risorsa nell'infrastruttura di controllo di accesso.
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
-Con il dispositivo, la posizione e l'accesso condizionale basato sull'autenticazione a più fattori di Azure Active Directory, è possibile soddisfare questo nuovo requisito. L'accesso condizionale è una funzionalità di Azure Active Directory che consente di applicare controlli sull'accesso alle app nel proprio ambiente, il tutto in base a condizioni specifiche e gestito da una posizione centrale.
+Per fornire un ulteriore livello di sicurezza per gli accesso, i client possono essere configurati per l'utilizzo dell'autenticazione a più fattori (MFA), che utilizza sia una password utente che un metodo di verifica utente aggiuntivo basato su:
 
-Ulteriori informazioni [sull'accesso condizionale di Azure Active Directory.](/azure/active-directory/conditional-access/)
+- Qualcosa in loro possesso che non è facilmente duplicato, ad esempio uno smartphone.
+- Qualcosa che l'utente ha in modo univoco e biologico, ad esempio le impronte digitali, il volto o un altro attributo biometrico
+
+Ulteriori informazioni [sull'autenticazione a più fattori.](/azure/active-directory/authentication/multi-factor-authentication)
 
 ## <a name="supported-clients--platforms"></a>Client supportati & piattaforme
 
-Le versioni più recenti dei client e delle piattaforme seguenti supportano l'accesso condizionale. Per ulteriori informazioni sul supporto della piattaforma in Microsoft 365, vedere Requisiti di [sistema per Microsoft 365.](/microsoft-365/microsoft-365-and-office-resources)
-
+Le versioni più recenti dei client e delle piattaforme seguenti supportano l'autenticazione a più fattori. Per ulteriori informazioni sul supporto della piattaforma in Microsoft 365, vedere Requisiti di [sistema per Microsoft 365.](/microsoft-365/microsoft-365-and-office-resources)
 <br>
 <br>
 
@@ -44,7 +46,7 @@ Le versioni più recenti dei client e delle piattaforme seguenti supportano l'ac
 | Access | N/D | N/D | N/D | N/D | ![Supportato](../media/check-mark.png) |
 | Amministratore di Azure | N/D | N/D | N/D | N/D | N/D |
 | Portale aziendale | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | N/D |
-| Cortana | Pianificato | Pianificato | N/D | ![Supportato](../media/check-mark.png) | N/D |
+| Cortana | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | N/D | ![Supportato](../media/check-mark.png) | N/D |
 | Delve | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | N/D | N/D | N/D |
 | Edge | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | N/D | N/D | ![Supportato](../media/check-mark.png) |
 | Excel | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) |
@@ -59,13 +61,14 @@ Le versioni più recenti dei client e delle piattaforme seguenti supportano l'ac
 | OneNote | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) |
 | Outlook | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) |
 | Planner | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | N/D | N/D | N/D |
-| Power Apps | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | N/D | Pianificato | N/D |
+| Power Apps | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | N/D | ![Supportato](../media/check-mark.png) | N/D |
 | Power Automate | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | N/D | N/D | N/D |
 | Power BI | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | N/D | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) |
 | PowerPoint | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) |
 | Project | N/D | N/D | N/D | N/D | ![Supportato](../media/check-mark.png) |
 | Publisher | N/D | N/D | N/D | N/D | ![Supportato](../media/check-mark.png) |
-| Skype for Business | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | N/D | N/D | N/D ||
+| Skype for Business | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | N/D | ![Supportato](../media/check-mark.png) |
+| Amministratore di Skype for Business | N/D | N/D | N/D | N/D | ![Supportato](../media/check-mark.png) |
 | SharePoint | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | N/D | N/D | N/D |
 | Amministratore di SharePoint Online | N/D | N/D | N/D | N/D | ![Supportato](../media/check-mark.png) |
 | Sticky Notes | N/D | N/D | N/D | ![Supportato](../media/check-mark.png) | N/D |

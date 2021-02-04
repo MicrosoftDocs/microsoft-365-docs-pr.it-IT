@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni sui gruppi di Microsoft 365.
-ms.openlocfilehash: b3bc0c30f4ac292da7af46678fc742854984db12
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 5d5c15c13d46738ac9de701b5a39f47274b9f1e5
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925351"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094734"
 ---
 # <a name="overview-of-microsoft-365-groups-for-administrators"></a>Panoramica dei gruppi di Microsoft 365 per gli amministratori
 
@@ -64,9 +64,9 @@ Gli amministratori possono:
 
 Se si preferisce un modo più automatizzato per gestire il ciclo di vita dei gruppi di Microsoft 365, è possibile usare i criteri di scadenza per scadere i gruppi a un intervallo di tempo specifico. I proprietari del gruppo riceveranno un messaggio di posta elettronica 30, 15 e 1 giorno prima della scadenza del gruppo che consente loro di rinnovare il gruppo se è ancora necessario. Vedere: [Criteri di scadenza del gruppo di Microsoft 365.](office-365-groups-expiration-policy.md)
 
-È possibile amministrare i gruppi dall'interfaccia di amministrazione di Microsoft 365 o [tramite PowerShell.](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershel)
+È possibile amministrare i gruppi dall'interfaccia di amministrazione di Microsoft 365 [o tramite PowerShell.](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
 
-Se si dispone di molti utenti, ad esempio in un'azienda o in un'azienda di grandi dimensioni, è possibile che molti utenti creino gruppi per vari scopi. Per le procedure consigliate, è consigliabile consultare Pianificare la governance nei gruppi di [Microsoft 365.](plan-for-groups-governance.md)
+Se sono presenti molti utenti, ad esempio in un'azienda di grandi dimensioni, è possibile che molti utenti creino gruppi per vari scopi. Per le procedure consigliate, è consigliabile consultare Pianificare la governance nei gruppi di [Microsoft 365.](plan-for-groups-governance.md)
 
 ## <a name="group-limits"></a>Limiti relativi ai gruppi
 
@@ -103,18 +103,18 @@ Per informazioni sulla creazione, la gestione e l'uso delle etichette di riserva
 
 ## <a name="which-microsoft-365-plans-include-groups"></a>Quali piani di Microsoft 365 includono i gruppi?
 
-Qualsiasi abbonamento a Microsoft 365 con Exchange Online e SharePoint Online supporterà i gruppi. Sono inclusi i piani Business Essentials e Business Premium e i piani Enterprise E1, E3 ed E5. Il gruppo assume le licenze della persona che crea il gruppo (noto anche come "organizzatore" del gruppo). Finché l'organizzatore ha la licenza appropriata per tutte le funzionalità che vuoi che il gruppo abbia, la licenza verrà comunicata al gruppo.
+Qualsiasi abbonamento a Microsoft 365 con Exchange Online e SharePoint Online supporterà i gruppi. Sono inclusi i piani Business Essentials e Business Premium e i piani Enterprise E1, E3 ed E5. Il gruppo assume le licenze della persona che crea il gruppo (noto anche come "organizzatore" del gruppo). Finché l'organizzatore ha la licenza appropriata per tutte le funzionalità che vuoi che il gruppo abbia, tale licenza verrà comunicata al gruppo.
 
 > [!NOTE]
-> Per ulteriori informazioni sulle famiglie di servizi e sui piani di Microsoft 365, vedere Opzioni dei piani [di Microsoft 365.](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
+> Per ulteriori informazioni sulle famiglie di servizi e i piani di Microsoft 365, vedere Opzioni dei piani di [Microsoft 365.](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
 
-Se si dispone di un piano solo per Exchange, è comunque possibile ottenere la posta in arrivo condivisa e le funzionalità del calendario condiviso dei gruppi in Outlook, ma non si otterrà la raccolta documenti, Planner o altre funzionalità.
+Se si dispone di un piano solo di Exchange, è comunque possibile ottenere la posta in arrivo condivisa e le funzionalità del calendario condiviso dei gruppi in Outlook, ma non si otterrà la raccolta documenti, Planner o altre funzionalità.
 
 I gruppi di Microsoft 365 funzionano con Azure Active Directory. Le funzionalità dei gruppi disponibili dipendono dall'abbonamento ad Azure Active Directory di cui si dispone e dalle licenze assegnate all'organizzatore del gruppo.
 
 > [!IMPORTANT]
 > Per tutte le funzionalità dei gruppi, se hai una sottoscrizione ad Azure AD Premium, gli utenti possono aggiungersi al gruppo indipendentemente dal fatto che gli siano assegnate o meno una licenza AAD P1. Le licenze non vengono applicate.
-> Periodicamente verranno generati report sull'utilizzo che segnalano quali utenti non hanno una licenza e ne occorre uno assegnato per essere conforme ai requisiti di licenza. Si supponga, ad esempio, che un utente non abbia una licenza e che sia stato aggiunto a un gruppo in cui vengono applicati i criteri di denominazione. Il report contrassegnerà l'utente che ha bisogno di una licenza.
+> Periodicamente verranno generati report sull'utilizzo che segnalano quali utenti non hanno una licenza e ne occorre uno assegnato per essere conformi ai requisiti di licenza. Si supponga, ad esempio, che un utente non abbia una licenza e che sia stato aggiunto a un gruppo in cui vengono applicati i criteri di denominazione. Il report contrassegnerà l'utente che ha bisogno di una licenza.
 
 ## <a name="related-articles"></a>Articoli correlati
 

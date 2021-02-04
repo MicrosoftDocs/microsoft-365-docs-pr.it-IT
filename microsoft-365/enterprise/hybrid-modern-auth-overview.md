@@ -15,13 +15,13 @@ ms.collection:
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-description: In questo articolo vengono fornite informazioni sull'autenticazione moderna ibrida e sui prerequisiti per l'utilizzo con i server Skype for business e Exchange locali.
-ms.openlocfilehash: dbd108d9b04445838ce8e88a921af717ebd763be
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+description: In questo articolo verranno apprese informazioni sull'autenticazione moderna ibrida e sui prerequisiti per l'utilizzo con i server Skype for Business ed Exchange locali.
+ms.openlocfilehash: b9b48f591f74bd508b20a851ec48a0d7132d6a84
+ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487721"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50097105"
 ---
 # <a name="hybrid-modern-authentication-overview-and-prerequisites-for-using-it-with-on-premises-skype-for-business-and-exchange-servers"></a>Panoramica dell'autenticazione moderna ibrida e dei prerequisiti per l'uso con i server di Skype for Business ed Exchange locali
 
@@ -48,7 +48,7 @@ La gestione delle identità utente con l'autenticazione moderna offre agli ammin
 
 Tenere presente che, poiché il funzionamento di Skype for Business è strettamente correlato a quello di Exchange, l’approccio di accesso degli utenti client di Skype for Business sarà influenzato dallo stato di autenticazione moderna di Exchange. Ciò si applica anche se si ha un’architettura ibrida dei _domini separati_ di Skype for Business in cui si ha sia Skype for Business Online che Skype for Business in locale, con utenti ospitati in entrambe le posizioni.
 
-Per altre informazioni sull'autenticazione moderna in Office 365, vedere [Supporto per l’app client di Office 365: autenticazione moderna](microsoft-365-client-support-modern-authentication.md).
+Per ulteriori informazioni sull'autenticazione moderna in Office 365, vedere Supporto app client di [Office 365 - Autenticazione a più fattori.](microsoft-365-client-support-multi-factor-authentication.md)
 
 > [!IMPORTANT]
 > Dal mese di agosto 2017 tutti i nuovi tenant di Office 365 che includono Skype for Business Online ed Exchange Online hanno l'autenticazione moderna abilitata per impostazione predefinita. I tenant preesistenti non cambiano lo stato autenticazione moderna predefinito, tutti i nuovi tenant invece supportano automaticamente il set espanso delle funzionalità d’identità elencate in precedenza. Per controllare lo stato di autenticazione moderna, vedere la sezione [Verifica dello stato di autenticazione moderna in ambiente locale](hybrid-modern-auth-overview.md#BKMK_CheckStatus).
@@ -147,7 +147,7 @@ Prima di procedere, verificare questi elementi nell’elenco:
 
 - **Requisiti del client e del protocollo di Exchange**
 
-    La disponibilità dell'autenticazione moderna è determinata dalla combinazione del client, del protocollo e della configurazione. Se l'autenticazione moderna non è supportata dal client, dal protocollo e/o dalla configurazione, il client continuerà a utilizzare l'autenticazione legacy.
+    La disponibilità dell'autenticazione moderna è determinata dalla combinazione del client, del protocollo e della configurazione. Se l'autenticazione moderna non è supportata dal client, dal protocollo e/o dalla configurazione, il client continuerà a sfruttare l'autenticazione legacy.
   
     I client e i protocolli seguenti supportano l'autenticazione moderna con Exchange locale quando l'autenticazione moderna è abilitata nell'ambiente:
 
@@ -155,13 +155,13 @@ Prima di procedere, verificare questi elementi nell’elenco:
   |:-----|:-----|:-----|
   |Outlook 2013 e versioni successive  <br/> |MAPI su HTTP  <br/> |MAPI su HTTP deve essere abilitato in Exchange per sfruttare l'autenticazione moderna con tali client, in genere abilitato o impostato su Vero per le nuove installazioni dell’Exchange 2013 Service Pack 1 e versioni successive. Per altre informazioni, vedere [Funzionamento dell'autenticazione moderna per le app client di Office 2013 e Office 2016](modern-auth-for-office-2013-and-2016.md).  <br/> Verificare che sia in esecuzione la build minima richiesta di Outlook, vedere [Aggiornamenti più recenti delle versioni di Outlook in uso di Windows Installer (MSI)](https://docs.microsoft.com/officeupdates/outlook-updates-msi).  <br/> |
   |Outlook 2016 per Mac e versioni successive  <br/> |Servizi Web Exchange  <br/> |  <br/> |
-  |Outlook per iOS e Android  <br/> | Tecnologia Microsoft Sync <br/> |Per altre informazioni, vedere [Utilizzo dell'autenticazione moderna ibrida con Outlook per iOS e Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).  <br/> |
+  |Outlook per iOS e Android  <br/> | Tecnologia di sincronizzazione Microsoft <br/> |Per altre informazioni, vedere [Utilizzo dell'autenticazione moderna ibrida con Outlook per iOS e Android](https://docs.microsoft.com/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth).  <br/> |
   |Client Exchange ActiveSync (ad esempio la posta di iOS11)  <br/> |Exchange ActiveSync  <br/> |Nei client Exchange ActiveSync che supportano l'autenticazione moderna, è necessario ricreare il profilo per passare dall'autenticazione di base all'autenticazione moderna.  <br/> |
 
-    I client e/o i protocolli che non sono elencati (ad esempio, POP3) non supportano l'autenticazione moderna con Exchange locale e continuano a sfruttare i meccanismi di autenticazione legacy anche dopo che l'autenticazione moderna è abilitata nell'ambiente.
+    I client e/o i protocolli non elencati (ad esempio, POP3) non supportano l'autenticazione moderna con Exchange locale e continuano a sfruttare i meccanismi di autenticazione legacy anche dopo aver abilitato l'autenticazione moderna nell'ambiente.
 
 - **Prerequisiti generali**
-  - Gli scenari per la foresta di risorse richiedono una relazione di trust bidirezionale con la foresta account per garantire che le ricerche SID appropriate vengano eseguite durante le richieste di autenticazione moderne ibride. 
+  - Gli scenari di foresta di risorse richiederanno un trust bidirezionale con la foresta di account per garantire che le ricerche SID appropriate siano eseguite durante le richieste di autenticazione moderna ibrida. 
   - Se si usa AD FS (Active Directory Federation Services), per la federazione è necessario Windows 2012 R2 AD FS 3.0 e versioni successive.
   - Le configurazioni delle identità sono costituite da uno dei tipi supportati da Azure AD Connect, ad esempio sincronizzazione hash delle password, autenticazione pass-through e STS locali supportati da Office 365.
   - Azure AD Connect è configurato e funziona per la replica e sincronizzazione utente.

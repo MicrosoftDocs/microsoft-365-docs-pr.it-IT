@@ -1,5 +1,5 @@
 ---
-title: Punteggio di produttività Microsoft-comunicazione
+title: Punteggio di produttività Microsoft - Comunicazione
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -18,173 +18,173 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-description: Informazioni dettagliate sul punteggio di produttività per la comunicazione-persone.
-ms.openlocfilehash: b688063c10749d15fc5b00b629ee18afedba927e
-ms.sourcegitcommit: 0867495cb02d0b38b439b16bdce97e6eda483ba9
+description: Dettagli della comunicazione - Punteggio di produttività per l'esperienza degli utenti.
+ms.openlocfilehash: de59a57f1c856d94836b59eba6a4869831fe700a
+ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "49712580"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50099713"
 ---
-# <a name="communication--people-experiences"></a>Comunicazione – esperienze degli utenti
+# <a name="communication--people-experiences"></a>Comunicazione - Esperienze degli utenti
 
-La produttività Score supporta il viaggio verso la trasformazione digitale con approfondimenti su come l'organizzazione usa Microsoft 365 e le esperienze tecnologiche che la supportano. Il punteggio dell'organizzazione misura le esperienze con la tecnologia e delle persone e può essere confrontato ai benchmark di organizzazioni simili per dimensione. La categoria comunicazione fa parte delle misure people experiences. Per ulteriori informazioni, vedere la [Panoramica del Punteggio di produttività](productivity-score.md) e leggere l' [informativa sulla privacy di Microsoft](https://privacy.microsoft.com/privacystatement).
+Punteggio di produttività supporta il percorso verso la trasformazione digitale con informazioni dettagliate su come l'organizzazione usa Microsoft 365 e sulle esperienze tecnologiche che la supportano. Il punteggio dell'organizzazione misura le esperienze con la tecnologia e delle persone e può essere confrontato ai benchmark di organizzazioni simili per dimensione. La categoria di comunicazione fa parte delle misure dell'esperienza utente. Per altre informazioni, consultare la panoramica [del punteggio di produttività](productivity-score.md) e leggere [l'Informativa sulla privacy di Microsoft.](https://privacy.microsoft.com/privacystatement)
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-Per iniziare a utilizzare le informazioni di comunicazione, le persone nell'organizzazione devono essere concessi in licenza per:
+Per iniziare a usare Informazioni dettagliate sulla comunicazione, gli utenti dell'organizzazione devono disporre di una licenza per:
 
 - Microsoft Teams
 - Yammer
 - Exchange Online
 
-Per ulteriori informazioni, vedere [assegnare licenze agli utenti](../manage/assign-licenses-to-users.md).
+Per ulteriori informazioni, vedere [assegnare licenze agli utenti.](../manage/assign-licenses-to-users.md)
 
-Dopo che le persone sono state attive nei prodotti di cui sopra almeno una volta negli ultimi 28 giorni, si inizierà a vedere le intuizioni.
+Dopo che le persone sono state attive nei prodotti di cui sopra almeno una volta negli ultimi 28 giorni, inizierà a vedere le informazioni dettagliate.
 
-## <a name="why-your-organizations-communication-score-matters"></a>Perché il Punteggio di comunicazione dell'organizzazione è importante 
+## <a name="why-your-organizations-communication-score-matters"></a>Perché il punteggio di comunicazione dell'organizzazione è importante 
 
-Microsoft riconosce che le persone hanno esigenze di comunicazione diverse. Per ottenere una risposta rapida a una domanda, è possibile scegliere di inviare un messaggio istantaneo. Se si desidera inviare gli aggiornamenti di stato alla propria leadership, è possibile scegliere un messaggio di posta elettronica. Per accedere a un gruppo di destinatari più ampio, è possibile scegliere di inviare un messaggio di community. Microsoft 365 consente questa flessibilità nelle modalità di comunicazione per soddisfare le esigenze di tutti. La ricerca dimostra che l'utilizzo di strumenti di comunicazione in tempo reale crea un'organizzazione più unificata e genera il morale, indipendentemente dalla posizione. [Vedere l'evidenza](https://go.microsoft.com/fwlink/?linkid=2127669).
+Microsoft è a conoscenza del fatto che le persone hanno esigenze di comunicazione diverse. Per ottenere una risposta rapida a una domanda, è possibile scegliere di inviare un messaggio istantaneo. Se si desidera inviare aggiornamenti dello stato ai dirigenti, è possibile scegliere un messaggio di posta elettronica. Per raggiungere un pubblico più ampio, è possibile scegliere di pubblicare un messaggio della community. Microsoft 365 consente questa flessibilità nelle modalità di comunicazione per soddisfare le esigenze di tutti. La ricerca dimostra che l'utilizzo di strumenti di comunicazione in tempo reale crea un'organizzazione più unificata e crea un'organizzazione più unificata, indipendentemente dalla posizione. [Vedere la prova.](https://go.microsoft.com/fwlink/?linkid=2127669)
 
-## <a name="how-we-calculate-the-communication-score"></a>Come si calcola il Punteggio di comunicazione
+## <a name="how-we-calculate-the-communication-score"></a>Calcolo del punteggio di comunicazione
 
-Per la comunicazione, viene fornita un'intuizione principale, che contiene le metriche chiave associate alla comunicazione nell'organizzazione, insieme a un Framework di punteggio per l'utilizzo di queste metriche per calcolare il punteggio dell'organizzazione.
+For Communication, we provide a primary insight, which contains the key metrics associated with communication in your organization, combined with a scoring framework for using these metrics to calculate your organization's score.
 
-### <a name="primary-insight"></a>Insight principale
+### <a name="primary-insight"></a>Informazioni principali
 
-Microsoft 365 offre alle persone la possibilità di adattare lo stile di comunicazione di tutti offrendo più modalità. L'Insight principale fornisce una misura di persone nell'organizzazione che utilizzano più modalità di comunicazione.
+Microsoft 365 offre alle persone la flessibilità necessaria per adattarsi allo stile di comunicazione di tutti offrendo più modalità. Le informazioni principali forniscono una misura delle persone nell'organizzazione che usano più modalità di comunicazione.
 
-:::image type="content" source="../../media/primaryinsight.png" alt-text="Intuizione principale per le modalità di comunicazione.":::
+:::image type="content" source="../../media/primaryinsight.png" alt-text="Informazioni principali sulle modalità di comunicazione.":::
 
-1. **Intestazione:** Fornisce la metrica chiave degli utenti che utilizzano più modalità di comunicazione, ovvero:
+1. **Intestazione:** Fornisce la metrica chiave degli utenti che utilizzano più modalità di comunicazione, ad esempio:
 
    - Invio di messaggi di posta elettronica tramite Exchange
-   - Invio di messaggi tramite Team
-   - Pubblicazione su community in Yammer
+   - Invio di messaggi tramite Teams
+   - Inserimento nelle community in Yammer
 
-   Questa metrica chiave viene visualizzata come percentuale di tutti gli utenti che utilizzano due o più di Exchange, teams o Yammer. 
+   Questa metrica chiave viene visualizzata come percentuale di tutte le persone che usano due o più utenti di Exchange, Teams o Yammer. 
 
-2. **Corpo:** Sono disponibili ulteriori informazioni su come la flessibilità nelle modalità di comunicazione è utile per gli utenti dell'organizzazione.
+2. **Corpo:** Fornisce ulteriori informazioni su come la flessibilità nelle modalità di comunicazione sia utile per gli utenti dell'organizzazione.
 
 3. **Visualizzazione dello stato corrente:**
 
    - Barra orizzontale in cui la parte blu rappresenta la percentuale espressa nell'intestazione
-   - Evidenzia il (numeratore/denominatore) utilizzato per calcolare la percentuale espressa nell'intestazione:
-     - **Numeratore**: # di persone che usano più di una modalità di comunicazione negli ultimi 28 giorni
-     - **Denominatore**: # di persone contrassegnate come abilitate per più di un prodotto di comunicazione negli ultimi 28 giorni
-   - Il valore **benchmark peer** della metrica chiave viene mostrato anche come percentuale
+   - Evidenzia il numeratore/denominatore utilizzato per calcolare la percentuale espressa nell'intestazione:
+     - **Numeratore:** numero di persone che usano più modalità di comunicazione negli ultimi 28 giorni
+     - **Denominatore:** numero di persone contrassegnate come abilitate per più di un prodotto di comunicazione negli ultimi 28 giorni
+   - **Anche il valore** peer benchmark della metrica chiave viene visualizzato come percentuale
 
-4. **Visualizzare le risorse di comunicazione:** Fare clic qui per integrare tutto il contenuto del supporto in formato video/articoli relativi alla comunicazione. Da questi è possibile passare alla playlist personalizzata per la comunicazione e successivamente, per tutte le categorie di Punteggio di produttività.
+4. **Visualizzare le risorse di comunicazione:** Fare clic qui per integrare tutto il contenuto del supporto sotto forma di video/articoli relativi alla comunicazione. Da queste è possibile passare alla playlist personalizzata per la comunicazione e successivamente, per tutte le categorie di punteggio di produttività.
 
-#### <a name="trend-visualization-of-primary-insight"></a>Visualizzazione delle tendenze dell'Insight principale
+#### <a name="trend-visualization-of-primary-insight"></a>Visualizzazione delle tendenze delle informazioni principali
 
- Questo grafico fornisce l'andamento del numeratore della metrica chiave nell'Insight principale, ovvero il numero di persone nell'organizzazione che utilizzano più di una modalità di comunicazione negli ultimi 180 giorni. Di seguito viene indicato che il valore giornaliero è un'aggregazione del numero di utenti che utilizzano più forme di comunicazione negli ultimi 28 giorni.
+ Questo grafico fornisce la tendenza del numeratore della metrica chiave nelle informazioni principali, cio? il numero di persone nell'organizzazione che usano più modalità di comunicazione negli ultimi 180 giorni. In questo caso, il valore giornaliero è un aggregato del numero di persone che utilizzano più forme di comunicazione negli ultimi 28 giorni.
 
-:::image type="content" source="../../media/trend-communication.png" alt-text="Grafico che indica il numero di utenti che utilizzano più modalità per comunicare con il tempo.":::
+:::image type="content" source="../../media/trend-communication.png" alt-text="Grafico che mostra il numero di persone che usano più di una modalità per comunicare rispetto al tempo.":::
 
-### <a name="scoring-model"></a>Modello di Punteggio
+### <a name="scoring-model"></a>Modello di punteggio
 
-Il Punteggio di comunicazione per l'organizzazione misura a livello di aggregazione (organizzazione) se le persone stanno comunicando in modo coerente utilizzando più modalità tra messaggi di posta elettronica, chat e community su una finestra di 28 giorni.  
+Il punteggio di comunicazione per l'organizzazione misura a livello aggregato (dell'organizzazione) se le persone comunicano in modo coerente utilizzando più modalità tra i post di posta elettronica, chat e community in una finestra di 28 giorni.  
 
 I punteggi non vengono forniti a livello di singolo utente.
 
 ## <a name="explore-how-your-organization-communicates"></a>Esplorare il modo in cui l'organizzazione comunica
 
-Vengono inoltre fornite informazioni che consentono di acquisire visibilità sul modo in cui l'organizzazione comunica. Queste metriche aggiuntive non influiscono direttamente sul punteggio di produttività, ma possono essere utili per creare un piano d'azione come parte della trasformazione digitale.
+Vengono inoltre fornite informazioni che consentono di ottenere visibilità sulle modalità di comunicazione dell'organizzazione. Queste metriche aggiuntive non influiscono direttamente sul punteggio di produttività, ma consentono di creare un piano d'azione come parte della trasformazione digitale.
 
-### <a name="breakdown-of-communication-by-modes"></a>Ripartizione della comunicazione per modalità
+### <a name="breakdown-of-communication-by-modes"></a>Suddivisione delle comunicazioni in base alle modalità
 
-:::image type="content" source="../../media/howpeoplecommunicate.png" alt-text="! [Scomposizione delle modalità di comunicazione]":::
+:::image type="content" source="../../media/howpeoplecommunicate.png" alt-text="! [Suddivisione delle modalità di comunicazione.]":::
 
-1. **Intestazione:** Evidenzia l'obiettivo dell'Insight di fornire una ripartizione dettagliata tra le diverse modalità di comunicazione in corso di comunicazione.
+1. **Intestazione:** Evidenzia l'obiettivo delle informazioni dettagliate per fornire una suddivisione dettagliata tra le diverse modalità di comunicazione considerate all'interno della comunicazione.
 
-2. **Corpo:** Vengono fornite informazioni sul valore dell'utilizzo di diverse modalità per la condivisione delle conoscenze.
+2. **Corpo:** Fornisce informazioni sul valore dell'uso di diverse modalità per la condivisione delle conoscenze.
 
-3. **Visualizzazione:** La scomposizione rappresenta l'utilizzo per ogni modalità. La parte colorata e la frazione di ogni barra rappresentano il numero di persone che inviano messaggi di posta elettronica, messaggi o post della community come percentuale del numero di utenti abilitati per tale modalità:
+3. **Visualizzazione:** La suddivisione rappresenta l'uso per ogni modalità. La parte colorata e la frazione su ogni barra rappresentano il numero di persone che inviano messaggi di posta elettronica, messaggi o post della community come percentuale del numero di persone abilitate per tale modalità:
 
-   - **Utenti che inviano messaggi di posta elettronica:** La parte colorata e la frazione rappresentano la percentuale di utenti abilitati per Exchange che inviano messaggi di posta elettronica. Questa frazione è costituita da:
+   - **Persone che inviano messaggi di posta elettronica:** La parte colorata e la frazione rappresentano la percentuale di utenti abilitati per Exchange che inviano messaggi di posta elettronica. Questa frazione è costruita da:
    
-     - **Numeratore**: persone che inviano messaggi di posta elettronica negli ultimi 28 giorni.
-     - **Denominatore**: utenti abilitati per Exchange negli ultimi 28 giorni.
+     - **Numeratore:** persone che inviano messaggi di posta elettronica negli ultimi 28 giorni.
+     - **Denominatore:** persone abilitate per Exchange negli ultimi 28 giorni.
      
-   - **Utenti che inviano messaggi in Microsoft teams:** La parte colorata e la frazione rappresentano la percentuale di utenti abilitati per i team di Microsoft che inviano messaggi. Questa frazione è costituita da:
+   - **Persone che inviano messaggi in Microsoft Teams:** La parte colorata e la frazione rappresentano la percentuale di utenti abilitati per Microsoft Teams che inviano messaggi. Questa frazione è costruita da:
    
-     - **Numeratore**: utenti che inviano messaggi su Microsoft teams negli ultimi 28 giorni.
-     - **Denominatore**: utenti abilitati per Microsoft teams negli ultimi 28 giorni.
+     - **Numeratore:** persone che inviano messaggi su Microsoft Teams negli ultimi 28 giorni.
+     - **Denominatore:** persone abilitate per Microsoft Teams negli ultimi 28 giorni.
      
-   - **Registrazione utenti nelle community:** La parte colorata e la frazione rappresentano la percentuale di utenti abilitati per Yammer che vengono disposte nelle community. Questa frazione è costituita da:
+   - **Inserimento di utenti nelle community:** La parte colorata e la frazione rappresentano la percentuale di utenti abilitati per Yammer che pubblicano nelle community. Questa frazione è costruita da:
    
-     - **Numeratore:** Utenti che inviano nelle community di Yammer negli ultimi 28 giorni.
+     - **Numeratore:** Inserimento di utenti nelle community di Yammer negli ultimi 28 giorni.
      - **Denominatore:** Utenti abilitati per Yammer negli ultimi 28 giorni.
           
-4. **Visualizzazione del contenuto correlato:** Selezionare questo collegamento per visualizzare i video fascicolati e altri contenuti della Guida correlati.
+4. **Visualizzare il contenuto correlato:** Selezionare questo collegamento per visualizzare i video fascicolati e altri contenuti della Guida correlati.
 
 ### <a name="mentions-in-emails"></a>@mentions nei messaggi di posta elettronica
 
 :::image type="content" source="../../media/emailmentions.png" alt-text="! [Messaggi di posta elettronica con menzioni.]":::
 
-1. **Intestazione:** Evidenzia l'aumento del tasso di risposta per i nuovi thread di posta elettronica avviati negli ultimi 28 giorni quando contengono @mentions.
+1. **Intestazione:** Evidenzia l'aumento della frequenza di risposta per i nuovi thread di posta elettronica avviati negli ultimi 28 giorni quando contengono @mentions.
 
-2. **Corpo:** Vengono fornite informazioni sul valore dell'utilizzo di @mentions nei messaggi di posta elettronica. Inoltre, le persone che usano @mentions sono espresse in percentuale di tutti gli utenti che hanno inviato un messaggio di posta elettronica negli ultimi 28 giorni.
+2. **Corpo:** Fornisce informazioni sul valore dell'utilizzo di @mentions nei messaggi di posta elettronica. Inoltre, le persone che usano @mentions vengono espresse come percentuale di tutti gli utenti che hanno inviato un messaggio di posta elettronica negli ultimi 28 giorni.
 
-3. **Visualizzazione:** Suddivide la frequenza di risposta per i nuovi thread di posta elettronica in base al fatto che siano @mentions o meno:
+3. **Visualizzazione:** Suddivide la frequenza di risposta per i nuovi thread di posta elettronica in base al fatto che @mentions o meno:
 
-   - **Risposte ai messaggi di posta elettronica con \@ menzioni:** la parte colorata e la frazione rappresentano la percentuale di risposta per i nuovi thread di posta elettronica contenenti @mentions. Questa frazione è costituita da:
+   - Risposte ai messaggi di posta elettronica con **\@ menzioni:** la parte colorata e la frazione rappresentano la frequenza di risposta per i nuovi thread di posta elettronica contenenti @mentions. Questa frazione è costruita da:
    
-     - **Numeratore:** Nuovi thread di posta elettronica contenenti @mentions che sono stati avviati e hanno ricevuto una risposta negli ultimi 28 giorni.
-     - **Denominatore:** Nuovi thread di posta elettronica contenenti @mentions che sono stati avviati negli ultimi 28 giorni.
+     - **Numeratore:** Nuovi thread di posta elettronica @mentions che sono stati avviati e ricevuti una risposta negli ultimi 28 giorni.
+     - **Denominatore:** Nuovi thread di posta elettronica @mentions che sono stati avviati negli ultimi 28 giorni.
      
-   - **Risposte a messaggi di posta elettronica senza \@ menzioni:** la parte colorata e la frazione rappresentano la percentuale di risposta per i nuovi thread di posta elettronica contenenti @mentions. Questa frazione è costituita da:
+   - Risposte ai messaggi di posta elettronica senza **\@ menzioni:** la parte colorata e la frazione rappresentano la frequenza di risposta per i nuovi thread di posta elettronica contenenti @mentions. Questa frazione è costruita da:
    
-     - **Numeratore:** I nuovi thread di posta elettronica che non contengono @mentions, che sono stati avviati e hanno ricevuto una risposta negli ultimi 28 giorni.
-     - **Denominatore:** Nuovi thread di posta elettronica che non contengono @mentions che sono stati avviati negli ultimi 28 giorni.
+     - **Numeratore:** Nuovi thread di posta elettronica che non contengono @mentions, che sono stati avviati e hanno ricevuto una risposta negli ultimi 28 giorni.
+     - **Denominatore:** Nuovi thread di posta elettronica @mentions che sono stati avviati negli ultimi 28 giorni.
      
-4. **Visualizzazione del contenuto correlato:** Selezionare questo collegamento per visualizzare i video fascicolati e altri contenuti della Guida correlati.
+4. **Visualizzare il contenuto correlato:** Selezionare questo collegamento per visualizzare i video fascicolati e altri contenuti della Guida correlati.
 
 
 ### <a name="breakdown-of-messages-by-type-in-microsoft-teams"></a>Suddivisione dei messaggi per tipo in Microsoft Teams
 
-:::image type="content" source="../../media/teamsmessages.png" alt-text="! [Tipi di messaggio teams.]":::
+:::image type="content" source="../../media/teamsmessages.png" alt-text="! [Tipi di messaggio di Teams.]":::
 
-1. **Intestazione:** Evidenzia gli utenti che hanno inviato messaggi di canale come percentuale di persone che hanno inviato qualsiasi tipo di messaggio (compresi i messaggi di chat e di canale) negli ultimi 28 giorni.
+1. **Intestazione:** Evidenzia le persone che hanno inviato messaggi di canale come percentuale di persone che hanno inviato qualsiasi tipo di messaggio (inclusi i messaggi di chat e canali) negli ultimi 28 giorni.
 
-2. **Corpo:** Vengono fornite informazioni sul valore dell'utilizzo dei messaggi di canale all'interno di Microsoft teams.
+2. **Corpo:** Fornisce informazioni sul valore dell'uso dei messaggi di canale all'interno di Microsoft Teams.
 
-3. **Visualizzazione:** Suddivide l'utilizzo dei messaggi chat e del canale:
+3. **Visualizzazione:** Suddivide l'uso dei messaggi di chat e canali:
 
-      - **Utenti che inviano messaggi chat:** La parte colorata e la frazione rappresentano l'utilizzo dei messaggi di chat all'interno di persone che hanno inviato messaggi su Microsoft teams. La frazione è costituita da:
+      - **Persone che inviano messaggi di chat:** La parte colorata e la frazione rappresentano l'uso di messaggi di chat all'interno di persone che hanno inviato messaggi su Microsoft Teams. La frazione è costruita da:
       
-        - **Numeratore:** Utenti che hanno inviato messaggi di chat su Microsoft teams negli ultimi 28 giorni.
-        - **Denominatore:** Utenti che hanno inviato messaggi su Microsoft teams negli ultimi 28 giorni.
+        - **Numeratore:** Persone che hanno inviato messaggi di chat su Microsoft Teams negli ultimi 28 giorni.
+        - **Denominatore:** Persone che hanno inviato messaggi su Microsoft Teams negli ultimi 28 giorni.
         
-      - **Utenti che inviano messaggi di canale:** La parte colorata e la frazione rappresentano l'utilizzo dei messaggi di canale all'interno di persone che inviano messaggi su Microsoft teams. La frazione è costituita da:
+      - **Persone che inviano messaggi di canale:** La parte colorata e la frazione rappresentano l'uso dei messaggi di canale all'interno degli utenti che inviano messaggi su Microsoft Teams. La frazione è costruita da:
       
-        - **Numeratore:** Utenti che hanno inviato messaggi di chat su Microsoft teams negli ultimi 28 giorni.
-        - **Denominatore:** Utenti che hanno inviato messaggi su Microsoft teams negli ultimi 28 giorni.
+        - **Numeratore:** Persone che hanno inviato messaggi di canale su Microsoft Teams negli ultimi 28 giorni.
+        - **Denominatore:** Persone che hanno inviato messaggi su Microsoft Teams negli ultimi 28 giorni.
         
-4. **Visualizzazione del contenuto correlato:** Selezionare questo collegamento per visualizzare i video fascicolati e altri contenuti della Guida correlati.
+4. **Visualizzare il contenuto correlato:** Selezionare questo collegamento per visualizzare i video fascicolati e altri contenuti della Guida correlati.
 
 ### <a name="questions-and-answers-in-yammer"></a>Domande e risposte in Yammer
 
 :::image type="content" source="../../media/yammerqsandas.png" alt-text="[Domande e risposte in Yammer]"::: 
 
-1. **Intestazione:** Evidenzia i post contrassegnati come domande su Yammer che hanno ricevuto una risposta contrassegnata come &quot; risposta migliore &quot; come percentuale di tutti i post contrassegnati come domande su Yammer negli ultimi 28 giorni.
+1. **Intestazione:** Evidenzia i post contrassegnati come domande in Yammer che hanno ricevuto una risposta contrassegnata come migliore risposta come percentuale di tutti i post contrassegnati come domande in Yammer negli &quot; &quot; ultimi 28 giorni.
 
-2. **Corpo:** Vengono fornite informazioni sul valore dell'utilizzo di domande e risposte in Yammer per condividere le conoscenze.
+2. **Corpo:** Fornisce informazioni sul valore dell'utilizzo di domande e risposte in Yammer per condividere informazioni.
 
-3. **Visualizzazione:** Suddivide l'utilizzo della funzionalità domande e risposte nell'organizzazione:
+3. **Visualizzazione:** Suddivide l'uso della funzionalità domande e risposte nell'organizzazione:
 
-   - **Domande:** La parte colorata della barra e del numero associato rappresenta il numero totale di post contrassegnati come domande negli ultimi 28 giorni.
+   - **Domande:** La parte colorata della barra e il numero associato rappresentano il numero totale di post contrassegnati come domande negli ultimi 28 giorni.
    - **Domande con risposte:** La parte colorata della barra e il numero associato rappresentano il numero di post contrassegnati come domande e hanno ricevuto risposte negli ultimi 28 giorni.
-   - **Domande con risposte ottimali:** La parte colorata della barra e il numero associato rappresentano il numero di postazioni contrassegnate come domande e hanno ricevuto una &quot; risposta migliore &quot; negli ultimi 28 giorni.
+   - **Domande con risposte migliori:** La parte colorata della barra e il numero associato rappresentano il numero di post contrassegnati come domande e che hanno ricevuto una risposta migliore negli &quot; &quot; ultimi 28 giorni.
       
-4. **Visualizzazione del contenuto correlato:** Selezionare questo collegamento per visualizzare i video fascicolati e altri contenuti della Guida correlati.
+4. **Visualizzare il contenuto correlato:** Selezionare questo collegamento per visualizzare i video fascicolati e altri contenuti della Guida correlati.
 
 ## <a name="related-content"></a>Contenuti correlati
 
-[Microsoft 365 Apps Health – esperienze tecnologiche](apps-health.md) (articolo) \
-[Collaborazione del contenuto-esperienze degli utenti](content-collaboration.md) (articolo) \
-[Riunioni – esperienze degli utenti](meetings.md) (articolo) \
-[Mobilità – esperienze degli utenti](mobility.md) (articolo) \
-[Controlli sulla privacy per il Punteggio di produttività](privacy.md) (articolo) \
-[Teamwork – esperienze degli utenti](teamwork.md) (articolo)
+[Integrità delle app di Microsoft 365 - Esperienze tecnologiche](apps-health.md) (articolo)\
+[Collaborazione sul contenuto - Esperienze utente](content-collaboration.md) (articolo)\
+[Riunioni - Esperienze degli utenti](meetings.md) (articolo)\
+[Mobilità - Esperienze degli utenti](mobility.md) (articolo)\
+[Controlli della privacy per il punteggio di produttività](privacy.md) (articolo)\
+[Lavoro in team - Esperienze per le persone](teamwork.md) (articolo)

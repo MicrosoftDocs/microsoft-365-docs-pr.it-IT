@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 4e008488bdd733c9a7ce5b418fb838e0fe880d9d
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: 521b5fc2a8efee83b6a2931e7dbc1c713bd63cd2
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080742"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094808"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>Eseguire la migrazione di query di ricerca avanzata da Microsoft Defender per Endpoint
 
@@ -114,64 +114,7 @@ AlertInfo
 | where FileName == "powershell.exe"
 ```
 
-## <a name="migrate-custom-detection-rules"></a>Eseguire la migrazione di regole di rilevamento personalizzate
 
-Quando le regole di Microsoft Defender per endpoint vengono modificate in Microsoft 365 Defender, continuano a funzionare come prima se la query risultante esamina solo le tabelle dei dispositivi. Ad esempio, gli avvisi generati da regole di rilevamento personalizzate che eseguono query solo sulle tabelle dei dispositivi continueranno a essere recapitati al SIEM e genereranno notifiche tramite posta elettronica, a seconda di come sono stati configurati in Microsoft Defender per Endpoint. Anche le regole di eliminazione esistenti in Defender per Endpoint continueranno a essere applicate.
-
-Dopo aver modificato una regola di Defender per endpoint in modo che eserviti query sulle tabelle di identità e posta elettronica, disponibili solo in Microsoft 365 Defender, la regola viene spostata automaticamente in Microsoft 365 Defender. 
-
-Avvisi generati dalla regola migrata:
-
-- Non sono più visibili nel portale di Defender for Endpoint (Microsoft Defender Security Center)
-- Interrompere il recapito al SIEM o generare notifiche tramite posta elettronica. Per risolvere questo problema, configurare le notifiche tramite Microsoft 365 Defender per ottenere gli avvisi. È possibile usare [l'API di Microsoft 365 Defender per](api-incident.md) ricevere notifiche per avvisi di rilevamento dei clienti o eventi imprevisti correlati.
-- Non verrà eliminato da Microsoft Defender per le regole di eliminazione degli endpoint. Per impedire la generazione di avvisi per determinati utenti, dispositivi o cassette postali, modificare le query corrispondenti per escludere tali entità in modo esplicito.
-
-Se si modifica una regola in questo modo, verrà richiesta una conferma prima dell'applicazione di tali modifiche.
-
-I nuovi avvisi generati dalle regole di rilevamento personalizzate nel portale di Microsoft 365 Defender vengono visualizzati in una pagina di avviso che fornisce le informazioni seguenti:
-
-- Titolo e descrizione dell'avviso 
-- Asset influenzati
-- Azioni intraprese in risposta all'avviso
-- Risultati della query che hanno attivato l'avviso 
-- Informazioni sulla regola di rilevamento personalizzata 
- 
-![Immagine della pagina nuovo avviso](../../media/newalertpage.png)
-
-## <a name="write-queries-without-devicealertevents"></a>Scrivere query senza DeviceAlertEvents
-
-Nello schema di Microsoft 365 Defender, le tabelle e le tabelle sono disponibili per supportare il set di informazioni diverse che accompagnano gli avvisi `AlertInfo` `AlertEvidence` provenienti da varie origini. 
-
-Per ottenere le stesse informazioni sull'avviso che hai usato per ottenere dalla tabella nello schema di Microsoft Defender per endpoint, filtra la tabella in base a e quindi unisci ogni ID univoco con la tabella, che fornisce informazioni dettagliate sull'evento e `DeviceAlertEvents` `AlertInfo` sull'entità. `ServiceSource` `AlertEvidence` 
-
-Vedi la query di esempio seguente:
-
-```kusto
-AlertInfo
-| where Timestamp > ago(7d)
-| where ServiceSource == "Microsoft Defender for Endpoint"
-| join AlertEvidence on AlertId
-```
-
-Questa query restituisce molte più colonne rispetto allo `DeviceAlertEvents` schema di Microsoft Defender per endpoint. Per mantenere gestibili i risultati, `project` utilizzare per ottenere solo le colonne a cui si è interessati. L'esempio seguente proietta colonne che potrebbero interessarti quando l'indagine ha rilevato attività di PowerShell:
-
-```kusto
-AlertInfo
-| where Timestamp > ago(7d)
-| where ServiceSource == "Microsoft Defender for Endpoint"
-    and AttackTechniques has "powershell"
-| join AlertEvidence on AlertId
-| project Timestamp, Title, AlertId, DeviceName, FileName, ProcessCommandLine 
-```
-
-Se vuoi filtrare per entità specifiche coinvolte negli avvisi, puoi farlo specificando il tipo di entità e il valore per cui vuoi `EntityType` filtrare. Nell'esempio seguente viene ricercato un indirizzo IP specifico:
-
-```kusto
-AlertInfo
-| where Title == "Insert_your_alert_title"
-| join AlertEvidence on AlertId 
-| where EntityType == "Ip" and RemoteIP == "192.88.99.01" 
-```
 
 ## <a name="see-also"></a>Vedere anche
 - [Attivare Microsoft 365 Defender](advanced-hunting-query-language.md)
