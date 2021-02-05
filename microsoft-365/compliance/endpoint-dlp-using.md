@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Informazioni su come configurare i criteri di prevenzione della perdita dei dati (DLP) per usare le posizioni di Prevenzione della perdita di dati degli endpoint di Microsoft 365.
-ms.openlocfilehash: 531fd5506aeb255e261c3cce35473f1ddad2aa42
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 15a540c323c8f49cfa6c15358cfec89034667378
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667811"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094797"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso della prevenzione della perdita di dati degli endpoint
 
@@ -80,11 +80,19 @@ Limitare la condivisione dei file riservati che corrispondono ai criteri, con i 
 
 Se la modalità elenco è impostata su **Blocca**, l'utente non potrà caricare elementi sensibili in tali domini. Quando un'azione di caricamento viene bloccata perché un elemento corrisponde a un criterio di prevenzione della perdita dei dati, DLP genera un avviso o blocca il caricamento dell'elemento sensibile.
 
-Se la modalità elenco è impostata su **Consenti**, gli utenti possono caricare gli elementi sensibili **_solo_* _ in tali domini e l'accesso di caricamento a tutti gli altri domini non è consentito.
+Se la modalità elenco è impostata su **Consenti**, gli utenti possono caricare gli elementi sensibili **_solo_** in tali domini e l'accesso in caricamento a tutti gli altri domini non è consentito.
 
 #### <a name="unallowed-browsers"></a>Browser non consentiti
 
 È possibile aggiungere browser, identificati dai nomi eseguibili, a cui verrà impedito di accedere ai file che corrispondono alle condizioni di un criterio DLP applicato in cui la restrizione relativa al caricamento nei servizi cloud è impostata su Blocca o Blocca con override. Quando a tali browser viene impedito di accedere a un file, gli utenti finali visualizzeranno un avviso popup con la richiesta di aprire il file con Microsoft Edge Chromium.
+
+### <a name="business-justification-in-policy-tips"></a>Motivazione aziendale nei suggerimenti per i criteri
+
+È possibile controllare il modo in cui gli utenti interagiscono con l'opzione di motivazione aziendale nelle notifiche dei suggerimenti per i criteri di prevenzione della perdita dei dati. Questa opzione viene visualizzata quando gli utenti eseguono un'attività protetta dall’impostazione **Blocco con sostituzione** in un criterio di prevenzione della perdita dei dati. È possibile scegliere una delle opzioni seguenti:
+
+- Per impostazione predefinita, gli utenti possono selezionare una motivazione predefinita o immettere un testo personalizzato.
+- Gli utenti possono solo selezionare una motivazione predefinita.
+- Gli utenti possono immettere solo la propria motivazione.
 
 
 ## <a name="tying-dlp-settings-together"></a>Unione di impostazioni DLP
@@ -99,7 +107,7 @@ Per usare questa restrizione sarà necessario configurare tre elementi important
 
 2. Aggiungere i browser ai quali non è consentito accedere a determinati elementi sensibili in caso di corrispondenza con un criterio DLP.
 
-3. Configurare i criteri DLP per definire i tipi di elementi sensibili per cui limitare il caricamento in queste posizioni, attivando _ *Carica nei servizi cloud** e **Accedi dai browser non consentiti**.
+3. Configurare criteri DLP per definire i tipi di elementi sensibili per cui limitare il caricamento in queste posizioni, attivando **Carica nei servizi cloud** e **Accedi dai browser non consentiti**.
 
 È possibile continuare ad aggiungere nuovi servizi, app e criteri per estendere e aumentare le restrizioni in modo da soddisfare le esigenze dell'azienda e proteggere i dati sensibili. 
 

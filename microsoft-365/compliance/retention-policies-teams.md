@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione applicabili a Microsoft Teams.
-ms.openlocfilehash: ebf1efe99e57084e2384e7499b3f72dab2b872c2
-ms.sourcegitcommit: b8e9b2ecdc4927b67088c5fffb1585424c66fb10
+ms.openlocfilehash: efbdee1fd5ee3c8c48aca9cbaf9e5a85a107edb4
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50050390"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094689"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Informazioni sulla conservazione per Microsoft Teams
 
@@ -43,7 +43,7 @@ Usando i criteri di conservazione per Teams è possibile conservare ed eliminare
 > [!NOTE]
 > L'inclusione del contenuto della scheda è un'aggiunta recente ed è attualmente in fase di distribuzione ai tenant. Per altre informazioni vedere [Funzionalità di conformità di Microsoft 365 ora disponibili per il contenuto delle schede adattive tramite le app in Teams](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
 
-Non sono inclusi i messaggi di Teams nei canali privati, né le reazioni degli altri utenti sotto forma di emoticon.
+Non sono inclusi i messaggi di Teams nei canali privati, i frammenti di codice e le reazioni degli altri utenti sotto forma di emoticon.
 
 I messaggi di posta elettronica e i file usati con Teams non sono inclusi nei criteri di conservazione per Teams. Questi elementi hanno criteri di conservazione personalizzati.
 

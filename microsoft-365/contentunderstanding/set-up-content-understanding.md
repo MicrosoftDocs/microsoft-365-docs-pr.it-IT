@@ -13,12 +13,12 @@ ms.collection:
 search.appverid: MET150
 localization_priority: Priority
 description: Configurazione della comprensione dei contenuti in Project Cortex
-ms.openlocfilehash: a9713f1d28cf863ab827d2975e84042026105b3f
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 0e5b48bab343f887a1438386bfa4f7915126ccd7
+ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976389"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "50094710"
 ---
 # <a name="set-up-sharepoint-syntex"></a>Configurazione di SharePoint Syntex
 
@@ -39,7 +39,7 @@ Prima di procedere, assicurarsi di pianificare in modo ottimale la configurazion
 ## <a name="requirements"></a>Requisiti 
 
 > [!NOTE]
-> È necessario avere le autorizzazioni di amministratore globale o amministratore di SharePoint per poter accedere all'interfaccia di amministrazione di Microsoft 365 e configurare la comprensione dei contenuti.
+> È necessario disporre delle autorizzazioni di amministratore globale o amministratore di SharePoint per poter accedere all'interfaccia di amministrazione di Microsoft 365 e configurare SharePoint Syntex.
 
 Gli amministratori possono anche modificare le impostazioni selezionate in qualsiasi momento dopo la configurazione, nonché le impostazioni di gestione della comprensione dei contenuti nell'interfaccia di amministrazione di Microsoft 365.
 
