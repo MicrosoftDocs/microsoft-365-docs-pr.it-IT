@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Informazioni sui tipi di spiegazione in Microsoft SharePoint Syntex
-ms.openlocfilehash: 9a65c5de5321ee623a3d1a1e4260c0bcb2ad331e
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 2c2997fd165339cc43f7f007050f343794021a23
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975956"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080587"
 ---
 # <a name="introduction-to-explanation-types"></a>Introduzione ai tipi di spiegazione
 
@@ -123,6 +123,31 @@ In *(cellulare)* sono presenti tre token:
 Configurare l'impostazione di prossimità su un intervallo compreso tra 0 e 3.
 
    ![Esempio di prossimità](../media/content-understanding/proximity-example.png)</br>
+
+
+## <a name="configure-where-phrases-occur-in-the-document"></a>Configurare la posizione delle frasi nel documento
+
+Quando si crea una spiegazione, per impostazione predefinita viene cercata nell'intero documento la frase che si vuole estrarre. Tuttavia, è possibile usare l'impostazione avanzata <b>Dove si trovano queste frasi</b> per isolare una posizione specifica nel documento in cui si trova una frase. Questa funzione è utile nei casi in cui istanze simili di una frase potrebbero comparire in un altro punto del documento e si vuole verificare che sia selezionata quella corretta. Facendo riferimento all'esempio relativo al documento di richiesta di visita specialistica il **medico richiedente** viene sempre menzionato nel primo paragrafo del documento. Con l'impostazione <b>Dove si trovano queste frasi</b>, in questo esempio è possibile configurare la spiegazione per la ricerca di questa etichetta solo nella sezione iniziale del documento o in qualsiasi altra posizione in cui potrebbe essere presente.
+
+   ![Impostazione Dove si trovano queste frasi](../media/content-understanding/phrase-location.png)</br>
+
+Per questa impostazione è possibile scegliere le opzioni seguenti:
+
+- Ovunque nel file: la frase viene cercata nell'intero documento.
+- Inizio del file: la ricerca viene eseguita dall'inizio del documento fino alla posizione della frase.</br> 
+   ![Inizio del file](../media/content-understanding/beginning-of-file.png)</br>
+Nel visualizzatore è possibile modificare manualmente la casella di selezione in modo da includere la posizione in cui si trova la fase. Il valore <b>Posizione finale</b> verrà aggiornato per mostrare il numero di token inclusi nell'area selezionata. Si noti che è possibile aggiornare il valore Posizione finale anche per modificare l'area selezionata.</br>
+   ![Casella con la posizione Inizio del file](../media/content-understanding/beginning-box.png)</br>
+
+- Fine del file: la ricerca viene eseguita dalla fine del documento fino alla posizione della frase.</br> 
+   ![Fine del file](../media/content-understanding/end-of-file.png)</br>
+Nel visualizzatore è possibile modificare manualmente la casella di selezione in modo da includere la posizione in cui si trova la fase. Il valore <b>Posizione iniziale</b> verrà aggiornato per mostrare il numero di token inclusi nell'area selezionata. Si noti che è possibile aggiornare il valore Posizione iniziale anche per modificare l'area selezionata.</br> 
+   ![Casella con la posizione Fine del file](../media/content-understanding/end-box.png)</br>
+- Intervallo personalizzato: la posizione della frase viene cercata in un intervallo specificato all’interno del documento.</br> 
+   ![Intervallo personalizzato](../media/content-understanding/custom-file.png)</br>
+Nel visualizzatore è possibile modificare manualmente la casella di selezione in modo da includere la posizione in cui si trova la fase. Per questa impostazione è necessario selezionare una posizione di <b>Inizio</b> e di <b>Fine</b>. Questi valori rappresentano il numero di token dall'inizio del documento. Anche se è possibile immettere manualmente questi valori, è più facile modificare manualmente la casella di selezione nel visualizzatore.</br> 
+   
+
 
 ## <a name="use-explanation-templates"></a>Usare modelli di spiegazione
 

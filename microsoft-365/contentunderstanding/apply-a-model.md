@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Informazioni su come applicare un modello pubblicato a una raccolta documenti di SharePoint
-ms.openlocfilehash: 742c6b7088619579f6157e20de63fe311039d6e2
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 17da1e37f72504ac5e0e26c0dd190efced08d285
+ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975932"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "50080787"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Applicare un modello di analisi dei documenti in Microsoft SharePoint Syntex.
 
@@ -61,10 +61,15 @@ Per applicare il modello a una raccolta documenti di SharePoint:
 
     ![Raccolta selezionata](../media/content-understanding/selected-library.png)</br>
 
-7. Passare alla tua raccolta documenti e assicurarsi di essere nella visualizzazione raccolta documenti del modello. Se si seleziona il pulsante informazioni accanto al nome della raccolta documenti, viene visualizzato un messaggio che informa che il modello è stato applicato alla raccolta documenti.
+7. Passare alla tua raccolta documenti e assicurarsi di essere nella visualizzazione raccolta documenti del modello. Se si seleziona il pulsante informazioni accanto al nome della raccolta documenti, viene visualizzato un messaggio che informa che un modello è stato applicato alla raccolta documenti.
 
     ![Visualizzazione delle informazioni](../media/content-understanding/info-du.png)</br> 
 
+    È possibile selezionare **Visualizza modelli attivi** per visualizzare i dettagli di tutti i modelli applicati alla raccolta documenti.
+
+8. Nel riquadro **Modelli attivi** è possibile visualizzare i modelli applicati alla raccolta documenti. Selezionare un modello per visualizzare altri dettagli, ad esempio una descrizione del modello, chi lo ha pubblicato e se il modello applica un'etichetta di conservazione ai file che classifica.
+
+    ![Riquadro Modelli attivi](../media/content-understanding/active-models.png)</br> 
 
 Dopo aver applicato il modello nella raccolta documenti, è possibile iniziare a caricare documenti nel sito e visualizzare i risultati.
 
@@ -82,6 +87,20 @@ Anche se un modello applicato elabora tutti i file caricati nella raccolta docum
 
 > [!NOTE]
 > È possibile copiare file singoli in una raccolta e applicarli a un modello, ma non è possibile eseguire la stessa operazione con le cartelle.
+
+### <a name="the-classification-date-field"></a>Il campo Data di classificazione
+
+Quando a una raccolta documenti viene applicato un modello di analisi dei documenti o di elaborazione moduli di SharePoint Syntex, nello schema della raccolta viene incluso un campo <b>Data di classificazione</b>. Per impostazione predefinita, questo campo è vuoto, ma quando i documenti vengono elaborati e classificati da un modello, questo campo viene aggiornato con un indicatore di data e ora di completamento. 
+
+   ![Colonna Data di classificazione](../media/content-understanding/class-date-column.png)</br> 
+
+Il campo Data di classificazione viene usato dal trigger [<b>Quando un file viene classificato da un modello di comprensione dei contenuti</b>](https://docs.microsoft.com/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) per eseguire un flusso di Power Automate dopo che un modello di comprensione dei contenuti Syntex ha completato l'elaborazione di un file e aggiornato il campo "Data di classificazione".
+
+   ![Trigger di flusso](../media/content-understanding/trigger.png)</br>
+
+Il trigger <b>Quando un file viene classificato da un modello di comprensione dei contenuti</b> può quindi essere usato per avviare un altro flusso di lavoro usando qualsiasi informazione estratta dal file.
+
+
 
 ## <a name="see-also"></a>Vedere anche
 [Creare un classificatore](create-a-classifier.md)
