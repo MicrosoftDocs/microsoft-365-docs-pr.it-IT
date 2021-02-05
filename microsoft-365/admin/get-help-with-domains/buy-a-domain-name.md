@@ -24,63 +24,63 @@ search.appverid:
 - GEA150
 ms.assetid: 1561140a-16a9-4a02-822d-a989250e479d
 description: Informazioni su come acquistare un nome di dominio in Microsoft 365.
-ms.openlocfilehash: d8c0bac5921b5cb3efacffdfee3ab948857b8a1f
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: 40fc44dfa3bc3e608b590157b7db423302af748d
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658612"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50113964"
 ---
 # <a name="buy-a-domain-name"></a>Acquistare un nome di dominio
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
- *Per aggiungere, modificare o rimuovere i domini, è **necessario** essere un **amministratore globale** di un [piano aziendale o aziendale](https://products.office.com/business/office). Queste modifiche hanno effetto sull'intero tenant, gli *amministratori personalizzati* o *gli utenti normali* non saranno in grado di apportare queste modifiche.*  
+ *Per aggiungere, modificare o rimuovere domini, è **necessario** essere un **amministratore globale** di un piano aziendale [o aziendale.](https://products.office.com/business/office) Queste modifiche interessano l'intero tenant, gli amministratori *personalizzati* o gli utenti *normali* non saranno in grado di apportare queste modifiche.*  
 
  Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.yml)**. 
   
-### <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>Accedere e passare a Settings Domains \> \> buy a Domain
+### <a name="sign-in-and-go-to-settings--domains--buy-a-domain"></a>Accedere e passare a Impostazioni \> Domini \> Acquistare un dominio
 
 1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
     
-3. Nella pagina **Domains** selezionare **Acquista dominio**.
+3. Nella pagina **Domini** selezionare **Acquista dominio.**
     
 È possibile scegliere tra i seguenti domini di primo livello per il proprio dominio.
   
-- . BIZ
+- .biz
     
-- . com
+- .com
     
-- . info
+- .info
     
-- . me
+- .me
     
-- . mobi
+- .mobi
     
-- .NET
+- .net
     
-- . org
+- .org
     
-- . TV
+- .tv
     
-- . co.uk
+- .co.uk
     
 - org.uk
     
 
 > [!NOTE]
-> Quando si seleziona **Acquista dominio**, potrebbe essere reindirizzato al sito Web del partner Microsoft se il tenant è stato acquistato o gestito tramite un partner Microsoft.
+> Quando si seleziona **Acquista** dominio, è possibile che si venga reindirizzati al sito Web del partner Microsoft se il tenant viene acquistato/gestito tramite un partner Microsoft.
 
 ### <a name="domain-privacy"></a>Privacy del dominio
-Offriamo un abbonamento gratuito per la privacy del dominio con l'acquisto di un dominio. In questo modo le informazioni di contatto vengono allegate alla registrazione del dominio con ICANN private. [Ulteriori informazioni.](https://whois.icann.org/en/privacy-and-proxy-services)
+Offriamo una sottoscrizione gratuita alla privacy del dominio con l'acquisto di un dominio. In questo modo le informazioni di contatto vengono associate alla registrazione del dominio con ICANN privato. [Ulteriori informazioni.](https://whois.icann.org/en/privacy-and-proxy-services)
   
 ### <a name="buy-a-domain-from-another-domain-registrar"></a>Acquistare un dominio presso un altro registrar
-Se si desidera acquistare un dominio da un registrar diverso da [GoDaddy](https://www.godaddy.com), è consigliabile utilizzarne uno sottostante che supporti l'installazione automatica (Domain Connect). 
+Se si desidera acquistare un dominio da un registrar diverso da [GoDaddy,](https://www.godaddy.com)è consigliabile usarne uno di seguito che supporti la configurazione automatica (Domain Connect). 
   
 - [1 &amp; 1 IONOS](https://www.1and1.com/)
 - [WordPress](https://www.wordpress.com) 
@@ -102,15 +102,15 @@ Se il proprio dominio è gestito da un provider che non supporta tutti i record 
 
 Se non si ha ancora un dominio personale, è possibile acquistarne uno online presso un registrar, un rivenditore di domini o persino presso il proprio provider Internet. Quando ci si iscrive a Office 365 gestito da 21Vianet si ottiene un nome di dominio, ad esempio contoso.partner.onmschina.cn, ma è possibile scegliere di usare un nome di dominio personalizzato, come fourthcoffee.com.
   
-Per configurare un dominio in Microsoft 365, è necessario disporre di un dominio e modificare alcuni dei record DNS per il dominio.
+Per configurare un dominio in Microsoft 365, è necessario essere proprietari di un dominio e modificare alcuni dei record DNS per il dominio.
   
 > [!CAUTION]
-> Alcuni registrar o provider di hosting DNS non consentono di creare tutti i record DNS richiesti da Microsoft 365. I provider di hosting elencati in questo articolo supportano tutti i record necessari. Se si prevede di usare un provider di hosting diverso, [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). 
+> Alcuni registrar o provider di hosting DNS non consentono la creazione di tutti i record DNS richiesti da Microsoft 365. I provider di hosting elencati in questo articolo supportano tutti i record necessari. Se si prevede di usare un provider di hosting diverso, [Service limitations when your hosting provider does not support SRV, CNAME, TXT, or redirection](https://support.microsoft.com/office/dfbb03e3-08c1-4c4e-b2f0-891665b29b77). 
   
-Dopo aver registrato il dominio (presso un registrar), accedere a Microsoft 365 come amministratore e configurare il dominio in modo che sia possibile utilizzarlo con il proprio indirizzo di posta elettronica e altri servizi.
+Dopo aver registrato il dominio (presso un registrar), si accede a Microsoft 365 come amministratore e si configura il dominio in modo da poterlo usare con l'indirizzo di posta elettronica e altri servizi.
   
 > [!NOTE]
-> Le informazioni sul sito Web pubblico di SharePoint online in questo articolo si applicano solo se l'organizzazione ha acquistato Microsoft 365 prima del 9 marzo 2015. 
+> Le informazioni sul sito Web pubblico di SharePoint Online contenute in questo articolo si applicano solo se l'organizzazione ha acquistato Microsoft 365 prima del 9 marzo 2015. 
 
 ## <a name="domain-registrars-that-support-all-dns-records-required-for-microsoft-365"></a>Registrar che supportano tutti i record DNS necessari per Microsoft 365
 
@@ -130,4 +130,4 @@ Dopo aver registrato il dominio (presso un registrar), accedere a Microsoft 365 
 
 [Domande frequenti sui domini](../setup/domains-faq.yml)
 
-[Aggiornare i record DNS per mantenere il proprio sito Web con il provider di hosting corrente](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider).
+[Aggiornare i record DNS per mantenere il sito Web con il provider di hosting corrente.](https://docs.microsoft.com/microsoft-365/admin/dns/update-dns-records-to-retain-current-hosting-provider)

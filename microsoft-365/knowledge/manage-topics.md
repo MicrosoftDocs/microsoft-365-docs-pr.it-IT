@@ -1,9 +1,10 @@
 ---
-title: "Gestire gli argomenti nell'argomento centro in esperienze di argomento (anteprima) "
-description: Come gestire gli argomenti nell'argomento centro.
+title: Gestire gli argomenti nel Centro argomenti in Microsoft Viva Topics
+description: Come gestire gli argomenti nel Centro argomenti.
 author: efrene
 ms.author: efrene
 manager: pamgreen
+ms.reviewer: cjtan
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -11,19 +12,15 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-topics
-ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 371ccc16e787b331f42026dec48e5e3113b2b172
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 45e8f26823998278f9a332d2ea1e362b77f2032b
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976192"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107195"
 ---
-# <a name="manage-topics-in-the-topic-center-preview"></a>Gestire gli argomenti nell'argomento centro (anteprima)
-
-> [!Note] 
-> Il contenuto di questo articolo è relativo all'anteprima privata di Project Cortex. [Altre informazioni su Project Cortex](https://aka.ms/projectcortex).
+# <a name="manage-topics-in-the-topic-center"></a>Gestire gli argomenti nel Centro argomenti 
 
 </br>
 
@@ -32,41 +29,47 @@ ms.locfileid: "49976192"
 </br>
 
 
-Nel centro argomenti, un responsabile della Knowledge base può visualizzare la pagina **Gestisci argomenti** per esaminare gli argomenti che sono stati identificati nei percorsi di origine di SharePoint come specificato dall'amministratore delle informazioni.  
+Nel Centro argomenti viva, un responsabile  della knowledge base può visualizzare la pagina Gestisci argomenti per esaminare gli argomenti identificati nei percorsi di origine di SharePoint come specificato dall'amministratore della knowledge base.  
 
    ![Centro argomenti](../media/knowledge-management/topic-center.png) </br> 
 
 
 
-I Knowledge Manager aiutano a guidare gli argomenti individuati tramite il ciclo di vita dell'argomento in cui gli argomenti sono:
+I knowledge manager consentono di guidare gli argomenti individuati nel ciclo di vita degli argomenti in cui sono:
 
-- Suggerito: un argomento è stato identificato da AI e dispone di sufficienti risorse di supporto, connessioni e proprietà per raggiungere la soglia dell'argomento.
-- Confermato: è stato convalidato un argomento suggerito dall'IA. La convalida viene fatta tramite conferma da un amministratore della Knowledge base. Inoltre, è possibile confermare un argomento se almeno due utenti forniscono commenti e suggerimenti positivi tramite commenti e suggerimenti sull'argomento valido.
-- Rimossi: un argomento viene rifiutato da un amministratore della Knowledge base e non sarà più visibile ai visualizzatori. L'argomento può trovarsi in uno stato qualsiasi quando viene rimosso (suggerito o confermato). 
-- Published: un argomento confermato che è stato aggiornato manualmente.
+- Consigliato: un argomento è stato identificato dall'intelligenza artificiale e dispone di risorse, connessioni e proprietà di supporto sufficienti.
+- Confermato: viene convalidato un argomento suggerito dall'intelligenza artificiale. La convalida viene eseguita tramite la conferma di un responsabile della conoscenza. Inoltre, un argomento può essere confermato se almeno due utenti forniscono feedback positivo tramite la domanda di feedback nella scheda dell'argomento.
+- Pubblicato: argomento confermato che è stato curato: sono state apportate modifiche manuali per migliorarne la qualità.
+- Rimosso: un argomento viene rifiutato da un responsabile della conoscenza e non sarà più visibile ai visualizzatori. L'argomento può essere in qualsiasi stato quando viene rimosso (consigliato, confermato o pubblicato). Quando un argomento pubblicato viene rimosso, la pagina con i dettagli selezionati dovrà essere eliminata manualmente tramite la Raccolta pagine del Centro argomenti.
 
-   ![Grafico del ciclo di vita degli argomenti](../media/knowledge-management/topic-lifecycle.png) </br> 
+   ![Grafico ciclo di vita degli argomenti](../media/knowledge-management/topic-lifecycle.png) </br> 
+
+> [!Note] 
+> Nella pagina Gestisci argomenti, ogni knowledge manager sarà in grado di visualizzare solo gli argomenti in cui hanno accesso ai file e alle pagine dell'argomento. Ciò si rifletterà negli argomenti elencati nelle schede Suggerite, Confermate, Rimosse e Pubblicate. Il conteggio degli argomenti, tuttavia, mostra i conteggi totali nell'organizzazione.
 
 ## <a name="requirements"></a>Requisiti
 
-Per gestire gli argomenti nel centro tematico, è necessario eseguire le operazioni seguenti:
-- Avere una licenza per l'argomento experiences.
-- Dispongono delle autorizzazioni per gli [**utenti che possono gestire gli argomenti**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions). Gli amministratori delle informazioni possono fornire agli utenti questa autorizzazione nelle impostazioni delle autorizzazioni per l'argomento Knowledge Network. 
+Per gestire gli argomenti nel Centro argomenti, è necessario:
+- Avere una licenza Viva Topics.
 
-Non sarà possibile visualizzare la pagina Gestisci argomenti nel centro argomenti, a meno che non sia **possibile gestire gli argomenti** autorizzati.
+- Disporre [**dell'autorizzazione Chi può gestire gli**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions) argomenti. Gli amministratori della knowledge base possono concedere agli utenti questa autorizzazione nelle impostazioni delle autorizzazioni dell'argomento Viva Topics. 
 
-Nel centro argomenti, un responsabile della Knowledge base può esaminare gli argomenti che sono stati identificati nei percorsi di origine di SharePoint specificati e può confermarli o rifiutarli. Un responsabile della Knowledge base può inoltre creare e pubblicare nuove pagine degli argomenti se non si è trovato nell'argomento Discovery o modificare quelli esistenti se è necessario aggiornarli.
+Non sarà possibile visualizzare la pagina Gestisci argomenti nel Centro argomenti, a meno che non si abbia l'autorizzazione Chi **può gestire gli** argomenti.
+
+Nel Centro argomenti un responsabile della knowledge base può esaminare gli argomenti identificati nei percorsi di origine di SharePoint specificati e può confermarli o rifiutarli. Un responsabile della conoscenza può anche creare e pubblicare nuove pagine di argomento se non ne è stata trovata una nell'individuazione di argomenti oppure modificare quelle esistenti se è necessario aggiornarne una.
 
 
-## <a name="review-suggested-topics"></a>Esaminare gli argomenti consigliati
+## <a name="review-suggested-topics"></a>Esaminare gli argomenti suggeriti
 
-Nella scheda **suggerimenti** dell'argomento relativo alla gestione degli argomenti del centro temi sono stati rilevati gli argomenti individuati nei percorsi di origine di SharePoint specificati. Un responsabile della Knowledge base può esaminare gli argomenti non confermati e scegliere di confermarli o rifiutarli.
+Nella pagina Gestione argomenti del Centro argomenti gli argomenti individuati nei percorsi di origine di SharePoint specificati verranno elencati nella **scheda Suggeriti.** Se necessario, un responsabile della knowledge base può esaminare gli argomenti non confermati e scegliere di confermarli o rifiutarli.
+
+   ![Argomenti suggeriti](../media/knowledge-management/quality-score.png) </br> 
 
 Per esaminare un argomento consigliato:
 
-1. Nella pagina **Gestisci argomenti** selezionare la scheda **suggerimenti** , quindi selezionare l'argomento per aprire la pagina dell'argomento.</br>
+1. Nella pagina **Gestisci argomenti** selezionare la **scheda Suggeriti** e selezionare l'argomento per aprire la pagina dell'argomento.</br>
 
-2. Nella pagina dell'argomento esaminare la pagina dell'argomento e selezionare **modifica** se è necessario apportare modifiche alla pagina.
+2. Nella pagina dell'argomento esaminare la pagina dell'argomento e selezionare **Modifica** se è necessario apportare modifiche alla pagina. La pubblicazione di eventuali modifiche sposterà questo argomento nella **scheda** Published.
 
 3. Dopo aver esaminato l'argomento, tornare alla pagina Gestisci argomenti. Per l'argomento selezionato, è possibile:
 
@@ -74,26 +77,41 @@ Per esaminare un argomento consigliato:
     
    - Selezionare la **x** se si desidera rifiutare l'argomento.
 
-    Gli argomenti confermati verranno rimossi dall'elenco **suggerito** e verranno visualizzati nell'elenco **confermato** .
+    Gli argomenti confermati verranno rimossi **dall'elenco Suggeriti** e ora verranno visualizzati **nell'elenco** Confermati.
 
-    Gli argomenti rifiutati verranno rimossi dall'elenco **suggerito** e verranno visualizzati nella scheda **rimossa** .
+    Gli argomenti rifiutati verranno rimossi **dall'elenco** Suggeriti e ora verranno visualizzati nella **scheda** Rimosso.
 
    </br> 
 
-## <a name="confirmed-topics"></a>Argomenti convalidati
+### <a name="quality-score"></a>Punteggio qualità
 
-Nella pagina Gestisci argomenti, gli argomenti che sono stati individuati nei percorsi di origine di SharePoint specificati e sono stati confermati da un responsabile della Knowledge base o da "crowd-sourced" confermati da due o più persone tramite il meccanismo di feedback della scheda saranno elencati nella scheda **confermata** . Se necessario, un utente con autorizzazioni per la gestione degli argomenti può esaminare gli argomenti confermati e scegliere di rifiutarli.
+A ogni argomento visualizzato nella pagina Argomenti suggeriti <b>è</b> assegnato un punteggio di qualità. Il punteggio di qualità è un riflesso della quantità di informazioni che l'utente medio potrà visualizzare per le informazioni sull'argomento, tenendo presente che ogni utente può visualizzare più o meno informazioni a causa delle autorizzazioni che possono o meno avere sulle informazioni in un argomento. 
+
+Il punteggio Di qualità può essere utile per fornire informazioni dettagliate sugli argomenti con il maggior numero di informazioni e può essere utile per trovare argomenti che potrebbero dover essere modificati manualmente.  Ad esempio, un argomento con un punteggio di qualità inferiore può essere il risultato di alcuni utenti che non hanno autorizzazioni di SharePoint per i file o i siti pertinenti inclusi nell'argomento. Un collaboratore può quindi modificare l'argomento in modo da includere le informazioni (se appropriato), che saranno quindi visualizzabili per tutti gli utenti che possono visualizzare l'argomento.
+
+Il punteggio Qualità può variare da 1 a 100. Un argomento appena individuato avrà un punteggio di qualità pari a 0 fino a quando due o più utenti non lo avranno visualizzato. Ogni punteggio di qualità degli utenti è determinato da una serie di fattori, ad esempio la quantità di contenuto visualizzato per l'utente specifico, che viene controllata dalle autorizzazioni dell'utente in quanto ogni pagina dell'argomento dispone di limitazione per motivi di sicurezza per il contenuto generato dall'intelligenza artificiale. Il punteggio qualità visualizzato nella scheda Argomenti suggeriti è una media di ogni singolo punteggio degli utenti.
+
+### <a name="impressions"></a>Impression
+
+Nella <b>colonna Impression viene</b> visualizzato il numero di volte in cui un argomento è stato visualizzato agli utenti finali. Sono incluse le visualizzazioni tramite le schede degli argomenti nella ricerca, le evidenziazioni degli argomenti e le visualizzazioni del Centro argomenti. Non riflette il click-through su questi argomenti, ma che l'argomento è stato visualizzato. La colonna Impression verrà visualizzata per gli argomenti nelle schede Suggeriti, Confermati, Pubblicati e Rimossi nella pagina Gestisci argomenti.
+
+
+## <a name="confirmed-topics"></a>Argomenti confermati
+
+Nella pagina Gestisci argomenti, gli argomenti individuati nelle posizioni di origine di SharePoint specificate e confermati da un responsabile della conoscenza o "di  origine di massa" confermati da due o più persone tramite il meccanismo di feedback della scheda verranno elencati nella scheda Confermata. Se necessario, un utente con autorizzazioni per gestire gli argomenti può esaminare gli argomenti confermati e scegliere di rifiutarli.
 
 Per esaminare un argomento confermato:
 
-1. Nella scheda **confermata** selezionare l'argomento per aprire la pagina dell'argomento.</br>
+1. Nella scheda **Confermata** selezionare l'argomento per aprire la pagina dell'argomento.</br>
 
-2. Nella pagina dell'argomento esaminare la pagina dell'argomento e selezionare **modifica** se è necessario apportare modifiche alla pagina.
+2. Nella pagina dell'argomento esaminare la pagina dell'argomento e selezionare **Modifica** se è necessario apportare modifiche alla pagina.
 
-Si noti che è comunque possibile scegliere di rifiutare un argomento confermato.  A tale scopo, passare all'argomento selezionato nell'elenco confermati e selezionare la **x** se si desidera rifiutare l'argomento.
+Tieni presente che puoi comunque scegliere di rifiutare un argomento confermato.  A tale scopo, passare all'argomento selezionato nell'elenco Confermata e selezionare **la x** se si desidera rifiutare l'argomento.
 
 ## <a name="published-topics"></a>Argomenti pubblicati
-Gli argomenti pubblicati sono stati modificati in modo che informazioni specifiche vengano sempre visualizzate a chiunque incontri la pagina. Gli argomenti creati manualmente sono elencati qui.
+Gli argomenti pubblicati sono stati modificati in modo che informazioni specifiche vengano sempre visualizzate a chiunque incontri la pagina. Anche gli argomenti creati manualmente sono elencati qui.
+
+   ![Gestire gli argomenti](../media/knowledge-management/manage-topics-new.png) </br> 
 
 
 

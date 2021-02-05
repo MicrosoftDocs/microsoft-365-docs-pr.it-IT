@@ -23,19 +23,19 @@ search.appverid:
 - MET150
 description: Informazioni su come assegnare licenze agli utenti.
 ms.date: 08/14/2020
-ms.openlocfilehash: fc5f9112a22d56abb9c11d61f4108586487b4986
-ms.sourcegitcommit: 806536f859ac864228797f1f2f23b8f41040a6b4
+ms.openlocfilehash: b5179006da896dbadab10d43a43b094acedcb806
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/28/2020
-ms.locfileid: "49735799"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50113986"
 ---
 # <a name="assign-licenses-to-users"></a>Assegnare licenze agli utenti
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 

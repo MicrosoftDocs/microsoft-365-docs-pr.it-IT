@@ -2,8 +2,8 @@
 title: Autenticazione a più fattori per Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Informazioni sull'autenticazione a più fattori in Microsoft 365.
-ms.openlocfilehash: 7d62d88acb5137bd0674de7a42b44103bc9fc5f0
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 5e72e3990db533b49041dc4167283b9487f23426
+ms.sourcegitcommit: b88ffaf3409e02a9847f030f8468f96d36efa398
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926547"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50105186"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Autenticazione a più fattori per Microsoft 365
 
@@ -43,7 +43,7 @@ Il metodo di verifica aggiuntivo viene utilizzato solo dopo la verifica della pa
 
 ## <a name="mfa-support-in-microsoft-365"></a>Supporto MFA in Microsoft 365
 
-Per impostazione predefinita, Sia Microsoft 365 che Office 365 supportano l'autenticazione a più fattori per gli account utente tramite:
+Per impostazione predefinita, Microsoft 365 e Office 365 supportano l'autenticazione a più fattori per gli account utente tramite:
 
 - UN SMS inviato a un telefono che richiede all'utente di digitare un codice di verifica.
 - Una telefonata.
@@ -71,7 +71,7 @@ Le impostazioni predefinite di sicurezza sono una nuova funzionalità per gli ab
 - Richiede a tutti gli utenti di usare l'autenticazione a più fattori con l'app Microsoft Authenticator.
 - Blocca l'autenticazione legacy.
 
-Per registrarsi per la MFA con l'app Microsoft Authenticator dai propri smartphone, gli utenti hanno a disposizione 14 giorni dalla prima volta che accedono dopo aver abilitato le impostazioni predefinite di sicurezza. Trascorsi 14 giorni, l'utente non sarà in grado di accedere fino al completamento della registrazione della MFA.
+Gli utenti hanno 14 giorni per registrarsi per la MFA con l'app Microsoft Authenticator dai propri smartphone, periodo che inizia dalla prima volta che accedono dopo aver abilitato le impostazioni predefinite di sicurezza. Trascorsi 14 giorni, l'utente non sarà in grado di accedere fino al completamento della registrazione della MFA.
 
 Le impostazioni di sicurezza predefinite garantiscono che tutte le organizzazioni dispongano di un livello base di sicurezza per l'accesso degli utenti abilitato per impostazione predefinita. Puoi disabilitare le impostazioni predefinite di sicurezza a favore dell'autenticazione a più fattori con i criteri di accesso condizionale.
 
@@ -138,7 +138,7 @@ Per ulteriori informazioni, vedere questa [panoramica di Azure AD Identity Prote
 
 ### <a name="legacy-per-user-mfa-not-recommended"></a>MFA legacy per utente (scelta non consigliata)
 
-Dovresti usare le impostazioni predefinite di sicurezza o i criteri di accesso condizionale per richiedere l'autenticazione a più fattori per gli accessi all'account utente. Tuttavia, se uno di questi non può essere utilizzato, Microsoft consiglia vivamente l'autenticazione a più fattori per gli account utente con ruoli di amministratore, in particolare il ruolo di amministratore globale, per qualsiasi sottoscrizione di dimensioni.
+Dovresti usare le impostazioni predefinite di sicurezza o i criteri di accesso condizionale per richiedere l'autenticazione a più fattori per gli accessi all'account utente. Tuttavia, se uno di questi non può essere utilizzato, Microsoft consiglia vivamente l'autenticazione a più fattori per gli account utente con ruoli di amministratore, in particolare il ruolo di amministratore globale, per qualsiasi sottoscrizione di qualsiasi dimensione.
 
 L'autenticazione a più fattori viene abilitata per i singoli account utente dal riquadro **Utenti** attivi dell'interfaccia di amministrazione di Microsoft 365.
 
@@ -173,3 +173,9 @@ Nell'interfaccia di amministrazione di Microsoft 365, è possibile configurare l
 ## <a name="your-next-step"></a>Passaggio successivo
 
 [Configurare l'autenticazione a più fattori per Microsoft 365](set-up-multi-factor-authentication.md)
+
+## <a name="related-topics"></a>Argomenti correlati
+
+[Video: Attivare l'autenticazione a più fattori](https://docs.microsoft.com/microsoft-365/business-video/turn-on-mfa)
+
+[Video: Attivare l'autenticazione a più fattori per il telefono](https://docs.microsoft.com/microsoft-365/business-video/set-up-mfa)

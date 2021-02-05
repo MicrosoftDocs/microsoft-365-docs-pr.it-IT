@@ -22,68 +22,68 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
-description: "Informazioni su come è possibile disporre di più indirizzi di posta elettronica, denominati alias di posta elettronica, associati all'account Microsoft 365 for business. "
-ms.openlocfilehash: 030d8022a8503f6b383d03b0dd97720f66d8f2f6
-ms.sourcegitcommit: 5b769f74bcc76ac8d38aad815d1728824783cd9f
+description: "Informazioni su come è possibile associare più indirizzi di posta elettronica, denominati alias di posta elettronica, all'account di Microsoft 365 per le aziende. "
+ms.openlocfilehash: afb576a0499577b910fe3ed14eff75ae0a52b394
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/08/2020
-ms.locfileid: "45080016"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114034"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Aggiungere un altro alias di posta elettronica per un utente
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
   
-Questo articolo è per gli amministratori di Microsoft 365 che dispongono di sottoscrizioni aziendali. Non è destinato agli utenti privati.
+Questo articolo è per gli amministratori di Microsoft 365 che hanno abbonamenti aziendali. Non è destinato agli utenti privati.
   
-Un indirizzo di posta elettronica principale in Microsoft 365 è in genere l'indirizzo di posta elettronica a cui è stato assegnato un utente quando è stato creato l'account. Quando si invia un messaggio di posta elettronica a un altro utente, l'indirizzo di posta elettronica principale corrisponde in genere al contenuto del campo  *Da*  nelle app di posta elettronica. Possono anche avere più di un indirizzo di posta elettronica associato al proprio account Microsoft 365 for business. Questi indirizzi aggiuntivi sono detti alias. 
+Un indirizzo di posta elettronica principale in Microsoft 365 è in genere l'indirizzo di posta elettronica assegnato a un utente al momento della creazione dell'account. Quando si invia un messaggio di posta elettronica a un altro utente, l'indirizzo di posta elettronica principale corrisponde in genere al contenuto del campo  *Da*  nelle app di posta elettronica. Possono inoltre avere più di un indirizzo di posta elettronica associato al proprio account Microsoft 365 per le aziende. Questi indirizzi aggiuntivi sono detti alias. 
   
-Ad esempio, si supponga che Jenna abbia l'indirizzo di posta elettronica jenna@contosoco.com, ma desidera anche ricevere messaggi di posta elettronica in jen@contosoco.com perché alcune persone si riferiscono a lei con quel nome. È possibile creare alias per lei in modo che entrambi gli indirizzi di posta elettronica vadano alla posta in arrivo di Jenna.
+Si supponga, ad esempio, che Jenna abbia l'indirizzo di posta elettronica jenna@contosoco.com, ma che voglia anche ricevere posta elettronica a jen@contosoco.com perché alcune persone le fanno riferimento con quel nome. È possibile creare alias per l'utente in modo che entrambi gli indirizzi di posta elettronica vadano nella posta in arrivo di Jenna.
 <br><br>  
   
 È possibile creare fino a 400 alias per utente. Non sono previsti ulteriori costi o licenze.
   
 > [!Tip]
-> Se si desidera che più persone gestiscano la posta elettronica inviata a un singolo indirizzo di posta elettronica, come info@NodPublishers.com o sales@NodPublishers.com, creare una cassetta postale condivisa. Per ulteriori informazioni, vedere [creare una cassetta postale condivisa](create-a-shared-mailbox.md).
+> Se si desidera che più persone gestino la posta elettronica inviata a un singolo indirizzo di posta elettronica come info@NodPublishers.com o sales@NodPublishers.com, creare una cassetta postale condivisa. Per ulteriori informazioni, vedere [Creare una cassetta postale condivisa.](create-a-shared-mailbox.md)
   
 ## <a name="add-email-aliases-to-a-user"></a>Aggiungere alias di posta elettronica a un utente
 <a name="AddEmailPreview"> </a>
 
-Per eseguire questa operazione, è necessario disporre [delle autorizzazioni di amministratore](../add-users/about-admin-roles.md) . 
+A tale [scopo, è necessario](../add-users/about-admin-roles.md) disporre delle autorizzazioni di amministratore. 
 
   
 ::: moniker range="o365-worldwide"
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
 
-2. Nella pagina **utenti attivi** selezionare l'utente > gestire gli **alias di posta elettronica**. Questa opzione non viene visualizzata se alla persona non è stata assegnata una licenza. 
+2. Nella pagina **Utenti attivi selezionare** l'utente che > gli alias di posta **elettronica.** Questa opzione non verrà visualizzata se all'utente non è assegnata una licenza. 
     
 3. Selezionare **+ Aggiungi un alias** e immettere un nuovo alias per l'utente.   
     
     > [!Important] 
-    > Se viene visualizzato il messaggio di errore "**non è possibile trovare un parametro che corrisponda al nome del parametro" EmailAddresses**", significa che richiede un po' di tempo per completare la configurazione del tenant o del dominio personalizzato, se ne è stato aggiunto di recente uno. Per completare la configurazione possono essere necessarie fino a 4 ore. Attendere il tempo necessario per il completamento della procedura e quindi riprovare. Se il problema persiste, contattare il supporto, che provvederà a eseguire una sincronizzazione completa.
+    > Se viene visualizzato il messaggio di errore "Impossibile trovare un parametro che corrisponde al nome del parametro **"EmailAddresses",** significa che la configurazione del tenant o del dominio personalizzato richiede più tempo se ne è stato aggiunto uno di recente. Per completare la configurazione possono essere necessarie fino a 4 ore. Attendere il tempo necessario per il completamento della procedura e quindi riprovare. Se il problema persiste, contattare il supporto, che provvederà a eseguire una sincronizzazione completa.
     
   
     > [!IMPORTANT]
     > Se l'abbonamento è stato acquistato presso GoDaddy o un altro partner, per impostare il nuovo alias come principale è necessario accedere alla console di gestione di GoDaddy o del partner. 
   
     > [!TIP]
-    > L'alias di posta elettronica deve terminare con un dominio incluso nell'elenco a discesa. Per aggiungere un altro nome di dominio all'elenco, vedere [aggiungere un dominio a Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
+    > L'alias di posta elettronica deve terminare con un dominio incluso nell'elenco a discesa. Per aggiungere un altro nome di dominio all'elenco, vedere [Aggiungere un dominio a Microsoft 365.](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) 
   
      
-5. Al termine, scegliere **Save Changes**.
+5. Al termine, scegliere **Salva modifiche.**
     
-6. Attendere 24 ore affinché i nuovi alias vengano inseriti in Microsoft 365.
+6. Attendere 24 ore che i nuovi alias si popolino in Microsoft 365.
     
-    L'utente avrà ora un indirizzo primario e un alias. Ad esempio, tutti i messaggi inviati all'indirizzo principale di Eliza Hoffman, Eliza@NodPublishers.com, e il suo alias, Sales@NodPublishers.com, andranno alla posta in arrivo di Eliza.
+    L'utente avrà ora un indirizzo principale e un alias. Ad esempio, tutta la posta inviata all'indirizzo principale di Eliza Hoffman, Eliza@NodPublishers.com e il suo alias, Sales@NodPublishers.com, verranno indirizzati alla cartella Posta in arrivo di Eliza.
     
   
-7. **Quando l'utente risponde, l'indirizzo mittente sarà l'alias *di* posta elettronica principale.** Si supponga, ad esempio, che venga inviato un messaggio a Sales@NodPublishers.com, che arriva nella posta in arrivo di Eliza. Quando Eliza risponde al messaggio, il suo indirizzo di posta elettronica principale verrà visualizzato come mittente, non Sales@NodPublishers.com. 
+7. **Quando l'utente risponde, l'indirizzo *mittente*  sarà il suo alias di posta elettronica principale.** Ad esempio, si supponga che un messaggio sia inviato a Sales@NodPublishers.com e che arrivi nella posta in arrivo di Eliza. Quando Eliza risponde al messaggio, il suo indirizzo di posta elettronica principale verrà visualizzato come mittente, non come Sales@NodPublishers.com. 
     
 ::: moniker-end
 
@@ -94,27 +94,27 @@ Per eseguire questa operazione, è necessario disporre [delle autorizzazioni di 
     
 2. Nella pagina **Utenti attivi** selezionare il nome della persona da modificare.
 
-3. Accanto a **nome utente/alias di posta elettronica**, selezionare **modifica**.
+3. Accanto a **Nome utente/Alias di posta elettronica** selezionare **Modifica.**
 
     > [!Important] 
-    > Se viene visualizzato il messaggio di errore "**non è possibile trovare un parametro che corrisponda al nome del parametro" EmailAddresses**", significa che richiede un po' di tempo per completare la configurazione del tenant o del dominio personalizzato, se ne è stato aggiunto di recente uno. Per completare la configurazione possono essere necessarie fino a 4 ore. Attendere il tempo necessario per il completamento della procedura e quindi riprovare. Se il problema persiste, contattare il supporto, che provvederà a eseguire una sincronizzazione completa.
+    > Se viene visualizzato il messaggio di errore "Impossibile trovare un parametro che corrisponde al nome del parametro **"EmailAddresses",** significa che la configurazione del tenant o del dominio personalizzato richiede più tempo se ne è stato aggiunto uno di recente. Per completare la configurazione possono essere necessarie fino a 4 ore. Attendere il tempo necessario per il completamento della procedura e quindi riprovare. Se il problema persiste, contattare il supporto, che provvederà a eseguire una sincronizzazione completa.
 
-4. Nella casella di testo in **alias**Digitare la prima parte del nuovo alias di posta elettronica. Se è stato aggiunto il proprio dominio a Microsoft 365, è possibile scegliere il dominio per il nuovo alias di posta elettronica utilizzando l'elenco a discesa. Selezionare **Aggiungi**.
+4. Nella casella di testo sotto **Alias** digitare la prima parte del nuovo alias di posta elettronica. Se si è aggiunto il proprio dominio a Microsoft 365, è possibile specificarlo per il nuovo alias usando l'elenco a discesa. Selezionare **Aggiungi**.
 
     > [!IMPORTANT]
     > Se l'abbonamento è stato acquistato presso GoDaddy o un altro partner, per impostare il nuovo alias come principale è necessario accedere alla console di gestione di GoDaddy o del partner. 
   
     > [!TIP]
-    > L'alias di posta elettronica deve terminare con un dominio incluso nell'elenco a discesa. Per aggiungere un altro nome di dominio all'elenco, vedere [aggiungere un dominio a Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
+    > L'alias di posta elettronica deve terminare con un dominio incluso nell'elenco a discesa. Per aggiungere un altro nome di dominio all'elenco, vedere [Aggiungere un dominio a Microsoft 365.](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) 
 
-5. Al termine, seleziona **Salva**.
+5. Al termine, scegliere **Salva**.
 
-6. Attendere 24 ore affinché i nuovi alias vengano inseriti in Microsoft 365. 
+6. Attendere 24 ore che i nuovi alias si popolino in Microsoft 365. 
     
-    L'utente avrà ora un indirizzo primario e un alias. Ad esempio, tutti i messaggi inviati all'indirizzo principale di Eliza Hoffman, Eliza@NodPublishers.com, e il suo alias, Sales@NodPublishers.com, andranno alla posta in arrivo di Eliza.
+    L'utente avrà ora un indirizzo principale e un alias. Ad esempio, tutta la posta inviata all'indirizzo principale di Eliza Hoffman, Eliza@NodPublishers.com e il suo alias, Sales@NodPublishers.com, verranno indirizzati alla cartella Posta in arrivo di Eliza.
     
   
-7. **Quando l'utente risponde, l'indirizzo mittente sarà l'alias *di* posta elettronica principale.** Si supponga, ad esempio, che venga inviato un messaggio a Sales@NodPublishers.com, che arriva nella posta in arrivo di Eliza. Quando Eliza risponde al messaggio, il suo indirizzo di posta elettronica principale verrà visualizzato come mittente, non Sales@NodPublishers.com. 
+7. **Quando l'utente risponde, l'indirizzo *mittente*  sarà il suo alias di posta elettronica principale.** Ad esempio, si supponga che un messaggio sia inviato a Sales@NodPublishers.com e che arrivi nella posta in arrivo di Eliza. Quando Eliza risponde al messaggio, il suo indirizzo di posta elettronica principale verrà visualizzato come mittente, non come Sales@NodPublishers.com. 
 
 ::: moniker-end
 
@@ -125,35 +125,35 @@ Per eseguire questa operazione, è necessario disporre [delle autorizzazioni di 
     
 2. Nella pagina **Utenti attivi** selezionare il nome della persona da modificare.
 
-3. Accanto a **nome utente/alias di posta elettronica**, selezionare **modifica**.
+3. Accanto a **Nome utente/Alias di posta elettronica** selezionare **Modifica.**
 
     > [!Important] 
-    > Se viene visualizzato il messaggio di errore "**non è possibile trovare un parametro che corrisponda al nome del parametro" EmailAddresses**", significa che richiede un po' di tempo per completare la configurazione del tenant o del dominio personalizzato, se ne è stato aggiunto di recente uno. Per completare la configurazione possono essere necessarie fino a 4 ore. Attendere il tempo necessario per il completamento della procedura e quindi riprovare. Se il problema persiste, contattare il supporto, che provvederà a eseguire una sincronizzazione completa.
+    > Se viene visualizzato il messaggio di errore "Impossibile trovare un parametro che corrisponde al nome del parametro **"EmailAddresses",** significa che la configurazione del tenant o del dominio personalizzato richiede più tempo se ne è stato aggiunto uno di recente. Per completare la configurazione possono essere necessarie fino a 4 ore. Attendere il tempo necessario per il completamento della procedura e quindi riprovare. Se il problema persiste, contattare il supporto, che provvederà a eseguire una sincronizzazione completa.
 
-4. Nella casella di testo in **alias**Digitare la prima parte del nuovo alias di posta elettronica. Se è stato aggiunto il proprio dominio a Microsoft 365, è possibile scegliere il dominio per il nuovo alias di posta elettronica utilizzando l'elenco a discesa. Selezionare **Aggiungi**.
+4. Nella casella di testo sotto **Alias** digitare la prima parte del nuovo alias di posta elettronica. Se si è aggiunto il proprio dominio a Microsoft 365, è possibile specificarlo per il nuovo alias usando l'elenco a discesa. Selezionare **Aggiungi**.
 
     > [!IMPORTANT]
     > Se l'abbonamento è stato acquistato presso GoDaddy o un altro partner, per impostare il nuovo alias come principale è necessario accedere alla console di gestione di GoDaddy o del partner. 
   
     > [!TIP]
-    > L'alias di posta elettronica deve terminare con un dominio incluso nell'elenco a discesa. Per aggiungere un altro nome di dominio all'elenco, vedere [aggiungere un dominio a Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain). 
+    > L'alias di posta elettronica deve terminare con un dominio incluso nell'elenco a discesa. Per aggiungere un altro nome di dominio all'elenco, vedere [Aggiungere un dominio a Microsoft 365.](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) 
 
-5. Al termine, seleziona **Salva**.
+5. Al termine, scegliere **Salva**.
 
-6. Attendere 24 ore affinché i nuovi alias vengano inseriti in Microsoft 365. 
+6. Attendere 24 ore che i nuovi alias si popolino in Microsoft 365. 
     
-    L'utente avrà ora un indirizzo primario e un alias. Ad esempio, tutti i messaggi inviati all'indirizzo principale di Eliza Hoffman, Eliza@NodPublishers.com, e il suo alias, Sales@NodPublishers.com, andranno alla posta in arrivo di Eliza.
+    L'utente avrà ora un indirizzo principale e un alias. Ad esempio, tutta la posta inviata all'indirizzo principale di Eliza Hoffman, Eliza@NodPublishers.com e il suo alias, Sales@NodPublishers.com, verranno indirizzati alla cartella Posta in arrivo di Eliza.
     
   
-7. **Quando l'utente risponde, l'indirizzo mittente sarà l'alias *di* posta elettronica principale.** Si supponga, ad esempio, che venga inviato un messaggio a Sales@NodPublishers.com, che arriva nella posta in arrivo di Eliza. Quando Eliza risponde al messaggio, il suo indirizzo di posta elettronica principale verrà visualizzato come mittente, non Sales@NodPublishers.com. 
+7. **Quando l'utente risponde, l'indirizzo *mittente*  sarà il suo alias di posta elettronica principale.** Ad esempio, si supponga che un messaggio sia inviato a Sales@NodPublishers.com e che arrivi nella posta in arrivo di Eliza. Quando Eliza risponde al messaggio, il suo indirizzo di posta elettronica principale verrà visualizzato come mittente, non come Sales@NodPublishers.com. 
 
 ::: moniker-end
 
 
-## <a name="did-you-get-a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>È stato visualizzato "non è possibile trovare un parametro che corrisponda al nome del parametro EmailAddresses"?
+## <a name="did-you-get-a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>È stato visualizzato il messaggio "Impossibile trovare un parametro che corrisponde al nome del parametro EmailAddresses"?
 
 
-Se viene visualizzato il messaggio di errore "**non è possibile trovare un parametro che corrisponda al nome del parametro EmailAddresses**" significa che è necessario un po' di tempo per completare la configurazione del tenant o del dominio personalizzato, se ne è stato aggiunto di recente uno. Per completare la configurazione possono essere necessarie fino a 4 ore. Attendere il tempo necessario per il completamento della procedura e quindi riprovare. Se il problema persiste, contattare il supporto, che provvederà a eseguire una sincronizzazione completa.
+Se viene visualizzato il messaggio di errore "Impossibile trovare un parametro corrispondente al nome del parametro **EmailAddresses",** significa che la configurazione del tenant o del dominio personalizzato richiede più tempo se ne è stato aggiunto uno di recente. Per completare la configurazione possono essere necessarie fino a 4 ore. Attendere il tempo necessario per il completamento della procedura e quindi riprovare. Se il problema persiste, contattare il supporto, che provvederà a eseguire una sincronizzazione completa.
   
 ## <a name="did-you-purchase-your-subscription-from-godaddy-or-another-partner"></a>L'abbonamento è stato acquistato presso GoDaddy o un altro partner?
 

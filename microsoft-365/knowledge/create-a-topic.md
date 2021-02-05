@@ -1,9 +1,10 @@
 ---
-title: 'Creare un nuovo argomento nelle esperienze degli argomenti (anteprima) '
-description: Come creare un nuovo argomento nelle esperienze degli argomenti.
+title: Creare un nuovo argomento in Microsoft Viva Topics
+description: Come creare un nuovo argomento in Microsoft Viva Topics.
 author: efrene
 ms.author: efrene
 manager: pamgreen
+ms.reviewer: cjtan
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -13,61 +14,89 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 982cb4b0f750db9aecbaab6696f57be3f2390d1d
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 35d4615057deee81285ba950a157f28160b6eefa
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976352"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107257"
 ---
-# <a name="create-a-new-topic-preview"></a>Creare un nuovo argomento (anteprima)
+# <a name="create-a-new-topic"></a>Creare un nuovo argomento 
+
+In Viva Topics puoi creare un nuovo argomento se non ne viene individuato uno tramite l'indicizzazione o se la tecnologia di intelligenza artificiale non ha trovato prove sufficienti per stabilirlo come argomento.
 
 > [!Note] 
-> Il contenuto di questo articolo è relativo all'anteprima privata di Project Cortex. [Altre informazioni su Project Cortex](https://aka.ms/projectcortex).
+> Anche se le informazioni contenute in un argomento raccolto dall'intelligenza artificiale sono limitate per motivi di [sicurezza,](topic-experiences-security-trimming.md)tenere presente che le informazioni contenute in un argomento creato manualmente sono visibili a tutti gli utenti che dispongono delle autorizzazioni per visualizzare l'argomento. 
 
-Nelle esperienze di argomento, è possibile creare un nuovo argomento se non si è scoperto tramite l'indicizzazione o se la tecnologia AI non ha trovato prove sufficienti per stabilirlo come argomento.
 
 ## <a name="requirements"></a>Requisiti
 
-Per creare un nuovo argomento, è necessario eseguire le operazioni seguenti:
-- Avere una licenza per l'argomento experiences.
-- Dispongono delle autorizzazioni per gli [**utenti autorizzati a creare o modificare gli argomenti**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions). Gli amministratori delle informazioni possono fornire agli utenti questa autorizzazione nelle impostazioni delle autorizzazioni per l'argomento Knowledge Network. 
+Per creare un nuovo argomento, è necessario:
+- Avere una licenza Viva Topics.
+- Disporre delle autorizzazioni [**per gli utenti che possono creare o modificare argomenti.**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions) Gli amministratori della knowledge base possono concedere agli utenti questa autorizzazione nelle impostazioni delle autorizzazioni dell'argomento Viva Topics. 
 
 > [!Note] 
-> Gli utenti che dispongono dell'autorizzazione per la gestione degli argomenti nel centro argomenti (Knowledge Manager) dispongono già delle autorizzazioni per la creazione e la modifica degli argomenti.
+> Gli utenti che dispongono dell'autorizzazione per gestire gli argomenti nel Centro argomenti (responsabili della knowledge base) dispongono già delle autorizzazioni per creare e modificare gli argomenti.
 
 ## <a name="to-create-a-new-topic"></a>Per creare un nuovo argomento:
 
-1. Nella pagina Centro argomenti selezionare **nuovo** e quindi **pagina argomento**. Se non si è in grado di visualizzare la **nuova** opzione nel centro argomenti, potrebbe non essere necessario disporre delle autorizzazioni necessarie.
+1. Nella sezione **Assegnare un nome all'argomento** digitare il nome del nuovo argomento.
 
-    ![Nuovo argomento](../media/knowledge-management/k-new-topic.png)
+    ![Assegnare un nome a questo argomento](../media/knowledge-management/k-new-topic-page.png) </br> 
 
-2. Nella pagina nuovo argomento, è possibile inserire le informazioni nel nuovo modello di argomento:
 
-    - Nella sezione **nome in questo argomento** Digitare il nome del nuovo argomento.
+2. Nella sezione <b>Nomi alternativi</b> digitare eventuali altri nomi a cui potrebbe essere fatto riferimento nell'argomento. 
+
+    ![Nomi alternativi](../media/knowledge-management/alt-names.png) </br> 
+3. Nella sezione <b>Descrizione</b> digitare un paio di frasi che descrivono l'argomento. 
+
+    ![Descrizione dell'argomento](../media/knowledge-management/description.png)</br>
+
+4. Nella sezione <b>Persone aggiunte</b> puoi "aggiungere" una persona per mostrarla come esperta in materia nell'argomento. Iniziare digitandone il nome o l'indirizzo di posta elettronica nella casella aggiungi <b>un</b> nuovo utente e quindi selezionare l'utente che si desidera aggiungere dai risultati della ricerca. Puoi anche "rimuovere" le voci <b></b> selezionando l'icona Rimuovi dall'elenco nella scheda utente. Puoi anche trascinare la persona per modificare l'ordine di visualizzazione dell'elenco di persone.
+ 
+    ![Persone aggiunte](../media/knowledge-management/pinned-people.png)</br>
+
+
+5. Nella sezione <b>File e</b> pagine aggiunti è possibile aggiungere o aggiungere un file o una pagina del sito di SharePoint associata all'argomento.
+
+   ![File e pagine aggiunti](../media/knowledge-management/pinned-files-and-pages.png)</br>
+ 
+    Per aggiungere un nuovo file, selezionare <b>Aggiungi,</b>selezionare il sito di SharePoint dai siti Frequenti o Seguiti e quindi selezionare il file dalla raccolta documenti del sito.
+
+    È inoltre possibile utilizzare <b>l'opzione</b> Da un collegamento per aggiungere un file o una pagina specificando l'URL. 
+
+
+6.  La <b>sezione Siti correlati</b> mostra i siti che dispongono di informazioni sull'argomento. 
+
+    ![Sezione Siti correlati](../media/knowledge-management/related-sites.png)</br>
+
+    È possibile aggiungere un <b></b> sito correlato selezionando Aggiungi e quindi cercando il sito oppure selezionandolo nell'elenco dei siti frequenti o recenti.</br>
     
-    - Nella sezione **Alternate Names** Digitare nomi o acronimi utilizzati anche per fare riferimento all'argomento.
-    
-    - Nella sezione **Descrizione breve** Digitare una descrizione di una o due frasi dell'argomento. Questo testo verrà utilizzato per la scheda argomento associato.
-    
-    - Nella sezione **utenti** Digitare i nomi degli esperti dell'argomento. Gli utenti aggiunti manualmente all'argomento verranno visualizzati nella pagina dell'argomento come **persone** bloccate.
-    
-    - Nella sezione **file e pagine** selezionare **Aggiungi** e quindi nella pagina successiva è possibile selezionare i file di OneDrive associati o le pagine di SharePoint Online.
-    
-    - Nella sezione **siti** selezionare **Aggiungi**. Nel riquadro  **siti** che viene visualizzato selezionare i siti associati all'argomento.
+    ![Seleziona sito](../media/knowledge-management/sites.png)</br>
 
-    ![Pagina nuovo argomento](../media/knowledge-management/k-new-topic-page.png)
-    
-3. Se è necessario aggiungere altri componenti alla pagina, ad esempio testo, immagini, Web part, collegamenti e così via, selezionare l'icona Canvas al centro della pagina per individuarla e aggiungerla.
+7. Nella <b>sezione Argomenti correlati</b> vengono illustrate le connessioni esistenti tra gli argomenti. È possibile aggiungere una connessione a un argomento diverso selezionando il pulsante Connetti <b>a</b> un argomento correlato, quindi digitando il nome dell'argomento correlato e selezionandolo dai risultati della ricerca. 
 
-    ![Aggiungere elementi alla pagina](../media/knowledge-management/static-icon.png)
+   ![Argomenti correlati](../media/knowledge-management/related-topic.png)</br>  
 
-4. Al termine, fare clic su **pubblica** per pubblicare la pagina dell'argomento. Verranno visualizzate le pagine degli argomenti pubblicati nella scheda **pagine** .
+    È quindi possibile fornire una descrizione del modo in cui sono correlati gli argomenti e selezionare <b>Aggiorna.</b></br>
 
-Dopo aver pubblicato l'articolo, il nome dell'argomento, il nome alternativo, la descrizione e le persone appuntate verranno visualizzati a tutti gli utenti con licenza che visualizzano l'articolo. I file, le pagine e i siti verranno visualizzati solo nella pagina dell'argomento se il visualizzatore ha le autorizzazioni di Office 365 per l'elemento. 
+   ![Descrizione degli argomenti correlati](../media/knowledge-management/related-topics-update.png)</br> 
 
-La pagina nuovo argomento è costituita da Web part che sono *Knowledge Network Aware*. Questo significa che, poiché AI riunisce altre informazioni sull'argomento, le informazioni contenute in queste web part verranno aggiornate con suggerimenti per rendere la pagina più utile agli utenti.
+   L'argomento correlato aggiunto verrà visualizzato come argomento connesso.
+
+   ![Argomenti correlati connessi](../media/knowledge-management/related-topics-final.png)</br> 
+
+
+8. Puoi anche aggiungere elementi statici alla pagina (ad esempio testo, immagini o collegamenti) selezionando l'icona dell'area di disegno, che puoi trovare sotto la breve descrizione. Selezionandola si aprirà la casella degli strumenti di SharePoint da cui è possibile scegliere l'elemento che si desidera aggiungere alla pagina.
+
+   ![Icona Canvas](../media/knowledge-management/webpart-library.png)</br> 
+
+
+9. Selezionare **Pubblica** per salvare le modifiche. 
+
+Dopo aver pubblicato la pagina, il nome dell'argomento, il nome alternativo, la descrizione e gli utenti aggiunti verranno visualizzati per tutti gli utenti con licenza che visualizzano l'argomento. File, pagine e siti specifici verranno visualizzati nella pagina dell'argomento solo se il visualizzatore dispone delle autorizzazioni di Office 365 per l'elemento. 
+
+
 
 ## <a name="see-also"></a>Vedere anche
 

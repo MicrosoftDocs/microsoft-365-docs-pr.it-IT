@@ -21,28 +21,28 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: f09696b2-8c29-4588-a08b-b333da19810c
-description: Informazioni su come rimuovere un vecchio dominio da Microsoft 365 e spostare gli utenti e i gruppi in un altro dominio.
-ms.openlocfilehash: 02ec704e400af76c25c0eb54de10291e2ef3caa2
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+description: Informazioni su come rimuovere un dominio precedente da Microsoft 365 e spostare utenti e gruppi in un altro dominio.
+ms.openlocfilehash: 39f8d97abb3a424251d6847da02f0dcc58baff31
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688262"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114010"
 ---
 # <a name="remove-a-domain"></a>Rimuovere un dominio
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
   
  Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.yml)**. 
   
-Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sottoscrizione di Microsoft 365 diverso? Oppure si desidera semplicemente annullare l'abbonamento? È possibile [modificare il piano o la sottoscrizione](../../commerce/subscriptions/switch-to-a-different-plan.md) oppure [annullare l'abbonamento](../../commerce/subscriptions/cancel-your-subscription.md).
+Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di abbonamento a Microsoft 365 diverso? O vuoi semplicemente annullare l'abbonamento? È possibile [modificare il piano o l'abbonamento o](../../commerce/subscriptions/switch-to-a-different-plan.md) annullare [l'abbonamento.](../../commerce/subscriptions/cancel-your-subscription.md)
   
-### <a name="step-1-move-users-to-another-domain"></a>Passaggio 1: spostare gli utenti in un altro dominio
+### <a name="step-1-move-users-to-another-domain"></a>Passaggio 1: Spostare gli utenti in un altro dominio
 
 #### <a name="move-users"></a>Spostare gli utenti
 
@@ -50,13 +50,13 @@ Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sotto
 
 1. Passare all'<a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">interfaccia di amministrazione</a>.
 
-2. Selezionare **utenti** > **attivi**.
+2. Selezionare **Utenti** > **attivi**.
 
 3. Selezionare le caselle accanto ai nomi di tutti gli utenti che si desidera spostare.
 
-4. Selezionare **altre opzioni** (**...**), nella parte superiore della pagina e quindi scegliere **Cambia domini**.
+4. Selezionare **Altre opzioni** (**...**) nella parte superiore della pagina e quindi scegliere **Cambia domini.**
 
-5. Nel riquadro **Cambia domini** , selezionare un dominio diverso.
+5. Nel riquadro **Cambia domini** selezionare un dominio diverso.
 
 È necessario eseguire questa operazione anche per se stessi se si usa il dominio che si intende rimuovere. Quando si modifica il dominio per il proprio account, per proseguire è necessario disconnettersi e accedere di nuovo con il nuovo dominio scelto.
 
@@ -66,13 +66,13 @@ Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sotto
 
 1. Passare all'<a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">interfaccia di amministrazione</a>.  
 
-2. Selezionare **utenti** > **attivi**.
+2. Selezionare **Utenti** > **attivi**.
 
 3. Selezionare le caselle accanto ai nomi di tutti gli utenti che si desidera spostare.
 
-4. Nella parte superiore della pagina, scegliere **altri** > **domini di modifica**.
+4. At the top of the page, choose **More** > **Edit domains.**
 
-5. Nel riquadro **modifica domini** selezionare un dominio diverso.
+5. Nel riquadro **Modifica domini** selezionare un dominio diverso.
   
 È necessario eseguire questa operazione anche per se stessi se si usa il dominio che si intende rimuovere. Quando si modifica il dominio per il proprio account, per proseguire è necessario disconnettersi e accedere di nuovo con il nuovo dominio scelto.
 
@@ -82,29 +82,29 @@ Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sotto
 
 1. Passare all'<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">interfaccia di amministrazione</a>.  
 
-2. Selezionare **utenti** > **attivi**.
+2. Selezionare **Utenti** > **attivi**.
 
 3. Selezionare le caselle accanto ai nomi di tutti gli utenti che si desidera spostare.
 
-4. Nella parte superiore della pagina, scegliere **altri** > **domini di modifica**.
+4. At the top of the page, choose **More** > **Edit domains.**
 
-5. Nel riquadro **modifica domini** selezionare un dominio diverso.
+5. Nel riquadro **Modifica domini** selezionare un dominio diverso.
   
 È necessario eseguire questa operazione anche per se stessi se si usa il dominio che si intende rimuovere. Quando si modifica il dominio per il proprio account, per proseguire è necessario disconnettersi e accedere di nuovo con il nuovo dominio scelto.
 
 ::: moniker-end
 
-#### <a name="move-yourself"></a>Sposta te stesso
+#### <a name="move-yourself"></a>Spostare se stessi
 
 ::: moniker range="o365-worldwide"
 
 1. Passare all'<a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">interfaccia di amministrazione</a>.
 
-2. Passare a **utenti** \> **attivi** e selezionare l'account dall'elenco.
+2. Passare a **Utenti** \> **attivi e** selezionare l'account nell'elenco.
 
-3. Nella scheda **account** selezionare **Gestisci nome utente** e quindi scegliere un dominio diverso.
+3. Nella scheda **Account** selezionare Gestisci nome **utente** e quindi scegliere un dominio diverso.
   
-4. Nella parte superiore, seleziona il nome dell'account, quindi seleziona **Esci**.
+4. At the top, select your account name, then select **Sign Out**.
 
 5. Accedere con il nuovo dominio e la stessa password.
 
@@ -114,13 +114,13 @@ Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sotto
 
 ::: moniker range="o365-germany"
 
-1. Vai a **utenti** \> **attivi** e seleziona il tuo nome nell'elenco.
+1. Passare  a \> **Utenti attivi e** selezionare il proprio nome nell'elenco.
 
-2. Nella sezione **nome utente/indirizzo di posta elettronica** selezionare **modifica** e quindi scegliere un dominio diverso.
+2. Nella sezione **Nome utente/posta** elettronica selezionare **Modifica** e quindi scegliere un dominio diverso.
 
-3. Selezionare **Imposta come Primary** > **Save** > **Close**.
+3. Selezionare **Imposta come principale** > **Salva** > **chiudi.**
   
-4. Nella parte superiore, seleziona il nome dell'account, quindi seleziona **Esci**.
+4. At the top, select your account name, then select **Sign Out**.
 
 5. Accedere con il nuovo dominio e la stessa password.
 
@@ -130,13 +130,13 @@ Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sotto
 
 ::: moniker range="o365-21vianet"
 
-1. Vai a **utenti** \> **attivi** e seleziona il tuo nome nell'elenco.
+1. Passare  a \> **Utenti attivi e** selezionare il proprio nome nell'elenco.
 
-2. Nella sezione **nome utente/indirizzo di posta elettronica** selezionare **modifica** e quindi scegliere un dominio diverso.
+2. Nella sezione **Nome utente/posta** elettronica selezionare **Modifica** e quindi scegliere un dominio diverso.
 
-3. Selezionare **Imposta come Primary** > **Save** > **Close**.
+3. Selezionare **Imposta come principale** > **Salva** > **chiudi.**
   
-4. Nella parte superiore, seleziona il nome dell'account, quindi seleziona **Esci**.
+4. At the top, select your account name, then select **Sign Out**.
 
 5. Accedere con il nuovo dominio e la stessa password.
 
@@ -144,13 +144,13 @@ Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sotto
 
 ::: moniker-end
 
-### <a name="step-2-move-groups-to-another-domain"></a>Passaggio 2: spostare i gruppi in un altro dominio
+### <a name="step-2-move-groups-to-another-domain"></a>Passaggio 2: Spostare i gruppi in un altro dominio
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **gruppi** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank"></a> .
+1. Nell'interfaccia di amministrazione  passare alla pagina \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2052855" target="_blank">Gruppi di</a> gruppi.
   
-2. Selezionare il nome del gruppo, quindi nella scheda **generale** sotto **indirizzo di posta elettronica, primario**, selezionare **modifica**.
+2. Selezionare il nome del gruppo e quindi nella scheda **Generale** in Indirizzo di posta **elettronica, Primario,** selezionare **Modifica.**
 
 3. Utilizzare l'elenco a discesa per scegliere un altro dominio.
 
@@ -160,9 +160,9 @@ Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sotto
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Amministrazione</a>, andare alla pagina **gruppi** >  .
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Nell'interfaccia di amministrazione</a>passare alla pagina **Gruppi** > **di** gruppi.
 
-2. Selezionare il nome del gruppo e quindi fare clic su **modifica** accanto a **nome**.
+2. Selezionare il nome del gruppo e quindi selezionare **Modifica** accanto a **Nome.**
 
 3. Utilizzare l'elenco a discesa per scegliere un altro dominio.
 
@@ -172,9 +172,9 @@ Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sotto
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Amministrazione</a>, andare alla pagina **gruppi** >  .
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Nell'interfaccia di amministrazione</a>passare alla pagina **Gruppi** > **di** gruppi.
 
-2. Selezionare il nome del gruppo e quindi fare clic su **modifica** accanto a **nome**.
+2. Selezionare il nome del gruppo e quindi selezionare **Modifica** accanto a **Nome.**
 
 3. Utilizzare l'elenco a discesa per scegliere un altro dominio.
 
@@ -192,25 +192,25 @@ Si sta rimuovendo il dominio perché si desidera aggiungerlo a un piano di sotto
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina dei domini di **installazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank"></a> .
+1. Nell'interfaccia di amministrazione passare alla **pagina Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=854615" target="_blank">Domains.</a>
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina dei domini di **installazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank"></a> .
+1. Nell'interfaccia di amministrazione passare alla **pagina Setup** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2007048" target="_blank">Domains.</a>
 
 ::: moniker-end
   
-2. Nella pagina **Domains** selezionare il dominio che si desidera rimuovere.
+2. Nella pagina **Domini** selezionare il dominio che si desidera rimuovere.
 
-3. Nel riquadro a destra, selezionare **Rimuovi**.
+3. Nel riquadro destro selezionare **Rimuovi.**
 
-4. Seguire le istruzioni aggiuntive e quindi fare clic su **Chiudi**.
+4. Seguire eventuali istruzioni aggiuntive e quindi selezionare **Chiudi.**
 
 ## <a name="how-long-does-it-take-for-a-domain-to-be-removed"></a>Quanto ci vuole per rimuovere un dominio?
 
-La rimozione di un dominio in molti luoghi come gruppi di sicurezza, liste di distribuzione, utenti e gruppi di Microsoft 365 può richiedere meno di 5 minuti a Microsoft 365. Se sono presenti molti riferimenti che usano il dominio, la rimozione può richiedere diverse ore (un giorno).
+La rimozione di un dominio in Microsoft 365 può richiedere fino a 5 minuti se non vi si fa riferimento in molte posizioni, ad esempio gruppi di sicurezza, liste di distribuzione, utenti e gruppi di Microsoft 365. Se sono presenti molti riferimenti che usano il dominio, la rimozione può richiedere diverse ore (un giorno).
   
 Se ci sono centinaia o migliaia di utenti, usare PowerShell per eseguire query per tutti gli utenti e spostarli in un altro dominio. In caso contrario, alcuni utenti potrebbero risultare mancanti nell'interfaccia utente e quindi, quando si rimuove il dominio, non sarà possibile spostarli e non si riuscirà a individuare la causa del problema. Per altre informazioni, vedere [Set-MsolUserPrincipalName](https://docs.microsoft.com/powershell/module/msonline/set-msoluserprincipalname?view=azureadps-1.0). Per impostare il dominio predefinito, usare [Set-MsolDomain](https://docs.microsoft.com/powershell/module/msonline/set-msoldomain?view=azureadps-1.0).
   
@@ -219,7 +219,7 @@ Se ci sono centinaia o migliaia di utenti, usare PowerShell per eseguire query p
 ::: moniker range="o365-worldwide"
 
 > [!NOTE]
-> Non si riesce a rimuovere il dominio [".onmicrosoft.com"](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) dall'account. Quando si rimuove un dominio, gli account utente ritorneranno all'indirizzo ". onmicrosoft.com" come SMTP principale/UserprincipalName.
+> Non si riesce a rimuovere il dominio [".onmicrosoft.com"](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) dall'account. Quando si rimuove un dominio, gli account utente ripristinano l'indirizzo ".onmicrosoft.com" come SMTP primario/UserprincipalName.
   
 Il problema persiste? Potrebbe essere necessario rimuovere manualmente il dominio. [Contattare il supporto](../contact-support-for-business-products.md) per ottenere assistenza.
   

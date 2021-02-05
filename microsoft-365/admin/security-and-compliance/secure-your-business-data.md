@@ -1,5 +1,5 @@
 ---
-title: I 10 modi principali per proteggere i piani di Microsoft 365 per le aziende
+title: 10 modi principali per proteggere i piani di Microsoft 365 per le aziende
 f1.keywords:
 - CSH
 ms.author: sirkkuw
@@ -22,23 +22,23 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Proteggere la posta elettronica aziendale e i dati da minacce informatiche, tra cui ransomware, phishing e allegati dannosi. '
-ms.openlocfilehash: a329d2879309812a516191fdbd1858ad10e4beeb
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 3ae6d896d5ef060e2f077167f81e2029a3a143ac
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926331"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114406"
 ---
-# <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>I 10 modi principali per proteggere i piani di Microsoft 365 per le aziende
+# <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>10 modi principali per proteggere i piani di Microsoft 365 per le aziende
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
-Se si è un'organizzazione di piccole o medie dimensioni che utilizza uno dei piani aziendali di Microsoft e il tipo di organizzazione è destinato a criminali informatici e hacker, utilizzare le linee guida in questo articolo per aumentare la sicurezza dell'organizzazione. Queste linee guida consentono all'organizzazione di raggiungere gli obiettivi descritti nel Manuale della campagna per la cybersecurity dell'Istituto Di cybersecurity di School School [Disodati.](https://go.microsoft.com/fwlink/p/?linkid=2015598)
+Se si è un'organizzazione di piccole o medie dimensioni che utilizza uno dei piani aziendali di Microsoft e il tipo di organizzazione è destinato a criminali informatici e hacker, utilizzare le linee guida in questo articolo per aumentare la sicurezza dell'organizzazione. Queste linee guida consentono all'organizzazione di raggiungere gli obiettivi descritti nel Manuale della campagna per la cybersecurity dell'Istituto di cybersecurity di School School [Disodati.](https://go.microsoft.com/fwlink/p/?linkid=2015598)
 
 Microsoft consiglia di completare le attività elencate nella tabella seguente applicabili al piano di servizio.
 
@@ -62,10 +62,10 @@ Prima di iniziare, controllare [microsoft 365 Secure Score](https://docs.microso
 ## <a name="1-set-up-multi-factor-authentication"></a>1: configurare l'autenticazione a più fattori
 <a name="setup"> </a>
 
-L'utilizzo dell'autenticazione a più fattori è uno dei modi più semplici ed efficaci per aumentare la sicurezza dell'organizzazione. È più facile di quanto sembri: quando accedi, l'autenticazione a più fattori significa che dovrai digitare un codice dal telefono per accedere a Microsoft 365. Ciò può impedire agli hacker di assumere il controllo se conoscono la password. L'autenticazione a più fattori è anche detta verifica in due passaggi. Gli utenti possono aggiungere facilmente la verifica in due passaggi alla maggior parte degli account, ad esempio agli account Google o Microsoft. Ecco come aggiungere la [verifica in due passaggi al tuo account Microsoft personale.](https://go.microsoft.com/fwlink/p/?linkid=2016403)
+L'utilizzo dell'autenticazione a più fattori è uno dei modi più semplici ed efficaci per aumentare la sicurezza dell'organizzazione. È più facile di quanto sembri: quando accedi, l'autenticazione a più fattori significa che dovrai digitare un codice dal telefono per accedere a Microsoft 365. Ciò può impedire agli hacker di prendere il controllo se conoscono la password. L'autenticazione a più fattori è anche detta verifica in due passaggi. Gli utenti possono aggiungere facilmente la verifica in due passaggi alla maggior parte degli account, ad esempio agli account Google o Microsoft. Ecco come aggiungere la [verifica in due passaggi al tuo account Microsoft personale.](https://go.microsoft.com/fwlink/p/?linkid=2016403)
 
 Per le aziende che usano Microsoft 365, aggiungere un'impostazione che richiede agli utenti di accedere con l'autenticazione a più fattori. Quando apporti questa modifica, agli utenti verrà richiesto di configurare il telefono per l'autenticazione a due fattori al successivo accesso.
-Per un video di formazione su come configurare l'autenticazione a più fattori e su come gli utenti completano la configurazione, vedi configurare l'autenticazione a più fattori [e](https://support.microsoft.com/office/e12187b8-216a-4490-9e3b-df34a06fb787) la configurazione [degli utenti.](https://support.microsoft.com/office/a32541df-079c-420d-9395-9d59354f7225)
+Per un video di formazione su come configurare l'autenticazione a [](https://support.microsoft.com/office/e12187b8-216a-4490-9e3b-df34a06fb787) più fattori e su come gli utenti completano la configurazione, vedi configurare l'autenticazione a più fattori [e la configurazione degli utenti.](https://support.microsoft.com/office/a32541df-079c-420d-9395-9d59354f7225)
 
 Per configurare l'autenticazione a più fattori, attivare le impostazioni predefinite di sicurezza:
 
@@ -81,11 +81,11 @@ Se l'abbonamento è nuovo, l'impostazione predefinita della sicurezza potrebbe e
 4. Nella parte inferiore della pagina scegliere **Gestire le impostazioni di sicurezza predefinite**.
 5. Scegliere **Sì** per abilitare le impostazioni di sicurezza predefinite o **No** per disabilitare le impostazioni predefinite per la sicurezza, quindi scegliere **Salva**.
 
-Dopo aver configurato l'autenticazione a più fattori per l’organizzazione, agli utenti verrà richiesto di impostare la verifica in due passaggi sui loro dispositivi. Per ulteriori informazioni, vedere Configurare la verifica in due passaggi [per Microsoft 365.](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
+Dopo aver configurato l'autenticazione a più fattori per l’organizzazione, agli utenti verrà richiesto di impostare la verifica in due passaggi sui loro dispositivi. Per altre informazioni, vedere Configurare la verifica in due passaggi [per Microsoft 365.](https://support.microsoft.com/office/ace1d096-61e5-449b-a875-58eb3d74de14)
 
 Per informazioni dettagliate e suggerimenti completi, vedere [Configurare l'autenticazione](set-up-multi-factor-authentication.md)a più fattori per gli utenti.
 
-## <a name="2-train-your-users"></a>2: Formare gli utenti
+## <a name="2-train-your-users"></a>2: formare gli utenti
 <a name="train"> </a>
 
 Il manuale della campagna per la [cybersecurity](https://go.microsoft.com/fwlink/p/?linkid=2015598) della scuola Disaffezione Disaffezione offre una guida eccellente per stabilire una forte cultura della sicurezza all'interno dell'organizzazione, inclusa la formazione degli utenti per identificare gli attacchi di phishing.
@@ -139,7 +139,7 @@ Per ulteriori informazioni, vedere [Protezione antimalware in EOP.](https://docs
 
 Ransomware limita l'accesso ai dati crittografando i file o bloccando gli schermi del computer. Tenta quindi di estorcere denaro dalle vittime chiedendo un "riscatto", in genere sotto forma di criptovalute come Il Denaro, in cambio dell'accesso ai dati.
 
-È possibile proteggersi dal ransomware creando una o più regole del flusso di posta per bloccare le estensioni di file comunemente utilizzate per ransomware o per avvisare gli utenti che ricevono questi allegati tramite posta elettronica. Un buon punto di partenza è la creazione di due regole:
+È possibile proteggersi dal ransomware creando una o più regole del flusso di posta per bloccare le estensioni di file comunemente utilizzate per ransomware o per avvisare gli utenti che ricevono questi allegati tramite posta elettronica. Un buon punto di partenza è creare due regole:
 
 - Avvisare gli utenti prima di aprire file allegati di Office che includono macro. Ransomware può essere nascosto all'interno delle macro, quindi avvertiremo gli utenti di non aprire questi file da persone che non conoscono.
 
@@ -157,11 +157,11 @@ Per creare una regola di trasporto della posta, visualizzare [un breve video di 
 
 5. Applicare le impostazioni nella tabella seguente per ogni regola. Lasciare il resto delle impostazioni come predefinito, a meno che non si desideri modificarle.
 
-6. Seleziona **Salva**.
+6. Selezionare **Salva**.
     
 | Impostazione | Avvisare gli utenti prima di aprire gli allegati dei file di Office | Bloccare i tipi di file che potrebbero contenere ransomware o altro codice dannoso |
 |:-----|:-----|:-----|
-|Nome  <br/> |Regola anti-ransomware: avvisare gli utenti  <br/> |Regola anti-ransomware: bloccare i tipi di file  <br/> |
+|Nome  <br/> |Regola anti-ransomware: avvisa gli utenti  <br/> |Regola anti-ransomware: bloccare i tipi di file  <br/> |
 |Applicare questa regola se . . .  <br/> |Qualsiasi allegato. . . l'estensione del file corrisponde a . . .  <br/> |Qualsiasi allegato. . . l'estensione del file corrisponde a . . .  <br/> |
 |Specificare parole o frasi  <br/> |Aggiungi questi tipi di file:  <br/> dotm, docm, xlsm, sltm, xla, xlam, xll, pptm, potm, ppam, ppsm, sldm  <br/> |Aggiungi questi tipi di file:  <br/> ade, adp, ani, bas, bat, chm, cmd, com, cpl, crt, hlp, ht, hta, inf, ins, isp, job, js, jse, lnk, mda, mdb, mde, mde, msc, msi, msp, mst, pcd, reg, scr, sct, shs, url, vb, vbe, vbs, wsc, wsf, wsh, exe, pif  <br/> |
 |Eseguire le operazioni seguenti. . .  <br/> |Anteporre una dichiarazione di non responsabilità  <br/> |Blocca il messaggio. . . rifiutare il messaggio e includere una spiegazione  <br/> |
@@ -193,7 +193,7 @@ Per creare una regola di trasporto della posta:
 
 5. Applicare le impostazioni nella tabella seguente. Lasciare il resto delle impostazioni come predefinito, a meno che non si desideri modificarle.
 
-6. Seleziona **Salva**.
+6. Selezionare **Salva**.
 
 |Impostazione|Rifiutare i messaggi di posta elettronica di inoltro automatico ai domini esterni|
 |---|---|
@@ -219,7 +219,7 @@ L'organizzazione potrebbe aver configurato opzioni aggiuntive che applicano un'e
 
 ### <a name="to-send-protected-email"></a>Per inviare posta elettronica protetta
 
-In Outlook per PC, selezionare **Opzioni nel** messaggio di posta elettronica e quindi scegliere **Autorizzazioni.**
+In Outlook per PC, selezionare **Opzioni** nel messaggio di posta elettronica e quindi scegliere **Autorizzazioni.**
 
 ![Crittografia dei messaggi di posta elettronica in Outlook](../../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639a.png)
 
@@ -270,7 +270,7 @@ Per creare un criterio anti-phishing in Defender per Office 365, visualizzare un
 |Applicato a|Selezionare **Il dominio del destinatario è**. In **Uno dei seguenti**, selezionare **Scegli**. Selezionare **+ Aggiungi**. Selezionare la casella di controllo accanto al nome del dominio, ad esempio contoso.com, nell'elenco e quindi selezionare **Aggiungi.** Scegliere **Fatto**.|
 |
 
-Per ulteriori informazioni, vedere [Configurare i criteri anti-phishing in Defender per Office 365.](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies)
+Per altre informazioni, vedere [Configurare i criteri anti-phishing in Defender per Office 365.](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies)
 
 ## <a name="9-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>9: proteggere da allegati e file dannosi con allegati sicuri
 <a name="atp"> </a>
@@ -285,7 +285,7 @@ Per creare un criterio allegati sicuri, visualizzare un [breve video di formazio
 
 3. Nella pagina Criteri selezionare **Allegati sicuri.**
 
-4. Nella pagina Allegati sicuri, applicare questa protezione a livello generale selezionando la casella di controllo Attiva ATP per **SharePoint, OneDrive e Microsoft Teams.**
+4. Nella pagina Allegati sicuri applicare questa protezione a livello generale selezionando la casella di controllo Attiva ATP per **SharePoint, OneDrive e Microsoft Teams.**
 
 5. Selezionare **+** questa opzione per creare un nuovo criterio.
 
@@ -329,9 +329,9 @@ Per modificare il criterio predefinito:
 
 2. In **Impostazioni applicabili al contenuto in Office 365** immettere un URL da bloccare, ad esempio _example.com_ e selezionare **+** .
 
-3. In **Impostazioni che si** applicano al contenuto ad eccezione della posta elettronica, selezionare Le applicazioni di **Office 365,** Non tenere traccia di quando gli utenti fanno clic su collegamenti sicuri e non consentire agli utenti di fare clic su collegamenti sicuri all'URL **originale.**
+3. In Impostazioni che **si** applicano al contenuto ad eccezione della posta elettronica, selezionare Le applicazioni di **Office 365,** Non tenere traccia di quando gli utenti fanno clic su collegamenti sicuri e non consentire agli utenti di fare clic su collegamenti sicuri all'URL **originale.**
 
-4. Seleziona **Salva**.
+4. Selezionare **Salva**.
 
 Per creare un nuovo criterio destinato a tutti i destinatari nel dominio:
 
@@ -339,7 +339,7 @@ Per creare un nuovo criterio destinato a tutti i destinatari nel dominio:
 
 2. Applicare le impostazioni elencate nella tabella seguente.
 
-3. Seleziona **Salva**.
+3. Selezionare **Salva**.
 
 |Impostazione o opzione|Impostazione consigliata|
 |---|---|

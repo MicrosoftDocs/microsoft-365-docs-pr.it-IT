@@ -21,25 +21,25 @@ ms.custom:
 search.appverid:
 - MET150
 description: Informazioni su come modificare la frequenza di fatturazione per l'abbonamento aziendale.
-ms.openlocfilehash: 0a4dccd69092c849637a5c79bd1bfe6d7faa1202
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 77d2e72b7b315f223cc6ab7faf3e53f8354218ae
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545931"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114884"
 ---
 # <a name="change-your-billing-frequency"></a>Modificare la frequenza di fatturazione
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
-Quando si acquista un abbonamento, è possibile scegliere la fatturazione mensile o annuale. Per modificare la frequenza di fatturazione per un abbonamento, attenersi alla seguente procedura.
+Quando si acquista un abbonamento, si sceglie la fatturazione mensile o annuale. Per modificare la frequenza di fatturazione di una sottoscrizione, eseguire la procedura seguente.
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione** dei \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
-2. Nella scheda **prodotti** selezionare l'abbonamento che si desidera modificare.
-3. Nella sezione **impostazioni di sottoscrizione e pagamento** della pagina Dettagli sottoscrizione selezionare **modifica frequenza fatturazione**.
-4. Nel riquadro **Edit Frequency Billing** scegliere l'opzione per la frequenza con cui si desidera effettuare la fatturazione, quindi selezionare **Cambia**.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti.</a>
+2. Nella scheda **Prodotti**, selezionare l'abbonamento che si vuole cambiare.
+3. Nella sezione Impostazioni sottoscrizione e pagamento della pagina dei dettagli **dell'abbonamento** selezionare **Modifica frequenza di fatturazione.**
+4. Nel riquadro **Modifica frequenza di** fatturazione scegliere l'opzione per la frequenza di fatturazione, quindi selezionare **Cambia.**

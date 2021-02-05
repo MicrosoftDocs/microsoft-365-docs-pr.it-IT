@@ -1,74 +1,65 @@
 ---
-title: Mostrare o nascondere le nuove funzionalità con Gestione novità
-f1.keywords:
-- NOCSH
-ms.author: sirkkuw
-author: sirkkuw
-manager: scotv
-audience: Admin
-ms.topic: article
-ms.service: o365-administration
-localization_priority: Normal
-ms.collection:
+title: "Manage which Office features appear in What's New" f1.keywords:
+- NOCSH ms.author: danbrown author: DHB-MSFT manager: scotv audience: Admin ms.topic: article ms.service: o365-administration localization_priority: Normal ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC
-ms.custom: AdminSurgePortfolio
-search.appverid:
+- Adm_TOC ms.custom: AdminSurgePortfolio search.appverid:
 - BCS160
 - MET150
-- MOE150
-description: Decidere quali funzionalità e quali nuovi contenuti vengono visualizzati o nascosti dagli utenti finali in Office What ' s New Management for Office desktop apps.
-ms.openlocfilehash: 8a7511845dbcce56848834178ed81cd7b919de42
-ms.sourcegitcommit: e56894917d2aae05705c3b9447388d10e2156183
-ms.translationtype: MT
-ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48841412"
+- Descrizione MOE150: "Decidere quali funzionalità di Office mostrare o nascondere quando un utente sceglie Guida > Novità nella propria app di Office in Windows usando la funzionalità "Novità di Office" nell'interfaccia di amministrazione di Microsoft 365."
 ---
-# <a name="show-or-hide-new-features-using-whats-new-management"></a>Mostrare o nascondere le nuove funzionalità con Gestione novità
 
-**Office What ' s New Management for Windows** consente all'organizzazione di decidere quali funzionalità sono mostrate agli utenti finali nelle app desktop di Office. L'anteprima del contenuto consente di visualizzare il nuovo contenuto per ogni versione di rilascio e canale. È quindi possibile scegliere se nascondere o mostrare il nuovo contenuto per ogni caratteristica per gli utenti finali. 
+# <a name="manage-which-office-features-appear-in-whats-new"></a>Gestire le caratteristiche di Office visualizzate in Novità
 
-Il **nuovo contenuto nelle app desktop di Office** evidenzia un elenco delle nuove funzionalità rilasciate per un'applicazione. Contiene anche una breve descrizione e spesso un'immagine o un video per aiutare i clienti a imparare a usare la caratteristica. 
+Quando viene rilasciata una funzionalità importante di Office, gli utenti riceveranno un messaggio in proposito quando scelgono ?? Novità nella  >   propria app di Office in Windows.
 
-**Office What ' s New** Management è disponibile nell'interfaccia di amministrazione di Microsoft 365 e tramite il [servizio di configurazione client](https://config.office.com).
+È possibile controllare quali di queste funzionalità vengono visualizzati dagli utenti usando la funzionalità Novità **di Office nell'interfaccia** di amministrazione di Microsoft 365. Se si decide di nascondere un messaggio di funzionalità agli utenti, è sempre possibile tornare in seguito e decidere di mostrarlo agli utenti.
 
 > [!NOTE]
-> Amministratore globale e ruoli di amministratore di Office Apps gestire il nuovo contenuto visualizzato dagli utenti nelle app di Office.
+> - Nascondere un messaggio di funzionalità agli utenti non disabilita la funzionalità nell'app di Office.
+> - Per usare la funzionalità Novità di Office, è necessario disporre del ruolo di amministratore globale o di amministratore delle app **di Office.**
 
-##  <a name="show-or-hide-new-features"></a>Mostrare o nascondere le nuove funzionalità 
+## <a name="show-or-hide-new-features"></a>Mostrare o nascondere le nuove funzionalità 
 
-Gli amministratori possono visualizzare in anteprima il **nuovo** contenuto di un canale e gestire la versione del contenuto utilizzando la nuova gestione di **Office** .
+1. Nell'interfaccia di amministrazione di Microsoft 365, in **Impostazioni,** scegliere **Impostazioni organizzazione.**
+2. Nella scheda **Servizi** scegliere Novità **di Office.**
+3. Quando fai clic sul nome della funzionalità, viene visualizzato un riquadro a comparsa con le informazioni seguenti:
+     - Breve descrizione della funzionalità.
+     - Collegamento a un articolo per ulteriori informazioni sulla funzionalità.
+     - Le applicazioni di Office in cui viene visualizzata la caratteristica.
+     - La prima versione (versione) in cui è disponibile la funzionalità per tale canale.
+4. Scegliere **Nascondi dagli utenti.** In caso contrario, se in precedenza la funzionalità era stata celata, scegliere **Mostra agli utenti.**
 
-1. Nell'interfaccia di amministrazione di Microsoft 365, in **Impostazioni** , scegliere **Impostazioni organizzazione** .
-2. Nella scheda **Servizi** scegliere **Office What ' s New Management** .
-3. Selezionare una o più caratteristiche per visualizzare il nome della caratteristica, una breve descrizione, l'applicazione di destinazione e la versione finale di ogni caratteristica nel riquadro di volo.
-4. Scegliere **Nascondi da utenti** o **Mostra agli utenti** .  
-    Lo stato **visualizzato per impostazione predefinita** indica che le informazioni sulle caratteristiche vengono visualizzate per impostazione predefinita per gli utenti finché l'amministratore non imposta lo stato di una caratteristica su **nascosto** o **visualizzato** .  
+È inoltre possibile selezionare più caratteristiche nella pagina Gestisci le caratteristiche di **Office** visualizzate nella pagina Novità e quindi scegliere Nascondi **o** **Mostra.**
 
-    > [!NOTE]
-    > Se una funzionalità è disponibile in più app di Office, l'impostazione della caratteristica su nascosto nasconde l'annuncio della caratteristica in tutte le app di Office.
+> [!NOTE]
+> - Se una caratteristica è disponibile in più  app di Office, impostandola su Nascosta, il messaggio della funzionalità viene nascosto in tutte le app di Office.
+> - Per impostazione predefinita, tutti i messaggi di funzionalità vengono visualizzati agli utenti. Questo è lo stato predefinito per tutte le funzionalità e lo stato cambia solo se si è scelto di nascondere o visualizzare un messaggio di funzionalità.
+> - È anche possibile accedere alla funzionalità **Novità di Office dall'interfaccia** di amministrazione di Microsoft 365 Apps ( [https://config.office.com](https://config.office.com) ). La caratteristica è disponibile in  >  **Personalizzazione - Nuova gestione.**
 
-Nuove funzionalità vengono visualizzate in Office What ' s New Management in base a questa pianificazione:
+## <a name="list-of-features"></a>Elenco delle caratteristiche
+
+È possibile filtrare le caratteristiche visualizzate nella pagina Gestisci **le caratteristiche di Office visualizzate nella pagina** Novità. È possibile filtrare in base al canale, all'applicazione o allo stato oppure in base a una combinazione di essi.
+
+Le nuove funzionalità vengono visualizzate nella pagina in base alla pianificazione seguente:
 
 ||||
 |:-----|:-----|:-----|
-|**Canale** <br/> |**In Gestione anteprime** <br/> |**Azione** <br/> |
-|**Corrente** <br/> |15 del mese  <br/> |1-3 settimane prima della pubblicazione mensile <br/> |
-|**Enterprise mensile** <br/> |Primo del mese  <br/> |Due settimane prima della versione principale che apporta nuove funzionalità |
-|**Organizzazione semestrale (anteprima)** <br/> |Settembre 1 e marzo 1 <br/> | 2 settimane prima della versione principale che apporta nuove funzionalità|
-|**Azienda semestrale** <br/> |Gen 1 e luglio 1 <br/> | 2 settimane prima della versione principale che apporta nuove funzionalità<br/> |
+|**Canale** <br/> |**Data** <br/> |**Eseguire un'azione** <br/> |
+|**Current** <br/> |15 del mese  <br/> |1 - 3 settimane prima del rilascio mensile <br/> |
+|**Enterprise mensile** <br/> |Primo del mese  <br/> |Due settimane prima del rilascio principale che offre nuove funzionalità |
+|**Enterprise semestra elettronica (anteprima)** <br/> |1 settembre e 1 marzo <br/> | 2 settimane prima del rilascio principale che offre nuove funzionalità|
+|**Enterprise semestra elettronica** <br/> |1 gennaio e 1 luglio <br/> | 2 settimane prima del rilascio principale che offre nuove funzionalità<br/> |
 
-Per ulteriori informazioni sulle pianificazioni degli aggiornamenti dei canali, vedere [Update History for Microsoft 365 Apps (elencato in base alla data)](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date).
+Per altre informazioni sul momento in cui vengono rilasciate nuove versioni per ogni canale di aggiornamento, vedere Cronologia degli aggiornamenti per [Microsoft 365 Apps (elencate in base alla data).](https://docs.microsoft.com/officeupdates/update-history-microsoft365-apps-by-date)
 
-## <a name="add-office-whats-new-management-card-to-the-admin-center-home-page"></a>Aggiungere la nuova scheda di gestione di Office alla Home page dell'interfaccia di amministrazione
+## <a name="add-the-whats-new-in-office-card-to-the-admin-center-home-page"></a>Aggiungere la scheda "Novità di Office" alla home page dell'interfaccia di amministrazione
 
-1. Nella pagina Microsoft 365 admin scegliere **Add Card** nella parte superiore della pagina
-2. Individuare le **novità nelle app di Office** nell'elenco e sceglierlo.
-3. Una volta che la scheda è presente nella Home page, è possibile scegliere **Gestisci** per [mostrare o nascondere le caratteristiche](#show-or-hide-new-features) per l'organizzazione. 
+1. Nella pagina di amministrazione di Microsoft 365 scegliere **Aggiungi scheda** nella parte superiore della pagina
+2. Individuare **Gestisci le caratteristiche di Office visualizzate nell'elenco** Novità e sceglierla.
+3. Dopo aver visualizzato la scheda nella home page, è possibile scegliere Novità **di Office** per visualizzare o nascondere le [funzionalità](#show-or-hide-new-features) dell'organizzazione.
 
 
 ## <a name="related-articles"></a>Articoli correlati
 
-[Office What ' s New Management è ora generalmente disponibile](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-what-s-new-management-is-now-generally-available/ba-p/1179954)
+[La gestione delle novità di Office è ora disponibile a livello generale](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-what-s-new-management-is-now-generally-available/ba-p/1179954)

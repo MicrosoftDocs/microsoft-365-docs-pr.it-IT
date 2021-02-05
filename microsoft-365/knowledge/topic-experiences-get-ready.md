@@ -1,152 +1,147 @@
 ---
-title: Preparare l'ambiente per le esperienze di argomento (anteprima)
-description: Prepara l'ambiente in modo che sia possibile fornire il massimo contenuto possibile per gli utenti con esperienze di argomento (anteprima).
+title: Prepara l'ambiente per gli argomenti di Microsoft Viva
+description: Prepara l'ambiente in modo da poter fornire il maggior numero possibile di contenuti agli utenti con Microsoft Viva Topics.
 ms.author: samanro
 author: samanro
 manager: pamgreen
-ms.date: 7/20/2020
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.custom: Adopt
 search.appverid: ''
 localization_priority: Normal
-ROBOTS: NOINDEX
-ms.openlocfilehash: 19112b222be328eb75b7eea807bea94e524fd56d
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 5a13af3e78848471b436d44ab051eca945176c74
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49683437"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107697"
 ---
-# <a name="get-your-environment-ready-for-topic-experiences-preview"></a>Preparare l'ambiente per le esperienze di argomento (anteprima)
+# <a name="get-your-environment-ready-for-microsoft-viva-topics"></a>Prepara l'ambiente per gli argomenti di Microsoft Viva
 
-> [!Note]
-> Il contenuto di questo articolo è relativo all'anteprima privata di Project Cortex. [Altre informazioni su Project Cortex](https://aka.ms/projectcortex).
+Per ottenere il massimo dagli argomenti viva, è necessario includere il maggior numero possibile di contenuti per l'individuazione degli argomenti, in modo da poter disporre di una ricca serie di argomenti per gli utenti. Ma quale contenuto deve essere usato per l'individuazione degli argomenti? Come è possibile ottimizzare il contenuto indicizzato, mantenendo il controllo? Maggiore è l'ambito del contenuto, migliori sono le informazioni che l'intelligenza artificiale può scoprire. In questo articolo viene illustrata la procedura di pianificazione per assicurarsi di includere il contenuto appropriato e di disporre delle persone e delle risorse appropriate per un'esperienza ottimale per gli utenti.
 
-Per sfruttare al meglio le esperienze degli argomenti, si desidera includere il contenuto più possibile incluso nell'argomento Discovery, in modo che sia possibile disporre di un set di temi completo per gli utenti. Tuttavia, quali contenuti devono essere utilizzati per l'individuazione degli argomenti? In che modo è possibile massimizzare il contenuto indicizzato, mantenendo il controllo? Maggiore è il contenuto nell'ambito, maggiore è la comprensione dell'intelligenza artificiale. In questo articolo vengono illustrati i passaggi per la pianificazione per garantire che si includa il contenuto appropriato e che siano disponibili le persone e le risorse appropriate per creare una buona esperienza per gli utenti.
+Per pianificare Viva Topics, è necessario:
 
-Per pianificare le esperienze sugli argomenti (anteprima), è necessario:
-
-![Eseguire la migrazione, la connessione, la modernizzazione, la sicurezza e l'identificazione dei passaggi per l'onboarding per la gestione delle informazioni](../media/knowledge-management/km-adoption-onboarding-checklist.png)
+![Eseguire la migrazione, connettersi, modernizzare, proteggere e identificare i passaggi per l'onboarding alla gestione delle conoscenze](../media/knowledge-management/km-adoption-onboarding-checklist.png)
 
 1. [Eseguire la migrazione del contenuto a SharePoint](#1-migrate-content-to-microsoft-365)
-    - Nell'argomento data mining è incluso solo il contenuto nei siti di SharePoint.
-      - Se possibile, eseguire la migrazione di contenuto prezioso in SharePoint Online da origini esterne.
-      - Definire la priorità delle origini di contenuto con un elevato potenziale di conoscenza tacita.
-      - Evidenziare i vantaggi offerti dalla Knowledge Management per incoraggiare gli utenti a spostare contenuto da OneDrive a siti di SharePoint.
+    - L'indicizzazione degli argomenti include solo il contenuto dei siti di SharePoint.
+      - Se possibile, eseguire la migrazione di contenuti importanti in SharePoint Online da origini esterne.
+      - Assegnare priorità alle origini di contenuto con un elevato potenziale per la conoscenza tacita.
+      - Evidenziare i vantaggi della gestione delle informazioni per incoraggiare gli utenti a spostare il contenuto da OneDrive ai siti di SharePoint.
 
-2. [Connettere informazioni a Microsoft Graph](#2-connect-information-to-microsoft-graph)
-    - In futuro, il contenuto esterno può essere introdotto nel grafico delle informazioni e diventare disponibile.
-    - Per i contenuti che non possono essere spostati, è consigliabile utilizzare i connettori grafico per migliorare la ricerca e prepararsi per l'inclusione futura.
+2. [Connettere le informazioni a Microsoft Graph](#2-connect-information-to-microsoft-graph)
+    - In futuro, il contenuto esterno potrà essere inserito nel knowledge graph e diventare disponibile.
+    - Per i contenuti che non possono essere spostati, è consigliabile utilizzare i connettori graph per migliorare la ricerca e prepararsi per l'inclusione futura.
 
 3. [Modernizzare le pagine di SharePoint](#3-modernize-sharepoint-pages)
-    - Le schede degli argomenti possono essere riemerse solo nelle pagine moderne.
-    - Identificare le pagine classiche di alto profilo che sono candidati alla modernizzazione.
+    - Le schede degli argomenti possono essere etere solo nelle pagine moderne.
+    - Identificare le pagine classiche di alto profilo candidate alla modernizzazione.
 
 4. [Proteggere il contenuto in modo appropriato](#4-secure-content-appropriately)
-    - Le risorse dell'argomento sono rimosse dalla sicurezza in base alle autorizzazioni di un utente.
-    - Identificare qualsiasi contenuto che potrebbe presentare autorizzazioni non corrette per la larghezza o la limitazione:
-      - Incoraggiare i proprietari dei siti a utilizzare i report di condivisione per esaminare le autorizzazioni
-      - Gli amministratori devono controllare il contenuto condiviso in senso lato tramite la ricerca
-      - Incoraggiare i proprietari di contenuti a condividere il contenuto che non è sensibile e che potrebbero avere un vantaggio più ampio per l'organizzazione.
-    - Esaminare la configurazione di Microsoft Graph su utenti e contenuti:
-      - Argomento data mining la configurazione che esclude il contenuto dalla ricerca o dall'approfondimento. Controllare se queste configurazioni sono ancora rilevanti.
+    - Le risorse degli argomenti sono limitate per motivi di sicurezza in base alle autorizzazioni di un utente.
+    - Identificare eventuali contenuti che potrebbero disporre di autorizzazioni estese o restrittive in modo errato:
+      - Incoraggiare i proprietari dei siti a usare i report di condivisione per esaminare le autorizzazioni
+      - Fare in modo che gli amministratori controllino il contenuto ampiamente condiviso tramite la ricerca
+      - Incoraggiare i proprietari di contenuti a condividere contenuti non sensibili e che potrebbero avere vantaggi più ampi per l'organizzazione.
+    - Esaminare la configurazione di Microsoft Graph per gli utenti e il contenuto:
+      - L'indicizzazione degli argomenti rispetta la configurazione escludendo il contenuto dalla ricerca o dal delve (ad esempio, NOINDEX). Verificare se queste configurazioni sono ancora pertinenti.
 
-5. [Identificare i responsabili della conoscenza e gli argomenti](#5-identify-knowledge-managers-and-topics)
-    - Utilizzare le tassonomie esistenti per creare manualmente gli argomenti.
-    - Identificare gli esperti in materia (PMI) per gli argomenti previsti o con seeding.
-    - Identificare i siti che coprono un corpo di dati di valore elevato che è possibile utilizzare per l'estrazione degli argomenti pilota.
-    - Coinvolgere i Knowledge Manager e le community di pratica.
+5. [Identificare i knowledge manager e gli argomenti](#5-identify-knowledge-managers-and-topics)
+    - Usa tassonomie esistenti per creare manualmente argomenti o assistenza per confermare gli argomenti suggeriti dall'intelligenza artificiale.
+    - Identificare gli esperti in materia (SME) per argomenti anticipati o seeded.
+    - Identificare i siti che coprono una grande quantità di dati importanti che possono essere utilizzati per il mining di argomenti pilota.
+    - Coinvolgere i knowledge manager e le community pratiche.
 
-## <a name="1-migrate-content-to-microsoft-365"></a>1. eseguire la migrazione del contenuto a Microsoft 365
+## <a name="1-migrate-content-to-microsoft-365"></a>1. Eseguire la migrazione del contenuto a Microsoft 365
 
-Sono disponibili diversi strumenti e servizi per la migrazione: è possibile ottenere una panoramica e informazioni su come eseguire la migrazione [per eseguire la migrazione del contenuto a Microsoft 365](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online). Gli strumenti di migrazione includono:
+Sono disponibili diversi strumenti e servizi utili per la migrazione: è possibile ottenere una panoramica e informazioni su come eseguire la migrazione in Eseguire la migrazione dei contenuti a [Microsoft 365.](https://docs.microsoft.com/sharepointmigration/migrate-to-sharepoint-online) Gli strumenti di migrazione includono:
 
 - [Gestione migrazione](https://docs.microsoft.com/sharepointmigration/mm-get-started)
 - [Strumento di migrazione di SharePoint](https://docs.microsoft.com/sharepointmigration/introducing-the-sharepoint-migration-tool)
 - [Microsoft 365 FastTrack](https://www.microsoft.com/fasttrack/microsoft-365)
-- [Strumenti e servizi di migrazione dei partner](https://www.microsoft.com/solution-providers)
+- [Strumenti e servizi per la migrazione dei partner](https://www.microsoft.com/solution-providers)
 
-Sfruttare al massimo la migrazione:
+Utilizzare al meglio la migrazione:
 
-- Eseguire la migrazione a un sito moderno che include Microsoft teams. Durante l'indicizzazione può verificarsi su qualsiasi sito di SharePoint (classico o moderno), la visualizzazione di argomenti per gli utenti tramite evidenziazioni e le schede si verifica solo nelle pagine moderne.
-- Maintain usernames-la maggior parte degli strumenti di migrazione consente di eseguire il mapping delle identità degli utenti nella migrazione, in modo che le proprietà create o modificate da vengano mantenute dopo la migrazione. Questo è importante per gli argomenti, poiché la paternità dei file viene utilizzata per identificare gli esperti che vengono aggiunti a una pagina o a una scheda di argomento. 
-- Rendere descrittivo i nomi degli account di servizio-ci saranno alcuni casi in cui non è possibile mantenere il nome utente. Ad esempio, se si sta eseguendo la migrazione di contenuto creato da un utente che non è più un dipendente dell'organizzazione. In questa istanza, la maggior parte degli strumenti di migrazione sposterà un file come se fosse stato creato da un account di amministratore o da un account di servizio. In caso contrario, l'account di servizio potrebbe essere elencato in base a argomenti come esperti. Questo è il luogo in cui la denominazione di quell'account diventa molto importante. Se lo si rende descrittivo, la presenza di questi account non umani sarà comprensibile per gli utenti che utilizzano gli argomenti.
+- Eseguire la migrazione a un sito moderno, che include Microsoft Teams. Anche se l'indicizzazione può avvenire in qualsiasi sito di SharePoint (classico o moderno), la visualizzazione di argomenti agli utenti tramite evidenziazioni e schede avviene solo nelle pagine moderne.
+- Mantenere i nomi utente: la maggior parte degli strumenti di migrazione consente di mappare le identità degli utenti durante la migrazione, in modo che le proprietà come Creato da o Modificato da siano mantenute dopo la migrazione. Questo è importante per gli argomenti perché la creazione dei file viene utilizzata per identificare gli esperti che vengono aggiunti a una pagina o a una scheda dell'argomento. 
+- Rendere descrittivi i nomi degli account di servizio: in alcuni casi non è possibile mantenere i nomi utente. Ad esempio, se si esegue la migrazione di contenuto creato da un utente che non è più un dipendente dell'organizzazione. In questo caso, la maggior parte degli strumenti di migrazione sposta un file come se fosse stato creato da un account amministratore o da un account di servizio. In questo caso, l'account di servizio potrebbe essere elencato per gli argomenti come esperto. È qui che la denominazione dell'account diventa molto importante. Se si rende descrittivo, la presenza di questi account non umani sarà comprensibile agli utenti che utilizzano gli argomenti.
 
-## <a name="2-connect-information-to-microsoft-graph"></a>2. connettere informazioni a Microsoft Graph
+## <a name="2-connect-information-to-microsoft-graph"></a>2. Connettere le informazioni a Microsoft Graph
 
-Se non è possibile eseguire la migrazione di contenuto, collegarlo al grafico Microsoft:
+Se non è possibile eseguire la migrazione di alcuni contenuti, connetterlo con Microsoft Graph:
 
-- Prendere in considerazione l'implementazione di [connettori del contenuto grafico](https://docs.microsoft.com/microsoftsearch/connectors-overview). Utilizzando i connettori, il contenuto esterno può essere indicizzato in Microsoft Graph, in cui gli utenti possono quindi scoprirlo tramite Microsoft Search.
-- Gli sviluppi futuri porteranno i dati esterni in esperienze di argomento.
+- Prendere in considerazione [l'implementazione di Graph Content Connectors.](https://docs.microsoft.com/microsoftsearch/connectors-overview) Utilizzando i connettori, il contenuto esterno può essere indicizzato in Microsoft Graph, dove gli utenti possono individuarlo tramite Microsoft Search.
+- Gli sviluppi futuri porteranno i dati esterni in Viva Topics.
 
-## <a name="3-modernize-sharepoint-pages"></a>3. modernizzare le pagine di SharePoint
+## <a name="3-modernize-sharepoint-pages"></a>3. Modernizzare le pagine di SharePoint
 
-Poiché le schede e i punti salienti degli argomenti possono essere visualizzati solo nelle pagine moderne, aggiornare tutte le pagine che si desidera includere nelle esperienze di argomento da classico a moderno. Vedere [modernizzare i siti di SharePoint classici](https://docs.microsoft.com/sharepoint/dev/transform/modernize-classic-sites). È possibile utilizzare lo [scanner di modernizzazione di SharePoint](https://docs.microsoft.com/sharepoint/dev/transform/modernize-scanner) per preparare i siti classici per la modernizzazione.
+Poiché le schede degli argomenti e le evidenziazioni possono essere visualizzate solo nelle pagine moderne, aggiorna le pagine che vuoi includere in Viva Topics dal classico al moderno. Vedere [Modernizzare i siti di SharePoint classici.](https://docs.microsoft.com/sharepoint/dev/transform/modernize-classic-sites) È possibile utilizzare lo [scanner di modernizzazione di SharePoint per](https://docs.microsoft.com/sharepoint/dev/transform/modernize-scanner) preparare i siti classici per la modernizzazione.
 
-Se si dispone di un gran quantità di siti classici, assegnare la priorità alle pagine di alto profilo per la conversione in versione moderna.
+Se si dispone di molti siti classici, assegnare priorità alle pagine di alto profilo per la conversione in moderna.
 
-## <a name="4-secure-content-appropriately"></a>4. proteggere il contenuto in modo appropriato
+## <a name="4-secure-content-appropriately"></a>4. Proteggere il contenuto in modo appropriato
 
-Quando gli utenti interagiscono con una scheda di argomento o una pagina di argomento, possono visualizzare risorse diverse. Ciò è dovuto al fatto che hanno accesso a diversi file associati all'argomento. Se le autorizzazioni sottostanti sono troppo rigorose, gli aspetti fortuiti dell'individuazione delle informazioni tramite gli argomenti potrebbero essere diminuiti. D'altra parte, se sono troppo larghe, un argomento potrebbe esporre il contenuto a un utente che non si intende visualizzare.
-La gestione delle autorizzazioni valide è critica qui. And good Permissions Management si basa su una partnership continua tra amministratori e proprietari di contenuti. Anche se potrebbe essere un'attività in corso, è possibile eseguire alcuni passaggi pratici per la preparazione degli argomenti:
+Quando gli utenti interagiscono con una scheda argomento o una pagina di argomento, possono visualizzare risorse diverse. Ciò è dovuto al fatto che hanno accesso a file diversi associati all'argomento. Se le autorizzazioni sottostanti sono troppo rigide, gli aspetti più serendipiti dell'individuazione delle informazioni tramite gli argomenti potrebbero essere ridotte. D'altra parte, se sono troppo ampi, un argomento potrebbe presentare contenuto a un utente che non vuoi che veda.
+Una buona gestione delle autorizzazioni è fondamentale in questo caso. Inoltre, una buona gestione delle autorizzazioni si basa su una partnership continua tra amministratori e proprietari di contenuti. Anche se può trattarsi di un'attività continua, esistono alcuni passaggi pratici che è possibile eseguire durante la preparazione degli argomenti:
 
-- Incoraggiare i proprietari dei siti a esaminare la condivisione e le autorizzazioni.
+- Incoraggiare i proprietari dei siti a rivedere la condivisione e le autorizzazioni.
 
-  I proprietari dei siti di SharePoint possono esaminare un report di condivisione per il sito in cui sono visualizzati tutti i dettagli di tutte le autorizzazioni e i collegamenti di condivisione configurati nel sito, vedere [condivisione di report](https://docs.microsoft.com/sharepoint/sharing-reports). In questo elenco vengono elencati gli utenti interni ed esterni.
+  I proprietari dei siti di SharePoint possono esaminare un report di condivisione per il proprio sito che mostra tutti i dettagli di tutte le autorizzazioni e i collegamenti di condivisione configurati nel sito, vedere [Rapporti di condivisione.](https://docs.microsoft.com/sharepoint/sharing-reports) Vengono elencati gli utenti interni ed esterni (guest).
 
-  I proprietari dei siti possono anche vedere chi ha le autorizzazioni per il sito accedendo alle pagine delle impostazioni per le autorizzazioni per il **sito** e le **autorizzazioni avanzate** .
+  I proprietari dei siti possono inoltre vedere chi dispone delle autorizzazioni per il sito andando nelle **pagine Autorizzazioni sito** e Impostazioni avanzate **autorizzazioni.**
 
-  1. Nel sito scegliere **Impostazioni**  >  **sito autorizzazioni**. Controllare se sono elencati i proprietari dei siti, i membri del sito e i visitatori del sito. Controllare gli utenti guest.
-  2. Nella pagina **autorizzazioni** scegliere **Impostazioni avanzate autorizzazioni**. È possibile controllare le autorizzazioni esclusive e vedere chi ha accesso limitato a qualsiasi elemento del sito.
+  1. Nel sito scegliere **Impostazioni** autorizzazioni  >  **sito.** Verificare chi è elencato in Proprietari del sito, Membri del sito e Visitatori del sito. Verificare la presenza di eventuali utenti guest.
+  2. Nella pagina **Autorizzazioni** scegliere **Impostazioni avanzate autorizzazioni.** È possibile verificare la presenza di autorizzazioni univoche e vedere chi ha accesso limitato a qualsiasi elemento del sito.
 
-- Controllare i gruppi e i team di Microsoft 365 per assicurarsi che siano impostati in modo appropriato come gruppi o team pubblici o privati. I nuovi team e i gruppi di Microsoft 365 sono impostati come privati per impostazione predefinita, ma quando sono stati rilasciati per la prima volta come pubblico Se si è in precedenza adottanti queste tecnologie, potrebbe essere necessario esaminare. Inoltre, la funzione di un team si evolve spesso nel ciclo di vita e potrebbe essere necessario aggiornare l'impostazione in modo da riflettere l'utilizzo corrente del team.
-- Esaminare l'utilizzo di "tutti", "tutti tranne gli utenti esterni" o gruppi di sicurezza di grandi dimensioni. Il contenuto può essere condiviso erroneamente con questi valori. Per esaminare l'utilizzo di questi gruppi, è possibile eseguire le operazioni seguenti:
-  - Creare un account privo di appartenenze a gruppi
-  - Utilizzare la ricerca con questo account per individuare il contenuto ampiamente condiviso.
-  - Se il contenuto inappropriato è visibile per questo account tramite la ricerca, è possibile collaborare con i proprietari dei siti per correggere la configurazione delle autorizzazioni.
+- Controllare i gruppi di Microsoft 365 e Teams per verificare che siano impostati in modo appropriato come gruppi o team pubblici o privati. I nuovi team e i gruppi di Microsoft 365 sono impostati come privati per impostazione predefinita, ma al primo rilascio sono pubblici per impostazione predefinita. Se si sono già adottati in precedenza queste tecnologie, è consigliabile esaminarlo. Inoltre, la funzione di un team spesso si evolve nel corso del ciclo di vita e l'impostazione potrebbe dover essere aggiornata in modo da riflettere l'uso corrente del team.
+- Esaminare l'uso di "tutti", "tutti tranne gli utenti esterni" o gruppi di sicurezza generali. Il contenuto potrebbe essere condiviso in modo errato con questi valori. Per esaminare l'uso di questi gruppi, è possibile:
+  - Creare un account senza appartenenza a gruppi
+  - Usare la ricerca con questo account per individuare contenuti condivisi su larga parte.
+  - Se il contenuto inappropriato è visibile a questo account tramite la ricerca, è possibile collaborare con i proprietari del sito per correggere la configurazione delle autorizzazioni.
 
-Oltre alle autorizzazioni, è anche possibile controllare l'ambito di ciò che è individuabile tramite gli argomenti. Si è sempre in controllo di ciò che è indicizzato.
+Oltre alle autorizzazioni, è anche possibile controllare l'ambito di ciò che è individuabile tramite gli argomenti. Si ha sempre il controllo di ciò che è indicizzato.
 
-Gli amministratori possono configurare l'indicizzazione nell'interfaccia di amministrazione di Microsoft 365. Quando si configura la [gestione delle informazioni](set-up-topic-experiences.md), è possibile:
+Gli amministratori possono configurare l'indicizzazione nell'interfaccia di amministrazione di Microsoft 365. Quando si configura [Knowledge Management,](set-up-topic-experiences.md)è possibile:
 
-- Consenti l'individuazione in tutti i siti di SharePoint o specifica i siti da includere o escludere come origini degli argomenti.
-- Se si dispone di termini riservati, è possibile escludere anche gli argomenti per nome. Ad esempio, se si ha il nome di un progetto sensibile, in cui non si desidera che venga visualizzata un'evidenziazione o una scheda, indipendentemente dalle autorizzazioni dell'utente, è possibile escludere il nome del progetto.
+- Consentire l'individuazione in tutti i siti di SharePoint o specificare i siti da includere o escludere come origini degli argomenti.
+- Se si dispone di termini riservati, è anche possibile escludere gli argomenti in base al nome. Ad esempio, se hai il nome di un progetto sensibile, in cui non vuoi visualizzare un'evidenziazione o una scheda, indipendentemente dalle autorizzazioni dell'utente, puoi escludere il nome del progetto.
 
-A livello di contenuto, è anche possibile controllare gli elementi individuabili. Tutte le configurazioni eseguite per escludere il contenuto dalla ricerca verranno utilizzate anche dall'individuazione del contenuto. Ad esempio, se è stata esclusa una raccolta documenti specifica che viene visualizzata nei risultati di ricerca, questa raccolta documenti non verrà utilizzata per l'individuazione degli argomenti.
+A livello di contenuto, è anche possibile controllare gli elementi individuabili. Tutte le configurazioni eseguite per escludere il contenuto dalla ricerca verranno usate anche dall'individuazione del contenuto. Se ad esempio si è esclusa la visualizzazione di una raccolta documenti specifica nei risultati di ricerca, questa raccolta documenti non verrà utilizzata per l'individuazione degli argomenti.
 
-## <a name="5-identify-knowledge-managers-and-topics"></a>5. identificare Knowledge Manager e argomenti
+## <a name="5-identify-knowledge-managers-and-topics"></a>5. Identificare i knowledge manager e gli argomenti
 
-La gestione degli argomenti prevede tre ruoli chiave, tra cui due nuovi ruoli di Azure Active Directory (AAD): Knowledge Administrator e Knowledge Manager:
+La gestione degli argomenti implica tre ruoli chiave, tra cui due nuovi ruoli di Azure Active Directory (AAD): Amministratore delle conoscenze e Knowledge Manager:
 
-- L'amministratore della Knowledge base (KA) è un ruolo tecnico, in genere in esso. Questo ruolo consente la configurazione dell'argomento experiences nell'interfaccia di amministrazione di M365, nonché la configurazione dell'argomento Discovery and Visibility.
-- Il Knowledge Manager (KM) è compatibile con gli argomenti stessi e supervisiona la qualità e la completezza.
-- Gli argomenti contributori (TCs) non si basano su un ruolo AAD, bensì sulle autorizzazioni nell'interfaccia di amministrazione. Sono esperti in grado di curare il contenuto degli argomenti, l'aggiunta di risorse e persone.
+- L'amministratore della knowledge base (KA) è un ruolo tecnico, in genere nell'IT. Questo ruolo consente la configurazione degli argomenti Viva nell'interfaccia di amministrazione di M365, nonché la configurazione dell'individuazione e della visibilità degli argomenti.
+- Il Knowledge Manager (KM) collabora con gli argomenti e supervisiona la qualità e la completezza.
+- I collaboratori agli argomenti (TC) non si basano su un ruolo di AAD, ma sulle autorizzazioni nell'interfaccia di amministrazione. Sono esperti in materia in grado di curare il contenuto degli argomenti, aggiungendo risorse e persone.
 
-A seconda dell'organizzazione, è possibile che si disponga di poche o numerose persone che agiscono in questi ruoli. Per alcune organizzazioni, possono essere le stesse persone.
+A seconda dell'organizzazione, potrebbero essere presenti poche o molte persone che agiscono in questi ruoli. Per alcune organizzazioni, queste potrebbero essere le stesse persone.
 
-| Amministratore delle informazioni | Knowledge Manager | Collaboratore dell'argomento |
+| Amministratore della knowledge base | Knowledge Manager | Collaboratore argomento |
 |:-------|:-------|:-------|:-------|
-| Ruolo AAD | Ruolo AAD | PMI |
+| Ruolo AAD | Ruolo AAD | SME |
 | Ha accesso all'interfaccia di amministrazione | Ha accesso all'interfaccia di amministrazione | Nessun accesso all'interfaccia di amministrazione |
-| Configura le esperienze degli argomenti | Possiede la gestione e la qualità degli argomenti | Contribuisce agli argomenti in base alle proprie competenze. |
-| Assicura che gli standard di sicurezza e conformità siano applicati e comprendano il contratto di licenza.| Esegue le attività di gestione degli argomenti, ad esempio, creare, modificare, eliminare e rifiutare. Supporta gli argomenti che collaborano con le rispettive attività. | Cura le informazioni e il contenuto nelle pagine degli argomenti, tra cui le persone e le risorse sono state bloccate a quell'argomento. |
+| Configura Viva Topics | È proprietaria della gestione e della qualità degli argomenti | Contribuisce agli argomenti in base alle proprie competenze. |
+| Garantisce l'applicazione degli standard di sicurezza e conformità e comprende il contratto di licenza.| Esegue attività di gestione degli argomenti, ad esempio la creazione, la modifica, l'eliminazione e il rifiuto di argomenti. Supporta i collaboratori degli argomenti con le loro attività. | Cura le informazioni e il contenuto nelle pagine degli argomenti, incluse le persone e le risorse aggiunte a tale argomento. |
 
-I punti salienti e le schede verranno visualizzati dagli utenti nel contesto del lavoro, ad esempio quando sfogliano le pagine moderne in SharePoint. È possibile controllare l'esperienza dell'utente finale per gli argomenti.
+Le evidenziazioni e le schede verranno visualizzate agli utenti nel contesto del proprio lavoro, ad esempio quando esplorano le pagine moderne in SharePoint. È possibile controllare l'esperienza dell'utente finale per gli argomenti.
 
-- Chi può visualizzare gli argomenti? La visibilità dell'argomento è configurata nell'interfaccia di amministrazione di Microsoft 365. Scegliere i gruppi che consentono di visualizzare gli argomenti:
-  - Tutti gli utenti dell'organizzazione. "Tutti" non include gli ospiti, sono tutti gli utenti interni nella directory
-  - Solo persone o gruppi di sicurezza selezionati (questa opzione è valida anche quando si eseguono ancora le esperienze sugli argomenti, in modo da poter eseguire il test con un sottoinsieme di utenti). Se si desidera che gli utenti visualizzino gli argomenti, è necessario utilizzare l'opzione "persone o gruppi di sicurezza selezionati" e concedere loro una licenza.
+- Chi può visualizzare gli argomenti? La visibilità degli argomenti è configurata nell'interfaccia di amministrazione di Microsoft 365. Scegliere i gruppi da consentire di visualizzare gli argomenti:
+  - Tutti gli utenti dell'organizzazione. "Tutti" non include gli utenti guest, ma tutti gli utenti interni nella directory
+  - Solo le persone o i gruppi di sicurezza selezionati (questa opzione è valida durante l'implementazione di Viva Topics, in modo da poter testare con un sottoinsieme di utenti). Se si desidera che gli utenti guest visualizzano gli argomenti, è necessario utilizzare l'opzione "Utenti o gruppi di sicurezza selezionati" e concedere loro una licenza.
   - Nessuno.
 
-    Tutti gli utenti, anche gli utenti guest, dovranno applicare una licenza per visualizzare l'argomento Experience. E ricorda che le autorizzazioni controllano sempre ciò che può essere visto.
+    Tutti gli utenti, anche gli utenti guest, dovranno disporre di una licenza applicata per visualizzare l'esperienza dell'argomento. Tenere presente che le autorizzazioni controllano sempre ciò che può essere visualizzato.
 
-- Quali sono gli argomenti visibili? È possibile scegliere di:
+- Quali argomenti sono visibili? È possibile scegliere di:
   - Mostra tutti gli argomenti candidati.
   - Mostra solo gli argomenti confermati.
 
-Ora che sono presenti i responsabili, gli esperti e gli utenti, è possibile parlare degli argomenti stessi.
+Ora che abbiamo i responsabili, gli esperti e gli utenti, possiamo parlare degli argomenti.
 
-- È consigliabile eseguire il seeding degli argomenti nell'elenco dei temi. La qualità e la quantità degli argomenti si basano sul contenuto: verrà creato solo come argomento se è incluso nel contenuto che si trova nell'ambito. Se sono disponibili informazioni e prove sufficienti per l'argomento, verrà creato dall'IA. Gli argomenti di seeding sono il luogo in cui possono essere utili gli esperti del Knowledge Manager e del soggetto. La combinazione della conoscenza umana con l'IA è il percorso migliore per gli argomenti di qualità. Pertanto, se sono presenti argomenti che possono essere creati manualmente, è possibile creare questi elementi nell'argomento centro. In questo modo si otterrà un segnale forte della pertinenza dell'argomento e verranno identificate le risorse e gli utenti da associare a questo argomento.
-- Utilizzare le tassonomie esistenti per facilitare la pianificazione dell'argomento, sia da SharePoint o altrove. Le tassonomie esistenti includono spesso termini organizzativi, prodotti, aree tematiche e così via. Le origini per gli argomenti possono provenire anche da elenchi di progetti, segnalibri di ricerca esistenti e così via.
+- È buona norma eseguire il seeder degli argomenti nell'elenco degli argomenti. La qualità e la quantità di argomenti si basano sul contenuto, che verrà creato come argomento solo se è incluso nel contenuto nell'ambito. Se sono disponibili informazioni e prove sufficienti per l'argomento, verrà creato dall'IA. Negli argomenti relativi al seeding è possibile aiutare il Knowledge Manager e gli esperti in materia. La combinazione delle conoscenze umane con l'intelligenza artificiale è il percorso migliore per gli argomenti relativi alla qualità. Pertanto, se ci sono argomenti che prevedi di poter creare manualmente nel Centro argomenti. In questo modo l'intelligenza artificiale riceverà un segnale forte della pertinenza di tale argomento e identificherà le risorse e le persone da associare a tale argomento.
+- Usare tassonomie esistenti per facilitare la pianificazione dell'argomento, da SharePoint o altrove. Le tassonomie esistenti spesso includono termini dell'organizzazione, prodotti, aree soggette e così via. Le origini degli argomenti possono inoltre derivare da elenchi di progetti, segnalibri di ricerca esistenti e così via.

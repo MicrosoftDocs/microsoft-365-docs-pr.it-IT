@@ -21,25 +21,25 @@ search.appverid:
 - GEA150
 ms.assetid: a36e5a52-4df2-479e-bb97-9e67b8483e10
 description: Informazioni su come apportare modifiche al profilo dell'organizzazione, ad esempio nome dell'organizzazione, indirizzo, telefono, contatto tecnico e posta elettronica.
-ms.openlocfilehash: 334bd1bee0571ba173987b7767465e8d82d7efe9
-ms.sourcegitcommit: 50f10d83fa21db8572adab90784146e5231e3321
+ms.openlocfilehash: 3c3a936c8961373a94dc8b8978dbc274048af09c
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "50058436"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114226"
 ---
 # <a name="change-your-organizations-address-technical-contact-and-more"></a>Modificare l'indirizzo dell'organizzazione, il contatto tecnico e altre informazioni
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
   
 È possibile apportare modifiche al profilo dell'organizzazione, ad esempio il nome, l'indirizzo, il telefono e il contatto tecnico dell'organizzazione. **È necessario essere un amministratore globale per aggiornare queste informazioni.**
   
-Per modificare l'indirizzo associato alla fattura o all'abbonamento, vedere Modificare gli indirizzi di fatturazione [per Microsoft 365 per le aziende.](../../commerce/billing-and-payments/change-your-billing-addresses.md)
+Per modificare l'indirizzo associato alla fattura o all'abbonamento, vedere [Modificare gli indirizzi di fatturazione per Microsoft 365 per le aziende.](../../commerce/billing-and-payments/change-your-billing-addresses.md)
 
 ## <a name="edit-organization-information"></a>Modificare le informazioni sull'organizzazione
 
@@ -52,7 +52,7 @@ Per modificare altre informazioni nella pagina del profilo aziendale:
 
 2. Nella scheda **Profilo organizzazione** selezionare Informazioni **sull'organizzazione.**
 
-3. Aggiornare le informazioni dell'organizzazione, quindi selezionare **Salva modifiche.** Assicurati di compilare tutti i campi obbligatori contrassegnati con un * per consentire il salvataggio delle modifiche.
+3. Aggiornare le informazioni dell'organizzazione, quindi selezionare **Salva modifiche.** Assicurarsi di compilare tutti i campi obbligatori contrassegnati con un * per consentire il salvataggio delle modifiche.
 
 Di seguito è disponibile una descrizione di ogni campo.
 
@@ -60,7 +60,7 @@ Di seguito è disponibile una descrizione di ogni campo.
 
 |**Campo**  |**Descrizione**  |
 |---------|---------|
-|Nome  <br/>   | Il nome immesso qui è quello che gli utenti vedranno nelle pagine seguenti:  <br/>  Pagina di accesso: se gli utenti hanno configurato altri account Microsoft con l'indirizzo di posta elettronica aziendale o dell'istituto di istruzione, potrebbero vedere il nome dell'organizzazione nella pagina di accesso. In questo modo possono distinguere tra l'account aziendale o dell'istituto di istruzione e gli altri account e identificare quello da usare per l'accesso.  <br/>  Collegamento e pagina del profilo dell'organizzazione: il collegamento al profilo dell'organizzazione mostra il nome dell'organizzazione.  <br/>  Spostamento in Yammer: in Yammer, il riquadro di spostamento sinistro usa il nome dell'organizzazione come nome della rete Yammer principale.  <br/> Client di sincronizzazione di OneDrive: il nome dell'organizzazione viene visualizzato in Esplora file in Windows e Nella ricerca su Mac, i percorsi dei file, il Centro attività di OneDrive, la descrizione comando dell'icona del cloud di OneDrive e la finestra delle impostazioni di OneDrive. Attualmente, l'aggiornamento del nome dell'organizzazione non lo aggiorna per i client configurati. <br/> MS Teams: Organization Switcher in Teams visualizza il nome dell'organizzazione <br/>  |
+|Nome  <br/>   | Il nome immesso qui è quello che gli utenti vedranno nelle pagine seguenti:  <br/>  Pagina di accesso: se gli utenti hanno configurato altri account Microsoft con l'indirizzo di posta elettronica aziendale o dell'istituto di istruzione, potrebbero vedere il nome dell'organizzazione nella pagina di accesso. In questo modo possono distinguere tra l'account aziendale o dell'istituto di istruzione e gli altri account e identificare quello da usare per l'accesso.  <br/>  Collegamento e pagina del profilo dell'organizzazione: il collegamento al profilo dell'organizzazione mostra il nome dell'organizzazione.  <br/>  Spostamento in Yammer: in Yammer, il riquadro di spostamento sinistro utilizza il nome dell'organizzazione come nome della rete Yammer principale.  <br/> Client di sincronizzazione di OneDrive: il nome dell'organizzazione viene visualizzato in Esplora file in Windows e Nella ricerca su Mac, i percorsi dei file, il Centro attività di OneDrive, la descrizione comando dell'icona del cloud di OneDrive e la finestra delle impostazioni di OneDrive. Attualmente, l'aggiornamento del nome dell'organizzazione non lo aggiorna per i client configurati. <br/> MS Teams: Organization Switcher in Teams visualizza il nome dell'organizzazione <br/>  |
 |Indirizzo, Città, Provincia, Codice postale  <br/>     | L'indirizzo immesso qui è quello che verrà visualizzato nella fattura, in Venduto a: L'indirizzo Venduto a nella fattura è lo stesso dell'indirizzo dell'organizzazione nella pagina del profilo (vedere Informazioni sulla fattura per [Microsoft 365 per](../../commerce/billing-and-payments/understand-your-invoice2.md)le aziende).  <br/>        |
 |Paese o area geografica  <br/>    | Questo è il paese o l'area geografica in cui risiede la società. Il paese o l'area geografica che si seleziona determina quali servizi sono disponibili, le imposte e la valuta della fatturazione per il paese o l'area geografica e la posizione del data center più vicino. Vedere [Informazioni sulle restrizioni di licenza](https://office.microsoft.com/redir/FX103037529).  <br/>NOTA: una volta selezionato, il paese o l'area geografica non può essere modificato. Se si vuole cambiare la selezione, è necessario annullare l'abbonamento e ripetere l'iscrizione. Per assistenza con questo processo, [contattare il supporto](../contact-support-for-business-products.md)tecnico.        |
 |Telefono  <br/>     | Numero principale per l'organizzazione. Si tratta in genere del numero della sede centrale.  <br/>        |

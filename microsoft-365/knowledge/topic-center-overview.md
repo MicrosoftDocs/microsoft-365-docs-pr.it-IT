@@ -1,9 +1,10 @@
 ---
-title: 'Panoramica del centro argomenti (anteprima) '
-description: Informazioni sull'argomento centro.
+title: 'Panoramica sul centro argomenti '
+description: Informazioni sul Centro argomenti negli argomenti di Microsoft Viva.
 author: efrene
 ms.author: efrene
 manager: pamgreen
+ms.reviewer: cjtan
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -13,37 +14,35 @@ ms.collection:
 - m365initiative-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 03ecae794a0aee3297e305771452a6e5ce70015d
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: d9965c04335e77abc449cbc155ece63372869ee9
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975968"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107745"
 ---
-# <a name="topic-center-overview-preview"></a>Panoramica del centro argomenti (anteprima)
-
-> [!Note] 
-> Il contenuto di questo articolo è relativo all'anteprima privata di Project Cortex. [Altre informazioni su Project Cortex](https://aka.ms/projectcortex).
-
-Il centro argomenti è un sito di SharePoint moderno che funge da centro di conoscenza per la propria organizzazione. Viene creato durante l' [installazione dell'argomento experiences](set-up-topic-experiences.md) nell'interfaccia di amministrazione di Microsoft 365.
-
-Nel centro argomenti è presente una Home page predefinita (argomenti personali) in cui tutti gli utenti possono visualizzare gli argomenti a cui sono connessi. 
-
-Sebbene tutti gli utenti con licenza che possono visualizzare gli argomenti possano accedere al centro argomenti, i responsabili della Knowledge base potranno anche gestire gli argomenti tramite la pagina **Gestisci argomenti** . La scheda Gestisci argomenti verrà visualizzata solo agli utenti che dispongono delle autorizzazioni **Gestisci argomenti** . 
-
-## <a name="where-is-my-topic-center"></a>Dove si trova il mio centro argomenti
-
-Il centro argomenti è stato creato durante l'installazione dell'argomento experiences. Al termine dell'installazione, un amministratore può trovare l'URL nella [pagina Gestione centro argomenti](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-administration#to-access-topics-management-settings).
+# <a name="topic-center-overview"></a>Panoramica sul centro argomenti
 
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 fare clic su **Impostazioni** e quindi su **Impostazioni org**.
-2. Nella scheda **Servizi** , fare clic su **Knowledge Network**.
+In Microsoft Viva Topics, il centro argomenti è un sito di SharePoint moderno che funge da centro di conoscenza per l'organizzazione. Viene creato durante la configurazione [di Viva Topics](set-up-topic-experiences.md) nell'interfaccia di amministrazione di Microsoft 365.
 
-    ![Connettere le persone alla conoscenza](../media/admin-org-knowledge-options-completed.png) </br>
+Nel Centro argomenti è presente una home page predefinita con la web part Argomenti in cui tutti gli utenti con licenza possono visualizzare gli argomenti a cui hanno una connessione. 
 
-3. Selezionare la scheda **centro argomenti** . In **Indirizzo sito** è presente un collegamento al centro dell'argomento.
+Anche se tutti gli utenti con licenza che possono visualizzare gli argomenti avranno accesso al Centro argomenti, i knowledge manager possono gestire gli argomenti tramite la **pagina Gestisci** argomenti. La scheda Gestisci argomenti verrà visualizzata solo per gli utenti che dispongono **delle autorizzazioni Gestione** argomenti. 
 
-    ![Knowledge-Network-Settings](../media/knowledge-network-settings-topic-center.png) </br>
+## <a name="where-is-my-topic-center"></a>Dove si trova il centro argomenti
+
+Il centro argomenti viene creato durante l'installazione di Viva Topics. Al termine dell'installazione, un amministratore può trovare l'URL nella [pagina di gestione del Centro argomenti.](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-administration#to-access-topics-management-settings)
+
+
+1. Nell'interfaccia di amministrazione di Microsoft 365 fare clic su **Impostazioni** e **quindi su Impostazioni organizzazione.**
+2. Nella scheda **Servizi** fare clic su **Esperienze argomento.**
+
+    ![Connettere le persone alle conoscenze](../media/admin-org-knowledge-options-completed.png) </br>
+
+3. Selezionare la **scheda Centro** argomenti. In **Indirizzo sito** è disponibile un collegamento al Centro argomenti.
+
+    ![knowledge-network-settings](../media/knowledge-network-settings-topic-center.png) </br>
 
 
 
@@ -56,37 +55,38 @@ Il centro argomenti è stato creato durante l'installazione dell'argomento exper
 </br>
 
 
-Nella Home page del centro argomenti, è possibile visualizzare gli argomenti dell'organizzazione a cui è configurata una connessione.
+Nella home page del Centro argomenti è possibile visualizzare gli argomenti dell'organizzazione a cui si dispone di una connessione.
 
-- Connessioni consigliate: verranno visualizzati gli argomenti suggeriti nell'elenco in **cui sono elencati gli argomenti riportati di seguito. L'abbiamo capito bene?**. Si tratta di argomenti in cui la connessione all'argomento è stata suggerita tramite AI. Ad esempio, potrebbe essere il proprietario di un file o di un sito correlato. Gli argomenti suggeriti vi chiederanno di confermare la connessione all'argomento.
+- Connessioni suggerite: gli argomenti sono elencati in Sono **stati elencati in questi argomenti. L'abbiamo fatto bene?**. Questi sono gli argomenti in cui la connessione all'argomento è stata suggerita tramite IA. Ad esempio, è possibile essere un autore di un file o di un sito correlato. Ti viene chiesto di confermare che dovresti rimanere elencato come persona correlata per l'argomento.
 
-   ![Connessioni consigliate](../media/knowledge-management/my-topics.png) </br>
+   ![Connessioni suggerite](../media/knowledge-management/my-topics.png) </br>
  
-- Connessioni confermate: si tratta di argomenti in cui si è bloccati sull'argomento da un altro utente o si è confermata la connessione all'argomento. Gli argomenti verranno spostati dalla sezione consigliata a confermata quando si conferma una connessione consigliata.
+- Connessioni confermate: si tratta di argomenti in cui sei stato aggiunto nella pagina dell'argomento o hai confermato una connessione suggerita all'argomento. Gli argomenti verranno spostati dalla sezione suggerita alla sezione confermata quando si conferma una connessione suggerita.
  
-   ![Argomenti convalidati](../media/knowledge-management/my-topics-confirmed.png) </br>
+   ![Argomenti confermati](../media/knowledge-management/my-topics-confirmed.png) </br>
 
-Dopo che un utente ha confermato la propria connessione a un argomento, l'utente può apportare modifiche alla pagina dell'argomento per curare la connessione. Ad esempio, possono fornire ulteriori informazioni sulla connessione all'argomento.
+Dopo aver confermato la connessione a un argomento, l'utente può apportare modifiche alla pagina dell'argomento per curarne la connessione. Ad esempio, possono fornire ulteriori informazioni sulla connessione all'argomento.
 
 
 ## <a name="manage-topics-page"></a>Pagina Gestisci argomenti
 
-Per utilizzare la sezione **Gestisci argomenti** del centro argomenti, è necessario disporre delle autorizzazioni necessarie per *gestire gli argomenti* necessari per il ruolo Knowledge Manager. L'amministratore può assegnare queste autorizzazioni agli utenti durante l' [installazione di Knowledge Management](set-up-topic-experiences.md)oppure è possibile aggiungere nuovi utenti in [seguito](topic-experiences-knowledge-rules.md) da un amministratore tramite l'interfaccia di amministrazione di Microsoft 365.
+Per utilizzare la sezione **Gestisci argomenti** del Centro argomenti, è necessario disporre delle autorizzazioni di gestione degli argomenti necessarie per il ruolo di knowledge manager.  L'amministratore può assegnare [](set-up-topic-experiences.md)queste autorizzazioni agli utenti durante [](topic-experiences-knowledge-rules.md) la configurazione della gestione delle informazioni oppure i nuovi utenti possono essere aggiunti successivamente da un amministratore tramite l'interfaccia di amministrazione di Microsoft 365.
 
-Nella pagina Gestisci argomenti, nell'argomento dashboard vengono visualizzati gli argomenti identificati dai percorsi di origine specificati. Ogni argomento mostrerà la data in cui è stato individuato l'argomento e se sono stati forniti commenti e suggerimenti. Un utente a cui sono state assegnate le autorizzazioni **Gestisci argomenti** può esaminare gli argomenti non confermati e scegliere di eseguire le operazioni seguenti:
-- Confermare l'argomento: evidenzia l'argomento per gli utenti che hanno accesso e gli consente di visualizzare la pagina argomento associato e la pagina dell'argomento.
-- Rifiutare l'argomento: rende l'argomento non disponibile per gli utenti. L'argomento viene spostato nella scheda **rifiutata** e può essere confermato in un secondo momento, se necessario. un responsabile della Knowledge base può guidare 
+Nella pagina Gestisci argomenti il dashboard dell'argomento mostra tutti gli argomenti, a cui si ha accesso, identificati dai percorsi di origine specificati. Ogni argomento mostrerà la data in cui è stato individuato l'argomento. Un utente a cui **sono** state assegnate le autorizzazioni Gestione argomenti può esaminare gli argomenti non confermati e scegliere di:
+- Confermare l'argomento: evidenzia l'argomento per gli utenti che hanno accesso ai file e alle pagine correlati all'argomento e consente loro di visualizzare la scheda dell'argomento e la pagina dell'argomento associati.
+- Pubblicare l'argomento: modificare le informazioni sull'argomento per migliorare la qualità dell'argomento identificato inizialmente ed evidenziarlo per tutti gli utenti che hanno accesso in visualizzazione agli argomenti. 
+- Rifiuta l'argomento: rende l'argomento non disponibile per gli utenti. L'argomento viene spostato nella **scheda Rifiutato** e può essere confermato in un secondo momento, se necessario. 
 
 > [!Note] 
-> Per ulteriori informazioni su come gestire gli argomenti nella pagina Gestisci argomenti, vedere [Manage](manage-topics.md) topics.
+> Per [ulteriori informazioni sulla](manage-topics.md) gestione degli argomenti, vedere Gestire gli argomenti nella pagina Gestisci argomenti.
 
 
 ## <a name="create-or-edit-a-topic"></a>Creare o modificare un argomento
 
-Se si dispone delle autorizzazioni **Crea e modifica argomenti** , sarà possibile eseguire le operazioni seguenti:
+Se si dispone **delle autorizzazioni per la creazione e la** modifica di argomenti, è possibile:
 
-- [Modificare gli argomenti esistenti](edit-a-topic.md): è possibile apportare modifiche alle pagine degli argomenti esistenti create tramite l'individuazione.
-- [Creare nuovi argomenti](create-a-topic.md): è possibile creare nuovi argomenti per quelli che non sono stati trovati tramite Discovery o se gli strumenti di ai non hanno trovato prove sufficienti per creare un argomento.
+- [Modificare gli argomenti esistenti:](edit-a-topic.md)è possibile apportare modifiche alle pagine degli argomenti esistenti create tramite l'individuazione.
+- [Creare nuovi argomenti:](create-a-topic.md)è possibile creare nuovi argomenti per quelli che non sono stati trovati tramite l'individuazione o se gli strumenti di intelligenza artificiale non hanno trovato prove sufficienti per creare un argomento.
 
 
 

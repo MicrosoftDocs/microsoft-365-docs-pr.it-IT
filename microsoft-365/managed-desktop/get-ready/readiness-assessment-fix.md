@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 360cd50556b77f141d1585f42ac08ee5990b4851
-ms.sourcegitcommit: f3059a0065496623e36e5a084cd2291e6b844597
+ms.openlocfilehash: 22b5a6353720f8fbee218c138a3c9d0dee444db9
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50040521"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114920"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Risolvere problemi trovati dallo strumento di valutazione dell'idoneità
 
@@ -85,7 +85,7 @@ Il ruolo amministratore di Intune non dispone di autorizzazioni sufficienti per 
 - Ruolo con autorizzazioni di lettura per la sicurezza
 - Amministratore della sicurezza
 - Amministratore accesso condizionale
-- Lettore globale
+- Ruolo con autorizzazioni di lettura globali
 - Amministratore dei dispositivi
 
 
@@ -95,7 +95,7 @@ I criteri di conformità dei dispositivi Intune nell'organizzazione di Azure AD 
 
 **Non pronto**
 
-Si dispone di almeno un criterio di conformità destinato a tutti gli utenti. Microsoft Managed Desktop include criteri di conformità che verranno applicati ai dispositivi Microsoft Managed Desktop.  Modificare il criterio in modo che sia mirato a un gruppo di Azure AD specifico che non include utenti o dispositivi Microsoft Managed Desktop. Per la procedura, vedere [Creare un criterio di conformità in Microsoft Intune.](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy)
+Si dispone di almeno un criterio di conformità destinato a tutti gli utenti. Microsoft Managed Desktop include criteri di conformità che verranno applicati ai dispositivi Microsoft Managed Desktop.  Modificare il criterio in modo che sia di destinazione di un gruppo di Azure AD specifico che non include utenti o dispositivi Microsoft Managed Desktop. Per la procedura, vedere [Creare un criterio di conformità in Microsoft Intune.](https://docs.microsoft.com/mem/intune/protect/create-compliance-policy)
 
 **Avviso**
 
@@ -166,7 +166,7 @@ Il ruolo amministratore di Intune non dispone di autorizzazioni sufficienti per 
 - Ruolo con autorizzazioni di lettura per la sicurezza
 - Amministratore della sicurezza
 - Amministratore accesso condizionale
-- Lettore globale
+- Ruolo con autorizzazioni di lettura globali
 - Amministratore dei dispositivi
 
 
@@ -197,11 +197,11 @@ I criteri di base della sicurezza non devono essere mirati ad alcun dispositivo 
 
 **Non pronto**
 
-Si dispone di un profilo di base della sicurezza destinato a tutti gli utenti, a tutti i dispositivi o a entrambi. Modifica i criteri per usare un'assegnazione destinata a un gruppo di Azure AD specifico che non include alcun dispositivo Microsoft Managed Desktop. Per la procedura, vedere [Usare le linee di base della sicurezza per configurare i dispositivi Windows 10 in Intune.](https://docs.microsoft.com/mem/intune/protect/security-baselines)
+Si dispone di un profilo di base della sicurezza destinato a tutti gli utenti, a tutti i dispositivi o a entrambi. Modifica i criteri per usare un'assegnazione destinata a un gruppo di Azure AD specifico che non include alcun dispositivo Microsoft Managed Desktop. Per la procedura, vedere [Usare le linee di base della sicurezza per configurare i dispositivi Windows 10 in Intune.](https://docs.microsoft.com/mem/intune/protect/security-baselines) Durante la registrazione, applicheremo una nuova linea di base per la sicurezza a tutti i dispositivi Microsoft Managed Desktop. Dopo la registrazione, puoi esaminare i criteri di base per la sicurezza di Microsoft Managed Desktop **nell'area** dei criteri di configurazione di Microsoft Endpoint Manager.
 
 **Avviso**
 
-Assicurarsi che tutti i criteri di base della sicurezza di cui si dispone escludono i dispositivi Microsoft Managed Desktop. Per la procedura, vedere [Usare le linee di base della sicurezza per configurare i dispositivi Windows 10 in Intune.](https://docs.microsoft.com/mem/intune/protect/security-baselines) Dispositivi **di lavoro moderni-** Tutti i gruppi di Azure AD sono un gruppo dinamico che creiamo quando ti iscrivi a Microsoft Managed Desktop, quindi dovrai tornare indietro per escludere questo gruppo dopo la registrazione.
+Assicurarsi che tutti i criteri di base della sicurezza di cui si dispone escludono i dispositivi Microsoft Managed Desktop. Per la procedura, vedere [Usare le linee di base della sicurezza per configurare i dispositivi Windows 10 in Intune.](https://docs.microsoft.com/mem/intune/protect/security-baselines) Durante la registrazione, applicheremo una nuova linea di base per la sicurezza a tutti i dispositivi Microsoft Managed Desktop. Dispositivi **di lavoro moderni-** Tutti i gruppi di Azure AD sono un gruppo dinamico che creiamo quando ti iscrivi a Microsoft Managed Desktop, quindi dovrai tornare indietro per escludere questo gruppo dopo la registrazione. 
 
 
 ### <a name="windows-apps"></a>App di Windows
@@ -210,7 +210,7 @@ Esaminare le app che si desidera che gli utenti di Microsoft Managed Desktop dis
 
 **Avviso**
 
-È consigliabile preparare un inventario delle app che si desidera che gli utenti di Microsoft Managed Desktop dovranno avere. Poiché queste app devono essere distribuite da Intune, valutare il riutilizzo delle app Intune esistenti. Prendi in considerazione l'uso del portale aziendale (vedi Installare il portale [aziendale intune](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) nei dispositivi e la pagina dello stato di registrazione (ESP) per distribuire le app agli utenti. Per altre informazioni, vedi [App in Microsoft Managed Desktop](apps.md) e [First-run experience con Autopilot e la pagina Stato registrazione.](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run)
+È consigliabile preparare un inventario delle app che devono essere disponibili per gli utenti di Microsoft Managed Desktop. Poiché queste app devono essere distribuite da Intune, valutare il riutilizzo delle app Intune esistenti. Prendi in considerazione l'uso del portale aziendale (vedi Installare il portale [aziendale intune](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/company-portal) nei dispositivi e la pagina dello stato di registrazione (ESP) per distribuire le app agli utenti. Per altre informazioni, vedi [App in Microsoft Managed Desktop](apps.md) e [First-run experience con Autopilot e la pagina Stato registrazione.](https://docs.microsoft.com/microsoft-365/managed-desktop/get-started/esp-first-run)
 
 Puoi chiedere al rappresentante dell'account Microsoft una query in Microsoft Endpoint Configuration Manager per identificare le app pronte per la migrazione a Intune o che devono essere rettificate.
 
@@ -225,7 +225,7 @@ Windows Hello for Business è disabilitato. Abilitarlo seguendo la procedura des
 
 **Avviso**
 
-Windows Hello for Business non è configurato. Abilitarla seguendo la procedura descritta in [Creare un criterio di Windows Hello for Business.](https://docs.microsoft.com/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)
+Windows Hello for Business non è configurato. Abilitalo seguendo la procedura descritta in [Creare un criterio di Windows Hello for Business.](https://docs.microsoft.com/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)
 
 
 ### <a name="windows-10-update-rings"></a>Anelli di aggiornamento di Windows 10
@@ -238,7 +238,7 @@ Si dispone di un criterio "anello di aggiornamento" destinato a tutti i disposit
 
 **Avviso**
 
-Assicurati che tutti i criteri dell'anello di aggiornamento che hai escluso siano il **gruppo Modern Workplace Devices -All** Azure AD. Se sono stati assegnati gruppi di utenti di Azure AD a questi criteri, assicurarsi che tutti i criteri dell'anello di aggiornamento siano stati esclusi anche dal gruppo Ambiente di lavoro moderno **-** Tutti gli Azure AD a cui si aggiungono gli utenti di Microsoft Managed Desktop (o un gruppo equivalente). Per la procedura, vedere Gestire gli aggiornamenti software di [Windows 10 in Intune.](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure) Sia i dispositivi moderni dell'area di **lavoro,tutti** i gruppi di **Azure** AD che i gruppi di Azure AD vengono creati quando ci si iscrive a Microsoft Managed Desktop, quindi sarà necessario tornare indietro per escludere questo gruppo dopo la registrazione.
+Assicurati che tutti i criteri dell'anello di aggiornamento che hai escluso siano il **gruppo Modern Workplace Devices -All** Azure AD. Se sono stati assegnati gruppi di utenti di Azure AD a questi criteri, assicurarsi che tutti i criteri dell'anello di aggiornamento siano stati esclusi anche dal gruppo Ambiente di lavoro moderno **-** Tutti gli Azure AD a cui si aggiungono gli utenti di Microsoft Managed Desktop (o un gruppo equivalente). Per la procedura, vedere Gestire gli aggiornamenti software di [Windows 10 in Intune.](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure) Sia i dispositivi moderni dell'area di **lavoro-** Tutti i gruppi di **Azure** AD sono gruppi che creiamo quando ti iscrivi a Microsoft Managed Desktop, quindi dovrai tornare indietro per escludere questo gruppo dopo la registrazione.
 
 
 ## <a name="azure-active-directory-settings"></a>Impostazioni di Azure Active Directory
@@ -269,7 +269,7 @@ Enterprise State Roaming deve essere abilitato.
 
 **Avviso**
 
-Verificare che Enterprise State Roaming sia abilitato per **tutti o** per **i gruppi** selezionati. Per ulteriori informazioni, vedere [Abilitare Enterprise State Roaming in Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-enable)
+Assicurati che Enterprise State Roaming sia abilitato per **Tutti o** per **i gruppi** selezionati. Per ulteriori informazioni, vedere [Abilitare Enterprise State Roaming in Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-enable)
 
 ### <a name="licenses"></a>Licenze
 
@@ -317,7 +317,7 @@ La reimpostazione della password self-service (SSPR) può essere abilitata per t
 
 **Avviso**
 
-Verificare che l'impostazione SSPR **Selezionata** includa gli utenti di Microsoft Managed Desktop ma escludi gli account del servizio Microsoft Managed Desktop. Gli account del servizio Microsoft Managed Desktop non possono funzionare come previsto quando la RSPR è abilitata.  
+Verificare che l'impostazione SSPR **Selezionata** includa gli utenti di Microsoft Managed Desktop, ma esclude gli account del servizio Microsoft Managed Desktop. Gli account del servizio Microsoft Managed Desktop non possono funzionare come previsto quando la RSPR è abilitata.  
 
 
 ### <a name="standard-user-role"></a>Ruolo utente standard
@@ -326,7 +326,7 @@ Oltre agli utenti a cui sono assegnati i ruoli di amministratore globale e ammin
 
 **Avviso**
 
-Dopo la registrazione, gli utenti di Microsoft Managed Desktop non avranno privilegi di amministratore locale nei dispositivi Microsoft Managed Desktop.
+Dopo la registrazione, gli utenti di Microsoft Managed Desktop non avranno privilegi di amministratore locale nei propri dispositivi Microsoft Managed Desktop.
 
 ## <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise
 
@@ -336,4 +336,4 @@ Dopo la registrazione, gli utenti di Microsoft Managed Desktop non avranno privi
 
 **Avviso**
 
-Si usa l'impostazione **Consenti sincronizzazione solo su PC aggiunti a domini** specifici. Questa impostazione non funziona con Microsoft Managed Desktop. Disabilitare questa impostazione e configurare Invece OneDrive per l'uso di un criterio di accesso condizionale. Per [informazioni, vedere Pianificare una distribuzione di accesso](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) condizionale.
+Si usa l'impostazione Consenti **sincronizzazione solo su PC aggiunti a domini** specifici. Questa impostazione non funziona con Microsoft Managed Desktop. Disabilitare questa impostazione e configurare Invece OneDrive per l'uso di un criterio di accesso condizionale. Per [informazioni, vedere Pianificare una distribuzione di accesso](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) condizionale.

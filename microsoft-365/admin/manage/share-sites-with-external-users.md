@@ -20,20 +20,20 @@ search.appverid:
 - MOE150
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
-description: "Informazioni su come condividere siti e file con utenti esterni all'organizzazione. "
-ms.openlocfilehash: 79760f662ec68d2ac9089586fd9cbf38b0bd9897
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+description: "Informazioni su come condividere siti e file con persone esterne all'organizzazione. "
+ms.openlocfilehash: 3857cee3073950bbb9c130368abdd7df68d0da2a
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780050"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114466"
 ---
 # <a name="share-sites-and-files-with-guest-users"></a>Condividere siti e file con utenti guest
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
@@ -47,7 +47,7 @@ Per collaborare con persone esterne all'organizzazione, è possibile condividere
 
 Quando si valuta se e come condividere contenuto esternamente, è opportuno considerare i seguenti aspetti:
   
-- A chi si desidera concedere l'accesso al contenuto del sito e degli eventuali siti secondari e quali operazioni si desidera che siano in grado di eseguire?
+- A chi si desidera concedere l'accesso al contenuto del sito e a tutti i siti secondari e a quali utenti si desidera consentire l'accesso?
     
 - A quali membri dell'organizzazione si vuole concedere l'autorizzazione a condividere contenuto con l'esterno? 
     
@@ -57,27 +57,27 @@ Rispondendo a queste domande sarà più semplice pianificare la strategia per la
   
 |**Provare:**|**Per...**|
 |:-----|:-----|
-|Aggiungere un ospite a un gruppo  <br/> |Fornire a un utente esterno all'organizzazione l'accesso continuo alle informazioni e al contenuto di un sito del team. Tali utenti devono poter agire come utenti effettivi del sito creando, modificando e visualizzando il contenuto.  <br/> |
-|Condividere un documento e richiedere agli utenti di eseguire l'autenticazione.  <br/> |Fornire persone specifiche all'esterno dell'organizzazione con accesso sicuro a un documento per la revisione o la collaborazione, ma queste persone non richiedono l'accesso ad altri contenuti del sito.  <br/> |
+|Aggiungere un guest a un gruppo  <br/> |Fornire a un utente esterno all'organizzazione l'accesso continuo alle informazioni e al contenuto di un sito del team. Tali utenti devono poter agire come utenti effettivi del sito creando, modificando e visualizzando il contenuto.  <br/> |
+|Condividere un documento e richiedere l'autenticazione degli utenti guest.  <br/> |Fornire a persone specifiche esterne all'organizzazione l'accesso sicuro a un documento per la revisione o la collaborazione, ma queste persone non richiedono l'accesso ad altri contenuti del sito.  <br/> |
 |Condividere un documento, ma non richiedere l'autenticazione.  <br/> |Condividere un collegamento a un documento non riservato o non confidenziale con utenti esterni all'organizzazione in modo che possano visualizzarlo o aggiornarlo con commenti e suggerimenti. Queste persone non richiedono l'accesso al contenuto del sito.  <br/> |
    
 > [!IMPORTANT]
-> Quando si disattiva la condivisione esterna, gli utenti esterni all'organizzazione che attualmente dispongono dell'accesso non avranno più accesso. Se in seguito si riattiva la condivisione esterna, verrà ripristinato l'accesso per queste persone. Per impedire a un utente di accedere a un contenuto condiviso, [rimuoverli dal gruppo Microsoft 365](/office365/admin/create-groups/add-or-remove-members-from-groups), rimuovere le autorizzazioni dal sito oppure [interrompere la condivisione del file o della cartella con tali](https://support.microsoft.com/office/0a36470f-d7fe-40a0-bd74-0ac6c1e13323)utenti. 
+> Quando si disabilita la condivisione esterna, gli utenti esterni all'organizzazione che attualmente dispongono dell'accesso non avranno più accesso. Se successivamente si rivolse la condivisione esterna, l'accesso verrà ripristinato per queste persone. Per impedire a un utente di accedere a un contenuto condiviso, rimuoverlo dal gruppo di [Microsoft 365,](/office365/admin/create-groups/add-or-remove-members-from-groups)rimuovere le autorizzazioni dal sito o interrompere la condivisione del file o della cartella [con essi.](https://support.microsoft.com/office/0a36470f-d7fe-40a0-bd74-0ac6c1e13323) 
   
 ## <a name="enable-external-sharing-at-the-organization-level"></a>Abilitare la condivisione esterna a livello di organizzazione
 
-La condivisione esterna è attivata per impostazione predefinita a livello dell'organizzazione, ma non per tutti i nuovi siti. Per informazioni, vedere [Panoramica della condivisione esterna](/sharepoint/external-sharing-overview). 
+La condivisione esterna è attivata per impostazione predefinita a livello di organizzazione, ma non per tutti i nuovi siti. Per informazioni, vedere [Panoramica della condivisione esterna.](/sharepoint/external-sharing-overview) 
 
 > [!NOTE]
 >  Per consentire la condivisione esterna per qualsiasi sito, è necessario consentirla a livello di organizzazione. 
   
-1. Nell'interfaccia di [Amministrazione](https://go.microsoft.com/fwlink/p/?linkid=2024339), digitare "esterno" nella casella di ricerca nella Home page e scegliere la **condivisione esterna dei siti**.
+1. [Nell'interfaccia di amministrazione](https://go.microsoft.com/fwlink/p/?linkid=2024339)digitare "esterno" nella casella di ricerca nella home page e scegliere Condivisione esterna **siti.**
   
-2. Nella pagina che viene visualizzata, scegliere se gli utenti possono condividere solo gli ospiti esistenti, gli ospiti nuovi ed esistenti o chiunque altro. 
+2. Nella pagina visualizzata scegliere se gli utenti possono condividere solo con utenti guest esistenti, utenti guest nuovi ed esistenti o con chiunque. 
     
 3. Selezionare **Salva**.
     
-Dopo aver abilitato la condivisione esterna a livello di organizzazione, è possibile ottimizzare le impostazioni di condivisione per disabilitare la condivisione esterna per siti particolari. Per informazioni, vedere [attivazione o disattivazione della condivisione esterna per un sito](/sharepoint/change-external-sharing-site).
+Dopo aver abilitato la condivisione esterna a livello di organizzazione, è possibile ottimizzare le impostazioni di condivisione per disabilitare la condivisione esterna per siti specifici. Per informazioni, vedere [Attivare o disattivare la condivisione esterna per un sito.](/sharepoint/change-external-sharing-site)
   
 
   

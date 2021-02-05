@@ -18,19 +18,19 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: Gli amministratori possono conoscere la modalità di valutazione di Microsoft Defender per Office 365
-ms.openlocfilehash: 70f5264671e16e5e7fb6138de055a7da942a57cf
-ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
+ms.openlocfilehash: f5ab0b0cd4ef5c2bf1a799043af94a0938a53783
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50099800"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114896"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Informazioni sulla versione di valutazione di Microsoft Defender per Office 365
 
 Microsoft Defender per Office 365 protegge l'organizzazione dalle minacce dannose poste da messaggi di posta elettronica, collegamenti (URL) e strumenti di collaborazione. Defender per Office 365 include:
 
 - **Criteri di protezione dalle minacce**: consente di definire i criteri di protezione dalle minacce per impostare il livello di protezione appropriato per l'organizzazione.
-- **Report:** visualizzare report in tempo reale per monitorare defender per le prestazioni di Office 365 nell'organizzazione.
+- **Report:** consente di visualizzare report in tempo reale per monitorare le prestazioni di Defender 365 nell'organizzazione.
 - **Funzionalità di analisi e risposta alle minacce**: consente di usare strumenti all'avanguardia per analizzare, comprendere, simulare e prevenire minacce.
 - **Funzionalità di analisi e risposta automatizzate**: consente di risparmiare tempo e fatica nell'analisi e nell'attenuazione delle minacce.
 
@@ -41,7 +41,7 @@ Una versione di valutazione di Microsoft Defender per Office 365 è il modo più
 
 ## <a name="terms-and-conditions"></a>Termini e condizioni
 
-La versione di valutazione di Defender per Office 365 è disponibile per 90 giorni e può essere avviata per tutti gli utenti. Per ulteriori informazioni, vedere <link to TOU>.
+La versione di valutazione di Defender per Office 365 è disponibile per 90 giorni e può essere avviata per tutti gli utenti. Per ulteriori informazioni, vedere [Condizioni per l'utilizzo per la versione di valutazione di Microsoft Defender per Office 365.](terms-of-use-defender-for-office-365-trial.md)
 
 ## <a name="set-up-a-defender-for-office-365-trial"></a>Configurare una versione di valutazione di Defender per Office 365
 
@@ -67,7 +67,7 @@ Gli amministratori possono disabilitare la versione di valutazione in qualsiasi 
 
 ## <a name="availability"></a>Disponibilità
 
-La versione di valutazione di Defender per Office 365 viene gradualmente in fase di implementazione per i clienti esistenti che soddisfano criteri specifici (inclusa la geografia) e che non dispongono di licenze defender per Office 365 Piano 1 o Piano 2 (incluse nella sottoscrizione o come componente aggiuntivo).
+La versione di valutazione di Defender per Office 365 è in fase di implementazione graduale per i clienti esistenti che soddisfano criteri specifici (inclusa la geografia) e che non dispongono di licenze defender per Office 365 Piano 1 o Piano 2 (incluse nella sottoscrizione o come componente aggiuntivo).
 
 ## <a name="learn-more-about-defender-for-office-365"></a>Ulteriori informazioni su Defender per Office 365
 
@@ -108,7 +108,7 @@ Ampie funzionalità di automazione e risposta a eventi imprevisti semplificano l
 
 ### <a name="awareness-and-training"></a>Sensibilizzazione e formazione
 
-Le funzionalità avanzate di simulazione e formazione e le esperienze integrate all'interno delle applicazioni client generano consapevolezza degli utenti.
+Le funzionalità avanzate di simulazione e formazione, insieme alle esperienze integrate all'interno delle applicazioni client, generano consapevolezza degli utenti.
 
 - [Introduzione alla formazione sull’uso di Simulatore di attacchi](attack-simulation-training-get-started.md)
 

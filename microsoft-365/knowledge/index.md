@@ -1,9 +1,9 @@
 ---
-title: Introduzione alle esperienze sull'argomento (anteprima)
+title: Introduzione agli argomenti di Microsoft Viva
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.reviewer: ''
+ms.reviewer: cjtan
 audience: ''
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -11,20 +11,16 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-topics
-ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-description: Informazioni su come trovare risorse per le esperienze degli argomenti.
-ms.openlocfilehash: afba6930c30ad59dc95abb255eadab501b01f189
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+description: Informazioni su come trovare risorse per Gli argomenti di Microsoft Viva.
+ms.openlocfilehash: 3e75dfcfa17e5604e04b6f5e49be9019b1679110
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029609"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107171"
 ---
-# <a name="introduction-to-topic-experiences-preview"></a>Introduzione alle esperienze sull'argomento (anteprima)
-
-> [!Note] 
-> Il contenuto di questo articolo è relativo all'anteprima privata di Project Cortex. [Altre informazioni su Project Cortex](https://aka.ms/projectcortex).
+# <a name="introduction-to-microsoft-viva-topics"></a>Introduzione agli argomenti di Microsoft Viva
 
 </br>
 
@@ -33,51 +29,51 @@ ms.locfileid: "50029609"
 </br>
 
 
-L'argomento experiences è un servizio di Office 365 che consente alle organizzazioni di trasformare le informazioni nella conoscenza.
+Viva Topics è un servizio di Office 365 che consente alle organizzazioni di trasformare le informazioni in conoscenze.
 
-Le risorse presenti in questa pagina sono state progettate per iniziare a conoscere e utilizzare le esperienze di argomento nell'organizzazione.
+Le risorse in questa pagina sono progettate per iniziare a conoscere e a usare Viva Topics nell'organizzazione.
 
-## <a name="get-started"></a>Per iniziare
+## <a name="get-started"></a>Informazioni di base
 
-Le risorse in questa sezione consentono di ottenere ulteriori informazioni sulle esperienze degli argomenti e su come può essere utile.
+Le risorse in questa sezione sono utili per saperne di più su Viva Topics e su come può essere utile.
 
 | Se sono necessarie queste informazioni: | Passare a questa risorsa: |
 |:-----|:-----|
-|Per ulteriori informazioni, vedere esperienze sugli argomenti|[Panoramica delle esperienze degli argomenti](topic-experiences-overview.md)|
-|Informazioni su come vengono individuati e suggeriti gli argomenti di AI|[Individuazione dell'argomento experiences](topic-experiences-discovery.md)|
-|Informazioni sulla sicurezza degli argomenti|[Argomenti sicurezza e privacy](topic-experiences-security-privacy.md)|
+|Altre informazioni su Viva Topics|[Panoramica di Microsoft Viva Topics](topic-experiences-overview.md)|
+|Informazioni su come gli argomenti vengono individuati e suggeriti dall'intelligenza artificiale|[Microsoft Viva Topics discovery](topic-experiences-discovery.md)|
+|Informazioni sulla sicurezza degli argomenti|[Sicurezza e privacy di Microsoft Viva](topic-experiences-security-privacy.md)|
 
 
 ## <a name="adoption"></a>Adozione
 
-Per ulteriori informazioni su come utilizzare e implementare le esperienze degli argomenti nell'organizzazione, è possibile risolvere i problemi aziendali: 
+Ulteriori informazioni su come usare e implementare Viva Topics nell'organizzazione per aiutarti a risolvere i problemi aziendali: 
 
 | Se sono necessarie queste informazioni: | Passare a questa risorsa: |
 |:-----|:-----|
-|Informazioni su come iniziare a pianificare l'utilizzo di esperienze sugli argomenti. |[Introduzione](topics-adoption-getstarted.md)<br><br>|  
+|Informazioni su come iniziare a pianificare l'uso di Microsoft Viva. |[Introduzione](topics-adoption-getstarted.md)<br><br>|  
 
 ## <a name="set-up-and-administration"></a>Configurazione e amministrazione
 
-Le risorse di questa sezione aiutano l'amministratore dell'organizzazione a configurare e configurare Microsoft SharePoint Syntex nell'ambiente Microsoft 365.
+Le risorse in questa sezione consentono all'amministratore dell'organizzazione di configurare Viva Topics nell'ambiente Microsoft 365.
 
 | Se sono necessarie queste informazioni: | Passare a questa risorsa: |
 |:-----|:-----|
-|Informazioni su come impostare e configurare le esperienze degli argomenti|[Configurare le esperienze degli argomenti](set-up-topic-experiences.md)|
+|Informazioni su come configurare Microsoft Viva|[Configurare Microsoft Viva](set-up-topic-experiences.md)|
 |Informazioni su come configurare le autorizzazioni utente|[Gestire le autorizzazioni dell'argomento](topic-experiences-user-permissions.md)|
-|Informazioni su come gestire gli utenti in grado di visualizzare gli argomenti|[Gestire la visibilità dell'argomento](topic-experiences-knowledge-rules.md)|
+|Informazioni su come gestire chi può visualizzare gli argomenti|[Gestire la visibilità dell'argomento](topic-experiences-knowledge-rules.md)|
 |Informazioni su come gestire le impostazioni di individuazione degli argomenti|[Gestire la scoperta dell'argomento](topic-experiences-discovery.md)|
 
 ## <a name="work-with-topics"></a>Lavorare con gli argomenti
 
-Le risorse in questa sezione aiutano gli utenti a imparare a usare e gestire gli argomenti.
+Le risorse in questa sezione consentono agli utenti di imparare a usare e gestire gli argomenti.
 
 | Se sono necessarie queste informazioni: | Passare a questa risorsa: |
 |:-----|:-----|
-|Informazioni su come utilizzare gli argomenti|[Panoramica sul centro argomenti](topic-center-overview.md)<br><br>[Gestire gli argomenti](manage-topics.md)<br><br>[Creare un nuovo argomento](create-a-topic.md)<br><br>[Modificare un argomento esistente](edit-a-topic.md)<br><br>|
-|Comprendere i ruoli utente|[Ruoli esperienza di argomento](topic-experiences-roles.md)|
-|Comprendere il motivo per cui gli argomenti possono variare a seconda degli utenti|[Tema ritaglio di sicurezza](topic-experiences-security-trimming.md)|
+|Informazioni su come utilizzare gli argomenti|[Panoramica sul centro argomenti](topic-center-overview.md)<br><br>[Gestire gli argomenti](manage-topics.md)<br><br>[Creare un nuovo argomento](create-a-topic.md)<br><br>[Modificare un argomento esistente](edit-a-topic.md)<br><br>[Trovare argomenti con Microsoft Search](search.md)<br><br>|
+|Comprendere i ruoli utente|[Ruoli di Viva Topics](topic-experiences-roles.md)|
+|Comprendere perché gli argomenti potrebbero essere diversi per utenti diversi|[Limitazione per motivi di sicurezza viva Topics](topic-experiences-security-trimming.md)|
 |Informazioni su come impedire l'identificazione e la visualizzazione di argomenti specifici|[Limitare l'accesso agli argomenti](restrict-access-to-topics.md)|
 
 
 
-## <a name="see-also"></a>Vedere anche
+

@@ -1,5 +1,5 @@
 ---
-title: Gestire l'individuazione degli argomenti in Microsoft 365
+title: Gestire l'individuazione degli argomenti negli argomenti di Microsoft Viva
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -9,31 +9,30 @@ ms.topic: article
 ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
-description: Informazioni su come amministrare l'individuazione degli argomenti in Microsoft 365.
-ms.openlocfilehash: dec8aeef9dda390fb19f5067638c2ebea6b6a2fe
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+description: Informazioni su come amministrare l'individuazione degli argomenti in Microsoft Viva Topics.
+ms.openlocfilehash: 36b64433726479dc2a46c809ae9504c6f12f4ab8
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698544"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107760"
 ---
-# <a name="manage-topic-discovery-in-microsoft-365"></a>Gestire l'individuazione degli argomenti in Microsoft 365
+# <a name="manage-topic-discovery-in-microsoft-viva-topics"></a>Gestire l'individuazione degli argomenti negli argomenti di Microsoft Viva
 
-È possibile gestire le impostazioni di individuazione degli argomenti nell'interfaccia di [amministrazione di Microsoft 365](https://admin.microsoft.com). Per eseguire queste attività, è necessario essere un amministratore globale o un amministratore di SharePoint.
+È possibile gestire le impostazioni di individuazione degli argomenti [nell'interfaccia di amministrazione di Microsoft 365.](https://admin.microsoft.com) Per eseguire queste attività, è necessario essere un amministratore globale o un amministratore di SharePoint.
 
 ## <a name="to-access-topics-management-settings"></a>Per accedere alle impostazioni di gestione degli argomenti:
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 fare clic su **Impostazioni** e quindi su **Impostazioni org**.
-2. Nella scheda **Servizi** , fare clic su **Knowledge Network**.
+1. Nell'interfaccia di amministrazione di Microsoft 365 fare clic su **Impostazioni** e **quindi su Impostazioni organizzazione.**
+2. Nella scheda **Servizi** fare clic su **Esperienze argomento.**
 
-    ![Connettere le persone alla conoscenza](../media/admin-org-knowledge-options-completed.png) 
+    ![Connettere le persone alle conoscenze](../media/admin-org-knowledge-options-completed.png) 
 
-3. Selezionare la scheda **individuazione degli argomenti** . Per informazioni su ogni impostazione, vedere le sezioni seguenti.
+3. Selezionare la **scheda Individuazione** argomento. Per informazioni su ogni impostazione, vedere le sezioni seguenti.
 
-    ![Knowledge-Network-Settings](../media/knowledge-network-settings-topic-discovery.png) 
+    ![knowledge-network-settings](../media/knowledge-network-settings-topic-discovery.png) 
 
-## <a name="select-sharepoint-topic-sources"></a>Selezionare origini degli argomenti di SharePoint
+## <a name="select-sharepoint-topic-sources"></a>Selezionare le origini degli argomenti di SharePoint
 
 È possibile modificare i siti di SharePoint nell'organizzazione che verranno sottoposti a ricerca per indicizzazione per gli argomenti.
 
@@ -43,54 +42,54 @@ Se si desidera includere o escludere un elenco specifico di siti, è possibile u
 Site name,URL
 ```
 
-Se si aggiungono siti utilizzando lo strumento di selezione siti, questi vengono aggiunti all'elenco esistente di siti da includere o escludere. Se si carica un file. csv, sovrascrive qualsiasi elenco esistente. Se in precedenza sono stati inclusi o esclusi siti specifici, è possibile scaricare l'elenco come file. csv, apportare modifiche e caricare il nuovo elenco.
+Se si aggiungono siti utilizzando la selezione siti, questi verranno aggiunti all'elenco di siti esistenti da includere o escludere. Se si carica un file CSV, l'elenco esistente verrà sovrascritto. Se in precedenza sono stati inclusi o esclusi siti specifici, è possibile scaricare l'elenco come file CSV, apportare modifiche e caricare il nuovo elenco.
 
 Per scegliere i siti per l'individuazione degli argomenti
 
-1. Nella scheda **individuazione argomento** , in **selezionare origini argomento di SharePoint**, selezionare **modifica**.
+1. Nella scheda **Individuazione argomenti,** in Selezionare le origini degli **argomenti di SharePoint,** selezionare **Modifica.**
 2. Nella pagina **Seleziona origini argomenti di SharePoint** selezionare i siti di SharePoint che verranno sottoposti a ricerca per indicizzazione come origini per gli argomenti durante l'individuazione. Questo include:
-    - **Tutti i siti**: tutti i siti di SharePoint nel tenant. Questo acquisisce i siti correnti e futuri.
-    - **All, eccetto siti selezionati**: digitare i nomi dei siti che si desidera escludere.  È inoltre possibile caricare un elenco di siti che si desidera escludere dall'individuazione. I siti creati in futuro verranno inclusi come origini per l'individuazione degli argomenti. 
-    - **Solo siti selezionati**: digitare i nomi dei siti che si desidera includere. È inoltre possibile caricare un elenco di siti. I siti creati in futuro non verranno inclusi come origini per l'individuazione degli argomenti.
-    - **Nessun sito**: gli argomenti non verranno generati o aggiornati automaticamente con il contenuto di SharePoint. Gli argomenti esistenti rimangono nell'argomento centro.
+    - **Tutti i siti:** tutti i siti di SharePoint nel tenant. In questo modo vengono catturati i siti correnti e futuri.
+    - **Tutti, ad eccezione dei siti** selezionati: digitare i nomi dei siti che si desidera escludere.  Puoi anche caricare un elenco di siti che vuoi rifiutare esplicitamente dall'individuazione. I siti creati in futuro verranno inclusi come origini per l'individuazione degli argomenti. 
+    - **Solo siti selezionati:** digitare i nomi dei siti che si desidera includere. È inoltre possibile caricare un elenco di siti. I siti creati in futuro non verranno inclusi come origini per l'individuazione degli argomenti.
+    - **Nessun sito:** gli argomenti non verranno generati o aggiornati automaticamente con il contenuto di SharePoint. Gli argomenti esistenti rimangono nel Centro argomenti.
 
-    ![Schermata dell'interfaccia utente di origini degli argomenti di SharePoint](../media/k-manage-select-topic-source.png)
+    ![Screenshot dell'interfaccia utente delle origini degli argomenti di SharePoint](../media/k-manage-select-topic-source.png)
    
 3. Fare clic su **Salva**.
 
-## <a name="exclude-topics-by-name"></a>Escludi argomenti per nome
+## <a name="exclude-topics-by-name"></a>Escludere gli argomenti in base al nome
 
-È possibile escludere gli argomenti dall'individuazione caricando un elenco utilizzando un file. csv. Se sono stati precedentemente esclusi gli argomenti, è possibile scaricare il file. csv, apportare modifiche e caricarlo di nuovo.
+Puoi escludere gli argomenti dall'individuazione caricando un elenco usando un file CSV. Se in precedenza sono stati esclusi gli argomenti, è possibile scaricare il file CSV, apportare modifiche e caricarlo di nuovo.
 
-1. Nella scheda **individuazione argomento** , in **argomenti Escludi**, selezionare **modifica**.
-2. Fare clic su **Escludi argomenti per nome**.
-3. Se è necessario creare un elenco, scaricare il modello. csv e aggiungere gli argomenti che si desidera escludere (vedere *utilizzo del modello. CSV di* seguito). Quando il file è pronto, fare clic su **Sfoglia** e caricare il file. Se è presente un elenco esistente, è possibile scaricare il file con estensione CSV contenente l'elenco.
+1. Nella scheda **Individuazione argomenti,** in **Escludi argomenti,** selezionare **Modifica.**
+2. Fare **clic su Escludi argomenti per nome.**
+3. Se devi creare un elenco, scarica il modello .csv e aggiungi gli argomenti che vuoi escludere (vedi Uso del modello *CSV di* seguito). Quando il file è pronto, fare clic **su Sfoglia** e caricare il file. Se è presente un elenco esistente, è possibile scaricare il file CSV contenente l'elenco.
 4. Fare clic su **Salva**.
 
-    ![Schermata dell'interfaccia utente argomenti di esclusione](../media/km-manage-exclude-topics.png)
+    ![Screenshot dell'interfaccia utente per l'esclusione di argomenti](../media/km-manage-exclude-topics.png)
 
-### <a name="working-with-the-csv-template"></a>Utilizzo del modello. csv
+### <a name="working-with-the-csv-template"></a>Utilizzo del modello CSV
 
-È possibile copiare il modello CSV seguente:
+È possibile copiare il modello csv seguente:
 
 ``` csv
 Name (required),Expansion,MatchType- Exact/Partial (required)
 ```
 
-Nel modello CSV, immettere le informazioni seguenti sugli argomenti che si desidera escludere:
+Nel modello CSV immettere le informazioni seguenti sugli argomenti che si desidera escludere:
 
 - **Nome**: digitare il nome dell'argomento che si desidera escludere. Questa operazione può essere eseguita in due modi:
-    - Corrispondenza esatta: è possibile includere il nome o l'acronimo esatto (ad esempio, *Contoso* o *ATL*).
-    - Corrispondenza parziale: è possibile escludere tutti gli argomenti in cui è presente una parola specifica.  Ad esempio, *Arc* escluderà tutti gli argomenti con l' *arco* di parola in esso, ad esempio *cerchio arco*, *saldatura ad arco al plasma* o *arco di training*. Tenere presente che non verranno esclusi gli argomenti in cui il testo viene incluso come parte di una parola, ad esempio l' *architettura*.
-- Acronimo **di (facoltativo)**: se si desidera escludere un acronimo, digitare le parole in cui si trova l'acronimo.
-- **MatchType-exact/partial**: digitare se il nome immesso è un tipo di corrispondenza *esatta* o *parziale* .
+    - Corrispondenza esatta: è possibile includere il nome esatto o l'acronimo (ad esempio, *Contoso* o *ATL).*
+    - Corrispondenza parziale: è possibile escludere tutti gli argomenti che includono una parola specifica.  Ad esempio, *l'arco* escluderà tutti gli argomenti con la parola arco *al* suo interno, ad esempio cerchio ad *arco,* saldatura ad arco *di plasma* o arco *di formazione.* Si noti che non verranno esclusi gli argomenti in cui il testo è incluso come parte di una parola, ad esempio *Architecture.*
+- **Acronimo (facoltativo):** se si desidera escludere un acronimo, digitare le parole che l'acronimo sta per.
+- **MatchType-Exact/Partial:** specificare se il nome immesso è un *tipo* di corrispondenza esatto *o* parziale.
 
-    ![Escludi argomenti nel modello CSV](../media/exclude-topics-csv.png) 
+    ![Escludere gli argomenti nel modello CSV](../media/exclude-topics-csv.png) 
 
 ## <a name="see-also"></a>Vedere anche
 
 [Gestire la visibilità degli argomenti in Microsoft 365](topic-experiences-knowledge-rules.md)
 
-[Gestire le autorizzazioni per l'argomento in Microsoft 365](topic-experiences-user-permissions.md)
+[Gestire le autorizzazioni per gli argomenti in Microsoft 365](topic-experiences-user-permissions.md)
 
-[Modificare il nome del centro argomenti in Microsoft 365](topic-experiences-administration.md)
+[Modificare il nome del Centro argomenti in Microsoft 365](topic-experiences-administration.md)

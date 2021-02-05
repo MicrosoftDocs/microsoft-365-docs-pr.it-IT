@@ -2,8 +2,8 @@
 title: Configurare Microsoft 365 per le aziende
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -26,17 +26,17 @@ search.appverid:
 - BEA160
 ms.assetid: 6a3a29a0-e616-4713-99d1-15eda62d04fa
 description: Informazioni su come configurare l’abbonamento a Microsoft Business Premium, Microsoft 365 Business Standard, Microsoft 365 Business Basic, Microsoft 365 Apps for business o Office 365 Education.
-ms.openlocfilehash: c44f0046bc1f0a81ecee85de5c59ddbc854f33ac
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 6c5da0dbfd3659bf74d871db1a929a4f2f9ed19d
+ms.sourcegitcommit: b88ffaf3409e02a9847f030f8468f96d36efa398
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551809"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50105174"
 ---
 # <a name="set-up-microsoft-365-for-business"></a>Configurare Microsoft 365 per le aziende
 
 Vedere il link seguente per rendere disponibile [Microsoft 365 Business Standard](https://go.microsoft.com/fwlink/p/?LinkId=627220), Microsoft 365 Business Basic, Microsoft 365 Apps for business o Office 365 Education all'interno dell’azienda o dell’[organizzazione no profit](https://go.microsoft.com/fwlink/p/?LinkId=627221).
-  
+
 Non si è un'azienda? Vedere [Configurare Microsoft 365 Family o Microsoft 365 Personal](https://support.microsoft.com/office/65415a24-3cbf-4f30-901d-9bf9eba7fce2).
   
 - [Configurare Microsoft 365 Business Basic](setup-business-basic.md)

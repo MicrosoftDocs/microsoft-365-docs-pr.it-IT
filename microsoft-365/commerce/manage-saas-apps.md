@@ -1,5 +1,5 @@
 ---
-title: Gestire le app software-come-a-Service per l'organizzazione
+title: Gestire le app software-as-a-service per l'organizzazione
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -13,46 +13,46 @@ ms.collection:
 - commerce
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
-description: Informazioni su come attivare e gestire app di terze parti nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: c1565f0edb2f78302c0186aa3bd89d1ff5a51e5c
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: Informazioni su come attivare e gestire le app di terze parti nell'interfaccia di amministrazione di Microsoft 365.
+ms.openlocfilehash: 071f95c838620fb11350a829cbfed249e7c34f6e
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638172"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114718"
 ---
-# <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Gestire le sottoscrizioni delle app di terze parti per l'organizzazione
+# <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Gestire le sottoscrizioni di app di terze parti per l'organizzazione
 
-È possibile gestire le licenze e la fatturazione per le app di terze parti nel nuovo interfaccia di amministrazione di Microsoft 365. Le funzionalità aggiornate includono la gestione avanzata degli abbonamenti, l'accesso migliorato alle informazioni sulla fatturazione e una maggiore flessibilità per la gestione delle fatture. La gestione della sottoscrizione si basa sulla piattaforma di commercio aggiornata di Microsoft. Questo si applica alle app software-as-a-Service che i clienti acquistano direttamente o da un provider di terze parti.
+È possibile gestire le licenze e la fatturazione per le app di terze parti nella nuova interfaccia di amministrazione di Microsoft 365. Le funzionalità aggiornate includono una gestione delle sottoscrizioni avanzata, un accesso migliorato alle informazioni sulla fatturazione e una maggiore flessibilità per la gestione delle fatture. La gestione delle sottoscrizioni si basa sulla piattaforma di e-commerce aggiornata di Microsoft. Questo vale per le app software-as-a-service acquistate direttamente dai clienti o da un provider di terze parti.
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
-È possibile gestire le licenze e la fatturazione per le app di terze parti nell'interfaccia di amministrazione di Microsoft 365 con la modalità Anteprima attivata. Le funzionalità aggiornate includono la gestione avanzata degli abbonamenti, l'accesso migliorato alle informazioni sulla fatturazione e una maggiore flessibilità per la gestione delle fatture. La gestione della sottoscrizione si basa sulla piattaforma di commercio aggiornata di Microsoft. Questo si applica alle app software-as-a-Service che i clienti acquistano direttamente o da un provider di terze parti.
+È possibile gestire le licenze e la fatturazione per le app di terze parti nell'interfaccia di amministrazione di Microsoft 365 con la modalità di anteprima attivata. Le funzionalità aggiornate includono la gestione avanzata delle sottoscrizioni, l'accesso migliorato alle informazioni sulla fatturazione e una maggiore flessibilità per la gestione delle fatture. La gestione delle sottoscrizioni si basa sulla piattaforma di e-commerce aggiornata di Microsoft. Questo vale per le app software-as-a-service acquistate direttamente dai clienti o da provider di terze parti.
 
 
-## <a name="how-to-get-software-as-a-service-apps"></a>Come ottenere le app software-come-a-Service
+## <a name="how-to-get-software-as-a-service-apps"></a>Come ottenere app software-as-a-service
 
-Esistono alcuni modi per acquistare app di terze parti.
+Esistono diversi modi per acquistare app di terze parti.
 
-- **Acquisto diretto** – i clienti possono acquistare direttamente abbonamenti da [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/)o [AppSource](https://www.appsource.com/).
-- **Acquisto partner** – collaborare con un partner tramite centro partner per l'acquisto di sottoscrizioni.
-- **Proposta Microsoft** – rispondere a una proposta di Microsoft Sales che include app di terze parti.
+- **Acquisto diretto:** i clienti possono acquistare direttamente sottoscrizioni da [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/)o [AppSource.](https://www.appsource.com/)
+- **Acquisto di partner:** collaborare con un partner tramite il Centro per i partner per acquistare sottoscrizioni.
+- **Proposta Microsoft:** rispondere a una proposta di Microsoft Sales che include app di terze parti.
 
-Quando i clienti acquistano le app e accettano il contratto per i clienti Microsoft, possono gestirle nell'interfaccia di amministrazione di Microsoft 365 o in Microsoft Store for business.
+Dopo aver acquistato le app e accettato il Contratto per i clienti Microsoft, i clienti possono gestirle nell'interfaccia di amministrazione di Microsoft 365 o in Microsoft Store per le aziende.
 
-I provider di app vendono le proprie app a una tariffa forfettaria o acquistando licenze per gli utenti.
+I provider di app vendono le proprie app a una tariffa flat o acquistando licenze per gli utenti.
 
-- **Flat rate** – denominato anche prezzi basati sul sito, le app hanno un prezzo mensile o annuale. Nella pagina app, la quantità di licenza è elencata a illimitata.
-- **Licenze** : le app sono prezzate dalla licenza. I clienti assegnano le licenze a ciascun utente nella propria organizzazione
+- **Tariffa flat:** chiamata anche prezzi basati sul sito, le app hanno un prezzo mensile o annuale. Nella pagina dell'app, la quantità di licenze è elencata in Unlimited.
+- **Licenze:** le app hanno un prezzo in base alla licenza. I clienti assegnano licenze a ogni utente dell'organizzazione
 
-## <a name="supported-regions"></a>Aree supportate
+## <a name="supported-regions"></a>Aree geografiche supportate
 
-Il supporto per le app di terze parti è disponibile in queste aree:
+Il supporto per le app di terze parti è disponibile nelle aree geografiche seguenti:
 
 - Argentina
 - Australia
@@ -67,66 +67,66 @@ Il supporto per le app di terze parti è disponibile in queste aree:
 - Stati Uniti
 - Europa occidentale
 
-## <a name="activate-third-party-apps"></a>Attivare le app di terze parti
+## <a name="activate-third-party-apps"></a>Attivare app di terze parti
 
 Gli amministratori devono attivare le app di terze parti prima di assegnarle agli utenti. Queste app vengono attivate nel portale dell'editore di terze parti.
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione**dei  >  **prodotti**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> .
-2. Individuare e selezionare l'app che si desidera gestire.
-3. In **impostazioni & azioni**fare clic **su Gestisci nel portale di Publisher**.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione**  >  **le app**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">dei</a> prodotti.
+2. Trova e seleziona l'app che vuoi gestire.
+3. In **Impostazioni & azioni** selezionare Gestisci nel portale **dell'autore.**
 
-Verrà indirizzato al sito dell'app Publisher in cui è possibile attivare l'app.
+Verrà indirizzato al sito dell'autore dell'app in cui è possibile attivare l'app.
 
 ## <a name="manage-third-party-apps"></a>Gestire app di terze parti
 
-Gli amministratori gestiscono le app di terze parti in due posizioni: l'interfaccia di amministrazione di Microsoft 365 e il portale del provider di applicazioni di terze parti.
+Gli amministratori gestiscono le app di terze parti in due posizioni: l'interfaccia di amministrazione di Microsoft 365 e il portale del provider di app di terze parti.
 
-Di seguito sono riportate le operazioni che è possibile eseguire in ogni portale.
+Ecco cosa puoi fare in ogni portale.
 
-| Interfaccia di amministrazione di Microsoft 365 | Portale App Publisher |
+| Interfaccia di amministrazione di Microsoft 365 | Portale per gli editori di app |
 | --- | --- |
-| Modificare la quantità di licenza <br> Gestire la modalità di pagamento della fattura <br> Gestire la modalità di pagamento della fattura <br> Cambiare il metodo di pagamento (carta di credito) <br> Visualizza fattura <br> Annullare l'abbonamento all'app | Configurare un'app (una volta per ogni app) <br> Assegnare licenze agli utenti <br> Supporto tecnico |
+| Modificare la quantità di licenze <br> Gestire la modalità di pagamento della fattura <br> Gestire la modalità di pagamento della fattura <br> Modificare la modalità di pagamento (carta di credito) <br> Visualizza fattura <br> Annullare l'abbonamento all'app | Configurare l'app (una sola volta per ogni app) <br> Assegnare licenze agli utenti <br> Supporto tecnico |
 
-Dopo che l'app è stata attivata, rimarrà attiva a meno che non venga annullata, scaduta o se il pagamento non viene mantenuto corrente. Questi eventi modificano lo stato dell'applicazione su disabilitato. Una volta disabilitata, l'app non può essere riattivata. Per continuare a utilizzare l'app, acquistarne un'altra copia.
+Dopo l'attivazione, l'app rimane attiva a meno che non venga annullata, scada o se il pagamento non viene mantenuto attivo. Questi eventi modificano lo stato dell'app in disabilitato. Una volta disabilitata, un'app non può essere riattivata. Per continuare a usare l'app, acquistarne un'altra copia.
 
-## <a name="assign-licenses"></a>Assegnazione delle licenze
+## <a name="assign-licenses"></a>Assegnare le licenze
 
-Gli amministratori devono attivare le app di terze parti prima di assegnarle agli utenti. Vengono attivati nel portale dell'editore di terze parti. Nella pagina app, in **impostazioni & azioni**, selezionare il collegamento per assegnare le licenze.
+Gli amministratori devono attivare le app di terze parti prima di assegnarle agli utenti. Vengono attivati nel portale dell'editore di terze parti. Nella pagina dell'app, in **Impostazioni & azioni,** selezionare il collegamento per assegnare le licenze.
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione**dei  >  **prodotti**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> .
-2. Individuare e selezionare l'app che si desidera gestire.
-3. In **impostazioni & azioni**selezionare il collegamento da **gestire nel portale di Publisher**.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione**  >  **le app**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">dei</a> prodotti.
+2. Trova e seleziona l'app che vuoi gestire.
+3. In **Impostazioni & azioni** selezionare il collegamento Gestisci nel portale **dell'autore.**
 
-## <a name="change-license-quantity"></a>Modificare la quantità di licenza
+## <a name="change-license-quantity"></a>Modificare la quantità di licenze
 
-Gli amministratori possono modificare il numero di licenze possedute dalla propria organizzazione. Questo vale solo per le app acquistate con prezzi basati su Seat.
+Gli amministratori possono modificare il numero di licenze di proprietà dell'organizzazione. Questo vale solo per le app acquistate con prezzi basati su postazione.
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione**dei  >  **prodotti**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> .
-2. Individuare e selezionare l'app che si desidera gestire.
-3. Selezionare **Cambia quantità di licenza**.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione**  >  **le app**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">dei</a> prodotti.
+2. Trova e seleziona l'app che vuoi gestire.
+3. Selezionare **Cambia quantità di licenze.**
 
 ## <a name="manage-payment-methods"></a>Gestire metodi di pagamento
 
-Le app software-come-a-Service dispongono ognuna di un profilo di fatturazione assegnato. I profili di fatturazione consentono di personalizzare i prodotti inclusi nella fattura e la modalità di pagamento delle fatture. Sono inclusi i seguenti:
+Alle app software-as-a-service è assegnato un profilo di fatturazione. I profili di fatturazione consentono di personalizzare i prodotti inclusi nella fattura e la modalità di pagamento delle fatture. Includono:
 
-- **Metodi di pagamento** – carte di credito o bonifico bancario
-- **Informazioni di contatto** – indirizzo di fatturazione e nome del contatto
-- **Ruoli** : ruoli che consentono di modificare il profilo di fatturazione, pagare le bollette o utilizzare il metodo di pagamento sul profilo di fatturazione per effettuare l'acquisto.
+- **Modalità di pagamento:** carte di credito o bonifico/bonifico bancario
+- **Informazioni di contatto** - Indirizzo di fatturazione e nome di contatto
+- **Ruoli:** ruoli che consentono di modificare il profilo di fatturazione, pagare le fatture o utilizzare la modalità di pagamento nel profilo di fatturazione per effettuare l'acquisto.
 
-Per ulteriori informazioni sui profili di fatturazione, vedere [understand Billing Profiles](https://docs.microsoft.com/microsoft-store/billing-profile).
+Per ulteriori informazioni sui profili di fatturazione, vedere [Informazioni sui profili di fatturazione.](https://docs.microsoft.com/microsoft-store/billing-profile)
 
-### <a name="change-the-billing-profile-on-a-software-as-a-service-app-subscription"></a>Modificare il profilo di fatturazione su una sottoscrizione di app software-come-a-Service
+### <a name="change-the-billing-profile-on-a-software-as-a-service-app-subscription"></a>Modificare il profilo di fatturazione in un abbonamento a un'app software-as-a-service
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione**dei  >  **prodotti**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> .
-2. Individuare e selezionare l'app che si desidera gestire.
-3. Fare clic su **modifica**accanto a **profilo di fatturazione**.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione**  >  **le app**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">dei</a> prodotti.
+2. Trova e seleziona l'app che vuoi gestire.
+3. Accanto a **Profilo di fatturazione** selezionare **Modifica.**
 
-Per ulteriori informazioni sulle fatture, vedere [understand your Bill or fattura](billing-and-payments/understand-your-invoice.md).
+Per ulteriori informazioni sulle fatture, vedere [Informazioni sulla fattura.](billing-and-payments/understand-your-invoice.md)
 
-## <a name="cancel-a-software-as-a-service-app-subscription"></a>Annullamento di una sottoscrizione di app software-as-a-Service
+## <a name="cancel-a-software-as-a-service-app-subscription"></a>Annullare una sottoscrizione di un'app software-as-a-service
 
-È possibile annullare un'app software-as-a-Service dalla pagina app.
+Puoi annullare un'app software-as-a-service dalla pagina dell'app.
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione**dei  >  **prodotti**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">Apps</a> .
-2. Individuare e selezionare l'app che si desidera gestire.
-3. In **impostazioni & azioni**selezionare **Annulla sottoscrizione**.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione**  >  **le app**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2125823" target="_blank">dei</a> prodotti.
+2. Trova e seleziona l'app che vuoi gestire.
+3. In **Impostazioni & azioni selezionare** Annulla **sottoscrizione.**

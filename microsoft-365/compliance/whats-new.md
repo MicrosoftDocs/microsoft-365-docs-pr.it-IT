@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Che si tratta dell'aggiunta di nuove soluzioni al Centro conformità, dell'aggiornamento delle funzionalità esistenti in base al feedback degli utenti o dell'implementazione di documentazione aggiornata e aggiornata, Microsoft 365 consente di rimanere sempre aggiornati nel panorama della conformità in continua evoluzione. Scopri cosa abbiamo fatto fino a questo mese.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 4fcc0c9317ed0f302c03ba4bda0b536b57889660
-ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
+ms.openlocfilehash: 682f736456ebe822ee5a34de0175003fd7516920
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50066819"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50113975"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novità sulla conformità Microsoft 365
 
@@ -55,7 +55,7 @@ Altri documenti sulle soluzioni di contenuto saranno disponibili a breve.
 
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
-Miglioramento del flusso di lavoro e delle [funzionalità per l'aggiunta](add-custodians-to-case.md) di responsabile e [origini dati non](non-custodial-data-sources.md) di tipo responsabile a un caso di Advanced eDiscovery.
+Flusso di lavoro e funzionalità migliorate [per l'aggiunta](add-custodians-to-case.md) di responsabile e [origini dati non](non-custodial-data-sources.md) di tipo responsabile a un caso di Advanced eDiscovery.
 
 ### <a name="data-connectors"></a>Connettori dati
 
@@ -79,7 +79,7 @@ Il [gruppo di ruoli amministratore](get-started-with-records-management.md#permi
 
 ### <a name="sensitivity-labels"></a>Etichette di riservatezza
 
-- [Etichettare automaticamente i dati in Azure Purview (anteprima).](https://docs.microsoft.com/en-us/azure/purview/create-sensitivity-label) È ora possibile creare e applicare automaticamente etichette di riservatezza agli asset in Azure Purview, ad esempio i file nell'archiviazione BLOB di Azure e le colonne di database in SQL Server.
+- [Etichettare automaticamente i dati in Azure Purview (anteprima).](https://docs.microsoft.com/azure/purview/create-sensitivity-label) È ora possibile creare e applicare automaticamente etichette di riservatezza agli asset in Azure Purview, ad esempio i file nell'archiviazione BLOB di Azure e le colonne di database in SQL Server.
 - [Richiedere agli utenti di applicare un'etichetta agli elementi.](sensitivity-labels-office-apps.md#require-users-to-apply-a-label-to-their-email-and-documents) Nota anche come "etichettatura obbligatoria", questa nuova opzione richiede agli utenti di scegliere e applicare un'etichetta di riservatezza negli scenari specifici.
 
 ## <a name="november-2020"></a>Novembre 2020
@@ -87,7 +87,7 @@ Il [gruppo di ruoli amministratore](get-started-with-records-management.md#permi
 
 ![feedback](../media/Feedback_card_MCC.JPG)
 
-### <a name="spotlight-endpoint-data-loss-prevention-dlp-released"></a>Spotlight: Endpoint Data Loss Prevention (DLP) released
+### <a name="spotlight-endpoint-data-loss-prevention-dlp-released"></a>Spotlight: Endpoint data loss prevention (DLP) released
 
 [Endpoint DLP](endpoint-dlp-learn-about.md) estende le funzionalità di monitoraggio e protezione delle attività di DLP alle informazioni sensibili nei dispositivi Windows 10. Dopo [l'onboarded](dlp-configure-endpoints.md) dei dispositivi nel Centro conformità Microsoft 365, è possibile configurare i criteri DLP per proteggere le informazioni riservate in tali dispositivi.
 
@@ -118,7 +118,7 @@ Per visualizzare gli elementi durante una revisione dell'eliminazione, gli utent
 
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
-[Supporto del linguaggio CJK.](ediscovery-cjk-support.md) Advanced eDiscovery ora supporta le lingue dei set di caratteri a byte doppio, note collettivamente come lingue CJK (include cinese semplificato, cinese tradizionale, giapponese e coreano). Questi possono essere usati in diversi scenari avanzati di set di recensioni.
+[Supporto del linguaggio CJK.](ediscovery-cjk-support.md) Advanced eDiscovery ora supporta le lingue dei set di caratteri a byte doppio, note collettivamente come lingue CJK (include il cinese semplificato, il cinese tradizionale, il giapponese e il coreano). Questi possono essere usati in diversi scenari avanzati di set di recensioni.
 
 ### <a name="sensitivity-labels"></a>Etichette di riservatezza
 
@@ -145,13 +145,13 @@ Guardare il video seguente per informazioni su come Compliance Manager può semp
 
 - [Gruppi di ruoli aggiornati.](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance) I gruppi di ruoli di conformità delle comunicazioni ora corrispondono alla struttura del gruppo di ruoli disponibile per la soluzione di gestione dei rischi Insider.
 - [Dashboard dei report.](communication-compliance-feature-reference.md#reports-preview) Posizione centrale per la visualizzazione di tutti i report di conformità delle comunicazioni. I widget di report offrono una rapida visualizzazione delle informazioni dettagliate più comunemente necessarie per una valutazione generale dello stato delle attività di conformità delle comunicazioni.
-- [Flussi di Power Automate](communication-compliance-feature-reference.md#power-automate-flows). Configurare i flussi per automatizzare le attività per avvisi e utenti, informare i responsabili quando gli utenti attivano un avviso e altro ancora.
-- [Azione correttiva "Migliora classificazione".](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action) Gli avvisi contenenti elementi che corrispondono a classificatori formabili potrebbero trarre vantaggio dal feedback per ridurre al minimo i falsi positivi nell'organizzazione. **L'opzione Migliora classificazione** consente di fornire feedback se gli elementi rilevati corrispondono al classificatore configurato nei criteri di conformità delle comunicazioni correlati. Puoi anche suggerire altri classificatori da associare all'elemento per migliorare l'accuratezza della corrispondenza per gli avvisi futuri.
+- [Flussi di Power Automate](communication-compliance-feature-reference.md#power-automate-flows). Configurare i flussi per automatizzare le attività per avvisi e utenti, informare i responsabili quando gli utenti attivano gli avvisi e altro ancora.
+- [Azione di correzione "Migliora classificazione".](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action) Gli avvisi contenenti elementi che corrispondono a classificatori che possono essere classificati possono trarre vantaggio dal feedback per ridurre al minimo i falsi positivi nell'organizzazione. **L'opzione Migliora classificazione** consente di fornire feedback se gli elementi rilevati corrispondono al classificatore configurato nei criteri di conformità delle comunicazioni correlati. Puoi anche suggerire altri classificatori da associare all'elemento per migliorare l'accuratezza della corrispondenza per gli avvisi futuri.
 
 ### <a name="data-connectors"></a>Connettori dati
 
 - [Nuovi connettori dati di terze parti.](archiving-third-party-data.md#third-party-data-connectors) 25 nuovi connettori dati, inclusi 14 connettori da Globanet e 8 da Telemessage.
-- [Connettore di badging fisico.](import-physical-badging-data.md) Importare dati di badging fisici, ad esempio gli eventi di accesso fisico non elaborati dei dipendenti o eventuali allarmi di accesso fisico generati dal sistema di badging dell'organizzazione. Tra gli esempi sono incluse le voci relative a edifici, sale server o data center. I dati di badging fisici possono essere utilizzati dalla soluzione di gestione dei rischi Insider per proteggere l'organizzazione da attività dannose o furti di dati all'interno dell'organizzazione.
+- [Connettore di badging fisico.](import-physical-badging-data.md) Importare dati di badging fisici, ad esempio gli eventi di accesso fisico non elaborati dei dipendenti o eventuali allarmi di accesso fisico generati dal sistema di badging dell'organizzazione. Ad esempio, le voci relative a edifici, sale server o data center. I dati di badging fisici possono essere utilizzati dalla soluzione di gestione dei rischi Insider per proteggere l'organizzazione da attività dannose o furti di dati all'interno dell'organizzazione.
 
 ### <a name="insider-risk-management"></a>Gestione dei rischi Insider
 
@@ -182,12 +182,12 @@ Questa nuova funzionalità è inclusa nelle funzionalità seguenti:
 > Per tutte le funzionalità, se fornisci almeno 30 risposte di feedback, creeremo una versione aggiornata del classificatore che puoi esaminare. In caso di miglioramento, è possibile ripubblicare il classificatore.
 
 - [Classificatori di cui è possibile utilizzare il training.](classifier-learn-about.md#retraining-classifiers) Per migliorare l'accuratezza dei classificatori pubblicati, è possibile fornire un feedback sul fatto che gli elementi rilevati corrispondano al classificatore.
-- [Conformità delle comunicazioni](classifier-how-to-retrain-comms-compliance.md). La nuova **azione di correzione** della classificazione Migliora consente di fornire feedback se un elemento di un avviso di conformità alle comunicazioni corrisponde al classificatore configurato nei criteri di conformità delle comunicazioni.
-- [Esplora contenuto.](classifier-how-to-retrain-content-explorer.md) Se si configura un criterio di etichettatura automatica di conservazione per applicare automaticamente le etichette ai messaggi di posta elettronica che corrispondono a classificatori formabili, è possibile utilizzare Esplora contenuto per esaminare gli elementi etichettati e fornire commenti e suggerimenti se gli elementi corrispondono al classificatore.
+- [Conformità delle comunicazioni](classifier-how-to-retrain-comms-compliance.md). La nuova **azione di** correzione della classificazione Migliora consente di fornire feedback se un elemento di un avviso di conformità alle comunicazioni corrisponde al classificatore configurato nei criteri di conformità delle comunicazioni.
+- [Esplora contenuto.](classifier-how-to-retrain-content-explorer.md) Se si configura un criterio di etichettatura automatica di conservazione per applicare automaticamente le etichette ai messaggi di posta elettronica che corrispondono a classificatori di cui è possibile eseguire il training, è possibile utilizzare Esplora contenuto per esaminare gli elementi etichettati e fornire feedback se gli elementi corrispondono al classificatore.
 
 ## <a name="august-2020"></a>Agosto 2020
 
-### <a name="spotlight-insider-risk-and-communication-compliance-updates"></a>Informazioni in evidenza: aggiornamenti di conformità dei rischi Insider e delle comunicazioni
+### <a name="spotlight-insider-risk-and-communication-compliance-updates"></a>Informazioni in evidenza: aggiornamenti per la conformità dei rischi Insider e delle comunicazioni
 
 Diverse funzionalità nuove e migliorate hanno raggiunto l'anteprima pubblica questo mese:
 
@@ -222,7 +222,7 @@ Diverse funzionalità nuove e migliorate hanno raggiunto l'anteprima pubblica qu
 ### <a name="sensitivity-labels"></a>Etichette di riservatezza
 
 - Per i tenant degli enti pubblici degli Stati Uniti (GCC, GCC-HC e DoD), le etichette di riservatezza sono attualmente supportate solo per lo scanner e il client di etichettatura unificata di Azure Information Protection. Per altre informazioni, vedere [Descrizione del servizio Azure Information Protection Premium per gli enti pubblici](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
-- È ora possibile [utilizzare PowerShell &](create-sensitivity-labels.md#use-powershell-for-sensitivity-labels-and-their-policies) Centro sicurezza e conformità per creare e configurare tutte le impostazioni presenti nell'interfaccia di amministrazione per l'etichettatura. Questo significa che, oltre a usare PowerShell per le impostazioni che non sono disponibili nelle centri di amministrazione per l'etichettatura, è ora possibile creare e manutenzione di etichette di riservatezza e criteri di etichetta di riservatezza completamente script.
+- È ora possibile [utilizzare PowerShell &](create-sensitivity-labels.md#use-powershell-for-sensitivity-labels-and-their-policies) Centro sicurezza e conformità per creare e configurare tutte le impostazioni presenti nell'interfaccia di amministrazione per l'etichettatura. Ciò significa che, oltre a usare PowerShell per le impostazioni che non sono disponibili nelle centri di amministrazione per l'etichettatura, è ora possibile creare e manutenzione di etichette di riservatezza e criteri di etichetta di riservatezza completamente script.
 
 ### <a name="records-management-content-overhaul"></a>Gestione dei record: revisione del contenuto
 
@@ -252,7 +252,7 @@ Per comprendere quali soluzioni di conformità vengono utilizzate per proteggere
 
 ### <a name="advanced-ediscovery-add-non-custodial-data-sources-to-your-cases"></a>Advanced eDiscovery: Aggiungere origini dati non di tipo responsabile ai casi
 
-Aggiungere dati a un caso senza doverlo associare a un responsabile (noto come origini dati non di [tipo](non-custodial-data-sources.md)responsabile). Se è necessario mettere in attesa questi dati non relativi ai depositario, sarà possibile farlo usando la nuova funzionalità di indicizzazione avanzata.
+Aggiungere dati a un caso senza doverlo associare a un responsabile (noto come origini dati non di [tipo depositario).](non-custodial-data-sources.md) Inoltre, se è necessario mettere in attesa questi dati non-depositl, sarà possibile farlo usando la nuova funzionalità di indicizzazione avanzata.
 
 ### <a name="data-connectors-hr-connector-enhancements"></a>Connettori dati: miglioramenti dei connettori hr
 

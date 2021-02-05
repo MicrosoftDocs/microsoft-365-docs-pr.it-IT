@@ -21,26 +21,26 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
-description: Informazioni su come distribuire i componenti aggiuntivi agli utenti e ai gruppi dell'organizzazione tramite la distribuzione centralizzata nell'interfaccia di amministrazione.
-ms.openlocfilehash: ef7237f20780cb67bc84561ad8617dd8da6f8b82
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: Informazioni su come distribuire componenti aggiuntivi a utenti e gruppi dell'organizzazione tramite la distribuzione centralizzata nell'interfaccia di amministrazione.
+ms.openlocfilehash: 5d17242d98f0e58ec4bfbcfd5b7014e6a6e0a6c5
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926355"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114502"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Distribuire i componenti aggiuntivi nell'interfaccia di amministrazione
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
 I componenti aggiuntivi di Office consentono di personalizzare i documenti e semplificare il modo in cui si accede alle informazioni sul Web (vedere Iniziare a [usare il componente aggiuntivo di Office).](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862) Gli amministratori possono distribuire i componenti aggiuntivi di Office per gli utenti dell'organizzazione usando la funzionalità distribuzione centralizzata nell'interfaccia di amministrazione di Microsoft 365. La distribuzione centralizzata è il modo consigliato e più ricco di funzionalità per la maggior parte degli amministratori di distribuire componenti aggiuntivi a utenti e gruppi all'interno di un'organizzazione. 
 
-Per ulteriori informazioni su come determinare se l'organizzazione può supportare la distribuzione centralizzata, vedere Determine [if Centralized Deployment of add-ins works for your organization.](centralized-deployment-of-add-ins.md)
+Per ulteriori informazioni su come determinare se l'organizzazione può supportare la distribuzione centralizzata, vedere [Determine if Centralized Deployment of add-ins works for your organization.](centralized-deployment-of-add-ins.md)
 
 Per ulteriori informazioni sulla gestione dei componenti aggiuntivi dopo la distribuzione, vedere [Gestire i componenti aggiuntivi nell'interfaccia di amministrazione](manage-addins-in-the-admin-center.md)
   
@@ -61,7 +61,7 @@ A seconda delle dimensioni del gruppo di destinatari, è possibile aggiungere o 
   
 ## <a name="deploy-an-office-add-in-using-the-admin-center"></a>Distribuire un componente aggiuntivo di Office tramite l'interfaccia di amministrazione
 
-Prima di iniziare, vedere Determinare se la distribuzione centralizzata dei componenti aggiuntivi funziona [per l'organizzazione.](centralized-deployment-of-add-ins.md)
+Prima di iniziare, vedere [Determine if Centralized Deployment of add-ins works for your organization.](centralized-deployment-of-add-ins.md)
   
 1. Nell'interfaccia di amministrazione passare alla **pagina** \> **Componenti aggiuntivi impostazioni.** Se la pagina del  componente aggiuntivo non è  visualizzata, passare alla pagina Impostazioni componenti aggiuntivi \>  \> **app integrate.**
     
@@ -89,9 +89,9 @@ Prima di iniziare, vedere Determinare se la distribuzione centralizzata dei comp
 7. Quando il componente aggiuntivo viene distribuito, viene visualizzato un segno di graduazione verde. Seguire le istruzioni riportate nella pagina per testare il componente aggiuntivo.
 
     > [!NOTE]
-    > Per visualizzare l'icona del componente aggiuntivo sulla barra multifunzione dell'app, potrebbe essere necessario il riavvio di Office. La visualizzazione dei componenti aggiuntivi di Outlook sulle barre multifunzione dell'app può richiedere fino a 24 ore.
+    > Per visualizzare l'icona del componente aggiuntivo sulla barra multifunzione dell'app, potrebbe essere necessario il riavvio di Office. La visualizzazione dei componenti aggiuntivi di Outlook nelle barre multifunzione dell'app può richiedere fino a 24 ore.
     
-8. Al termine, selezionare **Avanti.** Se è stata distribuita solo a se stessi, è possibile selezionare Cambia chi ha accesso al componente aggiuntivo **per** la distribuzione a più utenti.
+8. Al termine, selezionare **Avanti.** Se si è distribuito solo a se stessi, è possibile selezionare Cambia chi ha accesso al componente aggiuntivo **da** distribuire a più utenti.
 
     Se il componente aggiuntivo è stato distribuito ad altri membri dell'organizzazione, seguire le istruzioni per annunciare la distribuzione del componente aggiuntivo. <br/>
   
@@ -107,7 +107,7 @@ Gli amministratori possono assegnare un componente aggiuntivo a tutti gli utenti
     
 - **Gruppi** Se si assegna un componente aggiuntivo a un gruppo, agli utenti aggiunti al gruppo viene assegnato automaticamente il componente aggiuntivo. Quando un utente viene rimosso da un gruppo, perde l'accesso al componente aggiuntivo. In entrambi i casi, non è necessaria alcuna azione aggiuntiva da parte dell'amministratore. 
 
-- **Just me** Se assegni un componente aggiuntivo solo a te stesso, il componente aggiuntivo viene assegnato solo al tuo account, ideale per testare il componente aggiuntivo.
+- **Just me** Se assegni un componente aggiuntivo a te stesso, il componente aggiuntivo viene assegnato solo al tuo account, ideale per testarlo.
     
 L'opzione appropriata per l'organizzazione dipende dalla configurazione. È tuttavia consigliabile eseguire le assegnazioni utilizzando i gruppi. Gli amministratori possono trovare più semplice gestire i componenti aggiuntivi usando i gruppi e controllando l'appartenenza a tali gruppi invece di assegnare singoli utenti ogni volta. In alcune situazioni, è possibile limitare l'accesso a un piccolo gruppo di utenti assegnando manualmente gli utenti a utenti specifici.
   
@@ -136,7 +136,7 @@ Gli aggiornamenti per i componenti aggiuntivi vengono eseguiti come segue:
     
 - **Componente aggiuntivo di Office Store:** Se un amministratore ha selezionato un componente aggiuntivo da Office Store e questo viene aggiornato in Office Store, il componente aggiuntivo verrà aggiornato in un secondo momento nella distribuzione centralizzata. All'avvio successivo delle applicazioni di Office rilevanti, il componente aggiuntivo verrà aggiornato. L'applicazione Web può essere modificata in qualsiasi momento. 
   
-## <a name="learn-more"></a>Altre informazioni
+## <a name="learn-more"></a>Scopri di più
 
 [Gestire i componenti aggiuntivi nell'interfaccia di amministrazione](manage-addins-in-the-admin-center.md)
 

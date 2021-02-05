@@ -23,19 +23,19 @@ search.appverid:
 - GEA150
 ms.assetid: 1136115a-75af-4497-b693-640c4ce70bc6
 description: "Creare collegamenti rapidi alla posta elettronica, ai documenti, alle app, ai siti di SharePoint, ai siti esterni e ad altre risorse aggiungendo riquadri personalizzati all'icona di avvio delle app. "
-ms.openlocfilehash: 2bbcf64b807754aed199c441f6df028d5fe20a97
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 96d059b252b63e48e20edb29861cf8233e220e34
+ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926235"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50114190"
 ---
 # <a name="add-custom-tiles-to-the-app-launcher"></a>Aggiungere riquadri personalizzati all'icona di avvio delle app
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
 
 ::: moniker-end
 
@@ -55,7 +55,7 @@ Puoi aggiungere all'icona di avvio delle app riquadri personalizzati che puntano
   
 4. Immetti un **Nome del riquadro** per il nuovo riquadro. Il nome verrà visualizzato nel riquadro. 
     
-5. Immetti un **URL del sito Web** per il riquadro. Questa è la posizione in cui gli utenti devono passare quando selezionano il riquadro nell'icona di avvio delle app. Utilizzare HTTPS nell'URL.<br/>SUGGERIMENTO: se si crea un riquadro per un sito di SharePoint, passare a tale sito, copiare l'URL e incollarlo qui. L'URL del sito del team predefinito è simile al seguente: `https://<company_name>.sharepoint.com` 
+5. Immetti un **URL del sito Web** per il riquadro. Questa è la posizione in cui gli utenti devono andare quando selezionano il riquadro nell'icona di avvio delle app. Utilizzare HTTPS nell'URL.<br/>SUGGERIMENTO: se si crea un riquadro per un sito di SharePoint, passare a tale sito, copiare l'URL e incollarlo qui. L'URL del sito del team predefinito è simile al seguente: `https://<company_name>.sharepoint.com` 
   
 6. Immetti un **URL dell'immagine** per il riquadro. L'immagine verrà visualizzata nella pagina Mie app e nell'icona di avvio delle app.<br/>SUGGERIMENTO: l'immagine deve essere di 60x60 pixel ed essere disponibile per tutti gli utenti dell'organizzazione senza richiedere l'autenticazione.
 
@@ -87,7 +87,7 @@ Il riquadro personalizzato viene ora visualizzato nella scheda **Tutte** nell'ic
     
 4. Selezionare **Update** \> **Close**. 
     
-Per eliminare un riquadro personalizzato, dalla **finestra Riquadri** personalizzati selezionare il riquadro, selezionare **Rimuovi riquadro**  >  **Elimina.** 
+Per eliminare un riquadro personalizzato, dalla **finestra Riquadri** personalizzati seleziona il riquadro, seleziona **Rimuovi riquadro**  >  **Elimina.** 
   
 ## <a name="whats-next"></a>Operazioni successive
 

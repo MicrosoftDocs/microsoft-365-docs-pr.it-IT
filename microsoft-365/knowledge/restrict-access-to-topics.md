@@ -1,9 +1,10 @@
 ---
-title: Limitare l'accesso agli argomenti
-description: Come escludere gli argomenti per impedire che vengano scoperti.
+title: Limitare l'accesso agli argomenti negli argomenti di Microsoft Viva
+description: Come escludere gli argomenti per impedirne l'individuare.
 author: efrene
 ms.author: efrene
 manager: pamgreen
+ms.reviewer: cjtan
 audience: admin
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -11,40 +12,39 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-topics
-ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: f7e8406ee7090387d4500f69955330466f28c6c0
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 6b3d2a4b6cbfc67623cea58b73681b7af7cc4889
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976146"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107159"
 ---
-# <a name="restrict-access-to-topics-in-topic-experiences"></a>Limitare l'accesso agli argomenti nelle esperienze di argomento
+# <a name="restrict-access-to-topics-in-microsoft-viva-topics"></a>Limitare l'accesso agli argomenti negli argomenti di Microsoft Viva
 
-Nelle esperienze degli argomenti, le parti interessate nell'organizzazione possono decidere di non individuare e esporre gli utenti con licenza. Ad esempio, è possibile che si stia lavorando a un progetto di cui non si desidera esporre altre informazioni. Anche se le autorizzazioni di Office 365 per siti, file e altre risorse impediscono agli utenti di visualizzare le informazioni riservate negli argomenti, esistono ulteriori misure di salvaguardia per evitare che vengano scoperti argomenti specifici.
+In Microsoft Viva, gli stakeholder dell'organizzazione potrebbero voler assicurarsi che argomenti specifici non siano individuati ed esposti agli utenti con licenza. Ad esempio, potresti lavorare a un progetto di cui non vuoi ancora esporre informazioni. Anche se le autorizzazioni di Office 365 per siti, file e altre risorse impediranno agli utenti di Esperienze argomenti di visualizzare informazioni riservate negli argomenti, esistono ulteriori misure di sicurezza per impedire che argomenti specifici vengano mai individuati.
 
-Mentre gli amministratori della Knowledge base controllano le impostazioni della rete di conoscenze per evitare che gli argomenti vengano scoperti, i Knowledge Manager e le altre parti interessate devono sapere come eseguire questa operazione affinché possano collaborare in questo modo.
+Mentre gli amministratori delle informazioni controllano le impostazioni della rete di conoscenze per impedire l'apprendimento degli argomenti, i responsabili della conoscenza e altri stakeholder devono sapere come vengono eseguite in modo che possano collaborare.
 
 > [!Important] 
-> In questo articolo vengono illustrati i modi per evitare che gli argomenti vengano identificati tramite AI o visualizzati nell'ambiente come protezione di sicurezza aggiuntiva. È importante tenere presente che, nelle esperienze degli argomenti, gli utenti non sono autorizzati a visualizzare alcun elemento in un argomento a cui non è consentito l'accesso tramite le autorizzazioni di Office 365. Anche se un utente è in grado di visualizzare un argomento, i relativi file, siti e pagine che non dispongono delle autorizzazioni di Office 365 per la visualizzazione non saranno visibili. Assicurarsi che le autorizzazioni per i file riservati siano impostate correttamente devono essere il Safeguard di sicurezza principale.
+> In questo articolo vengono descritti i modi per impedire che gli argomenti vengano identificati tramite IA o visualizzati nel proprio ambiente come ulteriore protezione della sicurezza. È importante notare che in Viva Topics gli utenti non possono visualizzare nulla in un argomento a cui non è consentito l'accesso tramite le autorizzazioni di Office 365. Anche se un utente è in grado di visualizzare un argomento, i relativi file, siti e pagine non dispongono delle autorizzazioni per la visualizzazione di Office 365 non saranno visibili. Assicurarsi che le autorizzazioni per i file sensibili siano impostate correttamente deve essere la protezione principale.
 
 ## <a name="prevent-topics-from-being-identified"></a>Impedire l'identificazione degli argomenti
 
-L'amministratore della Knowledge base può limitare l'accesso a argomenti specifici impedendo che vengano trovati nell'indicizzazione iniziale. Esistono due modi per eseguire questa operazione nelle impostazioni di amministrazione della rete di informazioni nell'interfaccia di amministrazione di Microsoft 365.
+L'amministratore della knowledge base può limitare l'accesso ad argomenti specifici impedendoli di essere trovati nell'indicizzazione iniziale. Esistono due modi per eseguire questa attività nelle impostazioni di amministrazione di Knowledge Network nell'interfaccia di amministrazione di Microsoft 365.
  
-- [Selezionare i siti di SharePoint da escludere dall'individuazione](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery#select-sharepoint-topic-sources)di un argomento: è possibile utilizzare questa impostazione per impedire la ricerca per indicizzazione di siti di SharePoint specifici per gli argomenti.
-- [Escludi argomenti per nome](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery#exclude-topics-by-name): gli amministratori possono utilizzare questa impostazione per evitare che argomenti specifici vengano scoperti per nome. Nelle impostazioni di amministratore della rete della Knowledge base, un amministratore può caricare un elenco di argomenti da escludere in un file CSV. È possibile escludere gli argomenti che presentano corrispondenze esatte o parziali di un nome di argomento.
+- [Selezionare i siti di SharePoint da escludere dall'individuazione](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery#select-sharepoint-topic-sources)degli argomenti: è possibile utilizzare questa impostazione per impedire la ricerca per indicizzazione di siti di SharePoint specifici per gli argomenti.
+- [Escludere gli argomenti in base al nome:](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery#exclude-topics-by-name)gli amministratori possono utilizzare questa impostazione per impedire che argomenti specifici vengano individuati per nome. Nelle impostazioni di amministrazione di Knowledge Network, un amministratore può caricare un elenco di argomenti da escludere in un file CSV. È possibile escludere gli argomenti con corrispondenze esatte o parziali di un nome di argomento.
 
-## <a name="prevent-topics-from-being-viewed-by-specific-users"></a>Impedire che gli argomenti vengano visualizzati da utenti specifici
+## <a name="prevent-topics-from-being-viewed-by-specific-users"></a>Impedire la visualizzazione degli argomenti da parte di utenti specifici
 
-Gli amministratori della Knowledge base possono anche [selezionare gli utenti autorizzati a visualizzare gli argomenti nell'organizzazione](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-knowledge-rules). Questa impostazione consente di selezionare gli utenti con licenza in grado di visualizzare tutti gli argomenti. Ad esempio, in un ambiente pilota, è possibile consentire solo a un piccolo gruppo di utenti di essere in grado di visualizzare gli argomenti.
+Gli amministratori della knowledge base possono anche [selezionare gli utenti che possono visualizzare gli argomenti nell'organizzazione.](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-knowledge-rules) Questa impostazione consente di selezionare gli utenti con licenza che possono visualizzare tutti gli argomenti. In un ambiente pilota, ad esempio, è possibile consentire solo a un piccolo gruppo di utenti di visualizzare gli argomenti.
 
 ## <a name="remove-topics-from-being-viewed"></a>Rimuovere gli argomenti dalla visualizzazione
 
-I Knowledge Manager possono scegliere di [rimuovere gli argomenti](https://docs.microsoft.com/microsoft-365/knowledge/manage-topics) in modo che gli utenti non possano più visualizzarli. Nella pagina **Gestisci argomenti** del **centro** argomenti, i responsabili della Knowledge base possono scegliere di rifiutare argomenti specifici per impedire che vengano visualizzati. Gli argomenti possono essere rimossi indipendentemente dal fatto che si trovino in uno stato suggerito o confermato.
+I responsabili della conoscenza possono [scegliere di rimuovere gli argomenti](https://docs.microsoft.com/microsoft-365/knowledge/manage-topics) in modo che gli utenti non possano più vederli. Nella pagina **Gestisci argomenti** del **Centro** argomenti i knowledge manager possono scegliere di rifiutare argomenti specifici per impedirne la visualizzazione. Gli argomenti possono essere rimossi indipendentemente dal fatto che si presentino in uno stato consigliato o confermato.
 
-Gli argomenti rimossi possono essere aggiunti in un secondo momento come argomenti visualizzabili, se necessario. 
+Gli argomenti rimossi possono essere successivamente aggiunti nuovamente come argomenti visualizzabili, se necessario. 
 
 
 ## <a name="see-also"></a>Vedere anche
