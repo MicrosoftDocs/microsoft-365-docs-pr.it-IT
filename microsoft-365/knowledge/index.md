@@ -1,9 +1,9 @@
 ---
-title: Introduzione alle esperienze sull'argomento (anteprima)
+title: Introduzione agli argomenti di Microsoft Viva
 ms.author: efrene
 author: efrene
 manager: pamgreen
-ms.reviewer: ''
+ms.reviewer: cjtan
 audience: ''
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -11,20 +11,16 @@ search.appverid: ''
 ms.collection:
 - enabler-strategic
 - m365initiative-topics
-ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-description: Informazioni su come trovare risorse per le esperienze degli argomenti.
-ms.openlocfilehash: afba6930c30ad59dc95abb255eadab501b01f189
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+description: Informazioni su come trovare risorse per Gli argomenti di Microsoft Viva.
+ms.openlocfilehash: 3e75dfcfa17e5604e04b6f5e49be9019b1679110
+ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029609"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50107171"
 ---
-# <a name="introduction-to-topic-experiences-preview"></a><span data-ttu-id="bba4c-103">Introduzione alle esperienze sull'argomento (anteprima)</span><span class="sxs-lookup"><span data-stu-id="bba4c-103">Introduction to Topic Experiences (Preview)</span></span>
-
-> [!Note] 
-> <span data-ttu-id="bba4c-104">Il contenuto di questo articolo è relativo all'anteprima privata di Project Cortex.</span><span class="sxs-lookup"><span data-stu-id="bba4c-104">The content in this article is for Project Cortex Private Preview.</span></span> <span data-ttu-id="bba4c-105">[Altre informazioni su Project Cortex](https://aka.ms/projectcortex).</span><span class="sxs-lookup"><span data-stu-id="bba4c-105">[Find out more about Project Cortex](https://aka.ms/projectcortex).</span></span>
+# <a name="introduction-to-microsoft-viva-topics"></a><span data-ttu-id="bf879-103">Introduzione agli argomenti di Microsoft Viva</span><span class="sxs-lookup"><span data-stu-id="bf879-103">Introduction to Microsoft Viva Topics</span></span>
 
 </br>
 
@@ -33,51 +29,51 @@ ms.locfileid: "50029609"
 </br>
 
 
-<span data-ttu-id="bba4c-106">L'argomento experiences è un servizio di Office 365 che consente alle organizzazioni di trasformare le informazioni nella conoscenza.</span><span class="sxs-lookup"><span data-stu-id="bba4c-106">Topic Experiences is an Office 365 service that helps organizations to transform information to knowledge.</span></span>
+<span data-ttu-id="bf879-104">Viva Topics è un servizio di Office 365 che consente alle organizzazioni di trasformare le informazioni in conoscenze.</span><span class="sxs-lookup"><span data-stu-id="bf879-104">Viva Topics is an Office 365 service that helps organizations to transform information to knowledge.</span></span>
 
-<span data-ttu-id="bba4c-107">Le risorse presenti in questa pagina sono state progettate per iniziare a conoscere e utilizzare le esperienze di argomento nell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="bba4c-107">The resources on this page are designed to get you started with learning about and using Topic Experiences in your organization.</span></span>
+<span data-ttu-id="bf879-105">Le risorse in questa pagina sono progettate per iniziare a conoscere e a usare Viva Topics nell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="bf879-105">The resources on this page are designed to get you started with learning about and using Viva Topics in your organization.</span></span>
 
-## <a name="get-started"></a><span data-ttu-id="bba4c-108">Per iniziare</span><span class="sxs-lookup"><span data-stu-id="bba4c-108">Get started</span></span>
+## <a name="get-started"></a><span data-ttu-id="bf879-106">Informazioni di base</span><span class="sxs-lookup"><span data-stu-id="bf879-106">Get started</span></span>
 
-<span data-ttu-id="bba4c-109">Le risorse in questa sezione consentono di ottenere ulteriori informazioni sulle esperienze degli argomenti e su come può essere utile.</span><span class="sxs-lookup"><span data-stu-id="bba4c-109">The resources in this section help you learn more about what Topic experiences is and how it can help you.</span></span>
+<span data-ttu-id="bf879-107">Le risorse in questa sezione sono utili per saperne di più su Viva Topics e su come può essere utile.</span><span class="sxs-lookup"><span data-stu-id="bf879-107">The resources in this section help you learn more about what Viva Topics  is and how it can help you.</span></span>
 
-| <span data-ttu-id="bba4c-110">Se sono necessarie queste informazioni:</span><span class="sxs-lookup"><span data-stu-id="bba4c-110">If you're looking for this information:</span></span> | <span data-ttu-id="bba4c-111">Passare a questa risorsa:</span><span class="sxs-lookup"><span data-stu-id="bba4c-111">Go to this resource:</span></span> |
+| <span data-ttu-id="bf879-108">Se sono necessarie queste informazioni:</span><span class="sxs-lookup"><span data-stu-id="bf879-108">If you're looking for this information:</span></span> | <span data-ttu-id="bf879-109">Passare a questa risorsa:</span><span class="sxs-lookup"><span data-stu-id="bf879-109">Go to this resource:</span></span> |
 |:-----|:-----|
-|<span data-ttu-id="bba4c-112">Per ulteriori informazioni, vedere esperienze sugli argomenti</span><span class="sxs-lookup"><span data-stu-id="bba4c-112">Learn more about topic experiences</span></span>|[<span data-ttu-id="bba4c-113">Panoramica delle esperienze degli argomenti</span><span class="sxs-lookup"><span data-stu-id="bba4c-113">Topic Experiences overview</span></span>](topic-experiences-overview.md)|
-|<span data-ttu-id="bba4c-114">Informazioni su come vengono individuati e suggeriti gli argomenti di AI</span><span class="sxs-lookup"><span data-stu-id="bba4c-114">Learn how topics are discovered and suggested by AI</span></span>|[<span data-ttu-id="bba4c-115">Individuazione dell'argomento experiences</span><span class="sxs-lookup"><span data-stu-id="bba4c-115">Topic Experiences discovery</span></span>](topic-experiences-discovery.md)|
-|<span data-ttu-id="bba4c-116">Informazioni sulla sicurezza degli argomenti</span><span class="sxs-lookup"><span data-stu-id="bba4c-116">Learn about topic security</span></span>|[<span data-ttu-id="bba4c-117">Argomenti sicurezza e privacy</span><span class="sxs-lookup"><span data-stu-id="bba4c-117">Topic Experiences security and privacy</span></span>](topic-experiences-security-privacy.md)|
+|<span data-ttu-id="bf879-110">Altre informazioni su Viva Topics</span><span class="sxs-lookup"><span data-stu-id="bf879-110">Learn more about Viva Topics</span></span>|[<span data-ttu-id="bf879-111">Panoramica di Microsoft Viva Topics</span><span class="sxs-lookup"><span data-stu-id="bf879-111">Microsoft Viva Topics overview</span></span>](topic-experiences-overview.md)|
+|<span data-ttu-id="bf879-112">Informazioni su come gli argomenti vengono individuati e suggeriti dall'intelligenza artificiale</span><span class="sxs-lookup"><span data-stu-id="bf879-112">Learn how topics are discovered and suggested by AI</span></span>|[<span data-ttu-id="bf879-113">Microsoft Viva Topics discovery</span><span class="sxs-lookup"><span data-stu-id="bf879-113">Microsoft Viva Topics discovery</span></span>](topic-experiences-discovery.md)|
+|<span data-ttu-id="bf879-114">Informazioni sulla sicurezza degli argomenti</span><span class="sxs-lookup"><span data-stu-id="bf879-114">Learn about topic security</span></span>|[<span data-ttu-id="bf879-115">Sicurezza e privacy di Microsoft Viva</span><span class="sxs-lookup"><span data-stu-id="bf879-115">Microsoft Viva security and privacy</span></span>](topic-experiences-security-privacy.md)|
 
 
-## <a name="adoption"></a><span data-ttu-id="bba4c-118">Adozione</span><span class="sxs-lookup"><span data-stu-id="bba4c-118">Adoption</span></span>
+## <a name="adoption"></a><span data-ttu-id="bf879-116">Adozione</span><span class="sxs-lookup"><span data-stu-id="bf879-116">Adoption</span></span>
 
-<span data-ttu-id="bba4c-119">Per ulteriori informazioni su come utilizzare e implementare le esperienze degli argomenti nell'organizzazione, è possibile risolvere i problemi aziendali:</span><span class="sxs-lookup"><span data-stu-id="bba4c-119">Learn more about how to use and implement Topic Experiences in your organization to help you solve your business problems:</span></span> 
+<span data-ttu-id="bf879-117">Ulteriori informazioni su come usare e implementare Viva Topics nell'organizzazione per aiutarti a risolvere i problemi aziendali:</span><span class="sxs-lookup"><span data-stu-id="bf879-117">Learn more about how to use and implement Viva Topics in your organization to help you solve your business problems:</span></span> 
 
-| <span data-ttu-id="bba4c-120">Se sono necessarie queste informazioni:</span><span class="sxs-lookup"><span data-stu-id="bba4c-120">If you're looking for this information:</span></span> | <span data-ttu-id="bba4c-121">Passare a questa risorsa:</span><span class="sxs-lookup"><span data-stu-id="bba4c-121">Go to this resource:</span></span> |
+| <span data-ttu-id="bf879-118">Se sono necessarie queste informazioni:</span><span class="sxs-lookup"><span data-stu-id="bf879-118">If you're looking for this information:</span></span> | <span data-ttu-id="bf879-119">Passare a questa risorsa:</span><span class="sxs-lookup"><span data-stu-id="bf879-119">Go to this resource:</span></span> |
 |:-----|:-----|
-|<span data-ttu-id="bba4c-122">Informazioni su come iniziare a pianificare l'utilizzo di esperienze sugli argomenti.</span><span class="sxs-lookup"><span data-stu-id="bba4c-122">Learn how to start planning to use Topic Experiences.</span></span> |[<span data-ttu-id="bba4c-123">Introduzione</span><span class="sxs-lookup"><span data-stu-id="bba4c-123">Get started</span></span>](topics-adoption-getstarted.md)<br><br>|  
+|<span data-ttu-id="bf879-120">Informazioni su come iniziare a pianificare l'uso di Microsoft Viva.</span><span class="sxs-lookup"><span data-stu-id="bf879-120">Learn how to start planning to use Microsoft Viva.</span></span> |[<span data-ttu-id="bf879-121">Introduzione</span><span class="sxs-lookup"><span data-stu-id="bf879-121">Get started</span></span>](topics-adoption-getstarted.md)<br><br>|  
 
-## <a name="set-up-and-administration"></a><span data-ttu-id="bba4c-124">Configurazione e amministrazione</span><span class="sxs-lookup"><span data-stu-id="bba4c-124">Set up and administration</span></span>
+## <a name="set-up-and-administration"></a><span data-ttu-id="bf879-122">Configurazione e amministrazione</span><span class="sxs-lookup"><span data-stu-id="bf879-122">Set up and administration</span></span>
 
-<span data-ttu-id="bba4c-125">Le risorse di questa sezione aiutano l'amministratore dell'organizzazione a configurare e configurare Microsoft SharePoint Syntex nell'ambiente Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="bba4c-125">The resources in this section help your admin in your organization to set up and configure Microsoft SharePoint Syntex in your Microsoft 365 environment.</span></span>
+<span data-ttu-id="bf879-123">Le risorse in questa sezione consentono all'amministratore dell'organizzazione di configurare Viva Topics nell'ambiente Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="bf879-123">The resources in this section help your admin in your organization to set up and configure Viva Topics in your Microsoft 365 environment.</span></span>
 
-| <span data-ttu-id="bba4c-126">Se sono necessarie queste informazioni:</span><span class="sxs-lookup"><span data-stu-id="bba4c-126">If you're looking for this information:</span></span> | <span data-ttu-id="bba4c-127">Passare a questa risorsa:</span><span class="sxs-lookup"><span data-stu-id="bba4c-127">Go to this resource:</span></span> |
+| <span data-ttu-id="bf879-124">Se sono necessarie queste informazioni:</span><span class="sxs-lookup"><span data-stu-id="bf879-124">If you're looking for this information:</span></span> | <span data-ttu-id="bf879-125">Passare a questa risorsa:</span><span class="sxs-lookup"><span data-stu-id="bf879-125">Go to this resource:</span></span> |
 |:-----|:-----|
-|<span data-ttu-id="bba4c-128">Informazioni su come impostare e configurare le esperienze degli argomenti</span><span class="sxs-lookup"><span data-stu-id="bba4c-128">Learn how to set up and configure Topic Experiences</span></span>|[<span data-ttu-id="bba4c-129">Configurare le esperienze degli argomenti</span><span class="sxs-lookup"><span data-stu-id="bba4c-129">Set up Topic Experiences</span></span>](set-up-topic-experiences.md)|
-|<span data-ttu-id="bba4c-130">Informazioni su come configurare le autorizzazioni utente</span><span class="sxs-lookup"><span data-stu-id="bba4c-130">Learn how to configure user permissions</span></span>|[<span data-ttu-id="bba4c-131">Gestire le autorizzazioni dell'argomento</span><span class="sxs-lookup"><span data-stu-id="bba4c-131">Manage topic permissions</span></span>](topic-experiences-user-permissions.md)|
-|<span data-ttu-id="bba4c-132">Informazioni su come gestire gli utenti in grado di visualizzare gli argomenti</span><span class="sxs-lookup"><span data-stu-id="bba4c-132">Learn how to manage who can view topics</span></span>|[<span data-ttu-id="bba4c-133">Gestire la visibilità dell'argomento</span><span class="sxs-lookup"><span data-stu-id="bba4c-133">Manage topic visibility</span></span>](topic-experiences-knowledge-rules.md)|
-|<span data-ttu-id="bba4c-134">Informazioni su come gestire le impostazioni di individuazione degli argomenti</span><span class="sxs-lookup"><span data-stu-id="bba4c-134">Learn how to manage your topic discovery settings</span></span>|[<span data-ttu-id="bba4c-135">Gestire la scoperta dell'argomento</span><span class="sxs-lookup"><span data-stu-id="bba4c-135">Manage topic discovery</span></span>](topic-experiences-discovery.md)|
+|<span data-ttu-id="bf879-126">Informazioni su come configurare Microsoft Viva</span><span class="sxs-lookup"><span data-stu-id="bf879-126">Learn how to set up and configure Microsoft Viva</span></span>|[<span data-ttu-id="bf879-127">Configurare Microsoft Viva</span><span class="sxs-lookup"><span data-stu-id="bf879-127">Set up Microsoft Viva</span></span>](set-up-topic-experiences.md)|
+|<span data-ttu-id="bf879-128">Informazioni su come configurare le autorizzazioni utente</span><span class="sxs-lookup"><span data-stu-id="bf879-128">Learn how to configure user permissions</span></span>|[<span data-ttu-id="bf879-129">Gestire le autorizzazioni dell'argomento</span><span class="sxs-lookup"><span data-stu-id="bf879-129">Manage topic permissions</span></span>](topic-experiences-user-permissions.md)|
+|<span data-ttu-id="bf879-130">Informazioni su come gestire chi può visualizzare gli argomenti</span><span class="sxs-lookup"><span data-stu-id="bf879-130">Learn how to manage who can view topics</span></span>|[<span data-ttu-id="bf879-131">Gestire la visibilità dell'argomento</span><span class="sxs-lookup"><span data-stu-id="bf879-131">Manage topic visibility</span></span>](topic-experiences-knowledge-rules.md)|
+|<span data-ttu-id="bf879-132">Informazioni su come gestire le impostazioni di individuazione degli argomenti</span><span class="sxs-lookup"><span data-stu-id="bf879-132">Learn how to manage your topic discovery settings</span></span>|[<span data-ttu-id="bf879-133">Gestire la scoperta dell'argomento</span><span class="sxs-lookup"><span data-stu-id="bf879-133">Manage topic discovery</span></span>](topic-experiences-discovery.md)|
 
-## <a name="work-with-topics"></a><span data-ttu-id="bba4c-136">Lavorare con gli argomenti</span><span class="sxs-lookup"><span data-stu-id="bba4c-136">Work with topics</span></span>
+## <a name="work-with-topics"></a><span data-ttu-id="bf879-134">Lavorare con gli argomenti</span><span class="sxs-lookup"><span data-stu-id="bf879-134">Work with topics</span></span>
 
-<span data-ttu-id="bba4c-137">Le risorse in questa sezione aiutano gli utenti a imparare a usare e gestire gli argomenti.</span><span class="sxs-lookup"><span data-stu-id="bba4c-137">The resources in this section help your users learn how to use and manage topics.</span></span>
+<span data-ttu-id="bf879-135">Le risorse in questa sezione consentono agli utenti di imparare a usare e gestire gli argomenti.</span><span class="sxs-lookup"><span data-stu-id="bf879-135">The resources in this section help your users learn how to use and manage topics.</span></span>
 
-| <span data-ttu-id="bba4c-138">Se sono necessarie queste informazioni:</span><span class="sxs-lookup"><span data-stu-id="bba4c-138">If you're looking for this information:</span></span> | <span data-ttu-id="bba4c-139">Passare a questa risorsa:</span><span class="sxs-lookup"><span data-stu-id="bba4c-139">Go to this resource:</span></span> |
+| <span data-ttu-id="bf879-136">Se sono necessarie queste informazioni:</span><span class="sxs-lookup"><span data-stu-id="bf879-136">If you're looking for this information:</span></span> | <span data-ttu-id="bf879-137">Passare a questa risorsa:</span><span class="sxs-lookup"><span data-stu-id="bf879-137">Go to this resource:</span></span> |
 |:-----|:-----|
-|<span data-ttu-id="bba4c-140">Informazioni su come utilizzare gli argomenti</span><span class="sxs-lookup"><span data-stu-id="bba4c-140">Learn how to work with topics</span></span>|[<span data-ttu-id="bba4c-141">Panoramica sul centro argomenti</span><span class="sxs-lookup"><span data-stu-id="bba4c-141">Topic center overview</span></span>](topic-center-overview.md)<br><br>[<span data-ttu-id="bba4c-142">Gestire gli argomenti</span><span class="sxs-lookup"><span data-stu-id="bba4c-142">Manage topics</span></span>](manage-topics.md)<br><br>[<span data-ttu-id="bba4c-143">Creare un nuovo argomento</span><span class="sxs-lookup"><span data-stu-id="bba4c-143">Create a new topic</span></span>](create-a-topic.md)<br><br>[<span data-ttu-id="bba4c-144">Modificare un argomento esistente</span><span class="sxs-lookup"><span data-stu-id="bba4c-144">Edit an existing topic</span></span>](edit-a-topic.md)<br><br>|
-|<span data-ttu-id="bba4c-145">Comprendere i ruoli utente</span><span class="sxs-lookup"><span data-stu-id="bba4c-145">Understand user roles</span></span>|[<span data-ttu-id="bba4c-146">Ruoli esperienza di argomento</span><span class="sxs-lookup"><span data-stu-id="bba4c-146">Topic Experience roles</span></span>](topic-experiences-roles.md)|
-|<span data-ttu-id="bba4c-147">Comprendere il motivo per cui gli argomenti possono variare a seconda degli utenti</span><span class="sxs-lookup"><span data-stu-id="bba4c-147">Understand why topics might differ to different users</span></span>|[<span data-ttu-id="bba4c-148">Tema ritaglio di sicurezza</span><span class="sxs-lookup"><span data-stu-id="bba4c-148">Topic Experiences security trimming</span></span>](topic-experiences-security-trimming.md)|
-|<span data-ttu-id="bba4c-149">Informazioni su come impedire l'identificazione e la visualizzazione di argomenti specifici</span><span class="sxs-lookup"><span data-stu-id="bba4c-149">Learn how to prevent specific topics from being identified and viewed</span></span>|[<span data-ttu-id="bba4c-150">Limitare l'accesso agli argomenti</span><span class="sxs-lookup"><span data-stu-id="bba4c-150">Restrict access to topics</span></span>](restrict-access-to-topics.md)|
+|<span data-ttu-id="bf879-138">Informazioni su come utilizzare gli argomenti</span><span class="sxs-lookup"><span data-stu-id="bf879-138">Learn how to work with topics</span></span>|[<span data-ttu-id="bf879-139">Panoramica sul centro argomenti</span><span class="sxs-lookup"><span data-stu-id="bf879-139">Topic center overview</span></span>](topic-center-overview.md)<br><br>[<span data-ttu-id="bf879-140">Gestire gli argomenti</span><span class="sxs-lookup"><span data-stu-id="bf879-140">Manage topics</span></span>](manage-topics.md)<br><br>[<span data-ttu-id="bf879-141">Creare un nuovo argomento</span><span class="sxs-lookup"><span data-stu-id="bf879-141">Create a new topic</span></span>](create-a-topic.md)<br><br>[<span data-ttu-id="bf879-142">Modificare un argomento esistente</span><span class="sxs-lookup"><span data-stu-id="bf879-142">Edit an existing topic</span></span>](edit-a-topic.md)<br><br>[<span data-ttu-id="bf879-143">Trovare argomenti con Microsoft Search</span><span class="sxs-lookup"><span data-stu-id="bf879-143">Find topics with Microsoft Search</span></span>](search.md)<br><br>|
+|<span data-ttu-id="bf879-144">Comprendere i ruoli utente</span><span class="sxs-lookup"><span data-stu-id="bf879-144">Understand user roles</span></span>|[<span data-ttu-id="bf879-145">Ruoli di Viva Topics</span><span class="sxs-lookup"><span data-stu-id="bf879-145">Viva Topics roles</span></span>](topic-experiences-roles.md)|
+|<span data-ttu-id="bf879-146">Comprendere perché gli argomenti potrebbero essere diversi per utenti diversi</span><span class="sxs-lookup"><span data-stu-id="bf879-146">Understand why topics might differ to different users</span></span>|[<span data-ttu-id="bf879-147">Limitazione per motivi di sicurezza viva Topics</span><span class="sxs-lookup"><span data-stu-id="bf879-147">Viva Topics security trimming</span></span>](topic-experiences-security-trimming.md)|
+|<span data-ttu-id="bf879-148">Informazioni su come impedire l'identificazione e la visualizzazione di argomenti specifici</span><span class="sxs-lookup"><span data-stu-id="bf879-148">Learn how to prevent specific topics from being identified and viewed</span></span>|[<span data-ttu-id="bf879-149">Limitare l'accesso agli argomenti</span><span class="sxs-lookup"><span data-stu-id="bf879-149">Restrict access to topics</span></span>](restrict-access-to-topics.md)|
 
 
 
-## <a name="see-also"></a><span data-ttu-id="bba4c-151">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="bba4c-151">See Also</span></span>
+
