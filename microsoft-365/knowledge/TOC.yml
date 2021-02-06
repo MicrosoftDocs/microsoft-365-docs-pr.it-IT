@@ -1,22 +1,22 @@
-- name: Iniziare a usare le esperienze dell'argomento
+- name: Introduzione a Microsoft Viva
   items:
-    - name: Introduzione alle esperienze dell'argomento
+    - name: Introduzione a Microsoft Viva
       href: index.md
-    - name: Panoramica delle esperienze dell'argomento
+    - name: Panoramica di Microsoft Viva
       href: topic-experiences-overview.md
-    - name: Scoperta e conservazione delle esperienze dell'argomento
+    - name: Individuazione e cura di Microsoft Viva
       href: topic-experiences-discovery-curation.md
-    - name: Ruoli delle esperienze dell'argomento
+    - name: Ruoli di Microsoft Viva
       href: topic-experiences-roles.md
     - name: Preparare l'ambiente
       href: topic-experiences-get-ready.md
 - name: Configurazione e amministrazione
   items:
-    - name: Sicurezza dell'argomento
+    - name: Sicurezza di Argomenti
       href: topic-experiences-security-privacy.md
-    - name: Pianificare le esperienze dell'argomento
+    - name: Pianificare Argomenti
       href: plan-topic-experiences.md
-    - name: Configurare le esperienze dell'argomento
+    - name: Configurare Argomenti
       href: set-up-topic-experiences.md
     - name: Gestire la scoperta dell'argomento
       href: topic-experiences-discovery.md
@@ -38,6 +38,8 @@
       href: edit-a-topic.md
     - name: Limitazione della sicurezza
       href: topic-experiences-security-trimming.md
+    - name: Cercare argomenti
+      href: search.md
 - name: Adozione
   items:
     - name: Iniziare a favorire l'innovazione

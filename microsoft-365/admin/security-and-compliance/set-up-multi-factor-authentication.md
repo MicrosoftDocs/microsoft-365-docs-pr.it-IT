@@ -2,8 +2,8 @@
 title: Configurare l'autenticazione a più fattori per gli utenti
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Scopri come configurare l'autenticazione a più fattori per l'organizzazione.
 monikerRange: o365-worldwide
-ms.openlocfilehash: db858cbd4242a096261942fd12b911ecff43f71f
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: 5ea367e64108e80ee7429ec700cf2ac0551aeab2
+ms.sourcegitcommit: b88ffaf3409e02a9847f030f8468f96d36efa398
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558211"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "50105152"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Configurare l'autenticazione a più fattori
 
@@ -100,3 +100,9 @@ Se l'autenticazione a più fattori per utente è stata attivata in precedenza, �
 - [Cos’è l'autenticazione a più fattori](https://support.microsoft.com/help/4577374/what-is-multifactor-authentication)
 - [Come eseguire l'accesso dopo la registrazione](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
 - [Come cambiare il metodo di verifica aggiuntivo](https://support.microsoft.com/office/956ec8d0-7081-4518-a701-f8414cc20831)
+
+## <a name="related-topics"></a>Argomenti correlati
+
+[Video: Attivare l'autenticazione a più fattori](https://docs.microsoft.com/microsoft-365/business-video/turn-on-mfa)
+
+[Video: Attivare l'autenticazione a più fattori per il telefono](https://docs.microsoft.com/microsoft-365/business-video/set-up-mfa)
