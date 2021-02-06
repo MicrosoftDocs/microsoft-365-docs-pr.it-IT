@@ -12,83 +12,83 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: e8bf55cf3c27170c471dd45a68fd1ec2fa4a615b
-ms.sourcegitcommit: 474bd6a86c3692d11fb2c454591c89029ac5bbd5
+ms.openlocfilehash: f2581c4756a57926ab4a4539be8c383b0479e567
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "49357445"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126625"
 ---
 # <a name="plan-for-insider-risk-management"></a>Piano per la gestione dei rischi Insider
 
-Prima di iniziare a utilizzare la [gestione dei rischi Insider](insider-risk-management.md) nell'organizzazione, sono importanti le attività di pianificazione e le considerazioni che devono essere esaminate dai team di gestione della conformità e della tecnologia delle informazioni. La comprensione e la pianificazione approfondite per la distribuzione nelle aree seguenti consentiranno di garantire che l'implementazione e l'utilizzo delle funzionalità di gestione dei rischi Insider siano uniformi e siano allineate alle procedure consigliate per la soluzione.
+Prima di iniziare a usare la gestione dei rischi [Insider](insider-risk-management.md) nell'organizzazione, sono presenti importanti attività e considerazioni di pianificazione che devono essere esaminate dai team di gestione delle informazioni e della conformità. Una conoscenza approfondita e una pianificazione approfondita della distribuzione nelle aree seguenti consentono di garantire che l'implementazione e l'uso delle funzionalità di gestione dei rischi Insider siano uniformi e siano allineati alle procedure consigliate per la soluzione.
 
-## <a name="work-with-stakeholders-in-your-organization"></a>Collaborare con le parti interessate nell'organizzazione
+## <a name="work-with-stakeholders-in-your-organization"></a>Collaborare con gli stakeholder dell'organizzazione
 
-Identificare le parti interessate appropriate nell'organizzazione per collaborare all'esecuzione di azioni su avvisi e casi di gestione dei rischi Insider. Alcune parti interessate consigliate per valutare l'inclusione della pianificazione iniziale e del flusso di lavoro end-to-end di [gestione dei rischi Insider](insider-risk-management.md#workflow) sono persone provenienti dalle aree dell'organizzazione seguenti:
+Identificare le parti interessate appropriate nell'organizzazione per collaborare per eseguire azioni su avvisi e casi di gestione dei rischi Insider. Alcuni stakeholder consigliati da prendere in considerazione, tra cui la pianificazione iniziale e il flusso di lavoro end-to-end [insider risk management,](insider-risk-management.md#workflow) sono persone delle aree seguenti dell'organizzazione:
 
-- Tecnologia delle informazioni
+- Information Technology
 - Conformità
 - Privacy
 - Sicurezza
 - Risorse umane
 - Esigenze legali
 
-## <a name="determine-any-regional-compliance-requirements"></a>Determinare i requisiti di conformità regionali
+## <a name="determine-any-regional-compliance-requirements"></a>Determinare eventuali requisiti di conformità regionali
 
-Diverse aree geografiche e organizzative possono avere requisiti di conformità e privacy diversi da altre aree dell'organizzazione. Collaborare con le parti interessate in queste aree per assicurarsi che siano in grado di comprendere i controlli relativi alla conformità e alla privacy nella gestione dei rischi Insider e come devono essere utilizzati in aree diverse dell'organizzazione. In alcuni scenari, i requisiti relativi alla conformità e alla privacy potrebbero richiedere criteri che designino o limitino alcune parti interessate da indagini e casi in base alla causa di un utente o ai requisiti normativi o di criteri per l'area.
+Aree geografiche e organizzative diverse possono avere requisiti di conformità e privacy diversi da altre aree dell'organizzazione. Collaborare con le parti interessate in queste aree per assicurarsi che comprenda i controlli di conformità e privacy nella gestione dei rischi insider e come devono essere utilizzati in diverse aree dell'organizzazione. In alcuni scenari, i requisiti di conformità e privacy potrebbero richiedere criteri che designno o limitano alcune parti interessate da indagini e casi in base al caso di un utente o requisiti normativi o di criteri per l'area.
 
-Se si dispone di requisiti per coinvolgere specifiche parti interessate nel caso di indagini che coinvolgono gli utenti in determinate aree geografiche, ruoli o divisioni, è possibile implementare [criteri di gestione dei rischi](insider-risk-management-policies.md) separati (anche se identici) che si riferiscono a diverse aree geografiche e popolazioni. Questa configurazione renderà più semplice per i soggetti interessati la valutazione e la gestione dei casi rilevanti per i ruoli e le aree geografiche. È inoltre possibile valutare la possibilità di creare processi e criteri per le aree geografiche in cui gli investigatori e i revisori parlano la stessa lingua degli utenti per semplificare il processo di escalation per gli avvisi e i casi di gestione dei rischi Insider.
+Se si dispone di requisiti per specifici stakeholder da coinvolgere in indagini caso che coinvolgono utenti in determinate aree geografiche, ruoli o divisioni, è possibile implementare criteri di gestione dei rischi [Insider](insider-risk-management-policies.md) separati (anche se identici) per le diverse aree geografiche e le diverse popolazioni. Questa configurazione agevola la lettura e la gestione dei casi rilevanti per i ruoli e le aree geografiche dei cointeressati. Inoltre, è consigliabile creare processi e criteri per le aree geografiche in cui investigatori e revisori parlano la stessa lingua degli utenti per semplificare il processo di escalation per gli avvisi e i casi di gestione dei rischi Insider.
 
-## <a name="plan-for-the-review-and-investigation-workflow"></a>Pianificare il flusso di lavoro per la revisione e l'analisi
+## <a name="plan-for-the-review-and-investigation-workflow"></a>Pianificare il flusso di lavoro di revisione e analisi
 
-Selezionare le parti interessate dedicate per monitorare ed esaminare gli avvisi e i casi su una cadenza regolare nel [centro conformità di Microsoft 365](https://compliance.microsoft.com/). Assicurarsi di comprendere come verranno assegnate diverse parti interessate ai diversi gruppi di ruoli disponibili nella gestione dei rischi Insider.
+Selezionare gli stakeholder dedicati per monitorare ed esaminare gli avvisi e i casi con cadenza regolare nel Centro conformità [Microsoft 365.](https://compliance.microsoft.com/) Assicurarsi di comprendere come assegnare le diverse parti interessate ai diversi gruppi di ruoli disponibili nella gestione dei rischi Insider.
 
-A seconda della struttura del team di gestione della conformità, sono disponibili opzioni per assegnare gli utenti a specifici gruppi di ruoli per gestire diversi insiemi di funzionalità di gestione dei rischi Insider. Scegliere da queste opzioni del gruppo di ruolo durante la configurazione della gestione dei rischi Insider:
+A seconda della struttura del team di gestione della conformità, sono disponibili opzioni per assegnare utenti a gruppi di ruoli specifici per gestire diversi set di funzionalità di gestione dei rischi Insider. Scegliere una delle opzioni seguenti per il gruppo di ruoli durante la configurazione della gestione dei rischi Insider:
 
 | **Gruppo di ruolo** | **Autorizzazioni di ruolo** |
 | :---- | :---------------- |
-| **Gestione dei rischi Insider** | Utilizzare questo gruppo di ruoli per gestire la gestione dei rischi Insider per la propria organizzazione in un singolo gruppo. Aggiungendo tutti gli account utente per gli amministratori, gli analisti e gli investigatori designati, è possibile configurare le autorizzazioni di gestione dei rischi insider in un singolo gruppo. Questo gruppo di ruoli contiene tutti i ruoli di autorizzazione di gestione dei rischi Insider. Questa configurazione è il modo più semplice per iniziare rapidamente con la gestione dei rischi Insider ed è adatta per le organizzazioni che non necessitano di autorizzazioni separate definite per gruppi di utenti separati.|
-| **Amministratore di gestione dei rischi Insider** | Utilizzare questo gruppo di ruoli per configurare inizialmente la gestione dei rischi Insider e successivamente per separare gli amministratori del rischio insider in un gruppo definito.  Gli utenti di questo gruppo di ruoli possono creare, leggere, aggiornare ed eliminare i criteri di gestione dei rischi Insider, le impostazioni globali e le assegnazioni di gruppi di ruoli. |
-| **Analisti di gestione dei rischi Insider** | Utilizzare questo gruppo per assegnare le autorizzazioni agli utenti che fungeranno da analisti dei casi di rischio Insider. Gli utenti di questo gruppo di ruoli possono accedere a tutti i modelli di avvisi, casi e notifiche di gestione dei rischi Insider. Non possono accedere all'esploratore di contenuto a rischio Insider. |
-| **Investigatori della gestione dei rischi Insider** | Utilizzare questo gruppo per assegnare le autorizzazioni agli utenti che agiranno come investigatori dei dati di rischio Insider. Gli utenti di questo gruppo di ruoli possono accedere a tutti gli avvisi di gestione dei rischi Insider, i casi, i modelli di avvisi e l'Esplora contenuto per tutti i casi. |
+| **Gestione dei rischi Insider** | Utilizzare questo gruppo di ruoli per gestire la gestione dei rischi Insider per l'organizzazione in un singolo gruppo. Aggiungendo tutti gli account utente per amministratori, analisti e investigatori designati, è possibile configurare le autorizzazioni di gestione dei rischi Insider in un singolo gruppo. Questo gruppo di ruoli contiene tutti i ruoli di autorizzazione per la gestione dei rischi Insider. Questa configurazione è il modo più semplice per iniziare rapidamente a usare la gestione dei rischi Insider ed è adatta per le organizzazioni che non necessitano di autorizzazioni separate definite per gruppi di utenti separati.|
+| **Amministratore gestione dei rischi Insider** | Utilizzare questo gruppo di ruoli per configurare inizialmente la gestione dei rischi Insider e successivamente per separare gli amministratori dei rischi Insider in un gruppo definito.  Gli utenti di questo gruppo di ruoli possono creare, leggere, aggiornare ed eliminare i criteri di gestione dei rischi Insider, le impostazioni globali e le assegnazioni dei gruppi di ruoli. |
+| **Analisti gestione dei rischi Insider** | Utilizzare questo gruppo per assegnare autorizzazioni agli utenti che fungeranno da analisti dei casi di rischio Insider. Gli utenti di questo gruppo di ruoli possono accedere a tutti i modelli di avvisi, casi e avvisi per la gestione dei rischi Insider. Non possono accedere a Esplora contenuto con rischio Insider. |
+| **Investigatori gestione dei rischi Insider** | Utilizzare questo gruppo per assegnare autorizzazioni agli utenti che agiranno come investigatori dei dati di rischio Insider. Gli utenti di questo gruppo di ruoli possono accedere a tutti gli avvisi di gestione dei rischi Insider, i casi, i modelli di avviso e Esplora contenuto per tutti i casi. |
 
-## <a name="understand-requirements-and-dependencies"></a>Comprendere i requisiti e le dipendenze
+## <a name="understand-requirements-and-dependencies"></a>Informazioni su requisiti e dipendenze
 
-A seconda del modo in cui si prevede di implementare i criteri di gestione dei rischi Insider, è necessario disporre delle sottoscrizioni di licenza Microsoft 365 appropriate e comprendere e pianificare alcuni prerequisiti della soluzione.
+A seconda di come si prevede di implementare i criteri di gestione dei rischi Insider, è necessario disporre degli abbonamenti alle licenze di Microsoft 365 adeguati e comprendere e pianificare alcuni prerequisiti della soluzione.
 
-**Licenze:** La gestione dei rischi Insider è disponibile come parte di una vasta gamma di abbonamenti alle licenze Microsoft 365. Per informazioni dettagliate, vedere la [Guida introduttiva all'articolo sulla gestione dei rischi Insider](insider-risk-management-configure.md#subscriptions-and-licensing) .
+**Licenze:** La gestione dei rischi Insider è disponibile nell'ambito di un'ampia selezione di abbonamenti alle licenze di Microsoft 365. Per informazioni dettagliate, vedere [l'articolo Introduttivo alla gestione dei rischi Insider.](insider-risk-management-configure.md#subscriptions-and-licensing)
 
-Se non si dispone di un piano Microsoft 365 Enterprise E5 esistente e si desidera tentare la gestione dei rischi Insider, è possibile [aggiungere microsoft 365](https://docs.microsoft.com/office365/admin/try-or-buy-microsoft-365) alla sottoscrizione esistente oppure [iscriversi per una versione di valutazione](https://www.microsoft.com/microsoft-365/enterprise) di Microsoft 365 Enterprise E5.
+Se non si dispone di un piano Microsoft 365 Enterprise E5 esistente e si vuole provare la gestione dei rischi Insider, è possibile aggiungere [Microsoft 365](/office365/admin/try-or-buy-microsoft-365) all'abbonamento esistente o iscriversi [per](https://www.microsoft.com/microsoft-365/enterprise) una versione di valutazione di Microsoft 365 Enterprise E5.
 
-**Requisiti dei modelli di criteri:** A seconda del modello di criteri scelto, sono necessari i requisiti per comprendere e pianificare prima di configurare la gestione dei rischi Insider nell'organizzazione:
+**Requisiti dei modelli di criteri:** A seconda del modello di criteri scelto, è necessario comprendere e pianificare i requisiti prima di configurare la gestione dei rischi Insider nell'organizzazione:
 
-- Quando si utilizza il modello **di furto dei dati da parte degli utenti** , è necessario configurare un connettore Microsoft 365 HR per importare periodicamente le informazioni relative alle dimissioni e alla terminazione per gli utenti dell'organizzazione. Vedere l'articolo [Import Data with the HR Connector](import-hr-data.md) per informazioni dettagliate su come configurare il connettore Microsoft 365 HR per la propria organizzazione.
-- Quando si utilizzano i modelli di **perdita di dati** , è necessario configurare almeno un criterio di prevenzione della perdita di dati (DLP) per definire le informazioni riservate nell'organizzazione e ricevere avvisi di rischio Insider per gli avvisi di criteri DLP di elevata gravità. Per informazioni dettagliate su come configurare i criteri DLP per la propria organizzazione, vedere l'articolo [creare, testare e ottimizzare un criterio DLP](create-test-tune-dlp-policy.md) .
-- Quando si utilizzano i modelli di **violazione dei criteri di sicurezza** , è necessario abilitare Microsoft Defender per endpoint per l'integrazione di gestione del rischio Insider nel centro sicurezza protezione per importare gli avvisi relativi alla violazione della sicurezza. Vedere l'articolo [configure advanced features in Microsoft Defender](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features) per istruzioni dettagliate per abilitare il difensore per l'integrazione di endpoint con gestione dei rischi Insider.
-- Quando si utilizzano modelli **utente scontenti** , è necessario configurare un connettore Microsoft 365 HR per importare periodicamente le informazioni sullo stato di prestazioni o di retrocessione per gli utenti dell'organizzazione. Vedere l'articolo [Import Data with the HR Connector](import-hr-data.md) per informazioni dettagliate su come configurare il connettore Microsoft 365 HR per la propria organizzazione.
+- Quando si  usa il modello di furto di dati da parte degli utenti, è necessario configurare un connettore per le risorse umane di Microsoft 365 per importare periodicamente le informazioni sulla data di licenziamento e di chiusura per gli utenti dell'organizzazione. Per istruzioni [dettagliate](import-hr-data.md) sulla configurazione del connettore risorse umane di Microsoft 365 per l'organizzazione, vedere l'articolo importare dati con il connettore risorse umane.
+- Quando  si utilizzano modelli di perdita di dati, è necessario configurare almeno un criterio di prevenzione della perdita di dati (DLP) per definire le informazioni riservate nell'organizzazione e per ricevere avvisi di rischio Insider per gli avvisi dei criteri DLP di gravità elevata. Vedere [l'articolo creare, testare e](create-test-tune-dlp-policy.md) ottimizzare un criterio DLP per istruzioni dettagliate per configurare i criteri DLP per l'organizzazione.
+- Quando si usano **modelli di violazione dei** criteri di sicurezza, è necessario abilitare Microsoft Defender for Endpoint per l'integrazione della gestione dei rischi Insider in Defender Security Center per importare gli avvisi di violazione della sicurezza. Vedi [l'articolo Configurare le funzionalità avanzate in Microsoft Defender](/windows/security/threat-protection/microsoft-defender-atp/advanced-features) per istruzioni dettagliate per abilitare l'integrazione di Defender for Endpoint con la gestione dei rischi Insider.
+- Quando si usano **modelli utente** scontenti, è necessario configurare un connettore risorse umane di Microsoft 365 per importare periodicamente informazioni sullo stato di prestazioni o abbassamento di livello per gli utenti dell'organizzazione. Per istruzioni [dettagliate](import-hr-data.md) sulla configurazione del connettore risorse umane di Microsoft 365 per l'organizzazione, vedere l'articolo importare dati con il connettore risorse umane.
 
-## <a name="test-with-a-small-group-of-users-in-a-production-environment"></a>Eseguire il test con un gruppo limitato di utenti in un ambiente di produzione
+## <a name="test-with-a-small-group-of-users-in-a-production-environment"></a>Testare con un piccolo gruppo di utenti in un ambiente di produzione
 
-Prima di abilitare la soluzione in modo generale nell'ambiente di produzione, è possibile esaminare i criteri con un piccolo gruppo di utenti di produzione durante l'esecuzione di una richiesta di conformità, privacy e giudizi legali nell'organizzazione. La valutazione della gestione dei rischi insider in un ambiente di testing richiede che vengano generate azioni utente simulate e altri segnali per creare avvisi per la valutazione e i casi di elaborazione. Questo approccio non è pratico per la maggior parte delle organizzazioni, quindi è preferibile testare la gestione dei rischi Insider con un piccolo gruppo di utenti in un ambiente di produzione.
+Prima di abilitare la soluzione a livello generale nell'ambiente di produzione, è consigliabile testare i criteri con un piccolo gruppo di utenti di produzione durante l'esecuzione delle revisioni legali, della conformità e della privacy necessarie nell'organizzazione. La valutazione della gestione dei rischi insider in un ambiente di testing richiederebbe la generazione di azioni utente simulate e di altri segnali per creare avvisi per la valutazione e casi per l'elaborazione. Questo approccio non è pratico per la maggior parte delle organizzazioni, pertanto è preferibile testare la gestione dei rischi Insider con un piccolo gruppo di utenti in un ambiente di produzione.
 
-Mantenere la caratteristica Anonymization nelle impostazioni dei criteri abilitata a anonimizzare i nomi visualizzati dall'utente nella console di gestione dei rischi Insider durante questo testing per mantenere la privacy all'interno dello strumento. Questa impostazione consente di proteggere la privacy degli utenti che dispongono di corrispondenze di criteri e può contribuire a promuovere l'oggettività nelle analisi dei dati e nelle recensioni per gli avvisi sui rischi Insider.
+Mantenere abilitata la funzionalità di anonimizzazione nelle impostazioni dei criteri per anonimizzare i nomi visualizzati degli utenti nella console di gestione dei rischi Insider durante questo test per mantenere la privacy all'interno dello strumento. Questa impostazione consente di proteggere la privacy degli utenti che hanno corrispondenze ai criteri e di promuovere l'obiettività nell'analisi e nell'analisi dei dati per gli avvisi di rischio Insider.
 
-Se non vengono visualizzati avvisi subito dopo la configurazione di un criterio di gestione dei rischi Insider, può significare che la soglia di rischio minima non è ancora stata soddisfatta. Un buon modo per controllare se il criterio viene attivato e funzionante come previsto è vedere se l'utente è in ambito per il criterio nella pagina **utenti** .
+Se non vengono visualizzati avvisi subito dopo la configurazione di un criterio di gestione dei rischi Insider, è possibile che la soglia minima di rischio non sia stata ancora raggiunta. Un buon modo per verificare se il criterio viene attivato e funziona come previsto è vedere se l'utente è nell'ambito del criterio nella **pagina** Utenti.
 
-## <a name="resources-for-stakeholders"></a>Risorse per le parti interessate
+## <a name="resources-for-stakeholders"></a>Risorse per gli stakeholder
 
-Condividere la documentazione relativa alla gestione dei rischi Insider con le parti interessate nell'organizzazione incluse nel flusso di lavoro per la gestione e la correzione:
+Condividere la documentazione sulla gestione dei rischi insider con gli stakeholder dell'organizzazione inclusi nel flusso di lavoro di gestione e correzione:
 
 - [Creare e gestire i criteri dei rischi Insider](insider-risk-management-policies.md)
 - [Esaminare gli avvisi relativi ai rischi Insider](insider-risk-management-alerts.md)
 - [Intervenire riguardo ai casi di rischio Insider](insider-risk-management-cases.md)
-- [Esaminare i dati dei casi con l'esploratore dei contenuti di rischio Insider](insider-risk-management-content-explorer.md)
+- [Esaminare i dati del caso con Esplora contenuto rischio Insider](insider-risk-management-content-explorer.md)
 - [Creare modelli di avviso relativi ai rischi Insider](insider-risk-management-notices.md)
 
 ## <a name="ready-to-get-started"></a>Pronti per iniziare?
 
-È possibile configurare la gestione dei rischi Insider per la propria organizzazione? Leggere gli articoli seguenti:
+Sei pronto a configurare la gestione dei rischi Insider per la tua organizzazione? Leggere gli articoli seguenti:
 
-- Iniziare a [utilizzare le impostazioni di gestione dei rischi Insider](insider-risk-management-settings.md) per configurare le impostazioni di criteri globali.
-- Per iniziare a [utilizzare la gestione dei rischi Insider](insider-risk-management-configure.md) , è possibile configurare i prerequisiti, creare criteri e iniziare a ricevere avvisi.
+- [Introduzione alle impostazioni di gestione dei rischi Insider](insider-risk-management-settings.md) per configurare le impostazioni dei criteri globali.
+- [Introduzione alla gestione dei rischi Insider](insider-risk-management-configure.md) per configurare i prerequisiti, creare criteri e iniziare a ricevere avvisi.

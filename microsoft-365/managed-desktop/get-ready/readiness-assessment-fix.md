@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 22b5a6353720f8fbee218c138a3c9d0dee444db9
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: ff2ef15f93cef5255e8c8113facf51b833eff77d
+ms.sourcegitcommit: 719b89baca1bae14455acf2e517ec18fc473636c
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114920"
+ms.locfileid: "50122361"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Risolvere problemi trovati dallo strumento di valutazione dell'idoneità
 
@@ -50,7 +50,7 @@ Assicurati che i profili Autopilot siano assegnati a un gruppo azure AD assegnat
 
 ### <a name="certificate-connectors"></a>Connettori di certificati
 
-Se sono presenti connettori di certificato che verranno utilizzati dai dispositivi che si desidera registrare in Microsoft Managed Desktop, i connettori non dovrebbero contenere errori. Solo uno dei seguenti avvisi verrà applicato alla propria situazione, quindi controllali attentamente.
+Se sono presenti connettori di certificato che verranno utilizzati dai dispositivi che si desidera registrare in Microsoft Managed Desktop, i connettori non dovrebbero contenere errori. Solo uno dei seguenti avvisi verrà applicato alla propria situazione, quindi controllali con attenzione.
 
 **Avviso**
 
@@ -132,11 +132,11 @@ Al momento la pagina di stato della registrazione (ESP) è abilitata. Se si inte
 
 **Non pronto**
 
-Il profilo predefinito ESP è impostato su Mostra **stato di configurazione dell'app e del profilo.** Disabilita questa impostazione o assicurati che le assegnazioni a qualsiasi gruppo di Azure AD non includano i dispositivi Microsoft Managed Desktop seguendo i passaggi descritti in [Configurare la pagina stato registrazione.](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status)
+Il profilo predefinito ESP è impostato su Mostra **stato configurazione app e profili.** Disabilita questa impostazione o assicurati che le assegnazioni a qualsiasi gruppo di Azure AD non includano i dispositivi Microsoft Managed Desktop seguendo i passaggi descritti in [Configurare la pagina stato registrazione.](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status)
 
 **Avviso**
 
-Assicurati che tutti i profili con l'impostazione Mostra stato di avanzamento configurazione **app** e profilo non siano assegnati ad alcun gruppo di Azure AD che include dispositivi Microsoft Managed Desktop. Per ulteriori informazioni, vedere [Set up the Enrollment Status Page.](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status)
+Assicurati che tutti i profili con l'impostazione Mostra stato di avanzamento configurazione **app** e profili non siano assegnati ad alcun gruppo di Azure AD che includa dispositivi Microsoft Managed Desktop. Per altre informazioni, vedi [Configurare la pagina stato registrazione.](https://docs.microsoft.com/mem/intune/enrollment/windows-enrollment-status)
 
 ### <a name="microsoft-store-for-business"></a>Microsoft Store per le aziende
 
@@ -197,7 +197,7 @@ I criteri di base della sicurezza non devono essere mirati ad alcun dispositivo 
 
 **Non pronto**
 
-Si dispone di un profilo di base della sicurezza destinato a tutti gli utenti, a tutti i dispositivi o a entrambi. Modifica i criteri per usare un'assegnazione destinata a un gruppo di Azure AD specifico che non include alcun dispositivo Microsoft Managed Desktop. Per la procedura, vedere [Usare le linee di base della sicurezza per configurare i dispositivi Windows 10 in Intune.](https://docs.microsoft.com/mem/intune/protect/security-baselines) Durante la registrazione, applicheremo una nuova linea di base per la sicurezza a tutti i dispositivi Microsoft Managed Desktop. Dopo la registrazione, puoi esaminare i criteri di base per la sicurezza di Microsoft Managed Desktop **nell'area** dei criteri di configurazione di Microsoft Endpoint Manager.
+Si dispone di un profilo di base della sicurezza destinato a tutti gli utenti, a tutti i dispositivi o a entrambi. Modifica i criteri per usare un'assegnazione destinata a un gruppo di Azure AD specifico che non include alcun dispositivo Microsoft Managed Desktop. Per la procedura, vedere [Usare le linee di base della sicurezza per configurare i dispositivi Windows 10 in Intune.](https://docs.microsoft.com/mem/intune/protect/security-baselines) Durante la registrazione, applicheremo una nuova linea di base per la sicurezza a tutti i dispositivi Microsoft Managed Desktop. Dopo la registrazione, puoi esaminare i criteri di base per la sicurezza di Microsoft Managed Desktop nell'area dei criteri **di** configurazione di Microsoft Endpoint Manager.
 
 **Avviso**
 
@@ -238,7 +238,7 @@ Si dispone di un criterio "anello di aggiornamento" destinato a tutti i disposit
 
 **Avviso**
 
-Assicurati che tutti i criteri dell'anello di aggiornamento che hai escluso siano il **gruppo Modern Workplace Devices -All** Azure AD. Se sono stati assegnati gruppi di utenti di Azure AD a questi criteri, assicurarsi che tutti i criteri dell'anello di aggiornamento siano stati esclusi anche dal gruppo Ambiente di lavoro moderno **-** Tutti gli Azure AD a cui si aggiungono gli utenti di Microsoft Managed Desktop (o un gruppo equivalente). Per la procedura, vedere Gestire gli aggiornamenti software di [Windows 10 in Intune.](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure) Sia i dispositivi moderni dell'area di **lavoro-** Tutti i gruppi di **Azure** AD sono gruppi che creiamo quando ti iscrivi a Microsoft Managed Desktop, quindi dovrai tornare indietro per escludere questo gruppo dopo la registrazione.
+Assicurati che tutti i criteri dell'anello di aggiornamento che hai escluso siano il **gruppo Modern Workplace Devices -All** Azure AD. Se sono stati assegnati gruppi di utenti di Azure AD a questi criteri, assicurarsi che tutti i criteri dell'anello di aggiornamento siano stati esclusi anche dal gruppo Ambiente di lavoro moderno **-** Tutti i gruppi di Azure AD a cui si aggiungono gli utenti di Microsoft Managed Desktop (o un gruppo equivalente). Per la procedura, vedere Gestire gli aggiornamenti software di [Windows 10 in Intune.](https://docs.microsoft.com/mem/intune/protect/windows-update-for-business-configure) Sia i dispositivi moderni dell'area di **lavoro-** Tutti i gruppi di **Azure** AD sono gruppi che creiamo quando ti iscrivi a Microsoft Managed Desktop, quindi dovrai tornare indietro per escludere questo gruppo dopo la registrazione.
 
 
 ## <a name="azure-active-directory-settings"></a>Impostazioni di Azure Active Directory
@@ -280,13 +280,13 @@ Per usare Microsoft Managed Desktop sono necessarie diverse licenze.
 Non hai tutte le licenze necessarie per usare Microsoft Managed Desktop. Per ulteriori informazioni, vedere [Tecnologie Microsoft Managed Desktop](../intro/technologies.md) e Altre informazioni sulle [licenze.](prerequisites.md#more-about-licenses)
 
 
-### <a name="security-account-names"></a>Nomi degli account di sicurezza
+### <a name="microsoft-managed-desktop-service-accounts"></a>Account del servizio Microsoft Managed Desktop
 
-Alcuni nomi di account di sicurezza potrebbero essere in conflitto con quelli creati da Microsoft Managed Desktop.
+Alcuni nomi di account potrebbero essere in conflitto con i nomi di account creati da Microsoft Managed Desktop per gestire il servizio Microsoft Managed Desktop.
 
 **Non pronto**
 
-Si dispone di almeno un nome di account in conflitto con quelli creati da Microsoft Managed Desktop. Collaborare con il rappresentante dell'account Microsoft per escludere questi nomi di account.
+Si dispone di almeno un nome di account in conflitto con i nomi di account creati da Microsoft Managed Desktop. Collaborare con il rappresentante dell'account Microsoft per escludere questi nomi di account. I nomi degli account non vengono elencati pubblicamente per ridurre al minimo i rischi per la sicurezza. 
 
 
 ### <a name="security-administrator-roles"></a>Ruoli di amministratore della sicurezza
@@ -295,7 +295,7 @@ Gli utenti con determinati ruoli di sicurezza devono disporre di tali ruoli asse
 
 **Avviso**
 
-Se sono presenti utenti assegnati a uno qualsiasi di questi ruoli nell'organizzazione di Azure AD, assicurarsi che questi ruoli siano assegnati anche in Microsoft Defender per Endpoint. In caso contrario, gli amministratori con questi ruoli non saranno in grado di accedere al portale di amministrazione.
+Se sono presenti utenti assegnati a uno di questi ruoli nell'organizzazione di Azure AD, assicurarsi che questi ruoli siano assegnati anche in Microsoft Defender for Endpoint. In caso contrario, gli amministratori con questi ruoli non saranno in grado di accedere al portale di amministrazione.
 
 - Operatore della sicurezza
 - Ruolo con autorizzazioni di lettura globali
@@ -313,7 +313,7 @@ Le impostazioni predefinite di sicurezza sono attivate. Disattiva le impostazion
 
 ### <a name="self-service-password-reset"></a>Reimpostazione password self-service
 
-La reimpostazione della password self-service (SSPR) può essere abilitata per tutti gli utenti di Microsoft Managed Desktop esclusi gli account del servizio Microsoft Managed Desktop. Per altre informazioni, vedere Esercitazione: Consentire agli utenti di sbloccare il proprio account o reimpostare le [password usando la reimpostazione della password in modalità self-service di Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr)
+La reimpostazione della password in modalità self-service (SSPR) può essere abilitata per tutti gli utenti di Microsoft Managed Desktop esclusi gli account del servizio Microsoft Managed Desktop. Per altre informazioni, vedere Esercitazione: Consentire agli utenti di sbloccare il proprio account o reimpostare le [password usando la reimpostazione della password in modalità self-service di Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-sspr)
 
 **Avviso**
 
@@ -336,4 +336,4 @@ Dopo la registrazione, gli utenti di Microsoft Managed Desktop non avranno privi
 
 **Avviso**
 
-Si usa l'impostazione Consenti **sincronizzazione solo su PC aggiunti a domini** specifici. Questa impostazione non funziona con Microsoft Managed Desktop. Disabilitare questa impostazione e configurare Invece OneDrive per l'uso di un criterio di accesso condizionale. Per [informazioni, vedere Pianificare una distribuzione di accesso](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) condizionale.
+Si usa l'impostazione **Consenti sincronizzazione solo su PC aggiunti a domini** specifici. Questa impostazione non funziona con Microsoft Managed Desktop. Disabilitare questa impostazione e configurare Invece OneDrive per l'uso di un criterio di accesso condizionale. Per [informazioni, vedere Pianificare una distribuzione di accesso](https://docs.microsoft.com/azure/active-directory/conditional-access/plan-conditional-access) condizionale.

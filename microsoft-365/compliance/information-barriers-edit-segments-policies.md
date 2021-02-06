@@ -12,12 +12,12 @@ ms.collection:
 localization_priority: None
 f1.keywords:
 - NOCSH
-ms.openlocfilehash: 3a95ccb476960424b701f522aacce78576e6f68f
-ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
+ms.openlocfilehash: 0d46459f61b29c6bdb457c7e0c82e9147e7709ba
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50071281"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126141"
 ---
 # <a name="manage-information-barrier-policies"></a>Gestire i criteri delle barriere di informazioni
 
@@ -37,7 +37,7 @@ Dopo aver definito [i criteri](information-barriers-policies.md)delle barriere d
 | [Risoluzione dei problemi relativi alle barriere informative](information-barriers-troubleshooting.md) | Fare riferimento a questo articolo quando si verificano problemi imprevisti con le barriere di informazioni. |
 
 > [!IMPORTANT]
-> Per eseguire le attività descritte in questo articolo, è necessario disporre di un ruolo appropriato, ad esempio uno dei seguenti:<br/>- Amministratore globale dell'organizzazione di Microsoft 365<br/>- Amministratore globale<br/>- Amministratore conformità<br/>- IB Compliance Management (questo è un nuovo ruolo!)<br><br>Per ulteriori informazioni sui prerequisiti per le barriere delle informazioni, vedere [Prerequisiti (per i criteri delle barriere di informazioni).](information-barriers-policies.md#prerequisites)<br><br> Assicurarsi di [connettersi a PowerShell & Centro sicurezza e conformità.](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
+> Per eseguire le attività descritte in questo articolo, è necessario disporre di un ruolo appropriato, ad esempio uno dei seguenti:<br/>- Amministratore globale dell'organizzazione di Microsoft 365<br/>- Amministratore globale<br/>- Amministratore conformità<br/>- IB Compliance Management (questo è un nuovo ruolo!)<br><br>Per ulteriori informazioni sui prerequisiti per le barriere delle informazioni, vedere [Prerequisiti (per i criteri delle barriere di informazioni).](information-barriers-policies.md#prerequisites)<br><br> Assicurarsi di [connettersi a PowerShell & Centro sicurezza e conformità.](/powershell/exchange/connect-to-scc-powershell)
 
 ## <a name="edit-user-account-attributes"></a>Modificare gli attributi dell'account utente
 
@@ -53,9 +53,9 @@ Utilizzare questa procedura per modificare gli attributi utilizzati per segmenta
 
 3. Modificare uno o più account utente per includere i valori per l'attributo selezionato nel passaggio precedente. Per eseguire questa operazione, utilizzare una delle procedure seguenti:
 
-    - Per modificare un singolo account, vedere Aggiungere o aggiornare le informazioni del profilo di un utente [con Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+    - Per modificare un singolo account, vedere Aggiungere o aggiornare le informazioni del profilo di un utente [con Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
-    - Per modificare più account (o usare PowerShell per modificare un singolo account), vedere Configurare le proprietà [dell'account utente con PowerShell di Office 365.](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)
+    - Per modificare più account (o usare PowerShell per modificare un singolo account), vedere Configurare le proprietà [dell'account utente con PowerShell di Office 365.](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)
 
 ## <a name="edit-a-segment"></a>Modificare un segmento
 
@@ -90,11 +90,11 @@ Dopo aver completato la modifica dei segmenti [](information-barriers-policies.m
 
     Esempio: si supponga che sia stato definito un criterio per impedire al segmento *Ricerche* di comunicare con i *segmenti Vendite* *e* Marketing. Il criterio è stato definito utilizzando questo cmdlet: `New-InformationBarrierPolicy -Name "Research-SalesMarketing" -AssignedSegment "Research" -SegmentsBlocked "Sales","Marketing"`
 
-    Si supponga di volerla modificare in modo che gli utenti del segmento *Ricerca* possano comunicare solo con le persone nel *segmento HR.* Per apportare questa modifica, viene utilizzato questo cmdlet: `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -SegmentsAllowed "HR"`
+    Si supponga di volerla modificare in modo che gli utenti del segmento *Ricerca* possano comunicare solo con persone del *segmento HR.* Per apportare questa modifica, viene utilizzato questo cmdlet: `Set-InformationBarrierPolicy -Identity 43c37853-ea10-4b90-a23d-ab8c93772471 -SegmentsAllowed "HR"`
 
     In questo esempio abbiamo modificato "SegmentsBlocked" in "SegmentsAllowed" e specificato il *segmento HR.*
 
-3. Dopo aver modificato un criterio, assicurati di applicare le modifiche. (Vedi [Applicare i criteri delle barriere di informazioni.](information-barriers-policies.md#part-3-apply-information-barrier-policies))
+3. Dopo aver completato la modifica di un criterio, assicurati di applicare le modifiche. (Vedi [Applicare i criteri delle barriere di informazioni.](information-barriers-policies.md#part-3-apply-information-barrier-policies))
 
 ## <a name="set-a-policy-to-inactive-status"></a>Impostare un criterio sullo stato inattivo
 
@@ -118,7 +118,7 @@ Dopo aver completato la modifica dei segmenti [](information-barriers-policies.m
 
 A questo punto, uno o più criteri delle barriere di informazioni sono impostati sullo stato inattivo. Da qui è possibile eseguire una delle operazioni seguenti:
 
-- Mantieni così come è (un criterio impostato sullo stato inattivo non ha effetto sugli utenti)
+- Mantienilo così come è (un criterio impostato sullo stato inattivo non ha alcun effetto sugli utenti)
 - [Modificare un criterio](#edit-a-policy) 
 - [Rimuovere un criterio](#remove-a-policy)
 
@@ -146,7 +146,7 @@ A questo punto, uno o più criteri delle barriere di informazioni sono impostati
 
     Le modifiche vengono applicate, utente per utente, per l'organizzazione. Se l'organizzazione è di grandi dimensioni, il completamento di questo processo può richiedere 24 ore (o più).
 
-## <a name="stop-a-policy-application"></a>Arrestare un'applicazione di criteri
+## <a name="stop-a-policy-application"></a>Arrestare un'applicazione dei criteri
 
 Dopo aver avviato l'applicazione dei criteri delle barriere di informazioni, se si desidera impedire l'applicazione di tali criteri, eseguire la procedura seguente. L'avvio del processo richiederà circa 30-35 minuti.
 

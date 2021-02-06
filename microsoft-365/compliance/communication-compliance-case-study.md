@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 5925ad7641370b26d0a272968a13028b74b81ef4
-ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
+ms.openlocfilehash: 1b9bef180fed9c3afa3b3d8d2319a1fa0260ed14
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50109997"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126595"
 ---
 # <a name="case-study---contoso-quickly-configures-an-offensive-language-policy-for-microsoft-teams-exchange-and-yammer-communications"></a>Case study: Contoso configura rapidamente un criterio linguistico offensivo per le comunicazioni di Microsoft Teams, Exchange e Yammer
 
@@ -60,7 +60,7 @@ Il primo passaggio consiste nel verificare che le licenze di Microsoft 365 di Co
 - Abbonamento a Microsoft 365 A3 + componente aggiuntivo Microsoft 365 A5 Insider Risk Management
 - Abbonamento a Microsoft 365 G5 (versione di valutazione o a pagamento)
 - Abbonamento a Microsoft 365 G5 + componente aggiuntivo conformità Microsoft 365 G5
-- Abbonamento a Microsoft 365 G5 + componente aggiuntivo Microsoft 365 G5 Insider Risk Management
+- Abbonamento a Microsoft 365 G5 + componente aggiuntivo Gestione dei rischi insider di Microsoft 365 G5
 - Abbonamento a Office 365 Enterprise E5 (versione di valutazione o a pagamento)
 - Abbonamento a Office 365 Enterprise E3 + componente aggiuntivo Office 365 Advanced Compliance (non più disponibile per i nuovi abbonamenti, vedere la nota)
 
@@ -73,7 +73,7 @@ Gli amministratori IT di Contoso devono eseguire le operazioni seguenti per veri
 
 1. Gli amministratori IT a sign in to the **Microsoft 365 admin center** [( https://admin.microsoft.com)](https://admin.microsoft.com) and navigate to **Microsoft 365 admin center**  >  **Billing**  >  **Licenses**.
 
-2. Qui confermano di avere una delle opzioni di [licenza che](communication-compliance-configure.md#subscriptions-and-licensing) include il supporto per la conformità delle comunicazioni.
+2. Qui confermano di avere una delle opzioni di [licenza](communication-compliance-configure.md#subscriptions-and-licensing) che include il supporto per la conformità delle comunicazioni.
 
 ![Licenze per la conformità delle comunicazioni](../media/communication-compliance-case-licenses.png)
 
@@ -85,7 +85,7 @@ Contoso decide di  utilizzare il gruppo di ruoli Conformità comunicazioni per a
 
 |**Ruolo**|**Autorizzazioni di ruolo**|
 |:-----|:-----|
-| **Conformità delle comunicazioni** | Utilizzare questo gruppo di ruoli per gestire la conformità delle comunicazioni per l'organizzazione in un singolo gruppo. Aggiungendo tutti gli account utente per amministratori, analisti, investigatori e visualizzatori designati, è possibile configurare le autorizzazioni di conformità delle comunicazioni in un singolo gruppo. Questo gruppo di ruoli contiene tutti i ruoli di autorizzazione per la conformità delle comunicazioni. Questa configurazione è il modo più semplice per iniziare rapidamente a usare la conformità delle comunicazioni ed è adatta per le organizzazioni che non necessitano di autorizzazioni separate definite per gruppi di utenti separati. |
+| **Conformità delle comunicazioni** | Utilizzare questo gruppo di ruoli per gestire la conformità delle comunicazioni per l'organizzazione in un singolo gruppo. Aggiungendo tutti gli account utente per amministratori, analisti, investigatori e visualizzatori designati, è possibile configurare le autorizzazioni di conformità delle comunicazioni in un singolo gruppo. Questo gruppo di ruoli contiene tutti i ruoli di autorizzazione di conformità delle comunicazioni. Questa configurazione è il modo più semplice per iniziare rapidamente a usare la conformità delle comunicazioni ed è adatta per le organizzazioni che non necessitano di autorizzazioni separate definite per gruppi di utenti separati. |
 | **Communication Compliance Admin** | Utilizzare questo gruppo di ruoli per configurare inizialmente la conformità delle comunicazioni e successivamente per separare gli amministratori della conformità delle comunicazioni in un gruppo definito. Gli utenti assegnati a questo gruppo di ruoli possono creare, leggere, aggiornare ed eliminare i criteri di conformità delle comunicazioni, le impostazioni globali e le assegnazioni dei gruppi di ruoli. Gli utenti assegnati a questo gruppo di ruoli non possono visualizzare gli avvisi dei messaggi. |
 | **Analista di conformità delle comunicazioni** | Utilizzare questo gruppo per assegnare autorizzazioni agli utenti che fungeranno da analisti della conformità delle comunicazioni. Gli utenti assegnati a questo gruppo di ruoli possono visualizzare i criteri in cui sono assegnati come revisori, visualizzare i metadati dei messaggi (non il contenuto dei messaggi), inoltrare ad altri revisori o inviare notifiche agli utenti. Gli analisti non possono risolvere gli avvisi in sospeso. |
 | **Communication Compliance Investigator** | Utilizzare questo gruppo per assegnare autorizzazioni agli utenti che fungeranno da investigatori della conformità delle comunicazioni. Gli utenti assegnati a questo gruppo di ruoli possono visualizzare i metadati e il contenuto dei messaggi, inoltrare ad altri revisori, inoltrare a un caso di Advanced eDiscovery, inviare notifiche agli utenti e risolvere l'avviso. |
@@ -158,7 +158,7 @@ Gli amministratori IT di Contoso esaminano e completano le istruzioni [dettaglia
 
 La conformità delle comunicazioni richiede che il tenant di Yammer per un'organizzazione sia in modalità nativa per monitorare il linguaggio offensivo nei messaggi privati e nelle conversazioni della community pubblica.
 
-Gli amministratori IT di Contoso assicurarsi di leggere le informazioni nell'articolo Panoramica della modalità nativa di [Yammer in Microsoft 365](https://docs.microsoft.com/yammer/configure-your-yammer-network/overview-native-mode) e seguire la procedura per eseguire lo strumento di migrazione nell'articolo Configurare la rete Yammer per la modalità nativa per [Microsoft 365.](/yammer/configure-your-yammer-network/native-mode)
+Gli amministratori IT di Contoso assicurarsi di leggere le informazioni nell'articolo Panoramica della modalità nativa di [Yammer in Microsoft 365](/yammer/configure-your-yammer-network/overview-native-mode) e seguire la procedura per eseguire lo strumento di migrazione nell'articolo Configurare la rete Yammer per la modalità nativa per [Microsoft 365.](/yammer/configure-your-yammer-network/native-mode)
 
 ### <a name="setting-up-a-group-for-in-scope-users"></a>Configurazione di un gruppo per gli utenti nell'ambito
 

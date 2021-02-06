@@ -16,19 +16,18 @@ ms.collection:
 - Adm_O365_Setup
 ms.custom:
 - AdminSurgePortfolio
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: f40a9185-b6d5-4a80-bb31-aa3bb0cab48a
-description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi su GoDaddy per Microsoft.
-ms.openlocfilehash: fdd8688f848e676411e736a5be10a2d01dcce50b
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Informazioni su come verificare il dominio e configurare i record DNS per posta elettronica, Skype for Business online e altri servizi su GoDaddy per Microsoft.
+ms.openlocfilehash: 2b53985dc17f3d124ec2b37dbf0047bce229385c
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658477"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126450"
 ---
 # <a name="create-dns-records-at-godaddy-for-microsoft"></a>Creare record DNS su GoDaddy per Microsoft
 
@@ -36,7 +35,7 @@ ms.locfileid: "49658477"
 
 Se il proprio provider di hosting DNS è GoDaddy, seguire i passaggi di questo articolo per verificare il dominio e configurare i record DNS per posta elettronica, Skype for Business online e così via.
 
-Dopo aver aggiunto questi record in GoDaddy, il dominio sarà configurato per l'uso con i servizi Microsoft.
+Dopo aver aggiunto questi record in GoDaddy, il dominio sarà configurato per l'utilizzo con i servizi Microsoft.
 
 > [!NOTE]
 > In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md).
@@ -55,7 +54,7 @@ Effettuare le operazioni seguenti.
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. In **domini** selezionare DNS nel dominio che si desidera modificare.
+2. In **Domini** selezionare DNS nel dominio che si desidera modificare.
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -67,7 +66,7 @@ Effettuare le operazioni seguenti.
 
     |**Tipo di record** |**Host**|**TXT Value**|**TTL** |
     |:-----|:-----|:-----|:-----|
-    |TXT (testo)|@|MS=ms *XXXXXXXX*<br>**Nota**: questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)|1 ora  <br>Selezionare un valore nell'elenco a discesa.|
+    |TXT (testo)|@|MS=ms *XXXXXXXX*<br>**Nota:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)|1 ora  <br>Selezionare un valore nell'elenco a discesa.|
 
       ![GoDaddy-BP-Verify-1-0](../../media/dns/56526870-d6465780-651a-11e9-9cf0-d6fff71e2f62.png)
 
@@ -106,7 +105,7 @@ Effettuare le operazioni seguenti.
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. In **domini** selezionare DNS nel dominio che si desidera modificare.
+2. In **Domini** selezionare DNS nel dominio che si desidera modificare.
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -120,11 +119,11 @@ Effettuare le operazioni seguenti.
 
 5. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori della tabella seguente.
 
-    Scegliere il valore **TTL** nell'elenco a discesa.
+    Scegliere il **valore TTL** nell'elenco a discesa.
 
     |**Tipo di record**|**Host**|**Punta a**|**Priorità**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX (Mail Exchanger)  <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere il vostro  *\<domain-key\>*  dal vostro account Microsoft.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |1 ora  <br/> |
+    |MX (Mail Exchanger)  <br/> |@  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere il  *\<domain-key\>*  proprio account Microsoft.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |1 ora  <br/> |
 
 6. Selezionare **Salva**.
 
@@ -137,7 +136,7 @@ Effettuare le operazioni seguenti.
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. In **domini** selezionare DNS nel dominio che si desidera modificare.
+2. In **Domini** selezionare DNS nel dominio che si desidera modificare.
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -148,13 +147,13 @@ Effettuare le operazioni seguenti.
 
 4. Scegliere **CNAME (Alias)** nell'elenco a discesa.
 
-    ![GoDaddy-BP-configure-3-0](../../media/dns/56528891-e7449800-651d-11e9-8eac-112285b8e38c.png)
+    ![GoDaddy-BP-Configure-3-0](../../media/dns/56528891-e7449800-651d-11e9-8eac-112285b8e38c.png)
 
 5. Creare il primo record CNAME.
 
     Nelle caselle del nuovo record digitare oppure copiare e incollare i valori dalla prima riga della tabella seguente.
 
-    Scegliere il valore **TTL** nell'elenco a discesa.
+    Scegliere il **valore TTL** nell'elenco a discesa.
 
     |**Tipo di record**|**Host**|**Punta a**|**TTL**|
     |:-----|:-----|:-----|:-----|
@@ -172,7 +171,7 @@ Effettuare le operazioni seguenti.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un  *singolo*  record SPF che includa entrambi i set di valori.
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un singolo record  *SPF*  che include entrambi i set di valori.
 
 Effettuare le operazioni seguenti.
 
@@ -180,7 +179,7 @@ Effettuare le operazioni seguenti.
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. In **domini** selezionare DNS nel dominio che si desidera modificare.
+2. In **Domini** selezionare DNS nel dominio che si desidera modificare.
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -194,7 +193,7 @@ Effettuare le operazioni seguenti.
 
 5. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori seguenti.
 
-    Scegliere il valore **TTL** negli elenchi a discesa.
+    Scegliere il **valore TTL** dagli elenchi a discesa.
 
     |**Tipo di record**|**Host**|**TXT Value**|**TTL**|
     |:-----|:-----|:-----|:-----|
@@ -214,7 +213,7 @@ Effettuare le operazioni seguenti.
 
     ![GoDaddy-BP-Configure-1-1](../../media/d6833ec7-9904-43fd-a877-7c663e5f5c25.png)
 
-2. In **domini** selezionare DNS nel dominio che si desidera modificare.
+2. In **Domini** selezionare DNS nel dominio che si desidera modificare.
 
     ![GoDaddy-BP-Configure-1-2](../../media/dns/56528038-94b6ac00-651c-11e9-8874-12db60cc7ea6.png)
 
@@ -230,7 +229,7 @@ Effettuare le operazioni seguenti.
 
     Nelle caselle del nuovo record digitare oppure copiare e incollare i valori dalla prima riga della tabella seguente.
 
-    Scegliere il **tipo di record** e i valori **TTL** negli elenchi a discesa.
+    Scegliere il **tipo di record e** i valori **TTL** dagli elenchi a discesa.
 
     |**Tipo di record**|**Nome**|**Destinazione**|**Protocollo**|**Servizio**|**Priorità**|**Peso**|**Porta**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
@@ -240,7 +239,7 @@ Effettuare le operazioni seguenti.
     ![GoDaddy-BP-Configure-5-1](../../media/a1b15ab1-eb6a-4672-90d1-7ac3e0beb223.png)
 
 
-6. Ripetere il **passaggio 5** per creare l'altro record SRV.
+6. Ripetere **il passaggio 5** per creare l'altro record SRV.
 
 7. Selezionare **Salva**.
 

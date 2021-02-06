@@ -1,6 +1,6 @@
 ---
 title: Attributi per i criteri delle barriere informative
-description: Questo articolo è un riferimento per gli attributi degli account utente di Azure Active Directory che è possibile utilizzare per definire i segmenti di barriera delle informazioni.
+description: Questo articolo è un riferimento per gli attributi dell'account utente di Azure Active Directory che è possibile usare per definire i segmenti delle barriere di informazioni.
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -13,49 +13,49 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5e7815dbcfc6129685322a250351276476f8a9e3
-ms.sourcegitcommit: c10eb675da725830e9776d2a0566ba3622eb361c
+ms.openlocfilehash: c45a2733c1fa7cf6d05cff747a9cfcdba1b124cc
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49980049"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126163"
 ---
 # <a name="attributes-for-information-barrier-policies"></a>Attributi per i criteri delle barriere informative
 
-Alcuni attributi in Azure Active Directory possono essere utilizzati per segmentare gli utenti. Una volta definiti i segmenti, tali segmenti possono essere utilizzati come filtri per i criteri di barriera delle informazioni. Ad esempio, è possibile utilizzare **Department** per definire segmenti di utenti per reparto all'interno dell'organizzazione (presupponendo che nessun singolo dipendente funzioni contemporaneamente per due reparti).
+Alcuni attributi in Azure Active Directory possono essere usati per segmentare gli utenti. Dopo aver definito i segmenti, questi segmenti possono essere usati come filtri per i criteri delle barriere di informazioni. Ad esempio, è possibile utilizzare **Department** per definire segmenti di utenti per reparto all'interno dell'organizzazione (presupponendo che nessun singolo dipendente lavori contemporaneamente per due reparti).
 
-In questo articolo viene descritto come utilizzare gli attributi con barriere informative e viene fornito un elenco degli attributi che è possibile utilizzare. Per ulteriori informazioni sulle barriere informative, vedere le risorse seguenti:
+In questo articolo viene descritto come utilizzare gli attributi con le barriere di informazioni e viene fornito un elenco di attributi che è possibile utilizzare. Per ulteriori informazioni sulle barriere in fatto di informazioni, vedere le risorse seguenti:
 
 - [Barriere informative](information-barriers.md)
-- [Definire i criteri per le barriere informative in Microsoft Teams](information-barriers-policies.md)
-- [Modificare (o rimuovere) i criteri di barriera delle informazioni](information-barriers-edit-segments-policies.md)
+- [Definire i criteri per le barriere delle informazioni in Microsoft Teams](information-barriers-policies.md)
+- [Modificare (o rimuovere) i criteri delle barriere di informazioni](information-barriers-edit-segments-policies.md)
 
-## <a name="how-to-use-attributes-in-information-barrier-policies"></a>Come utilizzare gli attributi nei criteri di barriere informative
+## <a name="how-to-use-attributes-in-information-barrier-policies"></a>Come usare gli attributi nei criteri delle barriere di informazioni
 
-Gli attributi elencati in questo articolo possono essere utilizzati per definire o modificare segmenti di utenti. I segmenti definiti fungono da parametri (denominati valori di *UserGroupFilter* ) nei [criteri di barriera delle informazioni](information-barriers-policies.md).
+Gli attributi elencati in questo articolo possono essere utilizzati per definire o modificare segmenti di utenti. I segmenti definiti fungono da parametri (denominati *valori UserGroupFilter)* nei [criteri delle barriere di informazioni.](information-barriers-policies.md)
 
-1. Determinare l'attributo che si desidera utilizzare per definire i segmenti. Vedere la sezione di [riferimento](#reference) in questo articolo.
+1. Determinare l'attributo che si desidera utilizzare per definire i segmenti. Vedere la [sezione Riferimenti](#reference) in questo articolo.
 
-2. Verificare che per gli account utente siano stati inseriti i valori per gli attributi selezionati nel passaggio 1. Visualizzare i dettagli dell'account utente e, se necessario, modificare gli account utente per includere i valori degli attributi. 
+2. Assicurati che gli account utente presentino valori compilati per gli attributi selezionati nel passaggio 1. Visualizzare i dettagli dell'account utente e, se necessario, modificare gli account utente per includere i valori degli attributi. 
 
-    - Per modificare più account o utilizzare PowerShell per modificare un singolo account, vedere [Configure user account properties with Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell).
+    - Per modificare più account (o usare PowerShell per modificare un singolo account), vedere Configurare le proprietà [dell'account utente con PowerShell di Office 365.](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)
 
-    - Per modificare un singolo account, vedere [aggiungere o aggiornare le informazioni sul profilo di un utente utilizzando Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal).
+    - Per modificare un singolo account, vedere Aggiungere o aggiornare le informazioni del profilo di un utente [con Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
-3. [Definire i segmenti tramite PowerShell](information-barriers-policies.md#define-segments-using-powershell), analogamente agli esempi seguenti:
+3. [Definire segmenti utilizzando PowerShell,](information-barriers-policies.md#define-segments-using-powershell)in modo analogo agli esempi seguenti:
 
     |**Esempio**|**Cmdlet**|
     |:----------|:---------|
-    | Definire un segmento denominato segment1 con l'attributo Department | `New-OrganizationSegment -Name "Segment1" -UserGroupFilter "Department -eq 'Department1'"` |
-    | Definire un segmento denominato Segmenta utilizzando l'attributo member (si supponga che questo attributo contenga nomi di gruppo, ad esempio "BlueGroup"). | `New-OrganizationSegment -Name "SegmentA" -UserGroupFilter "MemberOf -eq 'BlueGroup'"` |
-    | Definire un segmento denominato DayTraders tramite ExtensionAttribute1 (si supponga che questo attributo contenga titoli di lavoro, ad esempio "DayTrader"). | `New-OrganizationSegment -Name "DayTraders" -UserGroupFilter "ExtensionAttribute1 -eq 'DayTrader'"` |
+    | Definire un segmento denominato Segment1 usando l'attributo Department | `New-OrganizationSegment -Name "Segment1" -UserGroupFilter "Department -eq 'Department1'"` |
+    | Definire un segmento denominato SegmentA utilizzando l'attributo MemberOf (si supponga che questo attributo contenga nomi di gruppo, ad esempio "BlueGroup") | `New-OrganizationSegment -Name "SegmentA" -UserGroupFilter "MemberOf -eq 'BlueGroup'"` |
+    | Definire un segmento denominato DayTraders usando ExtensionAttribute1 (si supponga che questo attributo contenga titoli di lavoro, ad esempio "DayTrader") | `New-OrganizationSegment -Name "DayTraders" -UserGroupFilter "ExtensionAttribute1 -eq 'DayTrader'"` |
 
     > [!TIP]
-    > Quando si definiscono i segmenti, utilizzare lo stesso attributo per tutti i segmenti. Ad esempio, se si definiscono alcuni segmenti utilizzando *Department*, definire tutti i segmenti che utilizzano *Department*. Non definire alcuni segmenti con *Department* e altri utenti che utilizzano *member*. Verificare che i segmenti non siano sovrapposti. ogni utente deve essere assegnato a un solo segmento.
+    > Quando definisci i segmenti, usa lo stesso attributo per tutti i segmenti. Se ad esempio si definiscono alcuni segmenti utilizzando *Reparto*, definire tutti i segmenti utilizzando *Reparto.* Non definire alcuni segmenti usando Department e *altri* usando *MemberOf.* Assicurati che i segmenti non si sovrappongano; ogni utente deve essere assegnato esattamente a un segmento.
 
 ## <a name="reference"></a>Riferimenti
 
-Nella tabella seguente sono elencati gli attributi che è possibile utilizzare con le barriere informative.
+Nella tabella seguente sono elencati gli attributi che è possibile utilizzare con le barriere in fatto di informazioni.
 
 |**Nome della proprietà di Azure Active Directory <br/> (nome visualizzato LDAP)**|**Nome della proprietà di Exchange**|
 |:---------------------------------------------------------------|:-------------------------|
@@ -96,6 +96,6 @@ Nella tabella seguente sono elencati gli attributi che è possibile utilizzare c
 
 ## <a name="resources"></a>Risorse
 
-- [Definire i criteri per le barriere informative in Microsoft Teams](information-barriers-policies.md)
+- [Definire i criteri per le barriere delle informazioni in Microsoft Teams](information-barriers-policies.md)
 - [Risoluzione dei problemi relativi alle barriere informative](information-barriers-troubleshooting.md)
 - [Barriere informative](information-barriers.md)

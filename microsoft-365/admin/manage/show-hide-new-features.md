@@ -1,14 +1,31 @@
 ---
-title: "Manage which Office features appear in What's New" f1.keywords:
-- NOCSH ms.author: danbrown author: DHB-MSFT manager: scotv audience: Admin ms.topic: article ms.service: o365-administration localization_priority: Normal ms.collection:
+title: Gestire le caratteristiche di Office visualizzate in Novità
+f1.keywords:
+- NOCSH
+ms.author: danbrown
+author: DHB-MSFT
+manager: scotv
+audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection:
 - M365-subscription-management
 - Adm_O365
-- Adm_TOC ms.custom: AdminSurgePortfolio search.appverid:
+- Adm_TOC
+ms.custom: AdminSurgePortfolio
+search.appverid:
 - BCS160
 - MET150
-- Descrizione MOE150: "Decidere quali funzionalità di Office mostrare o nascondere quando un utente sceglie Guida > Novità nella propria app di Office in Windows usando la funzionalità "Novità di Office" nell'interfaccia di amministrazione di Microsoft 365."
+- MOE150
+description: Decidere quali funzionalità di Office mostrare o nascondere quando un utente sceglie Guida > Novità nella propria app di Office in Windows usando la funzionalità "Novità di Office" nell'interfaccia di amministrazione di Microsoft 365.
+ms.openlocfilehash: d0b5bc3e643b306d9a38a707fed50ab546249c2b
+ms.sourcegitcommit: 719b89baca1bae14455acf2e517ec18fc473636c
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "50122349"
 ---
-
 # <a name="manage-which-office-features-appear-in-whats-new"></a>Gestire le caratteristiche di Office visualizzate in Novità
 
 Quando viene rilasciata una funzionalità importante di Office, gli utenti riceveranno un messaggio in proposito quando scelgono ?? Novità nella  >   propria app di Office in Windows.
@@ -33,8 +50,8 @@ Quando viene rilasciata una funzionalità importante di Office, gli utenti ricev
 È inoltre possibile selezionare più caratteristiche nella pagina Gestisci le caratteristiche di **Office** visualizzate nella pagina Novità e quindi scegliere Nascondi **o** **Mostra.**
 
 > [!NOTE]
-> - Se una caratteristica è disponibile in più  app di Office, impostandola su Nascosta, il messaggio della funzionalità viene nascosto in tutte le app di Office.
-> - Per impostazione predefinita, tutti i messaggi di funzionalità vengono visualizzati agli utenti. Questo è lo stato predefinito per tutte le funzionalità e lo stato cambia solo se si è scelto di nascondere o visualizzare un messaggio di funzionalità.
+> - Se una caratteristica è disponibile in più  app di Office, se si imposta la caratteristica su Nascosta, il messaggio della funzionalità viene nascosto in tutte le app di Office.
+> - Tutti i messaggi di funzionalità vengono visualizzati agli utenti per impostazione predefinita. Questo è lo stato predefinito per tutte le funzionalità e lo stato cambia solo se si è scelto di nascondere o visualizzare un messaggio di funzionalità.
 > - È anche possibile accedere alla funzionalità **Novità di Office dall'interfaccia** di amministrazione di Microsoft 365 Apps ( [https://config.office.com](https://config.office.com) ). La caratteristica è disponibile in  >  **Personalizzazione - Nuova gestione.**
 
 ## <a name="list-of-features"></a>Elenco delle caratteristiche

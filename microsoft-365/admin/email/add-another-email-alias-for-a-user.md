@@ -15,7 +15,6 @@ ms.collection:
 - Adm_TOC
 ms.custom:
 - MSStore_Link
-- okr_smb
 - AdminSurgePortfolio
 search.appverid:
 - BCS160
@@ -23,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: "Informazioni su come è possibile associare più indirizzi di posta elettronica, denominati alias di posta elettronica, all'account di Microsoft 365 per le aziende. "
-ms.openlocfilehash: afb576a0499577b910fe3ed14eff75ae0a52b394
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 3c97640f4bb16876ec028a1af2b361a21a0decab
+ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114034"
+ms.lasthandoff: 02/06/2021
+ms.locfileid: "50126406"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Aggiungere un altro alias di posta elettronica per un utente
 
@@ -43,7 +42,7 @@ Questo articolo è per gli amministratori di Microsoft 365 che hanno abbonamenti
   
 Un indirizzo di posta elettronica principale in Microsoft 365 è in genere l'indirizzo di posta elettronica assegnato a un utente al momento della creazione dell'account. Quando si invia un messaggio di posta elettronica a un altro utente, l'indirizzo di posta elettronica principale corrisponde in genere al contenuto del campo  *Da*  nelle app di posta elettronica. Possono inoltre avere più di un indirizzo di posta elettronica associato al proprio account Microsoft 365 per le aziende. Questi indirizzi aggiuntivi sono detti alias. 
   
-Si supponga, ad esempio, che Jenna abbia l'indirizzo di posta elettronica jenna@contosoco.com, ma che voglia anche ricevere posta elettronica a jen@contosoco.com perché alcune persone le fanno riferimento con quel nome. È possibile creare alias per l'utente in modo che entrambi gli indirizzi di posta elettronica vadano nella posta in arrivo di Jenna.
+Si supponga, ad esempio, che Jenna abbia l'indirizzo di posta elettronica jenna@contosoco.com, ma che voglia anche ricevere posta elettronica a jen@contosoco.com perché alcune persone le fanno riferimento con quel nome. È possibile creare alias per lei in modo che entrambi gli indirizzi di posta elettronica vadano nella posta in arrivo di Jenna.
 <br><br>  
   
 È possibile creare fino a 400 alias per utente. Non sono previsti ulteriori costi o licenze.
