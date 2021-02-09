@@ -11,43 +11,47 @@ localization_priority: Normal
 ms.assetid: cb801985-3c89-4979-9c18-17829a4cb563
 ms.custom:
 - seo-marvel-apr2020
-description: Gli amministratori possono ottenere informazioni su come utilizzare l'Insight del ciclo di posta elettronica Fix possible nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance per identificare e correggere i loop di posta nell'organizzazione.
+description: Gli amministratori possono imparare a usare le informazioni dettagliate sulla risoluzione dei possibili loop di posta nel dashboard del flusso di posta nel Centro sicurezza & conformità per identificare e correggere i loop di posta nell'organizzazione.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f08c27c761cdfe4acbbd8cf80e8ab6da8012b55f
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 3c9607f053fb5011b8c8af3c8bb2073a9d022909
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029895"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150232"
 ---
-# <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a><span data-ttu-id="c8d9f-103">FIX possible Insight del loop di posta elettronica nel centro sicurezza & Compliance</span><span class="sxs-lookup"><span data-stu-id="c8d9f-103">Fix possible mail loop insight in the Security & Compliance Center</span></span>
+# <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a><span data-ttu-id="a669a-103">Correggere le possibili informazioni dettagliate sul ciclo di posta nel Centro sicurezza & conformità</span><span class="sxs-lookup"><span data-stu-id="a669a-103">Fix possible mail loop insight in the Security & Compliance Center</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+<span data-ttu-id="a669a-104">**Si applica a**</span><span class="sxs-lookup"><span data-stu-id="a669a-104">**Applies to**</span></span>
+- [<span data-ttu-id="a669a-105">Exchange Online Protection</span><span class="sxs-lookup"><span data-stu-id="a669a-105">Exchange Online Protection</span></span>](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [<span data-ttu-id="a669a-106">Microsoft Defender per Office 365 piano 1 e piano 2</span><span class="sxs-lookup"><span data-stu-id="a669a-106">Microsoft Defender for Office 365 plan 1 and plan 2</span></span>](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [<span data-ttu-id="a669a-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="a669a-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-<span data-ttu-id="c8d9f-104">I loop di posta sono negativi perché:</span><span class="sxs-lookup"><span data-stu-id="c8d9f-104">Mail loops are bad because:</span></span>
+<span data-ttu-id="a669a-108">I cicli di posta non sono erri perché:</span><span class="sxs-lookup"><span data-stu-id="a669a-108">Mail loops are bad because:</span></span>
 
-- <span data-ttu-id="c8d9f-105">Sprecano risorse di sistema.</span><span class="sxs-lookup"><span data-stu-id="c8d9f-105">They waste system resources.</span></span>
-- <span data-ttu-id="c8d9f-106">Consumano la quota del volume di posta dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="c8d9f-106">They consume your organization's mail volume quota.</span></span>
-- <span data-ttu-id="c8d9f-107">Inviano rapporti di mancato recapito (noti anche come NDR o messaggi di rimbalzo) ai mittenti dei messaggi originali.</span><span class="sxs-lookup"><span data-stu-id="c8d9f-107">They send confusing non-delivery reports (also known as NDRs or bounce messages) to the original message senders.</span></span>
+- <span data-ttu-id="a669a-109">Sprecano risorse di sistema.</span><span class="sxs-lookup"><span data-stu-id="a669a-109">They waste system resources.</span></span>
+- <span data-ttu-id="a669a-110">Utilizzano la quota del volume di posta dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="a669a-110">They consume your organization's mail volume quota.</span></span>
+- <span data-ttu-id="a669a-111">Inviano rapporti di mancato recapito confusi (noti anche come rapporti di mancato recapito o notifiche di mancato recapito) ai mittenti dei messaggi originali.</span><span class="sxs-lookup"><span data-stu-id="a669a-111">They send confusing non-delivery reports (also known as NDRs or bounce messages) to the original message senders.</span></span>
 
-<span data-ttu-id="c8d9f-108">L'Insight del **ciclo di posta di Fix possibile** nell'area **consigliata per l'utente** del dashboard del flusso di [posta](mail-flow-insights-v2.md) nel [Centro sicurezza & Compliance](https://protection.office.com) notifica quando viene rilevato un loop di posta nell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="c8d9f-108">The **Fix possible mail loop** insight in the **Recommended for you** area of the [Mail flow dashboard](mail-flow-insights-v2.md) in the [Security & Compliance Center](https://protection.office.com) notifies you when a mail loop is detected in your organization.</span></span>
+<span data-ttu-id="a669a-112">La **correzione delle possibili** informazioni dettagliate sul ciclo di posta nell'area Consigliata per l'utente del [dashboard](mail-flow-insights-v2.md) del flusso di posta nel Centro sicurezza [&](https://protection.office.com) conformità notifica quando viene rilevato un ciclo di posta nell'organizzazione. </span><span class="sxs-lookup"><span data-stu-id="a669a-112">The **Fix possible mail loop** insight in the **Recommended for you** area of the [Mail flow dashboard](mail-flow-insights-v2.md) in the [Security & Compliance Center](https://protection.office.com) notifies you when a mail loop is detected in your organization.</span></span>
 
-<span data-ttu-id="c8d9f-109">Questa intuizione viene visualizzata solo dopo che è stata rilevata la condizione (se non si dispone di alcun loop di posta elettronica, non si vedrà l'Insight).</span><span class="sxs-lookup"><span data-stu-id="c8d9f-109">This insight appears only after the condition is detected (if you don't have any mail loops, you won't see the insight).</span></span>
+<span data-ttu-id="a669a-113">Queste informazioni vengono visualizzate solo dopo che la condizione è stata rilevata (se non sono presenti loop di posta, non verranno visualizzate le informazioni dettagliate).</span><span class="sxs-lookup"><span data-stu-id="a669a-113">This insight appears only after the condition is detected (if you don't have any mail loops, you won't see the insight).</span></span>
 
-![Fix Slow Mail Flow Rules Insight nelle aree consigliate per l'area del dashboard del flusso di posta](../../media/mfi-fix-possible-mail-loop.png)
+![Correggere le informazioni dettagliate sulle regole del flusso di posta lente nell'area Consigliata per l'utente del dashboard del flusso di posta](../../media/mfi-fix-possible-mail-loop.png)
 
-<span data-ttu-id="c8d9f-111">Quando si fa clic su **Visualizza dettagli** nel widget, viene visualizzato un riquadro a comparsa con ulteriori informazioni:</span><span class="sxs-lookup"><span data-stu-id="c8d9f-111">When you click **View details** on the widget, a flyout appears with more information:</span></span>
+<span data-ttu-id="a669a-115">Quando si fa **clic su Visualizza** dettagli nel widget, viene visualizzato un riquadro a comparsa con ulteriori informazioni:</span><span class="sxs-lookup"><span data-stu-id="a669a-115">When you click **View details** on the widget, a flyout appears with more information:</span></span>
 
-- <span data-ttu-id="c8d9f-112">**Dominio**</span><span class="sxs-lookup"><span data-stu-id="c8d9f-112">**Domain**</span></span>
-- <span data-ttu-id="c8d9f-113">**Numero di messaggi**: è possibile fare clic su **Visualizza messaggi di esempio** per visualizzare i risultati di [traccia](message-trace-scc.md) dei messaggi per un esempio di messaggi che sono stati interessati dal ciclo.</span><span class="sxs-lookup"><span data-stu-id="c8d9f-113">**Number of messages**: You can click **View sample messages** to see the [message trace](message-trace-scc.md) results for a sample of the messages that were affected by the loop.</span></span>
-- <span data-ttu-id="c8d9f-114">**Tipo di dominio**"ad esempio, autorevole o non autorevole.</span><span class="sxs-lookup"><span data-stu-id="c8d9f-114">**Domain type**" For example, Authoritative or Non-authoritative.</span></span>
-- <span data-ttu-id="c8d9f-115">**Record MX**: host (**mail server**) e valori di **priorità** del record MX per il dominio.</span><span class="sxs-lookup"><span data-stu-id="c8d9f-115">**MX record**: The host (**Mail server**) and **Priority** values of the MX record for the domain.</span></span>
-- <span data-ttu-id="c8d9f-116">**Motivo ciclo** e **correzione**: verranno identificati gli scenari più comuni del ciclo di posta elettronica e vengono fornite azioni consigliate per correggere il ciclo.</span><span class="sxs-lookup"><span data-stu-id="c8d9f-116">**Loop reason** and **How to fix**: We'll identify the most common mail loop scenarios and provide recommended actions to fix the loop.</span></span>
+- <span data-ttu-id="a669a-116">**Dominio**</span><span class="sxs-lookup"><span data-stu-id="a669a-116">**Domain**</span></span>
+- <span data-ttu-id="a669a-117">**Numero di messaggi**: è possibile **fare** clic su Visualizza messaggi di esempio per visualizzare i risultati della traccia dei messaggi per un campione dei messaggi interessati dal ciclo. [](message-trace-scc.md)</span><span class="sxs-lookup"><span data-stu-id="a669a-117">**Number of messages**: You can click **View sample messages** to see the [message trace](message-trace-scc.md) results for a sample of the messages that were affected by the loop.</span></span>
+- <span data-ttu-id="a669a-118">**Tipo di** dominio " Ad esempio, Autorevole o Non autorevole.</span><span class="sxs-lookup"><span data-stu-id="a669a-118">**Domain type**" For example, Authoritative or Non-authoritative.</span></span>
+- <span data-ttu-id="a669a-119">**Record MX**: l'host (**Server di** posta ) e i valori **di** priorità del record MX per il dominio.</span><span class="sxs-lookup"><span data-stu-id="a669a-119">**MX record**: The host (**Mail server**) and **Priority** values of the MX record for the domain.</span></span>
+- <span data-ttu-id="a669a-120">**Motivo del ciclo** **e come risolvere** il problema: identificheremo gli scenari di loop di posta più comuni e forniremo le azioni consigliate per correggere il ciclo.</span><span class="sxs-lookup"><span data-stu-id="a669a-120">**Loop reason** and **How to fix**: We'll identify the most common mail loop scenarios and provide recommended actions to fix the loop.</span></span>
 
-![Riquadro a comparsa dettagli che viene visualizzato dopo aver fatto clic su Visualizza dettagli sull'Insight del ciclo di posta di Fix possible](../../media/mfi-fix-possible-mail-loop-details.png)
+![Riquadro a comparsa Dettagli che viene visualizzato dopo aver fatto clic su Visualizza dettagli nella correzione delle possibili informazioni dettagliate sul ciclo di posta](../../media/mfi-fix-possible-mail-loop-details.png)
 
-## <a name="see-also"></a><span data-ttu-id="c8d9f-118">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="c8d9f-118">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a669a-122">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="a669a-122">See also</span></span>
 
-<span data-ttu-id="c8d9f-119">Per informazioni su altre intuizioni nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span><span class="sxs-lookup"><span data-stu-id="c8d9f-119">For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
+<span data-ttu-id="a669a-123">Per informazioni su altre informazioni dettagliate nel dashboard del flusso di posta, vedere Informazioni dettagliate sul flusso di posta [nel Centro sicurezza & conformità.](mail-flow-insights-v2.md)</span><span class="sxs-lookup"><span data-stu-id="a669a-123">For information about other insights in the Mail flow dashboard, see [Mail flow insights in the Security & Compliance Center](mail-flow-insights-v2.md).</span></span>
