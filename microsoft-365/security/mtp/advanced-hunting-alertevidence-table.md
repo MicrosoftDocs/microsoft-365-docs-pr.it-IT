@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c01b0aae1eff3d9b4add632aff0f13cb56941a30
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 7457084d49c5a9fef4ef79abc7702c6b473efcd2
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932305"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145302"
 ---
 # <a name="alertevidence"></a>AlertEvidence
 
@@ -59,6 +59,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `AccountDomain` | stringa | Dominio dell'account |
 | `AccountSid` | stringa | Identificatore di sicurezza (SID) dell'account |
 | `AccountObjectId` | stringa | Identificatore univoco per l'account in Azure Active Directory |
+| `AccountUpn` | stringa | Nome dell'entità utente (UPN) dell'account |
 | `DeviceId` | stringa | Identificatore univoco del dispositivo nel servizio |
 | `DeviceName` | stringa | Nome di dominio completo (FQDN) del computer |
 | `LocalIP` | stringa | Indirizzo IP assegnato al dispositivo locale utilizzato durante la comunicazione |
@@ -68,6 +69,9 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `Application` | stringa | Applicazione che ha eseguito l'azione registrata |
 | `ProcessCommandLine` | stringa | Riga di comando utilizzata per creare il nuovo processo |
 | `AdditionalFields` | stringa | Ulteriori informazioni sull'evento in formato matrice JSON |
+| `RegistryKey` |stringa | Chiave del Registro di sistema a cui è stata applicata l'azione registrata |
+| `RegistryValueName` |stringa | Nome del valore del Registro di sistema a cui è stata applicata l'azione registrata |
+| `RegistryValueData` |stringa | Dati del valore del Registro di sistema a cui è stata applicata l'azione registrata |
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)

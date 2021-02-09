@@ -1,5 +1,5 @@
 ---
-title: Insight nelle code nel dashboard del flusso di posta
+title: Informazioni dettagliate sulle code nel dashboard del flusso di posta
 f1.keywords:
 - NOCSH
 ms.author: siosulli
@@ -9,88 +9,92 @@ audience: ITPro
 ms.topic: conceptual
 localization_priority: Normal
 ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
-description: Gli amministratori possono imparare a usare il widget code nel dashboard del flusso di posta nel centro sicurezza & conformità per monitorare il flusso di posta non riuscito nelle loro organizzazioni locali o partner su connettori in uscita.
+description: Gli amministratori possono imparare a usare il widget Code nel dashboard del flusso di posta nel Centro sicurezza & conformità per monitorare il flusso di posta non riuscito alle organizzazioni locali o partner tramite connettori in uscita.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 73e97cbbd05e298013e9e686053a969d587ad5cf
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 94e8a1f3b54c3738c21e94ba85ae4f1d3f953498
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029151"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150172"
 ---
-# <a name="queues-insight-in-the-security--compliance-center"></a>Insight nelle code nel centro sicurezza & Compliance
+# <a name="queues-insight-in-the-security--compliance-center"></a>Informazioni dettagliate sulle code nel Centro sicurezza & conformità
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Si applica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Quando i messaggi non possono essere inviati dall'organizzazione ai server di posta elettronica locali o partner utilizzando i connettori, i messaggi vengono accodati in Microsoft 365. Esempi comuni che causano questa condizione sono:
+Quando non è possibile inviare messaggi dall'organizzazione ai server di posta elettronica locali o partner tramite connettori, i messaggi vengono accodati in Microsoft 365. Esempi comuni che causano questa condizione sono:
 
 - Il connettore non è configurato correttamente.
-- Sono state apportate modifiche alla rete o al firewall nell'ambiente locale.
+- Nell'ambiente locale sono state apportate modifiche alla rete o al firewall.
 
-Microsoft 365 continuerà a riprovare al recapito per 24 ore. Dopo 24 ore, i messaggi scadranno e verranno restituiti ai mittenti nei rapporti di mancato recapito (noti anche come NDR o messaggi di rimbalzo).
+Microsoft 365 continuerà a ripetere il recapito per 24 ore. Dopo 24 ore, i messaggi scadranno e verranno restituiti ai mittenti nei rapporti di mancato recapito (noti anche come rapporti di mancato recapito o notifiche di mancato recapito).
 
-Se il volume della posta in coda supera la soglia predefinita (il valore predefinito è 200 messaggi), le informazioni sono disponibili nelle posizioni seguenti:
+Se il volume di posta elettronica in coda supera la soglia predefinita (il valore predefinito è 200 messaggi), le informazioni sono disponibili nei percorsi seguenti:
 
-- Le **Code** Insight nel dashboard del [flusso di posta elettronica](mail-flow-insights-v2.md) nel [Centro sicurezza & Compliance](https://protection.office.com). Per ulteriori informazioni, vedere le [Code Insight nella sezione Dashboard del flusso di posta](#queues-insight-in-the-mail-flow-dashboard) in questo articolo.
+- Informazioni **dettagliate sulle** code nel [dashboard del flusso di](mail-flow-insights-v2.md) posta nel Centro sicurezza [& conformità.](https://protection.office.com) Per ulteriori informazioni, vedere le informazioni [dettagliate sulle code nella sezione Dashboard del flusso di posta](#queues-insight-in-the-mail-flow-dashboard) in questo articolo.
 
-- Viene visualizzato un avviso in **avvisi recenti** il dashboard avvisi nel [Centro sicurezza & conformità](https://protection.office.com) (Dashboard **avvisi** \>  o <https://protection.office.com/alertsdashboard> ).
+- Un avviso viene visualizzato in Avvisi recenti **nel** dashboard avvisi nel Centro [sicurezza & conformità](https://protection.office.com) ( Dashboard **degli** avvisi \>  o <https://protection.office.com/alertsdashboard> ).
 
-  ![Avvisi recenti nel dashboard avvisi nel centro sicurezza & Compliance](../../media/mfi-queued-messages-alert.png)
+  ![Avvisi recenti nel dashboard avvisi nel Centro sicurezza & conformità](../../media/mfi-queued-messages-alert.png)
 
-- Gli amministratori riceveranno una notifica tramite posta elettronica in base alla configurazione del criterio di avviso predefinito denominato **messaggi che sono stati posticipati**. Per configurare le impostazioni di notifica per questo avviso, vedere la sezione successiva.
+- Gli amministratori riceveranno una notifica tramite posta elettronica in base alla configurazione del criterio di avviso predefinito **denominato Messaggi ritardati.** Per configurare le impostazioni di notifica per questo avviso, vedi la sezione successiva.
 
-  Per ulteriori informazioni sui criteri di avviso, vedere [criteri di avviso nel centro sicurezza & conformità](../../compliance/alert-policies.md).
+  Per ulteriori informazioni sui criteri di avviso, vedere Criteri di avviso [nel Centro sicurezza & conformità.](../../compliance/alert-policies.md)
 
 ## <a name="customize-queue-alerts"></a>Personalizzare gli avvisi delle code
 
-1. Nel [Centro sicurezza & conformità](https://protection.office.com), accedere a criteri  di \> **avviso** avvisi o Apri <https://protection.office.com/alertpolicies> .
+1. Nel Centro [sicurezza & conformità](https://protection.office.com)passare a Criteri **avvisi** o \>  aprire <https://protection.office.com/alertpolicies> .
 
-2. Nella pagina **criteri di avviso** individuare e selezionare i criteri denominati **messaggi sono stati posticipati**.
+2. Nella pagina **Criteri di** avviso individuare e selezionare il criterio denominato **Messaggi ritardati.**
 
-3. Nel riquadro a comparsa **ritardato** che si apre, è possibile abilitare o disabilitare l'avviso e configurare le impostazioni di notifica.
+3. Nel **riquadro a comparsa Messaggio ritardato** che si apre, puoi attivare o disattivare l'avviso e configurare le impostazioni di notifica.
 
-   ![I messaggi sono stati ritardati dettagli dei criteri di avviso il Centro sicurezza & Compliance](../../media/mfi-queued-messages-alert-policy.png)
+   ![I messaggi sono stati ritardati nei dettagli dei criteri di avviso nel Centro sicurezza & conformità](../../media/mfi-queued-messages-alert-policy.png)
 
-   - **Stato**: è possibile attivare o disattivare l'avviso.
+   - **Stato:** è possibile attivare o disattivare l'avviso.
 
-   - **Destinatari della posta elettronica** e **limite di notifica giornaliero**: fare clic su **modifica** per configurare le impostazioni seguenti:
+   - **Destinatari di posta elettronica** **e limite di notifica giornaliero**: fare clic **su Modifica** per configurare le impostazioni seguenti:
 
-4. Per configurare le impostazioni di notifica, fare clic su **modifica**. Nel riquadro a comparsa dei **criteri di modifica** che viene visualizzato, configurare le seguenti impostazioni:
+4. Per configurare le impostazioni di notifica, fare clic su **Modifica.** Nel riquadro **a comparsa** Modifica criterio visualizzato configurare le impostazioni seguenti:
 
-   - **Invia notifiche tramite posta elettronica**: il valore predefinito è attivato.
-   - **Destinatari della posta elettronica**: il valore predefinito è **TenantAdmins**.
-   - **Limite di notifica giornaliero**: il valore predefinito è **Nessun limite**.
+   - **Inviare notifiche tramite posta** elettronica : il valore predefinito è on.
+   - **Destinatari di posta** elettronica: il valore predefinito è **TenantAdmins.**
+   - **Limite di notifica giornaliero**: il valore predefinito è **No limit.**
    - **Soglia**: il valore predefinito è 200.
 
-   ![Le impostazioni di notifica nei messaggi sono state ritardate dettagli dei criteri di avviso il Centro sicurezza & conformità](../../media/mfi-queued-messages-alert-policy-notification-settings.png)
+   ![Le impostazioni di notifica nei messaggi sono state ritardate nei dettagli dei criteri di avviso nel Centro sicurezza & conformità](../../media/mfi-queued-messages-alert-policy-notification-settings.png)
 
-5. Al termine, fare clic su **Salva** e **Chiudi**.
+5. Al termine, fare clic su **Salva** e **chiudi.**
 
-## <a name="queues-insight-in-the-mail-flow-dashboard"></a>Insight nelle code nel dashboard del flusso di posta
+## <a name="queues-insight-in-the-mail-flow-dashboard"></a>Informazioni dettagliate sulle code nel dashboard del flusso di posta
 
-Anche se il volume del messaggio in coda non ha superato la soglia e ha generato un avviso, è comunque possibile utilizzare le **Code** Insight nel [Dashboard del flusso di posta](mail-flow-insights-v2.md) per visualizzare i messaggi accodati per più di un'ora e intervenire prima che il numero di messaggi in coda diventi troppo elevato.
+Anche se il volume dei messaggi in coda non ha superato la  soglia e ha generato un avviso, è comunque possibile utilizzare le informazioni dettagliate sulle code nel [dashboard](mail-flow-insights-v2.md) del flusso di posta per visualizzare i messaggi che sono stati accodati per più di un'ora ed eseguire un'azione prima che il numero di messaggi in coda diventi troppo grande.
 
-![Widget code nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance](../../media/mfi-queues-widget.png)
+![Widget Code nel dashboard del flusso di posta nel Centro sicurezza & conformità](../../media/mfi-queues-widget.png)
 
-Se si fa clic sul numero di messaggi sul widget, viene visualizzato un riquadro a comparsa in **coda dei messaggi** con le seguenti informazioni:
+Se si fa clic sul numero di messaggi nel widget, viene visualizzato un **riquadro** a comparsa Messaggi in coda con le informazioni seguenti:
 
 - **Numero di messaggi in coda**
-- **Nome connettore**: fare clic sul nome del connettore per gestire il connettore nell'interfaccia di amministrazione di Exchange (EAC).
+- **Nome connettore**: Fare clic sul nome del connettore per gestire il connettore nell'interfaccia di amministrazione di Exchange ( EAC).
 - **Ora di inizio coda**
 - **Messaggi meno recenti scaduti**
 - **Server di destinazione**
 - **Ultimo indirizzo IP**
 - **Ultimo errore**
-- **Come risolvere il** problema: sono disponibili problemi e soluzioni comuni. Se è disponibile un collegamento **Correggi ora** , fare clic su di esso per risolvere il problema. In caso contrario, fare clic su tutti i collegamenti disponibili per ulteriori informazioni sull'errore e le possibili soluzioni.
+- **Come risolvere il problema:** sono disponibili problemi comuni e soluzioni. If is a **Fix it now** link is available, click it to fix the problem. In caso contrario, fare clic sui collegamenti disponibili per ulteriori informazioni sull'errore e sulle possibili soluzioni.
 
-![Dettagli dopo aver fatto clic su informazioni sulle code nel dashboard del flusso di posta](../../media/mfi-queues-details.png)
+![Dettagli dopo aver fatto clic su Informazioni dettagliate sulle code nel dashboard del flusso di posta](../../media/mfi-queues-details.png)
 
-Lo stesso riquadro a comparsa visualizzato dopo aver fatto clic su **Visualizza coda** nei dettagli di un **messaggio è stato ritardato** .
+Lo stesso riquadro a comparsa viene visualizzato dopo aver fatto clic **su** Visualizza coda nei dettagli di un avviso Di messaggi **in** ritardo.
 
-![I messaggi sono stati ritardati dettagli dell'avviso nel centro sicurezza & conformità](../../media/mfi-queued-messages-alert-details.png)
+![I messaggi sono stati ritardati nei dettagli dell'avviso nel Centro sicurezza & conformità](../../media/mfi-queued-messages-alert-details.png)
 
 ## <a name="see-also"></a>Vedere anche
 
-Per informazioni su altre intuizioni nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+Per informazioni su altre informazioni dettagliate nel dashboard del flusso di posta, vedere Informazioni dettagliate sul flusso di posta [nel Centro sicurezza & conformità.](mail-flow-insights-v2.md)

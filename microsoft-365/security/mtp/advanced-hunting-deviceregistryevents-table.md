@@ -1,7 +1,7 @@
 ---
 title: Tabella DeviceRegistryEvents nello schema di ricerca avanzata
 description: Informazioni sugli eventi del Registro di sistema su cui è possibile eseguire query dalla tabella DeviceRegistryEvents dello schema di ricerca avanzata
-keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, protezione dalle minacce Microsoft, Microsoft 365, mtp, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, registryevents, Registro di sistema, DeviceRegistryEvents, chiave, sottochiave, valore
+keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, microsoft threat protection, Microsoft 365, mtp, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, registryevents, registro di sistema, DeviceRegistryEvents, chiave, sottochiave, valore
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 376e54fb4bf5f07a1c821ff436ddc8ec7dd25812
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 6bd0e4fe3173fa899b0b9c86d6f85d724b52be3a
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931111"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145008"
 ---
 # <a name="deviceregistryevents"></a>DeviceRegistryEvents
 
@@ -52,15 +52,19 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `RegistryValueType` | stringa | Tipo di dati, ad esempio binario o stringa, del valore del Registro di sistema a cui è stata applicata l'azione registrata |
 | `RegistryValueName` | stringa | Nome del valore del Registro di sistema a cui è stata applicata l'azione registrata |
 | `RegistryValueData` | stringa | Dati del valore del Registro di sistema a cui è stata applicata l'azione registrata |
+| `PreviousRegistryKey` | stringa | Chiave originale del Registro di sistema del valore del Registro di sistema prima della modifica |
 | `PreviousRegistryValueName` | stringa | Nome originale del valore del Registro di sistema prima della modifica |
 | `PreviousRegistryValueData` | stringa | Dati originali del valore del Registro di sistema prima della modifica |
 | `InitiatingProcessAccountDomain` | stringa | Dominio dell'account che ha eseguito il processo responsabile dell'evento |
 | `InitiatingProcessAccountName` | stringa | Nome utente dell'account che ha eseguito il processo responsabile dell'evento |
 | `InitiatingProcessAccountSid` | stringa | Identificatore di sicurezza (SID) dell'account che ha eseguito il processo responsabile dell'evento |
+| `InitiatingProcessAccountUpn` | stringa | Nome dell'entità utente (UPN) dell'account che ha eseguito il processo responsabile dell'evento |
+| `InitiatingProcessAccountObjectId` | stringa | ID oggetto di Azure AD dell'account utente che ha eseguito il processo responsabile dell'evento |
 | `InitiatingProcessSHA1` | stringa | SHA-1 del processo (file immagine) che ha avviato l'evento |
-| `InitiatingProcessSHA256` | stringa | SHA-256 del processo (file immagine) che ha avviato l'evento. (questo campo in genere non viene popolato: usare la colonna SHA1, se disponibile). |
+| `InitiatingProcessSHA256` | stringa | SHA-256 del processo (file di immagine) che ha avviato l'evento. (questo campo in genere non viene popolato: usare la colonna SHA1, se disponibile). |
 | `InitiatingProcessMD5` | stringa | Hash MD5 del processo (file immagine) che ha avviato l'evento |
 | `InitiatingProcessFileName` | stringa | Nome del processo che ha avviato l'evento |
+| `InitiatingProcessFileSize` | long | Dimensioni del file che ha eseguito il processo responsabile dell'evento |
 | `InitiatingProcessId` | int | ID processo (PID) del processo che ha avviato l'evento |
 | `InitiatingProcessCommandLine` | stringa | Riga di comando utilizzata per eseguire il processo che ha avviato l'evento |
 | `InitiatingProcessCreationTime` | datetime | Data e ora di inizio del processo che ha avviato l'evento |

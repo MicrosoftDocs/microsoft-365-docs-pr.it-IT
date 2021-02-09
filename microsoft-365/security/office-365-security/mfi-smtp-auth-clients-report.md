@@ -1,5 +1,5 @@
 ---
-title: Insight e report dei client auth SMTP nel dashboard del flusso di posta
+title: Informazioni dettagliate e report dei client di autenticazione SMTP nel dashboard del flusso di posta
 f1.keywords:
 - NOCSH
 ms.author: siosulli
@@ -11,84 +11,88 @@ localization_priority: Normal
 ms.assetid: ''
 ms.custom:
 - seo-marvel-apr2020
-description: Gli amministratori possono imparare a usare l'Insight e il report SMTP AUTH nel dashboard del flusso di posta elettronica nel centro sicurezza & conformità per monitorare i mittenti di posta elettronica nell'organizzazione che utilizzano SMTP autenticato (AUTH) per inviare messaggi di posta elettronica.
+description: Gli amministratori possono imparare a usare le informazioni dettagliate e il report di autenticazione SMTP nel dashboard del flusso di posta nel Centro sicurezza & conformità per monitorare i mittenti di posta elettronica nell'organizzazione che utilizzano SMTP autenticato (SMTP AUTH) per inviare messaggi di posta elettronica.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: afceb767f6ebfeed96deb6362e05bb088b548c3d
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 3476ee2f9388245fb105a0910fa7b7d11ec3aeee
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029163"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150244"
 ---
-# <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>Insight e report dei client auth SMTP nel centro sicurezza & Compliance
+# <a name="smtp-auth-clients-insight-and-report-in-the-security--compliance-center"></a>Informazioni dettagliate e report dei client di autenticazione SMTP nel Centro sicurezza & conformità
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Si applica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-I **client auth SMTP** Insight nel [Dashboard del flusso di posta](mail-flow-insights-v2.md) e nel [report dei client auth smtp](#smtp-auth-clients-report) associati nel [Centro sicurezza & Compliance](https://protection.office.com) evidenziano l'utilizzo del protocollo di invio client auth SMTP da parte degli utenti o degli account di sistema nell'organizzazione. Questo protocollo legacy (che utilizza l'endpoint smtp.office365.com) offre solo l'autenticazione di base ed è suscettibile di essere utilizzato dagli account compromessi per inviare messaggi di posta elettronica. Insight and report consentono di verificare l'utilizzo di attività inusuali per invii di posta elettronica SMTP AUTH. Vengono inoltre visualizzati i dati di utilizzo di TLS per client o dispositivi che utilizzano l'autenticazione SMTP.
+Le informazioni dettagliate sui client di autenticazione **SMTP** nel [dashboard](mail-flow-insights-v2.md) del flusso di posta e nel report dei client di autenticazione [SMTP](#smtp-auth-clients-report) associati nel Centro sicurezza [&](https://protection.office.com) conformità evidenziano l'uso del protocollo di invio al client SMTP AUTH da parte degli utenti o degli account di sistema nell'organizzazione. Questo protocollo legacy (che usa l'endpoint smtp.office365.com) offre solo l'autenticazione di base ed è soggetto all'uso da parte di account compromessi per inviare posta elettronica. Le informazioni dettagliate e il report consentono di verificare la presenza di attività insolite per gli invii di posta elettronica SMTP AUTH. Vengono inoltre mostrati i dati sull'utilizzo di TLS per client o dispositivi che utilizzano SMTP AUTH.
 
-Il widget indica il numero di utenti o di account di servizio che hanno utilizzato il protocollo di autenticazione SMTP negli ultimi 7 giorni.
+Il widget indica il numero di utenti o account di servizio che hanno utilizzato il protocollo di autenticazione SMTP negli ultimi 7 giorni.
 
-![Widget dei client auth SMTP nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance](../../media/mfi-smtp-auth-clients-report-widget.png)
+![Widget Client di autenticazione SMTP nel dashboard del flusso di posta nel Centro sicurezza & conformità](../../media/mfi-smtp-auth-clients-report-widget.png)
 
-Se si fa clic sul numero di messaggi sul widget, viene visualizzato un riquadro a comparsa dei **client auth SMTP** . Il riquadro a comparsa fornisce una visualizzazione aggregata dell'utilizzo e dei volumi TLS per l'ultima settimana.
+Se si fa clic sul numero di messaggi nel widget, viene visualizzato un riquadro a comparsa **client di autenticazione SMTP.** Il riquadro a comparsa offre una visualizzazione aggregata dell'utilizzo di TLS e dei volumi dell'ultima settimana.
 
-![Riquadro a comparsa dettagli dopo aver fatto clic sul widget client auth SMTP nel dashboard del flusso di posta](../../media/mfi-smtp-auth-clients-report-details.png)
+![Riquadro a comparsa Dettagli dopo aver fatto clic sul widget Client di autenticazione SMTP nel dashboard del flusso di posta](../../media/mfi-smtp-auth-clients-report-details.png)
 
-È possibile fare clic sul collegamento **rapporto client auth SMTP** per accedere al report client auth SMTP come descritto nella sezione successiva.
+È possibile fare clic sul collegamento al rapporto dei client di autenticazione **SMTP** per passare al report dei client di autenticazione SMTP, come descritto nella sezione successiva.
 
 ## <a name="smtp-auth-clients-report"></a>Report sui client di autenticazione SMTP
 
-### <a name="report-view-for-the-smtp-auth-clients-report"></a>Visualizzazione report per il rapporto client auth SMTP
+### <a name="report-view-for-the-smtp-auth-clients-report"></a>Visualizzazione rapporto per il report dei client di autenticazione SMTP
 
-Per impostazione predefinita, il report Visualizza i dati per gli ultimi 7 giorni, ma i dati sono disponibili per gli ultimi 90 giorni.
+Per impostazione predefinita, il report mostra i dati degli ultimi 7 giorni, ma i dati sono disponibili per gli ultimi 90 giorni.
 
-La sezione Panoramica contiene i grafici seguenti:
+La sezione panoramica contiene i grafici seguenti:
 
-- **Visualizzazione dei dati per: volume di invio**: per impostazione predefinita, il grafico mostra il numero di messaggi client di autenticazione SMTP inviati da tutti i domini (**Mostra dati per: tutti i domini mittente** è selezionata per impostazione predefinita). È possibile filtrare i risultati in uno specifico dominio del mittente facendo clic su **Mostra dati per** e selezionando il dominio del mittente dall'elenco a discesa. Se si posiziona il puntatore del mouse su un punto dati specifico (giorno), viene visualizzato il numero di messaggi.
+- **Visualizzare i dati per:** Volume di invio: per impostazione predefinita, il grafico mostra il numero di messaggi del client di autenticazione SMTP inviati da tutti i domini ( Mostra dati **per:** Tutti i domini mittente è selezionato per impostazione predefinita). È possibile filtrare i risultati in un dominio del mittente specifico facendo clic su Mostra dati **per** e selezionando il dominio del mittente nell'elenco a discesa. Se si passa il mouse su un punto dati specifico (giorno), viene visualizzato il numero di messaggi.
 
-  ![Invio della visualizzazione volume nel rapporto client auth SMTP nel centro sicurezza & Compliance](../../media/mfi-smtp-auth-clients-report-sending-volume-view.png)
+  ![Invio della visualizzazione volume nel report dei client di autenticazione SMTP nel Centro sicurezza & conformità](../../media/mfi-smtp-auth-clients-report-sending-volume-view.png)
 
-- **Visualizzare i dati in base a: utilizzo TLS**: il grafico mostra la percentuale di utilizzo di TLS per tutti i messaggi client auth SMTP durante il periodo di tempo selezionato. Questo grafico consente di identificare ed eseguire azioni su utenti e account di sistema che continuano a utilizzare versioni precedenti di TLS.
+- **Visualizzare i dati in base a:** Utilizzo TLS : il grafico mostra la percentuale di utilizzo di TLS per tutti i messaggi del client di autenticazione SMTP durante il periodo di tempo selezionato. Questo grafico consente di identificare ed eseguire azioni su utenti e account di sistema che usano ancora versioni precedenti di TLS.
 
-  ![Visualizzazione utilizzo TLS nel rapporto client auth SMTP nel centro sicurezza & Compliance](../../media/mfi-smtp-auth-clients-report-tls-usage-view.png)
+  ![Visualizzazione utilizzo TLS nel report dei client di autenticazione SMTP nel Centro sicurezza & conformità](../../media/mfi-smtp-auth-clients-report-tls-usage-view.png)
 
-Se si fa clic su **filtri** in una visualizzazione report, è possibile specificare un intervallo di date con data di **inizio** e **Data di fine**.
+Se si fa **clic su Filtri** in una visualizzazione report, è possibile specificare un intervallo di date con Data di inizio **e** Data **di fine.**
 
-Fare clic su **Richiedi report** per ricevere una versione più dettagliata del report in un messaggio di posta elettronica. È possibile specificare l'intervallo di date e i destinatari per la ricezione del report.
+Fare **clic su Richiedi rapporto** per ricevere una versione più dettagliata del rapporto in un messaggio di posta elettronica. È possibile specificare l'intervallo di date e i destinatari per ricevere il rapporto.
 
-### <a name="details-table-view-for-the-smtp-auth-clients-report"></a>Visualizzazione tabella dettagli per il rapporto client auth SMTP
+### <a name="details-table-view-for-the-smtp-auth-clients-report"></a>Visualizzazione della tabella dei dettagli per il report dei client di autenticazione SMTP
 
-Se si fa clic su **Visualizza tabella dettagli**, le informazioni visualizzate dipendono dal grafico che si sta esaminando:
+Se si **fa clic su Visualizza tabella dettagli,** le informazioni visualizzate dipendono dal grafico visualizzato:
 
-- **Visualizzare i dati in base a: volume di invio**: le informazioni seguenti sono visualizzate in una tabella:
+- **Visualizzare i dati in base a: Volume** di invio: in una tabella vengono visualizzate le informazioni seguenti:
 
   - **Indirizzo del mittente**
-  - **Numero di messaggi**
+  - **Numero messaggi**
 
   Se si seleziona una riga, gli stessi dettagli vengono visualizzati in un riquadro a comparsa.
 
-- **Visualizzare i dati in base a: utilizzo di TLS**: le informazioni seguenti sono visualizzate in una tabella:
+- **Visualizzare i dati in base a: Utilizzo TLS**: in una tabella vengono visualizzate le informazioni seguenti:
 
   - **Indirizzo del mittente**
-  - **TLS 1.0%**<sup>\*</sup>
-  - **TLS 1.1%**<sup>\*</sup>
-  - **TLS 1.2%**<sup>\*</sup>
-  - **Numero di messaggi**
+  - **TLS1.0%**<sup>\*</sup>
+  - **TLS1.1%**<sup>\*</sup>
+  - **TLS1.2%**<sup>\*</sup>
+  - **Numero messaggi**
 
-  <sup>\*</sup> In questa colonna sono riportati sia la percentuale che il numero di messaggi provenienti dal mittente.
+  <sup>\*</sup> Questa colonna mostra sia la percentuale che il numero di messaggi provenienti dal mittente.
 
-Se si fa clic su **filtri** in una visualizzazione tabella dettagli, è possibile specificare un intervallo di date con data di **inizio** e **Data di fine**.
+Se si fa **clic su Filtri** in una visualizzazione tabella dei dettagli, è possibile specificare un intervallo di date con Data di inizio **e** Data **di fine.**
 
-Se si seleziona una riga, i dettagli simili vengono visualizzati in un riquadro a comparsa:
+Se si seleziona una riga, dettagli simili vengono visualizzati in un riquadro a comparsa:
 
-![Riquadro a comparsa dettagli dalla tabella dei dettagli della visualizzazione utilizzo TLS nel rapporto client auth SMTP](../../media/mfi-smtp-auth-clients-report-tls-usage-view-view-details-table-details.png)
+![Riquadro a comparsa Dettagli dalla tabella dei dettagli della visualizzazione di utilizzo tls nel report dei client di autenticazione SMTP](../../media/mfi-smtp-auth-clients-report-tls-usage-view-view-details-table-details.png)
 
-Fare clic su **Richiedi report** per ricevere una versione più dettagliata del report in un messaggio di posta elettronica. È possibile specificare l'intervallo di date e i destinatari per la ricezione del report.
+Fare **clic su Richiedi rapporto** per ricevere una versione più dettagliata del rapporto in un messaggio di posta elettronica. È possibile specificare l'intervallo di date e i destinatari per ricevere il rapporto.
 
-Per tornare alla visualizzazione report, fare clic su **Visualizza report**.
+Per tornare alla visualizzazione report, fare clic su **Visualizza report.**
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-Per informazioni su altre intuizioni nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+Per informazioni su altre informazioni dettagliate nel dashboard del flusso di posta, vedere Informazioni dettagliate sul flusso di posta [nel Centro sicurezza & conformità.](mail-flow-insights-v2.md)

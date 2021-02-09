@@ -1,5 +1,5 @@
 ---
-title: Configurare Gli argomenti di Microsoft Viva
+title: Configurare Microsoft Viva Topics
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Informazioni su come configurare Gli argomenti di Microsoft Viva
-ms.openlocfilehash: e8cfe1d849ba5df903f377fd001a8d067f80b608
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 6bd0d3eca653ae44e46b410ef3ac55fe11629a6b
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107923"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150501"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Configurare Gli argomenti di Microsoft Viva
 
@@ -23,7 +23,7 @@ ms.locfileid: "50107923"
 
 È importante pianificare il modo migliore per impostare e configurare gli argomenti nell'ambiente. Leggere gli argomenti [relativi alla pianificazione per Microsoft Viva prima](plan-topic-experiences.md) di iniziare le procedure descritte in questo articolo.
 
-È necessario essere un amministratore globale o un amministratore di SharePoint per accedere all'interfaccia di amministrazione di Microsoft 365 e configurare gli argomenti.
+È necessario essere [iscritti ad Argomenti Viva](https://www.microsoft.com/microsoft-viva/topics) ed essere un amministratore globale o un amministratore di SharePoint per accedere all'interfaccia di amministrazione di Microsoft 365 e configurare Gli argomenti.
 
 ## <a name="video-demonstration"></a>Dimostrazione video
 
@@ -35,20 +35,20 @@ Questo video mostra il processo di configurazione degli argomenti in Microsoft 3
 
 <br>
 
-## <a name="set-up-topics"></a>Configurare gli argomenti
+## <a name="set-up-topics"></a>Configurare Argomenti
 
 Per configurare gli argomenti
 
-1. [Nell'interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com)selezionare **Installazione** e quindi visualizzare la sezione **File e** contenuto.
+1. Nell'interfaccia di amministrazione di [Microsoft 365](https://admin.microsoft.com)selezionare **Installazione** e quindi visualizzare la **sezione File e** contenuto.
 2. Nella sezione **File e contenuto** fare clic su Connetti utenti alla **conoscenza.**
 
     ![Connettere le persone alle conoscenze](../media/admin-org-knowledge-options.png) 
 
 3. Nella pagina **Connetti utenti alla knowledge** base fare clic su Introduzione per illustrare il processo di configurazione. 
 
-    ![Informazioni di base](../media/k-get-started.png) 
+    ![Per iniziare](../media/k-get-started.png) 
 
-4. Nella pagina **Scegliere in che modo Viva Topics può trovare gli** argomenti, è necessario configurare l'individuazione degli argomenti. Nella sezione **Selezionare le origini degli argomenti di SharePoint** selezionare i siti di SharePoint che verranno sottoposti a ricerca per indicizzazione come origini per gli argomenti durante l'individuazione. Scegli tra:
+4. Nella pagina **Scegliere in che modo Viva Topics può trovare gli** argomenti, è necessario configurare l'individuazione degli argomenti. Nella sezione **Selezione origini argomenti di SharePoint** selezionare quali siti di SharePoint verranno sottoposti a ricerca per indicizzazione come origini per gli argomenti durante l'individuazione. Scegli tra:
     - **Tutti i siti:** tutti i siti di SharePoint nell'organizzazione. Sono inclusi i siti correnti e futuri.
     - **Tutti, ad eccezione dei siti** selezionati: digitare i nomi dei siti che si desidera escludere.  Puoi anche caricare un elenco di siti che vuoi rifiutare esplicitamente dall'individuazione. I siti creati in futuro verranno inclusi come origini per l'individuazione degli argomenti. 
     - **Solo siti selezionati:** digitare i nomi dei siti che si desidera includere. È inoltre possibile caricare un elenco di siti. I siti creati in futuro non verranno inclusi come origini per l'individuazione degli argomenti.
@@ -74,7 +74,7 @@ Per configurare gli argomenti
 
     - **Nome**: digitare il nome dell'argomento che si desidera escludere. Questa operazione può essere eseguita in due modi:
         - Corrispondenza esatta: è possibile includere il nome esatto o l'acronimo (ad esempio, *Contoso* o *ATL).*
-        - Corrispondenza parziale: è possibile escludere tutti gli argomenti che includono una parola specifica.  Ad esempio, *l'arco* escluderà tutti gli argomenti con la parola arco *al* suo interno, ad esempio arco *circolare,* saldatura arco *di plasma* o arco *di formazione.* Si noti che non verranno esclusi gli argomenti in cui il testo è incluso come parte di una parola, ad esempio *Architecture.*
+        - Corrispondenza parziale: è possibile escludere tutti gli argomenti che includono una parola specifica.  Ad esempio, *l'arco* escluderà tutti gli argomenti con la parola arco *al* suo interno, ad esempio cerchio ad *arco,* saldatura ad arco *di plasma* o arco *di formazione.* Si noti che non verranno esclusi gli argomenti in cui il testo è incluso come parte di una parola, ad esempio *Architecture.*
     - **Acronimo (facoltativo):** se si desidera escludere un acronimo, digitare le parole che l'acronimo sta per.
     - **MatchType-Exact/Partial:** specificare se il nome immesso è un *tipo* di corrispondenza esatto *o* parziale.
 
@@ -121,7 +121,7 @@ Per configurare gli argomenti
 
     ![Impostazioni applicate](../media/ksetup7.png)    
 
-## <a name="assign-licenses"></a>Assegnare le licenze
+## <a name="assign-licenses"></a>Assegnazione delle licenze
 
 Dopo aver configurato le esperienze per gli argomenti, è necessario assegnare licenze agli utenti che utilizzano gli argomenti. Solo gli utenti con una licenza possono visualizzare informazioni sugli argomenti, tra cui evidenziazioni, schede argomento, pagine degli argomenti e il Centro argomenti. 
 
@@ -131,7 +131,7 @@ Per assegnare le licenze:
 
 2. Seleziona gli utenti di cui vuoi ottenere la licenza e fai clic **su Licenze e app.**
 
-3. In **App** verificare che sia selezionata **l'opzione Cerca** connettori grafico con indice e Argomenti **viva.**
+3. In **App,** verificare che sia selezionata **l'opzione** Cerca nei connettori grafici con esperienze indice **ed** argomento.
 
 4. Fare clic su **Salva modifiche**.
 

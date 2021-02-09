@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 4cd23b8f3ba99b38264b9bf1ba18e8ec2574bab6
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: cf4204767843b9a9e0b0bbfecc2d3fc50db531fc
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931063"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145452"
 ---
 # <a name="devicetvmsecureconfigurationassessmentkb"></a>DeviceTvmSecureConfigurationAssessmentKB
 
@@ -51,8 +51,8 @@ Per informazioni sulle altre tabelle nello schema per Ricerca avanzata vedere [l
 | `ConfigurationCategory` | stringa | Categoria o raggruppamento a cui appartiene la configurazione: Applicazione, Sistema operativo, Rete, Account, Controlli di sicurezza|
 | `ConfigurationSubcategory` | stringa |Sottocategoria o sottoraggruppamento a cui appartiene la configurazione. In molti casi qui vengono descritte capacità o funzionalità specifiche. |
 | `ConfigurationBenchmarks` | stringa | Elenco dei parametri del settore che consigliano una configurazione identica o simile |
-| `RelatedMitreTechniques` | stringa | Elenco delle tecniche del framework Mitre ATT&CK framework correlate alla configurazione |
-| `RelatedMitreTactics ` | stringa | Elenco delle tattiche del framework Mitre ATT&CK framework correlate alla configurazione |
+| `Tags` | stringa | Etichette che rappresentano vari attributi utilizzati per identificare o classificare una configurazione di sicurezza |
+| `RemediationOptions` | stringa | Azioni consigliate per ridurre o risolvere eventuali rischi associati |
 
 ## <a name="related-topics"></a>Argomenti correlati
 

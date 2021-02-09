@@ -1,7 +1,7 @@
 ---
 title: Tabella AppFileEvents nello schema di ricerca avanzata
 description: Informazioni sugli eventi correlati ai file associati alle app e ai servizi cloud nella tabella AppFileEvents dello schema di ricerca avanzata
-keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, microsoft threat protection, Microsoft 365, mtp, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, AppFileEvents, Cloud App Security, MCAS
+keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, microsoft threat protection, microsoft 365, mtp, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, AppFileEvents, Cloud App Security, MCAS
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 59e9affc53398f2a1b06fbab9774e4b53e146425
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 8406d1f9e3d56555b1699d191933c6f9735c9574
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932875"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145488"
 ---
 # <a name="appfileevents"></a>AppFileEvents
 
@@ -54,6 +54,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `Protocol` | stringa | Protocollo di rete utilizzato |
 | `AccountName` | stringa | Nome utente dell'account |
 | `AccountDomain` | stringa | Dominio dell'account |
+| `AccountSid` | stringa | Identificatore di sicurezza (SID) dell'account |
 | `AccountUpn` | stringa | Nome dell'entità utente (UPN) dell'account |
 | `AccountObjectId` | stringa | Identificatore univoco per l'account in Azure AD |
 | `AccountDisplayName` | stringa | Nome dell'utente dell'account visualizzato nella rubrica. In genere una combinazione di un nome o di un dato nome, un'iniziazione intermedia e un cognome o un cognome. |
@@ -61,8 +62,10 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `DeviceType` | stringa | Tipo di dispositivo | 
 | `OSPlatform` | stringa | Piattaforma del sistema operativo in esecuzione nel dispositivo. Ciò indica specifici sistemi operativi, incluse variazioni all'interno della stessa famiglia di prodotti, come Windows 10 e Windows 7. |
 | `IPAddress` | stringa | Indirizzo IP assegnato all'endpoint e utilizzato durante le comunicazioni di rete correlate |
+| `Port` | stringa | Porta TCP utilizzata durante la comunicazione  |
 | `DestinationDeviceName` | stringa | Nome del dispositivo che esegue l'applicazione server che ha elaborato l'azione registrata |
 | `DestinationIPAddress` | stringa | Indirizzo IP del dispositivo che esegue l'applicazione server che ha elaborato l'azione registrata |
+| `DestinationPort` | stringa | Porta di destinazione delle comunicazioni di rete correlate |
 | `Location` | stringa | Città, paese o altra posizione geografica associata all'evento |
 | `Isp` | stringa | Provider di servizi Internet (ISP) associato all'indirizzo IP dell'endpoint |
 | `ReportId` | long | Identificatore univoco dell'evento |

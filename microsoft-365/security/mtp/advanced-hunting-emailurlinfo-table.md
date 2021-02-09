@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 56d35e2812d895215cbe76deb6791695380abc50
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 76a2389eace73ee9d21962c8c618e0dac9994de0
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929719"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145464"
 ---
 # <a name="emailurlinfo"></a>EmailUrlInfo
 
@@ -35,16 +35,17 @@ ms.locfileid: "49929719"
 **Si applica a:**
 - Microsoft 365 Defender
 
-La tabella nello schema di ricerca avanzata contiene informazioni sugli URL nei messaggi di posta elettronica e negli allegati elaborati `EmailUrlInfo` da Microsoft Defender per Office 365. [](advanced-hunting-overview.md) Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
+La tabella nello schema di ricerca avanzata contiene informazioni sugli URL nei messaggi di posta elettronica e negli allegati elaborati `EmailUrlInfo` da Microsoft Defender per Office 365. [](advanced-hunting-overview.md) Usare questo riferimento per creare query che restituiscono informazioni dalla tabella. 
 
 Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il riferimento sulla Ricerca avanzata](advanced-hunting-schema-tables.md).
 
 | Nome colonna | Tipo di dati | Descrizione |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Data e ora di registrazione dell'evento |
-| `UrlId` | stringa | Identificatore univoco per l'URL nell'oggetto, nel corpo o nell'allegato del messaggio di posta elettronica |
 | `NetworkMessageId` | stringa | Identificatore univoco del messaggio di posta elettronica, generato da Microsoft 365 |
 | `Url` | stringa | URL completo nell'oggetto, nel corpo o nell'allegato del messaggio di posta elettronica |
+| `UrlDomain` | stringa | Nome di dominio o nome host dell'URL |
+| `ReportId` | long | Identificatore di evento basato su un contatore ripetuto. Per identificare eventi univoci, questa colonna deve essere usata insieme alle colonne DeviceName e Timestamp |
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)

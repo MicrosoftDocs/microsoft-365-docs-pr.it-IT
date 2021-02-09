@@ -1,5 +1,5 @@
 ---
-title: Introduzione a Microsoft 365 for business
+title: Introduzione a Microsoft 365 per le aziende
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -22,30 +22,29 @@ search.appverid:
 - MOE150
 - GEA150
 ms.assetid: d6466f0d-5d13-464a-adcb-00906ae87029
-description: Informazioni su come configurare e utilizzare Microsoft 365 nel computer, nel telefono e nel tablet.
-ms.openlocfilehash: d3909cdabd0c4f95c44ab5afaf7dba7244bf6eeb
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+description: Informazioni su come configurare e usare Microsoft 365 su computer, telefono e tablet.
+ms.openlocfilehash: 437e644190017a0031d7c91d239f5b4f0a8d3773
+ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780530"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50142074"
 ---
 # <a name="get-started"></a>Per iniziare
 
-L'organizzazione ha recentemente ottenuto Microsoft 365 e ora è necessario utilizzarla per iniziare a leggere messaggi di posta elettronica, condividere documenti e altro ancora. Informazioni su come configurare e utilizzare Microsoft 365 nel computer, nel telefono e nel tablet.
+L'organizzazione ha recentemente ottenuto Microsoft 365 e ora è necessario usarlo per iniziare a leggere la posta elettronica, condividere documenti e altro ancora. Informazioni su come configurare e usare Microsoft 365 su computer, telefono e tablet.
   
 ::: moniker range="o365-worldwide"
 
 ****
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/7dbafb22-263b-4544-9774-508728c6e01b?autoplay=false]
-  
+
 ::: moniker-end
 
 ## <a name="training-resources-for-your-users"></a>Risorse di formazione per gli utenti
 
 
-- [Avvio rapido dei dipendenti](https://support.microsoft.com/office/b9700090-ce64-4046-ab92-ce8488a7bc0f)
+- [Guida introduttiva dei dipendenti](https://support.microsoft.com/office/b9700090-ce64-4046-ab92-ce8488a7bc0f)
     
 - [Area risorse di Office](https://support.microsoft.com/office/b8f02f81-ec85-4493-a39b-4c48e6bc4bfb)
     
@@ -57,15 +56,15 @@ L'organizzazione ha recentemente ottenuto Microsoft 365 e ora è necessario util
     
 ## <a name="training-resources-for-you-the-admin"></a>Risorse di formazione per gli amministratori
 
-Di seguito sono riportate alcune risorse utili per iniziare.
+Ecco alcune risorse utili per iniziare.
   
-- [Formazione per gli amministratori](https://docs.microsoft.com/microsoft-365/admin): ottenere collegamenti a classi gratuite online per gli amministratori.
+- [Formazione per gli amministratori:](https://docs.microsoft.com/microsoft-365/admin)ottieni i collegamenti alle classi online gratuite per gli amministratori.
     
-- [Guida](https://docs.microsoft.com/microsoft-365/admin/admin-home)per gli amministratori: ottenere informazioni sulle attività principali, Guida introduttiva agli strumenti di amministrazione e risoluzione dei problemi.
+- [Guida per gli](https://docs.microsoft.com/microsoft-365/admin/admin-home)amministratori: informazioni sulle attività principali, introduzione agli strumenti di amministrazione e risoluzione dei problemi.
     
-- [Supporto per i contatti-Guida](../contact-support-for-business-products.md) per gli amministratori: chiamateci, aprite una richiesta online o lasciate che la community sia d'aiuto. 
+- [Contattare il supporto - Guida per gli](../contact-support-for-business-products.md) amministratori: chiamaci, apri una richiesta online o consenti alla community di assistenza. 
     
 ## <a name="related-articles"></a>Articoli correlati
 
-[Configurare Microsoft 365 per le aziende-guida per gli amministratori](../setup/setup.md)
+[Configurare Microsoft 365 per le aziende - Guida per gli amministratori](../setup/setup.md)
 

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1df1295b3386b94e3737c53ac8226c719c8bfa08
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 87ac6194374e8e042cf9d00271b17dd8bb785d64
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929923"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145356"
 ---
 # <a name="identitylogonevents"></a>IdentityLogonEvents
 
@@ -35,21 +35,21 @@ ms.locfileid: "49929923"
 **Si applica a:**
 - Microsoft 365 Defender
 
-La tabella nello schema di ricerca avanzata contiene informazioni sulle attività di autenticazione effettuate tramite Active Directory locale acquisite da Microsoft Defender per le identità e le attività di autenticazione relative ai servizi online Microsoft acquisiti da `IdentityLogonEvents` Microsoft Cloud App Security. [](advanced-hunting-overview.md) Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
+La tabella nello schema di ricerca avanzata contiene informazioni sulle attività di autenticazione effettuate tramite Active Directory locale acquisite da Microsoft Defender per l'identità e le attività di autenticazione relative ai servizi online Microsoft acquisiti da `IdentityLogonEvents` Microsoft Cloud App Security. [](advanced-hunting-overview.md) Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
 
 >[!TIP]
 > Per informazioni dettagliate sui tipi di eventi (valori) supportati da una tabella, utilizzare il riferimento allo schema predefinito `ActionType` disponibile nel Centro sicurezza. [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
 
 >[!NOTE]
->Questa tabella illustra le attività di accesso di Azure Active Directory (AD) monitorate da Cloud App Security, in particolare le attività di autenticazione e accesso interattive con ActiveSync e altri protocolli legacy. Gli accessi non interattivi non disponibili in questa tabella possono essere visualizzati nel log di controllo di Azure AD. [Altre informazioni sulla connessione di Cloud App Security a Microsoft 365](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
+>Questa tabella illustra le attività di accesso di Azure Active Directory (AD) monitorate da Cloud App Security, in particolare le attività di accesso e autenticazione interattive con ActiveSync e altri protocolli legacy. Gli accessi non interattivi non disponibili in questa tabella possono essere visualizzati nel log di controllo di Azure AD. [Altre informazioni sulla connessione di Cloud App Security a Microsoft 365](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security)
 
 Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il riferimento sulla Ricerca avanzata](advanced-hunting-schema-tables.md).
 
 | Nome colonna | Tipo di dati | Descrizione |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Data e ora di registrazione dell'evento |
-| `ActionType` | stringa | Tipo di attività che ha attivato l'evento. Per informazioni [dettagliate, vedere le informazioni di riferimento](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) sullo schema nel portale |
-| `LogonType` | stringa | Tipo di sessione di accesso, in particolare:<br><br> - **Interattivo:** l'utente interagisce fisicamente con il computer usando la tastiera e lo schermo locali<br><br> - **Accessi remoti interattivi (RDP):** l'utente interagisce con il computer in remoto tramite Desktop remoto, Servizi terminal, Assistenza remota o altri client RDP<br><br> - **Rete:** sessione avviata quando si accede al computer tramite PsExec o quando si accede a risorse condivise nel computer, ad esempio stampanti e cartelle condivise.<br><br> - **Batch** - Sessione avviata da attività pianificate<br><br> - **Servizio** - Sessione avviata dai servizi all'avvio |
+| `ActionType` | stringa | Tipo di attività che ha attivato l'evento. Per informazioni [dettagliate, vedere la guida di riferimento](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) allo schema nel portale |
+| `LogonType` | stringa | Tipo di sessione di accesso, in particolare:<br><br> - **Interattivo:** l'utente interagisce fisicamente con il computer usando la tastiera e lo schermo locali<br><br> - **Accessi remoti interattivi (RDP):** l'utente interagisce con il computer in remoto tramite Desktop remoto, Servizi terminal, Assistenza remota o altri client RDP<br><br> - **Rete** : sessione avviata quando si accede al computer tramite PsExec o quando si accede a risorse condivise nel computer, ad esempio stampanti e cartelle condivise<br><br> - **Batch** - Sessione avviata da attività pianificate<br><br> - **Servizio** - Sessione avviata dai servizi all'avvio |
 | `Application` | stringa | Applicazione che ha eseguito l'azione registrata |
 | `Protocol` | stringa | Protocollo di rete utilizzato |
 | `FailureReason` | stringa | Informazioni che spiegano perché l'azione registrata non è riuscita |
@@ -58,13 +58,15 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `AccountUpn` | stringa | Nome dell'entità utente (UPN) dell'account |
 | `AccountSid` | stringa | Identificatore di sicurezza (SID) dell'account |
 | `AccountObjectId` | stringa | Identificatore univoco per l'account in Azure AD |
-| `AccountDisplayName` | stringa | Nome dell'utente dell'account visualizzato nella rubrica. In genere una combinazione di un nome o di un dato nome, un'iniziazione intermedia e un cognome o un cognome. |
+| `AccountDisplayName` | stringa | Nome dell'utente dell'account visualizzato nella rubrica. In genere, una combinazione di un nome o di un nome specificato, un'iniziazione intermedia e un cognome o un cognome. |
 | `DeviceName` | stringa | Nome di dominio completo (FQDN) del dispositivo |
 | `DeviceType` | stringa | Tipo di dispositivo |
 | `OSPlatform` | stringa | Piattaforma del sistema operativo in esecuzione sul computer. Ciò indica specifici sistemi operativi, incluse variazioni all'interno della stessa famiglia di prodotti, come Windows 10 e Windows 7. |
 | `IPAddress` | stringa | Indirizzo IP assegnato all'endpoint e utilizzato durante le comunicazioni di rete correlate |
+| `Port` | stringa | Porta TCP utilizzata durante la comunicazione |
 | `DestinationDeviceName` | stringa | Nome del dispositivo che esegue l'applicazione server che ha elaborato l'azione registrata |
 | `DestinationIPAddress` | stringa | Indirizzo IP del dispositivo che esegue l'applicazione server che ha elaborato l'azione registrata |
+| `DestinationPort` | stringa | Porta di destinazione delle comunicazioni di rete correlate |
 | `TargetDeviceName` | stringa | Nome di dominio completo (FQDN) del dispositivo a cui è stata applicata l'azione registrata |
 | `TargetAccountDisplayName` | stringa | Nome visualizzato dell'account a cui è stata applicata l'azione registrata |
 | `Location` | stringa | Città, paese o altra posizione geografica associata all'evento |

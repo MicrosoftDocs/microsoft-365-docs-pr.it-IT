@@ -1,7 +1,7 @@
 ---
 title: Tabella DeviceImageLoadEvents nello schema di ricerca avanzata
 description: Informazioni sugli eventi di caricamento dll nella tabella DeviceImageLoadEvents dello schema di ricerca avanzata
-keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, microsoft threat protection, microsoft 365, mtp, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, imageloadevents, DeviceImageLoadEvents, caricamento dll, libreria, immagine file
+keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, microsoft threat protection, Microsoft 365, mtp, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, imageloadevents, DeviceImageLoadEvents, caricamento dll, libreria, immagine file
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 924d465d90086bcfffe29660b7f281ff3d5b07aa
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: cbc57fcebe7d057599e7037e7795514c517f474d
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931291"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145350"
 ---
 # <a name="deviceimageloadevents"></a>DeviceImageLoadEvents
 
@@ -37,7 +37,7 @@ ms.locfileid: "49931291"
 
 
 
-La `DeviceImageLoadEvents` tabella nello schema di ricerca [avanzata](advanced-hunting-overview.md) contiene informazioni sugli eventi di caricamento delle DLL. Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
+La `DeviceImageLoadEvents` tabella nello schema di ricerca [avanzata](advanced-hunting-overview.md) contiene informazioni sugli eventi di caricamento della DLL. Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
 
 >[!TIP]
 > Per informazioni dettagliate sui tipi di eventi (valori) supportati da una tabella, utilizzare il riferimento allo schema predefinito `ActionType` disponibile nel Centro sicurezza. [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
@@ -49,7 +49,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `Timestamp` | datetime | Data e ora di registrazione dell'evento |
 | `DeviceId` | stringa | Identificatore univoco per il computer nel servizio |
 | `DeviceName` | stringa | Nome di dominio completo (FQDN) del computer |
-| `ActionType` | stringa | Tipo di attività che ha attivato l'evento. Per informazioni [dettagliate, vedere le informazioni di riferimento](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) sullo schema nel portale |
+| `ActionType` | stringa | Tipo di attività che ha attivato l'evento. Per informazioni [dettagliate, vedere la guida di riferimento](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) allo schema nel portale |
 | `FileName` | stringa | Nome del file a cui è stata applicata l'azione registrata |
 | `FolderPath` | stringa | Cartella contenente il file a cui è stata applicata l'azione registrata |
 | `SHA1` | stringa | SHA-1 del file a cui è stata applicata l'azione registrata |
@@ -58,10 +58,12 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `InitiatingProcessAccountDomain` | stringa | Dominio dell'account che ha eseguito il processo responsabile dell'evento |
 | `InitiatingProcessAccountName` | stringa | Nome utente dell'account che ha eseguito il processo responsabile dell'evento |
 | `InitiatingProcessAccountSid` | stringa | Identificatore di sicurezza (SID) dell'account che ha eseguito il processo responsabile dell'evento |
+| `InitiatingProcessAccountUpn` | stringa | Nome dell'entità utente (UPN) dell'account che ha eseguito il processo responsabile dell'evento |
+| `InitiatingProcessAccountObjectId` | stringa | ID oggetto di Azure AD dell'account utente che ha eseguito il processo responsabile dell'evento |
 | `InitiatingProcessIntegrityLevel` | stringa | Livello di integrità del processo che ha avviato l'evento. Windows assegna livelli di integrità ai processi in base a determinate caratteristiche, ad esempio se sono stati avviati da un download Internet. Questi livelli di integrità influenzano le autorizzazioni per le risorse |
 | `InitiatingProcessTokenElevation` | stringa | Tipo di token che indica la presenza o l'assenza dell'elevazione dei privilegi del controllo di accesso utente applicata al processo che ha avviato l'evento |
 | `InitiatingProcessSHA1` | stringa | SHA-1 del processo (file immagine) che ha avviato l'evento |
-| `InitiatingProcessSHA256` | stringa | SHA-256 del processo (file immagine) che ha avviato l'evento. (questo campo in genere non viene popolato: usare la colonna SHA1, se disponibile). |
+| `InitiatingProcessSHA256` | stringa | SHA-256 del processo (file di immagine) che ha avviato l'evento. (questo campo in genere non viene popolato: usare la colonna SHA1, se disponibile). |
 | `InitiatingProcessMD5` | stringa | Hash MD5 del processo (file immagine) che ha avviato l'evento |
 | `InitiatingProcessFileName` | stringa | Nome del processo che ha avviato l'evento |
 | `InitiatingProcessId` | int | ID processo (PID) del processo che ha avviato l'evento |
@@ -73,6 +75,8 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `InitiatingProcessParentCreationTime` | datetime | Data e ora in cui è stato avviato l'elemento padre del processo responsabile dell'evento |
 | `ReportId` | long | Identificatore di evento basato su un contatore ripetuto. Per identificare eventi univoci, questa colonna deve essere usata insieme alle colonne DeviceName e Timestamp |
 | `AppGuardContainerId` | stringa | Identificatore del contenitore virtualizzato usato da Application Guard per isolare l'attività del browser |
+| `InitiatingProcessFileSize` | long | Dimensioni del file che ha eseguito il processo responsabile dell'evento |
+| `FileSize` | long | Dimensioni del file in byte |
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)

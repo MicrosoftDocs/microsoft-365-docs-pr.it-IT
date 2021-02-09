@@ -1,7 +1,7 @@
 ---
 title: Tabella DeviceEvents nello schema di ricerca avanzata
 description: Informazioni su antivirus, firewall e altri tipi di eventi nella tabella degli eventi vari dei dispositivi (DeviceEvents) dello schema di ricerca avanzata
-keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, protezione dalle minacce Microsoft, Microsoft 365, mtp, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, eventi di sicurezza, antivirus, firewall, exploit guard, DeviceEvents
+keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, microsoft threat protection, Microsoft 365, mtp, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, eventi di sicurezza, antivirus, firewall, exploit guard, DeviceEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 536d95f7226ba907d913df58a47508e44b50147a
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 1340464fbe71e919a60668cf7d1b2f535eb6d260
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931351"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145326"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -50,7 +50,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `Timestamp` | datetime | Data e ora di registrazione dell'evento |
 | `DeviceId` | stringa | Identificatore univoco per il computer nel servizio |
 | `DeviceName` | stringa | Nome di dominio completo (FQDN) del computer |
-| `ActionType` | stringa | Tipo di attività che ha attivato l'evento. Per informazioni [dettagliate, vedere le informazioni di riferimento](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) sullo schema nel portale |
+| `ActionType` | stringa | Tipo di attività che ha attivato l'evento. Per informazioni [dettagliate, vedere la guida di riferimento](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) allo schema nel portale |
 | `FileName` | stringa | Nome del file a cui è stata applicata l'azione registrata |
 | `FolderPath` | stringa | Cartella contenente il file a cui è stata applicata l'azione registrata |
 | `SHA1` | stringa | SHA-1 del file a cui è stata applicata l'azione registrata |
@@ -72,12 +72,14 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `RemoteIP` | stringa | Indirizzo IP connesso a |
 | `RemotePort` | int | Porta TCP nel dispositivo remoto a cui era in corso la connessione |
 | `LocalIP` | stringa | Indirizzo IP assegnato al computer locale utilizzato durante la comunicazione |
-| `LocalPort` | int | Porta TCP sul computer locale utilizzata durante la comunicazione |
+| `LocalPort` | int | Porta TCP nel computer locale utilizzato durante la comunicazione |
 | `FileOriginUrl` | stringa | URL da cui è stato scaricato il file |
 | `FileOriginIP` | stringa | Indirizzo IP da cui è stato scaricato il file |
 | `AdditionalFields` | stringa | Ulteriori informazioni sull'evento in formato matrice JSON |
+| `InitiatingProcessFileSize` | long | Dimensioni del file che ha eseguito il processo responsabile dell'evento |
+| `FileSize` | long | Dimensioni del file in byte |
 | `InitiatingProcessSHA1` | stringa | SHA-1 del processo (file immagine) che ha avviato l'evento |
-| `InitiatingProcessSHA256` | stringa | SHA-256 del processo (file immagine) che ha avviato l'evento. (questo campo in genere non viene popolato: usare la colonna SHA1, se disponibile). |
+| `InitiatingProcessSHA256` | stringa | SHA-256 del processo (file di immagine) che ha avviato l'evento. (questo campo in genere non viene popolato: usare la colonna SHA1, se disponibile). |
 | `InitiatingProcessFileName` | stringa | Nome del processo che ha avviato l'evento |
 | `InitiatingProcessFolderPath` | stringa | Cartella contenente il processo (file immagine) che ha avviato l'evento |
 | `InitiatingProcessId` | int | ID processo (PID) del processo che ha avviato l'evento |
@@ -90,6 +92,8 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `InitiatingProcessAccountDomain` | stringa | Dominio dell'account che ha eseguito il processo responsabile dell'evento |
 | `InitiatingProcessAccountName` | stringa | Nome utente dell'account che ha eseguito il processo responsabile dell'evento |
 | `InitiatingProcessAccountSid` | stringa | Identificatore di sicurezza (SID) dell'account che ha eseguito il processo responsabile dell'evento |
+| `InitiatingProcessAccountUpn` | stringa | Nome dell'entità utente (UPN) dell'account che ha eseguito il processo responsabile dell'evento |
+| `InitiatingProcessAccountObjectId` | stringa | ID oggetto di Azure AD dell'account utente che ha eseguito il processo responsabile dell'evento |
 | `InitiatingProcessLogonId` | stringa | Identificatore di una sessione di accesso del processo che ha avviato l'evento. Questo identificatore è univoco nello stesso computer solo tra un riavvio e l'altro |
 | `ReportId` | long | Identificatore di evento basato su un contatore ripetuto. Per identificare eventi univoci, questa colonna deve essere usata insieme alle colonne DeviceName e Timestamp |
 | `AppGuardContainerId` | stringa | Identificatore del contenitore virtualizzato usato da Application Guard per isolare l'attività del browser |

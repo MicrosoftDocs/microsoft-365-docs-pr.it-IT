@@ -9,16 +9,16 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 9fbd24185288265d698288e0d5e63e8b3c2afd10
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 1a00f7d5fb37cc9eea3f9454d473703084960864
+ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921847"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50142934"
 ---
 # <a name="readiness-assessment-tools"></a>Strumenti di valutazione della conformità
 
-Per un'esperienza ottimale quando ti iscrivi a Microsoft Managed Desktop, sono disponibili impostazioni e altri parametri che devi impostare in anticipo e determinati requisiti di dispositivo e di rete da soddisfare. Uno strumento, accessibile tramite il portale di amministrazione di Microsoft Managed Desktop, controlla le impostazioni correlate alla gestione. Un altro strumento, scaricabile, controlla i requisiti dei singoli dispositivi e le impostazioni di rete. Puoi usare questi strumenti per controllare queste impostazioni e ricevere la procedura dettagliata per correggere quelle che non sono giuste.
+Per un'esperienza ottimale quando ti iscrivi a Microsoft Managed Desktop, esistono impostazioni e altri parametri che devi impostare in anticipo e determinati requisiti di dispositivo e di rete da soddisfare. Uno strumento, accessibile tramite il portale di amministrazione di Microsoft Managed Desktop, controlla le impostazioni correlate alla gestione. Un altro strumento, scaricabile, controlla i requisiti dei singoli dispositivi e le impostazioni di rete. Puoi usare questi strumenti per controllare queste impostazioni e ricevere la procedura dettagliata per correggere quelle che non sono giuste.
 
 ## <a name="downloadable-readiness-assessment-checker-for-devices-and-network"></a>Strumento di verifica della conformità scaricabile per dispositivi e rete
 
@@ -28,7 +28,7 @@ Per informazioni dettagliate sull'utilizzo dello strumento di verifica della con
 
 Lo strumento online controlla le impostazioni in Microsoft Endpoint Manager (in particolare, Microsoft Intune), Azure Active Directory (Azure AD) e Microsoft 365 per verificare che funzionino con Microsoft Managed Desktop. Microsoft Managed Desktop conserva i dati associati a questi controlli per 12 mesi dopo l'ultima volta che si esegue un controllo nell'organizzazione di Azure AD (tenant). Dopo 12 mesi, la conservazione viene mantenuta in forma non identificata. Puoi scegliere di eliminare i dati raccolti.
 
-Chiunque abbia almeno il ruolo di amministratore di Intune sarà in grado di [](readiness-assessment-fix.md#multifactor-authentication) eseguire questo strumento, ma due dei controlli[(](readiness-assessment-fix.md#conditional-access-policies) criteri di accesso condizionale e autenticazione a più fattori richiedono autorizzazioni aggiuntive.
+Chiunque abbia almeno il ruolo di lettore globale o amministratore di Intune sarà in [](readiness-assessment-fix.md#multifactor-authentication) grado di eseguire questo strumento, ma due dei controlli[(](readiness-assessment-fix.md#conditional-access-policies) criteri di accesso condizionale e autenticazione a più fattori richiedono autorizzazioni aggiuntive.
  
 Lo strumento di valutazione controlla questi elementi:
 
@@ -48,7 +48,7 @@ Lo strumento di valutazione controlla questi elementi:
 |Autenticazione a più fattori | Verifica che l'autenticazione a più fattori non sia applicata agli account del servizio Microsoft Managed Desktop.
 |Script di PowerShell     | Verifica che Windows PowerShell script non *siano* assegnati in modo da essere assegnati ai dispositivi Microsoft Managed Desktop    |
 |Area geografica     | Verifica che l'area geografica sia supportata da Microsoft Managed Desktop        |
-|Linee di base della sicurezza     | Controlla che il profilo di base della sicurezza non sia  mirato a tutti gli utenti o a tutti i dispositivi (i criteri di base per la sicurezza non devono essere mirati ad alcun dispositivo Microsoft Managed Desktop).       |
+|Linee di base della sicurezza     | Verifica che il profilo di base della sicurezza non sia  mirato a tutti gli utenti o a tutti i dispositivi (i criteri di base per la sicurezza non devono essere mirati ad alcun dispositivo Microsoft Managed Desktop).       |
 |App di Windows     | Esaminare le app che si desidera assegnare ai dispositivi Microsoft Managed Desktop      |
 |Windows Hello for Business     | Verifica che Windows Hello for Business sia abilitato        |
 |Anello di aggiornamento di Windows 10     | Verifica che il criterio "Anello di aggiornamento di Windows 10" di Intune  non sia mirato a tutti gli utenti o a tutti i dispositivi (il criterio non deve essere mirato ad alcun dispositivo Microsoft Managed Desktop).     |
@@ -63,9 +63,9 @@ Lo strumento di valutazione controlla questi elementi:
 |Licenze     | Verifica di aver ottenuto le licenze [necessarie](prerequisites.md#more-about-licenses)         |
 |Autenticazione a più fattori     | Controlla che l'autenticazione a più fattori non sia applicata a tutti gli utenti (l'autenticazione a più fattori non deve essere applicata accidentalmente agli account del servizio Microsoft Managed Desktop).|
 |Nomi degli account di sicurezza   | Verifica che nessun nome utente sia in conflitto con quelli che Microsoft Managed Desktop riserva per il proprio utilizzo        |
-|Ruoli di amministratore della sicurezza     | Conferma che gli utenti con ruoli Di lettura della sicurezza, Operatore sicurezza o Lettore globale siano stati assegnati a tali ruoli in Microsoft Defender per Endpoint         |
-|Impostazioni predefinite per la sicurezza | Controlla se l'organizzazione di Azure AD ha le impostazioni predefinite di sicurezza abilitate in Azure Active Directory |
-|Reimpostazione della password self-service     | Verifica che la reimpostazione della password self-service sia abilitata        |
+|Ruoli di amministratore della sicurezza     | Conferma che agli utenti con ruoli Di lettura della sicurezza, Operatore sicurezza o Lettore globale siano stati assegnati tali ruoli in Microsoft Defender for Endpoint         |
+|Impostazioni predefinite per la sicurezza | Controlla se nell'organizzazione di Azure AD sono abilitate le impostazioni predefinite di sicurezza in Azure Active Directory |
+|Reimpostazione della password self-service     | Conferma che la reimpostazione della password self-service è abilitata        |
 |Ruolo utente standard     | Verifica che gli utenti siano utenti standard e non dispongono di diritti di amministratore locale         |
 
 
@@ -83,9 +83,9 @@ Per ogni controllo, lo strumento segnala uno dei quattro possibili risultati:
 |---------|---------|
 |Pronto     | Non è necessaria alcuna azione prima di completare la registrazione.        |
 |Avviso    | Seguire i passaggi dello strumento per un'esperienza ottimale con la registrazione e per gli utenti. È *possibile* completare la registrazione, ma è necessario risolvere questi problemi prima di distribuire il primo dispositivo.        |
-|Non pronto | *La registrazione avrà esito* negativo se questi problemi non vengono risolti. Seguire i passaggi dello strumento per risolverli.        |
+|Non pronto | *La registrazione avrà esito* negativo se questi problemi non vengono risolti. Segui i passaggi dello strumento per risolverli.        |
 |Error | Il ruolo Azure Active Director (AD) in uso non dispone di autorizzazioni sufficienti per eseguire questo controllo. |
 
 ## <a name="after-enrollment"></a>Dopo la registrazione
 
-Dopo aver completato la registrazione in Microsoft Managed Desktop, ricordati di tornare indietro e modificare alcune impostazioni di Intune e Azure AD. Per informazioni dettagliate, vedere [Modificare le impostazioni dopo la registrazione.](../get-started/conditional-access.md)
+Dopo aver completato la registrazione in Microsoft Managed Desktop, ricordarsi di tornare indietro e modificare alcune impostazioni di Intune e Azure AD. Per informazioni dettagliate, vedere [Modificare le impostazioni dopo la registrazione.](../get-started/conditional-access.md)

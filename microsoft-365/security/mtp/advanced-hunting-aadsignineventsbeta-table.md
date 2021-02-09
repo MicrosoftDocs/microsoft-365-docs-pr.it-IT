@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b574717d0ba5621d85c8e73f36ddc72b062a1494
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 174db150920d2d95c043bb5d6e5a4593ea1ea39d
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931039"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145428"
 ---
 # <a name="aadsignineventsbeta"></a>AADSignInEventsBeta
 
@@ -53,7 +53,7 @@ Per informazioni sulle altre tabelle nello schema per Ricerca avanzata vedere [l
 | `Timestamp`                       | datetime      | Data e ora in cui è stato generato il record                                                                                                                                         |
 | `Application`                     | stringa        | Applicazione che ha eseguito l'azione registrata                                                                                                                                       |
 | `ApplicationId`                   | stringa        | Identificatore univoco dell'applicazione                                                                                                                                               |
-| `LogonType`                       | stringa        | Tipo di sessione di accesso, in particolare interattiva, remota interattiva (RDP), rete, batch e servizio                                                                              |
+| `LogonType`                       | stringa        | Tipo di sessione di accesso, in particolare interattiva, remote interactive (RDP), rete, batch e servizio                                                                              |
 | `ErrorCode`                       | int        | Contiene il codice di errore se si verifica un errore di accesso. Per trovare una descrizione di un codice di errore specifico, visitare il sito <https://aka.ms/AADsigninsErrorCodes> Web .                                     |
 | `CorrelationId`                   | stringa        | Identificatore univoco dell'evento di accesso                                                                                                                                              |
 | `SessionId`                       | stringa        | Numero univoco assegnato a un utente dal server di un sito Web per la durata della visita o della sessione                                                                                     |
@@ -74,18 +74,18 @@ Per informazioni sulle altre tabelle nello schema per Ricerca avanzata vedere [l
 | `IsManaged`                       | int       | Indica se il dispositivo che ha avviato l'accesso è un dispositivo gestito (1) o non un dispositivo gestito (0)                                                                         |
 | `IsCompliant`                     | int       | Indica se il dispositivo che ha avviato l'accesso è conforme (1) o non conforme (0)                                                                                       |
 | `AuthenticationProcessingDetails` | stringa        | Dettagli sul processore di autenticazione                                                                                                                                          |
-| `AuthenticationRequirement`       | stringa        | Tipo di autenticazione necessario per l'accesso. Valori possibili: multiFactorAuthentication (era necessaria l'autenticazione a più fattori) e singleFactorAuthentication (non era richiesta alcuna autenticazione a più fattori).                |
+| `AuthenticationRequirement`       | stringa        | Tipo di autenticazione necessario per l'accesso. Valori possibili: multiFactorAuthentication (era necessaria l'autenticazione a più fattori) e singleFactorAuthentication (non è stata richiesta alcuna autenticazione a più fattori).                |
 | `TokenIssuerType`                 | int        | Indica se l'autorità emittente di token è Azure Active Directory (0) o Active Directory Federation Services (1)                                                                             |
 | `RiskLevelAggregated`                       | int        | Livello di rischio aggregato durante l'accesso. Valori possibili: 0 (livello di rischio aggregato non impostato), 1 (nessuno), 10 (basso), 50 (medio) o 100 (alto).                               |
 | `RiskDetails`                      | int        | Dettagli sullo stato rischioso dell'utente che ha eseguito l'accesso                                                                                                                            |
 | `RiskState`                       | int        | Indica lo stato utente rischioso. Valori possibili: 0 (nessuno), 1 (sicuro confermato), 2 (correzione), 3 (ignorato), 4 (a rischio) o 5 (compromesso confermato).                                |
 | `UserAgent`                       | stringa        | Informazioni sull'agente utente dal Web browser o da un'altra applicazione client                                                                                                             |
 | `ClientAppUsed`                   | stringa        | Indica l'app client usata                                                                                                                                                       |
-| `Browser`                         | stringa        | Dettagli sulla versione del browser utilizzata per accedere                                                                                                                            |
+| `Browser`                         | stringa        | Dettagli sulla versione del browser usata per accedere                                                                                                                            |
 | `ConditionalAccessPolicies`       | stringa        | Dettagli dei criteri di accesso condizionale applicati all'evento di accesso                                                                                                             |
 | `ConditionalAccessStatus`         | int        | Stato dei criteri di accesso condizionale applicati all'accesso. I valori possibili sono 0 (criteri applicati), 1 (tentativo di applicare i criteri non riuscito) o 2 (criteri non applicati).      |
 | `IPAddress`                       | stringa        | Indirizzo IP assegnato all'endpoint e utilizzato durante le comunicazioni di rete correlate                                                                                                  |
-| `CountryCode`                     | stringa        | Codice di due lettere che indica il paese in cui l'indirizzo IP del client è geolocato                                                                                                    |
+| `Country`                     | stringa        | Codice di due lettere che indica il paese in cui l'indirizzo IP del client è geolocato                                                                                                    |
 | `State`                           | stringa        | Stato in cui si è verificato l'accesso, se disponibile                                                                                                                                      |
 | `City`                            | stringa        | Città in cui si trova l'utente dell'account                                                                                                                                              |
 | `Latitude`                        | stringa        | Coordinate da nord a sud della posizione di accesso                                                                                                                              |

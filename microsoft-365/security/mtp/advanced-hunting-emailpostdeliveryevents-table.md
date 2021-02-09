@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d7920be05156320411f3907cbcdae88d315b5136
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 774676e15e9018b13674149b6a2e147a91000814
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929707"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145500"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 
@@ -45,7 +45,6 @@ Per ottenere ulteriori informazioni sui singoli messaggi di posta elettronica, √
 | Nome colonna | Tipo di dati | Descrizione |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Data e ora di registrazione dell'evento |
-| `EventId` | stringa | Identificatore univoco dell'evento |
 | `NetworkMessageId` | stringa | Identificatore univoco del messaggio di posta elettronica, generato da Microsoft 365 |
 | `InternetMessageId` | stringa | Identificatore pubblico per il messaggio di posta elettronica impostato dal sistema di invio |
 | `Action` | stringa | Azione eseguita sull'entit√† |
@@ -54,13 +53,14 @@ Per ottenere ulteriori informazioni sui singoli messaggi di posta elettronica, √
 | `ActionResult` | stringa | Risultato dell'azione |
 | `RecipientEmailAddress` | stringa | Indirizzo di posta elettronica del destinatario o indirizzo di posta elettronica del destinatario dopo l'espansione della lista di distribuzione |
 | `DeliveryLocation` | stringa | Posizione di recapito del messaggio di posta elettronica: cartella Posta in arrivo, locale/esterno, Posta indesiderata, Quarantena, invio non riuscito, non elaborato, Elementi eliminati |
+| `ReportId` | long | Identificatore di evento basato su un contatore ripetuto. Per identificare eventi univoci, questa colonna deve essere usata insieme alle colonne DeviceName e Timestamp. |
 
 ## <a name="supported-event-types"></a>Tipi di evento supportati
 Questa tabella acquisisce gli eventi con i valori `ActionType` seguenti:
 
-- **Correzione manuale: un** amministratore ha preso manualmente un'azione su un messaggio di posta elettronica dopo che √® stato recapitato alla cassetta postale dell'utente. Sono incluse le azioni eseguite manualmente tramite [Esplora](../office-365-security/threat-explorer.md) minacce o l'approvazione di azioni di analisi e risposta [automatizzate (AIR).](mtp-autoir-actions.md)
+- **Correzione manuale: un** amministratore ha preso manualmente un'azione su un messaggio di posta elettronica dopo che √® stato recapitato alla cassetta postale dell'utente. Sono incluse le azioni eseguite manualmente tramite [Esplora](../office-365-security/threat-explorer.md) minacce o le approvazioni di azioni di analisi e risposta [automatizzate (AIR).](mtp-autoir-actions.md)
 - **PHISH ZAP** - [Zero-hour auto purge (ZAP)](../office-365-security/zero-hour-auto-purge.md) took action on a phishing email after delivery.
-- **ZAP antimalware:** zap (Zero-Hour Auto Purge) ha preso azione su un messaggio di posta elettronica trovato contenente malware dopo il recapito.
+- **ZAP antimalware-** Zero-hour Auto Purge (ZAP) ha preso azione su un messaggio di posta elettronica trovato contenente malware dopo il recapito.
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)

@@ -9,53 +9,57 @@ audience: ITPro
 ms.topic: conceptual
 localization_priority: Normal
 ms.assetid: b5543faa-44fa-44c5-8180-fb835e7e452d
-description: Gli amministratori possono ottenere informazioni sul rapporto messaggi auto-inoltrati nel dashboard del flusso di posta elettronica nel centro sicurezza & Compliance.
+description: Gli amministratori possono ottenere informazioni sul report Dei messaggi inoltrati automaticamente nel dashboard del flusso di posta nel Centro sicurezza & conformità.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c892400152df15adb3dfeb0c747ed7fae034d3d6
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: c95c403e0b342bf0466c45804ba3975c492b8e1b
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029943"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150600"
 ---
-# <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>Insight dei messaggi auto-inoltrati nel centro sicurezza & Compliance
+# <a name="auto-forwarded-messages-insight-in-the-security--compliance-center"></a>Informazioni dettagliate sui messaggi inoltrati automaticamente nel Centro sicurezza & conformità
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Si applica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-L'Insight dei **messaggi auto-inoltrati** nel [Dashboard del flusso di posta elettronica](mail-flow-insights-v2.md) nel [Centro sicurezza & conformità](https://protection.office.com) Visualizza informazioni sui messaggi che vengono inoltrati automaticamente dall'organizzazione ai destinatari nei domini esterni.
+Le **informazioni dettagliate** sui messaggi inoltrati automaticamente nel [dashboard](mail-flow-insights-v2.md) del flusso di posta nel Centro sicurezza [&](https://protection.office.com) conformità visualizzano informazioni sui messaggi che vengono inoltrati automaticamente dall'organizzazione ai destinatari in domini esterni.
 
-![Widget messaggi auto-inoltrati nel centro sicurezza & Compliance](../../media/mfi-auto-forwarded-messages.png)
+![Widget Messaggi inoltrati automaticamente nel Centro sicurezza & conformità](../../media/mfi-auto-forwarded-messages.png)
 
 ## <a name="auto-forwarded-messages-details"></a>Dettagli dei messaggi inoltrati automaticamente
 
-Quando si fa clic sul numero di messaggi nel widget, viene visualizzato un riquadro a comparsa che consente di visualizzare ulteriori informazioni sui messaggi auto-inoltrati:
+Quando si fa clic sul numero di messaggi nel widget, viene visualizzato un riquadro a comparsa che mostra ulteriori informazioni sui messaggi inoltrati automaticamente:
 
-- Inoltro **automatico dei messaggi tramite i metodi di inoltro**:
+- **Messaggi inoltrati automaticamente tramite i metodi di inoltro:**
 
-  - **Regole del flusso di posta**
-  - **Dalle regole di posta in arrivo**
-  - **Tramite inoltro SMTP**: questo metodo indica l'inoltro automatico che gli amministratori possono configurare su una cassetta postale, come descritto in [Configure email forwarding for a Mailbox](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding).
-  - Un collegamento al [rapporto di inoltro](view-mail-flow-reports.md#forwarding-report) per ulteriori dettagli.
+  - **Per regole del flusso di posta**
+  - **Per regole posta in arrivo**
+  - **Tramite l'inoltro SMTP:** questo metodo indica l'inoltro automatico che gli amministratori possono configurare in una cassetta postale, come descritto in Configurare l'inoltro della posta [elettronica per una cassetta postale.](https://docs.microsoft.com/Exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding)
+  - Per ulteriori dettagli, fare clic su un collegamento al [report](view-mail-flow-reports.md#forwarding-report) Di inoltro.
 
-- **Messaggi auto-inoltrati da domini e utenti**:
+- **Messaggi inoltrati automaticamente da domini e utenti:**
 
-  - **Top 5 domini inoltrati a**
-  - **Nuovi domini (la settimana scorsa)**
-  - **Top 5 utenti di inoltro**
-  - **Nuovi utenti (la settimana scorsa)**
-  - Un collegamento al [rapporto di modifica di inoltro](mfi-new-users-forwarding-email.md#forwarding-modifications-report) per ulteriori dettagli.
+  - **Primi 5 domini inoltrati a**
+  - **Nuovi domini (ultima settimana)**
+  - **Primi 5 utenti di inoltro**
+  - **Nuovi utenti (ultima settimana)**
+  - Per ulteriori dettagli, fare clic su un collegamento al [report](mfi-new-users-forwarding-email.md#forwarding-modifications-report) Modifiche inoltro.
 
-![Riquadro a comparsa dettagli per il rapporto messaggi auto-inoltrati nel centro sicurezza & Compliance](../../media/mfi-auto-forwarded-messages-details.png)
+![Riquadro a comparsa Dettagli per il report Messaggi inoltrati automaticamente nel Centro sicurezza & conformità](../../media/mfi-auto-forwarded-messages-details.png)
 
 ## <a name="insights"></a>Dati analitici
 
-Vengono generate due intuizioni in base ai dati del rapporto:
+Vengono generate due informazioni dettagliate in base ai dati del report:
 
-- [Nuovi utenti che inoltrano messaggi di posta elettronica](mfi-new-users-forwarding-email.md)
-- [Nuovi domini che vengono inoltrati tramite posta elettronica](mfi-new-domains-being-forwarded-email.md)
+- [Nuovi utenti che inoltrano la posta elettronica](mfi-new-users-forwarding-email.md)
+- [Nuovi domini inoltrati tramite posta elettronica](mfi-new-domains-being-forwarded-email.md)
 
 ## <a name="see-also"></a>Vedere anche
 
-Per informazioni su altre intuizioni nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+Per informazioni su altre informazioni dettagliate nel dashboard del flusso di posta, vedere Informazioni dettagliate sul flusso di posta [nel Centro sicurezza & conformità.](mail-flow-insights-v2.md)

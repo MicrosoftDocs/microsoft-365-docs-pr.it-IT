@@ -1,5 +1,5 @@
 ---
-title: Spostare i domini & le impostazioni da un'organizzazione di EOP a un'altra
+title: Spostare i domini & impostazioni da un'organizzazione EOP a un'altra
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -8,29 +8,32 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 9d64867b-ebdb-4323-8e30-4560d76b4c97
 ms.custom:
 - seo-marvel-apr2020
-description: In questo articolo vengono fornite informazioni su come spostare i domini e le impostazioni da un'organizzazione di Microsoft Exchange Online Protection (EOP) a un'altra.
-ms.openlocfilehash: 485911ff7ac94c820d6f1e0f7cfa54da08943054
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+description: In questo articolo viene illustrato come spostare i domini e le impostazioni da un'organizzazione Microsoft Exchange Online Protection (EOP) (tenant) a un'altra.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 4cfb5c31728174f7f7307e9492abc03a62f8bf9a
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49614823"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150761"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>Spostare i domini e le impostazioni da un'organizzazione di Exchange Online Protection a un'altra
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Si applica a**
+-  [Exchange Online Protection autonomo](https://go.microsoft.com/fwlink/?linkid=2148611)
 
 Talvolta la modifica dei requisiti aziendali può richiedere la divisione di un'organizzazione Microsoft Exchange Online Protection (EOP) (tenant) in due organizzazioni distinte, l'unione di due organizzazioni o il trasferimento dei domini e delle impostazioni di EOP da un'organizzazione a un'altra. Il trasferimento da un'organizzazione di EOP a un'altra organizzazione di EOP può essere complicato, ma con alcuni script di Windows PowerShell remoto di base e una piccola quantità di operazioni preliminari, può essere ottenuto con un'attività di manutenzione relativamente ridotta.
 
 > [!NOTE]
 >
-> - È possibile spostare le impostazioni in modo affidabile solo da un'organizzazione (standard) autonoma di EOP a un'altra organizzazione standard di EOP o Enterprise CAL con servizi (Premium EOP), oppure da un'organizzazione Premium EOP a un'altra. Poiché alcune funzionalità Premium non sono supportate nelle organizzazioni standard di EOP, gli spostamenti da un'organizzazione Premium di EOP a un'organizzazione di EOP standard potrebbero non avere esito positivo.
+> - È possibile spostare le impostazioni in modo affidabile solo da un'organizzazione (standard) autonoma di EOP a un'altra organizzazione standard di EOP o Enterprise CAL con servizi (Premium EOP), oppure da un'organizzazione Premium EOP a un'altra. Poiché alcune funzionalità avanzate non sono supportate nelle organizzazioni EOP Standard, il spostamento da un'organizzazione EOP Premium a un'organizzazione EOP Standard potrebbe non avere esito positivo.
 >
 > - Queste istruzioni riguardano solo le organizzazioni con filtro EOP. Esistono ulteriori considerazioni sul trasferimento da un'organizzazione di Exchange Online a un'altra. Le organizzazioni di Exchange Online non rientrano nell'ambito di queste istruzioni.
 
@@ -48,21 +51,21 @@ Per ricreare l'organizzazione di origine nell'organizzazione di destinazione, as
 - Utenti di posta elettronica
 - Gruppi
 - Protezione da posta indesiderata
-  - Criteri di protezione da posta indesiderata (noti anche come criteri di filtro dei contenuti)
-  - Criteri di filtro per la posta indesiderata in uscita
+  - Criteri di protezione dalla posta indesiderata (noti anche come criteri di filtro dei contenuti)
+  - Criteri di filtro della posta indesiderata in uscita
   - Criteri di filtro delle connessioni
-- Criteri anti-malware
+- Criteri antimalware
 - Connettori
 - Regole del flusso di posta (note anche come regole di trasporto)
 
   > [!NOTE]
-  > Il supporto dei cmdlet per l'esportazione e l'importazione della raccolta di regole del flusso di posta è attualmente supportato solo per i piani di sottoscrizione Premium di EOP.
+  > Il supporto dei cmdlet per l'esportazione e l'importazione della raccolta di regole del flusso di posta è attualmente supportato solo per i piani di sottoscrizione EOP Premium.
 
-Il modo più semplice per raccogliere tutte le impostazioni consiste nell'utilizzare PowerShell. Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
+Il modo più semplice per raccogliere tutte le impostazioni è usare PowerShell. Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
 Successivamente, è possibile raccogliere tutte le impostazioni ed esportarle in un file XML da importare nel tenant di destinazione. In generale, è possibile eseguire il piping dell'output del cmdlet **Get** per ogni impostazione per il cmdlet **Export-Clixml** in modo da salvare le impostazioni nel file XML, come illustrato nell'esempio di codice seguente.
 
-In EOP standalone PowerShell, creare una directory denominata Export in una posizione facile da trovare e cambiare in quella directory. Ad esempio:
+In PowerShell EOP autonomo, creare una directory denominata Esportazione in un percorso facile da trovare e passare a tale directory. Ad esempio:
 
 ```PowerShell
 mkdir C:\EOP\Export
@@ -72,7 +75,7 @@ mkdir C:\EOP\Export
 cd C:\EOP\Export
 ```
 
-Lo script seguente può essere utilizzato per raccogliere tutti gli utenti di posta elettronica, i gruppi, le impostazioni di protezione dalla posta indesiderata, le impostazioni antimalware, i connettori e le regole del flusso di posta nell'organizzazione di origine. Copiare e incollare il testo seguente in un editor di testo come Blocco note, salvare il file come Source_EOP_Settings.ps1 nella directory di esportazione appena creata ed eseguire il comando riportato di seguito:
+Lo script seguente può essere utilizzato per raccogliere tutti gli utenti, i gruppi, le impostazioni di protezione da posta indesiderata, le impostazioni antimalware, i connettori e le regole del flusso di posta nell'organizzazione di origine. Copiare e incollare il testo seguente in un editor di testo come Blocco note, salvare il file come Source_EOP_Settings.ps1 nella directory di esportazione appena creata ed eseguire il comando riportato di seguito:
 
 ```PowerShell
 & "C:\EOP\Export\Source_EOP_Settings.ps1"
@@ -176,13 +179,13 @@ Foreach ($domain in $Domains) {
 }
 ```
 
-A questo punto è possibile esaminare e raccogliere le informazioni dall'interfaccia di amministrazione di Microsoft 365 dell'organizzazione di destinazione, in modo da poter verificare rapidamente i domini quando arriva il momento:
+Ora è possibile esaminare e raccogliere le informazioni dall'interfaccia di amministrazione di Microsoft 365 dell'organizzazione di destinazione in modo da poter verificare rapidamente i domini quando sarà il momento:
 
 1. Accedere all'interfaccia di amministrazione di Microsoft 365 all'indirizzo <https://portal.office.com> .
 
 2. Fare clic su **Domini**.
 
-   Se non si visualizzano i domini, fare clic su Personalizza struttura di **spostamento**, selezionare **installazione** e quindi fare clic su **Salva**.
+   Se i domini non sono visualizzati, fare clic su Personalizza **spostamento,** **selezionare Installazione** e quindi fare clic su **Salva.**
 
 3. Fare clic su ciascun collegamento di **avvio dell'installazione** per poi procedere con l'installazione guidata.
 
@@ -190,7 +193,7 @@ A questo punto è possibile esaminare e raccogliere le informazioni dall'interfa
 
 5. Registrare il record MX o il record TXT che verrà utilizzato per verificare il dominio e completare l'installazione guidata.
 
-6. Aggiungere i record TXT di verifica ai record DNS. In questo modo sarà possibile verificare rapidamente i domini nell'organizzazione di origine dopo averli rimossi dall'organizzazione di destinazione. Per ulteriori informazioni sulla configurazione del DNS, vedere [creare record DNS presso qualsiasi provider di hosting DNS per Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+6. Aggiungere i record TXT di verifica ai record DNS. In questo modo sarà possibile verificare rapidamente i domini nell'organizzazione di origine dopo averli rimossi dall'organizzazione di destinazione. Per ulteriori informazioni sulla configurazione di DNS, vedere [Creare record DNS presso qualsiasi provider di hosting DNS per Microsoft 365.](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)
 
 ## <a name="step-3-force-senders-to-queue-mail"></a>Passaggio 3: Forzare i mittenti a inserire la posta in coda 
 
@@ -200,14 +203,14 @@ Per forzare i mittenti a inserire la posta in coda è possibile aggiornare i rec
 
 Un'altra opzione consiste nell'inserire un record MX non valido in ogni dominio in cui vengono conservati i record DNS del dominio (noto anche come servizio di hosting DNS). In questo modo il mittente inserirà la posta in coda e ritenterà (i tentativi di invio vengono ripetuti per 48 ore, ma tale periodo può variare da provider a provider). È possibile utilizzare invalid.outlook.com come una destinazione MX non valida. La riduzione del valore Durata (TTL) a 5 minuti nei record MX contribuirà alla distribuzione della modifica nei provider DNS più rapidamente.
 
-Per ulteriori informazioni sulla configurazione del DNS, vedere [creare record DNS presso qualsiasi provider di hosting DNS per Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+Per ulteriori informazioni sulla configurazione di DNS, vedere [Creare record DNS presso qualsiasi provider di hosting DNS per Microsoft 365.](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)
 
 > [!IMPORTANT]
 > Provider diversi inseriscono la posta in coda per periodi di tempo diversi. Sarà necessario configurare rapidamente il nuovo tenant e ripristinare le impostazioni DNS per evitare di inviare rapporti di mancato recapito (NDR) al mittente se scade la durata di accodamento.
 
 ## <a name="step-4-remove-users-groups-and-domains-from-the-source-organization"></a>Passaggio 4: Rimuovere utenti, gruppi e domini dall'organizzazione di origine
 
-Lo script seguente consente di rimuovere gli utenti, i gruppi e i domini dal tenant di origine utilizzando Azure Active Directory PowerShell. Copiare e incollare il testo seguente in un editor di testo come Blocco note, salvare il file come C:\EOP\Export\Remove_Users_and_Groups.ps1 ed eseguire il comando riportato di seguito:
+Lo script seguente rimuove utenti, gruppi e domini dal tenant di origine tramite Azure Active Directory PowerShell. Copiare e incollare il testo seguente in un editor di testo come Blocco note, salvare il file come C:\EOP\Export\Remove_Users_and_Groups.ps1 ed eseguire il comando riportato di seguito:
 
 ```PowerShell
 & "C:\EOP\Export\Remove_Users_and_Groups.ps1"
@@ -930,4 +933,4 @@ if($HostedContentFilterPolicyCount -gt 0){
 
 ## <a name="step-8-revert-your-dns-settings-to-stop-mail-queuing"></a>Passaggio 8: Ripristinare le impostazioni DNS per interrompere l'accodamento della posta
 
-Se si è scelto di impostare i record MX su un indirizzo non valido per fare in modo che i mittenti vengano accodati alla posta durante la transizione, è necessario impostarli nuovamente sul valore corretto come specificato nell'interfaccia di [Amministrazione](https://admin.microsoft.com). Per ulteriori informazioni sulla configurazione del DNS, vedere [creare record DNS presso qualsiasi provider di hosting DNS per Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+Se si è scelto di impostare i record MX su un indirizzo non valido per fare in modo che i mittenti accodino la posta durante la transizione, sarà necessario impostarli nuovamente sul valore corretto come specificato nell'interfaccia di [amministrazione.](https://admin.microsoft.com) Per ulteriori informazioni sulla configurazione di DNS, vedere [Creare record DNS presso qualsiasi provider di hosting DNS per Microsoft 365.](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)

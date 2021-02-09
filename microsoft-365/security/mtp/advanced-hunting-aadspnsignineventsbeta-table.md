@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 172c400df3adea70a2e2d2e37547fa39e0d3b9cf
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 3eba2459fd9a0af1963ca8d1446b22fc0b1bdb93
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928619"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145404"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -39,7 +39,7 @@ ms.locfileid: "49928619"
 
 
 
-La `AADSpnSignInEventsBeta` tabella nello schema di ricerca avanzata contiene informazioni sull'entità servizio di Azure Active Directory e sugli account di accesso delle identità gestite. Ulteriori informazioni sui diversi tipi di accesso sono disponibili nei report sulle attività di accesso [di Azure Active Directory - anteprima.](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-all-sign-ins)
+La tabella nello schema di ricerca avanzata contiene informazioni sull'entità servizio di Azure Active Directory e sugli account `AADSpnSignInEventsBeta` di accesso dell'identità gestita. Ulteriori informazioni sui diversi tipi di accesso sono disponibili nei report attività di accesso [di Azure Active Directory - anteprima.](https://docs.microsoft.com/azure/active-directory/reports-monitoring/concept-all-sign-ins)
 
 Utilizzare questo riferimento per creare query che forniscano informazioni dalla tabella.
 
@@ -63,7 +63,7 @@ Per informazioni sulle altre tabelle nello schema per Ricerca avanzata vedere [l
 | `ResourceId`           | stringa        | Identificatore univoco della risorsa a cui si accede                                                                                                      |
 | `ResourceTenantId`     | stringa        | Identificatore univoco del tenant della risorsa a cui si accede                                                                                        |
 | `IPAddress`            | stringa        | Indirizzo IP assegnato all'endpoint e utilizzato durante le comunicazioni di rete correlate                                                              |
-| `CountryCode`          | stringa        | Codice di due lettere che indica il paese in cui l'indirizzo IP del client è geolocato                                                                |
+| `Country`          | stringa        | Codice di due lettere che indica il paese in cui l'indirizzo IP del client è geolocato                                                                |
 | `State`                | stringa        | Stato in cui si è verificato l'accesso, se disponibile                                                                                                  |
 | `City`                 | stringa        | Città in cui si trova l'utente dell'account                                                                                                          |
 | `Latitude`             | stringa        | Coordinate da nord a sud della posizione di accesso                                                                                          |

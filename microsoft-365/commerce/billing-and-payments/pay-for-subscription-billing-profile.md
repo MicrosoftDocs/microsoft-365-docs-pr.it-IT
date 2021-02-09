@@ -1,5 +1,5 @@
 ---
-title: Pagamento dell'abbonamento
+title: Pagamento dell'abbonamento con un profilo di fatturazione
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -14,21 +14,19 @@ ms.collection:
 - Adm_O365
 search.appverid:
 - MET150
-ms.assetid: 734f4aab-df2d-4e9b-8cb1-691910bde216
-description: Informazioni sulle opzioni di pagamento disponibili per il pagamento dell'abbonamento a Microsoft 365 per le aziende.
+description: Informazioni sulle opzioni di pagamento disponibili per il pagamento dell'abbonamento con un profilo di fatturazione.
 ms.custom:
 - okr_SMB
-- fwlink 808700 for SEPA UI glink 906 for older uI
 - AdminSurgePortfolio
 - commerce
-ms.openlocfilehash: 7b2b433d94915d16cd0f5a3611f8fc17d6254e97
+ms.openlocfilehash: 15feb1b806b46d147d427256ce2416ea75b48bbe
 ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142086"
+ms.locfileid: "50143125"
 ---
-# <a name="how-to-pay-for-your-subscription"></a>Come pagare l'abbonamento
+# <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>Come pagare l'abbonamento con un profilo di fatturazione
 
 ::: moniker range="o365-21vianet"
 
@@ -37,25 +35,21 @@ ms.locfileid: "50142086"
 
 ::: moniker-end
 
-Puoi usare una carta di credito o di debito o un conto corrente bancario per pagare l'abbonamento. In alcuni casi, è possibile pagare tramite fattura, tramite assegno o bonifico bancario (EFT). Se hai un profilo di fatturazione, le opzioni sono leggermente diverse. Per ulteriori informazioni, vedere [Come pagare l'abbonamento con un profilo di fatturazione.](pay-for-subscription-billing-profile.md) Se non sei sicuro che il tuo account abbia un profilo di fatturazione, vedi [Informazioni sui profili di fatturazione.](manage-billing-profiles.md)
+Quando si acquista un abbonamento, si paga con un profilo di fatturazione. Il profilo di fatturazione è collegato a una modalità di pagamento specifica e può essere una carta di credito o di debito o una fattura, ma non un conto corrente bancario.
 
-**Vuoi solo scoprire dove inviare il pagamento della fattura?** If you pay your invoice by check or electronic funds transfer (EFT), see [Where do I send my check or EFT payment?](#where-do-i-send-my-check-or-eft-payment)
+Se non sei sicuro che il tuo account abbia un profilo di fatturazione, vedi [Informazioni sui profili di fatturazione.](manage-billing-profiles.md) Se non si dispone di un profilo di fatturazione, vedere [Come pagare l'abbonamento.](pay-for-your-subscription.md)
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="paying-with-recurring-billing-turned-on-or-off"></a>Pagamento con fatturazione ricorrente attivata o disattivata
 
-- È necessario essere un amministratore globale o un amministratore di fatturazione per eseguire le procedure descritte in questo articolo. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
-- La modalità di pagamento scelta durante la transazione è la modalità di pagamento utilizzata per tutti i periodi di fatturazione futuri. È possibile modificarla in qualsiasi momento.
+Per impostazione predefinita, la fatturazione ricorrente viene automaticamente attivata per tutte le sottoscrizioni a pagamento che usano la fatturazione ricorrente. A ogni periodo di fatturazione viene addebitato automaticamente il metodo di pagamento associato al profilo di fatturazione per pagare tutte le sottoscrizioni che usano tale profilo di fatturazione. Se la modalità di pagamento viene  rifiutata, puoi usare il pulsante Paga ora nella fattura per effettuare un pagamento una sola volta per l'abbonamento.
 
-## <a name="paying-by-credit-or-debit-card-or-bank-account"></a>Pagamento tramite carta di credito o di debito o conto corrente bancario
-
-> [!IMPORTANT]
-> Il pagamento tramite conto corrente bancario non è disponibile in alcuni paesi o aree geografiche.
-
-Puoi pagare l'abbonamento con una carta di credito o di debito o un conto corrente bancario. Quando si paga con uno di questi metodi di pagamento, microsoft continua ad addebitare tale modalità di pagamento fino alla scadenza o all'annullamento dell'abbonamento. È possibile [gestire le modalità di pagamento](manage-payment-methods.md) ogni volta che è necessario. È anche possibile scegliere di [ricevere una copia dell'estratto conto come allegato di posta elettronica](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email).
+Se la fatturazione ricorrente è disattivata per  un profilo di fatturazione, puoi usare il pulsante Paga ora nella fattura per pagarla a ogni periodo di fatturazione, indipendentemente dalla modalità di pagamento collegata al profilo di fatturazione. Puoi anche pagare tramite assegno o bonifico bancario (EFT). Le istruzioni per eseguire questa operazione sono incluse nella copia PDF della fattura.
 
 ## <a name="paying-by-invoice"></a>Pagamento tramite fattura
 
-In alcuni casi, è possibile pagare l'abbonamento tramite fattura con un assegno o EFT. Per essere idoneo al pagamento tramite fattura, è necessario:
+Se si dispone di un profilo di fatturazione configurato per il pagamento tramite fattura, è possibile pagare l'abbonamento con assegno o EFT. Puoi anche usare una carta di credito per effettuare un pagamento online usando il pulsante **Paga** ora nella fattura.
+
+Per essere idoneo al pagamento tramite fattura, è necessario:
 
 - Essere un cliente stabilito
 - Avere un costo di sottoscrizione superiore a un determinato importo (questo importo varia in base alla posizione del servizio)
@@ -63,29 +57,11 @@ In alcuni casi, è possibile pagare l'abbonamento tramite fattura con un assegno
 
 Se è necessaria una verifica del credito, si viene informati quando si acquista l'abbonamento. Se si accetta di essere contattati, si ottiene un messaggio di posta elettronica che include ulteriori informazioni sulla richiesta di approvazione del credito. Le verifiche del credito vengono in genere completate in due giorni lavorativi.
 
-> [!NOTE]
-> I clienti che vivono in Brasile possono pagare un abbonamento tramite Boleto Bancario. Se è stata selezionata questa opzione, il bollettino per il pagamento viene inviato all'indirizzo di posta elettronica specificato durante l'acquisto dell'abbonamento entro 10 giorni lavorativi dalla data dell'ordine. La data di scadenza è 30 giorni dopo la data dell'ordine. Se non si riceve il Boleto tramite posta elettronica, controllare la cartella della posta indesiderata o contattare il supporto.
->
-> Se si preferisce, è possibile scegliere il pagamento tramite bonifico bancario. L'agenzia e il numero di conto corrente sono indicati nella parte inferiore della fattura. È necessario immettere il numero di fattura nel campo di identificazione del bonifico.
-
-Se si paga tramite fattura per l'abbonamento, si ottiene un messaggio di posta elettronica quando l'estratto conto è pronto per la visualizzazione. Questo messaggio di posta elettronica non contiene una copia dell'estratto conto. Tuttavia, è possibile scegliere di [ricevere una copia dell'estratto conto tramite posta elettronica.](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email) L'estratto conto include informazioni dettagliate sulle opzioni per effettuare un pagamento e su dove inviarlo. Se si immette un numero di ordine d'acquisto quando si acquista un abbonamento, il numero viene visualizzato nell'estratto conto. Per informazioni su come accedere agli estratti conto, vedere [Visualizzare l'estratto conto o la fattura](view-your-bill-or-invoice.md).
-
-## <a name="what-if-i-have-an-outstanding-balance"></a>Che cosa occorre fare in presenza di saldi insoluti?
-
-If we're unable to charge the payment method on file, we send an email that lets you know there's a problem. The email briefly states what the problem is and includes a link where you can check the outstanding balance. Continueremo a ripetere la transazione ogni pochi giorni per 30 giorni, durante il quale la sottoscrizione è in un periodo di tolleranza. Ogni volta che una transazione ha esito negativo, si riceve un avviso tramite posta elettronica sull'errore.
-
-Se hai aggiunto personalmente la modalità di pagamento con un importo dovuto passato, puoi usare Liquidazione saldo **per** effettuare un pagamento. La modalità di pagamento utilizzata per pagare l'importo scaduto diventa la nuova modalità di pagamento per tutte le sottoscrizioni che hanno utilizzato la modalità di pagamento rifiutata.
-
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatture**& pagamenti e quindi  >   selezionare la scheda <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Modalità di</a> pagamento.
-1. Un messaggio di avviso indica la modalità di pagamento rifiutata. Selezionare **Liquidazione saldo.**
-1. Nel riquadro destro scegliere una modalità di pagamento diversa oppure selezionare **Aggiungi una nuova modalità di pagamento.**
-1. Dopo aver aggiornato le informazioni sulla modalità di pagamento, selezionare **Salva.**
-
-Se non hai aggiunto la modalità di pagamento usata per pagare l'abbonamento, devi sostituire la modalità di pagamento con una che hai aggiunto in precedenza o con una nuova.
+Se il profilo di fatturazione è supportato da una fattura, viene visualizzato un messaggio di posta elettronica quando l'estratto conto è pronto per la visualizzazione. Questo messaggio di posta elettronica non contiene una copia dell'estratto conto. Tuttavia, è possibile scegliere di [ricevere una copia dell'estratto conto tramite posta elettronica.](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email) L'estratto conto include informazioni dettagliate sulle opzioni per effettuare un pagamento e su dove inviarlo. Se immetti un numero di ordine di acquisto (PO) nel profilo di fatturazione, il numero viene visualizzato nell'estratto conto. Per informazioni su come accedere agli estratti conto, vedere [Visualizzare l'estratto conto o la fattura](view-your-bill-or-invoice.md).
 
 ## <a name="where-do-i-send-my-check-or-eft-payment"></a>Dove è possibile inviare il pagamento tramite assegno o bonifico?
 
-[Controllare la fattura per](view-your-bill-or-invoice.md) le istruzioni di pagamento. Puoi anche usare l'elenco a discesa seguente per trovare le istruzioni di pagamento per il tuo paese o area geografica. Se non si è sicuri di quanto è dovuto, è possibile  controllare la fattura e la cronologia della fatturazione online nella scheda Fatture della pagina Fatture & <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">pagamenti.</a>
+[Controllare la fattura per](view-your-bill-or-invoice.md) le istruzioni di pagamento. Puoi anche usare l'elenco a discesa seguente per trovare le istruzioni di pagamento per il tuo paese. Se non si è sicuri di quanto è dovuto, è possibile  controllare la fattura e la cronologia della fatturazione online nella scheda Fatture della pagina Fatture & <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">pagamenti.</a>
 
 > [!NOTE]
 > Il pagamento tramite assegno è disponibile solo in alcuni paesi.
@@ -248,18 +224,18 @@ Se non hai aggiunto la modalità di pagamento usata per pagare l'abbonamento, de
 
 ## <a name="can-i-pay-my-invoice-online"></a>Posso pagare la fattura online?
 
-Non è possibile pagare la fattura online. Devi inviare il pagamento tramite assegno o EFT.
+Se la fatturazione ricorrente è disattivata per il profilo di fatturazione, è possibile utilizzare una carta di credito per pagare la fattura online. Per effettuare un pagamento, usare il pulsante **Paga ora** nella fattura nell'interfaccia di amministrazione di Microsoft 365. Per trovare la fattura, vedere [Visualizzare la fattura.](view-your-bill-or-invoice.md)
 
 ## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>Posso passare dalla modalità di pagamento corrente alla modalità di pagamento tramite fattura?
 
-Puoi passare al pagamento tramite fattura solo se l'abbonamento costa oltre un determinato importo. È necessario prima pagare qualsiasi saldo in sospeso sulla carta di credito o di debito o sul conto corrente bancario prima di poter passare al pagamento tramite fattura. Per informazioni su come modificare i metodi di pagamento, vedere [Modificare una modalità di pagamento per una singola sottoscrizione.](manage-payment-methods.md#change-a-payment-method-for-a-single-subscription)
+Se il tuo profilo di fatturazione è supportato da carta di credito o di debito, puoi solo modificare la modalità di pagamento in un'altra carta di credito o di debito. Non è possibile passare al pagamento tramite fattura.
 
 ## <a name="can-i-change-from-paying-by-invoice-to-using-a-different-payment-method"></a>È possibile passare dal pagamento tramite fattura all'utilizzo di un metodo di pagamento diverso?
 
-Non puoi passare automaticamente dal pagamento tramite fattura al pagamento con un metodo di pagamento diverso. È invece [](../try-or-buy-microsoft-365.md#buy-a-different-subscription) necessario acquistare un abbonamento diverso a pagamento con una carta di credito o di debito o un conto corrente bancario, [](../subscriptions/move-users-different-subscription.md)spostare tutti gli utenti nel nuovo abbonamento e quindi annullare [l'abbonamento precedente.](../subscriptions/cancel-your-subscription.md)
+Se il tuo profilo di fatturazione è supportato dai pagamenti tramite fattura, non puoi modificare la modalità di pagamento. Puoi usare il pulsante **Paga ora** nella fattura per pagare con una carta di credito o di debito o tramite assegno o EFT.
 
-## <a name="related-articles"></a>Articoli correlati
+## <a name="related-content"></a>Contenuti correlati
 
 [Gestire i metodi di pagamento](manage-payment-methods.md) (articolo)\
 [Visualizzare la fattura](view-your-bill-or-invoice.md) (articolo)\
-[Comprendere la fattura (articolo)](understand-your-invoice2.md)
+[Comprendere la fattura (articolo)](understand-your-invoice.md)

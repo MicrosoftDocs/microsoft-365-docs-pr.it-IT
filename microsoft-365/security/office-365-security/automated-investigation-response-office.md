@@ -1,5 +1,5 @@
 ---
-title: Come funziona l'analisi e la risposta automatizzata in Microsoft Defender per Office 365
+title: Funzionamento dell'indagine e della risposta automatizzate in Microsoft Defender per Office 365
 f1.keywords:
 - NOCSH
 ms.author: deniseb
@@ -7,7 +7,6 @@ author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,85 +14,82 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-keywords: risposta agli incidenti automatici, analisi, correzione, protezione dalle minacce
-ms.date: 11/05/2020
-description: Vedere come funzionano le funzionalità di analisi e risposta automatizzate in Microsoft Defender per Office 365
+keywords: risposta automatizzata agli incidenti, indagine, correzione, protezione dalle minacce
+ms.date: 01/29/2021
+description: Informazioni sul funzionamento delle funzionalità di analisi e risposta automatizzate in Microsoft Defender per Office 365
 ms.custom:
 - air
 - seo-marvel-mar2020
-ms.openlocfilehash: 5ca9ea941d073c7b199678631a9063cfbeae8907
-ms.sourcegitcommit: cc354fd54400be0ff0401f60bbe68ed975b69cda
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 97cc2f6bcb066ff2d6f64254add3a57eb27b8828
+ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49864901"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50142550"
 ---
-# <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Come funziona l'analisi e la risposta automatizzata in Microsoft Defender per Office 365
+# <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Funzionamento dell'indagine e della risposta automatizzate in Microsoft Defender per Office 365
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+Quando vengono attivati avvisi di sicurezza, il team delle operazioni di sicurezza deve esaminare tali avvisi ed eseguire le operazioni necessarie per proteggere l'organizzazione. A volte, i team delle operazioni di sicurezza possono sentirsi sovraccaricati dal volume di avvisi che vengono attivati. Le funzionalità di analisi e risposta automatizzate (AIR) in Microsoft Defender per Office 365 possono essere di aiuto.
 
-Quando vengono attivati gli avvisi di sicurezza, spetta al team delle operazioni di sicurezza esaminare gli avvisi e procedere per proteggere l'organizzazione. A volte, i team delle operazioni di sicurezza possono sentirsi sopraffatti dal volume degli avvisi attivati. Le funzionalità di analisi e risposta automatizzate in Microsoft Defender per Office 365 possono essere utili.
+AIR consente al team delle operazioni di sicurezza di operare in modo più efficiente ed efficace. Le funzionalità AIR includono processi di indagine automatizzati in risposta alle minacce note che esistono oggi. Le azioni correttive appropriate attendono l'approvazione, consentendo al team delle operazioni di sicurezza di rispondere alle minacce rilevate.
 
-AIR consente al team di operazioni di sicurezza di operare in modo più efficiente ed efficace. Le funzionalità AEREe includono processi di analisi automatizzati in risposta a minacce ben note che esistono oggi. Le azioni correttive appropriate attendono l'approvazione, consentendo al team di operazioni di sicurezza di rispondere alle minacce rilevate.
+Questo articolo descrive il funzionamento di AIR in diversi esempi. Quando si è pronti per iniziare a usare AIR, vedere [Analizzare automaticamente e rispondere alle minacce.](office-365-air.md)
 
-In questo articolo viene descritto il funzionamento dell'aria attraverso diversi esempi. Quando si è pronti per iniziare a usare AIR, vedere [indagare e rispondere automaticamente alle minacce](office-365-air.md).
+- [Esempio 1: un messaggio di phish segnalato dall'utente avvia un playbook di indagine](#example-a-user-reported-phish-message-launches-an-investigation-playbook)
+- [Esempio 2: un amministratore della sicurezza avvia un'indagine da Esplora minacce](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)
+- [Esempio 3: Un team delle operazioni di sicurezza integra AIR con il SIEM usando l'API Office 365 Management Activity](#example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api)
 
-- [Esempio 1: un messaggio di phishing riferito dall'utente avvia un playbook di analisi](#example-a-user-reported-phish-message-launches-an-investigation-playbook)
-- [Esempio 2: un amministratore della sicurezza attiva un'indagine da Esplora minacce](#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)
-- [Esempio 3: un team di operazioni di sicurezza integra l'aria con i propri SIEM utilizzando l'API di attività di gestione di Office 365](#example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api)
+## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>Esempio: un messaggio di phish segnalato dall'utente avvia un playbook di indagine
 
-## <a name="example-a-user-reported-phish-message-launches-an-investigation-playbook"></a>Esempio: un messaggio di phishing riferito dall'utente avvia un playbook di analisi
+Si supponga che un utente dell'organizzazione riceva un messaggio di posta elettronica che si pensa sia un tentativo di phishing. L'utente, preparato per segnalare tali [](enable-the-report-message-add-in.md) messaggi, utilizza il componente aggiuntivo Segnala messaggio o Segnala [phishing](enable-the-report-phish-add-in.md) per inviarlo a Microsoft per l'analisi. L'invio viene inviato anche al sistema ed  è visibile in Esplora risorse nella visualizzazione Invii (in precedenza nota come **visualizzazione segnalata dall'utente).** Inoltre, il messaggio segnalato dall'utente ora attiva un avviso informativo basato sul sistema, che avvia automaticamente il playbook di analisi.
 
-Si supponga che un utente dell'organizzazione riceva un messaggio di posta elettronica che ritengono essere un tentativo di phishing. L'utente, addestrato a segnalare tali messaggi, utilizza il [componente aggiuntivo segnala messaggio](enable-the-report-message-add-in.md) o il [componente aggiuntivo di phishing del report](enable-the-report-phish-add-in.md) per inviarlo a Microsoft per l'analisi. L'invio viene inviato anche al sistema ed è visibile in Esplora nella visualizzazione **invii** (in precedenza denominato visualizzazione **segnalata dall'utente** ). Inoltre, il messaggio visualizzato dall'utente ora attiva un avviso informativo basato sul sistema, che avvia automaticamente il PlayBook di analisi.
-
-Durante la fase di analisi radice, vengono valutati vari aspetti del messaggio di posta elettronica. Tra questi aspetti sono inclusi:
+Durante la fase di analisi radice, vengono valutati vari aspetti del messaggio di posta elettronica. Questi aspetti includono:
 
 - Determinazione del tipo di minaccia che potrebbe essere;
-- Chi lo ha inviato;
-- In cui è stato inviato il messaggio di posta elettronica (infrastruttura di invio);
-- Se sono state recapitate o bloccate altre istanze del messaggio di posta elettronica;
+- Chi l'ha inviata;
+- Da dove è stato inviato il messaggio di posta elettronica (infrastruttura di invio);
+- Se altre istanze del messaggio di posta elettronica sono state recapitate o bloccate;
 - Una valutazione dei nostri analisti;
-- Se il messaggio di posta elettronica è associato a qualsiasi campagna Nota;
+- Se il messaggio di posta elettronica è associato a campagne note;
 - e altro ancora.
 
-Dopo aver completato l'analisi radice, il PlayBook fornisce un elenco delle azioni consigliate da intraprendere sul messaggio di posta elettronica originale e le entità ad esso associate.
+Una volta completata l'indagine radice, il playbook fornisce un elenco delle azioni consigliate da eseguire sul messaggio di posta elettronica originale e sulle entità ad esso associate.
 
-Successivamente, vengono eseguiti diversi passaggi di indagine e di ricerca di minacce:
+Vengono quindi eseguiti diversi passaggi per l'analisi e la ricerca delle minacce:
 
-- I messaggi di posta elettronica simili vengono identificati tramite ricerche cluster di posta elettronica.
-- Il segnale viene condiviso con altre piattaforme, ad esempio [Microsoft Defender per endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection).
-- Si determina se gli utenti hanno fatto clic su eventuali collegamenti dannosi nei messaggi di posta elettronica sospetti.
-- Viene effettuato un controllo tramite Exchange Online Protection ([EOP](exchange-online-protection-overview.md)) e ([Microsoft Defender per Office 365](office-365-atp.md)) per verificare se sono presenti altri messaggi simili segnalati dagli utenti.
-- Viene effettuato un controllo per verificare se un utente è stato compromesso. Questa verifica utilizza i segnali di Office 365, [Microsoft cloud app Security](https://docs.microsoft.com/cloud-app-security)e [Azure Active Directory](https://docs.microsoft.com/azure/active-directory), correlando eventuali anomalie relative alle attività degli utenti.
+- Messaggi di posta elettronica simili vengono identificati tramite ricerche del cluster di posta elettronica.
+- Il segnale è condiviso con altre piattaforme, ad esempio [Microsoft Defender for Endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
+- Viene determinato se gli utenti hanno fatto clic su collegamenti dannosi nei messaggi di posta elettronica sospetti.
+- Viene eseguito un controllo in Exchange Online Protection ([EOP](exchange-online-protection-overview.md)) e ([Microsoft Defender per Office 365](office-365-atp.md)) per verificare se sono presenti altri messaggi simili segnalati dagli utenti.
+- Viene eseguito un controllo per verificare se un utente è stato compromesso. Questo controllo sfrutta i segnali in Office 365, [Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security)e Azure Active [Directory,](https://docs.microsoft.com/azure/active-directory)correlando eventuali anomalie correlate all'attività degli utenti.
 
-Durante la fase di caccia, i rischi e le minacce sono assegnati a vari passaggi di caccia.
+Durante la fase di ricerca, i rischi e le minacce vengono assegnati a diversi passaggi di ricerca.
 
-La correzione è la fase finale del PlayBook. Durante questa fase, vengono eseguite le operazioni di correzione, in base alle fasi di ricerca e caccia.
+La correzione è la fase finale del playbook. Durante questa fase vengono intraprese le procedure di correzione in base alle fasi di analisi e ricerca.
 
-## <a name="example-a-security-administrator-triggers-an-investigation-from-threat-explorer"></a>Esempio: un amministratore della sicurezza attiva un'indagine da Esplora minacce
+## <a name="example-a-security-administrator-triggers-an-investigation-from-threat-explorer"></a>Esempio: un amministratore della sicurezza avvia un'indagine da Esplora minacce
 
-Oltre alle indagini automatizzate attivate da un avviso, il team delle operazioni di sicurezza dell'organizzazione può attivare un'analisi automatizzata da una visualizzazione in [Esplora minacce](threat-explorer.md).  Questa indagine crea anche un avviso, in modo che gli incidenti di Microsoft Defender e gli strumenti di SIEM esterni possano vedere che questa indagine è stata attivata.
+Oltre alle indagini automatizzate attivate da un avviso, il team delle operazioni di sicurezza dell'organizzazione può attivare un'indagine automatizzata da una visualizzazione in [Esplora minacce.](threat-explorer.md)  Questa indagine crea anche un avviso, in modo che gli eventi imprevisti di Microsoft Defender e gli strumenti SIEM esterni possano vedere che questa indagine è stata attivata.
 
-Si supponga, ad esempio, di utilizzare la visualizzazione **antimalware** in Esplora risorse. Utilizzando le schede sotto il grafico, è possibile selezionare la scheda **posta elettronica** . Se si seleziona uno o più elementi nell'elenco, viene attivato il pulsante **+ Actions** .
+Si supponga, ad esempio, di utilizzare la visualizzazione **Malware** in Esplora risorse. Utilizzando le schede sotto il grafico, è possibile selezionare la **scheda Posta** elettronica. Se si selezionano uno o più elementi nell'elenco, viene attivato **il pulsante +** Azioni.
 
 ![Esplora risorse con i messaggi selezionati](../../media/Explorer-Malware-Email-ActionsInvestigate.png)
 
-Utilizzando il menu **azioni** , è possibile selezionare **Avvia analisi**.
+Usando il menu **Azioni,** puoi selezionare Attiva **analisi.**
 
-![Menu azioni per i messaggi selezionati](../../media/explorer-malwareview-selectedemails-actions.jpg)
+![Menu Azioni per i messaggi selezionati](../../media/explorer-malwareview-selectedemails-actions.jpg)
 
-Analogamente ai PlayBook attivati da un avviso, le indagini automatiche che vengono attivate da una visualizzazione in Esplora risorse includono un'analisi radice, procedure per identificare e correlare le minacce e le azioni consigliate per attenuare tali minacce.
+Analogamente ai playbook attivati da un avviso, le indagini automatiche attivate da una visualizzazione in Esplora risorse includono un'indagine radice, i passaggi per identificare e correlare le minacce e le azioni consigliate per attenuare tali minacce.
 
-## <a name="example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api"></a>Esempio: un team di operazioni di sicurezza integra l'aria con i propri SIEM utilizzando l'API di gestione delle attività di Office 365
+## <a name="example-a-security-operations-team-integrates-air-with-their-siem-using-the-office-365-management-activity-api"></a>Esempio: un team delle operazioni di sicurezza integra AIR con SIEM usando l'API Office 365 Management Activity
 
-Le funzionalità AEREe in Microsoft Defender per Office 365 includono [rapporti & dettagli che i](air-view-investigation-results.md) team delle operazioni di sicurezza possono utilizzare per monitorare e risolvere le minacce. Tuttavia, è anche possibile integrare le funzionalità AEREe con altre soluzioni. Tra gli esempi sono inclusi un sistema di gestione delle informazioni e di gestione eventi (SIEM), un System Management case o una soluzione per la creazione di report personalizzati. Questo tipo di integrazione può essere effettuato utilizzando l'API di [attività di gestione di Office 365](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference).
+Le funzionalità AIR in Microsoft Defender per Office 365 includono report & [dettagli](air-view-investigation-results.md) che i team delle operazioni di sicurezza possono usare per monitorare e affrontare le minacce. Tuttavia, è anche possibile integrare le funzionalità AIR con altre soluzioni. Alcuni esempi includono un sistema siem (Security Information and Event Management), un sistema di gestione dei casi o una soluzione personalizzata per la creazione di report. Questi tipi di integrazioni possono essere eseguite usando [l'API Office 365 Management Activity.](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)
 
-Ad esempio, di recente, un'organizzazione ha configurato un modo per il team delle operazioni di sicurezza per visualizzare gli avvisi di phishing segnalati dall'utente già elaborati in base all'aria. La soluzione integra avvisi rilevanti con il server SIEM dell'organizzazione e il sistema di gestione dei casi. La soluzione riduce notevolmente il numero di falsi positivi, in modo che il team delle operazioni di sicurezza possa concentrare il proprio tempo e lo sforzo su minacce effettive. Per ulteriori informazioni su questa soluzione personalizzata, vedere [Tech Community Blog: migliorare l'efficacia del SOC con Microsoft Defender per Office 365 e l'API di gestione di O365](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185).
+Ad esempio, di recente, un'organizzazione ha configurato un modo per il team delle operazioni di sicurezza per visualizzare gli avvisi di phish segnalati dagli utenti che sono già stati elaborati da AIR. La soluzione integra avvisi pertinenti con il server SIEM dell'organizzazione e il sistema di gestione dei casi. La soluzione riduce notevolmente il numero di falsi positivi in modo che il team delle operazioni di sicurezza possa concentrare tempo e impegno su minacce reali. Per ulteriori informazioni su questa soluzione personalizzata, vedere il blog della community tecnica: migliorare l'efficacia del SOC con [Microsoft Defender per Office 365 e l'API di gestione di O365.](https://techcommunity.microsoft.com/t5/microsoft-security-and/improve-the-effectiveness-of-your-soc-with-office-365-atp-and/ba-p/1525185)
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-- [Iniziare a usare AIR](office-365-air.md)
-
-- [Visitare la roadmap di Microsoft 365 per vedere cosa è stato pianificato e rilasciarlo presto](https://www.microsoft.com/microsoft-365/roadmap?filters=)
-
-- [Informazioni sulle funzionalità di analisi e risposta automatizzate in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [Introduzione all'uso di AIR](office-365-air.md)
+- [Visualizzare le azioni di correzione in sospeso o completate](air-review-approve-pending-completed-actions.md)

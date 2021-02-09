@@ -8,31 +8,34 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.assetid: 2921f544-8257-4bae-8e3a-ce9250e9f162
 ms.custom:
 - seo-marvel-apr2020
-description: Gli amministratori possono ottenere informazioni sui diversi tipi di oggetti recipient in standalone Exchange Online Protection (EOP).
-ms.openlocfilehash: c277365fb8a5c43108faa15a375af39ecc086eed
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: Gli amministratori possono conoscere i diversi tipi di oggetti destinatario in Exchange Online Protection (EOP) autonomo.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 20d1c3e77c916e2c04a9c35eceb410859eb85ba0
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48201735"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150268"
 ---
 # <a name="manage-recipients-in-standalone-eop"></a>Gestire i destinatari in Exchange Online Protection autonomo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Si applica a**
+-  [Exchange Online Protection autonomo](https://go.microsoft.com/fwlink/?linkid=2148611)
 
-Le organizzazioni standalone di Exchange Online Protection (EOP) prive di cassette postali di Exchange Online supportano i seguenti tipi di destinatari:
+Le organizzazioni Exchange Online Protection (EOP) autonome senza cassette postali di Exchange Online supportano i seguenti tipi di destinatari:
 
-- **Utenti di posta elettronica**: gli utenti di posta elettronica sono il tipo fondamentale di account utente nell'organizzazione di EOP autonoma. Gli utenti di posta elettronica dispongono di credenziali di accesso nell'organizzazione di EOP, ma dispongono di indirizzi di posta elettronica esterni (le cassette postali si trovano all'esterno dell'organizzazione di EOP).
+- **Utenti di** posta: gli utenti di posta sono il tipo fondamentale di account utente nell'organizzazione EOP autonoma. Gli utenti di posta elettronica dispongono di credenziali di accesso nell'organizzazione EOP, ma dispongono di indirizzi di posta elettronica esterni (le loro cassette postali si trovano all'esterno dell'organizzazione EOP).
 
   Per ulteriori informazioni sulla gestione degli utenti di posta elettronica in EOP, vedere [Gestione utenti di posta in EOP](manage-mail-users-in-eop.md).
 
-- **Gruppi**: è possibile creare i seguenti tipi di gruppi:
+- **Gruppi**: è possibile creare i tipi di gruppi seguenti:
 
   - Gruppi di distribuzione
   - Gruppi di sicurezza abilitati alla posta elettronica

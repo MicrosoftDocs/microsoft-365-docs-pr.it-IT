@@ -1,7 +1,7 @@
 ---
 title: Tabella DeviceFileEvents nello schema di ricerca avanzata
 description: Informazioni sugli eventi correlati ai file nella tabella DeviceFileEvents dello schema di ricerca avanzata
-keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, microsoft threat protection, Microsoft 365, mtp, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, filecreationevents, file, percorso, hash, sha1, sha256, md5
+keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, microsoft threat protection, microsoft 365, mtp, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, filecreationevents, devicefileevents, file, percorso, hash, sha1, sha256, md5
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: cb51d9b94cc500361f836f7ba8bc4fc290436805
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: cccbd268c8f69d6623df1ef4c8208d20ead2e9f5
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931327"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145308"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -47,7 +47,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `Timestamp` | datetime | Data e ora di registrazione dell'evento |
 | `DeviceId` | stringa | Identificatore univoco per il computer nel servizio |
 | `DeviceName` | stringa | Nome di dominio completo (FQDN) del computer |
-| `ActionType` | stringa | Tipo di attività che ha attivato l'evento. Per informazioni [dettagliate, vedere le informazioni di riferimento](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) sullo schema nel portale |
+| `ActionType` | stringa | Tipo di attività che ha attivato l'evento. Per informazioni [dettagliate, vedere la guida di riferimento](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) allo schema nel portale |
 | `FileName` | stringa | Nome del file a cui è stata applicata l'azione registrata |
 | `FolderPath` | stringa | Cartella contenente il file a cui è stata applicata l'azione registrata |
 | `SHA1` | stringa | SHA-1 del file a cui è stata applicata l'azione registrata |
@@ -56,12 +56,16 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `FileOriginUrl` | stringa | URL da cui è stato scaricato il file |
 | `FileOriginReferrerUrl` | stringa | URL della pagina Web collegata al file scaricato |
 | `FileOriginIP` | stringa | Indirizzo IP da cui è stato scaricato il file |
+| `PreviousFolderPath` | stringa | Cartella originale contenente il file prima dell'applicazione dell'azione registrata |
+| `PreviousFileName` | stringa | Nome originale del file rinominato in seguito all'azione |
+| `FileSize` | long | Dimensioni del file in byte |
 | `InitiatingProcessAccountDomain` | stringa | Dominio dell'account che ha eseguito il processo responsabile dell'evento |
 | `InitiatingProcessAccountName` | stringa | Nome utente dell'account che ha eseguito il processo responsabile dell'evento |
 | `InitiatingProcessAccountSid` | stringa | Identificatore di sicurezza (SID) dell'account che ha eseguito il processo responsabile dell'evento |
+| `InitiatingProcessAccountUpn` | stringa | Nome dell'entità utente (UPN) dell'account che ha eseguito il processo responsabile dell'evento |
 | `InitiatingProcessMD5` | stringa | Hash MD5 del processo (file immagine) che ha avviato l'evento |
 | `InitiatingProcessSHA1` | stringa | SHA-1 del processo (file immagine) che ha avviato l'evento |
-| `InitiatingProcessSHA256` | stringa | SHA-256 del processo (file immagine) che ha avviato l'evento. (questo campo in genere non viene popolato: usare la colonna SHA1, se disponibile). |
+| `InitiatingProcessSHA256` | stringa | SHA-256 del processo (file di immagine) che ha avviato l'evento. (questo campo in genere non viene popolato: usare la colonna SHA1, se disponibile). |
 | `InitiatingProcessFolderPath` | stringa | Cartella contenente il processo (file immagine) che ha avviato l'evento |
 | `InitiatingProcessFileName` | stringa | Nome del processo che ha avviato l'evento |
 | `InitiatingProcessId` | int | ID processo (PID) del processo che ha avviato l'evento |
@@ -79,8 +83,10 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `RequestAccountName` | stringa | Nome utente dell'account utilizzato per avviare l'attività in remoto |
 | `RequestAccountDomain` | stringa | Dominio dell'account usato per avviare l'attività in remoto |
 | `RequestAccountSid` | stringa | Identificatore di sicurezza (SID) dell'account usato per avviare in remoto l'attività |
-| `ReportId` | long | Identificatore di evento basato su un contatore ripetuto. Per identificare eventi univoci, questa colonna deve essere usata insieme alle colonne DeviceName e Timestamp |
+| `ReportId` | long | Identificatore di evento basato su un contatore ripetuto. Per identificare eventi univoci, questa colonna deve essere usata insieme alle colonne DeviceName e Timestamp. |
 | `AppGuardContainerId` | stringa | Identificatore del contenitore virtualizzato usato da Application Guard per isolare l'attività del browser |
+| `AdditionalFields` | stringa | Ulteriori informazioni sull'entità o sull'evento |
+| `InitiatingProcessFileSize` | long | Dimensioni del file che ha eseguito il processo responsabile dell'evento |
 | `SensitivityLabel` | stringa | Etichetta applicata a un messaggio di posta elettronica, un file o altro contenuto per classificarlo per la protezione delle informazioni |
 | `SensitivitySubLabel` | stringa | Sottoetichetta applicata a un messaggio di posta elettronica, file o altro contenuto per classificarlo per la protezione delle informazioni; Le sottoetichetta di riservatezza sono raggruppate sotto le etichette di riservatezza, ma vengono trattate in modo indipendente |
 | `IsAzureInfoProtectionApplied` | boolean | Indica se il file è crittografato da Azure Information Protection |

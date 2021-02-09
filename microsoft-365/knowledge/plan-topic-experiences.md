@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Informazioni su come pianificare gli argomenti relativi alla pianificazione per Microsoft Viva
-ms.openlocfilehash: 65983f342b3277d33c7bfeb21d8481b1d3d5e817
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 2f7b85399f0b1f49e25aae1f1d4627413594f618
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107955"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150479"
 ---
 # <a name="plan-for-microsoft-viva-topics"></a>Pianificare gli argomenti di Microsoft Viva
 
@@ -27,14 +27,14 @@ In questo articolo verranno esaminate queste decisioni di pianificazione:
 - Quali argomenti, se presenti, si desidera escludere dalle esperienze degli argomenti
 - Utenti a cui si desidera rendere visibili gli argomenti
 - Quali utenti si desidera concedere le autorizzazioni per gestire gli argomenti nel Centro argomenti
-- Utenti a cui si desidera concedere le autorizzazioni per creare o modificare argomenti nel Centro argomenti
+- Quali utenti si desidera concedere le autorizzazioni per creare o modificare argomenti nel Centro argomenti
 - Nome da assegnare al Centro argomenti
 
 La sicurezza e la privacy dei dati vengono rispettate e le esperienze degli argomenti non concedono agli utenti ulteriori accessi ai file per cui non hanno diritti. È consigliabile leggere anche [microsoft Viva Topics sulla sicurezza e la privacy](topic-experiences-security-privacy.md) nell'ambito del processo di pianificazione.
 
 ## <a name="requirements"></a>Requisiti
 
-È necessario essere un amministratore globale o un amministratore di SharePoint per accedere all'interfaccia di amministrazione di Microsoft 365 e configurare Gli argomenti.
+È necessario essere [iscritti ad Argomenti Viva](https://www.microsoft.com/microsoft-viva/topics) ed essere un amministratore globale o un amministratore di SharePoint per accedere all'interfaccia di amministrazione di Microsoft 365 e configurare Gli argomenti.
 
 Tutti gli utenti che useranno gli argomenti necessitano di **una licenza Per le esperienze di** argomento. L'assegnazione delle licenze è trattata in [Configurare Microsoft Viva Topics.](set-up-topic-experiences.md)
 
@@ -77,7 +77,7 @@ I collaboratori degli argomenti sono i campioni e gli esperti in materia nell'or
 
 È consigliabile consentire a tutti gli utenti dell'organizzazione di creare e modificare argomenti perché le esperienze degli argomenti funzionano al meglio quando tutti gli utenti possono condividere informazioni.
 
-Se si desidera limitare la creazione e la modifica di argomenti a utenti o gruppi specifici, creare un gruppo di sicurezza e specificarlo durante il processo di installazione.
+Se si desidera limitare la creazione e la modifica di argomenti a utenti o gruppi specifici, creare un gruppo di sicurezza per loro e specificarlo durante il processo di installazione.
 
 È possibile scegliere di non consentire a nessuno di contribuire agli argomenti, ma non è consigliabile. Se si sceglie questa opzione, i knowledge manager potranno comunque modificare e creare argomenti.
 
@@ -91,7 +91,7 @@ Quando si configurano i visualizzatori di argomenti, è possibile scegliere tra:
 - **Solo utenti o gruppi di sicurezza selezionati**
 - **Nessuno**
 
-È **consigliabile usare tutti gli** utenti dell'organizzazione, ma se si sta eseguendo un progetto pilota è consigliabile scegliere solo utenti o gruppi di sicurezza selezionati. È anche possibile scegliere **Nessuno se** si desidera configurare Gli argomenti, ma non consentire agli utenti di visualizzare ancora gli argomenti. I responsabili della conoscenza avranno comunque accesso per consentire loro di visualizzare gli argomenti e ottenere assistenza per la decisione di rendere gli argomenti disponibili su vasta gamma.
+È **consigliabile usare tutti gli** utenti dell'organizzazione, ma se si sta eseguendo un progetto pilota è consigliabile scegliere solo utenti o gruppi di sicurezza selezionati. È anche possibile scegliere **Nessuno** se si desidera configurare Gli argomenti, ma non consentire agli utenti di visualizzare ancora gli argomenti. I responsabili della conoscenza avranno comunque accesso per consentire loro di visualizzare gli argomenti e ottenere assistenza per la decisione di rendere gli argomenti disponibili su vasta gamma.
 
 ## <a name="knowledge-rules"></a>Regole di conoscenza
 

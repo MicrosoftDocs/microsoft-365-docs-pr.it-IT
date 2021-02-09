@@ -9,105 +9,109 @@ audience: ITPro
 ms.topic: conceptual
 localization_priority: Normal
 ms.assetid: ''
-description: Gli amministratori possono scoprire come utilizzare i nuovi utenti per l'inoltro della posta elettronica nel centro sicurezza & Compliance per esaminare quando gli utenti dell'organizzazione stanno inoltrando i messaggi ai nuovi domini.
+description: Gli amministratori possono imparare a usare le informazioni dettagliate sui nuovi utenti che inoltrano la posta elettronica nel Centro sicurezza & conformità per analizzare quando gli utenti dell'organizzazione inoltrano i messaggi a nuovi domini.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: af991cb0af20a0f48bc5283d4e4fb26ea75d6ba6
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: 7b86d726979991a55e7d4e43bf3581a4a664ee4f
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029871"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150256"
 ---
-# <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>Nuovi utenti che inoltrano informazioni sulla posta elettronica nel centro sicurezza & Compliance
+# <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>Nuovi utenti che inoltrano informazioni dettagliate sulla posta elettronica nel Centro sicurezza & conformità
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Si applica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-È sospetto che i nuovi account utente dell'organizzazione inizino improvvisamente a inoltrare messaggi di posta elettronica ai domini esterni.
+È sospetto quando i nuovi account utente nell'organizzazione iniziano improvvisamente ad inoltrare i messaggi di posta elettronica ai domini esterni.
 
-I **nuovi domini che vengono inoltrati tramite posta elettronica** nel [Centro sicurezza & Compliance](https://protection.office.com) notifica quando gli utenti appena creati nell'organizzazione stanno inoltrando i messaggi a domini esterni. Questa condizione potrebbe indicare che sono stati utilizzati account di amministrazione compromessi per creare i nuovi utenti. Se si sospetta che gli account siano stati compromessi, vedere [rispondere a un account di posta elettronica compromesso](responding-to-a-compromised-email-account.md).
+I **nuovi domini inoltrati** tramite posta elettronica nel Centro sicurezza [&](https://protection.office.com) conformità notificano quando gli utenti appena creati nell'organizzazione inoltrano i messaggi ai domini esterni. Questa condizione potrebbe indicare che sono stati usati account amministratore compromessi per creare i nuovi utenti. Se si sospetta che gli account siano stati compromessi, vedere [Rispondere a un account di posta elettronica compromesso.](responding-to-a-compromised-email-account.md)
 
-Questa intuizione viene visualizzata solo quando il problema viene rilevato e viene visualizzato nella pagina del [rapporto di inoltro](view-mail-flow-reports.md#forwarding-report) .
+Queste informazioni vengono visualizzate solo quando viene rilevato il problema e vengono visualizzate nella pagina [del rapporto di](view-mail-flow-reports.md#forwarding-report) inoltro.
 
 ![Informazioni dettagliate sui messaggi di posta elettronica dei nuovi utenti inoltrati](../../media/mfi-new-users-forwarding-email.png)
 
-Quando si fa clic sul widget, viene visualizzato un riquadro a comparsa in cui è possibile trovare ulteriori dettagli sui messaggi inoltrati, incluso un collegamento al [rapporto modifiche di inoltro](#forwarding-modifications-report) come descritto più avanti in questo articolo.
+Quando si fa clic sul widget, viene visualizzato un riquadro a comparsa in cui è possibile trovare ulteriori dettagli sui messaggi inoltrati, incluso un collegamento al [report](#forwarding-modifications-report) Modifiche di inoltro, come descritto più avanti in questo articolo.
 
-![Riquadro a comparsa Dettagli visualizzato dopo aver fatto clic sul nuovo messaggio di posta elettronica di inoltro degli utenti](../../media/mfi-new-users-forwarding-email-details.png)
+![Riquadro a comparsa Dettagli che viene visualizzato dopo aver fatto clic su Informazioni dettagliate sui nuovi utenti che inoltrano i messaggi di posta elettronica](../../media/mfi-new-users-forwarding-email-details.png)
 
-È inoltre possibile accedere a questa pagina dei dettagli quando si seleziona l'Insight dopo aver fatto clic su **Visualizza tutti** nell'area **suggerimenti & consigliati** (dashboard dei **report** \>  o <https://protection.office.com/insightdashboard> ).
+È inoltre possibile accedere **a** questa pagina dei  dettagli quando si selezionano le informazioni dettagliate dopo aver fatto clic su Visualizza tutto nell'area Principali & suggerimenti in **(** \> **Dashboard** report o <https://protection.office.com/insightdashboard> ).
 
-È possibile fare clic sul collegamento **Visualizza rapporto associato a Insight** per passare al **rapporto modifiche di inoltro** come descritto nella sezione successiva.
+È possibile fare clic **sul collegamento** Visualizza report associato alle informazioni dettagliate per passare al **report** Modifiche inoltro come descritto nella sezione successiva.
 
-## <a name="forwarding-modifications-report"></a>Report sulle modifiche di inoltro
+## <a name="forwarding-modifications-report"></a>Rapporto modifiche inoltro
 
-Il **rapporto modifiche di inoltro** Visualizza i dettagli sui messaggi che vengono inoltrati automaticamente dai mittenti nell'organizzazione:
+Il **rapporto Modifiche inoltro mostra** i dettagli sui messaggi che vengono inoltrati automaticamente dai mittenti dell'organizzazione:
 
 - Account appena creati che inoltrano messaggi a domini esterni.
-- Account che inoltrano messaggi a domini esterni che non sono mai stati inoltrati da altri mittenti nell'organizzazione.
+- Account che inoltrano messaggi a domini esterni a cui non sono mai stati inoltrati altri mittenti nell'organizzazione.
 
-Questi tipi di messaggi inoltrati possono rappresentare un rischio per la sicurezza o la conformità e potrebbero indicare account compromessi.
+Questi tipi di messaggi inoltrati possono rappresentare un rischio per la sicurezza o la conformità e possono indicare account compromessi.
 
-Il report contiene dati per un massimo di 90 giorni. Per impostazione predefinita, il report Visualizza i dati per gli ultimi 7 giorni.
+Il report contiene dati per un massimo di 90 giorni. Per impostazione predefinita, il report mostra i dati degli ultimi 7 giorni.
 
-Questo report non è disponibile direttamente nel [Dashboard del flusso di posta](mail-flow-insights-v2.md) o nel [dashboard dei report](view-mail-flow-reports.md). Oltre a fare clic sul collegamento **Visualizza rapporto associato a Insight** nell'Insight della **posta elettronica per l'inoltro di nuovi utenti** , è possibile accedere al rapporto:
+Questo report non è disponibile direttamente nel dashboard del [flusso di posta](mail-flow-insights-v2.md) o nel dashboard [report.](view-mail-flow-reports.md) Oltre a fare clic sul collegamento Visualizza  **report** associato alle informazioni dettagliate in Informazioni dettagliate sui nuovi utenti che inoltrano i messaggi di posta elettronica, è possibile accedere al report tramite:
 
-- Facendo clic sul collegamento **segnala notifiche di inoltro** nei dettagli dei [nuovi domini che vengono inoltrati tramite posta elettronica Insight](mfi-new-domains-being-forwarded-email.md).
+- Facendo clic **sul collegamento del rapporto notifiche** di inoltro nei dettagli dei nuovi domini inoltrati, informazioni [dettagliate sulla posta elettronica.](mfi-new-domains-being-forwarded-email.md)
 - Apertura <https://protection.office.com/reportv2?id=MailFlowNewForwarding> .
 
-### <a name="report-view-for-the-forwarding-modifications-report"></a>Visualizzazione report per il rapporto modifiche di inoltro
+### <a name="report-view-for-the-forwarding-modifications-report"></a>Visualizzazione report per il report Modifiche inoltro
 
 Nella visualizzazione report sono disponibili i grafici seguenti:
 
-- **Mostra dati per: nuovi utenti di inoltro**:
+- **Mostra dati per: Nuovi utenti di inoltro:**
 
-  ![Visualizzazione di nuovi utenti di inoltro nel rapporto modifiche di inoltro](../../media/forwarding-modifications-report-new-forwarding-users.png)
+  ![Visualizzazione Nuovi utenti di inoltro nel report Modifiche inoltro](../../media/forwarding-modifications-report-new-forwarding-users.png)
 
-- **Mostra dati per: nuovi domini di inoltro**:
+- **Mostra dati per: Nuovi domini di inoltro:**
 
-  ![Nuova visualizzazione domini inoltrati nel rapporto modifiche di inoltro](../../media/forwarding-modifications-report-new-forwarded-domains.png)
+  ![Nuova visualizzazione dei domini inoltrati nel report Modifiche inoltro](../../media/forwarding-modifications-report-new-forwarded-domains.png)
 
-Se si fa clic su **filtri** in una visualizzazione report, è possibile specificare un intervallo di date con data di **inizio** e **Data di fine**.
+Se si fa **clic su Filtri** in una visualizzazione report, è possibile specificare un intervallo di date con Data di inizio **e** Data **di fine.**
 
-### <a name="details-table-view-for-the-forwarding-modifications-report"></a>Visualizzazione tabella dettagli per il report modifiche di inoltro
+### <a name="details-table-view-for-the-forwarding-modifications-report"></a>Visualizzazione tabella dettagli per il report Modifiche inoltro
 
-Se si fa clic su **Visualizza tabella dettagli**, le informazioni visualizzate dipendono dal grafico che si sta esaminando:
+Se si **fa clic su Visualizza tabella dettagli,** le informazioni visualizzate dipendono dal grafico visualizzato:
 
-- **Mostra dati per: nuovi utenti di inoltro**:
+- **Mostra dati per: Nuovi utenti di inoltro:**
 
-  - **Nome**: l'indirizzo di posta elettronica del mittente.
+  - **Nome:** l'indirizzo di posta elettronica del mittente.
   - **Tipo di inoltro**
-  - **Indirizzo del destinatario**
+  - **Indirizzo destinatario**
   - **Dettagli**
   - **Numero**
-  - **Prima data di inoltro**
+  - **First forward date**
 
-- **Mostra dati per: nuovi domini di inoltro**:
+- **Mostra dati per: Nuovi domini di inoltro:**
 
-  - **Nome**: il dominio di posta elettronica del mittente.
+  - **Name**: Il dominio di posta elettronica del mittente.
   - **Tipo di inoltro**
-  - **Indirizzo del destinatario**
+  - **Indirizzo destinatario**
   - **Dettagli**
   - **Numero**
-  - **Prima data di inoltro**
+  - **First forward date**
 
-Se si fa clic su **filtri** in una visualizzazione tabella dettagli, è possibile specificare un intervallo di date con data di **inizio** e **Data di fine**.
+Se si fa **clic su Filtri** in una visualizzazione tabella dei dettagli, è possibile specificare un intervallo di date con Data di inizio **e** Data **di fine.**
 
-Se si seleziona una riga dalla tabella, verrà visualizzato un riquadro a comparsa **Dettagli** con le informazioni seguenti:
+Se si seleziona una riga dalla tabella, verrà **visualizzato** un riquadro a comparsa Dettagli con le informazioni seguenti:
 
-- **Nome**: questo è l'indirizzo di posta elettronica del mittente (da Mostra **dati per: nuova visualizzazione utenti di inoltro** ) o il dominio di posta elettronica del mittente (da Mostra **dati per: nuova visualizzazione domini di inoltro** ).
+- **Nome**: Si tratta dell'indirizzo di posta elettronica del mittente (da Mostra dati **per:** Visualizzazione nuovi utenti di inoltro) o del dominio di posta elettronica del mittente (da Mostra dati **per:** Visualizzazione nuovi domini di inoltro).
 - **Tipo di inoltro**
 - **Destinatario**
 - **Dettagli**
 - **Numero**
 - **Data di inizio**
-- **Suggerimento**: da qui, è possibile fare clic sul collegamento per gestire l'utente nell'interfaccia di amministrazione di Microsoft 365.
+- **Suggerimento:** da qui è possibile fare clic sul collegamento per gestire l'utente nell'interfaccia di amministrazione di Microsoft 365.
 
-![Riquadro a comparsa dettagli dalla tabella dei dettagli della nuova visualizzazione utenti di inoltro nel rapporto modifiche di inoltro](../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png)
+![Riquadro a comparsa Dettagli dalla tabella dei dettagli della visualizzazione Nuovi utenti di inoltro nel report Modifiche inoltro](../../media/mfi-forwarding-modifications-report-new-forwarding-users-view-details-table-details.png)
 
-Per tornare alla visualizzazione report, fare clic su **Visualizza report**.
+Per tornare alla visualizzazione report, fare clic su **Visualizza report.**
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-Per informazioni su altre intuizioni nel dashboard del flusso di posta, vedere [Mail Flow Insights in the Security & Compliance Center](mail-flow-insights-v2.md).
+Per informazioni su altre informazioni dettagliate nel dashboard del flusso di posta, vedere Informazioni dettagliate sul flusso di posta [nel Centro sicurezza & conformità.](mail-flow-insights-v2.md)
