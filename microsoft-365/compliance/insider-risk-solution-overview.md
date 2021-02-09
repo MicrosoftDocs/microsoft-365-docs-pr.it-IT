@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 71eb42c0912edc258b1a33698f1942140d91feb3
-ms.sourcegitcommit: b88ffaf3409e02a9847f030f8468f96d36efa398
+ms.openlocfilehash: 6c8d0dee3b1452c9a43b6b0b1b36e96f19e5abcd
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50105197"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150630"
 ---
 # <a name="insider-risk-solutions-in-microsoft-365"></a>Soluzioni per i rischi Insider in Microsoft 365
 
@@ -34,7 +34,7 @@ Le funzionalità di prevenzione dei rischi di Microsoft 365 sono progettate e in
 | :---- | :-------- | :--------------------------- | :-------------------------- |:-------------------------| :--------------------------------|
 | ![Icona di perdita di dati](../media/ir-risk-data-spillage.png)| Perdita di dati | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) |  |  |
 | ![Icona Violazioni di riservatezza](../media/ir-risk-confidentiality-violations.png)| Violazioni di riservatezza | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) |  |
-| ![Icona furto IP](../media/ir-risk-ip-theft.png)| Furto IP | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) |  |
+| ![Icona furto IP](../media/ir-risk-ip-theft.png)| Furti ip | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) |  |
 | ![Icona della violenza sul luogo di lavoro](../media/ir-risk-workplace-violence.png)| Violenza sul luogo di lavoro | ![Supportato](../media/check-mark.png) |  |  |  |
 | ![Icona frode/frode](../media/ir-risk-fraud.png)| Frode | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) |  |  |
 | ![Icona Violazioni dei criteri](../media/ir-risk-policy-violations.png)| Violazioni dei criteri | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) | ![Supportato](../media/check-mark.png) |
@@ -79,8 +79,8 @@ La gestione dei rischi Insider è disponibile negli abbonamenti seguenti:
 - Abbonamento a Microsoft 365 A3 + componente aggiuntivo Conformità Microsoft 365 A5
 - Abbonamento a Microsoft 365 A3 + componente aggiuntivo Microsoft 365 A5 Insider Risk Management
 - Abbonamento a Microsoft 365 G5 (versione di valutazione o a pagamento)
-- Abbonamento a Microsoft 365 G5 + componente aggiuntivo conformità Microsoft 365 G5
-- Abbonamento a Microsoft 365 G5 + componente aggiuntivo Microsoft 365 G5 Insider Risk Management
+- Abbonamento a Microsoft 365 G3 + componente aggiuntivo conformità Microsoft 365 G5
+- Abbonamento a Microsoft 365 G3 + componente aggiuntivo Gestione dei rischi insider di Microsoft 365 G5
 
 ### <a name="information-barriers"></a>Barriere informative
 
@@ -143,5 +143,5 @@ Microsoft 365 fornisce le risorse seguenti per informare e formare questi utenti
 | Gestire i rischi Insider in Microsoft 365 |[Percorso di apprendimento completo](/learn/paths/m365-compliance-insider) <br> Questo percorso di apprendimento include tutti i singoli moduli della soluzione per la conformità delle comunicazioni, la gestione dei rischi Insider, le barriere in fatto di informazioni e la gestione degli accessi privilegiati. Selezionare questo percorso di apprendimento per completare tutti i moduli. |
 | Conformità delle comunicazioni | [Modulo di apprendimento: Preparare la conformità delle comunicazioni in Microsoft 365](/learn/modules/m365-compliance-insider-prepare-communication-compliance) <br> Questo modulo consente di apprendere le nozioni di base su come identificare e correggere le violazioni dei criteri di code-of-conduct con la conformità delle comunicazioni, di coprire i prerequisiti necessari prima di creare i criteri di conformità delle comunicazioni e di conoscere i tipi di modelli di criteri predefiniti predefiniti nella conformità alle comunicazioni. |
 | Gestione dei rischi Insider | [Modulo di apprendimento: Gestione dei rischi Insider in Microsoft 365](/learn/modules/m365-compliance-insider-manage-insider-risk) <br> Questo modulo consente di scoprire in che modo la gestione dei rischi Insider in Microsoft 365 può aiutare a prevenire, rilevare e contenere rischi interni in un'organizzazione, a conoscere i tipi di modelli di criteri predefiniti predefiniti, a comprendere i prerequisiti di base necessari prima di creare criteri di rischio Insider e a illustrare i tipi di azioni che è possibile eseguire sui casi di gestione dei rischi Insider. |
-| Barriere informative | [Modulo di apprendimento: Pianificare le barriere in fatto di informazioni](/learn/modules/m365-compliance-insider-plan-information-barriers) <br> Questo modulo consente di scoprire in che modo i criteri delle barriere in materia di informazioni possono aiutare l'organizzazione a mantenere la conformità con gli standard e le normative del settore pertinenti, elenca i tipi di situazioni in cui sono applicabili le barriere in materia di informazioni, spiega il processo di creazione di un criterio delle barriere di informazioni e spiega come risolvere i problemi imprevisti dopo l'applicazione delle barriere in materia di informazioni. |
+| Barriere informative | [Modulo di apprendimento: Pianificare le barriere in fatto di informazioni](/learn/modules/m365-compliance-insider-plan-information-barriers) <br> Questo modulo consente di scoprire in che modo i criteri delle barriere di informazioni possono aiutare l'organizzazione a mantenere la conformità agli standard e alle normative del settore pertinenti, elenca i tipi di situazioni in cui sarebbero applicabili le barriere in materia di informazioni, spiega il processo di creazione di un criterio di barriere delle informazioni e spiega come risolvere i problemi imprevisti dopo l'applicazione delle barriere in materia di informazioni. |
 | Gestione accessi con privilegi | [Modulo di apprendimento: Implementare la gestione degli accessi con privilegi](/learn/modules/m365-compliance-insider-implement-privileged-access-management) <br> Questo modulo consente di comprendere la differenza tra la gestione degli accessi con privilegi e la gestione delle identità con privilegi, di comprendere il flusso del processo di gestione degli accessi con privilegi e di comprendere le nozioni di base su come configurare e abilitare la gestione degli accessi con privilegi. |
