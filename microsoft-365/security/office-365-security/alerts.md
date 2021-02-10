@@ -1,5 +1,5 @@
 ---
-title: Avvisi nel centro sicurezza & conformità
+title: Avvisi nel Centro sicurezza & conformità
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: Admin
 ms.topic: hub-page
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MOE150
@@ -18,52 +17,57 @@ ms.assetid: 2bb4e7c0-5f7f-4144-b647-cc6a956aaa53
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: Informazioni su come utilizzare le funzionalità avvisi nel centro sicurezza & conformità di Office 365 per visualizzare e gestire gli avvisi, tra cui la gestione di avvisi avanzati.
+description: Informazioni su come usare le funzionalità degli avvisi nel Centro sicurezza & e conformità di Office 365 per visualizzare e gestire gli avvisi, inclusa la gestione degli avvisi avanzati.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a40e880315b49620c372cf09416457c1bcaa00e7
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: f4af23ac1fd3c7272fc60b2228bf808351cb4d2b
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49615049"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176028"
 ---
-# <a name="alerts-in-the-security--compliance-center"></a><span data-ttu-id="1f931-103">Avvisi nel centro sicurezza & conformità</span><span class="sxs-lookup"><span data-stu-id="1f931-103">Alerts in the Security & Compliance Center</span></span>
+# <a name="alerts-in-the-security--compliance-center"></a><span data-ttu-id="63026-103">Avvisi nel Centro sicurezza & conformità</span><span class="sxs-lookup"><span data-stu-id="63026-103">Alerts in the Security & Compliance Center</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+<span data-ttu-id="63026-104">**Si applica a**</span><span class="sxs-lookup"><span data-stu-id="63026-104">**Applies to**</span></span>
+- [<span data-ttu-id="63026-105">Exchange Online Protection</span><span class="sxs-lookup"><span data-stu-id="63026-105">Exchange Online Protection</span></span>](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [<span data-ttu-id="63026-106">Microsoft Defender per Office 365 piano 1 e piano 2</span><span class="sxs-lookup"><span data-stu-id="63026-106">Microsoft Defender for Office 365 plan 1 and plan 2</span></span>](https://go.microsoft.com/fwlink/?linkid=2148715)
 
-<span data-ttu-id="1f931-104">Utilizzare le funzionalità avvisi nel centro sicurezza & conformità per visualizzare e gestire gli avvisi per la propria organizzazione, inclusa la gestione di avvisi avanzati come parte di [Microsoft cloud app Security Overview](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security).</span><span class="sxs-lookup"><span data-stu-id="1f931-104">Use the alerts features in the Security & Compliance Center to view and manage alerts for your organization, including managing advanced alerts as part of [Microsoft Cloud App Security overview](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security).</span></span>
+<span data-ttu-id="63026-107">Usare le funzionalità degli avvisi nel Centro sicurezza & conformità per visualizzare e gestire gli avvisi per l'organizzazione, inclusa la gestione degli avvisi avanzati nell'ambito della panoramica di [Microsoft Cloud App Security.](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)</span><span class="sxs-lookup"><span data-stu-id="63026-107">Use the alerts features in the Security & Compliance Center to view and manage alerts for your organization, including managing advanced alerts as part of [Microsoft Cloud App Security overview](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security).</span></span>
 
-## <a name="how-to-get-to-the-alerts-features"></a><span data-ttu-id="1f931-105">Come accedere alle funzionalità di avvisi</span><span class="sxs-lookup"><span data-stu-id="1f931-105">How to get to the alerts features</span></span>
+## <a name="how-to-get-to-the-alerts-features"></a><span data-ttu-id="63026-108">Come accedere alle funzionalità degli avvisi</span><span class="sxs-lookup"><span data-stu-id="63026-108">How to get to the alerts features</span></span>
 
-<span data-ttu-id="1f931-106">Gli avvisi sono nel centro sicurezza & conformità.</span><span class="sxs-lookup"><span data-stu-id="1f931-106">Alerts are in the Security & Compliance Center.</span></span> <span data-ttu-id="1f931-107">Ecco come accedere alla pagina.</span><span class="sxs-lookup"><span data-stu-id="1f931-107">Here's how to get to the page.</span></span>
+<span data-ttu-id="63026-109">Gli avvisi sono disponibili nel Centro sicurezza & conformità.</span><span class="sxs-lookup"><span data-stu-id="63026-109">Alerts are in the Security & Compliance Center.</span></span> <span data-ttu-id="63026-110">Ecco come accedere alla pagina.</span><span class="sxs-lookup"><span data-stu-id="63026-110">Here's how to get to the page.</span></span>
 
-### <a name="to-go-directly-to-the-security--compliance-center"></a><span data-ttu-id="1f931-108">Per accedere direttamente al centro sicurezza & conformità</span><span class="sxs-lookup"><span data-stu-id="1f931-108">To go directly to the Security & Compliance Center</span></span>
+### <a name="to-go-directly-to-the-security--compliance-center"></a><span data-ttu-id="63026-111">Per passare direttamente al Centro sicurezza & conformità</span><span class="sxs-lookup"><span data-stu-id="63026-111">To go directly to the Security & Compliance Center</span></span>
 
-1. <span data-ttu-id="1f931-109">Passare a <https://protection.office.com>.</span><span class="sxs-lookup"><span data-stu-id="1f931-109">Go to <https://protection.office.com>.</span></span>
+1. <span data-ttu-id="63026-112">Passare a <https://protection.office.com>.</span><span class="sxs-lookup"><span data-stu-id="63026-112">Go to <https://protection.office.com>.</span></span>
 
-2. <span data-ttu-id="1f931-110">Accedere usando l'account aziendale o dell'istituto di istruzione.</span><span class="sxs-lookup"><span data-stu-id="1f931-110">Sign in using your work or school account.</span></span>
+2. <span data-ttu-id="63026-113">Accedere usando l'account aziendale o dell'istituto di istruzione.</span><span class="sxs-lookup"><span data-stu-id="63026-113">Sign in using your work or school account.</span></span>
 
-3. <span data-ttu-id="1f931-111">Nel riquadro sinistro fare clic su **avvisi** per visualizzare le funzionalità avvisi.</span><span class="sxs-lookup"><span data-stu-id="1f931-111">In the left pane, click **Alerts** to see the alerts features.</span></span>
+3. <span data-ttu-id="63026-114">Nel riquadro sinistro fare clic su **Avvisi** per visualizzare le funzionalità degli avvisi.</span><span class="sxs-lookup"><span data-stu-id="63026-114">In the left pane, click **Alerts** to see the alerts features.</span></span>
 
-### <a name="to-go-to-the-security--compliance-center-using-the-app-launcher"></a><span data-ttu-id="1f931-112">Per accedere al centro sicurezza & conformità tramite l'icona di avvio delle app</span><span class="sxs-lookup"><span data-stu-id="1f931-112">To go to the Security & Compliance Center using the app launcher</span></span>
+### <a name="to-go-to-the-security--compliance-center-using-the-app-launcher"></a><span data-ttu-id="63026-115">Per accedere al Centro sicurezza & conformità tramite l'icona di avvio delle app</span><span class="sxs-lookup"><span data-stu-id="63026-115">To go to the Security & Compliance Center using the app launcher</span></span>
 
-1. <span data-ttu-id="1f931-113">Accedere usando l'account aziendale o dell'istituto di istruzione.</span><span class="sxs-lookup"><span data-stu-id="1f931-113">Sign in using your work or school account.</span></span>
+1. <span data-ttu-id="63026-116">Accedere usando l'account aziendale o dell'istituto di istruzione.</span><span class="sxs-lookup"><span data-stu-id="63026-116">Sign in using your work or school account.</span></span>
 
-2. <span data-ttu-id="1f931-114">Fare clic sull'icona di avvio delle app nell'angolo in alto a sinistra, quindi fare clic su **sicurezza & conformità**.</span><span class="sxs-lookup"><span data-stu-id="1f931-114">Click the app launcher in the upper left corner, and then click **Security & Compliance**.</span></span>
+2. <span data-ttu-id="63026-117">Fare clic sull'icona di avvio delle app nell'angolo superiore sinistro e quindi su **Sicurezza & conformità.**</span><span class="sxs-lookup"><span data-stu-id="63026-117">Click the app launcher in the upper left corner, and then click **Security & Compliance**.</span></span>
 
-   <span data-ttu-id="1f931-p102">Se non si trova l'app che si sta cercando, nell'icona di avvio delle app selezionare **Tutte le app** per visualizzare un elenco in ordine alfabetico delle app di Office 365 disponibili. Da qui è possibile cercare un'app specifica.</span><span class="sxs-lookup"><span data-stu-id="1f931-p102">Can't find the app you're looking for? From the app launcher, select **All apps** to see an alphabetical list of the Office 365 apps available to you. From there, you can search for a specific app.</span></span>
+   <span data-ttu-id="63026-p102">Se non si trova l'app che si sta cercando, nell'icona di avvio delle app selezionare **Tutte le app** per visualizzare un elenco in ordine alfabetico delle app di Office 365 disponibili. Da qui è possibile cercare un'app specifica.</span><span class="sxs-lookup"><span data-stu-id="63026-p102">Can't find the app you're looking for? From the app launcher, select **All apps** to see an alphabetical list of the Office 365 apps available to you. From there, you can search for a specific app.</span></span>
 
-3. <span data-ttu-id="1f931-118">Nel riquadro sinistro fare clic su **avvisi** per visualizzare le funzionalità avvisi.</span><span class="sxs-lookup"><span data-stu-id="1f931-118">In the left pane, click **Alerts** to see the alerts features.</span></span>
+3. <span data-ttu-id="63026-121">Nel riquadro sinistro fare clic su **Avvisi** per visualizzare le funzionalità degli avvisi.</span><span class="sxs-lookup"><span data-stu-id="63026-121">In the left pane, click **Alerts** to see the alerts features.</span></span>
 
-## <a name="alerts-features"></a><span data-ttu-id="1f931-119">Funzionalità avvisi</span><span class="sxs-lookup"><span data-stu-id="1f931-119">Alerts features</span></span>
+## <a name="alerts-features"></a><span data-ttu-id="63026-122">Funzionalità avvisi</span><span class="sxs-lookup"><span data-stu-id="63026-122">Alerts features</span></span>
 
-<span data-ttu-id="1f931-120">Nella tabella seguente vengono descritti gli strumenti disponibili in **avvisi** nel centro sicurezza & conformità.</span><span class="sxs-lookup"><span data-stu-id="1f931-120">The following table describes the tools that are available under **Alerts** in the Security & Compliance Center.</span></span>
+<span data-ttu-id="63026-123">Nella tabella seguente vengono descritti gli strumenti disponibili in **Avvisi** nel Centro sicurezza & conformità.</span><span class="sxs-lookup"><span data-stu-id="63026-123">The following table describes the tools that are available under **Alerts** in the Security & Compliance Center.</span></span>
 
 ****
 
-|<span data-ttu-id="1f931-121">Strumento</span><span class="sxs-lookup"><span data-stu-id="1f931-121">Tool</span></span>|<span data-ttu-id="1f931-122">Descrizione</span><span class="sxs-lookup"><span data-stu-id="1f931-122">Description</span></span>|
+|<span data-ttu-id="63026-124">Strumento</span><span class="sxs-lookup"><span data-stu-id="63026-124">Tool</span></span>|<span data-ttu-id="63026-125">Descrizione</span><span class="sxs-lookup"><span data-stu-id="63026-125">Description</span></span>|
 |---|---|
-|[<span data-ttu-id="1f931-123">Gestione avvisi</span><span class="sxs-lookup"><span data-stu-id="1f931-123">Manage alerts</span></span>](../../compliance/create-activity-alerts.md)|<span data-ttu-id="1f931-124">Utilizzare gli avvisi di attività per inviare notifiche tramite posta elettronica a se stessi o ad altri amministratori quando gli utenti eseguono attività specifiche in Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="1f931-124">Use activity alerts to send email notifications to yourself or other admins when users perform specific activities in Microsoft 365.</span></span> <span data-ttu-id="1f931-125">Gli avvisi di attività sono simili alla ricerca del registro di controllo per eventi, tranne per il fatto che verrà inviato un messaggio di posta elettronica quando viene creato un avviso per il verificarsi di un evento.</span><span class="sxs-lookup"><span data-stu-id="1f931-125">Activity alerts are similar to searching the audit log for events, except that you'll be sent an email message when an event that you've created an alert for occurs.</span></span>|
-|[<span data-ttu-id="1f931-126">Gestire gli avvisi avanzati</span><span class="sxs-lookup"><span data-stu-id="1f931-126">Manage advanced alerts</span></span>](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|<span data-ttu-id="1f931-127">Utilizzare la funzionalità **Gestisci avvisi avanzati** di Microsoft 365 cloud app Security per configurare i criteri che possono avvisare l'utente di attività sospette e anomale in Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="1f931-127">Use the **Manage advanced alerts** feature of Microsoft 365 Cloud App Security to set up policies that can alert you to suspicious and anomalous activity in Microsoft 365.</span></span> <span data-ttu-id="1f931-128">Dopo aver eseguito l'avviso, è possibile esaminare le situazioni potenzialmente problematiche e, se necessario, intervenire per risolvere i problemi di sicurezza.</span><span class="sxs-lookup"><span data-stu-id="1f931-128">After you're alerted, you can investigate situations that are potentially problematic and, if needed, take action to address security issues.</span></span>|
+|[<span data-ttu-id="63026-126">Gestire gli avvisi</span><span class="sxs-lookup"><span data-stu-id="63026-126">Manage alerts</span></span>](../../compliance/create-activity-alerts.md)|<span data-ttu-id="63026-127">Usare gli avvisi attività per inviare notifiche tramite posta elettronica a se stessi o ad altri amministratori quando gli utenti eseguono attività specifiche in Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="63026-127">Use activity alerts to send email notifications to yourself or other admins when users perform specific activities in Microsoft 365.</span></span> <span data-ttu-id="63026-128">Gli avvisi attività sono simili alla ricerca di eventi nel log di controllo, con la differenza che verrà inviato un messaggio di posta elettronica quando si verifica un evento per cui è stato creato un avviso.</span><span class="sxs-lookup"><span data-stu-id="63026-128">Activity alerts are similar to searching the audit log for events, except that you'll be sent an email message when an event that you've created an alert for occurs.</span></span>|
+|[<span data-ttu-id="63026-129">Gestire gli avvisi avanzati</span><span class="sxs-lookup"><span data-stu-id="63026-129">Manage advanced alerts</span></span>](https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security)|<span data-ttu-id="63026-130">Usare la **funzionalità** di gestione degli avvisi avanzati di Microsoft 365 Cloud App Security per configurare criteri che possono avvisare l'utente di attività sospette e anomalie in Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="63026-130">Use the **Manage advanced alerts** feature of Microsoft 365 Cloud App Security to set up policies that can alert you to suspicious and anomalous activity in Microsoft 365.</span></span> <span data-ttu-id="63026-131">Dopo aver visualizzato un avviso, è possibile analizzare le situazioni potenzialmente problematiche e, se necessario, intervenire per risolvere i problemi di sicurezza.</span><span class="sxs-lookup"><span data-stu-id="63026-131">After you're alerted, you can investigate situations that are potentially problematic and, if needed, take action to address security issues.</span></span>|
 |
