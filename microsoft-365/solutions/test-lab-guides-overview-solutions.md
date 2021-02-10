@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 05/01/2020
+ms.date: 02/09/2021
 audience: ITPro
 ms.topic: overview
 ms.prod: microsoft-365-enterprise
@@ -16,13 +16,13 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - Ent_Architecture
-description: Utilizzare le guide dei laboratori di testing per creare soluzioni e scenari di Microsoft 365 in un ambiente di sviluppo e di testing.
-ms.openlocfilehash: 7254596da5b2b8b32a01468d3ff1f34d4efd8db8
-ms.sourcegitcommit: 0f71042edc7c3a7f10a7b92e1943abf51532cbf5
+description: Usare le guide dei laboratori di testing per creare soluzioni e scenari di Microsoft 365 in un ambiente di sviluppo/test.
+ms.openlocfilehash: 10ddfc9cb9f9135b352be50c555811342ae0bd2b
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/29/2020
-ms.locfileid: "46521302"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166184"
 ---
 # <a name="test-lab-guides-for-solutions-and-scenarios"></a>Guide all'ambiente di test per soluzioni e scenari
 
@@ -34,5 +34,6 @@ Queste guide permettono di creare anche ambienti appositi per lo sviluppo e il t
   
 ![Guide al lab di test per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-Provare [questa guida del laboratorio di testing](team-security-isolation-dev-test.md) per configurare un team con isolamento della sicurezza.
+Provare [questa guida del laboratorio di testing](team-security-isolation-dev-test.md) per configurare un team con isolamento di sicurezza.
 
+Per altre guide alle funzionalità e alla configurazione di Microsoft 365, vedere Guide al lab di test di [Microsoft 365 per le aziende.](../enterprise/m365-enterprise-test-lab-guides.md)

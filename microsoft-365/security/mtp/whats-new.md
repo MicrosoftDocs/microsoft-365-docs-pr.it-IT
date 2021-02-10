@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 8e66c734151e7476d7c54bd050891a1bffb17b3c
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 4e065ff4da80b50ea11ff2069e8938c59f16f962
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932023"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165992"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Novità di Microsoft 365 Defender
 
@@ -38,8 +38,9 @@ Feed RSS: ricevere una notifica quando questa pagina viene aggiornata copiando e
 ```http
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+Threat+Protection%22&locale=en-us
 ```
-> Si vuole provare Microsoft 365 Defender? È possibile [valutarlo in un ambiente lab o](https://aka.ms/mtp-trial-lab) eseguire il progetto pilota in [produzione](https://aka.ms/m365d-pilotplaybook)
->
+
+## <a name="february-2021"></a>Febbraio 2021
+- (Anteprima) Il Centro sicurezza [Microsoft 365 avanzato ( https://security.microsoft.com) ](https://security.microsoft.com) è ora disponibile in anteprima pubblica. Questa nuova esperienza porta Defender per Endpoint e Defender per Office 365 al centro. [Ulteriori informazioni sulle modifiche.](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center)
 
 ## <a name="september-2020"></a>Settembre 2020
 - [Tabella IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md) <br> Trovare eventi che coinvolgono un controller di dominio locale che esegue Active Directory (AD). In [questa tabella di](advanced-hunting-overview.md) schema di ricerca avanzata viene illustrata una serie di eventi correlati all'identità e di eventi di sistema nel controller di dominio.
@@ -51,7 +52,7 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 - [Iniziare la ricerca](advanced-hunting-go-hunt.md)<br> È possibile passare rapidamente dall'analisi di un evento all'analisi di un evento specifico, di un utente, di un dispositivo o di altri tipi di entità per la ricerca avanzata.
 
 ## <a name="june-2020"></a>Giugno 2020
-- Feed Twitter <br> Ottieni le ricerche più recenti sulla sicurezza, intelligence per le minacce, notizie sui prodotti e altro ancora, direttamente all'interno del dashboard.
+- Feed twitter <br> Ottieni le ricerche più recenti sulla sicurezza, intelligence per le minacce, notizie sui prodotti e altro ancora, direttamente all'interno del dashboard.
 - [Tabella dello schema EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md) <br> Incorporare informazioni sulle azioni post-recapito eseguite sui messaggi di posta elettronica nelle query di ricerca avanzata.
 - [Esaminare i record nella ricerca avanzata](advanced-hunting-query-results.md#drill-down-from-query-results) <br> Esaminare rapidamente i record nei risultati della query con il nuovo riquadro dei dettagli.
 
@@ -65,5 +66,5 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 
 ## <a name="march-2019"></a>Marzo 2019
 - Ricerca avanzata <br> Pagina di destinazione per varie funzionalità di ricerca che consentono di individuare in modo proattivo minacce che interessano posta elettronica e dati, dispositivi e identità.
-- [Microsoft Secure Score](microsoft-secure-score.md) <br> Misurazione della posizione di sicurezza di un'organizzazione, con un numero maggiore che indica ulteriori azioni di miglioramento intraprese. Se si segue il punteggio di sicurezza, è possibile proteggere l'organizzazione dalle minacce. 
+- [Microsoft Secure Score](microsoft-secure-score.md) <br> Misurazione della posizione di sicurezza di un'organizzazione, con un numero maggiore che indica ulteriori azioni di miglioramento intraprese. Seguendo i consigli relativi al punteggio di sicurezza è possibile proteggere l'organizzazione dalle minacce. 
 - [Report](monitoring-and-reporting.md) <br>  Include una serie di schede che coprono un'ampia gamma di aree monitorate dagli analisti e dagli amministratori della sicurezza nell'ambito delle loro operazioni quotidiane.

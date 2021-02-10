@@ -8,47 +8,50 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 97921f0e-832f-40c7-b56d-414faede5191
 ms.collection:
 - M365-security-compliance
-description: Informazioni sull'interfaccia di gestione Web in standalone Exchange Online Protection (EOP).
-ms.openlocfilehash: fc76ecd6dafcf9453a0c6de14917c96c950f8370
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Informazioni sull'interfaccia di gestione Web in Exchange Online Protection (EOP) autonomo.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 81af6c64d2ec3204d0c9d46888bbfe21335955bd
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659667"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166220"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>Interfaccia di amministrazione di Exchange Online Protection autonomo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Si applica a**
+-  [Exchange Online Protection autonomo](https://go.microsoft.com/fwlink/?linkid=2148611)
 
-Interfaccia di amministrazione di Exchange (EAC) è una console di gestione basata sul Web per Exchange Online Protection (EOP) autonomo.
+L'interfaccia di amministrazione di Exchange è una console di gestione basata sul Web per Exchange Online Protection (EOP) autonomo.
 
-Per informazioni sulla versione di Exchange online in questo argomento, vedere Vedere interfaccia [di amministrazione di Exchange in Exchange Online](https://docs.microsoft.com/exchange/exchange-admin-center).
+Per informazioni sulla versione Exchange Online di questo argomento, vedere Vedere [Interfaccia di amministrazione di Exchange in Exchange Online.](https://docs.microsoft.com/exchange/exchange-admin-center)
 
 ## <a name="open-the-eac-in-eop"></a>Aprire l'interfaccia di amministrazione di Exchange in EOP
 
 I clienti EOP autonomi possono accedere all'interfaccia di amministrazione di Exchange utilizzando i metodi seguenti:
 
-- **Dall'interfaccia di amministrazione di Microsoft 365**:
+- **Dall'interfaccia di amministrazione di Microsoft 365:**
 
-  1. Andare a <https://admin.microsoft.com> e fare clic su **Mostra tutto**.
+  1. Passare a <https://admin.microsoft.com> e fare clic su Mostra **tutto.**
 
      ![Fare clic su Mostra tutto nell'interfaccia di amministrazione di Microsoft 365](../../media/m365-center-show-all.png)
 
-  2. Nella sezione interfaccia di **Amministrazione** visualizzata fare clic su **tutti i centri di amministrazione**.
+  2. Nella sezione **Admin center** visualizzata, fare clic su Tutte le centri **di amministrazione.**
 
-     ![Fare clic su tutti i centri di amministrazione nell'interfaccia di amministrazione di Microsoft 365](../../media/m365-center-select-all-admin-centers.png)
+     ![Fare clic su Tutte le centri di amministrazione nell'interfaccia di amministrazione di Microsoft 365](../../media/m365-center-select-all-admin-centers.png)
 
-  3. Nella pagina **tutti i centri di amministrazione** visualizzati fare clic su **Exchange Online Protection**.
+  3. Nella pagina **Tutte le centri di** amministrazione visualizzata fare clic su Exchange Online **Protection.**
 
-- Andare direttamente a `https://admin.protection.outlook.com/ecp/` .
+- Passare direttamente a `https://admin.protection.outlook.com/ecp/` .
 
 ## <a name="common-user-interface-elements-in-the-eac-in-eop"></a>Elementi comuni dell'interfaccia utente in EAC in EOP
 
@@ -60,20 +63,20 @@ In questa sezione vengono illustrati gli elementi dell'interfaccia utente dispon
 
 È il primo livello di esplorazione per la maggior parte delle attività da eseguire in EAC. Il riquadro delle funzionalità è organizzato in aree funzionali.
 
-- **Destinatari**: consente di visualizzare gruppi e contatti esterni.
+- **Destinatari**: consente di visualizzare i gruppi e i contatti esterni.
 
-- **Autorizzazioni**: consente di gestire i ruoli di amministratore.
+- **Autorizzazioni:** qui è possibile gestire i ruoli di amministratore.
 
-- **Gestione della conformità**: consente di trovare il rapporto del gruppo di ruoli amministratore e il report del registro di controllo di amministrazione.
+- **Gestione della conformità:** qui è possibile trovare il report del gruppo di ruoli amministratore e il report del log di controllo dell'amministratore.
 
-- **Protezione**: è possibile gestire i criteri antimalware, i criteri di filtro delle connessioni predefiniti e DKIM.
+- **Protezione:** qui è possibile gestire i criteri antimalware, i criteri di filtro delle connessioni predefiniti e DKIM.
 
   > [!NOTE]
-  > È consigliabile gestire i criteri antimalware e i criteri di filtro delle connessioni predefiniti nel centro sicurezza & conformità. Per ulteriori informazioni, vedere [Configure anti-malware Policies in EOP](configure-anti-malware-policies.md) e [Configure Connection Filtering in EOP](configure-the-connection-filter-policy.md).
+  > È consigliabile gestire i criteri antimalware e i criteri di filtro delle connessioni predefiniti nel Centro sicurezza & conformità. Per ulteriori informazioni, vedere [Configurare i criteri antimalware in EOP](configure-anti-malware-policies.md) e Configurare il filtro [connessioni in EOP.](configure-the-connection-filter-policy.md)
 
-- **Flusso di posta**: consente di gestire le regole del flusso di posta (note anche come regole di trasporto), i domini accettati e i connettori, nonché le posizioni in cui è possibile eseguire la traccia dei messaggi.
+- **Flusso di posta**: consente di gestire le regole del flusso di posta (note anche come regole di trasporto), i domini accettati e i connettori, nonché dove è possibile eseguire la traccia dei messaggi.
 
-- Soluzione **ibrida**: è possibile eseguire la [procedura guidata di configurazione ibrida](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)e dove è possibile installare il [modulo di PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell).
+- **Ibrido:** qui è possibile eseguire la procedura guidata [di](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)configurazione ibrida e dove è possibile installare il modulo [PowerShell di Exchange Online.](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell)
 
 ### <a name="tabs"></a>Schede
 
@@ -107,21 +110,21 @@ Quando si seleziona un oggetto dalla visualizzazione elenco, nel riquadro dei de
 
 ### <a name="me-tile-and-help"></a>Riquadro Io e Guida
 
-Il riquadro **Io** consente di disconnettersi da EAC e accedere come altro utente. Dal  ![ menu a discesa icona Guida ](../../media/ITPro-EAC-HelpIcon.gif) , è possibile eseguire le operazioni seguenti:
+Il riquadro **Io** consente di disconnettersi da EAC e accedere come altro utente. Dal menu **a** ![ discesa Help Icon è possibile eseguire le operazioni ](../../media/ITPro-EAC-HelpIcon.gif) seguenti:
 
-- **Guida**: fare clic su ![ icona Guida ](../../media/ITPro-EAC-HelpIcon.gif) per visualizzare il contenuto della Guida in linea.
-- **Commenti e suggerimenti**: lasciare commenti e suggerimenti.
-- **Community**: inviare una domanda per trovare risposte nei forum della community.
-- **Disattiva la guida del fumetto**: la Guida di bubbling Visualizza la supporto contestuale per i campi quando si crea o si modifica un oggetto. È possibile disabilitare la finestra della Guida o riattivarla se era stata disabilitata.
-- **Mostra registrazione comandi**: viene visualizzata una nuova finestra in cui vengono visualizzati i comandi di PowerShell equivalenti in base alle impostazioni configurate in EAC.
+- **Guida**: fare clic ![ sull'icona ](../../media/ITPro-EAC-HelpIcon.gif) della Guida per visualizzare il contenuto della Guida online.
+- **Feedback:** lasciare il feedback.
+- **Community:** pubblicare una domanda per trovare risposte nei forum della community.
+- **Disattiva finestra della** Guida : nella finestra della Guida viene visualizzata la Guida contestuale per i campi quando si crea o si modifica un oggetto. È possibile disabilitare la finestra della Guida o riattivarla se era stata disabilitata.
+- **Mostra registrazione comandi**: viene visualizzata una nuova finestra che mostra i comandi di PowerShell equivalenti in base a quanto configurato in EAC.
 
 ## <a name="supported-browsers"></a>Browser supportati
 
-Per la migliore esperienza nell'utilizzo di EAC, si consiglia di utilizzare sempre i browser più recenti, i client e le app di Office. Si consiglia inoltre di installare gli aggiornamenti software quando disponibili. Per ulteriori informazioni sui browser supportati e sui requisiti di sistema per il servizio, vedere [requisiti di sistema per Office](https://products.office.com/office-system-requirements).
+Per la migliore esperienza nell'utilizzo di EAC, si consiglia di utilizzare sempre i browser più recenti, i client e le app di Office. Si consiglia inoltre di installare gli aggiornamenti software quando disponibili. Per ulteriori informazioni sui browser supportati e sui requisiti di sistema per il servizio, vedere [Requisiti di sistema per Office.](https://products.office.com/office-system-requirements)
 
 ## <a name="supported-languages"></a>Lingue supportate
 
-Le lingue seguenti sono supportate e disponibili per l'interfaccia di amministrazione di Exchange in EOP autonomo.
+Le lingue seguenti sono supportate e disponibili per L'interfaccia di amministrazione di Exchange in EOP autonomo.
 
 - Amharico
 - Arabo

@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pronti per iniziare a implementare le etichette di riservatezza per proteggere i dati dell'organizzazione, ma in dubbio su come iniziare? Leggere alcune guide pratiche utili per iniziare il percorso di implementazione dell'etichettatura.
-ms.openlocfilehash: b2a16da1d4a7b9b35d519d544eba951765122596
-ms.sourcegitcommit: 8d28bce1a3445878b066864e766cf52cb83becd1
+ms.openlocfilehash: 04ac373250f13ece1a4e976891044a6584989f6d
+ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50071301"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50142039"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Iniziare a usare le etichette di riservatezza
 
@@ -98,7 +98,9 @@ Tutti gli scenari richiedono di [Creare e configurare etichette di riservatezza 
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>Documentazione per gli utenti finali sulle etichette di riservatezza
 
-La documentazione per gli utenti finali più efficace è costituita dalle indicazioni e dalle istruzioni personalizzate per i nomi e le configurazioni delle etichette scelti. Per informazioni su un pacchetto di download da usare per formare gli utenti e guidare l'adozione, leggere il post di blog seguente: [Formazione dell’utente finale sulle etichette di riservatezza in M365 - Come velocizzare l'adozione](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-sensitivity-labels-in-m365-how-to/ba-p/1750880). 
+La documentazione per gli utenti finali più efficace è costituita dalle indicazioni e dalle istruzioni personalizzate per i nomi e le configurazioni delle etichette scelti. Per le etichette predefinite, è possibile usare l'impostazione dei criteri di etichettatura **Fornisci agli utenti un collegamento a una pagina personalizzata della Guida** per specificare un collegamento interno della documentazione. Gli utenti possono accedervi facilmente selezionando **Altre informazioni** tramite il pulsante **Sensibilità** della barra multifunzione di Office per Word, PowerPoint, Excel e Outlook.
+
+Per supportare la scrittura di documentazioni personalizzate, questo post di blog include un pacchetto scaricabile che può essere usato per formare gli utenti e promuovere l'adozione: [Formazione per l'utente finale sulle etichette di riservatezza di M365 - Come velocizzare l'adozione](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-sensitivity-labels-in-m365-how-to/ba-p/1750880). 
 
 È possibile anche utilizzare le risorse seguenti per le istruzioni di base:
 

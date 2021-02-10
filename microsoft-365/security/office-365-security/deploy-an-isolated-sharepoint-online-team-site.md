@@ -8,25 +8,29 @@ manager: laurawi
 ms.date: 07/30/2019
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: Ent_O365
 ms.custom:
 - Ent_Solutions
 - seo-marvel-apr2020
 ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
-description: Utilizzare questa guida alla distribuzione dettagliata per creare e configurare un sito del team di SharePoint Online isolato in Microsoft Office 365.
-ms.openlocfilehash: 5b37868759dd91fc49fb8354db893f52b8f534dd
-ms.sourcegitcommit: 4debeb8f0fce67f361676340fc390f1b283a3069
+description: Utilizzare questa guida dettagliata alla distribuzione per creare e configurare un sito del team di SharePoint Online isolato in Microsoft Office 365.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 1b1f0342afc92b4540330417ad0fc9cabe1dc8a8
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49561740"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165500"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Distribuire un sito del team di SharePoint Online isolato
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Si applica a**
+- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
  **Sintesi:** istruzioni dettagliate per distribuire un nuovo sito del team di SharePoint Online isolato.
 
@@ -43,19 +47,19 @@ In questa fase, vengono creati tre gruppi di accesso basati su Azure AD per i tr
 
 Determinare il set di account utente corrispondenti agli amministratori di SharePoint Online per il sito del team isolato.
 
-Se si gestiscono gli account utente e i gruppi tramite Microsoft 365 e si desidera utilizzare Windows PowerShell, fare un elenco dei loro nomi dell'entità utente (UPN), ad esempio UPN: belindan@contoso.com.
+Se si gestiscono account utente e gruppi tramite Microsoft 365 e si vuole usare Windows PowerShell, creare un elenco dei relativi nomi principali utente (UPN) (UPN di esempio: belindan@contoso.com).
 
 ### <a name="step-2-list-the-members-for-the-site"></a>Passaggio 2: elencare i membri del sito
 
 Determinare il set di account utente corrispondenti ai membri del sito del team isolato, quelli che collaboreranno sulle risorse archiviate nel sito.
 
-Se si gestiscono gli account utente e i gruppi tramite Microsoft 365 e si desidera utilizzare PowerShell, fare un elenco dei loro UPN. Se sono presenti molti membri del sito, è possibile archiviare l'elenco di UPN in un file di testo e aggiungerli con un singolo comando di PowerShell.
+Se si gestiscono account utente e gruppi tramite Microsoft 365 e si vuole usare PowerShell, creare un elenco dei relativi UPN. Se sono presenti molti membri del sito, è possibile archiviare l'elenco di UPN in un file di testo e aggiungerli con un singolo comando di PowerShell.
 
 ### <a name="step-3-list-the-viewers-for-the-site"></a>Passaggio 3: elencare i visualizzatori del sito
 
 Determinare il set di account utente corrispondenti ai visualizzatori del sito del tam isolato, quelli che possono visualizzare le risorse archiviate nel sito ma non modificarle o collaborare direttamente sui contenuti.
 
-Se si gestiscono gli account utente e i gruppi tramite Microsoft 365 e si desidera utilizzare PowerShell, fare un elenco dei loro UPN. Se sono presenti molti membri del sito, è possibile archiviare l'elenco di UPN in un file di testo e aggiungerli con un singolo comando di PowerShell.
+Se si gestiscono account utente e gruppi tramite Microsoft 365 e si vuole usare PowerShell, creare un elenco dei relativi UPN. Se sono presenti molti membri del sito, è possibile archiviare l'elenco di UPN in un file di testo e aggiungerli con un singolo comando di PowerShell.
 
 I visualizzatori del sito potrebbero includere la direzione esecutiva, i consulenti legali o gli stakeholder interdipartimentali.
 
@@ -67,28 +71,28 @@ I visualizzatori del sito potrebbero includere la direzione esecutiva, i consule
 - Membri del sito (che contiene l'elenco creato al passaggio 2)
 - Visualizzatori del sito (che contiene l'elenco creato al passaggio 3)
 
-1. Nel browser, accedere al portale di Azure <https://portal.azure.com> e accedere con le credenziali di un account assegnato con l'amministratore di gestione utenti o con il ruolo Administrator dell'azienda.
+1. Nel browser passare al portale di Azure e accedere con le credenziali di un account assegnato con il ruolo Amministratore gestione utenti o <https://portal.azure.com> Amministratore società.
 
 2. Nel portale di Azure fare clic su **Azure Active Directory > Gruppi**.
 
 3. Nel pannello **Gruppi - Tutti i gruppi** fare clic su **+ Nuovo gruppo**.
 
-4. Nel **nuovo gruppo** Blade:
+4. Nel pannello **Nuovo** gruppo:
 
    - Selezionare **Sicurezza** in **Tipo di gruppo**.
 
-   - Digitare il nome del gruppo in **nome**.
+   - Digitare il nome del gruppo in **Nome.**
 
-   - Digitare una descrizione del gruppo nella **Descrizione del gruppo**.
+   - Digitare una descrizione del gruppo nella **descrizione del gruppo.**
 
    - Selezionare **Assegnato** in **Tipo di appartenenza**.
 
 5. Fare clic su **Crea** e quindi chiudere il pannello **Gruppo**.
 
-6. Ripetere i passaggi 3-5 per i gruppi aggiuntivi.
+6. Ripetere i passaggi da 3 a 5 per i gruppi aggiuntivi.
 
 > [!NOTE]
-> È necessario utilizzare il portale di Azure per creare i gruppi in modo che dispongano delle funzionalità di Office abilitate. Se un sito di SharePoint Online isolato viene configurato in un secondo momento come sito estremamente riservato con un'etichetta di Azure Information Protection per crittografare i file e assegnare l'autorizzazione a gruppi specifici, è necessario che i gruppi consentiti siano stati creati con le funzionalità di Office abilitate. Non è possibile modificare l'impostazione delle caratteristiche di Office di un gruppo di Azure AD dopo che è stata creata.
+> È necessario usare il portale di Azure per creare i gruppi in modo che le funzionalità di Office siano abilitate. Se un sito isolato di SharePoint Online viene successivamente configurato come sito Estremamente riservato con un'etichetta di Azure Information Protection per crittografare i file e assegnare autorizzazioni a gruppi specifici, i gruppi consentiti devono essere stati creati con le funzionalità di Office abilitate. Non è possibile modificare l'impostazione delle funzionalità di Office di un gruppo di Azure AD dopo la sua creazione.
 
 Ecco la configurazione risultante con i tre gruppi di accesso al sito.
 
@@ -102,13 +106,13 @@ In questo passaggio, eseguire la procedura riportata di seguito:
 2. Aggiungere l'elenco di utenti del passaggio 2 al gruppo di accesso dei membri del sito.
 3. Aggiungere l'elenco di utenti del passaggio 3 al gruppo di accesso dei visualizzatori del sito.
 
-Se si gestiscono gli account utente e i gruppi tramite servizi di dominio Active Directory, aggiungere gli utenti ai gruppi di accesso appropriato utilizzando le normali procedure di gestione di utenti e gruppi di AD DS e attendere la sincronizzazione con l'abbonamento a Microsoft 365.
+Se si gestiscono account utente e gruppi tramite Servizi di dominio Active Directory, aggiungere gli utenti ai gruppi di accesso appropriati utilizzando le normali procedure di gestione di utenti e gruppi di Servizi di dominio Active Directory e attendere la sincronizzazione con l'abbonamento a Microsoft 365.
 
-Se si gestiscono gli account utente e i gruppi tramite Office 365, è possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 o PowerShell. Se si dispone di nomi di gruppo duplicati per uno qualsiasi dei gruppi di accesso, è consigliabile utilizzare l'interfaccia di amministrazione di Microsoft 365.
+Se si gestiscono account utente e gruppi tramite Office 365, è possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 o PowerShell. Se si dispone di nomi di gruppo duplicati per uno dei gruppi di accesso, è consigliabile usare l'interfaccia di amministrazione di Microsoft 365.
 
-Per l'interfaccia di amministrazione di Microsoft 365, accedere con un account utente a cui è stato assegnato l'amministratore dell'account utente o il ruolo di amministratore dell'azienda e utilizzare i gruppi per aggiungere gli account utente e i gruppi corretti ai gruppi di accesso appropriato.
+Per l'interfaccia di amministrazione di Microsoft 365, accedere con un account utente a cui è stato assegnato il ruolo Amministratore account utente o Amministratore società e usare Gruppi per aggiungere gli account utente e i gruppi appropriati ai gruppi di accesso appropriati.
 
-Per PowerShell, [connettersi prima con il modulo di Azure Active Directory PowerShell per Graph](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Per PowerShell, [connettersi innanzitutto con il modulo Azure Active Directory PowerShell per Graph.](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)
 
 Successivamente, utilizzare il seguente blocco di comandi per aggiungere un singolo account utente a un gruppo di accesso:
 
@@ -137,40 +141,40 @@ Add-AzureADGroupMember -RefObjectId (Get-AzureADGroup | Where { $_.DisplayName -
 
 Dovrebbero essere visualizzati i seguenti risultati:
 
-- Il gruppo di Azure AD degli amministratori del sito contiene gli account utente o i gruppi di amministratori del sito.
-- Il gruppo di Azure AD dei membri del sito contiene gli account utente o i gruppi di membri del sito.
-- Il gruppo di Azure AD dei visualizzatori del sito contiene gli account utente o i gruppi che possono visualizzare solo il contenuto del sito.
+- Il gruppo di Azure AD degli amministratori del sito contiene gli account utente o i gruppi di amministratori del sito
+- Il gruppo di Azure AD dei membri del sito contiene gli account utente o i gruppi dei membri del sito
+- Il gruppo visualizzatori del sito di Azure AD contiene gli account utente o i gruppi che possono visualizzare solo il contenuto del sito
 
-Convalidare l'elenco dei membri del gruppo di ogni gruppo di accesso con l'interfaccia di amministrazione di Microsoft 365 o con il seguente blocco di comandi di PowerShell:
+Convalidare l'elenco dei membri del gruppo per ogni gruppo di accesso con l'interfaccia di amministrazione di Microsoft 365 o con il seguente blocco di comandi di PowerShell:
 
 ```powershell
 $grpName="<display name of the access group>"
 Get-AzureADGroupMember -ObjectId (Get-AzureADGroup | Where { $_.DisplayName -eq $grpName }).ObjectID | Sort UserPrincipalName | Select UserPrincipalName,DisplayName,UserType
 ```
 
-Di seguito è configurata la configurazione risultante con i tre gruppi di accesso al sito popolati con account utente o gruppi.
+Ecco la configurazione risultante con i tre gruppi di accesso al sito popolati con account utente o gruppi.
 
-![I tre gruppi di accesso popolati con gli account utente.](../../media/2320107c-dad6-4c8f-94e5-f6427c125e71.png)
+![I tre gruppi di accesso sono popolati con account utente.](../../media/2320107c-dad6-4c8f-94e5-f6427c125e71.png)
 
 ## <a name="phase-2-create-and-configure-the-isolated-team-site"></a>Fase 2: creare e configurare il sito del team isolato
 
-In questa fase, viene creato il sito di SharePoint Online isolato e vengono configurate le autorizzazioni per i livelli di autorizzazione di SharePoint Online predefiniti affinché vengano utilizzati i nuovi gruppi di accesso basati su Azure AD. Per impostazione predefinita, i nuovi siti del team includono un gruppo di Microsoft 365 e altre risorse correlate, ma in questo caso verrà creato un sito del team senza un gruppo di Microsoft 365. In questo modo è possibile gestire le autorizzazioni completamente tramite SharePoint.
+In questa fase, viene creato il sito di SharePoint Online isolato e vengono configurate le autorizzazioni per i livelli di autorizzazione di SharePoint Online predefiniti affinché vengano utilizzati i nuovi gruppi di accesso basati su Azure AD. Per impostazione predefinita, i nuovi siti del team includono un gruppo di Microsoft 365 e altre risorse correlate, ma in questo caso verrà creato un sito del team senza un gruppo di Microsoft 365. Ciò consente di mantenere le autorizzazioni interamente tramite SharePoint.
 
 Creare innanzitutto il sito del team di SharePoint Online seguendo questa procedura.
 
 1. Accedere all'interfaccia di amministrazione di Microsoft 365 con un account che verrà utilizzato anche per amministrare il sito del team di SharePoint Online (un amministratore di SharePoint Online). Per informazioni, vedere [Dove accedere a Office 365](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4).
 
-2. Nell'interfaccia di amministrazione di Microsoft 365, in interfaccia di **Amministrazione**, fare clic su **SharePoint**.
+2. Nell'interfaccia di amministrazione di Microsoft 365, in **Interfaccia di amministrazione,** fare clic su **SharePoint.**
 
-3. Nell'interfaccia di amministrazione di SharePoint espandere **siti** e fare clic su **siti attivi**.
+3. Nell'interfaccia di amministrazione di SharePoint espandere **Siti** e fare clic **su Siti attivi.**
 
-4. Fare clic su **Crea** e quindi scegliere **altre opzioni**.
+4. Fare **clic su** Crea e quindi scegliere Altre **opzioni.**
 
-5. Nell'elenco **scegliere un modello** scegliere sito del **Team**.
+5. **Nell'elenco Scegliere un modello** scegliere Sito del **team.**
 
-6. In **nome sito** Digitare un nome per il sito del team.
+6. In **Nome sito** digitare un nome per il sito del team.
 
-7. In **amministratore principale**, digitare l'account con cui si è connessi.
+7. In **Amministratore principale** digitare l'account con cui si è connessi.
 
 8. Fare clic su **Fine**.
 
@@ -178,17 +182,17 @@ Successivamente, dal nuovo sito del team di SharePoint Online configurare le aut
 
 1. Nella barra degli strumenti fare clic sull'icona delle impostazioni, quindi su **Autorizzazioni sito**.
 
-2. In **condivisione siti** fare clic su **cambia come possono essere condivisi i membri**.
+2. In **Condivisione sito fare** clic su Cambia modalità di condivisione dei **membri.**
 
-3. Scegliere gli **unici proprietari di siti possono condividere file, cartelle e il sito**.
+3. Scegliere solo **i proprietari del sito che possono condividere file, cartelle e il sito.**
 
-4. Impostare **Consenti le richieste di accesso** su **disattivato**.
+4. Impostare **Consenti richieste di accesso** su **Disattivato.**
 
 5. Fare clic su **Salva**.
 
-6. Nel riquadro **autorizzazioni** , fare clic su **Impostazioni avanzate autorizzazioni**.
+6. Nel riquadro **Autorizzazioni** fare clic su **Impostazioni avanzate autorizzazioni.**
 
-7. Nella scheda **autorizzazioni** del browser fare clic su **\<site name> membri** nell'elenco.
+7. Nella scheda **Autorizzazioni** del browser fare clic su **\<site name> Membri** nell'elenco.
 
 8. In **Utenti e gruppi** fare clic su **Nuovo**.
 
@@ -196,7 +200,7 @@ Successivamente, dal nuovo sito del team di SharePoint Online configurare le aut
 
 10. Fare clic sul pulsante Indietro del browser.
 
-11. Fare clic su **\<site name> proprietari** nell'elenco.
+11. Fare **\<site name> clic su Proprietari** nell'elenco.
 
 12. In **Utenti e gruppi** fare clic su **Nuovo**.
 
@@ -204,7 +208,7 @@ Successivamente, dal nuovo sito del team di SharePoint Online configurare le aut
 
 14. Fare clic sul pulsante Indietro del browser.
 
-15. Fare clic su **\<site name> visitatori** nell'elenco.
+15. Fare **\<site name> clic su Visitatori** nell'elenco.
 
 16. In **Utenti e gruppi** fare clic su **Nuovo**.
 
@@ -214,14 +218,14 @@ Successivamente, dal nuovo sito del team di SharePoint Online configurare le aut
 
 I risultati di queste impostazioni delle autorizzazioni sono i seguenti:
 
-- Il gruppo **\<site name> proprietari** di SharePoint contiene il gruppo di accesso degli amministratori del sito, in cui tutti i membri hanno il livello di autorizzazione **controllo completo** .
-- Il gruppo **\<site name> membri** di SharePoint contiene il gruppo di accesso dei membri del sito, in cui tutti i membri hanno il livello di autorizzazione **modifica** .
-- Il gruppo **\<site name> visitatori** di SharePoint contiene il gruppo di accesso dei visualizzatori del sito, in cui tutti i membri hanno il livello di autorizzazione **lettura** .
+- Il **\<site name> gruppo proprietari** di SharePoint contiene il gruppo di accesso degli amministratori del sito, in cui tutti i membri hanno il **livello di** autorizzazione Controllo completo.
+- Il **\<site name> gruppo membri** di SharePoint contiene il gruppo di accesso dei membri del sito, in cui tutti i membri hanno il **livello di** autorizzazione Modifica.
+- Il **\<site name> gruppo visitatori** di SharePoint contiene il gruppo di accesso dei visualizzatori del sito, in cui tutti i membri hanno il **livello di** autorizzazione Lettura.
 - I membri non hanno la possibilità di invitare altri membri o di richiedere l'accesso per utenti non membri.
 
-Ecco la configurazione risultante con i tre gruppi di SharePoint per il sito configurati per l'utilizzo dei tre gruppi di accesso, che sono popolati con gli account utente o i gruppi di Azure AD.
+Ecco la configurazione risultante con i tre gruppi di SharePoint per il sito configurati per l'uso dei tre gruppi di accesso, popolati con account utente o gruppi di Azure AD.
 
-![La configurazione finale del sito di SharePoint Online isolato con i gruppi di accesso e gli account utente.](../../media/e7618971-06ab-447b-90ff-d8be3790fe63.png)
+![La configurazione finale del sito di SharePoint Online isolato con gruppi di accesso e account utente.](../../media/e7618971-06ab-447b-90ff-d8be3790fe63.png)
 
 I membri del sito, tramite l'appartenenza a uno dei gruppi di accesso, possono ora collaborare utilizzando le risorse del sito.
 

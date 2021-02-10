@@ -1,5 +1,5 @@
 ---
-title: Microsoft 365 per Enterprise per Contoso Corporation
+title: Microsoft 365 per le aziende per Contoso Corporation
 author: JoeDavies-MSFT
 f1.keywords:
 - NOCSH
@@ -13,77 +13,81 @@ ms.collection:
 - Strat_O365_Enterprise
 - M365-subscription-management
 ms.custom: ''
-description: Come un'organizzazione globale fittizia ma rappresentativa ha adottato Microsoft 365 per Enterprise.
-ms.openlocfilehash: b009e02cde0708c54fbd8e047029dae9f67a145b
-ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
+description: Modalità di adozione di Microsoft 365 per le aziende da parte di un'organizzazione fittizia ma rappresentativa a livello globale.
+ms.openlocfilehash: 9e02469c644c3107e964d0f5defa08043091e28f
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "49749564"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166430"
 ---
-# <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Microsoft 365 per Enterprise per Contoso Corporation
+# <a name="microsoft-365-for-enterprise-for-the-contoso-corporation"></a>Microsoft 365 per le aziende per Contoso Corporation
 
-Microsoft 365 for Enterprise è l'offerta cloud di Microsoft Premier che unisce le app e i servizi di produttività locali e basati su cloud con Windows 10 Enterprise e funzionalità di sicurezza avanzate. Si tratta di una soluzione completa e intelligente che consente a tutti di collaborare in modo creativo e sicuro.
+Microsoft 365 per le aziende è l'offerta cloud microsoft premier che combina le app e i servizi di produttività locali e basati sul cloud con Windows 10 Enterprise e le funzionalità di sicurezza avanzate. Si tratta di una soluzione completa e intelligente che consente a tutti di collaborare in modo creativo e sicuro.
 
-Contoso Corporation è un conglomerato manifatturiero globale fittizio ma rappresentativo con sede a Parigi. La società ha distribuito Microsoft 365 per Enterprise e ha affrontato le principali decisioni di progettazione e i dettagli di implementazione per la rete, l'identità, Windows 10 Enterprise, Microsoft 365 Apps for Enterprise, la gestione dei dispositivi mobili, la protezione delle informazioni e la sicurezza.
+Contoso Corporation è un conglomerato industriale fittizio ma rappresentativo a livello globale con sede a Parigi. L'azienda ha distribuito Microsoft 365 per le aziende e ha indirizzato importanti decisioni di progettazione e dettagli di implementazione per reti, identità, Windows 10 Enterprise, Microsoft 365 Apps for enterprise, gestione dei dispositivi mobili, protezione delle informazioni e sicurezza.
 
-L'obiettivo generale della società per Microsoft 365 per Enterprise consiste nell'accelerare la trasformazione digitale mediante servizi cloud per riunire i propri dipendenti, i propri partner, i dati e i processi per creare il valore del cliente e mantenere il proprio vantaggio competitivo in un mondo digitale.
+L'obiettivo generale dell'azienda per Microsoft 365 per le aziende è accelerare la trasformazione digitale utilizzando i servizi cloud per riunire dipendenti, partner, dati e processi per creare valore per i clienti e mantenere il vantaggio competitivo in un mondo digital-first.
 
 Fare riferimento ai seguenti articoli per i dettagli:
 
 - [Informazioni generali](contoso-overview.md)
 
-  Contoso è un'organizzazione globale di produzione, vendita e supporto con più di 100.000 prodotti.
+  Contoso è un'organizzazione di produzione, vendita e supporto globale con più di 100.000 prodotti.
 
 - [Infrastruttura IT ed esigenze di Contoso](contoso-infra-needs.md)
 
-  Contoso si sta spostando da un'infrastruttura IT centralizzata locale a una configurazione cloud-inclusive che incorpora carichi di lavoro di produttività personale basati su cloud, applicazioni e scenari ibridi.
+  Contoso sta per passare da un'infrastruttura IT centralizzata locale a una configurazione inclusiva del cloud che incorpora carichi di lavoro, applicazioni e scenari ibridi di produttività personale basati sul cloud.
 
 - [Rete](contoso-networking.md)
 
-  Gli ingegneri di rete di Contoso hanno ottimizzato il traffico per gli utenti locali nel proprio perimetro Intranet e nel percorso di rete Microsoft più vicino su Internet.
+  I tecnici di rete di Contoso hanno ottimizzato il traffico per gli utenti locali fino al perimetro Intranet e al percorso di rete Microsoft più vicino su Internet.
 
 - [Identità](contoso-identity.md)
 
-  La soluzione Contoso Identity-in-the-cloud utilizza la foresta di servizi di dominio Active Directory (AD DS) locale della società. Include l'autenticazione federata con i provider di identità di terze parti attendibili esistenti.
+  La soluzione contoso identity-in-the-cloud sfrutta la foresta di Servizi di dominio Active Directory locale dell'azienda. Include l'autenticazione federata con i provider di identità di terze parti attendibili esistenti.
 
 - [Windows 10 Enterprise](contoso-win10.md)
 
-  L'infrastruttura contoso per Windows 10 Enterprise distribuisce e installa automaticamente gli aggiornamenti per i dispositivi che eseguono il sistema operativo primario del PC e del dispositivo della società.
+  L'infrastruttura di Contoso per Windows 10 Enterprise distribuisce e installa automaticamente gli aggiornamenti per i dispositivi che eseguono il sistema operativo principale di PC e dispositivi dell'azienda.
 
 - [App Microsoft 365 per grandi imprese](contoso-o365pp.md)
 
-  L'infrastruttura contoso per Microsoft 365 Apps for Enterprise distribuisce e installa automaticamente gli aggiornamenti per la famiglia di prodotti Microsoft Office del software di produttività.
+  L'infrastruttura di Contoso per Microsoft 365 Apps for enterprise distribuisce e installa automaticamente gli aggiornamenti per la famiglia Microsoft Office di software di produttività.
 
 - [Gestione dei dispositivi mobili](contoso-mdm.md)
 
-  Con molti dipendenti di roaming che dispongono di Smart Phone e tablet aziendali e personali, Contoso utilizza la gestione dei dispositivi mobili per registrare e proteggere i dispositivi e i relativi dati e gestire le app.
+  Con molti dipendenti mobili che hanno smartphone e tablet aziendali e personali, Contoso usa la gestione dei dispositivi mobili per registrare e proteggere i dispositivi e i dati e gestire le app.
 
 - [Protezione delle informazioni](contoso-info-protect.md)
 
-  Per assicurarsi che i dati comuni e di alto valore siano identificati, etichettati e soggetti a livelli di sicurezza, contoso impone i criteri di protezione dei dati con Microsoft 365 per la protezione delle informazioni sull'organizzazione.
+  Per garantire che i dati comuni e di valore elevato siano identificati, etichettati e soggetti a livelli di sicurezza, Contoso applica i criteri di sicurezza dei dati con Microsoft 365 per la protezione delle informazioni aziendali.
 
-- [Riepilogo di Microsoft 365 per la sicurezza aziendale](contoso-security-summary.md)
+- [Riepilogo della sicurezza di Microsoft 365 per le aziende](contoso-security-summary.md)
 
-  Contoso utilizza lo spettro completo di Microsoft 365 per le funzionalità di sicurezza aziendale per la gestione delle identità e degli accessi, la protezione dalle minacce, la protezione delle informazioni e la gestione della sicurezza.
+  Contoso usa l'intera gamma di funzionalità di sicurezza di Microsoft 365 per le aziende per la gestione delle identità e degli accessi, la protezione dalle minacce, la protezione delle informazioni e la gestione della sicurezza.
 
-Per ulteriori informazioni, vedere scenari IT e configurazioni:
+Vedi questi scenari e configurazioni IT aggiuntivi:
 
 - [Risposta al COVID-19 e infrastruttura per il lavoro da remoto e in sede](../solutions/contoso-remote-onsite-work.md)
 
-  Informazioni su come Contoso ha aggiornato l'infrastruttura di accesso remoto per la pandemia di COVID-19 e la nuova infrastruttura di installazione e aggiornamento per il lavoro remoto e onsite.
+  Informazioni su come Contoso ha aggiornato la funzionalità di accesso remoto e le nuove installazioni e aggiorna l'infrastruttura per i lavoratori remoti e in loco.
 
 - [Team per un progetto interno](../solutions/contoso-team-for-top-secret-project.md)
 
-  Per creare un ambiente di collaborazione sicuro per un progetto Top-Secret, Contoso ha utilizzato un team con isolamento di sicurezza.
+  Per creare un ambiente di collaborazione sicuro per un progetto top secret, Contoso ha utilizzato un team con isolamento di sicurezza.
 
-- [Panoramica della migrazione delle opzioni vocali di Teams](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
+- [Migrazione delle opzioni vocali di Teams](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
 
-  Informazioni su come Contoso ha migrato gli utenti locali a Microsoft teams per la comunicazione, la collaborazione e la voce unificate.
+  Informazioni su come Contoso ha eseguito la migrazione degli utenti locali a Microsoft Teams per comunicazioni unificate, collaborazione e voce.
+
+- [Criteri del linguaggio offensivo per la conformità delle comunicazioni](../compliance/communication-compliance-case-study.md)
+
+  Informazioni su come Contoso ha configurato rapidamente un criterio linguistico offensivo per le comunicazioni di Microsoft Teams, Exchange e Yammer.
 
 ## <a name="next-step"></a>Passaggio successivo
 
-Informazioni [su Contoso Corporation](contoso-overview.md) e sulle considerazioni relative alla progettazione che sono state affrontate quando sono state distribuite Microsoft 365 per Enterprise.
+Informazioni [su Contoso Corporation e](contoso-overview.md) sulle considerazioni di progettazione relative alla distribuzione di Microsoft 365 per le aziende.
 
 
 ## <a name="see-also"></a>Vedere anche

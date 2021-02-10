@@ -1,5 +1,5 @@
 ---
-title: Backscatter in EOP
+title: Backscatter in Exchange Online Protection
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,24 +16,30 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: In questo articolo vengono fornite informazioni su backscatter e Microsoft Exchange Online Protection (EOP)
-ms.openlocfilehash: 2a752c89e2430f24441d14178942b89362736322
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+description: In questo articolo vengono apprese informazioni su Backscatter and Microsoft Exchange Online Protection (EOP)
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 3cdc556a8cc193466d150fc82298796779841cca
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203588"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165956"
 ---
-# <a name="backscatter-in-eop"></a>Backscatter in EOP
+# <a name="backscatter-in-eop"></a>Backscatter in Exchange Online Protection
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Si applica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-*Backscatter* è rapporti di mancato recapito (noti anche come NDR o messaggi di rimbalzo) ricevuti per i messaggi che non sono stati inviati. Gli spammer falsificano l'indirizzo da: dei messaggi e spesso usano indirizzi di posta elettronica reali per dare credibilità ai propri messaggi. Pertanto, quando gli spammer inviano inevitabilmente messaggi a destinatari inesistenti (la posta indesiderata è un'operazione di alto volume), il server di posta elettronica di destinazione viene sostanzialmente indotto a restituire il messaggio non recapitabile in un rapporto di mancato recapito al mittente falsificato nell'indirizzo from:.
+*I rapporti di mancato* recapito (noti anche come rapporti di mancato recapito o notifiche di mancato recapito) ricevuti per i messaggi che non sono stati inviati. Gli spammer falsificano (spoofing) l'indirizzo da: dei loro messaggi e spesso utilizzano indirizzi di posta elettronica reali per dare credibilità ai loro messaggi. Pertanto, quando gli spammer inviano inevitabilmente messaggi a destinatari inesistenti (la posta indesiderata è un'operazione di volume elevato), il server di posta elettronica di destinazione viene essenzialmente in ingannato a restituire il messaggio non recapitabile in un rapporto di mancato recapito al mittente contraffatto nell'indirizzo Da:.
 
-In Microsoft 365 organizzazioni con cassette postali in Exchange Online o standalone Exchange Online Protection (EOP) organizzazioni senza cassette postali di Exchange Online, EOP compie ogni sforzo per identificare e eliminare automaticamente i messaggi da fonti dubbie senza generare un rapporto di mancato recapito. Tuttavia, in base al volume di messaggi di posta elettronica che scorre attraverso il servizio, c'è sempre la possibilità che EOP invierà involontariamente backscatter.
+Nelle organizzazioni di Microsoft 365 con cassette postali in Exchange Online o nelle organizzazioni Exchange Online Protection (EOP) autonome senza cassette postali di Exchange Online, EOP fa tutto il possibile per identificare e rilasciare automaticamente i messaggi da origini dubbie senza generare un rapporto di mancato recapito. Tuttavia, in base all'elevato volume di posta elettronica che attraversa il servizio, esiste sempre la possibilità che EOP invii inavvio posta indesiderata.
 
-Backscatterer.org gestisce un elenco di indirizzi bloccati (noto anche come elenco di indirizzi DNS o DNSBL) dei server di posta elettronica responsabili dell'invio di backscatter e i server di EOP potrebbero essere presenti in questo elenco. Tuttavia, non si tenta di rimuovere noi stessi dall'elenco dei blocchi di Backscatterer.org perché non si tratta di un elenco di spammer (per loro stessa ammissione).
+Backscatterer.org gestisce un elenco di indirizzi bloccati (noto anche come elenco di indirizzi dns bloccati o DNSBL) di server di posta elettronica responsabili dell'invio di posta indesiderata in uscita e i server EOP potrebbero essere visualizzati in questo elenco. Tuttavia, non si tenta di rimuoversi dall'Backscatterer.org di blocco perché non è un elenco di spammer (per ammissione).
 
 > [!TIP]
-> Il sito Web Backscatter.org ( <http://www.backscatterer.org/?target=usage> ) consiglia di utilizzare il servizio per controllare la posta elettronica in arrivo in modalità provvisoria invece della modalità rifiuto (i servizi di posta elettronica di grandi dimensioni quasi sempre inviano un backscatter).
+> Il Backscatter.org web ( ) consiglia di utilizzare il servizio per controllare la posta elettronica in arrivo in modalità provvisoria anziché in modalità rifiutata (i servizi di posta elettronica di grandi dimensioni inviano quasi sempre posta indesiderata <http://www.backscatterer.org/?target=usage> in uscita).

@@ -1,5 +1,5 @@
 ---
-title: Rilevare e correggere le concessioni di consenso illecite
+title: Rilevare e correggere le concessioni di consenso illecito
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -11,115 +11,119 @@ ms.topic: article
 ms.collection:
 - o365_security_incident_response
 - M365-security-compliance
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
-description: Informazioni su come riconoscere e correggere il consenso illecito Grants Attack in Microsoft Office 365.
+description: Informazioni su come riconoscere e correggere l'attacco che concede il consenso illecito in Microsoft Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b534d53166c09cf77993948cf1c448e21c8cd330
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: a1c724bb3b201e0ddf1edea4794606c7083605e8
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48203096"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165440"
 ---
-# <a name="detect-and-remediate-illicit-consent-grants"></a>Rilevare e correggere le concessioni di consenso illecite
+# <a name="detect-and-remediate-illicit-consent-grants"></a>Rilevare e correggere le concessioni di consenso illecito
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Si applica a**
+- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-**Riepilogo**  Informazioni su come riconoscere e correggere il consenso illecito Grants Attack in Office 365.
+**Riepilogo**  Informazioni su come riconoscere e correggere l'attacco che concede il consenso illecito in Office 365.
 
-## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a>Che cos'è l'attacco di concessione di autorizzazioni illecite in Office 365?
+## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a>Qual è l'attacco di concessione del consenso illecito in Office 365?
 
-In un attacco di concessione di consenso illecito, l'utente malintenzionato crea un'applicazione registrata in Azure che richiede l'accesso ai dati, ad esempio le informazioni di contatto, la posta elettronica o i documenti. L'utente malintenzionato, quindi, inganna l'utilizzatore finale per concedere a tale applicazione il consenso per accedere ai propri dati tramite un attacco di phishing o iniettando codice illecito in un sito Web attendibile. Dopo che l'applicazione illecita ha ottenuto il consenso, ha accesso ai dati a livello di account senza la necessità di un account organizzativo. I normali passaggi di correzione, come la reimpostazione delle password per gli account violati o la richiesta di autenticazione a più fattori (AMF) per gli account, non sono efficaci rispetto a questo tipo di attacco, poiché si tratta di applicazioni di terze parti e sono esterne all'organizzazione.
+In un attacco di concessione del consenso illecito, l'utente malintenzionato crea un'applicazione registrata in Azure che richiede l'accesso a dati quali informazioni di contatto, posta elettronica o documenti. L'autore dell'attacco inganna quindi un utente finale per concedere il consenso dell'applicazione per accedere ai propri dati tramite un attacco di phishing o iniettando codice illecito in un sito Web attendibile. Dopo che l'applicazione illecita ha ottenuto il consenso, ha accesso a livello di account ai dati senza la necessità di un account dell'organizzazione. I normali passaggi di correzione, come la reimpostazione delle password per gli account violati o la richiesta di Multi-Factor Authentication (MFA) per gli account, non sono efficaci contro questo tipo di attacco, poiché si tratta di applicazioni di terze parti esterne all'organizzazione.
 
 Questi attacchi sfruttano un modello di interazione che presuppone che l'entità che chiama le informazioni sia l'automazione e non un essere umano.
 
 > [!IMPORTANT]
-> Si sospetta che si verifichino problemi con il consenso illecito-sovvenzioni da un'app, in questo momento? Microsoft cloud app Security (MCAS) dispone di strumenti per rilevare, analizzare e correggere le app OAuth. In questo articolo di MCAS è presente un'esercitazione che illustra come procedere per l' [analisi delle app a rischio di OAuth](https://docs.microsoft.com/cloud-app-security/investigate-risky-oauth). È inoltre possibile impostare i [criteri di applicazione OAuth](https://docs.microsoft.com/cloud-app-security/app-permission-policy) per esaminare le autorizzazioni richieste dall'app, che gli utenti autorizzano tali app e approvare o vietare ampiamente queste richieste di autorizzazione.
+> Si sospetta che si siano verificati problemi con concessioni di consenso illecite da un'app, al momento? Microsoft Cloud App Security (MCAS) include strumenti per rilevare, analizzare e correggere le app OAuth. Questo articolo di MCAS include un'esercitazione che descrive come analizzare le [app OAuth rischiose.](https://docs.microsoft.com/cloud-app-security/investigate-risky-oauth) Puoi anche impostare i [criteri delle app OAuth](https://docs.microsoft.com/cloud-app-security/app-permission-policy) per analizzare le autorizzazioni richieste dall'app, quali utenti autorizzano queste app e approvare o vietare ampiamente queste richieste di autorizzazioni.
 
-## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>Che cosa comporta un attacco di consenso illecito per l'assenso in Office 365?
+## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a>Che aspetto ha un attacco di concessione del consenso illecito in Office 365?
 
-È necessario eseguire una ricerca nel **Registro di controllo** per individuare i segni, denominati anche indicatori di compromesso (IOC) di questo attacco. Per le organizzazioni con molte applicazioni registrate in Azure e una base di utenti di grandi dimensioni, la procedura consigliata consiste nell'esaminare le concessioni di consenso delle organizzazioni su base settimanale.
+È necessario eseguire una ricerca **nel log di** controllo per trovare i segni, denominati anche Indicatori di compromissione (IOC) di questo attacco. Per le organizzazioni con molte applicazioni registrate in Azure e una base di utenti di grandi dimensioni, la procedura consigliata consiste nell'esaminare le concessioni di consenso delle organizzazioni su base settimanale.
 
-### <a name="steps-for-finding-signs-of-this-attack"></a>Passaggi per individuare i segni di questo attacco
+### <a name="steps-for-finding-signs-of-this-attack"></a>Passaggi per trovare i segni di questo attacco
 
-1. Aprire il **Centro sicurezza & Compliance** all'indirizzo <https://protection.office.com> .
+1. Aprire il **Centro sicurezza & conformità all'indirizzo** <https://protection.office.com> .
 
-2. Passare a **ricerca** e selezionare **Ricerca log di controllo**.
+2. Passare a **Ricerca** e selezionare **Ricerca log di controllo.**
 
-3. Search (tutte le attività e tutti gli utenti) e immettere la data di inizio e la data di fine, se necessario, e quindi fare clic su **Cerca**.
+3. Cercare (tutte le attività e tutti gli utenti) e immettere la data di inizio e la data di fine, se necessario, quindi fare clic su **Cerca.**
 
-4. Fare clic su **Filtra risultati** e immettere consenso all'applicazione nel campo **attività** .
+4. Fare **clic su Filtra risultati** e immettere Consenso all'applicazione nel **campo** Attività.
 
-5. Fare clic sul risultato per visualizzare i dettagli dell'attività. Fare clic su **altre informazioni** per ottenere informazioni dettagliate sull'attività. Controllare se IsAdminContent è impostato su true.
+5. Fai clic sul risultato per visualizzare i dettagli dell'attività. Fare **clic su Altre informazioni** per ottenere informazioni dettagliate sull'attività. Verificare se IsAdminContent è impostato su True.
 
 > [!NOTE]
 >
-> La voce del registro di controllo corrispondente viene visualizzata nei risultati della ricerca dopo un evento di 30 minuti fino a 24 ore.
+> La visualizzazione della voce del registro di controllo corrispondente nei risultati della ricerca dopo un evento può richiedere da 30 minuti a 24 ore.
 >
-> Il periodo di tempo in cui un record di controllo viene conservato e ricercabile nel log di controllo dipende dall'abbonamento a Microsoft 365 e in particolare dal tipo di licenza assegnato a un utente specifico. Per ulteriori informazioni, vedere [log di controllo](../../compliance/search-the-audit-log-in-security-and-compliance.md).
+> Il periodo di conservazione e ricerca di un record di controllo nel log di controllo dipende dall'abbonamento a Microsoft 365 e in particolare dal tipo di licenza assegnata a un utente specifico. Per ulteriori informazioni, vedere [Log di controllo.](../../compliance/search-the-audit-log-in-security-and-compliance.md)
 >
-> Se questo valore è impostato su true, indica che un utente con accesso amministratore globale può aver concesso l'accesso esteso ai dati. Se questa operazione non è prevista, eseguire le operazioni necessarie per [confermare un attacco](#how-to-confirm-an-attack).
+> Se questo valore è true, indica che un utente con accesso amministratore globale potrebbe aver concesso l'accesso generale ai dati. In caso di imprevisto, eseguire le operazioni necessarie per [confermare un attacco.](#how-to-confirm-an-attack)
 
 ## <a name="how-to-confirm-an-attack"></a>Come confermare un attacco
 
-Se si dispone di una o più istanze di IOCs elencate in alto, è necessario eseguire ulteriori indagini per confermare positivamente che l'attacco si è verificato. Per confermare l'attacco, è possibile utilizzare uno dei tre metodi seguenti:
+Se si dispone di una o più istanze degli I/O elencati in precedenza, è necessario eseguire ulteriori indagini per verificare che l'attacco si sia verificato in modo positivo. È possibile utilizzare uno di questi tre metodi per confermare l'attacco:
 
-- Applicazioni di inventario e relative autorizzazioni tramite il portale di Azure Active Directory. Questo metodo è accurato, ma è possibile controllare solo un utente alla volta che può richiedere molto tempo se si dispone di molti utenti da controllare.
+- Inventario delle applicazioni e delle relative autorizzazioni tramite il portale di Azure Active Directory. Questo metodo è accurato, ma puoi controllare un solo utente alla volta, operazione che può richiedere molto tempo se hai molti utenti da controllare.
 
-- Applicazioni di inventario e relative autorizzazioni tramite PowerShell. Questo è il metodo più rapido e completo, con il minor numero di overhead.
+- Eseguire l'inventario delle applicazioni e delle relative autorizzazioni tramite PowerShell. Questo è il metodo più rapido e accurato, con il minor sovraccarico possibile.
 
-- Fare in modo che gli utenti controllino singolarmente le app e le autorizzazioni e riportino i risultati agli amministratori per la correzione.
+- Consentire agli utenti di controllare singolarmente le app e le autorizzazioni e segnalare i risultati agli amministratori per la correzione.
 
-## <a name="inventory-apps-with-access-in-your-organization"></a>App di inventario con accesso nell'organizzazione
+## <a name="inventory-apps-with-access-in-your-organization"></a>Inventario delle app con accesso nell'organizzazione
 
-È possibile eseguire questa operazione per gli utenti con il portale di Azure Active Directory o con PowerShell oppure fare in modo che gli utenti possano enumerare singolarmente l'accesso alle applicazioni.
+È possibile eseguire questa operazione per gli utenti con il portale di Azure Active Directory o PowerShell oppure fare in modo che gli utenti enumerino singolarmente l'accesso alle applicazioni.
 
-### <a name="steps-for-using-the-azure-active-directory-portal"></a>Passaggi per l'utilizzo del portale di Azure Active Directory
+### <a name="steps-for-using-the-azure-active-directory-portal"></a>Passaggi per l'uso del portale di Azure Active Directory
 
-È possibile cercare le applicazioni a cui ogni singolo utente ha concesso le autorizzazioni utilizzando il [portale di Azure Active Directory](https://portal.azure.com/).
+È possibile cercare le applicazioni a cui ogni singolo utente ha concesso le autorizzazioni tramite il [portale di Azure Active Directory.](https://portal.azure.com/)
 
 1. Accedere al portale di Azure con diritti amministrativi.
 
-2. Selezionare il Blade di Azure Active Directory.
+2. Selezionare il pannello di Azure Active Directory.
 
 3. Selezionare **Utenti**.
 
 4. Selezionare l'utente che si desidera esaminare.
 
-5. Selezionare **applicazioni**.
+5. Selezionare **Applicazioni.**
 
-In questo modo vengono mostrate le app che sono state assegnate all'utente e quali autorizzazioni hanno le applicazioni.
+Verranno mostrate le app assegnate all'utente e le autorizzazioni di cui dispongono le applicazioni.
 
-### <a name="steps-for-having-your-users-enumerate-their-application-access"></a>Procedure per consentire agli utenti di enumerare l'accesso alle applicazioni
+### <a name="steps-for-having-your-users-enumerate-their-application-access"></a>Passaggi per fare in modo che gli utenti enumerino l'accesso alle applicazioni
 
-Fare in modo che gli utenti https://myapps.microsoft.com accedano e rivedano l'accesso a un'applicazione. Essi dovrebbero essere in grado di visualizzare tutte le app con accesso, visualizzare i dettagli relativi (compreso l'ambito di accesso) ed essere in grado di revocare i privilegi alle app sospette o illecite.
+Fare in modo che gli utenti https://myapps.microsoft.com vi accedono e rivedranno l'accesso alle proprie applicazioni. Dovrebbero essere in grado di visualizzare tutte le app con accesso, visualizzare dettagli su di esse (incluso l'ambito di accesso) ed essere in grado di revocare privilegi ad app sospette o illecite.
 
 ### <a name="steps-for-doing-this-with-powershell"></a>Passaggi per eseguire questa operazione con PowerShell
 
-Il modo più semplice per verificare l'attacco di concessione di consenso illecito consiste nell'eseguire [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09), che consentirà di scaricare tutti i concessioni di autorizzazione OAuth e le app OAuth per tutti gli utenti nel proprio contratto di locazione in un unico file. csv.
+Il modo più semplice per verificare l'attacco di concessione del consenso illecito è eseguire [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09), che eseguirà il dump di tutte le concessioni di consenso OAuth e delle app OAuth per tutti gli utenti della tenancy in un unico file CSV.
 
 #### <a name="pre-requisites"></a>Prerequisiti
 
 - Libreria di Azure AD PowerShell installata.
 
-- Diritti di amministratore globale sul tenant su cui verrà eseguito lo script.
+- Diritti di amministratore globale per il tenant su cui verrà eseguito lo script.
 
 - Amministratore locale nel computer da cui verranno eseguiti gli script.
 
 > [!IMPORTANT]
-> È ***consigliabile*** richiedere l'autenticazione a più fattori per l'account amministrativo. Questo script supporta l'autenticazione Mae.
+> È ***consigliabile richiedere*** l'autenticazione a più fattori nell'account amministrativo. Questo script supporta l'autenticazione MFA.
 
-1. Accedere al computer in cui verrà eseguito lo script con i diritti di amministratore locale.
+1. Accedere al computer da cui si eseguirà lo script con diritti di amministratore locale.
 
-2. Scaricare o copiare lo script [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) da GitHub in una cartella dalla quale verrà eseguito lo script. Questa sarà la stessa cartella in cui verrà scritto il file di output "permissions.csv".
+2. Scarica o copia lo script [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) da GitHub in una cartella da cui eseguirai lo script. Questa sarà la stessa cartella in cui verrà scritto il file "permissions.csv" di output.
 
-3. Aprire un'istanza di PowerShell come amministratore e aprirla alla cartella in cui è stato salvato lo script.
+3. Aprire un'istanza di PowerShell come amministratore e aprire la cartella in cui è stato salvato lo script.
 
-4. Connettersi alla directory utilizzando il cmdlet [Connect-AzureAD](https://docs.microsoft.com/powershell/module/azuread/connect-azuread) .
+4. Connettersi alla directory utilizzando il cmdlet [Connect-AzureAD.](https://docs.microsoft.com/powershell/module/azuread/connect-azuread)
 
 5. Eseguire questo comando di PowerShell:
 
@@ -127,44 +131,44 @@ Il modo più semplice per verificare l'attacco di concessione di consenso illeci
    Get-AzureADPSPermissions.ps1 | Export-csv -Path "Permissions.csv" -NoTypeInformation
    ```
 
-Lo script produce un file denominato Permissions.csv. Eseguire la procedura seguente per cercare le autorizzazioni di autorizzazione per l'applicazione illecite:
+Lo script produce un file denominato Permissions.csv. Eseguire la procedura seguente per cercare le autorizzazioni per le applicazioni illecite:
 
-1. Nella colonna ConsentType (colonna G) cercare il valore "AllPrinciples". L'autorizzazione AllPrincipals consente all'applicazione client di accedere al contenuto di tutti nel contratto di locazione. Le applicazioni native di Microsoft 365 hanno bisogno di questa autorizzazione per funzionare correttamente. Tutte le applicazioni non Microsoft con questa autorizzazione devono essere esaminate con attenzione.
+1. Nella colonna ConsentType (colonna G) cercare il valore "AllPrinciples". L'autorizzazione AllPrincipals consente all'applicazione client di accedere al contenuto di tutti gli utenti nella tenancy. Le applicazioni native di Microsoft 365 necessitano di questa autorizzazione per funzionare correttamente. Ogni applicazione non Microsoft con questa autorizzazione deve essere esaminata con attenzione.
 
-2. Nella colonna autorizzazione (colonna F) esaminare le autorizzazioni che ogni applicazione delegata deve soddisfare. Cercare l'autorizzazione "lettura" e "scrittura" o "*. All "autorizzazione e verificarne con attenzione perché potrebbero non essere appropriate.
+2. Nella colonna Autorizzazione (colonna F) esaminare le autorizzazioni di cui ogni applicazione delegata dispone per il contenuto. Cercare "Lettura" e "Scrittura" o "*. All" permission, and review these carefully because they may not be appropriate.
 
-3. Esaminare gli utenti specifici a cui sono concessi consenzienti. Se gli utenti di alto profilo o di alto impatto hanno concessi consensi inadeguati, è necessario indagare ulteriormente.
+3. Esaminare gli utenti specifici a cui sono stati concessi i consensi. Se gli utenti di alto profilo o ad alto impatto hanno il consenso inappropriato concesso, è necessario analizzare ulteriormente.
 
-4. Nella colonna ClientDisplayName (colonna C) cercare le app che risultano sospette. Le app con nomi di ortografia errati, nomi Super blandi o nomi di hacker devono essere esaminate con attenzione.
+4. Nella colonna ClientDisplayName (colonna C) cercare le app che sembrano sospette. Le app con nomi con errori di ortografia, nomi super-errate o nomi di hacker devono essere esaminate attentamente.
 
 ## <a name="determine-the-scope-of-the-attack"></a>Determinare l'ambito dell'attacco
 
-Dopo aver completato l'inventario dell'applicazione, esaminare il **Registro di controllo** per determinare l'ambito completo della violazione. Cercare negli utenti coinvolti, i tempi di accesso dell'applicazione illecita all'organizzazione e le autorizzazioni dell'app. È possibile eseguire una ricerca nel **Registro di controllo** nel [Centro sicurezza e conformità di Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance).
+Dopo aver completato l'inventario dell'accesso alle applicazioni, esaminare il **log di controllo** per determinare l'ambito completo della violazione. Cercare gli utenti interessati, l'intervallo di tempo in cui l'applicazione illecita ha avuto accesso all'organizzazione e le autorizzazioni di cui disponeva l'app. È possibile eseguire ricerche **nel log di controllo** nel Centro sicurezza e conformità di Microsoft [365.](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
 
 > [!IMPORTANT]
-> Il controllo [delle cassette postali](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing) e il [controllo delle attività per gli amministratori e gli utenti](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off) devono essere stati abilitati prima dell'attacco per ottenere queste informazioni.
+> [Per ottenere queste](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing) [informazioni,](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off) è necessario che il controllo delle cassette postali e il controllo attività per amministratori e utenti siano stati abilitati prima dell'attacco.
 
-## <a name="how-to-stop-and-remediate-an-illicit-consent-grant-attack"></a>Come arrestare e correggere un attacco di concessione di un consenso illecito
+## <a name="how-to-stop-and-remediate-an-illicit-consent-grant-attack"></a>Come arrestare e correggere un attacco di concessione del consenso illecito
 
-Dopo aver identificato un'applicazione con autorizzazioni illecite, sono disponibili diversi modi per rimuovere tale accesso.
+Dopo aver identificato un'applicazione con autorizzazioni illecite, è possibile rimuovere tale accesso in diversi modi.
 
-- È possibile revocare l'autorizzazione dell'applicazione nel portale di Azure Active Directory per:
+- È possibile revocare l'autorizzazione dell'applicazione nel portale di Azure Active Directory:
 
-  - Passare all'utente coinvolto nel Blade **utente di Azure Active Directory** .
+  - Passare all'utente interessato nel pannello **Utente di Azure Active Directory.**
 
-  - Selezionare **applicazioni**.
+  - Selezionare **Applicazioni.**
 
   - Selezionare l'applicazione illecita.
 
-  - Fare clic su **Rimuovi** nell'esercitazione verso il basso.
+  - Fare **clic su** Rimuovi nel drill-down.
 
-- È possibile revocare la concessione di autorizzazione OAuth con PowerShell attenendosi alla procedura descritta in [Remove-AzureADOAuth2PermissionGrant](https://docs.microsoft.com/powershell/module/azuread/Remove-AzureADOAuth2PermissionGrant).
+- È possibile revocare la concessione del consenso OAuth con PowerShell seguendo la procedura descritta in [Remove-AzureADOAuth2PermissionGrant.](https://docs.microsoft.com/powershell/module/azuread/Remove-AzureADOAuth2PermissionGrant)
 
-- È possibile revocare l'assegnazione di ruolo app di servizio con PowerShell attenendosi alla procedura descritta in [Remove-AzureADServiceAppRoleAssignment](https://docs.microsoft.com/powershell/module/azuread/Remove-AzureADServiceAppRoleAssignment).
+- È possibile revocare l'assegnazione del ruolo app di servizio con PowerShell seguendo la procedura descritta in [Remove-AzureADServiceAppRoleAssignment.](https://docs.microsoft.com/powershell/module/azuread/Remove-AzureADServiceAppRoleAssignment)
 
-- È inoltre possibile disabilitare l'accesso per l'account interessato del tutto, che disattiverà la disabilitazione dell'app ai dati di quell'account. Questo non è l'ideale per la produttività dell'utente finale, naturalmente, ma se si lavora per limitare rapidamente l'impatto, può essere una soluzione valida per la correzione a breve termine.
+- Puoi anche disabilitare completamente l'accesso per l'account interessato, che a sua volta disabiliterà l'accesso dell'app ai dati in tale account. Questo non è l'ideale per la produttività dell'utente finale, naturalmente, ma se si sta lavorando per limitare rapidamente l'impatto, può essere una correzione a breve termine praticabile.
 
-- È possibile disattivare le applicazioni integrate per il tuo contratto di locazione. Si tratta di un passaggio drastico che disabilita la possibilità per gli utenti finali di concedere il consenso a livello di tenant. Ciò impedisce agli utenti di concedere inavvertitamente l'accesso a un'applicazione dannosa. Questo non è fortemente consigliato perché compromette gravemente la capacità degli utenti di essere produttivi con le applicazioni di terze parti. È possibile eseguire questa operazione attenendosi alla procedura descritta in [attivazione o disattivazione delle app integrate](https://docs.microsoft.com/microsoft-365/admin/misc/integrated-apps).
+- È possibile disattivare le applicazioni integrate per la tenancy. Si tratta di un passaggio drastico che disabilita la possibilità per gli utenti finali di concedere il consenso a livello di tenant. In questo modo si impedisce agli utenti di concedere inavvertitamente l'accesso a un'applicazione dannosa. Questo non è consigliabile perché comprova gravemente la capacità degli utenti di essere produttivi con applicazioni di terze parti. Puoi eseguire questa operazione seguendo la procedura descritta in Attivazione o disattivazione [delle app integrate.](https://docs.microsoft.com/microsoft-365/admin/misc/integrated-apps)
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Proteggere Microsoft 365 come un professionista della sicurezza informatica
 
@@ -178,12 +182,12 @@ L'abbonamento a Microsoft 365 include un potente set di funzionalità di protezi
 
 ## <a name="see-also"></a>Vedere anche:
 
-- [Applicazione imprevista nell'elenco delle applicazioni](https://docs.microsoft.com/azure/active-directory/application-access-unexpected-application) gli amministratori possono eseguire le varie azioni che è possibile intraprendere dopo aver realizzato che sono presenti applicazioni inattese con accesso ai dati.
+- [L'applicazione imprevista nell'elenco](https://docs.microsoft.com/azure/active-directory/application-access-unexpected-application) delle applicazioni consente agli amministratori di eseguire varie azioni dopo aver verificato che sono presenti applicazioni impreviste con accesso ai dati.
 
-- L' [integrazione di applicazioni con Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-apps-permissions-consent) è una panoramica generale del consenso e delle autorizzazioni.
+- [L'integrazione delle applicazioni con Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-apps-permissions-consent) è una panoramica generale del consenso e delle autorizzazioni.
 
-- [Problemi durante lo sviluppo di un'applicazione](https://docs.microsoft.com/azure/active-directory/active-directory-application-dev-development-content-map) sono disponibili collegamenti a vari articoli relativi al consenso.
+- [I problemi di sviluppo dell'applicazione](https://docs.microsoft.com/azure/active-directory/active-directory-application-dev-development-content-map) forniscono collegamenti a vari articoli relativi al consenso.
 
-- [Gli oggetti Principal dell'applicazione e del servizio in Azure Active Directory (Azure ad)](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects) offrono una panoramica degli oggetti Principal del servizio e dell'applicazione che sono fondamentali per il modello di applicazione.
+- Gli oggetti applicazione e entità servizio [in Azure Active Directory (Azure AD)](https://docs.microsoft.com/azure/active-directory/develop/active-directory-application-objects) forniscono una panoramica degli oggetti Application e Service Principal di base del modello di applicazione.
 
-- [Manage Access to Apps](https://docs.microsoft.com/azure/active-directory/active-directory-managing-access-to-apps) è una panoramica delle funzionalità che gli amministratori devono gestire per la gestione dell'accesso degli utenti alle app.
+- [Gestire l'accesso alle app](https://docs.microsoft.com/azure/active-directory/active-directory-managing-access-to-apps) è una panoramica delle funzionalità che gli amministratori hanno per gestire l'accesso degli utenti alle app.

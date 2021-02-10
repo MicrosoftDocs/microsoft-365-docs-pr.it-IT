@@ -17,17 +17,22 @@ ms.collection:
 description: Ulteriori informazioni sull'impostazione di protezione per impostazione predefinita in Exchange Online Protection (EOP)
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c8af609b8ed50b0bfacb7d9f5397fab4c4726927
-ms.sourcegitcommit: f3059a0065496623e36e5a084cd2291e6b844597
+ms.openlocfilehash: 51b33afa6b07c040e6aa18abe996c78b770f0773
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50040545"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166580"
 ---
 # <a name="secure-by-default-in-office-365"></a>Proteggere per impostazione predefinita in Office 365
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**Si applica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 "Sicuro per impostazione predefinita" è un termine utilizzato per definire le impostazioni predefinite più sicure possibile.
 
@@ -50,7 +55,7 @@ Poiché Microsoft vuole proteggere i clienti per impostazione predefinita, alcun
 - Mittenti attendibili di Outlook
 - Elenco indirizzi IP consentiti (filtro connessioni)
 
-Per ulteriori informazioni su queste sostituzioni, vedere [Creare elenchi di mittenti attendibili.](create-safe-sender-lists-in-office-365.md)
+Ulteriori informazioni su queste sostituzioni sono disponibili in [Creare elenchi di mittenti attendibili.](create-safe-sender-lists-in-office-365.md)
 
 > [!NOTE]
 > We're in the process of deprecating the **Move message to Junk Email folder** action for a High confidence phishing **email** verdict in EOP anti-spam policies. I criteri di protezione dalla posta indesiderata che utilizzano questa azione per i messaggi di phishing ad alta probabilità verranno convertiti in **messaggi in quarantena.** **L'azione Reindirizza messaggio all'indirizzo di** posta elettronica per i messaggi di phishing ad alta probabilità non è influenzata.
@@ -59,7 +64,7 @@ La protezione per impostazione predefinita non è un'impostazione che può esser
 
 ## <a name="more-on-why-were-doing-this"></a>Ulteriori informazioni sul motivo per cui si sta eseguendo questa operazione
 
-Il punto di essere sicuri per impostazione predefinita è che stiamo facendo la stessa azione sul messaggio che verrebbe eseguita se si conoscesse il messaggio come dannoso, anche quando un'eccezione configurata consentirebbe altrimenti il recapito del messaggio. Questo è lo stesso approccio che abbiamo sempre usato per il malware e ora stiamo estendendo questo stesso comportamento ai messaggi di phishing ad alta probabilità.
+Per impostazione predefinita, il livello di sicurezza è la stessa azione che verrebbe eseguita nel messaggio se si conoscesse il messaggio come dannoso, anche quando un'eccezione configurata consentirebbe altrimenti il recapito del messaggio. Questo è lo stesso approccio che abbiamo sempre usato per il malware e ora stiamo estendendo questo stesso comportamento ai messaggi di phishing ad alta probabilità.
 
 I dati indicano che un utente ha 30 volte più probabilità di fare clic su un collegamento dannoso nei messaggi nella cartella Posta indesiderata rispetto alla quarantena. I dati indicano anche che il tasso di falsi positivi (messaggi validi contrassegnati come non validi) per i messaggi di phishing con alta probabilità è molto basso e gli amministratori possono risolvere eventuali falsi positivi con invii di amministratori.
 

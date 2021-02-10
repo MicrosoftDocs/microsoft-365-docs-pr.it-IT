@@ -1,5 +1,5 @@
 ---
-title: Informazioni sui tipi di informazioni riservate
+title: Ulteriori informazioni sui tipi di informazioni riservate
 f1.keywords:
 - CSH
 ms.author: chrfox
@@ -16,14 +16,14 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 896a529d67faddb45b2672ca077f5a8e3b19827e
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 91366e8f255d277d4d40de4c4cd3330283da718c
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49933082"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166451"
 ---
-# <a name="learn-about-sensitive-information-types"></a>Informazioni sui tipi di informazioni riservate
+# <a name="learn-about-sensitive-information-types"></a>Ulteriori informazioni sui tipi di informazioni riservate
 
 L'identificazione e la classificazione di elementi sensibili sotto il controllo dell'organizzazione è il primo passaggio nella [disciplina di Information Protection.](protect-information.md)  Microsoft 365 offre tre modi per identificare gli elementi in modo che possano essere classificati:
 
@@ -31,7 +31,7 @@ L'identificazione e la classificazione di elementi sensibili sotto il controllo 
 - riconoscimento automatico dei pattern, come i tipi di informazioni sensibili
 - [machine learning](classifier-learn-about.md)
 
-I tipi di informazioni riservate sono classificatori basati su modelli. Rilevano informazioni sensibili come i numeri di previdenza sociale, carta di credito o conto corrente bancario per identificare gli elementi sensibili, vedere [Definizioni](sensitive-information-type-entity-definitions.md) delle entità dei tipi di informazioni sensibili
+I tipi di informazioni riservate sono classificatori basati su pattern. Rilevano informazioni riservate come i numeri di previdenza sociale, carta di credito o conto corrente bancario per identificare gli elementi sensibili, vedere [Definizioni delle](sensitive-information-type-entity-definitions.md) entità dei tipi di informazioni sensibili
 
 ## <a name="sensitive-information-types-are-used-in"></a>I tipi di informazioni riservate vengono utilizzati in
 
@@ -47,13 +47,13 @@ Ogni entità del tipo di informazioni riservate è definita da questi campi:
 
 - name: come viene fatto riferimento al tipo di informazioni riservate
 - description: descrive cosa cerca il tipo di informazioni riservate
-- pattern: un modello definisce le informazioni rilevate da un tipo di informazioni riservate. È costituito dai componenti seguenti:
+- pattern: un modello definisce cosa rileva un tipo di informazione sensibile. È costituito dai componenti seguenti:
     - Elemento principale: l'elemento principale cercato dal tipo di informazioni riservate. Può essere **un'espressione regolare** con o senza una convalida del checksum, un elenco di parole **chiave,** un dizionario di **parole** chiave o una **funzione.**
     - Elemento di supporto: elementi che fungono da prova di supporto che aiutano ad aumentare la sicurezza della corrispondenza. Ad esempio, parola chiave "SSN" in prossimità di un numero SSN. Può essere un'espressione regolare con o senza una convalida del checksum, un elenco di parole chiave, un dizionario di parole chiave.
     - Livello di sicurezza - I livelli di probabilità (alto, medio, basso) riflettono la quantità di prove di supporto rilevate insieme all'elemento primario. Maggiore è il numero di prove di supporto contenute in un elemento, maggiore è la probabilità che un elemento corrispondente contenga le informazioni sensibili che stai cercando.
     - Prossimità: numero di caratteri tra l'elemento primario e l'elemento di supporto
 
-![Diagramma dell'evidenza corroborativa e della finestra di prossimità](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
+![Diagramma della prova corroborativa e della finestra di prossimità](../media/dc68e38e-dfa1-45b8-b204-89c8ba121f96.png)
 
 Altre informazioni sui livelli di sicurezza in questo video
 
@@ -84,7 +84,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
 - L'espressione regolare Regex_argentina_national_id trova contenuto che corrisponde al modello.
 - Viene trovata una parola Keyword_argentina_national_id da un utente.
 
@@ -114,7 +114,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 ### <a name="more-on-confidence-levels"></a>Altre informazioni sui livelli di sicurezza
 
-In una definizione di entità del tipo di informazioni **riservate,** il livello di probabilità riflette la quantità di prove di supporto rilevate oltre all'elemento principale. Maggiore è il numero di prove di supporto contenute in un elemento, maggiore è la probabilità che un elemento corrispondente contenga le informazioni sensibili che stai cercando. Ad esempio, le corrispondenze con un livello di probabilità elevato conterranno una prova di supporto maggiore in prossimità dell'elemento primario, mentre le corrispondenze con un livello di probabilità basso conterranno poche o nessuna prova di supporto in prossimità. 
+In una definizione di entità del tipo di informazioni riservate, il livello di **probabilità** riflette la quantità di prove di supporto rilevate oltre all'elemento principale. Maggiore è il numero di prove di supporto contenute in un elemento, maggiore è la probabilità che un elemento corrispondente contenga le informazioni sensibili che stai cercando. Ad esempio, le corrispondenze con un livello di probabilità elevato conterranno una prova di supporto maggiore in prossimità dell'elemento primario, mentre le corrispondenze con un livello di probabilità basso conterranno poche o nessuna prova di supporto in prossimità. 
 
 Un livello di probabilità elevato restituisce il numero più basso di falsi positivi, ma può comportare più falsi negativi. I livelli di probabilità bassa o media rendono più falsi positivi, ma da pochi a zero falsi negativi.
 
@@ -137,6 +137,8 @@ Per creare tipi di informazioni sensibili personalizzati nel Centro sicurezza e 
 
 
 > [!NOTE]
+> I livelli di sicurezza migliorati sono disponibili per l'uso immediato all'interno di Prevenzione della perdita dei dati per i servizi di Microsoft 365, Microsoft Information Protection per i servizi di Microsoft 365, Conformità delle comunicazioni, Governance delle informazioni e Gestione record.
+
 > Microsoft 365 Information Protection supporta in anteprima i set di caratteri a due byte per le lingue seguenti:
 > - Cinese (semplificato)
 > - Cinese (tradizionale)

@@ -17,16 +17,21 @@ ms.collection:
 description: Gli amministratori possono conoscere i diversi modi per segnalare messaggi e file a Microsoft per l'analisi.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 601d0c599a815529540281679bd2b0f907031058
-ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
+ms.openlocfilehash: b75b05f33ab6c6a5827101ad2f5b14c94b932135
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50099691"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166688"
 ---
 # <a name="report-messages-and-files-to-microsoft"></a>Segnalazione di messaggi e file a Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**Si applica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Nelle organizzazioni di Microsoft 365 con cassette postali in Exchange Online o nelle organizzazioni Exchange Online Protection (EOP) autonome senza cassette postali di Exchange Online, sia gli utenti che gli amministratori hanno diversi metodi per segnalare i messaggi di posta elettronica e i file a Microsoft.
 
@@ -34,9 +39,9 @@ Nelle organizzazioni di Microsoft 365 con cassette postali in Exchange Online o 
 
 |Metodo|Descrizione|
 |---|---|
-|[Usare l'Invio dell'amministratore per inviare posta indesiderata sospetta, phishing, URL e file a Microsoft](admin-submission.md)|Il metodo di segnalazione consigliato per gli amministratori nelle organizzazioni con cassette postali di Exchange Online (non disponibile in EOP autonomo).|
-|[Abilitare il componente aggiuntivo Segnala messaggio](enable-the-report-message-add-in.md)|Funziona con Outlook e Outlook sul Web (in precedenza noto come Outlook Web App). <p> A seconda dell'abbonamento, i messaggi segnalati dagli [](admin-submission.md)utenti con il componente aggiuntivo sono disponibili nel portale invii dell'amministratore, nei risultati di analisi e risposta [automatizzata (AIR, Automated Investigation and Response),](air-view-investigation-results.md)nel [report](view-email-security-reports.md#user-reported-messages-report)dei messaggi segnalati dagli utenti e in [Esplora minacce.](threat-explorer-views.md#email--submissions) <p> È possibile configurare i messaggi segnalati da copiare o reindirizzare a una cassetta postale specificata. Per altre informazioni, vedi [Criteri di invio degli utenti.](user-submission.md)
-|[Abilitare il componente aggiuntivo Segnala phishing](enable-the-report-phish-add-in.md)|Funziona con Outlook e Outlook sul Web (in precedenza noto come Outlook Web App). <p> A seconda dell'abbonamento, i messaggi segnalati dagli [](admin-submission.md)utenti con il componente aggiuntivo sono disponibili nel portale invii dell'amministratore, nei risultati di analisi e risposta [automatizzata (AIR, Automated Investigation and Response),](air-view-investigation-results.md)nel [report](view-email-security-reports.md#user-reported-messages-report)dei messaggi segnalati dagli utenti e in [Esplora minacce.](threat-explorer-views.md#email--submissions) <p> È possibile configurare i messaggi segnalati da copiare o reindirizzare a una cassetta postale specificata. Per altre informazioni, vedi [Criteri di invio degli utenti.](user-submission.md)|
+|[Usare l'Invio dell'amministratore per inviare posta indesiderata sospetta, phishing, URL e file a Microsoft](admin-submission.md)|Il metodo di creazione di report consigliato per gli amministratori nelle organizzazioni con cassette postali di Exchange Online (non disponibile in EOP autonomo).|
+|[Abilitare il componente aggiuntivo Segnala messaggio](enable-the-report-message-add-in.md)|Funziona con Outlook e Outlook sul Web (in precedenza noto come Outlook Web App). <p> A seconda dell'abbonamento, i messaggi segnalati dagli [](admin-submission.md)utenti con il componente aggiuntivo sono disponibili nel portale invii dell'amministratore, nei risultati di analisi e risposta [automatizzati (AIR, Automated Investigation and Response),](air-view-investigation-results.md)nel [report](view-email-security-reports.md#user-reported-messages-report)dei messaggi segnalati dagli utenti e in [Esplora minacce.](threat-explorer-views.md#email--submissions) <p> È possibile configurare i messaggi segnalati da copiare o reindirizzare a una cassetta postale specificata. Per altre informazioni, vedi [Criteri di invio degli utenti.](user-submission.md)
+|[Abilitare il componente aggiuntivo Segnala phishing](enable-the-report-phish-add-in.md)|Funziona con Outlook e Outlook sul Web (in precedenza noto come Outlook Web App). <p> A seconda dell'abbonamento, i messaggi segnalati dagli [](admin-submission.md)utenti con il componente aggiuntivo sono disponibili nel portale invii dell'amministratore, nei risultati di analisi e risposta [automatizzati (AIR, Automated Investigation and Response),](air-view-investigation-results.md)nel [report](view-email-security-reports.md#user-reported-messages-report)dei messaggi segnalati dagli utenti e in [Esplora minacce.](threat-explorer-views.md#email--submissions) <p> È possibile configurare i messaggi segnalati da copiare o reindirizzare a una cassetta postale specificata. Per altre informazioni, vedi [Criteri di invio degli utenti.](user-submission.md)|
 |[Installare e utilizzare il componente aggiuntivo per la segnalazione della posta indesiderata per Microsoft Outlook](junk-email-reporting-add-in-for-microsoft-outlook.md)|Funziona solo in Outlook.|
 |[Segnalare posta indesiderata e phishing in Outlook sul Web](report-junk-email-and-phishing-scams-in-outlook-on-the-web-eop.md)|Utilizzare le funzionalità incorporate in Outlook sul Web per le organizzazioni con cassette postali di Exchange Online (non disponibili in EOP autonomo). <p> I messaggi che gli utenti segnalano sono disponibili [nel portale invii di amministratori.](admin-submission.md) <p> È possibile configurare i messaggi segnalati da copiare o reindirizzare a una cassetta postale specificata. Per altre informazioni, vedi [Criteri di invio degli utenti.](user-submission.md)|
 |[Segnalare posta indesiderata e phishing in Outlook per iOS e Android](report-junk-email-and-phishing-scams-in-outlook-for-iOS-and-Android.md)|Utilizzare le funzionalità incorporate in Outlook per iOS e Android per le organizzazioni con cassette postali di Exchange Online (non disponibili in EOP autonomo). <p> I messaggi che gli utenti segnalano sono disponibili [nel portale invii di amministratori.](admin-submission.md) <p> È possibile configurare i messaggi segnalati da copiare o reindirizzare a una cassetta postale specificata. Per altre informazioni, vedi [Criteri di invio degli utenti.](user-submission.md)|
@@ -44,7 +49,7 @@ Nelle organizzazioni di Microsoft 365 con cassette postali in Exchange Online o 
 |[Utilizzare le regole del flusso di posta per vedere quali segnalazioni gli utenti inviano a Microsoft](use-mail-flow-rules-to-see-what-your-users-are-reporting-to-microsoft.md)|Informazioni su come creare una regola del flusso di posta (nota anche come regola di trasporto) che informa l'utente quando gli utenti segnalano messaggi a Microsoft per l'analisi.|
 |[Inviare malware e non malware a Microsoft per l'analisi](submitting-malware-and-non-malware-to-microsoft-for-analysis.md)|Utilizzare il sito Microsoft Security Intelligence per inviare allegati e altri file.|
 
-Se i messaggi di posta indesiderata o phishing sono stati messi in quarantena anziché recapitati, gli utenti possono segnalare i messaggi a Microsoft dal portale di quarantena nel Centro sicurezza & conformità. Per informazioni dettagliate, vedere [Trovare e rilasciare i messaggi in quarantena come utente in Microsoft 365.](find-and-release-quarantined-messages-as-a-user.md)
+Se i messaggi di posta indesiderata o di phishing sono stati messi in quarantena anziché recapitati, gli utenti possono segnalare i messaggi a Microsoft dal portale di quarantena nel Centro sicurezza & conformità. Per informazioni dettagliate, vedere [Trovare e rilasciare i messaggi in quarantena come utente in Microsoft 365.](find-and-release-quarantined-messages-as-a-user.md)
 
 > [!NOTE]
 > I dati degli invii a Microsoft risiedono nel limite di conformità di Office 365 nei data center del Nord America. I dati vengono esaminati dagli analisti del team di progettazione per migliorare l'efficacia dei filtri.

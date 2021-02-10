@@ -19,14 +19,19 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 261c375aa17e4a3bc8f7d1b469d82621cf4ae45b
-ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
+ms.openlocfilehash: 653b16b7b3f6637440e3740830ffe9f9a51c6dd8
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097129"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50166508"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Criteri consigliati per la protezione della posta elettronica
+
+**Si applica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+
 
 In questo articolo viene descritto come implementare i criteri di identità e accesso ai dispositivi consigliati per proteggere i client di posta elettronica e di posta elettronica dell'organizzazione che supportano l'autenticazione moderna e l'accesso condizionale. Queste indicazioni si basano sui criteri [comuni di identità](identity-access-policies.md) e accesso ai dispositivi e includono anche alcuni consigli aggiuntivi.
 
@@ -44,9 +49,9 @@ Per proteggere la posta elettronica, nel diagramma seguente vengono illustrati i
 
 Si noti l'aggiunta di un nuovo criterio per Exchange Online per bloccare i client ActiveSync. In questo modo viene forzato l'utilizzo di Outlook Mobile.
 
-Se Exchange Online e Outlook sono stati inclusi nell'ambito dei criteri durante la configurazione, è necessario creare solo il nuovo criterio per bloccare i client ActiveSync. Esaminare i criteri elencati nella tabella seguente e apportare le aggiunte consigliate oppure verificare che siano già inclusi. Ogni criterio è associato alle istruzioni di configurazione in [Criteri comuni di identità e accesso ai dispositivi.](identity-access-policies.md)
+Se Exchange Online e Outlook sono stati inclusi nell'ambito dei criteri al momento della configurazione, è necessario creare solo il nuovo criterio per bloccare i client ActiveSync. Esaminare i criteri elencati nella tabella seguente e apportare le aggiunte consigliate oppure verificare che siano già inclusi. Ogni criterio è associato alle istruzioni di configurazione in [Criteri comuni di identità e accesso ai dispositivi.](identity-access-policies.md)
 
-|Livello di protezione|Criteri|Ulteriori informazioni|
+|Livello di protezione|Criteri|Altre informazioni|
 |---|---|---|
 |**Protezione di base**|[Richiedere l'autenticazione a più fattori quando il rischio di accesso *è medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Includere Exchange Online nell'assegnazione delle app cloud|
 ||[Bloccare i client che non supportano l'autenticazione moderna](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|Includere Exchange Online nell'assegnazione delle app cloud|
@@ -69,7 +74,7 @@ Questo criterio impedisce ai client ActiveSync di ignorare altri criteri di acce
 
 ## <a name="limit-access-to-exchange-online-from-outlook-on-the-web"></a>Limitare l'accesso a Exchange Online da Outlook sul Web
 
-È possibile limitare la possibilità per gli utenti di scaricare allegati da Outlook sul Web nei dispositivi umnanaged. Gli utenti di questi dispositivi possono visualizzare e modificare questi file usando Office Online senza perdita e archiviazione dei file nel dispositivo. Puoi anche impedire agli utenti di visualizzare gli allegati in un dispositivo non gestito.
+È possibile limitare la possibilità per gli utenti di scaricare allegati da Outlook sul Web su dispositivi umnanaged. Gli utenti di questi dispositivi possono visualizzare e modificare questi file usando Office Online senza perdita e archiviazione dei file nel dispositivo. Puoi anche impedire agli utenti di visualizzare gli allegati in un dispositivo non gestito.
 
 Di seguito sono illustrati i passaggi:
 
@@ -103,9 +108,9 @@ Vedere la procedura per configurare questo criterio in [Gestire l'accesso di col
 
 ## <a name="set-up-message-encryption"></a>Configurare la crittografia dei messaggi
 
-Con le nuove funzionalità office 365 Message Encryption (OME), che sfruttano le funzionalità di protezione di Azure Information Protection, l'organizzazione può facilmente condividere la posta elettronica protetta con chiunque su qualsiasi dispositivo. Gli utenti possono inviare e ricevere messaggi protetti con altre organizzazioni di Microsoft 365 e non clienti tramite Outlook.com, Gmail e altri servizi di posta elettronica.
+Con le nuove funzionalità office 365 Message Encryption (OME), che sfruttano le funzionalità di protezione di Azure Information Protection, l'organizzazione può facilmente condividere la posta elettronica protetta con chiunque su qualsiasi dispositivo. Gli utenti possono inviare e ricevere messaggi protetti con altre organizzazioni di Microsoft 365 e con utenti non clienti che usano Outlook.com, Gmail e altri servizi di posta elettronica.
 
-Per ulteriori informazioni, vedere Configurare le nuove funzionalità di crittografia dei [messaggi di Office 365.](https://docs.microsoft.com/microsoft-365/compliance/set-up-new-message-encryption-capabilities)
+Per ulteriori informazioni, vedere Configurare le nuove funzionalità di crittografia dei messaggi [di Office 365.](https://docs.microsoft.com/microsoft-365/compliance/set-up-new-message-encryption-capabilities)
 
 ## <a name="next-steps"></a>Passaggi successivi
 

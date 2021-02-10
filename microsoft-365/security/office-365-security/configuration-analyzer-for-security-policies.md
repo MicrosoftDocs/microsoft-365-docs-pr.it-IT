@@ -1,5 +1,5 @@
 ---
-title: Analizzatore di configurazione per i criteri di sicurezza
+title: Analizzatore della configurazione per i criteri di sicurezza
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -15,54 +15,58 @@ search.appverid:
 ms.assetid: ''
 ms.collection:
 - M365-security-compliance
-description: Gli amministratori possono ottenere informazioni su come utilizzare l'analizzatore di configurazione per individuare e correggere i criteri di sicurezza che si trovano al di sotto dei criteri di protezione standard e di protezione preimpostati.
+description: Gli amministratori possono imparare a usare l'analizzatore della configurazione per trovare e correggere i criteri di sicurezza che si trovano al di sotto dei criteri di sicurezza standard e di protezione rigida preimpostati.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 04027e78a2683c6c33954bb548c502497c5e8323
-ms.sourcegitcommit: 537e513a4a232a01e44ecbc76d86a8bcaf142482
+ms.openlocfilehash: a78452cb3a7e4cb65c72d98b9322f217309a6d6f
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50029479"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50165908"
 ---
-# <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>Analizzatore di configurazione per i criteri di protezione in EOP e Microsoft Defender per Office 365
+# <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>Analizzatore della configurazione per i criteri di protezione in EOP e Microsoft Defender per Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Si applica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Analizzatore di configurazione nel centro sicurezza & conformità fornisce una posizione centrale per individuare e correggere i criteri di sicurezza in cui le impostazioni sono al di sotto delle impostazioni di protezione standard e del profilo di protezione rigido nei [criteri di sicurezza preimpostati](preset-security-policies.md).
+L'analizzatore della configurazione nel Centro sicurezza & conformità fornisce una posizione centrale per trovare e correggere i criteri di sicurezza in cui le impostazioni si trovano al di sotto delle impostazioni del profilo di protezione Standard e Strict nei criteri di sicurezza [preimpostati.](preset-security-policies.md)
 
-I seguenti tipi di criteri vengono analizzati dall'analizzatore della configurazione:
+I tipi di criteri seguenti vengono analizzati dall'analizzatore della configurazione:
 
-- **Criteri di Exchange Online Protection (EOP)**: sono incluse le organizzazioni Microsoft 365 con le cassette postali di Exchange Online e le organizzazioni EOP autonome senza cassette postali di Exchange Online:
+- **Criteri di Exchange Online Protection (EOP):** sono incluse le organizzazioni di Microsoft 365 con cassette postali di Exchange Online e le organizzazioni EOP autonome senza cassette postali di Exchange Online:
 
   - [Criteri di protezione da posta indesiderata](configure-your-spam-filter-policies.md).
-  - [Criteri anti-malware](configure-anti-malware-policies.md).
-  - [Criteri di anti-phishing di EOP](set-up-anti-phishing-policies.md#spoof-settings).
+  - [Criteri antimalware](configure-anti-malware-policies.md).
+  - [Criteri anti-phishing EOP.](set-up-anti-phishing-policies.md#spoof-settings)
 
-- **Microsoft Defender per i criteri di office 365**: include le organizzazioni con Microsoft 365 E5 o gli abbonamenti del componente aggiuntivo Defender per Office 365:
+- **Criteri di Microsoft Defender per Office 365**: sono incluse le organizzazioni con abbonamenti ai componenti aggiuntivi di Microsoft 365 E5 o Defender per Office 365:
 
-  - Criteri di anti-phishing in Microsoft Defender per Office 365, che includono:
+  - Criteri anti-phishing in Microsoft Defender per Office 365, che includono:
 
-    - Le stesse [impostazioni di spoofing](set-up-anti-phishing-policies.md#spoof-settings) disponibili nei criteri di anti-phishing di EOP.
+    - Le stesse [impostazioni di spoofing](set-up-anti-phishing-policies.md#spoof-settings) disponibili nei criteri anti-phishing di EOP.
     - [Impostazioni di rappresentazione](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
     - [Soglie di phishing avanzate](set-up-anti-phishing-policies.md#advanced-phishing-thresholds-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
 
-  - [Criteri collegamenti sicuri](set-up-atp-safe-links-policies.md).
+  - [Criteri collegamenti sicuri.](set-up-atp-safe-links-policies.md)
 
-  - [Criteri allegati sicuri](set-up-atp-safe-attachments-policies.md).
+  - [Criteri allegati sicuri.](set-up-atp-safe-attachments-policies.md)
 
-I valori di impostazione dei criteri **standard** e **rigorosi** utilizzati come linee di base sono descritti in [impostazioni consigliate per EOP e Microsoft Defender per la sicurezza di Office 365](recommended-settings-for-eop-and-office365-atp.md).
+I **valori delle** impostazioni dei criteri Standard e **Strict** utilizzati come linee di base sono descritti in Impostazioni consigliate per EOP e Microsoft Defender per la sicurezza di [Office 365.](recommended-settings-for-eop-and-office365-atp.md)
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla pagina dell' **analizzatore** dell'utilità di configurazione, utilizzare <https://protection.office.com/configurationAnalyzer> .
+- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla pagina **dell'analizzatore della** configurazione, utilizzare <https://protection.office.com/configurationAnalyzer> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - È necessario disporre delle autorizzazioni nel Centro sicurezza e conformità per poter eseguire le procedure contenute in questo articolo:
-  - Per utilizzare l'analizzatore di configurazione **e** aggiornare i criteri di sicurezza, è necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **amministratore sicurezza** .
-  - Per l'accesso in sola lettura all'analizzatore di configurazione, è necessario essere membri dei gruppi di ruoli **lettore globale** o lettore di **sicurezza** .
+  - Per utilizzare l'analizzatore della **configurazione** e apportare aggiornamenti ai criteri di sicurezza, è necessario essere membri dei gruppi di ruoli **Gestione** organizzazione o **Amministratore** sicurezza.
+  - Per l'accesso in sola lettura all'analizzatore della  configurazione, è necessario essere membri dei gruppi di ruoli Lettore globale o Lettore **di** sicurezza.
 
   Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 
@@ -72,71 +76,71 @@ I valori di impostazione dei criteri **standard** e **rigorosi** utilizzati come
   > 
   > - Anche il gruppo di ruoli di **Gestione organizzazione sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre inoltre l'accesso di sola lettura a tale funzionalità.
 
-## <a name="use-the-configuration-analyzer-in-the-security--compliance-center"></a>Utilizzare l'analizzatore di configurazione nel centro sicurezza & Compliance
+## <a name="use-the-configuration-analyzer-in-the-security--compliance-center"></a>Usare l'analizzatore della configurazione nel Centro sicurezza & conformità
 
-Nel centro sicurezza & conformità, accedere a  \>  \> **analizzatore configurazione** criteri di gestione delle minacce.
+Nel Centro sicurezza & conformità passare a **Analizzatore** configurazione criteri di gestione \>  \> **delle minacce.**
 
-![Widget Configuration Analyzer nella pagina Criteri di gestione dei pericoli \>](../../media/configuration-analyzer-widget.png)
+![Widget analizzatore della configurazione nella pagina Criteri \> di gestione delle minacce](../../media/configuration-analyzer-widget.png)
 
-L'analizzatore di configurazione dispone di due schede principali:
+L'analizzatore della configurazione ha due schede principali:
 
-- **Impostazioni e suggerimenti**: si seleziona standard o Strict e si confrontano tali impostazioni con i criteri di sicurezza esistenti. Nei risultati, è possibile modificare i valori delle impostazioni per riportarli allo stesso livello di standard o Strict.
+- **Impostazioni e suggerimenti:** è possibile selezionare Standard o Strict e confrontare tali impostazioni con i criteri di sicurezza esistenti. Nei risultati puoi modificare i valori delle impostazioni per portarli allo stesso livello di Standard o Strict.
 
-- **Analisi della deriva di configurazione e cronologia**: questa visualizzazione consente di monitorare le modifiche dei criteri nel tempo.
+- **Analisi e cronologia della deriva della configurazione:** questa visualizzazione consente di tenere traccia delle modifiche apportate ai criteri nel tempo.
 
-### <a name="setting-and-recommendations-tab-in-the-configuration-analyzer"></a>Scheda Impostazioni e suggerimenti nell'analizzatore di configurazione
+### <a name="setting-and-recommendations-tab-in-the-configuration-analyzer"></a>Scheda Impostazioni e suggerimenti nell'analizzatore della configurazione
 
-Per impostazione predefinita, la scheda viene visualizzata nel confronto con il profilo di protezione standard. È possibile passare al confronto del profilo di protezione rigoroso facendo clic su **Visualizza suggerimenti rigorosi**. Per tornare indietro, selezionare **Visualizza suggerimenti standard**.
+Per impostazione predefinita, la scheda viene aperta nel confronto con il profilo di protezione Standard. È possibile passare al confronto del profilo di protezione Strict facendo clic **su Visualizza elementi consigliati rigorosi.** Per tornare indietro, selezionare **Visualizza suggerimenti standard.**
 
-![Visualizzazione delle impostazioni e dei suggerimenti nell'analizzatore di configurazione](../../media/configuration-analyzer-settings-and-recommendations-view.png)
+![Visualizzazione delle impostazioni e degli elementi consigliati nell'analizzatore della configurazione](../../media/configuration-analyzer-settings-and-recommendations-view.png)
 
-Per impostazione predefinita, la colonna **gruppo di criteri/Nome impostazione** contiene una visualizzazione compressa dei diversi tipi di criteri di sicurezza e il numero di impostazioni che devono essere migliorate (se presenti). I tipi di criteri sono:
+Per impostazione predefinita, la colonna Nome **gruppo/impostazione** criteri contiene una visualizzazione compressa dei diversi tipi di criteri di sicurezza e del numero di impostazioni che devono essere migliorate (se presenti). I tipi di criteri sono:
 
 - **Protezione da posta indesiderata**
 - **Anti-phishing**
-- **Anti-malware**
+- **Antimalware**
 - **Allegati sicuri ATP** (se l'abbonamento include Microsoft Defender per Office 365)
 - **Collegamenti sicuri ATP** (se l'abbonamento include Microsoft Defender per Office 365)
 
-Nella visualizzazione predefinita, tutto è compresso. Accanto a ogni criterio, è disponibile un riepilogo dei risultati del confronto tra i criteri (che è possibile modificare) e le impostazioni nei criteri corrispondenti per i profili di protezione standard o rigorosi (che non è possibile modificare). Verranno visualizzate le informazioni seguenti per il profilo di protezione a cui si sta eseguendo il confronto:
+Nella visualizzazione predefinita tutti gli elementi sono compressi. Accanto a ogni criterio, è presente un riepilogo dei risultati del confronto dei criteri (che è possibile modificare) e delle impostazioni nei criteri corrispondenti per i profili di protezione Standard o Strict (che non è possibile modificare). Verranno visualizzate le informazioni seguenti per il profilo di protezione con cui si sta confrontando:
 
-- **Verde**: tutte le impostazioni di tutti i criteri esistenti sono almeno altrettanto sicure del profilo di protezione.
-- **Ambra**: un numero limitato di impostazioni nei criteri esistenti non è più sicuro del profilo di protezione.
-- **Rosso**: un numero significativo di impostazioni nei criteri esistenti non è più sicuro del profilo di protezione. Questo potrebbe essere un paio di impostazioni in molti criteri o in molte impostazioni di un criterio.
+- **Verde:** tutte le impostazioni in tutti i criteri esistenti sono sicure almeno quanto il profilo di protezione.
+- **Ambra:** un numero limitato di impostazioni nei criteri esistenti non è così sicuro come il profilo di protezione.
+- **Rosso:** un numero significativo di impostazioni nei criteri esistenti non è sicuro come il profilo di protezione. Potrebbe trattarsi di alcune impostazioni in molti criteri o di molte impostazioni in un criterio.
 
-Per i confronti favorevoli, viene visualizzato il testo: **tutte le impostazioni seguono** i \<**Standard** or **Strict**\> **suggerimenti**. In caso contrario, verrà visualizzato il numero di impostazioni consigliate da modificare.
+Per i confronti più vantaggiosi, vedrai il testo: **Tutte le impostazioni seguono i** \<**Standard** or **Strict**\> **suggerimenti.** In caso contrario, verrà visualizzato il numero di impostazioni consigliate da modificare.
 
-Se si espande il **nome del gruppo di criteri/impostazione**, vengono rivelati tutti i criteri e le impostazioni associate in ogni criterio specifico che richiede attenzione. In alternativa, è possibile espandere un tipo specifico di criteri, ad esempio la protezione da **posta indesiderata**, per visualizzare solo tali impostazioni in quei tipi di criteri che richiedono attenzione.
+Se si espande **il nome del gruppo/impostazione** dei criteri, vengono rivelati tutti i criteri e le impostazioni associate in ogni criterio specifico che richiedono attenzione. In caso contrario, è possibile espandere un tipo specifico di criteri (ad **esempio,** protezione da posta indesiderata) per visualizzare solo le impostazioni in quei tipi di criteri che richiedono attenzione.
 
-Se il confronto non ha suggerimenti per il miglioramento (verde), l'espansione del criterio non rivela nulla. Se è presente un numero qualsiasi di suggerimenti per il miglioramento (ambra o rosso), vengono rivelate le impostazioni che richiedono attenzione e vengono riportate le informazioni corrispondenti nelle colonne seguenti:
+Se il confronto non contiene consigli per il miglioramento (verde), l'espansione dei criteri non rivela nulla. Se sono presenti diversi suggerimenti per il miglioramento (ambra o rosso), vengono visualizzate le impostazioni che richiedono attenzione e le informazioni corrispondenti vengono visualizzate nelle colonne seguenti:
 
-- Nome dell'impostazione che richiede attenzione. Ad esempio, nella schermata precedente, è la soglia di **posta elettronica in blocco** in un criterio di protezione da posta indesiderata.
+- Nome dell'impostazione che richiede attenzione. Ad esempio, nello screenshot precedente, si tratta della soglia di posta elettronica in **blocco** in un criterio di protezione da posta indesiderata.
 
-- **Policy**: il nome del criterio coinvolto che contiene l'impostazione.
+- **Criterio:** il nome del criterio interessato che contiene l'impostazione.
 
-- **Applicato a**: il numero di utenti a cui sono applicati i criteri coinvolti.
+- **Applicato a:** numero di utenti a cui vengono applicati i criteri interessati.
 
-- **Configurazione corrente**: valore corrente dell'impostazione.
+- **Configurazione corrente:** il valore corrente dell'impostazione.
 
-- **Last modified**: la data in cui è stato modificato l'ultima volta il criterio.
+- **Ultima modifica:** data dell'ultima modifica del criterio.
 
-- **Suggerimenti**: il valore dell'impostazione nel profilo di protezione standard o rigoroso. Per modificare il valore dell'impostazione del criterio in modo che corrisponda al valore consigliato nel profilo di protezione, fare clic su **adotta**. Se la modifica ha esito positivo, verrà visualizzato il messaggio: **suggerimenti adottati correttamente**. Fare clic su **Aggiorna** per visualizzare il numero ridotto di suggerimenti e la rimozione della riga specifica dell'impostazione o dei criteri dai risultati.
+- **Suggerimenti:** valore dell'impostazione nel profilo di protezione Standard o Strict. Per modificare il valore dell'impostazione nei criteri in modo che corrisponda al valore consigliato nel profilo di protezione, fare clic su **Adotta.** Se la modifica ha esito positivo, verrà visualizzato il messaggio: **Suggerimenti adottati correttamente.** Fare **clic su** Aggiorna per visualizzare il numero ridotto di elementi consigliati e la rimozione della riga di impostazione/criterio specifica dai risultati.
 
-### <a name="configuration-drift-analysis-and-history-tab-in-the-configuration-analyzer"></a>Scheda cronologia e analisi della deriva di configurazione nell'analizzatore di configurazione
+### <a name="configuration-drift-analysis-and-history-tab-in-the-configuration-analyzer"></a>Scheda Analisi e cronologia della deriva della configurazione nell'analizzatore della configurazione
 
-Questa scheda consente di monitorare le modifiche apportate ai criteri di sicurezza personalizzati. Per impostazione predefinita, vengono visualizzate le seguenti informazioni:
+Questa scheda consente di tenere traccia delle modifiche apportate ai criteri di sicurezza personalizzati. Per impostazione predefinita, vengono visualizzate le informazioni seguenti:
 
 - **Data ultima modifica**
 - **Modificato da**
-- **Nome dell'impostazione**
+- **Nome impostazione**
 - **Criterio**
 - **Type**
 
-Per filtrare i risultati, selezionare **Filtro**. Nel riquadro a comparsa **filtri** che viene visualizzato, è possibile scegliere tra i filtri seguenti:
+Per filtrare i risultati, selezionare **Filtro**. Nel riquadro **a** comparsa Filtri visualizzato, è possibile selezionare uno dei filtri seguenti:
 
-- **Ora di inizio** e **ora di fine** (Data)
-- **Protezione standard** o **protezione rigorosa**
+- **Ora di** inizio **e ora di** fine (data)
+- **Protezione standard** o **protezione rigida**
 
-Per esportare i risultati in un file CSV, fare clic su **Esporta**.
+Per esportare i risultati in un file CSV, fare clic su **Esporta.**
 
-![Analisi della deriva della configurazione e visualizzazione della cronologia nell'analizzatore di configurazione](../../media/configuration-analyzer-configuration-drift-analysis-view.png)
+![Analisi della deriva della configurazione e visualizzazione della cronologia nell'analizzatore della configurazione](../../media/configuration-analyzer-configuration-drift-analysis-view.png)
