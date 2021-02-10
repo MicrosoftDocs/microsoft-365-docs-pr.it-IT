@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: bad352ff-d5d2-45d8-ac2a-6cb832f10e73
 ms.custom: seo-marvel-apr2020
 description: Informazioni su come eseguire uno script per aggiungere cassette postali & siti di OneDrive for Business a un nuovo blocco associato a un caso di eDiscovery nel Centro conformità Microsoft 365.
-ms.openlocfilehash: 72fd9b8e7b63b36399d055e2eb710e8b53967e44
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 278e8e051165eca906e9b454268068cbbe6aef05
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126439"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50175575"
 ---
 # <a name="use-a-script-to-add-users-to-a-hold-in-a-core-ediscovery-case"></a>Utilizzare uno script per aggiungere utenti a un'esenzione in un caso di eDiscovery di base
 
@@ -81,9 +81,9 @@ Dopo aver eseguito questo comando, aprire il file di testo e rimuovere l'intesta
 
 Quando si esegue lo script in questo passaggio, verranno richieste le informazioni seguenti. Assicurarsi di avere queste informazioni pronte prima di eseguire lo script.
   
-- **Credenziali utente:** Lo script userà le credenziali per connettersi al Centro sicurezza & conformità con PowerShell remoto. Userà anche queste credenziali per accedere a SharePoint Online per ottenere gli URL di OneDrive for Business per l'elenco di utenti.
+- **Credenziali utente:** Lo script userà le credenziali per connettersi al Centro sicurezza & conformità con PowerShell. Userà anche queste credenziali per accedere a SharePoint Online per ottenere gli URL di OneDrive for Business per l'elenco di utenti.
 
-- **Nome del dominio del sito personale:** Il dominio sito personale è il dominio che contiene tutti i siti di OneDrive for Business nell'organizzazione. Ad esempio, se l'URL del dominio del sito personale è , sarà necessario immettere quando lo script richiede il nome del **https://contoso-my.sharepoint.com**  `contoso` dominio del sito personale.
+- **Nome del dominio di SharePoint:** Lo script richiede di immettere questo nome in modo che possa connettersi all'interfaccia di amministrazione di SharePoint. Usa anche il nome di dominio per gli URL di OneDrive nell'organizzazione. Ad esempio, se l'URL dell'interfaccia di amministrazione è e l'URL per OneDrive è , immettere quando lo script richiede `https://contoso-admin.sharepoint.com` `https://contoso-my.sharepoint.com` il nome di `contoso` dominio.
 
 - **Nome del caso:** Nome di un caso esistente. Lo script creerà una nuova esenzione associata a questo caso.
 

@@ -1,6 +1,6 @@
 ---
-title: Esaminare la posta elettronica dannosa che è stata recapitata in Office 365, trovare e analizzare messaggi di posta elettronica
-keywords: TIMailData-inline, incidenti di sicurezza, incidenti, ATP PowerShell, malware per la posta elettronica, utenti compromessi, phishing di posta elettronica, malware per la posta elettronica, lettura intestazioni di posta, intestazioni di lettura, intestazioni di posta elettronica aperte, azioni speciali
+title: Analizzare la posta elettronica dannosa recapitata in Office 365, individuare e analizzare la posta elettronica dannosa
+keywords: TIMailData-Inline, Security Incident, incident, ATP PowerShell, email malware, compromised users, email phish, email malware, read email headers, read headers, open email headers,special actions
 f1.keywords:
 - NOCSH
 ms.author: tracyp
@@ -9,7 +9,6 @@ manager: dansimp
 ms.date: 12/16/2020
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -17,194 +16,200 @@ search.appverid:
 ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
-description: Informazioni su come utilizzare le funzionalità di analisi e risposta alle minacce per individuare e studiare messaggi di posta elettronica dannosi.
+description: Informazioni su come usare le funzionalità di analisi e risposta alle minacce per trovare e analizzare i messaggi di posta elettronica dannosi.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 8a068f4502a286b8782e03a9a6f61e61fa96ed72
-ms.sourcegitcommit: 884ac262443c50362d0c3ded961d36d6b15d8b73
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 1b1fd9af5267defd55025ca712b3e5f7c0cc3b56
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49698580"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167360"
 ---
-# <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Esaminare la posta elettronica dannosa che è stata recapitata in Office 365
+# <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Analizzare la posta elettronica dannosa recapitata in Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Si applica a**
 
-[Microsoft Defender per Office 365](office-365-atp.md) consente di analizzare le attività che inseriscono le persone nell'organizzazione a rischio e di intervenire per proteggere l'organizzazione. Ad esempio, se si fa parte del team di sicurezza dell'organizzazione, è possibile trovare e analizzare i messaggi di posta elettronica sospetti che sono stati recapitati. A tale scopo, è possibile utilizzare [Esplora minacce (o rilevamenti in tempo reale)](threat-explorer.md).
+- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+[Microsoft Defender per Office 365](office-365-atp.md) consente di analizzare le attività che mettono a rischio le persone nell'organizzazione e di intervenire per proteggere l'organizzazione. Ad esempio, se si fa parte del team di sicurezza dell'organizzazione, è possibile individuare e analizzare i messaggi di posta elettronica sospetti recapitati. A tale scopo, puoi usare [Esplora minacce (o](threat-explorer.md)rilevamenti in tempo reale).
 
 > [!NOTE]
-> Passare [all'articolo relativo](remediate-malicious-email-delivered-office-365.md)alla correzione.
+> Passare all'articolo sulla correzione [qui.](remediate-malicious-email-delivered-office-365.md)
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 Verificare che vengano soddisfatti i seguenti requisiti:
 
-- L'organizzazione dispone di [Microsoft Defender per Office 365](office-365-atp.md) e le [licenze vengono assegnate agli utenti](../../admin/manage/assign-licenses-to-users.md).
+- L'organizzazione dispone [di Microsoft Defender per Office 365](office-365-atp.md) e le licenze vengono assegnate agli [utenti.](../../admin/manage/assign-licenses-to-users.md)
 
-- la [registrazione di controllo](../../compliance/turn-audit-log-search-on-or-off.md) è attivata per l'organizzazione.
+- [la registrazione di](../../compliance/turn-audit-log-search-on-or-off.md) controllo è attivata per l'organizzazione.
 
-- L'organizzazione dispone di criteri definiti per la protezione da posta indesiderata, anti-malware, anti-phishing e così via. Vedere [protezione dalle minacce in Office 365](protect-against-threats.md).
+- L'organizzazione dispone di criteri definiti per la protezione da posta indesiderata, antimalware, anti-phishing e così via. Vedere [Proteggere dalle minacce in Office 365.](protect-against-threats.md)
 
-- Si è un amministratore globale oppure è stato assegnato il ruolo di amministratore della sicurezza o di ricerca ed eliminazione nel centro sicurezza & conformità. Vedere [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md). Per alcune azioni, è necessario disporre anche di un nuovo ruolo di anteprima assegnato.
+- Si è un amministratore globale o si dispone del ruolo Amministratore della sicurezza o Ricerca ed eliminazione nel Centro sicurezza & conformità. Vedere [Autorizzazioni nel Centro sicurezza & conformità.](permissions-in-the-security-and-compliance-center.md) Per alcune azioni, è inoltre necessario disporre di un nuovo ruolo Anteprima assegnato.
 
-### <a name="preview-role-permissions"></a>Autorizzazioni per il ruolo di anteprima
+### <a name="preview-role-permissions"></a>Autorizzazioni per il ruolo anteprima
 
-Per eseguire determinate azioni, ad esempio la visualizzazione delle intestazioni dei messaggi o il download del contenuto del messaggio di posta elettronica, è necessario un nuovo ruolo denominato *Anteprima* aggiunto a un altro gruppo di ruoli appropriato. La tabella seguente consente di chiarire i ruoli e le autorizzazioni necessari.
+Per eseguire determinate azioni, ad esempio la visualizzazione delle intestazioni dei messaggi  o il download del contenuto dei messaggi di posta elettronica, è necessario disporre di un nuovo ruolo denominato Anteprima aggiunto a un altro gruppo di ruoli appropriato. Nella tabella seguente vengono chiariti i ruoli e le autorizzazioni necessari.
 
 ****
 
 |Attività|Gruppo di ruolo|Ruolo di anteprima necessario?|
 |---|---|---|
-|Utilizzo di Esplora minacce (e rilevamenti in tempo reale) per l'analisi delle minacce |Amministratore globale <p> Amministratore della sicurezza <p> Ruolo con autorizzazioni di lettura per la sicurezza|No|
-|Utilizzare Esplora minacce (e rilevamenti in tempo reale) per visualizzare le intestazioni dei messaggi di posta elettronica così come l'anteprima e il download dei messaggi di posta elettronica in quarantena|Amministratore globale <p> Amministratore della sicurezza <p> Ruolo con autorizzazioni di lettura per la sicurezza|No|
-|Utilizzare Esplora minacce per visualizzare le intestazioni, l'anteprima della posta elettronica (solo nella pagina entità di posta elettronica) e scaricare messaggi di posta elettronica recapitati alle cassette postali|Amministratore globale <p> Amministratore della sicurezza <p> Ruolo con autorizzazioni di lettura per la sicurezza <p> Anteprima|Sì|
+|Usare Esplora minacce (e rilevamenti in tempo reale) per analizzare le minacce |Amministratore globale <p> Amministratore della sicurezza <p> Ruolo con autorizzazioni di lettura per la sicurezza|No|
+|Usare Esplora minacce (e rilevamenti in tempo reale) per visualizzare le intestazioni dei messaggi di posta elettronica, nonché visualizzare in anteprima e scaricare i messaggi di posta elettronica in quarantena|Amministratore globale <p> Amministratore della sicurezza <p> Ruolo con autorizzazioni di lettura per la sicurezza|No|
+|Usare Esplora minacce per visualizzare le intestazioni, visualizzare in anteprima la posta elettronica (solo nella pagina dell'entità di posta elettronica) e scaricare i messaggi di posta elettronica recapitati alle cassette postali|Amministratore globale <p> Amministratore della sicurezza <p> Ruolo con autorizzazioni di lettura per la sicurezza <p> Anteprima|Sì|
 |
 
 > [!NOTE]
-> L' *Anteprima* è un ruolo e non un gruppo di ruoli. il ruolo di anteprima deve essere aggiunto a un gruppo di ruoli esistente per Office 365 (at [https://protection.office.com](https://protection.office.com) ). Andare a **autorizzazioni** e quindi modificare un gruppo di ruoli esistente o aggiungere un nuovo gruppo di ruoli con il ruolo di **Anteprima** assegnato.
-> Al ruolo di amministratore globale viene assegnato l'interfaccia di amministrazione di Microsoft 365 ( <https://admin.microsoft.com> ) e i ruoli amministratore sicurezza e lettore di sicurezza sono assegnati nel centro sicurezza & Compliance ( <https://protection.office.com> ). Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere [Permissions in the Security & Compliance Center](permissions-in-the-security-and-compliance-center.md).
+> *L'anteprima* è un ruolo e non un gruppo di ruoli; Il ruolo Anteprima deve essere aggiunto a un gruppo di ruoli esistente per Office 365 (all'indirizzo [https://protection.office.com](https://protection.office.com) ). Passare a **Autorizzazioni** e quindi modificare un gruppo di ruoli esistente o aggiungere un nuovo gruppo di ruoli con il ruolo **Anteprima** assegnato.
+> Al ruolo Amministratore globale viene assegnata l'interfaccia di amministrazione di Microsoft 365 ( ) e i ruoli Amministratore della sicurezza e Lettore sicurezza vengono assegnati nel Centro <https://admin.microsoft.com> sicurezza & conformità ( <https://protection.office.com> ). Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere [Autorizzazioni nel Centro sicurezza & conformità.](permissions-in-the-security-and-compliance-center.md)
 
-Si capisce che la visualizzazione in anteprima e il download di posta elettronica sono attività sensibili e quindi è abilitato il controllo. Dopo che un amministratore ha eseguito queste attività nei messaggi di posta elettronica, i registri di controllo vengono generati per lo stesso e possono essere visualizzati nel centro sicurezza & conformità di Office 365 [https://protection.office.com](https://protection.office.com) . Andare alla ricerca e al filtro del registro di controllo di **ricerca**  >   nel nome dell'amministratore nella sezione ricerca. I risultati filtrati mostreranno le attività **AdminMailAccess**. Selezionare una riga per visualizzare i dettagli nella sezione **altre informazioni** sul messaggio di posta elettronica visualizzato in anteprima o scaricato.
+Comprendiamo che l'anteprima e il download della posta elettronica sono attività sensibili, pertanto il controllo è abilitato per queste attività. Una volta che un amministratore esegue queste attività nei messaggi di posta elettronica, i log di controllo vengono generati per la stessa operazione e possono essere visibili nel Centro sicurezza & e conformità di Office 365 ( [https://protection.office.com](https://protection.office.com) ). Passare alla **ricerca nel** log di  >  **controllo e** filtrare in base al nome dell'amministratore nella sezione Ricerca. I risultati filtrati mostreranno l'attività **AdminMailAccess.** Selezionare una riga per visualizzare i dettagli nella sezione **Ulteriori informazioni** sulla posta elettronica in anteprima o scaricata.
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>Trovare messaggi di posta elettronica sospetti recapitati
 
-Threat Explorer è un potente report che può servire a molteplici scopi, ad esempio la ricerca e l'eliminazione dei messaggi, l'identificazione dell'indirizzo IP di un mittente di posta elettronica dannoso o l'avvio di un incidente per ulteriori indagini. La procedura seguente si concentra sull'utilizzo di Esplora risorse per individuare ed eliminare messaggi di posta elettronica dannosi dalle cassette postali del destinatario.
+Esplora minacce è un potente report che può servire a più scopi, come trovare ed eliminare messaggi, identificare l'indirizzo IP di un mittente di posta elettronica dannoso o avviare un evento imprevisto per ulteriori indagini. La procedura seguente è incentrata sull'utilizzo di Esplora risorse per trovare ed eliminare messaggi di posta elettronica dannosi dalle cassette postali del destinatario.
 
 > [!NOTE]
-> Le ricerche predefinite in Esplora risorse non includono attualmente gli elementi zapping.  Questo vale per tutte le visualizzazioni, ad esempio le visualizzazioni di malware o phishing. Per includere gli elementi zapped, è necessario aggiungere un set di **operazioni di recapito** per includere **rimossi da zap**. Se si includono tutte le opzioni, verranno visualizzati tutti i risultati dell'azione di recapito, compresi gli elementi zapped.
+> Le ricerche predefinite in Esplora risorse non includono attualmente gli elementi zapped.  Questo vale per tutte le visualizzazioni, ad esempio malware o phish views. Per includere gli elementi zapped, è necessario aggiungere un'azione **di** recapito impostata per includere **Rimosso da ZAP.** Se si includono tutte le opzioni, verranno visualizzati tutti i risultati dell'azione di recapito, inclusi gli elementi zapped.
 
-1. **Passare a Esplora minacce**: accedere a <https://protection.office.com> e accedere con l'account aziendale o dell'Istituto di istruzione per Office 365. Questo porta al centro sicurezza & Compliance.
+1. **Passare a Esplora minacce:** accedere con l'account aziendale o dell'istituto di <https://protection.office.com> istruzione per Office 365. Questo consente di accedere al Centro sicurezza & conformità.
 
-2. Nella barra di avvio veloce di spostamento a sinistra, scegliere **gestione minacce** \> .
+2. In the left navigation quick-launch, choose **Threat management** \> **Explorer.**
 
-    ![Explorer con campi azione di recapito e posizione di recapito.](../../media/ThreatExFields.PNG)
+    ![Esplora risorse con i campi Azione recapito e Posizione di recapito.](../../media/ThreatExFields.PNG)
 
-    È possibile notare la nuova colonna **azioni speciali** . Questa funzionalità ha lo scopo di informare gli amministratori sull'esito dell'elaborazione di un messaggio di posta elettronica. È possibile accedere alla colonna **azioni speciali** nello stesso luogo in cui si trova l' **operazione di recapito** e il **percorso di recapito**. Le azioni speciali potrebbero essere aggiornate alla fine della sequenza temporale della posta elettronica di Threat Explorer, che è una nuova funzionalità che consente di migliorare l'esperienza di ricerca per gli amministratori.
+    È possibile notare la nuova **colonna Azioni** speciali. Questa funzionalità ha lo scopo di dire agli amministratori il risultato dell'elaborazione di un messaggio di posta elettronica. È **possibile accedere alla** colonna Azioni speciali nella stessa posizione dell'azione di **recapito** e della posizione **di recapito.** Le azioni speciali potrebbero essere aggiornate alla fine della sequenza temporale della posta elettronica di Esplora minacce, una nuova funzionalità volta a migliorare l'esperienza di ricerca per gli amministratori.
 
-3. **Visualizzazioni in Esplora minacce**: scegliere **tutti i messaggi di posta elettronica** dal menu **Visualizza** .
+3. **Visualizzazioni in Esplora minacce:** scegliere Tutti i messaggi **di** posta elettronica dal menu **Visualizza.**
 
-    ![Menu Visualizza Esplora minacce e posta elettronica-malware, phishing, invii e tutte le opzioni di posta elettronica, anche contenuto-malware.](../../media/tp-InvestigateMalEmail-viewmenu.png)
+    ![Menu Visualizza esplora minacce e e-mail - Malware, Phish, Invii e Tutte le opzioni di posta elettronica, anche Contenuto - Malware.](../../media/tp-InvestigateMalEmail-viewmenu.png)
 
-    La visualizzazione *malware* è attualmente l'impostazione predefinita e acquisisce i messaggi di posta elettronica in cui viene rilevata una minaccia di malware. La visualizzazione *phishing* funziona nello stesso modo, per phishing.
+    La *visualizzazione Malware* è attualmente l'impostazione predefinita e acquisisce i messaggi di posta elettronica in cui viene rilevata una minaccia malware. La *vista di phish* funziona allo stesso modo, per Phish.
 
-    Tuttavia, *tutti* i messaggi di posta elettronica visualizzano ogni messaggio ricevuto dall'organizzazione, se le minacce sono state rilevate o meno. Come si può immaginare, si tratta di un sacco di dati, che è il motivo per cui questa visualizzazione Mostra un segnaposto che richiede l'applicazione di un filtro. Questa visualizzazione è disponibile solo per i clienti di Defender per Office 365 P2.
+    Tuttavia, *nella visualizzazione Tutti i messaggi* di posta elettronica sono elencati tutti i messaggi ricevuti dall'organizzazione, indipendentemente dal fatto che siano state rilevate o meno minacce. Come puoi immaginare, si tratta di una grande quantità di dati, motivo per cui questa visualizzazione mostra un segnaposto che richiede l'applicazione di un filtro. Questa visualizzazione è disponibile solo per i clienti di Defender per Office 365 P2.
 
-    Visualizzazione *invii* Visualizza tutti i messaggi inviati dall'amministratore o dall'utente che sono stati segnalati a Microsoft.
+    *La visualizzazione* Invii mostra tutti i messaggi inviati dall'amministratore o dall'utente segnalati a Microsoft.
 
-4. **Ricerca e filtro in Esplora minacce**: i filtri vengono visualizzati nella parte superiore della pagina nella barra di ricerca per consentire agli amministratori di eseguire le proprie indagini. Si noti che è possibile applicare più filtri contemporaneamente e che più valori separati da virgola sono stati aggiunti a un filtro per limitare la ricerca. Attenzione:
+4. **Ricerca e filtro in Esplora** minacce: i filtri vengono visualizzati nella parte superiore della pagina nella barra di ricerca per aiutare gli amministratori nelle indagini. Si noti che è possibile applicare più filtri contemporaneamente e più valori delimitati da virgole aggiunti a un filtro per restringere la ricerca. Attenzione:
 
-    - I filtri eseguono una corrispondenza esatta per la maggior parte delle condizioni del filtro.
-    - Il filtro soggetto utilizza una query CONTAINs.
-    - I filtri URL funzionano con o senza protocolli (es. https).
-    - Il dominio URL, il percorso URL e i filtri per il dominio e il percorso URL non richiedono il filtro di un protocollo.
-    - È necessario fare clic sull'icona di aggiornamento ogni volta che si modificano i valori del filtro per ottenere i risultati rilevanti.
+    - I filtri corrispondono esattamente alla maggior parte delle condizioni di filtro.
+    - Il filtro dell'oggetto utilizza una query CONTAINS.
+    - I filtri URL funzionano con o senza protocolli (ad esempio, https).
+    - I filtri dominio URL, percorso URL e dominio URL e percorso non richiedono un protocollo per il filtro.
+    - È necessario fare clic sull'icona Aggiorna ogni volta che si modificano i valori del filtro per ottenere risultati pertinenti.
 
-5. **Filtri avanzati**: con questi filtri è possibile creare query complesse e filtrare il set di dati. Se si fa clic su *filtri avanzati* , verrà aperto un riquadro a comparsa con opzioni.
+5. **Filtri avanzati:** con questi filtri è possibile creare query complesse e filtrare il set di dati. Facendo clic *su Filtri avanzati* si apre un riquadro a comparsa con opzioni.
 
-   Il filtro avanzato è una grande aggiunta alle funzionalità di ricerca. **Non** è stato introdotto un filtro booleano nel dominio del *destinatario*, del *mittente* e del *mittente* per consentire agli amministratori di eseguire indagini escludendo i valori. Questa opzione viene visualizzata sotto il parametro Selection *contiene None of*. **Non** consente agli amministratori di escludere le cassette postali di avviso, le cassette postali di risposta predefinite dalle proprie indagini ed è utile per i casi in cui gli amministratori cercano un oggetto specifico (Subject = "attention") in cui il destinatario può essere impostato su *none de defaultMail \@ contoso.com*. Si tratta di una ricerca di valore esatta.
+   Il filtro avanzato è un'ottima aggiunta alle funzionalità di ricerca. Nel dominio **destinatario,** mittente  e  mittente è stato introdotto un filtro NOT booleano per consentire agli amministratori di analizzare escludendo i valori.  Questa opzione viene visualizzata sotto il parametro *di selezione Contiene nessuno di*. **NOT** consente agli amministratori di escludere le cassette postali di avviso, le cassette postali di risposta predefinite dalle indagini ed è utile per i casi in cui gli amministratori ricercano un oggetto specifico (subject="Attention") in cui il destinatario può essere impostato su nessuno dei valori *di defaultMail \@ contoso.com*. Si tratta di una ricerca con un valore esatto.
 
-   ![I destinatari-' contiene nessuno ' del filtro avanzato.](../../media/tp-InvestigateMalEmail-AdvancedFilter.png)
+   ![Destinatari - Filtro avanzato "Non contiene nessuno di".](../../media/tp-InvestigateMalEmail-AdvancedFilter.png)
 
-   Il *filtraggio per ore* consentirà di eseguire il drill-down rapido del team di sicurezza dell'organizzazione. La durata di tempo consentita più breve è di 30 minuti. Se è possibile restringere l'azione sospetta tramite la tempistica (ad esempio, è successo 3 ore fa), questo limiterà il contesto e consentirà di individuare il problema.
+   *L'applicazione di filtri* in base alle ore consente al team di sicurezza dell'organizzazione di eseguire rapidamente il drill-down. La durata minima consentita è di 30 minuti. Se è possibile restringere l'azione sospetta in base all'intervallo di tempo (ad esempio, si è verificato 3 ore prima), questo limiterà il contesto e aiuterà a individuare il problema.
 
-   ![L'opzione filtro per ore per limitare la quantità di team di sicurezza dei dati deve essere elaborata e la cui durata più breve è di 30 minuti.](../../media/tp-InvestigateMalEmail-FilterbyHours.png)
+   ![L'opzione di filtro in base alle ore per limitare la quantità di team di sicurezza dei dati da elaborare e la cui durata più breve è di 30 minuti.](../../media/tp-InvestigateMalEmail-FilterbyHours.png)
 
-6. **Campi in Esplora minacce**: Esplora minacce espone molte più informazioni di posta elettronica correlate alla sicurezza, ad esempio l' *azione di recapito*, la *posizione di recapito*, l' *azione speciale*, la *direzionalità*, le *sostituzioni* e la *minaccia URL*. Consente inoltre al team di sicurezza dell'organizzazione di analizzare con maggiore certezza.
+6. **Campi in Esplora** minacce: Esplora minacce espone molte più informazioni relative alla sicurezza della posta, ad esempio l'azione di *recapito,* il percorso di *recapito,* l'azione *speciale,* la direzionalità, le sostituzioni e la minaccia *url.* Consente inoltre al team di sicurezza dell'organizzazione di indagare con maggiore certezza.
 
-    *Azione di recapito* è l'azione intrapresa su un messaggio di posta elettronica a causa di criteri o rilevamenti esistenti. Ecco le possibili azioni che un messaggio di posta elettronica può eseguire:
+    *L'azione* di recapito è l'azione eseguita su un messaggio di posta elettronica a causa di criteri o rilevamenti esistenti. Ecco le possibili azioni che un messaggio di posta elettronica può eseguire:
 
-    - **Recapitato** : la posta elettronica è stata recapitata alla posta in arrivo o alla cartella di un utente e l'utente può accedervi direttamente.
-    - Posta **indesiderata (** recapitata a junk) – la e-mail è stata inviata alla cartella posta indesiderata o alla cartella eliminata dell'utente e l'utente ha accesso ai messaggi di posta elettronica nella cartella posta indesiderata o eliminato.
-    - **Bloccato** : tutti i messaggi di posta elettronica in quarantena, che hanno avuto esito negativo o sono stati eliminati. (Questo è completamente inaccessibile dall'utente).
-    - **Sostituito** : tutti i messaggi di posta elettronica in cui gli allegati dannosi sono stati sostituiti dai file. txt che lo stato
+    - **Recapitato:** la posta elettronica è stata recapitata nella posta in arrivo o nella cartella di un utente e l'utente può accedervi direttamente.
+    - **Posta indesiderata** (recapitata alla posta indesiderata): la posta elettronica è stata inviata alla cartella Posta indesiderata o eliminata dell'utente e l'utente ha accesso ai messaggi di posta elettronica nella cartella Posta indesiderata o Eliminata.
+    - **Bloccato:** tutti i messaggi di posta elettronica messi in quarantena, non riusciti o eliminati. Questa operazione è completamente inaccessibile dall'utente.
+    - **Sostituito:** qualsiasi messaggio di posta elettronica in cui gli allegati dannosi vengono sostituiti da file txt che specificano che l'allegato era dannoso
 
-    **Percorso di recapito**: il filtro percorso di recapito è disponibile per aiutare gli amministratori a capire dove si è conclusa la posta dannosa sospetta e quali azioni sono state intraprese su di esso. I dati risultanti possono essere esportati in un foglio di calcolo. I possibili percorsi di recapito sono:
+    **Posizione di recapito**: il filtro percorso di recapito è disponibile per consentire agli amministratori di capire dove si è conclusa la posta dannosa sospetta e quali azioni sono state eseguite su di esso. I dati risultanti possono essere esportati in un foglio di calcolo. I percorsi di recapito possibili sono:
 
-    - **Posta in arrivo o cartella** : l'indirizzo di posta elettronica si trova nella cartella posta in arrivo o in una specifica, in base alle regole di posta elettronica.
-    - **On-Prem o External** -la cassetta postale non esiste nel cloud ma è in locale.
-    - **Cartella posta indesiderata** : la posta elettronica si trova nella cartella della cassetta postale di un utente.
-    - **Cartella Posta eliminata** – l'e-mail si trova nella cartella degli elementi eliminati di un utente.
-    - **Quarantine** : la posta elettronica in quarantena e non nella cassetta postale di un utente.
-    - **Failed** : la posta elettronica non è riuscita a raggiungere la cassetta postale.
-    - **Eliminato** : il messaggio di posta elettronica è stato perso da qualche parte nel flusso di posta.
+    - **Posta in arrivo o cartella:** il messaggio di posta elettronica si trova nella cartella Posta in arrivo o in una cartella specifica, in base alle regole di posta elettronica.
+    - **Locale o esterno:** la cassetta postale non esiste nel cloud ma è locale.
+    - **Cartella Posta indesiderata:** la posta elettronica si trova nella cartella Posta indesiderata di un utente.
+    - **Cartella Posta eliminata:** il messaggio di posta elettronica si trova nella cartella Posta eliminata di un utente.
+    - **Quarantena:** la posta elettronica in quarantena e non nella cassetta postale di un utente.
+    - **Failed:** il messaggio di posta elettronica non è riuscito a raggiungere la cassetta postale.
+    - **Eliminato:** il messaggio di posta elettronica è stato perso da qualche parte nel flusso di posta.
 
-    **Direzionalità**: questa opzione consente al team di operazioni di sicurezza di filtrare in base alla ' direzione ' da cui proviene un messaggio o che è in corso. I valori di direzionalità sono in *ingresso* *, in uscita e* *intra-org* (corrispondente alla posta proveniente dall'esterno dell'organizzazione, che viene inviata dall'organizzazione o che viene inviata internamente all'org, rispettivamente). Queste informazioni consentono ai team di operazioni di sicurezza di spoofing e rappresentazione a campione, in quanto mancata corrispondenza tra il valore di direzionalità (es. In *ingresso*), e il dominio del mittente (che *sembra* essere un dominio interno) sarà evidente! Il valore di direzionalità è separato e può essere diverso da, la traccia dei messaggi. I risultati possono essere esportati in foglio di calcolo.
+    **Direzionalità:** questa opzione consente al team delle operazioni di sicurezza di filtrare in base alla "direzione" da cui proviene o sta per partire un messaggio di posta elettronica. I valori di direzionalità sono *Inbound,* *Outbound* e *Intra-org* (corrispondenti alla posta proveniente dall'esterno dell'organizzazione, inviata all'esterno dell'organizzazione o inviata internamente all'organizzazione, rispettivamente). Queste informazioni possono aiutare i team delle operazioni di sicurezza a individuare lo spoofing e la rappresentazione, perché una mancata corrispondenza tra il valore Directionality (ad esempio. *Inbound*) e il dominio del mittente *(che* sembra essere un dominio interno) sarà evidente! Il valore directionality è separato e può differire dalla traccia dei messaggi. I risultati possono essere esportati in un foglio di calcolo.
 
-    **Sostituzioni**: questo filtro prende le informazioni visualizzate nella scheda Dettagli della posta e la utilizza per esporre i criteri dell'organizzazione, o degli utenti, per consentire e bloccare i messaggi di posta *elettronica.* La cosa più importante di questo filtro è che aiuta il team di sicurezza dell'organizzazione a vedere quanti messaggi di posta elettronica sospetti sono stati recapitati a causa della configurazione. In questo modo è possibile modificare le possibilità e i blocchi in base alle esigenze. Questo set di risultati di questo filtro può essere esportato in un foglio di calcolo.
+    **Sostituzioni:** questo filtro accetta le informazioni visualizzate nella scheda dei dettagli della posta elettronica e le usa per esporre dove sono stati ignorati i criteri dell'organizzazione o degli utenti per consentire e bloccare i messaggi di *posta* elettronica. La cosa più importante di questo filtro è che consente al team di sicurezza dell'organizzazione di vedere quanti messaggi di posta elettronica sospetti sono stati recapitati a causa della configurazione. Ciò offre loro la possibilità di modificare gli elementi di autorizzazioni e blocchi in base alle esigenze. Questo set di risultati di questo filtro può essere esportato in un foglio di calcolo.
 
     ****
 
     |Sostituzioni di Esplora minacce|Cosa significano|
     |---|---|
-    |Consentito dai criteri org|La posta elettronica è stata consentita nella cassetta postale come indicato dal criterio dell'organizzazione.|
-    |Bloccati dai criteri org|La posta elettronica è stata bloccata dal recapito alla cassetta postale, come indicato dal criterio dell'organizzazione.|
-    |Estensione di file bloccata da criteri org|Il file è stato bloccato dal recapito alla cassetta postale, come indicato dal criterio dell'organizzazione.|
-    |Consentito dai criteri utente|La posta elettronica è stata consentita nella cassetta postale come indicato dal criterio utente.|
-    |Bloccati dai criteri utente|La posta elettronica è stata bloccata dal recapito alla cassetta postale, come indicato dal criterio utente.|
+    |Consentito dai criteri dell'organizzazione|La posta è stata consentita nella cassetta postale come indicato dal criterio dell'organizzazione.|
+    |Bloccato dai criteri dell'organizzazione|Il recapito della posta alla cassetta postale è stato bloccato come indicato dai criteri dell'organizzazione.|
+    |Estensione di file bloccata dai criteri dell'organizzazione|Il recapito del file alla cassetta postale è stato bloccato come indicato dai criteri dell'organizzazione.|
+    |Consentito dai criteri utente|La posta è stata consentita nella cassetta postale come indicato dal criterio utente.|
+    |Bloccato dai criteri utente|Il recapito della posta alla cassetta postale è stato bloccato come indicato dai criteri utente.|
     |
 
-    **Threat URL**: il campo di rischio URL è stato incluso nella scheda *Dettagli* di un messaggio di posta elettronica per indicare la minaccia presentata da un URL. Le minacce presentate da un URL possono includere *malware*, *phishing* o *posta indesiderata* e un URL *senza* minacce direbbe *nessuno* nella sezione minacce.
+    **Minaccia URL:** il campo relativo alla  minaccia URL è stato incluso nella scheda dei dettagli di un messaggio di posta elettronica per indicare la minaccia presentata da un URL. Le minacce presentate da un URL possono includere *malware,*  virus o posta indesiderata e un URL senza minacce dirà *Nessuno* nella sezione relativa alle minacce.
 
-7. **Visualizzazione sequenza temporale della posta elettronica**: il team delle operazioni di sicurezza potrebbe essere necessario immergersi nei dettagli della posta elettronica per approfondire ulteriormente. La sequenza temporale della posta elettronica consente agli amministratori di visualizzare le azioni eseguite su un messaggio di posta elettronica dal recapito al post-recapito. Per visualizzare una cronologia della posta elettronica, fare clic sull'oggetto di un messaggio di posta elettronica, quindi fare clic su sequenza temporale della posta elettronica. (Viene visualizzato tra le altre intestazioni del pannello come riepilogo o dettagli). Questi risultati possono essere esportati in un foglio di calcolo.
+7. **Visualizzazione della sequenza temporale della posta** elettronica: il team delle operazioni di sicurezza potrebbe dover approfondire i dettagli della posta elettronica per analizzare ulteriormente. La sequenza temporale della posta elettronica consente agli amministratori di visualizzare le azioni eseguite su un messaggio di posta elettronica dal recapito al post-recapito. Per visualizzare una sequenza temporale di posta elettronica, fare clic sull'oggetto di un messaggio di posta elettronica, quindi fare clic su Sequenza temporale e-mail. Viene visualizzata tra le altre intestazioni del pannello, ad esempio Riepilogo o Dettagli. Questi risultati possono essere esportati in un foglio di calcolo.
 
-    La sequenza temporale della posta elettronica verrà aperta a una tabella che Visualizza tutti gli eventi di recapito e post-recapito per la posta elettronica. Se non ci sono altre azioni sul messaggio di posta elettronica, dovrebbe essere visualizzato un singolo evento per il recapito originale che indica un risultato, ad esempio *bloccato*, con un verdetto come *phishing*. Gli amministratori possono esportare l'intera sequenza temporale della posta elettronica, inclusi tutti i dettagli sulla scheda e la posta elettronica (ad esempio, oggetto, mittente, destinatario, rete e ID messaggio). La sequenza temporale della posta elettronica riduce la randomizzazione perché è necessario meno tempo per controllare posizioni diverse per cercare di comprendere gli eventi accaduti dopo l'arrivo del messaggio di posta elettronica. Quando più eventi si verificano in un messaggio di posta elettronica o vicino allo stesso tempo, tali eventi vengono visualizzati in una visualizzazione sequenza temporale.
+    La sequenza temporale della posta elettronica verrà aperta in una tabella che mostra tutti gli eventi di recapito e post-recapito per il messaggio di posta elettronica. Se non sono disponibili ulteriori azioni sul messaggio di posta elettronica, verrà visualizzato un singolo evento per il recapito originale che indica un risultato, ad esempio *Bloccato,* con un verdetto come *Phish.* Gli amministratori possono esportare l'intera sequenza temporale della posta elettronica, inclusi tutti i dettagli nella scheda e nella posta elettronica (ad esempio, Oggetto, Mittente, Destinatario, Rete e ID messaggio). La sequenza temporale della posta elettronica riduce la casualità perché c'è meno tempo impiegato per controllare posizioni diverse per cercare di comprendere gli eventi che si sono verificati dall'arrivo del messaggio di posta elettronica. Quando si verificano più eventi contemporaneamente o quasi in un messaggio di posta elettronica, tali eventi vengono visualizzati in una visualizzazione sequenza temporale.
 
-8. **Anteprima/download**: Threat Explorer fornisce al team di operazioni di sicurezza i dettagli necessari per esaminare la posta elettronica sospetta. Il team delle operazioni di sicurezza può:
+8. **Anteprima/download:** Threat Explorer fornisce al team delle operazioni di sicurezza i dettagli necessari per analizzare i messaggi di posta elettronica sospetti. Il team delle operazioni di sicurezza può:
 
-    - [Controllare l'azione e il percorso di recapito](#check-the-delivery-action-and-location).
+    - [Controllare l'azione di recapito e la posizione.](#check-the-delivery-action-and-location)
 
-    - [Visualizzare la sequenza temporale del messaggio di posta elettronica](#view-the-timeline-of-your-email).
+    - [Visualizzare la sequenza temporale del messaggio di posta elettronica.](#view-the-timeline-of-your-email)
 
-### <a name="check-the-delivery-action-and-location"></a>Controllare l'azione e il percorso di recapito
+### <a name="check-the-delivery-action-and-location"></a>Controllare l'azione di recapito e la posizione
 
-In [Esplora minacce (e rilevamenti in tempo reale)](threat-explorer.md), ora sono presenti le colonne dell' **azione** di recapito e del **percorso** di recapito anziché la precedente colonna **stato di recapito** . Questo comporta un'immagine più completa della posizione in cui i messaggi di posta elettronica atterrano. Parte dell'obiettivo di questa modifica consiste nell'agevolare le indagini per i team delle operazioni di sicurezza, ma il risultato finale è la conoscenza del percorso dei messaggi di posta elettronica problematici.
+In [Esplora minacce (e rilevamenti](threat-explorer.md)in tempo  reale)  sono ora disponibili colonne Azione di recapito e Posizione di recapito anziché la precedente colonna **Stato** recapito. Ciò consente di ottenere un quadro più completo della posizione dei messaggi di posta elettronica. Parte dell'obiettivo di questa modifica è semplificare le indagini per i team delle operazioni di sicurezza, ma il risultato finale è conoscere rapidamente la posizione dei messaggi di posta elettronica problematici.
 
-Lo stato di recapito è ora suddiviso in due colonne:
+Lo stato del recapito è ora suddiviso in due colonne:
 
-- **Azione di recapito** -qual è lo stato di questo messaggio di posta elettronica?
+- **Azione di recapito** - Qual è lo stato di questo messaggio di posta elettronica?
 
-- **Percorso di recapito** -dove è stato instradato il messaggio di posta elettronica come risultato?
+- **Posizione di recapito-** Dove è stato instradato questo messaggio di posta elettronica?
 
-Azione di recapito è l'azione intrapresa su un messaggio di posta elettronica a causa di criteri o rilevamenti esistenti. Ecco le possibili azioni che un messaggio di posta elettronica può eseguire:
+L'azione di recapito è l'azione eseguita su un messaggio di posta elettronica a causa di criteri o rilevamenti esistenti. Ecco le possibili azioni che un messaggio di posta elettronica può eseguire:
 
-- **Recapitato** : la posta elettronica è stata recapitata alla posta in arrivo o alla cartella di un utente e l'utente può accedervi direttamente.
+- **Recapitato:** la posta elettronica è stata recapitata nella posta in arrivo o nella cartella di un utente e l'utente può accedervi direttamente.
 
-- **Junked** – la posta elettronica è stata inviata alla cartella posta indesiderata o alla cartella eliminata dell'utente e l'utente ha accesso ai messaggi di posta elettronica nella cartella posta indesiderata o eliminata.
+- **Posta indesiderata:** la posta elettronica è stata inviata alla cartella Posta indesiderata o eliminata dell'utente e l'utente ha accesso ai messaggi di posta elettronica nella cartella Posta indesiderata o Eliminata.
 
-- **Bloccato** : tutti i messaggi di posta elettronica in quarantena, che hanno avuto esito negativo o sono stati eliminati. (Questo è completamente inaccessibile dall'utente).
+- **Bloccato:** tutti i messaggi di posta elettronica messi in quarantena, non riusciti o eliminati. Questa operazione è completamente inaccessibile dall'utente.
 
-- **Sostituito** – qualsiasi messaggio di posta elettronica in cui gli allegati dannosi sono stati sostituiti dai file. txt che affermano che l'allegato è dannoso
+- **Sostituito:** qualsiasi messaggio di posta elettronica in cui allegati dannosi vengono sostituiti da file txt che specificano che l'allegato era dannoso.
 
-Il percorso di recapito consente di visualizzare i risultati dei criteri e i rilevamenti eseguiti dopo il recapito. È collegato a un'azione di recapito. Questo campo è stato aggiunto per fornire informazioni dettagliate sull'azione intrapresa quando viene trovata una posta elettronica problematica. Di seguito sono riportati i possibili valori del percorso di recapito:
+Il percorso di recapito mostra i risultati dei criteri e dei rilevamenti eseguiti dopo il recapito. È collegato a un'azione di recapito. Questo campo è stato aggiunto per fornire informazioni dettagliate sull'azione eseguita quando viene trovato un messaggio di posta elettronica con problemi. Ecco i valori possibili della posizione di recapito:
 
-- **Posta in arrivo o cartella** – il messaggio di posta elettronica si trova nella cartella posta in arrivo o in una directory (secondo le regole di posta elettronica).
+- **Posta in arrivo o cartella:** il messaggio di posta elettronica si trova nella cartella Posta in arrivo o in una cartella (in base alle regole di posta elettronica).
 
-- **On-Prem o External** -la cassetta postale non esiste sul cloud ma è in locale.
+- **Locale o esterno:** la cassetta postale non esiste nel cloud ma è locale.
 
-- **Cartella posta indesiderata** : la posta elettronica si trova nella cartella posta indesiderata di un utente.
+- **Cartella Posta indesiderata:** la posta elettronica si trova nella cartella Posta indesiderata di un utente.
 
-- **Cartella Posta eliminata** – l'e-mail si trova nella cartella degli elementi eliminati di un utente.
+- **Cartella Posta eliminata:** il messaggio di posta elettronica si trova nella cartella Posta eliminata di un utente.
 
-- **Quarantine** : la posta elettronica in quarantena e non nella cassetta postale di un utente.
+- **Quarantena:** la posta elettronica in quarantena e non nella cassetta postale di un utente.
 
-- **Failed** : la posta elettronica non è riuscita a raggiungere la cassetta postale.
+- **Failed:** il messaggio di posta elettronica non è riuscito a raggiungere la cassetta postale.
 
-- **Eliminato** : il messaggio di posta elettronica viene perso da qualche parte nel flusso di posta.
+- **Eliminato:** il messaggio di posta elettronica viene perso da qualche parte nel flusso di posta.
 
 ### <a name="view-the-timeline-of-your-email"></a>Visualizzare la sequenza temporale del messaggio di posta elettronica
 
-La **sequenza temporale della posta elettronica** è un campo in Esplora minacce che facilita la ricerca per il team delle operazioni di sicurezza. Quando più eventi si verificano alla stessa ora o in prossimità di un messaggio di posta elettronica, tali eventi vengono visualizzati in una visualizzazione sequenza temporale. Alcuni eventi che si verificano dopo il recapito al messaggio di posta elettronica vengono acquisiti nella colonna **azioni speciali** . La combinazione di informazioni dalla sequenza temporale di un messaggio di posta elettronica con le azioni speciali eseguite dopo il recapito consente agli amministratori di esaminare i criteri e la gestione delle minacce (ad esempio la posizione in cui è stata instradata la posta elettronica e, in alcuni casi, la valutazione finale).
+**Sequenza temporale della** posta elettronica è un campo di Esplora minacce che facilita la ricerca per il team delle operazioni di sicurezza. Quando si verificano più eventi contemporaneamente o contemporaneamente in un messaggio di posta elettronica, tali eventi vengono visualizzati in una visualizzazione sequenza temporale. Alcuni eventi che si verificano dopo il recapito alla posta elettronica vengono acquisiti nella **colonna Azioni** speciali. La combinazione delle informazioni della sequenza temporale di un messaggio di posta elettronica con eventuali azioni speciali intraprese dopo il recapito offre agli amministratori informazioni dettagliate sui criteri e sulla gestione delle minacce (ad esempio, dove è stata instradata la posta e, in alcuni casi, qual è stata la valutazione finale).
 
 > [!IMPORTANT]
-> Passare a [un argomento di](remediate-malicious-email-delivered-office-365.md)correzione.
+> Passare a un argomento di correzione [qui.](remediate-malicious-email-delivered-office-365.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Rimediare la posta elettronica dannosa recapitata in Office 365](remediate-malicious-email-delivered-office-365.md)
+[Correggere i messaggi di posta elettronica dannosi recapitati in Office 365](remediate-malicious-email-delivered-office-365.md)
 
 [Microsoft Defender per Office 365](office-365-ti.md)
 
-[Protezione dalle minacce in Office 365](protect-against-threats.md)
+[Proteggere dalle minacce in Office 365](protect-against-threats.md)
 
-[Visualizzare i report per il difensore per Office 365](view-reports-for-atp.md)
+[Visualizzare i report per Defender per Office 365](view-reports-for-atp.md)

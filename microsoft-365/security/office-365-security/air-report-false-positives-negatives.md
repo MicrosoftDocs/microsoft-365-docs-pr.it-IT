@@ -22,17 +22,20 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 4ccc023a72ca450b1f0a433410206ccce59cb5f1
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 451a6b19139502a3765795694860e884a7a469bf
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142982"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50175752"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Come segnalare falsi positivi/negativi nelle funzionalità di analisi e risposta automatizzate
 
-**Si applica a:**
-- Microsoft Defender per Office 365
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**Si applica a**
+- [Microsoft Defender per Office 365 piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Se le funzionalità di analisi e risposta [automatizzate (AIR) in Office 365](automated-investigation-response-office.md) non sono state rilevate o rilevate in modo errato, il team delle operazioni di sicurezza può eseguire alcune operazioni per risolverlo. Tali azioni includono:
 

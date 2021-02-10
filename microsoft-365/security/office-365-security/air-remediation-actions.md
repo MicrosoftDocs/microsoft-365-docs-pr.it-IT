@@ -1,5 +1,5 @@
 ---
-title: Azioni correttive dopo l'indagine automatizzata in Microsoft Defender per Office 365
+title: Azioni correttive in Microsoft Defender per Office 365
 keywords: AIR, autoIR, ATP, automatizzato, indagine, risposta, correzione, minacce, avanzate, minaccia, protezione
 f1.keywords:
 - NOCSH
@@ -21,14 +21,20 @@ ms.custom:
 - air
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4966ce860c3d27f003a4fd86e158ce80de8252e2
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 6d50ea767a795eb8370e9e5c8c1b07a8c9877424
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142634"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176040"
 ---
 # <a name="remediation-actions-in-microsoft-defender-for-office-365"></a>Azioni correttive in Microsoft Defender per Office 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**Si applica a**
+- [Microsoft Defender per Office 365 piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## <a name="remediation-actions"></a>Azioni correttive
 
@@ -50,11 +56,11 @@ Microsoft Defender per Office 365 include azioni correttive per affrontare varie
 |Posta elettronica|Malware|Eliminazione recisa della posta elettronica/cluster <p> Se più di una serie di messaggi di posta elettronica in un cluster contengono malware, il cluster è considerato dannoso.|
 |Posta elettronica|URL dannoso<br/>(È stato rilevato un URL dannoso [da Collegamenti sicuri).](atp-safe-links.md)|Eliminazione recisa della posta elettronica/cluster <p>I messaggi di posta elettronica che contengono un URL dannoso sono considerati dannosi.|
 |Posta elettronica|Phishing|Eliminazione recisa della posta elettronica/cluster <p> Se più di una serie di messaggi di posta elettronica in un cluster contengono tentativi di phishing, l'intero cluster viene considerato un tentativo di phishing.|
-|Posta elettronica|Phish zapped <br>I messaggi di posta elettronica sono stati recapitati e [quindi zapped.](zero-hour-auto-purge.md)|Eliminazione recisa della posta elettronica/cluster <p>I rapporti sono disponibili per visualizzare i messaggi eliminati. [Verificare se ZAP ha spostato un messaggio e le domande frequenti.](zero-hour-auto-purge.md#how-to-see-if-zap-moved-your-message)|
+|Posta elettronica|Phish zapped <br>I messaggi di posta elettronica sono stati recapitati e [quindi zapped.](zero-hour-auto-purge.md)|Eliminazione recisa della posta elettronica/cluster <p>I rapporti sono disponibili per visualizzare i messaggi eliminati. [Vedere se ZAP ha spostato un messaggio e le domande frequenti.](zero-hour-auto-purge.md#how-to-see-if-zap-moved-your-message)|
 |Posta elettronica|Messaggio di posta elettronica di phish [perso segnalato](enable-the-report-message-add-in.md) da un utente|[Indagine automatizzata attivata dal report dell'utente](automated-investigation-response-office.md#example-a-user-reported-phish-message-launches-an-investigation-playbook)|
 |Posta elettronica|Anomalia del volume <br> Le quantità di posta elettronica recenti superano i 7-10 giorni precedenti per i criteri corrispondenti.|L'indagine automatizzata non comporta un'azione specifica in sospeso. <p>L'anomalia del volume non è una chiara minaccia, ma è semplicemente un'indicazione di volumi di posta elettronica più grandi negli ultimi giorni rispetto agli ultimi 7-10 giorni. <p>Anche se un volume elevato di messaggi di posta elettronica può indicare potenziali problemi, è necessaria una conferma in termini di verdetti dannosi o di una revisione manuale dei messaggi di posta elettronica o dei cluster. Vedere [Trovare i messaggi di posta elettronica sospetti recapitati.](investigate-malicious-email-that-was-delivered.md#find-suspicious-email-that-was-delivered)|
 |Posta elettronica|Nessuna minaccia trovata <br> Il sistema non ha trovato minacce in base a file, URL o analisi dei verdetti del cluster di posta elettronica.|L'indagine automatizzata non comporta un'azione specifica in sospeso. <p>Le minacce rilevate [e zapped](zero-hour-auto-purge.md) dopo il completamento di un'indagine non vengono riflesse nei risultati numerici di un'indagine, ma tali minacce sono visualizzabili in [Esplora minacce.](threat-explorer.md)|
-|Utente|Un utente ha fatto clic su un URL dannoso <br> Un utente si è connesso a una pagina che in seguito [](atp-safe-links.md#warning-pages-from-safe-links) è stata trovata dannosa oppure ha ignorato una pagina di avviso collegamenti sicuri per accedere a una pagina dannosa.|L'indagine automatizzata non comporta un'azione specifica in sospeso. <p>Usare Esplora minacce per [visualizzare i dati relativi agli URL e fare clic su verdetti.](threat-explorer.md#view-phishing-url-and-click-verdict-data) <p>Se l'organizzazione usa [Microsoft Defender per Endpoint,](https://docs.microsoft.com/windows/security/threat-protection/)valuta la possibilità di analizzare l'utente per determinare se il suo account è compromesso. [](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-user)|
+|Utente|Un utente ha fatto clic su un URL dannoso <br> Un utente si è connesso a una pagina che in seguito [](atp-safe-links.md#warning-pages-from-safe-links) è stata trovata dannosa oppure ha ignorato una pagina di avviso collegamenti sicuri per accedere a una pagina dannosa.|L'indagine automatizzata non comporta un'azione specifica in sospeso. <p>Usare Esplora minacce per [visualizzare i dati relativi agli URL e fare clic sui verdetti.](threat-explorer.md#view-phishing-url-and-click-verdict-data) <p>Se l'organizzazione usa [Microsoft Defender per Endpoint,](https://docs.microsoft.com/windows/security/threat-protection/)valuta la possibilità di analizzare l'utente per determinare se il suo account è compromesso. [](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-user)|
 |Utente|Un utente invia malware/phish|L'indagine automatizzata non comporta un'azione specifica in sospeso. <p> L'utente potrebbe segnalare malware/phish oppure qualcuno potrebbe effettuare [lo spoofing](anti-spoofing-protection.md) dell'utente come parte di un attacco. Usare [Esplora minacce per](threat-explorer.md) visualizzare e gestire la posta elettronica contenente [malware](threat-explorer-views.md#email--malware) [o phish.](threat-explorer-views.md#email--phish)|
 |Utente|Inoltro della posta elettronica <br> Le regole di inoltro delle cassette postali sono configurate, che possono essere utilizzate per l'esfiltrazione dei dati.|Rimuovere la regola di inoltro <p> Utilizzare [informazioni dettagliate sul flusso di](mail-flow-insights-v2.md)posta, incluso il [rapporto](mfi-auto-forwarded-messages-report.md)Messaggi inoltrati automaticamente, per visualizzare dettagli più specifici sulla posta elettronica inoltrata.|
 |Utente|Regole di delega della posta elettronica <br> L'account di un utente ha la delega impostata.|Rimuovere la regola di delega <p> Se l'organizzazione usa [Microsoft Defender per Endpoint,](https://docs.microsoft.com/windows/security/threat-protection/)valuta la possibilità di analizzare l'utente che riceve l'autorizzazione di delega. [](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-user)|

@@ -1,104 +1,110 @@
 ---
-title: Indirizzare gli account utente compromessi con indagini e risposte automatiche
-keywords: ARIA, autoIR, ATP, automatizzato, investigazione, risposta, correzione, minacce, avanzato, minaccia, protezione, compromesso
+title: Risolvere gli account utente compromessi con analisi e risposta automatizzate
+keywords: AIR, autoIR, ATP, automatizzato, indagine, risposta, correzione, minacce, avanzato, minaccia, protezione, compromesso
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 audience: ITPro
 ms.topic: article
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 - MOE150
 ms.collection: M365-security-compliance
 ms.date: 02/25/2020
-description: Informazioni su come velocizzare il processo di rilevamento e indirizzamento degli account utente compromessi con le funzionalità di analisi e risposta automatizzate in Microsoft Defender per Office 365 piano 2.
-ms.openlocfilehash: 19c9bad33263178f92c6fe523b44497cf38ebd53
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+description: Informazioni su come velocizzare il processo di rilevamento e gestione degli account utente compromessi con funzionalità di analisi e risposta automatizzate in Microsoft Defender per Office 365 Piano 2.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 2159ab7ad7e13c4cd4c2c428317ee7d99f78158c
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616738"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50176064"
 ---
-# <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Indirizzare gli account utente compromessi con indagini e risposte automatiche
+# <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Risolvere gli account utente compromessi con analisi e risposta automatizzate
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Si applica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-[Microsoft Defender per Office 365 piano 2](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2) include potenti funzionalità [di analisi e risposta automatizzate](office-365-air.md) (Air). Tali funzionalità sono in grado di salvare il team di operazioni di sicurezza molto tempo e lo sforzo per gestire le minacce. Microsoft continua a migliorare le funzionalità di sicurezza. Recentemente, le funzionalità AEREe sono state migliorate per includere un playbook di sicurezza degli utenti compromesso (attualmente in anteprima). Leggere questo articolo per ulteriori informazioni sul PlayBook di sicurezza degli utenti compromessi. Per ulteriori informazioni, vedere il post del Blog [velocizzare il tempo necessario per rilevare e rispondere al compromesso degli utenti e limitare l'ambito di violazione con Microsoft Defender per Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) .
 
-![Analisi automatizzata per un utente compromesso](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
+[Microsoft Defender per Office 365 Piano 2](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2) include potenti funzionalità di analisi e risposta [automatizzate](office-365-air.md) (AIR). Tali funzionalità consentono al team delle operazioni di sicurezza di risparmiare molto tempo e impegno per gestire le minacce. Microsoft continua a migliorare le funzionalità di sicurezza. Di recente, le funzionalità AIR sono state migliorate per includere un playbook sulla sicurezza degli utenti compromesso (attualmente in anteprima). Leggi questo articolo per altre informazioni sul playbook sulla sicurezza degli utenti compromesso. E vedere il post di blog Accelerare il tempo per rilevare e rispondere alla compromissione degli utenti e limitare l'ambito di violazione con [Microsoft Defender per Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) per ulteriori dettagli.
 
-Il PlayBook di sicurezza utente compromesso consente al team di sicurezza dell'organizzazione di:
+![Indagine automatizzata per un utente compromesso](/microsoft-365/media/office365atp-compduserinvestigation.jpg)
 
-- Velocizzare il rilevamento degli account utente compromessi;
+Il playbook sulla sicurezza degli utenti compromesso consente al team di sicurezza dell'organizzazione di:
 
-- Limitare l'ambito di una violazione quando un account è compromesso; e
+- Accelerare il rilevamento di account utente compromessi;
+
+- Limitare l'ambito di una violazione quando un account viene compromesso; e
 
 - Rispondere agli utenti compromessi in modo più efficace ed efficiente.
 
-## <a name="compromised-user-alerts"></a>Avvisi degli utenti compromessi
+## <a name="compromised-user-alerts"></a>Avvisi utente compromessi
 
-Quando un account utente viene compromesso, si verificano comportamenti atipici o anomali. Ad esempio, i messaggi di phishing e di posta indesiderata possono essere inviati internamente da un account utente attendibile. Defender per Office 365 è in grado di rilevare tali anomalie nei modelli di posta elettronica e attività di collaborazione all'interno di Office 365. In questo caso, gli avvisi vengono attivati e il processo di attenuazione delle minacce inizia.
+Quando un account utente viene compromesso, si verificano comportamenti atipici o anomali. Ad esempio, i messaggi di phishing e posta indesiderata potrebbero essere inviati internamente da un account utente attendibile. Defender per Office 365 è in grado di rilevare anomalie di questo tipo nei modelli di posta elettronica e nell'attività di collaborazione in Office 365. In questo caso, vengono attivati gli avvisi e viene avviato il processo di mitigazione delle minacce.
 
 Ad esempio, ecco un avviso che è stato attivato a causa dell'invio di messaggi di posta elettronica sospetti:
 
-![Avviso attivato a causa dell'invio di messaggi di posta elettronica sospetti](/microsoft-365/media/office365atp-suspiciousemailsendalert.jpg)
+![Avviso attivato a causa dell'invio di posta elettronica sospetto](/microsoft-365/media/office365atp-suspiciousemailsendalert.jpg)
 
-Di seguito è riportato un esempio di avviso che è stato attivato quando è stato raggiunto un limite di invio per un utente:
+Ed ecco un esempio di un avviso che è stato attivato quando è stato raggiunto un limite di invio per un utente:
 
-![Avviso attivato tramite l'invio del limite raggiunto](/microsoft-365/media/office365atp-sendinglimitreached.jpg)
+![Avviso attivato dal limite di invio raggiunto](/microsoft-365/media/office365atp-sendinglimitreached.jpg)
 
-## <a name="investigate-and-respond-to-a-compromised-user"></a>Esaminare e rispondere a un utente compromesso
+## <a name="investigate-and-respond-to-a-compromised-user"></a>Analizzare e rispondere a un utente compromesso
 
-Quando un account utente viene compromesso, vengono attivati gli avvisi. In alcuni casi, l'account utente viene bloccato e impedito l'invio di ulteriori messaggi di posta elettronica fino a quando il problema non viene risolto dal team di operazioni di sicurezza dell'organizzazione. In altri casi, viene avviata un'indagine automatizzata che può provocare le azioni consigliate che il team di sicurezza deve eseguire.
+Quando un account utente viene compromesso, vengono attivati gli avvisi. In alcuni casi, l'account utente viene bloccato e non può inviare altri messaggi di posta elettronica finché il problema non viene risolto dal team delle operazioni di sicurezza dell'organizzazione. In altri casi, viene avviata un'indagine automatizzata che può comportare azioni consigliate da parte del team di sicurezza.
 
-- [Visualizzazione e analisi degli utenti con restrizioni](#view-and-investigate-restricted-users)
+- [Visualizzare e analizzare gli utenti con restrizioni](#view-and-investigate-restricted-users)
 
 - [Visualizzare i dettagli sulle indagini automatizzate](#view-details-about-automated-investigations)
 
 > [!IMPORTANT]
-> È necessario disporre delle autorizzazioni appropriate per eseguire le attività seguenti. Vedere le [autorizzazioni necessarie per utilizzare le funzionalità aeree](office-365-air.md#required-permissions-to-use-air-capabilities).
+> Per eseguire le attività seguenti, è necessario disporre delle autorizzazioni appropriate. Vedere [Autorizzazioni necessarie per l'utilizzo delle funzionalità AIR.](office-365-air.md#required-permissions-to-use-air-capabilities)
 
-### <a name="view-and-investigate-restricted-users"></a>Visualizzazione e analisi degli utenti con restrizioni
+### <a name="view-and-investigate-restricted-users"></a>Visualizzare e analizzare gli utenti con restrizioni
 
-Sono disponibili alcune opzioni per l'esplorazione di un elenco di utenti con restrizioni. Ad esempio, nel centro sicurezza & conformità, è possibile accedere a utenti con restrizioni di verifica di **gestione delle minacce** \>  \> . Nella procedura seguente viene descritta la struttura di spostamento tramite il dashboard **avvisi** , che consente di visualizzare diversi tipi di avvisi che potrebbero essere stati attivati.
+Sono disponibili alcune opzioni per passare a un elenco di utenti con restrizioni. Ad esempio, nel Centro sicurezza & conformità, è possibile passare a **Verifica** della gestione delle minacce \>  \> **Utenti con restrizioni.** Nella procedura seguente viene descritto lo spostamento tramite il **dashboard** Degli avvisi, che rappresenta un ottimo modo per visualizzare vari tipi di avvisi che potrebbero essere stati attivati.
 
 1. Andare su <https://protection.office.com> ed eseguire l'accesso.
 
-2. Nel riquadro di spostamento, scegliere  \> **Dashboard** avvisi.
+2. Nel riquadro di spostamento scegliere **Dashboard** \> **avvisi.**
 
-3. Nell' **altro widget avvisi** scegliere utenti con **restrizioni**.
+3. Nel widget **Altri avvisi** scegliere Utenti **con restrizioni.**
 
-   ![Altri widget avvisi](/microsoft-365/media/office365atp-otheralertswidget.jpg)
+   ![Widget Altri avvisi](/microsoft-365/media/office365atp-otheralertswidget.jpg)
 
    Verrà aperto l'elenco degli utenti con restrizioni.
 
    ![Utenti con restrizioni in Office 365](/microsoft-365/media/office365atp-restrictedusers.jpg)
 
-4. Selezionare un account utente nell'elenco per visualizzare i dettagli e intraprendere un'azione, ad esempio [il rilascio dell'utente con restrizioni](removing-user-from-restricted-users-portal-after-spam.md).
+4. Selezionare un account utente nell'elenco per visualizzare i dettagli ed eseguire un'azione, ad esempio [il rilascio dell'utente con restrizioni.](removing-user-from-restricted-users-portal-after-spam.md)
 
 ### <a name="view-details-about-automated-investigations"></a>Visualizzare i dettagli sulle indagini automatizzate
 
-Dopo aver avviato un'indagine automatizzata, è possibile visualizzare i dettagli e i risultati nel centro sicurezza & conformità. Andare a indagini sulla **gestione delle minacce** \> e quindi selezionare un'analisi per visualizzarne i dettagli.
+Quando è iniziata un'indagine automatizzata, è possibile visualizzarne i dettagli e i risultati nel Centro sicurezza & conformità. Passare a **Indagini sulla gestione** delle \> **minacce** e quindi selezionare un'indagine per visualizzarne i dettagli.
 
-Per ulteriori informazioni, vedere [visualizzare i dettagli di un'indagine](air-view-investigation-results.md).
+Per ulteriori informazioni, vedere [Visualizzare i dettagli di un'indagine.](air-view-investigation-results.md)
 
-## <a name="keep-the-following-points-in-mind"></a>Tenere in considerazione i seguenti punti
+## <a name="keep-the-following-points-in-mind"></a>Tenere presenti i punti seguenti
 
-- **Rimanere al di sopra degli avvisi**. Come si sa, più a lungo non viene rilevato un compromesso, maggiore è il potenziale di impatto e costo diffuso per l'organizzazione, i clienti e i partner. Il rilevamento precoce e la risposta tempestiva sono fondamentali per attenuare le minacce e, soprattutto, quando l'account di un utente viene compromesso.
+- **Tieniti al primo piano degli avvisi.** Come si sa, più un compromesso non viene rilevato, maggiore sarà il potenziale di un impatto diffuso e dei costi per l'organizzazione, i clienti e i partner. Il rilevamento anticipato e la risposta tempestiva sono fondamentali per attenuare le minacce e soprattutto quando l'account di un utente viene compromesso.
 
-- **L'automazione fornisce assistenza, ma non sostituisce il team delle operazioni di sicurezza**. L'analisi automatizzata e le funzionalità di risposta possono rilevare un utente compromesso all'inizio, ma il team delle operazioni di sicurezza avrà probabilmente bisogno di intraprendere indagini e correzioni. Serve aiuto? Vedere [operazioni di revisione e approvazione](air-review-approve-pending-completed-actions.md).
+- **L'automazione assiste, ma non sostituisce, il team delle operazioni di sicurezza.** Le funzionalità di analisi e risposta automatizzate possono rilevare un utente compromesso nelle prime fasi, ma è probabile che il team delle operazioni di sicurezza dovrà impegnarsi ed eseguire alcune indagini e correzioni. Serve aiuto? Vedere [Rivedere e approvare le azioni.](air-review-approve-pending-completed-actions.md)
 
-- **Non fare affidamento su un avviso di accesso sospetto come solo indicatore**. Quando un account utente viene compromesso, potrebbe essere attivato o meno un avviso di accesso sospetto. A volte è la serie di attività che si verificano dopo che un account è stato compromesso che attiva un avviso. Per ulteriori informazioni sugli avvisi Vedere [criteri di avviso](https://docs.microsoft.com/microsoft-365/compliance/alert-policies).
+- **Non fare affidamento su un avviso di accesso sospetto come unico indicatore.** Quando un account utente viene compromesso, potrebbe o meno attivare un avviso di accesso sospetto. A volte è la serie di attività che si verificano dopo la compromissione di un account che attiva un avviso. Vuoi saperne di più sugli avvisi? Vedere [Criteri di avviso.](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-- [Esaminare le autorizzazioni necessarie per l'utilizzo delle funzionalità AEREe](office-365-air.md#required-permissions-to-use-air-capabilities)
+- [Esaminare le autorizzazioni necessarie per l'utilizzo delle funzionalità AIR](office-365-air.md#required-permissions-to-use-air-capabilities)
 
-- [Trovare e indagare messaggi di posta elettronica dannosi in Office 365](investigate-malicious-email-that-was-delivered.md)
+- [Trovare e analizzare la posta elettronica dannosa in Office 365](investigate-malicious-email-that-was-delivered.md)
 
-- [Informazioni su AIR in Microsoft Defender per endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
+- [Informazioni su AIR in Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations)
 
-- [Visitare la Guida di orientamento di Microsoft 365 per vedere cosa succederà tra breve e in uscita](https://www.microsoft.com/microsoft-365/roadmap?filters=)
+- [Visitare la roadmap di Microsoft 365 per vedere cosa sarà presto disponibile e come eseguire l'implementazione](https://www.microsoft.com/microsoft-365/roadmap?filters=)

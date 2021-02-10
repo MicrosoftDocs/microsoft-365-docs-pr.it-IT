@@ -11,16 +11,16 @@ ms.service: ''
 ms.collection: enabler-strategic
 search.appverid: ''
 localization_priority: Priority
-ms.openlocfilehash: ba0f240caa8b3452783436e9a35c53d44baba894
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 3d6efce9b6414444793da54d9c6d7be47d6a9a5c
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976436"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50145080"
 ---
 # <a name="import-a-term-set-using-a-skos-based-format"></a>Importare un set di termini con un formato basato su SKOS
 
-È possibile importare un set di termini con un formato basato su SKOS. Per informazioni dettagliate sul formato, vedere [Riferimenti sul formato SKOS per la tassonomia di SharePoint.](skos-format-reference.md)
+È possibile importare un set di termini con un formato basato su SKOS. Per informazioni dettagliate sul formato, vedere [Riferimenti sul formato SKOS per la tassonomia di SharePoint.](skos-format-reference.md) Con questa funzionalità è richiesta una licenza di [SharePoint Syntex](index.md).
 
 Si consiglia di mantenere meno di 20.000 termini nei file di importazione. I file più grandi possono aumentare il tempo necessario per la convalida e l'importazione.
 

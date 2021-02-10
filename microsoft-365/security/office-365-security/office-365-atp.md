@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: Admin
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Priority
 search.appverid:
 - MET150
@@ -20,17 +19,22 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Microsoft Defender per Office 365 include allegati e collegamenti sicuri, strumenti avanzati anti-phishing, strumenti di report e funzionalità Threat Intelligence.
-ms.openlocfilehash: 08ad29eebb0f0c144268866922f12959600bf7cf
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 7624b9a62530e54a161bbc4aacc8bee56ed959b2
+ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794185"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50150725"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender per Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Si applica a**
+- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!IMPORTANT]
 > Questo articolo è rivolto ai clienti aziendali di [Microsoft Defender per Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Se si utilizza Outlook.com, Microsoft 365 Family o Microsoft 365 Personal e si cercano informazioni su Collegamenti sicuri o Allegati sicuri in Outlook, vedere [Sicurezza avanzata Outlook.com per gli abbonati a Microsoft 365](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
@@ -77,7 +81,7 @@ La tabella seguente riepiloga cosa è incluso in ogni piano.
 
 |Microsoft Defender per Office 365 Piano 1|Microsoft Defender per Office 365 Piano 2|
 |---|---|
-|Funzionalità di configurazione, protezione e rilevamento: <ul><li>[Allegati sicuri](atp-safe-attachments.md)</li><li>[Collegamenti sicuri](atp-safe-links.md)</li><li>[ATP per SharePoint, OneDrive e Microsoft Teams](atp-for-spo-odb-and-teams.md)</li><li>[Anti-phishing in Defender per la protezione di Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Rilevamenti in tempo reale](threat-explorer.md)</li></ul>|Funzionalità di Microsoft Defender per Office 365 Piano 1 <br>--- più ---<br> Funzionalità di automazione, analisi, correzione e formazione:<ul><li>[Tracker delle minacce](threat-trackers.md)</li><li>[Esplora minacce](threat-explorer.md)</li><li>[Analisi e risposta automatizzate](office-365-air.md)</li><li>[Simulatore di attacchi](attack-simulator.md)</li><li>[Visualizzazioni campagna](campaigns.md)</li></ul>|
+|Funzionalità di configurazione, protezione e rilevamento: <ul><li>[Allegati sicuri](atp-safe-attachments.md)</li><li>[Collegamenti sicuri](atp-safe-links.md)</li><li>[Allegati sicuri per SharePoint, OneDrive e Microsoft Teams](atp-for-spo-odb-and-teams.md)</li><li>[Anti-phishing in Defender per la protezione di Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)</li><li>[Rilevamenti in tempo reale](threat-explorer.md)</li></ul>|Funzionalità di Microsoft Defender per Office 365 Piano 1 <br>--- più ---<br> Funzionalità di automazione, analisi, correzione e formazione:<ul><li>[Tracker delle minacce](threat-trackers.md)</li><li>[Esplora minacce](threat-explorer.md)</li><li>[Analisi e risposta automatizzate](office-365-air.md)</li><li>[Simulatore di attacchi](attack-simulator.md)</li><li>[Visualizzazioni campagna](campaigns.md)</li></ul>|
 |
 
 - Microsoft Defender per Office 365 Piano 2 è incluso in Office 365 E5, Office 365 A5, Microsoft 365 E5 Security e Microsoft 365 E5.
@@ -105,7 +109,7 @@ I criteri definiti per l'organizzazione determinano il comportamento e il livell
 
 - **[Collegamenti sicuri](atp-safe-links.md)**: consente di verificare gli URL quando gli utenti vi fanno clic, ad esempio nei messaggi di posta elettronica e nei file Office. La protezione è in corso e viene applicata a tutti i messaggi e all'ambiente di Office. I collegamenti vengono analizzati per ogni clic: i collegamenti sicuri rimangono accessibili e i collegamenti dannosi sono bloccati in modo dinamico. Per altre informazioni, vedere [Configurare i criteri Collegamenti sicuri](set-up-atp-safe-links-policies.md).
 
-- **[ATP per SharePoint, OneDrive e Microsoft Teams](atp-for-spo-odb-and-teams.md)**: protegge l'organizzazione quando gli utenti collaborano e condividono file, identificando e bloccando i file dannosi nei siti del team e nelle raccolte documenti. Per altre informazioni, vedere [Attivare Microsoft Defender per Office 365 per SharePoint, OneDrive e Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
+- **[Allegati sicuri per SharePoint, OneDrive e Microsoft Teams](atp-for-spo-odb-and-teams.md)**: protegge l'organizzazione quando gli utenti collaborano e condividono file, identificando e bloccando i file dannosi nei siti del team e nelle raccolte documenti. Per altre informazioni, vedere [Attivare Microsoft Defender per Office 365 per SharePoint, OneDrive e Microsoft Teams](turn-on-atp-for-spo-odb-and-teams.md).
 
 - **[Protezione anti-phishing in Microsoft Defender per Office 365](set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)**: rileva i tentativi di imitare i propri utenti e i domini interni o personalizzati. Applica i modelli di apprendimento automatico e gli algoritmi avanzati di rilevamento delle imitazioni per evitare attacchi di phishing. Per altre informazioni, vedere [Configurare i criteri anti-phishing in Microsoft Defender per Office 365](configure-atp-anti-phishing-policies.md).
 

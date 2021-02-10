@@ -22,14 +22,20 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 97cc2f6bcb066ff2d6f64254add3a57eb27b8828
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: b187c5fee560e1ebf5463e889fff874aca05212d
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142550"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50175824"
 ---
 # <a name="how-automated-investigation-and-response-works-in-microsoft-defender-for-office-365"></a>Funzionamento dell'indagine e della risposta automatizzate in Microsoft Defender per Office 365
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+**Si applica a**
+- [Microsoft Defender per Office 365 piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Quando vengono attivati avvisi di sicurezza, il team delle operazioni di sicurezza deve esaminare tali avvisi ed eseguire le operazioni necessarie per proteggere l'organizzazione. A volte, i team delle operazioni di sicurezza possono sentirsi sovraccaricati dal volume di avvisi che vengono attivati. Le funzionalità di analisi e risposta automatizzate (AIR) in Microsoft Defender per Office 365 possono essere di aiuto.
 

@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ce0f1ae41b57db398c7ec84e078897a7345c1b9a
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 9156025990e8da61006ac1d3b81a71be5580e00c
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49930079"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167384"
 ---
 # <a name="microsoft-365-defender-preview-features"></a>Funzionalità di anteprima di Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 >[!IMPORTANT]
->Le versioni di anteprima vengono fornite senza un contratto di servizio e non sono consigliate per i carichi di lavoro di produzione. Alcune funzionalità potrebbero non essere supportate o potrebbero avere funzionalità vincolate.
+>Le versioni di anteprima vengono fornite senza un contratto di servizio e non sono consigliate per i carichi di lavoro di produzione. Alcune funzionalità potrebbero non essere supportate o avere funzionalità vincolate.
 
 **Si applica a:**
 - Microsoft 365 Defender
@@ -52,19 +52,20 @@ Attivare l'opzione esperienza di anteprima per essere tra i primi a provare le f
 
 2. Selezionare **Microsoft 365 Defender.**
 
-
 3. Selezionare **Funzionalità di anteprima** > **Attivare le funzionalità di anteprima**. 
 
-3. Selezionare **Salva**.
+4. Selezionare **Salva**.
 
 Se la casella di controllo **Attivare le funzionalità di anteprima** è selezionata, significa che le funzionalità di anteprima sono attivate. 
 
 ## <a name="preview-features"></a>Funzionalità di anteprima
 Le caratteristiche e i miglioramenti seguenti sono attualmente disponibili in anteprima:
 
-- API di **[Microsoft 365 Defender:](api-overview.md)** le API di Microsoft 365 Defender di livello lop consentono di automatizzare i flussi di lavoro in base all'evento condiviso e alle tabelle di ricerca avanzata. 
-- **[Intervenire nella ricerca avanzata:](advanced-hunting-take-action.md)** contenere rapidamente minacce o risolvere le risorse compromesse che si trovano nella [ricerca avanzata.](advanced-hunting-overview.md)
+### <a name="improved-microsoft-365-security-center"></a>Centro sicurezza Microsoft 365 migliorato
+Il Centro [sicurezza Microsoft 365](https://security.microsoft.com) migliorato è ora disponibile in anteprima pubblica. Questa nuova esperienza porta Defender per Endpoint, Defender per Office 365, Microsoft 365 Defender e altro ancora nel Centro sicurezza Microsoft 365. Questa è la nuova casa in cui gestire i controlli di sicurezza. [Scopri le novità.](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center)
+
+- Report analisi delle minacce di **[Microsoft 365 Defender:](threat-analytics.md)** l'analisi delle minacce consente di rispondere e ridurre al minimo l'impatto degli attacchi attivi. È inoltre possibile conoscere i tentativi di attacco bloccati dalle soluzioni di Microsoft 365 Defender ed eseguire azioni preventive che attenuano il rischio di ulteriore esposizione e aumentano la resilienza. Come parte dell'esperienza di sicurezza unificata, l'analisi delle minacce è ora disponibile per i titolari della licenza di Microsoft Defender per Endpoint e Microsoft Defender per Office E5.
+- API di **[Microsoft 365 Defender:](api-overview.md)** le API di Microsoft 365 Defender di primo livello consentono di automatizzare i flussi di lavoro in base all'evento condiviso e alle tabelle di ricerca avanzata. 
+- **[Intervenire nella ricerca avanzata:](advanced-hunting-take-action.md)** è possibile contenere rapidamente minacce o risolvere le risorse compromesse che si trovano nella [ricerca avanzata.](advanced-hunting-overview.md)
 - **[Informazioni di riferimento sullo schema nel](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** portale: informazioni sulle tabelle dello schema di ricerca avanzata direttamente nel Centro sicurezza. Oltre alle descrizioni di tabelle e colonne, questo riferimento include tipi di evento supportati `ActionType` (valori) e query di esempio.
 - **[Funzione DeviceFromIP():](advanced-hunting-devicefromip-function.md)** consente di ottenere informazioni sui dispositivi a cui è stato assegnato uno o più indirizzi IP specifici in un determinato intervallo di tempo.
-
-

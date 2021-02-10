@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
 search.appverid:
 - MET150
 ms.assetid: d24bb387-c65d-486e-93e7-06a4f1a436c0
@@ -21,17 +20,23 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Informazioni per amministratori sulle funzionalità anti-spoofing disponibili in Exchange Online Protection (EOP), che possono contribuire a ridurre gli attacchi di phishing da mittenti e domini contraffatti.
-ms.openlocfilehash: cae99cce070e6dc362dc678c153074fee53ca6a6
-ms.sourcegitcommit: ee39faf3507d0edc9497117b3b2854955c959c6c
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: b824ce68ee74deb2c2ff5ab51e8e2dbb0eace78b
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49616717"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50175908"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protezione anti-spoofing in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Si applica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Nelle organizzazioni di Microsoft 365 con cassette postali in Exchange Online o nelle organizzazioni di Exchange Online Protection (EOP) autonomo senza cassette postali di Exchange Online, EOP include funzionalità per la protezione dell'organizzazione dai mittenti di spoofing (falsificati).
 

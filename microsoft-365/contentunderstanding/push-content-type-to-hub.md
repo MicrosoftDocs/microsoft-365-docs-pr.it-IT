@@ -12,12 +12,12 @@ ms.collection:
 - enabler-strategic
 - m365initiative-syntex
 localization_priority: Priority
-ms.openlocfilehash: 89c03a70da364bd4b945debc64de02255dec15e1
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 22d146b1d376bab134e82ad7d1313cb7881ca45b
+ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975716"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "50144972"
 ---
 # <a name="push-content-types-to-a-hub"></a>Spostare i tipi di contenuto in un hub
 
@@ -28,7 +28,7 @@ ms.locfileid: "49975716"
 </br>
 
 
-Per rendere i tipi di contenuto importanti disponibili in modo più coerente nelle raccolte e negli elenchi di SharePoint, è possibile scegliere gli hub in cui spostarli. Quando si esegue il push, i tipi di contenuto vengono aggiunti ai nuovi elenchi e alle nuove raccolte creati nei siti associati all'hub e a qualsiasi altro nuovo sito aggiunto.
+Per rendere i tipi di contenuto importanti disponibili in modo più coerente nelle raccolte e negli elenchi di SharePoint, è possibile scegliere gli hub in cui spostarli. Quando si esegue il push, i tipi di contenuto vengono aggiunti ai nuovi elenchi e alle nuove raccolte creati nei siti associati all'hub e a qualsiasi altro nuovo sito aggiunto. Con questa funzionalità è richiesta una licenza di [SharePoint Syntex](index.md).
 
 Per usare questa funzionalità, i tipi di contenuto da spostare devono essere già pubblicati.
 

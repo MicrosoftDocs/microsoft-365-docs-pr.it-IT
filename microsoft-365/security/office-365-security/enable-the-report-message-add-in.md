@@ -17,20 +17,24 @@ ms.collection:
 description: Informazioni su come abilitare il componente aggiuntivo Segnala messaggio per Outlook e Outlook sul Web, per singoli utenti o per l'intera organizzazione.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9b21472736cff2fd0eed7da5495ab6aae597032f
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+ms.openlocfilehash: fe47bcb4db42514f3a5252a567421ad792967cd1
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094856"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167576"
 ---
 # <a name="enable-the-report-message-add-in"></a>Abilitare il componente aggiuntivo Segnala messaggio
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Si applica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!NOTE]
-> Se si è un amministratore di un'organizzazione di Microsoft 365 con cassette postali di Exchange Online, è consigliabile usare il portale Invii nel Centro sicurezza & conformità. Per ulteriori informazioni, vedere [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft.](admin-submission.md)
+> Gli amministratori di un'organizzazione di Microsoft 365 con cassette postali di Exchange Online consigliano di usare il portale Invii nel Centro sicurezza & conformità. Per ulteriori informazioni, vedere [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft.](admin-submission.md)
 
 I componenti aggiuntivi Segnala messaggio e Segnala phishing per Outlook e Outlook sul Web (in precedenza noto come Outlook Web App) consentono di segnalare facilmente falsi positivi (messaggi di posta elettronica non consentiti) o falsi negativi (posta elettronica non consentita) a Microsoft e alle relative consociati per l'analisi.
 
@@ -66,13 +70,13 @@ Se si è un amministratore globale o un amministratore di Exchange Online ed Exc
 
 ## <a name="get-the-report-message-add-in-for-yourself"></a>Ottenere il componente aggiuntivo Segnala messaggio
 
-1. Passare a Microsoft AppSource e cercare il componente aggiuntivo Segnala <https://appsource.microsoft.com/marketplace/apps> messaggio. Per passare direttamente al componente aggiuntivo Segnala messaggio, passare a <https://appsource.microsoft.com/product/office/wa104381180> .
+1. Passare a Microsoft AppSource e cercare il componente aggiuntivo <https://appsource.microsoft.com/marketplace/apps> Segnala messaggio. Per passare direttamente al componente aggiuntivo Segnala messaggio, passare a <https://appsource.microsoft.com/product/office/wa104381180> .
 
-2. Fare **clic su GET IT NOW.**
+2. Fare **clic su SCARICA ORA.**
 
    ![Segnala messaggio - Scaricalo subito](../../media/ReportMessageGETITNOW.png)
 
-3. Nella finestra di dialogo visualizzata esaminare le condizioni per l'utilizzo e l'informativa sulla privacy e quindi fare clic su **Continua.**
+3. Nella finestra di dialogo visualizzata, esaminare le condizioni per l'utilizzo e l'informativa sulla privacy e quindi fare clic su **Continua.**
 
 4. Accedi usando l'account aziendale o dell'istituto di istruzione (per uso aziendale) o l'account Microsoft (per uso personale).
 
@@ -147,7 +151,7 @@ Gli utenti a cui è assegnato il componente aggiuntivo visualizzano le icone seg
 
 - In Outlook sul Web, l'icona è simile alla seguente:
 
-  ![Icona del componente aggiuntivo per i messaggi di report di Outlook sul Web](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
+  ![Icona del componente aggiuntivo Per i messaggi di report di Outlook sul Web](../../media/d9326d0b-1769-4bc2-ae58-51f0ebc69a17.png)
 
 Quando si invia una notifica agli utenti sul componente aggiuntivo Segnala messaggio, includere un collegamento per utilizzare il componente aggiuntivo [Segnala messaggio.](https://support.microsoft.com/office/b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
 

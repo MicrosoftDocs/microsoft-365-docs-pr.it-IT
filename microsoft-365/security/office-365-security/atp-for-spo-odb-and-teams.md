@@ -1,5 +1,5 @@
 ---
-title: ATP per SharePoint, OneDrive e Microsoft Teams
+title: Allegati sicuri per SharePoint, OneDrive e Microsoft Teams
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -8,7 +8,6 @@ manager: dansimp
 audience: Admin
 ms.date: ''
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -21,52 +20,58 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-description: Informazioni su Microsoft Defender per Office 365 per i file in SharePoint Online, OneDrive for business e Microsoft teams.
-ms.openlocfilehash: 7b007671a7fecb3ae074fd07ce38d17fb025f6b4
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+description: Informazioni su Microsoft Defender per Office 365 per i file in SharePoint Online, OneDrive for Business e Microsoft Teams.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 640867cb38dab650bca990fe36c0b7cea7f6a0d8
+ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48844333"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "50175728"
 ---
-# <a name="atp-for-sharepoint-onedrive-and-microsoft-teams"></a>ATP per SharePoint, OneDrive e Microsoft Teams
+# <a name="safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Allegati sicuri per SharePoint, OneDrive e Microsoft Teams
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
-ATP per SharePoint, OneDrive e Microsoft teams in [Microsoft Defender per Office 365](office-365-atp.md) fornisce un ulteriore livello di protezione per i file che sono già stati analizzati al momento del caricamento da parte del [motore di rilevamento virus comune in Microsoft 365](virus-detection-in-spo.md). ATP per SharePoint, OneDrive e Microsoft teams consente di rilevare e bloccare i file esistenti identificati come dannosi nei siti del team e nelle raccolte documenti.
+**Si applica a**
+- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-ATP per SharePoint, OneDrive e Microsoft teams non è abilitato per impostazione predefinita. Per attivarlo, vedere [accendere ATP per SharePoint, OneDrive e Microsoft teams](turn-on-atp-for-spo-odb-and-teams.md).
+Allegati sicuri per SharePoint, OneDrive e Microsoft Teams in [Microsoft Defender per Office 365](office-365-atp.md) offre un ulteriore livello di protezione per i file che sono già stati analizzati in fase di caricamento dal motore di rilevamento dei virus comune in Microsoft [365.](virus-detection-in-spo.md) Allegati sicuri per SharePoint, OneDrive e Microsoft Teams consente di rilevare e bloccare i file esistenti identificati come dannosi nei siti del team e nelle raccolte documenti.
 
-## <a name="how-atp-for-sharepoint-onedrive-and-microsoft-teams-works"></a>Funzionamento di ATP per SharePoint, OneDrive e Microsoft Teams
+Allegati sicuri per SharePoint, OneDrive e Microsoft Teams non è abilitato per impostazione predefinita. Per attivarla, vedere [Attivare allegati sicuri per SharePoint, OneDrive e Microsoft Teams.](turn-on-atp-for-spo-odb-and-teams.md)
 
-Quando ATP per SharePoint, OneDrive e Microsoft teams è abilitato e identifica un file come dannoso, il file viene bloccato utilizzando l'integrazione diretta con gli archivi di file. Nell'immagine seguente viene mostrato un esempio di un file dannoso rilevato in una raccolta.
+## <a name="how-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-works"></a>Funzionamento degli allegati sicuri per SharePoint, OneDrive e Microsoft Teams
 
-![File in OneDrive for business con uno rilevato come dannoso](../../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)
+Quando allegati sicuri per SharePoint, OneDrive e Microsoft Teams è abilitato e identifica un file come dannoso, il file viene bloccato tramite l'integrazione diretta con gli archivi file. L'immagine seguente mostra un esempio di file dannoso rilevato in una raccolta.
 
-Anche se il file bloccato è ancora elencato nella raccolta documenti e nelle applicazioni Web, per dispositivi mobili o desktop, gli utenti non possono aprire, copiare, spostare o condividere il file. Tuttavia, è possibile eliminare il file bloccato.
+![File in OneDrive for Business con uno rilevato come dannoso](../../media/2bba71cc-7ad1-4799-8b9d-d56f923db3a7.png)
 
-Di seguito è riportato un esempio di come si presenta un file bloccato su un dispositivo mobile:
+Anche se il file bloccato è ancora elencato nella raccolta documenti e nelle applicazioni Web, per dispositivi mobili o desktop, gli utenti non possono aprire, copiare, spostare o condividere il file. Ma possono eliminare il file bloccato.
 
-![Eliminazione di un file bloccato da OneDrive for business dall'app per dispositivi mobili di OneDrive](../../media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)
+Ecco un esempio dell'aspetto di un file bloccato in un dispositivo mobile:
 
-Per impostazione predefinita, gli utenti possono scaricare un file bloccato. Di seguito è riportato l'aspetto del download di un file bloccato su un dispositivo mobile:
+![Eliminazione di un file bloccato da OneDrive for Business dall'app OneDrive per dispositivi mobili](../../media/cb1c1705-fd0a-45b8-9a26-c22503011d54.png)
 
-![Download di un file bloccato in OneDrive for business](../../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)
+Per impostazione predefinita, gli utenti possono scaricare un file bloccato. Ecco l'aspetto del download di un file bloccato in un dispositivo mobile:
 
-Gli amministratori di SharePoint Online possono impedire agli utenti di scaricare file dannosi. Per istruzioni, vedere [utilizzare PowerShell di SharePoint Online per impedire agli utenti di scaricare file dannosi](turn-on-atp-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).
+![Download di un file bloccato in OneDrive for Business](../../media/be288a82-bdd8-4371-93d8-1783db3b61bc.png)
 
-Per ulteriori informazioni sull'esperienza utente quando un file è stato rilevato come dannoso, vedere [cosa fare quando si trova un file dannoso in SharePoint Online, OneDrive o Microsoft teams](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2).
+Gli amministratori di SharePoint Online possono impedire agli utenti di scaricare file dannosi. Per istruzioni, vedere [Usare PowerShell di SharePoint Online](turn-on-atp-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files)per impedire agli utenti di scaricare file dannosi.
 
-## <a name="view-information-about-malicious-files-detected-by-atp-for-sharepoint-onedrive-and-microsoft-teams"></a>Visualizzare informazioni sui file dannosi rilevati da ATP per SharePoint, OneDrive e Microsoft Teams
+Per ulteriori informazioni sull'esperienza utente quando un file è stato rilevato come dannoso, vedere Cosa fare quando viene trovato un file dannoso [in SharePoint Online, OneDrive o Microsoft Teams.](https://support.microsoft.com/office/01e902ad-a903-4e0f-b093-1e1ac0c37ad2)
 
-I file identificati come dannosi da Microsoft Defender per Office 365 verranno visualizzati nei [report di Microsoft Defender per office 365](view-reports-for-atp.md) e in [Esplora risorse (e rilevamenti in tempo reale)](threat-explorer.md).
+## <a name="view-information-about-malicious-files-detected-by-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams"></a>Visualizzare informazioni sui file dannosi rilevati dagli allegati sicuri per SharePoint, OneDrive e Microsoft Teams
 
-A maggio 2018, quando un file viene identificato come dannoso da Microsoft Defender per Office 365, il file è disponibile anche in quarantena. Per ulteriori informazioni, vedere [use the Security & Compliance Center per gestire i file in quarantena](manage-quarantined-messages-and-files.md#microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files).
+I file identificati come dannosi da Microsoft Defender per Office 365 verranno visualizzati nei report per [Microsoft Defender per Office 365](view-reports-for-atp.md) e in Esplora risorse (e rilevamenti in tempo [reale).](threat-explorer.md)
 
-## <a name="keep-these-points-in-mind"></a>Tenere presente questi punti
+A maggio 2018, quando un file viene identificato come dannoso da Microsoft Defender per Office 365, il file è disponibile anche in quarantena. Per ulteriori informazioni, vedere [Usare il Centro sicurezza & conformità per gestire i file in quarantena.](manage-quarantined-messages-and-files.md#microsoft-defender-for-office-365-only-use-the-security--compliance-center-to-manage-quarantined-files)
 
-- Il difensore per Office 365 non analizzerà tutti i singoli file in SharePoint Online, OneDrive for business o Microsoft teams. Si tratta di un comportamento legato alla progettazione. I file vengono analizzati in modo asincrono. Il processo utilizza gli eventi di condivisione e attività Guest insieme a sistemi euristici intelligenti e segnalazioni di minacce per identificare i file dannosi.
+## <a name="keep-these-points-in-mind"></a>Tenere presenti questi punti
 
-- Verificare che i siti di SharePoint siano configurati per l'utilizzo dell' [esperienza moderna](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience). Defender for Office 365 Protection si applica se viene utilizzata la visualizzazione moderna o classica. Tuttavia, gli indicatori visivi che un file è bloccato sono disponibili solo nell'esperienza moderna.
+- Defender per Office 365 non analizza ogni singolo file in SharePoint Online, OneDrive for Business o Microsoft Teams. Si tratta di un comportamento legato alla progettazione. I file vengono analizzati in modo asincrono. Il processo usa gli eventi di condivisione e attività guest insieme all'euristica intelligente e ai segnali di minaccia per identificare i file dannosi.
 
-- ATP per SharePoint, OneDrive e Microsoft teams fa parte della strategia globale di protezione dalle minacce dell'organizzazione, che include la protezione da posta indesiderata e anti-malware in Exchange Online Protection (EOP), nonché collegamenti sicuri e allegati sicuri in Microsoft Defender per Office 365. Per ulteriori informazioni, vedere [protezione dalle minacce in Office 365](protect-against-threats.md).
+- Verificare che i siti di SharePoint siano configurati per l'utilizzo [dell'esperienza moderna.](https://docs.microsoft.com/sharepoint/guide-to-sharepoint-modern-experience) Defender per la protezione di Office 365 si applica se viene usata l'esperienza moderna o la visualizzazione classica; Tuttavia, gli indicatori visivi che un file è bloccato sono disponibili solo nell'esperienza moderna.
+
+- Allegati sicuri per SharePoint, OneDrive e Microsoft Teams fa parte della strategia generale di protezione dalle minacce dell'organizzazione, che include la protezione da posta indesiderata e antimalware in Exchange Online Protection (EOP), nonché collegamenti sicuri e allegati sicuri in Microsoft Defender per Office 365. Per altre informazioni, vedere [Proteggere dalle minacce in Office 365.](protect-against-threats.md)

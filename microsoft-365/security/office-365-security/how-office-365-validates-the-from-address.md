@@ -1,5 +1,5 @@
 ---
-title: Come EOP convalida l'indirizzo del mittente per impedire il phishing
+title: In che modo EOP convalida l'indirizzo Da per impedire il phishing
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -8,7 +8,6 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: conceptual
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - OWC150
@@ -16,100 +15,106 @@ search.appverid:
 ms.assetid: eef8408b-54d3-4d7d-9cf7-ad2af10b2e0e
 ms.collection:
 - M365-security-compliance
-description: Gli amministratori possono ottenere informazioni sui tipi di indirizzi di posta elettronica accettati o rifiutati da Exchange Online Protection (EOP) e Outlook.com per evitare il phishing.
+description: Gli amministratori possono conoscere i tipi di indirizzi di posta elettronica accettati o rifiutati da Exchange Online Protection (EOP) e Outlook.com per prevenire il phishing.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 25fbca8fa5d264a212ac25e2035bffde0819383d
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: e7c2cbec49082fbded857dde13f73516fd3e0fd5
+ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49659655"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "50167516"
 ---
-# <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>Come EOP convalida l'indirizzo del mittente per impedire il phishing
+# <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>In che modo EOP convalida l'indirizzo Da per impedire il phishing
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Si applica a**
+- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-Gli attacchi di phishing rappresentano una minaccia costante per qualsiasi organizzazione di posta elettronica. Oltre a utilizzare [gli indirizzi di posta elettronica del mittente falsificati (falsificati)](anti-spoofing-protection.md), gli utenti malintenzionati utilizzano spesso valori nell'indirizzo from che violano gli standard di Internet. Per evitare questo tipo di phishing, Exchange Online Protection (EOP) e Outlook.com ora richiedono che i messaggi in ingresso includano un indirizzo conforme a RFC, come descritto in questo articolo. Questo Enforcement è stato abilitato nel novembre 2017.
+Gli attacchi di phishing sono una minaccia costante per qualsiasi organizzazione di posta elettronica. Oltre a usare gli indirizzi [di](anti-spoofing-protection.md)posta elettronica dei mittenti contraffatti (falsificati), gli utenti malintenzionati spesso utilizzano valori nell'indirizzo mittente che violano gli standard Internet. Per evitare questo tipo di phishing, Exchange Online Protection (EOP) e Outlook.com ora richiedono che i messaggi in ingresso includano un indirizzo Da conforme a RFC, come descritto in questo articolo. Questa applicazione è stata abilitata a novembre 2017.
 
 **Note**:
 
-- Se si ricevono regolarmente messaggi di posta elettronica provenienti da organizzazioni con indirizzi non corretti, come descritto in questo articolo, incoraggiare queste organizzazioni a aggiornare i server di posta elettronica in modo che siano conformi agli standard di sicurezza moderni.
+- Se si riceve regolarmente posta elettronica da organizzazioni che hanno indirizzi Da non validi come descritto in questo articolo, incoraggiare tali organizzazioni ad aggiornare i server di posta elettronica in modo da rispettare gli standard di sicurezza moderni.
 
-- Il campo mittente correlato (utilizzato da Send per conto e mailing list) non è influenzato da questi requisiti. Per ulteriori informazioni, vedere il post di Blog seguente: [che cosa si intende quando si fa riferimento al ' mittente ' di un messaggio di posta elettronica?](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/).
+- Il campo Mittente correlato (utilizzato da Invia per conto di e dalle liste di distribuzione) non è interessato da questi requisiti. Per ulteriori informazioni, vedere il post di blog seguente: Che cosa si intende quando si fa riferimento al ["mittente" di un messaggio di posta elettronica?](https://blogs.msdn.microsoft.com/tzink/2017/06/22/what-do-we-mean-when-we-refer-to-the-sender-of-an-email/).
 
 ## <a name="an-overview-of-email-message-standards"></a>Panoramica degli standard dei messaggi di posta elettronica
 
-Un messaggio di posta elettronica SMTP standard è costituito da una *busta del messaggio* e dal contenuto del messaggio. La busta del messaggio contiene le informazioni necessarie per la trasmissione e il recapito del messaggio tra i server SMTP. Il contenuto del messaggio include i campi di intestazione del messaggio (denominati collettivamente *intestazione del messaggio*) e il corpo del messaggio. La busta del messaggio è descritta in [rfc 5321](https://tools.ietf.org/html/rfc5321)e l'intestazione del messaggio è descritta in [RFC 5322](https://tools.ietf.org/html/rfc5322). I destinatari non vedono mai la busta reale del messaggio perché viene generata dal processo di trasmissione del messaggio e non è in realtà parte del messaggio.
+Un messaggio di posta elettronica SMTP standard è costituito da una *busta del messaggio* e dal contenuto del messaggio. La busta del messaggio contiene le informazioni necessarie per la trasmissione e il recapito del messaggio tra i server SMTP. Il contenuto del messaggio include i campi di intestazione del messaggio (denominati collettivamente *intestazione del messaggio*) e il corpo del messaggio. La busta del messaggio è descritta in [RFC 5321](https://tools.ietf.org/html/rfc5321)e l'intestazione del messaggio è descritta in [RFC 5322.](https://tools.ietf.org/html/rfc5322) I destinatari non vedono mai la busta effettiva del messaggio perché viene generata dal processo di trasmissione del messaggio e non fa parte del messaggio.
 
-- L'indirizzo `5321.MailFrom` (noto anche come indirizzo di **posta elettronica** , mittente P1 o mittente busta) è l'indirizzo di posta elettronica utilizzato per la trasmissione SMTP del messaggio. Questo indirizzo di posta elettronica viene in genere registrato nel campo di intestazione **Return-Path** nell'intestazione del messaggio (sebbene sia possibile che il mittente designi un indirizzo di posta elettronica diverso per il **percorso restituito** ).
+- L'indirizzo (noto anche come indirizzo `5321.MailFrom` **MAIL FROM,** mittente P1 o mittente della busta) è l'indirizzo di posta elettronica utilizzato nella trasmissione SMTP del messaggio. Questo indirizzo di posta elettronica viene in genere registrato nel campo di intestazione **Return-Path** nell'intestazione del messaggio (anche se il mittente può designare un indirizzo di posta elettronica **Return-Path** diverso).
 
-- L'indirizzo di posta `5322.From` elettronica del mittente viene visualizzato nei client di posta elettronica (noto anche come indirizzo da o mittente P2) e è l'indirizzo di posta elettronica nel campo dell'intestazione **from** . L'indirizzo mittente è lo stato attivo dei requisiti di questo articolo.
+- L'indirizzo (noto anche come indirizzo mittente o mittente P2) è l'indirizzo di posta elettronica nel campo di intestazione Da ed è l'indirizzo di posta elettronica del mittente visualizzato nei client di posta `5322.From` elettronica.  L'indirizzo del mittente è al centro dei requisiti di questo articolo.
 
-L'indirizzo from è definito dettagliatamente in più RFC, ad esempio le sezioni di RFC 5322 3.2.3, 3,4 e 3.4.1 e [rfc 3696](https://tools.ietf.org/html/rfc3696). Sono presenti molte varianti sull'indirizzamento e su ciò che è considerato valido o non valido. Per semplificare le operazioni, è consigliabile utilizzare il formato e le definizioni seguenti:
+L'indirizzo From viene definito in dettaglio in diverse RFC (ad esempio, le sezioni RFC 5322 3.2.3, 3.4 e 3.4.1 e [RFC 3696).](https://tools.ietf.org/html/rfc3696) Esistono molte varianti per l'indirizzamento e ciò che viene considerato valido o non valido. Per semplicità, ti consigliamo di usare il formato e le definizioni seguenti:
 
 `From: "Display Name" <EmailAddress>`
 
-- **Nome visualizzato**: una frase facoltativa che descrive il proprietario dell'indirizzo di posta elettronica.
+- **Nome visualizzato**: frase facoltativa che descrive il proprietario dell'indirizzo di posta elettronica.
 
-  - È consigliabile racchiudere sempre il nome visualizzato tra virgolette doppie ("), come mostrato nell'esempio. Se il nome visualizzato contiene una virgola, è _necessario_ racchiudere la stringa tra virgolette doppie per RFC 5322.
+  - È consigliabile racchiudere sempre il nome visualizzato tra virgolette doppie (") come illustrato. Se il nome visualizzato contiene una virgola, _è_ necessario racchiudere la stringa tra virgolette doppie per RFC 5322.
   - Se l'indirizzo from include un nome visualizzato, il valore EmailAddress deve essere racchiuso tra parentesi angolari (< >) come illustrato.
   - Microsoft consiglia vivamente di inserire uno spazio tra il nome visualizzato e l'indirizzo di posta elettronica.
 
-- **EmailAddress**: l'indirizzo di posta elettronica utilizza il formato seguente `local-part@domain` :
+- **EmailAddress**: Un indirizzo di posta elettronica utilizza il `local-part@domain` formato:
 
-  - **local-part**: una stringa che identifica la cassetta postale associata all'indirizzo. Questo valore è univoco all'interno del dominio. Spesso, viene utilizzato il nome utente o il GUID del proprietario della cassetta postale.
-  - **dominio**: il nome di dominio completo (FQDN) del server di posta elettronica che ospita la cassetta postale identificata dalla parte locale dell'indirizzo di posta elettronica.
+  - **local-part**: stringa che identifica la cassetta postale associata all'indirizzo. Questo valore è univoco all'interno del dominio. Spesso viene utilizzato il nome utente o il GUID del proprietario della cassetta postale.
+  - **domain**: il nome di dominio completo (FQDN) del server di posta elettronica che ospita la cassetta postale identificata dalla parte locale dell'indirizzo di posta elettronica.
 
-  Di seguito sono riportate alcune considerazioni aggiuntive relative al valore EmailAddress:
+  Ecco alcune considerazioni aggiuntive per il valore EmailAddress:
 
-  - Un solo indirizzo di posta elettronica.
-  - Si consiglia di non separare le parentesi angolari con gli spazi.
+  - Solo un indirizzo di posta elettronica.
+  - È consigliabile non separare le parentesi angolari con spazi.
   - Non includere testo aggiuntivo dopo l'indirizzo di posta elettronica.
 
-## <a name="examples-of-valid-and-invalid-from-addresses"></a>Esempi di indirizzi validi e non validi
+## <a name="examples-of-valid-and-invalid-from-addresses"></a>Esempi di indirizzi Da validi e non validi
 
-Gli indirizzi di posta elettronica seguenti sono validi:
+I seguenti indirizzi di posta elettronica da sono validi:
 
 - `From: sender@contoso.com`
 
 - `From: <sender@contoso.com>`
 
-- `From: < sender@contoso.com >` (Non consigliato perché esistono spazi tra le parentesi angolari e l'indirizzo di posta elettronica).
+- `From: < sender@contoso.com >` Non consigliato perché sono presenti spazi tra le parentesi angolari e l'indirizzo di posta elettronica.
 
 - `From: "Sender, Example" <sender.example@contoso.com>`
 
 - `From: "Microsoft 365" <sender@contoso.com>`
 
-- `From: Microsoft 365 <sender@contoso.com>` (Non consigliato perché il nome visualizzato non è racchiuso tra virgolette doppie).
+- `From: Microsoft 365 <sender@contoso.com>` Non consigliato perché il nome visualizzato non è racchiuso tra virgolette doppie.
 
-Gli indirizzi di posta elettronica seguenti non sono validi:
+I seguenti indirizzi di posta elettronica da non sono validi:
 
-- **Nessun indirizzo**: alcuni messaggi automatici non includono un indirizzo mittente. In passato, quando Microsoft 365 o Outlook.com ha ricevuto un messaggio senza indirizzo mittente, il servizio ha aggiunto l'indirizzo predefinito seguente: per rendere il messaggio risultato finale:
+- **Indirizzo no-mittente:** alcuni messaggi automatizzati non includono un indirizzo mittente. In passato, quando Microsoft 365 o Outlook.com riceveva un messaggio senza un indirizzo Da, il servizio aggiungeva il seguente indirizzo da: predefinito per rendere il messaggio risultato finale:
 
   `From: <>`
 
-  A questo punto, i messaggi con un indirizzo vuoto non vengono più accettati.
+  A questo punto, i messaggi con un indirizzo Mittente vuoto non vengono più accettati.
 
-- `From: Microsoft 365 sender@contoso.com` (Il nome visualizzato è presente, ma l'indirizzo di posta elettronica non è racchiuso tra parentesi angolari).
+- `From: Microsoft 365 sender@contoso.com` Il nome visualizzato è presente, ma l'indirizzo di posta elettronica non è racchiuso tra parentesi angolari.
 
-- `From: "Microsoft 365" <sender@contoso.com> (Sent by a process)` (Testo dopo l'indirizzo di posta elettronica).
+- `From: "Microsoft 365" <sender@contoso.com> (Sent by a process)` Testo dopo l'indirizzo di posta elettronica.
 
 - `From: Sender, Example <sender.example@contoso.com>` Il nome visualizzato contiene una virgola, ma non è racchiuso tra virgolette doppie.
 
-- `From: "Microsoft 365 <sender@contoso.com>"` (L'intero valore viene racchiuso in modo errato tra virgolette doppie).
+- `From: "Microsoft 365 <sender@contoso.com>"` L'intero valore è racchiuso erroneamente tra virgolette doppie.
 
-- `From: "Microsoft 365 <sender@contoso.com>" sender@contoso.com` (Il nome visualizzato è presente, ma l'indirizzo di posta elettronica non è racchiuso tra parentesi angolari).
+- `From: "Microsoft 365 <sender@contoso.com>" sender@contoso.com` Il nome visualizzato è presente, ma l'indirizzo di posta elettronica non è racchiuso tra parentesi angolari.
 
-- `From: Microsoft 365<sender@contoso.com>` (Nessuna spaziatura tra il nome visualizzato e la parentesi uncinata sinistra).
+- `From: Microsoft 365<sender@contoso.com>` Non c'è spazio tra il nome visualizzato e la parentesi angolare sinistra.
 
-- `From: "Microsoft 365"<sender@contoso.com>` (Nessuna spaziatura tra le virgolette doppie di chiusura e la parentesi angolare sinistra).
+- `From: "Microsoft 365"<sender@contoso.com>` Non c'è spazio tra le virgolette doppie di chiusura e la parentesi angolare sinistra.
 
-## <a name="suppress-auto-replies-to-your-custom-domain"></a>Sopprimere le risposte automatiche al dominio personalizzato
+## <a name="suppress-auto-replies-to-your-custom-domain"></a>Eliminare le risposte automatiche al dominio personalizzato
 
-Non è possibile utilizzare il valore `From: <>` per sopprimere le risposte automatiche. Al contrario, è necessario configurare un record MX null per il dominio personalizzato. Le risposte automatiche (e tutte le risposte) sono naturalmente soppressi perché non esiste alcun indirizzo pubblicato a cui il server che risponde può inviare messaggi.
+Non è possibile utilizzare il valore `From: <>` per eliminare le risposte automatiche. È invece necessario configurare un record MX null per il dominio personalizzato. Le risposte automatiche (e tutte le risposte) vengono soppresse in modo naturale perché non esiste un indirizzo pubblicato a cui il server di risposta può inviare messaggi.
 
-- Scegliere un dominio di posta elettronica che non sia in grado di ricevere posta elettronica. Ad esempio, se il dominio principale è contoso.com, è possibile scegliere noreply.contoso.com.
+- Scegliere un dominio di posta elettronica che non può ricevere la posta elettronica. Ad esempio, se il dominio principale è contoso.com, è possibile scegliere noreply.contoso.com.
 
 - Il record MX null per questo dominio è costituito da un singolo punto.
 
@@ -119,16 +124,16 @@ Ad esempio:
 noreply.contoso.com IN MX .
 ```
 
-Per ulteriori informazioni sulla configurazione dei record MX, vedere [creare record DNS presso qualsiasi provider di hosting DNS per Microsoft 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
+Per ulteriori informazioni sulla configurazione dei record MX, vedere [Creare record DNS presso qualsiasi provider di hosting DNS per Microsoft 365.](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
 
-Per ulteriori informazioni sulla pubblicazione di un MX null, vedere [RFC 7505](https://tools.ietf.org/html/rfc7505).
+Per ulteriori informazioni sulla pubblicazione di un MX null, vedere [RFC 7505.](https://tools.ietf.org/html/rfc7505)
 
-## <a name="override-from-address-enforcement"></a>Sostituzione dall'applicazione degli indirizzi
+## <a name="override-from-address-enforcement"></a>Override dell'imposizione dell'indirizzo da
 
-Per ignorare i requisiti di indirizzo per la posta elettronica in ingresso, è possibile utilizzare l'elenco indirizzi IP consentiti (filtro connessioni) o il flusso di posta (note anche come regole di trasporto) come descritto in [creare elenchi di mittenti attendibili in Microsoft 365](create-safe-sender-lists-in-office-365.md).
+Per ignorare i requisiti dell'indirizzo mittente per la posta elettronica in ingresso, è possibile utilizzare l'elenco indirizzi IP consentiti (filtro connessioni) o le regole del flusso di posta (note anche come regole di trasporto) come descritto in Creare elenchi di mittenti attendibili [in Microsoft 365.](create-safe-sender-lists-in-office-365.md)
 
-Non è possibile eseguire l'override dei requisiti degli indirizzi per la posta elettronica in uscita inviata da Microsoft 365. Inoltre, Outlook.com non consentirà sostituzioni di alcun tipo, anche tramite supporto.
+Non è possibile sostituire i requisiti dell'indirizzo mittente per la posta elettronica in uscita inviata da Microsoft 365. Inoltre, Outlook.com non consentirà override di alcun tipo, anche tramite il supporto.
 
-## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>Altri modi per prevenire e proteggere i reati informatici in Microsoft 365
+## <a name="other-ways-to-prevent-and-protect-against-cybercrimes-in-microsoft-365"></a>Altri modi per prevenire e proteggere dai reati informatici in Microsoft 365
 
-Per ulteriori informazioni su come è possibile rafforzare la propria organizzazione contro il phishing, la posta indesiderata, le violazioni dei dati e altre minacce, vedere [Top 10 modi per proteggere i piani Microsoft 365 for business](../../admin/security-and-compliance/secure-your-business-data.md).
+Per ulteriori informazioni su come rafforzare l'organizzazione da phishing, posta indesiderata, violazioni dei dati e altre minacce, vedere i 10 modi principali per proteggere i piani [di Microsoft 365 per le aziende.](../../admin/security-and-compliance/secure-your-business-data.md)
