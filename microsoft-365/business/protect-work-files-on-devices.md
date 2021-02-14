@@ -27,7 +27,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 52089919-9a5e-475f-a49a-f65369487861
-description: "Informazioni sulla configurazione predefinita e sull'aggiunta dei criteri di gestione delle applicazioni per proteggere i dati aziendali nei dispositivi mobili personali degli utenti. "
+description: "Informazioni sulla configurazione predefinita e sull'aggiunta di criteri di gestione delle applicazioni per proteggere i dati aziendali nei dispositivi mobili personali degli utenti. "
 ms.openlocfilehash: 6dd6bc5c16ffbbd6ed62f16ad11e1eeb8e06a193
 ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
@@ -39,7 +39,7 @@ ms.locfileid: "44470908"
 
 Questo articolo si applica a Microsoft 365 Business Premium.
 
-Nel mondo di oggi, gli utenti sono legati ai propri dispositivi e, per la collisione personale e lavorativa, i dati aziendali possono finire sul dispositivo personale di un dipendente. Le impostazioni configurate in questo articolo consentono di eseguire il controllo e di garantire la protezione dei file di lavoro, senza influire su nessuna delle impostazioni o dei dati personali dell'utente.
+Nel mondo odierno, gli utenti sono legati ai propri dispositivi e, in caso di collisione tra la vita personale e quella professionale, i dati aziendali possono finire nel dispositivo personale di un dipendente. Le impostazioni configurate qui consentono di assumere il controllo e fornire protezione per i file di lavoro, senza influire sulle impostazioni o sui dati personali dell'utente.
   
 ## <a name="configuring-policies-during-setup"></a>Configurazione dei criteri durante l'installazione
 

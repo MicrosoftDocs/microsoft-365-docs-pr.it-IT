@@ -22,7 +22,7 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: b6c18a9b-2aed-4c84-9d75-af709160258c
-description: 'Informazioni su come trovare un nuovo partner di Microsoft 365 o per ottenere i dati di contatto di un partner con cui si è lavorato in passato. '
+description: 'Informazioni su come trovare un nuovo partner di Microsoft 365 o ottenere informazioni di contatto per un partner con cui si è lavorato in passato. '
 ms.openlocfilehash: fad16990df7783908f59a6e3dd59cb0a1a13572e
 ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
 ms.translationtype: MT
@@ -32,13 +32,13 @@ ms.locfileid: "44780110"
 ---
 # <a name="find-your-partner-or-reseller"></a>Trovare il partner o il rivenditore
 
-In qualità di amministratore, è possibile collaborare con un partner per acquistare, attivare e rinnovare le sottoscrizioni di Microsoft 365 tramite un programma Microsoft Open Volume Licensing. 
+Gli amministratori possono collaborare con un partner per acquistare, attivare e rinnovare gli abbonamenti a Microsoft 365 tramite un programma di contratti multilicenza Microsoft Open. 
   
  **Non si è sicuri che una licenza Open Volume sia adatta?** Vedere la [panoramica dei programmi Microsoft Open](https://go.microsoft.com/fwlink/p/?LinkId=613298).
   
 ## <a name="find-a-new-partner-or-reseller"></a>Trovare un nuovo partner o rivenditore
 
-Se si è pronti per acquistare o rinnovare Microsoft 365 tramite licenza Open volume, oppure si desiderano ulteriori informazioni sull'utilizzo di un partner, scegliere un'opzione di seguito. 
+Se si è pronti per acquistare o rinnovare Microsoft 365 tramite Contratti multilicenza Open o se si desiderano altre informazioni sull'utilizzo di un partner, scegliere un'opzione di seguito. 
   
 - [Cercare un partner con Microsoft PinPoint](https://go.microsoft.com/fwlink/p/?LinkId=613304)
     
@@ -51,7 +51,7 @@ Se si è pronti per acquistare o rinnovare Microsoft 365 tramite licenza Open vo
   
 ## <a name="get-partner-info-in-the-admin-center"></a>Ottenere informazioni sul partner nell'interfaccia di amministrazione
 
-1. Nell'interfaccia di amministrazione, passare alla pagina **Impostazioni**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">partner relazioni</a> .
+1. Nell'interfaccia di amministrazione passare alla pagina **Relazioni**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">partner impostazioni.</a>
   
 2. Se si ha un partner, il nome del partner e la relazione con l'organizzazione sono elencati qui. Per visualizzare le informazioni di contatto del partner (numero di telefono e indirizzo di posta elettronica), selezionare il nome del partner.
     

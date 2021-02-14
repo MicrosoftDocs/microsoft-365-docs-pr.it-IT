@@ -17,7 +17,7 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: In questo articolo sono contenute informazioni sulle nuove funzionalità di Office 365 Message Encryption (OME).
+description: Questo articolo contiene informazioni sulle nuove funzionalità di Office 365 Message Encryption (OME).
 ms.openlocfilehash: b1a9c58a17b5f8434325191828063ec91a116e88
 ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
 ms.translationtype: MT

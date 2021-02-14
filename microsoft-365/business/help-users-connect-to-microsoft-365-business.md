@@ -27,7 +27,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f338e660-6483-4eef-acb9-53dee5bd4408
-description: Informazioni su cosa aspettarsi dopo aver completato l'installazione di Business Cloud Suite e i criteri di dispositivo predefiniti sono disponibili e pronti per l'applicazione.
+description: Scopri cosa aspettarti dopo che la configurazione di Business Cloud Suite è stata completata e i criteri dei dispositivi predefiniti sono pronti per l'applicazione.
 ms.openlocfilehash: d3aad182f7e233f239b35e35c032e8ca09c57769
 ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
@@ -37,7 +37,7 @@ ms.locfileid: "44400923"
 ---
 # <a name="help-users-connect-to-microsoft-365-business-premium"></a>Aiutare gli utenti a connettersi a Microsoft 365 Business Premium
 
-Dopo aver completato l'installazione, i criteri di dispositivo predefiniti sono disponibili e sono pronti per l'applicazione. Nei dispositivi mobili, gli utenti scaricano le app di Office. I criteri vengono quindi applicati quando l'utente accede con il proprio account aziendale o dell'Istituto di istruzione. Prima di applicare i criteri a PC Windows, ad esempio per un aggiornamento sul posto, sono necessarie altre operazioni. Vedere e condividere gli argomenti seguenti per consentire agli utenti di ottenere la configurazione e la connessione:
+Dopo aver completato la configurazione, i criteri predefiniti per i dispositivi sono pronti per l'applicazione. Nei dispositivi mobili, gli utenti scaricano le app di Office. I criteri vengono quindi applicati quando l'utente accede con il proprio account aziendale o dell'istituto di istruzione. Prima di applicare i criteri a PC Windows, ad esempio per un aggiornamento sul posto, sono necessarie altre operazioni. Vedi e condividi gli argomenti seguenti per aiutare gli utenti a configurarsi e a collegarsi:
   
 [Configurare i dispositivi Windows per gli utenti di Microsoft 365 Business Premium](set-up-windows-devices.md)
   

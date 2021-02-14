@@ -38,7 +38,7 @@ ms.locfileid: "44471068"
 
 Questo articolo si applica a Microsoft 365 Business Premium.
 
-Le impostazioni dei criteri che controllano la modalità di accesso degli utenti ai file di Office dai dispositivi mobili sono **disattivate** per impostazione predefinita. È consigliabile accettare i valori predefiniti durante l'installazione per creare i criteri di applicazione per Android, iOS e Windows 10 che si applicano a tutti gli utenti. È possibile creare altri criteri al termine dell'installazione. 
+Le impostazioni dei criteri che controllano la modalità di accesso degli utenti ai file di Office dai dispositivi mobili sono **disattivate** per impostazione predefinita. Ti consigliamo di accettare i valori predefiniti durante l'installazione per creare criteri di applicazione per Android, iOS e Windows 10 che si applicano a tutti gli utenti. È possibile creare altri criteri al termine dell'installazione. 
   
 ## <a name="settings-that-control-how-users-access-office-files-on-mobile-devices"></a>Impostazioni che controllano la modalità di accesso degli utenti ai file di Office nei dispositivi mobili
 
@@ -47,10 +47,10 @@ Le impostazioni seguenti sono disponibili per la gestione della modalità di acc
 |||
 |:-----|:-----|
 |Impostazione  <br/> |Descrizione  <br/> |
-|Richiedi un PIN o l'impronta digitale per accedere alle app di Office  <br/> |Se questa impostazione è **attiva**, gli utenti devono fornire un'altra forma di autenticazione, oltre a nome utente e password, prima di poter utilizzare le app di Office nel dispositivo mobile.  <br/> |
+|Richiedi un PIN o l'impronta digitale per accedere alle app di Office  <br/> |Se questa impostazione è **attivata,** gli utenti devono fornire un'altra forma di autenticazione, oltre al nome utente e alla password, prima di poter usare le app di Office nel dispositivo mobile.  <br/> |
 |Reimposta il PIN dopo il numero di tentativi di accesso falliti seguente  <br/> |Per impedire a un utente non autorizzato di indovinare casualmente un PIN, il PIN verrà reimpostato dopo il numero specificato di tentativi di immissione non riusciti.  <br/> |
-|Richiedi agli utenti di accedere di nuovo dopo che le app di Office sono rimaste inattive per  <br/> |Questa impostazione determina per quanto tempo un utente può rimanere inattivo prima che venga richiesto di eseguire nuovamente l'accesso.  <br/> |
-|Nega l'accesso ai file di lavoro nei dispositivi jailbroken o rooted  <br/> |È possibile che gli utenti esperti abbiano un dispositivo sottoposto a jailbreak o root. Questo significa che l'utente può modificare il sistema operativo, il che può rendere il dispositivo più suscettibile al malware. Questi dispositivi sono bloccati quando l'impostazione è **attivata**.  <br/> |
-|Non consentire agli utenti di copiare il contenuto da app di Office in app personali  <br/> |Quando l'impostazione è **attiva**, l'utente non è in grado di copiare le informazioni in un file di lavoro in un file personale. Se l'impostazione è **disattivata**, l'utente può copiare informazioni da un file di lavoro a un'app personale o a un account personale.  <br/> |
+|Richiedi agli utenti di accedere di nuovo dopo che le app di Office sono rimaste inattive per  <br/> |Questa impostazione determina per quanto tempo un utente può essere inattivo prima che venga richiesto di accedere di nuovo.  <br/> |
+|Nega l'accesso ai file di lavoro nei dispositivi jailbroken o rooted  <br/> |È possibile che gli utenti esperti abbiano un dispositivo sottoposto a jailbreak o root. Ciò significa che l'utente può modificare il sistema operativo, in modo da rendere il dispositivo più vulnerabile al malware. Questi dispositivi sono bloccati quando l'impostazione è **attivata**.  <br/> |
+|Non consentire agli utenti di copiare il contenuto dalle app di Office nelle app personali  <br/> |Quando l'impostazione è **attivata,** l'utente non può copiare le informazioni in un file di lavoro in un file personale. Se l'impostazione è **Disattivata,** l'utente può copiare le informazioni da un file di lavoro a un'app personale o a un account personale.  <br/> |
    
 

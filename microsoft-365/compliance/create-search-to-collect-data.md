@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Informazioni su come creare, definire e scegliere i depositari e le posizioni detentive per una ricerca in un caso avanzato di eDiscovery.
+description: Informazioni su come creare, definire e scegliere i responsabile e le posizioni dei depositario per una ricerca in un caso di Advanced eDiscovery.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 1d9051824ff3f28484d0750b982edd70334a9b88
 ms.sourcegitcommit: a45cf8b887587a1810caf9afa354638e68ec5243
@@ -26,22 +26,22 @@ ms.locfileid: "44035768"
 ---
 # <a name="create-a-search"></a>Creare una ricerca
 
-Nella scheda **ricerche** del caso, è possibile creare una nuova ricerca facendo clic su **nuova ricerca** e seguendo la procedura guidata.
+Nella scheda **Ricerche** del caso è possibile creare una nuova ricerca facendo clic su Nuova ricerca **e** seguendo la procedura guidata.
 
-![La procedura guidata di ricerca in un caso avanzato di eDiscovery](../media/AeDSearch1.png)
+![Ricerca guidata in un caso di Advanced eDiscovery](../media/AeDSearch1.png)
 
-## <a name="name-the-search-and-give-it-a-description"></a>Denominare la ricerca e assegnarle una descrizione
+## <a name="name-the-search-and-give-it-a-description"></a>Assegnare un nome alla ricerca e assegnargli una descrizione
 
 Ogni ricerca con un caso deve avere un nome univoco. Facoltativamente, è possibile fornire una descrizione per la ricerca. 
 
-## <a name="choose-the-custodians-and-custodial-locations-to-search"></a>Scegliere i depositari e le posizioni di custodia per la ricerca
+## <a name="choose-the-custodians-and-custodial-locations-to-search"></a>Scegliere i responsabile e le posizioni dei depositario in cui eseguire la ricerca
 
-Scegliere posizioni di contenuto custode per la ricerca specificando i depositari che sono stati aggiunti al caso. Selezionando un custode, verrà eseguita la ricerca in tutte le origini dati mappate al custode. È inoltre possibile limitare la ricerca a origini dati selezionate per ogni custode. Per ulteriori informazioni su come aggiungere depositari e gestire le origini dati, vedere [lavorare con i depositari](managing-custodians.md).
+Scegliere i percorsi di contenuto dei depositario in cui eseguire la ricerca specificando i responsabile aggiunti al caso. Selezionando un responsabile, la ricerca verrà eseguita su tutte le origini dati mappate al responsabile. È inoltre possibile limitare la ricerca alle origini dati selezionate per ogni responsabile. Per ulteriori informazioni su come aggiungere i responsabile e gestire le origini dati, vedere [Collaborare con i responsabile.](managing-custodians.md)
 
-## <a name="choose-non-custodial-locations"></a>Scegliere le posizioni non detentive
+## <a name="choose-non-custodial-locations"></a>Choose non-custodial locations
 
-In alcuni casi, è possibile che si desideri cercare origini dati che non sono associate a un custode. In questo caso, è possibile specificare i percorsi che si desidera ricercare oppure scegliere di cercare tutti i percorsi di contenuto per uno specifico servizio Microsoft, ad esempio la ricerca in tutte le cassette postali di Exchange o di tutti i siti di SharePoint e gli account di OneDrive.
+In alcuni casi, è possibile cercare origini dati non associate a un responsabile. In questo caso, è possibile specificare i percorsi in cui si desidera eseguire la ricerca oppure scegliere di cercare in tutti i percorsi di contenuto un servizio Microsoft specifico (ad esempio, la ricerca in tutte le cassette postali di Exchange o in tutti i siti di SharePoint e gli account di OneDrive).
 
 ## <a name="define-the-search-query-and-conditions"></a>Definire la query di ricerca e le condizioni
 
-È possibile definire la query di parole chiave e tutte le condizioni per la ricerca utilizzando le schede delle condizioni predefinite o utilizzando KQL (Keyword Query Language). Per ulteriori informazioni, vedere [creazione di query di ricerca](building-search-queries.md).
+È possibile definire la query con parole chiave e qualsiasi condizione per la ricerca utilizzando le schede condizione predefinite o il linguaggio KQL (Keyword Query Language). Per ulteriori informazioni, vedere [Creare query di ricerca.](building-search-queries.md)

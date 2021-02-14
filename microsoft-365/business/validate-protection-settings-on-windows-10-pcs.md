@@ -22,7 +22,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: Convalidare le impostazioni di protezione delle app di Microsoft 365 Business Premium nei dispositivi Windows 10 e verificare che gli utenti non possano copiare i dati aziendali in file personali o app non gestite.
+description: Convalidare le impostazioni di protezione delle app di Microsoft 365 Business Premium nei dispositivi Windows 10 e verificare che gli utenti non siano in grado di copiare i dati aziendali in file personali o app non gestite.
 ms.openlocfilehash: 589d2fc25cc1425a775523595881660cc03e152e
 ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
@@ -34,27 +34,27 @@ ms.locfileid: "44403391"
 
 ## <a name="verify-that-users-cannot-copy-company-data-to-personal-files-on-corporate-devices"></a>Verificare che gli utenti non possano copiare i dati aziendali in file personali sui dispositivi aziendali
 
-Dopo aver [configurato i criteri di protezione delle app](protection-settings-for-windows-10-devices.md), possono essere necessarie alcune ore prima che i criteri siano applicati ai dispositivi degli utenti. Se è stata **attivata l'** opzione **Impedisci agli utenti di copiare i dati dell'azienda in file personali e forzarli a salvare i file di lavoro in OneDrive for business** per i dispositivi di proprietà della società, è possibile controllare questo sul dispositivo dell'utente dopo che è stato connesso a Azure ad e che è stato eseguito l'accesso. 
+Dopo aver [configurato i criteri di protezione delle app](protection-settings-for-windows-10-devices.md), possono essere necessarie alcune ore prima che i criteri siano applicati ai dispositivi degli utenti. Se è  stata attivata l'impostazione Impedisci agli utenti di copiare i dati aziendali nei file personali e di forzarli a salvare i file di lavoro in **OneDrive for Business** per i dispositivi di proprietà dell'azienda, è possibile controllarla nel dispositivo dell'utente dopo aver eseguito la connessione ad Azure AD e aver eseguito l'accesso. 
   
  **Verificare le impostazioni di connessione**
   
-1. Dopo aver eseguito l'accesso con le credenziali di Microsoft 365 Business Premium e la connessione ad Azure ad, come descritto in [configurare i dispositivi Windows per gli utenti di Microsoft 365 Business Premium](set-up-windows-devices.md), passare a account di accesso a **Windows Settings** \> **Accounts** \> **work or School**. Scegliere **connesso ad \<tenant name\> Azure ad**e quindi fare clic su **info**.
+1. Dopo l'accesso con le credenziali di Microsoft 365 Business Premium e la connessione ad Azure AD come descritto in Configurare i dispositivi Windows per gli utenti di [Microsoft 365 Business Premium,](set-up-windows-devices.md)passare a Impostazioni di **Windows** Account accesso all'azienda o all'istituto di \>  \> **istruzione.** Choose **Connected to Azure \<tenant name\> AD**, and then choose **Info.**
     
     ![Click or tap Info on the Connected to Azure AD dialog.](../media/a36ede2b-d1a0-4d4e-8ea7-af39b4b63890.png)
   
-2. Nella pagina **gestito da** \<tenant name\> , è possibile visualizzare le **informazioni di connessione** che includono un **indirizzo del server di gestione** come quello illustrato nella figura seguente. 
+2. Nella pagina **Gestito da** puoi vedere le info di connessione che includono un indirizzo del server di gestione come quello mostrato \<tenant name\> nella figura seguente.   
     
     ![Managed by page shows connection info of the device manager URL.](../media/47515a8e-2d0c-4bea-99f0-6b2545b88a11.png)
   
- **Verificare che non sia possibile incollare i dati della società in un'app non gestita**
+ **Verificare che non sia possibile incollare i dati aziendali in un'app non gestita**
   
-1. Aprire Outlook 2016 che è stato installato da Microsoft 365 Business Premium.
+1. Aprire Outlook 2016 installato da Microsoft 365 Business Premium.
     
 2. Aprire un messaggio di posta elettronica e copiare parte del contenuto del messaggio.
     
     Aprire Blocco note e provare a incollare il contenuto.
     
-    Verrà visualizzato un messaggio di errore che indica che l'app non può accedere al contenuto.
+    Riceverai un errore che indica che l'app non può accedere al contenuto.
     
     ![A dialog that states app can't access content when you paste into an unmanaged app.](../media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
   
@@ -64,29 +64,29 @@ Dopo aver [configurato i criteri di protezione delle app](protection-settings-fo
 
  **Verificare le impostazioni di connessione**
   
-1. Nel dispositivo personale Windows 10 in cui si è connessi come utenti locali, andare a impostazioni di **Windows**, quindi fare clic o toccare **account** \> **o accedere a School**.
+1. Nel tuo dispositivo personale Windows 10 in cui hai eseguito l'accesso come  utente locale, vai a Impostazioni di **Windows** e tocca o fai clic su Account Per accedere all'ambiente di lavoro \> **o all'istituto di istruzione.**
     
 2. Scegliere **Connetti** in **Accedi all'azienda o all'istituto di istruzione**.
     
-3. Immettere le credenziali Microsoft 365 Business Premium nell'accesso alla **finestra di dialogo Configura un account aziendale o** \> **dell'Istituto di**istruzione.
+3. Immetti le credenziali di Microsoft 365 Business Premium nella finestra di dialogo **Configura un account** aziendale o dell'istituto di \> **istruzione.**
     
 4. Nella pagina **Accedi all'azienda o all'istituto di istruzione** scegliere **Account aziendale o dell'istituto di istruzione**, quindi scegliere **Informazioni**.
     
-    ![Fare clic o toccare informazioni nella finestra di dialogo account aziendale o dell'Istituto di istruzione.](../media/63bd8b32-cb32-4afa-8ce0-6070ac403abc.png)
+    ![Tocca o fai clic su Info nella finestra di dialogo dell'account aziendale o dell'istituto di istruzione.](../media/63bd8b32-cb32-4afa-8ce0-6070ac403abc.png)
   
-5. Nella pagina **accesso al lavoro o all'Istituto di istruzione** , è possibile visualizzare le **informazioni di connessione** che includono un indirizzo del **server di gestione** come quello illustrato nella figura seguente e include le parole *WIP* e *Mam* all'interno. 
+5. Nella pagina **Accedi** all'istituto di  istruzione o all'istituto di istruzione puoi vedere le informazioni di connessione che includono un indirizzo del **server** di gestione come quello mostrato nella figura seguente e che include le parole *wip* e *mam* all'interno. 
     
     ![Managed by page shows connection info URL that includes the words mam and wpi.](../media/abd4eaf4-44fa-4538-a3e8-1e0d331dfe1e.png)
   
- **Verificare che non sia possibile incollare i dati della società in un'app non gestita**
+ **Verificare che non sia possibile incollare i dati aziendali in un'app non gestita**
   
-1. Aprire Outlook 2016 e aggiungere l'account Premium di Microsoft 365 business, se necessario, ed eseguire l'accesso con le credenziali di Microsoft 365 Business Premium.
+1. Aprire Outlook 2016 e aggiungere l'account Microsoft 365 Business Premium, se necessario, e accedere con le credenziali di Microsoft 365 Business Premium.
     
 2. Aprire un messaggio di posta elettronica e copiare parte del contenuto del messaggio.
     
     Aprire Blocco note e provare a incollare il contenuto.
     
-    Verrà visualizzato un messaggio di errore che indica che l'app non può accedere al contenuto.
+    Riceverai un errore che indica che l'app non può accedere al contenuto.
     
     ![A dialog that states app can't access content when you paste into an unmanaged app.](../media/5e82b154-cf2f-43c8-ae80-b45d8ad80e56.png)
   

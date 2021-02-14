@@ -25,7 +25,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
-description: Informazioni sui vari Stati del dispositivo nell'elenco delle azioni dei dispositivi in admin Home in Microsoft 365 for business.
+description: Informazioni sui vari stati dei dispositivi nell'elenco Azioni dispositivo nella home page dell'amministratore in Microsoft 365 per le aziende.
 ms.openlocfilehash: 64138e2b6ae73c067709cde1912a96615d08ebf1
 ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
 ms.translationtype: MT
@@ -45,14 +45,14 @@ Ai dispositivi inclusi nell'elenco **Azioni dispositivo** (home page di amminist
 |:-----|:-----|
 |Gestito da Intune  <br/> |Gestito da Microsoft 365 Business Premium.  <br/> |
 |Disattivazione in sospeso  <br/> |Microsoft 365 Business Premium si prepara a rimuovere i dati aziendali dal dispositivo.  <br/> |
-|Disattivazione in corso  <br/> |Microsoft 365 Business Premium è attualmente in fase di rimozione dei dati aziendali dal dispositivo.  <br/> |
+|Disattivazione in corso  <br/> |Microsoft 365 Business Premium sta attualmente rimuovendo i dati aziendali dal dispositivo.  <br/> |
 |Disattivazione non riuscita  <br/> | L'azione di rimozione dei dati aziendali non è riuscita.  <br/> |
-|Ritiro annullato  <br/> |L'azione ritirata è stata annullata.  <br/> |
+|Ritiro annullato  <br/> |L'azione di ritiro è stata annullata.  <br/> |
 |Cancellazione dei dati in sospeso  <br/> |In attesa dell'avvio del ripristino delle impostazioni predefinite.  <br/> |
 |Cancellazione dei dati in corso  <br/> |Il ripristino delle impostazioni predefinite è stato avviato.  <br/> |
-|Cancellazione dei dati non riuscita  <br/> |Impossibile eseguire la reimpostazione di fabbrica.  <br/> |
-|Cancellazione annullata  <br/> |Il wipe di fabbrica è stato annullato.  <br/> |
-|Non integro  <br/> |Un'azione è in sospeso (o in corso), ma il dispositivo non è stato archiviato per 30 + giorni.  <br/> |
+|Cancellazione dei dati non riuscita  <br/> |Impossibile eseguire il ripristino delle impostazioni di fabbrica.  <br/> |
+|Cancellazione annullata  <br/> |Cancellazione in fabbrica annullata.  <br/> |
+|Non integro  <br/> |Un'azione è in sospeso (o in corso), ma il dispositivo non è archiviato da oltre 30 giorni.  <br/> |
 |Eliminazione in sospeso  <br/> |L'azione di eliminazione è in sospeso.  <br/> |
 |Rilevato  <br/> |Microsoft 365 Business Premium ha rilevato il dispositivo.  <br/> |
    

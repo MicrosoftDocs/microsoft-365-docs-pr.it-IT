@@ -25,7 +25,7 @@ ms.locfileid: "44815443"
 ---
 # <a name="exchange-online-mail-encryption-with-ad-rms"></a>Crittografia della posta di Exchange Online con AD RMS
 
-Per aiutare ad impedire la fuga di informazioni, in Exchange Online è inclusa la funzionalità Information Rights Management (IRM) che fornisce una protezione online e offline dei messaggi di posta elettronica e degli allegati. È possibile configurare IRM di Exchange Online per l'utilizzo di Active Directory Rights Management Service (AD RMS), se necessario, per soddisfare i requisiti dell'organizzazione. Non si tratta di una cosa comune. Se non si dispone di un requisito per l'utilizzo di AD RMS, utilizzare invece la [crittografia dei messaggi di Office 365](ome.md) . 
+Per aiutare ad impedire la fuga di informazioni, in Exchange Online è inclusa la funzionalità Information Rights Management (IRM) che fornisce una protezione online e offline dei messaggi di posta elettronica e degli allegati. È possibile configurare IRM di Exchange Online per l'utilizzo di Active Directory Rights Management Service (AD RMS) locale, se necessario, per soddisfare i requisiti dell'organizzazione. Ciò non è comune. Se non è necessario utilizzare AD RMS, utilizzare la crittografia dei messaggi di [Office 365.](ome.md) 
 
 La protezione IRM può essere applicata dagli utenti di Microsoft Outlook o Outlook sul web, nonché dagli amministratori utilizzando le regole di protezione del trasporto o le regole di protezione di Outlook. IRM consente agli utenti di controllare chi è autorizzato ad accedere, inoltrare, stampare o copiare dati riservati all'interno di un messaggio di posta elettronica.
   
@@ -39,7 +39,7 @@ IRM di Exchange Online utilizza Active Directory Rights Management Services (AD 
   
 Gli utenti possono applicare un modello a un messaggio di posta elettronica per controllare le autorizzazioni di cui i destinatari dispongono per tale messaggio. È possibile controllare azioni quali l'inoltro, l'estrazione di informazioni da un messaggio, il salvataggio o la stampa di un messaggio applicando un modello dei criteri per i diritti AD RMS al messaggio.
   
-È possibile configurare IRM per l'utilizzo di un server AD RMS che esegue Windows Server 2008 o versioni successive. Il server AD RMS può essere utilizzato per gestire i modelli dei criteri per i diritti AD RMS per l'organizzazione basata sul cloud. Outlook si basa anche sul server AD RMS per consentire agli utenti di applicare la protezione IRM ai messaggi da inviare. Per ulteriori informazioni, vedere [configurare IRM per l'utilizzo di un server ad RMS locale](configure-irm-to-use-an-on-premises-ad-rms-server.md). 
+È possibile configurare IRM per l'utilizzo di un server AD RMS che esegue Windows Server 2008 o versioni successive. Il server AD RMS può essere utilizzato per gestire i modelli dei criteri per i diritti AD RMS per l'organizzazione basata sul cloud. Outlook si basa anche sul server AD RMS per consentire agli utenti di applicare la protezione IRM ai messaggi da inviare. Per informazioni dettagliate, [vedere Configure IRM to use an on-premises AD RMS server](configure-irm-to-use-an-on-premises-ad-rms-server.md). 
   
 Una volta abilitata, la protezione IRM può essere applicata ai messaggi come riportato di seguito:
   

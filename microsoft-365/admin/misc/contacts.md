@@ -30,31 +30,31 @@ ms.locfileid: "44780014"
 ---
 # <a name="quick-help-contacts"></a>Guida rapida: Contatti
 
-Se sono necessari contatti condivisi che possono essere configurati da tutti gli utenti dell'organizzazione, crearli nell'interfaccia di amministrazione di Microsoft 365. I contatti creati qui possono essere visualizzati da tutti gli utenti dell'organizzazione come parte dell'elenco indirizzi globale.
+Se sono necessari contatti condivisi a cui possono accedere tutti gli utenti dell'organizzazione, crearli nell'interfaccia di amministrazione di Microsoft 365. I contatti creati qui possono essere visualizzati da tutti gli utenti dell'organizzazione come parte dell'elenco indirizzi globale.
   
 ## <a name="how-do-i-add-contacts-in-the-admin-center"></a>Come si aggiungono contatti nell'interfaccia di amministrazione?
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **Users** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053302" target="_blank">contatti</a> utenti.
+1. Nell'interfaccia di amministrazione passare alla **pagina** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053302" target="_blank">Contatti</a> utenti.
 
-2. Nella pagina **contatti** selezionare **Aggiungi un contatto**.
+2. Nella pagina **Contatti** selezionare **Aggiungi un contatto.**
   
-3. Nella pagina **nuovo contatto** , inserire i dettagli e selezionare **Aggiungi** per creare un contatto.
+3. Nella pagina **Nuovo contatto** immettere i dettagli e selezionare **Aggiungi** per creare un contatto.
   
 ## <a name="how-are-these-contacts-different-from-my-contacts"></a>Che differenza c'è tra questi contatti e i contatti personali?
 
-I contatti personali sono i contatti creati per se stessi e gli utenti creano per se stessi, ma altri non possono vedere. I contatti creati nell'interfaccia di amministrazione sono invece contatti per l'organizzazione che possono essere visualizzati da tutti in aggiunta ai propri. Per ulteriori informazioni, vedere [people Overview-Outlook Web App](https://support.microsoft.com/office/5fe173cf-e620-4f62-9bf6-da5041f651bf).
+I contatti personali sono contatti creati automaticamente e creati automaticamente dagli utenti, ma non possono essere visualizzati da altri utenti. I contatti creati nell'interfaccia di amministrazione sono invece contatti per l'organizzazione che possono essere visualizzati da tutti in aggiunta ai propri. Per ulteriori informazioni, vedere [Panoramica degli utenti - Outlook Web App.](https://support.microsoft.com/office/5fe173cf-e620-4f62-9bf6-da5041f651bf)
   
 ## <a name="how-does-everyone-get-to-the-contacts-i-created-in-the-admin-center"></a>Cosa devono fare gli utenti per accedere ai contatti creati nell'interfaccia di amministrazione?
 
- Possono accedere alle **persone** in Microsoft 365, espandere **directory** e selezionare **tutti i contatti**. Qui possono visualizzare ogni contatto e le relative informazioni.
+ Possono accedere a **Persone** in Microsoft 365, espandere **Directory** e selezionare **Tutti i contatti.** Qui possono visualizzare ogni contatto e le relative informazioni.
   
 ## <a name="can-anyone-create-and-edit-these-organizational-contacts"></a>Questi contatti dell'organizzazione possono essere creati e modificati da tutti?
 
-No. Solo gli amministratori **globali** e di **Exchange** possono creare, modificare o eliminare questi contatti. Tutti gli altri utenti possono visualizzarli solo.
+No. Solo **gli amministratori** globali ed **Exchange** possono creare, modificare o eliminare questi contatti. Tutti gli altri utenti possono solo visualizzarli.
   
 ## <a name="can-i-use-this-to-manage-my-business-clients"></a>È possibile usare questi contatti per gestire i clienti aziendali?
 
-È possibile utilizzare i contatti di Microsoft 365 come si preferisce, ma esistono limitazioni. Informazioni su altri[Modi per gestire i contatti](ways-to-manage-contacts.md).
+È possibile usare i contatti di Microsoft 365 come si desidera, ma esistono limitazioni. Informazioni su altri[Modi per gestire i contatti](ways-to-manage-contacts.md).
   
 ## <a name="how-do-i-bulk-import-organizational-contacts"></a>Come si importano in blocco i contatti dell'organizzazione?
 

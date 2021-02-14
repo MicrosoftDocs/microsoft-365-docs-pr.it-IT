@@ -29,7 +29,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 99bfbf81-e719-4630-9b0f-c187edfa1f8a
-description: I profili Autopilot consentono di controllare il modo in cui viene installato Windows nei dispositivi utente. I profili contengono impostazioni predefinite e facoltative come l'installazione di Skip Cortana.
+description: I profili AutoPilot consentono di controllare la modalità di installazione di Windows nei dispositivi degli utenti. I profili contengono impostazioni predefinite e facoltative come ignorare l'installazione di Cortana.
 ms.openlocfilehash: 100de5e9548f901008d3ae154ac5a237ef265ffb
 ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
@@ -39,17 +39,17 @@ ms.locfileid: "44401035"
 ---
 # <a name="about-autopilot-profile-settings"></a>Informazioni sulle impostazioni dei profili AutoPilot
 
-## <a name="autopilot-profile-settings"></a>Impostazioni del profilo Autopilot
+## <a name="autopilot-profile-settings"></a>Impostazioni del profilo AutoPilot
 
-È possibile utilizzare i profili Autopilot per controllare la modalità di installazione di Windows nei dispositivi utente. I profili contengono le impostazioni seguenti.
+Puoi usare i profili AutoPilot per controllare la modalità di installazione di Windows nei dispositivi degli utenti. I profili contengono le impostazioni seguenti.
   
- **Funzionalità predefinite del pilota automatico (obbligatorio) impostate automaticamente:**
+ **Funzionalità predefinite di AutoPilot (obbligatorie) impostate automaticamente:**
   
 |**Impostazione**|**Descrizione**|
 |:-----|:-----|
-|Ignorare la registrazione di Cortana, OneDrive e OEM  <br/> |Ignora l'installazione delle app consumer come Cortana e Personal OneDrive. L'utente del dispositivo può installarli in un secondo momento, purché l'utente sia un amministratore locale del dispositivo. La registrazione del produttore originale viene ignorata perché il dispositivo sarà gestito da Microsoft 365 Business Premium.  <br/> |
-|Esperienza di accesso con il tuo marchio aziendale  <br/> |Se l'azienda dispone [di un marchio Aggiungi la propria società alla pagina di accesso a Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/customize-sign-in-page), l'utente del dispositivo otterrà quell'esperienza al momento dell'accesso.  <br/> |
-|Registrazione automatica in MDM con account AAD configurati.  <br/> |L'identità dell'utente verrà gestita da Azure Active Directory e gli utenti accederanno a Windows e Microsoft 365 con le credenziali di Microsoft 365 Business Premium.  <br/> |
+|Ignorare la registrazione di Cortana, OneDrive e OEM  <br/> |Ignora l'installazione di app consumer come Cortana e OneDrive personale. L'utente del dispositivo può installarlo in un secondo momento, purché l'utente sia un amministratore locale nel dispositivo. La registrazione del produttore originale viene ignorata perché il dispositivo verrà gestito da Microsoft 365 Business Premium.  <br/> |
+|Esperienza di accesso con il tuo marchio aziendale  <br/> |Se l'azienda ha una pagina Aggiungi il marchio aziendale alla pagina di accesso di [Microsoft 365,](https://docs.microsoft.com/microsoft-365/admin/setup/customize-sign-in-page)l'utente del dispositivo otterrà tale esperienza durante l'accesso.  <br/> |
+|Registrazione automatica in MDM con account AAD configurati.  <br/> |L'identità utente verrà gestita da Azure Active Directory e gli utenti accederanno a Windows e Microsoft 365 con le credenziali di Microsoft 365 Business Premium.  <br/> |
    
  **Impostazioni facoltative:**
   
