@@ -21,7 +21,7 @@ search.appverid:
 - MSO150
 - BCS160
 ms.assetid: 4307bdbf-6097-458d-9a6a-048112695c59
-description: Come amministratore, trova la guida per configurare parti di Skype for business online, tra cui la rete, le riunioni e la messaggistica istantanea e l'accesso esterno per gli utenti.
+description: Gli amministratori possono trovare assistenza per configurare parti di Skype for Business online, tra cui la rete, le riunioni e la messaggistica istantanea e l'accesso esterno per gli utenti.
 ms.openlocfilehash: 1e3807199fc83d642399b29870f2cac477d2ec75
 ms.sourcegitcommit: 74ef7179887eedc696c975a82c865b2d4b3808fd
 ms.translationtype: MT
@@ -33,7 +33,7 @@ ms.locfileid: "47415707"
 
 ## <a name="were-here-to-help"></a>Opzioni di assistenza
 
-Gli amministratori di Office 365 per le aziende hanno diritto all'accesso gratuito agli operatori esperti del supporto Microsoft. Se non si trovano le informazioni necessarie in questo sito Web, ** [contattare il supporto per i prodotti aziendali-Guida per gli amministratori](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
+Gli amministratori di Office 365 per le aziende hanno diritto all'accesso gratuito agli operatori esperti del supporto Microsoft. If you don't find the information you need on this web site, **[Contact support for business products - Admin Help](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b)**
   
 ## <a name="let-your-users-contact-external-skype-or-skype-for-business-users"></a>Consentire agli utenti di contattare utenti di Skype o Skype for Business esterni.
 
@@ -65,23 +65,23 @@ Vedere anche:
     
 ## <a name="fix-problems-for-your-users"></a>Risolvere i problemi per gli utenti
 
-- [Impostare le opzioni personali in Skype for business](https://support.office.com/article/68bacc31-71d3-44c3-a4d4-64da78c447aa#bkmk-stop-automatic-startup)
+- [Impostare le opzioni personali in Skype for Business](https://support.office.com/article/68bacc31-71d3-44c3-a4d4-64da78c447aa#bkmk-stop-automatic-startup)
     
-- [Serve assistenza per l'accesso a Skype for business?](https://support.office.com/article/448b8ea7-5b33-444a-afd4-175fc9930d05)
+- [Serve aiuto per accedere a Skype for Business?](https://support.office.com/article/448b8ea7-5b33-444a-afd4-175fc9930d05)
     
-- [Video: accedere e uscire da Skype for business](https://support.office.com/article/8abed4b3-ac48-493e-9d76-0e10140e9451)
+- [Video: Accedere e disconnettersi da Skype for Business](https://support.office.com/article/8abed4b3-ac48-493e-9d76-0e10140e9451)
     
-- [Impostare le opzioni del dispositivo audio in Skype for business](https://support.office.com/article/2533d929-9814-4349-8ae4-fca29246e2ff)
+- [Impostare le opzioni dei dispositivi audio in Skype for Business](https://support.office.com/article/2533d929-9814-4349-8ae4-fca29246e2ff)
     
 - [Partecipare a una riunione Skype for Business](https://support.office.com/article/3862be6d-758a-4064-a016-67c0febf3cd5)
     
-- [Disinstallare Skype for business](https://support.office.com/article/28C4A036-7F22-406C-B7F4-87894CBAF902)
+- [Disinstallare Skype for Business](https://support.office.com/article/28C4A036-7F22-406C-B7F4-87894CBAF902)
     
 ## <a name="help-your-users-get-started-quickly"></a>Aiutare gli utenti a diventare subito operativi
 
 - [Introduzione a Skype for Business](https://support.office.com/article/8a3491a3-c095-4718-80cf-cbbe4afe4eba): Risorse di formazione per gli utenti 
     
-- [Installare Skype for business](https://support.office.com/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb)
+- [Installare Skype for Business](https://support.office.com/article/8a0d4da8-9d58-44f9-9759-5c8f340cb3fb)
     
 - [Video: Presenza e messaggistica istantanea in Skype for Business](https://support.office.com/article/c873b869-4ce0-4375-9bea-5de150eaf081)
     
@@ -89,6 +89,6 @@ Vedere anche:
     
 - [Avviare una conferenza telefonica Skype for Business](https://support.office.com/article/8dc8ac52-91ac-4db9-8672-11551fdaf997)
     
- **Per altri articoli per gli utenti, vedere [Guida di Skype for business](https://support.office.com/article/4fbe07ce-6b15-4a06-bcf0-baea57890410).**
+ **Per altri articoli per gli utenti, vedere la [Guida di Skype for Business.](https://support.office.com/article/4fbe07ce-6b15-4a06-bcf0-baea57890410)**
   
 

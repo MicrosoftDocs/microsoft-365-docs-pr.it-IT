@@ -1,5 +1,5 @@
 ---
-title: Fase 1 di autenticazione federata a disponibilità elevata configurare Azure
+title: Fase 1 dell'autenticazione federata a disponibilità elevata Configurare Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,7 +13,7 @@ f1.keywords:
 - CSH
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
-description: "Riepilogo: configurare l'infrastruttura Microsoft Azure per ospitare l'autenticazione federata a disponibilità elevata per Microsoft 365."
+description: "Riepilogo: configurare l'infrastruttura di Microsoft Azure per ospitare l'autenticazione federata a disponibilità elevata per Microsoft 365."
 ms.openlocfilehash: d2a9fe3c31468cd53576a82639e0e61901192d8e
 ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
 ms.translationtype: MT
@@ -23,9 +23,9 @@ ms.locfileid: "47332341"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Fase 1 dell'autenticazione federata a disponibilità elevata: configurare Azure
 
-In questa fase, vengono creati i gruppi di risorse, la rete virtuale (rete virtuale) e i set di disponibilità in Azure che ospiteranno le macchine virtuali nelle fasi 2, 3 e 4. È necessario completare questa fase prima di passare a [Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Vedere [deploy High Availability Federated Authentication for Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) per tutte le fasi.
+In questa fase vengono creati i gruppi di risorse, la rete virtuale (VNet) e i set di disponibilità in Azure che ospiteranno le macchine virtuali nelle fasi 2, 3 e 4. È necessario completare questa fase prima di passare a [Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Vedere [Distribuire l'autenticazione federata a disponibilità elevata per Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) per tutte le fasi.
   
-È necessario eseguire il provisioning di Azure con i componenti di base seguenti:
+È necessario eseguire il provisioning di Azure con questi componenti di base:
   
 - Gruppi di risorse
     
@@ -57,13 +57,13 @@ Per le prime tre subnet, specificare un nome e un singolo spazio di indirizzi IP
     
 2. Convertire i bit risultanti in formato decimale ed esprimerli come spazio di indirizzi con la lunghezza del prefisso impostata sulle dimensioni della subnet del gateway.
     
-Per un blocco di comandi di PowerShell e un'applicazione console C# o Python che esegua questo calcolo per l'utente, vedere [Address Space Calculator for Azure gateway Subnets](address-space-calculator-for-azure-gateway-subnets.md) .
+Vedi [lo strumento di calcolo dello](address-space-calculator-for-azure-gateway-subnets.md) spazio degli indirizzi per le subnet del gateway di Azure per un blocco di comandi di PowerShell e un'applicazione console C# o Python che esegue automaticamente questo calcolo.
   
 Consultare il reparto IT per determinare tali spazi di indirizzi in base allo spazio di indirizzi della rete virtuale.
   
 |**Elemento**|**Nome della subnet**|**Spazio di indirizzi della subnet**|**Scopo**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |![riga](../media/Common-Images/TableLine.png)  <br/> |![riga](../media/Common-Images/TableLine.png)  <br/> |La subnet utilizzata dal controller di dominio di servizi di dominio Active Directory (AD DS) e dalle macchine virtuali del server di sincronizzazione della directory.  <br/> |
+|1.  <br/> |![riga](../media/Common-Images/TableLine.png)  <br/> |![riga](../media/Common-Images/TableLine.png)  <br/> |Subnet utilizzata dal controller di dominio di Servizi di dominio Active Directory e dalle macchine virtuali del server di sincronizzazione della directory.  <br/> |
 |2.  <br/> |![riga](../media/Common-Images/TableLine.png)  <br/> |![riga](../media/Common-Images/TableLine.png)  <br/> |La subnet utilizzata dalle macchine virtuali di AD FS.  <br/> |
 |3.  <br/> |![riga](../media/Common-Images/TableLine.png)  <br/> |![riga](../media/Common-Images/TableLine.png)  <br/> |La subnet utilizzata dalle macchine virtuali del proxy di applicazione Web.  <br/> |
 |4.  <br/> |GatewaySubnet  <br/> |![riga](../media/Common-Images/TableLine.png)  <br/> |La subnet utilizzata dalle macchine virtuali del gateway di Azure.  <br/> |
@@ -94,7 +94,7 @@ Per due server DNS (Domain Name System) nella rete locale che si desidera utiliz
    
  **Tabella D: server DNS locali**
   
-Per instradare i pacchetti dalla rete cross-premise alla rete dell'organizzazione tramite la connessione VPN da sito a sito, è necessario configurare la rete virtuale con una rete locale contenente un elenco degli spazi degli indirizzi (in notazione CIDR) per tutti i percorsi raggiungibili nella rete in locale dell'organizzazione. L'elenco degli spazi di indirizzi che definiscono la rete locale deve essere univoco e non deve sovrapporsi con lo spazio di indirizzi utilizzato per altre reti virtuali o per altre reti locali.
+Per instradare i pacchetti dalla rete cross-premise alla rete dell'organizzazione attraverso la connessione VPN da sito a sito, è necessario configurare la rete virtuale con una rete locale con un elenco degli spazi indirizzo (in notazione CIDR) per tutte le posizioni raggiungibili nella rete locale dell'organizzazione. L'elenco degli spazi di indirizzi che definiscono la rete locale deve essere univoco e non deve sovrapporsi con lo spazio di indirizzi utilizzato per altre reti virtuali o per altre reti locali.
   
 Per l'insieme degli spazi di indirizzi della rete locale, compilare la tabella L. Sono elencate tre voci vuote, ma sarà necessario aggiungerne altre. Consultare il proprio reparto IT per determinare questo elenco di spazi di indirizzi.
   
@@ -109,7 +109,7 @@ Per l'insieme degli spazi di indirizzi della rete locale, compilare la tabella L
 Ora iniziamo a creare l'infrastruttura di Azure per ospitare l'autenticazione federata per Microsoft 365.
   
 > [!NOTE]
-> [!NOTA] I seguenti comandi consentono di utilizzare la versione più recente di Azure PowerShell. Vedere [Introduzione a PowerShell di Azure](https://docs.microsoft.com/powershell/azure/get-started-azureps). 
+> [!NOTA] I seguenti comandi consentono di utilizzare la versione più recente di Azure PowerShell. Vedere [Introduzione ad Azure PowerShell.](https://docs.microsoft.com/powershell/azure/get-started-azureps) 
   
 Avviare un prompt dei comandi di Azure PowerShell e accedere al proprio account.
   
@@ -118,7 +118,7 @@ Connect-AzAccount
 ```
 
 > [!TIP]
-> Per generare blocchi di comandi di PowerShell pronti per l'esecuzione in base alle impostazioni personalizzate, utilizzare questa [cartella di lavoro di configurazione di Microsoft Excel](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx). 
+> Per generare blocchi di comandi di PowerShell pronti all'esecuzione in base alle impostazioni personalizzate, utilizzare questa cartella di lavoro di configurazione [di Microsoft Excel.](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx) 
 
 Ottenere il nome della sottoscrizione utilizzando il comando seguente.
   
@@ -132,7 +132,7 @@ Per le versioni precedenti di Azure PowerShell, utilizzare questo comando.
 Get-AzSubscription | Sort Name | Select SubscriptionName
 ```
 
-Impostare la sottoscrizione di Azure. Sostituire tutti gli elementi racchiusi tra virgolette, compresi i \< and > caratteri, con il nome corretto.
+Impostare la sottoscrizione di Azure. Sostituire tutto il testo racchiuso tra virgolette, \< and > inclusi i caratteri, con il nome corretto.
   
 ```powershell
 $subscrName="<subscription name>"
@@ -199,7 +199,7 @@ New-AzVirtualNetwork -Name $vnetName -ResourceGroupName $rgName -Location $locNa
 
 ```
 
-Successivamente, è possibile creare gruppi di sicurezza di rete per ogni subnet che dispone di macchine virtuali. Per eseguire l'isolamento della subnet, è possibile aggiungere regole per i tipi specifici di traffico concesso o negato per il gruppo di sicurezza di rete di una subnet.
+Successivamente, creare gruppi di sicurezza di rete per ogni subnet con macchine virtuali. Per eseguire l'isolamento della subnet, è possibile aggiungere regole per i tipi specifici di traffico concesso o negato per il gruppo di sicurezza di rete di una subnet.
   
 ```powershell
 # Create network security groups
@@ -253,7 +253,7 @@ $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName 
 ```
 
 > [!NOTE]
-> L'autenticazione federata di singoli utenti non fa affidamento ad alcuna risorsa locale. Tuttavia, se la connessione VPN da sito a sito non è disponibile, i controller di dominio in rete virtuale non riceveranno aggiornamenti per gli account utente e i gruppi effettuati nei servizi di dominio Active Directory locali. Per evitare che ciò accada, è possibile configurare la disponibilità elevata per la connessione VPN da sito a sito. Per maggiori informazioni, vedere [Connettività cross-premise e da rete virtuale a rete virtuale a disponibilità elevata](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)
+> L'autenticazione federata di singoli utenti non fa affidamento ad alcuna risorsa locale. Tuttavia, se questa connessione VPN da sito a sito non è più disponibile, i controller di dominio nella rete virtuale non riceveranno aggiornamenti per gli account utente e i gruppi effettuati in Servizi di dominio Active Directory locale. Per assicurarsi che ciò non avvenga, è possibile configurare la disponibilità elevata per la connessione VPN da sito a sito. Per maggiori informazioni, vedere [Connettività cross-premise e da rete virtuale a rete virtuale a disponibilità elevata](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)
   
 Successivamente, registrare l'indirizzo IPv4 pubblico del gateway VPN di Azure per la rete virtuale visualizzato con questo comando:
   
@@ -300,13 +300,13 @@ New-AzAvailabilitySet -ResourceGroupName $rgName -Name $avName -Location $locNam
 
 Questa è la configurazione risultante dal completamento corretto di questa fase.
   
-**Fase 1: l'infrastruttura di Azure per l'autenticazione federata a disponibilità elevata per Microsoft 365**
+**Fase 1: Infrastruttura di Azure per l'autenticazione federata a disponibilità elevata per Microsoft 365**
 
-![Fase 1 dell'autenticazione federata Microsoft 365 a disponibilità elevata in Azure con l'infrastruttura di Azure](../media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
+![Fase 1 dell'autenticazione federata di Microsoft 365 a disponibilità elevata in Azure con l'infrastruttura di Azure](../media/4e7ba678-07df-40ce-b372-021bf7fc91fa.png)
   
 ## <a name="next-step"></a>Passaggio successivo
 
-Utilizzare la [fase 2: configurare i controller di dominio](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) per continuare con la configurazione di questo carico di lavoro.
+Utilizzare [la fase 2: configurare i controller di](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) dominio per continuare con la configurazione di questo carico di lavoro.
   
 ## <a name="see-also"></a>Vedere anche
 
@@ -316,6 +316,6 @@ Utilizzare la [fase 2: configurare i controller di dominio](high-availability-fe
   
 [Microsoft 365 Solution and Architecture Center](../solutions/solution-architecture-center.md)
 
-[Informazioni su Microsoft 365 Identity e Azure Active Directory](about-microsoft-365-identity.md)
+[Informazioni sull'identità di Microsoft 365 e Azure Active Directory](about-microsoft-365-identity.md)
 
 

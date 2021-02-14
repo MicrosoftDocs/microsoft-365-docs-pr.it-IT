@@ -1,5 +1,5 @@
 ---
-title: Scaricare i documenti da un set di Revisione
+title: Scaricare i documenti da un insieme da rivedere
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Informazioni su come selezionare e scaricare contenuto da un set di revisione in Advanced eDiscovery per presentazioni o recensioni esterne.
+description: Informazioni su come selezionare e scaricare il contenuto da un insieme di recensioni in Advanced eDiscovery per presentazioni o recensioni esterne.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 9508a12e07440d16058b1c5303f0eb5f8f92b743
 ms.sourcegitcommit: 37ce0658336bea7b27bf8d6aa759deadc97e7365
@@ -24,10 +24,10 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 09/04/2020
 ms.locfileid: "47399426"
 ---
-# <a name="download-selected-documents-from-a-review-set"></a>Scaricare i documenti selezionati da un set di Revisione
+# <a name="download-selected-documents-from-a-review-set"></a>Scaricare i documenti selezionati da un insieme da rivedere
 
-Download offre un modo semplice per scaricare contenuto da un set di recensioni in formato nativo. Lo strumento di download in Advanced eDiscovery utilizza le funzionalità di trasferimento dei dati del browser. Quando il download è pronto, verrà visualizzato un prompt del browser. I file scaricati con questo metodo sono zippati in un file contenitore e conterranno file a livello di elemento. Questo significa che se si sceglie di scaricare un allegato, verrà visualizzato il messaggio di posta elettronica con l'allegato incluso. Analogamente, se si esporta un foglio di calcolo di Excel incorporato in un documento di Word, il documento di Word con il foglio di calcolo di Excel incorporato è incluso nel download. Quando si scaricano gli elementi, la proprietà Last modified data viene conservata e può essere visualizzata come una proprietà file.
+Il download offre un modo semplice per scaricare contenuto da un set di recensioni in formato nativo. Lo strumento di download in Advanced eDiscovery sfrutta le funzionalità di trasferimento dei dati del browser. Quando un download è pronto, verrà visualizzata una richiesta del browser. I file scaricati con questo metodo vengono compressi in un file contenitore e conterranno file a livello di elemento. Ciò significa che se si sceglie di scaricare un allegato, si riceverà il messaggio di posta elettronica con l'allegato incluso. Analogamente, se si esporta un foglio di calcolo di Excel incorporato in un documento di Word, il documento di Word con il foglio di calcolo di Excel incorporato viene incluso nel download. Quando si scaricano elementi, la proprietà Dati ultima modifica viene mantenuta e può essere visualizzata come proprietà del file.
 
-Per scaricare contenuto da un set di revisione in un caso di eDiscovery avanzato, iniziare selezionando i file che si desidera scaricare, quindi selezionare il download **degli elementi di azione**  >  **Download**.
+Per scaricare il contenuto da una recensione impostata in un caso di Advanced eDiscovery, iniziare selezionando i file che si desidera scaricare, quindi selezionare Attività **scarica.**  >  
 
-![Azione download in Advanced eDiscovery Review set](../media/eDiscoDownload.png)
+![Azione di download nel set di revisioni di Advanced eDiscovery](../media/eDiscoDownload.png)

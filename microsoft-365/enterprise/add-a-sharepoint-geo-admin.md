@@ -11,7 +11,7 @@ ms.collection: SPO_Content
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: È necessario configurare gli amministratori separati per ogni posizione geografica? Informazioni su come aggiungere o rimuovere un amministratore di posizione geografica in Microsoft 365 Multi-Geo.
+description: È necessario configurare amministratori separati per ogni posizione geografica? Informazioni su come aggiungere o rimuovere un amministratore di posizione geografica in Microsoft 365 Multi-Geo.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 9a3d916bfec2c53850f923fb5322298e9ff440ca
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b

@@ -1,5 +1,5 @@
 ---
-title: Riprovare una ricerca contenuto per risolvere un errore del percorso del contenuto
+title: Riprovare a eseguire una ricerca di contenuto per risolvere un errore del percorso del contenuto
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,7 +14,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Durante un'analisi, è possibile utilizzare il pulsante Riprova per risolvere le ricerche di contenuto che presentano errori di posizione del contenuto.
+description: Durante un'indagine, è possibile utilizzare il pulsante Riprova per risolvere le ricerche di contenuto con errori relativi alla posizione del contenuto.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: b3aed9c1d2d1fe3c40adb64b4854ef359f931bcb
 ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
@@ -23,9 +23,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 09/03/2020
 ms.locfileid: "47357556"
 ---
-# <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>Riprovare una ricerca contenuto per risolvere un errore del percorso del contenuto
+# <a name="retry-a-content-search-to-resolve-a-content-location-error"></a>Riprovare a eseguire una ricerca di contenuto per risolvere un errore del percorso del contenuto
 
-Quando si utilizza la ricerca contenuto nel centro sicurezza e conformità per eseguire ricerche in un numero elevato di cassette postali, è possibile che si verifichino errori di ricerca simili all'errore:
+Quando si utilizza Ricerca contenuto nel Centro sicurezza e conformità per cercare un numero elevato di cassette postali, potrebbero verificarsi errori di ricerca simili all'errore:
 
 ```text
 Error
@@ -38,35 +38,35 @@ User1@contoso.com: Problem in processing the request. Please try again later. If
 User2@contoso.com: Application error occurred. Please try again later. (CS012-002)
 ```
 
-Tali errori (con i codici di errore di CS001-002, CS003-002, CS008-009, CS012-002 e altri errori del modulo CS0XX-0XX) indicano che la ricerca contenuto non è riuscita a individuare percorsi di contenuto specifici. in questo esempio non sono state cercate due cassette postali. Questi errori vengono visualizzati nella pagina del riquadro a comparsa dei dettagli sullo stato della ricerca contenuto.
+Questi errori (con codici di errore CS001-002, CS003-002, CS008-009, CS012-002 e altri errori nel formato CS0XX-0XX) indicano che Ricerca contenuto non è riuscito a cercare percorsi di contenuto specifici; In questo esempio, non sono state cercate due cassette postali. Questi errori vengono visualizzati nella pagina dei dettagli sullo stato della ricerca contenuto.
 
 ## <a name="cause-of-content-location-errors"></a>Causa degli errori del percorso del contenuto
 
-Quando si esegue la ricerca di un numero elevato di cassette postali, la ricerca viene distribuita in migliaia di server in un datacenter Microsoft. In una sola volta, i server specifici potrebbero essere nello stato di riavvio o nel processo di failover di copie ridondanti. In entrambi i casi, la richiesta di ricerca del contenuto per il recupero dei dati scadrà. Nell'esempio precedente gli errori relativi alle cassette postali non riuscite sono stati causati dal timeout della ricerca.
+Quando si esegue una ricerca in un numero elevato di cassette postali, la ricerca viene distribuita tra migliaia di server in un datacenter Microsoft. In qualsiasi momento, server specifici potrebbero essere in stato di riavvio o in fase di failover su copie ridondanti. In uno di questi casi, si riceverà il timeout della richiesta di recupero dei dati da parte della ricerca di contenuto. Nell'esempio precedente, gli errori per le cassette postali non riuscite sono il risultato del timeout della ricerca.
 
-## <a name="resolving-content-location-errors"></a>Risoluzione degli errori relativi alla posizione del contenuto
+## <a name="resolving-content-location-errors"></a>Risoluzione degli errori relativi al percorso del contenuto
 
-Il riavvio della ricerca spesso comporterà errori simili su server diversi. Invece di riavviare la ricerca, fare clic sul pulsante **Riprova** visualizzato nella parte superiore della pagina dei risultati di ricerca.
+Il riavvio della ricerca spesso genererà errori simili in server diversi. Anziché riavviare la ricerca,  fare clic sul pulsante Riprova visualizzato nella parte superiore della pagina dei risultati della ricerca.
 
-![Fare clic sul pulsante Riprova per risolvere gli errori relativi alla posizione del contenuto](../media/retrycontentsearch3.png)
+![Fare clic sul pulsante Riprova per risolvere gli errori relativi al percorso del contenuto](../media/retrycontentsearch3.png)
 
-In questo modo, la ricerca verrà ritentata solo per le cassette postali che hanno avuto esito negativo. Quando si ritenta la ricerca, vengono mantenuti gli altri risultati restituiti correttamente.
+In questo modo verrà eseguito un nuovo tentativo di ricerca solo per le cassette postali non riuscite. Quando si ritenta la ricerca, gli altri risultati restituiti vengono mantenuti.
 
-## <a name="tips-to-avoid-content-location-errors"></a>Suggerimenti per evitare errori di posizione del contenuto
+## <a name="tips-to-avoid-content-location-errors"></a>Suggerimenti per evitare errori relativi al percorso del contenuto
 
-Di seguito sono riportate alcune altre cause degli errori relativi alla posizione del contenuto e alcuni suggerimenti utili per evitarli durante la ricerca di un numero elevato di cassette postali.
+Ecco alcune cause aggiuntive degli errori del percorso del contenuto e alcuni suggerimenti per evitarli durante la ricerca di un numero elevato di cassette postali.
 
-- La cassetta postale che si sta cercando potrebbe essere occupata a causa dell'attività dell'utente. In questo caso, il servizio di ricerca potrebbe limitarsi a impedire che la cassetta postale diventi non disponibile. Per evitare questo, provare a eseguire le ricerche durante gli orari non di ufficio.
+- La cassetta postale da cercare potrebbe essere occupata a causa dell'attività dell'utente. In questo caso, il servizio di ricerca potrebbe essere limitato per evitare che la cassetta postale diventi non disponibile. Per evitare questo problema, provare a eseguire ricerche durante l'orario non di ufficio.
 
 - La query di ricerca potrebbe recuperare troppo contenuto dalla cassetta postale. Se possibile, provare a restringere l'ambito della ricerca utilizzando parole chiave, intervalli di date e condizioni di ricerca.
 
-- Se si crea una query di ricerca utilizzando l' [elenco delle parole](view-keyword-statistics-for-content-search.md#get-keyword-statistics-for-content-searches)chiave, vengono create troppe parole chiavi o frasi. Quando si esegue una query di ricerca che utilizza l'elenco di parole chiave, il servizio esegue essenzialmente una ricerca distinta per ogni riga dell'elenco di parole chiave in modo che le statistiche possano essere generate. Se si utilizza l'elenco delle parole chiave nelle query di ricerca, ridurre al minimo il numero di righe nell'elenco parole chiave o dividere il numero in elenchi di dimensioni ridotte e creare una ricerca diversa per ogni elenco di parola chiave.
+- Troppe parole chiave o frasi di parole chiave quando si crea una query di ricerca utilizzando [l'elenco delle parole chiave.](view-keyword-statistics-for-content-search.md#get-keyword-statistics-for-content-searches) Quando si esegue una query di ricerca che utilizza l'elenco di parole chiave, il servizio esegue essenzialmente una ricerca separata per ogni riga dell'elenco di parole chiave in modo che sia possibile generare statistiche. Se si utilizza l'elenco di parole chiave nelle query di ricerca, ridurre al minimo il numero di righe nell'elenco di parole chiave o dividere le parole chiave del numero in elenchi più piccoli e creare una ricerca diversa per ogni elenco di parole chiave.
 
   > [!NOTE]
-  > Per contribuire a ridurre i problemi causati da elenchi di parole chiave di grandi dimensioni, si è limitato a un massimo di 20 righe nell'elenco delle parole chiave di una query di ricerca.
+  > Per ridurre i problemi causati da elenchi di parole chiave di grandi dimensioni, ora si è limitati a un massimo di 20 righe nell'elenco di parole chiave di una query di ricerca.
 
-- Sono state eseguite troppe ricerche contemporaneamente sulla stessa cassetta postale. Se possibile, provare a eseguire una ricerca alla volta su una cassetta postale.
+- Troppe ricerche vengono eseguite contemporaneamente sulla stessa cassetta postale. Se possibile, provare a eseguire una ricerca alla volta su una qualsiasi cassetta postale.
 
-- Ricerca di un numero eccessivo di cassette postali in una singola ricerca. Quando si esegue la ricerca di un numero elevato di cassette postali, aumenta la probabilità che si verifichino errori. Se possibile, provare a eseguire più ricerche in modo che ogni ricerca includa un sottoinsieme di cassette postali nell'organizzazione.
+- Ricerca di troppe cassette postali in una singola ricerca. La probabilità di errori del percorso del contenuto aumenta quando si esegue una ricerca in un numero elevato di cassette postali. Se possibile, provare a eseguire più ricerche in modo che ogni ricerca includa un sottoinsieme di cassette postali nell'organizzazione.
 
-- La manutenzione necessaria viene eseguita sulla cassetta postale. Anche se questa causa si verifica raramente, attendere un po' di tempo dopo aver ricevuto l'errore relativo alla posizione del contenuto e quindi riprovare la ricerca.
+- È in corso la manutenzione necessaria per la cassetta postale. Anche se questa causa probabilmente si verifica raramente, attendere un po' dopo aver ricevuto l'errore del percorso del contenuto e quindi ritentare la ricerca.

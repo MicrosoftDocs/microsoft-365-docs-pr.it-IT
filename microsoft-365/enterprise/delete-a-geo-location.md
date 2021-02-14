@@ -12,7 +12,7 @@ f1.keywords:
 ms.custom: seo-marvel-mar2020
 ms.collection: Strat_SP_gtc
 localization_priority: Normal
-description: Informazioni su come eliminare una posizione satellite in Microsoft 365 Multi-Geo. Quando viene eliminata una posizione satellite, vengono eliminati definitivamente anche tutti i dati degli utenti.
+description: Informazioni su come eliminare una posizione satellite in Microsoft 365 Multi-Geo. Quando una posizione satellite viene eliminata, anche tutti i dati utente vengono eliminati definitivamente.
 ms.openlocfilehash: 7a58ed91a0bb801fc41ed0a89889ede5e65b4a21
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT

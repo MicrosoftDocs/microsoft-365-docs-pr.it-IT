@@ -1,5 +1,5 @@
 ---
-title: Misure di Office 365 per suggerimenti sulle prestazioni di rete
+title: Consigli sulle misurazioni di Office 365 per le prestazioni di rete
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
@@ -13,7 +13,7 @@ search.appverid:
 ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
-description: Misure di Office 365 per suggerimenti sulle prestazioni di rete
+description: Consigli sulle misurazioni di Office 365 per le prestazioni di rete
 ms.openlocfilehash: 4fbd845688e2c09117b600ef8ae6c1473887499f
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -21,4 +21,4 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/14/2020
 ms.locfileid: "46696054"
 ---
-# <a name="office-365-measurements-for-network-performance-recommendations"></a>Misure di Office 365 per suggerimenti sulle prestazioni di rete
+# <a name="office-365-measurements-for-network-performance-recommendations"></a>Consigli sulle misurazioni di Office 365 per le prestazioni di rete

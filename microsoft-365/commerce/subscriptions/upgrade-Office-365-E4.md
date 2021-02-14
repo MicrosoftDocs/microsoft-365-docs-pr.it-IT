@@ -29,115 +29,115 @@ ms.locfileid: "47308006"
 ---
 # <a name="upgrade-from-an-office-365-e4-subscription"></a>Eseguire l'aggiornamento da un abbonamento a Office 365 E4
 
-In questo articolo vengono illustrati i passaggi del processo di aggiornamento da un Office 365 E4 a un nuovo abbonamento. Per informazioni sulle opzioni disponibili quando si effettua l'aggiornamento da Office 365 E4, vedere [informazioni importanti per i clienti di office 365 E4](important-information-e4.md).
+Questo articolo illustra il processo di aggiornamento da Office 365 E4 a un nuovo abbonamento. Per informazioni sulle opzioni disponibili quando si esegue l'aggiornamento da Office 365 E4, vedere Informazioni importanti per i clienti [di Office 365 E4.](important-information-e4.md)
 
 > [!IMPORTANT]
-> Questo articolo si applica agli abbonamenti di Office 365 E4 che sono stati acquistati direttamente da Microsoft tramite carta di credito o solo fattura. Se l'abbonamento è stato acquistato in un altro modo, ad esempio tramite un partner o tramite il centro servizi per contratti multilicenza, contattare il rappresentante o il partner dell'account Microsoft per agevolare l'aggiornamento dei piani.
+> Questo articolo si applica solo agli abbonamenti a Office 365 E4 acquistati direttamente da Microsoft tramite carta di credito o fattura. Se l'abbonamento è stato acquistato in un altro modo, ad esempio tramite un partner o tramite il Centro servizi per contratti multilicenza, contattare il rappresentante dell'account Microsoft o il partner per assistenza nell'aggiornamento dei piani.
 
-## <a name="what-are-my-options-for-how-to-upgrade"></a>Quali sono le opzioni per l'aggiornamento?
+## <a name="what-are-my-options-for-how-to-upgrade"></a>Quali sono le opzioni disponibili per l'aggiornamento?
 
-Il modo più semplice per eseguire l'aggiornamento del piano consiste nell'utilizzare la scheda **aggiornamento** nell'interfaccia di amministrazione di Microsoft 365. Tuttavia, l'utilizzo della scheda **aggiornamento** non è supportato in tutte le situazioni. Se lo scenario non è supportato, potrebbe essere possibile eseguire l'aggiornamento manuale dei piani.
+Il modo più semplice per aggiornare il piano è usare la **scheda Aggiornamento** nell'interfaccia di amministrazione di Microsoft 365. Tuttavia, **l'utilizzo della** scheda Aggiornamento non è supportato in tutte le situazioni. Se lo scenario non è supportato, potrebbe essere possibile aggiornare i piani manualmente.
 
-## <a name="what-is-the-upgrade-tab"></a>Che cos'è la scheda aggiornamento?
+## <a name="what-is-the-upgrade-tab"></a>Che cos'è la scheda Aggiornamento?
 
-Nella scheda **aggiornamento** vengono eseguite le attività seguenti:
+La **scheda Upgrade** esegue le attività seguenti:
 
 - Vengono illustrati i passaggi del processo di acquisto di un nuovo piano.
 - Tutte le licenze utente del vecchio piano vengono assegnate a quelle nuove.
 - Il vecchio piano viene annullato.
 
-## <a name="what-does-it-mean-to-upgrade-plans-manually"></a>Cosa significa aggiornare manualmente i piani?
+## <a name="what-does-it-mean-to-upgrade-plans-manually"></a>Cosa significa aggiornare i piani manualmente?
 
-L'aggiornamento dei piani comporta manualmente il completamento delle procedure separate, invece di usare la scheda **upgrade** .
+L'aggiornamento manuale dei piani implica il completamento delle procedure separate seguenti anziché utilizzare la **scheda** Aggiornamento.
 
-- Acquistare un nuovo abbonamento con il numero appropriato di licenze.
+- Acquistare un nuovo abbonamento con il numero di licenze giusto.
 - Verificare che il nuovo abbonamento sia pronto per l'uso.
 - Riassegnare le licenze agli utenti.
-- Annullare l'abbonamento a Office 365 E4 originale.
+- Annullare l'abbonamento originale a Office 365 E4.
 
-## <a name="find-out-if-you-can-use-the-upgrade-tab-to-upgrade-to-a-new-plan"></a>Scoprire se è possibile utilizzare la scheda aggiornamento per eseguire l'aggiornamento a un nuovo piano
+## <a name="find-out-if-you-can-use-the-upgrade-tab-to-upgrade-to-a-new-plan"></a>Verificare se è possibile utilizzare la scheda Aggiorna per eseguire l'aggiornamento a un nuovo piano
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione**dei  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
+1. Nell'interfaccia di amministrazione, passare alla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
 2. Selezionare l'abbonamento a Office 365 E4.
-3. Selezionare la scheda **aggiornamento** . Se vengono visualizzati altri piani, significa che è possibile aggiornare i piani automaticamente.
-4. Se non è possibile eseguire l'aggiornamento automatico, viene visualizzato un messaggio in cui viene descritto il motivo per cui non è possibile eseguire l'aggiornamento.
+3. Selezionare la **scheda** Aggiornamento. Se sono elencati altri piani, significa che è possibile aggiornare automaticamente i piani.
+4. Se non è possibile eseguire l'aggiornamento automatico, viene visualizzato un messaggio che descrive il motivo per cui non è possibile eseguire l'aggiornamento.
 
-Sono diversi i motivi per cui non è possibile aggiornare automaticamente i piani. La maggior parte dei problemi sono quelli temporanei, ad esempio problemi di integrità dei servizi che è possibile risolvere. Per ulteriori informazioni, vedere [perché non è possibile aggiornare I piani?](upgrade-to-different-plan.md#why-cant-i-upgrade-plans) Se si ha bisogno di assistenza per l'aggiornamento, [contattare il supporto](../../admin/contact-support-for-business-products.md).
+Esistono diversi motivi per cui non è possibile aggiornare automaticamente i piani. La maggior parte dei problemi è temporanea, ad esempio i problemi di integrità dei servizi che è possibile risolvere. Per ulteriori informazioni, vedere [Why can't I upgrade plans?](upgrade-to-different-plan.md#why-cant-i-upgrade-plans) Per assistenza con l'aggiornamento, [contattare il supporto tecnico.](../../admin/contact-support-for-business-products.md)
 
 ## <a name="will-a-credit-check-be-required"></a>Sarà necessaria una verifica del credito?
 
-Se il pagamento del nuovo piano viene effettuato tramite fattura oppure se l'acquisto supera un determinato costo, può essere necessaria una verifica del credito. Se è necessaria una verifica del credito, l'aggiornamento può richiedere fino a due giorni lavorativi. Gli amministratori non hanno accesso all'interfaccia di amministrazione di Microsoft 365 finché non è stata completata la verifica del credito. Tuttavia, gli utenti hanno ancora accesso completo al piano E4 fino al termine dell'aggiornamento.
+Se il pagamento del nuovo piano viene effettuato tramite fattura oppure se l'acquisto supera un determinato costo, può essere necessaria una verifica del credito. Se è necessaria una verifica del credito, l'aggiornamento può richiedere fino a due giorni lavorativi. Gli amministratori non hanno accesso all'interfaccia di amministrazione di Microsoft 365 fino al completamento della verifica del credito. Tuttavia, gli utenti hanno ancora accesso completo al piano E4 fino al termine dell'aggiornamento.
 
-## <a name="upgrade-your-plan-by-using-the-upgrade-tab"></a>Aggiornare il piano utilizzando la scheda aggiornamento
+## <a name="upgrade-your-plan-by-using-the-upgrade-tab"></a>Aggiornare il piano utilizzando la scheda Aggiornamento
 
-### <a name="before-you-begin"></a>Prima di iniziare
+### <a name="before-you-begin"></a>Informazioni preliminari
 
 Ecco alcuni fattori importanti da considerare prima di iniziare.
 
-- **Pianificare il tempo di inattività amministrativo.** Gli amministratori non possono utilizzare l'interfaccia di amministrazione di Microsoft 365 mentre il piano è in fase di aggiornamento. A seconda del numero di utenti di cui si dispone, l'aggiornamento può richiedere da minuti a ore. È consigliabile pianificare l'aggiornamento quando non è necessario effettuare gli aggiornamenti utilizzando l'interfaccia di amministrazione di Microsoft 365.
+- **Pianificare il tempo di inattività amministrativo.** Gli amministratori non possono usare l'interfaccia di amministrazione di Microsoft 365 durante l'aggiornamento del piano. A seconda del numero di utenti disponibili, l'aggiornamento può richiedere da minuti a ore. È consigliabile pianificare l'aggiornamento quando non è necessario apportare aggiornamenti tramite l'interfaccia di amministrazione di Microsoft 365.
 
-    Gli utenti non subiscono interruzioni del servizio durante l'aggiornamento del piano-continuano ad avere accesso completo all'abbonamento E4 durante il processo di aggiornamento. Al termine dell'aggiornamento, gli utenti possono accedere al nuovo piano.
-- **Utenti, licenze, fatturazione e domini personalizzati.** Per comprendere il modo in cui gli utenti e le licenze vengono gestiti durante l'aggiornamento, come i piani di aggiornamento influiscono sulla fatturazione e come gestire i domini personalizzati, vedere [che cosa significa aggiornare un piano per il servizio e la fatturazione?](upgrade-to-different-plan.md#what-does-upgrading-a-plan-do-to-my-service-and-billing)
-- **Modificare il numero di licenze utente.** Non è possibile rimuovere le licenze come parte dei piani di aggiornamento. Tuttavia, è possibile [ridurre il numero di licenze](../licenses/buy-licenses.md) prima o dopo l'aggiornamento dei piani.
+    Gli utenti non verificano interruzioni del servizio durante l'aggiornamento del piano, ma continuano ad avere accesso completo alla sottoscrizione E4 durante il processo di aggiornamento. Al termine dell'aggiornamento, gli utenti hanno accesso al nuovo piano.
+- **Utenti, licenze, fatturazione e domini personalizzati.** Per comprendere come vengono gestiti gli utenti e le licenze durante l'aggiornamento, in che modo l'aggiornamento dei piani influisce sulla fatturazione e su come gestire i domini personalizzati, vedere Cosa fa l'aggiornamento di un piano al servizio e alla [fatturazione?](upgrade-to-different-plan.md#what-does-upgrading-a-plan-do-to-my-service-and-billing)
+- **Modificare il numero di licenze utente.** Non è possibile rimuovere licenze durante l'aggiornamento dei piani. Tuttavia, è possibile [ridurre il numero di licenze prima o](../licenses/buy-licenses.md) dopo l'aggiornamento dei piani.
 
-### <a name="start-the-upgrade-by-using-the-upgrade-tab"></a>Avviare l'aggiornamento utilizzando la scheda aggiornamento
+### <a name="start-the-upgrade-by-using-the-upgrade-tab"></a>Avviare l'aggiornamento utilizzando la scheda Aggiornamento
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione**dei  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
+1. Nell'interfaccia di amministrazione, passare alla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
 2. Selezionare l'abbonamento a Office 365 E4.
-3. Nella pagina Dettagli sottoscrizione selezionare la scheda **aggiornamento** .
-4. Individuare l'abbonamento che si desidera acquistare, quindi selezionare **Aggiorna**.
-5. Nella pagina **carrello** , verificare che tutto sia corretto. Selezionare se pagare mensilmente o annualmente e verificare il numero di licenze in **quantità**.
+3. Nella pagina dei dettagli della sottoscrizione selezionare la **scheda** Aggiornamento.
+4. Trovare l'abbonamento che si desidera acquistare, quindi selezionare **Aggiorna.**
+5. Nella pagina **Carrello** verificare che tutto sia corretto. Seleziona se pagare mensilmente o annuale e verifica il numero di licenze in **Quantità.**
     > [!NOTE]
-    > Sono inoltre elencati tutti gli abbonamenti a componenti aggiuntivi associati all'abbonamento a Office 365 E4, ad esempio Office 365 extra file storage. Tuttavia, se sono presenti abbonamenti a componenti aggiuntivi inclusi nell'abbonamento a cui si esegue l'aggiornamento, verranno rimossi.
-6. Dopo aver esaminato l'ordine, seleziona **Vai a checkout**.
-7. Nella pagina **checkout** , esaminare gli elementi **venduti a**, **fatturati**e **in questo ordine**. Selezionare **Cambia** accanto a uno di questi elementi per modificare le informazioni.
+    > Sono elencati anche eventuali abbonamenti a componenti aggiuntivi associati all'abbonamento a Office 365 E4, ad esempio Archiviazione file extra di Office 365. Tuttavia, se sono presenti sottoscrizioni di componenti aggiuntivi incluse nell'abbonamento a cui si esegue l'aggiornamento, verranno rimosso.
+6. Dopo aver esaminato l'ordine, seleziona **Vai alla cassa.**
+7. Nella pagina **Estrazione** rivedere **Venduto a,** **Fatturato a** e **Elementi nell'ordine indicato.** Selezionare **Modifica** accanto a uno di questi elementi per modificare le informazioni.
     > [!NOTE]
-    > L'opzione per utilizzare la fattura come metodo di pagamento è disponibile solo per gli ordini superiori a un determinato importo di costo. Se si seleziona l'opzione di pagamento della fattura, è possibile posticipare il processo di aggiornamento di fino a due giorni lavorativi Se è necessaria una verifica del credito.
-8. Al termine, selezionare **Ordina ordine**.
+    > L'opzione per utilizzare la fattura come metodo di pagamento è disponibile solo per gli ordini superiori a un determinato importo di costo. La selezione dell'opzione di pagamento tramite fattura può ritardare il processo di aggiornamento di un massimo di due giorni lavorativi se è necessaria una verifica del credito.
+8. Al termine, selezionare Ordine **di esecuzione.**
 
 > [!NOTE]
-> L'aggiornamento dei piani richiede in genere meno di dieci minuti se non sono presenti errori o problemi. È possibile controllare lo stato dell'aggiornamento esaminando la sottoscrizione precedente o nuova.
+> L'aggiornamento dei piani in genere richiede meno di dieci minuti se non si verificano errori o problemi. È possibile controllare lo stato dell'aggiornamento esaminando l'abbonamento precedente o nuovo.
 
 ## <a name="upgrade-your-plan-manually"></a>Aggiornare manualmente il piano
 
 Per aggiornare manualmente gli utenti a un altro abbonamento, completare i passaggi seguenti nell'ordine indicato.
 
 - [Passaggio 1: acquistare un nuovo abbonamento](#step-1-buy-a-new-subscription)
-- [Passaggio 2: verificare che la sottoscrizione disponga del numero corretto di licenze](#step-2-verify-that-your-subscription-has-the-right-number-of-licenses)
-- [Passaggio 3: riassegnare le licenze agli utenti](#step-3-reassign-licenses-to-users)
-- [Passaggio 4: annullare l'abbonamento a Office 365 E4](#step-4-cancel-the-office-365-e4-subscription)
+- [Passaggio 2: verificare che l'abbonamento abbia il numero di licenze giusto](#step-2-verify-that-your-subscription-has-the-right-number-of-licenses)
+- [Passaggio 3: Riassegnare le licenze agli utenti](#step-3-reassign-licenses-to-users)
+- [Passaggio 4: Annullare l'abbonamento a Office 365 E4](#step-4-cancel-the-office-365-e4-subscription)
 
 ### <a name="step-1-buy-a-new-subscription"></a>Passaggio 1: acquistare un nuovo abbonamento
 
-Se non si dispone ancora di un nuovo abbonamento, è possibile [acquistare un altro abbonamento a Microsoft 365 for business](../buy-another-subscription.md).
+Se non si ha ancora un nuovo abbonamento, è possibile acquistare un altro abbonamento a [Microsoft 365 per le aziende.](../buy-another-subscription.md)
 
-Se si dispone già di un abbonamento, continuare con il passaggio successivo.
+Se si dispone già di un abbonamento, andare al passaggio successivo.
 
-### <a name="step-2-verify-that-your-subscription-has-the-right-number-of-licenses"></a>Passaggio 2: verificare che la sottoscrizione disponga del numero corretto di licenze
+### <a name="step-2-verify-that-your-subscription-has-the-right-number-of-licenses"></a>Passaggio 2: verificare che l'abbonamento abbia il numero di licenze giusto
 
-Prima di passare al passaggio successivo, è importante assicurarsi che tutti i servizi all'interno del nuovo abbonamento siano stati configurati. Se l'abbonamento non è pronto al primo controllo, riprovare in un secondo momento.
+Prima di passare al passaggio successivo, è importante verificare che tutti i servizi all'interno del nuovo abbonamento siano stati impostati. Se l'abbonamento non è pronto al primo controllo, riprovare più tardi.
 
 > [!NOTE]
-> Se si è scelto di pagare il nuovo abbonamento tramite fattura, potrebbe essere necessaria una verifica del credito. È possibile richiedere fino a due giorni lavorativi prima che l'abbonamento sia disponibile.
+> Se si è scelto di pagare la nuova sottoscrizione tramite fattura, potrebbe essere necessaria una verifica del credito. La disponibilità dell'abbonamento può richiedere fino a due giorni lavorativi.
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **fatturazione**dei  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
-2. Nell'elenco a discesa **stato sottoscrizione** selezionare **attivo**.
-3. Verificare che il nuovo abbonamento sia visualizzato e che il numero di licenze corrisponda a quello dell'utente di Office 365 E4.
-4. Se è necessario acquistare altre licenze, seguire la procedura illustrata in [acquistare o rimuovere le licenze di sottoscrizione](../licenses/buy-licenses.md).
+1. Nell'interfaccia di amministrazione, passare alla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
+2. **Nell'elenco a** discesa Stato sottoscrizione selezionare **Attivo.**
+3. Assicurarsi che il nuovo abbonamento sia visualizzato e che il numero di licenze sia uguale a quello disponibile per Office 365 E4.
+4. Se è necessario acquistare altre licenze, seguire i passaggi descritti in [Acquistare o rimuovere licenze di sottoscrizione.](../licenses/buy-licenses.md)
 
-### <a name="step-3-reassign-licenses-to-users"></a>Passaggio 3: riassegnare le licenze agli utenti
+### <a name="step-3-reassign-licenses-to-users"></a>Passaggio 3: Riassegnare le licenze agli utenti
 
-È possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 per riassegnare le licenze per un massimo di 20 utenti alla volta. Per informazioni, vedere [spostare gli utenti in una sottoscrizione diversa](move-users-different-subscription.md).
+È possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 per riassegnare le licenze per un massimo di 20 utenti alla volta. Per informazioni, vedere [Spostare gli utenti in un abbonamento diverso.](move-users-different-subscription.md)
 
 > [!TIP]
-> Se si dispone di numerosi utenti, è possibile [utilizzare Office 365 PowerShell per assegnare le licenze utente in blocco](https://docs.microsoft.com/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell).
+> Se sono presenti molti utenti, è possibile usare PowerShell di [Office 365 per assegnare licenze utente in blocco.](https://docs.microsoft.com/microsoft-365/enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell)
 
-### <a name="step-4-cancel-the-office-365-e4-subscription"></a>Passaggio 4: annullare l'abbonamento a Office 365 E4
+### <a name="step-4-cancel-the-office-365-e4-subscription"></a>Passaggio 4: Annullare l'abbonamento a Office 365 E4
 
-Dopo che tutti gli utenti sono stati riassegnati al nuovo abbonamento, [annullare l'abbonamento a Office 365 E4](cancel-your-subscription.md).
+Dopo che tutti gli utenti sono stati riassegnati al nuovo abbonamento, annullare l'abbonamento a [Office 365 E4.](cancel-your-subscription.md)
 
-## <a name="related-content"></a>Contenuto correlato
+## <a name="related-content"></a>Contenuti correlati
 
-[Eseguire l'aggiornamento a un piano diverso](upgrade-to-different-plan.md) (articolo) \
-[Acquistare o rimuovere licenze di sottoscrizione](../licenses/buy-licenses.md) (articolo) \
+[Eseguire l'aggiornamento a un piano diverso](upgrade-to-different-plan.md) (articolo)\
+[Acquistare o rimuovere licenze di sottoscrizione](../licenses/buy-licenses.md) (articolo)\
 [Assegnare licenze agli utenti](../../admin/manage/assign-licenses-to-users.md) (articolo)

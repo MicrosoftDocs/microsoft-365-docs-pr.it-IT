@@ -1,5 +1,5 @@
 ---
-title: Fase 3 dell'autenticazione federata a disponibilità elevata configurare i server AD FS
+title: Fase 3 dell'autenticazione federata a disponibilità elevata Configurare i server AD FS
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -25,9 +25,9 @@ ms.locfileid: "46691568"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>Fase 3 dell'autenticazione federata a disponibilità elevata: configurare i server AD FS
 
-In questa fase di distribuzione della disponibilità elevata per l'autenticazione federata di Microsoft 365 nei servizi di infrastruttura di Azure, è possibile creare un servizio di bilanciamento del carico interno e due server AD FS.
+In questa fase di distribuzione della disponibilità elevata per l'autenticazione federata di Microsoft 365 nei servizi dell'infrastruttura di Azure, viene creato un servizio di bilanciamento del carico interno e due server AD FS.
   
-È necessario completare questa fase prima di passare alla [fase 4: Configure Web Application Proxys](high-availability-federated-authentication-phase-4-configure-web-application-pro.md). Vedere [deploy High Availability Federated Authentication for Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) per tutte le fasi.
+È necessario completare questa fase prima di passare alla [fase 4: configurare i proxy dell'applicazione Web.](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) Vedere [Distribuire l'autenticazione federata a disponibilità elevata per Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) per tutte le fasi.
   
 ## <a name="create-the-ad-fs-server-virtual-machines-in-azure"></a>Creare le macchine virtuali dei server AD FS in Azure
 
@@ -45,15 +45,15 @@ Utilizzare il seguente blocco di comandi di PowerShell per creare le macchine vi
     
 - Tabella A, per i set di disponibilità
     
-Ricordare che è stata definita la tabella M nella [fase 2: configurare i controller di dominio](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) e le tabelle R, V, S, i e a nella [fase 1: Configure Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
+Tenere presente che la tabella M è stata definita nella fase [2:](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) Configurare i controller di dominio e le tabelle R, V, S, I e A nella fase [1: configurare Azure.](high-availability-federated-authentication-phase-1-configure-azure.md)
   
 > [!NOTE]
-> [!NOTA] I seguenti comandi consentono di utilizzare la versione più recente di Azure PowerShell. Vedere [Introduzione a PowerShell di Azure](https://docs.microsoft.com/powershell/azure/get-started-azureps). 
+> [!NOTA] I seguenti comandi consentono di utilizzare la versione più recente di Azure PowerShell. Vedere [Introduzione ad Azure PowerShell.](https://docs.microsoft.com/powershell/azure/get-started-azureps) 
   
-Per prima cosa, creare un bilanciamento del carico interno di Azure per i due server AD FS. Specificare i valori per le variabili, eliminando i \< and > caratteri. Una volta forniti tutti i valori opportuni, eseguire il blocco risultante nel prompt dei comandi di Azure PowerShell o in PowerShell ISE.
+Per prima cosa, creare un bilanciamento del carico interno di Azure per i due server AD FS. Specificare i valori per le variabili, rimuovendo i \< and > caratteri. Una volta forniti tutti i valori opportuni, eseguire il blocco risultante nel prompt dei comandi di Azure PowerShell o in PowerShell ISE.
   
 > [!TIP]
-> Per generare blocchi di comandi di PowerShell pronti per l'esecuzione in base alle impostazioni personalizzate, utilizzare questa [cartella di lavoro di configurazione di Microsoft Excel](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx). 
+> Per generare blocchi di comandi di PowerShell pronti all'esecuzione in base alle impostazioni personalizzate, utilizzare questa cartella di lavoro di configurazione [di Microsoft Excel.](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx) 
 
 ```powershell
 # Set up key variables
@@ -135,7 +135,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 Per ogni macchina virtuale, usare il client desktop remoto di propria scelta e creare una connessione desktop remoto. Usare il nome DNS Intranet o il nome computer e le credenziali dell'account di amministratore locale.
   
-Per ogni macchina virtuale, aggiungerli al dominio di servizi di dominio Active Directory (AD DS) appropriato con questi comandi nel prompt di Windows PowerShell.
+Per ogni macchina virtuale, unirli al dominio di Active Directory Domain Services (AD DS) appropriato con questi comandi al prompt dei Windows PowerShell.
   
 ```powershell
 $domName="<AD DS domain name to join, such as corp.contoso.com>"
@@ -148,11 +148,11 @@ Di seguito è riportata la configurazione risultante dal completamento corretto 
   
 **Fase 3: i server AD FS e il bilanciamento del carico interno per l'infrastruttura dell'autenticazione federata a disponibilità elevata in Azure**
 
-![Fase 3 dell'infrastruttura di autenticazione federata Microsoft 365 a disponibilità elevata in Azure con i server AD FS](../media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
+![Fase 3 dell'infrastruttura di autenticazione federata di Microsoft 365 a disponibilità elevata in Azure con i server AD FS](../media/f39b2d2f-8a5b-44da-b763-e1f943fcdbc4.png)
   
 ## <a name="next-step"></a>Passaggio successivo
 
-Utilizzare la [fase 4: configurare i proxy dell'applicazione Web](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) per continuare a configurare il carico di lavoro.
+Utilizzare [la fase 4: configurare i proxy delle applicazioni Web](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) per continuare a configurare questo carico di lavoro.
   
 ## <a name="see-also"></a>Vedere anche
 

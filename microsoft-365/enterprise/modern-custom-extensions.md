@@ -37,15 +37,15 @@ Lo strumento Diagnostica pagine per SharePoint è un'estensione del browser per 
 >[!NOTE]
 >Lo strumento Diagnostica pagine funziona solo per SharePoint Online e non può essere usato in una pagina di sistema di SharePoint.
 
-Quando si analizza una pagina del sito di SharePoint con lo strumento page Diagnostics for SharePoint, è possibile visualizzare le informazioni sulle estensioni personalizzate che superano la metrica di base nelle **estensioni che influiscono sul tempo di caricamento** e/o sulle **troppe estensioni utilizzate** per il riquadro _test diagnostici_ . 
+Quando si analizza una pagina del sito di SharePoint con lo strumento Diagnostica pagine per SharePoint, è possibile visualizzare informazioni  sulle estensioni personalizzate  che superano la metrica di base nelle estensioni che influiscono sui tempi di caricamento e/o sul numero di estensioni utilizzate nel riquadro Test di diagnostica  
 
 I risultati possibili includono:
 
-- **Attenzione** (rosso): in questa sezione sono elencate tutte le estensioni _personalizzate_ il cui caricamento richiede più di **un** secondo. Il tempo di caricamento totale visualizzato nei risultati del test è suddiviso per caricamento del modulo e inizializzazione. Inoltre, se sono presenti troppe estensioni in una pagina, è possibile che influenzino il tempo di caricamento della pagina e questo venga evidenziato se nella pagina vengono utilizzate **sette** o più estensioni.
-- **Opportunità di miglioramento** (giallo) se vengono utilizzate **cinque** o più estensioni, queste verranno evidenziate in questa sezione come avviso finché non vengono utilizzati sette o più che verranno evidenziate come richieste.
+- **Attenzione** (rosso): in questa sezione sono elencate tutte le estensioni _personalizzate_ il cui caricamento richiede più di **un** secondo. Il tempo di caricamento totale visualizzato nei risultati del test è suddiviso per caricamento del modulo e inizializzazione. Inoltre, se in una pagina sono presenti troppe estensioni, possono influire sul  tempo di caricamento della pagina e questo verrà evidenziato se nella pagina vengono utilizzate sette o più estensioni.
+- **Opportunità di miglioramento**  (giallo) Se vengono utilizzate cinque o più estensioni, verranno evidenziate in questa sezione come avviso fino a quando non vengono utilizzate sette o più estensioni, che verranno quindi evidenziate come attenzione necessaria.
 - **Nessuna azione necessaria** (verde): nessuna estensione richiede più di un secondo per il caricamento.
 
-Se un'estensione ha un impatto sul tempo di caricamento delle pagine o se sono presenti troppi extsnions nella pagina, il risultato viene visualizzato nella sezione **attenzione necessaria** dei risultati. Fare clic sul risultato per visualizzare i dettagli sull'estensione che viene caricata lentamente o che sono state evidenziate troppe estensioni. Gli aggiornamenti futuri dello strumento Diagnostica pagine per SharePoint potrebbero includere novità relative alle regole di analisi, di conseguenza assicurarsi di usare sempre la versione più recente dello strumento.
+Se un'estensione influisce sul tempo di caricamento della pagina o se nella  pagina sono presenti troppe estensioni, il risultato verrà visualizzato nella sezione Attenzione richiesta dei risultati. Fare clic sul risultato per visualizzare i dettagli sull'estensione che viene caricata lentamente o che sono state evidenziate troppe estensioni. Gli aggiornamenti futuri dello strumento Diagnostica pagine per SharePoint potrebbero includere novità relative alle regole di analisi, di conseguenza assicurarsi di usare sempre la versione più recente dello strumento.
 
 ![Risultati del tempo di caricamento delle pagine](../media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
 

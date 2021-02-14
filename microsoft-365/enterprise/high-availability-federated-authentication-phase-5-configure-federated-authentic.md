@@ -1,5 +1,5 @@
 ---
-title: Fase 5 dell'autenticazione federata a disponibilità elevata configurare l'autenticazione federata per Microsoft 365
+title: Fase 5 dell'autenticazione federata a disponibilità elevata Configurare l'autenticazione federata per Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -23,9 +23,9 @@ ms.locfileid: "46691336"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-microsoft-365"></a>Fase 5 dell'autenticazione federata a disponibilità elevata: configurare l'autenticazione federata per Microsoft 365
 
-In questa fase finale della distribuzione dell'autenticazione federata a disponibilità elevata per Microsoft 365 nei servizi di infrastruttura di Azure, si ottiene e si installa un certificato emesso da un'autorità di certificazione pubblica, si verifica la configurazione e quindi si installa ed esegue Azure AD Connect nel server di sincronizzazione della directory. Azure AD Connect configura la sottoscrizione Microsoft 365 e i server proxy di Active Directory Federation Services (AD FS) e dell'applicazione Web per l'autenticazione federata.
+In questa fase finale della distribuzione dell'autenticazione federata a disponibilità elevata per Microsoft 365 nei servizi infrastruttura di Azure, si ottiene e si installa un certificato emesso da un'autorità di certificazione pubblica, verificare la configurazione, quindi installare ed eseguire Azure AD Connect nel server di sincronizzazione della directory. Azure AD Connect configura l'abbonamento a Microsoft 365 e i server proxy dell'applicazione Web e Active Directory Federation Services (ADFS) per l'autenticazione federata.
   
-Vedere [deploy High Availability Federated Authentication for Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) per tutte le fasi.
+Vedere [Distribuire l'autenticazione federata a disponibilità elevata per Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) per tutte le fasi.
   
 ## <a name="get-a-public-certificate-and-copy-it-to-the-directory-synchronization-server"></a>Ottenere un certificato pubblico e copiarlo nel server di sincronizzazione della directory
 
@@ -41,15 +41,15 @@ Inoltre, i computer e i dispositivi dell'organizzazione devono considerare atten
   
 Per ulteriori informazioni sui requisiti dei certificati per l'autenticazione federata, vedere [Prerequisiti per l'installazione e la configurazione dei servizi federativi](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-prerequisites#prerequisites-for-federation-installation-and-configuration).
   
-Quando si riceve il certificato, copiarlo in una cartella nell'unità C: del server di sincronizzazione della directory. Ad esempio, denominare il file SSL. pfx e archiviarlo nella cartella C: \\ certs nel server di sincronizzazione della directory.
+Quando si riceve il certificato, copiarlo in una cartella nell'unità C: del server di sincronizzazione della directory. Ad esempio, assegnare al file il nome SSL.pfx e archiviarlo nella cartella C: \\ Certs nel server di sincronizzazione della directory.
   
 ## <a name="verify-your-configuration"></a>Verificare la configurazione
 
-Ora è necessario essere pronti a configurare Azure AD Connect e l'autenticazione federata per Microsoft 365. Di seguito viene riportato un elenco di controllo, per verificare la situazione:
+A questo punto dovrebbe essere possibile configurare Azure AD Connect e l'autenticazione federata per Microsoft 365. Di seguito viene riportato un elenco di controllo, per verificare la situazione:
   
 - Il dominio pubblico dell'organizzazione viene aggiunto all'abbonamento a Microsoft 365.
     
-- Gli account utente Microsoft 365 dell'organizzazione sono configurati per il nome di dominio pubblico dell'organizzazione e possono accedere correttamente.
+- Gli account utente di Microsoft 365 dell'organizzazione sono configurati per il nome di dominio pubblico dell'organizzazione e possono accedere correttamente.
     
 - È stato determinato un servizio federativo FQDN in base al nome di dominio pubblico.
     
@@ -57,7 +57,7 @@ Ora è necessario essere pronti a configurare Azure AD Connect e l'autenticazion
     
 - Un record A DNS privato per il servizio federativo FQDN sceglie l’indirizzo IP privato di bilanciamento del carico interno di Azure per i server AD FS.
     
-- Un'autorità di certificazione pubblica-emesso dall'certificato digitale idoneo per le connessioni SSL con il set di SAN al nome di dominio completo del servizio federativo è un file PFX archiviato nel server di sincronizzazione della directory.
+- Un certificato digitale esmittente da un'autorità di certificazione pubblica adatto per le connessioni SSL con san impostato sull'FQDN del servizio federativo è un file PFX archiviato nel server di sincronizzazione della directory.
     
 - Il certificato radice per l'Autorità di certificazione pubblica viene installato nell'archivio Autorità di certificazione radice attendibili su computer e dispositivi.
     
@@ -65,15 +65,15 @@ Di seguito viene riportato un esempio per l'organizzazione Contoso:
   
 **Una configurazione di esempio per l'autenticazione federata con disponibilità elevata in Azure**
 
-![Una configurazione di esempio dell'infrastruttura di autenticazione federata Microsoft 365 a disponibilità elevata in Azure](../media/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
+![Esempio di configurazione dell'infrastruttura di autenticazione federata di Microsoft 365 a disponibilità elevata in Azure](../media/ac1a6a0d-0156-4407-9336-6e4cd6db8633.png)
   
 ## <a name="run-azure-ad-connect-to-configure-federated-authentication"></a>Eseguire Azure AD Connect per configurare l'autenticazione federata
 
-Lo strumento Azure AD Connect configura i server AD FS, i server proxy dell'applicazione Web e Microsoft 365 per l'autenticazione federata con i passaggi seguenti:
+Lo strumento Azure AD Connect configura i server AD FS, i server proxy dell'applicazione Web e Microsoft 365 per l'autenticazione federata con questa procedura:
   
-1. Creare una connessione Desktop remoto al server di sincronizzazione della directory con un account di dominio con privilegi di amministratore locale.
+1. Creare una connessione desktop remoto al server di sincronizzazione della directory con un account di dominio con privilegi di amministratore locale.
     
-2. Dal desktop del server di sincronizzazione della directory, aprire Internet Explorer e andare a [https://aka.ms/aadconnect](https://aka.ms/aadconnect) .
+2. Dal desktop del server di sincronizzazione della directory, aprire Internet Explorer e passare a [https://aka.ms/aadconnect](https://aka.ms/aadconnect) .
     
 3. Nella pagina **Microsoft Azure Active Directory Connect**, fare clic su **Download**, quindi su **Esegui**.
     
@@ -85,9 +85,9 @@ Lo strumento Azure AD Connect configura i server AD FS, i server proxy dell'appl
     
 7. Nella pagina **Accesso utente**, fare clic su **Federazione tramite ADFS**, quindi fare clic su **Avanti**.
     
-8. Nella pagina **connessione ad Azure ad** , digitare il nome e la password di un account di amministratore globale per l'abbonamento a Microsoft 365, quindi fare clic su **Avanti**.
+8. Nella pagina **Connetti ad Azure AD** digitare il nome e la password di un account amministratore globale per l'abbonamento a Microsoft 365 e quindi fare clic su **Avanti.**
     
-9. Nella pagina **Connect your Directories** verificare che la foresta di servizi di dominio Active Directory (ad DS) locale sia selezionata nella **foresta**, digitare il nome e la password di un account amministratore di dominio, fare clic su **Aggiungi directory**e quindi fare clic su **Avanti**.
+9. Nella  pagina Connetti le directory verificare che la foresta di Servizi di dominio Active Directory locale sia selezionata **nella** foresta, digitare il nome e la password di un account amministratore di dominio, fare clic su Aggiungi **directory** e quindi su **Avanti.**
     
 10. Nella pagina **Configurazione dell'accesso ad Azure AD**, fare clic su **Avanti**.
     
@@ -135,9 +135,9 @@ Di seguito viene riportata la configurazione finale, con i nomi segnaposto per i
   
 **Fase 5: la configurazione finale dell'infrastruttura di autenticazione federata con disponibilità elevata in Azure**
 
-![La configurazione finale dell'infrastruttura di autenticazione federata Microsoft 365 a disponibilità elevata in Azure](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
+![La configurazione finale dell'infrastruttura di autenticazione federata di Microsoft 365 a disponibilità elevata in Azure](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
-L'infrastruttura di autenticazione federata a disponibilità elevata per Microsoft 365 in Azure è completa.
+L'infrastruttura di autenticazione federata a disponibilità elevata per Microsoft 365 in Azure è stata completata.
   
 ## <a name="see-also"></a>Vedere anche
 

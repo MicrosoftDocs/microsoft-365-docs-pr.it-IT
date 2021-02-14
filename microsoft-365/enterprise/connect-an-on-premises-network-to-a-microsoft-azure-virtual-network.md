@@ -31,7 +31,7 @@ ms.locfileid: "46696064"
 
 Una rete virtuale di Azure cross-premise è connessa alla rete locale, ampliando quest'ultima affinché includa subnet e macchine virtuali ospitate nei servizi dell'infrastruttura di Azure. Questa connessione consente ai computer su rete locale di accedere direttamente alle macchine virtuali in Azure e viceversa. 
 
-Ad esempio, un server di sincronizzazione della directory in esecuzione su una macchina virtuale di Azure deve eseguire una query sui controller di dominio locali per modificare gli account e sincronizzare tali modifiche con la sottoscrizione Microsoft 365. In questo articolo viene illustrato come configurare una rete virtuale di Azure cross-premise tramite una connessione VPN (Virtual Private Network) da sito a sito che è pronta per ospitare macchine virtuali di Azure.
+Ad esempio, un server di sincronizzazione della directory in esecuzione in una macchina virtuale Azure deve eseguire query sui controller di dominio locali per le modifiche agli account e sincronizzare tali modifiche con l'abbonamento a Microsoft 365. In questo articolo viene illustrato come configurare una rete virtuale di Azure cross-premise utilizzando una connessione VPN (Virtual Private Network) da sito a sito pronta per ospitare macchine virtuali di Azure.
 
 ## <a name="configure-a-cross-premises-azure-virtual-network"></a>Configurare una rete virtuale di Azure cross-premise
 
@@ -336,4 +336,4 @@ Di seguito è riportata la configurazione risultante.
   
 ## <a name="next-step"></a>Passaggio successivo
   
-[Distribuire la sincronizzazione della directory Microsoft 365 in Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)
+[Distribuire la sincronizzazione della directory di Microsoft 365 in Microsoft Azure](deploy-microsoft-365-directory-synchronization-dirsync-in-microsoft-azure.md)

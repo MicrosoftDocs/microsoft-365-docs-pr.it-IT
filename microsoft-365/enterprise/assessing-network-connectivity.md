@@ -19,7 +19,7 @@ search.appverid:
 - MOE150
 - BCS160
 ms.assetid: 64b420ef-0218-48f6-8a34-74bb27633b10
-description: Microsoft 365 è stato creato per consentire ai clienti di tutto il mondo di connettersi al servizio tramite una connessione Internet. Man mano che il servizio si evolve, la sicurezza, le prestazioni e l'affidabilità di Microsoft 365 sono state migliorate in base ai clienti che utilizzano Internet per stabilire una connessione al servizio.
+description: Microsoft 365 è progettato per consentire ai clienti di tutto il mondo di connettersi al servizio tramite una connessione Internet. Con l'evoluzione del servizio, la sicurezza, le prestazioni e l'affidabilità di Microsoft 365 vengono migliorate in base ai clienti che usano Internet per stabilire una connessione al servizio.
 ms.openlocfilehash: c0bca2f354d71aa2f4f0c2b6fd05cb4786368b43
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -29,85 +29,85 @@ ms.locfileid: "46691348"
 ---
 # <a name="assessing-microsoft-365-network-connectivity"></a>Valutazione della connettività di rete di Microsoft 365
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
-Microsoft 365 è stato creato per consentire ai clienti di tutto il mondo di connettersi al servizio tramite una connessione Internet. Man mano che il servizio si evolve, la sicurezza, le prestazioni e l'affidabilità di Microsoft 365 sono state migliorate in base ai clienti che utilizzano Internet per stabilire una connessione al servizio.
+Microsoft 365 è progettato per consentire ai clienti di tutto il mondo di connettersi al servizio tramite una connessione Internet. Con l'evoluzione del servizio, la sicurezza, le prestazioni e l'affidabilità di Microsoft 365 vengono migliorate in base ai clienti che usano Internet per stabilire una connessione al servizio.
   
-I clienti che pianificano l'utilizzo di Microsoft 365 devono valutare le esigenze di connettività Internet esistenti e previste come parte del progetto di distribuzione. Per le distribuzioni di classi Enterprise la connettività Internet affidabile e di dimensioni appropriate è una parte importante dell'utilizzo delle funzionalità e degli scenari di Microsoft 365.
+I clienti che pianificano di usare Microsoft 365 devono valutare le esigenze di connettività Internet esistenti e previste come parte del progetto di distribuzione. Per le distribuzioni di classe enterprise, la connettività Internet affidabile e con dimensioni appropriate è una parte fondamentale dell'utilizzo delle funzionalità e degli scenari di Microsoft 365.
   
-Le valutazioni di rete possono essere eseguite da molte persone e organizzazioni diverse in base alle dimensioni e alle preferenze. L'ambito di rete della valutazione può anche variare a seconda della posizione del processo di distribuzione. Per ottenere maggiori informazioni sulle operazioni necessarie per eseguire una valutazione della rete, è stata creata una guida di valutazione della rete che consente di comprendere le opzioni disponibili per l'utente. Questa valutazione determinerà i passaggi e le risorse che devono essere aggiunti al progetto di distribuzione per consentire di adottare correttamente Microsoft 365.
+Le valutazioni di rete possono essere eseguite da molte persone e organizzazioni diverse a seconda delle dimensioni e delle preferenze. L'ambito di rete della valutazione può anche variare a seconda di dove ci si trova nel processo di distribuzione. Per aiutarti a comprendere meglio cosa serve per eseguire una valutazione della rete, abbiamo prodotto una guida alla valutazione della rete per aiutarti a comprendere le opzioni disponibili. Questa valutazione determinerà quali passaggi e risorse devono essere aggiunti al progetto di distribuzione per consentire l'adozione corretta di Microsoft 365.
   
-Una valutazione globale della rete fornirà le possibili soluzioni alle sfide di progettazione della rete insieme ai dettagli sull'implementazione. Alcune valutazioni di rete dimostreranno che la connettività di rete ottimale a Microsoft 365 può essere adattata con modifiche di configurazione o progettazione secondarie all'infrastruttura di rete e di uscita Internet esistente.
+Una valutazione completa della rete fornirà le possibili soluzioni alle sfide di progettazione della rete insieme ai dettagli di implementazione. Alcune valutazioni di rete mostreranno che la connettività di rete ottimale a Microsoft 365 può essere ospitata con modifiche di configurazione o progettazione minori all'infrastruttura di uscita internet e di rete esistente.
 
-Alcune valutazioni indicheranno che la connettività di rete a Microsoft 365 richiederà ulteriori investimenti nei componenti di rete. Ad esempio, le reti aziendali che interessano succursali e più aree geografiche possono richiedere investimenti in soluzioni SD-WAN o infrastruttura di routing ottimizzata per supportare la connettività Internet a Microsoft 365. Ogni tanto una valutazione indicherà che la connettività di rete a Microsoft 365 è influenzata dai requisiti di regolamentazione o prestazioni per scenari come la [qualità multimediale di Skype for business online](https://support.office.com/article/Media-Quality-and-Network-Connectivity-Performance-in-Skype-for-Business-Online-5fe3e01b-34cf-44e0-b897-b0b2a83f0917). Questi requisiti aggiuntivi possono comportare investimenti in infrastruttura di connettività Internet, ottimizzazione del routing e connettività diretta specializzata.
+Alcune valutazioni indicherà che la connettività di rete a Microsoft 365 richiederà ulteriori investimenti nei componenti di rete. Ad esempio, le reti aziendali che si estendono su succursale e più aree geografiche potrebbero richiedere investimenti in soluzioni SD-WAN o infrastruttura di routing ottimizzata per supportare la connettività Internet a Microsoft 365. Occasionalmente una valutazione indicherà che la connettività di rete a Microsoft 365 è influenzata da requisiti di regolazione o prestazioni per scenari come la qualità multimediale di [Skype for Business online.](https://support.office.com/article/Media-Quality-and-Network-Connectivity-Performance-in-Skype-for-Business-Online-5fe3e01b-34cf-44e0-b897-b0b2a83f0917) Questi requisiti aggiuntivi possono comportare investimenti nell'infrastruttura di connettività Internet, nell'ottimizzazione del routing e nella connettività diretta specializzata.
 
 Alcune risorse utili per valutare la rete:
 
-- Vedere [microsoft 365 Network Connectivity Overview](microsoft-365-networking-overview.md) per informazioni concettuali sulla rete di Microsoft 365.
-- Vedere i [principi di connettività di rete di microsoft 365](https://aka.ms/o365networkingprinciples) per comprendere i principi di connettività per la gestione sicura del traffico di Microsoft 365 e ottenere le migliori prestazioni possibili.
-- Iscriversi a [Microsoft FastTrack](https://www.microsoft.com/fasttrack) per assistenza guidata con Microsoft 365 pianificazione, progettazione e distribuzione. 
-- Vedere la sezione [test di connettività di microsoft 365](assessing-network-connectivity.md#the-microsoft-365-connectivity-test) seguente per eseguire test di connettività di base che forniscono indicazioni specifiche sui miglioramenti della connettività di rete che possono essere effettuati tra una determinata posizione utente e Microsoft 365.
+- Per informazioni concettuali sulla rete [di Microsoft 365,](microsoft-365-networking-overview.md) vedere Panoramica della connettività di rete di Microsoft 365.
+- Vedere i principi di connettività di rete di [Microsoft 365](https://aka.ms/o365networkingprinciples) per comprendere i principi di connettività per gestire in modo sicuro il traffico di Microsoft 365 e ottenere le migliori prestazioni possibili.
+- Iscriversi a [Microsoft FastTrack per](https://www.microsoft.com/fasttrack) ricevere assistenza con la pianificazione, la progettazione e la distribuzione di Microsoft 365. 
+- Vedere la sezione di test della connettività di [Microsoft 365](assessing-network-connectivity.md#the-microsoft-365-connectivity-test) riportata di seguito per eseguire test di connettività di base che forniscono indicazioni specifiche sui miglioramenti della connettività di rete che possono essere apportati tra una determinata posizione utente e Microsoft 365.
 
 > [!NOTE]
-> È necessaria l'autorizzazione Microsoft per l'utilizzo di ExpressRoute per Office 365. Microsoft esamina tutte le richieste dei clienti e autorizza ExpressRoute per l'utilizzo di Office 365 solo quando il requisito normativo del cliente delega la connettività diretta. Se si dispone di tali requisiti, fornire l'Estratto di testo e il collegamento Web al regolamento che si intende interpretare per indicare che la connettività diretta è necessaria nel [modulo di richiesta di ExpressRoute per Office 365](https://aka.ms/O365ERReview) per avviare una revisione Microsoft. Gli abbonamenti non autorizzati che tentano di creare filtri di route per Office 365 riceveranno un [messaggio di errore](https://support.microsoft.com/kb/3181709).
+> L'autorizzazione Microsoft è necessaria per usare ExpressRoute per Office 365. Microsoft rivede ogni richiesta del cliente e autorizza ExpressRoute solo per l'utilizzo di Office 365 quando il requisito normativo di un cliente impone la connettività diretta. Se si dispone di tali requisiti, fornire l'estratto di testo e il collegamento Web alla normativa che si interpreta per indicare che la connettività diretta è necessaria nel modulo di richiesta ExpressRoute per [Office 365](https://aka.ms/O365ERReview) per avviare una recensione Microsoft. Le sottoscrizioni non autorizzate che tentano di creare filtri di route per Office 365 riceveranno un [messaggio di errore.](https://support.microsoft.com/kb/3181709)
   
-Punti chiave da prendere in considerazione durante la pianificazione della valutazione della rete per Microsoft 365:
+Punti chiave da considerare quando si pianifica la valutazione della rete per Microsoft 365:
   
-- Microsoft 365 è un servizio sicuro, affidabile e ad alte prestazioni che viene eseguito su Internet pubblico. Continuiamo a investire per migliorare questi aspetti del servizio. Tutti i servizi Microsoft 365 sono disponibili tramite connettività Internet.
+- Microsoft 365 è un servizio sicuro, affidabile e ad alte prestazioni che viene eseguito su Internet pubblico. Microsoft continua a investire per migliorare questi aspetti del servizio. Tutti i servizi di Microsoft 365 sono disponibili tramite connettività Internet.
 
-- Vengono continuamente ottimizzati gli aspetti di base di Microsoft 365 quali la disponibilità, la portata globale e le prestazioni per la connettività basata su Internet. Ad esempio, molti servizi Microsoft 365 sfruttano un insieme di nodi perimetrali Internet con espansione. Questa rete Edge offre le migliori caratteristiche di prossimità e prestazioni alle connessioni provenienti da Internet.
+- We are continually optimizing core aspects of Microsoft 365 such as availability, global reach, and performance for internet based connectivity. Ad esempio, molti servizi di Microsoft 365 sfruttano un set in espansione di nodi perimetrali con connessione Internet. Questa rete perimetrale offre la migliore prossimità e prestazioni alle connessioni in arrivo su Internet.
 
-- Quando si considera l'utilizzo di Microsoft 365 per uno qualsiasi dei servizi inclusi, ad esempio teams o funzionalità di riunione di Skype for business online, i clienti devono terminare la valutazione della rete finale e soddisfare i requisiti di connettività con [Microsoft FastTrack](https://www.microsoft.com/fasttrack).
+- Quando si valuta l'uso di Microsoft 365 per uno qualsiasi dei servizi inclusi, come Teams o skype for Business online, funzionalità vocali, video o riunioni, i clienti devono completare una valutazione end-to-end della rete e soddisfare i requisiti di connettività con [Microsoft FastTrack.](https://www.microsoft.com/fasttrack)
 
-Se si sta valutando Microsoft 365 e non si è certi di dove iniziare con la valutazione della rete o si sono verificati problemi di progettazione della rete per i quali è necessario un intervento di assistenza da superare, è possibile collaborare con il team dell'account Microsoft.
+If you're evaluating Microsoft 365 and aren't sure where to begin with your network assessment or have found network design challenges that you need assistance to overcome, please work with your Microsoft account team.
 
 ## <a name="the-microsoft-365-connectivity-test"></a>Test di connettività di Microsoft 365
 
-Il [test di connettività microsoft 365](https://aka.ms/netonboard) è uno strumento di valutazione della rete di prova (POC) che esegue i test di connettività di base sul tenant di Microsoft 365 e apporta indicazioni specifiche sulla progettazione della rete per ottenere prestazioni ottimali di Microsoft 365. Lo strumento evidenzia le scelte di progettazione del perimetro della rete aziendale di grandi dimensioni utili per la Web Browsing Internet, ma ha un impatto sulle prestazioni di applicazioni SaaS di grandi dimensioni, ad esempio Microsoft 365.
+Il test di connettività di [Microsoft 365](https://aka.ms/netonboard) è uno strumento di valutazione della rete di prova (POC) che esegue test di connettività di base sul tenant di Microsoft 365 e formula consigli specifici per la progettazione della rete per prestazioni ottimali di Microsoft 365. Lo strumento evidenzia le scelte comuni di progettazione perimetrali di rete aziendale di grandi dimensioni, utili per l'esplorazione Web in Internet, ma che influiscono sulle prestazioni delle applicazioni SaaS di grandi dimensioni, ad esempio Microsoft 365.
 
-Lo strumento di onboarding di rete esegue le operazioni seguenti:
+Lo strumento Onboarding di rete esegue le operazioni seguenti:
 
-- Rileva la posizione oppure è possibile specificare una posizione in cui eseguire il test
-- Verifica la posizione dell'uscita di rete
-- Verifica il percorso di rete per il porta anteriore del servizio Microsoft 365 più vicino
-- Fornisce test avanzati tramite un'applicazione scaricabile di Windows 10 che rende le indicazioni relative alla progettazione della rete perimetrale correlate ai server proxy, ai firewall e al DNS. Lo strumento esegue anche test delle prestazioni per Skype for business online, Microsoft teams, SharePoint Online e Exchange Online.
+- Rileva la posizione oppure è possibile specificare una posizione da testare
+- Controlla il percorso di uscita della rete
+- Verifica il percorso di rete all'ingresso del servizio Microsoft 365 più vicino
+- Fornisce test avanzati tramite un'applicazione di Windows 10 scaricabile che fornisce consigli per la progettazione della rete perimetrale relativi a server proxy, firewall e DNS. Lo strumento esegue anche test delle prestazioni per Skype for Business online, Microsoft Teams, SharePoint Online ed Exchange Online.
 
-Lo strumento dispone di due componenti: un'interfaccia utente basata su browser che raccoglie informazioni di connettività di base e un'applicazione di Windows 10 scaricabile che esegue test avanzati e restituisce ulteriori dati di valutazione.
+Lo strumento include due componenti: un'interfaccia utente basata su browser che raccoglie informazioni di connettività di base e un'applicazione di Windows 10 scaricabile che esegue test avanzati e restituisce dati di valutazione aggiuntivi.
 
-Lo strumento basato su browser Visualizza le informazioni seguenti:
+Lo strumento basato su browser visualizza le informazioni seguenti:
 
-- Scheda risultati e impatto
-  - La posizione in una mappa della porta di ingresso del servizio in uso
-  - La posizione in una mappa di altre porte anteriori del servizio che forniscono una connettività ottimale
-  - Prestazioni relative rispetto ad altri clienti di Microsoft 365 vicino a te
-- Scheda dettagli e soluzioni
-  - Posizione dell'utente in base alla città e al paese
-  - Posizione di uscita di rete per città, stato e paese
-  - Utente per la distanza di uscita dalla rete
-  - Posizione della porta anteriore del servizio Microsoft 365 Exchange Online
-  - Optimal Microsoft 365 Exchange Online Service porta anteriore (s) per la posizione dell'utente
-  - Clienti nell'area metropolitana con prestazioni migliori
+- Scheda Risultati e impatto
+  - Posizione su una mappa della porta d'ingresso del servizio in uso
+  - La posizione su una mappa di altre porte anteriori del servizio che garantirebbe una connettività ottimale
+  - Prestazioni relative rispetto ad altri clienti di Microsoft 365 nelle vicinanze
+- Scheda Dettagli e soluzioni
+  - Posizione utente per città e paese
+  - Posizione di uscita dalla rete in base alla città, allo stato e al paese
+  - Distanza da utente a rete in uscita
+  - Posizione della porta principale del servizio Microsoft 365 Exchange Online
+  - Porta d'ingresso del servizio Microsoft 365 Exchange Online ottimale per la posizione degli utenti
+  - Clienti nell'area della metropolitana con prestazioni migliori
 
-L'applicazione scaricabile test avanzati fornisce le seguenti informazioni aggiuntive:
+L'applicazione scaricabile Advanced Tests fornisce le seguenti informazioni aggiuntive:
 
-- Scheda dettagli e soluzioni (aggiunta)
+- Scheda Dettagli e soluzioni (aggiunta)
   - Gateway predefinito dell'utente
-  - Server DNS client
+  - Client DNS Server
   - Resolver ricorsivo DNS client
-  - Server DNS Exchange Online
+  - Server DNS di Exchange Online
   - Server DNS di SharePoint Online
   - Identificazione del server proxy
-  - Verifica della connettività multimediale
+  - Controllo della connettività multimediale
   - Perdita di pacchetti di qualità multimediale
   - Latenza qualità multimediale
-  - Instabilità della qualità multimediale
+  - Instabilità qualità multimediale
   - Riordino dei pacchetti di qualità multimediale
-- Test di connettività a più endpoint specifici delle funzionalità
-- Diagnostica percorso di rete che include i dati di tracert e latenza per i servizi di Exchange Online, SharePoint Online e teams
+- Test di connettività a più endpoint specifici della funzionalità
+- Diagnostica del percorso di rete che include dati di tracert e latenza per i servizi di Exchange Online, SharePoint Online e Teams
 
-È possibile leggere informazioni sul test di connettività di Microsoft 365 e fornire commenti e suggerimenti all' [aggiornamento di microsoft 365 Connectivity test POC with New Network Design raccomandazioni](https://techcommunity.microsoft.com/t5/Office-365-Networking/Updated-Office-365-Network-Onboarding-Tool-POC-with-new-network/m-p/711130#M130) post del Blog. Informazioni sugli aggiornamenti futuri di questo strumento e di altri aggiornamenti di rete di Microsoft 365 verranno inviati al Blog di [rete di Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking) .
+È possibile leggere il test di connettività di Microsoft 365 e inviare commenti e suggerimenti al post di blog aggiornato sul test di connettività di [Microsoft 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/Updated-Office-365-Network-Onboarding-Tool-POC-with-new-network/m-p/711130#M130) con nuovi suggerimenti per la progettazione della rete. Le informazioni sugli aggiornamenti futuri di questo strumento e di altri aggiornamenti di rete di Microsoft 365 verranno pubblicate nel blog sulla rete [di Office 365.](https://techcommunity.microsoft.com/t5/Office-365-Networking/bd-p/Office365Networking)
   
-Ecco un breve collegamento che è possibile utilizzare per tornare: [ https://aka.ms/o365networkconnectivity .](https://aka.ms/o365networkconnectivity)
+Ecco un breve collegamento che puoi usare per tornare: [ https://aka.ms/o365networkconnectivity .](https://aka.ms/o365networkconnectivity)
   
 ## <a name="related-topics"></a>Argomenti correlati
 
