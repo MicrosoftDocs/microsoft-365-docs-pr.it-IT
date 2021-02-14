@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Prenotazioni Microsoft
-summary: Pianificare e gestire appuntamenti con Microsoft bookings. Include l'integrazione con Outlook e le notifiche automatizzate.
+title: Microsoft Bookings
+summary: Pianificare e gestire gli appuntamenti con Microsoft Bookings. Include l'integrazione con Outlook e le notifiche automatizzate.
 metadata:
-  title: Prenotazioni Microsoft
-  description: Pianificare e gestire appuntamenti con Microsoft bookings. Include l'integrazione con Outlook e le notifiche automatizzate.
+  title: Microsoft Bookings
+  description: Pianificare e gestire gli appuntamenti con Microsoft Bookings. Include l'integrazione con Outlook e le notifiche automatizzate.
   ms.service: bookings
   ms.topic: landing-page
   author: dmaguire
@@ -18,15 +18,15 @@ metadata:
   ms.lasthandoff: 09/09/2020
   ms.locfileid: "47419797"
 landingContent:
-- title: Informazioni su Microsoft bookings
+- title: Informazioni su Microsoft Bookings
   linkLists:
   - linkListType: overview
     links:
-    - text: Che cos'è Microsoft bookings?
+    - text: Che cos'è Microsoft Bookings?
       url: bookings-overview.md
   - linkListType: download
     links:
-    - text: Ottenere l'app prenotazioni
+    - text: Ottenere l'app Microsoft Bookings
       url: get-bookings-app.md
 - title: Configurare Microsoft Bookings
   linkLists:
@@ -44,7 +44,7 @@ landingContent:
       url: customize-booking-page.md
     - text: Creare prenotazioni e assegnarle al personale
       url: create-a-manual-booking.md
-- title: Invitare gli utenti a prenotare gli appuntamenti
+- title: Invitare persone a prenotare appuntamenti
   linkLists:
   - linkListType: how-to-guide
     links:
