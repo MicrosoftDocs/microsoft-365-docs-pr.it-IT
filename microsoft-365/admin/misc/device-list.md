@@ -1,5 +1,5 @@
 ---
-title: Elenco dispositivi CSV-file
+title: File CSV dell'elenco di dispositivi
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -22,7 +22,7 @@ search.appverid:
 - MOE150
 ms.assetid: 932e3676-2491-49f0-9177-d893d2f5276e
 ROBOTS: NOINDEX
-description: Informazioni su come creare un file CSV per il pilota automatico in Microsoft 365 for business.
+description: Informazioni su come creare un file CSV per AutoPilot in Microsoft 365 per le aziende.
 ms.openlocfilehash: 030fb96e9e60c792fb685af57d34eacd6670645a
 ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
 ms.translationtype: MT
@@ -30,29 +30,29 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 05/27/2020
 ms.locfileid: "44399363"
 ---
-# <a name="device-list-csv-file"></a><span data-ttu-id="98145-103">Elenco dispositivi CSV-file</span><span class="sxs-lookup"><span data-stu-id="98145-103">Device list CSV-file</span></span>
+# <a name="device-list-csv-file"></a><span data-ttu-id="efd3c-103">File CSV dell'elenco di dispositivi</span><span class="sxs-lookup"><span data-stu-id="efd3c-103">Device list CSV-file</span></span>
 
-## <a name="device-list-csv-file-format"></a><span data-ttu-id="98145-104">Formato del file CSV elenco dispositivi</span><span class="sxs-lookup"><span data-stu-id="98145-104">Device list .csv file format</span></span>
+## <a name="device-list-csv-file-format"></a><span data-ttu-id="efd3c-104">Formato di file CSV dell'elenco di dispositivi</span><span class="sxs-lookup"><span data-stu-id="efd3c-104">Device list .csv file format</span></span>
 
-<span data-ttu-id="98145-105">Per gestire e distribuire i dispositivi tramite Windows Autopilot, è necessario un file. csv contenente informazioni specifiche sui dispositivi.</span><span class="sxs-lookup"><span data-stu-id="98145-105">To manage and deploy devices through Windows Autopilot, you'll need a .csv file that contains specific information about the devices.</span></span>
+<span data-ttu-id="efd3c-105">Per gestire e distribuire i dispositivi tramite Windows Autopilot, è necessario un file CSV contenente informazioni specifiche sui dispositivi.</span><span class="sxs-lookup"><span data-stu-id="efd3c-105">To manage and deploy devices through Windows Autopilot, you'll need a .csv file that contains specific information about the devices.</span></span>
   
-<span data-ttu-id="98145-106">Le colonne nel file dell'elenco dei dispositivi devono avere le seguenti intestazioni nell'ordine specificato:</span><span class="sxs-lookup"><span data-stu-id="98145-106">Columns in the device list file must have the following headers in the specified order:</span></span>
+<span data-ttu-id="efd3c-106">Le colonne nel file dell'elenco dei dispositivi devono avere le intestazioni seguenti nell'ordine specificato:</span><span class="sxs-lookup"><span data-stu-id="efd3c-106">Columns in the device list file must have the following headers in the specified order:</span></span>
   
-- <span data-ttu-id="98145-107">Colonna A: numero di serie del dispositivo</span><span class="sxs-lookup"><span data-stu-id="98145-107">Column A: Device Serial Number</span></span>
+- <span data-ttu-id="efd3c-107">Colonna A: numero di serie del dispositivo</span><span class="sxs-lookup"><span data-stu-id="efd3c-107">Column A: Device Serial Number</span></span>
 
-- <span data-ttu-id="98145-108">Colonna B: lasciare vuoto</span><span class="sxs-lookup"><span data-stu-id="98145-108">Column B: leave blank</span></span>
+- <span data-ttu-id="efd3c-108">Colonna B: lasciare vuoto</span><span class="sxs-lookup"><span data-stu-id="efd3c-108">Column B: leave blank</span></span>
 
-- <span data-ttu-id="98145-109">Colonna C: hash dell'hardware</span><span class="sxs-lookup"><span data-stu-id="98145-109">Column C: Hardware Hash</span></span>
+- <span data-ttu-id="efd3c-109">Colonna C: hash dell'hardware</span><span class="sxs-lookup"><span data-stu-id="efd3c-109">Column C: Hardware Hash</span></span>
 
-<span data-ttu-id="98145-110">È possibile ottenere queste informazioni dal produttore dell'hardware o usare lo [script di PowerShell Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) che consente di generare un file CSV.</span><span class="sxs-lookup"><span data-stu-id="98145-110">You can get this information from your hardware vendor, or you can use the [Get-WindowsAutoPilotInfo PowerShell script](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) that will generate a CSV file.</span></span> 
+<span data-ttu-id="efd3c-110">È possibile ottenere queste informazioni dal produttore dell'hardware o usare lo [script di PowerShell Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) che consente di generare un file CSV.</span><span class="sxs-lookup"><span data-stu-id="efd3c-110">You can get this information from your hardware vendor, or you can use the [Get-WindowsAutoPilotInfo PowerShell script](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) that will generate a CSV file.</span></span> 
 
-<span data-ttu-id="98145-111">Quando si aggiungono dispositivi, è inoltre necessario aggiungerli a un profilo.</span><span class="sxs-lookup"><span data-stu-id="98145-111">When you add devices, you also need to add them to a Profile.</span></span> <span data-ttu-id="98145-112">Un profilo viene utilizzato per applicare i profili di distribuzione dei piloti automatici a un dispositivo o a un gruppo di dispositivi.</span><span class="sxs-lookup"><span data-stu-id="98145-112">A profile is used to apply AutoPilot deployment profiles to a device or a group of devices.</span></span>
+<span data-ttu-id="efd3c-111">Quando aggiungi dispositivi, devi anche aggiungerli a un profilo.</span><span class="sxs-lookup"><span data-stu-id="efd3c-111">When you add devices, you also need to add them to a Profile.</span></span> <span data-ttu-id="efd3c-112">Un profilo viene usato per applicare profili di distribuzione AutoPilot a un dispositivo o a un gruppo di dispositivi.</span><span class="sxs-lookup"><span data-stu-id="efd3c-112">A profile is used to apply AutoPilot deployment profiles to a device or a group of devices.</span></span>
   
-## <a name="related-articles"></a><span data-ttu-id="98145-113">Articoli correlati</span><span class="sxs-lookup"><span data-stu-id="98145-113">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="efd3c-113">Articoli correlati</span><span class="sxs-lookup"><span data-stu-id="efd3c-113">Related articles</span></span>
 
-[<span data-ttu-id="98145-114">Documentazione e risorse su Microsoft 365 per le aziende</span><span class="sxs-lookup"><span data-stu-id="98145-114">Microsoft 365 for business documentation and resources</span></span>](https://go.microsoft.com/fwlink/p/?linkid=853701)
+[<span data-ttu-id="efd3c-114">Documentazione e risorse di Microsoft 365 per le aziende</span><span class="sxs-lookup"><span data-stu-id="efd3c-114">Microsoft 365 for business documentation and resources</span></span>](https://go.microsoft.com/fwlink/p/?linkid=853701)
   
-[<span data-ttu-id="98145-115">Introduzione a Microsoft 365 for business</span><span class="sxs-lookup"><span data-stu-id="98145-115">Get started with Microsoft 365 for business</span></span>](https://docs.microsoft.com/microsoft-365/business/microsoft-365-business-overview)
+[<span data-ttu-id="efd3c-115">Introduzione a Microsoft 365 per le aziende</span><span class="sxs-lookup"><span data-stu-id="efd3c-115">Get started with Microsoft 365 for business</span></span>](https://docs.microsoft.com/microsoft-365/business/microsoft-365-business-overview)
   
-[<span data-ttu-id="98145-116">Gestire Microsoft 365 for business</span><span class="sxs-lookup"><span data-stu-id="98145-116">Manage Microsoft 365 for business</span></span>](https://docs.microsoft.com/microsoft-365/business/manage)
+[<span data-ttu-id="efd3c-116">Gestire Microsoft 365 per le aziende</span><span class="sxs-lookup"><span data-stu-id="efd3c-116">Manage Microsoft 365 for business</span></span>](https://docs.microsoft.com/microsoft-365/business/manage)
   
