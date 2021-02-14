@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Informazioni su come aggiungere o rimuovere i membri che possono accedere a un caso durante la gestione di un caso di eDiscovery avanzato.
+description: Informazioni su come aggiungere o rimuovere i membri che possono accedere a un caso durante la gestione di un caso di Advanced eDiscovery.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: 301796dfd15236a8d590d8f94ff5b885176d5d82
 ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
@@ -26,18 +26,18 @@ ms.locfileid: "48285150"
 ---
 # <a name="add-or-remove-members-from-a-case"></a>Aggiungere o rimuovere membri da un caso
 
-È possibile aggiungere o rimuovere membri per gestire gli utenti autorizzati ad accedere al caso. Tuttavia, prima che un membro possa accedere a un caso avanzato di eDiscovery (ed eseguire attività nel caso), è necessario aggiungere l'utente al gruppo di ruoli di gestione di eDiscovery nella pagina **autorizzazioni** nel centro sicurezza e conformità. Per ulteriori informazioni, vedere [assegnare le autorizzazioni di eDiscovery nel centro sicurezza & Compliance](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions).
+È possibile aggiungere o rimuovere membri per gestire chi può accedere al caso. Tuttavia, prima che un membro possa accedere a un caso di Advanced eDiscovery (ed eseguire attività  nel caso), è necessario aggiungere l'utente al gruppo di ruoli Gestore di eDiscovery nella pagina Autorizzazioni del Centro sicurezza e conformità. Per ulteriori informazioni, vedere [Assegnare le autorizzazioni di eDiscovery nel Centro sicurezza & conformità.](https://docs.microsoft.com/microsoft-365/compliance/assign-ediscovery-permissions)
 
-1. Nella pagina **Advanced eDiscovery** passare al caso in cui si desidera aggiungere un membro.
+1. Nella pagina **Advanced eDiscovery** passare al caso a cui si desidera aggiungere un membro.
 
-2. Fare clic sulla scheda **Impostazioni** e quindi fare clic su **Seleziona** nel riquadro **Access & Permissions** .
+2. Fare clic **sulla scheda** Impostazioni e quindi su **Seleziona** nel riquadro & **autorizzazioni di** accesso.
 
 3. Fare clic su **Aggiorna**.
 
-4. In **Gestisci membri**fare clic su **Aggiungi** per aggiungere membri al caso. È inoltre possibile scegliere di aggiungere un gruppo di ruoli al caso facendo clic su  **Aggiungi** in **Gestisci gruppi di ruoli**.
+4. In **Gestisci membri** fare clic su **Aggiungi** per aggiungere membri al caso. È inoltre possibile scegliere di aggiungere un gruppo di ruoli al caso facendo clic su **Aggiungi** in **Gestisci gruppi di ruoli.**
 
-5. Nell'elenco di utenti o gruppi di ruoli che possono essere aggiunti come membri del caso, selezionare la casella di controllo accanto ai nomi degli utenti o dei gruppi di ruoli che si desidera aggiungere.
+5. Nell'elenco delle persone o dei gruppi di ruoli che è possibile aggiungere come membri del caso, selezionare la casella di controllo accanto ai nomi delle persone o dei gruppi di ruoli che si desidera aggiungere.
 
-6. Dopo aver selezionato gli utenti o i gruppi di ruoli da aggiungere come membri del caso, fare clic su **Aggiungi**.
+6. Dopo aver selezionato le persone o i gruppi di ruoli da aggiungere come membri del caso, fare clic su **Aggiungi.**
 
-7. Nella pagina **Gestisci** il riquadro a comparsa di questo caso, fare clic su **Salva** per salvare il nuovo elenco dei membri del caso.
+7. Nella pagina **Gestisci questo caso** a comparsa fare clic su **Salva** per salvare il nuovo elenco di membri del caso.

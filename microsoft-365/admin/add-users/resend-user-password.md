@@ -29,13 +29,13 @@ ms.locfileid: "48131747"
 ---
 # <a name="resend-a-users-password---admin-help"></a>Inviare nuovamente la password utente - Guida per amministratori
 
-In questo articolo viene illustrato come inviare di nuovo il messaggio di posta elettronica di notifica a un altro utente in Office 365. Ciò può verificarsi quando si crea un nuovo utente e non si riceve un messaggio di posta elettronica con la nuova password. A tale scopo, reimpostando la password dell'utente.
+Questo articolo spiega come inviare di nuovo il messaggio di posta elettronica di notifica a un nuovo utente in Office 365. Ciò può verificarsi quando si crea un nuovo utente e non viene visualizzato un messaggio di posta elettronica con la nuova password. A tale scopo, reimpostare la password dell'utente.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
 Questo articolo è per le persone che impostano criteri di scadenza delle password in un'azienda, un istituto di istruzione o un'organizzazione no profit. Per completare questa procedura, è necessario accedere con l'account amministratore di Microsoft 365. [Che cos'è un account amministratore?](../admin-overview/admin-overview.md).
 
-Per eseguire questa procedura è necessario essere un [amministratore globale o una password](about-admin-roles.md) .
+Per eseguire questa [procedura, è](about-admin-roles.md) necessario essere un amministratore globale o un amministratore delle password.
 
 ## <a name="resend-user-password"></a>Inviare nuovamente la password utente
   
@@ -57,11 +57,11 @@ Per eseguire questa procedura è necessario essere un [amministratore globale o 
 
 ::: moniker-end
 
-2. Nella pagina **utenti attivi** selezionare l'utente e quindi selezionare **Reimposta password**.
+2. Nella pagina **Utenti attivi** selezionare l'utente e quindi fare clic su **Reimposta password.**
 
-3. Seguire le istruzioni riportate nella pagina **Reimposta password** per generare automaticamente una nuova password per l'utente oppure crearne una per loro, quindi selezionare **Reimposta**.  
+3. Seguire le istruzioni nella pagina Reimposta **password** per generare automaticamente una nuova password per l'utente o crearne una per l'utente, quindi selezionare **Reimposta.**  
 
-4. Immettere un indirizzo di posta elettronica che l'utente può ottenere in modo che ricevano la nuova password e seguirli per assicurarsi che siano stati ottenuti.
+4. Immetti un indirizzo e-mail a cui l'utente può accedere per ricevere la nuova password e seguilo per assicurarti di ottenerla.
 
 ## <a name="related-content"></a>Contenuti correlati
 

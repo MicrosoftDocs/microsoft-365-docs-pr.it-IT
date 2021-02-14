@@ -12,7 +12,7 @@ ms.collection: Strat_SP_gtc
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: Informazioni su come configurare la ricerca in un ambiente multi-geografico. Solo alcuni client, come OneDrive for business, possono restituire risultati in un ambiente multi-geografico.
+description: Informazioni su come configurare la ricerca in un ambiente multi-geografico. Solo alcuni client, ad esempio OneDrive for Business, possono restituire risultati in un ambiente multi-geografico.
 ms.openlocfilehash: e213e93cfbc967a723b4d27f4b36a83fe6687da9
 ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
 ms.translationtype: MT
@@ -84,7 +84,7 @@ Alcune delle funzionalità di ricerca già note potrebbero funzionare diversamen
 <tr class="odd">
 <td align="left"></td>
 <td align="left">La ricerca multi-geografica non supporta il bucket di criteri di affinamento numerici.</td>
-<td align="left">Utilizzare il <a href="https://docs.microsoft.com/sharepoint/dev/general-development/query-refinement-in-sharepoint">parametro "discretizzare"</a> per i perfezionamenti numerici.</td>
+<td align="left">Utilizzare il <a href="https://docs.microsoft.com/sharepoint/dev/general-development/query-refinement-in-sharepoint">parametro "Discretize" per</a> i criteri di affinamento numerici.</td>
 </tr>
 <tr class="even">
 <td align="left">ID documenti</td>
@@ -131,7 +131,7 @@ Alcune delle funzionalità di ricerca già note non sono supportate in un ambien
 
 Tutti i client di ricerca usano le API REST del servizio di ricerca di SharePoint per interagire con gli indici di ricerca.
 
-![Diagramma che Mostra come le API REST Search di SharePoint interagiscono con gli indici di ricerca](../media/configure-search-for-multi-geo-image1-1.png)
+![Diagramma che mostra l'interazione delle API REST del servizio di ricerca di SharePoint con gli indici di ricerca](../media/configure-search-for-multi-geo-image1-1.png)
 
 1. Un client di ricerca chiama l'endpoint REST Ricerca con la proprietà di query EnableMultiGeoSearch= true.
 2. La query viene inviata a tutte le posizioni geografiche del tenant.
@@ -151,11 +151,11 @@ Ogni Centro ricerche dispone di diverse verticali ed è necessario configurarle 
 
 3. Selezionare la verticale da configurare, fare clic sull'icona a forma di ingranaggio **Impostazioni** in alto a destra, quindi fare clic su **Modifica pagina**. La pagina dei risultati della ricerca si apre in modalità di modifica.
 
-   ![Modificare la selezione delle pagine nelle impostazioni](../media/configure-search-for-multi-geo-image2.png)
+   ![Modificare la selezione della pagina in Impostazioni](../media/configure-search-for-multi-geo-image2.png)
 
 4. Nella web part Risultati della ricerca, spostare il puntatore sull'angolo in alto a destra della web part, fare clic sulla freccia, quindi fare clic su **Modifica web part** nel menu.   Si apre il riquadro degli strumenti della web part Risultati della ricerca sotto la barra multifunzione in alto a destra nella pagina.
 
-   ![Modificare la selezione di una Web part](../media/configure-search-for-multi-geo-image3.png)
+   ![Modifica selezione web part](../media/configure-search-for-multi-geo-image3.png)
 
 5. Nella riquadro degli strumenti della web part, nella sezione **Impostazioni**, in **Impostazioni controllo risultati**, selezionare **Mostra risultati Multi-Geo** affinché la web part Risultati della ricerca mostri i risultati di tutte le posizioni geografiche.
 
@@ -172,7 +172,7 @@ Per ottenere i risultati di tutte o alcune posizioni geografiche nelle applicazi
 
 ### <a name="requirement"></a>Requisito
 
-Per ogni posizione geografica è necessario verificare che a tutti gli utenti dell'organizzazione sia stato concesso il livello di autorizzazioni **Lettura** per il sito Web radice, ad esempio contoso**APAC**.sharepoint.com/ e contoso**EU**.sharepoint.com/. [Informazioni sulle autorizzazioni](https://support.office.com/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
+Per ogni posizione geografica è necessario verificare che a tutti gli utenti dell'organizzazione sia stato concesso il livello di autorizzazioni **Lettura** per il sito Web radice, ad esempio contoso **APAC**.sharepoint.com/ e contoso **EU**.sharepoint.com/. [Informazioni sulle autorizzazioni](https://support.office.com/article/understanding-permission-levels-in-sharepoint-87ecbb0e-6550-491a-8826-c075e4859848).
 
 ### <a name="query-parameters"></a>Parametri di query
 
@@ -253,11 +253,11 @@ Con una richiesta GET, si specificano i parametri di query nell'URL. Con una ric
 
 #### <a name="sample-get-request-thats-fanned-out-to-all-geo-locations"></a>Esempio di richiesta GET estesa a **tutte** le posizioni geografiche
 
-https:// \<tenant\> / \_ API/search/query? QueryText =' SharePoint ' &Properties =' EnableMultiGeoSearch: true ' &ClientType =' My \_ client \_ ID '
+https:// \<tenant\> / \_ api/search/query?querytext='sharepoint'&Properties='EnableMultiGeoSearch:true'&ClientType='my \_ client \_ id'
 
 #### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a>Esempio di richiesta GET estesa ad **alcune** posizioni geografiche
 
-https:// \<tenant\> / \_ API/search/query? QueryText =' site ' &ClientType =' my_client_id ' &Properties =' EnableMultiGeoSearch: true, MultiGeoSearchConfiguration: [{datalocation \\ : "Nam" \\ , endpoint \\ : "https \\ ://contosoNAM.SharePoint.com" \\ , SourceID \\ : "B81EAB55-3140-4312-B0F4-9459D1B4FFEE"} \\ , {datalocation \\ : "Can" \\ , endpoint \\ : "https \\ ://contosoCAN.SharePoint-DF.com"}]'
+https:// \<tenant\> / \_ api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation \\ :"NAM" \\ ,Endpoint \\ :"https \\ ://contosoNAM.sharepoint.com" \\ ,SourceId \\ :"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"} \\ ,{DataLocation \\ :"CAN" \\ ,Endpoint \\ :"https \\ ://contosoCAN.sharepoint-df.com"}]'
 
 > [!NOTE]
 > Le virgole e i due punti nell'elenco di posizioni geografiche per la proprietà MultiGeoSearchConfiguration sono preceduti dalla **barra rovesciata**. Questo perché le richieste GET usano i due punti per separare le proprietà e le virgole per separare gli argomenti delle proprietà. Senza la barra rovesciata come carattere di escape, la proprietà MultiGeoSearchConfiguration viene interpretata in modo errato.

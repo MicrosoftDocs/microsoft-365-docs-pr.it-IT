@@ -1,5 +1,5 @@
 ---
-title: Aggiungere licenze o estendere una sottoscrizione a pagamento per l'utilizzo di un codice Product Key
+title: Aggiungere licenze o estendere un abbonamento a pagamento per l'uso di un codice Product Key
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -29,25 +29,25 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 09/12/2020
 ms.locfileid: "47545785"
 ---
-# <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>Aggiungere licenze o estendere una sottoscrizione a pagamento per l'utilizzo di un codice Product Key
+# <a name="add-licenses-to-or-extend-a-subscription-paid-for-using-a-product-key"></a>Aggiungere licenze o estendere un abbonamento a pagamento per l'uso di un codice Product Key
 
-Le licenze prepagate vengono rilasciate come codice alfanumerico a 25 caratteri. Dopo aver acquistato le licenze necessarie, è possibile aggiungerle all'abbonamento. È inoltre possibile utilizzare un codice "Product Key" per estendere la data di scadenza dell'abbonamento.
+Le licenze prepapate vengono rilasciate come codice alfanumerico di 25 caratteri. Dopo aver acquistato le licenze necessarie, è possibile aggiungerle all'abbonamento. Puoi anche usare un codice Product Key per estendere la data di scadenza dell'abbonamento.
 
 > [!NOTE]
-> Se non si vuole acquistare un nuovo codice "Product Key", è sempre possibile scegliere di aggiungere una carta di credito o un conto corrente bancario all'abbonamento per pagare altre licenze o per estendere la data di scadenza dell'abbonamento. Per ulteriori informazioni, vedere [rinnovare l'abbonamento](../subscriptions/renew-your-subscription.md).
+> Se non si desidera acquistare un nuovo codice Product Key, è sempre possibile scegliere di aggiungere una carta di credito o un conto corrente bancario all'abbonamento per pagare altre licenze o estendere la data di scadenza dell'abbonamento. Per ulteriori informazioni, vedere [Rinnovare l'abbonamento.](../subscriptions/renew-your-subscription.md)
   
 ## <a name="add-licenses-to-your-subscription"></a>Aggiungere le licenze all'abbonamento
 
 ::: moniker range="o365-worldwide"
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
-2. Nella scheda **prodotti** selezionare la sottoscrizione a cui si desidera aggiungere le licenze.
-3. Nella sezione **licenze** della pagina Dettagli sottoscrizione selezionare **Aggiungi altre licenze**.
-4. Nel **riquadro Aggiungi altre licenze**selezionare **utilizza un codice Product Key nuovo e inutilizzato**, quindi fare clic su **Avanti**.
-5. Immettere il codice "Product Key" e quindi fare clic su **Avanti**.
+2. Nella scheda **Prodotti** selezionare l'abbonamento a cui si desidera aggiungere licenze.
+3. Nella sezione Licenze della  pagina dei dettagli dell'abbonamento selezionare **Aggiungi altre licenze.**
+4. Nel riquadro **Aggiungi altre licenze selezionare** Usa un codice Product Key nuovo e **inutilizzato,** quindi selezionare **Avanti.**
+5. Immetti il codice Product Key e quindi seleziona **Avanti.**
     > [!NOTE]
     > Se si hanno più codici Product Key, è possibile selezionare **Aggiungi un altro codice Product Key** per immetterli.
-6. Esaminare i dettagli dell'ordine, quindi selezionare **riscatta**.
+6. Verifica i dettagli dell'ordine, quindi seleziona **Riscatta.**
 
 ::: moniker-end
 
@@ -55,37 +55,37 @@ Le licenze prepagate vengono rilasciate come codice alfanumerico a 25 caratteri.
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Prodotti e servizi</a>.
 
-2. Individuare la sottoscrizione a cui si desidera aggiungere le licenze. Selezionare l'elenco a discesa **altre azioni** e quindi scegliere **rinnova o Aggiungi licenza con token**.
+2. Individuare l'abbonamento a cui si desidera aggiungere licenze. Selezionare **l'elenco a** discesa Altre azioni e quindi scegliere **Rinnova o aggiungi licenza con token.**
 
-3. Nella pagina **rinnova o Aggiungi licenze utente** selezionare **utilizza un codice Product Key nuovo e inutilizzato**, quindi fare clic su **Avanti**.
+3. Nella pagina **Rinnova o aggiungi licenze utente** selezionare Usa un codice Product **Key** nuovo e inutilizzato, quindi **selezionare Avanti.**
 
-4. Immettere il codice "Product Key" e quindi fare clic su **Avanti**.
+4. Immetti il codice Product Key e quindi seleziona **Avanti.**
 
     > [!NOTE]
     > Se si hanno più codici Product Key, è possibile selezionare **Aggiungi un altro codice Product Key** per immetterli.
 
-5. Scegliere di aggiungere gli utenti alla sottoscrizione, quindi selezionare **Avanti**.
+5. Scegliere di aggiungere utenti all'abbonamento, quindi selezionare **Avanti.**
 
-6. Esaminare i dettagli dell'ordine, quindi selezionare **riscatta**.
+6. Controlla i dettagli dell'ordine, quindi seleziona **Riscatta.**
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di amministrazione, accedere alla pagina dei servizi di & di **fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Products & services</a> .  
+1. Nell'interfaccia di amministrazione  passare alla pagina \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Prodotti & fatturazione.</a>  
 
-2. Individuare la sottoscrizione a cui si desidera aggiungere le licenze. Selezionare l'elenco a discesa **altre azioni** e quindi scegliere **rinnova o Aggiungi licenza con token**.
+2. Individuare l'abbonamento a cui si desidera aggiungere licenze. Selezionare **l'elenco a** discesa Altre azioni e quindi scegliere **Rinnova o aggiungi licenza con token.**
 
-3. Nella pagina **rinnova o Aggiungi licenze utente** selezionare **utilizza un codice Product Key nuovo e inutilizzato**, quindi fare clic su **Avanti**.
+3. Nella pagina **Rinnova o aggiungi licenze utente** selezionare Usa un codice Product **Key** nuovo e inutilizzato, quindi **selezionare Avanti.**
 
-4. Immettere il codice "Product Key" e quindi fare clic su **Avanti**.
+4. Immetti il codice Product Key e quindi seleziona **Avanti.**
 
     > [!NOTE]
     > Se si hanno più codici Product Key, è possibile selezionare **Aggiungi un altro codice Product Key** per immetterli.
 
-5. Scegliere di aggiungere gli utenti alla sottoscrizione, quindi selezionare **Avanti**.
+5. Scegliere di aggiungere utenti all'abbonamento, quindi selezionare **Avanti.**
 
-6. Esaminare i dettagli dell'ordine, quindi selezionare **riscatta**.
+6. Verifica i dettagli dell'ordine, quindi seleziona **Riscatta.**
 
 ::: moniker-end
   
@@ -94,13 +94,13 @@ Le licenze prepagate vengono rilasciate come codice alfanumerico a 25 caratteri.
 ::: moniker range="o365-worldwide"
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
-2. Nella scheda **prodotti** selezionare la sottoscrizione che si desidera estendere.
-3. Nella sezione **impostazioni di sottoscrizione e pagamento** della pagina Dettagli sottoscrizione selezionare **Estendi data di fine**.
-4. Nella pagina **rinnova o Aggiungi licenze utente** selezionare **utilizza un codice Product Key nuovo e inutilizzato**, quindi fare clic su **Avanti**.
-5. Immettere il codice "Product Key" e quindi fare clic su **Avanti**.
+2. Nella scheda **Prodotti** selezionare l'abbonamento che si desidera estendere.
+3. Nella sezione Impostazioni sottoscrizione e pagamento della pagina dei dettagli **dell'abbonamento** selezionare **Estendi data di fine.**
+4. Nella pagina **rinnova o aggiungi licenze utente** selezionare Usa un codice Product **Key** nuovo e inutilizzato, quindi **selezionare Avanti.**
+5. Immetti il codice Product Key e quindi seleziona **Avanti.**
     > [!NOTE]
     > Se si hanno più codici Product Key, è possibile selezionare **Aggiungi un altro codice Product Key** per immetterli.
-6. Esaminare i dettagli dell'ordine, quindi selezionare **riscatta**.
+6. Verifica i dettagli dell'ordine, quindi seleziona **Riscatta.**
 
 ::: moniker-end
 
@@ -108,18 +108,18 @@ Le licenze prepagate vengono rilasciate come codice alfanumerico a 25 caratteri.
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Prodotti e servizi</a>.
 
-2. Individuare l'abbonamento che si desidera estendere. Selezionare l'elenco a discesa **altre azioni** , quindi selezionare **rinnova o Aggiungi licenza con token**.
+2. Trovare l'abbonamento che si desidera estendere. Selezionare **l'elenco a** discesa Altre azioni e quindi selezionare **Rinnova o aggiungi licenza con token.**
 
-3. Nella pagina **rinnova o Aggiungi licenze utente** selezionare **utilizza un codice Product Key nuovo e inutilizzato**, quindi fare clic su **Avanti**.
+3. Nella pagina **Rinnova o aggiungi licenze utente** selezionare Usa un codice Product **Key** nuovo e inutilizzato, quindi **selezionare Avanti.**
 
-4. Immettere il codice "Product Key" e quindi fare clic su **Avanti**.
+4. Immetti il codice Product Key e quindi seleziona **Avanti.**
 
     > [!NOTE]
     > Se si hanno più codici Product Key, è possibile selezionare **Aggiungi un altro codice Product Key** per immetterli.
 
-5. Scegliere di estendere la data di scadenza dell'abbonamento, quindi fare clic su **Avanti**.
+5. Scegliere di estendere la data di scadenza dell'abbonamento, quindi selezionare **Avanti.**
 
-6. Esaminare i dettagli dell'ordine, quindi selezionare **riscatta**.
+6. Verifica i dettagli dell'ordine, quindi seleziona **Riscatta.**
 
 ::: moniker-end
 
@@ -127,18 +127,18 @@ Le licenze prepagate vengono rilasciate come codice alfanumerico a 25 caratteri.
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Prodotti e servizi</a>.
 
-2. Individuare l'abbonamento che si desidera estendere. Selezionare l'elenco a discesa **altre azioni** , quindi selezionare **rinnova o Aggiungi licenza con token**.
+2. Trovare l'abbonamento che si desidera estendere. Selezionare **l'elenco a** discesa Altre azioni e quindi selezionare **Rinnova o aggiungi licenza con token.**
 
-3. Nella pagina **rinnova o Aggiungi licenze utente** selezionare **utilizza un codice Product Key nuovo e inutilizzato**, quindi fare clic su **Avanti**.
+3. Nella pagina **Rinnova o aggiungi licenze utente** selezionare Usa un codice Product **Key** nuovo e inutilizzato, quindi **selezionare Avanti.**
 
-4. Immettere il codice "Product Key" e quindi fare clic su **Avanti**.
+4. Immetti il codice Product Key e quindi seleziona **Avanti.**
 
     > [!NOTE]
     > Se si hanno più codici Product Key, è possibile selezionare **Aggiungi un altro codice Product Key** per immetterli.
 
-5. Scegliere di estendere la data di scadenza dell'abbonamento, quindi fare clic su **Avanti**.
+5. Scegliere di estendere la data di scadenza dell'abbonamento, quindi selezionare **Avanti.**
 
-6. Esaminare i dettagli dell'ordine, quindi selezionare **riscatta**.
+6. Verifica i dettagli dell'ordine, quindi seleziona **Riscatta.**
 
 ::: moniker-end
 

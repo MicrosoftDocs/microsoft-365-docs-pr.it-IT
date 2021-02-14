@@ -1,7 +1,7 @@
 ---
 title: Microsoft Teams
-description: In che modo i team vengono installati sui dispositivi e successivamente aggiornati
-keywords: Microsoft Managed Desktop, Microsoft 365, Service, Documentation, app, app line-of-business, app LOB
+description: Modalità di installazione di Teams nei dispositivi e aggiornamento in seguito
+keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione, app, app line-of-business, app LINEB
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -19,29 +19,29 @@ ms.locfileid: "47950940"
 ---
 # <a name="microsoft-teams"></a>Microsoft Teams
 
-[Teams](https://www.microsoft.com/microsoft-365/microsoft-teams/group-chat-software) è un' [app di messaggistica](https://support.microsoft.com/office/microsoft-teams-basics-6d5f52e6-5306-4096-ac24-c3082b79eaf0) per l'organizzazione che fornisce anche un'area di lavoro per la collaborazione e la comunicazione in tempo reale, le riunioni e la condivisione di file e app.
+[Teams](https://www.microsoft.com/microsoft-365/microsoft-teams/group-chat-software) è [un'app](https://support.microsoft.com/office/microsoft-teams-basics-6d5f52e6-5306-4096-ac24-c3082b79eaf0) di messaggistica per l'organizzazione che offre anche un'area di lavoro per la collaborazione e la comunicazione in tempo reale, le riunioni e la condivisione di file e app.
 
 ## <a name="initial-deployment"></a>Distribuzione iniziale
 
-La maggior parte dei fornitori di hardware non include ancora i team come parte delle immagini, pertanto Microsoft Managed Desktop distribuisce i team ai propri dispositivi tramite Microsoft Intune. Tutti i dispositivi gestiti dispongono del [pacchetto teams. msi](https://docs.microsoft.com/MicrosoftTeams/msi-deployment#how-the-microsoft-teams-msi-package-works) installato, garantendo che tutti gli utenti che effettuano l'accesso a un dispositivo dispongano di Microsoft teams pronti per l'uso. Al primo completamento dell'installazione del pacchetto, il team inizia automaticamente e aggiunge un collegamento al desktop.
+La maggior parte dei fornitori di hardware non include ancora Teams come parte delle proprie immagini, quindi Microsoft Managed Desktop distribuisce Teams nei dispositivi tramite Microsoft Intune. In tutti i dispositivi gestiti è installato il pacchetto MSI di [Teams,](https://docs.microsoft.com/MicrosoftTeams/msi-deployment#how-the-microsoft-teams-msi-package-works) che garantisce che tutti gli utenti che a questo punto hanno Microsoft Teams pronto per l'uso. Al termine dell'installazione del pacchetto, Teams si avvia automaticamente e aggiunge un collegamento al desktop.
 
 ### <a name="microsoft-intune-changes"></a>Modifiche di Microsoft Intune
 
-Microsoft Managed Desktop aggiunge due applicazioni all'organizzazione di Azure AD per Microsoft teams. Sono distribuiti in client a 64 bit o a 32 bit, in base alle esigenze del dispositivo:  
+Microsoft Managed Desktop aggiunge due applicazioni all'organizzazione Azure AD per Microsoft Teams. Vengono distribuiti ai client a 64 bit o a 32 bit in base alle esigenze del dispositivo:  
 
-- Ambiente di lavoro moderno-teams Machine Wide Installer x64  
-- Ambiente di lavoro moderno-teams Machine Wide Installer x32
+- Ambiente di lavoro moderno - Teams Machine Wide Installer x64  
+- Ambiente di lavoro moderno - Teams Machine Wide Installer x32
 
 ## <a name="updates"></a>Aggiornamenti
 
-Teams segue un percorso di aggiornamento separato da Microsoft 365 Apps for Enterprise e il client desktop si aggiorna automaticamente. Teams verifica la disponibilità di aggiornamenti ogni poche ore, li scarica e quindi attende che il computer sia inattivo prima di installare l'aggiornamento in modo invisibile all'utente.  
+Teams segue un percorso di aggiornamento separato da Microsoft 365 Apps for enterprise e il client desktop si aggiorna automaticamente. Teams verifica la disponibilità di aggiornamenti ogni poche ore, li scarica e quindi attende che il computer sia inattivo prima di installare automaticamente l'aggiornamento.  
 
-Il gruppo di prodotti teams non consente agli amministratori di controllare gli aggiornamenti, quindi Microsoft Managed Desktop utilizza il [canale di aggiornamento automatico standard](https://docs.microsoft.com/microsoftteams/teams-client-update#can-admins-deploy-updates-instead-of-teams-auto-updating).
+Il gruppo di prodotti Teams non consente agli amministratori di controllare gli aggiornamenti, quindi Microsoft Managed Desktop usa il canale [di aggiornamento automatico standard.](https://docs.microsoft.com/microsoftteams/teams-client-update#can-admins-deploy-updates-instead-of-teams-auto-updating)
 
-### <a name="manually-updating-teams"></a>Aggiornamento manuale di Team
+### <a name="manually-updating-teams"></a>Aggiornamento manuale di Teams
 
-I singoli utenti possono anche scaricare gli aggiornamenti selezionando **Controlla aggiornamenti**   dal **Profile**   menu a discesa Profilo nell'angolo in alto a destra dell'app. Se è disponibile un aggiornamento, viene scaricato e installato automaticamente quando il computer è inattivo.
+I singoli utenti possono anche scaricare gli aggiornamenti selezionando Controlla **aggiornamenti** nel menu a discesa Profilo nell'angolo in alto   a destra  ****   dell'app. Se è disponibile un aggiornamento, verrà scaricato e installato automaticamente quando il computer è inattivo.
 
 ## <a name="delivery-optimization-of-updates"></a>Ottimizzazione del recapito degli aggiornamenti
 
-L'ottimizzazione del recapito per gli aggiornamenti dei team è attivata per impostazione predefinita e non richiede alcuna azione da parte di amministratori o utenti. 
+Ottimizzazione recapito per gli aggiornamenti di Teams è attivata per impostazione predefinita e non richiede alcuna azione da parte di amministratori o utenti. 

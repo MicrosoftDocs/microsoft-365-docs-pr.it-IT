@@ -14,7 +14,7 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: b468cb4b-a35c-43d3-85bf-65446998af40
-description: Informazioni su come utilizzare PowerShell per spostare il contenuto da un sistema di posta elettronica di origine in una sola volta eseguendo una migrazione di completa a Microsoft 365.
+description: Informazioni su come usare PowerShell per spostare i contenuti da un sistema di posta elettronica di origine contemporaneamente eseguendo una migrazione completa a Microsoft 365.
 ms.openlocfilehash: 74e7791c4292598e4717e56af25e39b3c8208108
 ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
 ms.translationtype: MT
@@ -24,18 +24,18 @@ ms.locfileid: "47948197"
 ---
 # <a name="use-powershell-to-perform-a-cutover-migration-to-microsoft-365"></a>Utilizzare PowerShell per eseguire una migrazione completa a Microsoft 365
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
-È possibile eseguire la migrazione del contenuto delle cassette postali degli utenti da un sistema di posta elettronica di origine a Microsoft 365 tutti insieme utilizzando una migrazione completa. In questo articolo vengono illustrate le attività per una migrazione completa della posta elettronica tramite PowerShell di Exchange Online.
+È possibile eseguire la migrazione del contenuto delle cassette postali degli utenti da un sistema di posta elettronica di origine a Microsoft 365 contemporaneamente utilizzando una migrazione completa. In questo articolo vengono illustrate le attività per una migrazione completa della posta elettronica tramite PowerShell di Exchange Online.
 
-Esaminando l'argomento, [cosa è necessario sapere sulla migrazione della posta elettronica di completa a Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=536688), è possibile ottenere una panoramica del processo di migrazione. Una volta appresi i contenuti di questo articolo, utilizzarlo per iniziare la migrazione delle cassette postali da un sistema di posta elettronica a un altro.
+Esaminando l'argomento, Informazioni necessarie su una migrazione completa della posta elettronica [a Microsoft 365,](https://go.microsoft.com/fwlink/p/?LinkId=536688)è possibile ottenere una panoramica del processo di migrazione. Una volta appresi i contenuti di questo articolo, utilizzarlo per iniziare la migrazione delle cassette postali da un sistema di posta elettronica a un altro.
 
 > [!NOTE]
-> Inoltre, è possibile utilizzare l'interfaccia di amministrazione di Exchange per eseguire una migrazione completa. Vedere [eseguire una migrazione completa della posta elettronica a Microsoft 365](https://go.microsoft.com/fwlink/p/?LinkId=536689).
+> Inoltre, è possibile utilizzare l'interfaccia di amministrazione di Exchange per eseguire una migrazione completa. Vedere [Eseguire una migrazione completa della posta elettronica a Microsoft 365.](https://go.microsoft.com/fwlink/p/?LinkId=536689)
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-Tempo stimato per il completamento di questa attività: tra i 2 e i 5 minuti per creare un batch di migrazione. Dopo l'avvio del batch di migrazione, la durata della migrazione varia in base al numero di cassette postali nel batch, alla dimensione di ogni cassetta postale e alla capacità di rete disponibile. Per informazioni sugli altri fattori che influiscono sul tempo necessario per eseguire la migrazione delle cassette postali a Microsoft 365, vedere [Migration performance](https://go.microsoft.com/fwlink/p/?LinkId=275079).
+Tempo stimato per il completamento di questa attività: tra i 2 e i 5 minuti per creare un batch di migrazione. Dopo l'avvio del batch di migrazione, la durata della migrazione varia in base al numero di cassette postali nel batch, alla dimensione di ogni cassetta postale e alla capacità di rete disponibile. Per informazioni su altri fattori che influiscono sul tempo necessario per eseguire la migrazione delle cassette postali a Microsoft 365, vedere [Prestazioni della migrazione.](https://go.microsoft.com/fwlink/p/?LinkId=275079)
 
 È necessario disporre delle autorizzazioni per poter eseguire queste procedure. Per verificare le autorizzazioni necessarie, vedere la voce "Migrazione" in una tabella nell'argomento [Autorizzazioni di destinatari](https://go.microsoft.com/fwlink/p/?LinkId=534105).
 
@@ -48,7 +48,7 @@ Per un elenco completo dei comandi di migrazione, vedere [Cmdlet di spostamento 
 ### <a name="step-1-prepare-for-a-cutover-migration"></a>Passaggio 1: predisporre una migrazione completa
 <a name="BK_Step1"> </a>
 
-- **Aggiungere l'organizzazione di Exchange locale come dominio accettato dell'organizzazione Microsoft 365.** Il servizio di migrazione utilizza l'indirizzo SMTP delle cassette postali locali per creare l'ID utente e l'indirizzo di posta elettronica dei Microsoft Online Services per le nuove cassette postali di Microsoft 365. La migrazione avrà esito negativo se il dominio di Exchange non è un dominio accettato o il dominio principale dell'organizzazione Microsoft 365. Per ulteriori informazioni, vedere [verificare il dominio](https://go.microsoft.com/fwlink/p/?LinkId=534110).
+- **Aggiungere l'organizzazione Exchange locale come dominio accettato dell'organizzazione di Microsoft 365.** Il servizio di migrazione utilizza l'indirizzo SMTP delle cassette postali locali per creare l'ID utente Microsoft Online Services e l'indirizzo di posta elettronica per le nuove cassette postali di Microsoft 365. La migrazione avrà esito negativo se il dominio di Exchange non è un dominio accettato o il dominio principale dell'organizzazione di Microsoft 365. Per ulteriori informazioni, vedere [Verificare il dominio.](https://go.microsoft.com/fwlink/p/?LinkId=534110)
 
 - **Configurare Outlook via Internet nel server Exchange locale** Nel servizio di migrazione della posta elettronica viene utilizzato RPC su HTTP, anche denominato Outlook via Internet, per connettersi al server Exchange locale. Per informazioni sull'installazione di Outlook via Internet per Exchange 2010, Exchange 2007 ed Exchange 2003, vedere gli argomenti seguenti:
 
@@ -79,7 +79,7 @@ Per un elenco completo dei comandi di migrazione, vedere [Cmdlet di spostamento 
   Test-MigrationServerAvailability -ExchangeOutlookAnywhere -Autodiscover -EmailAddress <email address for on-premises administrator> -Credentials $credentials
   ```
 
-- **Assegnare a un account utente locale le autorizzazioni necessarie per accedere alle cassette postali nella propria organizzazione di Exchange.** L'account utente locale utilizzato per la connessione all'organizzazione di Exchange locale (denominato anche amministratore della migrazione) deve disporre delle autorizzazioni necessarie per accedere alle cassette postali locali di cui si desidera eseguire la migrazione a Microsoft 365. Questo account utente viene utilizzato per creare un endpoint di migrazione per la propria organizzazione locale.
+- **Assegnare a un account utente locale le autorizzazioni necessarie per accedere alle cassette postali nella propria organizzazione di Exchange.** L'account utente locale utilizzato per connettersi all'organizzazione di Exchange locale (denominato anche amministratore della migrazione) deve disporre delle autorizzazioni necessarie per accedere alle cassette postali locali di cui si desidera eseguire la migrazione a Microsoft 365. Questo account utente viene utilizzato per creare un endpoint di migrazione per la propria organizzazione locale.
 
     Nel seguente elenco vengono mostrati i privilegi amministrativi necessari per migrare le cassette postali tramite una migrazione completa. Esistono tre opzioni possibili.
 
@@ -95,12 +95,12 @@ Per un elenco completo dei comandi di migrazione, vedere [Cmdlet di spostamento 
 
 - **Disabilitare la messaggistica unificata.** Se le cassette postali locali di cui si sta eseguendo la migrazione sono abilitate per la messaggistica unificata, è necessario disabilitare la messaggistica stessa prima di eseguire la migrazione. È possibile quindi riabilitare la messaggistica unificata al termine della migrazione.
 
-- **Gruppi di sicurezza e delegati** Il servizio di migrazione della posta elettronica non è in grado di rilevare se i gruppi di Active Directory locali sono gruppi di sicurezza o meno, pertanto non è possibile eseguire il provisioning di gruppi migrati come gruppi di sicurezza in Microsoft 365. Se si desidera disporre di gruppi di sicurezza nel tenant Microsoft 365, è necessario innanzitutto eseguire il provisioning di un gruppo di sicurezza abilitato alla posta elettronica vuoto nel tenant di Microsoft 365 prima di avviare la migrazione di completa. Inoltre, questo metodo di migrazione consente di spostare solo le cassette postali, gli utenti di posta, i contatti di posta e gruppi abilitati alla posta. Se qualsiasi altro oggetto di Active Directory, ad esempio un utente che non esegue la migrazione a Microsoft 365, viene assegnato come Manager o delegato a un oggetto di cui è in corso la migrazione, è necessario rimuoverlo dall'oggetto prima di eseguire la migrazione.
+- **Gruppi e delegati di sicurezza** Il servizio di migrazione della posta elettronica non è in grado di rilevare se i gruppi di Active Directory locali sono gruppi di sicurezza o meno, quindi non può eseguire il provisioning di gruppi migrati come gruppi di sicurezza in Microsoft 365. Se si desidera avere gruppi di sicurezza nel tenant di Microsoft 365, è necessario effettuare il provisioning di un gruppo di sicurezza abilitato alla posta elettronica vuoto nel tenant di Microsoft 365 prima di avviare la migrazione completa. Inoltre, questo metodo di migrazione consente di spostare solo le cassette postali, gli utenti di posta, i contatti di posta e gruppi abilitati alla posta. Se qualsiasi altro oggetto di Active Directory, ad esempio un utente di cui non viene eseguita la migrazione a Microsoft 365, viene assegnato come responsabile o delegato a un oggetto di cui viene eseguita la migrazione, deve essere rimosso dall'oggetto prima di eseguire la migrazione.
 
 ### <a name="step-2-create-a-migration-endpoint"></a>Passaggio 2: creare un endpoint di migrazione
 <a name="BK_Step2"> </a>
 
-Per eseguire correttamente la migrazione della posta elettronica, Microsoft 365 deve connettersi e comunicare con il sistema di posta elettronica di origine. A tale scopo, Microsoft 365 utilizza un endpoint di migrazione. Per creare un endpoint di migrazione di Outlook via Internet per una migrazione completa, è necessario innanzitutto [connettersi a Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=534121).
+Per eseguire correttamente la migrazione della posta elettronica, Microsoft 365 deve connettersi e comunicare con il sistema di posta elettronica di origine. A tale scopo, Microsoft 365 usa un endpoint di migrazione. Per creare un endpoint di migrazione di Outlook via Internet per una migrazione completa, è necessario innanzitutto [connettersi a Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=534121).
 
 Per un elenco completo dei comandi di migrazione, vedere [Cmdlet di spostamento e migrazione](https://go.microsoft.com/fwlink/p/?LinkId=534750).
 
@@ -172,10 +172,10 @@ Se un batch di migrazione è avviato correttamente, il relativo stato sul dashbo
 Get-MigrationBatch -Identity CutoverBatch |  Format-List Status
 ```
 
-### <a name="step-5-route-your-email-to-microsoft-365"></a>Passaggio 5: instradare la posta elettronica a Microsoft 365
+### <a name="step-5-route-your-email-to-microsoft-365"></a>Passaggio 5: Instradare la posta elettronica a Microsoft 365
 <a name="BK_Step5"> </a>
 
-I sistemi di posta elettronica utilizzano un record DNS denominato record MX per individuare dove recapitare i messaggi di posta elettronica. Durante il processo di migrazione della posta elettronica, il record MX fa riferimento al sistema di posta elettronica di origine. Una volta completata la migrazione della posta elettronica a Microsoft 365, è possibile puntare il record MX su Microsoft 365. Ciò consente di verificare che la posta elettronica venga recapitata alle cassette postali di Microsoft 365. Spostando il record MX, è inoltre possibile disattivare il sistema di posta elettronica precedente al momento più opportuno.
+I sistemi di posta elettronica utilizzano un record DNS denominato record MX per individuare dove recapitare i messaggi di posta elettronica. Durante il processo di migrazione della posta elettronica, il record MX fa riferimento al sistema di posta elettronica di origine. Ora che la migrazione della posta elettronica a Microsoft 365 è stata completata, è il momento di puntare il record MX a Microsoft 365. In questo modo si garantisce che la posta elettronica sia recapitata alle cassette postali di Microsoft 365. Spostando il record MX, è inoltre possibile disattivare il sistema di posta elettronica precedente al momento più opportuno.
 
 Per molti provider DNS, sono disponibili istruzioni specifiche per modificare il record MX. Se il proprio provider DNS non è incluso o se si preferisce ottenere indicazioni generali, vedere le [istruzioni generali sui record MX](https://support.office.microsoft.com/article/7b7b075d-79f9-4e37-8a9e-fb60c1d95166#bkmk_add_mx).
 
@@ -184,11 +184,11 @@ Per molti provider DNS, sono disponibili istruzioni specifiche per modificare il
 ### <a name="step-6-delete-the-cutover-migration-batch"></a>Passaggio 6: eliminare il batch di migrazione completa
 <a name="Bk_step6"> </a>
 
-Dopo aver modificato il record MX e aver verificato che tutti i messaggi di posta elettronica vengano instradati alle cassette postali di Microsoft 365, informare gli utenti che la posta viene inviata a Microsoft 365. Dopo questa operazione, è possibile eliminare il batch di migrazione completa. Verificare le seguenti condizioni prima di eliminare il batch di migrazione.
+Dopo aver modificato il record MX e verificato che tutta la posta elettronica venga instradata alle cassette postali di Microsoft 365, informare gli utenti che la posta verrà inviata a Microsoft 365. Dopo questa operazione, è possibile eliminare il batch di migrazione completa. Verificare le seguenti condizioni prima di eliminare il batch di migrazione.
 
-- Tutti gli utenti utilizzano le cassette postali di Microsoft 365. Dopo l'eliminazione del batch, la posta inviata alle cassette postali sul server Exchange locale non viene copiata nelle cassette postali di Microsoft 365 corrispondenti.
+- Tutti gli utenti usano le cassette postali di Microsoft 365. Dopo l'eliminazione del batch, la posta inviata alle cassette postali nel Exchange Server locale non viene copiata nelle cassette postali di Microsoft 365 corrispondenti.
 
-- Le cassette postali di Microsoft 365 sono state sincronizzate almeno una volta dopo che la posta è cominciata a essere inviata direttamente. Per eseguire questa operazione, verificare che il valore dell'ultima casella di tempo sincronizzato per il batch di migrazione sia più recente rispetto al momento in cui la posta elettronica ha iniziato a essere instradata direttamente alle cassette postali di Microsoft 365.
+- Le cassette postali di Microsoft 365 sono state sincronizzate almeno una volta dopo l'inizio dell'invio diretto della posta. A tale scopo, assicurarsi che il valore nella casella Ultima sincronizzazione per il batch di migrazione sia più recente rispetto all'inizio dell'instradato della posta direttamente alle cassette postali di Microsoft 365.
 
 Per eliminare il batch di migrazione "CutoverBatch" in PowerShell di Exchange Online, eseguire il comando riportato di seguito:
 
@@ -199,27 +199,27 @@ Remove-MigrationBatch -Identity CutoverBatch
 ### <a name="section-7-assign-user-licenses"></a>Sezione 7: assegnare licenze utente
 <a name="BK_Step7"> </a>
 
- **Attivare gli account utente di Microsoft 365 per gli account migrati assegnando le licenze.** Se non si assegna una licenza, la cassetta postale viene disabilitata al termine del periodo di prova (30 giorni). Per assegnare una licenza nell'interfaccia di amministrazione di Microsoft 365, vedere [assegnare o](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)annullare l'assegnazione delle licenze.
+ **Attivare gli account utente di Microsoft 365 per gli account migrati assegnando le licenze.** Se non si assegna una licenza, la cassetta postale viene disabilitata al termine del periodo di prova (30 giorni). Per assegnare una licenza nell'interfaccia di amministrazione di Microsoft 365, vedere Assegnare o [annullare l'assegnazione delle licenze.](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)
 
 ### <a name="step-8-complete-post-migration-tasks"></a>Passaggio 8: completare le attività successive alla migrazione
 <a name="BK_Step8"> </a>
 
-- **Creare un record DNS di individuazione automatica affinché gli utenti possano accedere facilmente alle proprie cassette postali.** Dopo la migrazione di tutte le cassette postali locali a Microsoft 365, è possibile configurare un record DNS di individuazione automatica per l'organizzazione di Microsoft 365 per consentire agli utenti di connettersi facilmente alle nuove cassette postali di Microsoft 365 con Outlook e i client mobili. Questo nuovo record DNS di individuazione automatica deve utilizzare lo stesso spazio dei nomi che si sta utilizzando per l'organizzazione Microsoft 365. Ad esempio, se lo spazio dei nomi basato su cloud è cloud.contoso.com, il record DNS di individuazione automatica che deve essere creato è autodiscover.cloud.contoso.com.
+- **Creare un record DNS di individuazione automatica affinché gli utenti possano accedere facilmente alle proprie cassette postali.** Dopo aver eseguito la migrazione di tutte le cassette postali locali a Microsoft 365, è possibile configurare un record DNS di individuazione automatica per l'organizzazione di Microsoft 365 per consentire agli utenti di connettersi facilmente alle nuove cassette postali di Microsoft 365 con Outlook e client mobili. Questo nuovo record DNS di individuazione automatica deve usare lo stesso spazio dei nomi utilizzato per l'organizzazione di Microsoft 365. Ad esempio, se lo spazio dei nomi basato su cloud è cloud.contoso.com, il record DNS di individuazione automatica che deve essere creato è autodiscover.cloud.contoso.com.
 
-    Se si mantiene il server Exchange, è inoltre necessario verificare che il record CNAME DNS di individuazione automatica debba puntare a Microsoft 365 in DNS interno ed esterno dopo la migrazione in modo che il client di Outlook si connetta alla cassetta postale corretta.
+    Se si mantiene il Exchange Server, è inoltre necessario assicurarsi che il record CNAME DNS di individuazione automatica punti a Microsoft 365 in DNS interno ed esterno dopo la migrazione, in modo che il client Outlook si connetta alla cassetta postale corretta.
 
     > [!NOTE]
     >  In Exchange 2007, Exchange 2010 e Exchange 2013 è inoltre necessario impostare  `Set-ClientAccessServer AutodiscoverInternalConnectionURI` su `Null`.
 
-    Microsoft 365 utilizza un record CNAME per implementare il servizio di individuazione automatica per Outlook e i client mobili. Il record CNAME di individuazione automatica deve includere le seguenti informazioni:
+    Microsoft 365 usa un record CNAME per implementare il servizio di individuazione automatica per Outlook e i client mobili. Il record CNAME di individuazione automatica deve includere le seguenti informazioni:
 
   - **Alias:** individuazione automatica
 
   - **Destinazione:** autodiscover.outlook.com
 
-    Per ulteriori informazioni, vedere [aggiungere record DNS per connettere il dominio](https://go.microsoft.com/fwlink/p/?LinkId=535028).
+    Per ulteriori informazioni, vedere [Aggiungere record DNS per connettere il dominio.](https://go.microsoft.com/fwlink/p/?LinkId=535028)
 
-- **Rimuovere i server di Exchange locali.** Dopo aver verificato che tutta la posta elettronica viene instradata direttamente alle cassette postali di Microsoft 365 e che non è più necessario mantenere l'organizzazione di posta elettronica locale o non pianificare l'implementazione di una soluzione Single Sign-on (SSO), è possibile disinstallare Exchange dai server e rimuovere l'organizzazione di Exchange locale.
+- **Rimuovere i server di Exchange locali.** Dopo aver verificato che tutta la posta elettronica viene instradata direttamente alle cassette postali di Microsoft 365 e non è più necessario mantenere l'organizzazione di posta elettronica locale o non si prevede di implementare una soluzione Single Sign-On (SSO), è possibile disinstallare Exchange dai server e rimuovere l'organizzazione di Exchange locale.
 
     Per ulteriori informazioni, vedere gli argomenti seguenti:
 

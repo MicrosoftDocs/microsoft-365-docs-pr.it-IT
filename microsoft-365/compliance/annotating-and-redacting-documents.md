@@ -1,5 +1,5 @@
 ---
-title: Visualizzazione di documenti in un set di revisione in Advanced eDiscovery
+title: Visualizzazione di documenti in un insieme da rivedere in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ms.custom: seo-marvel-mar2020
-description: È possibile annotare e redigere i documenti in un set di revisione in Advanced eDiscovery.
+description: È possibile annotare e redigere documenti in una recensione impostata in Advanced eDiscovery.
 ROBOTS: NOINDEX, NOFOLLOW
 ms.openlocfilehash: 664045a3df50cdceb650208459c122049dba7c7c
 ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
@@ -25,6 +25,6 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 09/26/2020
 ms.locfileid: "48285542"
 ---
-# <a name="annotate-and-redact-documents-in-a-review-set-in-advanced-ediscovery"></a>Annotare e redigere i documenti in un set di revisione in Advanced eDiscovery
+# <a name="annotate-and-redact-documents-in-a-review-set-in-advanced-ediscovery"></a>Annotare e redigere documenti in una recensione impostata in Advanced eDiscovery
 
 Il contenuto sarà disponibile a breve.

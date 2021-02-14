@@ -16,7 +16,7 @@ search.appverid:
 - MET150
 ms.assetid: ''
 ROBOTS: NOINDEX, NOFOLLOW
-description: Informazioni su come esaminare i dati dei casi in un set di revisione in Advanced eDiscovery.
+description: Informazioni sulla revisione dei dati dei casi in un insieme di recensioni in Advanced eDiscovery.
 ms.openlocfilehash: 890edc0e813f620944cea1e73bc8f9dc45132eb3
 ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
 ms.translationtype: MT

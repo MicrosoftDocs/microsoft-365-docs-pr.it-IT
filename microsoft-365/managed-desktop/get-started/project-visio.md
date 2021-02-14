@@ -1,6 +1,6 @@
 ---
 title: Installare Microsoft Project o Microsoft Visio nei dispositivi Microsoft Managed Desktop
-description: Informazioni sull'installazione di Microsoft Project o Microsoft Visio sui dispositivi Microsoft Managed Desktop
+description: Informazioni sull'installazione di Microsoft Project o Microsoft Visio nei dispositivi Microsoft Managed Desktop
 keywords: Microsoft Managed Desktop, Microsoft 365, Microsoft Project, Microsoft Visio
 ms.service: m365-md
 author: jaimeo
@@ -17,28 +17,28 @@ ms.locfileid: "47950533"
 ---
 # <a name="install-microsoft-project-or-microsoft-visio-on-microsoft-managed-desktop-devices"></a>Installare Microsoft Project o Microsoft Visio nei dispositivi Microsoft Managed Desktop
 
-Microsoft Project e Microsoft Visio richiedono una procedura specifica da installare sui dispositivi Microsoft Managed Desktop. In questo argomento vengono documentati i prerequisiti e il processo di installazione per queste applicazioni.
+Microsoft Project e Microsoft Visio richiedono l'installazione di passaggi specifici nei dispositivi Microsoft Managed Desktop. In questo argomento vengono documentati i prerequisiti e il processo di installazione per queste applicazioni.
 
 ## <a name="prerequisites"></a>Prerequisiti
 
 Gli amministratori devono verificare che soddisfino questi prerequisiti:
-- **Quantità di licenza** : la quantità corretta di Microsoft Project e delle licenze di Microsoft Visio deve essere disponibile per gli utenti. Microsoft Managed Desktop attualmente supporta solo le versioni a 64 bit di queste applicazioni. 
-- **Nomi delle licenze** -i nomi delle licenze appropriate per queste applicazioni sono:
-    - **Microsoft Project** -Project Online Professional o Project Online Premium
-    - **Microsoft Visio** -Visio online, piano 2
-- **Portale aziendale** : il portale aziendale deve essere disponibile nel tenant per consentire agli utenti di installare queste applicazioni. Se il portale aziendale non è distribuito nel tenant, vedere [Company Portal](company-portal.md).
+- **Quantità di** licenze: la quantità corretta di licenze di Microsoft Project e Microsoft Visio deve essere disponibile per gli utenti. Microsoft Managed Desktop attualmente supporta solo le versioni a 64 bit di queste applicazioni. 
+- **Nomi delle licenze:** i nomi di licenza appropriati per queste applicazioni sono:
+    - **Microsoft Project** - Project Online Professional o Project Online Premium
+    - **Microsoft Visio** - Visio Online Piano 2
+- **Portale aziendale:** il portale aziendale deve essere disponibile nel tenant per consentire agli utenti di installare queste applicazioni. Se il portale aziendale non è distribuito nel tenant, vedere [Portale aziendale.](company-portal.md)
 
 ## <a name="deploy-project-and-visio-for-microsoft-managed-desktop-devices"></a>Distribuire Project e Visio per i dispositivi Microsoft Managed Desktop
-Microsoft Managed Desktop aggiungerà Microsoft Project e Microsoft Visio come due applicazioni Win32 in Microsoft Intune. Verranno inoltre creati due gruppi in Azure Active Directory che verranno assegnati all'applicazione corrispondente con lo scopo "available". 
+Microsoft Managed Desktop aggiungerà Microsoft Project e Microsoft Visio come due applicazioni Win32 in Microsoft Intune. Verranno inoltre creati due gruppi in Azure Active Directory che verranno assegnati all'applicazione corrispondente con lo scopo "Disponibile". 
 
-**Per distribuire Project e Visio** Aggiungere l'utente al gruppo appropriato e l'applicazione diventerà disponibile nel portale aziendale. La sincronizzazione potrebbe richiedere alcuni minuti, ma gli utenti possono installare le app dal portale aziendale. 
+**Per distribuire Project e Visio** Aggiungi l'utente al gruppo appropriato e l'applicazione diventerà disponibile nel portale aziendale. La sincronizzazione potrebbe richiedere alcuni minuti, ma gli utenti possono installare le app dal portale aziendale. 
 
 Nome del gruppo di Azure AD | Quali utenti assegnare?   
  --- | ---
-Ambiente di lavoro moderno-Office-Project_Install | Utenti che necessitano di un progetto
-Ambiente di lavoro moderno-Office-Visio_Install | Utenti che hanno bisogno di Visio
+Modern Workplace-Office-Project_Install | Utenti che necessitano di Project
+Modern Workplace-Office-Visio_Install | Utenti che necessitano di Visio
 
 ## <a name="communicate-changes"></a>Comunicare le modifiche
-Per gli amministratori IT è importante consentire agli utenti di sapere come installare Project e Visio. Ciò include: 
-- Notifica agli utenti quando sono disponibili per queste applicazioni. 
+È importante che gli amministratori IT sappiano come installare Project e Visio. Ciò include: 
+- Notifica agli utenti quando queste applicazioni sono disponibili. 
 - Istruzioni su come installare queste applicazioni dal portale aziendale.

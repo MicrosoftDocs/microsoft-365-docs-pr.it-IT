@@ -26,7 +26,7 @@ search.appverid:
 - BEA160
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
-description: Informazioni su come reimpostare la password per un utente nell'abbonamento a Microsoft 365 for business.
+description: Informazioni su come reimpostare la password per un utente nell'abbonamento a Microsoft 365 per le aziende.
 ms.openlocfilehash: faae2d31f29eb4817abc31cde1e1ce2bd6a47db1
 ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
 ms.translationtype: MT
@@ -36,23 +36,23 @@ ms.locfileid: "48131702"
 ---
 # <a name="reset-passwords"></a>Reimpostare le password
 
-In questo articolo viene illustrato come reimpostare le password per se stessi e per gli utenti quando si dispone di un abbonamento a Microsoft 365 for business.
+Questo articolo spiega come reimpostare le password per se stessi e per gli utenti quando si dispone di un abbonamento a Microsoft 365 per le aziende.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
 Questo articolo è per le persone che impostano criteri di scadenza delle password in un'azienda, un istituto di istruzione o un'organizzazione no profit. Per completare questa procedura, è necessario accedere con l'account amministratore di Microsoft 365. [Che cos'è un account amministratore?](../admin-overview/admin-overview.md).
 
-Per eseguire questa procedura è necessario essere un [amministratore globale o una password](about-admin-roles.md) .
+Per eseguire questa [procedura, è](about-admin-roles.md) necessario essere un amministratore globale o un amministratore delle password.
 
-## <a name="watch-reset-a-business-password-for-a-user"></a>Watch: reimpostare una password aziendale per un utente
+## <a name="watch-reset-a-business-password-for-a-user"></a>Watch: Reset a business password for a user
 
 Guardare un breve video sulla reimpostazione delle password degli utenti.<br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FVVP]
 
-Se il video è stato utile, consultare la [serie di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
+Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
   
-## <a name="steps-reset-a-business-password-for-a-user"></a>Passaggi: reimpostare una password aziendale per un utente
+## <a name="steps-reset-a-business-password-for-a-user"></a>Procedura: Reimpostare una password aziendale per un utente
 
 ::: moniker range="o365-worldwide"
 
@@ -72,11 +72,11 @@ Se il video è stato utile, consultare la [serie di formazione completa per picc
 
 ::: moniker-end
 
-2. Nella pagina **utenti attivi** selezionare l'utente e quindi selezionare **Reimposta password**.
+2. Nella pagina **Utenti attivi** selezionare l'utente e quindi fare clic su **Reimposta password.**
 
-3. Seguire le istruzioni riportate nella pagina **Reimposta password** per generare automaticamente una nuova password per l'utente oppure crearne una per loro, quindi selezionare **Reimposta**.  
+3. Seguire le istruzioni nella pagina Reimposta **password** per generare automaticamente una nuova password per l'utente o crearne una per l'utente, quindi selezionare **Reimposta.**  
 
-4. Immettere un indirizzo di posta elettronica che l'utente può ottenere in modo che ricevano la nuova password e seguirli per assicurarsi che siano stati ottenuti.
+4. Immetti un indirizzo e-mail a cui l'utente può accedere per ricevere la nuova password e seguilo per assicurarti di ottenerla.
 
 ## <a name="let-users-reset-their-own-passwords"></a>Consentire agli utenti di reimpostare le loro password
 
@@ -84,40 +84,40 @@ Se il video è stato utile, consultare la [serie di formazione completa per picc
 
 ## <a name="reset-my-admin-password"></a>Reimpostare la password di amministratore
 
-Utilizzare questa procedura se si è dimenticato la password ma si è in grado di accedere a Microsoft 365 perché, ad esempio, la password viene salvata nel browser:
+Seguire questa procedura se si è dimenticata la password, ma si è in grado di accedere a Microsoft 365 perché, ad esempio, la password viene salvata nel browser:
 
-1. Seleziona il tuo nome (icona) nell'angolo in alto a destra > **le**  >  **informazioni personali**del mio account.
+1. Seleziona il tuo nome (icona) nell'angolo in alto a destra > **Informazioni personali del mio**  >  **account.**
 
-2. In **informazioni di contatto**, verificare che la **posta elettronica alternativa** sia accurata e che sia stato fornito un numero di cellulare. In caso contrario, cambiali subito.
+2. In **Dettagli contatto** verificare che l'indirizzo di posta elettronica alternativo sia accurato e che sia stato fornito un numero di cellulare.  In caso contrario, modificarli ora.
 
-3. Esci: seleziona il tuo nome nell'angolo in alto a destra \> **disconnettiti**.
+3. Disconnettersi: selezionare il proprio nome nell'angolo in alto a \> **destra Disconnettersi.**
 
-4. Ora accedi di nuovo: digita il tuo nome \> **utente** \> e quindi seleziona **password dimenticata**.
+4. Ora accedi di nuovo: digita il nome utente \> **Avanti** \> e quindi seleziona Password **dimenticata.**
 
-5. Seguire i passaggi della procedura guidata per reimpostare la password. Utilizza le informazioni di contatto alternative per verificare di essere la persona giusta per reimpostare la password.
+5. Seguire i passaggi della procedura guidata per reimpostare la password. Usa le info di contatto alternative per verificare che tu sia la persona giusta per reimpostare la password.
 
-Se si è dimenticato la password e non si è in grado di accedere:
+Se hai dimenticato la password e non riesci ad accedere:
 
-- Chiedere a un altro amministratore globale dell'azienda di reimpostare la password per l'utente.
+- Chiedere a un altro amministratore globale dell'azienda di reimpostare automaticamente la password.
 
-- Assicurarsi di aver fornito informazioni di contatto alternative, incluso un numero di cellulare.
+- Assicurati di aver fornito informazioni di contatto alternative, incluso un numero di cellulare.
 
-- In alternativa, [contattare il supporto tecnico Microsoft](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
+- In caso contrario, [chiamare il supporto tecnico Microsoft.](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)
 
 ## <a name="reset-all-business-passwords-for-everyone-in-your-organization-at-the-same-time"></a>Reimpostare contemporaneamente tutte le password aziendali per tutti gli utenti dell'organizzazione
 <a name="bkmk_forgot"> </a>
 
-Questi passaggi sono validi per un'azienda con decine di utenti. Se si dispone di centinaia o migliaia di utenti, vedere la sezione successiva sulla reimpostazione delle password all'ingrosso (massimo 40 utenti alla volta).
+Questi passaggi sono validi per un'azienda con decine di utenti. Se si dispone di centinaia o migliaia di utenti, vedere la sezione successiva sulla reimpostazione delle password in blocco (massimo 40 utenti alla volta).
   
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
 
-2. Selezionare l'opzione accanto a **nome visualizzato** per selezionare tutti gli utenti dell'azienda. Quindi deseleziona te stesso. Non è possibile reimpostare la propria password nello stesso momento in cui si reimposta la password di tutti gli altri.
+2. Selezionare l'opzione accanto a **Nome visualizzato** per selezionare tutti gli utenti dell'azienda. Deseleziona quindi te stesso. Non è possibile reimpostare la propria password contemporaneamente alla password di tutti gli altri utenti.
 
-3. Selezionare **Reimposta password**. 
+3. Selezionare **Reimposta password.** 
 
-4. Seguire le istruzioni riportate nella pagina **Reimposta password** e selezionare **Reimposta**.  Se si è scelto di generare automaticamente le password, verranno visualizzate le nuove password temporanee.
+4. Seguire le istruzioni nella pagina **Reimposta password** e selezionare **Reimposta.**  Se hai scelto di generare automaticamente le password, verranno visualizzate le nuove password temporanee.
 
-5. Immettere un indirizzo di posta elettronica in cui è possibile ricevere le password temporanee. Sarà necessario informare gli utenti su quali sono le password temporanee.
+5. Immettere un indirizzo di posta elettronica in cui è possibile ricevere le password temporanee. Dovrai comunicare agli utenti quali sono le password temporanee.
   
 ## <a name="reset-business-passwords-in-bulk"></a>Reimpostare le password aziendali in blocco
 <a name="bkmk_forgot"> </a>
@@ -126,13 +126,13 @@ Usare PowerShell. Vedere questo post di Eyal Doron: [Gestire le password con Pow
   
 <!-- Here's a related article: [Set the passwords for multiple user accounts](https://docs.microsoft.com/office365/enterprise/powershell/manage-office-365-with-office-365-powershell). -->
   
-Per informazioni generali, vedere [gestire Microsoft 365 con PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell).
+Per informazioni generali, vedere [Gestire Microsoft 365 con PowerShell.](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-with-microsoft-365-powershell)
   
 ## <a name="force-a-password-change-for-all-users-in-your-business"></a>Forzare la modifica della password per tutti gli utenti dell'organizzazione
 
 Vedere questo interessante post di blog da Vasil Michev, MVP Microsoft: [Forzare la modifica della password per tutti gli utenti in Office 365](https://go.microsoft.com/fwlink/?linkid=853693).
   
-## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>Non si dispone di un abbonamento a Microsoft 365 for business
+## <a name="i-dont-have-a-microsoft-365-for-business-subscription"></a>Non ho un abbonamento a Microsoft 365 per le aziende
 
 Leggere questo articolo: [Si è dimenticato l'account o la password per l'account usato con Office](https://support.microsoft.com/office/eba0b4a2-c0ae-472c-99f6-bc63ee2425a8?wt.mc_id=SCL_reset-passwords_AdmHlp).
   

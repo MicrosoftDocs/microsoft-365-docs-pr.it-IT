@@ -1,5 +1,5 @@
 ---
-title: Visualizzare i documenti in un set di revisione in Advanced eDiscovery
+title: Visualizzare i documenti in una recensione impostata in Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Scegliere la modalità di visualizzazione del contenuto in Advanced eDiscovery, ad esempio testo, annotazioni, conversione o visualizzazione nativa.
+description: Scegliere la modalità di visualizzazione del contenuto in Advanced eDiscovery, ad esempio testo, annotazione, conversione o visualizzazione nativa.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: ba66b64460a4aa9cf76641c6d84f0282195b85e9
 ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
@@ -22,72 +22,72 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 09/26/2020
 ms.locfileid: "48286052"
 ---
-# <a name="view-documents-in-a-review-set-in-advanced-ediscovery"></a>Visualizzare i documenti in un set di revisione in Advanced eDiscovery
+# <a name="view-documents-in-a-review-set-in-advanced-ediscovery"></a>Visualizzare i documenti in una recensione impostata in Advanced eDiscovery
 
-Advanced eDiscovery Visualizza il contenuto tramite diversi visualizzatori ognuno con diversi scopi. È possibile utilizzare i diversi visualizzatori facendo clic su qualsiasi documento all'interno di un set di revisione. I visualizzatori attualmente forniti sono:
+Advanced eDiscovery visualizza il contenuto tramite diversi visualizzatori ognuno con scopi diversi. I vari visualizzatori possono essere utilizzati facendo clic su qualsiasi documento all'interno di un insieme da rivedere. I visualizzatori attualmente disponibili sono:
 
 - Metadati dei file
 - Visualizzazione nativa
-- Visualizzazione testo
-- Visualizzazione annotazioni
+- Visualizzazione Testo
+- Visualizzazione Annotazione
 - Visualizzazione convertita
 
 ## <a name="file-metadata"></a>Metadati dei file
 
-Questo pannello può essere attivato/disattivato per visualizzare i vari metadati associati al documento. Anche se la griglia dei risultati di ricerca può essere personalizzata per la visualizzazione di metadati specifici, è possibile che lo scorrimento orizzontale possa essere difficoltoso durante la revisione dei dati. Il pannello metadati file consente a un utente di alternare una visualizzazione all'interno del visualizzatore.
+Questo pannello può essere attivato/disattivato per visualizzare vari metadati associati al documento. Anche se la griglia dei risultati di ricerca può essere personalizzata per visualizzare metadati specifici, esistono casi in cui lo scorrimento orizzontale può essere difficile durante la revisione dei dati. Il pannello Metadati file consente all'utente di attivare o disattivare una visualizzazione all'interno del visualizzatore.
 
 ![Pannello metadati file
 ](../media/Reviewimage2.png)
 
 ## <a name="native-view"></a>Visualizzazione nativa
 
-Il Visualizzatore nativo Visualizza la visualizzazione più ricca di un documento. Supporta centinaia di tipi di file e ha lo scopo di visualizzare l'esperienza più vera e nativa possibile. Per i file di Microsoft Office, il visualizzatore utilizza la versione Web delle app di Office per visualizzare il contenuto, ad esempio commenti, formule di Excel, righe/colonne nascoste e note di PowerPoint.
+Il visualizzatore nativo visualizza la visualizzazione più ricca di un documento. Supporta centinaia di tipi di file e ha lo scopo di visualizzare l'esperienza nativa più vera possibile. Per Microsoft Office, il visualizzatore utilizza la versione Web delle app di Office per visualizzare contenuto come commenti a documenti, formule di Excel, righe/colonne nascoste e note di PowerPoint.
 
 ![Visualizzazione nativa
 ](../media/Reviewimage3.png)
 
-## <a name="text-view"></a>Visualizzazione testo
+## <a name="text-view"></a>Visualizzazione Testo
 
-Il Visualizzatore di testo consente di visualizzare il testo estratto di un file. Ignora tutte le immagini e la formattazione incorporate, ma è molto efficace se si sta tentando di comprendere rapidamente il contenuto. La visualizzazione del testo include anche queste caratteristiche:
+Il visualizzatore di testo offre una visualizzazione del testo estratto di un file. Ignora le immagini e la formattazione incorporate, ma è molto efficace se si cerca di comprendere rapidamente il contenuto. La visualizzazione testo include anche le caratteristiche seguenti:
 
-  - Il contatore linea rende più facile fare riferimento a parti specifiche di un documento
+  - Il contatore delle righe semplifica il riferimento a parti specifiche di un documento
 
-  - Evidenziazione hit Search che evidenzierà i termini all'interno del documento e la barra di scorrimento
+  - Evidenziazione dei risultati della ricerca che evidenzia i termini all'interno del documento e la barra di scorrimento
 
-  - La visualizzazione diff fornisce una visualizzazione di confronto che evidenzia le differenze testuali quando si visualizza vicino a documenti duplicati
+  - La visualizzazione Diff offre una visualizzazione di confronto che evidenzia le differenze di testo durante la visualizzazione di documenti quasi duplicati
 
-![Visualizzazione testo
+![Visualizzazione Testo
 ](../media/Reviewimage4.png)
 
-![Visualizzazione diff
+![Visualizzazione Diff
 ](../media/Reviewimage5.png)
 
-## <a name="annotate-view"></a>Visualizzazione annotazioni
+## <a name="annotate-view"></a>Visualizzazione Annotazione
 
-La visualizzazione annotazioni fornisce caratteristiche che consentono agli utenti di applicare il markup su un documento, tra cui:
+La visualizzazione Annotazione offre funzionalità che consentono agli utenti di applicare commenti a un documento, tra cui:
 
-  - Redazioni area: gli utenti possono disegnare una casella del documento per nascondere i contenuti sensibili
+  - Redazioni area: gli utenti possono disegnare una casella sul documento per nascondere il contenuto sensibile
 
-  - Matita: gli utenti possono disegnare a mano libera su un documento per portare l'attenzione su determinate parti di un documento.
+  - Matita: gli utenti possono disegnare a mano libera su un documento per attirare l'attenzione su alcune parti di un documento
 
-  - Seleziona annotazioni: gli utenti possono selezionare le annotazioni di un documento per eliminare
+  - Selezionare le annotazioni: gli utenti possono selezionare le annotazioni in un documento per eliminarle
 
-  - Toggle trasparenza annotazione – rende le annotazioni semitrasparenti per visualizzare il contenuto dietro l'annotazione
+  - Attiva/Disattiva trasparenza annotazione: rende le annotazioni semitrasparenti per visualizzare il contenuto dietro l'annotazione
 
-  - Pagina precedente – consente di accedere alla pagina precedente
+  - Pagina precedente : consente di passare alla pagina precedente
 
-  - Pagina successiva – passa alla pagina successiva
+  - Pagina successiva: consente di passare alla pagina successiva
 
-  - Vai a pagina-l'utente può immettere un numero di pagina specifico per passare a
+  - Vai alla pagina: l'utente può immettere un numero di pagina specifico a cui passare
 
-  - Zoom – impostare il livello di zoom per la visualizzazione annotazioni
+  - Zoom: impostare il livello di zoom per la visualizzazione delle annotazioni
 
-  - Ruota – l'utente può ruotare il documento in senso orario
+  - Rotazione: l'utente può ruotare il documento in senso orario
 
-  - Search: l'utente può eseguire una ricerca in un documento e passare ai vari successi all'interno del documento
+  - Ricerca: l'utente può cercare all'interno di un documento e passare ai vari risultati all'interno del documento
     
-    ![Visualizzazione annotazioni
+    ![Visualizzazione Annotazione
     ](../media/Reviewimage1.png)
 
-## <a name="dashboard-view"></a>Visualizzazione Dashboard 
-La visualizzazione dashboard consente di visualizzare e riepilogare i dati nella griglia dei risultati di ricerca. In questa visualizzazione, è possibile creare widget personalizzati per rendere intuitiva e semplice l'analisi e la creazione di report nel set di recensioni. Dopo aver creato i widget, è possibile interagire con essi per ottenere i conteggi degli elementi o creare una ricerca. 
+## <a name="dashboard-view"></a>Visualizzazione dashboard 
+La visualizzazione dashboard consente di visualizzare e riepilogare i dati nella griglia dei risultati della ricerca. In questa visualizzazione è possibile creare widget personalizzati per semplificare e semplificare l'analisi e la creazione di report sul set di recensioni. Dopo aver creato i widget, è possibile interagire con essi per ottenere il numero di elementi o per creare una ricerca. 

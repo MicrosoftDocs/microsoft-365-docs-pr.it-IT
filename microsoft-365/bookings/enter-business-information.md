@@ -8,7 +8,7 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 ms.assetid: 828a17db-956a-401e-bb62-d153b6dffd53
-description: Seguire le istruzioni riportate di seguito per creare la pagina about US, inclusi il nome dell'azienda, l'indirizzo, il numero di telefono, l'URL, il logo e l'orario di ufficio di Microsoft bookings.
+description: Segui queste istruzioni per creare la pagina Informazioni su di Noi, inclusi nome dell'azienda, indirizzo, numero di telefono, URL del sito Web, logo e orario di ufficio in Microsoft Bookings.
 ms.openlocfilehash: 0424794d4627d7c6770f86f32d81d4653f889163
 ms.sourcegitcommit: 7c0873d2a804f17697844fb13f1a100fabce86c4
 ms.translationtype: MT
@@ -18,46 +18,46 @@ ms.locfileid: "47962502"
 ---
 # <a name="enter-your-business-information"></a>Immettere le informazioni aziendali
 
-In Microsoft bookings, la pagina di informazioni aziendali all'interno dell'app Web contiene tutti i dettagli che in genere si trovano in una pagina "chi siamo" dell'azienda. Questi dettagli includono il nome, l'indirizzo, il numero di telefono, l'URL del sito Web, l'URL, il logo e l'orario di ufficio della privacy policy.
+In Microsoft Bookings, la pagina Informazioni aziendali all'interno dell'app Web contiene tutti i dettagli che in genere si trovano nella pagina "Informazioni su di noi" di un'azienda. Questi dettagli includono il nome, l'indirizzo, il numero di telefono, l'URL del sito Web, l'URL dell'informativa sulla privacy, il logo e l'orario di ufficio.
 
-Le informazioni fornite in questo articolo verranno visualizzate nella pagina clienti e client per prenotare appuntamenti (nota come pagina di prenotazione) e nei messaggi e promemoria inviati loro dalle prenotazioni. Di seguito è riportato un esempio di queste informazioni nella pagina di prenotazione.
+Le informazioni fornite qui verranno visualizzate nella pagina che i clienti e i clienti utilizzano per prenotare gli appuntamenti (nota come pagina di prenotazione) e nei messaggi e promemoria inviati loro da Bookings. Di seguito è riportato un esempio di queste informazioni nella pagina di prenotazione.
 
-   ![Esempio di pagina immagini di informazioni aziendali in Microsoft bookings](../media/bookings-business-info.png)
+   ![Immagine dell'esempio di pagina Informazioni aziendali in Microsoft Bookings](../media/bookings-business-info.png)
 
 > [!NOTE]
-> Per iniziare, vedere [accesso a Microsoft bookings](get-access.md). Per abilitare o disabilitare le prenotazioni, vedere [attivazione o disattivazione delle prenotazioni per l'organizzazione](turn-bookings-on-or-off.md).
+> Per iniziare, vedere [Accedere a Microsoft Bookings.](get-access.md) Per attivare o disattivare Bookings, vedere Attivare o disattivare [Bookings per l'organizzazione.](turn-bookings-on-or-off.md)
 
 ## <a name="provide-business-name-and-contact-information"></a>Specificare il nome e le informazioni di contatto dell'azienda
 
-1. In Microsoft 365 selezionare l'icona di avvio delle app e quindi selezionare **bookings**.
+1. In Microsoft 365, selezionare l'icona di avvio delle app e quindi **selezionare Prenotazioni.**
 
 1. Nel riquadro di spostamento selezionare **Informazioni azienda**.
 
-1. Immettere il nome, l'indirizzo e il numero di telefono rilevanti che si desidera utilizzare per il calendario delle prenotazioni.
+1. Immettere il nome, l'indirizzo e il numero di telefono rilevanti che si desidera utilizzare per il calendario di Bookings.
 
-1. In **Invia risposte ai clienti**, digitare l'indirizzo di posta elettronica preferito in cui devono essere inoltrate le risposte di posta elettronica alle conferme di prenotazione e ai promemoria.
+1. In **Invia risposte dei clienti a**, digitare l'indirizzo di posta elettronica preferito in cui inoltrare le risposte di posta elettronica alle conferme di prenotazione e ai promemoria.
 
-1. Nel campo **URL sito Web** immettere l'URL della Home page per la propria azienda.
+1. Nel campo **URL sito** Web immettere l'URL della home page dell'azienda.
 
-1. Immettere l' **informativa sulla privacy** e i **termini &** URL delle condizioni.
+1. Immetti **l'informativa sulla privacy** **e le condizioni & URL** delle condizioni.
 
-1. Seleziona **Salva**.
+1. Selezionare **Salva**.
 
 ## <a name="set-your-business-hours"></a>Impostare gli orari di ufficio
 
 L'orario di ufficio predefinito nell'app Prenotazioni è dalle 8:00 alle 17:00, dal lunedì al venerdì. Gli orari sono specificati a incrementi di 15 minuti. L'app Prenotazioni usa il formato 12 ore.
 
-Impostare l' **orario di ufficio** per le ore operative. Sono le ore a cui sono state limitate tutte le prenotazioni. Altre limitazioni temporali relative al momento in cui è possibile prenotare gli appuntamenti possono essere impostate per ogni servizio e per ogni membro del personale nelle pagine dei servizi e del personale.
+Impostare **l'orario di** ufficio sul proprio orario operativo. Queste sono le ore a cui sono limitate tutte le prenotazioni. È possibile impostare ulteriori restrizioni di tempo relative alla prenotazione degli appuntamenti per ogni servizio e per ogni membro del personale rispettivamente nelle pagine Servizi e Personale.
 
 1. Nella pagina Informazioni aziendali, in Orari di ufficio, usare gli elenchi a discesa per selezionare l'ora di inizio e l'ora di fine di ogni giorno.
 
-1. Fare clic **+** per aggiungere i selettori di inizio e di fine-ora.
+1. Fare **+** clic per aggiungere selettori dell'ora di inizio e di fine.
 
 ## <a name="how-to-set-hours-for-a-split-shift"></a>Come impostare le ore per un turno diviso
 
-Potrebbe essere necessario escludere una parte di ogni giorno o settimana per avere riunioni del personale, aggiornare l'inventario o prendersi cura di altri dettagli del Rhythm-of-business. L'app bookings consente di limitare gli appuntamenti dei clienti alle fasce orarie specificate.
+Potrebbe essere necessario bloccare una parte di ogni giorno o settimana per avere riunioni del personale, aggiornare l'inventario o occuparsi di altri dettagli del ritmo aziendale. L'app Bookings consente di limitare gli appuntamenti dei clienti alle fasce orarie specificate.
 
-Ad esempio, si dispone di riunioni del personale ogni Giovedi dalle 01:00 alle 2:30 e si vuole bloccare quel tempo in modo che tutti i membri del personale possano partecipare. Per eseguire l'operazione:
+Ad esempio, si hanno riunioni del personale ogni giovedì dalle 13:00 alle 14:30 e si desidera bloccare tale orario in modo che tutti i membri del personale possano partecipare. Per eseguire l'operazione:
 
 1. Nella pagina Informazioni aziendali, in Orari di ufficio, selezionare l'ora di inizio e l'ora di fine per il giovedì. In questo esempio si imposterà dalle 8:00 alle 13:00.
 
@@ -65,11 +65,11 @@ Ad esempio, si dispone di riunioni del personale ogni Giovedi dalle 01:00 alle 2
 
    ![Immagine dell'interfaccia utente per l'orario di ufficio](../media/bookings-split-shift.png)
 
-1. Nella nuova riga, selezionare 2:30 p.m. per l'ora di inizio e 6:00 p.m. per l'ora di fine.
+1. Nella nuova riga selezionare le 14.30. per l'ora di inizio e le 18:00 per l'ora di fine.
 
-   ![Immagine dell'interfaccia utente per l'orario di ufficio con ore aggiunte](../media/bookings-split-shift-hours.png)
+   ![Immagine dell'interfaccia utente per l'orario di ufficio con l'aggiunta di ore](../media/bookings-split-shift-hours.png)
 
-1. Seleziona Salva.
+1. Selezionare Salva.
 
     Quando un cliente visita la pagina di prenotazione, vedrà che l'azienda è chiusa dalle 13 alle 14:30 il giovedì.
 
@@ -77,7 +77,7 @@ Ad esempio, si dispone di riunioni del personale ogni Giovedi dalle 01:00 alle 2
 
 Se il logo aziendale non è ancora stato caricato nell'app Bookings, è possibile farlo dalla pagina Informazioni aziendali.
 
-1. Nella pagina informazioni aziendali, in carica logo, selezionare **Cambia**.
+1. Nella pagina Informazioni aziendali, in Carica logo, selezionare **Cambia.**
 
 1. Selezionare **Carica foto**.
 
