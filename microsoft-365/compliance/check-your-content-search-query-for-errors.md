@@ -15,7 +15,7 @@ search.appverid:
 - MET150
 ms.assetid: 88898874-e262-4c5c-b6d2-4e697497fc74
 ms.custom: seo-marvel-apr2020
-description: Informazioni su come rilevare gli errori e le refusi nella query di parole chiave per la ricerca di contenuto, prima di eseguire la ricerca.
+description: Informazioni su come rilevare errori e errori di digitazione nella query con parole chiave per la ricerca di contenuto, prima di eseguire la ricerca.
 ms.openlocfilehash: 250db272014d5801bfb3927d14072eea94bd635f
 ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
 ms.translationtype: MT
@@ -25,26 +25,26 @@ ms.locfileid: "44818095"
 ---
 # <a name="check-your-content-search-query-for-errors"></a>Verificare la presenza di errori nella query di Ricerca contenuto
 
-Quando si crea o si modifica una ricerca di contenuto, è possibile che Microsoft 365 verifichi la query per i caratteri non supportati e gli operatori booleani minuscoli. Come? Basta fare clic su **Controlla query per errori di battitura** nella pagina query di una ricerca contenuto. 
+Quando si crea o si modifica una ricerca di contenuto, è possibile fare in modo che Microsoft 365 controlli la query per verificare la presenza di caratteri non supportati e operatori booleani minuscoli. Come? È sufficiente **fare clic su Controlla errori di digitazione** nella pagina di query di una ricerca di contenuto. 
   
-![Fare clic su "controlla query per errori di battitura" per controllare la query di ricerca per i caratteri non supportati](../media/e5314306-cfb2-481d-9b5c-13ce658156e7.png)
+![Fare clic su "Controlla errori di digitazione nella query" per verificare la presenza di caratteri non supportati nella query di ricerca](../media/e5314306-cfb2-481d-9b5c-13ce658156e7.png)
   
-Di seguito è indicato un elenco dei caratteri non supportati che vengono verificati. I caratteri non supportati sono spesso nascosti e in genere causano un errore di ricerca o restituiscono risultati indesiderati.
+Ecco un elenco dei caratteri non supportati che controlliamo. I caratteri non supportati sono spesso nascosti e in genere causano un errore di ricerca o restituiscono risultati indesiderati.
   
-- Virgolette **Smart** -le virgolette singole e doppie (chiamate anche virgolette) non sono supportate. In una query di ricerca è possibile utilizzare solo virgolette semplici. 
+- **Virgolette inglesi** - Le virgolette singole e doppie intelligenti (denominate anche virgolette inglesi) non sono supportate. In una query di ricerca è possibile utilizzare solo le virgolette semplici. 
     
-- **Caratteri non stampabili e di controllo** : i caratteri non stampabili e di controllo non rappresentano un simbolo scritto, ad esempio un carattere alfanumerico. Alcuni esempi di caratteri di controllo e non stampabili includono caratteri che formattano il testo o righe separate di testo. 
+- **Caratteri non stampabili** e di controllo: i caratteri non stampabili e di controllo non rappresentano un simbolo scritto, ad esempio un carattere alfanumerico. Tra gli esempi di caratteri non stampabili e di controllo sono inclusi i caratteri che formattano il testo o righe di testo separate. 
     
-- **Segni da sinistra a destra e da destra a sinistra** -questi contrassegni sono caratteri di controllo utilizzati per indicare la direzione del testo per le lingue da sinistra a destra, ad esempio l'inglese e lo spagnolo, e le lingue da destra a sinistra, ad esempio l'arabo e l'ebraico.
+- Segni da sinistra a destra e da destra a **sinistra-** Questi segni sono caratteri di controllo utilizzati per indicare la direzione del testo per le lingue da sinistra a destra (ad esempio inglese e spagnolo) e lingue da destra a sinistra (ad esempio arabo ed ebraico).
     
-- **Operatori booleani minuscoli** : se si utilizza un operatore booleano, ad esempio **e**, **o**e **non** in una query di ricerca, è necessario che sia maiuscolo. Quando si controlla una query per errori di battitura, la sintassi della query indica spesso che è in uso un operatore booleano, anche se possono essere utilizzati operatori minuscoli; ad esempio, `(WordA or WordB) and (WordC or WordD)` .
+- **Operatori booleani minuscoli:** se si utilizza un operatore booleano, ad esempio **AND**, **OR** e **NOT** in una query di ricerca, è necessario che sia maiuscolo. Quando viene verificata la presenza di errori di digitazione in una query, la sintassi della query spesso indica che viene utilizzato un operatore booleano anche se è possibile utilizzare operatori minuscoli. ad esempio  `(WordA or WordB) and (WordC or WordD)` .
     
-## <a name="what-happens-if-a-query-has-an-unsupported-character"></a>Cosa succede se una query ha un carattere non supportato?
+## <a name="what-happens-if-a-query-has-an-unsupported-character"></a>Cosa succede se una query contiene un carattere non supportato?
 
-Se nella query sono presenti caratteri non supportati, viene visualizzato un messaggio di avviso che indica che sono stati trovati caratteri non supportati e che viene suggerita un'alternativa. È quindi necessario mantenere la query originale o sostituirla con la query riveduta consigliata. Di seguito è riportato un esempio del messaggio di avviso visualizzato dopo aver fatto clic su **Controlla query per errori** di recapito per la query di ricerca nella schermata precedente. Si noti che la query originale contiene le virgolette intelligenti e gli operatori booleani minuscoli. 
+Se nella query vengono trovati caratteri non supportati, viene visualizzato un messaggio di avviso che indica che sono stati trovati caratteri non supportati e suggerisce un'alternativa. È quindi possibile mantenere la query originale o sostituirla con la query modificata suggerita. Ecco un esempio del messaggio di avviso visualizzato dopo aver fatto clic su Controlla **query** per errori di digitazione per la query di ricerca nello screenshot precedente. Si noti che la query originale contiene virgolette intelligenti e operatori booleani minuscoli. 
   
-![Viene visualizzato un messaggio di avviso con una revisione consigliata per la query](../media/23214b30-8e52-412c-bd80-63fb1b3ed52d.png)
+![Viene visualizzato un messaggio di avviso con una revisione suggerita per la query](../media/23214b30-8e52-412c-bd80-63fb1b3ed52d.png)
   
 ## <a name="how-to-prevent-unsupported-characters-in-your-search-queries"></a>Come impedire i caratteri non supportati nelle query di ricerca
 
-I caratteri non supportati vengono in genere aggiunti a una query quando si copia la query o parti della query da altre applicazioni, ad esempio Microsoft Word o Microsoft Excel, e incollarle nella casella parola chiave della pagina query di una ricerca di contenuto. Il modo migliore per evitare che i caratteri non supportati è solo digitare la query nella casella parola chiave. In alternativa, è possibile copiare una query da Word o Excel e incollarla in un editor di testo normale, ad esempio il blocco note Microsoft. Salvare il file di testo e selezionare **ANSI** nell'elenco a discesa **Encoding** . In questo modo, verranno rimossi tutti i caratteri di formattazione e non supportati. È quindi possibile copiare e incollare la query dal file di testo nella casella query parola chiave. 
+I caratteri non supportati vengono in genere aggiunti a una query quando si copia la query o parti di tale query da altre applicazioni, ad esempio Microsoft Word o Microsoft Excel, e li si incolla nella casella delle parole chiave nella pagina della query di una ricerca di contenuto. Il modo migliore per impedire i caratteri non supportati è semplicemente digitare la query nella casella della parola chiave. Oppure è possibile copiare una query da Word o Excel e quindi incollarla in un editor di testo normale, ad esempio Blocco note Microsoft. Salvare il file di testo e selezionare **ANSI** **nell'elenco a** discesa Codifica. In questo modo verranno rimosso tutti i caratteri di formattazione e non supportati. È quindi possibile copiare e incollare la query dal file di testo alla casella di query con parole chiave. 

@@ -1,7 +1,7 @@
 ---
 title: Ordinare i dispositivi in Microsoft Managed Desktop
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -18,9 +18,9 @@ ms.locfileid: "46529530"
 ---
 # <a name="order-microsoft-managed-desktop-devices"></a>Ordinare i dispositivi Microsoft Managed Desktop
 
-Si consiglia di collaborare con uno dei partner del dispositivo approvati. Per ulteriori informazioni sulla configurazione di una partnership tra dispositivi, è possibile collaborare con il proprio contatto account Microsoft.
+Ti consigliamo di lavorare con uno dei nostri partner di dispositivi approvati. Puoi collaborare con il contatto dell'account Microsoft per altre informazioni sulla configurazione di una partnership con il dispositivo.
 
-Nel frattempo, è possibile esaminare l'elenco dei [dispositivi attualmente approvati](../service-description/device-list.md) che sono supportati per l'utilizzo con Microsoft Managed Desktop.
+Nel frattempo, è possibile esaminare [](../service-description/device-list.md) l'elenco dei dispositivi attualmente approvati supportati per l'uso con Microsoft Managed Desktop.
 
 
 

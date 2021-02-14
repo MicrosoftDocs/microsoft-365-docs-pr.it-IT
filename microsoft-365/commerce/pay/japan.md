@@ -1,5 +1,5 @@
 ---
-title: Informazioni sui pagamenti per il Giappone
+title: Informazioni di pagamento per il Giappone
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,18 +20,18 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 07/22/2020
 ms.locfileid: "45204768"
 ---
-# <a name="payment-information-for-japan"></a>Informazioni sui pagamenti per il Giappone
+# <a name="payment-information-for-japan"></a>Informazioni di pagamento per il Giappone
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Si prega di pagare solo in JPY e i numeri delle fatture di riferimento sulla sua rimessa di pagamento.
+Pagare solo in JPY e fare riferimento ai numeri di fattura per la rimessa di pagamento.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** Citibank, N. A  
-**ID della Banca:** 0401  
-**Branch:** Filiale di Tokyo  
+**Bank:** Citibank, N.A  
+**BANK ID:** 0401  
+**Ramo:** Tokyo Branch  
 **Codice di succursale:** 730  
 **Codice SWIFT:** CITIJPJT  
 **Numero account:** 160609028  
-**Nome account:** Microsoft Giappone Co., Ltd.
+**Nome account:** Microsoft Japan Co., Ltd.

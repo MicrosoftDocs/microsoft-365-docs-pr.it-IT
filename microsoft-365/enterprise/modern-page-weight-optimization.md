@@ -20,7 +20,7 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Informazioni su come utilizzare lo strumento page Diagnostics per ottimizzare il peso della pagina nelle pagine del sito di SharePoint Online moderne.
+description: Informazioni su come usare lo strumento Diagnostica pagine per ottimizzare il peso delle pagine nelle pagine moderne dei siti di SharePoint Online.
 ms.openlocfilehash: 64fb3c90db78a23c7f1c3fcfe604c8ef58703be0
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT

@@ -27,7 +27,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
-description: Informazioni su come rimuovere i dati aziendali dai dispositivi gestiti tramite criteri di protezione e come ripristinare le impostazioni di fabbrica dei dispositivi Windows 10.
+description: Scopri come rimuovere i dati aziendali dai dispositivi gestiti tramite criteri di protezione e ripristinare le impostazioni predefinite dei dispositivi Windows 10.
 ms.openlocfilehash: 88311a2cf08ee0b1ceb4ef3eb599efe5ebccdb05
 ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
 ms.translationtype: MT
@@ -37,9 +37,9 @@ ms.locfileid: "45101622"
 ---
 # <a name="manage-protected-devices-with-microsoft-365-business-premium"></a>Gestire i dispositivi protetti con Microsoft 365 Business Premium
 
-Dopo che un utente ha connesso il dispositivo all'organizzazione accedendo con il proprio account di lavoro al dispositivo o alle app di Office nel dispositivo, è possibile proteggere il dispositivo con i criteri configurati. I dispositivi connessi sono elencati nella pagina **dispositivi** . In caso di perdita o di furto di un dispositivo, è possibile gestirlo da questa pagina per rimuovere eventuali dati aziendali. È anche possibile ripristinare le impostazioni del produttore per i dispositivi Windows 10, in modo da cancellare eventuali impostazioni personalizzate. 
+Dopo che un utente connette il dispositivo all'organizzazione accedendo con l'account aziendale al dispositivo o alle app di Office nel dispositivo, è possibile proteggere il dispositivo con i criteri impostati. I dispositivi connessi sono elencati nella **pagina** Dispositivi. In caso di perdita o di furto di un dispositivo, è possibile gestirlo da questa pagina per rimuovere eventuali dati aziendali. È anche possibile ripristinare le impostazioni del produttore per i dispositivi Windows 10, in modo da cancellare eventuali impostazioni personalizzate. 
 
-Per ulteriori informazioni sulle attività che è possibile utilizzare per gestire i dispositivi, vedere gli articoli seguenti: 
+Per altre informazioni sulle attività che puoi usare per gestire i dispositivi, vedi questi articoli: 
   
 [Rimuovere i dati aziendali dai dispositivi](remove-company-data.md)
   

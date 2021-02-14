@@ -11,7 +11,7 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
-description: Informazioni sulle funzionalità multi-Geo in Exchange Online, ad esempio limitazioni delle funzionalità e posizionamento delle cassette postali.
+description: Informazioni sulle funzionalità multi-geografiche in Exchange Online, ad esempio limitazioni delle funzionalità e posizionamento delle cassette postali.
 ms.openlocfilehash: ca7203c72f23fd03512bf23eaa5a4687e4bac1b5
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT

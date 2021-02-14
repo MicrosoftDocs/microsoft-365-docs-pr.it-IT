@@ -1,7 +1,7 @@
 ---
 title: Abilitare Enterprise State Roaming
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -18,19 +18,19 @@ ms.locfileid: "46530200"
 ---
 # <a name="enable-enterprise-state-roaming"></a>Abilitare Enterprise State Roaming
 
-Per un'esperienza ottimale con Microsoft Managed Desktop, abilitare il [roaming dello stato dell'organizzazione](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview), che consente agli utenti di sincronizzare in modo sicuro i dati delle impostazioni dell'applicazione e dell'utente nel cloud. Questo significa che avranno la stessa esperienza indipendentemente dal dispositivo Windows in cui accedono. Ad esempio, se si sostituisce uno dei propri dispositivi Microsoft Managed Desktop con uno nuovo, l'aspetto e il comportamento saranno identici a quelli dell'ultimo.
+Per un'esperienza ottimale con Microsoft Managed Desktop, abilita [Enterprise State Roaming,](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview)che consente agli utenti di sincronizzare in modo sicuro i dati delle impostazioni di utenti e applicazioni nel cloud. Questo significa che hanno la stessa esperienza indipendentemente dal dispositivo Windows a cui a cui aseguono l'accesso. Ad esempio, se si sostituisce uno dei dispositivi Microsoft Managed Desktop con uno nuovo, l'aspetto e il comportamento saranno esattamente uguali a quello dell'ultimo.
 
-Per abilitare il roaming dello stato dell'organizzazione, seguire la procedura descritta in [Enable Enterprise state roaming in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-enable)e quindi tornare a questa documentazione.
+Per abilitare Enterprise State Roaming, seguire i passaggi descritti in [Abilitare Enterprise State Roaming in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-enable)e quindi tornare a questa documentazione.
 
-In caso di problemi con il roaming dello stato dell'organizzazione, contattare il [supporto](../working-with-managed-desktop/admin-support.md)dell'amministratore.
+In caso di difficoltà con Enterprise State Roaming, contattare il supporto [per gli amministratori.](../working-with-managed-desktop/admin-support.md)
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Passaggi per iniziare a utilizzare Microsoft Managed Desktop
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Procedura per iniziare a usare Microsoft Managed Desktop
 
 1. [Aggiungere e verificare i contatti degli amministratori nel portale di amministrazione](add-admin-contacts.md)
 2. [Modificare l'accesso condizionale](conditional-access.md)
 3. [Assegnare licenze](assign-licenses.md)
 4. [Distribuire il Portale aziendale Intune](company-portal.md)
-5. Abilitare il roaming dello stato dell'organizzazione (questo argomento)
+5. Abilitare Enterprise State Roaming (questo argomento)
 6. [Configurare i dispositivi](set-up-devices.md)
 7. [Preparare gli utenti a usare i dispositivi](get-started-devices.md)
 8. [Distribuire le app](deploy-apps.md)

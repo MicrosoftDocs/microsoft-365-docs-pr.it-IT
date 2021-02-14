@@ -17,7 +17,7 @@ ms.collection:
 ms.custom: ''
 search.appverid:
 - MET150
-description: Informazioni su come verificare l'idoneità della scuola a Microsoft 365 Education Academic pricing.
+description: Informazioni su come verificare l'idoneità dell'istituto di istruzione per i prezzi accademici di Microsoft 365 Education.
 ms.date: 07/21/2020
 ms.openlocfilehash: 0bfb779880b94e309e266d8f57ed0a25b749e1f2
 ms.sourcegitcommit: 6a1a8aa024fd685d04da97bfcbc8eadacc488534
@@ -28,80 +28,80 @@ ms.locfileid: "46653726"
 ---
 # <a name="verify-academic-eligibility-for-microsoft-365-education-subscriptions"></a>Verificare l'idoneità accademica per gli abbonamenti a Microsoft 365 Education
 
-Se si è parte di un'istituzione accademica, è possibile iscriversi per una versione di valutazione gratuita di Microsoft 365 Education. Dopo che Microsoft ha verificato la idoneità accademica della propria scuola, è possibile acquistare prodotti Microsoft 365 a prezzi accademici. Sono inclusi i prodotti disponibili gratuitamente, come Office 365 a1 per i docenti e Office 365 a1 per gli studenti. L'utente ha fino alla fine della versione di valutazione gratuita per convertirlo in un abbonamento a pagamento a prezzi accademici.
+Se si fa parte di un istituto accademico, è possibile iscriversi per una versione di valutazione gratuita di Microsoft 365 Education. Dopo che Microsoft ha verificato l'idoneità accademica dell'istituto di istruzione, è possibile acquistare i prodotti Microsoft 365 a prezzi accademici. Sono inclusi i prodotti disponibili gratuitamente, come Office 365 A1 per i docenti e Office 365 A1 per gli studenti. Hai tempo fino alla fine della versione di valutazione gratuita per convertirla in una sottoscrizione a pagamento a prezzi accademici.
 
-In questo articolo viene descritto come verificare la propria idoneità accademica scolastica, controllare lo stato di idoneità e acquistare abbonamenti a prezzi accademici dopo l'approvazione della scuola.
+Questo articolo descrive come verificare l'idoneità accademica dell'istituto di istruzione, controllare lo stato di idoneità e acquistare sottoscrizioni a prezzi accademici dopo l'approvazione dell'istituto.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
-È necessario disporre già di una sottoscrizione di valutazione di Microsoft 365 Education. Se non si dispone di una sottoscrizione di valutazione, [visitare la pagina Web](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) e selezionare **inizia gratuitamente**.
+È necessario disporre già di una sottoscrizione di valutazione di Microsoft 365 Education. Se non si dispone di un abbonamento di valutazione, visitare questa pagina [Web](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) e selezionare **Inizia gratuitamente.**
 
 ## <a name="verify-that-you-have-a-trial-subscription"></a>Verificare di disporre di una sottoscrizione di valutazione
 
-Se non si è sicuri di avere una sottoscrizione di valutazione di Microsoft 365 Education, attenersi alla procedura seguente per verificare che l'utente sia in grado di eseguire questa operazione.
+Se non si è sicuri di disporre di una sottoscrizione di valutazione di Microsoft 365 Education, seguire questa procedura per verificare di eseguire questa operazione.
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina **fatturazione** dei \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
-2. Cercare **office 365 a1 per la versione di valutazione del docente** e **Office 365 a1 per gli studenti di prova**. Se non si trovano tali abbonamenti, [visitare la pagina Web](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) e selezionare **inizia gratuitamente**.
+1. Nell'interfaccia di amministrazione di Microsoft 365, passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
+2. Cercare La versione **di valutazione di Office 365 A1** per i docenti e Office **365 A1 per studenti.** Se non si trovano questi abbonamenti, visitare questa pagina [Web](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) e selezionare **Inizia gratuitamente.**
 
-## <a name="verify-your-schools-academic-eligibility"></a>Verificare la propria idoneità accademica scolastica
+## <a name="verify-your-schools-academic-eligibility"></a>Verificare l'idoneità accademica dell'istituto di istruzione
 
-Nella maggior parte dei casi, quando ti iscrivi per una versione di valutazione gratuita e completi la procedura guidata di verifica idoneità per fornire il dominio della tua scuola, ricevi un'approvazione immediata o un diniego dell'idoneità della tua scuola. In alcuni casi, è necessario un numero maggiore di informazioni per completare una revisione manuale di idoneità e per completare il questionario. Questa revisione può richiedere fino a 10 giorni lavorativi. Dopo aver esaminato le informazioni sull'idoneità della scuola, è possibile inviare un messaggio di posta elettronica che informa lo stato della scuola.
+Nella maggior parte dei casi, quando si effettua la registrazione per una versione di valutazione gratuita e si completa la procedura guidata di verifica dell'idoneità per fornire il dominio dell'istituto di istruzione, si riceve un'approvazione o un rifiuto immediato dell'idoneità dell'istituto di istruzione. In alcuni casi, sono necessarie ulteriori informazioni per completare una revisione manuale dell'idoneità e verrà richiesto di compilare un questionario. Questa recensione può richiedere fino a 10 giorni lavorativi. Dopo aver esaminato le informazioni sull'idoneità dell'istituto di istruzione, viene inviato un messaggio di posta elettronica che informa l'utente dello stato dell'istituto di istruzione.
 
-È possibile chiudere la procedura guidata di verifica accademica prima di accedere a un dominio e iniziare a usare subito la sottoscrizione di valutazione. Tuttavia, non è possibile ottenere prezzi accademici fino al completamento del processo di verifica. È necessario completare il processo prima della fine della versione di valutazione gratuita per convertirlo in un abbonamento a pagamento e continuare a utilizzarlo. Questo si applica anche quando si esegue la conversione all'abbonamento gratuito a1.
+Puoi chiudere la procedura guidata di verifica accademica prima di immettere un dominio e iniziare subito a usare la sottoscrizione di valutazione. Tuttavia, non sei idoneo per i prezzi accademici fino a quando non completi il processo di verifica. È necessario completare il processo prima della fine della versione di valutazione gratuita per eseguire la conversione in un abbonamento a pagamento e continuare a usarlo. Questo vale anche per la conversione all'abbonamento gratuito A1.
 
 > [!IMPORTANT]
-> Se è stata riavviata la procedura guidata prima di immettere un dominio, è possibile [riprendere la verifica guidata accademica](https://go.microsoft.com/fwlink/p/?linkid=2135255) in qualsiasi momento durante la versione di valutazione gratuita.
+> Se è stata chiusa la procedura guidata di verifica prima di immettere un dominio, è possibile riprendere la procedura guidata di verifica [accademica](https://go.microsoft.com/fwlink/p/?linkid=2135255) in qualsiasi momento durante la versione di valutazione gratuita.
 
-Se la propria idoneità accademica è negata, vedere [la mia scuola non è idonea. Cosa fare adesso?](#my-school-isnt-eligible-what-do-i-do-now)
+Se l'idoneità accademica viene negata, vedi Il [mio istituto di istruzione non è idoneo. Cosa devo fare ora?](#my-school-isnt-eligible-what-do-i-do-now)
 
-## <a name="check-the-status-of-your-schools-academic-eligibility"></a>Controllare lo stato dell'idoneità accademica della scuola
+## <a name="check-the-status-of-your-schools-academic-eligibility"></a>Controllare lo stato dell'idoneità accademica dell'istituto di istruzione
 
-Dopo aver eseguito una versione di valutazione di Microsoft 365 Education, è possibile controllare lo stato dell'idoneità accademica scolastica in qualsiasi momento.
+Dopo aver creato una versione di valutazione di Microsoft 365 Education, è possibile controllare lo stato dell'idoneità accademica dell'istituto di istruzione in qualsiasi momento.
 
-1. Accedere all'interfaccia di [amministrazione di Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=2024339).
-2. Nella Home page, trovare la scheda di **fatturazione** . \
-    La scheda di **fatturazione** indica lo stato del processo di verifica. La scheda Visualizza uno degli Stati seguenti: approvato, in sospeso, rifiutato o aggiunto il dominio.
-
-    > [!NOTE]
-    > Se non si visualizza uno di tali Stati, significa che non si dispone di una sottoscrizione di valutazione di Microsoft 365 Education. Per avviare una versione di valutazione gratuita, [visita la pagina Web](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) e seleziona inizia **gratuitamente**.
-
-## <a name="buy-subscriptions-at-academic-prices"></a>Acquistare abbonamenti a prezzi accademici
-
-Dopo aver verificato la propria idoneità scolastica, è possibile acquistare abbonamenti a prezzi accademici. È inoltre possibile [convertire la versione di valutazione gratuita in un abbonamento a pagamento](https://docs.microsoft.com/microsoft-365/commerce/buy-a-subscription-from-your-free-trial). Se si desidera convertire la sottoscrizione di valutazione, è necessario farlo prima della fine del periodo di prova.
-
-1. Nell'interfaccia di amministrazione di Microsoft 365 passare alla **Billing** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servizi di acquisto</a> per la fatturazione.
-2. Per visualizzare le offerte didattiche, selezionare la scheda **istruzione** .
+1. Passare all'interfaccia di amministrazione di [Microsoft 365.](https://go.microsoft.com/fwlink/p/?linkid=2024339)
+2. Nella home page, trovare la **scheda Fatturazione.\**
+    La **carta** di fatturazione indica lo stato del processo di verifica. La scheda mostra uno dei seguenti stati: approvato, in sospeso, rifiutato o aggiungere il dominio.
 
     > [!NOTE]
-    > La scheda **istruzione** non viene visualizzata se la propria idoneità è in sospeso.
+    > Se non viene visualizzato uno di questi stati, significa che non si ha un abbonamento di valutazione a Microsoft 365 Education. Per avviare una versione di valutazione gratuita, [visita questa pagina Web](https://www.microsoft.com/microsoft-365/academic/compare-office-365-education-plans?activetab=tab%3aprimaryr1) e seleziona Inizia **gratuitamente.**
 
-3. Quando si trova l'offerta che si desidera acquistare, selezionarla e quindi fare clic su **Acquista**.
-4. Completare il processo di checkout per acquistare l'abbonamento.
+## <a name="buy-subscriptions-at-academic-prices"></a>Acquistare sottoscrizioni a prezzi accademici
 
-## <a name="when-does-my-free-trial-end"></a>Quando finisce la versione di valutazione gratuita?
+Dopo aver verificato l'idoneità dell'istituto di istruzione, puoi acquistare sottoscrizioni a prezzi accademici. Puoi anche convertire [la versione di valutazione gratuita in un abbonamento a pagamento.](https://docs.microsoft.com/microsoft-365/commerce/buy-a-subscription-from-your-free-trial) Se si desidera convertire la sottoscrizione di valutazione, è necessario farlo prima della fine del periodo di valutazione.
 
-È possibile trovare la data di scadenza per la sottoscrizione di valutazione gratuita nella pagina dei **prodotti** . È inoltre possibile estendere la versione di valutazione.
+1. Nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina **Servizi** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">di acquisto della</a> fatturazione.
+2. Per visualizzare le offerte accademiche, seleziona la **scheda** Education.
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina **fatturazione** dei \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> .
+    > [!NOTE]
+    > La **scheda** Education non viene visualizzata se l'idoneità è in sospeso.
+
+3. Quando trovi l'offerta che vuoi acquistare, selezionala e quindi seleziona **Acquista.**
+4. Completare il processo di estrazione per acquistare l'abbonamento.
+
+## <a name="when-does-my-free-trial-end"></a>Quando termina la versione di valutazione gratuita?
+
+Puoi trovare la data di scadenza dell'abbonamento di valutazione gratuito nella **pagina I tuoi** prodotti. Puoi anche estendere la versione di valutazione.
+
+1. Nell'interfaccia di amministrazione di Microsoft 365, passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
 2. Trovare la sottoscrizione di valutazione.
-3. Nella sezione **fatturazione** , sotto **sottoscrizione di prova gratuita**, viene visualizzata la data di scadenza.
-4. Se si desidera estendere la versione di valutazione, selezionare **Estendi versione di valutazione**. È possibile eseguire questa operazione una sola volta per ogni sottoscrizione di valutazione gratuita.
+3. Nella sezione **Fatturazione,** in **Sottoscrizione di valutazione gratuita,** viene visualizzata la data di scadenza.
+4. Se si desidera estendere la versione di valutazione, selezionare **Estendi versione di valutazione.** È possibile eseguire questa operazione solo una volta per ogni sottoscrizione di valutazione gratuita.
 
-## <a name="my-school-isnt-eligible-what-do-i-do-now"></a>La mia scuola non è idonea. Cosa fare adesso?
+## <a name="my-school-isnt-eligible-what-do-i-do-now"></a>Il mio istituto di istruzione non è idoneo. Cosa devo fare ora?
 
-Se la propria scuola non è qualificata come istituzione accademica Microsoft qualificata, è comunque possibile acquistare offerte commerciali nell'interfaccia **Billing** di amministrazione della \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">servizi di acquisto</a> per la fatturazione. Se l'organizzazione è un gruppo no profit, è possibile che il gruppo sia idoneo per gli abbonamenti per gli utenti non utili. Per ulteriori informazioni, vedere [sconti e donazioni per organizzazioni non profit](https://www.microsoft.com/nonprofits/eligibility).
+Se l'istituto di istruzione non si qualifica come Microsoft Qualified Academic Institution, è comunque possibile acquistare offerte commerciali nell'interfaccia di amministrazione nella pagina **Servizi** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">di acquisto della</a> fatturazione. Se l'organizzazione è un gruppo no profit, il gruppo potrebbe essere idoneo per le sottoscrizioni per organizzazioni no profit. Per ulteriori informazioni, vedere [Sconti e donazioni per organizzazioni no profit.](https://www.microsoft.com/nonprofits/eligibility)
 
-In caso di domande sulla decisione di eleggibilità accademica della scuola, [contattare il supporto](../../admin/contact-support-for-business-products.md).
+In caso di domande sulla decisione di idoneità accademica dell'istituto di istruzione, [contattare il supporto.](../../admin/contact-support-for-business-products.md)
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Per informazioni su come distribuire Microsoft 365 per la propria scuola, visitare la [documentazione e le risorse di microsoft 365 Education](https://docs.microsoft.com/microsoft-365/education/deploy/). Successivamente, è possibile [aggiungere utenti e assegnare licenze contemporaneamente](../../admin/add-users/add-users.md). Se necessario, è anche possibile [acquistare altre licenze per l'abbonamento](../licenses/buy-licenses.md).
+Per informazioni su come distribuire Microsoft 365 per l'istituto di istruzione, visitare la documentazione e le risorse di [Microsoft 365 Education.](https://docs.microsoft.com/microsoft-365/education/deploy/) Successivamente, è possibile [aggiungere utenti e assegnare licenze contemporaneamente.](../../admin/add-users/add-users.md) Se necessario, è anche possibile acquistare [altre licenze per l'abbonamento.](../licenses/buy-licenses.md)
 
-## <a name="related-content"></a>Contenuto correlato
+## <a name="related-content"></a>Contenuti correlati
 
-[Documentazione relativa all'istruzione Microsoft 365 per gli amministratori it](https://docs.microsoft.com/education/itadmins) (collegamenti all'articolo) \
-[Microsoft teams for Education](https://microsoft.com/education/products/teams/default.aspx) (pagina del prodotto) \
-[Informazioni su abbonamenti e licenze in Microsoft 365 for business](../licenses/subscriptions-and-licenses.md) (articolo) \
-[Assegnare licenze agli utenti](../../admin/manage/assign-licenses-to-users.md) (articolo) \
-[Acquistare o rimuovere licenze di sottoscrizione](../licenses/buy-licenses.md) (articolo) \
-[Spostare gli utenti in una sottoscrizione diversa](move-users-different-subscription.md) (articolo)
+[Documentazione di Microsoft 365 Education per amministratori IT](https://docs.microsoft.com/education/itadmins) (collegamenti agli articoli)\
+[Microsoft Teams per l'istruzione](https://microsoft.com/education/products/teams/default.aspx) (pagina del prodotto)\
+[Informazioni su abbonamenti e licenze in Microsoft 365 per le aziende](../licenses/subscriptions-and-licenses.md) (articolo)\
+[Assegnare licenze agli utenti](../../admin/manage/assign-licenses-to-users.md) (articolo)\
+[Acquistare o rimuovere licenze di sottoscrizione](../licenses/buy-licenses.md) (articolo)\
+[Spostare gli utenti in un abbonamento diverso](move-users-different-subscription.md) (articolo)

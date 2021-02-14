@@ -1,7 +1,7 @@
 ---
-title: Report inventario dispositivi
+title: Report inventario dei dispositivi
 description: ''
-keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -16,24 +16,24 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/10/2020
 ms.locfileid: "46613055"
 ---
-# <a name="device-inventory-report"></a>Report inventario dispositivi
+# <a name="device-inventory-report"></a>Report inventario dei dispositivi
 
-Nella visualizzazione **dispositivi** , è possibile selezionare la scheda **Esporta tutto** per scaricare un file delimitato da virgole, incluse le informazioni seguenti:
+Nella visualizzazione **Dispositivi** puoi selezionare  la scheda Esporta tutto per scaricare un file con valori delimitati da virgole, incluse queste informazioni:
 
 - Numero di serie
 - Nome dispositivo
-- Ultima archiviazione del dispositivo
+- Ultimo check-in dispositivo
 - Gestito da
 - Produttore
 - Modello
-- OS
+- Sistema operativo
 - Licenza del sistema operativo
 - Versione del sistema operativo
 - Ownership
 - Data di registrazione
 - Nome anello
-- Privo di spazio di archiviazione in GB
-- Archiviazione-totale in GB
+- Spazio di archiviazione - Gratuito in GB
+- Archiviazione - Totale in GB
 - Registrato dall'UPN dell'utente
 - Utente assegnato
 - Stato
@@ -42,4 +42,4 @@ Nella visualizzazione **dispositivi** , è possibile selezionare la scheda **Esp
 - Utenti connessi
 
 
-![Visualizzazione dispositivi in cui viene visualizzato un elenco di dispositivi e dettagli correlati. Selezionare le caselle di controllo accanto ai filtri seleziona per attività, stato registrazione. Sopra è una casella di ricerca. Schede nella parte superiore per la registrazione di nuovi dispositivi, l'aggiornamento della visualizzazione, l'esportazione degli errori e l'esportazione dei dati. ](../../media/mmd-devices-view.png)
+![Visualizzazione Dispositivi che mostra l'elenco dei dispositivi e i dettagli correlati. Caselle di controllo accanto ai filtri di selezione superiore per l'attività, lo stato di registrazione. Sopra questa è una casella di ricerca. Schede nella parte superiore per registrare nuovi dispositivi, aggiornare la visualizzazione, esportare errori ed esportare i dati. ](../../media/mmd-devices-view.png)

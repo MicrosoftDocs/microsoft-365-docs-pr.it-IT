@@ -19,7 +19,7 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: ''
-description: Sono disponibili collegamenti ad articoli contenenti informazioni utili per configurare la rete per Microsoft 365, tra cui una panoramica della connettività di rete e un elenco di endpoint.
+description: Collegamenti ad articoli con informazioni utili per configurare la rete per Microsoft 365, tra cui una panoramica della connettività di rete e un elenco di endpoint.
 ms.openlocfilehash: f0e0499c70745d31399240372c190758285408aa
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -29,23 +29,23 @@ ms.locfileid: "46691010"
 ---
 # <a name="set-up-your-network-for-microsoft-365"></a>Configurare la rete per Microsoft 365
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
-Una parte importante dell'onboarding di Microsoft 365 è garantire che le connessioni di rete e Internet siano configurate per l'accesso ottimizzato. La configurazione della rete locale per l'accesso a un cloud SaaS (software-as-a-Service) distribuito a livello globale è diversa da una rete tradizionale ottimizzata per il traffico verso i centri dati locali e una connessione Internet centralizzata. 
+Una parte importante dell'onboarding di Microsoft 365 è garantire che la rete e le connessioni Internet siano impostate per l'accesso ottimizzato. La configurazione della rete locale per l'accesso a un cloud Software-as-a-Service (SaaS) distribuito a livello globale è diversa da una rete tradizionale ottimizzata per il traffico verso datacenter locali e una connessione Internet centrale. 
 
 Consultare questi articoli per comprendere le differenze principali e per modificare i dispositivi periferici, i computer client e la rete locale in uso per prestazioni ottimali per gli utenti locali.
 
-## <a name="how-microsoft-365-networking-works"></a>Funzionamento della rete Microsoft 365
+## <a name="how-microsoft-365-networking-works"></a>Come funziona la rete di Microsoft 365
 
-Per una panoramica della connettività per Microsoft 365, vedere gli articoli seguenti:
+Vedere questi articoli per una panoramica della connettività per Microsoft 365:
 
 - [Informazioni generali sulla connettività di rete di Microsoft 365](microsoft-365-networking-overview.md)
-- [Principi di connettività di rete Microsoft 365](microsoft-365-network-connectivity-principles.md)
+- [Principi di connettività di rete di Microsoft 365](microsoft-365-network-connectivity-principles.md)
 - [Valutazione della connettività di rete di Microsoft 365](assessing-network-connectivity.md)
 
-Per informazioni su come migliorare le prestazioni, vedere [pianificazione della rete e ottimizzazione delle prestazioni per Microsoft 365](network-planning-and-performance.md).
+Per consigli su come migliorare le prestazioni, vedere [Pianificazione della rete e ottimizzazione delle prestazioni per Microsoft 365.](network-planning-and-performance.md)
 
-## <a name="support-microsoft-365-networking-as-a-network-equipment-vendor"></a>Supporto di Microsoft 365 networking come fornitore di apparecchiature di rete
+## <a name="support-microsoft-365-networking-as-a-network-equipment-vendor"></a>Supportare la rete di Microsoft 365 come fornitore di apparecchiature di rete
 
 Se si è un fornitore di apparecchiature di rete, partecipare a [Office 365 Networking Partner Program](microsoft-365-networking-partner-program.md). Iscriversi al programma per creare i principi di connettività di rete Office 365 ne propri prodotti e soluzioni. 
 
@@ -76,9 +76,9 @@ Per altri endpoint, vedere gli articoli:
 - [Richieste di rete in Office 2016 per Mac](network-requests-in-office-2016-for-mac.md)
 
 
-## <a name="additional-topics-for-microsoft-365-networking"></a>Ulteriori argomenti per Microsoft 365 networking
+## <a name="additional-topics-for-microsoft-365-networking"></a>Argomenti aggiuntivi per la rete di Microsoft 365
 
-Per ulteriori informazioni, vedere gli articoli relativi a argomenti specializzati in Microsoft 365 Networking:
+Vedere questi articoli per argomenti specializzati nella rete di Microsoft 365:
 
 - [Reti per la distribuzione di contenuti](content-delivery-networks.md)
 - [Supporto IPv6 nei servizi Office 365](ipv6-support.md)

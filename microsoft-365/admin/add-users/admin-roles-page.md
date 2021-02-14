@@ -26,77 +26,77 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/10/2020
 ms.locfileid: "46602094"
 ---
-# <a name="get-started-with-the-roles-page"></a>Iniziare a utilizzare la pagina ruoli
+# <a name="get-started-with-the-roles-page"></a>Introduzione alla pagina dei ruoli
 
-Nella pagina ruoli, è possibile concedere agli utenti le autorizzazioni per eseguire attività nei centri di amministrazione. Questo aiuta l'organizzazione a distribuire le attività alle persone appropriate e a mantenere i dati protetti.
+Nella pagina Ruoli è possibile assegnare agli utenti le autorizzazioni per eseguire attività nelle centri di amministrazione. In questo modo l'organizzazione può distribuire le attività alle persone appropriate e proteggere i dati.
 
-![Figura che illustra i ruoli di amministratore](../../media/roles-main-page.png)
+![Figura che mostra i ruoli di amministratore](../../media/roles-main-page.png)
 
 > [!TIP]
-> Per le descrizioni dettagliate dei ruoli, Estrarre le [autorizzazioni per il ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) e [sui ruoli di amministratore](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles).
+> Per le descrizioni dettagliate dei ruoli, Consultare le [autorizzazioni del ruolo amministratore in Azure Active Directory e](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) Informazioni sui ruoli di [amministratore.](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles)
 
-## <a name="about-the-admin-roles-page"></a>Informazioni sulla pagina ruoli di amministratore
+## <a name="about-the-admin-roles-page"></a>Informazioni sulla pagina dei ruoli di amministratore
 
-È possibile esportare l'elenco di amministratori e la ricerca e filtrare in base al ruolo.
+È possibile esportare l'elenco di amministratori, nonché cercare e filtrare in base al ruolo.
 
-![Filtrare o importare i ruoli di amministratore](../../media/admin-role-page-options.png)
+![Filtrare o importare ruoli di amministratore](../../media/admin-role-page-options.png)
 
 |||
 |:-----|:-----|
-|  <br/> |Utilizzare l' **elenco di amministratori di esportazione** per ottenere un elenco completo di tutti gli utenti dell'organizzazione. L'elenco è archiviato in un file CSV di Excel.   <br/> |
-|  <br/> |Utilizzare la **ricerca** per cercare un ruolo di amministratore e visualizzare gli utenti a cui è assegnato quel ruolo.   <br/> |
-|  <br/> |Utilizzare il **filtro** per modificare la visualizzazione dei ruoli di amministratore visualizzati.   <br/> |
+|  <br/> |Usare **l'elenco di amministratori** di esportazione per ottenere un elenco completo di tutti gli utenti amministratori dell'organizzazione. L'elenco è archiviato in un file CSV di Excel.   <br/> |
+|  <br/> |Utilizzare **la** ricerca per cercare un ruolo di amministratore e visualizzare gli utenti assegnati a tale ruolo.   <br/> |
+|  <br/> |Utilizzare **filtro** per modificare la visualizzazione dei ruoli di amministratore visualizzati.   <br/> |
 
-## <a name="get-the-most-out-of-the-roles"></a>Ottenere il massimo dai ruoli
+## <a name="get-the-most-out-of-the-roles"></a>Ottenere il massimo dei ruoli
 
-Leggere il contenuto riportato di seguito per conoscere i diversi ruoli di amministratore e le attività che i ruoli possono eseguire nell'organizzazione.
+Leggere il contenuto seguente per informazioni sui diversi ruoli di amministratore e sulle attività che i ruoli possono eseguire nell'organizzazione.
 
 > [!NOTE]
-Non si tratta di un elenco esaustivo di tutte le autorizzazioni di cui dispongono tali ruoli. Selezionare il **collegamento per ulteriori informazioni** su ogni ruolo.
+Non si tratta di un elenco esaustivo di tutte le autorizzazioni di questi ruoli. Selezionare il **collegamento Ulteriori** informazioni per ulteriori informazioni su ogni ruolo.
 
 ### <a name="exchange-admin"></a>Amministratore di Exchange
 
-Assegnare il ruolo di amministratore di Exchange agli utenti che hanno la necessità di visualizzare e gestire le cassette postali di posta elettronica dell'utente, i gruppi di Microsoft 365 e Exchange Online. È inoltre possibile aprire e gestire le richieste di servizio al supporto tecnico Microsoft. [Altre informazioni](https://docs.microsoft.com/office365/admin/add-users/about-exchange-online-admin-role)
+Assegnare il ruolo di amministratore di Exchange agli utenti che devono visualizzare e gestire le cassette postali di posta elettronica dell'utente, i gruppi di Microsoft 365 e Exchange Online. Possono inoltre aprire e gestire le richieste di assistenza al supporto tecnico Microsoft. [Altre informazioni](https://docs.microsoft.com/office365/admin/add-users/about-exchange-online-admin-role)
 
 ### <a name="global-admin"></a>Amministratore globale
 
-Assegnare il ruolo di amministratore globale agli utenti che hanno bisogno dell'accesso globale alla maggior parte delle caratteristiche di gestione e dei dati tra i Microsoft Online Services. Concedere l'accesso globale a troppi utenti costituisce un rischio per la sicurezza; si consiglia di configurare tra 2 e 4 amministratori globali. Solo gli amministratori globali possono reimpostare le password per tutti gli utenti e aggiungere e gestire i domini. È inoltre possibile aprire e gestire le richieste di servizio al supporto tecnico Microsoft. La persona che ha effettuato l'iscrizione ai servizi Microsoft online diventa automaticamente un amministratore globale. [Altre informazioni](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+Assegnare il ruolo di amministratore globale agli utenti che necessitano dell'accesso globale alla maggior parte delle funzionalità e dei dati di gestione nei servizi online Microsoft. Concedere l'accesso globale a troppi utenti costituisce un rischio per la sicurezza; si consiglia di configurare tra 2 e 4 amministratori globali. Solo gli amministratori globali possono reimpostare le password per tutti gli utenti e aggiungere e gestire i domini. Possono inoltre aprire e gestire le richieste di assistenza al supporto tecnico Microsoft. La persona che ha effettuato l'accesso ai servizi online Microsoft diventa automaticamente un amministratore [globale. Ulteriori informazioni](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### <a name="global-reader"></a>Ruolo con autorizzazioni di lettura globali
 
-Assegnare il ruolo di amministratore globale dei lettori all'utente che deve visualizzare le funzionalità e le impostazioni di amministratore in tutti i centri di amministrazione che possono essere visualizzati dall'amministratore globale. Il ruolo di amministratore globale dei lettori non è in grado di modificare le impostazioni. [Altre informazioni](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+Assegnare il ruolo di amministratore lettore globale agli utenti che devono visualizzare le funzionalità e le impostazioni di amministratore in tutte le centri di amministrazione che l'amministratore globale può visualizzare. Il ruolo di amministratore del lettore globale non può modificare alcuna impostazione. [Altre informazioni](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### <a name="helpdesk-admin"></a>Amministratore di supporto tecnico
 
-Assegnare il ruolo di amministratore del supporto tecnico agli utenti che desiderano reimpostare le password, imporre agli utenti di disconnettersi per eventuali problemi di sicurezza. È inoltre possibile aprire e gestire le richieste di servizio al supporto tecnico Microsoft. L'amministratore del supporto tecnico può solo aiutare gli utenti non amministratori e gli utenti a cui sono assegnati questi ruoli: lettore directory, ospite invitato, amministratore helpdesk, lettore centro messaggi e lettore di report. [Altre informazioni](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+Assegnare il ruolo di amministratore dell'helpdesk agli utenti che desiderano reimpostare le password, forzare gli utenti a disconnettersi per eventuali problemi di sicurezza. Possono inoltre aprire e gestire le richieste di assistenza al supporto tecnico Microsoft. L'amministratore del supporto tecnico può aiutare solo gli utenti non amministratori e gli utenti a cui sono stati assegnati questi ruoli: lettore di directory, invitatore guest, amministratore dell'helpdesk, lettore del Centro messaggi e lettore di report. [Altre informazioni](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### <a name="service-admin"></a>Amministratore del servizio
 
-Assegnare il ruolo di amministratore del servizio agli utenti che hanno la necessità di creare richieste di servizio per i servizi di Azure, Microsoft 365 e Office 365. [Altre informazioni](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+Assegnare il ruolo di amministratore del servizio agli utenti che devono creare richieste di servizio per i servizi di Azure, Microsoft 365 e Office 365. [Altre informazioni](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ### <a name="sharepoint-admin"></a>Amministratore di SharePoint
 
-Quando si acquista un abbonamento a Microsoft 365, viene creato automaticamente un sito del team e l'amministratore globale è impostato come principale responsabile della raccolta siti. Assegnare al ruolo di amministratore di SharePoint gli utenti a cui si desidera accedere all'interfaccia di amministrazione di SharePoint. Gli utenti con il ruolo di amministratore di SharePoint possono creare e gestire raccolte siti, designare gli amministratori delle raccolte siti e gestire i profili utente. Gli utenti con il ruolo di amministratore di SharePoint possono anche gestire i gruppi Microsoft 365 e aprire le richieste di servizio tramite il supporto tecnico Microsoft. [Altre informazioni](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)
+Quando si acquista un abbonamento a Microsoft 365, viene creato automaticamente un sito del team e l'amministratore globale viene impostato come amministratore principale della raccolta siti. Assegnare il ruolo di amministratore di SharePoint agli utenti a cui si desidera accedere all'interfaccia di amministrazione di SharePoint. Gli utenti con il ruolo di amministratore di SharePoint possono creare e gestire raccolte siti, designare gli amministratori delle raccolte siti e gestire i profili utente. Gli utenti con il ruolo di amministratore di SharePoint possono anche gestire i gruppi di Microsoft 365 e aprire le richieste di servizio tramite il supporto tecnico Microsoft. [Altre informazioni](https://docs.microsoft.com/sharepoint/sharepoint-admin-role)
 
 ### <a name="teams-service-admin"></a>Amministratore del servizio Teams
 
-Assegnare al ruolo di amministratore dei team gli utenti a cui si desidera accedere e gestire i team & interfaccia di amministrazione di Skype. Gli utenti che dispongono del ruolo di amministratore teams possono gestire anche i gruppi Microsoft 365 e aprire le richieste di servizio tramite il supporto tecnico Microsoft. [Altre informazioni](https://docs.microsoft.com/MicrosoftTeams/using-admin-roles)
+Assegnare il ruolo di amministratore di Teams agli utenti a cui si desidera accedere e gestire l'interfaccia di amministrazione di Teams & di skype. Gli utenti con il ruolo di amministratore di Teams possono anche gestire i gruppi di Microsoft 365 e aprire le richieste di servizio tramite il supporto tecnico Microsoft. [Altre informazioni](https://docs.microsoft.com/MicrosoftTeams/using-admin-roles)
 
 ### <a name="user-admin"></a>Amministratore utenti
 
-Assegnare al ruolo di amministratore utente gli utenti a cui si desidera accedere e gestire la reimpostazione delle password utente e la gestione di utenti e gruppi. È inoltre possibile aprire e gestire le richieste di servizio al supporto tecnico Microsoft. [Altre informazioni](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
+Assegnare il ruolo di amministratore utente agli utenti a cui si desidera accedere e gestire la reimpostazione della password utente e gestire utenti e gruppi. Possono inoltre aprire e gestire le richieste di assistenza al supporto tecnico Microsoft. [Altre informazioni](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles#roles-available-in-the-microsoft-365-admin-center)
 
 ::: moniker range="o365-worldwide"
 
-## <a name="compare-roles"></a>Confronto tra ruoli
+## <a name="compare-roles"></a>Confrontare i ruoli
 
-È ora possibile confrontare le autorizzazioni per un massimo di 3 ruoli alla volta, in modo che sia possibile trovare il ruolo meno permissivo da assegnare.
+È ora possibile confrontare le autorizzazioni per un massimo di 3 ruoli alla volta, in modo da trovare il ruolo meno permissivo da assegnare.
 
 Nell'interfaccia di amministrazione:
 
-- Selezionare fino a 3 ruoli e scegliere **Confronta ruoli** per visualizzare le autorizzazioni assegnate a ogni ruolo.
+- Selezionare fino a 3 ruoli e scegliere **Confronta ruoli** per visualizzare le autorizzazioni di ogni ruolo.
 
-![Figura che illustra un confronto tra i ruoli di amministratore](../../media/compare-roles-list.png)
+![Figura che mostra un confronto tra i ruoli di amministratore](../../media/compare-roles-list.png)
 
 ::: moniker-end
 

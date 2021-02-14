@@ -18,7 +18,7 @@ search.appverid:
 - SPO160
 - MET150
 ms.assetid: 3c364f9e-b9f6-4da4-a792-c8e8c8cd2e86
-description: In questo articolo viene illustrato come è possibile diagnosticare problemi comuni con il sito di SharePoint Online utilizzando gli strumenti di sviluppo di Internet Explorer.
+description: In questo articolo viene illustrato come diagnosticare i problemi comuni relativi al sito di SharePoint Online tramite gli strumenti di sviluppo di Internet Explorer.
 ms.openlocfilehash: a8a79afd860006a16874370b1124696550dab029
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -28,7 +28,7 @@ ms.locfileid: "46691182"
 ---
 # <a name="diagnosing-performance-issues-with-sharepoint-online"></a>Diagnosi dei problemi delle prestazioni con SharePoint Online
 
-In questo articolo viene illustrato come è possibile diagnosticare problemi comuni con il sito di SharePoint Online utilizzando gli strumenti di sviluppo di Internet Explorer.
+In questo articolo viene illustrato come diagnosticare i problemi comuni relativi al sito di SharePoint Online tramite gli strumenti di sviluppo di Internet Explorer.
   
 Esistono tre modi per identificare che una pagina in un sito di SharePoint Online presenta di un problema di prestazioni con le personalizzazioni.
   
@@ -38,7 +38,7 @@ Esistono tre modi per identificare che una pagina in un sito di SharePoint Onlin
 
 - Metrica dell'intestazione delle risposte di SharePoint Online
 
-In questo argomento viene descritto come utilizzare ciascuno di questi metodi per diagnosticare problemi di prestazioni. Dopo aver individuato la causa del problema, è possibile lavorare per una soluzione utilizzando gli articoli relativi al miglioramento delle prestazioni di SharePoint che è possibile trovare su https://aka.ms/tune .
+In questo argomento viene descritto come utilizzare ciascuno di questi metodi per diagnosticare problemi di prestazioni. Una volta individuata la causa del problema, è possibile trovare una soluzione utilizzando gli articoli relativi al miglioramento delle prestazioni di SharePoint disponibili in https://aka.ms/tune .
   
 ## <a name="using-the-f12-tool-bar-to-diagnose-performance-in-sharepoint-online"></a>Utilizzo della barra degli strumenti F12 per diagnosticare le prestazioni in SharePoint Online
 <a name="F12ToolInfo"> </a>
@@ -47,7 +47,7 @@ In questo articolo si utilizza Internet Explorer 11. Le versioni degli strumenti
   
 - [Novità degli strumenti F12](https://go.microsoft.com/fwlink/p/?LinkId=522545)
 
-- [Utilizzo degli strumenti di sviluppo F12](https://go.microsoft.com/fwlink/p/?LinkId=522546)
+- [Uso degli strumenti di sviluppo F12](https://go.microsoft.com/fwlink/p/?LinkId=522546)
 
 Per visualizzare gli strumenti di sviluppo premere **F12**, quindi fare clic sull'icona Wi-Fi:
   
@@ -63,19 +63,19 @@ Nella scheda **Rete**, premere il pulsante verde di riproduzione per caricare la
   
 In questo modo, si ottiene una rappresentazione visiva del tempo impiegato per caricare il file. La linea verde segnala quando la pagina è pronta per il rendering del browser. Ciò può fornire una visualizzazione rapida dei file diversi che possono rallentare i caricamenti delle pagine sul sito.
   
-## <a name="setting-up-a-non-customized-baseline-for-sharepoint-online"></a>Impostazione di una linea di base non personalizzata per SharePoint Online
+## <a name="setting-up-a-non-customized-baseline-for-sharepoint-online"></a>Configurazione di una linea di base non personalizzata per SharePoint Online
 <a name="F12ToolInfo"> </a>
 
-Il modo migliore per determinare i punti deboli delle prestazioni del sito consiste nell'impostare una raccolta siti completamente fuori dalla casella in SharePoint Online. In questo modo è possibile confrontare tutti i vari aspetti del proprio sito con quello che si otterrebbe senza nessuna personalizzazione della pagina. L'home page di OneDrive for Business è un buon esempio di una raccolta siti separata che di solito non dispone di personalizzazioni.
+Il modo migliore per determinare i punti deboli delle prestazioni del sito è configurare una raccolta siti completamente completa in SharePoint Online. In questo modo è possibile confrontare tutti i vari aspetti del proprio sito con quello che si otterrebbe senza nessuna personalizzazione della pagina. L'home page di OneDrive for Business è un buon esempio di una raccolta siti separata che di solito non dispone di personalizzazioni.
   
 ## <a name="viewing-sharepoint-response-header-information"></a>Visualizzazione delle informazioni di intestazione della risposta di SharePoint
 <a name="F12ToolInfo"> </a>
 
-In SharePoint Online, è possibile accedere alle informazioni restituite al browser nell'intestazione della risposta per ogni file. Il valore più utile per la diagnosi dei problemi di prestazioni è **SPRequestDuration**, che consente di visualizzare l'intervallo di tempo in cui la richiesta ha eseguito il server per l'elaborazione. Ciò consente di determinare se la richiesta è molto pesante e richiede un utilizzo intensivo delle risorse. Questa è la migliore conoscenza disponibile relativa all'attività del server per visualizzare la pagina.
+In SharePoint Online, è possibile accedere alle informazioni inviate al browser nell'intestazione della risposta per ogni file. Il valore più utile per la diagnosi dei problemi di prestazioni è **SPRequestDuration,** che visualizza il tempo impiegato per l'elaborazione della richiesta sul server. Ciò consente di determinare se la richiesta è molto pesante e richiede un utilizzo intensivo delle risorse. Questa è la migliore conoscenza disponibile relativa all'attività del server per visualizzare la pagina.
 
 ### <a name="to-view-sharepoint-response-header-information"></a>Per visualizzare le informazioni di intestazione della risposta di SharePoint
   
-1. Verificare di avere installato gli strumenti F12. Per ulteriori informazioni sul download e sull'installazione di questi strumenti, vedere [What ' s New in F12 Tools](https://go.microsoft.com/fwlink/p/?LinkId=522545).
+1. Verificare di avere installato gli strumenti F12. Per ulteriori informazioni sul download e l'installazione di questi strumenti, vedere Novità [degli strumenti F12.](https://go.microsoft.com/fwlink/p/?LinkId=522545)
 
 2. Negli strumenti F12,nella scheda **Rete**, premere il pulsante verde di riproduzione per caricare la pagina.
 

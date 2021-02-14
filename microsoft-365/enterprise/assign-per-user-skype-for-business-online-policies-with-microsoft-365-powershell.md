@@ -1,5 +1,5 @@
 ---
-title: Assegnare criteri Skype for business online per utente con PowerShell per Microsoft 365
+title: Assegnare criteri skype for Business online per utente con PowerShell per Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,7 +13,7 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
-description: 'Riepilogo: utilizzare PowerShell per Microsoft 365 per assegnare impostazioni di comunicazione per utente con criteri di Skype for business online.'
+description: 'Riepilogo: usare PowerShell per Microsoft 365 per assegnare le impostazioni di comunicazione per utente con i criteri di Skype for Business online.'
 ms.openlocfilehash: 6ff9fce3e0287313f6725b370b6ba89cb939eb3a
 ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
 ms.translationtype: MT
@@ -21,11 +21,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 08/14/2020
 ms.locfileid: "46691197"
 ---
-# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Assegnare criteri Skype for business online per utente con PowerShell per Microsoft 365
+# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Assegnare criteri skype for Business online per utente con PowerShell per Microsoft 365
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
-L'utilizzo di PowerShell per Microsoft 365 rappresenta un modo efficace per assegnare le impostazioni di comunicazione per utente con i criteri di Skype for business online.
+L'uso di PowerShell per Microsoft 365 è un modo efficiente per assegnare impostazioni di comunicazione per utente con i criteri di Skype for Business online.
   
 ## <a name="prepare-to-run-the-powershell-commands"></a>Preparare l'esecuzione dei comandi di PowerShell
 
@@ -52,13 +52,13 @@ Si supponga di voler modificare le impostazioni di comunicazione esterna in un a
     
 2. Assegnare tale criterio di accesso esterno ad Alex.
     
-Come determinare il criterio di accesso esterno per l'assegnazione di Alex? Il comando seguente restituisce tutti i criteri di accesso esterno nei quali EnableFederationAccess è impostato su True e EnablePublicCloudAccess è impostato su False:
+Come si determina quale criterio di accesso esterno assegnare ad Alex? Il comando seguente restituisce tutti i criteri di accesso esterno nei quali EnableFederationAccess è impostato su True e EnablePublicCloudAccess è impostato su False:
   
 ```powershell
 Get-CsExternalAccessPolicy -Include All| Where-Object {$_.EnableFederationAccess -eq $True -and $_.EnablePublicCloudAccess -eq $False}
 ```
 
-A meno che non siano state create istanze personalizzate di ExternalAccessPolicy, tale comando restituirà un criterio che soddisfi i criteri (FederationOnly). Ecco un esempio:
+A meno che non siano state create istanze personalizzate di ExternalAccessPolicy, il comando restituisce un criterio che soddisfa i criteri (FederationOnly). Ecco un esempio:
   
 ```powershell
 Identity                          : Tag:FederationOnly
@@ -94,7 +94,7 @@ Get-CsOnlineUser | Grant-CsExternalAccessPolicy "FederationAndPICDefault"
 
 Il comando utilizza Get-CsOnlineUser per restituire una raccolta di tutti gli utenti che sono stati abilitati per Lync. In seguito, invia tutte le informazioni su Grant-CsExternalAccessPolicy che assegna il criterio FederationAndPICDefault a tutti gli utenti presenti nella raccolta.
   
-Come esempio aggiuntivo, si supponga di aver assegnato in precedenza il criterio FederationAndPICDefault ad Alex, ma ora si desidera che Alex sia gestito dal criterio di accesso esterno globale. Non è possibile assegnare in modo esplicito il criterio globale. Al contrario, il criterio globale viene utilizzato per un determinato utente se all'utente non viene assegnato alcun criterio per utente. Pertanto, se si desidera che Alex sia gestito dal criterio globale, è necessario  *non assegnare*  i criteri per utente assegnati in precedenza all'utente. Ecco un esempio di comando:
+Come esempio aggiuntivo, si supponga di aver assegnato in precedenza il criterio FederationAndPICDefault ad Alex, ma ora si desidera che Alex sia gestito dal criterio di accesso esterno globale. Non è possibile assegnare in modo esplicito il criterio globale. Il criterio globale viene invece utilizzato per un determinato utente se a tale utente non è assegnato alcun criterio per utente. Pertanto, se si desidera che Alex sia gestito dal criterio globale, è necessario  *non assegnare*  i criteri per utente assegnati in precedenza all'utente. Ecco un esempio di comando:
   
 ```powershell
 Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName $Null
@@ -105,7 +105,7 @@ Il comando imposta il nome del criterio di accesso esterno assegnato ad Alex su 
 
 ## <a name="managing-large-numbers-of-users"></a>Gestione di un numero elevato di utenti
 
-Per gestire un numero elevato di utenti (1000 o più), è necessario eseguire il batch dei comandi tramite un blocco di script utilizzando il cmdlet [Invoke-Command](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7) .  Negli esempi precedenti, ogni volta che si esegue un cmdlet, è necessario impostare la chiamata e quindi attendere il risultato prima di inviarlo.  Quando si utilizza un blocco di script, questo consente l'esecuzione remota dei cmdlet e, una volta completata, l'invio dei dati. 
+Per gestire un numero elevato di utenti (1000 o più), è necessario batch dei comandi tramite un blocco di script utilizzando il cmdlet [Invoke-Command.](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7)  Negli esempi precedenti, ogni volta che viene eseguito un cmdlet, è necessario configurare la chiamata e quindi attendere il risultato prima di inviarlo di nuovo.  Quando si utilizza un blocco di script, i cmdlet possono essere eseguiti in remoto e, una volta completati, inviare nuovamente i dati. 
 
 ```powershell
 Import-Module LyncOnlineConnector
@@ -134,7 +134,7 @@ $count = 0
 }
 ```
 
-In questo modo si troveranno 500 utenti alla volta che non dispongono di un criterio client. Concederà loro il criterio client "ClientPolicyNoIMURL" e il criterio di accesso esterno "FederationAndPicDefault". I risultati vengono inseriti in batch in gruppi di 50 e ogni batch di 50 viene quindi inviato al computer remoto.
+In questo modo verranno trovati 500 utenti alla volta che non dispongono di un criterio client. Concederà loro il criterio client "ClientPolicyNoIMURL" e il criterio di accesso esterno "FederationAndPicDefault". I risultati vengono suddivisi in gruppi di 50 e ogni batch di 50 viene quindi inviato al computer remoto.
   
 ## <a name="see-also"></a>Vedere anche
 
