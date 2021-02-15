@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per il Kenya
+title: Informazioni di supporto per il Kenya
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,24 +20,24 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48641724"
 ---
-# <a name="contact-support-for-kenya"></a><span data-ttu-id="48626-103">Contattare il supporto per il Kenya</span><span class="sxs-lookup"><span data-stu-id="48626-103">Contact support for Kenya</span></span>
+# <a name="contact-support-for-kenya"></a><span data-ttu-id="2ca1d-103">Contattare il supporto per il Kenya</span><span class="sxs-lookup"><span data-stu-id="2ca1d-103">Contact support for Kenya</span></span>
 
-<span data-ttu-id="48626-104">[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="48626-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="2ca1d-104">[Trova un altro paese o area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="2ca1d-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="48626-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="48626-105">Phone number</span></span>
-<span data-ttu-id="48626-106">020 286 8800</span><span class="sxs-lookup"><span data-stu-id="48626-106">020 286 8800</span></span>
+## <a name="phone-number"></a><span data-ttu-id="2ca1d-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="2ca1d-105">Phone number</span></span>
+<span data-ttu-id="2ca1d-106">020 286 8800</span><span class="sxs-lookup"><span data-stu-id="2ca1d-106">020 286 8800</span></span>
 
-<span data-ttu-id="48626-107">Selezionare l'opzione 9</span><span class="sxs-lookup"><span data-stu-id="48626-107">Select option 9</span></span>
+<span data-ttu-id="2ca1d-107">Selezionare l'opzione 9</span><span class="sxs-lookup"><span data-stu-id="2ca1d-107">Select option 9</span></span>
 
-<span data-ttu-id="48626-108">Immettere il codice 7704</span><span class="sxs-lookup"><span data-stu-id="48626-108">Enter code 7704</span></span>
+<span data-ttu-id="2ca1d-108">Immettere il codice 7704</span><span class="sxs-lookup"><span data-stu-id="2ca1d-108">Enter code 7704</span></span>
 
-## <a name="hours"></a><span data-ttu-id="48626-109">Ore</span><span class="sxs-lookup"><span data-stu-id="48626-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="48626-110">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="48626-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="2ca1d-109">Ore</span><span class="sxs-lookup"><span data-stu-id="2ca1d-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="2ca1d-110">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="2ca1d-110">Billing Support:</span></span>
 
-<span data-ttu-id="48626-111">Inglese: Mon-Fri 10.00-18.00</span><span class="sxs-lookup"><span data-stu-id="48626-111">English: Mon-Fri 10 AM-6 PM</span></span>
+<span data-ttu-id="2ca1d-111">Inglese: Mon-Fri dalle 10.00 alle 18.00</span><span class="sxs-lookup"><span data-stu-id="2ca1d-111">English: Mon-Fri 10 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="48626-112">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="48626-112">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="2ca1d-112">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="2ca1d-112">Technical Support:</span></span>
 
-<span data-ttu-id="48626-113">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="48626-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="2ca1d-113">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="2ca1d-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="48626-114">Applicazione delle tariffe di chiamata locali</span><span class="sxs-lookup"><span data-stu-id="48626-114">Local call charges apply</span></span>
+<span data-ttu-id="2ca1d-114">Costo in base alle tariffe telefoniche locali</span><span class="sxs-lookup"><span data-stu-id="2ca1d-114">Local call charges apply</span></span>

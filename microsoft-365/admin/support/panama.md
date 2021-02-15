@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per Panama
+title: Informazioni di supporto per Panama
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,22 +20,22 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48640392"
 ---
-# <a name="contact-support-for-panama"></a><span data-ttu-id="95085-103">Contattare il supporto per Panama</span><span class="sxs-lookup"><span data-stu-id="95085-103">Contact support for Panama</span></span>
+# <a name="contact-support-for-panama"></a><span data-ttu-id="b6e04-103">Contattare il supporto tecnico per Panama</span><span class="sxs-lookup"><span data-stu-id="b6e04-103">Contact support for Panama</span></span>
 
-<span data-ttu-id="95085-104">[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="95085-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="b6e04-104">[Trova un altro paese o area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="b6e04-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="95085-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="95085-105">Phone number</span></span>
-<span data-ttu-id="95085-106">00800 051 0398</span><span class="sxs-lookup"><span data-stu-id="95085-106">00800 051 0398</span></span>
+## <a name="phone-number"></a><span data-ttu-id="b6e04-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="b6e04-105">Phone number</span></span>
+<span data-ttu-id="b6e04-106">00800 051 0398</span><span class="sxs-lookup"><span data-stu-id="b6e04-106">00800 051 0398</span></span>
 
-<span data-ttu-id="95085-107">Selezionare l'opzione 4</span><span class="sxs-lookup"><span data-stu-id="95085-107">Select option 4</span></span>
+<span data-ttu-id="b6e04-107">Selezionare l'opzione 4</span><span class="sxs-lookup"><span data-stu-id="b6e04-107">Select option 4</span></span>
 
-<span data-ttu-id="95085-108">Immettere il codice 7007</span><span class="sxs-lookup"><span data-stu-id="95085-108">Enter code 7007</span></span>
+<span data-ttu-id="b6e04-108">Immettere il codice 7007</span><span class="sxs-lookup"><span data-stu-id="b6e04-108">Enter code 7007</span></span>
 
-## <a name="hours"></a><span data-ttu-id="95085-109">Ore</span><span class="sxs-lookup"><span data-stu-id="95085-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="95085-110">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="95085-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="b6e04-109">Ore</span><span class="sxs-lookup"><span data-stu-id="b6e04-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="b6e04-110">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="b6e04-110">Billing Support:</span></span>
 
-<span data-ttu-id="95085-111">Spagnolo: Mon-Fri 9.00-17.00</span><span class="sxs-lookup"><span data-stu-id="95085-111">Spanish: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="b6e04-111">Spagnolo: Mon-Fri dalle 9.00 alle 17.00</span><span class="sxs-lookup"><span data-stu-id="b6e04-111">Spanish: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="95085-112">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="95085-112">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="b6e04-112">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="b6e04-112">Technical Support:</span></span>
 
-<span data-ttu-id="95085-113">Spagnolo: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="95085-113">Spanish: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="b6e04-113">Spagnolo: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="b6e04-113">Spanish: 24 hours a day, 7 days a week</span></span>

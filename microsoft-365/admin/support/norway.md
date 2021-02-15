@@ -20,22 +20,22 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48640560"
 ---
-# <a name="contact-support-for-norway"></a><span data-ttu-id="61c0a-103">Contattare il supporto per la Norvegia</span><span class="sxs-lookup"><span data-stu-id="61c0a-103">Contact support for Norway</span></span>
+# <a name="contact-support-for-norway"></a><span data-ttu-id="22267-103">Contattare il supporto per la Norvegia</span><span class="sxs-lookup"><span data-stu-id="22267-103">Contact support for Norway</span></span>
 
-<span data-ttu-id="61c0a-104">[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="61c0a-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="22267-104">[Trova un altro paese o area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="22267-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="61c0a-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="61c0a-105">Phone number</span></span>
-<span data-ttu-id="61c0a-106">800 31068</span><span class="sxs-lookup"><span data-stu-id="61c0a-106">800 31068</span></span>
+## <a name="phone-number"></a><span data-ttu-id="22267-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="22267-105">Phone number</span></span>
+<span data-ttu-id="22267-106">800 31068</span><span class="sxs-lookup"><span data-stu-id="22267-106">800 31068</span></span>
 
-## <a name="hours"></a><span data-ttu-id="61c0a-107">Ore</span><span class="sxs-lookup"><span data-stu-id="61c0a-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="61c0a-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="61c0a-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="22267-107">Ore</span><span class="sxs-lookup"><span data-stu-id="22267-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="22267-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="22267-108">Billing Support:</span></span>
 
-<span data-ttu-id="61c0a-109">Inglese: Mon-Fri 9.00-17.00</span><span class="sxs-lookup"><span data-stu-id="61c0a-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="22267-109">Inglese: lun-ven 9:00-17:00</span><span class="sxs-lookup"><span data-stu-id="22267-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="61c0a-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="61c0a-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="22267-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="22267-110">Technical Support:</span></span>
 
-<span data-ttu-id="61c0a-111">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="61c0a-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="22267-111">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="22267-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="61c0a-112">Numero di telefono alternativo: 22 31 07 48</span><span class="sxs-lookup"><span data-stu-id="61c0a-112">Alternative Phone Number: 22 31 07 48</span></span>
+<span data-ttu-id="22267-112">Numero di telefono alternativo: 22 31 07 48</span><span class="sxs-lookup"><span data-stu-id="22267-112">Alternative Phone Number: 22 31 07 48</span></span>
 
-<span data-ttu-id="61c0a-113">Applicazione delle tariffe di chiamata locali</span><span class="sxs-lookup"><span data-stu-id="61c0a-113">Local call charges apply</span></span>
+<span data-ttu-id="22267-113">Costo in base alle tariffe telefoniche locali</span><span class="sxs-lookup"><span data-stu-id="22267-113">Local call charges apply</span></span>

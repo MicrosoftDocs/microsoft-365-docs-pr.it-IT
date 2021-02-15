@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per le Isole Pitcairn
+title: Informazioni di supporto per le isole Pitcairn
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,20 +20,20 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48640320"
 ---
-# <a name="contact-support-for-pitcairn-islands"></a><span data-ttu-id="d8d85-103">Contattare il supporto per le Isole Pitcairn</span><span class="sxs-lookup"><span data-stu-id="d8d85-103">Contact support for Pitcairn Islands</span></span>
+# <a name="contact-support-for-pitcairn-islands"></a><span data-ttu-id="50f2d-103">Contattare il supporto per le isole Pitcairn</span><span class="sxs-lookup"><span data-stu-id="50f2d-103">Contact support for Pitcairn Islands</span></span>
 
-<span data-ttu-id="d8d85-104">[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="d8d85-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="50f2d-104">[Trova un altro paese o area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="50f2d-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="d8d85-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="d8d85-105">Phone number</span></span>
-<span data-ttu-id="d8d85-106">+ 1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="d8d85-106">+1 312 843 5148</span></span>
+## <a name="phone-number"></a><span data-ttu-id="50f2d-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="50f2d-105">Phone number</span></span>
+<span data-ttu-id="50f2d-106">+1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="50f2d-106">+1 312 843 5148</span></span>
 
-## <a name="hours"></a><span data-ttu-id="d8d85-107">Ore</span><span class="sxs-lookup"><span data-stu-id="d8d85-107">Hours</span></span>
-<span data-ttu-id="d8d85-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="d8d85-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="50f2d-107">Ore</span><span class="sxs-lookup"><span data-stu-id="50f2d-107">Hours</span></span>
+<span data-ttu-id="50f2d-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="50f2d-108">Billing Support:</span></span>
 
-<span data-ttu-id="d8d85-109">Inglese: Mon-Fri 9.00-17.00</span><span class="sxs-lookup"><span data-stu-id="d8d85-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="50f2d-109">Inglese: lun-ven 9:00-17:00</span><span class="sxs-lookup"><span data-stu-id="50f2d-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="d8d85-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="d8d85-110">Technical Support:</span></span>
+<span data-ttu-id="50f2d-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="50f2d-110">Technical Support:</span></span>
 
-<span data-ttu-id="d8d85-111">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="d8d85-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="50f2d-111">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="50f2d-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="d8d85-112">Tariffe di chiamata internazionali applicate</span><span class="sxs-lookup"><span data-stu-id="d8d85-112">International call charges apply</span></span>
+<span data-ttu-id="50f2d-112">Si applicano addebiti per chiamate internazionali</span><span class="sxs-lookup"><span data-stu-id="50f2d-112">International call charges apply</span></span>

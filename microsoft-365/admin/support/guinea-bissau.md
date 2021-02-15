@@ -20,22 +20,22 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48642204"
 ---
-# <a name="contact-support-for-guinea-bissau"></a><span data-ttu-id="816a9-103">Contattare il supporto tecnico per Guinea-Bissau</span><span class="sxs-lookup"><span data-stu-id="816a9-103">Contact support for Guinea-Bissau</span></span>
+# <a name="contact-support-for-guinea-bissau"></a><span data-ttu-id="3f0c0-103">Contattare il supporto tecnico per Guinea-Bissau</span><span class="sxs-lookup"><span data-stu-id="3f0c0-103">Contact support for Guinea-Bissau</span></span>
 
-<span data-ttu-id="816a9-104">[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="816a9-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="3f0c0-104">[Trova un altro paese o area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="3f0c0-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="816a9-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="816a9-105">Phone number</span></span>
-<span data-ttu-id="816a9-106">+ 1 312 843 5153</span><span class="sxs-lookup"><span data-stu-id="816a9-106">+1 312 843 5153</span></span>
+## <a name="phone-number"></a><span data-ttu-id="3f0c0-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="3f0c0-105">Phone number</span></span>
+<span data-ttu-id="3f0c0-106">+1 312 843 5153</span><span class="sxs-lookup"><span data-stu-id="3f0c0-106">+1 312 843 5153</span></span>
 
-## <a name="hours"></a><span data-ttu-id="816a9-107">Ore</span><span class="sxs-lookup"><span data-stu-id="816a9-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="816a9-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="816a9-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="3f0c0-107">Ore</span><span class="sxs-lookup"><span data-stu-id="3f0c0-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="3f0c0-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="3f0c0-108">Billing Support:</span></span>
 
-<span data-ttu-id="816a9-109">Inglese: Mon-Fri 9.00-17.00</span><span class="sxs-lookup"><span data-stu-id="816a9-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="3f0c0-109">Inglese: lun-ven 9:00-17:00</span><span class="sxs-lookup"><span data-stu-id="3f0c0-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="816a9-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="816a9-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="3f0c0-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="3f0c0-110">Technical Support:</span></span>
 
-<span data-ttu-id="816a9-111">Portoghese: 8.00-21.00</span><span class="sxs-lookup"><span data-stu-id="816a9-111">Portuguese: 8 AM-9 PM</span></span>
+<span data-ttu-id="3f0c0-111">Portoghese: 8.00-21.00</span><span class="sxs-lookup"><span data-stu-id="3f0c0-111">Portuguese: 8 AM-9 PM</span></span>
 
-<span data-ttu-id="816a9-112">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="816a9-112">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="3f0c0-112">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="3f0c0-112">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="816a9-113">Tariffe di chiamata internazionali applicate</span><span class="sxs-lookup"><span data-stu-id="816a9-113">International call charges apply</span></span>
+<span data-ttu-id="3f0c0-113">Si applicano addebiti per chiamate internazionali</span><span class="sxs-lookup"><span data-stu-id="3f0c0-113">International call charges apply</span></span>

@@ -20,24 +20,24 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48643452"
 ---
-# <a name="contact-support-for-central-african-republic"></a><span data-ttu-id="17605-103">Contattare il supporto per la Repubblica Centrafricana</span><span class="sxs-lookup"><span data-stu-id="17605-103">Contact support for Central African Republic</span></span>
+# <a name="contact-support-for-central-african-republic"></a><span data-ttu-id="abbbe-103">Contattare il supporto per la Repubblica Centrafricana</span><span class="sxs-lookup"><span data-stu-id="abbbe-103">Contact support for Central African Republic</span></span>
 
-<span data-ttu-id="17605-104">[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="17605-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="abbbe-104">[Trova un altro paese o area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="abbbe-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="17605-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="17605-105">Phone number</span></span>
-<span data-ttu-id="17605-106">+ 1 312 843 5147</span><span class="sxs-lookup"><span data-stu-id="17605-106">+1 312 843 5147</span></span>
+## <a name="phone-number"></a><span data-ttu-id="abbbe-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="abbbe-105">Phone number</span></span>
+<span data-ttu-id="abbbe-106">+1 312 843 5147</span><span class="sxs-lookup"><span data-stu-id="abbbe-106">+1 312 843 5147</span></span>
 
-## <a name="hours"></a><span data-ttu-id="17605-107">Ore</span><span class="sxs-lookup"><span data-stu-id="17605-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="17605-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="17605-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="abbbe-107">Ore</span><span class="sxs-lookup"><span data-stu-id="abbbe-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="abbbe-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="abbbe-108">Billing Support:</span></span>
 
-<span data-ttu-id="17605-109">Francese: Mon-Fri 9.00-17.00</span><span class="sxs-lookup"><span data-stu-id="17605-109">French: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="abbbe-109">Francese: Mon-Fri dalle 9.00 alle 17.00</span><span class="sxs-lookup"><span data-stu-id="abbbe-109">French: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="17605-110">Inglese: Mon-Fri 9.00-17.00</span><span class="sxs-lookup"><span data-stu-id="17605-110">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="abbbe-110">Inglese: lun-ven 9:00-17:00</span><span class="sxs-lookup"><span data-stu-id="abbbe-110">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="17605-111">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="17605-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="abbbe-111">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="abbbe-111">Technical Support:</span></span>
 
-<span data-ttu-id="17605-112">Francese: Mon-Fri 8 AM-9 PM</span><span class="sxs-lookup"><span data-stu-id="17605-112">French: Mon-Fri 8 AM-9 PM</span></span>
+<span data-ttu-id="abbbe-112">Francese: Mon-Fri dalle 8.00 alle 21.00</span><span class="sxs-lookup"><span data-stu-id="abbbe-112">French: Mon-Fri 8 AM-9 PM</span></span>
 
-<span data-ttu-id="17605-113">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="17605-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="abbbe-113">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="abbbe-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="17605-114">Tariffe di chiamata internazionali applicate</span><span class="sxs-lookup"><span data-stu-id="17605-114">International call charges apply</span></span>
+<span data-ttu-id="abbbe-114">Si applicano addebiti per chiamate internazionali</span><span class="sxs-lookup"><span data-stu-id="abbbe-114">International call charges apply</span></span>

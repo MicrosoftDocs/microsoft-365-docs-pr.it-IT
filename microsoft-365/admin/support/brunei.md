@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per Brunei
+title: Informazioni di supporto per Brunei
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,22 +20,22 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48643656"
 ---
-# <a name="contact-support-for-brunei"></a><span data-ttu-id="c42d8-103">Contattare il supporto per Brunei</span><span class="sxs-lookup"><span data-stu-id="c42d8-103">Contact support for Brunei</span></span>
+# <a name="contact-support-for-brunei"></a><span data-ttu-id="6f06d-103">Contattare il supporto per Brunei</span><span class="sxs-lookup"><span data-stu-id="6f06d-103">Contact support for Brunei</span></span>
 
-<span data-ttu-id="c42d8-104">[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="c42d8-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="6f06d-104">[Trova un altro paese o area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="6f06d-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="c42d8-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="c42d8-105">Phone number</span></span>
-<span data-ttu-id="c42d8-106">800 1111 673</span><span class="sxs-lookup"><span data-stu-id="c42d8-106">800 1111 673</span></span>
+## <a name="phone-number"></a><span data-ttu-id="6f06d-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="6f06d-105">Phone number</span></span>
+<span data-ttu-id="6f06d-106">800 1111 673</span><span class="sxs-lookup"><span data-stu-id="6f06d-106">800 1111 673</span></span>
 
-<span data-ttu-id="c42d8-107">Dopo la composizione, immettere</span><span class="sxs-lookup"><span data-stu-id="c42d8-107">After dialing, enter</span></span>
+<span data-ttu-id="6f06d-107">Dopo la composizione, immettere</span><span class="sxs-lookup"><span data-stu-id="6f06d-107">After dialing, enter</span></span>
 
-<span data-ttu-id="c42d8-108">877 413 1767</span><span class="sxs-lookup"><span data-stu-id="c42d8-108">877 413 1767</span></span>
+<span data-ttu-id="6f06d-108">877 413 1767</span><span class="sxs-lookup"><span data-stu-id="6f06d-108">877 413 1767</span></span>
 
-## <a name="hours"></a><span data-ttu-id="c42d8-109">Ore</span><span class="sxs-lookup"><span data-stu-id="c42d8-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="c42d8-110">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="c42d8-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="6f06d-109">Ore</span><span class="sxs-lookup"><span data-stu-id="6f06d-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="6f06d-110">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="6f06d-110">Billing Support:</span></span>
 
-<span data-ttu-id="c42d8-111">Inglese: Mon-Fri 9.00-17.00</span><span class="sxs-lookup"><span data-stu-id="c42d8-111">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="6f06d-111">Inglese: lun-ven 9:00-17:00</span><span class="sxs-lookup"><span data-stu-id="6f06d-111">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="c42d8-112">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="c42d8-112">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="6f06d-112">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="6f06d-112">Technical Support:</span></span>
 
-<span data-ttu-id="c42d8-113">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="c42d8-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="6f06d-113">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="6f06d-113">English: 24 hours a day, 7 days a week</span></span>

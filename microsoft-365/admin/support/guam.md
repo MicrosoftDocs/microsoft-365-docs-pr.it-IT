@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per Guam
+title: Informazioni di supporto per Guam
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,20 +20,20 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48642396"
 ---
-# <a name="contact-support-for-guam"></a><span data-ttu-id="1dddb-103">Contattare il supporto per Guam</span><span class="sxs-lookup"><span data-stu-id="1dddb-103">Contact support for Guam</span></span>
+# <a name="contact-support-for-guam"></a><span data-ttu-id="7b069-103">Contattare il supporto tecnico per Guam</span><span class="sxs-lookup"><span data-stu-id="7b069-103">Contact support for Guam</span></span>
 
-<span data-ttu-id="1dddb-104">[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="1dddb-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="7b069-104">[Trova un altro paese o area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="7b069-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="1dddb-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="1dddb-105">Phone number</span></span>
-<span data-ttu-id="1dddb-106">800-865-9408</span><span class="sxs-lookup"><span data-stu-id="1dddb-106">800-865-9408</span></span>
+## <a name="phone-number"></a><span data-ttu-id="7b069-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="7b069-105">Phone number</span></span>
+<span data-ttu-id="7b069-106">800-865-9408</span><span class="sxs-lookup"><span data-stu-id="7b069-106">800-865-9408</span></span>
 
-## <a name="hours"></a><span data-ttu-id="1dddb-107">Ore</span><span class="sxs-lookup"><span data-stu-id="1dddb-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="1dddb-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="1dddb-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="7b069-107">Ore</span><span class="sxs-lookup"><span data-stu-id="7b069-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="7b069-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="7b069-108">Billing Support:</span></span>
 
-<span data-ttu-id="1dddb-109">Inglese: Mon-Fri 3 AM-12 PM</span><span class="sxs-lookup"><span data-stu-id="1dddb-109">English: Mon-Fri 3 AM-12 PM</span></span>
+<span data-ttu-id="7b069-109">Inglese: Mon-Fri dalle 3.00 alle 12.00</span><span class="sxs-lookup"><span data-stu-id="7b069-109">English: Mon-Fri 3 AM-12 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="1dddb-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="1dddb-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="7b069-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="7b069-110">Technical Support:</span></span>
 
-<span data-ttu-id="1dddb-111">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="1dddb-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="7b069-111">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="7b069-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="1dddb-112">Applicazione delle tariffe di chiamata locali</span><span class="sxs-lookup"><span data-stu-id="1dddb-112">Local call charges apply</span></span>
+<span data-ttu-id="7b069-112">Costo in base alle tariffe telefoniche locali</span><span class="sxs-lookup"><span data-stu-id="7b069-112">Local call charges apply</span></span>

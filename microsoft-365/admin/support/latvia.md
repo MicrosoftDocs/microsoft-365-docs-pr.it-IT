@@ -20,18 +20,18 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48641652"
 ---
-# <a name="contact-support-for-latvia"></a><span data-ttu-id="f8949-103">Contattare il supporto per la Lettonia</span><span class="sxs-lookup"><span data-stu-id="f8949-103">Contact support for Latvia</span></span>
+# <a name="contact-support-for-latvia"></a><span data-ttu-id="fb287-103">Contattare il supporto per la Lettonia</span><span class="sxs-lookup"><span data-stu-id="fb287-103">Contact support for Latvia</span></span>
 
-<span data-ttu-id="f8949-104">[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="f8949-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="fb287-104">[Trova un altro paese o area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="fb287-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="f8949-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="f8949-105">Phone number</span></span>
-<span data-ttu-id="f8949-106">8000 42 33</span><span class="sxs-lookup"><span data-stu-id="f8949-106">8000 42 33</span></span>
+## <a name="phone-number"></a><span data-ttu-id="fb287-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="fb287-105">Phone number</span></span>
+<span data-ttu-id="fb287-106">8000 42 33</span><span class="sxs-lookup"><span data-stu-id="fb287-106">8000 42 33</span></span>
 
-## <a name="hours"></a><span data-ttu-id="f8949-107">Ore</span><span class="sxs-lookup"><span data-stu-id="f8949-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="f8949-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="f8949-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="fb287-107">Ore</span><span class="sxs-lookup"><span data-stu-id="fb287-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="fb287-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="fb287-108">Billing Support:</span></span>
 
-<span data-ttu-id="f8949-109">Inglese: Mon-Fri 9.00-17.00</span><span class="sxs-lookup"><span data-stu-id="f8949-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="fb287-109">Inglese: lun-ven 9:00-17:00</span><span class="sxs-lookup"><span data-stu-id="fb287-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="f8949-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="f8949-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="fb287-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="fb287-110">Technical Support:</span></span>
 
-<span data-ttu-id="f8949-111">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="f8949-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="fb287-111">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="fb287-111">English: 24 hours a day, 7 days a week</span></span>

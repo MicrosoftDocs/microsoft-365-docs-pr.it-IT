@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per Costa Rica
+title: Informazioni sul supporto per il Costa Rica
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,18 +20,18 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48643176"
 ---
-# <a name="contact-support-for-costa-rica"></a><span data-ttu-id="64d5e-103">Contattare il supporto per il Costa Rica</span><span class="sxs-lookup"><span data-stu-id="64d5e-103">Contact support for Costa Rica</span></span>
+# <a name="contact-support-for-costa-rica"></a><span data-ttu-id="fece3-103">Contattare il supporto tecnico per il Costa Rica</span><span class="sxs-lookup"><span data-stu-id="fece3-103">Contact support for Costa Rica</span></span>
 
-<span data-ttu-id="64d5e-104">[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="64d5e-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="fece3-104">[Trova un altro paese o area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="fece3-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="64d5e-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="64d5e-105">Phone number</span></span>
-<span data-ttu-id="64d5e-106">0800 012 1447</span><span class="sxs-lookup"><span data-stu-id="64d5e-106">0800 012 1447</span></span>
+## <a name="phone-number"></a><span data-ttu-id="fece3-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="fece3-105">Phone number</span></span>
+<span data-ttu-id="fece3-106">0800 012 1447</span><span class="sxs-lookup"><span data-stu-id="fece3-106">0800 012 1447</span></span>
 
-## <a name="hours"></a><span data-ttu-id="64d5e-107">Ore</span><span class="sxs-lookup"><span data-stu-id="64d5e-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="64d5e-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="64d5e-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="fece3-107">Ore</span><span class="sxs-lookup"><span data-stu-id="fece3-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="fece3-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="fece3-108">Billing Support:</span></span>
 
-<span data-ttu-id="64d5e-109">Spagnolo: Mon-Fri 9.00-17.00</span><span class="sxs-lookup"><span data-stu-id="64d5e-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="fece3-109">Spagnolo: Mon-Fri dalle 9.00 alle 17.00</span><span class="sxs-lookup"><span data-stu-id="fece3-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="64d5e-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="64d5e-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="fece3-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="fece3-110">Technical Support:</span></span>
 
-<span data-ttu-id="64d5e-111">Spagnolo: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="64d5e-111">Spanish: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="fece3-111">Spagnolo: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="fece3-111">Spanish: 24 hours a day, 7 days a week</span></span>

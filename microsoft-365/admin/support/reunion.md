@@ -1,5 +1,5 @@
 ---
-title: Informazioni di supporto per la riunione
+title: Informazioni di supporto per riunione
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,24 +20,24 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48640152"
 ---
-# <a name="contact-support-for-reunion"></a><span data-ttu-id="53597-103">Contattare il supporto per la riunione</span><span class="sxs-lookup"><span data-stu-id="53597-103">Contact support for Reunion</span></span>
+# <a name="contact-support-for-reunion"></a><span data-ttu-id="b2334-103">Contattare il supporto per riunione</span><span class="sxs-lookup"><span data-stu-id="b2334-103">Contact support for Reunion</span></span>
 
-<span data-ttu-id="53597-104">[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="53597-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="b2334-104">[Trova un altro paese o area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="b2334-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="53597-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="53597-105">Phone number</span></span>
-<span data-ttu-id="53597-106">+ 1 312 843 5147</span><span class="sxs-lookup"><span data-stu-id="53597-106">+1 312 843 5147</span></span>
+## <a name="phone-number"></a><span data-ttu-id="b2334-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="b2334-105">Phone number</span></span>
+<span data-ttu-id="b2334-106">+1 312 843 5147</span><span class="sxs-lookup"><span data-stu-id="b2334-106">+1 312 843 5147</span></span>
 
-## <a name="hours"></a><span data-ttu-id="53597-107">Ore</span><span class="sxs-lookup"><span data-stu-id="53597-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="53597-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="53597-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="b2334-107">Ore</span><span class="sxs-lookup"><span data-stu-id="b2334-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="b2334-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="b2334-108">Billing Support:</span></span>
 
-<span data-ttu-id="53597-109">Francese: Mon-Fri mezzogiorno-8 PM</span><span class="sxs-lookup"><span data-stu-id="53597-109">French: Mon-Fri noon-8 PM</span></span>
+<span data-ttu-id="b2334-109">Francese: Mon-Fri alle 20:00</span><span class="sxs-lookup"><span data-stu-id="b2334-109">French: Mon-Fri noon-8 PM</span></span>
 
-<span data-ttu-id="53597-110">Inglese: Mon-Fri mezzogiorno-8 PM</span><span class="sxs-lookup"><span data-stu-id="53597-110">English: Mon-Fri noon-8 PM</span></span>
+<span data-ttu-id="b2334-110">Inglese: Mon-Fri dalle 20:00 alle 20:00</span><span class="sxs-lookup"><span data-stu-id="b2334-110">English: Mon-Fri noon-8 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="53597-111">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="53597-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="b2334-111">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="b2334-111">Technical Support:</span></span>
 
-<span data-ttu-id="53597-112">Francese: Mon-Fri 11:00-23.00</span><span class="sxs-lookup"><span data-stu-id="53597-112">French: Mon-Fri 11 AM-11 PM</span></span>
+<span data-ttu-id="b2334-112">Francese: Mon-Fri dalle 11.00 alle 23.00</span><span class="sxs-lookup"><span data-stu-id="b2334-112">French: Mon-Fri 11 AM-11 PM</span></span>
 
-<span data-ttu-id="53597-113">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="53597-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="b2334-113">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="b2334-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="53597-114">Applicazione delle tariffe di chiamata locali</span><span class="sxs-lookup"><span data-stu-id="53597-114">Local call charges apply</span></span>
+<span data-ttu-id="b2334-114">Costo in base alle tariffe telefoniche locali</span><span class="sxs-lookup"><span data-stu-id="b2334-114">Local call charges apply</span></span>

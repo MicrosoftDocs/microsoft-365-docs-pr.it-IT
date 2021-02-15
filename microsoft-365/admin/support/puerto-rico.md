@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per Puerto Rico
+title: Informazioni di supporto per Portorico
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,22 +20,22 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48640284"
 ---
-# <a name="contact-support-for-puerto-rico"></a><span data-ttu-id="d0449-103">Contattare il supporto tecnico per Puerto Rico</span><span class="sxs-lookup"><span data-stu-id="d0449-103">Contact support for Puerto Rico</span></span>
+# <a name="contact-support-for-puerto-rico"></a><span data-ttu-id="5433c-103">Contattare il supporto per Portorico</span><span class="sxs-lookup"><span data-stu-id="5433c-103">Contact support for Puerto Rico</span></span>
 
-<span data-ttu-id="d0449-104">[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="d0449-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="5433c-104">[Trova un altro paese o area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="5433c-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="d0449-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="d0449-105">Phone number</span></span>
-<span data-ttu-id="d0449-106">1 800 865 9408</span><span class="sxs-lookup"><span data-stu-id="d0449-106">1 800 865 9408</span></span>
+## <a name="phone-number"></a><span data-ttu-id="5433c-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="5433c-105">Phone number</span></span>
+<span data-ttu-id="5433c-106">1 800 865 9408</span><span class="sxs-lookup"><span data-stu-id="5433c-106">1 800 865 9408</span></span>
 
-## <a name="hours"></a><span data-ttu-id="d0449-107">Ore</span><span class="sxs-lookup"><span data-stu-id="d0449-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="d0449-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="d0449-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="5433c-107">Ore</span><span class="sxs-lookup"><span data-stu-id="5433c-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="5433c-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="5433c-108">Billing Support:</span></span>
 
-<span data-ttu-id="d0449-109">Spagnolo: Mon-Fri 9.00-17.00</span><span class="sxs-lookup"><span data-stu-id="d0449-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="5433c-109">Spagnolo: Mon-Fri dalle 9.00 alle 17.00</span><span class="sxs-lookup"><span data-stu-id="5433c-109">Spanish: Mon-Fri 9 AM-5 PM</span></span>
 
-<span data-ttu-id="d0449-110">Inglese: Mon-Fri 9.00-17.00</span><span class="sxs-lookup"><span data-stu-id="d0449-110">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="5433c-110">Inglese: lun-ven 9:00-17:00</span><span class="sxs-lookup"><span data-stu-id="5433c-110">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="d0449-111">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="d0449-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="5433c-111">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="5433c-111">Technical Support:</span></span>
 
-<span data-ttu-id="d0449-112">Spagnolo: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="d0449-112">Spanish: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="5433c-112">Spagnolo: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="5433c-112">Spanish: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="d0449-113">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="d0449-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="5433c-113">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="5433c-113">English: 24 hours a day, 7 days a week</span></span>

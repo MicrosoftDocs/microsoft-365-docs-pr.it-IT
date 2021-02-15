@@ -20,26 +20,26 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48640308"
 ---
-# <a name="contact-support-for-poland"></a><span data-ttu-id="017cd-103">Contattare il supporto per la Polonia</span><span class="sxs-lookup"><span data-stu-id="017cd-103">Contact support for Poland</span></span>
+# <a name="contact-support-for-poland"></a><span data-ttu-id="6f493-103">Contattare il supporto per la Polonia</span><span class="sxs-lookup"><span data-stu-id="6f493-103">Contact support for Poland</span></span>
 
-<span data-ttu-id="017cd-104">[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="017cd-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="6f493-104">[Trova un altro paese o area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="6f493-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="017cd-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="017cd-105">Phone number</span></span>
-<span data-ttu-id="017cd-106">800 70 23 20</span><span class="sxs-lookup"><span data-stu-id="017cd-106">800 70 23 20</span></span>
+## <a name="phone-number"></a><span data-ttu-id="6f493-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="6f493-105">Phone number</span></span>
+<span data-ttu-id="6f493-106">800 70 23 20</span><span class="sxs-lookup"><span data-stu-id="6f493-106">800 70 23 20</span></span>
 
-## <a name="hours"></a><span data-ttu-id="017cd-107">Ore</span><span class="sxs-lookup"><span data-stu-id="017cd-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="017cd-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="017cd-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="6f493-107">Ore</span><span class="sxs-lookup"><span data-stu-id="6f493-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="6f493-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="6f493-108">Billing Support:</span></span>
 
-<span data-ttu-id="017cd-109">Polacco: Mon-Fri 8.00-18.00</span><span class="sxs-lookup"><span data-stu-id="017cd-109">Polish: Mon-Fri 8 AM-6 PM</span></span>
+<span data-ttu-id="6f493-109">Polacco: Mon-Fri dalle 8.00 alle 18.00</span><span class="sxs-lookup"><span data-stu-id="6f493-109">Polish: Mon-Fri 8 AM-6 PM</span></span>
 
-<span data-ttu-id="017cd-110">Inglese: Mon-Fri 8.00-18.00</span><span class="sxs-lookup"><span data-stu-id="017cd-110">English: Mon-Fri 8 AM-6 PM</span></span>
+<span data-ttu-id="6f493-110">Inglese: Mon-Fri dalle 8.00 alle 18.00</span><span class="sxs-lookup"><span data-stu-id="6f493-110">English: Mon-Fri 8 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="017cd-111">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="017cd-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="6f493-111">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="6f493-111">Technical Support:</span></span>
 
-<span data-ttu-id="017cd-112">Polacco: Mon-Fri 8.00-18.00</span><span class="sxs-lookup"><span data-stu-id="017cd-112">Polish: Mon-Fri 8 AM-6 PM</span></span>
+<span data-ttu-id="6f493-112">Polacco: Mon-Fri dalle 8.00 alle 18.00</span><span class="sxs-lookup"><span data-stu-id="6f493-112">Polish: Mon-Fri 8 AM-6 PM</span></span>
 
-<span data-ttu-id="017cd-113">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="017cd-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="6f493-113">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="6f493-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="017cd-114">Numero di telefono alternativo: 022 306 05 17</span><span class="sxs-lookup"><span data-stu-id="017cd-114">Alternative Phone Number: 022 306 05 17</span></span>
+<span data-ttu-id="6f493-114">Numero di telefono alternativo: 022 306 05 17</span><span class="sxs-lookup"><span data-stu-id="6f493-114">Alternative Phone Number: 022 306 05 17</span></span>
 
-<span data-ttu-id="017cd-115">Applicazione delle tariffe di chiamata locali</span><span class="sxs-lookup"><span data-stu-id="017cd-115">Local call charges apply</span></span>
+<span data-ttu-id="6f493-115">Costo in base alle tariffe telefoniche locali</span><span class="sxs-lookup"><span data-stu-id="6f493-115">Local call charges apply</span></span>

@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per le Isole Figi
+title: Informazioni di supporto per le Figi
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,22 +20,22 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48642684"
 ---
-# <a name="contact-support-for-fiji"></a><span data-ttu-id="92515-103">Contattare il supporto per le Fiji</span><span class="sxs-lookup"><span data-stu-id="92515-103">Contact support for Fiji</span></span>
+# <a name="contact-support-for-fiji"></a><span data-ttu-id="0ca0f-103">Contattare il supporto per le Figi</span><span class="sxs-lookup"><span data-stu-id="0ca0f-103">Contact support for Fiji</span></span>
 
-<span data-ttu-id="92515-104">[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="92515-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="0ca0f-104">[Trova un altro paese o area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="0ca0f-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="92515-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="92515-105">Phone number</span></span>
-<span data-ttu-id="92515-106">004 890 1001</span><span class="sxs-lookup"><span data-stu-id="92515-106">004 890 1001</span></span>
+## <a name="phone-number"></a><span data-ttu-id="0ca0f-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="0ca0f-105">Phone number</span></span>
+<span data-ttu-id="0ca0f-106">004 890 1001</span><span class="sxs-lookup"><span data-stu-id="0ca0f-106">004 890 1001</span></span>
 
-<span data-ttu-id="92515-107">Dopo la composizione, immettere</span><span class="sxs-lookup"><span data-stu-id="92515-107">After dialing, enter</span></span>
+<span data-ttu-id="0ca0f-107">Dopo la composizione, immettere</span><span class="sxs-lookup"><span data-stu-id="0ca0f-107">After dialing, enter</span></span>
 
-<span data-ttu-id="92515-108">877 860 4596</span><span class="sxs-lookup"><span data-stu-id="92515-108">877 860 4596</span></span>
+<span data-ttu-id="0ca0f-108">877 860 4596</span><span class="sxs-lookup"><span data-stu-id="0ca0f-108">877 860 4596</span></span>
 
-## <a name="hours"></a><span data-ttu-id="92515-109">Ore</span><span class="sxs-lookup"><span data-stu-id="92515-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="92515-110">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="92515-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="0ca0f-109">Ore</span><span class="sxs-lookup"><span data-stu-id="0ca0f-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="0ca0f-110">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="0ca0f-110">Billing Support:</span></span>
 
-<span data-ttu-id="92515-111">Inglese: Mon-Fri 9.00-17.00</span><span class="sxs-lookup"><span data-stu-id="92515-111">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="0ca0f-111">Inglese: lun-ven 9:00-17:00</span><span class="sxs-lookup"><span data-stu-id="0ca0f-111">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="92515-112">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="92515-112">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="0ca0f-112">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="0ca0f-112">Technical Support:</span></span>
 
-<span data-ttu-id="92515-113">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="92515-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="0ca0f-113">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="0ca0f-113">English: 24 hours a day, 7 days a week</span></span>

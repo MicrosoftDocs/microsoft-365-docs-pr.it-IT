@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per le Maldive
+title: Informazioni sul supporto per le isole Disavadi
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,20 +20,20 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48641292"
 ---
-# <a name="contact-support-for-maldives"></a><span data-ttu-id="47328-103">Contattare il supporto per le Maldive</span><span class="sxs-lookup"><span data-stu-id="47328-103">Contact support for Maldives</span></span>
+# <a name="contact-support-for-maldives"></a><span data-ttu-id="15ff5-103">Contattare il supporto tecnico per le 23:00</span><span class="sxs-lookup"><span data-stu-id="15ff5-103">Contact support for Maldives</span></span>
 
-<span data-ttu-id="47328-104">[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="47328-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="15ff5-104">[Trova un altro paese o area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="15ff5-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="47328-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="47328-105">Phone number</span></span>
-<span data-ttu-id="47328-106">+ 1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="47328-106">+1 312 843 5148</span></span>
+## <a name="phone-number"></a><span data-ttu-id="15ff5-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="15ff5-105">Phone number</span></span>
+<span data-ttu-id="15ff5-106">+1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="15ff5-106">+1 312 843 5148</span></span>
 
-## <a name="hours"></a><span data-ttu-id="47328-107">Ore</span><span class="sxs-lookup"><span data-stu-id="47328-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="47328-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="47328-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="15ff5-107">Ore</span><span class="sxs-lookup"><span data-stu-id="15ff5-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="15ff5-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="15ff5-108">Billing Support:</span></span>
 
-<span data-ttu-id="47328-109">Inglese: Mon-Fri 10.00-18.00</span><span class="sxs-lookup"><span data-stu-id="47328-109">English: Mon-Fri 10 AM-6 PM</span></span>
+<span data-ttu-id="15ff5-109">Inglese: Mon-Fri dalle 10.00 alle 18.00</span><span class="sxs-lookup"><span data-stu-id="15ff5-109">English: Mon-Fri 10 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="47328-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="47328-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="15ff5-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="15ff5-110">Technical Support:</span></span>
 
-<span data-ttu-id="47328-111">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="47328-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="15ff5-111">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="15ff5-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="47328-112">Tariffe di chiamata internazionali applicate</span><span class="sxs-lookup"><span data-stu-id="47328-112">International call charges apply</span></span>
+<span data-ttu-id="15ff5-112">Si applicano addebiti per chiamate internazionali</span><span class="sxs-lookup"><span data-stu-id="15ff5-112">International call charges apply</span></span>
