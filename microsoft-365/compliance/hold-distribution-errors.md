@@ -24,6 +24,6 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 02/04/2021
 ms.locfileid: "50099829"
 ---
-# <a name="troubleshoot-ediscovery-hold-errors"></a><span data-ttu-id="745b9-103">Risolvere gli errori di blocco di eDiscovery</span><span class="sxs-lookup"><span data-stu-id="745b9-103">Troubleshoot eDiscovery hold errors</span></span>
+# <a name="troubleshoot-ediscovery-hold-errors"></a><span data-ttu-id="e5b33-103">Risolvere gli errori di blocco di eDiscovery</span><span class="sxs-lookup"><span data-stu-id="e5b33-103">Troubleshoot eDiscovery hold errors</span></span>
 
-<span data-ttu-id="745b9-104">iniziare ad aggiungere contenuto qui</span><span class="sxs-lookup"><span data-stu-id="745b9-104">start adding content here</span></span>
+<span data-ttu-id="e5b33-104">iniziare ad aggiungere contenuto qui</span><span class="sxs-lookup"><span data-stu-id="e5b33-104">start adding content here</span></span>
