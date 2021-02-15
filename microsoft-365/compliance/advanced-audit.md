@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Audit avanzato in Microsoft 365 fornisce nuove funzionalità di audit per aiutare l'organizzazione nelle indagini forensi e di conformità.
-ms.openlocfilehash: f265a30a3d43b592a7d297e2137fd6b9ff4acfb4
-ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
+ms.openlocfilehash: 0ae67497829e69da92e9735cb68a84e75c517814
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097152"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242458"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Audit avanzato in Microsoft 365
 
@@ -107,7 +107,19 @@ Per cercare i record di controllo dell'evento Send, cercare l'attività **Messag
 
 ### <a name="searchqueryinitiatedexchange"></a>SearchQueryInitiatedExchange
 
-L'evento SearchQueryInitiatedExchange viene attivato quando un utente usa la barra di ricerca in Outlook sul web per cercare gli elementi di una cassetta postale. Gli investigatori possono usare l'evento SearchQueryInitiatedExchange per determinare se un utente malintenzionato può aver compromesso un account cercato, oppure aver tentato di accedere alle informazioni sensibili della cassetta postale. Il record di controllo per un evento SearchQueryInitiatedExchange contiene informazioni come il testo effettivo della query di ricerca. Esaminando le ricerche che possono essere state eseguite dagli utenti malintenzionati, gli investigatori possono comprendere meglio la finalità dei dati della posta elettronica che sono stati cercati.
+L'evento SearchQueryInitiatedExchange viene attivato quando un utente usa Outlook per cercare gli elementi di una cassetta postale. Gli eventi vengono attivati quando vengono eseguite ricerche nei seguenti ambienti di Outlook:
+
+- Outlook (client desktop)
+
+- Outlook sul Web (OWA)
+
+- Outlook per iOS
+
+- Outlook per Android
+
+- App Posta per Windows 10
+
+Gli investigatori possono usare l'evento SearchQueryInitiatedExchange per determinare se un utente malintenzionato può aver compromesso un account cercato, oppure aver tentato di accedere alle informazioni sensibili della cassetta postale. Il record di controllo per un evento SearchQueryInitiatedExchange contiene informazioni come il testo effettivo della query di ricerca. Il record di controllo indica anche l'ambiente di Outlook in cui è stata eseguita la ricerca. Esaminando le ricerche che possono essere state eseguite dagli utenti malintenzionati, gli investigatori possono comprendere meglio la finalità dei dati della posta elettronica che sono stati cercati.
 
 Per cercare i record di controllo dell'evento SearchQueryInitiatedExchange, cercare l'attività **Ricerche email eseguite** nell'elenco a discesa **Attività di ricerca** nello [Strumento di ricerca dei log di controllo](search-the-audit-log-in-security-and-compliance.md) del Centro conformità.
 
@@ -122,7 +134,17 @@ Se il comando `Set-Mailbox -AuditOwner @{Add="SearchQueryInitiated"}` è stato e
 
 ### <a name="searchqueryinitiatedsharepoint"></a>SearchQueryInitiatedSharePoint
 
-Analogamente agli elementi della cassetta postale, l'evento SearchQueryInitiatedSharePoint viene attivato quando un utente cerca degli elementi nel sito iniziale di SharePoint dell'organizzazione. Gli investigatori possono usare l'evento SearchQueryInitiatedSharePoint per stabilire se un utente malintenzionato ha tentato di trovare e potenzialmente accedere a informazioni sensibili in SharePoint. Il record di controllo per un evento SearchQueryInitiatedSharePoint contiene anche il testo effettivo della query di ricerca. Esaminando le ricerche che possono essere state eseguite dagli utenti malintenzionati, gli investigatori possono comprendere meglio la finalità e la portata dei dati dei file che sono stati cercati.
+Analogamente agli elementi della cassetta postale, l'evento SearchQueryInitiatedSharePoint viene attivato quando un utente cerca degli elementi in SharePoint. Gli eventi vengono attivati quando vengono eseguite ricerche nei seguenti tipi di siti di SharePoint:
+
+- Siti Home
+
+- Siti di comunicazione
+
+- Siti hub
+
+- Siti associati a Microsoft Teams
+
+Gli investigatori possono usare l'evento SearchQueryInitiatedSharePoint per stabilire se un utente malintenzionato ha tentato di trovare e potenzialmente accedere a informazioni sensibili in SharePoint. Il record di controllo per un evento SearchQueryInitiatedSharePoint contiene anche il testo effettivo della query di ricerca. Il record di controllo indica anche il tipo di sito di SharePoint in cui è stata cercata. Esaminando le ricerche che possono essere state eseguite dagli utenti malintenzionati, gli investigatori possono comprendere meglio la finalità e la portata dei dati dei file che sono stati cercati.
 
 Per cercare i record di controllo dell'evento SearchQueryInitiatedSharePoint, cercare l'attività **Ricerche di SharePoint eseguite** nell'elenco a discesa **Attività di ricerca** nello [Strumento di ricerca dei log di controllo](search-the-audit-log-in-security-and-compliance.md) del Centro conformità.
 

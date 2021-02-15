@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione applicabili a Microsoft Teams.
-ms.openlocfilehash: 675a98656655521095096a535d4ee8352885e70c
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 2541519ad9082383c5381452722d023f23760798
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166461"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242712"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Informazioni sulla conservazione per Microsoft Teams
 
@@ -43,21 +43,22 @@ Usando i criteri di conservazione per Teams è possibile conservare ed eliminare
 > [!NOTE]
 > L'inclusione del contenuto della scheda è un'aggiunta recente ed è attualmente in fase di distribuzione ai tenant. Per altre informazioni vedere [Funzionalità di conformità di Microsoft 365 ora disponibili per il contenuto delle schede adattive tramite le app in Teams](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
 
-Non sono inclusi i messaggi di Teams nei canali privati, i frammenti di codice e le reazioni degli altri utenti sotto forma di emoticon.
+I messaggi Teams nei canali privati non sono attualmente supportati per i criteri di conservazione. Quando si usano criteri di conservazione per Teams, non vengono inclusi frammenti di codice, memo vocali registrati dal client per dispositivi mobili Teams e reazioni di altri utenti sotto forma di emoticon.
 
 I messaggi di posta elettronica e i file usati con Teams non sono inclusi nei criteri di conservazione per Teams. Questi elementi hanno criteri di conservazione personalizzati.
-
-Le seguenti cassette postali sono supportate da RecipientTypeDetails per i criteri di conservazione dei dati di Teams:
-
-- MailUser
-- UserMailbox
-- GroupMailbox
-- ArbitrationMailbox
-- SharedMailbox
 
 ## <a name="how-retention-works-with-microsoft-teams"></a>Come funziona la conservazione dei dati in Microsoft Teams
 
 È possibile usare i criteri di conservazione per conservare e cancellare dati dai messaggi di chat e canali in Teams. Dietro le quinte, le cassette postali di Exchange vengono usate per archiviare questi messaggi. I dati delle chat di Teams sono archiviati in una cartella nascosta nella cassetta postale di ogni utente della chat, mentre una cartella nascosta simile in una cassetta postale di gruppo viene usata per i messaggi dei canali di Teams.
+
+Queste cassette postali sono elencate dall'attributo RecipientTypeDetails:
+
+- **UserMailbox**: queste cassette postali archiviano i messaggi per gli utenti di Teams che hanno una cassetta postale di Exchange Online.
+- **MailUser**: queste cassette postali archiviano i messaggi per gli utenti di Teams che hanno una cassetta postale per un server Exchange locale e non Exchange Online.
+- **Utente**: queste cassette postali archiviano i messaggi per gli utenti di Teams che non hanno una cassetta postale per un server Exchange Online o Exchange locale.
+- **GroupMailbox**: queste cassette postali archiviano i messaggi per i canali di Teams.
+
+Altri tipi di cassette postali, ad esempio RoomMailbox usato per le sale riunioni di Teams, non sono supportati per i criteri di conservazione di Teams.
 
 È importante sapere che Teams usa un servizio di chat con tecnologia Azure che archivia anche questi dati e che, per impostazione predefinita, questo servizio archivia i dati a tempo indeterminato. Per questo motivo, se bisogna cancellare i messaggi di Teams per motivi di conformità, raccomandiamo di usare criteri di conservazione di Teams che siano in grado di cancellare definitivamente questi dati sia dalle cassette postali di Exchange che dal servizio di chat sottostante basato su Azure. Per altre informazioni sull'architettura sottostante, vedere [Sicurezza e conformità in Microsoft Teams](https://go.microsoft.com/fwlink/?linkid=871258) e in particolare la sezione [Architettura di protezione delle informazioni](https://docs.microsoft.com/MicrosoftTeams/security-compliance-overview#information-protection-architecture).
 
