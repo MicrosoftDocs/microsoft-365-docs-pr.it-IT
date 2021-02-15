@@ -43,8 +43,8 @@ I criteri di prevenzione della perdita dei dati consentono di identificare e pro
 1. Per modificare un criterio, selezionarlo, scegliere **Modifica criterio,** quindi selezionare gli elementi da modificare. Ad esempio, selezionare **Posizioni per** modificare gli elementi analizzati.
 1. Per abilitare l'analisi del contenuto in Microsoft  Teams, attivare l'interruttore Attiva e quindi selezionare **Salva.**
 1. Per modificare le impostazioni dei criteri, selezionare **Modifica.**
-1. Dovrai impostare regole separate che si applicano a piccole e grandi quantità di contenuti sensibili rilevati. Espandere la regola con volume ridotto. Scegliere **Modifica regola.**
-1. Rivedere le impostazioni e regolarle in base alle esigenze. Ad esempio, è possibile scegliere di personalizzare il **testo del messaggio di posta elettronica** e il testo del **suggerimento per il criterio.** Seleziona **Salva**.
+1. Dovrai impostare regole separate che si applicano a piccole e grandi quantità di contenuti sensibili rilevati. Espandere la regola di volume ridotto. Scegliere **Modifica regola.**
+1. Rivedere le impostazioni e regolarle in base alle esigenze. Ad esempio, è possibile scegliere di personalizzare il **testo del messaggio di posta elettronica** e il testo del **suggerimento per il criterio.** Selezionare **Salva**.
 1. Ripetere l'operazione per la regola di volume elevato. Selezionare **Salva** e quindi **Chiudi.**
 1. Per creare un nuovo criterio, selezionare **Crea un criterio.**
 1. È possibile creare un criterio personalizzato o iniziare con un modello. Ad esempio, per creare un criterio HIPAA, selezionare il modello Medical **and health** e quindi selezionare **U.S. Health Insurance Act (HIPAA)**. Selezionare **Avanti**.
@@ -52,6 +52,6 @@ I criteri di prevenzione della perdita dei dati consentono di identificare e pro
 1. Scegliere i percorsi da analizzare. Selezionare **Avanti**.
 1. Scegliere il tipo di contenuto che si desidera proteggere. Selezionare **Avanti**.
 1. Scegli cosa vuoi che accada se vengono rilevate informazioni riservate. Selezionare **Avanti**.
-1. Personalizzare le autorizzazioni di accesso ed eseguire l'override. Selezionare **Avanti**.
+1. Personalizzare le autorizzazioni di accesso e override. Selezionare **Avanti**.
 1. Scegliere quando si desidera che il criterio sia attivo. Selezionare **Avanti**.
 1. Rivedere le impostazioni e selezionare **Crea.** Dopo l'applicazione dei criteri, i messaggi di posta elettronica che contengono le informazioni riservate descritte verranno bloccati e il mittente che ha tentato di inviare queste informazioni verrà visualizzato un messaggio di avviso.

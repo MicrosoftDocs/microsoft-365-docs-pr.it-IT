@@ -33,11 +33,11 @@ ms.locfileid: "49928127"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE26B1q?autoplay=false]
 
-Microsoft Bookings è un'app online e mobile per piccole imprese che fornisce servizi ai clienti su appuntamento. Esempi di aziende sono parrucchieri, studi dentisti, centri termali, studi legali, provider di servizi finanziari, consulenti e auto negozio.
+Microsoft Bookings è un'app online e mobile per piccole imprese che fornisce servizi ai clienti su appuntamento. Esempi di aziende sono parrucchieri, studi dentisti, spa, studi legali, provider di servizi finanziari, consulenti e auto negozio.
 
 ## <a name="get-started-with-bookings"></a>Introduzione a Bookings
 
-1. Per iniziare ad accedere a Microsoft 365 e selezionare **Prenotazioni dall'icona** di avvio delle app.
+1. Per iniziare, accedere a Microsoft 365 e selezionare **Prenotazioni dall'icona** di avvio delle app.
 1. Choose **Get it now** on the **Bookings** page.
 1. Aggiungi le informazioni aziendali e sei pronto per iniziare a usare Bookings.
 
@@ -45,7 +45,7 @@ Microsoft Bookings è un'app online e mobile per piccole imprese che fornisce se
 
 ## <a name="use-bookings"></a>Usare Bookings
 
-- Nel dashboard **di Bookings** esamina l'indirizzo dell'azienda, l'orario e altre informazioni aziendali e aggiorna, se necessario.
+- Nel dashboard **di Bookings,** esaminare l'indirizzo dell'ufficio, l'orario e altre informazioni aziendali e, se necessario, aggiornarsi.
 - Nella pagina **Calendario,** l'utente e il personale possono aggiungere o aggiornare gli appuntamenti dei clienti. È possibile visualizzare il calendario per giorno, settimana o mese.
 - Nella pagina **Clienti,** i nuovi clienti possono essere aggiunti o importati da altri account come Gmail o un dispositivo.
 - La **pagina** Personale consente di aggiungere e gestire il personale. È importante aggiungere i propri indirizzi di posta elettronica in modo che possano ricevere notifiche immediate di nuovi appuntamenti.

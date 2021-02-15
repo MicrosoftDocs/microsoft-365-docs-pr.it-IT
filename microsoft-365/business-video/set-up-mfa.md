@@ -38,7 +38,7 @@ L'autenticazione a più fattori offre maggiore sicurezza per l'azienda. Segui qu
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-1. Quando si accede a , viene visualizzato il [https://office.com](https://office.com) prompt **Ulteriori informazioni** necessarie. Scegliere **Avanti**.
+1. Quando accedi a , vedrai il [https://office.com](https://office.com) prompt Ulteriori **informazioni** necessarie. Scegliere **Avanti**.
 1. In **Passaggio 1** scegliere **App per dispositivi mobili** nell'elenco **a** discesa Telefono di autenticazione.
 1. In Come vuoi usare l'app per dispositivi mobili, seleziona il metodo che vuoi usare per accedere:
     - Seleziona **Ricevi notifiche per la verifica per** l'autenticazione direttamente dalla tua app per dispositivi mobili, che può includere l'autenticazione tramite impronta digitale.

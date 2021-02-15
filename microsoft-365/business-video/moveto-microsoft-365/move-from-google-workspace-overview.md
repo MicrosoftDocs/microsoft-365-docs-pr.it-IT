@@ -37,7 +37,7 @@ Completare la procedura seguente per spostare i dati, la posta elettronica e gli
 | Passaggio  |Descrizione  |
 |---------|---------|
 |Passaggio 1 |  [Iscriversi a](../sign-up.md) Microsoft 365 Business Premium       |
-|Passaggio 2 |   [Configurare la migrazione di Microsoft 365 per Google Workspace.](set-up-microsoft-365-forgoogle.md) </br> In questo passaggio si convaliderà di essere proprietari del dominio utilizzato in Google Workspace, aggiungere utenti e configurare la sicurezza di base per i dispositivi. |
+|Passaggio 2 |   [Configurare la migrazione di Microsoft 365 per Google Workspace.](set-up-microsoft-365-forgoogle.md) </br> In questo passaggio verrà convalidato il dominio utilizzato in Google Workspace, verranno aggiunti utenti e verrà impostata la sicurezza di base per i dispositivi. |
 |Passaggio 3 | [Configurare i criteri di sicurezza per i dispositivi Windows.](../secure-win10-pcs.md)</br> La sicurezza di Windows viene impostata separatamente nella pagina Configurazione dell'interfaccia di amministrazione di Microsoft 365. |
 |Passaggio 4|[Aggiungere il dominio di Google Workspace a Microsoft 365](add-google-domain.md) </br> Dopo aver verificato di essere proprietari del dominio in uso per la posta elettronica, l'utente e tutti gli altri utenti possono iniziare a usare la vecchia posta elettronica per accedere a Microsoft 365 Business Premium. |
 |Passaggio 5 | [Installare le app di Office e Microsoft Teams.](../install-office.md)</br> Tutte le persone che dispongono di licenze di Microsoft 365 devono installare le app di Office nei dispositivi di lavoro.|

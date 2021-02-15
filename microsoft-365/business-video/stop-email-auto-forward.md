@@ -40,7 +40,7 @@ Se un pirata informatico ottiene l'accesso alla cassetta postale di un utente, p
 
 1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare  **Exchange,** flusso di posta e, nella scheda delle regole, selezionare il segno più e scegliere **crea una nuova regola.** 
 1. Selezionare **Altre opzioni.** Assegnare un nome alla nuova regola.
-1. Aprire quindi l'elenco a discesa per **applicare questa regola se**, selezionare **il** mittente e quindi è **interno esterno.**
+1. Aprire quindi l'elenco a discesa per **applicare la regola se**, selezionare **il** mittente e quindi è **interno esterno.**
 1. Selezionare **Interno all'organizzazione** e quindi **OK.**
 1. Scegliere **aggiungi condizione,** aprire l'elenco a discesa, selezionare **Le proprietà del** messaggio, quindi includere il tipo di **messaggio.**
 1. Aprire **l'elenco a** discesa Seleziona tipo di messaggio, scegliere **Inoltro automatico,** quindi **OK.**

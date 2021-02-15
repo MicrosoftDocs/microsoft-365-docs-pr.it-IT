@@ -1,6 +1,6 @@
 ---
 title: Preparare unità mappate per Microsoft Managed Desktop
-description: Passaggi importanti per assicurarsi che
+description: Passaggi importanti per assicurarsi
 keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
@@ -18,21 +18,21 @@ ms.locfileid: "49841065"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Preparare unità mappate per Microsoft Managed Desktop
 
-Molti ambienti aziendali presentano requisiti legacy per le unità mappate per consentire agli utenti o ai team di condividere e archiviare file oppure per le applicazioni locali. Microsoft non consiglia l'utilizzo di unità mappate con Microsoft Managed Desktop. È consigliabile invece modernizzare le soluzioni di accesso ai file come indicato di seguito:
+Molti ambienti aziendali hanno requisiti legacy per le unità mappate per consentire agli utenti o ai team di condividere e archiviare file o per le applicazioni locali. Microsoft non consiglia l'uso di unità mappate con Microsoft Managed Desktop. È invece consigliabile modernizzare le soluzioni di accesso ai file nel modo seguente:
   
-- Eseguire la migrazione delle unità mappate utilizzate dai singoli utenti a OneDrive for business. 
-- Eseguire la migrazione delle unità mappate utilizzate dai team per condividere i file in SharePoint Online. 
-- Modernizzare o sostituire le applicazioni che utilizzano condivisioni di file locali per rimuovere tale requisito.
+- Eseguire la migrazione delle unità mappate utilizzate dai singoli utenti a OneDrive for Business. 
+- Eseguire la migrazione delle unità mappate utilizzate dai team per condividere file in SharePoint Online. 
+- Modernizzare o sostituire le applicazioni che usano condivisioni file locali per rimuovere tale requisito.
   
-Modernizzare questi servizi consentirà la migliore esperienza utente con Microsoft Managed Desktop. I servizi di Microsoft FastTrack consentono di modernizzare l'ambiente utilizzando i servizi cloud Microsoft. È possibile verificare se si è idonei per i servizi di FastTrack a [Servizi e piani idonei](https://docs.microsoft.com/fasttrack/m365-eligible-services-and-plans) e quindi contattarli direttamente per prepararsi per Microsoft Managed Desktop. Per informazioni generali su FastTrack OneDrive for business o sulla migrazione di SharePoint Online, vedere [Data Migration](https://docs.microsoft.com/fasttrack/o365-data-migration).
+La modernizzazione di questi servizi consentirà la migliore esperienza utente con Microsoft Managed Desktop. I servizi Microsoft FastTrack possono essere utili per modernizzare l'ambiente tramite Servizi cloud Microsoft. È possibile verificare se si è idonei per i servizi FastTrack in [Piani](https://docs.microsoft.com/fasttrack/m365-eligible-services-and-plans) e servizi idonei e quindi contattarli direttamente per prepararsi per Microsoft Managed Desktop. Per informazioni di base sulla migrazione di FastTrack OneDrive for Business o SharePoint Online, vedere [Migrazione dei dati.](https://docs.microsoft.com/fasttrack/o365-data-migration)
 
-## <a name="mapped-drives-on-microsoft-managed-desktop"></a>Unità mappate su Microsoft Managed Desktop
+## <a name="mapped-drives-on-microsoft-managed-desktop"></a>Unità mappate in Microsoft Managed Desktop
  
-Se non è possibile rimuovere o sostituire unità mappate per alcuni casi di utilizzo, è necessario inviare una richiesta di supporto nel portale di amministrazione di Microsoft Managed Desktop per farli distribuire agli utenti di Microsoft Managed Desktop.
+Se non è possibile rimuovere o sostituire le unità mappate per alcuni casi d'uso, è necessario inviare una richiesta di supporto nel portale di amministrazione di Microsoft Managed Desktop per inviare loro la distribuzione agli utenti di Microsoft Managed Desktop.
     
-Per una richiesta di questo tipo, è necessario fornire i seguenti dettagli nella richiesta di supporto: 
+Per una richiesta di questo tipo, dovrai fornire i dettagli seguenti nella richiesta di supporto: 
 
-- Tutti i percorsi UNC per le posizioni di condivisione file che dovranno essere mappate per i dispositivi Microsoft Managed Desktop 
+- Tutti i percorsi UNC ai percorsi di condivisione file che dovranno essere mappati per i dispositivi Microsoft Managed Desktop 
 - Gruppi di utenti che richiedono l'accesso a questi percorsi di condivisione file 
 - Qualsiasi lettera di unità specifica che deve essere assegnata (se necessario)
 
@@ -40,16 +40,16 @@ Ad esempio:
 
 | Lettera di unità | Percorso UNC | Gruppo di utenti |
 |--------------|----------|------------|
-| X  | \\\server\share\Marketing | ContosoMarketing |
+| X:  | \\\server\share\Marketing | ContosoMarketing |
 
-È responsabilità del tutto garantire che gli utenti e i gruppi dispongano e mantengano le autorizzazioni appropriate per accedere ai percorsi di condivisione file e che i servizi di file locali siano accessibili. È inoltre necessario rimuovere i requisiti per tali condivisioni di file il più presto possibile.
+È interamente responsabilità dell'utente assicurarsi che gli utenti e i gruppi dispongono e mantengano le autorizzazioni appropriate per accedere ai percorsi di condivisione file e che i servizi file locali rimangano accessibili. Inoltre, è consigliabile rimuovere i requisiti per tali condivisioni file il prima possibile.
 
-### <a name="to-have-mapped-drives-deployed-in-microsoft-managed-desktop"></a>Per disporre di unità mappate distribuite in Microsoft Managed Desktop
+### <a name="to-have-mapped-drives-deployed-in-microsoft-managed-desktop"></a>Per distribuire unità mappate in Microsoft Managed Desktop
  
-Verificare che le unità mappate non possano essere evitate e che siano stati esaminati accuratamente i requisiti prima di inviare qualsiasi richiesta di servizio. Eseguire quindi la procedura seguente:
+Assicurarsi che le unità mappate non siano evitate e di aver esaminato attentamente i requisiti prima di inviare qualsiasi richiesta di servizio. Eseguire quindi la procedura seguente:
 
-1. Passare a [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) e selezionare "risoluzione dei problemi + supporto", quindi cercare "richieste di servizio" nella sezione Microsoft Managed Desktop.  
-2. Inviare una richiesta di supporto intitolata "distribuzione di unità mappate" e fornire tutti i dettagli di condivisione file necessari.  
-3. Operazioni IT di Microsoft Managed Desktop consiglierà, utilizzando gli aggiornamenti delle richieste di supporto, quando la richiesta è stata completata. Inizialmente questa configurazione verrà distribuita solo ai dispositivi del gruppo di distribuzione di test.  
-4. È necessario verificare e verificare se la configurazione distribuita dalle operazioni IT di Microsoft Managed Desktop funziona come previsto. Rispondere utilizzando la scheda discussione nei dettagli della stessa richiesta di supporto per inviare una notifica alle operazioni IT di Microsoft Managed Desktop dopo aver completato il testing.  
-5. Il team delle operazioni IT di Microsoft Managed Desktop IT distribuirà quindi la configurazione agli altri gruppi di distribuzione. 
+1. Passare a [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) e selezionare "Risoluzione dei problemi e supporto" e quindi cercare "Richieste di servizio" nella sezione Microsoft Managed Desktop.  
+2. Invia una richiesta di supporto intitolata "Distribuzione di unità mappate" e fornisci tutti i dettagli della condivisione file necessaria.  
+3. Microsoft Managed Desktop IT Operations consiglia, utilizzando gli aggiornamenti delle richieste di supporto, quando la richiesta è stata completata. Inizialmente questa configurazione verrà distribuita solo ai dispositivi nel gruppo di distribuzione Test.  
+4. È necessario verificare e verificare se la configurazione distribuita da Microsoft Managed Desktop IT Operations funziona come previsto. Rispondere utilizzando la scheda Discussione nei dettagli della stessa richiesta di supporto per inviare una notifica alle operazioni IT di Microsoft Managed Desktop dopo aver completato i test.  
+5. Il team Microsoft Managed Desktop IT Operations distribuirà quindi la configurazione agli altri gruppi di distribuzione. 

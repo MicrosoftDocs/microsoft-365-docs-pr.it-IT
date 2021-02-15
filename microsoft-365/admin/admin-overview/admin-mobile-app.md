@@ -33,7 +33,7 @@ ms.locfileid: "49925567"
 ---
 # <a name="about-the-microsoft-365-admin-mobile-app"></a>Informazioni sull'app per dispositivi mobili per amministratori di Microsoft 365
 
-Sei un amministratore che di solito è in viaggio? Vedere quindi [l'app Amministratore di Microsoft 365.](https://go.microsoft.com/fwlink/?LinkID=627216) Puoi usare l'app per gestire l'organizzazione online dal tuo telefono o tablet. Puoi ottenere l'app dall'Apple Store e da Google Play. <br> 
+Sei un amministratore che di solito è in viaggio? Vedere quindi [l'app Amministratore di Microsoft 365.](https://go.microsoft.com/fwlink/?LinkID=627216) Puoi usare l'app per gestire l'organizzazione online dal telefono o dal tablet. Puoi ottenere l'app dall'Apple Store e da Google Play. <br> 
 
 ![Screen capture of the admin mobile app's home page, displaying search, messages, health, and quick links.](../../media/admin-mobile-app-darkbg.png)
 
@@ -42,7 +42,7 @@ L'app amministratore è un'app ricca di funzionalità con oltre 80 funzionalità
 - Ottenere l'integrità del servizio e le notifiche di modifica
 - Creare una richiesta di servizio
 - Reimpostare la password di un utente
-- Assegnare le licenze
+- Assegnazione delle licenze
 - Aggiungere o rimuovere appartenenze a gruppi
 - Aggiungere gli utenti 
 
@@ -88,7 +88,7 @@ I numeri indicano i messaggi totali dell'ultima settimana, non i messaggi non le
   
 ### <a name="how-can-i-share-the-service-incidents-and-messages-with-the-rest-of-my-organization"></a>Come è possibile condividere gli eventi imprevisti relativi ai servizi e i messaggi con il resto dell'organizzazione?
 
-Se si seleziona un evento imprevisto di servizio specifico o un messaggio, l'opzione di condivisione verrà visualizzata nell'angolo in alto a destra. Attualmente è supportata la condivisione della posta elettronica.
+Se si seleziona un evento imprevisto di servizio specifico o un messaggio, l'opzione di condivisione sarà nell'angolo in alto a destra. Attualmente è supportata la condivisione della posta elettronica.
   
 ### <a name="can-i-use-this-app-with-multiple-accounts-or-tenants"></a>Posso usare questa app con più account o tenant?
 

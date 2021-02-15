@@ -52,7 +52,7 @@ Prima di tutto sarà necessario eliminare i record DNS esistenti da Google, quin
 1. Tornare a Google e nella sezione **Custom resource records** aprire l'elenco a discesa del tipo di record e selezionare **MX.**
 1. Nel campo **Dati** incollare il record copiato.
 1. Selezionare **Aggiungi**.
-1. Ripetere il processo per i record CNAME e TXT e aggiungere i valori nella pagina di gestione DNS di Google.
+1. Ripetere il processo per i record CNAME e TXT e aggiungere i valori nella pagina di gestione dns di Google.
 1. Tornare all'interfaccia di amministrazione di Microsoft 365 e selezionare **Continua.**
 
     La configurazione del dominio è stata completata.

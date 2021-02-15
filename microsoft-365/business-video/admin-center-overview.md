@@ -36,7 +36,7 @@ ms.locfileid: "49927587"
 
 L'interfaccia di amministrazione di Microsoft 365 consente di gestire l'azienda nel cloud. È possibile completare attività quali l'aggiunta e la rimozione di utenti, la modifica delle licenze e la reimpostazione delle password. 
 
-Per accedere all'interfaccia di amministrazione di Microsoft 365, passare [a admin.microsoft.com](https://admin.microsoft.com) oppure, se è già stato eseguito l'accesso, selezionare l'icona di avvio delle app e scegliere **Amministratore.**
+Per accedere all'interfaccia di amministrazione di Microsoft 365, passare [a admin.microsoft.com](https://admin.microsoft.com) oppure, se è già stato effettuato l'accesso, selezionare l'icona di avvio delle app e scegliere **Amministratore.**
 
 Nella home page è possibile creare schede per le attività eseguite di frequente. Per aggiungere una nuova scheda, selezionare **Aggiungi scheda,** quindi selezionare il segno più accanto alla scheda che si desidera aggiungere. Al termine, chiudere la finestra. È possibile ridisporre le schede selezionandole e trascinandole nel punto desiderato. Per rimuovere una scheda, selezionare **Altre azioni** e quindi scegliere **Rimuovi.**
 
@@ -50,6 +50,6 @@ Seleziona un utente per visualizzare altre opzioni, ad esempio la gestione delle
 
 Per abilitare altre funzionalità disponibili con l'abbonamento, selezionare **Installazione.** Qui è possibile attivare la sicurezza di accesso, la protezione delle app per dispositivi mobili, DLP e altre funzionalità incluse nell'abbonamento.
 
-Se è necessario supporto in qualsiasi momento, scegliere **Serve aiuto.** Immettere la domanda, quindi controllare i collegamenti visualizzati. If you don't get your answer here, choose **Contact support** to open a service request. 
+Se è necessario supporto in qualsiasi momento, scegliere **Serve aiuto.** Immetti la domanda e quindi controlla i collegamenti visualizzati. If you don't get your answer here, choose **Contact support** to open a service request. 
 
 Per altre informazioni sulla gestione di fatturazione, password, utenti e amministratori, vedere le altre lezioni di questo corso.

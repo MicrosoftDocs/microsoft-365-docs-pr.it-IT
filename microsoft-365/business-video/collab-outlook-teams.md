@@ -31,7 +31,7 @@ ms.locfileid: "49927347"
 ---
 # <a name="use-outlook-and-teams-together"></a>Usare Outlook e Teams insieme
 
-Quando si comunica con dipendenti, partner, clienti e altri utenti della piccola azienda, usare Outlook e Teams in Microsoft 365. In Outlook sono disponibili posta elettronica, calendari, contatti e attività, mentre in Teams sono disponibili conversazioni, file, riunioni e accesso rapido alle app microsoft e di terze parti. Ecco un riepilogo di come è possibile usare ognuno di essi nell'azienda.
+Quando si comunica con dipendenti, partner, clienti e altri utenti della piccola azienda, usare Outlook e Teams in Microsoft 365. In Outlook sono disponibili posta elettronica, calendari, contatti e attività, mentre in Teams sono disponibili conversazioni, file, riunioni e accesso rapido alle app microsoft e di terze parti. Ecco un riepilogo di come puoi usare ognuno di essi nella tua azienda.
 
 ## <a name="microsoft-outlook"></a>Microsoft Outlook
 
@@ -44,7 +44,7 @@ Quando si comunica con dipendenti, partner, clienti e altri utenti della piccola
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-- Avere conversazioni in tempo reale con il team e invitare client o utenti guest alla conversazione.
+- Avere conversazioni in tempo reale con il team e invitare clienti o utenti guest alla conversazione.
 - Avere chat o chiamate private e condividere lo schermo tra loro.
 - Pianificare e partecipare a riunioni con dipendenti e guest.
 - Aggiungere o condividere file dal sito di SharePoint o OneDrive for Business associato.

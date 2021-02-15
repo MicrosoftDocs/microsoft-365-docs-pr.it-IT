@@ -17,7 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: La sicurezza e la mobilità di base consentono di proteggere e gestire i dispositivi mobili.
+description: La mobilità e la sicurezza di base consentono di proteggere e gestire i dispositivi mobili.
 ms.openlocfilehash: 746131e90e207d7b888a3ddcaf4ff0656606a2c7
 ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
@@ -27,63 +27,63 @@ ms.locfileid: "49877117"
 ---
 # <a name="capabilities-of-basic-mobility-and-security"></a>Funzionalità Basic Mobility + Security
 
-La sicurezza e la mobilità di base consentono di proteggere e gestire i dispositivi mobili come iPhone, iPad, Android e Windows Phone usati dagli utenti di Microsoft 365 con licenza nell'organizzazione. È possibile creare criteri di gestione dei dispositivi mobili con impostazioni che consentono di controllare l'accesso alla posta elettronica e ai documenti Microsoft 365 per i dispositivi mobili e le app supportati. Se un dispositivo viene perso o rubato, puoi cancellare in remoto i dati del dispositivo per rimuovere informazioni organizzative riservate.
+La mobilità e la sicurezza di base consentono di proteggere e gestire dispositivi mobili come iPhone, iPad, Android e Windows Phone utilizzati dagli utenti di Microsoft 365 con licenza nell'organizzazione. È possibile creare criteri di gestione dei dispositivi mobili con impostazioni che consentono di controllare l'accesso alla posta elettronica e ai documenti di Microsoft 365 dell'organizzazione per i dispositivi mobili e le app supportati. Se un dispositivo viene perso o rubato, puoi cancellare in remoto i dati del dispositivo per rimuovere informazioni organizzative riservate.
 
 ## <a name="supported-devices"></a>Dispositivi supportati
 
-È possibile utilizzare la sicurezza e la mobilità di base per proteggere e gestire i dispositivi seguenti.
+Puoi usare Dispositivi mobili e sicurezza di base per proteggere e gestire i dispositivi seguenti.
 
-- iOS 11,0 o versioni successive
+- iOS 11.0 o versioni successive
 
-- Android 5,0 o versioni successive<sup>3</sup>
+- Android 5.0 o versioni successive<sup>3</sup>
 
-- Windows 8,1<sup>1</sup>
+- Windows 8.1<sup>1</sup>
 
-- Windows 8,1 RT<sup>1</sup>
+- Windows 8.1 RT<sup>1</sup>
 
 - Windows 10<sup>2</sup>
 
 - Windows 10 Mobile<sup>2</sup>
 
-<sup>1</sup> Il controllo di accesso per i dispositivi Windows 8,1 RT è limitato a Exchange ActiveSync.
+<sup>1</sup> Il controllo di accesso per i dispositivi Windows 8.1 RT è limitato Exchange ActiveSync.
 
-<sup>2</sup> Il controllo di accesso per i dispositivi Windows 8,1 RT è limitato a Exchange ActiveSync.
-Il controllo di accesso per Windows 10 richiede una sottoscrizione che includa Azure AD Premium e che il dispositivo debba essere aggiunto ad Azure Active Directory.
+<sup>2</sup> Il controllo di accesso per i dispositivi Windows 8.1 RT è limitato Exchange ActiveSync.
+Il controllo di accesso per Windows 10 richiede una sottoscrizione che includa Azure AD Premium e che il dispositivo deve essere aggiunto ad Azure Active Directory.
 
-<sup>3</sup> Il controllo di accesso per i dispositivi Windows 8,1 RT è limitato a Exchange ActiveSync.
-Dopo il 2020 giugno, le versioni di Android successive a 9 non possono gestire le impostazioni delle password eccetto nei dispositivi Samsung Knox.
+<sup>3</sup> Il controllo di accesso per i dispositivi Windows 8.1 RT è limitato Exchange ActiveSync.
+Dopo giugno 2020, le versioni android successive alla 9 non possono gestire le impostazioni delle password se non nei dispositivi Samsung Knox.
 
 >[!NOTE]
->I dispositivi già registrati con versioni precedenti del sistema operativo continuano a funzionare anche se le funzionalità potrebbero cambiare senza preavviso.
+>I dispositivi già registrati con le versioni precedenti del sistema operativo continuano a funzionare anche se le funzionalità potrebbero cambiare senza preavviso.
 
-Se nell'organizzazione vengono utilizzati dispositivi mobili che non sono supportati dalla mobilità e dalla sicurezza di base, è possibile bloccare l'accesso alle app di Exchange ActiveSync alla posta elettronica Microsoft 365 per tali dispositivi, per rendere più sicura la protezione dei dati dell'organizzazione. Per i passaggi per bloccare Exchange ActiveSync, vedere [gestire le impostazioni di accesso ai dispositivi in mobilità e sicurezza di base](manage-device-access-settings.md).
+Se gli utenti dell'organizzazione usano dispositivi mobili non supportati da Sicurezza e mobilità di base, è consigliabile bloccare l'accesso dell'app Exchange ActiveSync alla posta elettronica di Microsoft 365 per tali dispositivi, per rendere più sicuri i dati dell'organizzazione. Per la procedura per bloccare Exchange ActiveSync, vedere [Gestire le impostazioni di accesso ai dispositivi in Dispositivi mobili e sicurezza di base.](manage-device-access-settings.md)
 
-## <a name="access-control-for-microsoft-365-email-and-documents"></a>Controllo dell'accesso per la posta elettronica e i documenti di Microsoft 365
+## <a name="access-control-for-microsoft-365-email-and-documents"></a>Controllo di accesso per la posta elettronica e i documenti di Microsoft 365
 
-Le app supportate per i diversi tipi di dispositivi mobili nella tabella seguente richiedono agli utenti di iscriversi alla sicurezza e alla mobilità di base in cui è presente un nuovo criterio di gestione dei dispositivi mobili che si applica a un dispositivo dell'utente e che l'utente non ha registrato in precedenza il dispositivo. Se il dispositivo di un utente non è conforme a un criterio, a seconda della modalità di impostazione dei criteri, potrebbe essere impedito all'utente di accedere alle risorse di Microsoft 365 in queste app o potrebbe avere accesso ma Microsoft 365 segnala una violazione dei criteri.
+Le app supportate per i diversi tipi di dispositivi mobili nella tabella seguente consentono agli utenti di registrarsi in Basic Mobility and Security, dove è disponibile un nuovo criterio di gestione dei dispositivi mobili che si applica al dispositivo di un utente e l'utente non ha precedentemente registrato il dispositivo. Se il dispositivo di un utente non è conforme a un criterio, a seconda di come è stato configurato il criterio, un utente potrebbe essere bloccato dall'accesso alle risorse di Microsoft 365 in queste app o potrebbe avere accesso, ma Microsoft 365 segnala una violazione dei criteri.
 
-|**Prodotto**|**iOS 10,0 o versioni successive**|**Android 5,0 o versioni successive**|
+|**Prodotto**|**iOS 10.0 o versione successiva**|**Android 5.0 o versione successiva**|
 |:-----|:-----|:-----|
-|**Exchange** Exchange ActiveSync include il messaggio di posta elettronica incorporato e le app di terze parti, ad esempio TouchDown, che utilizzano Exchange ActiveSync versione 14,1 o successiva. |Posta |Posta elettronica |
-|**Office**   e  **OneDrive for business** |Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**Su telefoni e Tablet**:<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **Solo su telefoni:** <br/> Office Mobile |
+|**Exchange** Exchange ActiveSync include app di posta elettronica predefinite e di terze parti, come TouchDown, che usano Exchange ActiveSync versione 14.1 o successiva. |Posta |Posta elettronica |
+|**Office**   e  **OneDrive for Business** |Outlook </br>OneDrive </br>Word </br>Excel </br>PowerPoint|**Su telefoni e tablet:**<br/>Outlook <br/> OneDrive <br/> Word <br/> Excel <br/> PowerPoint <br/> **Solo su telefoni:** <br/> Office Mobile |
 
 >[!NOTE]
-- >Il supporto per iOS 10,0 e versioni successive include dispositivi iPhone e iPad.
-- >La gestione dei dispositivi BlackBerry OS non è supportata da sicurezza e mobilità di base. Usare BlackBerry Business Cloud Services (BBCS) da BlackBerry per gestire i dispositivi BlackBerry OS. I dispositivi BlackBerry che eseguono il sistema operativo Android sono supportati come dispositivi Android standard
-- >Gli utenti non verranno invitati a eseguire la registrazione e non verranno bloccati o segnalati per violazione dei criteri se utilizzano il browser per dispositivi mobili per accedere ai siti di SharePoint 365, ai documenti in Office Online o alla posta elettronica in Outlook Web App.
+- >Il supporto per iOS 10.0 e versioni successive include dispositivi iPhone e iPad.
+- >La gestione dei dispositivi BlackBerry OS non è supportata da Sicurezza e mobilità di base. Utilizzare BlackBerry Business Cloud Services (BBCS) di BlackBerry per gestire i dispositivi blackberry del sistema operativo. I dispositivi Blackberry che eseguono il sistema operativo Android sono supportati come dispositivi Android standard
+- >Agli utenti non verrà richiesto di registrarsi e non verrà bloccato o segnalato per violazione dei criteri se utilizzano il browser per dispositivi mobili per accedere ai siti di Microsoft 365 SharePoint, ai documenti in Office Online o alla posta elettronica in Outlook Web App.
 
-Nel diagramma seguente viene mostrato cosa accade quando un utente con un nuovo dispositivo accede a un'app che supporta il controllo di accesso con la sicurezza e la mobilità di base. L'utente è bloccato dall'accesso alle risorse di Microsoft 365 nell'app fino a quando non registra il dispositivo.
+Il diagramma seguente mostra cosa accade quando un utente con un nuovo dispositivo accede a un'app che supporta il controllo di accesso con Dispositivi mobili e sicurezza di base. L'utente non può accedere alle risorse di Microsoft 365 nell'app finché non registra il dispositivo.
 
-:::image type="content" source="../../media/basic-mobility-security/bms-1-access-control.png" alt-text="Controllo dell'accesso alla sicurezza e alla mobilità di base":::
+:::image type="content" source="../../media/basic-mobility-security/bms-1-access-control.png" alt-text="Controllo di accesso di base per dispositivi mobili e sicurezza":::
 
 > [!NOTE]
-> I criteri e le regole di accesso creati in mobilità e sicurezza di base per Microsoft 365 business standard ignoreranno i criteri cassetta postale per i dispositivi mobili di Exchange ActiveSync e le regole di accesso ai dispositivi creati nell'interfaccia di amministrazione di Exchange. Dopo che un dispositivo è stato registrato in mobilità e sicurezza di base per Microsoft 365 business standard, tutti i criteri cassetta postale per il dispositivo mobile di Exchange ActiveSync o la regola di accesso ai dispositivi applicati al dispositivo verranno ignorati. Per ulteriori informazioni su Exchange ActiveSync, vedere [Exchange ActiveSync in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=524380).
+> I criteri e le regole di accesso creati in Basic Mobility and Security per Microsoft 365 Business Exchange ActiveSync Standard sostituiscono i criteri cassetta postale dei dispositivi mobili e le regole di accesso ai dispositivi creati nell'interfaccia di amministrazione di Exchange. Dopo la registrazione di un dispositivo in Basic Mobility and Security per Microsoft 365 Business Standard Exchange ActiveSync, qualsiasi criterio cassetta postale del dispositivo mobile o regola di accesso al dispositivo applicata al dispositivo verrà ignorato. Per ulteriori informazioni sulle Exchange ActiveSync, [vedere Exchange ActiveSync in Exchange Online.](https://go.microsoft.com/fwlink/p/?LinkId=524380)
 
 ## <a name="policy-settings-for-mobile-devices"></a>Impostazioni criteri per dispositivi mobili
 
-Se si crea un criterio per bloccare l'accesso con determinate impostazioni attivate, gli utenti vengono bloccati dall'accesso alle risorse di Microsoft 365 quando si utilizza un'app supportata elencata in [Access Control per Microsoft 365 e la posta elettronica e i documenti](capabilities.md). 
+Se si crea un criterio per bloccare l'accesso con determinate impostazioni attivate, agli utenti viene impedito di accedere alle risorse di Microsoft 365 quando si utilizza un'app supportata elencata nel controllo di accesso per la posta elettronica e i documenti di [Microsoft 365.](capabilities.md) 
 
-Le impostazioni che possono impedire agli utenti di accedere alle risorse di Microsoft 365 sono riportate nelle seguenti sezioni:
+Le impostazioni che possono impedire agli utenti di accedere alle risorse di Microsoft 365 sono disponibili in queste sezioni:
 
 - Sicurezza
 
@@ -93,15 +93,15 @@ Le impostazioni che possono impedire agli utenti di accedere alle risorse di Mic
 
 - Profilo di posta elettronica gestito  
 
-Nel diagramma seguente, ad esempio, viene mostrato cosa succede quando un utente con un dispositivo registrato non rispetta un'impostazione di sicurezza in un criterio di gestione dei dispositivi mobili che si applica al dispositivo dell'utente. L'utente accede a un'app che supporta il controllo di accesso con mobilità e sicurezza di base. Sono bloccati dall'accesso alle risorse di Microsoft 365 nell'app fino a quando il dispositivo non è conforme all'impostazione di sicurezza.
+Nel diagramma seguente, ad esempio, viene mostrato cosa succede quando un utente con un dispositivo registrato non rispetta un'impostazione di sicurezza in un criterio di gestione dei dispositivi mobili che si applica al dispositivo dell'utente. L'utente accede a un'app che supporta il controllo di accesso con Basic Mobility and Security. Viene loro impedito di accedere alle risorse di Microsoft 365 nell'app fino a quando il dispositivo non è conforme all'impostazione di sicurezza.
 
-:::image type="content" source="../../media/basic-mobility-security/bms-2-device-not-compliant.png" alt-text="Messaggio di conformità per la sicurezza e la mobilità di base":::
+:::image type="content" source="../../media/basic-mobility-security/bms-2-device-not-compliant.png" alt-text="Messaggio di conformità di base per dispositivi mobili e sicurezza":::
 
-Nelle sezioni seguenti sono elencate le impostazioni dei criteri che è possibile utilizzare per proteggere e gestire i dispositivi mobili che si connettono alle risorse dell'organizzazione Microsoft 365.
+Nelle sezioni seguenti sono elencate le impostazioni dei criteri che è possibile usare per proteggere e gestire i dispositivi mobili che si connettono alle risorse dell'organizzazione di Microsoft 365.
 
 ## <a name="security-settings"></a>Impostazioni di protezione
 
-|**Nome dell'impostazione**|**iOS 7,1 e versioni successive**|**Android 5 e versioni successive**|**Samsung Knox**|
+|**Nome dell'impostazione**|**iOS 7.1 e versioni successive**|**Android 5 e versioni successive**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |Richiesta di una password|Sì|Sì|Sì|
 |Evitare password semplice|Sì|No|No|
@@ -114,29 +114,29 @@ Nelle sezioni seguenti sono elencate le impostazioni dei criteri che è possibil
 
 ## <a name="encryption-settings"></a>Impostazioni di crittografia
 
-|**Nome dell'impostazione**|**iOS 7,1 e versioni successive**|**Android 5 e versioni successive**|**Samsung Knox**|
+|**Nome dell'impostazione**|**iOS 7.1 e versioni successive**|**Android 5 e versioni successive**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
-|Richiedere la crittografia dei dati nei dispositivi<sup>1</sup> |No|Sì|Sì|
+|Richiedere la crittografia dei dati nei<sup>dispositivi 1</sup> |No|Sì|Sì|
 
-<sup>1</sup> Con Samsung Knox, è anche possibile richiedere la crittografia su schede di memoria. 
+<sup>1</sup> Con Samsung Knox, è anche possibile richiedere la crittografia sulle schede di memoria. 
 
 ## <a name="jail-broken-setting"></a>Impostazione di modifica 
 
-|**Nome dell'impostazione**|**iOS 7,1 e versioni successive**|**Android 5 e versioni successive**|**Samsung Knox**|
+|**Nome dell'impostazione**|**iOS 7.1 e versioni successive**|**Android 5 e versioni successive**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |Il dispositivo non può essere modificato o usato come radice |Sì|Sì|Sì|
 
 ## <a name="managed-email-profile-option"></a>Opzione del profilo di posta elettronica gestito 
 
-L'opzione seguente può impedire agli utenti di accedere al proprio indirizzo di posta elettronica Microsoft 365 se utilizza un profilo di posta elettronica creato manualmente. Gli utenti con dispositivi iOS devono eliminare il loro profilo di posta elettronica creato manualmente prima di poter accedere alla posta elettronica. Dopo aver eliminato il profilo, viene creato automaticamente un nuovo profilo nel dispositivo. Per istruzioni su come gli utenti finali possono ottenere conformi, vedere [è stato trovato un account di posta elettronica esistente](https://docs.microsoft.com/intune-user-help/existing-company-email-account-found).
+L'opzione seguente può impedire agli utenti di accedere alla posta elettronica di Microsoft 365 se usano un profilo di posta elettronica creato manualmente. Gli utenti con dispositivi iOS devono eliminare il loro profilo di posta elettronica creato manualmente prima di poter accedere alla posta elettronica. Dopo aver eliminato il profilo, viene creato automaticamente un nuovo profilo nel dispositivo. Per istruzioni su come gli utenti finali possono ottenere la conformità, vedere È stato trovato un [account di posta elettronica esistente.](https://docs.microsoft.com/intune-user-help/existing-company-email-account-found)
 
-|**Nome dell'impostazione**|**iOS 7,1 e versioni successive**|**Android 5 e versioni successive**|**Samsung Knox**|
+|**Nome dell'impostazione**|**iOS 7.1 e versioni successive**|**Android 5 e versioni successive**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |Il profilo di posta elettronica è gestito |Sì|No|No|
 
 ## <a name="cloud-settings"></a>Impostazioni del cloud
 
-|**Nome dell'impostazione**|**iOS 7,1 e versioni successive**|**Android 5 e versioni successive**|**Samsung Knox**|
+|**Nome dell'impostazione**|**iOS 7.1 e versioni successive**|**Android 5 e versioni successive**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |Richiede un backup crittografato |Sì|No|No|
 |Blocca backup sul cloud |Sì|No|No|
@@ -147,14 +147,14 @@ L'opzione seguente può impedire agli utenti di accedere al proprio indirizzo di
 
 ## <a name="system-settings"></a>Impostazioni di sistema
 
-|**Nome dell'impostazione**|**iOS 7,1 e versioni successive**|**Android 5 e versioni successive**|**Samsung Knox**|
+|**Nome dell'impostazione**|**iOS 7.1 e versioni successive**|**Android 5 e versioni successive**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |Blocca acquisizione schermata |Sì|No|Sì|
 |Blocca invio dati di diagnostica dal dispositivo |Sì|No|Sì|
 
 ## <a name="application-settings"></a>Impostazioni dell'applicazione
 
-|**Nome dell'impostazione**|**iOS 7,1 e versioni successive**|**Android 5 e versioni successive**|**Samsung Knox**|
+|**Nome dell'impostazione**|**iOS 7.1 e versioni successive**|**Android 5 e versioni successive**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |Blocca videoconferenze sul dispositivo |Sì|No|No|
 |Blocca l'accesso all'archivio applicazioni |Sì|No|Sì|
@@ -162,16 +162,16 @@ L'opzione seguente può impedire agli utenti di accedere al proprio indirizzo di
 
 ## <a name="device-capabilities-settings"></a>Impostazioni delle funzionalità del dispositivo
 
-|**Nome dell'impostazione**|**iOS 7,1 e versioni successive**|**Android 5 e versioni successive**|**Samsung Knox**|
+|**Nome dell'impostazione**|**iOS 7.1 e versioni successive**|**Android 5 e versioni successive**|**Samsung Knox**|
 |:-----|:-----|:-----|:-----|
 |Blocca connessione con archivi rimovibili |Sì|Sì|No|
 |Blocca connessione Bluetooth |Sì|Sì|No|
 
 ## <a name="additional-settings"></a>Impostazioni aggiuntive
 
-È possibile impostare le seguenti impostazioni dei criteri aggiuntive utilizzando i cmdlet di PowerShell per la sicurezza & Compliance Center. Per ulteriori informazioni, vedere [PowerShell per il Centro sicurezza & Compliance](https://docs.microsoft.com/powershell/exchange/scc-powershell).
+È possibile impostare le seguenti impostazioni aggiuntive dei criteri utilizzando i cmdlet di PowerShell & Centro sicurezza e conformità. Per ulteriori informazioni, vedere [PowerShell & Centro sicurezza e conformità.](https://docs.microsoft.com/powershell/exchange/scc-powershell)
 
-|**Nome dell'impostazione**|**iOS 7,1 e versioni successive**|**Android 5 e versioni successive**|
+|**Nome dell'impostazione**|**iOS 7.1 e versioni successive**|**Android 5 e versioni successive**|
 |:-----|:-----|:-----|
 |CameraEnabled|Sì|Sì|
 |RegionRatings|Sì|No|
@@ -189,9 +189,9 @@ L'opzione seguente può impedire agli utenti di accedere al proprio indirizzo di
 
 ## <a name="settings-supported-by-windows"></a>Impostazioni supportate da Windows
 
-È possibile gestire i dispositivi Windows 10 eseguendo la registrazione come dispositivi mobili. Dopo la distribuzione di un criterio applicabile, gli utenti con dispositivi Windows 10 dovranno iscriversi alla sicurezza e alla mobilità di base al primo utilizzo dell'app di posta elettronica integrata per accedere al proprio indirizzo di posta elettronica Microsoft 365 (richiede una sottoscrizione di Azure AD Premium).
+Puoi gestire i dispositivi Windows 10 registrandoli come dispositivi mobili. Dopo la distribuzione di un criterio applicabile, agli utenti con dispositivi Windows 10 verrà richiesto di registrarsi in Dispositivi mobili e sicurezza di base la prima volta che usano l'app di posta elettronica predefinita per accedere alla posta elettronica di Microsoft 365 (richiede l'abbonamento ad Azure AD Premium).
 
-Le impostazioni seguenti sono supportate per i dispositivi Windows 10 registrati come dispositivi mobili. Queste impostazioni non impediscono agli utenti di accedere alle risorse di Microsoft 365.
+Le impostazioni seguenti sono supportate per i dispositivi Windows 10 registrati come dispositivi mobili. Queste impostazioni non impedireno agli utenti di accedere alle risorse di Microsoft 365.
 
 ### <a name="security-settings"></a>Impostazioni di sicurezza
 
@@ -208,7 +208,7 @@ Le impostazioni seguenti sono supportate per i dispositivi Windows 10 registrati
 - Ricorda cronologia password e impedisci il riutilizzo
 
 >[!NOTE]
->Le impostazioni seguenti che regolano le password controllano solo gli account di Windows locali. Gli account di Windows forniti tramite join a Domain o Azure Active Directory non sono soggetti a queste impostazioni.
+>Le impostazioni seguenti che regolano le password controllano solo gli account di Windows locali. Gli account di Windows forniti tramite l'aggiunta a un dominio o Azure Active Directory non sono interessati da queste impostazioni.
 
 ### <a name="system-settings"></a>Impostazioni di sistema
 
@@ -216,7 +216,7 @@ Blocca l'invio di dati di diagnostica dal dispositivo.
 
 ### <a name="additional-settings"></a>Impostazioni aggiuntive
 
-È possibile impostare queste impostazioni dei criteri aggiuntive utilizzando i cmdlet di PowerShell:
+È possibile impostare queste impostazioni aggiuntive dei criteri utilizzando i cmdlet di PowerShell:
 
 - AllowConvenienceLogon
 
@@ -236,12 +236,12 @@ Blocca l'invio di dati di diagnostica dal dispositivo.
 
 ## <a name="remotely-wipe-a-mobile-device"></a>Cancella in remoto un dispositivo mobile
 
-Se un dispositivo viene perso o rubato, è possibile rimuovere i dati aziendali riservati e impedire l'accesso alle risorse dell'organizzazione di Microsoft 365 facendo un wipe dal centro sicurezza & Compliance > gestione dei dispositivi per la **prevenzione della perdita di dati**  >  . È possibile eseguire una cancellazione selettiva per rimuovere solo i dati dell'organizzazione o una cancellazione completa per eliminare tutte le informazioni da un dispositivo e ripristinarne le impostazioni di fabbrica.
+Se un dispositivo viene perso o rubato, è possibile rimuovere i dati sensibili dell'organizzazione e impedire l'accesso alle risorse dell'organizzazione di Microsoft 365 eseguendo una cancellazione dal Centro sicurezza & conformità > **Prevenzione** della perdita dei dati  >  **Gestione dei dispositivi.** È possibile eseguire una cancellazione selettiva per rimuovere solo i dati dell'organizzazione o una cancellazione completa per eliminare tutte le informazioni da un dispositivo e ripristinarne le impostazioni di fabbrica.
 
-Per ulteriori informazioni, vedere [Wipe a Mobile Device in Basic Mobility and Security](wipe-mobile-device.md).
+Per ulteriori informazioni, vedere [Cancellare un dispositivo mobile in Dispositivi mobili e sicurezza di base.](wipe-mobile-device.md)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Panoramica della sicurezza e della mobilità di base per Microsoft 365](overview.md)
+[Panoramica della mobilità e della sicurezza di base per Microsoft 365](overview.md)
 
-[Creare criteri di sicurezza per i dispositivi in mobilità e sicurezza di base](create-device-security-policies.md)
+[Creare criteri di sicurezza dei dispositivi in Dispositivi mobili e sicurezza di base](create-device-security-policies.md)

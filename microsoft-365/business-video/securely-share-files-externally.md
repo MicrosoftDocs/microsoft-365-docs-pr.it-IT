@@ -44,4 +44,4 @@ In Microsoft 365 per le aziende, è facile condividere file con persone dell'org
 1. Nella finestra **Invia collegamento** fare clic sull'elenco nella parte superiore, scegliere Persone **specifiche,** selezionare Consenti **modifica** e quindi scegliere **Applica.**
 1. Nella finestra **Invia collegamento** immettere l'indirizzo di posta elettronica del cliente, digitare un messaggio e scegliere **Invia.**
 
-    Il cliente riceverà un messaggio di posta elettronica con un codice di verifica, che dovrà inviare a se stesso per accedere alla cartella. Se non trovano il messaggio di posta elettronica, devono controllare la cartella Posta indesiderata.
+    Il cliente riceverà un messaggio di posta elettronica con un codice di verifica, che dovrà inviare a se stesso per accedere alla cartella. If they can't find the email, they should check their Spam folder.

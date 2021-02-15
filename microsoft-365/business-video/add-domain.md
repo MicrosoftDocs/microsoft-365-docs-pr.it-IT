@@ -51,7 +51,7 @@ L'azienda potrebbe avere bisogno di più nomi di dominio per scopi diversi. Ad e
 Per ricevere la posta elettronica nel nuovo dominio, è necessario aggiungere un nuovo alias di posta elettronica per ogni utente:
 
 1. Selezionare **Utenti**, **Utenti attivi** e quindi selezionare l'utente a cui verrà assegnato il nuovo alias.
-1. Scegliere **Gestisci alias di posta elettronica** e quindi Aggiungere un **alias.**
+1. Choose **Manage email aliases**, and then **Add an alias**.
 1. Immetti il nome utente e quindi scegli il nuovo dominio nell'elenco a discesa.
 1. Selezionare **Salva modifiche** e quindi chiudere la finestra.
 1. Ripetere questi passaggi per ogni utente che deve ricevere posta elettronica nel nuovo dominio.

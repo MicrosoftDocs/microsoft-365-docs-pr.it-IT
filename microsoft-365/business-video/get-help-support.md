@@ -36,7 +36,7 @@ ms.locfileid: "49927167"
 
 È necessario parlare subito con qualcuno? Gli amministratori devono avere i dettagli dell'account pronti quando chiami il supporto.
 
-Se non si è un amministratore Provare [il supporto Microsoft](https://go.microsoft.com/fwlink/?linkid=860695) per gli utenti finali di home page e aziende.
+Se non si è un amministratore Provare [il supporto Microsoft](https://go.microsoft.com/fwlink/?linkid=860695) per gli utenti finali di home e business.
 
 - **Negli Stati Uniti, chiamare il numero 1 800 865 9408.**
 - **In Australia, chiamare il numero 1 800 197 503.**

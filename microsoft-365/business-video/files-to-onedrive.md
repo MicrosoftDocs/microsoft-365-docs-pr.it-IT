@@ -37,11 +37,11 @@ Dopo l'iscrizione a Microsoft 365 Business Premium, è&#39;copiare i file di lav
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-1. In Windows seleziona il **pulsante Start.**
+1. Da Windows seleziona il **pulsante Start.**
 2. Cercare OneDrive e selezionarlo.
 3. Immettere l'indirizzo di posta elettronica dell'lavoro.
 4. Selezionare **Accedi** e quindi **Avanti.**
-5. Passare attraverso la breve esercitazione e quindi selezionare **Apri la cartella di OneDrive.** Se si usa anche la versione personale di OneDrive, è&#39;qui.
+5. Passare attraverso la breve esercitazione e quindi selezionare **Apri la mia cartella di OneDrive.** Se si usa anche la versione personale di OneDrive,&#39;qui.
 6. In Esplora file passare ai file che si desidera copiare.
 7. Selezionare i file e quindi trascinarli nella cartella di OneDrive. Le frecce circolari blu accanto ai file significano che&#39;la sincronizzazione con il cloud. Al termine&#39;la sincronizzazione, vengono visualizzati segni di spunta verdi.
 

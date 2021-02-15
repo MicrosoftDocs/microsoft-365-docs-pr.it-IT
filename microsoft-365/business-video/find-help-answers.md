@@ -45,7 +45,7 @@ Se hai una domanda o hai bisogno di assistenza con Microsoft 365 Business Premiu
 1. Tornare all'interfaccia di amministrazione e questa volta scegliere **Indicazioni** di configurazione personalizzate per visualizzare una serie di guide che illustrano le attività di configurazione specifiche.
 1. Torna alla home page dell'interfaccia di amministrazione e scegli Formazione per gli utenti per ottenere assistenza con app specifiche e scoprire come ottenere il massimo delle funzionalità che usi ogni giorno. 
 1. Tornare all'interfaccia di amministrazione e scegliere **Serve aiuto per** aprire l'Assistente supporto. Digitare la domanda o l'argomento con cui si desidera ricevere assistenza, quindi selezionare **Invia.** Scegliere il collegamento nell'interfaccia di amministrazione o all'articolo che risponde alla domanda.
-1. Se non si trova una risposta alla propria domanda, è sempre possibile contattare il supporto e un tecnico del supporto tecnico risponderà a breve.
+1. Se non si trova una risposta alla propria domanda, è sempre possibile contattare il supporto tecnico e un tecnico del supporto tecnico risponderà a breve.
 
 È inoltre possibile utilizzare le risorse seguenti per ottenere assistenza per il problema:
 

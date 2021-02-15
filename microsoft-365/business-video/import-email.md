@@ -21,7 +21,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come importare la posta elettronica in Microsoft 365for business.
+description: Informazioni su come importare la posta elettronica in Microsoft 365per le aziende.
 ms.openlocfilehash: a53552ddead1ed69a7c9b77bb8021a6340690059
 ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
@@ -41,7 +41,7 @@ Dopo aver effettuato l'accesso a Microsoft 365, è possibile che la posta elettr
 
 1. In Outlook selezionare **File**, **Apri ed esporta** e quindi **Importa/Esporta.**
 2. Selezionare **Esporta in un file** e quindi fare clic su **Avanti.**
-3. Selezionare **Il file di dati di Outlook** e quindi fare clic su **Avanti.**
+3. Selezionare **file di dati di Outlook** e quindi fare clic su **Avanti.**
 4. Selezionare il vecchio account di posta elettronica.
 5. Verificare di includere le sottocartelle. Quindi selezionare **Avanti.**
 6. Seleziona  **Sfoglia** e passa a una posizione facile da ricordare, ad esempio il desktop. Selezionare **OK** e quindi **Fine.**
@@ -53,6 +53,6 @@ Dopo aver effettuato l'accesso a Microsoft 365, è possibile che la posta elettr
 
 1. In Outlook selezionare  **File**, **Apri**  **,** Esporta e quindi **Importa/Esporta**.
 2. Selezionare **Importa da un altro programma o file** e quindi fare clic su **Avanti.**
-3. Selezionare **Il file di dati di Outlook** e quindi fare clic su **Avanti.**
+3. Selezionare **file di dati di Outlook** e quindi fare clic su **Avanti.**
 4. Selezionare  **Sfoglia** e passare al file appena esportato. Selezionarlo e quindi selezionare **Apri** e quindi **Avanti.**
 5. Verificare di includere sottocartelle e di importare elementi nella stessa cartella nel nuovo account di posta elettronica. Scegliere **Fine.**

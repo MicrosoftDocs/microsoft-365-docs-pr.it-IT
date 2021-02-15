@@ -45,7 +45,7 @@ Gli amministratori possono verificare gli abbonamenti dell'organizzazione nell'i
   
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Abbonamenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">fatturazione.</a>  
+1. Nell'interfaccia di amministrazione passare alla pagina **Sottoscrizioni** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">fatturazione.</a>  
 
 2. Se si ha solo un abbonamento, la pagina **Abbonamenti** ne indicherà il nome, insieme alle relative informazioni e lo stato. Nella schermata seguente, è possibile vedere che ho un abbonamento a Microsoft 365 Apps for business.
 
@@ -55,7 +55,7 @@ Gli amministratori possono verificare gli abbonamenti dell'organizzazione nell'i
 
     Se si hanno più abbonamenti, scegliere quello per cui si desidera visualizzare informazioni dettagliate. La visualizzazione verrà aggiornata con le informazioni su quell'abbonamento.
 
-    ![Pagina Abbonamenti dell'interfaccia di amministrazione che mostra un elenco di più sottoscrizioni raggruppate in base al relativo stato.](../../media/548ab8e9-bf9c-46d1-8c7c-ef5b631f3faa.png)
+    ![Pagina Sottoscrizioni dell'interfaccia di amministrazione che mostra un elenco di più sottoscrizioni raggruppate in base al relativo stato.](../../media/548ab8e9-bf9c-46d1-8c7c-ef5b631f3faa.png)
   
     > [!NOTE]
     > Se sono presenti abbonamenti scaduti o disabilitati, saranno elencati in base allo stato corrente.
@@ -64,7 +64,7 @@ Gli amministratori possono verificare gli abbonamenti dell'organizzazione nell'i
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Abbonamenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">fatturazione.</a>  
+1. Nell'interfaccia di amministrazione passare alla pagina **Sottoscrizioni** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">fatturazione.</a>  
 
 2. Se si ha solo un abbonamento, la pagina **Abbonamenti** ne indicherà il nome, insieme alle relative informazioni e lo stato. Nella schermata seguente, è possibile vedere che ho un abbonamento a Microsoft 365 Apps for business.
 
@@ -74,7 +74,7 @@ Gli amministratori possono verificare gli abbonamenti dell'organizzazione nell'i
 
     Se si hanno più abbonamenti, scegliere quello per cui si desidera visualizzare informazioni dettagliate. La visualizzazione verrà aggiornata con le informazioni su quell'abbonamento.
 
-    ![Pagina Abbonamenti dell'interfaccia di amministrazione che mostra un elenco di più sottoscrizioni raggruppate in base al relativo stato.](../../media/548ab8e9-bf9c-46d1-8c7c-ef5b631f3faa.png)
+    ![Pagina Sottoscrizioni dell'interfaccia di amministrazione che mostra un elenco di più sottoscrizioni raggruppate in base al relativo stato.](../../media/548ab8e9-bf9c-46d1-8c7c-ef5b631f3faa.png)
   
     > [!NOTE]
     > Se sono presenti abbonamenti scaduti o disabilitati, saranno elencati in base allo stato corrente.

@@ -1,5 +1,5 @@
 ---
-title: Privacy e sicurezza in mobilità e sicurezza di base
+title: Privacy and security in Basic Mobility and Security
 f1.keywords: NOCSH
 ms.author: kwekua
 author: kwekua
@@ -13,7 +13,7 @@ ms.collection:
 - Adm_O365
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
-description: Dopo aver attivato la sicurezza e la mobilità di base, è possibile creare criteri di gestione dei dispositivi mobili.
+description: Dopo aver attivato Basic Mobility and Security, è possibile creare criteri di gestione dei dispositivi mobili.
 ms.openlocfilehash: a5e813219407b105f9196a4532914326a94f429a
 ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
@@ -21,8 +21,8 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/15/2021
 ms.locfileid: "49876913"
 ---
-# <a name="privacy-and-security-in-basic-mobility-and-security"></a>Privacy e sicurezza in mobilità e sicurezza di base
+# <a name="privacy-and-security-in-basic-mobility-and-security"></a>Privacy and security in Basic Mobility and Security
 
-La mobilità e la sicurezza di base è un servizio basato su cloud alimentato da Microsoft Intune che consente di gestire e proteggere i dispositivi mobili nell'organizzazione. Dopo aver attivato la sicurezza e la mobilità di base, è possibile creare criteri di gestione dei dispositivi mobili. Questi criteri possono quindi essere distribuiti su dispositivi mobili che sono stati registrati dagli utenti di Microsoft 365 con licenza nell'organizzazione.
+Basic Mobility and Security è un servizio basato su cloud basato su Microsoft Intune che consente di gestire e proteggere i dispositivi mobili nell'organizzazione. Dopo aver attivato Basic Mobility and Security, è possibile creare criteri di gestione dei dispositivi mobili. Questi criteri possono quindi essere distribuiti ai dispositivi mobili registrati dagli utenti di Microsoft 365 con licenza nell'organizzazione.
 
-Microsoft Intune invia informazioni a Microsoft 365 circa lo stato di conformità di ogni dispositivo gestito e quindi è possibile generare rapporti che dimostrano se i dispositivi gestiti nell'organizzazione sono conformi in base ai criteri che sono stati impostati. Per ulteriori informazioni sull'impegno di Microsoft per la privacy e la sicurezza, vedere il [Centro protezione Microsoft](https://www.microsoft.com/trust-center).
+Microsoft Intune invia informazioni a Microsoft 365 sullo stato di conformità di ogni dispositivo gestito e quindi è possibile generare report che mostrano se i dispositivi gestiti nell'organizzazione sono conformi in base ai criteri impostati. Per ulteriori informazioni sull'impegno di Microsoft per la privacy e la sicurezza, vedere il Centro protezione [Microsoft.](https://www.microsoft.com/trust-center)

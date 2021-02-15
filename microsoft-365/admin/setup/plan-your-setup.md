@@ -41,7 +41,7 @@ Prima di spostare l'organizzazione in Microsoft 365, è necessario soddisfare i 
 
 Quando si è pronti per eseguire la configurazione guidata e spostare il dominio in Microsoft 365, ecco le informazioni necessarie:
   
-- Elenco di persone che si desidera aggiungere a Microsoft 365. Anche se sono già state aggiunte a Microsoft 365, se si aggiornano le informazioni sul dominio, è necessario immettere i relativi nomi qui.
+- Elenco di persone che si desidera aggiungere a Microsoft 365. Anche se sono già state aggiunte a Microsoft 365, se si stanno aggiornando le informazioni sul dominio, è necessario immettere i relativi nomi qui.
 
 - Come informare i dipendenti dell'ID utente e della password in modo che possano accedere. Si intende chiamarli e fornire le informazioni? Oppure si preferisce inviare queste informazioni al loro indirizzo di posta elettronica personale? Non hanno accesso alla loro posta elettronica, quindi non è possibile usarlo.
 
@@ -54,7 +54,7 @@ La configurazione guidata illustra come installare le app di Microsoft 365 nel c
 > [!NOTE]
 > Se è necessario assegnare ruoli di amministratore [in Microsoft 365 per](../add-users/assign-admin-roles.md) le aziende agli utenti aggiunti nella procedura guidata, è possibile farlo in un secondo momento nella **pagina** Utenti. 
   
-Se non si completa l'installazione guidata, è possibile completare le attività di installazione in qualsiasi momento [dall'installazione dell'interfaccia di](https://go.microsoft.com/fwlink/p/?linkid=2024339)  >  **amministrazione.** Da qui è possibile eseguire la migrazione di posta elettronica e contatti da un altro servizio di posta elettronica, modificare il dominio dell'account amministratore, gestire le informazioni di fatturazione, aggiungere o rimuovere utenti, reimpostare le password ed eseguire altre funzioni aziendali. Per ulteriori informazioni sulle differenze tra  l'installazione guidata e la pagina Installazione, vedere Differenze tra l'installazione guidata di [Microsoft 365](o365-setup-wizard-and-setup-page.md)e la pagina Installazione.
+Se non si completa la configurazione guidata, è possibile completare le attività di installazione in qualsiasi momento dall'installazione [dell'interfaccia di](https://go.microsoft.com/fwlink/p/?linkid=2024339)  >  **amministrazione.** Da qui è possibile eseguire la migrazione di posta elettronica e contatti da un altro servizio di posta elettronica, modificare il dominio dell'account amministratore, gestire le informazioni di fatturazione, aggiungere o rimuovere utenti, reimpostare le password ed eseguire altre funzioni aziendali. Per ulteriori informazioni sulle differenze tra  l'installazione guidata e la pagina Di installazione, vedere Differenze tra l'installazione guidata di [Microsoft 365](o365-setup-wizard-and-setup-page.md)e la pagina Installazione.
 
 Per qualsiasi difficoltà, siamo disponibili telefonicamente. [Opzioni di assistenza](../contact-support-for-business-products.md)
   
@@ -70,7 +70,7 @@ Esistono due scenari che includono la migrazione di dati o utenti da ambienti lo
 
 ## <a name="move-to-microsoft-365-all-at-once-or-in-stages"></a>Passare a Microsoft 365 contemporaneamente o in più fasi
 
-- **Si desidera spostare l'organizzazione in Microsoft 365 contemporaneamente?** In tal caso, pianificare immediatamente lo spostamento del dominio in Microsoft 365. Per iniziare, eseguire la configurazione guidata di Microsoft 365; verrà richiesto di configurare il dominio.
+- **Si vuole spostare l'organizzazione in Microsoft 365 contemporaneamente?** In tal caso, pianificare immediatamente lo spostamento del dominio in Microsoft 365. Per iniziare, eseguire la configurazione guidata di Microsoft 365; verrà richiesto di configurare il dominio.
 
 - **Si desidera passare gradualmente a Microsoft 365?** Se si vuole passare a Microsoft 365 in più fasi, ignorare l'esecuzione della configurazione guidata di Microsoft 365 e prendere in considerazione l'adozione delle funzionalità di Microsoft 365 nell'ordine seguente:
 
@@ -86,7 +86,7 @@ Esistono due scenari che includono la migrazione di dati o utenti da ambienti lo
 
 ## <a name="check-that-your-devices-meet-system-requirements"></a>Verificare che i dispositivi soddisfino i requisiti di sistema
 
-Ogni utente dell'organizzazione può installare la famiglia di app di Office 2016 (Word, Excel, PowerPoint e così via) su un massimo di cinque PC e Mac. Vedere i requisiti di sistema operativo e computer per installare le [applicazioni Office 2016](https://go.microsoft.com/fwlink/?LinkId=534827) per le aziende.
+Ogni persona dell'organizzazione può installare la famiglia di app di Office 2016 (Word, Excel, PowerPoint e così via) su un massimo di cinque PC e Mac. Vedere i requisiti di sistema operativo e computer per installare le [applicazioni Office 2016](https://go.microsoft.com/fwlink/?LinkId=534827) per le aziende.
   
 Le app per dispositivi mobili possono essere installate nei dispositivi iOS, Android e Windows. Per informazioni sui dispositivi mobili e i browser supportati, vedere [Requisiti di sistema di Office](https://go.microsoft.com/fwlink/?LinkId=534827).
   
@@ -98,7 +98,7 @@ Se si prevede di passare da un servizio di posta elettronica esistente a Microso
   
 Se si ha intenzione di usare Microsoft 365 per la posta elettronica:
   
-- Per spostare l'indirizzo di posta elettronica aziendale (ad esempio *Rob \@ contoso.com)* da un altro servizio di posta elettronica a Microsoft 365, è necessario indirizzare la posta da recapitare alla nuova cassetta postale di Microsoft 365. A tale scopo, **selezionare** Esegui la  migrazione dei dati degli utenti nella pagina Di installazione, in cui vengono fornite istruzioni dettagliate sugli aggiornamenti da apportare all'host di dominio.
+- Per spostare l'indirizzo di posta elettronica aziendale (ad esempio *rob \@ contoso.com)* da un altro servizio di posta elettronica a Microsoft 365, è necessario indirizzare la posta da recapitare alla nuova cassetta postale di Microsoft 365. A tale scopo, **selezionare** Esegui la  migrazione dei dati degli utenti nella pagina Di installazione, in cui vengono fornite istruzioni dettagliate sugli aggiornamenti da apportare all'host di dominio.
 
 - Una volta aggiornato l'host del dominio, le modifiche diventano in genere effettive dopo una o due ore. Tuttavia, tenere presente che a volte possono essere necessarie fino a 72 ore prima che le modifiche possano essere aggiornate su Internet.
 
@@ -111,11 +111,11 @@ Se si ha intenzione di usare Microsoft 365 per l'account di posta elettronica, �
 |**Quante cassette postali?**|**Consiglio**|
 |:-----|:-----|
 |Poche  <br/> |Se non si desidera utilizzare  la pagina Di installazione per eseguire la migrazione delle cassette postali, è possibile consentire ai proprietari delle cassette postali di eseguire la migrazione dei propri messaggi di posta elettronica e contatti. Vedere [Eseguire la migrazione di posta elettronica e contatti a Microsoft 365 per le aziende.](migrate-email-and-contacts-admin.md)  <br/> |
-|Molte  <br/> |Se si esegue la migrazione da Gmail, vedere Eseguire la migrazione delle cassette postali [di G Suite a Microsoft 365.](https://docs.microsoft.com/Exchange/mailbox-migration/migrating-imap-mailboxes/migrate-g-suite-mailboxes)  <br/> Se si esegue la migrazione da un altro provider di posta elettronica, incluso Exchange, vedere Modalità di migrazione di più account di posta elettronica [a Microsoft 365.](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)  <br/> |
+|Molte  <br/> |Se si esegue la migrazione da Gmail, vedere [Eseguire la migrazione delle cassette postali di G Suite a Microsoft 365.](https://docs.microsoft.com/Exchange/mailbox-migration/migrating-imap-mailboxes/migrate-g-suite-mailboxes)  <br/> Se si esegue la migrazione da un altro provider di posta elettronica, incluso Exchange, vedere Modalità di migrazione di più account di posta elettronica [a Microsoft 365.](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration)  <br/> |
 
 ## <a name="plan-for-file-storage-and-migration"></a>Pianificare l'archiviazione di file e la migrazione
 
-Microsoft 365 fornisce spazio di archiviazione cloud per singoli utenti, piccole organizzazioni e aziende. Per indicazioni sugli elementi da archiviare, vedere Dove archiviare i documenti [in Microsoft 365.](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790)
+Microsoft 365 fornisce spazio di archiviazione cloud per singoli utenti, piccole organizzazioni e aziende. Per indicazioni su cosa archiviare, vedere Dove [archiviare i documenti in Microsoft 365.](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790)
   
 - **È possibile spostare centinaia di file** in [OneDrive](https://support.microsoft.com/office/45114744-6D42-45CD-8975-F9617819BDEB) o in un [sito del team di SharePoint.](https://support.microsoft.com/office/da549fb1-1fcb-4167-87d0-4693e93cb7a0#__toc384119242) È possibile caricare 100 file per volta. Evitare di caricare file di dimensioni maggiori di 2 GB, che sono le dimensioni massime consentite per impostazione predefinita.
   

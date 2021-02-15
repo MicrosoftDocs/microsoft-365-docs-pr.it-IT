@@ -55,7 +55,7 @@ Se viene visualizzato un messaggio di errore quando si tenta di riscattare un co
 | "È necessario essere un amministratore globale o della contabilità per riscattare il codice Product Key." | Assicurati che le autorizzazioni siano impostate come amministratore globale o di fatturazione. Per verificarlo,  [accedere a Microsoft 365 con](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4) l'account aziendale o dell'istituto di istruzione e passare all'interfaccia di amministrazione. <br/><br/>Nell'interfaccia di amministrazione selezionare **Utenti** \> **Utenti attivi**. In **Filtri** scegliere **Amministratori globali** o **Amministratori fatturazione**.  <br/><br/>Verificare che il proprio nome sia elencato nei risultati. |
    
 > [!NOTE]
-> Quando si acquista Microsoft 365 tramite un partner, Microsoft invia un messaggio di posta elettronica contenente le istruzioni per ottenere il codice Product Key e attivare l'abbonamento nel Centro servizi per contratti [multilicenza.](https://go.microsoft.com/fwlink/p/?LinkID=282016) Per altre informazioni sui contratti multilicenza, vedere la [Guida per i clienti con contratti multilicenza esistenti](https://go.microsoft.com/fwlink/p/?LinkId=534992). 
+> Quando si acquista Microsoft 365 tramite un partner, Microsoft invia un messaggio di posta elettronica contenente istruzioni per ottenere il codice Product Key e attivare l'abbonamento nel Centro servizi per contratti [multilicenza.](https://go.microsoft.com/fwlink/p/?LinkID=282016) Per altre informazioni sui contratti multilicenza, vedere la [Guida per i clienti con contratti multilicenza esistenti](https://go.microsoft.com/fwlink/p/?LinkId=534992). 
   
 ## <a name="related-articles"></a>Articoli correlati
 

@@ -115,4 +115,4 @@ Per ottenere queste e altre funzionalità per gestire le firme di posta elettron
   
 ## <a name="more-resources"></a>Altre risorse
 
-- Per informazioni sull'utilizzo di PowerShell, vedere Dichiarazioni di non [responsabilità, firme,](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) piè di pagina o intestazioni dei messaggi a livello di organizzazione in Exchange Online.
+- Per [informazioni sull'utilizzo](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers) di PowerShell, vedere Dichiarazioni di non responsabilità, firme, piè di pagina o intestazioni dei messaggi a livello di organizzazione in Exchange Online.

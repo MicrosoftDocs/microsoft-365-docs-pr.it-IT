@@ -44,8 +44,8 @@ Microsoft Defender per Office 365, in precedenza denominato Microsoft 365 ATP o 
 1. Selezionare **le** impostazioni e quindi verificare che l'opzione Blocca sia selezionata.
 1. Scorrere verso il basso. Choose **Enable redirect**, and enter your email address or the address of the person you want to review the blocked attachments.
 1. Selezionare **applicato a** e quindi selezionare il nome di dominio.
-1. Scegliere eventuali domini aggiuntivi di cui si è proprietari ,ad esempio onmicrosoft.com dominio di posta elettronica, a cui si desidera applicare la regola. Selezionare **Aggiungi** e quindi **OK.**
-1. Seleziona **Salva**.
+1. Scegliere eventuali domini aggiuntivi di cui si è proprietari (ad esempio il onmicrosoft.com di dominio) a cui si desidera applicare la regola. Selezionare **aggiungi** e quindi **OK.**
+1. Selezionare **Salva**.
 
 La regola degli allegati sicuri di ATP è stata aggiornata.
 

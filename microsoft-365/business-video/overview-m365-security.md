@@ -45,17 +45,17 @@ Microsoft 365 Business Premium include Office 365 Advanced Threat Protection (AT
 
 L'autenticazione a più fattori (MFA) o la verifica in due passaggi richiede la presentazione di una seconda forma di autenticazione, ad esempio un codice di verifica, per confermare l'identità prima di poter accedere alle risorse.  
 
-Windows Defender offre una protezione completa per il sistema, i file e le attività online da virus, malware, spyware e altre minacce.
+Windows Defender fornisce una protezione completa per il sistema, i file e le attività online da virus, malware, spyware e altre minacce.
 
 ## <a name="data-protection"></a>Protezione dei dati
 
 Le funzionalità di protezione dei dati in Microsoft 365 Business Premium assicurano che i dati importanti rimangano sicuri e che solo le persone autorizzate vi hanno accesso.
 
-È possibile utilizzare i criteri di prevenzione della perdita dei dati (DLP) per identificare e gestire le informazioni riservate, ad esempio i numeri di previdenza sociale o di carta di credito, in modo che non vengono condivise in modo errato. 
+È possibile utilizzare i criteri di prevenzione della perdita dei dati (DLP) per identificare e gestire le informazioni riservate, ad esempio i numeri di carta di credito o di previdenza sociale, in modo che non vengono erroneamente condivise. 
 
 La crittografia dei messaggi di Office 365 combina le funzionalità di crittografia e diritti di accesso per garantire che solo i destinatari previsti possano visualizzare il contenuto dei messaggi. La crittografia dei messaggi di Office 365 funziona con Outlook.com, Yahoo!, Gmail e altri servizi di posta elettronica.
 
-Archiviazione Exchange Online è una soluzione di archiviazione basata su cloud che funziona con Microsoft Exchange o Exchange Online per fornire funzionalità di archiviazione avanzate, tra cui blocchi e ridondanza dei dati. È possibile utilizzare i criteri di conservazione per aiutare l'organizzazione a ridurre le responsabilità associate alla posta elettronica e ad altre comunicazioni. Se l'azienda deve conservare le comunicazioni relative a controversie legali, è possibile utilizzare le In-Place esenzioni per controversia legale per conservare la posta elettronica correlata.
+Archiviazione Exchange Online è una soluzione di archiviazione basata su cloud che funziona con Microsoft Exchange o Exchange Online per fornire funzionalità di archiviazione avanzate, tra cui blocchi e ridondanza dei dati. È possibile utilizzare i criteri di conservazione per aiutare l'organizzazione a ridurre le responsabilità associate alla posta elettronica e ad altre comunicazioni. Se l'azienda deve conservare le comunicazioni relative a controversie legali, è possibile utilizzare In-Place esenzioni per controversia legale per conservare la posta elettronica correlata.
 
 ## <a name="device-management"></a>Gestione dei dispositivi
 

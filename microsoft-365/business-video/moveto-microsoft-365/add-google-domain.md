@@ -44,10 +44,10 @@ Aggiungere il dominio di Google Workspace a Microsoft 365 per le aziende in modo
 1. Tornare alla Console di amministrazione di [Google,](https://admin.google.com)scegliere **Domini,** Gestisci **domini,** Visualizza **dettagli,** Gestisci **dominio,** **DNS** e quindi scorrere verso il basso fino a Record di **risorse personalizzati.** 
 1. Aprire l'elenco a discesa relativo al tipo di record, scegliere **TXT,** incollare il valore TXT copiato e selezionare **Aggiungi.** 
 
-    L'aggiornamento in genere richiede alcuni minuti, ma può richiedere fino a 48 ore. 
+    L'aggiornamento in genere richiede pochi minuti, ma può richiedere fino a 48 ore. 
 1. Tornare all'interfaccia di amministrazione di Microsoft 365, selezionare **Verifica** e quindi **Chiudi.** 
 1. Per impostare il dominio come posta elettronica principale per gli utenti, nel riquadro di spostamento sinistro selezionare **Utenti**  >  **attivi.** 
-1. Choose a user, select **Manage username and email**, **Edit**, select your domain from the dropdown, then select **Done** and **Save changes**. 
+1. Choose a user, select **Manage username and email**, **Edit,** select your domain from the dropdown, then select **Done** and **Save changes.** 
 1. Ripetere questo processo per ogni utente. 
 
     Al termine, sarà possibile installare le app di Office ed eseguire la migrazione della posta elettronica e degli elementi del calendario a Microsoft 365. 

@@ -63,7 +63,7 @@ La verifica del dominio potrebbe non funzionare in alcuni scenari comuni:
     
 2. **Il record non è stato salvato.** Presso alcuni host DNS è necessario eseguire un ulteriore passaggio per salvare il file di zona (in cui è archiviato il record DNS) in modo che venga aggiornato su Internet. Assicurarsi di aver salvato le modifiche in modo che Microsoft 365 possa visualizzare e verificare il record. 
     
-3. **Il record non è stato aggiornato su Internet.** La lettura del nuovo record richiede in genere solo alcuni minuti, ma a volte può richiedere fino a qualche ora. 
+3. **Il record non è stato aggiornato su Internet.** La possibilità di visualizzare il nuovo record richiede in genere solo alcuni minuti, ma a volte può richiedere fino a qualche ora. 
     
 ## <a name="outlook-isnt-working"></a>Outlook non funziona?
 <a name="BKMK_OutlookBroken"> </a>
@@ -80,7 +80,7 @@ Cosa succede se non si vuole spostare la posta elettronica per tutti gli utenti 
 ## <a name="cant-confirm-non-profit-or-school-account-status"></a>Non è possibile confermare lo stato dell'account no profit o dell'istituto di istruzione?
 <a name="BKMK_validateAcct"> </a>
 
-Esistono due scenari in cui è sufficiente verificare il dominio dell'organizzazione e non configurare alcun servizio. Ad esempio, per dimostrare a Microsoft 365 che l'organizzazione è qualificata per un abbonamento all'istituto di istruzione.
+Esistono due scenari in cui è sufficiente verificare il dominio dell'organizzazione e non configurare alcun servizio. Ad esempio, per dimostrare a Microsoft 365 che l'organizzazione è qualificata per un abbonamento scolastico.
   
 Consultare le indicazioni in Verificare il dominio [di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) per dimostrare la proprietà, lo stato dell'organizzazione no profit o dell'istruzione o per attivare Yammer per assicurarsi di aver completato tutti i passaggi necessari. È leggermente diverso per ogni situazione. 
   
@@ -99,7 +99,7 @@ Se gli errori del DNS sono stati corretti ma si verificano ancora problemi, prov
   
 - Le persone non riescono ad accedere al sito Web all'indirizzo www.mydomain.com: [Risolvere i problemi relativi al sito Web](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain)
     
-- Non è possibile aggiornare il record A o il record CNAME in modo che punti al sito Web: [aggiornare i record DNS personalizzati in Microsoft 365](../dns/add-or-edit-custom-dns-records.md)
+- Non è possibile aggiornare il record A o CNAME in modo che punti al sito Web: [aggiornare i record DNS personalizzati in Microsoft 365](../dns/add-or-edit-custom-dns-records.md)
 
 ## <a name="related-content"></a>Contenuti correlati
 

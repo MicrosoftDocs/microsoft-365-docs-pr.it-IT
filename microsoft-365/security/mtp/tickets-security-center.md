@@ -35,7 +35,7 @@ ms.locfileid: "49925495"
 >**Il periodo di anteprima per il connettore ServiceNow è terminato**<br>
 >Questa funzionalità non è più disponibile. Grazie per il feedback e il supporto continuo durante la determinazione dei passaggi successivi.
 
-Il Centro sicurezza [Microsoft 365](overview-security-center.md) è stato migliorato grazie alla possibilità di creare e tenere traccia dei ticket in modo nativo in ServiceNow. [Ulteriori informazioni su ServiceNow](https://www.servicenow.com/)
+Il Centro sicurezza [Microsoft 365](overview-security-center.md) è stato migliorato con la possibilità di creare e tenere traccia in modo nativo dei ticket in ServiceNow. [Ulteriori informazioni su ServiceNow](https://www.servicenow.com/)
 
 Nel Centro sicurezza, gli amministratori della sicurezza possono inviare un'azione di miglioramento di [Microsoft Secure Score](microsoft-secure-score.md) direttamente a ServiceNow e creare un ticket. È possibile creare sia ticket di gestione degli eventi imprevisti che ticket di gestione delle modifiche. Tenere traccia dei ticket nella home page del Centro sicurezza e ServiceNow.
 

@@ -33,7 +33,7 @@ ms.locfileid: "49927155"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/65ec460e-296c-458f-b004-906756dfb3d0?autoplay=false]
 
-Dopo l'iscrizione a Microsoft 365 Business Premium, è&#39;copiare i file di lavoro aziendali in SharePoint. SharePoint è un buon punto in cui archiviare i file aziendali condivisi a cui tutti gli utenti devono accedere. Questo sostituisce in genere l'uso di una condivisione file o di un'unità di rete.
+Dopo l'iscrizione a Microsoft 365 Business Premium, è&#39;copiare i file di lavoro aziendali in SharePoint. SharePoint è un buon punto in cui archiviare i file aziendali condivisi a cui tutti devono accedere. Questo sostituisce in genere l'uso di una condivisione file o di un'unità di rete.
 
 ## <a name="try-it"></a>Perché non provarlo?
 
@@ -41,7 +41,7 @@ Dopo l'iscrizione a Microsoft 365 Business Premium, è&#39;copiare i file di lav
 2. Selezionare **File** e quindi Apri **in SharePoint.**
 3. Selezionare  **Documenti** per passare al percorso in cui sono archiviati tutti gli elementi nel sito.
 4. Selezionare **Sincronizza** e quindi **Sì.** In questo modo i file del sito di SharePoint vengono sincronizzati con il computer.
-5. In Esplora file, è&#39;la cartella dei documenti sincronizzati dalla società&#39;sito di SharePoint. Se si sincronizzano altri siti di SharePoint, questi verranno visualizzati sopra o sotto questo. Fare clic con il pulsante destro del mouse sulla cartella dei documenti sincronizzati e aprirla in una nuova finestra per visualizzarla insieme ai file aziendali che si desidera spostare.
+5. In Esplora file sarà&#39;la cartella dei documenti sincronizzati dalla società&#39;sito di SharePoint. Se si sincronizzano altri siti di SharePoint, questi verranno visualizzati sopra o sotto questo. Fare clic con il pulsante destro del mouse sulla cartella dei documenti sincronizzati e aprirla in una nuova finestra per visualizzarla affiancata ai file aziendali che si desidera spostare.
 6. Selezionare tutti i file che si desidera spostare e quindi trascinarli nella cartella di SharePoint sincronizzata. Le frecce circolari blu accanto ai file significano che&#39;la sincronizzazione con il sito di SharePoint. Al termine&#39;la sincronizzazione, vengono visualizzati segni di spunta verdi.
 7. Tornare al sito di SharePoint per visualizzare i file sincronizzati con il cloud.
 

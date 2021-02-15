@@ -28,7 +28,7 @@ ms.locfileid: "49921305"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---mailbox-usage"></a>Report di Microsoft 365 nell'interfaccia di amministrazione - Utilizzo delle cassette postali
 
-Il **rapporto** sull'utilizzo delle cassette postali fornisce informazioni sugli utenti con una cassetta postale utente e sul livello di attività di ognuno in base all'invio e-mail, alla lettura, alla creazione di un appuntamento, all'invio di una riunione, all'accettazione di una riunione, al rifiuto di una riunione e all'annullamento dell'attività di riunione. Fornisce anche informazioni sullo spazio di archiviazione usato da ogni cassetta postale utente e sul numero di cassette postali che hanno quasi raggiunto le quote di archiviazione. 
+Il **rapporto** sull'utilizzo delle cassette postali fornisce informazioni sugli utenti con una cassetta postale utente e sul livello di attività di ognuno in base all'invio, alla lettura, alla creazione di un appuntamento, all'invio di una riunione, all'accettazione di una riunione, al rifiuto della riunione e all'annullamento dell'attività di riunione. Fornisce anche informazioni sullo spazio di archiviazione usato da ogni cassetta postale utente e sul numero di cassette postali che hanno quasi raggiunto le quote di archiviazione. 
   
 > [!NOTE]
 > Per visualizzare i report, è necessario essere un amministratore globale, un lettore globale o un lettore di report in Microsoft 365 o un amministratore di Exchange, SharePoint, Teams Service, Teams Communications o Skype for Business. 
@@ -37,7 +37,7 @@ Il **rapporto** sull'utilizzo delle cassette postali fornisce informazioni sugli
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Report** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilizzo</a>.
 2. Selezionare **Visualizza altro in** Attività di posta **elettronica.** 
-3. **Nell'elenco a discesa Attività** di posta elettronica selezionare Utilizzo cassetta postale di **Exchange.** \> 
+3. **Nell'elenco a discesa Attività di** posta elettronica selezionare Utilizzo cassetta postale di **Exchange.** \> 
 
 ## <a name="interpret-the-mailbox-usage-report"></a>Interpretare il report sull'utilizzo delle cassette postali
 
@@ -49,7 +49,7 @@ Il **rapporto** sull'utilizzo delle cassette postali fornisce informazioni sugli
 |:-----|:-----|
 |1.  <br/> |Il report **Utilizzo delle cassette postali** può essere visualizzato per le tendenze degli ultimi 7, 30, 90 o 180 giorni. Tuttavia, se si seleziona un giorno specifico nel report, la tabella mostrerà i dati per un massimo di 28 giorni dalla data corrente (non la data in cui è stato generato il report).  <br/> |
 |2.  <br/> |I dati in ogni report in genere riguardano fino alle ultime 24-48 ore.  <br/> |
-|3.  <br/> |Il grafico Cassetta postali mostra il numero totale di cassette postali utente nell'organizzazione e il numero totale di cassette attive in un determinato giorno del periodo oggetto del report. Una cassetta postale utente è considerata attiva se ha inviato, letto, creare un appuntamento, inviare una riunione, accettare una riunione, rifiutare la riunione e annullare l'attività di riunione.  <br/> |
+|3.  <br/> |Il grafico Cassetta postali mostra il numero totale di cassette postali utente nell'organizzazione e il numero totale di cassette attive in un determinato giorno del periodo oggetto del report. Una cassetta postale utente viene considerata attiva se ha inviato, letto, creato un appuntamento, invia una riunione, accetta la riunione, rifiuta la riunione e annulla l'attività di riunione.  <br/> |
 |4.  <br/> |Il grafico **Spazio di archiviazione** mostra la quantità di spazio di archiviazione usata nell'organizzazione. Il grafico di archiviazione non include le cassette postali di archiviazione. Per ulteriori informazioni sull'espansione automatica dell'archiviazione, vedere [Panoramica dell'archiviazione illimitata in Microsoft 365.](https://docs.microsoft.com/microsoft-365/compliance/unlimited-archiving)<br/> |
 |5.  <br/> | Il grafico **Quota** mostra il numero di cassette postali utente in ogni categoria di quota. Sono disponibili quattro categorie di quota:  <br/>  Buona: numero di utenti il cui spazio di archiviazione è inferiore alla Quota per inviare avviso.  <br/>  Avviso: numero di utenti il cui spazio di archiviazione usato è pari o superiore alla Quota per inviare avviso, ma inferiore alla Quota per impedire invio  <br/>  Non è possibile inviare: numero di utenti il cui spazio di archiviazione usato è pari o superiore alla Quota per impedire invio, ma inferiore alla Quota per impedire invio/ricezione  <br/>  Non è possibile inviare/ricevere: numero di utenti il cui spazio di archiviazione usato è pari o superiore alla Quota per impedire invio/ricezione  <br/> |
 |6.  <br/> | Nel grafico **Cassetta postale** l'asse Y è il numero di cassette postali utente.  <br/>  Nel grafico **Spazio di archiviazione** l'asse Y è la quantità di spazio di archiviazione usata dalle cassette postali utente nell'organizzazione.  <br/>  Nel grafico **Quota** l'asse Y è il numero di cassette postali utente in ogni quota di archiviazione.  <br/>  L'asse X nei grafici Cassetta postale e Spazio di archiviazione rappresenta l'intervallo di date selezionato per il report specifico.  <br/>  L'asse X nei grafici Quota è la categoria di quota.  <br/> |

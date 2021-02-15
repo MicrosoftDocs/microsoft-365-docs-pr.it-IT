@@ -38,9 +38,9 @@ Quando si crea un gruppo, si crea un indirizzo di posta elettronica centrale e u
 ## <a name="try-it"></a>Perché non provarlo?
 
 1. In Outlook, nella **scheda Home** scegliere **Nuovo gruppo.**
-2. Nella casella  **Crea gruppo**  immetti un nome di gruppo, un indirizzo di posta elettronica più breve come le info e una descrizione.
+2. Nella casella  **Crea gruppo**  immetti un nome di gruppo, un indirizzo e-mail più breve come info e una descrizione.
 3. Apri l'elenco a discesa della privacy e scegli **Privato.**
-4. Selezionare la  **casella di controllo Invia tutti gli eventi e i**  messaggi di posta elettronica del gruppo alle cartelle Posta in arrivo dei membri.
+4. Seleziona la  **casella di controllo Invia tutti gli eventi e i**  messaggi di posta elettronica dei gruppi alle cartelle Posta in arrivo dei membri.
 5. In **Aggiungi membri** selezionare i dipendenti che si desidera ricevere i messaggi di posta elettronica e quindi scegliere Aggiungi **membri.**
 6. Nella scheda **Home** di Outlook selezionare **Impostazioni gruppo,** quindi **Modifica gruppo.**
 7. Nella casella **Modifica gruppo**  selezionare la casella di controllo Consenti agli utenti esterni all'organizzazione di inviare un messaggio di posta elettronica al gruppo e quindi scegliere **OK.**

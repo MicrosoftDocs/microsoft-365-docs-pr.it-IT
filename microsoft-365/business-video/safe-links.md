@@ -42,7 +42,7 @@ Microsoft Defender per Office 365, in precedenza denominato Microsoft 365 ATP o 
 1. Scorrere verso il basso **fino ad aumentare la protezione dalle minacce avanzate.** Selezionare **Visualizza,** **Gestisci** e quindi **Collegamenti sicuri ATP.**
 1. In **Criteri applicabili all'intera organizzazione** scegliere il criterio predefinito e quindi selezionare l'icona Modifica.  
 1. Immettere un URL che si desidera bloccare.
-1. Selezionare **Usa collegamenti sicuri nelle app di Office, Office per iOS e Android;** selezionare **Non tenere traccia quando gli utenti fanno clic su collegamenti sicuri;** e selezionare **Non consentire agli utenti di fare clic su collegamenti sicuri all'URL originale.** Questi criteri potrebbero essere già selezionati se si configura il criterio predefinito. Seleziona **Salva**.
+1. Selezionare **Usa collegamenti sicuri nelle app di Office, Office per iOS e Android;** selezionare **Non tenere traccia quando gli utenti fanno clic su collegamenti sicuri;** e selezionare **Non consentire agli utenti di fare clic su collegamenti sicuri all'URL originale.** Questi criteri potrebbero essere già selezionati se si configura il criterio predefinito. Selezionare **Salva**.
 1. In **Criteri applicabili a destinatari specifici** scegliere Regola collegamenti sicuri **consigliati** e quindi selezionare l'icona Modifica. 
 1. Selezionare **le** impostazioni, scorrere verso il basso, immettere l'URL che non si desidera controllare e quindi selezionare **l'icona** Aggiungi.
 1. Selezionare **applicato a** e quindi selezionare il nome di dominio. Selezionare eventuali domini aggiuntivi a cui si desidera applicare la regola. Selezionare **Aggiungi**, **OK** e quindi **Salva.**

@@ -47,5 +47,5 @@ ms.locfileid: "49925863"
     1. Al termine delle modifiche, selezionare **Salva.**
 1. Per aggiungere una nuova scheda:
     1. Selezionare **Aggiungere una modalità di pagamento**.
-    1. Scegliere la modalità di pagamento che si desidera utilizzare **nell'elenco a** discesa Selezionare una modalità di pagamento.
+    1. Scegliere la modalità di pagamento che si desidera utilizzare nell'elenco **a** discesa Selezionare una modalità di pagamento.
     1. Immetti i dettagli della scheda e seleziona **Aggiungi.**

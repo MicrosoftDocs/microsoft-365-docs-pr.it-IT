@@ -58,7 +58,7 @@ Di seguito sono elencate tutte le tabelle dello schema. Ogni nome di tabella rim
 | Nome della tabella | Descrizione |
 |------------|-------------|
 | **[AlertEvidence](advanced-hunting-alertevidence-table.md)** | File, indirizzi IP, URL, utenti o dispositivi associati agli avvisi |
-| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Avvisi da Microsoft Defender per Endpoint, Microsoft Defender per Office 365, Microsoft Cloud App Security e Microsoft Defender for Identity, incluse informazioni sulla gravità e categorizzazione delle minacce  |
+| **[AlertInfo](advanced-hunting-alertinfo-table.md)** | Avvisi di Microsoft Defender per Endpoint, Microsoft Defender per Office 365, Microsoft Cloud App Security e Microsoft Defender for Identity, incluse informazioni sulla gravità e categorizzazione delle minacce  |
 | **[AppFileEvents](advanced-hunting-appfileevents-table.md)** | Attività relative ai file nelle app e nei servizi cloud |
 | **[CloudAppEvents](advanced-hunting-cloudappevents-table.md)** | Eventi che coinvolgono account e oggetti in Office 365 e altri servizi e app cloud |
 | **[DeviceEvents](advanced-hunting-deviceevents-table.md)** | Più tipi di evento, inclusi gli eventi attivati da controlli di sicurezza, ad esempio Windows Defender Antivirus e protezione dagli exploit |

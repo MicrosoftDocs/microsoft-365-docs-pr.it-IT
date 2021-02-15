@@ -39,7 +39,7 @@ Usare i quattro suggerimenti seguenti per lavorare ovunque ci si trovi: scaricar
 
 **Pensi di lavorare regolarmente da casa?**
 
-Utilizzare questo modello per analizzare le abitudini e il modo in cui si desidera lavorare per creare un piano che funzioni durante la transizione a un ufficio di casa. Raccogliere i materiali e gli arredamenti per ottimizzare lo spazio e mantenerti efficiente e in attività. [Scaricare il modello](https://templates.office.com/EN-US/work-from-home-checklist-TM77989015)
+Utilizzare questo modello per analizzare le abitudini e il modo in cui si desidera lavorare per creare un piano che funzioni durante la transizione a un ufficio di casa. Raccogliere materiali e complementi per ottimizzare lo spazio e mantenersi efficienti e in attività. [Scaricare il modello](https://templates.office.com/EN-US/work-from-home-checklist-TM77989015)
 
 ## <a name="install-outlook-and-keep-in-touch"></a>Installare Outlook e tenersi in contatto
 
@@ -63,7 +63,7 @@ Archiviare i file aziendali in Microsoft Teams o SharePoint. In questo modo l'ut
 1. Aprire OneDrive ed eseguire l'accesso.
 1. Segui le istruzioni per completare la configurazione e avviare la sincronizzazione.
 
-Serve aiuto? Consigli su [dove archiviare i file,](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790)su come [usare l'app OneDrive per](https://support.microsoft.com/office/448d4051-3a43-4d2e-b1d8-de0aa03c069e) dispositivi mobili e su come [sincronizzare file e cartelle.](https://support.microsoft.com/office/d9262485-9bf8-4ceb-bac2-e83f68cb6a97)
+Serve aiuto? Consigli su [dove archiviare i file,](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790)su come usare l'app [OneDrive per](https://support.microsoft.com/office/448d4051-3a43-4d2e-b1d8-de0aa03c069e) dispositivi mobili e su come [sincronizzare file e cartelle.](https://support.microsoft.com/office/d9262485-9bf8-4ceb-bac2-e83f68cb6a97)
 
 ## <a name="open-and-edit-your-files-from-any-device"></a>Aprire e modificare i file da qualsiasi dispositivo
 
@@ -104,6 +104,6 @@ Dal portatile:
 
 Dal telefono:
 
-- Sia prima che durante la riunione, l'avviso di riunione verrà visualizzato nell'elenco delle chat o in una conversazione di canale in Microsoft Teams.
+- Sia prima che durante la riunione, l'avviso per la riunione verrà visualizzato nell'elenco delle chat o in una conversazione di canale in Microsoft Teams.
 
     È possibile partecipare da tale avviso riunione o dal **calendario** della :::image type="icon" source="../media/meetings-icon.png" border="false"::: riunione

@@ -37,9 +37,9 @@ ms.locfileid: "49928175"
 
 Creare un team a livello di organizzazione in Microsoft Teams di cui possono far parte tutti gli utenti dell'azienda. Quando si aggiungono altri utenti a Microsoft 365, questi verranno aggiunti automaticamente a questo team.
 
-1. In Microsoft Teams seleziona  **Teams** e quindi crea **team.**
+1. In Microsoft Teams seleziona  **Teams** e quindi **crea team.**
 2. Scegliere **Crea un team da zero.**
-3. Selezionare **Crea un team a livello di organizzazione.**
+3. Selezionare **Crea team a livello di organizzazione.**
 
 > [!NOTE]
 > Per visualizzare questa opzione, è necessario essere un amministratore di Microsoft 365.

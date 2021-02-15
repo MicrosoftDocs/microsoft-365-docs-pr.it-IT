@@ -35,7 +35,7 @@ ms.locfileid: "49927743"
 
 In ogni abbonamento a Microsoft 365 Business deve essere presente almeno un account amministratore. L'amministratore gestisce il servizio, gli account utente e i dispositivi. Se sei l'utente che ha effettuato l'iscrizione per l'abbonamento, sei l'amministratore globale dell'abbonamento. Puoi anche diventare un amministratore se un altro amministratore ne fa una.
 
-Anche se è sempre necessario almeno un ruolo di amministratore per l'abbonamento, può essere un rischio per la sicurezza se l'account amministratore viene compromesso da una parte esterna. È consigliabile assegnare il ruolo di amministratore solo a coloro che ne hanno realmente bisogno e assegnare il ruolo utente alla maggior parte degli utenti.
+Anche se è sempre necessario almeno un ruolo di amministratore per l'abbonamento, può essere un rischio per la sicurezza se l'account amministratore viene compromesso da una parte esterna. È consigliabile assegnare il ruolo di amministratore solo a coloro che ne hanno effettivamente bisogno e assegnare il ruolo utente alla maggior parte degli utenti.
 
 ## <a name="try-it"></a>Perché non provarlo?
 

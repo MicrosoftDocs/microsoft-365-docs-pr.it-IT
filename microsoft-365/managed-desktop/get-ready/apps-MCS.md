@@ -1,7 +1,7 @@
 ---
 title: Lavorare con Microsoft Consulting Services
-description: preparazione e passaggi da seguire per lavorare con MCS per il pacchetto delle app
-keywords: Microsoft Managed Desktop, Microsoft 365, Service, Documentation, Apps, MCS, Packaging
+description: preparazione e passaggi da seguire per lavorare con MCS per creare un pacchetto delle app
+keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione, app, MCS, creazione di pacchetti
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -18,42 +18,42 @@ ms.locfileid: "49841424"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>Lavorare con Microsoft Consulting Services
 
-È possibile collaborare con Microsoft Consulting Services (MCS) per ottenere le app in pacchetti per l'utilizzo con Microsoft Managed Desktop. Per i dettagli esatti, collaborare con il proprio account Representative per contattare MCS e l'ambito del progetto di packaging app specifico.
+Puoi interagire con Microsoft Consulting Services (MCS) per creare pacchetti di app da usare con Microsoft Managed Desktop. Per dettagli precisi, contatta il rappresentante dell'account per contattare MCS e impostare l'ambito del progetto di creazione di pacchetti dell'app specifico.
 
 ## <a name="roles-and-responsibilities"></a>Ruoli e responsabilità
 
-Per utilizzare la confezione dell'app MCS, **è necessario fornire questi elementi**:
+Per usare il pacchetto dell'app MCS, **devi fornire questi elementi:**
 
-- File del programma di installazione di origine (ad esempio, setup.exe o. msi).
-- Istruzioni di installazione, specificando i dettagli sul modo in cui deve essere consentita l'installazione finale. Ad esempio, se è presente un collegamento sul desktop per l'app? Che cosa dovrebbe essere la visibilità dell'app? Se l'app si connette a un server e, in caso affermativo, quale? Per informazioni dettagliate, vedere il [modello di richiesta di pacchettizzazione dell'applicazione](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/app-packaging-template.docx).
-- È necessario eseguire un test di accettazione personalizzato per verificare che l'app funzioni come necessario nell'ambiente in uso.
+- I file del programma di installazione di origine (ad esempio, setup.exe o msi).
+- Istruzioni per l'installazione, che specificano i dettagli sull'aspetto dell'installazione finale. Ad esempio, dovrebbe esserci un collegamento sul desktop all'app? Che cosa deve essere la visibilità dell'app? L'app deve connettersi a un server e, in tal caso, quale? Per informazioni dettagliate, vedi il modello di richiesta [di creazione di pacchetti dell'applicazione.](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/get-ready/downloads/app-packaging-template.docx)
+- Devi eseguire test di accettazione personalizzati per verificare che l'app funzioni come necessario nell'ambiente.
 
 **MCS si occuperà di queste azioni:**
 
-- Controllare se l'app è vietata o limitata nell'ambiente Microsoft Managed Desktop.
-- Verifica dell'installazione, dell'avvio e della disinstallazione dell'app per garantire la compatibilità con Windows 10. Se MCS individua un problema di compatibilità, disinvierà l'app al programma [app desktop assure](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure) per la correzione.
-- L'applicazione viene configurata per la specifica e quindi viene testata la distribuzione delle app tramite Microsoft Intune.
+- Verifica se l'app è proibita o limitata nell'ambiente Microsoft Managed Desktop.
+- Test di installazione, avvio e disinstallazione dell'app per garantire la compatibilità con Windows 10. Se MCS rileva un problema di compatibilità, l'app verrà consegnata al programma [Desktop App Assure](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure) per la correzione.
+- Creare il pacchetto dell'app per la specifica e quindi testare la distribuzione dell'app tramite Microsoft Intune.
 
-## <a name="app-delivery-schedule"></a>Pianificazione del recapito delle app
+## <a name="app-delivery-schedule"></a>Pianificazione recapito app
 
-Avviare il processo di creazione del pacchetto caricando le informazioni sull'app nel portale Microsoft Managed Desktop. Il team di packaging esamina i nuovi invii ogni Giovedi. Dopo la revisione e la confezione, le app in pacchetti vengono recapitate il venerdì seguente. È possibile creare pacchetti fino a cinque app alla settimana, ma il servizio può essere ridimensionato per soddisfare le proprie esigenze.
+Avvia il processo di creazione del pacchetto caricando le informazioni sull'app nel portale Microsoft Managed Desktop. Il team di creazione di pacchetti rivede i nuovi invii ogni giovedì. Dopo la revisione e la creazione del pacchetto, le app in pacchetto vengono recapitate il venerdì seguente. L'avvio può contenere fino a cinque app a settimana, ma il servizio può essere ridimensionato in base alle tue esigenze.
 
-![calendario che mostra l'afflusso di app su un Giovedi (il 21 in questo esempio), la convalida dei contenuti multimediali il giorno successivo, la confezione del lunedì seguente (il venticinquesimo) e il recapito delle app il venerdì successivo (29)](../../media/MCS-cal.png)
+![calendario che mostra il flusso in entrata dell'app il giovedì (il 21 in questo esempio), convalida multimediale il giorno successivo, creazione di pacchetti il lunedì successivo (il 25) e recapito dell'app il venerdì successivo (il 29)](../../media/MCS-cal.png)
 
-Una volta che l'app è stata recapitata, verrà inviata una notifica. A questo punto, sono necessari 21 giorni per eseguire il test di accettazione e approvare il lavoro nel portale Microsoft Managed Desktop. Se si scopre qualche problema con l'app durante il test di accettazione, rifiutare l'applicazione nel portale Microsoft Managed Desktop e si sarà connessi tramite posta elettronica con un Packager MCS per comprendere e risolvere il problema.
+Una volta recapitata l'app, ti verrà notificata. A questo punto, hai 21 giorni per eseguire il test di accettazione e approvare il lavoro nel portale Microsoft Managed Desktop. Se si verificano problemi con l'app durante il test di accettazione, rifiutare l'app nel portale Microsoft Managed Desktop e si verrà connessi tramite posta elettronica con uno strumento per la creazione di pacchetti MCS per comprendere e risolvere il problema.
 
-## <a name="testing-accounts-and-environment"></a>Verifica degli account e dell'ambiente
+## <a name="testing-accounts-and-environment"></a>Test di account e ambiente
 
-Affinché il team di packaging completi la migrazione a Microsoft Intune, è consigliabile fornire determinate autorizzazioni:
+Per consentire al team di creazione pacchetti di completare la migrazione a Microsoft Intune, è consigliabile fornire alcune autorizzazioni:
  
--   Accesso alle funzionalità di distribuzione delle app di Microsoft Intune per il Packager per aggiungere e assegnare l'app 
--   Gruppi di test, account utente e licenze per i Packager per poter testare le app
+-   Accesso alle funzionalità di distribuzione di app di Microsoft Intune per l'aggiunta e l'assegnazione dell'app da parte dello strumento di creazione pacchetti 
+-   Gruppi di test, account utente e licenze per i packager per poter testare le app
 
-MCS utilizzerà le autorizzazioni necessarie per eseguire le azioni seguenti:
+MCS utilizzerà tali autorizzazioni per eseguire le azioni seguenti:
  
--   Garantire che l'app funzioni su una macchina virtuale configurata per Microsoft Managed Desktop
+-   Verifica del funzionamento dell'app nella macchina virtuale configurata per Microsoft Managed Desktop
 -   Caricamento dell'app in Microsoft Intune per la distribuzione agli utenti
 
-Se non si dispone di queste autorizzazioni, è possibile che MCS venga spostato in avanti, ma non sarà in grado di caricare le applicazioni nell'ambiente in uso.
+Senza queste autorizzazioni, è possibile che MCS si sposti in avanti, ma non sarà in grado di caricare le applicazioni nell'ambiente.
 
 

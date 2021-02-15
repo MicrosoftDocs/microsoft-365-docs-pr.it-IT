@@ -48,7 +48,7 @@ Mentre gli utenti possono creare un gruppo di Microsoft 365 da Outlook o altre a
     
 5. Nella pagina **Modifica impostazioni** digitare un indirizzo di posta elettronica univoco per il gruppo, scegliere un'opzione di privacy e se si desidera aggiungere Microsoft Teams e quindi selezionare **Avanti.**
     
-6. In **Proprietari** scegliere il nome di una o più persone che saranno designate a gestire il gruppo. Chiunque sia proprietario di un gruppo potrà eliminare i messaggi dalla cartella Posta in arrivo del gruppo. Gli altri membri non potranno eliminare i messaggi dalla cartella Posta in arrivo del gruppo. Selezionare **Avanti**.
+6. In Proprietari **scegliere** il nome di una o più persone che saranno designate a gestire il gruppo. Chiunque sia proprietario di un gruppo potrà eliminare i messaggi dalla cartella Posta in arrivo del gruppo. Gli altri membri non potranno eliminare i messaggi dalla cartella Posta in arrivo del gruppo. Selezionare **Avanti**.
     
 7. Dopo aver esaminato le impostazioni e aver apportato eventuali modifiche, selezionare **Crea gruppo.**
 
@@ -118,7 +118,7 @@ Quando un messaggio di posta elettronica viene eliminato dalla cassetta postale 
 
 ## <a name="next-step-manage-your-group"></a>Passaggio successivo: gestire il gruppo
 
-Dopo aver creato un nuovo gruppo e aggiunto membri, è possibile configurare ulteriormente il gruppo, ad esempio modificare il nome o la descrizione del gruppo, modificare proprietari o membri e specificare se i mittenti esterni possono inviare posta elettronica al gruppo e se inviare copie delle conversazioni di gruppo ai membri. Per informazioni, vedere Gestire un gruppo [di Microsoft 365.](manage-groups.md)
+Dopo aver creato un nuovo gruppo e aver aggiunto membri, è possibile configurare ulteriormente il gruppo, ad esempio modificare il nome o la descrizione del gruppo, modificare proprietari o membri e specificare se i mittenti esterni possono inviare posta elettronica al gruppo e se inviare copie delle conversazioni di gruppo ai membri. Per informazioni, vedere Gestire un gruppo [di Microsoft 365.](manage-groups.md)
 
 ## <a name="related-articles"></a>Articoli correlati
 

@@ -36,13 +36,13 @@ ms.locfileid: "49925555"
 
 L'amministratore di Microsoft 365 può consentire agli utenti di usare lo strumento di reimpostazione della password in modalità [self-service,](https://go.microsoft.com/fwlink/p/?LinkId=522677) in modo da non doverle reimpostare. Un gran risparmio di tempo!
   
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
   
 - Si ottiene gratuitamente la reimpostazione  della password self-service per gli utenti cloud con qualsiasi piano a pagamento di Microsoft 365 business, education o no profit. Non funziona con la versione di valutazione di Microsoft 365.
 
 - Si basa su Azure. Questa funzionalità verrà scaricata automaticamente e **gratuitamente** in Azure quando si esegue questa procedura. L'attivazione della reimpostazione della password in modalità self-service non costa nulla se non si usano altre funzionalità di Azure.
 
-- **Se si usa Active Directory** locale, i due punti precedenti non sono applicabili. È invece possibile configurare questa funzionalità, ma **richiede una sottoscrizione a pagamento ad Azure AD Premium.**
+- **Se si usa Active Directory** locale, i due punti precedenti non sono applicabili. Puoi invece configurare questa funzionalità, ma richiede una sottoscrizione **a pagamento ad Azure AD Premium.**
 
 Questo articolo è per le persone che impostano criteri di scadenza delle password in un'azienda, un istituto di istruzione o un'organizzazione no profit. Per completare questa procedura, è necessario accedere con l'account amministratore di Microsoft 365. [Che cos'è un account amministratore?](../admin-overview/admin-overview.md)
 

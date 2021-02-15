@@ -41,7 +41,7 @@ Quando si aggiungono nuovi utenti, sarà necessario acquistare altre licenze di 
 1. Nell'interfaccia di amministrazione di Microsoft 365 scegliere **Fatturazione**, **Prodotti** e quindi selezionare l'abbonamento.
 1. Scegliere **Acquista licenze.**
 1. Immettere il numero di licenze che si desidera acquistare.
-1. Seleziona **Salva**.
+1. Selezionare **Salva**.
 1. Chiudere quindi la finestra.
 1. Le nuove licenze vengono aggiunte all'abbonamento.
 1. Per assegnare le nuove licenze, selezionare **Assegna licenze.**

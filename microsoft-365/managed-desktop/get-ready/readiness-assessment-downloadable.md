@@ -1,5 +1,5 @@
 ---
-title: Strumento di verifica della preparazione scaricabile
+title: Strumento di verifica di valutazione dell’idonietà scaricabile
 description: Controlla le impostazioni del dispositivo e della rete, inclusi gli endpoint necessari
 keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
@@ -16,7 +16,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/21/2021
 ms.locfileid: "49922022"
 ---
-# <a name="downloadable-readiness-assessment-checker"></a>Strumento di verifica della preparazione scaricabile
+# <a name="downloadable-readiness-assessment-checker"></a>Strumento di verifica di valutazione dell’idonietà scaricabile
 
 Per funzionare correttamente con Microsoft Managed Desktop, i dispositivi devono soddisfare determinati requisiti hardware e impostazioni. Inoltre, ogni dispositivo deve essere in grado di raggiungere gli endpoint chiave. Scaricare ed eseguire questo strumento per ottenere un report HTML, visualizzare i risultati e quindi eseguire un'azione. Dovrai scaricare lo strumento e i file di supporto e quindi eseguirlo manualmente in ogni dispositivo che vuoi registrare in Microsoft Managed Desktop.
 
@@ -27,9 +27,9 @@ Per ogni controllo, lo strumento segnala uno dei tre possibili risultati:
 |---------|---------|
 |Pronto     | Non è necessaria alcuna azione prima di completare la registrazione.        |
 |Avviso    | Seguire i passaggi dello strumento per un'esperienza ottimale con la registrazione e per gli utenti. È *possibile* completare la registrazione, ma è necessario risolvere questi problemi prima di distribuire il primo dispositivo.        |
-|Non pronto | *La registrazione avrà esito* negativo se questi problemi non vengono risolti. Seguire i passaggi dello strumento per risolverli.        |
+|Non pronto | *La registrazione avrà esito* negativo se questi problemi non vengono risolti. Segui i passaggi dello strumento per risolverli.        |
 
-## <a name="obtain-the-checker"></a>Ottenere lo verifica
+## <a name="obtain-the-checker"></a>Ottenere lo correttore
 
 Scaricare il file ZIP da https://aka.ms/mmddratoolv0 .
 
@@ -52,7 +52,7 @@ Lo strumento scaricabile controlla questi elementi correlati al dispositivo e al
 
 ### <a name="hardware"></a>Hardware
 
-I dispositivi devono soddisfare requisiti hardware specifici per funzionare con Microsoft Managed Desktop. Attualmente, solo dispositivi [approvati specifici](../service-description/device-list.md) sono autorizzati a registrarsi. 
+I dispositivi devono soddisfare requisiti hardware specifici per funzionare con Microsoft Managed Desktop. Attualmente, la registrazione [è consentita solo](../service-description/device-list.md) per dispositivi approvati specifici. 
 
 Se il dispositivo non supera uno dei controlli, non è compatibile con Microsoft Managed Desktop.
 

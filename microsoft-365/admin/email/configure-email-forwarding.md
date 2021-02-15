@@ -62,7 +62,7 @@ Per eseguire questa procedura, è necessario essere un amministratore di Exchang
 
 3. Nella scheda **Posta** selezionare Gestisci **inoltro posta elettronica.**
 
-4. Nella pagina di inoltro della posta elettronica, selezionare Inoltra tutti i messaggi di posta elettronica inviati a questa cassetta **postale,** immettere l'indirizzo di inoltro e scegliere se si desidera conservare una copia dei messaggi di posta elettronica inoltrati. Se questa opzione non è visualizzata, assicurati che all'account utente sia assegnata una licenza. Selezionare **Salva modifiche**.
+4. Nella pagina di inoltro della posta elettronica, selezionare Inoltra tutti i messaggi di posta elettronica inviati a questa cassetta **postale,** immettere l'indirizzo di inoltro e scegliere se si desidera conservare una copia dei messaggi di posta elettronica inoltrati. Se questa opzione non è visualizzata, verificare che all'account utente sia assegnata una licenza. Selezionare **Salva modifiche**.
 
     **Per inoltrare a più indirizzi di posta** elettronica, è possibile chiedere all'utente di configurare una regola in Outlook per l'inoltro agli indirizzi. Per ulteriori informazioni, vedere Utilizzare [le regole per inoltrare automaticamente i messaggi.](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746)
 
@@ -80,7 +80,7 @@ Per eseguire questa procedura, è necessario essere un amministratore di Exchang
 
 3. Espandere **Impostazioni posta** e quindi nella sezione Inoltro **posta** elettronica selezionare **Modifica.**
 
-4. Nella pagina di inoltro della posta elettronica impostare l'interruttore su **Attivato,** immettere l'indirizzo di inoltro e scegliere se si desidera conservare una copia dei messaggi di posta elettronica inoltrati. Se questa opzione non è visualizzata, assicurati che all'account utente sia assegnata una licenza. Seleziona **Salva**.
+4. Nella pagina di inoltro della posta elettronica impostare l'interruttore su **Attivato,** immettere l'indirizzo di inoltro e scegliere se conservare una copia dei messaggi di posta elettronica inoltrati. Se questa opzione non è visualizzata, verificare che all'account utente sia assegnata una licenza. Selezionare **Salva**.
 
    **Per inoltrare a più indirizzi di posta** elettronica, è possibile chiedere all'utente di configurare una regola in Outlook per l'inoltro agli indirizzi. Per ulteriori informazioni, vedere Utilizzare [le regole per inoltrare automaticamente i messaggi.](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746)
 
@@ -98,7 +98,7 @@ Per eseguire questa procedura, è necessario essere un amministratore di Exchang
 
 3. Espandere **Impostazioni posta** e quindi nella sezione Inoltro **posta** elettronica selezionare **Modifica.**
 
-4. Nella pagina di inoltro della posta elettronica impostare l'interruttore su **Attivato,** immettere l'indirizzo di inoltro e scegliere se si desidera conservare una copia dei messaggi di posta elettronica inoltrati. Se questa opzione non è visualizzata, assicurati che all'account utente sia assegnata una licenza. Seleziona **Salva**.
+4. Nella pagina di inoltro della posta elettronica impostare l'interruttore su **Attivato,** immettere l'indirizzo di inoltro e scegliere se si desidera conservare una copia dei messaggi di posta elettronica inoltrati. Se questa opzione non è visualizzata, verificare che all'account utente sia assegnata una licenza. Selezionare **Salva**.
 
    **Per inoltrare a più indirizzi di posta** elettronica, è possibile chiedere all'utente di configurare una regola in Outlook per l'inoltro agli indirizzi. Per ulteriori informazioni, vedere Utilizzare [le regole per inoltrare automaticamente i messaggi.](https://support.microsoft.com/office/45aa9664-4911-4f96-9663-ece42816d746)
 

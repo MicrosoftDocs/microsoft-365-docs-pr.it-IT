@@ -1,5 +1,5 @@
 ---
-title: Guida rapida alla configurazione dei dipendenti
+title: Guida alla configurazione rapida dei dipendenti
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -63,7 +63,7 @@ Sei nuovo di Microsoft 365 per le aziende? :::image type="icon" source="../media
 
 ## <a name="4-save-or-copy-files-to-onedrive"></a>4. Salvare o copiare file in OneDrive
 
-- Salvare i documenti in **OneDrive** dal menu **Salva con nome** nelle app di Office.
+- Salvare documenti in **OneDrive** dal menu **Salva con nome** nelle app di Office.
     :::image type="content" source="../media/save-onedrive.png" alt-text="Capire chi è il modo in cui salvare con nome in OneDrive.":::
 
 - Oppure copiare i file dal desktop o da Documenti in **OneDrive**.

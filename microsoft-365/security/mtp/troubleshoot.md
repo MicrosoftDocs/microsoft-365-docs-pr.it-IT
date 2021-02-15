@@ -1,7 +1,7 @@
 ---
 title: Risolvere i problemi del servizio Microsoft 365 Defender
 description: Trovare soluzioni e soluzioni per problemi noti di Microsoft 365 Defender
-keywords: risoluzione dei problemi di Microsoft Threat Protection, risoluzione dei problemi, Azure ATP, problemi, componente aggiuntivo, pagina delle impostazioni
+keywords: risoluzione dei problemi di Microsoft Threat Protection, risoluzione dei problemi, Azure ATP, problemi, componente aggiuntivo, pagina impostazioni
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -51,4 +51,4 @@ Per altre informazioni, vedere [Integrazione di Microsoft Defender per l'identit
 
 ## <a name="where-is-the-settings-page-for-turning-the-service-on"></a>Dove si trova la pagina delle impostazioni per l'attivazione del servizio?
 
-Per attivare Microsoft 365 Defender, accedere a **Impostazioni** dal riquadro di spostamento nel Centro sicurezza Microsoft 365. Questo elemento di spostamento è visibile solo se si dispone delle autorizzazioni [e delle licenze](mtp-enable.md#check-license-eligibility-and-required-permissions)prerequisiti.
+Per attivare Microsoft 365 Defender, accedere a **Impostazioni** dal riquadro di spostamento nel Centro sicurezza Microsoft 365. Questo elemento di spostamento è visibile solo se si dispone delle autorizzazioni [e delle licenze prerequisiti.](mtp-enable.md#check-license-eligibility-and-required-permissions)

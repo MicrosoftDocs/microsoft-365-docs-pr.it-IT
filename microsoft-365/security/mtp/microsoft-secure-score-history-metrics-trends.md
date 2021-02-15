@@ -52,15 +52,15 @@ Per visualizzare tutta la cronologia per quella specifica azione di migliorament
 
 Nella scheda **Metriche & tendenze** sono disponibili diversi grafici e grafici per offrire maggiore visibilità sulle tendenze e impostare gli obiettivi. È possibile impostare l'intervallo di date per l'intera pagina di visualizzazioni. Le visualizzazioni includono:
 
-* **Area secure score:** personalizzata in base alle definizioni e gli obiettivi dell'organizzazione di intervalli di punteggi validi, validi e non validi.
-* **Tendenza di regressione:** sequenza temporale di punti che sono stati regressi a causa delle modifiche apportate alla configurazione, all'utente o al dispositivo.  
-* **Tendenza di confronto:** confronto tra secure score dell'organizzazione e altri nel tempo. Questa visualizzazione può includere linee che rappresentano la media del punteggio delle organizzazioni con un numero di postazioni simile e una visualizzazione di confronto personalizzata che è possibile impostare.
+* **Area secure score:** personalizzata in base a obiettivi dell'organizzazione e definizioni di intervalli di punteggi validi, validi e non validi.
+* **Tendenza di regressione:** sequenza temporale dei punti che hanno regredito a causa delle modifiche apportate alla configurazione, all'utente o al dispositivo.  
+* **Tendenza di confronto:** confronto tra Secure Score dell'organizzazione e altri utenti nel tempo. Questa visualizzazione può includere linee che rappresentano la media del punteggio delle organizzazioni con un numero di postazioni simile e una visualizzazione di confronto personalizzata che è possibile impostare.
 * **Tendenza di accettazione dei rischi** - Sequenza temporale delle azioni di miglioramento contrassegnate come "rischio accettato".
-* **Modifiche al** punteggio : numero di punti ottenuti, punti regressi e modifiche al punteggio nell'intervallo di date specificato.
+* **Modifiche al** punteggio - Numero di punti ottenuti, punti regressi e modifiche al punteggio nell'intervallo di date specificato.
 
 ### <a name="compare-your-score-to-organizations-like-yours"></a>Confrontare il punteggio con organizzazioni come la tua
 
-Esistono due posizioni in cui vedere il confronto tra il punteggio e le organizzazioni simili a te. In entrambi i grafici è possibile selezionare Gestisci confronti **per** visualizzare e modificare le informazioni dell'organizzazione. È inoltre possibile creare un confronto personalizzato in base al settore, alle dimensioni dell'organizzazione, alle licenze e alle aree geografiche.
+Esistono due posizioni in cui vedere il confronto tra il punteggio e le organizzazioni simili a te. In entrambi i grafici è possibile selezionare **Gestisci confronti per** visualizzare e modificare le informazioni dell'organizzazione. È inoltre possibile creare un confronto personalizzato in base al settore, alle dimensioni dell'organizzazione, alle licenze e alle aree geografiche.
 
 #### <a name="comparison-bar-chart"></a>Grafico a barre di confronto
 
@@ -87,13 +87,13 @@ Se è stata effettuata una selezione personalizzata, ma i risultati hanno meno d
 
 #### <a name="comparison-trend"></a>Tendenza di confronto
 
-Nella scheda **Metriche & tendenze,** visualizzare il confronto tra Secure Score dell'organizzazione e quello degli altri utenti nel tempo.
+Nella scheda **Metriche & tendenze,** visualizzare il confronto tra Secure Score dell'organizzazione e quello di altri utenti nel tempo.
 
 ![Grafico a linee dei punteggi di un'organizzazione simile nel tempo](../../media/secure-score/secure-score-comparison-trend.png)
 
 ## <a name="we-want-to-hear-from-you"></a>L'opinione degli utenti è importante
 
-In caso di problemi, contattaci pubblicando il post nella community [sicurezza, privacy & conformità.](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) Stiamo monitorando la community e forniremo assistenza.
+In caso di problemi, contattaci pubblicando il post nella community [sicurezza, privacy & conformità.](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) We're monitoring the community and will provide help.
 
 ## <a name="related-resources"></a>Risorse correlate
 

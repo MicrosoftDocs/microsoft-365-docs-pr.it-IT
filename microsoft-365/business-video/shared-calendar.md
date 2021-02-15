@@ -37,7 +37,7 @@ ms.locfileid: "49927851"
 
 Un calendario condiviso consente di visualizzare rapidamente quando le persone sono disponibili per riunioni o altri eventi.
 
-1. In Outlook selezionare l'icona del calendario.
+1. In Outlook, selezionare l'icona del calendario.
 1. Nella scheda **Home** scegliere **Aggiungi calendario,** quindi **Da Rubrica.**
 1. Aggiungere utenti al calendario condiviso immettendo il proprio nome o selezionandolo nell'elenco e quindi scegliere **OK.**
 1. È ora possibile visualizzare il calendario e i calendari per le persone aggiunte.

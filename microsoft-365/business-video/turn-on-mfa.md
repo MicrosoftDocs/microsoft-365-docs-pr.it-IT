@@ -40,10 +40,10 @@ L'autenticazione a più fattori significa che l'utente e i dipendenti devono for
 
 1. Passare all'interfaccia di amministrazione all'indirizzo [https://admin.microsoft.com](https://admin.microsoft.com).
 1. Selezionare **Mostra tutto,** quindi scegliere l'interfaccia **di amministrazione di Azure Active Directory.**
-1. Selezionare **Azure Active Directory,** **Proprietà**, Gestisci impostazioni **predefinite sicurezza.**
+1. Selezionare **Azure Active Directory**, **Proprietà**, Gestisci impostazioni **predefinite sicurezza.**
 1. In **Abilita impostazioni predefinite protezione** selezionare **Sì** e quindi **Salva.**
 
 > [!NOTE]
-> Per le nuove sottoscrizioni, le impostazioni predefinite protette vengono attivate automaticamente.
+> Per le nuove sottoscrizioni, le impostazioni predefinite sicure vengono attivate automaticamente.
 
-Al successivo accesso dei dipendenti selezionati, verrà chiesto loro di configurare l'app Microsoft Authenticator nei loro telefoni per una seconda forma di autenticazione.
+Al successivo accesso dei dipendenti selezionati, verrà chiesto loro di configurare l'app Microsoft Authenticator sui loro telefoni per una seconda forma di autenticazione.

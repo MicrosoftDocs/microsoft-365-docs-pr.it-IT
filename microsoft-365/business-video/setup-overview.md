@@ -33,7 +33,7 @@ ms.locfileid: "49927911"
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4jZwg?autoplay=false]
 
-Congratulazioni per la decisione di spostare l'azienda nel cloud con Microsoft 365. Sia che tu abbia una persona nell'azienda o 20, eseguire una piccola pianificazione ti aiuterà a ottenere il massimo da Microsoft 365 Business Premium.
+Congratulazioni per la decisione di spostare l'azienda nel cloud con Microsoft 365! Sia che tu abbia una persona nell'azienda o 20, fare un po' di pianificazione ti aiuterà a ottenere il massimo da Microsoft 365 Business Premium.
 
 Per iniziare, consenti&#39;controllare cosa&#39;stai ottenendo:
 
@@ -66,7 +66,7 @@ Quando si sceglie un abbonamento cloud per l'azienda, è possibile scegliere qua
 - Un nome di dominio fornisce all'organizzazione un'identità online professionale e facile da ricordare, ad esempio _rob@contoso.com._ Se ne hai già una, puoi portarla con te in Microsoft 365 o Microsoft 365: microsoft&#39;ti aiuterà con la transizione.
 - Non&#39;un dominio? È&#39;facile ottenerne uno contemporaneamente all'iscrizione a Microsoft 365 o Microsoft 365.
 
-**Nota:**  Oltre alla posta elettronica, puoi usare il dominio con un sito Web in diversi host, come WordPress, GoDaddy o Wix.
+**Nota:**  Oltre alla posta elettronica, è possibile usare il dominio con un sito Web in diversi host, ad esempio WordPress, GoDaddy o Wix.
 
 ## <a name="3-add-users-with-licenses"></a>3. Aggiungere utenti con licenze
 
@@ -83,23 +83,23 @@ Quando si sceglie un abbonamento cloud per l'azienda, è possibile scegliere qua
 
 - Con Microsoft 365 Business Premium, si ottiene protezione sui dispositivi, protezione dalle minacce online e protezione da perdita accidentale di dati. Puoi anche ottenere Windows Defender, BitLocker e gli aggiornamenti automatici per le app di Windows 10 Pro e Office.
 - È possibile configurare Multi-Factor Authentication (MFA), crittografia della posta elettronica, protezione antimalware e protezione ransomware per impedire l'accesso non autorizzato a dispositivi e dati.
-- È possibile proteggere i dati di lavoro importanti archiviati localmente nel PC, in SharePoint o OneDrive for Business o nel dispositivo mobile. Gestione dei dispositivi mobili (MDM) integrata per Microsoft 365 consente di proteggere e gestire gli utenti&#39; dispositivi mobili come iPhone, iPad, Android e telefoni Windows. Con MDM puoi creare e gestire i criteri di sicurezza dei dispositivi, cancellare in remoto un dispositivo e visualizzare report dettagliati sul dispositivo.
+- È possibile proteggere i dati di lavoro importanti archiviati localmente nel PC, in SharePoint o OneDrive for Business o nel dispositivo mobile. Gestione di dispositivi mobili (MDM) integrata per Microsoft 365 consente di proteggere e gestire gli utenti&#39; dispositivi mobili come iPhone, iPad, Android e telefoni Windows. Con MDM puoi creare e gestire i criteri di sicurezza dei dispositivi, cancellare in remoto un dispositivo e visualizzare report dettagliati sul dispositivo.
 
 ## <a name="6-upgrade-your-pcs-to-windows-10-pro"></a>6. Aggiornare i PC a Windows 10 Pro
 
-- Iniziare&#39;aggiornare i PC a Windows 10 Professional (gratuitamente con Microsoft 365 Business Premium se si esegue Windows 7 Pro, Windows 8 Pro o Windows 8.1 Pro) in modo da poter usufruire di tutte le funzionalità di Microsoft 365 Business Premium, come la sicurezza avanzata e la gestione dei dispositivi.
+- Iniziare&#39;aggiornare i PC a Windows 10 Professional (gratuito con Microsoft 365 Business Premium se si esegue Windows 7 Pro, Windows 8 Pro o Windows 8.1 Pro) in modo da poter usufruire di tutte le funzionalità di Microsoft 365 Business Premium, come la sicurezza avanzata e la gestione dei dispositivi.
 - È anche possibile eseguire l'aggiornamento a Windows 10 Pro da una versione consumer o se si&#39;eseguire Microsoft 365 Business Standard, ma è necessario un acquisto una sola volta.
 
 ## <a name="7-connect-your-pcs-to-microsoft-365"></a>7. Connettere i PC a Microsoft 365
 
 - Per ottenere il massimo da Microsoft 365, è&#39;è necessario connettere i PC Windows 10 a Microsoft 365 Business Premium e Azure Active Directory. Ciò consente al PC di essere gestito da Microsoft 365 Business Premium per ottenere aggiornamenti software e protezione contro la perdita di dati e altre minacce informatiche.
-- Quando connetti il PC, Windows 10 registra il dispositivo con la rete&#39;dell'organizzazione e quindi aggiunge il dispositivo alla rete in modo da poter usare il nome utente e la password dell'organizzazione&#39;per accedere alle risorse.
+- Quando connetti il PC, Windows 10 registra il dispositivo nella rete&#39;dell'organizzazione e quindi aggiunge il dispositivo alla rete in modo da poter usare il nome utente e la password dell'organizzazione&#39;per accedere alle risorse.
 - In base ai requisiti&#39;'organizzazione, potrebbe essere richiesto di configurare la verifica in due passaggi, la crittografia e la gestione dei dispositivi mobili, ad esempio Microsoft Intune.
 
 ## <a name="8-set-up-and-use-office-apps"></a>8. Configurare e usare le app di Office
 
 - Iniziare a usare tutte le app di Office disponibili, ad esempio Word, Excel e PowerPoint. Se non&#39;già installato, è possibile installarlo facilmente dal Microsoft Office [web.](https://www.office.com/)
-- Una delle prime operazioni da eseguire&#39;è aprire Outlook per la prima volta. È&#39;immettere l'indirizzo di posta elettronica e la password di Microsoft 365 e avere accesso immediato alla posta elettronica, al calendario e ai contatti.
+- Una delle prime operazioni da&#39;è aprire Outlook per la prima volta. È&#39;immettere l'indirizzo di posta elettronica e la password di Microsoft 365 e avere accesso immediato alla posta elettronica, al calendario e ai contatti.
 - Inoltre, è possibile aprire Microsoft Teams, Word, Excel, PowerPoint e il resto delle app di Office. Potrebbe essere richiesto l'indirizzo di posta elettronica e la password la prima volta che apri ogni app.
 
 ## <a name="9-migrate-old-email-and-files"></a>9. Eseguire la migrazione di vecchi messaggi di posta elettronica e file
@@ -111,4 +111,4 @@ Quando si sceglie un abbonamento cloud per l'azienda, è possibile scegliere qua
 ## <a name="10-set-up-your-phones"></a>10. Configurare i telefoni
 
 - Se si prevede di usare i telefoni per rimanere produttivi in viaggio, è possibile&#39;aggiungere app di Office come Outlook, Teams ed Excel ai dispositivi mobili, come Android e iOS.
-- Con Microsoft 365 Business Premium, la sicurezza viene applicata in ogni dispositivo, quindi quando si installano e si aprono le app,&#39;verrà richiesto di creare un pin, creare una seconda forma di autenticazione (MFA) e altre impostazioni per proteggere i dati business nel telefono.
+- Con Microsoft 365 Business Premium, la sicurezza viene applicata in ogni dispositivo, quindi quando si installano e si aprono le app,&#39;verrà richiesto di creare un pin, creare una seconda forma di autenticazione (MFA) e altre impostazioni per proteggere i dati aziendali sul telefono.

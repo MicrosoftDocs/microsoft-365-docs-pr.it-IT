@@ -57,11 +57,11 @@ Dopo aver creato [una cassetta](create-a-shared-mailbox.md)postale condivisa, è
 
 3. Immettere un nuovo nome o aggiungere un altro alias. Se si desidera modificare l'indirizzo di posta elettronica principale, la cassetta postale deve avere più alias di posta elettronica.
 
-4. Seleziona **Salva**.
+4. Selezionare **Salva**.
 
 ## <a name="forward-emails-that-are-sent-to-a-shared-mailbox"></a>Inoltrare messaggi di posta elettronica inviati a una cassetta postale condivisa
 
-Non è necessario assegnare una licenza alla cassetta postale condivisa per inoltrare la posta elettronica inviata. È possibile inoltrare i messaggi a qualsiasi indirizzo di posta elettronica o lista di distribuzione valido.
+Non è necessario assegnare una licenza alla cassetta postale condivisa per inoltrare la posta elettronica inviata alla cassetta postale. È possibile inoltrare i messaggi a qualsiasi indirizzo di posta elettronica o lista di distribuzione valido.
 
 ::: moniker range="o365-worldwide"
 
@@ -85,7 +85,7 @@ Non è necessario assegnare una licenza alla cassetta postale condivisa per inol
     
 3. Impostare l'interruttore **su Attivato** e immettere un indirizzo di posta elettronica a cui inoltrare i messaggi. Può essere qualsiasi indirizzo di posta elettronica valido. Per inoltrare a più [](https://docs.microsoft.com/office365/admin/setup/create-distribution-lists) indirizzi, è necessario creare un gruppo di distribuzione per gli indirizzi e quindi immettere il nome del gruppo in questa casella.
     
-4. Seleziona **Salva**.
+4. Selezionare **Salva**.
 
 ## <a name="send-automatic-replies-from-a-shared-mailbox"></a>Inviare risposte automatiche da una cassetta postale condivisa
 
@@ -115,7 +115,7 @@ Non è necessario assegnare una licenza alla cassetta postale condivisa per inol
 
 5. Se si desidera *inviare* una risposta anche a persone esterne all'organizzazione, selezionare la casella di controllo, gli utenti a cui si desidera inviare la risposta e digitare il testo. Non è possibile inviare risposte solo a persone esterne all'organizzazione, escludendo quelle interne.
 
-6. Seleziona **Salva**.
+6. Selezionare **Salva**.
 
 ## <a name="allow-everyone-to-see-the-sent-email-the-replies"></a>Consentire a tutti di visualizzare la posta inviata (le risposte)
 
@@ -148,7 +148,7 @@ Se si desidera consentire a tutti di visualizzare la posta elettronica inviata, 
 
 3. Impostare l'interruttore **su Attivato** per tutte le app che si desidera che i membri possano usare per accedere alla cassetta postale condivisa. Imposta l'interruttore **su Disattivato** per tutte le app che non vuoi che usino. 
 
-4. Seleziona **Salva**.
+4. Selezionare **Salva**.
 
 
 ## <a name="put-a-shared-mailbox-on-litigation-hold"></a>Blocco per controversia legale per una cassetta postale condivisa
@@ -173,13 +173,13 @@ Per ulteriori informazioni sulla conservazione per controversia legale, vedere [
 
 ::: moniker-end
 
-2. Selezionare la cassetta postale condivisa che si desidera modificare, quindi selezionare Modifica conservazione **per controversia** \> **legale.**
+2. Selezionare la cassetta postale condivisa che si desidera modificare, quindi selezionare Modifica **conservazione per controversia** \> **legale.**
 
 3. Impostare l'interruttore su **Attivato.** 
 
-4. Facoltativamente, immettere una durata, una nota sul blocco e un URL con altre informazioni.  
+4. Facoltativamente, immettere una durata, una nota sull'esenzione e un URL con ulteriori informazioni.  
 
-5. Seleziona **Salva**.
+5. Selezionare **Salva**.
 
 
 ## <a name="add-or-remove-members"></a>Aggiungere o rimuovere membri
@@ -242,7 +242,7 @@ Per ulteriori informazioni sulla conservazione per controversia legale, vedere [
 
 ## <a name="show-or-hide-a-shared-mailbox-in-the-global-address-list"></a>Mostrare o nascondere una cassetta postale condivisa nell'elenco indirizzi globale
 
-Se si sceglie di non visualizzare la cassetta postale condivisa nell'elenco indirizzi globale, la cassetta postale non verrà visualizzata nell'elenco indirizzi dell'organizzazione, ma riceverà comunque messaggi di posta elettronica inviati. 
+Se si sceglie di non visualizzare la cassetta postale condivisa nell'elenco indirizzi globale, la cassetta postale non verrà visualizzata nell'elenco indirizzi dell'organizzazione, ma riceverà comunque messaggi di posta elettronica. 
 
 ::: moniker range="o365-worldwide"
 
@@ -266,7 +266,7 @@ Se si sceglie di non visualizzare la cassetta postale condivisa nell'elenco indi
 
 3. Impostare l'interruttore su **Attivato** o **Disattivato.** 
 
-4. Seleziona **Salva**.
+4. Selezionare **Salva**.
 
 > [!NOTE]
 > Nascondendo una cassetta postale condivisa dall'elenco indirizzi, non sarà possibile per i nuovi membri della cassetta postale condivisa aggiungere la cassetta postale nascosta al proprio profilo di Outlook finché la cassetta postale condivisa non viene nuovamente visualizzata nell'elenco indirizzi. 

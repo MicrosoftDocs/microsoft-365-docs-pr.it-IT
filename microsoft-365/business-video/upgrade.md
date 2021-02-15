@@ -38,9 +38,9 @@ ms.locfileid: "49927755"
 Microsoft 365 Business richiede Windows 10 Pro per proteggere i dati. Se hai un computer che esegue Windows 10 Home, segui questi passaggi per eseguire l'aggiornamento a Windows 10 Pro.
 
 1. Dal desktop scegli il menu  **Start,**  cerca  **Microsoft Store** e selezionalo.
-2. In Microsoft Store fai clic sulla barra di ricerca, digita **Windows 10 Pro** e quindi scegli Aggiorna a **Windows 10 Pro.**
+2. In Microsoft Store fai clic sulla barra di ricerca, digita **Windows 10 Pro** e quindi scegli **Aggiorna a Windows 10 Pro.**
 3. In **Aggiornamento a Windows 10 Pro** scegliere Altre **informazioni** e quindi scegliere **Acquista.**
 4. Nella casella  **Sicurezza di Windows**  immetti il PIN per verificare la tua identità.
-5. Esaminare la pagina di pagamento, leggere le condizioni di vendita, apportare modifiche alla modalità di pagamento, se si desidera, quindi scegliere **Acquista.**
+5. Esaminare la pagina di pagamento, leggere le condizioni per la vendita, apportare modifiche alla modalità di pagamento, se si desidera, quindi scegliere **Acquista.**
 6. In **Aggiornamento a Windows 10 Pro** scegliere **Installa.**
 7. Salvare i file, se necessario, quindi scegliere  **Sì,&#39;iniziare**  a installare Windows.

@@ -37,7 +37,7 @@ ms.locfileid: "49927815"
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-Avviare chat di gruppo o 1:1 per collaborare con un gruppo più piccolo o per parlare in privato e aggiungere chat per un accesso rapido.
+Iniziare 1:1 o chat di gruppo per collaborare con un gruppo più piccolo o per parlare in privato e aggiungere chat per un accesso rapido.
 
 1. Nelle  **chat,** è possibile avere chat di gruppo o 1:1 con persone.
 2. Selezionare **Nuova chat.** :::image type="icon" source="../media/new-chat-icon.png" border="false":::  

@@ -39,9 +39,9 @@ ms.locfileid: "49926091"
 
 Con Microsoft Teams, è possibile creare nuovi team quando si avviano nuovi progetti o si aggiungono clienti.
 
-1. Nella scheda **Teams** selezionare Partecipa o crea **un team,** Crea **team,** **Crea un team da zero** e quindi **Privato.**
+1. Nella scheda **Teams** selezionare Partecipa o crea un **team,** Crea **team,** **Crea un team da zero** e quindi **Privato.**
 2. Immettere un nome per il team, una descrizione e quindi selezionare **Crea.**
-3. Nella pagina **Aggiungi membri** aggiungere membri interni cercandoli e selezionandoli, quindi aggiungere membri guest immettendo il proprio indirizzo di posta elettronica e quindi selezionare **Aggiungi.**
+3. Nella pagina **Aggiungi membri** aggiungere membri interni cercandoli e selezionandoli, quindi aggiungere membri guest immettendo l'indirizzo di posta elettronica e quindi selezionando **Aggiungi.**
 
     Se non  **sono presenti corrispondenze,** è necessario abilitare la condivisione guest. Passare all'interfaccia di amministrazione di Microsoft 365, scegliere l'interfaccia di amministrazione di Teams, scegliere Impostazioni a livello di **organizzazione,** Accesso **guest** e attivare Consenti accesso **guest in Teams.** Questa modifica può richiedere fino a 24 ore.
 

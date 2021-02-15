@@ -1,5 +1,5 @@
 ---
-title: Registrazione del dispositivo mobile tramite la sicurezza e la mobilità di base
+title: Registrare il dispositivo mobile con Dispositivi mobili e sicurezza di base
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -17,7 +17,7 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Prima di poter utilizzare i servizi Microsoft 365 con il dispositivo, potrebbe essere necessario prima iscriverlo in Basic Mobility and Security per Microsoft 365.
+description: Prima di poter usare i servizi di Microsoft 365 con il dispositivo, potrebbe essere necessario registrarlo in Dispositivi mobili e sicurezza di base per Microsoft 365.
 ms.openlocfilehash: dc5a43b12fce50c9146200a4559fe9b7e6824b18
 ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
 ms.translationtype: MT
@@ -25,58 +25,58 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/15/2021
 ms.locfileid: "49877057"
 ---
-# <a name="enroll-your-mobile-device-using-basic-mobility-and-security"></a>Registrazione del dispositivo mobile tramite la sicurezza e la mobilità di base
+# <a name="enroll-your-mobile-device-using-basic-mobility-and-security"></a>Registrare il dispositivo mobile con Dispositivi mobili e sicurezza di base
 
-L'utilizzo del telefono, del tablet e di altri dispositivi mobili per il lavoro è un ottimo modo per rimanere informati e lavorare su progetti aziendali mentre si è lontani dall'ufficio. Prima di poter utilizzare i servizi Microsoft 365 con il dispositivo, potrebbe essere necessario prima iscriverlo in Basic Mobility and Security per Microsoft 365 utilizzando il portale aziendale di Microsoft Intune.
+L'uso di telefoni, tablet e altri dispositivi mobili per il lavoro è un ottimo modo per rimanere informati e lavorare ai progetti aziendali mentre si è fuori dall'ufficio. Prima di poter usare i servizi di Microsoft 365 con il dispositivo, potrebbe essere necessario registrarlo in Basic Mobility and Security per Microsoft 365 tramite il portale aziendale di Microsoft Intune.
 
-Le organizzazioni scelgono la mobilità e la sicurezza di base, in modo che i dipendenti possano utilizzare i propri dispositivi mobili per accedere in sicurezza ai messaggi di posta elettronica, ai calendari e ai documenti di lavoro, mentre l'azienda protegge i dati importanti e soddisfa i requisitiPer ulteriori informazioni, vedere [Overview of Basic Mobility and Security for Microsoft 365](overview.md). Per altre informazioni, vedere [quali informazioni possono essere visualizzate dall'organizzazione quando si esegue la registrazione del dispositivo?](https://docs.microsoft.com/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune).
+Le organizzazioni scelgono La mobilità e la sicurezza di base in modo che i dipendenti possano usare i dispositivi mobili per accedere in modo sicuro alla posta elettronica, ai calendari e ai documenti di lavoro, mentre l'azienda protegge i dati importanti e soddisfa i requisiti di conformità.Per altre informazioni, vedere Panoramica della mobilità e della sicurezza di [base per Microsoft 365.](overview.md) Per altre info, vedi Quali informazioni possono essere visualizzate [dall'organizzazione quando si registra il dispositivo?](https://docs.microsoft.com/intune-user-help/what-info-can-your-company-see-when-you-enroll-your-device-in-intune).
 
 >[!IMPORTANT] 
->Quando si registra il dispositivo in mobilità e sicurezza di base per Microsoft 365, potrebbe essere necessario impostare una password, insieme all'opzione che consente all'organizzazione del lavoro di cancellare il dispositivo. Un wipe del dispositivo può essere eseguito dall'interfaccia di amministrazione di Microsoft 365, ad esempio, per rimuovere tutti i dati dal dispositivo se la password viene immessa in modo errato troppe volte o se i termini di utilizzo sono interrotti.
+>Quando si registra il dispositivo in Basic Mobility and Security per Microsoft 365, potrebbe essere necessario configurare una password, oltre a consentire all'organizzazione aziendale di cancellare il dispositivo. Una cancellazione del dispositivo può essere eseguita dall'interfaccia di amministrazione di Microsoft 365, ad esempio, per rimuovere tutti i dati dal dispositivo se la password viene immessa in modo errato troppe volte o se i termini di utilizzo sono interrotti.
 
 ## <a name="supported-devices"></a>Dispositivi supportati
 
-La sicurezza e la mobilità di base per Microsoft 365 ospitate dal servizio di Intune funzionano con la maggior parte dei dispositivi mobili, ma non di tutti. Di seguito sono supportate le funzionalità di base per dispositivi mobili e sicurezza:
+Basic Mobility and Security per Microsoft 365 ospitato dal servizio Intune funziona con la maggior parte dei dispositivi mobili, ma non con tutti. Le funzionalità di mobilità e sicurezza di base sono supportate di seguito:
 
-- iOS 10,0 o versioni successive
+- iOS 10.0 o versione successiva
 
-- Android 4,4 o versioni successive
+- Android 4.4 o versione successiva
 
-- Windows 8,1 e Windows 10 (telefono e PC)
+- Windows 8.1 e Windows 10 (telefono e PC)
 
-Se il dispositivo non è elencato sopra ed è necessario utilizzarlo con la sicurezza e la mobilità di base, contattare l'amministratore del lavoro o dell'Istituto di istruzione.
+Se il dispositivo non è elencato in precedenza ed è necessario usarlo con Basic Mobility and Security, contattare l'amministratore aziendale o dell'istituto di istruzione.
 
 >[!TIP]
->In caso di problemi di registrazione del dispositivo, vedere risolvere i [problemi relativi a mobilità e sicurezza di base](/basic-mobility-security/troubleshoot.md).
+>Se si verificano problemi durante la registrazione del dispositivo, vedere [Risolvere i problemi di sicurezza e mobilità di base.](/basic-mobility-security/troubleshoot.md)
 
-## <a name="set-up-your-mobile-device-with-intune-and-basic-mobility-and-security"></a>Configurare il dispositivo mobile con Intune e la mobilità e la sicurezza di base
+## <a name="set-up-your-mobile-device-with-intune-and-basic-mobility-and-security"></a>Configurare il dispositivo mobile con Intune e Basic Mobility and Security
 
-Il portale aziendale di Intune consente a un dispositivo di essere gestito da Microsoft 365 e dalla mobilità e sicurezza di base.
+Il portale aziendale intune consente di gestire un dispositivo da Microsoft 365 e Basic Mobility and Security.
 
 ### <a name="iphone-or-ipad"></a>iPhone o iPad
 
 >[!TIP]
->L'utente non sarà in grado di inviare e ricevere messaggi di posta elettronica fino al completamento di questo passaggio.
+>Non sarà possibile inviare e ricevere messaggi di posta elettronica finché non si completa questo passaggio.
 
 Accedere all'App Store di Apple e scaricare e installare il portale aziendale di Intune.
 
-Per connettere e configurare il telefono o tablet iOS con il portale aziendale in Office 365, vedere [configurare l'accesso ai dispositivi iOS alle risorse aziendali](https://go.microsoft.com/fwlink/?linkid=875316).
+Per connettere e configurare il telefono o il tablet iOS con il portale aziendale a Office 365, vedere Configurare l'accesso dei dispositivi [iOS alle risorse aziendali.](https://go.microsoft.com/fwlink/?linkid=875316)
 
 ### <a name="android-phone-or-tablet"></a>Telefono o tablet Android
 
 >[!TIP]
->L'utente non sarà in grado di inviare e ricevere messaggi di posta elettronica fino al completamento di questo passaggio.
+>Non sarà possibile inviare e ricevere messaggi di posta elettronica finché non si completa questo passaggio.
 
-Accedere a Google Play Store e scaricare e installare il portale aziendale di Intune.
+Passare a Google Play Store e scaricare e installare il portale aziendale di Intune.
 
-Per connettere e configurare il telefono o tablet Android con il portale aziendale su Microsoft 365, vedere [registrazione del dispositivo con il portale aziendale](https://go.microsoft.com/fwlink/?linkid=875317).
+Per connettere e configurare il telefono o il tablet Android con il portale aziendale a Microsoft 365, vedere Registrare il [dispositivo con Portale aziendale.](https://go.microsoft.com/fwlink/?linkid=875317)
 
-### <a name="windows-81-and-windows-10"></a>Windows 8,1 e Windows 10
+### <a name="windows-81-and-windows-10"></a>Windows 8.1 e Windows 10
 
-Accedere a Microsoft Store e scaricare e installare il portale aziendale di Intune
+Passare a Microsoft Store e scaricare e installare il portale aziendale di Intune
 
-Per connettere e configurare Windows Phone o PC con il portale aziendale su Microsoft 365, vedere [registrazione dei dispositivi di Windows nel portale aziendale di Intune](https://docs.microsoft.com/intune-user-help/windows-enrollment-company-portal).
+Per connettere e configurare windows phone o PC con il portale aziendale a Microsoft 365, vedere Registrazione di dispositivi [Windows nel portale aziendale di Intune.](https://docs.microsoft.com/intune-user-help/windows-enrollment-company-portal)
 
 ## <a name="whats-next"></a>Operazioni successive
 
-Dopo che il dispositivo è stato registrato in mobilità e sicurezza di base, è possibile iniziare a utilizzare le app di Office nel dispositivo per collaborare con posta elettronica, calendario, contatti e documenti.
+Dopo aver registrato il dispositivo in Basic Mobility and Security, è possibile iniziare a usare le app di Office nel dispositivo per usare posta elettronica, calendario, contatti e documenti.

@@ -21,7 +21,7 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come installare l'app microsoft 365 Admin per dispositivi mobili nel telefono.
+description: Informazioni su come installare l'app per dispositivi mobili Di amministrazione di Microsoft 365 nel telefono.
 ms.openlocfilehash: 110e691858537a90a7bee03b4318a5f415b3e83f
 ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
@@ -29,7 +29,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/22/2021
 ms.locfileid: "49927539"
 ---
-# <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>Installare l'app microsoft 365 Admin per dispositivi mobili nel telefono
+# <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>Installare l'app Microsoft 365 Admin per dispositivi mobili nel telefono
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWe8Kw?autoplay=false]
 
@@ -37,7 +37,7 @@ ms.locfileid: "49927539"
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-1. Per ottenere l'app per dispositivi mobili Amministratore di Microsoft 365, cercare l'amministratore di  **Microsoft 365**  nell'App Store per il dispositivo e installarla.
+1. Per ottenere l'app per dispositivi mobili Amministratore di Microsoft 365, cercare l'amministratore di  **Microsoft 365**  nell'App Store per il dispositivo e installarlo.
 2. Accedere con l'indirizzo di posta elettronica dell'amministratore globale e visualizzare il dashboard per visualizzare l'integrità del servizio, monitorare le licenze utente e visualizzare messaggi e richieste di servizio.
 3. Ecco alcune attività comuni che puoi eseguire con l'app:
 

@@ -42,10 +42,10 @@ Il phishing è un attacco dannoso in cui un messaggio di posta elettronica sembr
 1. Selezionare **Criterio predefinito** per perfezionarlo.
 1. Nella sezione **Rappresentazione** selezionare **Modifica.**
 1. Passare ad **Aggiungi domini per proteggere e selezionare** l'interruttore per includere automaticamente i domini di cui si è proprietari.
-1. Passare ad **Azioni,** aprire l'elenco a discesa Se la posta elettronica viene inviata da un utente rappresentato e scegliere l'azione desiderata.
+1. Passare ad **Azioni,** aprire l'elenco a discesa Se il messaggio di posta elettronica viene inviato da un utente rappresentato **e** scegliere l'azione desiderata.
 
     Aprire l'elenco a discesa **Se la posta elettronica** viene inviata da un dominio rappresentato e scegliere l'azione desiderata.
-1. Selezionare **Attiva suggerimenti per la sicurezza della rappresentazione.** Scegliere se i suggerimenti devono essere forniti agli utenti quando il sistema rileva utenti, domini o caratteri insoliti. Seleziona **Salva**.
+1. Selezionare **Attiva suggerimenti per la sicurezza della rappresentazione.** Scegliere se i suggerimenti devono essere forniti agli utenti quando il sistema rileva utenti, domini o caratteri insoliti. Selezionare **Salva**.
 1. Selezionare **Intelligence per le** cassette postali e verificare che sia attivata. In questo modo la posta elettronica può essere più efficiente grazie all'apprendimento dei modelli di utilizzo.
 1. Scegliere **Aggiungi mittenti e domini attendibili.** Qui è possibile aggiungere indirizzi di posta elettronica o domini che non devono essere classificati come rappresentazione.
 1. Choose **Review your settings,** make sure everything is correct, select **Save**, then **Close.**

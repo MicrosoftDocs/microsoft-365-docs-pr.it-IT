@@ -35,9 +35,9 @@ ms.locfileid: "49925027"
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-Se si riceve un invito di Microsoft Teams a unirsi a un team, è necessario accettare l'invito in due passaggi.
+Se si riceve un invito di Microsoft Teams a partecipare a un team, è necessario accettare l'invito in due passaggi.
 
-1. Aprire l'invito tramite posta elettronica e **selezionare Apri Microsoft Teams.** Se l'invito non viene visualizzato, controllare la cartella posta indesiderata.
+1. Aprire l'invito tramite posta elettronica e selezionare **Apri Microsoft Teams.** Se l'invito non viene visualizzato, controllare la cartella Posta indesiderata.
   1. Se l'indirizzo di posta elettronica non è stato usato in precedenza per creare un account Microsoft, è necessario crearne uno.
 
      Nella finestra **di dialogo Crea account** selezionare **Avanti,** creare una password e selezionare **Avanti.**
@@ -46,7 +46,7 @@ Se si riceve un invito di Microsoft Teams a unirsi a un team, è necessario acce
 1. Se non si vuole scaricare l'app Microsoft Teams, selezionare **Usa l'app Web.**
 1. Nell'app Web di Teams è possibile visualizzare o rispondere ai  post oppure creare post personalizzati e selezionare la scheda File per visualizzare o modificare i documenti del team.
 
-    Se si usa già l'app Teams nell'organizzazione per entrare a far parte di un team come guest, è molto più semplice.
+    Se si usa già l'app Teams nell'organizzazione per partecipare a un team come guest, è molto più semplice.
 
 1. È sufficiente aprire l'app Microsoft Teams e scegliere  **Sì**  per passare al team a cui si è invitati.  Ora è possibile collaborare al progetto in Teams.
 2. Per tornare al team dell'azienda, selezionarlo  **nell'elenco a**  discesa Organizzazione.

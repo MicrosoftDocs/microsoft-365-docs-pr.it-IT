@@ -35,7 +35,7 @@ ms.locfileid: "49926127"
 
 Dovranno scaricare la [](https://support.microsoft.com/office/6d79a648-6913-4696-9237-ed13de64ae3c) versione gratuita o partecipare [online in un browser](https://support.microsoft.com/office/1613bb53-f3fa-431e-85a9-d6a91e3468c9) per ottenere la condivisione di video e schermo.
 
-Se si collabora spesso a stretto contatto con un cliente, un cliente o un partner, è consigliabile creare un [team](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7) per i clienti, invitarli facilmente alle riunioni e anche avere conversazioni, condividere file e tenere traccia dei progetti in Microsoft Teams.
+Se si collabora spesso a stretto contatto con un cliente, un cliente o un partner, è consigliabile creare un [team](https://support.microsoft.com/office/11fbb083-52ee-434d-8c6e-63711fdafac7) per i propri clienti, invitarli facilmente alle riunioni e anche avere conversazioni, condividere file e tenere traccia di tutti i progetti in Microsoft Teams.
 
 Scaricare un'infografica per ottenere una rapida panoramica di come partecipare o ospitare una riunione online con Microsoft Teams.
 
@@ -65,7 +65,7 @@ Usare Microsoft Teams per partecipare alle riunioni sia con i dipendenti dell'az
 1. Nel riquadro di spostamento sinistro di Microsoft Teams scegliere **Riunioni.**
 1. Aprire la riunione a cui si vuole partecipare e scegliere **Partecipa alla riunione di Microsoft Teams.**
 1. All'apertura della riunione, scegliere **Partecipa ora.**
-1. Qualsiasi client invitato alla riunione aprirà la riunione nel calendario, selezionerà il collegamento alla riunione, scarierà l'app Teams o la aprirà sul Web, immetterne il nome e scegliere **Partecipa.**
+1. Qualsiasi client invitato alla riunione aprirà la riunione nel calendario, selezionerà il collegamento alla riunione, scarierà l'app Teams o la aprirà sul Web, immetterà il nome e scegli **Partecipa.**
 1. Quando viene visualizzato il client nella sala di attesa, scegliere **Ammetti** per consentirgli di accedere.
 1. Non appena tutti si uniscono, è possibile avviare la riunione.
  
@@ -81,4 +81,4 @@ Serve aiuto? Vedere [Avviare una chiamata da una chat in Teams.](https://support
 
 [6 modi per rendere più efficienti le riunioni virtuali](https://products.office.com/en-us/business/articles/6-ways-to-make-virtual-meetings-more-efficient)
 
-[Rendere pop le agende delle riunioni online](https://products.office.com/en-us/business/articles/6-ways-to-make-your-online-meeting-agendas-pop)
+[Creare agende per le riunioni online](https://products.office.com/en-us/business/articles/6-ways-to-make-your-online-meeting-agendas-pop)

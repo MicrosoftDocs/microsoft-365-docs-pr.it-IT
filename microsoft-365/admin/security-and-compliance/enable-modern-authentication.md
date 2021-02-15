@@ -45,7 +45,7 @@ Per abilitare l'autenticazione moderna per tutti i dispositivi che eseguono Wind
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1   |
 |HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1  |
    
-Dopo aver impostato le chiavi del Registro di sistema, è possibile impostare le app dei dispositivi Di Office 2013 per l'uso dell'autenticazione a più fattori [(MFA)](set-up-multi-factor-authentication.md) con Microsoft 365. 
+Dopo aver impostato le chiavi del Registro di sistema, è possibile impostare le app dei dispositivi di Office 2013 per l'uso dell'autenticazione a più fattori [(MFA)](set-up-multi-factor-authentication.md) con Microsoft 365. 
   
 Se si è attualmente connessi con una delle app client, è necessario disconnettersi e accedere di nuovo per rendere effettive le modifiche. In caso contrario, le impostazioni MRU e di roaming non saranno disponibili finché non viene stabilita l'identità ADAL.
   

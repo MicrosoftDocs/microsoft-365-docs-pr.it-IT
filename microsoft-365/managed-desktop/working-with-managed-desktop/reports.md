@@ -43,9 +43,9 @@ Inoltre, in diverse posizioni di Microsoft Endpoint Manager puoi filtrare i repo
 
 Questi report includono: 
 
-- [Dati di utilizzo:](usage-insights.md) questa visualizzazione fornisce metriche di utilizzo per i dispositivi Microsoft Managed Desktop.
+- [Informazioni dettagliate](usage-insights.md) sull'utilizzo: questa visualizzazione fornisce metriche di utilizzo per i dispositivi Microsoft Managed Desktop.
 - [Informazioni dettagliate](reliability-insights.md) sull'affidabilità: questa visualizzazione fornisce un riepilogo dell'integrità dei dispositivi gestiti.
-- [Informazioni dettagliate](battery-insights.md) sulla batteria: questa visualizzazione mostra informazioni sul consumo di energia delle app e sulla durata della batteria proiettata per i dispositivi nel tuo ambiente.
+- [Informazioni dettagliate](battery-insights.md) sulla batteria: questa visualizzazione mostra informazioni sul consumo di energia delle app e sulla durata della batteria proiettata per i dispositivi nell'ambiente.
 - [Informazioni dettagliate sugli aggiornamenti della](security-update-insights.md) sicurezza di Windows: questa visualizzazione mostra informazioni sullo stato degli aggiornamenti della sicurezza per i dispositivi Microsoft Managed Desktop.
 
  ## <a name="inventory-data"></a>Dati di inventario

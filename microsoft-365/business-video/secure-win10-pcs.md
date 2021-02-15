@@ -39,7 +39,7 @@ Dopo aver configurato la protezione dei dispositivi in Microsoft 365 Business, s
 
 1. Nell'interfaccia di amministrazione di Microsoft 365 scegliere **Configurazione.**
 2. In **Proteggere i computer Windows** selezionare **Visualizza.**
-3. Esamina le informazioni nella pagina  **Proteggere i computer Windows 10**  in modo da comprendere i criteri e il modo in cui influiscono sugli utenti.
+3. Esamina le informazioni nella pagina Proteggere i computer  **Windows 10**  in modo da comprendere i criteri e il modo in cui influiscono sugli utenti.
 4. Selezionare **Introduzione.**
 5. Nel riquadro  **delle impostazioni di Windows 10**  esamina le opzioni e modifica, se necessario. Passa il mouse sulla descrizione comando per altre informazioni su un criterio.
 6. In  **Chi deve essere applicato il criterio?** , scegliere se le selezioni verranno applicate a tutti gli utenti dell'organizzazione o a gruppi di sicurezza specifici.

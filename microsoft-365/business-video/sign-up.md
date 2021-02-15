@@ -42,7 +42,7 @@ Seguire questa procedura per iscriversi a Microsoft 365 Business Premium (in pre
 3. Immettere l'indirizzo di posta elettronica personale, selezionare **Avanti** e **quindi Configurare l'account.**
 4. Immetti il nome, il numero di telefono e il nome della società. Se vuoi&#39;assistenza da un partner Microsoft, seleziona la casella accanto a Vorrei che **Microsoft condividesse le mie informazioni.** Selezionare **Avanti.**
 5. Per verificare il numero di telefono, selezionare **Invia codice di verifica.** Immetti il codice ricevuto sul telefono e seleziona **Verifica.**
-6. If you already have a domain, choose  **Get a Microsoft domain for now**, and enter your company name. Questo diventa l'indirizzo di posta elettronica temporaneo. Diventa inoltre parte degli URL permanenti di SharePoint e OneDrive. Selezionare **Controlla disponibilità** e quindi **Avanti.**
+6. If you already have a domain, choose  **Get a Microsoft domain for now,** and enter your company name. Questo diventa l'indirizzo di posta elettronica temporaneo. Inoltre, diventa parte degli URL permanenti di SharePoint e OneDrive. Selezionare **Controlla disponibilità** e quindi **Avanti.**
 7. Immetti il nome utente, una password, conferma la password e quindi seleziona  **Iscriviti**  per creare il tuo account.
 8. Immettere il numero di utenti, scegliere un piano di fatturazione e quindi selezionare **Avanti.**
 9.  Immettere l'indirizzo&#39;'indirizzo dell'azienda e quindi fare clic **su Avanti.**

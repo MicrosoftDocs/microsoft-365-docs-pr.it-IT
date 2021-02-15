@@ -29,7 +29,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/22/2021
 ms.locfileid: "49927109"
 ---
-# <a name="install-outlook-and-office-apps-on-ios-devices"></a>Installare Le app di Outlook e Office nei dispositivi iOS
+# <a name="install-outlook-and-office-apps-on-ios-devices"></a>Installare Outlook e le app di Office nei dispositivi iOS
 
 Dopo aver&#39;aver configurato Microsoft 365 Business Premium, è possibile installare le app di Office nell'iPhone. Dopo aver installato le app,&#39;verrà richiesto di creare un PIN per proteggere i dati di Office.
 

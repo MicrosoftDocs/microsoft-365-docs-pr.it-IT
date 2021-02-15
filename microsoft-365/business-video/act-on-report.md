@@ -1,5 +1,5 @@
 ---
-title: Esaminare i report sull'utilizzo
+title: Esaminare i report di utilizzo
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -42,7 +42,7 @@ Scoprire in che modo i dipendenti usano i servizi di Microsoft 365, ad esempio l
 
 1. Passare a **Report** e quindi a **Utilizzo.** Per trovare i dettagli di qualsiasi report, selezionarne uno. Il report Utenti attivi mostra quali servizi vengono utilizzati maggiormente dagli utenti dell'azienda.
 1. Ad esempio, è possibile procedere e osservare il report di OneDrive. Qui possiamo vedere quante persone hanno un account, puoi anche visualizzare il numero totale e i file attivi, nonché lo spazio di archiviazione usato. Per visualizzare tutti gli altri report, passare al menu a discesa.
-1. Qui è possibile esaminare il report sull'utilizzo dell'app di posta elettronica e vedere i metodi più utilizzati dai dipendenti per accedere alla posta elettronica. È inoltre possibile visualizzare le informazioni specifiche di un singolo utente, ma i dettagli sono nascosti per impostazione predefinita. Per visualizzare i dettagli dei singoli utenti, passare **a** Impostazioni e quindi & **componenti aggiuntivi.**
+1. Qui possiamo dare un'occhiata al report sull'utilizzo dell'app e-mail e vedere i metodi più utilizzati dai dipendenti per accedere alla posta elettronica. È inoltre possibile visualizzare le informazioni specifiche di un singolo utente, ma i dettagli sono nascosti per impostazione predefinita. Per visualizzare i dettagli dei singoli utenti, passare **a** Impostazioni e quindi & **componenti aggiuntivi.**
 1. Nel riquadro del report, è possibile attivare l'identificatore anonimo. A questo punto chiudiamo il pannello e torniamo a **Report,** **Utilizzo** e **Attività di posta elettronica.** Qui è possibile visualizzare le informazioni specifiche di un singolo utente.
 
     Tenere presente che, in caso di problemi, è sempre possibile tornare alla Guida che fornisce informazioni sul report specifico visualizzato.

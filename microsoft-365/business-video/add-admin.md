@@ -43,7 +43,7 @@ Quando si effettua l'iscrizione a Microsoft 365 Business, si diventa automaticam
 1. Quando si effettua l'iscrizione a Microsoft 365 Business, si diventa automaticamente un amministratore globale. Per facilitare la gestione dell'azienda, è possibile rendere amministratori anche altri utenti. 
 1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare **Utenti** e quindi **Utenti attivi.**
 1. Scegliere l'utente che si desidera impostare come amministratore e quindi selezionare **Gestisci ruoli.**
-1. Nel riquadro **Gestisci ruoli** deselezionare la casella di controllo del ruolo corrente dell'utente e selezionare il nuovo ruolo che si desidera assegnare all'utente.
+1. Nel riquadro **Gestisci ruoli** deselezionare la casella di controllo ruolo corrente dell'utente e selezionare il nuovo ruolo che si desidera assegnare all'utente.
 1. Selezionare **Salva modifiche** e quindi chiudere il riquadro di conferma aggiornato dei **ruoli** di amministratore.
 
 ### <a name="add-someone-outside-the-company-as-an-admin"></a>Aggiungere un utente esterno all'azienda come amministratore
@@ -55,7 +55,7 @@ Se è presente una persona IT esterna che aiuterà a gestire l'azienda, è possi
 1. Selezionare la **casella di controllo Invia password tramite posta** elettronica al completamento per inviare la password dell'utente tramite posta elettronica. Digitare l'indirizzo di posta elettronica. Separare più indirizzi con un punto e virgola. Selezionare **Avanti**.
 1. **Nell'elenco a** discesa Seleziona posizione scegliere la posizione dell'utente.
 1. Selezionare la **casella di controllo Crea utente senza licenza** del prodotto. Non è necessario assegnare a questo utente una licenza perché gestirà solo i servizi di Microsoft 365 e non li usa. Selezionare **Avanti**.
-1. Espandere la **sezione Ruoli.** Deselezionare la casella di controllo accanto al ruolo corrente dell'utente e quindi scegliere **Amministratore globale.** Selezionare **Avanti**.
+1. Espandere la **sezione** Ruoli. Deselezionare la casella di controllo accanto al ruolo corrente dell'utente e quindi scegliere **Amministratore globale.** Selezionare **Avanti**.
 1. Rivedere le impostazioni e quindi selezionare **Fine** aggiunta.
 1. Selezionare **Chiudi**.
 

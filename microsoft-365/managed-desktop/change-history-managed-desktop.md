@@ -1,6 +1,6 @@
 ---
 title: Cronologia modifiche per la documentazione di Microsoft Managed Desktop
-description: In questo articolo vengono elencati gli articoli nuovi e aggiornati per Microsoft Managed Desktop.
+description: In questo articolo sono elencati gli articoli nuovi e aggiornati per Microsoft Managed Desktop.
 keywords: cronologia modifiche
 ms.service: m365-md
 ms.sitesec: library
@@ -22,7 +22,7 @@ ms.locfileid: "49877201"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Cronologia modifiche per la documentazione di Microsoft Managed Desktop
 
-In questo articolo vengono elencati gli articoli nuovi e aggiornati della [documentazione di Microsoft Managed Desktop](index.yml). Gli articoli "aggiornati" hanno avuto aggiunte o correzioni materiali: correzioni secondarie come la correzione degli errori di battitura, dello stile o della formattazione non sono presenti nell'elenco. È sempre possibile visualizzare la cronologia dei commit specifici (inclusi i dettagli di eventuali modifiche) visitando il [repo su GitHub](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop).
+In questo articolo sono elencati gli articoli nuovi e aggiornati nella [documentazione di Microsoft Managed Desktop.](index.yml) Gli articoli "aggiornati" hanno apportato correzioni o aggiunte di materiale: correzioni secondarie come la correzione di errori di digitazione, stile o problemi di formattazione non sono elencate. È sempre possibile visualizzare la cronologia di commit specifici (inclusi i dettagli di eventuali modifiche) visitando il [repository su GitHub.](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)
 
 
 ## <a name="december-2020"></a>Dicembre 2020
@@ -65,8 +65,8 @@ Articolo nuovo o modificato | Descrizione
 [Privacy e dati personali](service-description/privacy-personal-data.md) | Nuovo articolo
 [Preparare unità mappate per Microsoft Managed Desktop](get-ready/mapped-drives.md) | Articolo aggiornato
 [Ottenere assistenza per gli utenti](working-with-managed-desktop/end-user-support.md) | Articolo aggiornato
-[Riferimento alle impostazioni configurabili-Microsoft Managed Desktop](working-with-managed-desktop/config-setting-ref.md) | Articolo aggiornato
-[Distribuire e monitorare le impostazioni configurabili-Microsoft Managed Desktop](working-with-managed-desktop/config-setting-deploy.md) | Articolo aggiornato
+[Informazioni di riferimento per le impostazioni configurabili - Microsoft Managed Desktop](working-with-managed-desktop/config-setting-ref.md) | Articolo aggiornato
+[Distribuire e tenere traccia delle impostazioni configurabili - Microsoft Managed Desktop](working-with-managed-desktop/config-setting-deploy.md) | Articolo aggiornato
 [Supporto amministratore per Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Articolo aggiornato
 [Microsoft Teams](get-started/teams.md) | Nuovo articolo
 [Accedere al portale di amministrazione](get-started/access-admin-portal.md) | Nuovo articolo
@@ -93,7 +93,7 @@ Articolo nuovo o modificato | Descrizione
 ## <a name="july-2020"></a>Luglio 2020
 Articolo nuovo o modificato | Descrizione
 --- | ---
-[Requisiti per le app di Microsoft Managed Desktop](service-description/mmd-app-requirements.md) | Articolo aggiornato
+[Requisiti dell'app Microsoft Managed Desktop](service-description/mmd-app-requirements.md) | Articolo aggiornato
 [Conformità](intro/compliance.md) | Articolo aggiornato
 [Introduzione al controllo delle applicazioni](get-started/get-started-app-control.md) | Articolo aggiornato
 [Usare il controllo delle applicazioni](working-with-managed-desktop/work-with-app-control.md) | Articolo aggiornato
@@ -129,7 +129,7 @@ Articolo nuovo o modificato | Descrizione
 Articolo nuovo o modificato | Descrizione
 --- | ---
 [Conformità](intro/compliance.md) | Nuovo articolo
-[Aree geografiche e lingue supportate da Microsoft Managed Desktop](service-description/regions-languages.md) | Articolo aggiornato
+[Lingue e aree geografiche supportate da Microsoft Managed Desktop](service-description/regions-languages.md) | Articolo aggiornato
 
 
 
@@ -147,8 +147,8 @@ Articolo nuovo o modificato | Descrizione
 [Sicurezza in Microsoft Managed Desktop](service-description/security.md)| Articolo aggiornato
 [Usare i dati analitici](working-with-managed-desktop/insights.md) | Articolo aggiornato
 [Dati analitici sugli aggiornamenti della sicurezza di Windows](working-with-managed-desktop/security-update-insights.md) | Nuovo articolo
-[Come vengono gestiti gli aggiornamenti in Microsoft Managed Desktop](service-description/updates.md) | Articolo aggiornato
-[Servizi per dispositivi desktop Microsoft gestiti](service-description/device-services.md) | Articolo aggiornato
+[Modalità di gestione degli aggiornamenti in Microsoft Managed Desktop](service-description/updates.md) | Articolo aggiornato
+[Servizi per dispositivi Microsoft Managed Desktop](service-description/device-services.md) | Articolo aggiornato
 
 
 
@@ -165,7 +165,7 @@ Articolo nuovo o modificato | Descrizione
 --- | ---
 [Supporto amministratore per Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Articolo aggiornato
 [Dispositivi Microsoft Managed Desktop](service-description/device-list.md) | Articolo aggiornato
-[Dispositivi archiviati da Microsoft Managed Desktop](service-description/archived-device-list.md) | Articolo aggiornato
+[Dispositivi archiviati di Microsoft Managed Desktop](service-description/archived-device-list.md) | Articolo aggiornato
 
 
 
@@ -191,7 +191,7 @@ Articolo nuovo o modificato | Descrizione
 [Modifiche al servizio e comunicazione](service-description/servicechanges.md) | Nuovo articolo
 [Registrare manualmente i nuovi dispositivi](get-started/register-devices-self.md) | Articolo aggiornato
 [Registrare manualmente i dispositivi già presenti](get-started/register-reused-devices-self.md) | Articolo aggiornato
-[Aree geografiche e lingue supportate da Microsoft Managed Desktop](service-description/regions-languages.md) | Articolo aggiornato
+[Lingue e aree geografiche supportate da Microsoft Managed Desktop](service-description/regions-languages.md) | Articolo aggiornato
 
 
 
@@ -202,13 +202,13 @@ Articolo nuovo o modificato | Descrizione
 [Tecnologie Microsoft Managed Desktop](intro/technologies.md) | Articolo aggiornato
 [Ottenere assistenza per gli utenti](working-with-managed-desktop/end-user-support.md) | Articolo aggiornato
 [Dispositivi Microsoft Managed Desktop](service-description/device-list.md) | Articolo aggiornato
-[Distribuire e monitorare le impostazioni configurabili-Microsoft Managed Desktop](working-with-managed-desktop/config-setting-deploy.md) | Articolo aggiornato
+[Distribuire e tenere traccia delle impostazioni configurabili - Microsoft Managed Desktop](working-with-managed-desktop/config-setting-deploy.md) | Articolo aggiornato
 [Supporto amministratore per Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Articolo aggiornato
 [Prerequisiti per Microsoft Managed Desktop](get-ready/prerequisites.md) | Articolo aggiornato
 [Configurare dispositivi Microsoft Managed Desktop](get-started/set-up-devices.md) | Nuovo articolo
 [Registrare manualmente i nuovi dispositivi](get-started/register-devices-self.md) | Articolo aggiornato
 [Registrare manualmente i dispositivi già presenti](get-started/register-reused-devices-self.md) | Nuovo articolo
-[Come vengono gestiti gli aggiornamenti in Microsoft Managed Desktop](service-description/updates.md) | Articolo aggiornato
+[Modalità di gestione degli aggiornamenti in Microsoft Managed Desktop](service-description/updates.md) | Articolo aggiornato
 
 ## <a name="august-2019"></a>Agosto 2019
 Articolo nuovo o modificato | Descrizione
@@ -242,9 +242,9 @@ Articolo nuovo o modificato | Descrizione
 ## <a name="may-2019"></a>Maggio 2019
 Articolo nuovo o modificato | Descrizione
 --- | ---
-[Aree geografiche e lingue supportate da Microsoft Managed Desktop](service-description/regions-languages.md) | Articolo aggiornato
+[Lingue e aree geografiche supportate da Microsoft Managed Desktop](service-description/regions-languages.md) | Articolo aggiornato
 [Dispositivi Microsoft Managed Desktop](service-description/device-list.md) | Articolo aggiornato
-[Dispositivi archiviati da Microsoft Managed Desktop](service-description/archived-device-list.md) | Nuovo articolo
+[Dispositivi archiviati di Microsoft Managed Desktop](service-description/archived-device-list.md) | Nuovo articolo
 [Preparare unità mappate per Microsoft Managed Desktop](get-ready/mapped-drives.md) | Nuovo articolo
 [Preparare certificati e profili di rete per Microsoft Managed Desktop](get-ready/certs-wifi-lan.md) | Nuovo articolo
 [Ordinare i dispositivi Microsoft Managed Desktop](get-started/devices.md) | Articolo aggiornato
@@ -253,46 +253,46 @@ Articolo nuovo o modificato | Descrizione
 ## <a name="april-2019"></a>Aprile 2019
 Articolo nuovo o modificato | Descrizione
 --- | ---
-[Installare il portale aziendale di Intune sui dispositivi Microsoft Managed Desktop](get-started/company-portal.md) | Nuovo articolo
-[Installare Microsoft Project e Microsoft Visio sui dispositivi Microsoft Managed Desktop](get-started/project-visio.md) | Nuovo articolo 
+[Installare il portale aziendale intune nei dispositivi Microsoft Managed Desktop](get-started/company-portal.md) | Nuovo articolo
+[Installare Microsoft Project e Microsoft Visio nei dispositivi Microsoft Managed Desktop](get-started/project-visio.md) | Nuovo articolo 
 [Preparare l'accesso alle risorse locali per Microsoft Managed Desktop](get-ready/authentication.md) | Nuovo articolo
 [Registrare i dispositivi in Microsoft Managed Desktop](get-started/register-devices-self.md) | Nuovo articolo
 [Registrare i dispositivi in Microsoft Managed Desktop per i partner](get-started/register-devices-partner.md) | Nuovo articolo
-[Distribuire le app ai dispositivi Microsoft Managed Desktop](get-started/deploy-apps.md) | Articolo aggiornato
+[Distribuire app ai dispositivi Microsoft Managed Desktop](get-started/deploy-apps.md) | Articolo aggiornato
 
 ## <a name="march-2019"></a>Marzo 2019
 Articolo nuovo o modificato | Descrizione
 --- | ---
-[Installare il portale aziendale di Intune sui dispositivi Microsoft Managed Desktop](get-started/company-portal.md) | Nuovo articolo
-[Installare Microsoft Project e Microsoft Visio sui dispositivi Microsoft Managed Desktop](get-started/project-visio.md) | Nuovo articolo
+[Installare il portale aziendale intune nei dispositivi Microsoft Managed Desktop](get-started/company-portal.md) | Nuovo articolo
+[Installare Microsoft Project e Microsoft Visio nei dispositivi Microsoft Managed Desktop](get-started/project-visio.md) | Nuovo articolo
 
 ## <a name="february-2019"></a>Febbraio 2019
 Articolo nuovo o modificato | Descrizione
 --- | ---
-[Dispositivi del programma](service-description/device-list.md) | È stato aggiornato con supporto per determinati dispositivi Dell e HP.
+[Dispositivi del programma](service-description/device-list.md) | L'articolo è stato aggiornato con il supporto per determinati dispositivi Dell e HP.
 [Panoramica delle impostazioni configurabili](working-with-managed-desktop/config-setting-overview.md) | Nuovo articolo
 [Riferimento alle impostazioni configurabili](working-with-managed-desktop/config-setting-ref.md) | Nuovo articolo
-[Monitorare e distribuire le impostazioni configurabili](working-with-managed-desktop/config-setting-deploy.md) | Nuovo articolo
+[Tenere traccia e distribuire le impostazioni configurabili](working-with-managed-desktop/config-setting-deploy.md) | Nuovo articolo
 [Introduzione ai dispositivi](get-started/get-started-devices.md) | Nuovo articolo
 
 ## <a name="january-2019"></a>Gennaio 2019
 Articolo nuovo o modificato | Descrizione
 --- | ---
-[Distribuire le app per i dispositivi Microsoft Managed Desktop](get-started/deploy-apps.md) | Nuovo articolo.
-[Gestire le app per Microsoft Managed Desktop](working-with-managed-desktop/manage-apps.md) | È stato aggiornato con informazioni su come aggiornare o eseguire il rollback a una versione precedente di app line-of-business. 
+[Distribuire app per dispositivi Microsoft Managed Desktop](get-started/deploy-apps.md) | Nuovo articolo.
+[Gestire le app per Microsoft Managed Desktop](working-with-managed-desktop/manage-apps.md) | L'articolo è stato aggiornato con informazioni su come aggiornare o ripristinare una versione precedente delle app line-of-business. 
 
 ## <a name="december-2018"></a>Dicembre 2018
 Articolo nuovo o modificato | Descrizione
 --- | ---
-[Operazioni e monitoraggio per Microsoft Managed Desktop](service-description/operations-and-monitoring.md) | Aggiunta della tabella di bilanciamento della responsabilità e altre tabelle aggiornate.
-[Supporto amministratore per Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Tipi di supporto aggiornati, spiegazioni di gravità e dettagli aggiuntivi.
+[Operazioni e monitoraggio per Microsoft Managed Desktop](service-description/operations-and-monitoring.md) | Aggiunta della tabella degli equilibri di responsabilità e aggiornamento di altre tabelle.
+[Supporto amministratore per Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Tipi di supporto aggiornati, spiegazioni sulla gravità e altri dettagli.
 
 ## <a name="november-2018"></a>Novembre 2018
 
 Articolo nuovo o modificato | Descrizione
 --- | ---
-[Supporto per Microsoft Managed Desktop](service-description/support.md)<br />e [supporto utente per Microsoft Managed Desktop](working-with-managed-desktop/end-user-support.md) | Aggiornato per includere l'Australia.
+[Supporto per Microsoft Managed Desktop](service-description/support.md)<br />e [supporto per gli utenti per Microsoft Managed Desktop](working-with-managed-desktop/end-user-support.md) | L'articolo è stato aggiornato per includere l'Australia.
 
 ## <a name="october-30-2018"></a>30 ottobre 2018
-Contenuto riorganizzato: sezione aggiunta per la [Descrizione del servizio Microsoft Managed Desktop](service-description/index.md). 
+Contenuto riorganizzato: aggiunta sezione per la descrizione del servizio [Microsoft Managed Desktop.](service-description/index.md) 
 

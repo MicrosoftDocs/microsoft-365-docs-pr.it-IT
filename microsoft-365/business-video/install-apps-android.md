@@ -29,7 +29,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/22/2021
 ms.locfileid: "49925123"
 ---
-# <a name="install-outlook-and-office-apps-on-android-devices"></a>Installare le app di Outlook e Office nei dispositivi Android
+# <a name="install-outlook-and-office-apps-on-android-devices"></a>Installare Outlook e le app di Office nei dispositivi Android
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfquk?autoplay=false]
 
@@ -44,5 +44,5 @@ Se il dispositivo Android è gestito da Microsoft 365 Business Premium, potrebbe
 5. In **Immettere la password** digitare la password e quindi scegliere **Accedi.**
 6. Nella pagina successiva scegliere  **Continua**  se si desidera aggiungere un altro account. In caso contrario, scegliere **Ignora.**
 7. Quando viene richiesto di aggiungere l'app Portale aziendale Intune, scegliere **Vai a store.**
-8. Installare e aprire l'app portale aziendale intune e quindi scegliere  **OK**  quando viene visualizzato il messaggio che indica che l'organizzazione protegge i dati in questa app.
+8. Installare e aprire l'app portale aziendale intune, quindi scegliere  **OK**  quando viene visualizzato il messaggio che indica che l'organizzazione protegge i dati in questa app.
 9. Se viene richiesto un PIN, immettere un PIN di 4 cifre che verrà utilizzato&#39;per sbloccare  il telefono, scegliere **Invia,** confermare il PIN e quindi scegliere di nuovo Invia.

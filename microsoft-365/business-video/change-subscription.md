@@ -56,5 +56,5 @@ Quando gli utenti cambiano ruolo, potrebbero aver bisogno di funzionalità non d
 ### <a name="remove-an-unused-license"></a>Rimuovere una licenza inutilizzata
 
 1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare **Fatturazione** e quindi Prodotti **& servizi.**
-1. Selezionare l'abbonamento che si desidera modificare e quindi **selezionare Aggiungi/rimuovi licenze.**
-1. Usare la freccia in giù per ridurre il numero di licenze per l'abbonamento e quindi selezionare **Invia modifica.** A questo punto si dispone del numero di licenze per gli utenti.
+1. Selezionare l'abbonamento che si desidera modificare e quindi selezionare **Aggiungi/rimuovi licenze.**
+1. Usare la freccia in giù per ridurre il numero di licenze per l'abbonamento e quindi selezionare **Invia modifica.** A questo punto si dispone del numero di licenze giusto per gli utenti.
