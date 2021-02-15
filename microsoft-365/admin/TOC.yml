@@ -291,6 +291,8 @@
           href: security-and-compliance/multi-factor-authentication-microsoft-365.md
         - name: Configurare l'autenticazione a più fattori
           href: security-and-compliance/set-up-multi-factor-authentication.md
+        - name: Gestire e monitorare gli account con priorità
+          href: setup/priority-accounts.md
         - name: Abilitare l'autenticazione moderna per Office 2013
           href: security-and-compliance/enable-modern-authentication.md
         - name: Secure Microsoft 365 Business Premium
