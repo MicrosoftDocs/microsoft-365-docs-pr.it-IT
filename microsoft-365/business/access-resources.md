@@ -28,11 +28,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 12/16/2020
 ms.locfileid: "49688234"
 ---
-# <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>Accedere alle risorse locali da un dispositivo di Azure AD-join in Microsoft 365 Business Premium
+# <a name="access-on-premises-resources-from-an-azure-ad-joined-device-in-microsoft-365-business-premium"></a>Accedere alle risorse locali da un dispositivo aggiunto ad Azure AD in Microsoft 365 Business Premium
 
 Questo articolo si applica a Microsoft 365 Business Premium.
 
-Qualsiasi dispositivo Windows 10 che è Azure Active Directory joined ha accesso a tutte le risorse basate su cloud, ad esempio le app Microsoft 365, e può essere protetto da Microsoft 365 Business Premium. È anche possibile consentire l'accesso a risorse locali come le app line-of-business (LOB), le condivisioni file e le stampanti. Per consentire l'accesso, utilizzare [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) per sincronizzare Active Directory locale con Azure Active Directory. 
+Qualsiasi dispositivo Windows 10 aggiunto ad Azure Active Directory ha accesso a tutte le risorse basate sul cloud, ad esempio le app di Microsoft 365, e può essere protetto da Microsoft 365 Business Premium. È anche possibile consentire l'accesso a risorse locali come le app line-of-business (LOB), le condivisioni file e le stampanti. Per consentire l'accesso, utilizzare [Azure AD Connect](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect) per sincronizzare Active Directory locale con Azure Active Directory. 
 
 Per altre informazioni, vedere [Introduzione alla gestione dei dispositivi in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
 Le procedure sono riepilogate anche nelle sezioni seguenti.
@@ -43,9 +43,9 @@ Completare la procedura seguente per consentire ai dispositivi dell'organizzazio
   
 1. Per sincronizzare gli utenti, i gruppi e i contatti da Active Directory locale ad Azure Active Directory, eseguire la procedura guidata di sincronizzazione della directory e Azure AD Connect come descritto in [Configurare la sincronizzazione della directory per Office 365](https://docs.microsoft.com/microsoft-365/enterprise/set-up-directory-synchronization).
     
-2. Una volta completata la sincronizzazione della directory, accertarsi che i dispositivi Windows 10 dell'organizzazione siano associati ad Azure AD. Questa fase viene eseguita singolarmente in ogni dispositivo con Windows 10. Per informazioni dettagliate, vedere [configurare i dispositivi Windows per gli utenti di Microsoft 365 Business Premium](set-up-windows-devices.md) . 
+2. Una volta completata la sincronizzazione della directory, accertarsi che i dispositivi Windows 10 dell'organizzazione siano associati ad Azure AD. Questa fase viene eseguita singolarmente in ogni dispositivo con Windows 10. Per informazioni dettagliate, vedere Configurare i dispositivi Windows per gli utenti di [Microsoft 365 Business Premium.](set-up-windows-devices.md) 
     
-3. Dopo che i dispositivi Windows 10 sono Stati Uniti AD Azure AD, ogni utente deve riavviare i propri dispositivi e accedere con le credenziali di Microsoft 365 Business Premium. Tutti i dispositivi hanno ora accesso alle risorse locali.
+3. Dopo aver aggiunto i dispositivi Windows 10 ad Azure AD, ogni utente deve riavviare i dispositivi e accedere con le credenziali di Microsoft 365 Business Premium. Tutti i dispositivi hanno ora accesso alle risorse locali.
     
 Non ci sono ulteriori fasi per accedere alle risorse locali per i dispositivi aggiunti ad Azure AD. Questa funzionalità è integrata in Windows 10. 
 
@@ -63,4 +63,4 @@ Se il dispositivo Windows aggiunto ad Azure AD è già stato associato al domini
 
 - Gli utenti non saranno in grado di eseguire l'autenticazione delle applicazioni che dipendono dall'autenticazione di Active Directory. Valutare l'applicazione legacy e prendere in considerazione l'aggiornamento a un'applicazione che utilizzi l'autenticazione moderna, se possibile.
 
-- L'individuazione della stampante Active Directory non funziona. È possibile fornire percorsi Direct Printer per tutti gli utenti o utilizzare la [stampa universale](https://aka.ms/UPDocs).
+- L'individuazione della stampante Active Directory non funziona. È possibile specificare percorsi di stampa diretti per tutti gli utenti o utilizzare [La stampa universale.](https://aka.ms/UPDocs)

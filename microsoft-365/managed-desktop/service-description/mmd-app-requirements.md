@@ -1,5 +1,5 @@
 ---
-title: Requisiti per le app di Microsoft Managed Desktop
+title: Requisiti dell'app Microsoft Managed Desktop
 description: ''
 keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
@@ -16,24 +16,24 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 12/11/2020
 ms.locfileid: "49659715"
 ---
-# <a name="microsoft-managed-desktop-app-requirements"></a>Requisiti per le app di Microsoft Managed Desktop
+# <a name="microsoft-managed-desktop-app-requirements"></a>Requisiti dell'app Microsoft Managed Desktop
 
 <!--This topic is the target for aka.ms/app-req. This is aka link is used from EA agreement for MMD. do not delete.-->
 
 <!--Application addendum -->
  
-Microsoft Managed Desktop richiede che i dispositivi vengano gestiti utilizzando un approccio specifico per garantire le prestazioni, l'affidabilità e la facilità di utilizzo dei dispositivi.
+Microsoft Managed Desktop richiede di gestire i dispositivi con un approccio specifico per garantire le prestazioni, l'affidabilità e la gestibilità dei dispositivi.
 
 
-|Area di gestione  |Approccio Microsoft Managed Desktop  |
+|Area di gestione  |Approccio microsoft Managed Desktop  |
 |---------|---------|
-|Configurazione del dispositivo o gestione dei criteri     |  Microsoft Intune       |
+|Configurazione dei dispositivi o gestione dei criteri     |  Microsoft Intune       |
 |Gestione delle applicazioni     | Microsoft Intune e portale aziendale        |
-|Distribuzione del driver     |  Driver inclusi nel dispositivo, Windows Update o Intune       |
-|Sicurezza del dispositivo     | Vedere [sicurezza del dispositivo](security.md#device-security)      |
-|Gestione di identità e accesso     | Vedere [gestione delle identità e degli accessi](security.md#identity-and-access-management)        |
-|Protezione di rete     | Vedere [Network Security](security.md#network-security)        |
-|Sicurezza delle informazioni     |  Visualizzare la [sicurezza delle informazioni](security.md#information-security)       |
+|Distribuzione dei driver     |  Driver inclusi con il dispositivo, Windows Update o Intune       |
+|Sicurezza dei dispositivi     | Vedere [Sicurezza del dispositivo](security.md#device-security)      |
+|Gestione delle identità e degli accessi     | Vedere [Gestione di identità e accessi](security.md#identity-and-access-management)        |
+|Sicurezza di rete     | Vedere [Sicurezza di rete](security.md#network-security)        |
+|Sicurezza delle informazioni     |  Vedere [Sicurezza delle informazioni](security.md#information-security)       |
 |Ripristino dei dati     | OneDrive for Business        |
 |Produttività di base     | Microsoft 365 Apps for enterprise    |
 |Browser     | Microsoft Edge        |
@@ -41,4 +41,4 @@ Microsoft Managed Desktop richiede che i dispositivi vengano gestiti utilizzando
 
 
 
-Microsoft Managed Desktop potrebbe monitorare il software in esecuzione su dispositivi gestiti. Se la gestione dei dispositivi, la sicurezza, le prestazioni o l'affidabilità del dispositivo incidono negativamente, potrebbe essere necessario richiedere un' [eccezione al piano di servizio](customizing.md).
+Microsoft Managed Desktop potrebbe monitorare altro software in esecuzione su dispositivi gestiti. Se influisce negativamente sulla gestione dei dispositivi, sulla sicurezza, sulle prestazioni o sull'affidabilità dei dispositivi, potrebbe essere necessario richiedere un'eccezione [al piano di servizio.](customizing.md)

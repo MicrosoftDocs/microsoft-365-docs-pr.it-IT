@@ -27,11 +27,11 @@ ms.locfileid: "49751513"
 ---
 # <a name="work-with-processing-errors-in-advanced-ediscovery"></a>Utilizzare gli errori di elaborazione in Advanced eDiscovery
 
-L' *elaborazione* è il processo di identificazione dei file, l'espansione dei documenti e degli allegati incorporati, l'estrazione del testo e il riconoscimento di caratteri ottici (OCR)) di file di immagine e la successiva indicizzazione di tale contenuto.  
+*L'elaborazione* è il processo di identificazione dei file, l'espansione di documenti e allegati incorporati, l'estrazione di testo e il riconoscimento ottico dei caratteri (OCR) dei file di immagine e la successiva indicizzazione di tale contenuto.  
 
-Quando si aggiungono depositarie e origini dati non depositarie a un caso nella scheda **origini** , tutti gli elementi parzialmente indicizzati di Microsoft 365 vengono elaborati per renderli completamente ricercabili. Analogamente, quando il contenuto viene aggiunto a un set di revisione da origini dati Microsoft 365 e non Microsoft 365, anche questo contenuto viene elaborato.
+Quando si aggiungono responsabile e origini dati non  di tipo responsabile a un caso nella scheda Origini, tutti gli elementi parzialmente indicizzati di Microsoft 365 vengono elaborati per renderli completamente disponibili per la ricerca. Analogamente, quando il contenuto viene aggiunto a un insieme di recensioni da origini dati microsoft 365 e non Microsoft 365, viene elaborato anche questo contenuto.
 
-La scheda **elaborazione** in Advanced eDiscovery fornisce informazioni sullo stato dell'indicizzazione avanzata per diversi scenari di elaborazione.
+La **scheda Elaborazione** in Advanced eDiscovery fornisce informazioni dettagliate sullo stato dell'indicizzazione avanzata per diversi scenari di elaborazione.
 
 Per altre informazioni, vedere gli articoli seguenti:
 

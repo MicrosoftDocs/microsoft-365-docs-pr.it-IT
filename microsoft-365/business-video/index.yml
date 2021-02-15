@@ -23,11 +23,11 @@ productDirectory:
   items:
   - title: Per iniziare
     imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
-    summary: Pianificare lo spostamento in Microsoft 365 for business.
+    summary: Pianificare il passaggio a Microsoft 365 per le aziende.
     url: what-is-microsoft-365.md
   - title: Configurare Microsoft 365 per le aziende
     imageSrc: https://docs.microsoft.com/office/media/icons/add-to-cloud-blue.svg
-    summary: Aggiungere un dominio, aggiungere utenti, configurare i criteri di sicurezza...
+    summary: Aggiungere un dominio, aggiungere utenti, configurare criteri di sicurezza...
     url: sign-up.md
   - title: Configurare i computer
     imageSrc: https://docs.microsoft.com/office/media/icons/device-desktop-download-blue.svg
@@ -39,27 +39,27 @@ productDirectory:
     url: work-from-anywhere.md
   - title: Collaborare con altre persone
     imageSrc: https://docs.microsoft.com/office/media/icons/collaborate-blue.svg
-    summary: Collaborare con i dipendenti e i clienti in teams.
+    summary: Collaborare con dipendenti e clienti in Teams.
     url: collab-outlook-teams.md
   - title: Archiviare e condividere file
     imageSrc: https://docs.microsoft.com/office/media/icons/cloud-storage-folder-blue.svg
-    summary: Archiviare i file in modo sicuro e accedere da qualsiasi posizione.
+    summary: Archiviare i file in modo sicuro e accedere da qualsiasi luogo.
     url: overview-file-sharing.md
-  - title: Configurare VoIP aziendale
+  - title: Configurare Business Voice
     imageSrc: https://docs.microsoft.com/office/media/icons/call-phone-blue.svg
-    summary: Configurare il servizio di telefonia e le conferenze.
+    summary: Configurare il servizio telefonico e le conferenze.
     url: business-voice.md
   - title: Configurare le app aziendali
     imageSrc: https://docs.microsoft.com/office/media/icons/task-list-planning-blue.svg
-    summary: Set up and Learn about bookings, lists, Tasks...
+    summary: Configurare e ottenere informazioni su Prenotazioni, Elenchi, Attività...
     url: overview-bookings.md
-  - title: Gestione dell'abbonamento
+  - title: Gestire l'abbonamento
     imageSrc: https://docs.microsoft.com/office/media/icons/settings.svg
     summary: Gestire gli utenti, reimpostare le password, visualizzare la fattura...
     url: what-is-admin.md
-  - title: Gestione dei dispositivi
+  - title: Gestire i dispositivi
     imageSrc: https://docs.microsoft.com/office/media/icons/devices-2-blue.svg
-    summary: Impostare i criteri per i dispositivi personali e di lavoro.
+    summary: Configurare i criteri per i dispositivi personali e di lavoro.
     url: secure-win-10-pro-devices.md
   - title: Proteggere l'azienda
     imageSrc: https://docs.microsoft.com/office/media/icons/security-blue.svg
@@ -67,18 +67,18 @@ productDirectory:
     url: overview-m365-security.md
   - title: Ottieni supporto
     imageSrc: https://docs.microsoft.com/office/media/icons/headset-blue.svg
-    summary: Ottenere assistenza con Microsoft 365 for business.
+    summary: Ottenere assistenza con Microsoft 365 per le aziende.
     url: find-help-answers.md
 additionalContent:
   sections:
-  - title: Altre informazioni
+  - title: Ulteriori informazioni
     items:
     - title: Informazioni su Office
       summary: Informazioni su come usare Word, Excel, PowerPoint e altre app di Office.
       url: https://support.microsoft.com/training
     - title: Passare da Google Workspace
-      summary: Informazioni su come passare a Microsoft 365 for business.
+      summary: Scopri come passare a Microsoft 365 per le aziende.
       url: moveto-microsoft-365/move-from-google-workspace-overview.md
-    - title: Trovare altre risorse di amministratore
+    - title: Trovare altre risorse di amministrazione
       summary: Accedere al sito della Guida dell'interfaccia di amministrazione di Microsoft 365.
       url: ../admin/index.yml

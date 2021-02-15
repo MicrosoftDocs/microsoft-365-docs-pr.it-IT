@@ -15,7 +15,7 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: ''
-description: Informazioni su come utilizzare la correzione degli errori per correggere i problemi relativi ai dati in Advanced eDiscovery che potrebbero impedire l'elaborazione corretta del contenuto.
+description: Informazioni su come utilizzare la correzione degli errori per correggere i problemi relativi ai dati in Advanced eDiscovery che potrebbero impedire una corretta elaborazione del contenuto.
 ms.custom: seo-marvel-mar2020
 ms.openlocfilehash: c6ef1076e44fca0d060d766fc85a435550c40059
 ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
@@ -26,90 +26,90 @@ ms.locfileid: "49750799"
 ---
 # <a name="error-remediation-when-processing-data"></a>Correzione degli errori durante l'elaborazione dei dati
 
-La correzione degli errori consente agli amministratori di eDiscovery di correggere i problemi relativi ai dati che impediscono al eDiscovery avanzato di elaborare correttamente il contenuto. Ad esempio, i file protetti da password non possono essere elaborati dopo che i file sono stati bloccati o crittografati. Se si utilizza la correzione degli errori, gli amministratori di eDiscovery possono scaricare i file con tale errore, rimuovere la protezione tramite password e quindi caricare i file corretti.
+La correzione degli errori consente agli amministratori di eDiscovery di rettificare i problemi relativi ai dati che impediscono ad Advanced eDiscovery di elaborare correttamente il contenuto. Ad esempio, i file protetti da password non possono essere elaborati perché i file sono bloccati o crittografati. Utilizzando la correzione degli errori, gli amministratori di eDiscovery possono scaricare file con tali errori, rimuovere la password di protezione e quindi caricare i file corretti.
 
-Utilizzare il flusso di lavoro seguente per correggere i file con errori nei casi avanzati di eDiscovery.
+Utilizzare il flusso di lavoro seguente per correggere i file con errori nei casi di Advanced eDiscovery.
 
-## <a name="create-an-error-remediation-session-to-remediate-files-with-processing-errors"></a>Creare una sessione di correzione degli errori per rimediare i file con errore di elaborazione
+## <a name="create-an-error-remediation-session-to-remediate-files-with-processing-errors"></a>Creare una sessione di correzione degli errori per correggere i file con errori di elaborazione
 
 >[!NOTE]
->Se la procedura guidata per la correzione degli errori viene chiusa in qualsiasi momento durante la routine seguente, è possibile tornare alla sessione di correzione degli errori dalla scheda **elaborazione** selezionando **correzioni** dal menu a discesa **Visualizza** .
+>Se la correzione guidata degli errori viene chiusa in qualsiasi momento durante la procedura seguente, è possibile  tornare alla sessione  di correzione degli errori dalla scheda Elaborazione selezionando Correzioni nel menu a discesa Visualizza. 
 
-1. Nella scheda **elaborazione** del caso Advanced eDiscovery, selezionare **errori** dal menu a discesa **Visualizza** , quindi selezionare un set di revisione o l'intero caso nel menu a discesa **ambito** . In questa sezione vengono visualizzati tutti gli errori provenienti dal caso o dall'errore di un set di revisione specifico.
+1. Nella scheda **Elaborazione** nel caso di Advanced eDiscovery, selezionare **Errori** nel menu a discesa Visualizza  e quindi selezionare un insieme di recensioni o l'intero caso nel menu a discesa Ambito.  In questa sezione vengono visualizzati tutti gli errori relativi al caso o all'errore di un insieme da rivedere specifico.
 
    ![Correzione degli errori](../media/8c2faf1a-834b-44fc-b418-6a18aed8b81a.png)
 
-2. Selezionare gli errori che si desidera correggere facendo clic sul pulsante di opzione accanto al tipo di errore o al tipo di file.  Nell'esempio seguente, viene rimediato un file protetto da password.
+2. Selezionare gli errori che si desidera correggere facendo clic sul pulsante di opzione accanto al tipo di errore o al tipo di file.  Nell'esempio seguente viene corretti un file protetto da password.
 
-3. Fare clic su **nuova correzione degli errori**.
+3. Fare **clic su Nuova correzione degli errori.**
 
-    Il flusso di lavoro di correzione dei problemi inizia con una fase di preparazione in cui i file con errori vengono copiati in una posizione di archiviazione di Azure fornita da Microsoft in modo da poterli scaricare nel computer locale per correggere i problemi.
+    Il flusso di lavoro di correzione degli errori inizia con una fase di preparazione in cui i file con errori vengono copiati in un percorso di Archiviazione di Azure fornito da Microsoft in modo da poterli scaricare nel computer locale per la correzione.
 
     ![Preparazione della correzione degli errori](../media/390572ec-7012-47c4-a6b6-4cbb5649e8a8.png)
 
-4. Al termine della preparazione, fare clic su **Avanti: scaricare i file** per continuare con il download.
+4. Al termine della preparazione, fare clic su **Avanti: Scaricare i file** per procedere con il download.
 
-    ![Scaricare file](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
+    ![Scaricare i file](../media/6ac04b09-8e13-414a-9e24-7c75ba586363.png)
 
-5. Per scaricare i file, specificare il **percorso di destinazione per il download**. Si tratta di un percorso della cartella padre nel computer locale in cui verrà scaricato il file.  Il percorso predefinito,%USERPROFILE%\Downloads\errors, punta alla cartella Downloads dell'utente connesso. Se lo si desidera, è possibile modificare questo percorso. In caso contrario, si consiglia di utilizzare un percorso di file locale per ottenere prestazioni ottimali. Non utilizzare un percorso di rete remoto. Ad esempio, è possibile utilizzare il percorso **C:\Remediation**. 
+5. Per scaricare i file, specificare il **percorso di destinazione per il download.** Si tratta di un percorso della cartella padre nel computer locale in cui verrà scaricato il file.  Il percorso predefinito, %USERPROFILE%\Downloads\errors, punta alla cartella dei download dell'utente connesso. Se lo si desidera, è possibile modificare questo percorso. Se si modifica questa impostazione, è consigliabile utilizzare un percorso di file locale per ottenere prestazioni ottimali. Non usare un percorso di rete remoto. Ad esempio, è possibile utilizzare il percorso **C:\Remediation.** 
 
-   Il percorso della cartella padre viene aggiunto automaticamente al comando AzCopy (come valore del parametro **/dest** ).
+   Il percorso della cartella padre viene aggiunto automaticamente al comando AzCopy (come valore del **parametro /Dest).**
 
-6. Copiare il comando predefinito facendo clic su **copia negli Appunti**. Aprire un prompt dei comandi di Windows, incollare il comando AzCopy e quindi premere **invio**.  
+6. Copiare il comando predefinito facendo clic **su Copia negli Appunti.** Aprire un prompt dei comandi di Windows, incollare il comando AzCopy e quindi premere **INVIO.**  
 
-    ![Preparare la correzione per gli errori](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)    
+    ![Preparare la correzione degli errori](../media/f364ab4d-31c5-4375-b69f-650f694a2f69.png)    
 
     > [!NOTE]
-    > È necessario utilizzare AzCopy v 8.1 per utilizzare correttamente il comando disponibile nella pagina **Scarica file** . È inoltre necessario utilizzare AzCopy v 8.1 per caricare i file nel passaggio 10. Per installare questa versione di AzCopy, vedere [Transfer Data with the AzCopy v 8.1 in Windows](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy). Se il comando AzCopy fornito ha esito negativo, vedere [risolvere i problemi relativi a AzCopy in Advanced eDiscovery](troubleshooting-azcopy.md).
+    > È necessario utilizzare AzCopy v8.1 per utilizzare correttamente il comando fornito nella pagina **Download dei** file. È inoltre necessario utilizzare AzCopy v8.1 per caricare i file nel passaggio 10. Per installare questa versione di AzCopy, vedere Trasferire dati [con AzCopy v8.1 in Windows.](https://docs.microsoft.com/previous-versions/azure/storage/storage-use-azcopy) Se il comando AzCopy fornito non riesce, vedere [Risoluzione dei problemi di AzCopy in Advanced eDiscovery.](troubleshooting-azcopy.md)
 
-    I file selezionati vengono scaricati nel percorso specificato nel passaggio 5. Nella cartella padre (ad esempio, **C:\Remediation**), viene creata automaticamente la struttura di sottocartelle seguente:
+    I file selezionati vengono scaricati nel percorso specificato nel passaggio 5. Nella cartella padre ,ad esempio **C:\Correzione,** viene creata automaticamente la struttura della sottocartella seguente:
 
     `<Parent folder>\Subfolder 1\Subfolder 2\<file>`
 
-    - La *sottocartella 1* è denominata con l'ID del caso o del set di revisione, a seconda dell'ambito selezionato nel passaggio 1.
+    - *La sottocartella 1* viene denominata con l'ID del caso o del set di revisioni, a seconda dell'ambito selezionato nel passaggio 1.
 
-    - La *sottocartella 2* è denominata con l'ID file del file scaricato
+    - *La sottocartella 2* è denominata con l'ID file del file scaricato
 
-    - Il file scaricato si trova nella *sottocartella 2* e viene denominato anche con l'ID file.
+    - Il file scaricato si trova nella *sottocartella 2* ed è anche denominato con l'ID file.
 
-    Di seguito è riportato un esempio del percorso della cartella e del nome del file di errore creato quando gli elementi vengono scaricati nella cartella padre di **C:\Remediation** :
+    Ecco un esempio del percorso della cartella e del nome del file di errore creato quando gli elementi vengono scaricati nella cartella **padre C:\Remediation:**
 
     `C:\Remediation\232f8b7e-089c-4781-88c6-210da0615d32\d1459499146268a096ea20202cd029857d64087706e6d6ca2a224970ae3b8938\d1459499146268a096ea20202cd029857d64087706e6d6ca2a224970ae3b8938.docx`
 
-    Se si scaricano più file, ognuno di essi viene scaricato in una sottocartella denominata con l'ID del file.
+    Se vengono scaricati più file, ognuno di essi viene scaricato in una sottocartella denominata con l'ID file.
 
     > [!IMPORTANT]
-    > Quando si caricano i file nel passaggio 9 e nel passaggio 10, i file corretti devono avere lo stesso nome di file e trovarsi nella stessa struttura di sottocartelle. La sottocartella e i nomi di file vengono utilizzati per associare il file di correzione al file di errore originale. Se la struttura di cartelle o i nomi di file vengono modificati, verrà visualizzato il seguente messaggio di errore: `Cannot apply Error Remediation to the current Workingset` . Per evitare problemi, è consigliabile mantenere i file corretti nella stessa cartella padre e sottocartella.
+    > Quando si caricano file nei passaggi 9 e 10, i file corretti devono avere lo stesso nome file e trovarsi nella stessa struttura di sottocartelle. La sottocartella e i nomi dei file vengono utilizzati per associare il file correttivo al file di errore originale. Se la struttura della cartella o i nomi dei file vengono modificati, verrà visualizzato l'errore seguente: `Cannot apply Error Remediation to the current Workingset` . Per evitare problemi, è consigliabile mantenere i file corretti nella stessa cartella padre e nella stessa struttura di sottocartelle.
 
-7. Dopo aver scaricato i file, è possibile risolverli con uno strumento appropriato. Per i file protetti da password, esistono diversi strumenti di cracking delle password che è possibile utilizzare. Se si conoscono le password per i file, è possibile aprirle e rimuovere la protezione tramite password.
+7. Dopo aver scaricato i file, puoi correggere i file con uno strumento appropriato. Per i file protetti da password, sono disponibili diversi strumenti per la discrizione delle password. Se si conoscono le password per i file, è possibile aprirli e rimuovere la password di protezione.
 
-8. Tornare a Advanced eDiscovery e la procedura guidata per la correzione degli errori, quindi fare clic su **Avanti: carica file**.  Si passa alla pagina successiva in cui è ora possibile caricare i file.
+8. Tornare ad Advanced eDiscovery e alla procedura guidata di correzione degli errori, quindi fare clic su **Avanti: Caricare i file.**  Verrà visualizzata la pagina successiva in cui è ora possibile caricare i file.
 
-    ![Caricare file](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
+    ![Carica file](../media/af3d8617-1bab-4ecd-8de0-22e53acba240.png)
 
-9. Specificare la cartella padre in cui si trovano i file corretti nella casella di testo **percorso alla posizione dei file** . Anche in questo caso, la cartella padre deve avere la stessa struttura di sottocartelle creata quando sono stati scaricati i file.
+9. Specificare la cartella padre in cui si trovano i file corretti nella casella di testo Percorso **del percorso** dei file. Anche in questo caso, la cartella padre deve avere la stessa struttura di sottocartella creata al momento del download dei file.
 
-    Il percorso della cartella padre viene aggiunto automaticamente al comando AzCopy (come valore del parametro **/source** ).
+    Il percorso della cartella padre viene aggiunto automaticamente al comando AzCopy (come valore del **parametro /Source).**
 
-10. Copiare il comando predefinito facendo clic su **copia negli Appunti**. Aprire un prompt dei comandi di Windows, incollare il comando AzCopy e quindi premere **invio**. caricare i file.
+10. Copiare il comando predefinito facendo clic **su Copia negli Appunti.** Aprire un prompt dei comandi di Windows, incollare il comando AzCopy e quindi premere **INVIO.** caricare i file.
 
     ![Risultati del caricamento corretto dei file corretti in Azcopy](../media/ff2ff691-629f-4065-9b37-5333f937daf6.png)
 
-11. Dopo aver eseguito il comando AzCopy, fare clic su **Avanti: elabora file**.
+11. Dopo aver eseguito il comando AzCopy, fare clic su **Avanti: Elabora file.**
 
-    Al termine dell'elaborazione, è possibile passare a revisione set e visualizzare i file corretti. 
+    Al termine dell'elaborazione, è possibile passare al set di revisioni e visualizzare i file corretti. 
 
 ## <a name="remediating-errors-in-container-files"></a>Correzione degli errori nei file contenitore
 
-Nei casi in cui il contenuto di un file contenitore (ad esempio un file con estensione zip) non può essere Estratto da Advanced eDiscovery, è possibile scaricare i contenitori e il contenuto viene espanso nella stessa cartella in cui risiede il contenitore originale. I file espansi verranno attribuiti al contenitore padre come se fosse stato originariamente espanso da Advanced eDiscovery. Il processo funziona come descritto sopra, tranne che per il caricamento di un singolo file come file di sostituzione.  Quando si caricano file corretti, non includere il file del contenitore originale.
+In situazioni in cui il contenuto di un file contenitore (ad esempio un file ZIP) non può essere estratto da Advanced eDiscovery, i contenitori possono essere scaricati e il contenuto espanso nella stessa cartella in cui si trova il contenitore originale. I file espansi verranno attribuiti al contenitore padre come se fosse stato originariamente espanso da Advanced eDiscovery. Il processo funziona come descritto in precedenza, ad eccezione del caricamento di un singolo file come file sostitutivo.  Quando carichi file corretti, non includere il file contenitore originale.
 
-## <a name="remediating-errors-by-uploading-the-extracted-text"></a>Correzione degli errori mediante il caricamento del testo Estratto
+## <a name="remediating-errors-by-uploading-the-extracted-text"></a>Correzione degli errori caricando il testo estratto
 
-A volte non è possibile correggere un file in un formato nativo che può essere interpretato da Advanced eDiscovery. Tuttavia, è possibile sostituire il file originale con un file di testo contenente il testo originale del file nativo (in un processo denominato *sovrapposizione di testo*). A tale scopo, seguire i passaggi descritti in questo articolo, ma invece di correggere il file originale nel formato nativo, è necessario creare un file di testo contenente il testo estratto dal file originale e quindi caricare il file di testo utilizzando il nome originale, accodato con un suffisso. txt. Ad esempio, è possibile scaricare un file durante la correzione degli errori con il nome file 335850cc-6602-4af0-acfa-1d14d9128ca2. ABC. È possibile aprire il file nell'applicazione nativa, copiare il testo e incollarlo in un nuovo file denominato 335850cc-6602-4af0-acfa-1d14d9128ca2.abc.txt. Quando si esegue questa operazione, assicurarsi di rimuovere il file originale nel formato nativo dal percorso dei file corretti nel computer locale prima di caricare il file di testo di cui è stata eseguita la correzione in Advanced eDiscovery.
+A volte non è possibile correggere un file nel formato nativo che Advanced eDiscovery è in grado di interpretare. Tuttavia, puoi sostituire il file originale con un file di testo contenente il testo originale del file nativo (in un processo denominato *sovrimpressione del testo).* A tale scopo, seguire i passaggi descritti in questo articolo, ma invece di correggere il file originale nel formato nativo, è necessario creare un file di testo contenente il testo estratto dal file originale e quindi caricare il file di testo utilizzando il nome file originale aggiunto con un suffisso txt. Ad esempio, si scarica un file durante la correzione degli errori con il nome file 335850cc-6602-4af0-acfa-1d14d9128ca2.abc. Aprire il file nell'applicazione nativa, copiare il testo e incollarlo in un nuovo file denominato 335850cc-6602-4af0-acfa-1d14d9128ca2.abc.txt. Quando si esegue questa operazione, assicurarsi di rimuovere il file originale nel formato nativo dal percorso del file corretto nel computer locale prima di caricare il file di testo corretto in Advanced eDiscovery.
 
-## <a name="what-happens-when-files-are-remediated"></a>Cosa accade quando i file vengono corretti
+## <a name="what-happens-when-files-are-remediated"></a>Cosa succede quando i file vengono corretti
 
-Quando i file corretti vengono caricati, vengono conservati i metadati originali, ad eccezione dei campi seguenti: 
+Quando i file corretti vengono caricati, i metadati originali vengono mantenuti ad eccezione dei campi seguenti: 
 
 - ExtractedTextSize
 - HasText
@@ -121,4 +121,4 @@ Quando i file corretti vengono caricati, vengono conservati i metadati originali
 - WordCount
 - WorkingsetId
 
-Per una definizione di tutti i campi dei metadati in Advanced eDiscovery, vedere [Document Metadata Fields](document-metadata-fields-in-advanced-ediscovery.md).
+Per una definizione di tutti i campi dei metadati in Advanced eDiscovery, vedere [Campi dei metadati del documento.](document-metadata-fields-in-advanced-ediscovery.md)

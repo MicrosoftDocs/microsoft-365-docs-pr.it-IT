@@ -38,14 +38,14 @@ ms.locfileid: "49698304"
 
 ::: moniker-end
 
-Le cassette postali condivise in genere non richiedono una licenza. Seguire le istruzioni riportate di seguito per rimuovere una licenza da una cassetta postale condivisa in modo che sia possibile assegnarla a un utente oppure restituire la licenza in modo che non si paghi una licenza di cui non si ha bisogno.
+Le cassette postali condivise in genere non richiedono una licenza. Seguire queste istruzioni per rimuovere una licenza da una cassetta postale condivisa, in modo da poterla assegnare a un utente o restituire la licenza in modo da non pagare una licenza non necessaria.
 
 > [!NOTE]
-> È necessaria una licenza negli scenari seguenti:
-> 1. La cassetta postale condivisa ha più di 50 GB di spazio di archiviazione in uso.
+> Una licenza è necessaria negli scenari seguenti:
+> 1. La cassetta postale condivisa dispone di più di 50 GB di spazio di archiviazione in uso.
 > 2. La cassetta postale condivisa utilizza l'archiviazione sul posto.
-> 3. La cassetta postale condivisa viene messa in blocco per controversia legale.
-> 4. La cassetta postale condivisa ha una licenza Microsoft Defender assegnata.
+> 3. La cassetta postale condivisa viene conservata per controversia legale.
+> 4. Alla cassetta postale condivisa è assegnata una licenza di Microsoft Defender.
 
   
 ## <a name="remove-the-license"></a>Rimuovere la licenza
@@ -55,17 +55,17 @@ Le cassette postali condivise in genere non richiedono una licenza. Seguire le i
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
 
    > [!NOTE]
-   > È necessario rimuovere la licenza dalla pagina utenti attivi. Non è possibile rimuovere la licenza dalla pagina della cassetta postale condivisa perché le licenze sono impostazioni utente. 
+   > È necessario rimuovere la licenza dalla pagina Utenti attivi. Non è possibile rimuovere la licenza dalla pagina Cassetta postale condivisa perché le licenze sono impostazioni utente. 
   
 2. Selezionare la cassetta postale condivisa.
 
-3. Una scheda **licenze e app** , espandere **licenze** e deselezionare la casella per la licenza che si desidera rimuovere.
+3. Nella scheda **Licenze e app** espandi **Licenze** e deseleziona la casella per la licenza che vuoi rimuovere.
 
 4. Selezionare **Salva modifiche**.
 
-5. Quando si torna alla pagina **utenti attivi** , lo stato della cassetta postale condivisa non verrà **concesso in licenza**.
+5. Quando si torna alla **pagina Utenti** attivi, lo stato della cassetta postale condivisa sarà **Senza licenza.**
 
-6. Si sta ancora pagando la licenza. Per interrompere il pagamento, [rimuovere la licenza dall'abbonamento](../../commerce/licenses/remove-licenses-from-subscription.md).
+6. Stai ancora pagando la licenza. Per interrompere il pagamento, [rimuovere la licenza dall'abbonamento.](../../commerce/licenses/remove-licenses-from-subscription.md)
 
 ::: moniker-end
 
@@ -74,17 +74,17 @@ Le cassette postali condivise in genere non richiedono una licenza. Seguire le i
  1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>.
 
     > [!NOTE]
-    > È necessario rimuovere la licenza dalla pagina utenti attivi. Non è possibile rimuovere la licenza dalla pagina della cassetta postale condivisa perché le licenze sono impostazioni utente.
+    > È necessario rimuovere la licenza dalla pagina Utenti attivi. Non è possibile rimuovere la licenza dalla pagina Cassetta postale condivisa perché le licenze sono impostazioni utente.
 
-2. Selezionare la cassetta postale condivisa e quindi fare clic su **modifica** accanto a **licenze di prodotto**.
+2. Selezionare la cassetta postale condivisa, quindi selezionare **Modifica** accanto a **Licenze di prodotto.**
 
-3. Una pagina **licenze di prodotto** , impostare l'interruttore su **disattivato** per la licenza che si desidera rimuovere.
+3. Nella pagina **Licenze di** prodotto imposta l'interruttore su **Disattivato** per la licenza che vuoi rimuovere.
 
 4. Selezionare **Salva**.
 
-5. Quando si torna alla pagina **utenti attivi** , lo stato della cassetta postale condivisa non verrà **concesso in licenza**.
+5. Quando si torna alla **pagina Utenti** attivi, lo stato della cassetta postale condivisa sarà **Senza licenza.**
 
-6. Si sta ancora pagando la licenza. Per interrompere il pagamento, [rimuovere la licenza dall'abbonamento](../../commerce/licenses/remove-licenses-from-subscription.md).
+6. Stai ancora pagando la licenza. Per interrompere il pagamento, [rimuovere la licenza dall'abbonamento.](../../commerce/licenses/remove-licenses-from-subscription.md)
 
 ::: moniker-end
 
@@ -93,17 +93,17 @@ Le cassette postali condivise in genere non richiedono una licenza. Seguire le i
  1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>.
 
     > [!NOTE]
-    > È necessario rimuovere la licenza dalla pagina utenti attivi. Non è possibile rimuovere la licenza dalla pagina della cassetta postale condivisa perché le licenze sono impostazioni utente.
+    > È necessario rimuovere la licenza dalla pagina Utenti attivi. Non è possibile rimuovere la licenza dalla pagina Cassetta postale condivisa perché le licenze sono impostazioni utente.
 
-2. Selezionare la cassetta postale condivisa e quindi fare clic su **modifica** accanto a **licenze di prodotto**.
+2. Selezionare la cassetta postale condivisa, quindi selezionare **Modifica** accanto a **Licenze di prodotto.**
 
-3. Una pagina **licenze di prodotto** , impostare l'interruttore su **disattivato** per la licenza che si desidera rimuovere.
+3. Nella pagina **Licenze di** prodotto imposta l'interruttore su **Disattivato** per la licenza che vuoi rimuovere.
 
 4. Selezionare **Salva**.
 
-5. Quando si torna alla pagina **utenti attivi** , lo stato della cassetta postale condivisa non verrà **concesso in licenza**.
+5. Quando si torna alla **pagina Utenti** attivi, lo stato della cassetta postale condivisa sarà **Senza licenza.**
 
-6. Si sta ancora pagando la licenza. Per interrompere il pagamento, [rimuovere la licenza dall'abbonamento](../../commerce/licenses/remove-licenses-from-subscription.md).
+6. Stai ancora pagando la licenza. Per interrompere il pagamento, [rimuovere la licenza dall'abbonamento.](../../commerce/licenses/remove-licenses-from-subscription.md)
 
 ::: moniker-end 
 

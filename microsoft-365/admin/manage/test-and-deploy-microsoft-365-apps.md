@@ -1,5 +1,5 @@
 ---
-title: Testare e distribuire le app di Microsoft 365
+title: Testare e distribuire Microsoft 365 Apps
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -13,7 +13,7 @@ ms.collection: ''
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
-description: Individuare, testare e distribuire le app Microsoft e Microsoft partner per gli utenti e i gruppi dell'organizzazione dal portale delle app integrate nell'interfaccia di amministrazione di Microsoft 365.
+description: Trovare, testare e distribuire app partner Microsoft e Microsoft per utenti e gruppi dell'organizzazione dal portale delle app integrate nell'interfaccia di amministrazione di Microsoft 365.
 ms.openlocfilehash: b0dc6277461ff03e8aae2e820543f8e5d9e2303c
 ms.sourcegitcommit: 7d4aa58ae9fc893825b6e648fa3f072c3ac59628
 ms.translationtype: MT
@@ -21,78 +21,78 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/09/2021
 ms.locfileid: "49790191"
 ---
-# <a name="test-and-deploy-microsoft-365-apps-in-the-microsoft-365-admin-center"></a>Testare e distribuire le app Microsoft 365 nell'interfaccia di amministrazione di Microsoft 365
+# <a name="test-and-deploy-microsoft-365-apps-in-the-microsoft-365-admin-center"></a>Testare e distribuire Microsoft 365 Apps nell'interfaccia di amministrazione di Microsoft 365
 
-L'interfaccia di amministrazione di Microsoft 365 offre la possibilità di distribuire le app partner Microsoft e Microsoft da un'unica posizione. La possibilità di trovare, testare e distribuire completamente le app acquistate e concessi in licenza da Microsoft e Microsoft Partners del portale integrato delle app fornisce la convenienza e i vantaggi che l'organizzazione richiede per mantenere i servizi aziendali aggiornati regolarmente e in esecuzione in modo efficiente.  
+L'interfaccia di amministrazione di Microsoft 365 offre la flessibilità di distribuire le app partner Microsoft e Microsoft da un'unica posizione. La possibilità di trovare, testare e distribuire completamente le app acquistate e concesse in licenza da Microsoft e dai partner Microsoft dal portale delle app integrate offre i vantaggi e i vantaggi necessari all'organizzazione per mantenere i servizi aziendali aggiornati regolarmente ed efficientemente.  
 
-Per ulteriori informazioni sull'acquisto e la gestione delle licenze delle app di Microsoft 365 per la propria organizzazione, vedere il post di Blog denominati [Manage and deploy microsoft 365 Apps from the microsoft 365 Admin Center](https://techcommunity.microsoft.com/t5/microsoft-365-blog/manage-and-deploy-microsoft-365-apps-from-the-microsoft-365/ba-p/1194324).
+Per ulteriori informazioni sull'acquisto e sulla gestione delle licenze delle app di Microsoft 365 per l'organizzazione, vedere il post di blog denominato Gestire e distribuire Microsoft 365 Apps dall'interfaccia di amministrazione di [Microsoft 365.](https://techcommunity.microsoft.com/t5/microsoft-365-blog/manage-and-deploy-microsoft-365-apps-from-the-microsoft-365/ba-p/1194324)
   
 ## <a name="manage-apps-in-the-integrated-apps-portal"></a>Gestire le app nel portale delle app integrate
 
-Scegliendo app integrate nell'interfaccia di amministrazione di Microsoft 365, è possibile gestire i test e la distribuzione delle app Microsoft e Microsoft partner acquistate e concessi in licenza. 
+Scegliendo le app integrate nell'interfaccia di amministrazione di Microsoft 365, è possibile gestire i test e la distribuzione delle app microsoft e partner Microsoft acquistate e con licenza. 
 
-1. Nell'interfaccia di amministrazione, nella barra di spostamento a sinistra, scegliere **Impostazioni** e quindi fare clic su **app integrate**. 
+1. In the admin center, in the left nav, choose **Settings**, and then choose **Integrated apps.** 
 
-2. Scegliere un'app con **lo stato** di **Altre app disponibili**.
+2. Scegliere un'app con **lo stato** **Altre app disponibili.**
 
-3. Selezionare **Distribuisci** nella parte superiore della pagina accanto al messaggio che fa riferimento a in attesa di essere distribuito.
+3. Selezionare **Distribuisci** nella parte superiore della pagina accanto al messaggio che fa riferimento all'attesa di distribuzione.
 
-    Alcune app richiedono l'aggiunta di utenti prima di poter selezionare **Distribuisci**.
+    Alcune app richiedono l'aggiunta di utenti prima di poter selezionare **Distribuisci.**
 
-    a. Selezionare **Aggiungi utenti**, scegliere **distribuzione completa**, quindi scegliere l' **intera organizzazione** o **gli utenti/gruppi specifici**.
+    a. Selezionare **Aggiungi utenti,** Scegliere **Distribuzione completa** e quindi Scegliere Intera **organizzazione** o **Utenti/gruppi specifici.**
 
-    Gli utenti/gruppi specifici possono essere un gruppo di Microsoft 365, un gruppo di sicurezza o un gruppo distribuito.
+    Utenti/gruppi specifici possono essere un gruppo di Microsoft 365, un gruppo di sicurezza o un gruppo distribuito.
 
-    È anche possibile scegliere la **distribuzione dei test** se si preferisce attendere la distribuzione dell'app all'intera organizzazione.
+    Puoi anche scegliere Test **distribuzione se** preferisci attendere di distribuire l'app nell'intera organizzazione.
 
-    b. Selezionare **Aggiorna**, **fare** e ora è possibile selezionare **Distribuisci** nella scheda **Panoramica** .  
+    b. Selezionare **Aggiorna**, **Fine** e ora è possibile selezionare **Distribuisci** nella **scheda** Panoramica.  
 
-4. Rivedere le informazioni sull'app, quindi selezionare **Distribuisci**. 
+4. Esamina le informazioni sull'app e quindi seleziona **Distribuisci.** 
 
-5. Fare clic su **fine** nella pagina **distribuzione completata** . 
+5. Selezionare **Fine** nella **pagina Distribuzione** completata. 
 
-    Esaminare i dettagli della distribuzione di test o completa nella scheda **Panoramica** .
+    Esaminare i dettagli del test o della distribuzione completa nella **scheda** Panoramica.
 
 ## <a name="find-published-apps-for-testing-and-full-deployment"></a>Trovare le app pubblicate per il testing e la distribuzione completa 
 
-È possibile trovare, testare e distribuire completamente le app pubblicate che non sono già presenti nell'elenco nella pagina Apps integrata. Con l'acquisto e la gestione delle licenze delle app dall'interfaccia di amministrazione, è possibile aggiungere le app partner Microsoft e Microsoft all'elenco da un'unica posizione.
+Puoi trovare, testare e distribuire completamente le app pubblicate che non sono già presenti nell'elenco nella pagina App integrate. Acquistando e licenze per le app dall'interfaccia di amministrazione, puoi aggiungere app partner Microsoft e Microsoft all'elenco da un'unica posizione.
 
-1. Nell'interfaccia di amministrazione, nella barra di spostamento a sinistra, scegliere **Impostazioni** e quindi fare clic su **app integrate**. 
+1. In the admin center, in the left nav, choose **Settings**, and then choose **Integrated apps.** 
 
-2. Seleziona **ottenere le app** sopra l'elenco delle app.
+2. Seleziona **Ottieni app sopra** l'elenco delle app.
 
-3. Nella pagina **Microsoft 365 Apps** Published Apps selezionare l'app che si desidera distribuire scegliendo **Prendilo subito**.
+3. Nella pagina **Delle app pubblicate di Microsoft 365 Apps** selezionare l'app che si desidera distribuire scegliendo Scarica **ora.**
 
-4. Accettare le autorizzazioni e quindi fare clic su **continua**.
+4. Accettare le autorizzazioni e quindi selezionare **Continua.**
 
-5. Selezionare **Distribuisci** nella parte superiore della pagina accanto al messaggio che fa riferimento a in attesa di essere distribuito.
+5. Selezionare **Distribuisci** nella parte superiore della pagina accanto al messaggio che fa riferimento all'attesa di distribuzione.
 
-    Alcune app richiedono l'aggiunta di utenti prima di poter selezionare **Distribuisci**.
+    Alcune app richiedono l'aggiunta di utenti prima di poter selezionare **Distribuisci.**
 
-    a. Selezionare **Aggiungi utenti**, scegliere **distribuzione completa**, quindi scegliere l' **intera organizzazione** o **gli utenti/gruppi specifici**.
+    a. Selezionare **Aggiungi utenti,** Scegliere **Distribuzione completa** e quindi Scegliere Intera **organizzazione** o **Utenti/gruppi specifici.**
 
-    Gli utenti/gruppi specifici possono essere un gruppo di Microsoft 365, un gruppo di sicurezza o un gruppo distribuito.
+    Utenti/gruppi specifici possono essere un gruppo di Microsoft 365, un gruppo di sicurezza o un gruppo distribuito.
 
-    È anche possibile scegliere la **distribuzione dei test** se si preferisce attendere la distribuzione dell'app all'intera organizzazione.
+    Puoi anche scegliere Test **distribuzione se** preferisci attendere di distribuire l'app nell'intera organizzazione.
 
-    b. Selezionare **Aggiorna**, **completato** e ora è possibile selezionare **Distribuisci** nella scheda **Panoramica** .  
+    b. Selezionare **Aggiorna,** **Fatto** e ora è possibile selezionare **Distribuisci** nella **scheda** Panoramica.  
 
-6. Rivedere le informazioni sull'app, quindi selezionare **Distribuisci**. 
+6. Esamina le informazioni sull'app e quindi seleziona **Distribuisci.** 
 
-7. Fare clic su **fine** nella pagina **distribuzione completata** . 
+7. Selezionare **Fine** nella **pagina Distribuzione** completata. 
 
-    Esaminare i dettagli della distribuzione di test o completa nella scheda **Panoramica** .
+    Esaminare i dettagli del test o della distribuzione completa nella **scheda** Panoramica.
 
-Nell'interfaccia di amministrazione di Microsoft 365, ogni **stato** dell'app distribuito è **OK** con un **tipo** di distribuzione di distribuzione dei **test**, una **distribuzione completa** o **personalizzata** e la data in cui è stata distribuita l'app.
+Nell'interfaccia di amministrazione di Microsoft 365,  lo stato di ogni **app** distribuita è **OK** con un tipo di distribuzione di distribuzione di **test,** una distribuzione completa o personalizzata e la data di distribuzione dell'app.
 
 > [!NOTE]
-> Se un'app è stata distribuita in precedenza da una posizione diversa da quella integrata, il **tipo di distribuzione** è **Custom.**
+> Se un'app è stata distribuita in precedenza da un'origine diversa dal portale delle app integrate, il **tipo di distribuzione** è **Personalizzato.**
 
 ## <a name="unsupported-scenarios"></a>Scenari non supportati
 
 Gli scenari seguenti non sono attualmente supportati per la distribuzione dal portale delle app integrate:
 
-- L'app o il componente aggiuntivo è collegato a più di un software come offerta di servizi (SaaS).
-- L'app SaaS è collegata alle app e ai componenti aggiuntivi, ma non ha un AADid associato.
-- Due app SaaS condividono lo stesso AADid e sono entrambe collegate a app o componenti aggiuntivi.
+- L'app o il componente aggiuntivo è collegato a più di un'offerta di software come servizio (SaaS).
+- L'app SaaS è collegata ad app e componenti aggiuntivi, ma non ha un AADid associato.
+- Due app SaaS condividono lo stesso AADid ed entrambe sono collegate ad app o componenti aggiuntivi.
   

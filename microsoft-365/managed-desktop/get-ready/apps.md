@@ -1,6 +1,6 @@
 ---
 title: App in Microsoft Managed Desktop
-description: Viene illustrato il modo in cui vengono gestite le app, inclusa la modalità di creazione di pacchetti, distribuzione e supporto.
+description: Spiega come vengono gestite le app, incluso come creare un pacchetto, distribuirle e supportarle.
 keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
@@ -24,56 +24,56 @@ ms.locfileid: "49840694"
  
 ## <a name="apps-generally"></a>App in generale
 
-Microsoft include alcune app principali insieme alla licenza Microsoft 365 E3 o E5 necessaria per partecipare a Microsoft Managed Desktop. Tuttavia, anche se vengono fornite queste app, sono ancora presenti determinate responsabilità e azioni da completare.
+Microsoft include alcune app chiave insieme alla licenza di Microsoft 365 E3 o E5 necessaria per partecipare a Microsoft Managed Desktop. Tuttavia, anche se forniamo queste app, hai ancora alcune responsabilità e azioni da completare.
 
-È inoltre possibile distribuire altre app non Microsoft agli utenti per il servizio self-service tramite il portale aziendale o un'installazione in background necessaria, tutti utilizzando la pipeline di distribuzione di Microsoft Intune. In caso di esperienza, è possibile eseguire la migrazione delle applicazioni necessarie. in alternativa, i Microsoft Consulting Services (MCS) o i fornitori non Microsoft saranno lieti di aiutarvi con un progetto di migrazione e di creazione di pacchetti. Per ulteriori informazioni sull'utilizzo di MCS, vedere [Working with Microsoft Consulting Services](apps-MCS.md).
+Puoi anche distribuire altre app non Microsoft agli utenti per il self-service tramite il portale aziendale o un'installazione in background necessaria, usando la pipeline di distribuzione di Microsoft Intune. Se hai esperienza, puoi eseguire la migrazione delle app che ti servono; in alternativa, Microsoft Consulting Services (MCS) o fornitori non Microsoft saranno lieti di aiutarti con un progetto di creazione di pacchetti e migrazione. Per ulteriori informazioni sull'utilizzo di MCS, vedere [Utilizzo di Microsoft Consulting Services.](apps-MCS.md)
 
 
 ## <a name="apps-provided-by-microsoft"></a>App fornite da Microsoft
 
-In dotazione con la licenza Microsoft Managed Desktop sono disponibili versioni a 64 bit delle app di Microsoft 365 Apps for Enterprise Standard Suite (Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype for business e OneNote). Le versioni a portata di clic di Microsoft Project e Visio *non* sono incluse per impostazione predefinita, ma è possibile richiederne l'aggiunta. Per ulteriori informazioni su queste app, vedere [Install Microsoft Project o Microsoft Visio su Microsoft Managed Desktop Devices](../get-started/project-visio.md).
+La licenza Microsoft Managed Desktop include versioni a 64 bit delle app in Microsoft 365 Apps for enterprise Standard Suite (Word, Excel, PowerPoint, Outlook, Publisher, Access, Skype for Business e OneNote). Per impostazione predefinita, le versioni A  to-Run di Microsoft Project e Visio non sono incluse, ma è possibile richiederle di essere aggiunte. Per ulteriori informazioni su queste app, vedere [Installare Microsoft Project o Microsoft Visio nei dispositivi Microsoft Managed Desktop.](../get-started/project-visio.md)
 
-### <a name="what-microsoft-does-to-support-the-apps-we-provide"></a>Cosa fa Microsoft per supportare le app che forniamo
+### <a name="what-microsoft-does-to-support-the-apps-we-provide"></a>Cosa fa Microsoft per supportare le app fornite
 
-Microsoft fornirà il servizio completo per la distribuzione, l'aggiornamento e il supporto per le app di Microsoft 365 incluse per Enterprise Apps. Le versioni a portata di clic di Microsoft Project e Visio *non* sono incluse per impostazione predefinita, ma Microsoft Managed Desktop fornirà ai gruppi di distribuzione che consentono all'amministratore IT di gestire le licenze e distribuirle in modo appropriato per la propria organizzazione. Microsoft sosterrà gli utenti di queste applicazioni tramite i canali di supporto di Microsoft Managed Desktop.
+Microsoft fornirà il servizio completo per la distribuzione, l'aggiornamento e il supporto per le app di Microsoft 365 Apps for enterprise incluse. Le versioni A click-to-Run  di Microsoft Project e Visio non sono incluse per impostazione predefinita, ma Microsoft Managed Desktop fornirà gruppi di distribuzione che consentono all'amministratore IT di gestire le licenze e distribuire tali applicazioni in modo appropriato per l'organizzazione. Microsoft supporterà gli utenti di queste applicazioni tramite i canali di supporto di Microsoft Managed Desktop.
 
-### <a name="what-you-need-to-do-to-support-the-apps-we-provide"></a>Cosa devi fare per supportare le app che fornisci
+### <a name="what-you-need-to-do-to-support-the-apps-we-provide"></a>Cosa devi fare per supportare le app fornite
 
-Sono ancora necessarie alcune operazioni da eseguire con queste app:
+Esistono ancora alcune operazioni da eseguire con queste app:
 
-- **Assegnare le licenze** : si è responsabili dell'ottenimento e dell'assegnazione delle licenze appropriate agli utenti per le app Microsoft 365 per Enterprise.
-- **Aggiungere utenti ai gruppi di sicurezza** : se si utilizza Microsoft Project o Visio, l'amministratore IT deve aggiungere tali utenti ai gruppi di distribuzione corretti. Gli amministratori IT sono anche responsabili del recupero delle licenze da tali utenti se lasciano la società.
-- **Distribuire i componenti aggiuntivi di microsoft 365** -se sono necessari componenti aggiuntivi per qualsiasi app di Microsoft 365 per le applicazioni Enterprise, distribuire le app in modo centralizzato come qualsiasi altra applicazione Windows 32. 
+- **Assegnare** licenze: si è responsabili di ottenere e assegnare le licenze appropriate agli utenti per Microsoft 365 Apps for enterprise.
+- **Aggiungere utenti ai gruppi di** sicurezza: se si utilizza Microsoft Project o Visio, l'amministratore IT deve aggiungere tali utenti ai gruppi di distribuzione appropriati. Gli amministratori IT sono inoltre responsabili del recupero delle licenze da tali utenti se lasciano l'azienda.
+- Distribuire i componenti aggiuntivi di **Microsoft 365:** se sono necessari componenti aggiuntivi per qualsiasi app di Microsoft 365 Apps for enterprise, distribuirli centralmente come qualsiasi altra app di Windows 32. 
 
 ## <a name="apps-you-provide"></a>App fornite
 
-È probabile che siano presenti altre applicazioni necessarie per le operazioni aziendali. Queste app possono essere distribuite solo nei dispositivi Microsoft Managed Desktop mediante la pipeline di distribuzione di Microsoft Intune. Se l'applicazione ne ha bisogno, è possibile farli impacchettare da un fornitore (che potrebbe essere un fornitore non Microsoft o Microsoft Consulting Services (MCS)) oppure se si dispone dei mezzi necessari, è possibile imballarli personalmente. Successivamente, aggiungere questi pacchetti al portale Microsoft Managed Desktop e assegnarli ai gruppi di Azure Active Directory per attivare la distribuzione. 
+Probabilmente hai altre app necessarie per le operazioni aziendali. Queste app possono essere distribuite solo nei dispositivi Microsoft Managed Desktop tramite la pipeline di distribuzione di Microsoft Intune. Se l'app ne ha bisogno, puoi inserirle in un pacchetto da un fornitore (che potrebbe essere un fornitore non Microsoft o Microsoft Consulting Services (MCS)) oppure, se hai i mezzi necessari, puoi creare il pacchetto manualmente. Questi pacchetti vengono quindi aggiunti al portale Microsoft Managed Desktop e assegnati ai gruppi di Azure Active Directory per attivare la distribuzione. 
 
-Se le app vengono attualmente distribuite tramite Microsoft endpoint Configuration Manager, Microsoft Managed Desktop può fornire una query per valutare le app e individuare quelle pronte per la migrazione a Microsoft Intune e quali potrebbero essere necessarie per la rettifica.
-
-
-### <a name="preparing-your-own-apps-for-inclusion-in-microsoft-managed-desktop"></a>Preparare le proprie app per l'inclusione in Microsoft Managed Desktop
-Esaminare le app, verificando:
-
-- Nessuna delle app è vietata o ha un comportamento limitato, come descritto in [Microsoft Managed Desktop App requirements](https://aka.ms/app-req).
-- Le app devono essere pronte per la gestione da Microsoft Intune. Per ulteriori informazioni su questo argomento, vedere [Windows 10 App Deployment Using Microsoft Intune](https://docs.microsoft.com/intune/apps-windows-10-app-deploy) and [Add Apps to Microsoft Intune](https://docs.microsoft.com/intune/apps-add).
-- Altri requisiti di preconfezionamento, ad esempio la fornitura di codici di licenza, il contratto con le condizioni di licenza e la preimpostazione delle connessioni server.
-
-### <a name="decide-how-to-package-apps"></a>Decidere come eseguire il pacchetto di app
-
-Alcuni editori di software indipendenti potrebbero richiedere che le app siano inserite in un pacchetto prima di essere distribuite in modo centralizzato. "Packaging" indica che il programma di installazione dell'app è configurato con impostazioni come le chiavi di licenza, le posizioni dei server remoti o i collegamenti desktop in modo che sia possibile installare l'app in background.
-
-Sono disponibili tre opzioni per ottenere i pacchetti delle app: 
+Se attualmente distribuisci le tue app usando Microsoft Endpoint Configuration Manager, Microsoft Managed Desktop può fornire una query per valutare le tue app e scoprire quali sono pronte per la migrazione a Microsoft Intune e quali potrebbero richiedere alcune regolazioni.
 
 
-- È possibile creare pacchetti per le app
+### <a name="preparing-your-own-apps-for-inclusion-in-microsoft-managed-desktop"></a>Preparazione delle tue app per l'inclusione in Microsoft Managed Desktop
+Controlla le tue app, controllando:
+
+- Nessuna delle app è proibita o ha un comportamento limitato, come descritto nei [requisiti delle app di Microsoft Managed Desktop.](https://aka.ms/app-req)
+- Le app devono essere pronte per la gestione da parte di Microsoft Intune. Per altre informazioni su questo argomento, vedi Distribuzione di app di [Windows 10 con Microsoft Intune](https://docs.microsoft.com/intune/apps-windows-10-app-deploy) e Aggiungi app a Microsoft [Intune.](https://docs.microsoft.com/intune/apps-add)
+- Altri requisiti di pre-creazione del pacchetto, ad esempio la fornitura di codici di licenza, l'accordo con le condizioni di licenza e la pre-impostazione delle connessioni server.
+
+### <a name="decide-how-to-package-apps"></a>Decidere come creare il pacchetto delle app
+
+Alcuni editori di software indipendenti potrebbero richiedere che le tue app siano in pacchetto prima della distribuzione centralizzata. "Creazione di pacchetti" significa che il programma di installazione dell'app è configurato con impostazioni come codici di licenza, percorsi server remoti o collegamenti sul desktop in modo che l'app possa essere installata in background.
+
+Sono disponibili tre opzioni per il pacchetto delle tue app: 
+
+
+- Puoi creare il pacchetto delle app manualmente
 - È possibile collaborare con un fornitore non Microsoft
-- È possibile coinvolgere MCS per il pacchetto delle app. Collaborare con il proprio rappresentante dell'account Microsoft. Per ulteriori informazioni, vedere [Working with Microsoft Consulting Services](apps-MCS.md).
+- Puoi interagire con MCS per creare un pacchetto delle tue app. Collaborare con il rappresentante dell'account Microsoft. Per ulteriori informazioni, vedere [Utilizzo di Microsoft Consulting Services.](apps-MCS.md)
 
 
 
 ## <a name="deploying-apps"></a>Distribuzione di app
 
-Indipendentemente dal metodo utilizzato per ottenere le app inserite, una volta completata, si è pronti a seguire la procedura descritta in [deploy Apps to Microsoft Managed Desktop Devices](../get-started/deploy-apps.md).
+Indipendentemente dal metodo utilizzato per ottenere le app in pacchetto, una volta completata la procedura, è possibile seguire i passaggi descritti in Distribuire le app ai [dispositivi Desktop gestito Microsoft.](../get-started/deploy-apps.md)
 
 

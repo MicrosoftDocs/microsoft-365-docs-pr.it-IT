@@ -1,5 +1,5 @@
 ---
-title: Allineamento avanzato di eDiscovery con EDRM
+title: Allineamento di Advanced eDiscovery con EDRM
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -17,7 +17,7 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Il flusso di lavoro incorporato di Advanced eDiscovery in Microsoft 365 è allineato al processo eDiscovery delineato dal modello di riferimento di Electronic Discovery (EDRM).
+description: Il flusso di lavoro predefinito di Advanced eDiscovery in Microsoft 365 è allineato al processo eDiscovery delineato dal modello di riferimento per l'individuazione elettronica (EDRM, Electronic Discovery Reference Model).
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 4ca94baf1fc57ac014a32a80ddc5705feeb2c842
 ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
@@ -26,34 +26,34 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/13/2021
 ms.locfileid: "49841634"
 ---
-# <a name="advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model"></a>Allineamento avanzato di eDiscovery con il modello di riferimento per l'individuazione elettronica
+# <a name="advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model"></a>Allineamento di Advanced eDiscovery con il modello di riferimento per l'individuazione elettronica
 
-Il flusso di lavoro incorporato di Advanced eDiscovery in Microsoft 365 è allineato al processo eDiscovery delineato dal modello di riferimento di Electronic Discovery (EDRM).
+Il flusso di lavoro predefinito di Advanced eDiscovery in Microsoft 365 è allineato al processo eDiscovery delineato dal modello di riferimento per l'individuazione elettronica (EDRM, Electronic Discovery Reference Model).
 
-![EDRM (Electronic Discovery Reference Model)](../media/EDRMv1.png)
+![Electronic Discovery Reference Model (EDRM)](../media/EDRMv1.png)
 
-(Fonte di immagini per gentile concessione di edrm.net. L'immagine di origine è stata resa disponibile nella licenza Creative Commons Attribution 3,0 Unported.
+(Origine immagine per gentile edrm.net. L'immagine di origine è stata resa disponibile in Creative Commons Attribution 3.0 Unported License.
 
-A livello elevato, ecco come Advanced eDiscovery supporta il flusso di lavoro di EDRM:
+A livello elevato, ecco come Advanced eDiscovery supporta il flusso di lavoro EDRM:
 
-- **Identificazione.** Dopo aver identificato potenziali persone di interesse in un'indagine, è possibile aggiungerle come depositari (denominate anche *depositari dei dati*, in quanto potrebbero essere in possesso di informazioni rilevanti per l'indagine) in un caso di eDiscovery avanzato. Dopo che gli utenti vengono aggiunti come depositari, è facile conservare, raccogliere e rivedere i documenti del custode.
+- **Identificazione.** Dopo aver identificato potenziali persone di interesse in un'indagine, è possibile aggiungerle come responsabili (detti anche responsabili dei *dati,* perché potrebbero disporre di informazioni rilevanti per l'indagine) a un caso di Advanced eDiscovery. Dopo l'aggiunta degli utenti come responsabile, è facile conservare, raccogliere ed esaminare i documenti dei revisori.
 
-- **Conservazione.** Per conservare e proteggere i dati rilevanti per un'indagine, Advanced eDiscovery consente di inserire una conservazione legale sulle origini dati associate ai depositari in un caso. È inoltre possibile inserire i dati non detentivi in attesa. Advanced eDiscovery dispone anche di un flusso di lavoro di comunicazione incorporato in modo da poter inviare notifiche di archiviazione legale ai depositari e tenere conto dei loro ringraziamenti.
+- **Conservazione.** Per conservare e proteggere i dati rilevanti per un'indagine, Advanced eDiscovery consente di conservare a livello legale le origini dati associate ai responsabile in un caso. È anche possibile mettere in attesa i dati non dei depositario. Advanced eDiscovery include anche un flusso di lavoro di comunicazione incorporato che consente di inviare notifiche di blocco a un responsabile e di tenere traccia dei loro riconoscimenti.
 
-- **Raccolta.** Dopo aver identificato (e conservato) le origini dati rilevanti per l'analisi, è possibile utilizzare lo strumento di ricerca incorporato in Advanced eDiscovery Search for and Collect Live Data from the detenzione Data Sources (e le origini dati non detentive, se applicabile) che potrebbero essere rilevanti per il caso.
+- **Insieme.** Dopo aver identificato (e conservato) le origini dati rilevanti per l'indagine, è possibile utilizzare lo strumento di ricerca incorporato in Advanced eDiscovery per cercare e raccogliere i dati in tempo reale dalle origini dati del responsabile (e da origini dati non di tipo depositario, se applicabile) che potrebbero essere rilevanti per il caso.
 
-- **Elaborazione.** Dopo aver raccolto tutti i dati rilevanti per il caso, il passaggio successivo consiste nel processo per ulteriori riesami e analisi. In Advanced eDiscovery, i dati sul posto identificati nella fase di raccolta vengono copiati in un percorso di archiviazione di Azure (denominato *set di revisione*), in cui viene fornita una visualizzazione statica dei dati del caso. 
+- **Elaborazione.** Dopo aver raccolto tutti i dati rilevanti per il caso, il passaggio successivo consiste nell'elaborarlo per un'ulteriore revisione e analisi. In Advanced eDiscovery, i dati sul posto identificati nella fase di raccolta vengono copiati in un percorso di archiviazione di Azure (denominato *insieme* da rivedere), che fornisce una visualizzazione statica dei dati del caso. 
 
-- **Recensione.** Dopo aver aggiunto i dati a un set di revisione, è possibile visualizzare documenti specifici ed eseguire query aggiuntive per ridurre i dati a ciò che è più pertinente per il caso. Inoltre, è possibile annotare e contrassegnare documenti specifici.
+- **Revisione.** Dopo aver aggiunto i dati a un insieme da rivedere, è possibile visualizzare documenti specifici ed eseguire query aggiuntive per ridurre i dati a ciò che è più rilevante per il caso. Inoltre, è possibile aggiungere annotazioni e contrassegnare documenti specifici.
 
-- **Analisi.** Advanced eDiscovery fornisce uno strumento di analisi integrata che consente di eliminare i dati dall'insieme di revisione che si determina non è pertinente per l'indagine. Oltre a ridurre il volume dei dati rilevanti, Advance eDiscovery aiuta anche a salvare i costi di revisione legale, consentendo di organizzare il contenuto per semplificare e rendere più efficiente il processo di revisione.
+- **Analisi.** Advanced eDiscovery fornisce uno strumento di analisi integrato che consente di aggiungere ulteriori dati dal set di recensioni che si determina non è rilevante per l'indagine. Oltre a ridurre il volume di dati pertinenti, Advance eDiscovery consente anche di risparmiare sui costi di revisione legale consentendo di organizzare il contenuto per rendere il processo di revisione più semplice ed efficiente.
 
-- **Produzione** e **presentazione.** Quando si è pronti, è possibile esportare i documenti da un set di revisione per la revisione legale. È possibile esportare documenti nel formato nativo o in un formato specificato per EDRM in modo che possano essere importati in applicazioni di revisione di terze parti.
+- **Produzione** e **presentazione.** Quando si è pronti, è possibile esportare i documenti da un insieme di recensioni per la revisione legale. È possibile esportare i documenti nel formato nativo o in un formato specificato da EDRM in modo che possano essere importati in applicazioni di revisione di terze parti.
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
-Per iniziare a utilizzare Advanced eDiscovery, vedere:
+Per iniziare a usare Advanced eDiscovery, vedere:
 
 - [Configurare Advanced eDiscovery](get-started-with-advanced-ediscovery.md)
 
-- [Creazione e gestione di un caso di eDiscovery avanzato](create-and-manage-advanced-ediscoveryv2-case.md)
+- [Creare e gestire un caso di Advanced eDiscovery](create-and-manage-advanced-ediscoveryv2-case.md)

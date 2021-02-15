@@ -4,9 +4,9 @@
       href: move-from-google-workspace-overview.md
     - name: Iscriversi a Microsoft 365
       href: ../sign-up.md?toc=/microsoft-365/business-video/moveto-microsoft-365/toc.json&bc=/microsoft-365/business-video/moveto-microsoft-365/breadcrumb/toc.json
-    - name: Configurare Microsoft 365 per Google Migration
+    - name: Configurare la migrazione di Microsoft 365 per Google
       href: set-up-microsoft-365-forgoogle.md
-    - name: Impostare i criteri di sicurezza per i dispositivi Windows
+    - name: Configurare i criteri di sicurezza per i dispositivi Windows
       href: ../secure-win10-pcs.md?toc=/microsoft-365/business-video/moveto-microsoft-365/toc.json&bc=/microsoft-365/business-video/moveto-microsoft-365/breadcrumb/toc.json
     - name: Aggiungere il dominio di Google Workspace
       href: add-google-domain.md
@@ -16,7 +16,7 @@
       href: migrate-email.md
     - name: Connettere il proprio dominio a Microsoft 365
       href: connect-domain-tom365.md
-    - name: Utilizzo di Mover per spostare i dati di tutti
+    - name: Utilizzare Mover per spostare i dati di tutti gli utenti
       href: mover-migrate-files.md
-    - name: Annullare l'area di lavoro di Google
+    - name: Annullare Google Workspace
       href: cancel-google.md

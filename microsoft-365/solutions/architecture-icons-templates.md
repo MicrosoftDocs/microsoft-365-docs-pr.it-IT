@@ -1,6 +1,6 @@
 ---
-title: Icone e modelli di architettura di Microsoft 365
-description: Icone da utilizzare per la creazione di diagrammi di architettura per Microsoft 365.
+title: Icone e modelli dell'architettura di Microsoft 365
+description: Icone da usare nella creazione di diagrammi dell'architettura per Microsoft 365.
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -17,18 +17,18 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 12/16/2020
 ms.locfileid: "49688777"
 ---
-# <a name="microsoft-365-architecture-icons-and-templates"></a>Icone e modelli di architettura di Microsoft 365
+# <a name="microsoft-365-architecture-icons-and-templates"></a>Icone e modelli dell'architettura di Microsoft 365
 
-La progettazione e l'architettura di nuove soluzioni è importante per i partner e i clienti. I diagrammi di architettura come quelli inclusi nelle nostre linee guida consentono di comunicare le decisioni di progettazione e le relazioni tra i componenti di un ambiente. È possibile utilizzare un insieme di simboli e icone insieme ai modelli di Visio per creare i diagrammi di architettura prodotti e fornire questi strumenti per la creazione di un diagramma di architettura personalizzato per la soluzione successiva.
+Aiutare i nostri partner e clienti a progettare e progettare nuove soluzioni è importante. Diagrammi dell'architettura come quelli inclusi nelle linee guida possono aiutare a comunicare le decisioni di progettazione e le relazioni tra i componenti in un ambiente. Viene utilizzato un set di simboli e icone insieme ai modelli di Visio per creare i diagrammi dell'architettura prodotti e vengono qui disponibili questi strumenti che consentono di creare un diagramma dell'architettura personalizzato per la soluzione successiva.
 
-È possibile visualizzare le icone, i simboli e i modelli in azione nei file scaricabili disponibili nelle pagine seguenti:
+È possibile visualizzare icone, simboli e modelli in azione nei file scaricabili disponibili nelle pagine seguenti:
 
-- [Illustrazioni sulla produttività](productivity-illustrations.md)
+- [Illustrazioni di produttività](productivity-illustrations.md)
 - [Modelli di architettura cloud Microsoft](cloud-architecture-models.md)
 
-## <a name="terms-and-download"></a>Termini e download
+## <a name="terms-and-download"></a>Condizioni e download
 
-Microsoft consente l'utilizzo di queste icone nei diagrammi architettonici, nei materiali didattici o nella documentazione. È possibile copiare, distribuire e visualizzare le icone solo per l'utilizzo consentito, a meno che non venga concessa l'autorizzazione esplicita da parte di Microsoft. Microsoft reserves all other rights.
+Microsoft consente l'uso di queste icone in diagrammi architetturali, materiali di formazione o documentazione. È possibile copiare, distribuire e visualizzare le icone solo per l'uso consentito, a meno che non venga concessa l'autorizzazione esplicita da Microsoft. Microsoft reserves all other rights.
 
 
  > [!div class="button"]
@@ -45,6 +45,6 @@ Microsoft consente l'utilizzo di queste icone nei diagrammi architettonici, nei 
 
     ![Architettura di ricerca di esempio per SharePoint](../media/configure-search-for-multi-geo-image1-1.png)
 
-2. Diagramma dell'architettura del ciclo di vita delle squadre:
+2. Diagramma dell'architettura del ciclo di vita di conservazione di Teams:
 
-    ![Ciclo di vita di conservazione Teams](../media/TeamsRetentionLifecycle.png)
+    ![Ciclo di vita di conservazione di Teams](../media/TeamsRetentionLifecycle.png)

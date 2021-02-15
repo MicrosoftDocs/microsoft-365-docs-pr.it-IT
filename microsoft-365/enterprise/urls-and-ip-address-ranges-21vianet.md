@@ -19,7 +19,7 @@ ms.assetid: 5c47c07d-f9b6-4b78-a329-bfdc1b6da7a0
 ms.custom: seo-marvel-apr2020
 f1.keywords:
 - NOCSH
-description: In questo articolo vengono elencati gli URL e gli intervalli di indirizzi IP per Office 365 quando vengono gestiti da 21Vianet in Cina.
+description: Questo articolo elenca gli URL e gli intervalli di indirizzi IP per Office 365 se gestito da 21Vianet in Cina.
 hideEdit: true
 ms.openlocfilehash: 8a17cb9da5cf552615abf1ac20a67463e8430eb7
 ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23

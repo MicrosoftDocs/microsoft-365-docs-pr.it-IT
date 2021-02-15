@@ -1,6 +1,6 @@
 ---
 title: Configurare i dispositivi per Microsoft Managed Desktop
-description: Come ottenere nuovi dispositivi o riutilizzare quelli esistenti che si qualificano
+description: Come ottenere nuovi dispositivi o riutilizzare quelli esistenti idonei
 keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
@@ -16,28 +16,28 @@ ms.locfileid: "49840504"
 ---
 # <a name="set-up-microsoft-managed-desktop-devices"></a>Configurare dispositivi Microsoft Managed Desktop
 
-È possibile utilizzare i dispositivi nuovi e quelli esistenti in Microsoft Managed Desktop.
+È possibile usare sia i dispositivi nuovi che quelli esistenti in Microsoft Managed Desktop.
 
 ## <a name="to-obtain-new-devices"></a>Per ottenere nuovi dispositivi
 
-Si consiglia di collaborare con uno dei partner del dispositivo approvati. Per ulteriori informazioni sulla configurazione di una partnership tra dispositivi, è possibile collaborare con il proprio contatto account Microsoft. In sostanza, tuttavia, il processo è simile al seguente:
+Ti consigliamo di lavorare con uno dei nostri partner di dispositivi approvati. Puoi collaborare con il contatto dell'account Microsoft per altre informazioni sulla configurazione di una partnership con il dispositivo. In sostanza, tuttavia, il processo è simile al seguente:
 
-1. Esaminare l'elenco dei [dispositivi attualmente approvati](../service-description/device-list.md).
-2. Ordinare i dispositivi per l'utilizzo di un partner di dispositivo approvato.
+1. Esaminare l'elenco dei [dispositivi attualmente approvati.](../service-description/device-list.md)
+2. Ordina i dispositivi, collaborando con un partner di dispositivi approvato.
 3. Una volta arrivati, eseguire una delle operazioni seguenti:
     - [Registrare manualmente i nuovi dispositivi](register-devices-self.md)
-    - Collaborare con un partner per la registrazione dei dispositivi
-4. Preparare [gli utenti](get-started-devices.md) a utilizzare i dispositivi Microsoft Managed Desktop
+    - Collaborare con un partner per registrare i dispositivi
+4. [Prepara gli utenti a](get-started-devices.md) usare i dispositivi Microsoft Managed Desktop
 
 ## <a name="to-reuse-existing-devices"></a>Per riutilizzare i dispositivi esistenti
 
-1. Esaminare l'elenco dei [dispositivi attualmente approvati](../service-description/device-list.md) per identificare quali dispositivi sono stati approvati per l'utilizzo con Microsoft Managed Desktop. Se si riutilizza un dispositivo esistente, sarà necessario rivisualizzarlo.
+1. Esaminare l'elenco [dei dispositivi attualmente approvati](../service-description/device-list.md) per identificare quali dispositivi sono approvati per l'uso con Microsoft Managed Desktop. Se riutilizzi un dispositivo esistente, devi ricreare l'immagine.
 2. Eseguire una delle operazioni seguenti:
     - [Registrare manualmente i dispositivi già presenti](register-reused-devices-self.md)
-    - Collaborare con un partner per la registrazione dei dispositivi
-3. Preparare [gli utenti](get-started-devices.md) a utilizzare i dispositivi Microsoft Managed Desktop
+    - Collaborare con un partner per registrare i dispositivi
+3. [Prepara gli utenti a](get-started-devices.md) usare i dispositivi Microsoft Managed Desktop
 
-## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Passaggi per iniziare a utilizzare Microsoft Managed Desktop
+## <a name="steps-to-get-started-with-microsoft-managed-desktop"></a>Procedura per iniziare a usare Microsoft Managed Desktop
 
 1. [Aggiungere e verificare i contatti degli amministratori nel portale di amministrazione](add-admin-contacts.md)
 2. [Modificare l'accesso condizionale](conditional-access.md)

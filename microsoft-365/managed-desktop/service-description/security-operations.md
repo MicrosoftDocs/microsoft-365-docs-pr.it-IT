@@ -1,6 +1,6 @@
 ---
 title: Operazioni di sicurezza in Microsoft Managed Desktop
-description: Servizi e processi forniti dal centro operazioni di sicurezza
+description: Servizi e processi forniti dal Centro operativo per la sicurezza
 keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
@@ -18,27 +18,27 @@ ms.locfileid: "49840343"
 ---
 # <a name="security-operations-in-microsoft-managed-desktop"></a>Operazioni di sicurezza in Microsoft Managed Desktop
 
-I partner di Microsoft Managed Desktop Security Operations Center (SOC) con il personale di sicurezza delle informazioni per mantenere il proprio ambiente desktop sicuro. Il nostro team riceve e risponde a tutti gli avvisi di sicurezza sui dispositivi gestiti con analisi di esperti e, quando necessario, si guidano le attività di risposta agli incidenti di sicurezza. Per ulteriori informazioni sull'utilizzo del SOC, vedere documentazione operativa nel portale di amministrazione.
+Microsoft Managed Desktop Security Operations Center (SOC) collabora con il personale di sicurezza delle informazioni per proteggere l'ambiente desktop. Il team riceve e risponde a tutti gli avvisi di sicurezza nei dispositivi gestiti con analisi esperte e, se necessario, guida le attività di risposta agli incidenti di sicurezza. Per altre informazioni sull'uso del SOC, consultare la documentazione operativa nel portale di amministrazione.
 
-Il SOC offre una copertura di 24/7/365 per i dipendenti a tempo pieno di Microsoft con esperienza nel panorama delle minacce attuale ed emergente, compresi i comuni metodi di attacco tramite software, rete o avversari umani.
+Il SOC offre una copertura 24/7/365 da parte di dipendenti Microsoft a tempo pieno con esperienza nel panorama delle minacce attuali ed emergenti, inclusi i metodi di attacco comuni tramite software, rete o antagoni umani.
 
 Il SOC fornisce questi servizi:
-- Risposta rapida e accurata agli eventi rilevati, con analisi dei dati per identificare l'impatto e valutare il rischio globale per un dispositivo o per l'ambiente in uso
-- Operazioni di gestione e isolamento dei dispositivi per proteggere l'ambiente da compromessi noti o sospetti, riducendo i rischi impedendo la diffusione
-- Guida del processo di risposta agli incidenti di sicurezza, garantire comunicazioni accurate e tempestive con il team di sicurezza
-- Analisi e suggerimenti basati sui dati relativi a minacce e vulnerabilità per identificare e risolvere i rischi prima che vengano sfruttati
-- Ricerca avanzata tra i dispositivi gestiti per identificare indicatori ed entità per minacce note e potenziali
+- Risposta rapida e precisa agli eventi rilevati, con analisi dei dati per identificare l'impatto e valutare il rischio complessivo per un dispositivo o per l'ambiente
+- Azioni di gestione e isolamento dei dispositivi per proteggere l'ambiente da compromissione note o sospette, riducendo i rischi impedendo la diffusione
+- Guidare il processo di risposta agli incidenti di sicurezza, garantendo comunicazioni accurate e accurate con il team di sicurezza
+- Analisi e suggerimenti basati su dati relativi a minacce e vulnerabilità per identificare e affrontare i rischi prima di essere sfruttati
+- Ricerca avanzata nei dispositivi gestiti per identificare indicatori ed entità per minacce note e potenziali
 
 ## <a name="processes"></a>Processi
 
-- Le operazioni di sicurezza di Microsoft Managed Desktop sono gestite da dipendenti Microsoft a tempo pieno in partnership con il [centro operazioni di difesa cibernetico](https://www.microsoft.com/msrc/cdoc)di Microsoft. 
-- Il SOC utilizza segnali collettivi provenienti da tutta la nostra azienda, sia interni che esterni, per proteggere i propri dispositivi, anche da ciò che non è stato ancora visto in Microsoft Managed Desktop.
-- Le soluzioni di sicurezza Microsoft sono allineate a numerosi standard di protezione di Cybersecurity. Le operazioni SOC si basano sul National Institute of Standards and Technology Computer Security Incident Response handling Guide (NIST 800-61 R2).
-- Il processo consente la raccolta di informazioni e prove appropriate, per l'analisi e la documentazione e l'approfondimento del post-ripristino in modi per difendere meglio l'ambiente attraverso queste fasi:
+- Microsoft Managed Desktop Security Operations è gestito da dipendenti Microsoft a tempo pieno in collaborazione con [il Cyber Defense Operations Center di](https://www.microsoft.com/msrc/cdoc)Microsoft. 
+- Il nostro SOC usa segnali collettivi provenienti da tutta l'azienda, sia interni che esterni, per proteggere i dispositivi, anche da cose che non abbiamo ancora visto in Microsoft Managed Desktop.
+- Le soluzioni di sicurezza Microsoft sono allineate a molti standard di protezione dalla cybersecurity. Le operazioni SOC si basano sulla National Institute of Standards and Technology Computer Security Incident Response Handling Guide (NIST 800-61 r2).
+- Il processo consente una raccolta appropriata di informazioni ed elementi di prova, per l'analisi, la documentazione e le informazioni dettagliate post-ripristino per proteggere meglio l'ambiente attraverso queste fasi:
     - Preparazione, rilevamento e analisi
     - Contenimento
     - Eradicazione
     - Ripristino
-    - Attività post-evento
-- I clienti Microsoft Managed Desktop sono idonei ad iscriversi al servizio Microsoft Threat Experts. Il SOC mantiene con questo servizio per comprendere meglio le complesse minacce che interessano la propria organizzazione, tra cui le richieste di avviso, i dispositivi potenzialmente compromessi, la causa principale di una connessione di rete sospetta e altre informazioni sulle minacce per le continue campagne di minacce permanenti avanzate. Per ulteriori informazioni, vedere [Microsoft Threat Experts](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts).
-- Il processo di gestione della vulnerabilità e delle minacce di SOC utilizza alcuni dei servizi di Microsoft per informare i consigli dell'organizzazione sulla protezione dalle minacce. Il SOC utilizza i dati del Centro sicurezza di Microsoft Defender per endpoint e da fonti di dati di vulnerabilità rilevanti all'interno e all'esterno di Microsoft per individuare vulnerabilità e configurazioni errate e fornire relazioni di azione.
+    - Attività post-evento imprevisto
+- I clienti di Microsoft Managed Desktop sono idonei per iscriversi al servizio Microsoft Threat Experts. Il SOC si allena con questo servizio per comprendere meglio le minacce complesse che interessano l'organizzazione, incluse le richieste di avviso, i dispositivi potenzialmente compromessi, la causa principale di una connessione di rete sospetta e altre informazioni sulle minacce relative alle campagne di minacce persistenti avanzate in corso. Per ulteriori informazioni, vedere [Microsoft Threat Experts.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-threat-experts)
+- Il processo di gestione delle minacce e delle vulnerabilità di SOC utilizza alcuni dei servizi di Microsoft per fornire suggerimenti per l'organizzazione per la protezione dalle minacce. Il SOC usa i dati di Microsoft Defender per Endpoint Security Center e da origini dati di vulnerabilità rilevanti all'interno e all'esterno di Microsoft per individuare vulnerabilità e configurazioni erre e fornire report utilizzabili.

@@ -1,5 +1,5 @@
 ---
-title: Importare i depositari in un caso avanzato di eDiscovery
+title: Importare i responsabile in un caso di Advanced eDiscovery
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,7 +14,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Utilizzare lo strumento di importazione dto aggiungere rapidamente più depositari e le origini dati associate a un caso in Advanced eDiscovery.
+description: Utilizzare lo strumento di importazione per aggiungere rapidamente più responsabile e le origini dati associate a un caso in Advanced eDiscovery.
 ms.openlocfilehash: 65ae932fac759896690e5fa65ec1d4173439ccb6
 ms.sourcegitcommit: 36d12e02f6fda199ae7f2fb72fe52d7e2b5b4efd
 ms.translationtype: MT
@@ -22,88 +22,88 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 12/31/2020
 ms.locfileid: "49740303"
 ---
-# <a name="import-custodians-to-an-advanced-ediscovery-case"></a>Importare i depositari in un caso avanzato di eDiscovery
+# <a name="import-custodians-to-an-advanced-ediscovery-case"></a>Importare i responsabile in un caso di Advanced eDiscovery
 
-Per i casi di eDiscovery avanzati che coinvolgono numerosi depositari, è possibile importare più depositari contemporaneamente utilizzando un file CSV che contiene le informazioni necessarie per aggiungerle a un caso.
+Per i casi di Advanced eDiscovery che coinvolgono molti amministratori, è possibile importare più amministratori contemporaneamente utilizzando un file CSV contenente le informazioni necessarie per aggiungerli a un caso.
 
-## <a name="import-custodians"></a>Importare i depositari
+## <a name="import-custodians"></a>Importare i responsabile
 
-1. Aprire il caso Advanced eDiscovery e selezionare la scheda **origini dati** .
+1. Aprire il caso advanced eDiscovery e selezionare la **scheda Origini** dati.
 
-2. Fare clic su Aggiungi depositari di importazione di **origine dati**  >  .
+2. Fare **clic su Aggiungi responsabile dell'importazione**  >  **dell'origine dati.**
 
-3. Nella pagina **Importa** riquadro a comparsa dei depositari, fare clic su **Scarica un modello vuoto** per scaricare un file CSV del modello di custode.
+3. Nella pagina **a comparsa Importa i responsabile** fare clic su Scarica un modello **vuoto** per scaricare un file CSV del modello di responsabile.
 
-   ![Scaricare un modello CSV dalla pagina importazione a comparsa dei depositari](../media/ImportCustodians1.png)
+   ![Scaricare un modello CSV dalla pagina a comparsa Importare i responsabile](../media/ImportCustodians1.png)
 
-4. Aggiungere le informazioni di custodia al file CSV e salvarlo nel computer locale. Per informazioni sulle proprietà obbligatorie nel file CSV, vedere la sezione [file CSV del custode](#custodian-csv-file) .
+4. Aggiungere le informazioni del responsabile al file CSV e salvarle nel computer locale. Per informazioni sulle proprietà necessarie nel [file CSV,](#custodian-csv-file) vedere la sezione relativa al file CSV del responsabile.
 
-5. Dopo aver preparato il file CSV con le informazioni sul custode, tornare alla scheda **origini dati** e fare di nuovo clic su Aggiungi depositari di importazione di **origine dati**  >   .
+5. Dopo aver preparato il file CSV con le informazioni  del responsabile, tornare alla scheda Origini dati e fare di nuovo clic su Aggiungi responsabile dell'importazione  >  **dell'origine** dati.
 
-6. Nella pagina **Importa** riquadro a comparsa dei depositari fare clic su **Sfoglia** e quindi caricare il file CSV che contiene le informazioni sul custode.
+6. Nella pagina **a comparsa Importa i responsabile** fare clic su **Sfoglia** e quindi caricare il file CSV contenente le informazioni sui responsabile.
 
-   Dopo il caricamento del file CSV, viene creato e visualizzato un processo denominato **BulkAddCustodian** nella scheda **processi** . Il processo consente di convalidare i depositari e le origini dati associate e quindi di aggiungerli alla pagina **origini dati** del caso.
+   Dopo il caricamento del file CSV, viene creato e visualizzato un processo denominato **BulkAddCustodian** nella **scheda Processi.** Il processo convalida i responsabile e le origini dati associate e quindi li aggiunge alla **pagina Origini** dati del caso.
 
-## <a name="custodian-csv-file"></a>File CSV del custode
+## <a name="custodian-csv-file"></a>File CSV del responsabile
 
-Dopo aver scaricato il modello del custode CSV, è possibile aggiungere depositari e l'origine dati in ogni riga. Assicurarsi di non modificare i nomi delle colonne nella riga di intestazione. Per associare altre origini dati a un custode, utilizzare le colonne del tipo di carico di lavoro e del percorso del carico di lavoro.
+Dopo aver scaricato il modello di responsabile CSV, è possibile aggiungere i responsabile e l'origine dati corrispondente in ogni riga. Assicurarsi di non modificare i nomi delle colonne nella riga di intestazione. Utilizzare le colonne tipo di carico di lavoro e posizione del carico di lavoro per associare altre origini dati a un responsabile.
 
 | Nome colonna|Descrizione|
 |:------- |:------------------------------------------------------------|
-|**ContactEmail custode**     |L'indirizzo di posta elettronica UPN del custode. Ad esempio, sarad@contoso.onmicrosoft.com.           |
-|**Exchange abilitato** | Valore TRUE/FALSE per includere o meno la cassetta postale del custode.      |
-|**OneDrive abilitato** | Valore TRUE/FALSE per includere o meno l'account OneDrive for business del custode. |
-|**È OnHold**        | Valore TRUE/FALSE per indicare se inserire le origini dati del custode in attesa.       |
-|**Tipo di Workload1**         |Valore stringa che indica il tipo di origine dati da associare al custode. I valori possibili includono: <br/>- ExchangeMailbox<br/> -SitoSharePoint<br/>- TeamsMailbox<br/>- TeamsSite<br/> - YammerMailbox<br/>- YammerSite |
-|**Percorso Workload1**     | A seconda del tipo di carico di lavoro, si tratta del percorso dell'origine dati. Ad esempio, l'indirizzo di posta elettronica di una cassetta postale di Exchange o l'URL di un sito di SharePoint. |
+|**Contatto responsabileEmail**     |Indirizzo di posta elettronica UPN del responsabile. Ad esempio, sarad@contoso.onmicrosoft.com.           |
+|**Exchange abilitato** | Valore TRUE/FALSE per includere o non includere la cassetta postale del responsabile.      |
+|**OneDrive abilitato** | Valore TRUE/FALSE per includere o non includere l'account OneDrive for Business del responsabile. |
+|**Is OnHold**        | Valore TRUE/FALSE per indicare se le origini dati del responsabile devono essere in attesa.       |
+|**Tipo Carico di lavoro1**         |Valore stringa che indica il tipo di origine dati da associare al responsabile. I valori possibili includono: <br/>- ExchangeMailbox<br/> - SharePointSite<br/>- TeamsMailbox<br/>- TeamsSite<br/> - YammerMailbox<br/>- YammerSite |
+|**Posizione carico di lavoro 1**     | A seconda del tipo di carico di lavoro, si tratta della posizione dell'origine dati. Ad esempio, l'indirizzo di posta elettronica per una cassetta postale di Exchange o l'URL di un sito di SharePoint. |
 |||
 
-Di seguito è riportato un esempio di file CSV con informazioni sul custode:<br/><br/>
+Ecco un esempio di un file CSV con le informazioni del responsabile:<br/><br/>
 
-|ContactEmail custode      | Exchange abilitato | OneDrive abilitato | È OnHold | Tipo di Workload1 | Percorso Workload1             |
+|Contatto responsabileEmail      | Exchange abilitato | OneDrive abilitato | Is OnHold | Tipo Carico di lavoro1 | Posizione carico di lavoro 1             |
 | ----------------- | ---------------- | ---------------- | --------- | -------------- | ------------------------------ |
-|robinc@onmicrosoft.contoso.com | TRUE             | TRUE             | TRUE      | SitoSharePoint | https://contoso.sharepoint.com |
+|robinc@onmicrosoft.contoso.com | TRUE             | TRUE             | TRUE      | SharePointSite | https://contoso.sharepoint.com |
 |pillarp@onmicrosoft.contoso.com | TRUE             | TRUE             | TRUE      | |  |
 ||||||
 
-## <a name="custodian-and-data-source-validation"></a>Convalida del custode e dell'origine dati
+## <a name="custodian-and-data-source-validation"></a>Convalida del responsabile e dell'origine dati
 
-Dopo aver caricato il file CSV del custode, Advanced eDiscovery esegue le operazioni seguenti:
+Dopo aver caricato il file CSV del responsabile, Advanced eDiscovery esegue le operazioni seguenti:
 
-1. Convalida i depositari e le rispettive origini dati.
+1. Convalida i responsabile e le relative origini dati.
 
-2. Indicizza tutte le origini dati per ogni custode e le inserisce in blocco (se la proprietà **è OnHold** nel file CSV è impostata su true).
+2. Indicizza tutte le origini dati per ogni responsabile e le mette in attesa (se la proprietà **Is OnHold** nel file CSV è impostata su TRUE).
 
-### <a name="custodian-validation"></a>Convalida del custode
+### <a name="custodian-validation"></a>Convalida del responsabile
 
-Attualmente, è supportata solo l'importazione di custodi che sono inclusi nell'Azure Active Directory (Azure AD) dell'organizzazione.
+Attualmente, microsoft supporta solo l'importazione di responsabile inclusi in Azure Active Directory (Azure AD) dell'organizzazione.
 
-Lo strumento di importazione depositaria consente di individuare e convalidare i depositari utilizzando il valore UPN nella colonna **ContactEmail depositaria** nel file CSV. I depositari convalidati vengono automaticamente aggiunti al caso ed elencati nella scheda **origini dati** del caso. Se un custode non può essere convalidato, sono elencati nel registro degli errori per il processo di BulkAddCustodian elencato nella scheda **processi** nel caso. Gli amministratori non convalidati non vengono aggiunti al caso o sono elencati nella scheda **origini dati** .
+Lo strumento di importazione dei responsabile trova e convalida i responsabile utilizzando il valore UPN nella colonna **ContactEmail** del responsabile nel file CSV. I responsabile convalidati vengono aggiunti automaticamente al caso ed elencati nella **scheda Origini** dati del caso. Se un responsabile non può essere convalidato, viene elencato nel registro errori per il  processo BulkAddCustodian elencato nella scheda Processi. I responsabile non convalidati non vengono aggiunti al caso o elencati nella **scheda Origini** dati.
 
 ### <a name="data-source-validation"></a>Convalida dell'origine dati
 
-Dopo aver convalidato e aggiunto i depositari al caso, viene aggiunta ogni cassetta postale principale e l'account OneDrive associato a un custode.
+Dopo che i responsabile vengono convalidati e aggiunti al caso, vengono aggiunti ogni cassetta postale principale e ogni account di OneDrive associato a un responsabile.
 
-Tuttavia, se non è possibile trovare una delle altre origini dati (ad esempio, siti di SharePoint, Microsoft teams, gruppi di Microsoft 365 o gruppi di Yammer) associati a un custode, nessuno di essi viene assegnato al custode e il valore **non convalidato** viene visualizzato nella colonna **stato** accanto al custode nella scheda **origini dati** .
+Tuttavia, se non è possibile trovare altre origini dati (ad esempio siti di SharePoint, Microsoft Teams, gruppi di Microsoft 365 o gruppi di  Yammer) associate a un  responsabile, nessuna di esse viene assegnata al responsabile e il valore Non convalidato viene visualizzato nella colonna Stato accanto al responsabile nella scheda Origini **dati.**
 
-Per aggiungere origini dati convalidate per un custode:
+Per aggiungere origini dati convalidate per un responsabile:
 
-1. Nella scheda **origini dati** selezionare un custode che contiene origini dati che non vengono convalidate.
+1. Nella scheda **Origini dati** selezionare un responsabile che contiene origini dati non convalidate.
 
-2. Nella pagina riquadro a comparsa custode, scorrere fino alla sezione **percorsi custodia** per visualizzare le origini dati convalidate e non convalidate associate al custode.
+2. Nella pagina del riquadro a comparsa  del responsabile scorrere fino alla sezione Posizioni del responsabile per visualizzare sia le origini dati convalidate che le origini dati non convalidate associate al responsabile.
 
-3. Fare clic su **modifica** nella parte superiore della pagina a comparsa per rimuovere origini dati non valide o aggiungerne di nuove.
+3. Fare **clic su** Modifica nella parte superiore della pagina a comparsa per rimuovere origini dati non valide o aggiungerne di nuove.
 
-4. Dopo aver rimosso le origini dati non convalidate o averne aggiunto uno nuovo, il valore **attivo** viene visualizzato nella colonna **stato** per il custode nella scheda **origini dati** . Per aggiungere fonti che in precedenza risultavano non valide, seguire i passaggi di correzione riportati di seguito per aggiungerli manualmente a un custode.
+4. Dopo aver rimosso le origini dati non convalidate o averne  aggiunto una nuova, il valore **Attivo** viene visualizzato nella colonna Stato del responsabile nella **scheda Origini** dati. Per aggiungere origini che in precedenza non erano valide, segui i passaggi di correzione seguenti per aggiungerle manualmente a un responsabile.
 
 ### <a name="remediating-invalid-data-sources"></a>Correzione di origini dati non valide
 
 Per aggiungere e associare manualmente un'origine dati precedentemente non valida:
 
-1. Nella scheda **origini dati** selezionare un custode per aggiungere manualmente e associare un'origine dati precedentemente non valida.
+1. Nella scheda **Origini dati selezionare** un responsabile per aggiungere e associare manualmente un'origine dati precedentemente non valida.
 
-2. Fare clic su **modifica** nella parte superiore della pagina a comparsa per associare le cassette postali, i siti, i team o i gruppi di Yammer al custode. A tale scopo, fare clic su **modifica** accanto al tipo di percorso dati appropriato.
+2. Fare **clic** su Modifica nella parte superiore della pagina del riquadro a comparsa per associare cassette postali, siti, gruppi di Teams o Yammer al responsabile. A tale scopo, fare **clic su Modifica** accanto al tipo di percorso dati appropriato.
 
-3. Fare clic su **Avanti** per visualizzare la pagina **impostazioni di blocco** e configurare l'impostazione di blocco per le origini dati aggiunte.
+3. Fare **clic su** Avanti per visualizzare la pagina delle impostazioni **di** blocco e configurare l'impostazione di blocco per le origini dati aggiunte.
 
-4. Fare clic su **Avanti** per visualizzare la pagina **revisione dei custodi** e quindi fare clic su **Submit** per salvare le modifiche.
+4. Fare **clic** su Avanti per visualizzare **la pagina Rivedi** i revisori e quindi su **Invia** per salvare le modifiche.

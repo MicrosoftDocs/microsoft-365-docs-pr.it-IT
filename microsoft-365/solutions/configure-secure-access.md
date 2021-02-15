@@ -1,6 +1,6 @@
 ---
 title: Configurare l'accesso sicuro ai servizi di Microsoft 365
-description: Vengono fornite indicazioni per l'implementazione dell'AMF, dell'accesso condizionale e dei criteri correlati per i tre livelli di protezione-linea di base, sensibili e altamente riservati.
+description: "Trova indicazioni prescrittive per l'implementazione dell'autenticazione a più fattori, dell'accesso condizionale e dei criteri correlati per tre livelli di protezione: di base, sensibili, altamente sensibili."
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -21,4 +21,4 @@ ms.locfileid: "49771800"
 ---
 # <a name="configure-secure-access-to-microsoft-365-services"></a>Configurare l'accesso sicuro ai servizi di Microsoft 365
 
-Questa soluzione si basa su "[M365 Golden config](https://aka.ms/m365goldenconfig)"--indicazioni prescrittivi per l'implementazione dell'AMF, dell'accesso condizionale e dei criteri correlati per tre livelli di protezione: linea di base, sensibile, altamente riservata. 
+Questa soluzione si basa sulla " configurazione di riferimento[M365](https://aka.ms/m365goldenconfig)" -- indicazioni prescrittive per l'implementazione dell'autenticazione a più fattori, accesso condizionale e criteri correlati per tre livelli di protezione: di base, sensibili, altamente sensibili. 

@@ -1,5 +1,5 @@
 ---
-title: Configurare un connettore per archiviare i dati della coda rossa in Microsoft 365
+title: Configurare un connettore per archiviare i dati di Red tail Speak in Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -11,7 +11,7 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Gli amministratori possono configurare un connettore per l'importazione e l'archiviazione dei dati della coda rossa parla da Globanet a Microsoft 365. Questo connettore consente di archiviare i dati provenienti da origini dati di terze parti in Microsoft 365. Dopo l'archiviazione dei dati, è possibile utilizzare le funzionalità di conformità, ad esempio la conservazione legale, la ricerca del contenuto e i criteri di ritenzione per gestire i dati di terze parti.
+description: Gli amministratori possono configurare un connettore per importare e archiviare i dati di Red tail Speak da Globanet a Microsoft 365. Questo connettore consente di archiviare i dati da origini dati di terze parti in Microsoft 365. Dopo l'archiviazione di questi dati, è possibile utilizzare funzionalità di conformità come la conservazione a livello legale, la ricerca di contenuto e i criteri di conservazione per gestire i dati di terze parti.
 ms.openlocfilehash: ff66f00348bd3e73bdbd607bd4bd0c0f922786cc
 ms.sourcegitcommit: 5ba0015c1554048f817fdfdc85359eee1368da64
 ms.translationtype: MT
@@ -19,72 +19,72 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/06/2021
 ms.locfileid: "49769211"
 ---
-# <a name="set-up-a-connector-to-archive-redtail-speak-data"></a>Configurare un connettore per l'archiviazione dei dati di Redtail
+# <a name="set-up-a-connector-to-archive-redtail-speak-data"></a>Configurare un connettore per archiviare i dati di Redtail Speak
 
-Utilizzare un connettore di Globanet nel centro conformità di Microsoft 365 per importare e archiviare i dati da Redtail parlare con le cassette postali degli utenti nell'organizzazione Microsoft 365. Globanet fornisce un connettore [Redtail Speak](https://globanet.com/redtail/) configurato per acquisire elementi dal server SFTP dell'organizzazione in cui gli elementi vengono ricevuti da Redtail. Il connettore converte il contenuto da Redtail parlare con un formato di messaggio di posta elettronica e quindi importa tali elementi nella cassetta postale dell'utente in Microsoft 365.
+Usare un connettore Globanet nel Centro conformità Microsoft 365 per importare e archiviare i dati da Redtail Speak alle cassette postali degli utenti nell'organizzazione di Microsoft 365. Globanet fornisce un [connettore Redtail Speak](https://globanet.com/redtail/) configurato per acquisire elementi dal server SFTP dell'organizzazione da cui gli elementi vengono ricevuti da Redtail. Il connettore converte il contenuto da Redtail Speak in un formato di messaggio di posta elettronica e quindi importa tali elementi nella cassetta postale dell'utente in Microsoft 365.
 
-Dopo che i dati di Redtail Speak sono archiviati nelle cassette postali degli utenti, è possibile applicare le funzionalità di conformità di Microsoft 365 come il blocco per controversia legale, eDiscovery, i criteri di conservazione e etichette di conservazione. L'utilizzo di un connettore Speak di Redtail per l'importazione e l'archiviazione dei dati in Microsoft 365 può aiutare l'organizzazione a rimanere conforme ai criteri governativi e normativi.
+Dopo aver archiviato i dati di Redtail Speak nelle cassette postali degli utenti, è possibile applicare le funzionalità di conformità di Microsoft 365, ad esempio conservazione per controversia legale, eDiscovery, criteri di conservazione ed etichette di conservazione. L'uso di un connettore Redtail Speak per importare e archiviare i dati in Microsoft 365 può aiutare l'organizzazione a rimanere conforme ai criteri normativi e governativi.
 
 ## <a name="overview-of-archiving-the-redtail-speak-data"></a>Panoramica dell'archiviazione dei dati di Redtail Speak
 
-Nella panoramica seguente viene illustrato il processo di utilizzo di un connettore per archiviare i dati di Redtail speak in Microsoft 365.
+La seguente panoramica spiega il processo di utilizzo di un connettore per archiviare i dati di Redtail Speak in Microsoft 365.
 
-![Flusso di lavoro di archiviazione per Redtail Speak data](../media/RedtailSpeakConnectorWorkflow.png)
+![Flusso di lavoro di archiviazione per i dati Redtail Speak](../media/RedtailSpeakConnectorWorkflow.png)
 
-1. L'organizzazione collabora con Redtail parlare per impostare e configurare un gateway SMTP in cui i messaggi vengono inoltrati da Redtail parlare giornalmente con il server SFTP dell'organizzazione.
+1. L'organizzazione collabora con Redtail Speak per configurare e configurare un gateway SMTP in cui i messaggi vengono inoltrati da Redtail Speak al server SFTP dell'organizzazione su base giornaliera.
 
-2. Una volta ogni 24 ore, gli elementi di Redtail Speak vengono copiati nel sito Globanet Merge1. Il connettore converte anche gli elementi speak di Redtail in un formato di messaggio di posta elettronica.
+2. Una volta ogni 24 ore, gli elementi redtail Speak vengono copiati nel sito Globanet Merge1. Il connettore converte inoltre gli elementi redtail Speak in un formato di messaggio di posta elettronica.
 
-3. Il connettore Redtail Speak creato nel centro conformità di Microsoft 365 si connette al sito di Merge1 di Globanet ogni giorno e trasferisce i messaggi a una posizione di archiviazione sicura di Azure nel cloud Microsoft.
+3. Il connettore Redtail Speak creato nel Centro conformità Microsoft 365 si connette ogni giorno al sito Globanet Merge1 e trasferisce i messaggi in una posizione sicura di Archiviazione di Azure nel cloud Microsoft.
 
-4. Il connettore importa gli elementi di Redtail convertiti parla alle cassette postali di utenti specifici utilizzando il valore della proprietà di *posta elettronica* del mapping automatico degli utenti, come descritto nel [passaggio 3](#step-3-map-users-and-complete-the-connector-setup). Viene creata una sottocartella nella cartella posta in arrivo denominata **Redtail Speak** nelle cassette postali degli utenti e gli elementi vengono importati in tale cartella. Il connettore determina la cassetta postale a cui importare gli elementi utilizzando il valore della proprietà di *posta elettronica* . Ogni elemento di Redtail Speak contiene questa proprietà, che viene popolata con l'indirizzo di posta elettronica di tutti i partecipanti all'elemento.
+4. Il connettore importa gli elementi Redtail Speak convertiti nelle cassette postali di utenti specifici utilizzando il valore della proprietà *Email* del mapping automatico degli utenti, come descritto nel [passaggio 3.](#step-3-map-users-and-complete-the-connector-setup) Nelle cassette postali degli utenti viene creata una sottocartella nella cartella Posta in arrivo denominata **Redtail Speak** e gli elementi vengono importati in tale cartella. Il connettore determina in quale cassetta postale importare gli elementi utilizzando il valore della proprietà *Email.* Ogni elemento Redtail Speak contiene questa proprietà, che viene popolata con l'indirizzo di posta elettronica di ogni partecipante dell'elemento.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-- Creare un account Merge1 di Globanet per i connettori Microsoft. Per creare un account, contattare il [supporto clienti di Globanet](https://globanet.com/contact-us/). È necessario accedere a questo account quando si crea il connettore nel passaggio 1.
+- Creare un account Globanet Merge1 per i connettori Microsoft. Per creare un account, contattare [il supporto clienti Di Globanet.](https://globanet.com/contact-us/) È necessario accedere a questo account quando si crea il connettore nel passaggio 1.
 
-- Nel passaggio 2, è necessario specificare il server SFTP dell'organizzazione. Questo passaggio è necessario affinché Globanet Merge1 possa contattarlo per raccogliere i dati di Redtail Speak tramite SFTP.
+- Nel passaggio 2 è necessario specificare il server SFTP dell'organizzazione. Questo passaggio è necessario in modo che Globanet Merge1 possa contattarlo per raccogliere dati Redtail Speak tramite SFTP.
 
-- L'utente che crea il connettore dell'utilità di importazione di Redtail Speak nel passaggio 1 (e lo completa nel passaggio 3) deve essere assegnato al ruolo di esportazione delle cassette postali in Exchange Online. Questo ruolo è necessario per aggiungere connettori nella pagina dei connettori dati nel centro conformità di Microsoft 365. Questo ruolo non è assegnato ad alcun gruppo di ruoli in Exchange Online per impostazione predefinita. È possibile aggiungere il ruolo import export delle cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. In alternativa, è possibile creare un gruppo di ruoli, assegnare il ruolo di esportazione delle cassette postali e quindi aggiungere gli utenti corretti come membri. Per ulteriori informazioni, vedere la sezione creare gruppi di [ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) o [modificare gruppi di ruoli](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) nell'articolo "gestire i gruppi di ruoli in Exchange Online".
+- L'utente che crea il connettore di importazione Redtail Speak nel passaggio 1 (e lo completa nel passaggio 3) deve essere assegnato al ruolo di importazione/esportazione delle cassette postali in Exchange Online. Questo ruolo è necessario per aggiungere connettori nella pagina Connettori dati nel Centro conformità Microsoft 365. Questo ruolo non è assegnato ad alcun gruppo di ruoli in Exchange Online per impostazione predefinita. È possibile aggiungere il ruolo di importazione/esportazione delle cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. In or you can create a role group, assign the Mailbox Import Export role, and then add the appropriate users as members. Per ulteriori informazioni, vedere le sezioni [Creazione](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#create-role-groups) di gruppi di ruoli o Modifica gruppi [di](https://docs.microsoft.com/Exchange/permissions-exo/role-groups#modify-role-groups) ruoli nell'articolo "Gestire i gruppi di ruoli in Exchange Online".
 
-## <a name="step-1-set-up-the-redtail-speak-connector"></a>Passaggio 1: configurare il connettore Speak di Redtail
+## <a name="step-1-set-up-the-redtail-speak-connector"></a>Passaggio 1: Configurare il connettore Redtail Speak
 
-Il primo passaggio consiste nell'accedere alla pagina **dei connettori dati** nel centro conformità di Microsoft 365 e creare un connettore per i dati di Redtail Speak.
+Il primo passaggio consiste  nell'accedere alla pagina Connettori dati nel Centro conformità Microsoft 365 e creare un connettore per i dati Redtail Speak.
 
-1. Andare a [https://compliance.microsoft.com](https://compliance.microsoft.com/) e selezionare **connettori dati** &gt; **Redtail parlare**.
+1. Andare a [https://compliance.microsoft.com](https://compliance.microsoft.com/) e selezionare **Connettori dati** &gt; **Redtail Speak.**
 
-2. Nella pagina Descrizione prodotto di **Redtail** , selezionare **Aggiungi nuovo connettore**.
+2. Nella pagina **Redtail Speak** product description selezionare **Add new connector.**
 
-3. Nella pagina **condizioni del servizio** selezionare **accetta**.
+3. Nella pagina **Condizioni per il servizio** selezionare **Accetta.**
 
-4. Immettere un nome univoco che identifichi il connettore e quindi fare clic su **Avanti**.
+4. Immettere un nome univoco che identifichi il connettore, quindi selezionare **Avanti.**
 
-5. Accedere al proprio account di Merge1 per configurare il connettore.
+5. Accedere all'account Merge1 per configurare il connettore.
 
-## <a name="step-2-configure-the-redtail-speak-connector-on-the-globanet-merge1-site"></a>Passaggio 2: configurare il connettore Speak di Redtail nel sito di Merge1 Globanet
+## <a name="step-2-configure-the-redtail-speak-connector-on-the-globanet-merge1-site"></a>Passaggio 2: Configurare il connettore Redtail Speak nel sito Globanet Merge1
 
-Il secondo passaggio consiste nel configurare il connettore Speak di Redtail nel sito di Merge1. Per informazioni su come configurare il connettore di Redtail Speak, vedere [Merge1 Third-Party Connectors user guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Redtail%20Speak%20User%20Guide%20.pdf).
+Il secondo passaggio consiste nel configurare il connettore Redtail Speak nel sito Merge1. Per informazioni su come configurare il connettore Redtail Speak, vedere il manuale [dell'utente Merge1 Third-Party Connectors.](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Redtail%20Speak%20User%20Guide%20.pdf)
 
-Dopo aver selezionato **salva & fine**, viene visualizzata la pagina di **mapping degli utenti** nella procedura guidata del connettore nel centro conformità di Microsoft 365.
+Dopo aver selezionato **Salva &,** viene visualizzata la **pagina Mapping** utenti nella procedura guidata del connettore nel Centro conformità Microsoft 365.
 
 ## <a name="step-3-map-users-and-complete-the-connector-setup"></a>Passaggio 3: mappare gli utenti e completare la configurazione del connettore
 
-Per eseguire il mapping degli utenti e completare la configurazione del connettore, eseguire la procedura seguente:
+Per mappare gli utenti e completare la configurazione del connettore, attenersi alla seguente procedura:
 
-1. Nella pagina **mappa Redtail Speak users to Microsoft 365** Users, abilitare il mapping automatico degli utenti. Gli elementi di Redtail Speak includono una proprietà denominata *posta elettronica*, che contiene gli indirizzi di posta elettronica per gli utenti dell'organizzazione. Se il connettore può associare questo indirizzo a un utente di Microsoft 365, gli elementi vengono importati nella cassetta postale dell'utente.
+1. Nella pagina **Map Redtail Speak users to Microsoft 365 users** abilitare il mapping automatico degli utenti. Gli elementi Redtail Speak includono una proprietà denominata *Email,* che contiene gli indirizzi di posta elettronica per gli utenti dell'organizzazione. Se il connettore può associare questo indirizzo a un utente di Microsoft 365, gli elementi vengono importati nella cassetta postale dell'utente.
 
-2. Selezionare **Avanti**, rivedere le impostazioni e passare alla pagina **connettori dati** per visualizzare lo stato di avanzamento del processo di importazione per il nuovo connettore.
+2. Selezionare **Avanti,** rivedere le impostazioni e passare alla pagina **Connettori** dati per visualizzare l'avanzamento del processo di importazione per il nuovo connettore.
 
-## <a name="step-4-monitor-the-redtail-speak-connector"></a>Passaggio 4: monitorare il connettore Speak di Redtail
+## <a name="step-4-monitor-the-redtail-speak-connector"></a>Passaggio 4: Monitorare il connettore Redtail Speak
 
-Dopo aver creato il connettore Redtail Speak, è possibile visualizzare lo stato del connettore nel centro conformità di Microsoft 365.
+Dopo aver creato il connettore Redtail Speak, è possibile visualizzare lo stato del connettore nel Centro conformità Microsoft 365.
 
-1. Andare a [https://compliance.microsoft.com](https://compliance.microsoft.com/) e selezionare **connettori dati** nel NAV sinistro.
+1. Andare a [https://compliance.microsoft.com](https://compliance.microsoft.com/) e selezionare **i connettori di dati** nel riquadro di spostamento sinistro.
 
-2. Selezionare la scheda **connettori** e quindi selezionare il connettore **Redtail Speak** per visualizzare la pagina a comparsa. In questa pagina vengono visualizzate le proprietà e le informazioni sul connettore.
+2. Selezionare la **scheda Connettori,** quindi selezionare il **connettore Redtail Speak** per visualizzare la pagina a comparsa. In questa pagina vengono visualizzate le proprietà e le informazioni sul connettore.
 
-3. In **stato connettore con origine** selezionare il collegamento di **download log** per aprire o salvare il registro di stato del connettore. Questo log contiene dati che sono stati importati nel cloud Microsoft.
+3. In **Stato connettore con origine,** selezionare il **collegamento Scarica registro** per aprire (o salvare) il registro di stato per il connettore. Questo log contiene i dati che sono stati importati nel cloud Microsoft.
 
 ## <a name="known-issues"></a>Problemi noti
 
-- Al momento, non è supportato l'importazione di allegati o elementi di dimensioni superiori a 10 MB. Il supporto per gli elementi di grandi dimensioni sarà disponibile in un secondo momento.
+- Al momento, non è possibile importare allegati o elementi di dimensioni superiori a 10 MB. Il supporto per gli elementi più grandi sarà disponibile in un secondo momento.

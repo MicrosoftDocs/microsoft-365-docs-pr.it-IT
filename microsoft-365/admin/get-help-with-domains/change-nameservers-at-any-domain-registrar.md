@@ -24,7 +24,7 @@ search.appverid:
 - GEU150
 - GEA150
 ms.assetid: a8b487a9-2a45-4581-9dc4-5d28a47010a2
-description: Informazioni su come aggiungere e configurare il dominio in Microsoft 365 in modo che i servizi come la posta elettronica e Skype for business online utilizzino il proprio nome di dominio.
+description: Informazioni su come aggiungere e configurare il dominio in Microsoft 365 in modo che i servizi come la posta elettronica e Skype for Business online usino il proprio nome di dominio.
 ms.openlocfilehash: 492bc5d2a5f3fd9810f045e7effda1ea20fa15ed
 ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
 ms.translationtype: MT
@@ -36,13 +36,13 @@ ms.locfileid: "49688250"
 
  Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.yml)**. 
   
-Controllare [la configurazione del dominio (istruzioni specifiche per l'host)](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) per vedere se sono disponibili istruzioni per il registrar. 
+Controllare [Prima di tutto Configurare il dominio (istruzioni](../get-help-with-domains/set-up-your-domain-host-specific-instructions.md) specifiche dell'host) per vedere se sono disponibili istruzioni per il registrar. 
   
-Seguire le istruzioni riportate di seguito per aggiungere e configurare il dominio in Microsoft 365 in modo che i servizi come la posta elettronica e i team utilizzeranno il proprio nome di dominio. A tale scopo, è necessario verificare il dominio e quindi modificare i server dei nomi del dominio in Microsoft 365 in modo che i record DNS corretti possano essere configurati per l'utente. Attenersi alla seguente procedura se le istruzioni seguenti descrivono la propria situazione:
+Seguire queste istruzioni per aggiungere e configurare il dominio in Microsoft 365 in modo che i servizi come la posta elettronica e Teams usino il proprio nome di dominio. A tale scopo, verificare il dominio e quindi modificare i server dei nomi del dominio in Microsoft 365 in modo che i record DNS corretti possano essere impostati automaticamente. Seguire questa procedura se le seguenti istruzioni descrivono la propria situazione:
   
-- Si dispone di un dominio personalizzato e si desidera configurarlo per l'utilizzo con Microsoft 365.
+- Si dispone di un proprio dominio e si desidera configurarlo per l'utilizzo con Microsoft 365.
     
-- Si desidera che Microsoft 365 gestisca i record DNS per l'utente. Se si preferisce, è possibile [gestire personalmente i propri record DNS](../setup/add-domain.md).
+- Si desidera che Microsoft 365 gesti i record DNS. Se si preferisce, è possibile [gestire personalmente i propri record DNS](../setup/add-domain.md).
     
 ## <a name="add-a-txt-or-mx-record-for-verification"></a>Aggiungere un record TXT o MX a scopo di verifica
 <a name="BKMK_verify"> </a>
@@ -55,7 +55,7 @@ Prima di usare il proprio dominio con Microsoft 365, è necessario dimostrare di
 > [!NOTE]
 > Questo record viene usato esclusivamente per verificare di essere proprietari del dominio e non ha altri effetti. È possibile eliminarlo in un secondo momento, se si preferisce. 
   
-### <a name="find-the-area-on-your-dns-hosting-providers-website-where-you-can-create-a-new-record"></a>Individuare l'area del sito Web del provider di hosting DNS in cui è possibile creare un nuovo record
+### <a name="find-the-area-on-your-dns-hosting-providers-website-where-you-can-create-a-new-record"></a>Trovare l'area nel sito Web del provider di hosting DNS in cui è possibile creare un nuovo record
 
 1. Accedere al sito del provider del servizio di hosting DNS.
     
@@ -108,15 +108,15 @@ Quando Microsoft 365 trova il record TXT corretto, il dominio è verificato.
 ## <a name="change-your-domains-nameserver-ns-records"></a>Modificare i record dei server dei nomi del dominio
 <a name="BKMK_nameservers"> </a>
 
-Quando si arriva all'ultimo passaggio della procedura guidata di configurazione dei domini in Microsoft 365, è presente un'attività rimanente. Per configurare il dominio con i servizi Microsoft 365, come la posta elettronica, è possibile modificare i record del server dei nomi (o NS) del dominio presso il registrar in modo che puntino ai server dei nomi primari e secondari di Microsoft 365. Quindi, poiché Microsoft 365 ospita il DNS, i record DNS necessari per i servizi sono configurati automaticamente per l'utente. È possibile aggiornare i record dei server dei nomi manualmente seguendo i passaggi eventualmente disponibili nella Guida del sito Web del registrar. Se non si ha familiarità con il DNS, contattare il supporto del registrar.
+Quando si arriva all'ultimo passaggio della configurazione guidata dei domini in Microsoft 365, rimane un'attività. Per configurare il dominio con i servizi di Microsoft 365, ad esempio la posta elettronica, è necessario modificare i record dei server dei nomi del dominio nel registrar in modo che puntino ai server dei nomi primario e secondario di Microsoft 365. Quindi, poiché Microsoft 365 ospita il DNS, i record DNS necessari per i servizi vengono impostati automaticamente. È possibile aggiornare i record dei server dei nomi manualmente seguendo i passaggi eventualmente disponibili nella Guida del sito Web del registrar. Se non si ha familiarità con il DNS, contattare il supporto del registrar.
 
 ::: moniker range="o365-worldwide"
   
 Per modificare i server dei nomi del dominio presso il sito Web del registrar, seguire questa procedura:
   
-1. Individuare l'area del sito Web del registrar in cui è possibile modificare i server dei nomi per il dominio o un'area in cui è possibile utilizzare i server dei nomi personalizzati.
+1. Individuare l'area nel sito Web del registrar in cui è possibile modificare i server dei nomi per il dominio o un'area in cui è possibile utilizzare server dei nomi personalizzati.
     
-2. Creare i record del server dei nomi o modificare i record del nameserver esistenti in modo che corrispondano ai valori seguenti:
+2. Creare record del server dei nomi o modificare i record dei server dei nomi esistenti in modo che corrispondano ai valori seguenti:
     
 |||
 |:-----|:-----|
@@ -126,12 +126,12 @@ Per modificare i server dei nomi del dominio presso il sito Web del registrar, s
 |Quarto server dei nomi  <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
    > [!TIP]
-   > È consigliabile aggiungere tutti e quattro i record, ma se il servizio di registrazione supporta solo due, aggiungere **NS1.BDM.microsoftonline.com** e **NS2.BDM.microsoftonline.com**. 
+   > È meglio aggiungere tutti e quattro i record, ma se il registrar ne supporta solo **due,** aggiungere ns1.bdm.microsoftonline.com e **ns2.bdm.microsoftonline.com**. 
   
 3. Salvare le modifiche.
     
 > [!CAUTION]
-> Quando si modificano i record NS del dominio in modo che puntino ai server dei nomi Microsoft 365, tutti i servizi attualmente associati al dominio sono intaccati. Se sono stati ignorati tutti i passaggi della procedura guidata, ad esempio l'aggiunta di indirizzi di posta elettronica o se si utilizza il dominio per i Blog, i carrelli o altri servizi, sono necessari ulteriori passaggi. In caso contrario, questa modifica potrebbe causare tempi di inattività del servizio, ad esempio la mancanza di accesso alla posta elettronica o il sito Web corrente inaccessibile. 
+> Quando si modificano i record NS del dominio in modo che puntino ai server dei nomi di Microsoft 365, vengono interessati tutti i servizi attualmente associati al dominio. Se sono stati ignorati alcuni passaggi della procedura guidata, ad esempio l'aggiunta di indirizzi di posta elettronica o se si usa il dominio per blog, carrelli acquisti o altri servizi, sono necessari ulteriori passaggi. In caso contrario, questa modifica potrebbe comportare tempi di inattività del servizio, ad esempio la mancanza di accesso alla posta elettronica o l'inaccessibilit? del sito Web corrente. 
 
 ::: moniker-end
 
@@ -147,31 +147,31 @@ Per modificare i server dei nomi del dominio presso il sito Web del registrar, s
 |Secondo server dei nomi  <br/> |ns2.dns.partner.microsoftonline.cn  <br/> |
    
    > [!TIP]
-   > È consigliabile utilizzare almeno due record dei server dei nomi. Se sono elencati altri server dei nomi, è possibile eliminarli o modificarli in **NS3.DNS.partner.microsoftonline.cn** e **NS4.DNS.partner.microsoftonline.cn**. 
+   > È consigliabile utilizzare almeno due record del server dei nomi. Se sono elencati altri server dei nomi, è possibile eliminarli o modificarli in ns3.dns.partner.microsoftonline.cn **e** **ns4.dns.partner.microsoftonline.cn**. 
   
 3. Salvare le modifiche.
     
 > [!CAUTION]
-> Quando si modificano i record NS del dominio in modo che puntino a Office 365 gestito da server dei nomi di 21Vianet, tutti i servizi attualmente associati al dominio sono intaccati. Se sono stati ignorati tutti i passaggi della procedura guidata, ad esempio l'aggiunta di indirizzi di posta elettronica o se si utilizza il dominio per i Blog, i carrelli o altri servizi, sono necessari ulteriori passaggi. In caso contrario, questa modifica potrebbe causare tempi di inattività del servizio, ad esempio la mancanza di accesso alla posta elettronica o il sito Web corrente inaccessibile. 
+> Quando si modificano i record NS del dominio in modo che puntino ai server dei nomi di Office 365 gestiti da 21Vianet, vengono interessati tutti i servizi attualmente associati al dominio. Se sono stati ignorati alcuni passaggi della procedura guidata, ad esempio l'aggiunta di indirizzi di posta elettronica o se si usa il dominio per blog, carrelli acquisti o altri servizi, sono necessari ulteriori passaggi. In caso contrario, questa modifica potrebbe comportare tempi di inattività del servizio, ad esempio la mancanza di accesso alla posta elettronica o l'inaccessibilit? del sito Web corrente. 
 
 ::: moniker-end
   
 Ecco, ad esempio, alcune altre operazioni aggiuntive che potrebbero essere necessarie per l'hosting della posta elettronica e dei siti Web:
   
-- Spostare tutti gli indirizzi di posta elettronica che utilizzano il dominio a Microsoft 365 prima di modificare i record NS.
+- Spostare tutti gli indirizzi di posta elettronica che usano il dominio in Microsoft 365 prima di modificare i record NS.
     
-- Si desidera aggiungere un dominio attualmente utilizzato con un indirizzo del sito Web, ad esempio www.fourthcoffee.com? È possibile eseguire i passaggi seguenti quando si aggiunge il dominio per mantenere il proprio sito Web ospitato in cui è ospitato il sito, per consentire agli utenti di accedere al sito Web dopo aver modificato i record NS del dominio in modo che puntino a Microsoft 365.
+- Vuoi aggiungere un dominio attualmente usato con un indirizzo di un sito Web, ad esempio www.fourthcoffee.com? È possibile eseguire i passaggi seguenti mentre si aggiunge il dominio per mantenere il sito Web ospitato dove il sito è ospitato ora, in modo che gli utenti possano comunque accedere al sito Web dopo aver modificato i record NS del dominio in modo che puntino a Microsoft 365.
 
 1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=834818" target="_blank">Domini</a>.
 
-2. Nella pagina **Domains** selezionare il dominio e quindi scegliere **DNS Records**.
+2. Nella pagina **Domini** selezionare il dominio e quindi scegliere **Record DNS.**
 
-3. In **Manage DNS**, selezionare **record personalizzati**, quindi scegliere **nuovo record personalizzato**.
+3. In **Manage DNS** selezionare Custom **Records** e quindi scegliere New **custom record.**
 
 4. Selezionare il tipo di record DNS che si desidera aggiungere e digitare le informazioni per il nuovo record.
 
 5. Selezionare **Salva**.
     
 > [!NOTE]
-> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. L'indirizzo di posta elettronica e gli altri servizi di Microsoft saranno tutti impostati per l'utilizzo con il dominio. 
+> Your nameserver record updates may take up to several hours to update across the Internet's DNS system. Quindi la posta elettronica Microsoft e altri servizi saranno tutti impostati per l'utilizzo con il dominio. 
   

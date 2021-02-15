@@ -44,7 +44,7 @@ Le applicazioni Office come Word, Excel e PowerPoint rileveranno automaticamente
 
 ## <a name="onedrive-for-business-sync-client"></a>Client di sincronizzazione OneDrive for Business
 
-Il client di sincronizzazione OneDrive for Business (versione 17.3.6943.0625 e successive) rileverà automaticamente la posizione geografica corretta di OneDrive for Business per l'utente. Il supporto client Sync include la possibilità di sincronizzare siti basati su gruppi, indipendentemente dalla posizione geografica. Si noti che il client di sincronizzazione Groove non è supportato per multi-geo. 
+Il client di sincronizzazione OneDrive for Business (versione 17.3.6943.0625 e successive) rileverà automaticamente la posizione geografica corretta di OneDrive for Business per l'utente. Il supporto del client di sincronizzazione include la possibilità di sincronizzare i siti basati su gruppi indipendentemente dalla loro posizione geografica. Si noti che il client di sincronizzazione Groove non è supportato per multi-geo. 
 
 ## <a name="onedrive-for-business-location"></a>Posizione di OneDrive for Business
 

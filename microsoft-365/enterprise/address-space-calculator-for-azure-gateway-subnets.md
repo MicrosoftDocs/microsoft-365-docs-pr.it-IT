@@ -1,5 +1,5 @@
 ---
-title: Calcolatore dello spazio di indirizzi per le subnet del gateway di Azure
+title: Strumento di calcolo dello spazio indirizzo per subnet gateway di Azure
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -15,7 +15,7 @@ ms.custom:
 - PowerShell
 - Ent_Office_Other
 - seo-marvel-apr2020
-description: 'Riepilogo: calcolare lo spazio di indirizzi di una subnet del gateway di Azure con C3, Python o PowerShell.'
+description: 'Riepilogo: calcolare lo spazio di indirizzi di una subnet gateway di Azure con C3, Python o PowerShell.'
 ms.openlocfilehash: d92bea5c36fde6277154d19365ed0bdaa5df4254
 ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
 ms.translationtype: MT
@@ -23,20 +23,20 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/07/2021
 ms.locfileid: "49780569"
 ---
-# <a name="address-space-calculator-for-azure-gateway-subnets"></a>Calcolatore dello spazio di indirizzi per le subnet del gateway di Azure
+# <a name="address-space-calculator-for-azure-gateway-subnets"></a>Strumento di calcolo dello spazio indirizzo per le subnet del gateway di Azure
 
-Una rete virtuale (rete virtuale) nei servizi di infrastruttura di Azure connessi ad altre reti deve disporre di una subnet gateway. Le procedure consigliate per definire la subnet del gateway sono le seguenti:
+Una rete virtuale (VNet) nei servizi infrastruttura di Azure connessa ad altre reti deve avere una subnet gateway. Le procedure consigliate per definire la subnet del gateway sono le seguenti:
 
-- La lunghezza del prefisso della subnet del gateway può avere una lunghezza massima del prefisso di 29 (ad esempio, 10.119.255.248/29), ma la raccomandazione corrente è quella di utilizzare una lunghezza del prefisso di 27 (ad esempio, 10.119.255.224/27).
-- Quando si definisce lo spazio degli indirizzi della subnet del gateway, utilizzare l'ultima parte dello spazio di indirizzi di rete virtuale.
+- La lunghezza del prefisso della subnet del gateway può avere una lunghezza massima di prefisso pari a 29 (ad esempio, 10.119.255.248/29), ma è consigliabile utilizzare una lunghezza di prefisso pari a 27 (ad esempio, 10.119.255.224/27).
+- Quando si definisce lo spazio di indirizzi della subnet del gateway, utilizzare l'ultima parte dello spazio di indirizzi della rete virtuale.
 
-Per il secondo suggerimento, è possibile determinare lo spazio di indirizzi della subnet del gateway impostando i bit utilizzati per la subnet del gateway su 0 e i bit rimanenti nello spazio di indirizzi di rete virtuale su 1. Per calcolare rapidamente lo spazio degli indirizzi della subnet del gateway senza dover eseguire la conversione in formato binario e viceversa, è possibile utilizzare un'applicazione console scritta in C# o Python o con un blocco di comandi di PowerShell.
+Per la seconda indicazione, è possibile determinare lo spazio di indirizzi della subnet del gateway impostando i bit utilizzati per la subnet del gateway su 0 e i bit rimanenti nello spazio di indirizzi della rete virtuale su 1. Per calcolare rapidamente lo spazio degli indirizzi della subnet del gateway senza dover eseguire la conversione in binario e tornare a decimale, è possibile utilizzare un'applicazione console scritta in C# o Python o con un blocco di comandi di PowerShell.
 
-Questo articolo contiene blocchi di codice C#, Python e PowerShell che calcolano lo spazio degli indirizzi della subnet del gateway in base ai valori di w. x. y. z/n per il prefisso dell'indirizzo rete virtuale e la lunghezza del prefisso della subnet del gateway.
+Questo articolo contiene blocchi di codice C#, Python e PowerShell che calcolano lo spazio di indirizzi della subnet del gateway in base ai valori di w.x.y.z/n per il prefisso dell'indirizzo della rete virtuale e la lunghezza del prefisso della subnet del gateway.
 
 ## <a name="c-code-block"></a>Blocco di codice C#
 
-Utilizzare questo blocco di codice per creare un'app console in C#.
+Usa questo blocco di codice per creare un'app console in C#.
 
 ```c#
 using System; 
@@ -110,7 +110,7 @@ namespace ConsoleApplication1
 
 ## <a name="python-code-block"></a>Blocco di codice Python
 
-Utilizzare questo blocco di codice per creare un'app console in Python.
+Usa questo blocco di codice per creare un'app console in Python.
 
 ```python
 import math 
@@ -149,7 +149,7 @@ print(gwAddrPref)
 
 ## <a name="powershell-command-block"></a>Blocco di comandi di PowerShell
 
-Inserire i valori ed eseguire il blocco di comandi risultante in una finestra di PowerShell o in PowerShell Integrated script Environment (ISE).
+Compilare i valori ed eseguire il blocco di comandi risultante in una finestra di PowerShell o in PowerShell Integrated Script Environment (ISE).
 
 ```powershell
 # Specify the values of w.x.y.z/n for your VNet address space and g, the prefix length of your gateway subnet: 

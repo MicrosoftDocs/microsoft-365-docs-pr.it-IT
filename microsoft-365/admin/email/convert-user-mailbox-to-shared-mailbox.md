@@ -19,7 +19,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 2e122487-e1f5-4f26-ba41-5689249d93ba
-description: 'Informazioni su come convertire una cassetta postale privata in una cassetta postale condivisa a cui è possibile accedere da più utenti. '
+description: 'Informazioni su come convertire una cassetta postale privata in una cassetta postale condivisa accessibile da più utenti. '
 ms.openlocfilehash: f716bbd16be9f67189b19358ddf16a289f57f8e7
 ms.sourcegitcommit: a8f3c633714e934f9ad026c3bc72157ed535dcfc
 ms.translationtype: MT
@@ -29,11 +29,11 @@ ms.locfileid: "49737966"
 ---
 # <a name="convert-a-user-mailbox-to-a-shared-mailbox"></a>Convertire una cassetta postale utente in una cassetta postale condivisa
 
-Quando si converte la cassetta postale di un utente in cassetta condivisa, vengono mantenuti tutti gli elementi di posta elettronica e del calendario esistenti. L'unica differenza è che ora si trovano in una cassetta postale condivisa, cui potranno accedere diversi utenti invece di uno solo. In un secondo momento, è possibile convertire una cassetta postale condivisa di nuovo in una cassetta postale utente (privata).
+Quando si converte la cassetta postale di un utente in cassetta condivisa, vengono mantenuti tutti gli elementi di posta elettronica e del calendario esistenti. L'unica differenza è che ora si trovano in una cassetta postale condivisa, cui potranno accedere diversi utenti invece di uno solo. In un secondo momento, è possibile riconvertire una cassetta postale condivisa in una cassetta postale utente (privata).
 
-**Di seguito sono riportate alcune informazioni importanti che è necessario conoscere:**
+**Ecco alcune cose molto importanti che devi sapere:**
 
-- La cassetta postale utente che si sta convertendo richiede una licenza assegnata prima di convertirla in una cassetta postale condivisa. In caso contrario, l'opzione per convertire la cassetta postale non sarà visualizzata. Se la licenza è stata rimossa, aggiungerla di nuovo in modo da poter convertire la cassetta postale. Dopo aver convertito la cassetta postale in una condivisa, è possibile rimuovere la licenza dall'account dell'utente.
+- La cassetta postale utente che si sta convertendo necessita di una licenza assegnata prima di convertirla in una cassetta postale condivisa. In caso contrario, l'opzione per convertire la cassetta postale non sarà visualizzata. Se la licenza è stata rimossa, aggiungerla di nuovo in modo da poter convertire la cassetta postale. Dopo aver convertito la cassetta postale in una condivisa, è possibile rimuovere la licenza dall'account dell'utente.
 
 - Le cassette postali condivise possono avere fino a 50 GB di dati senza una licenza assegnata. Perché possano contenere ancora più dati, è necessario assegnarvi una licenza. Potrebbe essere necessario eliminare diversi messaggi di posta elettronica di grandi dimensioni, ad esempio quelli con allegati, dalla cassetta postale condivisa per ridurne le dimensioni e rimuovere la licenza.
 
@@ -45,16 +45,16 @@ Quando si converte la cassetta postale di un utente in cassetta condivisa, vengo
  
 1. Accedere all'<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">interfaccia di amministrazione di Exchange</a>.
 
-2. Selezionare  le \> **cassette postali** destinatari.
+2. Selezionare **Cassette postali** dei \> **destinatari.**
 
-3. Selezionare la cassetta postale utente. In **Converti in cassetta postale condivisa**, selezionare **Converti**.
+3. Selezionare la cassetta postale utente. In **Converti in cassetta postale condivisa** selezionare **Converti.**
 
-4. Se la cassetta postale è inferiore a 50 GB, è possibile rimuovere la [licenza dall'utente](../manage/remove-licenses-from-users.md)e smettere di pagarla. Non eliminare l'account dell'utente. Sarà necessaria come ancoraggio per la cassetta postale condivisa. Se si converte la cassetta postale di un dipendente che lascia l'organizzazione, è necessario eseguire ulteriori passaggi per verificare che non siano più in grado di eseguire l'accesso. Per ulteriori informazioni, vedere [rimuovere un ex dipendente da Microsoft 365](../add-users/remove-former-employee.md).
+4. Se la cassetta postale è inferiore a 50 GB, è possibile rimuovere la licenza dall'utente [e](../manage/remove-licenses-from-users.md)smettere di pagarla. Non eliminare l'account dell'utente. Sarà necessaria come ancoraggio per la cassetta postale condivisa. Se si sta convertendo la cassetta postale di un dipendente che lascia l'organizzazione, è consigliabile eseguire ulteriori operazioni per assicurarsi che non siano più in grado di accedere. Vedere [Rimuovere un ex dipendente da Microsoft 365.](../add-users/remove-former-employee.md)
     
 > [!NOTE]
-> Non è necessario reimpostare la password dell'utente durante la conversione delle cassette postali. Tuttavia, se la password non viene reimpostata, **il nome utente e la password originali continuano a funzionare** dopo che la conversione della cassetta postale è terminata.
+> Non è necessario reimpostare la password dell'utente durante la conversione della cassetta postale. Tuttavia, se la password non viene reimpostata, il nome utente e la password originali **continuano** a funzionare al termine della conversione della cassetta postale.
 
-Per tutti gli altri elementi necessari per conoscere le cassette postali condivise, vedere [informazioni sulle cassette postali condivise](about-shared-mailboxes.md) e [creare una cassetta postale condivisa](create-a-shared-mailbox.md).
+Per tutte le altre informazioni necessarie sulle cassette postali condivise, vedere [Informazioni sulle cassette postali condivise](about-shared-mailboxes.md) e Creare una cassetta postale [condivisa.](create-a-shared-mailbox.md)
 
 > [!NOTE]
 > Le cassette postali condivise non richiedono una licenza separata. Tuttavia, se si desidera attivare un'archiviazione sul posto oppure sottoporre una cassetta postale a blocco sul posto o blocco per controversia legale, è necessario assegnare alla cassetta postale una licenza di Exchange Online, piano 1 con Archiviazione Exchange Online o Exchange Online, piano 2.
@@ -64,7 +64,7 @@ Per tutti gli altri elementi necessari per conoscere le cassette postali condivi
 
 Si supponga di aver eliminato un account utente e di volerne convertire la vecchia cassetta postale in cassetta postale condivisa. Ecco cosa fare:
 
-1. [Ripristinare l'account dell'utente](../add-users/restore-user.md).
+1. [Ripristinare l'account dell'utente.](../add-users/restore-user.md)
 
 2. Assicurarsi che sia assegnata una licenza di Microsoft 365.
 
@@ -79,13 +79,13 @@ Si supponga di aver eliminato un account utente e di volerne convertire la vecch
 7. Aggiungere membri alla cassetta postale condivisa.
 
 
-## <a name="convert-a-shared-mailbox-back-to-a-users-private-mailbox"></a>Convertire di nuovo una cassetta postale condivisa in una cassetta postale (privata) dell'utente
+## <a name="convert-a-shared-mailbox-back-to-a-users-private-mailbox"></a>Riconvertire una cassetta postale condivisa in una cassetta postale (privata) dell'utente
 
 1. Accedere all'<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">interfaccia di amministrazione di Exchange</a>.
    
-2. Selezionare i **destinatari** \> **condivisi**.
+2. Selezionare **Destinatari** \> **condivisi.**
 
-3. Selezionare la cassetta postale condivisa. In **Converti in cassetta postale normale** selezionare **Converti**.
+3. Selezionare la cassetta postale condivisa. In **Converti in cassetta postale normale** selezionare **Converti.**
 
 4. Tornare all'interfaccia di amministrazione. In **Utenti** scegliere l'account utente associato alla vecchia cassetta postale utente. Assegnare una licenza all'account e reimpostare la password.
 
@@ -95,8 +95,8 @@ Si supponga di aver eliminato un account utente e di volerne convertire la vecch
 
 Per ulteriori informazioni sulla conversione di una cassetta postale utente in una cassetta postale condivisa in un ambiente ibrido di Exchange, vedere:
 
- - [Cmdlet per la creazione o la modifica di una cassetta postale condivisa remota in un ambiente Exchange locale](https://support.microsoft.com/office/cmdlets-to-create-or-modify-a-remote-shared-mailbox-in-an-on-premises-exchange-environment-9e83fb59-c001-729c-a4c0-b2964c154b49)
- - [Le cassette postali condivise sono inaspettatamente convertite nelle cassette postali degli utenti dopo l'esecuzione della sincronizzazione della directory](https://docs.microsoft.com/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)
+ - [Cmdlet per creare o modificare una cassetta postale condivisa remota in un ambiente Exchange locale](https://support.microsoft.com/office/cmdlets-to-create-or-modify-a-remote-shared-mailbox-in-an-on-premises-exchange-environment-9e83fb59-c001-729c-a4c0-b2964c154b49)
+ - [Le cassette postali condivise vengono convertite in modo imprevisto in cassette postali utente dopo l'esecuzione della sincronizzazione della directory in una distribuzione ibrida di Exchange](https://docs.microsoft.com/exchange/troubleshoot/user-and-shared-mailboxes/shared-mailboxes-unexpectedly-converted-to-user-mailboxes)
  
 
 > [!NOTE]
