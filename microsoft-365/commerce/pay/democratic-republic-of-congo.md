@@ -1,5 +1,5 @@
 ---
-title: Informazioni sui pagamenti per la Repubblica democratica del Congo
+title: Informazioni di pagamento per la Repubblica democratica del Congo
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,16 +20,16 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48637212"
 ---
-# <a name="payment-information-for-democratic-republic-of-congo"></a><span data-ttu-id="a53b0-103">Informazioni sui pagamenti per la Repubblica democratica del Congo</span><span class="sxs-lookup"><span data-stu-id="a53b0-103">Payment information for Democratic Republic of Congo</span></span>
+# <a name="payment-information-for-democratic-republic-of-congo"></a><span data-ttu-id="e87b2-103">Informazioni di pagamento per la Repubblica democratica del Congo</span><span class="sxs-lookup"><span data-stu-id="e87b2-103">Payment information for Democratic Republic of Congo</span></span>
 
-<span data-ttu-id="a53b0-104">[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="a53b0-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span> 
+<span data-ttu-id="e87b2-104">[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="e87b2-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span> 
 
-<span data-ttu-id="a53b0-105">Si prega di pagare solo in USD e i numeri delle fatture di riferimento sulla sua rimessa di pagamento.</span><span class="sxs-lookup"><span data-stu-id="a53b0-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="e87b2-105">Pagare solo in USD e fare riferimento ai numeri di fattura per la rimessa di pagamento.</span><span class="sxs-lookup"><span data-stu-id="e87b2-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="a53b0-106">Bonifico bancario</span><span class="sxs-lookup"><span data-stu-id="a53b0-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="e87b2-106">Bonifico bancario</span><span class="sxs-lookup"><span data-stu-id="e87b2-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="a53b0-107">**Banca:** Citibank, Londra</span><span class="sxs-lookup"><span data-stu-id="a53b0-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="a53b0-108">**Codice SWIFT:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="a53b0-108">**SWIFT Code:** CITIGB2L</span></span>  
-<span data-ttu-id="a53b0-109">**Codice IBAN:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="a53b0-109">**IBAN:** GB95CITI18500812510049</span></span>  
-<span data-ttu-id="a53b0-110">**Numero account:** 12510049</span><span class="sxs-lookup"><span data-stu-id="a53b0-110">**Account Number:** 12510049</span></span>  
-<span data-ttu-id="a53b0-111">**Nome account:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="a53b0-111">**Account Name:** MICROSOFT</span></span>  
+<span data-ttu-id="e87b2-107">**Bank:** Citibank, Londra</span><span class="sxs-lookup"><span data-stu-id="e87b2-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="e87b2-108">**Codice SWIFT:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="e87b2-108">**SWIFT Code:** CITIGB2L</span></span>  
+<span data-ttu-id="e87b2-109">**IBAN:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="e87b2-109">**IBAN:** GB95CITI18500812510049</span></span>  
+<span data-ttu-id="e87b2-110">**Numero di conto:** 12510049</span><span class="sxs-lookup"><span data-stu-id="e87b2-110">**Account Number:** 12510049</span></span>  
+<span data-ttu-id="e87b2-111">**Nome account:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="e87b2-111">**Account Name:** MICROSOFT</span></span>  

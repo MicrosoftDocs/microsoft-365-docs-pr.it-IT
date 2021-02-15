@@ -30,36 +30,36 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48638244"
 ---
-# <a name="add-licenses-to-a-subscription-purchased-through-the-volume-licensing-service-center"></a><span data-ttu-id="030c3-103">Aggiungere licenze acquistate tramite il centro servizi per contratti multilicenza</span><span class="sxs-lookup"><span data-stu-id="030c3-103">Add licenses to a subscription purchased through the Volume Licensing Service Center</span></span>
+# <a name="add-licenses-to-a-subscription-purchased-through-the-volume-licensing-service-center"></a><span data-ttu-id="20ac0-103">Aggiungere licenze acquistate tramite il centro servizi per contratti multilicenza</span><span class="sxs-lookup"><span data-stu-id="20ac0-103">Add licenses to a subscription purchased through the Volume Licensing Service Center</span></span>
 
-<span data-ttu-id="030c3-104">Se è stato acquistato il piano Microsoft 365 for business o Office 365 Enterprise tramite un partner di terze parti, è necessario acquistare licenze aggiuntive tramite tale partner.</span><span class="sxs-lookup"><span data-stu-id="030c3-104">If you purchased your Microsoft 365 for business or Office 365 Enterprise plan through a third party partner, you must buy additional licenses through that partner.</span></span> <span data-ttu-id="030c3-105">Se tale partner è noto a Microsoft, è possibile usare la procedura seguente per contattarlo.</span><span class="sxs-lookup"><span data-stu-id="030c3-105">If the partner that the subscription was purchased from is known by Microsoft, you can find out how to contact your partner using the following procedure.</span></span>
+<span data-ttu-id="20ac0-104">Se il piano di Microsoft 365 per le aziende o Office 365 Enterprise è stato acquistato tramite un partner di terze parti, è necessario acquistare licenze aggiuntive tramite tale partner.</span><span class="sxs-lookup"><span data-stu-id="20ac0-104">If you purchased your Microsoft 365 for business or Office 365 Enterprise plan through a third party partner, you must buy additional licenses through that partner.</span></span> <span data-ttu-id="20ac0-105">Se tale partner è noto a Microsoft, è possibile usare la procedura seguente per contattarlo.</span><span class="sxs-lookup"><span data-stu-id="20ac0-105">If the partner that the subscription was purchased from is known by Microsoft, you can find out how to contact your partner using the following procedure.</span></span>
 
 ::: moniker range="o365-worldwide"
   
-1. <span data-ttu-id="030c3-106">Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.</span><span class="sxs-lookup"><span data-stu-id="030c3-106">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
+1. <span data-ttu-id="20ac0-106">Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.</span><span class="sxs-lookup"><span data-stu-id="20ac0-106">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">Your products</a> page.</span></span>
 
-2. <span data-ttu-id="030c3-107">Selezionare l'abbonamento a cui si desidera aggiungere licenze, quindi selezionare il collegamento **VLSC (Volume Licensing Service Center)** .</span><span class="sxs-lookup"><span data-stu-id="030c3-107">Select the subscription to which you want to add licenses, then select the **Volume Licensing Service Center (VLSC)** link.</span></span>
+2. <span data-ttu-id="20ac0-107">Selezionare l'abbonamento a cui si desidera aggiungere licenze, quindi selezionare il collegamento Centro servizi **per** contratti multilicenza.</span><span class="sxs-lookup"><span data-stu-id="20ac0-107">Select the subscription to which you want to add licenses, then select the **Volume Licensing Service Center (VLSC)** link.</span></span>
 
-3. <span data-ttu-id="030c3-108">Seguire la procedura indicata nel centro servizi per contratti multilicenza per completare l'acquisto.</span><span class="sxs-lookup"><span data-stu-id="030c3-108">Follow the steps in the VLSC to complete your purchase.</span></span>
+3. <span data-ttu-id="20ac0-108">Seguire la procedura indicata nel centro servizi per contratti multilicenza per completare l'acquisto.</span><span class="sxs-lookup"><span data-stu-id="20ac0-108">Follow the steps in the VLSC to complete your purchase.</span></span>
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. <span data-ttu-id="030c3-109">Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.</span><span class="sxs-lookup"><span data-stu-id="030c3-109">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.</span></span>
+1. <span data-ttu-id="20ac0-109">Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.</span><span class="sxs-lookup"><span data-stu-id="20ac0-109">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Subscriptions</a> page.</span></span>
 
-2. <span data-ttu-id="030c3-110">Nella pagina Abbonamenti selezionare l'abbonamento a cui si desidera aggiungere licenze, quindi selezionare il collegamento **VLSC (Volume Licensing Service Center)** .</span><span class="sxs-lookup"><span data-stu-id="030c3-110">On the Subscriptions page, select the subscription to which you want to add licenses, then select the **Volume Licensing Service Center (VLSC)** link.</span></span>
+2. <span data-ttu-id="20ac0-110">Nella pagina Sottoscrizioni selezionare l'abbonamento a cui si desidera  aggiungere licenze, quindi selezionare il collegamento Centro servizi per contratti multilicenza.</span><span class="sxs-lookup"><span data-stu-id="20ac0-110">On the Subscriptions page, select the subscription to which you want to add licenses, then select the **Volume Licensing Service Center (VLSC)** link.</span></span>
 
-3. <span data-ttu-id="030c3-111">Seguire la procedura indicata nel centro servizi per contratti multilicenza per completare l'acquisto.</span><span class="sxs-lookup"><span data-stu-id="030c3-111">Follow the steps in the VLSC to complete your purchase.</span></span> 
+3. <span data-ttu-id="20ac0-111">Seguire la procedura indicata nel centro servizi per contratti multilicenza per completare l'acquisto.</span><span class="sxs-lookup"><span data-stu-id="20ac0-111">Follow the steps in the VLSC to complete your purchase.</span></span> 
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. <span data-ttu-id="030c3-112">Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.</span><span class="sxs-lookup"><span data-stu-id="030c3-112">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.</span></span>
+1. <span data-ttu-id="20ac0-112">Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.</span><span class="sxs-lookup"><span data-stu-id="20ac0-112">In the admin center, go to the **Billing** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Subscriptions</a> page.</span></span>
 
-2. <span data-ttu-id="030c3-113">Nella pagina Abbonamenti selezionare l'abbonamento a cui si desidera aggiungere licenze, quindi selezionare il collegamento **VLSC (Volume Licensing Service Center)** .</span><span class="sxs-lookup"><span data-stu-id="030c3-113">On the Subscriptions page, select the subscription to which you want to add licenses, then select the **Volume Licensing Service Center (VLSC)** link.</span></span>
+2. <span data-ttu-id="20ac0-113">Nella pagina Sottoscrizioni selezionare l'abbonamento a cui si desidera  aggiungere licenze, quindi selezionare il collegamento Centro servizi per contratti multilicenza.</span><span class="sxs-lookup"><span data-stu-id="20ac0-113">On the Subscriptions page, select the subscription to which you want to add licenses, then select the **Volume Licensing Service Center (VLSC)** link.</span></span>
 
-3. <span data-ttu-id="030c3-114">Seguire la procedura indicata nel centro servizi per contratti multilicenza per completare l'acquisto.</span><span class="sxs-lookup"><span data-stu-id="030c3-114">Follow the steps in the VLSC to complete your purchase.</span></span>
+3. <span data-ttu-id="20ac0-114">Seguire la procedura indicata nel centro servizi per contratti multilicenza per completare l'acquisto.</span><span class="sxs-lookup"><span data-stu-id="20ac0-114">Follow the steps in the VLSC to complete your purchase.</span></span>
 
 ::: moniker-end

@@ -1,5 +1,5 @@
 ---
-title: Informazioni di pagamento per Danimarca
+title: Informazioni di pagamento per la Danimarca
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,16 +20,16 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48637200"
 ---
-# <a name="payment-information-for-denmark"></a><span data-ttu-id="422bb-103">Informazioni di pagamento per Danimarca</span><span class="sxs-lookup"><span data-stu-id="422bb-103">Payment information for Denmark</span></span>
+# <a name="payment-information-for-denmark"></a><span data-ttu-id="803d2-103">Informazioni di pagamento per la Danimarca</span><span class="sxs-lookup"><span data-stu-id="803d2-103">Payment information for Denmark</span></span>
 
-<span data-ttu-id="422bb-104">[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="422bb-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="803d2-104">[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="803d2-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="422bb-105">Si prega di pagare solo in DKK e i numeri delle fatture di riferimento sulla sua rimessa di pagamento.</span><span class="sxs-lookup"><span data-stu-id="422bb-105">Please pay in DKK only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="803d2-105">Pagare solo in DKK e fare riferimento ai numeri di fattura per la rimessa di pagamento.</span><span class="sxs-lookup"><span data-stu-id="803d2-105">Please pay in DKK only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="422bb-106">Bonifico bancario</span><span class="sxs-lookup"><span data-stu-id="422bb-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="803d2-106">Bonifico bancario</span><span class="sxs-lookup"><span data-stu-id="803d2-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="422bb-107">**Banca:** Citibank, Londra</span><span class="sxs-lookup"><span data-stu-id="422bb-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="422bb-108">**Codice SWIFT:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="422bb-108">**SWIFT Code:** CITIGB2L</span></span>  
-<span data-ttu-id="422bb-109">**Codice IBAN:** GB19CITI18500812207613</span><span class="sxs-lookup"><span data-stu-id="422bb-109">**IBAN:** GB19CITI18500812207613</span></span>  
-<span data-ttu-id="422bb-110">**Numero account:** 12207613</span><span class="sxs-lookup"><span data-stu-id="422bb-110">**Account Number:** 12207613</span></span>  
-<span data-ttu-id="422bb-111">**Nome account:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="422bb-111">**Account Name:** MICROSOFT</span></span>  
+<span data-ttu-id="803d2-107">**Bank:** Citibank, Londra</span><span class="sxs-lookup"><span data-stu-id="803d2-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="803d2-108">**Codice SWIFT:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="803d2-108">**SWIFT Code:** CITIGB2L</span></span>  
+<span data-ttu-id="803d2-109">**IBAN:** GB19CITI18500812207613</span><span class="sxs-lookup"><span data-stu-id="803d2-109">**IBAN:** GB19CITI18500812207613</span></span>  
+<span data-ttu-id="803d2-110">**Numero di conto:** 12207613</span><span class="sxs-lookup"><span data-stu-id="803d2-110">**Account Number:** 12207613</span></span>  
+<span data-ttu-id="803d2-111">**Nome account:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="803d2-111">**Account Name:** MICROSOFT</span></span>  

@@ -20,20 +20,20 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48638964"
 ---
-# <a name="contact-support-for-tuvalu"></a><span data-ttu-id="f01a5-103">Contattare il supporto per Tuvalu</span><span class="sxs-lookup"><span data-stu-id="f01a5-103">Contact support for Tuvalu</span></span>
+# <a name="contact-support-for-tuvalu"></a><span data-ttu-id="ebee7-103">Contattare il supporto tecnico per Tuvalu</span><span class="sxs-lookup"><span data-stu-id="ebee7-103">Contact support for Tuvalu</span></span>
 
-<span data-ttu-id="f01a5-104">[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="f01a5-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="ebee7-104">[Trova un altro paese o area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="ebee7-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="f01a5-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="f01a5-105">Phone number</span></span>
-<span data-ttu-id="f01a5-106">+ 1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="f01a5-106">+1 312 843 5148</span></span>
+## <a name="phone-number"></a><span data-ttu-id="ebee7-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="ebee7-105">Phone number</span></span>
+<span data-ttu-id="ebee7-106">+1 312 843 5148</span><span class="sxs-lookup"><span data-stu-id="ebee7-106">+1 312 843 5148</span></span>
 
-## <a name="hours"></a><span data-ttu-id="f01a5-107">Ore</span><span class="sxs-lookup"><span data-stu-id="f01a5-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="f01a5-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="f01a5-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="ebee7-107">Ore</span><span class="sxs-lookup"><span data-stu-id="ebee7-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="ebee7-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="ebee7-108">Billing Support:</span></span>
 
-<span data-ttu-id="f01a5-109">Inglese: Mon-Fri 9.00-17.00</span><span class="sxs-lookup"><span data-stu-id="f01a5-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="ebee7-109">Inglese: lun-ven 9:00-17:00</span><span class="sxs-lookup"><span data-stu-id="ebee7-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="f01a5-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="f01a5-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="ebee7-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="ebee7-110">Technical Support:</span></span>
 
-<span data-ttu-id="f01a5-111">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="f01a5-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="ebee7-111">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="ebee7-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="f01a5-112">Tariffe di chiamata internazionali applicate</span><span class="sxs-lookup"><span data-stu-id="f01a5-112">International call charges apply</span></span>
+<span data-ttu-id="ebee7-112">Si applicano addebiti per chiamate internazionali</span><span class="sxs-lookup"><span data-stu-id="ebee7-112">International call charges apply</span></span>

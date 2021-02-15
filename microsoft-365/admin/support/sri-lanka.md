@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per Sri Lanka
+title: Informazioni sul supporto per lo Sri Lanka
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,20 +20,20 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48639420"
 ---
-# <a name="contact-support-for-sri-lanka"></a><span data-ttu-id="6ff3b-103">Contattare il supporto per lo Sri Lanka</span><span class="sxs-lookup"><span data-stu-id="6ff3b-103">Contact support for Sri Lanka</span></span>
+# <a name="contact-support-for-sri-lanka"></a><span data-ttu-id="b79b0-103">Contattare il supporto per lo Sri Lanka</span><span class="sxs-lookup"><span data-stu-id="b79b0-103">Contact support for Sri Lanka</span></span>
 
-<span data-ttu-id="6ff3b-104">[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="6ff3b-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="b79b0-104">[Trova un altro paese o area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="b79b0-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="6ff3b-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="6ff3b-105">Phone number</span></span>
-<span data-ttu-id="6ff3b-106">2423 254</span><span class="sxs-lookup"><span data-stu-id="6ff3b-106">2423 254</span></span>
+## <a name="phone-number"></a><span data-ttu-id="b79b0-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="b79b0-105">Phone number</span></span>
+<span data-ttu-id="b79b0-106">2423 254</span><span class="sxs-lookup"><span data-stu-id="b79b0-106">2423 254</span></span>
 
-## <a name="hours"></a><span data-ttu-id="6ff3b-107">Ore</span><span class="sxs-lookup"><span data-stu-id="6ff3b-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="6ff3b-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="6ff3b-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="b79b0-107">Ore</span><span class="sxs-lookup"><span data-stu-id="b79b0-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="b79b0-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="b79b0-108">Billing Support:</span></span>
 
-<span data-ttu-id="6ff3b-109">Inglese: Mon-Fri 9.00-18.00</span><span class="sxs-lookup"><span data-stu-id="6ff3b-109">English: Mon-Fri 9 AM-6 PM</span></span>
+<span data-ttu-id="b79b0-109">Inglese: Mon-Fri dalle 9.00 alle 18.00</span><span class="sxs-lookup"><span data-stu-id="b79b0-109">English: Mon-Fri 9 AM-6 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="6ff3b-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="6ff3b-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="b79b0-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="b79b0-110">Technical Support:</span></span>
 
-<span data-ttu-id="6ff3b-111">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="6ff3b-111">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="b79b0-111">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="b79b0-111">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="6ff3b-112">Applicazione delle tariffe di chiamata locali</span><span class="sxs-lookup"><span data-stu-id="6ff3b-112">Local call charges apply</span></span>
+<span data-ttu-id="b79b0-112">Costo in base alle tariffe telefoniche locali</span><span class="sxs-lookup"><span data-stu-id="b79b0-112">Local call charges apply</span></span>
