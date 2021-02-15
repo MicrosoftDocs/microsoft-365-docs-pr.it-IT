@@ -1,5 +1,5 @@
 ---
-title: Spostamento dei dati di base in un nuovo datacenter di Microsoft 365 GEOS
+title: Spostamento dei dati di base in nuove posizioni geografiche del datacenter di Microsoft 365
 ms.author: andyber
 author: andybergen
 manager: laurawi
@@ -13,7 +13,7 @@ search.appverid:
 ms.assetid: 0a35176a-e585-4dec-a90b-36be8314667f
 f1.keywords:
 - NOCSH
-description: Informazioni su New Office 365 datacenter GEOS e su come utilizzare l'opzione di residenza dei dati per richiedere lo spostamento dei dati di base in un nuovo geografico.
+description: Informazioni sulle nuove posizioni geografiche dei datacenter di Office 365 e su come usare l'opzione di residenza dei dati per richiedere lo spostamento dei dati principali in una nuova area geografica.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: 6c5e63a973ca6fdf6aaaaca884df306ff790c325
 ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
@@ -22,19 +22,19 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 11/18/2020
 ms.locfileid: "49349245"
 ---
-# <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Spostamento dei dati di base in un nuovo datacenter di Microsoft 365 GEOS
+# <a name="moving-core-data-to-new-microsoft-365-datacenter-geos"></a>Spostamento dei dati di base in nuove posizioni geografiche del datacenter di Microsoft 365
 
-Si continua ad aprire nuovo datacenter GEOS per i servizi Microsoft 365. Questi nuovi datacenter GEOS aggiungono capacità e risorse di calcolo per supportare la crescita della domanda e dell'utilizzo dei clienti in continua espansione. Inoltre, il nuovo datacenter GEOS offre la residenza di dati in-Geo per i dati di base dei clienti. 
+We continue to open new datacenter geos for Microsoft 365 services. Questi nuovi centri dati geografici aggiungono capacità e risorse di calcolo per supportare la crescita continua della domanda e dell'utilizzo dei clienti. Inoltre, le nuove posizioni geografiche del datacenter offrono la residenza dei dati in-geo per i dati principali dei clienti. 
 
-I dati dei clienti di base sono un termine che fa riferimento a un sottoinsieme di dati dei clienti, tra cui: 
-- Contenuto delle cassette postali di Exchange Online (corpo del messaggio di posta elettronica, voci del calendario e contenuto degli allegati di posta elettronica)
-- Contenuto del sito di SharePoint Online e file archiviati all'interno del sito
-- File caricati in OneDrive for business
-- Messaggi di chat dei team, inclusi i messaggi privati, i messaggi di canale e le immagini utilizzate nelle chat
+Dati principali del cliente è un termine che fa riferimento a un sottoinsieme di dati del cliente, tra cui: 
+- Contenuto della cassetta postale di Exchange Online (corpo della posta elettronica, voci del calendario e contenuto degli allegati di posta elettronica)
+- Contenuto del sito di SharePoint Online e file archiviati in tale sito
+- File caricati in OneDrive for Business
+- Messaggi di chat di Teams, inclusi messaggi privati, messaggi di canale e immagini usati nelle chat
   
-I clienti esistenti che dispongono di dati di base dei clienti archiviati in un datacenter geografico già esistente non sono interessati dal lancio di un nuovo Data Center Geo. Non sono presenti funzionalità esclusive, funzionalità o certificazioni di conformità con il nuovo Data Center Geo. Come clienti in uno qualsiasi di questi due GEOS, si verificheranno gli stessi controlli di qualità dei servizi, delle prestazioni e della sicurezza come in precedenza. Offriamo ai clienti esistenti elencati nella tabella riportata di seguito un'opzione per richiedere la migrazione anticipata dei dati del cliente principale dell'organizzazione a riposo per il nuovo datacenter Geo.
+I clienti esistenti che hanno i dati principali dei clienti archiviati in un data center geo già esistente non sono influenzati dal lancio di una nuova posizione geografica del datacenter. Non introduciamo funzionalità, funzionalità o certificazioni di conformità univoche con il nuovo data center geografico. In qualità di cliente in una qualsiasi di queste due geo, potrai sperimentare la stessa qualità del servizio, le prestazioni e i controlli di sicurezza che hai fatto in precedenza. Offriamo ai clienti esistenti elencati nella tabella seguente un'opzione per richiedere la migrazione anticipata dei dati principali dei clienti dell'organizzazione nel nuovo data center geografico.
   
-|**Clienti con paese di iscrizione tenant in**|**Centro dati geografico precedente**|**Nuovo datacenter Geo**|**Geografica disponibile da**|
+|**Clienti con paese di iscrizione tenant**|**Data center geo precedente**|**Nuova area geografica del datacenter**|**Geo disponibile a partire da**|
 |:-----|:-----|:-----|:-----|
 |**Giappone**| Asia/Pacifico | Giappone | Dicembre 2014 |
 |**Australia, Nuova Zelanda, Figi**| Asia/Pacifico | Australia | Marzo 2015 |
@@ -48,23 +48,23 @@ I clienti esistenti che dispongono di dati di base dei clienti archiviati in un 
 |**Svizzera, Liechtenstein**| Unione Europea | Svizzera | Dicembre 2019 |
 |**Germania**| Unione Europea | Germania | Dicembre 2019 |
 |**Norvegia**| Unione Europea | Norvegia | Aprile 2020 |
-|**Brasile**| Americhe | Brasile | 2020 novembre |
+|**Brasile**| Americhe | Brasile | Novembre 2020 |
 
-Al 1 ° ottobre 2020 i clienti con un abbonamento a Office 365 Education incluso nel tenant non sono idonei per la migrazione.
+A partire dal 1° ottobre 2020 i clienti con un abbonamento a Office 365 Education incluso nel tenant non sono idonei per la migrazione.
 
-Un elenco completo di tutti i datacenter GEOS, Datacenter e la posizione dei dati del cliente a riposo è disponibile come parte delle [mappe dei datacenter interattivi](https://office.com/datamaps). 
+Un elenco completo di tutti i datacenter geografici, datacenter e la posizione dei dati dei clienti in stato di inquieto è disponibile come parte delle mappe [dei datacenter interattivi.](https://office.com/datamaps) 
   
 ## <a name="data-residency-option"></a>Opzione di residenza dei dati
 
-È disponibile un'opzione di data Residency per i clienti Microsoft 365 idonei che sono coperti dal centro dati GEOS elencato nella tabella precedente. Con questa opzione, i clienti idonei con i requisiti di residenza dei dati possono richiedere la migrazione dei dati del cliente principale dell'organizzazione a riposo al nuovo datacenter Geo.  Microsoft offrirà una scadenza di commit per tutti i clienti idonei che richiedono la migrazione durante la finestra di registrazione.  Esaminare la pagina [come richiedere lo spostamento dei dati](request-your-data-move.md) per ulteriori informazioni sulla finestra di registrazione aperta per il datacenter Geo e la procedura da eseguire per iscriversi al programma.  Gli spostamenti di dati possono richiedere fino a 24 mesi dopo il completamento del periodo di richieste.
+È disponibile un'opzione di residenza dei dati per i clienti idonei di Microsoft 365 coperti dai dati geografici del datacenter elencati nella tabella precedente. Con questa opzione, i clienti idonei con requisiti di residenza dei dati possono richiedere la migrazione dei dati principali dei clienti dell'organizzazione nel nuovo data center geografico.  Microsoft offrirà una scadenza impegnata a tutti i clienti idonei che richiedono la migrazione durante la finestra di registrazione.  Esaminare la [pagina Come richiedere lo](request-your-data-move.md) spostamento dei dati per altri dettagli sulla finestra di registrazione aperta per il centro dati geografico e sui passaggi per la registrazione al programma.  Gli spostamenti di dati possono richiedere fino a 24 mesi dopo la fine del periodo di richiesta.
 
-Non sono presenti funzionalità esclusive, funzionalità o certificazioni di conformità con il nuovo Data Center Geo.
+Non introduciamo funzionalità, funzionalità o certificazioni di conformità univoche con il nuovo data center geografico.
     
-La complessità, la precisione e la scalabilità in cui è necessario eseguire lo spostamento dei dati in un ambiente automatizzato e gestito a livello globale impediscono la condivisione quando si prevede che lo spostamento dei dati venga completato per il tenant o per qualsiasi altro tenant. I clienti riceveranno una conferma nel centro messaggi per ogni servizio di partecipazione quando il relativo spostamento dei dati è stato completato. 
+La complessità, la precisione e la scala con cui è necessario eseguire spostamenti di dati all'interno di un ambiente gestito a livello globale e automatizzato ci impediscono di condividere quando è previsto il completamento di uno spostamento di dati per il tenant o qualsiasi altro tenant singolo. Al termine del trasferimento dei dati, i clienti riceveranno una conferma nel Centro messaggi per ogni servizio partecipante. 
     
-Gli spostamenti di dati rappresentano un'operazione del servizio back-end con un impatto minimo sugli utenti finali. Le caratteristiche che possono essere influenzate sono elencate nella pagina [durante e dopo lo spostamento dei dati](during-and-after-your-data-move.md) . Il contratto di servizio di [Microsoft Online Services (SLA, Service Level Agreement)](https://go.microsoft.com/fwlink/p/?LinkId=523897) per la disponibilità è pertanto insufficiente per consentire ai clienti di prepararsi o monitorarli durante lo spostamento. La notifica di qualsiasi manutenzione del servizio viene fatta se necessario. 
+Gli spostamenti di dati sono un'operazione di servizio back-end con un impatto minimo sugli utenti finali. Le funzionalità che possono essere influenzate sono elencate nella [pagina Durante e dopo lo spostamento dei](during-and-after-your-data-move.md) dati. Aderiamo al [contratto Microsoft Online Services service level agreement (SLA)](https://go.microsoft.com/fwlink/p/?LinkId=523897) per la disponibilità, quindi non c'è nulla che i clienti devono preparare o monitorare durante il trasferimento. Se necessario, viene notificata qualsiasi manutenzione del servizio. 
 
-I dati si spostano nel nuovo datacenter Geo vengono completati senza costi aggiuntivi per il cliente.
+Gli spostamenti di dati nel nuovo data center geografico vengono completati senza costi aggiuntivi per il cliente.
     
 ## <a name="related-topics"></a>Argomenti correlati 
  
@@ -72,6 +72,6 @@ I dati si spostano nel nuovo datacenter Geo vengono completati senza costi aggiu
     
 [Domande frequenti sullo spostamento dati](data-move-faq.md)
   
-[Nuovo datacenter GEOS per Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+[Nuovi centri dati geografici per Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
-[Servizi di Azure in base all'area geografica](https://azure.microsoft.com/regions/)
+[Servizi di Azure per area geografica](https://azure.microsoft.com/regions/)

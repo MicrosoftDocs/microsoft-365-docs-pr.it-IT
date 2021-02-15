@@ -28,26 +28,26 @@ ms.locfileid: "48754681"
 ---
 # <a name="block-microsoft-365-user-accounts-with-powershell"></a>Bloccare gli account utente di Microsoft 365 con PowerShell
 
-*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
+*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
-Quando si blocca l'accesso a un account Microsoft 365, si impedisce a tutti gli utenti di utilizzare l'account per accedere ai servizi e ai dati dell'organizzazione Microsoft 365. È possibile utilizzare PowerShell per bloccare l'accesso a singoli o più account utente.
+Quando si blocca l'accesso a un account di Microsoft 365, si impedisce a chiunque di usare l'account per accedere ai servizi e ai dati nell'organizzazione di Microsoft 365. È possibile utilizzare PowerShell per bloccare l'accesso a uno o più account utente.
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Usare il modulo di Azure Active Directory PowerShell per Graph
 
-Per prima cosa, [connettersi al tenant Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module).
+Prima di [tutto, connettersi al tenant di Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
  
-### <a name="block-access-to-individual-user-accounts"></a>Blocca l'accesso a singoli account utente
+### <a name="block-access-to-individual-user-accounts"></a>Bloccare l'accesso a singoli account utente
 
-Per bloccare un singolo account utente, utilizzare la sintassi seguente:
+Utilizzare la sintassi seguente per bloccare un singolo account utente:
   
 ```powershell
 Set-AzureADUser -ObjectID <sign-in name of the user account> -AccountEnabled $false
 ```
 
 > [!NOTE]
-> Il parametro *-ObjectID* nel cmdlet **set-AzureAD** accetta sia il nome di accesso dell'account, noto anche come nome dell'entità utente, sia l'ID oggetto dell'account.
+> Il *parametro -ObjectID* nel cmdlet **Set-AzureAD** accetta il nome di accesso dell'account, noto anche come nome dell'entità utente, o l'ID oggetto dell'account.
   
-In questo esempio viene bloccato l'accesso all'account utente *fabricec@litwareinc.com*.
+In questo esempio viene limitato l'accesso all'account *utente fabricec@litwareinc.com*.
   
 ```powershell
 Set-AzureADUser -ObjectID fabricec@litwareinc.com -AccountEnabled $false
@@ -67,7 +67,7 @@ Write-Host (Get-AzureADUser | where {$_.DisplayName -eq $userName}).UserPrincipa
 
 ```
 
-In questo esempio viene visualizzato l'UPN dell'account utente per l'utente  *davanzali Caleb*.
+In questo esempio viene visualizzato l'UPN dell'account utente *Caleb Sills.*
   
 ```powershell
 $userName="Caleb Sills"
@@ -82,15 +82,15 @@ Set-AzureADUser -ObjectID (Get-AzureADUser | where {$_.DisplayName -eq $userName
 
 ```
 
-Per controllare lo stato bloccato di un account utente, utilizzare il seguente comando:
+Per controllare lo stato bloccato di un account utente, utilizzare il comando seguente:
   
 ```powershell
 Get-AzureADUser -UserPrincipalName <UPN of user account> | Select DisplayName,AccountEnabled
 ```
 
-### <a name="block-multiple-user-accounts"></a>Blocca più account utente
+### <a name="block-multiple-user-accounts"></a>Bloccare più account utente
 
-Per bloccare l'accesso a più account utente, creare un file di testo contenente un nome di accesso all'account su ogni riga simile alla seguente:
+Per bloccare l'accesso per più account utente, creare un file di testo contenente un nome di accesso per l'account in ogni riga simile al seguente:
     
   ```powershell
 akol@contoso.com
@@ -98,7 +98,7 @@ tjohnston@contoso.com
 kakers@contoso.com
   ```
 
-Nei comandi seguenti, il file di testo di esempio è *C:\My Documents\Accounts.txt*. Sostituire il nome del file con il percorso e il nome del file di testo.
+Nei comandi seguenti il file di testo di esempio è *C:\My Documents\Accounts.txt*. Sostituire questo nome file con il percorso e il nome del file di testo.
   
 Per bloccare l'accesso agli account elencati nel file di testo, eseguire il comando seguente:
     
@@ -106,7 +106,7 @@ Per bloccare l'accesso agli account elencati nel file di testo, eseguire il coma
 Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID $_ -AccountEnabled $false }
 ```
 
-Per sbloccare gli account elencati nel file di testo, eseguire il comando riportato di seguito:
+Per sbloccare gli account elencati nel file di testo, eseguire il comando seguente:
     
 ```powershell
 Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID $_ -AccountEnabled $true }
@@ -114,20 +114,20 @@ Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-AzureADUSer -ObjectID
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Usare il Modulo di Microsoft Azure Active Directory per Windows PowerShell
 
-Per prima cosa, [connettersi al tenant Microsoft 365](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
+Prima di [tutto, connettersi al tenant di Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
     
-### <a name="block-individual-user-accounts"></a>Blocca singoli account utente
+### <a name="block-individual-user-accounts"></a>Bloccare singoli account utente
 
-Utilizzare la seguente sintassi per bloccare l'accesso per un singolo account utente:
+Utilizzare la sintassi seguente per bloccare l'accesso per un singolo account utente:
   
 ```powershell
 Set-MsolUser -UserPrincipalName <sign-in name of user account>  -BlockCredential $true
 ```
 
 >[!Note]
->PowerShell Core non supporta il modulo di Microsoft Azure Active Directory per il modulo di Windows PowerShell e i cmdlet che dispongono di *MSOL* nel proprio nome. È necessario eseguire questi cmdlet da Windows PowerShell.
+>PowerShell Core non supporta il modulo di Microsoft Azure Active Directory per Windows PowerShell e i cmdlet con *Msol* nel nome. È necessario eseguire questi cmdlet da Windows PowerShell.
 
-In questo esempio viene bloccato l'accesso all'account utente *fabricec \@ litwareinc.com*.
+In questo esempio viene limitato l'accesso all'account *utente fabricec \@ litwareinc.com*.
   
 ```powershell
 Set-MsolUser -UserPrincipalName fabricec@litwareinc.com -BlockCredential $true
@@ -139,15 +139,15 @@ Per sbloccare l'account utente, eseguire il comando riportato di seguito:
 Set-MsolUser -UserPrincipalName <sign-in name of user account>  -BlockCredential $false
 ```
 
-Per controllare lo stato bloccato di un account utente, eseguire il comando riportato di seguito:
+Per verificare lo stato bloccato di un account utente, eseguire il comando seguente:
   
 ```powershell
 Get-MsolUser -UserPrincipalName <sign-in name of user account> | Select DisplayName,BlockCredential
 ```
 
-### <a name="block-access-for-multiple-user-accounts"></a>Blocca l'accesso per più account utente
+### <a name="block-access-for-multiple-user-accounts"></a>Bloccare l'accesso per più account utente
 
-Per prima cosa, creare un file di testo contenente un account su ogni riga come riportato di questo tipo:
+Prima di tutto, crea un file di testo che contiene un account in ogni riga, come nel seguente:
     
 ```powershell
 akol@contoso.com
@@ -155,9 +155,9 @@ tjohnston@contoso.com
 kakers@contoso.com
 ```
 
-Nei comandi seguenti, il file di testo di esempio è *C:\My Documents\Accounts.txt*. Sostituire il nome del file con il percorso e il nome del file di testo.
+Nei comandi seguenti il file di testo di esempio è *C:\My Documents\Accounts.txt*. Sostituire questo nome file con il percorso e il nome del file di testo.
     
-Per bloccare l'accesso per gli account elencati nel file di testo, eseguire il comando riportato di seguito:
+Per bloccare l'accesso per gli account elencati nel file di testo, eseguire il comando seguente:
     
   ```powershell
   Get-Content "C:\My Documents\Accounts.txt" | ForEach { Set-MsolUser -UserPrincipalName $_ -BlockCredential $true }

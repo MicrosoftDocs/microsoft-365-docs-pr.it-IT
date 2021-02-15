@@ -15,51 +15,51 @@ ms.lasthandoff: 11/06/2020
 ms.locfileid: "48941442"
 ---
 # <a name="windows-security-update-insights"></a>Dati analitici sugli aggiornamenti della sicurezza di Windows
-In questa visualizzazione viene fornita una panoramica dello stato degli aggiornamenti della sicurezza per i dispositivi Microsoft Managed Desktop. 
+Questa visualizzazione offre una panoramica dello stato degli aggiornamenti della sicurezza per i dispositivi Microsoft Managed Desktop. 
 
-Per visualizzare i dati di utilizzo, selezionare la scheda aggiornamenti per la <strong>sicurezza di Windows</strong> .
+Per visualizzare i dati di utilizzo, selezionare la <strong>scheda Aggiornamenti della sicurezza di Windows.</strong>
 
-![Riquadro degli aggiornamenti della sicurezza di Windows: grafici a barre dello stato del dispositivo e della versione di aggiornamento nella colonna a sinistra, lo stato di aggiornamento della distribuzione nel tempo nella colonna centrale e la percentuale di dispositivi attivi per gruppo di distribuzione, nonché il numero di giorni per raggiungere la destinazione di distribuzione 95% nella colonna a destra.](../../media/update-insights.jpg)
+![Riquadro degli aggiornamenti della sicurezza di Windows: grafici a barre dello stato del dispositivo e della versione di aggiornamento nella colonna sinistra, avanzamento della distribuzione degli aggiornamenti nel tempo nella colonna centrale e percentuale di dispositivi attivi in base al gruppo di distribuzione, nonché numero di giorni necessari per raggiungere la destinazione di distribuzione del 95% nella colonna destra.](../../media/update-insights.jpg)
 
 ## <a name="device-status"></a>Stato del dispositivo
 
-Affinché i dispositivi vengano aggiornati da Windows Update, è necessario che siano connessi a Internet e che non siano in letargo per un minimo di sei ore, due dei quali devono essere continue. Anche se è possibile che un dispositivo che non soddisfa questi requisiti venga aggiornato, i dispositivi che li soddisfano hanno la maggiore probabilità di essere aggiornati. 
+Per poter essere aggiornati da Windows Update, i dispositivi devono essere connessi a Internet e non ibernazione per un minimo di sei ore, due dei quali devono essere continui. Anche se è possibile che un dispositivo che non soddisfa questi requisiti venga aggiornato, i dispositivi che soddisfano tali requisiti hanno la massima probabilità di essere aggiornati. 
 
-La categorizzazione dell'attività del dispositivo nel contesto di Windows Update viene confrontata con questi termini:
+Categorizziamo l'attività dei dispositivi nel contesto di Windows Update con questi termini:
 
-- <strong>Attivo:</strong> Dispositivi che soddisfano i criteri minimi di attività (sei ore, due continue) per la versione di aggiornamento della sicurezza più recente e che sono stati archiviati con Microsoft Intune almeno ogni cinque giorni
-- <strong>Sincronizzati:</strong> Dispositivi che sono stati archiviati con Intune negli ultimi 28 giorni
-- Non <strong>sincronizzato:</strong> Dispositivi che <i>non</i> sono stati archiviati con Intune negli ultimi 28 giorni
-
-
+- <strong>Attivo:</strong> Dispositivi che hanno soddisfatto i criteri di attività minimi (sei ore, due continui) per la versione più recente dell'aggiornamento della sicurezza e che hanno archiviato con Microsoft Intune almeno ogni cinque giorni
+- <strong>Sincronizzato:</strong> Dispositivi che hanno archiviato con Intune negli ultimi 28 giorni
+- <strong>Non sincronizzato:</strong> Dispositivi che <i>non hanno</i> archiviato con Intune negli ultimi 28 giorni
 
 
-## <a name="update-version-status"></a>Stato versione aggiornamento
-
-Microsoft rilascia gli aggiornamenti della sicurezza ogni secondo martedi del mese. Ogni versione aggiunge aggiornamenti importanti per vulnerabilità note sulla sicurezza. Microsoft Managed Desktop garantisce che il 95% dei suoi dispositivi gestiti venga aggiornato con l'aggiornamento della sicurezza più recente disponibile ogni mese. Gli aggiornamenti della sicurezza vengono talvolta rilasciati in altri casi per affrontare con urgenza nuove minacce. Microsoft Managed Desktop distribuisce questi aggiornamenti in modo analogo.
-
-Categorizzare lo stato delle versioni degli aggiornamenti per la sicurezza con questi termini:
-
-- <strong>Corrente:</strong> Dispositivi che eseguono l'aggiornamento rilasciati nel mese corrente
-- <strong>Previous:</strong> Dispositivi che eseguono l'aggiornamento rilasciato nel mese precedente
-- <strong>Precedente:</strong> Dispositivi che eseguono tutti gli aggiornamenti della sicurezza rilasciati prima del mese precedente
-
-Si dovrebbe vedere alcuni dispositivi nella categoria <strong>precedente</strong> --una popolazione di grandi dimensioni o in crescita indica probabilmente un problema sistemico che è necessario segnalare a Microsoft Managed Desktop in modo da poter indagare.
 
 
-## <a name="deployment-progress"></a>Stato di avanzamento della distribuzione
+## <a name="update-version-status"></a>Aggiornare lo stato della versione
 
-All'inizio di ogni ciclo di rilascio degli aggiornamenti per la sicurezza, Microsoft Managed Desktop acquisisce un'istantanea del popolamento del dispositivo e imposta la propria destinazione di distribuzione al 95% di quella popolazione. L'area di <strong>avanzamento della distribuzione</strong> presenta una tendenza storica, aggiornata giornalmente, tracciando la conformità della distribuzione degli aggiornamenti a questa destinazione per ogni versione. Questo grafico Visualizza solo i dispositivi con stato attivo.
+Microsoft rilascia gli aggiornamenti della sicurezza ogni secondo martedì del mese. Ogni versione aggiunge aggiornamenti importanti per le vulnerabilità di sicurezza note. Microsoft Managed Desktop garantisce che il 95% dei dispositivi gestiti sia aggiornato con l'aggiornamento della sicurezza più recente disponibile ogni mese. Gli aggiornamenti della sicurezza vengono talvolta rilasciati in altri momenti per affrontare con urgenza nuove minacce. Microsoft Managed Desktop distribuisce questi aggiornamenti in modo simile.
 
-È possibile visualizzare i dati per i cicli di aggiornamento precedenti utilizzando il menu a discesa in alto a destra. Il periodo selezionato in questo menu si applica a tutte le informazioni dell'intera pagina.
+Lo stato delle versioni degli aggiornamenti della sicurezza viene classificato con le condizioni seguenti:
 
-L'area dei <strong>dispositivi attivi aggiornati in base al gruppo di distribuzione</strong> offre una visualizzazione diversa mostrando lo stato di avanzamento dell'installazione dell'aggiornamento per ogni gruppo di distribuzione di Microsoft Managed Desktop.
+- <strong>Corrente:</strong> Dispositivi che eseguono l'aggiornamento rilasciato nel mese corrente
+- <strong>Precedente:</strong> Dispositivi che eseguono l'aggiornamento rilasciato nel mese precedente
+- <strong>Meno recente:</strong> Dispositivi che eseguono qualsiasi aggiornamento della sicurezza rilasciato prima del mese precedente
 
-I <strong>giorni per raggiungere</strong> l'area di destinazione Visualizza il tempo impiegato per il 95% del numero totale di dispositivi da aggiornare con l'aggiornamento della sicurezza corrente. Durante la fase di distribuzione, quest'area Visualizza l' <strong>aggiornamento</strong> fino a quando non viene raggiunta la destinazione 95% per l'aggiornamento selezionato.
+Dovrebbero essere visualizzati pochi <strong></strong> dispositivi nella categoria Meno recente. Una popolazione di grandi dimensioni o in crescita probabilmente indica un problema sistemico che è necessario segnalare a Microsoft Managed Desktop in modo da poter analizzare.
+
+
+## <a name="deployment-progress"></a>Avanzamento della distribuzione
+
+All'inizio di ogni ciclo di rilascio degli aggiornamenti della sicurezza, Microsoft Managed Desktop prende uno snapshot della popolazione di dispositivi e imposta l'obiettivo di distribuzione sul 95% della popolazione. <strong>L'area di avanzamento</strong> della distribuzione mostra una tendenza cronologica aggiornata ogni giorno, verificando la frequenza con cui la distribuzione dell'aggiornamento soddisfa questo obiettivo per ogni versione. Questo grafico mostra solo i dispositivi con stato Attivo.
+
+Puoi visualizzare questi dati per i cicli di aggiornamento precedenti usando il menu a discesa in alto a destra. Il periodo selezionato in questo menu si applica a tutte le informazioni nell'intera pagina.
+
+<strong>L'area Dispositivi attivi aggiornati in</strong> base al gruppo di distribuzione offre una visualizzazione diversa mostrando l'avanzamento dell'installazione dell'aggiornamento per ogni gruppo di distribuzione di Microsoft Managed Desktop.
+
+<strong>Nell'area Giorni per raggiungere</strong> l'area di destinazione viene visualizzato il tempo impiegato per il 95% del numero totale di dispositivi da aggiornare con l'aggiornamento della sicurezza corrente. Mentre è in corso la distribuzione, in quest'area viene visualizzato l'opzione Ancora <strong>aggiornamento</strong> fino a quando non viene raggiunta la destinazione del 95% per l'aggiornamento selezionato.
 
 ## <a name="device-details-area"></a>Area dettagli dispositivo
 
-La parte inferiore del dashboard è una tabella che mostra informazioni dettagliate sui dispositivi, tra cui lo stato del [dispositivo](#device-status) e lo [stato della versione dell'aggiornamento](#update-version-status). È possibile eseguire una ricerca nell'elenco o filtrarlo in base a qualsiasi valore elencato.
+Nella parte inferiore del dashboard è disponibile una tabella che mostra informazioni dettagliate per i dispositivi, tra cui lo stato del [dispositivo](#device-status) e [lo stato della versione di aggiornamento.](#update-version-status) È possibile cercare questo elenco o filtrarlo in base a qualsiasi valore elencato.
 
 
-![Tabella dei dettagli del dispositivo che mostra le colonne per il nome del dispositivo, l'utente assegnato, lo stato del dispositivo, la versione dell'aggiornamento, la versione del sistema operativo e la data di sincronizzazione dell'ultimo dispositivo.](../../media/security-update-insights-device-table-sterile.png)
+![Tabella dettagli dispositivo che mostra le colonne relative al nome del dispositivo, all'utente assegnato, allo stato del dispositivo, alla versione di aggiornamento, alla versione del sistema operativo e alla data dell'ultima sincronizzazione del dispositivo.](../../media/security-update-insights-device-table-sterile.png)

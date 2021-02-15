@@ -31,47 +31,47 @@ ms.locfileid: "48841174"
 ---
 # <a name="set-up-compliance-features"></a>Funzionalità di conformità della configurazione
 
-Microsoft 365 Business Premium è dotato di funzionalità per proteggere i dati e i dispositivi, nonché per garantire la sicurezza delle informazioni riservate e dei clienti.
+Microsoft 365 Business Premium include funzionalità per proteggere i dati e i dispositivi e consente di proteggere le informazioni riservate dei clienti.
 
 ## <a name="set-up-dlp-features"></a>Configurare le funzionalità DLP
 
-Vedere [creare un criterio DLP da un modello](https://docs.microsoft.com/microsoft-365/compliance/create-a-dlp-policy-from-a-template) per un esempio su come impostare un criterio per proteggere la protezione dalla perdita dei dati personali. 
+Vedere [Creare un criterio DLP da un modello](https://docs.microsoft.com/microsoft-365/compliance/create-a-dlp-policy-from-a-template) per un esempio su come configurare un criterio per la protezione dalla perdita di dati personali. 
   
-DLP viene fornito con molti modelli di criteri pronti per l'uso per molte impostazioni locali diverse. Ad esempio, Australia Financial Data, Canada Personal Information Act, US Financial Data e così via. Vedere [cosa includono i modelli di criteri DLP](https://docs.microsoft.com/microsoft-365/compliance/what-the-dlp-policy-templates-include) per un elenco completo. Tutti questi modelli possono essere abilitati in modo analogo all'esempio del modello PII. 
+DLP include molti modelli di criteri pronti all'uso per molte impostazioni locali diverse. Ad esempio, Australia Financial Data, Canada Personal Information Act, U.S. Financial Data e così via. Vedere [Cosa includono i modelli di criteri DLP per](https://docs.microsoft.com/microsoft-365/compliance/what-the-dlp-policy-templates-include) un elenco completo. Tutti questi modelli possono essere abilitati in modo simile all'esempio di modello di informazioni personali. 
   
-## <a name="set-up-email-retention-with-exchange-online-archiving"></a>Configurare la conservazione della posta elettronica con archiviazione Exchange Online
+## <a name="set-up-email-retention-with-exchange-online-archiving"></a>Configurare la conservazione della posta elettronica con Archiviazione Exchange Online
 
- Le funzionalità di licenza di **archiviazione di Exchange Online** aiutano a mantenere la conformità e gli standard normativi preservando il contenuto della posta elettronica per eDiscovery. Consente inoltre di ridurre il rischio se esiste una causa legale e consente di recuperare i dati dopo una violazione della sicurezza o quando è necessario recuperare gli elementi eliminati. È possibile utilizzare il blocco per controversia legale per mantenere tutto il contenuto di un utente o utilizzare i criteri di conservazione per personalizzare gli elementi che si desidera conservare.
+ **Archiviazione Exchange Online** licenze consentono di mantenere gli standard normativi e di conformità preservando il contenuto della posta elettronica per eDiscovery. Consente inoltre di ridurre i rischi in caso di un'azione legale e consente di recuperare i dati dopo una violazione della sicurezza o quando è necessario recuperare gli elementi eliminati. È possibile utilizzare la conservazione per controversia legale per conservare tutto il contenuto di un utente o utilizzare i criteri di conservazione per personalizzare ciò che si desidera conservare.
   
-**Blocco per controversia legale:** È possibile mantenere tutti i contenuti delle cassette postali, compresi gli elementi eliminati, inserendo l'intera cassetta postale di un utente sul blocco per controversia legale. 
+**Conservazione per controversia legale:** È possibile conservare tutto il contenuto della cassetta postale, inclusi gli elementi eliminati, inserendo l'intera cassetta postale di un utente in conservazione per controversia legale. 
     
-Per inserire una cassetta postale per il blocco per controversia legale, nell'interfaccia di amministrazione:
+Per impostare la conservazione per controversia legale in una cassetta postale, nell'interfaccia di amministrazione:
     
-1. Nella barra di spostamento a sinistra, passare a utenti attivi degli **utenti** \> **Active users** .
+1. Nel riquadro di spostamento sinistro passare a **Utenti** \> **attivi.**
     
-2. Selezionare un utente la cui cassetta postale si desidera inserire nel blocco per controversia legale. Nel riquadro utente espandere Impostazioni di **posta elettronica** e accanto a **altre impostazioni** scegliere **modifica proprietà di Exchange** .
+2. Selezionare un utente di cui si desidera mantenere la conservazione per controversia legale nella cassetta postale. Nel riquadro degli utenti espandere **Impostazioni posta** e accanto ad **Altre impostazioni** scegliere Modifica proprietà **di Exchange.**
     
-3. Nella pagina Cassetta postale per l'utente, scegliere * * funzionalità cassetta postale * * sulla barra di spostamento sinistra e quindi scegliere il collegamento **attiva** in **blocco per controversia legale** .
+3. On the mailbox page for the user, choose ** mailbox features ** on the left nav, and then choose the **Enable** link under **Litigation hold**.
     
-4. Nella finestra di dialogo **blocco per controversia legale** , è possibile specificare la durata del blocco per controversia legale nel campo **Durata blocco** per controversia legale. Lasciare vuoto il campo se si desidera inserire un blocco infinito. È inoltre possibile aggiungere note e indirizzare il proprietario della cassetta postale a un sito Web potrebbe essere necessario spiegarne di più sul blocco per controversia legale. \>**Save** .
+4. Nella finestra **di dialogo di conservazione** per controversia legale è possibile specificare la durata della conservazione per controversia legale nel campo Durata blocco per **controversia** legale. Lasciare vuoto il campo se si desidera inserire un'esenzione infinita. È inoltre possibile aggiungere note e indirizzare il proprietario della cassetta postale a un sito Web che potrebbe essere necessario spiegare di più sulla conservazione per controversia legale. \>**Salva**.
     
-**Conservazione:** È possibile abilitare i criteri di conservazione personalizzati, ad esempio per mantenere un determinato intervallo di tempo o eliminare il contenuto in modo permanente alla fine del periodo di conservazione. Per ulteriori informazioni, vedere [Overview of Retention Policies](https://docs.microsoft.com/microsoft-365/compliance/retention-policies).
+**Conservazione:** È possibile abilitare criteri di conservazione personalizzati, ad esempio, per conservare per un periodo di tempo specifico o eliminare definitivamente il contenuto alla fine del periodo di conservazione. Per ulteriori informazioni, vedere [Panoramica dei criteri di conservazione.](https://docs.microsoft.com/microsoft-365/compliance/retention-policies)
 
 ## <a name="set-up-sensitivity-labels"></a>Configurare le etichette di riservatezza
 
-Le etichette di riservatezza sono dotate di Azure Information Protection (AIP) piano 1 e consentono di classificare e, facoltativamente, proteggere i documenti e i messaggi di posta elettronica applicando etichette. Le etichette possono essere applicate automaticamente dagli amministratori che definiscono le regole e le condizioni, manualmente dagli utenti o utilizzando una combinazione in cui gli utenti ricevono consigli.
+Le etichette di riservatezza sono disponibili con Azure Information Protection (AIP) Piano 1 e consentono di classificare e facoltativamente proteggere i documenti e i messaggi di posta elettronica applicando etichette. Le etichette possono essere applicate automaticamente dagli amministratori che definiscono regole e condizioni, manualmente dagli utenti o utilizzando una combinazione in cui agli utenti vengono forniti suggerimenti.
 
-Per impostare le etichette di riservatezza, vedere [creare e gestire le etichette di riservatezza](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) video.
+Per configurare le etichette di riservatezza, visualizzare il video [per creare e gestire le etichette di](https://support.microsoft.com/office/2fb96b54-7dd2-4f0c-ac8d-170790d4b8b9) riservatezza.
 
 
 
-### <a name="install-the-azure-information-protection-client-manually"></a>Installare il client Azure Information Protection manualmente
+### <a name="install-the-azure-information-protection-client-manually"></a>Installare manualmente il client Azure Information Protection
 
 Per installare manualmente il client AIP:
 
-1. Scaricare **AzinfoProtection_UL.exe** dall' [area download Microsoft](https://www.microsoft.com/download/details.aspx?id=53018).
+1. Scaricare **AzinfoProtection_UL.exe** dall'Area [download Microsoft.](https://www.microsoft.com/download/details.aspx?id=53018)
  
-2. È possibile verificare che l'installazione abbia avuto esito positivo visualizzando un documento di Word e assicurandosi che l'opzione **sensitivity** sia disponibile nella scheda **Home** .
-<br/>![Elenco a discesa della scheda protezione in un documento di Word.](../media/word-sensitivity.png)
+2. È possibile verificare che l'installazione sia stata completata  visualizzando un documento di Word e verificando che l'opzione Riservatezza sia disponibile nella **scheda** Home.
+<br/>![Elenco a discesa Della scheda Protezione in un documento di Word.](../media/word-sensitivity.png)
 
 Per ulteriori informazioni, vedere [Install the client](https://docs.microsoft.com/azure/information-protection/infoprotect-tutorial-step3).

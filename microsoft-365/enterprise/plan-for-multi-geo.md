@@ -30,13 +30,13 @@ In una configurazione multi-geo, il tenant di Microsoft 365 è costituito da una
 
 Ecco un glossario dei termini principali per facilitare la comprensione della configurazione multi-geografica:
 
--   **Tenant** : rappresentazione di un'organizzazione in Microsoft 365 che in genere contiene uno o più domini associati ad essa ad esempio, https://contoso.sharepoint.com). 
+-   **Tenant**: rappresentazione di un'organizzazione in Microsoft 365 che in genere contiene uno o più domini associati ad essa ad esempio, https://contoso.sharepoint.com). 
 
--   **Posizioni geografiche** : le località geografiche disponibili per ospitare i dati in un tenant di Microsoft 365.
+-   **Posizioni geografiche**: le località geografiche disponibili per ospitare i dati in un tenant di Microsoft 365.
 
--   **Posizioni satellite** : posizioni geografica aggiuntive configurate per ospitare dati nel tenant di Microsoft 365. I tenant multi-geo si estendono su più di una posizione geografica, ad esempio, America del Nord ed Europa.
+-   **Posizioni satellite**: posizioni geografica aggiuntive configurate per ospitare dati nel tenant di Microsoft 365. I tenant multi-geo si estendono su più di una posizione geografica, ad esempio, America del Nord ed Europa.
 
--   **Percorso dati preferito (PDL)** : la posizione geografica in cui sono memorizzati i dati di Exchange e di OneDrive di un singolo utente. Questo può essere impostato dall'amministratore per una delle posizioni geografiche che sono state configurate per il tenant. Si noti che se si cambia il PDL di un utente che ha già un sito di OneDrive, i dati di OneDrive non vengono spostati nella nuova posizione geografica automaticamente. Vedere[Spostare una libreria OneDrive in un'altra posizione geo](move-onedrive-between-geo-locations.md) per più informazioni. Se si dispone di una cassetta postale di Exchange, la cassetta postale viene spostata automaticamente nella nuova posizione dati preferita dati.
+-   **Percorso dati preferito (PDL)**: la posizione geografica in cui sono memorizzati i dati di Exchange e di OneDrive di un singolo utente. Questo può essere impostato dall'amministratore per una delle posizioni geografiche che sono state configurate per il tenant. Si noti che se si cambia il PDL di un utente che ha già un sito di OneDrive, i dati di OneDrive non vengono spostati nella nuova posizione geografica automaticamente. Vedere[Spostare una libreria OneDrive in un'altra posizione geo](move-onedrive-between-geo-locations.md) per più informazioni. Se si dispone di una cassetta postale di Exchange, la cassetta postale viene spostata automaticamente nella nuova posizione dati preferita dati.
 
 Per abilitare Multi-Geo sono necessarie quattro attività:
 
@@ -73,7 +73,7 @@ Se gli utenti vengono sincronizzati da un sistema di Active Directory locale con
 
 L'amministrazione di un tenant multi-geografico può essere diverso da un tenant non multi-geografico, dal momento che la maggior parte delle impostazioni SharePoint e OneDrive e i servizi hanno funzionalità multi-geo. È consigliabile consultare [Amministrazione di un ambiente multi-geografico](administering-a-multi-geo-environment.md) prima di procedere con la configurazione.
 
-Leggere l' [esperienza utente in un ambiente multi-Geo](multi-geo-user-experience.md) per informazioni dettagliate sull'esperienza degli utenti finali in un ambiente multi-geografico.
+Leggi [l'esperienza utente in un ambiente multi-geografico](multi-geo-user-experience.md) per informazioni dettagliate sull'esperienza degli utenti finali in un ambiente multi-geografico.
 
 Per informazioni dettagliate sull'esperienza di Teams in un tenant Microsoft 365 Multi-Geo, vedere [Esperienza di Teams in un tenant con Microsoft 365 OneDrive e SharePoint Online Multi-Geo.](https://docs.microsoft.com/microsoftteams/teams-experience-o365odb-spo-multi-geo)
 

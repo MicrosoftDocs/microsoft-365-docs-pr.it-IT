@@ -11,7 +11,7 @@
 |Giappone                        |JPN     |Datacenter Asia orientale o sudorientale|
 |Corea                        |KOR     |Datacenter Asia orientale o sudorientale|
 |Nord America                |NAM     |Datacenter Stati Uniti                    |
-|Norvegia                       |NÉ     |Posizione dei dati in eDiscovery presto disponibile|
+|Norvegia                       |NOR     |Posizione dei dati in eDiscovery presto disponibile|
 |Sudafrica                 |ZAF     |Datacenter Asia orientale o sudorientale|
 |Svizzera                  |CHE     |Datacenter Europa                |
 |Emirati Arabi Uniti         |ARE     |Datacenter Asia orientale o sudorientale|

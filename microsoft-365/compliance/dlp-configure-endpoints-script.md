@@ -1,5 +1,5 @@
 ---
-title: Dispositivi di bordo di Windows 10 con uno script locale
+title: Onboarding di dispositivi Windows 10 con uno script locale
 f1.keywords: NOCSH
 ms.author: chrfox
 author: chrfox
@@ -13,7 +13,7 @@ ms.collection:
 - M365-security-compliance
 search.appverid:
 - MET150
-description: Utilizzare uno script locale per distribuire il pacchetto di configurazione nei dispositivi in modo che vengano onboarded to the Service.
+description: Usa uno script locale per distribuire il pacchetto di configurazione nei dispositivi in modo che siano onboarded nel servizio.
 ms.openlocfilehash: 74152f9488623d39e32ee4e47a452bd1daea28c7
 ms.sourcegitcommit: 6647055154002c7d3b8f7ce25ad53c9636bc8066
 ms.translationtype: MT
@@ -21,94 +21,94 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/27/2020
 ms.locfileid: "48769470"
 ---
-# <a name="onboard-windows-10-devices-using-a-local-script"></a>Dispositivi di bordo di Windows 10 con uno script locale
+# <a name="onboard-windows-10-devices-using-a-local-script"></a>Onboarding di dispositivi Windows 10 con uno script locale
 
 **Si applica a:**
 
-- [Prevenzione della perdita di dati (DLP) di Microsoft 365 endpoint](/microsoft-365/compliance/endpoint-dlp-learn-about)
+- [Prevenzione della perdita dei dati degli endpoint di Microsoft 365 (DLP)](/microsoft-365/compliance/endpoint-dlp-learn-about)
 
-È inoltre possibile eseguire manualmente l'onboarding dei singoli dispositivi per la prevenzione della perdita di dati di Microsoft 365 endpoint. Potrebbe essere necessario eseguire questa operazione prima quando si verifica il servizio prima di eseguire l'onboarding di tutti i dispositivi della rete.
+È inoltre possibile eseguire manualmente l'onboarder dei singoli dispositivi per la prevenzione della perdita di dati degli endpoint di Microsoft 365. È consigliabile eseguire questa operazione prima di testare il servizio prima di eseguire l'onboarding di tutti i dispositivi nella rete.
 
 > [!IMPORTANT]
 > Questo script è stato ottimizzato per l'uso su un massimo di 10 dispositivi.
 >
-> Per eseguire la distribuzione in scala, utilizzare [altre opzioni di distribuzione](dlp-configure-endpoints.md). Ad esempio, è possibile distribuire uno script onboarding su più di 10 dispositivi in produzione con lo script disponibile nei [dispositivi di bordo di Windows 10 utilizzando criteri di gruppo](dlp-configure-endpoints-gp.md).
+> Per eseguire la distribuzione su larga scala, utilizzare [altre opzioni di distribuzione.](dlp-configure-endpoints.md) Ad esempio, puoi distribuire uno script di onboarding in più di 10 dispositivi in produzione con lo script disponibile nei dispositivi [Windows 10](dlp-configure-endpoints-gp.md)con Criteri di gruppo.
 
-## <a name="onboard-devices"></a>Dispositivi di bordo
+## <a name="onboard-devices"></a>Onboard dei dispositivi
  
-1.  Aprire il file con estensione zip del pacchetto di configurazione GP ( *DeviceComplianceOnboardingPackage.zip* ) scaricato dalla procedura guidata di onboarding dei servizi. È anche possibile ottenere il pacchetto dal [centro conformità Microsoft](https://compliance.microsoft.com)
+1.  Apri il file ZIP del pacchetto di configurazione criteri *di gruppo*(DeviceComplianceOnboardingPackage.zip) che hai scaricato dall'onboarding guidato del servizio. È anche possibile ottenere il pacchetto dal [Centro conformità Microsoft](https://compliance.microsoft.com)
 
-2. Nel riquadro di spostamento, selezionare **Settings**  >  **onboarding del dispositivo** di impostazioni.
+2. Nel riquadro di spostamento seleziona **Impostazioni**  >  **onboarding del dispositivo.**
 
-3. Nel campo **metodo di distribuzione** selezionare **script locale** .
+3. Nel campo **Metodo di distribuzione** selezionare Script **locale.**
 
-4. Fare clic su **Download package** e salvare il file con estensione zip.
+4. Fai **clic su Scarica** pacchetto e salva il file ZIP.
   
-5. Estrarre il contenuto del pacchetto di configurazione in una posizione nel dispositivo che si desidera Onboard (ad esempio, il desktop). È necessario disporre di un file denominato *DeviceOnboardingScript. cmd* .
+5. Estrai il contenuto del pacchetto di configurazione in una posizione nel dispositivo di cui vuoi eseguire l'onboarder (ad esempio, il desktop). Dovresti avere un file denominato *DeviceOnboardingScript.cmd.*
 
-6.  Aprire una finestra del prompt dei comandi con privilegi elevati nel dispositivo ed eseguire lo script:
+6.  Apri un prompt dei comandi con privilegi elevati nel dispositivo ed esegui lo script:
 
-7.  Andare a **Start** e digitare **cmd** .
+7.  Passare a **Start** e digitare **cmd**.
 
-8.  Fare clic con il pulsante destro del mouse su **prompt dei comandi** e scegliere **Esegui come amministratore** .
+8.  Fare clic con il pulsante destro del mouse su **Prompt dei comandi** e scegliere **Esegui come amministratore**.
 
-![Menu Start della finestra che punta all'esecuzione come amministratore](../media/dlp-run-as-admin.png)
+![Menu Start della finestra che punta a Esegui come amministratore](../media/dlp-run-as-admin.png)
 
-9.  Digitare il percorso del file di script. Se il file è stato copiato sul desktop, digitare: *%USERPROFILE%\Desktop\WindowsDefenderATPOnboardingScript.cmd*
+9.  Digitare il percorso del file script. Se il file è stato copiato sul desktop, digitare: *%userprofile%\Desktop\WindowsDefenderATPOnboardingScript.cmd*
 
-10.  Premere il tasto **invio** o fare clic su **OK** .
+10.  Premere INVIO **o** fare clic su **OK.**
 
-Per informazioni su come è possibile convalidare manualmente che il dispositivo è conforme e segnala correttamente i dati del sensore, vedere [risolvere i problemi di onboarding di Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding).
+Per informazioni su come è possibile convalidare manualmente che il dispositivo sia conforme e segnala correttamente i dati del sensore, vedere Risolvere i problemi di [onboarding](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)di Microsoft Defender Advanced Threat Protection.
 
-## <a name="offboard-devices-using-a-local-script"></a>Dispositivi di trasferisce che utilizzano uno script locale
-Per motivi di sicurezza, il pacchetto utilizzato per i dispositivi di trasferisce scadrà 30 giorni dopo la data in cui è stato scaricato. I pacchetti di Offboarding scaduti inviati a un dispositivo verranno rifiutati. Quando si scarica un pacchetto di Offboarding verrà inviata una notifica alla data di scadenza dei pacchetti e verrà incluso anche il nome del pacchetto.
+## <a name="offboard-devices-using-a-local-script"></a>Eseguire l'offboard dei dispositivi con uno script locale
+Per motivi di sicurezza, il pacchetto usato per l'offboard dei dispositivi scadrà 30 giorni dopo la data di download. I pacchetti di offboarding scaduti inviati a un dispositivo verranno rifiutati. Quando scarii un pacchetto di offboarding, ti verrà notificata la data di scadenza dei pacchetti e verrà incluso anche nel nome del pacchetto.
 
 > [!NOTE]
-> I criteri di onboarding e offboarding non devono essere distribuiti contemporaneamente nello stesso dispositivo, altrimenti ciò provocherà collisioni imprevedibili.
+> I criteri di onboarding e offboarding non devono essere distribuiti nello stesso dispositivo contemporaneamente, altrimenti ciò causerà conflitti imprevedibili.
 
-1. Ottenere il pacchetto offboarding dal [centro conformità Microsoft](https://compliance.microsoft.com)
+1. Ottenere il pacchetto offboarding dal [Centro conformità Microsoft](https://compliance.microsoft.com)
 
-2. Nel riquadro di spostamento, selezionare **Impostazioni**  >  **dispositivo offboarding** .
+2. Nel riquadro di spostamento seleziona **Impostazioni**  >  **offboarding dispositivo.**
 
-3. Nel campo **metodo di distribuzione** selezionare **script locale** .
+3. Nel campo **Metodo di distribuzione** selezionare Script **locale.**
 
-4. Fare clic su **Download package** e salvare il file con estensione zip.
+4. Fai **clic su Scarica** pacchetto e salva il file ZIP.
 
-5. Estrarre il contenuto del file con estensione zip in una posizione condivisa, di sola lettura, a cui è possibile accedere dai dispositivi. È necessario disporre di un file denominato *DeviceComplianceOffboardingScript_valid_until_YYYY-mm-dd. cmd* .
+5. Estrai il contenuto del file ZIP in una posizione condivisa di sola lettura accessibile dai dispositivi. Dovresti avere un file denominato *DeviceComplianceOffboardingScript_valid_until_YYYY-MM-DD.cmd.*
 
-6.  Aprire una finestra del prompt dei comandi con privilegi elevati nel dispositivo ed eseguire lo script:
+6.  Apri un prompt dei comandi con privilegi elevati nel dispositivo ed esegui lo script:
 
-7.  Andare a **Start** e digitare **cmd** .
+7.  Passare a **Start** e digitare **cmd**.
 
-8.  Fare clic con il pulsante destro del mouse su **prompt dei comandi** e scegliere **Esegui come amministratore** .
+8.  Fare clic con il pulsante destro del mouse su **Prompt dei comandi** e scegliere **Esegui come amministratore**.
 
-![Menu Start della finestra che punta all'esecuzione come amministratore](../media/dlp-run-as-admin.png)
+![Menu Start della finestra che punta a Esegui come amministratore](../media/dlp-run-as-admin.png)
 
-9.  Digitare il percorso del file di script. Se il file è stato copiato sul desktop, digitare: *%userprofile%\desktop\ WindowsDefenderATPOffboardingScript_valid_until_YYYY-mm-dd. cmd*
+9.  Digitare il percorso del file script. Se il file è stato copiato sul desktop, digitare: *%userprofile%\Desktop\WindowsDefenderATPOffboardingScript_valid_until_YYYY-MM-GG.cmd*
 
-10.  Premere il tasto **invio** o fare clic su **OK** .
+10.  Premere INVIO **o** fare clic su **OK.**
 
 > [!IMPORTANT]
-> Offboarding fa in modo che il dispositivo smetta di inviare i dati del sensore al portale.
+> L'offboarding fa sì che il dispositivo interrompi l'invio dei dati del sensore al portale.
 
 
-## <a name="monitor-device-configuration"></a>Monitorare la configurazione del dispositivo
-È possibile seguire i diversi passaggi di verifica riportati nell'argomento [risoluzione dei problemi relativi all'onboarding] ( https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding) per verificare che lo script sia stato completato correttamente e che l'agente sia in esecuzione.
+## <a name="monitor-device-configuration"></a>Monitorare la configurazione dei dispositivi
+È possibile seguire i diversi passaggi di verifica descritti in [Risolvere i problemi di onboarding]( per verificare che lo script sia stato completato correttamente e https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding) che l'agente sia in esecuzione.
 
-Il monitoraggio può essere effettuato anche direttamente sul portale oppure tramite gli strumenti di distribuzione diversi.
+Il monitoraggio può essere eseguito anche direttamente nel portale o usando i diversi strumenti di distribuzione.
 
 ### <a name="monitor-devices-using-the-portal"></a>Monitorare i dispositivi tramite il portale
-1. Accedere a [Microsoft 365 Compliance Center](https://compliance.microsoft.com).
+1. Passare al [Centro conformità Microsoft 365.](https://compliance.microsoft.com)
 
-2. Scegliere **Settings**  >  **dispositivo onboarding**  >  **Devices** .
+2. Choose **Settings**  >  **Device onboarding**  >  **Devices.**
 
-3. Verificare che i dispositivi vengano visualizzati.
+3. Verificare che i dispositivi siano visualizzati.
 
 
 ## <a name="related-topics"></a>Argomenti correlati
-- [Dispositivi di bordo di Windows 10 con criteri di gruppo](dlp-configure-endpoints-gp.md)
-- [Dispositivi di bordo di Windows 10 con Microsoft endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
-- [Dispositivi di bordo di Windows 10 con strumenti di gestione dei dispositivi mobili](dlp-configure-endpoints-mdm.md)
-- [Dispositivi VDI (Virtual Desktop Infrastructure) non permanenti di bordo](dlp-configure-endpoints-vdi.md)
-- [Eseguire un test di rilevamento su un dispositivo ATP Microsoft Defender appena integrato](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
+- [Onboard dei dispositivi Windows 10 con Criteri di gruppo](dlp-configure-endpoints-gp.md)
+- [Onboard dei dispositivi Windows 10 con Microsoft Endpoint Configuration Manager](dlp-configure-endpoints-sccm.md)
+- [Onboarding di dispositivi Windows 10 con gli strumenti di Gestione dispositivi mobili](dlp-configure-endpoints-mdm.md)
+- [Onboarding di dispositivi VDI (Virtual Desktop Infrastructure) non persistenti](dlp-configure-endpoints-vdi.md)
+- [Eseguire un test di rilevamento su un dispositivo Microsoft Defender ATP appena onboarded](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/run-detection-test)
 - [Risolvere i problemi di onboarding di Microsoft Defender Advanced Threat Protection](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/troubleshoot-onboarding)

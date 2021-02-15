@@ -29,17 +29,17 @@ ms.locfileid: "48753244"
 ---
 # <a name="restore-a-deleted-microsoft-365-group"></a>Ripristinare un gruppo di Microsoft 365 eliminato
 
-Se si è eliminato un gruppo, questo verrà mantenuto per 30 giorni per impostazione predefinita. Questo periodo di 30 giorni è considerato "soft-delete" perché è ancora possibile ripristinare il gruppo. Dopo 30 giorni, il gruppo e il relativo contenuto associato vengono eliminati definitivamente e non possono essere ripristinati.
+Se un gruppo è stato eliminato, per impostazione predefinita verrà conservato per 30 giorni. Questo periodo di 30 giorni è considerato una "eliminazione rescisa" perché è comunque possibile ripristinare il gruppo. Dopo 30 giorni, il gruppo e il contenuto associato vengono eliminati definitivamente e non possono essere ripristinati.
 
 Quando si ripristina un gruppo, vengono ripristinati anche i contenuti seguenti:
   
-- Oggetto, proprietà e membri di Azure Active Directory (AD) Microsoft 365 groups.
+- Oggetto, proprietà e membri dei gruppi di Microsoft 365 di Azure Active Directory (AD).
     
 - Indirizzi di posta elettronica del gruppo.
     
-- Posta in arrivo condivisa e calendario di Exchange Online.
+- Posta in arrivo e calendario condivisi di Exchange Online.
     
-- Sito e file del team di SharePoint Online.
+- File e sito del team di SharePoint Online.
     
 - Blocco appunti di OneNote
     
@@ -47,43 +47,43 @@ Quando si ripristina un gruppo, vengono ripristinati anche i contenuti seguenti:
     
 - Teams
 
-- Gruppo di Yammer e contenuto del gruppo (se il gruppo Microsoft 365 è stato creato da Yammer)
+- Contenuto del gruppo e del gruppo di Yammer (se il gruppo di Microsoft 365 è stato creato da Yammer)
 
 > [!NOTE]
-> In questo articolo viene descritto come ripristinare solo i gruppi di Microsoft 365. Non è possibile ripristinare tutti gli altri gruppi una volta eliminati.
+> Questo articolo descrive il ripristino solo dei gruppi di Microsoft 365. Non è possibile ripristinare tutti gli altri gruppi dopo l'eliminazione.
 
 ## <a name="restore-a-group"></a>Ripristinare un gruppo
 
 # <a name="outlook"></a>[Outlook](#tab/outlook)
 
-Se si è il proprietario di un gruppo di Microsoft 365, è possibile ripristinare il gruppo manualmente in Outlook sul Web attenendosi alla procedura seguente:
+Se si è proprietari di un gruppo di Microsoft 365, è possibile ripristinare il gruppo manualmente in Outlook sul Web seguendo questa procedura:
 
-1. Nella [pagina Gruppi eliminati](https://outlook.office.com/people/group/deleted)selezionare l'opzione **Gestisci gruppi** nel nodo **gruppi** e quindi scegliere **eliminata**.
+1. Nella pagina Gruppi [eliminati selezionare](https://outlook.office.com/people/group/deleted)l'opzione  **Gestisci** gruppi nel nodo Gruppi e quindi scegliere **Eliminato.**
 
-2. Fare clic sulla scheda **Ripristina** accanto al gruppo che si desidera ripristinare.
+2. Fare clic sulla **scheda** Ripristina accanto al gruppo che si desidera ripristinare.
 
-Se il gruppo eliminato non viene visualizzato, contattare un amministratore.
+Se il gruppo eliminato non viene visualizzato qui, contattare un amministratore.
 
 # <a name="admin-center"></a>[Interfaccia di amministrazione](#tab/admin-center)
 
-Se si è amministratori globali o amministratori di gruppi, è possibile ripristinare un gruppo eliminato nell'interfaccia di amministrazione di Microsoft 365:
+Gli amministratori globali o di gruppi possono ripristinare un gruppo eliminato nell'interfaccia di amministrazione di Microsoft 365:
 
 1. Passare all'[interfaccia di amministrazione](https://admin.microsoft.com).
-2. Espandere **gruppi**e quindi fare clic su **gruppi eliminati**.
-3. Selezionare il gruppo che si desidera ripristinare e quindi fare clic su **Ripristina gruppo**.
+2. Espandere **Gruppi** e quindi fare clic **su Gruppi eliminati.**
+3. Selezionare il gruppo che si desidera ripristinare e quindi fare clic **su Ripristina gruppo.**
 
 > [!NOTE]
-> In alcuni casi, può richiedere fino a 24 ore prima che il gruppo e tutti i relativi dati vengano ripristinati. 
+> In alcuni casi, il ripristino del gruppo e di tutti i relativi dati può richiedere fino a 24 ore. 
 
 ---
 
 ## <a name="got-questions-about-microsoft-365-groups"></a>Hai domande sui gruppi di Microsoft 365?
 
-Visitare la [Microsoft Tech Community](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups) per inviare domande e partecipare a conversazioni sui gruppi di Microsoft 365. 
+Visitare la [Community tecnica Microsoft](https://techcommunity.microsoft.com/t5/Office-365-Groups/ct-p/Office365Groups) per pubblicare domande e partecipare a conversazioni sui gruppi di Microsoft 365. 
   
 ## <a name="related-articles"></a>Articoli correlati
 
-[Gestire i gruppi Microsoft 365 con PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
+[Gestire i gruppi di Microsoft 365 con PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
   
 [Eliminare gruppi usando il cmdlet Remove-UnifiedGroup](https://technet.microsoft.com/library/mt238270%28v=exchg.160%29.aspx)
   

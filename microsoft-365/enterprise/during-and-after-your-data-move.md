@@ -14,7 +14,7 @@ localization_priority: Normal
 ms.assetid: f47e3e09-b1dc-4b80-b6ea-fd6e0933407f
 f1.keywords:
 - NOCSH
-description: Gli spostamenti di dati sono operazioni back-end che si verificano quando Microsoft sposta i servizi e i dati associati per il tenant in un nuovo datacenter Geo.
+description: Gli spostamenti di dati sono operazioni back-end che si verificano quando Microsoft sposta i servizi e i dati associati per il tenant in un nuovo data center geografico.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: ca3159aeb951fb0cb3bf3aba953979dabc6ba024
 ms.sourcegitcommit: 1db81b85d327fe423695ce675ad325e538417211
@@ -25,49 +25,49 @@ ms.locfileid: "49349257"
 ---
 # <a name="during-and-after-your-data-move"></a>Durante e dopo lo spostamento dati
 
-Gli spostamenti di dati sono un'operazione back-end con un impatto minimo sugli utenti finali. Non è necessaria alcuna azione mentre Microsoft sposta ogni servizio e i dati associati per il tenant in un nuovo datacenter Geo. Il trasferimento e la convalida dei dati avvengono in background in anticipo con un impatto minimo per gli utenti.
+Gli spostamenti di dati sono un'operazione back-end con un impatto minimo sugli utenti finali. Non è necessaria alcuna azione mentre Microsoft sposta ogni servizio e i dati associati per il tenant in un nuovo data center geografico. Il trasferimento e la convalida dei dati vengono eseguiti in background in anticipo con un impatto minimo sugli utenti.
   
 > [!NOTE]
-> Gli spostamenti si verificano in momenti diversi per ogni servizio. Di conseguenza, si vedrà la funzionalità ridotta descritta per ogni servizio in un'ora diversa. 
+> Gli spostamenti vengono eseguiti in momenti diversi per ogni servizio. Di conseguenza, vedrai le funzionalità ridotte descritte per ogni servizio in un momento diverso. 
   
-Guardare il centro messaggi di Microsoft 365 per conferma quando si sposta per ogni servizio di chat di Exchange Online, SharePoint Online e teams complete. Come illustrato nella tabella riportata di seguito, è possibile richiedere fino a 24 mesi dopo la fine del periodo di registrazione per completare i dati dei clienti di base in Rest Moves to the New datacenter Geo.   
+Guardare il Centro messaggi di Microsoft 365 per una conferma quando gli spostamenti per ogni servizio chat di Exchange Online, SharePoint Online e Teams sono stati completati. Come illustrato nella tabella seguente, possono essere necessario fino a 24 mesi dopo la fine del periodo di registrazione per completare i dati di base dei clienti in stato di inquieto per il nuovo data center geografico.   
 
-|**Clienti con paese di registrazione in**|**Tutti gli spostamenti completati da**|
+|**Clienti con paese di iscrizione**|**Tutti gli spostamenti completati da**|
 |:-----|:-----|
-|Australia, Nuova Zelanda, Figi  <br/> |Luglio 1, 2022  <br/> |
-|Giappone  <br/> |Luglio 1, 2022  <br/> |
-|India  <br/> |Luglio 1, 2022  <br/> |
-|Canada  <br/> |Luglio 1, 2022  <br/> |
-|Corea del Sud  <br/> |Luglio 1, 2022  <br/> |
-|Regno Unito  <br/> |Luglio 1, 2022  <br/> |
-|Francia  <br/> |Luglio 1, 2022  <br/> |
-|Emirati Arabi Uniti  <br/> |Luglio 1, 2022  <br/> |
-|Sudafrica  <br/> |Luglio 1, 2022  <br/> |
-|Svizzera, Liechtenstein  <br/> |Luglio 1, 2022  <br/> |
-|Norvegia  <br/> |2022 novembre 1  <br/> |
+|Australia, Nuova Zelanda, Figi  <br/> |1 luglio 2022  <br/> |
+|Giappone  <br/> |1 luglio 2022  <br/> |
+|India  <br/> |1 luglio 2022  <br/> |
+|Canada  <br/> |1 luglio 2022  <br/> |
+|Corea del Sud  <br/> |1 luglio 2022  <br/> |
+|Regno Unito  <br/> |1 luglio 2022  <br/> |
+|Francia  <br/> |1 luglio 2022  <br/> |
+|Emirati Arabi Uniti  <br/> |1 luglio 2022  <br/> |
+|Sudafrica  <br/> |1 luglio 2022  <br/> |
+|Svizzera, Liechtenstein  <br/> |1 luglio 2022  <br/> |
+|Norvegia  <br/> |1 novembre 2022  <br/> |
 |Germania  <br/> |1 maggio 2023  <br/> |
-|Brasile  <br/> |Giugno 1, 2023  <br/> |
+|Brasile  <br/> |1 giugno 2023  <br/> |
 
 ## <a name="exchange-online"></a>Exchange Online
 
-Poiché richiede tempo per spostare ogni utente nel nuovo datacenter Geo per un singolo tenant, alcuni utenti saranno comunque nel centro dati geografico precedente durante lo spostamento, mentre altri saranno nel nuovo datacenter Geo. Questo significa che alcune caratteristiche che implicano l'accesso a più cassette postali potrebbero non funzionare completamente durante il processo di spostamento, che può durare settimane. Queste funzionalità sono descritte nelle sezioni seguenti.
+Poiché richiede tempo per spostare ogni utente nel nuovo datacenter geografico per un singolo tenant, alcuni utenti saranno ancora nella vecchia posizione geografica del datacenter durante lo spostamento, mentre altri saranno nel nuovo datacenter geografico. Ciò significa che alcune funzionalità che implicano l'accesso a più cassette postali potrebbero non funzionare completamente durante un periodo del processo di spostamento, che può durare settimane. Queste funzionalità sono descritte nelle sezioni seguenti.
   
-### <a name="open-shared-folder-in-outlook-web-access"></a>Aprire "cartella condivisa" in Outlook Web Access
+### <a name="open-shared-folder-in-outlook-web-access"></a>Aprire "Cartella condivisa" in Outlook Web Access
 
-Alcuni utenti aprono una cartella di posta condivisa da un'altra cassetta postale (che l'utente dispone di autorizzazioni di lettura o scrittura) in Outlook Web Access utilizzando la caratteristica "cartella condivisa". Nella tabella seguente viene descritto in che modo l'accesso alle cartelle condivise funziona durante lo spostamento di una cassetta postale. Tenere presente che gli utenti con autorizzazioni complete per una cassetta postale condivisa possono aprire la cassetta postale utilizzando Outlook Web Access durante lo spostamento. 
+Alcuni utenti aprono una cartella di posta condivisa da un'altra cassetta postale (per cui l'utente dispone delle autorizzazioni di lettura o scrittura) in Outlook Web Access utilizzando la funzionalità "Cartella condivisa". Nella tabella seguente viene descritto il funzionamento dell'accesso alle cartelle condivise durante lo spostamento di una cassetta postale. Si noti che gli utenti con autorizzazioni complete per una cassetta postale condivisa possono aprire la cassetta postale utilizzando Outlook Web Access durante lo spostamento. 
   
 |**Configurazione**|**Descrizione**|
 |:-----|:-----|
-|L'utente dispone dell'autorizzazione cartella cassetta postale per un'altra cassetta postale  <br/> |Potenzialmente limitata.  <br/> Se l'utente A e la cassetta postale B non sono nello stesso Geo durante lo spostamento del tenant, l'utente A non è in grado di aprire la cartella della cassetta postale B in Outlook Web Access se l'utente A ha l'autorizzazione solo per una cartella specifica nella cassetta postale B.  <br/> Per aggiungere una cartella condivisa, fare clic con il pulsante destro del mouse sul nome utente nel riquadro di spostamento a sinistra e selezionare **Aggiungi cartella condivisa**.  <br/> |
-|Utente con autorizzazione completa alle cassette postali per un'altra cassetta postale  <br/> |Pienamente supportato.  <br/> Se l'utente a dispone dell'autorizzazione di accesso completo alla cassetta postale B, l'utente A può fare clic sulla cartella condivisa nel riquadro di spostamento a sinistra in Outlook Web Access per aprire una finestra in cui viene visualizzata la cassetta postale B.  Un utente può aprire una cassetta postale condivisa utilizzando Outlook Web Access durante lo spostamento senza alcun impatto negativo. La limitazione si applica solo alla condivisione a livello di cartella in una cassetta postale.           |
+|L'utente dispone dell'autorizzazione per la cartella delle cassette postali per un'altra cassetta postale  <br/> |Potenzialmente limitato.  <br/> Se l'utente A e la cassetta postale B non sono nella stessa posizione geografica durante lo spostamento del tenant, l'utente A non può aprire la cartella della cassetta postale B in Outlook Web Access se l'utente A dispone solo dell'autorizzazione per una cartella specifica nella cassetta postale B.  <br/> Per aggiungere una cartella condivisa, fare clic con il pulsante destro del mouse sul nome utente nel riquadro di spostamento sinistro e scegliere **Aggiungi cartella condivisa.**  <br/> |
+|Utente con autorizzazione cassetta postale completa per un'altra cassetta postale  <br/> |Completamente supportata.  <br/> Se l'utente A dispone dell'autorizzazione "Accesso completo" per la cassetta postale B, l'utente A può fare clic sulla cartella condivisa nel riquadro di spostamento sinistro in Outlook Web Access per aprire una finestra con la cassetta postale B.  Un utente può aprire una cassetta postale condivisa Outlook Web Access durante lo spostamento senza alcun impatto negativo. La limitazione si applica solo alla condivisione a livello di cartella in una cassetta postale.           |
   
 ## <a name="sharepoint-online"></a>SharePoint Online
 
-Quando viene spostato SharePoint Online, vengono spostati anche i dati per i servizi seguenti:
+Quando SharePoint Online viene spostato, vengono spostati anche i dati per i servizi seguenti:
   
 - One Drive for Business
     
-- Servizi video Microsoft 365
+- Servizi video di Microsoft 365
     
 - Office in un browser
     
@@ -75,46 +75,46 @@ Quando viene spostato SharePoint Online, vengono spostati anche i dati per i ser
     
 - Visio Pro per Microsoft 365
     
-Dopo aver completato lo spostamento dei dati di SharePoint Online, è possibile che vengano visualizzati alcuni degli effetti riportati di seguito.
+Dopo aver completato lo spostamento dei dati di SharePoint Online, potrebbero verificarsi alcuni degli effetti seguenti.
   
-### <a name="microsoft-365-video-services"></a>Servizi video Microsoft 365
+### <a name="microsoft-365-video-services"></a>Servizi video di Microsoft 365
 
 - Lo spostamento dei dati per il video richiede più tempo degli spostamenti per il resto del contenuto in SharePoint Online.
     
-- Dopo aver spostato il contenuto di SharePoint Online, si verificherà un intervallo di tempo quando i video non sono in grado di essere riprodotti.
+- Dopo lo spostamento del contenuto di SharePoint Online, ci sarà un intervallo di tempo in cui i video non sono in grado di essere riprodotti.
     
-- Si stanno rimuovendo le copie Trans-coded dal Data Center precedente e la loro transcodifica nel nuovo datacenter.
+- We're removing the trans-coded copies from the previous datacenter and transcoding them again in the new datacenter.
     
 ### <a name="search"></a>Ricerca
 
-Durante lo spostamento dei dati di SharePoint Online, la migrazione dell'indice di ricerca e delle impostazioni di ricerca in una nuova posizione. Fino a quando non è stato **completato** lo spostamento dei dati di SharePoint Online, è possibile continuare a servire gli utenti dall'indice nel percorso originale. Nella nuova posizione viene avviata automaticamente la ricerca per indicizzazione del contenuto dopo aver completato lo spostamento dei dati di SharePoint Online. Da questo punto in poi, vengono serviti gli utenti dall'indice migrato. Le modifiche al contenuto che si sono verificate dopo la migrazione non vengono incluse nell'indice migrato finché la ricerca per indicizzazione non viene rilevata. La maggior parte dei clienti non si accorge che i risultati sono meno freschi subito dopo aver completato lo spostamento dei dati di SharePoint Online, ma alcuni clienti potrebbero riscontrare una riduzione della freschezza nelle prime 24-48 ore. 
+Durante lo spostamento dei dati di SharePoint Online, viene eseguita la migrazione dell'indice di ricerca e delle impostazioni di ricerca in una nuova posizione. Fino a quando non è **stato** completato lo spostamento dei dati di SharePoint Online, si continua a servire gli utenti dall'indice nella posizione originale. Nel nuovo percorso, la ricerca inizia automaticamente la ricerca per indicizzazione del contenuto dopo aver completato lo spostamento dei dati di SharePoint Online. Da questo momento in poi serviamo gli utenti dall'indice migrato. Le modifiche apportate al contenuto che si sono verificate dopo la migrazione non vengono incluse nell'indice migrato fino a quando non vengono selezionate dalla ricerca per indicizzazione. La maggior parte dei clienti non nota che i risultati sono meno nuovi subito dopo aver completato lo spostamento dei dati di SharePoint Online, ma alcuni clienti potrebbero sperimentare un aggiornamento ridotto nelle prime 24-48 ore 
   
-Le seguenti funzionalità di ricerca sono intaccate:
+Sono interessate le seguenti funzionalità di ricerca:
   
-- Risultati della ricerca e Web part di ricerca: i risultati non includono le modifiche che si sono verificate dopo la migrazione fino alla ricerca per indicizzazione. 
+- Risultati della ricerca e Web part ricerca: i risultati non includono le modifiche che si sono verificate dopo la migrazione fino a quando non vengono selezionate dalla ricerca per indicizzazione. 
     
-- Approfondire: l'approfondimento non include le modifiche apportate dopo la migrazione fino alla ricerca per indicizzazione.
+- Delve: Delve non include le modifiche che si sono verificate dopo la migrazione fino a quando la ricerca per indicizzazione non le seleziona.
     
-- Popularity and search Reports for the site: counts for Excel Reports nella nuova posizione sono disponibili solo i conteggi migrati e i conteggi dei rapporti sull'utilizzo che sono stati eseguiti dopo aver completato lo spostamento dei dati di SharePoint Online. Tutti i conteggi del periodo intermedio sono persi e non possono essere recuperati. Questo periodo è in genere un paio di giorni. Alcuni clienti potrebbero subire perdite più brevi o più lunghe.
+- Report popolarità e ricerca per il sito: i conteggi per i report di Excel nel nuovo percorso includono solo i conteggi migrati e i conteggi dei report di utilizzo eseguiti dopo aver completato lo spostamento dei dati di SharePoint Online. I conteggi del periodo provvisorio vengono persi e non possono essere recuperati. Questo periodo è in genere di due giorni. Per alcuni clienti potrebbero verificarsi perdite più brevi o più lunghe.
     
-- Portale video: la visualizzazione conta e le statistiche per il portale video dipendono dalle statistiche per i report di Excel, quindi i conteggi e le statistiche di visualizzazione per il portale video vengono persi per lo stesso periodo di tempo per i report di Excel.
+- Portale video: i conteggi delle visualizzazione e le statistiche per il portale video dipendono dalle statistiche per i report di Excel, pertanto i conteggi delle visualizzazione e le statistiche per il portale video vengono persi per lo stesso periodo di tempo dei report di Excel.
     
-- eDiscovery: gli elementi che sono stati modificati durante la migrazione non vengono visualizzati finché la ricerca per indicizzazione riprende le modifiche.
+- eDiscovery: gli elementi modificati durante la migrazione non vengono visualizzati finché la ricerca per indicizzazione non riprende le modifiche.
     
-- Protezione dalla perdita di dati (DLP): i criteri non vengono applicati sugli elementi che cambiano finché la ricerca per indicizzazione riprende le modifiche.
+- Protezione dalla perdita di dati (DLP): i criteri non vengono applicati agli elementi che cambiano fino a quando la ricerca per indicizzazione non rileva le modifiche.
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-Oltre a Exchange Online, SharePoint Online e OneDrive for business, Microsoft eseguirà la migrazione dei dati del servizio chat Teams nel datacenter locale.
+Oltre a Exchange Online, SharePoint Online e OneDrive for Business, Microsoft eseguirà la migrazione dei dati del servizio chat di Teams nel datacenter locale.
 
-- Messaggi di chat dei team, inclusi i messaggi privati e i messaggi di canale.
-- Immagini di Team utilizzate nelle chat.
+- Messaggi di chat di Teams, inclusi messaggi privati e messaggi di canale.
+- Immagini di Teams usate nelle chat.
 
-I file dei team sono archiviati in SharePoint Online e i file chat di team sono archiviati in OneDrive for business. La segreteria telefonica, il calendario, la cronologia chat e i contatti sono archiviati in Exchange Online. In molti casi, Exchange Online, SharePoint Online e OneDrive for business sono già utilizzati dal cliente nel centro dati geografico locale e fanno parte del programma di migrazione Microsoft 365 per i paesi idonei ai clienti.
+I file di Teams sono archiviati in SharePoint Online e i file di chat di Teams sono archiviati in OneDrive for Business. La segreteria telefonica, il calendario, la cronologia chat e i contatti sono archiviati in Exchange Online. In molti casi, Exchange Online, SharePoint Online e OneDrive for Business sono già usati dal cliente nella posizione geografica del datacenter locale e fanno parte del programma di migrazione di Microsoft 365 per i paesi dei clienti idonei.
 
 ## <a name="skype-for-business"></a>Skype for Business
 
-Gli spostamenti di Skype for business non sono più disponibili.  [Skype for business online si ritirerà](https://docs.microsoft.com/lifecycle/announcements/skype-for-business-online-retirement) il 31 luglio 2021. Dopo questo periodo, il servizio non sarà più accessibile. 
+Gli spostamenti di Skype for Business non sono più disponibili.  [Skype for Business online verrà ritirato](https://docs.microsoft.com/lifecycle/announcements/skype-for-business-online-retirement) il 31 luglio 2021. Dopo questo periodo, il servizio non sarà più accessibile. 
   
 ## <a name="related-topics"></a>Argomenti correlati 
  
@@ -122,6 +122,6 @@ Gli spostamenti di Skype for business non sono più disponibili.  [Skype for bus
     
 [Domande frequenti sullo spostamento dati](data-move-faq.md)
   
-[Nuovo datacenter GEOS per Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
+[Nuove posizioni geografiche del datacenter per Microsoft Dynamics CRM Online](https://go.microsoft.com/fwlink/p/?Linkid=615924)
   
-[Servizi di Azure in base all'area geografica](https://azure.microsoft.com/regions/)
+[Servizi di Azure per area geografica](https://azure.microsoft.com/regions/)

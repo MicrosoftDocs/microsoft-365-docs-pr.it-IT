@@ -23,7 +23,7 @@ ms.locfileid: "48754248"
 ---
 # <a name="windows-10-enterprise-deployment-for-contoso"></a>Distribuzione di Windows 10 Enterprise per Contoso
 
-Prima dell'ampia implementazione di Microsoft 365 per Enterprise, contoso disponeva di PC e dispositivi compatibili con Windows che eseguivano una combinazione di Windows 7 (10%), Windows 8,1 (65%) e Windows 10 (25%). Contoso voleva aggiornare i propri PC per Windows 10 Enterprise approfittare della sicurezza avanzata e abbassare il sovraccarico dalle distribuzioni automatizzate di aggiornamenti. 
+Prima dell'implementazione di Microsoft 365 per le aziende, Contoso aveva PC e dispositivi compatibili con Windows che eseguono una combinazione di Windows 7 (10%), Windows 8.1 (65%) e Windows 10 (25%). Contoso desiderava aggiornare i propri PC per Windows 10 Enterprise sfruttando la sicurezza avanzata e ridurre il sovraccarico IT dovuto alle distribuzioni automatizzate degli aggiornamenti. 
 
 Dopo aver valutato la propria infrastruttura e le proprie esigenze aziendali, Contoso ha identificato i seguenti requisiti chiave per la distribuzione:
 
@@ -54,7 +54,7 @@ Contoso dispone di un'infrastruttura di Configuration Manager (Current Branch) e
 
 ## <a name="planning-process"></a>Processo di pianificazione
 
-Contoso ha utilizzato la preparazione per l'aggiornamento in Windows Analytics per determinare il set di app installate e la compatibilità con Windows 10 Enterprise.
+Contoso ha usato Preparazione aggiornamenti in Windows Analytics per determinare il set di app installate e la loro compatibilità con Windows 10 Enterprise.
 
 ## <a name="deployment-process"></a>Processo di distribuzione
 
@@ -62,11 +62,11 @@ Per completare la distribuzione degli aggiornamenti sul posto di Windows 10 Ente
 
 1. Abilitazione della cache peer per Configuration Manager.
 2. Creazione di pacchetti di Windows personalizzati basati sulle immagini del Volume Licensing Service Center.
-3. Gestione configurazione utilizzata per distribuire i pacchetti di Windows ai punti di distribuzione nella propria rete e distribuisce le compilazioni ai tre gruppi di gestione temporanea di convalida e distribuzione.
+3. Ha usato Configuration Manager per distribuire i pacchetti di Windows ai punti di distribuzione nella rete e ha distribuito le build ai tre gruppi di gestione temporanea di convalida e distribuzione.
 4. Esecuzione della valutazione della riuscita per i computer e i dispositivi negli anelli di gestione temporanea della convalida e della distribuzione mediante soluzioni Integrità del dispositivo e Conformità aggiornamenti di Windows Analytics.
-5. In base alle informazioni di Windows Analytics, Contoso ha determinato la versione di Windows 10 Enterprise da distribuire al gruppo di distribuzione di grandi dimensioni.
-6. Esecuzione delle sequenze di attività di distribuzione di Configuration Manager per distribuire il pacchetto di Windows selezionato in un gruppo di distribuzione di grandi dimensioni.
-7. Computer e dispositivi monitorati nel gruppo di distribuzione di grandi dimensioni utilizzando le soluzioni di conformità per l'integrità e l'aggiornamento dei dispositivi per risolvere i problemi.
+5. In base alle informazioni di Windows Analytics, Contoso ha determinato la versione di Windows 10 Enterprise da distribuire al gruppo di distribuzione generale.
+6. Ha eseguito le sequenze di attività di distribuzione di Configuration Manager per distribuire il pacchetto di Windows selezionato al gruppo di distribuzione generale.
+7. Computer e dispositivi monitorati nel gruppo di distribuzione generale usando le soluzioni Integrità dei dispositivi e Conformità aggiornamenti per risolvere i problemi.
 
 Ecco l'architettura di distribuzione degli aggiornamenti sul posto e degli aggiornamenti continui di Contoso.
 
@@ -78,11 +78,11 @@ Questa infrastruttura è costituita da:
   - Ottiene le immagini per i pacchetti di Windows 10 Enterprise da Microsoft Volume Licensing Center in Microsoft Network.
   - Si tratta del punto di amministrazione centrale per i pacchetti di distribuzione.
 - Punti di distribuzione regionali che in genere si trovano negli hub regionali di Contoso.
-- PC e dispositivi Windows in vari percorsi che ricevono e installano i pacchetti di distribuzione per l'aggiornamento sul posto o per gli aggiornamenti in corso basati sull'appartenenza a un gruppo.
+- PC e dispositivi Windows in varie posizioni che ricevono e installano i pacchetti di distribuzione per l'aggiornamento sul posto o gli aggiornamenti continui in base all'appartenenza ai gruppi.
 
 ## <a name="next-step"></a>Passaggio successivo
 
-Informazioni su come Contoso sta facendo leva sull'infrastruttura di gestione configurazione per [distribuire e mantenere le app Microsoft 365 per Enterprise](contoso-o365pp.md) nell'intera organizzazione. 
+Informazioni su come Contoso usa l'infrastruttura di Configuration Manager per distribuire e mantenere [microsoft 365 Apps for enterprise corrente](contoso-o365pp.md) all'interno dell'organizzazione. 
 
 ## <a name="see-also"></a>Vedere anche
 

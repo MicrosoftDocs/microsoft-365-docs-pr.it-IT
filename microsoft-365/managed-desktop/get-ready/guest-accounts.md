@@ -1,6 +1,6 @@
 ---
 title: Prerequisiti per gli account Guest
-description: Linee guida di configurazione per gli account Guest e come adattarli
+description: Linee guida di configurazione per gli account guest e come regolarli
 keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
 author: jaimeo
@@ -18,13 +18,13 @@ ms.locfileid: "49073225"
 ---
 # <a name="prerequisites-for-guest-accounts"></a>Prerequisiti per gli account Guest
 
-Microsoft Managed Desktop richiede le impostazioni seguenti nell'organizzazione di Azure AD per l'accesso agli account Guest. È possibile modificare queste impostazioni nel [portale di Azure](https://portal.azure.com) in **identità esterne/collaborazione esterna** :
+Microsoft Managed Desktop richiede le impostazioni seguenti nell'organizzazione di Azure AD per l'accesso all'account guest. È possibile modificare queste impostazioni nel portale [di Azure](https://portal.azure.com) in **Identità esterne/Collaborazione esterna:**
 
--   **Gli amministratori e gli utenti del ruolo invitato dell'ospite possono invitare il** set a **Yes**
--   Per le **restrizioni di collaborazione** , scegliere una delle opzioni seguenti:
-    -   Se si seleziona **Consenti l'invio di inviti a qualsiasi dominio (più inclusivo)** , non sono necessarie altre configurazioni.
-    -   Se si seleziona **Nega inviti ai domini specificati** , assicurarsi che Microsoft.com non sia elencato nei domini di destinazione.
-    -   Se si seleziona **Consenti solo gli inviti ai domini specificati (più restrittivi)** , assicurarsi che Microsoft.com *sia* elencato nei domini di destinazione.
+-   **Gli amministratori e gli utenti nel ruolo di mittente dell'invito guest possono invitare** impostati su **Sì**
+-   Per **le restrizioni di collaborazione,** scegliere una delle opzioni seguenti:
+    -   Se si seleziona **Consenti l'invio** degli inviti a qualsiasi dominio (più inclusivo), non sono necessarie altre configurazioni.
+    -   Se si seleziona **Nega inviti** ai domini specificati, assicurarsi che Microsoft.com non sia elencato nei domini di destinazione.
+    -   Se si seleziona Consenti inviti solo per i domini specificati **(più restrittivi),** assicurarsi che Microsoft.com sia elencato nei domini di destinazione. 
 
-Se si impostano restrizioni che interagiscono con queste impostazioni, assicurarsi di escludere gli **account di servizio moderni** di Azure Active Directory. Ad esempio, se si dispone di un criterio di accesso condizionale che impedisce agli account Guest di accedere al portale di Intune, escludere il gruppo di **account del servizio di lavoro moderno** da questo criterio.
+Se si impostano restrizioni che interagiscono con queste impostazioni, assicurarsi di escludere gli account del servizio Azure Active Directory **Modern Workplace Service.** Ad esempio, se si dispone di un criterio di accesso condizionale che impedisce agli account guest di accedere al portale di Intune, escludere il gruppo **Account** del servizio di lavoro moderno da questo criterio.
 

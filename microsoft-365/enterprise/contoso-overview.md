@@ -27,51 +27,51 @@ Contoso Corporation è un'azienda multinazionale con sede a Parigi. L'azienda è
 
 ## <a name="contoso-around-the-world"></a>Contoso nel mondo
 
-Nella figura 1 viene illustrata la sede centrale di Parigi e gli uffici hub e satellite regionali in vari continenti.
+La figura 1 mostra la sede centrale di Parigi e gli hub regionali e gli uffici satellite in vari continenti.
 
-![Uffici di Contoso in tutto il mondo](../media/contoso-overview/contoso-overview-fig1.png)
+![Uffici Contoso in tutto il mondo](../media/contoso-overview/contoso-overview-fig1.png)
 
-**Figura 1: uffici di Contoso in tutto il mondo**
+**Figura 1: Uffici Contoso in tutto il mondo**
  
 Contoso ha tre livelli di uffici:
 
 - Headquarters
 
-  La sede centrale di Contoso è un campus aziendale alla periferia di Parigi con dozzine di edifici per strutture amministrative, ingegneristiche e produttive. Tutti i datacenter di Contoso e la sua presenza su Internet sono ospitati nella sede di Parigi.
+  La sede di Contoso è un campus aziendale alla periferia di Parigi con decine di edifici per strutture amministrative, di progettazione e di produzione. Tutti i datacenter di Contoso e la relativa presenza internet sono ospitati nella sede di Parigi.
 
   La sede ha 25.000 dipendenti.
 
 - Hub regionali
 
-  Gli uffici hub servono una regione specifica del mondo con il servizio di vendita e il personale di supporto del 60%. Ogni hub regionale è connesso alla sede centrale di Parigi tramite un collegamento WAN con larghezza di banda elevata.
+  Gli uffici hub servono una specifica area geografica del mondo con il 60% di vendite e personale di supporto. Ogni hub regionale è connesso alla sede di Parigi tramite un collegamento WAN a larghezza di banda elevata.
 
-  I mozzi regionali hanno una media di 2.000 lavoratori.
+  Gli hub regionali hanno una media di 2.000 dipendenti.
 
 - Filiali
 
-  Gli uffici satellite contengono 80% di vendite e personale di supporto. Offrono una presenza sul posto per i clienti di Contoso nelle principali città o sottoaree. Ogni ufficio satellite è connesso a un hub regionale tramite un collegamento WAN con larghezza di banda elevata.
+  Gli uffici satellite contengono l'80% del personale di vendita e supporto. Forniscono una presenza in loco per i clienti contoso nelle principali città o sottoregioni. Ogni sede satellite è connessa a un hub regionale tramite un collegamento WAN a larghezza di banda elevata.
 
-  Gli uffici satellite hanno una media di 250 lavoratori.
+  Gli uffici satellite hanno in media 250 dipendenti.
 
-Circa il 25% della forza lavoro Contoso è solo per dispositivi mobili. Gli hub regionali e gli uffici satellite hanno una percentuale maggiore di questi lavoratori. Fornire un supporto migliore ai dipendenti che operano solo da dispositivi mobili è un obiettivo aziendale importante per Contoso.
+Circa il 25% della forza lavoro di Contoso è solo mobile. Gli hub regionali e gli uffici satellite hanno una percentuale maggiore di questi dipendenti. Fornire un supporto migliore ai dipendenti che operano solo da dispositivi mobili è un obiettivo aziendale importante per Contoso.
 
-## <a name="design-considerations-for-microsoft-365-for-enterprise"></a>Considerazioni sulla progettazione per Microsoft 365 per Enterprise
+## <a name="design-considerations-for-microsoft-365-for-enterprise"></a>Considerazioni sulla progettazione per Microsoft 365 per le aziende
 
-Gli architetti IT di Contoso hanno identificato i fattori di requisiti di progettazione seguenti per la distribuzione di Microsoft 365 per Enterprise:
+Gli architetti IT di Contoso hanno identificato i seguenti fattori dei requisiti di progettazione per la distribuzione di Microsoft 365 per le aziende:
 
 - Più aree geografiche con requisiti di conformità alle normative locali
-- Centro dati Intranet centrale nei server di Office e applicazioni regionali che ospitano applicazioni line-of-business interne
+- Datacenter Intranet centrale nella sede centrale e server applicazioni regionali che ospitano applicazioni line-of-business interne
 - Un'infrastruttura di Microsoft Endpoint Configuration Manager esistente
 - Una combinazione di dispositivi di elaborazione client che eseguono Windows, Mac e Linux
 - Una combinazione di dispositivi mobili personali e di proprietà dell’azienda, tra cui smartphone e tablet iOS (iPhone e iPad) e Android
 - Molti dipendenti remoti e che operano da dispositivi mobili
 - Molti partner commerciali
-- Una grande quantità di clienti e altre informazioni personali riservate da gestire e proteggere
+- Una grande quantità di informazioni personali riservate e dei clienti da gestire e proteggere
 - Una grande quantità di proprietà intellettuale di alto valore, sotto forma di specifiche di progettazione per i prodotti e di segreti commerciali
 
 ## <a name="next-step"></a>Passaggio successivo
 
-Informazioni sull' [infrastruttura IT locale](contoso-infra-needs.md) di Contoso Corporation e sul modo in cui le esigenze aziendali dell'azienda sono indirizzate a Microsoft 365 per Enterprise.
+Informazioni sull'infrastruttura [IT](contoso-infra-needs.md) locale di Contoso Corporation e su come vengono trattate le esigenze aziendali dell'azienda con Microsoft 365 per le aziende.
 
 ## <a name="see-also"></a>Vedere anche
 

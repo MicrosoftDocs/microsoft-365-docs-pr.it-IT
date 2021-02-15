@@ -16,34 +16,34 @@ ms.locfileid: "48846193"
 ---
 # <a name="support-for-microsoft-managed-desktop"></a>Supporto per Microsoft Managed Desktop
 
-Microsoft fornirà la gestione degli incidenti proattivi e reattivi. Microsoft tiene traccia degli incidenti verificatisi nel portale di amministrazione di Microsoft Managed Desktop. Sono classificati in base alle [definizioni di gravità](../working-with-managed-desktop/admin-support.md#sev).
+Microsoft fornirà la gestione proattiva e reattiva degli incidenti. Microsoft tiene traccia degli eventi imprevisti nel portale di amministrazione di Microsoft Managed Desktop. Vengono classificati in base alle [definizioni di gravità.](../working-with-managed-desktop/admin-support.md#sev)
 
 I clienti possono contattare le operazioni di Microsoft Managed Desktop per:
 - Richieste di informazioni sul tenant o sulla configurazione di Microsoft Managed Desktop
-- Modificare le richieste alla configurazione dei dispositivi Microsoft Managed Desktop
-- Segnalazione di un incidente o un'interruzione
+- Modificare le richieste di configurazione dei dispositivi Microsoft Managed Desktop
+- Segnalazione di un evento imprevisto o di un'interruzione
 
-## <a name="whats-included"></a>Che cos'è incluso?
+## <a name="whats-included"></a>Cosa è incluso?
 
 Il supporto di Microsoft Managed Desktop include:
 
-- Un team di ingegneri dedicati ai dispositivi Microsoft Managed Desktop
-- Opzioni di supporto per gli utenti con dispositivi desktop Microsoft gestiti
-- Concede un accesso amministrativo limitato ai dispositivi Microsoft Managed Desktop per gli ingegneri che gestiscono i dispositivi Microsoft Managed Desktop 
+- Un team di tecnici dedicati ai dispositivi Microsoft Managed Desktop
+- Opzioni di supporto per gli utenti con dispositivi Microsoft Managed Desktop
+- Concede accesso amministrativo limitato ai dispositivi Microsoft Managed Desktop per i tecnici che gestiscono i dispositivi Microsoft Managed Desktop 
 
 Prodotti supportati:
 
-- Windows 10 con Microsoft Defender per endpoint
-- Queste app Microsoft 365 per le app Enterprise: Outlook, Word, PowerPoint, Excel, client Skype for business, Microsoft Teams 
+- Windows 10 con Microsoft Defender for Endpoint
+- Queste app di Microsoft 365 Apps for enterprise: Outlook, Word, PowerPoint, Excel, client Skype for Business, Microsoft Teams 
 - Microsoft Store per le aziende 
-- Client di OneDrive for business 
+- Client OneDrive for Business 
 
 Dettagli del supporto:
 
 - Corrente: Stati Uniti, Canada (escluso Québec), Regno Unito, Belgio, Lussemburgo, Paesi Bassi, Australia e Nuova Zelanda (24x7x365) 
-- L'inglese è l'unica lingua supportata per le conversazioni telefoniche e di chat con i clienti 
-- Siamo in partnership con, non sostituendo, il supporto tecnico aziendale; le app line-of-business (LOB), le risorse di rete e così via sono ancora gestite dal supporto tecnico 
-- I dispositivi Microsoft Managed Desktop nel gruppo "test" e i dispositivi che non fanno parte di Microsoft Managed Desktop non rientrano nell'ambito 
+- L'inglese è l'unica lingua supportata per le conversazioni telefoniche e in chat con i clienti 
+- Stiamo collaborando con l'helpdesk aziendale, senza sostituirlo; Le app line-of-Business (LOB), le risorse di rete e così via sono ancora gestite dal supporto 
+- I dispositivi Microsoft Managed Desktop nel gruppo "Test" e i dispositivi che non fanno parte di Microsoft Managed Desktop non sono nell'ambito 
 
 
 ## <a name="related-topics"></a>Argomenti correlati

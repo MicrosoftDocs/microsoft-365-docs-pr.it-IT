@@ -1,5 +1,5 @@
 ---
-title: Guida di orientamento tenant per Microsoft 365
+title: Roadmap del tenant per Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: josephd
@@ -13,7 +13,7 @@ ms.collection:
 - M365-subscription-management
 - m365initiative-coredeploy
 ms.custom: it-pro
-description: La Guida di orientamento per la configurazione dei tenant per Microsoft 365.
+description: La roadmap per configurare i tenant per Microsoft 365.
 ms.openlocfilehash: d2640a036eedda0b0962a15a03dcf0211ea0209b
 ms.sourcegitcommit: c84cceb07e748969723a31b350e37f3ec79255ab
 ms.translationtype: MT
@@ -21,27 +21,27 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 11/09/2020
 ms.locfileid: "48948398"
 ---
-# <a name="tenant-roadmap-for-microsoft-365"></a>Guida di orientamento tenant per Microsoft 365
+# <a name="tenant-roadmap-for-microsoft-365"></a>Roadmap del tenant per Microsoft 365
 
-Il tenant Microsoft 365 è l'insieme di servizi assegnati alla propria organizzazione. In genere, questo tenant è associato a uno o più nomi di dominio DNS pubblici e funge da contenitore centrale e isolato per sottoscrizioni diverse e licenze all'interno delle quali viene assegnato agli account utente. Per ulteriori informazioni, vedere [abbonamenti, licenze, account e tenant per offerte cloud di Microsoft](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).
+Il tenant di Microsoft 365 è il set di servizi assegnati all'organizzazione. In genere, questo tenant è associato a uno o più nomi di dominio DNS pubblici e funge da contenitore centrale e isolato per sottoscrizioni diverse e le licenze al loro interno assegnate agli account utente. Per ulteriori informazioni, vedere [Sottoscrizioni, licenze, account](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)e tenant per le offerte cloud di Microsoft.
 
-Quando si crea un tenant di Microsoft 365, è possibile assegnarlo a una specifica posizione geografica. È inoltre possibile disporre di un tenant con più posizioni geografiche e spostare il tenant da una posizione a un'altra.
+Quando si crea un tenant di Microsoft 365, questo viene assegnato a una posizione geografica specifica. È inoltre possibile avere un tenant con più posizioni geografiche e spostare il tenant da una posizione all'altra.
 
-Per ottenere il tenant pronto per l'utente, i gruppi, le licenze e le app del cloud, è importante pianificare attentamente ed eseguire la configurazione del tenant.
+Per prepararsi al tenant per utenti, gruppi, licenze e app cloud, è fondamentale pianificare ed eseguire con attenzione la configurazione del tenant.
 
 ## <a name="set-up-your-microsoft-365-tenant"></a>Configurare il tenant di Microsoft 365
 
-Dopo aver verificato che la rete sia stata ottimizzata per l'accesso a Microsoft 365 sia per gli addetti locali che per i dipendenti remoti, le attività importanti successive stanno pianificando e configurando il tenant di Microsoft 365 per i nomi di dominio DNS, i servizi comuni e l'infrastruttura di identità che supporta l'accesso sicuro degli utenti.
+Dopo aver garantito che la rete sia ottimizzata per l'accesso a Microsoft 365 sia per i lavoratori locali che per i lavoratori remoti, le prossime grandi attività sono la pianificazione e la configurazione del tenant di Microsoft 365 per i nomi di dominio DNS, i servizi comuni e per l'infrastruttura di gestione delle identità che supporta l'accesso degli utenti protetti.
 
 ### <a name="plan"></a>Piano
 
 Per pianificare l'implementazione del tenant:
 
-- [Comprendere gli abbonamenti, le licenze e i tenant di Azure Active Directory (Azure AD)](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
-- [Informazioni su come utilizzare i certificati SSL di terze parti](plan-for-third-party-ssl-certificates.md)
-- [Comprendere i modi in cui un tenant Microsoft 365 è integrato con i servizi di Azure AD](integrated-apps-and-azure-ads.md)
+- [Informazioni su sottoscrizioni, licenze e tenant di Azure Active Directory (Azure AD)](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)
+- [Informazioni su come utilizzare certificati SSL di terze parti](plan-for-third-party-ssl-certificates.md)
+- [Comprendere i modi in cui un tenant di Microsoft 365 è integrato con i servizi di Azure AD](integrated-apps-and-azure-ads.md)
 - [Pianificare il supporto delle app client](microsoft-365-client-support-certificate-based-authentication.md)
-- [Determinare la modalità di utilizzo dell'autenticazione moderna ibrida](hybrid-modern-auth-overview.md)
+- [Determinare come utilizzare l'autenticazione moderna ibrida](hybrid-modern-auth-overview.md)
 - [Pianificare gli aggiornamenti di Office 2007 e Office 2010](plan-upgrade-previous-versions-office.md)
 - [Comprendere l'isolamento del tenant](microsoft-365-tenant-isolation-overview.md)
 
@@ -49,28 +49,28 @@ Per pianificare l'implementazione del tenant:
 
 Per distribuire il tenant: 
 
-- Aggiungere i [domini DNS](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) per la propria organizzazione.
-- Utilizzare le [guide all'installazione nell'interfaccia di amministrazione di Microsoft 365](setup-guides-for-microsoft-365.md).
-- Creare l' [infrastruttura di identità](identity-roadmap-microsoft-365.md) e [proteggere gli accessi degli utenti](microsoft-365-secure-sign-in.md).
+- Aggiungere i [domini DNS](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) per l'organizzazione.
+- Usare le [guide alla configurazione nell'interfaccia di amministrazione di Microsoft 365.](setup-guides-for-microsoft-365.md)
+- Creare [l'infrastruttura di gestione delle](identity-roadmap-microsoft-365.md) identità e proteggere gli account di accesso degli [utenti.](microsoft-365-secure-sign-in.md)
 
 ### <a name="move-a-tenants-geographic-locations"></a>Spostare le posizioni geografiche di un tenant
 
-Microsoft continua ad aprire nuove aree geografiche di datacenter (GEOS) per i servizi di Microsoft 365. Questi nuovi datacenter GEOS aggiungono capacità e risorse di calcolo per supportare la crescita della domanda e dell'utilizzo dei clienti. Inoltre, il nuovo datacenter GEOS offre la residenza di dati in-Geo per i dati di base dei clienti.
+Microsoft continua ad aprire nuove posizioni geografiche del datacenter (geo) per i servizi di Microsoft 365. Questi nuovi centri dati geografici aggiungono capacità e risorse di calcolo per supportare la domanda dei clienti e la crescita dell'utilizzo. Inoltre, le nuove posizioni geografiche del datacenter offrono la residenza dei dati in-geo per i dati principali dei clienti.
 
-Per ulteriori informazioni, vedere [Moving core data to New Microsoft 365 datacenter GEOS](moving-data-to-new-datacenter-geos.md).
+Per ulteriori informazioni, vedere Spostamento dei dati di base in nuove posizioni geografiche del [datacenter di Microsoft 365.](moving-data-to-new-datacenter-geos.md)
 
 
-## <a name="deploy-microsoft-365-multi-geo"></a>Distribuire Microsoft 365 multi-Geo
+## <a name="deploy-microsoft-365-multi-geo"></a>Distribuire Microsoft 365 Multi-Geo
 
 Con Microsoft 365 Multi-Geo l'organizzazione può espandere la presenza di Microsoft 365 a più paesi/aree geografiche all'interno del tenant esistente.
 
-Per ulteriori informazioni, vedere [Microsoft 365 multi-Geo](microsoft-365-multi-geo.md).
+Per ulteriori informazioni, vedere [Microsoft 365 Multi-Geo](microsoft-365-multi-geo.md).
 
-## <a name="manage-multiple-microsoft-365-tenants"></a>Gestire più tenant Microsoft 365 
+## <a name="manage-multiple-microsoft-365-tenants"></a>Gestire più tenant di Microsoft 365 
 
-Anche se l'utilizzo di un singolo tenant per il Oganization è l'ideale, potrebbe essere una delle numerose organizzazioni con più tenant. I motivi possono includere fusioni e acquisizioni, si desidera l'isolamento amministrativo o si dispone di una decentralizzata.
+Anche se è ideale disporre di un singolo tenant per l'oganizzazione, è possibile che tu sia una delle molte organizzazioni con più tenant. I motivi possono includere fusioni e acquisizioni, l'isolamento amministrativo o l'it decentralizzato.
 
-Se si dispone di più tenant Microsoft 365, vedere questi articoli per ulteriori informazioni su:
+Se si dispone di più tenant di Microsoft 365, vedere questi articoli per ulteriori informazioni su:
 
 - [Collaborazione tra tenant](microsoft-365-inter-tenant-collaboration.md)
 - [Migrazione delle cassette postali tra tenant](cross-tenant-mailbox-migration.md)
@@ -78,4 +78,4 @@ Se si dispone di più tenant Microsoft 365, vedere questi articoli per ulteriori
 
 ## <a name="next-step"></a>Passaggio successivo
 
-Avviare la pianificazione del tenant con [abbonamenti, licenze, account e tenant](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md).
+Iniziare la pianificazione del tenant [con sottoscrizioni, licenze, account e tenant.](subscriptions-licenses-accounts-and-tenants-for-microsoft-cloud-offerings.md)

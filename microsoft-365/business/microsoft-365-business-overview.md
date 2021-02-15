@@ -71,11 +71,11 @@ Microsoft 365 Business Premium aiuta a proteggere i dati in tutte queste circost
 
 Microsoft 365 Business Premium aiuta a **difendersi dalle minacce** mediante:
 
-- Scansione dei collegamenti nei messaggi di posta elettronica e nei documenti in tempo reale per bloccare siti Web non sicuri (collegamenti sicuri).
+- Analisi dei collegamenti nei messaggi di posta elettronica e nei documenti in tempo reale per bloccare i siti Web non sicuri (collegamenti sicuri).
 
-- Esecuzione di analisi avanzate degli allegati di posta elettronica in un ambiente sandbox per rilevare malware di recente sviluppo (allegati sicuri). 
+- Esecuzione di analisi avanzata degli allegati di posta elettronica in un ambiente sandbox per rilevare malware appena sviluppato (allegati sicuri). 
 
-- Abilitazione dei criteri di anti-phishing che utilizzano modelli di apprendimento automatico e rilevamento della rappresentazione per garantire la protezione da attacchi avanzati (anti-phishing in Defender per Office 365 Intelligence). 
+- Abilitazione di criteri anti-phishing che usano modelli di apprendimento automatico e il rilevamento della rappresentazione per fornire protezione da attacchi avanzati (anti-phishing in Defender per l'intelligence di Office 365). 
 
 - Configurazione di criteri avanzati che disabilitano l'accesso da posizioni non attendibili o escludono l'autenticazione a più fattori da posizioni attendibili, ad esempio la rete dell'ufficio (Azure MFA con IP attendibili e accesso condizionale). 
 
