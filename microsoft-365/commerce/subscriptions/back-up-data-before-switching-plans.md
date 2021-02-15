@@ -21,7 +21,7 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
-description: Backup di Outlook, OneDrive, Yammer e contenuto di SharePoint prima di modificare i piani di Microsoft 365.
+description: Eseguire il backup del contenuto di Outlook, OneDrive, Yammer e SharePoint prima di modificare i piani di Microsoft 365.
 ms.openlocfilehash: f74acee03a21f2dfdf01c10017346b81a2885b3b
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
@@ -29,29 +29,29 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48647856"
 ---
-# <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>Eseguire il backup dei dati prima di cambiare i piani di Microsoft 365 per le aziende
+# <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>Eseguire il backup dei dati prima di cambiare piano di Microsoft 365 per le aziende
 
-Se un utente viene spostato in un altro abbonamento con meno servizi correlati ai dati o se un utente lascia l'organizzazione, è possibile scaricare una copia dei dati archiviati in Microsoft 365 prima di passare alla nuova sottoscrizione.
+Se un utente passa a un altro abbonamento con meno servizi correlati ai dati o un utente lascia l'organizzazione, è possibile scaricare una copia dei dati archiviati in Microsoft 365 prima di passare al nuovo abbonamento.
 
-Se si sta spostando un utente in un abbonamento che ha lo stesso o più servizi, non è necessario eseguire il backup dei dati degli utenti. Vedere [Move users to a different Subscription](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/move-users-different-subscription).
+Se si sta spostando un utente in un abbonamento con lo stesso o più servizi, non è necessario eseguire il backup dei dati utente. Vedere [Spostare gli utenti in un abbonamento diverso.](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/move-users-different-subscription)
   
-## <a name="save-a-copy-of-outlook-information"></a>Salvataggio di una copia delle informazioni di Outlook
+## <a name="save-a-copy-of-outlook-information"></a>Salvare una copia delle informazioni di Outlook
 
-Se gli utenti dispongono di Outlook, possono [esportare o eseguire il backup di posta elettronica, contatti e calendario in un file PST di Outlook prima di](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91) commutare il piano.
+Se gli utenti dispongono di Outlook, possono esportare o eseguire il backup di posta [elettronica,](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91) contatti e calendario in un file PST di Outlook prima del cambio di piano.
   
-Dopo aver completato il passaggio al nuovo piano, gli utenti possono [importare messaggi di posta elettronica, contatti e calendario da un file PST di Outlook](https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac).
+Al termine del passaggio al nuovo piano, gli utenti possono importare posta elettronica, contatti e calendario da [un file PST di Outlook.](https://support.microsoft.com/office/431a8e9a-f99f-4d5f-ae48-ded54b3440ac)
   
-## <a name="save-files-stored-in-onedrive-for-business"></a>Salvare i file archiviati in OneDrive for business
+## <a name="save-files-stored-in-onedrive-for-business"></a>Salvare i file archiviati in OneDrive for Business
 
-Prima di passare a una sottoscrizione diversa, gli utenti possono [scaricare file e cartelle da OneDrive o SharePoint](https://support.microsoft.com/office/5c7397b7-19c7-4893-84fe-d02e8fa5df05) in un percorso diverso, ad esempio una cartella sul disco rigido del computer, o una condivisione file sulla rete dell'organizzazione.
+Prima di passare a un abbonamento diverso, gli utenti possono scaricare file e cartelle da OneDrive o [SharePoint](https://support.microsoft.com/office/5c7397b7-19c7-4893-84fe-d02e8fa5df05) in un percorso diverso, ad esempio una cartella nel disco rigido del computer o una condivisione file nella rete dell'organizzazione.
   
 ## <a name="save-yammer-information"></a>Salvare le informazioni di Yammer
 
-Gli amministratori possono esportare tutti i messaggi, le note, i file, gli argomenti, gli utenti e i gruppi in un file ZIP. Per ulteriori informazioni, vedere [esportare i dati da Yammer Enterprise](https://docs.microsoft.com/yammer/manage-security-and-compliance/export-yammer-enterprise-data). Gli sviluppatori possono utilizzare l' [API Yammer](https://go.microsoft.com/fwlink/p/?linkid=842495) anche per eseguire questa operazione.
+Gli amministratori possono esportare tutti i messaggi, le note, i file, gli argomenti, gli utenti e i gruppi in un file ZIP. Per ulteriori informazioni, vedere [Esportare i dati da Yammer Enterprise.](https://docs.microsoft.com/yammer/manage-security-and-compliance/export-yammer-enterprise-data) Anche gli sviluppatori possono [usare l'API](https://go.microsoft.com/fwlink/p/?linkid=842495) di Yammer per eseguire questa operazione.
   
 ## <a name="how-to-save-sharepoint-information"></a>Come salvare le informazioni di SharePoint
 
-Se un utente viene spostato da un abbonamento con SharePoint Online a uno che non lo contiene, il riquadro di **SharePoint** non verrà più visualizzato nel menu Microsoft 365.
+Se un utente passa da un abbonamento con SharePoint Online a un abbonamento che non lo contiene, il riquadro di **SharePoint** non verrà più visualizzato nel menu di Microsoft 365.
   
 Tuttavia, se il nuovo abbonamento è nella stessa organizzazione di quello precedente, l'utente potrà continuare ad accedere al sito del team di SharePoint e potrà visualizzare e aggiornare blocchi appunti, documenti, attività e calendari usando l'URL diretto del sito del team.
   

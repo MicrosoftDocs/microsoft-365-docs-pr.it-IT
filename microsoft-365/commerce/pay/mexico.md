@@ -22,14 +22,14 @@ ms.locfileid: "48649272"
 ---
 # <a name="payment-information-for-mexico"></a>Informazioni di pagamento per il Messico
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Si prega di pagare solo in pesos messicani. Per l'elaborazione del pagamento, il nome della società e il numero di fattura devono essere forniti sul pagamento della rimessa.
+Pagare solo in pesos messico. Per elaborare il pagamento, è necessario specificare il nome della società e il numero di fattura al pagamento delle rimesse.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** Citibank/Banamex  
-**Branch:** Act. Roberto Medellin 800, P.B. Sur, colonnello Santa Fe, città del Messico C.P. 01210, Messico  
+**Bank:** Citibank/Banamex  
+**Ramo:** Act. Roberto Medellin 800, P.B. Sur,Col. Santa Fe, Città del Messico C.P. 01210, Messico  
 **Codice SWIFT:** BNMXMM  
 **CLABE** 002180002337160225  
 **Numero account:** 0233716022  

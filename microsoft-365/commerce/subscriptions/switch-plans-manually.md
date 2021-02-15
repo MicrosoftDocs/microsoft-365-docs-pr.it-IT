@@ -1,5 +1,5 @@
 ---
-title: Cambiare manualmente i piani di Microsoft 365 for business
+title: Cambiare piano di Microsoft 365 per le aziende manualmente
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -22,7 +22,7 @@ search.appverid:
 - BEA160
 ms.assetid: eb0d0680-5677-41a0-8c46-4b9d47f1c209
 ROBOTS: NOINDEX
-description: Passare manualmente gli abbonamenti di Microsoft 365 per le aziende acquistando un nuovo abbonamento e assicurando che entrambe le sottoscrizioni siano elencate e attive.
+description: Cambiare manualmente gli abbonamenti a Microsoft 365 per le aziende acquistando un nuovo abbonamento e verificando che entrambi gli abbonamenti siano elencati e attivi.
 ms.openlocfilehash: 3712f01502362e68d05e6a2eadfcac588f6092b7
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
@@ -30,38 +30,38 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48647760"
 ---
-# <a name="switch-microsoft-365-for-business-plans-manually"></a>Cambiare manualmente i piani di Microsoft 365 for business
+# <a name="switch-microsoft-365-for-business-plans-manually"></a>Cambiare piano di Microsoft 365 per le aziende manualmente
 
 ::: moniker range="o365-worldwide"
 > [!NOTE]
-> Questo articolo si applica all'interfaccia di amministrazione precedente. Per visualizzare l'articolo relativo al nuovo interfaccia di amministrazione, vedere [modificare i piani manualmente](change-plans-manually.md). Il nuovo interfaccia di amministrazione è disponibile per tutti gli amministratori di Microsoft 365 ed è possibile optare selezionando il nuovo Toggle dell'interfaccia di **Amministrazione** che si trova nella parte superiore della Home page. Per altre informazioni, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
+> Questo articolo si applica all'interfaccia di amministrazione precedente. Per visualizzare l'articolo sulla nuova interfaccia di amministrazione, vedere [Modificare i piani manualmente.](change-plans-manually.md) La nuova interfaccia di amministrazione è disponibile per tutti gli amministratori di  Microsoft 365 ed è possibile acconsentire esplicitamente selezionando l'interruttore Prova la nuova interfaccia di amministrazione nella parte superiore della home page. Per altre informazioni, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
 ::: moniker-end
 
 ## <a name="step-1-decide-how-to-switch-plans"></a>Passaggio 1: decidere come cambiare piano
 
-Il modo migliore per passare tutti gli utenti da un piano a un altro consiste nell'utilizzare il [pulsante utilizza il comando Cambia piano](switch-to-a-different-plan.md#use-the-switch-plans-button). A volte però questo non è possibile. Occorre eseguire un passaggio manuale quando:
+Il modo migliore per passare tutti gli utenti da un piano a un altro è usare il pulsante Cambia [piano.](switch-to-a-different-plan.md#use-the-switch-plans-button) A volte però questo non è possibile. Occorre eseguire un passaggio manuale quando:
   
 - Il pulsante **Cambia piano** non è presente.
 
-- Se, quando si seleziona il pulsante **Cambia** piano, la pianificazione desiderata non è presente nell'elenco.
+- Se, quando si seleziona il pulsante Cambia **piano,** il piano desiderato non è elencato.
 
 - Se non si desidera cambiare tutti gli utenti nello stesso modo. Alcune aziende hanno la necessità di sottoscrivere piani diversi per determinati utenti. In questo caso occorre cambiare piano manualmente.
 
-Per continuare con l'opzione manuale, leggere [passaggio 2: acquistare un nuovo abbonamento](#step-2-buy-a-new-subscription) in questo argomento.
+Per continuare con un passaggio manuale, leggere [passaggio 2: acquistare un nuovo abbonamento](#step-2-buy-a-new-subscription) in questo argomento.
   
-## <a name="step-2-buy-a-new-subscription"></a>Passaggio 2: acquistare un nuovo abbonamento
+## <a name="step-2-buy-a-new-subscription"></a>Passaggio 2: Acquistare un nuovo abbonamento
 
- **Si è già acquistato un piano?** Se si dispone già di un abbonamento a cui si desidera spostare gli utenti, saltare questo passaggio e andare al [passaggio 3: verificare il nuovo abbonamento e le licenze](#step-3-check-your-new-subscription-and-licenses) in questo argomento.
+ **Si è già acquistato un piano?** Se si ha già un abbonamento in cui si desidera spostare gli utenti, ignorare questo passaggio e andare al passaggio [3:](#step-3-check-your-new-subscription-and-licenses) Verificare la nuova sottoscrizione e le nuove licenze in questo argomento.
   
 - OPPURE -
   
- **Acquistare un nuovo abbonamento e licenze:** Per acquistare un nuovo abbonamento, seguire la procedura illustrata in [acquistare un altro abbonamento a Microsoft 365 for business](../buy-another-subscription.md) .
+ **Acquistare una nuova sottoscrizione e licenze:** Seguire i passaggi descritti in Acquistare un altro abbonamento a [Microsoft 365 per le aziende](../buy-another-subscription.md) per acquistare un nuovo abbonamento.
   
 Assicurarsi di acquistare un abbonamento per la stessa organizzazione in cui si trovano gli utenti. Ad esempio, controllare gli indirizzi di posta elettronica per gli utenti che si desidera spostare. Se includono @contoso.com, occorre acquistare un nuovo abbonamento per contoso.com. Includere una licenza per ogni utente da spostare.
   
- **Se si ha bisogno di assistenza nella scelta di un piano**, vedere la pagina [di confronto dei prodotti Microsoft 365 per le aziende](https://go.microsoft.com/fwlink/p/?linkid=842056) o [contattare il supporto tecnico](../../admin/contact-support-for-business-products.md).
+ **Per assistenza nella scelta di un piano,** vedere la pagina di confronto dei [prodotti microsoft 365 per le aziende](https://go.microsoft.com/fwlink/p/?linkid=842056) o chiamare il [supporto](../../admin/contact-support-for-business-products.md)tecnico.
   
-## <a name="step-3-check-your-new-subscription-and-licenses"></a>Passaggio 3: controllare il nuovo abbonamento e le licenze
+## <a name="step-3-check-your-new-subscription-and-licenses"></a>Passaggio 3: controllare il nuovo abbonamento e le nuove licenze
 
 ::: moniker range="o365-worldwide"
 
@@ -89,7 +89,7 @@ Assicurarsi di acquistare un abbonamento per la stessa organizzazione in cui si 
 
     Ogni utente deve avere una licenza corrispondente al proprio abbonamento. Pertanto, se si desidera spostare dieci utenti in Microsoft 365 Business Premium, è necessario assicurarsi che siano disponibili dieci licenze. 
 
-4. **Servono altre licenze per il nuovo abbonamento?** Passare alla pagina **abbonamenti** e [acquistare le licenze per l'abbonamento a Microsoft 365 for business](../licenses/buy-licenses.md).
+4. **Servono altre licenze per il nuovo abbonamento?** Passare alla pagina **Abbonamenti** e acquistare [licenze per l'abbonamento a Microsoft 365 per le aziende.](../licenses/buy-licenses.md)
   
     [Cosa accade alle vecchie licenze](#what-about-the-old-licenses)
 
@@ -105,7 +105,7 @@ Assicurarsi di acquistare un abbonamento per la stessa organizzazione in cui si 
 
 Le licenze per l'abbonamento corrente verranno rimosse successivamente e da quel momento in poi si pagherà solo per le nuove licenze utente.
   
-## <a name="step-4-reassign-licenses"></a>Passaggio 4: riassegnazione delle licenze
+## <a name="step-4-reassign-licenses"></a>Passaggio 4: Riassegnare le licenze
 
 ### <a name="reassign-a-license-for-one-user"></a>Riassegnare una licenza per un solo utente
 
@@ -129,22 +129,22 @@ Le licenze per l'abbonamento corrente verranno rimosse successivamente e da quel
 
 2. Nella pagina **Utenti attivi** selezionare la casella accanto al nome dell'utente a cui si vuole assegnare una licenza.
 
-3. A destra, nella riga **licenze di prodotto** , selezionare **modifica**.
+3. A destra, nella riga **Licenze di prodotto,** selezionare **Modifica.**
 
 4. Nel riquadro **Licenze di prodotto** impostare sulla posizione **Attivata** l'interruttore relativo alla licenza da assegnare all'utente. Per impostazione predefinita, tutti i servizi associati alla licenza vengono automaticamente assegnati all'utente.
 
     > [!TIP]
     > Per limitare i servizi disponibili per l'utente, impostare sulla posizione **Disattivato** l'interruttore relativo ai servizi da rimuovere per l'utente. Ad esempio, se si vuole che l'utente abbia accesso a tutti i servizi disponibili tranne Skype for Business online, è possibile impostare l'interruttore relativo al servizio Skype for Business online sulla posizione **Disattivato**.
   
-5. Impostare l'interruttore sulla posizione **disattivata** per le licenze di cui l'utente non ha più bisogno.
+5. Impostare l'interruttore **sulla posizione Disattivata** per le licenze non più necessarie per questo utente.
 
-6. Nella parte inferiore del riquadro **licenze di prodotto** , selezionare **assegna** \> **chiudere Chiudi** \> **Close**.
+6. Nella parte inferiore del riquadro **Licenze di** prodotto selezionare **Assegna** \> **chiudi.** \> 
 
 ### <a name="reassign-licenses-for-multiple-users-at-once"></a>Riassegnare licenze a più utenti contemporaneamente
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione, andare alla pagina **utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">attivi</a> .
+1. Nell'interfaccia di amministrazione passare alla **pagina Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">attivi.</a>
 
 ::: moniker-end
 

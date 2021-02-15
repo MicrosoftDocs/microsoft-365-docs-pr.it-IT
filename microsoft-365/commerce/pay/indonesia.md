@@ -22,14 +22,14 @@ ms.locfileid: "48647208"
 ---
 # <a name="payment-information-for-indonesia"></a>Informazioni di pagamento per l'Indonesia
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md). 
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md). 
 
-Si prega di pagare solo in IDR e i numeri delle fatture di riferimento sulla sua rimessa di pagamento.
+Pagare solo in formato IDR e fare riferimento ai numeri di fattura per la rimessa di pagamento.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** Citibank (Indonesia)  
-**Branch:** Giacarta  
+**Bank:** Citibank, Indonesia  
+**Ramo:** Giacarta  
 **Codice SWIFT:** CITIIDJX  
 **Numero account:** 104468055  
 **Nome account:** PT Microsoft Indonesia  

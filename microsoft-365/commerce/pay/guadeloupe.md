@@ -1,5 +1,5 @@
 ---
-title: Informazioni di pagamento per Guadalupa
+title: Informazioni di pagamento per guadalupa
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,15 +20,15 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48647441"
 ---
-# <a name="payment-information-for-guadeloupe"></a>Informazioni di pagamento per Guadalupa
+# <a name="payment-information-for-guadeloupe"></a>Informazioni di pagamento per guadalupa
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Si prega di pagare solo in USD e fare riferimento ai numeri di fattura sulla rimessa in fattura.
+Pagare solo in USD e fare riferimento ai numeri di fattura nella fattura rimessa.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** Bank of America  
+**Bank:** Bank of America  
 **Branch** Dallas  
 **Codice SWIFT:** BOFAUS3N  
 **Numero account:** 4426587954  

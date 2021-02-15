@@ -22,14 +22,14 @@ ms.locfileid: "48648276"
 ---
 # <a name="payment-information-for-turkey"></a>Informazioni di pagamento per la Turchia
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Si prega di pagare in prova solo e i numeri delle fatture di riferimento sulla vostra rimessa di pagamento.
+Pagare solo in PROVA e fare riferimento ai numeri di fattura per la rimessa di pagamento.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** Citibank A.S., Istanbul  
+**Bank:** Citibank A.S., Istanbul  
 **Codice SWIFT:** CITITRIX  
-**Codice IBAN:** TR420009200000000092407039  
-**Numero account:** 92407039  
-**Nome account:** Pagamenti Microsoft  
+**IBAN:** TR420009200000000092407039  
+**Numero di conto:** 92407039  
+**Nome account:** Microsoft Payments  

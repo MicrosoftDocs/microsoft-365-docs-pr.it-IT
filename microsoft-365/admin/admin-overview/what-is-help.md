@@ -1,5 +1,5 @@
 ---
-title: Informazioni su come ottenere assistenza nell'interfaccia di amministrazione di Microsoft 365
+title: Come ottenere assistenza nell'interfaccia di amministrazione di Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -20,7 +20,7 @@ search.appverid:
 - BEA160
 - GEA150
 ROBOTS: NOINDEX
-description: Informazioni su tutti i modi in cui è possibile ottenere assistenza tramite l'interfaccia di amministrazione di Microsoft 365.
+description: Informazioni su tutti i modi in cui è possibile ottenere assistenza con l'interfaccia di amministrazione di Microsoft 365.
 ms.openlocfilehash: 23c325aa4a9a0fbf5ec8bfd16bd329540fcd4606
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
@@ -30,32 +30,32 @@ ms.locfileid: "48646512"
 ---
 <!-- The following is just placeholder text from Madhura's mail. We need to add images/examples of each -->
 
-# <a name="how-to-get-help-in-the-microsoft-365-admin-center"></a>Informazioni su come ottenere assistenza nell'interfaccia di amministrazione di Microsoft 365
+# <a name="how-to-get-help-in-the-microsoft-365-admin-center"></a>Come ottenere assistenza nell'interfaccia di amministrazione di Microsoft 365
 
-Se sei un amministratore, [admin.Microsoft.com](https://admin.microsoft.com) è il tuo luogo di go-to per gestire e sfruttare al meglio la sottoscrizione Microsoft 365. A volte non è possibile trovare l'attività corretta, è necessario un contesto maggiore prima di avviare un flusso di attività o semplicemente potrebbe non essere sicuro dell'ambito e dell'impatto delle azioni come amministratore. Per coprire tali situazioni, è possibile fornire assistenza moderna e supporto intelligente all'interno dell'interfaccia di amministrazione di Microsoft 365 in questi modi:
+Se si è un amministratore, [admin.microsoft.com](https://admin.microsoft.com) è la posizione ideale per gestire e utilizzare al meglio l'abbonamento a Microsoft 365. A volte potresti non trovare l'attività giusta, avere bisogno di più contesto prima di intraprendere un flusso di attività o semplicemente non essere sicuro dell'ambito e dell'impatto delle tue azioni come amministratore. Per coprire queste situazioni, forniamo assistenza moderna e intelligente in tutta l'interfaccia di amministrazione di Microsoft 365 nei modi seguenti:
 
-* **Guida integrata** -guida nell'interfaccia di amministrazione
+* **Guida integrata** - Guida nell'interfaccia di amministrazione
 
-* **Intelligent Assistance** -self-help Powered by ai
+* **Assistenza intelligente** - assistenza autonoma basata sull'intelligenza artificiale
 
-* **Guide e articoli** -contenuto completo sul Web
+* **Guide e articoli** : contenuto completo sul Web
 
 ## <a name="integrated-help"></a>Guida integrata
 
-La guida è integrata in tutto l'interfaccia di amministrazione, quindi è proprio lì quando ne hai bisogno. Nella parte superiore di molte pagine, è possibile trovare il testo della Guida in linea che fornisce una panoramica delle informazioni sull'attività a portata di mano, oltre a collegamenti ad articoli che consentono di trovare rapidamente documentazione ufficiale per un apprendimento più approfondito.
+La Guida è integrata in tutta l'interfaccia di amministrazione, quindi è proprio lì quando è necessaria. Nella parte superiore di molte pagine, troverai il testo della Guida in linea che fornisce una panoramica dettagliata dell'attività a portata di mano, oltre a collegamenti ad articoli che ti consentono di trovare rapidamente la documentazione ufficiale per un apprendimento più approfondito.
 
-![Pagina gruppi che mostra la Guida in linea e i collegamenti agli articoli](../../media/integrated-help.png)
+![Pagina Gruppi che mostra la Guida in linea e i collegamenti agli articoli](../../media/integrated-help.png)
 
-## <a name="modern-self-help-powered-by-ai"></a>Moderni self-help Powered by AI
+## <a name="modern-self-help-powered-by-ai"></a>Self-help moderno con tecnologia IA
 
-Per aprire la nostra moderna esperienza di self-help che è alimentata dall'intelligenza artificiale, seleziona il pulsante **serve aiuto** nell'interfaccia di amministrazione di Microsoft 365. Ad esempio, se si cerca "verifica il mio dominio", verranno riportate le operazioni più alcuni articoli che riteniamo utili. L'apprendimento automatico viene utilizzato per visualizzare la soluzione più vicina che ha aiutato altri amministratori che hanno immesso query simili.
+Per aprire l'esperienza self-help moderna basata sull'intelligenza artificiale, selezionare il pulsante Serve aiuto nell'interfaccia di amministrazione di Microsoft 365.  Ad esempio, se si cerca "verificare il dominio", si otterrà la procedura più alcuni articoli che ritieni saranno utili. Usiamo l'apprendimento automatico per visualizzare la soluzione più vicina che ha consentito ad altri amministratori che hanno immesso query simili.
 
-In alternativa, se non si conosce bene come fare qualcosa nella propria situazione specifica, utilizzare l'Assistente di supporto. Attualmente, questa esperienza è disponibile solo in inglese. Per attivare assistente supporto tecnico, è sufficiente utilizzare l'interruttore nella parte superiore del riquadro della **Guida necessario** . L'assistente del supporto tecnico fornisce un'interfaccia di conversazione per aiutarti. Dopo aver immesso la query, il chatbot chiede chiarimenti per ottenere la risposta corretta per la situazione specifica. È possibile considerarlo come helper virtuale per individuare soluzioni e completare le attività.
+Oppure, in questi casi in cui non si sa come eseguire un'operazione in una situazione specifica, utilizzare l'Assistente supporto tecnico. Attualmente, questa esperienza è disponibile solo in inglese. Per attivare Assistente supporto tecnico, usa l'interruttore nella parte superiore del riquadro **Serve aiuto.** L'Assistente supporto fornisce un'interfaccia conversazionale per aiutarti. Dopo aver immesso la query, il chatbot pone domande chiare per ottenere la risposta corretta per la propria situazione specifica. Pensalo come il tuo helper virtuale per individuare soluzioni e completare le attività.
 
-![Auto-assistenza moderna](../../media/help-options.png)
+![Self-help moderno](../../media/help-options.png)
 
-Naturalmente, a volte le domande sono le migliori risposte degli esseri umani. Se la risposta alla nostra moderna auto-assistenza non è disponibile, è sempre possibile contattare gli agenti di supporto.
+Naturalmente, a volte gli umani rispondono meglio alle domande. Se il nostro self-help moderno non ha la risposta, hai sempre la possibilità di contattare i nostri agenti di supporto.
 
 ## <a name="guides-and-articles"></a>Guide e articoli
 
-Inoltre, se si cercano guide di distribuzione complete, procedure dettagliate o cmdlet di PowerShell, è possibile cercare sul Web. È possibile aggiornare i contenuti di frequente e provare a fornire le informazioni più recenti. Consultare gli articoli e le guide disponibili nel sito [documentazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/) .
+Inoltre, se si cercano guide di distribuzione complete, procedure dettagliate rapide o cmdlet di PowerShell, cercare sul Web. Aggiorniamo spesso i contenuti e tentiamo di fornirti le informazioni più recenti. Consultare gli articoli e le guide nel sito [della documentazione di Microsoft 365.](https://docs.microsoft.com/microsoft-365/)

@@ -1,5 +1,5 @@
 ---
-title: Informazioni di supporto per le Isole Aland
+title: Informazioni di supporto per le isole Aland
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,9 +20,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48644412"
 ---
-# <a name="contact-support-for-aland-islands"></a>Contattare il supporto per le Isole Aland
+# <a name="contact-support-for-aland-islands"></a>Contattare il supporto per le isole Aland
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 08009 8462
@@ -30,10 +30,10 @@ ms.locfileid: "48644412"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Inglese: Mon-Fri 10.00-18.00
+Inglese: Mon-Fri dalle 10.00 alle 18.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Applicazione delle tariffe di chiamata locali
+Costo in base alle tariffe telefoniche locali

@@ -22,14 +22,14 @@ ms.locfileid: "48648372"
 ---
 # <a name="payment-information-for-taiwan"></a>Informazioni di pagamento per Taiwan
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md). 
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md). 
 
-Si prega di pagare in NT Solo dollari e numero di fattura di riferimento sulla rimessa dei pagamenti.
+Pagare in N.T. Solo dollari e numeri di fattura di riferimento per la rimessa di pagamento.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
 **Banca beneficiaria:** CITIBANK TAIWAN LIMITED  
-Codice **bancario e codice di succursale:** 0210018  
+**Codice bancario e codice di succursale:** 0210018  
 **Codice SWIFT:** CITITWTX  
 **Numero account:** 5038946139  
 **Nome account:** MICROSOFT TAIWAN CORPORATION    

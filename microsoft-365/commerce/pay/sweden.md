@@ -22,15 +22,15 @@ ms.locfileid: "48648432"
 ---
 # <a name="payment-information-for-sweden"></a>Informazioni di pagamento per la Svezia
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Si prega di pagare solo in SEK e i numeri delle fatture di riferimento sulla sua rimessa di pagamento.
+Pagare solo in SEK e fare riferimento ai numeri di fattura per la rimessa di pagamento.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** Citibank, Londra  
+**Bank:** Citibank, Londra  
 **Codice SWIFT/BIC:** CITIGB2L  
-**Codice IBAN:** GB22CITI18500812207656  
-**Codice di ordinamento:** 185008  
-**Numero account:** 12207656  
+**IBAN:** GB22CITI18500812207656  
+**Sort Code:** 185008  
+**Numero di conto:** 12207656  
 **Nome account:** MICROSOFT 

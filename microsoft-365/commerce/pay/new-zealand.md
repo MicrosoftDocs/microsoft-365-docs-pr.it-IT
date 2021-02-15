@@ -1,5 +1,5 @@
 ---
-title: Informazioni di pagamento per la nuova Zelanda
+title: Informazioni di pagamento per la Nuova Zelanda
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,15 +20,15 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48649042"
 ---
-# <a name="payment-information-for-new-zealand"></a>Informazioni di pagamento per la nuova Zelanda
+# <a name="payment-information-for-new-zealand"></a>Informazioni di pagamento per la Nuova Zelanda
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Si prega di pagare solo in NZD e i numeri delle fatture di riferimento sulla vostra rimessa di pagamento.
+Pagare solo in NZD e fare riferimento ai numeri di fattura per la rimessa di pagamento.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** Citibank  
+**Bank:** Citibank  
 **Codice bancario:** 31  
 **Codice di succursale:** 2840  
 **Codice SWIFT:** CITINZ2X  

@@ -1,5 +1,5 @@
 ---
-title: Informazioni di pagamento per Sri Lanka
+title: Informazioni di pagamento per lo Sri Lanka
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,15 +20,15 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48648516"
 ---
-# <a name="payment-information-for-sri-lanka"></a>Informazioni di pagamento per Sri Lanka
+# <a name="payment-information-for-sri-lanka"></a>Informazioni di pagamento per lo Sri Lanka
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Si prega di pagare solo in USD e fare riferimento ai numeri di fattura sulla rimessa in fattura.
+Pagare solo in USD e fare riferimento ai numeri di fattura nella fattura rimessa.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** Citibank, Singapore  
+**Bank:** Citibank, Singapore  
 **Codice SWIFT:** CITISGSG  
-**Numero account:** 0-817543-138  
+**Numero di conto:** 0-817543-138  
 **Nome account:** MICROSOFT REGIONAL SALES CORP  

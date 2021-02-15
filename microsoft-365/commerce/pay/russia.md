@@ -22,17 +22,17 @@ ms.locfileid: "48646884"
 ---
 # <a name="payment-information-for-russia"></a>Informazioni di pagamento per la Russia
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Si prega di pagare in RUB only and Reference fattura Number (s) sulla vostra rimessa di pagamento.
+Pagare solo in RUB e fare riferimento ai numeri di fattura per la rimessa di pagamento.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** ZAO KB Citibank a Mosca  
+**Bank:** ZAO KB Citibank a Mosca  
 **Codice SWIFT:** CITIRUMX  
 **BIK:** 044525202  
-**Inn:** 7731420476  
+**INN:** 7731420476  
 **KPP:** 773101001  
 **Numero account:** 40702810000702700004  
-**Account corrispondente:** 30101810300000000202 in Oper Moskovsky CGU Bank of Russia  
+**Account corrispondente:** 30101810300000000202 in OPERU Moskovsky GTU Bank of Russia  
 **Nome account:** Microsoft Payments Russia LLC

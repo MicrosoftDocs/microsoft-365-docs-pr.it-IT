@@ -1,5 +1,5 @@
 ---
-title: Scaricare app di Office per Android per Office 365 gestito da 21Vianet
+title: Scaricare l'app di Office per Android per Office 365 gestito da 21Vianet
 f1.keywords:
 - NOCSH
 ms.author: sharik
@@ -18,7 +18,7 @@ search.appverid:
 - MET150
 - GEU150
 - GEA150
-description: Per ulteriori informazioni, vedere l'app Microsoft Office per Android per Office 365 gestito da 21Vianet e come scaricarlo per i clienti in Cina.
+description: Ulteriori informazioni sull'app Microsoft Office per Android per Office 365 gestito da 21Vianet e su come scaricarla per i clienti in Cina.
 monikerRange: o365-21vianet
 ms.openlocfilehash: 6cabe2e9769f7cebf9d128f78773f8014fd004e2
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
@@ -29,22 +29,22 @@ ms.locfileid: "48644808"
 ---
 # <a name="office-app-for-android-for-office-365-operated-by-21vianet"></a>App di Office per Android per Office 365 gestito da 21Vianet
 
-L'app Microsoft Office per Android combina le app per dispositivi mobili Word, Excel e PowerPoint in una singola app disponibile per il download per i telefoni Android. Con l'app di Office per Android, è possibile connettersi a Office 365 esattamente come si farebbe con le app per dispositivi mobili Word, Excel e PowerPoint. Il download di Office app per Android non influenzerà le installazioni esistenti di Word, Excel e PowerPoint.
+L Microsoft Office app per Android combina le app per dispositivi mobili Word, Excel e PowerPoint in un'unica app disponibile per il download per i telefoni Android. Con l'app Di Office per Android, è possibile connettersi a Office 365 come si farebbe con le app per dispositivi mobili Word, Excel e PowerPoint. Il download dell'app di Office per Android non influisce sulle installazioni esistenti di Word, Excel e PowerPoint.
 
-Alcune app di Office per le funzionalità Android non sono disponibili per Office 365 gestito da clienti di 21Vianet:
+Alcune funzionalità di Office per Android non sono disponibili per i clienti di Office 365 gestito da 21Vianet:
 
-- Immagine su testo e immagine nella tabella 
-- Conversione di foto in documenti di Word dall'obiettivo 
-- Azione trasferimento file 
-- Le note rimangono locali e non si sincronizzano con il server
-- Anteprima dei collegamenti all'interno di Scan QR
-- Schede Live persona nella sezione me
+- Da immagine a testo e da immagine a tabella 
+- Conversione di foto in documenti di Word da Lens 
+- Azione trasferisci file 
+- Le note rimangono locali e non vengono sincronizzate con il server
+- Anteprima dei collegamenti all'interno di Analisi QR
+- Schede utente live nella sezione Io
 - Classificazione, etichettatura e protezione (CLP)
 
 
 ## <a name="download-the-office-app-for-android"></a>Scaricare l'app di Office per Android
 
-Scaricare l'app di Office per i telefoni Android da uno di questi negozi in Cina:
+Scaricare l'app di Office per i telefoni Android da uno dei seguenti store in Cina:
 - [Baidu](https://shouji.baidu.com/software/26842919.html)
 - [Xiaomi](http://app.mi.com/details?id=com.microsoft.office.officehub&ref=search)
 - [Huawei](https://appstore.huawei.com/app/C10888510)
@@ -54,11 +54,11 @@ Scaricare l'app di Office per i telefoni Android da uno di questi negozi in Cina
 - [wandoujia](https://www.wandoujia.com/apps/1502895)
 
 > [!NOTE]
-> L'app di Office per Android è attualmente disponibile solo per i telefoni. Il supporto per le tavolette verrà aggiunto in un secondo momento. 
+> L'app di Office per Android è attualmente disponibile solo per i telefoni. Il supporto per i tablet verrà aggiunto in un secondo momento. 
 
 
 ## <a name="security-considerations"></a>Considerazioni sulla sicurezza
 
-Se l'organizzazione spinge le app ai dispositivi mobili per i dipendenti, è consigliabile sostituire le app Word, Excel e PowerPoint con l'app di Office per Android.  
+Se l'organizzazione invia le app ai dispositivi mobili dei dipendenti, è consigliabile sostituire le app Word, Excel e PowerPoint con l'app Office per Android.  
 
 

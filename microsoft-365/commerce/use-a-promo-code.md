@@ -1,5 +1,5 @@
 ---
-title: Utilizzare il codice promozionale per ridurre i prezzi
+title: Usare il codice promozionale per ridurre il prezzo
 f1.keywords:
 - NOCSH
 ms.author: cmcatee
@@ -23,7 +23,7 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: fce1510d-9ea5-4aff-8752-1676ec7fede3
-description: Informazioni su come applicare un codice promozionale all'abbonamento a Microsoft 365 per ridurre i prezzi e sulla risoluzione dei problemi relativi al codice promozionale in caso di errore.
+description: Informazioni su come applicare un codice promozionale all'abbonamento a Microsoft 365 per ridurre il prezzo e come risolvere i problemi relativi al codice promozionale in caso di errore.
 ms.openlocfilehash: 09f39b6f82153c6b23525ab41cfb94e77437d062
 ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
 ms.translationtype: MT
@@ -31,25 +31,25 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48646740"
 ---
-# <a name="use-your-promo-code-to-reduce-price"></a>Utilizzare il codice promozionale per ridurre i prezzi
+# <a name="use-your-promo-code-to-reduce-price"></a>Usare il codice promozionale per ridurre il prezzo
 
-Quando si acquista un abbonamento, è possibile usare un codice promozionale per ridurre il prezzo. Leggere questo articolo per informazioni su come applicare un codice promozionale all'abbonamento, per informazioni sui [termini del codice promozionale](#promo-code-terms)e per la [risoluzione dei problemi relativi ai codici promozionali](#troubleshooting-promo-codes).
+Quando acquisti un abbonamento, puoi usare un codice promozionale per ridurre il prezzo. Leggi questo articolo per informazioni su come applicare un codice [](#promo-code-terms)promozionale all'abbonamento, per informazioni sui termini del codice promozionale e per risolvere i problemi relativi [ai codici promozionali.](#troubleshooting-promo-codes)
   
 ## <a name="apply-a-promo-code-to-your-subscription"></a>Applicare un codice promozionale all'abbonamento
 
-1. Iniziare l'acquisto acquistando un nuovo abbonamento oppure aggiungendo servizi a un abbonamento esistente.
+1. Iniziare l'acquisto acquistando un nuovo abbonamento o aggiungendo servizi a un abbonamento esistente.
     
-2. Quando si estrae, scegliere * * avere un codice promozionale o di sconto?, quindi immettere il codice nella casella. 
+2. When you check out, choose **Have a promo or discount code?, and then enter your code in the box. 
   
-3. Selezionare **applica codice promozionale**. Verrà visualizzata la conferma che è stata applicata correttamente. If you see a different message, refer to [Troubleshooting promo codes](#troubleshooting-promo-codes) to figure out why. 
+3. Selezionare **Applica codice promozionale.** Verrà visualizzata la conferma che l'applicazione è stata eseguita correttamente. If you see a different message, refer to [Troubleshooting promo codes](#troubleshooting-promo-codes) to figure out why. 
     
-4. Continuare il check-out. Nella pagina di conferma dell'ordine, verrà visualizzato il codice di sconto incluso con l'importo. 
+4. Continuare l'estrazione. Nella pagina di conferma dell'ordine, vedrai il codice dello sconto incluso con l'importo. 
     
-In qualsiasi momento dopo il completamento dell'acquisto, lo sconto associato al codice promozionale può essere visualizzato nella fattura. Per ulteriori informazioni, vedere [View your](billing-and-payments/view-your-bill-or-invoice.md).
+In qualsiasi momento dopo il completamento dell'acquisto, lo sconto associato al codice promozionale può essere visualizzato nella fattura. Per altre informazioni, vedere [Visualizzare il file](billing-and-payments/view-your-bill-or-invoice.md).
   
 ## <a name="promo-code-terms"></a>Condizioni per i codici promozionali
 
-Le linee guida seguenti si applicano ai codici promozionali per gli abbonamenti a Microsoft 365 for business.
+Le linee guida seguenti si applicano ai codici promozionali per gli abbonamenti a Microsoft 365 per le aziende.
   
 - **Numero di codici promozionali per abbonamento** È possibile usare un codice promozionale per più abbonamenti nello stesso ordine, ma non si possono usare più codici promozionali per lo stesso abbonamento. 
     

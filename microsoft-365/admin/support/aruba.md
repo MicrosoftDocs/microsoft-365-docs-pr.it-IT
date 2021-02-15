@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per Aruba
+title: Informazioni di supporto per Aruba
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -22,20 +22,20 @@ ms.locfileid: "48644172"
 ---
 # <a name="contact-support-for-aruba"></a>Contattare il supporto per Aruba
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
-+ 1 312 843 5146
++1 312 843 5146
 
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Olandese: Mon-Fri 4 AM-Noon
+Olandese: Mon-Fri 4.00-12.00
 
-Inglese: Mon-Fri 4 AM-Noon
+Inglese: Mon-Fri 4.00-12.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Tariffe di chiamata internazionali applicate
+Si applicano addebiti per chiamate internazionali

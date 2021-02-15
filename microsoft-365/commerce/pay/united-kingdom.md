@@ -22,15 +22,15 @@ ms.locfileid: "48648156"
 ---
 # <a name="payment-information-for-united-kingdom"></a>Informazioni di pagamento per il Regno Unito
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Si prega di pagare in GBP solo e i numeri delle fatture di riferimento sulla vostra rimessa di pagamento.
+Pagare solo in GBP e fare riferimento ai numeri di fattura per la rimessa di pagamento.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** Citibank, Londra  
+**Bank:** Citibank, Londra  
 **Codice SWIFT:** CITIGB2L  
-**Codice IBAN:** GB41CITI18500812207605  
-**Codice di ordinamento:** 185008  
-**Numero account:** 12207605  
+**IBAN:** GB41CITI18500812207605  
+**Sort Code:** 185008  
+**Numero di conto:** 12207605  
 **Nome account:** MICROSOFT  

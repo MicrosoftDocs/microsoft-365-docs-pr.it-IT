@@ -1,5 +1,5 @@
 ---
-title: Informazioni sui pagamenti per la Corea
+title: Informazioni di pagamento per la Corea
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,16 +20,16 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48649566"
 ---
-# <a name="payment-information-for-korea"></a>Informazioni sui pagamenti per la Corea
+# <a name="payment-information-for-korea"></a>Informazioni di pagamento per la Corea
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Si prega di pagare solo in KRW e i numeri delle fatture di riferimento sulla sua rimessa di pagamento.
+Pagare solo in KRW e fare riferimento ai numeri di fattura per la rimessa di pagamento.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** Citibank  
-**Succursale:** 89-29 Shinmunro-2KA Chongro-gu Seoul, Korea 110-062  
+**Bank:** Citibank  
+**Branch:** 89-29 Shinmunro-2ka Chongro-gu Seoul, Korea 110-062  
 **Codice SWIFT:** CITIKRSX  
 **Numero account:** 5001296088  
 **Nome account:** MICROSOFT KOREA  

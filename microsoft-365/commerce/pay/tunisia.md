@@ -22,16 +22,16 @@ ms.locfileid: "48648300"
 ---
 # <a name="payment-information-for-tunisia"></a>Informazioni di pagamento per la Tunisia
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md). <!--This should go to the parent "Pay for your Microsoft 365 for business subscription" topic-->
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md). <!--This should go to the parent "Pay for your Microsoft 365 for business subscription" topic-->
 
-Si prega di pagare solo in USD e i numeri delle fatture di riferimento sulla sua rimessa di pagamento.
+Pagare solo in USD e fare riferimento ai numeri di fattura per la rimessa di pagamento.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** Citibank, Londra  
+**Bank:** Citibank, Londra  
 **Codice SWIFT:** CITIGB2L  
-**Codice IBAN:** GB95CITI18500812510049  
-**Numero account:** 12510049  
+**IBAN:** GB95CITI18500812510049  
+**Numero di conto:** 12510049  
 **Nome account:** MICROSOFT  
 
 

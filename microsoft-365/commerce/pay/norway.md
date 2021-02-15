@@ -22,14 +22,14 @@ ms.locfileid: "48648924"
 ---
 # <a name="payment-information-for-norway"></a>Informazioni di pagamento per la Norvegia
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Si prega di pagare solo in NOK e i numeri delle fatture di riferimento sulla sua rimessa di pagamento.
+Pagare solo in NOK e fare riferimento ai numeri di fattura per la rimessa di pagamento.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** Citibank, Londra  
+**Bank:** Citibank, Londra  
 **Codice SWIFT/BIC:** CITIGB2L  
-**Codice IBAN:** GB94CITI18500812207621  
-**Numero account:** 12207621  
+**IBAN:** GB94CITI18500812207621  
+**Numero di conto:** 12207621  
 **Nome account:** MICROSOFT  

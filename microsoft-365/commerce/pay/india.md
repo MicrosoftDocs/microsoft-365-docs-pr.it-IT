@@ -22,6 +22,6 @@ ms.locfileid: "48647196"
 ---
 # <a name="payment-information-for-india"></a>Informazioni di pagamento per l'India
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Seguire le istruzioni per il pagamento sulla fattura e sui numeri di fattura di riferimento sulla sua rimessa di pagamento.  
+Seguire le istruzioni di pagamento sulla fattura e fare riferimento ai numeri di fattura nella rimessa di pagamento.  

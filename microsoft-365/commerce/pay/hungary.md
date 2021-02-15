@@ -22,15 +22,15 @@ ms.locfileid: "48647220"
 ---
 # <a name="payment-information-for-hungary"></a>Informazioni di pagamento per l'Ungheria
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Si prega di pagare solo euro e fare riferimento al numero di fattura (s) sulla vostra rimessa di pagamento.
+Pagare solo in EUR e fare riferimento al numero o ai numeri di fattura della rimessa di pagamento.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** Citibank, Londra  
+**Bank:** Citibank, Londra  
 **Codice SWIFT/BIC:** CITIGB2L  
-**Codice IBAN:** GB31CITI18500812207591  
-**Codice di ordinamento:** 185008  
-**Numero account:** 12207591    
+**IBAN:** GB31CITI18500812207591  
+**Sort Code:** 185008  
+**Numero di conto:** 12207591    
 **Nome account:** MICROSOFT

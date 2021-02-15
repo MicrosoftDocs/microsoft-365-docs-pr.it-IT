@@ -22,13 +22,13 @@ ms.locfileid: "48648336"
 ---
 # <a name="payment-information-for-thailand"></a>Informazioni di pagamento per la Thailandia
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Si prega di pagare solo in USD e fare riferimento ai numeri di fattura sulla rimessa in fattura.
+Pagare solo in USD e fare riferimento ai numeri di fattura nella fattura rimessa.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** Citibank, Singapore  
-**codice SWIFT:** CITISGSG  
-**Numero account:** 0-817543-138  
+**Bank:** Citibank, Singapore  
+**CODICE SWIFT:** CITISGSG  
+**Numero di conto:** 0-817543-138  
 **Nome account:** MICROSOFT REGIONAL SALES CORP  

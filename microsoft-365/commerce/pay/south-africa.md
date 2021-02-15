@@ -22,14 +22,14 @@ ms.locfileid: "48648540"
 ---
 # <a name="payment-information-for-south-africa"></a>Informazioni di pagamento per il Sudafrica
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Si prega di pagare solo in ZAR e i numeri delle fatture di riferimento sulla sua rimessa di pagamento.
+Pagare solo in ZAR e fare riferimento ai numeri di fattura per la rimessa di pagamento.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** Citibank  
-**Branch:** Johannesburg  
+**Bank:** Citibank  
+**Ramo:** Johannesburg  
 **Codice SWIFT:** CITIZAJ  
 **Numero account:** 0201419034  
-**Nome account:** Pagamenti Microsoft  
+**Nome account:** Microsoft Payments  

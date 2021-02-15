@@ -22,13 +22,13 @@ ms.locfileid: "48647448"
 ---
 # <a name="payment-information-for-guam"></a>Informazioni di pagamento per Guam
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Si prega di pagare solo in USD e fare riferimento ai numeri di fattura sulla rimessa in fattura.
+Pagare solo in USD e fare riferimento ai numeri di fattura nella fattura rimessa.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** Bank of America  
+**Bank:** Bank of America  
 **Branch** Dallas  
 **Codice SWIFT:** BOFAUS3N  
 **Numero account:** 4426587954  

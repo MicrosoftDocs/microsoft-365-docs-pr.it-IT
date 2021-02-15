@@ -1,5 +1,5 @@
 ---
-title: Informazioni di pagamento per Montenegro
+title: Informazioni di pagamento per il Montenegro
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,16 +20,16 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48649116"
 ---
-# <a name="payment-information-for-montenegro"></a>Informazioni di pagamento per Montenegro
+# <a name="payment-information-for-montenegro"></a>Informazioni di pagamento per il Montenegro
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md). 
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md). 
 
-Si prega di pagare solo in USD e i numeri delle fatture di riferimento sulla sua rimessa di pagamento.
+Pagare solo in USD e fare riferimento ai numeri di fattura per la rimessa di pagamento.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** Citibank, Londra  
+**Bank:** Citibank, Londra  
 **Codice SWIFT:** CITIGB2L  
-**Codice IBAN:** GB95CITI18500812510049  
-**Numero account:** 12510049  
+**IBAN:** GB95CITI18500812510049  
+**Numero di conto:** 12510049  
 **Nome account:** MICROSOFT  

@@ -1,5 +1,5 @@
 ---
-title: Informazioni di pagamento per Vietnam
+title: Informazioni di pagamento per il Vietnam
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,15 +20,15 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48648036"
 ---
-# <a name="payment-information-for-vietnam"></a>Informazioni di pagamento per Vietnam
+# <a name="payment-information-for-vietnam"></a>Informazioni di pagamento per il Vietnam
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Si prega di pagare solo in USD e fare riferimento ai numeri di fattura sulla rimessa in fattura.
+Pagare solo in USD e fare riferimento ai numeri di fattura nella fattura rimessa.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** Citibank, Singapore  
-**codice SWIFT:** CITISGSG  
-**Numero account:** 0-817543-138  
+**Bank:** Citibank, Singapore  
+**CODICE SWIFT:** CITISGSG  
+**Numero di conto:** 0-817543-138  
 **Nome account:** MICROSOFT REGIONAL SALES CORP  

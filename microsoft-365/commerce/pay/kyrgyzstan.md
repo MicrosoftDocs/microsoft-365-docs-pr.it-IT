@@ -22,13 +22,13 @@ ms.locfileid: "48649522"
 ---
 # <a name="payment-information-for-kyrgyzstan"></a>Informazioni di pagamento per il Kirghizistan
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md). 
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md). 
 
-Si prega di pagare solo in USD e i numeri delle fatture di riferimento sulla sua rimessa di pagamento.
+Pagare solo in USD e fare riferimento ai numeri di fattura per la rimessa di pagamento.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** Citibank, Londra  
+**Bank:** Citibank, Londra  
 **Codice SWIFT:** CITIGB2L  
 **IBAN:** 12510049,  
 **Numero account:** GB95CITI18500812510049  

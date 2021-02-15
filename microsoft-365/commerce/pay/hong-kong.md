@@ -22,15 +22,15 @@ ms.locfileid: "48647256"
 ---
 # <a name="payment-information-for-hong-kong"></a>Informazioni di pagamento per Hong Kong
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Seguire le istruzioni per il pagamento sulla fattura e sui numeri di fattura di riferimento sulla sua rimessa di pagamento.
+Seguire le istruzioni di pagamento riportate nella fattura e fare riferimento ai numeri di fattura sulla rimessa di pagamento.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** HSBC, Hong Kong  
+**Bank:** HSBC, Hong Kong  
 **Codice bancario:** 004  
 **Codice di succursale:** 848  
 **Codice SWIFT:** HSBCHKHH  
 **Numero account:** 848342259001    
-**Nome account:** Fattura Microsoft Payments PTE Ltd-Payco
+**Nome account:** Microsoft Payments Pte Ltd-Payco Invoice

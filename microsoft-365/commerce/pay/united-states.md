@@ -22,21 +22,21 @@ ms.locfileid: "48648096"
 ---
 # <a name="payment-information-for-united-states"></a>Informazioni di pagamento per gli Stati Uniti
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Si prega di pagare solo in USD e fare riferimento al numero di fattura (s) sulla vostra rimessa di pagamento.
+Pagare solo in USD e fare riferimento al numero o ai numeri di fattura per la rimessa di pagamento.
 
 ## <a name="check"></a>Assegno
 
-**Beneficiario:** Microsoft  
-**Indirizzo di posta elettronica:**   
-Posta standard: PO Box 842103, Dallas, TX 75284-2103  
-Express mail: archivio protetto 842103, 1950 N. Stemmons Frwy, Ste. 5010, Dallas, TX 75207-2103
+**Payee:** Microsoft  
+**Indirizzo postale:**   
+Posta standard: CASELLA PO 842103, Dallas, TX 75284-2103  
+Express Mail: Lockbox 842103, 1950 N. Stemmons Frwy, Ste. 5010, Dallas, TX 75207-2103
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** Bank of America  
+**Bank:** Bank of America  
 **Codice SWIFT:** BOFAUS3N  
-**ABA/numero di instradamento:** 111 000 012  
+**ABA/Routing Number:** 111 000 012  
 **Numero account:** 4426587954  
 **Nome account:** Microsoft  
