@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per la Cina (PRC)
+title: Informazioni di supporto per la Cina (RPC)
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,9 +20,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48643416"
 ---
-# <a name="contact-support-for-china-prc"></a>Contattare il supporto per la Cina (PRC)
+# <a name="contact-support-for-china-prc"></a>Contattare il supporto per la Cina (RPC)
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 800 988 0365
@@ -30,32 +30,32 @@ ms.locfileid: "48643416"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Cinese mandarino: Mon-Fri 9.00-18.00
+Cinese (cinese mandarino): Mon-Fri dalle 9.00 alle 18.00
 
-Inglese: Mon-Fri 9.00-18.00
+Inglese: Mon-Fri dalle 9.00 alle 18.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Cinese mandarino: Mon-Fri 9.00-18.00
+Cinese (cinese mandarino): Mon-Fri dalle 9.00 alle 18.00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
 Numero di telefono alternativo: 400 920 0365 (mobile)
 
 ## <a name="follow-us-on-wechat"></a>Seguici su WeChat
-![WeChat QR code](../../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
+![Codice QR weChat](../../media/4d8fe09c-1a11-4cd8-be4c-75add8dccddd.jpg)
 
-## <a name="contact-support-for-office-365-operated-by-21vianet-only"></a>Contattare il supporto tecnico di Office 365 gestito solo da 21Vianet
+## <a name="contact-support-for-office-365-operated-by-21vianet-only"></a>Contattare il supporto per Office 365 gestito solo da 21Vianet
 ## <a name="phone-number"></a>Numero di telefono
-+ 86 4000 890 365
++86 4000 890 365
 
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Cinese e inglese: Mon-Fri 9.00-18.00
+Cinese e inglese: Mon-Fri dalle 9.00 alle 18.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Supporto telefonico cinese e inglese: Mon-Fri 9 AM-9 PM
+Supporto telefonico cinese e inglese: Mon-Fri dalle 9.00 alle 21.00
 
-Supporto per il cinese e l'inglese online (tramite l'interfaccia di amministrazione): 24 ore al giorno, 7 giorni alla settimana
+Supporto online cinese e inglese (tramite l'interfaccia di amministrazione): 24 ore al giorno, 7 giorni alla settimana

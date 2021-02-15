@@ -1,5 +1,5 @@
 ---
-title: Informazioni di supporto per l'autorità palestinese
+title: Informazioni di supporto per l'Autorità palestinese
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,12 +20,12 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48640416"
 ---
-# <a name="contact-support-for-palestinian-authority"></a>Contattare il supporto per l'autorità palestinese
+# <a name="contact-support-for-palestinian-authority"></a>Contattare il supporto per l'Autorità palestinese
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
-+ 962 6 5503451
++962 6 5503451
 
 Selezionare l'opzione 1
 
@@ -36,14 +36,14 @@ Immettere il codice 7702
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Arabo: Sun-Thu 10.00-18.00
+Arabo: Sun-Thu dalle 10.00 alle 18.00
 
-Inglese: Mon-Fri 10.00-18.00
+Inglese: Mon-Fri dalle 10.00 alle 18.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Arabo: Sun-Thu 10.00-18.00
+Arabo: Sun-Thu dalle 10.00 alle 18.00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Tariffe di chiamata internazionali applicate
+Si applicano addebiti per chiamate internazionali

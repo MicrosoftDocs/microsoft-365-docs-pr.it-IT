@@ -22,7 +22,7 @@ ms.locfileid: "48641652"
 ---
 # <a name="contact-support-for-latvia"></a>Contattare il supporto per la Lettonia
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 8000 42 33
@@ -30,7 +30,7 @@ ms.locfileid: "48641652"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Inglese: Mon-Fri 9.00-17.00
+Inglese: lun-ven 9:00-17:00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 

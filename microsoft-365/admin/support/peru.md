@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per il Perù
+title: Informazioni di supporto per il Perù
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -22,7 +22,7 @@ ms.locfileid: "48640344"
 ---
 # <a name="contact-support-for-peru"></a>Contattare il supporto per il Perù
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 0800 77 464
@@ -30,7 +30,7 @@ ms.locfileid: "48640344"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Spagnolo: Mon-Fri 9.00-17.00
+Spagnolo: Mon-Fri dalle 9.00 alle 17.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 

@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per la Mauritania
+title: Informazioni di supporto per la Mauritania
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,12 +20,12 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48641100"
 ---
-# <a name="contact-support-for-mauritania"></a>Contattare il supporto per la Mauritania
+# <a name="contact-support-for-mauritania"></a>Contattare il supporto tecnico per La Mauritania
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
-+ 974 44 119418
++974 44 119418
 
 Selezionare l'opzione 2
 
@@ -36,14 +36,14 @@ Immettere il codice 7700
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Arabo: Sun-Thu 8.00-16.00
+Arabo: Sun-Thu dalle 8.00 alle 16.00
 
-Inglese: Mon-Fri 8.00-16.00
+Inglese: Mon-Fri dalle 8.00 alle 16.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Arabo: Sun-Thu 8.00-16.00
+Arabo: Sun-Thu dalle 8.00 alle 16.00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Tariffe di chiamata internazionali applicate
+Si applicano addebiti per chiamate internazionali

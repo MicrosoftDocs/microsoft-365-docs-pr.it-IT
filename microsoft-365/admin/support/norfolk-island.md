@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per l'isola Norfolk
+title: Informazioni sul supporto per l'isola di Norfolk
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,20 +20,20 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48640584"
 ---
-# <a name="contact-support-for-norfolk-island"></a>Contattare il supporto per l'isola Norfolk
+# <a name="contact-support-for-norfolk-island"></a>Contattare il supporto tecnico per l'isola di Norfolk
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
-+ 1 312 843 5148
++1 312 843 5148
 
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Italiano: Mon-Fri 12 PM-8 PM
+Inglese: Mon-Fri 12.00-20.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Tariffe di chiamata internazionali applicate
+Si applicano addebiti per chiamate internazionali

@@ -1,5 +1,5 @@
 ---
-title: Informazioni di supporto per la Costa d'Avorio
+title: Informazioni di supporto per la Costa d'Ivoire
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,9 +20,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48643188"
 ---
-# <a name="contact-support-for-cte-divoire"></a>Contattare il supporto per la Costa d'Avorio
+# <a name="contact-support-for-cte-divoire"></a>Contattare il supporto tecnico per la Costa d'Ivoire
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 020 24 24 90
@@ -34,14 +34,14 @@ Immettere il codice 7703
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Francese: Mon-Fri 8.00-16.00
+Francese: Mon-Fri dalle 8.00 alle 16.00
 
-Inglese: Mon-Fri 8.00-16.00
+Inglese: Mon-Fri dalle 8.00 alle 16.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Francese: Mon-Fri 7.00-20.00
+Francese: Mon-Fri dalle 7:00 alle 20:00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Applicazione delle tariffe di chiamata locali
+Costo in base alle tariffe telefoniche locali

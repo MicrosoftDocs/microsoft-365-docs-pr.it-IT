@@ -1,5 +1,5 @@
 ---
-title: Informazioni di supporto per le Isole Heard e McDonald
+title: Informazioni sul supporto per Heard Island e McDonald Islands
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -22,18 +22,18 @@ ms.locfileid: "48642257"
 ---
 # <a name="contact-support-for-heard-island-and-mcdonald-islands"></a>Contattare il supporto per Heard Island e McDonald Islands
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
-+ 1 312 843 5148
++1 312 843 5148
 
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Inglese: Mon-Fri 9.00-17.00
+Inglese: lun-ven 9:00-17:00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Tariffe di chiamata internazionali applicate
+Si applicano addebiti per chiamate internazionali

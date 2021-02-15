@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per il Camerun
+title: Informazioni di supporto per camerun
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,12 +20,12 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48643596"
 ---
-# <a name="contact-support-for-cameroon"></a>Contattare il supporto per il Camerun
+# <a name="contact-support-for-cameroon"></a>Contattare il supporto per camerun
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
-+ 225 20 24 24 90
++225 20 24 24 90
 
 Selezionare l'opzione 9
 
@@ -34,14 +34,14 @@ Immettere il codice 7703
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Francese: Mon-Fri 8.00-16.00
+Francese: Mon-Fri dalle 8.00 alle 16.00
 
-Inglese: Mon-Fri 8.00-16.00
+Inglese: Mon-Fri dalle 8.00 alle 16.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Francese: Mon-Fri 8 AM-9 PM
+Francese: Mon-Fri dalle 8.00 alle 21.00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Tariffe di chiamata internazionali applicate
+Si applicano addebiti per chiamate internazionali

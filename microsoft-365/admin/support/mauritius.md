@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per Mauritius
+title: Informazioni di supporto per Mauritius
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,9 +20,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48641088"
 ---
-# <a name="contact-support-for-mauritius"></a>Contattare il supporto per Maurizio
+# <a name="contact-support-for-mauritius"></a>Contattare il supporto tecnico per Mauritius
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 802 044 0086
@@ -30,12 +30,12 @@ ms.locfileid: "48641088"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Francese: Mon-Fri 11:00-19.00
+Francese: Mon-Fri dalle 11.00 alle 19.00
 
-Inglese: Mon-Fri 11 AM-7 PM
+Inglese: Mon-Fri 11.00-19.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Francese: Mon-Fri 11.00-24.00
+Francese: Mon-Fri 11.00-mezzanotte
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana

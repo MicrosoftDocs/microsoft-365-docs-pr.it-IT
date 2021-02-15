@@ -22,22 +22,22 @@ ms.locfileid: "48640056"
 ---
 # <a name="contact-support-for-saint-martin"></a>Contattare il supporto tecnico per Saint Martin
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
-+ 1 312 843 5147
++1 312 843 5147
 
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Francese: Mon-Fri 4 AM-Noon
+Francese: Mon-Fri 4.00-12.00
 
-Inglese: Mon-Fri 4 AM-Noon
+Inglese: Mon-Fri 4.00-12.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Francese: Mon-Fri dalle 15.00 alle 16.00
+Francese: Mon-Fri dalle 3.00 alle 16.00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Tariffe di chiamata internazionali applicate
+Si applicano addebiti per chiamate internazionali

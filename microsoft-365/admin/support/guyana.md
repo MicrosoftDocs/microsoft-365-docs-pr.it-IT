@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per la Guyana
+title: Informazioni di supporto per Guyana
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,20 +20,20 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48642264"
 ---
-# <a name="contact-support-for-guyana"></a>Contattare il supporto per la Guyana
+# <a name="contact-support-for-guyana"></a>Contattare il supporto per Guyana
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
-+ 1 312 843 5145
++1 312 843 5145
 
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Inglese: Mon-Fri 9.00-17.00
+Inglese: lun-ven 9:00-17:00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Tariffe di chiamata internazionali applicate
+Si applicano addebiti per chiamate internazionali

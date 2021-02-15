@@ -20,24 +20,24 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48639888"
 ---
-# <a name="contact-support-for-san-marino"></a>Contattare il supporto tecnico per San Marino
+# <a name="contact-support-for-san-marino"></a>Contattare il supporto per San Marino
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
-+ 1 312 843 5154
++1 312 843 5154
 
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Italiano: Mon-Fri 10.00-18.00
+Italiano: Mon-Fri dalle 10.00 alle 18.00
 
-Inglese: Mon-Fri 10.00-18.00
+Inglese: Mon-Fri dalle 10.00 alle 18.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Italiano: Mon-Fri 9.00-22.00
+Italiano: Mon-Fri dalle 9.00 alle 22.00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Tariffe di chiamata internazionali applicate
+Si applicano addebiti per chiamate internazionali

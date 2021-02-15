@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per la Russia
+title: Informazioni di supporto per la Russia
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -22,7 +22,7 @@ ms.locfileid: "48640128"
 ---
 # <a name="contact-support-for-russia"></a>Contattare il supporto per la Russia
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 8 10 800 2548 1044
@@ -30,16 +30,16 @@ ms.locfileid: "48640128"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Russo: Mon-Fri 10.00-19.00 Mosca
+Russo: Mon-Fri dalle 10.00 alle 19:00 di Mosca
 
-Inglese: Mon-Fri 9.00-17.00 Londra
+Inglese: Mon-Fri dalle 9:00 alle 17:00 di Londra
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Russo: Mon-Fri 7 AM-8 PM Mosca
+Russo: Mon-Fri dalle 7:00 alle 20:00 di Mosca
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
 Numero di telefono alternativo: 499 922 86 23
 
-Applicazione delle tariffe di chiamata locali
+Costo in base alle tariffe telefoniche locali

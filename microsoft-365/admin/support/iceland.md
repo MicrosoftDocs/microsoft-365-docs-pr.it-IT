@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per l'Islanda
+title: Informazioni di supporto per l'Islanda
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,9 +20,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48642024"
 ---
-# <a name="contact-support-for-iceland"></a>Contattare il supporto per l'Islanda
+# <a name="contact-support-for-iceland"></a>Contattare il supporto tecnico per l'Islanda
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 800 9609
@@ -30,7 +30,7 @@ ms.locfileid: "48642024"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Inglese: Mon-Fri 8.00-16.00
+Inglese: Mon-Fri dalle 8.00 alle 16.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 

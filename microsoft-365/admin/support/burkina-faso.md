@@ -20,24 +20,24 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48643644"
 ---
-# <a name="contact-support-for-burkina-faso"></a>Contattare il supporto per Burkina Faso
+# <a name="contact-support-for-burkina-faso"></a>Contattare il supporto per il Burkina Faso
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
-+ 1 312 843 5147
++1 312 843 5147
 
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Francese: Mon-Fri 8.00-16.00
+Francese: Mon-Fri dalle 8.00 alle 16.00
 
-Inglese: Mon-Fri 8.00-16.00
+Inglese: Mon-Fri dalle 8.00 alle 16.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Francese: Mon-Fri 7.00-20.00
+Francese: Mon-Fri dalle 7:00 alle 20:00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Tariffe di chiamata internazionali applicate
+Si applicano addebiti per chiamate internazionali

@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per le Filippine
+title: Informazioni di supporto per le Filippine
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -22,17 +22,17 @@ ms.locfileid: "48640332"
 ---
 # <a name="contact-support-for-philippines"></a>Contattare il supporto per le Filippine
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 1800 1441 0625 (PLDT)
 
-1800 8908 6422 (globo)
+1800 8908 6422 (Globe)
 
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Inglese: Mon-Fri 9.00-17.00
+Inglese: lun-ven 9:00-17:00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 

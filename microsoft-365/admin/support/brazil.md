@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per il Brasile
+title: Informazioni di supporto per il Brasile
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -22,7 +22,7 @@ ms.locfileid: "48643680"
 ---
 # <a name="contact-support-for-brazil"></a>Contattare il supporto per il Brasile
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 0800 762 1146
@@ -30,9 +30,9 @@ ms.locfileid: "48643680"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Portoghese: Mon-Fri 9.00-17.00
+Portoghese: Mon-Fri dalle 9.00 alle 17.00
 
-Inglese: Mon-Fri 9.00-17.00
+Inglese: lun-ven 9:00-17:00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
@@ -44,4 +44,4 @@ Numero di telefono alternativo:
 
 0800 047 4958 (numero verde locale)
 
-11 4700 1999 (si applicano le tariffe di chiamata locali)
+11 4700 1999 (si applicano addebiti per chiamate locali)

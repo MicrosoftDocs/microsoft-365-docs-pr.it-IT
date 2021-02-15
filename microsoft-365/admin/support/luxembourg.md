@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per il Lussemburgo
+title: Informazioni di supporto per Lussemburgo
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -22,7 +22,7 @@ ms.locfileid: "48641496"
 ---
 # <a name="contact-support-for-luxembourg"></a>Contattare il supporto tecnico per il Lussemburgo
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 800 21094
@@ -30,20 +30,20 @@ ms.locfileid: "48641496"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Francese: Mon-Fri 9.00-17.00
+Francese: Mon-Fri dalle 9.00 alle 17.00
 
-Tedesco: Mon-Fri 9.00-17.00
+Tedesco: Mon-Fri dalle 9.00 alle 17.00
 
-Inglese: Mon-Fri 9.00-17.00
+Inglese: lun-ven 9:00-17:00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Francese: Mon-Fri 8 AM-9 PM
+Francese: Mon-Fri dalle 8.00 alle 21.00
 
-Tedesco: Mon-Fri 8 AM-9 PM
+Tedesco: Mon-Fri dalle 8.00 alle 21.00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
 Numero di telefono alternativo: 24 87 15 10
 
-Applicazione delle tariffe di chiamata locali
+Costo in base alle tariffe telefoniche locali

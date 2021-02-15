@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per il Senegal
+title: Informazioni di supporto per il Senegal
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -22,7 +22,7 @@ ms.locfileid: "48639852"
 ---
 # <a name="contact-support-for-senegal"></a>Contattare il supporto per il Senegal
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 800 103 072
@@ -34,12 +34,12 @@ Dopo la composizione, immettere
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Francese: Mon-Fri 8.00-16.00
+Francese: Mon-Fri dalle 8.00 alle 16.00
 
-Inglese: Mon-Fri 8.00-16.00
+Inglese: Mon-Fri dalle 8.00 alle 16.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Francese: Mon-Fri 7.00-20.00
+Francese: Mon-Fri dalle 7:00 alle 20:00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana

@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per il Marocco
+title: Informazioni di supporto per il Marocco
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -22,7 +22,7 @@ ms.locfileid: "48640860"
 ---
 # <a name="contact-support-for-morocco"></a>Contattare il supporto per il Marocco
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 0801 000 809
@@ -34,18 +34,18 @@ Immettere il codice 7700
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Arabo: Sun-Thu 8.00-16.00
+Arabo: Sun-Thu dalle 8.00 alle 16.00
 
-Francese: Mon-Fri 8.00-16.00
+Francese: Mon-Fri dalle 8.00 alle 16.00
 
-Inglese: Mon-Fri 8.00-16.00
+Inglese: Mon-Fri dalle 8.00 alle 16.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Arabo: Sun-Thu 8.00-16.00
+Arabo: Sun-Thu dalle 8.00 alle 16.00
 
-Francese: Mon-Fri 7.00-20.00
+Francese: Mon-Fri dalle 7:00 alle 20:00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Applicazione delle tariffe di chiamata locali
+Costo in base alle tariffe telefoniche locali

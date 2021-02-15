@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per Indonesia
+title: Informazioni di supporto per l'Indonesia
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -22,7 +22,7 @@ ms.locfileid: "48641988"
 ---
 # <a name="contact-support-for-indonesia"></a>Contattare il supporto per l'Indonesia
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 007 803 011 0882 (Telkom)
@@ -32,12 +32,12 @@ ms.locfileid: "48641988"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Bahasa Indonesia: Mon-Fri 8.00-17.00
+Bahasa Indonesia: Mon-Fri dalle 8.00 alle 17.00
 
-Inglese: Mon-Fri 9.00-18.00
+Inglese: Mon-Fri dalle 9.00 alle 18.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Bahasa Indonesia: Mon-Fri 8.00-17.00
+Bahasa Indonesia: Mon-Fri dalle 8.00 alle 17.00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana

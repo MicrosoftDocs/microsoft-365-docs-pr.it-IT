@@ -22,7 +22,7 @@ ms.locfileid: "48640296"
 ---
 # <a name="contact-support-for-portugal"></a>Contattare il supporto per il Portogallo
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 800 208 745
@@ -30,14 +30,14 @@ ms.locfileid: "48640296"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Inglese: Mon-Fri 9.00-17.00
+Inglese: lun-ven 9:00-17:00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Portoghese: Mon-Fri 8.00-18.00
+Portoghese: Mon-Fri dalle 8.00 alle 18.00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
 Numero di telefono alternativo: 21 366 5030
 
-Applicazione delle tariffe di chiamata locali
+Costo in base alle tariffe telefoniche locali

@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per Israele
+title: Informazioni di supporto per Israele
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -22,7 +22,7 @@ ms.locfileid: "48641952"
 ---
 # <a name="contact-support-for-israel"></a>Contattare il supporto per Israele
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 1 809 344 179
@@ -30,12 +30,12 @@ ms.locfileid: "48641952"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Ebraico: Sun-Thu 9.00-18.00
+Ebraico: Sun-Thu dalle 9.00 alle 18.00
 
-Inglese: Mon-Fri 9.00-18.00
+Inglese: Mon-Fri dalle 9.00 alle 18.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Ebraico: Sun-Thu 9.00-18.00
+Ebraico: Sun-Thu dalle 9.00 alle 18.00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana

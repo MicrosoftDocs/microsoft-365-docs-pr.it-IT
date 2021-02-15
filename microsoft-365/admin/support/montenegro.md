@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per Montenegro
+title: Informazioni di supporto per il Montenegro
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,9 +20,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48641004"
 ---
-# <a name="contact-support-for-montenegro"></a>Contattare il supporto per Montenegro
+# <a name="contact-support-for-montenegro"></a>Contattare il supporto tecnico per il Montenegro
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 080 081 110
@@ -34,7 +34,7 @@ Immettere il codice 7708
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Inglese: Mon-Fri 9.00-17.00
+Inglese: lun-ven 9:00-17:00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 

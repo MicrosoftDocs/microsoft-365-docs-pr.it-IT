@@ -22,23 +22,23 @@ ms.locfileid: "48641904"
 ---
 # <a name="contact-support-for-japan"></a>Contattare il supporto per il Giappone
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 0120 996 680 (Office 365 Enterprise)
 
-0120 628 860 (altri piani)
+0120 628 860 (Altri piani)
 
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
 Giapponese: Mon-Fri 9:00-17:00
 
-(Chiuso nei fine settimana e nei giorni festivi)
+(Chiuso nei fine settimana e nelle festività pubbliche)
 
 Inglese: Mon-Fri 9:00-17:00
 
-(Chiuso nei fine settimana e nei giorni festivi)
+(Chiuso nei fine settimana e nelle festività pubbliche)
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
@@ -50,12 +50,12 @@ Inglese: 24 ore al giorno, 7 giorni alla settimana
 
 **Altri piani:**
 
-Il supporto tecnico telefonico è disponibile a partire da 9:00-17:30 nei giorni feriali. Per problemi di gravità elevata, il supporto tecnico è disponibile 24 ore al giorno, 7 giorni alla settimana.
+Il supporto tecnico telefonico è disponibile dalle 9:00 alle 17:30 nei giorni feriali. Per problemi di gravità elevata, il supporto tecnico è disponibile 24 ore al giorno, 7 giorni alla settimana.
 
 Numero di telefono alternativo:
 
-Applicazione delle tariffe di chiamata locali
+Costo in base alle tariffe telefoniche locali
 
 03 4332 5493 (Office 365 Enterprise)
 
-03 4332 6257 (altri piani)
+03 4332 6257 (Altri piani)

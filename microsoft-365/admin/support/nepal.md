@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per il Nepal
+title: Informazioni di supporto per il Nepal
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -22,7 +22,7 @@ ms.locfileid: "48640800"
 ---
 # <a name="contact-support-for-nepal"></a>Contattare il supporto per il Nepal
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 Supporto telefonico non disponibile; solo supporto online.

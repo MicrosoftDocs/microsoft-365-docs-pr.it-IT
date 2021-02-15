@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per Puerto Rico
+title: Informazioni di supporto per Portorico
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,9 +20,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48640284"
 ---
-# <a name="contact-support-for-puerto-rico"></a>Contattare il supporto tecnico per Puerto Rico
+# <a name="contact-support-for-puerto-rico"></a>Contattare il supporto per Portorico
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 1 800 865 9408
@@ -30,9 +30,9 @@ ms.locfileid: "48640284"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Spagnolo: Mon-Fri 9.00-17.00
+Spagnolo: Mon-Fri dalle 9.00 alle 17.00
 
-Inglese: Mon-Fri 9.00-17.00
+Inglese: lun-ven 9:00-17:00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 

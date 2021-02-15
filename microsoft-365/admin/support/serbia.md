@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per la Serbia
+title: Informazioni di supporto per la Serbia
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,9 +20,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48639840"
 ---
-# <a name="contact-support-for-serbia"></a>Contattare il supporto per la Serbia
+# <a name="contact-support-for-serbia"></a>Contattare il supporto tecnico per la Serbia
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 0800 190 095
@@ -30,7 +30,7 @@ ms.locfileid: "48639840"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Inglese: Mon-Fri 9.00-17.00
+Inglese: lun-ven 9:00-17:00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
