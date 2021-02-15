@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Informazioni su come creare un classificatore
-ms.openlocfilehash: 9f2cfe65140aa3f8d4c1c4ff5b8f2e3b9e8591f6
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: bff23807fce18bf4a585dbb1ec47c1502ab686f6
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49975910"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242689"
 ---
 # <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>Creare un classificatore in Microsoft SharePoint Syntex
 
@@ -148,3 +148,5 @@ Se è stata rilevata una corrispondenza nei file di esempio etichettati, è poss
 [Tipi di spiegazione](explanation-types-overview.md)
 
 [Applicare un modello](apply-a-model.md) 
+
+[Modalità di accessibilità di SharePoint Syntex](accessibility-mode.md)

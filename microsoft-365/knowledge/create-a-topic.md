@@ -14,12 +14,12 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 35d4615057deee81285ba950a157f28160b6eefa
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 2b543dbc8132f261814aec45e713874971b9b5d1
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107257"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242891"
 ---
 # <a name="create-a-new-topic"></a>Creare un nuovo argomento 
 
@@ -38,7 +38,19 @@ Per creare un nuovo argomento, è necessario:
 > [!Note] 
 > Gli utenti che dispongono dell'autorizzazione per gestire gli argomenti nel Centro argomenti (responsabili della knowledge base) dispongono già delle autorizzazioni per creare e modificare gli argomenti.
 
-## <a name="to-create-a-new-topic"></a>Per creare un nuovo argomento:
+## <a name="to-create-a-topic"></a>Per creare un argomento
+
+È possibile creare un nuovo argomento da due posizioni:
+
+- Home page del Centro argomenti:  qualsiasi utente con licenza con l'autorizzazione Chi può creare o modificare argomenti (collaboratori) può creare un nuovo argomento dal Centro argomenti selezionando il <b>menu</b> Nuovo e selezionando La pagina <b>Argomento.</b></br> 
+
+    ![Nuovo argomento dal Centro argomenti](../media/knowledge-management/new-topic.png) </br> 
+
+- Pagina Gestisci argomenti: qualsiasi  utente con licenza che dispone dell'autorizzazione Chi può gestire gli argomenti (responsabili della knowledge base) può creare un nuovo argomento dalla pagina Gestisci argomenti nel Centro argomenti selezionando La pagina Nuovo <b>argomento.</b></br> 
+
+    ![Nuovo argomento dalla gestione degli argomenti](../media/knowledge-management/new-topic-topic-center.png) </br> 
+
+### <a name="to-create-a-new-topic"></a>Per creare un nuovo argomento:
 
 1. Nella sezione **Assegnare un nome all'argomento** digitare il nome del nuovo argomento.
 

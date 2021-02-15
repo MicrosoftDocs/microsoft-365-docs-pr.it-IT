@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: "Riepilogo: informazioni aggiuntive sull'esperienza del cliente durante il passaggio da Microsoft Cloud Germania (Microsoft Cloud Deutschland) ai servizi di Office 365 nella nuova area data center tedesca."
-ms.openlocfilehash: 3f9bc40d7551dfcdb65abcf8b150f98b8242d7d2
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 717978d69c9f87855967c474f29216f6db8d3ce9
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921691"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242855"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-advanced"></a>Azioni e impatti delle fasi di migrazione per la migrazione da Microsoft Cloud Deutschland (avanzato) 
 
@@ -50,7 +50,7 @@ Se si usa **Set-UserPhoto:**
 
 | Passaggi | Descrizione | Si applica a | Impatto |
 |:-------|:-----|:-------|:-------|
-| La nuova area germania viene aggiunta alla configurazione di un'organizzazione esistente e le cassette postali vengono spostate nei servizi di Office 365. | La configurazione di Exchange Online aggiunge la nuova area tedesca go-local all'organizzazione di transizione. Questa area dei servizi di Office 365 è impostata come predefinita, che consente al servizio di bilanciamento del carico interno di ridistribuire le cassette postali nell'area predefinita appropriata nei servizi di Office 365. In questa transizione, gli utenti su entrambi i lati (germania o servizi di Office 365) sono nella stessa organizzazione e possono usare uno degli endpoint URL. |  Exchange Online | Se è stata eseguita la migrazione di una cassetta postale utente ma non è stata eseguita la migrazione di una cassetta postale dell'amministratore o viceversa, gli amministratori non potranno eseguire **Set-UserPhoto**, un cmdlet di PowerShell. In questo caso, un amministratore deve passare una stringa aggiuntiva durante la configurazione della connessione `ConnectionUri` utilizzando la sintassi seguente: <br><br> `https://outlook.office.de/PowerShell-LiveID?email=<user_email>` <br><br> dove è il segnaposto per l'ID di posta elettronica dell'utente la cui foto deve `<user_email>` essere modificata tramite **Set-UserPhoto.** |
+| La nuova area germania viene aggiunta alla configurazione di un'organizzazione esistente e le cassette postali vengono spostate nei servizi di Office 365. | La configurazione di Exchange Online aggiunge la nuova area tedesca go-local all'organizzazione di transizione. Questa area dei servizi di Office 365 è impostata come predefinita, che consente al servizio di bilanciamento del carico interno di ridistribuire le cassette postali nell'area predefinita appropriata nei servizi di Office 365. In questa transizione, gli utenti su entrambi i lati (germania o servizi di Office 365) sono nella stessa organizzazione e possono usare uno degli endpoint URL. |  Exchange Online | Se è stata eseguita la migrazione di una cassetta postale utente ma non è stata eseguita la migrazione di una cassetta postale dell'amministratore o viceversa, gli amministratori non potranno eseguire **Set-UserPhoto**, un cmdlet di PowerShell. In questo caso, un amministratore deve passare una stringa aggiuntiva durante la configurazione della connessione `ConnectionUri` utilizzando la sintassi seguente: <br><br> `https://outlook.office.de/PowerShell-LiveID?email=<user_email>` <br><br> dove è il segnaposto per l'ID e-mail dell'utente la cui foto deve `<user_email>` essere modificata tramite **Set-UserPhoto.** |
 |||||
 
 Se si utilizza una distribuzione ibrida locale:
@@ -64,7 +64,7 @@ Se si utilizza una distribuzione ibrida locale:
 
 | Passaggi | Descrizione | Si applica a | Impatto |
 |:-------|:-----|:-------|:-------|
-| Risorse di Microsoft Dynamics | I clienti con Microsoft Dynamics saranno impegnati da Engineering o FastTrack per la transizione di Dynamics all'istanza dei servizi di Office 365.* | Clienti di Microsoft Dynamics 365 | - Dopo la migrazione, l'amministratore convalida l'organizzazione. <br><br> - L'amministratore modifica i flussi di lavoro, se necessario. <br><br> - L'amministratore cancella la modalità AdminOnly in base alle esigenze. <br><br> - L'amministratore modifica il tipo di organizzazione _da Sandbox,_ in base alle esigenze <br><br> - Notificare agli utenti finali il nuovo URL per accedere all'istanza (organizzazione). <br><br> - Aggiornare tutte le connessioni in ingresso al nuovo URL dell'endpoint. <br><br> - Il servizio Dynamics non sarà disponibile per gli utenti durante la transizione. <br><br> - Gli utenti devono convalidare l'integrità e le funzionalità dell'organizzazione dopo la migrazione di ogni organizzazione.  |
+| Risorse di Microsoft Dynamics | I clienti con Microsoft Dynamics saranno impegnati da Progettazione o FastTrack per la transizione di Dynamics all'istanza dei servizi di Office 365.* | Clienti di Microsoft Dynamics 365 | - Dopo la migrazione, l'amministratore convalida l'organizzazione. <br><br> - L'amministratore modifica i flussi di lavoro, se necessario. <br><br> - L'amministratore cancella la modalità AdminOnly in base alle esigenze. <br><br> - L'amministratore modifica il tipo di organizzazione _da Sandbox,_ in base alle esigenze <br><br> - Notificare agli utenti finali il nuovo URL per accedere all'istanza (organizzazione). <br><br> - Aggiornare tutte le connessioni in ingresso al nuovo URL dell'endpoint. <br><br> - Il servizio Dynamics non sarà disponibile per gli utenti durante la transizione. <br><br> - Gli utenti devono convalidare l'integrità e le funzionalità dell'organizzazione dopo la migrazione di ogni organizzazione.  |
 |||||
 
 \* (i) I clienti con Microsoft Dynamics 365 devono intervenire in questo scenario di migrazione, come definito dal processo di migrazione fornito. (ii) Se il cliente non riesce a eseguire un'azione, Microsoft non sarà in grado di completare la migrazione. (iii) Quando Microsoft non è in grado di completare la migrazione a causa dell'inazione del cliente, la sottoscrizione del cliente scadrà il 29 ottobre 2021. 
@@ -74,18 +74,12 @@ Se si utilizza una distribuzione ibrida locale:
 
 | Passaggi | Descrizione | Si applica a | Impatto |
 |:-------|:-----|:-------|:-------|
-| Migrazione delle risorse di Power BI | I clienti con Microsoft Power BI verranno coinvolti da Progettazione o FastTrack dopo aver attivato manualmente uno strumento di migrazione PBI esistente per eseguire la transizione di Power BI all'istanza dei servizi di Office 365.\*\* | Clienti di Microsoft Power BI | - Gli elementi di Power BI seguenti _non verranno_ esportati e doranno essere ri-creati: <br><br> - Set di dati in tempo reale (ad esempio, set di dati di streaming o push). <br> - Configurazione e origine dati del gateway dati locale di Power BI. <br> - I report creati in base ai set di dati in tempo reale non saranno disponibili dopo la migrazione e devono essere ricreati. <br><br> - I servizi Power BI non saranno disponibili per gli utenti durante la transizione. L'inabilità del servizio non deve essere superiore a 24 ore. <br><br> - Gli utenti doranno riconfigurare le origini dati e i gateway dati locali con il servizio Power BI dopo la migrazione.  Fino a quando non viene eseguita questa operazione, gli utenti non saranno in grado di utilizzare queste origini dati per eseguire l'aggiornamento pianificato e/o indirizzare le query su tali origini dati. <br><br> - Non è possibile eseguire la migrazione delle capacità e delle aree di lavoro premium. I clienti devono eliminare tutte le capacità prima della migrazione e crearle di nuovo dopo la migrazione. Spostare di nuovo le aree di lavoro nelle capacità desiderate.  |
+| Migrazione delle risorse di Power BI | I clienti con Microsoft Power BI verranno coinvolti da Progettazione o FastTrack dopo aver attivato manualmente uno strumento di migrazione PBI esistente per eseguire la transizione di Power BI all'istanza dei servizi di Office 365.\*\* | Clienti di Microsoft Power BI | - Gli elementi di Power BI seguenti _non verranno_ esportati e doranno essere ri-creati: <br><br> - Set di dati in tempo reale (ad esempio set di dati di streaming o push). <br> - Configurazione e origine dati del gateway dati locale di Power BI. <br> - I report creati in base ai set di dati in tempo reale non saranno disponibili dopo la migrazione e devono essere ricreati. <br><br> - I servizi Power BI non saranno disponibili per gli utenti durante la transizione. L'inabilità del servizio non deve essere superiore a 24 ore. <br><br> - Gli utenti doranno riconfigurare le origini dati e i gateway dati locali con il servizio Power BI dopo la migrazione.  Fino a quando non viene eseguita questa operazione, gli utenti non saranno in grado di utilizzare queste origini dati per eseguire l'aggiornamento pianificato e/o indirizzare le query su tali origini dati. <br><br> - Non è possibile eseguire la migrazione delle capacità e delle aree di lavoro premium. I clienti devono eliminare tutte le capacità prima della migrazione e crearle di nuovo dopo la migrazione. Spostare di nuovo le aree di lavoro nelle capacità desiderate.  |
 |||||
 
 \*\* (i) I clienti con Microsoft Power BI devono intervenire in questo scenario di migrazione, come definito dal processo di migrazione fornito. (ii) Se il cliente non riesce a eseguire un'azione, Microsoft non sarà in grado di completare la migrazione. (iii) Quando Microsoft non è in grado di completare la migrazione a causa dell'inazione del cliente, la sottoscrizione del cliente scadrà il 29 ottobre 2021. 
 
 
-### <a name="office-apps-phase-9-of-9"></a>App di Office (fase 9 di 9)
-
-| Passaggi | Descrizione | Si applica a | Impatto |
-|:-------|:-----|:-------|:-------|
-| Client, Office Online durante il cutover del client Office, Azure AD finalizza l'ambito tenant in modo che punti ai servizi di Office 365. | Questa modifica alla configurazione consente ai client di Office di aggiornare e puntare agli endpoint dei servizi di Office 365. | Tutti i clienti di Office | - Informare gli utenti di chiudere _tutte_ le app di Office e quindi accedere di nuovo (o forzare il riavvio dei client e gli utenti ad accedere) per consentire ai client di Office di raccogliere la modifica. <br><br> - Notificare agli utenti  e al personale dell'help desk che gli utenti potrebbero visualizzare un banner di Office che chiede loro di riattivare le app di Office entro 72 ore dal cutover. <br><br> - Tutte le applicazioni di Office nei computer personali devono essere chiuse e gli utenti devono disconnettersi e quindi accedere di nuovo. Nella barra di attivazione gialla, accedere per riattivare i servizi di Office 365. <br><br> - I computer condivisi richiederanno azioni simili ai computer personali e non richiederanno una procedura speciale. <br><br> - Nei dispositivi mobili, gli utenti devono disconnettersi dall'app, chiuderli e quindi accedere di nuovo. |
-|||||
 
 ## <a name="during-migration"></a>Durante la migrazione
 
@@ -111,7 +105,7 @@ Per eDiscovery:
 
 | Passaggi | Descrizione | Si applica a | Impatto |
 |:-------|:-----|:-------|:-------|
-| Migrazione di Skype for Business a Teams. | I clienti skype for Business esistenti vengono migrati ai servizi di Office 365 in Europa e quindi vengono migrati a Microsoft Teams nell'area germania dei servizi di Office 365. | Clienti Skype for Business |  PowerShell verrà utilizzato per amministrare le impostazioni e i criteri per il tenant e gli utenti. Quando ci si connette a una sessione di PowerShell, aggiungere quanto segue: <br><br> `-OverridePowershellUri "https://admin4E.online.lync.com/OcsPowershellOAuth"` |
+| Migrazione di Skype for Business a Teams. | I clienti Skype for Business esistenti vengono migrati ai servizi di Office 365 in Europa e quindi vengono migrati a Microsoft Teams nell'area germania dei servizi di Office 365. | Clienti Skype for Business |  PowerShell verrà utilizzato per amministrare le impostazioni e i criteri per il tenant e gli utenti. Quando ci si connette a una sessione di PowerShell, aggiungere quanto segue: <br><br> `-OverridePowershellUri "https://admin4E.online.lync.com/OcsPowershellOAuth"` |
 |||||
 
 
@@ -144,14 +138,14 @@ Per DNS:
 
 | Passaggi | Descrizione | Si applica a | Impatto |
 |:-------|:-----|:-------|:-------|
-| Aggiornare i servizi DNS locali per gli endpoint dei servizi di Office 365. | Le voci DNS gestite dal cliente che puntano a Office 365 Germany devono essere aggiornate per puntare agli endpoint dei servizi di Office 365. | Tutti i clienti di Office | Azione obbligatoria. In caso negativo, potrebbe verificarsi un errore del servizio o dei client software. |
+| Aggiornare i servizi DNS locali per gli endpoint dei servizi di Office 365. | Le voci DNS gestite dal cliente che puntano a Office 365 Germany devono essere aggiornate in modo da puntare agli endpoint dei servizi di Office 365. | Tutti i clienti di Office | Azione obbligatoria. In caso negativo, potrebbe verificarsi un errore del servizio o dei client software. |
 |||||
 
 Per i servizi di terze parti per gli endpoint dei servizi di Office 365:
 
 | Passaggi | Descrizione | Si applica a | Impatto |
 |:-------|:-----|:-------|:-------|
-| Aggiornare i partner e i servizi di terze parti per gli endpoint dei servizi di Office 365. | - I servizi e i partner di terze parti che puntano a Office 365 Germany devono essere aggiornati in modo da puntare agli endpoint dei servizi di Office 365. Esempio: registra di nuovo, in linea con i tuoi fornitori e partner, la versione delle applicazioni della raccolta, se disponibile. <br><br> - Puntare tutte le applicazioni personalizzate che sfruttano l'API Graph `graph.microsoft.de` da `graph.microsoft.com` a . Anche altre API con endpoint modificati devono essere aggiornate, se sfruttate. <br><br> - Modificare tutte le applicazioni aziendali non di prima parte in modo che reindirizzano agli endpoint globali.  | Tutti i clienti di Office | Azione obbligatoria. In caso negativo, potrebbe verificarsi un errore del servizio o dei client software. |
+| Aggiornare i partner e i servizi di terze parti per gli endpoint dei servizi di Office 365. | - I servizi e i partner di terze parti che puntano a Office 365 Germany devono essere aggiornati per puntare agli endpoint dei servizi di Office 365. Esempio: registra di nuovo, in linea con i tuoi fornitori e partner, la versione delle applicazioni della raccolta, se disponibile. <br><br> - Puntare tutte le applicazioni personalizzate che sfruttano l'API Graph `graph.microsoft.de` da `graph.microsoft.com` a . Anche altre API con endpoint modificati devono essere aggiornate, se sfruttate. <br><br> - Modificare tutte le applicazioni aziendali non di prima parte in modo che reindirizzano agli endpoint globali.  | Tutti i clienti di Office | Azione obbligatoria. In caso negativo, potrebbe verificarsi un errore del servizio o dei client software. |
 |||||
 
 ### <a name="sharepoint-online-phase-4-of-9"></a>SharePoint Online (fase 4 di 9)
@@ -168,7 +162,7 @@ Se si utilizza una configurazione ibrida di Exchange:
 
 | Passaggi | Descrizione | Si applica a | Impatto |
 |:-------|:-----|:-------|:-------|
-| Eseguire di nuovo la procedura guidata di configurazione ibrida (HCW) nei servizi di Office 365. | La configurazione HCW esistente è destinata a supportare Microsoft Cloud Deutschland. Una volta completata la migrazione dei servizi di Exchange, la configurazione locale viene disaccouplata da Microsoft Cloud Deutschland. | Clienti di Exchange Online che eseguono una distribuzione ibrida | - Azione obbligatoria. In caso negativo, potrebbe verificarsi un errore del servizio o dei client software. Prima dell'inizio della migrazione delle cassette postali di Exchange (con 5 o più giorni di preavviso), informare i client che devono interrompere ed eliminare eventuali spostamenti di onboarding o offboarding delle cassette postali.  In caso contrario, verranno visualizzati errori nelle richieste di spostamento. <br><br> - Al termine della migrazione delle cassette postali di Exchange, informare i client che possono riprendere gli spostamenti di onboarding e offboarding. <br> L'esecuzione di **Test-MigrationServerAvailabiilty**, un cmdlet di PowerShell, durante la migrazione di Exchange da Microsoft Cloud Deutschland ai servizi di Office 365 potrebbe non funzionare. Tuttavia, funzionerà correttamente al termine della migrazione. <br><br> Se si verificano problemi con le credenziali o l'autorizzazione dei client dopo la migrazione delle cassette postali, gli utenti possono reimmigare le credenziali di amministratore locale nell'endpoint di migrazione eseguendo oppure impostando la stessa impostazione utilizzando il Pannello di controllo `Set-MigrationEndpoint endpointName -Credential $(Get-Credential)` di Exchange.  |
+| Eseguire di nuovo la procedura guidata di configurazione ibrida (HCW) nei servizi di Office 365. | La configurazione HCW esistente è destinata a supportare Microsoft Cloud Deutschland. Una volta completata la migrazione dei servizi di Exchange, la configurazione locale viene disaccodata da Microsoft Cloud Deutschland. | Clienti di Exchange Online che eseguono una distribuzione ibrida | - Azione obbligatoria. In caso negativo, potrebbe verificarsi un errore del servizio o dei client software. Prima dell'inizio della migrazione delle cassette postali di Exchange (con 5 o più giorni di preavviso), informare i client che devono interrompere ed eliminare eventuali spostamenti di onboarding o offboarding delle cassette postali.  In caso contrario, verranno visualizzati errori nelle richieste di spostamento. <br><br> - Al termine della migrazione delle cassette postali di Exchange, informare i client che possono riprendere gli spostamenti di onboarding e offboarding. <br> L'esecuzione di **Test-MigrationServerAvailabiilty**, un cmdlet di PowerShell, durante la migrazione di Exchange da Microsoft Cloud Deutschland ai servizi di Office 365 potrebbe non funzionare. Tuttavia, funzionerà correttamente al termine della migrazione. <br><br> Se si verificano problemi con le credenziali o l'autorizzazione dei client dopo la migrazione delle cassette postali, gli utenti possono reim annotarne le credenziali di amministratore locale nell'endpoint di migrazione eseguendo oppure impostando la stessa impostazione utilizzando il Pannello di controllo di `Set-MigrationEndpoint endpointName -Credential $(Get-Credential)` Exchange.  |
 
 Per eDiscovery:
 
@@ -184,7 +178,7 @@ Per eDiscovery:
 
 [Comprendere le azioni e gli impatti delle fasi di migrazione](ms-cloud-germany-transition-phases.md)
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 Guida introduttiva:
 

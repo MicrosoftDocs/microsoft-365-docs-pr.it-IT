@@ -6,7 +6,6 @@ author: JoeDavies-MSFT
 manager: laurawi
 ms.prod: m365-security
 ms.topic: article
-ms.date: 09/29/2020
 f1.keywords:
 - NOCSH
 ms.reviewer: martincoetzer
@@ -19,12 +18,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-overview
 ms.technology: mdo
-ms.openlocfilehash: 2b72152b94d7bea85d92f86f16bdb27ffe541ebc
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 0f6e3d7bef0f09dc922a7c1878e6ea7ce0aad3d7
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150797"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233153"
 ---
 # <a name="identity-and-device-access-configurations"></a>Configurazioni di identità e accesso dei dispositivi
 
@@ -48,8 +47,13 @@ Queste funzionalità e le relative raccomandazioni:
 
 Se l'organizzazione ha requisiti o complessità dell'ambiente univoci, utilizzare questi suggerimenti come punto di partenza. Tuttavia, la maggior parte delle organizzazioni può implementare questi suggerimenti come prescritto.
 
+Guardare questo video per una rapida panoramica delle configurazioni di identità e accesso ai dispositivi per Microsoft 365 per le aziende.
+<br>
+<br>
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxEDQ]
+
 > [!NOTE]
-> Microsoft vende anche licenze Enterprise Mobility + Security (EMS) per gli abbonamenti a Office 365. Le funzionalità EMS E3 ed EMS E5 sono equivalenti a quelle di Microsoft 365 E3 e Microsoft 365 E5. Per [informazioni dettagliate, vedere](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing) i piani di EMS.
+> Microsoft vende anche licenze Enterprise Mobility + Security (EMS) per gli abbonamenti a Office 365. Le funzionalità di EMS E3 ed EMS E5 sono equivalenti a quelle di Microsoft 365 E3 e Microsoft 365 E5. Per [informazioni dettagliate, vedere](https://www.microsoft.com/microsoft-365/enterprise-mobility-security/compare-plans-and-pricing) i piani di EMS.
 
 ## <a name="intended-audience"></a>Destinatari
 
@@ -76,10 +80,10 @@ La maggior parte delle organizzazioni hanno requisiti specifici relativi a sicur
 Ogni settore ha anche il proprio set di normative specializzate. Anziché fornire un elenco di tutte le opzioni di sicurezza possibili o un consiglio per ogni segmento di settore o funzione lavorativa, sono stati forniti consigli per tre diversi livelli di sicurezza e protezione che possono essere applicati in base alla granularità delle proprie esigenze.
 
 - **Protezione di base:** è consigliabile stabilire uno standard minimo per la protezione dei dati, nonché le identità e i dispositivi che accedono ai dati. È possibile seguire questi consigli di base per fornire una protezione predefinita avanzata che soddisfi le esigenze di molte organizzazioni.
-- **Protezione dei** dati sensibili: alcuni clienti hanno un sottoinsieme di dati che devono essere protetti a livelli superiori oppure potrebbero richiedere che tutti i dati siano protetti a un livello superiore. È possibile applicare una maggiore protezione a tutti i set di dati o a set di dati specifici nell'ambiente Microsoft 365. È consigliabile proteggere le identità e i dispositivi che accedono ai dati sensibili con livelli di sicurezza analoghi.
-- **Dati altamente** regolamentati: alcune organizzazioni possono avere una piccola quantità di dati altamente classificati, costituiscono segreti commerciali o dati regolamentati. Microsoft offre funzionalità che consentono alle organizzazioni di soddisfare questi requisiti, inclusa la protezione aggiuntiva per identità e dispositivi.
+- **Protezione dei** dati sensibili: alcuni clienti hanno un sottoinsieme di dati che devono essere protetti a livelli più elevati oppure potrebbero richiedere che tutti i dati siano protetti a un livello superiore. È possibile applicare una maggiore protezione a tutti i set di dati o a set di dati specifici nell'ambiente Microsoft 365. È consigliabile proteggere le identità e i dispositivi che accedono ai dati sensibili con livelli di sicurezza analoghi.
+- **Dati altamente regolamentati:** alcune organizzazioni possono avere una piccola quantità di dati altamente classificati, che costituiscono segreti commerciali o dati regolamentati. Microsoft offre funzionalità che consentono alle organizzazioni di soddisfare questi requisiti, inclusa la protezione aggiuntiva per identità e dispositivi.
 
-![Cono di sicurezza: tutti i clienti > alcuni clienti > clienti specifici. Applicazione generale a un'applicazione specifica](../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png)
+![Cono di sicurezza: tutti i clienti > alcuni clienti > clienti specifici. Applicazione generale a applicazione specifica](../../media/microsoft-365-policies-configurations/M365-idquality-threetiers.png)
 
 Questa guida illustra come implementare la protezione per identità e dispositivi per ognuno di questi livelli di protezione. Utilizzare queste indicazioni come punto di partenza per l'organizzazione e modificare i criteri per soddisfare i requisiti specifici dell'organizzazione.
 
@@ -87,7 +91,7 @@ Questa guida illustra come implementare la protezione per identità e dispositiv
 
 Il modello di identità e protezione dei dispositivi per l'architettura di **Microsoft 365** mostra quali funzionalità sono confrontabili.
 
-[![Immagine di scorrimento per il poster identità e dispositivo di protezione per Microsoft 365](../../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br> [Visualizzazione in formato PDF](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Download in formato PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Download come Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)  
+[![Immagine di scorrimento per il poster identità e dispositivo per Microsoft 365](../../media/microsoft-365-policies-configurations/O365_Identity_device_protection_thumb.png)](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) <br> [Visualizzazione in formato PDF](../../downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Download in formato PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.pdf) \| [Download come Visio](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT_cloud_architecture_identity&device_protection.vsdx)  
 
 Inoltre, vedere la soluzione Distribuire la protezione delle informazioni per le normative sulla [privacy](../../solutions/information-protection-deploy.md) dei dati per proteggere le informazioni archiviate in Microsoft 365.
 
@@ -99,7 +103,7 @@ L'implementazione di qualsiasi strategia di sicurezza richiede compromessi tra s
 
 Le raccomandazioni fornite si basano sui principi seguenti:
 
-- Conoscere gli utenti ed essere flessibili in base ai requisiti di sicurezza e funzionalità.
+- Conoscere gli utenti ed essere flessibili per i requisiti di sicurezza e funzionali.
 - Applicare un criterio di sicurezza nel tempo e assicurarsi che sia significativo.
 
 ## <a name="services-and-concepts-for-identity-and-device-access-protection"></a>Servizi e concetti per la protezione dell'identità e dell'accesso ai dispositivi
@@ -114,12 +118,12 @@ Azure AD offre una famiglia completa di funzionalità di gestione delle identit�
 
 |Capacità o funzionalità|Descrizione|Licenze|
 |---|---|---|
-|[Autenticazione a più fattori (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)|L'autenticazione a più fattori richiede agli utenti di fornire due forme di verifica, ad esempio una password utente più una notifica dall'app Microsoft Authenticator o una chiamata telefonica. L'autenticazione a più fattori riduce notevolmente il rischio che le credenziali rubate possano essere utilizzate per accedere all'ambiente. Microsoft 365 usa il servizio Azure AD Multi-Factor Authentication per gli accesso basati su MFA.|Microsoft 365 E3 o E5|
+|[Autenticazione a più fattori (MFA)](/azure/active-directory/authentication/concept-mfa-howitworks)|L'autenticazione a più fattori richiede agli utenti di fornire due forme di verifica, ad esempio una password utente più una notifica dall'app Microsoft Authenticator o una telefonata. L'autenticazione a più fattori riduce notevolmente il rischio che le credenziali rubate possano essere utilizzate per accedere all'ambiente. Microsoft 365 usa il servizio Azure AD Multi-Factor Authentication per gli accesso basati su MFA.|Microsoft 365 E3 o E5|
 |[Accesso condizionale](/azure/active-directory/conditional-access/overview)|Azure AD valuta le condizioni di accesso dell'utente e usa i criteri di accesso condizionale per determinare l'accesso consentito. Ad esempio, in questa guida viene illustrato come creare un criterio di accesso condizionale per richiedere la conformità del dispositivo per l'accesso ai dati sensibili. In questo modo si riduce notevolmente il rischio che un pirata informatico con il proprio dispositivo e le credenziali rubate possa accedere ai dati sensibili. Protegge inoltre i dati sensibili nei dispositivi, perché i dispositivi devono soddisfare requisiti specifici per l'integrità e la sicurezza.|Microsoft 365 E3 o E5|
-|[Gruppi di Azure AD](/azure/active-directory/fundamentals/active-directory-manage-groups)|I criteri di accesso condizionale, la gestione dei dispositivi con Intune e anche le autorizzazioni per file e siti dell'organizzazione si basano sull'assegnazione agli account utente o ai gruppi di Azure AD. Ti consigliamo di creare gruppi di Azure AD corrispondenti ai livelli di protezione che stai implementando. Ad esempio, il personale esecutiva è probabilmente un target di valore più alto per gli hacker. Pertanto, è opportuno aggiungere gli account utente di questi dipendenti a un gruppo di Azure AD e assegnare questo gruppo ai criteri di accesso condizionale e ad altri criteri che applicano un livello superiore di protezione per l'accesso.|Microsoft 365 E3 o E5|
+|[Gruppi di Azure AD](/azure/active-directory/fundamentals/active-directory-manage-groups)|I criteri di accesso condizionale, la gestione dei dispositivi con Intune e anche le autorizzazioni per file e siti dell'organizzazione si basano sull'assegnazione agli account utente o ai gruppi di Azure AD. Ti consigliamo di creare gruppi di Azure AD corrispondenti ai livelli di protezione che stai implementando. Ad esempio, il personale esecutiva è probabilmente un target di valore superiore per gli hacker. Pertanto, è opportuno aggiungere gli account utente di questi dipendenti a un gruppo di Azure AD e assegnare questo gruppo ai criteri di accesso condizionale e ad altri criteri che applicano un livello superiore di protezione per l'accesso.|Microsoft 365 E3 o E5|
 |[Registrazione dei dispositivi](/azure/active-directory/devices/overview)|Puoi registrare un dispositivo in Azure AD per creare un'identità per il dispositivo. Questa identità viene usata per autenticare il dispositivo quando un utente esegue l'accesso e per applicare criteri di accesso condizionale che richiedono PC conformi o aggiunti a un dominio. Per queste indicazioni, usiamo la registrazione dei dispositivi per registrare automaticamente i computer Windows aggiunti a un dominio. La registrazione dei dispositivi è un prerequisito per la gestione dei dispositivi con Intune.|Microsoft 365 E3 o E5|
-|[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)|Consente di rilevare potenziali vulnerabilità che influiscono sulle identità dell'organizzazione e di configurare criteri di correzione automatizzati a rischio di accesso basso, medio e alto e a rischio utente. Queste indicazioni si basano su questa valutazione dei rischi per applicare i criteri di accesso condizionale per l'autenticazione a più fattori. Questa guida include anche un criterio di accesso condizionale che richiede agli utenti di modificare la password se vengono rilevate attività ad alto rischio per il proprio account.|Microsoft 365 E5, Microsoft 365 E3 con il componente aggiuntivo Identity & Threat Protection, EMS E5 o Azure Premium P2|
-|[Reimpostazione della password self-service (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)|Consentire agli utenti di reimpostare le password in modo sicuro e senza l'intervento dell'helpdesk, fornendo la verifica di più metodi di autenticazione che l'amministratore può controllare.|Microsoft 365 E3 o E5|
+|[Azure AD Identity Protection](/azure/active-directory/identity-protection/overview)|Consente di rilevare potenziali vulnerabilità che influiscono sulle identità dell'organizzazione e di configurare criteri di correzione automatizzati a rischio di accesso basso, medio e alto e a rischio utente. Queste indicazioni si basano su questa valutazione dei rischi per applicare criteri di accesso condizionale per l'autenticazione a più fattori. Questa guida include anche un criterio di accesso condizionale che richiede agli utenti di modificare la password se vengono rilevate attività ad alto rischio per il proprio account.|Microsoft 365 E5, Microsoft 365 E3 con il componente aggiuntivo Identity & Threat Protection, EMS E5 o Azure Premium P2|
+|[Reimpostazione della password self-service (SSPR)](/azure/active-directory/authentication/concept-sspr-howitworks)|Consentire agli utenti di reimpostare le password in modo sicuro e senza l'intervento dell'help desk, fornendo la verifica di più metodi di autenticazione che l'amministratore può controllare.|Microsoft 365 E3 o E5|
 |[Protezione con password di Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad)|Rilevare e bloccare le password deboli note, le relative varianti e altri termini deboli specifici dell'organizzazione. Gli elenchi predefiniti di password escluse globalmente sono applicate automaticamente a tutti gli utenti dei tenant di Azure AD. È possibile definire altre voci in un elenco di password escluse personalizzato. Quando gli utenti modificano o reimpostano le loro password, gli elenchi di password escluse sono controllati per applicare l'uso di password sicure.|Microsoft 365 E3 o E5|
 |
 
@@ -151,7 +155,7 @@ Questa guida illustra come implementare un set di criteri per proteggere l'acces
 
 ### <a name="windows-10-and-microsoft-365-apps-for-enterprise"></a>Windows 10 e App Microsoft 365 per grandi imprese
 
-Windows 10 con Microsoft 365 Apps for enterprise è l'ambiente client consigliato per i PC. È consigliabile Windows 10 perché Azure è progettato per offrire l'esperienza più fluida possibile sia per l'ambiente locale che per Azure AD. Windows 10 include anche funzionalità di sicurezza avanzate che possono essere gestite tramite Intune. Microsoft 365 Apps for enterprise include le versioni più recenti delle applicazioni di Office. Questi utilizzano l'autenticazione moderna, che è più sicura e un requisito per l'accesso condizionale. Queste app includono anche strumenti di sicurezza e conformità avanzati.
+Windows 10 con Microsoft 365 Apps for enterprise è l'ambiente client consigliato per i PC. È consigliabile Windows 10 perché Azure è progettato per offrire l'esperienza più fluida possibile sia per l'ambiente locale che per Azure AD. Windows 10 include anche funzionalità di sicurezza avanzate che possono essere gestite tramite Intune. Microsoft 365 Apps for enterprise include le versioni più recenti delle applicazioni di Office. Usano l'autenticazione moderna, che è più sicura e un requisito per l'accesso condizionale. Queste app includono anche strumenti di sicurezza e conformità avanzati.
 
 ## <a name="applying-these-capabilities-across-the-three-tiers-of-protection"></a>Applicazione di queste funzionalità tra i tre livelli di protezione
 
@@ -169,7 +173,7 @@ Nella tabella seguente sono riepilogati i suggerimenti per l'utilizzo di queste 
 
 La tabella precedente riflette la tendenza di molte organizzazioni a supportare una combinazione di dispositivi di proprietà dell'organizzazione, nonché personali o BYOD per consentire la produttività mobile tra la forza lavoro. I criteri di protezione delle app di Intune garantiscono che la posta elettronica sia protetta dall'esfiltrazione dall'app Outlook mobile e da altre app per dispositivi mobili di Office, sia nei dispositivi di proprietà dell'organizzazione che nei BYOD.
 
-È consigliabile che i dispositivi di proprietà dell'organizzazione siano gestiti da Intune o aggiunti a un dominio per applicare protezioni e controllo aggiuntivi. A seconda della riservatezza dei dati, l'organizzazione potrebbe scegliere di non consentire BYOD per utenti specifici o app specifiche.
+È consigliabile che i dispositivi di proprietà dell'organizzazione siano gestiti da Intune o aggiunti a un dominio per applicare protezioni e controlli aggiuntivi. A seconda della riservatezza dei dati, l'organizzazione potrebbe scegliere di non consentire BYOD per utenti specifici o app specifiche.
 
 ## <a name="deployment-and-your-apps"></a>Distribuzione e app
 
@@ -180,7 +184,7 @@ Prima di configurare e installare la configurazione dell'identità e dell'access
 
   Non devi creare set di criteri separati per ogni app, perché la gestione di questi criteri può diventare complicata. Microsoft consiglia di raggruppare le app che hanno gli stessi requisiti di protezione per gli stessi utenti.
 
-  Ad esempio, si potrebbe avere un set di criteri che includono tutte le app di Microsoft 365 per tutti gli utenti per la protezione di base e un secondo set di criteri per tutte le app sensibili, ad esempio quelle usate dalle risorse umane o dai reparti finanziari, e applicarle a tali gruppi.
+  Ad esempio, è possibile disporre di un set di criteri che includano tutte le app di Microsoft 365 per tutti gli utenti per la protezione di base e un secondo set di criteri per tutte le app sensibili, ad esempio quelle utilizzate dalle risorse umane o dai reparti finanziari, e applicarli a tali gruppi.
 
 Dopo aver determinato il set di criteri per le app che vuoi proteggere, implementare i criteri agli utenti in modo incrementale, indirizzando i problemi lungo il percorso.
 
@@ -199,8 +203,8 @@ Microsoft consiglia di non creare set di criteri che si applicano a tutte le app
 3. Configurare i criteri di accesso condizionale per gli utenti guest ed esterni.
 4. Configurare i criteri di accesso condizionale per le app cloud di Microsoft 365, ad esempio Microsoft Teams, Exchange Online e SharePoint.
 
-Dopo aver configurato l'identità e l'accesso ai dispositivi, vedere la guida alla distribuzione delle funzionalità di [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) per un elenco di controllo in più fasi delle funzionalità aggiuntive da considerare e azure AD [Identity Governance](https://docs.microsoft.com/azure/active-directory/governance/) per proteggere, monitorare e controllare l'accesso.
+Dopo aver configurato l'identità e l'accesso ai dispositivi, vedere la guida alla distribuzione delle funzionalità di [Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-deployment-checklist-p2) per un elenco di controllo in fasi delle funzionalità aggiuntive da considerare e di Azure AD [Identity Governance](https://docs.microsoft.com/azure/active-directory/governance/) per proteggere, monitorare e controllare l'accesso.
 
 ## <a name="next-step"></a>Passaggio successivo
 
-[Lavoro prerequisito per l'implementazione dei criteri di identità e accesso ai dispositivi](identity-access-prerequisites.md)
+[Lavoro prerequisito per l'implementazione di criteri di identità e accesso ai dispositivi](identity-access-prerequisites.md)

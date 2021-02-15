@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-topics
 localization_priority: None
 description: Informazioni su come trovare risorse per gli argomenti di Microsoft Viva.
-ms.openlocfilehash: 3e75dfcfa17e5604e04b6f5e49be9019b1679110
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: d5c54bda3432fc9a1ff5ce4342cc523544eb6e78
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107171"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242867"
 ---
 # <a name="introduction-to-microsoft-viva-topics"></a>Introduzione agli argomenti di Microsoft Viva
 
@@ -42,6 +42,9 @@ Le risorse in questa sezione sono utili per saperne di più su Viva Topics e su 
 |Altre informazioni su Viva Topics|[Panoramica di Microsoft Viva Topics](topic-experiences-overview.md)|
 |Informazioni su come gli argomenti vengono individuati e suggeriti dall'intelligenza artificiale|[Microsoft Viva Topics discovery](topic-experiences-discovery.md)|
 |Informazioni sulla sicurezza degli argomenti|[Sicurezza e privacy di Microsoft Viva](topic-experiences-security-privacy.md)|
+|Scopri come ottenere gli argomenti viva|[Pagina del prodotto Microsoft Viva Topics](https://www.microsoft.com/microsoft-viva/topics?activetab=pivot%3aoverviewtab)|
+|Vedere risorse nel Microsoft Tech Community Resource Center|[Microsoft Viva Topics Tech Community](https://resources.techcommunity.microsoft.com/viva-topics/)|
+
 
 
 ## <a name="adoption"></a>Adozione
@@ -60,7 +63,7 @@ Le risorse in questa sezione consentono all'amministratore dell'organizzazione d
 |:-----|:-----|
 |Informazioni su come configurare Microsoft Viva|[Configurare Microsoft Viva](set-up-topic-experiences.md)|
 |Informazioni su come configurare le autorizzazioni utente|[Gestire le autorizzazioni dell'argomento](topic-experiences-user-permissions.md)|
-|Informazioni su come gestire gli utenti che possono visualizzare gli argomenti|[Gestire la visibilità dell'argomento](topic-experiences-knowledge-rules.md)|
+|Informazioni su come gestire chi può visualizzare gli argomenti|[Gestire la visibilità dell'argomento](topic-experiences-knowledge-rules.md)|
 |Informazioni su come gestire le impostazioni di individuazione degli argomenti|[Gestire la scoperta dell'argomento](topic-experiences-discovery.md)|
 
 ## <a name="work-with-topics"></a>Lavorare con gli argomenti
