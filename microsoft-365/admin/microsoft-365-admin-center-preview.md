@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - FRP150
 description: Informazioni sull'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 2e54ad576b944153332aaec2012538e84c444db1
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: da2b54e5f69fcc1209459b02220c0ead3f564067
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48645072"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233387"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Informazioni sull'interfaccia di amministrazione di Microsoft 365
 
@@ -31,7 +31,7 @@ ms.locfileid: "48645072"
 
 L'interfaccia di amministrazione di Microsoft 365 è stata creata per i team IT come modo semplificato per gestire i servizi di Microsoft 365. L'interfaccia di amministrazione offre un'esperienza personalizzata basata sulle esigenze specifiche del ruolo o dell'organizzazione, migliora l'efficienza per le attività quotidiane e fornisce informazioni utili che consentono di prendere decisioni basate sui dati per offrire un'esperienza migliore agli utenti.
 
-L'interfaccia di amministrazione di Microsoft 365 è il punto di ingresso comune per tutti gli amministratori di Microsoft 365 ed è possibile accedervi all'indirizzo [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) . Le aree di lavoro specializzate, come la gestione della sicurezza o dei dispositivi, consentono un controllo più granulare. Per ulteriori informazioni sul funzionamento delle aree di amministrazione, vedere Informazioni sui tipi specifici di ruoli IT e altre aree di lavoro, ad esempio Sicurezza, Gestione dispositivi o [Exchange,](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) più avanti in questo articolo.
+L'interfaccia di amministrazione di Microsoft 365 è il punto di ingresso comune per tutti gli amministratori di Microsoft 365 ed è possibile accedervi all'indirizzo [https://admin.microsoft.com](https://go.microsoft.com/fwlink/?linkid=2024339) . Le aree di lavoro specializzate, come la gestione della sicurezza o dei dispositivi, consentono un controllo più granulare. Per ulteriori informazioni sul funzionamento delle aree di amministrazione, vedere Informazioni sui tipi specifici di ruoli IT e altre aree di lavoro, ad esempio Sicurezza, Gestione dispositivi [o Exchange,](#what-about-the-specific-types-of-it-roles-and-other-workspaces-like-security-device-management-or-exchange) più avanti in questo articolo.
 
 ::: moniker-end
 
@@ -49,7 +49,7 @@ Non appena saranno disponibili nuove funzionalità nell'interfaccia di amministr
 Novità nell'interfaccia di amministrazione di [Microsoft 365.](whats-new-in-preview.md)
   
 > [!NOTE]
-> Gli amministratori delle versioni mirate avranno il primo accesso alle nuove funzionalità. Le nuove funzionalità verranno quindi stense a tutti gli amministratori. Ciò significa che l'interfaccia di amministrazione potrebbe non essere visualizzata o potrebbe avere un aspetto diverso da quello descritto negli articoli della Guida. Per essere tra i primi a visualizzare le nuove funzionalità, vedere Partecipare all'interfaccia di amministrazione di seguito. 
+> Gli amministratori delle versioni mirate avranno il primo accesso alle nuove funzionalità. Le nuove funzionalità verranno quindi stense a tutti gli amministratori. Ciò significa che l'interfaccia di amministrazione potrebbe non essere visualizzata o potrebbe avere un aspetto diverso da quello descritto negli articoli della Guida. Per essere tra i primi a visualizzare le nuove funzionalità, vedere Partecipare all'interfaccia di amministrazione, di seguito. 
 
 ### <a name="turn-on-targeted-release"></a>Attivare Targeted Release
 
@@ -57,11 +57,11 @@ Novità nell'interfaccia di amministrazione di [Microsoft 365.](whats-new-in-pre
 
 2. Vai alla scheda **Preferenze di** rilascio e quindi seleziona **Modifica.** 
     
-3. Selezionare **Rilascio mirato per tutti gli utenti** o Rilascio **mirato per gli utenti selezionati.** Se scegli Targeted Release per gli utenti selezionati, assicurati di aggiungere l'account amministratore (e gli altri amministratori dell'organizzazione che vogliono partecipare) all'elenco degli utenti selezionati.
+3. Selezionare **Rilascio mirato per tutti gli utenti** o Rilascio **mirato per gli utenti selezionati.** Se si sceglie Rilascio mirato per gli utenti selezionati, assicurarsi di aggiungere l'account amministratore (e gli altri amministratori dell'organizzazione che desiderano partecipare) all'elenco degli utenti selezionati.
     
-### <a name="admin-center-feedback"></a>Feedback dell'interfaccia di amministrazione
+### <a name="admin-center-feedback"></a>Commenti e suggerimenti dell'interfaccia di amministrazione
 
-Nell'interfaccia di amministrazione, è possibile inviare commenti e suggerimenti a Microsoft sulla propria esperienza selezionando Commenti e **suggerimenti** accanto al pulsante Serve **aiuto?** nella parte inferiore di ogni pagina. Dicci cosa ti piace e cosa potremmo fare meglio. Inoltre, potresti ricevere sondaggi popup di tanto in tanto per chiedere informazioni sulle impression complessive o su una particolare esperienza appena rilasciata. È anche possibile inviare commenti e suggerimenti alla fine di questo articolo selezionando **Queste informazioni sono risultate utili?**
+Nell'interfaccia di amministrazione, è possibile inviare commenti e suggerimenti a Microsoft sulla propria esperienza selezionando Inviare commenti e **suggerimenti** accanto al pulsante Serve **aiuto?** nella parte inferiore di ogni pagina. Dicci cosa ti piace e cosa potremmo fare meglio. Inoltre, potresti ricevere sondaggi popup di tanto in tanto per chiedere informazioni sulle impression complessive o su una particolare esperienza appena rilasciata. È anche possibile inviare commenti e suggerimenti alla fine di questo articolo selezionando **Queste informazioni sono risultate utili?**
   
 ::: moniker-end
 
@@ -89,7 +89,7 @@ Sì. La nuova interfaccia di amministrazione è completamente funzionante e disp
   
 ## <a name="which-microsoft-365-plans-are-available-to-trial-or-buy"></a>Quali piani di Microsoft 365 sono disponibili per la versione di valutazione o l'acquisto?
 
-Microsoft 365 è una soluzione completa e intelligente che include Office 365, Windows 10 ed Enterprise Mobility + Security che consente a tutti di essere creativi e collaborare in modo sicuro. Gli abbonamenti a Microsoft 365 seguenti sono disponibili nell'interfaccia di amministrazione per provare o acquistare subito:
+Microsoft 365 è una soluzione completa e intelligente che include Office 365, Windows 10 ed Enterprise Mobility + Security che consente a tutti di essere creativi e di collaborare in modo sicuro. Gli abbonamenti a Microsoft 365 seguenti sono disponibili nell'interfaccia di amministrazione per provare o acquistare subito:
   
 - Microsoft 365 for business
 - Microsoft 365 Enterprise E3
@@ -116,5 +116,53 @@ L'aggiornamento di tutte le centri di amministrazione per un'esperienza coerente
 - [Panoramica di Gestione dispositivi di Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2006262)
     
 - [Introduzione al Centro sicurezza e conformità di Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2025413)
+
+## <a name="what-language-options-are-available-the-admin-center"></a>Quali opzioni di lingua sono disponibili nell'interfaccia di amministrazione?
+
+L'interfaccia di amministrazione di Microsoft 365 è completamente localizzata in 40 lingue.
+
+|Lingua |Locale |
+|---------|---------|
+|Arabo | ar |
+|Bulgaro | bg |
+|Catalano | ca |
+|Ceco | cs |
+|Danese | da |
+|Tedesco | de |
+|Greco | el |
+|Spagnolo | es |
+|Inglese | en |
+|Estone | et |
+|Basco | eu |
+|Finlandese | fi |
+|Francese | fr |
+|Gallego | gl |
+|Ebraico | he |
+|Croato | hr |
+|Ungherese | hu |
+|Indonesiano  | id |
+|Italiano | it |
+|Giapponese | ja |
+|Coreano | ko |
+|Lituano | lt |
+|Lettone | lv |
+|Olandese | nl |
+|Norvegese | no |
+|Polacco | pl |
+|Portoghese (Brasile) | pt |
+|Portoghese (Portogallo) | pt-pt |
+|Romeno | ro |
+|Russo | ru |
+|Slovacco | sk |
+|Sloveno | sl |
+|Serbo (alfabeto cirillico)  | sr-cyrl |
+|Serbian Latin | sr |
+|Svedese | sv |
+|Thai | th |
+|Turco | tr |
+|Ucraino | uk |
+|Vietnamita | vi |
+|Chinese Simplified | zh-hans |
+|Chinese Traditional | zh-hant |
 
 ::: moniker-end

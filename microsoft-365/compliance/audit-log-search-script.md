@@ -16,13 +16,13 @@ search.appverid:
 - MOE150
 - MET150
 ms.custom: seo-marvel-apr2020
-description: Usare uno script PowerShell, che esegue il cmdlet Search-UnifiedAuditLog, per la ricerca nel log di audit. Questo script è ottimizzato per restituire un set di record di controllo di grandi dimensioni (fino a 50.000). Lo script esporta questi record in un file CSV che è possibile visualizzare o trasformare usando Power Query in Excel.
-ms.openlocfilehash: d4fcf59297747d0499f6616438299ad8cbe96d7f
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+description: Usare uno script di PowerShell che esegue il cmdlet Search-UnifiedAuditLog in Exchange Online per cercare il log di audit. Questo script è ottimizzato per restituire un set di record di controllo di grandi dimensioni (fino a 50.000). Lo script esporta questi record in un file CSV che è possibile visualizzare o trasformare usando Power Query in Excel.
+ms.openlocfilehash: 3d44054d8d1111fe86e06460f5ca4d442d0d1625
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094787"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233330"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>Usare uno script PowerShell per la ricerca nel log di audit
 
@@ -80,7 +80,7 @@ $intervalMinutes = 60
 
 Function Write-LogFile ([String]$Message)
 {
-    $final = [DateTime]::Now.ToString("s") + ":" + $Message
+    $final = [DateTime]::Now.ToUniversalTime().ToString("s") + ":" + $Message
     $final | Out-File $logFile -Append
 }
 
@@ -101,7 +101,7 @@ while ($true)
         break
     }
 
-    $sessionID = [DateTime]::Now.ToString("s")
+    $sessionID = [Guid]::NewGuid().ToString() + "_" +  "ExtractLogs" + (Get-Date).ToString("yyyyMMddHHmmssfff")
     Write-LogFile "INFO: Retrieving audit records for activities performed between $($currentStart) and $($currentEnd)"
     Write-Host "Retrieving audit records for activities performed between $($currentStart) and $($currentEnd)"
     $currentCount = 0
@@ -137,14 +137,13 @@ while ($true)
 
 Write-LogFile "END: Retrieving audit records between $($start) and $($end), RecordType=$record, PageSize=$resultSize, total count: $totalCount."
 Write-Host "Script complete! Finished retrieving audit records for the date range between $($start) and $($end). Total count: $totalCount" -foregroundColor Green
-
 ```
 
 2. Modificare le variabili elencate nella tabella seguente per configurare i criteri di ricerca. Lo script include valori di esempio per queste variabili, ma è consigliabile modificarli (se non diversamente specificato) in modo da soddisfare i requisiti specifici.
 
    |Variabile|Valore esemplificativo|Descrizione|
    |---|---|---|
-   |`$logFile`|"d:\temp\AuditSearchLog.txt"|Specifica il nome e il percorso del file di log che contiene informazioni sullo stato della ricerca nel log di audit eseguita dallo script.|
+   |`$logFile`|"d:\temp\AuditSearchLog.txt"|Specifica il nome e il percorso del file di log che contiene informazioni sullo stato della ricerca nel log di audit eseguita dallo script. Lo script scrive i timestamp UTC nel file di log.|
    |`$outputFile`|"d:\temp\AuditRecords.csv"|Specifica il nome e il percorso del file CSV che contiene i record di controllo restituiti dallo script.|
    |`[DateTime]$start` e `[DateTime]$end`|[DateTime]::UtcNow.AddDays(-1) <br/>[DateTime]::UtcNow|Specifica l'intervallo di date per la ricerca nel log di audit. Lo script restituirà i record per le attività di controllo che si sono verificate all’interno dell'intervallo di date specificato. Ad esempio, per restituire le attività eseguite nel mese di gennaio 2021, è possibile usare una data di inizio `"2021-01-01"` e una data di fine `"2021-01-31"` (racchiudere i valori tra virgolette doppie). Il valore di esempio nello script restituisce i record per le attività eseguite nelle 24 ore precedenti. Se non si include un timestamp nel valore, viene utilizzato il timestamp predefinito 00:00 (mezzanotte) nella data specificata.|
    |`$record`|"AzureActiveDirectory"|Specifica il tipo di record delle attività di controllo (chiamate anche *operazioni*) da cercare. Questa proprietà indica il servizio o la caratteristica in cui è stata attivata un'attività. Per un elenco dei tipi di record che è possibile usare per questa variabile, vedere [Tipo di record del log di audit](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype). È possibile usare il nome del tipo di record o il valore di enumerazione. <br/><br/>**Suggerimento:** per restituire i record di controllo per tutti i tipi di record, usare il valore `$null` (senza virgolette).|

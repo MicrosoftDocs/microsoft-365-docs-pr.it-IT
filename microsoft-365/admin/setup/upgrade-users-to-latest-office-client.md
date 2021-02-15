@@ -23,12 +23,12 @@ ms.custom:
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: Informazioni su come eseguire l'Microsoft Office al client Office più recente per gli utenti dell'organizzazione.
-ms.openlocfilehash: 596dfc8f4a005d01c0bf330243bf1fb3c639f97e
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 3f8ea0d16e1c27414b5f3e11e842e336fadb3e75
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906442"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233319"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Aggiornare gli utenti di Microsoft 365 per le aziende all'ultima versione del client di Office
 
@@ -48,7 +48,7 @@ Per ulteriori informazioni, vedere la guida di orientamento alla fine del suppor
   
  Se si è l'amministratore responsabile dell'abbonamento a Microsoft 365 per le aziende nell'organizzazione, si è nel posto giusto. Gli amministratori sono in genere responsabili di attività come la gestione degli utenti, la reimpostazione delle password, la gestione delle installazioni di Office e l'aggiunta o la rimozione di licenze.
 
- Se non si è un amministratore e si dispone di un prodotto della famiglia [Microsoft 365,](https://support.microsoft.com/office/28cbc8cf-1332-4f04-9123-9b660abb629e#BKMK_OfficePlans) vedere Come si esegue l'aggiornamento di [Office](https://support.microsoft.com/office/ee68f6cf-422f-464a-82ec-385f65391350) per informazioni sull'aggiornamento della versione precedente di Office per uso domestico.
+ Se non si è un amministratore e si dispone di un prodotto della famiglia [Microsoft 365,](https://support.microsoft.com/office/28cbc8cf-1332-4f04-9123-9b660abb629e#BKMK_OfficePlans) vedere Come eseguire l'aggiornamento di [Office](https://support.microsoft.com/office/ee68f6cf-422f-464a-82ec-385f65391350) per informazioni sull'aggiornamento della versione precedente di Office per uso domestico.
 
 ## <a name="get-ready-to-upgrade-to-microsoft-365"></a>Prepararsi per l'aggiornamento a Microsoft 365
 
@@ -99,9 +99,12 @@ Passare a un abbonamento che include Office. Vedere [Passare a un piano di Micro
 
 ## <a name="step-3---uninstall-office"></a>Passaggio 3: Disinstallare Office
 
-Prima di installare la versione più recente di Office, è consigliabile disinstallare tutte le versioni precedenti di Office. Tuttavia, se si cambia idea sull'aggiornamento di Office, prendere nota dei casi seguenti in cui non sarà possibile reinstallare Office dopo la disinstallazione.
+Prima di installare la versione più recente di Office, è consigliabile disinstallare tutte le versioni precedenti di Office. Tuttavia, se si cambia idea sull'aggiornamento di Office, tenere presente le istanze seguenti in cui non sarà possibile reinstallare Office dopo la disinstallazione.
   
 Se si dispone di componenti aggiuntivi di terze parti, contattare il produttore per verificare se è disponibile un aggiornamento che funzionerà con la versione più recente di Office.
+
+> [!TIP]
+> Se si verificano problemi durante la disinstallazione di Office, è possibile utilizzare lo strumento Assistente supporto e ripristino Microsoft per rimuovere Office: scaricare ed eseguire l'Assistente supporto e ripristino [Microsoft.](https://go.microsoft.com/fwlink/?LinkID=2155008)
 
 ### <a name="select-the-version-of-office-you-want-to-uninstall"></a>Selezionare la versione di Office da disinstallare
 

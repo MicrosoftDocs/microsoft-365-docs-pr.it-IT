@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Che si tratta dell'aggiunta di nuove soluzioni al Centro conformità, dell'aggiornamento delle funzionalità esistenti in base al feedback degli utenti o dell'implementazione di documentazione aggiornata e aggiornata, Microsoft 365 consente di rimanere sempre aggiornati nel panorama della conformità in continua evoluzione. Scopri cosa abbiamo fatto fino a questo mese.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 682f736456ebe822ee5a34de0175003fd7516920
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 40140c950bb42078cb1e72ae74762db00a4516b6
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50113975"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233164"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novità sulla conformità Microsoft 365
 
@@ -35,6 +35,25 @@ Che si tratta dell'aggiunta di nuove soluzioni al Centro conformità [Microsoft 
 > [!TIP]
 > Sei interessato a cosa succede in altre centri di amministrazione? Consultare questi articoli:<br>[Novità nell'interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/office365/admin/whats-new-in-preview)<br>[Novità nell'interfaccia di amministrazione di SharePoint](https://docs.microsoft.com/sharepoint/what-s-new-in-admin-center)<br>[Novità di Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/whats-new)<br><br>
 Visitare la roadmap di [Microsoft 365](https://www.microsoft.com/en-us/microsoft-365/roadmap) per informazioni sulle funzionalità di Microsoft 365 avviate, in fase di distribuzione, in fase di sviluppo, annullate o rilasciate in precedenza.
+
+## <a name="january-2021"></a>Gennaio 2021
+
+### <a name="support-for-card-content-in-teams"></a>Supporto per il contenuto delle schede in Teams
+
+Le seguenti soluzioni di conformità di Microsoft 365 ora supportano il rilevamento del contenuto delle schede [generato](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards) tramite le app nei messaggi di Teams:
+
+- **Core e Advanced eDiscovery.** Il contenuto della scheda può [ora essere messo](create-ediscovery-holds.md#preserve-card-content) in attesa o incluso nelle [ricerche](https://docs.microsoft.com/microsoftteams/ediscovery-investigation#search-for-card-content) (si applica anche alla ricerca di contenuto).
+- **Controlla**. L'attività della scheda [viene ora registrata nel log di controllo.](https://docs.microsoft.com/microsoftteams/audit-log-events#teams-activities)
+- **Criteri di conservazione**. Può ora usare i criteri di conservazione per [conservare ed eliminare il contenuto della scheda.](retention-policies-teams.md#whats-included-for-retention-and-deletion)
+
+### <a name="information-governance-and-records-management"></a>Governance delle informazioni e gestione dei record
+
+[Nuova valutazione per](retention-regulatory-requirements.md#new-zealand-public-records-act) l'utilizzo della governance delle informazioni e della gestione dei record per soddisfare gli obblighi di conformità del New Zealand Public Records Act.
+
+### <a name="sensitivity-labels"></a>Etichette di riservatezza
+
+- Le etichette di riservatezza sono ora supportate per i tenant del governo statunitense (GCC e GCC-H).
+- Nuovo [supporto per l'etichettatura](sensitivity-labels-office-apps.md) automatica per macOS.
 
 ## <a name="december-2020"></a>Dicembre 2020
 
@@ -55,11 +74,11 @@ Altri documenti sulle soluzioni di contenuto saranno disponibili a breve.
 
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
-Flusso di lavoro e funzionalità migliorate [per l'aggiunta](add-custodians-to-case.md) di responsabile e [origini dati non](non-custodial-data-sources.md) di tipo responsabile a un caso di Advanced eDiscovery.
+Miglioramento del flusso di lavoro e delle [funzionalità per l'aggiunta](add-custodians-to-case.md) di responsabile e [origini dati non](non-custodial-data-sources.md) di tipo responsabile a un caso di Advanced eDiscovery.
 
 ### <a name="data-connectors"></a>Connettori dati
 
-[Rilasciati quattro nuovi connettori Globanet:](archiving-third-party-data.md#third-party-data-connectors)Redtail Speak, Salesforce Chatter, ServiceNow e Yieldbroker.
+[Quattro nuovi connettori Globanet](archiving-third-party-data.md#third-party-data-connectors)rilasciati: Redtail Speak, Salesforce Chatter, ServiceNow e Yieldbroker.
 
 ### <a name="encryption"></a>Crittografia
 
@@ -87,9 +106,9 @@ Il [gruppo di ruoli amministratore](get-started-with-records-management.md#permi
 
 ![feedback](../media/Feedback_card_MCC.JPG)
 
-### <a name="spotlight-endpoint-data-loss-prevention-dlp-released"></a>Spotlight: Endpoint data loss prevention (DLP) released
+### <a name="spotlight-endpoint-data-loss-prevention-dlp-released"></a>Spotlight: Endpoint Data Loss Prevention (DLP) released
 
-[Endpoint DLP](endpoint-dlp-learn-about.md) estende le funzionalità di monitoraggio e protezione delle attività di DLP alle informazioni riservate nei dispositivi Windows 10. Dopo [l'onboarded](dlp-configure-endpoints.md) dei dispositivi nel Centro conformità Microsoft 365, è possibile configurare i criteri DLP per proteggere le informazioni riservate in tali dispositivi.
+[Endpoint DLP](endpoint-dlp-learn-about.md) estende le funzionalità di monitoraggio e protezione delle attività di DLP alle informazioni sensibili nei dispositivi Windows 10. Dopo [l'onboarded](dlp-configure-endpoints.md) dei dispositivi nel Centro conformità Microsoft 365, è possibile configurare i criteri DLP per proteggere le informazioni riservate in tali dispositivi.
 
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
@@ -112,7 +131,7 @@ Per visualizzare gli elementi durante una revisione dell'eliminazione, gli utent
 ### <a name="sensitivity-labels"></a>Etichette di riservatezza
 
 - [(Anteprima) Impostazioni di condivisione esterna per i siti di SharePoint.](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings) Quando si crea un'etichetta che verrà utilizzata per i gruppi e i siti, verrà visualizzata un'opzione per controllare la condivisione esterna per i siti di SharePoint a cui è applicata l'etichetta. È possibile specificare che la condivisione è consentita per chiunque, per gli utenti guest nuovi ed esistenti, solo per gli utenti guest esistenti o solo per gli utenti dell'organizzazione. Quando l'etichetta viene applicata, le impostazioni dell'etichetta sostituiranno tutte le impostazioni di condivisione esterna [configurate nell'interfaccia di amministrazione di SharePoint.](https://docs.microsoft.com/sharepoint/change-external-sharing-site)
-- [Rimuovere l'etichetta e la crittografia da un documento etichettato.](sensitivity-labels-sharepoint-onedrive-files.md#remove-encryption-for-a-labeled-document) Per rimuovere sia un'etichetta che la crittografia applicata da un documento etichettato in SharePoint, gli amministratori globali e gli amministratori di SharePoint possono eseguire il nuovo `Unlock-SPOSensitivityLabelEncryptedFile` cmdlet. Questo cmdlet viene eseguito anche se l'amministratore non dispone delle autorizzazioni di accesso al sito o al file o se il servizio Azure Rights Management non è disponibile.
+- [Rimuovere l'etichetta e la crittografia da un documento etichettato.](sensitivity-labels-sharepoint-onedrive-files.md#remove-encryption-for-a-labeled-document) Per rimuovere sia un'etichetta che la crittografia applicata da un documento con etichetta in SharePoint, gli amministratori globali e gli amministratori di SharePoint possono eseguire il nuovo `Unlock-SPOSensitivityLabelEncryptedFile` cmdlet. Questo cmdlet viene eseguito anche se l'amministratore non dispone delle autorizzazioni di accesso al sito o al file o se il servizio Azure Rights Management non è disponibile.
 
 ## <a name="october-2020"></a>Ottobre 2020
 
@@ -146,7 +165,7 @@ Guardare il video seguente per informazioni su come Compliance Manager può semp
 - [Gruppi di ruoli aggiornati.](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance) I gruppi di ruoli di conformità delle comunicazioni ora corrispondono alla struttura del gruppo di ruoli disponibile per la soluzione di gestione dei rischi Insider.
 - [Dashboard dei report.](communication-compliance-feature-reference.md#reports-preview) Posizione centrale per la visualizzazione di tutti i report di conformità delle comunicazioni. I widget di report offrono una rapida visualizzazione delle informazioni dettagliate più comunemente necessarie per una valutazione generale dello stato delle attività di conformità delle comunicazioni.
 - [Flussi di Power Automate](communication-compliance-feature-reference.md#power-automate-flows). Configurare i flussi per automatizzare le attività per avvisi e utenti, informare i responsabili quando gli utenti attivano gli avvisi e altro ancora.
-- [Azione di correzione "Migliora classificazione".](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action) Gli avvisi contenenti elementi che corrispondono a classificatori formabili potrebbero trarre vantaggio dal feedback per ridurre al minimo i falsi positivi nell'organizzazione. **L'opzione Migliora classificazione** consente di fornire feedback se gli elementi rilevati corrispondono al classificatore configurato nei criteri di conformità delle comunicazioni correlati. Puoi anche suggerire altri classificatori da associare all'elemento per migliorare l'accuratezza della corrispondenza per gli avvisi futuri.
+- [Azione correttiva "Migliora classificazione".](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action) Gli avvisi contenenti elementi che corrispondono a classificatori che possono essere classificati possono trarre vantaggio dal feedback per ridurre al minimo i falsi positivi nell'organizzazione. **L'opzione Migliora classificazione** consente di fornire feedback se gli elementi rilevati corrispondono al classificatore configurato nei criteri di conformità delle comunicazioni correlati. Puoi anche suggerire altri classificatori da associare all'elemento per migliorare l'accuratezza della corrispondenza per gli avvisi futuri.
 
 ### <a name="data-connectors"></a>Connettori dati
 
@@ -183,11 +202,11 @@ Questa nuova funzionalità è inclusa nelle funzionalità seguenti:
 
 - [Classificatori di cui è possibile utilizzare il training.](classifier-learn-about.md#retraining-classifiers) Per migliorare l'accuratezza dei classificatori pubblicati, è possibile fornire un feedback sul fatto che gli elementi rilevati corrispondano al classificatore.
 - [Conformità delle comunicazioni](classifier-how-to-retrain-comms-compliance.md). La nuova **azione di** correzione della classificazione Migliora consente di fornire feedback se un elemento di un avviso di conformità alle comunicazioni corrisponde al classificatore configurato nei criteri di conformità delle comunicazioni.
-- [Esplora contenuto.](classifier-how-to-retrain-content-explorer.md) Se si configura un criterio di etichettatura automatica di conservazione per applicare automaticamente le etichette ai messaggi di posta elettronica che corrispondono a classificatori di cui è possibile eseguire il training, è possibile utilizzare Esplora contenuto per esaminare gli elementi etichettati e fornire feedback se gli elementi corrispondono al classificatore.
+- [Esplora contenuto.](classifier-how-to-retrain-content-explorer.md) Se si configura un criterio di etichettatura automatica di conservazione per applicare automaticamente le etichette ai messaggi di posta elettronica che corrispondono a classificatori formabili, è possibile utilizzare Esplora contenuto per esaminare gli elementi etichettati e fornire commenti e suggerimenti se gli elementi corrispondono al classificatore.
 
 ## <a name="august-2020"></a>Agosto 2020
 
-### <a name="spotlight-insider-risk-and-communication-compliance-updates"></a>Informazioni in evidenza: aggiornamenti di conformità dei rischi Insider e delle comunicazioni
+### <a name="spotlight-insider-risk-and-communication-compliance-updates"></a>Informazioni in evidenza: aggiornamenti per la conformità dei rischi Insider e delle comunicazioni
 
 Diverse funzionalità nuove e migliorate hanno raggiunto l'anteprima pubblica questo mese:
 
@@ -213,9 +232,9 @@ Diverse funzionalità nuove e migliorate hanno raggiunto l'anteprima pubblica qu
 
 **Conformità delle comunicazioni**
 
-- Quando [si esaminano i messaggi in](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action)un avviso, è ora possibile rimuovere i messaggi inappropriati nei canali di Microsoft Teams, 1:1 e nelle chat di gruppo. I messaggi e il contenuto rimossi vengono sostituiti con un suggerimento per i criteri che spiega che è stato rimosso a causa di contenuto sensibile.
+- Quando [si esaminano i messaggi in un](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action)avviso, è ora possibile rimuovere i messaggi inappropriati nei canali di Microsoft Teams, 1:1 e nelle chat di gruppo. I messaggi e il contenuto rimossi vengono sostituiti con un suggerimento per i criteri che spiega che è stato rimosso a causa di contenuto sensibile.
 - Nuovi [ruoli di comunicazione](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance) (questi saranno inclusi anche nei nuovi gruppi di ruoli di conformità delle comunicazioni rilasciati a settembre).
-- Nuova esperienza delle impostazioni di conformità delle comunicazioni che include le impostazioni [per la privacy e](communication-compliance-feature-reference.md#privacy) i modelli di [avviso.](communication-compliance-feature-reference.md#notice-templates)
+- Nuova esperienza delle impostazioni di conformità delle comunicazioni che include le impostazioni [per i modelli di privacy](communication-compliance-feature-reference.md#privacy) e [avviso.](communication-compliance-feature-reference.md#notice-templates)
 - Nuovi [classificatori per](communication-compliance-feature-reference.md#classifiers) rilevare immagini adulte, racy e gory.
 - La nuova notifica "Pattern detected" che viene visualizzata quando si esaminano i messaggi [in](communication-compliance-investigate-remediate.md#step-2-examine-the-message-details) un avviso consente di sapere se un utente riempe istanze dello stesso comportamento.
 
@@ -240,29 +259,3 @@ L'attività di amministrazione correlata alla conservazione è ora registrata e 
 
 - Quando [si aggiunge una raccolta a un insieme da](add-data-to-review-set.md#define-options-to-scope-your-collection-for-review)rivedere, è ora possibile includere allegati moderni (denominati anche "allegati cloud") e versioni di documenti di SharePoint.
 - Nuova [esperienza di esportazione con download diretto,](export-documents-from-review-set.md)eliminando la necessità di usare Azure Storage Explorer per scaricare il contenuto del caso.
-
-## <a name="july-2020"></a>Luglio 2020
-
-### <a name="spotlight-on-help-docs"></a>Informazioni in evidenza sulla documentazione della Guida
-
-Per comprendere quali soluzioni di conformità vengono utilizzate per proteggere e gestire i dati sensibili dell'organizzazione, sono state create due nuove pagine di destinazione con una panoramica del modo in cui le soluzioni funzionano insieme per raggiungere tali obiettivi, inclusi i collegamenti a documenti correlati in modo da poter approfondire ulteriormente l'argomento.
-
-[Microsoft Information Protection in Microsoft 365.](information-protection.md)<br>
-[Governance delle informazioni Microsoft in Microsoft 365](manage-Information-governance.md)
-
-### <a name="advanced-ediscovery-add-non-custodial-data-sources-to-your-cases"></a>Advanced eDiscovery: Aggiungere origini dati non di tipo responsabile ai casi
-
-Aggiungere dati a un caso senza doverlo associare a un responsabile (noto come origini dati non di [tipo](non-custodial-data-sources.md)responsabile). Inoltre, se è necessario mettere in attesa questi dati non-depositl, sarà possibile farlo usando la nuova funzionalità di indicizzazione avanzata.
-
-### <a name="data-connectors-hr-connector-enhancements"></a>Connettori dati: miglioramenti dei connettori hr
-
-(In anteprima) Una nuova versione del connettore [risorse](import-hr-data.md) umane consente di importare i dati relativi alle modifiche a livello di processo, alle revisioni delle prestazioni e ai piani di miglioramento delle prestazioni. Questi dati possono quindi essere utilizzati in diversi criteri [di rischio Insider per](insider-risk-management-policies.md) rilevare le attività correlate.
-
-### <a name="retention-labels-new-support-for-email"></a>Etichette di conservazione: nuovo supporto per la posta elettronica
-
-È ora possibile creare [un'etichetta di conservazione](retention.md#retention-labels) per iniziare a conservare la posta elettronica in base all'etichetta dei messaggi. Ciò non si applica agli elementi del calendario, che verranno mantenuti in base all'invio dell'elemento.
-
-### <a name="sensitivity-labels-new-feature-and-an-improvement"></a>Etichette di riservatezza: nuova funzionalità e miglioramento
-
-- (In anteprima) Quando si configurano le impostazioni di crittografia per [](encryption-sensitivity-labels.md#double-key-encryption) un'etichetta, cercare la nuova opzione per utilizzare la crittografia a chiave doppia per proteggere ulteriormente i file e i messaggi di posta elettronica etichettati.
-- Quando si creano o si eliminano etichette di riservatezza o si creano, modificano o eliminano i criteri delle etichette, le modifiche vengono sincronizzate entro 1 ora con tutti gli utenti, le app e i servizi.

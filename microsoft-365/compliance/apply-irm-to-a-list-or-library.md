@@ -21,16 +21,16 @@ ms.collection:
 - SPO_Content
 description: È possibile utilizzare Information Rights Management (IRM) per controllare e proteggere i file scaricati da elenchi o raccolte.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5b0b541619e7bd969072755eacf103d53da6fc6a
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 0648d511ee882765f1905e83ebdea673f306c186
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840527"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233352"
 ---
 # <a name="apply-information-rights-management-irm-to-a-list-or-library"></a>Applicare Information Rights Management (IRM) a un elenco o a una raccolta
 
-È possibile utilizzare Information Rights Management (IRM) per controllare e proteggere i file scaricati da elenchi o raccolte.
+È possibile utilizzare Information Rights Management (IRM) per controllare e proteggere i file scaricati da elenchi o raccolte. Questa funzionalità è supportata solo nel cloud globale Microsoft. IRM non è supportato per gli elenchi e le raccolte di SharePoint nelle distribuzioni cloud nazionali.
   
 ## <a name="administrator-preparations-before-applying-irm"></a>Operazioni di preparazione dell'amministratore prima dell'applicazione di IRM
 
@@ -43,7 +43,7 @@ ms.locfileid: "49840527"
 - Se si usa SharePoint Online, è possibile che si verifichino timeout durante il download di file protetti con IRM di dimensioni maggiori. Per evitare timeout, utilizzare le applicazioni di Office per applicare la protezione IRM e archiviare file di dimensioni maggiori in una raccolta di SharePoint che non utilizza IRM.
 
 > [!NOTE]
-> Se si utilizza SharePoint Server 2013, un amministratore del server deve installare le funzionalità di protezione in tutti i server Web front-end per ogni tipo di file che gli utenti dell'organizzazione desiderano proteggere tramite IRM.
+> Se si utilizza SharePoint Server 2013, un amministratore del server deve installare le impostazioni di protezione in tutti i server Web front-end per ogni tipo di file che gli utenti dell'organizzazione desiderano proteggere tramite IRM.
   
 ## <a name="apply-irm-to-a-list-or-library"></a>Applicare IRM a un elenco o a una raccolta
 <a name="__toc256598179"> </a>
@@ -72,8 +72,8 @@ ms.locfileid: "49840527"
 |Consentire agli utenti con almeno l'autorizzazione Visualizzazione elementi di eseguire macro o codice incorporato in un documento.|Selezionare la **casella di controllo Consenti ai visualizzatori di eseguire script e utilità per** la lettura dello schermo per funzionare sui documenti scaricati. Se si seleziona questa opzione, gli utenti potrebbero eseguire codice per estrarre il contenuto di un documento.           |
 |Selezionare questa opzione se si desidera limitare l'accesso al contenuto a un periodo di tempo specificato. Se si seleziona questa opzione, le licenze di emissione degli utenti per accedere al contenuto scadranno dopo il numero di giorni specificato e agli utenti verrà richiesto di tornare al server per verificare le credenziali e scaricare una nuova copia.|Selezionare la casella di controllo Dopo il download, i diritti di accesso al documento scadranno dopo questi giorni **(1-365)** e quindi specificare il numero di giorni per cui si desidera che il documento sia visualizzabile.|
 | Impedire agli utenti di caricare documenti che non supportano IRM in questo elenco o raccolta. Se si seleziona questa opzione, gli utenti non saranno in grado di caricare i tipi di file seguenti: tipi di file in cui non sono installate le corrispondenti programmi di protezione IRM in tutti i server Web front-end. Tipi di file che SharePoint Server 2010 non è in grado di decrittografare. Tipi di file protetti da IRM in un altro programma.|Selezionare la **casella di controllo Non consentire agli utenti di caricare documenti che non supportano IRM.**|
-|Rimuovere le autorizzazioni limitate da questo elenco o raccolta in una data specifica.|Selezionare la **casella di controllo Interrompi limitazione** accesso alla raccolta e quindi selezionare la data desiderata.|
-|Controllare l'intervallo di memorizzazione nella cache delle credenziali per il programma concesso in licenza per l'apertura del documento. Questa impostazione è supportata solo nel cloud globale Microsoft. L'impostazione non è disponibile nelle distribuzioni cloud nazionali.|Selezionare la casella di controllo Gli utenti devono verificare le credenziali utilizzando questo intervallo **(giorni),** quindi immettere l'intervallo per la memorizzazione delle credenziali nella cache in numero di giorni.|
+|Rimuovere le autorizzazioni limitate dall'elenco o dalla raccolta in una data specifica.|Selezionare la **casella di controllo Interrompi limitazione** accesso alla raccolta e quindi selezionare la data desiderata.|
+|Controllare l'intervallo di memorizzazione nella cache delle credenziali per il programma concesso in licenza per l'apertura del documento.|Selezionare la casella di controllo Gli utenti devono verificare le credenziali utilizzando questo intervallo **(giorni),** quindi immettere l'intervallo per la memorizzazione delle credenziali nella cache in numero di giorni.|
 |Consentire la protezione dei gruppi in modo che gli utenti possano condividere con i membri dello stesso gruppo.|Selezionare **Consenti protezione gruppo** e immettere il nome del gruppo per la condivisione.|
 
 8. Dopo aver selezionato le opzioni desiderate, selezionare **OK.**
@@ -97,7 +97,7 @@ IRM consente di proteggere il contenuto con restrizioni nei modi seguenti:
   
 - Consente di impedire a un visualizzatore autorizzato di copiare, modificare, stampare, inviare fax o copiare e incollare il contenuto per uso non autorizzato
     
-- Consente di impedire a un visualizzatore autorizzato di copiare il contenuto tramite la funzionalità Stampa schermo in Microsoft Windows
+- Consente di impedire a un visualizzatore autorizzato di copiare il contenuto utilizzando la funzionalità Stampa schermo in Microsoft Windows
     
 - Consente di impedire a un visualizzatore non autorizzato di visualizzare il contenuto se viene inviato tramite posta elettronica dopo il download dal server
     
@@ -127,7 +127,7 @@ IRM non è in grado di proteggere il contenuto con restrizioni dagli elementi se
 
 La protezione IRM viene applicata ai file a livello di elenco o di raccolta. Quando IRM è abilitato per una raccolta, la gestione dei diritti si applica a tutti i file in tale raccolta. Quando IRM è abilitato per un elenco, la gestione dei diritti si applica solo ai file allegati alle voci di elenco e non alle voci di elenco effettive.
   
-Quando gli utenti scaricano file in un elenco o in una raccolta abilitata per IRM, i file vengono crittografati in modo che solo gli utenti autorizzati possano visualizzarli. Ogni file rights-managed contiene anche una licenza di pubblicazione che impone restrizioni alle persone che visualizzano il file. Le restrizioni tipiche includono la possibilità di rendere un file di sola lettura, disabilitare la copia del testo, impedire agli utenti di salvare una copia locale e impedire agli utenti di stampare il file. I programmi client in grado di leggere i tipi di file supportati da IRM utilizzano la licenza di pubblicazione all'interno del file protetto per applicare queste restrizioni. In questo modo un file rights-managed mantiene la protezione anche dopo essere stato scaricato dal server.
+Quando gli utenti scaricano file in un elenco o in una raccolta abilitata per IRM, i file vengono crittografati in modo che solo gli utenti autorizzati possano visualizzarli. Ogni file rights-managed contiene anche una licenza di pubblicazione che impone restrizioni alle persone che visualizzano il file. Le restrizioni tipiche includono la possibilità di rendere un file di sola lettura, disabilitare la copia del testo, impedire agli utenti di salvare una copia locale e impedire agli utenti di stampare il file. I programmi client in grado di leggere i tipi di file supportati da IRM utilizzano la licenza di pubblicazione all'interno del file protetto da Rights Management per applicare queste restrizioni. In questo modo un file rights-managed mantiene la protezione anche dopo essere stato scaricato dal server.
   
 I tipi di restrizioni applicati a un file quando viene scaricato da un elenco o da una raccolta si basano sulle autorizzazioni del singolo utente nel sito che contiene il file. Nella tabella seguente viene illustrato in che modo le autorizzazioni per i siti corrispondono alle autorizzazioni IRM.
   

@@ -12,5 +12,5 @@ ms.lasthandoff: 02/09/2021
 ms.locfileid: "50151271"
 ---
 > [!IMPORTANT]
-> Il Centro [sicurezza Microsoft 365](https://security.microsoft.com) migliorato è ora disponibile in anteprima pubblica. Questa nuova esperienza porta Defender per Endpoint, Defender per Office 365, Microsoft 365 Defender e altro ancora nel Centro sicurezza Microsoft 365. I team di sicurezza possono ora gestire tutte le indagini su endpoint, posta elettronica e prodotti, configurazione e correzione senza dover passare a portali di prodotti separati. [Ulteriori informazioni sulle modifiche.](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center)
+> Il nuovo [Centro sicurezza Microsoft 365](https://security.microsoft.com) è ora disponibile in anteprima pubblica. Questa nuova esperienza porta Defender per Endpoint, Defender per Office 365, Microsoft 365 Defender e altro ancora nel Centro sicurezza Microsoft 365. I team di sicurezza possono ora gestire tutte le indagini su endpoint, posta elettronica e prodotti, la configurazione e la correzione senza dover passare a portali di prodotti separati. [Ulteriori informazioni sulle modifiche.](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center)
 

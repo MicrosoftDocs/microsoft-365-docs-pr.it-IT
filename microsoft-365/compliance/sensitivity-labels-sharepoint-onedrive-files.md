@@ -241,7 +241,7 @@ Requisiti:
 
 - SharePoint Online Management Shell versione 16.0.20616.12000 o successiva.
 
-- La crittografia è stata applicata da un'etichetta di riservatezza con le impostazioni di crittografia definite dall'amministratore (le impostazioni di assegnazione [delle autorizzazioni ora dell'etichetta).](encryption-sensitivity-labels.md#assign-permissions-now) [La crittografia a chiave](encryption-sensitivity-labels.md#double-key-encryption) doppia non è supportata per questo cmdlet.
+- La crittografia è stata applicata da un'etichetta di riservatezza con impostazioni di crittografia definite dall'amministratore (le [impostazioni di](encryption-sensitivity-labels.md#assign-permissions-now) assegnazione delle autorizzazioni ora dell'etichetta). [La crittografia a chiave](encryption-sensitivity-labels.md#double-key-encryption) doppia non è supportata per questo cmdlet.
 
 Il testo di giustificazione [](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) viene aggiunto all'evento di controllo dell'etichetta di riservatezza Rimossa dal **file** e l'azione di decrittografia viene registrata anche nella registrazione dei dati di utilizzo della protezione per [Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/log-analyze-usage)
 

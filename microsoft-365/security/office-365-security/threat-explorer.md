@@ -19,12 +19,12 @@ description: Usare Esplora risorse e i rilevamenti in tempo reale nel Centro sic
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3c07ea4a44eb965ab6df834260c9dcef6e79c02a
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 5cbb8bd57a2e9bde8d19c960a71066d3ea5531c1
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142326"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233643"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Esplora minacce e rilevamenti in tempo reale
 
@@ -297,7 +297,7 @@ Queste nuove funzionalità sono descritte di seguito.
 
 ### <a name="preview-email-header-and-download-email-body"></a>Visualizzare in anteprima l'intestazione e scaricare il corpo del messaggio di posta elettronica
 
-È ora possibile visualizzare in anteprima un'intestazione di posta elettronica e scaricare il corpo del messaggio in Threat Explorer Gli amministratori possono analizzare le intestazioni e i messaggi di posta elettronica scaricati per le minacce. Poiché il download dei messaggi di posta elettronica può rischiare l'esposizione delle informazioni, questo processo è controllato dal controllo dell'accesso basato sui ruoli (RBAC). Un nuovo ruolo, *Anteprima,* deve essere aggiunto a un altro gruppo di ruoli (ad esempio Operazioni di sicurezza o Amministratore della sicurezza) per consentire il download di messaggi di posta elettronica e intestazioni di anteprima nella visualizzazione tutti i messaggi di posta elettronica.
+È ora possibile visualizzare in anteprima un'intestazione di posta elettronica e scaricare il corpo del messaggio in Threat Explorer Gli amministratori possono analizzare le intestazioni e i messaggi di posta elettronica scaricati per le minacce. Poiché il download dei messaggi di posta elettronica può rischiare l'esposizione delle informazioni, questo processo è controllato dal controllo dell'accesso basato sui ruoli (RBAC). Un nuovo ruolo, *Anteprima,* deve essere aggiunto a un altro gruppo di ruoli (ad esempio Operazioni di sicurezza o Amministratore sicurezza) per consentire il download dei messaggi di posta elettronica nella visualizzazione tutti i messaggi di posta elettronica. Tuttavia, la visualizzazione dell'intestazione del messaggio di posta elettronica non richiede alcun ruolo aggiuntivo (diverso da quello necessario per visualizzare i messaggi in Esplora minacce).
 
 Explorer e i rilevamenti in tempo reale otterranno anche nuovi campi che forniscono un quadro più completo della posizione dei messaggi di posta elettronica. Queste modifiche semplificano la ricerca delle operazioni di sicurezza. Tuttavia, il risultato principale è che è possibile conoscere rapidamente la posizione dei messaggi di posta elettronica problematici.
 

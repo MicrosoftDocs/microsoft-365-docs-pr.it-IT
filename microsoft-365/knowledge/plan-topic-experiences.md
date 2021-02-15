@@ -23,11 +23,11 @@ ms.locfileid: "50150479"
 
 In questo articolo verranno esaminate queste decisioni di pianificazione:
 
-- Quali siti di SharePoint si desidera sotto ricercare per indicizzazione per gli argomenti
+- Siti di SharePoint di cui si desidera eseguire la ricerca per indicizzazione per gli argomenti
 - Quali argomenti, se presenti, si desidera escludere dalle esperienze degli argomenti
 - Utenti a cui si desidera rendere visibili gli argomenti
 - Quali utenti si desidera concedere le autorizzazioni per gestire gli argomenti nel Centro argomenti
-- Quali utenti si desidera concedere le autorizzazioni per creare o modificare argomenti nel Centro argomenti
+- Utenti a cui si desidera concedere le autorizzazioni per creare o modificare argomenti nel Centro argomenti
 - Nome da assegnare al Centro argomenti
 
 La sicurezza e la privacy dei dati vengono rispettate e le esperienze degli argomenti non concedono agli utenti ulteriori accessi ai file per cui non hanno diritti. È consigliabile leggere anche [microsoft Viva Topics sulla sicurezza e la privacy](topic-experiences-security-privacy.md) nell'ambito del processo di pianificazione.
@@ -36,7 +36,7 @@ La sicurezza e la privacy dei dati vengono rispettate e le esperienze degli argo
 
 È necessario essere [iscritti ad Argomenti Viva](https://www.microsoft.com/microsoft-viva/topics) ed essere un amministratore globale o un amministratore di SharePoint per accedere all'interfaccia di amministrazione di Microsoft 365 e configurare Gli argomenti.
 
-Tutti gli utenti che useranno gli argomenti necessitano di **una licenza Per le esperienze di** argomento. L'assegnazione delle licenze è trattata in [Configurare Microsoft Viva Topics.](set-up-topic-experiences.md)
+Tutti gli utenti che useranno gli argomenti necessitano di **una licenza Per le esperienze degli** argomenti. L'assegnazione delle licenze è trattata in [Configurare Microsoft Viva Topics.](set-up-topic-experiences.md)
 
 ## <a name="topic-discovery"></a>Individuazione degli argomenti
 
@@ -77,7 +77,7 @@ I collaboratori degli argomenti sono i campioni e gli esperti in materia nell'or
 
 È consigliabile consentire a tutti gli utenti dell'organizzazione di creare e modificare argomenti perché le esperienze degli argomenti funzionano al meglio quando tutti gli utenti possono condividere informazioni.
 
-Se si desidera limitare la creazione e la modifica di argomenti a utenti o gruppi specifici, creare un gruppo di sicurezza per loro e specificarlo durante il processo di installazione.
+Se si desidera limitare la creazione e la modifica di argomenti a utenti o gruppi specifici, creare un gruppo di sicurezza e specificarlo durante il processo di installazione.
 
 È possibile scegliere di non consentire a nessuno di contribuire agli argomenti, ma non è consigliabile. Se si sceglie questa opzione, i knowledge manager potranno comunque modificare e creare argomenti.
 
@@ -91,7 +91,7 @@ Quando si configurano i visualizzatori di argomenti, è possibile scegliere tra:
 - **Solo utenti o gruppi di sicurezza selezionati**
 - **Nessuno**
 
-È **consigliabile usare tutti gli** utenti dell'organizzazione, ma se si sta eseguendo un progetto pilota è consigliabile scegliere solo utenti o gruppi di sicurezza selezionati. È anche possibile scegliere **Nessuno** se si desidera configurare Gli argomenti, ma non consentire agli utenti di visualizzare ancora gli argomenti. I responsabili della conoscenza avranno comunque accesso per consentire loro di visualizzare gli argomenti e ottenere assistenza per la decisione di rendere gli argomenti disponibili su vasta gamma.
+Si consiglia **a Tutti gli** utenti dell'organizzazione, ma se si sta eseguendo un progetto pilota è possibile scegliere solo utenti o gruppi di sicurezza selezionati. È anche possibile scegliere **Nessuno se** si desidera configurare Gli argomenti, ma non consentire agli utenti di visualizzare ancora gli argomenti. I responsabili della conoscenza avranno comunque accesso per consentire loro di visualizzare gli argomenti e ottenere assistenza per la decisione di rendere gli argomenti disponibili su vasta gamma.
 
 ## <a name="knowledge-rules"></a>Regole di conoscenza
 
@@ -104,7 +104,7 @@ Il file CSV deve contenere i parametri seguenti:
 - **Nome**: digitare il nome dell'argomento che si desidera escludere. Questa operazione può essere eseguita in due modi:
 - **MatchType-Exact/Partial:** specificare se il nome immesso è un *tipo* di corrispondenza esatto *o* parziale.
     - Corrispondenza esatta: è possibile includere il nome esatto o l'acronimo (ad esempio, *Contoso* o *ATL).*
-    - Corrispondenza parziale: è possibile escludere tutti gli argomenti che includono una parola specifica.  Ad esempio, *l'arco* escluderà tutti gli argomenti con la parola arco *al* suo interno, ad esempio arco *circolare,* saldatura arco *di plasma* o arco *di formazione.* Si noti che non verranno esclusi gli argomenti in cui il testo è incluso come parte di una parola, ad esempio *Architecture.*
+    - Corrispondenza parziale: è possibile escludere tutti gli argomenti che includono una parola specifica.  Ad esempio, *l'arco* escluderà tutti gli argomenti con la parola arco *al* suo interno, ad esempio cerchio ad *arco,* saldatura ad arco *di plasma* o arco *di formazione.* Si noti che non verranno esclusi gli argomenti in cui il testo è incluso come parte di una parola, ad esempio *Architecture.*
 - **Acronimo di (facoltativo):**(noto anche come *espansione)* Se si desidera escludere un acronimo, digitare le parole che l'acronimo sta per.
 
     ![Escludere gli argomenti nel modello CSV](../media/exclude-topics-csv.png) 

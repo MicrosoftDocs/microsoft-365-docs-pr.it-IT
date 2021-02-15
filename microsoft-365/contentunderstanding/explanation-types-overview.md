@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Informazioni sui tipi di spiegazione in Microsoft SharePoint Syntex
-ms.openlocfilehash: 2c2997fd165339cc43f7f007050f343794021a23
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: caba92b635feaf8f87e2c487559f70be3fab6df9
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080587"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242630"
 ---
 # <a name="introduction-to-explanation-types"></a>Introduzione ai tipi di spiegazione
 
@@ -147,43 +147,65 @@ Nel visualizzatore è possibile modificare manualmente la casella di selezione i
    ![Intervallo personalizzato](../media/content-understanding/custom-file.png)</br>
 Nel visualizzatore è possibile modificare manualmente la casella di selezione in modo da includere la posizione in cui si trova la fase. Per questa impostazione è necessario selezionare una posizione di <b>Inizio</b> e di <b>Fine</b>. Questi valori rappresentano il numero di token dall'inizio del documento. Anche se è possibile immettere manualmente questi valori, è più facile modificare manualmente la casella di selezione nel visualizzatore.</br> 
    
-
-
 ## <a name="use-explanation-templates"></a>Usare modelli di spiegazione
 
-Anche se è possibile aggiungere manualmente vari valori dell'elenco di criteri per la spiegazione, può essere più semplice usare i modelli disponibili nella raccolta di spiegazioni.
+Anche se è possibile aggiungere manualmente vari valori dell'elenco frasi per la spiegazione, può essere più semplice usare i modelli disponibili nella raccolta di spiegazioni.
 
-Ad esempio, invece di aggiungere manualmente tutte le varianti per *Data*, è possibile usare il modello di elenco pattern per *Data*, poiché include già molti valori di elenchi di criteri:</br>
+Ad esempio, invece di aggiungere manualmente tutte le varianti per *Data*, è possibile usare il modello di elenco frasi per *Data*, poiché include già molti valori di elenchi frasi:</br>
 
    ![Raccolta di spiegazioni](../media/content-understanding/explanation-template.png)</br>
  
-La raccolta di spiegazioni include spiegazioni di elenchi di criteri di uso comune, tra cui:</br>
+La raccolta di spiegazioni include spiegazioni di elenchi frasi di uso comune, tra cui:</br>
 
 - Data</br>
 - Data (numerico)</br>
 - Ora</br>
 - Numero</br>
+- Percentuale</br>
 - Numero di telefono</br>
 - CAP</br>
 - Prima parola della frase</br>
+- Fine della frase</br>
 - Carta di credito</br>
 - Numero di previdenza sociale</br>
+- Casella di controllo</br>
+- Valuta</br>
+- Copia per conoscenza e-mail</br>
+- Data e-mail</br>
+- Saluti e-mail</br>
+- Destinatario e-mail</br>
+- Mittente e-mail</br>
+- Oggetto e-mail</br>
 
-Si noti che la raccolta di spiegazioni include modelli per le spiegazioni elenco di frasi:
-- Fine della frase
-- Valuta
+La raccolta di spiegazioni include anche tre tipi di modello automatico che funzionano con i dati etichettati nei file di esempio:
 
+- Dopo l'etichetta: le parole o i caratteri dopo le etichette nei file di esempio.</br>
+- Prima dell'etichetta: le parole o i caratteri prima delle etichette nei file di esempio.</br>
+- Etichette: fino alle prime 10 etichette dei file di esempio.</br>
+
+Al fine di comprendere il funzionamento delle etichette, nell’esempio che segue verrà usato il modello di spiegazione Prima dell’etichetta che consente di fornire al modello altre informazioni per ottenere una corrispondenza più accurata.
+
+   ![File di esempio](../media/content-understanding/before-label.png)</br>
+
+Quando si seleziona il modello di spiegazione Prima dell'etichetta, questo cerca il primo set di parole visualizzato prima dell'etichetta nei file di esempio. Le parole identificate nel primo file di esempio sono "Dal”.
+
+   ![Modello prima dell’etichetta](../media/content-understanding/before-label-explanation.png)</br>
+
+È possibile selezionare <b>Aggiungi</b> per creare una spiegazione del modello.  Man mano che si aggiungono altri file di esempio, vengono identificate e aggiunte altre parole all'elenco frasi.
+
+   ![Aggiungere l'etichetta](../media/content-understanding/before-label-add.png)</br>
+ 
 #### <a name="to-use-a-template-from-the-explanation-library"></a>Per usare un modello dalla raccolta di spiegazioni
 
 1. Nella sezione **Spiegazioni** della pagina **Avvia training** del modello selezionare **Nuovo**, quindi **Da un modello**.</br>
 
-   ![Crea da modello](../media/content-understanding/from-template.png)</br>
+   ![Aggiungere prima dell'etichetta](../media/content-understanding/from-template.png)</br>
 
 2.  Nella pagina **Modelli di spiegazione** selezionare la spiegazione da usare, quindi selezionare **Aggiungi**.</br>
 
        ![Selezionare un modello](../media/content-understanding/phone-template.png)</br>
 
-3. Le informazioni relative al modello selezionato sono visualizzate nella pagina **Crea spiegazione**. Se necessario, modificare il nome della spiegazione e aggiungere o rimuovere voci nell'elenco criteri. </br> 
+3. Le informazioni relative al modello selezionato sono visualizzate nella pagina **Crea spiegazione**. Se necessario, modificare il nome della spiegazione e aggiungere o rimuovere le voci dall'elenco frasi. </br> 
 
    ![Modifica modello](../media/content-understanding/phone-template-live.png)</br>
 

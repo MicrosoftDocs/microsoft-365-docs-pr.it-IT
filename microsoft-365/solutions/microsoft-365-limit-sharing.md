@@ -19,12 +19,12 @@ f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: Altre informazioni sulle opzioni per limitare o disabilitare la condivisione in Microsoft 365.
-ms.openlocfilehash: 504d2b5dd72aead266697d273395e371ad6f5846
-ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
+ms.openlocfilehash: 388d354886805f593b1c7815f16d1e0156e12fe0
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49030042"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233531"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Limitare la condivisione in Microsoft 365
 
@@ -37,8 +37,8 @@ I metodi di condivisione dei file sono elencati nella tabella seguente. Per info
 |[Gruppo o team di Microsoft 365](#microsoft-365-group-or-team)|Gli utenti che hanno accesso a un team di Microsoft Teams o a un gruppo di Microsoft 365 hanno accesso in modifica ai file nel sito di SharePoint associato.|Se il gruppo o il team è privato, gli inviti di condivisione per partecipare al team devono essere approvati dal proprietario. Gli amministratori possono disabilitare l'accesso guest o usare le etichette di riservatezza per impedire l'accesso da parte di utenti esterni all'organizzazione.|
 |[Sito di SharePoint](#sharepoint-site)|Agli utenti può essere concesso l'accesso come proprietari, membri o visitatori di un sito di SharePoint e avranno quel livello di accesso ai file nel sito.|È possibile limitare le autorizzazioni per il sito in modo che solo i proprietari possano condividere il sito. Gli amministratori possono configurare un sito come di sola lettura, o bloccare del tutto l’accesso.|
 |[Condivisione con persone specifiche](#sharing-with-specific-people)|I membri del sito e le persone con autorizzazioni di modifica possono concedere autorizzazioni dirette ai file e alle cartelle o condividerli con collegamenti *Persone specifiche*.|È possibile limitare le autorizzazioni per il sito in modo che solo i proprietari possano condividere file e cartelle. In questo caso, l'accesso diretto e la condivisione di collegamenti *Persone specifiche* da parte dei membri del sito passano dal proprietario del sito per l'approvazione.|
-|[Condivisione guest di SharePoint](#sharepoint-guest-sharing)|I proprietari e i membri dei siti di SharePoint possono condividere file e cartelle con persone esterne all'organizzazione.|La condivisione guest può essere disabilitata per l'intera organizzazione o per singoli siti.|
-|[Collegamenti di condivisione *Persone nell'organizzazione*](#people-in-your-organization-sharing-links)|I proprietari e i membri dei siti di SharePoint possono condividere file usando collegamenti di tipo *Persone nell'organizzazione* , che funzioneranno per chiunque si trovi all'interno dell'organizzazione.|I collegamenti *Persone nell'organizzazione* possono essere disattivati a livello di sito.|
+|[Condivisione guest di SharePoint e OneDrive](#sharepoint-guest-sharing)|I proprietari e i membri dei siti di SharePoint e OneDrive possono condividere file e cartelle con persone esterne all'organizzazione.|La condivisione guest può essere disabilitata per l'intera organizzazione o per singoli siti.|
+|[Collegamenti di condivisione *Persone nell'organizzazione*](#people-in-your-organization-sharing-links)|I proprietari e i membri dei siti di SharePoint possono condividere file usando collegamenti di tipo *Persone nell'organizzazione*, che funzioneranno per chiunque si trovi all'interno dell'organizzazione.|I collegamenti *Persone nell'organizzazione* possono essere disattivati a livello di sito.|
 |[Condividere siti, gruppi e team](#create-sites-groups-and-teams)|Per impostazione predefinita, gli utenti possono creare nuovi siti, gruppi e team da cui possono condividere i contenuti.|Gli amministratori possono limitare chi può creare siti, gruppi e team.|
 |[Posta elettronica](#email)|Le persone che hanno accesso a un file possono inviarlo ad altri tramite posta elettronica.|Gli amministratori possono crittografare i file usando etichette di riservatezza per evitare che vengano condivisi con persone non autorizzate.|
 |[Download o copia di file](#download-or-file-copy)|Le persone che hanno accesso a un file possono scaricarlo o copiarlo e condividerlo con altri utenti esterni all'ambito di Microsoft 365.|Gli amministratori possono crittografare i file usando etichette di riservatezza per evitare che vengano condivisi con persone non autorizzate.|
@@ -109,7 +109,7 @@ Per disattivare le richieste di accesso
 Per limitare la condivisione del sito in base al dominio
 1. Nell'interfaccia di amministrazione di SharePoint, in **Siti** fare clic su **Siti attivi**.
 2. Fare clic sul sito che si vuole configurare.
-3. Nella scheda **Criteri** , in **Condivisione esterna** fare clic su **Modifica**.
+3. Nella scheda **Criteri**, in **Condivisione esterna** fare clic su **Modifica**.
 4. In **Impostazioni avanzate per la condivisione esterna** selezionare **Limita la condivisione esterna in base al dominio**.
 5. Aggiungere i domini da consentire o bloccare e quindi fare clic su **Salva**.
 6. Fare clic su **Salva**.
@@ -151,10 +151,12 @@ Per disattivare la condivisione guest di SharePoint per l'organizzazione
 Per disattivare la condivisione guest per un sito
 1. Nell'interfaccia di amministrazione di SharePoint, in **Siti** fare clic su **Siti attivi**.
 2. Fare clic sul sito che si vuole configurare.
-3. Nella scheda **Criteri** , in **Condivisione esterna** fare clic su **Modifica**.
+3. Nella scheda **Criteri**, in **Condivisione esterna** fare clic su **Modifica**.
 4. In **Condivisione esterna** scegliere **Solo persone nell'organizzazione** e quindi fare clic su **Salva**.
 
     ![Screenshot delle impostazioni di condivisione a livello di sito in SharePoint configurato come “Solo persone nell’organizzazione”](../media/sharepoint-site-external-sharing-settings-off.png)
+
+È possibile disattivare la condivisione guest per un singolo OneDrive facendo clic sull'utente nell'interfaccia di amministrazione di Microsoft 365 e selezionando **Gestisci condivisione esterna** nella scheda **OneDrive**.
 
 Se si vuole consentire la condivisione con persone esterne all'organizzazione, assicurandosi però che tutti gli utenti siano autenticati, è possibile disabilitare i collegamenti *Chiunque* (condivisione anonima) per l'intera organizzazione o per un singolo sito.
 
@@ -168,7 +170,7 @@ Per disattivare i collegamenti di tipo *Chiunque* a livello di organizzazione
 Per disattivare i collegamenti di tipo *Chiunque* per un sito
 1. Nell'interfaccia di amministrazione di SharePoint, in **Siti** fare clic su **Siti attivi**.
 2. Fare clic sul sito che si vuole configurare.
-3. Nella scheda **Criteri** , in **Condivisione esterna** fare clic su **Modifica**.
+3. Nella scheda **Criteri**, in **Condivisione esterna** fare clic su **Modifica**.
 4. In **Condivisione esterna** scegliere **Utenti guest nuovi ed esistenti** e quindi fare clic su **Salva**.
 
     ![Screenshot delle impostazioni di condivisione a livello di sito in SharePoint configurato come “Impostazioni nuove ed esistenti”](../media/sharepoint-site-external-sharing-settings-new-existing-guests.png)
@@ -177,11 +179,15 @@ Per disattivare i collegamenti di tipo *Chiunque* per un sito
 
 Per impostazione predefinita, i membri di un sito possono condividere file e cartelle con altre persone dell'organizzazione usando un collegamento di tipo *Persone nell'organizzazione*. È possibile disabilitare i collegamenti *Persone nell'organizzazione* usando PowerShell:
 
-`Set-SPOSite -Identity <site> -DisableCompanyWideSharingLinks`
+```powershell
+Set-SPOSite -Identity <site> -DisableCompanyWideSharingLinks
+```
 
 Ad esempio:
 
-`Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingLinks`
+```powershell
+Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingLinks
+```
 
 ## <a name="create-sites-groups-and-teams"></a>Creare siti, gruppi e team
 
@@ -190,7 +196,8 @@ Per impostazione predefinita, gli utenti possono creare nuovi siti, gruppi e tea
 - [Gestire la creazione di siti in SharePoint](https://docs.microsoft.com/sharepoint/manage-site-creation)
 - [Gestire chi può creare gruppi in Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/manage-creation-of-groups)
 
-Notare che limitare la creazione dei gruppi limita la creazione dei team.
+> [!NOTE]
+> Limitare la creazione di gruppo condiziona la creazione di team.
 
 ## <a name="email"></a>Posta elettronica
 

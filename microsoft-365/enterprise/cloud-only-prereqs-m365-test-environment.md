@@ -5,7 +5,6 @@ f1.keywords:
 - NOCSH
 ms.author: josephd
 manager: laurawi
-ms.date: 12/12/2019
 audience: ITPro
 ms.topic: article
 ms.service: o365-solutions
@@ -15,30 +14,31 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Creare un ambiente Microsoft 365 per testare l'accesso di identità e dispositivi per l'autenticazione solo per cloud.
-ms.openlocfilehash: aa18e1a9943ec12465737f6c3f2e12c1fa49e2a3
-ms.sourcegitcommit: cd17328baa58448214487e3e68c37590ab9fd08d
+ms.openlocfilehash: 1e659304eee330960937b641c9a39b03920f52e7
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48398878"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233131"
 ---
 # <a name="identity-and-device-access-prerequisites-for-cloud-only-in-your-microsoft-365-test-environment"></a>Prerequisiti di accesso di identità e dispositivi solo per cloud nell’ambiente di testing di Microsoft 365
 
 *Questa guida del laboratorio di testing può essere usata solo per gli ambienti di testing di Microsoft 365 per le aziende.*
 
-[Le configurazioni di identità e accesso](../security/office-365-security/microsoft-365-policies-configurations.md) ai dispositivi sono un set di configurazioni e criteri di accesso condizionale per proteggere l'accesso a tutti i servizi integrati con Azure Active Directory (Azure AD).
+[Le configurazioni di identità e](../security/office-365-security/microsoft-365-policies-configurations.md) accesso ai dispositivi sono un set di configurazioni consigliate e criteri di accesso condizionale per proteggere l'accesso a tutti i servizi integrati con Azure Active Directory (Azure AD).
 
 In questo articolo viene descritto come configurare un ambiente di testing di Microsoft 365 che soddisfi i requisiti della [configurazione dei prerequisiti solo per cloud](../security/office-365-security/identity-access-prerequisites.md#prerequisites) per l’accesso di identità e dispositivi.
 
-Le fasi principali della configurazione dell'ambiente di testing sono sette:
+Le fasi principali della configurazione dell'ambiente di testing sono otto:
 
-1.  Creare l'ambiente di testing semplificato
-2.  Configurare le posizioni specifiche
-3.  Configurare il writeback delle password
-4.  Configurare la reimpostazione self-service delle password
-5.  Configurare l’autenticazione a più fattori
-6.  Abilitare Azure AD Identity Protection
-7.  Abilitare l'autenticazione moderna per Exchange Online e Skype for Business Online
+1. Creare l'ambiente di testing semplificato
+2. Configurare le posizioni specifiche
+3. Configurare la reimpostazione self-service delle password
+4. Configurare l’autenticazione a più fattori
+5. Abilitare la registrazione automatica dei dispositivi di computer Windows aggiunti a un dominio
+6. Configurare la protezione con password di Azure AD 
+7. Abilitare Azure AD Identity Protection
+8. Abilitare l'autenticazione moderna per Exchange Online e Skype for Business Online
 
 ## <a name="phase-1-build-out-your-lightweight-microsoft-365-test-environment"></a>Fase 1: creare l'ambiente di testing semplificato di Microsoft 365 
 
@@ -47,18 +47,13 @@ Di seguito è riportata la configurazione risultante.
 
 ![Ambiente di testing semplificato di Microsoft 365 Enterprise](../media/lightweight-base-configuration-microsoft-365-enterprise/Phase4.png)
  
-
 ## <a name="phase-2-configure-named-locations"></a>Fase 2: configurare le posizioni specifiche
 
 Prima di tutto è necessario determinare gli indirizzi IP pubblici o gli intervalli di indirizzi usati all'interno dell'organizzazione.
 
 Quindi, seguire le istruzioni contenute in [Configurare le posizioni specifiche in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/reports-monitoring/quickstart-configure-named-locations) per aggiungere gli indirizzi o gli intervalli di indirizzi come posizioni specifiche. 
 
-## <a name="phase-3-configure-password-writeback"></a>Fase 3: configurare il writeback delle password
-
-Seguire le istruzioni contenute in[Fase 2 della guida al lab di test sul writeback delle password](password-writeback-m365-ent-test-environment.md#phase-2-enable-password-writeback-for-the-testlab-ad-ds-domain).
-
-## <a name="phase-4-configure-self-service-password-reset"></a>Fase 4: configurare la reimpostazione delle password self-service
+## <a name="phase-3-configure-self-service-password-reset"></a>Fase 3: configurare la reimpostazione della password in modalità self-service
 
 Seguire le istruzioni contenute nella [Fase 3 della guida al lab di test per la reimpostazione della password](password-reset-m365-ent-test-environment.md#phase-3-configure-and-test-password-reset). 
 
@@ -71,7 +66,7 @@ Quando si abilita la reimpostazione della password degli account in un determina
 
 Testare la reimpostazione della password solo per l'account Utente 2.
 
-## <a name="phase-5-configure-multi-factor-authentication"></a>Fase 5: configurare l’autenticazione a più fattori
+## <a name="phase-4-configure-multi-factor-authentication"></a>Fase 4: configurare l'autenticazione a più fattori
 
 Seguire le istruzioni contenute nella [Fase 2 della guida al lab di test per autenticazione a più fattori](multi-factor-authentication-microsoft-365-test-environment.md#phase-2-enable-and-test-multi-factor-authentication-for-the-user-2-account) per gli account utente seguenti:
 
@@ -82,11 +77,19 @@ Seguire le istruzioni contenute nella [Fase 2 della guida al lab di test per aut
 
 Testare l'autenticazione a più fattori solo per l'account Utente 2.
 
-## <a name="phase-6-enable-azure-ad-identity-protection"></a>Fase 6: abilitare Azure AD Identity Protection
+## <a name="phase-5-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>Fase 5: abilitare la registrazione automatica dei dispositivi dei computer Windows aggiunti a un dominio 
+
+Segui [queste istruzioni per](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) abilitare la registrazione automatica dei dispositivi dei computer Windows aggiunti a un dominio.
+
+## <a name="phase-6-configure-azure-ad-password-protection"></a>Fase 6: configurare la protezione con password di Azure AD 
+
+Seguire [queste istruzioni](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) per bloccare le password deboli note e le relative varianti.
+
+## <a name="phase-7-enable-azure-ad-identity-protection"></a>Fase 7: abilitare Azure AD Identity Protection
 
 Seguire le istruzioni contenute nella [Fase 2 della guida al lab di test per Azure AD Identity Protection](azure-ad-identity-protection-microsoft-365-test-environment.md#phase-2-use-azure-ad-identity-protection). 
 
-## <a name="phase-7-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>Fase 7: abilitare l'autenticazione moderna per Exchange Online e Skype for Business Online
+## <a name="phase-8-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>Fase 8: abilitare l'autenticazione moderna per Exchange Online e Skype for Business Online
 
 Per Exchange Online, fare clic su [queste istruzioni](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later). 
 
@@ -106,7 +109,7 @@ Per Skype for Business Online:
   Get-CsOAuthConfiguration
   ```
 
-Il risultato è un ambiente di testing che soddisfa i requisiti di [Configurazione dei prerequisiti solo per cloud](../security/office-365-security/identity-access-prerequisites.md#prerequisites) per l’identità e l’accesso dei dispositivi. 
+Il risultato è un ambiente di testing che soddisfa i requisiti della configurazione dei prerequisiti solo [cloud](../security/office-365-security/identity-access-prerequisites.md#prerequisites) per l'identità e l'accesso ai dispositivi. 
 
 ## <a name="next-step"></a>Passaggio successivo
 

@@ -16,16 +16,18 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 description: Informazioni su come configurare una collaborazione sicura sui contenuti in Teams per proteggere i dati in base alla riservatezza.
-ms.openlocfilehash: f65657125fef8b8cf7e4e229d70d8fe211153392
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: c92dc6dbf62d3fa0cb00307447b3d5a793830394
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613585"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233857"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Proteggere la collaborazione con Microsoft 365
 
-La possibilità di condividere facilmente le informazioni con le persone giuste, evitando il sovrastono, è fondamentale per il successo di un'organizzazione. Ciò include la possibilità di condividere i dati sensibili in modo sicuro solo con gli utenti che devono accedervi. A seconda del progetto, ciò potrebbe includere la condivisione di dati sensibili con persone esterne all'organizzazione.
+La possibilità di condividere facilmente le informazioni con le persone giuste, evitando il sovrastono, è fondamentale per il successo di un'organizzazione. Ciò include la possibilità di condividere i dati sensibili in modo sicuro solo con gli utenti che devono accedervi. A seconda del progetto, potrebbe essere incluso la condivisione di dati sensibili con persone esterne all'organizzazione.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxMmL?autoplay=false]
 
 Questa guida alla soluzione di collaborazione include due componenti che consentono di:
 - Distribuire Microsoft Teams con il giusto livello di protezione per ogni progetto
@@ -33,7 +35,7 @@ Questa guida alla soluzione di collaborazione include due componenti che consent
 
 ![Distribuire Teams con una protezione appropriata e configurare la condivisione esterna con le impostazioni di sicurezza appropriate](..\media\solutions-architecture-center\secure-collaboration-overview.png)
 
-Se non sono disponibili strumenti di collaborazione sul contenuto versatili e di facile utilizzo, gli utenti spesso collaboreranno inviando tramite posta elettronica i documenti. Si tratta di un metodo di collaborazione noioso e con rischio di errore e può aumentare il rischio di una condivisione inappropriata delle informazioni. Se gli utenti trovano troppo difficile condividere le informazioni, potrebbero tornare a usare prodotti consumer non regolamentati dall'IT. Questo può rappresentare un rischio ancora maggiore.
+Se gli strumenti di collaborazione sul contenuto versatili e facili da usare non sono disponibili, gli utenti spesso collaborano inviando tramite posta elettronica i documenti. Si tratta di un metodo di collaborazione noioso e rischioso per gli errori e può aumentare il rischio di una condivisione inappropriata delle informazioni. Se gli utenti trovano troppo difficile condividere le informazioni, potrebbero tornare a usare prodotti consumer non regolamentati dall'IT. Questo può rappresentare un rischio ancora maggiore.
 
 Con Microsoft 365, è possibile distribuire Teams con un'ampia gamma di configurazioni che consentono di:
 
@@ -50,7 +52,7 @@ La maggior parte delle organizzazioni dispone di una vasta gamma di informazioni
 
 Le informazioni, ad esempio le opuscoli di marketing, sono destinate alla condivisione su vasta base all'esterno dell'organizzazione. Informazioni come i menu della mensa non sono destinate alla condivisione esterna, ma non avrebbero alcun impatto aziendale se fossero condivise esternamente. Questi tipi di informazioni non necessitano di alcuna protezione.
 
-Le stesse depliant marketing, in fase di sviluppo, potrebbero essere condivise solo all'interno dell'organizzazione. In questo caso, le impostazioni di condivisione predefinite in Teams potrebbero essere sufficienti.
+Le stesse depliant marketing, mentre sono in fase di sviluppo, potrebbero essere condivise solo all'interno dell'organizzazione. In questo caso, le impostazioni di condivisione predefinite in Teams potrebbero essere sufficienti.
 
 Le informazioni su un nuovo prodotto in fase di sviluppo potrebbero essere considerate sensibili, anche all'interno dell'organizzazione. In questo caso potrebbe essere appropriato un livello di protezione maggiore. Ad esempio, è possibile limitare l'accesso a queste informazioni ai membri di un team specifico. A seconda del progetto, potrebbe essere necessario collaborare con persone esterne all'organizzazione, ad esempio un fornitore o un'organizzazione partner.
 
@@ -105,7 +107,7 @@ Se si dispone di un progetto altamente sensibile che richiede una protezione agg
 
 ### <a name="sharing-with-people-outside-your-organization"></a>Condivisione con persone esterne all'organizzazione
 
-Potrebbe essere necessario condividere informazioni di riservatezza con persone esterne [all'organizzazione.](collaborate-with-people-outside-your-organization.md) Questo può variare dalla condivisione di un singolo documento con una sola persona alla collaborazione su un progetto principale con un'organizzazione partner di grandi dimensioni o con professionisti di tutto il mondo. In Microsoft 365, questa gamma di condivisione esterna può essere eseguita facilmente e con le misure di sicurezza appropriate per proteggere le informazioni riservate.
+Potrebbe essere necessario condividere informazioni di riservatezza con persone esterne [all'organizzazione.](collaborate-with-people-outside-your-organization.md) Questo può variare dalla condivisione di un singolo documento con una sola persona alla collaborazione a un progetto principale con un'organizzazione partner di grandi dimensioni o con professionisti di tutto il mondo. In Microsoft 365, questa gamma di condivisione esterna può essere eseguita facilmente e con le misure di sicurezza appropriate per proteggere le informazioni riservate.
 
 Queste risorse consentono di iniziare a configurare l'ambiente per collaborare con persone esterne all'organizzazione:
 

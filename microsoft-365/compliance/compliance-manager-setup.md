@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Impostare le autorizzazioni utente e i ruoli di Microsoft Compliance Manager e configurare test automatizzati delle azioni. Gestire la cronologia utente e filtrare la visualizzazione del dashboard.
-ms.openlocfilehash: e130fc3438fc8b4674b752e25fc473ee0dd55ae4
-ms.sourcegitcommit: df58fd8ebe14ca98fc1be84dbfb9c29ef7ab1d62
+ms.openlocfilehash: c032f537dd0a24632cc702f8363697b85df7e7ca
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49870911"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233774"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introduzione a Compliance Manager
 
@@ -30,7 +30,7 @@ ms.locfileid: "49870911"
 
 ## <a name="who-can-access-compliance-manager"></a>Chi può accedere a Compliance Manager
 
-Compliance Manager è disponibile per le organizzazioni con licenze di Office 365 e Microsoft 365 e per i clienti di US Government Community Cloud (GCC) Moderate e GCC High. Le funzionalità di gestione e disponibilità della valutazione dipendono dal contratto di licenza.  [Visualizzare i dettagli della descrizione del servizio.](https://go.microsoft.com/fwlink/?linkid=2132371)
+Compliance Manager è disponibile per le organizzazioni con licenze di Office 365 e Microsoft 365 e per i clienti di US Government Community Cloud (GCC) Moderate e GCC High. La disponibilità della valutazione e le funzionalità di gestione dipendono dal contratto di licenza.  [Visualizzare i dettagli della descrizione del servizio.](https://go.microsoft.com/fwlink/?linkid=2132371)
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
@@ -49,14 +49,14 @@ Compliance Manager usa un modello di autorizzazione del controllo di accesso bas
 
 ### <a name="where-to-set-permissions"></a>Dove impostare le autorizzazioni
 
-La persona che ha il ruolo di amministratore globale per l'organizzazione può impostare le autorizzazioni utente per COmpliance Manager. Le autorizzazioni possono essere impostate nel Centro sicurezza & e conformità di Office 365 e in Azure Active Directory (Azure AD).
+La persona che ha il ruolo di amministratore globale per l'organizzazione può impostare le autorizzazioni utente per Compliance Manager. Le autorizzazioni possono essere impostate nel Centro sicurezza & e conformità di Office 365 e in Azure Active Directory (Azure AD).
 
 > [!NOTE]
 > I clienti negli ambienti GCC (Us Government Community) High possono impostare solo le autorizzazioni utente e i ruoli per Compliance Manager in Azure AD. Vedere di seguito per le istruzioni di Azure AD e le definizioni dei tipi di ruolo.
 
 Per impostare le autorizzazioni e assegnare ruoli nel Centro sicurezza & e conformità di Office 365, eseguire la procedura seguente:
 
-1. Passare al Centro sicurezza e conformità di [Office 365 & e](https://protection.office.com/) selezionare **Autorizzazioni** nel riquadro di spostamento sinistro.
+1. Passare al Centro [sicurezza e conformità di Office 365 & e](https://protection.office.com/) selezionare **Autorizzazioni** nel riquadro di spostamento sinistro.
 
 2. Individuare il gruppo di ruoli a cui si desidera aggiungere uno o più utenti e selezionare la casella a sinistra del nome del gruppo. Vedere [l'elenco dei ruoli e delle funzioni correlate di seguito.](#role-types) I nomi dei gruppi di ruoli simulano il nome del ruolo.
 
@@ -68,7 +68,7 @@ Per impostare le autorizzazioni e assegnare ruoli nel Centro sicurezza & e confo
 
 6. Seleziona la casella di controllo accanto ai nomi che vuoi aggiungere, quindi seleziona il **pulsante** Aggiungi nella parte inferiore.
 
-7. Al termine dell'assegnazione degli utenti, selezionare **Fine,** quindi **salva** e **chiudi.**
+7. Al termine dell'assegnazione degli utenti, **selezionare** Fine, quindi **salva** e **chiudi.**
 
 ##### <a name="more-about-the-office-365-security--compliance-center"></a>Ulteriori informazioni sul Centro sicurezza e conformità & di Office 365
 
@@ -97,14 +97,14 @@ La tabella seguente mostra le funzioni consentite da ogni ruolo in Compliance Ma
 
 ## <a name="settings-for-automated-testing-and-user-history"></a>Impostazioni per i test automatizzati e la cronologia utente
 
-Le impostazioni di Compliance Manager nel Centro conformità Microsoft 365 consentono di abilitare e disabilitare il test automatico delle azioni di miglioramento. Le impostazioni consentono inoltre di gestire i dati degli utenti associati alle azioni di miglioramento, inclusa la possibilità di riassegnare le azioni di miglioramento a un altro utente.  Solo le persone con un ruolo di amministratore globale o amministratore di Compliance Manager possono accedere alle impostazioni di Compliance Manager.
+Le impostazioni di Compliance Manager nel Centro conformità Microsoft 365 consentono di abilitare e disabilitare il test automatico delle azioni di miglioramento. Le impostazioni consentono inoltre di gestire i dati degli utenti associati alle azioni di miglioramento, inclusa la possibilità di riassegnare le azioni di miglioramento a un altro utente.  Solo gli utenti con un ruolo di amministratore globale o amministratore di Compliance Manager possono accedere alle impostazioni di Compliance Manager.
 
 > [!NOTE]
 > La funzionalità di test automatizzato non è disponibile per i clienti in ambienti GCC High perché Secure Score non è disponibile in questi ambienti. I clienti GCC High dovranno implementare e testare manualmente le azioni di miglioramento.
 
 ### <a name="set-up-automated-testing"></a>Configurare test automatizzati
 
-Alcune azioni di miglioramento in Compliance Manager vengono monitorate anche da [Microsoft Secure Score.](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) È possibile configurare test automatizzati delle azioni monitorate congiuntamente, il che significa che quando un'azione viene testata e aggiornata in Secure Score, questi risultati vengono sincronizzati con le stesse azioni in Compliance Manager e vengono conteggiati per il punteggio di conformità.
+Alcune azioni di miglioramento in Compliance Manager vengono monitorate anche da [Microsoft Secure Score.](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) È possibile configurare test automatizzati delle azioni che vengono monitorate congiuntamente, il che significa che quando un'azione viene testata e aggiornata in Secure Score, tali risultati vengono sincronizzati con le stesse azioni in Compliance Manager e vengono conteggiati per il punteggio di conformità.
 
 Il test automatico è attivato per impostazione predefinita per le organizzazioni nuove di Compliance Manager. Quando si distribuisce per la prima volta Microsoft 365 o Office 365, secure score impiega circa sette giorni per raccogliere completamente i dati e fattoriarlo nel punteggio di conformità.  Quando il test automatizzato è attivato, la data del test dell'azione non verrà aggiornata, ma lo stato del test verrà aggiornato. Quando vengono create nuove valutazioni, i punteggi includono automaticamente i punteggi di controllo Microsoft e l'integrazione di Secure Score.
 
@@ -138,7 +138,7 @@ Le impostazioni della cronologia utente consentono inoltre di riassegnare tutte 
 
 2. Nella pagina delle impostazioni selezionare **Compliance Manager.**
 
-3. Selezionare **Gestisci cronologia utente** dal riquadro di spostamento a sinistra.
+3. Selezionare **Gestisci cronologia utenti** dal riquadro di spostamento a sinistra.
 
 Nella **pagina Gestisci cronologia utenti** viene visualizzato un elenco di tutti gli utenti in base all'indirizzo di posta elettronica assegnato a un'azione di miglioramento. Utilizzare il **pulsante Cerca** per trovare rapidamente un utente specifico digitando l'indirizzo di posta elettronica.
 
@@ -266,7 +266,7 @@ Il dashboard di Compliance Manager mostra le **azioni di miglioramento chiave.**
 
 Nella pagina delle azioni di miglioramento vengono visualizzate tutte le azioni di miglioramento gestite dall'organizzazione. Le azioni gestite da Microsoft possono essere visualizzate all'interno di ogni valutazione (ulteriori informazioni [sulle azioni di Microsoft).](compliance-manager-assessments.md#microsoft-actions-tab)
 
-Se nella pagina delle azioni di miglioramento è disponibile un lungo elenco di azioni, può essere utile filtrare la visualizzazione. Selezionare **Filtro** nell'angolo superiore destro dell'elenco delle azioni. Quando viene **visualizzato il** riquadro a comparsa Filtri, selezionare i criteri in base alle normative e agli standard, alla soluzione e al gruppo. Puoi anche personalizzare la visualizzazione selezionando **Raggruppa** nell'angolo in alto a destra. Nel menu a discesa selezionare per visualizzare per gruppo, soluzione, categoria, tipo di azione o stato.
+Se nella pagina delle azioni di miglioramento è disponibile un lungo elenco di azioni, può essere utile filtrare la visualizzazione. Selezionare **Filtro** nell'angolo superiore destro dell'elenco delle azioni. Quando viene **visualizzato il** riquadro a comparsa Filtri, selezionare i criteri in base alle normative e agli standard, alla soluzione e al gruppo. Puoi anche personalizzare la visualizzazione selezionando **Raggruppa** nell'angolo superiore destro. Dal menu a discesa selezionare per visualizzare per gruppo, soluzione, categoria, tipo di azione o stato.
 
 La visualizzazione predefinita per questa pagina non mostra le azioni di miglioramento con stato Test **superato.** Per visualizzare le azioni che hanno superato i test, selezionare la **casella** Superato nel riquadro a comparsa Filtri. Solo le azioni con stato test **superato vengono** conteggiati verso il punteggio. Alcune azioni potrebbero mostrare un'etichetta **di aggiornamento in sospeso.** Ulteriori informazioni sugli [aggiornamenti alle azioni di miglioramento.](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions)
 
@@ -284,7 +284,7 @@ Nella pagina delle azioni di miglioramento vengono mostrati i punti dati seguent
     - **Superato** : implementazione testata correttamente
     - **Rischio basso non riuscito** - test non riuscito, basso rischio
     - **Rischio medio non riuscito** - test non riuscito, rischio medio
-    - **Rischio elevato non riuscito** - test non riuscito, rischio elevato
+    - **Rischio elevato non riuscito** - test non riusciti, rischio elevato
     - **Fuori ambito:** l'azione non è nell'ambito della valutazione e non influisce sul punteggio
     - **Da verificare:** per il test manuale, indica che un'azione è stata implementata ma non testata; per il test automatizzato, indica che un'azione è in attesa del risultato dell'automazione
     - **Impossibile essere rilevato:** impossibile determinare lo stato automatico
@@ -312,9 +312,9 @@ Puoi anche modificare la visualizzazione per visualizzare le valutazioni per gru
 
 Nella pagina delle soluzioni vengono visualizzate le soluzioni dell'organizzazione connesse alle azioni di miglioramento. Nella tabella sono elencati il contributo di ogni soluzione al punteggio complessivo, i punti ottenuti e possibili all'interno di tale soluzione e il numero rimanente di azioni di miglioramento raggruppate in tale soluzione che possono aumentare il punteggio.
 
-Da questa schermata puoi eseguire un'azione in due modi:
+Esistono due modi per eseguire un'azione da questa schermata:
 
-1. Nella riga della soluzione prevista, nella colonna **Azioni rimanenti,** selezionare il numero con collegamento ipertestuale. Verrà visualizzata una visualizzazione filtrata della schermata delle azioni di miglioramento che mostra le azioni di miglioramento non testate per la soluzione.
+1. Nella riga della soluzione prevista, nella colonna **Azioni rimanenti** selezionare il numero con collegamento ipertestuale. Verrà visualizzata una visualizzazione filtrata della schermata delle azioni di miglioramento che mostra le azioni di miglioramento non testate per la soluzione.
 
 2. Nella riga della soluzione prevista selezionare Apri nella colonna **Apri** **soluzione.** La soluzione o la posizione verranno visualizzati nei Centri sicurezza e conformità di Microsoft 365 e Office 365 in cui è possibile eseguire l'azione consigliata.
 

@@ -17,18 +17,18 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Informazioni sui passaggi di configurazione di Microsoft 365 necessari per configurare un team per la collaborazione su attività, conversazioni e documentazione con gli utenti guest in Teams.
-ms.openlocfilehash: 34b7d5d47d7fb0c9196beda70184fa6510b6cc33
-ms.sourcegitcommit: ec293978e951b09903b79e6642aa587824935e0c
+ms.openlocfilehash: 66c5692dd8cd233d8b3639f8ce0755ce51b60c0a
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "49780545"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233075"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Collaborare con gli utenti guest in un team
 
 Se è necessario collaborare con gli utenti guest tra documenti, attività e conversazioni, è consigliabile usare Microsoft Teams. Teams offre tutte le funzionalità di collaborazione disponibili in Office e SharePoint con chat persistente e un set personalizzabile ed estendibile di strumenti di collaborazione in un'esperienza utente unificata.
 
-In questo articolo verranno descritti i passaggi di configurazione di Microsoft 365 necessari per configurare un team per la collaborazione con gli utenti guest.
+In questo articolo verranno descritti i passaggi di configurazione di Microsoft 365 necessari per configurare un team per la collaborazione con gli utenti guest. Dopo aver configurato l'accesso guest, è possibile invitare utenti guest a team seguendo la procedura descritta in [Aggiungere guest a un team in Teams.](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f)
 
 ## <a name="video-demonstration"></a>Dimostrazione video
 
@@ -50,7 +50,7 @@ Per impostare le impostazioni di collaborazione esterna
 2. Nel riquadro di spostamento sinistro fare clic su **Azure Active Directory.**
 3. Fare **clic su Identità esterne.**
 4. Nel riquadro **di spostamento sinistro** della schermata Introduzione fare clic su Impostazioni collaborazione **esterna.**
-5. Assicurarsi che **gli amministratori e gli utenti** nel  ruolo di mittente dell'invito guest possano invitare e che i membri possano invitare siano entrambi impostati su **Sì.**
+5. Verificare che **gli amministratori e gli utenti** nel  ruolo di mittente dell'invito guest possano invitare e che i membri possano invitare siano entrambi impostati su **Sì.**
 6. Se si apportano modifiche, fare clic su **Salva**.
 
 Prendere nota delle impostazioni nella **sezione Restrizioni di** collaborazione. Assicurarsi che i domini dei guest con cui si vuole collaborare non siano bloccati.
@@ -70,7 +70,7 @@ Per configurare le impostazioni di accesso guest di Teams
 1. Accedere all'interfaccia di amministrazione di Microsoft 365 all'indirizzo [https://admin.microsoft.com](https://admin.microsoft.com).
 2. Nel riquadro di spostamento sinistro fare clic su **Mostra tutto.**
 3. In **Interfacce di amministrazione** fare clic su **Teams**.
-4. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Teams espandere **Impostazioni a livello di** organizzazione e fare clic su Accesso **guest.**
+4. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Teams espandere **Impostazioni a livello** di organizzazione e fare clic su Accesso **guest.**
 5. Assicurarsi che l'opzione **Consenti accesso ospite in Teams** sia **** abilitata.
 6. Apportare le modifiche desiderate alle impostazioni guest aggiuntive e quindi fare clic su **Salva**.
 
@@ -100,7 +100,7 @@ I contenuti di Teams, ad esempio file, cartelle ed elenchi, vengono tutti archiv
 
 Le impostazioni a livello di organizzazione determinano le impostazioni disponibili per i singoli siti, inclusi i siti associati ai team. Le impostazioni del sito non possono essere più permissive delle impostazioni a livello di organizzazione.
 
-Se si desidera consentire la condivisione di file e cartelle con utenti non autenticati, scegliere **Chiunque.** Se si desidera assicurarsi che tutti gli utenti guest devono eseguire l'autenticazione, scegliere Utenti **guest nuovi ed esistenti.** Scegliere l'impostazione più permissiva che sarà necessaria a qualsiasi sito dell'organizzazione.
+Se si desidera consentire la condivisione di file e cartelle con utenti non autenticati, scegliere **Chiunque.** Se si desidera assicurarsi che tutti gli utenti guest devono eseguire l'autenticazione, scegliere Utenti guest **nuovi ed esistenti.** Scegliere l'impostazione più permissiva che sarà necessaria a qualsiasi sito dell'organizzazione.
 
 ![Screenshot delle impostazioni di condivisione a livello di organizzazione in SharePoint](../media/sharepoint-organization-external-sharing-controls.png)
 
@@ -121,9 +121,9 @@ Tenere presente che questa impostazione influisce su tutti i team e i siti di Sh
 
 Scegliere uno dei tipi di collegamento seguenti che verranno selezionati per impostazione predefinita quando gli utenti condividono file e cartelle:
 
-- **Chiunque abbia il collegamento:** scegliere questa opzione se si prevede di eseguire una grande condivisione non autenticata di file e cartelle. Se si desidera consentire collegamenti *chiunque* ma si è preoccupati per la condivisione accidentale non autenticata, prendere in considerazione una delle altre opzioni come impostazione predefinita. Questo tipo di collegamento è disponibile solo se è stata abilitata la **condivisione chiunque.**
+- **Chiunque abbia il collegamento:** scegliere questa opzione se si prevede di eseguire una grande condivisione non autenticata di file e cartelle. Se si desidera consentire collegamenti *chiunque* ma si è preoccupati per la condivisione accidentale non autenticata, considerare una delle altre opzioni come predefinita. Questo tipo di collegamento è disponibile solo se è stata abilitata la **condivisione chiunque.**
 - **Solo gli utenti dell'organizzazione:** scegliere questa opzione se si prevede che la maggior parte della condivisione di file e cartelle sia con utenti interni all'organizzazione.
-- **Persone specifiche:** prendere in considerazione questa opzione se si prevede di eseguire molte attività di condivisione di file e cartelle con utenti guest. Questo tipo di collegamento funziona con gli utenti guest e richiede l'autenticazione.
+- **Persone specifiche:** considerare questa opzione se si prevede di eseguire molte attività di condivisione di file e cartelle con utenti guest. Questo tipo di collegamento funziona con gli utenti guest e richiede l'autenticazione.
  
 ![Screenshot delle impostazioni di condivisione di file e cartelle a livello di organizzazione in SharePoint](../media/sharepoint-organization-files-folders-sharing-settings.png)
 

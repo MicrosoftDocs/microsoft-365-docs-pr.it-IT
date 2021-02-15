@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Ottenere una panoramica dell'analisi dei documenti in Microsoft SharePoint Syntex.
-ms.openlocfilehash: c0396c8e702d3e32db93d26dba23ab038546bea0
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: d2bf581468eeee008d09a242876bed5ad07ae01f
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976520"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242411"
 ---
 # <a name="document-understanding-overview"></a>Panoramica sull'analisi dei documenti
 
@@ -46,10 +46,45 @@ Aggiungere *classificatori* ed *estrattori* ai modelli di analisi dei documento 
 
 È possibile usare i file di esempio per formare e testare i classificatori e gli estrattori nel modello. I file di esempio forniscono esempi di modelli su cosa cercare quando si prova a identificare ed estrarre dati da file. Ad esempio, è necessario formare i classificatori e gli estrattori del rinnovo del contratto con esempi di documenti di rinnovo del contratto con cui lavora l’azienda. È anche possibile usare i file di esempio per testare l'efficacia del modello.
 
-> [!NOTE]
-> Se si usa la tecnologia di riconoscimento ottico dei caratteri (OCR) per digitalizzare i documenti, Syntex ha un limite di 15 pagine per il training del modello.
-
 Dopo aver pubblicato il modello, usare il centro contenuto per applicarlo a qualsiasi raccolta documenti di SharePoint a cui si ha accesso.  
+
+### <a name="file-limitations"></a>Limitazioni relative ai file
+
+I modelli di analisi dei documenti usano la tecnologia di riconoscimento ottico dei caratteri (OCR) per analizzare file PDF, immagini e file TIFF, sia quando si esegue il training di un modello con file di esempio, sia quando si esegue il modello sui file di una raccolta documenti.
+
+Notare le differenze seguenti per quanto riguarda i file basati su testo di Microsoft Office e i file digitalizzati con OCR (PDF, immagini o TIFF):
+
+- File di Office: troncamento a 64.000 caratteri (durante il training e se eseguito sui file in una raccolta documenti).
+- File digitalizzati con OCR: è previsto un limite di 20 pagine.  
+
+#### <a name="supported-file-types"></a>Tipi di file supportati
+
+I modelli di analisi dei documenti supportano i tipi di file seguenti:
+
+- doc
+- docx
+- eml
+- heic
+- heif
+- htm
+- html
+- jpeg
+- jpg
+- markdown
+- md
+- msg
+- pdf
+- png
+- ppt
+- pptx
+- rtf
+- tif
+- tiff
+- txt
+- xls
+- xlsx
+
+
 
 ## <a name="see-also"></a>Vedere anche
 [Creare un classificatore](create-a-classifier.md)
@@ -65,3 +100,5 @@ Dopo aver pubblicato il modello, usare il centro contenuto per applicarlo a qual
 [Differenza tra un modello di analisi dei documenti e dell’elaborazione dei moduli](difference-between-document-understanding-and-form-processing-model.md)
   
 [Panoramica sull'elaborazione dei moduli](form-processing-overview.md)
+
+[Modalità di accessibilità di SharePoint Syntex](accessibility-mode.md)

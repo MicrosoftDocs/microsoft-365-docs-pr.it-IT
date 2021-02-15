@@ -19,20 +19,20 @@ search.appverid:
 - MET150
 ms.assetid: 268a109e-7843-405b-bb3d-b9393b2342ce
 ms.custom: seo-marvel-apr2020
-description: Informazioni su come usare il Centro sicurezza e conformità in Office 365 per abilitare le cassette postali di archiviazione per supportare la conservazione dei messaggi, i processi eDiscovery e i requisiti di conservazione giudiziaria dell'organizzazione.
-ms.openlocfilehash: 6ecd84e36c39a90bf6df57286ef1559431c8dda1
-ms.sourcegitcommit: 294a51ef0ff48dddb659c602e047d7fd98f91172
+description: Informazioni su come usare il centro conformità per abilitare le cassette postali di archiviazione e supportare la conservazione dei messaggi, eDiscovery e i requisiti dei blocchi dell'organizzazione.
+ms.openlocfilehash: d7506b92cc16120f1d40a6d5a1744ab38d446a76
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/08/2020
-ms.locfileid: "47407940"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233816"
 ---
-# <a name="enable-archive-mailboxes-in-the-security--compliance-center"></a>Abilitare le cassette postali di archiviazione nel Centro sicurezza e conformità
+# <a name="enable-archive-mailboxes-in-the-compliance-center"></a>Abilitare le cassette postali di archiviazione nel Centro sicurezza e conformità
 
-L'archiviazione in Office 365 (denominata anche Archiviazione sul posto) fornisce agli utenti ulteriore spazio di archiviazione per la cassetta postale. Dopo aver attivato le cassette postali di archiviazione, gli utenti possono accedere ai messaggi e archiviarli nelle cassette postali tramite Microsoft Outlook e Outlook sul Web (in precedenza noto come Outlook Web App). Gli utenti possono anche spostare o copiare i messaggi dalla cassetta postale principale a quella di archiviazione. Inoltre, possono ripristinare gli elementi eliminati dalla cartella Elementi ripristinabili nella propria cassetta postale di archiviazione con lo strumento Recupera elementi eliminati.
+L'archiviazione in Microsoft 365 (denominata anche *Archiviazione sul posto*) fornisce agli utenti ulteriore spazio di archiviazione per la cassetta postale. Dopo aver attivato le cassette postali di archiviazione, gli utenti possono accedere ai messaggi e archiviarli nelle cassette postali tramite Microsoft Outlook e Outlook sul Web (in precedenza noto come Outlook Web App). Gli utenti possono anche spostare o copiare i messaggi dalla cassetta postale principale a quella di archiviazione. Inoltre, possono ripristinare gli elementi eliminati dalla cartella Elementi ripristinabili nella propria cassetta postale di archiviazione con lo strumento Recupera elementi eliminati.
 
 > [!NOTE]
-> La funzionalità di archiviazione a espansione automatica di Office 365 offre spazio di archiviazione aggiuntivo nelle cassette postali di archiviazione. Dopo aver attivato l'archiviazione a espansione automatica, quando viene raggiunto il limite di archiviazione iniziale nella cassetta postale di un utente, Office 365 aggiunge automaticamente ulteriore spazio di archiviazione. Ciò significa che gli utenti non esauriranno lo spazio di archiviazione delle cassette postali e che non sarà necessario compiere ulteriori operazioni dopo aver abilitato la cassetta postale di archiviazione e attivato l'archiviazione a espansione automatica per l'organizzazione. Per altre informazioni, vedere [Panoramica dell'archiviazione illimitata Office 365](unlimited-archiving.md).
+> La funzionalità di archiviazione a espansione automatica di Microsoft 365 offre spazio di archiviazione aggiuntivo nelle cassette postali di archiviazione. Dopo aver attivato l'archiviazione a espansione automatica, quando viene raggiunto il limite di archiviazione iniziale nella cassetta postale di un utente, Microsoft 365 aggiunge automaticamente ulteriore spazio di archiviazione. Ciò significa che gli utenti non esauriranno lo spazio di archiviazione delle cassette postali e che non sarà necessario compiere ulteriori operazioni dopo aver abilitato la cassetta postale di archiviazione e attivato l'archiviazione a espansione automatica per l'organizzazione. Per altre informazioni, vedere [Panoramica dell'archiviazione illimitata](unlimited-archiving.md).
 
 ## <a name="get-the-necessary-permissions"></a>Ottenere i permessi necessari
 
@@ -57,7 +57,7 @@ Per abilitare o disabilitare le cassette postali di archiviazione, è necessario
 
 5. Nel riquadro del dettagli per l’utente selezionato fare clic su **Abilita**.
 
-   Verrà visualizzato un avviso che indica che, se si abilita la cassetta postale di archiviazione, gli elementi che risalgono a un periodo precedente al criterio di archiviazione assegnato alla cassetta postale, verranno spostati nella nuova cassetta postale di archiviazione. I criteri di archiviazione predefiniti che fanno parte dei criteri di conservazione assegnati alle cassette postali di Exchange Online spostano gli elementi nella cassetta postale di archiviazione due anni dopo la data in cui l'elemento è stato creato dall'utente o recapitato nella cassetta postale. Per altre informazioni, vedere la sezione **Altre informazioni ** in questo articolo.
+   Verrà visualizzato un avviso che indica che, se si abilita la cassetta postale di archiviazione, gli elementi che risalgono a un periodo precedente al criterio di archiviazione assegnato alla cassetta postale, verranno spostati nella nuova cassetta postale di archiviazione. I criteri di archiviazione predefiniti che fanno parte dei criteri di conservazione assegnati alle cassette postali di Exchange Online spostano gli elementi nella cassetta postale di archiviazione due anni dopo la data in cui l'elemento è stato creato dall'utente o recapitato nella cassetta postale. Per altre informazioni, vedere la sezione **Altre informazioni** in questo articolo.
 
 6. Fare clic su **Sì** per abilitare la cassetta postale di archiviazione.
 
@@ -68,9 +68,9 @@ Per abilitare o disabilitare le cassette postali di archiviazione, è necessario
 
 ## <a name="disable-an-archive-mailbox"></a>Disabilitazione di una cassetta postale di archiviazione
 
-È anche possibile utilizzare la pagina**Archivio** nel Centro sicurezza e conformità per disabilitare la cassetta postale di archiviazione di un utente. Dopo aver disabilitato una cassetta postale di archiviazione, è possibile connetterla di nuovo alla cassetta postale principale dell'utente entro 30 giorni dalla disabilitazione. In questo caso, i contenuti originali della cassetta postale di archiviazione vengono ripristinati. Dopo 30 giorni, i contenuti della cassetta postale di archiviazione originale vengono eliminati in modo definitivo e non possono essere ripristinati. Pertanto, se si riabilita l'archivio più di 30 giorni dopo averlo disabilitato, viene creata una nuova cassetta postale di archiviazione.
+È anche possibile utilizzare la pagina **Archivio** nel Centro sicurezza e conformità per disabilitare la cassetta postale di archiviazione di un utente. Dopo aver disabilitato una cassetta postale di archiviazione, è possibile connetterla di nuovo alla cassetta postale principale dell'utente entro 30 giorni dalla disabilitazione. In questo caso, i contenuti originali della cassetta postale di archiviazione vengono ripristinati. Dopo 30 giorni, i contenuti della cassetta postale di archiviazione originale vengono eliminati in modo definitivo e non possono essere ripristinati. Pertanto, se si riabilita l'archivio più di 30 giorni dopo averlo disabilitato, viene creata una nuova cassetta postale di archiviazione.
 
-Si noti che il criterio di archiviazione predefinito assegnato alle cassette postali degli utenti sposta gli elementi alla cassetta postale di archiviazione due anni dopo la data di consegna dell'elemento. Se si disabilita una cassetta postale di archiviazione di un utente, non verrà eseguita alcuna operazione sugli elementi della cassetta postale, che rimarranno nella cassetta postale principale dell'utente.
+Il criterio di archiviazione predefinito assegnato alle cassette postali degli utenti sposta gli elementi alla cassetta postale di archiviazione due anni dopo la data di consegna dell'elemento. Se si disabilita una cassetta postale di archiviazione di un utente, non verrà eseguita alcuna operazione sugli elementi della cassetta postale, che rimarranno nella cassetta postale principale dell'utente.
 
 Disabilitare una cassetta postale di archiviazione:
 
@@ -117,7 +117,7 @@ Enable-Mailbox -Identity <username> -Archive
 È possibile eseguire il comando seguente per abilitare le cassette postali di archiviazione per tutti gli utenti dell’organizzazione, la cui cassetta postale di archiviazione al momento non è abilitata.
 
 ```powershell
-Get-Mailbox -Filter {ArchiveStatus -Eq "None" -AND RecipientTypeDetails -eq "UserMailbox"} | Enable-Mailbox -Archive
+Get-Mailbox -Filter {ArchiveGuid -Eq "00000000-0000-0000-0000-000000000000" -AND RecipientTypeDetails -Eq "UserMailbox"} | Enable-Mailbox -Archive
 ```
 
 ### <a name="disable-archive-mailboxes"></a>Disabilitare le cassette postali di archiviazione
@@ -131,7 +131,7 @@ Disable-Mailbox -Identity <username> -Archive
 È possibile eseguire il comando seguente per disabilitare le cassette postali di archiviazione per tutti gli utenti dell’organizzazione, la cui cassetta postale di archiviazione al momento non è disabilitata.
 
 ```powershell
-Get-Mailbox -Filter {ArchiveStatus -Eq "Active" -AND RecipientTypeDetails -eq "UserMailbox"} | Disable-Mailbox -Archive
+Get-Mailbox -Filter {ArchiveGuid -Ne "00000000-0000-0000-0000-000000000000" -AND RecipientTypeDetails -Eq "UserMailbox"} | Disable-Mailbox -Archive
 ```
 
 ## <a name="more-information"></a>Altre informazioni

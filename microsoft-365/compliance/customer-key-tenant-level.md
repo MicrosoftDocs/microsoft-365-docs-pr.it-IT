@@ -15,19 +15,19 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Informazioni su come configurare Customer Key per tutti i dati all'interno del tenant di Microsoft 365.
-ms.openlocfilehash: f14bbc0cb6dd29883efa4c8d294d8d65cae98641
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 682eed7eb2e80535af1acf68808c708e1a25d80f
+ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751268"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "50242376"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>Panoramica di Customer Key per Microsoft 365 a livello di tenant (anteprima pubblica)
 
 Utilizzando le chiavi fornite, è possibile creare un criterio di crittografia dei dati e assegnarlo al tenant. Protezione esecuzione programmi crittografa i dati nel tenant per questi carichi di lavoro:
 
 - Messaggi di chat di Teams (chat 1:1, chat di gruppo, chat di riunioni e conversazioni del canale)
-- Messaggi multimediali di Teams (immagini, frammenti di codice, video, immagini wiki)
+- Messaggi multimediali di Teams (immagini, frammenti di codice, messaggi video, messaggi audio, immagini wiki)
 - Registrazioni delle chiamate e delle riunioni di Teams archiviate nello spazio di archiviazione di Teams
 - Notifiche di chat di Teams
 - Suggerimenti per le chat di Teams da Cortana
@@ -36,7 +36,7 @@ Utilizzando le chiavi fornite, è possibile creare un criterio di crittografia d
 
 Per Microsoft Teams, Customer Key a livello di tenant crittografa i nuovi dati dal momento in cui Protezione esecuzione programmi viene assegnato al tenant. L'anteprima pubblica non supporta la crittografia dei dati passati. Per Exchange Online, Customer Key crittografa tutti i dati esistenti e nuovi.
 
-È possibile creare più criteri di protezione esecuzione programmi per tenant, ma è possibile assegnare un solo dep in qualsiasi momento. Quando si assegna Protezione esecuzione programmi, la crittografia viene avviata automaticamente, ma può richiedere del tempo a seconda delle dimensioni del tenant.
+È possibile creare più criteri di protezione esecuzione programmi per tenant, ma è possibile assegnare una sola protezione esecuzione programmi in qualsiasi momento. Quando si assegna Protezione esecuzione programmi, la crittografia viene avviata automaticamente, ma può richiedere del tempo a seconda delle dimensioni del tenant.
 
 ## <a name="tenant-level-policies-add-broader-control-to-customer-key-for-microsoft-365"></a>I criteri a livello di tenant aggiungono un controllo più ampio a Customer Key per Microsoft 365
 
@@ -46,7 +46,7 @@ Il criterio di crittografia a livello di tenant creato crittografa tutti i dati 
 
 Esempi:
 
-I file di Microsoft Teams e alcune registrazioni delle chiamate e delle riunioni di Teams salvate in OneDrive for Business e SharePoint vengono crittografate da Protezione esecuzione programmi di SharePoint Online. Un singolo servizio Protezione esecuzione programmi di SharePoint Online crittografa il contenuto all'interno di una singola area geografica. Protezione esecuzione programmi a livello di tenant crittograferà di nuovo i dati crittografati con il nuovo criterio.
+I file di Microsoft Teams e alcune registrazioni delle chiamate e delle riunioni di Teams salvate in OneDrive for Business e SharePoint sono crittografate da Protezione esecuzione programmi di SharePoint Online. Un singolo servizio Protezione esecuzione programmi di SharePoint Online crittografa il contenuto all'interno di una singola area geografica.
 
 Per Exchange Online, è possibile creare una protezione esecuzione programmi che crittografa una o più cassette postali utente con Customer Key. Quando si crea un criterio a livello di tenant, tale criterio non crittograferà le cassette postali crittografate. Tuttavia, la chiave a livello di tenant crittograferà le cassette postali che non sono già interessate da protezione esecuzione programmi.
 
@@ -58,8 +58,8 @@ La maggior parte di queste attività verrà completata connettendosi in remoto a
 
 Prima di iniziare, verificare quanto segue:
 
-- Dovrai usare un account aziendale o dell'istituto di istruzione con il ruolo di amministratore di conformità per configurare Customer Key a livello di tenant.
-- Assicurarsi di disporre delle licenze appropriate per l'organizzazione. Usare una sottoscrizione di Azure a pagamento e fatturata usando un Contratto Enterprise o un provider di servizi cloud. Le sottoscrizioni di Azure acquistate con i piani Pay As You Go o con una carta di credito non sono supportate per Customer Key. A partire dal 1° aprile 2020, Customer Key in Office 365 è disponibile in Office 365 E5, M365 E5, M365 E5 Compliance e M365 E5 Information Protection & Governance SKU. Office 365 Advanced Compliance SKU non è più disponibile per la distribuzione di nuove licenze. Le licenze di Office 365 Advanced Compliance esistenti continueranno a essere supportate. Anche se il servizio può essere abilitato con almeno una licenza nel tenant con la licenza appropriata, è comunque necessario assicurarsi che tutti gli utenti che traggono vantaggio dal servizio dispongono di licenze appropriate.
+- Dovrai usare un account aziendale o dell'istituto di istruzione con il ruolo di amministratore della conformità per configurare Customer Key a livello di tenant.
+- Assicurarsi di disporre delle licenze appropriate per l'organizzazione. Usare una sottoscrizione di Azure a pagamento e fatturata usando un Contratto Enterprise o un provider di servizi cloud. Le sottoscrizioni di Azure acquistate con i piani Pay As You Go o con una carta di credito non sono supportate per Customer Key. A partire dal 1° aprile 2020, Customer Key in Office 365 è disponibile in Office 365 E5, M365 E5, M365 E5 Compliance e M365 E5 Information Protection & Governance SKU. Office 365 Advanced Compliance SKU non è più disponibile per la distribuzione di nuove licenze. Le licenze di Office 365 Advanced Compliance esistenti continueranno a essere supportate. Anche se il servizio può essere abilitato con almeno una licenza nel tenant con la licenza appropriata, è comunque necessario assicurarsi che tutti gli utenti che traggono vantaggio dal servizio siano in grado di disporre di licenze appropriate.
 
 ### <a name="create-two-new-azure-subscriptions"></a>Creare due nuove sottoscrizioni di Azure
 
@@ -87,7 +87,7 @@ Prima di contattare il team di Microsoft 365, è necessario eseguire la procedur
    **Oggetto**: Codice Cliente per \<*Your tenant's fully-qualified domain name*\>
 
    **Corpo:** ID sottoscrizione per i quali si desidera finalizzare il periodo di conservazione obbligatorio.
-   L'output di Get-AzProviderFeature per ogni sottoscrizione.
+   Output del Get-AzProviderFeature per ogni sottoscrizione.
 
    Il contratto di servizio per il completamento di questo processo è di cinque giorni lavorativi dopo che Microsoft ha notificato (e verificato) di aver registrato le sottoscrizioni per l'utilizzo di un periodo di conservazione obbligatorio.
 
@@ -107,20 +107,20 @@ Prima di contattare il team di Microsoft 365, è necessario eseguire la procedur
 
 ### <a name="create-a-premium-azure-key-vault-in-each-subscription"></a>Creare un Azure Key Vault premium in ogni sottoscrizione
 
-I passaggi per creare un insieme di credenziali delle chiavi sono documentati in Introduzione a [Azure Key Vault,](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)che guida l'utente attraverso l'installazione e l'avvio di Azure PowerShell, la connessione alla sottoscrizione di Azure, la creazione di un gruppo di risorse e la creazione di un insieme di credenziali delle chiavi in tale gruppo di risorse.
+I passaggi per creare un insieme di credenziali delle chiavi sono documentati in Introduzione a [Azure Key Vault,](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)che guida l'utente nell'installazione e nell'avvio di Azure PowerShell, nella connessione alla sottoscrizione di Azure, nella creazione di un gruppo di risorse e nella creazione di un insieme di credenziali delle chiavi in tale gruppo di risorse.
   
-Quando si crea un insieme di credenziali delle chiavi, è necessario scegliere uno SKU: Standard o Premium. Lo SKU standard consente di proteggere le chiavi dell'insieme di credenziali delle chiavi di Azure con il software ( nessuna protezione con chiave HSM (Hardware Security Module) e lo SKU Premium consente l'uso di HMS per la protezione delle chiavi key vault. Customer Key accetta gli insiemi di credenziali delle chiavi che usano uno degli SKU, anche se Microsoft consiglia vivamente di usare solo lo SKU Premium. Il costo delle operazioni con le chiavi di entrambi i tipi è lo stesso, quindi l'unica differenza di costo è il costo mensile per ogni chiave protetta da HSM. Per informazioni [dettagliate, vedi](https://azure.microsoft.com/pricing/details/key-vault/) i prezzi di Key Vault.
+Quando si crea un insieme di credenziali delle chiavi, è necessario scegliere uno SKU: Standard o Premium. Lo SKU standard consente di proteggere le chiavi dell'insieme di credenziali delle chiavi di Azure con il software ( non esiste alcuna protezione delle chiavi HSM (Hardware Security Module) e lo SKU Premium consente l'uso di HSM per la protezione delle chiavi key vault. Customer Key accetta gli insiemi di credenziali delle chiavi che usano uno degli SKU, anche se Microsoft consiglia vivamente di usare solo lo SKU Premium. Il costo delle operazioni con le chiavi di entrambi i tipi è lo stesso, quindi l'unica differenza di costo è il costo mensile per ogni chiave protetta da HSM. Per [informazioni dettagliate, vedi](https://azure.microsoft.com/pricing/details/key-vault/) i prezzi di Key Vault.
   
 > [!IMPORTANT]
 > Usa gli insiemi di credenziali delle chiavi SKU Premium e le chiavi protette con HSM per i dati di produzione e usa le chiavi e gli insiemi di credenziali delle chiavi SKU standard solo a scopo di test e convalida.
 
-Usa un prefisso comune per gli insiemi di credenziali delle chiavi e includi un'abbreviazione dell'uso e dell'ambito dell'insieme di credenziali e delle chiavi. Ad esempio, per il servizio Contoso in cui si trovano gli insiemi di credenziali in Nord America, una possibile coppia di nomi è Contoso-O365-NA-VaultA1 e Contoso-O365-NA-VaultA2. I nomi dell'insieme di credenziali sono stringhe univoche globali all'interno di Azure, quindi potrebbe essere necessario provare le varianti dei nomi desiderati nel caso in cui i nomi desiderati siano già stati rivendicati da altri clienti di Azure. Una volta configurati, i nomi dell'insieme di credenziali non possono essere modificati, quindi la procedura consigliata consiste nel disporre di un piano scritto per la configurazione e nell'usare una seconda persona per verificare che il piano venga eseguito correttamente.
+Utilizzare un prefisso comune per gli insiemi di credenziali delle chiavi e includere un'abbreviazione dell'uso e dell'ambito dell'insieme di credenziali e delle chiavi. Ad esempio, per il servizio Contoso in cui si trovano gli insiemi di credenziali in Nord America, una possibile coppia di nomi è Contoso-O365-NA-VaultA1 e Contoso-O365-NA-VaultA2. I nomi dell'insieme di credenziali sono stringhe univoche globali all'interno di Azure, quindi potrebbe essere necessario provare le varianti dei nomi desiderati nel caso in cui i nomi desiderati siano già stati rivendicati da altri clienti di Azure. Una volta configurati, i nomi dell'insieme di credenziali non possono essere modificati, quindi la procedura consigliata consiste nel disporre di un piano scritto per la configurazione e nell'usare una seconda persona per verificare che il piano venga eseguito correttamente.
 
 Se possibile, creare gli insiemi di credenziali in aree non abbinate. Le aree di Azure abbinate offrono disponibilità elevata tra i domini di errore del servizio. Pertanto, le coppie regionali possono essere ritenute come l'area di backup reciproca. Ciò significa che una risorsa di Azure posizionata in un'area ottiene automaticamente la tolleranza di errore attraverso l'area associata. Per questo motivo, la scelta delle aree per due insiemi di credenziali utilizzati in un criterio di crittografia dei dati in cui le aree sono accoppiate significa che sono in uso solo un totale di due aree di disponibilità. La maggior parte delle aree geografiche ha solo due aree, quindi non è ancora possibile selezionare aree non abbinate. Se possibile, scegliere due aree non associate per i due insiemi di credenziali utilizzati con un criterio di crittografia dei dati. Questo vantaggio deriva da un totale di quattro aree di disponibilità. Per altre informazioni, vedere Continuità aziendale e ripristino di emergenza [(BCDR):](https://docs.microsoft.com/azure/best-practices-availability-paired-regions) aree associate di Azure per un elenco corrente di coppie regionali.
 
 ### <a name="assign-permissions-to-each-key-vault"></a>Assegnare autorizzazioni a ogni insieme di credenziali delle chiavi
 
-Per ogni insieme di credenziali delle chiavi, dovrai definire tre set separati di autorizzazioni per Customer Key, a seconda dell'implementazione. Ad esempio, sarà necessario definire un set di autorizzazioni per ognuno dei seguenti elementi:
+Per ogni insieme di credenziali delle chiavi, sarà necessario definire tre set separati di autorizzazioni per Customer Key, a seconda dell'implementazione. Ad esempio, sarà necessario definire un set di autorizzazioni per ognuno dei seguenti elementi:
   
 - **Amministratori dell'insieme di** credenziali chiave che eseguiranno la gestione quotidiana dell'insieme di credenziali delle chiavi per l'organizzazione. Queste attività includono il backup, la creazione, il ripristino, l'importazione, l'elenco e il ripristino.
 
@@ -141,7 +141,7 @@ Per ogni insieme di credenziali delle chiavi, dovrai definire tre set separati d
    Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com -PermissionsToKeys create,import,list,get,backup,restore
    ```
 
-- **Collaboratori dell'insieme di credenziali** chiave che possono modificare le autorizzazioni nell'Insieme di credenziali chiavi di Azure stesso. Sarà necessario modificare queste autorizzazioni quando i dipendenti lasciano o si uniscono al team o nella rara situazione in cui gli amministratori dell'insieme di credenziali delle chiavi hanno legittimamente bisogno dell'autorizzazione per eliminare o ripristinare una chiave. A questo set di collaboratori dell'insieme di credenziali chiave deve essere concesso il ruolo Collaboratore nell'insieme di credenziali delle chiavi. È possibile assegnare questo ruolo usando Azure Resource Manager. Per la procedura dettagliata, vedere Usare Role-Based [controllo di accesso per](https://docs.microsoft.com/azure/active-directory/role-based-access-control-configure) gestire l'accesso alle risorse di sottoscrizione di Azure. L'amministratore che crea una sottoscrizione dispone di questo accesso per impostazione predefinita e della possibilità di assegnare altri amministratori al ruolo Collaboratore.
+- **Collaboratori dell'insieme di credenziali** chiave che possono modificare le autorizzazioni nell'Insieme di credenziali chiavi di Azure stesso. Sarà necessario modificare queste autorizzazioni quando i dipendenti lasciano o si uniscono al team o nella rara situazione in cui gli amministratori dell'insieme di credenziali delle chiavi hanno legittimamente bisogno dell'autorizzazione per eliminare o ripristinare una chiave. A questo set di collaboratori dell'insieme di credenziali chiave deve essere concesso il ruolo Collaboratore nell'insieme di credenziali delle chiavi. È possibile assegnare questo ruolo usando Azure Resource Manager. Per la procedura dettagliata, vedere Usare il Role-Based [di](https://docs.microsoft.com/azure/active-directory/role-based-access-control-configure) accesso per gestire l'accesso alle risorse di sottoscrizione di Azure. L'amministratore che crea una sottoscrizione dispone di questo accesso per impostazione predefinita e della possibilità di assegnare altri amministratori al ruolo Collaboratore.
 
 - Servizio di crittografia dei dati in pausa di **Microsoft 365** che esegue il lavoro di Customer Key a livello di tenant. Per concedere l'autorizzazione a Microsoft 365, eseguire il cmdlet **Set-AzKeyVaultAccessPolicy** utilizzando la sintassi seguente:
 
@@ -184,7 +184,7 @@ Per abilitare l'eliminazione recisa nei key vault, eseguire la procedura seguent
 
 ### <a name="add-a-key-to-each-key-vault-either-by-creating-or-importing-a-key"></a>Aggiungere una chiave a ogni insieme di credenziali delle chiavi creando o importando una chiave
 
-Esistono due modi per aggiungere chiavi a un insieme di credenziali delle chiavi di Azure; è possibile creare una chiave direttamente in Key Vault oppure importare una chiave. La creazione di una chiave direttamente in Key Vault è il metodo meno complicato, mentre l'importazione di una chiave offre il controllo totale sulla modalità di generazione della chiave. Utilizzare le chiavi RSA. Azure Key Vault non supporta il wrapping e l'annullamento del wrapping con chiavi curva ellittiche.
+Esistono due modi per aggiungere chiavi a un insieme di credenziali delle chiavi di Azure; è possibile creare una chiave direttamente in Key Vault oppure importare una chiave. La creazione di una chiave direttamente in Key Vault è il metodo meno complicato, mentre l'importazione di una chiave offre il controllo totale sulla modalità di generazione della chiave. Utilizzare le chiavi RSA. Azure Key Vault non supporta il wrapping e l'annullamento del wrapping con chiavi di curva ellittiche.
   
 Per creare una chiave direttamente nell'insieme di credenziali delle chiavi, eseguire il cmdlet [Add-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/add-azkeyvaultkey) nel modo seguente:
   
@@ -194,12 +194,12 @@ Add-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Destination <HSM|Sof
 
 Dove:
 
-- *il nome dell'insieme* di credenziali è il nome dell'insieme di credenziali delle chiavi in cui si desidera creare la chiave.
+- *il nome* dell'insieme di credenziali è il nome dell'insieme di credenziali delle chiavi in cui si desidera creare la chiave.
 
 - *key name* è il nome che si desidera assegnare alla nuova chiave.
 
   > [!TIP]
-  > Assegnare un nome alle chiavi utilizzando una convenzione di denominazione simile a quella descritta in precedenza per gli insiemi di credenziali delle chiavi. In questo modo, negli strumenti che mostrano solo il nome della chiave, la stringa è autodescrittura.
+  > Assegnare un nome alle chiavi usando una convenzione di denominazione simile a quella descritta in precedenza per gli insiemi di credenziali delle chiavi. In questo modo, negli strumenti che mostrano solo il nome della chiave, la stringa è autodescrittura.
   
 Se intendi proteggere la chiave con un HSM, assicurati di specificare **HSM** come valore del parametro _Destination,_ altrimenti specifica **Software.**
 
@@ -219,7 +219,7 @@ Per controllare il livello di ripristino di una chiave, in Azure PowerShell, ese
 (Get-AzKeyVaultKey -VaultName <vault name> -Name <key name>).Attributes
 ```
 
-Se la proprietà _Recovery Level_ restituisce un valore diverso dal valore **Recoverable+ProtectedSubscription,** sarà necessario leggere questo articolo e assicurarsi di aver seguito tutti i passaggi per inserire la sottoscrizione nell'elenco Non annullare e di aver abilitato l'eliminazione reversibile in ognuno degli insiemi di credenziali delle chiavi. Successivamente, inviare a m365ck@microsoft.com uno screenshot dell'output `(Get-AzKeyVaultKey -VaultName <vault name> -Name <key name>).Attributes` m365ck@microsoft.com.
+Se la proprietà _Recovery Level_ restituisce un valore diverso dal valore **Recoverable+ProtectedSubscription,** sarà necessario leggere questo articolo e assicurarsi di aver seguito tutti i passaggi per inserire la sottoscrizione nell'elenco Non annullare e di aver abilitato l'eliminazione reversibile in ognuno degli insiemi di credenziali delle chiavi. Successivamente, inviare uno screenshot dell'output `(Get-AzKeyVaultKey -VaultName <vault name> -Name <key name>).Attributes` della posta elettronica a m365ck@microsoft.com.
 
 ### <a name="back-up-azure-key-vault"></a>Eseguire il backup di Azure Key Vault
 
@@ -246,7 +246,7 @@ Backup-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-N
 
 L'esecuzione della convalida prima di usare le chiavi in Protezione esecuzione programmi è facoltativa, ma è consigliabile. In particolare, se usi i passaggi per configurare le chiavi e gli insiemi di credenziali diversi da quelli descritti in questo argomento, devi convalidare l'integrità delle risorse di Azure Key Vault prima di configurare Customer Key.
   
-Per verificare che le operazioni get, wrapKey e unwrapKey siano abilitate per le chiavi:
+Per verificare che le chiavi siano abilitate per le operazioni get, wrapKey e unwrapKey:
   
 Eseguire il cmdlet [Get-AzKeyVault](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvault) nel modo seguente:
   
@@ -292,7 +292,7 @@ In Azure PowerShell:
 (Get-AzKeyVaultKey -VaultName <vault name>).Id
 ```
 
-## <a name="set-up-the-customer-key-encryption-policy-for-your-tenant"></a>Configurare i criteri di crittografia customer key per il tenant
+## <a name="set-up-the-customer-key-encryption-policy-for-your-tenant"></a>Configurare il criterio di crittografia Customer Key per il tenant
 
 Per poter eseguire questi cmdlet, è necessario disporre delle autorizzazioni appropriate. Sebbene in questo articolo siano elencati tutti i parametri per i cmdlet, è possibile che non si abbia accesso ad alcuni parametri se non sono inclusi nelle autorizzazioni assegnate. Per individuare le autorizzazioni necessarie per eseguire cmdlet o parametri nell'organizzazione, vedere [Trovare le autorizzazioni necessarie per eseguire i cmdlet di Exchange](https://docs.microsoft.com/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions).
 

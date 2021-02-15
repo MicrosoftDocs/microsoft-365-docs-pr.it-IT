@@ -156,7 +156,7 @@
           href: sensitivity-labels-teams-groups-sites.md
         - name: Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive
           href: sensitivity-labels-sharepoint-onedrive-files.md
-        - name: Usare le etichette di riservatezza nelle app di Office
+        - name: Gestire le etichette di riservatezza nelle app di Office
           href: sensitivity-labels-office-apps.md
     - name: Crittografia
       items:

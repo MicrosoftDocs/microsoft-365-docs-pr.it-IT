@@ -21,12 +21,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Per informazioni dettagliate sulle app di Microsoft Teams usate nell'organizzazione, è possibile ottenere il report sull'utilizzo delle app di Microsoft Teams dai report di Microsoft 365.
-ms.openlocfilehash: 928ba7bbe4d4753499e71b347baffafa7441f5b5
-ms.sourcegitcommit: 82d8be71c5861a501ac62a774b306a3fc1d4e627
+ms.openlocfilehash: 54219b060767193e711c839d25780dd3b4a618bf
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "48988529"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233435"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-device-usage"></a>Report di Microsoft 365 nell'interfaccia di amministrazione - Utilizzo dei dispositivi di Microsoft Teams
 
@@ -47,6 +47,8 @@ Il **dashboard** report di Microsoft 365 mostra la panoramica delle attività tr
 Selezionare **Scegli colonne** per aggiungere o rimuovere colonne dal report.  <br/> ![Report dei dispositivi degli utenti di Teams - scegliere le colonne](../../media/3358d5d9-931b-4d30-931f-450b2f5717da.png)
 
 È inoltre possibile esportare i dati del report in un file CSV di Excel selezionando il **collegamento Esporta.** Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriore analisi. Se gli utenti sono meno di 2000, è possibile ordinarli e filtrarli direttamente nella tabella del report. Se invece gli utenti sono più di 2000, per ordinarli e filtrarli occorre esportare i dati. 
+
+Il report **Utilizzo di dispositivi Microsoft Teams** può essere visualizzato per le tendenze degli ultimi 7, 30, 90 o 180 giorni. Tuttavia, se si seleziona un giorno specifico nel report, la tabella (7) mostrerà i dati per un massimo di 28 giorni dalla data corrente (non la data in cui è stato generato il report).
   
 |Elemento|Descrizione|
 |:-----|:-----|

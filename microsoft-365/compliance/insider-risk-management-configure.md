@@ -27,7 +27,7 @@ ms.locfileid: "50150584"
 Utilizzare i criteri di gestione dei rischi Insider per identificare le attività rischiose e gli strumenti di gestione per agire sugli avvisi di rischio nell'organizzazione. Completare la procedura seguente per impostare i prerequisiti e configurare un criterio di gestione dei rischi Insider.
 
 >[!IMPORTANT]
->La soluzione di gestione dei rischi insider di Microsoft 365 offre un'opzione a livello di tenant per aiutare i clienti a facilitare la governance interna a livello di utente. Gli amministratori a livello di tenant possono configurare le autorizzazioni per fornire l'accesso a questa soluzione per i membri dell'organizzazione e configurare i connettori dati nel Centro conformità Microsoft 365 per importare dati rilevanti per supportare l'identificazione a livello utente di attività potenzialmente rischiose. I clienti riconoscono che le informazioni dettagliate relative al comportamento, al carattere o alle prestazioni del singolo utente materialmente correlate all'impiego possono essere calcolate dall'amministratore e rese disponibili agli altri utenti dell'organizzazione. Inoltre, i clienti riconoscono di doversi avvalere di un'indagine completa relativa al comportamento, al carattere o alle prestazioni del singolo utente in relazione al rapporto di lavoro e non solo alle informazioni dettagliate del servizio di gestione dei rischi insider. I clienti sono esclusivamente responsabili dell'uso del servizio di gestione dei rischi Insider di Microsoft 365 e di qualsiasi funzionalità o servizio associato in conformità a tutte le leggi applicabili, incluse le leggi relative all'identificazione dei singoli utenti e alle eventuali azioni correttive.
+>La soluzione di gestione dei rischi insider di Microsoft 365 offre un'opzione a livello di tenant per aiutare i clienti a facilitare la governance interna a livello di utente. Gli amministratori a livello di tenant possono configurare le autorizzazioni per fornire l'accesso a questa soluzione per i membri dell'organizzazione e configurare i connettori di dati nel Centro conformità Microsoft 365 per importare dati rilevanti per supportare l'identificazione a livello utente di attività potenzialmente rischiose. I clienti riconoscono che le informazioni dettagliate relative al comportamento, al carattere o alle prestazioni del singolo utente materialmente correlate all'impiego possono essere calcolate dall'amministratore e rese disponibili agli altri utenti dell'organizzazione. Inoltre, i clienti riconoscono di doversi avvalere di un'indagine completa relativa al comportamento, al carattere o alle prestazioni del singolo utente in relazione al lavoro e non solo alle informazioni dettagliate del servizio di gestione dei rischi insider. I clienti sono esclusivamente responsabili dell'uso del servizio di gestione dei rischi Insider di Microsoft 365 e di qualsiasi funzionalità o servizio associato in conformità a tutte le leggi applicabili, incluse le leggi relative all'identificazione dei singoli utenti e alle eventuali azioni correttive.
 
 Per ulteriori informazioni su come i criteri di rischio Insider consentono di gestire i rischi nell'organizzazione, vedere Gestione dei rischi [Insider in Microsoft 365.](insider-risk-management.md)
 
@@ -43,7 +43,7 @@ Prima di iniziare a usare la gestione dei rischi Insider, è consigliabile confe
 - Abbonamento a Microsoft 365 A3 + componente aggiuntivo Microsoft 365 A5 Insider Risk Management
 - Abbonamento a Microsoft 365 G5 (versione di valutazione o a pagamento)
 - Abbonamento a Microsoft 365 G3 + componente aggiuntivo conformità Microsoft 365 G5
-- Abbonamento a Microsoft 365 G3 + componente aggiuntivo Gestione dei rischi insider di Microsoft 365 G5
+- Abbonamento a Microsoft 365 G3 + componente aggiuntivo Microsoft 365 G5 Insider Risk Management
 
 Agli utenti inclusi nei criteri di gestione dei rischi Insider deve essere assegnata una delle licenze precedenti.
 
@@ -78,13 +78,13 @@ Completare la procedura seguente per aggiungere utenti a un gruppo di ruoli di g
 
 3. Selezionare il gruppo di ruoli di gestione dei rischi Insider a cui si desidera aggiungere gli utenti, quindi **selezionare Modifica gruppo di ruoli.**
 
-4. Selezionare **Scegli membri** dal riquadro di spostamento a sinistra, quindi selezionare **Modifica.**
+4. Selezionare **Scegli membri** nel riquadro di spostamento sinistro, quindi selezionare **Modifica.**
 
 5. Selezionare **Aggiungi** e quindi selezionare la casella di controllo per tutti gli utenti che si desidera aggiungere al gruppo di ruoli.
 
 6. Selezionare **Aggiungi,** quindi **Fare clic su Fine.**
 
-7. Selezionare **Salva** per aggiungere gli utenti al gruppo di ruoli. Selezionare **Chiudi** per completare la procedura.
+7. Selezionare **Salva** per aggiungere gli utenti al gruppo di ruoli. Selezionare **Chiudi** per completare i passaggi.
 
 ## <a name="step-2-enable-the-audit-log"></a>Passaggio 2: abilitare il log di controllo
 
@@ -134,7 +134,7 @@ La gestione dei rischi Insider include il supporto per l'assegnazione di gruppi 
 
 Quando si utilizzano i modelli di criteri seguenti, è necessario un gruppo di utenti con priorità:
 
-- Violazioni dei criteri di sicurezza per utenti con priorità
+- Violazioni dei criteri di sicurezza da parte degli utenti con priorità
 - Perdite di dati per utenti con priorità
 
 Per istruzioni [dettagliate sulla creazione di un gruppo di](insider-risk-management-settings.md#priority-user-groups-preview) utenti con priorità, vedere l'articolo Introduttivo alle impostazioni di gestione dei rischi Insider. Dopo aver configurato un gruppo di utenti con priorità, tornare a questi passaggi di configurazione.
@@ -195,7 +195,7 @@ I criteri di gestione dei rischi Insider includono gli utenti assegnati e defini
     - **Tipo di informazioni sensibili:** seleziona **Aggiungi tipo di informazioni sensibili** e seleziona i tipi di riservatezza di cui vuoi definire la priorità. Ad esempio, *"U.S. Bank Account Number"* e *"Credit Card Number"*.
     - **Etichette di riservatezza:** selezionare **Aggiungi etichetta di riservatezza** e selezionare le etichette di cui si desidera definire la priorità. Ad esempio, *"Riservato"* *e "Segreto".*
 7. Selezionare **Avanti** per continuare.
-8. Nella pagina **Seleziona indicatori di** criteri [](insider-risk-management-settings.md#indicators) verranno visualizzati gli indicatori definiti come disponibili nella pagina Indicatori delle impostazioni di rischio   >  **Insider.** Se è stato selezionato *un* modello di perdita di dati all'inizio della procedura guidata, è necessario selezionare un criterio DLP dall'elenco a discesa dei criteri **DLP** per abilitare gli indicatori di attivazione per il criterio. Selezionare gli indicatori che si desidera applicare al criterio. Se si preferisce non usare le impostazioni di soglia dei criteri predefiniti per questi indicatori, disabilitare le soglie predefinite consigliate da **Microsoft** e immettere i valori di soglia per ogni indicatore selezionato. Se è stato selezionato almeno  un indicatore di *Office* o dispositivo, selezionare gli indicatori del punteggio **di rischio in base** alle esigenze. I punteggi di rischio sono applicabili solo per gli indicatori selezionati.
+8. Nella pagina **Seleziona indicatori di** criteri [](insider-risk-management-settings.md#indicators) verranno visualizzati gli indicatori definiti come disponibili nella pagina Indicatori delle impostazioni di rischio   >  **Insider.** Se è stato selezionato *un* modello di perdita di dati all'inizio della procedura guidata, è necessario selezionare un criterio DLP nell'elenco a discesa dei criteri **DLP** per abilitare gli indicatori di attivazione per il criterio. Selezionare gli indicatori che si desidera applicare al criterio. Se si preferisce non usare le impostazioni di soglia dei criteri predefiniti per questi indicatori, disabilitare le soglie predefinite consigliate da **Microsoft** e immettere i valori di soglia per ogni indicatore selezionato. Se è stato selezionato almeno  un indicatore di *Office* o dispositivo, selezionare gli indicatori del punteggio **di rischio in base** alle esigenze. I punteggi di rischio sono applicabili solo per gli indicatori selezionati.
 
     >[!IMPORTANT]
     >Se gli indicatori in questa pagina non possono essere selezionati, è necessario selezionare gli indicatori che si desidera abilitare per tutti i criteri nella pagina Indicatori dei criteri delle impostazioni di gestione dei rischi  >    >   Insider.

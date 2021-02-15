@@ -5,7 +5,6 @@ f1.keywords:
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 06/15/2020
 audience: ITPro
 ms.topic: reference
 ms.service: O365-seccomp
@@ -21,12 +20,12 @@ search.appverid:
 ms.assetid: 862cbe93-4268-4ef9-ba79-277545ecf221
 description: Informazioni sui diversi certificati, tecnologie e suite di crittografia TLS (Transport Layer Security) usate per la crittografia in Office 365 e Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 244d7a6cef6d77322475245435dafb6c89ab5353
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 6e6b001b308519fb35e0cc835ac03fb4b27db260
+ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663429"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "50233142"
 ---
 # <a name="technical-reference-details-about-encryption"></a>Dettagli tecnici di riferimento sulla crittografia
 
@@ -38,7 +37,7 @@ Fare riferimento a questo articolo per informazioni sui certificati, le tecnolog
 
 ## <a name="microsoft-office-365-certificate-ownership-and-management"></a>Gestione e proprietà dei certificati di Microsoft Office 365
 
-Non è necessario acquistare o mantenere certificati per Office 365. Al contrario, Office 365 usa i propri certificati.
+Non è necessario acquistare o gestire certificati per Office 365. Al contrario, Office 365 usa i propri certificati.
   
 ## <a name="current-encryption-standards-and-planned-deprecations"></a>Standard di crittografia correnti e deprecazione pianificata
 
@@ -46,7 +45,7 @@ Per fornire la crittografia ottimale, Office 365 rivede regolarmente gli standar
 
 ## <a name="fips-compliance-for-office-365"></a>Conformità FIPS per Office 365
 
-Tutte le suite di crittografia supportate da Office 365 usano algoritmi accettabili in base a FIPS 140-2. Office 365 eredita le convalide FIPS da Windows (tramite SChannel). Per informazioni su Schannel, vedere [Cipher Suites in TLS/SSL (SChannel SSP)](https://docs.microsoft.com/windows/desktop/SecAuthN/cipher-suites-in-schannel).
+Tutte le suite di crittografia supportate da Office 365 usano algoritmi accettabili in base a FIPS 140-2. Office 365 eredita le convalide FIPS da Windows (tramite SChannel). Per informazioni su Schannel, vedere [Cipher Suites in TLS/SSL (SCHANNEL SSP)](https://docs.microsoft.com/windows/desktop/SecAuthN/cipher-suites-in-schannel).
   
 ## <a name="versions-of-tls-supported-by-office-365"></a>Versioni di TLS supportati da Office 365
 
@@ -56,13 +55,13 @@ TLS versione 1.3 (TLS 1.3) non è attualmente supportato.
   
 ## <a name="support-for-tls-10-and-11-deprecation"></a>Supporto per la deprecazione di TLS 1.0 e 1.1
 
-Office 365 ha interrotto il supporto di TLS 1.0 e 1.1 il 31 ottobre 2018. I nuovi problemi rilevati nei client, nei dispositivi o nei servizi che si connettono a Office 365 tramite TLS 1.0 e 1.1 non verranno risolti. La deprecazione ufficiale per gli ambienti GCC High e DoD è iniziata il 15 gennaio 2020. La deprecazione di TLS 1.0 e 1.1 per gli ambienti worldwide e GCC è iniziata il 15 ottobre 2020.
+Office 365 ha interrotto il supporto di TLS 1.0 e 1.1 il 31 ottobre 2018. È stata completata la disabilitazione di TLS 1.0 e 1.1 negli ambienti GCC High e DoD. Abbiamo iniziato a disabilitare TLS 1.0 e 1.1 per gli ambienti worldwide e GCC a partire dal 15 ottobre 2020 e continueremo con l'implementazione nelle prossime settimane e mesi.
 
 Per mantenere una connessione sicura ai servizi di Office 365 e Microsoft 365, tutte le combinazioni client-server e browser-server usano TLS 1.2 e le moderne suite di crittografia. A tale scopo, potrebbe essere necessario aggiornare determinate combinazioni client-server e browser-server. Per informazioni sull'impatto di questa modifica, vedere Preparazione per l'uso obbligatorio di [TLS 1.2 in Office 365.](https://support.microsoft.com/help/4057306/preparing-for-tls-1-2-in-office-365)
   
 ## <a name="deprecating-support-for-3des"></a>Rimozione del supporto per 3DES
 
-Dal 31 ottobre 2018, Office 365 non supporta più l'uso delle suite di crittografia 3DES per la comunicazione con Office 365. In particolare, Office 365 non supporta più la TLS_RSA_WITH_3DES_EDE_CBC_SHA di crittografia. Dal 28 febbraio 2019, questa famiglia di prodotti di crittografia è stata disabilitata in Office 365. I client e i server che comunicano con Office 365 devono supportare una o più delle crittografia supportate. Per un elenco delle crittografia supportate, vedere pacchetti di crittografia [TLS supportati da Office 365.](#tls-cipher-suites-supported-by-office-365)
+Dal 31 ottobre 2018, Office 365 non supporta più l'uso delle suite di crittografia 3DES per la comunicazione con Office 365. In particolare, Office 365 non supporta più la TLS_RSA_WITH_3DES_EDE_CBC_SHA di crittografia. Dal 28 febbraio 2019, questa famiglia di prodotti di crittografia è stata disabilitata in Office 365. I client e i server che comunicano con Office 365 devono supportare una o più delle crittografia supportate. Per un elenco delle crittografia supportate, vedere le suite di crittografia [TLS supportate da Office 365.](#tls-cipher-suites-supported-by-office-365)
   
 ## <a name="deprecating-sha-1-certificate-support-in-office-365"></a>Sospensione del supporto relativo al certificato SHA-1 in Office 365
 
@@ -77,7 +76,7 @@ Office 365 risponde a una richiesta di connessione tentando innanzitutto di conn
 > [!IMPORTANT]
 > Tenere presente che le versioni TLS sono deprecate e che le versioni deprecate non devono essere *usate* dove sono disponibili versioni più recenti. TLS 1.3 non è attualmente supportato. Se i servizi legacy non richiedono TLS 1.0 o 1.1, è necessario disabilitarli.
 
-| Famiglia di prodotti di crittografia | Algoritmo/forza di scambio delle chiavi | Perfect Forward Secrecy | Crittografia/forza | Algoritmo di autenticazione |
+| Famiglia di prodotti di crittografia | Algoritmo/forza di scambio delle chiavi | Forward Secrecy | Crittografia/forza | Algoritmo di autenticazione |
 |:-----|:-----|:-----|:-----|:-----|
 |TLS_ECDHE_RSA_WITH_AES_256_GCM_SHA384 <br/>     |ECDH/192 <br/>|Sì <br/>|AES/256 <br/>|RSA/112 <br/> |
 |TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256 <br/>     |ECDH/128 <br/>|Sì <br/>|AES/128 <br/>|RSA/112 <br/> |
@@ -90,7 +89,7 @@ Office 365 risponde a una richiesta di connessione tentando innanzitutto di conn
 
 Queste suite di crittografia supportano i protocolli TLS 1.0 e 1.1 fino alla data di deprecazione. Per gli ambienti GCC High e DoD la data di deprecazione era il 15 gennaio 2020 e per gli ambienti in tutto il mondo e GCC la data era il 15 ottobre 2020.
 
-| Protocolli | Nome del pacchetto di crittografia | Algoritmo/forza di scambio delle chiavi | Supporto per Perfect Forward Secrecy | Algoritmo di autenticazione/Complessità | Crittografia/forza |
+| Protocolli | Nome del pacchetto di crittografia | Algoritmo/forza di scambio delle chiavi | Supporto per forward secrecy | Algoritmo di autenticazione/Complessità | Crittografia/forza |
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA  <br/> |ECDH/192  <br/> |Sì  <br/> |RSA/112  <br/> |AES/256  <br/> |
 |TLS 1.0, 1.1, 1.2  <br/> |TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA  <br/> |ECDH/128  <br/> |Sì  <br/> |RSA/112  <br/> |AES/128  <br/> |
