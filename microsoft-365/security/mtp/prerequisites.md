@@ -61,7 +61,7 @@ Per ulteriori informazioni, [vedere i piani di servizio di Microsoft 365 Enterpr
 Passare all'interfaccia di amministrazione di Microsoft 365 ([admin.microsoft.com](https://admin.microsoft.com/)) per visualizzare le licenze esistenti. Nell'interfaccia di amministrazione, andare in **Fatturazione** > **Licenze**.
 
 >[!NOTE]
-> Per poter visualizzare le  informazioni  sulla licenza, è necessario disporre del ruolo amministratore fatturazione o lettore globale [in Azure AD.](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) Se si verificano problemi di accesso, rivolgersi a un amministratore globale.
+> Per poter visualizzare le  informazioni  sulla licenza, devi avere il ruolo amministratore fatturazione o lettore globale [in Azure AD.](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) Se si verificano problemi di accesso, rivolgersi a un amministratore globale.
 
 ## <a name="required-permissions"></a>Autorizzazioni necessarie
 Per attivare  Microsoft 365 Defender, è necessario essere un amministratore globale o un amministratore della sicurezza **in** Azure Active Directory. Per l'elenco dei ruoli necessari per usare Microsoft 365 Defender e per informazioni su come è regolamentato l'accesso ai dati, vedere informazioni sulla gestione dell'accesso a [Microsoft 365 Defender.](mtp-permissions.md)
@@ -69,7 +69,7 @@ Per attivare  Microsoft 365 Defender, è necessario essere un amministratore glo
 ## <a name="browser-requirements"></a>Requisiti per il browser
 Accedere a Microsoft 365 Defender nel Centro sicurezza Microsoft 365 usando Microsoft Edge, Internet Explorer 11 o qualsiasi Web browser conforme a HTML 5.
 
-## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a>Disponibilità per US GCC, GCC High e altri istituti governativi statunitensi
+## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a>Disponibilità per US GCC, GCC High e altri istituti governativi degli Stati Uniti
 Attualmente, Microsoft 365 Defender *non è* disponibile per:
 - US Government Community Cloud (GCC)
 - US Government Community Cloud High (GCC High)

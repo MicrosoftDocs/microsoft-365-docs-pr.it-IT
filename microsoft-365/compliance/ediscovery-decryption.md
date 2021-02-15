@@ -51,11 +51,11 @@ La tabella seguente identifica le attività supportate che possono essere esegui
 |Esportare documenti crittografati in SharePoint e OneDrive    |No       |No  |Sì    |
 |||||
 
-**Nota:** eDiscovery non supporta i file crittografati in SharePoint e OneDrive quando un'etichetta di riservatezza che ha applicato la crittografia è configurata con una delle impostazioni seguenti:
+**Nota:** eDiscovery non supporta i file crittografati in SharePoint e OneDrive quando un'etichetta di riservatezza che ha applicato la crittografia è configurata con una delle seguenti impostazioni:
 
 - Gli utenti possono assegnare autorizzazioni quando applicano manualmente l'etichetta a un documento. A volte si parla di autorizzazioni definite *dall'utente.*<br/>
 
-- L'accesso degli utenti al documento ha un'impostazione di scadenza impostata su un valore diverso da **Mai.**
+- L'accesso utente al documento ha un'impostazione di scadenza impostata su un valore diverso da **Mai.**
 
 Per ulteriori informazioni su queste impostazioni, vedere la sezione "Configurare le impostazioni di crittografia" in Limitare l'accesso al contenuto utilizzando le etichette di riservatezza [per applicare la crittografia.](encryption-sensitivity-labels.md#configure-encryption-settings)
 
@@ -65,4 +65,4 @@ I documenti crittografati con le impostazioni precedenti possono comunque essere
 
 È necessario disporre del ruolo di decrittografia RMS per visualizzare in anteprima, esaminare ed esportare i file crittografati con le tecnologie di crittografia Microsoft. È inoltre necessario essere assegnati a questo ruolo per esaminare ed eseguire query su file crittografati aggiunti a un insieme da rivedere in Advanced eDiscovery.
 
-Questo ruolo viene assegnato per impostazione predefinita al  gruppo di ruoli Gestore di eDiscovery nella pagina Autorizzazioni nel Centro sicurezza & Conformità di Office 365. Per ulteriori informazioni sul ruolo di decrittografia RMS, vedere [Assegnare autorizzazioni di eDiscovery.](assign-ediscovery-permissions.md#rms-decrypt)
+Questo ruolo viene assegnato per impostazione predefinita al  gruppo di ruoli Gestore di eDiscovery nella pagina Autorizzazioni nel Centro sicurezza & Conformità di Office 365. Per ulteriori informazioni sul ruolo di decrittografia RMS, vedere [Assegnare le autorizzazioni di eDiscovery.](assign-ediscovery-permissions.md#rms-decrypt)

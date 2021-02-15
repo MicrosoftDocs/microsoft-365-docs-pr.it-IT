@@ -66,14 +66,14 @@ In questo articolo viene illustrato come:
 
 3. Nel modulo scegliere un nome per l'applicazione e quindi selezionare **Registra.**
 
-4. Nella pagina dell'applicazione seleziona **AUTORIZZAZIONI API** Aggiungi API di autorizzazione che l'organizzazione usa >, digita  >    >   Microsoft **Threat Protection** e seleziona Microsoft **Threat Protection.** L'app può ora accedere a Microsoft 365 Defender.
+4. Nella pagina dell'applicazione seleziona **AUTORIZZAZIONI API** Per aggiungere le API di autorizzazione che l'organizzazione usa >, digita  >    >   Microsoft **Threat Protection** e seleziona Microsoft **Threat Protection.** L'app può ora accedere a Microsoft 365 Defender.
 
    > [!TIP]
    > *Microsoft Threat Protection* è un nome precedente per Microsoft 365 Defender e non verrà visualizzato nell'elenco originale. È necessario iniziare a scrivere il nome nella casella di testo per visualizzarlo.
 
    ![Immagine della selezione delle autorizzazioni API](../../media/apis-in-my-org-tab.PNG)
 
-5. Selezionare **Autorizzazioni applicazione.** Scegliere le autorizzazioni rilevanti per lo scenario, ad esempio **Incident.Read.All,** quindi selezionare **Aggiungi autorizzazioni.**
+5. Selezionare **Autorizzazioni applicazione.** Scegliere le autorizzazioni rilevanti per lo scenario, ad esempio **Incident.Read.All,** e quindi **selezionare Aggiungi autorizzazioni.**
 
    ![Immagine dell'accesso alle API e della selezione dell'API](../../media/request-api-permissions.PNG)
 
@@ -86,7 +86,7 @@ In questo articolo viene illustrato come:
 
     ![Immagine della concessione delle autorizzazioni](../../media/grant-consent.PNG)
 
-7. Per aggiungere un segreto all'applicazione, selezionare **Certificati & segreti,** aggiungere una descrizione al segreto, quindi **selezionare Aggiungi.**
+7. Per aggiungere un segreto all'applicazione, selezionare **Certificati & segreti,** aggiungere una descrizione al segreto, quindi selezionare **Aggiungi.**
 
     > [!TIP]
     > Dopo aver selezionato **Aggiungi,** selezionare **copia il valore segreto generato.** Non sarà possibile recuperare il valore segreto dopo aver lasciato l'elenco.
@@ -122,7 +122,7 @@ In questo articolo viene illustrato come:
 Per altre informazioni sui token di Azure Active Directory, vedi l'esercitazione [di Azure AD.](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 > [!IMPORTANT]
-> Sebbene gli esempi in questa sezione incoraggino a incollare valori segreti a scopo di test, non è consigliabile codificare mai i segreti come **hardcoded** in un'applicazione in esecuzione in produzione. Una terza parte potrebbe usare il tuo segreto per accedere alle risorse. Puoi proteggere i segreti dell'app usando [Azure Key Vault.](https://docs.microsoft.com/azure/key-vault/general/about-keys-secrets-certificates) Per un esempio pratico di come proteggere la tua app, vedi [Gestire i segreti nelle app server con Azure Key Vault.](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)
+> Sebbene gli esempi in questa sezione incoraggino a incollare valori segreti a scopo di test, non è consigliabile codificare mai i segreti come **hardcoded** in un'applicazione in esecuzione in produzione. Una terza parte potrebbe usare il tuo segreto per accedere alle risorse. Puoi proteggere i segreti dell'app usando [Azure Key Vault.](https://docs.microsoft.com/azure/key-vault/general/about-keys-secrets-certificates) Per un esempio pratico di come proteggere la tua app, vedi Gestire i segreti [nelle app server con Azure Key Vault.](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)
 
 ### <a name="get-an-access-token-using-powershell"></a>Ottenere un token di accesso tramite PowerShell
 
@@ -219,11 +219,11 @@ aadToken = jsonResponse["access_token"]
 
 1. Aprire un prompt dei comandi e impostare CLIENT_ID'ID applicazione di Azure.
 
-1. Impostare CLIENT_SECRET segreto dell'applicazione Azure.
+1. Impostare CLIENT_SECRET sul segreto dell'applicazione Azure.
 
 1. Impostare TENANT_ID'ID tenant di Azure del cliente che vuole usare l'app per accedere a Microsoft 365 Defender.
 
-1. Eseguire il comando seguente:
+1. Eseguire il comando riportato di seguito:
 
    ```bash
    curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k

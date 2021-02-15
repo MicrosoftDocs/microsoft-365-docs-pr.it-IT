@@ -61,7 +61,7 @@ Poiché l'ambiente pilota è già stato configurato durante la fase di preparazi
    - Il dispositivo viene eseguito con Windows Server 2008 R2 o versione successiva.
    - Il controller di dominio di test [per Microsoft Defender per l'identità](https://docs.microsoft.com/azure/security-center/security-center-wdatp) e abilitare la gestione [remota.](https://docs.microsoft.com/windows-server/administration/server-manager/configure-remote-management-in-server-manager)
    - Verificare che [l'integrazione di Microsoft Defender for Identity e Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/mdi-integration) sia stata abilitata.
-   - Nel dominio viene creato un utente di prova, non sono necessarie autorizzazioni di amministratore.
+   - Nel dominio viene creato un utente di prova: non sono necessarie autorizzazioni di amministratore.
 
 3. Verificare la configurazione del dispositivo di test:
 
@@ -111,7 +111,7 @@ Al termine dello script verrà visualizzato un messaggio nella console di PowerS
 ran NetSessionEnum against [DC Name] with return code result 0
 ```
 
-Per vedere la funzionalità Disasserzione e risposta automatizzata in azione, mantenere aperto notepad.exe processo. You'll see Automated Incident and Response stop the Notepad process.
+Per vedere in azione la funzionalità Disasserzione e risposta automatizzata, mantenere aperto notepad.exe processo. You'll see Automated Incident and Response stop the Notepad process.
 
 ## <a name="investigate-an-incident"></a>Analizzare un incidente
 
@@ -154,7 +154,7 @@ Per visualizzare l'evento imprevisto:
 
    Nella pagina **Evento** imprevisto è possibile visualizzare tutti gli avvisi e le informazioni relative all'incidente. Le informazioni includono le entità e gli asset coinvolti nell'avviso, l'origine di rilevamento degli avvisi (Microsoft Defender per l'identità, EDR) e il motivo per cui sono stati collegati tra loro. Esaminando l'elenco degli avvisi per gli eventi imprevisti viene mostrata la progressione dell'attacco. Da questa visualizzazione è possibile visualizzare e analizzare i singoli avvisi.
 
-   Puoi anche fare clic **su Gestisci** evento imprevisto dal menu a destra per contrassegnare l'evento, assegnarlo a te stesso e aggiungere commenti.
+   È anche possibile scegliere **Gestisci** evento imprevisto dal menu a destra per contrassegnare l'evento, assegnarlo a se stessi e aggiungere commenti.
 
    ![Screenshot of where to click Manage incident](../../media/mtp/fig5a.png)
 
@@ -162,7 +162,7 @@ Per visualizzare l'evento imprevisto:
 
 ### <a name="review-generated-alerts"></a>Esaminare gli avvisi generati
 
-Esamini alcuni degli avvisi generati durante l'attacco simulato.
+Esaminiamo alcuni avvisi generati durante l'attacco simulato.
 
 > [!NOTE]
 > Verranno visualizzati solo alcuni avvisi generati durante l'attacco simulato. A seconda della versione di Windows e dei prodotti Microsoft 365 Defender in esecuzione nel dispositivo di test, è possibile che vengano visualizzati più avvisi in un ordine leggermente diverso.
@@ -171,9 +171,9 @@ Esamini alcuni degli avvisi generati durante l'attacco simulato.
 
 #### <a name="alert-suspicious-process-injection-observed-source-microsoft-defender-for-endpoint-edr"></a>Avviso: rilevato inserimento di processi sospetti (Origine: Microsoft Defender per Endpoint EDR)
 
-Gli utenti malintenzionati avanzati usano metodi sofisticati e sofisticati per mantenere la memoria e nascondersi dagli strumenti di rilevamento. Una tecnica comune consiste nell'operare da un processo di sistema attendibile anziché da un eseguibile dannoso, rendendo difficile per gli strumenti di rilevamento e le operazioni di sicurezza individuare il codice dannoso.
+Gli utenti malintenzionati avanzati usano metodi sofisticati e sofisticati per mantenere la memoria e nascondersi dagli strumenti di rilevamento. Una tecnica comune consiste nell'operare dall'interno di un processo di sistema attendibile anziché in un eseguibile dannoso, rendendo difficile per gli strumenti di rilevamento e le operazioni di sicurezza individuare il codice dannoso.
 
-Per consentire agli analisti SOC di intercettare questi attacchi avanzati, i sensori di memoria profonda in Microsoft Defender for Endpoint forniscono al servizio cloud una visibilità senza precedenti in un'ampia gamma di tecniche di inserimento del codice multi-processo. La figura seguente mostra come Defender per Endpoint ha rilevato e avvisato il tentativo di inserire codice per <i>notepad.exe</i>.
+Per consentire agli analisti SOC di intercettare questi attacchi avanzati, i sensori di memoria profonda in Microsoft Defender for Endpoint forniscono al servizio cloud una visibilità senza precedenti su un'ampia gamma di tecniche di inserimento del codice multi-processo. La figura seguente mostra come Defender per Endpoint ha rilevato e avvisato il tentativo di inserire codice per <i>notepad.exe</i>.
 
 ![Screenshot dell'avviso per l'inserimento di codice potenzialmente dannoso](../../media/mtp/fig7.png)
 
@@ -207,9 +207,9 @@ In questo rilevamento viene attivato un avviso quando l'enumerazione della sessi
 
 ### <a name="review-the-device-timeline-microsoft-defender-for-endpoint"></a>Esaminare la sequenza temporale del dispositivo [Microsoft Defender per Endpoint]
 
-Dopo aver esaminato i vari avvisi in questo incidente, tornare alla pagina dell'incidente esaminata in precedenza. Seleziona la **scheda Dispositivi** nella pagina dell'evento imprevisto per esaminare i dispositivi coinvolti in questo incidente, come riportato da Microsoft Defender per Endpoint e Microsoft Defender per l'identità.
+Dopo aver esaminato i vari avvisi in questo incidente, tornare alla pagina dell'incidente esaminata in precedenza. Seleziona la **scheda Dispositivi** nella pagina dell'evento imprevisto per esaminare i dispositivi coinvolti in questo incidente, come segnalato da Microsoft Defender per Endpoint e Microsoft Defender per l'identità.
 
-Seleziona il nome del dispositivo in cui è stato condotto l'attacco per aprire la pagina dell'entità per quel dispositivo specifico. In tale pagina è possibile visualizzare gli avvisi attivati e gli eventi correlati.
+Seleziona il nome del dispositivo in cui è stato condotto l'attacco per aprire la pagina dell'entità per quel dispositivo specifico. In tale pagina puoi visualizzare gli avvisi attivati e gli eventi correlati.
 
 Seleziona la **scheda Sequenza** temporale per aprire la sequenza temporale del dispositivo e visualizzare tutti gli eventi e i comportamenti osservati nel dispositivo in ordine cronologico, intersperati con gli avvisi generati.
 
@@ -217,7 +217,7 @@ Seleziona la **scheda Sequenza** temporale per aprire la sequenza temporale del 
 
 L'espansione di alcuni dei comportamenti più interessanti offre dettagli utili, ad esempio gli alberi dei processi.
 
-Ad esempio, scorrere verso il basso fino a trovare l'evento di avviso **Inserimento di processo** sospetto osservato. Seleziona il **powershell.exe inserito per** notepad.exe di processo sottostante, per visualizzare l'albero completo del  processo per questo comportamento nel grafico entità evento nel riquadro laterale. Utilizzare la barra di ricerca per filtrare, se necessario.
+Ad esempio, scorrere verso il basso fino a trovare l'evento di avviso Inserimento di processo sospetto **osservato.** Seleziona il **powershell.exe inserito per** notepad.exe di processo sottostante, per visualizzare l'albero completo del  processo per questo comportamento nel grafico entità evento nel riquadro laterale. Utilizzare la barra di ricerca per filtrare, se necessario.
 
 ![Screenshot of the process tree for selected PowerShell file creation behavior](../../media/mtp/fig12.png)
 
@@ -236,23 +236,23 @@ Selezionare il nome utente per aprire la pagina del profilo dell'utente in cui �
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4BzwB]
 
-Tornare all'evento imprevisto nel portale del Centro sicurezza Microsoft 365. La **scheda Indagini** nella pagina Evento imprevisto mostra le indagini automatizzate attivate da Microsoft Defender for Identity e Microsoft Defender for Endpoint.  Lo screenshot seguente mostra solo l'indagine automatizzata attivata da Defender per Endpoint. Per impostazione predefinita, Defender per Endpoint consente di correggere automaticamente gli elementi della struttura del sito trovati nella coda, il che richiede una correzione.
+Tornare all'evento imprevisto nel portale del Centro sicurezza Microsoft 365. La **scheda Indagini** nella pagina **Evento** imprevisto mostra le indagini automatizzate attivate da Microsoft Defender for Identity e Microsoft Defender for Endpoint. Lo screenshot seguente mostra solo l'indagine automatizzata attivata da Defender per Endpoint. Per impostazione predefinita, Defender per Endpoint consente di correggere automaticamente gli elementi della struttura del sito trovati nella coda, che richiedono una correzione.
 
 ![Screenshot delle indagini automatizzate relative all'incidente](../../media/mtp/fig14.png)
 
-Selezionare l'avviso che ha attivato un'indagine per aprire la **pagina Dettagli indagine.** Verranno visualizzati i dettagli seguenti:
+Seleziona l'avviso che ha attivato un'indagine per aprire la **pagina Dettagli indagine.** Verranno visualizzati i dettagli seguenti:
 
 - Avvisi che hanno attivato l'indagine automatizzata.
 - Utenti e dispositivi in impatto. Se vengono trovati indicatori su dispositivi aggiuntivi, verranno elencati anche questi dispositivi aggiuntivi.
-- Elenco di prove. Entità trovate e analizzate, ad esempio file, processi, servizi, driver e indirizzi di rete. Queste entità vengono analizzate per le possibili relazioni con l'avviso e valutate come benigne o dannose.
+- Elenco di prove. Entità trovate e analizzate, ad esempio file, processi, servizi, driver e indirizzi di rete. Queste entità vengono analizzate per le possibili relazioni con l'avviso e classificate come dannose o innocue.
 - Minacce rilevate. Minacce note rilevate durante l'indagine.
 
 > [!NOTE]
 > A seconda della tempistica, l'indagine automatizzata potrebbe essere ancora in esecuzione. Attendere alcuni minuti per il completamento del processo prima di raccogliere e analizzare la prova ed esaminare i risultati. Aggiorna la **pagina Dei dettagli dell'indagine** per ottenere i risultati più recenti.
 
-![Screenshot della pagina dei dettagli dell'indagine](../../media/mtp/fig15.png)
+![Screenshot della pagina Dei dettagli dell'indagine](../../media/mtp/fig15.png)
 
-Durante l'indagine automatizzata, Microsoft Defender per Endpoint ha identificato il processo di notepad.exe, che è stato inserito come uno degli artefatti che richiedono la correzione. Defender for Endpoint interrompe automaticamente l'inserimento di processi sospetti come parte della correzione automatica.
+Durante l'indagine automatizzata, Microsoft Defender for Endpoint ha identificato il processo di notepad.exe, che è stato inserito come uno degli artefatti che richiedono la correzione. Defender for Endpoint interrompe automaticamente l'inserimento di processi sospetti come parte della correzione automatica.
 
 È possibile visualizzare <i>notepad.exe</i> dall'elenco dei processi in esecuzione nel dispositivo di test.
 
@@ -289,14 +289,14 @@ Per questo scenario è necessaria una singola cassetta postale interna e un disp
 
 ### <a name="run-the-simulation"></a>Eseguire la simulazione
 
-1. Da un account di posta elettronica esterno, inviare un messaggio di posta elettronica alla cassetta postale identificata nel passaggio 2 della sezione relativa ai requisiti dell'ambiente di testing. Includere un allegato che sarà consentito tramite i criteri di filtro della posta elettronica esistenti. Questo file non deve essere dannoso o eseguibile. I tipi di file suggeriti <i>sono pdf,</i> <i>exe</i> (se consentito) o documenti di Office, ad esempio un file di Word.
+1. Da un account di posta elettronica esterno, inviare un messaggio di posta elettronica alla cassetta postale identificata nel passaggio 2 della sezione relativa ai requisiti dell'ambiente di testing. Includere un allegato che sarà consentito tramite i criteri di filtro della posta elettronica esistenti. Questo file non deve essere dannoso o eseguibile. I tipi di file suggeriti <i>sono pdf,</i> <i>exe</i> (se consentiti) o documenti di Office, ad esempio un file di Word.
 2. Aprire il messaggio di posta elettronica inviato dal dispositivo configurato come definito nel passaggio 3 della sezione relativa ai requisiti dell'ambiente di testing. Aprire l'allegato o salvare il file nel dispositivo.
 
 #### <a name="go-hunting"></a>Andare a ricerca
 
 1. Aprire il security.microsoft.com portale.
 
-2. Passare a **Ricerca > Ricerca avanzata.**
+2. Passare a **Ricerca > ricerca avanzata.**
 
    ![Screenshot of advanced hunting in the M365 Security Center portal navigation bar](../../media/mtp/fig17.png)
 
@@ -310,9 +310,9 @@ Per questo scenario è necessaria una singola cassetta postale interna e un disp
       EmailEvents
       ```
 
-   1. Modificare l'intervallo di tempo per le ultime 24 ore. Supponendo che il messaggio di posta elettronica inviato durante l'esecuzione della simulazione precedente sia stato nelle ultime 24 ore, in caso contrario modificare l'intervallo di tempo.
+   1. Modificare l'intervallo di tempo per le ultime 24 ore. Supponendo che il messaggio di posta elettronica inviato durante l'esecuzione della simulazione precedente sia stato nelle ultime 24 ore, altrimenti modificare l'intervallo di tempo.
 
-      ![Screenshot che mostra dove è possibile modificare l'intervallo di tempo. Apri il menu a discesa per scegliere tra le opzioni dell'intervallo di tempo](../../media/mtp/fig18.png)
+      ![Screenshot of where you can change the time frame. Apri il menu a discesa per scegliere tra le opzioni dell'intervallo di tempo](../../media/mtp/fig18.png)
 
    1. Eseguire la query. È possibile ottenere molti risultati a seconda dell'ambiente per il progetto pilota.
 
@@ -324,9 +324,9 @@ Per questo scenario è necessaria una singola cassetta postale interna e un disp
         > [!NOTE]
         > Ricerca avanzata visualizza i risultati delle query come dati tabulari. È inoltre possibile scegliere di visualizzare i dati in altri tipi di formato, ad esempio grafici.
 
-   1. Esaminare i risultati e vedere se è possibile identificare il messaggio di posta elettronica aperto. La visualizzazione del messaggio nella ricerca avanzata potrebbe richiedere fino a 2 ore. Se l'ambiente di posta elettronica è di grandi dimensioni e sono presenti molti risultati, è consigliabile utilizzare l'opzione Mostra filtri **per** trovare il messaggio.
+   1. Esaminare i risultati e vedere se è possibile identificare il messaggio di posta elettronica aperto. La visualizzazione del messaggio nella ricerca avanzata potrebbe richiedere fino a 2 ore. Se l'ambiente di posta elettronica è di grandi dimensioni e sono presenti molti risultati, è possibile utilizzare l'opzione Mostra filtri **per** trovare il messaggio.
 
-      Nell'esempio, il messaggio di posta elettronica è stato inviato da un account Yahoo. Fare clic sull'icona accanto yahoo.com nella sezione SenderFromDomain e quindi fare clic su Applica per aggiungere il **+** dominio selezionato alla query.   Utilizzare il dominio o l'account di posta elettronica utilizzato per inviare il messaggio di prova nel passaggio 1 di Eseguire la simulazione per filtrare i risultati. Eseguire di nuovo la query per ottenere un set di risultati più piccolo per verificare che il messaggio sia visualizzato dalla simulazione.
+      Nell'esempio, il messaggio di posta elettronica è stato inviato da un account Yahoo. Fare clic sull'icona accanto yahoo.com nella sezione SenderFromDomain e quindi fare clic su Applica per aggiungere il **+** dominio selezionato alla query.   Utilizzare il dominio o l'account di posta elettronica utilizzato per inviare il messaggio di prova nel passaggio 1 di Run the Simulation per filtrare i risultati. Eseguire di nuovo la query per ottenere un set di risultati più piccolo per verificare che il messaggio sia visualizzato dalla simulazione.
 
       ![Screenshot dei filtri. Usare i filtri per restringere la ricerca e trovare più velocemente ciò che si sta cercando.](../../media/mtp/fig20.png)
 
@@ -350,7 +350,7 @@ Per questo scenario è necessaria una singola cassetta postale interna e un disp
 
 5. Successivamente, includere le informazioni sull'allegato (ad esempio: nome file, hash) nel set di risultati. A tale scopo, unire la **tabella EmailAttachmentInfo.** I campi comuni da utilizzare per l'aggiunta, in questo caso **sono NetworkMessageId** e **RecipientObjectId.**
 
-   La query seguente include anche una riga aggiuntiva "| **project-rename EmailTimestamp=Timestamp**" che consente di identificare quale timestamp era correlato al messaggio di posta elettronica rispetto ai timestamp correlati alle azioni dei file che verranno aggiunti nel passaggio successivo.
+   La query seguente include anche una riga aggiuntiva "| **project-rename EmailTimestamp=Timestamp**" che consente di identificare quale timestamp era correlato al messaggio di posta elettronica rispetto ai timestamp correlati alle azioni file che verranno aggiunti nel passaggio successivo.
 
    ```console
    EmailEvents
@@ -361,7 +361,7 @@ Per questo scenario è necessaria una singola cassetta postale interna e un disp
 
 6. Usa quindi il **valore SHA256** della tabella **EmailAttachmentInfo** per trovare **DeviceFileEvents** (azioni file eseguite nell'endpoint) per l'hash. Il campo comune qui sarà l'hash SHA256 per l'allegato.
 
-   La tabella risultante ora include i dettagli dell'endpoint (Microsoft Defender per endpoint), ad esempio il nome del dispositivo, l'azione eseguita (in questo caso, filtrata per includere solo gli eventi FileCreated) e la posizione in cui è stato archiviato il file. Verrà incluso anche il nome dell'account associato al processo.
+   La tabella risultante ora include i dettagli dell'endpoint (Microsoft Defender per endpoint), ad esempio il nome del dispositivo, l'azione eseguita (in questo caso filtrata per includere solo gli eventi FileCreated) e la posizione in cui è stato archiviato il file. Verrà incluso anche il nome dell'account associato al processo.
 
    ```console
    EmailEvents
@@ -391,9 +391,9 @@ Per questo scenario è necessaria una singola cassetta postale interna e un disp
 
 Dopo aver creato una query che identifica le  informazioni di cui si desidera ricevere un avviso se si verificano in futuro, è possibile creare un rilevamento personalizzato dalla query.
 
-I rilevamenti personalizzati eseguiranno la query in base alla frequenza impostata e i risultati delle query creeranno avvisi di sicurezza in base alle risorse influenzate selezionate. Tali avvisi verranno correlati agli eventi imprevisti e possono essere valutati come qualsiasi altro avviso di sicurezza generato da uno dei prodotti.
+I rilevamenti personalizzati eseguiranno la query in base alla frequenza impostata e i risultati delle query creeranno avvisi di sicurezza in base alle risorse influenzate selezionate. Tali avvisi saranno correlati agli eventi imprevisti e possono essere valutati come qualsiasi altro avviso di sicurezza generato da uno dei prodotti.
 
-1. Nella pagina della query rimuovere le righe 7 e 8 aggiunte nel passaggio 7 delle istruzioni per la ricerca e fare clic **su Crea regola di rilevamento.**
+1. Nella pagina della query rimuovere le righe 7 e 8 aggiunte nel passaggio 7 delle istruzioni di ricerca e fare clic **su Crea regola di rilevamento.**
 
    ![Screenshot of where you can click create detection rule in the advanced hunting page](../../media/mtp/fig22.png)
 
@@ -432,17 +432,17 @@ I rilevamenti personalizzati eseguiranno la query in base alla frequenza imposta
 
 ### <a name="additional-advanced-hunting-walk-through-exercises"></a>Ulteriori esercitazioni pratiche per la ricerca avanzata
 
-Per ulteriori informazioni sulla ricerca avanzata, le webcast seguenti illustrano le funzionalità di ricerca avanzata all'interno di Microsoft 365 Defender per creare query tra pilastri, eseguire pivot in entità e creare rilevamenti e azioni di correzione personalizzate.
+Per ulteriori informazioni sulla ricerca avanzata, le webcast seguenti illustrano le funzionalità di ricerca avanzata in Microsoft 365 Defender per creare query tra pilastri, eseguire pivot in entità e creare rilevamenti e azioni di correzione personalizzate.
 
 > [!NOTE]
-> Prepararsi con il proprio account GitHub per eseguire le query di ricerca nell'ambiente del laboratorio di testing pilota.
+> Prepararsi con il proprio account GitHub per eseguire le query di ricerca nell'ambiente lab di test pilota.
 
-|Titolo|Descrizione|Scaricare MP4|Guardare su YouTube|File CSL da utilizzare|
+|Titolo|Descrizione|Scaricare MP4|Guarda su YouTube|File CSL da utilizzare|
 |---|---|---|---|---|
 |Episodio 1: nozioni fondamentali su KQL|Verranno trattate le nozioni di base delle funzionalità di ricerca avanzate in Microsoft 365 Defender. Informazioni sui dati di ricerca avanzati disponibili e sulla sintassi ESQL di base e sugli operatori.|[MP4](https://aka.ms/MTP15JUL20_MP4)|[YouTube](https://youtu.be/0D9TkGjeJwM)|[Episodio 1: file CSL in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl)|
 |Episodio 2: partecipazioni|We'll continue learning about data in advanced hunting and how to join tables together. Informazioni sui join interni, esterni, univoci e semi join e sulle sfumature dell'innerunique join Kusto predefinito.|[MP4](https://aka.ms/MTP22JUL20_MP4)|[YouTube](https://youtu.be/LMrO6K5TWOU)|[Episodio 2: file CSL in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl)|
-|Episodio 3: riepilogo, pivot e visualizzazione dei dati|Ora che siamo in grado di filtrare, manipolare e unire i dati, è il momento di iniziare a riepilogare, quantificare, eseguire pivot e visualizzare. In questo episodio verrà descritto l'operatore di riepilogo e alcuni dei calcoli che è possibile eseguire durante l'immersione in tabelle aggiuntive nello schema di ricerca avanzata. I set di dati vengono trasformati in grafici che consentono di migliorare l'analisi.|[MP4](https://aka.ms/MTP29JUL20_MP4)|[YouTube](https://youtu.be/UKnk9U1NH6Y)|[Episodio 3: file CSL in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl)|
-|Episodio 4: diamo una risposta. Applicazione di KQL al rilevamento degli eventi imprevisti|È il momento di tenere traccia di alcune attività degli utenti malintenzionati. In questo episodio useremo la nostra migliore comprensione di KQL e la ricerca avanzata in Microsoft 365 Defender per tenere traccia di un attacco. Informazioni su alcuni dei suggerimenti e dei trucchi usati sul campo per tenere traccia delle attività degli utenti malintenzionati, inclusi i criteri rubrica della cybersecurity e su come applicarli alla risposta agli incidenti.|[MP4](https://aka.ms/MTP5AUG20_MP4)|[YouTube](https://youtu.be/2EUxOc_LNd8)|[Episodio 4: file CSL in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)|
+|Episodio 3: riepilogo, pivot e visualizzazione dei dati|Ora che siamo in grado di filtrare, manipolare e unire i dati, è il momento di iniziare a riepilogare, quantificare, eseguire pivot e visualizzare. In questo episodio verrà descritto l'operatore di riepilogo e alcuni dei calcoli che è possibile eseguire durante l'immersione in altre tabelle nello schema di ricerca avanzata. I set di dati vengono trasformati in grafici che consentono di migliorare l'analisi.|[MP4](https://aka.ms/MTP29JUL20_MP4)|[YouTube](https://youtu.be/UKnk9U1NH6Y)|[Episodio 3: file CSL in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl)|
+|Episodio 4: diamo una risposta. Applicazione di KQL al rilevamento degli eventi imprevisti|È il momento di tenere traccia di alcune attività degli utenti malintenzionati. In questo episodio useremo la nostra migliore comprensione di KQL e la ricerca avanzata in Microsoft 365 Defender per tenere traccia di un attacco. Informazioni su alcuni dei suggerimenti e dei trucchi usati sul campo per tenere traccia delle attività degli utenti malintenzionati, tra cui gli ABC della cybersecurity e come applicarli alla risposta agli incidenti.|[MP4](https://aka.ms/MTP5AUG20_MP4)|[YouTube](https://youtu.be/2EUxOc_LNd8)|[Episodio 4: file CSL in Git](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl)|
 |
 
 ## <a name="next-step"></a>Passaggio successivo

@@ -57,7 +57,7 @@ E le campagne potrebbero creare i team seguenti per comunicare e collaborare in 
 
 ![Diagramma di una finestra di Microsoft Teams con tre team separati per consentire comunicazioni e collaborazione sicure all'interno di una campagna](../media/m365-democracy-teams-collab.png)
 
-Quando si crea un team, ecco cosa viene creato:
+Quando si crea un team, vengono creati altri elementi:
 
 - Un nuovo [gruppo di Microsoft 365](https://docs.microsoft.com/MicrosoftTeams/office-365-groups)
 - Un sito e una raccolta documenti di [SharePoint Online](https://docs.microsoft.com/MicrosoftTeams/sharepoint-onedrive-interact) per archiviare i file del team
@@ -76,7 +76,7 @@ Usa la casella di comando nella parte superiore per cercare elementi o persone s
 
 ## <a name="set-it-up"></a>Configurazione
 
-Creare un team privato solo per il titolare dell'azienda, i responsabili, il manager della campagna e il candidato in questo modo.
+Crea un team privato solo per il titolare dell'azienda e i manager, oppure per il manager della campagna e per il candidato in questo modo.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWeqWA]
 

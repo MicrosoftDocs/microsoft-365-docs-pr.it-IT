@@ -40,7 +40,7 @@ ms.locfileid: "49929399"
 
 Questa pagina descrive come creare un'app di Azure Active Directory con accesso programmatico a Microsoft 365 Defender, per conto degli utenti in più tenant. Le app multi-tenant sono utili per servire grandi gruppi di utenti.
 
-Se è necessario l'accesso programmatico a Microsoft 365 Defender per conto di un singolo utente, vedere Creare un'app per accedere alle API di [Microsoft 365 Defender](api-create-app-user-context.md)per conto di un utente. Se è necessario accedere senza definire in modo esplicito un utente (ad esempio, se si sta scrivendo un'app in background o un daemon), vedere Creare un'app per accedere a [Microsoft 365 Defender](api-create-app-web.md)senza un utente. Se non si è sicuri del tipo di accesso necessario, vedere [Introduzione.](api-access.md)
+Se è necessario l'accesso programmatico a Microsoft 365 Defender per conto di un singolo utente, vedere Creare un'app per accedere alle API di [Microsoft 365 Defender](api-create-app-user-context.md)per conto di un utente. Se è necessario accedere senza definire esplicitamente un utente (ad esempio, se si sta scrivendo un'app in background o un daemon), vedere Creare un'app per accedere a [Microsoft 365 Defender](api-create-app-web.md)senza un utente. Se non si è sicuri del tipo di accesso necessario, vedere [Introduzione.](api-access.md)
 
 Microsoft 365 Defender espone gran parte dei dati e delle azioni tramite un set di API programmatiche. Queste API consentono di automatizzare i flussi di lavoro e di usare le funzionalità di Microsoft 365 Defender. Questo accesso API richiede l'autenticazione OAuth2.0. Per ulteriori informazioni, vedere Flusso del codice di autorizzazione [OAuth 2.0.](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-code)
 
@@ -86,16 +86,16 @@ La procedura seguente illustra come creare un'applicazione Azure AD multi-tenant
 
    Dopo aver compilato il modulo, selezionare **Registra.**
 
-   ![Immagine del modulo registra un'applicazione](../..//media/atp-api-new-app-partner.png)
+   ![Immagine del modulo Registra un'applicazione](../..//media/atp-api-new-app-partner.png)
 
-4. Nella pagina dell'applicazione seleziona **AUTORIZZAZIONI API** Aggiungi API di autorizzazione che l'organizzazione usa >, digita  >    >   Microsoft **Threat Protection** e seleziona Microsoft **Threat Protection.** L'app può ora accedere a Microsoft 365 Defender.
+4. Nella pagina dell'applicazione seleziona **AUTORIZZAZIONI API** Per aggiungere le API di autorizzazione che l'organizzazione usa >, digita  >    >   Microsoft **Threat Protection** e seleziona Microsoft **Threat Protection.** L'app può ora accedere a Microsoft 365 Defender.
 
    > [!TIP]
    > *Microsoft Threat Protection* è un nome precedente per Microsoft 365 Defender e non verrà visualizzato nell'elenco originale. È necessario iniziare a scrivere il nome nella casella di testo per visualizzarlo.
 
    ![Immagine della selezione delle autorizzazioni API](../../media/apis-in-my-org-tab.PNG)
 
-5. Selezionare **Autorizzazioni applicazione.** Scegliere le autorizzazioni rilevanti per lo scenario, ad esempio **Incident.Read.All,** quindi selezionare **Aggiungi autorizzazioni.**
+5. Selezionare **Autorizzazioni applicazione.** Scegliere le autorizzazioni rilevanti per lo scenario, ad esempio **Incident.Read.All,** e quindi **selezionare Aggiungi autorizzazioni.**
 
    ![Immagine dell'accesso alle API e della selezione dell'API](../../media/request-api-permissions.PNG)
 
@@ -104,11 +104,11 @@ La procedura seguente illustra come creare un'applicazione Azure AD multi-tenant
     >
     > Ad esempio, per [eseguire query avanzate,](api-advanced-hunting.md)selezionare l'autorizzazione "Esegui query avanzate". per [isolare un dispositivo,](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/isolate-machine)seleziona l'autorizzazione "Isola computer".
 
-6. Selezionare **Concedi il consenso dell'amministratore.** Ogni volta che aggiungi un'autorizzazione, devi selezionare Concedi il **consenso dell'amministratore** per l'applicazione.
+6. Selezionare **Concedi il consenso dell'amministratore.** Ogni volta che aggiungi un'autorizzazione, devi selezionare Concedi il consenso **dell'amministratore** perché sia effettiva.
 
     ![Immagine della concessione delle autorizzazioni](../../media/grant-consent.PNG)
 
-7. Per aggiungere un segreto all'applicazione, selezionare **Certificati & segreti,** aggiungere una descrizione al segreto, quindi **selezionare Aggiungi.**
+7. Per aggiungere un segreto all'applicazione, selezionare **Certificati & segreti,** aggiungere una descrizione al segreto, quindi selezionare **Aggiungi.**
 
     > [!TIP]
     > Dopo aver selezionato **Aggiungi,** selezionare **copia il valore segreto generato.** Non sarà possibile recuperare il valore segreto dopo aver lasciato l'elenco.
@@ -147,7 +147,7 @@ La procedura seguente illustra come creare un'applicazione Azure AD multi-tenant
 Per altre informazioni sui token di Azure AD, vedi l'esercitazione [di Azure AD.](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 > [!IMPORTANT]
-> Sebbene gli esempi in questa sezione incoraggino a incollare valori segreti a scopo di test, non è consigliabile codificare mai i segreti come **hardcoded** in un'applicazione in esecuzione in produzione. Una terza parte potrebbe usare il tuo segreto per accedere alle risorse. Puoi proteggere i segreti dell'app usando [Azure Key Vault.](https://docs.microsoft.com/azure/key-vault/general/about-keys-secrets-certificates) Per un esempio pratico di come proteggere la tua app, vedi [Gestire i segreti nelle app server con Azure Key Vault.](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)
+> Sebbene gli esempi riportati in questa sezione incoraggino l'utente a incollare valori segreti a scopo di test, non è consigliabile codificare mai i segreti come **hardcoded** in un'applicazione in esecuzione in produzione. Una terza parte potrebbe usare il tuo segreto per accedere alle risorse. Puoi proteggere i segreti dell'app usando [Azure Key Vault.](https://docs.microsoft.com/azure/key-vault/general/about-keys-secrets-certificates) Per un esempio pratico di come proteggere la tua app, vedi [Gestire i segreti nelle app server con Azure Key Vault.](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)
 
 > [!TIP]
 > Negli esempi seguenti, usare l'ID tenant di un utente per verificare che lo script funzioni.
@@ -244,9 +244,9 @@ aadToken = jsonResponse["access_token"]
 > L'aggiornamento è preinstallato in Windows 10, versioni 1803 e successive. Per altre versioni di Windows, scarica e installa lo strumento direttamente dal sito Web ufficiale [.](https://curl.haxx.se/windows/)
 
 1. Aprire un prompt dei comandi e impostare CLIENT_ID'ID applicazione di Azure.
-1. Impostare CLIENT_SECRET segreto dell'applicazione Azure.
+1. Impostare CLIENT_SECRET sul segreto dell'applicazione Azure.
 1. Impostare TENANT_ID'ID tenant di Azure dell'utente che vuole usare l'app per accedere a Microsoft 365 Defender.
-1. Eseguire il comando seguente:
+1. Eseguire il comando riportato di seguito:
 
 ```bash
 curl -i -X POST -H "Content-Type:application/x-www-form-urlencoded" -d "grant_type=client_credentials" -d "client_id=%CLIENT_ID%" -d "scope=https://securitycenter.onmicrosoft.com/windowsatpservice/.default" -d "client_secret=%CLIENT_SECRET%" "https://login.microsoftonline.com/%TENANT_ID%/oauth2/v2.0/token" -k

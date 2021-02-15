@@ -1,5 +1,5 @@
 ---
-title: Proteggere PC e Mac Windows 10 non gestiti
+title: Proteggere i PC Windows 10 e Mac non gestiti
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -31,7 +31,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/29/2021
 ms.locfileid: "50044385"
 ---
-# <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>Proteggere PC e Mac Windows 10 non gestiti
+# <a name="protect-unmanaged-windows-10-pcs-and-macs"></a>Proteggere i PC Windows 10 e Mac non gestiti
 
 Puoi gestire PC e Mac Windows 10 registrandoli in Microsoft Intune, che ti consente di assicurarti che siano integri e sicuri prima di accedere ai dati nel tuo ambiente. Tuttavia, molte campagne e piccole aziende includono personale che porta i propri dispositivi (BYOD), che non verrà gestito dall'organizzazione. Per questi PC e Mac non gestiti, usa questo articolo per assicurarti che le funzionalità di sicurezza minime siano configurate.
 

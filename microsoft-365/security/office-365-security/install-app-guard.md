@@ -33,7 +33,7 @@ Microsoft Defender Application Guard per Office (Application Guard per Office) c
 
 ### <a name="minimum-hardware-requirements"></a>Requisiti hardware minimi
 
-* **CPU**: 64 bit, 4 core (fisici o virtuali), estensioni di virtualizzazione (Intel VT-x OR AMD-V), Core i5 equivalente o superiore consigliato
+* **CPU**: 64 bit, 4 core (fisici o virtuali), estensioni di virtualizzazione (Intel VT-x OR AMD-V), Core i5 equivalenti o superiori consigliati
 * **Memoria fisica**: 8 GB di RAM
 * **Disco rigido:** 10 GB di spazio libero nell'unità di sistema (SSD consigliato)
 
@@ -125,7 +125,7 @@ Office supporta i criteri seguenti per consentire di configurare le funzionalit�
 |Non usare Application Guard per Office|L'abilitazione di questo criterio impone a Word, Excel e PowerPoint di utilizzare il contenitore di isolamento Visualizzazione protetta anziché Application Guard per Office. Questo criterio può essere usato per disabilitare temporaneamente Application Guard per Office quando si verificano problemi nel lasciarlo abilitato per Microsoft Edge.|
 |Configurare Application Guard per la pre-creazione di contenitori di Office|Questo criterio determina se il contenitore di Application Guard per Office, per l'isolamento dei file non attendibili, è pre-creato per migliorare le prestazioni di run-time. Se si abilita questa impostazione, è possibile specificare il numero di giorni per continuare la pre-creazione di un contenitore o consentire all'euristica predefinita di Office di pre-creare il contenitore.
 |Non consentire la copia/incolla per i documenti di Office aperti in Application Guard per Office|L'abilitazione di questo criterio impedisce a un utente di copiare e incollare il contenuto di un documento aperto in Application Guard per Office in un documento aperto all'esterno di esso.|
-|Disabilitare l'accelerazione hardware in Application Guard per Office|Questo criterio controlla se Application Guard per Office usa l'accelerazione hardware per il rendering della grafica. Se si abilita questa impostazione, Application Guard per Office usa il rendering basato su software (CPU) e non carica driver grafici di terze parti né interagisce con alcun hardware grafico connesso.
+|Disabilitare l'accelerazione hardware in Application Guard per Office|Questo criterio controlla se Application Guard per Office usa l'accelerazione hardware per il rendering della grafica. Se abiliti questa impostazione, Application Guard per Office usa il rendering basato su software (CPU) e non carica driver grafici di terze parti né interagisce con alcun hardware grafico connesso.
 |Disabilitare la protezione dei tipi di file non supportati in Application Guard per Office|Questo criterio controlla se Application Guard per Office blocca l'apertura di tipi di file non supportati o se abilita il reindirizzamento a Visualizzazione protetta.
 |Disattivare l'accesso a fotocamera e microfono per i documenti aperti in Application Guard per Office|L'abilitazione di questo criterio rimuove l'accesso di Office alla fotocamera e al microfono all'interno di Application Guard per Office.|
 |Limitare la stampa dai documenti aperti in Application Guard per Office|L'abilitazione di questo criterio limiterà le stampanti su cui un utente può stampare da un file aperto in Application Guard per Office. Ad esempio, è possibile utilizzare questo criterio per limitare gli utenti alla stampa solo in formato PDF.|
@@ -139,7 +139,7 @@ Office supporta i criteri seguenti per consentire di configurare le funzionalit�
 > * Limitare la stampa per i documenti aperti in Application Guard per Office
 > * Disattivare l'accesso a fotocamera e microfono ai documenti aperti in Application Guard per Office
 
-## <a name="submit-feedback"></a>Inviare feedback
+## <a name="submit-feedback"></a>Inviare commenti e suggerimenti
 
 ### <a name="submit-feedback-via-feedback-hub"></a>Inviare feedback tramite Hub di Feedback
 
@@ -167,7 +167,7 @@ Se si verificano problemi durante l'avvio di Application Guard per Office, si co
 
    4. Riprodurre completamente il problema con Application Guard. La riproduzione può includere il tentativo di avviare un'istanza di Application Guard in attesa di un errore o la riproduzione di un problema in un'istanza di Application Guard in esecuzione.
 
-   5. Seleziona il **riquadro Interrompi** registrazione.
+   5. Seleziona il riquadro **Interrompi** registrazione.
 
    6. Mantieni aperte tutte le istanze di Application Guard in esecuzione, anche per alcuni minuti dopo l'invio, in modo che sia possibile raccogliere anche la diagnostica del contenitore.
 
@@ -189,16 +189,16 @@ Microsoft Defender for Endpoint è una piattaforma di sicurezza progettata per a
 
 ## <a name="limitations-and-considerations"></a>Limitazioni e considerazioni
 
-* Application Guard per Office è una modalità con restrizioni che isola i documenti non attendibili in modo che non possano accedere a risorse aziendali attendibili, a una Intranet, all'identità dell'utente e a file arbitrari nel computer. Di conseguenza, se un utente tenta di accedere a una caratteristica che dipende da tale accesso, ad esempio l'inserimento di un'immagine da un file locale su disco, l'accesso avrà esito negativo e genererà un prompt come nell'esempio seguente. Per consentire a un documento non attendibile di accedere alle risorse attendibili, gli utenti devono rimuovere la protezione di Application Guard dal documento.
+* Application Guard per Office è una modalità con restrizioni che isola i documenti non attendibili in modo che non possano accedere alle risorse aziendali attendibili, a una Intranet, all'identità dell'utente e ai file arbitrari nel computer. Di conseguenza, se un utente tenta di accedere a una caratteristica che dipende da tale accesso, ad esempio l'inserimento di un'immagine da un file locale su disco, l'accesso avrà esito negativo e genererà un prompt come nell'esempio seguente. Per consentire a un documento non attendibile di accedere alle risorse attendibili, gli utenti devono rimuovere la protezione di Application Guard dal documento.
 
   ![Finestra di dialogo che consente di mantenere al sicuro questa funzionalità non è disponibile](../../media/ag10-limitations.png)
 
   > [!NOTE]
   > Consigliare agli utenti di rimuovere la protezione solo se considera attendibile il file e la relativa origine o da dove proveniva.
 
-* Il contenuto attivo in documenti come macro e ActiveX di sicurezza è disabilitato in Application Guard per Office. Gli utenti devono rimuovere la protezione di Application Guard per abilitare il contenuto attivo.
+* I contenuti attivi in documenti come macro e ActiveX sono disabilitati in Application Guard per Office. Gli utenti devono rimuovere la protezione di Application Guard per abilitare il contenuto attivo.
 
-* I file non attendibili da condivisioni di rete o file condivisi da OneDrive, OneDrive for Business o SharePoint Online da un'organizzazione diversa vengono aperti in sola lettura in Application Guard. Gli utenti possono salvare una copia locale di tali file per continuare a lavorare nel contenitore o rimuovere la protezione per lavorare direttamente con il file originale.
+* I file non attendibili provenienti da condivisioni di rete o da file condivisi da OneDrive, OneDrive for Business o SharePoint Online da un'organizzazione diversa vengono aperti in sola lettura in Application Guard. Gli utenti possono salvare una copia locale di tali file per continuare a lavorare nel contenitore o rimuovere la protezione per lavorare direttamente con il file originale.
 
 * I file protetti da Information Rights Management (IRM) sono bloccati per impostazione predefinita. Se gli utenti desiderano aprire tali file in Visualizzazione protetta, un amministratore deve configurare le impostazioni dei criteri per i tipi di file non supportati per l'organizzazione.
 

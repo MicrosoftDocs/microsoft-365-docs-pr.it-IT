@@ -52,7 +52,7 @@ Il completamento del progetto dovrebbe richiedere da 5 a 10 minuti. Questa stima
 
 3. Nel modulo di registrazione scegliere un nome per l'applicazione e quindi selezionare **Registra.** La selezione di un URI di reindirizzamento è facoltativa. Non è necessario per completare questo esempio.
 
-4. Nella pagina dell'applicazione seleziona **AUTORIZZAZIONI API** Aggiungi API di autorizzazione che l'organizzazione usa >, digita  >    >   Microsoft **Threat Protection** e seleziona Microsoft **Threat Protection.** L'app può ora accedere a Microsoft 365 Defender.
+4. Nella pagina dell'applicazione seleziona **AUTORIZZAZIONI API** Per aggiungere le API di autorizzazione che l'organizzazione usa >, digita  >    >   Microsoft **Threat Protection** e seleziona Microsoft **Threat Protection.** L'app può ora accedere a Microsoft 365 Defender.
 
    > [!TIP]
    > *Microsoft Threat Protection* è un nome precedente per Microsoft 365 Defender e non verrà visualizzato nell'elenco originale. È necessario iniziare a scrivere il nome nella casella di testo per visualizzarlo.
@@ -82,7 +82,7 @@ Il completamento del progetto dovrebbe richiedere da 5 a 10 minuti. Questa stima
 Per altre informazioni sui token di Azure Active Directory, vedi l'esercitazione [di Azure AD.](https://docs.microsoft.com/azure/active-directory/develop/active-directory-v2-protocols-oauth-client-creds)
 
 > [!IMPORTANT]
-> Anche se l'esempio in questa app demo ti incoraggia a incollare il valore segreto a scopo di test, non dovresti mai codificare i segreti **hardcoded** in un'applicazione in esecuzione in produzione. Una terza parte potrebbe usare il tuo segreto per accedere alle risorse. Puoi proteggere i segreti dell'app usando [Azure Key Vault.](https://docs.microsoft.com/azure/key-vault/general/about-keys-secrets-certificates) Per un esempio pratico di come proteggere la tua app, vedi [Gestire i segreti nelle app server con Azure Key Vault.](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)
+> Anche se l'esempio in questa app demo ti incoraggia a incollare il valore segreto a scopo di test, non dovresti mai codificare i segreti **hardcoded** in un'applicazione in esecuzione in produzione. Una terza parte potrebbe usare il tuo segreto per accedere alle risorse. Puoi proteggere i segreti dell'app usando [Azure Key Vault.](https://docs.microsoft.com/azure/key-vault/general/about-keys-secrets-certificates) Per un esempio pratico di come proteggere la tua app, vedi Gestire i segreti [nelle app server con Azure Key Vault.](https://docs.microsoft.com/learn/modules/manage-secrets-with-azure-key-vault/)
 
 1. Copia lo script seguente e incollalo nell'editor di testo preferito. Salva con nome **Get-Token.ps1**. È anche possibile eseguire il codice così come è in PowerShell ISE, ma è consigliabile salvarlo, perché sarà necessario eseguirlo di nuovo quando si utilizza lo script di recupero degli eventi imprevisti nella sezione successiva.
 
@@ -113,7 +113,7 @@ Per altre informazioni sui token di Azure Active Directory, vedi l'esercitazione
 #### <a name="validate-the-token"></a>Convalidare il token
 
 1. Copia e incolla il token ricevuto in [JWT](https://jwt.ms) per decodificarlo.
-1. *JWT* è *l'acronimo di JSON Web Token.* Il token decodificato conterrà un numero di elementi o attestazioni in formato JSON. Verificare che *l'attestazione dei* ruoli all'interno del token decodificato contenga le autorizzazioni desiderate.
+1. *JWT* è *l'acronimo di JSON Web Token.* Il token decodificato conterrà una serie di elementi o attestazioni in formato JSON. Verificare che *l'attestazione dei* ruoli all'interno del token decodificato contenga le autorizzazioni desiderate.
 
     Nell'immagine seguente puoi vedere un token decodificato acquisito da un'app, con ```Incidents.Read.All``` ```Incidents.ReadWrite.All``` , e ```AdvancedHunting.Read.All``` autorizzazioni:
 

@@ -29,11 +29,11 @@ ms.locfileid: "50053802"
 
 [Microsoft Intune](https://docs.microsoft.com/mem/intune/) è un prodotto autonomo incluso in alcuni piani di Microsoft 365, mentre Basic Mobility and Security fa parte dei piani di Microsoft 365.
 
- ## <a name="availability-of-basic-mobility-and-security-and-intune"></a>Disponibilità di Dispositivi mobili e sicurezza di base e Intune
+ ## <a name="availability-of-basic-mobility-and-security-and-intune"></a>Disponibilità di dispositivi mobili e sicurezza di base e Intune
 
 Sia Basic Mobility che Security e Intune sono inclusi in un'ampia gamma di piani, descritti nella tabella seguente.
 
-| Pianificare | Basic Mobility + Security | Microsoft Intune |
+| Piano | Basic Mobility + Security | Microsoft Intune |
 |:-----|:-----|:-----|
 |Microsoft 365 Apps|Sì|No|
 |Microsoft 365 Business Basic|Sì|No|
@@ -62,7 +62,7 @@ Sia Basic Mobility che Security e Intune sono inclusi in un'ampia gamma di piani
 Microsoft Intune e basic mobility and Security incorporati offrono entrambi la possibilità di gestire i dispositivi mobili nell'organizzazione, ma esistono differenze chiave nelle funzionalità, descritte nella tabella seguente.
 
 >[!NOTE]
->È possibile gestire gli utenti e i loro dispositivi mobili usando sia Intune che Basic Mobility and Security nella stessa organizzazione di Microsoft 365 Business Standard configurando prima Basic Mobility and Security e quindi aggiungendo *Microsoft Intune.* In questo modo è possibile scegliere Dispositivi mobili e sicurezza di base o la soluzione Intune più ricca di funzionalità. Assegnare una licenza di Intune per abilitare le funzionalità di Intune.
+>È possibile gestire gli utenti e i loro dispositivi mobili usando sia Intune che Basic Mobility and Security nella stessa organizzazione di Microsoft 365 Business Standard configurando prima Basic Mobility and Security e quindi aggiungendo *Microsoft Intune.* In questo modo è possibile scegliere Basic Mobility and Security o la soluzione Intune più ricca di funzionalità. Assegnare una licenza di Intune per abilitare le funzionalità di Intune.
 
 | Area funzionale | Caratteristiche principali | Basic Mobility + Security | Microsoft Intune |
 |:-----|:-----|:-----|:-----|
@@ -77,10 +77,10 @@ Microsoft Intune e basic mobility and Security incorporati offrono entrambi la p
 |Gestione delle applicazioni di sicurezza e mobilità di base  |Distribuisci le tue app line-of-business interne e dagli archivi app agli utenti. |No|Sì|
 |Protezione delle applicazioni mobili  |Consentire agli utenti di accedere in modo sicuro alle informazioni aziendali utilizzando le app per dispositivi mobili e line-of-business di Office che conoscono, garantendo al contempo la sicurezza dei dati, limitando azioni come copia, taglia, incolla e salva con nome solo alle app gestite approvate per i dati aziendali. Funziona anche se i dispositivi non sono registrati in Basic Mobility and Security. Vedi Proteggere i dati delle app con i criteri MAM. |No|Sì|
 |Browser gestito  |Abilitare un'esplorazione Web più sicura con l'app Edge. |No|Sì|
-|Programmi di registrazione Zero Touch Autopilot) |Registrare un numero elevato di dispositivi di proprietà dell'azienda, semplificando al contempo la configurazione dell'utente. |No|Sì|
+|Programmi di registrazione Zero Touch Autopilot) |Registrare un numero elevato di dispositivi di proprietà dell'azienda, semplificando al contempo la configurazione degli utenti. |No|Sì|
 |||
 
-Oltre alle funzionalità elencate nella tabella precedente, Basic Mobility and Security e Intune includono entrambi un set di azioni remote che inviano comandi ai dispositivi tramite Internet. Ad esempio, è possibile rimuovere i dati di Office dal dispositivo di un dipendente lasciando i dati personali sul posto (ritiro), rimuovere le app di Office dal dispositivo di un dipendente (cancellazione) o ripristinare le impostazioni di fabbrica di un dispositivo (cancellazione completa). 
+Oltre alle funzionalità elencate nella tabella precedente, Basic Mobility and Security e Intune includono un set di azioni remote che inviano comandi ai dispositivi tramite Internet. Ad esempio, è possibile rimuovere i dati di Office dal dispositivo di un dipendente lasciando i dati personali sul posto (ritiro), rimuovere le app di Office dal dispositivo di un dipendente (cancellazione) o ripristinare le impostazioni di fabbrica di un dispositivo (cancellazione completa). 
 
 Le azioni remote di base per dispositivi mobili e sicurezza includono il ritiro, la cancellazione e la cancellazione completa. Per ulteriori informazioni sulle azioni di sicurezza e mobilità di base, vedere Funzionalità [di sicurezza e mobilità di base.](capabilities.md)
 

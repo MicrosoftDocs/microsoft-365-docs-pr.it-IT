@@ -39,7 +39,7 @@ ms.locfileid: "49930631"
 
 
 
-La gestione degli eventi è fondamentale per garantire il controllo e la soluzione delle minacce. In Microsoft 365 Defender, si ha accesso alla gestione degli eventi imprevisti su dispositivi, utenti e cassette postali. 
+La gestione degli eventi è fondamentale per garantire il controllo e la soluzione delle minacce. In Microsoft 365 Defender, è possibile gestire gli eventi imprevisti su dispositivi, utenti e cassette postali. 
 
 
 È possibile gestire gli eventi selezionandone uno dalla **Coda degli eventi imprevisti**. 
@@ -56,7 +56,7 @@ Ad esempio: *evento imprevisto a più fasi in più endpoint segnalati da più or
 È possibile modificare il nome dell'evento per allinearlo alla convenzione di denominazione preferita.
 
 > [!NOTE]
-> Gli eventi imprevisti che si verificavano prima dell'implementazione della funzionalità di denominazione automatica degli eventi imprevisti manterranno il nome.
+> Gli eventi imprevisti che si sono verificati prima dell'implementazione della funzionalità di denominazione automatica degli eventi imprevisti manterranno il nome.
 
 
 

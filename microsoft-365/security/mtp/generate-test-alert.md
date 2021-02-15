@@ -38,10 +38,10 @@ ms.locfileid: "49929481"
 Dopo aver completato la configurazione e la configurazione del lab di valutazione di Microsoft 365 Defender, è possibile eseguire una simulazione di attacco alle minacce per sperimentare le funzionalità di rilevamento, correlazione degli avvisi e correzione automatica della soluzione di sicurezza integrata.  
 
 1. Accedere a https://security.microsoft.com
-2. Nella home page cercare un riquadro intitolato **Simulazione.**  Esaminare la guida dettagliata per la procedura per creare un evento imprevisto di test in Microsoft 365 Defender.
+2. Nella home page cerca un riquadro intitolato **Simulation.**  Esaminare la guida dettagliata per la procedura per creare un evento imprevisto di test in Microsoft 365 Defender.
 <br>![Immagine della scheda di simulazione nel dashboard sicurezza di Microsoft 365](../../media/mtp-eval-73.png) <br>
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Esplorare il centro soluzioni e architettura di [Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) per comprendere come progettare la soluzione e l'architettura più per la propria organizzazione.
+Esplorare il centro soluzioni e architettura di [Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/solution-architecture-center) per comprendere come progettare la soluzione e l'architettura più giuste per l'organizzazione.
 

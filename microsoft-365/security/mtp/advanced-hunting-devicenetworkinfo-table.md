@@ -57,7 +57,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `IPv4Dhcp` | stringa | Indirizzo IPv4 del server DHCP |
 | `IPv6Dhcp` | stringa | Indirizzo IPv6 del server DHCP |
 | `DefaultGateways` | stringa | Indirizzi gateway predefiniti in formato matrice JSON |
-| `IPAddresses` | stringa | Array JSON contenente tutti gli indirizzi IP assegnati alla scheda, insieme al rispettivo prefisso di subnet e spazio degli indirizzi IP, ad esempio pubblico, privato o locale del collegamento |
+| `IPAddresses` | stringa | Array JSON contenente tutti gli indirizzi IP assegnati alla scheda, insieme al rispettivo prefisso di subnet e spazio di indirizzi IP, ad esempio pubblico, privato o locale del collegamento |
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)

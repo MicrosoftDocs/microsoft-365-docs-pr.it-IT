@@ -46,10 +46,10 @@ Puoi scegliere di ricevere notifiche in base alla gravità dell'incidente o in b
 The email notification contains important details about the incident like the incident name, severity, and categories, among others. È inoltre possibile passare direttamente agli eventi imprevisti in modo da poter avviare immediatamente l'indagine. Per altre informazioni sull'analisi degli eventi imprevisti, vedere [Analizzare gli eventi imprevisti in Microsoft 365 Defender.](https://docs.microsoft.com/microsoft-365/security/mtp/investigate-incidents)
 
 >[!NOTE]
->Per configurare le impostazioni di notifica tramite posta elettronica, sono necessarie le autorizzazioni "Gestisci impostazioni di sicurezza". Se si è scelto di utilizzare la gestione delle autorizzazioni di base, gli utenti con ruoli amministratore della sicurezza o amministratore globale possono configurare automaticamente le notifiche tramite posta elettronica. <br> <br>
-Analogamente, se l'organizzazione usa il controllo di accesso basato sui ruoli (RBAC), è possibile creare, modificare, eliminare e ricevere notifiche solo in base ai gruppi di dispositivi che è possibile gestire.
+>Sono necessarie le autorizzazioni "Gestisci impostazioni di sicurezza" per configurare le impostazioni di notifica di posta elettronica. Se si è scelto di utilizzare la gestione delle autorizzazioni di base, gli utenti con ruoli amministratore della sicurezza o amministratore globale possono configurare automaticamente le notifiche tramite posta elettronica. <br> <br>
+Analogamente, se l'organizzazione utilizza il controllo di accesso basato sui ruoli (RBAC), è possibile creare, modificare, eliminare e ricevere notifiche solo in base ai gruppi di dispositivi che è possibile gestire.
 
-## <a name="create-rules-for-incident-notifications"></a>Creare regole per le notifiche di eventi imprevisti
+## <a name="create-rules-for-incident-notifications"></a>Creare regole per le notifiche degli eventi imprevisti
 
 Per configurare la prima notifica tramite posta elettronica per gli eventi imprevisti, creare una nuova regola e personalizzare le impostazioni di notifica tramite posta elettronica.
 
@@ -60,7 +60,7 @@ Per configurare la prima notifica tramite posta elettronica per gli eventi impre
     ![Finestra delle regole di creazione per i notif di posta elettronica degli eventi imprevisti](../../media/incidentemailnotif1.png) 
 4. Selezionare **Avanti** per passare alle **impostazioni di notifica.** Qui è possibile specificare:
     - **Gravità avviso: scegliere** la gravità dell'avviso che attiverà una notifica di evento imprevisto. Ad esempio, se si desidera essere informati solo su eventi imprevisti di gravità elevata, selezionare Alta.
-    - **Ambito del gruppo di dispositivi:** questo elenco a discesa visualizza tutti i gruppi di dispositivi a cui l'utente può accedere. Selezionare i gruppi di dispositivi per cui si stanno creando le regole di notifica degli eventi imprevisti.
+    - **Ambito del gruppo di dispositivi:** questo elenco a discesa visualizza tutti i gruppi di dispositivi a cui l'utente può accedere. Seleziona i gruppi di dispositivi per cui stai creando le regole di notifica degli eventi imprevisti.
     - **Notifica solo alla prima occorrenza per** evento imprevisto: se si seleziona questa opzione, verrà inviata una notifica tramite posta elettronica solo al primo avviso corrispondente alle altre selezioni. Gli aggiornamenti o gli avvisi successivi correlati all'evento non attiverà una notifica.
     - **Includi nome organizzazione-** Indica se il nome del cliente viene visualizzato o meno nella notifica tramite posta elettronica.
     - **Includi collegamento al portale specifico del tenant:** aggiunge un collegamento con l'ID tenant per consentire l'accesso a un tenant specifico.
@@ -70,7 +70,7 @@ Per configurare la prima notifica tramite posta elettronica per gli eventi impre
 
     ![Finestra Aggiungi destinatari per notifiche di posta elettronica operazioni non consentite](../../media/incidentemailnotif3.png) 
 
-6. Infine, selezionare **Avanti** per passare a **Revisione regola in** modo da visualizzare tutte le impostazioni associate alla nuova regola. I destinatari inizieranno a ricevere notifiche di eventi imprevisti tramite posta elettronica in base alle impostazioni.
+6. Infine, selezionare **Avanti** per passare a **Controlla regola** in modo da visualizzare tutte le impostazioni associate alla nuova regola. I destinatari inizieranno a ricevere notifiche di eventi imprevisti tramite posta elettronica in base alle impostazioni.
 
 ## <a name="see-also"></a>Vedere anche
 - [Panoramica degli eventi imprevisti in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/incidents-overview)

@@ -32,7 +32,7 @@ ms.locfileid: "49930595"
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-Per rendere Microsoft Secure Score un migliore rappresentante delle proprie condizioni di sicurezza, sono state apportate alcune modifiche. Per informazioni sulle modifiche pianificate, vedere Che cosa è in arrivo [in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
+Per rendere Microsoft Secure Score un migliore rappresentante delle proprie condizioni di sicurezza, sono state apportate alcune modifiche. Per informazioni sulle modifiche pianificate, vedere [Cosa verrà in arrivo in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
 
 Microsoft Secure Score è disponibile nel Centro sicurezza https://security.microsoft.com/securescore [Microsoft 365.](overview-security-center.md)
 
@@ -67,9 +67,9 @@ La possibilità di creare ticket ServiceNow tramite Secure Score passando a **Sh
 
 ## <a name="october-2020"></a>Ottobre 2020
 
-### <a name="remove-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Rimuovere l'azione di miglioramento relativa a Microsoft Defender per Endpoint
+### <a name="remove-improvement-action-related-to-microsoft-defender-for-endpoint"></a>Rimuovere l'azione di miglioramento relativa a Microsoft Defender for Endpoint
 
-- Impostare il controllo del contenuto Web delle app di Windows Store di Microsoft Defender SmartScreen in modo da avvisare
+- Impostare il controllo del contenuto Web delle app di Windows Store di Microsoft Defender SmartScreen in modo che avvisi
 
 ## <a name="august-2020"></a>Agosto 2020
 
@@ -81,7 +81,7 @@ La possibilità di creare ticket ServiceNow tramite Secure Score passando a **Sh
 
 Nella recente versione di Microsoft Secure Score è stato rilasciato un modello di punteggio migliorato. Queste modifiche consentono una visualizzazione più flessibile e precisa della posizione di sicurezza. Tuttavia, questi aggiornamenti hanno reso Microsoft Secure Score temporaneamente incompatibile con Identity Secure Score e l'API Graph.
 
-Nel tempo, Identity Secure Score e l'API Graph adottano il nuovo modello di punteggio. Fino a quel momento, i clienti potranno vedere differenze nei punteggi riportati da Microsoft Secure Score, Identity Secure Score e l'API Graph. Ci scusiamo per eventuali inconvenienti e stiamo lavorando per garantire che queste esperienze siano più compatibili in futuro.
+Nel tempo, Identity Secure Score e l'API Graph adottano il nuovo modello di punteggio. Fino a quel momento, i clienti potranno vedere differenze nei punteggi riportati da Microsoft Secure Score, Identity Secure Score e dall'API Graph. Ci scusiamo per eventuali inconvenienti e stiamo lavorando per garantire che queste esperienze siano più compatibili in futuro.
 
 ## <a name="updated-improvement-actions"></a>Azioni di miglioramento aggiornate
 
@@ -101,7 +101,7 @@ Nel tempo, Identity Secure Score e l'API Graph adottano il nuovo modello di punt
 
 ## <a name="we-want-to-hear-from-you"></a>L'opinione degli utenti è importante
 
-In caso di problemi, contattaci pubblicando il post nella community [sicurezza, privacy & conformità.](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) Stiamo monitorando la community e forniremo assistenza.
+In caso di problemi, contattaci pubblicando il post nella community [sicurezza, privacy & conformità.](https://techcommunity.microsoft.com/t5/Security-Privacy-Compliance/bd-p/security_privacy) We're monitoring the community and will provide help.
 
 ## <a name="related-resources"></a>Risorse correlate
 

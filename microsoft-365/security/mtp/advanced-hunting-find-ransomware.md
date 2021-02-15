@@ -34,7 +34,7 @@ ms.locfileid: "49929512"
 **Si applica a:**
 - Microsoft 365 Defender
 
-Il ransomware si è evoluto rapidamente dall'essere un semplice malware di commodity che interessa singoli utenti di computer a una minaccia aziendale che ha un forte impatto sui settori e sulle istituzioni governative. Anche [se Microsoft 365 Defender](microsoft-threat-protection.md) offre molte funzionalità che rilevano e bloccano ransomware e le attività di intrusione associate, l'esecuzione di controlli proattivi per individuare segni di compromissione può aiutare a proteggere la rete.
+Il ransomware si è evoluto rapidamente dall'essere un semplice malware di commodity che interessa i singoli utenti di computer a una minaccia aziendale che ha un forte impatto sui settori e sulle istituzioni governative. Mentre [Microsoft 365 Defender](microsoft-threat-protection.md) offre molte funzionalità che rilevano e bloccano ransomware e le attività di intrusione associate, l'esecuzione di controlli proattivi per individuare segni di compromissione può aiutare a proteggere la rete.
 
 > [Informazioni sul ransomware gestito dall'utente](https://www.microsoft.com/security/blog/2020/03/05/human-operated-ransomware-attacks-a-preventable-disaster/)
 
@@ -45,8 +45,8 @@ I ricercatori di sicurezza Microsoft hanno osservato vari artefatti comuni ma so
 
 | Attività ransomware | Strumenti comuni | Intent |
 |--|--|--|
-| Arrestare i processi | _taskkill.exe_, _net stop_ | Assicurarsi che i file destinati alla crittografia non siano bloccati da diverse applicazioni. |
-| Disattivare i servizi | _sc.exe_ | - Assicurarsi che i file destinati alla crittografia non siano bloccati da diverse applicazioni.<br>- Impedire al software di sicurezza di interrompere la crittografia e altre attività ransomware.<br>- Arrestare la creazione di copie ripristinabili da parte del software di backup.  |
+| Arrestare i processi | _taskkill.exe_, _net stop_ | Assicurarsi che i file destinati alla crittografia non siano bloccati da varie applicazioni. |
+| Disattivare i servizi | _sc.exe_ | - Assicurarsi che i file destinati alla crittografia non siano bloccati da varie applicazioni.<br>- Impedire al software di sicurezza di interrompere la crittografia e altre attività ransomware.<br>- Arrestare la creazione di copie ripristinabili da parte del software di backup.  |
 | Eliminare registri e file | _cipher.exe_, _wevtutil_, _fsutil.exe_ | Rimuovere le prove forensi. |
 | Eliminare copie shadow  | _vsadmin.exe_, _wmic.exe_ | Rimuovere le copie shadow dell'unità che possono essere utilizzate per recuperare i file crittografati. |
 | Eliminare e arrestare i backup | _wbadmin.exe_ | Eliminare i backup esistenti e interrompere le attività di backup pianificate, impedendo il ripristino dopo la crittografia. |
@@ -57,7 +57,7 @@ I ricercatori di sicurezza Microsoft hanno osservato vari artefatti comuni ma so
 Molte attività che costituiscono il comportamento ransomware, incluse le attività descritte nella sezione precedente, possono essere innocue. When using the following queries to locate ransomware, run more than one query to check whether the same devices are exhibiting various signs of possible ransomware activity.
 
 ### <a name="stopping-multiple-processes-using-_taskkillexe_"></a>Arresto di più processi tramite _taskkill.exe_
-Questa query verifica la presenza di tentativi di  arrestare almeno 10 processi separati utilizzando ltaskkill.exeutilitura. [Esegui query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2RS2vCUBCFz7rgfwiuIkit3eumVSgtpYvuS9SLDTY2eLUvxN_eb8YHKlFkyNzJzDkn505aailRX7mmGlFlmhNBhUrOSGeuT3L0s6QqNaMagolEcMyCbApjx2e8TYhcH8Q1mB-emq50z_lF39gvBzo9-gEF-6Yhlyh9653ejCfRK6zCsaZfuJOu-x2jkqqN-0Yls-8-gp6dZ52OVuT6Sad1plulyN0KIkMt15_zt7zHDe8OBwv3btoJToa7Tnp0T8Ou9WzfT761gPOm3_FQ16Zxp2qcCdg33_rlyokG-iXv7_4BRNMnhkortmvTW6rqnZ7bgP2Vtm70D3d9wcFaAgAA&runQuery=true&timeRangeId=week)
+Questa query verifica la presenza di tentativi di arresto di almeno 10 processi separati tramite _l'taskkill.exe_ di rete. [Esegui query](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2RS2vCUBCFz7rgfwiuIkit3eumVSgtpYvuS9SLDTY2eLUvxN_eb8YHKlFkyNzJzDkn505aailRX7mmGlFlmhNBhUrOSGeuT3L0s6QqNaMagolEcMyCbApjx2e8TYhcH8Q1mB-emq50z_lF39gvBzo9-gEF-6Yhlyh9653ejCfRK6zCsaZfuJOu-x2jkqqN-0Yls-8-gp6dZ52OVuT6Sad1plulyN0KIkMt15_zt7zHDe8OBwv3btoJToa7Tnp0T8Ou9WzfT761gPOm3_FQ16Zxp2qcCdg33_rlyokG-iXv7_4BRNMnhkortmvTW6rqnZ7bgP2Vtm70D3d9wcFaAgAA&runQuery=true&timeRangeId=week)
 
 ```kusto
 // Find attempts to stop processes using taskkill.exe

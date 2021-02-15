@@ -46,7 +46,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `DeviceName` | stringa | Nome di dominio completo (FQDN) del computer |
 | `SHA1` | stringa | SHA-1 del file a cui è stata applicata l'azione registrata |
 | `IsSigned` | boolean | Indica se il file è firmato |
-| `SignatureType` | stringa | Indica se le informazioni sulla firma sono stata lette come contenuto incorporato nel file stesso o da un file di catalogo esterno. |
+| `SignatureType` | stringa | Indica se le informazioni sulla firma sono stati letti come contenuto incorporato nel file stesso o letti da un file di catalogo esterno |
 | `Signer` | stringa | Informazioni sul firmatario del file |
 | `SignerHash` | stringa | Valore hash univoco che identifica il firmatario |
 | `Issuer` | stringa | Informazioni sull'autorità di certificazione (CA) emittente |

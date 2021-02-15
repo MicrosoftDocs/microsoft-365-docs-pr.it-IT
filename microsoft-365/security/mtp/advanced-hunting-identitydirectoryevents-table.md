@@ -35,7 +35,7 @@ ms.locfileid: "49929935"
 **Si applica a:**
 - Microsoft 365 Defender
 
-La tabella nello schema di ricerca avanzata contiene gli eventi che coinvolgono un controller di dominio locale che `IdentityDirectoryEvents` esegue Active Directory (AD). [](advanced-hunting-overview.md) Questa tabella acquisisce vari eventi correlati all'identità, come le modifiche delle password, la scadenza delle password e le modifiche al nome dell'entità utente (UPN). Acquisisce inoltre gli eventi di sistema nel controller di dominio, ad esempio la pianificazione delle attività e l'attività di PowerShell. Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
+La tabella nello schema di ricerca avanzata contiene gli eventi che coinvolgono un controller di dominio locale che `IdentityDirectoryEvents` esegue Active Directory (AD). [](advanced-hunting-overview.md) Questa tabella acquisisce vari eventi correlati all'identità, ad esempio le modifiche delle password, la scadenza delle password e le modifiche al nome dell'entità utente (UPN). Acquisisce inoltre gli eventi di sistema nel controller di dominio, ad esempio la pianificazione delle attività e l'attività di PowerShell. Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
 
 >[!TIP]
 > Per informazioni dettagliate sui tipi di eventi (valori) supportati da una tabella, utilizzare il riferimento allo schema predefinito `ActionType` disponibile nel Centro sicurezza. [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
@@ -45,7 +45,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | Nome colonna | Tipo di dati | Descrizione |
 |-------------|-----------|-------------|
 | `Timestamp` | datetime | Data e ora di registrazione dell'evento |
-| `ActionType` | stringa | Tipo di attività che ha attivato l'evento. Per informazioni [dettagliate, vedere le informazioni di riferimento](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) sullo schema nel portale |
+| `ActionType` | stringa | Tipo di attività che ha attivato l'evento. Per informazioni [dettagliate, vedere la guida di riferimento](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center) allo schema nel portale |
 | `Application` | stringa | Applicazione che ha eseguito l'azione registrata |
 | `TargetAccountUpn` | stringa | Nome dell'entità utente (UPN) dell'account a cui è stata applicata l'azione registrata |
 | `TargetAccountDisplayName` | stringa | Nome visualizzato dell'account a cui è stata applicata l'azione registrata |
@@ -58,7 +58,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `AccountDomain` | stringa | Dominio dell'account |
 | `AccountUpn` | stringa | Nome dell'entità utente (UPN) dell'account |
 | `AccountSid` | stringa | Identificatore di sicurezza (SID) dell'account |
-| `AccountObjectId` | stringa | Identificatore univoco per l'account in Azure Active Directory |
+| `AccountObjectId` | stringa | Identificatore univoco dell'account in Azure Active Directory |
 | `AccountDisplayName` | stringa | Nome dell'utente dell'account visualizzato nella rubrica. In genere una combinazione di un nome o di un dato nome, un'iniziazione intermedia e un cognome o un cognome. |
 | `DeviceName` | stringa | Nome di dominio completo (FQDN) del dispositivo |
 | `IPAddress` | stringa | Indirizzo IP assegnato al dispositivo durante la comunicazione |

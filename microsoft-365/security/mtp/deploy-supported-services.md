@@ -42,7 +42,7 @@ ms.locfileid: "49928963"
 [Microsoft 365 Defender](microsoft-threat-protection.md) integra vari servizi di sicurezza Microsoft per fornire funzionalità di rilevamento, prevenzione e analisi centralizzate contro attacchi sofisticati. In questo articolo vengono descritti i servizi supportati, i relativi requisiti di licenza, i vantaggi e le limitazioni associati alla distribuzione di uno o più servizi e vengono forniti collegamenti a come distribuirli completamente singolarmente.
 
 ## <a name="supported-services"></a>Servizi supportati
-Una licenza di Microsoft 365 E5, E5 Security, A5 o A5 Security o una combinazione valida di licenze consente di accedere ai servizi supportati seguenti e consente di usare Microsoft 365 Defender nel Centro sicurezza Microsoft 365. [Vedere i requisiti di licenza](prerequisites.md#licensing-requirements)
+Una licenza di Microsoft 365 E5, E5 Security, A5 o A5 Security o una combinazione valida di licenze consente di accedere ai servizi supportati seguenti e consente di usare Microsoft 365 Defender nel Centro sicurezza Microsoft 365. [Visualizzare i requisiti di licenza](prerequisites.md#licensing-requirements)
 
 | Servizio supportato | Descrizione |
 | ------ | ------ |
@@ -73,7 +73,7 @@ La tabella seguente elenca il modo in cui ogni servizio supportato fornisce dati
 | Microsoft Cloud App Security | - Rilevamento di app e servizi cloud non sanzionati (SHADOW IT)<br />- Esposizione dei dati alle app cloud<br />- Attività di minaccia associata alle app cloud | App cloud |
 
 ## <a name="deploy-the-services"></a>Distribuire i servizi
-La distribuzione di ogni servizio in genere richiede il provisioning nel tenant e alcune configurazioni iniziali. Vedere la tabella seguente per informazioni sulla modalità di distribuzione di ognuno di questi servizi.
+La distribuzione di ogni servizio in genere richiede il provisioning nel tenant e alcune configurazioni iniziali. Per informazioni sulla distribuzione di ognuno di questi servizi, vedere la tabella seguente.
 
 | Servizio | Istruzioni per il provisioning | Configurazione iniziale |
 | ------ | ------ | ------ |

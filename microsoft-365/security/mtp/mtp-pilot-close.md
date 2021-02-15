@@ -1,7 +1,7 @@
 ---
 title: Riepilogo dei risultati del progetto pilota di Microsoft 365 Defender
 description: Concludere il progetto pilota di Microsoft 365 Defender completando la scorecard, analizzando i risultati dei report e decidendo come procedere.
-keywords: Progetto pilota di Microsoft Threat Protection, decidere cosa fare dopo il progetto pilota di Microsoft Threat Protection, cosa fare dopo aver valutato Microsoft Threat Protection in produzione, transizione dal progetto pilota di Microsoft Threat Protection alla distribuzione, sicurezza informatica, minaccia persistente avanzata, sicurezza aziendale, dispositivi, dispositivo, identità, utenti, dati, applicazioni, incidenti, analisi e correzione automatizzate, ricerca avanzata
+keywords: Progetto pilota di Microsoft Threat Protection, decidere cosa fare dopo il progetto pilota di Microsoft Threat Protection, cosa fare dopo aver valutato Microsoft Threat Protection in produzione, transizione dal progetto pilota di Microsoft Threat Protection alla distribuzione, cyber security, minacce persistenti avanzate, sicurezza aziendale, dispositivi, dispositivo, identità, utenti, dati, applicazioni, incidenti, analisi e correzione automatizzate, ricerca avanzata
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -62,6 +62,6 @@ Ci auguriamo che questa simulazione sia stata apprezzata. Iniziare a implementar
 ## <a name="next-step"></a>Passaggio successivo
 Altre informazioni sui pilastri di Microsoft 365 Defender sono disponibili nelle seguenti guide interattive:
 - [Proteggere l'organizzazione con Microsoft Defender per Office 365](https://aka.ms/O365ATP-Interactive-Guide)
-- [Rilevare attività sospette e potenziali attacchi con Microsoft Defender for Identity](https://aka.ms/AATP-Interactive-Guide)
+- [Individuare attività sospette e potenziali attacchi con Microsoft Defender per identità](https://aka.ms/AATP-Interactive-Guide)
 - [Rilevare le minacce e gestire gli avvisi con Microsoft Cloud App Security](https://aka.ms/DetectThreatsAndAlertsMCAS-InteractiveGuide)
 - [Analizzare e correggere le minacce con Microsoft Defender for Endpoint](https://aka.ms/MDATP-IR-Interactive-Guide)

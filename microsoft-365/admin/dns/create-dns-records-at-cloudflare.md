@@ -1,5 +1,5 @@
 ---
-title: Creare record DNS in CloudFlare per Microsoft
+title: Creare record DNS su Cloudflare per Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
-description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in CloudFlare per Microsoft.
+description: Informazioni su come verificare il dominio e configurare i record DNS per posta elettronica, Skype for Business online e altri servizi su Cloudflare per Microsoft.
 ms.openlocfilehash: 8d5dd7779f07fd42dd230ee33c40849da3519d26
 ms.sourcegitcommit: ba830e85899f247e5a1e117d63e09e4d5b8a8020
 ms.translationtype: MT
@@ -28,13 +28,13 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/22/2021
 ms.locfileid: "49939273"
 ---
-# <a name="create-dns-records-at-cloudflare-for-microsoft"></a>Creare record DNS in CloudFlare per Microsoft
+# <a name="create-dns-records-at-cloudflare-for-microsoft"></a>Creare record DNS su Cloudflare per Microsoft
 
  Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.yml)**. 
   
 Se il proprio provider di hosting DNS è CloudFlare, seguire i passaggi di questo articolo per verificare il dominio e configurare i record DNS per la posta elettronica, Skype for Business Online e così via.
   
-Dopo aver aggiunto questi record in CloudFlare, il dominio sarà configurato per l'uso con i servizi Microsoft 365.
+Dopo aver aggiunto questi record in Cloudflare, il dominio sarà configurato per l'utilizzo con i servizi di Microsoft 365.
   
   
 > [!NOTE]
@@ -48,7 +48,7 @@ Dopo aver aggiunto questi record in CloudFlare, il dominio sarà configurato per
   
 When you signed up for Cloudflare, you added a domain by using the Cloudflare **Setup** process. 
   
-Il dominio aggiunto è stato acquistato da CloudFlare o da un registrar separato. Per verificare e creare record DNS per il proprio dominio in Microsoft 365, è necessario prima di tutto cambiare i server dei nomi presso il registrar in modo che utilizzino i nameserver di CloudFlare.
+Il dominio aggiunto è stato acquistato da Cloudflare o da un registrar separato. Per verificare e creare record DNS per il dominio in Microsoft 365, è innanzitutto necessario modificare i server dei nomi presso il registrar in modo che utilizzino i server dei nomi di Cloudflare.
   
 Per modificare i server dei nomi del dominio presso il registrar, seguire questa procedura:
   
@@ -67,7 +67,7 @@ Per modificare i server dei nomi del dominio presso il registrar, seguire questa
 3. Salvare le modifiche apportate.
     
 > [!NOTE]
-> L'aggiornamento dei record dei server dei nomi nel sistema DNS di Internet può richiedere fino a diverse ore. L'indirizzo di posta elettronica e gli altri servizi di Microsoft saranno tutti impostati per l'utilizzo con il dominio. 
+> L'aggiornamento dei record dei server dei nomi nel sistema DNS di Internet può richiedere fino a diverse ore. Quindi la posta elettronica Microsoft e altri servizi saranno tutti impostati per l'utilizzo con il dominio. 
   
 ## <a name="add-a-txt-record-for-verification"></a>Aggiungere un record TXT a scopo di verifica
 <a name="BKMK_verify"> </a>
@@ -79,24 +79,24 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
   
 1. Per iniziare, passare alla propria pagina dei domini su CloudFlare usando [questo collegamento](https://www.cloudflare.com/a/login). Verrà richiesto di eseguire l'accesso.
   
-2. Nella **Home** page, selezionare il dominio che si desidera aggiornare. 
+2. Nella **home** page selezionare il dominio che si desidera aggiornare. 
   
-3. Nella pagina **Panoramica** del dominio selezionare **DNS**.
+3. Nella pagina **Panoramica** del dominio selezionare **DNS.**
 
   
-4. Nella pagina **gestione DNS** fare clic su **Aggiungi record** e quindi selezionare i valori della tabella seguente. 
+4. Nella pagina **gestione DNS** fare clic su **Aggiungi record** e quindi selezionare i valori dalla tabella seguente. 
     
     | Tipo | Nome | Automatic TTL | Contenuto |
     |:-----|:-----|:-----|:----|
     |TXT  <br/> |@  <br/> |30 minutes  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)    |
   
     
-5. Seleziona **Salva**.
+5. Selezionare **Salva**.
   
   
 9. Attendere alcuni minuti prima di continuare, in modo che il record appena creato venga aggiornato in Internet.
     
-Dopo aver aggiunto il record al sito del registrar, è possibile tornare a Microsoft e cercare il record.
+Dopo aver aggiunto il record nel sito del registrar, si tornerà a Microsoft e si cerca il record.
   
 Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
@@ -123,20 +123,20 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 
 1. Per iniziare, passare alla propria pagina dei domini su CloudFlare usando [questo collegamento](https://www.cloudflare.com/a/login). Verrà richiesto di eseguire l'accesso.
   
-2. Nella **Home** page, selezionare il dominio che si desidera aggiornare. 
+2. Nella **home** page selezionare il dominio che si desidera aggiornare. 
   
-3. Nella pagina **Panoramica** del dominio selezionare **DNS**.
+3. Nella pagina **Panoramica** del dominio selezionare **DNS.**
 
   
-4. Nella pagina **gestione DNS** fare clic su **Aggiungi record** e quindi selezionare i valori della tabella seguente. 
+4. Nella pagina **gestione DNS** fare clic su **Aggiungi record** e quindi selezionare i valori dalla tabella seguente. 
     
-    | Tipo | Nome | Server di posta elettronica | Priority | TTL |
+    | Tipo | Nome | Server di posta | Priority | TTL |
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |@  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere il proprio  *\<domain-key\>*  account Microsoft 365.   [Come trovarla](../get-help-with-domains/information-for-dns-records.md) |1   <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/>|30 minuti  <br/> |
+    |MX  <br/> |@  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere il  *\<domain-key\>*  proprio account microsoft 365.   [Come trovarla](../get-help-with-domains/information-for-dns-records.md) |1   <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/>|30 minuti  <br/> |
    
 
   
-5. Seleziona **Salva**.
+5. Selezionare **Salva**.
   
 9. Se sono presenti altri record MX nella sezione **MX Records**, eliminarli selezionando l'icona **Elimina (X)**. 
   
@@ -149,14 +149,14 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 1. Per iniziare, passare alla propria pagina dei domini su CloudFlare usando [questo collegamento](https://www.cloudflare.com/a/login). Verrà richiesto di eseguire l'accesso.
     
   
-2. Nella **Home** page, selezionare il dominio che si desidera aggiornare. 
+2. Nella **home** page selezionare il dominio che si desidera aggiornare. 
   
-3. Nella pagina **Panoramica** del dominio selezionare **DNS**.
+3. Nella pagina **Panoramica** del dominio selezionare **DNS.**
 
   
 4. Aggiungere il primo dei cinque record CNAME.
     
-    Nella pagina **gestione DNS** fare clic su **Aggiungi record** e quindi selezionare i valori della tabella seguente.
+    Nella pagina **gestione DNS** fare clic su **Aggiungi record** e quindi selezionare i valori dalla tabella seguente.
     
     
     | Tipo | Nome | Destinazione | TTL |
@@ -169,9 +169,9 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     |CNAME  <br/> |msoid  <br/> |clientconfig.microsoftonline-p.net  <br/> |30 minutes  <br/> |
     
   
-5. Selezionare l'icona del **traffico DNS** (Change Orange cloud to Grey) per ignorare i server CloudFlare.
+5. Selezionare **l'icona Traffico DNS** (modificare il cloud arancione in grigio) per ignorare i server Cloudflare.
   
-6. Seleziona **Salva**.
+6. Selezionare **Salva**.
   
 7. Aggiungere gli altri cinque record CNAME.
 
@@ -185,19 +185,19 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 1. Per iniziare, passare alla propria pagina dei domini su CloudFlare usando [questo collegamento](https://www.cloudflare.com/a/login). Verrà richiesto di eseguire l'accesso.
     
   
-2. Nella **Home** page, selezionare il dominio che si desidera aggiornare. 
+2. Nella **home** page selezionare il dominio che si desidera aggiornare. 
   
-3. Nella pagina **Panoramica** del dominio selezionare **DNS**.
+3. Nella pagina **Panoramica** del dominio selezionare **DNS.**
 
   
-4. Nella pagina **gestione DNS** fare clic su **Aggiungi record** e quindi selezionare i valori della tabella seguente.  
+4. Nella pagina **gestione DNS** fare clic su **Aggiungi record** e quindi selezionare i valori dalla tabella seguente.  
     
     | Tipo | Nome | TTL | Contenuto |
     |:-----|:-----|:-----|:-----|
     |TXT  <br/> |@  <br/> |30 minutes  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.   |
 
  
-5. Seleziona **Salva**.
+5. Selezionare **Salva**.
     
 
   
@@ -205,28 +205,28 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 <a name="BKMK_add_SRV"> </a>
 
 > [!IMPORTANT]
-> Tenere presente che CloudFlare è responsabile di rendere disponibile questa funzionalità. Nel caso in cui si vedano discrepanze tra i passaggi seguenti e l'interfaccia utente di CloudFlare (GUI) corrente, utilizzare la [community di CloudFlare](https://community.cloudflare.com/). 
+> Tieni presente che Cloudflare è responsabile di rendere disponibile questa funzionalità. In caso di discrepanze tra i passaggi seguenti e l'interfaccia utente grafica (GUI) cloudflare corrente, sfruttare [la community cloudflare.](https://community.cloudflare.com/) 
 
 1. Per iniziare, passare alla propria pagina dei domini su CloudFlare usando [questo collegamento](https://www.cloudflare.com/a/login). Verrà richiesto di eseguire l'accesso.
       
-2. Nella **Home** page, selezionare il dominio che si desidera aggiornare. 
+2. Nella **home** page selezionare il dominio che si desidera aggiornare. 
   
-3. Nella pagina **Panoramica** del dominio selezionare **DNS**.
+3. Nella pagina **Panoramica** del dominio selezionare **DNS.**
   
 4. Aggiungere il primo dei due record SRV.
 
-    Nella pagina **gestione DNS** fare clic su **Aggiungi record** e quindi selezionare i valori della prima riga della tabella seguente.
+    Nella pagina **gestione DNS** fare clic su **Aggiungi record** e quindi selezionare i valori dalla prima riga della tabella seguente.
         
     | Tipo | Servizio | Protocollo | Nome | TTL | Priority | Peso | Porta | Destinazione |
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV|_sip |TLS |Utilizzare il *Domain_name*; ad esempio, contoso.com  |30 minuti | 100|1  |443 |sipfed.online.lync.com  |
-    |SRV|_sipfederationtls | TCP|Utilizzare il *Domain_name*; ad esempio, contoso.com   |30 minuti |100 |1  |5061 | sipfed.online.lync.com |
+    |SRV|_sip |TLS |Utilizzare il *domain_name*; ad esempio, contoso.com  |30 minuti | 100|1  |443 |sipfed.online.lync.com  |
+    |SRV|_sipfederationtls | TCP|Utilizzare il *domain_name*; ad esempio, contoso.com   |30 minuti |100 |1  |5061 | sipfed.online.lync.com |
 
   
-5. Seleziona **Salva**.
+5. Selezionare **Salva**.
 
   
-6. Aggiungere l'altro record SRV scegliendo i valori della seconda riga della tabella. 
+6. Aggiungere l'altro record SRV scegliendo i valori dalla seconda riga della tabella. 
 
     
 > [!NOTE]

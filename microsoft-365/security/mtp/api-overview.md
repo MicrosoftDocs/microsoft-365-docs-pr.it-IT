@@ -46,9 +46,9 @@ Usare le API di Microsoft 365 Defender per automatizzare i flussi di lavoro in b
 
 - **[Ricerca delle](api-advanced-hunting.md)** minacce tra prodotti: sfruttare le conoscenze dell'organizzazione del team di sicurezza per cercare segni di compromissione, creando query personalizzate per setacciare i dati non elaborati raccolti tra più prodotti di protezione.
 
-Insieme a queste API specifiche di Microsoft 365 Defender, [](api-articles.md) ognuno degli altri prodotti per la sicurezza espone API aggiuntive per aiutarti a sfruttare le loro funzionalità uniche.
+Insieme a queste API specifiche di Microsoft 365 Defender, [](api-articles.md) ognuno degli altri prodotti di sicurezza espone API aggiuntive per aiutarti a sfruttare le loro funzionalità uniche.
 
-## <a name="learn-more"></a>Altre informazioni
+## <a name="learn-more"></a>Ulteriori informazioni
 
 | **Informazioni su come accedere alle API** |
 |-|

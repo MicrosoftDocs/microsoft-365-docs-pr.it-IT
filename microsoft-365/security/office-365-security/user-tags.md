@@ -45,14 +45,14 @@ Dopo aver applicato tag di sistema o tag personalizzati agli utenti, è possibil
 
 Questo articolo spiega come configurare i tag utente nel Centro sicurezza & conformità. Non sono disponibili cmdlet nel Centro sicurezza & conformità per gestire i tag utente.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla **pagina Tag** utente, aprire <https://protection.office.com/userTags> .
+- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla **pagina Tag** utente, aprire <https://protection.office.com/userTags> .
 
-- È necessario disporre delle autorizzazioni nel Centro sicurezza e conformità per poter eseguire le procedure contenute in questo articolo:
+- Per poter eseguire le procedure contenute in questo articolo è necessario disporre delle autorizzazioni appropriate nel Centro sicurezza e conformità:
   - Per creare, modificare ed eliminare tag utente, è necessario essere membri dei gruppi **di** ruoli Gestione organizzazione o Amministratore **sicurezza.**
   - Per aggiungere e rimuovere membri dai tag utente esistenti, è necessario essere membri dei gruppi di ruoli **Gestione** **organizzazione,** Amministratore sicurezza **o Operatore** sicurezza
-  - Per l'accesso in sola lettura ai tag utente, è necessario essere membri dei **gruppi** di ruoli Lettore globale o **Lettore** di sicurezza.
+  - Per l'accesso in sola lettura ai tag utente, è necessario essere membri dei gruppi di ruoli Lettore globale o **Lettore** di sicurezza. 
 
   Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 
@@ -70,7 +70,7 @@ Questo articolo spiega come configurare i tag utente nel Centro sicurezza & conf
 2. Nella pagina **Tag utente** visualizzata fare clic su **Crea tag.**
 
 3. La **creazione guidata tag** si apre in un nuovo riquadro a comparsa. Nella pagina **Definisci tag** configurare le impostazioni seguenti:
-   - **Nome**: immettere un nome descrittivo univoco per il tag. Questo è il valore che verrà visualizzato e utilizzato.
+   - **Nome**: immettere un nome descrittivo univoco per il tag. Questo è il valore che vedrai e userai.
    - **Descrizione:** immettere una descrizione facoltativa per il tag.
 
    Al termine dell'operazione, fare clic su **Avanti**.
@@ -84,7 +84,7 @@ Questo articolo spiega come configurare i tag utente nel Centro sicurezza & conf
      - Per rimuovere singole voci dalla casella, fare **clic** sull'icona Rimuovi ![ ](../../media/scc-remove-icon.png) dell'utente o del gruppo nella casella.
      - Per rimuovere voci esistenti dall'elenco sotto la casella, fare clic  ![ sull'icona ](../../media/scc-remove-icon.png) Rimuovi.
 
-     Al termine, fare clic su **Aggiungi.**
+     Al termine, fare clic su **Aggiungi**.
 
    - Fare **clic su** Importa per selezionare un file di testo contenente gli indirizzi di posta elettronica degli utenti o dei gruppi. Assicurarsi che il file di testo contenga una voce per riga.
 
@@ -100,7 +100,7 @@ Questo articolo spiega come configurare i tag utente nel Centro sicurezza & conf
 
 2. Nella **pagina Tag utente** visualizzata, selezionare il tag utente che si desidera visualizzare (non fare clic sulla casella di controllo).
 
-3. Nel riquadro a comparsa dei dettagli di sola lettura visualizzato, rivedere le impostazioni.
+3. Nel riquadro a comparsa dei dettagli di sola lettura visualizzato, esamina le impostazioni.
 
    Al termine, fare clic su **Chiudi**.
 
@@ -110,7 +110,7 @@ Questo articolo spiega come configurare i tag utente nel Centro sicurezza & conf
 
 2. Nella **pagina Tag utente** visualizzata selezionare il tag utente che si desidera visualizzare e quindi fare clic su **Modifica tag.**
 
-3. La procedura guidata per i criteri si apre in **un riquadro a comparsa** Modifica tag. Fare **clic su** Avanti per rivedere e modificare le impostazioni.
+3. La procedura guidata per i criteri si apre in un **riquadro a comparsa** Modifica tag. Fare **clic su** Avanti per esaminare e modificare le impostazioni.
 
    Al termine, fare clic su **Invia.**
 

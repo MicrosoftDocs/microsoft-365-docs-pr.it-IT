@@ -41,7 +41,7 @@ Cosa devono sapere gli architetti IT sui gruppi di Microsoft 365
 
 ### <a name="microsoft-365-information-protection-and-compliance-capabilities"></a>Funzionalità di conformità e protezione delle informazioni di Microsoft 365
 
-Microsoft 365 include un'ampia gamma di funzionalità di conformità e protezione delle informazioni. Insieme agli strumenti di produttività di Microsoft, queste funzionalità sono progettate per aiutare le organizzazioni a collaborare in tempo reale aderendo a stringenti framework di conformità alle normative. 
+Microsoft 365 include un'ampia gamma di funzionalità di conformità e protezione delle informazioni. Insieme agli strumenti di produttività di Microsoft, queste funzionalità sono progettate per aiutare le organizzazioni a collaborare in tempo reale, aderendo a stringenti framework di conformità alle normative. 
 
 Questo set di illustrazioni usa uno dei settori più regolamentati, i servizi finanziari, per dimostrare in che modo queste funzionalità possono essere applicate per soddisfare i requisiti normativi comuni. Queste illustrazioni possono essere personalizzate. 
 
@@ -71,7 +71,7 @@ Alcuni strumenti sono più adatti per determinate architetture, a seconda dell'a
 <a name="BKMK_O365IDP"></a>
 ### <a name="identity-and-device-protection-for-microsoft-365"></a>Identità e protezione dei dispositivi per Microsoft 365
 
-Funzionalità consigliate per proteggere le identità e i dispositivi che accedono a Microsoft 365, ad altri servizi SaaS e alle applicazioni locali pubblicate con il proxy di applicazione di Azure AD.
+Funzionalità consigliate per la protezione delle identità e dei dispositivi che accedono a Microsoft 365, ad altri servizi SaaS e alle applicazioni locali pubblicate con il proxy di applicazione di Azure AD.
 
 | Elemento | Descrizione |
 |:-----|:-----|
@@ -148,7 +148,7 @@ Con Microsoft 365, è possibile configurare un team privato in Microsoft Teams e
 [![Poster Microsoft Teams con l’isolamento di sicurezza](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf) <br/>
 [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf)  |  [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) <br> Aggiornato ad agosto 2020
 
-Per ulteriori informazioni, vedere l'articolo di questo poster: [Configurare un team con isolamento di sicurezza.](secure-teams-security-isolation.md)
+Per ulteriori informazioni, vedere l'articolo per questo poster: [Configurare un team con isolamento di sicurezza.](secure-teams-security-isolation.md)
 
   
 ## <a name="see-also"></a>Vedere anche

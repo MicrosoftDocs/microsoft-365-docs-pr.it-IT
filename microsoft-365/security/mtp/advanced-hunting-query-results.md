@@ -37,7 +37,7 @@ ms.locfileid: "49932323"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Anche se è [](advanced-hunting-overview.md) possibile creare query di ricerca avanzata per restituire informazioni molto precise, è anche possibile utilizzare i risultati delle query per ottenere ulteriori informazioni e analizzare attività e indicatori specifici. È possibile eseguire le azioni seguenti sui risultati della query:
+Anche se è [](advanced-hunting-overview.md) possibile creare query di ricerca avanzata per restituire informazioni molto precise, è anche possibile utilizzare i risultati della query per ottenere ulteriori informazioni e analizzare attività e indicatori specifici. È possibile eseguire le azioni seguenti sui risultati della query:
 
 - Visualizzare i risultati come tabella o grafico
 - Esportare tabelle e grafici
@@ -45,7 +45,7 @@ Anche se è [](advanced-hunting-overview.md) possibile creare query di ricerca a
 - Modificare le query direttamente dai risultati o applicare filtri
 
 ## <a name="view-query-results-as-a-table-or-chart"></a>Visualizzare i risultati della query come tabella o grafico
-Per impostazione predefinita, la ricerca avanzata visualizza i risultati delle query come dati tabulari. È inoltre possibile visualizzare gli stessi dati di un grafico. Ricerca avanzata supporta le visualizzazioni seguenti:
+Per impostazione predefinita, la ricerca avanzata visualizza i risultati delle query come dati tabulari. È inoltre possibile visualizzare gli stessi dati di un grafico. La ricerca avanzata supporta le visualizzazioni seguenti:
 
 | Tipo visualizzazione | Descrizione |
 | -- | -- |
@@ -68,7 +68,7 @@ Utilizzare `summarize` l'operatore per ottenere un conteggio numerico dei valori
 AlertInfo
 | summarize Total = count() by Severity
 ```
-Quando si esegue il rendering dei risultati, un istogramma visualizza ogni valore di gravità come colonna separata:
+Durante il rendering dei risultati, un istogramma visualizza ogni valore di gravità come colonna separata:
 
 ![Immagine dei risultati delle query di ricerca avanzata visualizzati come istogramma Risultati della query per gli avvisi in base alla gravità visualizzati ](../../media/advanced-hunting-column-chart.jpg)
  *come istogramma*
@@ -86,8 +86,8 @@ AlertInfo
 ```
 Questi risultati sono visualizzati meglio usando un istogramma in pila:
 
-![Immagine dei risultati delle query di ricerca avanzata visualizzati come grafico in pila Risultati della query per gli avvisi in base al sistema operativo e la gravità visualizzati ](../../media/advanced-hunting-stacked-chart.jpg)
- *come grafico in pila*
+![Immagine dei risultati delle query di ricerca avanzata visualizzati come grafico in pila Risultati della query per avvisi del sistema operativo e gravità visualizzati come ](../../media/advanced-hunting-stacked-chart.jpg)
+ *grafico in pila*
 
 #### <a name="phishing-emails-across-top-ten-sender-domains"></a>Messaggi di posta elettronica di phishing nei primi dieci domini del mittente
 Se hai a che fare con un elenco di valori non finiti, puoi usare l'operatore per creare un grafico solo dei valori con la maggior `Top` parte delle istanze. Ad esempio, per ottenere i primi dieci domini di mittente con il maggior numero di messaggi di posta elettronica di phishing, utilizzare la query seguente:
@@ -127,7 +127,7 @@ Dopo aver eseguito una query, selezionare **Esporta** per salvare i risultati ne
 ## <a name="drill-down-from-query-results"></a>Eseguire il drill-down dai risultati della query
 Per esaminare rapidamente un record nei risultati della query, selezionare la riga corrispondente per aprire il **pannello Inspect record.** Il pannello fornisce le informazioni seguenti in base al record selezionato:
 
-- **Asset:** visualizzazione riepilogata delle risorse principali (cassette postali, dispositivi e utenti) presenti nel record, arricchita con le informazioni disponibili, ad esempio i livelli di rischio e esposizione
+- **Asset:** visualizzazione riepilogata delle principali risorse (cassette postali, dispositivi e utenti) presenti nel record, arricchite con le informazioni disponibili, ad esempio i livelli di rischio e esposizione
 - **Albero dei processi,** generato per i record con informazioni sui processi e arricchito con le informazioni contestuali disponibili; in generale, le query che restituiscono più colonne possono comportare alberi di processo più ricchi.
 - **Tutti i** dettagli, ovvero tutti i valori delle colonne del record  
 

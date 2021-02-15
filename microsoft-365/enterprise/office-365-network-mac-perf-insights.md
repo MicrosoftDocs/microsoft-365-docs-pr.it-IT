@@ -33,8 +33,8 @@ Sono disponibili sei informazioni dettagliate di rete specifiche che possono ess
 - [Dispositivo intermedio di rete](#network-intermediary-device)
 - [Prestazioni migliori rilevate per i clienti nelle vicinanze](#better-performance-detected-for-customers-near-you)
 - [Utilizzo di una porta d'ingresso del servizio Exchange Online non ottimale](#use-of-a-non-optimal-exchange-online-service-front-door)
-- [Utilizzo di una porta d'ingresso del servizio SharePoint Online non ottimale](#use-of-a-non-optimal-sharepoint-online-service-front-door)
-- [Bassa velocità di download dalla porta principale di SharePoint](#low-download-speed-from-sharepoint-front-door)
+- [Uso di un front door del servizio SharePoint Online non ottimale](#use-of-a-non-optimal-sharepoint-online-service-front-door)
+- [Bassa velocità di download dalla porta d'ingresso di SharePoint](#low-download-speed-from-sharepoint-front-door)
 - [Uscita di rete ottimale per gli utenti della Cina](#china-user-optimal-network-egress)
 
 Sono disponibili due informazioni dettagliate sulla rete a livello di tenant che possono essere visualizzate per il tenant. Queste vengono visualizzate anche nelle pagine dei punteggi di produzione:
@@ -57,7 +57,7 @@ Queste informazioni sono abbreviate come "Uscita" in alcune visualizzazioni di r
 
 Ciò indica che la distanza tra la sede dell'ufficio e l'uscita di rete è superiore a 800 chilometri. La posizione dell'ufficio è identificata da un percorso del computer client offuscato e il percorso di uscita dalla rete viene identificato utilizzando l'indirizzo IP inverso per i database delle località. La posizione dell'ufficio potrebbe non essere corretta se i servizi di posizione di Windows sono disabilitati nei computer. Il percorso di uscita dalla rete potrebbe non essere accurato se le informazioni del database degli indirizzi IP inversa non sono accurate.
 
-I dettagli di queste informazioni includono la posizione dell'ufficio, la percentuale stimata dell'utente tenant totale nella posizione, la posizione di uscita della rete corrente, la pertinenza della posizione di uscita, la distanza tra la posizione e il punto di uscita corrente, la data in cui la condizione è stata rilevata per la prima volta e la data in cui la condizione è stata risolta.
+I dettagli per queste informazioni includono la posizione dell'ufficio, la percentuale stimata dell'utente tenant totale nella posizione, la posizione corrente di uscita dalla rete, la pertinenza della posizione di uscita, la distanza tra la posizione e il punto di uscita corrente, la data in cui la condizione è stata rilevata per la prima volta e la data in cui la condizione è stata risolta.
 
 ### <a name="what-should-i-do"></a>Cosa si può fare?
 
@@ -67,7 +67,7 @@ Per ulteriori informazioni su come risolvere questo problema, vedere [Egress net
 
 ## <a name="network-intermediary-device"></a>Dispositivo intermedio di rete
 
-Queste informazioni verranno visualizzate se sono stati rilevati dispositivi tra gli utenti e la rete di Microsoft che potrebbero influire sull'esperienza utente di Office 365. È consigliabile ignorarlo per il traffico di rete specifico di Microsoft 365 destinato ai datacenter Microsoft. Questa raccomandazione è descritta anche in Principi di connettività [di rete di Microsoft 365](microsoft-365-network-connectivity-principles.md)
+Queste informazioni verranno visualizzate se sono stati rilevati dispositivi tra gli utenti e la rete di Microsoft che potrebbero influire sull'esperienza utente di Office 365. È consigliabile ignorarlo per il traffico di rete specifico di Microsoft 365 destinato ai datacenter Microsoft. Questa raccomandazione è descritta anche in Principi di connettività di [rete di Microsoft 365](microsoft-365-network-connectivity-principles.md)
 
 ### <a name="what-does-this-mean"></a>Cosa significa questo messaggio?
 
@@ -79,7 +79,7 @@ Configurare il dispositivo intermedio di rete rilevato per ignorare l'elaborazio
 
 ## <a name="better-performance-detected-for-customers-near-you"></a>Prestazioni migliori rilevate per i clienti nelle vicinanze
 
-Queste informazioni verranno visualizzate se il servizio Informazioni dettagliate di rete rileva che un numero significativo di clienti nell'area della metropolitana ha prestazioni migliori rispetto agli utenti dell'organizzazione in questa sede dell'ufficio.
+Queste informazioni dettagliate verranno visualizzate se il servizio informazioni dettagliate di rete rileva che un numero significativo di clienti nell'area della metropolitana ha prestazioni migliori rispetto agli utenti dell'organizzazione in questa sede dell'ufficio.
 
 Queste informazioni sono abbreviate come "Peer" in alcune visualizzazioni di riepilogo.
 
@@ -87,7 +87,7 @@ Queste informazioni sono abbreviate come "Peer" in alcune visualizzazioni di rie
 
 ### <a name="what-does-this-mean"></a>Cosa significa questo messaggio?
 
-Queste informazioni esaminano le prestazioni aggregate dei clienti di Microsoft 365 nella stessa città di questa sede. Queste informazioni vengono visualizzate se la latenza media degli utenti è superiore del 10% alla latenza media dei tenant adiacenti.
+Queste informazioni approfondite esaminano le prestazioni aggregate dei clienti di Microsoft 365 nella stessa città di questa sede. Queste informazioni vengono visualizzate se la latenza media degli utenti è superiore del 10% alla latenza media dei tenant adiacenti.
 
 ### <a name="what-should-i-do"></a>Cosa si può fare?
 
@@ -95,7 +95,7 @@ Questa condizione può essere causata da diversi motivi, tra cui la latenza nell
 
 ## <a name="use-of-a-non-optimal-exchange-online-service-front-door"></a>Utilizzo di una porta d'ingresso del servizio Exchange Online non ottimale
 
-Queste informazioni verranno visualizzate se il servizio Informazioni dettagliate di rete rileva che gli utenti in una posizione specifica non si connettono a un front door ottimale del servizio Exchange Online.
+Queste informazioni dettagliate verranno visualizzate se il servizio informazioni dettagliate di rete rileva che gli utenti in una posizione specifica non si connettono a un front door ottimale del servizio Exchange Online.
 
 Queste informazioni sono abbreviate come "Routing" in alcune visualizzazioni di riepilogo.
 
@@ -119,7 +119,7 @@ Queste informazioni sono abbreviate come "Afd" in alcune visualizzazioni di riep
 
 ### <a name="what-does-this-mean"></a>Cosa significa questo messaggio?
 
-Viene identificata la porta d'ingresso del servizio SharePoint Online a cui si connette il client di test. Quindi, per la città dell'ubicazione dell'ufficio viene confrontato con l'ingresso del servizio SharePoint Online previsto per quella città. Se non corrisponde, è consigliabile farlo.
+Viene identificata la porta d'ingresso del servizio SharePoint Online a cui si connette il client di test. Quindi, per la città della sede centrale viene confrontata con la porta d'ingresso del servizio SharePoint Online prevista per quella città. Se non corrisponde, è consigliabile farlo.
 
 ### <a name="what-should-i-do"></a>Cosa si può fare?
 
@@ -139,7 +139,7 @@ La velocità di download che un utente può ottenere dalle porte anteriori del s
 
 Per migliorare la velocità di download, potrebbe essere necessario aumentare la larghezza di banda. In alternativa, potrebbe verificarsi una congestione della rete tra i computer degli utenti nella sede dell'ufficio e la porta d'ingresso del servizio SharePoint Online. A volte si tratta di una perdita congestionata che limita la velocità di download disponibile per gli utenti anche se è disponibile una larghezza di banda sufficiente.
 
-## <a name="china-user-optimal-network-egress"></a>Uscita ottimale della rete dell'utente in Cina
+## <a name="china-user-optimal-network-egress"></a>Uscita di rete ottimale per gli utenti della Cina
 
 Queste informazioni verranno visualizzate se l'organizzazione ha utenti in Cina che si connettono al tenant di Microsoft 365 in altre posizioni geografiche. 
 
@@ -166,11 +166,11 @@ Queste informazioni mostrano quando il 50% o più delle connessioni campionate s
 
 ### <a name="what-does-this-mean"></a>Cosa significa questo messaggio?
 
-Si tratta di un'indicazione del fatto che è probabile che la maggior parte degli utenti stia riscontrando problemi di esperienza utente con Outlook che si connette a Exchange Online. La percentuale di campioni rappresenta probabilmente la percentuale di utenti che mostrano meno di 60 punti.  
+Si tratta di un'indicazione del fatto che la maggior parte degli utenti probabilmente riscontra problemi di esperienza utente con Outlook che si connette a Exchange Online. La percentuale di campioni rappresenta probabilmente la percentuale di utenti che mostrano meno di 60 punti.  
 
 ### <a name="what-should-i-do"></a>Cosa si può fare?
 
-Abilitare la visibilità della connettività di rete della posizione dell'ufficio, se non è già stata eseguita. Si desidera identificare gli uffici che sono influenzati da una connettività di rete scadente che influisce su Exchange e trovare modi per migliorare il perimetro di rete in ognuno di essi che connette gli utenti alla rete di Microsoft.
+Abilitare la visibilità della connettività di rete della posizione dell'ufficio, se non è già stata eseguita. Si desidera identificare quali uffici sono influenzati da una connettività di rete scadente che influisce su Exchange e trovare modi per migliorare il perimetro di rete in ognuno di essi che connette gli utenti alla rete di Microsoft.
 
 ## <a name="sharepoint-sampled-connections-impacted-by-connectivity-issues"></a>Connessioni campionate di SharePoint influenzate da problemi di connettività
 
@@ -192,4 +192,4 @@ Abilitare la visibilità della connettività di rete della posizione dell'uffici
 
 [Strumento di test della connettività di rete di Microsoft 365 (anteprima)](office-365-network-mac-perf-onboarding-tool.md)
 
-[Servizi percorso di connettività di rete di Microsoft 365 (anteprima)](office-365-network-mac-location-services.md)
+[Microsoft 365 Network Connectivity Location Services (anteprima)](office-365-network-mac-location-services.md)

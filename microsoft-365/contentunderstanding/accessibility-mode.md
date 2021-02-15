@@ -47,14 +47,14 @@ Per gli utenti che usano la modalità accessibilità, se stai etichettando il te
 
 ## <a name="narration"></a>Commenti audio
 
-Per gli utenti dell'Assistente vocale che usano la modalità accessibilità, usa lo stesso spostamento tramite tastiera descritto per consentire agli utenti della tastiera di passare attraverso il documento di esempio nel visualizzatore.
+Per gli utenti dell'Assistente vocale che usano la modalità di accessibilità, usa lo stesso spostamento tramite tastiera descritto per consentire agli utenti della tastiera di passare attraverso il documento di esempio nel visualizzatore.
 
 Durante lo spostamento tra i documenti di esempio e i valori delle stringhe delle etichette, l'Assistente vocale offrirà all'utente le istruzioni audio seguenti:
 
 - Quando usi la tastiera per spostarsi all'interno del visualizzatore di documenti, l'audio dell'Assistente vocale segnalerà la stringa selezionata.
 - All'interno di una stringa selezionata, l'audio dell'Assistente vocale segnalerà ogni carattere nella stringa mentre li selezionerai usando la freccia avanti o indietro.
 - Se si seleziona una stringa etichettata, l'Assistente vocale indica il valore e quindi "etichetta".  Ad esempio, se il valore dell'etichetta è "Contoso", verrà visualizzato lo stato "Costoso etichettato". 
-- Nella scheda formazione, se si seleziona una stringa nel visualizzatore di documenti che è stata solo stimata, l'audio dell'Assistente vocale indica il valore e quindi "previsto". Ciò si verifica quando il training prevede un valore nel file che non corrisponde a quello etichettato dall'utente.
+- Nella scheda training, se si seleziona una stringa nel visualizzatore di documenti che è stata solo stimata, l'audio dell'Assistente vocale indica il valore e quindi "previsto". Ciò si verifica quando il training prevede un valore nel file che non corrisponde a quello etichettato dall'utente.
 - Nella scheda training, se si seleziona una stringa nel visualizzatore di documenti che è stata etichettata e stimata, l'audio dell'Assistente vocale indica il valore e quindi "etichettato e previsto". Ciò si verifica quando il training ha esito positivo ed esiste una corrispondenza tra un valore previsto e l'etichetta utente.
 
 

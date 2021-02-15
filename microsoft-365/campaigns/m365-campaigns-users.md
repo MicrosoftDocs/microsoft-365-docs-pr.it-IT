@@ -51,7 +51,7 @@ Scaricare [un'infografica](m365-campaigns-protect-campaign-infographic.md) con s
 
 ## <a name="set-up-iphones-and-android-devices"></a>Configurare dispositivi iPhone e Android
 
-Tutti gli utenti aggiunti all'ambiente dovranno richiedere alcuni minuti per configurare i [dispositivi iPhone](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json) e Android per funzionare in modo sicuro:
+Tutti gli utenti aggiunti all'ambiente dovranno richiedere alcuni minuti per configurare i [dispositivi iPhone](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json) e Android in modo che funzionino in modo sicuro:
 
 - Configura i dispositivi per l'uso dell'autenticazione a più fattori con l'app di autenticazione.
 - Usare le app per dispositivi mobili Microsoft, tra cui Outlook Mobile, Word, OneDrive e altre app Microsoft dall'App Store. Le app di posta nativa incluse in iPhone e dispositivi Android non sono supportate. 

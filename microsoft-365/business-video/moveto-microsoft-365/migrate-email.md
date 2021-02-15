@@ -41,7 +41,7 @@ Il processo di migrazione richiede diversi passaggi e può richiedere da diverse
 
 ### <a name="create-a-google-service-account"></a>Creare un account di servizio Google
 
-1. Utilizzando un browser Chrome, accedere alla console di amministrazione di Google Workspace [all'indirizzo admin.google.com](https://admin.google.com). 
+1. Utilizzando un browser Chrome, accedere alla console di amministrazione di Google Workspace [all'indirizzo admin.google.com.](https://admin.google.com) 
 1. In una nuova scheda o finestra passare alla pagina [Account di](https://console.developers.google.com/iam-admin/serviceaccounts) servizio. 
 1. Selezionare **Crea progetto,** assegnare un nome al progetto e scegliere **Crea.** 
 1. Selezionare **Crea account del servizio,** immettere un nome, scegliere **Crea** e quindi **Fine.** 
@@ -53,7 +53,7 @@ Il processo di migrazione richiede diversi passaggi e può richiedere da diverse
 > Il nome del prodotto non viene utilizzato dal processo di migrazione, ma è necessario per salvare nella finestra di dialogo.     
 
 1. Apri di **nuovo il** menu Azioni e seleziona **Crea chiave.** 
-1. Scegliere **JSON,** quindi **Crea.** 
+1. Choose **JSON**, then **Create**. 
 
      La chiave privata viene salvata nella cartella di download del dispositivo.
  
@@ -69,10 +69,10 @@ Il processo di migrazione richiede diversi passaggi e può richiedere da diverse
 ### <a name="grant-access-to-the-service-account"></a>Concedere l'accesso all'account del servizio
 
 1. Torna alla console di amministrazione di Google Workspace. 
-1. Seleziona **Sicurezza,** scorri verso il basso e apri i **controlli api.** 
+1. Seleziona **Sicurezza,** scorri verso il basso e apri i **controlli API.** 
 1. Scorrere verso il basso e **selezionare Gestisci delega a livello di dominio.**
 1. Seleziona **Aggiungi nuovo** e immetti l'ID client di cui hai preso nota in precedenza.
-1. Immettere quindi gli ambiti OAuth per le API Di Google. Questi sono disponibili al [aka.ms/GoogleWorkspaceMigration](https://docs.microsoft.com/exchange/mailbox-migration/perform-g-suite-migration#grant-access-to-the-service-account-for-your-google-tenant) passaggio 5 e sono:
+1. Immettere quindi gli ambiti OAuth per le API di Google. Questi sono disponibili al [aka.ms/GoogleWorkspaceMigration](https://docs.microsoft.com/exchange/mailbox-migration/perform-g-suite-migration#grant-access-to-the-service-account-for-your-google-tenant) passaggio 5 e sono:
 
     `https://mail.google.com/,https://www.googleapis.com/auth/calendar,https://www.google.com/m8/feeds/,https://www.googleapis.com/auth/gmail.settings.sharing`
  
@@ -95,7 +95,7 @@ Il processo di migrazione richiede diversi passaggi e può richiedere da diverse
 1. Torna alla **console di amministrazione di Google.**
 1. Selezionare **Domini,** selezionare **Gestisci domini,** **Verifica dettagli** e quindi **Gestisci dominio.** 
 1. Nel riquadro di spostamento sinistro scegliere **DNS** e scorrere verso il basso fino **a Record di risorse personalizzati.** 
-1. Aprire l'elenco a discesa del tipo di record e selezionare **MX,** immettere o copiare e incollare le informazioni sul record MX precedentemente specificate, quindi scegliere **Aggiungi.** 
+1. Aprire l'elenco a discesa del tipo di record e selezionare **MX,** immettere o copiare e incollare le informazioni sul record MX precedentemente specificate, quindi scegliere **Aggiungi**. 
 1. Ripetere il processo per il record CNAME e il record TXT. 
 
     L'applicazione di queste modifiche potrebbe richiedere del tempo.  
@@ -145,5 +145,5 @@ Al termine, è possibile eseguire la migrazione.
 1. Una volta completato il processo, lo stato cambierà in **Completato.** 
 1. Se si desidera, è possibile selezionare **Visualizza dettagli** per ulteriori informazioni sulla migrazione. 
 1. Selezionare **Chiudi**. 
-1. Aprire Outlook per verificare che la migrazione di tutti i messaggi di posta elettronica da Google Workspace sia stata completata correttamente.
+1. Aprire Outlook per verificare che tutti i messaggi di posta elettronica da Google Workspace siano stati migrati correttamente.
 È possibile ripetere questa operazione anche per gli elementi del calendario e i contatti.

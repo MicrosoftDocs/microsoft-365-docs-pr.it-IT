@@ -31,7 +31,7 @@ ms.locfileid: "50094678"
 > [!NOTE]
 > Se si è un amministratore di un'organizzazione di Microsoft 365 con cassette postali di Exchange Online, è consigliabile usare il portale Invii nel Centro sicurezza & conformità. Per ulteriori informazioni, vedere [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft.](admin-submission.md)
 
-I componenti aggiuntivi Segnala messaggio e Segnala phishing per Outlook e Outlook sul Web (in precedenza noto come Outlook Web App) consentono agli utenti di segnalare facilmente falsi positivi (messaggi di posta elettronica non consentiti) o falsi negativi (posta elettronica non consentita) a Microsoft e alle relative consociati per l'analisi.
+I componenti aggiuntivi Segnala messaggio e Segnala phishing per Outlook e Outlook sul Web (in precedenza noto come Outlook Web App) consentono di segnalare facilmente falsi positivi (messaggi di posta elettronica non consentiti) o falsi negativi (posta elettronica non consentita) a Microsoft e alle relative consociati per l'analisi.
 
 Microsoft usa questi invii per migliorare l'efficacia delle tecnologie di protezione della posta elettronica. Si supponga, ad esempio, che gli utenti segnalano molti messaggi utilizzando il componente aggiuntivo Segnala phishing. Queste informazioni vengono visualizzate nel [dashboard di sicurezza](security-dashboard.md) e in altri report. Il team di sicurezza dell'organizzazione può utilizzare queste informazioni per indicare che potrebbe essere necessario aggiornare i criteri anti-phishing.
 
@@ -43,7 +43,7 @@ Se si è un singolo utente, è possibile abilitare il componente aggiuntivo Segn
 
 Se si è un amministratore globale o un amministratore di Exchange Online ed Exchange è configurato per l'utilizzo dell'autenticazione OAuth, è possibile abilitare il componente aggiuntivo [Segnala phishing per l'organizzazione.](#get-and-enable-the-report-phishing-add-in-for-your-organization) Il report phishing Add-In è ora disponibile tramite [la distribuzione centralizzata.](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins)
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Il componente aggiuntivo Segnala phishing funziona con la maggior parte degli abbonamenti a Microsoft 365 e dei prodotti seguenti:
 
@@ -67,7 +67,7 @@ Se si è un amministratore globale o un amministratore di Exchange Online ed Exc
 
 1. Passare a Microsoft AppSource e cercare il componente aggiuntivo <https://appsource.microsoft.com/marketplace/apps> Segnala phishing.
 
-2. Fare **clic su GET IT NOW.**
+2. Fare **clic su SCARICA ORA.**
 
 3. Nella finestra di dialogo visualizzata esaminare le condizioni per l'utilizzo e l'informativa sulla privacy e quindi fare clic su **Continua.**
 
@@ -100,11 +100,11 @@ Dopo aver installato e abilitato il componente aggiuntivo, verranno visualizzate
 
    ![Distribuire una nuova pagina del componente aggiuntivo](../../media/NewAddInScreen2.png)
 
-5. Nella pagina **Seleziona componente aggiuntivo visualizzata** fare clic nella casella **di** ricerca, immettere **Segnala phishing** e quindi fare clic **sull'icona** ![ ](../../media/search-icon.png) Cerca. Nell'elenco dei risultati, trovare **Segnala phishing** e quindi fare clic su **Aggiungi.**
+5. Nella pagina **Seleziona componente aggiuntivo visualizzata,** fare clic nella casella **di** ricerca, immettere **Segnala phishing** e quindi fare clic **sull'icona** ![ ](../../media/search-icon.png) Cerca. Nell'elenco dei risultati, trovare **Segnala phishing** e quindi fare clic su **Aggiungi.**
 
 6. Nella finestra di dialogo visualizzata esaminare le informazioni sulla licenza e sulla privacy e quindi fare clic su **Continua.**
 
-7. Nella pagina **Configura componente** aggiuntivo visualizzata configurare le impostazioni seguenti:
+7. Nella pagina **Configura componente aggiuntivo** visualizzata configurare le impostazioni seguenti:
 
    - **Utenti assegnati:** selezionare uno dei seguenti valori:
 

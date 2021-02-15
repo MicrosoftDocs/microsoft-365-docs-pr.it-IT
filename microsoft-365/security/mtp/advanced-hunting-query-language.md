@@ -61,7 +61,7 @@ FileName, ProcessCommandLine, RemoteIP, RemoteUrl, RemotePort, RemoteIPType
 | top 100 by Timestamp
 ```
 
-**[Eseguire questa query nella ricerca avanzata](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2TW0sCURSF93PQfxh8Moisp956yYIgQtLoMaYczJpbzkkTpN_et_dcdPQkcpjbmrXXWftyetKTQG5lKqmMpeB9IJksJJKZDOWdZ8wKeP5wvcm3OLgZbMXmXCmIxjnYIfcAVgYvRi8w3TnfsXEDGAG47pCCZXyP5ViO4KeNbt-Up-hEuJmB6lvButnY8XSL-cDl0M2I-GwxVX8Fe2H5zMzHiKjEVB0eEsnBrszfBIWuXOLrxCJ7VqEBfM3DWUYTkNKrv1p5y3X0jwetemzOQ_NSVuuXZ1c6aNTKRaN8VvWhY9n7OS-o6J5r7mYeQypdEKc1m1qfiqpjCSuspsDntt2J61bEvTlXls5AgQfFl5bHM_gr_BhO2RF1rztoBv2tWahrso_TtzkL93KGMGZVr2pe7eWR-xeZl91f_113UOsx3nDR4Y9j5R6kaCq8ajr_YWfFeedsd27L7it-Z6dAZyxsJq1d9-2ZOSzK3y2NVd8-zUPjtZaJnYsIH4Md7AmdeAcd2Cl1XoURc5PzXlfU8U9P54WcswL6t_TW9Q__qX-xygQAAA&runQuery=true&timeRangeId=week)**
+**[Eseguire la query nella ricerca avanzata](https://security.microsoft.com/hunting?query=H4sIAAAAAAAEAI2TW0sCURSF93PQfxh8Moisp956yYIgQtLoMaYczJpbzkkTpN_et_dcdPQkcpjbmrXXWftyetKTQG5lKqmMpeB9IJksJJKZDOWdZ8wKeP5wvcm3OLgZbMXmXCmIxjnYIfcAVgYvRi8w3TnfsXEDGAG47pCCZXyP5ViO4KeNbt-Up-hEuJmB6lvButnY8XSL-cDl0M2I-GwxVX8Fe2H5zMzHiKjEVB0eEsnBrszfBIWuXOLrxCJ7VqEBfM3DWUYTkNKrv1p5y3X0jwetemzOQ_NSVuuXZ1c6aNTKRaN8VvWhY9n7OS-o6J5r7mYeQypdEKc1m1qfiqpjCSuspsDntt2J61bEvTlXls5AgQfFl5bHM_gr_BhO2RF1rztoBv2tWahrso_TtzkL93KGMGZVr2pe7eWR-xeZl91f_113UOsx3nDR4Y9j5R6kaCq8ajr_YWfFeedsd27L7it-Z6dAZyxsJq1d9-2ZOSzK3y2NVd8-zUPjtZaJnYsIH4Md7AmdeAcd2Cl1XoURc5PzXlfU8U9P54WcswL6t_TW9Q__qX-xygQAAA&runQuery=true&timeRangeId=week)**
 
 ### <a name="describe-the-query-and-specify-the-tables-to-search"></a>Descrivere la query e specificare le tabelle in cui eseguire la ricerca
 All'inizio della query è stato aggiunto un breve commento per descriverlo. Questo commento è utile se successivamente si decide di salvare la query e condividerla con altri utenti dell'organizzazione. 
@@ -146,7 +146,7 @@ La ricerca avanzata supporta i tipi di dati Kusto, inclusi i tipi comuni seguent
 
 | Tipo di dati | Descrizione e implicazioni delle query |
 |--|--|
-| `datetime` | Informazioni sui dati e sull'ora che in genere rappresentano i timestamp degli eventi. [Vedere i formati datetime supportati](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/datetime) |
+| `datetime` | Informazioni sui dati e sull'ora che in genere rappresentano i timestamp degli eventi. [Vedere i formati di data e ora supportati](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/datetime) |
 | `string` | Stringa di caratteri in FORMATO UTF-8 racchiusa tra virgolette singole ( ) o `'` doppie ( `"` ). [Altre informazioni sulle stringhe](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/string) |
 | `bool` | Questo tipo di dati supporta `true` o `false` stati. [Vedere gli operatori e i valori letterali supportati](https://docs.microsoft.com/azure/data-explorer/kusto/query/scalar-data-types/bool) |
 | `int` | Numero intero a 32 bit  |
@@ -158,7 +158,7 @@ Per ulteriori informazioni su questi tipi di dati, [vedere Tipi di dati scalari 
 Trarre vantaggio dalle seguenti funzionalità per scrivere query più velocemente:
 - **Autosuggest:** durante la scrittura di query, la ricerca avanzata fornisce suggerimenti da IntelliSense. 
 - **Albero dello** schema: una rappresentazione dello schema che include l'elenco di tabelle e le relative colonne viene fornita accanto all'area di lavoro. Per altre informazioni, passare il puntatore su un elemento. Fare doppio clic su un elemento per inserirlo nell'editor di query.
-- **[Riferimento allo](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** schema: riferimento nel portale con descrizioni di tabelle e colonne, tipi di evento supportati `ActionType` (valori) e query di esempio
+- **[Riferimento allo schema:](advanced-hunting-schema-tables.md#get-schema-information-in-the-security-center)** riferimento nel portale con descrizioni di tabelle e colonne, tipi di evento supportati `ActionType` (valori) e query di esempio
 
 ## <a name="work-with-multiple-queries-in-the-editor"></a>Utilizzare più query nell'editor
 È possibile utilizzare l'editor di query per sperimentare più query. Per utilizzare più query:

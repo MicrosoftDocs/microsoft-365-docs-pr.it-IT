@@ -34,7 +34,7 @@ Gruppi di Microsoft 365 è il servizio di appartenenza di base che guida tutto i
 
 - Posta in arrivo di Outlook condivisa
 - Calendario condiviso
-- Una raccolta documenti di SharePoint
+- Raccolta documenti di SharePoint
 - A Planner
 - Un blocco appunti di OneNote
 - Power BI
@@ -48,11 +48,11 @@ Qualsiasi utente può creare un gruppo a meno che non si limiti la creazione del
 
 I gruppi hanno i ruoli seguenti:
 
-- **Proprietari:** i proprietari del gruppo possono aggiungere o rimuovere membri e disporre di autorizzazioni univoche, ad esempio la possibilità di eliminare conversazioni dalla posta in arrivo condivisa o modificare impostazioni diverse sul gruppo. I proprietari del gruppo possono rinominare il gruppo, aggiornare la descrizione o l'immagine e altro ancora.
+- **Proprietari:** i proprietari del gruppo possono aggiungere o rimuovere membri e disporre di autorizzazioni esclusive, ad esempio la possibilità di eliminare conversazioni dalla posta in arrivo condivisa o modificare impostazioni diverse sul gruppo. I proprietari del gruppo possono rinominare il gruppo, aggiornare la descrizione o l'immagine e altro ancora.
 - **Membri:** i membri possono accedere a tutti gli elementi del gruppo, ma non possono modificare le impostazioni del gruppo. Per impostazione predefinita, i membri del gruppo possono invitare guest a unirsi al gruppo, anche se è possibile [controllare questa impostazione.](manage-guest-access-in-groups.md)
 - **Guest:** gli utenti guest del gruppo sono membri esterni all'organizzazione.
 
-Solo gli amministratori globali, gli amministratori utente e i gruppi possono creare e gestire i gruppi nell'interfaccia di amministrazione di Microsoft 365. Non sono consentiti amministratori delegati, ad esempio consulenti con deleghe di amministratore per conto di altri.
+Solo gli amministratori globali, gli amministratori utente e i gruppi possono creare e gestire gruppi nell'interfaccia di amministrazione di Microsoft 365. Non sono consentiti amministratori delegati, ad esempio consulenti con deleghe di amministratore per conto di altri.
 
 Gli amministratori possono:
 
@@ -66,7 +66,7 @@ Se si preferisce un modo più automatizzato per gestire il ciclo di vita dei gru
 
 È possibile amministrare i gruppi dall'interfaccia di amministrazione di Microsoft 365 [o tramite PowerShell.](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)
 
-Se sono presenti molti utenti, ad esempio in un'azienda di grandi dimensioni, è possibile che molti utenti creino gruppi per vari scopi. Per le procedure consigliate, è consigliabile consultare Pianificare la governance nei gruppi di [Microsoft 365.](plan-for-groups-governance.md)
+Se si dispone di molti utenti, ad esempio in un'azienda o in un'azienda di grandi dimensioni, è possibile che molti utenti creino gruppi per vari scopi. Per le procedure consigliate, è consigliabile consultare Pianificare la governance nei gruppi di [Microsoft 365.](plan-for-groups-governance.md)
 
 ## <a name="group-limits"></a>Limiti relativi ai gruppi
 
@@ -80,7 +80,7 @@ I limiti seguenti si applicano ai gruppi di Microsoft 365:
 |Numero di membri|Più di 1.000, anche se solo 1.000 possono accedere contemporaneamente alle conversazioni di gruppo. <br>Gli utenti potrebbero notare ritardi durante l'accesso al calendario e alle conversazioni in gruppi di grandi dimensioni in Outlook.|
 |Numero di gruppi di cui un utente può essere membro|7,000|
 |Archivio file|1 Terabyte + 10 GB per utente sottoscritto + qualsiasi altro spazio di archiviazione acquistato. È possibile acquistare una quantità illimitata di spazio di archiviazione aggiuntivo.|
-|Dimensioni della cassetta postale del gruppo|50 GB|
+|Dimensione cassetta postale del gruppo|50 GB|
 
 Il numero massimo predefinito di gruppi di Microsoft 365 che un'organizzazione può avere è 500.000. Per superare il limite predefinito, è necessario contattare il supporto tecnico Microsoft. Per altre informazioni sui limiti dei gruppi di Microsoft 365, vedere Gruppi di [Microsoft 365 - Guida per gli amministratori.](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
@@ -103,7 +103,7 @@ Per informazioni sulla creazione, la gestione e l'uso delle etichette di riserva
 
 ## <a name="which-microsoft-365-plans-include-groups"></a>Quali piani di Microsoft 365 includono i gruppi?
 
-Qualsiasi abbonamento a Microsoft 365 con Exchange Online e SharePoint Online supporterà i gruppi. Sono inclusi i piani Business Essentials e Business Premium e i piani Enterprise E1, E3 ed E5. Il gruppo assume le licenze della persona che crea il gruppo (noto anche come "organizzatore" del gruppo). Finché l'organizzatore ha la licenza appropriata per tutte le funzionalità che vuoi che il gruppo abbia, tale licenza verrà comunicata al gruppo.
+Qualsiasi abbonamento a Microsoft 365 con Exchange Online e SharePoint Online supporterà i gruppi. Sono inclusi i piani Business Essentials e Business Premium e i piani Enterprise E1, E3 ed E5. Il gruppo assume le licenze della persona che crea il gruppo (noto anche come "organizzatore" del gruppo). Finché l'organizzatore ha la licenza appropriata per tutte le funzionalità che vuoi che il gruppo abbia, la licenza verrà comunicata al gruppo.
 
 > [!NOTE]
 > Per ulteriori informazioni sulle famiglie di servizi e i piani di Microsoft 365, vedere Opzioni dei piani di [Microsoft 365.](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/office-365-plan-options)
@@ -113,7 +113,7 @@ Se si dispone di un piano solo di Exchange, è comunque possibile ottenere la po
 I gruppi di Microsoft 365 funzionano con Azure Active Directory. Le funzionalità dei gruppi disponibili dipendono dall'abbonamento ad Azure Active Directory di cui si dispone e dalle licenze assegnate all'organizzatore del gruppo.
 
 > [!IMPORTANT]
-> Per tutte le funzionalità dei gruppi, se hai una sottoscrizione ad Azure AD Premium, gli utenti possono aggiungersi al gruppo indipendentemente dal fatto che gli siano assegnate o meno una licenza AAD P1. Le licenze non vengono applicate.
+> Per tutte le funzionalità dei gruppi, se si dispone di una sottoscrizione di Azure AD Premium, gli utenti possono aggiungersi al gruppo indipendentemente dal fatto che gli sia assegnata o meno una licenza AAD P1. Le licenze non vengono applicate.
 > Periodicamente verranno generati report sull'utilizzo che segnalano quali utenti non hanno una licenza e ne occorre uno assegnato per essere conformi ai requisiti di licenza. Si supponga, ad esempio, che un utente non abbia una licenza e che sia stato aggiunto a un gruppo in cui vengono applicati i criteri di denominazione. Il report contrassegnerà l'utente che ha bisogno di una licenza.
 
 ## <a name="related-articles"></a>Articoli correlati

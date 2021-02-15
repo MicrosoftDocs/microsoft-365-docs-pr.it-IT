@@ -32,7 +32,7 @@ ms.locfileid: "50080470"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Creare gruppi di distribuzione nell'interfaccia di amministrazione di Microsoft 365
   
-Utilizzato quando si desidera inviare messaggi di posta elettronica a un gruppo di persone senza dover digitare il nome di ogni singolo destinatario, i gruppi di distribuzione (liste di distribuzione) sono organizzati in base a un particolare oggetto di discussione (ad esempio "Marketing") o da utenti che condividono lavoro comune che richiede loro di comunicare frequentemente. Le liste di distribuzione consentono anche di inoltrare automaticamente messaggi a più indirizzi di posta elettronica.
+Utilizzato quando si desidera inviare posta elettronica a un gruppo di persone senza dover digitare il nome di ogni singolo destinatario, i gruppi di distribuzione (liste di distribuzione) sono organizzati in base a un particolare oggetto di discussione (ad esempio "Marketing") o da utenti che condividono lavoro comune che richiede loro di comunicare frequentemente. Le liste di distribuzione consentono anche di inoltrare automaticamente messaggi a più indirizzi di posta elettronica.
 
 I gruppi di distribuzione sono talvolta denominati liste di distribuzione.
   
@@ -70,7 +70,7 @@ Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.mic
     
 6. Per aggiungere utenti alla lista di distribuzione, vedere [Aggiungere un utente o un contatto a un gruppo di distribuzione.](../email/add-user-or-contact-to-distribution-list.md)
     
-Vedere come usare il gruppo in Outlook 2016 e Outlook sul Web nell'argomento Usare gruppi di contatti (in precedenza liste [di distribuzione) in Outlook.](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) 
+Vedere come usare il gruppo in Outlook 2016 e Outlook sul Web nell'argomento Usare i gruppi di contatti (in precedenza liste [di distribuzione) in Outlook.](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) 
   
 Per informazioni sui [problemi relativi alle liste di distribuzione,](https://docs.microsoft.com/office365/troubleshoot/groups/distribution-list-issues) vedere Problemi relativi ai gruppi di distribuzione. 
   

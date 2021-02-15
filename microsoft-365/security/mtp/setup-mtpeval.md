@@ -44,7 +44,7 @@ La creazione di un ambiente pilota o un lab di valutazione di Microsoft 365 Defe
 
 Al momento è in corso la fase di configurazione. Eseguire i passaggi iniziali per accedere al Centro sicurezza Microsoft 365 e quindi configurare il laboratorio di valutazione o l'ambiente pilota.
 
-Iscriversi a un abbonamento a Office 365 o Azure Active Directory per generare un tenant con estensione *onmicrosoft.com* che è possibile usare per iscriversi alla licenza di Microsoft 365 E5. 
+Iscriversi a un abbonamento a Office 365 o Azure Active Directory per generare un tenant *.onmicrosoft.com* che è possibile usare per iscriversi alla licenza di Microsoft 365 E5. 
 
 >[!NOTE]
 >Se si dispone già di un abbonamento a Office 365 o Azure Active Directory, è possibile ignorare i passaggi di creazione del tenant pilota o di valutazione di Office 365 E5.
@@ -66,9 +66,9 @@ In questa fase, si verrà guidati a:
 
    ![Image of_Office 365 E5 trial registration setup page](../../media/mtp-eval-10.png)
 
-3. Compila nome, cognome, numero di telefono dell'azienda, nome della società, dimensione della società e paese o area geografica.  
+3. Compilare il nome, il cognome, il numero di telefono dell'azienda, il nome della società, le dimensioni della società e il paese o l'area geografica.  
 
-   ![Immagine of_Office pagina di configurazione della registrazione della versione di valutazione di 365 E5 che richiede nome, telefono e dettagli aziendali](../../media/mtp-eval-11.png)
+   ![Image of_Office 365 E5 trial registration setup page asking for name, phone, and company details](../../media/mtp-eval-11.png)
    
    > [!NOTE]
    > Il paese o l'area geografica impostata qui determina l'area del data center in cui verrà ospitato Office 365.
@@ -91,7 +91,7 @@ In questa fase, si verrà guidati a:
 
 8. Connettere il dominio aziendale al tenant di Office 365. [Facoltativo] Choose **Connect a domain you already own** and type in your domain name. Fare clic su **Avanti**.
 
-   ![Immagine of_Office 365 E5 Setup page where you should personalize your sign-in and email](../../media/mtp-eval-16.png)
+   ![Immagine of_Office configurazione di 365 E5 in cui personalizzare l'accesso e la posta elettronica](../../media/mtp-eval-16.png)
  
 9. Aggiungere un record TXT o MX per convalidare la proprietà del dominio. Dopo aver aggiunto il record TXT o MX al dominio, selezionare **Verifica**.
 
@@ -103,7 +103,7 @@ In questa fase, si verrà guidati a:
  
 11. [Facoltativo] Scaricare le app di Office. Fare **clic su** Avanti per ignorare questo passaggio. 
 
-    ![Immagine of_Office 365 E5 in cui è possibile installare le app di Office](../../media/mtp-eval-19.png)
+    ![Image of_Office 365 E5 page where you can install your Office apps](../../media/mtp-eval-19.png)
 
 12. [Facoltativo] Eseguire la migrazione dei messaggi di posta elettronica. Anche in questo caso, è possibile ignorare questo passaggio.
 
@@ -132,7 +132,7 @@ In questa fase, si verrà guidati a:
 
    ![Image of_Microsoft 365 E5 Start free trial page](../../media/mtp-eval-24.png)
 
-3. Scegli la preferenza di verifica: tramite un SMS o una chiamata. Dopo aver deciso, immettere il numero di telefono, selezionare **Sms o** **Chiamami a** seconda della selezione effettuata.
+3. Scegli la preferenza di verifica: tramite un SMS o una chiamata. Dopo aver deciso, immettere il numero di telefono, selezionare **Sms o** **Chiamami** a seconda della selezione effettuata.
 
    ![Image of_Microsoft 365 E5 Start free trial page asking for contact details to send code to prove you are not a robot](../../media/mtp-eval-25.png)
  

@@ -54,7 +54,7 @@ Usa questi metodi per condividere file e video in modo sicuro:
 
 ## <a name="set-up"></a>Configurazione
 
-Per creare un team e aggiungere utenti guest, ad esempio inserzionisti o partner commerciali, seguire questa procedura.
+Per creare un team e aggiungere guest, ad esempio inserzionisti o partner commerciali, seguire questa procedura.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp]
 

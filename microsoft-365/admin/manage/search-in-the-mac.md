@@ -24,9 +24,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/29/2021
 ms.locfileid: "50054154"
 ---
-# <a name="search-in-the-microsoft-365-admin-center"></a>Ricerca nell'interfaccia di amministrazione di Microsoft 365
+# <a name="search-in-the-microsoft-365-admin-center"></a>Eseguire ricerche nell'interfaccia di amministrazione di Microsoft 365
 
-L'amministratore di un'organizzazione di Microsoft 365 può usare la ricerca per trovare utenti, eseguire azioni, passare a impostazioni diverse e leggere la documentazione. Con le nuove funzionalità di ricerca, la velocità di ricerca è migliorata ed è ora possibile eseguire ricerche da ogni pagina nell'interfaccia di amministrazione. La casella di ricerca è stata spostata nell'area banner nella parte superiore dell'interfaccia di amministrazione. È possibile utilizzare il **collegamento ALT+S** per utilizzare la ricerca da qualsiasi pagina.
+L'amministratore di un'organizzazione di Microsoft 365 può usare la ricerca per trovare gli utenti, eseguire azioni, passare a impostazioni diverse e leggere la documentazione. Con le nuove funzionalità di ricerca, la velocità di ricerca è migliorata ed è ora possibile eseguire ricerche da ogni pagina nell'interfaccia di amministrazione. La casella di ricerca è stata spostata nell'area banner nella parte superiore dell'interfaccia di amministrazione. È possibile utilizzare il **collegamento ALT+S** per utilizzare la ricerca da qualsiasi pagina.
 
 :::image type="content" source="../../media/search-bar.png" alt-text="Screenshot: Search bar in the Microsoft 365 admin center":::
 
@@ -36,7 +36,7 @@ Nelle sezioni seguenti vengono descritte le diverse aree e categorie dell'interf
 
 ## <a name="before-you-begin"></a>Informazioni preliminari
 
-È necessario essere un amministratore per eseguire la ricerca nell'interfaccia di amministrazione. L'ambito dei risultati della ricerca è quello delle autorizzazioni di amministratore dell'utente connesso. Ad esempio, se l'amministratore di SharePoint non visualizza un'area o una categoria nell'interfaccia di amministrazione, non la visualizza nella ricerca.
+È necessario essere un amministratore per eseguire la ricerca nell'interfaccia di amministrazione. L'ambito dei risultati della ricerca è quello delle autorizzazioni di amministratore di cui dispone l'utente connesso. Ad esempio, se l'amministratore di SharePoint non visualizza un'area o una categoria nell'interfaccia di amministrazione, non la visualizza nella ricerca.
 
 ## <a name="users"></a>Utenti
 

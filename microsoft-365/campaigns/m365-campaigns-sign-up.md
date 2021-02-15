@@ -23,7 +23,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
-description: Registrazione dettagliata per Microsoft 365 per le campagne. Proteggere la campagna dalle minacce alla sicurezza informatica alla posta elettronica, ai dati e alle comunicazioni.
+description: Registrazione dettagliata per Microsoft 365 per le campagne. Proteggere la campagna dalle minacce alla sicurezza informatica per la posta elettronica, i dati e le comunicazioni.
 ms.openlocfilehash: 8920cb28881d884413a8d30c0edb75f96a77cf1e
 ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
 ms.translationtype: MT
@@ -48,7 +48,7 @@ Ecco come completare l'iscrizione a Microsoft 365 per le campagne.
 
 1. Nell'invito all'e-mail di Microsoft 365 for Campaigns, selezionare **ENROLL YOUR ORGANIZATION >**. In questo modo si accede a Microsoft 365.
     > [!NOTE]
-    > Se si dispone già di un abbonamento a Microsoft 365 per le aziende e si desidera aggiungere l'offerta Microsoft 365 per le campagne, passare ad aggiungere [Microsoft 365](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription)per le campagne a un abbonamento esistente.
+    > Se si dispone già di un abbonamento a Microsoft 365 per le aziende e si vuole aggiungere l'offerta Microsoft 365 per le campagne, passare ad aggiungere [Microsoft 365](#steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription)per le campagne a un abbonamento esistente.
 1. **Nella pagina Microsoft 365 Business** immettere i dettagli aziendali. Per **l'indirizzo di posta elettronica aziendale,** utilizzare un indirizzo di posta elettronica corrente. Questo indirizzo è necessario solo per rimanere in contatto con l'utente durante il processo di configurazione. Selezionare **Avanti**.
 1. **Nella pagina Crea ID utente:**
     1. In **Nome utente** immettere il nome o l'alias desiderato per l'indirizzo di posta elettronica. Ad esempio, potresti voler essere conosciuto come solo Alice o Roberto. In una campagna più grande, AliceC o AliceChavez potrebbero avere più senso.
@@ -56,21 +56,21 @@ Ecco come completare l'iscrizione a Microsoft 365 per le campagne.
     3. In **Selezionare un dominio** selezionare **.onmicrosoft.com** per il momento. È possibile configurare l'utente con un dominio in un secondo momento o consentire a Microsoft 365 di essere connessi a un dominio di cui si è già proprietari.
     4. Crea una password e seleziona **Crea il mio account.**
     > [!NOTE]
-    > Se la campagna o la parte non è proprietaria di un dominio e hai deciso il dominio desiderato, puoi acquistarne uno ora selezionandolo.
+    > Se la campagna o la parte non è proprietaria di un dominio e hai deciso quale dominio vuoi, puoi acquistarne uno ora selezionandolo.
 
 4. **Prova. Lo sei. No. A. Robot. :**
     1. Prepara il telefono e seleziona **Chiamami** (o **Chiamami** se preferisci). Immettere quindi il numero di telefono. 
     2. Quando si seleziona **Testo,** verrà inviato un codice di verifica. Oppure ti chiameremo con un codice se seleziona **Chiamami.**
-    3. Immetti il codice del messaggio di testo (o chiamata) e seleziona **Avanti.** Aspettarsi una breve attesa. 
+    3. Immetti il codice del messaggio di testo (o della chiamata) e seleziona **Avanti.** Aspettarsi una breve attesa. 
 5. **Dove verrà utilizzata questa pagina:** immetti i dettagli della posizione di lavoro principale della campagna e il numero di telefono. Selezionare **Avanti**.
 6. **Come funziona questa pagina di aspetto:**
     1. Verificare che il costo per utente sia di $ 5,00. 
     2. Se si vuole solo configurarsi per il momento, selezionare **Avanti.** 
-    3. Facoltativo: aggiungere alcune licenze aggiuntive modificando il numero nel **campo** utente. [Il personale con cui si lavora può essere assegnato licenze a Microsoft 365](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json) in qualsiasi momento.
+    3. Facoltativo: aggiungere alcune licenze aggiuntive modificando il numero nel **campo utente.** [Il personale con cui si lavora può essere assegnato licenze a Microsoft 365](../business/add-users-m365b.md?toc=/microsoft-365/campaigns/toc.json) in qualsiasi momento.
 7. **How do you want to pay? page**: Select **New credit card,** enter your business credit card details, and select **Place order.** Se si preferisce, è anche possibile usare un conto corrente bancario.
 8. **Questa operazione potrebbe richiedere un po'** di tempo: troverai informazioni dettagliate su dove eseguire l'accesso e sul tuo ID utente. Queste informazioni verranno inviate anche all'indirizzo di posta elettronica immesso durante il passaggio 2 precedente.
 
-La procedura di iscrizione è completa. Se si desidera continuare con i passaggi successivi, selezionare **Avvia** installazione o tornare successivamente per completare i passaggi. Quando si è pronti, controllare la posta elettronica (dal passaggio 2) per trovare il nome utente e la password in modo da poter accedere la volta successiva. Queste credenziali sono denominate credenziali di amministratore globale o amministratore globale.
+La procedura di iscrizione è completa. Se si desidera continuare con i passaggi successivi, selezionare **Avvia** installazione o tornare in un secondo momento per completare i passaggi. Quando si è pronti, controllare la posta elettronica (dal passaggio 2) per trovare il nome utente e la password in modo da poter accedere la volta successiva. Queste credenziali sono denominate credenziali di amministratore globale o amministratore globale.
 
 ## <a name="steps-to-add-microsoft-365-for-campaigns-to-an-existing-subscription"></a>Passaggi per aggiungere Microsoft 365 for Campaigns a un abbonamento esistente
 
@@ -79,7 +79,7 @@ Se si dispone già di un abbonamento a Microsoft 365 per le aziende, ad esempio 
 > Non è possibile aggiungere l'offerta Microsoft 365 for Campaigns a un account Microsoft 365 esistente.
 
 1. Nell'invito all'e-mail di Microsoft 365 for Campaigns, selezionare **ENROLL YOUR ORGANIZATION >**. In questo modo si accede a Microsoft 365.
-2. Nella pagina iniziale è possibile conoscere **l'utente,** fare clic o toccare Per aggiungere questo elemento **a un abbonamento esistente? Accedi**.
+2. Nella pagina **iniziale, è possibile** conoscere l'utente, fare clic o toccare Per aggiungere questo elemento **a un abbonamento esistente? Accedi**.
     
     ![Choose Sign in on the upper right corner.](../media/addtoexisting.png)
 3. Nella pagina di accesso immettere l'alias di amministratore per l'abbonamento esistente, ad esempio *Alice@VoteContoso <span></span> .org,* scegliere **Avanti,** immettere la password e quindi scegliere **Accedi.**

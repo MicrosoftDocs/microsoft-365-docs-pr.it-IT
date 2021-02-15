@@ -37,13 +37,13 @@ ms.locfileid: "49932179"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Puoi contenere rapidamente minacce o risolvere le risorse compromesse che trovi nella ricerca [avanzata](advanced-hunting-overview.md) usando opzioni di azione potenti e complete. Con queste opzioni, è possibile:
+Puoi contenere rapidamente minacce o risolvere le risorse compromesse che trovi nella ricerca [avanzata](advanced-hunting-overview.md) usando opzioni di azione avanzate e complete. Con queste opzioni, è possibile:
 
 - Eseguire varie azioni sui dispositivi
 - File in quarantena
 
 ## <a name="required-permissions"></a>Autorizzazioni necessarie
-Per essere in grado di eseguire azioni tramite la ricerca avanzata, è necessario un ruolo in Microsoft Defender per Endpoint con le autorizzazioni per inviare azioni di correzione [nei dispositivi.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options) Se non è possibile eseguire un'azione, contattare un amministratore globale per ottenere l'autorizzazione seguente:
+Per essere in grado di eseguire azioni tramite la ricerca avanzata, è necessario un ruolo in Microsoft Defender per Endpoint con le autorizzazioni per inviare azioni di correzione [nei dispositivi.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles#permission-options) Se non è possibile eseguire alcuna azione, contattare un amministratore globale per ottenere l'autorizzazione seguente:
 
 *Azioni di correzione attive > gestione delle minacce e delle vulnerabilità - Gestione delle correzioni*
 
@@ -63,16 +63,16 @@ Per altre informazioni su come vengono eseguite queste azioni di risposta tramit
 
 - `SHA1` - Nella maggior parte delle tabelle di ricerca avanzate, si tratta dell'SHA-1 del file interessato dall'azione registrata. Ad esempio, se un file è stato copiato, si tratta del file copiato.
 - `InitiatingProcessSHA1` — Nella maggior parte delle tabelle di ricerca avanzate, questo è il file responsabile dell'avvio dell'azione registrata. Ad esempio, se è stato avviato un processo figlio, si tratta del processo padre. 
-- `SHA256` - Questo è l'equivalente SHA-256 del file identificato dalla `SHA1` colonna.
-- `InitiatingProcessSHA256` - Questo è l'equivalente SHA-256 del file identificato dalla `InitiatingProcessSHA1` colonna.
+- `SHA256` - Si tratta dell'equivalente SHA-256 del file identificato dalla `SHA1` colonna.
+- `InitiatingProcessSHA256` - Si tratta dell'equivalente SHA-256 del file identificato dalla `InitiatingProcessSHA1` colonna.
 
-Per altre informazioni su come vengono eseguite le azioni di quarantena e su come ripristinare i file, leggi le azioni [di risposta sui file.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts)
+Per ulteriori informazioni su come vengono eseguite le azioni di quarantena e su come è possibile ripristinare i file, leggere [informazioni sulle azioni di risposta sui file.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts)
 
 >[!NOTE]
 >Per individuare i file e mettere in quarantena i file, i risultati della query devono includere `DeviceId` anche valori come identificatori di dispositivo.  
 
 ## <a name="take-action"></a>Eseguire un'azione
-Per eseguire una delle azioni descritte, selezionare uno o più record nei risultati della query e quindi **selezionare Eseguire azioni.** Una procedura guidata ti guiderà nel processo di selezione e invio delle azioni preferite.
+Per eseguire una delle azioni descritte, selezionare uno o più record nei risultati della query e quindi **selezionare Azioni.** Una procedura guidata ti guiderà nel processo di selezione e invio delle azioni preferite.
 
 ![Immagine del record selezionato con un pannello per esaminare il record](../../media/mtp-ah/ah-take-actions.png)
 

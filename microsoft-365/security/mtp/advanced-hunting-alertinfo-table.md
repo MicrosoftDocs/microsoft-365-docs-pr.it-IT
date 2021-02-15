@@ -50,7 +50,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `Severity` | stringa | Indica il potenziale impatto (alto, medio o basso) dell'indicatore di minaccia o della violazione identificata dall'avviso |
 | `ServiceSource` | stringa | Prodotto o servizio che ha fornito le informazioni sull'avviso |
 | `DetectionSource` | stringa | Tecnologia di rilevamento o sensore che ha identificato il componente o l'attività più importante |
-| `AttackTechniques` | stringa | MiTRE ATT&tecniche CK associate all'attività che ha attivato l'avviso |
+| `AttackTechniques` | stringa | MITRE ATT&tecniche CK associate all'attività che ha attivato l'avviso |
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)

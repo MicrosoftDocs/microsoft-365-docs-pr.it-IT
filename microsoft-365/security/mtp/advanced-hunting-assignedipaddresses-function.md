@@ -56,7 +56,7 @@ AssignedIPAddresses(x, y)
 ## <a name="arguments"></a>Argomenti
 
 - **x**— `DeviceId` o valore che identifica il `DeviceName` dispositivo
-- **y**— Valore (datetime) che indica alla funzione di ottenere gli indirizzi IP assegnati più recenti `Timestamp` da un'ora specifica. Se non specificato, la funzione restituisce gli indirizzi IP più recenti.
+- **y**— Valore (datetime) che indica alla funzione di ottenere gli indirizzi IP assegnati più recenti `Timestamp` da un'ora specifica. Se non viene specificato, la funzione restituisce gli indirizzi IP più recenti.
 
 ## <a name="examples"></a>Esempi
 
@@ -67,7 +67,7 @@ AssignedIPAddresses('example-device-name', ago(1d))
 ```
 
 ### <a name="get-ip-addresses-used-by-a-device-and-find-devices-communicating-with-it"></a>Ottenere gli indirizzi IP usati da un dispositivo e trovare i dispositivi che comunicano con esso
-Questa query utilizza la funzione per ottenere gli indirizzi IP assegnati per il dispositivo ( ) in una data specifica o prima `AssignedIPAddresses()` di una data specifica ( `example-device-name` `example-date` ). Usa quindi gli indirizzi IP per trovare le connessioni al dispositivo avviato da altri dispositivi. 
+Questa query utilizza la funzione per ottenere gli indirizzi IP assegnati per il dispositivo ( ) in una data specifica ( o prima `AssignedIPAddresses()` di una data specifica ( `example-device-name` `example-date` ). Usa quindi gli indirizzi IP per trovare le connessioni al dispositivo avviato da altri dispositivi. 
 
 ```kusto
 let Date = datetime(example-date);

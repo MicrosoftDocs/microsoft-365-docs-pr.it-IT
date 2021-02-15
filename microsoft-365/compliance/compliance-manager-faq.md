@@ -13,7 +13,7 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Trovare le risposte alle domande frequenti su Microsoft Compliance Manager, che consentono alle organizzazioni di semplificare e automatizzare le valutazioni dei rischi.
+description: Risposte alle domande frequenti su Microsoft Compliance Manager, che consentono alle organizzazioni di semplificare e automatizzare le valutazioni dei rischi.
 ms.openlocfilehash: 43ecafdfe54b2baec82363ea690a5a820e031232
 ms.sourcegitcommit: b8e9b2ecdc4927b67088c5fffb1585424c66fb10
 ms.translationtype: MT
@@ -57,7 +57,7 @@ Di seguito sono riportate alcune risorse utili:
 
 #### <a name="your-organization-used-compliance-score-public-preview-in-the-microsoft-365-compliance-center"></a>L'organizzazione ha usato il punteggio di conformità (anteprima pubblica) nel Centro conformità Microsoft 365
 
-Se è stato usato il punteggio di conformità in anteprima pubblica, Si noterà che Compliance Manager è in gran parte lo stesso, con il punteggio in primo piano nel dashboard. Con la versione GA, non è più necessario lasciare il Centro conformità Microsoft 365 per eseguire determinate funzioni di gestione della valutazione, ad esempio la creazione e la modifica di modelli per le valutazioni. Tutte le funzionalità ora risiedono in un'unica posizione. Tutti i dati presenti nella versione di anteprima del punteggio di conformità rimangono nella versione GA di Compliance Manager.
+Se è stato usato punteggio di conformità in anteprima pubblica, si noterà che Compliance Manager è in gran parte lo stesso, con il punteggio in primo piano nel dashboard. Con la versione GA, non è più necessario lasciare il Centro conformità Microsoft 365 per eseguire determinate funzioni di gestione della valutazione, ad esempio la creazione e la modifica di modelli per le valutazioni. Tutte le funzionalità ora risiedono in un'unica posizione. Tutti i dati presenti nella versione di anteprima del punteggio di conformità rimangono nella versione GA di Compliance Manager.
 
 Si noti che se è stata filtrata la visualizzazione del dashboard del punteggio di conformità, tali filtri sono stati reimpostati quando è stato distribuito il nuovo Compliance Manager a settembre. Sarà necessario riapplicare i filtri disponibili.
 
@@ -73,7 +73,7 @@ Compliance Manager è una soluzione end-to-end nel Centro conformità Microsoft 
 
 ## <a name="are-there-licensing-requirements-for-using-compliance-manager"></a>Esistono requisiti di licenza per l'uso di Compliance Manager?
 
-Sì. La versione GA di Compliance Manager contiene nuove condizioni di licenza. Tutte le organizzazioni con licenze di Office 365 e Microsoft 365 e i clienti di Us Government Community (GCC) Moderate e GCC High hanno accesso a Compliance Manager. Tuttavia, le valutazioni disponibili per l'organizzazione e la modalità di gestione dei modelli di valutazione dipendono dal contratto di licenza. Per informazioni dettagliate, visitare la guida alle licenze [di Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2132371) per la sicurezza e la conformità.
+Sì. La versione GA di Compliance Manager contiene nuove condizioni di licenza. Tutte le organizzazioni con licenze di Office 365 e Microsoft 365 e i clienti di Us Government Community (GCC) Moderate e GCC High hanno accesso a Compliance Manager. Tuttavia, le valutazioni disponibili per l'organizzazione e la modalità di gestione dei modelli di valutazione dipendono dal contratto di licenza. Per informazioni dettagliate, visitare la guida alle licenze di [Microsoft 365](https://go.microsoft.com/fwlink/?linkid=2132371) per la sicurezza e la conformità.
 
 ## <a name="if-i-have-a-high-score-does-it-mean-im-fully-compliant"></a>Se ho un punteggio elevato, significa che sono completamente conforme?
 

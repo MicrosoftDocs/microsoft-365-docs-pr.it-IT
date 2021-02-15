@@ -52,7 +52,7 @@ Per un elenco completo delle licenze supportate, [leggere i requisiti di licenza
 
 ## <a name="do-i-need-to-install-or-deploy-anything-to-start-using-microsoft-365-defender"></a>È necessario installare o distribuire qualcosa per iniziare a usare Microsoft 365 Defender?
 
-No, Microsoft 365 Defender consolida i dati dei servizi di sicurezza di Microsoft 365 già distribuiti. Una volta attivata, le esperienze di ricerca, automazione ed eventi imprevisti inizieranno a funzionare nell'ambito dei prodotti distribuiti. Se nessuno di questi prodotti è distribuito correttamente, Microsoft 365 Defender non visualizza alcun dato e non è in grado di eseguire alcuna azione.
+No, Microsoft 365 Defender consolida i dati dei servizi di sicurezza di Microsoft 365 già distribuiti. Una volta attivata, le esperienze di ricerca, automazione ed evento imprevisto inizieranno a funzionare nell'ambito dei prodotti distribuiti. Se nessuno di questi prodotti è distribuito correttamente, Microsoft 365 Defender non visualizza alcun dato e non è in grado di eseguire alcuna azione.
 
 Per ottimizzare le esperienze di Microsoft 365 Defender, è consigliabile distribuire tutti i prodotti e i servizi di sicurezza di [Microsoft 365 supportati.](deploy-supported-services.md) 
 
@@ -91,7 +91,7 @@ Microsoft fornisce regolarmente informazioni attraverso i vari canali, tra cui:
 - Centro [messaggi nell'interfaccia](../../admin/manage/message-center.md) di amministrazione di Microsoft 365
 - Post di blog nella community tecnica sulla sicurezza di [Microsoft 365 & conformità](https://techcommunity.microsoft.com/t5/security-privacy-and-compliance/bg-p/securityprivacycompliance)
 
-Ottieni le esperienze più recenti pubblicamente disponibili attivando le [funzionalità di anteprima.](preview.md)
+Ottieni le esperienze più recenti disponibili pubblicamente attivando le [funzionalità di anteprima.](preview.md)
 
 ## <a name="is-microsoft-365-defender-available-for-us-government-community-cloud-gcc-or-gcc-high"></a>Microsoft 365 Defender è disponibile per US Government Community Cloud (GCC) o GCC High?
 Al momento non è disponibile.

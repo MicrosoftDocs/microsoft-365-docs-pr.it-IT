@@ -40,7 +40,7 @@ Per ulteriori informazioni, vedere [Microsoft Secure Score.](https://docs.micros
 
 ## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>Aumentare il livello di protezione dal malware nella posta
 
-L'ambiente di Office 365 o Microsoft 365 include la protezione dal malware, ma è possibile aumentare questa protezione bloccando gli allegati con tipi di file comunemente usati per il malware. Per alzare la protezione antimalware nella posta elettronica:
+L'ambiente di Office 365 o Microsoft 365 include la protezione dal malware, ma è possibile aumentare questa protezione bloccando gli allegati con tipi di file usati comunemente per il malware. Per alzare la protezione antimalware nella posta elettronica:
 
 1. Accedere con <https://protection.office.com> le credenziali dell'account amministratore.
 
@@ -62,7 +62,7 @@ Per ulteriori informazioni, vedere [Protezione antimalware in EOP.](https://docs
 
 ## <a name="protect-against-ransomware"></a>Proteggere l'ambiente da ransomware
 
-Ransomware limita l'accesso ai dati crittografando i file o bloccando gli schermi del computer. Tenta quindi di estorcere denaro dalle vittime chiedendo un "ricatto", in genere sotto forma di criptovalute come Il Denaro, in cambio dell'accesso ai dati.
+Ransomware limita l'accesso ai dati crittografando i file o bloccando gli schermi del computer. Tenta quindi di estorcere denaro dalle vittime chiedendo un "riscatto", in genere sotto forma di criptovalute come Il Denaro, in cambio dell'accesso ai dati.
 
 È possibile proteggersi dal ransomware creando una o più regole del flusso di posta per bloccare le estensioni di file comunemente utilizzate per il ransomware (queste sono state aggiunte nel passaggio aumentare il livello di protezione dal [malware)](#raise-the-level-of-protection-against-malware-in-mail) o per avvisare gli utenti che ricevono questi allegati tramite posta elettronica.
 
@@ -84,7 +84,7 @@ Per creare una regola di trasporto della posta:
 
 |Impostazione|Avvisare gli utenti prima di aprire gli allegati dei file di Office|
 |---|---|
-|Nome|Regola anti-ransomware: avvisa gli utenti|
+|Nome|Regola anti-ransomware: avvisare gli utenti|
 |Applicare questa regola se . . .|Qualsiasi allegato. . . l'estensione del file corrisponde a . . .|
 |Specificare parole o frasi|Aggiungi questi tipi di file: <br/> `dotm, docm, xlsm, sltm, xla, xlam, xll, pptm, potm, ppam, ppsm, sldm`|
 |Eseguire le operazioni seguenti. . .|Invia una notifica al destinatario tramite messaggio|
@@ -98,13 +98,13 @@ Per altre informazioni, vedere:
 
 ## <a name="stop-auto-forwarding-for-email"></a>Interrompere l'inoltro automatico per la posta elettronica
 
-I pirati informatici che ottengono l'accesso alla cassetta postale di un utente possono rubare la posta impostando la cassetta postale per l'inoltro automatico della posta elettronica. Questo può accadere anche senza la consapevolezza dell'utente. È possibile evitare questo problema configurando una regola del flusso di posta.
+I pirati informatici che ottengono l'accesso alla cassetta postale di un utente possono rubare la posta impostando la cassetta postale per inoltrare automaticamente la posta elettronica. Questo può accadere anche senza la consapevolezza dell'utente. È possibile evitare questo problema configurando una regola del flusso di posta.
 
 Per creare una regola di trasporto della posta, guardare [questo breve video](https://support.office.com/article/f9d693ba-5c78-47c0-b156-8e461e062aa7) o attenersi alla seguente procedura:
 
 1. Nell'interfaccia di amministrazione di Microsoft 365, fare clic **su Interfaccia di amministrazione di** \> **Exchange.**
 
-2. Nella categoria del **flusso di** posta fare clic su **regole.**
+2. Nella categoria **del flusso di** posta fare clic su **regole.**
 
 3. Fare **+** clic su e quindi su Crea nuova **regola.**
 
@@ -151,7 +151,7 @@ Per creare un criterio anti-phishing in Defender per Office 365, guardare questo
 |Scegli azioni|If email is sent by an impersonated user: Choose **Redirect message to another email address**, and then type the email address of the security administrator; ad esempio Alice *<span> <span> @contoso.com*. <br/> Se i messaggi di posta elettronica vengono inviati da un dominio imitato: scegliere di mettere il **messaggio in quarantena**.|
 |Intelligence della cassetta postale|Per impostazione predefinita, la funzione di intelligence della cassetta postale è selezionata quando si creano nuovi criteri anti-phishing. Per ottenere risultati ottimali, lasciare l’opzione **attiva**.|
 |Aggiungere mittenti e domini attendibili|Qui è possibile aggiungere il proprio dominio o qualsiasi altro dominio attendibile.|
-|Applicato a|Selezionare **Il dominio del destinatario è**. In **Uno dei seguenti**, selezionare **Scegli**. Selezionare **+ Aggiungi**. Selezionare la casella di controllo accanto al nome del dominio, ad esempio *contoso. <span> <span> com*, nell'elenco e quindi selezionare **Aggiungi.** Scegliere **Fatto**.|
+|Applicato a|Selezionare **Il dominio del destinatario è**. In **Uno dei seguenti**, selezionare **Scegli**. Selezionare **+ Aggiungi**. Selezionare la casella di controllo accanto al nome del dominio, ad esempio *contoso. <span> <span> com*, nell'elenco e quindi selezionare **Aggiungi**. Scegliere **Fatto**.|
 
 Per altre informazioni, vedere [Configurare i criteri anti-phishing in Defender per Office 365.](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies)
 
@@ -171,7 +171,7 @@ Se non viene ancora  visualizzata la pagina di configurazione con le schede nel 
    ![Scegliere Visualizza in Aumenta protezione dalle minacce avanzate.](../media/startatp.png)
 
 3. Nella pagina **Aumenta protezione dalle minacce avanzate** scegliere **Introduzione.**
-4. Nel riquadro visualizzato, selezionare le caselle di controllo accanto a Collegamenti e allegati **nella** posta elettronica, Analizzare i file **in SharePoint, OneDrive e Teams** e analizzare i collegamenti nelle app desktop e office online di **Office** in Analizza elementi per individuare contenuti dannosi. 
+4. Nel riquadro visualizzato, selezionare le caselle di controllo accanto a Collegamenti e allegati nella posta **elettronica,** Analizzare i file **in SharePoint, OneDrive e Teams** e analizzare i collegamenti nelle app desktop e office online di **Office** in Analizza elementi per individuare contenuti dannosi. 
 
    In **Collegamenti e allegati nella posta elettronica** digitare Tutti gli utenti o gli utenti specifici di cui si desidera analizzare la posta elettronica.
 
@@ -187,7 +187,7 @@ Per creare un criterio allegati sicuri, guardare [questo breve video](https://su
 
 1. Accedere con <https://protection.office.com> l'account amministratore.
 
-2. Nel riquadro di & spostamento sinistro del Centro sicurezza e conformità, in **Gestione minacce,** scegliere **Criteri.**
+2. Nel riquadro di spostamento & sicurezza del Centro sicurezza e conformità, in **Gestione minacce,** scegliere **Criteri.**
 
 3. Nella pagina Criteri scegliere **Allegati sicuri.**
 
@@ -254,14 +254,14 @@ Per altre informazioni, vedere [Collegamenti sicuri in Defender per Office 365.]
 
 ## <a name="turn-on-the-unified-audit-log"></a>Attivare il registro di controllo unificato
 
-Dopo aver attivata la ricerca nel log di controllo nel Centro sicurezza & conformità, è possibile conservare l'amministratore e altre attività degli utenti nel log e cercarlo.
+Dopo aver attivare la ricerca nel log di controllo nel Centro sicurezza & conformità, è possibile conservare l'amministratore e altre attività degli utenti nel log e cercarlo.
 
 Per attivare o disattivare la ricerca nei log di controllo nell'abbonamento a Microsoft 365, è necessario disporre del ruolo Log di controllo in Exchange Online. Per impostazione predefinita, questo ruolo viene assegnato ai gruppi di ruoli Gestione conformità e Gestione organizzazione nella pagina Autorizzazioni nell'interfaccia di amministrazione di Exchange. Gli amministratori globali in Microsoft 365 sono membri di questo gruppo per impostazione predefinita.
 
 1. Per attivare la ricerca nel log di controllo, passare all'interfaccia di amministrazione in e quindi scegliere Sicurezza <https://admin.microsoft.com> in Centri di **amministrazione** nel riquadro di spostamento sinistro. 
 2. Nella pagina **Sicurezza di Microsoft 365** scegliere  Altre risorse **e** quindi Apri nella scheda Centro sicurezza & conformità di **Office 365.**
 
-    ![Scegliere Apri nelle auto di sicurezza & conformità.](../media/gotosecandcomp.png)
+    ![Choose Open on the security & compliance car.](../media/gotosecandcomp.png)
 3. Nella pagina sicurezza e conformità scegliere Ricerca e **quindi** Ricerca log **di controllo.**
 4. Nella parte superiore della pagina **Ricerca log di** controllo scegliere Attiva **controllo.**
 
@@ -269,7 +269,7 @@ Dopo aver attivato la funzionalità, è possibile cercare file, cartelle e molte
 
 ## <a name="tune-up-anonymous-sharing-settings-for-sharepoint-and-onedrive-files-and-folders"></a>Ottimizzare le impostazioni di condivisione anonima per i file e le cartelle di SharePoint e OneDrive
 
-(modificare la scadenza predefinita dei collegamenti anonimi su 14 giorni, modificare il tipo di condivisione predefinito in "Persone specifiche") Per modificare le impostazioni di condivisione per OneDrive e SharePoint:
+(modificare la scadenza predefinita del collegamento anonimo su 14 giorni, modificare il tipo di condivisione predefinito in "Persone specifiche") Per modificare le impostazioni di condivisione per OneDrive e SharePoint:
 
 1. Passare all'interfaccia di amministrazione in <https://admin.microsoft.com> e quindi scegliere **SharePoint** in **Interfaccia di amministrazione** nel riquadro di spostamento sinistro.
 2. Nell'interfaccia di amministrazione di SharePoint passare a **Condivisione** \> **criteri.**
@@ -279,7 +279,7 @@ Dopo aver attivato la funzionalità, è possibile cercare file, cartelle e molte
 
 ## <a name="activity-alerts"></a>Avvisi attività
 
-È possibile utilizzare gli avvisi attività per tenere traccia delle attività di amministratori e utenti e rilevare gli incidenti di prevenzione della perdita di dati e malware nell'organizzazione. L'abbonamento include un set di criteri predefiniti, ma puoi anche crearne di personalizzati. Per ulteriori informazioni, vedere criteri [di avviso.](https://docs.microsoft.com/microsoft-365/compliance/alert-policies) Ad esempio, se si archivia un file importante in SharePoint che non si desidera condividere esternamente, è possibile creare una notifica che avvisa l'utente se qualcuno lo condivide.
+È possibile utilizzare gli avvisi attività per tenere traccia delle attività di amministratori e utenti e rilevare gli incidenti di prevenzione della perdita di dati e malware nell'organizzazione. L'abbonamento include un set di criteri predefiniti, ma puoi anche crearne di personalizzati. Per ulteriori informazioni, vedere criteri [di avviso.](https://docs.microsoft.com/microsoft-365/compliance/alert-policies) Ad esempio, se si archivia un file importante in SharePoint che non si desidera condividere esternamente, è possibile creare una notifica che avvisa l'utente se un utente lo condivide.
 
 La figura seguente mostra i criteri predefiniti inclusi in Microsoft 365.
 

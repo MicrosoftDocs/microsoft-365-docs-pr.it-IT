@@ -44,9 +44,9 @@ In ogni messaggio di posta elettronica inviato dagli utenti dell'organizzazione 
 1. Nella pagina **Nuova** regola:
     1. Immettere un nome per la regola.
     1. **Nell'elenco a** discesa Applica questa regola se selezionare Applica a tutti i **messaggi.**
-    1. **Nell'elenco** a discesa Fare quanto segue verificare **che** sia visualizzato Aggiungi dichiarazione di non responsabilità.
+    1. **Nell'elenco** a discesa Fare quanto segue verificare che **sia** visualizzato Aggiungi dichiarazione di non responsabilità.
     1. Sul lato destro della pagina, selezionare Immetti testo **e** quindi immettere il testo per la firma di posta elettronica nella casella di testo Specifica dichiarazione **di** non responsabilità. È possibile migliorare l'aspetto della firma formattazione del testo con HTML.
-    1. Se vuoi che un'immagine venga visualizzata nella firma, dovrai usare un URL disponibile pubblicamente per tale immagine. Passare all'immagine sul Web, fare clic con il pulsante destro del mouse su di essa e selezionare **Copia indirizzo immagine.** Incollare l'indirizzo nella **casella di testo** Specifica dichiarazione di non responsabilità. Selezionare **OK,** quindi scorrere verso il basso.
+    1. Se vuoi che un'immagine venga visualizzata nella firma, dovrai usare un URL disponibile pubblicamente per tale immagine. Passare all'immagine sul Web, fare clic con il pulsante destro del mouse e scegliere **Copia indirizzo immagine.** Incollare l'indirizzo nella **casella di testo** Specifica dichiarazione di non responsabilità. Selezionare **OK,** quindi scorrere verso il basso.
     1. Per assicurarsi che la firma funzioni con i messaggi di posta elettronica crittografati, aggiungere un'opzione di fallback. A destra della pagina scegliere **Seleziona** uno, **Scegliere** Ritorno a capo e quindi **OK.**
     1. Scorrere verso il basso e lasciare la modalità impostata **su Applica** e quindi selezionare **Salva.**
 1. Verrà visualizzato un messaggio di avviso. Selezionare **Sì** per applicare la regola a tutti i messaggi futuri.

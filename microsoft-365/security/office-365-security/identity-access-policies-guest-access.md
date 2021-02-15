@@ -29,7 +29,7 @@ ms.locfileid: "49932611"
 
 In questo articolo viene illustrata la modifica dei criteri di accesso alle identità e ai dispositivi consigliati per consentire l'accesso a utenti guest e esterni che dispongono di un account Business-to-Business (B2B) di Azure Active Directory (Azure AD). Queste indicazioni si basano sui [criteri comuni di identità e accesso ai dispositivi.](identity-access-policies.md)
 
-Questi suggerimenti sono progettati per essere applicati al livello **di protezione** di base. Tuttavia, è anche possibile modificare i suggerimenti in base alle esigenze specifiche per la **protezione sensibile** **e altamente regolamentata.**
+Questi suggerimenti sono progettati per essere applicati al livello **di** protezione di base. Tuttavia, è anche possibile modificare i suggerimenti in base alle esigenze specifiche per la **protezione sensibile** **e altamente regolamentata.**
 
 Fornire un percorso per l'autenticazione degli account B2B con il tenant di Azure AD non consente a questi account di accedere all'intero ambiente. Gli utenti B2B e i relativi account hanno accesso a servizi e risorse, come i file, condivisi con loro dai criteri di accesso condizionale.
 
@@ -43,7 +43,7 @@ Questo diagramma mostra quali criteri aggiungere o aggiornare tra i criteri comu
 
 Nella tabella seguente sono elencati i criteri che è necessario creare e aggiornare. I criteri comuni sono associati alle istruzioni di configurazione [nell'articolo Criteri comuni di](identity-access-policies.md) identità e accesso ai dispositivi.
 
-|Livello di protezione|Criteri|Ulteriori informazioni|
+|Livello di protezione|Criteri|Altre informazioni|
 |---|---|---|
 |**Protezione di base**|[Richiedere l'autenticazione a più fattori sempre per utenti guest e esterni](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Creare questo nuovo criterio e configurare: <ul><li>Per **Assegnazioni > utenti** e gruppi >, scegliere Seleziona utenti e gruppi e quindi selezionare Tutti gli utenti guest ed **esterni.** </li><li>Per **Le assegnazioni > condizioni >** accesso , lasciare deselezionate tutte le opzioni per applicare sempre l'autenticazione a più fattori (MFA).</li></ul>|
 ||[Richiedere l'autenticazione a più fattori quando il rischio di accesso *è medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Modificare questo criterio per escludere utenti guest ed esterni.|
@@ -51,9 +51,9 @@ Nella tabella seguente sono elencati i criteri che è necessario creare e aggior
 
 Per includere o escludere utenti guest e utenti esterni nei criteri di accesso condizionale, per Assegnazioni **> Utenti** e gruppi > Includi o Escludi , selezionare Tutti gli utenti guest ed **esterni.** 
 
-![acquisizione schermo di controlli per escludere utenti guest ed esterni](../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
+![acquisizione schermo di controlli per l'esclusione di utenti guest ed esterni](../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 ### <a name="guests-and-external-user-access-with-microsoft-teams"></a>Accesso degli utenti guest e esterni con Microsoft Teams
 

@@ -32,11 +32,11 @@ ms.locfileid: "49928259"
 # <a name="cancel-google-workspace-subscription"></a>Annullare l'abbonamento a Google Workspace
 
 1. Accedi a [Google Admin e](https://admin.google.com/) passa a **Fatturazione.**
-1. **Nell'elenco Sottoscrizioni** scegliere l'abbonamento a G Suite, **Annulla abbonamento** e quindi **scegliere Continua.**
+1. **Nell'elenco Abbonamenti** scegliere l'abbonamento a G Suite, **Annulla abbonamento** e quindi **scegliere Continua.**
 
     > [!IMPORTANT]
     > l'abbonamento verrà annullato immediatamente e non sarà possibile annullare l'azione.
 
     :::image type="content" source="../../media/cancelgoogleworspace.png" alt-text="Screenshot della pagina Fatturazione dell'amministratore di Google.":::
 
-Si noti che se il provider host DNS non è google, è possibile che la registrazione del dominio non sia presente nell'elenco delle sottoscrizioni.
+Tenere presente che la registrazione del dominio potrebbe non essere visualizzata nell'elenco delle sottoscrizioni se il provider host DNS non è google.

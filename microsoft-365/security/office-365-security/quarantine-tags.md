@@ -33,9 +33,9 @@ I tag di quarantena in Exchange Online Protection (EOP) consentono agli amminist
 
 EOP ha tradizionalmente consentito o impedito determinati livelli di interattività per i messaggi in [quarantena](find-and-release-quarantined-messages-as-a-user.md) e nelle notifiche di posta indesiderata [dell'utente finale.](use-spam-notifications-to-release-and-report-quarantined-messages.md) Ad esempio, gli utenti finali possono visualizzare e rilasciare i messaggi messi in quarantena dal filtro di protezione da posta indesiderata come posta indesiderata o in blocco, ma non possono visualizzare o rilasciare i messaggi messi in quarantena come phishing ad alta probabilità.
 
-Per [le](#step-2-assign-a-quarantine-tag-to-supported-features)funzionalità di protezione supportate, i tag di quarantena specificano le attività consentite agli utenti nei messaggi di notifica di posta indesiderata dell'utente finale e nei messaggi in quarantena (messaggi in cui l'utente è un destinatario). I tag di quarantena predefiniti vengono assegnati automaticamente per applicare le funzionalità cronologiche per gli utenti finali ai messaggi in quarantena. In caso contrario, è possibile creare e assegnare tag di quarantena personalizzati per consentire o impedire agli utenti finali di eseguire azioni specifiche sui messaggi in quarantena.
+Per [le funzionalità](#step-2-assign-a-quarantine-tag-to-supported-features)di protezione supportate, i tag di quarantena specificano le attività consentite agli utenti nei messaggi di notifica di posta indesiderata dell'utente finale e nei messaggi in quarantena (messaggi in cui l'utente è un destinatario). I tag di quarantena predefiniti vengono assegnati automaticamente per applicare le funzionalità cronologiche per gli utenti finali ai messaggi in quarantena. In caso contrario, è possibile creare e assegnare tag di quarantena personalizzati per consentire o impedire agli utenti finali di eseguire azioni specifiche sui messaggi in quarantena.
 
-Le singole autorizzazioni vengono combinate nei gruppi di autorizzazioni preimpostati seguenti:
+Le singole autorizzazioni vengono combinate nei seguenti gruppi di autorizzazioni preimpostati:
 
 - Nessun diritto di accesso
 - Accesso limitato
@@ -57,9 +57,9 @@ Se non si desiderano le autorizzazioni predefinite nei gruppi di autorizzazioni 
 
 I tag di quarantena vengono creati e assegnati nel Centro sicurezza & conformità o in PowerShell (PowerShell di Exchange Online per le organizzazioni di Microsoft 365 con cassette postali di Exchange Online; PowerShell EOP autonomo nelle organizzazioni EOP senza cassette postali di Exchange Online).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla pagina **dei tag di** quarantena, aprire <https://protection.office.com/quarantineTags> .
+- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **Tag quarantena,** aprire <https://protection.office.com/quarantineTags> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
@@ -87,7 +87,7 @@ I tag di quarantena vengono creati e assegnati nel Centro sicurezza & conformit�
        - **Consentire ai destinatari di rilasciare un messaggio dalla quarantena**
        - **Consentire ai destinatari di richiedere il rilascio di un messaggio dalla quarantena**
 
-     - **Selezionare altre azioni che i destinatari possono eseguire sui messaggi in** quarantena: selezionare alcuni, tutti o nessuno dei seguenti valori:
+     - **Selezionare altre azioni che i destinatari possono eseguire sui** messaggi in quarantena: selezionare alcuni, tutti o nessuno dei seguenti valori:
        - **Elimina**
        - **Anteprima**
        - **Consenti mittente**
@@ -143,7 +143,7 @@ L'ordine e i valori necessari per ogni singola autorizzazione nei gruppi di auto
 
 <sup>\*</sup> Attualmente, questo valore è sempre 0. Per PermissionToViewHeader, il valore 0  non nasconde il pulsante Visualizza intestazione messaggio nei dettagli del messaggio in quarantena (il pulsante è sempre disponibile).
 
-<sup>\*\*</sup> Non impostare entrambi questi valori su 1. Impostare uno su 1 e l'altro su 0 oppure impostare entrambi su 0.
+<sup>\*\*</sup> Non impostare entrambi i valori su 1. Impostare uno su 1 e l'altro su 0 oppure impostare entrambi su 0.
 
 In questo esempio viene creato un nuovo nome di tag di quarantena NoAccess che assegna le autorizzazioni di accesso No come descritto nella tabella precedente.
 
@@ -175,7 +175,7 @@ Utilizzare la sintassi seguente:
 $<VariableName> = New-QuarantinePermissions [-PermissionToAllowSender <$true | $False>] [-PermissionToBlockSender <$true | $False>] [-PermissionToDelete <$true | $False>] [-PermissionToPreview <$true | $False>] [-PermissionToRelease <$true | $False>] [-PermissionToRequestRelease <$true | $False>]
 ```
 
-Il valore predefinito per tutti i parametri inutilizzati è , pertanto è necessario utilizzare solo i parametri in cui si `$false` desidera impostare il valore su `$true` .
+Il valore predefinito per tutti i parametri inutilizzati è , pertanto è necessario utilizzare solo i parametri in cui `$false` si desidera impostare il valore su `$true` .
 
 Negli esempi seguenti viene illustrato come creare oggetti autorizzazione corrispondenti ai gruppi di autorizzazioni preimpostati:
 
@@ -233,7 +233,7 @@ Nelle _funzionalità_ di protezione supportate che consentono di mettere in quar
 |Criteri anti-phishing: <ul><li>[Protezione spoof intelligence](set-up-anti-phishing-policies.md#spoof-settings) (_AuthenticationFailAction_)</li><li>[Protezione della rappresentazione:](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)<sup>\*</sup> <ul><li>**Se la posta elettronica viene inviata da un utente rappresentato** (_TargetedUserProtectionAction_)</li><li>**Se la posta elettronica viene inviata da un dominio rappresentato** (_TargetedDomainProtectionAction_)</li><li>**Intelligence per le cassette postali** \> **Se la posta elettronica viene inviata da un utente rappresentato** (_MailboxIntelligenceProtectionAction_)</li></ul></li></ul></ul>|No|n/d|
 |[Criteri antimalware:](configure-anti-malware-policies.md)tutti i messaggi rilevati vengono sempre messi in quarantena.|No|n/d|
 |[Allegati sicuri per SharePoint, OneDrive e Microsoft Teams](atp-for-spo-odb-and-teams.md)|No|n/d|
-|[Regole del flusso di](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) posta (note anche come regole di trasporto) con l'azione: **Recapitare** il messaggio alla quarantena _ospitata_( Quarantena ).|No|n/d|
+|[Regole del flusso di](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) posta (note anche come regole di trasporto) con l'azione: **Recapitare** il messaggio alla quarantena ospitata (_Quarantena_).|No|n/d|
 |
 
 <sup>\*</sup> Le impostazioni di protezione della rappresentazione sono disponibili solo nei criteri anti-phishing in Microsoft Defender per Office 365.
@@ -246,19 +246,19 @@ Le istruzioni complete per la creazione e la modifica dei criteri di protezione 
 
 1. Nel Centro sicurezza & conformità passare a Criteri di **gestione** delle \>  \> minacce e quindi selezionare **Protezione da posta indesiderata.** In caso contrario, aprire <https://protection.office.com/antispam> .
 
-2. Trovare e selezionare un criterio di protezione da posta indesiderata esistente da modificare o creare un nuovo criterio di protezione da posta indesiderata.
+2. Trovare e selezionare un criterio di protezione da posta indesiderata esistente da modificare oppure creare un nuovo criterio di protezione da posta indesiderata.
 
 3. Nel riquadro a comparsa dei dettagli del criterio espandere la sezione Azioni di posta **indesiderata e in blocco.**
 
-4. Se è stato  selezionato Il messaggio in quarantena per l'azione di un verdetto filtro posta indesiderata disponibile, la casella Applica **tag** del criterio di quarantena è disponibile per selezionare il tag di quarantena per tale verdetto.
+4. Se è stato  selezionato Il messaggio in quarantena per l'azione di un verdetto di filtro della posta indesiderata disponibile, la casella Applica **tag** del criterio di quarantena è disponibile per selezionare il tag di quarantena per tale verdetto.
 
    **Nota:** quando si crea un nuovo criterio, viene utilizzato un valore di tag di quarantena vuoto per un verdetto di filtro della posta indesiderata che indica il tag di quarantena predefinito per tale verdetto. Quando successivamente si modifica il criterio, i valori vuoti vengono sostituiti dai nomi dei tag di quarantena predefiniti effettivi, come descritto nella tabella precedente.
 
    ![Quarantena delle selezioni di tag in un criterio di protezione da posta indesiderata](../../media/quarantine-tags-in-anti-spam-policies.png)
 
-5. Al termine, scegliere **Salva**.
+5. Al termine, fare clic su **Salva**.
 
-#### <a name="assign-quarantine-tags-in-anti-spam-policies-in-powershell"></a>Assegnare tag di quarantena nei criteri di protezione da posta indesiderata in PowerShell
+#### <a name="assign-quarantine-tags-in-anti-spam-policies-in-powershell"></a>Assegnare tag di quarantena nei criteri di protezione dalla posta indesiderata in PowerShell
 
 Se si preferisce utilizzare PowerShell per assegnare tag di quarantena nei criteri di protezione dalla posta indesiderata, connettersi a PowerShell di Exchange Online o PowerShell di Exchange Online Protection e utilizzare la sintassi seguente:
 
@@ -268,7 +268,7 @@ Se si preferisce utilizzare PowerShell per assegnare tag di quarantena nei crite
 
 **Note**:
 
-- Il valore predefinito per il parametro _HighConfidencePhishAction_ è Quarantena, quindi non è necessario impostare l'azione di quarantena per i rilevamenti di phishing ad alta probabilità nei nuovi criteri di protezione dalla posta indesiderata. Per tutti gli altri verdetti del filtro posta indesiderata nei criteri di protezione da posta indesiderata nuovi o esistenti, il tag di quarantena è efficace solo se il valore dell'azione è Quarantena. Per visualizzare i valori delle azioni nei criteri di protezione da posta indesiderata esistenti, eseguire il comando seguente:
+- Il valore predefinito per il parametro _HighConfidencePhishAction_ è Quarantine, quindi non è necessario impostare l'azione di quarantena per i rilevamenti di phishing ad alta probabilità nei nuovi criteri di protezione dalla posta indesiderata. Per tutti gli altri verdetti del filtro posta indesiderata nei criteri di protezione da posta indesiderata nuovi o esistenti, il tag di quarantena è efficace solo se il valore dell'azione è Quarantena. Per visualizzare i valori delle azioni nei criteri di protezione da posta indesiderata esistenti, eseguire il comando seguente:
 
   ```powershell
   Get-HostedContentFilterPolicy | Format-Table Name,*SpamAction,HighConfidencePhishAction
@@ -285,7 +285,7 @@ Se si preferisce utilizzare PowerShell per assegnare tag di quarantena nei crite
 In questo esempio viene creato un nuovo criterio di filtro della posta indesiderata denominato Research Department con le impostazioni seguenti:
 
 - L'azione per tutti i verdetti del filtro posta indesiderata è impostata su Quarantena.
-- Il tag di quarantena personalizzato denominato NoAccess che assegna le autorizzazioni di  accesso **No** sostituisce tutti i tag di quarantena predefiniti che non assegnano già autorizzazioni di accesso no per impostazione predefinita.
+- Il tag di quarantena personalizzato denominato NoAccess che assegna autorizzazioni di accesso  **No** sostituisce tutti i tag di quarantena predefiniti che non assegnano già autorizzazioni di accesso no per impostazione predefinita.
 
 ```powershell
 New-HostedContentFilterPolicy -Name Research Department -SpamAction Quarantine -SpamQuarantineTag NoAccess -HighConfidenceSpamAction Quarantine -HighConfidenceSpamQuarantineTag NoAction -PhishSpamAction Quarantine -PhishQuarantineTag NoAction -BulkSpamAction Quarantine -BulkQuarantineTag NoAccess
@@ -301,7 +301,7 @@ Set-HostedContentFilterPolicy -Identity "Human Resources" -SpamAction Quarantine
 
 Per informazioni dettagliate su sintassi e parametri, vedere [Set-HostedContentFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/set-hostedcontentfilterpolicy).
 
-## <a name="configure-global-quarantine-notification-settings-in-the-security--compliance-center"></a>Configurare le impostazioni di notifica della quarantena globale nel Centro sicurezza & conformità
+## <a name="configure-global-quarantine-notification-settings-in-the-security--compliance-center"></a>Configurare le impostazioni di notifica di quarantena globali nel Centro sicurezza & conformità
 
 Le impostazioni globali per i tag di quarantena consentono di personalizzare le notifiche di posta indesiderata dell'utente finale inviate ai destinatari dei messaggi messi in quarantena. Per ulteriori informazioni su queste notifiche, vedere Notifiche di posta indesiderata [dell'utente finale.](use-spam-notifications-to-release-and-report-quarantined-messages.md)
 
@@ -309,9 +309,9 @@ Le impostazioni globali per i tag di quarantena consentono di personalizzare le 
 
 2. Nella pagina **Tag quarantena** selezionare **Impostazioni globali.**
 
-3. Nel riquadro **a comparsa delle impostazioni** di notifica della quarantena che si apre, configurare alcune o tutte le impostazioni seguenti:
+3. Nel riquadro **a comparsa delle impostazioni di** notifica della quarantena che si apre, configurare alcune o tutte le impostazioni seguenti:
 
-   - **Usa il logo aziendale:** selezionare questa opzione per sostituire il logo Microsoft predefinito utilizzato nella parte superiore delle notifiche di posta indesiderata dell'utente finale. Prima di eseguire questa operazione, è necessario seguire le istruzioni in Personalizzare il tema [di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/customize-your-organization-theme) per l'organizzazione per caricare il logo personalizzato.
+   - **Usa il logo aziendale:** selezionare questa opzione per sostituire il logo Microsoft predefinito utilizzato nella parte superiore delle notifiche di posta indesiderata dell'utente finale. Prima di eseguire questa operazione, è necessario seguire le istruzioni in Personalizzare il tema di [Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/customize-your-organization-theme) per l'organizzazione per caricare il logo personalizzato.
 
      Lo screenshot seguente mostra un logo personalizzato in una notifica di posta indesiderata dell'utente finale:
 
@@ -331,7 +331,7 @@ Le impostazioni globali per i tag di quarantena consentono di personalizzare le 
 
      ![Nome visualizzato del mittente personalizzato in una notifica di posta indesiderata dell'utente finale](../../media/quarantine-tags-esn-customization-display-name.png)
 
-   - **Dichiarazione di non responsabilità**: aggiungere una dichiarazione di non responsabilità personalizzata alla fine delle notifiche di posta indesiderata dell'utente finale. Il testo localizzato, **una dichiarazione** di non responsabilità dell'organizzazione: viene sempre incluso per primo, seguito dal testo specificato.
+   - **Dichiarazione di non responsabilità**: aggiungere una dichiarazione di non responsabilità personalizzata alla fine delle notifiche di posta indesiderata dell'utente finale. Il testo localizzato, **Una dichiarazione** di non responsabilità dell'organizzazione: viene sempre incluso per primo, seguito dal testo specificato.
 
      Per ogni lingua aggiunta, selezionare la lingua nella casella della seconda lingua (non fare clic sulla X) e immettere il valore di testo desiderato nella casella Dichiarazione di **non** responsabilità.
 
@@ -413,7 +413,7 @@ Le singole autorizzazioni incluse nei gruppi di autorizzazioni preimpostati sono
 
 Se il tag di quarantena assegna le autorizzazioni **Nessun accesso** (nessuna autorizzazione), gli utenti ottengono comunque alcune funzionalità di base:
 
-- **Dettagli messaggio in quarantena:** il **pulsante Visualizza intestazione** messaggio è sempre disponibile.
+- **Dettagli messaggio in quarantena:** il **pulsante Visualizza intestazione messaggio** è sempre disponibile.
 
   ![Pulsanti disponibili nei dettagli del messaggio in quarantena se il tag di quarantena concede all'utente le autorizzazioni di accesso no](../../media/quarantine-tags-quarantined-message-details-no-access.png)
 
@@ -442,10 +442,10 @@ Se il tag di quarantena assegna le **autorizzazioni accesso** limitato, gli uten
 
 #### <a name="full-access"></a>Accesso completo
 
-Se il tag di quarantena assegna le **autorizzazioni di accesso** completo (tutte le autorizzazioni disponibili), gli utenti ottengono le funzionalità seguenti:
+Se il tag di quarantena assegna le **autorizzazioni accesso** completo (tutte le autorizzazioni disponibili), gli utenti ottengono le funzionalità seguenti:
 
 - **Dettagli messaggio in quarantena**: Sono disponibili i pulsanti seguenti:
-  - **Rilascia messaggio**
+  - **Messaggio di rilascio**
   - **Visualizzazione delle intestazioni del messaggio**
   - **Messaggio di anteprima**
   - **Blocca mittente**
@@ -471,7 +471,7 @@ Se il tag di quarantena assegna le **autorizzazioni di accesso** completo (tutte
 **L'autorizzazione Consenti** mittente (_PermissionToAllowSender_) controlla l'accesso al pulsante che consente agli utenti di aggiungere comodamente il mittente del messaggio in quarantena all'elenco Mittenti attendibili.
 
 - **Dettagli messaggio in quarantena:**
-  - **Autorizzazione Consenti mittente** abilitata: il pulsante Consenti **mittente** è disponibile.
+  - **Autorizzazione Consenti mittente** abilitata: il **pulsante Consenti mittente** è disponibile.
   - **Autorizzazione Consenti mittente** disabilitata: **il pulsante** Consenti mittente non è disponibile.
 
 - **Notifiche di posta indesiderata dell'utente finale**: Nessun effetto.
@@ -484,10 +484,10 @@ Per ulteriori informazioni sull'elenco Mittenti attendibili, vedere [Impedire](h
 
 - **Dettagli messaggio in quarantena:**
   - **Autorizzazione Blocca mittente** abilitata: il pulsante Blocca **mittente** è disponibile.
-  - **Autorizzazione Blocca mittente** disabilitata: **il pulsante** Blocca mittente non è disponibile.
+  - **Autorizzazione Blocca mittente** disabilitata: il **pulsante** Blocca mittente non è disponibile.
 
 - **Notifiche di posta indesiderata dell'utente finale:**
-  - **Autorizzazione Blocca mittente** disabilitata: **il pulsante** Blocca mittente non è disponibile.
+  - **Autorizzazione Blocca mittente** disabilitata: il **pulsante** Blocca mittente non è disponibile.
   - **Autorizzazione Blocca mittente** abilitata: il pulsante Blocca **mittente** è disponibile.
 
 Per ulteriori informazioni sull'elenco Mittenti bloccati, vedere [Block messages from someone](https://support.microsoft.com/office/274ae301-5db2-4aad-be21-25413cede077#__toc304379667) e Use Exchange Online [PowerShell to configure the safelist collection on a mailbox.](configure-junk-email-settings-on-exo-mailboxes.md#use-exchange-online-powershell-to-configure-the-safelist-collection-on-a-mailbox)
@@ -497,7 +497,7 @@ Per ulteriori informazioni sull'elenco Mittenti bloccati, vedere [Block messages
 **L'autorizzazione** Di eliminazione (_PermissionToDelete_) controlla la possibilità per gli utenti di eliminare dalla quarantena i propri messaggi (messaggi in cui l'utente è un destinatario).
 
 - **Dettagli messaggio in quarantena:**
-  - **Autorizzazione** di eliminazione abilitata: **il pulsante** Rimuovi dalla quarantena è disponibile.
+  - **Autorizzazione** di eliminazione abilitata: **il pulsante Rimuovi dalla** quarantena è disponibile.
   - **Autorizzazione** di eliminazione disabilitata: **il pulsante** Rimuovi dalla quarantena non è disponibile.
 
 - **Notifiche di posta indesiderata dell'utente finale**: Nessun effetto.
@@ -518,7 +518,7 @@ Per ulteriori informazioni sull'elenco Mittenti bloccati, vedere [Block messages
 
 - **Dettagli messaggio in quarantena:**
   - Autorizzazione abilitata: il **pulsante Rilascia** messaggio è disponibile.
-  - Autorizzazione disabilitata: **il pulsante Rilascia** messaggio non è disponibile.
+  - Autorizzazione disabilitata: il **pulsante Rilascia** messaggio non è disponibile.
 
 - **Notifiche di posta indesiderata dell'utente finale:**
   - Autorizzazione abilitata: il **pulsante** Rilascia è disponibile.
@@ -529,7 +529,7 @@ Per ulteriori informazioni sull'elenco Mittenti bloccati, vedere [Block messages
 **L'autorizzazione** Consenti ai destinatari di richiedere il rilascio di un messaggio dalla quarantena  (_PermissionToRequestRelease_) controlla la capacità degli utenti di richiedere il rilascio dei messaggi in quarantena. Il messaggio viene rilasciato solo dopo che un amministratore ha approvato la richiesta.
 
 - **Dettagli messaggio in quarantena:**
-  - Autorizzazione abilitata: **il pulsante Richiedi** rilascio è disponibile.
+  - Autorizzazione abilitata: il **pulsante Richiedi** rilascio è disponibile.
   - Autorizzazione disabilitata: **il pulsante Richiedi** rilascio non è disponibile.
 
 - **Notifiche di posta indesiderata dell'utente** finale: **il pulsante** Rilascia non è disponibile.

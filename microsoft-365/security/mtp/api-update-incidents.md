@@ -40,7 +40,7 @@ ms.locfileid: "49929071"
 
 ## <a name="api-description"></a>Descrizione API
 
-Aggiorna le proprietà dell'evento imprevisto esistente. Le proprietà aggiornabili sono: ```status``` ```determination``` , e ```classification``` ```assignedTo``` ```tags``` .
+Aggiorna le proprietà dell'evento imprevisto esistente. Le proprietà aggiornabili sono: ```status``` , , , e ```determination``` ```classification``` ```assignedTo``` ```tags``` .
 
 ### <a name="quotas-resource-allocation-and-other-constraints"></a>Quote, allocazione delle risorse e altri vincoli
 

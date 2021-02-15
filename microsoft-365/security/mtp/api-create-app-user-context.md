@@ -77,7 +77,7 @@ In questo articolo viene illustrato come:
    - **Tipo di applicazione:** Client pubblico
    - **URI di reindirizzamento:**https://portal.azure.com
 
-4. Nella pagina dell'applicazione seleziona **AUTORIZZAZIONI API** Aggiungi API di autorizzazione che l'organizzazione usa >, digita  >    >   Microsoft **Threat Protection** e seleziona Microsoft **Threat Protection.** L'app può ora accedere a Microsoft 365 Defender.
+4. Nella pagina dell'applicazione seleziona **AUTORIZZAZIONI API** Per aggiungere le API di autorizzazione che l'organizzazione usa >, digita  >    >   Microsoft **Threat Protection** e seleziona Microsoft **Threat Protection.** L'app può ora accedere a Microsoft 365 Defender.
 
    > [!TIP]
    > *Microsoft Threat Protection* è un nome precedente per Microsoft 365 Defender e non verrà visualizzato nell'elenco originale. È necessario iniziare a scrivere il nome nella casella di testo per visualizzarlo.
@@ -93,7 +93,7 @@ In questo articolo viene illustrato come:
     >
     > Ad esempio, per [eseguire query avanzate,](api-advanced-hunting.md)selezionare l'autorizzazione "Esegui query avanzate". per [isolare un dispositivo,](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/isolate-machine)seleziona l'autorizzazione "Isola computer".
 
-5. Selezionare **Concedi il consenso dell'amministratore.** Ogni volta che aggiungi un'autorizzazione, devi selezionare Concedi il **consenso dell'amministratore** per l'applicazione.
+5. Selezionare **Concedi il consenso dell'amministratore.** Ogni volta che aggiungi un'autorizzazione, devi selezionare Concedi il consenso **dell'amministratore** perché sia effettiva.
 
    ![Immagine della concessione delle autorizzazioni](../../media/grant-consent-delegated.PNG)
 

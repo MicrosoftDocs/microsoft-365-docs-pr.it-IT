@@ -50,7 +50,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `CloudSid` | stringa | Identificatore di sicurezza cloud dell'account |
 | `GivenName` | stringa | Nome specificato o nome dell'utente dell'account |
 | `Surname` | stringa | Cognome, nome della famiglia o cognome dell'utente dell'account |
-| `AccountDisplayName` | stringa | Nome dell'utente dell'account visualizzato nella rubrica. In genere una combinazione di un nome o di un dato nome, un'iniziazione intermedia e un cognome o un cognome. |
+| `AccountDisplayName` | stringa | Nome dell'utente dell'account visualizzato nella rubrica. In genere, una combinazione di un nome o di un nome specificato, un'iniziazione intermedia e un cognome o un cognome. |
 | `Department` | stringa | Nome del reparto a cui appartiene l'utente dell'account |
 | `JobTitle` | stringa | Posizione dell'utente dell'account |
 | `AccountName` | stringa | Nome utente dell'account |

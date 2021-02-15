@@ -38,13 +38,13 @@ ms.locfileid: "49930955"
 > [!IMPORTANT]
 > Alcune informazioni riguardano prodotti non rilasciati in precedenza che potrebbero essere sostanzialmente modificati prima del rilascio sul mercato. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-## <a name="official-terms"></a>Termini ufficiali
+## <a name="official-terms"></a>Condizioni ufficiali
 
 Le API di Microsoft 365 Defender sono disciplinate dalla licenza e dalle condizioni per [l'utilizzo](https://docs.microsoft.com/legal/microsoft-apis/terms-of-use)delle API Microsoft.
 
 ## <a name="legal-notices"></a>Note legali
 
-Microsoft e tutti i collaboratori ti concedono una licenza per la documentazione Microsoft e altri contenuti in questo [repository,](https://github.com/MicrosoftDocs/microsoft-365-docs)in base alla Licenza pubblica internazionale Creative Commons Attribution 4.0. Per ulteriori informazioni, vedere il file [LICENSE.](https://github.com/MicrosoftDocs/microsoft-365-docs/blob/public/LICENSE)
+Microsoft e tutti i collaboratori ti concedono una licenza per la documentazione Microsoft e altri contenuti in questo [repository,](https://github.com/MicrosoftDocs/microsoft-365-docs)ai sensi della Licenza pubblica internazionale Creative Commons Attribution 4.0. Per ulteriori informazioni, vedere il file [LICENSE.](https://github.com/MicrosoftDocs/microsoft-365-docs/blob/public/LICENSE)
 
 Microsoft, Windows, Microsoft Azure e/o altri prodotti e servizi Microsoft a cui si fa riferimento nella documentazione possono essere marchi o marchi registrati di Microsoft negli Stati Uniti e/o in altri paesi.
 

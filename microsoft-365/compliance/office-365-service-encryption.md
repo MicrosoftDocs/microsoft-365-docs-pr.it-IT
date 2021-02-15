@@ -53,6 +53,6 @@ Per informazioni su come configurare Customer Key per Microsoft 365 per Exchange
 
 - [Gestire Customer Key](customer-key-manage.md)
 
-- [Roll o rotate a customer key or an availability key](customer-key-availability-key-roll.md)
+- [Implementare o ruotare una chiave cliente o una chiave di disponibilità](customer-key-availability-key-roll.md)
 
 - [Informazioni sulla chiave di disponibilità](customer-key-availability-key-understand.md)

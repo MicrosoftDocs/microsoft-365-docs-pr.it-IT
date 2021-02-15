@@ -37,7 +37,7 @@ ms.locfileid: "49933031"
 - Microsoft 365 Defender
 
 
-Questa guida consente di eseguire un progetto pilota fornendo puntatori per garantire un piano ben strutturato, guidando l'utente attraverso l'uso della funzionalità di simulazione degli attacchi e infine concludendo il progetto pilota con le principali attività da eseguire per riflettere e documentare i risultati.
+Questa guida consente di eseguire un progetto pilota fornendo puntatori per assicurarsi di disporre di un piano ben strutturato, guidando l'utente attraverso l'uso della funzionalità di simulazione degli attacchi e infine concludendo il progetto pilota con le principali attività da eseguire per riflettere e documentare i risultati.
 
 ![Fasi dell'esecuzione di un progetto pilota di Microsoft 365 Defender](../../media/pilotphases.png)
 
@@ -71,12 +71,12 @@ La sequenza temporale di esempio seguente varia in base alla disponibilità dell
 
 ### <a name="pilot-playbook-phases"></a>Fasi del playbook pilota 
 
-Esistono quattro fasi nell'esecuzione di un progetto pilota di Microsoft 365 Defender:
+L'esecuzione di un progetto pilota di Microsoft 365 Defender è in quattro fasi:
 
 |Fase | Descrizione | 
 |:-------|:-----|
 | [Pianificazione](mtp-pilot-plan.md)<br> ~ 1 giorno| Informazioni su cosa è necessario considerare prima di eseguire il progetto pilota di Microsoft 365 Defender: <br><br>- Ambito <br> - Casi d'uso <br>- Requisiti <br>- Piano di test <br> - Criteri di successo <br> - Scorecard 
-| [Preparazione](mtp-evaluation.md) <br>~2 giorni|  Accedere al Centro sicurezza Microsoft 365 per configurare l'ambiente pilota di Microsoft 365 Defender. Verrà indicato come:<br><br>- Identificare le parti interessate e richiedere la disconnessione per il progetto pilota <br> - Considerazioni sull'ambiente <br>- Access <br>- Configurazione di Azure Active Directory <br> - Ordine di configurazione <br> - Iscriversi alla versione di valutazione di Microsoft 365 E5 <br> - Configurare il dominio <br>- Assegnare le licenze di Microsoft 365 E5 <br> - Completare la configurazione guidata nel portale|
+| [Preparazione](mtp-evaluation.md) <br>~2 giorni|  Accedere al Centro sicurezza Microsoft 365 per configurare l'ambiente pilota di Microsoft 365 Defender. L'utente verrà guidato a:<br><br>- Identificare le parti interessate e richiedere la disconnessione per il progetto pilota <br> - Considerazioni sull'ambiente <br>- Access <br>- Configurazione di Azure Active Directory <br> - Ordine di configurazione <br> - Iscriversi alla versione di valutazione di Microsoft 365 E5 <br> - Configurare il dominio <br>- Assegnare le licenze di Microsoft 365 E5 <br> - Completare la configurazione guidata nel portale|
 | [Simulazione degli attacchi](mtp-pilot-simulate.md) <br>~2 giorni| Per simulare un attacco, verrà indicato come:<br><br>- Verificare i requisiti dell'ambiente di testing <br>- Eseguire la simulazione <br>- Analizzare un evento imprevisto <br>- Risolvere l'evento imprevisto 
 | [Chiusura e riepilogo](mtp-pilot-close.md) <br>~ 1 giorno| Una volta raggiunta la fine del processo, si verrà guidati a:<br><br>- Passare attraverso l'output finale<br>- Presentare l'output alle parti interessate <br>- Inviare commenti e suggerimenti <br>- Eseguire i passaggi successivi 
 

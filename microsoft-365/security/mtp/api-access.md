@@ -58,7 +58,7 @@ Usa questo contesto per le app eseguite senza un utente connesso, ad esempio ser
 1. Creare un'applicazione Web di Azure Active Directory.
 2. Assegnare le autorizzazioni desiderate all'applicazione.
 3. Creare una chiave per l'applicazione.
-4. Ottenere un token di sicurezza usando l'applicazione e la relativa chiave.
+4. Ottieni un token di sicurezza usando l'applicazione e la relativa chiave.
 5. Usare il token per accedere all'API di Microsoft 365 Defender.
 
 Per altre informazioni, vedere **[Creare un'app per accedere a Microsoft 365 Defender senza un utente.](api-create-app-web.md)**

@@ -56,7 +56,7 @@ Gli utenti dovranno richiedere alcuni minuti per configurare i dispositivi per l
   
 Per configurare i dispositivi utente:
 
-1. Ogni utente [configura i propri dispositivi mobili.](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json)
+1. Ogni utente [configura i dispositivi mobili.](../business/set-up-mobile-devices.md?toc=%2Fmicrosoft-365%2Fcampaigns%2Ftoc.json)
 2. Per i dispositivi non gestiti, gli utenti configurano [i propri PC e Mac.](m365-campaigns-protect-pcs-macs.md)
 Per il personale chiave, è consigliabile usare [i dispositivi gestiti](../business/set-up-windows-devices.md?toc=/microsoft-365/campaigns/toc.json) per una protezione ancora più avanzata. Per tutti i dispositivi, è necessario configurare l'autenticazione a [più fattori.](m365-campaigns-multifactor-authenication.md)
 3. Tutti gli utenti devono imparare a proteggere se stessi e la campagna imparando a [utilizzare phishing e altri attacchi.](m365-campaigns-phishing-and-attacks.md) Questa [infografica](m365-campaigns-protect-campaign-infographic.md) può anche aiutare gli utenti a comprendere come proteggere la campagna dalle minacce online.

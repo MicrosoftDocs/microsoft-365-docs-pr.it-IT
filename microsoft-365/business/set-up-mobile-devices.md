@@ -25,7 +25,7 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: d868561b-d340-4c04-a973-e2575d7f09bc
-description: Installare Office in un telefono iPhone o Android e i file di lavoro nelle app di Office saranno protetti da Microsoft 365 per le aziende.
+description: Installare Office in un iPhone o un telefono Android e i file di lavoro nelle app di Office saranno protetti da Microsoft 365 per le aziende.
 ms.openlocfilehash: ef18fcce851b8fa1573fd5134bd25fb7d4a3d8f9
 ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
 ms.translationtype: MT
@@ -35,7 +35,7 @@ ms.locfileid: "49928745"
 ---
 # <a name="set-up-mobile-devices-for-microsoft-365-for-business-users"></a>Configurare i dispositivi mobili per gli utenti di Microsoft 365 per le aziende
 
-Seguire le istruzioni nelle schede per installare Office su un iPhone o un telefono Android. Dopo aver seguito questi passaggi, i file di lavoro creati nelle app di Office saranno protetti da Microsoft 365 per le aziende.
+Seguire le istruzioni nelle schede per installare Office su un iPhone o un telefono Android. Dopo aver seguito questa procedura, i file di lavoro creati nelle app di Office verranno protetti da Microsoft 365 per le aziende.
 
 L'esempio riguarda Outlook, ma si applica anche ad altre app di Office da installare.
   
@@ -81,7 +81,7 @@ Guardare un video sull'installazione di Outlook e Office nei dispositivi Android
 
 Se il video è stato utile, consultare la [serie dei corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816).
 
-Per iniziare la configurazione sul telefono Android, vai al Play Store.
+Per iniziare la configurazione sul tuo telefono Android, vai al Play Store.
   
 ![On the Android home screen, tap Play Store](../media/93df88e7-c778-40e1-b35e-868ca6e97f6c.png)
   

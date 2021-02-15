@@ -53,7 +53,7 @@ Gli script di Office consentono agli utenti di automatizzare le attività regist
 
     - Per consentire a tutti gli utenti dell'organizzazione di accedere e utilizzare gli script di Office, lasciare selezionato **Tutti** (impostazione predefinita).
 
-    - Per consentire solo ai membri di un gruppo specifico di accedere e utilizzare gli script di Office, selezionare Gruppo specifico **e** quindi immettere il nome o l'alias di posta elettronica del gruppo per aggiungerlo all'elenco consenti. È possibile aggiungere un solo gruppo all'elenco Consenti e deve essere uno dei tipi seguenti:
+    - Per consentire solo ai membri di un gruppo specifico di accedere e utilizzare gli script di Office, selezionare Gruppo specifico **e** quindi immettere il nome o l'alias di posta elettronica del gruppo per aggiungerlo all'elenco Consenti. È possibile aggiungere un solo gruppo all'elenco Consenti e deve essere uno dei tipi seguenti:
         - Gruppo di Microsoft 365
         - Gruppo di distribuzione
         - Gruppo di sicurezza
@@ -92,7 +92,7 @@ Gli script di Office consentono agli utenti di automatizzare le attività regist
 
     - Per ulteriori informazioni sull'utilizzo degli script di Office con Power Automate, incluso l'impatto dei criteri di prevenzione della perdita dei dati, vedere Eseguire script di [Office con Power Automate.](/office/dev/scripts/develop/power-automate-integration)
 
-8. Seleziona **Salva**.
+8. Selezionare **Salva**.
 
     L'applicazione delle modifiche alle impostazioni degli script di Office può richiedere fino a 48 ore.
 

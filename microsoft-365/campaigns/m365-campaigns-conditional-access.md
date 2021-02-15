@@ -35,7 +35,7 @@ ms.locfileid: "50044501"
 
 È possibile proteggere l'accesso ai dati con l'autenticazione a più fattori e i criteri di accesso condizionale. Questi elementi aggiungono una sicurezza aggiuntiva sostanziale. Microsoft fornisce un set di criteri di accesso condizionale di base consigliati per tutti i clienti. I criteri di base sono un insieme di criteri predefiniti che consentono di proteggere le organizzazioni da molti attacchi comuni. Questi attacchi comuni possono includere password spray, replay e phishing.
 
-Questi criteri richiedono ad amministratori e utenti di immettere una seconda forma di autenticazione (denominata autenticazione a più fattori o MFA) in determinate condizioni. Ad esempio, se un utente dell'organizzazione tenta di accedere a Microsoft 365 da un paese diverso o da un dispositivo sconosciuto, l'accesso potrebbe essere considerato rischioso. L'utente deve fornire una forma aggiuntiva di autenticazione (ad esempio un'impronta digitale o un codice) per dimostrare la propria identità.
+Questi criteri richiedono ad amministratori e utenti di immettere una seconda forma di autenticazione (denominata autenticazione a più fattori o MFA) in determinate condizioni. Ad esempio, se un utente dell'organizzazione tenta di accedere a Microsoft 365 da un paese diverso o da un dispositivo sconosciuto, l'accesso potrebbe essere considerato rischioso. L'utente deve fornire una forma aggiuntiva di autenticazione ,ad esempio un'impronta digitale o un codice, per dimostrare la propria identità.
 
 Attualmente, i criteri di base includono i criteri seguenti:
 
@@ -43,8 +43,8 @@ Attualmente, i criteri di base includono i criteri seguenti:
   - **Richiedi autenticazione a più** fattori per gli amministratori: richiede l'autenticazione a più fattori per i ruoli di amministratore con privilegi più elevati, incluso l'amministratore globale.
   - **Protezione dell'utente finale:** richiede l'autenticazione a più fattori per gli utenti solo quando un accesso è rischioso. 
 - Configurare nel portale di Azure Active Directory:
-  - **Bloccare l'autenticazione legacy:** le app client meno recenti e alcune nuove app non usano protocolli di autenticazione più recenti e più sicuri. Queste app precedenti possono ignorare i criteri di accesso condizionale e ottenere l'accesso non autorizzato all'ambiente. Questo criterio blocca l'accesso dai client che non supportano l'accesso condizionale. 
-  - **Richiedi L'autenticazione a più** fattori per la gestione dei servizi: richiede l'autenticazione a più fattori per l'accesso agli strumenti di gestione, incluso il portale di Azure (in cui è possibile configurare i criteri di base).
+  - **Bloccare l'autenticazione legacy:** le app client meno recenti e alcune nuove app non usano protocolli di autenticazione più recenti e più sicuri. Queste app meno recenti possono ignorare i criteri di accesso condizionale e ottenere l'accesso non autorizzato all'ambiente. Questo criterio blocca l'accesso dai client che non supportano l'accesso condizionale. 
+  - **Richiedi L'autenticazione a più** fattori per la gestione dei servizi : richiede l'autenticazione a più fattori per l'accesso agli strumenti di gestione, incluso il portale di Azure (in cui è possibile configurare i criteri di base).
 
 È consigliabile abilitare tutti questi criteri di base. Dopo aver abilitato questi criteri, agli amministratori e agli utenti verrà richiesto di registrarsi per l'autenticazione a più fattori di Azure AD.
 
@@ -56,13 +56,13 @@ Per richiedere a tutti gli utenti di accedere con un secondo formato di ID:
 
 1. Accedere all'interfaccia di amministrazione e <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> scegliere **Installazione.**
 
-2. On the Setup page, choose **View** in the **Make sign-in more secure** card.
+2. Nella pagina Installazione scegliere **Visualizza** nella scheda Rendi più sicuro **l'accesso.**
 
-    ![Rendere l'accesso più sicuro.](../media/setupmfa.png)
+    ![Rendere più sicura la scheda di accesso.](../media/setupmfa.png)
 3. Nella pagina Rendi più sicuro l'accesso scegliere **Introduzione.**
 
 4. Nel riquadro Rafforzare la sicurezza di accesso selezionare  le caselle di controllo accanto a Richiedi autenticazione a più fattori per gli amministratori e Richiedi agli utenti di registrarsi per l'autenticazione a più fattori e bloccare l'accesso se vengono rilevati **rischi.**
-    Assicurati di escludere l'account [amministratore](m365-campaigns-protect-admin-accounts.md#create-an-emergency-admin-account) di emergenza o "break-glass" dal requisito MFA nella **casella Trova** utenti.
+    Assicurati di escludere [l'account](m365-campaigns-protect-admin-accounts.md#create-an-emergency-admin-account) amministratore di emergenza o "break-glass" dal requisito MFA nella **casella Trova** utenti.
 
     ![Pagina Rafforzare la sicurezza del componente aggiuntivo.](../media/requiremfa.png)
 

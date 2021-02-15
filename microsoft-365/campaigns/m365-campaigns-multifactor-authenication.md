@@ -41,4 +41,4 @@ Per altre [informazioni, vedere Configurare l'autenticazione a più fattori in M
 
 ## <a name="use-the-outlook-app-in-your-devices"></a>Usare l'app Outlook nei dispositivi
 
-Dopo che l'amministratore ha richiesto di usare l'autenticazione a più fattori e aver configurato un'app di autenticazione come seconda forma di autenticazione, è consigliabile installare e usare solo l'app Outlook per accedere alla posta elettronica di Microsoft 365. Per [informazioni su come](../business/set-up-mobile-devices.md) installare le app di Office, incluso Outlook, nel telefono, vedere Configurare i dispositivi mobili.
+Dopo che l'amministratore ha richiesto di usare l'autenticazione a più fattori e aver configurato un'app di autenticazione come seconda forma di autenticazione, è consigliabile installare e usare solo l'app Outlook per accedere alla posta elettronica di Microsoft 365. Per [informazioni su come installare](../business/set-up-mobile-devices.md) le app di Office, incluso Outlook, nel telefono, vedere Configurare i dispositivi mobili.

@@ -33,10 +33,10 @@ ms.locfileid: "50044477"
 ---
 # <a name="protect-yourself-against-phishing-and-other-attacks"></a>Proteggersi da phishing e altri attacchi
 
-Microsoft 365 include molte protezioni da proteggere dagli attacchi, ma esistono alcune operazioni che è possibile eseguire manualmente per limitare e ridurre al minimo il rischio di attacchi online.
+Microsoft 365 include numerose protezioni da proteggere dagli attacchi, ma esistono alcune operazioni che è possibile eseguire manualmente per limitare e ridurre al minimo il rischio di attacchi online.
 
 - **Posta indesiderata o posta indesiderata** Esistono molti motivi per cui è possibile ricevere posta indesiderata e non tutti i messaggi di posta indesiderata sono uguali. Tuttavia, è possibile ridurre ciò che si ottiene e quindi ridurre i rischi di attacchi, filtrando la posta indesiderata.
-- **Phishing** Un tentativo di phishing è un messaggio di posta elettronica che sembra legittimo, ma è un tentativo di ottenere informazioni personali o rubare i tuoi denaro.
+- **Phishing** Un tentativo di phishing è un messaggio di posta elettronica che sembra legittimo, ma è un tentativo di ottenere le informazioni personali o rubare i tuoi denaro.
 - **Spoofing** I truffatori possono anche usare una tecnica denominata spoofing per far sembrare che tu abbia ricevuto un messaggio di posta elettronica da te stesso. 
 - **Il** malware è un software dannoso che può essere installato nel computer, in genere installato dopo aver fatto clic su un collegamento o aperto un documento da un messaggio di posta elettronica. Esistono vari tipi di malware (ad esempio, ransomware, quando il computer viene rilevato), ma non si vuole avere nessuno di essi. 
 
@@ -48,14 +48,14 @@ Seguire questi [10 suggerimenti su come ridurre la posta indesiderata.](https://
 
 ### <a name="report-it"></a>Segnalalo!
 
-Segnalare eventuali tentativi di phishing o altri messaggi di posta elettronica di phishing ricevuti. Selezionare il messaggio e scegliere **Segnala messaggio** sulla barra multifunzione.
-Ecco altre informazioni sulla segnalazione [di messaggi di posta elettronica di posta indesiderata e phishing.](https://support.office.com/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
+Segnalare eventuali tentativi di phishing o altri messaggi di posta elettronica di phishing ricevuti. Selezionare il messaggio e scegliere Segnala **messaggio** sulla barra multifunzione.
+Ecco altre informazioni sulla segnalazione [di messaggi di posta indesiderata e phishing.](https://support.office.com/article/Use-the-Report-Message-add-in-b5caa9f1-cdf3-4443-af8c-ff724ea719d2)
 
 ### <a name="avoid-phishing"></a>Evitare il phishing
 
 - Non rispondere mai a un messaggio di posta elettronica che richiede di inviare informazioni personali o sull'account.
 - Se si riceve un messaggio di posta elettronica che sembra sospetto o che richiede questo tipo di informazioni, non fare mai clic sui collegamenti che si suppone indirizzino a un sito Web aziendale.
-- Non aprire mai alcun file allegato a un messaggio di posta elettronica dall'aspetto sospetto.
+- Non aprire mai alcun file allegato a un messaggio di posta elettronica sospetto.
 - Se il messaggio di posta elettronica sembra essere inviato da un'azienda, contattare il servizio clienti dell'azienda tramite telefono o Web browser per verificare se il messaggio di posta elettronica è legittimo.
 - Cercare sul Web la riga dell'oggetto del messaggio di posta elettronica seguito dalla parola bufala per vedere se qualcun altro ha segnalato questa frode.
 

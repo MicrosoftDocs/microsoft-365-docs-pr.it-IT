@@ -42,7 +42,7 @@ ms.locfileid: "49932071"
 
 ## <a name="api-description"></a>Descrizione API
 
-L'API degli eventi imprevisti dell'elenco consente di ordinare gli eventi imprevisti per creare una risposta informata alla cybersecurity. Espone una raccolta di eventi imprevisti che sono stati contrassegnati nella rete, entro l'intervallo di tempo specificato nei criteri di conservazione dell'ambiente. Gli eventi imprevisti più recenti vengono visualizzati all'inizio dell'elenco. Ogni evento imprevisto contiene una matrice di avvisi correlati e le relative entità.
+L'API degli eventi imprevisti dell'elenco consente di ordinare gli eventi imprevisti per creare una risposta informata alla cybersecurity. Espone una raccolta di eventi imprevisti che sono stati contrassegnati nella rete, nell'intervallo di tempo specificato nei criteri di conservazione dell'ambiente. Gli eventi imprevisti più recenti vengono visualizzati all'inizio dell'elenco. Ogni evento imprevisto contiene una matrice di avvisi correlati e le relative entità.
 
 L'API supporta gli operatori **OData** seguenti:
 
@@ -53,11 +53,11 @@ L'API supporta gli operatori **OData** seguenti:
 ## <a name="limitations"></a>Limitazioni
 
 1. La dimensione massima della pagina **è 100 eventi imprevisti.**
-2. La velocità massima delle richieste **è 50 chiamate al minuto** e **1500 chiamate all'ora.**
+2. La velocità massima delle richieste **è di 50 chiamate al minuto** e **1500 chiamate all'ora.**
 
 ## <a name="permissions"></a>Autorizzazioni
 
-Per chiamare questa API, è necessaria una delle autorizzazioni seguenti. Per altre informazioni, inclusa la scelta delle autorizzazioni, vedere Accedere alle API di [Microsoft 365 Defender](api-access.md)
+Per chiamare questa API, è necessaria una delle autorizzazioni seguenti. Per altre informazioni, incluso come scegliere le autorizzazioni, vedere Accedere alle API di [Microsoft 365 Defender](api-access.md)
 
 Tipo di autorizzazione | Autorizzazione | Nome visualizzato autorizzazioni
 -|-|-
@@ -91,11 +91,11 @@ Nessuna.
 
 ## <a name="response"></a>Risposta
 
-Se ha esito positivo, questo metodo restituisce e un elenco di eventi `200 OK` [imprevisti](api-incident.md) nel corpo della risposta.
+Se ha esito positivo, questo metodo restituisce `200 OK` e un elenco di eventi [imprevisti](api-incident.md) nel corpo della risposta.
 
 ## <a name="schema-mapping"></a>Mapping dello schema
 
-### <a name="incident-metadata"></a>Metadati degli eventi imprevisti
+### <a name="incident-metadata"></a>Metadati dell'evento imprevisto
 
 Nome del campo | Descrizione | Valore di esempio
 -|-|-
@@ -103,7 +103,7 @@ incidentId | Identificatore univoco per rappresentare l'evento imprevisto | 9245
 redirectIncidentId | Viene popolato solo nel caso in cui un evento imprevisto venga raggruppato insieme a un altro evento imprevisto, come parte della logica di elaborazione degli eventi imprevisti. | 924569
 incidentName | Valore stringa disponibile per ogni evento imprevisto. | Attività ransomware
 createdTime | Ora di creazione dell'evento imprevisto. | 2020-09-06T14:46:57.0733333Z
-lastUpdateTime | Ora dell'ultimo aggiornamento dell'evento nel back-end.<br /><br /> Questo campo può essere utilizzato quando si imposta il parametro della richiesta per l'intervallo di tempo in cui vengono recuperati gli eventi imprevisti. | 2020-09-06T14:46:57.29Z
+lastUpdateTime | Ora dell'ultimo aggiornamento dell'evento imprevisto nel back-end.<br /><br /> Questo campo può essere utilizzato quando si imposta il parametro della richiesta per l'intervallo di tempo in cui vengono recuperati gli eventi imprevisti. | 2020-09-06T14:46:57.29Z
 assignedTo | Proprietario dell'evento oppure *null se* non è assegnato alcun proprietario. | secop2@contoso.com
 classificazione | Specifica l'evento imprevisto. I valori della proprietà *sono: Unknown,* *FalsePositive,* *TruePositive* | Unknown
 determinazione | Specifica la determinazione dell'incidente. I valori della proprietà sono: *NotAvailable,* *Apt,* *Malware,* *SecurityPersonnel,* *SecurityTesting,* *UnwantedSoftware,* *Other* | NotAvailable
@@ -142,7 +142,7 @@ dispositivi | Tutti i dispositivi in cui sono stati inviati avvisi relativi all'
 
 Nome del campo | Descrizione | Valore di esempio
 -|-|-
-DeviceId | ID dispositivo designato in Microsoft Defender ATP. | 24c222b0b60fe148ece49ac83910cc6a7ef491
+DeviceId | ID dispositivo designato in Microsoft Defender ATP. | 24c222b0b60fe148eeece49ac83910cc6a7ef491
 aadDeviceId |  ID dispositivo designato in [Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) Disponibile solo per i dispositivi aggiunti a un dominio. | null
 deviceDnsName | Nome di dominio completo per il dispositivo. | user5cx.middleeast.corp.contoso.com
 osPlatform | Piattaforma del sistema operativo in esecuzione nel dispositivo.| WindowsServer2016
@@ -150,7 +150,7 @@ osBuild | Versione build per il sistema operativo in esecuzione nel dispositivo.
 rbacGroupName | Gruppo [di controllo di accesso](https://docs.microsoft.com/azure/role-based-access-control/overview) basato sui ruoli (RBAC) associato al dispositivo. | WDATP-Ring0
 firstSeen | Ora della prima visualizzazione del dispositivo. | 2020-02-06T14:16:01.9330135Z
 healthStatus | Stato di integrità del dispositivo. | Attivazione
-riskScore | Punteggio di rischio per il dispositivo. | Alta
+riskScore | Punteggio di rischio per il dispositivo. | Fortemente
 entità | Tutte le entità che sono state identificate come parte o correlate a un determinato avviso. | \[\] (vedi i dettagli sui campi entità di seguito)
 
 ### <a name="entity-format"></a>Formato entità

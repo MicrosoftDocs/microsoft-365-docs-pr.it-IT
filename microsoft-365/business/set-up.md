@@ -83,7 +83,7 @@ A tutti gli utenti aggiunti nella procedura guidata viene assegnata automaticame
 
 ![Screenshot della pagina Aggiungi nuovi utenti della procedura guidata](../media/addnewuserspage.png)
 
-1. Se l'abbonamento a Microsoft 365 Business Premium include utenti esistenti (ad esempio, se è stato usato Azure AD Connect), è possibile scegliere di assegnare loro le licenze. Procedere aggiungendo le licenze anche per questi utenti.
+1. Se l'abbonamento a Microsoft 365 Business Premium include utenti esistenti (ad esempio, se è stato usato Azure AD Connect), è possibile scegliere di assegnare le licenze a questi utenti. Procedere aggiungendo le licenze anche per questi utenti.
 
 2. Una volta aggiunti gli utenti, sarà disponibile un’opzione per condividere le credenziali con i nuovi utenti aggiunti. È possibile scegliere se stamparle, inviarle tramite posta elettronica o scaricarle.
 
@@ -116,7 +116,7 @@ I criteri impostati nella procedura guidata vengono applicati automaticamente a 
 
 3. Nella pagina **Proteggi i dati in Office** per dispositivi mobili lasciare selezionata la gestione delle app per dispositivi mobili, espandere le impostazioni ed esaminarle e quindi selezionare Crea criteri di gestione delle app per dispositivi **mobili.**
 
-    ![Screenshot of Protect data in Office for mobile page.](../media/protectdatainmobile.png)
+    ![Screenshot della pagina Proteggi dati in Office per dispositivi mobili.](../media/protectdatainmobile.png)
 
 
 ## <a name="secure-windows-10-pcs"></a>Proteggere i PC con Windows 10
@@ -125,7 +125,7 @@ Sulla barra di spostamento sinistra seleziona **Configurazione** e quindi, in Ac
 
 ## <a name="deploy-office-365-client-apps"></a>Distribuire le app client di Office 365
 
-Se si è scelto di installare automaticamente le app di Office durante l'installazione, le app verranno installate nei dispositivi Windows 10 dopo che gli utenti hanno eseguito l'accesso ad Azure AD dai propri dispositivi Windows, usando le credenziali di lavoro.
+Se si è scelto di installare automaticamente le app di Office durante l'installazione, le app verranno installate nei dispositivi Windows 10 dopo che gli utenti hanno effettuato l'accesso ad Azure AD dai propri dispositivi Windows, usando le credenziali di lavoro.
 
 Per installare Office su dispositivi mobili iOS o Android, vedere Configurare i dispositivi mobili per gli utenti di [Microsoft 365 Business Premium.](set-up-mobile-devices.md)
 

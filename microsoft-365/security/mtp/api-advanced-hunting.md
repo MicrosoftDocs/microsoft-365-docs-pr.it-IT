@@ -1,7 +1,7 @@
 ---
-title: API di caccia avanzata Microsoft 365 Defender
-description: Informazioni su come eseguire query di caccia avanzate utilizzando l'API di caccia avanzata di Microsoft 365 Defender
-keywords: Advanced Hunting, APIs, API, MTP, M365 Defender, Microsoft 365 Defender
+title: API di ricerca avanzata di Microsoft 365 Defender
+description: Informazioni su come eseguire query di ricerca avanzata con l'API di ricerca avanzata di Microsoft 365 Defender
+keywords: Ricerca avanzata, API, api, MTP, M365 Defender, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -27,7 +27,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/26/2021
 ms.locfileid: "49988117"
 ---
-# <a name="microsoft-365-defender-advanced-hunting-api"></a>API di caccia avanzata Microsoft 365 Defender
+# <a name="microsoft-365-defender-advanced-hunting-api"></a>API di ricerca avanzata di Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -36,39 +36,39 @@ ms.locfileid: "49988117"
 - Microsoft Threat Protection
 
 > [!IMPORTANT]
-> Alcune informazioni si riferiscono al prodotto prerilasciato che può essere modificato in modo sostanziale prima che venga rilasciato commercialmente. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Alcune informazioni riguardano prodotti non rilasciati in precedenza che potrebbero essere sostanzialmente modificati prima del rilascio sul mercato. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-[Advanced Hunting](advanced-hunting-overview.md) è uno strumento di ricerca di minacce che utilizza [query appositamente costruite](advanced-hunting-query-language.md) per esaminare gli ultimi 30 giorni di dati degli eventi in Microsoft 365 Defender. È possibile utilizzare le query di ricerca avanzate per ispezionare attività inusuali, individuare possibili minacce e persino rispondere agli attacchi. L'API di ricerca avanzata consente di programatically i dati degli eventi di query.
+[La ricerca](advanced-hunting-overview.md) avanzata è uno [](advanced-hunting-query-language.md) strumento di ricerca delle minacce che usa query appositamente costruite per esaminare i dati degli eventi degli ultimi 30 giorni in Microsoft 365 Defender. È possibile utilizzare query di ricerca avanzate per esaminare attività insolite, rilevare possibili minacce e persino rispondere agli attacchi. L'API di ricerca avanzata consente di eseguire query a livello di codice sui dati degli eventi.
 
 ## <a name="quotas-and-resource-allocation"></a>Quote e allocazione delle risorse
 
-Le seguenti condizioni si riferiscono a tutte le query.
+Le condizioni seguenti sono correlate a tutte le query.
 
-1. Le query esplorano e restituiscono dati degli ultimi 30 giorni.
+1. Le query esplorano e restituiscono i dati degli ultimi 30 giorni.
 2. I risultati possono restituire fino a 100.000 righe.
-3. È possibile effettuare fino a 15 chiamate al minuto per tenant.
-4. Si dispone di 10 minuti di tempo di esecuzione per ora per tenant.
-5. Si dispone di quattro ore totali di tempo di esecuzione al giorno per tenant.
-6. Se si esegue una singola richiesta per più di 10 minuti, il timeout e la restituzione di un errore.
-7. Un `429` codice di risposta HTTP indica che è stata raggiunta una quota, in base al numero di richieste inviate o al tempo di esecuzione assegnato. Leggere il corpo della risposta per comprendere il limite raggiunto. 
+3. È possibile effettuare fino a 15 chiamate al minuto per ogni tenant.
+4. Hai 10 minuti di tempo di esecuzione all'ora per ogni tenant.
+5. Hai quattro ore totali di tempo di esecuzione al giorno per tenant.
+6. Se una singola richiesta viene eseguita per più di 10 minuti, si verifica il timeout e viene restituito un errore.
+7. Un codice di risposta HTTP indica che è stata raggiunta una quota, in base al numero di richieste inviate o al tempo di `429` esecuzione assegnato. Leggere il corpo della risposta per comprendere il limite raggiunto. 
 
 > [!NOTE]
-> Tutte le quote sopra elencate (ad esempio 15 chiamate al minuto) sono per dimensione tenant. Queste quote sono minime.
+> Tutte le quote elencate sopra (ad esempio 15 chiamate al min) sono per dimensione del tenant. Queste quote sono minime.
 
 ## <a name="permissions"></a>Autorizzazioni
 
-È necessaria una delle autorizzazioni seguenti per chiamare l'API di caccia avanzata. Per ulteriori informazioni, tra cui la scelta delle autorizzazioni, vedere [Access the Microsoft 365 Defender Protection Apis](api-access.md)
+Una delle autorizzazioni seguenti è necessaria per chiamare l'API di ricerca avanzata. Per altre informazioni, inclusa la scelta delle autorizzazioni, vedere Accedere alle API di [Microsoft 365 Defender Protection](api-access.md)
 
-Tipo di autorizzazione | Autorizzazione | Nome visualizzato per le autorizzazioni
+Tipo di autorizzazione | Autorizzazione | Nome visualizzato autorizzazioni
 -|-|-
-Applicazione | AdvancedHunting. Read. All | Eseguire query avanzate
-Delegati (account aziendale o dell'Istituto di istruzione) | AdvancedHunting. Read | Eseguire query avanzate
+Applicazione | AdvancedHunting.Read.All | Eseguire query avanzate
+Delegato (account aziendale o dell'istituto di istruzione) | AdvancedHunting.Read | Eseguire query avanzate
 
 >[!Note]
 > Quando si ottiene un token utilizzando le credenziali utente:
 >
->- L'utente deve disporre del ruolo di annuncio ' Visualizza dati '
->- L'utente deve disporre dell'accesso al dispositivo, in base alle impostazioni del gruppo di dispositivi.
+>- L'utente deve disporre del ruolo Ad "Visualizza dati"
+>- L'utente deve avere accesso al dispositivo, in base alle impostazioni del gruppo di dispositivi.
 
 ## <a name="http-request"></a>Richiesta HTTP
 
@@ -80,30 +80,30 @@ POST https://api.security.microsoft.com/api/advancedhunting/run
 
 Intestazione | Valore
 -|-
-Autorizzazione | Portatore {token} **Note: required**
-Content-Type | applicazione/JSON
+Autorizzazione | Bearer {token} **Nota: obbligatorio**
+Content-Type | application/json
 
 ## <a name="request-body"></a>Corpo della richiesta
 
-Nel corpo della richiesta fornire un oggetto JSON con i seguenti parametri:
+Nel corpo della richiesta, fornire un oggetto JSON con i parametri seguenti:
 
 Parametro | Tipo | Descrizione
 -|-|-
-Query | Testo | La query da eseguire. **Nota: obbligatoria**
+Query | Testo | Query da eseguire. **Nota: obbligatorio**
 
 ## <a name="response"></a>Risposta
 
-Se l'operazione ha esito positivo, il metodo restituirà `200 OK` un oggetto _QueryResponse_ nel corpo della risposta.
+Se ha esito positivo, questo metodo restituirà `200 OK` e un _oggetto QueryResponse_ nel corpo della risposta.
 
-L'oggetto Response contiene tre proprietà di primo livello:
+L'oggetto risposta contiene tre proprietà di primo livello:
 
-1. Stats-un dizionario delle statistiche delle prestazioni delle query.
-2. Schema: lo schema della risposta, un elenco di Name-Type coppie per ogni colonna.
-3. Results-un elenco di eventi di caccia avanzati.
+1. Statistiche - Dizionario di statistiche sulle prestazioni delle query.
+2. Schema: lo schema della risposta, un elenco di coppie Name-Type per ogni colonna.
+3. Risultati - Elenco di eventi di ricerca avanzata.
 
 ## <a name="example"></a>Esempio
 
-Nell'esempio seguente, un utente invia la query in basso e riceve un oggetto Response API contenente `Stats` , `Schema` e `Results` .
+Nell'esempio seguente, un utente invia la query seguente e riceve un oggetto risposta API contenente `Stats` `Schema` , e `Results` .
 
 ### <a name="query"></a>Query
 
@@ -182,5 +182,5 @@ Nell'esempio seguente, un utente invia la query in basso e riceve un oggetto Res
 
 - [Accedere alle API di Microsoft 365 Defender](api-access.md)
 - [Informazioni sui limiti delle API e sulle licenze](api-terms.md)
-- [Informazioni sui codici di errore](api-error-codes.md)
+- [Comprendere i codici di errore](api-error-codes.md)
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)

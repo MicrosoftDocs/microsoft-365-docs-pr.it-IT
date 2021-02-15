@@ -31,7 +31,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/29/2021
 ms.locfileid: "50044397"
 ---
-# <a name="infographic-help-protect-yourself-and-your-campaign-from-digital-threats"></a>Infografica: Proteggere se stessi e la campagna da minacce digitali
+# <a name="infographic-help-protect-yourself-and-your-campaign-from-digital-threats"></a>Infografica: Proteggere se stessi e la campagna dalle minacce digitali
 
 I collegamenti seguenti per PowerPoint e PDF possono essere scaricati e stampati in formato tabloid (noto anche come ledger, 11 x 17 o A3).
 

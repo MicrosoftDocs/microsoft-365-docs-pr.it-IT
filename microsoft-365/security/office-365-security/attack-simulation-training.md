@@ -34,12 +34,12 @@ In **Simulazioni** selezionare **+ Avvia una simulazione.**
 > [!NOTE]
 > In qualsiasi momento durante la creazione della simulazione, è possibile salvare e chiudere per continuare a configurare la simulazione in un secondo momento.
 
-## <a name="selecting-a-social-engineering-technique"></a>Selezione di una tecnica di social engineering
+## <a name="selecting-a-social-engineering-technique"></a>Selezione di una tecnica di ingegneria sociale
 
 Scegli tra 4 tecniche diverse, a cura del [framework MITRE ATT&CK®](https://attack.mitre.org/techniques/enterprise/). Sono disponibili payload diversi per tecniche diverse:
 
 - **Credential Harvest** tenta di raccogliere le credenziali portando gli utenti a un sito Web dall'aspetto noto con caselle di input per inviare un nome utente e una password.
-- **L'allegato** malware aggiunge un allegato dannoso a un messaggio. Quando l'utente apre l'allegato, viene eseguito un codice arbitrario che aiuterà l'utente malintenzionato a compromettere il dispositivo di destinazione.
+- **L'allegato** malware aggiunge un allegato dannoso a un messaggio. Quando l'utente apre l'allegato, viene eseguito codice arbitrario che consente all'autore dell'attacco di compromettere il dispositivo di destinazione.
 - **Il collegamento nell'allegato** è un tipo di soluzione ibrida di raccolta delle credenziali. Un utente malintenzionato inserisce un URL in un allegato di posta elettronica. L'URL all'interno dell'allegato segue la stessa tecnica di raccolta delle credenziali.
 - **Il collegamento al malware** eseguirà codice arbitrario da un file ospitato in un servizio di condivisione file noto. Il messaggio inviato all'utente conterrà un collegamento a questo file dannoso. Aprire il file e aiutare l'utente malintenzionato a compromettere il dispositivo di destinazione.
 
@@ -54,7 +54,7 @@ Dopo aver selezionato la tecnica e aver fatto clic su **Avanti,** assegna alla s
 
 Successivamente, dovrai selezionare un payload dal catalogo di payload preesiste.
 
-I payload hanno una serie di punti dati che ti aiutano a scegliere:
+I payload hanno una serie di punti dati per aiutarti a scegliere:
 
 - **La frequenza** di clic conta il numero di persone che hanno fatto clic su questo payload.
 - **Il tasso di compromissione** previsto prevede la percentuale di persone che verranno compromesse da questo payload in base ai dati cronologici per il payload tra i clienti di Microsoft Defender per Office 365.
@@ -75,7 +75,7 @@ Ora è il momento di selezionare il gruppo di destinatari di questa simulazione.
 Quando si sceglie di **includere solo utenti e gruppi** specifici, è possibile:
 
 - **Aggiungere utenti**, che consente di sfruttare la ricerca per il tenant, nonché funzionalità avanzate di ricerca e filtro, come la destinazione degli utenti che non sono stati presi di mira da una simulazione negli ultimi 3 mesi.
-  ![Filtro utenti nella formazione sulla simulazione degli attacchi nel Centro sicurezza Microsoft 365](../../media/attack-sim-preview-user-targeting.png)
+  ![Formazione sulla simulazione degli attacchi per il filtro utenti nel Centro sicurezza Microsoft 365](../../media/attack-sim-preview-user-targeting.png)
 - **L'importazione da CSV** consente di importare un set predefinito di utenti per questa simulazione.
 
 ## <a name="assigning-training"></a>Assegnazione di corsi di formazione

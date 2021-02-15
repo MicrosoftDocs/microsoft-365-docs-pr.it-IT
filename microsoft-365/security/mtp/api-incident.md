@@ -44,7 +44,7 @@ Un [evento](incidents-overview.md) imprevisto è una raccolta di avvisi correlat
 
 È possibile richiedere fino a 50 chiamate al minuto o 1500 chiamate all'ora. Ogni metodo dispone inoltre di quote proprie. Per ulteriori informazioni sulle quote specifiche del metodo, vedere il rispettivo articolo relativo al metodo che si desidera utilizzare.
 
-Un codice di risposta HTTP indica che è stata raggiunta una quota, in base al numero di richieste inviate o al tempo `429` di esecuzione assegnato. Il corpo della risposta includerà il tempo fino al ripristino della quota raggiunta.
+Un codice di risposta HTTP indica che è stata raggiunta una quota, in base al numero di richieste inviate o al tempo di `429` esecuzione assegnato. Il corpo della risposta includerà il tempo fino al ripristino della quota raggiunta.
 
 ## <a name="permissions"></a>Autorizzazioni
 
@@ -76,7 +76,7 @@ status | Enumerazione | Specifica lo stato corrente dell'evento imprevisto. I va
 classificazione | Enumerazione | Specifica dell'incidente. I valori possibili sono: ```Unknown``` , ```FalsePositive``` , ```TruePositive``` .
 determinazione | Enumerazione | Specifica la determinazione dell'incidente. I valori possibili sono: ```NotAvailable``` , , , , , ```Apt``` ```Malware``` ```SecurityPersonnel``` ```SecurityTesting``` ```UnwantedSoftware``` ```Other``` .
 tag | string List | Elenco di tag Evento imprevisto.
-avvisi | Elenco avvisi | Elenco di avvisi correlati. Vedi esempi nella [documentazione dell'API per gli eventi imprevisti](api-list-incidents.md) dell'elenco.
+avvisi | Elenco avvisi | Elenco di avvisi correlati. Vedi gli esempi nella [documentazione dell'API per gli eventi](api-list-incidents.md) imprevisti dell'elenco.
 
 ## <a name="related-articles"></a>Articoli correlati
 

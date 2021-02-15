@@ -35,12 +35,12 @@ ms.locfileid: "49932047"
 **Si applica a:**
 - Microsoft 365 Defender
 
-Microsoft 365 Defender opera nei data center di Microsoft Azure nell'Unione Europea, nel Regno Unito e negli Stati Uniti. I dati dei clienti raccolti dal servizio vengono archiviati in posizione (a) nella posizione geografica del tenant come identificato durante il provisioning o (b) se Microsoft 365 Defender usa un altro servizio online Microsoft per elaborare tali dati, la georilevazione come definito dalle regole di archiviazione dei dati dell'altro servizio online.
+Microsoft 365 Defender opera nei data center di Microsoft Azure nell'Unione Europea, nel Regno Unito e negli Stati Uniti. I dati dei clienti raccolti dal servizio vengono archiviati in posizione (a) nella posizione geografica del tenant come identificato durante il provisioning o (b) se Microsoft 365 Defender usa un altro servizio online Microsoft per elaborare tali dati, la georilevazione definita dalle regole di archiviazione dei dati dell'altro servizio online.
 
 I dati dei clienti in formato pseudonimo potrebbero anche essere archiviati in sistemi di archiviazione e di elaborazione centrali negli Stati Uniti.
 
 
-Per ulteriori informazioni sull'archiviazione dei dati e sulle informazioni sulla privacy dei prodotti specifici, vedere:
+Per altre informazioni sull'archiviazione dei dati e sulle informazioni sulla privacy dei prodotti specifici, vedi:
 - [Microsoft Defender per l'archiviazione e la privacy dei dati degli endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
 - [Sicurezza e privacy dei dati di Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/cas-compliance-trust)
 - [Privacy, sicurezza e trasparenza di Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/privacy-security-and-transparency#advanced-threat-protection)

@@ -24,7 +24,7 @@ ms.locfileid: "50058479"
 
 Con Customer Key, è possibile controllare le chiavi di crittografia dell'organizzazione e quindi configurare Microsoft 365 per usarle per crittografare i dati in stato di inquieto nei data center di Microsoft. In altre parole, Customer Key consente ai clienti di aggiungere un livello di crittografia che appartiene a loro, con le loro chiavi. I dati in pausa includono i dati di Exchange Online e Skype for Business archiviati nelle cassette postali e nei file archiviati in SharePoint Online e OneDrive for Business.
 
-È necessario configurare Azure prima di poter usare Customer Key per Office 365. Questo articolo descrive i passaggi da seguire per creare e configurare le risorse di Azure necessarie e quindi fornisce i passaggi per configurare Customer Key in Office 365. Dopo aver completato l'installazione di Azure, è possibile determinare quale criterio, e quindi quali chiavi, assegnare alle cassette postali e ai file nell'organizzazione. Le cassette postali e i file per i quali non si assegna un criterio utilizzeranno i criteri di crittografia controllati e gestiti da Microsoft. Per ulteriori informazioni su Customer Key o per una panoramica generale, vedere Crittografia del servizio [con Customer Key in Office 365.](customer-key-overview.md)
+È necessario configurare Azure prima di poter usare Customer Key per Office 365. In questo articolo vengono descritti i passaggi da seguire per creare e configurare le risorse di Azure necessarie, quindi vengono illustrati i passaggi per configurare Customer Key in Office 365. Dopo aver completato l'installazione di Azure, è possibile determinare quale criterio, e quindi quali chiavi, assegnare alle cassette postali e ai file nell'organizzazione. Le cassette postali e i file per i quali non si assegna un criterio utilizzeranno i criteri di crittografia controllati e gestiti da Microsoft. Per ulteriori informazioni su Customer Key o per una panoramica generale, vedere Crittografia del servizio [con Customer Key in Office 365.](customer-key-overview.md)
   
 > [!IMPORTANT]
 > È consigliabile attenersi alle procedure consigliate in questo articolo. Questi sono denominati **TIP** e **IMPORTANT.** Customer Key offre il controllo sulle chiavi di crittografia radice il cui ambito può essere grande quanto l'intera organizzazione. Ciò significa che gli errori commersi con queste chiavi possono avere un forte impatto e possono causare interruzioni del servizio o perdita irrevocabile dei dati.
@@ -33,7 +33,7 @@ Con Customer Key, è possibile controllare le chiavi di crittografia dell'organi
 
 Prima di iniziare, verificare di disporre delle licenze appropriate per l'organizzazione. Usare una sottoscrizione di Azure a pagamento e fatturata usando un Contratto Enterprise o un provider di servizi cloud. Le sottoscrizioni di Azure acquistate con i piani Pay As You Go o con una carta di credito non sono supportate per Customer Key. A partire dal 1° aprile 2020, Customer Key in Office 365 è disponibile in Office 365 E5, M365 E5, M365 E5 Compliance e M365 E5 Information Protection & Governance SKU. Office 365 Advanced Compliance SKU non è più disponibile per la distribuzione di nuove licenze. Le licenze di Office 365 Advanced Compliance esistenti continueranno a essere supportate.
 
-Per comprendere i concetti e le procedure descritti in questo articolo, consultare la documentazione [di Azure Key Vault.](https://docs.microsoft.com/azure/key-vault/) Inoltre, acquisire familiarità con i termini usati in Azure, ad esempio, [tenant di Azure AD.](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant)
+Per comprendere i concetti e le procedure descritti in questo articolo, consultare la documentazione [di Azure Key Vault.](https://docs.microsoft.com/azure/key-vault/) Inoltre, acquisire familiarità con i termini usati in Azure, ad esempio il [tenant di Azure AD.](https://docs.microsoft.com/previous-versions/azure/azure-services/jj573650(v=azure.100)#what-is-an-azure-ad-tenant)
 
 FastTrack viene usato solo per raccogliere le informazioni di configurazione del tenant e del servizio necessarie per la registrazione per Customer Key. Le offerte customer key vengono pubblicate tramite FastTrack in modo che sia comodo per l'utente e i partner inviare le informazioni necessarie con lo stesso metodo. FastTrack semplifica inoltre l'archiviazione dei dati forniti nell'offerta.
   
@@ -105,7 +105,7 @@ Non esiste un limite pratico al numero di sottoscrizioni di Azure che è possibi
   
 ### <a name="submit-a-request-to-activate-customer-key-for-office-365"></a>Inviare una richiesta per attivare customer key per Office 365
 
-Dopo aver completato i passaggi di Azure, è necessario inviare una richiesta di offerta nel portale [di Microsoft FastTrack.](https://fasttrack.microsoft.com/) Dopo aver inviato una richiesta tramite il portale Web di FastTrack, Microsoft verifica i dati di configurazione di Azure Key Vault e le informazioni di contatto fornite. Le selezioni che si effettuano nel modulo dell'offerta relative ai responsabili autorizzati dell'organizzazione sono fondamentali e necessarie per il completamento della registrazione del codice Cliente. I responsabili dell'organizzazione garantiscono l'autenticità di qualsiasi richiesta di revoca e di eliminazione di tutte le chiavi usate con un criterio di crittografia dei dati customer key. È necessario eseguire questo passaggio una volta per attivare la copertura Customer Key per Exchange Online e Skype for Business e una seconda volta per attivare Customer Key per SharePoint Online e OneDrive for Business.
+Dopo aver completato i passaggi di Azure, è necessario inviare una richiesta di offerta nel portale [di Microsoft FastTrack.](https://fasttrack.microsoft.com/) Dopo aver inviato una richiesta tramite il portale Web di FastTrack, Microsoft verifica i dati di configurazione di Azure Key Vault e le informazioni di contatto fornite. Le selezioni che si effettuano nel modulo dell'offerta relative ai responsabili autorizzati dell'organizzazione sono fondamentali e necessarie per il completamento della registrazione del codice Cliente. I responsabili dell'organizzazione garantiscono l'autenticità di qualsiasi richiesta di revoca e di eliminazione di tutte le chiavi usate con un criterio di crittografia dei dati customer key. You'll need to do this step once to activate Customer Key for Exchange Online and Skype for Business coverage and a second time to activate Customer Key for SharePoint Online and OneDrive for Business.
   
 Per inviare un'offerta per attivare customer key, completa questi passaggi:
   
@@ -127,7 +127,7 @@ Per inviare un'offerta per attivare customer key, completa questi passaggi:
 
 ### <a name="register-azure-subscriptions-to-use-a-mandatory-retention-period"></a>Registrare le sottoscrizioni di Azure per usare un periodo di conservazione obbligatorio
 
-La perdita temporanea o permanente delle chiavi di crittografia radice può essere dannosa o addirittura catastrofica per il funzionamento del servizio e può causare la perdita di dati. Per questo motivo, le risorse usate con Customer Key richiedono una protezione avanzata. Tutte le risorse di Azure usate con Customer Key offrono meccanismi di protezione oltre la configurazione predefinita. È possibile contrassegnare o registrare le sottoscrizioni di Azure per un *periodo di conservazione obbligatorio.* Un periodo di conservazione obbligatorio impedisce l'annullamento immediato e irrevocabile della sottoscrizione di Azure. I passaggi necessari per registrare le sottoscrizioni di Azure per un periodo di conservazione obbligatorio richiedono la collaborazione con il team di Microsoft 365. Questo processo può richiedere da uno a cinque giorni lavorativi. In precedenza, il periodo di conservazione obbligatorio era talvolta denominato "Non annullare".
+La perdita temporanea o permanente delle chiavi di crittografia radice può essere dannosa o persino catastrofica per il funzionamento del servizio e può causare la perdita di dati. Per questo motivo, le risorse usate con Customer Key richiedono una protezione avanzata. Tutte le risorse di Azure usate con Customer Key offrono meccanismi di protezione oltre la configurazione predefinita. È possibile contrassegnare o registrare le sottoscrizioni di Azure per un *periodo di conservazione obbligatorio.* Un periodo di conservazione obbligatorio impedisce l'annullamento immediato e irrevocabile della sottoscrizione di Azure. I passaggi necessari per registrare le sottoscrizioni di Azure per un periodo di conservazione obbligatorio richiedono la collaborazione con il team di Microsoft 365. Questo processo può richiedere da uno a cinque giorni lavorativi. In precedenza, il periodo di conservazione obbligatorio era talvolta denominato "Non annullare".
   
 Prima di contattare il team di Microsoft 365, è necessario eseguire la procedura seguente per ogni sottoscrizione di Azure utilizzata con Customer Key. Assicurarsi di aver installato il [modulo Azure PowerShell Az](https://docs.microsoft.com/powershell/azure/new-azureps-module-az) prima di iniziare.
   
@@ -166,7 +166,7 @@ Prima di contattare il team di Microsoft 365, è necessario eseguire la procedur
 
 I passaggi per creare un insieme di credenziali delle chiavi sono documentati in Introduzione a [Azure Key Vault,](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)che guida l'utente nell'installazione e nell'avvio di Azure PowerShell, nella connessione alla sottoscrizione di Azure, nella creazione di un gruppo di risorse e nella creazione di un insieme di credenziali delle chiavi in tale gruppo di risorse.
   
-Quando si crea un insieme di credenziali delle chiavi, è necessario scegliere uno SKU: Standard o Premium. Lo SKU standard consente di proteggere le chiavi dell'insieme di credenziali delle chiavi di Azure con il software ( non esiste alcuna protezione delle chiavi HSM (Hardware Security Module) e lo SKU Premium consente l'uso di HMS per la protezione delle chiavi key vault. Customer Key accetta gli insiemi di credenziali delle chiavi che usano uno degli SKU, anche se Microsoft consiglia vivamente di usare solo lo SKU Premium. Il costo delle operazioni con le chiavi di entrambi i tipi è lo stesso, quindi l'unica differenza di costo è il costo mensile per ogni chiave protetta da HSM. Per informazioni [dettagliate, vedi](https://azure.microsoft.com/pricing/details/key-vault/) i prezzi di Key Vault.
+Quando si crea un insieme di credenziali delle chiavi, è necessario scegliere uno SKU: Standard o Premium. Lo SKU standard consente di proteggere le chiavi dell'insieme di credenziali delle chiavi di Azure con il software ( non esiste alcuna protezione delle chiavi HSM (Hardware Security Module) e lo SKU Premium consente l'uso di HMS per la protezione delle chiavi key vault. Customer Key accetta gli insiemi di credenziali delle chiavi che usano uno degli SKU, anche se Microsoft consiglia vivamente di usare solo lo SKU Premium. Il costo delle operazioni con le chiavi di entrambi i tipi è lo stesso, quindi l'unica differenza di costo è il costo mensile per ogni chiave protetta da HSM. Per [informazioni dettagliate, vedi](https://azure.microsoft.com/pricing/details/key-vault/) i prezzi di Key Vault.
   
 > [!IMPORTANT]
 > Usa gli insiemi di credenziali delle chiavi SKU Premium e le chiavi protette con HSM per i dati di produzione e usa le chiavi e gli insiemi di credenziali delle chiavi SKU standard solo a scopo di test e convalida.
@@ -193,7 +193,7 @@ Dovrai definire tre set separati di autorizzazioni per ogni insieme di credenzia
 - **Amministratori dell'insieme di** credenziali chiave che eseauno la gestione quotidiana dell'insieme di credenziali delle chiavi per l'organizzazione. Queste attività includono il backup, la creazione, il ripristino, l'importazione, l'elenco e il ripristino.
 
   > [!IMPORTANT]
-  > Il set di autorizzazioni assegnate agli amministratori dell'insieme di credenziali delle chiavi non include l'autorizzazione per l'eliminazione delle chiavi. Si tratta di una pratica intenzionale e importante. L'eliminazione delle chiavi di crittografia in genere non viene eseguita, poiché in questo modo vengono eliminati definitivamente i dati. Come procedura consigliata, non concedere questa autorizzazione agli amministratori dell'insieme di credenziali chiave per impostazione predefinita. Al contrario, riservarlo ai collaboratori chiave dell'insieme di credenziali e assegnarlo a un amministratore solo a breve termine una volta compreso chiaramente le conseguenze.
+  > Il set di autorizzazioni assegnate agli amministratori dell'insieme di credenziali delle chiavi non include l'autorizzazione per l'eliminazione delle chiavi. Si tratta di una pratica intenzionale e importante. L'eliminazione delle chiavi di crittografia in genere non viene eseguita, perché in questo modo vengono eliminati definitivamente i dati. Come procedura consigliata, non concedere questa autorizzazione agli amministratori dell'insieme di credenziali chiave per impostazione predefinita. Al contrario, riservarlo ai collaboratori chiave dell'insieme di credenziali e assegnarlo a un amministratore solo a breve termine una volta compreso chiaramente le conseguenze.
   
   Per assegnare queste autorizzazioni a un utente dell'organizzazione, accedere alla sottoscrizione di Azure con Azure PowerShell. Per istruzioni, vedere [Accedere con Azure PowerShell.](https://docs.microsoft.com/powershell/azure/authenticate-azureps)
 
@@ -262,7 +262,7 @@ Per abilitare l'eliminazione recisa nei key vault, eseguire la procedura seguent
 
 ### <a name="add-a-key-to-each-key-vault-either-by-creating-or-importing-a-key"></a>Aggiungere una chiave a ogni insieme di credenziali delle chiavi creando o importando una chiave
 
-Esistono due modi per aggiungere chiavi a un insieme di credenziali delle chiavi di Azure; è possibile creare una chiave direttamente in Key Vault oppure importare una chiave. La creazione di una chiave direttamente in Key Vault è il metodo meno complicato, mentre l'importazione di una chiave offre il controllo totale sulla modalità di generazione della chiave. Utilizzare le chiavi RSA. Azure Key Vault non supporta il wrapping e l'annullamento del wrapping con chiavi curva ellittiche.
+Esistono due modi per aggiungere chiavi a un insieme di credenziali delle chiavi di Azure; è possibile creare una chiave direttamente in Key Vault oppure importare una chiave. La creazione di una chiave direttamente in Key Vault è il metodo meno complicato, mentre l'importazione di una chiave offre il controllo totale sulla modalità di generazione della chiave. Utilizzare le chiavi RSA. Azure Key Vault non supporta il wrapping e l'annullamento del wrapping con chiavi di curva ellittiche.
   
 Per creare una chiave direttamente nell'insieme di credenziali delle chiavi, eseguire il cmdlet [Add-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/add-azkeyvaultkey) nel modo seguente:
   
@@ -272,7 +272,7 @@ Add-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Destination <HSM|Sof
 
 Dove:
 
-- *il nome dell'insieme* di credenziali è il nome dell'insieme di credenziali delle chiavi in cui si desidera creare la chiave.
+- *il nome* dell'insieme di credenziali è il nome dell'insieme di credenziali delle chiavi in cui si desidera creare la chiave.
 
 - *key name* è il nome che si desidera assegnare alla nuova chiave.
 
@@ -422,9 +422,9 @@ Per creare Protezione esecuzione programmi, attenersi alla seguente procedura:
 
    - *Descrizione* criterio è una descrizione descrittiva del criterio che consente di ricordare a cosa è fatto il criterio. È possibile includere spazi nella descrizione. Ad esempio, "Chiave radice per le cassette postali negli Stati Uniti e nei relativi territori".
 
-   - *KeyVaultURI1* è l'URI per la prima chiave nel criterio. Ad esempio, <https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01>.
+   - *KeyVaultURI1* è l'URI della prima chiave nel criterio. Ad esempio, <https://contoso_EastUSvault01.vault.azure.net/keys/USA_key_01>.
 
-   - *KeyVaultURI2* è l'URI della seconda chiave nel criterio. Ad esempio, <https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02>. Separare i due URI con una virgola e uno spazio.
+   - *KeyVaultURI2* è l'URI per la seconda chiave nel criterio. Ad esempio, <https://contoso_EastUS2vault01.vault.azure.net/keys/USA_Key_02>. Separare i due URI con una virgola e uno spazio.
 
    Esempio:
   
@@ -496,7 +496,7 @@ Per creare una protezione esecuzione programmi, è necessario connettersi in rem
 
 ### <a name="validate-file-encryption"></a>Convalidare la crittografia dei file
 
- Per convalidare la crittografia dei file di SharePoint Online, OneDrive for Business e Teams, connettersi a PowerShell di [SharePoint Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)e quindi utilizzare il cmdlet Get-SPODataEncryptionPolicy per controllare lo stato del tenant. La _proprietà State_ restituisce un valore registrato **se** la crittografia Customer Key è abilitata e tutti i file in tutti i siti sono stati crittografati. Se la crittografia è ancora in corso, questo cmdlet restituisce il valore **di registrazione**.
+ Per convalidare la crittografia dei file di SharePoint Online, OneDrive for Business e Teams, connettersi a PowerShell di [SharePoint Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)e quindi utilizzare il cmdlet Get-SPODataEncryptionPolicy per controllare lo stato del tenant. La _proprietà State_ restituisce un valore registrato **se** la crittografia Customer Key è abilitata e tutti i file in tutti i siti sono stati crittografati. Se la crittografia è ancora in corso, questo cmdlet restituisce il valore di **registrazione**.
 
 ## <a name="related-articles"></a>Articoli correlati
 

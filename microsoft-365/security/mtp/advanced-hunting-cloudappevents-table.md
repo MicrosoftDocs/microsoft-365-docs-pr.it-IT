@@ -1,6 +1,6 @@
 ---
 title: Tabella CloudAppEvents nello schema di ricerca avanzata
-description: Informazioni sugli eventi dalle app e dai servizi cloud nella tabella CloudAppEvents dello schema di ricerca avanzata
+description: Informazioni sugli eventi delle app e dei servizi cloud nella tabella CloudAppEvents dello schema di ricerca avanzata
 keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, microsoft threat protection, microsoft 365, mtp, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, CloudAppEvents, Cloud App Security, MCAS
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -39,7 +39,7 @@ ms.locfileid: "49928454"
 
 Attualmente disponibile in anteprima, la tabella nello schema di ricerca avanzata contiene informazioni sulle attività in varie app e servizi cloud, in particolare `CloudAppEvents` Microsoft Teams ed Exchange Online. [](advanced-hunting-overview.md) Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
 
-Questa tabella verrà espansa per includere più attività monitorate da Microsoft Cloud App Security. In seguito, questa tabella includerà l'attività di file attualmente archiviata nella [tabella AppFileEvents.](advanced-hunting-appfileevents-table.md) Microsoft fornirà indicazioni aggiuntive man quando si spostano più dati in questa tabella.
+Questa tabella verrà espansa per includere altre attività monitorate da Microsoft Cloud App Security. In seguito, questa tabella includerà l'attività di file attualmente archiviata nella [tabella AppFileEvents.](advanced-hunting-appfileevents-table.md) Microsoft fornirà indicazioni aggiuntive man quando si spostano più dati in questa tabella.
 
 Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il riferimento sulla Ricerca avanzata](advanced-hunting-schema-tables.md).
 
@@ -50,7 +50,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `Application` | stringa | Applicazione che ha eseguito l'azione registrata |
 | `ApplicationId` | stringa | Identificatore univoco dell'applicazione |
 | `AccountObjectId` | stringa | Identificatore univoco per l'account in Azure Active Directory |
-| `AccountDisplayName` | stringa | Nome dell'utente dell'account visualizzato nella rubrica. In genere una combinazione di un nome o di un dato nome, un'iniziazione intermedia e un cognome o un cognome. |
+| `AccountDisplayName` | stringa | Nome dell'utente dell'account visualizzato nella rubrica. In genere, una combinazione di un nome o di un nome specificato, un'iniziazione intermedia e un cognome o un cognome. |
 | `IsAdminOperation` | stringa | Indica se l'attività è stata eseguita da un amministratore |
 | `DeviceType` | stringa | Tipo di dispositivo basato su scopo e funzionalità, ad esempio "Dispositivo di rete", "Workstation", "Server", "Mobile", "Console di gioco" o "Stampante" | 
 | `OSPlatform` | stringa | Piattaforma del sistema operativo in esecuzione nel dispositivo. Questa colonna indica sistemi operativi specifici, incluse le varianti all'interno della stessa famiglia, ad esempio Windows 10 e Windows 7. |

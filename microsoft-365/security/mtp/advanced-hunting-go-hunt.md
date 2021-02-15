@@ -35,9 +35,9 @@ ms.locfileid: "49929506"
 **Si applica a:**
 - Microsoft 365 Defender
 
-Con *l'azione di ricerca* in viaggio, è possibile analizzare rapidamente eventi e vari tipi di entità utilizzando potenti funzionalità di ricerca avanzata basate [su](advanced-hunting-overview.md) query. Questa azione esegue automaticamente una query di ricerca avanzata per trovare informazioni rilevanti sull'evento o sull'entità selezionata.
+Con *l'azione di ricerca* in viaggio, è possibile analizzare rapidamente eventi e vari tipi di entità utilizzando potenti funzionalità di ricerca avanzata basate [su](advanced-hunting-overview.md) query. Questa azione esegue automaticamente una query di ricerca avanzata per trovare informazioni pertinenti sull'evento o sull'entità selezionata.
 
-*L'azione di risposta* go è disponibile in varie sezioni del Centro sicurezza ogni volta che vengono visualizzati i dettagli dell'evento o dell'entità. Ad esempio, è possibile utilizzare *la risposta di andare* dalle sezioni seguenti:
+*L'azione di risposta* go è disponibile in varie sezioni del Centro sicurezza ogni volta che vengono visualizzati i dettagli dell'evento o dell'entità. Ad esempio, è possibile usare *la risposta di andare* dalle sezioni seguenti:
 
 - Nella pagina [dell'evento](investigate-incidents.md#incident-overview)imprevisto è possibile esaminare i dettagli relativi a utenti, dispositivi e molte altre entità associate a un evento imprevisto. Quando si seleziona un'entità, si ottengono informazioni aggiuntive e varie azioni che è possibile eseguire su tale entità. Nell'esempio seguente viene selezionata una cassetta postale, che mostra i dettagli della cassetta postale e l'opzione per cercare ulteriori informazioni sulla cassetta postale.
 
@@ -55,7 +55,7 @@ Con *l'azione di ricerca* in viaggio, è possibile analizzare rapidamente eventi
 Se **si seleziona Vai a ricerca** o Cerca eventi **correlati,** vengono passate query diverse, a seconda che sia stata selezionata un'entità o un evento.
 
 ## <a name="query-for-entity-information"></a>Query per informazioni sulle entità
-Quando si utilizza *la* ricerca per ricercare informazioni su un utente, un dispositivo o qualsiasi altro tipo di entità, la query controlla in tutte le tabelle dello schema rilevanti gli eventi che coinvolgono tale entità. Per mantenere gestibili i risultati, l'ambito della query è intorno allo stesso periodo di tempo della prima attività degli ultimi 30 giorni che coinvolge l'entità ed è associata all'evento imprevisto.
+Quando si utilizza *la* ricerca per cercare informazioni su un utente, un dispositivo o qualsiasi altro tipo di entità, la query controlla tutte le tabelle dello schema rilevanti per gli eventi che coinvolgono tale entità. Per mantenere gestibili i risultati, l'ambito della query è intorno allo stesso periodo di tempo della prima attività degli ultimi 30 giorni che coinvolge l'entità ed è associata all'evento imprevisto.
 
 Ecco un esempio della query di risposta go per un dispositivo:
 
@@ -71,7 +71,7 @@ and DeviceName == deviceName
 | take 100
 ```
 ### <a name="supported-entity-types"></a>Tipi di entità supportati
-È possibile usare *la risposta dopo* aver selezionato uno di questi tipi di entità:
+Puoi usare *la risposta dopo* aver selezionato uno di questi tipi di entità:
 
 - File
 - Messaggi di posta elettronica
@@ -83,7 +83,7 @@ and DeviceName == deviceName
 - URL
 
 ## <a name="query-for-event-information"></a>Query per informazioni sull'evento
-Quando si *utilizza la risposta di* risposta per eseguire una query per ottenere informazioni su un evento della sequenza temporale, la query verifica la presenza di altri eventi in tutte le tabelle di schema rilevanti nel periodo di tempo dell'evento selezionato. Ad esempio, la query seguente elenca gli eventi in varie tabelle dello schema che si sono verificati nello stesso periodo di tempo nello stesso dispositivo:
+Quando si *utilizza la ricerca per* cercare informazioni su un evento della sequenza temporale, la query verifica la presenza di altri eventi in tutte le tabelle dello schema rilevanti al momento dell'evento selezionato. Ad esempio, la query seguente elenca gli eventi in varie tabelle dello schema che si sono verificati nello stesso periodo di tempo nello stesso dispositivo:
 
 ```kusto
 // List relevant events 30 minutes before and after selected LogonAttempted event

@@ -38,7 +38,7 @@ ms.locfileid: "49928391"
 > [!IMPORTANT]
 > Alcune informazioni riguardano prodotti non rilasciati in precedenza che potrebbero essere sostanzialmente modificati prima del rilascio sul mercato. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
-I codici di errore possono essere restituiti da un'operazione su una qualsiasi delle API di Microsoft 365 Defender. Ogni risposta di errore conterrà un messaggio di errore che può aiutare a risolvere il problema. Nella colonna dei messaggi di errore nella sezione della tabella sono disponibili alcuni messaggi di esempio. Il contenuto dei messaggi effettivi varia in base ai fattori che hanno attivato la risposta. Il contenuto delle variabili è indicato nella tabella da parentesi angolari.
+I codici di errore possono essere restituiti da un'operazione su una qualsiasi delle API di Microsoft 365 Defender. Ogni risposta di errore conterrà un messaggio di errore che può aiutare a risolvere il problema. Nella colonna del messaggio di errore nella sezione della tabella sono disponibili alcuni messaggi di esempio. Il contenuto dei messaggi effettivi varia in base ai fattori che hanno attivato la risposta. Il contenuto delle variabili è indicato nella tabella da parentesi angolari.
 
 ## <a name="error-codes"></a>Codici di errore
 

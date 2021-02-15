@@ -64,8 +64,8 @@ La creazione di un ambiente lab di valutazione di Microsoft 365 Defender è in t
 |Fase | Descrizione | 
 |:-------|:-----|
 |[Fase 1: preparazione](prepare-mtpeval.md)| Informazioni su cosa è necessario considerare quando si distribuisce Microsoft 365 Defender in un ambiente di prova o pilota: <br><br>- Parti interessate e disconnessione <br> - Considerazioni sull'ambiente <br>- Access <br>- Configurazione di Azure Active Directory <br> - Ordine di configurazione
-|[Fase 2: installazione](setup-mtpeval.md)|  Eseguire i passaggi iniziali per accedere al Centro sicurezza Microsoft 365 per configurare il lab di valutazione o l'ambiente pilota di Microsoft 365 Defender. Verrà indicato come:<br><br>- Iscriversi alla versione di valutazione di Microsoft 365 E5 <br>  - Configurare il dominio<br>- Assegnare le licenze di Microsoft 365 E5<br>- Completare la configurazione guidata nel portale|
-|[Fase 3: configurare & onboard](config-mtpeval.md) | Configurare ogni pilastro di Microsoft 365 Defender e gli endpoint di onboard. Verrà indicato come:<br><br>- Configurare Microsoft Defender per Office 365<br>- Configurare Microsoft Cloud App Security<br>- Configurare Microsoft Defender per l'identità<br>- Configurare Microsoft Defender per Endpoint
+|[Fase 2: installazione](setup-mtpeval.md)|  Eseguire i passaggi iniziali per accedere al Centro sicurezza Microsoft 365 per configurare il lab di valutazione o l'ambiente pilota di Microsoft 365 Defender. L'utente verrà guidato a:<br><br>- Iscriversi alla versione di valutazione di Microsoft 365 E5 <br>  - Configurare il dominio<br>- Assegnare le licenze di Microsoft 365 E5<br>- Completare la configurazione guidata nel portale|
+|[Fase 3: configurare & onboard](config-mtpeval.md) | Configurare ogni pilastro di Microsoft 365 Defender e gli endpoint di onboard. L'utente verrà guidato a:<br><br>- Configurare Microsoft Defender per Office 365<br>- Configurare Microsoft Cloud App Security<br>- Configurare Microsoft Defender per l'identità<br>- Configurare Microsoft Defender per Endpoint
 
 
 Dopo aver completato questa guida, si avrebbero identificato i cointeressati coinvolti e le approvazioni necessarie, avere le autorizzazioni di accesso corrette, aver effettuato la registrazione per la versione di valutazione, configurato i domini e ognuno dei pilastri di Microsoft 365 Defender e gli endpoint verranno onboarded al servizio.
@@ -100,7 +100,7 @@ L'ambito di questa guida è quello delle attività seguenti:
 
 ## <a name="out-of-scope"></a>Esclusioni
 
-Gli elementi seguenti non sono disponibili nell'ambito di questa guida alla distribuzione:
+Gli elementi seguenti non sono nell'ambito di questa guida alla distribuzione:
 
 -   Configurazione di soluzioni di terze parti che potrebbero integrarsi con Microsoft 365 Defender
 -   Test di penetrazione nell'ambiente di produzione

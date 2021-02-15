@@ -1,6 +1,6 @@
 ---
 title: Ottenere una formazione avanzata sulla ricerca avanzata
-description: Formazione e guida gratuite da parte di esperti di ricerca avanzata
+description: Formazione e indicazioni gratuite da parte di esperti di ricerca avanzata
 keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, protezione dalle minacce Microsoft, Microsoft 365, mtp, m365, ricerca, query, lingua, formazione, scenari, da base a avanzata, video, istruzioni dettagliate
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -35,14 +35,14 @@ ms.locfileid: "50053836"
 **Si applica a:**
 - Microsoft 365 Defender
 
-Aumenta rapidamente la tua conoscenza della ricerca avanzata con _Tracking the adversary,_ una serie di trasmissioni webcast per i nuovi analisti della sicurezza e i cercatori di minacce esperti. La serie guida l'utente attraverso le nozioni di base fino alla creazione di query sofisticate. Inizia con il primo video sulle nozioni fondamentali o passa a video più avanzati adatti al tuo livello di esperienza.
+Aumenta rapidamente la tua conoscenza della ricerca avanzata con _Tracking the adversary,_ una serie di webcast per i nuovi analisti della sicurezza e i cercatori di minacce esperti. La serie guida l'utente attraverso le nozioni di base fino alla creazione di query sofisticate. Inizia con il primo video sulle nozioni fondamentali o passa a video più avanzati adatti al tuo livello di esperienza.
 
 
 | Titolo | Descrizione | Watch | Query | 
 |--|--|--|--|
 | Episodio 1: nozioni fondamentali su KQL | Questo episodio illustra le nozioni di base della ricerca avanzata in Microsoft 365 Defender. Informazioni sui dati di ricerca avanzati disponibili e sulla sintassi ESQL di base e sugli operatori. | [YouTube](https://youtu.be/0D9TkGjeJwM?t=351) (54:14) | [File CSL](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%201%20-%20KQL%20Fundamentals.csl) |
 | Episodio 2: partecipazioni | Continuare a conoscere i dati nella ricerca avanzata e su come unire le tabelle. Informazioni su , , e partecipazioni e comprendere le sfumature dell'aggiunta `inner` `outer` `unique` `semi` Kusto `innerunique` predefinita. | [YouTube](https://youtu.be/LMrO6K5TWOU?t=297) (53:33) | [File CSL](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%202%20-%20Joins.csl) |
-| Episodio 3: riepilogo, pivot e visualizzazione dei dati | Ora che hai appreso come filtrare, modificare e unire i dati, è il momento di riepilogare, quantificare, pivot e visualizzare. In questo episodio vengono illustrati `summarize` l'operatore e diversi calcoli, introducendo allo stesso tempo altre tabelle nello schema. Verrà inoltre descritto come trasformare i set di dati in grafici che consentono di estrarre informazioni dettagliate. | [YouTube](https://youtu.be/UKnk9U1NH6Y?t=296) (48:52) | [File CSL](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl) |
+| Episodio 3: riepilogo, pivot e visualizzazione dei dati | Ora che hai appreso come filtrare, modificare e unire i dati, è il momento di riepilogare, quantificare, pivot e visualizzare. Questo episodio illustra `summarize` l'operatore e vari calcoli, introducendo allo stesso tempo altre tabelle nello schema. Verrà inoltre descritto come trasformare i set di dati in grafici che consentono di estrarre informazioni dettagliate. | [YouTube](https://youtu.be/UKnk9U1NH6Y?t=296) (48:52) | [File CSL](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%203%20-%20Summarizing%2C%20Pivoting%2C%20and%20Joining.csl) |
 | Episodio 4: diamo una risposta. Applicazione di KQL al rilevamento degli eventi imprevisti | In questo episodio imparerai a tenere traccia di alcune attività degli utenti malintenzionati. Usiamo la nostra migliore comprensione di Kusto e la ricerca avanzata per tenere traccia di un attacco. Scopri i trucchi effettivi usati sul campo, inclusi i criteri rubrica della cybersecurity e come applicarli alla risposta agli incidenti. | [YouTube](https://youtu.be/2EUxOc_LNd8?t=291) (59:36) | [File CSL](https://github.com/microsoft/Microsoft-threat-protection-Hunting-Queries/blob/master/Webcasts/TrackingTheAdversary/Episode%204%20-%20Lets%20Hunt.csl) 
 
 

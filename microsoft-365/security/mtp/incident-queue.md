@@ -39,7 +39,7 @@ ms.locfileid: "49929295"
 
 
 
-Microsoft 365 Defender applica l'analisi di correlazione e aggrega tutti gli avvisi e le indagini correlati da prodotti diversi in un unico evento imprevisto. Microsoft 365 Defender attiva inoltre avvisi univoci sulle attività che possono essere identificate come dannose solo in base alla visibilità end-to-end che Microsoft 365 Defender ha nell'intero patrimonio e nella famiglia di prodotti. Questa visualizzazione offre all'analista delle operazioni di sicurezza una storia di attacco più ampia, che consente di comprendere meglio e gestire le minacce complesse all'interno dell'organizzazione.
+Microsoft 365 Defender applica l'analisi di correlazione e aggrega tutti gli avvisi e le indagini correlati da prodotti diversi in un unico evento imprevisto. Microsoft 365 Defender attiva inoltre avvisi univoci sulle attività che possono essere identificate come dannose solo in base alla visibilità end-to-end che Microsoft 365 Defender ha nell'intero patrimonio e nella famiglia di prodotti. Questa visualizzazione offre all'analista delle operazioni di sicurezza una storia di attacco più ampia, che consente di comprendere meglio e gestire le minacce complesse nell'organizzazione.
 
 
 La **coda degli eventi imprevisti** mostra una raccolta di eventi imprevisti contrassegnati da diversi dispositivi, utenti e cassette postali. Ti aiuta a ordinare gli eventi imprevisti in base alla loro priorità e a definire una risposta di cybersecurity mirata.
@@ -47,7 +47,7 @@ La **coda degli eventi imprevisti** mostra una raccolta di eventi imprevisti con
 
 ![Immagine della coda eventi imprevisti](../../media/incidents-queue.png) 
 
-Per impostazione predefinita, la coda nel Centro sicurezza Microsoft 365 visualizza gli eventi imprevisti visualizzati negli ultimi 30 giorni. The most recent incident is at the top of the list so you can see it first.
+Per impostazione predefinita, la coda nel Centro sicurezza Microsoft 365 visualizza gli eventi imprevisti visualizzati negli ultimi 30 giorni. L'evento imprevisto più recente si trova all'inizio dell'elenco, in modo da poterlo vedere per primo.
 
 La coda degli eventi imprevisti espone colonne personalizzabili che offrono visibilità sulle diverse caratteristiche dell'incidente o sulle entità contenute. Ciò consente di prendere una decisione informata in merito alla definizione della priorità degli eventi imprevisti da gestire.
 

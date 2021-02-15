@@ -44,7 +44,7 @@ Con questo livello di visibilità, è possibile cercare rapidamente minacce che 
 
 Ecco alcune tecniche generali e query di esempio basate su diversi scenari di ricerca che consentono di esplorare come creare query durante la ricerca di minacce sofisticate.
 
-## <a name="get-entity-info"></a>Ottenere informazioni sulle entità
+## <a name="get-entity-info"></a>Ottenere informazioni sull'entità
 Usa queste query per scoprire come ottenere rapidamente informazioni su account utente, dispositivi e file. 
 
 ### <a name="obtain-user-accounts-from-email-addresses"></a>Ottenere account utente da indirizzi di posta elettronica

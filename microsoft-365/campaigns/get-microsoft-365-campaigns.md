@@ -61,12 +61,12 @@ Questa configurazione di Microsoft 365 Business Premium include semplici control
 ## <a name="what-does-it-cost-who-needs-it-and-what-is-the-commitment"></a>Quanto costa, chi ne ha bisogno e qual è l'impegno?
 
 Se la campagna è qualificata per prezzi speciali, Microsoft 365 for Campaigns costa $ 5 per utente al mese.
-Per proteggere la campagna, è consigliabile una licenza per il candidato, il responsabile della campagna, tutti i membri del personale senior che fanno parte della campagna o del gruppo e in genere tutto il personale a tempo pieno. Alcuni dipendenti volontari potrebbero anche avere bisogno di una licenza. In generale, assegna una licenza a tutti gli utenti della campagna che hanno bisogno di posta elettronica e dispositivi protetti.
+Per proteggere la campagna, è consigliabile una licenza per il candidato, il responsabile della campagna, tutti i membri del personale senior che fanno parte della campagna o della parte e in genere tutto il personale a tempo pieno. Alcuni dipendenti volontari potrebbero anche avere bisogno di una licenza. In generale, assegna una licenza a tutti gli utenti della campagna che hanno bisogno di posta elettronica e dispositivi protetti.
 Non esiste un impegno di tempo minimo quando si effettua l'iscrizione a Microsoft 365 per le campagne. Puoi pagare mensilmente le licenze necessarie e smettere di usare il servizio in qualsiasi momento.
 
 ## <a name="how-do-i-qualify-for-special-pricing"></a>Come posso qualificarmi per prezzi speciali?
 
-1. Passare a [aka.ms/m365forcampaigns](https://aka.ms/m365forcampaigns/) e fornire alcuni dettagli sull'organizzazione. I dettagli forniti ci aiutano a verificare che rappresenti una campagna politica o un party di livello nazionale negli Stati Uniti. Non c'è alcun impegno quando si compila questo modulo.
+1. Passare a [aka.ms/m365forcampaigns](https://aka.ms/m365forcampaigns/) e fornire alcuni dettagli sull'organizzazione. I dettagli forniti ci aiutano a verificare che rappresenti una campagna politica o un party di livello nazionale negli Stati Uniti. Non c'è alcun impegno quando si completa questo modulo.
 2. Dopo aver completato il modulo, sono necessari alcuni giorni per esaminare le informazioni.
 3. Dopo aver verificato che rappresenti una campagna politica o un party di livello nazionale, riceverai un invito tramite posta elettronica da Microsoft. L'invito include un collegamento di iscrizione specifico per l'organizzazione.
 

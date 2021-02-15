@@ -42,7 +42,7 @@ ms.locfileid: "49930175"
 
 Al momento è in corso la fase di pianificazione.
 
-Per garantire che il progetto pilota sia un successo, è essenziale pianificare in modo accurato e ottenere le approvazioni dai cointeressati all'inizio. Gli elementi della pianificazione includono l'identificazione dell'ambito, dei casi di utilizzo, dei requisiti e dei criteri di successo.
+Per garantire che il progetto pilota sia un successo, è essenziale pianificare in modo accurato e ottenere le approvazioni dai cointeressati all'inizio. Gli elementi della pianificazione includono l'identificazione dell'ambito, dei casi di utilizzo, dei requisiti e dei criteri di riuscita.
 
 Questa guida illustra come pianificare il progetto pilota. 
 
@@ -68,7 +68,7 @@ I casi d'uso rappresentano le istruzioni su come lo strumento da testare deve es
 - Come analista SOC, devo avere lo strumento e il processo per analizzare e rispondere automaticamente a eventi dannosi nella mia rete. [IR automatico]
 - Come analista SOC, devo cercare i dati del mio ambiente per trovare minacce note e potenziali e attività sospette. [Ricerca avanzata]
 
-Tenere presente che questi casi d'uso devono essere creati all'interno dei parametri dell'ambito definito. Se, ad esempio, l'ambito dei test non include una valutazione di strumenti come Microsoft Cloud App Security, non è consigliabile creare casi che si basano su questa soluzione come origine dati.
+Tenere presente che questi casi d'uso devono essere creati all'interno dei parametri dell'ambito definito. Se, ad esempio, l'ambito dei test non include una valutazione di strumenti come Microsoft Cloud App Security, non è consigliabile creare casi che si basano su questo come origine dati.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -80,7 +80,7 @@ A seconda dei requisiti, possono essere appropriati diversi metodi di test. Ad e
 
 ## <a name="success-criteria"></a>Criteri di successo
 
-I criteri di successo sono in definitiva l'insieme di barre da misurare rispetto a ciò che si sta testando. Se si sta testando Microsoft 365 Defender (o qualsiasi altra tecnologia in questo caso) rispetto ad altri strumenti o da solo, devono essere presenti alcuni criteri quantificabili per determinare il valore fornito dallo strumento. In base all'ambito, ai requisiti e al piano di testing, i criteri di esito positivo determineranno come segnare il test. Questo valore deve essere inferiore a un passaggio o a un errore e più di un punteggio ponderato in base alle tue esigenze. Ad esempio, per avere esito positivo, uno strumento potrebbe dover segnare un punteggio superiore all'80% in alcune aree critiche identificate.
+I criteri di successo sono in definitiva l'insieme di barre da misurare rispetto a ciò che si sta testando. Se si sta testando Microsoft 365 Defender (o qualsiasi altra tecnologia del caso) rispetto ad altri strumenti o da solo, devono essere presenti alcuni criteri quantificabili per determinare il valore fornito dallo strumento. In base all'ambito, ai requisiti e al piano di testing, i criteri di esito positivo determineranno la modalità di valutazione del test. Questo valore deve essere inferiore a un passaggio o a un errore e più di un punteggio ponderato in base alle tue esigenze. Ad esempio, per avere esito positivo, uno strumento potrebbe dover segnare un punteggio superiore all'80% in alcune aree critiche identificate.
 
 ## <a name="scorecard"></a>Scorecard
 
@@ -90,7 +90,7 @@ Un modo per riunire tutti gli elementi del piano può essere la creazione di una
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
 |Gestione degli incidenti|- Microsoft 365 Defender  </br></br>- Microsoft Defender for Identity </br></br>- Microsoft Defender per endpoint </br></br>- Microsoft Cloud App Security (facoltativo)|Per informazioni [dettagliate,](https://aka.ms/mtp-trial-lab) vedere i prerequisiti per la preparazione, la configurazione e la configurazione |[Simula attacco](mtp-pilot-simulate.md) <br></br>[Analizzare l'evento imprevisto](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#investigate-an-incident) |Gli investigatori possono comprendere l'ambito e l'impatto dell'incidente e gestire l'incidente||||
 |AutoIR|- Microsoft 365 Defender </br></br>- Microsoft Defender for Identity </br></br>- Microsoft Defender per endpoint |Per informazioni [dettagliate,](https://aka.ms/mtp-trial-lab) vedere i prerequisiti per la preparazione, la configurazione e la configurazione <br>Abilitare AutoIR  |[Simula attacco](mtp-pilot-simulate.md) <br></br>[Indagine automatizzata](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#automated-investigation-and-remediation) |Gli avvisi e gli eventi imprevisti vengono corretti automaticamente da Microsoft 365 Defender||||
-|Ricerca avanzata|- Microsoft 365 Defender </br></br>- Microsoft Defender per endpoint </br></br>-Microsoft Defender per Office 365 |Per informazioni [dettagliate,](https://aka.ms/mtp-trial-lab) vedere i prerequisiti per la preparazione, la configurazione e la configurazione|[Scenario di ricerca avanzata](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#advanced-hunting-scenario) |Gli investigatori possono trovare i dati tramite la ricerca avanzata, la ricerca pivot per le entità influenzate e la creazione di rilevamenti personalizzati||||
+|Ricerca avanzata|- Microsoft 365 Defender </br></br>- Microsoft Defender per endpoint </br></br>-Microsoft Defender per Office 365 |Per informazioni [dettagliate,](https://aka.ms/mtp-trial-lab) vedere i prerequisiti per la preparazione, la configurazione e la configurazione|[Scenario di ricerca avanzata](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-pilot-simulate#advanced-hunting-scenario) |Gli investigatori possono trovare i dati tramite la ricerca avanzata, la ricerca pivot nelle entità influenzate e la creazione di rilevamenti personalizzati||||
 
 
 

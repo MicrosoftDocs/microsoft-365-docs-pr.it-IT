@@ -83,7 +83,7 @@ Upgrade-DistributionGroup -DlIdentities dl1@contoso.com`
 > [!NOTE]
 > È inoltre possibile aggiornare una singola lista di distribuzione a un gruppo di Microsoft 365 utilizzando il cmdlet [PowerShell New-UnifiedGroup](https://go.microsoft.com/fwlink/?LinkID=786379)
 
-### <a name="upgrade-multiple-dls-in-a-batch"></a>Aggiornare più DLL in un batch
+### <a name="upgrade-multiple-dls-in-a-batch"></a>Aggiornare più dll in un batch
 
 È inoltre possibile passare più DLL come batch e aggiornarle insieme:
 
@@ -129,7 +129,7 @@ Get-DistributionGroup| Foreach-Object{
 |:-----|:-----|
 |Lista di distribuzione gestita in locale  <br/> |No  <br/> |
 |Liste di distribuzione annidate. La lista di distribuzione ha gruppi figlio o è membro di un altro gruppo.  <br/> |No  <br/> |
-|Liste di distribuzione con **membro RecipientTypeDetails** diverso **da UserMailbox,** **SharedMailbox,** **TeamMailbox,** **MailUser**  <br/> |No  <br/> |
+|Liste di distribuzione con **membro RecipientTypeDetails** diverso **da UserMailbox**, **SharedMailbox**, **TeamMailbox**, **MailUser**  <br/> |No  <br/> |
 |Lista di distribuzione che ha più di 100 proprietari  <br/> |No  <br/> |
 |Lista di distribuzione che ha solo membri, ma nessun proprietario  <br/> |No  <br/> |
 |Lista di distribuzione che ha un alias contenente caratteri speciali  <br/> |No  <br/> |
@@ -142,7 +142,7 @@ Get-DistributionGroup| Foreach-Object{
 
 ### <a name="check-which-dls-are-eligible-for-upgrade"></a>Verificare quali dll sono idonee per l'aggiornamento
 
-Se si desidera verificare se una dll è idonea o meno, è possibile eseguire il comando seguente:
+Se vuoi verificare se una DL è idonea o meno, puoi eseguire il comando seguente:
 
 `Get-DistributionGroup \<DL SMTP address\> | Get-EligibleDistributionGroupForMigration`
 
@@ -158,7 +158,7 @@ Persone con diritti di amministratore globale o amministratore di Exchange.
 
 - For Outlook: When someone tries to send an email in Outlook by typing the Microsoft 365 group name after migration, the recipient will be resolved as the distribution list instead of the group. La scheda contatto del destinatario sarà la scheda contatto degli elenchi di distribuzione. Questo dipende dalla cache dei destinatari o dalla cache dei nomi alternativi in Outlook. Il messaggio di posta elettronica verrà inviato correttamente al gruppo, ma potrebbe causare confusione al mittente.<br/>È possibile eseguire i passaggi descritti in questo argomento, [Informazioni relative all'elenco di completamento automatico di Outlook](https://go.microsoft.com/fwlink/?LinkID=798736) per reimpostare la cache e risolvere il problema.
 
-- Per Outlook sul Web: in caso di Outlook sul Web, il destinatario della lista di distribuzione rimarrà nella cache. È possibile seguire la procedura [descritta](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58) in Rimuovere il nome consigliato o l'indirizzo di posta elettronica dall'elenco di completamento automatico per aggiornare la cache per visualizzare la scheda contatto del gruppo.
+- Per Outlook sul Web: in caso di Outlook sul Web, il destinatario della lista di distribuzione rimarrà nella cache. È possibile seguire la procedura [descritta](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58) in Rimuovere il nome suggerito o l'indirizzo di posta elettronica dall'elenco di completamento automatico per aggiornare la cache per visualizzare la scheda contatto del gruppo.
 
 ### <a name="do-new-group-members-get-a-welcome-email-in-their-inbox"></a>I nuovi membri del gruppo ricevono un messaggio di posta elettronica di benvenuto nella propria posta in arrivo?
 

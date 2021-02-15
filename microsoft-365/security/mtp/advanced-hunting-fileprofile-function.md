@@ -35,7 +35,7 @@ ms.locfileid: "49929551"
 **Si applica a:**
 - Microsoft 365 Defender
 
-La funzione è una funzione di arricchimento nella ricerca avanzata che `FileProfile()` aggiunge i dati seguenti ai file trovati dalla query. [](advanced-hunting-overview.md)
+La funzione è una funzione di arricchimento nella ricerca `FileProfile()` [avanzata](advanced-hunting-overview.md) che aggiunge i dati seguenti ai file trovati dalla query.
 
 | Colonna | Tipo di dati | Descrizione |
 |------------|-------------|-------------|
@@ -45,7 +45,7 @@ La funzione è una funzione di arricchimento nella ricerca avanzata che `FilePro
 | FileSize | int | Dimensioni del file in byte |
 | GlobalPrevalence | int | Numero di istanze dell'entità osservate da Microsoft a livello globale |
 | GlobalFirstSeen | datetime | Data e ora in cui l'entità è stata osservata per la prima volta da Microsoft a livello globale |
-| GlobalLastSeen | datetime | Data e ora dell'ultima osservazione globale dell'entità da parte di Microsoft |
+| GlobalLastSeen | datetime | Data e ora dell'ultima osservazione dell'entità da parte di Microsoft a livello globale |
 | Firmatario | stringa | Informazioni sul firmatario del file |
 | Autorità di certificazione | stringa | Informazioni sull'autorità di certificazione (CA) emittente |
 | SignerHash | stringa | Valore hash univoco che identifica il firmatario |

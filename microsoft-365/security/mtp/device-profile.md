@@ -28,7 +28,7 @@ ms.locfileid: "49929575"
 Il portale di sicurezza di Microsoft 365 fornisce le pagine del profilo del dispositivo, in modo da poter valutare rapidamente l'integrità e lo stato dei dispositivi nella rete.
 
 > [!IMPORTANT]
-> La pagina del profilo del dispositivo potrebbe essere leggermente diversa, a seconda che il dispositivo sia registrato in Microsoft Defender per Endpoint, Microsoft Defender per l'identità o entrambi.
+> La pagina del profilo del dispositivo potrebbe essere leggermente diversa, a seconda che il dispositivo sia registrato in Microsoft Defender for Endpoint, Microsoft Defender for Identity o entrambi.
 
 Se il dispositivo è registrato in Microsoft Defender per Endpoint, puoi anche usare la pagina del profilo del dispositivo per eseguire alcune attività di sicurezza comuni.
 
@@ -78,7 +78,7 @@ Le azioni disponibili nella pagina del profilo del dispositivo includono:
 * **Isola dispositivo:** isola il dispositivo dalla rete dell'organizzazione mantenendolo connesso a Microsoft Defender per Endpoint. È possibile scegliere di consentire l'esecuzione di Outlook, Teams e Skype for Business mentre il dispositivo è isolato, a scopo di comunicazione.
 * **Centro notifiche:** consente di visualizzare lo stato delle azioni inviate. Disponibile solo se è già stata selezionata un'altra azione.
 * **Limitare l'esecuzione delle** app: impedisce l'esecuzione di applicazioni non firmate da Microsoft.
-* **Eseguire l'analisi antivirus:** Windows Defender definizioni antivirus ed esegue immediatamente un'analisi antivirus. Scegliere tra Analisi rapida o Analisi completa.
+* **Eseguire l'analisi antivirus:** gli Windows Defender definizioni antivirus ed esegue immediatamente un'analisi antivirus. Scegliere tra Analisi rapida o Analisi completa.
 * **Raccogliere il pacchetto di** analisi: raccoglie informazioni sul dispositivo. Al termine dell'indagine, è possibile scaricarla.
 * **Avvia sessione di risposta in tempo** reale: carica una shell remota nel dispositivo per indagini [approfondite sulla sicurezza.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response)
 * **Avviare un'indagine automatizzata:** consente di [analizzare e correggere automaticamente le minacce.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air) Sebbene sia possibile attivare manualmente l'esecuzione di indagini automatizzate da questa [pagina,](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?view=o365-worldwide#default-alert-policies) alcuni criteri di avviso attivano automaticamente le indagini.
@@ -86,7 +86,7 @@ Le azioni disponibili nella pagina del profilo del dispositivo includono:
 
 ## <a name="tabs-section"></a>Sezione Tabs
 
-Le schede del profilo del dispositivo consentono di passare da una panoramica dei dettagli di sicurezza sul dispositivo e delle tabelle contenenti un elenco di avvisi.
+Le schede del profilo del dispositivo consentono di passare da una panoramica dei dettagli di sicurezza sul dispositivo e le tabelle contenenti un elenco di avvisi.
 
 I dispositivi registrati in Microsoft Defender per Endpoint visualizzano anche schede che presentano una sequenza temporale, un elenco di suggerimenti sulla sicurezza, un inventario software, un elenco di vulnerabilità individuate e gli indicatori KPI mancanti (aggiornamenti della sicurezza).
 
@@ -124,17 +124,17 @@ Sotto il grafico è riportato un elenco di eventi per l'intervallo di date selez
 
 ![Immagine della scheda sequenza temporale per il profilo del dispositivo](../../media/mtp-device-profile/hybrid-device-tab-timeline.png)
 
-Il numero di elementi visualizzati e le colonne dell'elenco possono essere entrambi personalizzati. Le colonne predefinite elencano l'ora dell'evento, l'utente attivo, il tipo di azione, le entità (processi) e informazioni aggiuntive sull'evento.
+Il numero di elementi visualizzati e le colonne nell'elenco possono essere entrambi personalizzati. Le colonne predefinite elencano l'ora dell'evento, l'utente attivo, il tipo di azione, le entità (processi) e informazioni aggiuntive sull'evento.
 
 Se si seleziona un elemento da questo elenco, verrà visualizzato un riquadro a comparsa con un grafico delle entità evento che mostra i processi padre e figlio coinvolti nell'evento.
 
-L'elenco può essere filtrato in base al tipo specifico di evento; ad esempio eventi del Registro di sistema o eventi smart screen.
+L'elenco può essere filtrato in base al tipo specifico di evento. ad esempio eventi del Registro di sistema o eventi smart screen.
 
 L'elenco può anche essere esportato in un file CSV, per il download. Anche se il file non è limitato dal numero di eventi, l'intervallo di tempo massimo che è possibile scegliere di esportare è di sette giorni.
 
 ### <a name="security-recommendations-tab"></a>Scheda Suggerimenti per la sicurezza
 
-Nella **scheda Suggerimenti per la** sicurezza sono elencate le azioni che è possibile eseguire per proteggere il dispositivo. La selezione di un elemento in questo elenco consente di aprire un riquadro a comparsa in cui è possibile ottenere istruzioni su come applicare il suggerimento.
+Nella **scheda Consigli per la** sicurezza sono elencate le azioni che puoi eseguire per proteggere il dispositivo. La selezione di un elemento in questo elenco consente di aprire un riquadro a comparsa in cui è possibile ottenere istruzioni su come applicare il suggerimento.
 
 ![Immagine della scheda degli elementi consigliati per la sicurezza per il profilo del dispositivo](../../media/mtp-device-profile/hybrid-device-tab-security-recs.png)
 
@@ -160,7 +160,7 @@ Nella **scheda Vulnerabilità individuate** sono elencate tutte le vulnerabilit�
 
 ![Immagine della scheda delle vulnerabilità individuate per il profilo del dispositivo](../../media/mtp-device-profile/hybrid-device-tab-discovered-vulnerabilities.png)
 
-Nella visualizzazione predefinita sono elencati la gravità del CVE, il punteggio di vulnerabilità comune (CVS), il software correlato al CVE, la data di pubblicazione del CVE, l'ultimo aggiornamento del CVE e le minacce associate al CVE.
+La visualizzazione predefinita elenca la gravità del CVE, il punteggio di vulnerabilità comune (CVS), il software correlato al CVE, la data di pubblicazione del CVE, l'ultimo aggiornamento del CVE e le minacce associate al CVE.
 
 Come per le schede precedenti, è possibile personalizzare il numero di elementi visualizzati e le colonne visibili.
 

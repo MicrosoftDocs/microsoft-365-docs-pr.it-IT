@@ -46,4 +46,4 @@ Gli elementi che puoi aggiornare sono:
 - Logo banner
 - Suggerimento nome utente
 
-Per esempi di avvisi relativi alla privacy e al consenso, vedere l'Appendice A nella ricerca e nel controllo dei computer e nell'ottenimento di prove elettroniche [in indagini penali.](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf)
+Per esempi di avvisi relativi alla privacy e al consenso, vedere l'Appendice A nella ricerca e nel controllo dei computer e nell'ottenimento di prove elettroniche [nelle indagini penali.](https://www.justice.gov/sites/default/files/criminal-ccips/legacy/2015/01/14/ssmanual2009.pdf)
