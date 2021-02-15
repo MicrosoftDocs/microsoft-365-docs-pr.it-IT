@@ -1,5 +1,5 @@
 ---
-title: Informazioni di pagamento per Libano
+title: Informazioni di pagamento per il Libano
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,16 +20,16 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48649476"
 ---
-# <a name="payment-information-for-lebanon"></a><span data-ttu-id="3afaf-103">Informazioni di pagamento per Libano</span><span class="sxs-lookup"><span data-stu-id="3afaf-103">Payment information for Lebanon</span></span>
+# <a name="payment-information-for-lebanon"></a><span data-ttu-id="ddef0-103">Informazioni di pagamento per il Libano</span><span class="sxs-lookup"><span data-stu-id="ddef0-103">Payment information for Lebanon</span></span>
 
-<span data-ttu-id="3afaf-104">[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="3afaf-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="ddef0-104">[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="ddef0-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="3afaf-105">Si prega di pagare solo in USD e i numeri delle fatture di riferimento sulla sua rimessa di pagamento.</span><span class="sxs-lookup"><span data-stu-id="3afaf-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="ddef0-105">Pagare solo in USD e fare riferimento ai numeri di fattura per la rimessa di pagamento.</span><span class="sxs-lookup"><span data-stu-id="ddef0-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="3afaf-106">Bonifico bancario</span><span class="sxs-lookup"><span data-stu-id="3afaf-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="ddef0-106">Bonifico bancario</span><span class="sxs-lookup"><span data-stu-id="ddef0-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="3afaf-107">**Banca:** Citibank, Londra</span><span class="sxs-lookup"><span data-stu-id="3afaf-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="3afaf-108">**Codice SWIFT:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="3afaf-108">**SWIFT Code:** CITIGB2L</span></span>  
-<span data-ttu-id="3afaf-109">**Codice IBAN:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="3afaf-109">**IBAN:** GB95CITI18500812510049</span></span>  
-<span data-ttu-id="3afaf-110">**Numero account:** 12510049</span><span class="sxs-lookup"><span data-stu-id="3afaf-110">**Account Number:** 12510049</span></span>  
-<span data-ttu-id="3afaf-111">**Nome account:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="3afaf-111">**Account Name:** MICROSOFT</span></span> 
+<span data-ttu-id="ddef0-107">**Bank:** Citibank, Londra</span><span class="sxs-lookup"><span data-stu-id="ddef0-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="ddef0-108">**Codice SWIFT:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="ddef0-108">**SWIFT Code:** CITIGB2L</span></span>  
+<span data-ttu-id="ddef0-109">**IBAN:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="ddef0-109">**IBAN:** GB95CITI18500812510049</span></span>  
+<span data-ttu-id="ddef0-110">**Numero di conto:** 12510049</span><span class="sxs-lookup"><span data-stu-id="ddef0-110">**Account Number:** 12510049</span></span>  
+<span data-ttu-id="ddef0-111">**Nome account:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="ddef0-111">**Account Name:** MICROSOFT</span></span> 

@@ -1,5 +1,5 @@
 ---
-title: Informazioni sui pagamenti per il Perù
+title: Informazioni di pagamento per il Perù
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,16 +20,16 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48648840"
 ---
-# <a name="payment-information-for-peru"></a><span data-ttu-id="1c71c-103">Informazioni sui pagamenti per il Perù</span><span class="sxs-lookup"><span data-stu-id="1c71c-103">Payment information for Peru</span></span>
+# <a name="payment-information-for-peru"></a><span data-ttu-id="091f9-103">Informazioni di pagamento per il Perù</span><span class="sxs-lookup"><span data-stu-id="091f9-103">Payment information for Peru</span></span>
 
-<span data-ttu-id="1c71c-104">[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="1c71c-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="091f9-104">[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="091f9-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="1c71c-105">Si prega di pagare solo in USD e i numeri delle fatture di riferimento sulla rimessa dei pagamenti.</span><span class="sxs-lookup"><span data-stu-id="1c71c-105">Please pay in USD only and reference invoice number(s) on the payment remittance.</span></span>
+<span data-ttu-id="091f9-105">Pagare solo in USD e fare riferimento ai numeri di fattura per la rimessa di pagamento.</span><span class="sxs-lookup"><span data-stu-id="091f9-105">Please pay in USD only and reference invoice number(s) on the payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="1c71c-106">Bonifico bancario</span><span class="sxs-lookup"><span data-stu-id="1c71c-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="091f9-106">Bonifico bancario</span><span class="sxs-lookup"><span data-stu-id="091f9-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="1c71c-107">**Banca:** Bank of America</span><span class="sxs-lookup"><span data-stu-id="1c71c-107">**Bank:** Bank of America</span></span>  
-<span data-ttu-id="1c71c-108">**Branch:** Dallas</span><span class="sxs-lookup"><span data-stu-id="1c71c-108">**Branch:** Dallas</span></span>  
-<span data-ttu-id="1c71c-109">**Codice SWIFT:** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="1c71c-109">**SWIFT Code:** BOFAUS3N</span></span>  
-<span data-ttu-id="1c71c-110">**Numero account:** 4426587954</span><span class="sxs-lookup"><span data-stu-id="1c71c-110">**Account Number:** 4426587954</span></span>  
-<span data-ttu-id="1c71c-111">**Nome account:** Microsoft</span><span class="sxs-lookup"><span data-stu-id="1c71c-111">**Account Name:** Microsoft</span></span>  
+<span data-ttu-id="091f9-107">**Bank:** Bank of America</span><span class="sxs-lookup"><span data-stu-id="091f9-107">**Bank:** Bank of America</span></span>  
+<span data-ttu-id="091f9-108">**Ramo:** Dallas</span><span class="sxs-lookup"><span data-stu-id="091f9-108">**Branch:** Dallas</span></span>  
+<span data-ttu-id="091f9-109">**Codice SWIFT:** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="091f9-109">**SWIFT Code:** BOFAUS3N</span></span>  
+<span data-ttu-id="091f9-110">**Numero account:** 4426587954</span><span class="sxs-lookup"><span data-stu-id="091f9-110">**Account Number:** 4426587954</span></span>  
+<span data-ttu-id="091f9-111">**Nome account:** Microsoft</span><span class="sxs-lookup"><span data-stu-id="091f9-111">**Account Name:** Microsoft</span></span>  

@@ -1,5 +1,5 @@
 ---
-title: Informazioni di pagamento per Guadalupa
+title: Informazioni di pagamento per guadalupa
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,16 +20,16 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48647441"
 ---
-# <a name="payment-information-for-guadeloupe"></a><span data-ttu-id="36f86-103">Informazioni di pagamento per Guadalupa</span><span class="sxs-lookup"><span data-stu-id="36f86-103">Payment information for Guadeloupe</span></span>
+# <a name="payment-information-for-guadeloupe"></a><span data-ttu-id="3708c-103">Informazioni di pagamento per guadalupa</span><span class="sxs-lookup"><span data-stu-id="3708c-103">Payment information for Guadeloupe</span></span>
 
-<span data-ttu-id="36f86-104">[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="36f86-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="3708c-104">[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="3708c-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="36f86-105">Si prega di pagare solo in USD e fare riferimento ai numeri di fattura sulla rimessa in fattura.</span><span class="sxs-lookup"><span data-stu-id="36f86-105">Please pay in USD only and reference your invoice number(s) on your invoice remittance.</span></span>
+<span data-ttu-id="3708c-105">Pagare solo in USD e fare riferimento ai numeri di fattura nella fattura rimessa.</span><span class="sxs-lookup"><span data-stu-id="3708c-105">Please pay in USD only and reference your invoice number(s) on your invoice remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="36f86-106">Bonifico bancario</span><span class="sxs-lookup"><span data-stu-id="36f86-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="3708c-106">Bonifico bancario</span><span class="sxs-lookup"><span data-stu-id="3708c-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="36f86-107">**Banca:** Bank of America</span><span class="sxs-lookup"><span data-stu-id="36f86-107">**Bank:** Bank of America</span></span>  
-<span data-ttu-id="36f86-108">**Branch** Dallas</span><span class="sxs-lookup"><span data-stu-id="36f86-108">**Branch** Dallas</span></span>  
-<span data-ttu-id="36f86-109">**Codice SWIFT:** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="36f86-109">**SWIFT Code:** BOFAUS3N</span></span>  
-<span data-ttu-id="36f86-110">**Numero account:** 4426587954</span><span class="sxs-lookup"><span data-stu-id="36f86-110">**Account Number:** 4426587954</span></span>  
-<span data-ttu-id="36f86-111">**Nome account:** Microsoft</span><span class="sxs-lookup"><span data-stu-id="36f86-111">**Account Name:** Microsoft</span></span>  
+<span data-ttu-id="3708c-107">**Bank:** Bank of America</span><span class="sxs-lookup"><span data-stu-id="3708c-107">**Bank:** Bank of America</span></span>  
+<span data-ttu-id="3708c-108">**Branch** Dallas</span><span class="sxs-lookup"><span data-stu-id="3708c-108">**Branch** Dallas</span></span>  
+<span data-ttu-id="3708c-109">**Codice SWIFT:** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="3708c-109">**SWIFT Code:** BOFAUS3N</span></span>  
+<span data-ttu-id="3708c-110">**Numero account:** 4426587954</span><span class="sxs-lookup"><span data-stu-id="3708c-110">**Account Number:** 4426587954</span></span>  
+<span data-ttu-id="3708c-111">**Nome account:** Microsoft</span><span class="sxs-lookup"><span data-stu-id="3708c-111">**Account Name:** Microsoft</span></span>  

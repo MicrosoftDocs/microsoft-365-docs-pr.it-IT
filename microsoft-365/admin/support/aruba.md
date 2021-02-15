@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per Aruba
+title: Informazioni di supporto per Aruba
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,22 +20,22 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48644172"
 ---
-# <a name="contact-support-for-aruba"></a><span data-ttu-id="5b440-103">Contattare il supporto per Aruba</span><span class="sxs-lookup"><span data-stu-id="5b440-103">Contact support for Aruba</span></span>
+# <a name="contact-support-for-aruba"></a><span data-ttu-id="b3e25-103">Contattare il supporto per Aruba</span><span class="sxs-lookup"><span data-stu-id="b3e25-103">Contact support for Aruba</span></span>
 
-<span data-ttu-id="5b440-104">[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="5b440-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="b3e25-104">[Trova un altro paese o area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="b3e25-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="5b440-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="5b440-105">Phone number</span></span>
-<span data-ttu-id="5b440-106">+ 1 312 843 5146</span><span class="sxs-lookup"><span data-stu-id="5b440-106">+1 312 843 5146</span></span>
+## <a name="phone-number"></a><span data-ttu-id="b3e25-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="b3e25-105">Phone number</span></span>
+<span data-ttu-id="b3e25-106">+1 312 843 5146</span><span class="sxs-lookup"><span data-stu-id="b3e25-106">+1 312 843 5146</span></span>
 
-## <a name="hours"></a><span data-ttu-id="5b440-107">Ore</span><span class="sxs-lookup"><span data-stu-id="5b440-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="5b440-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="5b440-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="b3e25-107">Ore</span><span class="sxs-lookup"><span data-stu-id="b3e25-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="b3e25-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="b3e25-108">Billing Support:</span></span>
 
-<span data-ttu-id="5b440-109">Olandese: Mon-Fri 4 AM-Noon</span><span class="sxs-lookup"><span data-stu-id="5b440-109">Dutch: Mon-Fri 4 AM-noon</span></span>
+<span data-ttu-id="b3e25-109">Olandese: Mon-Fri 4.00-12.00</span><span class="sxs-lookup"><span data-stu-id="b3e25-109">Dutch: Mon-Fri 4 AM-noon</span></span>
 
-<span data-ttu-id="5b440-110">Inglese: Mon-Fri 4 AM-Noon</span><span class="sxs-lookup"><span data-stu-id="5b440-110">English: Mon-Fri 4 AM-noon</span></span>
+<span data-ttu-id="b3e25-110">Inglese: Mon-Fri 4.00-12.00</span><span class="sxs-lookup"><span data-stu-id="b3e25-110">English: Mon-Fri 4 AM-noon</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="5b440-111">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="5b440-111">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="b3e25-111">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="b3e25-111">Technical Support:</span></span>
 
-<span data-ttu-id="5b440-112">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="5b440-112">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="b3e25-112">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="b3e25-112">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="5b440-113">Tariffe di chiamata internazionali applicate</span><span class="sxs-lookup"><span data-stu-id="5b440-113">International call charges apply</span></span>
+<span data-ttu-id="b3e25-113">Si applicano addebiti per chiamate internazionali</span><span class="sxs-lookup"><span data-stu-id="b3e25-113">International call charges apply</span></span>

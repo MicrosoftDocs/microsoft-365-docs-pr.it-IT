@@ -1,5 +1,5 @@
 ---
-title: Informazioni di supporto per Bosnia e Erzegovina
+title: Informazioni di supporto per Bosnia ed Herzegovnia
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,26 +20,26 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48643836"
 ---
-# <a name="contact-support-for-bosnia-and-herzegovnia"></a><span data-ttu-id="3beb4-103">Contattare il supporto per Bosnia e Erzegovina</span><span class="sxs-lookup"><span data-stu-id="3beb4-103">Contact support for Bosnia and Herzegovnia</span></span>
+# <a name="contact-support-for-bosnia-and-herzegovnia"></a><span data-ttu-id="b1f7a-103">Contattare il supporto tecnico per Bosnia ed Herzegovnia</span><span class="sxs-lookup"><span data-stu-id="b1f7a-103">Contact support for Bosnia and Herzegovnia</span></span>
 
-<span data-ttu-id="3beb4-104">[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="3beb4-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="b1f7a-104">[Trova un altro paese o area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="b1f7a-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="3beb4-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="3beb4-105">Phone number</span></span>
-<span data-ttu-id="3beb4-106">0800 20 230</span><span class="sxs-lookup"><span data-stu-id="3beb4-106">0800 20 230</span></span>
+## <a name="phone-number"></a><span data-ttu-id="b1f7a-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="b1f7a-105">Phone number</span></span>
+<span data-ttu-id="b1f7a-106">0800 20 230</span><span class="sxs-lookup"><span data-stu-id="b1f7a-106">0800 20 230</span></span>
 
-<span data-ttu-id="3beb4-107">Selezionare l'opzione 9</span><span class="sxs-lookup"><span data-stu-id="3beb4-107">Select option 9</span></span>
+<span data-ttu-id="b1f7a-107">Selezionare l'opzione 9</span><span class="sxs-lookup"><span data-stu-id="b1f7a-107">Select option 9</span></span>
 
-<span data-ttu-id="3beb4-108">Immettere il codice 7700</span><span class="sxs-lookup"><span data-stu-id="3beb4-108">Enter code 7700</span></span>
+<span data-ttu-id="b1f7a-108">Immettere il codice 7700</span><span class="sxs-lookup"><span data-stu-id="b1f7a-108">Enter code 7700</span></span>
 
-## <a name="hours"></a><span data-ttu-id="3beb4-109">Ore</span><span class="sxs-lookup"><span data-stu-id="3beb4-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="3beb4-110">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="3beb4-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="b1f7a-109">Ore</span><span class="sxs-lookup"><span data-stu-id="b1f7a-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="b1f7a-110">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="b1f7a-110">Billing Support:</span></span>
 
-<span data-ttu-id="3beb4-111">Inglese: Mon-Fri 9.00-17.00</span><span class="sxs-lookup"><span data-stu-id="3beb4-111">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="b1f7a-111">Inglese: lun-ven 9:00-17:00</span><span class="sxs-lookup"><span data-stu-id="b1f7a-111">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="3beb4-112">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="3beb4-112">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="b1f7a-112">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="b1f7a-112">Technical Support:</span></span>
 
-<span data-ttu-id="3beb4-113">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="3beb4-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="b1f7a-113">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="b1f7a-113">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="3beb4-114">Numero di telefono alternativo: + 387 33 606 100</span><span class="sxs-lookup"><span data-stu-id="3beb4-114">Alternative Phone Number: +387 33 606 100</span></span>
+<span data-ttu-id="b1f7a-114">Numero di telefono alternativo: +387 33 606 100</span><span class="sxs-lookup"><span data-stu-id="b1f7a-114">Alternative Phone Number: +387 33 606 100</span></span>
 
-<span data-ttu-id="3beb4-115">Tariffe di chiamata internazionali applicate</span><span class="sxs-lookup"><span data-stu-id="3beb4-115">International call charges apply</span></span>
+<span data-ttu-id="b1f7a-115">Si applicano addebiti per chiamate internazionali</span><span class="sxs-lookup"><span data-stu-id="b1f7a-115">International call charges apply</span></span>

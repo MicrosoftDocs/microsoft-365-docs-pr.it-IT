@@ -20,16 +20,16 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48648792"
 ---
-# <a name="payment-information-for-saint-kitts-and-nevis"></a><span data-ttu-id="e92c5-103">Informazioni di pagamento per Saint Kitts e Nevis</span><span class="sxs-lookup"><span data-stu-id="e92c5-103">Payment information for Saint Kitts and Nevis</span></span>
+# <a name="payment-information-for-saint-kitts-and-nevis"></a><span data-ttu-id="bb99d-103">Informazioni di pagamento per Saint Kitts e Nevis</span><span class="sxs-lookup"><span data-stu-id="bb99d-103">Payment information for Saint Kitts and Nevis</span></span>
 
-<span data-ttu-id="e92c5-104">[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="e92c5-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="bb99d-104">[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="bb99d-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="e92c5-105">Si prega di pagare solo in USD e i numeri delle fatture di riferimento sulla sua rimessa di pagamento.</span><span class="sxs-lookup"><span data-stu-id="e92c5-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="bb99d-105">Pagare solo in USD e fare riferimento ai numeri di fattura per la rimessa di pagamento.</span><span class="sxs-lookup"><span data-stu-id="bb99d-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="e92c5-106">Bonifico bancario</span><span class="sxs-lookup"><span data-stu-id="e92c5-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="bb99d-106">Bonifico bancario</span><span class="sxs-lookup"><span data-stu-id="bb99d-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="e92c5-107">**Banca:** Bank of America</span><span class="sxs-lookup"><span data-stu-id="e92c5-107">**Bank:** Bank of America</span></span>  
-<span data-ttu-id="e92c5-108">**Branch:** Dallas</span><span class="sxs-lookup"><span data-stu-id="e92c5-108">**Branch:** Dallas</span></span>  
-<span data-ttu-id="e92c5-109">**Codice SWIFT:** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="e92c5-109">**SWIFT Code:** BOFAUS3N</span></span>  
-<span data-ttu-id="e92c5-110">**Numero account:** 4426587954</span><span class="sxs-lookup"><span data-stu-id="e92c5-110">**Account Number:** 4426587954</span></span>  
-<span data-ttu-id="e92c5-111">**Nome account:** Microsoft</span><span class="sxs-lookup"><span data-stu-id="e92c5-111">**Account Name:** Microsoft</span></span>  
+<span data-ttu-id="bb99d-107">**Bank:** Bank of America</span><span class="sxs-lookup"><span data-stu-id="bb99d-107">**Bank:** Bank of America</span></span>  
+<span data-ttu-id="bb99d-108">**Ramo:** Dallas</span><span class="sxs-lookup"><span data-stu-id="bb99d-108">**Branch:** Dallas</span></span>  
+<span data-ttu-id="bb99d-109">**Codice SWIFT:** BOFAUS3N</span><span class="sxs-lookup"><span data-stu-id="bb99d-109">**SWIFT Code:** BOFAUS3N</span></span>  
+<span data-ttu-id="bb99d-110">**Numero account:** 4426587954</span><span class="sxs-lookup"><span data-stu-id="bb99d-110">**Account Number:** 4426587954</span></span>  
+<span data-ttu-id="bb99d-111">**Nome account:** Microsoft</span><span class="sxs-lookup"><span data-stu-id="bb99d-111">**Account Name:** Microsoft</span></span>  

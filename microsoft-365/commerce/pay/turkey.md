@@ -20,16 +20,16 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48648276"
 ---
-# <a name="payment-information-for-turkey"></a><span data-ttu-id="7a185-103">Informazioni di pagamento per la Turchia</span><span class="sxs-lookup"><span data-stu-id="7a185-103">Payment information for Turkey</span></span>
+# <a name="payment-information-for-turkey"></a><span data-ttu-id="5bf81-103">Informazioni di pagamento per la Turchia</span><span class="sxs-lookup"><span data-stu-id="5bf81-103">Payment information for Turkey</span></span>
 
-<span data-ttu-id="7a185-104">[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="7a185-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="5bf81-104">[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="5bf81-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="7a185-105">Si prega di pagare in prova solo e i numeri delle fatture di riferimento sulla vostra rimessa di pagamento.</span><span class="sxs-lookup"><span data-stu-id="7a185-105">Please pay in TRY only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="5bf81-105">Pagare solo in PROVA e fare riferimento ai numeri di fattura per la rimessa di pagamento.</span><span class="sxs-lookup"><span data-stu-id="5bf81-105">Please pay in TRY only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="7a185-106">Bonifico bancario</span><span class="sxs-lookup"><span data-stu-id="7a185-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="5bf81-106">Bonifico bancario</span><span class="sxs-lookup"><span data-stu-id="5bf81-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="7a185-107">**Banca:** Citibank A.S., Istanbul</span><span class="sxs-lookup"><span data-stu-id="7a185-107">**Bank:** Citibank A.S., Istanbul</span></span>  
-<span data-ttu-id="7a185-108">**Codice SWIFT:** CITITRIX</span><span class="sxs-lookup"><span data-stu-id="7a185-108">**SWIFT Code:** CITITRIX</span></span>  
-<span data-ttu-id="7a185-109">**Codice IBAN:** TR420009200000000092407039</span><span class="sxs-lookup"><span data-stu-id="7a185-109">**IBAN:** TR420009200000000092407039</span></span>  
-<span data-ttu-id="7a185-110">**Numero account:** 92407039</span><span class="sxs-lookup"><span data-stu-id="7a185-110">**Account Number:** 92407039</span></span>  
-<span data-ttu-id="7a185-111">**Nome account:** Pagamenti Microsoft</span><span class="sxs-lookup"><span data-stu-id="7a185-111">**Account Name:** Microsoft Payments</span></span>  
+<span data-ttu-id="5bf81-107">**Bank:** Citibank A.S., Istanbul</span><span class="sxs-lookup"><span data-stu-id="5bf81-107">**Bank:** Citibank A.S., Istanbul</span></span>  
+<span data-ttu-id="5bf81-108">**Codice SWIFT:** CITITRIX</span><span class="sxs-lookup"><span data-stu-id="5bf81-108">**SWIFT Code:** CITITRIX</span></span>  
+<span data-ttu-id="5bf81-109">**IBAN:** TR420009200000000092407039</span><span class="sxs-lookup"><span data-stu-id="5bf81-109">**IBAN:** TR420009200000000092407039</span></span>  
+<span data-ttu-id="5bf81-110">**Numero di conto:** 92407039</span><span class="sxs-lookup"><span data-stu-id="5bf81-110">**Account Number:** 92407039</span></span>  
+<span data-ttu-id="5bf81-111">**Nome account:** Microsoft Payments</span><span class="sxs-lookup"><span data-stu-id="5bf81-111">**Account Name:** Microsoft Payments</span></span>  

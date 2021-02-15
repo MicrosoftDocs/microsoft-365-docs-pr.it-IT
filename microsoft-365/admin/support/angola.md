@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per Angola
+title: Informazioni di supporto per l'Angola
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,22 +20,22 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48644340"
 ---
-# <a name="contact-support-for-angola"></a><span data-ttu-id="2d6f3-103">Contattare il supporto per l'Angola</span><span class="sxs-lookup"><span data-stu-id="2d6f3-103">Contact support for Angola</span></span>
+# <a name="contact-support-for-angola"></a><span data-ttu-id="5b930-103">Contattare il supporto per l'Angola</span><span class="sxs-lookup"><span data-stu-id="5b930-103">Contact support for Angola</span></span>
 
-<span data-ttu-id="2d6f3-104">[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="2d6f3-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="5b930-104">[Trova un altro paese o area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="5b930-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="2d6f3-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="2d6f3-105">Phone number</span></span>
-<span data-ttu-id="2d6f3-106">+ 351 21 366 5030</span><span class="sxs-lookup"><span data-stu-id="2d6f3-106">+351 21 366 5030</span></span>
+## <a name="phone-number"></a><span data-ttu-id="5b930-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="5b930-105">Phone number</span></span>
+<span data-ttu-id="5b930-106">+351 21 366 5030</span><span class="sxs-lookup"><span data-stu-id="5b930-106">+351 21 366 5030</span></span>
 
-## <a name="hours"></a><span data-ttu-id="2d6f3-107">Ore</span><span class="sxs-lookup"><span data-stu-id="2d6f3-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="2d6f3-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="2d6f3-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="5b930-107">Ore</span><span class="sxs-lookup"><span data-stu-id="5b930-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="5b930-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="5b930-108">Billing Support:</span></span>
 
-<span data-ttu-id="2d6f3-109">Inglese: Mon-Fri 9.00-17.00</span><span class="sxs-lookup"><span data-stu-id="2d6f3-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="5b930-109">Inglese: lun-ven 9:00-17:00</span><span class="sxs-lookup"><span data-stu-id="5b930-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="2d6f3-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="2d6f3-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="5b930-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="5b930-110">Technical Support:</span></span>
 
-<span data-ttu-id="2d6f3-111">Portoghese: Mon-Fri 9.00-22.00</span><span class="sxs-lookup"><span data-stu-id="2d6f3-111">Portuguese: Mon-Fri 9 AM-10 PM</span></span>
+<span data-ttu-id="5b930-111">Portoghese: Mon-Fri dalle 9.00 alle 22.00</span><span class="sxs-lookup"><span data-stu-id="5b930-111">Portuguese: Mon-Fri 9 AM-10 PM</span></span>
 
-<span data-ttu-id="2d6f3-112">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="2d6f3-112">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="5b930-112">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="5b930-112">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="2d6f3-113">Tariffe di chiamata internazionali applicate</span><span class="sxs-lookup"><span data-stu-id="2d6f3-113">International call charges apply</span></span>
+<span data-ttu-id="5b930-113">Si applicano addebiti per chiamate internazionali</span><span class="sxs-lookup"><span data-stu-id="5b930-113">International call charges apply</span></span>

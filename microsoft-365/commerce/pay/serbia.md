@@ -1,5 +1,5 @@
 ---
-title: Informazioni sui pagamenti per la Serbia
+title: Informazioni di pagamento per la Serbia
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,16 +20,16 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48648648"
 ---
-# <a name="payment-information-for-serbia"></a><span data-ttu-id="95ba3-103">Informazioni sui pagamenti per la Serbia</span><span class="sxs-lookup"><span data-stu-id="95ba3-103">Payment information for Serbia</span></span>
+# <a name="payment-information-for-serbia"></a><span data-ttu-id="fdc14-103">Informazioni di pagamento per la Serbia</span><span class="sxs-lookup"><span data-stu-id="fdc14-103">Payment information for Serbia</span></span>
 
-<span data-ttu-id="95ba3-104">[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="95ba3-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="fdc14-104">[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="fdc14-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="95ba3-105">Si prega di pagare solo in USD e i numeri delle fatture di riferimento sulla sua rimessa di pagamento.</span><span class="sxs-lookup"><span data-stu-id="95ba3-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="fdc14-105">Pagare solo in USD e fare riferimento ai numeri di fattura per la rimessa di pagamento.</span><span class="sxs-lookup"><span data-stu-id="fdc14-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="95ba3-106">Bonifico bancario</span><span class="sxs-lookup"><span data-stu-id="95ba3-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="fdc14-106">Bonifico bancario</span><span class="sxs-lookup"><span data-stu-id="fdc14-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="95ba3-107">**Banca:** Citibank, Londra</span><span class="sxs-lookup"><span data-stu-id="95ba3-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="95ba3-108">**Codice SWIFT:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="95ba3-108">**SWIFT Code:** CITIGB2L</span></span>  
-<span data-ttu-id="95ba3-109">**Codice IBAN:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="95ba3-109">**IBAN:** GB95CITI18500812510049</span></span>  
-<span data-ttu-id="95ba3-110">**Numero account:** 12510049</span><span class="sxs-lookup"><span data-stu-id="95ba3-110">**Account Number:** 12510049</span></span>  
-<span data-ttu-id="95ba3-111">**Nome account:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="95ba3-111">**Account Name:** MICROSOFT</span></span>  
+<span data-ttu-id="fdc14-107">**Bank:** Citibank, Londra</span><span class="sxs-lookup"><span data-stu-id="fdc14-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="fdc14-108">**Codice SWIFT:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="fdc14-108">**SWIFT Code:** CITIGB2L</span></span>  
+<span data-ttu-id="fdc14-109">**IBAN:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="fdc14-109">**IBAN:** GB95CITI18500812510049</span></span>  
+<span data-ttu-id="fdc14-110">**Numero di conto:** 12510049</span><span class="sxs-lookup"><span data-stu-id="fdc14-110">**Account Number:** 12510049</span></span>  
+<span data-ttu-id="fdc14-111">**Nome account:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="fdc14-111">**Account Name:** MICROSOFT</span></span>  

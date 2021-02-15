@@ -1,5 +1,5 @@
 ---
-title: Informazioni di pagamento per Tagikistan
+title: Informazioni di pagamento per il Tagikistan
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,16 +20,16 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48648420"
 ---
-# <a name="payment-information-for-tajikistan"></a><span data-ttu-id="f5847-103">Informazioni di pagamento per Tagikistan</span><span class="sxs-lookup"><span data-stu-id="f5847-103">Payment information for Tajikistan</span></span>
+# <a name="payment-information-for-tajikistan"></a><span data-ttu-id="935fb-103">Informazioni di pagamento per il Tagikistan</span><span class="sxs-lookup"><span data-stu-id="935fb-103">Payment information for Tajikistan</span></span>
 
-<span data-ttu-id="f5847-104">[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="f5847-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
+<span data-ttu-id="935fb-104">[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).</span><span class="sxs-lookup"><span data-stu-id="935fb-104">[Find another country or region](../billing-and-payments/pay-for-your-subscription.md).</span></span>
 
-<span data-ttu-id="f5847-105">Si prega di pagare solo in USD e i numeri delle fatture di riferimento sulla sua rimessa di pagamento.</span><span class="sxs-lookup"><span data-stu-id="f5847-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
+<span data-ttu-id="935fb-105">Pagare solo in USD e fare riferimento ai numeri di fattura per la rimessa di pagamento.</span><span class="sxs-lookup"><span data-stu-id="935fb-105">Please pay in USD only and reference invoice number(s) on your payment remittance.</span></span>
 
-## <a name="electronic-funds-transfer"></a><span data-ttu-id="f5847-106">Bonifico bancario</span><span class="sxs-lookup"><span data-stu-id="f5847-106">Electronic Funds Transfer</span></span>
+## <a name="electronic-funds-transfer"></a><span data-ttu-id="935fb-106">Bonifico bancario</span><span class="sxs-lookup"><span data-stu-id="935fb-106">Electronic Funds Transfer</span></span>
 
-<span data-ttu-id="f5847-107">**Banca:** Citibank, Londra</span><span class="sxs-lookup"><span data-stu-id="f5847-107">**Bank:** Citibank, London</span></span>  
-<span data-ttu-id="f5847-108">**Codice SWIFT:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="f5847-108">**SWIFT Code:** CITIGB2L</span></span>  
-<span data-ttu-id="f5847-109">**Codice IBAN:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="f5847-109">**IBAN:** GB95CITI18500812510049</span></span>  
-<span data-ttu-id="f5847-110">**Numero account:** 12510049</span><span class="sxs-lookup"><span data-stu-id="f5847-110">**Account Number:** 12510049</span></span>  
-<span data-ttu-id="f5847-111">**Nome account:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="f5847-111">**Account Name:** MICROSOFT</span></span>  
+<span data-ttu-id="935fb-107">**Bank:** Citibank, Londra</span><span class="sxs-lookup"><span data-stu-id="935fb-107">**Bank:** Citibank, London</span></span>  
+<span data-ttu-id="935fb-108">**Codice SWIFT:** CITIGB2L</span><span class="sxs-lookup"><span data-stu-id="935fb-108">**SWIFT Code:** CITIGB2L</span></span>  
+<span data-ttu-id="935fb-109">**IBAN:** GB95CITI18500812510049</span><span class="sxs-lookup"><span data-stu-id="935fb-109">**IBAN:** GB95CITI18500812510049</span></span>  
+<span data-ttu-id="935fb-110">**Numero di conto:** 12510049</span><span class="sxs-lookup"><span data-stu-id="935fb-110">**Account Number:** 12510049</span></span>  
+<span data-ttu-id="935fb-111">**Nome account:** MICROSOFT</span><span class="sxs-lookup"><span data-stu-id="935fb-111">**Account Name:** MICROSOFT</span></span>  
