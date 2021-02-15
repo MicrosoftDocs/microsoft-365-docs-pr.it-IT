@@ -46,23 +46,23 @@ Microsoft consiglia di completare le attività elencate nella tabella seguente a
 |---|---|---|---|
 |1 |[Configurare l'autenticazione a più fattori](secure-your-business-data.md#setup)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |2 |[Formazione degli utenti](secure-your-business-data.md#train)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|3|[Usare account amministratore dedicati](secure-your-business-data.md#admin)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|3 |[Usare account amministratore dedicati](secure-your-business-data.md#admin)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4 |[Aumentare il livello di protezione dal malware nella posta](secure-your-business-data.md#malware)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |5 |[Proteggere l'ambiente da ransomware](secure-your-business-data.md#ransomware)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6 |[Interrompere l'inoltro automatico per la posta elettronica](secure-your-business-data.md#forwarding)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |7 |[Usare Crittografia messaggi di Office](secure-your-business-data.md#encryption)||![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |8 |[Proteggere la posta elettronica da attacchi di phishing](secure-your-business-data.md#phishing)||![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |9 |[Protezione da allegati e file dannosi con allegati sicuri](secure-your-business-data.md#atp)||![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|10 |[Proteggere da attacchi di phishing con collegamenti sicuri](secure-your-business-data.md#phishingatp)||![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|10  |[Proteggere da attacchi di phishing con collegamenti sicuri](secure-your-business-data.md#phishingatp)||![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 
-Prima di iniziare, controllare [microsoft 365 Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) nel Centro sicurezza Microsoft 365. Da un dashboard centralizzato, è possibile monitorare e migliorare la sicurezza per identità, dati, app, dispositivi e infrastruttura di Microsoft 365. Vengono forniti punti per la configurazione delle funzionalità di sicurezza consigliate, l'esecuzione di attività relative alla sicurezza (ad esempio la visualizzazione di report) o la gestione di suggerimenti con un'applicazione o un software di terze parti. Con ulteriori approfondimenti e maggiore visibilità su un set più ampio di prodotti e servizi Microsoft, è possibile creare report sicuri sull'integrità della sicurezza dell'organizzazione.
+Prima di iniziare, controllare [microsoft 365 Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) nel Centro sicurezza Microsoft 365. Da un dashboard centralizzato, è possibile monitorare e migliorare la sicurezza per identità, dati, app, dispositivi e infrastruttura di Microsoft 365. Vengono forniti punti per la configurazione delle funzionalità di sicurezza consigliate, l'esecuzione di attività relative alla sicurezza (ad esempio la visualizzazione di report) o la gestione di suggerimenti con un'applicazione o un software di terze parti. Con ulteriori approfondimenti e maggiore visibilità su un set più ampio di prodotti e servizi Microsoft, è possibile avere la certezza di segnalare in modo sicuro l'integrità della sicurezza dell'organizzazione.
 
 ![Screenshot di Microsoft Secure Score](../../media/secure-score.png)
 
 ## <a name="1-set-up-multi-factor-authentication"></a>1: configurare l'autenticazione a più fattori
 <a name="setup"> </a>
 
-L'utilizzo dell'autenticazione a più fattori è uno dei modi più semplici ed efficaci per aumentare la sicurezza dell'organizzazione. È più facile di quanto sembri: quando accedi, l'autenticazione a più fattori significa che dovrai digitare un codice dal telefono per accedere a Microsoft 365. Ciò può impedire agli hacker di prendere il controllo se conoscono la password. L'autenticazione a più fattori è anche detta verifica in due passaggi. Gli utenti possono aggiungere facilmente la verifica in due passaggi alla maggior parte degli account, ad esempio agli account Google o Microsoft. Ecco come aggiungere la [verifica in due passaggi al tuo account Microsoft personale.](https://go.microsoft.com/fwlink/p/?linkid=2016403)
+L'utilizzo dell'autenticazione a più fattori è uno dei modi più semplici ed efficaci per aumentare la sicurezza dell'organizzazione. È più facile di quanto sembri: quando accedi, l'autenticazione a più fattori significa che dovrai digitare un codice dal telefono per accedere a Microsoft 365. Ciò può impedire agli hacker di assumere il controllo se conoscono la password. L'autenticazione a più fattori è anche detta verifica in due passaggi. Gli utenti possono aggiungere facilmente la verifica in due passaggi alla maggior parte degli account, ad esempio agli account Google o Microsoft. Ecco come aggiungere la [verifica in due passaggi al tuo account Microsoft personale.](https://go.microsoft.com/fwlink/p/?linkid=2016403)
 
 Per le aziende che usano Microsoft 365, aggiungere un'impostazione che richiede agli utenti di accedere con l'autenticazione a più fattori. Quando apporti questa modifica, agli utenti verrà richiesto di configurare il telefono per l'autenticazione a due fattori al successivo accesso.
 Per un video di formazione su come configurare l'autenticazione a [](https://support.microsoft.com/office/e12187b8-216a-4490-9e3b-df34a06fb787) più fattori e su come gli utenti completano la configurazione, vedi configurare l'autenticazione a più fattori [e la configurazione degli utenti.](https://support.microsoft.com/office/a32541df-079c-420d-9395-9d59354f7225)
@@ -92,7 +92,7 @@ Il manuale della campagna per la [cybersecurity](https://go.microsoft.com/fwlink
 
 Oltre a queste indicazioni, Microsoft consiglia agli utenti di eseguire le azioni descritte in questo articolo: Proteggere [l'account](https://support.microsoft.com/office/066d6216-a56b-4f90-9af3-b3a1e9a327d6)e i dispositivi da hacker e malware. Queste azioni includono:
 
-- Uso di password complesse
+- Utilizzo di password complesse
 
 - Protezione dei dispositivi
 
@@ -109,18 +109,18 @@ Microsoft consiglia inoltre agli utenti di proteggere i propri account di posta 
 
 Gli account amministrativi utilizzati per amministrare l'ambiente Microsoft 365 includono privilegi elevati. Si tratta di obiettivi importanti per hacker e cyber-criminali. Usa gli account amministratore solo per l'amministrazione. Gli amministratori devono disporre di un account utente separato per uso normale e non amministrativo e utilizzare il proprio account amministrativo solo se necessario per completare un'attività associata alla funzione lavorativa. Consigli aggiuntivi:
 
-- Assicurati che gli account amministratore siano impostati anche per l'autenticazione a più fattori.
+- Assicurarsi che gli account amministratore siano impostati anche per l'autenticazione a più fattori.
 
 - Prima di usare gli account amministratore, chiudi tutte le sessioni e le app del browser non correlate, inclusi gli account di posta elettronica personali.
 
 - Dopo aver completato le attività di amministrazione, assicurarsi di disconnettersi dalla sessione del browser.
 
-## <a name="4-raise-the-level-of-protection-against-malware-in-mail"></a>4: aumentare il livello di protezione dal malware nella posta elettronica
+## <a name="4-raise-the-level-of-protection-against-malware-in-mail"></a>4: aumentare il livello di protezione dal malware nella posta
 <a name="malware"> </a>
 
 L'ambiente Microsoft 365 include la protezione dal malware, ma è possibile aumentare questa protezione bloccando gli allegati con tipi di file usati comunemente per il malware. Per alzare la protezione antimalware nella posta elettronica, visualizzare [un breve video di formazione](https://support.microsoft.com/office/02b5783a-eea0-42e8-8856-62440718c3f0)o completare i passaggi seguenti:
 
-1. Accedere con <https://protection.office.com> le credenziali dell'account amministratore.
+1. Accedere con le credenziali <https://protection.office.com> dell'account amministratore.
 
 2. Nel riquadro di spostamento & sicurezza del Centro sicurezza e conformità, in **Gestione minacce,** **scegliere** Criteri \> **antimalware.**
 
@@ -219,11 +219,11 @@ L'organizzazione potrebbe aver configurato opzioni aggiuntive che applicano un'e
 
 ### <a name="to-send-protected-email"></a>Per inviare posta elettronica protetta
 
-In Outlook per PC, selezionare **Opzioni** nel messaggio di posta elettronica e quindi scegliere **Autorizzazioni.**
+In Outlook per PC, selezionare **Opzioni nel** messaggio di posta elettronica e quindi scegliere **Autorizzazioni.**
 
 ![Crittografia dei messaggi di posta elettronica in Outlook](../../media/08e90a7e-a2d2-41a4-bae9-0a46b4ce639a.png)
 
-In Outlook.com selezionare **Proteggi nel** messaggio di posta elettronica. La protezione predefinita è **Non inoltrare.** Per modificare questa impostazione per crittografare, selezionare **Modifica crittografia** \> **autorizzazioni.**
+In Outlook.com selezionare **Proteggi nel** messaggio di posta elettronica. La protezione predefinita è **Non inoltrare.** Per modificare questa impostazione in modo da crittografare, selezionare **Cambia autorizzazioni** \> **crittografa.**
 
 ![Crittografia dei messaggi di posta elettronica in Outlook.com](../../media/329ccf50-f6b1-4fb8-b249-60b907a82b7e.png)
 
@@ -263,14 +263,14 @@ Per creare un criterio anti-phishing in Defender per Office 365, visualizzare un
 |Nome|Dominio e personale della campagna più importante|
 |Descrizione|Assicurarsi che il personale più importante e il dominio non vengano rappresentati.|
 |Aggiungere gli utenti da proteggere|Selezionare **+ Aggiungi una condizione, Il destinatario è**. Digitare i nomi utente o immettere l'indirizzo di posta elettronica del candidato, del manager della campagna e di altri membri importanti del personale. È possibile aggiungere fino a 20 indirizzi interni ed esterni che si desidera proteggere dalla rappresentazione.|
-|Aggiungere i domini da proteggere|Selezionare **+ Aggiungere una condizione, il dominio del destinatario è**. Immettere il dominio personalizzato associato all'abbonamento a Microsoft 365, se definito. È possibile immettere più di un dominio.|
+|Aggiungere i domini da proteggere|Select **+ Add a condition, The recipient domain is**. Immettere il dominio personalizzato associato all'abbonamento a Microsoft 365, se definito. È possibile immettere più di un dominio.|
 |Scegli azioni|Se la posta elettronica viene inviata da un utente rappresentato: selezionare Reindirizza il messaggio a un altro indirizzo **di** posta elettronica e quindi digitare l'indirizzo di posta elettronica dell'amministratore della sicurezza; ad esempio, securityadmin@contoso.com. <br/> Se la posta elettronica viene inviata da un dominio rappresentato: selezionare **Messaggio in quarantena.**|
 |Intelligence della cassetta postale|Per impostazione predefinita, la funzione di intelligence della cassetta postale è selezionata quando si creano nuovi criteri anti-phishing. Per ottenere risultati ottimali, lasciare l’opzione **attiva**.|
 |Aggiungere mittenti e domini attendibili|Per questo esempio, non definire alcuna sostituzione.|
 |Applicato a|Selezionare **Il dominio del destinatario è**. In **Uno dei seguenti**, selezionare **Scegli**. Selezionare **+ Aggiungi**. Selezionare la casella di controllo accanto al nome del dominio, ad esempio contoso.com, nell'elenco e quindi selezionare **Aggiungi.** Scegliere **Fatto**.|
 |
 
-Per altre informazioni, vedere [Configurare i criteri anti-phishing in Defender per Office 365.](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies)
+Per ulteriori informazioni, vedere [Configurare i criteri anti-phishing in Defender per Office 365.](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies)
 
 ## <a name="9-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>9: proteggere da allegati e file dannosi con allegati sicuri
 <a name="atp"> </a>
@@ -304,7 +304,7 @@ Per creare un criterio allegati sicuri, visualizzare un [breve video di formazio
 
 Per ulteriori informazioni, vedere [Configurare i criteri anti-phishing in Defender per Office 365.](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies)
 
-## <a name="10-protect-against-phishing-attacks-with-safe-links"></a>10: Proteggere da attacchi di phishing con collegamenti sicuri
+## <a name="10-protect-against-phishing-attacks-with-safe-links"></a>10: proteggere da attacchi di phishing con collegamenti sicuri
 <a name="phishingatp"> </a>
 
 A volte gli hacker nascondono siti Web dannosi nei collegamenti nei messaggi di posta elettronica o in altri file. Collegamenti sicuri, parte di Microsoft Defender per Office 365, consente di proteggere l'organizzazione fornendo la verifica time-of-click degli indirizzi Web (URL) nei messaggi di posta elettronica e nei documenti di Office. La protezione viene definita tramite i criteri collegamenti sicuri.
@@ -315,7 +315,7 @@ A volte gli hacker nascondono siti Web dannosi nei collegamenti nei messaggi di 
 
 - Aggiungere un nuovo criterio destinato a tutti i destinatari nel dominio.
 
-Per accedere a Collegamenti sicuri, visualizzare un [breve video di formazione](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)o completare i passaggi seguenti:
+Per accedere a Collegamenti sicuri, visualizza un [breve video di formazione](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa)o completa i passaggi seguenti:
 
 1. Accedere con <https://protection.office.com> l'account amministratore.
 
@@ -325,7 +325,7 @@ Per accedere a Collegamenti sicuri, visualizzare un [breve video di formazione](
 
 Per modificare il criterio predefinito:
 
-1. Nella pagina Collegamenti sicuri, in **Criteri applicabili all'intera** organizzazione, fare doppio clic sul **criterio** Predefinito.
+1. Nella pagina Collegamenti sicuri, in Criteri **applicabili all'intera** organizzazione, fare doppio clic sul **criterio** Predefinito.
 
 2. In **Impostazioni applicabili al contenuto in Office 365** immettere un URL da bloccare, ad esempio _example.com_ e selezionare **+** .
 

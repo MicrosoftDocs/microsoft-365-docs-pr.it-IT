@@ -61,7 +61,7 @@ Nella home page del Centro argomenti è possibile visualizzare gli argomenti del
 
    ![Connessioni suggerite](../media/knowledge-management/my-topics.png) </br>
  
-- Connessioni confermate: si tratta di argomenti in cui sei stato aggiunto nella pagina dell'argomento o hai confermato una connessione suggerita all'argomento. Gli argomenti verranno spostati dalla sezione suggerita alla sezione confermata quando si conferma una connessione suggerita.
+- Connessioni confermate: si tratta di argomenti in cui si è aggiunti nella pagina dell'argomento o che è stata confermata una connessione suggerita all'argomento. Gli argomenti verranno spostati dalla sezione suggerita a conferma quando si conferma una connessione suggerita.
  
    ![Argomenti confermati](../media/knowledge-management/my-topics-confirmed.png) </br>
 
@@ -72,7 +72,7 @@ Dopo aver confermato la connessione a un argomento, l'utente può apportare modi
 
 Per utilizzare la sezione **Gestisci argomenti** del Centro argomenti, è necessario disporre delle autorizzazioni di gestione degli argomenti necessarie per il ruolo di knowledge manager.  L'amministratore può assegnare [](set-up-topic-experiences.md)queste autorizzazioni agli utenti durante [](topic-experiences-knowledge-rules.md) la configurazione della gestione delle informazioni oppure i nuovi utenti possono essere aggiunti successivamente da un amministratore tramite l'interfaccia di amministrazione di Microsoft 365.
 
-Nella pagina Gestisci argomenti il dashboard dell'argomento mostra tutti gli argomenti, a cui si ha accesso, identificati dai percorsi di origine specificati. Ogni argomento mostrerà la data in cui è stato individuato l'argomento. Un utente a cui **sono** state assegnate le autorizzazioni Gestione argomenti può esaminare gli argomenti non confermati e scegliere di:
+Nella pagina Gestisci argomenti il dashboard dell'argomento mostra tutti gli argomenti, a cui si ha accesso, identificati dai percorsi di origine specificati. Ogni argomento mostrerà la data in cui è stato individuato l'argomento. Un utente a cui sono state assegnate **le** autorizzazioni Gestione argomenti può esaminare gli argomenti non confermati e scegliere di:
 - Confermare l'argomento: evidenzia l'argomento per gli utenti che hanno accesso ai file e alle pagine correlati all'argomento e consente loro di visualizzare la scheda dell'argomento e la pagina dell'argomento associati.
 - Pubblicare l'argomento: modificare le informazioni sull'argomento per migliorare la qualità dell'argomento identificato inizialmente ed evidenziarlo per tutti gli utenti che hanno accesso in visualizzazione agli argomenti. 
 - Rifiuta l'argomento: rende l'argomento non disponibile per gli utenti. L'argomento viene spostato nella **scheda Rifiutato** e può essere confermato in un secondo momento, se necessario. 
@@ -86,7 +86,7 @@ Nella pagina Gestisci argomenti il dashboard dell'argomento mostra tutti gli arg
 Se si dispone **delle autorizzazioni per la creazione e la** modifica di argomenti, è possibile:
 
 - [Modificare gli argomenti esistenti:](edit-a-topic.md)è possibile apportare modifiche alle pagine degli argomenti esistenti create tramite l'individuazione.
-- [Creare nuovi argomenti:](create-a-topic.md)è possibile creare nuovi argomenti per quelli che non sono stati trovati tramite l'individuazione o se gli strumenti di intelligenza artificiale non hanno trovato prove sufficienti per creare un argomento.
+- [Creare nuovi argomenti:](create-a-topic.md)puoi creare nuovi argomenti per quelli che non sono stati trovati tramite individuazione o se gli strumenti di intelligenza artificiale non hanno trovato prove sufficienti per creare un argomento.
 
 
 

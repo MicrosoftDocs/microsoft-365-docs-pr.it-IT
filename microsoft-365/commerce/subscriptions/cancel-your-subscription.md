@@ -35,16 +35,16 @@ ms.locfileid: "50114730"
 
 ::: moniker-end
 
-*Idoneità:* Se agli utenti sono assegnate meno di 25 licenze, è possibile annullare la versione di valutazione di Microsoft 365 per le aziende o l'abbonamento a pagamento online nell'interfaccia di amministrazione di Microsoft 365 in qualsiasi momento. Se agli utenti sono assegnate più di 25 licenze, chiamare [il supporto tecnico per annullare l'abbonamento.](../../admin/contact-support-for-business-products.md)
+*Idoneità:* Se agli utenti sono assegnate meno di 25 licenze, è possibile annullare la sottoscrizione di valutazione o a pagamento di Microsoft 365 per le aziende online nell'interfaccia di amministrazione di Microsoft 365 in qualsiasi momento. Se agli utenti sono assegnate più di 25 licenze, chiamare il [supporto tecnico per annullare l'abbonamento.](../../admin/contact-support-for-business-products.md)
 
 *Rimborso:* eventuali crediti proporzionali verranno rimessi entro il successivo ciclo di fatturazione.
 
 > [!NOTE]
 > Se si dispone di più abbonamenti allo stesso prodotto, ad esempio Microsoft 365 Business Premium, annullarne uno non inciderà sulle licenze o sui servizi acquistati all'interno degli altri abbonamenti.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
-Per eseguire le attività in questo articolo, è necessario essere un amministratore globale o di fatturazione. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
+Per eseguire le attività di questo articolo, è necessario essere un amministratore globale o di fatturazione. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="steps-to-cancel-your-subscription"></a>Procedura per annullare l'abbonamento
 
@@ -81,7 +81,7 @@ L'abbonamento ora viene visualizzato in **stato** Disabilitato e ha funzionalit�
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
 
-2. Nella pagina **Sottoscrizioni** selezionare una sottoscrizione.
+2. Nella pagina **Sottoscrizioni** selezionare un abbonamento.
 
 3. Scegliere **Annulla abbonamento dal** menu **Altre azioni.**
 
@@ -95,13 +95,13 @@ L'abbonamento ora viene visualizzato in **stato** Disabilitato e ha funzionalit�
 
 ## <a name="what-happens-when-you-cancel-a-subscription"></a>Cosa succede quando si annulla un abbonamento
 
-Se si annulla una sottoscrizione prima della fine del periodo di tempo, lo stato della sottoscrizione passa direttamente allo stato disabilitato. Per la maggior parte degli abbonamenti, nella maggior parte dei paesi e delle aree geografiche lo stato disabilitato dura 90 giorni. Gli amministratori possono comunque accedere ed eseguire il backup dei dati per l'organizzazione [](back-up-data-before-switching-plans.md) mentre l'abbonamento è in stato disabilitato, ma è consigliabile che gli amministratori eservino il backup dei dati prima di annullare un abbonamento, soprattutto se si tratta dell'unico abbonamento. Gli amministratori possono anche riattivare la sottoscrizione mentre è nello stato disabilitato.
+Se si annulla una sottoscrizione prima della fine del periodo di tempo, lo stato della sottoscrizione passa direttamente allo stato disabilitato. Per la maggior parte degli abbonamenti, nella maggior parte dei paesi e delle aree geografiche lo stato disabilitato dura 90 giorni. Gli amministratori possono comunque accedere ed eseguire il backup dei dati per l'organizzazione [](back-up-data-before-switching-plans.md) mentre l'abbonamento è in stato disabilitato, ma è consigliabile che gli amministratori eservino il backup dei dati prima di annullare una sottoscrizione, soprattutto se si tratta dell'unico abbonamento. Gli amministratori possono anche riattivare la sottoscrizione mentre è nello stato disabilitato.
 
-Dopo 90 minuti, la sottoscrizione passa allo stato eliminato. I dati che lasci in ritardo possono essere eliminati dopo questi 90 giorni non oltre i 180 giorni successivi all'annullamento. Non è possibile rimuovere una modalità di pagamento da un abbonamento annullato fino a quando non raggiunge lo stato eliminato.
+Dopo 90 minuti, la sottoscrizione passa allo stato eliminato. I dati che lasci in ritardo possono essere eliminati dopo questi 90 giorni non oltre i 180 giorni dall'annullamento. Non è possibile rimuovere una modalità di pagamento da un abbonamento annullato fino a quando non raggiunge lo stato eliminato.
 
 ### <a name="what-to-expect-for-you-and-your-users-if-you-cancel-a-subscription"></a>Conseguenze per amministratori e utenti dell'annullamento di una sottoscrizione
   
-- **Accesso amministratore** Gli amministratori possono comunque accedere all'interfaccia di amministrazione e acquistare altri abbonamenti in base alle esigenze. Gli amministratori globali o di fatturazione hanno 90 giorni per [riattivare](reactivate-your-subscription.md) la sottoscrizione con tutti i dati intatti.
+- **Accesso amministratore** Gli amministratori possono comunque accedere all'interfaccia di amministrazione e acquistare altri abbonamenti in base alle esigenze. Gli amministratori globali o di fatturazione hanno 90 giorni per [riattivare l'abbonamento](reactivate-your-subscription.md) con tutti i dati intatti.
 
 - **Accesso utente** Gli utenti non potranno usare servizi come OneDrive for Business o accedere ai dati dei clienti come la posta elettronica o i documenti nei siti del team. Le applicazioni di Office, come Word e Excel, entreranno alla fine in una modalità di sola lettura con funzionalità ridotte e visualizzeranno [notifiche di prodotto senza licenza](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx).
 

@@ -51,7 +51,7 @@ Puoi usare una carta di credito o di debito o un conto corrente bancario per pag
 > [!IMPORTANT]
 > Il pagamento tramite conto corrente bancario non è disponibile in alcuni paesi o aree geografiche.
 
-Puoi pagare l'abbonamento con una carta di credito o di debito o un conto corrente bancario. Quando si paga con uno di questi metodi di pagamento, microsoft continua ad addebitare tale modalità di pagamento fino alla scadenza o all'annullamento dell'abbonamento. È possibile [gestire le modalità di pagamento](manage-payment-methods.md) ogni volta che è necessario. È anche possibile scegliere di [ricevere una copia dell'estratto conto come allegato di posta elettronica](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email).
+Si può pagare l'abbonamento con una carta di credito o di debito, oppure con un conto corrente bancario. Quando si paga con uno di questi metodi, il metodo di pagamento scelto viene addebitato fino alla scadenza o alla cancellazione dell'abbonamento. È possibile [gestire le modalità di pagamento](manage-payment-methods.md) ogni volta che è necessario. È anche possibile scegliere di [ricevere una copia dell'estratto conto come allegato di posta elettronica](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email).
 
 ## <a name="paying-by-invoice"></a>Pagamento tramite fattura
 
@@ -61,23 +61,23 @@ In alcuni casi, è possibile pagare l'abbonamento tramite fattura con un assegno
 - Avere un costo di sottoscrizione superiore a un determinato importo (questo importo varia in base alla posizione del servizio)
 - Superare una verifica del credito
 
-Se è necessaria una verifica del credito, si viene informati quando si acquista l'abbonamento. Se si accetta di essere contattati, si ottiene un messaggio di posta elettronica che include ulteriori informazioni sulla richiesta di approvazione del credito. Le verifiche del credito vengono in genere completate in due giorni lavorativi.
+Se è necessaria una verifica del credito, questa informazione verrà comunicata al momento dell'acquisto dell'abbonamento. Se si accetta di essere contattati, si riceverà un messaggio di posta elettronica con altre informazioni sulla richiesta di approvazione del credito. Le verifiche del credito vengono in genere completate in due giorni lavorativi.
 
 > [!NOTE]
 > I clienti che vivono in Brasile possono pagare un abbonamento tramite Boleto Bancario. Se è stata selezionata questa opzione, il bollettino per il pagamento viene inviato all'indirizzo di posta elettronica specificato durante l'acquisto dell'abbonamento entro 10 giorni lavorativi dalla data dell'ordine. La data di scadenza è 30 giorni dopo la data dell'ordine. Se non si riceve il Boleto tramite posta elettronica, controllare la cartella della posta indesiderata o contattare il supporto.
 >
 > Se si preferisce, è possibile scegliere il pagamento tramite bonifico bancario. L'agenzia e il numero di conto corrente sono indicati nella parte inferiore della fattura. È necessario immettere il numero di fattura nel campo di identificazione del bonifico.
 
-Se si paga tramite fattura per l'abbonamento, si ottiene un messaggio di posta elettronica quando l'estratto conto è pronto per la visualizzazione. Questo messaggio di posta elettronica non contiene una copia dell'estratto conto. Tuttavia, è possibile scegliere di [ricevere una copia dell'estratto conto tramite posta elettronica.](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email) L'estratto conto include informazioni dettagliate sulle opzioni per effettuare un pagamento e su dove inviarlo. Se si immette un numero di ordine d'acquisto quando si acquista un abbonamento, il numero viene visualizzato nell'estratto conto. Per informazioni su come accedere agli estratti conto, vedere [Visualizzare l'estratto conto o la fattura](view-your-bill-or-invoice.md).
+Se si paga l'abbonamento tramite fattura, si riceverà un messaggio di posta elettronica quando l'estratto conto sarà pronto per essere visualizzato. Questo messaggio di posta elettronica non contiene una copia dell'estratto conto. Tuttavia, è possibile scegliere di [ricevere una copia dell'estratto conto come allegato di posta elettronica](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email). L'estratto conto include i dettagli sulle opzioni di pagamento e su dove inviare il pagamento. Se si immette un numero di ordine d'acquisto quando si acquista un abbonamento, il numero viene visualizzato nell'estratto conto. Per informazioni su come accedere agli estratti conto, vedere [Visualizzare l'estratto conto o la fattura](view-your-bill-or-invoice.md).
 
 ## <a name="what-if-i-have-an-outstanding-balance"></a>Che cosa occorre fare in presenza di saldi insoluti?
 
 If we're unable to charge the payment method on file, we send an email that lets you know there's a problem. The email briefly states what the problem is and includes a link where you can check the outstanding balance. Continueremo a ripetere la transazione ogni pochi giorni per 30 giorni, durante il quale la sottoscrizione è in un periodo di tolleranza. Ogni volta che una transazione ha esito negativo, si riceve un avviso tramite posta elettronica sull'errore.
 
-Se hai aggiunto personalmente la modalità di pagamento con un importo dovuto passato, puoi usare Liquidazione saldo **per** effettuare un pagamento. La modalità di pagamento utilizzata per pagare l'importo scaduto diventa la nuova modalità di pagamento per tutte le sottoscrizioni che hanno utilizzato la modalità di pagamento rifiutata.
+Se hai aggiunto personalmente la modalità di pagamento con un importo dovuto passato, puoi usare Liquidazione saldo **per** effettuare un pagamento. Il metodo di pagamento usato per pagare l'importo insoluto diventa il nuovo metodo di pagamento per tutti gli abbonamenti che usano la modalità di pagamento rifiutata.
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatture**& pagamenti e quindi  >   selezionare la scheda <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Modalità di</a> pagamento.
-1. Un messaggio di avviso indica la modalità di pagamento rifiutata. Selezionare **Liquidazione saldo.**
+1. Un messaggio di avviso indica quale modalità di pagamento è stata rifiutata. Selezionare **Liquidazione saldo.**
 1. Nel riquadro destro scegliere una modalità di pagamento diversa oppure selezionare **Aggiungi una nuova modalità di pagamento.**
 1. Dopo aver aggiornato le informazioni sulla modalità di pagamento, selezionare **Salva.**
 
@@ -256,10 +256,10 @@ Puoi passare al pagamento tramite fattura solo se l'abbonamento costa oltre un d
 
 ## <a name="can-i-change-from-paying-by-invoice-to-using-a-different-payment-method"></a>È possibile passare dal pagamento tramite fattura all'utilizzo di un metodo di pagamento diverso?
 
-Non puoi passare automaticamente dal pagamento tramite fattura al pagamento con un metodo di pagamento diverso. È invece [](../try-or-buy-microsoft-365.md#buy-a-different-subscription) necessario acquistare un abbonamento diverso a pagamento con una carta di credito o di debito o un conto corrente bancario, [](../subscriptions/move-users-different-subscription.md)spostare tutti gli utenti nel nuovo abbonamento e quindi annullare [l'abbonamento precedente.](../subscriptions/cancel-your-subscription.md)
+Non è possibile passare automaticamente dal pagamento tramite fattura a un metodo di pagamento diverso. È necessario invece [acquistare un altro abbonamento](../try-or-buy-microsoft-365.md#buy-a-different-subscription) con una carta di credito o debito o un conto corrente bancario, [spostare tutti gli utenti nel nuovo abbonamento](../subscriptions/move-users-different-subscription.md), e infine [cancellare il vecchio abbonamento](../subscriptions/cancel-your-subscription.md).
 
 ## <a name="related-articles"></a>Articoli correlati
 
 [Gestire i metodi di pagamento](manage-payment-methods.md) (articolo)\
 [Visualizzare la fattura](view-your-bill-or-invoice.md) (articolo)\
-[Comprendere la fattura (articolo)](understand-your-invoice2.md)
+[Informazioni sulla fattura (articolo)](understand-your-invoice2.md)

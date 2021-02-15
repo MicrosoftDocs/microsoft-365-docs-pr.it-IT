@@ -33,7 +33,7 @@ ms.locfileid: "50114694"
 
 Gli amministratori possono vedere gli acquisti self-service effettuati dagli utenti dell'organizzazione. Vengono visualizzati il nome del prodotto, il nome dell'acquirente, le sottoscrizioni acquistate, la data di scadenza, il prezzo di acquisto e gli utenti assegnati per ogni acquisto self-service. Se richiesto dall'organizzazione, è possibile disattivare l'acquisto self-service in base al prodotto tramite PowerShell. Si dispone degli stessi criteri di accesso e gestione dei dati sui prodotti acquistati tramite acquisto self-service o centralmente.
 
-È inoltre possibile controllare se gli utenti dell'organizzazione possono effettuare acquisti self-service. Per ulteriori informazioni, vedere [Use AllowSelfServicePurchase per il modulo MS Commerce PowerShell.](allowselfservicepurchase-powershell.md)
+È inoltre possibile controllare se gli utenti dell'organizzazione possono effettuare acquisti in modalità self-service. Per ulteriori informazioni, vedere [Use AllowSelfServicePurchase per il modulo MS Commerce PowerShell.](allowselfservicepurchase-powershell.md)
 
 ## <a name="view-self-service-subscriptions"></a>Visualizzare le sottoscrizioni self-service
 
@@ -53,7 +53,7 @@ Gli amministratori possono vedere gli acquisti self-service effettuati dagli ute
 
 ## <a name="disable-or-enable-self-service-purchases"></a>Disabilitare o abilitare gli acquisti self-service
 
-È possibile disabilitare o abilitare gli acquisti self-service per gli utenti dell'organizzazione. Il modulo **MS Commerce** PowerShell include un valore del parametro **PolicyID** per **AllowSelfServicePurchase** che consente di controllare se gli utenti dell'organizzazione possono effettuare acquisti in modalità self-service e per quali prodotti.
+È possibile disabilitare o abilitare gli acquisti self-service per gli utenti dell'organizzazione. Il modulo **MSSelfService** PowerShell include un valore del parametro **PolicyID** per **AllowSelfServicePurchase** che consente di controllare se gli utenti dell'organizzazione possono effettuare acquisti in modalità self-service e per quali prodotti.
 
 È possibile utilizzare il **modulo MS Commerce** PowerShell per:
 
@@ -76,14 +76,14 @@ Per ulteriori informazioni, vedere [Use AllowSelfServicePurchase per il modulo M
 
 ## <a name="take-over-a-self-service-purchase-subscription"></a>Prendere il controllo di una sottoscrizione di acquisto self-service
 
-È possibile prendere il controllo di una sottoscrizione di acquisto self-service effettuata da un utente dell'organizzazione. Quando si prende il controllo di una sottoscrizione di acquisto self-service, sono disponibili due opzioni:
+È possibile assumere il controllo di una sottoscrizione di acquisto self-service effettuata da un utente dell'organizzazione. Quando si prende il controllo di una sottoscrizione di acquisto self-service, sono disponibili due opzioni:
 
 1. Spostare gli utenti in un altro abbonamento e annullare l'abbonamento originale.
 2. Annullare la sottoscrizione di acquisto self-service e rimuovere le licenze dagli utenti assegnati.
 
 ### <a name="move-users-to-a-different-subscription"></a>Trasferire gli utenti a un abbonamento diverso
 
-Quando si spostano gli utenti in un abbonamento diverso, l'abbonamento precedente viene automaticamente annullato. L'utente che ha originariamente acquistato la sottoscrizione di acquisto self-service riceve un messaggio di posta elettronica che indica che l'abbonamento è stato annullato.
+Quando si spostano gli utenti in un abbonamento diverso, l'abbonamento precedente viene automaticamente annullato. L'utente che ha acquistato originariamente la sottoscrizione di acquisto self-service riceve un messaggio di posta elettronica che indica che l'abbonamento è stato annullato.
 
 > [!NOTE]
 > È necessario disporre di una licenza disponibile per ogni utente in cui si sta spostando l'abbonamento in cui si stanno spostando gli utenti.
@@ -93,7 +93,7 @@ Quando si spostano gli utenti in un abbonamento diverso, l'abbonamento precedent
 3. Selezionare l'abbonamento che si desidera assumere.
 4. Nella sezione Sottoscrizioni e  impostazioni della pagina dei dettagli dell'abbonamento selezionare **Prendi il controllo della sottoscrizione.**
 5. Nel riquadro destro selezionare Sposta **utenti.**
-6. Selezionare il prodotto in cui si desidera spostare gli utenti, quindi **selezionare Sposta utenti.**
+6. Selezionare il prodotto in cui si desidera spostare gli utenti, quindi selezionare **Sposta utenti.**
 7. Nella casella **Sposta utenti in** selezionare Sposta **utenti.** Il processo di spostamento potrebbe richiedere alcuni minuti. Non chiudere il browser durante l'esecuzione del processo.
 8. Al termine del processo di spostamento, chiudere il riquadro Spostamento **completato.**
 9. Nella pagina dei dettagli della sottoscrizione, lo **stato della** sottoscrizione per la sottoscrizione acquistata in self-service viene visualizzato come **Eliminato.**

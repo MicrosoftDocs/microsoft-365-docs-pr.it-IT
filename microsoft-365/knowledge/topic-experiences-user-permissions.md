@@ -24,7 +24,7 @@ ms.locfileid: "50107394"
 Con le impostazioni delle autorizzazioni per gli argomenti è possibile scegliere:
 
 - Quali utenti possono creare e modificare gli argomenti: creare nuovi argomenti che non sono stati trovati durante l'individuazione o modificare i dettagli degli argomenti esistenti.
-- Quali utenti possono gestire gli argomenti: accedere al Centro gestione argomenti e visualizzare i commenti e suggerimenti sugli argomenti, nonché spostare gli argomenti nel ciclo di vita.
+- Quali utenti possono gestire gli argomenti: accedere al Centro gestione argomenti e visualizzare il feedback sugli argomenti, nonché spostare gli argomenti nel ciclo di vita.
 
 ## <a name="to-access-topics-management-settings"></a>Per accedere alle impostazioni di gestione degli argomenti:
 

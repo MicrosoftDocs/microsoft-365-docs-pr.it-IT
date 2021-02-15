@@ -42,7 +42,7 @@ ms.locfileid: "50114478"
 
 ::: moniker-end
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 - Per annullare l'assegnazione delle licenze, è necessario essere un amministratore globale, di licenza e utente. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore di Microsoft 365](../add-users/about-admin-roles.md).
 - È possibile [rimuovere licenze da account utente con PowerShell di Office 365](https://docs.microsoft.com/microsoft-365/enterprise/remove-licenses-from-user-accounts-with-microsoft-365-powershell).
@@ -52,7 +52,7 @@ ms.locfileid: "50114478"
 
 ## <a name="use-the-licenses-page-to-unassign-licenses"></a>Usare la pagina Licenze per annullare l'assegnazione delle licenze
 
-Quando si utilizza la **pagina Licenze** per annullare l'assegnazione delle licenze, si annullano le licenze per un prodotto specifico per un massimo di 20 utenti.
+Quando si utilizza la **pagina Licenze** per annullare l'assegnazione delle licenze, si annulla l'assegnazione delle licenze per un prodotto specifico per un massimo di 20 utenti.
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenze</a>.
 2. Selezionare il prodotto per cui si desidera annullare l'assegnazione delle licenze.

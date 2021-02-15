@@ -21,7 +21,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
-description: Informazioni su come distribuire componenti aggiuntivi a utenti e gruppi dell'organizzazione tramite la distribuzione centralizzata nell'interfaccia di amministrazione.
+description: Informazioni su come distribuire i componenti aggiuntivi agli utenti e ai gruppi dell'organizzazione tramite la distribuzione centralizzata nell'interfaccia di amministrazione.
 ms.openlocfilehash: 5d17242d98f0e58ec4bfbcfd5b7014e6a6e0a6c5
 ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
 ms.translationtype: MT
@@ -68,9 +68,9 @@ Prima di iniziare, vedere [Determine if Centralized Deployment of add-ins works 
 2. Selezionare **Distribuisci componente aggiuntivo** nella parte superiore della pagina e quindi fare clic su **Avanti.**
  
     > [!NOTE]
-    > L'interfaccia di amministrazione viene aggiornata all'esperienza di distribuzione con le app integrate. Se non vedi i passaggi precedenti, vai alla sezione Distribuzione centralizzata andando su **Impostazioni**  >  **app integrate.** Nella parte superiore della **pagina App integrate** scegliere Componenti **aggiuntivi.**
+    > L'interfaccia di amministrazione viene aggiornata all'esperienza di distribuzione con le app integrate. Se i passaggi precedenti non sono visualizzati, passare alla sezione Distribuzione centralizzata andando su **Impostazioni**  >  **app integrate.** Nella parte superiore della **pagina App integrate** scegliere Componenti **aggiuntivi.**
     
-3. Selezionare un'opzione e seguire le istruzioni.
+3. Seleziona un'opzione e segui le istruzioni.
   
 4. Se è stata selezionata l'opzione per aggiungere un componente aggiuntivo da Office Store, effettuare la selezione del componente aggiuntivo. </br>
 
@@ -107,7 +107,7 @@ Gli amministratori possono assegnare un componente aggiuntivo a tutti gli utenti
     
 - **Gruppi** Se si assegna un componente aggiuntivo a un gruppo, agli utenti aggiunti al gruppo viene assegnato automaticamente il componente aggiuntivo. Quando un utente viene rimosso da un gruppo, perde l'accesso al componente aggiuntivo. In entrambi i casi, non è necessaria alcuna azione aggiuntiva da parte dell'amministratore. 
 
-- **Just me** Se assegni un componente aggiuntivo a te stesso, il componente aggiuntivo viene assegnato solo al tuo account, ideale per testarlo.
+- **Just me** Se assegni un componente aggiuntivo solo a te stesso, il componente aggiuntivo viene assegnato solo al tuo account, ideale per testare il componente aggiuntivo.
     
 L'opzione appropriata per l'organizzazione dipende dalla configurazione. È tuttavia consigliabile eseguire le assegnazioni utilizzando i gruppi. Gli amministratori possono trovare più semplice gestire i componenti aggiuntivi usando i gruppi e controllando l'appartenenza a tali gruppi invece di assegnare singoli utenti ogni volta. In alcune situazioni, è possibile limitare l'accesso a un piccolo gruppo di utenti assegnando manualmente gli utenti a utenti specifici.
   
@@ -136,7 +136,7 @@ Gli aggiornamenti per i componenti aggiuntivi vengono eseguiti come segue:
     
 - **Componente aggiuntivo di Office Store:** Se un amministratore ha selezionato un componente aggiuntivo da Office Store e questo viene aggiornato in Office Store, il componente aggiuntivo verrà aggiornato in un secondo momento nella distribuzione centralizzata. All'avvio successivo delle applicazioni di Office rilevanti, il componente aggiuntivo verrà aggiornato. L'applicazione Web può essere modificata in qualsiasi momento. 
   
-## <a name="learn-more"></a>Scopri di più
+## <a name="learn-more"></a>Ulteriori informazioni
 
 [Gestire i componenti aggiuntivi nell'interfaccia di amministrazione](manage-addins-in-the-admin-center.md)
 

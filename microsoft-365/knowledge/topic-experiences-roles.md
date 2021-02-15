@@ -1,5 +1,5 @@
 ---
-title: Ruoli di Microsoft Viva Topics
+title: Ruoli microsoft Viva Topics
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -31,7 +31,7 @@ Quando si usano Viva Topics nell'ambiente Microsoft 365, gli utenti possono aver
 
 ## <a name="topic-viewer"></a>Visualizzatore argomenti
 
-I visualizzatori di argomenti sono utenti dell'organizzazione che possono visualizzare gli argomenti evidenziati nel sito moderno di SharePoint, in Microsoft Search tramite SharePoint e Office.com e nel Centro argomenti. Possono visualizzare ulteriori dettagli su un argomento nella pagina dell'argomento. 
+I visualizzatori di argomenti sono utenti dell'organizzazione in grado di visualizzare gli argomenti evidenziati nel sito moderno di SharePoint, in Microsoft Search tramite SharePoint e Office.com e nel Centro argomenti. Possono visualizzare altri dettagli su un argomento nella pagina dell'argomento. 
 
 Per fare in modo che le evidenziazioni degli argomenti e le relative pagine degli argomenti siano visibili a un visualizzatore di argomenti, l'utente deve:
 -   [L'amministratore di Microsoft](https://docs.microsoft.com/microsoft-365/knowledge/set-up-topic-experiences#assign-licenses) 365 deve assegnare una licenza Viva Topics.

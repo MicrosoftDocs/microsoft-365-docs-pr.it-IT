@@ -79,7 +79,7 @@ Innanzitutto, connettersi a Exchange Management PowerShell con le credenziali di
 
 1. Visualizzare che la nuova regola del journal è stata creata correttamente in Exchange Management PowerShell.
 
-### <a name="create-a-new-privileged-access-policy-for-the-new-journalrule-task"></a>Creare un nuovo criterio di accesso con privilegi per l'New-JournalRule attività
+### <a name="create-a-new-privileged-access-policy-for-the-new-journalrule-task"></a>Creare un nuovo criterio di accesso con privilegi per lNew-JournalRule appalto
 
 >[!NOTE]
 >Se i passaggi 1 e 2 della fase 2 di questa guida non sono stati ancora completati, eseguire la procedura per creare un gruppo di responsabili approvazione denominato "Responsabili approvazione con privilegi" per abilitare l'accesso con privilegi nell'ambiente di testing.
@@ -138,7 +138,7 @@ Innanzitutto, connettersi a Exchange Management PowerShell con le credenziali di
 
     **Tipo di richiesta**: Attività
 
-    **Ambito richiesta**: Exchange
+    **Ambito della richiesta**: Exchange
 
     **Richiesta per**: nuova regola del journal
 

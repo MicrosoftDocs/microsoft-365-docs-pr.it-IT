@@ -27,7 +27,7 @@ ms.locfileid: "50097199"
 
 *Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
-Single #A0 (SSO) aggiunge sicurezza e comodità quando gli utenti a utilizzano le applicazioni in Azure Active Directory. Con l'accesso Single Sign-On, gli utenti accedono una sola volta con un account per accedere ai dispositivi aggiunti al dominio di Servizi di dominio Active Directory locali, alle applicazioni Software as a Service (SaaS) e alle applicazioni Web.
+L'accesso Single #A0 (SSO) aggiunge sicurezza e comodità quando gli utenti a utilizzano le applicazioni in Azure Active Directory. Con l'accesso Single Sign-On, gli utenti accedono una sola volta con un account per accedere ai dispositivi aggiunti al dominio di Servizi di dominio Active Directory locali, alle applicazioni Software as a Service (SaaS) e alle applicazioni Web.
 
 Ulteriori informazioni [su Single #A0](/azure/active-directory/manage-apps/what-is-single-sign-on).
 

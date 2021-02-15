@@ -24,7 +24,7 @@ ms.locfileid: "50097271"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Le 12 attività principali per i team di sicurezza per supportare il lavoro da casa
 
-Se si è come [Microsoft](https://www.microsoft.com/microsoft-365/blog/2020/03/10/staying-productive-while-working-remotely-with-microsoft-teams/) e improvvisamente si trova a supportare una forza lavoro principalmente basata su casa, si desidera garantire che l'organizzazione funzioni nel modo più sicuro possibile. In questo articolo vengono assegnate priorità alle attività per consentire ai team di sicurezza di implementare le funzionalità di sicurezza più importanti nel più breve tempo possibile.
+Se si è come [Microsoft](https://www.microsoft.com/microsoft-365/blog/2020/03/10/staying-productive-while-working-remotely-with-microsoft-teams/) e improvvisamente si trova a supportare una forza lavoro principalmente basata su casa, si desidera garantire che l'organizzazione funzioni nel modo più sicuro possibile. In questo articolo vengono assegnate priorità alle attività per consentire ai team di sicurezza di implementare le funzionalità di sicurezza più importanti il prima possibile.
 
 ![Eseguire queste attività principali per supportare il lavoro da casa.](../media/security/security-support-remote-work.png)
 
@@ -44,16 +44,16 @@ Per i clienti che usano i piani enterprise, Microsoft consiglia di completare le
 |---|---|---|---|---|
 |1 |[Abilitare Azure AD Multi-Factor Authentication (MFA)](#1-enable-azure-ad-multi-factor-authentication-mfa)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |2 |[Protezione contro le minacce](#2-protect-against-threats)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|3|[Configurare Microsoft Defender per Office 365](#3-configure-microsoft-defender-for-office-365)|||![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|3 |[Configurare Microsoft Defender per Office 365](#3-configure-microsoft-defender-for-office-365)|||![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4 |[Configurare Microsoft Defender per l'identità](#4-configure-microsoft-defender-for-identity)|||![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |5 |[Attivare Microsoft 365 Defender](#5-turn-on-microsoft-365-defender)|||![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6 |[Configurare la protezione delle app mobili di Intune per telefoni e tablet](#6-configure-intune-mobile-app-protection-for-phones-and-tablets)||![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |7 |[Configurare l'autenticazione a più fattori e l'accesso condizionale per gli utenti guest, inclusa la protezione delle app di Intune](#7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection)||![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |8 |[Registrare i PC nella gestione dei dispositivi e richiedere PC conformi](#8-enroll-pcs-into-device-management-and-require-compliant-pcs)||![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |9 |[Ottimizzare la rete per la connettività cloud](#9-optimize-your-network-for-cloud-connectivity)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|10 |[Formare gli utenti](#10-train-users)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|10  |[Formare gli utenti](#10-train-users)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |11 |[Introduzione a Microsoft Cloud App Security](#11-get-started-with-microsoft-cloud-app-security)|||![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|12 |[Monitorare le minacce ed eseguire azioni](#12-monitor-for-threats-and-take-action)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|12 |[Monitorare le minacce ed eseguire un'azione](#12-monitor-for-threats-and-take-action)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
 
 Prima di iniziare, controllare [microsoft 365 Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) nel Centro sicurezza Microsoft 365. Da un dashboard centralizzato, è possibile monitorare e migliorare la sicurezza per identità, dati, app, dispositivi e infrastruttura di Microsoft 365. Vengono forniti punti per la configurazione delle funzionalità di sicurezza consigliate, l'esecuzione di attività relative alla sicurezza (ad esempio la visualizzazione di report) o la gestione di suggerimenti con un'applicazione o un software di terze parti. Le attività consigliate in questo articolo aumentano il punteggio.
@@ -114,8 +114,8 @@ L'amministratore globale può configurare queste protezioni:
 
 [Microsoft Defender per identità](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp) è una soluzione di sicurezza basata sul cloud che sfrutta i segnali di Active Directory locali per identificare, rilevare e analizzare minacce avanzate, identità compromesse ed azioni Insider dannose dirette all'organizzazione. Concentrarsi su questo argomento perché protegge l'infrastruttura locale e cloud, non ha dipendenze o prerequisiti e può offrire vantaggi immediati.
 
-- Vedere [le guide introduttive a Microsoft Defender per l'identità](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) per ottenere rapidamente la configurazione
-- Video: [Introduzione a Microsoft Defender per l'identità](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
+- Vedere [le guide introduttive](https://docs.microsoft.com/azure-advanced-threat-protection/install-atp-step1) di Microsoft Defender per l'identità per ottenere rapidamente la configurazione
+- Video: [Introduzione a Microsoft Defender for Identity](https://www.youtube.com/watch?reload=9&v=EGY2m8yU_KE)
 - Esaminare le [tre fasi della distribuzione di Microsoft Defender for Identity](https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp#whats-next)
 
 ## <a name="5-turn-on-microsoft-365-defender"></a>5: attivare Microsoft 365 Defender
@@ -184,9 +184,9 @@ Una sola organizzazione può gestire un dispositivo, quindi assicurati di esclud
 
 Se si abilita rapidamente la maggior parte dei dipendenti a lavorare da casa, questo improvviso passaggio di modelli di connettività può avere un impatto significativo sull'infrastruttura di rete aziendale. Molte reti sono state ridimensionate e progettate prima dell'adozione dei servizi cloud. In molti casi, le reti sono tolleranti per i lavoratori remoti, ma non sono state progettate per essere utilizzate in remoto da tutti gli utenti contemporaneamente.
 
-Gli elementi di rete come i concentratori VPN, le apparecchiature di uscita della rete centrale (come proxy e dispositivi di prevenzione della perdita di dati), la larghezza di banda internet centrale, i circuiti MPLS backhaul, la funzionalità NAT e così via vengono improvvisamente messi sotto pressione a causa del carico dell'intera azienda che li usa. Il risultato finale sono prestazioni e produttività scarse, insieme a un'esperienza utente scadente per gli utenti che si stanno adattando al lavoro da casa.
+Gli elementi di rete come i concentratori VPN, le apparecchiature di uscita della rete centrale (come proxy e dispositivi di prevenzione della perdita dei dati), la larghezza di banda internet centrale, i circuiti MPLS backhaul, la funzionalità NAT e così via vengono improvvisamente messi sotto pressione a causa del carico dell'intera azienda che li usa. Il risultato finale sono prestazioni e produttività scarse, insieme a un'esperienza utente scadente per gli utenti che si stanno adattando al lavoro da casa.
 
-Alcune delle protezioni che sono state tradizionalmente fornite dal routing del traffico attraverso una rete aziendale sono fornite dalle app cloud a cui gli utenti accedono. Se è stato raggiunto questo passaggio in questo articolo, è stato implementato un set di controlli di sicurezza cloud sofisticati per i servizi e i dati di Microsoft 365. Dopo aver installato questi controlli, è possibile instradare il traffico degli utenti remoti direttamente a Office 365. Se è ancora necessario un collegamento VPN per l'accesso ad altre applicazioni, è possibile migliorare notevolmente le prestazioni e l'esperienza utente implementando lo split tunneling. Una volta raggiunto un accordo nell'organizzazione, questo può essere raggiunto entro un giorno da un team di rete ben coordinato.
+Alcune delle protezioni che tradizionalmente sono state fornite instradando il traffico attraverso una rete aziendale sono fornite dalle app cloud a cui accedono gli utenti. Se è stato raggiunto questo passaggio in questo articolo, è stato implementato un set di controlli di sicurezza cloud sofisticati per i servizi e i dati di Microsoft 365. Dopo aver installato questi controlli, è possibile instradare il traffico degli utenti remoti direttamente a Office 365. Se è ancora necessario un collegamento VPN per l'accesso ad altre applicazioni, è possibile migliorare notevolmente le prestazioni e l'esperienza utente implementando lo split tunneling. Una volta raggiunto un accordo nell'organizzazione, questo può essere raggiunto entro un giorno da un team di rete ben coordinato.
 
 Per altre informazioni, vedi queste risorse in Documentazione:
 
@@ -196,13 +196,13 @@ Per altre informazioni, vedi queste risorse in Documentazione:
 Articoli di blog recenti su questo argomento:
 
 - [Come ottimizzare rapidamente il traffico per il personale & ridurre il carico sull'infrastruttura](https://techcommunity.microsoft.com/t5/office-365-blog/how-to-quickly-optimize-office-365-traffic-for-remote-staff-amp/ba-p/1214571#)
-- [Modi alternativi per i professionisti della sicurezza e l'IT per ottenere moderni controlli di sicurezza negli scenari di lavoro remoto univoci di oggi](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
+- [Modi alternativi per i professionisti della sicurezza e l'IT per ottenere controlli di sicurezza moderni negli scenari di lavoro remoto univoci di oggi](https://www.microsoft.com/security/blog/2020/03/26/alternative-security-professionals-it-achieve-modern-security-controls-todays-unique-remote-work-scenarios/)
 
 ## <a name="10-train-users"></a>10: Formare gli utenti
 
 La formazione degli utenti può consentire agli utenti e al team delle operazioni di sicurezza di risparmiare molto tempo e frustrazione. Gli utenti esperti hanno meno probabilità di aprire allegati o di fare clic su collegamenti in messaggi di posta elettronica discutibili ed è più probabile che evitino siti Web sospetti.
 
-Il manuale della campagna per la [cybersecurity](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409) dell'università Disaffezione school Disaffezione offre una guida eccellente per stabilire una forte cultura della sicurezza all'interno dell'organizzazione, inclusa la formazione degli utenti per identificare gli attacchi di phishing.
+Il manuale della campagna per la [cybersecurity](https://go.microsoft.com/fwlink/?linkid=2015598&amp;clcid=0x409) della scuola Disaffezione Disaffezione offre una guida eccellente per stabilire una forte cultura della sicurezza all'interno dell'organizzazione, inclusa la formazione degli utenti per identificare gli attacchi di phishing.
 
 Microsoft 365 fornisce le risorse seguenti per informare gli utenti dell'organizzazione:
 
@@ -211,13 +211,13 @@ Microsoft 365 fornisce le risorse seguenti per informare gli utenti dell'organiz
 |Concetti|Risorse|
 |---|---|
 |Microsoft 365|[Percorsi di apprendimento personalizzabili](https://docs.microsoft.com/office365/customlearning/) <p>Queste risorse possono aiutare a mettere insieme la formazione per gli utenti finali nell'organizzazione|
-|Sicurezza Microsoft 365|[Modulo di apprendimento: Proteggere l'organizzazione con sicurezza intelligente integrata di Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Questo modulo consente di descrivere il modo in cui le funzionalità di sicurezza di Microsoft 365 funzionano insieme e di illustrare i vantaggi di queste funzionalità di sicurezza.|
+|Centro sicurezza Microsoft 365|[Modulo di apprendimento: Proteggere l'organizzazione con sicurezza intelligente integrata di Microsoft 365](https://docs.microsoft.com/learn/modules/security-with-microsoft-365) <p>Questo modulo consente di descrivere il modo in cui le funzionalità di sicurezza di Microsoft 365 funzionano insieme e di illustrare i vantaggi di queste funzionalità di sicurezza.|
 |Autenticazione a più fattori|[Verifica in due passaggi: che cos'è la pagina di verifica aggiuntiva?](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-first-time) <p>Questo articolo consente agli utenti finali di comprendere cos'è l'autenticazione a più fattori e perché viene utilizzata nell'organizzazione.|
 |
 
 Oltre a queste indicazioni, Microsoft consiglia agli utenti di eseguire le azioni descritte in questo articolo: Proteggere [l'account](https://support.office.com/article/066d6216-a56b-4f90-9af3-b3a1e9a327d6.aspx)e i dispositivi da hacker e malware. Queste azioni includono:
 
-- Uso di password complesse
+- Utilizzo di password complesse
 - Protezione dei dispositivi
 - Abilitazione delle funzionalità di sicurezza nei PC Windows 10 e Mac (per dispositivi non gestiti)
 
@@ -241,7 +241,7 @@ Introduzione a Cloud App Security. In seguito sarà possibile configurare contro
 
 ## <a name="12-monitor-for-threats-and-take-action"></a>12: monitorare le minacce ed eseguire un'azione
 
-Microsoft 365 include diversi modi per monitorare lo stato ed eseguire le azioni appropriate. Il punto di partenza migliore è il Centro sicurezza Microsoft 365 ( ), in cui è possibile visualizzare [https://security.microsoft.com](https://security.microsoft.com) [Microsoft Secure Score](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score)dell'organizzazione ed eventuali avvisi o entità che richiedono attenzione.
+Microsoft 365 include diversi modi per monitorare lo stato ed eseguire le azioni appropriate. Il punto di partenza migliore è il Centro sicurezza Microsoft 365 ( ), in cui è possibile visualizzare Microsoft Secure Score dell'organizzazione ed eventuali avvisi o entità che richiedono [https://security.microsoft.com](https://security.microsoft.com) l'attenzione [](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score)dell'utente.
 
 - [Introduzione al Centro sicurezza Microsoft 365](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center)
 - [Monitorare e visualizzare i report](https://docs.microsoft.com/microsoft-365/security/mtp/monitoring-and-reporting)

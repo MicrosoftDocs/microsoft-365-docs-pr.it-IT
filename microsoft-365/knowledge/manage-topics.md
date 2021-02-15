@@ -39,13 +39,13 @@ I knowledge manager consentono di guidare gli argomenti individuati nel ciclo di
 
 - Consigliato: un argomento è stato identificato dall'intelligenza artificiale e dispone di risorse, connessioni e proprietà di supporto sufficienti.
 - Confermato: viene convalidato un argomento suggerito dall'intelligenza artificiale. La convalida viene eseguita tramite la conferma di un responsabile della conoscenza. Inoltre, un argomento può essere confermato se almeno due utenti forniscono feedback positivo tramite la domanda di feedback nella scheda dell'argomento.
-- Pubblicato: argomento confermato che è stato curato: sono state apportate modifiche manuali per migliorarne la qualità.
-- Rimosso: un argomento viene rifiutato da un responsabile della conoscenza e non sarà più visibile ai visualizzatori. L'argomento può essere in qualsiasi stato quando viene rimosso (consigliato, confermato o pubblicato). Quando un argomento pubblicato viene rimosso, la pagina con i dettagli selezionati dovrà essere eliminata manualmente tramite la Raccolta pagine del Centro argomenti.
+- Published: Argomento confermato che è stato curato: sono state apportate modifiche manuali per migliorarne la qualità.
+- Rimosso: un argomento viene rifiutato da un responsabile della conoscenza e non sarà più visibile ai visualizzatori. L'argomento può essere in qualsiasi stato quando viene rimosso (suggerito, confermato o pubblicato). Quando un argomento pubblicato viene rimosso, la pagina con i dettagli selezionati dovrà essere eliminata manualmente tramite la Raccolta pagine del Centro argomenti.
 
    ![Grafico ciclo di vita degli argomenti](../media/knowledge-management/topic-lifecycle.png) </br> 
 
 > [!Note] 
-> Nella pagina Gestisci argomenti, ogni knowledge manager sarà in grado di visualizzare solo gli argomenti in cui hanno accesso ai file e alle pagine dell'argomento. Ciò si rifletterà negli argomenti elencati nelle schede Suggerite, Confermate, Rimosse e Pubblicate. Il conteggio degli argomenti, tuttavia, mostra i conteggi totali nell'organizzazione.
+> Nella pagina Gestisci argomenti, ogni knowledge manager sarà in grado di visualizzare solo gli argomenti in cui hanno accesso ai file e alle pagine dell'argomento. Ciò si rifletterà negli argomenti elencati nelle schede Suggerite, Confermate, Rimosse e Pubblicate. Nell'argomento vengono tuttavia visualizzati i conteggi totali nell'organizzazione.
 
 ## <a name="requirements"></a>Requisiti
 
@@ -67,7 +67,7 @@ Nella pagina Gestione argomenti del Centro argomenti gli argomenti individuati n
 
 Per esaminare un argomento consigliato:
 
-1. Nella pagina **Gestisci argomenti** selezionare la **scheda Suggeriti** e selezionare l'argomento per aprire la pagina dell'argomento.</br>
+1. Nella pagina **Gestisci argomenti** selezionare la **scheda Suggeriti,** selezionare l'argomento per aprire la pagina dell'argomento.</br>
 
 2. Nella pagina dell'argomento esaminare la pagina dell'argomento e selezionare **Modifica** se è necessario apportare modifiche alla pagina. La pubblicazione di eventuali modifiche sposterà questo argomento nella **scheda** Published.
 
@@ -77,7 +77,7 @@ Per esaminare un argomento consigliato:
     
    - Selezionare la **x** se si desidera rifiutare l'argomento.
 
-    Gli argomenti confermati verranno rimossi **dall'elenco Suggeriti** e ora verranno visualizzati **nell'elenco** Confermati.
+    Gli argomenti confermati verranno rimossi **dall'elenco** Suggeriti e ora verranno visualizzati **nell'elenco** Confermati.
 
     Gli argomenti rifiutati verranno rimossi **dall'elenco** Suggeriti e ora verranno visualizzati nella **scheda** Rimosso.
 

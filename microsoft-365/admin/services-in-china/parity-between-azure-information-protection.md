@@ -144,9 +144,9 @@ Le app AIP in Windows necessitano della chiave del Registro di sistema seguente 
 > [!IMPORTANT]
 > Assicurati di non eliminare la chiave del Registro di sistema dopo una disinstallazione. Se la chiave è vuota, errata o inesistente, la funzionalità verrà utilizzata come valore predefinito (valore predefinito = 0 per il cloud commerciale). Se la chiave è vuota o errata, al registro viene aggiunto anche un errore di stampa.
 
-### <a name="step-5-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs"></a>Passaggio 5: Installare lo scanner AIP locale e gestire i processi di analisi del contenuto
+### <a name="step-5-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs"></a>Passaggio 5: installare lo scanner AIP locale e gestire i processi di analisi del contenuto
 
-Installare lo scanner AIP locale per analizzare la rete e le condivisioni di contenuto per i dati sensibili e applicare le etichette di classificazione e protezione configurate nei criteri dell'organizzazione.
+Installare lo scanner AIP locale per analizzare la rete e le condivisioni di contenuto per i dati sensibili e applicare le etichette di classificazione e protezione in base alla configurazione nei criteri dell'organizzazione.
 
 Quando si installa lo scanner e si gestiscono i processi di analisi del contenuto, utilizzare i cmdlet seguenti anziché l'interfaccia del portale di Azure utilizzata dalle offerte commerciali:<br><br>
 

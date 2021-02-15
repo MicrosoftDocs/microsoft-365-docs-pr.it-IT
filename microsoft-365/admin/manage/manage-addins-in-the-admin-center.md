@@ -76,7 +76,7 @@ Dopo la distribuzione, gli amministratori possono anche gestire l'accesso degli 
 1. Nell'interfaccia di amministrazione passare **alla** pagina Servizi & componenti  >  **aggiuntivi.**
 
      > [!NOTE]
-    > L'interfaccia di amministrazione viene aggiornata all'esperienza di distribuzione con le app integrate. Se non vedi i passaggi precedenti, vai alla sezione Distribuzione centralizzata andando su **Impostazioni**  >  **app integrate.** Nella parte superiore della **pagina App integrate** scegliere Componenti **aggiuntivi.**
+    > L'interfaccia di amministrazione viene aggiornata all'esperienza di distribuzione con le app integrate. Se i passaggi precedenti non sono visualizzati, passare alla sezione Distribuzione centralizzata andando su **Impostazioni**  >  **app integrate.** Nella parte superiore della **pagina App integrate** scegliere Componenti **aggiuntivi.**
 
 2. Selezionare il componente aggiuntivo distribuito.
 
@@ -96,7 +96,7 @@ In quanto organizzazione, è possibile impedire il download di nuovi componenti 
 1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> [Servizi &amp; componenti aggiuntivi](https://go.microsoft.com/fwlink/p/?linkid=2053743).
 
      > [!NOTE]
-    > L'interfaccia di amministrazione viene aggiornata all'esperienza di distribuzione con le app integrate. Se non vedi i passaggi precedenti, vai alla sezione Distribuzione centralizzata andando su **Impostazioni**  >  **app integrate.** Nella parte superiore della **pagina App integrate** scegliere Componenti **aggiuntivi.**
+    > L'interfaccia di amministrazione viene aggiornata all'esperienza di distribuzione con le app integrate. Se i passaggi precedenti non sono visualizzati, passare alla sezione Distribuzione centralizzata andando su **Impostazioni**  >  **app integrate.** Nella parte superiore della **pagina App integrate** scegliere Componenti **aggiuntivi.**
     
 3. Selezionare **App e servizi di proprietà dell'utente.**
     
@@ -131,7 +131,7 @@ Il supporto per la disattivazione di Office Store è disponibile nelle versioni 
     
 Ciò non impedisce a un amministratore di utilizzare la distribuzione centralizzata per assegnare un componente aggiuntivo da Office Store.
   
-Per impedire a un utente di accedere con un account Microsoft, è possibile limitare l'accesso in modo che utilizzi solo l'account dell'organizzazione. Per ulteriori informazioni, vedere [Identità, autenticazione e autorizzazione in Office 2016.](https://technet.microsoft.com/library/jj683102%28v=office.16%29.aspx)  
+Per impedire a un utente di accedere con un account Microsoft, è possibile limitare l'accesso all'uso solo dell'account dell'organizzazione. Per ulteriori informazioni, vedere [Identità, autenticazione e autorizzazione in Office 2016.](https://technet.microsoft.com/library/jj683102%28v=office.16%29.aspx)  
 
 > [!NOTE]
 > Se si impedisce agli utenti di accedere all'Office Store, non sarà possibile eseguire il sideload dei componenti aggiuntivi [di Office per i test.](https://docs.microsoft.com/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)
@@ -160,7 +160,7 @@ Se il componente aggiuntivo distribuito non supporta i comandi dei componenti ag
   
 2. Seleziona **Admin-managed** nel riquadro di spostamento sinistro. 
 
-## <a name="learn-more"></a>Scopri di più
+## <a name="learn-more"></a>Ulteriori informazioni
 
 [Distribuire i componenti aggiuntivi nell'interfaccia di amministrazione](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins)
 

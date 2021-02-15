@@ -1,5 +1,5 @@
 ---
-title: 'Supporto app client Microsoft 365: accesso condizionale'
+title: 'Supporto delle app client di Microsoft 365: accesso condizionale'
 ms.author: robmazz
 author: robmazz
 manager: laurawi
@@ -23,7 +23,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 02/03/2021
 ms.locfileid: "50097247"
 ---
-# <a name="microsoft-365-client-app-support-conditional-access"></a>Supporto app client Microsoft 365: accesso condizionale
+# <a name="microsoft-365-client-app-support-conditional-access"></a>Supporto delle app client di Microsoft 365: accesso condizionale
 
 Nell'ambiente di lavoro moderno, gli utenti possono accedere alle risorse dell'organizzazione usando vari dispositivi e app da qualsiasi luogo. Di conseguenza, concentrarsi solo su chi può accedere a una risorsa non è più sufficiente. L'organizzazione deve inoltre supportare come e dove accedere a una risorsa nell'infrastruttura di controllo di accesso.
 

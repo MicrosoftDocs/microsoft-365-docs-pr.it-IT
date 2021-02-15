@@ -82,7 +82,7 @@ Scegliere una delle opzioni seguenti per il gruppo di ruoli durante la configura
 
 3. Selezionare il *gruppo di ruoli Conformità* comunicazioni, quindi selezionare Modifica gruppo di **ruoli.**
 
-4. Selezionare **Scegli membri** nel riquadro di spostamento sinistro, quindi selezionare **Modifica.**
+4. Selezionare **Scegli membri** dal riquadro di spostamento a sinistra, quindi selezionare **Modifica.**
 
 5. Selezionare **Aggiungi** e quindi selezionare la casella di controllo per tutti gli utenti che si desidera aggiungere al gruppo di ruoli *Conformità* comunicazioni.
 
@@ -131,7 +131,7 @@ Utilizzare il grafico seguente per configurare i gruppi nell'organizzazione per 
 |Utenti supervisionati <br> Utenti non supervisionati | Gruppi di distribuzione <br> Gruppi di Microsoft 365 | Gruppi di distribuzione dinamici <br> Gruppi di distribuzione annidati <br> Gruppi di sicurezza abilitati alla posta elettronica |
 | Revisori | Nessuno | Gruppi di distribuzione <br> Gruppi di distribuzione dinamici <br> Gruppi di distribuzione annidati <br> Gruppi di sicurezza abilitati alla posta elettronica |
   
-Quando si assegna un gruppo di distribuzione nel criterio, il criterio monitora tutti i messaggi di posta elettronica e le chat di Teams di ogni utente nel gruppo di distribuzione. Quando si assegna un gruppo di Microsoft 365 nei criteri, il criterio monitora tutti i messaggi di posta elettronica e le chat di Teams inviate a tale gruppo, non i singoli messaggi di posta elettronica e chat ricevuti da ogni membro del gruppo.
+Quando si assegna un gruppo di distribuzione nel criterio, il criterio monitora tutti i messaggi di posta elettronica e le chat di Teams di ogni utente nel gruppo di distribuzione. Quando si assegna un gruppo di Microsoft 365 nel criterio, il criterio monitora tutti i messaggi di posta elettronica e le chat di Teams inviate a tale gruppo, non i singoli messaggi di posta elettronica e chat ricevuti da ogni membro del gruppo.
 
 Se si è un'organizzazione con una distribuzione di Exchange locale o un provider di posta elettronica esterno e si desidera monitorare le chat di Microsoft Teams per gli utenti, è necessario creare un gruppo di distribuzione per gli utenti con cassette postali locali o esterne da monitorare. Più avanti in questa procedura, questo gruppo  di distribuzione verrà assegnato come selezione di utenti e gruppi supervisionati nella procedura guidata dei criteri.
 
@@ -263,13 +263,13 @@ Se si desidera avere la possibilità di rispondere a un avviso dei criteri invia
 
 ## <a name="step-7-optional-test-your-communication-compliance-policy"></a>Passaggio 7 (facoltativo): testare i criteri di conformità delle comunicazioni
 
-Dopo aver creato un criterio di conformità delle comunicazioni, è buona idea testarlo per assicurarsi che le condizioni definite vengano applicate correttamente dal criterio. È inoltre possibile testare i criteri di prevenzione della perdita dei dati [(DLP)](create-test-tune-dlp-policy.md) se i criteri di conformità delle comunicazioni includono tipi di informazioni riservate. Assicurati di concedere ai criteri il tempo necessario per l'attivazione in modo che le comunicazioni che vuoi testare siano acquisite.
+Dopo aver creato un criterio di conformità delle comunicazioni, è buona regola testarlo per assicurarsi che le condizioni definite vengano applicate correttamente dal criterio. È inoltre possibile testare i criteri di prevenzione della perdita dei dati [(DLP)](create-test-tune-dlp-policy.md) se i criteri di conformità delle comunicazioni includono tipi di informazioni riservate. Assicurati di concedere ai criteri il tempo necessario per l'attivazione in modo che le comunicazioni che vuoi testare siano acquisite.
 
-Seguire questa procedura per testare i criteri di conformità delle comunicazioni:
+Seguire questi passaggi per testare i criteri di conformità delle comunicazioni:
 
 1. Aprire un client di posta elettronica, Microsoft Teams o Yammer mentre si è connessi come utente supervisionato definito nei criteri che si desidera testare.
 
-2. Inviare un messaggio di posta elettronica, una chat di Microsoft Teams o un messaggio di Yammer che soddisfi i criteri definiti nei criteri di conformità delle comunicazioni. Questo test può essere una parola chiave, dimensioni degli allegati, dominio e così via. Assicurarsi di determinare se le impostazioni condizionali configurate nel criterio sono troppo restrittive o troppo restrittive.
+2. Inviare un messaggio di posta elettronica, una chat di Microsoft Teams o un messaggio di Yammer che soddisfi i criteri definiti nei criteri di conformità delle comunicazioni. Questo test può essere una parola chiave, la dimensione dell'allegato, il dominio e così via. Assicurarsi di determinare se le impostazioni condizionali configurate nel criterio sono troppo restrittive o troppo restrittive.
 
     > [!NOTE]
     > L'elaborazione completa dei messaggi di posta elettronica in un criterio può richiedere fino a 24 ore. Le comunicazioni in Microsoft Teams, Yammer e piattaforme di terze parti possono richiedere fino a 48 ore per elaborare completamente i criteri.

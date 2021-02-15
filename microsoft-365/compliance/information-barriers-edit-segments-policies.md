@@ -59,7 +59,7 @@ Utilizzare questa procedura per modificare gli attributi utilizzati per segmenta
 
 ## <a name="edit-a-segment"></a>Modificare un segmento
 
-Utilizzare questa procedura per modificare la definizione di un segmento di utenti. Ad esempio, potresti modificare il nome di un segmento o il filtro usato per determinare chi è incluso nel segmento.
+Utilizzare questa procedura per modificare la definizione di un segmento di utenti. Ad esempio, puoi modificare il nome di un segmento o il filtro usato per determinare chi è incluso nel segmento.
 
 1. Per visualizzare tutti i segmenti esistenti, utilizzare il cmdlet **Get-OrganizationSegment.**
 
@@ -146,7 +146,7 @@ A questo punto, uno o più criteri delle barriere di informazioni sono impostati
 
     Le modifiche vengono applicate, utente per utente, per l'organizzazione. Se l'organizzazione è di grandi dimensioni, il completamento di questo processo può richiedere 24 ore (o più).
 
-## <a name="stop-a-policy-application"></a>Arrestare un'applicazione dei criteri
+## <a name="stop-a-policy-application"></a>Arrestare un'applicazione di criteri
 
 Dopo aver avviato l'applicazione dei criteri delle barriere di informazioni, se si desidera impedire l'applicazione di tali criteri, eseguire la procedura seguente. L'avvio del processo richiederà circa 30-35 minuti.
 

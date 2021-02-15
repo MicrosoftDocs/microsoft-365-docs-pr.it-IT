@@ -42,4 +42,4 @@ Quando si acquista un abbonamento, si sceglie la fatturazione mensile o annuale.
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti.</a>
 2. Nella scheda **Prodotti**, selezionare l'abbonamento che si vuole cambiare.
 3. Nella sezione Impostazioni sottoscrizione e pagamento della pagina dei dettagli **dell'abbonamento** selezionare **Modifica frequenza di fatturazione.**
-4. Nel riquadro **Modifica frequenza di** fatturazione scegliere l'opzione per la frequenza di fatturazione, quindi selezionare **Cambia.**
+4. Nel riquadro **Modifica frequenza di** fatturazione scegliere l'opzione per la frequenza di fatturazione desiderata, quindi selezionare **Cambia.**

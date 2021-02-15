@@ -40,7 +40,7 @@ Ulteriori informazioni [sull'autenticazione basata su certificati.](/azure/activ
 
 ## <a name="supported-clients--platforms"></a>Client supportati & piattaforme
 
-Le versioni più recenti dei client e delle piattaforme seguenti supportano l'autenticazione basata su certificati quando si accede agli account Azure Active Directory all'interno del client (ad esempio, quando si aggiunge un account all'app). Per ulteriori informazioni sul supporto della piattaforma in Microsoft 365, vedere Requisiti di [sistema per Microsoft 365.](/microsoft-365/microsoft-365-and-office-resources)
+Le versioni più recenti dei client e delle piattaforme seguenti supportano l'autenticazione basata su certificati quando si accede agli account Azure Active Directory all'interno del client (ad esempio, quando si aggiunge un account all'app). Per ulteriori informazioni sul supporto della piattaforma in Microsoft 365, vedere [Requisiti di sistema per Microsoft 365.](/microsoft-365/microsoft-365-and-office-resources)
 <br>
 <br>
 

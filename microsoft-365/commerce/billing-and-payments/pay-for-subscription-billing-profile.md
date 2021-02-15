@@ -43,7 +43,7 @@ Se non sei sicuro che il tuo account abbia un profilo di fatturazione, vedi [Inf
 
 Per impostazione predefinita, la fatturazione ricorrente viene automaticamente attivata per tutte le sottoscrizioni a pagamento che usano la fatturazione ricorrente. A ogni periodo di fatturazione viene addebitato automaticamente il metodo di pagamento associato al profilo di fatturazione per pagare tutte le sottoscrizioni che usano tale profilo di fatturazione. Se la modalità di pagamento viene  rifiutata, puoi usare il pulsante Paga ora nella fattura per effettuare un pagamento una sola volta per l'abbonamento.
 
-Se la fatturazione ricorrente è disattivata per  un profilo di fatturazione, puoi usare il pulsante Paga ora nella fattura per pagarla a ogni periodo di fatturazione, indipendentemente dalla modalità di pagamento collegata al profilo di fatturazione. Puoi anche pagare tramite assegno o bonifico bancario (EFT). Le istruzioni per eseguire questa operazione sono incluse nella copia PDF della fattura.
+Se la fatturazione ricorrente è disattivata per  un profilo di fatturazione, puoi usare il pulsante Paga ora nella fattura per pagarla a ogni periodo di fatturazione, indipendentemente dal metodo di pagamento collegato al profilo di fatturazione. Puoi anche pagare tramite assegno o bonifico bancario (EFT). Le istruzioni per eseguire questa operazione sono incluse nella copia PDF della fattura.
 
 ## <a name="paying-by-invoice"></a>Pagamento tramite fattura
 
@@ -55,9 +55,9 @@ Per essere idoneo al pagamento tramite fattura, è necessario:
 - Avere un costo di sottoscrizione superiore a un determinato importo (questo importo varia in base alla posizione del servizio)
 - Superare una verifica del credito
 
-Se è necessaria una verifica del credito, si viene informati quando si acquista l'abbonamento. Se si accetta di essere contattati, si ottiene un messaggio di posta elettronica che include ulteriori informazioni sulla richiesta di approvazione del credito. Le verifiche del credito vengono in genere completate in due giorni lavorativi.
+Se è necessaria una verifica del credito, questa informazione verrà comunicata al momento dell'acquisto dell'abbonamento. Se si accetta di essere contattati, si riceverà un messaggio di posta elettronica con altre informazioni sulla richiesta di approvazione del credito. Le verifiche del credito vengono in genere completate in due giorni lavorativi.
 
-Se il profilo di fatturazione è supportato da una fattura, viene visualizzato un messaggio di posta elettronica quando l'estratto conto è pronto per la visualizzazione. Questo messaggio di posta elettronica non contiene una copia dell'estratto conto. Tuttavia, è possibile scegliere di [ricevere una copia dell'estratto conto tramite posta elettronica.](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email) L'estratto conto include informazioni dettagliate sulle opzioni per effettuare un pagamento e su dove inviarlo. Se immetti un numero di ordine di acquisto (PO) nel profilo di fatturazione, il numero viene visualizzato nell'estratto conto. Per informazioni su come accedere agli estratti conto, vedere [Visualizzare l'estratto conto o la fattura](view-your-bill-or-invoice.md).
+Se il profilo di fatturazione è supportato da una fattura, viene visualizzato un messaggio di posta elettronica quando l'estratto conto è pronto per la visualizzazione. Questo messaggio di posta elettronica non contiene una copia dell'estratto conto. Tuttavia, è possibile scegliere di [ricevere una copia dell'estratto conto come allegato di posta elettronica](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email). L'estratto conto include i dettagli sulle opzioni di pagamento e su dove inviare il pagamento. Se immetti un numero di ordine di acquisto (PO) nel profilo di fatturazione, il numero viene visualizzato nell'estratto conto. Per informazioni su come accedere agli estratti conto, vedere [Visualizzare l'estratto conto o la fattura](view-your-bill-or-invoice.md).
 
 ## <a name="where-do-i-send-my-check-or-eft-payment"></a>Dove è possibile inviare il pagamento tramite assegno o bonifico?
 
@@ -226,7 +226,7 @@ Se il profilo di fatturazione è supportato da una fattura, viene visualizzato u
 
 Se la fatturazione ricorrente è disattivata per il profilo di fatturazione, è possibile utilizzare una carta di credito per pagare la fattura online. Per effettuare un pagamento, usare il pulsante **Paga ora** nella fattura nell'interfaccia di amministrazione di Microsoft 365. Per trovare la fattura, vedere [Visualizzare la fattura.](view-your-bill-or-invoice.md)
 
-## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>Posso passare dalla modalità di pagamento corrente alla modalità di pagamento tramite fattura?
+## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>Posso passare dalla modalità di pagamento corrente a quella per il pagamento tramite fattura?
 
 Se il tuo profilo di fatturazione è supportato da carta di credito o di debito, puoi solo modificare la modalità di pagamento in un'altra carta di credito o di debito. Non è possibile passare al pagamento tramite fattura.
 

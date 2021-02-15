@@ -37,7 +37,7 @@ ms.locfileid: "50114742"
 2. I partner inviano una richiesta di posta elettronica ai clienti per stabilire una relazione con i partner.
 3. I clienti accettano l'invito nell'interfaccia di amministrazione di Microsoft 365 e iniziano a collaborare con il partner.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 Per eseguire questa procedura, è necessario essere un amministratore globale o di fatturazione. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../admin/add-users/about-admin-roles.md).
 
@@ -48,7 +48,7 @@ Esistono diversi modi in cui un partner può collaborare con te. In base alle es
 | Tipo di partner | Descrizione |
 | ------ | ------------------- |
 | Rivenditore | Partner che vendono prodotti Microsoft all'organizzazione o all'istituto di istruzione. |
-| Amministratore delegato | Partner che gestiscono prodotti e servizi per l'organizzazione o l'istituto di istruzione. In Azure Active Directory (AD), il partner è un amministratore globale per il tenant. Questo ruolo consente di gestire servizi come la creazione di account utente, l'assegnazione e la gestione delle licenze e la reimpostazione della password. |
+| Amministratore delegato | Partner che gestiscono prodotti e servizi per l'organizzazione o l'istituto di istruzione. In Azure Active Directory (AD), il partner è un amministratore globale per il tenant. Questo ruolo consente loro di gestire servizi come la creazione di account utente, l'assegnazione e la gestione delle licenze e la reimpostazione della password. |
 | Amministratore delegato & rivenditore | Partner che vendono e gestiscono prodotti e servizi Microsoft all'organizzazione o all'istituto di istruzione. |
 | Partner | Si assegna al partner un account utente nel tenant e questi collaborano con altri servizi Microsoft per conto dell'utente. |
 | Advisor | I partner possono reimpostare le password e gestire automaticamente gli eventi imprevisti di supporto. |
@@ -66,7 +66,7 @@ Il partner ti contatta e ti offre la possibilità di saperne di più su di essi.
 
 ## <a name="review-and-accept-a-partner-relationship-and-microsoft-customer-agreement"></a>Rivedere e accettare una relazione con i partner e il Contratto per i clienti Microsoft
 
-Dopo aver trovato un partner e aver deciso di collaborare, ti invia un invito tramite posta elettronica.
+Dopo aver trovato un partner e aver deciso di collaborare con loro, ti invia un invito tramite posta elettronica.
 
 1. Nel messaggio di posta elettronica, selezionare il collegamento per passare all'interfaccia di amministrazione di Microsoft 365.
 2. Nella pagina **Accetta contratto & autorizzare** il partner, selezionare il collegamento per il Contratto per i clienti **Microsoft** e leggere il documento.
@@ -86,11 +86,11 @@ Se hai già un partner ma non hai ancora firmato un Contratto per i clienti Micr
 
 ## <a name="remove-partner-admin-roles"></a>Rimuovere i ruoli di amministratore del partner
 
-A seconda della richiesta effettuata dal partner, quando si accetta l'invito, si accetta di assegnare loro ruoli di amministratore globale e di helpdesk. Quando si concedono questi ruoli di amministratore a un partner, si concedono automaticamente loro privilegi di amministratore delegato in Azure AD. Per altre informazioni, vedere [Privilegi di amministratore delegato in Azure AD.](https://docs.microsoft.com/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad)
+A seconda della richiesta effettuata dal partner, quando accetti l'invito, accetti di assegnare loro ruoli di amministratore globale e di helpdesk. Quando si concedono questi ruoli di amministratore a un partner, si concedono automaticamente loro privilegi di amministratore delegato in Azure AD. Per altre informazioni, vedere [Privilegi di amministratore delegato in Azure AD.](https://docs.microsoft.com/partner-center/customers_revoke_admin_privileges#delegated-admin-privileges-in-azure-ad)
 
 Se non vuoi assegnare i ruoli di amministratore al partner, annulla l'invito invece di accettarlo.
 
-È possibile rimuovere i ruoli di amministratore da un partner in qualsiasi momento. La rimozione dei ruoli di amministratore non rimuove la relazione partner. Possono comunque lavorare con te in una capacità diversa, ad esempio un rivenditore. Se decidi di non voler più collaborare con un partner, contatta il partner per terminare la relazione.
+È possibile rimuovere i ruoli di amministratore da un partner in qualsiasi momento. La rimozione dei ruoli di amministratore non rimuove la relazione con il partner. Possono comunque lavorare con te in una capacità diversa, ad esempio un rivenditore. Se decidi di non voler più collaborare con un partner, contatta il partner per terminare la relazione.
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Relazioni**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">con i partner di</a> fatturazione.
 2. Nella pagina **Relazioni partner** selezionare la riga contenente il nome del partner che si desidera rimuovere.

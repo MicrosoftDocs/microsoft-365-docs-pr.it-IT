@@ -21,7 +21,7 @@ ms.locfileid: "50107519"
 ---
 # <a name="microsoft-viva-topics-security-trimming"></a>Limitazione per motivi di sicurezza di Microsoft Viva Topics 
 
-Viva Topics users can't view information in topics that their existing Office 365 permissions prevent them from seeing. Tutte le informazioni visualizzate da un utente in una pagina dell'argomento(ad esempio, siti di SharePoint, documenti, file) saranno informazioni che sono già autorizzate a visualizzare. Viva Topics non apporta modifiche alle autorizzazioni esistenti.
+Gli utenti di Viva Topics non possono visualizzare informazioni negli argomenti che le autorizzazioni di Office 365 esistenti ne impediscono la visualizzazione. Tutte le informazioni visualizzate da un utente in una pagina dell'argomento(ad esempio, siti di SharePoint, documenti, file) saranno informazioni che sono già autorizzate a visualizzare. Viva Topics non apporta modifiche alle autorizzazioni esistenti.
 
 ## <a name="why-two-users-may-have-different-views-of-the-same-topic"></a>Perché due utenti possono avere visualizzazioni diverse dello stesso argomento
 
@@ -35,9 +35,9 @@ Tuttavia, quando l'utente 2 esamina la stessa pagina dell'argomento neptune, la 
 
 ![Argomento Neptune per l'utente 2](../media/knowledge-management/user1-topic-view.png) </br> 
 
-La differenza tra ciò che gli utenti possono vedere nello stesso argomento è che gli utenti potrebbero non disporre delle autorizzazioni di Office 365 per visualizzare un sito o un file correlato.  Viva Topics rispetta le autorizzazioni impostate per gli elementi di un argomento e non può modificarli. In questo esempio, l'utente 1 non è in grado di visualizzare il file *DG-2000 Product Overview* nella pagina dell'argomento per Nettuno perché l'utente 1 non dispone delle autorizzazioni di Office 365 per visualizzare il file.
+La differenza tra ciò che gli utenti possono vedere nello stesso argomento è che gli utenti potrebbero non disporre delle autorizzazioni di Office 365 per visualizzare un sito o un file correlato.  Viva Topics rispetta le autorizzazioni impostate per gli elementi di un argomento e non può modificarne l'accesso. In questo esempio, l'utente 1 non è in grado di visualizzare il file *DG-2000 Product Overview* nella pagina dell'argomento per Nettuno perché l'utente 1 non dispone delle autorizzazioni di Office 365 per visualizzare il file.
 
-Se un utente non è in grado di visualizzare informazioni sufficienti in un argomento per essere utile, l'argomento non sarà disponibile per l'utente. In questo caso, l'utente non visualizza l'argomento evidenziato. Un utente diverso che dispone delle autorizzazioni per ulteriori informazioni nell'argomento per essere utile, sarà in grado di visualizzare l'argomento.
+Se un utente non è in grado di visualizzare informazioni sufficienti in un argomento perché sia utile, l'argomento non sarà disponibile per l'utente. In questo caso, l'utente non visualizza l'argomento evidenziato. Un altro utente che dispone delle autorizzazioni per ulteriori informazioni nell'argomento per risultare utile sarà in grado di visualizzare l'argomento.
 
 
 ## <a name="topic-permissions-for-knowledge-managers-and-topic-contributors"></a>Autorizzazioni per gli argomenti per knowledge manager e collaboratori di argomenti
@@ -47,7 +47,7 @@ Gli utenti a cui sono assegnate le autorizzazioni per gestire gli argomenti, i r
 Analogamente, gli utenti che dispongono di autorizzazioni per gli argomenti di creazione e modifica, collaboratori di argomenti, potranno visualizzare solo le informazioni che dispongono delle autorizzazioni per la visualizzazione all'interno degli argomenti. 
 
 
-## <a name="ai-versus-manually-curated-topic-information"></a>Confronto tra IA e informazioni sull'argomento curate manualmente
+## <a name="ai-versus-manually-curated-topic-information"></a>IA e informazioni sull'argomento curate manualmente
 
 Gli argomenti possono contenere informazioni generate dall'intelligenza artificiale e informazioni aggiunte o modificate da collaboratori di argomenti o responsabili delle conoscenze.
 

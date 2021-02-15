@@ -41,7 +41,7 @@ Non dovresti avere profili Autopilot esistenti per gruppi assegnati o dinamici c
 
 **Non pronto**
 
-Hai un profilo Autopilot assegnato a tutti i dispositivi. Per la procedura, vedi [Registrare i dispositivi Windows in Intune usando Windows Autopilot.](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot) Dopo la registrazione di Microsoft Managed Desktop, imposta i criteri di Autopilot per escludere il gruppo **Modern Workplace Devices -All** Azure AD.
+Hai un profilo Autopilot assegnato a tutti i dispositivi. Per la procedura, vedi [Registrare i dispositivi Windows in Intune usando Windows Autopilot.](https://docs.microsoft.com/mem/autopilot/enrollment-autopilot) Dopo la registrazione di Microsoft Managed Desktop, imposta il criterio Autopilot in modo da escludere il gruppo **Dispositivi aziendali moderni -All** Azure AD.
 
 **Avviso**
 
@@ -109,7 +109,7 @@ I profili di configurazione dei dispositivi Intune nell'organizzazione di Azure 
 
 **Non pronto**
 
-Si dispone di almeno un profilo di configurazione destinato a tutti gli utenti, a tutti i dispositivi o a entrambi. Reimpostare il profilo in modo che sia di destinazione di un gruppo di Azure AD specifico che non include alcun dispositivo Microsoft Managed Desktop. Per la procedura, vedere [Creare un profilo con impostazioni personalizzate in Microsoft Intune.](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure)
+Si dispone di almeno un profilo di configurazione destinato a tutti gli utenti, tutti i dispositivi o entrambi. Reimpostare il profilo in modo che sia di destinazione di un gruppo di Azure AD specifico che non include alcun dispositivo Microsoft Managed Desktop. Per la procedura, vedere [Creare un profilo con impostazioni personalizzate in Microsoft Intune.](https://docs.microsoft.com/mem/intune/configuration/custom-settings-configure)
 
 **Avviso**
 
@@ -123,7 +123,7 @@ I dispositivi Microsoft Managed Desktop devono essere autorizzati a registrarsi 
 
 **Non pronto**
 
-Attualmente hai almeno un criterio di restrizione della registrazione configurato per impedire la registrazione dei dispositivi Windows in Intune. Segui i passaggi descritti in [Impostare](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) le restrizioni di registrazione per ogni criterio di restrizione di registrazione destinato agli utenti di Microsoft Managed Desktop e modifica l'impostazione di **Windows (MDM)** su **Consenti.** Tuttavia, puoi impostare qualsiasi **dispositivo** Windows di proprietà personale **(MDM)** su **Blocca.** 
+Al momento hai almeno un criterio di restrizione di registrazione configurato per impedire la registrazione dei dispositivi Windows in Intune. Segui i passaggi descritti in [Impostare](https://docs.microsoft.com/mem/intune/enrollment/enrollment-restrictions-set) le restrizioni di registrazione per ogni criterio di restrizione di registrazione destinato agli utenti di Microsoft Managed Desktop e modifica l'impostazione di **Windows (MDM)** su **Consenti.** Tuttavia, puoi impostare qualsiasi **dispositivo** Windows di proprietà personale **(MDM)** su **Blocca.** 
 
 
 ### <a name="enrollment-status-page"></a>Pagina Stato registrazione
@@ -197,7 +197,7 @@ I criteri di base della sicurezza non devono essere mirati ad alcun dispositivo 
 
 **Non pronto**
 
-Si dispone di un profilo di base della sicurezza destinato a tutti gli utenti, a tutti i dispositivi o a entrambi. Modifica i criteri per usare un'assegnazione destinata a un gruppo di Azure AD specifico che non include alcun dispositivo Microsoft Managed Desktop. Per la procedura, vedere [Usare le linee di base della sicurezza per configurare i dispositivi Windows 10 in Intune.](https://docs.microsoft.com/mem/intune/protect/security-baselines) Durante la registrazione, applicheremo una nuova linea di base per la sicurezza a tutti i dispositivi Microsoft Managed Desktop. Dopo la registrazione, puoi esaminare i criteri di base per la sicurezza di Microsoft Managed Desktop nell'area dei criteri **di** configurazione di Microsoft Endpoint Manager.
+Si dispone di un profilo di base della sicurezza destinato a tutti gli utenti, a tutti i dispositivi o a entrambi. Modifica i criteri per usare un'assegnazione destinata a un gruppo di Azure AD specifico che non include alcun dispositivo Microsoft Managed Desktop. Per la procedura, vedere [Usare le linee di base della sicurezza per configurare i dispositivi Windows 10 in Intune.](https://docs.microsoft.com/mem/intune/protect/security-baselines) Durante la registrazione, applicheremo una nuova linea di base per la sicurezza a tutti i dispositivi Microsoft Managed Desktop. Dopo la registrazione, puoi esaminare i criteri di base per la sicurezza di Microsoft Managed Desktop **nell'area** dei criteri di configurazione di Microsoft Endpoint Manager.
 
 **Avviso**
 
@@ -225,7 +225,7 @@ Windows Hello for Business è disabilitato. Abilitarlo seguendo la procedura des
 
 **Avviso**
 
-Windows Hello for Business non è configurato. Abilitalo seguendo la procedura descritta in [Creare un criterio di Windows Hello for Business.](https://docs.microsoft.com/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)
+Windows Hello for Business non è configurato. Abilitarla seguendo la procedura descritta in [Creare un criterio di Windows Hello for Business.](https://docs.microsoft.com/mem/intune/protect/windows-hello#create-a-windows-hello-for-business-policy)
 
 
 ### <a name="windows-10-update-rings"></a>Anelli di aggiornamento di Windows 10

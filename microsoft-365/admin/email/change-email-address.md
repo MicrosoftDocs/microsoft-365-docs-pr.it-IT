@@ -51,13 +51,13 @@ L'indirizzo di posta elettronica iniziale in Microsoft 365 include .onmicrosoft.
 
 ::: moniker range="o365-germany"
 
-L'indirizzo di posta elettronica iniziale in Office 365 Germany include .onmicrosoft.de, ad esempio tom@fourthcoffee.onmicrosoft.de. Puoi modificarlo in un indirizzo più amichevole, ad esempio tom@fourthcoffee.de. You'll need your own domain name, like fourthcoffee.de first. Se è già disponibile è possibile procedere. In caso contrario, vedere l'articolo su come [acquistarne uno da un registrar](../get-help-with-domains/buy-a-domain-name.md).
+L'indirizzo di posta elettronica iniziale in Office 365 Germany include .onmicrosoft.de, ad esempio tom@fourthcoffee.onmicrosoft.de. Puoi modificarlo in un indirizzo più amichevole come tom@fourthcoffee.de. You'll need your own domain name, like fourthcoffee.de first. Se è già disponibile è possibile procedere. In caso contrario, vedere l'articolo su come [acquistarne uno da un registrar](../get-help-with-domains/buy-a-domain-name.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-L'indirizzo di posta elettronica iniziale in Office 365 gestito da 21Vianet include partner.onmschina.cn, ad esempio tom@fourthcoffee.partner.onmschina.cn. Puoi modificarlo in un indirizzo più amichevole, ad esempio tom@fourthcoffee.cn. You'll need your own domain name, like fourthcoffee.cn first. Se è già disponibile è possibile procedere. In caso contrario, vedere l'articolo su come [acquistarne uno da un registrar](../get-help-with-domains/buy-a-domain-name.md).
+L'indirizzo di posta elettronica iniziale in Office 365 gestito da 21Vianet include partner.onmschina.cn, ad esempio tom@fourthcoffee.partner.onmschina.cn. Puoi modificarlo in un indirizzo più amichevole come tom@fourthcoffee.cn. You'll need your own domain name, like fourthcoffee.cn first. Se è già disponibile è possibile procedere. In caso contrario, vedere l'articolo su come [acquistarne uno da un registrar](../get-help-with-domains/buy-a-domain-name.md).
 
 ::: moniker-end
 

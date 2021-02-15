@@ -37,7 +37,7 @@ Questo argomento illustra come abilitare e configurare la gestione degli accessi
 Prima di iniziare a usare la gestione degli accessi con privilegi, è consigliabile confermare l'abbonamento a [Microsoft 365](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) e gli eventuali componenti aggiuntivi. Per accedere e usare la gestione degli accessi con privilegi, l'organizzazione deve disporre di uno dei seguenti abbonamenti o componenti aggiuntivi:
 
 - Abbonamento a Microsoft 365 E5 (versione di valutazione o a pagamento)
-- Abbonamento a Microsoft 365 E3 (o abbonamento a Office 365 E3 + Abbonamento Enterprise Mobility and Security E3) + componente aggiuntivo Conformità Microsoft 365 E5
+- Abbonamento a Microsoft 365 E3 (o abbonamento a Office 365 E3 + Enterprise Mobility and Security E3) + componente aggiuntivo Conformità Microsoft 365 E5
 - Qualsiasi abbonamento a Microsoft 365, Office 365, Exchange, SharePoint o OneDrive for Business + il componente aggiuntivo Microsoft 365 E5 Insider Risk Management  
 - Abbonamento a Microsoft 365 A5 (versione di valutazione o a pagamento)
 - Abbonamento a Microsoft 365 A3 (o abbonamento a Office 365 A3 + Abbonamento Enterprise Mobility and Security A3) + componente aggiuntivo Conformità Microsoft A5
@@ -99,7 +99,7 @@ Una volta concessa l'approvazione, l'utente richiedente può eseguire l'attivit�
 
 ### <a name="in-the-microsoft-365-admin-center"></a>Nell'interfaccia di amministrazione di Microsoft 365
 
-1. Accedere [all'interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com) usando le credenziali di un account amministratore nell'organizzazione.
+1. Accedere [all'interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com) usando le credenziali per un account amministratore nell'organizzazione.
 
 2. Nell'interfaccia di amministrazione passare **a** Impostazioni organizzazione  >  **Impostazioni** sicurezza &  >  **accesso con privilegi**  >  **di privacy.**
 
@@ -134,7 +134,7 @@ Enable-ElevatedAccessControl -AdminGroup 'pamapprovers@fabrikam.onmicrosoft.com'
 
 ### <a name="in-the-microsoft-365-admin-center"></a>Nell'interfaccia di amministrazione di Microsoft 365
 
-1. Accedere [all'interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com) usando le credenziali di un account amministratore nell'organizzazione.
+1. Accedere [all'interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com) usando le credenziali per un account amministratore nell'organizzazione.
 
 2. Nell'interfaccia di amministrazione passare **a** Impostazioni organizzazione  >  **Impostazioni** sicurezza &  >  **accesso con privilegi**  >  **di privacy.**
 
@@ -230,7 +230,7 @@ Dopo aver creato una richiesta di approvazione, lo stato della richiesta di elev
 
 #### <a name="in-exchange-management-powershell"></a>In Exchange Management PowerShell
 
-Eseguire il seguente comando in PowerShell di Exchange Online per visualizzare lo stato di una richiesta di approvazione per un ID richiesta specifico:
+Eseguire il comando seguente in PowerShell di Exchange Online per visualizzare lo stato di una richiesta di approvazione per un ID richiesta specifico:
 
 ```PowerShell
 Get-ElevatedAccessRequest -Identity <request ID> | select RequestStatus

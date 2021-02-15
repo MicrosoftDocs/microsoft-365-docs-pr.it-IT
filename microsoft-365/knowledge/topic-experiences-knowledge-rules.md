@@ -28,7 +28,7 @@ ms.locfileid: "50107684"
 
     ![Connettere le persone alle conoscenze](../media/admin-org-knowledge-options-completed.png) 
 
-3. Selezionare la **scheda Visibilità** argomento. Per informazioni su ogni impostazione, vedere le sezioni seguenti.
+3. Selezionare la **scheda Visibilità argomento.** Per informazioni su ogni impostazione, vedere le sezioni seguenti.
 
     ![knowledge-network-settings](../media/knowledge-network-settings-topic-visibility.png) 
 

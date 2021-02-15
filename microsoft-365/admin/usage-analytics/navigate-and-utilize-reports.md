@@ -48,7 +48,7 @@ Ecco alcuni suggerimenti per iniziare a usare i report:
 
     ![Mostra le schede di spostamento nella parte superiore di ogni report](../../media/navigate-usage-analytics2.png)
 
-- Molti report contengono un filtro dei dati in cui è possibile filtrare il prodotto, l'attributo AAD o l'attività che si desidera visualizzare. Possono essere a selezione singola o a selezione multipla.
+- Molti report contengono un filtro dei dati in cui è possibile filtrare in base al prodotto, all'attributo AAD o all'attività che si desidera visualizzare. Possono essere a selezione singola o a selezione multipla.
 
     ![Mostra un filtro dei dati](../../media/navigate-usage-analytics3.png)
 

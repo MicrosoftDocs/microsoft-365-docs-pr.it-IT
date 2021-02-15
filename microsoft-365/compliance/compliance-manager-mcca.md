@@ -74,7 +74,7 @@ Da questa directory è possibile accedere ai report generati in precedenza.
 
 ## <a name="understanding-your-report"></a>Informazioni sul report
 
-Il report riflette i dati in base alla data e all'ora in cui è stato generato. Nella sezione superiore sono disponibili informazioni dettagliate su quando è stata generata, sul nome dell'organizzazione e sull'ID tenant.
+Il report riflette i dati in base alla data e all'ora in cui è stato generato. Nella sezione superiore vengono fornite informazioni dettagliate su quando è stata generata, sul nome dell'organizzazione e sull'ID tenant.
 
 #### <a name="geolocation-based-reporting"></a>Report basati sulla georilevazione
 
@@ -97,13 +97,13 @@ Seguire queste istruzioni per eseguire un report in base a un percorso specifico
   | 1  | Asia-Pacifico |
   | 2  | Australia |
   | 3  | Canada |
-  | 4  | Europa (Francia esclusa) / Medio Oriente /Africa |
+  | 4  | Europa (francia esclusa) / Medio Oriente / Africa |
   | 5  | Francia |
   | 6  | India |
   | 7  | Giappone |
   | 8  | Corea del Sud |
   | 9  | Nord America (canada escluso) |
-  | 10  | Sud America |
+  | 10   | Sud America |
   | 11  | Sudafrica |
   | 12  | Svizzera |
   | 13  | Emirati Arabi Uniti |
@@ -146,7 +146,7 @@ Selezionare una casella per visualizzare miglioramenti e suggerimenti.
 
 **Elementi con stato Miglioramento**
 
-Selezionare l'elenco a discesa accanto **all'etichetta Miglioramento** a destra dell'azione di miglioramento. Verranno visualizzati un breve riepilogo e informazioni dettagliate sulle impostazioni correnti e sulle azioni di miglioramento consigliate. Il riepilogo include collegamenti diretti a Compliance Manager, la soluzione applicabile nel Centro conformità Microsoft 365 e la documentazione pertinente.
+Selezionare l'elenco a discesa accanto **all'etichetta Miglioramento** a destra dell'azione di miglioramento. Vedrai un breve riepilogo e dettagli sulle impostazioni correnti e sulle azioni di miglioramento consigliate. Il riepilogo include collegamenti diretti a Compliance Manager, la soluzione applicabile nel Centro conformità Microsoft 365 e la documentazione pertinente.
 
 Facendo clic sul collegamento di Compliance Manager si visualizza una visualizzazione filtrata di tutte le azioni di miglioramento all'interno della soluzione non ancora implementate. Da qui è possibile vedere il numero di punti che è possibile raggiungere per aumentare il punteggio di conformità [e](compliance-score-calculation.md)le valutazioni a cui si applicano e le normative e le certificazioni applicabili.
 

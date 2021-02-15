@@ -41,7 +41,7 @@ ms.locfileid: "50114490"
 > [!IMPORTANT]
 > Gli aggiornamenti di Microsoft 365 descritti in questo articolo si applicano a Microsoft 365, SharePoint Online ed Exchange Online. Queste opzioni di rilascio sono modi mirati e più efficaci per rilasciare le modifiche a Microsoft 365, ma non possono essere garantite in qualsiasi momento o per tutti gli aggiornamenti. Non si applicano a Microsoft 365 Apps, Skype for Business, Microsoft Teams e ai servizi correlati. Per informazioni sulle opzioni di rilascio per Microsoft 365 Apps, vedere Panoramica dei canali di [aggiornamento per Microsoft 365 Apps.](https://docs.microsoft.com/deployoffice/overview-update-channels)
 
-Con Microsoft 365, si ricevono nuovi aggiornamenti e funzionalità di prodotto non appena diventano disponibili, invece di eseguire costosi aggiornamenti ogni pochi anni. È possibile gestire il modo in cui l'organizzazione riceve questi aggiornamenti. Ad esempio, è possibile iscriversi per una versione anticipata in modo che l'organizzazione riceva prima gli aggiornamenti. È possibile designare che solo determinati utenti ricevano gli aggiornamenti. In caso contrario, è possibile rimanere nella pianificazione dei rilasci predefinita e ricevere gli aggiornamenti in un secondo momento. In questo articolo vengono illustrate le diverse opzioni di rilascio e il modo in cui è possibile utilizzarle per l'organizzazione.
+Con Microsoft 365, si ricevono nuovi aggiornamenti e funzionalità di prodotto non appena diventano disponibili, invece di eseguire costosi aggiornamenti ogni pochi anni. È possibile gestire il modo in cui l'organizzazione riceve questi aggiornamenti. Ad esempio, è possibile iscriversi per una versione anticipata in modo che l'organizzazione riceva prima gli aggiornamenti. È possibile designare che solo determinati utenti ricevano gli aggiornamenti. In caso contrario, è possibile rimanere nella pianificazione di rilascio predefinita e ricevere gli aggiornamenti in un secondo momento. In questo articolo vengono illustrate le diverse opzioni di rilascio e il modo in cui è possibile utilizzarle per l'organizzazione.
 
 ## <a name="how-it-works---release-validation"></a>Funzionamento - Convalida dei rilasci
 
@@ -49,7 +49,7 @@ Qualsiasi nuova versione viene prima testata e convalidata dal team delle funzio
   
 ![Rilasciare gli anelli di convalida per Microsoft 365](../../media/73611ed3-2d8c-4e7b-8074-9f03b239f9ed.png)
   
-Per aggiornamenti significativi, i clienti vengono inizialmente informati tramite la roadmap di [Microsoft 365.](https://products.office.com/business/office-365-roadmap) Quando un aggiornamento si avvicina all'implementazione, viene comunicato tramite il Centro messaggi di [Microsoft 365.](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)
+Per gli aggiornamenti significativi, i clienti vengono inizialmente informati tramite la roadmap di [Microsoft 365.](https://products.office.com/business/office-365-roadmap) Quando un aggiornamento si avvicina all'implementazione, viene comunicato tramite il Centro messaggi di [Microsoft 365.](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter)
 
 > [!NOTE]
 > È necessario un account Microsoft 365 o Azure AD per accedere al Centro messaggi tramite [l'interfaccia di amministrazione.](https://docs.microsoft.com/office365/admin/admin-overview/about-the-admin-center) Gli utenti del piano home di Microsoft 365 non dispongono di un'interfaccia di amministrazione.
@@ -73,7 +73,7 @@ Questa opzione consente di ricevere per primi gli aggiornamenti più recenti e d
   
 ### <a name="targeted-release-for-entire-organization"></a>Targeted Release per l'intera organizzazione
 
-Se si [configura l'opzione di rilascio nell'interfaccia di](#set-up-the-release-option-in-the-admin-center) amministrazione per questa opzione, tutti gli utenti otterrà l'esperienza targeted release. Per le organizzazioni con più di 300 utenti, è consigliabile usare un abbonamento di test per questa opzione. Per informazioni sull'abbonamento di test, contattare il proprio referente Microsoft. 
+Se si [configura l'opzione di rilascio nell'interfaccia](#set-up-the-release-option-in-the-admin-center) di amministrazione per questa opzione, tutti gli utenti otterrà l'esperienza targeted release. Per le organizzazioni con più di 300 utenti, è consigliabile usare un abbonamento di test per questa opzione. Per informazioni sull'abbonamento di test, contattare il proprio referente Microsoft. 
   
 ### <a name="targeted-release-for-selected-users"></a>Targeted Release per utenti selezionati
 
@@ -95,7 +95,7 @@ Targeted Release consente agli amministratori, ai responsabili delle modifiche o
     
 ## <a name="set-up-the-release-option-in-the-admin-center"></a>Configurare l'opzione di rilascio nell'interfaccia di amministrazione
 
-È possibile modificare il modo in cui l'organizzazione riceve gli aggiornamenti di Microsoft 365 seguendo questi passaggi. È necessario essere un amministratore globale in Microsoft 365 per acconsentire esplicitamente.
+È possibile modificare il modo in cui l'organizzazione riceve gli aggiornamenti di Microsoft 365 seguendo questa procedura. È necessario essere un amministratore globale in Microsoft 365 per acconsentire esplicitamente.
   
 > [!IMPORTANT]
 > L'applicazione delle modifiche seguenti in Microsoft 365 può richiedere fino a 24 ore. Se si disattiva l'opzione Targeted Release dopo averla abilitata, è possibile che gli utenti non possano più accedere alle funzionalità non ancora inserite nel rilascio pianificato. 
@@ -106,7 +106,7 @@ Targeted Release consente agli amministratori, ai responsabili delle modifiche o
     
 6. Per abilitare il rilascio mirato per tutti gli utenti dell'organizzazione, selezionare **Rilascio mirato per** tutti gli utenti, quindi selezionare **Salva modifiche.** 
     
-7. Per abilitare il rilascio mirato per alcune persone dell'organizzazione, selezionare **Rilascio mirato per** utenti selezionati, quindi selezionare **Salva modifiche.** 
+7. Per abilitare il rilascio mirato per alcune persone nell'organizzazione, selezionare **Rilascio mirato per** utenti selezionati, quindi selezionare **Salva modifiche.** 
     
 8. Scegliere **Seleziona utenti** per aggiungere utenti uno alla volta oppure Carica **utenti** per aggiungerli in blocco.
     
@@ -114,6 +114,6 @@ Targeted Release consente agli amministratori, ai responsabili delle modifiche o
 
 
   
-## <a name="learn-more"></a>Scopri di più
+## <a name="learn-more"></a>Ulteriori informazioni
 
 Informazioni su come gestire [i messaggi](https://docs.microsoft.com/office365/admin/manage/message-center) nel Centro messaggi di [Microsoft 365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) per ricevere notifiche sui prossimi aggiornamenti e rilasci di Microsoft 365.

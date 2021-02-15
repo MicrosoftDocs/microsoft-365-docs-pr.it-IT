@@ -66,7 +66,7 @@ Per impedire a un dipendente di accedere:
 
 2. Selezionare l'utente e quindi fare clic **su Reimposta password.**
 
-3. Immettere una nuova password e quindi selezionare **Reimposta**. Non inviarlo.
+3. Immettere una nuova password e quindi selezionare **Reimposta.** Non inviarlo.
 
 4. Selezionare il nome dell'utente per passare al riquadro delle proprietà e nella scheda **Account** selezionare **Avvia disconnessione.**
 
@@ -87,7 +87,7 @@ Per impedire a un dipendente di accedere:
 > [!NOTE]
 > Per avviare la disconnessione, è necessario essere un amministratore globale.
 
-Entro un'ora o dopo aver lasciato la pagina corrente di Microsoft 365 in cui si trova, viene richiesto di accedere di nuovo. Un token di accesso è valido per un'ora, quindi la sequenza temporale dipende dal tempo che rimane su tale token e dall'uscita dalla pagina Web corrente.
+Entro un'ora o dopo aver lasciato la pagina corrente di Microsoft 365 in cui si trova, viene richiesto di accedere di nuovo. Un token di accesso è valido per un'ora, quindi la sequenza temporale dipende dal tempo che rimane su tale token e dal fatto che si snavigare dalla pagina Web corrente.
   
 > [!IMPORTANT]
 > Se l'utente si trova in Outlook sul Web, facendo semplicemente clic nella propria cassetta postale, potrebbe non essere espulso immediatamente. Non appena selezionano un riquadro diverso, ad esempio OneDrive, o aggiornano il browser, viene avviata la disconnessione.
@@ -208,7 +208,7 @@ Se l'ex dipendente aveva un telefono dell'organizzazione, è possibile utilizzar
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
 2. Selezionare il nome del dipendente che si desidera bloccare e sotto il nome dell'utente selezionare il simbolo per **Blocca questo utente.**
-3. Selezionare **Blocca l'accesso dell'utente,** quindi selezionare **Salva.**
+3. Seleziona **Blocca l'accesso dell'utente** e quindi seleziona **Salva.**
 
 ::: moniker-end
 
@@ -218,7 +218,7 @@ Se l'ex dipendente aveva un telefono dell'organizzazione, è possibile utilizzar
 
 2. Selezionare il dipendente che si desidera bloccare e quindi selezionare **Blocca accesso.**
 
-3. Selezionare **Blocca l'accesso dell'utente,** quindi selezionare **Salva.**
+3. Seleziona **Blocca l'accesso dell'utente** e quindi seleziona **Salva.**
 
 ::: moniker-end
 
@@ -228,7 +228,7 @@ Se l'ex dipendente aveva un telefono dell'organizzazione, è possibile utilizzar
 
 2. Selezionare il dipendente che si desidera bloccare e quindi selezionare **Blocca accesso.**
 
-3. Selezionare **Blocca l'accesso dell'utente,** quindi selezionare **Salva.**
+3. Seleziona **Blocca l'accesso dell'utente** e quindi seleziona **Salva.**
 
 ::: moniker-end
 
@@ -238,7 +238,7 @@ Se si dispone di posta elettronica come parte dell'abbonamento a Microsoft 365, 
   
 1. Accedere all'<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">interfaccia di amministrazione di Exchange</a>.
 2. Nell'Interfaccia di amministrazione di Exchange passare a **Destinatari** \> **Cassette postali**.
-3. Fare doppio clic sull'utente e passare alla **pagina Funzionalità cassetta** postale. In **Dispositivi mobili** selezionare Disabilita Exchange ActiveSync **e** Disabilita OWA per i dispositivi e rispondere **Sì** a entrambi quando richiesto. 
+3. Fare doppio clic sull'utente e passare alla **pagina Funzionalità cassetta** postale. In **Dispositivi mobili** selezionare Disabilita Exchange ActiveSync e Disabilita OWA per i dispositivi **e** rispondere **Sì** a entrambi quando richiesto. 
 4. In **Connettività posta** elettronica selezionare **Disabilita** e rispondere **Sì** quando richiesto.
 
 ## <a name="remove-and-delete-the-microsoft-365-license-from-a-former-employee"></a>Rimuovere ed eliminare la licenza di Microsoft 365 da un ex dipendente

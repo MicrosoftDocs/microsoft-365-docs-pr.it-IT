@@ -45,7 +45,7 @@ Gli argomenti possono contenere informazioni generate dall'intelligenza artifici
 - Le informazioni in un argomento aggiunto dall'intelligenza artificiale sono visibili solo agli utenti che hanno accesso al contenuto di origine.
 - Il testo aggiunto o modificato manualmente da un collaboratore o un responsabile della conoscenza è visibile a tutti gli utenti che possono visualizzare l'argomento.
 
-I visualizzatori di argomenti e i collaboratori possono visualizzare l'elenco degli argomenti confermati e pubblicati nel Centro argomenti, ma i dettagli dell'argomento che una determinata persona può visualizzare dipendono dalle autorizzazioni necessarie per il materiale di origine e dal fatto che l'argomento sia stato modificato manualmente.
+I visualizzatori di argomenti e i collaboratori possono visualizzare l'elenco degli argomenti confermati e pubblicati nel Centro argomenti, ma i dettagli dell'argomento che una determinata persona può visualizzare dipendono dalle autorizzazioni che hanno per il materiale di origine e dal fatto che l'argomento sia stato modificato manualmente.
 
 Nella tabella seguente vengono descritti gli utenti, i visualizzatori di argomenti, i collaboratori e i responsabili delle conoscenze, che possono visualizzare in un determinato argomento in base alle relative autorizzazioni.
 
@@ -72,7 +72,7 @@ Se sono presenti argomenti che si desidera escludere completamente dalle esperie
 
 - Fare in modo che i knowledge manager rimuovono gli argomenti nel Centro argomenti.
 
-È inoltre consigliabile eseguire le procedure consigliate seguenti:
+È inoltre consigliabile eseguire queste procedure consigliate:
 
 - Selezionare i responsabili della conoscenza da diverse aree dell'organizzazione. Avere knowledge manager con una vasta gamma di competenze e l'accesso ai contenuti sottostanti usati dall'intelligenza artificiale può aiutarti a curarti delle conoscenze più utili per i tuoi utenti e rimuovere le informazioni riservate se trovate.
 

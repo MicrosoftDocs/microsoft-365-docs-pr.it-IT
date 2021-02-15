@@ -27,7 +27,7 @@ ms.locfileid: "50122373"
 > [!IMPORTANT]
 > Questa funzionalità di Microsoft 365 è in anteprima pubblica. L'anteprima pubblica consente l'accesso anticipato alle funzionalità di Microsoft 365.
 
-In quanto amministratore di Microsoft 365, è possibile consentire agli utenti di accedere a Outlook per Android o app iOS sui propri dispositivi mobili senza dover immettere nome utente e password. L'analisi di un codice QR consente agli utenti di autenticarsi e accedere in modo sicuro a Outlook Mobile.
+L'amministratore di Microsoft 365 può consentire agli utenti di accedere a Outlook per Android o app iOS nei dispositivi mobili senza dover immettere nome utente e password. L'analisi di un codice QR consente agli utenti di autenticarsi e accedere in modo sicuro a Outlook Mobile.
 
 In Outlook sul Web o in altre applicazioni outlook desktop, gli utenti possono visualizzare notifiche che informano che possono utilizzare Outlook sul dispositivo mobile. Queste notifiche possono essere gestite dall'amministratore tramite Exchange PowerShell. Se gli utenti scelgono di inviare a se stessi un SMS per scaricare l'app sul dispositivo mobile, sul computer verrà visualizzato un codice QR. Saranno in grado di analizzare il codice QR per accedere a Outlook sul proprio telefono o tablet. Questo codice QR è un token di breve durata che può essere riscattato una sola volta.
 

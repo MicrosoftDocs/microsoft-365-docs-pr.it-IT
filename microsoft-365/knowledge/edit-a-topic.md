@@ -42,7 +42,7 @@ Per modificare un argomento esistente, è necessario:
 > [!Note] 
 > Gli utenti che dispongono dell'autorizzazione per gestire gli argomenti nel Centro argomenti (responsabili della knowledge base) dispongono già delle autorizzazioni per creare e modificare gli argomenti.
 
-## <a name="how-to-edit-a-topic-page"></a>Come modificare una pagina di argomento
+## <a name="how-to-edit-a-topic-page"></a>Come modificare una pagina dell'argomento
 
 Gli utenti  che dispongono dell'autorizzazione Chi può creare o modificare argomenti possono modificare un <b></b> argomento aprendo la pagina dell'argomento da un'evidenziazione dell'argomento e quindi selezionando il pulsante Modifica in alto a destra nella pagina dell'argomento. La pagina dell'argomento può essere aperta anche dalla home page del Centro argomenti, dove è possibile trovare tutti gli argomenti a cui si dispone di una connessione.
 
@@ -80,7 +80,7 @@ I knowledge manager possono inoltre modificare gli argomenti direttamente dalla 
  
     Per aggiungere un nuovo file, selezionare <b>Aggiungi,</b>selezionare il sito di SharePoint dai siti Frequenti o Seguiti e quindi selezionare il file dalla raccolta documenti del sito.
 
-    È inoltre possibile utilizzare <b>l'opzione</b> Da un collegamento per aggiungere un file o una pagina specificando l'URL. 
+    È inoltre possibile utilizzare <b>l'opzione Da</b> un collegamento per aggiungere un file o una pagina specificando l'URL. 
 
 6. La <b>sezione File e pagine suggeriti</b> mostra i file e le pagine che l'intelligenza artificiale suggerisce di associare all'argomento.
 
@@ -96,7 +96,7 @@ I knowledge manager possono inoltre modificare gli argomenti direttamente dalla 
     
     ![Selezionare un sito](../media/knowledge-management/sites.png)</br>
 
-8. Nella <b>sezione Argomenti correlati</b> vengono illustrate le connessioni esistenti tra gli argomenti. È possibile aggiungere una connessione a un argomento diverso selezionando il pulsante Connetti <b>a</b> un argomento correlato, quindi digitando il nome dell'argomento correlato e selezionandolo dai risultati della ricerca. 
+8. La <b>sezione Argomenti correlati</b> mostra le connessioni esistenti tra gli argomenti. È possibile aggiungere una connessione a un argomento diverso selezionando il pulsante Connetti <b>a</b> un argomento correlato, quindi digitando il nome dell'argomento correlato e selezionandolo dai risultati della ricerca. 
 
    ![Sezione Argomenti correlati](../media/knowledge-management/related-topic.png)</br>  
 

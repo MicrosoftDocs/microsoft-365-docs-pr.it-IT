@@ -49,10 +49,10 @@ Esistono due modi per richiedere un Fapiao:
 
     ![Pagina Fatture nell'interfaccia di amministrazione di Microsoft 365.](../../media/a6e3b953-abd4-46aa-a910-08c517915a21.png)
   
-## <a name="step-2-register-with-the-21vianet-fapiao-management-system"></a>Passaggio 2: registrarsi con il sistema di gestione 21Vianet Fapiao
+## <a name="step-2-register-with-the-21vianet-fapiao-management-system"></a>Passaggio 2: registrarsi con il sistema di gestione Fapiao di 21Vianet
 
 > [!NOTE]
-> È possibile usare lo stesso nome di posta elettronica e la stessa password dell'account di Office 365 oppure è possibile usare un valore diverso.
+> È possibile usare lo stesso nome di posta elettronica e la stessa password dell'account di Office 365 oppure è possibile usare qualcosa di diverso.
   
 1. Passare al sistema di gestione delle informazioni <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">Fapiao di 21Vianet.</a>
 
@@ -125,7 +125,7 @@ Se vuoi cambiare il titolo Fapiao, inviaci di nuovo Fapiao e ristamperemo fapiao
 
 1. Accedi al sistema di gestione <a href="https://go.microsoft.com/fwlink/p/?linkid=837465" target="_blank">Fapiao,</a>quindi seleziona **Cambia indirizzo e-mail.**
 
-    ![Menu a discesa dopo che un utente ha eseguito l'accesso al sistema di gestione 21Vianet Fapiao.](../../media/ee6de24b-6be2-41e6-8aec-e0c3cb0ea35e.png)
+    ![Menu a discesa dopo che un utente ha eseguito l'accesso al sistema di gestione Fapiao di 21Vianet.](../../media/ee6de24b-6be2-41e6-8aec-e0c3cb0ea35e.png)
   
 2. Se si è dimenticata la password di accesso, è possibile utilizzare l'indirizzo di posta elettronica di accesso per reimpostare la password. Il sistema di gestione Fapiao invierà una nuova password al tuo indirizzo di posta elettronica. È possibile utilizzare la nuova password per eseguire l'accesso.
 
@@ -141,7 +141,7 @@ Se vuoi cambiare il titolo Fapiao, inviaci di nuovo Fapiao e ristamperemo fapiao
 
 ### <a name="what-if-i-enter-the-wrong-email-address-when-i-register"></a>Cosa succede se si immette l'indirizzo di posta elettronica errato quando si esegue la registrazione?
 
-Se si immette l'indirizzo di posta elettronica errato al momento della registrazione, non si riceverà il messaggio di posta elettronica di attivazione. Il collegamento di registrazione nel messaggio di posta elettronica scadrà automaticamente dopo 24 ore. È possibile tornare alla pagina di <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">registrazione e</a> registrare di nuovo con l'indirizzo di posta elettronica corretto.
+Se si immette l'indirizzo di posta elettronica errato al momento della registrazione, non si riceverà il messaggio di posta elettronica di attivazione. Il collegamento di registrazione nel messaggio di posta elettronica scadrà automaticamente dopo 24 ore. È possibile tornare alla pagina di <a href="https://go.microsoft.com/fwlink/p/?linkid=837466" target="_blank">registrazione</a> e registrare di nuovo con l'indirizzo di posta elettronica corretto.
   
 ### <a name="what-if-i-dont-receive-an-activation-email"></a>Cosa succede se non si riceve un messaggio di posta elettronica di attivazione?
 

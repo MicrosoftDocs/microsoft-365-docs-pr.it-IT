@@ -31,7 +31,7 @@ Viva Topics usa la tecnologia Microsoft AI, Microsoft 365, Microsoft Graph, Sear
 
 </br>
 
-Viva Topics consente di risolvere un problema aziendale chiave in molte aziende, fornendo le informazioni agli utenti quando ne hanno bisogno. Ad esempio, i nuovi dipendenti devono imparare rapidamente molte nuove informazioni e trovare termini di cui non conoscono nulla durante la lettura delle informazioni aziendali. Per saperne di più, l'utente potrebbe dover allontanarsi da ciò che sta facendo e dedicare tempo prezioso alla ricerca di dettagli, ad esempio informazioni su cosa sia il termine, chi nell'organizzazione è un esperto in materia e forse siti e documenti correlati al termine.
+Viva Topics consente di risolvere un problema aziendale chiave in molte aziende, fornendo le informazioni agli utenti quando ne hanno bisogno. Ad esempio, i nuovi dipendenti devono imparare rapidamente molte nuove informazioni e trovare termini di cui non conoscono nulla durante la lettura delle informazioni aziendali. Per saperne di più, l'utente potrebbe dover allontanarsi da ciò che sta facendo e dedicare tempo prezioso alla ricerca di dettagli, ad esempio informazioni sul termine, chi nell'organizzazione è un esperto in materia e forse siti e documenti correlati al termine.
 
 Viva Topics usa l'intelligenza artificiale per cercare e identificare **automaticamente gli argomenti** nell'organizzazione. Vengono compilate informazioni su di esse, ad esempio una breve descrizione, persone che lavorano all'argomento e siti, file e pagine ad esso correlati. Un responsabile o un collaboratore può scegliere di aggiornare le informazioni sull'argomento in base alle esigenze. Gli argomenti sono disponibili per gli utenti, il che significa che per ogni istanza dell'argomento visualizzata in un sito di SharePoint moderno nelle notizie e nelle pagine, il testo verrà evidenziato. Gli utenti possono scegliere di selezionare l'argomento per saperne di più nei dettagli dell'argomento. Gli argomenti sono disponibili anche nel servizio di ricerca di SharePoint.
 
@@ -45,7 +45,7 @@ Quando un argomento viene menzionato nel contenuto delle notizie e delle pagine 
 
 ## <a name="knowledge-indexing"></a>Indicizzazione delle informazioni
 
-Viva Topics usa la tecnologia microsoft ai per **identificare gli** argomenti nell'ambiente Microsoft 365.
+Viva Topics usa la tecnologia ai microsoft per **identificare gli argomenti** nel tuo ambiente Microsoft 365.
 
 Un argomento è una frase o un termine che è importante o significativo a livello di organizzazione. Ha un significato specifico per l'organizzazione e ha risorse ad essa correlate che possono aiutare gli utenti a capire cos'è e trovare ulteriori informazioni su di esso. Esistono molti tipi diversi di argomenti che saranno importanti per l'organizzazione. Inizialmente, la tecnologia IA Di Microsoft si concentra sui seguenti tipi:
 - Project
@@ -64,7 +64,7 @@ Quando un argomento viene identificato e l'intelligenza artificiale determina ch
 - Persone che potrebbero essere a conoscenza dell'argomento.
 - File, pagine e siti correlati all'argomento.
 
-Gli amministratori della knowledge base possono scegliere di eseguire la ricerca per indicizzazione in tutti i siti di SharePoint nel tenant per argomenti o di selezionare solo determinati siti.
+Gli amministratori delle informazioni possono scegliere di eseguire la ricerca per indicizzazione in tutti i siti di SharePoint nel tenant per argomenti o di selezionare solo alcuni siti.
 
 Vedere [Individuazione e cura degli argomenti](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation)
 
@@ -72,15 +72,15 @@ Vedere [Individuazione e cura degli argomenti](https://docs.microsoft.com/micros
 
 Quando si usano Viva Topics nell'ambiente Microsoft 365, gli utenti avranno i ruoli seguenti:
 
-- Visualizzatori di argomenti: utenti che possono vedere gli argomenti  principali nei siti moderni di SharePoint a cui hanno almeno accesso in lettura e in Microsoft Search. Possono selezionare le evidenziazioni degli argomenti per visualizzare i dettagli degli argomenti nelle pagine degli argomenti. I visualizzatori di argomenti possono fornire feedback sull'utilità di un argomento per loro.
+- Visualizzatori di argomenti: utenti che possono visualizzare gli argomenti  principali nei siti moderni di SharePoint a cui hanno almeno accesso in lettura e in Microsoft Search. Possono selezionare le evidenziazioni degli argomenti per visualizzare i dettagli degli argomenti nelle pagine degli argomenti. I visualizzatori di argomenti possono fornire feedback sull'utilità di un argomento per loro.
 
 - Collaboratori: utenti che dispongono dei diritti per modificare gli argomenti esistenti o crearne di nuovi. Gli amministratori della knowledge base assegnano autorizzazioni di collaboratore agli utenti tramite le impostazioni Viva Topics nell'interfaccia di amministrazione di Microsoft 365. Tieni presente che puoi anche scegliere di concedere a tutti i visualizzatori di argomenti l'autorizzazione per modificare e creare argomenti in modo che tutti possano contribuire agli argomenti visualizzati.
 
-- Responsabili della conoscenza: utenti che guidano gli argomenti nel ciclo di vita dell'argomento. I knowledge  manager utilizzano la pagina Gestisci argomenti nel Centro argomenti per confermare gli argomenti suggeriti dall'intelligenza artificiale, rimuovere gli argomenti non più pertinenti, nonché modificare gli argomenti esistenti o crearne di nuovi e sono gli unici utenti ad accedervi. Gli amministratori della knowledge base assegnano le autorizzazioni di knowledge manager agli utenti tramite le impostazioni di amministrazione viva topics nell'interfaccia di amministrazione di Microsoft 365. 
+- Responsabili della conoscenza: utenti che guidano gli argomenti nel ciclo di vita dell'argomento. I knowledge  manager usano la pagina Gestisci argomenti nel Centro argomenti per confermare gli argomenti suggeriti dall'intelligenza artificiale, rimuovere gli argomenti che non sono più rilevanti, nonché modificare gli argomenti esistenti o crearne di nuovi e sono gli unici utenti che hanno accesso ad esso. Gli amministratori della knowledge base assegnano le autorizzazioni di knowledge manager agli utenti tramite le impostazioni di amministrazione viva topics nell'interfaccia di amministrazione di Microsoft 365. 
 
 - Amministratori della knowledge base: gli amministratori della knowledge base configurano Viva Topics e lo gestiscono tramite i controlli di amministrazione nell'interfaccia di amministrazione di Microsoft 365. Attualmente, un amministratore globale o di SharePoint di Microsoft 365 può fungere da amministratore della knowledge base.
 
-Per [ulteriori informazioni, vedere i](topic-experiences-roles.md) ruoli di Viva Topics.
+Per [ulteriori informazioni, vedere i](topic-experiences-roles.md) ruoli viva topics.
 
 ## <a name="topic-management"></a>Gestione degli argomenti
 
@@ -116,7 +116,7 @@ L'intelligenza artificiale continuerà a lavorare per fornire suggerimenti per m
 
 Gli utenti con autorizzazioni per la modifica o la creazione di argomenti possono apportare aggiornamenti direttamente alle pagine degli argomenti se desiderano apportare correzioni o aggiungere ulteriori informazioni. Possono anche aggiungere nuovi argomenti che l'intelligenza artificiale non è stata in grado di identificare. Se sono disponibili informazioni sufficienti su questi argomenti aggiunti manualmente e l'intelligenza artificiale è in grado di identificare questo tipo di argomento, ulteriori suggerimenti dell'intelligenza artificiale potrebbero migliorare questi argomenti aggiunti manualmente 
 
-Agli utenti a cui si consente l'accesso di visualizzare gli argomenti nel loro lavoro quotidiano potrebbe essere richiesto se l'argomento era utile per loro. Il sistema esamina queste risposte e le usa per migliorare l'evidenziazione dell'argomento e determinare cosa viene visualizzato nei riepiloghi degli argomenti e nei dettagli degli argomenti.
+Agli utenti a cui si consente l'accesso di visualizzare gli argomenti nel loro lavoro quotidiano potrebbe essere richiesto se l'argomento era utile per loro. Il sistema esamina queste risposte e le usa per migliorare l'evidenziazione dell'argomento e determinare cosa viene visualizzato nei riepiloghi degli argomenti e nei dettagli dell'argomento.
 
 Inoltre, gli utenti con autorizzazioni appropriate possono contrassegnare elementi come una conversazione di Yammer rilevanti per un argomento e aggiungerli a un argomento specifico. 
 

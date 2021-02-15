@@ -61,7 +61,7 @@ Per gestire chi crea i gruppi, le persone seguenti hanno bisogno di licenze di A
 - I membri del gruppo a cui è consentito creare gruppi
 
 > [!NOTE]
-> Per altri dettagli su come assegnare le licenze di Azure, vedere Assegnare o rimuovere licenze nel portale di [Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups)
+> Per [altri dettagli su come assegnare le](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups) licenze di Azure, vedere Assegnare o rimuovere licenze nel portale di Azure Active Directory.
 
 Le persone seguenti non hanno bisogno di licenze di Azure AD Premium o Azure AD Basic EDU assegnate:
 

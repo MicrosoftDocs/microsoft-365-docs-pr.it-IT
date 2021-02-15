@@ -60,7 +60,7 @@ Questi modi si basano sul piano di Microsoft 365.
 |Piano|Consiglio|Tipo di cliente|
 |---|---|---|
 |Tutti i piani di Microsoft 365|Usa le impostazioni predefinite di sicurezza, che richiedono l'autenticazione a più fattori per tutti gli account utente. <p> È anche possibile configurare l'autenticazione a più fattori per utente nei singoli account utente, ma questa operazione non è consigliata.|Azienda di piccole dimensioni|
-|Microsoft 365 Business Premium <p> Microsoft 365 E3 <p> Licenze di Azure Active Directory (Azure AD) Premium P1|Usa i criteri di accesso condizionale per richiedere l'autenticazione a più fattori per gli account utente in base all'appartenenza ai gruppi, alle app o ad altri criteri.|Da piccole imprese a imprese|
+|Microsoft 365 Business Premium <p> Microsoft 365 E3 <p> Licenze di Azure Active Directory (Azure AD) Premium P1|Usa i criteri di accesso condizionale per richiedere l'autenticazione a più fattori per gli account utente in base all'appartenenza ai gruppi, alle app o ad altri criteri.|Da small business a enterprise|
 |Microsoft 365 E5 <p> Licenze di Azure AD Premium P2|Usare Azure AD Identity Protection per richiedere l'autenticazione a più fattori in base ai criteri di rischio di accesso.|Grandi aziende|
 ||||
 

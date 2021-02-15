@@ -53,7 +53,7 @@ Per questa opzione è necessario disporre di almeno due computer in esecuzione i
 
 Il servizio di posizione di Windows deve essere autorizzato nei computer. Puoi testarlo eseguendo l'app **Mappe** e individuandoti. Può essere abilitato in un singolo computer con impostazioni **| Privacy | Posizione** in cui l'impostazione _Consenti alle app di accedere alla posizione_ deve essere abilitata. Il consenso di Servizi percorso Windows può essere distribuito ai PC con MDM o Criteri di gruppo con l'impostazione _LetAppsAccessLocation._
 
-Non è necessario aggiungere posizioni nell'interfaccia di amministrazione con questo metodo perché vengono identificate automaticamente in base alla risoluzione della città. Non è possibile visualizzare più sedi all'interno di una città tramite i servizi di posizione di Windows. Le informazioni sulla posizione vengono inoltre arrotondate ai 300 metri per 300 metri più vicini prima di essere caricate, in modo che non sia possibile accedere a informazioni più precise sulla posizione.
+Non è necessario aggiungere posizioni nell'interfaccia di amministrazione con questo metodo perché vengono identificate automaticamente con la risoluzione della città. Non è possibile visualizzare più sedi all'interno di una città tramite i servizi di posizione di Windows. Le informazioni sulla posizione vengono inoltre arrotondate ai 300 metri per 300 metri più vicini prima di essere caricate, in modo che non sia possibile accedere a informazioni più precise sulla posizione.
 
 I computer devono avere Wi-Fi rete anziché un cavo ethernet. I computer con un cavo ethernet non dispongono di informazioni accurate sulla posizione.
 
@@ -79,11 +79,11 @@ I campioni di misurazione e le posizioni degli uffici dovrebbero iniziare a esse
 
 ## <a name="how-do-i-use-this-information"></a>Come si usano queste informazioni?
 
-**Le informazioni dettagliate** sulla rete, i consigli relativi alle prestazioni e le valutazioni della rete sono utili per progettare i perimetri di rete per le sedi degli uffici. Ogni approfondimento fornisce informazioni dettagliate sulle caratteristiche delle prestazioni per un problema comune specifico per ogni posizione geografica in cui gli utenti accedono al tenant. **I consigli sulle** prestazioni per ogni approfondimento sulla rete offrono modifiche specifiche alla progettazione dell'architettura di rete che è possibile apportare per migliorare l'esperienza utente relativa alla connettività di rete di Microsoft 365. La valutazione della rete mostra in che modo la connettività di rete influisce sull'esperienza utente, consentendo il confronto delle diverse connessioni di rete della posizione utente.
+**Le informazioni dettagliate** sulla rete, i consigli relativi alle prestazioni e le valutazioni della rete sono utili per progettare i perimetri di rete per le sedi degli uffici. Ogni approfondimento fornisce informazioni dettagliate sulle caratteristiche delle prestazioni per un problema comune specifico per ogni posizione geografica in cui gli utenti accedono al tenant. **I consigli sulle prestazioni** per ogni approfondimento sulla rete offrono modifiche specifiche alla progettazione dell'architettura di rete che è possibile apportare per migliorare l'esperienza utente correlata alla connettività di rete di Microsoft 365. La valutazione della rete mostra in che modo la connettività di rete influisce sull'esperienza utente, consentendo il confronto delle diverse connessioni di rete della posizione utente.
 
 **Le valutazioni di rete** trasformano un aggregato di molte metriche delle prestazioni di rete in uno snapshot dell'integrità della rete aziendale, rappresentato da un valore in punti compreso tra 0 e 100. Le valutazioni di rete hanno come ambito l'intero tenant e per ogni posizione geografica da cui gli utenti si connettono al tenant, fornendo agli amministratori di Microsoft 365 un modo semplice per comprendere immediatamente l'integrità della rete aziendale ed eseguire rapidamente il drill-down in un report dettagliato per qualsiasi sede globale.
 
-Le aziende complesse con più sedi e architetture perimetrali di rete non semplici possono trarre vantaggio da queste informazioni durante l'onboarding iniziale in Microsoft 365 o per risolvere i problemi di prestazioni di rete rilevati con l'aumento dell'utilizzo. Questo non è in genere necessario per le piccole imprese che usano Microsoft 365 o per le aziende che hanno già una connettività di rete semplice e diretta. Le aziende con più di 500 utenti e più sedi degli uffici ne trarranno i più vantaggi.
+Le aziende complesse con più sedi e architetture perimetrali di rete non semplici possono trarre vantaggio da queste informazioni durante l'onboarding iniziale in Microsoft 365 o per risolvere i problemi di prestazioni di rete rilevati con l'aumento dell'utilizzo. Questo in genere non è necessario per le piccole imprese che usano Microsoft 365 o per le aziende che hanno già una connettività di rete semplice e diretta. Le aziende con più di 500 utenti e più sedi degli uffici ne trarranno i più vantaggi.
 
 >[!IMPORTANT]
 >Le informazioni dettagliate sulla rete, i consigli sulle prestazioni e le valutazioni nell'interfaccia di amministrazione di Microsoft 365 sono attualmente in stato di anteprima ed è disponibile solo per i tenant di Microsoft 365 che sono stati registrati nel programma di anteprima delle funzionalità.
@@ -99,7 +99,7 @@ Molte aziende dispongono di configurazioni perimetrali di rete che sono aumentat
 
 Le aziende possono migliorare l'esperienza utente generale e proteggere l'ambiente seguendo i principi di connettività di [Office 365](https://aka.ms/pnc) e usando la funzionalità di connettività di rete dell'interfaccia di amministrazione di Microsoft 365. Nella maggior parte dei casi, seguire questi principi generali avrà un impatto positivo significativo sulla latenza degli utenti finali, sull'affidabilità dei servizi e sulle prestazioni complessive di Microsoft 365.
 
-A Microsoft viene talvolta richiesto di analizzare i problemi di prestazioni di rete con Microsoft 365 per i clienti di grandi imprese, che spesso hanno una causa principale correlata all'infrastruttura perimetrale di rete dei clienti. Quando viene rilevata una causa principale comune di un problema di rete perimetrale del cliente, si cerca di identificare semplici misurazioni di test che lo identificano. Un test con una soglia di misurazione che identifica un problema specifico è utile perché possiamo testare la stessa misurazione in qualsiasi posizione, stabilire se la causa principale è presente e condividerla come informazioni approfondite sulla rete con l'amministratore.
+A Microsoft viene talvolta richiesto di analizzare i problemi di prestazioni di rete con Microsoft 365 per i clienti di grandi imprese, che spesso hanno una causa principale correlata all'infrastruttura perimetrale di rete dei clienti. Quando viene rilevata una causa principale comune di un problema di perimetro di rete del cliente, si cerca di identificare semplici misurazioni di test che lo identificano. Un test con una soglia di misurazione che identifica un problema specifico è utile perché possiamo testare la stessa misurazione in qualsiasi posizione, stabilire se la causa principale è presente e condividerla come informazioni approfondite sulla rete con l'amministratore.
 
 Alcune informazioni dettagliate sulla rete indicherà semplicemente un problema che richiede ulteriori indagini. Una panoramica della rete in cui sono disponibili test sufficienti per mostrare un'azione di correzione specifica per correggere la causa radice è elencata come **azione consigliata.** Queste raccomandazioni, basate su metriche in tempo reale che rivelano valori che non rientrano in una soglia predeterminata, sono molto più utili delle procedure consigliate generali, poiché sono specifiche dell'ambiente e mostreranno il miglioramento effettivo dopo aver apportato le modifiche consigliate.
 
@@ -107,7 +107,7 @@ Alcune informazioni dettagliate sulla rete indicherà semplicemente un problema 
 
 Microsoft dispone di misurazioni di rete esistenti da diversi client Web e desktop di Office che supportano il funzionamento di Microsoft 365. Queste misurazioni vengono ora utilizzate per fornire informazioni dettagliate sulla  progettazione dell'architettura di rete e una valutazione della rete mostrata nella pagina Connettività di rete nell'interfaccia di amministrazione di Microsoft 365.
 
-Per impostazione predefinita, le informazioni approssimative sulla posizione associate alle misurazioni di rete identificano la città in cui si trovano i dispositivi client. La valutazione della rete in ogni posizione viene visualizzata con il colore e il numero relativo di utenti in ogni posizione è rappresentato dalla dimensione del cerchio.
+Per impostazione predefinita, le informazioni approssimative sulla posizione associate alle misurazioni di rete identificano la città in cui si trovano i dispositivi client. La valutazione della rete in ogni posizione viene visualizzata con il colore e il numero relativo di utenti in ogni posizione è rappresentato dalle dimensioni del cerchio.
 
 > [!div class="mx-imgBorder"]
 > ![Mappa panoramica delle informazioni dettagliate di rete](../media/m365-mac-perf/m365-mac-perf-overview-map.png)
@@ -124,7 +124,7 @@ La pagina di panoramica mostra anche la valutazione della rete per il cliente co
 
 ## <a name="specific-office-location-network-performance-summary-and-insights"></a>Riepilogo e informazioni dettagliate sulle prestazioni della rete per la posizione specifica dell'ufficio
 
-Se si seleziona un luogo dell'ufficio, verrà visualizzata una pagina di riepilogo specifica della posizione in cui sono visualizzati i dettagli dell'uscita di rete identificata dalle misurazioni relative alla posizione dell'ufficio.
+Se si seleziona la posizione di un ufficio, verrà visualizzata una pagina di riepilogo specifica della posizione in cui sono visualizzati i dettagli dell'uscita di rete identificata dalle misurazioni relative alla posizione dell'ufficio.
 
 > [!div class="mx-imgBorder"]
 > ![Informazioni dettagliate sulla rete in base alla posizione](../media/m365-mac-perf/m365-mac-perf-locations-plan-overview.png)
@@ -134,8 +134,8 @@ Una mappa della rete perimetrale per gli utenti dell'organizzazione nella posizi
 - **Sede dell'ufficio** - Posizione dell'ufficio per la pagina che si sta cercando
 - **Perimetro di rete** - Posizione dell'indirizzo IP di origine per le connessioni dalla posizione dell'ufficio. Ciò dipende dall'accuratezza dei database delle località geo-IP
 - **Porta anteriore del servizio Exchange** ottimale - Una delle porte anteriori del servizio Exchange consigliate a cui gli utenti in questa sede devono connettersi
-- **Porta d'ingresso sub-ottimale** di Exchange - Porta anteriore del servizio Exchange a cui gli utenti sono connessi, ma non è consigliabile
-- **Front door di servizio** ottimale di SharePoint - Una delle porte anteriori del servizio SharePoint consigliate a cui gli utenti in questa sede devono connettersi
+- **Porta d'ingresso sub-ottimale** di Exchange - Porta d'ingresso del servizio Exchange a cui gli utenti sono connessi, ma non è consigliabile
+- **Front door di servizio** ottimale di SharePoint - Una delle porte anteriori del servizio SharePoint consigliate a cui devono connettersi gli utenti in questa sede
 - **Frontdoire del** servizio sharePoint sotto-ottimale - Porta d'ingresso di un servizio SharePoint a cui gli utenti sono connessi, ma non è consigliabile
 - **Server resolver** ricorsivo DNS - Posizione da un database IP geografico del resolver ricorsivo DNS rilevato utilizzato per Exchange Online (se disponibile)
 - **Il server proxy:** la posizione da un database IP geografico del server proxy rilevato (se disponibile) 
@@ -157,7 +157,7 @@ Nel file CSV la posizione di una città individuata viene visualizzata nella col
 
 1. Nella finestra principale _Connettività a Microsoft 365_ fare clic sulla **scheda** Posizioni.
 
-1. Fare clic **sul pulsante** Importa sopra l'elenco delle posizioni. Verrà **visualizzato il riquadro** a comparsa Importa posizioni ufficio.
+1. Fai clic **sul pulsante** Importa appena sopra l'elenco delle posizioni. Verrà **visualizzato il riquadro** a comparsa Importa posizioni ufficio.
 
    > [!div class="mx-imgBorder"]
    > ![Messaggio di importazione CSV](../media/m365-mac-perf/m365-mac-perf-import.png)
@@ -173,9 +173,9 @@ Nel file CSV la posizione di una città individuata viene visualizzata nella col
    1. **Egress IP Address ranges 1-5** (optional): for each range, enter the circuit name followed by a space separated list of valid IPv4 or IPv6 CIDR addresses. Questi valori vengono utilizzati per distinguere più sedi in cui si utilizzano gli stessi indirizzi IP della subnet LAN. Gli intervalli di indirizzi IP in uscita devono avere tutte una dimensione di rete di /24 e /24 non è incluso nell'input.
    1. **LanIps** (obbligatorio): elencare gli intervalli di subnet LAN in uso in questa sede. Gli ID subnet LAN devono avere una dimensione di rete CIDR in cui le dimensioni della rete possono essere comprese tra /8 e /29. Più intervalli di subnet LAN possono essere separati da una virgola o da un punto e virgola.
    
-1. Dopo aver aggiunto le posizioni dell'ufficio  e salvato il  file, fare clic sul pulsante Sfoglia accanto al campo Carica il file CSV salvato.
+1. Dopo aver aggiunto le posizioni dell'ufficio  e salvato il  file, fare clic sul pulsante Sfoglia accanto al campo Carica il file CSV completato e selezionare il file CSV salvato.
 
-1. Il file verrà convalidato automaticamente. Se sono presenti errori di convalida, verrà visualizzato il messaggio di errore Sono presenti _alcuni errori nel file di importazione. Esaminare gli errori, correggere il file di importazione e quindi riprovare._ Fare clic sul collegamento **Apri dettagli errore per** un elenco di errori di convalida di campi specifici.
+1. Il file verrà convalidato automaticamente. Se sono presenti errori di convalida, verrà visualizzato il messaggio di errore Sono _presenti alcuni errori nel file di importazione. Esaminare gli errori, correggere il file di importazione e quindi riprovare._ Fare clic sul collegamento **Apri dettagli errore per** un elenco di errori di convalida di campi specifici.
 
    > [!div class="mx-imgBorder"]
    > ![Messaggio di errore di importazione CSV](../media/m365-mac-perf/m365-mac-perf-import-error.png)

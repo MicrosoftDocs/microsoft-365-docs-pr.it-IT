@@ -107,4 +107,4 @@ L'amministratore ha una visualizzazione di sola lettura per tutte le sottoscrizi
 
 Per domande frequenti sugli acquisti self-service, vedere Domande frequenti [sugli acquisti self-service.](self-service-purchase-faq.md)
 
-Se hai domande o hai bisogno di assistenza per gli acquisti self-service, [contatta il supporto.](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)
+In caso di domande o se hai bisogno di assistenza per gli acquisti self-service, [contatta il supporto.](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products)

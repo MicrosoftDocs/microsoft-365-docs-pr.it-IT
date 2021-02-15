@@ -144,7 +144,7 @@ Se si usa Office 365 gestito da 21Vianet in Cina, vedere Visualizzare la fattura
 
     ![Close up of the More Actions menu.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
   
-3. Nel riquadro **Modifica l'indirizzo di utilizzo del** servizio aggiornare l'indirizzo, quindi selezionare **Invia.**
+3. Nel riquadro **Modifica l'indirizzo di utilizzo del** servizio aggiornare l'indirizzo e quindi selezionare **Invia.**
 
 ::: moniker-end
 
@@ -156,7 +156,7 @@ Se si usa Office 365 gestito da 21Vianet in Cina, vedere Visualizzare la fattura
 
     ![Close up of the More Actions menu.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
   
-3. Nel riquadro **Modifica l'indirizzo di utilizzo del** servizio aggiornare l'indirizzo, quindi selezionare **Invia.**
+3. Nel riquadro **Modifica l'indirizzo di utilizzo del** servizio aggiornare l'indirizzo e quindi selezionare **Invia.**
 
 ::: moniker-end
 

@@ -23,7 +23,7 @@ ms.locfileid: "50107257"
 ---
 # <a name="create-a-new-topic"></a>Creare un nuovo argomento 
 
-In Viva Topics puoi creare un nuovo argomento se non ne viene individuato uno tramite l'indicizzazione o se la tecnologia di intelligenza artificiale non ha trovato prove sufficienti per stabilirlo come argomento.
+In Viva Topics puoi creare un nuovo argomento se non ne viene individuato uno tramite l'indicizzazione o se la tecnologia IA non ha trovato prove sufficienti per stabilirlo come argomento.
 
 > [!Note] 
 > Anche se le informazioni contenute in un argomento raccolto dall'intelligenza artificiale sono limitate per motivi di [sicurezza,](topic-experiences-security-trimming.md)tenere presente che le informazioni contenute in un argomento creato manualmente sono visibili a tutti gli utenti che dispongono delle autorizzazioni per visualizzare l'argomento. 
@@ -52,7 +52,7 @@ Per creare un nuovo argomento, è necessario:
 
     ![Descrizione dell'argomento](../media/knowledge-management/description.png)</br>
 
-4. Nella sezione <b>Persone aggiunte</b> puoi "aggiungere" una persona per mostrarla come esperta in materia nell'argomento. Iniziare digitandone il nome o l'indirizzo di posta elettronica nella casella aggiungi <b>un</b> nuovo utente e quindi selezionare l'utente che si desidera aggiungere dai risultati della ricerca. Puoi anche "rimuovere" le voci <b></b> selezionando l'icona Rimuovi dall'elenco nella scheda utente. Puoi anche trascinare la persona per modificare l'ordine di visualizzazione dell'elenco di persone.
+4. Nella sezione <b>Persone aggiunte</b> puoi "aggiungere" una persona per mostrarla come esperta in materia nell'argomento. Iniziare digitandone il nome o l'indirizzo di posta elettronica nella casella aggiungi <b>un</b> nuovo utente e quindi selezionare l'utente che si desidera aggiungere dai risultati della ricerca. Puoi anche "rimuovere" questi elementi <b></b> selezionando l'icona Rimuovi dall'elenco nella scheda utente. Puoi anche trascinare la persona per modificare l'ordine di visualizzazione dell'elenco di persone.
  
     ![Persone aggiunte](../media/knowledge-management/pinned-people.png)</br>
 
@@ -63,7 +63,7 @@ Per creare un nuovo argomento, è necessario:
  
     Per aggiungere un nuovo file, selezionare <b>Aggiungi,</b>selezionare il sito di SharePoint dai siti Frequenti o Seguiti e quindi selezionare il file dalla raccolta documenti del sito.
 
-    È inoltre possibile utilizzare <b>l'opzione</b> Da un collegamento per aggiungere un file o una pagina specificando l'URL. 
+    È inoltre possibile utilizzare <b>l'opzione Da</b> un collegamento per aggiungere un file o una pagina specificando l'URL. 
 
 
 6.  La <b>sezione Siti correlati</b> mostra i siti che dispongono di informazioni sull'argomento. 

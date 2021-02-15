@@ -49,7 +49,7 @@ Puoi aggiungere all'icona di avvio delle app riquadri personalizzati che puntano
 
 1. Accedere all'interfaccia di amministrazione come amministratore globale, passare a Impostazioni organizzazione  >  e scegliere la scheda **Profilo organizzazione.**
     
-2. Nella scheda **Profilo organizzazione** scegliere Riquadri dell'icona di avvio delle **app personalizzati.**
+2. Nella scheda **Profilo organizzazione** scegliere Riquadri di avvio delle **app personalizzati.**
   
 3. Selezionare **Aggiungi un riquadro personalizzato.** 
   
@@ -91,5 +91,5 @@ Per eliminare un riquadro personalizzato, dalla **finestra Riquadri** personaliz
   
 ## <a name="whats-next"></a>Operazioni successive
 
-Oltre ad aggiungere riquadri all'icona di avvio delle app, puoi aggiungere riquadri di avvio delle app alla barra di spostamento ([altre informazioni).](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985) Per personalizzare l'aspetto di Microsoft 365 in base al marchio dell'organizzazione, vedere [Personalizzare il tema di Microsoft 365.](../setup/customize-your-organization-theme.md)
+Oltre ad aggiungere riquadri all'icona di avvio delle app, puoi aggiungere riquadri dell'icona di avvio delle app alla barra di spostamento ([altre informazioni).](https://support.microsoft.com/office/eb34a21b-52fa-4fbf-a8d5-146132242985) Per personalizzare l'aspetto di Microsoft 365 in base al marchio dell'organizzazione, vedere [Personalizzare il tema di Microsoft 365.](../setup/customize-your-organization-theme.md)
   

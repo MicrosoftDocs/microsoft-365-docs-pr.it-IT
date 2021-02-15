@@ -71,7 +71,7 @@ La versione di valutazione di Defender per Office 365 è in fase di implementazi
 
 ## <a name="learn-more-about-defender-for-office-365"></a>Ulteriori informazioni su Defender per Office 365
 
-Defender per Office 365 consente alle organizzazioni di proteggere la propria azienda offrendo una gamma completa di funzionalità.
+Defender per Office 365 consente alle organizzazioni di proteggere la propria azienda offrendo un'ampia gamma di funzionalità.
 
 Per altre informazioni su Defender per Office 365, vedere questa [guida interattiva.](https://techcommunity.microsoft.com/t5/video-hub/protect-your-organization-with-microsoft-365-defender/m-p/1671189)
 

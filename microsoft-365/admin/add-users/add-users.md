@@ -39,7 +39,7 @@ ms.locfileid: "50114154"
 
 Per poter accedere a [Microsoft 365 per](https://www.microsoft.com/microsoft-365/business)le aziende, le persone del team necessitano di un account utente. Il modo più semplice per aggiungere account utente è aggiungerli uno alla volta nell'interfaccia di amministrazione di Microsoft 365. Dopo aver fatto questo passaggio, gli utenti hanno licenze di Microsoft 365, credenziali di accesso e cassette postali di Microsoft 365.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 Per aggiungere utenti e assegnare licenze, è necessario essere un amministratore globale, di licenza o di utente. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
 
@@ -56,15 +56,15 @@ Per aggiungere utenti e assegnare licenze, è necessario essere un amministrator
 
 1. Passare all'interfaccia di amministrazione all'indirizzo <https://admin.microsoft.com>.
 2. Passare a **Utenti** > **attivi e** selezionare Aggiungi **utente.**
-3. Nel riquadro **Configura le nozioni di** base, immettere le informazioni di base sull'utente e quindi selezionare **Avanti.**
-    - **Nome** Compilare il nome e il cognome, il nome visualizzato e il nome utente.
+3. Nel riquadro **Configura le nozioni di** base, inserire le informazioni di base sull'utente e quindi selezionare **Avanti.**
+    - **Name** Compilare il nome e il cognome, il nome visualizzato e il nome utente.
     - **Dominio** Scegliere il dominio per l'account dell'utente. Ad esempio, se il nome utente dell'utente è Jakob e il dominio è contoso.com, accederà usando jakob@contoso.com.
     - **Impostazioni password** Scegliere di usare la password creata automaticamente o di creare una password complessa per l'utente.
-    - L'utente deve modificare la password dopo 90 giorni. Oppure è possibile scegliere di **richiedere all'utente di cambiare la password al primo accesso.**
+    - L'utente deve modificare la password dopo 90 giorni. Oppure è possibile scegliere di **richiedere all'utente di modificare la password al primo accesso.**
     - Scegliere se si desidera inviare la password tramite posta elettronica quando l'utente viene aggiunto.
 4. Nel riquadro **Assegna licenze di** prodotto selezionare il percorso e la licenza appropriata per l'utente. Se non ci sono licenze disponibili, è sempre possibile aggiungere un utente e acquistare licenze aggiuntive. Espandi **App** e seleziona o deseleziona le app per limitare le app per cui l'utente ha una licenza. Selezionare **Avanti**.
 5. Nel riquadro **Impostazioni facoltative** espandere **Ruoli** per rendere l'utente un amministratore. Espandi **Info profilo** per aggiungere ulteriori informazioni sull'utente.
-6. Selezionare **Avanti**, rivedere le impostazioni del nuovo utente, apportare le modifiche desiderate, quindi selezionare Fine **aggiunta,** quindi **Chiudi.**
+6. Selezionare **Avanti,** rivedere le impostazioni del nuovo utente, apportare le modifiche desiderate, quindi selezionare Fine **aggiunta,** quindi **Chiudi.**
 
 ::: moniker-end
 

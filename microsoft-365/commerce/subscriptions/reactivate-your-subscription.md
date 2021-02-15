@@ -40,7 +40,7 @@ ms.locfileid: "50114622"
 
 È possibile riattivare l'abbonamento nell'interfaccia di amministrazione se: l'abbonamento è scaduto, è stato disabilitato da Microsoft o se è stato annullato durante un periodo di tempo.
   
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 Per riattivare un abbonamento, è necessario essere un amministratore globale o di fatturazione. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
 
@@ -51,7 +51,7 @@ Per riattivare un abbonamento, è necessario essere un amministratore globale o 
 ::: moniker range="o365-worldwide"
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
-2. Nella scheda **Prodotti**, trovare l'abbonamento da riattivare. Selezionare **Altre azioni** (tre puntini), quindi selezionare **Riattiva la sottoscrizione**.\
+2. Nella scheda **Prodotti**, trovare l'abbonamento da riattivare. Seleziona **Altre azioni** (tre puntini), quindi seleziona **Riattiva la sottoscrizione**.\
     Se l'opzione Riattiva **l'abbonamento** non è visualizzata, [contattare il supporto.](../../admin/contact-support-for-business-products.md)
 3. Nel riquadro **Riattiva l’abbonamento**, selezionare una modalità di pagamento nell'elenco a discesa oppure selezionare **Aggiungi modalità di pagamento**.
 4. Selezionare **Salva**.
@@ -87,7 +87,7 @@ Per riattivare un abbonamento, è necessario essere un amministratore globale o 
 
     ![Close-up of a Subscription card that says Disabled and Reduced functionality with a Reactivate button.](../../media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
   
-    Se l'opzione **Riattiva** non è disponibile, chiamare il [supporto](../../admin/contact-support-for-business-products.md) per riattivare l'abbonamento.
+    Se l'opzione **Riattiva** come azione disponibile non è disponibile, chiamare il [supporto](../../admin/contact-support-for-business-products.md) per riattivare l'abbonamento.
 
 3. Immettere i dettagli sul pagamento. È possibile aggiornare le attuali informazioni sul pagamento.
 

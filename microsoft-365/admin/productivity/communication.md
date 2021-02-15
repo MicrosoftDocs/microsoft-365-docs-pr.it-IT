@@ -28,7 +28,7 @@ ms.locfileid: "50099713"
 ---
 # <a name="communication--people-experiences"></a>Comunicazione - Esperienze degli utenti
 
-Punteggio di produttività supporta il percorso verso la trasformazione digitale con informazioni dettagliate su come l'organizzazione usa Microsoft 365 e sulle esperienze tecnologiche che la supportano. Il punteggio dell'organizzazione misura le esperienze con la tecnologia e delle persone e può essere confrontato ai benchmark di organizzazioni simili per dimensione. La categoria di comunicazione fa parte delle misure dell'esperienza utente. Per altre informazioni, consultare la panoramica [del punteggio di produttività](productivity-score.md) e leggere [l'Informativa sulla privacy di Microsoft.](https://privacy.microsoft.com/privacystatement)
+Productivity Score supporta il percorso verso la trasformazione digitale con informazioni dettagliate su come l'organizzazione usa Microsoft 365 e sulle esperienze tecnologiche che la supportano. Il punteggio dell'organizzazione misura le esperienze con la tecnologia e delle persone e può essere confrontato ai benchmark di organizzazioni simili per dimensione. La categoria di comunicazione fa parte delle misure dell'esperienza utente. Per altre informazioni, consultare la panoramica [del punteggio di produttività](productivity-score.md) e leggere [l'Informativa sulla privacy di Microsoft.](https://privacy.microsoft.com/privacystatement)
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -70,7 +70,7 @@ Microsoft 365 offre alle persone la flessibilità necessaria per adattarsi allo 
 
    - Barra orizzontale in cui la parte blu rappresenta la percentuale espressa nell'intestazione
    - Evidenzia il numeratore/denominatore utilizzato per calcolare la percentuale espressa nell'intestazione:
-     - **Numeratore:** numero di persone che usano più modalità di comunicazione negli ultimi 28 giorni
+     - **Numeratore:** numero di persone che utilizzano più modalità di comunicazione negli ultimi 28 giorni
      - **Denominatore:** numero di persone contrassegnate come abilitate per più di un prodotto di comunicazione negli ultimi 28 giorni
    - **Anche il valore** peer benchmark della metrica chiave viene visualizzato come percentuale
 
@@ -127,7 +127,7 @@ Vengono inoltre fornite informazioni che consentono di ottenere visibilità sull
 
 2. **Corpo:** Fornisce informazioni sul valore dell'utilizzo di @mentions nei messaggi di posta elettronica. Inoltre, le persone che usano @mentions vengono espresse come percentuale di tutti gli utenti che hanno inviato un messaggio di posta elettronica negli ultimi 28 giorni.
 
-3. **Visualizzazione:** Suddivide la frequenza di risposta per i nuovi thread di posta elettronica in base al fatto che @mentions o meno:
+3. **Visualizzazione:** Suddivide la frequenza di risposta per i nuovi thread di posta elettronica a seconda che @mentions o meno:
 
    - Risposte ai messaggi di posta elettronica con **\@ menzioni:** la parte colorata e la frazione rappresentano la frequenza di risposta per i nuovi thread di posta elettronica contenenti @mentions. Questa frazione è costruita da:
    
@@ -170,21 +170,21 @@ Vengono inoltre fornite informazioni che consentono di ottenere visibilità sull
 
 1. **Intestazione:** Evidenzia i post contrassegnati come domande in Yammer che hanno ricevuto una risposta contrassegnata come migliore risposta come percentuale di tutti i post contrassegnati come domande in Yammer negli &quot; &quot; ultimi 28 giorni.
 
-2. **Corpo:** Fornisce informazioni sul valore dell'utilizzo di domande e risposte in Yammer per condividere informazioni.
+2. **Corpo:** Fornisce informazioni sul valore dell'utilizzo di domande e risposte in Yammer per condividere le conoscenze.
 
 3. **Visualizzazione:** Suddivide l'uso della funzionalità domande e risposte nell'organizzazione:
 
    - **Domande:** La parte colorata della barra e il numero associato rappresentano il numero totale di post contrassegnati come domande negli ultimi 28 giorni.
-   - **Domande con risposte:** La parte colorata della barra e il numero associato rappresentano il numero di post contrassegnati come domande e hanno ricevuto risposte negli ultimi 28 giorni.
+   - **Domande con risposte:** La parte colorata della barra e il numero associato rappresentano il numero di post contrassegnati come domande e che hanno ricevuto risposte negli ultimi 28 giorni.
    - **Domande con risposte migliori:** La parte colorata della barra e il numero associato rappresentano il numero di post contrassegnati come domande e che hanno ricevuto una risposta migliore negli &quot; &quot; ultimi 28 giorni.
       
 4. **Visualizzare il contenuto correlato:** Selezionare questo collegamento per visualizzare i video fascicolati e altri contenuti della Guida correlati.
 
 ## <a name="related-content"></a>Contenuti correlati
 
-[Integrità delle app di Microsoft 365 - Esperienze tecnologiche](apps-health.md) (articolo)\
+Integrità delle app di [Microsoft 365 - Esperienze tecnologiche](apps-health.md) (articolo)\
 [Collaborazione sul contenuto - Esperienze utente](content-collaboration.md) (articolo)\
-[Riunioni - Esperienze degli utenti](meetings.md) (articolo)\
-[Mobilità - Esperienze degli utenti](mobility.md) (articolo)\
+[Riunioni - Esperienze utente](meetings.md) (articolo)\
+[Mobilità - Esperienze utente](mobility.md) (articolo)\
 [Controlli della privacy per il punteggio di produttività](privacy.md) (articolo)\
-[Lavoro in team - Esperienze per le persone](teamwork.md) (articolo)
+[Lavoro in team - Esperienze degli utenti](teamwork.md) (articolo)

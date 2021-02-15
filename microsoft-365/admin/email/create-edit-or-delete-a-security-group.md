@@ -59,7 +59,7 @@ Sono inoltre disponibili [Gruppi in Exchange Online e SharePoint Online](#groups
 
 ::: moniker range="o365-worldwide"
     
-1. Selezionare il nome del gruppo di sicurezza **nella** pagina Gruppi e nella scheda **Membri** selezionare Visualizza tutti e **gestisci membri.** 
+1. Selezionare il nome del gruppo di sicurezza nella **pagina** Gruppi e nella **scheda** Membri selezionare Visualizza tutti e **gestisci membri.** 
     
 2. Nel riquadro del  gruppo selezionare Aggiungi membri e scegliere la persona nell'elenco oppure  digitare il nome della persona che si desidera aggiungere nella casella di ricerca e quindi selezionare **Salva.**
     
@@ -153,11 +153,11 @@ Dopo aver creato i gruppi di distribuzione e i gruppi di sicurezza abilitati all
 
 I gruppi di sicurezza possono essere usati con SharePoint, Exchange, MDM, Windows e altro ancora. I gruppi di sicurezza creati in SharePoint vengono riconosciuti solo dalla raccolta siti di SharePoint.
   
-## <a name="do-i-have-to-use-security-groups-for-my-organization-to-be-secure"></a>È necessario utilizzare i gruppi di sicurezza per garantire la protezione dell'organizzazione?
+## <a name="do-i-have-to-use-security-groups-for-my-organization-to-be-secure"></a>È necessario utilizzare i gruppi di sicurezza per garantire la sicurezza dell'organizzazione?
 
 No. È solo un altro modo di gestire la sicurezza dell'organizzazione. È sempre possibile concedere le autorizzazioni e l'accesso ai siti ai singoli utenti, ma con i gruppi di sicurezza si possono gestire più facilmente gruppi di utenti di dimensioni maggiori.
   
 ## <a name="can-i-send-email-to-a-security-group"></a>È possibile inviare messaggi di posta elettronica a un gruppo di sicurezza?
 
-Sì. Tuttavia, se si desidera usare i gruppi per la posta elettronica e la collaborazione, è consigliabile creare un gruppo [di Microsoft 365.](../create-groups/create-groups.md) 
+Sì. Tuttavia, se si desidera usare i gruppi per la posta elettronica e la collaborazione, è consigliabile creare invece un gruppo di [Microsoft 365.](../create-groups/create-groups.md) 
   

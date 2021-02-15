@@ -29,7 +29,7 @@ ms.locfileid: "50126605"
 ---
 # <a name="learn-about-privileged-access-management"></a>Informazioni sulla gestione degli accessi con privilegi
 
-La gestione degli accessi privilegiati consente un controllo granulare dell'accesso sulle attività di amministrazione con privilegi in Office 365. Consente di proteggere l'organizzazione da violazioni che utilizzano account di amministratore con privilegi esistenti con accesso permanente ai dati sensibili o l'accesso alle impostazioni di configurazione critiche. La gestione degli accessi privilegiati richiede agli utenti di richiedere l'accesso just-in-time per completare attività con privilegi elevati e con privilegi tramite un flusso di lavoro di approvazione con ambito elevato e con limiti di tempo. Questa configurazione offre agli utenti un accesso sufficiente per eseguire l'attività a portata di mano, senza rischiare l'esposizione di dati sensibili o impostazioni di configurazione critiche. L'abilitazione della gestione degli accessi privilegiati in Microsoft 365 consente all'organizzazione di operare senza privilegi permanenti e fornire un livello di difesa contro le vulnerabilità di accesso amministrativo permanente.
+La gestione degli accessi privilegiati consente un controllo granulare degli accessi sulle attività di amministrazione con privilegi in Office 365. Consente di proteggere l'organizzazione da violazioni che utilizzano account di amministratore con privilegi esistenti con accesso permanente ai dati sensibili o l'accesso alle impostazioni di configurazione critiche. La gestione degli accessi privilegiati richiede agli utenti di richiedere l'accesso just-in-time per completare attività con privilegi elevati e con privilegi tramite un flusso di lavoro di approvazione con ambito elevato e con limiti di tempo. Questa configurazione offre agli utenti un accesso sufficiente per eseguire l'attività a portata di mano, senza rischiare l'esposizione di dati sensibili o impostazioni di configurazione critiche. L'abilitazione della gestione degli accessi privilegiati in Microsoft 365 consente all'organizzazione di operare senza privilegi permanenti e fornire un livello di difesa contro le vulnerabilità di accesso amministrativo permanente.
 
 Per una rapida panoramica del flusso di lavoro integrato Customer Lockbox e della gestione degli accessi privilegiati, vedi questo video sulla gestione degli accessi con privilegi e [Customer Lockbox.](https://go.microsoft.com/fwlink/?linkid=2066800)
 
@@ -63,7 +63,7 @@ Nell'interfaccia di amministrazione di [Microsoft 365](https://admin.microsoft.c
 
 ### <a name="step-3-access-approval"></a>Passaggio 3: approvazione dell'accesso
 
-Viene generata una richiesta di approvazione e la notifica della richiesta in sospeso viene inviata tramite posta elettronica ai responsabili approvazione. Se approvata, la richiesta di accesso con privilegi viene elaborata come approvazione e l'attività è pronta per essere completata. Se viene negata, l'attività viene bloccata e non viene concesso alcun accesso al richiedente. Il richiedente viene informato dell'approvazione o della negazione della richiesta tramite un messaggio di posta elettronica.
+Viene generata una richiesta di approvazione e la notifica della richiesta in sospeso viene inviata tramite posta elettronica ai responsabili approvazione. Se approvata, la richiesta di accesso con privilegi viene elaborata come approvazione e l'attività è pronta per essere completata. Se negata, l'attività viene bloccata e non viene concesso alcun accesso al richiedente. Il richiedente viene informato dell'approvazione o del rifiuto della richiesta tramite un messaggio di posta elettronica.
 
 ![Passaggio 3: approvazione dell'accesso](../media/pam-step3-access-approval.jpg)
 
@@ -99,6 +99,6 @@ No, è necessario il ruolo Gestione ruoli di Exchange assegnato agli account che
 
 Iniziare [a configurare l'organizzazione per la gestione degli accessi con privilegi.](privileged-access-management-configuration.md)
 
-## <a name="learn-more"></a>Altre informazioni
+## <a name="learn-more"></a>Ulteriori informazioni
 
 [Guida interattiva: Monitorare e controllare le attività dell'amministratore con la gestione degli accessi con privilegi](https://content.cloudguides.com/guides/Privileged%20Access%20Management)

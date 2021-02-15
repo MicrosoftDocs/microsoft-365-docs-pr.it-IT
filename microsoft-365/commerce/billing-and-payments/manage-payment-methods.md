@@ -38,7 +38,7 @@ ms.locfileid: "50114850"
 
 Quando si acquistano prodotti o servizi aziendali da Microsoft, è possibile utilizzare una modalità di pagamento esistente o aggiungerne una nuova. Puoi usare una carta di credito o di debito o un conto corrente bancario per pagare gli elementi acquistati.
 
-Se l'account aziendale ha un profilo di fatturazione e sei il proprietario o il collaboratore del profilo di fatturazione, puoi usare il profilo di fatturazione supportato da una carta di credito o un pagamento tramite fattura per effettuare acquisti o pagare fatture. Se sei un responsabile delle fatture, puoi usare solo un profilo di fatturazione per pagare le fatture. Per ulteriori informazioni sui profili di fatturazione e sui ruoli, vedere [Gestire i profili di fatturazione.](manage-billing-profiles.md)
+Se l'account aziendale ha un profilo di fatturazione e sei il proprietario o il collaboratore del profilo di fatturazione, puoi usare il profilo di fatturazione supportato da una carta di credito o pagamento tramite fattura per effettuare acquisti o pagare fatture. Se sei un responsabile delle fatture, puoi usare solo un profilo di fatturazione per pagare le fatture. Per ulteriori informazioni sui profili di fatturazione e sui ruoli, vedere [Gestire i profili di fatturazione.](manage-billing-profiles.md)
 
 Se l'account aziendale non dispone di un profilo di fatturazione, qualsiasi amministratore globale o di fatturazione può gestire e usare qualsiasi conto bancario aggiunto al conto aziendale. Tuttavia, è possibile gestire o utilizzare solo le carte di credito che si aggiungono.
 
@@ -47,13 +47,13 @@ Se l'account aziendale non dispone di un profilo di fatturazione, qualsiasi ammi
 >
 > È necessario utilizzare una modalità di pagamento emessa dallo stesso paese del tenant.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
-Per eseguire le attività in questo articolo, è necessario essere un amministratore globale o di fatturazione. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
+Per eseguire le attività di questo articolo, è necessario essere un amministratore globale o di fatturazione. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="add-a-payment-method"></a>Aggiungere una modalità di pagamento
 
-L'aggiunta di una modalità di pagamento non ne associa alcuna sottoscrizione. Per assegnare una singola sottoscrizione alla modalità di pagamento, vedere [Modificare una modalità di pagamento per una singola sottoscrizione.](#change-a-payment-method-for-a-single-subscription) Per sostituire tutte le sottoscrizioni che usano un'altra modalità di pagamento con quella nuova, vedere [Sostituire una modalità di pagamento.](#replace-a-payment-method)
+L'aggiunta di una modalità di pagamento non consente di associare sottoscrizioni. Per assegnare una singola sottoscrizione alla modalità di pagamento, vedere [Modificare una modalità di pagamento per una singola sottoscrizione.](#change-a-payment-method-for-a-single-subscription) Per sostituire tutte le sottoscrizioni che utilizzano un'altra modalità di pagamento con quella nuova, vedere [Sostituire una modalità di pagamento.](#replace-a-payment-method)
 
 1. Nell'interfaccia di amministrazione, passare alla pagina **Fatturazione** > **Fatture e pagamenti** > <a href="https://go.microsoft.com/fwlink/p/?linkid=2018806" target="_blank">Modalità di pagamento</a>.
 2. Selezionare **Aggiungere una modalità di pagamento**.
@@ -118,7 +118,7 @@ Se una modalità di pagamento è collegata a qualsiasi sottoscrizione o profilo 
     > [!NOTE]
     > Se sono state associate sottoscrizioni a un profilo di fatturazione, è possibile utilizzare solo una carta di credito per il pagamento. Se nella pagina Modalità  di pagamento sono elencati conti bancari, non sono disponibili per la scelta nell'elenco a discesa.
 5. Per aggiungere una nuova modalità di pagamento, selezionare **Aggiungi modalità di pagamento**.
-6. Scegliere il tipo di metodo di pagamento che si desidera aggiungere, immettere le informazioni sull'account e quindi selezionare **Salva.**
+6. Scegliere il tipo di modalità di pagamento che si desidera aggiungere, immettere le informazioni sull'account e quindi selezionare **Salva.**
 7. La nuova modalità di pagamento è già selezionata nell'elenco a discesa. Selezionare **Avanti**.
 8. Selezionare **Elimina**.
 
@@ -127,9 +127,9 @@ Se una modalità di pagamento è collegata a qualsiasi sottoscrizione o profilo 
 | Problema | Procedura di risoluzione dei problemi |
 |:----------|:-----|
 |**Viene visualizzato un messaggio di errore che indica che il browser è attualmente impostato per bloccare i cookie.** |Impostare il browser in modo da accettare i cookie di terze parti e riprovare. |
-|**La carta di credito o di debito è stata rifiutata.** |Se si paga con carta di credito o di debito e la carta viene rifiutata, si riceve un messaggio di posta elettronica che indica che Microsoft non è stato in grado di elaborare il pagamento. Verifica che il numero della scheda dei dettagli della carta, la data di scadenza, il nome sulla scheda e l'indirizzo, tra cui città, stato e CAP, vengano visualizzati esattamente come nella scheda e &mdash; &mdash; nell'estratto conto. È possibile aggiornare le informazioni della carta e inviare immediatamente il pagamento utilizzando il **collegamento** Liquidazione saldo nella **sezione Fatturazione** della pagina dei dettagli dell'abbonamento. Per ulteriori informazioni, vedere [Cosa succede se si dispone di un saldo in sospeso?](pay-for-your-subscription.md#what-if-i-have-an-outstanding-balance)  <br/><br/>  If you continue to see the "declined" message, contact your bank. È possibile che la carta non sia attiva. Se la scheda è stata ricevuta di recente nel messaggio di posta elettronica con una data di scadenza aggiornata, assicurarsi che sia attivata. La tua banca può anche indicare se la carta non è approvata per transazioni online, internazionali o ricorrenti. |
+|**La carta di credito o di debito è stata rifiutata.** |Se si paga con carta di credito o di debito e la carta viene rifiutata, si riceve un messaggio di posta elettronica che indica che Microsoft non è stato in grado di elaborare il pagamento. Verifica che il numero della scheda dei dettagli della carta, la data di scadenza, il nome sulla scheda e l'indirizzo, inclusi città, stato e CAP, siano esattamente come nella scheda e &mdash; &mdash; nell'estratto conto. È possibile aggiornare le informazioni della carta e inviare immediatamente il pagamento utilizzando il **collegamento** Liquidazione saldo nella **sezione Fatturazione** della pagina dei dettagli dell'abbonamento. Per altre informazioni, vedere [Cosa devo fare se il mio saldo è insoluto?](pay-for-your-subscription.md#what-if-i-have-an-outstanding-balance)  <br/><br/>  If you continue to see the "declined" message, contact your bank. È possibile che la carta non sia attiva. If you recently received the card in the mail with an updated expiration date, make sure it's activated. La tua banca può anche indicare se la carta non è approvata per transazioni online, internazionali o ricorrenti. |
 |**Si desidera aggiornare un numero di carta o di conto corrente bancario.** |Non è possibile modificare il numero di carta o di conto in una modalità di pagamento esistente. Se il numero di carta o di conto è [cambiato,](#replace-a-payment-method)sostituirlo con un metodo di pagamento diverso, che sposta tutte le sottoscrizioni attive dalla modalità di pagamento a quella nuova, quindi eliminare la vecchia [modalità di pagamento.](#delete-a-payment-method-with-no-subscriptions-or-billing-profiles-attached) |
-|**Ho solo una carta o un conto corrente bancario sul mio account e voglio rimuoverlo.** |Se hai un solo metodo di pagamento, devi [sostituirlo](#replace-a-payment-method) con un nuovo metodo di pagamento prima di poterlo eliminare. |
+|**Ho solo una carta o un conto corrente bancario sul mio account e voglio rimuoverlo.** |Se hai solo una modalità di pagamento, devi [sostituirla](#replace-a-payment-method) con una nuova modalità di pagamento prima di poterla eliminare. |
 |**Non è possibile aggiungere la carta di credito o il conto corrente bancario.**  |È necessario utilizzare una modalità di pagamento emessa dallo stesso paese del tenant. In caso di problemi durante l'immissione delle informazioni sulla carta o sul conto corrente bancario, è possibile [contattare il supporto tecnico.](../../admin/contact-support-for-business-products.md) |
 
 ## <a name="related-content"></a>Contenuti correlati

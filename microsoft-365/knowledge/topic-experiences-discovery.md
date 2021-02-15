@@ -28,7 +28,7 @@ ms.locfileid: "50107760"
 
     ![Connettere le persone alle conoscenze](../media/admin-org-knowledge-options-completed.png) 
 
-3. Selezionare la **scheda Individuazione** argomento. Per informazioni su ogni impostazione, vedere le sezioni seguenti.
+3. Selezionare la **scheda Individuazione** argomenti. Per informazioni su ogni impostazione, vedere le sezioni seguenti.
 
     ![knowledge-network-settings](../media/knowledge-network-settings-topic-discovery.png) 
 
@@ -47,7 +47,7 @@ Se si aggiungono siti utilizzando la selezione siti, questi verranno aggiunti al
 Per scegliere i siti per l'individuazione degli argomenti
 
 1. Nella scheda **Individuazione argomenti,** in Selezionare le origini degli **argomenti di SharePoint,** selezionare **Modifica.**
-2. Nella pagina **Seleziona origini argomenti di SharePoint** selezionare i siti di SharePoint che verranno sottoposti a ricerca per indicizzazione come origini per gli argomenti durante l'individuazione. Questo include:
+2. Nella pagina **Seleziona origini argomenti di SharePoint** selezionare i siti di SharePoint che verranno sottoposti a ricerca per indicizzazione come origini per gli argomenti durante l'individuazione. Ciò include:
     - **Tutti i siti:** tutti i siti di SharePoint nel tenant. In questo modo vengono catturati i siti correnti e futuri.
     - **Tutti, ad eccezione dei siti** selezionati: digitare i nomi dei siti che si desidera escludere.  Puoi anche caricare un elenco di siti che vuoi rifiutare esplicitamente dall'individuazione. I siti creati in futuro verranno inclusi come origini per l'individuazione degli argomenti. 
     - **Solo siti selezionati:** digitare i nomi dei siti che si desidera includere. È inoltre possibile caricare un elenco di siti. I siti creati in futuro non verranno inclusi come origini per l'individuazione degli argomenti.
@@ -63,7 +63,7 @@ Puoi escludere gli argomenti dall'individuazione caricando un elenco usando un f
 
 1. Nella scheda **Individuazione argomenti,** in **Escludi argomenti,** selezionare **Modifica.**
 2. Fare **clic su Escludi argomenti per nome.**
-3. Se devi creare un elenco, scarica il modello .csv e aggiungi gli argomenti che vuoi escludere (vedi Uso del modello *CSV di* seguito). Quando il file è pronto, fare clic **su Sfoglia** e caricare il file. Se è presente un elenco esistente, è possibile scaricare il file CSV contenente l'elenco.
+3. Se è necessario creare un elenco, scaricare il modello csv e aggiungere gli argomenti che si desidera escludere (vedere l'argomento sull'utilizzo del modello *csv di* seguito). Quando il file è pronto, fare clic **su Sfoglia** e caricare il file. Se è presente un elenco esistente, è possibile scaricare il file CSV contenente l'elenco.
 4. Fare clic su **Salva**.
 
     ![Screenshot dell'interfaccia utente per l'esclusione di argomenti](../media/km-manage-exclude-topics.png)

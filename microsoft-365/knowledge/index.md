@@ -12,7 +12,7 @@ ms.collection:
 - enabler-strategic
 - m365initiative-topics
 localization_priority: None
-description: Informazioni su come trovare risorse per Gli argomenti di Microsoft Viva.
+description: Informazioni su come trovare risorse per gli argomenti di Microsoft Viva.
 ms.openlocfilehash: 3e75dfcfa17e5604e04b6f5e49be9019b1679110
 ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
 ms.translationtype: MT
@@ -33,7 +33,7 @@ Viva Topics è un servizio di Office 365 che consente alle organizzazioni di tra
 
 Le risorse in questa pagina sono progettate per iniziare a conoscere e a usare Viva Topics nell'organizzazione.
 
-## <a name="get-started"></a>Informazioni di base
+## <a name="get-started"></a>Per iniziare
 
 Le risorse in questa sezione sono utili per saperne di più su Viva Topics e su come può essere utile.
 
@@ -60,7 +60,7 @@ Le risorse in questa sezione consentono all'amministratore dell'organizzazione d
 |:-----|:-----|
 |Informazioni su come configurare Microsoft Viva|[Configurare Microsoft Viva](set-up-topic-experiences.md)|
 |Informazioni su come configurare le autorizzazioni utente|[Gestire le autorizzazioni dell'argomento](topic-experiences-user-permissions.md)|
-|Informazioni su come gestire chi può visualizzare gli argomenti|[Gestire la visibilità dell'argomento](topic-experiences-knowledge-rules.md)|
+|Informazioni su come gestire gli utenti che possono visualizzare gli argomenti|[Gestire la visibilità dell'argomento](topic-experiences-knowledge-rules.md)|
 |Informazioni su come gestire le impostazioni di individuazione degli argomenti|[Gestire la scoperta dell'argomento](topic-experiences-discovery.md)|
 
 ## <a name="work-with-topics"></a>Lavorare con gli argomenti

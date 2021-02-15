@@ -39,7 +39,7 @@ ms.locfileid: "50114538"
 Quando l'azienda cambia o sono necessarie altre funzionalità, è possibile aggiornare i piani. Il modo più semplice per eseguire questa operazione è usare la **scheda Aggiornamento** nell'interfaccia di amministrazione. Tuttavia, **l'utilizzo della** scheda Aggiornamento non è supportato in tutte le situazioni. In alcuni casi, potrebbe essere possibile modificare i piani manualmente.
 
 > [!NOTE]
-> Questo articolo si applica alla nuova interfaccia di amministrazione. Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page. Per visualizzare l'articolo sull'interfaccia di amministrazione precedente, vedere Passare a un piano di [Microsoft 365 per le aziende diverso.](switch-to-a-different-plan.md)
+> Questo articolo si applica alla nuova interfaccia di amministrazione. Se non si usa la nuova interfaccia di amministrazione di Microsoft 365, è possibile attivarla selezionando l'opzione **Prova la nuova interfaccia di amministrazione** che si trova nella parte superiore della home page. Per visualizzare l'articolo sull'interfaccia di amministrazione precedente, vedere Passare a un piano [di Microsoft 365 per le aziende diverso.](switch-to-a-different-plan.md)
 
 ## <a name="use-the-upgrade-tab"></a>Usare la scheda Aggiornamento
 
@@ -58,11 +58,11 @@ Quando si utilizza la **scheda** Aggiornamento, viene eseguito il processo di ac
     > [!NOTE]
     > Assicurarsi di acquistare licenze sufficienti per coprire tutti gli utenti.
 
-6. Nella pagina successiva, verificare **l'indirizzo Venduto** a, le informazioni relative alla fattura e **gli elementi nell'ordine indicato.**  In questo passaggio puoi modificare la modalità di pagamento predefinita. Se è necessario apportare modifiche, selezionare **Cambia** accanto alla sezione applicabile.
+6. Nella pagina successiva, verificare **l'indirizzo** Venduto a, le informazioni **relative** alla fattura e **gli elementi nell'ordine indicato.** In questo passaggio puoi modificare la modalità di pagamento predefinita. Se è necessario apportare modifiche, selezionare **Cambia** accanto alla sezione applicabile.
 
 7. Al termine, selezionare Ordine **di esecuzione.**
 
-Al termine dell'estrazione, potrebbero essere necessario alcuni minuti per finalizzare l'aggiornamento. È possibile iniziare subito a usare il nuovo abbonamento. Selezionare **Controlla stato aggiornamento** per verificare lo stato dell'aggiornamento. Al termine dell'aggiornamento, si verrà informati. La notifica viene visualizzata nella pagina **I tuoi prodotti,** accanto al nuovo abbonamento.
+Al termine dell'estrazione, potrebbero essere necessario alcuni minuti per completare l'aggiornamento. È possibile iniziare subito a usare il nuovo abbonamento. Selezionare **Controlla stato aggiornamento** per verificare lo stato dell'aggiornamento. Al termine dell'aggiornamento, si verrà informati. La notifica viene visualizzata nella pagina **I tuoi prodotti,** accanto al nuovo abbonamento.
 
 ## <a name="the-upgrade-tab-is-empty"></a>La scheda Upgrade è vuota
 
@@ -82,7 +82,7 @@ Se si desidera aggiornare solo alcuni utenti a un piano diverso, ma è necessari
 
 **Numero di utenti assegnati:** Se si dispone di un numero elevato di utenti assegnati, sarà necessario più tempo per eseguire l'aggiornamento per spostarli nel nuovo piano.
 
-**Verifiche del credito quando si modificano i piani:** Se si paga tramite fattura o si raggiunge un determinato livello di costo, potrebbe essere necessaria una verifica del credito. La verifica del credito può richiedere fino a due giorni lavorativi. Gli utenti avranno accesso completo al piano corrente fino a quando non vengono spostati nel nuovo piano. Se è necessaria una verifica del credito, riceverai una notifica.
+**Verifiche del credito quando si modificano i piani:** Se si paga tramite fattura o si raggiunge un determinato livello di costo, potrebbe essere necessaria una verifica del credito. La verifica del credito può richiedere fino a due giorni lavorativi. Gli utenti avranno accesso completo al piano corrente fino a quando non vengono spostati nel nuovo piano. Riceverai una notifica se è necessaria una verifica del credito.
 
 ## <a name="why-cant-i-upgrade-plans"></a>Perché non è possibile aggiornare i piani?
 
@@ -162,7 +162,7 @@ Gli utenti dell'abbonamento precedente verranno spostati automaticamente nel nuo
   
 Se l'abbonamento precedente include più servizi e se sono stati modificati i servizi a cui sono assegnati gli utenti, è possibile prendere nota di questo problema prima di aggiornare i piani in modo da poter ricreare le modifiche in seguito. A tutti gli utenti verrà fornito l'accesso a tutti i servizi del nuovo abbonamento. Ad esempio, se in precedenza è stato acquistato Microsoft 365 Business Premium per tutti i 100 utenti, ma il servizio SharePoint Online non è stato assegnato da 50 di essi, questa modifica non verrà mantenuta dopo l'aggiornamento dei piani.
   
-Se si dispone di più sottoscrizioni prima di aggiornare i piani e agli utenti sono state assegnate licenze a più di una sottoscrizione, questo modello di assegnazione verrà mantenuto il più possibile nel nuovo abbonamento.
+Se si dispone di più sottoscrizioni prima dell'aggiornamento dei piani e agli utenti sono state assegnate licenze a più di una sottoscrizione, questo modello di assegnazione verrà mantenuto il più possibile nel nuovo abbonamento.
   
 Tutti i dati utente verranno conservati durante l'aggiornamento, incluse le cassette postali di Exchange e i documenti, gli elenchi e altre informazioni di SharePoint Online.
   

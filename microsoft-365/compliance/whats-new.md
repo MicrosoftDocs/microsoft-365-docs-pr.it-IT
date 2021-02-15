@@ -59,7 +59,7 @@ Flusso di lavoro e funzionalità migliorate [per l'aggiunta](add-custodians-to-c
 
 ### <a name="data-connectors"></a>Connettori dati
 
-[Quattro nuovi connettori Globanet](archiving-third-party-data.md#third-party-data-connectors)rilasciati: Redtail Speak, Salesforce Chatter, ServiceNow e Yieldbroker.
+[Rilasciati quattro nuovi connettori Globanet:](archiving-third-party-data.md#third-party-data-connectors)Redtail Speak, Salesforce Chatter, ServiceNow e Yieldbroker.
 
 ### <a name="encryption"></a>Crittografia
 
@@ -89,7 +89,7 @@ Il [gruppo di ruoli amministratore](get-started-with-records-management.md#permi
 
 ### <a name="spotlight-endpoint-data-loss-prevention-dlp-released"></a>Spotlight: Endpoint data loss prevention (DLP) released
 
-[Endpoint DLP](endpoint-dlp-learn-about.md) estende le funzionalità di monitoraggio e protezione delle attività di DLP alle informazioni sensibili nei dispositivi Windows 10. Dopo [l'onboarded](dlp-configure-endpoints.md) dei dispositivi nel Centro conformità Microsoft 365, è possibile configurare i criteri DLP per proteggere le informazioni riservate in tali dispositivi.
+[Endpoint DLP](endpoint-dlp-learn-about.md) estende le funzionalità di monitoraggio e protezione delle attività di DLP alle informazioni riservate nei dispositivi Windows 10. Dopo [l'onboarded](dlp-configure-endpoints.md) dei dispositivi nel Centro conformità Microsoft 365, è possibile configurare i criteri DLP per proteggere le informazioni riservate in tali dispositivi.
 
 ### <a name="advanced-ediscovery"></a>Advanced eDiscovery
 
@@ -111,8 +111,8 @@ Per visualizzare gli elementi durante una revisione dell'eliminazione, gli utent
 
 ### <a name="sensitivity-labels"></a>Etichette di riservatezza
 
-- [(Anteprima) Impostazioni di condivisione esterna per i siti di SharePoint.](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings) Quando si crea un'etichetta che verrà utilizzata per gruppi e siti, verrà visualizzata un'opzione per controllare la condivisione esterna per i siti di SharePoint a cui è applicata l'etichetta. È possibile specificare che la condivisione è consentita per chiunque, per gli utenti guest nuovi ed esistenti, solo per gli utenti guest esistenti o solo per gli utenti dell'organizzazione. Quando l'etichetta viene applicata, le impostazioni dell'etichetta sostituiranno tutte le impostazioni di condivisione esterna [configurate nell'interfaccia di amministrazione di SharePoint.](https://docs.microsoft.com/sharepoint/change-external-sharing-site)
-- [Rimuovere l'etichetta e la crittografia da un documento etichettato.](sensitivity-labels-sharepoint-onedrive-files.md#remove-encryption-for-a-labeled-document) Per rimuovere sia un'etichetta che la crittografia applicata da un documento con etichetta in SharePoint, gli amministratori globali e gli amministratori di SharePoint possono eseguire il nuovo `Unlock-SPOSensitivityLabelEncryptedFile` cmdlet. Questo cmdlet viene eseguito anche se l'amministratore non dispone delle autorizzazioni di accesso al sito o al file o se il servizio Azure Rights Management non è disponibile.
+- [(Anteprima) Impostazioni di condivisione esterna per i siti di SharePoint.](sensitivity-labels-teams-groups-sites.md#how-to-configure-groups-and-site-settings) Quando si crea un'etichetta che verrà utilizzata per i gruppi e i siti, verrà visualizzata un'opzione per controllare la condivisione esterna per i siti di SharePoint a cui è applicata l'etichetta. È possibile specificare che la condivisione è consentita per chiunque, per gli utenti guest nuovi ed esistenti, solo per gli utenti guest esistenti o solo per gli utenti dell'organizzazione. Quando l'etichetta viene applicata, le impostazioni dell'etichetta sostituiranno tutte le impostazioni di condivisione esterna [configurate nell'interfaccia di amministrazione di SharePoint.](https://docs.microsoft.com/sharepoint/change-external-sharing-site)
+- [Rimuovere l'etichetta e la crittografia da un documento etichettato.](sensitivity-labels-sharepoint-onedrive-files.md#remove-encryption-for-a-labeled-document) Per rimuovere sia un'etichetta che la crittografia applicata da un documento etichettato in SharePoint, gli amministratori globali e gli amministratori di SharePoint possono eseguire il nuovo `Unlock-SPOSensitivityLabelEncryptedFile` cmdlet. Questo cmdlet viene eseguito anche se l'amministratore non dispone delle autorizzazioni di accesso al sito o al file o se il servizio Azure Rights Management non è disponibile.
 
 ## <a name="october-2020"></a>Ottobre 2020
 
@@ -138,7 +138,7 @@ Guardare il video seguente per informazioni su come Compliance Manager può semp
 
 ### <a name="advanced-audit"></a>Audit avanzato
 
-- La nuova conservazione di 10 anni dei log di controllo consente di supportare indagini di lunga durata e di rispondere agli obblighi normativi, legali e interni.
+- La nuova conservazione di 10 anni dei log di controllo consente di supportare le indagini di lunga durata e di rispondere agli obblighi normativi, legali e interni.
 - [Tre nuovi eventi cruciali.](advanced-audit.md#access-to-crucial-events-for-investigations) I nuovi eventi seguenti consentono di analizzare possibili violazioni e determinare l'ambito di compromissione: Send, SearchQueryInitiatedExchange e SearchQueryInitiatedSharePoint.
 
 ### <a name="communication-compliance"></a>Conformità delle comunicazioni
@@ -146,12 +146,12 @@ Guardare il video seguente per informazioni su come Compliance Manager può semp
 - [Gruppi di ruoli aggiornati.](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance) I gruppi di ruoli di conformità delle comunicazioni ora corrispondono alla struttura del gruppo di ruoli disponibile per la soluzione di gestione dei rischi Insider.
 - [Dashboard dei report.](communication-compliance-feature-reference.md#reports-preview) Posizione centrale per la visualizzazione di tutti i report di conformità delle comunicazioni. I widget di report offrono una rapida visualizzazione delle informazioni dettagliate più comunemente necessarie per una valutazione generale dello stato delle attività di conformità delle comunicazioni.
 - [Flussi di Power Automate](communication-compliance-feature-reference.md#power-automate-flows). Configurare i flussi per automatizzare le attività per avvisi e utenti, informare i responsabili quando gli utenti attivano gli avvisi e altro ancora.
-- [Azione di correzione "Migliora classificazione".](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action) Gli avvisi contenenti elementi che corrispondono a classificatori che possono essere classificati possono trarre vantaggio dal feedback per ridurre al minimo i falsi positivi nell'organizzazione. **L'opzione Migliora classificazione** consente di fornire feedback se gli elementi rilevati corrispondono al classificatore configurato nei criteri di conformità delle comunicazioni correlati. Puoi anche suggerire altri classificatori da associare all'elemento per migliorare l'accuratezza della corrispondenza per gli avvisi futuri.
+- [Azione di correzione "Migliora classificazione".](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action) Gli avvisi contenenti elementi che corrispondono a classificatori formabili potrebbero trarre vantaggio dal feedback per ridurre al minimo i falsi positivi nell'organizzazione. **L'opzione Migliora classificazione** consente di fornire feedback se gli elementi rilevati corrispondono al classificatore configurato nei criteri di conformità delle comunicazioni correlati. Puoi anche suggerire altri classificatori da associare all'elemento per migliorare l'accuratezza della corrispondenza per gli avvisi futuri.
 
 ### <a name="data-connectors"></a>Connettori dati
 
 - [Nuovi connettori dati di terze parti.](archiving-third-party-data.md#third-party-data-connectors) 25 nuovi connettori dati, inclusi 14 connettori da Globanet e 8 da Telemessage.
-- [Connettore di badging fisico.](import-physical-badging-data.md) Importare dati di badging fisici, ad esempio gli eventi di accesso fisico non elaborati dei dipendenti o eventuali allarmi di accesso fisico generati dal sistema di badging dell'organizzazione. Ad esempio, le voci relative a edifici, sale server o data center. I dati di badging fisici possono essere utilizzati dalla soluzione di gestione dei rischi Insider per proteggere l'organizzazione da attività dannose o furti di dati all'interno dell'organizzazione.
+- [Connettore di badging fisico.](import-physical-badging-data.md) Importare i dati di badging fisici, ad esempio gli eventi di accesso fisico non elaborati dei dipendenti o eventuali allarmi di accesso fisico generati dal sistema di badging dell'organizzazione. Ad esempio, le voci relative a edifici, sale server o data center. I dati di badging fisici possono essere utilizzati dalla soluzione di gestione dei rischi Insider per proteggere l'organizzazione da attività dannose o furti di dati all'interno dell'organizzazione.
 
 ### <a name="insider-risk-management"></a>Gestione dei rischi Insider
 
@@ -187,7 +187,7 @@ Questa nuova funzionalità è inclusa nelle funzionalità seguenti:
 
 ## <a name="august-2020"></a>Agosto 2020
 
-### <a name="spotlight-insider-risk-and-communication-compliance-updates"></a>Informazioni in evidenza: aggiornamenti per la conformità dei rischi Insider e delle comunicazioni
+### <a name="spotlight-insider-risk-and-communication-compliance-updates"></a>Informazioni in evidenza: aggiornamenti di conformità dei rischi Insider e delle comunicazioni
 
 Diverse funzionalità nuove e migliorate hanno raggiunto l'anteprima pubblica questo mese:
 
@@ -201,10 +201,10 @@ Diverse funzionalità nuove e migliorate hanno raggiunto l'anteprima pubblica qu
     - Violazioni dei criteri di sicurezza da parte degli utenti con priorità
     - Violazioni dei criteri di sicurezza da parte di utenti scontenti
 
-- [L'integrazione con Microsoft Defender per Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) consente di importare e filtrare gli avvisi di Microsoft Defender per gli endpoint per le attività rilevate dai criteri creati dai nuovi modelli di criteri di violazione della sicurezza. Esiste anche un'impostazione di rischio [Insider](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview) correlata in cui è possibile scegliere di importare gli avvisi di sicurezza per la gestione dei rischi Insider in base allo stato di valutazione degli avvisi di Microsoft Defender for Endpoint.
+- [L'integrazione con Microsoft Defender per endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) consente di importare e filtrare gli avvisi di Microsoft Defender per gli endpoint per le attività rilevate dai criteri creati dai nuovi modelli di criteri di violazione della sicurezza. Esiste anche un'impostazione di rischio [Insider](insider-risk-management-settings.md#microsoft-defender-for-endpoint-preview) correlata in cui è possibile scegliere di importare gli avvisi di sicurezza per la gestione dei rischi Insider in base allo stato di valutazione degli avvisi di Microsoft Defender for Endpoint.
 
     > [!NOTE]
-    > Per sfruttare l'integrazione di Microsoft Defender for Endpoint (inclusi i nuovi modelli di violazione dei criteri di sicurezza), è necessario che Microsoft Defender for Endpoint sia configurato nell'organizzazione. Dovrai anche abilitare Microsoft Defender for Endpoint per l'integrazione della gestione dei rischi Insider configurando le funzionalità avanzate [in Microsoft Defender for Endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)
+    > Per sfruttare l'integrazione di Microsoft Defender for Endpoint (inclusi i nuovi modelli di violazione dei criteri di sicurezza), è necessario configurare Microsoft Defender for Endpoint nell'organizzazione. Dovrai anche abilitare Microsoft Defender for Endpoint per l'integrazione della gestione dei rischi Insider configurando le funzionalità avanzate [in Microsoft Defender for Endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-features#share-endpoint-alerts-with-microsoft-compliance-center)
  
 - Personalizzare le soglie degli [indicatori durante la creazione di un criterio.](insider-risk-management-policies.md#create-a-new-policy)
 - Impostare gruppi [di utenti](insider-risk-management-settings.md#priority-user-groups-preview) con priorità per definire gli utenti dell'organizzazione la cui attività richiede un'analisi più stretta in base a fattori quali la posizione, il livello di accesso alle informazioni riservate o la cronologia dei rischi.
@@ -213,7 +213,7 @@ Diverse funzionalità nuove e migliorate hanno raggiunto l'anteprima pubblica qu
 
 **Conformità delle comunicazioni**
 
-- Quando [si esaminano i messaggi in un](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action)avviso, è ora possibile rimuovere i messaggi inappropriati nei canali di Microsoft Teams, 1:1 e nelle chat di gruppo. I messaggi e il contenuto rimossi vengono sostituiti con un suggerimento per i criteri che spiega che è stato rimosso a causa di contenuto sensibile.
+- Quando [si esaminano i messaggi in](communication-compliance-investigate-remediate.md#step-3-decide-on-a-remediation-action)un avviso, è ora possibile rimuovere i messaggi inappropriati nei canali di Microsoft Teams, 1:1 e nelle chat di gruppo. I messaggi e il contenuto rimossi vengono sostituiti con un suggerimento per i criteri che spiega che è stato rimosso a causa di contenuto sensibile.
 - Nuovi [ruoli di comunicazione](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance) (questi saranno inclusi anche nei nuovi gruppi di ruoli di conformità delle comunicazioni rilasciati a settembre).
 - Nuova esperienza delle impostazioni di conformità delle comunicazioni che include le impostazioni [per la privacy e](communication-compliance-feature-reference.md#privacy) i modelli di [avviso.](communication-compliance-feature-reference.md#notice-templates)
 - Nuovi [classificatori per](communication-compliance-feature-reference.md#classifiers) rilevare immagini adulte, racy e gory.
@@ -222,7 +222,7 @@ Diverse funzionalità nuove e migliorate hanno raggiunto l'anteprima pubblica qu
 ### <a name="sensitivity-labels"></a>Etichette di riservatezza
 
 - Per i tenant degli enti pubblici degli Stati Uniti (GCC, GCC-HC e DoD), le etichette di riservatezza sono attualmente supportate solo per lo scanner e il client di etichettatura unificata di Azure Information Protection. Per altre informazioni, vedere [Descrizione del servizio Azure Information Protection Premium per gli enti pubblici](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
-- È ora possibile [utilizzare PowerShell &](create-sensitivity-labels.md#use-powershell-for-sensitivity-labels-and-their-policies) Centro sicurezza e conformità per creare e configurare tutte le impostazioni presenti nell'interfaccia di amministrazione per l'etichettatura. Ciò significa che, oltre a usare PowerShell per le impostazioni che non sono disponibili nelle centri di amministrazione per l'etichettatura, è ora possibile creare e manutenzione di etichette di riservatezza e criteri di etichetta di riservatezza completamente script.
+- È ora possibile [utilizzare PowerShell & Centro](create-sensitivity-labels.md#use-powershell-for-sensitivity-labels-and-their-policies) sicurezza e conformità per creare e configurare tutte le impostazioni presenti nell'interfaccia di amministrazione per l'etichettatura. Questo significa che, oltre a usare PowerShell per le impostazioni che non sono disponibili nelle centri di amministrazione per l'etichettatura, è ora possibile creare e manutenzione di etichette di riservatezza e criteri di etichetta di riservatezza completamente script.
 
 ### <a name="records-management-content-overhaul"></a>Gestione dei record: revisione del contenuto
 
@@ -252,7 +252,7 @@ Per comprendere quali soluzioni di conformità vengono utilizzate per proteggere
 
 ### <a name="advanced-ediscovery-add-non-custodial-data-sources-to-your-cases"></a>Advanced eDiscovery: Aggiungere origini dati non di tipo responsabile ai casi
 
-Aggiungere dati a un caso senza doverlo associare a un responsabile (noto come origini dati non di [tipo depositario).](non-custodial-data-sources.md) Inoltre, se è necessario mettere in attesa questi dati non-depositl, sarà possibile farlo usando la nuova funzionalità di indicizzazione avanzata.
+Aggiungere dati a un caso senza doverlo associare a un responsabile (noto come origini dati non di [tipo](non-custodial-data-sources.md)responsabile). Inoltre, se è necessario mettere in attesa questi dati non-depositl, sarà possibile farlo usando la nuova funzionalità di indicizzazione avanzata.
 
 ### <a name="data-connectors-hr-connector-enhancements"></a>Connettori dati: miglioramenti dei connettori hr
 

@@ -65,13 +65,13 @@ In questa tabella sono elencati i criteri che devono essere rivisti e i collegam
 
 |Livello di protezione|Criteri|Ulteriori informazioni per l'implementazione di Teams|
 |---|---|---|
-|**Protezione di base**|[Richiedere l'autenticazione a più fattori quando il rischio di accesso *è medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Assicurarsi che Teams e i servizi dipendenti siano inclusi nell'elenco delle app. Teams ha anche regole di accesso guest e accesso esterno da prendere in considerazione. Ulteriori informazioni su queste regole saranno più avanti in questo articolo.|
+|**Protezione di base**|[Richiedere l'autenticazione a più fattori quando il rischio di accesso *è medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Assicurarsi che Teams e i servizi dipendenti siano inclusi nell'elenco delle app. Teams ha anche regole di accesso guest e di accesso esterno da prendere in considerazione. Ulteriori informazioni su queste regole saranno più avanti in questo articolo.|
 ||[Bloccare i client che non supportano l'autenticazione moderna](identity-access-policies.md#block-clients-that-dont-support-multi-factor)|Includere Teams e i servizi dipendenti nell'assegnazione delle app cloud.|
 ||[Gli utenti a rischio elevato devono modificare la password](identity-access-policies.md#high-risk-users-must-change-password)|Forza gli utenti di Teams a cambiare la password quando a loro volta vengono rilevate attività ad alto rischio per il proprio account. Assicurarsi che Teams e i servizi dipendenti siano inclusi nell'elenco delle app.|
 ||[Applicare i criteri di protezione dei dati app](identity-access-policies.md#apply-app-data-protection-policies)|Assicurarsi che Teams e i servizi dipendenti siano inclusi nell'elenco delle app. Aggiorna i criteri per ogni piattaforma (iOS, Android, Windows).|
 ||[Definire i criteri di conformità dei dispositivi](identity-access-policies.md#define-device-compliance-policies)|Includere Teams e i servizi dipendenti in questo criterio.|
 ||[Richiedere computer conformi](identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets)|Includere Teams e i servizi dipendenti in questo criterio.|
-|**Sensibili**|[Richiedere l'autenticazione a più fattori quando il rischio di accesso è *basso,* *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Teams ha anche regole di accesso guest e accesso esterno da prendere in considerazione. Ulteriori informazioni su queste regole saranno più avanti in questo articolo. Includere Teams e i servizi dipendenti in questo criterio.|
+|**Sensibili**|[Richiedere l'autenticazione a più fattori quando il rischio di accesso è *basso,* *medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Teams ha anche regole di accesso guest e di accesso esterno da prendere in considerazione. Ulteriori informazioni su queste regole saranno più avanti in questo articolo. Includere Teams e i servizi dipendenti in questo criterio.|
 ||[Richiedere PC e *dispositivi* mobili conformi](identity-access-policies.md#require-compliant-pcs-and-mobile-devices)|Includere Teams e i servizi dipendenti in questo criterio.|
 |**Riservatezza elevata**|[*Richiedi sempre* L'autenticazione a più fattori](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Indipendentemente dall'identità dell'utente, l'autenticazione a più fattori verrà utilizzata dall'organizzazione. Includere Teams e i servizi dipendenti in questo criterio. |
 |
@@ -88,7 +88,7 @@ Per riferimento, il diagramma seguente illustra i servizi su cui si basa Teams. 
 
 Microsoft Teams definisce i tipi di accesso seguenti:
 
-- **L'accesso** guest usa un account B2B di Azure AD per un utente guest o esterno che può essere aggiunto come membro di un team e avere tutte le autorizzazioni di accesso alle comunicazioni e alle risorse del team.
+- **L'accesso** guest usa un account B2B di Azure AD per un utente guest o esterno che può essere aggiunto come membro di un team e che dispone di tutte le autorizzazioni di accesso alle comunicazioni e alle risorse del team.
 
 - **L'accesso** esterno è per un utente esterno che non dispone di un account B2B di Azure AD. L'accesso esterno può includere inviti e partecipazione a chiamate, chat e riunioni, ma non include l'appartenenza al team e l'accesso alle risorse del team.
 

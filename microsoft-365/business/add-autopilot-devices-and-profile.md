@@ -48,7 +48,7 @@ I dispositivi devono soddisfare questi requisiti:
 
 [![Etichetta per comunicare all'utente che l'interfaccia di amministrazione sta cambiando ed è possibile trovare altre informazioni alla pagina aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
 
-Se non hai ancora creato gruppi di dispositivi o profili, il modo migliore per iniziare consiste nell'usare la guida dettagliata. Puoi anche aggiungere [dispositivi e](create-and-edit-autopilot-devices.md) [assegnare profili](create-and-edit-autopilot-profiles.md) senza usare la guida. 
+Se non hai ancora creato gruppi di dispositivi o profili, il modo migliore per iniziare consiste nell'usare la guida dettagliata. Puoi anche aggiungere [dispositivi e](create-and-edit-autopilot-devices.md) [assegnare](create-and-edit-autopilot-profiles.md) profili senza usare la guida. 
   
 1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.
 
@@ -60,7 +60,7 @@ Se non hai ancora creato gruppi di dispositivi o profili, il modo migliore per i
     
     ![Click Start guide for step-by-step instructions for Autopilot.](../media/31662655-d1e6-437d-87ea-c0dec5da56f7.png)
   
-3. Nella pagina **Carica file CSV con elenco di** dispositivi passare a un percorso in cui è stato preparato il file . File CSV, quindi **Apri** \> **successivo.** Il file deve avere tre intestazioni:
+3. Nella pagina **Carica file CSV con l'elenco dei** dispositivi passare a un percorso in cui è stato preparato il file . Csv file, then **Open** \> **Next**. Il file deve avere tre intestazioni:
     
     - Colonna A: numero di serie del dispositivo
     
@@ -68,7 +68,7 @@ Se non hai ancora creato gruppi di dispositivi o profili, il modo migliore per i
     
     - Colonna C: hash dell'hardware
     
-    Puoi ottenere queste informazioni dal fornitore dell'hardware oppure puoi usare lo [script Di PowerShell Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) per generare un file CSV. 
+    È possibile ottenere queste informazioni dal fornitore dell'hardware oppure utilizzare lo [script Di PowerShell Get-WindowsAutoPilotInfo](https://www.powershellgallery.com/packages/Get-WindowsAutoPilotInfo) per generare un file CSV. 
     
     Per altre informazioni, vedere [File CSV dell'elenco dei dispositivi](https://docs.microsoft.com/microsoft-365/admin/misc/device-list). È anche possibile scaricare un file di esempio nella pagina **Carica file CSV con l'elenco dei dispositivi**. 
     

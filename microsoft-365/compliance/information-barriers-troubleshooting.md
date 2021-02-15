@@ -24,7 +24,7 @@ ms.locfileid: "50126563"
 
 [Le barriere in](information-barriers.md) materia di informazioni possono aiutare l'organizzazione a rimanere conforme ai requisiti legali e alle normative del settore. Ad esempio, con le barriere in fatto di informazioni, è possibile limitare la comunicazione tra gruppi specifici di utenti per evitare conflitti di interesse o altri problemi. Per ulteriori informazioni su come configurare le barriere in campo delle informazioni, vedere [Definire i criteri per le barriere di informazioni.](information-barriers-policies.md)
 
-Nel caso in cui si verificano problemi imprevisti dopo l'applicazione delle barriere di informazioni, è possibile eseguire alcune operazioni per risolverli. Usa questo articolo come guida.
+Nel caso in cui si verificano problemi imprevisti dopo l'applicazione delle barriere di informazioni, è possibile eseguire alcuni passaggi per risolverli. Usa questo articolo come guida.
 
 > [!IMPORTANT]
 > Per eseguire le attività descritte in questo articolo, è necessario disporre di un ruolo appropriato, ad esempio uno dei seguenti:<br/>- Amministratore globale dell'organizzazione di Microsoft 365<br/>- amministratore globale<br/>- Amministratore conformità<br/>- IB Compliance Management (questo è un nuovo ruolo!)<p>Per ulteriori informazioni sui prerequisiti per le barriere delle informazioni, vedere [Prerequisiti (per i criteri delle barriere di informazioni).](information-barriers-policies.md#prerequisites)<p>Assicurarsi di [connettersi a PowerShell & Centro sicurezza e conformità.](/powershell/exchange/connect-to-scc-powershell)
@@ -207,7 +207,7 @@ Ad esempio:
 
 3. In genere, un utente è stato incluso in più segmenti. È possibile risolvere il problema aggiornando `-UserGroupFilter` il valore in `OrganizationSegments` .
 
-4. Ri-applicare i criteri delle barriere di informazioni utilizzando queste [procedure.](information-barriers-policies.md#part-3-apply-information-barrier-policies)
+4. Ri applicare di nuovo i criteri delle barriere di informazioni utilizzando queste [procedure.](information-barriers-policies.md#part-3-apply-information-barrier-policies)
 
 ## <a name="resources"></a>Risorse
 

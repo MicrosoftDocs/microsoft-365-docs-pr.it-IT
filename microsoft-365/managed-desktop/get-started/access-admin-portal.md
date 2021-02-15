@@ -53,7 +53,7 @@ Per assistenza nell'assegnazione dei ruoli di Azure Active Directory, vedere [Au
 |Ruolo incorporato  |Autorizzazioni di Microsoft Managed Desktop  |
 |---------|---------|
 |Amministratore di Microsoft Managed Desktop Service  | Quando viene assegnato a un utente, questo ruolo assegna all'amministratore le autorizzazioni di lettura e scrittura per le funzionalità non correlate alla sicurezza **nel** portale di amministrazione di Microsoft Managed Desktop.  |
-|Microsoft Managed Desktop Service Reader | Quando viene assegnato a un utente, questo ruolo assegna all'amministratore le autorizzazioni di sola lettura per le funzionalità non correlate alla sicurezza **nel** portale di amministrazione di Microsoft Managed Desktop. |
+|Microsoft Managed Desktop Service Reader | Quando viene assegnato a un utente, questo ruolo concede all'amministratore le autorizzazioni di sola lettura **per** le funzionalità non correlate alla sicurezza nel portale di amministrazione di Microsoft Managed Desktop. |
 |Microsoft Managed Desktop Security Manager |Quando viene assegnato a un utente, questo ruolo concede all'amministratore le autorizzazioni di lettura e scrittura solo per le funzionalità correlate alla sicurezza **nel** portale di amministrazione di Microsoft Managed Desktop.   |
 
 > [!NOTE]
@@ -74,11 +74,11 @@ Per una gestione semplice dei ruoli incorporati, è disponibile un gruppo di sic
 
 ### <a name="assigning-built-in-roles-to-groups"></a>Assegnazione di ruoli incorporati ai gruppi
 
-Se è necessario assegnare uno o più ruoli incorporati a un gruppo esistente, attenersi alla seguente procedura:
+Se è necessario assegnare uno o più ruoli incorporati a un gruppo esistente, eseguire la procedura seguente:
 1. Passare a [portal.azure.com](https://portal.azure.com/).
-2. Cercare e aprire le **applicazioni Enterprise.**
+2. Cercare e aprire le **applicazioni enterprise.**
 3. Modificare il **filtro del tipo** di applicazione in Applicazioni _Microsoft_ e quindi selezionare **Applica.**
-4. Cerca e seleziona _LE API dei clienti di Workplace moderni._
+4. Cerca e seleziona _LE API dei clienti di Workplace moderno._
 5. Selezionare **Utenti e gruppi** nel riquadro a sinistra, quindi selezionare + Aggiungi **utente/gruppo.**
 6. Cercare il gruppo desiderato da **Utenti e gruppi.**
 7. Cercare il ruolo applicabile in **Selezionare un ruolo** e quindi selezionarlo.

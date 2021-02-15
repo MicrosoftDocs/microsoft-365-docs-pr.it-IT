@@ -1,6 +1,6 @@
 ---
 title: Lavoro prerequisito per l'implementazione di criteri di identità e accesso ai dispositivi - Microsoft 365 per le aziende | Microsoft Docs
-description: In questo articolo vengono descritti i prerequisiti che è necessario soddisfare per utilizzare i criteri e le configurazioni di identità e accesso ai dispositivi.
+description: In questo articolo vengono descritti i prerequisiti necessari per utilizzare i criteri e le configurazioni di identità e accesso ai dispositivi.
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: Laurawi
@@ -26,7 +26,7 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 02/08/2021
 ms.locfileid: "50142098"
 ---
-# <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Lavoro prerequisito per l'implementazione di criteri di identità e accesso ai dispositivi
+# <a name="prerequisite-work-for-implementing-identity-and-device-access-policies"></a>Lavoro prerequisito per l'implementazione dei criteri di identità e accesso ai dispositivi
 
 In questo articolo vengono descritti i prerequisiti che gli amministratori devono soddisfare per utilizzare i criteri di identità e accesso ai dispositivi consigliati e per l'utilizzo dell'accesso condizionale. Vengono inoltre illustrate le impostazioni predefinite consigliate per la configurazione delle piattaforme client per la migliore esperienza Single #A0 (SSO).
 
@@ -72,11 +72,11 @@ Per i dispositivi Windows BYOD, gli utenti possono usare **Aggiungi account azie
 
 ### <a name="ios-devices"></a>Dispositivi iOS
 
-È consigliabile installare [l'app Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) nei dispositivi degli utenti prima di distribuire i criteri di accesso condizionale o MFA. Come minimo, l'app deve essere installata quando agli utenti viene richiesto di registrare il proprio dispositivo con Azure AD aggiungendo un account aziendale o dell'istituto di istruzione oppure quando installano l'app portale aziendale intune per registrare il dispositivo nella gestione. Dipende dal criterio di accesso condizionale configurato.
+È consigliabile installare [l'app Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) nei dispositivi degli utenti prima di distribuire i criteri di accesso condizionale o MFA. Come minimo, l'app deve essere installata quando agli utenti viene richiesto di registrare il proprio dispositivo con Azure AD aggiungendo un account aziendale o dell'istituto di istruzione oppure quando installano l'app portale aziendale intune per registrare il dispositivo nella gestione. Ciò dipende dal criterio di accesso condizionale configurato.
 
 ### <a name="android-devices"></a>Dispositivi Android
 
-È consigliabile che gli utenti installino [l'app Portale](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal&hl=en) aziendale Intune e [l'app Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) prima della distribuzione dei criteri di accesso condizionale o, se necessario, durante determinati tentativi di autenticazione. Dopo l'installazione delle app, è possibile che venga richiesto agli utenti di registrarsi con Azure AD o di registrare il dispositivo con Intune. Dipende dal criterio di accesso condizionale configurato.
+È consigliabile che gli utenti installino [l'app Portale](https://play.google.com/store/apps/details?id=com.microsoft.windowsintune.companyportal&hl=en) aziendale Intune e [l'app Microsoft Authenticator](https://docs.microsoft.com/azure/multi-factor-authentication/end-user/microsoft-authenticator-app-how-to) prima della distribuzione dei criteri di accesso condizionale o, se necessario, durante determinati tentativi di autenticazione. Dopo l'installazione delle app, è possibile che venga richiesto agli utenti di registrarsi con Azure AD o di registrare il dispositivo con Intune. Ciò dipende dal criterio di accesso condizionale configurato.
 
 È inoltre consigliabile che i dispositivi di proprietà dell'organizzazione siano standardizzati su OEM e versioni che supportano Android for Work o Samsung Knox per consentire agli account di posta elettronica di essere gestiti e protetti dai criteri MDM di Intune.
 
@@ -111,7 +111,7 @@ Quando viene applicato un criterio di protezione dei documenti, è consigliabile
 
 Per ulteriori informazioni sul supporto client in Microsoft 365, vedere gli articoli seguenti:
 
-- [Supporto delle app client di Microsoft 365 - Accesso condizionale](../../enterprise/microsoft-365-client-support-conditional-access.md)
+- [Supporto app client Microsoft 365 - Accesso condizionale](../../enterprise/microsoft-365-client-support-conditional-access.md)
 - [Supporto app client Microsoft 365 - Autenticazione a più fattori](../../enterprise/microsoft-365-client-support-multi-factor-authentication.md)
 
 ## <a name="protecting-administrator-accounts"></a>Protezione degli account amministratore
@@ -123,7 +123,7 @@ Per le edizioni di Microsoft 365 o Office 365 [](https://docs.microsoft.com/azur
 Ecco alcuni suggerimenti aggiuntivi:
 
 - Usare [Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-getting-started) per ridurre il numero di account amministrativi permanenti.
-- [Utilizzare la gestione degli accessi](../../compliance/privileged-access-management-overview.md) con privilegi per proteggere l'organizzazione da violazioni che potrebbero utilizzare account di amministratore con privilegi esistenti con accesso permanente ai dati sensibili o l'accesso alle impostazioni di configurazione critiche.
+- [Utilizzare la gestione degli accessi](../../compliance/privileged-access-management-overview.md) con privilegi per proteggere l'organizzazione da violazioni che potrebbero utilizzare account amministratore con privilegi esistenti con accesso permanente ai dati sensibili o l'accesso alle impostazioni di configurazione critiche.
 - Creare e usare account separati a cui sono assegnati ruoli di amministratore di [Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles) *solo per l'amministrazione.* Gli amministratori devono disporre del proprio account utente per un normale utilizzo non amministrativo e utilizzare un account amministrativo solo se necessario per completare un'attività associata al ruolo o alla funzione lavorativa.
 - Seguire [le procedure consigliate](https://docs.microsoft.com/azure/active-directory/admin-roles-best-practices) per la protezione degli account con privilegi in Azure AD.
 

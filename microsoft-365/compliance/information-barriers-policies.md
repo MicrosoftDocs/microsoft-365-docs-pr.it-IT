@@ -24,9 +24,9 @@ ms.locfileid: "50126585"
 ---
 # <a name="define-information-barrier-policies"></a>Definire i criteri delle barriere informative
 
-Con le barriere in fatto di informazioni, puoi definire criteri progettati per impedire a determinati segmenti di utenti di comunicare tra loro o consentire a segmenti specifici di comunicare solo con determinati altri segmenti. I criteri delle barriere di informazioni possono aiutare l'organizzazione a mantenere la conformità agli standard e alle normative del settore pertinenti ed evitare potenziali conflitti di interesse. Per ulteriori informazioni, vedere [Barriere di informazioni.](information-barriers.md)
+Con le barriere in fatto di informazioni, è possibile definire criteri progettati per impedire a determinati segmenti di utenti di comunicare tra loro o consentire a segmenti specifici di comunicare solo con determinati altri segmenti. I criteri delle barriere di informazioni possono aiutare l'organizzazione a mantenere la conformità agli standard e alle normative del settore pertinenti ed evitare potenziali conflitti di interesse. Per ulteriori informazioni, vedere [Barriere di informazioni.](information-barriers.md)
 
-Questo articolo descrive come pianificare, definire, implementare e gestire i criteri delle barriere di informazioni. Sono necessari diversi passaggi e il flusso di lavoro è suddiviso in più parti. Assicurarsi di leggere i prerequisiti [e](#prerequisites) l'intero processo prima di iniziare a definire (o modificare) i criteri delle barriere di informazioni.
+Questo articolo descrive come pianificare, definire, implementare e gestire i criteri delle barriere di informazioni. Sono coinvolti diversi passaggi e il flusso di lavoro è suddiviso in diverse parti. Assicurarsi di leggere i prerequisiti [e](#prerequisites) l'intero processo prima di iniziare a definire (o modificare) i criteri delle barriere di informazioni.
 
 > [!TIP]
 > Questo articolo include uno [scenario di esempio e](#example-contosos-departments-segments-and-policies) una cartella di lavoro di Excel [scaricabile](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx) che consente di pianificare e definire i criteri delle barriere di informazioni.
@@ -46,7 +46,7 @@ Quando si definiscono i criteri per le barriere in fatto di informazioni, si lav
 
 |**Fase**|**Cosa è coinvolto**|
 |:--------|:------------------|
-| [Verificare che i prerequisiti siano soddisfatti](#prerequisites) | - Verificare di disporre delle [licenze e delle autorizzazioni necessarie](information-barriers.md#required-licenses-and-permissions)<br/>- Verificare che la directory includa dati per la segmentazione degli utenti<br/>- Abilitare la ricerca nella directory con ambito per Microsoft Teams<br/>- Verificare che la registrazione di controllo sia attivata<br/>- Assicurarsi che non siano presenti criteri della rubrica di Exchange<br/>- Usare PowerShell (vengono forniti esempi)<br/>- Fornire il consenso dell'amministratore per Microsoft Teams (sono inclusi i passaggi) |
+| [Verificare che i prerequisiti siano soddisfatti](#prerequisites) | - Verificare di disporre delle [licenze e delle autorizzazioni necessarie](information-barriers.md#required-licenses-and-permissions)<br/>- Verificare che la directory includa dati per la segmentazione degli utenti<br/>- Abilitare la ricerca nella directory con ambito per Microsoft Teams<br/>- Verificare che la registrazione di controllo sia attivata<br/>- Assicurarsi che non siano presenti criteri della rubrica di Exchange<br/>- Usare PowerShell (sono disponibili esempi)<br/>- Fornire il consenso dell'amministratore per Microsoft Teams (sono inclusi i passaggi) |
 | [Parte 1: Segmentare gli utenti nell'organizzazione](#part-1-segment-users) | - Determinare i criteri necessari<br/>- Creare un elenco di segmenti da definire<br/>- Identificare gli attributi da utilizzare<br/>- Definire i segmenti in termini di filtri dei criteri |
 | [Parte 2: Definire i criteri delle barriere di informazioni](#part-2-define-information-barrier-policies) | - Definire i criteri (non ancora applicabili)<br/>- Scegliere tra due tipi (blocca o consenti) |
 | [Parte 3: Applicare i criteri delle barriere di informazioni](#part-3-apply-information-barrier-policies) | - Impostare i criteri sullo stato attivo<br/>- Eseguire l'applicazione dei criteri<br/>- Visualizzare lo stato dei criteri |
@@ -62,7 +62,7 @@ Oltre alle licenze e alle autorizzazioni [necessarie,](information-barriers.md#r
   - [Aggiungere o aggiornare le informazioni del profilo di un utente con Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
   - [Configurare le proprietà degli account utente con Office 365 PowerShell](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)
 
-- Ricerca nella directory con ambito: prima di definire i primi criteri delle barriere di informazioni dell'organizzazione, è necessario abilitare la ricerca di directory con ambito [in Microsoft Teams.](/MicrosoftTeams/teams-scoped-directory-search) Attendere almeno 24 ore dopo aver abilitato la ricerca nella directory con ambito prima di configurare o definire i criteri delle barriere di informazioni.
+- Ricerca nella directory con ambito: prima di definire i primi criteri delle barriere di informazioni dell'organizzazione, è necessario abilitare la ricerca di directory con ambito [in Microsoft Teams.](/MicrosoftTeams/teams-scoped-directory-search) Attendere almeno 24 ore dopo l'abilitazione della ricerca nella directory con ambito prima di configurare o definire i criteri delle barriere di informazioni.
 
 - Licenza EXO: i criteri IB funzionano solo se agli utenti di destinazione è stata assegnata una licenza EXO.
 
@@ -93,7 +93,7 @@ Oltre alle licenze e alle autorizzazioni [necessarie,](information-barriers.md#r
 Quando vengono soddisfatti tutti i prerequisiti, passare alla sezione successiva.
 
 > [!TIP]
-> Per facilitare la preparazione del piano, in questo articolo è incluso uno scenario di esempio. [Vedere i reparti, i segmenti e i criteri di Contoso.](#example-contosos-departments-segments-and-policies)<p>Inoltre, è disponibile una cartella di lavoro di Excel scaricabile che consente di pianificare e definire segmenti e criteri (e creare i cmdlet di PowerShell). [Ottenere la cartella di lavoro.](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx)
+> Per facilitare la preparazione del piano, in questo articolo è incluso uno scenario di esempio. [Vedere i reparti, i segmenti e i criteri di Contoso.](#example-contosos-departments-segments-and-policies)<p>Inoltre, è disponibile una cartella di lavoro di Excel scaricabile che consente di pianificare e definire segmenti e criteri (e creare i cmdlet di PowerShell). [Recuperare la cartella di lavoro.](https://github.com/MicrosoftDocs/OfficeDocs-O365SecComp/raw/public/SecurityCompliance/media/InfoBarriers-PowerShellGenerator.xlsx)
 
 ## <a name="part-1-segment-users"></a>Parte 1: Segmentare gli utenti
 
@@ -118,7 +118,7 @@ Oltre all'elenco iniziale dei criteri, creare un elenco di segmenti per l'organi
 Determinare quali attributi nei dati della directory dell'organizzazione verranno utilizzati per definire i segmenti. È possibile utilizzare *Department,* *MemberOf* o uno qualsiasi degli attributi supportati. Assicurarsi di disporre di valori nell'attributo selezionato per gli utenti. [Per informazioni sulle barriere, vedere](information-barriers-attributes.md)l'elenco degli attributi supportati.
 
 > [!IMPORTANT]
-> **Prima di passare alla sezione successiva, verificare** che i dati della directory siano associati a valori per gli attributi che è possibile utilizzare per definire i segmenti. Se i dati della directory non dispongono di valori per gli attributi che si desidera utilizzare, gli account utente devono essere aggiornati per includere queste informazioni prima di procedere con le barriere in fatto di informazioni. Per ottenere assistenza in questo caso, vedere le risorse seguenti:<br/>- [Configurare le proprietà dell'account utente con PowerShell di Office 365](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)<br/>- [Aggiungere o aggiornare le informazioni del profilo di un utente con Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
+> **Prima di passare alla sezione successiva, verificare** che i dati della directory siano associati a valori per gli attributi che è possibile utilizzare per definire i segmenti. Se i dati della directory non dispongono di valori per gli attributi che si desidera utilizzare, gli account utente devono essere aggiornati per includere queste informazioni prima di procedere con le barriere di informazioni. Per ottenere assistenza in questo caso, vedere le risorse seguenti:<br/>- [Configurare le proprietà dell'account utente con PowerShell di Office 365](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)<br/>- [Aggiungere o aggiornare le informazioni del profilo di un utente con Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
 
 ### <a name="define-segments-using-powershell"></a>Definire segmenti tramite PowerShell
 
@@ -135,7 +135,7 @@ La definizione dei segmenti non influisce sugli utenti; imposta semplicemente la
 2. Ripeti questo processo per ogni segmento che vuoi definire.
 
     > [!IMPORTANT]
-    > **Assicurati che i segmenti non si sovrappongano.** Ogni utente che sarà interessato dalle barriere in campo delle informazioni deve appartenere a un segmento (e un solo). Nessun utente deve appartenere a due o più segmenti. (Vedere [l'esempio: segmenti](#contosos-defined-segments) definiti da Contoso in questo articolo).
+    > **Assicurati che i segmenti non si sovrappongano.** Ogni utente a cui saranno interessate le barriere in fatto di informazioni deve appartenere a un segmento (e un solo). Nessun utente deve appartenere a due o più segmenti. (Vedere [l'esempio: segmenti](#contosos-defined-segments) definiti da Contoso in questo articolo).
 
 Dopo aver definito i segmenti, procedere con la [definizione dei criteri delle barriere di informazioni.](#part-2-define-information-barrier-policies)
 
@@ -159,7 +159,7 @@ Oltre a definire i segmenti usando "equals" o "not equals", puoi definire un seg
 |:---------|:----------|
 | `New-OrganizationSegment -Name "LocalFTE" -UserGroupFilter "Location -eq 'Local'" -and "Position -ne 'Temporary'"` | In questo esempio è stato definito un segmento denominato *LocalFTE* che include le persone che si trovano in locale e le cui posizioni non sono elencate come *temporanee.* |
 | `New-OrganizationSegment -Name "Segment1" -UserGroupFilter "MemberOf -eq 'group1@contoso.com'' -and MemberOf -ne 'group3@contoso.com'"`| In questo esempio, abbiamo definito un segmento denominato *Segment1* che include persone che sono membri di group1@contoso.com e non membri di group3@contoso.com. |
-| `New-OrganizationSegment -Name "Segment2" -UserGroupFilter "MemberOf -eq 'group2@contoso.com' -or MemberOf -ne 'group3@contoso.com'"` | In questo esempio abbiamo definito un segmento denominato *Segment2* che include persone che sono membri di group2@contoso.com e non membri di group3@contoso.com. |
+| `New-OrganizationSegment -Name "Segment2" -UserGroupFilter "MemberOf -eq 'group2@contoso.com' -or MemberOf -ne 'group3@contoso.com'"` | In questo esempio, abbiamo definito un segmento denominato *Segment2* che include persone che sono membri di group2@contoso.com e non membri di group3@contoso.com. |
 | `New-OrganizationSegment -Name "Segment1and2" -UserGroupFilter "(MemberOf -eq 'group1@contoso.com' -or MemberOf -eq 'group2@contoso.com') -and MemberOf -ne 'group3@contoso.com'"`| In questo esempio è stato definito un segmento denominato *Segment1and2* che include i membri delle persone di group1@contoso.com e group2@contoso.com e non i membri di group3@contoso.com. |
 
 > [!TIP]
@@ -167,7 +167,7 @@ Oltre a definire i segmenti usando "equals" o "not equals", puoi definire un seg
 
 ## <a name="part-2-define-information-barrier-policies"></a>Parte 2: Definire i criteri delle barriere di informazioni
 
-Determinare se è necessario impedire le comunicazioni tra determinati segmenti o limitare le comunicazioni a determinati segmenti. Idealmente, si utilizzerà il numero minimo di criteri per garantire che l'organizzazione sia conforme ai requisiti legali e del settore.
+Determinare se è necessario impedire le comunicazioni tra determinati segmenti o limitare le comunicazioni a determinati segmenti. Idealmente, si userà il numero minimo di criteri per garantire che l'organizzazione sia conforme ai requisiti legali e del settore.
 
 Con l'elenco dei segmenti di utenti e i criteri delle barriere di informazioni che vuoi definire, seleziona uno scenario e quindi segui i passaggi.
 
@@ -177,7 +177,7 @@ Con l'elenco dei segmenti di utenti e i criteri delle barriere di informazioni c
 > [!IMPORTANT]
 > **Durante la definizione dei criteri,** non assegnare più di un criterio a un segmento. Se ad esempio si definisce un criterio per un segmento denominato *Vendite,* non definire un criterio aggiuntivo per *Sales.*<p> Inoltre, quando definisci i criteri delle barriere di informazioni, assicurati di impostare tali criteri sullo stato inattivo finché non sei pronto ad applicarli. La definizione (o modifica) dei criteri non influisce sugli utenti finché tali criteri non vengono impostati sullo stato attivo e quindi applicati.
 
-Vedere [l'esempio: i criteri delle barriere](#contosos-information-barrier-policies) di informazioni di Contoso in questo articolo.
+(Vedere [l'esempio: i criteri delle barriere](#contosos-information-barrier-policies) di informazioni di Contoso in questo articolo).
 
 ### <a name="scenario-1-block-communications-between-segments"></a>Scenario 1: bloccare le comunicazioni tra segmenti
 
@@ -212,7 +212,7 @@ Si supponga, ad esempio, di voler bloccare le comunicazioni tra il segmento A e 
 
     |**Sintassi**|**Esempio**|
     |:---------|:----------|
-    | `New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name", "segment3name","segment1name"` | `New-InformationBarrierPolicy -Name "Research-HRManufacturing" -AssignedSegment "Research" -SegmentsAllowed "HR","Manufacturing","Research" -State Inactive` <p> In questo esempio è stato definito un criterio che consente al segmento *Research* di comunicare solo con *HR* e *Manufacturing.* |
+    | `New-InformationBarrierPolicy -Name "policyname" -AssignedSegment "segment1name" -SegmentsAllowed "segment2name", "segment3name","segment1name"` | `New-InformationBarrierPolicy -Name "Research-HRManufacturing" -AssignedSegment "Research" -SegmentsAllowed "HR","Manufacturing","Research" -State Inactive` <p> In questo esempio, è stato definito un criterio che consente al segmento *Research* di comunicare solo con *HR* e *Manufacturing.* |
 
     Ripeti questo passaggio per ogni criterio che vuoi definire per consentire a segmenti specifici di comunicare solo con determinati altri segmenti specifici.
 
@@ -263,7 +263,7 @@ Sono disponibili risorse che consentono di gestire i criteri delle barriere di i
 
 - Se si verifica un problema con le barriere delle informazioni, vedere [Risoluzione dei problemi relativi alle barriere in fatto di informazioni.](information-barriers-troubleshooting.md)
 - Per interrompere l'applicazione dei criteri, vedere [Arrestare un'applicazione di criteri.](information-barriers-edit-segments-policies.md#stop-a-policy-application)
-- Per rimuovere un criterio delle barriere di informazioni, [vedere Rimuovere un criterio.](information-barriers-edit-segments-policies.md#remove-a-policy)
+- Per rimuovere un criterio di barriere di informazioni, [vedere Rimuovere un criterio.](information-barriers-edit-segments-policies.md#remove-a-policy)
 - Per apportare modifiche ai segmenti o ai criteri, vedi [Modificare (o rimuovere)](information-barriers-edit-segments-policies.md)i criteri delle barriere di informazioni.
 
 ## <a name="example-contosos-departments-segments-and-policies"></a>Esempio: reparti, segmenti e criteri di Contoso
@@ -309,8 +309,8 @@ Contoso definisce tre criteri, come descritto nella tabella seguente:
 
 |**Criterio**|**Definizione criterio**|
 |:---------|:--------------------|
-| **Criterio 1: Impedire alle vendite di comunicare con La ricerca** | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> In questo esempio il criterio delle barriere di informazioni è *denominato Sales-Research.* Quando questo criterio è attivo e applicato, impedisce agli utenti del segmento Vendite di comunicare con gli utenti nel segmento Ricerche. Questo criterio è unidiresto; non impedirà a Research di comunicare con Sales. Per questo, è necessario il criterio 2. |
-| **Criterio 2: impedire alla ricerca di comunicare con sales** | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> In questo esempio, il criterio delle barriere di informazioni è *denominato Research-Sales.* Quando questo criterio è attivo e applicato, impedisce agli utenti del segmento Ricerche di comunicare con gli utenti nel segmento Vendite. |
+| **Criterio 1: Impedire alle vendite di comunicare con La ricerca** | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> In questo esempio il criterio delle barriere di informazioni è *denominato Sales-Research.* Quando questo criterio è attivo e applicato, impedisce agli utenti nel segmento Vendite di comunicare con gli utenti nel segmento Ricerche. Questo criterio è unidiresto; non impedirà a Research di comunicare con Sales. Per questo, è necessario il criterio 2. |
+| **Criterio 2: impedire alle ricerche di comunicare con le vendite** | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> In questo esempio, il criterio delle barriere di informazioni è *denominato Research-Sales.* Quando questo criterio è attivo e applicato, impedisce agli utenti del segmento Ricerche di comunicare con gli utenti nel segmento Vendite. |
 | **Criterio 3: consentire alla produzione di comunicare solo con le risorse umane e il marketing** | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p> In questo caso, il criterio delle barriere di informazioni è *denominato Manufacturing-HRMarketing.* Quando questo criterio è attivo e applicato, Produzione può comunicare solo con HR e Marketing. Le risorse umane e marketing non sono limitate a comunicare con altri segmenti. |
 
 Dopo aver definito segmenti e criteri, Contoso applica i criteri eseguendo il cmdlet **Start-InformationBarrierPoliciesApplication.**

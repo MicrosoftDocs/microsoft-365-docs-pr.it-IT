@@ -97,7 +97,7 @@ Per [definire o modificare i criteri delle barriere di informazioni,](informatio
 - Amministratore di conformità
 - Gestione della conformità IB
 
-Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere Autorizzazioni nel Centro sicurezza & conformità di [Office 365.](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
+Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere Autorizzazioni nel Centro sicurezza [& conformità di Office 365.](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
 
 È necessario avere familiarità con i cmdlet di PowerShell per definire, convalidare o modificare i criteri delle barriere di informazioni. Anche se nell'articolo di procedura [](information-barriers-policies.md)vengono forniti diversi esempi di cmdlet di PowerShell, è necessario conoscere altri dettagli, ad esempio i parametri, per l'organizzazione.
 

@@ -33,7 +33,7 @@ Se un messaggio è stato crittografato con Office 365 Advanced Message Encryptio
   
 ## <a name="encrypted-emails-that-you-can-revoke"></a>Messaggi di posta elettronica crittografati che è possibile revocare
 
-Gli amministratori e i mittenti dei messaggi possono revocare i messaggi di posta elettronica crittografati se il destinatario ha ricevuto un messaggio di posta elettronica crittografato basato su collegamento e personalizzato. Se il destinatario ha ricevuto un'esperienza in linea nativa in un client Di Outlook supportato, non è possibile revocare il messaggio.
+Gli amministratori e i mittenti dei messaggi possono revocare i messaggi di posta elettronica crittografati se il destinatario ha ricevuto un messaggio di posta elettronica crittografato personalizzato basato su collegamento. Se il destinatario ha ricevuto un'esperienza in linea nativa in un client Di Outlook supportato, non è possibile revocare il messaggio.
 
 Il fatto che un destinatario riceva un'esperienza basata su collegamento o un'esperienza in linea dipende dal tipo di identità del destinatario: i destinatari dell'account Di Office 365 e Microsoft (ad esempio, gli utenti di outlook.com) ottengono un'esperienza in linea nei client Outlook supportati. Tutti gli altri tipi di destinatari, ad esempio i destinatari Gmail e Yahoo, ottengono un'esperienza basata su collegamenti.
 
@@ -51,7 +51,7 @@ Dopo che un messaggio di posta elettronica è stato revocato, il destinatario ri
 
 È possibile revocare un messaggio inviato a un singolo destinatario che utilizza un account di social gmail.com o yahoo.com. In altre parole, è possibile revocare un messaggio di posta elettronica inviato a un singolo destinatario che ha ricevuto l'esperienza basata su collegamento.
 
-Non è possibile revocare un messaggio inviato a un destinatario che usa un account aziendale o dell'istituto di istruzione da Office 365 o Microsoft 365 o un utente che usa un account Microsoft, ad esempio un account outlook.com. 
+Non è possibile revocare un messaggio di posta elettronica inviato a un destinatario che usa un account aziendale o dell'istituto di istruzione da Office 365 o Microsoft 365 o un utente che usa un account Microsoft, ad esempio un account outlook.com. 
 
 Per revocare un messaggio crittografato inviato, eseguire la procedura seguente
 
@@ -63,7 +63,7 @@ Per revocare un messaggio crittografato inviato, eseguire la procedura seguente
 
 2. Fare **clic su Rimuovi accesso esterno** per revocare il messaggio.
 
-   Il messaggio mostra che il suo stato è revocato.
+   Il messaggio mostra che il suo stato è stato revocato.
 
    :::image type="content" source="../media/adhocencryptionrevokedmsg.png" alt-text="Screenshot showing revoked encrypted message in Outlook on the web.":::
 
@@ -83,7 +83,7 @@ Prima di poter revocare un messaggio crittografato, raccogliere l'ID del messagg
 
 Esistono diversi modi per trovare l'ID messaggio del messaggio di posta elettronica che si desidera revocare. In questa sezione vengono descritte due opzioni, ma è possibile utilizzare qualsiasi metodo che fornisce l'ID.
 
-#### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-message-trace-in-the-security-amp-compliance-center"></a>Per identificare l'ID messaggio del messaggio di posta elettronica che si desidera revocare utilizzando Traccia messaggio nel Centro sicurezza &amp; e conformità
+#### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-message-trace-in-the-security-amp-compliance-center"></a>Per identificare l'ID messaggio del messaggio di posta elettronica che si desidera revocare utilizzando Traccia messaggio nel Centro &amp; sicurezza e conformità
 
 1. Cercare il messaggio di posta elettronica in base al mittente o al destinatario usando Traccia nuovo [messaggio nel Centro sicurezza & conformità.](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
 
@@ -91,7 +91,7 @@ Esistono diversi modi per trovare l'ID messaggio del messaggio di posta elettron
 
 #### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-office-message-encryption-reports-in-the-security-amp-compliance-center"></a>Per identificare l'ID messaggio del messaggio di posta elettronica che si desidera revocare utilizzando i report di Crittografia messaggi di Office nel Centro &amp; sicurezza e conformità
 
-1. Nel Centro sicurezza &amp; e conformità passare al report Crittografia **messaggi.** Per informazioni su questo report, vedere Visualizzare i report [di sicurezza della posta elettronica nel Centro sicurezza e &amp; conformità.](../security/office-365-security/view-email-security-reports.md)
+1. Nel Centro sicurezza &amp; e conformità passare al report crittografia dei **messaggi.** Per informazioni su questo report, vedere Visualizzare i report [di sicurezza della posta elettronica nel Centro sicurezza e &amp; conformità.](../security/office-365-security/view-email-security-reports.md)
 
 2. Scegliere la **tabella Visualizza dettagli** e identificare il messaggio che si desidera revocare.
 

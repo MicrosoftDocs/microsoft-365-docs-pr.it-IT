@@ -30,7 +30,7 @@ ms.locfileid: "50097469"
 Per fornire un ulteriore livello di sicurezza per gli accesso, i client possono essere configurati per l'utilizzo dell'autenticazione a più fattori (MFA), che utilizza sia una password utente che un metodo di verifica utente aggiuntivo basato su:
 
 - Qualcosa in loro possesso che non è facilmente duplicato, ad esempio uno smartphone.
-- Qualcosa che l'utente ha in modo univoco e biologico, ad esempio le impronte digitali, il volto o un altro attributo biometrico
+- Qualcosa che l'utente ha in modo univoco e biondo, ad esempio le impronte digitali, il volto o un altro attributo biometrico
 
 Ulteriori informazioni [sull'autenticazione a più fattori.](/azure/active-directory/authentication/multi-factor-authentication)
 

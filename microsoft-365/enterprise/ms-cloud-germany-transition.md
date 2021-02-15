@@ -33,7 +33,7 @@ ms.locfileid: "50145416"
 
 Ad agosto 2018, Microsoft ha annunciato l'intenzione di fornire il cloud Microsoft completo ( Azure, Office 365, Dynamics 365 e Power Platform) dalle nuove aree cloud in Germania per consentire una migliore trasformazione digitale dei clienti. Nel mese di agosto 2019, abbiamo annunciato che le nuove aree cloud in Germania erano in fase di apertura. Da allora abbiamo annunciato la disponibilità di Azure, Office 365, Dynamics 365 e Power Platform.
 
-Le nuove aree geografiche sono progettate per soddisfare le esigenze in evoluzione dei clienti tedeschi con maggiore flessibilità, i servizi cloud intelligenti più recenti e la connettività completa alla rete cloud dei servizi Microsoft 365 e la residenza dei dati dei clienti in Germania.
+Le nuove aree geografiche sono progettate per soddisfare le esigenze in continua evoluzione dei clienti tedeschi con maggiore flessibilità, i servizi cloud intelligenti più recenti e la connettività completa alla rete cloud dei servizi Microsoft 365 e la residenza dei dati dei clienti in Germania.
 
 ## <a name="how-to-migrate-to-the-new-german-datacenter-regions"></a>Come eseguire la migrazione alle nuove aree data center tedesche
 
@@ -78,7 +78,7 @@ Una settimana prima dell'inizio della migrazione del tenant, si riceverà un avv
 
 La migrazione sposterà il tenant di Azure AD dal servizio Azure AD per la Germania sovrano all'istanza dei servizi di Office 365 di Azure AD nell'area ue.
 
-La fase successiva è la migrazione delle sottoscrizioni&#39;tenant e delle licenze utente da prodotti specifici della Germania a prodotti globali.
+La fase successiva è la migrazione delle sottoscrizioni&#39;tenant e delle licenze utente dai prodotti specifici per la Germania a prodotti globali.
 
 Una volta completati tutti i passaggi, inclusa la migrazione di Azure dei clienti, il tenant viene finalizzato nel servizio servizi di Office 365 e la migrazione viene contrassegnata come completata. A questo punto, viene fornito l'aggiornamento finale al Centro messaggi. Il tenant è ora un'organizzazione di Office 365 completamente globale.
 
@@ -197,7 +197,7 @@ Attualmente sono disponibili 39 servizi come parte dei servizi di Office 365 nel
 
 Se sei solo un cliente di Azure, puoi iniziare a eseguire la [migrazione](https://docs.microsoft.com/azure/germany/germany-migration-main) delle risorse di Azure in un'altra area geografica oggi. 
 
-Se si dispone di Azure con Office 365, Dynamics 365 o Power BI, è necessario seguire il processo di migrazione per garantire la corretta migrazione di AzureAD prima di iniziare la migrazione di Azure auto-diretta. È necessario completare la migrazione di Azure prima della chiusura del servizio per mantenere i carichi di lavoro di Azure con AzureAD e l'organizzazione di Office 365.
+Se si dispone di Azure con Office 365, Dynamics 365 o Power BI, è necessario seguire il processo di migrazione per garantire la corretta migrazione di AzureAD prima di iniziare la migrazione di Azure auto-indirizzata. È necessario completare la migrazione di Azure prima della chiusura del servizio per mantenere i carichi di lavoro di Azure con AzureAD e l'organizzazione di Office 365.
 
 **Office 365**
 
@@ -234,7 +234,7 @@ Durante la migrazione da Microsoft Cloud Deutschland ai servizi di Office 365, l
 | chiosco Exchange Online DE \_ (EXCHANGEDESKLESS \_ DE) | chiosco Exchange Online (EXCHANGEDESKLESS) |
 | Exchange Online Protection \_ DE (EOP \_ ENTERPRISE \_ DE) | Exchange Online Protection (EOP \_ ENTERPRISE) |
 | Microsoft 365 Business Standard (O365 \_ BUSINESS \_ PREMIUM) | Microsoft 365 Business Standard (O365 \_ BUSINESS \_ PREMIUM) |
-| Microsoft Dynamics CRM Online Instance \_ DE (CRMINSTANCE \_ DE) | Microsoft Dynamics CRM Online instance (CRMINSTANCE) |
+| Microsoft Dynamics CRM Online Instance \_ DE (CRMINSTANCE \_ DE) | Microsoft Dynamics CRM Online (CRMINSTANCE) |
 | Office 365 A1 per docenti \_ DE (STANDARDWOFFPACK \_ FACULTY \_ DE) | Office 365 A1 per docenti (STANDARDWOFFPACK \_ FACULTY) |
 | Office 365 A1 per studenti \_ DE (STANDARDWOFFPACK \_ STUDENT \_ DE) | Office 365 A1 per studenti (STANDARDWOFFPACK \_ STUDENT) |
 | Office 365 Advanced Compliance \_ DE (EQUIVIO \_ ANALYTICS \_ DE) | Conformità Microsoft 365 E5 (CONFORMITÀ \_ INFORMATION \_ PROTECTION) |

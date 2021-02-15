@@ -48,7 +48,7 @@ Per altre informazioni sulla valutazione dell'accesso continuo per il supporto d
 
 L'autenticazione basata su certificato (CBA) è l'uso di un certificato digitale per identificare un utente, un computer o un dispositivo prima di concedere l'accesso a una risorsa, una rete, un'applicazione o un servizio. Nell'autenticazione utente, viene spesso distribuita in coordinamento con i metodi tradizionali come nomi utente e password.
 
-Alcune soluzioni tradizionali funzionano solo per gli utenti, ad esempio la biometria e le password una sola volta (OTP). Con l'autenticazione basata su certificati, la stessa soluzione può essere usata per tutti gli endpoint; utenti, dispositivi e internet delle cose (IoT) in crescita.
+Alcune soluzioni tradizionali funzionano solo per gli utenti, ad esempio la biometria e le password una sola volta (OTP). Con l'autenticazione basata su certificati, la stessa soluzione può essere usata per tutti gli endpoint; utenti, dispositivi e l'Internet delle cose (IoT) in crescita.
 
 Per ulteriori informazioni sull'autenticazione basata su certificati per il supporto delle app client e servizi, vedere Supporto app client [di Microsoft 365: autenticazione basata su certificati.](microsoft-365-client-support-certificate-based-authentication.md)
 
@@ -82,7 +82,7 @@ Per altre informazioni sull'accesso condizionale per il supporto delle app clien
 
 ### <a name="mobile-application-management"></a>Gestione di applicazioni mobili
 
-Gli utenti spesso accedono sia ai documenti personali che all'organizzazione, alla posta elettronica e ai dati dallo stesso dispositivo mobile. Questi dispositivi sono spesso di proprietà personale e devono essere configurati per proteggere sia i dati dell'organizzazione che la privacy personale dell'utente.
+Gli utenti spesso accedono sia ai documenti dell'organizzazione che ai documenti personali, alla posta elettronica e ai dati dallo stesso dispositivo mobile. Questi dispositivi sono spesso di proprietà personale e devono essere configurati per proteggere sia i dati dell'organizzazione che la privacy personale dell'utente.
 
 Quando un utente accede ai dati dell'organizzazione, l'organizzazione deve essere certo che i criteri dell'organizzazione, ad esempio i criteri di configurazione e i criteri di protezione, siano applicati per proteggere i dati dell'organizzazione nel dispositivo. Inoltre, il contenuto personale dell'utente nel dispositivo deve rimanere al di fuori del controllo dell'organizzazione.
 
@@ -92,7 +92,7 @@ Per i contenuti gestiti dall'organizzazione, è possibile applicare criteri di g
 - Impedisci incollamento del contenuto dell'organizzazione in posizioni non dell'organizzazione
 - Richiedere un PIN per accedere al contenuto dell'organizzazione
 - Impedire l'esecuzione di app gestite su dispositivi jailbroken o rooted
-- Impedire che il contenuto dell'organizzazione venga salvato in provider di archiviazione cloud non approvati
+- Impedire il salvataggio del contenuto dell'organizzazione in provider di archiviazione cloud non approvati
 - Impedire il trasferimento di contenuto non approvato in applicazioni gestite
 - Consentire l'accesso al contenuto dell'organizzazione solo dopo l'applicazione dei criteri
 - Fornire la configurazione dell'applicazione per gestire il comportamento e le impostazioni dell'applicazione
@@ -102,7 +102,7 @@ Per altre informazioni sulla gestione delle applicazioni mobili con Microsoft In
 
 ### <a name="multi-factor-authentication"></a>Autenticazione a più fattori
 
-[L'autenticazione a più fattori (MFA) è un metodo di controllo dell'accesso al computer in cui a un utente viene concesso l'accesso solo dopo la corretta presentazione di diverse prove separate a un meccanismo di autenticazione. Questo metodo utilizza in genere almeno due delle categorie seguenti:
+[L'autenticazione a più fattori (MFA) è un metodo di controllo dell'accesso al computer in cui a un utente viene concesso l'accesso solo dopo aver correttamente presentato diverse prove separate a un meccanismo di autenticazione. Questo metodo utilizza in genere almeno due delle categorie seguenti:
 
 - Conoscenza (qualcosa che conoscono)
 - Possesso (qualcosa che hanno)
@@ -112,7 +112,7 @@ Per ulteriori informazioni sull'autenticazione a più fattori per il supporto de
 
 ### <a name="single-sign-on"></a>Single Sign-On
 
-Single #A0 (SSO) aggiunge sicurezza e comodità quando gli utenti a utilizzano le applicazioni in Azure Active Directory. Con Single #A0 gli utenti accedono una sola volta con un account per accedere ai dispositivi aggiunti al dominio di Servizi di dominio Active Directory locali, alle applicazioni Software as a Service (SaaS) e alle applicazioni Web nell'organizzazione.
+Single #A0 (SSO) aggiunge sicurezza e comodità quando gli utenti a utilizzano le applicazioni in Azure Active Directory. Con l'accesso Single Sign-On, gli utenti accedono una sola volta con un account per accedere ai dispositivi aggiunti al dominio di Servizi di dominio Active Directory locali, alle applicazioni Software as a Service (SaaS) e alle applicazioni Web nell'organizzazione.
 
 Per ulteriori informazioni sul servizio Single #A0 per il supporto delle app client e servizi, vedere Supporto app client [Di Microsoft 365: Single #A0](microsoft-365-client-support-single-sign-on.md).
 

@@ -74,13 +74,13 @@ L'esempio seguente illustra come creare un nuovo oggetto visivo per tenere tracc
     
 3. Nella parte inferiore della pagina, selezionare il pulsante ![Pulsante Aggiungi pagina in Power BI](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) per creare una nuova pagina.
   
-4. Nell'area **Visualizzazioni** a destra scegliere il grafico a **barre** in pila (riga superiore, prima da sinistra).
+4. **Nell'area Visualizzazioni** a destra scegliere il grafico a **barre** in pila (riga superiore, prima da sinistra).
 
     ![Seleziona grafico a barre](../../media/214c3fed-6eae-43e6-83fb-708a2d74406e.png)
     
 5. Selezionare la visualizzazione in basso a destra e trascinarla per ingrandirla.
 
-6. **Nell'area** Campi a destra espandere la **tabella** Calendario.
+6. **Nell'area Campi** a destra espandere la **tabella** Calendario.
 
 7. Trascinare **MonthName** nell'area campi, direttamente sotto l'intestazione **Asse** nell'area **Visualizzazioni**.
  
@@ -94,7 +94,7 @@ L'esempio seguente illustra come creare un nuovo oggetto visivo per tenere tracc
 
 11. Nell'area **Tipo di filtro** che viene visualizzata, selezionare la casella di controllo **Yammer**.
 
-    ![Selezionare la casella di controllo di Yammer](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
+    ![Seleziona la casella di controllo di Yammer](../../media/82e99730-0de9-42da-928a-76aab0c3e609.png)
   
 12. Appena sotto l'elenco delle visualizzazioni, scegliere **l'icona** ![ Formato icona Formato in Power BI Visualizaions. ](../../media/ee0602f3-3df5-4930-b862-db1d90ae4ae2.png)
 
@@ -146,7 +146,7 @@ Per la maggior parte dei clienti è sufficiente modificare i report e gli oggett
     
     ![Enter your tenant ID to open the pbit file](../../media/071ed0bf-8b9d-49c6-81fc-fd4c6cc85bd3.png)
   
-3. Immettere le credenziali di amministratore per l'autenticazione in Microsoft 365 quando richiesto.
+3. Quando richiesto, immettere le credenziali di amministratore per l'autenticazione in Microsoft 365.
     
      per ulteriori informazioni sugli utenti autorizzati ad accedere ai report di analisi dell'utilizzo di Microsoft 365. 
     

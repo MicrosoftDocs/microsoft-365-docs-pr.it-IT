@@ -48,7 +48,7 @@ L'organizzazione ha recentemente ottenuto Microsoft 365 e ora è necessario usar
     
 - [Area risorse di Office](https://support.microsoft.com/office/b8f02f81-ec85-4493-a39b-4c48e6bc4bfb)
     
-- [Dove effettuare l'accesso](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)
+- [Dove eseguire l'accesso](https://support.microsoft.com/office/e9eb7d51-5430-4929-91ab-6157c5a050b4)
     
 - [Installare Office nel PC o nel Mac](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
     

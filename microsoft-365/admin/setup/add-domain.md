@@ -106,7 +106,7 @@ ms.locfileid: "50114262"
 
 ## <a name="add-or-edit-custom-dns-records"></a>Aggiungere o modificare record DNS personalizzati
 
-Seguire la procedura seguente per aggiungere un record personalizzato per un sito Web o un servizio di terze parti.
+Seguire i passaggi seguenti per aggiungere un record personalizzato per un sito Web o un servizio di terze parti.
 
 1. Accedere all'interfaccia di amministrazione di Microsoft all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> .
 
@@ -145,7 +145,7 @@ Nella procedura guidata, verrà semplicemente confermata la proprietà del domin
 
 ### <a name="what-happens-to-my-email-and-website"></a>Cosa succede alla posta elettronica e al sito Web?
 
-Al termine dell'installazione, il record MX per il dominio viene aggiornato in modo che punti a Microsoft 365 e tutta la posta elettronica per il dominio inizierà a essere inviata a Microsoft 365. Assicurarsi di aver aggiunto utenti e di configurare le cassette postali in Microsoft 365 per tutti gli utenti che riceve la posta elettronica nel dominio.
+Al termine dell'installazione, il record MX per il dominio viene aggiornato in modo che punti a Microsoft 365 e tutta la posta elettronica per il dominio inizierà a essere inviata a Microsoft 365. Assicurarsi di aver aggiunto utenti e configurato le cassette postali in Microsoft 365 per tutti gli utenti che riceve la posta elettronica nel dominio.
   
 Se si ha un sito Web che si usa con l'organizzazione, continuerà a funzionare dove si trova. I passaggi di configurazione di Domain Connect non influiscono sul sito Web.
 

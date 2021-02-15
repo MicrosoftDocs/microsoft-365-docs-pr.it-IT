@@ -57,7 +57,7 @@ Rispondendo a queste domande sarà più semplice pianificare la strategia per la
   
 |**Provare:**|**Per...**|
 |:-----|:-----|
-|Aggiungere un guest a un gruppo  <br/> |Fornire a un utente esterno all'organizzazione l'accesso continuo alle informazioni e al contenuto di un sito del team. Tali utenti devono poter agire come utenti effettivi del sito creando, modificando e visualizzando il contenuto.  <br/> |
+|Aggiungere un guest a un gruppo  <br/> |Fornire a un utente esterno all'organizzazione l'accesso continuo alle informazioni e al contenuto in un sito del team. Tali utenti devono poter agire come utenti effettivi del sito creando, modificando e visualizzando il contenuto.  <br/> |
 |Condividere un documento e richiedere l'autenticazione degli utenti guest.  <br/> |Fornire a persone specifiche esterne all'organizzazione l'accesso sicuro a un documento per la revisione o la collaborazione, ma queste persone non richiedono l'accesso ad altri contenuti del sito.  <br/> |
 |Condividere un documento, ma non richiedere l'autenticazione.  <br/> |Condividere un collegamento a un documento non riservato o non confidenziale con utenti esterni all'organizzazione in modo che possano visualizzarlo o aggiornarlo con commenti e suggerimenti. Queste persone non richiedono l'accesso al contenuto del sito.  <br/> |
    

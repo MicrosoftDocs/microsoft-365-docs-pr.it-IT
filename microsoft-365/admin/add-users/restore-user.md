@@ -125,7 +125,7 @@ Per risolvere i conflitti di questo tipo, sostituire l'account utente attivo con
 
 I conflitti relativi all'indirizzo proxy si verificano quando l'amministratore elimina un account utente contenente un indirizzo proxy, assegna lo stesso indirizzo proxy a un altro account, quindi cerca di ripristinare l'account eliminato. Eseguire la procedura seguente per risolvere il problema.
   
-A tale [scopo, è necessario](about-admin-roles.md) disporre delle autorizzazioni di amministratore in Microsoft 365. 
+A tale [scopo,](about-admin-roles.md) è necessario disporre delle autorizzazioni di amministratore in Microsoft 365. 
   
 
 ::: moniker range="o365-worldwide"
