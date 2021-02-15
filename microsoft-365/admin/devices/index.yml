@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Proteggere e gestire i dispositivi e i dati delle app
-summary: Consultare queste risorse per aiutare gli amministratori a scegliere tra i metodi di gestione dei dati di dispositivi e app.
+title: Proteggere e gestire i dispositivi e i dati dell'app
+summary: Consulta queste risorse per aiutare gli amministratori a scegliere tra i metodi di gestione dei dati di dispositivi e app.
 metadata:
-  title: Proteggere e gestire i dispositivi e i dati delle app
-  description: Gestire e proteggere i dispositivi e i dati delle app
+  title: Proteggere e gestire i dispositivi e i dati dell'app
+  description: Gestire e proteggere i dispositivi e i dati dell'app
   ms.service: O365-administration
   ms.topic: landing-page
   author: Sirkkuw
@@ -22,9 +22,9 @@ landingContent:
   linkLists:
   - linkListType: overview
     links:
-    - text: Esaminare le opzioni di protezione dei dati per dispositivi e app
+    - text: Esaminare le opzioni di protezione dei dati di dispositivi e app
       url: choose-device-security.md
-- title: Gestire i dispositivi e i dati delle app con Microsoft Intune
+- title: Gestire i dispositivi e i dati dell'app con Microsoft Intune
   linkLists:
   - linkListType: overview
     links:
@@ -36,33 +36,33 @@ landingContent:
       url: https://docs.microsoft.com/mem/intune/enrollment/quickstart-setup-auto-enrollment
     - text: Configurare la registrazione Android
       url: https://docs.microsoft.com/mem/intune/enrollment/android-enroll
-    - text: Configurare la registrazione di iOS/iPados
+    - text: Configurare la registrazione iOS/iPadOS
       url: https://docs.microsoft.com/mem/intune/enrollment/ios-enroll
 - title: Gestire i dispositivi e i dati delle app con Microsoft 365 Business Premium
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: Visualizzare e gestire i criteri di gestione delle applicazioni e dei dispositivi
+    - text: Visualizzare e gestire i criteri di gestione di app e dispositivi
       url: ../../business/view-policies-and-devices.md
     - text: Rimuovere i dati aziendali dai dispositivi
       url: ../../business/remove-company-data.md
-    - text: Ripristinare le impostazioni di fabbrica per i dispositivi Windows
+    - text: Ripristinare le impostazioni predefinite dei dispositivi Windows
       url: ../../business/reset-devices-to-factory-settings.md
-- title: Gestire i dispositivi e i dati delle app con Microsoft 365 per Enterprise
+- title: Gestire i dispositivi e i dati delle app con Microsoft 365 per le aziende
   linkLists:
   - linkListType: overview
     links:
-    - text: Informazioni generali su Microsoft 365 per Enterprise
+    - text: Panoramica di Microsoft 365 per le aziende
       url: ../../enterprise/microsoft-365-overview.md
-    - text: Gestione dei dispositivi Road-Map per Microsoft 365 per Enterprise
+    - text: Road map sulla gestione dei dispositivi per Microsoft 365 per le aziende
       url: ../../enterprise/device-management-roadmap-microsoft-365.md
-- title: Gestire i dispositivi e i dati delle app con mobilità e sicurezza di base
+- title: Gestire dispositivi e dati dell'app con dispositivi mobili e sicurezza di base
   linkLists:
   - linkListType: overview
     links:
-    - text: Panoramica della sicurezza e della mobilità di base
+    - text: Panoramica Basic Mobility + Security
       url: ../basic-mobility-security/overview.md
-    - text: Configurare la sicurezza e la mobilità di base
+    - text: Configurare la mobilità e la sicurezza di base
       url: ../basic-mobility-security/set-up.md
     - text: Funzionalità di mobilità e sicurezza di base
       url: ../basic-mobility-security/capabilities.md
