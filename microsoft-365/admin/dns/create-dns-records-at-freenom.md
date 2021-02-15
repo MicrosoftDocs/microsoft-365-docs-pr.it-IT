@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: d8ff45a2-19e3-413d-aa64-a9982bd6633c
-description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in Freenom per Microsoft.
+description: Informazioni su come verificare il dominio e configurare i record DNS per posta elettronica, Skype for Business online e altri servizi in Freenom per Microsoft.
 ms.openlocfilehash: b958a69d1dad9a0b56cf954d12cd42e40d6d4fea
 ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
@@ -33,9 +33,9 @@ ms.locfileid: "49657876"
 Se non si trovano le informazioni desiderate, vedere le [domande frequenti sui domini](../setup/domains-faq.yml). 
   
 > [!CAUTION]
-> Il sito Web Freenom non supporta i record SRV, quindi diverse funzionalità di Skype for Business Online e Outlook Web App non funzioneranno. Indipendentemente dal piano Microsoft utilizzato, sono presenti limitazioni rilevanti del servizio e potrebbe essere opportuno passare a un provider di hosting DNS diverso. 
+> Il sito Web Freenom non supporta i record SRV, quindi diverse funzionalità di Skype for Business Online e Outlook Web App non funzioneranno. Indipendentemente dal piano Microsoft in uso, esistono limitazioni significative per i servizi e può essere necessario passare a un provider di hosting DNS diverso. 
   
-Se nonostante le limitazioni del servizio, si sceglie di gestire i propri record Microsoft DNS in Freenom, seguire la procedura descritta in questo articolo per verificare il dominio e configurare i record DNS per la posta elettronica e altri servizi.
+Se nonostante le limitazioni del servizio, si sceglie di gestire i propri record DNS Microsoft su Freenom, seguire la procedura descritta in questo articolo per verificare il dominio e configurare i record DNS per la posta elettronica e altri servizi.
   
   
 > [!NOTE]
@@ -49,19 +49,19 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
 > [!NOTE]
 > Questo record viene usato esclusivamente per verificare di essere proprietari del dominio e non ha altri effetti. È possibile eliminarlo in un secondo momento, se si preferisce. 
   
-1. Per iniziare, passare alla propria pagina dei domini in Freenom usando [questo collegamento](https://my.freenom.com/). Verrà chiesto di accedere.
+1. To get started, go to your domains page in Freenom by using [this link.](https://my.freenom.com/) Verrà chiesto di accedere.
     
     ![Freenom login](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
-2. Selezionare **Servizi**, quindi selezionare **domini personali**.
+2. Selezionare **Servizi** e quindi **Selezionare I miei domini.**
     
     ![Freenom select Services and My Domains](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
-3. Per il dominio che si desidera modificare, selezionare **Gestisci dominio**.
+3. Per il dominio che si desidera modificare, selezionare **Gestisci dominio.**
     
     ![Freenom select Manage Domain](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
-4. Selezionare **Gestisci FREENOM DNS**.
+4. Selezionare **Manage Freenom DNS**.
     
     ![Freenom Manage Freenom DNS](../../media/9854a511-27e3-4658-8903-34b3d425096d.png)
   
@@ -73,11 +73,11 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
     
     |**Nome**|**Type**|**TTL**|**Destinazione**|
     |:-----|:-----|:-----|:-----|
-    |(lasciare vuoto)  <br/> |TXT  <br/> |3600 (secondi)  <br/> |MS = msXXXXXXXX  <br/> **Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
+    |(lasciare vuoto)  <br/> |TXT  <br/> |3600 (secondi)  <br/> |MS=msXXXXXXXX  <br/> **Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Freenom TXT values for verification](../../media/650098df-b3aa-47e5-9763-7fde24e34c3f.png)
   
-7. Selezionare **Salva modifiche**.
+7. Selezionare **Salva modifiche.**
     
     ![Freenom TXT record Save Changes](../../media/b1a63f9a-4578-491a-9554-c40f73b37e09.png)
   
@@ -108,29 +108,29 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 ## <a name="add-an-mx-record-so-email-for-your-domain-will-come-to-microsoft"></a>Aggiungere un record MX in modo che la posta elettronica del dominio venga recapitata in Microsoft
 <a name="bkmk_mx"> </a>
 
-1. Per iniziare, passare alla propria pagina dei domini in Freenom usando [questo collegamento](https://my.freenom.com/). Verrà chiesto di accedere.
+1. To get started, go to your domains page in Freenom by using [this link.](https://my.freenom.com/) Verrà chiesto di accedere.
     
     ![Freenom login](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
-2. Selezionare **Servizi**, quindi selezionare **domini personali**.
+2. Selezionare **Servizi** e quindi **Selezionare I miei domini.**
     
     ![Freenom select Services and My Domains](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
-3. Per il dominio che si desidera modificare, selezionare **Gestisci dominio**.
+3. Per il dominio che si desidera modificare, selezionare **Gestisci dominio.**
     
     ![Freenom select Manage Domain](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
-4. Impostare il nome utilizzato per il dominio sui server dei nomi predefiniti di Freenom. Selezionare **strumenti di gestione** e quindi fare clic su **Server dei nomi**.
+4. Impostare il nome utilizzato per il dominio sui server dei nomi Freenom predefiniti. Selezionare **Strumenti di gestione** e quindi Server dei **nomi.**
     
     ![Freenom Nameservers setting](../../media/a6ae877a-c248-42b9-bae9-210a80cd01e7.png)
   
-5. Verificare che sia selezionata l'opzione **Usa server dei nomi predefiniti** , quindi selezionare **Cambia server dei nomi**.
+5. Verificare che **sia selezionata l'opzione Usa server** dei nomi predefiniti e quindi selezionare Cambia server dei **nomi.**
     
     ![Freenom Change Nameservers](../../media/0ef90d84-c0a0-4ef9-9e4c-43ef0aac3a2e.png)
   
-6. Selezionare **Gestisci FREENOM DNS**.
+6. Selezionare **Manage Freenom DNS**.
     
-    ![Freenom selezionare Gestisci DNS Freenom](../../media/f55a8053-2411-45da-a357-776c6699f721.png)
+    ![Freenom select Manage Freenom DNS](../../media/f55a8053-2411-45da-a357-776c6699f721.png)
   
 7. In **Add Record** scegliere **MX** dal menu nella colonna **Type**. 
     
@@ -140,34 +140,34 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Nome**|**Type**|**TTL**|**Destinazione**|**Priorità**|
     |:-----|:-----|:-----|:-----|:-----|
-    |(lasciare vuoto)  <br/> |MX (Mail Exchanger)  <br/> |3600 (secondi)  <br/> |\<domain-key\>. mail.protection.outlook.com  <br/> **Nota:** Ottenere il vostro  *\<domain-key\>*  dal vostro account Microsoft.   [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Per altre informazioni sulla priorità, vedere [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |
+    |(lasciare vuoto)  <br/> |MX (Mail Exchanger)  <br/> |3600 (secondi)  <br/> |\<domain-key\>.mail.protection.outlook.com  <br/> **Nota:** Ottenere il  *\<domain-key\>*  proprio account Microsoft.   [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> Per altre informazioni sulla priorità, vedere [What is MX priority?](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |
    
    ![Freenom MX record](../../media/8896c4a9-b3dd-45ed-9916-f7da2715ba8c.png)
   
-9. Selezionare **Salva modifiche**.
+9. Selezionare **Salva modifiche.**
     
     ![Freenom MX record Save Changes](../../media/7aa0a464-d136-417f-be40-48d3f728eeb7.png)
   
-10. Se ci sono altri record MX, eliminarli. Per ogni record, selezionare **Elimina**. Quando **si vuole davvero rimuovere questa voce?** viene visualizzata, selezionare **OK**.
+10. Se ci sono altri record MX, eliminarli. Per ogni record, selezionare **Elimina.** When the message **Do you really want to remove this entry?** appears, select **OK**.
     
 ## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>Aggiungere i record CNAME necessari per Microsoft
 <a name="bkmk_cname"> </a>
 
-1. Per iniziare, passare alla propria pagina dei domini in Freenom usando [questo collegamento](https://my.freenom.com/). Verrà chiesto di accedere.
+1. To get started, go to your domains page in Freenom by using [this link.](https://my.freenom.com/) Verrà chiesto di accedere.
     
     ![Freenom login](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
-2. Selezionare **Servizi**, quindi selezionare **domini personali**.
+2. Selezionare **Servizi** e quindi **Selezionare I miei domini.**
     
     ![Freenom select Services and My Domains](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
-3. Per il dominio che si desidera modificare, selezionare **Gestisci dominio**.
+3. Per il dominio che si desidera modificare, selezionare **Gestisci dominio.**
     
     ![Freenom select Manage Domain](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
-4. Selezionare **Gestisci FREENOM DNS**.
+4. Selezionare **Manage Freenom DNS**.
     
-    ![Freenom selezionare Gestisci DNS Freenom](../../media/5e7bc3a7-0d5e-431b-bb27-da3b0f316d01.png)
+    ![Freenom select Manage Freenom DNS](../../media/5e7bc3a7-0d5e-431b-bb27-da3b0f316d01.png)
   
 5. In **Add Record** scegliere **CNAME** dal menu nella colonna **Type**. 
     
@@ -185,7 +185,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
    
     ![Freenom CNAME values](../../media/752fc682-e3f2-4b9c-9253-bf1ba2d414e9.png)
   
-7. Selezionare **Salva modifiche**.
+7. Selezionare **Salva modifiche.**
     
     ![Freenom CNAME Save Changes](../../media/68103fd2-0f5f-4aac-a875-25157c6bbdd2.png)
   
@@ -197,23 +197,23 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 <a name="bkmk_spf"> </a>
 
 > [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un  *singolo*  record SPF che includa entrambi i set di valori. 
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un singolo record  *SPF*  che include entrambi i set di valori. 
 
-1. Per iniziare, passare alla propria pagina dei domini in Freenom usando [questo collegamento](https://my.freenom.com/). Verrà chiesto di accedere.
+1. To get started, go to your domains page in Freenom by using [this link.](https://my.freenom.com/) Verrà chiesto di accedere.
     
     ![Freenom login](../../media/90a32855-bfdd-4dfe-881c-b9a36b2f0582.png)
   
-2. Selezionare **Servizi**, quindi selezionare **domini personali**.
+2. Selezionare **Servizi** e quindi **Selezionare I miei domini.**
     
     ![Freenom select Services and My Domains](../../media/1917ced2-e254-4aec-9096-46d339b84d9a.png)
   
-3. Per il dominio che si desidera modificare, selezionare **Gestisci dominio**.
+3. Per il dominio che si desidera modificare, selezionare **Gestisci dominio.**
     
     ![Freenom select Manage Domain](../../media/67737b71-8b1b-42a6-abaf-62d776d3eb87.png)
   
-4. Selezionare **Gestisci FREENOM DNS**.
+4. Selezionare **Manage Freenom DNS**.
     
-    ![Freenom selezionare Gestisci DNS Freenom](../../media/94809955-0315-409c-a15d-703a2fe4c4ed.png)
+    ![Freenom select Manage Freenom DNS](../../media/94809955-0315-409c-a15d-703a2fe4c4ed.png)
   
 5. In **Add Record** scegliere **TXT** dal menu nella colonna **Type**. 
     
@@ -227,7 +227,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
    
     ![Freenom TXT values for SPF](../../media/1b3b1199-9104-4ca1-acdb-786d139c21ac.png)
   
-7. Selezionare **Salva modifiche**.
+7. Selezionare **Salva modifiche.**
     
     ![Freenom TXT record for SPF Save Changes](../../media/e2fc52b1-0dcb-4595-9a4c-fca5e2ef9f97.png)
   

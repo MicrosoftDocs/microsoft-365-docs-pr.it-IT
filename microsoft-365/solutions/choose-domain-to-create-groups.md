@@ -1,5 +1,5 @@
 ---
-title: Scegliere il dominio da utilizzare per la creazione dei gruppi di Microsoft 365
+title: Scegliere il dominio da usare per la creazione di gruppi di Microsoft 365
 ms.reviewer: arvaradh
 f1.keywords: NOCSH
 ms.author: mikeplum
@@ -16,7 +16,7 @@ ms.collection:
 search.appverid:
 - MET150
 ms.assetid: 7cf5655d-e523-4bc3-a93b-3ccebf44a01a
-description: Informazioni su come scegliere il dominio da utilizzare per la creazione di gruppi di Microsoft 365 configurando i criteri degli indirizzi di posta elettronica tramite PowerShell.
+description: Informazioni su come scegliere il dominio da usare per la creazione di gruppi di Microsoft 365 configurando i criteri degli indirizzi di posta elettronica tramite PowerShell.
 ms.openlocfilehash: 1e56268c3994b1ac822869d154be826326039bfc
 ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
@@ -24,32 +24,32 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 12/09/2020
 ms.locfileid: "49612941"
 ---
-# <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Scegliere il dominio da utilizzare per la creazione dei gruppi di Microsoft 365
+# <a name="choose-the-domain-to-use-when-creating-microsoft-365-groups"></a>Scegliere il dominio da usare per la creazione di gruppi di Microsoft 365
 
 Alcune organizzazioni usano domini di posta elettronica separati per segmentare le diverse parti dell'azienda. È possibile specificare il dominio da usare quando gli utenti creano gruppi di Microsoft 365.
   
-Se l'organizzazione richiede agli utenti di creare i propri gruppi in domini diversi dal dominio accettato predefinito per la propria azienda, è possibile configurarli tramite la configurazione dei criteri degli indirizzi di posta elettronica (criteri EAP) tramite PowerShell.
+Se l'organizzazione necessita che gli utenti creino i propri gruppi in domini diversi dal dominio accettato predefinito dell'azienda, è possibile consentire questa operazione configurando i criteri degli indirizzi di posta elettronica tramite PowerShell.
 
-Prima di poter eseguire i cmdlet di PowerShell, scaricare e installare un modulo che consentirà di parlare con l'organizzazione. Vedere [Connettersi a Exchange Online usando una sessione remota di PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=785881).
+Prima di poter eseguire i cmdlet di PowerShell, scaricare e installare un modulo che consente di parlare con l'organizzazione. Vedere [Connettersi a Exchange Online usando una sessione remota di PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=785881).
 
 ## <a name="example-scenarios"></a>Scenari di esempio
 
-Si supponga che il dominio principale dell'azienda sia Contoso.com. Tuttavia, il dominio accettato predefinito dell'organizzazione è service.contoso.com. Questo significa che i gruppi verranno creati in service.contoso.com (ad esempio, jimsteam@service.contoso.com).
+Supponiamo che il dominio principale dell'azienda sia Contoso.com. Tuttavia, il dominio accettato predefinito dell'organizzazione è service.contoso.com. Ciò significa che i gruppi verranno creati in service.contoso.com (ad esempio, jimsteam@service.contoso.com).
   
-Si supponga di disporre anche di sottodomini configurati nell'organizzazione. Si desidera che i gruppi vengano creati anche in questi domini:
+Supponiamo che nell'organizzazione siano configurati anche sottodomini. Si desidera che i gruppi siano creati anche in questi domini:
   
 - students.contoso.com per gli studenti
     
 - faculty.contoso.com per membri dell'istituto di istruzione
     
-I due scenari seguenti illustrano come eseguire questa operazione.
+Nei due scenari seguenti viene illustrato come eseguire questa operazione.
 
 > [!NOTE]
-> Quando si dispone di più criteri EAP, vengono valutati in base all'ordine di priorità. Un valore pari a 1 indica la massima priorità. Una volta che un EAP corrisponde, non viene valutato un ulteriore EAP e gli indirizzi che vengono timbrati sul gruppo sono secondo il protocollo EAP corrispondente. > se non criteri EAP soddisfano i criteri specificati, il gruppo viene sottoposto a provisioning nel dominio accettato predefinito dell'organizzazione. Per informazioni dettagliate su come aggiungere un dominio accettato, vedere [Gestire i domini accettati in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=785428).
+> Quando si dispone di EAP mulitple, questi vengono valutati nell'ordine di priorità. Un valore pari a 1 indica la massima priorità. Una volta che un EAP corrisponde, non vengono valutati altri EAP e gli indirizzi che vengono contrassegnati nel gruppo sono in base all'EAP corrispondente. > se nessun EAP corrisponde ai criteri specificati, il provisioning del gruppo viene eseguito nel dominio accettato predefinito dell'organizzazione. Per informazioni dettagliate su come aggiungere un dominio accettato, vedere [Gestire i domini accettati in Exchange Online](https://go.microsoft.com/fwlink/p/?LinkId=785428).
   
 ### <a name="scenario-1"></a>Scenario 1
 
-Nell'esempio seguente viene illustrato come eseguire il provisioning di tutti i gruppi di Microsoft 365 nell'organizzazione nel dominio groups.contoso.com.
+L'esempio seguente mostra come eseguire il provisioning di tutti i gruppi di Microsoft 365 nell'organizzazione nel groups.contoso.com dominio.
   
 ```
 New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@groups.contoso.com" -Priority 1
@@ -57,21 +57,21 @@ New-EmailAddressPolicy -Name Groups -IncludeUnifiedGroupRecipients -EnabledEmail
 
 ### <a name="scenario-2"></a>Scenario 2
 
-Si supponga di voler controllare quali gruppi di sottodomini vengono creati in Microsoft 365. Si vuole che:
+Supponiamo che tu voglia controllare in quali sottodomini vengono creati i gruppi di Microsoft 365. Si vuole che:
   
-- Gruppi creati dagli studenti (gli utenti che hanno un **reparto** impostato su **studenti**) nel dominio students.groups.contoso.com. Utilizzare questo comando:
+- Gruppi creati dagli studenti (utenti il cui **reparto è** impostato su **Studenti)** nel students.groups.contoso.com dominio. Utilizzare questo comando:
     
   ```
   New-EmailAddressPolicy -Name StudentsGroups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@students.groups.contoso.com","smtp:@groups.contoso.com" -ManagedByFilter {Department -eq 'Students'} -Priority 1
   ```
 
-- I gruppi creati dai membri della facoltà (gli utenti che hanno un **reparto** impostato su **docenti o indirizzo di posta elettronica contiene Faculty.contoso.com)**) nel dominio Faculty.groups.contoso.com. Utilizzare questo comando:
+- I gruppi creati dai membri  dell'istituto di faculty.groups.contoso.com (gli utenti il cui reparto è impostato su Faculty o l'indirizzo di posta elettronica contiene **faculty.contoso.com)**) nel dominio faculty.groups.contoso.com. Utilizzare questo comando:
     
   ```
   New-EmailAddressPolicy -Name FacultyGroups -IncludeUnifiedGroupRecipients -EnabledEmailAddressTemplates "SMTP:@faculty.groups.contoso.com","smtp:@groups.contoso.com" -ManagedByFilter {Department -eq 'Faculty' -or EmailAddresses -like "*faculty.contoso.com*"} -Priority 2
   ```
 
-- I gruppi creati da chiunque altro vengono creati nel dominio groups.contoso.com. Utilizzare questo comando:
+- I gruppi creati da chiunque altro vengono creati nel groups.contoso.com dominio. Utilizzare questo comando:
     
   ```
   New-EmailAddressPolicy -Name OtherGroups -IncludeUnifiedGroupRecipients -EnabledPrimarySMTPAddressTemplate "SMTP:@groups.contoso.com" -Priority 3
@@ -100,15 +100,15 @@ La modifica di un criterio EAP non influisce sui gruppi di cui è già stato ese
   
 ## <a name="hybrid-requirements"></a>Requisiti ibridi
 
-Se l'organizzazione è configurata in uno scenario ibrido, vedere [Configure microsoft 365 groups with on-premises Exchange Hybrid](https://docs.microsoft.com/exchange/hybrid-deployment/set-up-microsoft-365-groups) per assicurarsi che l'organizzazione soddisfi i requisiti per la creazione di gruppi di Microsoft 365. 
+Se l'organizzazione è configurata in uno scenario ibrido, vedere Configurare i gruppi di [Microsoft 365](https://docs.microsoft.com/exchange/hybrid-deployment/set-up-microsoft-365-groups) con exchange ibrido locale per assicurarsi che l'organizzazione soddisfi i requisiti per la creazione di gruppi di Microsoft 365. 
   
-## <a name="additional-info-about-using-email-address-policies-groups"></a>Ulteriori informazioni sull'utilizzo dei gruppi di criteri degli indirizzi di posta elettronica:
+## <a name="additional-info-about-using-email-address-policies-groups"></a>Altre informazioni sull'uso dei gruppi di criteri degli indirizzi di posta elettronica:
 
-Sono disponibili alcune altre informazioni:
+Esistono altre cose da sapere:
   
-- La velocità con cui vengono creati i gruppi dipendono dal numero di criteri EAP configurati nell'organizzazione.
+- La velocità di creazione dei gruppi dipende dal numero di EAP configurati nell'organizzazione.
     
-- Gli amministratori e gli utenti possono modificare i domini anche quando creano gruppi.
+- Gli amministratori e gli utenti possono anche modificare i domini quando creano gruppi.
     
 - Il gruppo di utenti viene determinato usando le query standard (proprietà utente) già disponibili. Per informazioni sulle proprietà filtrabili supportate, vedere [Proprietà filtrabili per il parametro - RecipientFilter](https://docs.microsoft.com/powershell/exchange/recipientfilter-properties). 
     
@@ -120,8 +120,8 @@ Sono disponibili alcune altre informazioni:
     
 ## <a name="related-articles"></a>Articoli correlati
 
-[Pianificazione della governance della collaborazione](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Procedura dettagliata per la pianificazione della governance della collaborazione](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
-[Creare il piano di governance di collaborazione](collaboration-governance-first.md)
+[Creare il piano di governance della collaborazione](collaboration-governance-first.md)
 
 [Creare un gruppo di Microsoft 365 nell'interfaccia di amministrazione](https://docs.microsoft.com/microsoft-365/admin/create-groups/create-groups)

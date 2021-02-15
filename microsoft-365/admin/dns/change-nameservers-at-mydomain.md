@@ -1,5 +1,5 @@
 ---
-title: Modificare i server dei nomi per configurare Microsoft con il dominio
+title: Modificare i server dei nomi per configurare Microsoft con MyDomain
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c5f6140a-4a12-401b-9bbd-7dfb0d6b0ba3
-description: Informazioni su come è possibile configurare Microsoft per gestire i record DNS del dominio personalizzato in dominio.
+description: Informazioni su come configurare Microsoft per gestire i record DNS del dominio personalizzato in MyDomain.
 ms.openlocfilehash: fbfa3c495f54a9890be6d9c9e31a7878b21f12fe
 ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
@@ -28,11 +28,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 12/11/2020
 ms.locfileid: "49658417"
 ---
-# <a name="change-nameservers-to-set-up-microsoft-with-mydomain"></a>Modificare i server dei nomi per configurare Microsoft con il dominio
+# <a name="change-nameservers-to-set-up-microsoft-with-mydomain"></a>Modificare i server dei nomi per configurare Microsoft con MyDomain
 
  Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.yml)**.
   
-Se si desidera gestire i record DNS per l'utente, seguire le istruzioni riportate di seguito. Se si preferisce, è possibile [gestire tutti i record Microsoft DNS nel dominio](create-dns-records-at-mydomain.md).
+Seguire queste istruzioni se si desidera che Microsoft gestirà i record DNS. Se si preferisce, è possibile [gestire tutti i record DNS Microsoft su MyDomain.](create-dns-records-at-mydomain.md)
   
 ## <a name="add-a-txt-record-for-verification"></a>Aggiungere un record TXT a scopo di verifica
 
@@ -56,7 +56,7 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
 ||
 |:-----|
 |**Contenuto** <br/> |
-|MS=ms *XXXXXXXX*  <br/> **Nota**: questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
+|MS=ms *XXXXXXXX*  <br/> **Nota:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
    
 7. Selezionare **Aggiungi**.
     
@@ -80,10 +80,10 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>Modificare i record del server dei nomi del dominio
 
-Per completare la configurazione del dominio con Microsoft, è necessario modificare i record NS del dominio presso il registrar in modo che puntino ai server dei nomi primari e secondari Microsoft. Questo configura Microsoft per aggiornare i record DNS del dominio per l'utente. Verranno aggiunti tutti i record necessari per il funzionamento della posta elettronica, di Skype for Business online e del sito Web pubblico con il dominio.
+Per completare la configurazione del dominio con Microsoft, è necessario modificare i record NS del dominio presso il registrar in modo che puntino ai server dei nomi primario e secondario Microsoft. Questo consente a Microsoft di aggiornare automaticamente i record DNS del dominio. Verranno aggiunti tutti i record necessari per il funzionamento della posta elettronica, di Skype for Business online e del sito Web pubblico con il dominio.
   
 > [!CAUTION]
-> Quando si modificano i record NS del dominio in modo che puntino ai server dei nomi Microsoft, sono coinvolti tutti i servizi attualmente associati al dominio. Ad esempio, tutti i messaggi di posta elettronica inviati al dominio (come rob@ *your_domain.* com) inizierà a essere Microsoft dopo aver apportato questa modifica. 
+> Quando si modificano i record NS del dominio in modo che puntino ai server dei nomi Microsoft, vengono interessati tutti i servizi attualmente associati al dominio. Ad esempio, tutti i messaggi di posta elettronica inviati al dominio ,ad esempio rob@ *your_domain.* com) inizierà a essere visualizzato da Microsoft dopo aver apportato questa modifica. 
   
 > [!IMPORTANT]
 > The following procedure will show you how to delete any other, unwanted nameservers from the list, and also how to add the correct nameservers if they are not already in the list. <br/> When you have completed the steps in this section, the only nameservers that should be listed are these four:
@@ -94,34 +94,34 @@ Per completare la configurazione del dominio con Microsoft, è necessario modifi
     
 3. In **Dominio** selezionare il nome del dominio da modificare.
     
-4. Nella riga **Panoramica** selezionare Server dei **nomi**.
+4. Nella riga **Overview** selezionare **Nameservers.**
     
-    ![Dominio-BP-redelegate-1-1](../../media/49e91235-44b5-46d6-a82e-8f11329db3d6.png)
+    ![MyDomain-BP-Redelegate-1-1](../../media/49e91235-44b5-46d6-a82e-8f11329db3d6.png)
   
 5. Nella sezione **Update Name Servers** selezionare **Use different name servers**.
     
-    ![Dominio-BP-redelegate-1-2-1](../../media/f869fb26-54dc-4b66-8378-a78a79b582bd.png)
+    ![MyDomain-BP-Redelegate-1-2-1](../../media/f869fb26-54dc-4b66-8378-a78a79b582bd.png)
   
-6. A seconda del fatto che siano già presenti o meno i server dei nomi elencati nella pagina visualizzata, continuare con una delle due procedure seguenti.
+6. A seconda che nella pagina visualizzata siano già elencati o meno server dei nomi, continuare con una delle due procedure seguenti.
     
 ### <a name="if-the-correct-nameservers-are-already-listed"></a>Se i server dei nomi corretti SONO già elencati
 
 - Se i server dei nomi corretti sono già elencati, è possibile ignorare questo passaggio.
     
-    ![Dominio-BP-redelegate-1-2-2](../../media/601f6a46-15bd-4a92-b792-ac628ff86628.png)
+    ![MyDomain-BP-Redelegate-1-2-2](../../media/601f6a46-15bd-4a92-b792-ac628ff86628.png)
   
 ### <a name="if-the-correct-nameservers-are-not-already-listed"></a>Se i server dei nomi corretti NON sono ancora elencati
 
 > [!CAUTION]
-> Follow these steps only if you have existing nameservers other than the four correct nameservers. (Ovvero, eliminare solo eventuali server dei nomi correnti che  *non*  sono denominati **NS1.BDM.microsoftonline.com**, **NS2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com** o **NS4.BDM.microsoftonline.com**). 
+> Follow these steps only if you have existing nameservers other than the four correct nameservers. In altre informazioni, eliminare solo i  server dei nomi correnti non denominati **ns1.bdm.microsoftonline.com,** **ns2.bdm.microsoftonline.com,** **ns3.bdm.microsoftonline.com** o **ns4.bdm.microsoftonline.com**. 
   
 1. Eliminare i server dei nomi esistenti selezionando le singole voci nel campo **Nameserver**, quindi premendo **CANC**. 
     
-    ![Dominio-BP-redelegate-1-3-1](../../media/5024cd27-a2b1-42a2-99e4-5ceb5e6eddb9.png)
+    ![MyDomain-BP-Redelegate-1-3-1](../../media/5024cd27-a2b1-42a2-99e4-5ceb5e6eddb9.png)
   
-2. Per aggiungere due nuove righe dei server dei nomi, fare clic su **Aggiungi** due volte. 
+2. Selezionare **Add More** due volte per aggiungere due nuove righe Nameserver. 
     
-    ![Dominio-BP-redelegate-1-3-2](../../media/19307893-2f73-4e4d-9221-a5870e09ab48.png)
+    ![MyDomain-BP-Redelegate-1-3-2](../../media/19307893-2f73-4e4d-9221-a5870e09ab48.png)
   
 3. Nelle caselle dei record digitare oppure copiare e incollare i valori del server dei nomi dalla tabella seguente.
     
@@ -132,11 +132,11 @@ Per completare la configurazione del dominio con Microsoft, è necessario modifi
 |**Nameserver 3** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Nameserver 4** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![Dominio-BP-redelegate-1-4](../../media/7427e99c-49c7-4a2e-a5bf-66fc46900cd1.png)
+   ![MyDomain-BP-Redelegate-1-4](../../media/7427e99c-49c7-4a2e-a5bf-66fc46900cd1.png)
   
 4. Selezionare **Salva**.
     
-    ![Dominio-BP-redelegate-1-5](../../media/48473816-b881-47f0-9344-74622efa3bf8.png)
+    ![MyDomain-BP-Redelegate-1-5](../../media/48473816-b881-47f0-9344-74622efa3bf8.png)
   
 > [!NOTE]
-> L'aggiornamento dei record dei server dei nomi nel sistema DNS di Internet può richiedere fino a diverse ore. L'indirizzo di posta elettronica e gli altri servizi di Microsoft saranno tutti impostati per l'utilizzo con il dominio. 
+> L'aggiornamento dei record dei server dei nomi nel sistema DNS di Internet può richiedere fino a diverse ore. Quindi la posta elettronica Microsoft e altri servizi saranno tutti impostati per l'utilizzo con il dominio. 

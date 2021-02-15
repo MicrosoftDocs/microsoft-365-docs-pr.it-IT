@@ -1,5 +1,5 @@
 ---
-title: Opzioni di conformità per i gruppi di Microsoft 365, i team e la collaborazione di SharePoint
+title: Opzioni di conformità per i gruppi di Microsoft 365, Teams e la collaborazione di SharePoint
 ms.reviewer: ''
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,7 +14,7 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: Informazioni sulle opzioni di conformità per i gruppi di Microsoft 365, i team e la collaborazione di SharePoint.
+description: Informazioni sulle opzioni di conformità per i gruppi di Microsoft 365, Teams e la collaborazione di SharePoint.
 ms.openlocfilehash: e1ca6e638b2d44ae3b04e2a0f13222424e89714d
 ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
@@ -22,43 +22,43 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 12/09/2020
 ms.locfileid: "49613631"
 ---
-# <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Opzioni di conformità per i gruppi di Microsoft 365, i team e la collaborazione di SharePoint
+# <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Opzioni di conformità per i gruppi di Microsoft 365, Teams e la collaborazione di SharePoint
 
-Microsoft 365 offre una serie completa di strumenti per mantenere la conformità durante la collaborazione tra gli utenti. Esaminare queste opzioni e valutare il modo in cui vengono mappate alle esigenze aziendali, la sensibilità dei dati e l'ambito delle persone con cui gli utenti devono collaborare.
+Microsoft 365 offre una famiglia completa di strumenti per mantenere la conformità mentre gli utenti collaborano. Esamina queste opzioni e valuta il modo in cui si associano alle esigenze aziendali, la riservatezza dei dati e l'ambito delle persone con cui gli utenti devono collaborare.
 
-Nella tabella seguente viene fornita una guida di riferimento rapida per i controlli di conformità disponibili in Microsoft 365. Ulteriori informazioni sono disponibili nelle sezioni seguenti.
+La tabella seguente fornisce un riferimento rapido per i controlli di conformità disponibili in Microsoft 365. Ulteriori informazioni sono disponibili nelle sezioni seguenti.
 
 |Categoria|Descrizione|Riferimenti|
 |:-------|:----------|:--------|
 |Conservazione delle informazioni|||
-||Mantenere i gruppi di posta e contenuto di SharePoint|[Informazioni sui criteri di conservazione per SharePoint e OneDrive](https://docs.microsoft.com/microsoft-365/compliance/retention-policies-sharepoint)|
-||Mantieni chat e messaggi|[Informazioni sui criteri di conservazione per Microsoft Teams](https://docs.microsoft.com/microsoft-365/compliance/retention-policies-teams)|
+||Conservare la posta elettronica dei gruppi e il contenuto di SharePoint|[Informazioni sui criteri di conservazione per SharePoint e OneDrive](https://docs.microsoft.com/microsoft-365/compliance/retention-policies-sharepoint)|
+||Conservare chat e messaggi|[Informazioni sui criteri di conservazione per Microsoft Teams](https://docs.microsoft.com/microsoft-365/compliance/retention-policies-teams)|
 |Classificazione delle informazioni|||
 ||Classificare gruppi e team|[Usare le etichette di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)|
-||Classificazione automatica del contenuto riservato|[Applicare automaticamente un'etichetta di riservatezza al contenuto](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)|
-||Crittografare il contenuto riservato|[Limitare l'accesso al contenuto utilizzando le etichette di riservatezza per applicare la crittografia](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)|
+||Classificare automaticamente i contenuti sensibili|[Applicare automaticamente un'etichetta di riservatezza al contenuto](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)|
+||Crittografare i contenuti sensibili|[Limitare l'accesso al contenuto utilizzando le etichette di riservatezza per applicare la crittografia](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)|
 |Protezione delle informazioni|||
-||Impedire la perdita di informazioni riservate|[Panoramica sulla prevenzione della perdita dei dati](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)|
-||Proteggere le informazioni riservate in chat.|[Prevenzione della perdita di dati e Microsoft Teams](https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams)|
+||Evitare la perdita di informazioni riservate|[Panoramica sulla prevenzione della perdita dei dati](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)|
+||Proteggere le informazioni riservate in chat.|[Prevenzione della perdita dei dati e Microsoft Teams](https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams)|
 ||Definire le informazioni riservate dell'organizzazione|[Tipi di informazioni sensibili personalizzati](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types)|
 |Segmentazione utente|||
 ||Limitare la comunicazione tra segmenti di utenti|[Barriere informative](https://docs.microsoft.com/microsoft-365/compliance/information-barriers)|
 
 ## <a name="information-retention"></a>Conservazione delle informazioni
 
-I criteri di conservazione sono disponibili per conservare o eliminare gli elementi utilizzati per la collaborazione in gruppi e team, inclusi i file, i messaggi e la posta elettronica. I criteri possono essere impostati in modo da conservare ed eliminare, conservare solo o eliminare solo. Le informazioni coperte da un criterio di conservazione sono protette nel caso in cui il gruppo o il team SCADA o venga eliminato in altro modo.
+I criteri di conservazione sono disponibili per conservare o eliminare gli elementi usati per la collaborazione in gruppi e team, inclusi file, messaggi e posta. I criteri possono essere impostati per conservare ed eliminare, solo per conservare o eliminare solo. Le informazioni coperte da un criterio di conservazione sono protette nel caso in cui il gruppo o il team scada o viene eliminato in altro modo.
 
-La configurazione di un criterio di conservazione per i gruppi di Microsoft 365 copre la cassetta postale del gruppo e i file e il sito di SharePoint associati.
+La configurazione di un criterio di conservazione per i gruppi di Microsoft 365 riguarda la cassetta postale del gruppo e il sito e i file di SharePoint associati.
 
 - [Informazioni sui criteri di conservazione per SharePoint e OneDrive](https://docs.microsoft.com/microsoft-365/compliance/retention-policies-sharepoint)
 
-I criteri di conservazione per i team mantengono i messaggi chat e Channel. Anche se i messaggi chat e Channel sono archiviati in cassette postali di Exchange, non sono intaccati dai criteri di conservazione di Exchange. È necessario impostare i criteri di conservazione da applicare alle chat dei team e ai messaggi del canale team:
+I criteri di conservazione per Teams mantengono i messaggi di chat e canali. Mentre i messaggi di chat e canali vengono archiviati nelle cassette postali di Exchange, non sono interessati dai criteri di conservazione di Exchange. È necessario impostare i criteri di conservazione da applicare alle chat di Teams e ai messaggi del canale di Teams:
 
 - [Informazioni sui criteri di conservazione per Microsoft Teams](https://docs.microsoft.com/microsoft-365/compliance/retention-policies-teams)
 
 - [Criteri di conservazione in Microsoft Teams](https://docs.microsoft.com/microsoftteams/retention-policies)
 
-È possibile impostare un singolo criterio di conservazione per applicarlo ai messaggi dei gruppi di Microsoft 365, chat team e teams. 
+È possibile impostare un singolo criterio di conservazione da applicare ai messaggi di gruppi, chat di Teams e canali di Microsoft 365. 
 
 Risorse aggiuntive:
 
@@ -68,15 +68,15 @@ Risorse aggiuntive:
 
 ## <a name="information-classification"></a>Classificazione delle informazioni
 
-È possibile utilizzare le etichette di riservatezza per gestire l'accesso guest, la privacy del gruppo e del team e l'accesso da dispositivi non gestiti per gruppi e team. Applicando l'etichetta, queste impostazioni vengono configurate automaticamente come specificato dalle impostazioni dell'etichetta.
+È possibile usare le etichette di riservatezza per gestire l'accesso guest, la privacy di gruppi e team e l'accesso da parte di dispositivi non gestiti per gruppi e team. Applicando l'etichetta, queste impostazioni vengono configurate automaticamente come specificato dalle impostazioni dell'etichetta.
 
 - [Usare le etichette di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)
 
-È possibile configurare Microsoft 365 per applicare automaticamente le etichette di riservatezza ai file e ai messaggi di posta elettronica in base ai criteri specificati, tra cui il rilevamento di tipi di informazioni riservate o la corrispondenza dei modelli con i classificatori addestrabili.
+È possibile configurare Microsoft 365 per l'applicazione automatica di etichette di riservatezza a file e messaggi di posta elettronica in base ai criteri specificati, incluso il rilevamento dei tipi di informazioni riservate o dei criteri corrispondenti ai classificatori che possono essere addestrati.
 
 - [Applicare automaticamente un'etichetta di riservatezza al contenuto](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)
 
-È possibile utilizzare le etichette di riservatezza per crittografare i file, consentendo solo coloro che dispongono delle autorizzazioni per decrittografarli e leggerli.
+Puoi usare le etichette di riservatezza per crittografare i file, consentendo solo a quelli con autorizzazioni di decrittografarli e leggerli.
 
 - [Limitare l'accesso al contenuto utilizzando le etichette di riservatezza per applicare la crittografia](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels)
 
@@ -89,33 +89,33 @@ Risorse aggiuntive:
 
 ## <a name="information-protection"></a>Protezione delle informazioni
 
-I criteri DLP possono impedire la condivisione accidentale di informazioni riservate in SharePoint, Exchange e teams. È possibile creare criteri che specifichino le azioni da eseguire, ad esempio il blocco dell'accesso, in base a un set di regole.
+I criteri DLP possono impedire la condivisione accidentale di informazioni riservate in SharePoint, Exchange e Teams. È possibile creare criteri che specificano le azioni da eseguire ,ad esempio il blocco dell'accesso, in base a un set di regole.
 
 - [Panoramica sulla prevenzione della perdita dei dati](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies)
 
-DLP in teams è in grado di proteggere le informazioni riservate in teams chat and Channel messages eliminando i messaggi che contengono informazioni riservate.
+Dlp in Teams consente di proteggere le informazioni riservate nei messaggi di chat e canali di Teams eliminando i messaggi che contengono informazioni riservate.
 
-- [Prevenzione della perdita di dati e Microsoft Teams](https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams)
+- [Prevenzione della perdita dei dati e Microsoft Teams](https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams)
 
-Se si dispone di informazioni riservate specifiche per l'organizzazione, ad esempio i nomi di codice del progetto, è possibile creare tipi di informazioni riservate personalizzati e applicarli ai criteri DLP per proteggere il contenuto in gruppi, team e SharePoint.
+Se si dispone di informazioni riservate univoche per l'organizzazione, ad esempio i nomi dei codici di progetto, è possibile creare tipi di informazioni riservate personalizzati e applicarli ai criteri DLP per proteggere il contenuto in gruppi, team e SharePoint.
 
 - [Tipi di informazioni sensibili personalizzati](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types)
 
 ## <a name="user-segmentation"></a>Segmentazione utente
 
-Con barriere informative, è possibile suddividere i dati e gli utenti per limitare la comunicazione indesiderata e la collaborazione tra i gruppi ed evitare conflitti di interesse nell'organizzazione. Barriere informative consente di creare criteri che consentano o impediscano la collaborazione, la chat, la chiamata o la riunione degli inviti tra gruppi di persone nell'organizzazione.
+Con le barriere in fatto di informazioni, è possibile segmentare i dati e gli utenti per limitare le comunicazioni e la collaborazione indesiderate tra i gruppi ed evitare conflitti di interesse nell'organizzazione. Le barriere di informazioni consentono di creare criteri per consentire o impedire la collaborazione su file, la chat, le chiamate o gli inviti alle riunioni tra gruppi di persone nell'organizzazione.
 
 - [Barriere informative](https://docs.microsoft.com/microsoft-365/compliance/information-barriers)
 
-- [Barriere informative in Microsoft Teams](https://docs.microsoft.com/microsoftteams/information-barriers-in-teams)
+- [Barriere di informazioni in Microsoft Teams](https://docs.microsoft.com/microsoftteams/information-barriers-in-teams)
 
-- [Utilizzo di barriere informative con SharePoint](https://docs.microsoft.com/sharepoint/information-barriers)
+- [Usare le barriere di informazioni con SharePoint](https://docs.microsoft.com/sharepoint/information-barriers)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Pianificazione della governance della collaborazione](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Procedura dettagliata per la pianificazione della governance della collaborazione](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
-[Creare il piano di governance di collaborazione](collaboration-governance-first.md)
+[Creare il piano di governance della collaborazione](collaboration-governance-first.md)
 
 [Sicurezza e conformità per Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/security-and-compliance)
 

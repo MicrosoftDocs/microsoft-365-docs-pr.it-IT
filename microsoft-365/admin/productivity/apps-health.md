@@ -1,5 +1,5 @@
 ---
-title: Microsoft Productivity Score-Microsoft 365 Apps Health
+title: Microsoft Productivity Score - Integrità delle app di Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -18,7 +18,7 @@ monikerRange: o365-worldwide
 search.appverid:
 - MET150
 - MOE150
-description: Informazioni dettagliate sul punteggio di produttività delle app di Microsoft 365 Apps Health-Technology.
+description: Dettagli sull'integrità di Microsoft 365 Apps - Punteggio produttività esperienze tecnologiche.
 ms.openlocfilehash: a84e919ce01775b8791ed7a1992464e4f52c7234
 ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
 ms.translationtype: MT
@@ -26,97 +26,97 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 12/03/2020
 ms.locfileid: "49562944"
 ---
-# <a name="microsoft-365-apps-health--technology-experiences"></a>Microsoft 365 Apps Health – esperienze tecnologiche
+# <a name="microsoft-365-apps-health--technology-experiences"></a>Integrità Microsoft 365 Apps: esperienze con la tecnologia
 
-Produttività Score fornisce informazioni dettagliate sul percorso di trasformazione digitale dell'organizzazione tramite l'utilizzo di Microsoft 365 e le esperienze tecnologiche che lo supportano. Il Punteggio dell'organizzazione riflette le misure relative a utenti e tecnologie e può essere paragonato ai benchmark di organizzazioni simili ai propri. La categoria Health Apps è parte integrante delle misurazioni che rientrano nelle esperienze tecnologiche. Per ulteriori informazioni, vedere la [Panoramica del Punteggio di produttività](productivity-score.md) e leggere l' [informativa sulla privacy di Microsoft](https://privacy.microsoft.com/privacystatement).
+Il punteggio di produttività fornisce informazioni dettagliate sul percorso di trasformazione digitale dell'organizzazione attraverso l'uso di Microsoft 365 e le esperienze tecnologiche che lo supportano. Il punteggio dell'organizzazione riflette le misurazioni delle persone e dell'esperienza tecnologica e può essere confrontato con benchmark di organizzazioni simili al tuo. La categoria di integrità delle app fa parte delle misurazioni che rientrano nelle esperienze tecnologiche. Per altre informazioni, consultare la panoramica [del punteggio di produttività](productivity-score.md) e leggere [l'Informativa sulla privacy di Microsoft.](https://privacy.microsoft.com/privacystatement)
 
-## <a name="why-your-organization39s-microsoft-365-apps-health-score-matters"></a>Perché l'organizzazione&#39;s Microsoft 365 Apps Health Score Matters
+## <a name="why-your-organization39s-microsoft-365-apps-health-score-matters"></a>Perché l'organizzazione&#39;punteggio di integrità delle app di Microsoft 365 è importante
 
-La produttività organizzativa dipende dall'ambiente di applicazione integro. I dispositivi che eseguono la maggior parte delle versioni correnti delle app Microsoft 365 sul canale consigliato sono più sicuri e aiutano gli utenti dell'organizzazione a ottenere il massimo dalle funzionalità di Microsoft 365.
+La produttività dell'organizzazione dipende dall'ambiente delle applicazioni integro. I dispositivi che eseguono la maggior parte delle versioni correnti delle app di Microsoft 365 nel canale consigliato sono più sicuri e consentono alle persone dell'organizzazione di ottenere il massimo delle funzionalità di Microsoft 365.
 
-## <a name="how-we-calculate-the-microsoft-365-apps-health-score"></a>Come si calcola il Punteggio di integrità di Microsoft 365 Apps
+## <a name="how-we-calculate-the-microsoft-365-apps-health-score"></a>Come viene calcolato il punteggio di integrità delle app di Microsoft 365
 
-Si calcola il Punteggio di integrità di Microsoft 365 Apps misurando il numero di dispositivi su ogni canale di aggiornamento. È inoltre possibile determinare se i dispositivi eseguono una versione supportata e la versione più recente di Microsoft 365 Apps.
+Il punteggio di integrità delle app di Microsoft 365 viene calcolato misurando il numero di dispositivi in ogni canale di aggiornamento. Viene inoltre determinato se i dispositivi eseguono una versione supportata e la versione più recente delle app di Microsoft 365.
 
-Viene fornito un Insight principale nell'esperienza che contiene le metriche principali per questa categoria. Successivamente, viene utilizzato un Framework per il punteggio, descritto nelle sezioni seguenti, per calcolare il punteggio.
+Forniamo una panoramica principale dell'esperienza che contiene le metriche chiave per questa categoria. Viene quindi usato un framework di punteggio, descritto in dettaglio nelle sezioni seguenti, per calcolare il punteggio.
 
-### <a name="primary-insight"></a>Insight principale
+### <a name="primary-insight"></a>Informazioni principali
 
-L'intuizione principale viene calcolata dai dispositivi che eseguono le app Microsoft 365 sul canale aggiornato consigliato.
+Le informazioni dettagliate principali vengono calcolate dai dispositivi che eseguono Microsoft 365 Apps nel canale aggiornato consigliato.
 
-:::image type="content" source="../../media/appshealth-primary.png" alt-text="Visualizzazione primaria in vista per le app di Microsoft 365.":::
+:::image type="content" source="../../media/appshealth-primary.png" alt-text="Visualizzazione della vista principale per le app di Microsoft 365.":::
 
-Le informazioni riportate in questa sezione includono il canale, la build e la versione di Microsoft 365 Apps in esecuzione nel dispositivo.
+Le informazioni considerate a questo scopo includono il canale delle app di Microsoft 365, la build e la versione in esecuzione nel dispositivo.
 
-1. **Intestazione:**  Visualizza la percentuale di dispositivi nel canale di aggiornamento consigliato
-1. **Corpo:**  Sono disponibili ulteriori informazioni su come l'esecuzione dei dispositivi nel canale di aggiornamento consigliato consentirà di ottenere l'aggiornamento più recente e l'esecuzione di versioni correnti sui dispositivi.
+1. **Intestazione:**  Mostra la percentuale di dispositivi nel canale di aggiornamento consigliato
+1. **Corpo:**  Fornisce altre informazioni su come l'esecuzione dei dispositivi nel canale di aggiornamento consigliato consente di ottenere l'aggiornamento più recente e di eseguire le versioni correnti nei dispositivi.
 1. **Visualizzazione (stato corrente):**
-    - Barre orizzontali in cui le porzioni di colore blu rappresentano la percentuale di dispositivi in cui è in esecuzione il canale aggiornato consigliato.
-    - Evidenziare il (numeratore/denominatore) della frazione utilizzata per calcolare la percentuale espressa in barre orizzontali.
-    - Il valore benchmark peer per i dispositivi in esecuzione nel canale aggiornato consigliato viene visualizzato anche come percentuale.
+    - Barre orizzontali in cui le parti di colore blu rappresentano la percentuale di dispositivi che eseguono il canale aggiornato consigliato.
+    - Evidenziare il numeratore/denominatore della frazione utilizzata per calcolare la percentuale espressa in barre orizzontali.
+    - Anche il valore peer benchmark per i dispositivi in esecuzione nel canale aggiornato consigliato viene visualizzato come percentuale.
 
-#### <a name="trend-visualization-of-the-primary-insight"></a>Visualizzazione della tendenza dell'intuizione principale
+#### <a name="trend-visualization-of-the-primary-insight"></a>Visualizzazione delle tendenze delle informazioni principali
 
-Nel grafico seguente viene mostrato il numero di dispositivi nel canale di aggiornamento consigliato negli ultimi 180 giorni. Il punto dati del grafico a linee è una aggregazione di attività negli ultimi 28 giorni.
+Il grafico seguente mostra il numero di dispositivi nel canale di aggiornamento consigliato negli ultimi 180 giorni. Il punto dati nel grafico a linee è un aggregato di attività degli ultimi 28 giorni.
 
-:::image type="content" source="../../media/appshealth-primarytrend.png" alt-text="Grafico in cui viene visualizzata la tendenza per i dispositivi che eseguono il canale di aggiornamento consigliato.":::
+:::image type="content" source="../../media/appshealth-primarytrend.png" alt-text="Grafico che mostra la tendenza per i dispositivi che eseguono il canale di aggiornamento consigliato.":::
 
-### <a name="scoring-framework"></a>Framework di Punteggio
+### <a name="scoring-framework"></a>Framework di punteggio
 
-Il Punteggio di integrità di Microsoft 365 Apps misura se i dispositivi eseguono Microsoft 365 Apps nel canale consigliato e nelle versioni più recenti.
+Il punteggio di integrità delle app di Microsoft 365 misura se i dispositivi eseguono le app di Microsoft 365 nel canale consigliato e nelle versioni più recenti.
 
-## <a name="explore-your-organization-microsoft-365-app-channels-and-versions"></a>Esplorare i canali e le versioni delle app di Microsoft 365 per l'organizzazione
+## <a name="explore-your-organization-microsoft-365-app-channels-and-versions"></a>Esplorare i canali e le versioni delle app di Microsoft 365 dell'organizzazione
 
-Sono inoltre disponibili informazioni di supporto che consentono di acquisire ulteriore visibilità in quali canali e versioni dei dispositivi dell'organizzazione sono attualmente in esecuzione. Queste metriche aggiuntive non contribuiscono al Punteggio di produttività, ma possono essere utili per creare un piano d'azione per aumentare il Punteggio di integrità di Microsoft 365 Apps assicurandosi che i dispositivi eseguano le app Microsoft 365 nei canali consigliati.
+Vengono inoltre fornite informazioni di supporto che consentono di ottenere maggiore visibilità sui canali e le versioni attualmente in esecuzione nell'organizzazione. Queste metriche aggiuntive non contribuiscono al punteggio di produttività, ma consentono di creare un piano d'azione per aumentare il punteggio di integrità delle app di Microsoft 365 assicurando che i dispositivi esercitino le app di Microsoft 365 nei canali consigliati.
 
-### <a name="devices-on-current-channel-and-running-supported-versions"></a>Dispositivi sul canale corrente e sull'esecuzione di versioni supportate
+### <a name="devices-on-current-channel-and-running-supported-versions"></a>Dispositivi nel canale corrente ed esecuzione delle versioni supportate
 
-:::image type="content" source="../../media/devices-current-suppported-channel.png" alt-text="Grafico che mostra il numero di dispositivi nel canale supportato corrente.":::
+:::image type="content" source="../../media/devices-current-suppported-channel.png" alt-text="Grafico del numero di dispositivi nel canale corrente supportato.":::
 
-1. **Intestazione:**  Evidenzia la percentuale di dispositivi nel canale corrente che eseguono le versioni supportate delle app Microsoft 365
-1. **Corpo:**  Vengono fornite informazioni sul valore dei dispositivi che eseguono le app Microsoft 365 nel canale consigliato.
-1. **Visualizzazione:**  La scomposizione nella visualizzazione rappresenta la misura in cui la percentuale di dispositivi nelle versioni più recenti e supportate di Microsoft 365 Apps su un canale diverso), come indicato di seguito:
-    - **Versioni supportate:** La barra blu rappresenta la percentuale di dispositivi in esecuzione su una versione supportata delle app Microsoft 365.
-    - **Versioni più recenti:** La barra di colore verde acqua rappresenta la percentuale di dispositivi nelle versioni più recenti.
-1. Per ulteriori **informazioni, vedere:**   Selezionare questo collegamento per visualizzare il contenuto della guida.
+1. **Intestazione:**  Evidenzia la percentuale di dispositivi nel Canale corrente che eseguono versioni supportate di Microsoft 365 Apps
+1. **Corpo:**  Fornisce informazioni sul valore dei dispositivi che eseguono le app di Microsoft 365 nel canale consigliato.
+1. **Visualizzazione:**  La suddivisione nella visualizzazione rappresenta la percentuale di dispositivi nelle versioni più recenti e supportate delle app di Microsoft 365 in diversi canali, come indicato di seguito:
+    - **Versioni supportate:** La barra blu rappresenta la percentuale di dispositivi in esecuzione nella versione supportata delle app di Microsoft 365.
+    - **Versioni più recenti:** La barra dei colori verde rappresenta la percentuale di dispositivi nelle versioni più recenti.
+1. **Altre informazioni:**   Selezionare questo collegamento per visualizzare il contenuto della Guida.
 
 ### <a name="devices-running-latest-and-supported-versions"></a>Dispositivi che eseguono versioni più recenti e supportate
 
-:::image type="content" source="../../media/device-supported-versions.png" alt-text="Grafico che mostra il numero di dispositivi che eseguono le versioni più recenti e supportate delle app.":::
+:::image type="content" source="../../media/device-supported-versions.png" alt-text="Grafico del numero di dispositivi che eseguono le versioni più recenti e supportate delle app.":::
 
-1. **Intestazione:**  Evidenzia la percentuale di dispositivi in cui vengono eseguite le versioni e i dispositivi supportati che eseguono le versioni più recenti.
-1. **Corpo:**  Vengono fornite informazioni sul valore che esegue i dispositivi nei canali consigliati e sulle versioni supportate/più recenti.
-1. **Visualizzazione:** La scomposizione nella visualizzazione deve rappresentare la misura in cui visualizzare il numero di dispositivi che eseguono le versioni supportate e le versioni più recenti delle app Microsoft 365:
-    - **Versioni supportate:** La parte blu della barra e la frazione (numeratore/denominatore) sulla barra rappresentano la percentuale di dispositivi in cui è in esecuzione la versione supportata delle app Microsoft 365.
-        - Numeratore: il numero di dispositivi nelle versioni supportate delle app Microsoft 365 negli ultimi 28 giorni
-        - Denominatore: il numero di dispositivi che utilizzano le app Microsoft 365 negli ultimi 28 giorni
-    - **Versioni più recenti:** La parte verde acqua della barra e la frazione (numeratore/denominatore) sulla barra rappresentano la percentuale di dispositivi che eseguono le versioni recenti delle app Microsoft 365.
-        - Numeratore: il numero di dispositivi presenti nelle versioni recenti delle app Microsoft 365 negli ultimi 28 giorni
-        - Denominatore: il numero di dispositivi che utilizzano le app Microsoft 365 negli ultimi 28 giorni
-1. Per ulteriori **informazioni, vedere:**   Selezionare questo collegamento per visualizzare il contenuto della guida.
+1. **Intestazione:**  Evidenzia la percentuale di dispositivi che eseguono versioni supportate e dispositivi che eseguono le versioni più recenti.
+1. **Corpo:**  Fornisce informazioni sul valore che esegue i dispositivi nei canali consigliati e nelle versioni supportate/più recenti.
+1. **Visualizzazione:** La suddivisione nella visualizzazione ha lo scopo di rappresentare la misura in cui viene mostrato il numero di dispositivi che eseguono le versioni supportate e le versioni più recenti delle app di Microsoft 365:
+    - **Versioni supportate:** La parte blu (colorata) della barra e la frazione (numeratore/denominatore) sulla barra rappresenta la percentuale di dispositivi che eseguono la versione supportata delle app di Microsoft 365.
+        - Numeratore: numero di dispositivi nelle versioni supportate delle app di Microsoft 365 negli ultimi 28 giorni
+        - Denominatore: il numero di dispositivi che usano le app di Microsoft 365 negli ultimi 28 giorni
+    - **Versioni più recenti:** La parte a due (colorata) della barra e la frazione (numeratore/denominatore) sulla barra rappresenta la percentuale di dispositivi che eseguono versioni recenti delle app di Microsoft 365.
+        - Numeratore: numero di dispositivi nelle versioni recenti delle app di Microsoft 365 negli ultimi 28 giorni
+        - Denominatore: il numero di dispositivi che usano le app di Microsoft 365 negli ultimi 28 giorni
+1. **Altre informazioni:**   Selezionare questo collegamento per visualizzare il contenuto della Guida.
 
-#### <a name="trend-visualization-of-the-devices"></a>Visualizzazione della tendenza dei dispositivi
+#### <a name="trend-visualization-of-the-devices"></a>Visualizzazione delle tendenze dei dispositivi
 
-Questo grafico Visualizza la linea di tendenza dei dispositivi che eseguono le versioni supportate e le versioni più recenti di Microsoft 365 Apps negli ultimi 180 giorni.
+Questo grafico mostra la linea di tendenza dei dispositivi che eseguono le versioni supportate e le versioni più recenti delle app di Microsoft 365 negli ultimi 180 giorni.
 
-:::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="Grafico in cui viene visualizzato il numero di dispositivi che eseguono le versioni supportate e più recenti delle app nel tempo.":::
+:::image type="content" source="../../media/trendline-devices-supportedversions.png" alt-text="Grafico che mostra quanti dispositivi eseguono versioni supportate e più recenti delle app nel tempo.":::
 
 ## <a name="devices-in-your-organization"></a>Dispositivi nell'organizzazione
 
-In questa sezione viene illustrato come intervenire sulle metriche su cui si desidera concentrarsi, fornendo informazioni rilevanti a tutte le metriche per le esperienze tecnologiche di Microsoft 365 Apps.
+Questa sezione consente di agire sulle metriche su cui si desidera concentrarsi fornendo informazioni pertinenti a tutte le metriche per l'integrità delle app di Microsoft 365 - esperienze tecnologiche.
 
-Le colonne seguenti sono illustrate nella tabella a livello di canale/versione:
+Le colonne seguenti sono presentate nella tabella a livello di canale/versione:
 
-- **Canale** : Current Microsoft 365 Apps Channel sui dispositivi.
-- **Stato:**   Le app Microsoft 365 supportano lo stato dei dispositivi basati sul canale e sulla versione correnti.
-- **Versioni:**   Versioni correnti di Microsoft 365 Apps nei dispositivi.
-- **# di dispositivi:**  Numero di dispositivi.
+- **Canale:** canale corrente delle app di Microsoft 365 nei dispositivi.
+- **Stato:**   Le app di Microsoft 365 supportano lo stato dei dispositivi in base al canale e alla versione correnti.
+- **Versioni:**   Versioni correnti delle app di Microsoft 365 nei dispositivi.
+- **Numero di dispositivi:**  Numero di dispositivi.
 
 ## <a name="related-content"></a>Contenuti correlati
 
-[Comunicazione – esperienze degli utenti](communication.md) (articolo) \
-[Collaborazione del contenuto-esperienze degli utenti](content-collaboration.md) (articolo) \
-[Riunioni – esperienze degli utenti](meetings.md) (articolo) \
-[Mobilità – esperienze degli utenti](mobility.md) (articolo) \
-[Controlli sulla privacy per il Punteggio di produttività](privacy.md) (articolo) \
-[Teamwork – esperienze degli utenti](teamwork.md) (articolo)
+[Comunicazione - Esperienze utente](communication.md) (articolo)\
+[Collaborazione sul contenuto - Esperienze utente](content-collaboration.md) (articolo)\
+[Riunioni - Esperienze utente](meetings.md) (articolo)\
+[Mobilità - Esperienze utente](mobility.md) (articolo)\
+[Controlli della privacy per il punteggio di produttività](privacy.md) (articolo)\
+[Lavoro in team - Esperienze degli utenti](teamwork.md) (articolo)

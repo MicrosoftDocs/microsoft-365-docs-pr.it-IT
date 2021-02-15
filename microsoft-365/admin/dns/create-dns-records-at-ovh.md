@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
-description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in OVH per Microsoft.
+description: Informazioni su come verificare il dominio e configurare i record DNS per posta elettronica, Skype for Business online e altri servizi in OVH per Microsoft.
 ms.openlocfilehash: 14c3796ff6686ae0d98ec32ec6ddf6afc004a3c3
 ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
@@ -46,7 +46,7 @@ Ecco i principali record da aggiungere.
     
 - [Aggiungere i due record SRV necessari per Microsoft](#add-the-two-srv-records-that-are-required-for-microsoft)
     
-Dopo aver aggiunto questi record in OVH, il dominio sarà configurato per l'uso con i servizi Microsoft.
+Dopo aver aggiunto questi record in OVH, il dominio sarà configurato per l'utilizzo con i servizi Microsoft.
 
   
 > [!NOTE]
@@ -64,23 +64,23 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
     
     ![OVH login](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-2. In **domini** selezionare il nome del dominio che si desidera modificare.
+2. In **Domini** selezionare il nome del dominio che si desidera modificare.
     
     ![OVH Select the domain](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
-3. Selezionare la **zona DNS**.
+3. Selezionare **la zona DNS.**
     
     ![OVH select DNS zone](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
-4. Selezionare **Aggiungi una voce**.
+4. Selezionare **Aggiungi una voce.**
     
     ![OVH Add an entry](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
-5. Seleziona **txt**
+5. Select **TXT**
     
-    ![OVH Seleziona voce TXT](../../media/3aaa9dae-0b1d-436b-a980-b67a970f31a9.png)
+    ![OVH select TXT entry](../../media/3aaa9dae-0b1d-436b-a980-b67a970f31a9.png)
   
-6. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori della tabella seguente. Per assegnare un valore TTL, scegliere **personalizzato** dall'elenco a discesa e quindi digitare il valore nella casella di testo. 
+6. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori della tabella seguente. Per assegnare un valore TTL, scegliere **Personalized** nell'elenco a discesa e quindi digitare il valore nella casella di testo. 
     
     |**Tipo di record**|**Sottodominio**|**TTL**|**Valore**|
     |:-----|:-----|:-----|:-----|
@@ -120,32 +120,32 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![OVH login](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-2. In **domini** selezionare il nome del dominio che si desidera modificare.
+2. In **Domini** selezionare il nome del dominio che si desidera modificare.
     
     ![OVH Select the domain](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
-3. Selezionare la **zona DNS**.
+3. Selezionare **la zona DNS.**
     
     ![OVH select DNS zone](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
-4. Selezionare **Aggiungi una voce**.
+4. Selezionare **Aggiungi una voce.**
     
     ![OVH Add an entry](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
-5. Selezionare **MX**.
+5. Selezionare **MX.**
     
     ![OVH MX record type](../../media/29b5e54e-440a-41f2-9eb9-3de573922ddf.png)
   
-6. Nelle caselle per il nuovo record digitare oppure copiare e incollare i valori indicati nella tabella seguente. Per assegnare un valore TTL, scegliere **personalizzato** dall'elenco a discesa e quindi digitare il valore nella casella di testo. 
+6. Nelle caselle per il nuovo record digitare oppure copiare e incollare i valori indicati nella tabella seguente. Per assegnare un valore TTL, scegliere **Personalized** nell'elenco a discesa e quindi digitare il valore nella casella di testo. 
     
     > [!NOTE]
-    > Per impostazione predefinita, in OVH viene utilizzata la notazione relativa per la destinazione, che aggiunge il nome di dominio alla fine del record di destinazione. Per usare invece la notazione assoluta, aggiungere un punto al record di destinazione, come mostrato nella tabella seguente. 
+    > Per impostazione predefinita, OVH utilizza la notazione relativa per la destinazione, che aggiunge il nome di dominio alla fine del record di destinazione. Per usare invece la notazione assoluta, aggiungere un punto al record di destinazione, come mostrato nella tabella seguente. 
   
     |**Tipo di record**|**Sottodominio**|**TTL**|**Priorità**|**Destinazione**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |(lasciare vuoto)  <br/> |3600 (secondi)  <br/> |10   <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |\<domain-key\>. mail.protection.outlook.com.  <br/> **Nota:** Ottenere il vostro  *\<domain-key\>*  dal vostro account Microsoft.  [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)  |
+    |MX  <br/> |(lasciare vuoto)  <br/> |3600 (secondi)  <br/> |10    <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |\<domain-key\>.mail.protection.outlook.com.  <br/> **Nota:** Ottenere il  *\<domain-key\>*  proprio account Microsoft.  [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)  |
    
-    ![Record MX OVH per la posta elettronica](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
+    ![Record MX OVH per la posta](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
   
 7. Selezionare **Avanti**.
     
@@ -155,7 +155,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![OVH MX record select Confirm](../../media/090bfb11-a753-4af0-8982-582a4069a169.png)
   
-9. Se sono presenti altri record MX, eliminarli tutti nella pagina **DNS zone**. Selezionare ogni record e quindi, nella colonna **azioni** , selezionare l'icona Cestino-Can **Delete** . 
+9. Se sono presenti altri record MX, eliminarli tutti nella pagina **DNS zone**. Selezionare ogni record e quindi nella colonna **Azioni** selezionare l'icona Elimina **cestino.** 
     
     ![OVH delete MX record](../../media/892b328b-7057-4828-b8c5-fe26284dc8c2.png)
   
@@ -168,25 +168,25 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![OVH login](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-2. In **domini** selezionare il nome del dominio che si desidera modificare.
+2. In **Domini** selezionare il nome del dominio che si desidera modificare.
     
     ![OVH Select the domain](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
-3. Selezionare la **zona DNS**.
+3. Selezionare **la zona DNS.**
     
     ![OVH select DNS zone](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
-4. Selezionare **Aggiungi una voce**.
+4. Selezionare **Aggiungi una voce.**
     
     ![OVH Add an entry](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
-5. Selezionare **CNAME**.
+5. Selezionare **CNAME.**
     
     ![OVH add CNAME record type](../../media/33c7ac74-18d7-4ae1-9e27-1c0f9773a3c3.png)
   
 6. Creare il primo record CNAME.
     
-    Nelle caselle del nuovo record digitare oppure copiare e incollare i valori dalla prima riga della tabella seguente. Per assegnare un valore TTL, scegliere **personalizzato** dall'elenco a discesa e quindi digitare il valore nella casella di testo. 
+    Nelle caselle del nuovo record digitare oppure copiare e incollare i valori dalla prima riga della tabella seguente. Per assegnare un valore TTL, scegliere **Personalized** nell'elenco a discesa e quindi digitare il valore nella casella di testo. 
     
     |**Tipo di record**|**Sottodominio**|**Destinazione**|**TTL**|
     |:-----|:-----|:-----|:-----|
@@ -196,7 +196,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net.  <br/> |3600 secondi  <br/> |
     |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> |3600 secondi  <br/> |
    
-    ![Record CNAME di OVH](../../media/516938b3-0b12-4736-a631-099e12e189f5.png)
+    ![Record CNAME OVH](../../media/516938b3-0b12-4736-a631-099e12e189f5.png)
   
 7. Selezionare **Avanti**.
     
@@ -212,25 +212,25 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 <a name="bkmk_spf"> </a>
 
 > [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un  *singolo*  record SPF che includa entrambi i set di valori. 
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un singolo record  *SPF*  che include entrambi i set di valori. 
   
 1. Per iniziare, passare alla propria pagina dei domini in OVH usando [questo collegamento](https://www.ovh.com/manager/). Verrà chiesto di accedere.
     
     ![OVH login](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-2. In **domini** selezionare il nome del dominio che si desidera modificare.
+2. In **Domini** selezionare il nome del dominio che si desidera modificare.
     
     ![OVH Select the domain](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
-3. Selezionare la **zona DNS**.
+3. Selezionare **la zona DNS.**
     
     ![OVH select DNS zone](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
-4. Selezionare **Aggiungi una voce**.
+4. Selezionare **Aggiungi una voce.**
     
     ![OVH Add an entry](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
-5. Selezionare **txt**.
+5. Selezionare **TXT.**
     
 6. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori seguenti.
     
@@ -238,11 +238,11 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     |:-----|:-----|:-----|:-----|
     |TXT  <br/> |(lasciare vuoto)  <br/> |3600 (secondi)  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           |
    
-    ![OVH aggiungere un record TXT per SPF](../../media/f50466e9-1557-4548-8a39-e98978a5ee2e.png)
+    ![OVH Add TXT record for SPF](../../media/f50466e9-1557-4548-8a39-e98978a5ee2e.png)
   
 7. Selezionare **Avanti**.
     
-    ![OVH aggiungere un record TXT per SPF e selezionare Avanti](../../media/7937eb7c-114f-479f-a916-bcbe476d6108.png)
+    ![OVH Add TXT record for SPF and select Next](../../media/7937eb7c-114f-479f-a916-bcbe476d6108.png)
   
 8. Selezionare **Conferma**.
     
@@ -255,32 +255,32 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![OVH login](../../media/1424cc15-720d-49d1-b99b-8ba63b216238.png)
   
-2. In **domini** selezionare il nome del dominio che si desidera modificare.
+2. In **Domini** selezionare il nome del dominio che si desidera modificare.
     
     ![OVH Select the domain](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
-3. Selezionare la **zona DNS**.
+3. Selezionare **la zona DNS.**
     
     ![OVH select DNS zone](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
-4. Selezionare **Aggiungi una voce**.
+4. Selezionare **Aggiungi una voce.**
     
     ![OVH Add an entry](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
-5. Selezionare **SRV**.
+5. Selezionare **SRV.**
     
     ![OVH select SRV record type](../../media/66bad536-a531-4a4e-b08d-c0d99f6ea1b2.png)
   
 6. Creare il primo record SRV.
     
-    Nelle caselle del nuovo record digitare oppure copiare e incollare i valori dalla prima riga della tabella seguente. Per assegnare un valore TTL, scegliere **personalizzato** dall'elenco a discesa e quindi digitare il valore nella casella di testo. 
+    Nelle caselle del nuovo record digitare oppure copiare e incollare i valori dalla prima riga della tabella seguente. Per assegnare un valore TTL, scegliere **Personalized** nell'elenco a discesa e quindi digitare il valore nella casella di testo. 
     
     |**Tipo di record**|**Sottodominio**|**Priorità**|**Peso**|**Porta**|**TTL**|**Destinazione**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |SRV (Service)  <br/> |_sip._tls  <br/> |100  <br/> |1   <br/> |443  <br/> |3600 (secondi)  <br/> |sipdir.online.lync.com.  <br/> |
     |SRV (Service)  <br/> |_sipfederationtls._tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |3600 (secondi)  <br/> |sipfed.online.lync.com.  <br/> |
        
-    ![Record OVH SRV](../../media/73956b9e-9e4f-40a5-803e-c4ead2f77fa6.png)
+    ![Record SRV OVH](../../media/73956b9e-9e4f-40a5-803e-c4ead2f77fa6.png)
   
 7. Selezionare **Avanti**.
     

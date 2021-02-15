@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5f0c840e-4140-4571-88ed-cf235ff142d6
-description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in Hostgator per Microsoft.
+description: Informazioni su come verificare il dominio e configurare i record DNS per posta elettronica, Skype for Business online e altri servizi in Hostgator per Microsoft.
 ms.openlocfilehash: 3fe13df9b7e41d88c9bf06149eb894a028c4e350
 ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
@@ -35,9 +35,9 @@ ms.locfileid: "49658088"
 Se il proprio provider di hosting DNS è Hostgator, seguire i passaggi di questo articolo per verificare il dominio e configurare i record DNS per posta elettronica, Skype for Business online e così via.
   
 > [!IMPORTANT]
-> È necessario eseguire il primo procedurebelow, [puntare il dominio all'account di hosting](#point-your-domain-to-your-hosting-account), prima di aggiungere i record DNS utilizzando una delle altre procedure descritte in questo articolo. 
+> È necessario eseguire la prima procedura, Puntare il dominio [all'account di hosting](#point-your-domain-to-your-hosting-account)prima di aggiungere record DNS utilizzando una delle altre procedure descritte in questo articolo. 
 
-Dopo aver apportato tutte queste modifiche in Hostgator, il dominio sarà configurato per l'uso con i servizi Microsoft.
+Dopo aver apportato tutte queste modifiche in Hostgator, il dominio sarà configurato per l'utilizzo con i servizi Microsoft.
   
 
   
@@ -54,13 +54,13 @@ Seguire questa procedura per associare il dominio e gli account di hosting.
   
 1. Per iniziare, passare alla pagina di gestione del dominio su Hostgator usando [questo collegamento](https://portal.hostgator.com/). Verrà richiesto di eseguire l'accesso.
     
-2. Selezionare i **domini** a sinistra.
+2. Selezionare **Domini** a sinistra.
   
 3. Nella pagina **Gestisci domini** selezionare il dominio che si desidera aggiornare. 
   
-4. Nel menu a comparsa a sinistra, selezionare **Name Servers**.
+4. Scegliere Name Servers dal menu a comparsa a **sinistra.**
   
-5. Nella pagina **Name Servers** per il dominio, nell'elenco **a discesa indirizza automaticamente questo dominio all'account di hosting** , scegliere l'account di hosting associato al dominio. 
+5. Nella pagina **Name Servers** del dominio, nell'elenco a discesa Automatically point this domain to my **hosting account,** choose the hosting account that is associated with your domain. 
   
 6. Selezionare **Save Name Servers**.
     
@@ -78,23 +78,23 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
   
 1. Per iniziare, passare alla propria pagina cPanel su Hostgator. Verrà richiesto di eseguire l'accesso.
     
-    A ogni account ospitato su Hostgator è assegnato un indirizzo cPanel univoco. L'indirizzo cPanel dovrebbe avere un aspetto simile a https://YourSiteAddress:secure-port-number. La posta elettronica di iscrizione ricevuta da Hostgator specifica quell'indirizzo e un collegamento cPanel è disponibile anche nella pagina di **hosting** .
+    A ogni account ospitato su Hostgator è assegnato un indirizzo cPanel univoco. L'indirizzo cPanel dovrebbe avere un aspetto simile a https://YourSiteAddress:secure-port-number. Il messaggio di posta elettronica di iscrizione ricevuto da Hostgator specifica tale indirizzo e nella pagina **di** hosting è disponibile anche un collegamento cPanel.
     
     > [!IMPORTANT]
-    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Per iniziare a utilizzare Microsoft, è possibile acquistare un account di hosting da Hostgator o [ridelegare i server dei nomi in modo che puntino a Microsoft](change-nameservers-at-hostgator.md). 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Per iniziare a usare Microsoft, è possibile acquistare un account di hosting da Hostgator o rielegare i server dei nomi in modo che puntino a [Microsoft.](change-nameservers-at-hostgator.md) 
   
-2. Nell'area **Domains** della pagina del **Pannello di controllo** selezionare **Advanced zone editor**.
+2. Nell'area Domini della  pagina **Pannello** di controllo selezionare Advanced **Zone Editor.**
     
-3. Nelle caselle del nuovo record nella pagina **Aggiungi un record** della pagina **Editor aree avanzate** Digitare oppure copiare e incollare i valori della tabella seguente. 
+3. Nelle **caselle** del nuovo record nella pagina Advanced Zone Editor digitare oppure copiare e incollare i valori della tabella seguente nell'area Add **a Record.** 
     
     Selezionare il valore **Type** nell'elenco a discesa. 
     
     |||||
     |:-----|:-----|:-----|:-----|
     |**Nome** <br/> |**TTL** <br/> |**Type** <br/> |**TXT Data** <br/> |
-    |Utilizzare il  *Domain_name*. (for example, fourthcoffee.com.)  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |1   <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
+    |Utilizzare il  *domain_name*. (for example, fourthcoffee.com.)  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |1   <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
    
-4. Selezionare **Aggiungi record**.
+4. Selezionare **Aggiungi record.**
     
 5. Attendere alcuni minuti prima di continuare, in modo che il record appena creato venga aggiornato in Internet.
     
@@ -121,25 +121,25 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 1. Per iniziare, passare alla propria pagina cPanel su Hostgator. Verrà richiesto di eseguire l'accesso.
     
-    A ogni account ospitato su Hostgator è assegnato un indirizzo cPanel univoco. L'indirizzo cPanel dovrebbe avere un aspetto simile a https://YourSiteAddress:secure-port-number. La posta elettronica di iscrizione ricevuta da Hostgator specifica quell'indirizzo e un collegamento cPanel è disponibile anche nella pagina di **hosting** .
+    A ogni account ospitato su Hostgator è assegnato un indirizzo cPanel univoco. L'indirizzo cPanel dovrebbe avere un aspetto simile a https://YourSiteAddress:secure-port-number. Il messaggio di posta elettronica di iscrizione ricevuto da Hostgator specifica tale indirizzo e nella pagina **di** hosting è disponibile anche un collegamento cPanel.
     
     > [!IMPORTANT]
-    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Per iniziare a utilizzare Microsoft, è possibile acquistare un account di hosting da Hostgator o [ridelegare i server dei nomi in modo che puntino a Microsoft](change-nameservers-at-hostgator.md). 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Per iniziare a usare Microsoft, è possibile acquistare un account di hosting da Hostgator o rielegare i server dei nomi in modo che puntino a [Microsoft.](change-nameservers-at-hostgator.md) 
   
-2. Nella sezione **posta elettronica** della pagina del **Pannello di controllo** selezionare **voce MX**.
+2. Nell'area **Posta** elettronica  della pagina Del Pannello di controllo selezionare **Voce MX.**
     
  
 3. Nell'area **Email Routing** selezionare **Remote Mail Exchanger**.
 
 4. Selezionare **Cambia**.
   
-5. Nelle caselle del nuovo record nell'area **Aggiungi un nuovo record** Digitare oppure copiare e incollare i valori della tabella seguente. 
+5. Nelle **caselle del** nuovo record nell'area Aggiungi nuovo record digitare oppure copiare e incollare i valori della tabella seguente. 
     
     |**Priority**|**Destination**|
     |:-----|:-----|
     |0  <br/> Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** ottenere il valore \< *domain-key*  \> dal proprio account Microsoft.  [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
   
-6. Selezionare **Aggiungi nuovo record**.
+6. Selezionare **Aggiungi nuovo record.**
    
  
 7. Rimuovere eventuali altri record MX presenti nella sezione **MX Records**. 
@@ -153,33 +153,33 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 1. Per iniziare, passare alla propria pagina cPanel su Hostgator. Verrà richiesto di eseguire l'accesso.
     
-    A ogni account ospitato su Hostgator è assegnato un indirizzo cPanel univoco. L'indirizzo cPanel dovrebbe avere un aspetto simile a https://YourSiteAddress:secure-port-number. La posta elettronica di iscrizione ricevuta da Hostgator specifica quell'indirizzo e un collegamento cPanel è disponibile anche nella pagina di **hosting** .
+    A ogni account ospitato su Hostgator è assegnato un indirizzo cPanel univoco. L'indirizzo cPanel dovrebbe avere un aspetto simile a https://YourSiteAddress:secure-port-number. Il messaggio di posta elettronica di iscrizione ricevuto da Hostgator specifica tale indirizzo e nella pagina **di** hosting è disponibile anche un collegamento cPanel.
     
     > [!IMPORTANT]
-    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Per iniziare a utilizzare Microsoft, è possibile acquistare un account di hosting da Hostgator o [ridelegare i server dei nomi in modo che puntino a Microsoft](change-nameservers-at-hostgator.md). 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Per iniziare a usare Microsoft, è possibile acquistare un account di hosting da Hostgator o rielegare i server dei nomi in modo che puntino a [Microsoft.](change-nameservers-at-hostgator.md) 
   
-2. Nell'area **Domains** della pagina del **Pannello di controllo** selezionare **Advanced zone editor**.
+2. Nell'area Domini della  pagina **Pannello** di controllo selezionare Advanced **Zone Editor.**
     
 3. Aggiungere il primo dei sei record CNAME.
     
-    Nelle caselle del nuovo record nella pagina aggiunta di **un record** della pagina **Editor aree avanzate** Digitare oppure copiare e incollare i valori della prima riga della tabella seguente. 
+    Nelle caselle del nuovo record nella pagina **Advanced Zone Editor** digitare oppure copiare e incollare i valori della prima riga della tabella seguente nell'area Add a **Record.** 
     
     Selezionare il valore **Type** nell'elenco a discesa. 
     
     |**Nome**|**TTL**|**Type**|**CNAME**|
     |:-----|:-----|:-----|:-----|
-    |autodiscover. *Domain_name*. (ad esempio, autodiscover.fourthcoffee.com).  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |3600  <br/> |CNAME  <br/> |autodiscover.outlook.com  <br/> |
-    |sip. *Domain_name*. (ad esempio, sip.fourthcoffee.com).  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |3600  <br/> |CNAME  <br/> |sipdir.online.lync.com  <br/> |
-    |lyncdiscover. *Domain_name*. (ad esempio, lyncdiscover.fourthcoffee.com).  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |3600  <br/> |CNAME  <br/> |webdir.online.lync.com  <br/> |
-    |enterpriseregistration. *Domain_name*. (ad esempio, enterpriseregistration.fourthcoffee.com).  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |3600  <br/> |CNAME  <br/> |enterpriseregistration.windows.net  <br/> |
-    |enterpriseenrollment. *Domain_name*. (ad esempio, enterpriseregistration.fourthcoffee.com).  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |3600  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
+    |autodiscover. *domain_name*. (ad esempio, autodiscover.fourthcoffee.com.)  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |3600  <br/> |CNAME  <br/> |autodiscover.outlook.com  <br/> |
+    |sip. *domain_name*. (ad esempio, sip.fourthcoffee.com.)  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |3600  <br/> |CNAME  <br/> |sipdir.online.lync.com  <br/> |
+    |lyncdiscover. *domain_name*. (ad esempio, lyncdiscover.fourthcoffee.com.)  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |3600  <br/> |CNAME  <br/> |webdir.online.lync.com  <br/> |
+    |enterpriseregistration. *domain_name*. (ad esempio, enterpriseregistration.fourthcoffee.com.)  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |3600  <br/> |CNAME  <br/> |enterpriseregistration.windows.net  <br/> |
+    |enterpriseenrollment. *domain_name*. (ad esempio, enterpriseregistration.fourthcoffee.com.)  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |3600  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
 
   
-4. Selezionare **Aggiungi record**.
+4. Selezionare **Aggiungi record.**
 
 5. Aggiungere gli altri cinque record CNAME.
     
-    Nella sezione **Add a record** creare un record usando i valori della riga successiva della tabella e quindi scegliere di nuovo **Add record** per completare il record. 
+    Nella sezione **Add a Record** creare un record utilizzando i valori della riga successiva della tabella e quindi selezionare di nuovo Add **Record** per completare il record. 
     
     Ripetere questa procedura fino a creare tutti e sei i record CNAME.
     
@@ -194,12 +194,12 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 1. Per iniziare, passare alla propria pagina cPanel su Hostgator. Verrà richiesto di eseguire l'accesso.
     
-    A ogni account ospitato su Hostgator è assegnato un indirizzo cPanel univoco. L'indirizzo cPanel dovrebbe avere un aspetto simile a https://YourSiteAddress:secure-port-number. La posta elettronica di iscrizione ricevuta da Hostgator specifica quell'indirizzo e un collegamento cPanel è disponibile anche nella pagina di **hosting** .
+    A ogni account ospitato su Hostgator è assegnato un indirizzo cPanel univoco. L'indirizzo cPanel dovrebbe avere un aspetto simile a https://YourSiteAddress:secure-port-number. Il messaggio di posta elettronica di iscrizione ricevuto da Hostgator specifica tale indirizzo e nella pagina **di** hosting è disponibile anche un collegamento cPanel.
     
     > [!IMPORTANT]
-    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Per iniziare a utilizzare Microsoft, è possibile acquistare un account di hosting da Hostgator o [ridelegare i server dei nomi in modo che puntino a Microsoft](change-nameservers-at-hostgator.md). 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Per iniziare a usare Microsoft, è possibile acquistare un account di hosting da Hostgator o rielegare i server dei nomi in modo che puntino a [Microsoft.](change-nameservers-at-hostgator.md) 
   
-2. Nell'area **Domains** della pagina del **Pannello di controllo** selezionare **Advanced zone editor**.
+2. Nell'area Domini della  pagina **Pannello** di controllo selezionare Advanced **Zone Editor.**
     
 3. On the **Advanced DNS Zone Editor** page, in the **Add a Record** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -207,9 +207,9 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Nome**|**TTL**|**Type**|**TXT Data**|
     |:-----|:-----|:-----|:-----|
-    |Utilizzare il  *Domain_name*. (for example, fourthcoffee.com.)  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |3600  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           |
+    |Utilizzare il  *domain_name*. (for example, fourthcoffee.com.)  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |3600  <br/> |TXT  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           |
   
-4. Selezionare **Aggiungi record**.
+4. Selezionare **Aggiungi record.**
     
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Aggiungere i due record SRV necessari per Microsoft
 <a name="BKMK_add_SRV"> </a>
@@ -219,12 +219,12 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 1. Per iniziare, passare alla propria pagina cPanel su Hostgator. Verrà richiesto di eseguire l'accesso.
     
-    A ogni account ospitato su Hostgator è assegnato un indirizzo cPanel univoco. L'indirizzo cPanel dovrebbe avere un aspetto simile a https://YourSiteAddress:secure-port-number. La posta elettronica di iscrizione ricevuta da Hostgator specifica quell'indirizzo e un collegamento cPanel è disponibile anche nella pagina di **hosting** .
+    A ogni account ospitato su Hostgator è assegnato un indirizzo cPanel univoco. L'indirizzo cPanel dovrebbe avere un aspetto simile a https://YourSiteAddress:secure-port-number. Il messaggio di posta elettronica di iscrizione ricevuto da Hostgator specifica tale indirizzo e nella pagina **di** hosting è disponibile anche un collegamento cPanel.
     
     > [!IMPORTANT]
-    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Per iniziare a utilizzare Microsoft, è possibile acquistare un account di hosting da Hostgator o [ridelegare i server dei nomi in modo che puntino a Microsoft](change-nameservers-at-hostgator.md). 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Per iniziare a usare Microsoft, è possibile acquistare un account di hosting da Hostgator o rielegare i server dei nomi in modo che puntino a [Microsoft.](change-nameservers-at-hostgator.md) 
   
-2. Nell'area **Domains** della pagina del **Pannello di controllo** selezionare **Advanced zone editor**.
+2. Nell'area Domini della  pagina **Pannello** di controllo selezionare Advanced **Zone Editor.**
 
     
 3. Aggiungere il primo dei due record SRV.
@@ -235,16 +235,16 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Nome**|**TTL**|**Type**|**Priorità**|**Peso**|**Porta**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip _sip._tls. *Domain_name*. (ad esempio, _sip. _tls. fourthcoffee. com).  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |_sipfederationtls _sipfederationtls._tcp. *Domain_name*. (ad esempio, _sipfederationtls. _tcp. fourthcoffee. com).  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |_sip._tls. *domain_name*. Ad esempio, _sip._tls.fourthcoffee.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |_sipfederationtls._tcp. *domain_name*. Ad esempio, _sipfederationtls._tcp.fourthcoffee.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |3600  <br/> |SRV  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
 
-4. Selezionare **Aggiungi record**.
+4. Selezionare **Aggiungi record.**
 
   
 5. Aggiungere l'altro record SRV.
     
-    Nella sezione **Add a record** creare un record usando i valori della riga successiva della tabella e quindi scegliere di nuovo **Add record** per completare il record. 
+    Nella sezione **Add a Record** creare un record utilizzando i valori della riga successiva della tabella e quindi selezionare di nuovo Add **Record** per completare il record. 
     
 > [!NOTE]
 > In genere, l'applicazione delle modifiche al DNS richiede circa 15 minuti. Tuttavia, a volte può capitare che l'aggiornamento di una modifica nel sistema DNS di Internet richieda più tempo. In caso di problemi con il flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Individuare e correggere i problemi dopo l'aggiunta del dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 

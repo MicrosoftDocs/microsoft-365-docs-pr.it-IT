@@ -21,7 +21,7 @@ search.appverid:
 ms.assetid: b2acaeca-4986-40f4-92b7-a1bdd06e549d
 f1.keywords:
 - NOCSH
-description: Iniziare a pianificare l'aggiornamento da server e applicazioni client di Office 2010, in quanto il supporto si concluderà a breve e non sono disponibili contratti di supporto personalizzato.
+description: Iniziare a pianificare l'aggiornamento dai server e dalle applicazioni client di Office 2010, poiché il supporto termina a breve e i contratti di supporto personalizzati non sono disponibili.
 ms.custom: seo-marvel-apr2020
 ms.openlocfilehash: b9dcf5c36cff5e14828b1a6540ed920577537c49
 ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
@@ -34,23 +34,23 @@ ms.locfileid: "49519781"
 
 *Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
-Office 2010 e Exchange 2010 sono giunti alla fine del supporto il **13 ottobre 2020**.
+Office 2010 ed Exchange 2010 hanno raggiunto la fine del supporto il **13 ottobre 2020.**
 
 SharePoint 2010 e Project Server 2010 raggiungeranno la fine del supporto il **13 aprile 2021**.
 
-Durante la pianificazione dell'aggiornamento, prendere in considerazione la possibilità di passare a Microsoft 365.
+Durante la pianificazione dell'aggiornamento, è consigliabile passare a Microsoft 365.
 
-- Microsoft 365 dispone di servizi basati su cloud per prodotti di Office 2010 Server, ad esempio Exchange Server e SharePoint Server e servizi, ad esempio teams e OneDrive for business.
+- Microsoft 365 include servizi basati sul cloud per i prodotti server di Office 2010, ad esempio Exchange Server e SharePoint Server, e servizi, ad esempio Teams e OneDrive for Business.
 
-- Microsoft 365 Apps for Enterprise (in precedenza denominato *Office 365 ProPlus*), incluso in Microsoft 365 E3 ed E5, è l'insieme di applicazioni client di Office installate nel dispositivo locale. Vengono aggiornati regolarmente con nuove funzionalità di produttività e sicurezza dal cloud Microsoft.
+- Microsoft 365 Apps for enterprise (in precedenza *denominato Office 365 ProPlus),* incluso in Microsoft 365 E3 ed E5, è il set di app client di Office installate nel dispositivo locale. Vengono aggiornati regolarmente con nuove funzionalità di produttività e sicurezza dal cloud Microsoft.
 
-Per un riepilogo visivo delle opzioni di aggiornamento, migrazione e spostamento al cloud per i client e i server di Office 2010 e Windows 7, vedere il poster relativo alla [fine del supporto tecnico](../downloads/Office2010Windows7EndOfSupport.pdf).
+Per un riepilogo visivo delle opzioni di aggiornamento, migrazione e spostamento nel cloud per i client e i server di Office 2010 e Windows 7, vedere il poster della fine [del supporto.](../downloads/Office2010Windows7EndOfSupport.pdf)
 
-[![Fine del supporto per i client e i server di Office 2010 e il poster di Windows 7](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
+[![Fine del supporto per client e server di Office 2010 e poster di Windows 7](../media/upgrade-from-office-2010-servers-and-products/office2010-windows7-end-of-support.png)](../downloads/Office2010Windows7EndOfSupport.pdf)
 
-Questo poster di una pagina riepiloga i vari percorsi che è possibile eseguire per gestire i prodotti client e server di Office 2010 e Windows 7 dalla fine del supporto. I percorsi preferiti e il supporto delle opzioni in Microsoft 365 Enterprise sono evidenziati.
+In questo poster di una pagina sono riepilogati i diversi percorsi che è possibile intraprendere per gestire i prodotti client e server di Office 2010 e Windows 7 dal raggiungimento della fine del supporto. Sono evidenziati i percorsi preferiti e il supporto delle opzioni in Microsoft 365 Enterprise.
 
-È anche possibile [scaricare](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) questo poster e stamparlo nel formato lettera, legale o tabloid (11 x 17).
+Puoi anche [scaricare questo](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Office2010Windows7EndOfSupport.pdf) poster e stamparlo in formato lettera, legale o tabloid (11 x 17).
 
 ## <a name="office-2010-client-and-server-upgrade-planning"></a>Pianificazione dell'aggiornamento di client e server di Office 2010
 
@@ -64,7 +64,7 @@ Questo poster di una pagina riepiloga i vari percorsi che è possibile eseguire 
 
 ## <a name="im-a-home-user-what-do-i-do"></a>Sono un utente privato. Cosa fare?
 
-Se si utilizzano i prodotti e le applicazioni di Office 2010 in casa, vedere [queste informazioni](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do).
+Se si utilizzano prodotti e applicazioni di Office 2010 a casa, vedere [queste informazioni.](plan-upgrade-previous-versions-office.md#im-a-home-user-what-do-i-do)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

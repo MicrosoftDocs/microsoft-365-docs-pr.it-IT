@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 3c490fbf-7833-4e43-be34-ed0dc3cce5e3
-description: Informazioni su come accedere a eNom e creare DNS tramite la pagina domini di Google.
+description: Informazioni su come accedere a eNom e creare DNS tramite la pagina Google Domains.
 ms.openlocfilehash: 3294be667653c568fbbd1a911bcfab9b6ea7788b
 ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
@@ -32,23 +32,23 @@ ms.locfileid: "49656856"
 
  Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.yml)**. 
   
-Per eseguire la migrazione degli account di posta elettronica a Microsoft, è necessario creare un record DNS presso il registrar.
+Per eseguire la migrazione degli account di posta elettronica a Microsoft, è necessario creare un record DNS nel registrar.
   
-Se il dominio è stato acquistato tramite Google durante l'iscrizione per l'account di **Google Apps for Work** , i record DNS vengono gestiti da Google ma registrati con eNom. 
+Se il dominio è stato acquistato tramite Google durante la registrazione per l'account **Google Apps for Work,** i record DNS vengono gestiti da Google ma registrati con eNom. 
   
-È possibile accedere a eNom e creare DNS tramite la pagina **domini** di Google. Seguire i passaggi descritti in questo articolo. 
+È possibile accedere a eNom e creare DNS tramite la pagina Google **Domains.** Seguire i passaggi descritti in questo articolo. 
   
 ## <a name="create-the-dns-record"></a>Creare il record DNS
 
-1. Nella [console di amministrazione di Google](https://www.google.com/work/apps/business), selezionare **Accedi**.
+1. Nella [console di amministrazione di Google](https://www.google.com/work/apps/business)selezionare **Accedi.**
     
     ![Google-Apps-Configure-1-1-0](../../media/37a6e9f6-319e-4c02-aa18-d8d06df7953d.png)
   
-2. Immettere il proprio nome di dominio, quindi selezionare **Vai**.
+2. Immetti il nome del dominio e quindi seleziona **Vai.**
     
     ![Icona del pulsante](../../media/2caf8dcb-4d40-4cfa-bc40-d634e454e699.png)
   
-3. Nella parte inferiore della pagina, selezionare **altri controlli**.
+3. Nella parte inferiore della pagina selezionare **Altri controlli.**
     
     ![Google-Apps-Configure-1-2-0](../../media/1518ff78-035b-423e-85a3-c16d7faa0968.png)
   
@@ -56,18 +56,18 @@ Se il dominio è stato acquistato tramite Google durante l'iscrizione per l'acco
     
     ![Google-Apps-Configure-1-2-1](../../media/c2972c06-9bca-43bd-9876-2cee63043bf1.png)
   
-5. Nella pagina **Domains** selezionare **Aggiungi/Rimuovi domini**.
+5. Nella pagina **Domini** selezionare **Aggiungi/rimuovi domini.**
     
     ![Google-Apps-Configure-1-2-2](../../media/07b8068f-9a05-40aa-a041-fc495c729a18.png)
   
-6. Nella pagina **Domains** selezionare **Advanced DNS Settings**.
+6. Nella pagina **Domini** selezionare **Impostazioni DNS avanzate.**
     
     > [!NOTE]
-    > Se non si è acquistato un nome di dominio tramite Google durante l'iscrizione per l'account di **Google Apps for Work**, nella pagina **Domini** non sarà disponibile l'opzione **Impostazioni DNS avanzate**. Occorre invece accedere alle impostazioni DNS direttamente dal sito Web dell'host del dominio ed eseguire questo passaggio e i seguenti. Per ulteriori informazioni, vedere [Access your G Suite Domain Settings](https://support.google.com/a/answer/54693?hl=en) . 
+    > Se non si è acquistato un nome di dominio tramite Google durante l'iscrizione per l'account di **Google Apps for Work**, nella pagina **Domini** non sarà disponibile l'opzione **Impostazioni DNS avanzate**. Occorre invece accedere alle impostazioni DNS direttamente dal sito Web dell'host del dominio ed eseguire questo passaggio e i seguenti. Per [altre informazioni, vedi](https://support.google.com/a/answer/54693?hl=en) Accedere alle impostazioni di dominio di G Suite. 
   
     ![Google-Apps-eNom-Configure-1-3](../../media/b244b29c-e479-40be-b380-4ffa0f74b421.png)
   
-7. Nella pagina **impostazioni DNS avanzate** , selezionare **Accedi alla console DNS**. Annotare le informazioni relative al **nome di accesso** e alla **password**. Verranno richieste nel passaggio successivo. 
+7. Nella pagina **Impostazioni DNS avanzate** selezionare Accedi alla console **DNS.** Annotare le informazioni relative al **nome di accesso** e alla **password**. Verranno richieste nel passaggio successivo. 
     
     ![Google-Apps-eNom-Configure-1-4](../../media/056a2767-462f-4847-acee-d01e3f773add.png)
   
@@ -75,11 +75,11 @@ Se il dominio è stato acquistato tramite Google durante l'iscrizione per l'acco
     
     ![Google-Apps-eNom-Configure-1-5](../../media/08b74652-8cdb-4560-a5fd-0899f86deee8.png)
   
-9. Nella sezione **_ host Records della pagina _Domain_name_*_*** fare clic su **modifica**.
+9. Nella pagina **_domain_name_*_ selezionare*** Modifica nella sezione _ Record host. 
     
     ![Google-Apps-eNom-Configure-1-6](../../media/d54fec18-b9d1-4796-8397-0393c964eade.png)
   
-10. Nella sezione **Host Records** selezionare **Aggiungi nuovo**.
+10. Nella sezione **Host Records** selezionare **Add New.**
     
     ![Google-Apps-eNom-Configure-1-7](../../media/3562806a-4328-4e60-a717-0566841204cf.png)
   
@@ -98,7 +98,7 @@ Se il dominio è stato acquistato tramite Google durante l'iscrizione per l'acco
     
     ![Google-Apps-eNom-Configure-1-9](../../media/7a6f7b45-8f79-487b-afe4-05949c2c04e8.png)
   
-13. Selezionare **Salva modifiche**.
+13. Selezionare **Salva modifiche.**
     
     ![Google-Apps-Configure-1-11](../../media/7f321236-33fb-4a7d-9d03-26605e9e558c.png)
   

@@ -21,7 +21,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: ec6f4bd8-5996-4505-ba68-afaf8a141fb9
-description: Informazioni su come utilizzare i registrar abilitati per la connessione al dominio e aggiungere il proprio dominio a Microsoft 365.
+description: Informazioni su come usare i registrar abilitati per Domain Connect e aggiungere il dominio a Microsoft 365.
 ms.openlocfilehash: 109255d82100e636e3472242866a519ff64a9e54
 ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
@@ -33,27 +33,27 @@ ms.locfileid: "49655613"
 
  Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.yml)**.
   
-I registrar abilitati alla [connessione di dominio](https://www.domainconnect.org/) consentono di aggiungere il dominio a Microsoft 365 in un processo in tre passaggi che richiede minuti. 
+[I ](https://www.domainconnect.org/) registrar abilitati per Domain Connect consentono di aggiungere il dominio a Microsoft 365 in un processo in tre passaggi che richiede minuti. 
   
-Nella procedura guidata, è sufficiente confermare che si è proprietari del dominio e quindi configurare automaticamente i record del dominio, in modo che la posta elettronica venga a Microsoft 365 e ad altri servizi Microsoft 365, come i team, che collaborino con il proprio dominio.
+Nella procedura guidata, verrà semplicemente confermata la proprietà del dominio e quindi verranno impostati automaticamente i record del dominio, in modo che la posta elettronica venga inviata a Microsoft 365 e ad altri servizi di Microsoft 365, come Teams, con il dominio.
   
 > [!NOTE]
 > Disabilitare il blocco dei popup nel browser prima di iniziare la configurazione guidata.
   
-## <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>Domain Connect registrar che si integrano con Microsoft 365
+## <a name="domain-connect-registrars-integrating-with-microsoft-365"></a>Integrazione dei registrar di Domain Connect con Microsoft 365
 
 - [1 &amp; 1 IONOS](https://www.1and1.com/)
 - [123Reg](https://www.123-reg.co.uk/)
 - [GoDaddy](https://www.godaddy.com/)
 - [WordPress](https://wordpress.com/)
-- [Plesk](https://www.plesk.com/)
+- [Plissato](https://www.plesk.com/)
 - [MediaTemple](https://mediatemple.net/)
-- SecureServer o WildWestDomains (rivenditori GoDaddy con hosting DNS di SecureServer)
-    - [Domini di MadDog](https://www.maddogdomains.com/)
+- SecureServer o WildWestDomains (rivenditori GoDaddy che utilizzano l'hosting DNS SecureServer)
+    - [Domini MadDog](https://www.maddogdomains.com/)
     - [CheapNames](https://www.cheapnames.com)
 
 ## <a name="what-happens-to-my-email-and-website"></a>Cosa succede alla posta elettronica e al sito Web?
 
-Dopo aver completato l'installazione, il record MX per il dominio viene aggiornato in modo che punti a Microsoft 365 e tutti i messaggi di posta elettronica per il dominio inizieranno a essere inviati a Microsoft 365. Assicurarsi di aver aggiunto utenti e configurare le cassette postali in Microsoft 365 per tutti coloro che ricevono la posta elettronica nel dominio.
+Al termine dell'installazione, il record MX per il dominio viene aggiornato in modo che punti a Microsoft 365 e tutta la posta elettronica per il dominio inizierà a essere inviata a Microsoft 365. Assicurarsi di aver aggiunto utenti e di configurare le cassette postali in Microsoft 365 per tutti gli utenti che riceve la posta elettronica nel dominio.
   
-Se si ha un sito Web che si usa con l'organizzazione, continuerà a funzionare dove si trova. I passaggi di installazione di Domain Connect non influiscono sul sito Web.
+Se si ha un sito Web che si usa con l'organizzazione, continuerà a funzionare dove si trova. I passaggi di configurazione di Domain Connect non influiscono sul sito Web.

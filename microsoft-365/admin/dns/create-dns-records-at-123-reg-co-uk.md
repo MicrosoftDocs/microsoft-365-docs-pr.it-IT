@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1f2d08c9-2a88-4d2f-ae1f-e39f9e358b17
-description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in 123-reg.co.uk per Microsoft.
+description: Informazioni su come verificare il dominio e configurare i record DNS per posta elettronica, Skype for Business online e altri servizi 123-reg.co.uk per Microsoft.
 ms.openlocfilehash: bde8003ad343680e8f499dd8ec1fb638f15080b1
 ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
@@ -34,7 +34,7 @@ ms.locfileid: "49658316"
   
 Se il provider di hosting DNS è 123-reg.co.uk, seguire i passaggi di questo articolo per verificare il dominio e configurare i record DNS per posta elettronica, Skype for Business online e così via.
   
-Dopo aver aggiunto questi record in 123-reg.co.uk, il dominio sarà configurato per l'uso con i servizi Microsoft.
+Dopo aver aggiunto questi record in 123-reg.co.uk, il dominio sarà configurato per l'utilizzo con i servizi Microsoft.
   
   
 > [!NOTE]
@@ -54,7 +54,7 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. Nella pagina **Gestisci il DNS** selezionare la scheda **DNS avanzata** . 
+4. Nella pagina **Manage your DNS** selezionare la scheda Advanced **DNS.** 
     
 5. In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -69,7 +69,7 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
     
 7. Attendere alcuni minuti prima di continuare, in modo che il record appena creato venga aggiornato in Internet.
     
-Dopo aver aggiunto il record al sito del registrar, è possibile tornare a Microsoft e richiedere una ricerca per il record.
+Dopo aver aggiunto il record nel sito del registrar, si tornerà a Microsoft e si richiederà una ricerca per il record.
   
 Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
@@ -94,7 +94,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. Nella pagina **Gestisci il DNS** selezionare la scheda **DNS avanzata** . 
+4. Nella pagina **Manage your DNS** selezionare la scheda Advanced **DNS.** 
     
 5. In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -102,9 +102,9 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Hostname**|**Type**|**Priority**|**Destination MX**|
     |:-----|:-----|:-----|:-----|
-    |@  <br/> |MX  <br/> |1   <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*  . mail.protection.outlook.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> **Nota:** ottenere il valore \<domain-key\> dal proprio account Microsoft. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |MX  <br/> |1   <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> **Nota:** ottenere il valore \<domain-key\> dal proprio account Microsoft. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
    
-    ![Copiare e incollare i valori dalla tabella](../../media/65366165-85a6-4a39-b9a7-6c5f47fbe790.png)
+    ![Copiare e incollare valori dalla tabella](../../media/65366165-85a6-4a39-b9a7-6c5f47fbe790.png)
   
 6. Selezionare **Aggiungi**.
     
@@ -112,7 +112,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 7. If there are any other MX records, remove each one by choosing the **Delete (trash can)** icon for that record. 
     
-    ![Seleziona Elimina (l'icona del cestino)](../../media/3be635e6-b591-49af-8430-a158272834b4.png)
+    ![Selezionare Elimina (icona del cestino)](../../media/3be635e6-b591-49af-8430-a158272834b4.png)
   
 ## <a name="add-the-six-cname-records-that-are-required-for-microsoft"></a>Aggiungere i sei record CNAME necessari per Microsoft
 <a name="BKMK_add_CNAME"> </a>
@@ -123,7 +123,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. Nella pagina **Gestisci il DNS** selezionare la scheda **DNS avanzata** . 
+4. Nella pagina **Manage your DNS** selezionare la scheda Advanced **DNS.** 
     
 5. Aggiungere il primo dei sei record CNAME.
     
@@ -139,7 +139,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     |enterpriseregistration  <br/> |CNAME  <br/> |enterpriseregistration.windows.net.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |
     |enterpriseenrollment  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |
    
-    ![Copiare e incollare i valori della tabella](../../media/24bf388c-5f7f-4fc0-b4ec-4b17226b6246.png)
+    ![Copiare e incollare i valori dalla tabella](../../media/24bf388c-5f7f-4fc0-b4ec-4b17226b6246.png)
   
 6. Selezionare **Aggiungi**.
     
@@ -147,7 +147,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 7. Aggiungere gli altri cinque record CNAME.
     
-    Nella sezione **Advanced DNS** creare un record usando i valori della riga successiva della tabella e quindi selezionare di nuovo **Add** per completare il record. 
+    Nella sezione **Advanced DNS** creare un record utilizzando i valori della riga successiva della tabella e quindi selezionare di nuovo **Add** per completare il record. 
     
     Ripetere questa procedura fino a creare tutti e sei i record CNAME.
     
@@ -155,7 +155,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsfot. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un  *singolo*  record SPF che includa entrambi i set di valori. Servono esempi? Consultare [Record Domain Name System (DNS) esterni per Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records#external-dns-records-required-for-spf). To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.yml). 
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsfot. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un singolo record  *SPF*  che include entrambi i set di valori. Servono esempi? Consultare [Record Domain Name System (DNS) esterni per Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records#external-dns-records-required-for-spf). To validate your SPF record, you can use one of these [SPF validation tools](../setup/domains-faq.yml). 
   
 1. Per iniziare, passare alla propria pagina dei domini su 123-reg.co.uk usando [questo collegamento](https://www.123-reg.co.uk/secure/cpanel/domain/overview). Verrà richiesto di eseguire l'accesso.
     
@@ -163,7 +163,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. Nella pagina **Gestisci il DNS** selezionare la scheda **DNS avanzata** . 
+4. Nella pagina **Manage your DNS** selezionare la scheda Advanced **DNS.** 
     
 5. In the **Advanced DNS** section, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -188,7 +188,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
 3. Choose **DNS** from the **Select action** drop-down list. 
     
-4. Nella pagina **Gestisci il DNS** selezionare la scheda **DNS avanzata** . 
+4. Nella pagina **Manage your DNS** selezionare la scheda Advanced **DNS.** 
     
 5. Aggiungere il primo dei due record SRV:
     
@@ -202,7 +202,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     |_sip._tls|SRV|100|3600|1 443 sipdir.online.lync.com. **Questo valore DEVE terminare con un punto (.)**<br> **Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           |
     |_sipfederationtls._tcp|SRV|100|3600|1 5061 sipfed.online.lync.com. **Questo valore DEVE terminare con un punto (.)** <br> **Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.           |
    
-    ![Copiare e incollare i valori della tabella](../../media/c1786b86-52ef-4dca-8b99-b479554fa531.png)
+    ![Copiare e incollare i valori dalla tabella](../../media/c1786b86-52ef-4dca-8b99-b479554fa531.png)
   
 6. Selezionare **Aggiungi**.
     
@@ -210,7 +210,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 7. Per aggiungere l'altro record SRV:
     
-    Nella sezione **Advanced DNS** creare un record usando i valori della seconda riga della tabella e quindi fare di nuovo clic su **Aggiungi** per completare il record. 
+    Nella sezione **Advanced DNS** creare un record utilizzando i valori della seconda riga della tabella e quindi selezionare di nuovo **Add** per completare il record. 
     
 > [!NOTE]
 > In genere, l'applicazione delle modifiche al DNS richiede circa 15 minuti. Tuttavia, a volte può capitare che l'aggiornamento di una modifica nel sistema DNS di Internet richieda più tempo. In caso di problemi con il flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Individuare e correggere i problemi dopo l'aggiunta del dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 

@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b6c15128-b456-49b4-8b5e-5b823c700f26
-description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in Names.co.uk per Microsoft.
+description: Informazioni su come verificare il dominio e configurare i record DNS per posta elettronica, Skype for Business online e altri servizi Names.co.uk per Microsoft.
 ms.openlocfilehash: 51dc9b3271468d42e82f98a1b85de5104416b015
 ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
@@ -34,7 +34,7 @@ ms.locfileid: "49657816"
   
 Se il provider di hosting DNS è Names.co.uk, seguire i passaggi di questo articolo per verificare il dominio e configurare i record DNS per posta elettronica, Skype for Business online e così via.
     
-Dopo aver aggiunto questi record in Names.co.uk, il dominio sarà configurato per l'uso con i servizi Microsoft.
+Dopo aver aggiunto questi record in Names.co.uk, il dominio sarà configurato per l'utilizzo con i servizi Microsoft.
   
 
   
@@ -63,7 +63,7 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
     
     Selezionare il valore **Type** nell'elenco a discesa. 
     
-    Se è necessario aggiungere una riga, selezionare **Aggiungi record a/CNAME (+)**.
+    Se è necessario aggiungere una riga, selezionare **ADD A/CNAME RECORDS (+)**.
     
     Può essere necessario scorrere la pagina.
         
@@ -121,7 +121,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Nome host**|**Priority**|**Result**|
     |:-----|:-----|:-----|
-    |Lasciare vuoto questo campo.  <br/> |1   <br/> Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> > [!NOTE]> ottenere il proprio  *\<domain-key\>*  account Microsoft.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
+    |Lasciare vuoto questo campo.  <br/> |1   <br/> Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> > [!NOTE]> il tuo  *\<domain-key\>*  account Microsoft.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
        
     ![NamesUK-BP-Configure-2-1](../../media/e211d73d-864f-4114-864b-8e636c69f595.png)
   
@@ -158,7 +158,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     Selezionare il valore **Type** nell'elenco a discesa. 
     
-    Se è necessario aggiungere una riga, selezionare **Aggiungi record a/CNAME (+)**.
+    Se è necessario aggiungere una riga, selezionare **ADD A/CNAME RECORDS (+)**.
     
     Può essere necessario scorrere la pagina.
     
@@ -170,17 +170,17 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     |enterpriseregistration  <br/> |CNAME  <br/> |enterpriseregistration.windows.net  <br/> |
     |enterpriseenrollment  <br/> |CNAME  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
        
-    ![NamesUK-BP-configure-3-1](../../media/392772bf-2ed3-4959-9a9a-bb1611905e86.png)
+    ![NamesUK-BP-Configure-3-1](../../media/392772bf-2ed3-4959-9a9a-bb1611905e86.png)
   
 4. Selezionare **Salva**.
     
-    ![NamesUK-BP-configure-3-2](../../media/c009795e-7eef-4804-bf23-556f498306cc.png)
+    ![NamesUK-BP-Configure-3-2](../../media/c009795e-7eef-4804-bf23-556f498306cc.png)
   
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Aggiungere un record TXT per SPF per evitare di ricevere posta indesiderata
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un  *singolo*  record SPF che includa entrambi i set di valori.
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un singolo record  *SPF*  che include entrambi i set di valori.
   
 1. Per iniziare, passare alla propria pagina dei domini su Names.co.uk usando [questo collegamento](https://account.names.co.uk/dashboard#/). Verrà richiesto di eseguire l'accesso.
     
@@ -192,7 +192,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![NamesUK-BP-Configure-1-2](../../media/b618f8e5-404e-466a-9e71-acd7479f3994.png)
   
-3. Nella colonna **Domain Name** della pagina **DNS Zones on account** selezionare il nome del dominio da aggiornare. 
+3. Nella colonna Domain **name** della pagina **DNS Zones on Account** selezionare il nome del dominio da aggiornare. 
     
     ![NamesUK-BP-Configure-1-2-1](../../media/20254eec-6952-47ba-b12b-da32860ee7ef.png)
   
@@ -200,7 +200,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     Selezionare il valore **Type** nell'elenco a discesa. 
     
-    Se è necessario aggiungere una riga, selezionare **Aggiungi record a/CNAME (+)**.
+    Se è necessario aggiungere una riga, selezionare **ADD A/CNAME RECORDS (+)**.
     
     Può essere necessario scorrere la pagina.
     

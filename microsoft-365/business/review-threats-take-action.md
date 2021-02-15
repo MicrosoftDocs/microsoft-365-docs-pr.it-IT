@@ -14,7 +14,7 @@ ms.collection:
 - Adm_TOC
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
-description: Informazioni su come esaminare e gestire le minacce rilevate da Microsoft Defender antivirus nei dispositivi Windows 10.
+description: Scopri come esaminare e gestire le minacce rilevate da Microsoft Defender Antivirus nei dispositivi Windows 10.
 ms.openlocfilehash: 41465cb81850415a7b490b6af7f0ec66c724ca68
 ms.sourcegitcommit: 490a65d32b6d656c661c36a2cc8dda03bf6cba77
 ms.translationtype: MT
@@ -24,93 +24,93 @@ ms.locfileid: "49588518"
 ---
 # <a name="review-detected-threats-and-take-action"></a>Rivedere le minacce individuate e intervenire
 
-Non appena viene rilevato un file o un software dannoso, Microsoft Defender antivirus lo blocca e ne impedisce l'esecuzione. E con la protezione fornita dal cloud attivata, le minacce appena rilevate vengono aggiunte al motore antivirus e antimalware in modo che anche gli altri dispositivi e gli altri utenti siano protetti.
+Non appena viene rilevato un file o un software dannoso, Microsoft Defender Antivirus lo blocca e ne impedisce l'esecuzione. E con la protezione tramite cloud attivata, le nuove minacce rilevate vengono aggiunte al motore antivirus e antimalware in modo che anche gli altri dispositivi e gli utenti siano protetti.
 
-Microsoft Defender Antivirus rileva e protegge i tipi di minacce seguenti:
+Microsoft Defender Antivirus rileva e protegge dai seguenti tipi di minacce:
 
-- Virus, malware e minacce basate sul Web sui dispositivi
+- Virus, malware e minacce basate sul Web nei dispositivi
 - Tentativi di phishing
-- Tentativi di furto dei dati
+- Tentativi di furto di dati
 
-Come un professionista IT/amministratore, è possibile visualizzare le informazioni sui rilevamenti di minacce nei [dispositivi Windows 10 registrati in Intune](/mem/intune/enrollment/device-enrollment) nell'interfaccia di amministrazione di Microsoft 365. Verranno visualizzate informazioni di riepilogo, ad esempio:
+Un professionista/amministratore IT può visualizzare informazioni sui rilevamenti delle minacce nei dispositivi [Windows 10](/mem/intune/enrollment/device-enrollment) registrati in Intune nell'interfaccia di amministrazione di Microsoft 365. Verranno visualizzate informazioni di riepilogo, ad esempio:
 
-- Il numero di dispositivi necessari per la protezione antivirus
+- Numero di dispositivi che necessitano di protezione antivirus
 - Numero di dispositivi non conformi ai criteri di sicurezza
-- Quante minacce sono attualmente attive, attenuate o risolte
+- Numero di minacce attualmente attive, attenuate o risolte
 
-Sono disponibili diverse opzioni per visualizzare informazioni specifiche sui dispositivi e sui rilevamenti di minacce:
+Sono disponibili diverse opzioni per visualizzare informazioni specifiche sui dispositivi e sui rilevamenti delle minacce:
 
-- La pagina **dispositivi attivi** nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">amministrazione di Microsoft 365</a>. Vedere [gestire i rilevamenti di minacce nella pagina dispositivi attivi](#manage-threat-detections-on-the-active-devices-page) in questo articolo.
-- La pagina **minacce attive** nell'interfaccia di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">amministrazione di Microsoft 365</a>. Vedere [gestire i rilevamenti di minacce nella pagina minacce attive](#manage-threat-detections-on-the-active-threats-page) in questo articolo.
-- La pagina **antivirus** in <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">Microsoft Endpoint Manager</a>. Vedere [gestire i rilevamenti di minacce in Microsoft Endpoint Manager](#manage-threat-detections-in-microsoft-endpoint-manager) in questo articolo.
+- Pagina **Dispositivi attivi** nell'interfaccia di amministrazione di Microsoft <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">365.</a> Vedi [Gestire i rilevamenti delle minacce nella pagina Dispositivi attivi](#manage-threat-detections-on-the-active-devices-page) in questo articolo.
+- Pagina **Minacce attive** nell'interfaccia di amministrazione di Microsoft <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">365.</a> Vedere [Gestire i rilevamenti delle minacce nella pagina Minacce attive](#manage-threat-detections-on-the-active-threats-page) in questo articolo.
+- Pagina **Antivirus** in <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">Microsoft Endpoint Manager.</a> Vedere [Gestire i rilevamenti delle minacce in Microsoft Endpoint Manager](#manage-threat-detections-in-microsoft-endpoint-manager) in questo articolo.
 
-Per ulteriori informazioni, vedere [minacce rilevate da Microsoft Defender Antivirus](threats-detected-defender-av.md).
+Per altre informazioni, vedere [Minacce rilevate da Microsoft Defender Antivirus.](threats-detected-defender-av.md)
 
-## <a name="manage-threat-detections-on-the-active-devices-page"></a>Gestire i rilevamenti di minacce nella pagina **dispositivi attivi**
+## <a name="manage-threat-detections-on-the-active-devices-page"></a>Gestire i rilevamenti delle minacce nella **pagina Dispositivi** attivi
 
 La procedura seguente si applica ai clienti che dispongono di Microsoft 365 Business Premium.
 
-1. Accedere all'interfaccia di amministrazione di Microsoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> ed eseguire l'accesso.
+1. Accedere all'interfaccia di amministrazione di Microsoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> e accedere.
 
-2. Nella pagina navigazione selezionare **dispositivi**  >  **attivi**. Verrà visualizzato un elenco di dispositivi attivi e dettagli, ad esempio lo stato di protezione, lo stato di protezione antivirus (AV) e il numero di minacce attive rilevate.
+2. Nella pagina di spostamento seleziona **Dispositivi**  >  **attivi.** Verrà visualizzato un elenco dei dispositivi attivi e dei dettagli, ad esempio lo stato di protezione, lo stato di protezione antivirus e il numero di minacce attive rilevate.
 
-3. Selezionare un dispositivo per visualizzare ulteriori dettagli sul dispositivo e sulle azioni disponibili. Viene aperto un riquadro a comparsa con suggerimenti e azioni disponibili, ad esempio **criteri di aggiornamento**, **aggiornamento antivirus**, **esecuzione di analisi rapida**, **esecuzione dell'analisi completa** e altro ancora.
+3. Seleziona un dispositivo per visualizzare altri dettagli sul dispositivo e sulle azioni disponibili. Viene visualizzato un riquadro a comparsa con consigli e azioni disponibili, ad esempio Criteri di **aggiornamento,** Aggiorna **antivirus,** Esegui analisi **rapida,** Esegui analisi **completa** e altro ancora.
 
-## <a name="manage-threat-detections-on-the-active-threats-page"></a>Gestire i rilevamenti di minacce nella pagina **minacce attive**
+## <a name="manage-threat-detections-on-the-active-threats-page"></a>Gestire i rilevamenti delle minacce nella **pagina Minacce** attive
 
-La procedura seguente si applica ai clienti che dispongono di Microsoft 365 Business Premium. I [dispositivi Windows 10 devono essere protetti](/microsoft-365/business/secure-win-10-pcs) e [registrati in Intune](/mem/intune/enrollment/windows-enrollment-methods).
+La procedura seguente si applica ai clienti che dispongono di Microsoft 365 Business Premium. [I dispositivi Windows 10 devono essere protetti](/microsoft-365/business/secure-win-10-pcs) e [registrati in Intune.](/mem/intune/enrollment/windows-enrollment-methods)
 
 > [!NOTE]
-> La pagina **Microsoft Defender Antivirus** e le **minacce attive** vengono distribuite in fasi, pertanto non è possibile accedervi immediatamente.
+> La **scheda Microsoft Defender Antivirus** e la **pagina** Delle minacce attive sono in fase di implementazione, quindi potresti non avere accesso immediato ad esse.
 
-1. Accedere all'interfaccia di amministrazione di Microsoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> ed eseguire l'accesso.
+1. Accedere all'interfaccia di amministrazione di Microsoft 365 <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> e accedere.
 
-2. Nella scheda **Microsoft Defender Antivirus** selezionare **Visualizza minacce attive**. In alternativa, nel riquadro di spostamento selezionare **integrità**  >  **Minacce & antivirus**.)
+2. Nella scheda **Microsoft Defender Antivirus** seleziona Visualizza minacce **attive.** In alternativa, nel riquadro di spostamento selezionare **Integrità**  >  **Minacce & antivirus**.)
 
-3. Nella pagina **minacce attive** selezionare una minaccia rilevata per ulteriori informazioni su di esso. Verrà aperto un riquadro a comparsa con informazioni dettagliate su tale minaccia, inclusi i dispositivi coinvolti.
+3. Nella pagina **Minacce attive** selezionare una minaccia rilevata per ulteriori informazioni. Viene visualizzato un riquadro a comparsa con i dettagli relativi a tale minaccia, inclusi i dispositivi interessati.
 
-4. Nel riquadro a comparsa, selezionare un dispositivo per visualizzare le azioni disponibili, ad esempio **criteri di aggiornamento**, **aggiornamento antivirus**, **esecuzione di analisi rapida** e altro ancora.
+4. Nel riquadro a comparsa, selezionare un dispositivo per visualizzare le azioni disponibili, ad esempio i criteri di **aggiornamento,** **l'aggiornamento antivirus,** **l'esecuzione** di analisi rapida e altro ancora.
 
 ## <a name="actions-you-can-take"></a>Azioni che è possibile eseguire
 
-Quando si visualizzano i dettagli relativi a minacce o dispositivi specifici, verranno visualizzati suggerimenti e una o più azioni che è possibile eseguire. Nella tabella seguente vengono descritte le azioni che è possibile visualizzare.<br><br>
+Quando si visualizzano i dettagli su minacce o dispositivi specifici, vengono visualizzati suggerimenti e una o più azioni che è possibile eseguire. Nella tabella seguente vengono descritte le azioni che è possibile visualizzare.<br><br>
 
 | Azione | Descrizione |
 |--|--|
-| Configurare la protezione | I criteri di protezione dalle minacce devono essere configurati. Selezionare il collegamento per passare alla pagina di configurazione del criterio.<br><br>Hai bisogno di assistenza? Vedere [gestire la sicurezza dei dispositivi con i criteri di sicurezza di endpoint in Microsoft Intune](/mem/intune/protect/endpoint-security-policy). |
-| Criteri di aggiornamento | I criteri di protezione antivirus e in tempo reale devono essere aggiornati o configurati. Selezionare il collegamento per passare alla pagina Configurazione dei criteri.<br><br>Hai bisogno di assistenza? Vedere [gestire la sicurezza dei dispositivi con i criteri di sicurezza di endpoint in Microsoft Intune](/mem/intune/protect/endpoint-security-policy). |
-| Eseguire un'analisi rapida | Avvia un'analisi antivirus rapida sul dispositivo, concentrandosi su posizioni comuni in cui potrebbe essere registrato il malware, ad esempio le chiavi del registro di sistema e le cartelle di avvio di Windows note. |
-| Eseguire l'analisi completa | Avvia un'analisi antivirus completa sul dispositivo, concentrandosi su posizioni comuni in cui potrebbe essere registrato il malware e includendo tutti i file e le cartelle presenti nel dispositivo. I risultati vengono inviati a [Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
-| Aggiornamento antivirus | Richiede il dispositivo per ottenere [gli aggiornamenti di sicurezza intelligence](https://go.microsoft.com/fwlink/?linkid=2149926) per la protezione antivirus e antimalware. |
-| Riavvia il dispositivo | Forza il riavvio di un dispositivo Windows 10 entro cinque minuti.<br><br>**Importante:** Il proprietario o l'utente del dispositivo non viene automaticamente informato del riavvio e potrebbe perdere il lavoro non salvato. |
+| Configurare la protezione | I criteri di protezione dalle minacce devono essere configurati. Selezionare il collegamento per passare alla pagina di configurazione dei criteri.<br><br>Hai bisogno di assistenza? Vedi [Gestire la sicurezza dei dispositivi con i criteri di sicurezza degli endpoint in Microsoft Intune.](/mem/intune/protect/endpoint-security-policy) |
+| Aggiornare i criteri | I criteri di protezione antivirus e in tempo reale devono essere aggiornati o configurati. Selezionare il collegamento per passare alla pagina di configurazione dei criteri.<br><br>Hai bisogno di assistenza? Vedi [Gestire la sicurezza dei dispositivi con i criteri di sicurezza degli endpoint in Microsoft Intune.](/mem/intune/protect/endpoint-security-policy) |
+| Eseguire un'analisi rapida | Avvia una rapida analisi antivirus nel dispositivo, concentrandosi sui percorsi comuni in cui potrebbe essere registrato malware, ad esempio chiavi del Registro di sistema e cartelle di avvio di Windows note. |
+| Eseguire l'analisi completa | Avvia un'analisi antivirus completa nel dispositivo, concentrandosi sui percorsi comuni in cui potrebbe essere registrato malware e includendo ogni file e cartella nel dispositivo. I risultati vengono inviati a [Microsoft Endpoint Manager.](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) |
+| Aggiornare l'antivirus | Richiede al dispositivo di ottenere aggiornamenti [di intelligence per la sicurezza](https://go.microsoft.com/fwlink/?linkid=2149926) per la protezione antivirus e antimalware. |
+| Riavvia il dispositivo | Forza il riavvio di un dispositivo Windows 10 entro cinque minuti.<br><br>**IMPORTANTE:** Il proprietario o l'utente del dispositivo non viene avvisato automaticamente del riavvio e potrebbe perdere il lavoro non salvato. |
 
-## <a name="manage-threat-detections-in-microsoft-endpoint-manager"></a>Gestire i rilevamenti di minacce in Microsoft Endpoint Manager
+## <a name="manage-threat-detections-in-microsoft-endpoint-manager"></a>Gestire i rilevamenti delle minacce in Microsoft Endpoint Manager
 
-È possibile utilizzare Microsoft Endpoint Manager per gestire i rilevamenti di minacce. I dispositivi Windows 10 devono essere [registrati in Intune](/mem/intune/enrollment/windows-enrollment-methods) (parte di Microsoft Endpoint Manager).
+Puoi usare Microsoft Endpoint Manager per gestire i rilevamenti delle minacce. I dispositivi Windows 10 devono [essere registrati in Intune](/mem/intune/enrollment/windows-enrollment-methods) (parte di Microsoft Endpoint Manager).
 
-1. Accedere all'interfaccia di amministrazione di Microsoft Endpoint Manager <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">https://endpoint.microsoft.com</a> ed eseguire l'accesso.
+1. Accedere all'interfaccia di amministrazione di Microsoft Endpoint Manager <a href="https://go.microsoft.com/fwlink/p/?linkid=2150463" target="_blank">https://endpoint.microsoft.com</a> e accedere.
 
-2. Nel riquadro di spostamento selezionare **Endpoint Security**.
+2. Nel riquadro di spostamento selezionare **Endpoint security.**
 
-3. In **Gestisci** selezionare **antivirus**. Verranno visualizzate diverse schede, ad esempio **Riepilogo**, **endpoint non integri di Windows 10** e **malware rilevati da Windows 10**.
+3. In **Gestisci** selezionare **Antivirus.** Vedrai diverse schede, ad esempio **Riepilogo,** endpoint non **integri di Windows 10** e malware rilevato da **Windows 10.**
 
-4. Rivedere le informazioni sulle schede disponibili e quindi eseguire tutte le operazioni necessarie.
+4. Esaminare le informazioni nelle schede disponibili e quindi eseguire le azioni necessarie.
 
-Si supponga, ad esempio, che i dispositivi siano elencati nella scheda **malware rilevato di Windows 10** . Quando si seleziona un dispositivo, sono disponibili determinate azioni, ad esempio **riavvio**, **analisi rapida**, **analisi completa**, **sincronizzazione** o **aggiornamento**. Selezionare un'azione per il dispositivo.
+Si supponga, ad esempio, che i dispositivi siano elencati nella **scheda Malware rilevato da Windows 10.** Quando si seleziona un dispositivo, sono disponibili alcune azioni, ad esempio  **Riavvia,** Analisi **rapida,** Analisi **completa,** Sincronizza o **Aggiorna firme.** Seleziona un'azione per il dispositivo.
 
-Nella tabella seguente vengono descritte le azioni che è possibile visualizzare in Microsoft Endpoint Manager.<br><br>
+La tabella seguente descrive le azioni che potrebbero essere disponibili in Microsoft Endpoint Manager.<br><br>
 
 | Azione | Descrizione |
 |--|--|
-| Riavvia | Forza il riavvio di un dispositivo Windows 10 entro cinque minuti.<br><br>**Importante:** Il proprietario o l'utente del dispositivo non viene automaticamente informato del riavvio e potrebbe perdere il lavoro non salvato. |
-| Analisi rapida | Avvia un'analisi antivirus rapida sul dispositivo, concentrandosi su posizioni comuni in cui potrebbe essere registrato il malware, ad esempio le chiavi del registro di sistema e le cartelle di avvio di Windows note. I risultati vengono inviati a [Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
-| Analisi completa | Avvia un'analisi antivirus completa sul dispositivo, concentrandosi su posizioni comuni in cui potrebbe essere registrato il malware e includendo tutti i file e le cartelle presenti nel dispositivo. I risultati vengono inviati a [Microsoft Endpoint Manager](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager). |
-| Sincronizza | Richiede l'archiviazione di un dispositivo con Intune (parte di Microsoft Endpoint Manager). Quando il dispositivo esegue la verifica, il dispositivo riceve eventuali azioni o criteri in sospeso assegnati al dispositivo. |
-| Aggiornare le firme | Richiede il dispositivo per ottenere [gli aggiornamenti di sicurezza intelligence](https://go.microsoft.com/fwlink/?linkid=2149926) per la protezione antivirus e antimalware. |
+| Riavvia | Forza il riavvio di un dispositivo Windows 10 entro cinque minuti.<br><br>**IMPORTANTE:** Il proprietario o l'utente del dispositivo non viene avvisato automaticamente del riavvio e potrebbe perdere il lavoro non salvato. |
+| Analisi rapida | Avvia una rapida analisi antivirus nel dispositivo, concentrandosi sui percorsi comuni in cui potrebbe essere registrato malware, ad esempio chiavi del Registro di sistema e cartelle di avvio di Windows note. I risultati vengono inviati a [Microsoft Endpoint Manager.](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) |
+| Analisi completa | Avvia un'analisi antivirus completa nel dispositivo, concentrandosi sui percorsi comuni in cui potrebbe essere registrato malware e includendo ogni file e cartella nel dispositivo. I risultati vengono inviati a [Microsoft Endpoint Manager.](/mem/intune/fundamentals/tutorial-walkthrough-endpoint-manager) |
+| Sincronizza | Richiede un dispositivo per l'archiviazione con Intune (parte di Microsoft Endpoint Manager). Quando il dispositivo esegue l'archiviazione, riceve eventuali azioni o criteri in sospeso assegnati al dispositivo. |
+| Aggiornare le firme | Richiede al dispositivo di ottenere aggiornamenti [di intelligence per la sicurezza](https://go.microsoft.com/fwlink/?linkid=2149926) per la protezione antivirus e antimalware. |
 
 > [!TIP]
-> Per ulteriori informazioni, vedere [Remote actions for Devices](/mem/intune/protect/endpoint-security-manage-devices#remote-actions-for-devices).
+> Per altre informazioni, vedi [Azioni remote per i dispositivi.](/mem/intune/protect/endpoint-security-manage-devices#remote-actions-for-devices)
 
-## <a name="how-to-submit-a-file-for-malware-analysis"></a>Come inviare un file per l'analisi antimalware
+## <a name="how-to-submit-a-file-for-malware-analysis"></a>Come inviare un file per l'analisi malware
 
-Se si dispone di un file che si ritiene mancato o classificato erroneamente come malware, è possibile inviare tale file a Microsoft per l'analisi antimalware. Gli utenti e gli amministratori IT possono inviare un file per l'analisi. Visitare [https://www.microsoft.com/wdsi/filesubmission](https://www.microsoft.com/wdsi/filesubmission) .
+Se si dispone di un file che si pensa sia stato perso o erroneamente classificato come malware, è possibile inviarlo a Microsoft per l'analisi del malware. Gli utenti e gli amministratori IT possono inviare un file per l'analisi. Visitare [https://www.microsoft.com/wdsi/filesubmission](https://www.microsoft.com/wdsi/filesubmission) .

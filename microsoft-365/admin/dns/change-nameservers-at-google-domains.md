@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 68a08e94-26c2-4df2-9216-026b8ec907ca
-description: Informazioni su come è possibile configurare Microsoft per gestire i record DNS del dominio personalizzato su Google Domains.
+description: Informazioni su come configurare Microsoft per gestire i record DNS del dominio personalizzato in Google Domains.
 ms.openlocfilehash: e475e222b6f1c9717008a49b172b0ecac5ec6fc7
 ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
@@ -32,7 +32,7 @@ ms.locfileid: "49658441"
 
  Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.yml)**. 
   
-Se si desidera gestire i record DNS per l'utente, seguire le istruzioni riportate di seguito. Se si preferisce, è possibile [gestire tutti i record DNS su Google Domains](create-dns-records-at-google-domains.md).
+Seguire queste istruzioni se si desidera che Microsoft gestirà i record DNS. Se si preferisce, è possibile [gestire tutti i record DNS su Google Domains.](create-dns-records-at-google-domains.md)
   
     
 ## <a name="add-a-txt-record-for-verification"></a>Aggiungere un record TXT a scopo di verifica
@@ -42,11 +42,11 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
 > [!NOTE]
 >  Questo record viene usato esclusivamente per verificare di essere proprietari del dominio e non ha altri effetti. È possibile eliminarlo in un secondo momento, se si preferisce. 
   
-1. Per iniziare, passare alla propria pagina dei domini su Google Domains tramite [questo collegamento](https://domains.google.com/registrar). You'll be prompted to sign in. To do so:
+1. To get started, go to your domains page at Google Domains via [this link.](https://domains.google.com/registrar) You'll be prompted to sign in. To do so:
     
 1. Scegliere **Accedi**.
     
-2. Immettere le credenziali di accesso e selezionare **di nuovo accedi**.
+2. Immetti le credenziali di accesso e seleziona di **nuovo Accedi.**
     
 2. Nella pagina **Domains**, nella sezione **Domain**, selezionare **Configura DNS** per il dominio che si vuole modificare. 
     
@@ -65,7 +65,7 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
     
 5. Attendere alcuni minuti prima di continuare, in modo che il record appena creato venga aggiornato in Internet.
     
-Dopo aver aggiunto il record al sito del registrar, è possibile tornare a Microsoft e richiedere una ricerca per il record.
+Dopo aver aggiunto il record nel sito del registrar, si tornerà a Microsoft e si richiederà una ricerca del record.
   
 Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
@@ -83,13 +83,13 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>Modificare i record del server dei nomi del dominio
 
-Per completare la configurazione del dominio con Microsoft, è necessario modificare i record NS del dominio presso il registrar in modo che puntino ai server dei nomi primari e secondari Microsoft. Questo configura Microsoft per aggiornare i record DNS del dominio per l'utente. Verranno aggiunti tutti i record necessari per il funzionamento della posta elettronica, di Skype for Business online e del sito Web pubblico con il dominio.
+Per completare la configurazione del dominio con Microsoft, è necessario modificare i record NS del dominio presso il registrar in modo che puntino ai server dei nomi primario e secondario Microsoft. Questo consente a Microsoft di aggiornare automaticamente i record DNS del dominio. Verranno aggiunti tutti i record necessari per il funzionamento della posta elettronica, di Skype for Business online e del sito Web pubblico con il dominio.
   
 > [!CAUTION]
-> Quando si modificano i record NS del dominio in modo che puntino ai server dei nomi Microsoft, sono coinvolti tutti i servizi attualmente associati al dominio. Ad esempio, tutti i messaggi di posta elettronica inviati al dominio (come rob@ *your_domain.*  com) inizierà a essere Microsoft dopo aver apportato questa modifica. 
+> Quando si modificano i record NS del dominio in modo che puntino ai server dei nomi Microsoft, vengono interessati tutti i servizi attualmente associati al dominio. Ad esempio, tutta la posta elettronica inviata al dominio ,ad esempio rob@ *your_domain.*  com) inizierà a venire a Microsoft dopo aver apportato questa modifica. 
   
 > [!IMPORTANT]
-> The following procedure will show you how to delete any other, unwanted nameservers from the list, and also how to add the correct nameservers if they are not already in the list. > dopo aver completato la procedura descritta in questa sezione, gli unici server dei nomi che devono essere elencati sono i seguenti quattro: 
+> The following procedure will show you how to delete any other, unwanted nameservers from the list, and also how to add the correct nameservers if they are not already in the list. > Dopo aver completato i passaggi descritti in questa sezione, gli unici server dei nomi che dovrebbero essere elencati sono i quattro seguenti: 
   
 1. Per iniziare, passare alla propria pagina dei domini su Google Domains usando [questo collegamento](https://domains.google.com/registrar). Verrà richiesto di eseguire l'accesso. A questo scopo:
     
@@ -122,15 +122,15 @@ Per completare la configurazione del dominio con Microsoft, è necessario modifi
 |**Terzo server dei nomi** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Quarto server dei nomi** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![Google-domini-BP-redelegate-1-2](../../media/6d14544d-7783-4ed4-b4dd-691624af7172.png)
+   ![Google-Domains-BP-Redelegate-1-2](../../media/6d14544d-7783-4ed4-b4dd-691624af7172.png)
   
-2. Selezionare il controllo **+ (Aggiungi)** per creare una riga vuota. 
+2. Selezionare il **controllo + (aggiungi)** per creare una riga vuota. 
     
     ![Google-Domains-BP-Redelegate-1-3](../../media/ea23e5fc-07e1-4ffc-b8cf-8526867b752d.png)
   
 3. Aggiungere gli altri tre record dei server dei nomi.
     
-    Nella sezione **Use Custom Name Servers** creare un record usando i valori della riga successiva della tabella e quindi selezionare il controllo **+ (Aggiungi)** per aggiungere un'altra riga. 
+    Nella sezione **Use custom name servers** creare un record utilizzando i valori della riga successiva della tabella e quindi selezionare il controllo + **(add)** per aggiungere un'altra riga. 
     
     Ripetere questa procedura fino a creare tutti e quattro i record dei server dei nomi.
     
@@ -139,14 +139,14 @@ Per completare la configurazione del dominio con Microsoft, è necessario modifi
     ![Google-Domains-BP-Redelegate-1-5](../../media/cb954aa2-12ee-4e90-9b67-184cbe898bbb.png)
   
 > [!NOTE]
-> L'aggiornamento dei record dei server dei nomi nel sistema DNS di Internet può richiedere fino a diverse ore. L'indirizzo di posta elettronica e gli altri servizi di Microsoft saranno tutti impostati per l'utilizzo con il dominio. 
+> L'aggiornamento dei record dei server dei nomi nel sistema DNS di Internet può richiedere fino a diverse ore. Quindi la posta elettronica Microsoft e altri servizi saranno tutti impostati per l'utilizzo con il dominio. 
   
 ### <a name="if-there-are-nameservers-already-listed"></a>Se SONO già elencati server dei nomi
 
-1. Se sono elencati altri server dei nomi, selezionare **modifica**.
+1. Se sono elencati altri server dei nomi, selezionare **Modifica.**
     
     > [!CAUTION]
-    > Follow these steps only if you have existing nameservers other than the four correct nameservers. (Ovvero, eliminare solo eventuali server dei nomi correnti che  *non*  sono denominati **NS1.BDM.microsoftonline.com**, **NS2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com** o **NS4.BDM.microsoftonline.com**). 
+    > Follow these steps only if you have existing nameservers other than the four correct nameservers. In altre informazioni, eliminare solo i  server dei nomi correnti non denominati **ns1.bdm.microsoftonline.com,** **ns2.bdm.microsoftonline.com,** **ns3.bdm.microsoftonline.com** o **ns4.bdm.microsoftonline.com**. 
   
     ![Google-Domains-BP-Redelegate-1-6-1](../../media/fb45d120-55ab-42c2-bdb6-19b130c3c7db.png)
   
@@ -163,15 +163,15 @@ Per completare la configurazione del dominio con Microsoft, è necessario modifi
 |**Terzo server dei nomi** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Quarto server dei nomi** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![Google-domini-BP-redelegate-1-7](../../media/e008dccb-d789-4f52-8ecc-02831b7c6fb2.png)
+   ![Google-Domains-BP-Redelegate-1-7](../../media/e008dccb-d789-4f52-8ecc-02831b7c6fb2.png)
   
-4. Selezionare il controllo **+ (Aggiungi)** per creare una riga vuota. 
+4. Selezionare il **controllo +(add)** per creare una riga vuota. 
     
     ![Google-Domains-BP-Redelegate-1-8](../../media/6ce40b1e-8464-443f-a64a-825dc8764590.png)
   
 5. Aggiungere gli altri due record dei server dei nomi.
     
-    Nella sezione **Use Custom Name Servers** creare un record usando i valori della riga successiva della tabella e quindi selezionare il controllo **+ (Aggiungi)** per aggiungere un'altra riga. 
+    Nella sezione **Use custom name servers** creare un record utilizzando i valori della riga successiva della tabella e quindi selezionare il controllo **+(add)** per aggiungere un'altra riga. 
     
     Ripetere questa procedura fino a creare tutti e quattro i record dei server dei nomi.
     
@@ -180,5 +180,5 @@ Per completare la configurazione del dominio con Microsoft, è necessario modifi
     ![Google-Domains-BP-Redelegate-1-5](../../media/cb954aa2-12ee-4e90-9b67-184cbe898bbb.png)
   
 > [!NOTE]
-> L'aggiornamento dei record dei server dei nomi nel sistema DNS di Internet può richiedere fino a diverse ore. L'indirizzo di posta elettronica e gli altri servizi di Microsoft saranno tutti impostati per l'utilizzo con il dominio. 
+> L'aggiornamento dei record dei server dei nomi nel sistema DNS di Internet può richiedere fino a diverse ore. Quindi la posta elettronica Microsoft e altri servizi saranno tutti impostati per l'utilizzo con il dominio. 
   

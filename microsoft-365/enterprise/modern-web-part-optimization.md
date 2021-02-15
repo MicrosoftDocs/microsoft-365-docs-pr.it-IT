@@ -20,7 +20,7 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Informazioni su come utilizzare la diagnostica di pagina per ottimizzare le prestazioni delle web part nelle pagine del sito di SharePoint Online moderne.
+description: Informazioni su come usare Diagnostica pagine per ottimizzare le prestazioni delle web part nelle pagine moderne dei siti di SharePoint Online.
 ms.openlocfilehash: f7b72aa8ed212147c06660585c4e58e548762c35
 ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
 ms.translationtype: MT
@@ -80,7 +80,7 @@ Sono tre le categorie delle possibili cause dei problemi di prestazioni delle we
   - Riutilizzare framework come _React_ e _Fabric imports_, che fanno parte di SharePoint Framework (SPFx). Per altre informazioni, vedere [Panoramica di SharePoint Framework](https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview).
   - Assicurarsi di usare la versione più recente di SharePoint Framework e di eseguire l'aggiornamento alle nuove versioni non appena disponibili.
 - Recupero e memorizzazione dei dati nella cache
-  - Se la Web part si basa su chiamate server aggiuntive per il recupero dei dati per la visualizzazione, verificare che le API del server siano veloci e/o implementino la memorizzazione nella cache lato client (ad esempio, l'utilizzo di _localStorage_ o _IndexedDB_ per set di grandi dimensioni).
+  - Se la web part si basa su chiamate aggiuntive al server per recuperare i dati per la visualizzazione, verificare che tali API server siano veloci e/o implementare la memorizzazione nella cache sul lato client (ad esempio, l'uso di _localStorage_ o _IndexedDB_ per set più grandi).
   - Se sono necessarie più chiamate per eseguire il rendering dei dati critici, provare a eseguirle in batch nel server o a usare altri metodi per consolidare le richieste in un'unica chiamata.
   - In alternativa, se alcuni elementi dei dati richiedono una API più lenta, ma non sono essenziali per il rendering iniziale, sdoppiarli in una chiamata separata che viene eseguita dopo il rendering dei dati critici.
   - Se più parti usano gli stessi dati, usare un livello dati comune per evitare chiamate duplicate.

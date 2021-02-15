@@ -34,20 +34,20 @@ ms.locfileid: "49376278"
 
 Questo articolo si applica a Microsoft 365 Business Premium.
 
-Dopo aver [configurato](set-up.md) Microsoft 365 Business Premium, è possibile proteggere i computer Windows 10 dell'organizzazione da furti e minacce dannose come virus e malware.
+Dopo aver [configurato](set-up.md) Microsoft 365 Business Premium, è il momento di proteggere i computer Windows 10 nell'organizzazione da furti e minacce dannose come virus e malware.
 
-## <a name="to-secure-your-windows-10-computers"></a>Per proteggere i computer con Windows 10
+## <a name="to-secure-your-windows-10-computers"></a>Per proteggere i computer Windows 10
 
 1. Autenticarsi allì[interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com) usando le proprie credenziali globali di amministrazione. 
-2. Sulla barra di spostamento sinistra, selezionare **installazione** e quindi, in **accesso e sicurezza**, scegliere **Proteggi i computer Windows 10**. Scegliere **View** per iniziare.
-3. Nella pagina **secure your Windows 10 Computers** leggere tutte le informazioni per capire cosa si sta attivando e quali sono le conseguenze dell'utente.
+2. Sulla barra di spostamento sinistra seleziona **Configurazione** e quindi, in Accesso e **sicurezza,** scegli Proteggi **i computer Windows 10.** Scegliere **Visualizza** per iniziare.
+3. Nella pagina **Proteggi i computer Windows 10** leggi tutte le informazioni per comprendere cosa stai attivando e qual è l'impatto dell'utente.
 
-    Nella parte superiore della pagina, scegliere **inizia**.
+    Nella parte superiore della pagina scegliere **Introduzione.**
 
-4. Nel riquadro **secure your Windows 10 Computers** , selezionare le opzioni che si desidera abilitare. Per ulteriori informazioni sulle impostazioni, vedere [Secure Windows 10 Devices](secure-windows-10-devices.md). 
+4. Nel riquadro **Proteggi i computer Windows 10** seleziona le opzioni che vuoi attivare. Per altre informazioni sulle impostazioni, vedi [Proteggere i dispositivi Windows 10.](secure-windows-10-devices.md) 
     
-    Per la maggior parte delle organizzazioni, le opzioni qui offrono un buon livello di sicurezza, tuttavia, se l'organizzazione ha esigenze di sicurezza più complesse, è anche possibile utilizzare le previsioni di sicurezza predefinite per proteggere i dispositivi Windows 10. Per ulteriori informazioni, vedere [previsioni di sicurezza per i dispositivi Windows 10](https://docs.microsoft.com/mem/intune/protect/security-baselines).   
+    Per la maggior parte delle organizzazioni, le opzioni qui disponibili offrono un buon livello di sicurezza, tuttavia, se l'organizzazione ha esigenze di sicurezza più complesse, puoi anche usare linee di base di sicurezza predefinite per proteggere i dispositivi Windows 10. Per altre informazioni, vedi [le linee di base della sicurezza per i dispositivi Windows 10.](https://docs.microsoft.com/mem/intune/protect/security-baselines)   
 
-1. Scegliere **Apply Settings**.
+1. Scegliere **Applica impostazioni.**
 
-    Queste impostazioni si applicano a tutti gli utenti dell'organizzazione. Per impostare criteri diversi per i diversi gruppi di sicurezza, vedere [impostare le impostazioni di protezione dei dispositivi per PC Windows 10](protection-settings-for-windows-10-pcs.md).
+    Queste impostazioni verranno applicate a tutti gli utenti dell'organizzazione. Per configurare criteri diversi per gruppi di sicurezza diversi, vedi Configurare le impostazioni di [protezione dei dispositivi per PC Windows 10.](protection-settings-for-windows-10-pcs.md)

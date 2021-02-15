@@ -30,27 +30,27 @@ ms.locfileid: "49527514"
 ---
 # <a name="about-the-exchange-online-admin-role"></a>Informazioni sul ruolo di amministratore di Exchange Online
 
-Per facilitare l'amministrazione di Microsoft 365, è possibile [assegnare](assign-admin-roles.md) agli utenti le autorizzazioni per gestire la posta elettronica e le cassette postali dell'organizzazione dall'interfaccia di [amministrazione di Exchange](https://go.microsoft.com/fwlink/p/?LinkID=271807). Per farlo, assegnare il ruolo di amministratore di Exchange.
+Per facilitare l'amministrazione di Microsoft [](assign-admin-roles.md) 365, è possibile assegnare agli utenti le autorizzazioni per gestire la posta elettronica e le cassette postali dell'organizzazione dall'interfaccia [di amministrazione di Exchange.](https://go.microsoft.com/fwlink/p/?LinkID=271807) Per farlo, assegnare il ruolo di amministratore di Exchange.
   
- **Suggerimento**: Quando si assegna il ruolo di amministratore di Exchange a un utente, assegnare anche il ruolo di amministratore dei servizi. In questo modo è possibile visualizzare informazioni importanti nell'interfaccia di amministrazione di Microsoft 365, ad esempio l'integrità del servizio Exchange Online, nonché le notifiche relative a modifiche e rilasci.
+ **Suggerimento**: Quando si assegna il ruolo di amministratore di Exchange a un utente, assegnare anche il ruolo di amministratore dei servizi. In questo modo possono visualizzare informazioni importanti nell'interfaccia di amministrazione di Microsoft 365, ad esempio l'integrità del servizio Exchange Online, nonché le notifiche di modifica e rilascio.
   
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-begin"></a>Informazioni preliminari
 
 Ecco alcune delle principali attività che possono eseguire gli utenti a cui è stato assegnato il ruolo di amministratore di Exchange:
   
 - [Recuperare gli elementi eliminati nella cassetta postale di un utente](https://docs.microsoft.com/microsoft-365/enterprise/recover-deleted-items-in-a-mailbox)
 
-- [Configurare un criterio di archiviazione ed eliminazione per le cassette postali dell'organizzazione](https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes).
+- [Configurare un criterio di archiviazione ed eliminazione per le cassette postali nell'organizzazione.](https://docs.microsoft.com/microsoft-365/compliance/set-up-an-archive-and-deletion-policy-for-mailboxes)
 
 - Impostare le caratteristiche delle cassette postali, ad esempio i criteri di condivisione della cassetta postale: con che modalità gli utenti possono condividere le informazioni su calendario e contatti con altri utenti all'esterno dell'organizzazione.
 
-- Impostare i delegati "[Invia come](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" e "[Invia per conto](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)di" per la cassetta postale di un utente. Ad esempio, un dirigente potrebbe richiedere che il proprio assistente possa inviare messaggi di posta elettronica per conto suo.
+- Configurare i delegati "[Invia come](give-mailbox-permissions-to-another-user.md#send-email-from-another-users-mailbox)" e " Invia per[conto](give-mailbox-permissions-to-another-user.md#send-email-on-behalf-of-another-user)di " per la cassetta postale di un utente. Ad esempio, un dirigente potrebbe richiedere che il proprio assistente possa inviare messaggi di posta elettronica per conto suo.
 
-- [Creare una cassetta postale condivisa](../email/create-a-shared-mailbox.md) in modo che un gruppo di persone possa monitorare e inviare messaggi di posta elettronica da un indirizzo di posta elettronica comune.
+- [Creare una cassetta postale condivisa in modo](../email/create-a-shared-mailbox.md) che un gruppo di persone possa monitorare e inviare messaggi di posta elettronica da un indirizzo di posta elettronica comune.
 
-- Filtri di protezione da posta [indesiderata](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection) e malware per l'organizzazione.
+- [Filtri antispam e antimalware](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-spam-protection) per la posta elettronica per l'organizzazione.
 
-- Gestire i gruppi di Microsoft 365
+- Gestire gruppi di Microsoft 365
 
 ## <a name="exchange-online-role-groups"></a>Gruppi di ruoli di Exchange Online
 
@@ -66,4 +66,4 @@ Se si ha un'organizzazione di grandi dimensioni, l'amministratore di Exchange pu
 
 - [Informazioni sul ruolo di amministratore di Skype for Business](https://docs.microsoft.com/skypeforbusiness/skype-for-business-online)
 
-- [Utilizzare il ruolo di amministratore di Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/using-admin-roles) 
+- [Usare il ruolo di amministratore di Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/using-admin-roles) 

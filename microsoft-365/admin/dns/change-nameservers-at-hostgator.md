@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f3bd3c62-0477-48e4-b2b5-21e329d67985
-description: Informazioni su come è possibile configurare Microsoft per gestire i record DNS del dominio personalizzato in Hostgator.
+description: Informazioni su come configurare Microsoft per gestire i record DNS del dominio personalizzato in Hostgator.
 ms.openlocfilehash: 34e7bbe3abc084185f72f4fef004ad891492ef3c
 ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
@@ -32,7 +32,7 @@ ms.locfileid: "49658021"
 
  Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.yml)**.
   
-Se si desidera gestire i record DNS per l'utente, seguire le istruzioni riportate di seguito. Se si preferisce, è possibile [gestire tutti i record Microsoft DNS su Hostgator](create-dns-records-at-hostgator.md).
+Seguire queste istruzioni se si desidera che Microsoft gestirà i record DNS. Se si preferisce, è possibile [gestire tutti i record DNS Microsoft su Hostgator.](create-dns-records-at-hostgator.md)
   
     
 ## <a name="point-your-domain-to-your-hosting-account"></a>Associare il dominio all'account di hosting.
@@ -46,11 +46,11 @@ Seguire questa procedura per associare il dominio e gli account di hosting.
     
     ![Connessione dell'elenco attività a Outlook](../../media/6749ac23-4832-4daf-8f3b-bc3b9b1b979c.png)
   
-2. Selezionare la scheda **domini** .
+2. Selezionare la **scheda Domini.**
     
     ![Barra multifunzione di Office 2010](../../media/56d12bfd-3549-4033-90dc-077c76ca798c.png)
   
-3. Nella pagina **Gestisci domini** , nell'area **domini personali** , selezionare il dominio che si desidera aggiornare.
+3. **Nell'area My** Domains della pagina Manage **Domains** selezionare il dominio che si desidera aggiornare.
     
     ![Hostgator-BP-Redelegate-1-2](../../media/2c2f8530-26a1-4e62-bb04-b3874bc1cf36.png)
   
@@ -58,7 +58,7 @@ Seguire questa procedura per associare il dominio e gli account di hosting.
     
     ![Immagine del pulsante Imposta colore trasparente](../../media/c8979d8a-ee96-4064-a8df-c5b01054cb16.png)
   
-5. Nella pagina **Name Servers** per il dominio, nell'elenco a discesa **selezionare l'account di hosting** , scegliere l' **account di hosting** associato al dominio.
+5. Nella pagina **Name Servers** del dominio scegliere l'account **di hosting** associato al dominio nell'elenco a discesa Select **Hosting Account.**
     
     ![Dashboard di Power BI](../../media/4cf61060-1e8a-4758-9892-32059ffc90c2.png)
   
@@ -69,7 +69,7 @@ Seguire questa procedura per associare il dominio e gli account di hosting.
 ## <a name="add-a-txt-record-for-verification"></a>Aggiungere un record TXT a scopo di verifica
 
 > [!IMPORTANT]
-> Prima di eseguire questa procedura, è necessario prima eseguire la procedura nella prima sezione di questo articolo, [puntare il dominio all'account di hosting.](#point-your-domain-to-your-hosting-account)
+> Prima di eseguire questa procedura, è necessario eseguire la procedura descritta nella prima sezione di questo articolo, Puntare il dominio [all'account di hosting.](#point-your-domain-to-your-hosting-account)
   
 Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di esserne il proprietario. La capacità di accedere al proprio account nel registrar e di creare il record DNS dimostra a Microsoft che si è il proprietario del dominio.
   
@@ -81,9 +81,9 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
     A ogni account ospitato su Hostgator è assegnato un indirizzo cPanel univoco. L'indirizzo cPanel dovrebbe avere un aspetto simile a https://YourSiteAddress:secure-port-number. Tale indirizzo sarà specificato nel messaggio di posta elettronica di iscrizione ricevuto da Hostgator.
     
     > [!IMPORTANT]
-    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. Per iniziare, è possibile acquistare un account di hosting da Hostgator o [modificare i record del server dei nomi del dominio](#change-your-domains-nameserver-ns-records) in modo che puntino a Microsoft. 
+    > To have a cPanel associated with your domain, you need a hosting account with Hostgator. To get started, you can either purchase a hosting account from Hostgator or [change your domain's nameserver (NS) records](#change-your-domains-nameserver-ns-records) to point to Microsoft. 
   
-2. Nell'area **Domains** della pagina del **Pannello di controllo** selezionare **Advanced DNS zone editor**.
+2. Nell'area Domini della  pagina **Pannello** di controllo selezionare Advanced DNS **Zone Editor.**
     
     Può essere necessario scorrere la pagina. 
     
@@ -96,11 +96,11 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
 |**Nome** <br/> |**TTL** <br/> |**Type** <br/> |**TXT Data** <br/> |
 |Usare il proprio  *nome_dominio*  , ad esempio fourthcoffee.com.<br/> **Questo valore DEVE terminare con un punto (.)** <br/> |1   <br/> |TXT  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)     <br/>  |
    
-4. Selezionare **Aggiungi record**.
+4. Selezionare **Aggiungi record.**
     
 5. Attendere alcuni minuti prima di continuare, in modo che il record appena creato venga aggiornato in Internet.
     
-Dopo aver aggiunto il record al sito del registrar, è possibile tornare a Microsoft e richiedere una ricerca per il record.
+Dopo aver aggiunto il record nel sito del registrar, si tornerà a Microsoft e si richiederà una ricerca del record.
   
 Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
@@ -118,39 +118,39 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 ## <a name="change-your-domains-nameserver-ns-records"></a>Modificare i record del server dei nomi del dominio
 
-Per completare la configurazione del dominio con Microsoft, è necessario modificare i record NS del dominio presso il registrar in modo che puntino ai server dei nomi primari e secondari Microsoft. Questo configura Microsoft per aggiornare i record DNS del dominio per l'utente. Verranno aggiunti tutti i record necessari per il funzionamento della posta elettronica, di Skype for Business online e del sito Web pubblico con il dominio.
+Per completare la configurazione del dominio con Microsoft, è necessario modificare i record NS del dominio presso il registrar in modo che puntino ai server dei nomi primario e secondario Microsoft. Questo consente a Microsoft di aggiornare automaticamente i record DNS del dominio. Verranno aggiunti tutti i record necessari per il funzionamento della posta elettronica, di Skype for Business online e del sito Web pubblico con il dominio.
   
 > [!CAUTION]
-> Quando si modificano i record NS del dominio in modo che puntino ai server dei nomi Microsoft, sono coinvolti tutti i servizi attualmente associati al dominio. Ad esempio, tutta la posta elettronica inviata al dominio (come rob@ *your_domain*  . com) inizierà a venire a Microsoft dopo aver apportato questa modifica.
+> Quando si modificano i record NS del dominio in modo che puntino ai server dei nomi Microsoft, vengono interessati tutti i servizi attualmente associati al dominio. Ad esempio, tutti i messaggi di posta elettronica inviati al dominio (ad esempio rob@ *your_domain*  .com) inizieranno a essere inviati a Microsoft dopo aver apportato questa modifica.
   
 > [!IMPORTANT]
-> Nella procedura seguente viene illustrato come eliminare tutti gli altri server dei nomi indesiderati dall'elenco e come aggiungere i server dei nomi corretti se non sono già elencati. Dopo aver completato la procedura descritta in questa sezione, gli unici server dei nomi che devono essere elencati sono questi quattro:  **NS1.BDM.microsoftonline.com**, **NS2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com** e **NS4.BDM.microsoftonline.com**.
+> Nella procedura seguente viene illustrato come eliminare altri server dei nomi indesiderati dall'elenco e come aggiungere i server dei nomi corretti se non sono già elencati. Dopo aver completato i passaggi descritti in questa sezione, gli unici server dei nomi che dovrebbero essere elencati sono i quattro seguenti:  **ns1.bdm.microsoftonline.com,** **ns2.bdm.microsoftonline.com,** **ns3.bdm.microsoftonline.com** e **ns4.bdm.microsoftonline.com**.
   
 1. Per iniziare, passare alla pagina del portale per i clienti di Hostgator usando [questo collegamento](https://portal.hostgator.com/domain/manage). Verrà richiesto di eseguire l'accesso.
     
     ![Connessione dell'elenco attività a Outlook](../../media/6749ac23-4832-4daf-8f3b-bc3b9b1b979c.png)
   
-2. Selezionare la scheda **domini** . 
+2. Selezionare la **scheda Domini.** 
     
     ![Barra multifunzione di Office 2010](../../media/56d12bfd-3549-4033-90dc-077c76ca798c.png)
   
-3. Nella pagina **Gestisci domini** , nell'area **domini personali** , selezionare il dominio che si desidera aggiornare. 
+3. **Nell'area My** Domains della pagina Manage **Domains** selezionare il dominio che si desidera aggiornare. 
     
     ![Hostgator-BP-Redelegate-1-2](../../media/2c2f8530-26a1-4e62-bb04-b3874bc1cf36.png)
   
-4. Nell'area **Name Servers** della pagina **Domain Overview** selezionare **Change**.
+4. Nell'area **Name Servers** della pagina **Domain Overview** selezionare **Change.**
     
     ![Immagine del pulsante Imposta colore trasparente](../../media/c8979d8a-ee96-4064-a8df-c5b01054cb16.png)
   
-5. Nella pagina **Name Servers** per il dominio, nell'elenco a discesa **selezionare l'account di hosting** , scegliere l' **account di hosting** associato al dominio. 
+5. Nella pagina **Name Servers** del dominio scegliere l'account **di hosting** associato al dominio nell'elenco a discesa Select **Hosting Account.** 
     
     ![Dashboard di Power BI](../../media/4cf61060-1e8a-4758-9892-32059ffc90c2.png)
   
-6. Selezionare **imposta manualmente i server My Name**.
+6. Selezionare **Imposta manualmente i server dei nomi.**
     
     ![Hostgator-BP-Redelegate-1-5](../../media/5b73ae32-f26e-48aa-b5ad-6da20f1c491a.png)
   
-7.   **Attenzione**: attenersi alla seguente procedura solo se sono presenti server dei nomi diversi dai quattro nameserver corretti. (Ovvero, eliminare solo eventuali server dei nomi correnti che  *non*  sono denominati **NS1.BDM.microsoftonline.com**, **NS2.BDM.microsoftonline.com**, **NS3.BDM.microsoftonline.com** o **NS4.BDM.microsoftonline.com**).
+7.   **ATTENZIONE:** eseguire questa procedura solo se sono disponibili server dei nomi diversi da quattro server dei nomi corretti. In altre informazioni, eliminare solo i  server dei nomi correnti non denominati **ns1.bdm.microsoftonline.com,** **ns2.bdm.microsoftonline.com,** **ns3.bdm.microsoftonline.com** o **ns4.bdm.microsoftonline.com**.
   
         Sempre nella pagina **Name Servers** del dominio, eliminare ognuno dei server dei nomi presenti nell'elenco selezionandolo e premendo **CANC**. 
     
@@ -165,11 +165,11 @@ Per completare la configurazione del dominio con Microsoft, è necessario modifi
 |**Name Server 3:** <br/> |ns3.bdm.microsoftonline.com  <br/> |
 |**Name Server 4:** <br/> |ns4.bdm.microsoftonline.com  <br/> |
    
-   ![Hostgator-BP-redelegate-1-7-1](../../media/a8c10aa7-30b0-4bc8-9596-20256d396274.png)
+   ![Hostgator-BP-Redelegate-1-7-1](../../media/a8c10aa7-30b0-4bc8-9596-20256d396274.png)
   
 9. Aggiungere gli altri valori dei server dei nomi.
     
-    Selezionare **(+)** Aggiungi, quindi digitare oppure copiare e incollare il valore della riga successiva della tabella nella casella relativa al record. 
+    Selezionare **(+)** aggiungere e quindi digitare oppure copiare e incollare il valore dalla riga successiva della tabella nella casella del record. 
     
     Ripetere questa procedura fino a creare tutti e quattro i record dei server dei nomi.
     
@@ -180,4 +180,4 @@ Per completare la configurazione del dominio con Microsoft, è necessario modifi
     ![Hostgator-BP-Redelegate-1-8](../../media/bd6b0dfa-5d39-4805-970d-7ab153cff117.png)
   
 > [!NOTE]
-> L'aggiornamento dei record dei server dei nomi nel sistema DNS di Internet può richiedere fino a diverse ore. L'indirizzo di posta elettronica e gli altri servizi di Microsoft saranno tutti impostati per l'utilizzo con il dominio.
+> L'aggiornamento dei record dei server dei nomi nel sistema DNS di Internet può richiedere fino a diverse ore. Quindi la posta elettronica Microsoft e altri servizi saranno tutti impostati per l'utilizzo con il dominio.

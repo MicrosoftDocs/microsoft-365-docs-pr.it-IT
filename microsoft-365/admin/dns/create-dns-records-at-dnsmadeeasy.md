@@ -1,5 +1,5 @@
 ---
-title: Creare record DNS in DNSMadeEasy per Microsoft
+title: Creare record DNS su DNSMadeEasy per Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: e158b079-b054-4b7e-8e01-e55169ce18d7
-description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in DNSMadeEasy per Microsoft.
+description: Informazioni su come verificare il dominio e configurare i record DNS per posta elettronica, Skype for Business online e altri servizi su DNSMadeEasy per Microsoft.
 ms.openlocfilehash: 719b416564447b3a6f4108b747ae921b4f6f6bb8
 ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
@@ -28,13 +28,13 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 12/11/2020
 ms.locfileid: "49657949"
 ---
-# <a name="create-dns-records-at-dnsmadeeasy-for-microsoft"></a>Creare record DNS in DNSMadeEasy per Microsoft
+# <a name="create-dns-records-at-dnsmadeeasy-for-microsoft"></a>Creare record DNS su DNSMadeEasy per Microsoft
 
  **Se non si trova ciò che si sta cercando, [vedere le domande frequenti sui domini](../setup/domains-faq.yml)**. 
   
 Se il proprio provider di hosting DNS è DNSMadeEasy, seguire i passaggi di questo articolo per verificare il dominio e configurare i record DNS per la posta elettronica, Skype for Business online e così via.
   
-Dopo aver aggiunto questi record in DNSMadeEasy, il dominio sarà configurato per l'uso con i servizi Microsoft.
+Dopo aver aggiunto questi record in DNSMadeEasy, il dominio sarà configurato per l'utilizzo con i servizi Microsoft.
   
 
   
@@ -54,9 +54,9 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
   
 1. Per iniziare, passare alla propria pagina dei domini su DNSMadeEasy usando [questo collegamento](https://cp.dnsmadeeasy.com/). Verrà richiesto di eseguire l'accesso.
     
-2. Nella pagina **console di gestione** , nell'area **domini aggiornati di recente** , selezionare il dominio che si desidera aggiornare. 
+2. **Nell'area** **Domini** aggiornati di recente della pagina Console di gestione selezionare il dominio che si desidera aggiornare. 
     
-3. Nell'area **txt Records** della pagina **Managed DNS** selezionare il **+** controllo () ( **Aggiungi nuovo**).
+3. Nell'area **TXT Records** della pagina **Managed DNS** selezionare il controllo ( ) ( **+** Add **new**).
     
     Può essere necessario scorrere la pagina.
     
@@ -92,13 +92,13 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 
 1. Per iniziare, passare alla propria pagina dei domini su DNSMadeEasy usando [questo collegamento](https://cp.dnsmadeeasy.com/). Verrà richiesto di eseguire l'accesso.
     
-2. Nella pagina **console di gestione** , nell'area **domini aggiornati di recente** , selezionare il dominio che si desidera aggiornare. 
+2. **Nell'area** **Domini** aggiornati di recente della pagina Console di gestione selezionare il dominio che si desidera aggiornare. 
     
-    Nella pagina **console di gestione** , nell'area **domini aggiornati di recente** , selezionare il dominio che si desidera aggiornare. 
+    **Nell'area** **Domini** aggiornati di recente della pagina Console di gestione selezionare il dominio che si desidera aggiornare. 
     
     ![DNSMadeEasy-BP-Configure-1-2](../../media/8d8f403e-d7cd-429e-913b-dacb1f4644a2.png)
   
-3. Nell'area **MX Records** della pagina **Managed DNS** selezionare il controllo **(+)** ( **Aggiungi nuovo**).
+3. Nell'area **MX Records** della pagina **Managed DNS** selezionare il **controllo (+)** ( **Add new**).
     
     Può essere necessario scorrere la pagina.
     
@@ -110,7 +110,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Name**|**Server**|**MX Level**|**TTL**|
     |:-----|:-----|:-----|:-----|
-    |Lasciare vuoto questo campo.  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> **Nota:** ottenere il valore \<*domain-key*\> dal proprio account Microsoft. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |10   <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |1800  <br/> |
+    |Lasciare vuoto questo campo.  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> **Nota:** ottenere il valore \<*domain-key*\> dal proprio account Microsoft. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |1800  <br/> |
    
     ![DNSMadeEasy-BP-Configure-2-2](../../media/69b53af9-1eec-435c-8434-1b6058c1ec82.png)
   
@@ -122,11 +122,11 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![DNSMadeEasy-BP-Configure-2-4-1](../../media/58a07769-0b30-4111-b555-bfc3b82a7d4c.png)
   
-7. Quando vengono selezionati tutti i record, selezionare **Elimina selezionato**.
+7. Quando tutti i record sono selezionati, selezionare **Elimina selezionato.**
     
     ![DNSMadeEasy-BP-Configure-2-4-2](../../media/e9064c07-1ce7-4387-b47a-90d4193da374.png)
   
-8. Nella finestra di dialogo **Delete MX Records** selezionare **Delete** per confermare le modifiche. 
+8. Nella finestra **di dialogo Elimina record MX,** selezionare **Elimina** per confermare le modifiche. 
     
     ![DNSMadeEasy-BP-Configure-2-5](../../media/03c405e5-868f-468f-b6d2-046d27b201fb.png)
   
@@ -135,13 +135,13 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 
 1. Per iniziare, passare alla propria pagina dei domini su DNSMadeEasy usando [questo collegamento](https://cp.dnsmadeeasy.com/). Verrà richiesto di eseguire l'accesso.
     
-2. Nella pagina **console di gestione** , nell'area **domini aggiornati di recente** , selezionare il dominio che si desidera aggiornare. 
+2. **Nell'area** **Domini** aggiornati di recente della pagina Console di gestione selezionare il dominio che si desidera aggiornare. 
     
-3. Nell'area **CNAME Records** della pagina **Managed DNS** selezionare il controllo **(+)** ( **Aggiungi nuovo**).
+3. **Nell'area** **CNAME Records** della pagina Managed DNS selezionare il controllo **(+)** ( **Add new**).
     
     Può essere necessario scorrere la pagina.
     
-    ![DNSMadeEasy-BP-configure-3-1](../../media/a5feb238-690d-4b64-a625-91a82b3f4068.png)
+    ![DNSMadeEasy-BP-Configure-3-1](../../media/a5feb238-690d-4b64-a625-91a82b3f4068.png)
   
 4. Aggiungere il primo dei cinque record CNAME.
     
@@ -155,29 +155,29 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     |enterpriseregistration  <br/> |enterpriseregistration.windows.net.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |1800  <br/> |
     |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |1800  <br/> |
    
-    ![DNSMadeEasy-BP-configure-3-2](../../media/de6dddcd-bf0a-4993-ab4c-a6d10167bf34.png)
+    ![DNSMadeEasy-BP-Configure-3-2](../../media/de6dddcd-bf0a-4993-ab4c-a6d10167bf34.png)
   
 5. Selezionare **Invia**.
     
-    ![DNSMadeEasy-BP-configure-3-3](../../media/e44ef73e-99cb-41ce-a3f2-549cb2f29eef.png)
+    ![DNSMadeEasy-BP-Configure-3-3](../../media/e44ef73e-99cb-41ce-a3f2-549cb2f29eef.png)
   
 6. Aggiungere ognuno degli altri quattro record CNAME.
     
-    Nella sezione **CNAME Records** selezionare il controllo **(+)** ( **Aggiungi nuovo**), creare un record usando i valori della riga successiva della tabella e quindi fare di nuovo clic su **Submit** per completare il record. 
+    Nella sezione **CNAME Records** selezionare il controllo **(+)** ( **Add new**), creare un record utilizzando i valori della riga successiva della tabella e quindi selezionare di nuovo **Submit** per completare il record. 
     
-    Ripetere questa procedura fino a creare tutti e cinque i record CNAME.
+    Ripetere questo processo fino a creare tutti e cinque i record CNAME.
     
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Aggiungere un record TXT per SPF per evitare di ricevere posta indesiderata
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un  *singolo*  record SPF che includa entrambi i set di valori. Servono esempi? Consultare [Record Domain Name System (DNS) esterni per Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records). Per convalidare il record SPF, è possibile utilizzare uno di questi[strumenti di convalida SPF](../setup/domains-faq.yml). 
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un singolo record  *SPF*  che include entrambi i set di valori. Servono esempi? Consultare [Record Domain Name System (DNS) esterni per Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records). Per convalidare il record SPF, è possibile utilizzare uno di questi[strumenti di convalida SPF.](../setup/domains-faq.yml) 
   
 1. Per iniziare, passare alla propria pagina dei domini su DNSMadeEasy usando [questo collegamento](https://cp.dnsmadeeasy.com/). Verrà richiesto di eseguire l'accesso.
     
-2. Nella pagina **console di gestione** , nell'area **domini aggiornati di recente** , selezionare il dominio che si desidera aggiornare. 
+2. **Nell'area** **Domini** aggiornati di recente della pagina Console di gestione selezionare il dominio che si desidera aggiornare. 
     
-3. Nell'area **txt Records** della pagina **Managed DNS** selezionare il controllo **(+)** ( **Aggiungi nuovo**).
+3. Nell'area **TXT Records** della pagina **Managed DNS** selezionare il **controllo (+)** ( **Add new**).
     
     Può essere necessario scorrere la pagina.
     
@@ -200,9 +200,9 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 
 1. Per iniziare, passare alla propria pagina dei domini su DNSMadeEasy usando [questo collegamento](https://cp.dnsmadeeasy.com/). Verrà richiesto di eseguire l'accesso.
     
-2. Nella pagina **console di gestione** , nell'area **domini aggiornati di recente** , selezionare il dominio che si desidera aggiornare. 
+2. **Nell'area** **Domini** aggiornati di recente della pagina Console di gestione selezionare il dominio che si desidera aggiornare. 
     
-3. Nell'area **SRV Records** della pagina **Managed DNS** selezionare il controllo **(+)** ( **Aggiungi nuovo**).
+3. **Nell'area** **SRV Records** della pagina Managed DNS selezionare il controllo **(+)** ( **Add new**).
     
     Può essere necessario scorrere la pagina.
     
@@ -225,7 +225,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 6. Aggiungere l'altro record SRV.
     
-    Nella sezione **SRV Records** selezionare il controllo **(+)** ( **Aggiungi nuovo**), creare un record usando i valori della riga successiva della tabella e quindi fare di nuovo clic su **Submit** per completare il record. 
+    Nella sezione **SRV Records** selezionare il controllo **(+)** ( **Add new**), creare un record utilizzando i valori della riga successiva della tabella e quindi selezionare di nuovo **Submit** per completare il record. 
     
 > [!NOTE]
 > In genere, l'applicazione delle modifiche al DNS richiede circa 15 minuti. Tuttavia, a volte può capitare che l'aggiornamento di una modifica nel sistema DNS di Internet richieda più tempo. In caso di problemi con il flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Individuare e correggere i problemi dopo l'aggiunta del dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 

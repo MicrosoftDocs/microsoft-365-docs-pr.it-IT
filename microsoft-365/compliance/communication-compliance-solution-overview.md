@@ -1,6 +1,6 @@
 ---
-title: Conformità della comunicazione in Microsoft 365
-description: Informazioni su come configurare la conformità di comunicazione in Microsoft 365.
+title: Conformità delle comunicazioni in Microsoft 365
+description: Informazioni su come configurare la conformità delle comunicazioni in Microsoft 365.
 keywords: Microsoft 365, rischio Insider, conformità
 localization_priority: Normal
 ms.prod: microsoft-365-enterprise
@@ -22,23 +22,23 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 12/09/2020
 ms.locfileid: "49613861"
 ---
-# <a name="communication-compliance-in-microsoft-365"></a>Conformità della comunicazione in Microsoft 365
+# <a name="communication-compliance-in-microsoft-365"></a>Conformità delle comunicazioni in Microsoft 365
 
-La protezione delle informazioni riservate e l'individuazione e l'azione degli incidenti di molestie sul posto di lavoro è una parte importante della conformità con gli standard e i criteri interni. La conformità alla comunicazione in Microsoft 365 consente di ridurre al minimo tali rischi, contribuendo a rilevare, acquisire e adottare rapidamente azioni correttive per le comunicazioni di posta elettronica e Microsoft teams. Sono incluse comunicazioni inappropriate che contengono parolacce, minacce e molestie e comunicazioni che condividono informazioni riservate all'interno e all'esterno dell'organizzazione.
+La protezione delle informazioni riservate e il rilevamento e l'azione in caso di molestie sul luogo di lavoro sono una parte importante della conformità ai criteri e agli standard interni. La conformità delle comunicazioni in Microsoft 365 consente di ridurre al minimo questi rischi, consentendo di rilevare, acquisire ed eseguire rapidamente azioni di correzione per la posta elettronica e le comunicazioni di Microsoft Teams. Queste includono comunicazioni inappropriate contenenti volgarità, minacce, molestie e comunicazioni che condividono informazioni riservate all'interno e all'esterno dell'organizzazione.
 
-## <a name="configure-communication-compliance-for-microsoft-365"></a>Configurare la conformità di comunicazione per Microsoft 365
+## <a name="configure-communication-compliance-for-microsoft-365"></a>Configurare la conformità delle comunicazioni per Microsoft 365
 
-Attenersi alla procedura seguente per configurare la conformità della comunicazione per l'organizzazione:
+Per configurare la conformità delle comunicazioni per l'organizzazione, eseguire la procedura seguente:
 
-![Procedure per la conformità alla soluzione di rischio Insider Communication](../media/ir-solution-cc-steps.png)
+![Passaggi di conformità delle comunicazioni della soluzione di rischio Insider](../media/ir-solution-cc-steps.png)
 
-1. Informazioni sulla [conformità della comunicazione](communication-compliance.md) in Microsoft 365
-2. Pianificare la [conformità alla comunicazione](communication-compliance-plan.md) e [verificare la gestione delle licenze](communication-compliance-configure.md#subscriptions-and-licensing)
-3. Esaminare i [riferimenti alle funzionalità e le funzionalità della soluzione](communication-compliance-feature-reference.md)
-4. Configurare i [prerequisiti](communication-compliance-configure.md#step-2-required-enable-the-audit-log) e le [autorizzazioni](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)
-5. Creare e configurare i [criteri di conformità della comunicazione](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy)
+1. Informazioni sulla [conformità delle comunicazioni](communication-compliance.md) in Microsoft 365
+2. Pianificare la conformità [delle comunicazioni e](communication-compliance-plan.md) verificare le [licenze](communication-compliance-configure.md#subscriptions-and-licensing)
+3. Esaminare le [funzionalità di riferimento delle caratteristiche e delle soluzioni](communication-compliance-feature-reference.md)
+4. Configurare [i prerequisiti e](communication-compliance-configure.md#step-2-required-enable-the-audit-log) le [autorizzazioni](communication-compliance-configure.md#step-1-required-enable-permissions-for-communication-compliance)
+5. Creare e configurare i [criteri di conformità delle comunicazioni](communication-compliance-configure.md#step-5-required-create-a-communication-compliance-policy)
 
-## <a name="more-information-about-communication-compliance"></a>Ulteriori informazioni sulla conformità alla comunicazione
+## <a name="more-information-about-communication-compliance"></a>Ulteriori informazioni sulla conformità delle comunicazioni
 
-- [Esaminare e correggere gli avvisi](communication-compliance-investigate-remediate.md)
-- [Case Study-Contoso configura rapidamente un criterio di lingua offensivo per le comunicazioni di Microsoft teams, Exchange e Yammer](communication-compliance-case-study.md)
+- [Analizzare e correggere gli avvisi](communication-compliance-investigate-remediate.md)
+- [Case study: Contoso configura rapidamente un criterio linguistico offensivo per le comunicazioni di Microsoft Teams, Exchange e Yammer](communication-compliance-case-study.md)

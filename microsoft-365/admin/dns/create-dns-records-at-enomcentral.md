@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: a6626053-a9c8-445b-81ee-eeb6672fae77
-description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in eNomCentral per Microsoft.
+description: Informazioni su come verificare il dominio e configurare i record DNS per posta elettronica, Skype for Business online e altri servizi in eNomCentral per Microsoft.
 ms.openlocfilehash: e6e05b987a893da582ea7fb062eafe421861b970
 ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
@@ -34,7 +34,7 @@ ms.locfileid: "49658112"
 
 Se il proprio provider di hosting DNS è eNomCentral, seguire i passaggi di questo articolo per verificare il dominio e configurare i record DNS per posta elettronica, Skype for Business online e così via.
 
-Dopo aver aggiunto questi record in eNomCentral, il dominio sarà configurato per l'uso con i servizi Microsoft.
+Dopo aver aggiunto questi record in eNomCentral, il dominio sarà configurato per l'utilizzo con i servizi Microsoft.
 
 > [!NOTE]
 > In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md).
@@ -63,7 +63,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 0:46)](
 
 4. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori della tabella seguente.
 
-   Scegliere il valore del **tipo di record** nell'elenco a discesa.
+   Scegliere il **valore Tipo di** record dall'elenco a discesa.
 
    |Nome host|Record Type|Indirizzo|
    |---|---|---|
@@ -71,7 +71,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 0:46)](
 
    ![eNom-BP-Verify-1-2](../../media/e1f95529-46a6-40f9-9709-9fe66f373bcf.png)
 
-5. Selezionare **Salva**.
+5. Selezionare **Salva.**
 
    ![eNom-BP-Verify-1-3](../../media/d6277ab0-5d03-44e0-968f-fd5de1905423.png)
 
@@ -117,11 +117,11 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 3:40)](
 
    |Nome host|Indirizzo|Pref|
    |---|---|---|
-   |@| *\<domain-key\>*  . mail.protection.outlook.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> **Nota:** Ottenere il vostro  *\<domain-key\>*  dal vostro account Microsoft. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)|10   <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq).|
+   |@| *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> **Nota:** Ottenere il  *\<domain-key\>*  proprio account Microsoft. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)|10    <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq).|
 
    ![eNom-BP-Configure-2-1](../../media/c32e8954-8209-4f77-a3a8-4b7aeea325d5.png)
 
-6. Selezionare **Salva**.
+6. Selezionare **Salva.**
 
    ![eNom-BP-Configure-2-2](../../media/cf3058ea-9d30-4747-8cf0-2bc13d5ec6be.png)
 
@@ -129,7 +129,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 3:40)](
 
    ![eNom-BP-Configure-2-3](../../media/5017ed03-ca76-4c5c-93a7-84ffe24125dc.png)
 
-8. Selezionare **Delete Checked**.
+8. Selezionare **elimina selezionata.**
 
    ![eNom-BP-Configure-2-4](../../media/072dc039-bddb-4c1f-bb44-5660e77f14b0.png)
 
@@ -150,13 +150,13 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 4:24)](
 
    ![eNom-BP-Configure-1-5](../../media/c92c514c-8166-4cba-97e3-ee1d9847d255.png)
 
-4. Selezionare **nuova riga**.
+4. Selezionare **una nuova riga.**
 
-   ![eNom-BP-configure-3-1](../../media/a30f0a88-7b09-411e-9133-e7965bcf1de0.png)
+   ![eNom-BP-Configure-3-1](../../media/a30f0a88-7b09-411e-9133-e7965bcf1de0.png)
 
 5. Nelle caselle dei nuovi sei record digitare oppure copiare e incollare i valori seguenti.
 
-   Scegliere il valore del **tipo di record** nell'elenco a discesa.
+   Scegliere il **valore Tipo di** record dall'elenco a discesa.
 
    |Nome host|Record Type|Indirizzo|
    |---|---|---|
@@ -166,17 +166,17 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 4:24)](
    |enterpriseregistration|CNAME (alias)|enterpriseregistration.windows.net.  <br/> **Questo valore DEVE terminare con un punto (.)**|
    |enterpriseenrollment|CNAME (alias)|enterpriseenrollment-s.manage.microsoft.com.  <br/> **Questo valore DEVE terminare con un punto (.)**|
 
-   ![eNom-BP-configure-3-2](../../media/672371c0-51af-44ba-bb18-80286b7676c1.png)
+   ![eNom-BP-Configure-3-2](../../media/672371c0-51af-44ba-bb18-80286b7676c1.png)
 
-6. Selezionare **Salva**.
+6. Selezionare **Salva.**
 
-   ![eNom-BP-configure-3-3](../../media/027b57ce-5699-408b-993b-e46a9ac31090.png)
+   ![eNom-BP-Configure-3-3](../../media/027b57ce-5699-408b-993b-e46a9ac31090.png)
 
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Aggiungere un record TXT per SPF per evitare di ricevere posta indesiderata
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un  *singolo*  record SPF che includa entrambi i set di valori.
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un singolo record  *SPF*  che include entrambi i set di valori.
 
 Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 5:12)](https://support.microsoft.com/office/3766a9e8-77dd-4a42-908d-89b076143e7d).
 
@@ -194,7 +194,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 5:12)](
 
 4. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori della tabella seguente.
 
-   Scegliere il valore del **tipo di record** nell'elenco a discesa.
+   Scegliere il **valore Tipo di** record dall'elenco a discesa.
 
    |Nome host|Record Type|Indirizzo|
    |---|---|---|
@@ -202,7 +202,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 5:12)](
 
    ![eNom-BP-Configure-4-1](../../media/64c68697-258d-4044-84b1-c28f4a402e3b.png)
 
-5. Selezionare **Salva**.
+5. Selezionare **Salva.**
 
    ![eNom-BP-Configure-4-2](../../media/89f4effa-349e-4734-96a5-cd80b0cecd60.png)
 
@@ -223,20 +223,20 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 5:50)](
 
    ![eNom-BP-Configure-1-5](../../media/c92c514c-8166-4cba-97e3-ee1d9847d255.png)
 
-4. A destra della **nuova riga**, selezionare **Aggiungi record SRV o SPF**.
+4. A destra della **nuova riga,** selezionare **aggiungi record SRV o SPF.**
 
    ![eNom-BP-Configure-5-1](../../media/c73c154d-5aa0-41ef-be25-f43129eb178c.png)
 
 5. Nelle caselle dei nuovi due record digitare oppure copiare e incollare i valori della tabella seguente.
 
-   |Servizio|Protocollo|Priority|Peso|Porta|Destinazione (hostname)|
+   |Servizio|Protocollo|Priority|Peso|Porta|Destinazione (nome host)|
    |---|---|---|---|---|---|
    |_sip|_tls|100|1 |443|sipdir.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)**|
    |_sipfederationtls|_tcp|100|1 |5061|sipfed.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)**|
 
    ![eNom-BP-Configure-5-2](../../media/4d478f40-780f-43b9-940b-712b09da8c63.png)
 
-6. Seleziona **Salva**
+6. Selezionare **Salva**
 
    ![eNom-BP-Configure-5-3](../../media/d03b6f75-49f2-471d-978d-d32c47cd6aa7.png)
 

@@ -1,5 +1,5 @@
 ---
-title: Gestione dell'accesso in Microsoft 365 groups, teams e SharePoint
+title: Governance dell'accesso a gruppi, Teams e SharePoint di Microsoft 365
 ms.reviewer: ''
 ms.author: mikeplum
 author: MikePlumleyMSFT
@@ -14,7 +14,7 @@ ms.collection:
 ms.custom:
 - M365solutions
 f1.keywords: NOCSH
-description: Informazioni su come gestire l'accesso in Microsoft 365 gruppi, teams e SharePoint.
+description: Informazioni sulla governance dell'accesso nei gruppi di Microsoft 365, Teams e SharePoint.
 ms.openlocfilehash: fb1bec219ef0d27c2a908f5f385185a1a70e01e1
 ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
 ms.translationtype: MT
@@ -22,11 +22,11 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 12/09/2020
 ms.locfileid: "49613467"
 ---
-# <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>Gestione dell'accesso in Microsoft 365 groups, teams e SharePoint
+# <a name="governing-access-in-microsoft-365-groups-teams-and-sharepoint"></a>Governance dell'accesso a gruppi, Teams e SharePoint di Microsoft 365
 
-Sono disponibili numerosi controlli che consentono di gestire la modalità di accesso alle risorse in gruppi, team e SharePoint. Esaminare queste opzioni e valutare il modo in cui vengono mappate alle esigenze aziendali, la sensibilità dei dati e l'ambito delle persone con cui gli utenti devono collaborare.
+Sono disponibili molti controlli che consentono di controllare il modo in cui gli utenti accedono alle risorse in gruppi, team e SharePoint. Esamina queste opzioni e valuta il modo in cui si associano alle esigenze aziendali, la riservatezza dei dati e l'ambito delle persone con cui gli utenti devono collaborare.
 
-Nella tabella seguente viene fornita una guida di riferimento rapida per i controlli di accesso disponibili in Microsoft 365. Ulteriori informazioni sono disponibili nelle sezioni seguenti.
+La tabella seguente fornisce un riferimento rapido per i controlli di accesso disponibili in Microsoft 365. Ulteriori informazioni sono disponibili nelle sezioni seguenti.
 
 |Categoria|Descrizione|Riferimenti|
 |:-------|:----------|:--------|
@@ -35,51 +35,51 @@ Nella tabella seguente viene fornita una guida di riferimento rapida per i contr
 ||Appartenenza a gruppi dinamici in base alle regole|[Creare o aggiornare un gruppo dinamico in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)|
 ||Controllare gli utenti che possono condividere file, cartelle e siti.|[Configurare e gestire le richieste di accesso](https://support.microsoft.com/office/94b26e0b-2822-49d4-929a-8455698654b3)|
 |Accesso condizionale|||
-||Autenticazione a più fattori|[Autenticazione a più fattori di Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)|
-||Controllo dell'accesso al dispositivo basato sul gruppo, sul team o sulla sensibilità del sito.|[Usare le etichette di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)|
+||Multi-Factor Authentication|[Azure AD Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)|
+||Controllare l'accesso ai dispositivi in base alla riservatezza del gruppo, del team o del sito.|[Usare le etichette di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)|
 ||Limitare l'accesso al sito per i dispositivi non gestiti.|[Controllare l'accesso a SharePoint da dispositivi non gestiti](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)|
-||Controllare l'accesso ai siti in base alla posizione|[Controllare l'accesso ai dati di SharePoint e OneDrive in base al percorso di rete](https://docs.microsoft.com/sharepoint/control-access-based-on-network-location)|
+||Controllare l'accesso al sito in base alla posizione|[Controllare l'accesso ai dati di SharePoint e OneDrive in base al percorso di rete](https://docs.microsoft.com/sharepoint/control-access-based-on-network-location)|
 |Accesso guest|||
-||Consenti o blocca la condivisione di SharePoint da domini specificati.|[Limitare la condivisione di contenuto di SharePoint e OneDrive in base al dominio](https://docs.microsoft.com/sharepoint/restricted-domains-sharing)|
-||Consenti o blocca l'appartenenza a team o gruppi da domini specificati.|[Consenti o blocca gli inviti agli utenti B2B provenienti da organizzazioni specifiche](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)|
+||Consentire o bloccare la condivisione di SharePoint dai domini specificati.|[Limitare la condivisione del contenuto di SharePoint e OneDrive in base al dominio](https://docs.microsoft.com/sharepoint/restricted-domains-sharing)|
+||Consentire o bloccare l'appartenenza a team o gruppi dai domini specificati.|[Consentire o bloccare gli inviti a utenti B2B di organizzazioni specifiche](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)|
 ||Impedire la condivisione anonima.|[Disattivare i collegamenti di tipo “Chiunque”](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure#turn-off-anyone-links)|
-||Controllare le autorizzazioni per i collegamenti di accesso anonimo.|[Impostare le autorizzazioni di collegamento per tutti i collegamenti](https://docs.microsoft.com/microsoft-365/solutions/best-practices-anonymous-sharing#set-link-permissions)|
+||Controllare le autorizzazioni per i collegamenti di accesso anonimo.|[Impostare le autorizzazioni di collegamento per i collegamenti chiunque](https://docs.microsoft.com/microsoft-365/solutions/best-practices-anonymous-sharing#set-link-permissions)|
 ||Controllare la scadenza dei collegamenti di condivisione anonima.|[Impostare una data di scadenza per i collegamenti Chiunque](https://docs.microsoft.com/microsoft-365/solutions/best-practices-anonymous-sharing#set-an-expiration-date-for-anyone-links)|
-||Controllare il tipo di collegamento di condivisione visualizzato per impostazione predefinita per gli utenti.|[Modificare il tipo di collegamento predefinito per un sito](https://docs.microsoft.com/sharepoint/change-default-sharing-link)|
-||Limitare la condivisione esterna a specifiche persone.|[Limitare la condivisione esterna ai gruppi di sicurezza specificati](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure#limit-sharing-of-files-folders-and-sites-with-people-outside-your-organization-to-specified-security-groups)|
-||Controllare l'accesso Guest a un gruppo, a un team o a un sito in base alla sensibilità delle informazioni.|[Usare le etichette di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)|
-||Disattiva le opzioni di condivisione.|[Limitare la condivisione in Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/microsoft-365-limit-sharing)|
+||Controllare il tipo di collegamento di condivisione visualizzato agli utenti per impostazione predefinita.|[Modificare il tipo di collegamento predefinito per un sito](https://docs.microsoft.com/sharepoint/change-default-sharing-link)|
+||Limitare la condivisione esterna a utenti specifici.|[Limitare la condivisione esterna ai gruppi di sicurezza specificati](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure#limit-sharing-of-files-folders-and-sites-with-people-outside-your-organization-to-specified-security-groups)|
+||Controllare l'accesso guest a un gruppo, un team o un sito in base alla riservatezza delle informazioni.|[Usare le etichette di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)|
+||Disattivare le opzioni di condivisione.|[Limitare la condivisione in Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/microsoft-365-limit-sharing)|
 |Gestione degli utenti|||
-||Esaminare periodicamente i membri del team e del gruppo.|[Che cosa sono le recensioni di Azure AD Access?](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview)|
+||Rivedere regolarmente l'appartenenza a team e gruppi.|[Che cosa sono le verifiche di accesso di Azure AD?](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview)|
 ||Automatizzare la gestione degli accessi a gruppi e team.|[Che cos'è la gestione dei diritti di Azure AD?](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview)|
-||Consentire o impedire agli utenti di creare canali privati in teams.|[Gestire il ciclo di vita dei canali privati in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/private-channels-life-cycle-management)|
+||Consentire o impedire agli utenti di creare canali privati in Teams.|[Gestire il ciclo di vita dei canali privati in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/private-channels-life-cycle-management)|
 
 ## <a name="membership"></a>Appartenenza
 
-L'appartenenza ai team e ai gruppi è controllata dai proprietari. I membri possono invitare altri utenti, ma gli inviti vengono inviati ai proprietari per l'approvazione. Mentre i gruppi e i team pubblici sono individuabili da tutti gli utenti dell'organizzazione, è possibile controllare se i team e i gruppi privati sono individuabili:
+L'appartenenza a team e gruppi è controllata dai proprietari. I membri possono invitare altri utenti, ma gli inviti vengono inviati ai proprietari per l'approvazione. Anche se i team e i gruppi pubblici sono individuabili da chiunque nell'organizzazione, è possibile controllare se i team privati e i gruppi sono individuabili:
 
 - [Gestire l'individuazione di team privati in Microsoft Teams](https://docs.microsoft.com/microsoftteams/manage-discovery-of-private-teams)
 
-È possibile gestire l'appartenenza di un gruppo o di un team in modo dinamico in base a alcuni criteri, ad esempio Department. In questo caso, i membri e i proprietari non possono invitare persone al team.
+È possibile gestire l'appartenenza a un gruppo o a un team in modo dinamico in base ad alcuni criteri, ad esempio il reparto. In questo caso, i membri e i proprietari non possono invitare persone al team.
 
 - [Creare o aggiornare un gruppo dinamico in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule)
 
-I siti di SharePoint offrono la possibilità di aggiungere proprietari, membri e visitatori a parte l'appartenenza al gruppo o al team. A seconda dei requisiti, è possibile che si desideri limitare gli utenti che possono invitare persone al sito. Inoltre, a seconda della sensibilità delle informazioni in un determinato sito, è possibile limitare gli utenti che possono condividere file e cartelle. Queste restrizioni sono configurate dal team, dal gruppo o dal proprietario del sito:
+I siti di SharePoint consentono di aggiungere proprietari, membri e visitatori oltre all'appartenenza a gruppi o team. A seconda dei requisiti, è possibile limitare gli utenti che possono invitare utenti al sito. Inoltre, a seconda della riservatezza delle informazioni in un determinato sito, è possibile limitare gli utenti che possono condividere file e cartelle. Queste restrizioni sono configurate dal proprietario del team, del gruppo o del sito:
 
 - [Configurare e gestire le richieste di accesso](https://support.microsoft.com/office/94b26e0b-2822-49d4-929a-8455698654b3)
 
 
 ## <a name="conditional-access"></a>Accesso condizionale
 
-Con Microsoft 365, è possibile richiedere l'autenticazione a più fattori per entrambe le persone all'interno e all'esterno dell'organizzazione. Sono disponibili molte opzioni per le circostanze in cui le persone vengono richieste per un secondo fattore di autenticazione. Si consiglia di distribuire l'autenticazione a più fattori per l'organizzazione:
+Con Microsoft 365, è possibile richiedere l'autenticazione a più fattori sia per le persone all'interno che all'esterno dell'organizzazione. Esistono molte opzioni per le circostanze in cui agli utenti viene richiesto un secondo fattore di autenticazione. È consigliabile distribuire l'autenticazione a più fattori per l'organizzazione:
 
-- [Autenticazione a più fattori di Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
+- [Azure AD Multi-Factor Authentication](https://docs.microsoft.com/azure/active-directory/authentication/concept-mfa-howitworks)
 
-Se si dispone di informazioni riservate in alcuni gruppi e team, è possibile applicare i criteri di gestione dei dispositivi basati sull'etichetta di riservatezza del gruppo o del team. È possibile bloccare l'accesso completamente dai dispositivi non gestiti o consentire l'accesso solo web limitato:
+Se si dispone di informazioni riservate in alcuni dei gruppi e dei team, è possibile applicare i criteri di gestione dei dispositivi in base all'etichetta di riservatezza di un gruppo o di un team. È possibile bloccare completamente l'accesso da dispositivi non gestiti o consentire solo l'accesso Web limitato:
 
 - [Usare le etichette di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)
 
-In SharePoint, è possibile limitare l'accesso ai siti da percorsi di rete specificati.
+In SharePoint è possibile limitare l'accesso ai siti da percorsi di rete specifici.
 
 - [Controllare l'accesso ai dati di SharePoint e OneDrive in base al percorso di rete](https://docs.microsoft.com/sharepoint/control-access-based-on-network-location)
 
@@ -95,33 +95,33 @@ Risorse aggiuntive:
 
 ## <a name="guest-access"></a>Accesso guest
 
-È possibile limitare gli utenti in base al dominio dell'indirizzo di posta elettronica. SharePoint offre impostazioni di restrizione del dominio specifiche dell'organizzazione e del sito. I gruppi e i team utilizzano gli elenchi Domain allow e Deny in Azure AD. Assicurarsi di configurare entrambe le impostazioni per evitare la condivisione indesiderata e garantire un'esperienza utente coerente:
+È possibile limitare gli utenti guest in base al dominio del loro indirizzo di posta elettronica. SharePoint offre impostazioni di restrizione del dominio a livello di organizzazione e specifiche del sito. I gruppi e Teams usano gli elenchi di domini consentiti e non consentiti in Azure AD. Assicurarsi di configurare entrambe le impostazioni per evitare condivisioni indesiderate e garantire un'esperienza utente coerente:
 
-- [Limitare la condivisione di contenuto di SharePoint e OneDrive in base al dominio](https://docs.microsoft.com/sharepoint/restricted-domains-sharing)
+- [Limitare la condivisione del contenuto di SharePoint e OneDrive in base al dominio](https://docs.microsoft.com/sharepoint/restricted-domains-sharing)
 
-- [Consenti o blocca gli inviti agli utenti B2B provenienti da organizzazioni specifiche](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)
+- [Consentire o bloccare gli inviti a utenti B2B di organizzazioni specifiche](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list)
 
-Microsoft 365 consente la condivisione anonima dei file e delle cartelle tramite collegamenti di condivisione di *tutti gli utenti* . È possibile inoltrare collegamenti a *tutti* gli utenti e tutti gli utenti con il collegamento possono accedere all'elemento condiviso. In base alla sensibilità dei dati, valutare la modalità di utilizzo di collegamenti a *tutti gli utenti* , tra cui la disattivazione del tutto, la limitazione delle autorizzazioni di collegamento per la sola lettura o l'impostazione di una data di scadenza per essi:
+Microsoft 365 consente la condivisione anonima di file e cartelle tramite *collegamenti* di condivisione chiunque. *Tutti* i collegamenti possono essere inoltrati e chiunque abbia il collegamento può accedere all'elemento condiviso. A seconda della riservatezza dei dati,  valuta la possibilità di regolamentare il modo in cui vengono usati i collegamenti chiunque, tra cui disattivarli completamente, limitare le autorizzazioni per i collegamenti in sola lettura o impostare una scadenza per loro:
 
 - [Disattivare i collegamenti di tipo “Chiunque”](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure#turn-off-anyone-links)
 
-- [Impostare le autorizzazioni di collegamento per tutti i collegamenti](https://docs.microsoft.com/microsoft-365/solutions/best-practices-anonymous-sharing#set-link-permissions)
+- [Impostare le autorizzazioni di collegamento per i collegamenti chiunque](https://docs.microsoft.com/microsoft-365/solutions/best-practices-anonymous-sharing#set-link-permissions)
 
 - [Impostare una data di scadenza per i collegamenti Chiunque](https://docs.microsoft.com/microsoft-365/solutions/best-practices-anonymous-sharing#set-an-expiration-date-for-anyone-links)
 
-Quando si condividono file o cartelle, gli utenti possono scegliere tra diversi tipi di collegamento. Per ridurre il rischio di condivisione inappropriata accidentale, è possibile modificare il tipo di collegamento predefinito presentato agli utenti quando condividono. Ad esempio, la modifica dell'impostazione predefinita dei collegamenti a *tutti* gli utenti, che consentono l'accesso anonimo ai collegamenti dell' *organizzazione* , può ridurre il rischio di una condivisione esterna indesiderata di informazioni riservate:
+Quando si condividono file o cartelle, gli utenti hanno diversi tipi di collegamento tra cui scegliere. Per ridurre il rischio di condivisione accidentale inappropriata, è possibile modificare il tipo di collegamento predefinito presentato agli utenti quando condividono. Ad esempio, la  modifica dell'impostazione predefinita dai  collegamenti Chiunque , che consentono l'accesso anonimo, ai collegamenti degli utenti dell'organizzazione può ridurre il rischio di condivisione esterna indesiderata di informazioni riservate:
 
 - [Modificare il tipo di collegamento predefinito per un sito](https://docs.microsoft.com/sharepoint/change-default-sharing-link)
 
-Se l'organizzazione dispone di dati riservati che è necessario condividere con gli utenti, ma si è preoccupati per la condivisione inappropriata, è possibile limitare la condivisione esterna di file e cartelle ai membri dei gruppi di sicurezza specificati. In questo modo, è possibile limitare la condivisione esternamente a un gruppo specifico di persone o richiedere agli utenti di eseguire la formazione attorno a una condivisione esterna appropriata prima di aggiungerli al gruppo di sicurezza:
+Se l'organizzazione dispone di dati sensibili che è necessario condividere con gli utenti guest, ma si è preoccupati per la condivisione inappropriata, è possibile limitare la condivisione esterna di file e cartelle ai membri di gruppi di sicurezza specificati. In questo modo, è possibile limitare la condivisione esternamente a un gruppo specifico di persone o richiedere agli utenti di prendere formazione sulla condivisione esterna appropriata prima di aggiungerli al gruppo di sicurezza:
 
 - [Limitare la condivisione esterna ai gruppi di sicurezza specificati](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure#limit-sharing-of-files-folders-and-sites-with-people-outside-your-organization-to-specified-security-groups)
 
-I gruppi e i team dispongono di impostazioni a livello di organizzazione che consentono o negano l'accesso guest. Anche se è possibile [limitare l'accesso Guest a team o gruppi specifici utilizzando Microsoft PowerShell](per-group-guest-access.md), è consigliabile eseguire questa operazione tramite un'etichetta di riservatezza. Con le etichette di riservatezza è possibile consentire o negare automaticamente l'accesso guest in base all'etichetta applicata:
+I gruppi e Teams dispongono di impostazioni a livello di organizzazione che consentono o negano l'accesso guest. Anche se è possibile limitare l'accesso guest a team o gruppi specifici tramite [Microsoft PowerShell,](per-group-guest-access.md)è consigliabile farlo tramite un'etichetta di riservatezza. Con le etichette di riservatezza è possibile consentire o negare automaticamente l'accesso guest in base all'etichetta applicata:
 
 - [Usare le etichette di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites)
 
-Microsoft 365 offre svariati metodi di condivisione delle informazioni. Se si dispone di informazioni riservate e si desidera limitare la modalità di condivisione, esaminare le opzioni per la limitazione delle condivisioni:
+Microsoft 365 offre diversi metodi di condivisione delle informazioni. Se si dispone di informazioni riservate e si desidera limitare la modalità di condivisione, esaminare le opzioni per limitare la condivisione:
 
 - [Limitare la condivisione in Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/microsoft-365-limit-sharing)
 
@@ -135,19 +135,19 @@ Risorse aggiuntive:
 
 - [Creare un ambiente di condivisione guest sicuro](https://docs.microsoft.com/microsoft-365/solutions/create-secure-guest-sharing-environment)
 
-- [Abilitare la collaborazione esterna B2B e gestire gli utenti che possono invitare gli ospiti](https://docs.microsoft.com/azure/active-directory/b2b/delegate-invitations)
+- [Abilitare la collaborazione esterna B2B e gestire chi può invitare guest](https://docs.microsoft.com/azure/active-directory/b2b/delegate-invitations)
 
 ## <a name="user-management"></a>Gestione degli utenti
 
-Quando i gruppi e i team si evolvono nell'organizzazione, è consigliabile esaminare regolarmente l'appartenenza al gruppo e al team. Questo può essere particolarmente utile per team e gruppi con un'appartenenza che cambia, quelli che contengono informazioni riservate oppure quelli che includono gli ospiti. Valutare la possibilità di configurare le recensioni di Access per questi team e gruppi:
+Quando i gruppi e i team si evolvono nell'organizzazione, è consigliabile rivedere regolarmente l'appartenenza a team e gruppi. Ciò può risultare particolarmente utile per i team e i gruppi con un'appartenenza in evoluzione, per quelli che contengono informazioni riservate o per quelli che includono utenti guest. Valutare la possibilità di configurare le verifiche di accesso per questi team e gruppi:
 
-- [Che cosa sono le recensioni di Azure AD Access?](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview)
+- [Che cosa sono le verifiche di accesso di Azure AD?](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview)
 
-Molte organizzazioni hanno partnership commerciali con altre organizzazioni o fornitori chiave con cui collaborano in modo approfondito. La gestione degli utenti e l'accesso alle risorse possono essere difficili da gestire in questi scenari. È consigliabile automatizzare alcune delle attività di gestione degli utenti e persino transirne alcune nell'organizzazione partner:
+Molte organizzazioni hanno relazioni commerciali con altre organizzazioni o fornitori chiave con cui collaborano in modo approfondito. La gestione degli utenti e l'accesso alle risorse possono essere difficili da gestire in questi scenari. Prendere in considerazione l'automazione di alcune delle attività di gestione degli utenti e persino la transizione di alcune di esse all'organizzazione partner:
 
 - [Che cos'è la gestione dei diritti di Azure AD?](https://docs.microsoft.com/azure/active-directory/governance/entitlement-management-overview)
 
-I canali privati nei team consentono le conversazioni con ambito e la condivisione dei file tra un sottoinsieme di membri del team. A seconda delle esigenze aziendali specifiche, è possibile consentire o bloccare questa funzionalità.
+I canali privati in Teams consentono conversazioni con ambito e la condivisione di file tra un sottoinsieme di membri del team. A seconda delle esigenze aziendali specifiche, è possibile consentire o bloccare questa funzionalità.
 
 - [Canali privati in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/private-channels)
 
@@ -155,13 +155,13 @@ I canali privati nei team consentono le conversazioni con ambito e la condivisio
 
 Risorse aggiuntive:
 
-- [Governance dell'identità di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/governance)
+- [Governance delle identità di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/governance)
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Pianificazione della governance della collaborazione](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
+[Procedura dettagliata per la pianificazione della governance della collaborazione](collaboration-governance-overview.md#collaboration-governance-planning-step-by-step)
 
-[Creare il piano di governance di collaborazione](collaboration-governance-first.md)
+[Creare il piano di governance della collaborazione](collaboration-governance-first.md)
 
 [Sicurezza e conformità in Microsoft Teams](https://docs.microsoft.com/microsoftteams/security-compliance-overview)
 

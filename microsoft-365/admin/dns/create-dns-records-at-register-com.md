@@ -20,7 +20,7 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 55bd8c38-3316-48ae-a368-4959b2c1684e
-description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in Register.com per Microsoft.
+description: Informazioni su come verificare il dominio e configurare i record DNS per posta elettronica, Skype for Business online e altri servizi Register.com per Microsoft.
 ms.openlocfilehash: dd2f3d516b5309fee85dd572470fe610ff277a68
 ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
 ms.translationtype: MT
@@ -46,7 +46,7 @@ Ecco i principali record da aggiungere. Seguire i passaggi indicati sotto oppure
 
 - [Aggiungere i due record SRV necessari per Microsoft](#add-the-two-srv-records-that-are-required-for-microsoft)
     
-Dopo aver aggiunto questi record in Register.com, il dominio sarà configurato per l'uso con i servizi Microsoft.
+Dopo aver aggiunto questi record in Register.com, il dominio sarà configurato per l'utilizzo con i servizi Microsoft.
   
 
   
@@ -67,11 +67,11 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 0:44)](
     
 2. Selezionare **Domini**.
     
-3. Selezionare **Gestisci**.
+3. Selezionare **Gestisci.**
     
-4. Individuare la riga che contiene il nome del dominio che si desidera modificare. e quindi, in quella riga, selezionare **Gestisci**.
+4. Individuare la riga contenente il nome del dominio che si desidera modificare. e quindi, in tale riga, selezionare **Gestisci.**
     
-5. Scorrere verso il basso fino alla sezione **Advanced Technical Settings** e quindi scegliere **Edit TXT Records (SPF)**.
+5. Scorrere verso il basso **fino alla sezione Advanced Technical Settings** e quindi selezionare Edit TXT Records **(SPF)**.
     
 6. In the boxes for the new record, type or copy and paste the values from the following table.
     
@@ -80,9 +80,9 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 0:44)](
     |**Host Name** <br/> |**TXT Record** <br/> |
     |@  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
    
-7. Selezionare **continua**.
+7. Selezionare **Continua.**
     
-8. Nella pagina successiva, selezionare **continua** di nuovo per confermare le modifiche. 
+8. Nella pagina successiva, selezionare **di nuovo Continua** per confermare le modifiche. 
     
 9. Attendere alcuni minuti prima di continuare, in modo che il record appena creato venga aggiornato in Internet.
     
@@ -110,17 +110,17 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 3:32)](
     
 2. Selezionare **Domini**.
     
-3. Selezionare **Gestisci**.
+3. Selezionare **Gestisci.**
     
-4. Individuare la riga che contiene il nome del dominio che si desidera modificare. e quindi, in quella riga, selezionare **Gestisci**.
+4. Individuare la riga contenente il nome del dominio che si desidera modificare. e quindi, in tale riga, selezionare **Gestisci.**
     
-5. Scorrere fino alla sezione **Advanced Technical Settings** e quindi scegliere **Edit Mail Exchanger Records**.
+5. Scorrere fino alla **sezione Advanced Technical Settings** e quindi selezionare Edit Mail **Exchanger Records.**
     
-    ![Selezionare Modifica record di Mail Exchanger](../../media/366b96a1-9147-4bbb-9f8f-50856466cc61.png)
+    ![Select Edit Mail Exchanger Records](../../media/366b96a1-9147-4bbb-9f8f-50856466cc61.png)
   
 6. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori della tabella seguente.
     
-    Scegliere il valore di **priorità** dall'elenco a discesa. 
+    Scegliere il **valore Priority** nell'elenco a discesa. 
     
     |****Host Name****|****Priority****|****Mail Server****|
     |:-----|:-----|:-----|
@@ -132,13 +132,13 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 3:32)](
     
     ![Select each record to delete](../../media/0708d03e-346f-4ae7-8cc4-01589efc00ce.png)
   
-8. Selezionare **continua**.
+8. Selezionare **Continua.**
     
-    ![Seleziona continua](../../media/6ef6ce01-ce21-4e3c-8209-4aa9a3dd4b76.png)
+    ![Selezionare Continua](../../media/6ef6ce01-ce21-4e3c-8209-4aa9a3dd4b76.png)
   
-9. Nella pagina successiva, selezionare **continua** di nuovo per confermare e salvare le modifiche. 
+9. Nella pagina successiva, selezionare **di nuovo Continua** per confermare e salvare le modifiche. 
     
-    ![Seleziona continua](../../media/adba4a60-bf61-44fc-9ad9-360e66f8a2ee.png)
+    ![Selezionare Continua](../../media/adba4a60-bf61-44fc-9ad9-360e66f8a2ee.png)
   
 ## <a name="add-the-cname-records-that-are-required-for-microsoft"></a>Aggiungere i record CNAME necessari per Microsoft
 <a name="BKMK_add_CNAME"> </a>
@@ -149,17 +149,17 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 4:23)](
     
 2. Selezionare **Domini**.
     
-3. Selezionare **Gestisci**.
+3. Selezionare **Gestisci.**
     
-4. Individuare la riga che contiene il nome del dominio che si desidera modificare. e quindi, in quella riga, selezionare **Gestisci**.
+4. Individuare la riga contenente il nome del dominio che si desidera modificare. e quindi, in tale riga, selezionare **Gestisci.**
     
-5. Scorrere fino alla sezione **Advanced Technical Settings** e quindi scegliere **Edit Domain Aliases Records**.
+5. Scorrere fino alla **sezione Advanced Technical Settings** e quindi selezionare Edit Domain **Aliases Records.**
     
-    ![Selezionare Edit Domain Aliases Records](../../media/9fbc31ed-d67c-4828-8bd4-b51068f1e0ca.png)
+    ![Select Edit Domain Aliases Records](../../media/9fbc31ed-d67c-4828-8bd4-b51068f1e0ca.png)
   
-6. Selezionare **Aggiungi altri alias di dominio**.
+6. Selezionare **Aggiungi altri alias di dominio.**
     
-    ![Selezionare Aggiungi altri alias per i domini](../../media/b787505f-5566-4879-8552-13f9e89cbf6b.png)
+    ![Select Add more domains aliases](../../media/b787505f-5566-4879-8552-13f9e89cbf6b.png)
   
 7. Aggiungere i record CNAME necessari.
     
@@ -175,13 +175,13 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 4:23)](
    
      ![Copiare e incollare i valori DNS dalla tabella](../../media/0e2b36b2-8a0b-4019-addf-301763f9a626.png)
   
-8. Dopo aver aggiunto tutti i record CNAME necessari, selezionare **continua**.
+8. Dopo aver aggiunto tutti i record CNAME necessari, selezionare **Continua.**
     
-    ![Seleziona continua](../../media/1942612b-338a-48fa-a45d-2d5434516723.png)
+    ![Selezionare Continua](../../media/1942612b-338a-48fa-a45d-2d5434516723.png)
   
-9. Nella pagina successiva, selezionare **continua** di nuovo per confermare e salvare le modifiche. 
+9. Nella pagina successiva, selezionare **di nuovo Continua** per confermare e salvare le modifiche. 
     
-    ![Seleziona continua](../../media/3342b570-0633-49c5-9175-5cc8e4a67b53.png)
+    ![Selezionare Continua](../../media/3342b570-0633-49c5-9175-5cc8e4a67b53.png)
   
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Aggiungere un record TXT per SPF per evitare di ricevere posta indesiderata
 <a name="BKMK_add_TXT"> </a>
@@ -195,13 +195,13 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 5:12)](
     
 2. Selezionare **Domini**.
     
-3. Selezionare **Gestisci**.
+3. Selezionare **Gestisci.**
     
-4. Individuare la riga che contiene il nome del dominio che si desidera modificare. e quindi, in quella riga, selezionare **Gestisci**.
+4. Individuare la riga contenente il nome del dominio che si desidera modificare. e quindi, in tale riga, selezionare **Gestisci.**
     
-5. Scorrere fino alla sezione **Advanced Technical Settings** e quindi scegliere **Edit TXT Records (SPF)**.
+5. Scorrere fino alla **sezione Advanced Technical Settings** e quindi selezionare Edit TXT Records **(SPF)**.
     
-    ![Selezionare Modifica record TXT (SPF)](../../media/c917577a-8b3a-4210-ab6e-776e84f926d0.png)
+    ![Select Edit TXT Records (SPF)](../../media/c917577a-8b3a-4210-ab6e-776e84f926d0.png)
   
 6. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori della tabella seguente.
     
@@ -209,15 +209,15 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 5:12)](
     |:-----|:-----|
     |@  <br/> |v=spf1 include:spf.protection.outlook.com -all  <br/> **Nota:** è consigliabile copiare e incollare questa voce, in modo che tutti i caratteri di spaziatura siano corretti.  |
    
-     ![Copiare e incollare i valori della tabella](../../media/b1dc5036-c13c-4306-b1e3-5a38a74643b7.png)
+     ![Copiare e incollare i valori dalla tabella](../../media/b1dc5036-c13c-4306-b1e3-5a38a74643b7.png)
   
-7. Selezionare **continua**.
+7. Selezionare **Continua.**
     
-    ![Seleziona continua](../../media/08250c98-1a86-48a8-ad94-f96cf338126b.png)
+    ![Selezionare Continua](../../media/08250c98-1a86-48a8-ad94-f96cf338126b.png)
   
-8. Nella pagina successiva, selezionare **continua** di nuovo per confermare e salvare le modifiche. 
+8. Nella pagina successiva, selezionare **di nuovo Continua** per confermare e salvare le modifiche. 
     
-    ![Seleziona continua](../../media/56be3b0a-dc71-471c-9be3-6ab927296f67.png)
+    ![Selezionare Continua](../../media/56be3b0a-dc71-471c-9be3-6ab927296f67.png)
   
 ## <a name="add-the-two-srv-records-that-are-required-for-microsoft"></a>Aggiungere i due record SRV necessari per Microsoft
 <a name="BKMK_add_SRV"> </a>
@@ -228,11 +228,11 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 5:55)](
     
 2. Selezionare **Domini**.
     
-3. Selezionare **Gestisci**.
+3. Selezionare **Gestisci.**
     
-4. Individuare la riga che contiene il nome del dominio che si desidera modificare. e quindi, in quella riga, selezionare **Gestisci**.
+4. Individuare la riga contenente il nome del dominio che si desidera modificare. e quindi, in tale riga, selezionare **Gestisci.**
     
-5. Scorrere fino alla sezione **Advanced Technical Settings** e quindi scegliere **Edit SRV Records**.
+5. Scorrere fino alla **sezione Advanced Technical Settings** e quindi selezionare Edit **SRV Records.**
     
     ![Selezionare Modifica record SRV](../../media/73c149ae-f0d6-460e-880a-7e04a995acc3.png)
   
@@ -240,16 +240,16 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 5:55)](
     
     Nelle caselle del nuovo record digitare oppure copiare e incollare i valori dalla prima riga della tabella seguente.
     
-    Scegliere il valore di **priorità** dall'elenco a discesa. 
+    Scegliere il **valore Priority** nell'elenco a discesa. 
     
     |****Service****|****Proto****|****Name****|****Priority****|****Weight****|****Port****|****Target****|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
     |_sip  <br/> |_tls  <br/> |@  <br/> |High  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/>  <br/> |
     |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |High  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/>  <br/> |
    
-    ![Copiare e incollare i valori della tabella](../../media/71304c81-5845-4a8f-b969-d9efc8721184.png)
+    ![Copiare e incollare i valori dalla tabella](../../media/71304c81-5845-4a8f-b969-d9efc8721184.png)
   
-7. Selezionare **Aggiungi altri record SRV**.
+7. Selezionare **Aggiungi altri record SRV.**
     
     ![Selezionare Aggiungi altri record SRV](../../media/823c6bd2-4af7-4079-bf8c-8d35a5c6730f.png)
   
@@ -257,13 +257,13 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 5:55)](
     
     Digitare o copiare e incollare i valori della seconda riga della tabella precedente nelle caselle per il secondo record.
     
-9. Dopo aver aggiunto entrambi i record SRV, selezionare **continua**.
+9. Dopo aver aggiunto entrambi i record SRV, selezionare **Continua.**
     
-    ![Seleziona continua](../../media/008b255a-42d3-442d-83ea-3ffcb7c8fc5d.png)
+    ![Selezionare Continua](../../media/008b255a-42d3-442d-83ea-3ffcb7c8fc5d.png)
   
-10. Nella pagina successiva, selezionare **continua** di nuovo per confermare e salvare le modifiche. 
+10. Nella pagina successiva, selezionare **di nuovo Continua** per confermare e salvare le modifiche. 
     
-    ![Seleziona continua](../../media/b4166e3d-7e4b-41ef-b616-747e95aefc37.png)
+    ![Selezionare Continua](../../media/b4166e3d-7e4b-41ef-b616-747e95aefc37.png)
   
 > [!NOTE]
 > In genere, l'applicazione delle modifiche al DNS richiede circa 15 minuti. Tuttavia, a volte può capitare che l'aggiornamento di una modifica nel sistema DNS di Internet richieda più tempo. In caso di problemi con il flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Individuare e correggere i problemi dopo l'aggiunta del dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
