@@ -30,6 +30,8 @@
       href: model-usage-analytics.md
     - name: Sfruttare la tassonomia dell'archivio termini durante la creazione di un estrattore
       href: leverage-term-store-taxonomy.md
+    - name: Modalità di accessibilità di SharePoint Syntex
+      href: accessibility-mode.md
 - name: Adozione
   items:
     - name: Introduzione all'adozione
