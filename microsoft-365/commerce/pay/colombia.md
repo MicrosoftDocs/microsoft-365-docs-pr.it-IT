@@ -22,15 +22,15 @@ ms.locfileid: "48637452"
 ---
 # <a name="payment-information-for-colombia"></a>Informazioni di pagamento per la Colombia
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Si prega di pagare solo in pesos colombiani. Per l'elaborazione del pagamento, il nome della società e il numero di fattura devono essere forniti su consiglio di rimessa.
+Si prega di pagare solo in pesos di pesos in endovaso. Per l'elaborazione del pagamento, il nome della società e i numeri di fattura devono essere forniti su consiglio di rimessa.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** Citibank, Bogota;  
+**Bank:** Citibank, Bogotà;  
 **Codice bancario:** 09  
 **Codice SWIFT:** CITICOBB  
 **NIT:** 800.198.591-3  
 **Numero account:** 0060534055  
-**Nome account:** Filiale di Microsoft Colombia Inc.   
+**Nome account:** Branch of Microsoft Colombia Inc.   

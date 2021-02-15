@@ -22,7 +22,7 @@ ms.locfileid: "48639084"
 ---
 # <a name="contact-support-for-turkey"></a>Contattare il supporto per la Turchia
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 0 850 3902777
@@ -30,12 +30,12 @@ ms.locfileid: "48639084"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Turco: Mon-Fri 9.00-18.00
+Turco: Mon-Fri dalle 9.00 alle 18.00
 
-Inglese: Mon-Fri 9.00-18.00
+Inglese: Mon-Fri dalle 9.00 alle 18.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Turco: Mon-Fri 8.00-18.00
+Turco: Mon-Fri dalle 8.00 alle 18.00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana

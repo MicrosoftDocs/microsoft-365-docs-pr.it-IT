@@ -90,7 +90,7 @@ Questo set limitato di endpoint può essere diviso dal tunnel VPN forzato e invi
 
 Elementi di sicurezza quali DLP, protezione AV, autenticazione e controllo degli accessi possono essere forniti in modo molto più efficiente rispetto a questi endpoint a diversi livelli all'interno del servizio. Inoltre, distogliendo la maggior parte del volume del traffico dalla VPN, questa soluzione rende disponibile capacità VPN per il traffico aziendale critico che ancora si basa su di esso. Consente inoltre di evitare di passare attraverso un programma di aggiornamento, in molti casi, lungo e costoso per far fronte a questo nuovo modo di operare.
 
-![Dettagli di configurazione della VPN del tunnel diviso](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
+![Dettagli sulla configurazione della VPN split tunneling](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
 _Figura 3 - Soluzione split tunnel VPN con evidenti eccezioni di Office 365 inviate direttamente al servizio. Tutto il resto del traffico è obbligato a tornare nella rete aziendale indipendentemente dalla destinazione._
 

@@ -33,24 +33,24 @@ ms.locfileid: "48328510"
 
 *Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
-È possibile gestire le password degli account utente di Microsoft 365 in diversi modi, a seconda della configurazione dell'identità. È possibile gestire gli account utente nell'interfaccia di [amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/), in servizi di dominio Active Directory (ad DS) o nell'interfaccia di amministrazione di Azure Active Directory (Azure ad).
+È possibile gestire le password degli account utente di Microsoft 365 in diversi modi, a seconda della configurazione dell'identità. È possibile gestire gli account utente nell'interfaccia di amministrazione di [Microsoft 365,](https://docs.microsoft.com/microsoft-365/admin/add-users/)in Servizi di dominio Active Directory o nell'interfaccia di amministrazione di Azure Active Directory (Azure AD).
 
-## <a name="plan-for-where-and-how-you-will-manage-your-user-account-passwords"></a>Pianificare la posizione e la modalità di gestione delle password degli account utente
+## <a name="plan-for-where-and-how-you-will-manage-your-user-account-passwords"></a>Pianificare dove e come gestire le password degli account utente
 
-Il percorso e la modalità di gestione degli account utente dipendono dal modello di identità che si desidera utilizzare per Microsoft 365. I due modelli sono solo basati sul cloud e ibridi.
+La posizione e la modalità di gestione degli account utente dipendono dal modello di identità che si vuole usare per Microsoft 365. I due modelli sono solo cloud e ibridi.
   
 ### <a name="cloud-only"></a>Solo cloud
 
-È possibile gestire le password degli account utente in:
+Le password degli account utente vengono gestite in:
 
 - [L'interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/)
 - Interfaccia di amministrazione di Azure AD
     
 ### <a name="hybrid"></a>Ibrido
 
-Con l'identità ibrida, le password vengono archiviate in servizi di dominio Active Directory, pertanto è necessario utilizzare gli strumenti di AD DS locali per gestire le password degli account utente. Anche quando si utilizza la sincronizzazione degli hash delle password (pH), in cui Azure AD archivia una versione con hash della versione già sottoposto a hash in servizi di dominio Active Directory, è necessario che gli utenti gestiscano le proprie password in servizi di dominio Active Directory.
+Con l'identità ibrida, le password vengono archiviate in Servizi di dominio Active Directory, quindi è necessario utilizzare gli strumenti di Servizi di dominio Active Directory locali per gestire le password degli account utente. Anche quando si usa la sincronizzazione dell'hash delle password (PHS), in cui Azure AD archivia una versione con hash della versione già con hash in Servizi di dominio Active Directory, è necessario gestire le password in Servizi di dominio Active Directory.
 
-Con il [writeback delle password](#pw_writeback), gli utenti possono modificare le password di servizi di dominio Active Directory tramite Azure ad.
+Con [il writeback delle password,](#pw_writeback)gli utenti possono modificare le password di Servizi di dominio Active Directory tramite Azure AD.
 
 ## <a name="prevent-bad-passwords"></a>Impedire l'uso di password non consentite
 
@@ -64,18 +64,18 @@ Per impedire agli utenti di creare password facilmente determinabili, usare la p
 - Termini interni specifici della società
 - Abbreviazioni con significato aziendale specifico
 
-È possibile vietare le password non valide [nel cloud](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) e per il servizio di [dominio Active Directory locale](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad-on-premises).
+È possibile vietare le [password non valide nel cloud](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) e per Servizi di dominio Active Directory [locale.](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad-on-premises)
 
 ## <a name="simplify-user-sign-in"></a>Semplificare l'accesso utente
 
-Azure AD seamless Single Sign-on (Azure AD seamless SSO) è compatibile con il pH e l'autenticazione pass-through (PTA), per consentire agli utenti di accedere ai servizi che utilizzano gli account utente di Azure AD senza dover digitare le password e, in molti casi, i nomi utente. In questo modo gli utenti possono facilmente accedere alle applicazioni basate su cloud come Office 365, senza aver bisogno di componenti aggiuntivi in loco quali ad esempio server federativi di identità.
+Azure AD Seamless Single Sign-On (Azure AD Seamless SSO) funziona con PHS e autenticazione Pass-Through (PTA), per consentire agli utenti di accedere ai servizi che usano gli account utente di Azure AD senza dover digitare le password e, in molti casi, i nomi utente. In questo modo gli utenti possono facilmente accedere alle applicazioni basate su cloud come Office 365, senza aver bisogno di componenti aggiuntivi in loco quali ad esempio server federativi di identità.
 
 L'accesso SSO facile di Azure AD viene configurato con lo strumento Azure AD Connect. Vedere le [istruzioni per configurare l'accesso SSO facile ad Azure AD](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-sso-quick-start).
 
 <a name="pw_writeback"></a>
-## <a name="simplify-password-updates-to-ad-ds"></a>Semplificare gli aggiornamenti delle password in servizi di dominio Active Directory
+## <a name="simplify-password-updates-to-ad-ds"></a>Semplificare gli aggiornamenti delle password per Servizi di dominio Active Directory
 
-Con il writeback delle password, è possibile consentire agli utenti di reimpostare le proprie password tramite Azure AD, che viene quindi replicato in servizi di dominio Active Directory. Gli utenti non devono accedere al servizio di dominio Active Directory locale per aggiornare le password. Questo risulta particolarmente utile per gli utenti remoti o mobili che non dispongono di una connessione remota alla rete locale.
+Con il writeback delle password, è possibile consentire agli utenti di reimpostare le password tramite Azure AD, che viene quindi replicato in Servizi di dominio Active Directory. Gli utenti non devono accedere a Servizi di dominio Active Directory locale per aggiornare le password. Questo risulta particolarmente utile per gli utenti remoti o mobili che non dispongono di una connessione remota alla rete locale.
 
 Il writeback delle password è necessario per utilizzare al meglio le capacità di Azure AD Identity Protection, come la richiesta agli utenti di cambiare le password locali nel caso in cui sia stato rilevato un alto rischio di violazione dell'account.
 
@@ -87,7 +87,7 @@ Per ulteriori informazioni e istruzioni di configurazione, vedere [Reimpostazion
 
 ## <a name="simplify-password-resets"></a>Semplificare le reimpostazioni delle password
 
-La reimpostazione della password in modalità self-service (SSPR) consente agli utenti di reimpostare o sbloccare le password o gli account. Per segnalare abusi o usi impropri è possibile utilizzare la reportistica dettagliata, che tiene traccia degli accessi degli utenti al sistema, insieme alle notifiche. È necessario abilitare il [writeback delle password](#pw_writeback) prima di poter distribuire le reimpostazioni delle password.
+La reimpostazione self-service della password consente agli utenti di reimpostare o sbloccare le password o gli account. Per segnalare abusi o usi impropri è possibile utilizzare la reportistica dettagliata, che tiene traccia degli accessi degli utenti al sistema, insieme alle notifiche. È necessario abilitare il [writeback delle password](#pw_writeback) prima di distribuire le reimpostazioni delle password.
 
 Vedere le [istruzioni per implementare la reimpostazione della password](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment).
 

@@ -24,11 +24,11 @@ ms.locfileid: "48398808"
 ---
 # <a name="identity-and-device-access-for-your-microsoft-365-test-environment"></a>L’identità e l’accesso dei dispositivi per l'ambiente di testing di Microsoft 365
 
-*Questa guida del laboratorio di testing può essere utilizzata solo per Microsoft 365 per gli ambienti di testing dell'organizzazione.*
+*Questa guida del laboratorio di testing può essere usata solo per gli ambienti di testing di Microsoft 365 per le aziende.*
 
-Le [configurazioni di accesso a identità e dispositivi](../security/office-365-security/microsoft-365-policies-configurations.md) sono un insieme di funzionalità e criteri di accesso condizionale per proteggere l'accesso a tutti i servizi integrati con Azure Active Directory (Azure ad).
+[Le configurazioni di identità e](../security/office-365-security/microsoft-365-policies-configurations.md) accesso ai dispositivi sono un set di funzionalità e criteri di accesso condizionale per proteggere l'accesso a tutti i servizi integrati con Azure Active Directory (Azure AD).
 
-Per creare un ambiente di testing con le configurazioni di accesso ai dispositivi e le identità comuni sul posto:
+Per creare un ambiente di testing con le configurazioni comuni di identità e accesso ai dispositivi:
 
 1. Configurare l'ambiente di testing con le funzionalità essenziali di identità e sicurezza in base alle scelte dell’utente del modello di identità e metodo di autenticazione:
 
@@ -36,16 +36,16 @@ Per creare un ambiente di testing con le configurazioni di accesso ai dispositiv
   - [Sincronizzazione dell'hash delle password (PHS)](phs-prereqs-m365-test-environment.md)
   - [Autenticazione pass-through](pta-prereqs-m365-test-environment.md)
 
-2. Utilizzare [criteri comuni di accesso a identità e](identity-access-policies.md) dispositivi per configurare i criteri che si basano sui prerequisiti configurati per l'ambiente di testing ed esplorare e verificare la protezione per identità e dispositivi.
+2. Utilizzare [i criteri comuni](identity-access-policies.md) di identità e accesso ai dispositivi per configurare i criteri che si basano sui prerequisiti configurati per l'ambiente di testing ed esplorare e verificare la protezione per identità e dispositivi.
 
 ## <a name="see-also"></a>Vedere anche
 
 [Guide al lab di test per identità aggiuntive](m365-enterprise-test-lab-guides.md#identity)
 
-[Roadmap dell'identità](identity-roadmap-microsoft-365.md)
+[Guida di orientamento all'identità](identity-roadmap-microsoft-365.md)
 
 [Guide ai lab di test di Microsoft 365 per le aziende](m365-enterprise-test-lab-guides.md)
 
 [Panoramica di Microsoft 365 per le aziende](microsoft-365-overview.md)
 
-[Microsoft 365 per la documentazione relativa all'organizzazione](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Documentazione di Microsoft 365 for enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)

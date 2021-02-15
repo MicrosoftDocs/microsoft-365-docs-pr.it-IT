@@ -1,5 +1,5 @@
 ---
-title: Informazioni di pagamento per Costa d'Avorio
+title: Informazioni di pagamento per la Costa d'Ivoire
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,16 +20,16 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48637416"
 ---
-# <a name="payment-information-for-cte-divoire"></a>Informazioni di pagamento per Costa d'Avorio
+# <a name="payment-information-for-cte-divoire"></a>Informazioni di pagamento per la Costa d'Ivoire
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Si prega di pagare solo in USD e fare riferimento al numero di fattura (s) sulla vostra rimessa di pagamento.
+Pagare solo in USD e fare riferimento al numero o ai numeri di fattura per la rimessa di pagamento.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** Citibank, Londra  
+**Bank:** Citibank, Londra  
 **Codice SWIFT:** CITIGB2L  
-**Codice IBAN:** GB95CITI18500812510049  
-**Numero account:** 12510049  
+**IBAN:** GB95CITI18500812510049  
+**Numero di conto:** 12510049  
 **Nome account:** MICROSOFT  

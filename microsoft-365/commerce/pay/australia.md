@@ -22,13 +22,13 @@ ms.locfileid: "48637968"
 ---
 # <a name="payment-information-for-australia"></a>Informazioni di pagamento per l'Australia
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Si prega di pagare solo in AUD e fare riferimento al numero di fattura (s) sulla rimessa fattura.
+Pagare solo in AUD e fare riferimento ai numeri di fattura nella fattura rimessa.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** Citibank, Sydney  
+**Bank:** Citibank, Sydney  
 **Codice SWIFT:** CITIAU2X  
 **Codice BSB:** 242000  
 **Numero account:** 205565043  

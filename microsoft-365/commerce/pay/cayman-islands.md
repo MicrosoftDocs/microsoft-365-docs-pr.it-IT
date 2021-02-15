@@ -1,5 +1,5 @@
 ---
-title: Informazioni di pagamento per Isole Cayman
+title: Informazioni di pagamento per le Isole Cayman
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,16 +20,16 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48637488"
 ---
-# <a name="payment-information-for-cayman-islands"></a>Informazioni di pagamento per Isole Cayman
+# <a name="payment-information-for-cayman-islands"></a>Informazioni di pagamento per le Isole Cayman
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Si prega di pagare solo in USD e fare riferimento ai numeri di fattura sulla rimessa dei pagamenti.
+Pagare solo in USD e fare riferimento ai numeri di fattura nella rimessa di pagamento.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** Bank of America  
-**Branch:** Dallas  
+**Bank:** Bank of America  
+**Ramo:** Dallas  
 **Codice SWIFT:** BOFAUS3N  
 **Numero account:** 4426587954  
 **Nome account:** Microsoft  

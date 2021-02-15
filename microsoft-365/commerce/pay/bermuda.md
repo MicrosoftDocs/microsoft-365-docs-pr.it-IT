@@ -1,5 +1,5 @@
 ---
-title: Informazioni di pagamento per Bermuda
+title: Informazioni di pagamento per le Bermuda
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,16 +20,16 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48637728"
 ---
-# <a name="payment-information-for-bermuda"></a>Informazioni di pagamento per Bermuda
+# <a name="payment-information-for-bermuda"></a>Informazioni di pagamento per le Bermuda
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Si prega di pagare solo in USD e fare riferimento ai numeri di fattura sulla rimessa in fattura.
+Pagare solo in USD e fare riferimento ai numeri di fattura nella fattura rimessa.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** Bank of America  
-**Branch:** Dallas  
+**Bank:** Bank of America  
+**Ramo:** Dallas  
 **Codice SWIFT:** BOFAUS3N  
 **Numero account:** 4426587954  
 **Nome account:** Microsoft  

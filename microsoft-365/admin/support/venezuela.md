@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per Venezuela
+title: Informazioni di supporto per il Venezuela
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,9 +20,9 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48638652"
 ---
-# <a name="contact-support-for-venezuela"></a>Contattare il supporto per Venezuela
+# <a name="contact-support-for-venezuela"></a>Contattare il supporto per il Venezuela
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 0800 100 8763
@@ -30,7 +30,7 @@ ms.locfileid: "48638652"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Spagnolo: Mon-Fri 9.00-17.00
+Spagnolo: Mon-Fri dalle 9.00 alle 17.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 

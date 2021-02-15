@@ -1,5 +1,5 @@
 ---
-title: Informazioni di pagamento per la Cina (PRC)
+title: Informazioni di pagamento per la Cina (RPC)
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,18 +20,18 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48637464"
 ---
-# <a name="payment-information-for-china-prc"></a>Informazioni di pagamento per la Cina (PRC)
+# <a name="payment-information-for-china-prc"></a>Informazioni di pagamento per la Cina (RPC)
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Si prega di pagare in CNY e di riferimento il nome della società e il numero di fattura (s) sulla rimessa pagamento.
+Pagare in CNY e fare riferimento al nome della società e ai numeri di fattura sulla rimessa di pagamento.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** Citibank  
-**Branch:** Hong Kong  
+**Bank:** Citibank  
+**Ramo:** Hong Kong  
 **Codice SWIFT:** CITIHKHX  
 **Codice CNAP:** 989584000600   
-**Numero account:** 1199527009  
+**Numero di conto:** 1199527009  
 **Nome account:** MICROSOFT REGIONAL SALES CORP  
-**Nota: pagare tramite il canale di RTGS RMB in HK.**  
+**Nota: Pagare tramite il canale RMB RTGS in HK.**  

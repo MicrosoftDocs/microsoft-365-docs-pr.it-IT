@@ -22,14 +22,14 @@ ms.locfileid: "48637404"
 ---
 # <a name="payment-information-for-curacao"></a>Informazioni di pagamento per Curacao
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Si prega di pagare solo in USD e i numeri delle fatture di riferimento sulla sua rimessa di pagamento.
+Pagare solo in USD e fare riferimento ai numeri di fattura per la rimessa di pagamento.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** Bank of America  
-**Branch:** Dallas  
+**Bank:** Bank of America  
+**Ramo:** Dallas  
 **Codice SWIFT:** BOFAUS3N  
 **Numero account:** 4426587954  
 **Nome account:** Microsoft  

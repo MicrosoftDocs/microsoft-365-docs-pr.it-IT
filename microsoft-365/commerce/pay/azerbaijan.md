@@ -22,14 +22,14 @@ ms.locfileid: "48637944"
 ---
 # <a name="payment-information-for-azerbaijan"></a>Informazioni di pagamento per l'Azerbaigian
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Si prega di pagare solo in USD e fare riferimento ai numeri di fattura sulla rimessa in fattura.
+Pagare solo in USD e fare riferimento ai numeri di fattura nella fattura rimessa.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** Citibank, Londra  
+**Bank:** Citibank, Londra  
 **Codice SWIFT:** CITIGB2L  
-**Codice IBAN:** GB95CITI18500812510049  
-**Numero account:** 12510049  
+**IBAN:** GB95CITI18500812510049  
+**Numero di conto:** 12510049  
 **Nome account:** MICROSOFT  

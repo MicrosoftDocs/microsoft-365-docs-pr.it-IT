@@ -32,13 +32,13 @@ ms.locfileid: "48638244"
 ---
 # <a name="add-licenses-to-a-subscription-purchased-through-the-volume-licensing-service-center"></a>Aggiungere licenze acquistate tramite il centro servizi per contratti multilicenza
 
-Se è stato acquistato il piano Microsoft 365 for business o Office 365 Enterprise tramite un partner di terze parti, è necessario acquistare licenze aggiuntive tramite tale partner. Se tale partner è noto a Microsoft, è possibile usare la procedura seguente per contattarlo.
+Se il piano di Microsoft 365 per le aziende o Office 365 Enterprise è stato acquistato tramite un partner di terze parti, è necessario acquistare licenze aggiuntive tramite tale partner. Se tale partner è noto a Microsoft, è possibile usare la procedura seguente per contattarlo.
 
 ::: moniker range="o365-worldwide"
   
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
 
-2. Selezionare l'abbonamento a cui si desidera aggiungere licenze, quindi selezionare il collegamento **VLSC (Volume Licensing Service Center)** .
+2. Selezionare l'abbonamento a cui si desidera aggiungere licenze, quindi selezionare il collegamento Centro servizi **per** contratti multilicenza.
 
 3. Seguire la procedura indicata nel centro servizi per contratti multilicenza per completare l'acquisto.
 
@@ -48,7 +48,7 @@ Se è stato acquistato il piano Microsoft 365 for business o Office 365 Enterpri
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
 
-2. Nella pagina Abbonamenti selezionare l'abbonamento a cui si desidera aggiungere licenze, quindi selezionare il collegamento **VLSC (Volume Licensing Service Center)** .
+2. Nella pagina Sottoscrizioni selezionare l'abbonamento a cui si desidera  aggiungere licenze, quindi selezionare il collegamento Centro servizi per contratti multilicenza.
 
 3. Seguire la procedura indicata nel centro servizi per contratti multilicenza per completare l'acquisto. 
 
@@ -58,7 +58,7 @@ Se è stato acquistato il piano Microsoft 365 for business o Office 365 Enterpri
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
 
-2. Nella pagina Abbonamenti selezionare l'abbonamento a cui si desidera aggiungere licenze, quindi selezionare il collegamento **VLSC (Volume Licensing Service Center)** .
+2. Nella pagina Sottoscrizioni selezionare l'abbonamento a cui si desidera  aggiungere licenze, quindi selezionare il collegamento Centro servizi per contratti multilicenza.
 
 3. Seguire la procedura indicata nel centro servizi per contratti multilicenza per completare l'acquisto.
 

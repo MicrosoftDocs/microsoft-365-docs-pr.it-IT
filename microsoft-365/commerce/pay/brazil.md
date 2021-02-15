@@ -22,6 +22,6 @@ ms.locfileid: "48637680"
 ---
 # <a name="payment-information-for-brazil"></a>Informazioni di pagamento per il Brasile
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Seguire le istruzioni di pagamento per la fattura e i numeri di fattura di riferimento sulla rimessa di pagamento.  
+Seguire le istruzioni di pagamento sulla fattura e fare riferimento ai numeri di fattura sulla rimessa di pagamento.  

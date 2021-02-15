@@ -22,10 +22,10 @@ ms.locfileid: "48639192"
 ---
 # <a name="contact-support-for-tanzania"></a>Contattare il supporto per la Tanzania
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
-+ 254 20 286 8800
++254 20 286 8800
 
 Selezionare l'opzione 9
 
@@ -34,10 +34,10 @@ Immettere il codice 7704
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Inglese: Mon-Fri 10.00-18.00
+Inglese: Mon-Fri dalle 10.00 alle 18.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Tariffe di chiamata internazionali applicate
+Si applicano addebiti per chiamate internazionali

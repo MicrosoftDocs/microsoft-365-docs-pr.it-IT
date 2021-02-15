@@ -27,7 +27,7 @@ ms.locfileid: "48487447"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Autenticazione pass-through per l'ambiente di testing di Microsoft 365
 
-*Questa guida del laboratorio di testing può essere utilizzata per ambienti di testing Microsoft 365 per Enterprise e Office 365 Enterprise.*
+*Questa guida del laboratorio di testing può essere usata sia per gli ambienti di testing di Microsoft 365 per le aziende che per Office 365 Enterprise.*
 
 Le organizzazioni che vogliono usare direttamente l'infrastruttura di Active Directory Domain Services locale per l'autenticazione per le applicazioni e servizi basati sul cloud di Microsoft, possono usare l'autenticazione pass-through. In questo articolo viene descritto come configurare l'ambiente di testing di Microsoft 365 per l'autenticazione pass-through, con la seguente configurazione come risultato:
   
@@ -51,7 +51,7 @@ Seguire le istruzioni riportate in [sincronizzazione hash delle password per Mic
   
 Questa configurazione è costituita da: 
   
-- Microsoft 365 E5 o sottoscrizione a pagamento.
+- Sottoscrizione di valutazione o a pagamento di Microsoft 365 E5.
 - Una intranet dell’organizzazione semplificata connessa a Internet e costituita dalle macchine virtuali DC1 APP1 e CLIENT1 in una sottorete di una rete virtuale Azure. Azure AD Connect viene eseguito su APP1 per sincronizzare periodicamente il dominio TESTLAB di Active Directory Domain Services con il tenant di Azure AD dell'abbonamento a Microsoft 365.
 
 ## <a name="phase-2-configure-azure-ad-connect-on-app1-for-pass-through-authentication"></a>Fase 2: configurare Azure AD Connect su APP1 per l'autenticazione pass-through
@@ -80,7 +80,7 @@ Questa fase riguarda la configurazione di Azure AD Connect su APP1 per l'uso del
 
 10.    Fare clic su **Autenticazione pass-through**. Nel riquadro **Autenticazione pass-through** sono elencati i server in cui sono installati gli Agenti di autenticazione. APP1 sarà presente nell'elenco. Chiudere il riquadro **Autenticazione pass-through**.
 
-Successivamente, verificare la possibilità di accedere all'abbonamento con il <strong>User1@testlab.</strong>\<your public domain> per l’account User1.
+Testare quindi la possibilità di accedere all'abbonamento con il <strong>user1@testlab.</strong>\<your public domain> per l’account User1.
 
 1. Da APP1, disconnettersi e quindi accedere nuovamente specificando un account diverso.
 
@@ -94,7 +94,7 @@ Di seguito è riportata la configurazione risultante:
  
 Questa configurazione è costituita da:
 
-- Una versione di valutazione di Microsoft 365 E5 o abbonamenti a pagamento con dominio DNS testlab.\<your domain name> registrato.
+- Sottoscrizioni di valutazione o a pagamento di Microsoft 365 E5 con il dominio DNS testlab.\<your domain name> registrato.
 - Una intranet dell'organizzazione semplificata connessa a Internet e costituita dalle macchine virtuali DC1, APP1 e CLIENT1 in una sottorete di una rete virtuale Azure. Un Agente di autenticazione viene eseguito su APP1 per gestire le richieste di autenticazione pass-through dal tenant di Azure AD dell'abbonamento a Microsoft 365.
 
 ## <a name="next-step"></a>Passaggio successivo
@@ -107,4 +107,4 @@ Esplorare altre caratteristiche e funzionalità [identità](m365-enterprise-test
 
 [Panoramica di Microsoft 365 per le aziende](microsoft-365-overview.md)
 
-[Microsoft 365 per la documentazione relativa all'organizzazione](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Documentazione di Microsoft 365 for enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)

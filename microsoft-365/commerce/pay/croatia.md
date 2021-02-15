@@ -1,5 +1,5 @@
 ---
-title: Informazioni sui pagamenti per la Croazia
+title: Informazioni di pagamento per la Croazia
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,17 +20,17 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48637428"
 ---
-# <a name="payment-information-for-croatia"></a>Informazioni sui pagamenti per la Croazia
+# <a name="payment-information-for-croatia"></a>Informazioni di pagamento per la Croazia
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Si prega di pagare solo l'EUR e i numeri delle fatture di riferimento sulla sua rimessa di pagamento.
+Pagare solo in EUR e fare riferimento ai numeri di fattura per la rimessa di pagamento.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** Citibank, Londra  
+**Bank:** Citibank, Londra  
 **Codice SWIFT/BIC:** CITIGB2L  
-**Codice IBAN:** 12207591  
-**Codice di ordinamento:** 185008  
-**Numero account:** 12207591  
+**IBAN:** 12207591  
+**Sort Code:** 185008  
+**Numero di conto:** 12207591  
 **Nome account:** MICROSOFT  

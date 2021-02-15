@@ -22,13 +22,13 @@ ms.locfileid: "48638004"
 ---
 # <a name="payment-information-for-argentina"></a>Informazioni di pagamento per l'Argentina
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Si prega di pagare solo in USD e fare riferimento al numero di fattura (s) sulla vostra rimessa di pagamento.
+Pagare solo in USD e fare riferimento al numero o ai numeri di fattura per la rimessa di pagamento.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** Bank of America  
+**Bank:** Bank of America  
 **Branch** Dallas  
 **Codice SWIFT:** BOFAUS3N  
 **Numero account:** 4426587954  

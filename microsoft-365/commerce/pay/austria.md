@@ -22,15 +22,15 @@ ms.locfileid: "48637956"
 ---
 # <a name="payment-information-for-austria"></a>Informazioni di pagamento per l'Austria
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Si prega di pagare solo euro e fare riferimento ai numeri di fattura presenti nella rimessa della fattura.
+Pagare solo in EUR e fare riferimento ai numeri di fattura nella fattura rimessa.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** Citibank, Londra  
+**Bank:** Citibank, Londra  
 **Codice SWIFT/BIC:** CITIGB2L  
-**Codice di ordinamento:** 185008  
-**Codice IBAN** GB31CITI18500812207591  
-**Numero account:** 12207591  
+**Sort Code:** 185008  
+**IBAN** GB31CITI18500812207591  
+**Numero di conto:** 12207591  
 **Nome account:** MICROSOFT  

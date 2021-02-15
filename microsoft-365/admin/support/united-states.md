@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per gli Stati Uniti
+title: Informazioni di supporto per gli Stati Uniti
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -22,7 +22,7 @@ ms.locfileid: "48638868"
 ---
 # <a name="contact-support-for-united-states"></a>Contattare il supporto per gli Stati Uniti
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 1 800 865 9408
@@ -30,7 +30,7 @@ ms.locfileid: "48638868"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Inglese: Mon-Fri 9.00-17.00
+Inglese: lun-ven 9:00-17:00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 

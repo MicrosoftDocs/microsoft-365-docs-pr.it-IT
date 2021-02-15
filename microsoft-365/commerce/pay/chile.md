@@ -1,5 +1,5 @@
 ---
-title: Informazioni sui pagamenti per il Cile
+title: Informazioni di pagamento per il Cile
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,16 +20,16 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48637476"
 ---
-# <a name="payment-information-for-chile"></a>Informazioni sui pagamenti per il Cile
+# <a name="payment-information-for-chile"></a>Informazioni di pagamento per il Cile
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Si prega di pagare solo in USD. Per l'elaborazione del pagamento, il nome della società e il numero di fattura devono essere forniti sul vostro Consiglio di rimessa.
+Pagare solo in USD. Per l'elaborazione del pagamento, il nome della società e il numero di fattura devono essere forniti in base ai consigli di rimessa.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** Bank of America  
-**Branch:** Dallas  
+**Bank:** Bank of America  
+**Ramo:** Dallas  
 **Codice SWIFT:** BOFAUS3N  
 **Numero account:** 4426587954  
 **Nome account:** Microsoft  

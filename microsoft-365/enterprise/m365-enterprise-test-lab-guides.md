@@ -31,23 +31,23 @@ ms.locfileid: "48487471"
 
 Le guide al lab di test (TLG) facilitano la conoscenza dei prodotti Microsoft. Forniscono istruzioni prescrittive per configurare ambienti di testing semplificati ma rappresentativi. È possibile utilizzare questi ambienti per la dimostrazione, la personalizzazione o la creazione di modelli di verifica complessi per la durata di un abbonamento di valutazione o a pagamento.
 
-TLG sono progettate per essere modulari. Si basano su ogni altro per creare più configurazioni che corrispondano più strettamente alle esigenze di configurazione di apprendimento o di testing. Il "l'ho costruito io e funziona" hands-on Experience aiuta a capire i requisiti di distribuzione di un nuovo prodotto o scenario, in modo da poter pianificare meglio l'hosting in produzione.
+Le TG sono progettate per essere modulari. Si basano l'uno sull'altro per creare più configurazioni che corrispondano maggiormente alle esigenze di configurazione di apprendimento o test. L'esperienza "L'ho creata io e funziona" consente di comprendere i requisiti di distribuzione di un nuovo prodotto o scenario, in modo da poter pianificare meglio l'hosting in produzione.
 
-È inoltre possibile utilizzare TLG per creare ambienti rappresentativi per lo sviluppo e il testing delle applicazioni, noti anche come ambienti di sviluppo/test.
+È inoltre possibile utilizzare le TG per creare ambienti rappresentativi per sviluppare e testare applicazioni, note anche come ambienti di sviluppo/test.
   
 ![Guide al lab di test per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-Per una mappa visiva su tutti gli articoli della guida del laboratorio di testing di Microsoft 365 per l'organizzazione, espandere la grafica seguente o andare a [Microsoft 365 for Enterprise Test Lab guide stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
+Per una mappa visiva di tutti gli articoli della guida del lab di test di Microsoft 365 per le aziende, espandere l'immagine seguente o passare a [Microsoft 365 per enterprise Test Lab Guide Stack.](../downloads/Microsoft365EnterpriseTLGStack.pdf)
 
 [![Serie di guide al lab di test di Microsoft 365 per le aziende](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../downloads/Microsoft365EnterpriseTLGStack.pdf)
 
 ## <a name="base-configuration"></a>Configurazione di base
 
-Per prima cosa, creare un ambiente di testing per [Microsoft 365 per Enterprise](https://docs.microsoft.com/microsoft-365-enterprise/). È possibile creare due tipi diversi di configurazioni di base:
+Prima di tutto, creare un ambiente di testing [per Microsoft 365 per le aziende.](https://docs.microsoft.com/microsoft-365-enterprise/) È possibile creare due diversi tipi di configurazioni di base:
 
-- [Configurazione di base semplificata](lightweight-base-configuration-microsoft-365-enterprise.md) -utilizzare questa impostazione per configurare e dimostrare Microsoft 365 per le caratteristiche e le funzionalità aziendali in un ambiente solo cloud, che non include componenti locali.
+- [Configurazione di base](lightweight-base-configuration-microsoft-365-enterprise.md) leggera: utilizzare questa opzione quando si desidera configurare e dimostrare le funzionalità e le funzionalità di Microsoft 365 per le aziende in un ambiente solo cloud, che non include componenti locali.
 
-- [Configurazione di base Enterprise simulata](simulated-ent-base-configuration-microsoft-365-enterprise.md) -utilizzare questa impostazione per configurare e dimostrare Microsoft 365 per le caratteristiche e le funzionalità aziendali in un ambiente cloud ibrido, che utilizza componenti locali, ad esempio un dominio di servizi di dominio Active Directory (ad DS).
+- [Configurazione](simulated-ent-base-configuration-microsoft-365-enterprise.md) di base aziendale simulata: utilizzare questa opzione quando si desidera configurare e dimostrare le funzionalità e le funzionalità di Microsoft 365 per le aziende in un ambiente cloud ibrido, che utilizza componenti locali, ad esempio un dominio di Servizi di dominio Active Directory.
 
 È anche possibile creare ambienti di test per Office 365 E5 non aggiungendo la licenza di Microsoft 365 E5 all'ambiente di test di prova o di produzione.
     
@@ -69,7 +69,7 @@ Per verificare le funzionalità e le capacità relative alla gestione delle iden
 
 - [Accesso Single Sign-On facile di Azure AD](single-sign-on-m365-ent-test-environment.md)
   
-   Abilitare e testare Azure AD seamless Single Sign-on (SSO senza problemi) con un controller di dominio AD DS.
+   Abilitare e testare l'accesso Single #A0 facile di Azure AD (SSO facile) con un controller di dominio di Servizi di dominio Active Directory.
 
 - [Autenticazione a più fattori](multi-factor-authentication-microsoft-365-test-environment.md)
   
@@ -85,7 +85,7 @@ Per verificare le funzionalità e le capacità relative alla gestione delle iden
 
 - [Reimpostazione delle password](password-reset-m365-ent-test-environment.md)
 
-   Utilizzare la reimpostazione della password in modalità self-service per reimpostare la password.
+   Utilizzare la reimpostazione della password in self-service per reimpostare la password.
 
 - [Licenze automatiche e appartenenza a gruppi](automate-licenses-group-membership-microsoft-365-test-environment.md)
 

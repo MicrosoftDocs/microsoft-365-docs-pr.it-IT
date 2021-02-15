@@ -24,9 +24,9 @@ ms.locfileid: "48399444"
 ---
 # <a name="identity-and-device-access-prerequisites-for-password-hash-synchronization-in-your-microsoft-365-test-environment"></a>Identità e prerequisiti di accesso dei dispositivi per la sincronizzazione dell’hash delle password in ambiente di testing di Microsoft 365
 
-*Questa guida del laboratorio di testing può essere utilizzata solo per Microsoft 365 per gli ambienti di testing dell'organizzazione.*
+*Questa guida del laboratorio di testing può essere usata solo per gli ambienti di testing di Microsoft 365 per le aziende.*
 
-Le [configurazioni di accesso a identità e dispositivi](../security/office-365-security/microsoft-365-policies-configurations.md) sono un insieme di configurazioni e criteri di accesso condizionale per proteggere l'accesso a tutti i servizi in Microsoft 365 per Enterprise integrati con Azure Active Directory (Azure ad).
+[Le configurazioni di](../security/office-365-security/microsoft-365-policies-configurations.md) identità e accesso ai dispositivi sono un set di configurazioni e criteri di accesso condizionale per proteggere l'accesso a tutti i servizi in Microsoft 365 per le aziende integrati con Azure Active Directory (Azure AD).
 
 In questo articolo viene descritto come configurare un ambiente di testing di Microsoft 365 che soddisfi i requisiti di[Active Directory con configurazione dei prerequisiti di sincronizzazione dell’hash delle password](../security/office-365-security/identity-access-prerequisites.md#prerequisites) per l’identità e l’accesso dei dispositivi.
 
@@ -120,10 +120,10 @@ Usare i [criteri comuni di identità e accesso ai dispositivi](identity-access-p
 
 [Guide al lab di test per identità aggiuntive](m365-enterprise-test-lab-guides.md#identity)
 
-[Roadmap dell'identità](identity-roadmap-microsoft-365.md)
+[Guida di orientamento all'identità](identity-roadmap-microsoft-365.md)
 
 [Guide ai lab di test di Microsoft 365 per le aziende](m365-enterprise-test-lab-guides.md)
 
 [Panoramica di Microsoft 365 per le aziende](microsoft-365-overview.md)
 
-[Microsoft 365 per la documentazione relativa all'organizzazione](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Documentazione di Microsoft 365 for enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)

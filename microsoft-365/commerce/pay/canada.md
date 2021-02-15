@@ -22,23 +22,23 @@ ms.locfileid: "48637512"
 ---
 # <a name="payment-information-for-canada"></a>Informazioni di pagamento per il Canada
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Si prega di pagare solo in CAD e fare riferimento al numero di fattura (s) sulla vostra rimessa di pagamento.
+Pagare solo in CAD e fare riferimento al numero o ai numeri di fattura della rimessa di pagamento.
 
 ## <a name="check"></a>Assegno
 
-**Beneficiario:** Microsoft
+**Payee:** Microsoft
 
-**Indirizzo di posta elettronica:**  
-Bank of America, archivio 910430, cassetta postale 4090, STN A, Toronto su M5W 0E9, Canada
+**Indirizzo postale:**  
+Bank of America, Lockbox 910430, PO Box 4090, STN A, Toronto ON M5W 0E9, Canada
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** Bank of America, Toronto  
+**Bank:** Bank of America, Toronto  
 **Codice SWIFT:** BOFACATT  
 **Numero account:** 45571239  
 **Nome account:** Microsoft  
-**ID della Banca:** 241  
-**Succursale:** 56792  
+**BANK ID:** 241  
+**Branch:** 56792  
 **Routing/transito #:** 024156792  

@@ -22,22 +22,22 @@ ms.locfileid: "48638664"
 ---
 # <a name="contact-support-for-wallis-and-futuna"></a>Contattare il supporto per Wallis e Futuna
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
-+ 1 312 843 5147
++1 312 843 5147
 
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Francese: Sun-Fri 8.00-16.00
+Francese: Sun-Fri dalle 20:00 alle 4:00
 
-Inglese: Sun-Fri 8.00-16.00
+Inglese: Sun-Fri dalle 20:00 alle 4:00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Francese: Mon-Fri 7 PM-8
+Francese: Mon-Fri dalle 19.00 alle 08.00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Tariffe di chiamata internazionali applicate
+Si applicano addebiti per chiamate internazionali

@@ -13,7 +13,7 @@ f1.keywords:
 - NOCSH
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
-description: "Riepilogo: utilizzare PowerShell per gestire le proprietà dell'account utente di Skype for business online con i criteri."
+description: "Riepilogo: usare PowerShell per gestire le proprietà dell'account utente di Skype for Business online con i criteri."
 ms.openlocfilehash: 20a75fa1c131f693fcf30d20477af5c9ee7aed35
 ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
 ms.translationtype: MT
@@ -25,16 +25,16 @@ ms.locfileid: "48477042"
 
 *Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
 
-Per gestire molte proprietà dell'account utente per Skype for business online, è necessario specificarle come proprietà dei criteri con PowerShell per Microsoft 365.
+Per gestire molte proprietà dell'account utente per Skype for Business online, è necessario specificarle come proprietà dei criteri con PowerShell per Microsoft 365.
   
 ## <a name="before-you-begin"></a>Prima di iniziare
 
 Utilizzare queste istruzioni per ottenere la configurazione che consenta di eseguire i comandi (ignorare i passaggi già completati):
 
   > [!Note]
-  > Il connettore di Skype for business online è attualmente parte del modulo di PowerShell per team più recente. Se si utilizza la versione pubblica di PowerShell per i team più recenti, non è necessario installare il connettore di Skype for business online.
+  > Il connettore di Skype for Business Online fa parte al momento del modulo PowerShell di Teams più recente. Se si usa la versione pubblica di PowerShell di Teams più recente, non è necessario installare il connettore di Skype for Business Online.
 
-1. Installare il [modulo teams PowerShell](https://docs.microsoft.com/microsoftteams/teams-powershell-install).
+1. Installare il [modulo PowerShell di Teams.](https://docs.microsoft.com/microsoftteams/teams-powershell-install)
     
 2. Aprire il prompt dei comandi Windows PowerShell ed eseguire quanto segue: 
 
@@ -67,7 +67,7 @@ EnablePublicCloudAudioVideoAccess : True
 EnableOutsideAccess               : True
 ```
 
-Nell'esempio riportato, i valori compresi nei criteri determinano le operazioni di comunicazione con utenti federati che Alex può davvero effettuare o meno. Ad esempio, la proprietà EnableOutsideAccess deve essere impostata su True affinché un utente possa comunicare con utenti esterni all'organizzazione. Tenere presente che questa proprietà non viene visualizzata nell'interfaccia di amministrazione di Microsoft 365. Al contrario, la proprietà viene impostata automaticamente su True o False in base alle altre selezioni effettuate. Le altre due proprietà di interesse sono:
+Nell'esempio riportato, i valori compresi nei criteri determinano le operazioni di comunicazione con utenti federati che Alex può davvero effettuare o meno. Ad esempio, la proprietà EnableOutsideAccess deve essere impostata su True affinché un utente possa comunicare con utenti esterni all'organizzazione. Si noti che questa proprietà non viene visualizzata nell'interfaccia di amministrazione di Microsoft 365. Al contrario, la proprietà viene impostata automaticamente su True o False in base alle altre selezioni effettuate. Le altre due proprietà di interesse sono:
   
 - **EnableFederationAccess** indica se l'utente può comunicare con utenti di domini federati.
     
@@ -89,13 +89,13 @@ Get-CsOnlineUser -Identity "Alex Darrow" | ForEach {Get-CsExternalAccessPolicy -
 
 Questo comando consente di individuare il criterio assegnato all'utente, quindi di individuare le funzionalità abilitate o disabilitate all'interno del criterio.
   
-Per gestire i criteri di Skype for business online con PowerShell, vedere i cmdlet per:
+Per gestire i criteri di Skype for Business online con PowerShell, vedere i cmdlet per:
 
 - [Criteri client](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#client-policy-cmdlets)
 - [Criteri conferenza](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#conferencing-policy-cmdlets)
 - [Criteri per dispositivi mobili](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#mobile-policy-cmdlets)
-- [Criteri di segreteria telefonica online](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#online-voicemail-policy-cmdlets)
-- [Criterio di routing vocale](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#voice-routing-policy-cmdlets)
+- [Criteri della segreteria telefonica online](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#online-voicemail-policy-cmdlets)
+- [Criteri di routing vocale](https://docs.microsoft.com/previous-versions//mt228132(v=technet.10)#voice-routing-policy-cmdlets)
 
 
 > [!NOTE]
@@ -117,7 +117,7 @@ Get-CsExternalAccessPolicy -ApplicableTo "Alex Darrow"
 
 Il parametro ApplicableTo limita i dati restituiti ai criteri che possono essere assegnati a specifici utenti (ad esempio, Alex Darrow). A seconda dei limiti relativi alle licenze o al percorso di utilizzo, potrebbe rappresentare un sottogruppo di tutti i criteri disponibili. 
   
-In alcuni casi, le proprietà dei criteri non vengono utilizzate con Microsoft 365, mentre altre possono essere gestite solo dal personale del supporto tecnico Microsoft. 
+In alcuni casi, le proprietà dei criteri non vengono usate con Microsoft 365, mentre altre possono essere gestite solo dal personale di supporto Microsoft. 
   
 Con Skype for Business online, gli utenti devono essere gestiti da un criterio di qualche tipo. Se una proprietà correlata a criteri validi è vuota, significa che l'utente in questione viene gestito da un criterio globale, ovvero un criterio che viene applicato automaticamente a un utente a meno che non venga specificamente assegnato un criterio per utente. Poiché un criterio client per un account utente non è disponibile nell'elenco, viene gestito dal criterio globale. È possibile determinare il criterio client globale con questo comando:
   

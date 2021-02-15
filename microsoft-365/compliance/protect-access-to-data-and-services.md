@@ -25,45 +25,45 @@ ms.locfileid: "48399025"
 ---
 # <a name="protect-user-and-device-access"></a>Proteggere l'accesso di utenti e dispositivi
 
-La protezione dell'accesso ai dati e ai servizi di Microsoft 365 è cruciale per la difesa da attacchi cibernetici e la protezione contro la perdita di dati. Le stesse protezioni possono essere applicate ad altre applicazioni SaaS nell'ambiente e persino alle applicazioni locali pubblicate con il proxy di applicazione di Azure Active Directory.
+La protezione dell'accesso ai dati e ai servizi di Microsoft 365 è fondamentale per difendersi da attacchi informatici e proteggersi dalla perdita di dati. Le stesse protezioni possono essere applicate ad altre applicazioni SaaS nell'ambiente e anche alle applicazioni locali pubblicate con il proxy di applicazione di Azure Active Directory.
   
-## <a name="step-1-review-recommendations"></a>Passaggio 1: esaminare i suggerimenti
+## <a name="step-1-review-recommendations"></a>Passaggio 1: esaminare gli elementi consigliati
 
 Funzionalità consigliate per proteggere le identità e i dispositivi che accedono a Office 365, ad altri servizi SaaS e ad applicazioni locali pubblicate con proxy di applicazione Azure AD.
   
 [PDF](https://go.microsoft.com/fwlink/p/?linkid=841656) | [Visio](https://go.microsoft.com/fwlink/p/?linkid=841657) | [Altre lingue](https://www.microsoft.com/download/details.aspx?id=55032)
   
-## <a name="step-2-protect-administrator-accounts-and-access"></a>Passaggio 2: proteggere gli account di amministratore e l'accesso
-Gli account amministrativi utilizzati per amministrare l'ambiente Microsoft 365 includono privilegi elevati. Questi sono obiettivi validi per hacker e cyberattackers. 
+## <a name="step-2-protect-administrator-accounts-and-access"></a>Passaggio 2: Proteggere gli account amministratore e l'accesso
+Gli account amministrativi utilizzati per amministrare l'ambiente Microsoft 365 includono privilegi elevati. Si tratta di obiettivi importanti per hacker e cyberattacker. 
 
-Iniziare utilizzando solo gli account amministratore per l'amministrazione. Gli amministratori devono disporre di un account utente distinto per l'utilizzo regolare e non amministrativo e utilizzare il proprio account amministrativo solo quando necessario per completare un'attività associata alla loro funzione processi.
+Iniziare utilizzando gli account di amministratore solo per l'amministrazione. Gli amministratori devono disporre di un account utente separato per uso normale e non amministrativo e utilizzare il proprio account amministrativo solo se necessario per completare un'attività associata alla funzione lavorativa.
 
-Proteggere gli account di amministratore con l'autenticazione a più fattori e l'accesso condizionale. Per ulteriori informazioni, vedere [protecting Administrator Accounts](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-prerequisites#protecting-administrator-accounts). 
+Proteggere gli account amministratore con l'autenticazione a più fattori e l'accesso condizionale. Per ulteriori informazioni, vedere [Protezione degli account amministratore.](https://docs.microsoft.com/microsoft-365/enterprise/identity-access-prerequisites#protecting-administrator-accounts) 
 
-Successivamente, configurare la gestione degli accessi con privilegi in Office 365. La gestione degli accessi con privilegi consente il controllo di accesso granulare sulle attività amministrative privilegiate in Office 365. Può aiutare a proteggere l'organizzazione da violazioni che possono utilizzare gli account di amministrazione privilegiati esistenti con accesso permanente ai dati sensibili o l'accesso alle impostazioni di configurazione critiche.
+Successivamente, configurare la gestione degli accessi con privilegi in Office 365. La gestione degli accessi privilegiati consente un controllo granulare dell'accesso sulle attività di amministrazione con privilegi in Office 365. Può aiutare a proteggere l'organizzazione da violazioni che potrebbero usare account amministratore con privilegi esistenti con accesso permanente ai dati sensibili o l'accesso alle impostazioni di configurazione critiche.
 
 - [Panoramica della gestione degli accessi con privilegi](privileged-access-management-overview.md)
 - [Configurare la gestione degli accessi con privilegi](privileged-access-management-configuration.md)
 
-Un'altra raccomandazione principale consiste nell'utilizzare le workstation appositamente configurate per il lavoro amministrativo. Si tratta di dispositivi dedicati che vengono utilizzati solo per le attività amministrative. Vedere [protezione dell'accesso con privilegi](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access).
+Un altro elemento consigliato è l'utilizzo di workstation configurate in modo specifico per il lavoro amministrativo. Si tratta di dispositivi dedicati usati solo per le attività amministrative. Vedere [Protezione dell'accesso con privilegi.](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access)
 
-Infine, è possibile ridurre l'impatto della mancanza di accesso amministrativo accidentale creando due o più account di accesso di emergenza nel tenant. Vedere [gestire gli account di accesso per gli interventi di emergenza in Azure ad](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-emergency-access). 
+Infine, è possibile ridurre l'impatto della mancanza accidentale di accesso amministrativo creando due o più account di accesso di emergenza nel tenant. Vedi [Gestire gli account di accesso per gli interventi di emergenza in Azure AD.](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-emergency-access) 
 
-## <a name="step-3-configure-recommended-identity-and-device-access-policies"></a>Passaggio 3: configurare i criteri di identità e accesso ai dispositivi consigliati
-L'autenticazione a più fattori e i criteri di accesso condizionale sono strumenti potenti per attenuare gli account compromessi e gli accessi non autorizzati. È consigliabile implementare un insieme di criteri che sono stati testati insieme. Per ulteriori informazioni, incluse le procedure di distribuzione, vedere [Identity and Device Access Configurations](../security/office-365-security/microsoft-365-policies-configurations.md).
+## <a name="step-3-configure-recommended-identity-and-device-access-policies"></a>Passaggio 3: Configurare i criteri di identità e accesso dei dispositivi consigliati
+L'autenticazione a più fattori (MFA) e i criteri di accesso condizionale sono potenti strumenti per attenuare gli account compromessi e l'accesso non autorizzato. È consigliabile implementare un set di criteri che sono stati testati insieme. Per ulteriori informazioni, inclusi i passaggi di distribuzione, vedere [Configurazioni di identità e accesso ai dispositivi.](../security/office-365-security/microsoft-365-policies-configurations.md)
 
  Questi criteri implementano le funzionalità seguenti:
 - Autenticazione a più fattori
 - Accesso condizionale
-- Protezione delle app di Intune (app e protezione dei dati per i dispositivi)
+- Protezione delle app di Intune (protezione di app e dati per i dispositivi)
 - Conformità dei dispositivi Intune
 - Azure AD Identity Protection
 
-L'implementazione della conformità del dispositivo Intune richiede la registrazione del dispositivo. La gestione dei dispositivi consente di assicurarsi che siano integre e conformi prima di consentire loro di accedere alle risorse nell'ambiente in uso. Vedere [registrazione dei dispositivi per la gestione in Intune](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
+L'implementazione della conformità dei dispositivi intune richiede la registrazione del dispositivo. La gestione dei dispositivi consente di verificare che siano integri e conformi prima di consentire loro l'accesso alle risorse nell'ambiente. Vedere [Registrare i dispositivi per la gestione in Intune](https://docs.microsoft.com/intune-classic/deploy-use/enroll-devices-in-microsoft-intune)
 
-## <a name="step-4-configure-sharepoint-device-access-policies"></a>Passaggio 4: configurare i criteri di accesso ai dispositivi di SharePoint
+## <a name="step-4-configure-sharepoint-device-access-policies"></a>Passaggio 4: Configurare i criteri di accesso ai dispositivi di SharePoint
 
-Microsoft consiglia di proteggere il contenuto nei siti di SharePoint con contenuti sensibili e altamente regolamentati con i controlli di accesso ai dispositivi. Per ulteriori informazioni, vedere [consigli sui criteri per la protezione di siti e file di SharePoint](../security/office-365-security/sharepoint-file-access-policies.md).
+Microsoft consiglia di proteggere i contenuti nei siti di SharePoint con contenuti sensibili e altamente regolamentati con controlli di accesso ai dispositivi. Per ulteriori informazioni, vedere Suggerimenti [sui criteri per la protezione di siti e file di SharePoint.](../security/office-365-security/sharepoint-file-access-policies.md)
 
 
 

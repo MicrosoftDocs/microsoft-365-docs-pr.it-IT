@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per Suriname
+title: Informazioni di supporto per Suriname
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,22 +20,22 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48639432"
 ---
-# <a name="contact-support-for-suriname"></a>Contattare il supporto per Suriname
+# <a name="contact-support-for-suriname"></a>Contattare il supporto tecnico per Suriname
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
-+ 1 312 843 5146
++1 312 843 5146
 
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Olandese: Mon-Fri 5 AM-1 PM
+Olandese: Mon-Fri dalle 5:00 alle 13:00
 
-Inglese: Mon-Fri 5 AM-1 PM
+Inglese: Mon-Fri 05.00-13.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana
 
-Tariffe di chiamata internazionali applicate
+Si applicano addebiti per chiamate internazionali

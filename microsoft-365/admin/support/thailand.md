@@ -22,7 +22,7 @@ ms.locfileid: "48639180"
 ---
 # <a name="contact-support-for-thailand"></a>Contattare il supporto per la Thailandia
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 001 800 441 2619
@@ -30,12 +30,12 @@ ms.locfileid: "48639180"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Thai: Mon-Fri 9.00-17.00
+Thai: Mon-Fri dalle 9.00 alle 17.00
 
 Inglese: Mon-Fri 9.00-18.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
-Thai: Mon-Fri 9.00-17.00
+Thai: Mon-Fri dalle 9.00 alle 17.00
 
 Inglese: 24 ore al giorno, 7 giorni alla settimana

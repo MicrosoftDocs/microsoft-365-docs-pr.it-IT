@@ -1,5 +1,5 @@
 ---
-title: Informazioni di pagamento per Repubblica Dominicana
+title: Informazioni di pagamento per repubblica dominicana
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -20,16 +20,16 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 10/21/2020
 ms.locfileid: "48636758"
 ---
-# <a name="payment-information-for-dominican-republic"></a>Informazioni di pagamento per Repubblica Dominicana
+# <a name="payment-information-for-dominican-republic"></a>Informazioni di pagamento per repubblica dominicana
 
-[Trovare un altro paese o un'area geografica](../billing-and-payments/pay-for-your-subscription.md).
+[Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Si prega di pagare solo in USD e i numeri delle fatture di riferimento sulla sua rimessa di pagamento.
+Pagare solo in USD e fare riferimento ai numeri di fattura per la rimessa di pagamento.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Banca:** Bank of America  
-**Branch:** Dallas  
+**Bank:** Bank of America  
+**Ramo:** Dallas  
 **Codice SWIFT:** BOFAUS3N  
 **Numero account:** 4426587954  
 **Nome account:** Microsoft  

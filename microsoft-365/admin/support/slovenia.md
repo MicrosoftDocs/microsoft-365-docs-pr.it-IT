@@ -22,7 +22,7 @@ ms.locfileid: "48639624"
 ---
 # <a name="contact-support-for-slovenia"></a>Contattare il supporto per la Slovenia
 
-[Trovare un altro paese o un'area geografica](../contact-support-for-business-products.md).
+[Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
 ## <a name="phone-number"></a>Numero di telefono
 080 080 922
@@ -30,7 +30,7 @@ ms.locfileid: "48639624"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Inglese: Mon-Fri 9.00-17.00
+Inglese: lun-ven 9:00-17:00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 
