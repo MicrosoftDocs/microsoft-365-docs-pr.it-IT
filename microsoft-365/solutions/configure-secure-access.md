@@ -1,6 +1,6 @@
 ---
 title: Configurare l'accesso sicuro ai servizi di Microsoft 365
-description: Vengono fornite indicazioni per l'implementazione dell'AMF, dell'accesso condizionale e dei criteri correlati per i tre livelli di protezione-linea di base, sensibili e altamente riservati.
+description: "Trova indicazioni prescrittive per l'implementazione dell'autenticazione a più fattori, dell'accesso condizionale e dei criteri correlati per tre livelli di protezione: di base, sensibili, altamente sensibili."
 ms.author: samanro
 author: samanro
 manager: bcarter
@@ -19,6 +19,6 @@ ms.contentlocale: it-IT
 ms.lasthandoff: 01/06/2021
 ms.locfileid: "49771800"
 ---
-# <a name="configure-secure-access-to-microsoft-365-services"></a><span data-ttu-id="0d49b-103">Configurare l'accesso sicuro ai servizi di Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="0d49b-103">Configure secure access to Microsoft 365 services</span></span>
+# <a name="configure-secure-access-to-microsoft-365-services"></a><span data-ttu-id="6986b-103">Configurare l'accesso sicuro ai servizi di Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="6986b-103">Configure secure access to Microsoft 365 services</span></span>
 
-<span data-ttu-id="0d49b-104">Questa soluzione si basa su "[M365 Golden config](https://aka.ms/m365goldenconfig)"--indicazioni prescrittivi per l'implementazione dell'AMF, dell'accesso condizionale e dei criteri correlati per tre livelli di protezione: linea di base, sensibile, altamente riservata.</span><span class="sxs-lookup"><span data-stu-id="0d49b-104">This solution is based on the "[M365 golden config](https://aka.ms/m365goldenconfig)" -- prescriptive guidance for implementing MFA, conditional access, and related policies for three tiers of protection: baseline, sensitive, highly sensitive.</span></span> 
+<span data-ttu-id="6986b-104">Questa soluzione si basa sulla " configurazione di riferimento[M365](https://aka.ms/m365goldenconfig)" -- indicazioni prescrittive per l'implementazione dell'autenticazione a più fattori, accesso condizionale e criteri correlati per tre livelli di protezione: di base, sensibili, altamente sensibili.</span><span class="sxs-lookup"><span data-stu-id="6986b-104">This solution is based on the "[M365 golden config](https://aka.ms/m365goldenconfig)" -- prescriptive guidance for implementing MFA, conditional access, and related policies for three tiers of protection: baseline, sensitive, highly sensitive.</span></span> 
