@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 description: Ottenere la versione più recente dell'isolamento basato su hardware. Impedire attacchi attuali ed emergenti, come exploit o collegamenti dannosi, di compromettere la produttività dei dipendenti e la sicurezza aziendale.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cf02f6776eb68537486b49c4fe45e8f88eeb38c6
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+ms.openlocfilehash: 50065c4c0b9cbac9dee29892d9ebb0c7ce5f20f8
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094880"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261526"
 ---
 # <a name="application-guard-for-office-for-admins"></a>Application Guard per Office per amministratori
 
@@ -41,7 +41,7 @@ Microsoft Defender Application Guard per Office (Application Guard per Office) c
 
 * **Windows 10**: Windows 10 Enterprise Edition, Client Build versione 2004 (20H1) build 19041 o successiva
 * **Office**: Office Current Channel Build versione 2011 16.0.13530.10000 o successiva. Sono supportate entrambe le versioni a 32 bit e a 64 bit di Office.
-* **Pacchetto di aggiornamento:** aggiornamento cumulativo della sicurezza mensile per Windows 10 [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
+* **Pacchetto di aggiornamento**: aggiornamento cumulativo della sicurezza mensile per Windows 10 [KB4571756](https://support.microsoft.com/help/4571756/windows-10-update-KB4571756)
 
 Per i requisiti di sistema dettagliati, fare riferimento [ai requisiti di sistema per Microsoft Defender Application Guard.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-application-guard/reqs-md-app-guard) Per ulteriori informazioni sui canali di aggiornamento di Office, vedere [Panoramica dei canali di aggiornamento per Microsoft 365.](https://docs.microsoft.com/deployoffice/overview-update-channels)
 
@@ -55,7 +55,7 @@ Per i requisiti di sistema dettagliati, fare riferimento [ai requisiti di sistem
 
 1. Scaricare e installare gli aggiornamenti cumulativi per la sicurezza **mensili di Windows 10 KB4571756.**
 
-2. Seleziona **Microsoft Defender Application Guard** in Funzionalità di Windows e seleziona **OK.** L'abilitazione della funzionalità Application Guard richiederà un riavvio del sistema. È possibile scegliere di riavviare subito o dopo il passaggio 3.
+2. Seleziona **Microsoft Defender Application Guard** in Funzionalità di Windows e seleziona **OK.** L'abilitazione della funzionalità Application Guard richiederà un riavvio del sistema. Puoi scegliere di riavviare subito o dopo il passaggio 3.
 
    ![Finestra di dialogo Funzionalità di Windows che mostra Il gruppo di disponibilità](../../media/ag03-deploy.png)
 
@@ -123,13 +123,13 @@ Office supporta i criteri seguenti per consentire di configurare le funzionalit�
 |Criteri|Descrizione|
 |---|---|
 |Non usare Application Guard per Office|L'abilitazione di questo criterio impone a Word, Excel e PowerPoint di utilizzare il contenitore di isolamento Visualizzazione protetta anziché Application Guard per Office. Questo criterio può essere usato per disabilitare temporaneamente Application Guard per Office quando si verificano problemi nel lasciarlo abilitato per Microsoft Edge.|
-|Configurare Application Guard per la pre-creazione di contenitori di Office|Questo criterio determina se il contenitore di Application Guard per Office, per l'isolamento dei file non attendibili, è pre-creato per migliorare le prestazioni di run-time. Se si abilita questa impostazione, è possibile specificare il numero di giorni per continuare la pre-creazione di un contenitore o consentire all'euristica predefinita di Office di pre-creare il contenitore.
+|Configurare Application Guard per la pre-creazione di contenitori di Office|Questo criterio determina se il contenitore di Application Guard per Office, per l'isolamento di file non attendibili, è pre-creato per migliorare le prestazioni di run-time. Se si abilita questa impostazione, è possibile specificare il numero di giorni per continuare la pre-creazione di un contenitore o consentire all'euristica predefinita di Office di pre-creare il contenitore.
 |Non consentire la copia/incolla per i documenti di Office aperti in Application Guard per Office|L'abilitazione di questo criterio impedisce a un utente di copiare e incollare il contenuto di un documento aperto in Application Guard per Office in un documento aperto all'esterno di esso.|
 |Disabilitare l'accelerazione hardware in Application Guard per Office|Questo criterio controlla se Application Guard per Office usa l'accelerazione hardware per il rendering della grafica. Se abiliti questa impostazione, Application Guard per Office usa il rendering basato su software (CPU) e non carica driver grafici di terze parti né interagisce con alcun hardware grafico connesso.
 |Disabilitare la protezione dei tipi di file non supportati in Application Guard per Office|Questo criterio controlla se Application Guard per Office blocca l'apertura di tipi di file non supportati o se abilita il reindirizzamento a Visualizzazione protetta.
 |Disattivare l'accesso a fotocamera e microfono per i documenti aperti in Application Guard per Office|L'abilitazione di questo criterio rimuove l'accesso di Office alla fotocamera e al microfono all'interno di Application Guard per Office.|
 |Limitare la stampa dai documenti aperti in Application Guard per Office|L'abilitazione di questo criterio limiterà le stampanti su cui un utente può stampare da un file aperto in Application Guard per Office. Ad esempio, è possibile utilizzare questo criterio per limitare gli utenti alla stampa solo in formato PDF.|
-|Impedire agli utenti di rimuovere Application Guard per la protezione di Office nei file|L'abilitazione di questo criterio rimuove l'opzione (nell'esperienza delle applicazioni di Office) per disabilitare Application Guard per la protezione di Office o per aprire un file all'esterno di Application Guard per Office. <p> **Nota:** Gli utenti possono comunque ignorare questo criterio rimuovendo manualmente la proprietà Mark-of-the-Web dal file o spostando un documento in un percorso attendibile.|
+|Impedire agli utenti di rimuovere Application Guard per la protezione di Office nei file|L'abilitazione di questo criterio rimuoverà l'opzione (nell'esperienza delle applicazioni di Office) per disabilitare Application Guard per la protezione di Office o per aprire un file all'esterno di Application Guard per Office. <p> **Nota:** Gli utenti possono comunque ignorare questo criterio rimuovendo manualmente la proprietà Mark-of-the-Web dal file o spostando un documento in un percorso attendibile.|
 |
 
 > [!NOTE]
@@ -143,13 +143,13 @@ Office supporta i criteri seguenti per consentire di configurare le funzionalit�
 
 ### <a name="submit-feedback-via-feedback-hub"></a>Inviare feedback tramite Hub di Feedback
 
-Se si verificano problemi durante l'avvio di Application Guard per Office, si consiglia di inviare il proprio feedback tramite Hub di Feedback:
+Se si verificano problemi durante l'avvio di Application Guard per Office, è necessario inviare il proprio feedback tramite Hub di Feedback:
 
 1. Apri **l'app Hub di Feedback** e accedi.
 
 2. Se viene visualizzata una finestra di dialogo di errore durante l'avvio di Application Guard, seleziona Segnala a **Microsoft** nella finestra di dialogo di errore per avviare un nuovo invio di feedback. In caso contrario, <https://aka.ms/mdagoffice-fb> passa a selezionare la categoria corretta per Application Guard, quindi seleziona **+ &nbsp; Aggiungi nuovo feedback** in alto a destra.
 
-3. Immetti un riepilogo nella **casella Riepiloga il feedback,** se non è già compilato automaticamente.
+3. Immetti un riepilogo nella casella **Riepiloga il feedback,** se non è già compilato automaticamente.
 
 4. Immettere una descrizione dettagliata del problema riscontrato e i passaggi da eseguire nella casella Spiega **in** maggiore dettaglio, quindi selezionare **Avanti.**
 
@@ -189,7 +189,7 @@ Microsoft Defender for Endpoint è una piattaforma di sicurezza progettata per a
 
 ## <a name="limitations-and-considerations"></a>Limitazioni e considerazioni
 
-* Application Guard per Office è una modalità con restrizioni che isola i documenti non attendibili in modo che non possano accedere alle risorse aziendali attendibili, a una Intranet, all'identità dell'utente e ai file arbitrari nel computer. Di conseguenza, se un utente tenta di accedere a una caratteristica che dipende da tale accesso, ad esempio l'inserimento di un'immagine da un file locale su disco, l'accesso avrà esito negativo e genererà un prompt come nell'esempio seguente. Per consentire a un documento non attendibile di accedere alle risorse attendibili, gli utenti devono rimuovere la protezione di Application Guard dal documento.
+* Application Guard per Office è una modalità con restrizioni che isola i documenti non attendibili in modo che non possano accedere a risorse aziendali attendibili, a una Intranet, all'identità dell'utente e a file arbitrari nel computer. Di conseguenza, se un utente tenta di accedere a una caratteristica che dipende da tale accesso, ad esempio l'inserimento di un'immagine da un file locale su disco, l'accesso avrà esito negativo e genererà un prompt come nell'esempio seguente. Per consentire a un documento non attendibile di accedere alle risorse attendibili, gli utenti devono rimuovere la protezione di Application Guard dal documento.
 
   ![Finestra di dialogo che consente di mantenere al sicuro questa funzionalità non è disponibile](../../media/ag10-limitations.png)
 

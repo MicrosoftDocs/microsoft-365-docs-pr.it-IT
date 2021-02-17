@@ -20,12 +20,12 @@ ms.collection:
 description: Gli amministratori possono conoscere la funzionalità Allegati sicuri in Microsoft Defender per Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5e85695a6d0fba221f3c614ec33b3552d37153e2
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 5d2d348856dbd51cabe2b320d315406076921fee
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175848"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261538"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Allegati sicuri in Microsoft Defender per Office 365
 
@@ -54,7 +54,7 @@ La tabella seguente descrive gli scenari per gli allegati sicuri nelle organizza
 L'analisi degli allegati sicuri avviene nella stessa area geografica in cui si trovano i dati di Microsoft 365. Per altre informazioni sull'area geografica del datacenter, vedere [Dove si trovano i dati?](https://products.office.com/where-is-your-data-located?geo=All)
 
 > [!NOTE]
-> Le funzionalità seguenti si trovano nelle impostazioni globali dei criteri allegati sicuri nel Centro sicurezza & conformità, ma queste impostazioni sono abilitate o disabilitate a livello globale e non richiedono i criteri Allegati sicuri:
+> Le funzionalità seguenti si trovano nelle impostazioni globali dei criteri allegati sicuri nel Centro sicurezza & conformità. Tuttavia, queste impostazioni sono abilitate o disabilitate a livello globale e non richiedono i criteri allegati sicuri:
 >
 > - [Allegati sicuri per SharePoint, OneDrive e Microsoft Teams.](atp-for-spo-odb-and-teams.md)
 >

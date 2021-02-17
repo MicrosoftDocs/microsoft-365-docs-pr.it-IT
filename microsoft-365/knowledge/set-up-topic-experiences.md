@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Informazioni su come configurare Gli argomenti di Microsoft Viva
-ms.openlocfilehash: 6bd0d3eca653ae44e46b410ef3ac55fe11629a6b
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: a90e75330527992f8519d625f94fe0d5ecb3de6b
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150501"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261470"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Configurare Microsoft Viva Topics
 
@@ -24,6 +24,8 @@ ms.locfileid: "50150501"
 È importante pianificare il modo migliore per impostare e configurare gli argomenti nell'ambiente. Prima di iniziare le procedure descritte in questo articolo, leggere Plan [for Microsoft Viva Topics.](plan-topic-experiences.md)
 
 È necessario essere [iscritti ad Argomenti Viva](https://www.microsoft.com/microsoft-viva/topics) ed essere un amministratore globale o un amministratore di SharePoint per accedere all'interfaccia di amministrazione di Microsoft 365 e configurare Gli argomenti.
+
+Se SharePoint è stato configurato per [richiedere dispositivi gestiti,](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)assicurarsi di configurare gli argomenti da un dispositivo gestito.
 
 ## <a name="video-demonstration"></a>Dimostrazione video
 
@@ -46,9 +48,9 @@ Per configurare gli argomenti
 
 3. Nella pagina **Connetti utenti alla knowledge** base fare clic su Introduzione per illustrare il processo di configurazione. 
 
-    ![Per iniziare](../media/k-get-started.png) 
+    ![Informazioni di base](../media/k-get-started.png) 
 
-4. Nella pagina **Scegliere in che modo Viva Topics può trovare gli** argomenti, è necessario configurare l'individuazione degli argomenti. Nella sezione **Selezionare le origini degli argomenti di SharePoint** selezionare i siti di SharePoint che verranno sottoposti a ricerca per indicizzazione come origini per gli argomenti durante l'individuazione. Scegli tra:
+4. Nella pagina **Scegliere in che modo Viva Topics può trovare gli** argomenti, è necessario configurare l'individuazione degli argomenti. Nella sezione **Selezione origini argomenti di SharePoint** selezionare quali siti di SharePoint verranno sottoposti a ricerca per indicizzazione come origini per gli argomenti durante l'individuazione. Scegli tra:
     - **Tutti i siti:** tutti i siti di SharePoint nell'organizzazione. Sono inclusi i siti correnti e futuri.
     - **Tutti, ad eccezione dei siti** selezionati: digitare i nomi dei siti che si desidera escludere.  Puoi anche caricare un elenco di siti che vuoi rifiutare esplicitamente dall'individuazione. I siti creati in futuro verranno inclusi come origini per l'individuazione degli argomenti. 
     - **Solo siti selezionati:** digitare i nomi dei siti che si desidera includere. È inoltre possibile caricare un elenco di siti. I siti creati in futuro non verranno inclusi come origini per l'individuazione degli argomenti.
@@ -74,7 +76,7 @@ Per configurare gli argomenti
 
     - **Nome**: digitare il nome dell'argomento che si desidera escludere. Questa operazione può essere eseguita in due modi:
         - Corrispondenza esatta: è possibile includere il nome esatto o l'acronimo (ad esempio, *Contoso* o *ATL).*
-        - Corrispondenza parziale: è possibile escludere tutti gli argomenti che includono una parola specifica.  Ad esempio, *l'arco* escluderà tutti gli argomenti con la parola arco *al* suo interno, ad esempio arco *circolare,* saldatura arco *di plasma* o arco *di formazione.* Si noti che non verranno esclusi gli argomenti in cui il testo è incluso come parte di una parola, ad esempio *Architecture.*
+        - Corrispondenza parziale: è possibile escludere tutti gli argomenti che includono una parola specifica.  Ad esempio, *l'arco* escluderà tutti gli argomenti con la parola arco *al* suo interno, ad esempio cerchio ad *arco,* saldatura ad arco *di plasma* o arco *di formazione.* Si noti che non verranno esclusi gli argomenti in cui il testo è incluso come parte di una parola, ad esempio *Architecture.*
     - **Acronimo (facoltativo):** se si desidera escludere un acronimo, digitare le parole che l'acronimo sta per.
     - **MatchType-Exact/Partial:** specificare se il nome immesso è un *tipo* di corrispondenza esatto *o* parziale.
 
@@ -121,9 +123,9 @@ Per configurare gli argomenti
 
     ![Impostazioni applicate](../media/ksetup7.png)    
 
-## <a name="assign-licenses"></a>Assegnazione delle licenze
+## <a name="assign-licenses"></a>Assegnare le licenze
 
-Dopo aver configurato le esperienze per gli argomenti, è necessario assegnare licenze agli utenti che utilizzano gli argomenti. Solo gli utenti con una licenza possono visualizzare informazioni su argomenti quali evidenziazioni, schede argomento, pagine di argomenti e il Centro argomenti. 
+Dopo aver configurato le esperienze per gli argomenti, è necessario assegnare licenze agli utenti che utilizzano gli argomenti. Solo gli utenti con una licenza possono visualizzare informazioni sugli argomenti, tra cui evidenziazioni, schede argomento, pagine degli argomenti e il Centro argomenti. 
 
 Per assegnare le licenze:
 
@@ -137,7 +139,7 @@ Per assegnare le licenze:
 
 ## <a name="manage-topic-experiences"></a>Gestire le esperienze degli argomenti
 
-Dopo aver configurato Gli argomenti, è possibile modificare le impostazioni scelte durante la configurazione nell'interfaccia di amministrazione di [Microsoft 365.](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement) Vedere i riferimenti seguenti:
+Dopo aver configurato Gli argomenti, è possibile modificare le impostazioni scelte durante la configurazione nell'interfaccia di amministrazione di [Microsoft 365.](https://admin.microsoft.com/AdminPortal#/featureexplorer/csi/KnowledgeManagement) Vedere i seguenti riferimenti:
 
 - [Gestire l'individuazione degli argomenti negli argomenti di Microsoft Viva](topic-experiences-discovery.md)
 - [Gestire la visibilità degli argomenti negli argomenti di Microsoft Viva](topic-experiences-knowledge-rules.md)

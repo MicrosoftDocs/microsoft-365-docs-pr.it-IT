@@ -22,19 +22,19 @@ search.appverid:
 description: Ottenere supporto tecnico e per la fatturazione usando i numeri di telefono indicati per il proprio paese o area geografica o inviando una richiesta di assistenza online.
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 06f78d50901f279bf27f55f1b8f7ad867682d784
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 7679539e64588827b6dcc20f6f98bc67e613aae6
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925579"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261336"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>Modi di contattare il supporto tecnico per i prodotti per le aziende - Guida per l'amministratore
 
 ::: moniker range="o365-worldwide"
 
 > [!IMPORTANT]
-> Per usare questi metodi di assistenza, è necessario essere amministratori di un abbonamento aziendale. Se non si è un amministratore aziendale, usare [questa pagina di assistenza](https://support.microsoft.com/help/contactus).
+> Per usare questi metodi di assistenza, è necessario essere amministratori di un abbonamento aziendale. Se non si è un amministratore aziendale, usare [questa pagina di assistenza](https://support.microsoft.com/contactus).
 
 Per iniziare, [verificare lo stato di integrità corrente dei servizi](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health). È possibile visualizzare informazioni dettagliate sulle problematiche presenti e passate nel dashboard <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Integrità dei servizi</a>. Se si verifica un problema che non è elencato, è possibile ottenere supporto in uno dei modi seguenti:
 
