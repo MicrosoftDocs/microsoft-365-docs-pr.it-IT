@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare le etichette di riservatezza per proteggere il contenuto in siti di SharePoint e Microsoft Teams e in gruppi di Microsoft 365.
-ms.openlocfilehash: 9276288bc05abebe864a4465f69284372fa0baab
-ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
+ms.openlocfilehash: 7eea07b91647af2b0b7121f9d9c1f018bc9fc630
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49868024"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261459"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usare le etichette di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint
 
@@ -271,6 +271,7 @@ Le app e i servizi seguenti supportano le etichette di riservatezza configurate 
 
   - Interfaccia di amministrazione di SharePoint
   - Portale di Azure Active Directory
+  - Interfaccia di amministrazione di Microsoft 365
   - Centro conformità Microsoft 365, Centro sicurezza Microsoft 365, Centro sicurezza e conformità
 
 - App e servizi utente:
@@ -280,13 +281,12 @@ Le app e i servizi seguenti supportano le etichette di riservatezza configurate 
   - Outlook sul web e per Windows, macOS, iOS e Android
   - Forms
   - Stream
-  - Planner (distribuzione) 
+  - Planner 
 
 Le app e i servizi seguenti attualmente non supportano le etichette di riservatezza configurate per le impostazioni di sito e gruppo:
 
 - Interfacce di amministrazione:
 
-  - Interfaccia di amministrazione di Microsoft 365
   - Interfaccia di amministrazione di Teams
   - Interfaccia di amministrazione di Exchange
 

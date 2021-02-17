@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurare etichette di riservatezza per la crittografia per proteggere i dati con restrizioni di accesso e utilizzo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 83ed515d5ac6ea853c3e6a822fae0a03f73fc37c
-ms.sourcegitcommit: 9e4b3df05eff94fe1be4ef8618a7ce6f2fca3658
+ms.openlocfilehash: 602b4b3abd2b07386ad130e4b2cd21bb593eee7e
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "49904031"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261573"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza
 
@@ -379,6 +379,8 @@ La crittografia dei documenti e dei messaggi di posta elettronica più sensibili
   - I criteri di prevenzione della perdita dei dati funzionano per i metadati dei file crittografati, incluse le informazioni sulle etichette di conservazione, ma non con il contenuto dei file, ad esempio i numeri di carta di credito all'interno dei file.
   - Gli utenti non possono aprire file crittografati con Office sul Web. Quando le etichette di riservatezza per i file di Office in SharePoint e in OneDrive sono abilitate, gli utenti possono usare Office sul Web per aprire file crittografati, con alcune [limitazioni](sensitivity-labels-sharepoint-onedrive-files.md#limitations) che includono la crittografia che è stata applicata con una chiave locale, nota come "hold your own key" o HYOK, la [crittografia a chiave doppia](#double-key-encryption) e la crittografia applicata in modo indipendente da un'etichetta di riservatezza.
 
+- Se vengono condivisi documenti crittografati con utenti esterni all’organizzazione, potrebbe essere necessario creare account guest e modificare i criteri di accesso condizionale. Per altre informazioni, vedere [Condivisione di documenti crittografati con utenti esterni](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content).
+
 - Affinché più utenti possano modificare un file crittografato contemporaneamente, devono usare Office per il Web. Se non è questo il caso e il file è già aperto:
 
   - Nelle app di Office (Windows, Mac, Android e iOS), gli utenti visualizzano il messaggio **File in uso** con il nome della persona che ha estratto il file. Possono quindi visualizzare una copia di sola lettura o salvare e modificare una copia del file e ricevere una notifica quando il file sarà disponibile.
@@ -396,6 +398,7 @@ La crittografia dei documenti e dei messaggi di posta elettronica più sensibili
   - Modificare il nome o il percorso dei file. In alternativa, gli utenti possono [rinominare un file, una cartella o un collegamento in una raccolta documenti](https://support.microsoft.com/office/rename-a-file-folder-or-link-in-a-document-library-bc493c1a-921f-4bc1-a7f6-985ce11bb185) in SharePoint.
 
 Per un'esperienza di collaborazione in file crittografati con etichetta di riservatezza ottimale, si consiglia di usare [etichette di riservatezza per file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) e Office per il Web.
+
 
 ## <a name="important-prerequisites"></a>Prerequisiti importanti
 

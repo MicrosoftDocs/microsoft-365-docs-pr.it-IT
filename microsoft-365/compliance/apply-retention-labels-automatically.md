@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Creare etichette di conservazione e criteri di etichettatura automatica in modo da poter applicare automaticamente etichette per conservare ciò che serve ed eliminare ciò che non serve
-ms.openlocfilehash: 2b06188a5990c7de81fca0afd21f05ef346807ba
-ms.sourcegitcommit: 222fb7fe2b26dde3d8591b61cc02113d6135012c
+ms.openlocfilehash: 69bada084aa3817b49b75d970a1a8d304f6853e6
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "49759966"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261347"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Applicare automaticamente un'etichetta di conservazione per conservare o eliminare il contenuto
 
@@ -128,6 +128,9 @@ Dopo aver applicato l’etichetta al contenuto tramite un criterio di applicazio
 - [Una corrispondenza per classificatori sottoponibili a training](#auto-apply-labels-to-content-by-using-trainable-classifiers)
 
 #### <a name="auto-apply-labels-to-content-with-specific-types-of-sensitive-information"></a>Applicare automaticamente etichette al contenuto con tipi specifici di informazioni sensibili
+
+> [!WARNING]
+> Questa configurazione attualmente ha una limitazione nota per cui a tutti i messaggi di posta elettronica senza etichetta viene sempre applicata l’etichetta di conservazione selezionata, quando vi è una corrispondenza per i tipi di informazioni riservate scelte. Ad esempio, anche se il criterio di applicazione automatica viene riservato a specifici utenti oppure vengono selezionati percorsi diversi da Exchange per i criteri, l’etichetta viene sempre applicata ai messaggi di posta elettronica senza etichetta quando vi è una corrispondenza.
 
 Quando si creano criteri di conservazione ad applicazione automatica per le informazioni riservate, viene visualizzato lo stesso elenco di modelli di criteri mostrato quando si creano criteri di prevenzione della perdita dei dati (DLP). Ogni modello è preconfigurato in modo da cercare specifici tipi di informazioni riservate. Ad esempio, il modello mostrato di seguito cerca i numeri ITIN, SSN e di passaporto nella categoria **Privacy**, e nel modello **Dati personali (PII) degli Stati Uniti**:
 

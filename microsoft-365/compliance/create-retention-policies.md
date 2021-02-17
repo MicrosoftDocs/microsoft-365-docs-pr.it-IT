@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare i criteri di conservazione per tenere sotto controllo molto efficacemente i contenuti che gli utenti generano con posta elettronica, documenti e conversazioni. Mantenere il contenuto desiderato e liberarsi di quello che non serve.
-ms.openlocfilehash: d79a505731eea8b48e19507ff6ae9558cb9a78b2
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 1806000b47a19c07da11a6a732eeacf5d60a7da0
+ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840869"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "50261325"
 ---
 # <a name="create-and-configure-retention-policies"></a>Creare e configurare criteri di conservazione
 
@@ -257,20 +257,7 @@ Ad esempio, se un criterio include tutta la posta elettronica di Exchange e tutt
 
 ### <a name="a-policy-with-specific-inclusions-or-exclusions"></a>Criteri con specifiche inclusioni o esclusioni
 
-Solo se si utilizza la configurazione facoltativa per definire l'ambito delle impostazioni di conservazione a utenti specifici, gruppi di Microsoft 365 specifici o siti specifici, esistono alcuni limiti dei criteri di cui tenere conto: 
-
-- Valori massimi per criteri di conservazione:
-  - 1.000 cassette postali (degli utenti o di gruppo)
-  - 1.000 gruppi di Microsoft 365
-  - 1.000 utenti per le chat private di Teams
-  - 100 siti (OneDrive o SharePoint)
-
-Queste limitazioni sono basate sui criteri, quindi sarà necessario usare specifiche inclusioni o esclusioni che comportano di usare questi numeri, è possibile creare altri criteri di conservazione con le stesse impostazioni di conservazione. Vedere la sezione successiva per alcuni[Scenari e soluzioni di esempio](#examples-of-using-inclusions-and-exclusions) che usano più criteri di conservazione. L'uso di criteri di conservazione multipla multipli determina costi amministrativi superiori, perciò verificare sempre se le inclusioni e le esclusioni siano davvero necessarie. Tenere presente che la configurazione predefinita che si applica all'intero percorso non ha alcuna limitazione, e che questa configurazione potrebbe essere una soluzione migliore rispetto alla creazione e alla gestione di più criteri.
-
-> [!TIP]
-> Sì è necessario creare e gestire più criteri di conservazione per questo scenario, si consiglia di usare di usare [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels) per una configurazione più efficiente.
-
-Inoltre il un numero massimo di criteri supportati per un tenant è di 10.000. Per Exchange Online il numero massimo di criteri supportati è di 1.800. Il numero massimo include i criteri di conservazione, i criteri per le etichette di conservazione e i criteri di conservazione applicati automaticamente.
+Se si utilizza la configurazione facoltativa per restringere l'ambito delle impostazioni di conservazione a utenti specifici, gruppi di Microsoft 365 specifici o siti specifici, vi sono alcuni limiti relativi ai criteri da tenere in considerazione. Per altre informazioni, vedere [Limiti per i criteri di conservazione e i criteri per le etichette di conservazione](retention-limits.md). 
 
 Per usare la configurazione facoltativa per definire l'ambito delle impostazioni di conservazione, assicurarsi che lo **Stato** di tale posizione sia **Attivato**, quindi usare i collegamenti per includere o escludere determinati utenti, gruppi di Microsoft 365 o siti.
 
@@ -280,28 +267,6 @@ Per usare la configurazione facoltativa per definire l'ambito delle impostazioni
 > Ad esempio, se si specifica un sito di SharePoint da includere nei criteri di conservazione configurato per l'eliminazione dei dati e poi si rimuove quell’unico sito, per impostazione predefinita i criteri di conservazione che eliminano definitivamente i dati verranno applicati a tutti i siti di SharePoint. Lo stesso vale per inclusioni come destinatari di Exchange, account OneDrive, utenti della chat di Teams e così via.
 >
 > In questo scenario, disabilitare la posizione se non si vuole che l’impostazione **Tutti** per tale posizione sia soggetta ai criteri di conservazione. In alternativa, specificare esclusioni da esonerare dall’applicazione del criterio.
-
-#### <a name="examples-of-using-inclusions-and-exclusions"></a>Esempi di uso di esclusioni ed inclusioni
-
-Gli esempi seguenti descrivono alcune soluzioni di progettazione per i casi in cui non è possibile specificare il percorso di un criterio di conservazione, e devono tenere in considerazione le limitazioni descritte nella sezione precedente.
-
-Esempio di Exchange:
-
-- **Requisito**: in una organizzazione che ha più di 40.000 cassette postali degli utenti, la posta elettronica deve essere conservata per sette anni per gran parte degli utenti, ma un sottoinsieme di utenti identificati (425) deve conservare la posta elettronica solo per 5 anni. 
-
-- **Soluzione**: creare un criterio di conservazione per la posta elettronica di Exchange con un periodo di conservazione di sette anni, ed escludere il sottoinsieme di utenti. Creare poi un secondo criterio di conservazione per la posta elettronica di Exchange, con un periodo di conservazione di cinque anni, e includere il sottoinsieme di utenti. 
-    
-    In entrambi casi, il numero incluso ed escluso è inferiore a un numero massimo di cassette postali specificate per un singolo criterio, e il sottoinsieme di utenti deve essere escluso esplicitamente dalla primo criterio perché ha [periodo di conservazione più lungo](retention.md#the-principles-of-retention-or-what-takes-precedence) del secondo criterio. Se il sottoinsieme di utenti richiede un periodo di conservazione più lungo, non è necessario escluderli dal primo criterio.
-     
-    Con questa soluzione, se un nuovo dipendente entra nell'organizzazione, la sua cassetta postale viene automaticamente inclusa nel primo criterio per sette anni, e non ci sono conseguenze per il numero massimo supportato. Tuttavia, i nuovi utenti che richiedono il periodo di conservazione da 5 anni sono aggiunti ai numeri da includere ed escludere, e questo limite viene raggiunto a 1.000.
-
-Esempio di SharePoint:
-
-- **Requisito**: l'organizzazione ha diverse migliaia di siti di SharePoint, ma soltanto 2000 siti richiedono un periodo di conservazione da 10 anni, e 8000 siti richiedono un periodo di conservazione da quattro anni.
-
-- **Soluzione**: creare 20 criteri di conservazione per SharePoint con un periodo di conservazione da 10 anni che includa 100 siti specifici, e creare 80 criteri di conservazione per SharePoint con un periodo di conservazione da quattro anni che includa 100 siti specifici.
-    
-    Poiché non è necessario conservare tutti i siti di SharePoint, bisogna creare criteri di conservazione che specificano i siti. Dato che i criteri di conservazione non supportano più di 100 siti specifici, è necessario creare criteri specifici per i due periodi di conservazione. Questo criterio di conservazione hanno il numero massimo di siti inclusi, perciò un nuovo criterio di conservazione deve essere creato per il prossimo nuovo sito che richiede la conservazione, indipendentemente dal periodo di conservazione.
 
 ## <a name="updating-retention-policies"></a>Aggiornamento dei criteri di conservazione
 
