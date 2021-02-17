@@ -307,6 +307,8 @@
               href: retention-policies-yammer.md
             - name: Conservazione per Exchange
               href: retention-policies-exchange.md
+            - name: Limiti per la conservazione dei dati
+              href: retention-limits.md
         - name: Introduzione alla conservazione
           href: get-started-with-retention.md
         - name: Creare criteri di conservazione
