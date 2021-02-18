@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come creare e importare un tipo di informazione sensibile personalizzato per i criteri nel Centro conformità.
-ms.openlocfilehash: 63ff32bda31446c25a523ff2064f7b750d102961
-ms.sourcegitcommit: 3e29926f51530afb0d75d8518a92b9ec7dc5e5bd
+ms.openlocfilehash: e3735458f3259478a7df36bb3c6ddbc4a5fed719
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50173123"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288503"
 ---
 # <a name="create-a-custom-sensitive-information-type-using-powershell"></a>Creare tipi di informazioni sensibili personalizzati usando PowerShell
 
@@ -433,9 +433,13 @@ Quando si carica il file XML del pacchetto di regole, il sistema convalida l'XML
 
 - Ogni Tipo di informazioni sensibili personalizzato può avere un massimo di 2048 parole chiave in totale.
 
-- Quando si usa il cmdlet di PowerShell la dimensione massima di restituzione dei dati deserializzati è pari a circa 1 megabyte.   Questo influirà sulle dimensioni del file XML. Mantenere il file caricato entro un massimo di 512 megabyte come limite suggerito per ottenere risultati coerenti senza errori durante l'elaborazione.
+- La dimensione massima consentita per i dizionari di parole chiave in un singolo tenant è di 100 kilobyte compressi. Quando si creano tipi di informazioni sensibili personalizzati, fare riferimento allo stesso dizionario tutte le volte necessarie. Iniziare creando elenchi di parole chiave personalizzati nel tipo di informazioni sensibili e usare dizionari di parole chiave se un elenco di parole chiave contiene più di 2048 parole chiave oppure se la lunghezza di una parola chiave supera i 50 caratteri.
 
-- La struttura XML non richiede la formattazione di caratteri come spazi, tabulazioni o elementi di ritorno a capo/avanzamento riga.  Tenere a mente questo fattore quando si ottimizza lo spazio per i caricamenti.
+- Verificare che ogni elemento Entity contenga un attributo recommendedConfidence.
+
+- Quando si usa il cmdlet di PowerShell la dimensione restituita massima per i dati deserializzati è di circa 1 megabyte.   Questo influirà sulle dimensioni del file XML per il pacchetto delle regole. Mantenere il file caricato entro un massimo di 770 kilobyte come limite suggerito per ottenere risultati coerenti senza errori durante l'elaborazione.
+
+- La struttura XML non richiede la formattazione di caratteri come spazi, tabulazioni o elementi di ritorno a capo/avanzamento riga.  Tenere a mente questo fattore quando si ottimizza lo spazio per i caricamenti. Strumenti come Microsoft Visual Code forniscono funzionalità di unione righe per compattare il file XML.
     
 Se un tipo di informazioni riservate personalizzato contiene un problema che può influire sulle prestazioni, non verrà caricato e potrebbe essere visualizzato uno di questi messaggi di errore:
   

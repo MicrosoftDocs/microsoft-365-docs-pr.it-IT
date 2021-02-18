@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come utilizzare un criterio di prevenzione della perdita dei dati (DLP) per proteggere i documenti con proprietà da un sistema di terze parti.
-ms.openlocfilehash: a3dd82dae76336dc3d1293430e10ba505585e707
-ms.sourcegitcommit: a566ef236c85edfd566c8c3f859b80f9e5ce0473
+ms.openlocfilehash: cf026e447ad1f0da3486a36dd5e36c52c09998cb
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "49562977"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288229"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Creare criteri di prevenzione della perdita dei dati per proteggere i documenti con FCI o altre proprietà
 
@@ -42,13 +42,16 @@ In Microsoft 365, è possibile creare un criterio DLP che identifichi i document
 
 Un criterio DLP cerca semplicemente una coppia di nome/valore di proprietà specifiche. È possibile utilizzare qualsiasi proprietà del documento, purché la proprietà disponga di una proprietà gestita corrispondente per la ricerca in SharePoint. Ad esempio, una raccolta siti di SharePoint potrebbe utilizzare un tipo di contenuto denominato **Report di andata e ritorno** con un campo obbligatorio denominato **Cliente**. Ogni volta che un utente crea un report di questo tipo, è necessario immettere il nome del cliente. Questa coppia nome/valore della proprietà può essere utilizzata anche in un criterio DLP, ad esempio  se si desidera una regola che blocchi l'accesso al documento per gli utenti guest quando il campo Cliente contiene **Contoso.**
 
-Se si desidera applicare il criterio DLP al contenuto con etichette di Microsoft 365 specifiche, non seguire i passaggi qui descritti. Informazioni sull'utilizzo di [un'etichetta di conservazione come condizione in un criterio DLP.](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)
+Se si desidera applicare il criterio DLP al contenuto con etichette di Microsoft 365 specifiche, non seguire i passaggi qui descritti. Informazioni su come utilizzare [un'etichetta di conservazione come condizione in un criterio DLP.](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)
 
 ## <a name="before-you-create-the-dlp-policy"></a>Prima di creare il criterio DLP
 
 Prima di utilizzare una proprietà di FCI di Windows Server o un'altra proprietà in un criterio DLP, è necessario creare una proprietà gestita nell'interfaccia di amministrazione di SharePoint. Ecco perché.
 
 Esempi
+
+> [!NOTE]
+> Assicurarsi di utilizzare un nome di proprietà gestita e non un nome di proprietà sottoposta a ricerca per indicizzazione durante la creazione di regole DLP utilizzando la `ContentPropertyContainsWords` condizione.
 
 Questo è importante perché DLP utilizza il crawler di ricerca per identificare e classificare le informazioni riservate nei siti e quindi archiviare tali informazioni riservate in una parte sicura dell'indice di ricerca. Quando si carica un documento in Office 365, SharePoint crea automaticamente le proprietà sottoposte a ricerca per indicizzazione in base alle proprietà del documento. Tuttavia, per utilizzare una proprietà di FCI o di altro tipo in un criterio DLP, la proprietà sottoposta a ricerca per indicizzazione deve essere mappata a una proprietà gestita in modo che il contenuto con tale proprietà venga mantenuto nell'indice.
 
@@ -132,7 +135,7 @@ Una regola blocca l'accesso al contenuto dove la proprietà **Informazioni perso
 
 ## <a name="after-you-create-the-dlp-policy"></a>Dopo aver creato il criterio DLP
 
-Eseguendo i passaggi descritti nelle sezioni precedenti, verrà creato un criterio DLP che rileverà rapidamente il contenuto con tale proprietà, ma solo se il contenuto è stato appena caricato (in modo che il contenuto sia indicizzato) o se tale contenuto è precedente ma appena modificato (in modo che il contenuto sia nuovamente indicizzato).
+Eseguendo i passaggi descritti nelle sezioni precedenti verrà creato un criterio DLP che rileverà rapidamente il contenuto con tale proprietà, ma solo se il contenuto è stato appena caricato (in modo che il contenuto sia indicizzato) o se il contenuto è precedente ma è stato appena modificato (in modo che il contenuto sia stato indicizzato nuovamente).
 
 Per rilevare il contenuto con tale proprietà ovunque, è possibile richiedere manualmente che la raccolta, il sito o una raccolta siti vengano reindicizzati in modo che il criterio DLP sia a conoscenza di tutto il contenuto con tale proprietà. In SharePoint Online, il contenuto viene automaticamente sottoposto a ricerca per indicizzazione in base a una pianificazione definita. Il crawler rileva il contenuto modificato dall'ultima ricerca per indicizzazione e aggiorna l'indice. Se è necessario che il criterio DLP protegga il contenuto prima della prossima ricerca per indicizzazione pianificata, è possibile eseguire questi passaggi.
 

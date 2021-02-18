@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Gli amministratori possono abilitare il supporto delle etichette di riservatezza per i file di Word, Excel e PowerPoint in SharePoint e OneDrive.
-ms.openlocfilehash: b4981e8f2fda88f9ba078b29e70d572b7bcc7ce2
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: f84407046d2b1d91d834d090f49fc385df36ec51
+ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150490"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50279354"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive
 
@@ -84,6 +84,8 @@ Usare l'app di sincronizzazione di OneDrive versione 19.002.0121.0008 o successi
     - **È selezionata la crittografia a** chiave doppia.
     
     Per le etichette con una di queste configurazioni di crittografia, le etichette non vengono visualizzate agli utenti di Office sul Web. Inoltre, le nuove funzionalità non possono essere usate con documenti etichettati che già dispongono di queste impostazioni di crittografia. Questi documenti, ad esempio, non verranno restituiti nei risultati della ricerca, anche se vengono aggiornati.
+
+- Per i documenti crittografati, la stampa non è supportata.
 
 - Per un documento crittografato che concede autorizzazioni di modifica a un utente, la copia non può essere bloccata nelle versioni Web delle app di Office.
 
@@ -203,7 +205,7 @@ Tuttavia, è possibile utilizzare entrambe le soluzioni di protezione insieme e 
 Con questo comportamento, è possibile essere certi che tutti i file Di Office e PDF sono protetti da accesso non autorizzato se vengono scaricati, anche se non sono etichettati. Tuttavia, i file con etichetta caricati non trarranno vantaggio dalle nuove funzionalità.
 
 
-## <a name="search-for-documents-by-sensitivity-label"></a>Cercare documenti in base all'etichetta di riservatezza    
+## <a name="search-for-documents-by-sensitivity-label"></a>Cercare documenti in base all'etichetta di riservatezza
 
 Usare la proprietà gestita **InformationProtectionLabelId** per trovare tutti i documenti in SharePoint o OneDrive con un'etichetta di riservatezza specifica. Utilizzare la sintassi seguente: `InformationProtectionLabelId:<GUID>`
 
@@ -241,7 +243,7 @@ Requisiti:
 
 - SharePoint Online Management Shell versione 16.0.20616.12000 o successiva.
 
-- La crittografia è stata applicata da un'etichetta di riservatezza con impostazioni di crittografia definite dall'amministratore (le [impostazioni di](encryption-sensitivity-labels.md#assign-permissions-now) assegnazione delle autorizzazioni ora dell'etichetta). [La crittografia a chiave](encryption-sensitivity-labels.md#double-key-encryption) doppia non è supportata per questo cmdlet.
+- La crittografia è stata applicata da un'etichetta di riservatezza con le impostazioni di crittografia definite dall'amministratore (le impostazioni di assegnazione [delle autorizzazioni ora dell'etichetta).](encryption-sensitivity-labels.md#assign-permissions-now) [La crittografia a chiave](encryption-sensitivity-labels.md#double-key-encryption) doppia non è supportata per questo cmdlet.
 
 Il testo di giustificazione [](search-the-audit-log-in-security-and-compliance.md#sensitivity-label-activities) viene aggiunto all'evento di controllo dell'etichetta di riservatezza Rimossa dal **file** e l'azione di decrittografia viene registrata anche nella registrazione dei dati di utilizzo della protezione per [Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/log-analyze-usage)
 

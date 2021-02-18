@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Creare una cassetta postale condivisa consente di affidare a più utenti all'interno dell'azienda la responsabilità di leggere e rispondere ai messaggi di posta elettronica inviati a un unico indirizzo.
-ms.openlocfilehash: d0bd5770f347766638af0f0e66b9f961b3721697
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: d71e33aa0a04bd52f707038ac31e98bef68f27b0
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926595"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287234"
 ---
 # <a name="create-a-shared-mailbox"></a>Creare una cassetta postale condivisa 
 
@@ -81,6 +81,30 @@ Prima di creare una cassetta postale condivisa, leggere [Informazioni sulle cass
 7. Selezionare **Chiudi**.
 
 Si dispone di una cassetta postale condivisa che include un calendario condiviso. Procedere con il passaggio successivo: bloccare l'accesso per l'account della cassetta postale condivisa.
+
+## <a name="which-permissions-should-you-use"></a>Quali autorizzazioni usare?
+
+Con una cassetta postale condivisa è possibile usare le autorizzazioni seguenti:
+
+- **Accesso completo**: l'autorizzazione Accesso completo consente all'utente di accedere alla cassetta postale condivisa e agire come proprietario di tale cassetta postale. Dopo aver eseguito l'accesso alla cassetta postale condivisa, l'utente può creare voci di calendario, leggere, visualizzare, eliminare e modificare messaggi di posta elettronica e creare attività e contatti. Un utente con autorizzazione Accesso completo non può tuttavia inviare messaggi di posta elettronica dalla cassetta postale condivisa, a meno che non disponga anche dell'autorizzazione Invia come o Invia per conto di.
+
+- **Invia come**: l'autorizzazione Invia come consente a un utente di rappresentare la cassetta postale per l'invio della posta elettronica. Se ad esempio Caterina accede alla cassetta postale condivisa del reparto marketing e invia un messaggio di posta elettronica, questo risulterà inviato dal reparto marketing.
+
+- **Invia per conto di**: l'autorizzazione Invia per conto di consente a un utente di inviare posta elettronica per conto della cassetta postale condivisa. Ad esempio, se Mattia accede alla cassetta postale condivisa Reception 32 e invia un messaggio, questo risulterà inviato da "Mattia per conto di Reception 32". Per concedere l'autorizzazione Invia per conto di, occorre usare il cmdlet **Set-Mailbox** con il parametro _GrantSendonBehalf_.
+
+### <a name="use-the-eac-to-edit-shared-mailbox-delegation"></a>Usare l'interfaccia di amministrazione di Exchange per modificare la delega dell'accesso alle cassette postali
+
+1. Nell'interfaccia di amministrazione di Exchange accedere a **Destinatari** \> **Condivisi**. Selezionare la cassetta postale condivisa e quindi selezionare **Modifica** ![Icona Modifica](../../media/ITPro-EAC-EditIcon.png).
+
+2. Selezionare **Delega cassette postali**.
+
+3. Per concedere o rimuovere le autorizzazioni Accesso completo e Invia come, selezionare **Aggiungi** ![icona Aggiungi](../../media/ITPro-EAC-AddIcon.png) o **Rimuovi** ![icona Rimuovi](../../media/ITPro-EAC-RemoveIcon.gif)e quindi selezionare gli utenti a cui si vogliono concedere o per cui si vogliono rimuovere le autorizzazioni.
+
+   > [!NOTE]
+   > L'autorizzazione Accesso completo consente a un utente di aprire la cassetta postale, modificare gli elementi in essa contenuti e crearne di nuovi. L'autorizzazione Invia come consente a utenti diversi dal proprietario della cassetta postale di inviare messaggi di posta elettronica dalla cassetta postale condivisa. Entrambe le autorizzazioni sono necessarie per il funzionamento corretto della cassetta postale condivisa.
+
+4. Selezionare **Salva** per salvare le modifiche.
+
 
 ## <a name="block-sign-in-for-the-shared-mailbox-account"></a>Bloccare l'accesso per l'account della cassetta postale condivisa
 
@@ -185,8 +209,5 @@ Dopo aver creato la cassetta postale condivisa, viene creato automaticamente un 
 [Rimuovere una licenza da una cassetta postale condivisa](remove-license-from-shared-mailbox.md)
 
 [Risolvere i problemi relativi alle cassette postali condivise](resolve-issues-with-shared-mailboxes.md)
-
-
-
 
 

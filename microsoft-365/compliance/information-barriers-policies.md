@@ -15,16 +15,16 @@ localization_priority: None
 f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 09e680d2bcf8f1e0fd5237adbf640349741c26fd
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: b1c613abd119265de3399d9057c917a680f5b880
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126585"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289783"
 ---
 # <a name="define-information-barrier-policies"></a>Definire i criteri delle barriere informative
 
-Con le barriere in fatto di informazioni, è possibile definire criteri progettati per impedire a determinati segmenti di utenti di comunicare tra loro o consentire a segmenti specifici di comunicare solo con determinati altri segmenti. I criteri delle barriere di informazioni possono aiutare l'organizzazione a mantenere la conformità agli standard e alle normative del settore pertinenti ed evitare potenziali conflitti di interesse. Per ulteriori informazioni, vedere [Barriere di informazioni.](information-barriers.md)
+Con le barriere in fatto di informazioni, puoi definire criteri progettati per impedire a determinati segmenti di utenti di comunicare tra loro o consentire a segmenti specifici di comunicare solo con determinati altri segmenti. I criteri delle barriere di informazioni possono aiutare l'organizzazione a mantenere la conformità agli standard e alle normative del settore pertinenti ed evitare potenziali conflitti di interesse. Per ulteriori informazioni, vedere [Barriere di informazioni.](information-barriers.md)
 
 Questo articolo descrive come pianificare, definire, implementare e gestire i criteri delle barriere di informazioni. Sono coinvolti diversi passaggi e il flusso di lavoro è suddiviso in diverse parti. Assicurarsi di leggere i prerequisiti [e](#prerequisites) l'intero processo prima di iniziare a definire (o modificare) i criteri delle barriere di informazioni.
 
@@ -62,7 +62,7 @@ Oltre alle licenze e alle autorizzazioni [necessarie,](information-barriers.md#r
   - [Aggiungere o aggiornare le informazioni del profilo di un utente con Azure Active Directory](/azure/active-directory/fundamentals/active-directory-users-profile-azure-portal)
   - [Configurare le proprietà degli account utente con Office 365 PowerShell](/microsoft-365/enterprise/configure-user-account-properties-with-microsoft-365-powershell)
 
-- Ricerca nella directory con ambito: prima di definire i primi criteri delle barriere di informazioni dell'organizzazione, è necessario abilitare la ricerca di directory con ambito [in Microsoft Teams.](/MicrosoftTeams/teams-scoped-directory-search) Attendere almeno 24 ore dopo l'abilitazione della ricerca nella directory con ambito prima di configurare o definire i criteri delle barriere di informazioni.
+- Ricerca nella directory con ambito: prima di definire i primi criteri delle barriere di informazioni dell'organizzazione, è necessario abilitare la ricerca di directory con ambito [in Microsoft Teams.](/MicrosoftTeams/teams-scoped-directory-search) Attendere almeno 24 ore dopo aver abilitato la ricerca nella directory con ambito prima di configurare o definire i criteri delle barriere di informazioni.
 
 - Licenza EXO: i criteri IB funzionano solo se agli utenti di destinazione è stata assegnata una licenza EXO.
 
@@ -74,12 +74,12 @@ Oltre alle licenze e alle autorizzazioni [necessarie,](information-barriers.md#r
     - [Connettersi a PowerShell in Centro sicurezza e conformità](/powershell/exchange/connect-to-scc-powershell)
     - [Installare il modulo di Azure PowerShell](/powershell/azure/install-az-ps?view=azps-2.3.2)
 
-- Consenso dell'amministratore per le barriere in fatto di informazioni in Microsoft Teams: una volta applicati i criteri, le barriere delle informazioni possono rimuovere le persone dalle sessioni di chat in cui non dovrebbero essere presenti. Questa configurazione garantisce che l'organizzazione rimanga conforme ai criteri e alle normative. Utilizzare la procedura seguente per abilitare i criteri delle barriere di informazioni per funzionare come previsto in Microsoft Teams.
+- Consenso dell'amministratore per le barriere in fatto di informazioni in Microsoft Teams: una volta applicati i criteri IB, possono rimuovere gli utenti non conformi alle normative IB dai gruppi (ad esempio i canali di Teams, che si basano sui gruppi). Questa configurazione garantisce che l'organizzazione rimanga conforme ai criteri e alle normative. Utilizzare la procedura seguente per abilitare i criteri delle barriere di informazioni per funzionare come previsto in Microsoft Teams.
 
    1. Eseguire i cmdlet di PowerShell seguenti:
 
       ```powershell
-      Connect-AzureAD 
+      Connect-AzAccount 
       $appId="bcf62038-e005-436d-b970-2a472f8c1982" 
       $sp=Get-AzADServicePrincipal -ServicePrincipalName $appId
       if ($sp -eq $null) { New-AzADServicePrincipal -ApplicationId $appId }
@@ -263,12 +263,12 @@ Sono disponibili risorse che consentono di gestire i criteri delle barriere di i
 
 - Se si verifica un problema con le barriere delle informazioni, vedere [Risoluzione dei problemi relativi alle barriere in fatto di informazioni.](information-barriers-troubleshooting.md)
 - Per interrompere l'applicazione dei criteri, vedere [Arrestare un'applicazione di criteri.](information-barriers-edit-segments-policies.md#stop-a-policy-application)
-- Per rimuovere un criterio di barriere di informazioni, [vedere Rimuovere un criterio.](information-barriers-edit-segments-policies.md#remove-a-policy)
+- Per rimuovere un criterio delle barriere di informazioni, [vedere Rimuovere un criterio.](information-barriers-edit-segments-policies.md#remove-a-policy)
 - Per apportare modifiche ai segmenti o ai criteri, vedi [Modificare (o rimuovere)](information-barriers-edit-segments-policies.md)i criteri delle barriere di informazioni.
 
 ## <a name="example-contosos-departments-segments-and-policies"></a>Esempio: reparti, segmenti e criteri di Contoso
 
-Per vedere in che modo un'organizzazione potrebbe affrontare la definizione di segmenti e criteri, considera l'esempio seguente.
+Per vedere come un'organizzazione potrebbe affrontare la definizione di segmenti e criteri, considera l'esempio seguente.
 
 ### <a name="contosos-departments-and-plan"></a>Piani e reparti di Contoso
 
@@ -310,7 +310,7 @@ Contoso definisce tre criteri, come descritto nella tabella seguente:
 |**Criterio**|**Definizione criterio**|
 |:---------|:--------------------|
 | **Criterio 1: Impedire alle vendite di comunicare con La ricerca** | `New-InformationBarrierPolicy -Name "Sales-Research" -AssignedSegment "Sales" -SegmentsBlocked "Research" -State Inactive` <p> In questo esempio il criterio delle barriere di informazioni è *denominato Sales-Research.* Quando questo criterio è attivo e applicato, impedisce agli utenti nel segmento Vendite di comunicare con gli utenti nel segmento Ricerche. Questo criterio è unidiresto; non impedirà a Research di comunicare con Sales. Per questo, è necessario il criterio 2. |
-| **Criterio 2: impedire alle ricerche di comunicare con le vendite** | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> In questo esempio, il criterio delle barriere di informazioni è *denominato Research-Sales.* Quando questo criterio è attivo e applicato, impedisce agli utenti del segmento Ricerche di comunicare con gli utenti nel segmento Vendite. |
+| **Criterio 2: impedire alla ricerca di comunicare con sales** | `New-InformationBarrierPolicy -Name "Research-Sales" -AssignedSegment "Research" -SegmentsBlocked "Sales" -State Inactive` <p> In questo esempio, il criterio delle barriere di informazioni è *denominato Research-Sales.* Quando questo criterio è attivo e applicato, impedisce agli utenti del segmento Ricerche di comunicare con gli utenti nel segmento Vendite. |
 | **Criterio 3: consentire alla produzione di comunicare solo con le risorse umane e il marketing** | `New-InformationBarrierPolicy -Name "Manufacturing-HRMarketing" -AssignedSegment "Manufacturing" -SegmentsAllowed "HR","Marketing","Manufacturing" -State Inactive` <p> In questo caso, il criterio delle barriere di informazioni è *denominato Manufacturing-HRMarketing.* Quando questo criterio è attivo e applicato, Produzione può comunicare solo con HR e Marketing. Le risorse umane e marketing non sono limitate a comunicare con altri segmenti. |
 
 Dopo aver definito segmenti e criteri, Contoso applica i criteri eseguendo il cmdlet **Start-InformationBarrierPoliciesApplication.**

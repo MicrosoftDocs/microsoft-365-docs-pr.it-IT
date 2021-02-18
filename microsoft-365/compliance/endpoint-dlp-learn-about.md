@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La Prevenzione della perdita di dati degli endpoint di Microsoft 365 estende il monitoraggio delle attività dei file e le azioni di protezione agli endpoint. I file vengono resi visibili nelle soluzioni di conformità di Microsoft 365 '
-ms.openlocfilehash: 1dac32505144c3966ad2219cc69a33ba29f194dc
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: d5394499b5514e6e0a49f958a62e70cde61ebf44
+ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682627"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50279310"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Informazioni sulla prevenzione della perdita di dati degli endpoint di Microsoft 365
 
@@ -34,8 +34,7 @@ La **prevenzione della perdita di dati degli endpoint** (Endpoint DLP) estende l
 
 ## <a name="endpoint-activities-you-can-monitor-and-take-action-on"></a>Attività endpoint che è possibile monitorare e su cui si può intervenire
 
-Microsoft Endpoint DLP consente di controllare e gestire i tipi di attività seguenti, che gli utenti possono eseguire sugli elementi sensibili nei dispositivi che eseguono Windows 10.
-
+Microsoft Endpoint DLP consente di controllare e gestire i tipi di attività seguenti, che gli utenti possono eseguire sugli elementi sensibili nei dispositivi che eseguono Windows 10. 
 
 |attività |descrizione  | controllabile/limitabile|
 |---------|---------|---------|
@@ -47,6 +46,28 @@ Microsoft Endpoint DLP consente di controllare e gestire i tipi di attività seg
 |creare un elemento.|Rileva quando un utente crea un elemento| controllabile|
 |rinominare un elemento|Rileva quando un utente rinomina un elemento| controllabile|
 
+ ## <a name="monitored-files"></a>File monitorati
+
+Endpoint DLP supporta il monitoraggio di questi tipi di file:
+
+- File di Word
+- File di PowerPoint
+- File di Excel
+- File PDF
+- File CSV
+- File TSV
+- File TXT
+- File RTF
+- File C
+- File CLASS
+- File CPP
+- File CS
+- File H
+- File Java
+ 
+Per impostazione predefinita, Endpoint DLP controlla le attività per questi tipi di file anche in mancanza di una corrispondenza dei criteri. Se si vogliono monitorare i dati solo se c'è una corrispondenza dei criteri, è possibile disattivare l'opzione **Controllare sempre le attività dei file per i dispositivi** nelle impostazioni globali di Endpoint DLP. Le attività in qualsiasi file di Word, PowerPoint, Excel, PDF e CSV vengono comunque sempre controllate.
+
+Endpoint DLP monitora le attività in base al tipo MIME, pertanto le attività verranno acquisite anche se l'estensione del file viene cambiata. 
 
 ## <a name="whats-different-in-endpoint-dlp"></a>Cosa distingue Endpoint DLP
 
@@ -79,25 +100,7 @@ Se è stato eseguito l'onboarding di dispositivi tramite [Microsoft Defender per
 
 ### <a name="viewing-endpoint-dlp-data"></a>Visualizzazione dei dati di Endpoint DLP
 
- La Prevenzione della perdita di dati degli endpoint monitora le attività in base al tipo MIME, in modo che le attività vengano acquisite anche se l'estensione del file viene cambiata. Al momento sono supportati i seguenti tipi di file:
 
-- File di Word
-- File di PowerPoint
-- File di Excel
-- File PDF
-- File CSV
-- File TSV
-- File TXT
-- File RTF
-- File C
-- File CLASS
-- File CPP
-- File CS
-- File H
-- File Java
-
-> [!NOTE]
-> La prevenzione della perdita di dati degli endpoint valuta i file di tutti i tipi precedenti rispetto ai criteri DLP e applica le azioni di protezione di conseguenza. Tutti i file che corrispondono a un criterio DLP vengono controllati per tutte le azioni supportate, anche se non vengono bloccati. Inoltre, le attività sui file eseguite in qualsiasi file di Word, PowerPoint, Excel, PDF e CSV vengono controllate per impostazione predefinita, indipendentemente dal fatto che esista un criterio DLP o che corrisponda a questi file.
 
 È possibile visualizzare gli avvisi correlati ai criteri di prevenzione della perdita dei dati applicati ai dispositivi endpoint passando al [Dashboard di gestione avvisi DLP](dlp-configure-view-alerts-policies.md).
 
