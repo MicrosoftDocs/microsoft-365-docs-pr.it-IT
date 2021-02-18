@@ -19,21 +19,21 @@ ms.custom:
 description: Gli amministratori possono imparare a configurare il filtro connessioni in Exchange Online Protection (EOP) per consentire o bloccare i messaggi di posta elettronica dai server di posta elettronica.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ef81d602e1f6da368e9d469bf1deaf0ef2c0a6af
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: c6ec8b4adcdda692ee561f7d50bacf0511642269
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165752"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290046"
 ---
 # <a name="configure-connection-filtering"></a>Configurare il filtro connessioni
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 
 Se si è un cliente di Microsoft 365 con cassette postali in Exchange Online o un cliente autonomo di Exchange Online Protection (EOP) senza cassette postali di Exchange Online, si utilizza il filtro connessioni in EOP (in particolare, il criterio di filtro delle connessioni predefinito) per identificare i server di posta elettronica di origine validi o non validi in base agli indirizzi IP. I componenti principali del criterio di filtro delle connessioni predefinito sono:
@@ -49,7 +49,7 @@ In questo argomento viene descritto come configurare il criterio di filtro delle
 > [!NOTE]
 > L'elenco indirizzi IP consentiti, l'elenco indirizzi attendibili e l'elenco indirizzi IP non consentiti fanno parte della strategia generale per consentire o bloccare la posta elettronica nell'organizzazione. Per ulteriori informazioni, vedere [Creare elenchi di mittenti attendibili](create-safe-sender-lists-in-office-365.md) e Creare elenchi di [mittenti bloccati.](create-block-sender-lists-in-office-365.md)
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **Impostazioni di filtro della posta indesiderata**, usare <https://protection.office.com/antispam>.
 
@@ -63,7 +63,7 @@ In questo argomento viene descritto come configurare il criterio di filtro delle
 
   **Note**:
 
-  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie nel centro Sicurezza e conformità _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie nel centro Sicurezza e conformità _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
   - Anche il gruppo di ruoli di **Gestione organizzazione sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre inoltre l'accesso di sola lettura a tale funzionalità.
 
 - Per trovare gli indirizzi IP di origine dei server di posta elettronica (mittenti) che si desidera consentire o bloccare, è possibile controllare il campo di intestazione IP di connessione **(CIP)** nell'intestazione del messaggio. Per visualizzare l'intestazione di un messaggio in diversi client di posta elettronica, vedere Visualizzare le intestazioni [dei messaggi Internet in Outlook.](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c)
@@ -102,7 +102,7 @@ In questo argomento viene descritto come configurare il criterio di filtro delle
 
 ## <a name="use-the-security--compliance-center-to-view-the-default-connection-filter-policy"></a>Usare il Centro sicurezza & conformità per visualizzare il criterio di filtro delle connessioni predefinito
 
-1. Nel Centro sicurezza & conformità e passare **a** Protezione da posta indesiderata dei criteri \> **di** gestione \> **delle minacce.**
+1. Nel Centro sicurezza & conformità e passare a **Protezione** da posta indesiderata dei criteri \> **di** gestione \> **delle minacce.**
 
 2. Nella pagina **Impostazioni protezione posta indesiderata** fare clic sull'elenco a discesa accanto al criterio predefinito denominato Criterio filtro **connessioni.**
 

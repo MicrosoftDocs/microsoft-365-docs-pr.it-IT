@@ -17,25 +17,25 @@ ms.collection:
 description: Informazioni su come vengono usati i pool di recapito per proteggere la reputazione dei server di posta elettronica nei datacenter di Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5480916f55fc180a6f08d3c420cb92c730e4065b
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 89aac1478d3e5840df4379b9f49832b79d0e133a
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167540"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289806"
 ---
 # <a name="outbound-delivery-pools"></a>Pool di recapito in uscita
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 I server di posta elettronica nei datacenter di Microsoft 365 potrebbero essere temporaneamente responsabili dell'invio di posta indesiderata. Ad esempio, un attacco di malware o di posta indesiderata dannoso in un'organizzazione di posta elettronica locale che invia la posta in uscita tramite Microsoft 365 o ha compromesso gli account di Microsoft 365. Gli utenti malintenzionati tentano anche di evitare il rilevamento inoltrando i messaggi tramite l'inoltro di Microsoft 365.
 
-Questi scenari possono comportare la visualizzazione dell'indirizzo IP dei server datacenter di Microsoft 365 interessati negli elenchi di indirizzi di blocco di terze parti. Le organizzazioni di posta elettronica di destinazione che utilizzano questi elenchi di indirizzi di blocco rifiuteranno la posta elettronica da tali origini dei messaggi.
+Questi scenari possono comportare la visualizzazione dell'indirizzo IP dei server datacenter di Microsoft 365 interessati negli elenchi di indirizzi di blocco di terze parti. Le organizzazioni di posta elettronica di destinazione che utilizzano questi elenchi di blocco rifiuteranno la posta elettronica da tali origini dei messaggi.
 
 ## <a name="high-risk-delivery-pool"></a>Pool di recapito ad alto rischio
 Per evitare questo problema, tutti i messaggi in uscita dai server datacenter di Microsoft 365 [](configure-the-outbound-spam-policy.md) che sono stati definiti come posta indesiderata o che superano i limiti di invio del servizio o i criteri di posta indesiderata in uscita vengono inviati tramite il _pool_ di recapito ad alto rischio. [](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)
@@ -66,4 +66,4 @@ Tutti questi problemi possono comportare un improvviso aumento del numero di NR 
 
 I messaggi inoltrati o inoltrati da Microsoft 365 vengono inviati utilizzando uno speciale pool di inoltro, poiché la destinazione finale non deve considerare Microsoft 365 come mittente effettivo. È anche importante isolare questo traffico, perché esistono scenari legittimi e non validi per l'inoltro automatico o l'inoltro della posta elettronica da Microsoft 365. Analogamente al pool di recapito ad alto rischio, per l'inoltro della posta viene utilizzato un pool di indirizzi IP separato. Questo pool di indirizzi non viene pubblicato perché può cambiare spesso.
 
-Microsoft 365 deve verificare che il mittente originale sia legittimo, in modo da poter recapitare con sicurezza il messaggio inoltrato. A tale scopo, l'autenticazione della posta elettronica (SPF, DKIM e DMARC) deve passare quando il messaggio viene inviato. Nei casi in cui è possibile autenticare il mittente, viene utilizzata la riscrittura del mittente per aiutare il destinatario a sapere che il messaggio inoltrato è di un'origine attendibile. Ulteriori informazioni sul funzionamento e sulle operazioni che è possibile eseguire per assicurarsi che il dominio di invio passi l'autenticazione nello schema di riscrittura [mittente (SRS, Sender Rewriting Scheme).](https://docs.microsoft.com/office365/troubleshoot/antispam/sender-rewriting-scheme)
+Microsoft 365 deve verificare che il mittente originale sia legittimo per poter recapitare con sicurezza il messaggio inoltrato. A tale scopo, l'autenticazione della posta elettronica (SPF, DKIM e DMARC) deve passare quando il messaggio viene inviato. Nei casi in cui è possibile autenticare il mittente, viene utilizzata la riscrittura del mittente per aiutare il destinatario a sapere che il messaggio inoltrato è da un'origine attendibile. Ulteriori informazioni sul funzionamento e sulle operazioni che è possibile eseguire per assicurarsi che il dominio di invio passi l'autenticazione nello schema di riscrittura dei [mittenti (SRS, Sender Rewriting Scheme).](https://docs.microsoft.com/office365/troubleshoot/antispam/sender-rewriting-scheme)

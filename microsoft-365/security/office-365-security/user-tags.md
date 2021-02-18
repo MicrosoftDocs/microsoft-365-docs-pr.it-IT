@@ -16,12 +16,12 @@ ms.collection:
 description: Gli amministratori possono imparare a identificare gruppi specifici di utenti con tag utente in Microsoft Defender per Office 365 Piano 2. Il filtro tag è disponibile per avvisi, report e indagini in Microsoft Defender per Office 365 per identificare rapidamente gli utenti contrassegnati.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ed91492e652773b3a48373df49b20d97887df6ee
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 62d858fe5962b94f536d4ccbd712e21bdd5caa57
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49931435"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290130"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Tag utente in Microsoft Defender per Office 365
 
@@ -30,7 +30,7 @@ ms.locfileid: "49931435"
 
 I tag utente sono identificatori per gruppi specifici di utenti in [Microsoft Defender per Office 365.](office-365-atp.md) Esistono due tipi di tag utente:
 
-- **Tag di** sistema: attualmente, [gli account Priority](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts) sono l'unico tipo di tag di sistema.
+- **Tag di** sistema: attualmente, [gli account Priority](../../admin/setup/priority-accounts.md) sono l'unico tipo di tag di sistema.
 - **Tag personalizzati:** questi tag utente vengono creati manualmente.
 
 Se l'organizzazione dispone di Defender per Office 365 Piano 2 (incluso nell'abbonamento o come componente aggiuntivo), è possibile creare tag utente personalizzati oltre a usare il tag degli account con priorità.
@@ -58,10 +58,10 @@ Questo articolo spiega come configurare i tag utente nel Centro sicurezza & conf
 
   **Note**:
 
-  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie nel centro Sicurezza e conformità _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie nel centro Sicurezza e conformità _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
   - La gestione dei tag utente è controllata dai **ruoli Lettore tag,** **Collaboratore** tag **e Gestione** tag.
 
-- È inoltre possibile gestire e monitorare gli account con priorità nell'interfaccia di amministrazione di Microsoft 365. Per istruzioni, vedere [Gestire e monitorare gli account con priorità.](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts)
+- È inoltre possibile gestire e monitorare gli account con priorità nell'interfaccia di amministrazione di Microsoft 365. Per istruzioni, vedere [Gestire e monitorare gli account con priorità.](../../admin/setup/priority-accounts.md)
 
 ## <a name="use-the-security-center-to-create-user-tags"></a>Utilizzare il Centro sicurezza per creare tag utente
 
@@ -82,7 +82,7 @@ Questo articolo spiega come configurare i tag utente nel Centro sicurezza & conf
      - Fare clic nella casella e iniziare a digitare per filtrare l'elenco e selezionare un utente o un gruppo.
      - Per aggiungere ulteriori valori, fare clic in un'area vuota della casella.
      - Per rimuovere singole voci dalla casella, fare **clic** sull'icona Rimuovi ![ ](../../media/scc-remove-icon.png) dell'utente o del gruppo nella casella.
-     - Per rimuovere voci esistenti dall'elenco sotto la casella, fare clic  ![ sull'icona ](../../media/scc-remove-icon.png) Rimuovi.
+     - Per rimuovere le voci esistenti dall'elenco sotto la casella, fare clic  ![ sull'icona ](../../media/scc-remove-icon.png) Rimuovi.
 
      Al termine, fare clic su **Aggiungi**.
 

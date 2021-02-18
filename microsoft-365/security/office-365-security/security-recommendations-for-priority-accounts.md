@@ -20,16 +20,16 @@ ms.collection:
 description: Gli amministratori possono imparare a elevare le impostazioni di sicurezza e a usare report, avvisi e indagini per gli account con priorità nelle organizzazioni di Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 814ca47ee48e844e313f7d75640643a0b659c527
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 4038a9abc3357bb72a0c21db3e4ca4679c1aa745
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166370"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290752"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Consigli sulla sicurezza per gli account con priorità in Microsoft 365
 
-Non tutti gli account utente hanno accesso alle stesse informazioni aziendali. Alcuni account hanno accesso a informazioni riservate, ad esempio dati finanziari, informazioni sullo sviluppo di prodotti, accesso dei partner a sistemi di compilazione critici e altro ancora. Se compromessi, gli account che hanno accesso a informazioni estremamente riservate rappresentano una minaccia grave. Questi tipi di account vengono d'altro tipo _con priorità._ Gli account di priorità includono ( ma non sono limitati a) amministratori delegati, CISO, CFO, account di amministratore dell'infrastruttura, creare account di sistema e altro ancora.
+Non tutti gli account utente hanno accesso alle stesse informazioni aziendali. Alcuni account hanno accesso a informazioni riservate, ad esempio dati finanziari, informazioni sullo sviluppo di prodotti, accesso partner a sistemi di compilazione critici e altro ancora. Se compromessi, gli account che hanno accesso a informazioni estremamente riservate rappresentano una minaccia grave. Questi tipi di account vengono d'altro tipo _con priorità._ Gli account di priorità includono ( ma non sono limitati a) amministratori delegati, CISO, CFO, account di amministratore dell'infrastruttura, creare account di sistema e altro ancora.
 
 Per gli utenti malintenzionati, gli attacchi di phishing ordinari che scacciano una rete casuale per utenti ordinari o sconosciuti non sono efficienti. D'altra parte, gli attacchi _di phishing_ o _di whaling_ mirati agli account con priorità sono molto gratificanti per gli utenti malintenzionati. Pertanto, gli account con priorità richiedono una protezione più avanzata rispetto a quella ordinaria per evitare la compromissione dell'account.
 
@@ -41,18 +41,18 @@ Microsoft 365 e Microsoft Defender per Office 365 contengono diverse funzionalit
 
 |Attività|Tutti i piani di Office 365 Enterprise|Microsoft 365 E3|Microsoft 365 E5|
 |---|:---:|:---:|:---:|
-|[Aumentare la sicurezza dell'accesso per gli account con priorità](#increase-sign-in-security-for-priority-accounts)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|[Aumentare la sicurezza di accesso per gli account con priorità](#increase-sign-in-security-for-priority-accounts)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |[Usare criteri di sicurezza preimpostati rigorosi per gli account con priorità](#use-strict-preset-security-policies-for-priority-accounts)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |[Applicare tag utente agli account con priorità](#apply-user-tags-to-priority-accounts)|||![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |[Monitorare gli account di priorità in avvisi, report e rilevamenti](#monitor-priority-accounts-in-alerts-reports-and-detections)|||![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |[Formare gli utenti](#train-users)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
 
-## <a name="increase-sign-in-security-for-priority-accounts"></a>Aumentare la sicurezza dell'accesso per gli account con priorità
+## <a name="increase-sign-in-security-for-priority-accounts"></a>Aumentare la sicurezza di accesso per gli account con priorità
 
 Gli account con priorità richiedono una maggiore sicurezza di accesso. È possibile aumentare la sicurezza di accesso richiedendo l'autenticazione a più fattori (MFA) e disabilitando i protocolli di autenticazione legacy.
 
-Per istruzioni, vedere [il passaggio 1. Aumentare la sicurezza dell'accesso per i lavoratori remoti con MFA.](https://docs.microsoft.com/microsoft-365/solutions/empower-people-to-work-remotely-secure-sign-in) Anche se questo articolo riguarda i lavoratori remoti, gli stessi concetti si applicano agli utenti con priorità.
+Per istruzioni, vedere [il passaggio 1. Aumentare la sicurezza dell'accesso per i lavoratori remoti con MFA.](../../solutions/empower-people-to-work-remotely-secure-sign-in.md) Anche se questo articolo riguarda i lavoratori remoti, gli stessi concetti si applicano agli utenti con priorità.
 
 **Nota:** è consigliabile disabilitare globalmente i protocolli di autenticazione legacy per tutti gli utenti con priorità, come descritto nell'articolo precedente. Se i requisiti aziendali impediscono tale operazione, Exchange Online offre i seguenti controlli per limitare l'ambito dei protocolli di autenticazione legacy:
 
@@ -62,13 +62,13 @@ Per istruzioni, vedere [il passaggio 1. Aumentare la sicurezza dell'accesso per 
   - [Abilitare o disabilitare l'accesso POP3 o IMAP4 per un utente](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)
   - [Abilitare o disabilitare l'invio SMTP del client autenticato (SMTP AUTH)](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission)
 
-Vale anche la pena notare che l'autenticazione di base è in fase di deprecazione in Exchange Online per Exchange Web Services (EWS), Exchange ActiveSync, POP3, IMAP4 e Remote PowerShell. Per informazioni dettagliate, vedere questo [post di blog.](https://developer.microsoft.com/office/blogs/deferred-end-of-support-date-for-basic-authentication-in-exchange-online/)
+Vale anche la pena notare che l'autenticazione di base è in fase di deprecazione in Exchange Online for Exchange Web Services (EWS), Exchange ActiveSync, POP3, IMAP4 e Remote PowerShell. Per informazioni dettagliate, vedere questo [post di blog.](https://developer.microsoft.com/office/blogs/deferred-end-of-support-date-for-basic-authentication-in-exchange-online/)
 
 ## <a name="use-strict-preset-security-policies-for-priority-accounts"></a>Usare criteri di sicurezza preimpostati rigorosi per gli account con priorità
 
 Gli utenti con priorità richiedono azioni più stringenti per le varie protezioni disponibili in Exchange Online Protection (EOP) e Defender per Office 365.
 
-Ad esempio, invece di recapitare i messaggi classificati come posta indesiderata nella cartella Posta indesiderata, è consigliabile mettere in quarantena gli stessi messaggi se sono destinati agli account con priorità.
+Ad esempio, anziché recapitare i messaggi classificati come posta indesiderata nella cartella Posta indesiderata, è consigliabile mettere in quarantena gli stessi messaggi se sono destinati agli account con priorità.
 
 È possibile implementare questo approccio rigoroso per gli account con priorità utilizzando il profilo Strict nei criteri di sicurezza preimpostati.
 
@@ -80,7 +80,7 @@ Per informazioni dettagliate sulle differenze tra le impostazioni dei criteri St
 
 I tag utente in Microsoft Defender per Office 365 Piano 2 (nell'ambito di Microsoft 365 E5 o di un abbonamento a un componente aggiuntivo) consentono di identificare e classificare rapidamente utenti o gruppi di utenti specifici in report e indagini su eventi imprevisti.
 
-**Gli account** di priorità sono un tipo di tag utente predefinito (noto come _tag_ di sistema) che è possibile utilizzare per identificare eventi imprevisti e avvisi che coinvolgono account con priorità. Per ulteriori informazioni sugli **account con priorità,** vedere [Gestire e monitorare gli account di priorità.](https://docs.microsoft.com/microsoft-365/admin/setup/priority-accounts)
+**Gli account** di priorità sono un tipo di tag utente predefinito (noto come _tag_ di sistema) che è possibile utilizzare per identificare eventi imprevisti e avvisi che coinvolgono account con priorità. Per ulteriori informazioni sugli **account con priorità,** vedere [Gestire e monitorare gli account di priorità.](../../admin/setup/priority-accounts.md)
 
 Puoi anche creare tag personalizzati per identificare e classificare ulteriormente gli account con priorità. Per ulteriori informazioni, vedere [Tag utente.](user-tags.md) Tieni presente che puoi gestire **gli account di priorità** (tag di sistema) nella stessa interfaccia dei tag utente personalizzati.
 
@@ -94,7 +94,7 @@ Dopo aver protetto e etichettato gli utenti con priorità, è possibile utilizza
 
 |Funzionalità|Descrizione|
 |---|---|
-|Avvisi|I tag utente degli utenti interessati sono  visibili e disponibili come filtri nella pagina Visualizza avvisi nel Centro sicurezza & conformità. Per ulteriori informazioni, vedere [Visualizzazione degli avvisi.](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#viewing-alerts)|
+|Avvisi|I tag utente degli utenti interessati sono  visibili e disponibili come filtri nella pagina Visualizza avvisi nel Centro sicurezza & conformità. Per ulteriori informazioni, vedere [Visualizzazione degli avvisi.](../../compliance/alert-policies.md#viewing-alerts)|
 |Esplora minacce <p> Rilevamenti in tempo reale|In **Esplora** minacce (Microsoft Defender per Office 365 Piano 2) o rilevamenti in tempo reale **(Microsoft** Defender per Office 365 Piano 1), i tag utente sono visibili nella visualizzazione griglia della posta elettronica e nel riquadro a comparsa Dei dettagli della posta elettronica. I tag utente sono inoltre disponibili come proprietà filtrabile. Per altre informazioni, vedi [Tag in Esplora minacce.](threat-explorer.md#tags-in-threat-explorer)|
 |Visualizzazioni campagna|I tag utente sono una delle molte proprietà filtrabili in Visualizzazioni campagna in Microsoft Defender per Office 365 Piano 2. Per ulteriori informazioni, vedere [Visualizzazioni campagna.](campaigns.md)|
 |Report dello stato di protezione dalle minacce|In praticamente tutte le tabelle delle visualizzazioni e dei dettagli nella relazione sullo stato di **Protezione** dalle minacce, è possibile filtrare i risultati in base agli **account con priorità.** Per ulteriori informazioni, vedere [la relazione sullo stato di Protezione dalle minacce.](view-email-security-reports.md#threat-protection-status-report)|
@@ -103,7 +103,7 @@ Dopo aver protetto e etichettato gli utenti con priorità, è possibile utilizza
 
 ## <a name="train-users"></a>Formare gli utenti
 
-Formare gli utenti con account prioritari può aiutare a risparmiare tempo e frustrazione a tali utenti e al team delle operazioni di sicurezza. Gli utenti esperti sono meno propensi ad aprire allegati o a fare clic sui collegamenti in messaggi di posta elettronica discutibili ed è più probabile che evitino siti Web sospetti.
+Formare gli utenti con account prioritari può aiutare a risparmiare tempo e frustrazione a tali utenti e al team delle operazioni di sicurezza. Gli utenti esperti hanno meno probabilità di aprire allegati o di fare clic su collegamenti in messaggi di posta elettronica discutibili ed è più probabile che evitino siti Web sospetti.
 
 Il manuale della campagna per la [cybersecurity](https://www.belfercenter.org/CyberPlaybook) dell'università Disaffezione school di Università offre una guida eccellente per stabilire una forte cultura della sicurezza all'interno dell'organizzazione, inclusa la formazione degli utenti per identificare gli attacchi di phishing.
 

@@ -19,12 +19,12 @@ search.appverid:
 description: Informazioni su tre strumenti che è possibile utilizzare per monitorare la perdita di dati personali.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b1425015843b2f444c6a410df449eeeaf4045ee5
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: a8fb8557d6cd2677aeb6dcda75d34e86ada8f68c
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261426"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290670"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Monitorare la perdita di dati personali
 
@@ -65,7 +65,7 @@ Inoltre, è possibile utilizzare i report DLP per ottimizzare i criteri DLP, qua
 
 I report DPL sono disponibili nel centro sicurezza e nel centro conformità. Passare a Report \> Visualizza report. Sotto Prevenzione della perdita dei dati scegliere Corrispondenze della regola e dei criteri di prevenzione della perdita dei dati o Falsi positivi e override dei criteri di prevenzione della perdita dei dati.
 
-Per ulteriori informazioni, vedere [Visualizzare i report di prevenzione della perdita di dati](https://docs.microsoft.com/microsoft-365/compliance/view-the-dlp-reports).
+Per ulteriori informazioni, vedere [Visualizzare i report di prevenzione della perdita di dati](../../compliance/view-the-dlp-reports.md).
 
 ![Report che mostra le corrispondenze ai criteri DLP](../../media/Monitor-for-leaks-of-personal-data-image2.png)
 
@@ -87,17 +87,17 @@ Sono disponibili soluzioni che consentono di sottoscrivere i log di controllo un
 
 Ulteriori informazioni sui criteri di avviso e sulla ricerca nel log di controllo:
 
-- [Criteri di avviso nei centri di sicurezza e di conformità di Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)
+- [Criteri di avviso nei centri di sicurezza e di conformità di Microsoft 365](../../compliance/alert-policies.md)
 
-- [Eseguire ricerche nel il log di controllo per le attività di utente e amministratore in Office 365](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log) (introduzione)
+- [Eseguire ricerche nel il log di controllo per le attività di utente e amministratore in Office 365](../../compliance/search-the-audit-log-in-security-and-compliance.md) (introduzione)
 
-- [Abilitare o disabilitare la ricerca nel log di controllo](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off)
+- [Abilitare o disabilitare la ricerca nel log di controllo](../../compliance/turn-audit-log-search-on-or-off.md)
 
-- [Eseguire ricerche nel log di controllo](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
+- [Eseguire ricerche nel log di controllo](../../compliance/search-the-audit-log-in-security-and-compliance.md)
 
 - [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) (cmdlet)
 
-- [Proprietà dettagliate nel log di controllo](https://docs.microsoft.com/microsoft-365/compliance/detailed-properties-in-the-office-365-audit-log)
+- [Proprietà dettagliate nel log di controllo](../../compliance/detailed-properties-in-the-office-365-audit-log.md)
 
 ## <a name="microsoft-cloud-app-security"></a>Microsoft Cloud App Security
 

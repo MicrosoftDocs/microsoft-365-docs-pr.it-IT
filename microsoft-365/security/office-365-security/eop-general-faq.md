@@ -15,19 +15,19 @@ ms.custom:
 description: Risposte alle domande più comuni sul servizio di filtro della posta elettronica ospitato su cloud di Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d0a5712d2bfb110c3292dee06b456161599d40b1
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 1a1ce845ef50d7485113c211b0a8d7770ea57815
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165488"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290022"
 ---
 # <a name="eop-general-faq"></a>Domande frequenti su Exchange Online Protection
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
--  [Exchange Online Protection autonomo](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection autonomo](exchange-online-protection-overview.md)
 
 Qui rispondiamo alle domande più comuni sul servizio di filtro della posta elettronica ospitato su cloud di Exchange Online Protection (EOP). Per ulteriori argomenti sulle domande frequenti (FAQ), accedere ai collegamenti seguenti:
 
@@ -45,7 +45,7 @@ Qui rispondiamo alle domande più comuni sul servizio di filtro della posta elet
 
 ## <a name="what-is-eop"></a>Cos'è Exchange Online Protection?
 
-EOP è un servizio di filtro della posta elettronica ospitato su cloud ideato per proteggere i clienti da posta indesiderata e malware e per implementare le regole criterio personalizzate. EOP è incluso in qualsiasi abbonamento a Microsoft 365 che contiene cassette postali di Exchange Online. EOP è inoltre disponibile come offerta autonoma per proteggere gli ambienti di posta elettronica locali.
+EOP è un servizio di filtro della posta elettronica ospitato su cloud ideato per proteggere i clienti da posta indesiderata e malware e per implementare le regole criterio personalizzate. EOP è incluso in qualsiasi abbonamento a Microsoft 365 contenente cassette postali di Exchange Online. EOP è inoltre disponibile come offerta autonoma per proteggere gli ambienti di posta elettronica locali.
 
 ## <a name="how-do-i-sign-up-for-an-eop-trial-or-purchase-eop"></a>Come iscriversi alla versione di valutazione o alla versione per l'acquisto di EOP.
 
@@ -69,7 +69,7 @@ Microsoft 365 è il nome assegnato a una raccolta di prodotti e servizi a cui è
 
 ## <a name="does-eop-have-a-communication-portal-where-i-can-find-out-about-known-issues-and-expected-resolutions-what-about-new-features"></a>EOP dispone di un portale di comunicazione, nel quale è possibile trovare informazioni su problemi noti e possibili risoluzioni? Le informazioni sulle nuove funzionalità?
 
-L'interfaccia di amministrazione di Microsoft 365 avrà alcune di queste informazioni. Se si è influenzati da un evento del livello di servizio, dopo aver effettuato l'accesso all'interfaccia di amministrazione di Microsoft 365 dovrebbe essere visualizzato un avviso di comunicazione (in genere accompagnato da un'icona a forma di campanello). Si consiglia di leggere e intervenire su tutti gli elementi, come necessario.
+Alcune di queste informazioni saranno disponibili nell'interfaccia di amministrazione di Microsoft 365. Se si è influenzati da un evento del livello di servizio, dopo aver effettuato l'accesso all'interfaccia di amministrazione di Microsoft 365 dovrebbe essere visualizzato un avviso di comunicazione (in genere accompagnato da un'icona a forma di campanello). Si consiglia di leggere e intervenire su tutti gli elementi, come necessario.
 
 Per quanto riguarda le nuove funzionalità di EOP, la roadmap di [Microsoft 365 per le aziende](https://www.microsoft.com/microsoft-365/roadmap?filters=O365) è una buona risorsa per trovare informazioni sulle nuove funzionalità future. Inoltre, inseriamo articoli di blog sulle nuove funzionalità nel sito [Web blog di Microsoft 365.](https://www.microsoft.com/microsoft-365/blog/)
 

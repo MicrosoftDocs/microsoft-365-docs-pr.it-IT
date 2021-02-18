@@ -8,6 +8,7 @@ manager: dansimp
 ms.date: ''
 ms.audience: Admin
 ms.topic: article
+audience: Admin
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
@@ -18,21 +19,21 @@ description: Utilizzando il Centro sicurezza Microsoft 365 o il Centro conformit
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2be0b1ced6a10d37b400a454987b908e21afbaa0
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 55030813ecddedd5661602fddea59f6bf3a8b03a
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150701"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290788"
 ---
 # <a name="permissions-in-the-microsoft-365-compliance-center-and-microsoft-365-security-center"></a>Autorizzazioni nel Centro conformità Microsoft 365 e nel Centro sicurezza Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 L'organizzazione deve gestire gli scenari di sicurezza e conformità che riguardano tutti i servizi di Microsoft 365. Inoltre, è necessaria flessibilità per fornire le corrette autorizzazioni di amministratore alle persone giuste nel gruppo IT dell'organizzazione. Utilizzando il Centro sicurezza Microsoft 365 o il Centro conformità Microsoft 365, è possibile gestire le autorizzazioni in una posizione centralizzata per tutte le attività relative alla sicurezza o alla conformità.
 
@@ -85,11 +86,11 @@ Assegnando uno dei ruoli di amministratore di conformità o di sicurezza di Micr
 
 |Servizio Microsoft 365|Informazioni sul ruolo|
 |---|---|
-|Ruoli di amministratore nei piani di Office 365 e Microsoft 365 per le aziende|[Ruoli di amministratore di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
+|Ruoli di amministratore nei piani di Office 365 e Microsoft 365 per le aziende|[Ruoli di amministratore di Microsoft 365](../../admin/add-users/about-admin-roles.md)|
 |Azure Active Directory (Azure AD) e Azure AD Identity Protection|[Ruoli di amministratore di Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
 |Che cosa è Microsoft Defender per identità?|[Ruoli dei gruppi Microsoft Defender per identità](https://docs.microsoft.com/azure-advanced-threat-protection/atp-role-groups)|
 |Azure Information Protection|[Ruoli di amministratore di Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|
-|Compliance Manager|[Compliance Manager](https://docs.microsoft.com/microsoft-365/compliance/compliance-manager-setup#set-user-permissions-and-assign-roles)|
+|Compliance Manager|[Compliance Manager](../../compliance/compliance-manager-setup.md#set-user-permissions-and-assign-roles)|
 |Exchange Online|[Controllo degli accessi in base al ruolo di Exchange](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)|
 |Intune|[Controllo degli accessi in base al ruolo di Intune](https://docs.microsoft.com/intune/role-based-access-control)|
 |Managed Desktop|[Ruoli di amministratore di Azure AD](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)|

@@ -19,21 +19,21 @@ ms.custom:
 description: Informazioni su come aggiornare un record DNS (Domain Name Service) per usare un Sender Policy Framework (SPF) con il dominio personalizzato in Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: fbed28047b88a3eff75f574fc4d2581a75f15518
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 52997150302805ea5085028e9a8f1cd5f745d841
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166232"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290444"
 ---
 # <a name="set-up-spf-to-help-prevent-spoofing"></a>Configurazione di SPF per evitare lo spoofing
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 In questo articolo viene descritto come aggiornare un record DNS (Domain Name Service) affinché sia possibile utilizzare l'autenticazione della posta elettronica di Sender Policy Framework (SPF) con il dominio personalizzato in Office 365.
 
@@ -48,7 +48,7 @@ Prima di creare o aggiornare il record TXT di SPF per Office 365 nel sistema DNS
 
 Raccogliere le seguenti informazioni:
 
-- Il record TXT SPF per il proprio dominio personalizzato, se disponibile. Per le istruzioni, vedere [Raccogliere le informazioni necessarie per creare record DNS di Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/information-for-dns-records).
+- Il record TXT SPF per il proprio dominio personalizzato, se disponibile. Per le istruzioni, vedere [Raccogliere le informazioni necessarie per creare record DNS di Office 365](../../admin/get-help-with-domains/information-for-dns-records.md).
 
 - Passare ai server di messaggistica e individuare gli indirizzi IP esterni (necessari per tutti i server locali di messaggistica). Ad esempio, **131.107.2.200**.
 
@@ -94,7 +94,7 @@ Raccogliere le seguenti informazioni:
 
    Se l'utente è già distribuito in Office 365, dispone di record TXT SPF configurati per il dominio personalizzato e sta eseguendo la migrazione a Office 365 Germania, è necessario aggiornare il record TXT SPF. Per farlo, cambiare `include:spf.protection.outlook.com` in `include:spf.protection.outlook.de`.
 
-3. Dopo aver creato il record TXT SPF, è necessario aggiornare il record in DNS. È possibile avere un solo record TXT SPF per un dominio. Se esiste un record TXT SPF, anziché aggiungere un nuovo record, è necessario aggiornare quello esistente. Passare a [Creare record DNS per Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) e fare clic sul collegamento relativo al proprio host DNS.
+3. Dopo aver creato il record TXT SPF, è necessario aggiornare il record in DNS. È possibile avere un solo record TXT SPF per un dominio. Se esiste un record TXT SPF, anziché aggiungere un nuovo record, è necessario aggiornare quello esistente. Passare a [Creare record DNS per Office 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) e fare clic sul collegamento relativo al proprio host DNS.
 
 4. Verificare il record TXT SPF.
 
@@ -137,6 +137,6 @@ Per esempi avanzati e una descrizione dettagliata della sintassi SPF supportata,
 
  SPF è progettato per prevenire spoofing, ma esistono tecniche di spoofing che SPF non è in grado di evitare. Per difendersi da queste minacce, dopo aver configurato SPF è consigliabile configurare anche DKIM e DMARC per Office 365.
 
-L'obiettivo dell'autenticazione [DKIM](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dkim-to-validate-outbound-email?view=o365-worldwide) della posta elettronica è dimostrare che il contenuto del messaggio non è stato manomesso.
+L'obiettivo dell'autenticazione [DKIM](use-dkim-to-validate-outbound-email.md) della posta elettronica è dimostrare che il contenuto del messaggio non è stato manomesso.
 
-L'obiettivo dell'autenticazione [DMARC](https://docs.microsoft.com/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide) della posta elettronica è assicurare che le informazioni SPF e DKIM corrispondano all'indirizzo Da.
+L'obiettivo dell'autenticazione [DMARC](use-dmarc-to-validate-email.md) della posta elettronica è assicurare che le informazioni SPF e DKIM corrispondano all'indirizzo Da.

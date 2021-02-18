@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: Gli amministratori possono conoscere la modalità di valutazione di Microsoft Defender per Office 365
-ms.openlocfilehash: 6207ae117f06a0e5f10d4a7a47a251137c51df05
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 0f45379bec52b54059c743823e2c8eb366f9bd59
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233580"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289390"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Informazioni sulla versione di valutazione di Microsoft Defender per Office 365
 
@@ -49,7 +49,7 @@ Una versione di valutazione consente alle organizzazioni di configurare facilmen
 
 Per impostazione predefinita, questi criteri hanno come ambito tutti gli utenti dell'organizzazione, ma gli amministratori possono personalizzare i criteri durante o dopo l'installazione in modo che siano applicabili solo a utenti specifici.
 
-Durante l'installazione, la funzionalità di risposta MDO (disponibile in MDO P2 o equivalente) viene impostata anche per l'intera organizzazione. Non è necessario alcun ambito dei criteri.
+Durante l'installazione, la funzionalità di risposta MDO (disponibile in MDO P2 o equivalente) viene impostata anche per l'intera organizzazione. Non è richiesto alcun ambito dei criteri.
 
 ## <a name="licensing"></a>Licenze
 
@@ -57,7 +57,7 @@ Come parte della configurazione di prova, le licenze di Defender per Office 365 
 
 ## <a name="permissions"></a>Autorizzazioni
 
-Per avviare o terminare la versione di valutazione, è necessario essere membri dei ruoli **Amministratore** globale o Amministratore **della** sicurezza in Azure Active Directory. Per informazioni dettagliate, vedere [Informazioni sui ruoli di amministratore.](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)
+Per avviare o terminare la versione di valutazione, è necessario essere membri dei ruoli **Amministratore** globale o Amministratore **della** sicurezza in Azure Active Directory. Per informazioni dettagliate, vedere [Informazioni sui ruoli di amministratore.](../../admin/add-users/about-admin-roles.md)
 
 ## <a name="additional-information"></a>Informazioni aggiuntive
 
@@ -67,7 +67,7 @@ Gli amministratori possono disabilitare la versione di valutazione in qualsiasi 
 
 ## <a name="availability"></a>Disponibilità
 
-La versione di valutazione di Defender per Office 365 viene gradualmente in fase di implementazione per i clienti esistenti che soddisfano criteri specifici (inclusa la geografia) e che non dispongono di licenze defender per Office 365 Piano 1 o Piano 2 (incluse nella sottoscrizione o come componente aggiuntivo).
+La versione di valutazione di Defender per Office 365 è in fase di implementazione graduale per i clienti esistenti che soddisfano criteri specifici (inclusa la geografia) e che non dispongono di licenze defender per Office 365 Piano 1 o Piano 2 (incluse nella sottoscrizione o come componente aggiuntivo).
 
 ## <a name="learn-more-about-defender-for-office-365"></a>Ulteriori informazioni su Defender per Office 365
 
@@ -98,7 +98,7 @@ Esperienze efficaci consentono di identificare, assegnare priorità e analizzare
 - [Esplora minacce e rilevamenti in tempo reale](threat-explorer.md)
 - [Report in tempo reale in Defender per Office 365](view-reports-for-atp.md)
 - [Tracker delle minacce - Nuovi e degni di nota](threat-trackers.md)
-- Integrazione con [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection)
+- Integrazione con [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 ### <a name="response-and-remediation"></a>Risposta e correzione
 

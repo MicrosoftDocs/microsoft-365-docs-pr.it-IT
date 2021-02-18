@@ -22,12 +22,12 @@ f1.keywords:
 ms.assetid: 6b4ded77-ac8d-42ed-8606-c014fd947560
 description: In questo articolo vengono fornite informazioni sulla protezione dell'accesso dell'amministratore globale all'abbonamento a Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 15c497e02b139ea6af4aabba9f3e9ab65a1205be
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: 1f84ca33a620c3ea3c24f46eb29c1a39c28840e7
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48445408"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289640"
 ---
 # <a name="protect-your-microsoft-365-global-administrator-accounts"></a>Proteggere gli account di amministratore globale di Microsoft 365
 
@@ -39,7 +39,7 @@ Le violazioni della sicurezza di un abbonamento a Microsoft 365, inclusi gli att
     
 - Si è proprietari dei dati e delle identità e la responsabilità di proteggerli, la sicurezza delle risorse locali e la sicurezza dei componenti cloud che si controllano.
     
-Microsoft offre funzionalità che consentono di proteggere l'organizzazione, ma sono efficaci solo se vengono usate. Se non vengono utilizzati, l'utente potrebbe essere vulnerabile agli attacchi. Per proteggere gli account di amministratore globale, Microsoft è qui per aiutarti con istruzioni dettagliate per:
+Microsoft offre funzionalità che consentono di proteggere l'organizzazione, ma sono efficaci solo se vengono usate. Se non vengono utilizzati, è possibile che l'utente sia vulnerabile agli attacchi. Per proteggere gli account di amministratore globale, Microsoft è qui per aiutarti con istruzioni dettagliate per:
   
 1. Creare account di amministratore globale di Microsoft 365 dedicati e usarli solo se necessario.
     
@@ -55,7 +55,7 @@ Esistono relativamente poche attività amministrative, ad esempio l'assegnazione
 1. Determinare il set di account utente a cui è stato assegnato il ruolo di amministratore globale. È possibile eseguire questa operazione nell'interfaccia di amministrazione di Microsoft 365 o con il comando Azure Active (Azure AD) Directory PowerShell per Graph seguente:
   
   ```powershell
-  Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Company Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
+  Get-AzureADDirectoryRole | where { $_.DisplayName -eq "Global Administrator" } | Get-AzureADDirectoryRoleMember | Ft DisplayName
   ```
 
 2. Accedere all'abbonamento a Microsoft 365 con un account utente a cui è stato assegnato il ruolo di amministratore globale.
@@ -131,7 +131,7 @@ Utilizzare questi metodi aggiuntivi per garantire che l'account amministratore g
   
 ### <a name="privileged-access-workstation"></a>Workstation con accesso privilegiato
 
-Per garantire che l'esecuzione di attività con privilegi elevati sia il più sicura possibile, utilizzare una workstation con accesso privilegiato (PAW). Una paW è un computer dedicato che viene utilizzato solo per le attività di configurazione sensibili, ad esempio la configurazione di Microsoft 365 che richiede un account amministratore globale. Poiché questo computer non viene utilizzato quotidianamente per l'esplorazione di Internet o la posta elettronica, è meglio protetto da attacchi e minacce Internet.
+Per garantire che l'esecuzione di attività con privilegi elevati sia il più sicura possibile, utilizzare una workstation con accesso privilegiato (PAW). Una paW è un computer dedicato che viene utilizzato solo per le attività di configurazione riservate, ad esempio la configurazione di Microsoft 365 che richiede un account amministratore globale. Poiché questo computer non viene utilizzato quotidianamente per l'esplorazione di Internet o la posta elettronica, è meglio protetto da attacchi e minacce Internet.
   
 Per istruzioni su come configurare una paw, vedere [https://aka.ms/cyberpaw](https://aka.ms/cyberpaw) .
 
@@ -141,7 +141,7 @@ Per sviluppare una roadmap che protegga l'accesso con privilegi dagli attacchi i
 
 ### <a name="azure-ad-privileged-identity-management"></a>Azure AD Privileged Identity Management
 
-Anziché assegnare definitivamente agli account amministratore globale il ruolo di amministratore globale, è possibile utilizzare Azure AD Privileged Identity Management (PIM) per abilitare l'assegnazione just-in-time su richiesta del ruolo di amministratore globale quando necessario.
+Anziché assegnare definitivamente agli account di amministratore globale il ruolo di amministratore globale, è possibile utilizzare Azure AD Privileged Identity Management (PIM) per abilitare l'assegnazione just-in-time su richiesta del ruolo di amministratore globale quando necessario.
   
 Gli account di amministratore globale passano da amministratori permanenti ad amministratori idonei. Il ruolo di amministratore globale è inattivo fino a quando qualcuno non ne ha bisogno. È quindi necessario completare un processo di attivazione per aggiungere il ruolo di amministratore globale all'account amministratore globale per un periodo di tempo predeterminato. Alla scadenza del periodo di tempo, PIM rimuove il ruolo di amministratore globale dall'account amministratore globale.
   
@@ -149,7 +149,7 @@ L'utilizzo di PIM e di questo processo riduce in modo significativo la quantità
 
 PIM è disponibile con Azure Active Directory Premium P2, incluso in Microsoft 365 E5. In alternativa, è possibile acquistare singole licenze di Azure Active Directory Premium P2 per gli account di amministratore.
   
-Per ulteriori informazioni, vedere [Azure AD Privileged Identity Management.](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)
+Per altre informazioni, vedere [Azure AD Privileged Identity Management.](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)
   
 
 ### <a name="privileged-access-management"></a>Gestione accessi con privilegi
@@ -162,7 +162,7 @@ In questo passaggio verrà abilitata la gestione degli accessi con privilegi nel
 - Abilitazione dell’accesso con privilegi
 - Creazione di criteri per l'approvazione
 
-La gestione degli accessi privilegiati consente all'organizzazione di operare senza privilegi permanenti e di fornire un livello di difesa contro le vulnerabilità derivanti da tale accesso amministrativo permanente. L'accesso con privilegi richiede l'approvazione per l'esecuzione di qualsiasi attività a cui è associato un criterio di approvazione definito. Gli utenti che devono eseguire le attività incluse nei criteri di approvazione devono richiedere e ottenere l'approvazione dell'accesso.
+La gestione degli accessi privilegiati consente all'organizzazione di operare senza privilegi permanenti e di fornire un livello di difesa contro le vulnerabilità derivanti da tale accesso amministrativo permanente. L'accesso con privilegi richiede l'approvazione per l'esecuzione di qualsiasi attività a cui è associato un criterio di approvazione definito. Gli utenti che devono eseguire le attività incluse nel criterio di approvazione devono richiedere e ottenere l'approvazione dell'accesso.
 
 Per abilitare la gestione degli accessi con privilegi, vedere [Configurare la gestione degli accessi con privilegi.](https://docs.microsoft.com/office365/securitycompliance/privileged-access-management-configuration)
 

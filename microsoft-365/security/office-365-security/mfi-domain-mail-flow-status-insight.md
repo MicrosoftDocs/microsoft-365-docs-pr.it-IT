@@ -14,21 +14,21 @@ ms.custom:
 description: Gli amministratori possono imparare a usare le informazioni dettagliate sullo stato del flusso di posta del dominio principale nel dashboard del flusso di posta nel Centro sicurezza & conformità per risolvere i problemi del flusso di posta correlati ai record MX.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: df0f571d29d72b23e7b2e210b61a4fb1676175aa
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 9ecda78047384a581a1043d0049b8dd25fadbe27
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150208"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290622"
 ---
 # <a name="top-domain-mail-flow-status-insight-in-the-security--compliance-center"></a>Informazioni dettagliate sullo stato del flusso di posta del dominio principale nel Centro sicurezza & conformità
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Le **informazioni dettagliate sullo** stato del flusso di posta del dominio principale nel [dashboard](mail-flow-insights-v2.md) del flusso di posta nel Centro sicurezza [&](https://protection.office.com) conformità forniscono lo stato corrente del flusso di posta per l'organizzazione.
 

@@ -17,31 +17,31 @@ ms.collection:
 description: Gli amministratori possono imparare a configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange Online. Molte di queste impostazioni sono disponibili per gli utenti in Outlook o Outlook sul Web.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2aa75376a431ded5abf44ad17ddad4f0ac731fa8
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 31f247ec74f1780d05aaeb79753abd0075401d9a
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165692"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290118"
 ---
 # <a name="configure-junk-email-settings-on-exchange-online-mailboxes"></a>Configurare le impostazioni della posta indesiderata nelle cassette postali di Exchange Online
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Nelle organizzazioni di Microsoft 365 con cassette postali in Exchange Online, le impostazioni di protezione dalla posta indesiderata dell'organizzazione sono controllate da Exchange Online Protection (EOP). Per ulteriori informazioni, vedere [Protezione da posta indesiderata in EOP.](anti-spam-protection.md)
 
-Tuttavia, esistono anche impostazioni di protezione da posta indesiderata specifiche che gli amministratori possono configurare sulle singole cassette postali in Exchange Online:
+Tuttavia, esistono anche impostazioni di protezione dalla posta indesiderata specifiche che gli amministratori possono configurare sulle singole cassette postali in Exchange Online:
 
 - **Abilitare o disabilitare la** regola di posta indesiderata: la regola di posta indesiderata è una regola posta in arrivo nascosta denominata Regola di posta indesiderata abilitata per impostazione predefinita in ogni cassetta postale. La regola di posta indesiderata controlla le funzionalità seguenti:
 
   - Spostare i messaggi nella cartella Posta indesiderata in base ai criteri di protezione  dalla posta **indesiderata:** quando un criterio di protezione da posta indesiderata è configurato con l'azione Sposta messaggio nella cartella Posta indesiderata per un verdetto filtro posta indesiderata, la regola di filtro della posta indesiderata sposta il messaggio nella cartella Posta indesiderata dopo il recapito del messaggio alla cassetta postale. Per ulteriori informazioni sui verdetti del filtro posta indesiderata nei criteri di protezione da posta indesiderata, vedere Configurare i criteri di protezione da posta [indesiderata in EOP.](configure-your-spam-filter-policies.md) Allo stesso modo, se zap (zero-hour auto purge) determina che un messaggio recapitato è posta  indesiderata o phish, la regola di filtro della posta indesiderata sposta il messaggio nella cartella Posta indesiderata per spostare il messaggio nella cartella Posta indesiderata per le azioni di verdetto del filtro della posta indesiderata. Per ulteriori informazioni su ZAP, vedere [Zero-hour auto purge (ZAP) in Exchange Online.](zero-hour-auto-purge.md)
 
-  - Impostazioni per la posta indesiderata configurate dagli utenti  in Outlook o **Outlook sul Web:** la raccolta degli elenchi indirizzi attendibili è l'elenco Mittenti attendibili, l'elenco Destinatari attendibili e l'elenco Mittenti bloccati in ogni cassetta postale. Le voci in questi elenchi determinano se la regola di posta indesiderata sposta il messaggio nella cartella Posta in arrivo o Posta indesiderata. Gli utenti possono configurare la raccolta degli elenchi indirizzi attendibili per la propria cassetta postale in Outlook o Outlook sul Web (in precedenza noto come Outlook Web App). Gli amministratori possono configurare la raccolta dell'elenco indirizzi attendibili nella cassetta postale di qualsiasi utente.
+  - Impostazioni della posta indesiderata configurate dagli utenti in  Outlook o **Outlook sul Web:** la raccolta degli elenchi indirizzi attendibili è l'elenco Mittenti attendibili, l'elenco Destinatari attendibili e l'elenco Mittenti bloccati in ogni cassetta postale. Le voci in questi elenchi determinano se la regola di posta indesiderata sposta il messaggio nella cartella Posta in arrivo o Posta indesiderata. Gli utenti possono configurare la raccolta dell'elenco indirizzi attendibili per la propria cassetta postale in Outlook o Outlook sul Web (in precedenza noto come Outlook Web App). Gli amministratori possono configurare la raccolta dell'elenco indirizzi attendibili nella cassetta postale di qualsiasi utente.
 
 Quando la regola di posta indesiderata è abilitata nella cassetta postale, EOP è in  grado di spostare i messaggi nella cartella Posta indesiderata in base all'azione di filtro della posta indesiderata Spostare i messaggi nella cartella Posta indesiderata o nell'elenco Mittenti bloccati nella cassetta postale e impedire che i messaggi vengano recapitati nella cartella Posta indesiderata (in base all'elenco Mittenti attendibili nella cassetta postale).
 
@@ -52,7 +52,7 @@ Gli amministratori possono utilizzare PowerShell di Exchange Online per disabili
 > [!NOTE]
 > I messaggi provenienti da mittenti aggiunti dagli utenti ai propri elenchi Mittenti attendibili ignorano il filtro connessioni come parte di EOP (il livello di probabilità di posta indesiderata è -1). Per impedire agli utenti di aggiungere voci all'elenco Mittenti attendibili in Outlook, utilizzare Criteri di gruppo come indicato nella sezione Informazioni sulle impostazioni di posta indesiderata  [in Outlook](#about-junk-email-settings-in-outlook) più avanti in questo articolo. Il filtro dei criteri, il filtro contenuto e i controlli di Defender per Office 365 verranno comunque applicati ai messaggi.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - È possibile utilizzare Exchange Online PowerShell solo per eseguire le procedure descritte in questo articolo. Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -131,7 +131,7 @@ Set-MailboxJunkEmailConfiguration <MailboxIdentity> -BlockedSendersAndDomains <E
 
 Per immettere più valori e sovrascrivere le voci esistenti per i parametri _BlockedSendersAndDomains_ e _TrustedSendersAndDomains,_ utilizzare la sintassi seguente: `"<Value1>","<Value2>"...` . Per aggiungere o rimuovere uno o più valori senza influire sulle altre voci esistenti, utilizzare la sintassi seguente: `@{Add="<Value1>","<Value2>"... ; Remove="<Value3>","<Value4>...}`
 
-In questo esempio vengono configurate le impostazioni seguenti per la raccolta degli elenchi indirizzi attendibili nella cassetta postale di Ori Ep altro:
+In questo esempio vengono configurate le seguenti impostazioni per la raccolta degli elenchi indirizzi attendibili nella cassetta postale di Ori Ep altro:
 
 - Aggiungere il valore shopping@fabrikam.com all'elenco Mittenti bloccati.
 
@@ -181,7 +181,7 @@ Per abilitare, disabilitare e configurare le impostazioni del filtro per la post
 
 Quando il filtro per la posta indesiderata di Outlook è impostato sul valore predefinito No **automatic filtering** in **Home** \> **Junk** \> **E-Mail Options,** Outlook non tenta di classificare i messaggi come posta indesiderata, ma utilizza comunque \> l'insieme degli elenchi indirizzi attendibili (elenco Mittenti attendibili, Destinatari attendibili e Mittenti bloccati) per spostare i messaggi nella cartella Posta indesiderata dopo il recapito. Per ulteriori informazioni su queste impostazioni, vedere [Overview of the Junk Email Filter.](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089)
 
-Quando il filtro per la posta indesiderata di Outlook è impostato su **Basso** o **Alto,** il filtro per la posta indesiderata di Outlook utilizza la propria tecnologia di filtro SmartScreen per identificare e spostare la posta indesiderata nella cartella Posta indesiderata. Questa classificazione della posta indesiderata è separata dal livello di probabilità di posta indesiderata (SCL) determinato da EOP. Infatti, Outlook ignora il livello di probabilità di posta indesiderata da EOP (a meno che EOP non ha contrassegnato il messaggio per ignorare il filtro posta indesiderata) e utilizza i propri criteri per determinare se il messaggio è posta indesiderata. Naturalmente, è possibile che il verdetto di posta indesiderata di EOP e Outlook sia lo stesso. Per ulteriori informazioni su queste impostazioni, vedere [Change the level of protection in the Junk Email Filter.](https://support.microsoft.com/office/e89c12d8-9d61-4320-8c57-d982c8d52f6b)
+Quando il filtro per la posta indesiderata di Outlook è impostato su **Basso** o **Alto,** il filtro per la posta indesiderata di Outlook utilizza la propria tecnologia di filtro SmartScreen per identificare e spostare la posta indesiderata nella cartella Posta indesiderata. Questa classificazione della posta indesiderata è separata dal livello di probabilità di posta indesiderata (SCL) determinato da EOP. Infatti, Outlook ignora il livello di probabilità di posta indesiderata da EOP (a meno che EOP non ha contrassegnato il messaggio per ignorare il filtro posta indesiderata) e utilizza i propri criteri per determinare se il messaggio è posta indesiderata. Naturalmente, è possibile che il verdetto di posta indesiderata da EOP e Outlook sia lo stesso. Per ulteriori informazioni su queste impostazioni, vedere [Change the level of protection in the Junk Email Filter.](https://support.microsoft.com/office/e89c12d8-9d61-4320-8c57-d982c8d52f6b)
 
 > [!NOTE]
 > A novembre 2016, Microsoft ha smesso di produrre aggiornamenti delle definizioni di posta indesiderata per i filtri SmartScreen in Exchange e Outlook. Le definizioni di posta indesiderata di SmartScreen esistenti sono state lasciata sul posto, ma è probabile che la loro efficacia si degradi nel tempo. Per ulteriori informazioni, vedere [Eliminazione del supporto per SmartScreen in Outlook ed Exchange](https://techcommunity.microsoft.com/t5/exchange-team-blog/deprecating-support-for-smartscreen-in-outlook-and-exchange/ba-p/605332).

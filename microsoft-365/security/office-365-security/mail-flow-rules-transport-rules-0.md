@@ -13,21 +13,21 @@ ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: È possibile utilizzare le regole del flusso di posta (regole di trasporto) per identificare ed eseguire azioni sui messaggi che attraversano l'organizzazione.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3f873d4e46c9e3b7f085e03a9fbb19e5914317fa
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: d189a9f4b21828fa4e23f7d5a325b4e9c56259bc
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167036"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289938"
 ---
 # <a name="mail-flow-rules-transport-rules-in-standalone-eop"></a>Regole del flusso di posta (regole di trasporto) in Exchange Online Protection autonomo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Nelle organizzazioni Exchange Online Protection (EOP) autonome senza cassette postali di Exchange Online, è possibile utilizzare le regole del flusso di posta (note anche come regole di trasporto) per identificare ed eseguire azioni sui messaggi che passano attraverso l'organizzazione.
 
@@ -51,7 +51,7 @@ Per implementare determinati criteri di messaggistica usando le regole del fluss
 
 - [Riduzione dei pericoli di malware tramite blocco dei file allegati in Exchange Online Protection](reducing-malware-threats-through-file-attachment-blocking-in-exchange-online-pro.md)
 
-- [Definire le regole per crittografare o decrittografare i messaggi di posta elettronica in Office 365](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)
+- [Definire le regole per crittografare o decrittografare i messaggi di posta elettronica in Office 365](../../compliance/define-mail-flow-rules-to-encrypt-email.md)
 
 Nel video seguente viene fornita una dimostrazione della configurazione delle regole del flusso di posta in EOP autonomo.
 
@@ -122,7 +122,7 @@ Esistono diversi tipi di messaggi che passano attraverso un'organizzazione. Nell
 |Tipo di messaggio|È possibile applicare una regola?|
 |---|---|
 |**Messaggi normali:** messaggi che contengono un singolo corpo del messaggio RTF, HTML o testo normale oppure un insieme di corpi dei messaggi a più parti o alternativo.|Sì|
-|**Crittografia dei messaggi di Office 365:** messaggi crittografati dalla crittografia dei messaggi di Office 365 in Office 365. Per ulteriori informazioni, vedere [Crittografia in Office 365](https://docs.microsoft.com/microsoft-365/compliance/encryption).|Le regole possono sempre accedere alle intestazioni delle buste ed elaborare i messaggi in base alle condizioni che esaminano quelle intestazioni. <p> Affinché una regola possa esaminare o modificare i contenuti di un messaggio crittografato, è necessario verificare che la crittografia di trasporto sia abilitata (Obbligatoria o Facoltativa; l'impostazione predefinita è Facoltativa). Per ulteriori informazioni, vedere [Definire le regole per crittografare o decrittografare i messaggi di posta elettronica in Office 365.](https://docs.microsoft.com/microsoft-365/compliance/define-mail-flow-rules-to-encrypt-email)|
+|**Crittografia dei messaggi di Office 365:** messaggi crittografati dalla crittografia dei messaggi di Office 365 in Office 365. Per ulteriori informazioni, vedere [Crittografia in Office 365](../../compliance/encryption.md).|Le regole possono sempre accedere alle intestazioni delle buste ed elaborare i messaggi in base alle condizioni che esaminano quelle intestazioni. <p> Affinché una regola possa esaminare o modificare i contenuti di un messaggio crittografato, è necessario verificare che la crittografia di trasporto sia abilitata (Obbligatoria o Facoltativa; l'impostazione predefinita è Facoltativa). Per ulteriori informazioni, vedere [Definire le regole per crittografare o decrittografare i messaggi di posta elettronica in Office 365.](../../compliance/define-mail-flow-rules-to-encrypt-email.md)|
 |**Messaggi crittografati (S/MIME)**|Le regole possono accedere solo alle intestazioni delle buste ed elaborare i messaggi in base alle condizioni che esaminano quelle intestazioni. <p> Le regole con le condizioni che richiedono l'analisi del contenuto del messaggio oppure le azioni che modificano i contenuti del messaggio non possono essere elaborate.|
 |**Messaggi protetti da RMS:** messaggi a cui è stato applicato un criterio Active Directory Rights Management Services (AD RMS) o Azure Rights Management (RMS).|Le regole possono sempre accedere alle intestazioni delle buste ed elaborare i messaggi in base alle condizioni che esaminano quelle intestazioni. <p> Affinché una regola possa esaminare o modificare i contenuti di un messaggio protetto da RMS, è necessario verificare che la crittografia di trasporto sia abilitata (Obbligatoria o Facoltativa; l'impostazione predefinita è Facoltativa).|
 |**Messaggi con firma non crittografata:** messaggi firmati ma non crittografati.|Sì|

@@ -14,19 +14,19 @@ description: Informazioni su come gestire gli utenti di posta elettronica in Exc
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 34edafea7567da04094ea386d469d3d27937eee5
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 6a0dc1c0c343be77c6d6f713ee6b68a08a4fe5be
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166394"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289914"
 ---
 # <a name="manage-mail-users-in-standalone-eop"></a>Gestire gli utenti di posta in Exchange Online Protection autonomo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
--  [Exchange Online Protection autonomo](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection autonomo](exchange-online-protection-overview.md)
 
 Nelle organizzazioni Exchange Online Protection (EOP) autonome senza cassette postali di Exchange Online, gli utenti di posta sono il tipo fondamentale di account utente. Un utente di posta dispone delle credenziali dell'account nell'organizzazione EOP autonoma e può accedere alle risorse (con autorizzazioni assegnate). L'indirizzo di posta elettronica di un utente di posta elettronica è esterno (ad esempio, nell'ambiente di posta elettronica locale).
 
@@ -37,7 +37,7 @@ Il metodo consigliato per creare e gestire gli utenti di posta in EOP autonomo �
 
 Per le organizzazioni EOP autonome con un numero limitato di utenti, è possibile aggiungere e gestire utenti di posta nell'interfaccia di amministrazione di Exchange (EAC) o in PowerShell EOP autonomo come descritto in questo articolo.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Per aprire l'interfaccia di amministrazione di Exchange ( EAC), vedere Interfaccia di amministrazione [di Exchange in EOP autonomo.](exchange-admin-center-in-exchange-online-protection-eop.md)
 
@@ -45,12 +45,12 @@ Per le organizzazioni EOP autonome con un numero limitato di utenti, è possibil
 
 - Quando si creano utenti di posta elettronica in PowerShell di EOP, è possibile che si verifichino limitazioni. Inoltre, i cmdlet di EOP PowerShell utilizzano un metodo di elaborazione batch che determina un ritardo di propagazione di alcuni minuti prima che i risultati dei comandi siano visibili.
 
-- Per eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni in Exchange Online Protection. In particolare, sono necessari i ruoli Creazione destinatario di posta **(creazione)** e Destinatari di  posta **elettronica** (modifica), assegnati ai gruppi di ruoli Gestione organizzazione **(amministratori** globali) e Gestione destinatari per impostazione predefinita. Per ulteriori informazioni, vedere [Permissions in standalone EOP](feature-permissions-in-eop.md) and [Use the EAC modify the list of members in role groups.](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
+- Per eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni in Exchange Online Protection. In particolare, sono necessari i ruoli Creazione **destinatario** di posta (creazione) e Destinatari di  posta **elettronica** (modifica), assegnati ai gruppi di ruoli Gestione organizzazione **(amministratori** globali) e Gestione destinatari per impostazione predefinita. Per ulteriori informazioni, vedere [Permissions in standalone EOP](feature-permissions-in-eop.md) and [Use the EAC modify the list of members in role groups.](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
 
 - Per informazioni sui tasti di scelta rapida applicabili alle procedure descritte in questo articolo, vedere Tasti di scelta rapida per l'interfaccia di amministrazione di [Exchange in Exchange Online.](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
 
 > [!TIP]
-> Problemi? È possibile richiedere supporto nei forum di Exchange. Visitare il forum [di Exchange Online Protection.](https://go.microsoft.com/fwlink/p/?linkId=285351)
+> Problemi? È possibile richiedere supporto nei forum di Exchange. Visitare il forum [di Exchange Online Protection.](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE)
 
 ## <a name="use-the-exchange-admin-center-to-manage-mail-users"></a>Utilizzare l'interfaccia di amministrazione di Exchange per gestire gli utenti di posta
 
@@ -82,7 +82,7 @@ Per le organizzazioni EOP autonome con un numero limitato di utenti, è possibil
 
 1. Nell'interfaccia di amministrazione di Exchange accedere a **Destinatari** \> **Contatti**.
 
-2. Selezionare l'utente di posta elettronica che si desidera modificare e quindi fare clic **sull'icona Modifica** ![ ](../../media/ITPro-EAC-AddIcon.png) modifica.
+2. Selezionare l'utente di posta che si desidera modificare e quindi fare clic **sull'icona** ![ ](../../media/ITPro-EAC-AddIcon.png) Modifica.
 
 3. Nella pagina delle proprietà dell'utente di posta elettronica visualizzata fare clic su una delle schede seguenti per visualizzare o modificare le proprietà.
 

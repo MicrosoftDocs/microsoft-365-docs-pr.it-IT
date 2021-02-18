@@ -15,21 +15,21 @@ ms.custom:
 description: Gli amministratori possono imparare a usare le informazioni dettagliate sulle regole del flusso di posta lente nel Centro sicurezza & conformità per identificare e correggere regole del flusso di posta inefficienti o interrotte (note anche come regole di trasporto) nell'organizzazione.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f7f084735decda922b5bcc57c029f2b384114d30
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: a50fa0d36cb025f5d0627a2212254b9d08dc5d9c
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150785"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290694"
 ---
 # <a name="fix-slow-mail-flow-rules-insight-in-the-security--compliance-center"></a>Correggere le informazioni dettagliate sulle regole del flusso di posta lente nel Centro sicurezza & conformità
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Le regole del flusso di posta inefficienti (note anche come regole di trasporto) possono causare ritardi nel flusso di posta per l'organizzazione. Queste informazioni dettagliate segnalano le regole del flusso di posta che hanno un impatto sul flusso di posta dell'organizzazione. Di seguito sono riportati alcuni esempi di questi tipi di regole:
 

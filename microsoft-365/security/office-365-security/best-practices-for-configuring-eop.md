@@ -12,19 +12,19 @@ ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Seguire queste procedure consigliate per Exchange Online Protection (EOP) autonomo per configurare se stessi per l'esito positivo ed evitare errori di configurazione comuni.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1a38454ceaba7f95dff172335dc374530efca20a
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: c64a9592d93ef046ad1c023a49bf378ccf6cf503
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165932"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290834"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>Procedure consigliate per la configurazione di EOP autonomo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
--  [Exchange Online Protection autonomo](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection autonomo](exchange-online-protection-overview.md)
 
 Seguire queste procedure consigliate per Exchange Online Protection (EOP) autonomo per configurare se stessi per l'esito positivo ed evitare errori di configurazione comuni. In questo argomento si presuppone che il processo di installazione sia già stato completato. Se l'installazione di EOP non è stata completata, vedere [Installazione del servizio EOP](set-up-your-eop-service.md).
 
@@ -46,7 +46,7 @@ Queste impostazioni riguardano un'ampia gamma di funzionalità esterne ai criter
 
 ****
 
-|Nome caratteristica di sicurezza|Standard|Strict|Aggiungere commenti|
+|Nome caratteristica di sicurezza|Standard|Strict|Commento|
 |---|---|---|---|
 |[Configurazione di SPF per evitare lo spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|Sì|Sì||
 |[Utilizzare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato in Office 365](use-dkim-to-validate-outbound-email.md)|Sì|Sì||
@@ -62,7 +62,7 @@ Queste impostazioni riguardano un'ampia gamma di funzionalità esterne ai criter
 |[Connettività PowerShell](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell)|Disattivato|Disattivato|Disponibile per gli utenti delle cassette postali o gli utenti di posta (oggetti utente restituiti dal cmdlet [Get-User).](https://docs.microsoft.com/powershell/module/exchange/get-user)|
 |Usare [spoof intelligence per](learn-about-spoof-intelligence.md) aggiungere mittenti all'elenco Consenti|Sì|Sì||
 |[Blocco edge basato su directory (DBEB)](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|Abilitato|Abilitato|Tipo di dominio = Autorevole|
-|[Configurare l'autenticazione a più fattori per tutti gli account amministratore](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication)|Abilitato|Abilitato||
+|[Configurare l'autenticazione a più fattori per tutti gli account amministratore](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)|Abilitato|Abilitato||
 |
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi

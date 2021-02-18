@@ -14,21 +14,21 @@ ms.custom:
 description: Gli amministratori possono usare la traccia dei messaggi nel Centro sicurezza & conformità per scoprire cosa è successo ai messaggi.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1b0c27d8e0f43557be537d6e7c9fa096441cc229
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 1ce26f7a6cdad15019e2b40eb6f8746e5723d4f0
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150280"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290658"
 ---
 # <a name="message-trace-in-the-security--compliance-center"></a>Traccia messaggio nel Centro sicurezza e conformità
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 ## <a name="message-trace-features"></a>Funzionalità di traccia dei messaggi
 
@@ -118,11 +118,11 @@ Il valore predefinito è **2 giorni,** ma è possibile specificare intervalli di
 - **Recupero dello stato:** Il messaggio è stato ricevuto di recente da Microsoft 365, ma non sono ancora disponibili altri dati sullo stato. Check back in a few minutes.
 
 > [!NOTE]
-> I valori **In sospeso,** **In** quarantena **e** Filtro come posta indesiderata sono disponibili solo per le ricerche di meno di 10 giorni. Inoltre, potrebbe esserci un ritardo di 5-10 minuti tra lo stato di recapito effettivo e quello segnalato.
+> I valori **In sospeso,** **In** quarantena **e** Filtro come posta indesiderata sono disponibili solo per le ricerche di meno di 10 giorni. Potrebbe inoltre verificarsi un ritardo di 5-10 minuti tra lo stato di recapito effettivo e quello segnalato.
 
 #### <a name="message-id"></a>ID messaggio
 
-Questo è l'ID del messaggio Internet (noto anche come ID client) che si trova nel campo di intestazione **Message-ID:** nell'intestazione del messaggio. Gli utenti possono fornire questo valore per analizzare messaggi specifici.
+Questo è l'ID del messaggio Internet (noto anche come ID client) trovato nel campo di intestazione **Message-ID:** nell'intestazione del messaggio. Gli utenti possono fornire questo valore per analizzare messaggi specifici.
 
 Questo valore rimane immutato per tutta la durata del messaggio. Per i messaggi creati in Microsoft 365 o Exchange, il valore è nel formato , incluse le `<GUID@ServerFQDN>` parentesi angolari ( \< \> ). Ad esempio, `<d9683b4c-127b-413a-ae2e-fa7dfb32c69d@DM3NAM06BG401.Eop-nam06.prod.protection.outlook.com>`. Altri sistemi di messaggistica potrebbero utilizzare valori o sintassi diversi. Questo valore deve essere univoco, ma non tutti i sistemi di posta elettronica seguono rigorosamente questo requisito. Se il **campo di intestazione Message-ID:** non esiste o è vuoto per i messaggi in arrivo da origini esterne, viene assegnato un valore arbitrario.
 
@@ -249,13 +249,13 @@ I rapporti di riepilogo avanzato disponibili (completati) sono disponibili nella
 
 - **sender_address**: l'indirizzo di posta elettronica del mittente (*dominio alias).* @ 
 
-- **Recipient_status**: lo stato del recapito del messaggio al destinatario. Se il messaggio è stato inviato a più destinatari, mostrerà tutti i destinatari e lo stato corrispondente per ognuno, nel formato: \<*email address*\> ## \<*status*\> . Ad esempio:
+- **Recipient_status**: lo stato del recapito del messaggio al destinatario. Se il messaggio è stato inviato a più destinatari, verranno visualizzati tutti i destinatari e lo stato corrispondente per ognuno, nel formato: \<*email address*\> ## \<*status*\> . Ad esempio:
 
   - **##Receive, Invia** indica che il messaggio è stato ricevuto dal servizio e inviato alla destinazione prevista.
 
   - **##Receive, Fail** indica che il messaggio è stato ricevuto dal servizio ma il recapito alla destinazione prevista non è riuscito.
 
-  - **##Receive, Recapita** indica che il messaggio è stato ricevuto dal servizio ed è stato recapitato alla cassetta postale del destinatario.
+  - **##Receive, Recapita** significa che il messaggio è stato ricevuto dal servizio ed è stato recapitato alla cassetta postale del destinatario.
 
 - **message_subject**: i primi 256 caratteri del campo **Oggetto del** messaggio.
 
@@ -301,7 +301,7 @@ I rapporti estesi disponibili (completati) sono disponibili nella sezione **Rela
 
   - `SMTP`
 
-- **event_id**: corrispondono ai valori **dell'evento Messaggio** illustrati nella sezione Trovare i [record correlati per questo messaggio.](#find-related-records-for-this-message)
+- **event_id**: corrispondono ai valori **dell'evento Messaggio** illustrati nella sezione Trovare i [record correlati per questo](#find-related-records-for-this-message) messaggio.
 
 - **internal_message_id**: identificatore del messaggio assegnato dal server Exchange Online che sta attualmente elaborando il messaggio.
 
@@ -331,7 +331,7 @@ I rapporti estesi disponibili (completati) sono disponibili nella sezione **Rela
 
 - **message_info**: informazioni aggiuntive sul messaggio. Ad esempio:
 
-  - Data e ora di origine del messaggio in formato UTC per `DELIVER` ed `SEND` eventi. Data-ora di origine è l'ora in cui il messaggio è entrato per la prima volta nell'organizzazione di Exchange Online. La data e l'ora UTC sono rappresentate nel formato data-ora ISO 8601: , dove = anno, = mese, = giorno, indica l'inizio del componente `yyyy-mm-ddThh:mm:ss.fffZ` `yyyy` `mm` `dd` `T` ora, `hh` = ora, `mm` = minuto, = secondo, `ss` = `fff` `Z` `Zulu` frazioni di secondo e indica , che è un altro modo per indicare UTC.
+  - Data e ora di origine del messaggio in formato UTC per `DELIVER` ed `SEND` eventi. Data-ora di origine è l'ora in cui il messaggio è entrato per la prima volta nell'organizzazione di Exchange Online. La data-ora UTC è rappresentata nel formato data-ora ISO 8601: , dove = anno, = mese, = giorno, indica l'inizio del componente `yyyy-mm-ddThh:mm:ss.fffZ` `yyyy` `mm` `dd` `T` ora, `hh` = ora, `mm` = minuto, = secondo, `ss` = `fff` `Z` `Zulu` frazioni di secondo e indica , che è un altro modo per indicare UTC.
 
   - Errori di autenticazione. Ad esempio, è possibile visualizzare il valore e il tipo di autenticazione `11a` utilizzato quando si è verificato l'errore di autenticazione.
 
@@ -397,7 +397,7 @@ Un **custom_data** che inizia con `S:AMA` deriva dall'agente di filtro antimalwa
 |`File=<filename>`|Il nome del file che contiene malware.|
 |
 
-Un esempio **custom_data** valore per un messaggio contenente malware è simile al seguente:
+Un esempio **custom_data** per un messaggio contenente malware è simile al seguente:
 
 `S:AMA=SUM|v=1|action=b|error=|atch=1;S:AMA=EV|engine=M|v=1|sig=1.155.974.0|name=DOS/Test_File|file=filename;S:AMA=EV|engine=A|v=1|sig=201707282038|name=Test_File|file=filename`
 

@@ -14,21 +14,21 @@ ms.custom:
 description: Gli amministratori possono imparare a usare le informazioni dettagliate sulla risoluzione dei possibili loop di posta nel dashboard del flusso di posta nel Centro sicurezza & conformità per identificare e correggere i loop di posta nell'organizzazione.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3c9607f053fb5011b8c8af3c8bb2073a9d022909
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 7fde0041dfb9901cb0a327eafec78d98a40b4cb9
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150232"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290562"
 ---
 # <a name="fix-possible-mail-loop-insight-in-the-security--compliance-center"></a>Correggere le possibili informazioni dettagliate sul ciclo di posta nel Centro sicurezza & conformità
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 I cicli di posta non sono erri perché:
 

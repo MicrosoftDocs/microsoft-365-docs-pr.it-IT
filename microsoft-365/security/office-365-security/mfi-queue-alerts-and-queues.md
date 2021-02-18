@@ -12,21 +12,21 @@ ms.assetid: 37640c80-ce6f-47e2-afd1-bc1d3c50e637
 description: Gli amministratori possono imparare a usare il widget Code nel dashboard del flusso di posta nel Centro sicurezza & conformità per monitorare il flusso di posta non riuscito alle organizzazioni locali o partner tramite connettori in uscita.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 94e8a1f3b54c3738c21e94ba85ae4f1d3f953498
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: ca8ee5ea37fa5a63b8035572059e419c400d66f3
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150172"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289438"
 ---
 # <a name="queues-insight-in-the-security--compliance-center"></a>Informazioni dettagliate sulle code nel Centro sicurezza & conformità
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Quando non è possibile inviare messaggi dall'organizzazione ai server di posta elettronica locali o partner tramite connettori, i messaggi vengono accodati in Microsoft 365. Esempi comuni che causano questa condizione sono:
 

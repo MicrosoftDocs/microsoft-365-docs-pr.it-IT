@@ -17,21 +17,21 @@ ms.custom:
 description: Gli amministratori possono conoscere le opzioni disponibili e preferite per consentire i messaggi in ingresso in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 92229f0324eb9c05b233e5c4b0bc9f1bd7ab2e39
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: ddcd6240cfc80350920999f9fc1e8ea188834553
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165560"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289712"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Creare elenchi di mittenti attendibili in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Se si è un cliente di Microsoft 365 con cassette postali in Exchange Online o un cliente autonomo di Exchange Online Protection (EOP) senza cassette postali di Exchange Online, EOP offre diversi modi per garantire che gli utenti ricevano la posta elettronica da mittenti attendibili. Queste opzioni includono le regole del flusso di posta di Exchange (note anche come regole di trasporto), i mittenti attendibili di Outlook, l'elenco indirizzi IP consentiti (filtro connessioni) e gli elenchi di mittenti consentiti o gli elenchi di domini consentiti nei criteri di protezione dalla posta indesiderata. Collettivamente, è possibile pensare a queste opzioni come _elenchi di mittenti attendibili._
 
@@ -158,6 +158,6 @@ Per impedire che il messaggio venga filtrato, è possibile eseguire le operazion
 
 - Aggiungere blueyonder@news.blueyonderairlines.com `5322.From` (l'indirizzo) come mittente sicuro di Outlook.
 
-- [Utilizzare una regola del flusso di](#recommended-use-mail-flow-rules) posta con una condizione che consente di cercare i messaggi da blueyonder@news.blueyonderairlines.com (l'indirizzo, blueyonder.airlines@margiestravel.com `5322.From` (il ) o `5321.MailFrom` entrambi.
+- [Utilizzare una regola del flusso di](#recommended-use-mail-flow-rules) posta con una condizione che consente di cercare i messaggi provenienti da blueyonder@news.blueyonderairlines.com (l'indirizzo, blueyonder.airlines@margiestravel.com `5322.From` (il ) o `5321.MailFrom` entrambi.
 
 Per ulteriori informazioni, vedere [Creare elenchi di mittenti attendibili in EOP.](create-safe-sender-lists-in-office-365.md)

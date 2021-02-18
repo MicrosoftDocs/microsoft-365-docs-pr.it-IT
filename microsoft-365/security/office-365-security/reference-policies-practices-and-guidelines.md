@@ -17,21 +17,21 @@ ms.collection:
 description: Microsoft ha sviluppato diversi criteri, procedure e adottato diverse procedure consigliate del settore per proteggere gli utenti da posta elettronica abusiva, indesiderata o dannosa.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 01df2e8c1cc8a8ca68688377c4cad6ade91b5623
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 1065fdef5f804214ca48f7ca54170e6e417490d7
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166856"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289206"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Informazioni di riferimento: criteri, procedure e linee guida
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Microsoft si impegna a fornire l'esperienza utente più attendibile sul Web. Di conseguenza, Microsoft ha sviluppato diversi criteri, procedure e adottato diverse procedure consigliate del settore per proteggere gli utenti da posta elettronica abusiva, indesiderata o dannosa. I mittenti che tentano di inviare messaggi di posta elettronica agli utenti devono assicurarsi di comprendere appieno e di seguire le indicazioni fornite in questo articolo per aiutare in questo sforzo ed evitare potenziali problemi di recapito.
 
@@ -67,7 +67,7 @@ Inoltre, i server di posta elettronica che si connettono a Microsoft 365 devono 
 
 - Dopo aver specificato un codice di risposta di errore SMTP numerico compreso tra 500 e 599 (noto anche come risposta di mancato recapito permanente o rapporto di mancato recapito), il mittente non deve tentare di ritrasmettere il messaggio a tale destinatario.
 
-- Dopo più risposte di mancato recapito, il mittente deve cessare ulteriori tentativi di inviare messaggi di posta elettronica a tale destinatario.
+- Dopo più risposte di mancato recapito, il mittente deve cessare ulteriori tentativi di invio di posta elettronica a tale destinatario.
 
 - I messaggi non devono essere trasmessi tramite server proxy o relay di posta elettronica non sicuri.
 

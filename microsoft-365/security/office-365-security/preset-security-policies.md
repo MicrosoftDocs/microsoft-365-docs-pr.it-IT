@@ -15,21 +15,21 @@ ms.collection:
 description: Gli amministratori possono imparare ad applicare le impostazioni dei criteri Standard e Strict tra le funzionalità di protezione di Exchange Online Protection (EOP) e Microsoft Defender per Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f57b388716eca02741ba48b3e6b47b7cf9f28884
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: e8f254f2a1ea2dcf1a4b51594a5c340e91cb3f15
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150083"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290776"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Criteri di sicurezza preimpostati in EOP e Microsoft Defender per Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 I criteri di sicurezza preimpostati forniscono una posizione centralizzata per l'applicazione di tutti i criteri di posta indesiderata, malware e phishing consigliati agli utenti contemporaneamente. Le impostazioni dei criteri non sono configurabili. Vengono invece impostati da Microsoft e si basano sulle osservazioni e sulle esperienze dei datacenter per trovare un equilibrio tra mantenere i contenuti dannosi lontano dagli utenti senza interrompere il loro lavoro.
 
@@ -103,9 +103,9 @@ In altre parole, le  impostazioni del criterio di protezione Strict sostituiscon
 
 ## <a name="assign-preset-security-policies-to-users"></a>Assegnare criteri di sicurezza preimpostati agli utenti
 
-### <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+### <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla pagina **Criteri di sicurezza preimpostati,** utilizzare <https://protection.office.com/presetSecurityPolicies> .
+- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **Criteri di sicurezza preimpostati,** utilizzare <https://protection.office.com/presetSecurityPolicies> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -115,7 +115,7 @@ In altre parole, le  impostazioni del criterio di protezione Strict sostituiscon
 
   Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 
-  **Nota:** l'aggiunta di utenti al ruolo Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft  365 offre agli utenti le autorizzazioni necessarie nel Centro sicurezza & e conformità e le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  **Nota:** l'aggiunta di utenti al ruolo Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft  365 offre agli utenti le autorizzazioni necessarie nel Centro sicurezza & e conformità e le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
 
 ### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>Usare il Centro sicurezza & conformità per assegnare criteri di sicurezza preimpostati agli utenti
 

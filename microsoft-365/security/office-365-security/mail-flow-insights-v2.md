@@ -13,21 +13,21 @@ description: Gli amministratori possono ottenere informazioni dettagliate e repo
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b65e235e3446fa62bca1c9f8aef73f2387b1140b
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 7432eca577fb264126b9fc8f10bdd83de32711cf
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167096"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289676"
 ---
 # <a name="mail-flow-insights-in-the-security--compliance-center"></a>Informazioni dettagliate sul flusso di posta nel Centro sicurezza e conformità
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Gli amministratori possono usare il dashboard del flusso di posta nel Centro sicurezza & conformità per individuare tendenze, approfondimenti e intraprendere azioni per risolvere i problemi relativi al flusso di posta nell'organizzazione.
 
@@ -37,7 +37,7 @@ Le informazioni dettagliate disponibili sono:
 
 - [Informazioni dettagliate sui messaggi inoltrati automaticamente](mfi-auto-forwarded-messages-report.md)
 
-- [Correggere le possibili informazioni dettagliate sul ciclo di posta](mfi-mail-loop-insight.md)<sup>1</sup>
+- [Correggere le possibili informazioni dettagliate sul ciclo di](mfi-mail-loop-insight.md)<sup>posta 1</sup>
 
 - [Correggere le informazioni dettagliate sulle regole del flusso di](mfi-slow-mail-flow-rules-insight.md)posta lento<sup>1</sup>
 

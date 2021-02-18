@@ -19,21 +19,21 @@ description: Gli amministratori possono visualizzare le domande frequenti e le r
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 019f1c103ef1aaf7641072cd1259d22e83f0de4c
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 8496ae4f1702bb63328be0c494d8829c9ddd8cf2
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166928"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289402"
 ---
 # <a name="quarantined-messages-faq"></a>Domande frequenti sui messaggi in quarantena
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 In questo argomento vengono fornite le domande frequenti e le risposte sui messaggi di posta elettronica in quarantena per le organizzazioni di Microsoft 365 con cassette postali in Exchange Online o organizzazioni exchange Online Protection (EOP) autonome senza cassette postali di Exchange Online.
 

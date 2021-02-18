@@ -12,21 +12,21 @@ ms.assetid: ''
 description: Gli amministratori possono imparare a usare le informazioni dettagliate sui nuovi utenti che inoltrano la posta elettronica nel Centro sicurezza & conformità per analizzare quando gli utenti dell'organizzazione inoltrano i messaggi a nuovi domini.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7b86d726979991a55e7d4e43bf3581a4a664ee4f
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 9706951df480d07f4a6311e99cab5c9f404e999e
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150256"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290822"
 ---
 # <a name="new-users-forwarding-email-insight-in-the-security--compliance-center"></a>Nuovi utenti che inoltrano informazioni dettagliate sulla posta elettronica nel Centro sicurezza & conformità
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 È sospetto quando i nuovi account utente nell'organizzazione iniziano improvvisamente ad inoltrare i messaggi di posta elettronica ai domini esterni.
 

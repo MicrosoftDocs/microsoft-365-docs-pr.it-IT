@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: Gli amministratori possono imparare a usare i tag di quarantena per controllare le attività che gli utenti sono in grado di eseguire sui messaggi in quarantena.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6f18ad6ce1c8b12d38aef377ab663ca679a703e5
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 207f22c9acaa183e195f5a2ee33be65cdf4991dd
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928903"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289414"
 ---
 # <a name="quarantine-tags"></a>Tag per la quarantena
 
@@ -258,7 +258,7 @@ Le istruzioni complete per la creazione e la modifica dei criteri di protezione 
 
 5. Al termine, fare clic su **Salva**.
 
-#### <a name="assign-quarantine-tags-in-anti-spam-policies-in-powershell"></a>Assegnare tag di quarantena nei criteri di protezione dalla posta indesiderata in PowerShell
+#### <a name="assign-quarantine-tags-in-anti-spam-policies-in-powershell"></a>Assegnare tag di quarantena nei criteri di protezione da posta indesiderata in PowerShell
 
 Se si preferisce utilizzare PowerShell per assegnare tag di quarantena nei criteri di protezione dalla posta indesiderata, connettersi a PowerShell di Exchange Online o PowerShell di Exchange Online Protection e utilizzare la sintassi seguente:
 
@@ -268,7 +268,7 @@ Se si preferisce utilizzare PowerShell per assegnare tag di quarantena nei crite
 
 **Note**:
 
-- Il valore predefinito per il parametro _HighConfidencePhishAction_ è Quarantine, quindi non è necessario impostare l'azione di quarantena per i rilevamenti di phishing ad alta probabilità nei nuovi criteri di protezione dalla posta indesiderata. Per tutti gli altri verdetti del filtro posta indesiderata nei criteri di protezione da posta indesiderata nuovi o esistenti, il tag di quarantena è efficace solo se il valore dell'azione è Quarantena. Per visualizzare i valori delle azioni nei criteri di protezione da posta indesiderata esistenti, eseguire il comando seguente:
+- Il valore predefinito per il parametro _HighConfidencePhishAction_ è Quarantena, quindi non è necessario impostare l'azione di quarantena per i rilevamenti di phishing ad alta probabilità nei nuovi criteri di protezione dalla posta indesiderata. Per tutti gli altri verdetti del filtro della posta indesiderata nei criteri di protezione da posta indesiderata nuovi o esistenti, il tag di quarantena è efficace solo se il valore dell'azione è Quarantine. Per visualizzare i valori delle azioni nei criteri di protezione da posta indesiderata esistenti, eseguire il comando seguente:
 
   ```powershell
   Get-HostedContentFilterPolicy | Format-Table Name,*SpamAction,HighConfidencePhishAction
@@ -311,7 +311,7 @@ Le impostazioni globali per i tag di quarantena consentono di personalizzare le 
 
 3. Nel riquadro **a comparsa delle impostazioni di** notifica della quarantena che si apre, configurare alcune o tutte le impostazioni seguenti:
 
-   - **Usa il logo aziendale:** selezionare questa opzione per sostituire il logo Microsoft predefinito utilizzato nella parte superiore delle notifiche di posta indesiderata dell'utente finale. Prima di eseguire questa operazione, è necessario seguire le istruzioni in Personalizzare il tema di [Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/setup/customize-your-organization-theme) per l'organizzazione per caricare il logo personalizzato.
+   - **Usa il logo aziendale:** selezionare questa opzione per sostituire il logo Microsoft predefinito utilizzato nella parte superiore delle notifiche di posta indesiderata dell'utente finale. Prima di eseguire questa operazione, è necessario seguire le istruzioni in Personalizzare il tema di [Microsoft 365](../../admin/setup/customize-your-organization-theme.md) per l'organizzazione per caricare il logo personalizzato.
 
      Lo screenshot seguente mostra un logo personalizzato in una notifica di posta indesiderata dell'utente finale:
 
@@ -375,7 +375,7 @@ Per informazioni dettagliate su sintassi e parametri, vedere [Get-HostedContentF
 
 **Note**:
 
-- Non è possibile rimuovere i tag di quarantena predefiniti.
+- Non è possibile rimuovere i tag di quarantena incorporati.
 
 - Prima di rimuovere un tag di quarantena personalizzato, verificare che non sia in uso. Ad esempio, eseguire il comando seguente in PowerShell:
 
@@ -434,7 +434,7 @@ Se il tag di quarantena assegna le **autorizzazioni accesso** limitato, gli uten
 
   ![Pulsanti disponibili nei dettagli del messaggio in quarantena se il tag di quarantena assegna all'utente autorizzazioni di accesso limitato](../../media/quarantine-tags-quarantined-message-details-limited-access.png)
 
-- **Notifiche di posta indesiderata dell'utente finale:** sono disponibili i pulsanti seguenti:
+- **Notifiche di posta indesiderata dell'utente finale**: sono disponibili i pulsanti seguenti:
   - **Blocca mittente**
   - **Verifica**
 
@@ -454,7 +454,7 @@ Se il tag di quarantena assegna le **autorizzazioni accesso** completo (tutte le
 
   ![Pulsanti disponibili nei dettagli del messaggio in quarantena se il tag di quarantena assegna all'utente le autorizzazioni di accesso completo](../../media/quarantine-tags-quarantined-message-details-full-access.png)
 
-- **Notifiche di posta indesiderata dell'utente finale:** sono disponibili i pulsanti seguenti:
+- **Notifiche di posta indesiderata dell'utente finale**: sono disponibili i pulsanti seguenti:
   - **Blocca mittente**
   - **Rilascio**
   - **Verifica**
@@ -472,7 +472,7 @@ Se il tag di quarantena assegna le **autorizzazioni accesso** completo (tutte le
 
 - **Dettagli messaggio in quarantena:**
   - **Autorizzazione Consenti mittente** abilitata: il **pulsante Consenti mittente** è disponibile.
-  - **Autorizzazione Consenti mittente** disabilitata: **il pulsante** Consenti mittente non è disponibile.
+  - **Autorizzazione Consenti mittente** disabilitata: il **pulsante** Consenti mittente non è disponibile.
 
 - **Notifiche di posta indesiderata dell'utente finale**: Nessun effetto.
 
@@ -508,7 +508,7 @@ Per ulteriori informazioni sull'elenco Mittenti bloccati, vedere [Block messages
 
 - **Dettagli messaggio in quarantena:**
   - **Autorizzazione anteprima** abilitata: **il pulsante Anteprima** messaggio è disponibile.
-  - **Autorizzazione** anteprima disabilitata: **il pulsante Anteprima** messaggio non è disponibile.
+  - **Autorizzazione anteprima** disabilitata: **il pulsante Anteprima** messaggio non è disponibile.
 
 - **Notifiche di posta indesiderata dell'utente finale**: Nessun effetto.
 

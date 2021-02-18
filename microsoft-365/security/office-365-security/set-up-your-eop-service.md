@@ -15,19 +15,19 @@ ms.assetid: d74c6ddf-11b0-43ee-b298-8bb0340895f0
 description: Gli amministratori possono imparare a configurare Exchange Online Protection (EOP) autonomo per proteggere gli ambienti di posta elettronica locali.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 42952259da4086c4e147fb1a69fc081659dcc7e2
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: de3c40a15a69eb2430c9c9b0473a983ef7c5354f
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166208"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50290466"
 ---
 # <a name="set-up-your-standalone-eop-service"></a>Configurare il servizio EOP autonomo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
--  [Exchange Online Protection autonomo](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection autonomo](exchange-online-protection-overview.md)
 
 In questo argomento viene illustrato come configurare Exchange Online Protection (EOP) autonomo. Se si è arrivati qui dalla configurazione guidata dei domini di Office 365, tornare alla configurazione guidata dei domini di Office 365 se non si desidera utilizzare Exchange Online Protection. Per ulteriori informazioni su come configurare i connettori, vedere [Configure mail flow using connectors in Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
 
@@ -47,16 +47,16 @@ In questo argomento viene illustrato come configurare Exchange Online Protection
 - Per informazioni sui tasti di scelta rapida applicabili alle procedure descritte in questo articolo, vedere Tasti di scelta rapida per l'interfaccia di amministrazione di [Exchange in Exchange Online.](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
 
 > [!TIP]
-> Problemi? Chiedere assistenza nel forum [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Problemi? Chiedere assistenza nel forum [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE).
 
 ## <a name="step-1-use-the-microsoft-365-admin-center-to-add-and-verify-your-domain"></a>Passaggio 1: Usare l'interfaccia di amministrazione di Microsoft 365 per aggiungere e verificare il dominio
 
-1. Nell'interfaccia di amministrazione di [Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/admin-overview/about-the-admin-center)passare a **Configurazione** per aggiungere il dominio al servizio.
+1. Nell'interfaccia di amministrazione di [Microsoft 365](../../admin/admin-overview/about-the-admin-center.md)passare a **Configurazione** per aggiungere il dominio al servizio.
 
 2. Seguire la procedura di aggiunta dei record DNS applicabili al provider che ospita i DNS per verificare la proprietà del dominio.
 
 > [!TIP]
-> Aggiungere un dominio [a Office 365](https://docs.microsoft.com/microsoft-365/admin/setup/add-domain) e creare record DNS presso qualsiasi provider di hosting DNS per [Office 365](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) sono risorse utili per fare riferimento quando si aggiunge il dominio al servizio e si configura DNS.
+> Aggiungere un dominio [a Office 365](../../admin/setup/add-domain.md) e creare record DNS presso qualsiasi provider di hosting DNS per [Office 365](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md) sono risorse utili per fare riferimento quando si aggiunge il dominio al servizio e si configura DNS.
 
 ## <a name="step-2-add-recipients-and-optionally-enable-dbeb"></a>Passaggio 2: aggiunta di destinatari e abilitazione DBEB (scelta facoltativa)
 
@@ -72,7 +72,7 @@ Controllare il flusso di posta tra il servizio e l'ambiente. Per ulteriori infor
 
 ## <a name="step-4-allow-inbound-port-25-smtp-access"></a>Passaggio 4: Consentire alla porta in ingresso 25 accesso SMTP
 
-Dopo aver configurato i connettori, attendere 72 ore per consentire la propagazione degli aggiornamenti dei record DNS. Successivamente, limitare il traffico SMTP della porta 25 in ingresso sul firewall o sui server di posta in modo da accettare solo la posta proveniente da datacenter EOP, specificamente dagli indirizzi IP elencati in [Indirizzi IP di EOP (Exchange Online Protection)](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges). In tal modo si protegge l'ambiente locale limitando l'ambito dei messaggi in arrivo che è possibile ricevere. Inoltre, se sul server di posta sono state definite impostazioni per il controllo degli indirizzi IP a cui è consentita la connessione per l'inoltro della posta, è necessario aggiornare anche tali impostazioni.
+Dopo aver configurato i connettori, attendere 72 ore per consentire la propagazione degli aggiornamenti dei record DNS. Successivamente, limitare il traffico SMTP della porta 25 in ingresso sul firewall o sui server di posta in modo da accettare solo la posta proveniente da datacenter EOP, specificamente dagli indirizzi IP elencati in [Indirizzi IP di EOP (Exchange Online Protection)](../../enterprise/urls-and-ip-address-ranges.md). In tal modo si protegge l'ambiente locale limitando l'ambito dei messaggi in arrivo che è possibile ricevere. Inoltre, se sul server di posta sono state definite impostazioni per il controllo degli indirizzi IP a cui è consentita la connessione per l'inoltro della posta, è necessario aggiornare anche tali impostazioni.
 
 > [!TIP]
 > Configurare le impostazioni sul server SMTP con una tempo di timeout di connessione pari a 60 secondi. Questa impostazione è accettabile per la maggior parte delle situazioni, consentendo un certo ritardo nel caso di un messaggio inviato con un allegato di grandi dimensioni, ad esempio.
@@ -85,7 +85,7 @@ Se non si desidera spostare i messaggi nella cartella Posta indesiderata di ogni
 
 ## <a name="step-6-use-the-microsoft-365-admin-center-to-point-your-mx-record-to-eop"></a>Passaggio 6: Usare l'interfaccia di amministrazione di Microsoft 365 per puntare il record MX a EOP
 
-Seguire i passaggi di configurazione del dominio per aggiornare il record MX per il dominio, in modo che la posta elettronica in ingresso passi attraverso EOP. Assicurarsi di puntare il record MX direttamente a EOP anziché disporre di un servizio di filtro di terze parti che inoltra la posta elettronica a EOP. Per ulteriori informazioni, è possibile fare di nuovo riferimento [a Creare record DNS per Office 365.](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)
+Seguire i passaggi di configurazione del dominio per aggiornare il record MX per il dominio, in modo che la posta elettronica in ingresso passi attraverso EOP. Assicurarsi di puntare il record MX direttamente a EOP anziché disporre di un servizio di filtro di terze parti che inoltra la posta elettronica a EOP. Per ulteriori informazioni, è possibile fare di nuovo riferimento [a Creare record DNS per Office 365.](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
 
 > [!NOTE]
 > Se è necessario puntare il record MX a un altro server o servizio che si trova davanti a EOP, vedere [Enhanced Filtering for Connectors in Exchange Online.](https://docs.microsoft.com/Exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)

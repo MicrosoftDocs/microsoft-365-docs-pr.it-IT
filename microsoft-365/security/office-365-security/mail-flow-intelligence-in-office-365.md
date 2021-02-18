@@ -14,21 +14,21 @@ ms.assetid: c29f75e5-c16e-409e-a123-430691e38276
 description: Gli amministratori possono conoscere i codici di errore associati al recapito dei messaggi utilizzando i connettori (noti anche come intelligence del flusso di posta).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 864b69bf650a4e460376ae988a9ce4abc4c61ad4
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 32a98459ce3d3494e576b10d5c5b097393ee2335
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167072"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289664"
 ---
 # <a name="mail-flow-intelligence-in-eop"></a>Intelligence del flusso di posta in Exchange Online Protection
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Nelle organizzazioni di Microsoft 365 con cassette postali in Exchange Online o nelle organizzazioni Exchange Online Protection (EOP) autonome senza cassette postali di Exchange Online, in genere si utilizza un connettore per instradare i messaggi di posta elettronica da EOP all'ambiente di posta elettronica locale. È inoltre possibile utilizzare un connettore per instradare i messaggi da Microsoft 365 a un'organizzazione partner. Quando Microsoft 365 non è in grado di recapitare questi messaggi tramite il connettore, vengono accodati in Microsoft 365. Microsoft 365 continuerà a ripetere il recapito per ogni messaggio per 24 ore. Dopo 24 ore, il messaggio in coda scade e il messaggio viene restituito al mittente originale in un rapporto di mancato recapito (noto anche come NDR o notifica di mancato recapito).
 
@@ -70,7 +70,7 @@ In genere, questo errore indica che Microsoft 365 ha riscontrato un errore di co
 
 ### <a name="how-do-i-fix-error-code-450-44316"></a>Come si risolve il codice di errore 450 4.4.316?
 
-- Se nell'ambiente locale sono presenti cassette postali, è necessario modificare le impostazioni del firewall per consentire le connessioni dagli indirizzi IP di Microsoft 365 sulla porta TCP 25 ai server di posta elettronica locali. Per un elenco degli indirizzi IP di Microsoft 365, vedere URL e intervalli [di indirizzi IP di Microsoft 365.](https://docs.microsoft.com/microsoft-365/enterprise/urls-and-ip-address-ranges)
+- Se nell'ambiente locale sono presenti cassette postali, è necessario modificare le impostazioni del firewall per consentire le connessioni dagli indirizzi IP di Microsoft 365 sulla porta TCP 25 ai server di posta elettronica locali. Per un elenco degli indirizzi IP di Microsoft 365, vedere URL e intervalli [di indirizzi IP di Microsoft 365.](../../enterprise/urls-and-ip-address-ranges.md)
 
 - Se non devono essere recapitati altri messaggi all'ambiente locale, fare clic su Correggi ora nell'avviso **in** modo che Microsoft 365 possa rifiutare immediatamente i messaggi con destinatari non validi. Questo consente di ridurre il rischio di superare la quota dell'organizzazione per i destinatari non validi, che possono compromettere il recapito dei messaggi normali. In alternativa, è possibile utilizzare le istruzioni seguenti per risolvere manualmente il problema:
 

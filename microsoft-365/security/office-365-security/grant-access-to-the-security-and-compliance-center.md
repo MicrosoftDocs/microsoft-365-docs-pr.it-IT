@@ -20,27 +20,27 @@ description: Gli utenti devono disporre delle autorizzazioni nel Centro sicurezz
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9e19825ce0f8224b2aee8e1419ef5d1ad425aadb
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: e1a619b184c575e3750b2499adc661627b4d27d6
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165416"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289878"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Concedere agli utenti l'accesso al Centro sicurezza e conformità
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Gli utenti devono disporre delle autorizzazioni nel Centro sicurezza & conformità prima di poter gestire qualsiasi funzionalità di sicurezza o conformità. In quanto amministratore globale o membro del gruppo di ruoli OrganizationManagement nel Centro sicurezza & conformità, è possibile concedere queste autorizzazioni agli utenti. Gli utenti potranno solo gestire le funzionalità di sicurezza o conformità per le quali è stato concesso loro l'accesso.
 
 Per ulteriori informazioni sulle diverse autorizzazioni che è possibile concedere agli utenti nel Centro sicurezza & conformità, vedere Autorizzazioni nel Centro [sicurezza & conformità.](permissions-in-the-security-and-compliance-center.md)
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Per completare i passaggi descritti in questo articolo, è necessario essere un amministratore globale o un membro del gruppo di ruoli OrganizationManagement nel Centro sicurezza & conformità.
 

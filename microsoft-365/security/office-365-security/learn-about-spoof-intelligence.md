@@ -17,24 +17,24 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Gli amministratori possono ottenere informazioni sulla spoof intelligence in Exchange Online Protection (EOP), dove è possibile consentire o bloccare specifici mittenti falsificati.
+description: Gli amministratori possono ottenere informazioni sulla spoof intelligence in Exchange Online Protection (EOP), dove è possibile consentire o bloccare mittenti falsificati specifici.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 55a744cf2d226e72e8d84f6eb125f2baf9b9d3a0
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 2a65400d1b48abfc6ac0e4dd38a8245dd7b4f87b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167264"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289688"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>Configurare spoof intelligence in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Nelle organizzazioni di Microsoft 365 con cassette postali in Exchange Online o nelle organizzazioni Exchange Online Protection (EOP) autonome senza cassette postali di Exchange Online, i messaggi di posta elettronica in ingresso vengono automaticamente protetti dallo spoofing da EOP a partire da ottobre 2018. EOP utilizza spoof intelligence come parte della difesa generale dell'organizzazione contro il phishing. Per ulteriori informazioni, vedere [Protezione anti-spoofing in EOP.](anti-spoofing-protection.md)
 
@@ -56,7 +56,7 @@ Spoof intelligence, e in particolare il criterio di spoof intelligence predefini
 
 È possibile gestire lo spoof intelligence nel Centro sicurezza & e conformità o in PowerShell (PowerShell di Exchange Online per le organizzazioni di Microsoft 365 con cassette postali in Exchange Online; PowerShell EOP autonomo per le organizzazioni senza cassette postali di Exchange Online).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **Impostazioni di filtro della posta indesiderata**, usare <https://protection.office.com/antispam>. Per passare direttamente alla pagina **anti-phishing,** utilizzare <https://protection.office.com/antiphishing> .
 
@@ -70,7 +70,7 @@ Spoof intelligence, e in particolare il criterio di spoof intelligence predefini
 
   **Note**:
 
-  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie nel centro Sicurezza e conformità _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie nel centro Sicurezza e conformità _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
   - Anche il gruppo di ruoli di **Gestione organizzazione sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre inoltre l'accesso di sola lettura a tale funzionalità.
 
 - Per le impostazioni consigliate per spoof intelligence, vedere [Impostazioni dei criteri anti-phishing predefiniti di EOP.](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings)
@@ -108,9 +108,9 @@ Spoof intelligence, e in particolare il criterio di spoof intelligence predefini
 
      - Nella scheda **Domini esterni** il valore contiene il dominio dell'utente falsificato, non l'indirizzo di posta elettronica completo.
 
-   - **Infrastruttura di invio:** il dominio trovato in una ricerca DNS inversa (record PTR) dell'indirizzo IP del server di posta elettronica di origine. Se l'indirizzo IP di origine non dispone di un record PTR, l'infrastruttura di invio viene identificata come \<source IP\> /24 (ad esempio, 192.168.100.100/24).
+   - **Infrastruttura di invio:** dominio trovato in una ricerca DNS inversa (record PTR) dell'indirizzo IP del server di posta elettronica di origine. Se l'indirizzo IP di origine non dispone di un record PTR, l'infrastruttura di invio viene identificata come \<source IP\> /24 (ad esempio, 192.168.100.100/24).
 
-     Per ulteriori informazioni sulle origini dei messaggi e sui mittenti dei messaggi, vedere [Una panoramica degli standard dei messaggi di posta elettronica.](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)
+     Per ulteriori informazioni sulle origini dei messaggi e sui mittenti dei messaggi, vedere [Panoramica degli standard dei messaggi di posta elettronica.](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)
 
    - **Numero di messaggi**: numero di messaggi dall'infrastruttura di invio all'organizzazione che contengono il mittente o i mittenti falsificati specificati negli ultimi 30 giorni.
 
@@ -127,7 +127,7 @@ Spoof intelligence, e in particolare il criterio di spoof intelligence predefini
 
    - **Ultimo messaggio visualizzato:** l'ultima data in cui un messaggio è stato ricevuto dall'infrastruttura di invio che contiene l'utente falsificato.
 
-   - **Consentito lo spoofing?**: I valori visualizzati qui sono:
+   - **Consentito lo spoofing?**: I valori visualizzati di seguito sono:
      - **Sì:** i messaggi provenienti dalla combinazione di utente falsificato e infrastruttura di invio sono consentiti e non trattati come messaggi di posta elettronica falsificati.
      - **No:** i messaggi provenienti dalla combinazione di utente falsificato e infrastruttura di invio vengono contrassegnati come falsificati. L'azione è controllata dal criterio anti-phishing predefinito o dai criteri anti-phishing personalizzati (il valore predefinito è Sposta messaggio **nella cartella Posta indesiderata).** Per ulteriori informazioni, vedere la sezione successiva.
 
@@ -187,7 +187,7 @@ Le opzioni di configurazione per spoof intelligence sono descritte nelle [impost
 
 Per verificare di aver configurato spoof intelligence con mittenti autorizzati e non autorizzati a effettuare lo spoofing e che siano state configurate le impostazioni di spoof intelligence, eseguire una delle operazioni seguenti:
 
-- Nel Centro sicurezza & conformità, andare  a Criteri di gestione delle minacce - Protezione da posta indesiderata espandere Criteri di spoofing intelligence selezionare Mostra i mittenti che ho già esaminato selezionare la scheda Domini o domini esterni e verificare il valore Consentito per \>  \>  \>  \> lo  \> **spoofing?**   per il mittente.
+- Nel Centro sicurezza & conformità, andare  a Criteri di gestione delle minacce - Protezione da posta indesiderata espandere Criteri di spoof intelligence selezionare Mostra i mittenti che ho già esaminato selezionare la scheda Domini o domini esterni e verificare il valore Consentito per \>  \>  \>  \> lo  \> **spoofing?**   per il mittente.
 
 - In PowerShell, eseguire i comandi seguenti per visualizzare i mittenti consentiti e non autorizzati a effettuare lo spoofing:
 

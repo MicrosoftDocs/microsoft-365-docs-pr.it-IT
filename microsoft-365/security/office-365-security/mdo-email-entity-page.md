@@ -7,7 +7,7 @@ author: msfttracyp
 manager: dansimp
 ms.date: 01/21/2021
 audience: ITPro
-ms.topic: How-to
+ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid: ''
@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: I clienti di Microsoft Defender per Office 365 E5 e ATP P1 e ATP P2 ora possono ottenere una visualizzazione a 360 gradi di ogni messaggio di posta elettronica con la pagina entità di posta elettronica.
-ms.openlocfilehash: 3b9198c9d91969d3b57f379d17de33a1c00d37f6
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 0a866b4d635e5c9e26b6fc065503b44ee2063e9f
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50143137"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289486"
 ---
 # <a name="the-email-entity-page"></a>Pagina Entità posta elettronica
 
@@ -30,7 +30,7 @@ ms.locfileid: "50143137"
 - [Usare le schede delle pagine dell'entità di posta elettronica](#use-email-entity-page-tabs)
 - [Novità della pagina dell'entità di posta elettronica](#new-to-the-email-entity-page)
 
-Gli amministratori di Microsoft Defender per Office 365 (o MDO) E5 e MDO P1 e P2 hanno una visualizzazione a 360 gradi della posta elettronica usando la pagina entità posta **elettronica.** Questa pagina di posta elettronica di accesso è stata creata per migliorare le informazioni recapitate nel riquadro a comparsa "Dettagli posta [elettronica" di Esplora minacce.](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer-views)
+Gli amministratori di Microsoft Defender per Office 365 (o MDO) E5 e MDO P1 e P2 hanno una visualizzazione a 360 gradi della posta elettronica usando la pagina entità posta **elettronica.** Questa pagina di posta elettronica di accesso è stata creata per migliorare le informazioni recapitate nel riquadro a comparsa "Dettagli posta [elettronica" di Esplora minacce.](threat-explorer-views.md)
 
 ## <a name="reach-the-email-entity-page"></a>Raggiungere la pagina dell'entità di posta elettronica
 
@@ -72,8 +72,8 @@ Le schede nella parte superiore della pagina dell'entità consentono di analizza
 
 1. **Sequenza** temporale: la visualizzazione della sequenza temporale per un messaggio di posta elettronica (in base alla sequenza temporale di Esplora minacce) mostra il recapito originale agli eventi di post-recapito che si verificano in un messaggio di posta elettronica. Per i messaggi di posta elettronica che non dispongono di azioni post-recapito, la visualizzazione mostra la riga di recapito originale nella visualizzazione sequenza temporale. Eventi come: Zero-hour auto purge (ZAP), Remediate, URL clicks, et cetera, from sources like: system, admin, and user, show up here, in the order in which they occurred.
 2. **Analisi:** l'analisi mostra i campi che consentono agli amministratori di analizzare in modo approfondito un messaggio di posta elettronica. Per i casi in cui gli amministratori devono comprendere meglio i dettagli di rilevamento, mittente/destinatario e autenticazione della posta elettronica, devono usare la scheda Analisi. I collegamenti per allegati e URL sono disponibili anche in questa pagina, in "Entità correlate". Sia gli allegati che le minacce identificate sono numerati qui e facendo clic si visualizzano direttamente le pagine Allegati e URL. Questa scheda ha anche un'opzione Visualizza intestazione per *visualizzare l'intestazione del messaggio di posta elettronica.* Gli amministratori possono confrontare qualsiasi dettaglio dalle intestazioni dei messaggi di posta elettronica, affiancati alle informazioni nel pannello principale, per maggiore chiarezza.
-3. **Allegati**: esamina gli allegati trovati nel messaggio di posta elettronica con altri dettagli trovati sugli allegati. Il numero di allegati visualizzati è attualmente limitato a 10. Si noti che i dettagli della detonazione per gli allegati trovati come dannosi sono mostrati qui.
-4. **URL:** questa scheda elenca gli URL trovati nel messaggio di posta elettronica con altri dettagli sugli URL. Il numero di URL è limitato a 10 al momento, ma questi 10 hanno la priorità per mostrare prima *gli URL dannosi.* La definizione della priorità consente di risparmiare tempo e congettura. Anche gli URL che sono stati trovati come dannosi e detonati verranno mostrati qui.
+3. **Allegati**: esamina gli allegati trovati nel messaggio di posta elettronica con altri dettagli trovati negli allegati. Il numero di allegati visualizzati è attualmente limitato a 10. Si noti che i dettagli della detonazione per gli allegati trovati come dannosi sono mostrati qui.
+4. **URL:** questa scheda elenca gli URL trovati nel messaggio di posta elettronica con altri dettagli sugli URL. Il numero di URL è limitato a 10 al momento, ma questi 10 hanno la priorità per mostrare prima *gli URL dannosi.* La definizione della priorità consente di risparmiare tempo e congettura. Anche gli URL che sono stati rilevati come dannosi e detonati verranno visualizzati qui.
 5. **Messaggi di posta elettronica simili:** questa scheda elenca tutti i messaggi di posta elettronica simili alla combinazione ID messaggio di rete *+ destinatario* specifica di questo messaggio di posta elettronica. La similarità si basa *solo sul corpo del* messaggio. Le determinazioni effettuate nei messaggi di posta elettronica per classificarle come "simili" non includono una considerazione degli *allegati.*
 
 ## <a name="new-to-the-email-entity-page"></a>Novità della pagina dell'entità di posta elettronica
@@ -81,18 +81,18 @@ Le schede nella parte superiore della pagina dell'entità consentono di analizza
 Esistono nuove funzionalità disponibili con questa pagina dell'entità di posta elettronica. Ecco l'elenco.
 
 ### <a name="email-preview-for-cloud-mailboxes"></a>Anteprima della posta elettronica per le cassette postali cloud
-Gli amministratori possono visualizzare in anteprima i messaggi di posta elettronica nelle ***cassette*** postali cloud, se i messaggi sono ancora presenti nel cloud. In caso di eliminazione recisa (da parte di un amministratore o utente) o ZAP (per la quarantena), i messaggi di posta elettronica non sono più presenti nella posizione cloud. In tal caso, gli amministratori non saranno in grado di visualizzare in anteprima i messaggi di posta elettronica specifici. I messaggi di posta elettronica che sono stati eliminati o in cui il recapito non è riuscito, non sono mai stati effettivamente effettuati nella cassetta postale. Di conseguenza, gli amministratori non saranno in grado di visualizzare in anteprima i messaggi di posta elettronica.
+Gli amministratori possono visualizzare in anteprima i messaggi di posta elettronica nelle ***cassette*** postali cloud, se i messaggi sono ancora presenti nel cloud. In caso di eliminazione recisa (da parte di un amministratore o utente) o ZAP (per la quarantena), i messaggi di posta elettronica non sono più presenti nella posizione cloud. In tal caso, gli amministratori non saranno in grado di visualizzare in anteprima i messaggi di posta elettronica specifici. I messaggi di posta elettronica che sono stati eliminati o in cui il recapito non è riuscito, non sono mai stati effettivamente resi nella cassetta postale. Di conseguenza, gli amministratori non saranno in grado di visualizzare in anteprima i messaggi di posta elettronica.
 
 > [!WARNING]
 >La visualizzazione in anteprima dei messaggi di posta elettronica richiede un ruolo speciale denominato ***Anteprima** _ da assegnare agli amministratori. È possibile aggiungere questo ruolo andando a _ Autorizzazioni *& ruoli** > **Ruoli** di collaborazione & posta elettronica in *security.microsoft.com* o Autorizzazioni **in** *protection.office.com*. Aggiungere il ***ruolo Anteprima*** a uno qualsiasi dei gruppi di ruoli o una copia di un gruppo di ruoli che consente agli amministratori dell'organizzazione di lavorare in Esplora minacce.
 
-### <a name="detonation-details"></a>Dettagli detonazione
+### <a name="detonation-details"></a>Dettagli della detonazione
 
 Questi dettagli sono specifici per gli URL e gli allegati di posta elettronica.
 
 Gli utenti visualizzano dettagli di detonazione arricchiti per allegati dannosi noti o collegamenti ipertestuali trovati nelle proprie cassette postali, tra cui la catena di detonazione, il riepilogo della detonazione, lo screenshot e i dettagli sul comportamento osservato per aiutare i clienti a capire perché l'allegato o l'URL è stato considerato dannoso e detonato.
  
-- *Catena di detonazione:* una detonazione di un singolo file o URL può attivare più detonazioni. La catena di detonazione tiene traccia del percorso delle detonazioni, incluso il file o l'URL dannoso originale che ha causato il verdetto, e tutti gli altri file o URL causati dalla detonazione. Questi URL o file allegati potrebbero non essere direttamente presenti nel messaggio di posta elettronica, ma l'inclusione di tale analisi è importante per determinare il motivo per cui il file o l'URL è stato trovato dannoso.
+- *Catena di detonazione:* una detonazione di un singolo file o URL può attivare più detonazioni. La catena di detonazione tiene traccia del percorso delle detonazioni, incluso il file o l'URL dannoso originale che ha causato il verdetto, e tutti gli altri file o URL causati dalla detonazione. Questi URL o file allegati potrebbero non essere presenti direttamente nel messaggio di posta elettronica, ma l'inclusione di tale analisi è importante per determinare il motivo per cui il file o l'URL è stato trovato dannoso.
 - *Riepilogo della detonazione:* fornisce informazioni su:
     - Intervallo di tempo di detonazione.
     - Verdetto del file allegato o dell'URL.
@@ -104,7 +104,7 @@ Gli utenti visualizzano dettagli di detonazione arricchiti per allegati dannosi 
 
 ### <a name="other-innovations"></a>Altre innovazioni
 
-*Tag:* si tratta di tag applicati agli utenti. Se l'utente è un destinatario, gli amministratori visualizzano un tag *destinatario.* Analogamente, se l'utente è un mittente, un tag *mittente.* Verrà visualizzato nel lato sinistro della pagina delle entità di posta  elettronica (nella parte descritta come fissa e quindi ancorata alla pagina).
+*Tag:* si tratta di tag applicati agli utenti. Se l'utente è un destinatario, gli amministratori visualizzano un tag *destinatario.* Analogamente, se l'utente è un mittente, un tag *del mittente.* Verrà visualizzato nel lato sinistro della pagina delle entità di posta  elettronica (nella parte descritta come fissa e quindi ancorata alla pagina).
 
 *Posizione di recapito più recente:* la posizione di recapito più recente è la posizione in cui un messaggio di posta elettronica è atterrato dopo le azioni di sistema come ZAP o le azioni di amministratore come Sposta nella posta eliminata, terminare. La posizione di recapito più recente non è progettata per informare gli amministratori della *posizione corrente del* messaggio. Ad esempio, se un utente elimina un messaggio o lo sposta nell'archivio, il percorso di recapito non verrà aggiornato. Tuttavia, se è stata eseguita un'azione di sistema e la posizione è stata aggiornata (ad esempio un ZAP che causa lo spostamento di un messaggio di posta elettronica in quarantena), il percorso di recapito più recente verrà aggiornato in Quarantena.
 
@@ -116,7 +116,7 @@ Gli utenti visualizzano dettagli di detonazione arricchiti per allegati dannosi 
     
 - *Regola cassetta postale indesiderata:*"Posta indesiderata" è una regola di Posta in arrivo nascosta abilitata per impostazione predefinita in ogni cassetta postale.
     - Quando la regola di posta indesiderata è abilitata nella cassetta postale, Exchange Online Protection (EOP) è in grado di spostare i messaggi nella posta indesiderata in base ad alcuni criteri. Lo spostamento può essere basato sull'azione di verdetto filtro posta indesiderata Sposta il messaggio nella cartella Posta indesiderata *o* sull'elenco Mittenti bloccati nella cassetta postale. La disabilitazione della regola di posta indesiderata impedisce il recapito dei messaggi nella cartella Posta indesiderata in base all'elenco *Mittenti* attendibili nella cassetta postale.
-    - Quando la regola  di posta indesiderata è disabilitata nella cassetta postale, EOP non può spostare i messaggi nella cartella Posta indesiderata in base all'azione di verdetto filtro posta indesiderata Sposta il messaggio nella cartella Posta indesiderata o sulla raccolta degli elenchi indirizzi attendibili nella cassetta postale.
+    - Quando la regola  di posta indesiderata è disabilitata nella cassetta postale, EOP non può spostare i messaggi nella cartella Posta indesiderata in base all'azione di filtro della posta indesiderata Sposta il messaggio nella cartella Posta indesiderata o nella raccolta degli elenchi indirizzi attendibili nella cassetta postale.
     
 - *Bulk Compliant Level (BCL):* il livello di reclamo in blocco (BCL) del messaggio. Un livello di probabilità di posta indesiderata più alto indica che è più probabile che un messaggio di posta inviata in blocco generi reclami (risultato naturale se è probabile che il messaggio di posta elettronica sia posta indesiderata).
     

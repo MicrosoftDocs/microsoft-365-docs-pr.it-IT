@@ -5,7 +5,7 @@ author: chrisda
 manager: dansimp
 ms.date: ''
 audience: ITPro
-ms.article: how-to
+ms.topic: article
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -15,21 +15,21 @@ ms.collection:
 description: Gli amministratori di Microsoft 365 possono imparare a recuperare da un attacco ransomware.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b834adb3d9ba5f85984e09b4bb1e4b48673c32f2
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 120dd9ae71f04d6921fae95965f56f0a08f1280c
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166904"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289306"
 ---
 # <a name="recover-from-a-ransomware-attack-in-microsoft-365"></a>Ripristino da un attacco ransomware in Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Anche se si prendono tutte le precauzioni necessarie per proteggere l'organizzazione, è comunque possibile essere vittima di un [attacco ransomware.](https://docs.microsoft.com/windows/security/threat-protection/intelligence/ransomware-malware) Ransomware è una grande azienda e gli attacchi sono molto sofisticati.
 
@@ -37,11 +37,11 @@ I passaggi descritti in questo articolo offrono la migliore possibilità di recu
 
 - Non c'è garanzia che il pagamento del riscatto restituirà l'accesso ai file. Infatti, pagare il riscatto può fare di te un obiettivo per più ransomware.
 
-  Se hai già pagato, ma hai recuperato senza usare la soluzione dell'autore dell'attacco, contatta la tua banca per verificare se è in grado di bloccare la transazione.
+  Se hai già pagato, ma hai recuperato senza usare la soluzione dell'utente malintenzionato, contatta la tua banca per verificare se può bloccare la transazione.
 
   Si consiglia inoltre di segnalare l'attacco ransomware alle forze dell'ordine, ai siti Web di segnalazione delle truffe e a Microsoft, come descritto più avanti in questo articolo.
 
-- È importante rispondere rapidamente all'attacco e alle sue conseguenze. Maggiore è il tempo di attesa, minore è la probabilità che sia possibile ripristinare i dati interessati.
+- È importante rispondere rapidamente all'attacco e alle sue conseguenze. Maggiore è il tempo di attesa, meno è probabile che sia possibile ripristinare i dati interessati.
 
 ## <a name="step-1-verify-your-backups"></a>Passaggio 1: Verificare i backup
 
@@ -67,7 +67,7 @@ La sospensione della sincronizzazione di OneDrive consente di proteggere i dati 
 
 ## <a name="step-3-remove-the-malware-from-the-affected-devices"></a>Passaggio 3: rimuovere il malware dai dispositivi interessati
 
-Eseguire un'analisi antivirus completa e corrente su tutti i computer e i dispositivi sospetti per rilevare e rimuovere il payload associato al ransomware.
+Eseguire un'analisi antivirus completa e corrente su tutti i computer e dispositivi sospetti per rilevare e rimuovere il payload associato al ransomware.
 
 Non dimenticare di analizzare i dispositivi che sincronizzano i dati o le destinazioni delle unità di rete mappate.
 
@@ -75,7 +75,7 @@ Non dimenticare di analizzare i dispositivi che sincronizzano i dati o le destin
 
 Un'alternativa che consente anche di rimuovere ransomware o malware è lo Strumento di rimozione [malware .](https://www.microsoft.com/download/details.aspx?id=9905)
 
-Se queste opzioni non funzionano, è possibile provare Windows Defender [offline](https://support.microsoft.com/help/17466) o risolvere i problemi relativi al rilevamento e alla rimozione [di malware.](https://support.microsoft.com/help/4466982)
+Se queste opzioni non funzionano, è possibile provare Windows Defender [offline](https://support.microsoft.com/help/17466) o risolvere i problemi relativi al rilevamento e [alla rimozione di malware.](https://support.microsoft.com/help/4466982)
 
 ## <a name="step-4-recover-files-on-a-cleaned-computer-or-device"></a>Passaggio 4: Recuperare i file in un computer o un dispositivo pulito
 
@@ -137,7 +137,7 @@ Se il tuo paese non è elencato, chiedi alle forze dell'ordine locali o federali
 
 ### <a name="submit-email-messages-to-microsoft"></a>Inviare messaggi di posta elettronica a Microsoft
 
-È possibile segnalare messaggi di phishing contenenti ransomware utilizzando uno dei diversi metodi disponibili. Per altre informazioni, vedere [Segnalazione di messaggi e file a Microsoft](report-junk-email-messages-to-microsoft.md).
+È possibile segnalare i messaggi di phishing che contengono ransomware utilizzando uno dei diversi metodi. Per altre informazioni, vedere [Segnalazione di messaggi e file a Microsoft](report-junk-email-messages-to-microsoft.md).
 
 ## <a name="see-also"></a>Vedere anche
 
@@ -159,7 +159,7 @@ Se il tuo paese non è elencato, chiedi alle forze dell'ordine locali o federali
 
 - [No mas, Samas: What's in this ransomware's modus operandi?](https://www.microsoft.com/security/blog/2016/03/17/no-mas-samas-whats-in-this-ransomwares-modus-operandi/)
 
-- [Malware bloccante, malware antimalware per evitarlo](https://www.microsoft.com/security/blog/2016/02/24/locky-malware-lucky-to-avoid-it/)
+- [Malware bloccante, antimalware per evitarlo](https://www.microsoft.com/security/blog/2016/02/24/locky-malware-lucky-to-avoid-it/)
 
 - [MSRT luglio 2016: Cerber ransomware](https://www.microsoft.com/security/blog/2016/07/12/msrt-july-2016-cerber-ransomware/)
 
