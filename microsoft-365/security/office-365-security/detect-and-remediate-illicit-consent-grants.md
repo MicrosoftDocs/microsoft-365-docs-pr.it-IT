@@ -18,20 +18,20 @@ description: Informazioni su come riconoscere e correggere l'attacco che concede
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a1c724bb3b201e0ddf1edea4794606c7083605e8
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 2a50ce58d91d2ff7b2e31e57830289c870364d9b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165440"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288288"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Rilevare e correggere le concessioni di consenso illecito
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 **Riepilogo**  Informazioni su come riconoscere e correggere l'attacco che concede il consenso illecito in Office 365.
 
@@ -143,10 +143,10 @@ Lo script produce un file denominato Permissions.csv. Eseguire la procedura segu
 
 ## <a name="determine-the-scope-of-the-attack"></a>Determinare l'ambito dell'attacco
 
-Dopo aver completato l'inventario dell'accesso alle applicazioni, esaminare il **log di controllo** per determinare l'ambito completo della violazione. Cercare gli utenti interessati, l'intervallo di tempo in cui l'applicazione illecita ha avuto accesso all'organizzazione e le autorizzazioni di cui disponeva l'app. È possibile eseguire ricerche **nel log di controllo** nel Centro sicurezza e conformità di Microsoft [365.](https://docs.microsoft.com/microsoft-365/compliance/search-the-audit-log-in-security-and-compliance)
+Dopo aver completato l'inventario dell'accesso alle applicazioni, esaminare il **log di controllo** per determinare l'ambito completo della violazione. Cercare gli utenti interessati, l'intervallo di tempo in cui l'applicazione illecita ha avuto accesso all'organizzazione e le autorizzazioni di cui disponeva l'app. È possibile eseguire ricerche **nel log di controllo** nel Centro sicurezza e conformità di Microsoft [365.](../../compliance/search-the-audit-log-in-security-and-compliance.md)
 
 > [!IMPORTANT]
-> [Per ottenere queste](https://docs.microsoft.com/microsoft-365/compliance/enable-mailbox-auditing) [informazioni,](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off) è necessario che il controllo delle cassette postali e il controllo attività per amministratori e utenti siano stati abilitati prima dell'attacco.
+> [Per ottenere queste](../../compliance/enable-mailbox-auditing.md) informazioni, [è](../../compliance/turn-audit-log-search-on-or-off.md) necessario che il controllo delle cassette postali e il controllo attività per amministratori e utenti siano stati abilitati prima dell'attacco.
 
 ## <a name="how-to-stop-and-remediate-an-illicit-consent-grant-attack"></a>Come arrestare e correggere un attacco di concessione del consenso illecito
 
@@ -168,7 +168,7 @@ Dopo aver identificato un'applicazione con autorizzazioni illecite, è possibile
 
 - Puoi anche disabilitare completamente l'accesso per l'account interessato, che a sua volta disabiliterà l'accesso dell'app ai dati in tale account. Questo non è l'ideale per la produttività dell'utente finale, naturalmente, ma se si sta lavorando per limitare rapidamente l'impatto, può essere una correzione a breve termine praticabile.
 
-- È possibile disattivare le applicazioni integrate per la tenancy. Si tratta di un passaggio drastico che disabilita la possibilità per gli utenti finali di concedere il consenso a livello di tenant. In questo modo si impedisce agli utenti di concedere inavvertitamente l'accesso a un'applicazione dannosa. Questo non è consigliabile perché comprova gravemente la capacità degli utenti di essere produttivi con applicazioni di terze parti. Puoi eseguire questa operazione seguendo la procedura descritta in Attivazione o disattivazione [delle app integrate.](https://docs.microsoft.com/microsoft-365/admin/misc/integrated-apps)
+- È possibile disattivare le applicazioni integrate per la tenancy. Si tratta di un passaggio drastico che disabilita la possibilità per gli utenti finali di concedere il consenso a livello di tenant. In questo modo si impedisce agli utenti di concedere inavvertitamente l'accesso a un'applicazione dannosa. Questo non è consigliabile perché comprova gravemente la capacità degli utenti di essere produttivi con applicazioni di terze parti. Puoi eseguire questa operazione seguendo la procedura descritta in Attivazione o disattivazione [delle app integrate.](../../admin/misc/user-consent.md)
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Proteggere Microsoft 365 come un professionista della sicurezza informatica
 

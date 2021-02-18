@@ -15,19 +15,19 @@ ms.custom:
 description: In questo articolo viene illustrato come spostare i domini e le impostazioni da un'organizzazione Microsoft Exchange Online Protection (EOP) (tenant) a un'altra.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4cfb5c31728174f7f7307e9492abc03a62f8bf9a
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 42a212c1826f63f9e7ed8395fe1d6b6564625b7b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150761"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287774"
 ---
 # <a name="move-domains-and-settings-from-one-eop-organization-to-another"></a>Spostare i domini e le impostazioni da un'organizzazione di Exchange Online Protection a un'altra
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
--  [Exchange Online Protection autonomo](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection autonomo](exchange-online-protection-overview.md)
 
 Talvolta la modifica dei requisiti aziendali può richiedere la divisione di un'organizzazione Microsoft Exchange Online Protection (EOP) (tenant) in due organizzazioni distinte, l'unione di due organizzazioni o il trasferimento dei domini e delle impostazioni di EOP da un'organizzazione a un'altra. Il trasferimento da un'organizzazione di EOP a un'altra organizzazione di EOP può essere complicato, ma con alcuni script di Windows PowerShell remoto di base e una piccola quantità di operazioni preliminari, può essere ottenuto con un'attività di manutenzione relativamente ridotta.
 
@@ -193,7 +193,7 @@ Ora è possibile esaminare e raccogliere le informazioni dall'interfaccia di amm
 
 5. Registrare il record MX o il record TXT che verrà utilizzato per verificare il dominio e completare l'installazione guidata.
 
-6. Aggiungere i record TXT di verifica ai record DNS. In questo modo sarà possibile verificare rapidamente i domini nell'organizzazione di origine dopo averli rimossi dall'organizzazione di destinazione. Per ulteriori informazioni sulla configurazione di DNS, vedere [Creare record DNS presso qualsiasi provider di hosting DNS per Microsoft 365.](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)
+6. Aggiungere i record TXT di verifica ai record DNS. In questo modo sarà possibile verificare rapidamente i domini nell'organizzazione di origine dopo averli rimossi dall'organizzazione di destinazione. Per ulteriori informazioni sulla configurazione di DNS, vedere [Creare record DNS presso qualsiasi provider di hosting DNS per Microsoft 365.](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
 
 ## <a name="step-3-force-senders-to-queue-mail"></a>Passaggio 3: Forzare i mittenti a inserire la posta in coda 
 
@@ -203,7 +203,7 @@ Per forzare i mittenti a inserire la posta in coda è possibile aggiornare i rec
 
 Un'altra opzione consiste nell'inserire un record MX non valido in ogni dominio in cui vengono conservati i record DNS del dominio (noto anche come servizio di hosting DNS). In questo modo il mittente inserirà la posta in coda e ritenterà (i tentativi di invio vengono ripetuti per 48 ore, ma tale periodo può variare da provider a provider). È possibile utilizzare invalid.outlook.com come una destinazione MX non valida. La riduzione del valore Durata (TTL) a 5 minuti nei record MX contribuirà alla distribuzione della modifica nei provider DNS più rapidamente.
 
-Per ulteriori informazioni sulla configurazione di DNS, vedere [Creare record DNS presso qualsiasi provider di hosting DNS per Microsoft 365.](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)
+Per ulteriori informazioni sulla configurazione di DNS, vedere [Creare record DNS presso qualsiasi provider di hosting DNS per Microsoft 365.](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
 
 > [!IMPORTANT]
 > Provider diversi inseriscono la posta in coda per periodi di tempo diversi. Sarà necessario configurare rapidamente il nuovo tenant e ripristinare le impostazioni DNS per evitare di inviare rapporti di mancato recapito (NDR) al mittente se scade la durata di accodamento.
@@ -933,4 +933,4 @@ if($HostedContentFilterPolicyCount -gt 0){
 
 ## <a name="step-8-revert-your-dns-settings-to-stop-mail-queuing"></a>Passaggio 8: Ripristinare le impostazioni DNS per interrompere l'accodamento della posta
 
-Se si è scelto di impostare i record MX su un indirizzo non valido per fare in modo che i mittenti accodino la posta durante la transizione, sarà necessario impostarli nuovamente sul valore corretto come specificato nell'interfaccia di [amministrazione.](https://admin.microsoft.com) Per ulteriori informazioni sulla configurazione di DNS, vedere [Creare record DNS presso qualsiasi provider di hosting DNS per Microsoft 365.](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)
+Se si è scelto di impostare i record MX su un indirizzo non valido per fare in modo che i mittenti accodino la posta durante la transizione, sarà necessario impostarli nuovamente sul valore corretto come specificato nell'interfaccia di [amministrazione.](https://admin.microsoft.com) Per ulteriori informazioni sulla configurazione di DNS, vedere [Creare record DNS presso qualsiasi provider di hosting DNS per Microsoft 365.](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)

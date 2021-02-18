@@ -17,20 +17,20 @@ ms.assetid: 3033614b-e23b-4f68-9701-f62525eafaab
 description: Utilizzare questa guida dettagliata alla distribuzione per creare e configurare un sito del team di SharePoint Online isolato in Microsoft Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1b1f0342afc92b4540330417ad0fc9cabe1dc8a8
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: d226a545c3f8dc274f02e5d54d39739fe5d981ea
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165500"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288348"
 ---
 # <a name="deploy-an-isolated-sharepoint-online-team-site"></a>Distribuire un sito del team di SharePoint Online isolato
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
  **Sintesi:** istruzioni dettagliate per distribuire un nuovo sito del team di SharePoint Online isolato.
 
@@ -108,11 +108,11 @@ In questo passaggio, eseguire la procedura riportata di seguito:
 
 Se si gestiscono account utente e gruppi tramite Servizi di dominio Active Directory, aggiungere gli utenti ai gruppi di accesso appropriati utilizzando le normali procedure di gestione di utenti e gruppi di Servizi di dominio Active Directory e attendere la sincronizzazione con l'abbonamento a Microsoft 365.
 
-Se si gestiscono account utente e gruppi tramite Office 365, è possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 o PowerShell. Se si dispone di nomi di gruppo duplicati per uno dei gruppi di accesso, è consigliabile usare l'interfaccia di amministrazione di Microsoft 365.
+Se si gestiscono account utente e gruppi tramite Office 365, è possibile usare l'interfaccia di amministrazione di Microsoft 365 o PowerShell. Se si dispone di nomi di gruppo duplicati per uno dei gruppi di accesso, è consigliabile usare l'interfaccia di amministrazione di Microsoft 365.
 
 Per l'interfaccia di amministrazione di Microsoft 365, accedere con un account utente a cui è stato assegnato il ruolo Amministratore account utente o Amministratore società e usare Gruppi per aggiungere gli account utente e i gruppi appropriati ai gruppi di accesso appropriati.
 
-Per PowerShell, [connettersi innanzitutto con il modulo Azure Active Directory PowerShell per Graph.](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Per PowerShell, [connettersi innanzitutto con il modulo Azure Active Directory PowerShell per Graph.](../../enterprise/connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
 
 Successivamente, utilizzare il seguente blocco di comandi per aggiungere un singolo account utente a un gruppo di accesso:
 

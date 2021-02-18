@@ -19,21 +19,21 @@ description: Gli amministratori possono conoscere i tipi di indirizzi di posta e
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e7c2cbec49082fbded857dde13f73516fd3e0fd5
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: f8ced200c2e521533c1dec8a9d0917add7ca058f
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167516"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287820"
 ---
 # <a name="how-eop-validates-the-from-address-to-prevent-phishing"></a>In che modo EOP convalida l'indirizzo Da per impedire il phishing
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Gli attacchi di phishing sono una minaccia costante per qualsiasi organizzazione di posta elettronica. Oltre a usare gli indirizzi [di](anti-spoofing-protection.md)posta elettronica dei mittenti contraffatti (falsificati), gli utenti malintenzionati spesso utilizzano valori nell'indirizzo mittente che violano gli standard Internet. Per evitare questo tipo di phishing, Exchange Online Protection (EOP) e Outlook.com ora richiedono che i messaggi in ingresso includano un indirizzo Da conforme a RFC, come descritto in questo articolo. Questa applicazione è stata abilitata a novembre 2017.
 

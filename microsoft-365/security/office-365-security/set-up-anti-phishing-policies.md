@@ -17,21 +17,21 @@ ms.custom:
 description: Gli amministratori possono conoscere i criteri anti-phishing disponibili in Exchange Online Protection (EOP) e Microsoft Defender per Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a97d95ab4d7cf0146ea6d6d008230ee6aa678d80
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 083fd4ae7e5564f2affeca73dd3d78a52657c5a7
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166382"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287318"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Criteri anti-phishing in Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 I criteri per configurare le impostazioni di protezione anti-phishing sono disponibili nelle organizzazioni di Microsoft 365 con cassette postali di Exchange Online, nelle organizzazioni di Exchange Online Protection (EOP) autonome senza cassette postali di Exchange Online e in Microsoft Defender per le organizzazioni di Office 365.
 
@@ -188,15 +188,15 @@ Le impostazioni di rappresentazione seguenti sono disponibili solo nei criteri a
 
   - **Reindirizzare il messaggio ad altri indirizzi di** posta elettronica: invia il messaggio ai destinatari specificati anziché ai destinatari previsti.
 
-  - **Spostare il messaggio nella cartella Posta indesiderata**: il messaggio viene recapitato nella cassetta postale e spostato nella cartella Posta indesiderata. In Exchange Online, il messaggio viene spostato nella cartella Posta indesiderata se la regola di posta indesiderata è abilitata nella cassetta postale (è abilitata per impostazione predefinita). Per ulteriori informazioni, vedere Configurare le impostazioni della posta indesiderata nelle [cassette postali di Exchange Online in Microsoft 365.](configure-junk-email-settings-on-exo-mailboxes.md)
+  - **Spostare il messaggio nella cartella Posta indesiderata**: il messaggio viene recapitato nella cassetta postale e spostato nella cartella Posta indesiderata. In Exchange Online, il messaggio viene spostato nella cartella Posta indesiderata se la regola di posta indesiderata è abilitata nella cassetta postale (è abilitata per impostazione predefinita). Per ulteriori informazioni, vedere Configurare le impostazioni di posta indesiderata nelle [cassette postali di Exchange Online in Microsoft 365.](configure-junk-email-settings-on-exo-mailboxes.md)
 
-    - **Mettere in quarantena il** messaggio: invia il messaggio in quarantena al posto dei destinatari previsti. Per informazioni sulla quarantena, vedere gli articoli seguenti:
+    - **Mettere in quarantena il** messaggio : invia il messaggio in quarantena anziché i destinatari previsti. Per informazioni sulla quarantena, vedere gli articoli seguenti:
 
     - [Quarantena in Microsoft 365](quarantine-email-messages.md)
     - [Gestire i messaggi e i file in quarantena come amministratore in Microsoft 365](manage-quarantined-messages-and-files.md)
     - [Trovare e rilasciare i messaggi in quarantena come utente in Microsoft 365](find-and-release-quarantined-messages-as-a-user.md)
 
-  - **Recapitare il messaggio e aggiungere altri** indirizzi alla riga Ccn: recapitare il messaggio ai destinatari previsti e recapitare automaticamente il messaggio ai destinatari specificati.
+  - **Recapita il messaggio e aggiungi** altri indirizzi alla riga Ccn: recapita il messaggio ai destinatari previsti e recapita automaticamente il messaggio ai destinatari specificati.
 
   - **Elimina il messaggio prima che venga recapitato:** elimina automaticamente l'intero messaggio, inclusi tutti gli allegati.
 
@@ -206,9 +206,10 @@ Le impostazioni di rappresentazione seguenti sono disponibili solo nei criteri a
   - **Domini rappresentati:** l'indirizzo del mittente contiene un dominio protetto.
   - **Caratteri insoliti:** l'indirizzo Da contiene set di caratteri insoliti (ad esempio, simboli matematici e testo o una combinazione di lettere maiuscole e minuscole) in un mittente o dominio protetto.
 
+
   > [!IMPORTANT]
   >
-  > Anche quando i suggerimenti per la sicurezza della rappresentazione sono disattivati, è consigliabile utilizzare una regola del flusso di posta (nota anche come regola  di trasporto) per aggiungere un'intestazione del messaggio denominata **X-MS-Exchange-EnableFirstContactSafetyTip** con valore abilitato ai messaggi.  Un suggerimento per la sicurezza informerà i destinatari la prima volta che riceveranno un messaggio dal mittente o se spesso non riceveranno messaggi dal mittente.
+  > Suggerimento per l'abilitazione di un suggerimento per la sicurezza che verrà visualizzato durante il primo contatto tra il mittente e il **destinatario:** anche quando i suggerimenti per la sicurezza della rappresentazione sono disattivati,   è consigliabile utilizzare una regola del flusso di posta (nota anche come regola di trasporto) per aggiungere un'intestazione del messaggio denominata **X-MS-Exchange-EnableFirstContactSafetyTip** con valore abilitato ai messaggi. Un suggerimento per la sicurezza informerà i destinatari la prima volta che riceveranno un messaggio dal mittente o se spesso non riceveranno messaggi dal mittente. Questa funzionalità aggiunge un ulteriore livello di protezione da potenziali attacchi di rappresentazione. 
   > :::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="Testo del suggerimento per la sicurezza per la protezione della rappresentazione con più destinatari.":::
 
 - **Intelligence delle cassette** postali: abilita o disabilita l'intelligenza artificiale (AI) che determina i modelli di posta elettronica degli utenti con i contatti frequenti. Questa impostazione consente all'intelligenza artificiale di distinguere tra messaggi di posta elettronica legittimi e falsificati da tali contatti. L'intelligence per le cassette postali è disponibile solo per le cassette postali di Exchange Online.
@@ -230,7 +231,7 @@ Le soglie di phishing avanzate seguenti sono disponibili solo nei criteri anti-p
 
 - **1 - Standard:** questo è il valore predefinito. La gravità dell'azione eseguita sul messaggio dipende dal grado di probabilità che il messaggio sia phishing (probabilità bassa, media, alta o molto alta). Ad esempio, ai messaggi identificati come phishing con un livello di sicurezza molto elevato vengono applicate le azioni più gravi, mentre ai messaggi identificati come phishing con un basso livello di probabilità vengono applicate azioni meno gravi.
 
-- **2 - Aggressivo:** i messaggi identificati come phishing con un elevato grado di sicurezza vengono considerati come se fossero identificati con un livello di probabilità molto elevato.
+- **2 - Aggressivo:** i messaggi identificati come phishing con un elevato grado di sicurezza vengono considerati come se fossero identificati con un livello di sicurezza molto elevato.
 
 - **3 - Più aggressivo:** i messaggi identificati come phishing con un grado di sicurezza medio o alto vengono considerati come se fossero identificati con un livello di sicurezza molto elevato.
 

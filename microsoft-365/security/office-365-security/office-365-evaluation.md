@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7c0bb1701cf030692bc98218b38be00cae57a2bd
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: 1d16c0afc675ba759e392c9fe9a44c42b89dbad0
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080702"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287654"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Valutare Microsoft Defender per Office 365
 
@@ -57,7 +57,7 @@ Con l'esperienza di configurazione semplificata, è possibile concentrarsi su:
 - Analisi del report per l'azione
 - Presentazione del risultato della valutazione
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 ### <a name="licensing"></a>Licenze
 
@@ -68,13 +68,13 @@ Per accedere alla valutazione, è necessario soddisfare i requisiti di licenza. 
 - Microsoft 365 E5, Sicurezza Microsoft 365 E5
 - Office 365 E5
 
-Se non si dispone di una di queste licenze, sarà necessario ottenere una licenza di valutazione.
+Se non hai una di queste licenze, dovrai ottenere una licenza di prova.
 
 #### <a name="trial"></a>Valutazione
 
-Per ottenere una licenza di valutazione per Microsoft Defender per  Office 365, è necessario disporre del ruolo di amministratore fatturazione o **amministratore globale.** Richiedere l'autorizzazione a un utente con il ruolo di amministratore globale. [Informazioni su abbonamenti e licenze](https://docs.microsoft.com/microsoft-365/commerce/licenses/subscriptions-and-licenses)
+Per ottenere una licenza di valutazione per Microsoft Defender per  Office 365, è necessario disporre del ruolo amministratore fatturazione o **amministratore globale.** Richiedere l'autorizzazione a un utente con il ruolo di amministratore globale. [Informazioni su abbonamenti e licenze](https://docs.microsoft.com/microsoft-365/commerce/licenses/subscriptions-and-licenses)
 
-Dopo aver ottenuto il ruolo appropriato, il percorso consigliato è ottenere una licenza di valutazione per Microsoft Defender per Office 365 (Piano 2) nell'interfaccia di amministrazione di Microsoft 365 andando a Fatturazione > Servizi di acquisto. La versione di valutazione include una versione di valutazione gratuita di 30 giorni per 25 licenze. [Ottenere una versione di valutazione per Microsoft Defender per Office 365 (Piano 2).](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)
+Dopo aver ottenuto il ruolo appropriato, il percorso consigliato è ottenere una licenza di valutazione per Microsoft Defender per Office 365 (Piano 2) nell'interfaccia di amministrazione di Microsoft 365 andando a Fatturazione > Purchase services. La versione di valutazione include una versione di valutazione gratuita di 30 giorni per 25 licenze. [Ottenere una versione di valutazione per Microsoft Defender per Office 365 (Piano 2).](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA)
 
 Avrai una finestra di 30 giorni con la valutazione per monitorare e segnalare le minacce avanzate. You'll also have the option to buy a paid subscription if you want the full Defender for Office 365 capabilities.
 
@@ -83,13 +83,13 @@ Avrai una finestra di 30 giorni con la valutazione per monitorare e segnalare le
 I ruoli di Exchange Online sono necessari per configurare Defender per Office 365 in modalità di valutazione.
 
 - [Informazioni sulle autorizzazioni in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
-- [Informazioni sull'assegnazione dei ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/assign-admin-roles)
+- [Informazioni sull'assegnazione dei ruoli di amministratore](../../admin/add-users/assign-admin-roles.md)
 
 Sono necessari i ruoli seguenti:
 
 |Attività|Ruolo|
 |---|---|
-|Ottenere una versione di valutazione gratuita o acquistare Microsoft Defender per Office 365 (Piano 2)|Ruolo di amministratore fatturazione O ruolo di amministratore globale|
+|Ottenere una versione di valutazione gratuita o acquistare Microsoft Defender per Office 365 (Piano 2)|Ruolo amministratore fatturazione O ruolo di amministratore globale|
 |Creare criteri di valutazione|Ruolo Domini accettati e remoti; Ruolo di amministratore della sicurezza|
 |Modificare i criteri di valutazione|Ruolo Domini accettati e remoti; Ruolo di amministratore della sicurezza|
 |Eliminare i criteri di valutazione|Ruolo Domini accettati e remoti; Ruolo di amministratore della sicurezza |

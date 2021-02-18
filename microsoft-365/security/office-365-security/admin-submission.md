@@ -19,20 +19,20 @@ ms.custom:
 description: Gli amministratori possono imparare a usare il portale Invii nel Centro sicurezza & conformità per inviare messaggi di posta elettronica sospetti, messaggi di phishing sospetti, posta indesiderata e altri messaggi, URL e file potenzialmente dannosi a Microsoft per l'analisi.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7a822909c318cb336c179b299aa64cd71dcca4d8
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 7b4e6dfcb5900ed41ad3ab0b44fada93599f0b4b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175872"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288790"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usare l'Invio dell'amministratore per inviare posta indesiderata sospetta, phishing, URL e file a Microsoft
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
 
 
 Nelle organizzazioni di Microsoft 365 con cassette postali in Exchange Online, gli amministratori possono usare il portale Invii nel Centro sicurezza & conformità per inviare messaggi di posta elettronica, URL e allegati a Microsoft per l'analisi.
@@ -49,9 +49,9 @@ Quando si invia un messaggio di posta elettronica, si riceverà:
 
 Per altri modi per inviare messaggi di posta elettronica, URL e allegati a Microsoft, vedere [Segnalare messaggi e file a Microsoft.](report-junk-email-messages-to-microsoft.md)
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla pagina **di** invio, usa <https://protection.office.com/reportsubmission> .
+- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **di** invio, usa <https://protection.office.com/reportsubmission> .
 
 - Per inviare messaggi e file a Microsoft, è necessario essere membri di uno dei seguenti gruppi di ruoli:
 
@@ -162,7 +162,7 @@ Fare clic sulla **scheda Posta** elettronica.
 
 #### <a name="admin-submission-rescan-details"></a>Dettagli di nuova analisi dell'invio da parte dell'amministratore
 
-I messaggi inviati negli invii di amministratori vengono di nuovo a scansione e i risultati vengono visualizzati nel riquadro a comparsa dei dettagli:
+I messaggi inviati negli invii di amministratori vengono nuovamente a scansione e i risultati vengono visualizzati nel riquadro a comparsa dei dettagli:
 
 - Se si è verificato un errore nell'autenticazione della posta elettronica del mittente al momento del recapito.
 - Informazioni su eventuali riscontri dei criteri che potrebbero aver influenzato o ignorato il verdetto di un messaggio.
@@ -184,7 +184,7 @@ Fare clic **sulla scheda URL.**
 - **Tipo di invio**
 - **Stato**<sup>\*</sup>
 
-  <sup>\*</sup> Se si fa clic su questo valore, le informazioni dettagliate vengono visualizzate in un riquadro a comparsa.
+  <sup>\*</sup> Se si fa clic su questo valore, vengono visualizzate informazioni dettagliate in un riquadro a comparsa.
 
 ### <a name="view-admin-attachment-submissions"></a>Visualizzare gli invii di allegati dell'amministratore
 
@@ -261,7 +261,7 @@ Quando un utente invia un messaggio di posta elettronica sospetto alla cassetta 
 
 ### <a name="submit-messages-to-microsoft-from-the-custom-mailbox"></a>Inviare messaggi a Microsoft dalla cassetta postale personalizzata
 
-Se la cassetta postale personalizzata è stata configurata per intercettare i messaggi segnalati dall'utente senza inviarli a Microsoft, è possibile trovare e inviare messaggi specifici a Microsoft per l'analisi. Questo consente di spostare in modo efficace un invio utente a un invio di amministratore.
+Se la cassetta postale personalizzata è stata configurata per intercettare i messaggi segnalati dall'utente senza inviarli a Microsoft, è possibile trovare e inviare messaggi specifici a Microsoft per l'analisi. In questo modo, l'invio di un utente viene spostato in un invio da amministratore.
 
 Nella scheda **Cassetta postale** personalizzata, selezionare un messaggio nell'elenco, fare clic sul pulsante **Azione** ed effettuare una delle seguenti selezioni:
 

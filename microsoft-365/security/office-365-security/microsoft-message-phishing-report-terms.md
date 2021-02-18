@@ -15,16 +15,16 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 hideEdit: true
-ms.openlocfilehash: a6c28bad5b79bc7459a1a00fabb6713b1759201d
-ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
+ms.openlocfilehash: 2b2b8a6215a653cee7ea67bafaadddc096abb911
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50032695"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288158"
 ---
 # <a name="microsoft-report-message-and-report-phishing-add-in-license-terms"></a>Condizioni di licenza di Segnalazione messaggi e Add-In phishing Microsoft
 
-## <a name="microsoft-software-license-terms-microsoft-report-message-and-report-phishing-add-in"></a>Condizioni di licenza software Microsoft: Componente aggiuntivo Segnala messaggio e Segnala phishing Microsoft
+## <a name="microsoft-software-license-terms-microsoft-report-message-and-report-phishing-add-in"></a>Condizioni di licenza software Microsoft: Componente aggiuntivo Segnala messaggio e segnala phishing Microsoft
 
 > [!IMPORTANT]
 > If you live in or are a business with a principal place of business based in the United States, please read Section 7, *Binding arbitration and class action waiver*. Descrive come vengono risolte le controversie.
@@ -42,11 +42,11 @@ Se rispetti queste condizioni di licenza, hai i diritti indicati di seguito. Uti
 
     1. **General.** You may install and use any number of copies of the software.
     1. **Third Party Software.** Il software può includere applicazioni di terze parti che Microsoft, non di terze parti, si conservino in licenza ai sensi del presente contratto. Qualsiasi avviso incluso per le applicazioni di terze parti è solo per le tue informazioni.
-    1. **Contratto di servizi Microsoft.** Alcune funzionalità del software forniscono l'accesso ai servizi online o si basano su di loro. L'uso di tali servizi (ma non del software) è disciplinato dalle condizioni e dalle informative sulla privacy separate nel Contratto di servizi Microsoft all'indirizzo [https://go.microsoft.com/fwlink/?linkid=398923](https://go.microsoft.com/fwlink/?linkid=398923) . Leggili. I servizi potrebbero non essere disponibili in tutte le aree geografiche.
+    1. **Contratto di servizi Microsoft.** Alcune funzionalità del software forniscono l'accesso ai servizi online o si basano su di loro. L'uso di tali servizi (ma non del software) è disciplinato dalle condizioni e dalle informative sulla privacy separate nel Contratto di servizi Microsoft all'indirizzo <https://www.microsoft.com/servicesagreement/> . Leggili. I servizi potrebbero non essere disponibili in tutte le aree geografiche.
 
-2. **DATA COLLECTION.** Il software può raccogliere informazioni sull'utente e sull'uso del software e inviarlo a Microsoft. Microsoft può usare queste informazioni per fornire servizi e migliorare i prodotti e i servizi di Microsoft. I diritti di rifiuto esplicito, se presenti, sono descritti nella documentazione del prodotto. Alcune funzionalità del software possono consentire la raccolta di dati dagli utenti delle applicazioni che accedono o utilizzano il software. 
+2. **DATA COLLECTION.** Il software può raccogliere informazioni sull'utente e sull'uso del software e inviarlo a Microsoft. Microsoft può usare queste informazioni per fornire servizi e migliorare i prodotti e i servizi di Microsoft. I diritti di rifiuto esplicito, se presenti, sono descritti nella documentazione del prodotto. Alcune funzionalità del software possono consentire la raccolta di dati dagli utenti delle applicazioni che accedono o utilizzano il software.
 
-    Se usi queste funzionalità per abilitare la raccolta dei dati nelle tue applicazioni, devi rispettare le leggi applicabili, incluso ottenere il consenso dell'utente richiesto e mantenere un'informativa sulla privacy importante che informi in modo accurato gli utenti sull'uso, la raccolta e la condivisione dei dati. Per ulteriori informazioni sulla raccolta e l'utilizzo dei dati di Microsoft, vedere la documentazione del prodotto e l'Informativa sulla privacy di Microsoft all'indirizzo [https://go.microsoft.com/fwlink/?LinkId=512132](https://go.microsoft.com/fwlink/?LinkId=512132) . L'utente accetta di rispettare tutte le disposizioni applicabili dell'Informativa sulla privacy di Microsoft.
+    Se usi queste funzionalità per abilitare la raccolta dei dati nelle tue applicazioni, devi rispettare la legge applicabile, incluso ottenere il consenso dell'utente richiesto e mantenere un'informativa sulla privacy importante che informi in modo accurato gli utenti sull'uso, la raccolta e la condivisione dei dati. Per ulteriori informazioni sulla raccolta e l'utilizzo dei dati di Microsoft, vedere la documentazione del prodotto e l'Informativa sulla privacy di Microsoft all'indirizzo <https://privacy.microsoft.com/privacystatement> . L'utente accetta di rispettare tutte le disposizioni applicabili dell'Informativa sulla privacy di Microsoft.
 
 3. **SCOPE OF LICENSE.** The software is licensed, not sold. Microsoft reserves all other rights. Unless applicable law gives you more rights despite this limitation, you will not (and have no right to):
     1. work around any technical limitations in the software that only allow you to use it in certain ways;
@@ -62,7 +62,7 @@ Se rispetti queste condizioni di licenza, hai i diritti indicati di seguito. Uti
 
 6. **UPDATES.** The software may periodically check for updates, and download and install them for you. You may obtain updates only from Microsoft or authorized sources. Microsoft may need to update your system to provide you with updates. You agree to receive these automatic updates without any additional notice. Updates may not include or support all existing software features, services, or peripheral devices.
 
-7. **BINDING ARBITRATION AND CLASS ACTION WAIVER.** **Questa sezione si applica se si vive negli Stati Uniti (o, se un'azienda, la posizione principale dell'azienda è negli Stati Uniti).** If you and Microsoft have a dispute, you and Microsoft agree to try for 60 days to resolve it informally. Se tu e Microsoft non potete, l'utente e Microsoft accettano di associare l'arbitrato individuale prima **dell'American Arbitration Association** ai sensi del Federal Arbitration Act ("FAA") e di non fare causa in tribunale di fronte a un giurato o un giurato.  Instead, a neutral arbitrator will decide. **Azioni legali di** class action, arbitraggi a livello di classe, azioni legali private e qualsiasi altro procedimento in cui qualcuno agisca in una capacità **rappresentativa non è consentito;** né combina singoli procedimenti senza il consenso di tutte le parti. L'accordo di arbitrato completo contiene altre condizioni ed è disponibile all'indirizzo [https://aka.ms/arb-agreement-1](https://aka.ms/arb-agreement-1) . You and Microsoft agree to these terms.
+7. **BINDING ARBITRATION AND CLASS ACTION WAIVER.** **Questa sezione si applica se si vive negli Stati Uniti (o, se un'azienda, la posizione principale dell'azienda è negli Stati Uniti).** If you and Microsoft have a dispute, you and Microsoft agree to try for 60 days to resolve it informally. In caso contrario, l'utente e Microsoft accettano di associare l'arbitrato individuale prima **dell'American Arbitration Association** ai sensi del Federal Arbitration Act ("FAA") e di non fare causa in tribunale davanti a un tribunale o a una commissione **giurato.** Instead, a neutral arbitrator will decide. **Azioni legali di** class action, arbitraggi a livello di classe, azioni legali private e qualsiasi altro procedimento in cui qualcuno agisca in una capacità **rappresentativa non è consentito;** né combina singoli procedimenti senza il consenso di tutte le parti. L'accordo di arbitrato completo contiene altre condizioni ed è disponibile all'indirizzo [https://aka.ms/arb-agreement-1](https://aka.ms/arb-agreement-1) . You and Microsoft agree to these terms.
 
 8. **ENTIRE AGREEMENT.** This agreement, and any other terms Microsoft may provide for supplements, updates, or third-party applications, is the entire agreement for the software.
 

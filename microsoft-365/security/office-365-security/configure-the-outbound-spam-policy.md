@@ -19,21 +19,21 @@ ms.custom:
 description: Gli amministratori possono imparare a visualizzare, creare, modificare ed eliminare i criteri di posta indesiderata in uscita in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6b7ba1e398466c448de37060db340c1d20cb1504
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 742c58a8a94938c5896382a6d53acac127974f02
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165765"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288934"
 ---
 # <a name="configure-outbound-spam-filtering-in-eop"></a>Configurare il filtro della posta indesiderata in uscita in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Nelle organizzazioni di Microsoft 365 con cassette postali in Exchange Online o nelle organizzazioni Exchange Online Protection (EOP) autonome senza cassette postali di Exchange Online, i messaggi di posta elettronica in uscita inviati tramite EOP vengono controllati automaticamente per verificare la presenza di posta indesiderata e attività di invio insolite.
 
@@ -66,7 +66,7 @@ Ogni organizzazione dispone di un criterio di posta indesiderata in uscita prede
 
 Per aumentare l'efficacia del filtro posta indesiderata in uscita, è possibile creare criteri di protezione da posta indesiderata in uscita personalizzati con impostazioni più rigide applicate a utenti o gruppi di utenti specifici.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **Impostazioni di filtro della posta indesiderata**, usare <https://protection.office.com/antispam>.
 
@@ -74,16 +74,16 @@ Per aumentare l'efficacia del filtro posta indesiderata in uscita, è possibile 
 
 - Per poter eseguire le procedure contenute in questo articolo è necessario disporre delle autorizzazioni appropriate nel Centro sicurezza e conformità:
   - Per aggiungere, modificare ed eliminare i criteri di posta indesiderata in uscita, è necessario essere membri dei gruppi **di** ruoli Gestione organizzazione o Amministratore **sicurezza.**
-  - Per l'accesso in sola lettura ai criteri di  posta indesiderata in uscita, è necessario essere membri dei gruppi di ruoli Lettore globale o Lettore **di** sicurezza.
+  - Per l'accesso in sola lettura ai criteri di  posta indesiderata in uscita, è necessario essere membri dei gruppi di ruoli Lettore globale o **Lettore** di sicurezza.
 
   Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 
   **Note**:
 
-  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie nel centro Sicurezza e conformità _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
+  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie nel centro Sicurezza e conformità _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
   - Anche il gruppo di ruoli di **Gestione organizzazione sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre inoltre l'accesso di sola lettura a tale funzionalità.
 
-- Per le impostazioni consigliate per i criteri di posta indesiderata in uscita, vedere Impostazioni dei criteri di filtro della posta indesiderata in [uscita di EOP.](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings)
+- Per le impostazioni consigliate per i criteri di posta indesiderata in uscita, vedere Impostazioni dei criteri di filtro della posta indesiderata in uscita [di EOP.](recommended-settings-for-eop-and-office365-atp.md#eop-outbound-spam-policy-settings)
 
 - I [](../../compliance/alert-policies.md) criteri di avviso predefiniti denominati Limite invio posta  elettronica **superato,** Modelli di invio di posta elettronica sospetti rilevati e Utente a cui è stato impedito di inviare messaggi di posta elettronica inviano già notifiche tramite posta elettronica ai membri del gruppo **TenantAdmins** (**Amministratori** globali) sull'attività insolita della posta elettronica in uscita e sugli utenti bloccati a causa di posta indesiderata in uscita. Per ulteriori informazioni, vedere [Verificare le impostazioni degli avvisi per gli utenti con restrizioni.](removing-user-from-restricted-users-portal-after-spam.md#verify-the-alert-settings-for-restricted-users) Si consiglia di utilizzare questi criteri di avviso anziché le opzioni di notifica nei criteri di posta indesiderata in uscita.
 
@@ -112,7 +112,7 @@ La creazione di un criterio di posta indesiderata in uscita personalizzato nel C
 
      1. Selezionare la casella di controllo per abilitare l'impostazione.
 
-     1. Fare **clic su Aggiungi utenti.** Nel riquadro **a comparsa Aggiungi o** rimuovi destinatari visualizzato:
+     1. Fare **clic su Aggiungi utenti.** Nel riquadro **a comparsa Aggiungi o rimuovi** destinatari visualizzato:
 
      1. Immettere l'indirizzo di posta elettronica del mittente. È possibile specificare più indirizzi di posta elettronica separati da punto e virgola (;) o un destinatario per riga.
 

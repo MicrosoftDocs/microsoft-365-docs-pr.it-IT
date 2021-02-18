@@ -6,6 +6,7 @@ author: JoeDavies-MSFT
 manager: Laurawi
 ms.prod: m365-security
 ms.topic: article
+audience: Admin
 f1.keywords:
 - NOCSH
 ms.reviewer: martincoetzer
@@ -19,18 +20,18 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 653b16b7b3f6637440e3740830ffe9f9a51c6dd8
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 4651f220e88bf5161a8ddfe4e2bdde03118afa15
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166508"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288480"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Criteri consigliati per la protezione della posta elettronica
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
 
 
 In questo articolo viene descritto come implementare i criteri di identità e accesso ai dispositivi consigliati per proteggere i client di posta elettronica e di posta elettronica dell'organizzazione che supportano l'autenticazione moderna e l'accesso condizionale. Queste indicazioni si basano sui criteri [comuni di identità](identity-access-policies.md) e accesso ai dispositivi e includono anche alcuni consigli aggiuntivi.
@@ -110,7 +111,7 @@ Vedere la procedura per configurare questo criterio in [Gestire l'accesso di col
 
 Con le nuove funzionalità office 365 Message Encryption (OME), che sfruttano le funzionalità di protezione di Azure Information Protection, l'organizzazione può facilmente condividere la posta elettronica protetta con chiunque su qualsiasi dispositivo. Gli utenti possono inviare e ricevere messaggi protetti con altre organizzazioni di Microsoft 365 e con utenti non clienti che usano Outlook.com, Gmail e altri servizi di posta elettronica.
 
-Per ulteriori informazioni, vedere Configurare le nuove funzionalità di crittografia dei messaggi [di Office 365.](https://docs.microsoft.com/microsoft-365/compliance/set-up-new-message-encryption-capabilities)
+Per ulteriori informazioni, vedere Configurare le nuove funzionalità di crittografia dei messaggi [di Office 365.](../../compliance/set-up-new-message-encryption-capabilities.md)
 
 ## <a name="next-steps"></a>Passaggi successivi
 

@@ -21,19 +21,19 @@ ms.custom:
 description: Informazioni sulle funzionalità di analisi e risposta alle minacce in Microsoft Defender per Office 365 Plan.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 32b23dca0d4cb70407ce91a652e458b729b3c12f
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 2a772ed3016bebc8f380cf384257e12497e9eb7c
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150737"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287678"
 ---
 # <a name="threat-investigation-and-response"></a>Analisi e risposta alle minacce
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
--    [Microsoft Defender per Office 365 piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft Defender per Office 365 Piano 2](office-365-atp.md)
 
 
 Le funzionalità di analisi e risposta alle minacce in [Microsoft Defender per Office 365](office-365-atp.md) consentono agli analisti e agli amministratori della sicurezza di proteggere gli utenti di Microsoft 365 per le aziende dell'organizzazione tramite:
@@ -43,7 +43,7 @@ Le funzionalità di analisi e risposta alle minacce in [Microsoft Defender per O
 - Fornire informazioni dettagliate e conoscenze per aiutare le operazioni di sicurezza a prevenire attacchi informatici contro l'organizzazione
 - Utilizzo di [analisi e risposta automatizzate in Office 365](automated-investigation-response-office.md) per minacce critiche basate sulla posta elettronica
 
-Le funzionalità di analisi e risposta alle minacce forniscono informazioni dettagliate sulle minacce e sulle azioni di risposta correlate disponibili nel Centro sicurezza & conformità. Queste informazioni possono aiutare il team di sicurezza dell'organizzazione a proteggere gli utenti da attacchi basati su file o posta elettronica. Le funzionalità consentono di monitorare i segnali e raccogliere dati da più origini, ad esempio attività degli utenti, autenticazione, posta elettronica, PC compromessi ed eventi imprevisti di sicurezza. I decisori aziendali e il team delle operazioni di sicurezza possono utilizzare queste informazioni per comprendere e rispondere alle minacce contro l'organizzazione e proteggere la proprietà intellettuale.
+Le funzionalità di analisi e risposta alle minacce forniscono informazioni dettagliate sulle minacce e sulle azioni di risposta correlate disponibili nel Centro sicurezza & conformità. Queste informazioni dettagliate consentono al team di sicurezza dell'organizzazione di proteggere gli utenti da attacchi basati su file o posta elettronica. Le funzionalità consentono di monitorare i segnali e raccogliere dati da più origini, ad esempio attività degli utenti, autenticazione, posta elettronica, PC compromessi ed eventi imprevisti di sicurezza. I decisori aziendali e il team delle operazioni di sicurezza possono utilizzare queste informazioni per comprendere e rispondere alle minacce contro l'organizzazione e proteggere la proprietà intellettuale.
 
 ## <a name="get-acquainted-with-threat-investigation-and-response-tools"></a>Acquisire familiarità con gli strumenti di analisi e risposta alle minacce
 
@@ -104,7 +104,7 @@ Le funzionalità di analisi e risposta alle minacce di Microsoft 365 sono inclus
 Microsoft Defender per Office 365 usa il controllo dell'accesso basato sui ruoli. Le autorizzazioni vengono assegnate tramite determinati ruoli in Azure Active Directory, nell'interfaccia di amministrazione di Microsoft 365 o nel Centro sicurezza & conformità.
 
 > [!TIP]
-> Anche se alcuni ruoli, ad esempio Amministratore della sicurezza &, possono essere assegnati nel Centro sicurezza e conformità, è consigliabile usare l'interfaccia di amministrazione di Microsoft 365 o Azure Active Directory. Per informazioni sui ruoli, sui gruppi di ruoli e sulle autorizzazioni, vedere le risorse seguenti:
+> Anche se alcuni ruoli, ad esempio Amministratore della sicurezza &, possono essere assegnati nel Centro sicurezza e conformità, è consigliabile usare l'interfaccia di amministrazione di Microsoft 365 o Azure Active Directory. Per informazioni su ruoli, gruppi di ruoli e autorizzazioni, vedere le risorse seguenti:
 >
 > - [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md)
 >

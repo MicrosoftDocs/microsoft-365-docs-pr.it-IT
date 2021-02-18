@@ -15,25 +15,25 @@ ms.custom:
 description: Gli amministratori possono imparare a eseguire un rapporto del gruppo di ruoli amministratore in Exchange Online Protection (EOP) autonomo. Questo rapporto registra quando un amministratore aggiunge o rimuove membri dai gruppi di ruoli di amministratore.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 507fbe6fb6c99677cf91b6eb824bf110f1c826f3
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: d778e807a087a5e29b31645457d4a81bd05c5649
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166628"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288020"
 ---
 # <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>Eseguire un report di un gruppo di ruoli amministratore in Exchange Online Protection autonomo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
--  [Exchange Online Protection autonomo](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection autonomo](exchange-online-protection-overview.md)
 
 Nelle organizzazioni di Exchange Online Protection (EOP) autonome senza cassette postali di Exchange Online, quando un amministratore aggiunge o rimuove membri dai gruppi di ruoli amministrativi, il servizio registra ogni occorrenza. Per ulteriori informazioni sui gruppi di ruoli in EOP autonomo, vedere [Autorizzazioni in EOP autonomo.](feature-permissions-in-eop.md)
 
 Quando si esegue un rapporto del gruppo di ruoli amministratore nell'interfaccia di amministrazione di Exchange (EAC), le voci vengono visualizzate come risultati della ricerca e includono i gruppi di ruoli interessati, chi ha modificato l'appartenenza al gruppo di ruoli e quando e quali aggiornamenti di appartenenza sono stati effettuati. Utilizzare questo rapporto per monitorare le modifiche apportate alle autorizzazioni amministrative assegnate agli utenti dell'organizzazione.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Per aprire l'interfaccia di amministrazione di Exchange, vedere l'interfaccia di amministrazione [di Exchange in EOP autonomo.](exchange-admin-center-in-exchange-online-protection-eop.md)
 
@@ -42,7 +42,7 @@ Quando si esegue un rapporto del gruppo di ruoli amministratore nell'interfaccia
 - Per informazioni sui tasti di scelta rapida applicabili alle procedure descritte in questo articolo, vedere Tasti di scelta rapida per l'interfaccia di amministrazione di [Exchange in Exchange Online.](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
 
 > [!TIP]
-> Problemi? Chiedere assistenza nel forum [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Problemi? Chiedere assistenza nel forum [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE).
 
 ## <a name="use-the-eac-to-run-an-administrator-role-group-report"></a>Esecuzione del report del gruppo di ruoli amministratore tramite EAC
 
@@ -134,7 +134,7 @@ In questa procedura vengono utilizzati i seguenti concetti:
    $Results = Search-AdminAuditLog <search criteria>
    ```
 
-2. Ogni voce del log di controllo viene archiviata come elemento matrice nella variabile `$Results` . È possibile selezionare un elemento di matrice specificandone l'indice. Gli indici degli elementi di matrice iniziano da zero (0) per il primo elemento della matrice. Ad esempio, per recuperare il quinto elemento della matrice, il cui indice è 4, utilizzare il comando seguente.
+2. Ogni voce del registro di controllo viene archiviata come elemento matrice nella variabile `$Results` . È possibile selezionare un elemento di matrice specificandone l'indice. Gli indici degli elementi di matrice iniziano da zero (0) per il primo elemento della matrice. Ad esempio, per recuperare il quinto elemento della matrice, il cui indice è 4, utilizzare il comando seguente.
 
    ```PowerShell
    $Results[4]

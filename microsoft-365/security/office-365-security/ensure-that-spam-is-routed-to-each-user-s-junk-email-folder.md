@@ -18,19 +18,19 @@ description: Gli amministratori possono imparare a instradare la posta indesider
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 926ac6dec33bf00fc8f0dcd292229e20ccc2b93f
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: b8fbc1b065e348f759806d80fd85421eb9d66098
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167120"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288874"
 ---
 # <a name="configure-standalone-eop-to-deliver-spam-to-the-junk-email-folder-in-hybrid-environments"></a>Configurare EOP autonomo per recapitare la posta indesiderata nella cartella Posta indesiderata negli ambienti ibridi
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
--  [Exchange Online Protection autonomo](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection autonomo](exchange-online-protection-overview.md)
 
 > [!IMPORTANT]
 > Questo argomento è disponibile solo per i clienti EOP autonomi in ambienti ibridi. Questo argomento non si applica ai clienti di Microsoft 365 con cassette postali di Exchange Online.
@@ -52,7 +52,7 @@ In questo argomento viene descritto come creare queste regole del flusso di post
 > [!TIP]
 > Anziché recapitare i messaggi nella cartella Posta indesiderata dell'utente locale, è possibile configurare i criteri di protezione dalla posta indesiderata in EOP per mettere in quarantena i messaggi di posta indesiderata in EOP. Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Per eseguire queste procedure, è necessario disporre delle autorizzazioni nell'ambiente Exchange locale. In particolare, è necessario  disporre del ruolo Regole di trasporto, assegnato ai ruoli **Gestione** **organizzazione,** Gestione conformità e **Gestione record** per impostazione predefinita. Per ulteriori informazioni, vedere [Add members to a role group](https://docs.microsoft.com/Exchange/permissions/role-group-members#add-members-to-a-role-group).
 
@@ -108,7 +108,7 @@ In questo argomento viene descritto come creare queste regole del flusso di post
 
    Al termine, fare clic su **Salva**
 
-Ripetere questi passaggi per i rimanenti valori del verdetto di posta indesiderata EOP (**SFV:SPM,** **SFV:SKS** o **SFV:SKB**).
+Ripetere questi passaggi per i rimanenti valori del verdetto di posta indesiderata di EOP (**SFV:SPM,** **SFV:SKS** o **SFV:SKB**).
 
 ## <a name="use-the-exchange-management-shell-to-create-mail-flow-rules-that-set-the-scl-of-eop-spam-messages"></a>Creazione di regole del flusso di posta che impostano il livello di probabilità di posta indesiderata dei messaggi di posta indesiderata di EOP tramite Exchange Management Shell
 

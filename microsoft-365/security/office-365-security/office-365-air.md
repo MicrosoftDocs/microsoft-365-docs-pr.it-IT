@@ -22,20 +22,20 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 43728db417e13dfc785731a1ee7b5f596013d6d4
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: b2e359f193f3c8b0502a1995b8e9d515eb03a983
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150196"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287690"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Analisi e risposta automatizzate (AIR) in Microsoft Defender per Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 [Microsoft Defender per Office 365](office-365-atp.md) include potenti funzionalità di analisi e risposta automatizzate (AIR) che consentono di risparmiare tempo e fatica nel team delle operazioni di sicurezza. Quando vengono attivati avvisi, il team delle operazioni di sicurezza deve esaminare, definire le priorità e rispondere a tali avvisi. Tenere il passo con il volume di avvisi in arrivo può essere eccessivo. L'automazione di alcune di queste attività può essere utile.
 
@@ -44,8 +44,8 @@ AIR consente al team delle operazioni di sicurezza di operare in modo più effic
 In questo articolo viene descritto:
 
 - Il [flusso complessivo di AIR;](#the-overall-flow-of-air)
-- [Come ottenere AIR](#how-to-get-air); e 
-- Autorizzazioni [necessarie per](#required-permissions-to-use-air-capabilities) configurare o utilizzare le funzionalità AIR. 
+- [Come ottenere AIR](#how-to-get-air); e
+- Autorizzazioni [necessarie per](#required-permissions-to-use-air-capabilities) configurare o utilizzare le funzionalità AIR.
 - Modifiche che saranno presto disponibili nel Centro sicurezza
 
 Questo articolo include anche [i passaggi successivi](#next-steps)e risorse per saperne di più.
@@ -54,7 +54,7 @@ Questo articolo include anche [i passaggi successivi](#next-steps)e risorse per 
 
 Viene attivato un avviso e un playbook sulla sicurezza avvia un'indagine automatizzata, che genera risultati e azioni consigliate. Ecco il flusso generale di AIR, passo dopo passo:
 
-1. Un'indagine automatizzata viene avviata in uno dei modi seguenti: 
+1. Un'indagine automatizzata viene avviata in uno dei modi seguenti:
    - Un [avviso viene attivato da qualcosa di](#which-alert-policies-trigger-automated-investigations) sospetto nella posta elettronica (ad esempio un messaggio, un allegato, un URL o un account utente compromesso). Viene creato un evento imprevisto e viene avviata un'indagine automatizzata; oppure
    - Un analista della [sicurezza avvia un'indagine automatizzata](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer) durante l'uso [di Esplora minacce.](threat-explorer.md)
 2. Durante l'esecuzione di un'indagine automatizzata, raccoglie i dati relativi al messaggio di posta elettronica in questione e le entità correlate a tale messaggio di posta elettronica. Tali entità possono includere file, URL e destinatari. L'ambito dell'indagine può aumentare quando vengono attivati avvisi nuovi e correlati.
@@ -77,23 +77,19 @@ Durante e dopo ogni indagine automatizzata, il team delle operazioni di sicurezz
 
 Le funzionalità AIR sono incluse in [Microsoft Defender per Office 365,](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2)purché i criteri e gli avvisi siano configurati. Serve aiuto? Seguire le istruzioni in [Protezione dalle minacce](protect-against-threats.md) per configurare o configurare le impostazioni di protezione seguenti:
 
-- [Registrazione di controllo](https://docs.microsoft.com/microsoft-365/compliance/turn-audit-log-search-on-or-off) (deve essere attivata)
+- [Registrazione di controllo](../../compliance/turn-audit-log-search-on-or-off.md) (deve essere attivata)
 - [Criteri antimalware](protect-against-threats.md#part-1---anti-malware-protection)
 - [Protezione antiphishing](protect-against-threats.md#part-2---anti-phishing-protection)
 - [Protezione dalla posta indesiderata](protect-against-threats.md#part-3---anti-spam-protection)
-- [Protezione antiphishing](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?part-2---anti-phishing-protection)
-- [Protezione dalla posta indesiderata](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?part-3---anti-spam-protection)
-- [Collegamenti sicuri e allegati sicuri](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
-- [Allegati sicuri per SharePoint, OneDrive e Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
-- [Eliminazione automatica a zero ore per la posta elettronica](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats?zero-hour-auto-purge-for-email-in-eop)
+- [Collegamenti sicuri e allegati sicuri](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
 - [Allegati sicuri per SharePoint, OneDrive e Microsoft Teams](protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
 - [Eliminazione automatica a zero ore per la posta elettronica.](protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop)
 
-Inoltre, assicurarsi di esaminare i criteri di avviso [dell'organizzazione,](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)in particolare i criteri [predefiniti nella categoria gestione delle minacce.](https://docs.microsoft.com/microsoft-365/compliance/alert-policies?default-alert-policies)
+Inoltre, assicurarsi di esaminare i criteri di avviso [dell'organizzazione,](../../compliance/alert-policies.md)in particolare i criteri [predefiniti nella categoria gestione delle minacce.](../../compliance/alert-policies.md#default-alert-policies)
 
 ## <a name="which-alert-policies-trigger-automated-investigations"></a>Quali criteri di avviso attivano indagini automatizzate?
 
-Microsoft 365 fornisce molti criteri di avviso incorporati che consentono di identificare l'abuso delle autorizzazioni di amministratore di Exchange, l'attività di malware, potenziali minacce esterne ed interne e i rischi di governance delle informazioni. Diversi dei criteri [di avviso predefiniti](https://docs.microsoft.com/microsoft-365/compliance/alert-policies#default-alert-policies) possono attivare indagini automatizzate. La tabella seguente descrive gli avvisi che attivano le indagini automatizzate, la loro gravità nel Centro sicurezza Microsoft 365 e il modo in cui vengono generati:
+Microsoft 365 fornisce molti criteri di avviso incorporati che consentono di identificare l'abuso delle autorizzazioni di amministratore di Exchange, l'attività di malware, potenziali minacce esterne ed interne e i rischi di governance delle informazioni. Diversi dei criteri [di avviso predefiniti](../../compliance/alert-policies.md#default-alert-policies) possono attivare indagini automatizzate. La tabella seguente descrive gli avvisi che attivano le indagini automatizzate, la loro gravità nel Centro sicurezza Microsoft 365 e il modo in cui vengono generati:
 
 |Avviso|Gravità|Modalità di generazione dell'avviso|
 |:---|:---|:---|
@@ -106,7 +102,7 @@ Microsoft 365 fornisce molti criteri di avviso incorporati che consentono di ide
 |
 
 > [!TIP]
-> Per ulteriori informazioni sui criteri di avviso o per modificare le impostazioni predefinite, vedere Criteri di avviso nel Centro conformità [Microsoft 365.](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)
+> Per ulteriori informazioni sui criteri di avviso o per modificare le impostazioni predefinite, vedere Criteri di avviso nel Centro conformità [Microsoft 365.](../../compliance/alert-policies.md)
 
 ## <a name="required-permissions-to-use-air-capabilities"></a>Autorizzazioni necessarie per l'utilizzo delle funzionalità AIR
 
@@ -128,34 +124,35 @@ Le autorizzazioni vengono concesse tramite determinati ruoli, ad esempio quelli 
 
 ## <a name="changes-are-coming-soon-in-your-security-center"></a>Le modifiche saranno presto disponibili nel Centro sicurezza
 
-Se si usano già le funzionalità AIR in Microsoft Defender per Office 365, si stanno per vedere alcune modifiche nel Centro sicurezza [Microsoft 365 migliorato.](../mtp/overview-security-center.md) 
+Se si usano già le funzionalità AIR in Microsoft Defender per Office 365, si stanno per vedere alcune modifiche nel Centro sicurezza [Microsoft 365 migliorato.](../mtp/overview-security-center.md)
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centro notifiche unificato":::
 
-Il centro sicurezza nuovo e migliorato riunisce le funzionalità AIR in [Microsoft Defender per Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) e in Microsoft Defender for [Endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) Con questi aggiornamenti e miglioramenti, il team delle operazioni di sicurezza sarà in grado di visualizzare i dettagli sulle indagini automatizzate e sulle azioni di correzione in tutta la posta elettronica, il contenuto di collaborazione, gli account utente e i dispositivi, il tutto in un'unica posizione.
+Il centro sicurezza nuovo e migliorato riunisce le funzionalità AIR in [Microsoft Defender per Office 365](office-365-atp.md) e in Microsoft Defender for [Endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) Con questi aggiornamenti e miglioramenti, il team delle operazioni di sicurezza sarà in grado di visualizzare i dettagli sulle indagini automatizzate e sulle azioni di correzione in tutta la posta elettronica, il contenuto di collaborazione, gli account utente e i dispositivi, il tutto in un'unica posizione.
 
 > [!TIP]
 > Il nuovo Centro sicurezza Microsoft 365 ( [https://security.microsoft.com](https://security.microsoft.com) ) sostituisce i centri seguenti:
+>
 > - Centro sicurezza e conformità & di Office 365 ( [https://protection.office.com](https://protection.office.com) )
 > - Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )
 >
-> Oltre alla modifica dell'URL, è stato creato un nuovo aspetto, progettato per offrire al team di sicurezza un'esperienza più semplificata, con visibilità su più rilevamenti di minacce in un'unica posizione. 
+> Oltre alla modifica dell'URL, è stato creato un nuovo aspetto, progettato per offrire al team di sicurezza un'esperienza più semplificata, con visibilità su più rilevamenti di minacce in un'unica posizione.
 
 ### <a name="what-to-expect"></a>Cosa aspettarsi
 
 Nella tabella seguente sono elencati i miglioramenti e le modifiche in arrivo in AIR in Microsoft Defender per Office 365.
 
-|Elemento  |Cosa cambia?  |
-|---------|---------|
-|**Pagina Indagini**     | La pagina **Delle indagini aggiornata** è più coerente con quella visualizzata in Microsoft Defender per [Endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) Vedrai alcune modifiche generali al formato e allo stile in linea con la nuova visualizzazione **Indagini unificate.** Ad esempio, il grafico delle indagini ha un formato più unificato.        |
-|**Scheda** Utenti |La **scheda Utenti** è ora la scheda **Cassette** postali. I dettagli sugli utenti sono elencati nella **scheda Cassetta** postale. |
-|**Scheda Posta** elettronica |La **scheda Posta** elettronica è stata rimossa. visita la **scheda Entità per** visualizzare un elenco di elementi del cluster di posta elettronica e di posta elettronica. |
-|**Scheda Entità** | La **scheda Entità** ha uno stile di tabulazione che include una visualizzazione di riepilogo e la possibilità di filtrare in base al tipo di entità. La **scheda Entità** ora include un'opzione **Vai** a ricerca oltre all'opzione Apri **in Esplora** risorse. Ora puoi usare [Esplora](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) minacce o [la ricerca avanzata](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) per trovare entità e minacce e filtrare i risultati. | 
-|**Scheda Azioni** |La scheda **Azioni aggiornata** ora include una scheda **Azioni** in sospeso e una **scheda Cronologia** azioni. Le azioni possono essere approvate (o rifiutate) in un riquadro laterale che si apre quando si seleziona un'azione in sospeso. |
-|**Scheda Prova** | Una nuova **scheda Evidenza** mostra i risultati chiave dell'entità correlati alle azioni. Le azioni correlate a ogni prova possono essere approvate (o rifiutate) in un riquadro laterale che si apre quando si seleziona un'azione in sospeso. |
-|**Centro notifiche** |Il centro **notifiche aggiornato** ( ) riunisce le azioni in sospeso e completate tra posta [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) elettronica, dispositivi e identità. Per altre informazioni, vedere Centro notifiche. Per altre informazioni, vedere [Il centro notifiche.](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-action-center)
-|**Pagina Eventi imprevisti** |La **pagina Eventi** imprevisti ora correla più indagini per fornire una migliore visione consolidata delle indagini. ([Ulteriori informazioni sugli eventi imprevisti.](https://docs.microsoft.com/microsoft-365/security/mtp/incidents-overview))
-
+|Elemento|Cosa cambia?|
+|---|---|
+|**Pagina Indagini**|La pagina **Delle indagini aggiornata** è più coerente con quella visualizzata in Microsoft Defender per [Endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) Vedrai alcune modifiche generali al formato e allo stile in linea con la nuova visualizzazione **Indagini unificate.** Ad esempio, il grafico delle indagini ha un formato più unificato.|
+|**Scheda** Utenti|La **scheda Utenti** è ora la scheda **Cassette** postali. I dettagli sugli utenti sono elencati nella **scheda Cassetta** postale.|
+|**Scheda Posta** elettronica|La **scheda Posta** elettronica è stata rimossa. visita la **scheda Entità per** visualizzare un elenco di elementi del cluster di posta elettronica e di posta elettronica.|
+|**Scheda Entità**|La **scheda Entità** ha uno stile di tabulazione che include una visualizzazione di riepilogo e la possibilità di filtrare in base al tipo di entità. La **scheda Entità** ora include un'opzione **Vai** a ricerca oltre all'opzione Apri **in Esplora** risorse. Ora puoi usare [Esplora](threat-explorer.md) minacce o [la ricerca avanzata](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) per trovare entità e minacce e filtrare i risultati.|
+|**Scheda Azioni**|La scheda **Azioni aggiornata** ora include una scheda **Azioni** in sospeso e una **scheda Cronologia** azioni. Le azioni possono essere approvate (o rifiutate) in un riquadro laterale che si apre quando si seleziona un'azione in sospeso.|
+|**Scheda Prova**|Una nuova **scheda Evidenza** mostra i risultati chiave dell'entità correlati alle azioni. Le azioni correlate a ogni prova possono essere approvate (o rifiutate) in un riquadro laterale che si apre quando si seleziona un'azione in sospeso.|
+|**Centro notifiche**|Il centro **notifiche aggiornato** ( ) riunisce le azioni in sospeso e completate tra posta <https://security.microsoft.com/action-center> elettronica, dispositivi e identità. Per altre informazioni, vedere Centro notifiche. Per altre informazioni, vedere [Il centro notifiche.](../mtp/mtp-action-center.md)|
+|**Pagina Eventi imprevisti**|La **pagina Eventi** imprevisti ora correla più indagini per fornire una migliore visione consolidata delle indagini. ([Ulteriori informazioni sugli eventi imprevisti.](../mtp/incidents-overview.md))|
+|
 
 ## <a name="next-steps"></a>Passaggi successivi
 

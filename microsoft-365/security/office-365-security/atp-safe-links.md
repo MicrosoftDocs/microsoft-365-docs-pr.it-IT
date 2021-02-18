@@ -6,7 +6,7 @@ ms.author: tracyp
 author: MSFTTracyP
 manager: dansimp
 audience: Admin
-ms.article: overview
+ms.topic: overview
 f1_keywords:
 - "197503"
 localization_priority: Normal
@@ -27,20 +27,20 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: In questo articolo, gli amministratori possono ottenere informazioni sulla protezione dei collegamenti sicuri in Defender per Office 365 per proteggere l'organizzazione dal phishing e da altri attacchi che usano URL dannosi.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 251b3e71be30f90ac828abc8bf34877d65615336
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 15168f2fff5ce1e4afbef5ff71a780de896f0bbf
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175776"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288694"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Collegamenti sicuri in Microsoft Defender per Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!IMPORTANT]
 > Questo articolo è rivolto ai clienti aziendali di [Microsoft Defender per Office 365](office-365-atp.md). Se si usa Outlook.com, Microsoft 365 Family o Microsoft 365 Personal e si cercano informazioni sui collegamenti sicuri in Outlook, vedere [Advanced Outlook.com security.](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2)
@@ -92,7 +92,7 @@ La tabella seguente descrive gli scenari per i collegamenti sicuri nelle organiz
 
 Collegamenti sicuri analizza la posta elettronica in arrivo alla ricerca di collegamenti ipertestuali dannosi noti. Gli URL analizzati vengono riscritti utilizzando il prefisso URL standard Microsoft: `https://nam01.safelinks.protection.outlook.com` . Una volta riscritto, il collegamento viene analizzato per ricercare contenuti potenzialmente dannosi.
 
-Dopo la riscrittura di un URL da parte dei collegamenti sicuri, l'URL rimane riscritto, anche se il messaggio viene inoltrato o a cui si risponde. I collegamenti aggiuntivi aggiunti al messaggio inoltrato o a cui viene risposto non vengono riscritti.
+Dopo la riscrittura di un URL da parte dei  collegamenti sicuri, l'URL rimane riscritto anche se il messaggio viene inoltrato manualmente o a cui si risponde (sia ai destinatari interni che a destinatari esterni). I collegamenti aggiuntivi aggiunti al messaggio inoltrato o a cui viene risposto non vengono riscritti. Tuttavia, nel caso  dell'inoltro automatico da parte delle regole di Posta in arrivo o dell'inoltro  SMTP, l'URL non verrà riscritto nel messaggio destinato al destinatario finale, a meno che tale destinatario non sia protetto anche da collegamenti sicuri o che l'URL sia già stato riscritto in una comunicazione precedente. 
 
 Le impostazioni dei criteri collegamenti sicuri applicabili ai messaggi di posta elettronica sono descritte nell'elenco seguente:
 
@@ -201,7 +201,7 @@ La protezione collegamenti sicuri per le app di Office 365 presenta i requisiti 
   - Visio in Windows.
   - OneNote in un Web browser.
 
-- Le app di Office 365 sono configurate per l'utilizzo dell'autenticazione moderna. Per ulteriori informazioni, vedere Funzionamento dell'autenticazione moderna per le app client di [Office 2013, Office 2016 e Office 2019.](https://docs.microsoft.com/microsoft-365/enterprise/modern-auth-for-office-2013-and-2016)
+- Le app di Office 365 sono configurate per l'utilizzo dell'autenticazione moderna. Per ulteriori informazioni, vedere Funzionamento dell'autenticazione moderna per le app client di [Office 2013, Office 2016 e Office 2019.](../../enterprise/modern-auth-for-office-2013-and-2016.md)
 
 - Gli utenti hanno eseguito l'accesso usando i propri account aziendali o dell'istituto di istruzione. Per ulteriori informazioni, vedere [Accedere a Office.](https://support.microsoft.com/office/b9582171-fd1f-4284-9846-bdd72bb28426)
 
@@ -233,7 +233,7 @@ A livello di alto livello, ecco come funziona la protezione dei collegamenti sic
 
    - Se l'URL punta a un sito Web [](#malicious-website-warning) che è stato rilevato come dannoso, viene visualizzata una pagina di avviso del sito Web dannoso (o una pagina di avviso diversa).
 
-   - Se l'URL punta a un file scaricabile e il criterio Collegamenti sicuri applicabile all'utente è configurato per l'analisi dei collegamenti al contenuto scaricabile ( applica l'analisi degli **URL** in tempo reale alla ricerca di collegamenti sospetti e collegamenti che puntano ai file), il file scaricabile viene controllato.
+   - Se l'URL punta a un file scaricabile e il criterio Collegamenti sicuri applicabile all'utente è configurato per l'analisi dei collegamenti al contenuto scaricabile (applicare l'analisi degli **URL** in tempo reale per verificare la ricerca di collegamenti sospetti e collegamenti che puntano ai file), il file scaricabile viene controllato.
 
    - Se l'URL è considerato sicuro, l'utente viene portato al sito Web.
 
@@ -288,7 +288,7 @@ Nella tabella seguente sono descritti alcuni esempi dei valori che è possibile 
 ## <a name="do-not-rewrite-the-following-urls-lists-in-safe-links-policies"></a>"Non riscrivere gli URL seguenti" nei criteri collegamenti sicuri
 
 > [!NOTE]
-> Se nell'organizzazione vengono utilizzati  criteri collegamenti sicuri, l'unico metodo supportato per i test di phishing di terze parti è non riscrivere gli URL seguenti.
+> Se nell'organizzazione vengono utilizzati  criteri collegamenti sicuri, l'unico metodo supportato per i test di phishing di terze parti è Non riscrivere gli URL seguenti.
 
 Ogni criterio Collegamenti sicuri contiene un elenco Non riscrivere gli **URL** seguenti che è possibile utilizzare per specificare gli URL non riscritti dall'analisi dei collegamenti sicuri. In altre parole, l'elenco consente agli utenti inclusi nel criterio di accedere agli URL specificati che altrimenti verrebbero bloccati dai collegamenti sicuri. È possibile configurare elenchi diversi in criteri collegamenti sicuri diversi. L'elaborazione dei criteri si interrompe dopo l'applicazione del primo criterio (probabilmente con la priorità più alta) all'utente. Pertanto, a  un utente incluso in più criteri collegamenti sicuri attivi viene applicato un solo url non riscrivere l'elenco degli URL seguenti.
 
@@ -296,7 +296,7 @@ Per aggiungere voci all'elenco nei criteri collegamenti sicuri nuovi o esistenti
 
 **Note**:
 
-- I client seguenti non riconoscono l'elenco **Non riscrivere gli URL** seguenti nei criteri collegamenti sicuri. Agli utenti inclusi nei criteri può essere impedito di accedere agli URL in base ai risultati dell'analisi dei collegamenti sicuri in questi client:
+- I client seguenti non riconoscono l'elenco **Do not rewrite the following URLs** lists in Safe Links policies. Agli utenti inclusi nei criteri può essere impedito di accedere agli URL in base ai risultati dell'analisi dei collegamenti sicuri in questi client:
 
   - Microsoft Teams
   - Office Web Apps
@@ -320,7 +320,7 @@ Nella tabella seguente sono descritti alcuni esempi dei valori che è possibile 
 |`contoso.com`|Consente `https://contoso.com` l'accesso a sottodomini o percorsi, ma non a percorsi.|
 |`*.contoso.com/*`|Consente l'accesso a un dominio, a sottodomini e a percorsi, ad esempio `https://www.contoso.com` `https://www.contoso.com` , , o `https://maps.contoso.com` `https://www.contoso.com/a` . <p> Questa voce è intrinsecamente migliore di , perché non consente siti `*contoso.com*` potenzialmente fraudolenti, come `https://www.falsecontoso.com` o `https://www.false.contoso.completelyfalse.com`|
 |`https://contoso.com/a`|Consente l'accesso `https://contoso.com/a` a , ma non a sottopercorsi come `https://contoso.com/a/b`|
-|`https://contoso.com/a/*`|Consente `https://contoso.com/a` l'accesso a e sottopercorso come `https://contoso.com/a/b`|
+|`https://contoso.com/a/*`|Consente `https://contoso.com/a` l'accesso e i sottopercorso come `https://contoso.com/a/b`|
 |
 
 ## <a name="warning-pages-from-safe-links"></a>Pagine di avviso da Collegamenti sicuri

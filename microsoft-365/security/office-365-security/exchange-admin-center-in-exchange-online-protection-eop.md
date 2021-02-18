@@ -17,19 +17,19 @@ ms.collection:
 description: Informazioni sull'interfaccia di gestione Web in Exchange Online Protection (EOP) autonomo.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 81af6c64d2ec3204d0c9d46888bbfe21335955bd
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: ec9dcbccbee734ea7c475b1ac0a5f9a92a0b401b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166220"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286958"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>Interfaccia di amministrazione di Exchange Online Protection autonomo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
--  [Exchange Online Protection autonomo](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection autonomo](exchange-online-protection-overview.md)
 
 L'interfaccia di amministrazione di Exchange è una console di gestione basata sul Web per Exchange Online Protection (EOP) autonomo.
 

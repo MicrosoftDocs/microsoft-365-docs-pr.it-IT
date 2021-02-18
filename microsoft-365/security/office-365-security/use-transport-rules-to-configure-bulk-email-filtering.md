@@ -1,5 +1,5 @@
 ---
-title: Utilizzare le regole del flusso di posta per filtrare la posta elettronica in blocco
+title: Usare le regole del flusso di posta per filtrare la posta elettronica in blocco
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -7,48 +7,53 @@ author: chrisda
 manager: dansimp
 audience: ITPro
 ms.topic: how-to
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 2889c82e-fab0-4e85-87b0-b001b2ccd4f7
 ms.collection:
 - M365-security-compliance
-description: Gli amministratori possono ottenere informazioni su come utilizzare le regole del flusso di posta (regole di trasporto) per identificare e filtrare la posta in blocco (Gray mail) in Exchange Online Protection (EOP).
+description: Gli amministratori possono imparare a utilizzare le regole del flusso di posta (regole di trasporto) per identificare e filtrare la posta in blocco (posta grigia) in Exchange Online Protection (EOP).
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: b029e805147218551ba6ff80fb5abfda3fbfef7f
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 8030d21d414cb38769a6831391262fa3798a8838
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658638"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287294"
 ---
 # <a name="use-mail-flow-rules-to-filter-bulk-email-in-eop"></a>Usare le regole del flusso di posta per filtrare la posta inviata in blocco in Exchange Online Protection
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
+**Si applica a**
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-In Microsoft 365 organizzazioni con cassette postali in Exchange Online o standalone Exchange Online Protection (EOP) organizzazioni senza cassette postali di Exchange Online, EOP utilizza criteri di protezione dalla posta indesiderata (noti anche come criteri di filtro della posta indesiderata o criteri di filtro del contenuto) per l'analisi dei messaggi in ingresso per la posta indesiderata e per l'invio di massa Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md).
+Nelle organizzazioni di Microsoft 365 con cassette postali in Exchange Online o nelle organizzazioni Exchange Online Protection (EOP) autonome senza cassette postali di Exchange Online, EOP utilizza i criteri di protezione dalla posta indesiderata (noti anche come criteri di filtro della posta indesiderata o criteri di filtro dei contenuti) per analizzare i messaggi in ingresso alla ricerca di posta indesiderata e posta in blocco (nota anche come posta grigia). Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md).
 
-Se si desiderano ulteriori opzioni per filtrare la posta in blocco, è possibile creare regole del flusso di posta (note anche come regole di trasporto) per cercare modelli di testo o frasi che si trovano di frequente nella posta in blocco e contrassegnare i messaggi come posta indesiderata. Per ulteriori informazioni sulla posta in blocco, vedere [Qual è la differenza tra posta elettronica indesiderata e posta elettronica](what-s-the-difference-between-junk-email-and-bulk-email.md) in blocco e [livello di reclamo in blocco (BCL) in EOP](bulk-complaint-level-values.md).
+Se si desiderano più opzioni per filtrare la posta in blocco, è possibile creare regole del flusso di posta (note anche come regole di trasporto) per cercare modelli di testo o frasi che si trovano spesso nella posta inviata in blocco e contrassegnare tali messaggi come posta indesiderata. Per ulteriori informazioni sulla posta inviata in blocco, vedere Qual è la differenza tra posta indesiderata e posta elettronica inviata in [blocco?](what-s-the-difference-between-junk-email-and-bulk-email.md) e Livello di reclamo in blocco [(BCL) in EOP.](bulk-complaint-level-values.md)
 
-In questo argomento viene illustrato come creare queste regole del flusso di posta elettronica nell'interfaccia di amministrazione di Exchange (EAC) e PowerShell (Exchange Online PowerShell per Microsoft 365 organizzazioni con cassette postali in Exchange Online; standalone EOP PowerShell per organizzazioni senza cassette postali di Exchange Online).
+In questo argomento viene descritto come creare queste regole del flusso di posta nell'interfaccia di amministrazione di Exchange (EAC) e PowerShell (PowerShell di Exchange Online per le organizzazioni di Microsoft 365 con cassette postali in Exchange Online; PowerShell EOP autonomo per le organizzazioni senza cassette postali di Exchange Online).
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Prima di poter eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni in Exchange Online o Exchange Online Protection. In particolare, è necessario il ruolo **regole di trasporto** , assegnato ai gruppi di ruoli Gestione **organizzazione**, gestione **conformità** (amministratori globali) e **Records Management** per impostazione predefinita.
+- Per eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni in Exchange Online o Exchange Online Protection. In particolare, è necessario il ruolo **Regole** di trasporto, assegnato ai gruppi  di ruoli Gestione **organizzazione,** Gestione conformità **(amministratori** globali) e Gestione record per impostazione predefinita.
 
   Per ulteriori informazioni, vedere i seguenti argomenti:
 
   - [Autorizzazioni in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
   - [Autorizzazioni in Exchange Online Protection autonomo](feature-permissions-in-eop.md)
-  - [Utilizzo dell'interfaccia di amministrazione di Exchange modificare l'elenco dei membri nei gruppi di ruoli](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
+  - [Utilizzo dell'interfaccia di amministrazione di Exchange per modificare l'elenco dei membri nei gruppi di ruoli](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
 
-- Per aprire EAC in Exchange Online, vedere interfaccia [di amministrazione di Exchange in Exchange Online](https://docs.microsoft.com/Exchange/exchange-admin-center). Per aprire EAC in EOP autonomo, vedere interfaccia [di amministrazione di Exchange in EOP autonomo](exchange-admin-center-in-exchange-online-protection-eop.md).
+- Per aprire l'interfaccia di amministrazione di Exchange in Exchange Online, vedere Interfaccia di amministrazione [di Exchange in Exchange Online.](https://docs.microsoft.com/Exchange/exchange-admin-center) Per aprire l'interfaccia di amministrazione di Exchange in EOP autonomo, vedere Interfaccia di amministrazione [di Exchange in EOP autonomo.](exchange-admin-center-in-exchange-online-protection-eop.md)
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Per ulteriori informazioni sulle regole del flusso di posta in Exchange Online e EOP autonomo, vedere i seguenti argomenti:
+- Per ulteriori informazioni sulle regole del flusso di posta in Exchange Online ed EOP autonomo, vedere i seguenti argomenti:
 
   - [Regole del flusso di posta (regole di trasporto) in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rules)
 
@@ -56,27 +61,27 @@ In questo argomento viene illustrato come creare queste regole del flusso di pos
 
   - [Azioni delle regole del flusso di posta in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
 
-- L'elenco delle parole e dei modelli di testo utilizzati per identificare la posta in blocco negli esempi non è esaustivo. è possibile aggiungere e rimuovere le voci in base alle esigenze. Tuttavia, sono un buon punto di partenza.
+- L'elenco di parole e modelli di testo utilizzati per identificare la posta inviata in blocco negli esempi non è esaustivo; è possibile aggiungere e rimuovere voci in base alle esigenze. Tuttavia, sono un buon punto di partenza.
 
 - La ricerca di due parole o sequenze di testo nell'oggetto o in altri campi dell'intestazione avviene *dopo* che il messaggio è stato decodificato tramite metodo di codifica per il trasferimento dei contenuti che è stato usato per trasmettere il messaggio binario tra i server SMTP in testo ASCII. Non è possibile utilizzare condizioni o eccezioni per cercare i valori codificati non elaborati (in genere, Base64) dell'oggetto o di altri campi dell'intestazione dei messaggi.
 
-- Le procedure seguenti contrassegnano un messaggio di massa come posta indesiderata per l'intera organizzazione. Tuttavia, è possibile aggiungere un'altra condizione per applicare queste regole solo a destinatari specifici, in modo da poter utilizzare il filtro aggressivo su alcuni utenti di alto livello, mentre gli altri utenti (che principalmente ricevono la posta elettronica in blocco) non sono interessati.
+- Le procedure seguenti contrassegnano un messaggio in blocco come posta indesiderata per l'intera organizzazione. Tuttavia, è possibile aggiungere un'altra condizione per applicare queste regole solo a destinatari specifici, in modo da poter utilizzare un filtro aggressivo su alcuni utenti altamente mirati, mentre il resto degli utenti (che ottengono principalmente la posta elettronica in blocco per cui si sono registrati) non sono interessati.
 
-## <a name="use-the-eac-to-create-mail-flow-rules-that-filter-bulk-email"></a>Utilizzo di EAC per creare regole del flusso di posta che filtrano la posta elettronica in blocco
+## <a name="use-the-eac-to-create-mail-flow-rules-that-filter-bulk-email"></a>Utilizzo dell'interfaccia di amministrazione di Exchange per creare regole del flusso di posta che filtrano la posta elettronica in blocco
 
 1. Nell'interfaccia di amministrazione di Exchange, andare a **Flusso di posta** \> **Regole**.
 
-2. Fare clic su **Aggiungi** ![ icona ](../../media/ITPro-EAC-AddIcon.png) e quindi selezionare **Crea una nuova regola**.
+2. Fare **clic sull'icona** ![ Aggiungi e quindi selezionare Crea una nuova ](../../media/ITPro-EAC-AddIcon.png) **regola.**
 
 3. Nella pagina **Nuova regola** che si apre, configurare le seguenti impostazioni:
 
-   - **Nome**: immettere un nome univoco descrittivo per la regola.
+   - **Nome**: immettere un nome descrittivo univoco per la regola.
 
-   - Fare clic su **altre opzioni**.
+   - Fare **clic su Altre opzioni.**
 
-   - **Applica questa regola se**: configurare una delle impostazioni seguenti per cercare il contenuto nei messaggi utilizzando espressioni regolari (Regex) o parole o frasi:
+   - **Applicare questa regola se**: Configurare una delle impostazioni seguenti per cercare il contenuto dei messaggi utilizzando espressioni regolari (RegEx) o parole o frasi:
 
-     - **L'oggetto o il corpo** \> l' **oggetto o il corpo corrisponde a questi modelli di testo**: nella finestra di dialogo **specifica parole o frasi** visualizzata, immettere uno dei valori seguenti, fare clic su **Aggiungi** ![ icona ](../../media/ITPro-EAC-AddIcon.png) e ripetere fino a quando non sono stati immessi tutti i valori.
+     - **L'oggetto o il corpo** \> **l'oggetto** o il corpo  corrisponde a questi modelli di testo: nella finestra  di dialogo Specifica parole o frasi visualizzata, immettere uno dei valori seguenti, fare clic su Aggiungi icona e ripetere fino a quando non sono stati immessi tutti i ![ ](../../media/ITPro-EAC-AddIcon.png) valori.
 
        - `If you are unable to view the content of this email\, please`
        - `\>(safe )?unsubscribe( here)?\</a\>`
@@ -91,11 +96,11 @@ In questo argomento viene illustrato come creare queste regole del flusso di pos
        - `to change your (subscription preferences|preferences or unsubscribe)`
        - `click (here to|the) unsubscribe`
 
-      Per modificare una voce, selezionarla e fare clic su **modifica** ![ icona modifica ](../../media/ITPro-EAC-EditIcon.png) . Per rimuovere una voce, selezionarla e fare clic su **Rimuovi** ![ icona Rimuovi ](../../media/ITPro-EAC-DeleteIcon.png) .
+      Per modificare una voce, selezionarla e fare clic **sull'icona** ![ ](../../media/ITPro-EAC-EditIcon.png) Modifica. Per rimuovere una voce, selezionarla e fare clic **sull'icona** ![ ](../../media/ITPro-EAC-DeleteIcon.png) Rimuovi.
 
        Al termine, fare clic su **OK**.
 
-     - **L'oggetto o il corpo** \> l' **oggetto o il corpo include una di queste parole**: nella finestra di dialogo **specifica parole o frasi** visualizzata, immettere uno dei valori seguenti, fare clic su **Aggiungi** ![ icona ](../../media/ITPro-EAC-AddIcon.png) e ripetere fino a quando non sono stati immessi tutti i valori.
+     - **L'oggetto o il corpo** \> **l'oggetto** o il corpo include  una di queste parole: nella finestra di dialogo  Specifica parole o frasi visualizzata, immettere uno dei valori seguenti, fare clic su Icona Aggiungi e ripetere fino a quando non sono stati immessi tutti i ![ ](../../media/ITPro-EAC-AddIcon.png) valori.
 
        - `to change your preferences or unsubscribe`
        - `Modify email preferences or unsubscribe`
@@ -111,21 +116,21 @@ In questo argomento viene illustrato come creare queste regole del flusso di pos
        - `view this email as a webpage`
        - `You are receiving this email because you are subscribed`
 
-      Per modificare una voce, selezionarla e fare clic su **modifica** ![ icona modifica ](../../media/ITPro-EAC-EditIcon.png) . Per rimuovere una voce, selezionarla e fare clic su **Rimuovi** ![ icona Rimuovi ](../../media/ITPro-EAC-DeleteIcon.png) .
+      Per modificare una voce, selezionarla e fare clic **sull'icona** ![ ](../../media/ITPro-EAC-EditIcon.png) Modifica. Per rimuovere una voce, selezionarla e fare clic **sull'icona** ![ ](../../media/ITPro-EAC-DeleteIcon.png) Rimuovi.
 
        Al termine, fare clic su **OK**.
 
-   - **Eseguire le operazioni seguenti**: selezionare **modifica le proprietà del messaggio** \> **impostare il livello di probabilità di posta indesiderata (SCL)**. Nella finestra di dialogo **specifica SCL** visualizzata, configurare una delle seguenti impostazioni:
+   - **Eseguire le operazioni seguenti:** Selezionare **Modifica le proprietà del messaggio** per impostare il livello di probabilità di posta indesiderata \> **(SCL).** Nella finestra **di dialogo Specifica SCL** visualizzata, configurare una delle impostazioni seguenti:
 
-     - Per contrassegnare i messaggi come **posta indesiderata**, selezionare **6**. L'azione configurata per il filtraggio della **posta indesiderata** nei criteri di protezione da posta indesiderata viene applicata ai messaggi (il valore predefinito è **Sposta messaggio nella cartella posta indesiderata**).
+     - Per contrassegnare i messaggi **come** posta indesiderata, selezionare **6.** L'azione configurata per  i verdetti del filtro posta indesiderata nei criteri di protezione dalla posta indesiderata viene applicata ai messaggi (il valore predefinito è Sposta messaggio nella cartella Posta **indesiderata).**
 
-     - Per contrassegnare i messaggi come **posta indesiderata con elevata sicurezza** selezionare **9**. L'azione configurata per il filtro di protezione da posta indesiderata con **sicurezza elevata** nei criteri di protezione da posta indesiderata viene applicata ai messaggi (il valore predefinito è **Move Message to junk email Folder**).
+     - Per contrassegnare i messaggi **come alta probabilità di posta indesiderata,** selezionare **9.** L'azione configurata per  i verdetti del filtro di protezione da posta indesiderata con alta probabilità nei criteri di protezione da posta indesiderata viene applicata ai messaggi (il valore predefinito è Sposta messaggio nella cartella Posta **indesiderata).**
 
-    Per ulteriori informazioni sui valori SCL, vedere [Spam Confidence Level (SCL) in EOP](spam-confidence-levels.md).
+    Per ulteriori informazioni sui valori SCL, vedere Il livello di probabilità di posta indesiderata [(SCL) in EOP.](spam-confidence-levels.md)
 
    Al termine, fare clic su **Salva**
 
-## <a name="use-powershell-to-create-mail-flow-rules-that-filter-bulk-email"></a>Utilizzo di PowerShell per creare regole del flusso di posta che filtrano la posta elettronica in blocco
+## <a name="use-powershell-to-create-mail-flow-rules-that-filter-bulk-email"></a>Utilizzare PowerShell per creare regole del flusso di posta che filtrano la posta elettronica in blocco
 
 Utilizzare la sintassi seguente per creare una o entrambe le regole del flusso di posta (espressioni regolari e parole):
 
@@ -133,13 +138,13 @@ Utilizzare la sintassi seguente per creare una o entrambe le regole del flusso d
 New-TransportRule -Name "<UniqueName>" [-SubjectOrBodyMatchesPatterns "<RegEx1>","<RegEx2>"...] [-SubjectOrBodyContainsWords "<WordOrPhrase1>","<WordOrPhrase2>"...] -SetSCL <6 | 9>
 ```
 
-In questo esempio viene creata una nuova regola denominata "filtro posta elettronica in blocco" che utilizza lo stesso elenco di espressioni regolari di precedenza nell'argomento per impostare i messaggi come **posta indesiderata**.
+In questo esempio viene creata una nuova regola denominata "Bulk email filtering - RegEx" che utilizza lo stesso elenco di espressioni regolari precedenti nell'argomento per impostare i messaggi come **posta indesiderata.**
 
 ```powershell
 New-TransportRule -Name "Bulk email filtering - RegEx" -SubjectOrBodyMatchesPatterns "If you are unable to view the content of this email\, please","\>(safe )?unsubscribe( here)?\</a\>","If you do not wish to receive further communications like this\, please","\<img height\="?1"? width\="?1"? src=.?http\://","To stop receiving these+emails\:http\://","To unsubscribe from \w+ (e\-?letter|e?-?mail|newsletter)","no longer (wish )?(to )?(be sent|receive) w+ email","If you are unable to view the content of this email\, please click here","To ensure you receive (your daily deals|our e-?mails)\, add","If you no longer wish to receive these emails","to change your (subscription preferences|preferences or unsubscribe)","click (here to|the) unsubscribe"... -SetSCL 6
 ```
 
-In questo esempio viene creata una nuova regola denominata "Bulk Email Filtering-Words" che utilizza lo stesso elenco di parole di precedenza nell'argomento per impostare i messaggi come **posta indesiderata con elevata attendibilità**.
+In questo esempio viene creata una nuova regola denominata "Filtro posta elettronica in blocco - Parole" che utilizza lo stesso elenco di parole precedenti nell'argomento per impostare i messaggi come alta probabilità di **posta indesiderata.**
 
 ```powershell
 New-TransportRule -Name "Bulk email filtering - Words" -SubjectOrBodyContainsWords "to change your preferences or unsubscribe","Modify email preferences or unsubscribe","This is a promotional email","You are receiving this email because you requested a subscription","click here to unsubscribe","You have received this email because you are subscribed","If you no longer wish to receive our email newsletter","to unsubscribe from this newsletter","If you have trouble viewing this email","This is an advertisement","you would like to unsubscribe or change your","view this email as a webpage","You are receiving this email because you are subscribed" -SetSCL 9
@@ -151,12 +156,12 @@ Per informazioni dettagliate su sintassi e parametri, vedere [New-TransportRule]
 
 Per verificare di aver configurato le regole del flusso di posta per filtrare la posta elettronica in blocco, eseguire una delle operazioni seguenti:
 
-- Nell'interfaccia di amministrazione di Exchange, andare a regole del **flusso di posta** \>  \> selezionare la regola \> fare clic su **Modifica** ![ icona modifica ](../../media/ITPro-EAC-EditIcon.png) e verificare le impostazioni.
+- Nell'interfaccia di amministrazione di Exchange, andare a **Regole** del flusso di posta selezionare la regola fare clic \>  \> \> **sull'icona** Modifica ![ modifica e verificare le ](../../media/ITPro-EAC-EditIcon.png) impostazioni.
 
-- In PowerShell, sostituire \<Rule Name\> con il nome della regola ed eseguire il comando riportato di seguito per verificare le impostazioni:
+- In PowerShell, \<Rule Name\> sostituire con il nome della regola ed eseguire il comando seguente per verificare le impostazioni:
 
   ```powershell
   Get-TransportRule -Identity "<Rule Name>" | Format-List
   ```
 
-- Da un account esterno, inviare un messaggio di prova a un destinatario coinvolto che contiene una delle frasi o modelli di testo e verificare i risultati.
+- Da un account esterno, inviare un messaggio di prova a un destinatario interessato contenente una delle frasi o modelli di testo e verificare i risultati.

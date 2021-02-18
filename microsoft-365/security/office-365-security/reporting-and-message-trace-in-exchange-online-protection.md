@@ -15,21 +15,21 @@ ms.custom:
 description: In questo articolo vengono appresi i report e gli strumenti per la risoluzione dei problemi disponibili per gli amministratori di Microsoft Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 86c9eb0ee050c4c1a40ef7f29ea3d01dc202be9a
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 783c7ea0aca47c805daf66592b401a98f739d071
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166676"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288080"
 ---
 # <a name="reporting-and-message-trace-in-eop"></a>Creazione di report e traccia dei messaggi in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Nelle organizzazioni di Microsoft 365 con cassette postali in Exchange Online o nelle organizzazioni Exchange Online Protection (EOP) autonome senza cassette postali di Exchange Online, EOP offre molti rapporti diversi che consentono di determinare lo stato generale e l'integrità dell'organizzazione. Sono inoltre disponibili strumenti per la risoluzione dei problemi relativi a eventi specifici, ad esempio il mancato recapito di un messaggio ai destinatari desiderati, e report di controllo per assicurare il rispetto dei requisiti di conformità.
 
@@ -45,19 +45,19 @@ Nelle organizzazioni di Microsoft 365 con cassette postali in Exchange Online o 
 
 Per ulteriori informazioni, vedere le risorse seguenti:
 
-- [Report di Microsoft 365 nell'interfaccia di amministrazione - Gruppi di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/activity-reports/office-365-groups)
+- [Report di Microsoft 365 nell'interfaccia di amministrazione - Gruppi di Microsoft 365](../../admin/activity-reports/office-365-groups.md)
 
-- [Report di Microsoft 365 nell'interfaccia di amministrazione - Attività di posta elettronica](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-activity)
+- [Report di Microsoft 365 nell'interfaccia di amministrazione - Attività di posta elettronica](../../admin/activity-reports/email-activity.md)
 
-- [Report di Microsoft 365 nell'interfaccia di amministrazione - Utilizzo delle app di posta elettronica](https://docs.microsoft.com/microsoft-365/admin/activity-reports/email-apps-usage)
+- [Report di Microsoft 365 nell'interfaccia di amministrazione - Utilizzo delle app di posta elettronica](../../admin/activity-reports/email-apps-usage.md)
 
-- [Report di Microsoft 365 nell'interfaccia di amministrazione - Utilizzo delle cassette postali](https://docs.microsoft.com/microsoft-365/admin/activity-reports/mailbox-usage)
+- [Report di Microsoft 365 nell'interfaccia di amministrazione - Utilizzo delle cassette postali](../../admin/activity-reports/mailbox-usage.md)
 
 ## <a name="security--compliance-reports-in-the-microsoft-365-admin-center"></a>Report sulla & sicurezza nell'interfaccia di amministrazione di Microsoft 365
 
 Questi report migliorati offrono un'esperienza di creazione di report interattiva per gli amministratori di EOP, che include informazioni di riepilogo e la possibilità di eseguire il drill-down per ulteriori dettagli.
 
-**Defender per Office 365:** visualizzare informazioni su collegamenti sicuri e allegati sicuri che fanno parte di Microsoft Defender per Office 365.
+**Defender per Office 365:** visualizzare informazioni su Collegamenti sicuri e allegati sicuri che fanno parte di Microsoft Defender per Office 365.
 
 **EOP:** consente di visualizzare informazioni sui rilevamenti di malware, messaggi falsificati, rilevamenti di posta indesiderata e flusso di posta da e verso l'organizzazione.
 

@@ -15,21 +15,21 @@ ms.collection:
 description: Informazioni su come installare e utilizzare il componente aggiuntivo per la segnalazione della posta indesiderata di Microsoft per segnalare messaggi di posta indesiderata, non indesiderata e phishing a Microsoft.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 171bdc43e565a0890cddcd1e48208b49774a5315
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: e22a1364e8d7a1447bbcf518cc339a681c57a8af
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167348"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286622"
 ---
 # <a name="install-and-use-the-junk-email-reporting-add-in-for-microsoft-outlook"></a>Installare e utilizzare il componente aggiuntivo per la segnalazione della posta indesiderata per Microsoft Outlook
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!NOTE]
 > Se attualmente non si utilizza il componente aggiuntivo per la [](enable-the-report-message-add-in.md) segnalazione della posta indesiderata, è consigliabile utilizzare il componente aggiuntivo Segnala messaggio o Segnala [phishing.](enable-the-report-phish-add-in.md) Per altre informazioni, vedere [Segnalazione di messaggi e file a Microsoft](report-junk-email-messages-to-microsoft.md).
@@ -38,7 +38,7 @@ Il componente aggiuntivo per la segnalazione della posta indesiderata per Micros
 
 In questo argomento viene illustrato come installare e utilizzare il componente aggiuntivo per la segnalazione della posta indesiderata.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Per installare il componente aggiuntivo per [](#install-the-junk-email-reporting-add-in) la segnalazione della posta indesiderata, vedere la sezione Installare il componente aggiuntivo per la segnalazione della posta indesiderata più avanti in questo articolo.
 
@@ -128,7 +128,7 @@ In questo argomento viene illustrato come installare e utilizzare il componente 
 
 4. Nella pagina **Installazione del componente aggiuntivo per la segnalazione della posta indesiderata** fare clic su **Avanti**.
 
-5. Rivedere il contratto di licenza, fare **clic** su Accetto i termini del Contratto di Licenza se si accettano le condizioni e quindi fare clic su **Avanti.**
+5. Rivedere il contratto di licenza, **fare** clic su Accetto i termini del Contratto di Licenza se si accettano le condizioni e quindi fare clic su **Avanti.**
 
 6. Al termine della procedura guidata, fare clic su **Fine**.
 

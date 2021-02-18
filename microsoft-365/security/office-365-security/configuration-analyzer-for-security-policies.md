@@ -18,21 +18,21 @@ ms.collection:
 description: Gli amministratori possono imparare a usare l'analizzatore della configurazione per trovare e correggere i criteri di sicurezza che si trovano al di sotto dei criteri di sicurezza standard e di protezione rigida preimpostati.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a78452cb3a7e4cb65c72d98b9322f217309a6d6f
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 6daa3ef2c3cd758022fc9dad325df4c5e4f38647
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165908"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288922"
 ---
 # <a name="configuration-analyzer-for-protection-policies-in-eop-and-microsoft-defender-for-office-365"></a>Analizzatore della configurazione per i criteri di protezione in EOP e Microsoft Defender per Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 L'analizzatore della configurazione nel Centro sicurezza & conformità fornisce una posizione centrale per trovare e correggere i criteri di sicurezza in cui le impostazioni si trovano al di sotto delle impostazioni del profilo di protezione Standard e Strict nei criteri di sicurezza [preimpostati.](preset-security-policies.md)
 
@@ -58,9 +58,9 @@ I tipi di criteri seguenti vengono analizzati dall'analizzatore della configuraz
 
 I **valori delle** impostazioni dei criteri Standard e **Strict** utilizzati come linee di base sono descritti in Impostazioni consigliate per EOP e Microsoft Defender per la sicurezza di [Office 365.](recommended-settings-for-eop-and-office365-atp.md)
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
-- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla pagina **dell'analizzatore della** configurazione, utilizzare <https://protection.office.com/configurationAnalyzer> .
+- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **dell'analizzatore della** configurazione, utilizzare <https://protection.office.com/configurationAnalyzer> .
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -72,8 +72,8 @@ I **valori delle** impostazioni dei criteri Standard e **Strict** utilizzati com
 
   > [!NOTE]
   >  
-  > - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie nel centro Sicurezza e conformità _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles).
-  > 
+  > - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie nel centro Sicurezza e conformità _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
+  >
   > - Anche il gruppo di ruoli di **Gestione organizzazione sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre inoltre l'accesso di sola lettura a tale funzionalità.
 
 ## <a name="use-the-configuration-analyzer-in-the-security--compliance-center"></a>Usare l'analizzatore della configurazione nel Centro sicurezza & conformità
@@ -106,7 +106,7 @@ Nella visualizzazione predefinita tutti gli elementi sono compressi. Accanto a o
 
 - **Verde:** tutte le impostazioni in tutti i criteri esistenti sono sicure almeno quanto il profilo di protezione.
 - **Ambra:** un numero limitato di impostazioni nei criteri esistenti non è così sicuro come il profilo di protezione.
-- **Rosso:** un numero significativo di impostazioni nei criteri esistenti non è sicuro come il profilo di protezione. Potrebbe trattarsi di alcune impostazioni in molti criteri o di molte impostazioni in un criterio.
+- **Rosso:** un numero significativo di impostazioni nei criteri esistenti non è così sicuro come il profilo di protezione. Potrebbe trattarsi di alcune impostazioni in molti criteri o di molte impostazioni in un criterio.
 
 Per i confronti più vantaggiosi, vedrai il testo: **Tutte le impostazioni seguono i** \<**Standard** or **Strict**\> **suggerimenti.** In caso contrario, verrà visualizzato il numero di impostazioni consigliate da modificare.
 
@@ -114,7 +114,7 @@ Se si espande **il nome del gruppo/impostazione** dei criteri, vengono rivelati 
 
 Se il confronto non contiene consigli per il miglioramento (verde), l'espansione dei criteri non rivela nulla. Se sono presenti diversi suggerimenti per il miglioramento (ambra o rosso), vengono visualizzate le impostazioni che richiedono attenzione e le informazioni corrispondenti vengono visualizzate nelle colonne seguenti:
 
-- Nome dell'impostazione che richiede attenzione. Ad esempio, nello screenshot precedente, si tratta della soglia di posta elettronica in **blocco** in un criterio di protezione da posta indesiderata.
+- Nome dell'impostazione che richiede attenzione. Ad esempio, nello screenshot precedente, si tratta della soglia di posta elettronica **inviata** in blocco in un criterio di protezione da posta indesiderata.
 
 - **Criterio:** il nome del criterio interessato che contiene l'impostazione.
 

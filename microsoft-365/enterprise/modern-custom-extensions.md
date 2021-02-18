@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Informazioni su come ottimizzare le prestazioni delle estensioni personalizzate nelle pagine moderne dei siti di SharePoint Online.
-ms.openlocfilehash: 3f9474bcfa3266742d2e01af2f1df6eb5c0d017c
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 92d328c64c89a1a01bbcd50fb7ad04affdf69af8
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691346"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287198"
 ---
 # <a name="optimize-custom-extension-performance-in-sharepoint-online-modern-site-pages"></a>Ottimizzare le prestazioni delle estensioni personalizzate nelle pagine moderne dei siti di SharePoint Online
 
@@ -45,16 +45,17 @@ I risultati possibili includono:
 - **Opportunità di miglioramento**  (giallo) Se vengono utilizzate cinque o più estensioni, verranno evidenziate in questa sezione come avviso fino a quando non vengono utilizzate sette o più estensioni, che verranno quindi evidenziate come attenzione necessaria.
 - **Nessuna azione necessaria** (verde): nessuna estensione richiede più di un secondo per il caricamento.
 
-Se un'estensione influisce sul tempo di caricamento della pagina o se nella  pagina sono presenti troppe estensioni, il risultato verrà visualizzato nella sezione Attenzione richiesta dei risultati. Fare clic sul risultato per visualizzare i dettagli sull'estensione che viene caricata lentamente o che sono state evidenziate troppe estensioni. Gli aggiornamenti futuri dello strumento Diagnostica pagine per SharePoint potrebbero includere novità relative alle regole di analisi, di conseguenza assicurarsi di usare sempre la versione più recente dello strumento.
+Se un'estensione influisce sul tempo di caricamento della pagina o se  la pagina contiene troppe estensioni, il risultato verrà visualizzato nella sezione Attenzione richiesta dei risultati. Fai clic sul risultato per visualizzare i dettagli sull'estensione che si sta caricando lentamente o che sono state evidenziate troppe estensioni. Gli aggiornamenti futuri dello strumento Diagnostica pagine per SharePoint potrebbero includere novità relative alle regole di analisi, di conseguenza assicurarsi di usare sempre la versione più recente dello strumento.
 
 ![Risultati del tempo di caricamento delle pagine](../media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
 
 Le informazioni disponibili nei risultati includono:
 
 - **Nome e ID**: informazioni di identificazione utili per trovare l’estensione nella pagina
-- **Totale**: tempo totale di inizializzazione e caricamento dell'estensione
-- **Caricamento modulo**: tempo necessario per recuperare e caricare l’estensione
-- **Inizializzazione**: tempo necessario per l'inizializzazione dell’estensione
+- **Totale** mostra il tempo totale per il caricamento e l'inizializzazione dell'estensione. È il tempo relativo totale impiegato dall'estensione per l'esecuzione nella pagina, dall'inizio alla fine.
+- **Caricamento modulo** mostra il tempo impiegato per scaricare, valutare e caricare i file JavaScript e CSS delle estensioni. Verrà quindi avviato il processo Init.
+- **Init** mostra il tempo impiegato dall'estensione per inizializzare i dati.
+    Si tratta di una chiamata asincrona e il tempo di init è il calcolo del tempo per la funzione onInit quando viene risolta la promessa restituita.
 
 Queste informazioni vengono fornite per consentire a progettisti e sviluppatori di risolvere i problemi. Devono essere fornite al team di progettazione e sviluppo.
 

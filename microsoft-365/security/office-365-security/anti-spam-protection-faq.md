@@ -19,21 +19,21 @@ ms.custom:
 description: Gli amministratori possono visualizzare le domande frequenti e le risposte sulla protezione dalla posta indesiderata in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8620ad3f99c45dae3442ec89d879124053c1a005
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 8abccdac73877c3f24114afaa78c13143e156868
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175980"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288970"
 ---
 # <a name="anti-spam-protection-faq"></a>Domande frequenti sulla protezione da posta indesiderata
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 In questo argomento vengono fornite domande frequenti e risposte sulla protezione antimalware per le organizzazioni di Microsoft 365 con cassette postali in Exchange Online o organizzazioni Exchange Online Protection (EOP) autonome senza cassette postali di Exchange Online.
 
@@ -54,7 +54,7 @@ Per domande e risposte sulla protezione anti-spoofing, vedere Domande frequenti 
 
 ## <a name="whats-a-zero-day-spam-variant-and-how-is-it-handled-by-the-service"></a>Che cos'è una variante di posta indesiderata zero-day e come viene gestita dal servizio?
 
-Una variante di posta indesiderata zero-day è una variante di posta indesiderata di prima generazione, precedentemente sconosciuta, che non è mai stata acquisita o analizzata, quindi i filtri di protezione da posta indesiderata non hanno ancora informazioni disponibili per rilevarla. Dopo che un campione di posta indesiderata zero-day viene acquisito e analizzato dagli analisti della posta indesiderata, se soddisfa i criteri di classificazione della posta indesiderata, i filtri di protezione da posta indesiderata vengono aggiornati per rilevarlo e non viene più considerato "zero-day".
+Una variante di posta indesiderata zero-day è una variante di posta indesiderata precedentemente sconosciuta di prima generazione che non è mai stata acquisita o analizzata, quindi i filtri di protezione da posta indesiderata non hanno ancora informazioni disponibili per rilevarla. Dopo che un campione di posta indesiderata zero-day viene acquisito e analizzato dagli analisti della posta indesiderata, se soddisfa i criteri di classificazione della posta indesiderata, i filtri di protezione da posta indesiderata vengono aggiornati per rilevarlo e non viene più considerato "zero-day".
 
 **Nota:** Se si riceve un messaggio che potrebbe essere una variante di posta indesiderata zero-day, per aiutarci a migliorare il servizio, inviare il messaggio a Microsoft utilizzando uno dei metodi descritti in Segnalare messaggi e file a [Microsoft.](report-junk-email-messages-to-microsoft.md)
 
@@ -128,7 +128,7 @@ Le linee guida presentate di seguito rappresentano le procedure ottimali per l'i
 
 - **Il dominio di posta elettronica di origine deve essere risolto in DNS.**
 
-  Ad esempio, se il mittente è user@fabrikam, il dominio fabrikam viene risolto nell'indirizzo IP 192.0.43.10.
+  Ad esempio, se il mittente è user@fabrikam, il dominio fabrikam si risolve nell'indirizzo IP 192.0.43.10.
 
   Se un dominio di invio non ha record A e record MX in DNS, il servizio instrada il messaggio attraverso il pool di recapito ad altro rischio a prescindere che il contenuto del messaggio sia posta indesiderata o meno. Per ulteriori informazioni sul pool di recapito ad alto rischio, vedere Pool di recapito ad alto rischio [per i messaggi in uscita.](high-risk-delivery-pool-for-outbound-messages.md)
 
@@ -146,7 +146,7 @@ Le linee guida presentate di seguito rappresentano le procedure ottimali per l'i
 
   [Configurazione di SPF per evitare lo spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
-  [Domande frequenti sui domini](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
+  [Domande frequenti sui domini](../../admin/setup/domains-faq.yml#how-can-i-validate-spf-records-for-my-domain)
 
 - **Per accedere alla posta elettronica con DKIM, utilizzare la canonicalizzazione semplice.**
 

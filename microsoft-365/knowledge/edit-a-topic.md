@@ -4,6 +4,7 @@ description: Come modificare un argomento esistente in Microsoft Viva Topics.
 author: efrene
 ms.author: efrene
 manager: pamgreen
+audience: admin
 ms.reviewer: cjtan
 ms.topic: article
 ms.prod: microsoft-365-enterprise
@@ -13,12 +14,12 @@ ms.collection:
 - m365initiative-topics
 ms.service: ''
 localization_priority: Normal
-ms.openlocfilehash: 4194328804285f93f023092f1c7ac31d31a581da
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 9dfad7e179699c599d9320390aaefd2dac176fbb
+ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107461"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50279411"
 ---
 # <a name="edit-an-existing-topic"></a>Modificare un argomento esistente 
 
@@ -31,7 +32,7 @@ ms.locfileid: "50107461"
 In Viva Topics puoi modificare un argomento esistente. Potrebbe essere necessario eseguire questa operazione se si desidera correggere o aggiungere ulteriori informazioni a una pagina dell'argomento esistente. 
 
 > [!Note] 
-> Anche se le informazioni contenute in un argomento raccolto dall'intelligenza artificiale sono limitate per motivi di [sicurezza,](topic-experiences-security-trimming.md)tenere presente che le informazioni che si aggiungono manualmente quando si modifica un argomento esistente sono visibili a tutti gli utenti che dispongono delle autorizzazioni per visualizzare gli argomenti. 
+> Anche se le informazioni contenute in un argomento raccolto dall'intelligenza artificiale sono limitate per motivi di [sicurezza,](topic-experiences-security-trimming.md)tenere presente che la descrizione dell'argomento e le informazioni sulle persone che aggiungi manualmente durante la modifica di un argomento esistente sono visibili a tutti gli utenti che dispongono delle autorizzazioni per visualizzare gli argomenti. 
 
 ## <a name="requirements"></a>Requisiti
 
@@ -82,11 +83,14 @@ I knowledge manager possono inoltre modificare gli argomenti direttamente dalla 
 
     È inoltre possibile utilizzare <b>l'opzione Da</b> un collegamento per aggiungere un file o una pagina specificando l'URL. 
 
+   > [!Note] 
+   > I file e le pagine aggiunti devono trovarsi nello stesso tenant di Microsoft 365. Se vuoi aggiungere un collegamento a una risorsa esterna nell'argomento, puoi aggiungerlo tramite l'icona canvas nel passaggio 9.
+
 6. La <b>sezione File e pagine suggeriti</b> mostra i file e le pagine che l'intelligenza artificiale suggerisce di associare all'argomento.
 
    ![Sezione File e pagine suggeriti](../media/knowledge-management/suggested-files-and-pages.png)</br>
 
-    Puoi creare un file o una pagina suggerita in un file o una pagina aggiunta selezionando l'icona aggiunta.
+    Puoi modificare un file o una pagina suggerita in un file o una pagina aggiunta selezionando l'icona aggiunta.
 
 7.  La <b>sezione Siti correlati</b> mostra i siti che dispongono di informazioni sull'argomento. 
 
@@ -96,7 +100,7 @@ I knowledge manager possono inoltre modificare gli argomenti direttamente dalla 
     
     ![Selezionare un sito](../media/knowledge-management/sites.png)</br>
 
-8. La <b>sezione Argomenti correlati</b> mostra le connessioni esistenti tra gli argomenti. È possibile aggiungere una connessione a un argomento diverso selezionando il pulsante Connetti <b>a</b> un argomento correlato, quindi digitando il nome dell'argomento correlato e selezionandolo dai risultati della ricerca. 
+8. Nella <b>sezione Argomenti correlati</b> vengono illustrate le connessioni esistenti tra gli argomenti. È possibile aggiungere una connessione a un argomento diverso selezionando il pulsante Connetti <b>a</b> un argomento correlato, quindi digitando il nome dell'argomento correlato e selezionandolo dai risultati della ricerca. 
 
    ![Sezione Argomenti correlati](../media/knowledge-management/related-topic.png)</br>  
 
@@ -107,6 +111,14 @@ I knowledge manager possono inoltre modificare gli argomenti direttamente dalla 
    L'argomento correlato aggiunto verrà visualizzato come argomento connesso.
 
    ![Argomenti correlati connessi](../media/knowledge-management/related-topics-final.png)</br> 
+
+   Per rimuovere un argomento correlato, selezionare l'argomento che si desidera rimuovere, quindi selezionare <b>l'icona Rimuovi</b> argomento.</br>
+ 
+   ![Rimuovere l'argomento correlato](../media/knowledge-management/remove-related.png)</br>  
+
+   Selezionare quindi <b>Rimuovi</b>.</br>
+
+   ![Conferma rimozione](../media/knowledge-management/remove-related-confirm.png)</br> 
 
 
 9. Puoi anche aggiungere elementi statici alla pagina, ad esempio testo, immagini o collegamenti, selezionando l'icona dell'area di disegno, che puoi trovare sotto la breve descrizione. Selezionandola si aprirà la casella degli strumenti di SharePoint da cui è possibile scegliere l'elemento che si desidera aggiungere alla pagina.

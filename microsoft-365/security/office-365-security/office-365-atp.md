@@ -21,20 +21,20 @@ ms.custom:
 description: Microsoft Defender per Office 365 include allegati e collegamenti sicuri, strumenti avanzati anti-phishing, strumenti di report e funzionalità Threat Intelligence.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7624b9a62530e54a161bbc4aacc8bee56ed959b2
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 741b00a55ee73d16c82abd4806d06660d49be65b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150725"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287666"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender per Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!IMPORTANT]
 > Questo articolo è rivolto ai clienti aziendali di [Microsoft Defender per Office 365](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description). Se si utilizza Outlook.com, Microsoft 365 Family o Microsoft 365 Personal e si cercano informazioni su Collegamenti sicuri o Allegati sicuri in Outlook, vedere [Sicurezza avanzata Outlook.com per gli abbonati a Microsoft 365](https://support.microsoft.com/office/882d2243-eab9-4545-a58a-b36fee4a46e2).
@@ -92,7 +92,7 @@ La tabella seguente riepiloga cosa è incluso in ogni piano.
 
 - La caratteristica [Documenti sicuri](safe-docs.md) è disponibile solo per gli utenti che dispongono di licenze Microsoft 365 E5 o Microsoft 365 E5 Security (non incluse nei piani di Microsoft Defender per Office 365).
 
-- Se l'abbonamento attuale non include Microsoft Defender per Office 365, [contattare il reparto vendite per iniziare con una versione di valutazione](https://go.microsoft.com/fwlink/p/?LinkId=518644) e vedere cosa Microsoft Defender per Office 365 può fare per l'organizzazione.
+- Se l'abbonamento attuale non include Microsoft Defender per Office 365, [contattare il reparto vendite per iniziare con una versione di valutazione](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html) e vedere cosa Microsoft Defender per Office 365 può fare per l'organizzazione.
 
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>Configurazione criteri di Microsoft Defender per Office 365
 
@@ -149,7 +149,7 @@ Per accedere alle funzionalità di Microsoft Defender per Office 365 nel Centro 
 
 |Ruolo o gruppo di ruoli|Risorse per approfondire|
 |---|---|
-|Amministratore globale, che può essere assegnato a Azure Active Directory o al Centro sicurezza e conformità|[Informazioni sui ruoli di amministratore di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles)|
+|Amministratore globale, che può essere assegnato a Azure Active Directory o al Centro sicurezza e conformità|[Informazioni sui ruoli di amministratore di Microsoft 365](../../admin/add-users/about-admin-roles.md)|
 |Amministratore della sicurezza, che può essere assegnato a Azure Active Directory o al Centro sicurezza e conformità|[Autorizzazioni del ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) <p> [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md)|
 |Gestione dell'organizzazione di Exchange Online (assegnata a Exchange Online)|[Autorizzazioni in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo) <p> [Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)|
 |Ricerca ed eliminazione (questa operazione è assegnata solo al Centro sicurezza e conformità)|[Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md)|

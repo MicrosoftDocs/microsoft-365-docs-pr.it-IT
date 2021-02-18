@@ -19,18 +19,18 @@ description: Durante e dopo un'indagine automatizzata in Microsoft 365, è possi
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 36cce42d0986cc793753d247d97315616f86f986
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 9ab32444f2c0b4f9f6140c20fe8356f016d62c30
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175599"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287078"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Dettagli e risultati di un'indagine automatizzata in Microsoft 365
 
 **Si applica a**
-- [Microsoft Defender per Office 365 piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender per Office 365 Piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Quando si [verifica un'indagine](office-365-air.md) automatizzata in [Microsoft Defender per Office 365,](office-365-atp.md)i dettagli su tale indagine sono disponibili durante e dopo il processo di indagine automatizzata. Se si dispone delle autorizzazioni necessarie, è possibile visualizzare tali dettagli nel Centro sicurezza Microsoft 365. I dettagli dell'indagine forniscono lo stato aggiornato e la possibilità di approvare eventuali azioni in sospeso.
 
@@ -45,8 +45,8 @@ Lo stato dell'analisi indica l'avanzamento dell'analisi e delle azioni. Durante 
 |:---|:---|
 |**In avvio**|L'indagine è stata attivata e in attesa di avviare l'esecuzione.|
 |**In esecuzione**|Il processo di indagine è iniziato ed è in corso. Questo stato si verifica anche quando [vengono approvate azioni in](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions) sospeso.|
-|**Nessuna minaccia trovata**|L'indagine è terminata e non sono state identificate minacce (account utente, messaggio di posta elettronica, URL o file). <p> **SUGGERIMENTO:** se si sospetta che sia stato perso qualcosa (ad esempio un falso negativo), è possibile eseguire un'azione utilizzando [Esplora minacce.](threat-explorer.md)|
-|**Minacce trovate**|L'indagine automatizzata ha rilevato problemi, ma non sono disponibili azioni di correzione specifiche per risolverli. <p> Lo **stato Minacce trovate** può verificarsi quando è stato identificato un tipo di attività dell'utente, ma non sono disponibili azioni di pulizia. Tra gli esempi sono incluse le seguenti attività utente: <br/>- Un [evento di prevenzione della](https://docs.microsoft.com/Microsoft-365/compliance/data-loss-prevention-policies) perdita di dati (DLP)<br/>- Anomalia di invio di un messaggio di posta elettronica<br/>- Malware inviato<br/>- Phish inviato <p> L'indagine non ha rilevato URL, file o messaggi di posta elettronica dannosi da correggere e nessuna attività della cassetta postale da correggere, ad esempio la disattivazione delle regole di inoltro o della delega. <p> **SUGGERIMENTO:** se si sospetta che sia stato perso qualcosa (ad esempio un falso negativo), è possibile analizzare ed eseguire un'azione utilizzando [Esplora minacce.](threat-explorer.md)|
+|**Nessuna minaccia trovata**|L'indagine è terminata e non sono state identificate minacce (account utente, messaggio di posta elettronica, URL o file). <p> **SUGGERIMENTO:** se si sospetta che sia stato perso qualcosa (ad esempio un falso negativo), è possibile eseguire un'azione usando [Esplora minacce.](threat-explorer.md)|
+|**Minacce trovate**|L'indagine automatizzata ha rilevato problemi, ma non sono disponibili azioni di correzione specifiche per risolverli. <p> Lo **stato Minacce trovate** può verificarsi quando è stato identificato un tipo di attività dell'utente, ma non sono disponibili azioni di pulizia. Tra gli esempi sono incluse le seguenti attività utente: <br/>- Un [evento di prevenzione della](../../compliance/data-loss-prevention-policies.md) perdita di dati (DLP)<br/>- Anomalia di invio di un messaggio di posta elettronica<br/>- Malware inviato<br/>- Phish inviato <p> L'indagine non ha rilevato URL, file o messaggi di posta elettronica dannosi da correggere e nessuna attività della cassetta postale da correggere, ad esempio la disattivazione delle regole di inoltro o della delega. <p> **SUGGERIMENTO:** se si sospetta che sia stato perso qualcosa (ad esempio un falso negativo), è possibile analizzare ed eseguire un'azione utilizzando [Esplora minacce.](threat-explorer.md)|
 |**Terminated By System**|L'indagine è stata interrotta. Un'indagine può interrompersi per diversi motivi: <br/>- Le azioni in sospeso dell'indagine sono scadute. Timeout delle azioni in sospeso dopo l'attesa dell'approvazione per una settimana.<br/>- Sono presenti troppe azioni. Ad esempio, se ci sono troppi utenti che fa clic su URL dannosi, può superare la capacità dell'indagine di eseguire tutti gli analizzatori, quindi l'indagine si interrompe.<p> **SUGGERIMENTO:** se un'indagine si interrompe prima dell'azione, provare a usare [Esplora](threat-explorer.md) minacce per individuare e risolvere le minacce.|
 |**Azione in sospeso**|L'indagine ha rilevato una minaccia, ad esempio un messaggio di posta elettronica dannoso, un URL dannoso o un'impostazione rischiosa della cassetta postale e un'azione per correggere tale minaccia in attesa [di approvazione.](air-review-approve-pending-completed-actions.md) <p> Lo **stato Azione** in sospeso viene attivato quando viene trovata qualsiasi minaccia con un'azione corrispondente. Tuttavia, l'elenco delle azioni in sospeso può aumentare durante l'esecuzione di un'indagine. Visualizzare i dettagli dell'indagine per verificare se altri elementi sono ancora in attesa di completamento.|
 |**Correzione**|L'indagine è terminata e tutte le azioni correttive sono state approvate (come completamente corretti). <p> **NOTA:** le azioni di correzione approvate possono contenere errori che impediscono l'azione da eseguire. Indipendentemente dal fatto che le azioni di correzione siano state completate correttamente, lo stato dell'indagine non cambia. Visualizzare i dettagli dell'indagine.|
@@ -87,7 +87,7 @@ Alcuni tipi di avvisi attivano un'indagine automatizzata in Microsoft 365. Per a
 
   La visualizzazione del conteggio cronologico e corrente in visualizzazioni diverse viene eseguita per indicare l'impatto della posta elettronica al momento dell'indagine e l'impatto corrente fino al momento in cui viene eseguita la correzione.
 
-- Nel contesto della posta elettronica, è possibile che nell'ambito dell'indagine venga visualizzata una minaccia di anomalia del volume. Un'anomalia del volume indica un picco di messaggi di posta elettronica simili attorno al tempo dell'evento di indagine rispetto agli anni precedenti. Un picco di traffico di posta elettronica insieme a determinate caratteristiche (ad esempio, il dominio dell'oggetto e del mittente, la similarità del corpo e l'IP del mittente) è tipico dell'inizio di campagne di posta elettronica o attacchi. Tuttavia, le campagne di posta elettronica in blocco, di posta indesiderata e legittime condividono in genere queste caratteristiche.
+- Nel contesto della posta elettronica, è possibile che nell'ambito dell'indagine venga visualizzata una minaccia di anomalia del volume. Un'anomalia del volume indica un picco di messaggi di posta elettronica simili attorno al tempo dell'evento di indagine rispetto agli anni precedenti. Un picco di traffico di posta elettronica insieme a determinate caratteristiche (ad esempio, il dominio dell'oggetto e del mittente, la similarità del corpo e l'IP del mittente) è tipico dell'inizio di campagne o attacchi di posta elettronica. Tuttavia, le campagne di posta elettronica in blocco, di posta indesiderata e legittime condividono in genere queste caratteristiche.
 
 - Le anomalie del volume rappresentano una potenziale minaccia e di conseguenza potrebbero essere meno gravi rispetto a malware o minacce di phish identificate tramite motori antivirus, detonazione o reputazione dannosa.
 

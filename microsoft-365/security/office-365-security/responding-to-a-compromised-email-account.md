@@ -20,21 +20,21 @@ search.appverid:
 description: Informazioni su come riconoscere e rispondere a un account di posta elettronica compromesso usando gli strumenti disponibili in Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a34780b260a6e4bbc2d8b3f53af6b67de04fbdcd
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 1bbd607386b49b45ebd7444c4a91d05e4cee475b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166664"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288610"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Rispondere a un account di posta elettronica compromesso
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 **Riepilogo** Informazioni su come riconoscere e rispondere a un account di posta elettronica compromesso in Microsoft 365.
 
@@ -90,7 +90,7 @@ Anche l’accesso all’account è stato riacquisito rapidamente, un utente mali
 
 ### <a name="step-1-reset-the-users-password"></a>Passaggio 1: Reimpostare la password dell’utente.
 
-Seguire le procedure in [reimpostare la password per un utente ](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords#reset-my-admin-password).
+Seguire le procedure in [reimpostare la password per un utente ](../../admin/add-users/reset-passwords.md#reset-my-admin-password).
 
 > [!IMPORTANT]
 >
@@ -104,7 +104,7 @@ Seguire le procedure in [reimpostare la password per un utente ](https://docs.mi
 >
 > - Assicurati di aggiornare le password dell'app. Le password dell'app non vengono automaticamente revocate quando si reimposta la password di un account utente. L'utente deve eliminare le password dell'app esistenti e crearne nuove. Per istruzioni, vedere [creare ed eliminare password per le app dalla pagina Verifica di sicurezza aggiuntiva](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page).
 >
-> - È altamente consigliabile abilitare l'autenticazione a più fattori (MFA) per evitare violazioni, soprattutto per gli account con privilegi amministrativi. Per maggiori dettagli sull’autenticazione a più fattori, visitare [Configurare l’autenticazione a più fattori](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/set-up-multi-factor-authentication).
+> - È altamente consigliabile abilitare l'autenticazione a più fattori (MFA) per evitare violazioni, soprattutto per gli account con privilegi amministrativi. Per maggiori dettagli sull’autenticazione a più fattori, visitare [Configurare l’autenticazione a più fattori](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
 
 ### <a name="step-2-remove-suspicious-email-forwarding-addresses"></a>Passaggio 2: Rimuovere indirizzi di inoltro della posta elettronica
 

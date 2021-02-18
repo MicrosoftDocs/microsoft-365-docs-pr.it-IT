@@ -1,7 +1,7 @@
 ---
 title: Conformità
 description: Questo articolo elenca gli standard di conformità rilevanti per Microsoft Managed Desktop.
-keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f2fae1e41562d1ae743ecd964b42082b3d6486e8
-ms.sourcegitcommit: 05657b39eaafc0503b01c6adcc5d8a5e615dc02c
+ms.openlocfilehash: 423a65e60ccd11ab7e9fd78ef3b7983ba0c609c2
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "50031352"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288718"
 ---
 # <a name="compliance"></a>Conformità
 
@@ -34,9 +34,10 @@ Microsoft Managed Desktop ha ottenuto le certificazioni seguenti:
 - [Attestazione Cloud Security Alliance (CSA) STAR](https://docs.microsoft.com/compliance/regulatory/offering-CSA-STAR-Attestation)
 - [Certificazione Cloud Security Alliance (CSA) STAR](https://docs.microsoft.com/compliance/regulatory/offering-CSA-Star-Certification)
 - [Controlli dell'organizzazione dei servizi (SOC) 1, 2, 3](https://docs.microsoft.com/compliance/regulatory/offering-SOC)
+- [Information Security Registered Assessor Program (IRAP)](https://docs.microsoft.com/compliance/regulatory/offering-ccsl-irap-australia)
 - [Payment Card Industry (PCI) Data Security Standard (DSS)](https://docs.microsoft.com/compliance/regulatory/offering-PCI-DSS)
 - [Health Insurance Portability and Accountability Act (HIPAA)](https://docs.microsoft.com/compliance/regulatory/offering-hipaa-hitech)
-- [Information Security Registered Assessor Program (IRAP)](https://docs.microsoft.com/compliance/regulatory/offering-ccsl-irap-australia)
+- [Health Information Trust Alliance (HITRUST) Common Security Framework (CSF)](https://docs.microsoft.com/compliance/regulatory/offering-hitrust)
 
 
 ## <a name="auditor-reports-and-compliance-certificates"></a>Report del revisore e certificati di conformità

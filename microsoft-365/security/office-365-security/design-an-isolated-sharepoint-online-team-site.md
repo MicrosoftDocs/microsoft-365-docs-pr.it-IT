@@ -19,20 +19,20 @@ ms.assetid: 775a4e9e-3135-4a48-b32f-bbdd9f2bd0aa
 description: Progettare siti del team di SharePoint Online isolati, inclusi determinare i livelli di autorizzazione, assegnare autorizzazioni agli utenti con gruppi di accesso e gruppi di Azure AD annidati.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f0f92a925948dbf6c8c5c1beb6b9c709f508c4b3
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 0d53f3b45e3f406dfb0b38bcc910bd34876acb08
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165512"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288336"
 ---
 # <a name="design-an-isolated-sharepoint-online-team-site"></a>Progettare un sito del team di SharePoint Online isolato
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 
  **Sintesi:** viene fornita la procedura dettagliata per la progettazione dei siti del team di SharePoint Online isolati.
@@ -66,7 +66,7 @@ Il set di autorizzazioni specifiche che determina le operazioni disponibili per 
 
 Ecco i gruppi e i livelli di autorizzazione di SharePoint predefiniti.
 
-![I gruppi e i livelli di autorizzazione di SharePoint predefiniti per un sito di SharePoint Online.](../../media/3f892ab4-6479-42f0-a505-1ba0ef94b9c6.png)
+![Gruppi e livelli di autorizzazione di SharePoint predefiniti per un sito di SharePoint Online.](../../media/3f892ab4-6479-42f0-a505-1ba0ef94b9c6.png)
 
 ## <a name="phase-2-assign-permissions-to-users-with-access-groups"></a>Fase 2: assegnare autorizzazioni agli utenti con i gruppi di accesso
 

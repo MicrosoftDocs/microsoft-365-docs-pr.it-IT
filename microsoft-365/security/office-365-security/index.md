@@ -16,18 +16,18 @@ ms.collection:
 description: Sicurezza in Office 365, da EOP a Defender per Office 365 Piani 1 e 2, standard e rigide configurazioni di sicurezza e altro ancora. Comprendere cosa si ha e come proteggere le proprietà.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 68570cedd0696510f2181edcea7ef149ace606e3
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: cbe95946ab7214efded8feca39578c364b948df0
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166418"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287902"
 ---
 # <a name="office-365-security-overview"></a>Panoramica della sicurezza di Office 365
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
 
 
 Questo articolo ti introdurrà alle nuove proprietà di sicurezza nel cloud. Sia che si fa parte di un Centro operativo per la sicurezza, che si sia un amministratore della sicurezza nuovo nello spazio o che si desideri un aggiornamento, è possibile iniziare.
@@ -44,7 +44,7 @@ Ogni abbonamento a Office 365 include funzionalità di sicurezza. Gli obiettivi 
 1. Microsoft Defender per Office 365 Piano 2 (Defender per Office P2)
 
 > [!NOTE]
-> Se l'abbonamento è stato acquistato ed è necessario implementare le funzionalità di sicurezza in questo *momento,* passare alla procedura descritta nell'articolo [Protezione dalle](protect-against-threats.md) minacce. Se non si ha una nuova sottoscrizione e si vuole conoscere la licenza prima di iniziare, consultare Fatturazione > Prodotti nell'interfaccia di amministrazione di [Microsoft 365.](https://admin.microsoft.com/AdminPortal/#/homepage)
+> Se l'abbonamento è stato acquistato ed è necessario implementare le funzionalità di sicurezza in questo *momento,* passare alla procedura descritta nell'articolo [Protezione dalle](protect-against-threats.md) minacce. Se non si ha di nuovo l'abbonamento e si vuole conoscere la licenza prima di iniziare, consultare Fatturazione > Prodotti nell'interfaccia di amministrazione di [Microsoft 365.](https://admin.microsoft.com/AdminPortal/#/homepage)
 
 La sicurezza di Office 365 si basa sulle protezioni principali offerte da EOP. EOP è presente in qualsiasi sottoscrizione in cui è possibile trovare le cassette postali di Exchange Online (tenere presente che tutti i prodotti di sicurezza qui descritti sono basati sul cloud).
 
@@ -141,10 +141,10 @@ Questa guida di riferimento rapido consente di comprendere quali funzionalità s
 
 - La caratteristica [Documenti sicuri](safe-docs.md) è disponibile solo per gli utenti che dispongono di licenze Microsoft 365 E5 o Microsoft 365 E5 Security (non incluse nei piani di Microsoft Defender per Office 365).
 
-- Se l'abbonamento corrente non include Microsoft Defender per Office 365 e lo si [desidera,](https://go.microsoft.com/fwlink/p/?LinkId=518644)contattare le vendite per avviare una versione di valutazione e scoprire come Microsoft Defender per Office 365 può funzionare nell'organizzazione.
+- Se l'abbonamento corrente non include Microsoft Defender per Office 365 e lo si [desidera,](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)contattare le vendite per avviare una versione di valutazione e scoprire come Microsoft Defender per Office 365 può funzionare nell'organizzazione.
 
 > [!TIP]
-> ***Suggerimento Insider** _. È possibile utilizzare il docs.microsoft.com sommario per informazioni su EOP e Microsoft Defender per Office 365. Tornare a questa pagina, Panoramica della sicurezza di [Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security)e si noterà che l'organizzazione del sommario è nella barra laterale. Inizia con la distribuzione (inclusa la migrazione) e quindi continua con la prevenzione, il rilevamento, l'indagine e la risposta. <p> Questa struttura è suddivisa in modo che gli argomenti _ *Security Administration** siano seguiti dagli **argomenti relativi alle operazioni di** sicurezza. Se si è un nuovo membro di uno di questi ruoli, utilizzare il collegamento in questo suggerimento e conoscere il sommario per imparare a usare lo spazio. Ricordarsi di usare *i collegamenti di feedback* e valutare gli *articoli* mentre si va. Il feedback ci aiuta a migliorare ciò che ti offriamo.
+> ***Suggerimento Insider** _. È possibile utilizzare il docs.microsoft.com sommario per informazioni su EOP e Microsoft Defender per Office 365. Tornare a questa pagina, Panoramica della sicurezza di [Office 365](index.md)e si noterà che l'organizzazione del sommario è nella barra laterale. Inizia con la distribuzione (inclusa la migrazione) e quindi continua con la prevenzione, il rilevamento, l'indagine e la risposta. <p> Questa struttura è suddivisa in modo che gli argomenti _ *Security Administration** siano seguiti dagli **argomenti relativi alle operazioni di** sicurezza. Se si è un nuovo membro di uno di questi ruoli, utilizzare il collegamento in questo suggerimento e conoscere il sommario per imparare a usare lo spazio. Ricordarsi di usare *i collegamenti di feedback* e valutare gli *articoli* mentre si va. Il feedback ci aiuta a migliorare ciò che ti offriamo.
 
 ## <a name="where-to-go-next"></a>Dove andare dopo
 

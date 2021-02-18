@@ -14,26 +14,26 @@ ms.collection:
 localization_priority: Normal
 search.appverid:
 - MET150
-description: Questa soluzione indica l'aspetto degli attacchi di cybersecurity più comuni in Microsoft 365 e come rispondere a tali attacchi
+description: Questa soluzione indica l'aspetto degli attacchi di cybersecurity più comuni in Microsoft 365 e come rispondervi
 ms.custom:
 - seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8dd7a90255fdd3e083a5d7306cac2e9ca6411024
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: d37fb232b717485c40218fd8a3c3117ba9b8322b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150184"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287642"
 ---
 # <a name="security-incident-response"></a>Risposta agli incidenti di sicurezza
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
  **Riepilogo:** Questa soluzione indica quali sono gli indicatori per gli attacchi di cybersecurity più comuni in Office 365, come confermare in modo positivo qualsiasi attacco e come rispondere ad esso.
 
@@ -45,7 +45,7 @@ Questa serie di articoli consente di comprendere l'aspetto di un particolare tip
 
 - Cos'è l'attacco e come funziona.
 
-- Quali segnali, denominati indicatori di compromissione (IOC), da cercare e come cercarli.
+- Quali segni, denominati indicatori di compromissione (IOC), da cercare e come cercarli.
 
 - Come confermare l'attacco in modo positivo.
 

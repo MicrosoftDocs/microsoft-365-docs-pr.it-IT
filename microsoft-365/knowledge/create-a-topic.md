@@ -14,19 +14,19 @@ ms.collection:
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: 2b543dbc8132f261814aec45e713874971b9b5d1
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: fbdd0e9b75e92d8080d9aaf43a2d1eaa8baacbc3
+ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242891"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "50279389"
 ---
 # <a name="create-a-new-topic"></a>Creare un nuovo argomento 
 
 In Viva Topics puoi creare un nuovo argomento se non ne viene individuato uno tramite l'indicizzazione o se la tecnologia IA non ha trovato prove sufficienti per stabilirlo come argomento.
 
 > [!Note] 
-> Anche se le informazioni contenute in un argomento raccolto dall'intelligenza artificiale sono limitate per motivi di [sicurezza,](topic-experiences-security-trimming.md)tenere presente che le informazioni contenute in un argomento creato manualmente sono visibili a tutti gli utenti che dispongono delle autorizzazioni per visualizzare l'argomento. 
+> Anche se le informazioni contenute in un argomento raccolto dall'intelligenza artificiale sono limitate per motivi di [sicurezza,](topic-experiences-security-trimming.md)tenere presente che la descrizione dell'argomento e le informazioni sulle persone in un argomento creato manualmente sono visibili a tutti gli utenti che dispongono delle autorizzazioni per visualizzare l'argomento. 
 
 
 ## <a name="requirements"></a>Requisiti
@@ -64,7 +64,7 @@ Per creare un nuovo argomento, è necessario:
 
     ![Descrizione dell'argomento](../media/knowledge-management/description.png)</br>
 
-4. Nella sezione <b>Persone aggiunte</b> puoi "aggiungere" una persona per mostrarla come esperta in materia nell'argomento. Iniziare digitandone il nome o l'indirizzo di posta elettronica nella casella aggiungi <b>un</b> nuovo utente e quindi selezionare l'utente che si desidera aggiungere dai risultati della ricerca. Puoi anche "rimuovere" questi elementi <b></b> selezionando l'icona Rimuovi dall'elenco nella scheda utente. Puoi anche trascinare la persona per modificare l'ordine di visualizzazione dell'elenco di persone.
+4. Nella sezione <b>Persone aggiunte</b> puoi "aggiungere" una persona per mostrarla come esperta in materia nell'argomento. Iniziare digitandone il nome o l'indirizzo di posta elettronica nella casella aggiungi <b>un</b> nuovo utente e quindi selezionare l'utente che si desidera aggiungere dai risultati della ricerca. Puoi anche "rimuovere" le voci <b></b> selezionando l'icona Rimuovi dall'elenco nella scheda utente. Puoi anche trascinare la persona per modificare l'ordine di visualizzazione dell'elenco di persone.
  
     ![Persone aggiunte](../media/knowledge-management/pinned-people.png)</br>
 
@@ -76,6 +76,9 @@ Per creare un nuovo argomento, è necessario:
     Per aggiungere un nuovo file, selezionare <b>Aggiungi,</b>selezionare il sito di SharePoint dai siti Frequenti o Seguiti e quindi selezionare il file dalla raccolta documenti del sito.
 
     È inoltre possibile utilizzare <b>l'opzione Da</b> un collegamento per aggiungere un file o una pagina specificando l'URL. 
+
+    > [!Note] 
+    > I file e le pagine aggiunti devono trovarsi nello stesso tenant di Microsoft 365. Se vuoi aggiungere un collegamento a una risorsa esterna nell'argomento, puoi aggiungerlo tramite l'icona canvas nel passaggio 8.
 
 
 6.  La <b>sezione Siti correlati</b> mostra i siti che dispongono di informazioni sull'argomento. 
@@ -97,6 +100,16 @@ Per creare un nuovo argomento, è necessario:
    L'argomento correlato aggiunto verrà visualizzato come argomento connesso.
 
    ![Argomenti correlati connessi](../media/knowledge-management/related-topics-final.png)</br> 
+
+   Per rimuovere un argomento correlato, selezionare l'argomento che si desidera rimuovere, quindi selezionare <b>l'icona Rimuovi</b> argomento.</br>
+ 
+   ![Rimuovere l'argomento correlato](../media/knowledge-management/remove-related.png)</br>  
+
+   Selezionare quindi <b>Rimuovi</b>.</br>
+
+   ![Conferma rimozione](../media/knowledge-management/remove-related-confirm.png)</br> 
+     
+ 
 
 
 8. Puoi anche aggiungere elementi statici alla pagina (ad esempio testo, immagini o collegamenti) selezionando l'icona dell'area di disegno, che puoi trovare sotto la breve descrizione. Selezionandola si aprirà la casella degli strumenti di SharePoint da cui è possibile scegliere l'elemento che si desidera aggiungere alla pagina.

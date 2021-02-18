@@ -19,21 +19,21 @@ ms.custom:
 description: Gli amministratori possono ottenere informazioni sulle impostazioni di Advanced Spam Filter (ASF) disponibili nei criteri di protezione da posta indesiderata in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ec316c98befada7a793f525be909ba0b8fa5e3ae
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 0b6db02815f5b50d199e10685e2895a174997fd2
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176052"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288682"
 ---
 # <a name="advanced-spam-filter-asf-settings-in-eop"></a>Impostazioni avanzate del filtro posta indesiderata (ASF) in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!NOTE]
 > Le impostazioni ASF attualmente disponibili nei criteri di protezione dalla posta indesiderata stanno per essere deprecate. Si consiglia di non utilizzare queste impostazioni nei criteri di protezione da posta indesiderata. La funzionalità di queste impostazioni ASF viene incorporata in altre parti dello stack di filtro. Per ulteriori informazioni, vedere Impostazioni dei criteri di protezione da posta [indesiderata di EOP.](recommended-settings-for-eop-and-office365-atp.md#eop-anti-spam-policy-settings)

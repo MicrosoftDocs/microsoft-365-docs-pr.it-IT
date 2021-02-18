@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 039ec1c3f9b0ba233f950d11b9d58be341b28121
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 520a5627d2cd280f28c4e2c3db0e565640a1eace
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49930595"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289162"
 ---
 # <a name="whats-new-in-microsoft-secure-score"></a>Novità di Microsoft Secure Score
 
@@ -35,10 +35,16 @@ ms.locfileid: "49930595"
 Per rendere Microsoft Secure Score un migliore rappresentante delle proprie condizioni di sicurezza, sono state apportate alcune modifiche. Per informazioni sulle modifiche pianificate, vedere [Cosa verrà in arrivo in Microsoft Secure Score?](microsoft-secure-score-whats-coming.md)
 
 Microsoft Secure Score è disponibile nel Centro sicurezza https://security.microsoft.com/securescore [Microsoft 365.](overview-security-center.md)
+    
+## <a name="february-2021"></a>Febbraio 2021
+
+### <a name="compatibility-with-graph-api"></a>Compatibilità con l'API Graph
+
+Gli elementi consigliati di Microsoft Secure Score forniti tramite l'API Graph avranno un aspetto e un peso uguali a quello attualmente visualizzato nel Centro sicurezza Microsoft 365.
 
 ## <a name="january-2021"></a>Gennaio 2021
 
-### <a name="added-our-first-security-recommendation-for-microsoft-teams"></a>Aggiunta del nostro primo consiglio di sicurezza per Microsoft Teams
+### <a name="added-our-first-security-recommendation-for-microsoft-teams"></a>Aggiunta del primo consiglio di sicurezza per Microsoft Teams
 
 I clienti di Microsoft Teams potranno vedere "Impedire agli utenti anonimi di partecipare alle riunioni" come nuova azione di miglioramento in Secure Score.
 
@@ -77,11 +83,11 @@ La possibilità di creare ticket ServiceNow tramite Secure Score passando a **Sh
 
 - Abilitare i criteri per bloccare l'autenticazione legacy
 
-## <a name="incompatibility-with-identity-secure-score-and-graph-api"></a>Incompatibilità con Identity Secure Score e l'API Graph
+## <a name="incompatibility-with-identity-secure-score"></a>Incompatibilità con Identity Secure Score
 
-Nella recente versione di Microsoft Secure Score è stato rilasciato un modello di punteggio migliorato. Queste modifiche consentono una visualizzazione più flessibile e precisa della posizione di sicurezza. Tuttavia, questi aggiornamenti hanno reso Microsoft Secure Score temporaneamente incompatibile con Identity Secure Score e l'API Graph.
+Nella recente versione di Microsoft Secure Score è stato rilasciato un modello di punteggio migliorato. Queste modifiche consentono una visualizzazione più flessibile e precisa della posizione di sicurezza. Tuttavia, questi aggiornamenti hanno reso Microsoft Secure Score temporaneamente incompatibile con Identity Secure Score.
 
-Nel tempo, Identity Secure Score e l'API Graph adottano il nuovo modello di punteggio. Fino a quel momento, i clienti potranno vedere differenze nei punteggi riportati da Microsoft Secure Score, Identity Secure Score e dall'API Graph. Ci scusiamo per eventuali inconvenienti e stiamo lavorando per garantire che queste esperienze siano più compatibili in futuro.
+Nel tempo, Identity Secure Score adotta il nuovo modello di punteggio. Fino a quel momento, i clienti potranno vedere differenze nei punteggi riportati da Microsoft Secure Score e Identity Secure Score. Ci scusiamo per eventuali inconvenienti e stiamo lavorando per garantire che queste esperienze siano più compatibili in futuro.
 
 ## <a name="updated-improvement-actions"></a>Azioni di miglioramento aggiornate
 

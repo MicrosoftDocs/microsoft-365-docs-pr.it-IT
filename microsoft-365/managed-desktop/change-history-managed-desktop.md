@@ -13,16 +13,28 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 8f6826865f38dad6040f65ac083be76450127299
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: d2ce8ecc12c73969a6ad9b939dc02c6b9cb360f4
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877201"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288408"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Cronologia modifiche per la documentazione di Microsoft Managed Desktop
 
 In questo articolo sono elencati gli articoli nuovi e aggiornati nella [documentazione di Microsoft Managed Desktop.](index.yml) Gli articoli "aggiornati" hanno apportato correzioni o aggiunte di materiale: correzioni secondarie come la correzione di errori di digitazione, stile o problemi di formattazione non sono elencate. È sempre possibile visualizzare la cronologia di commit specifici (inclusi i dettagli di eventuali modifiche) visitando il [repository su GitHub.](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)
+
+## <a name="january-2021"></a>Gennaio 2021
+Articolo nuovo o modificato | Descrizione
+--- | ---
+[Risolvere problemi trovati dallo strumento di valutazione dell'idoneità](get-ready/readiness-assessment-fix.md) | Articolo aggiornato
+[Modificare le impostazioni dopo la registrazione](get-started/conditional-access.md) | Articolo aggiornato
+[Usare i report](working-with-managed-desktop/reports.md) | Articolo aggiornato
+[Installare il portale aziendale intune nei dispositivi](get-started/company-portal.md) | Articolo aggiornato
+[Requisiti dei dispositivi](service-description/device-requirements.md) | Nuovo articolo
+[Conformità](intro/compliance.md) | Articolo aggiornato
+[Modalità di gestione degli aggiornamenti in Microsoft Managed Desktop](service-description/updates.md) | Articolo aggiornato
+[Accedere al portale di amministrazione](get-started/access-admin-portal.md) | Articolo aggiornato
 
 
 ## <a name="december-2020"></a>Dicembre 2020

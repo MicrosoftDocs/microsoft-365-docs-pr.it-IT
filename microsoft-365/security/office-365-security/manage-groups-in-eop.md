@@ -15,19 +15,19 @@ ms.custom:
 description: Gli amministratori delle organizzazioni di Exchange Online Protection (EOP) autonome possono imparare a creare, modificare e rimuovere gruppi di distribuzione e gruppi di sicurezza abilitati alla posta elettronica nell'interfaccia di amministrazione di Exchange (EAC) e in PowerShell di Exchange Online Protection (EOP) autonomo.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 01fe5c6ab1555749d38f9c092b05aca9befb67fe
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: d03b8a5129eb3b070f30de46b9b9c7bcc8e9898d
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166964"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286802"
 ---
 # <a name="manage-groups-in-eop"></a>Gestire gruppi in Exchange Online Protection
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
--  [Exchange Online Protection autonomo](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection autonomo](exchange-online-protection-overview.md)
 
 Nelle organizzazioni di Exchange Online Protection (EOP) autonome senza cassette postali di Exchange Online, è possibile creare, modificare e rimuovere i seguenti tipi di gruppi:
 
@@ -43,20 +43,20 @@ Nelle organizzazioni di Exchange Online Protection (EOP) autonome senza cassette
 
 È possibile gestire i gruppi nell'interfaccia di amministrazione di Exchange (EAC) e in PowerShell EOP autonomo.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Per aprire l'interfaccia di amministrazione di Exchange, vedere l'interfaccia di amministrazione [di Exchange in EOP autonomo.](exchange-admin-center-in-exchange-online-protection-eop.md)
 
 - Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Quando si gestiscono i gruppi in PowerShell EOP autonomo, è possibile che si verifichino limitazioni. Le procedure di PowerShell descritte in questo articolo utilizzano un metodo di elaborazione batch che comporta un ritardo di propagazione di alcuni minuti prima che i risultati dei comandi siano visibili.
+- Quando si gestiscono i gruppi in PowerShell EOP autonomo, è possibile che si verifichino limitazioni. Le procedure di PowerShell descritte in questo articolo utilizzano un metodo di elaborazione batch che determina un ritardo di propagazione di alcuni minuti prima che i risultati dei comandi siano visibili.
 
 - Per eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni in Exchange Online Protection. In particolare, è necessario il ruolo Gruppi  **di**  distribuzione, assegnato ai gruppi di ruoli Gestione organizzazione e Gestione destinatari per impostazione predefinita. Per ulteriori informazioni, vedere [Permissions in standalone EOP](feature-permissions-in-eop.md) and [Use the EAC modify the list of members in role groups.](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
 
 - Per informazioni sui tasti di scelta rapida applicabili alle procedure descritte in questo articolo, vedere Tasti di scelta rapida per l'interfaccia di amministrazione di [Exchange in Exchange Online.](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
 
 > [!TIP]
-> Problemi? Chiedere assistenza nel forum [Exchange Online Protection](https://go.microsoft.com/fwlink/p/?linkId=285351).
+> Problemi? Chiedere assistenza nel forum [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE).
 
 ## <a name="use-the-exchange-admin-center-to-manage-distribution-groups"></a>Utilizzare l'interfaccia di amministrazione di Exchange per gestire i gruppi di distribuzione
 
@@ -76,7 +76,7 @@ Nelle organizzazioni di Exchange Online Protection (EOP) autonome senza cassette
 
    - <sup>\*</sup>**Alias**: utilizzare questa casella per digitare il nome dell'alias per il gruppo. L'alias non può superare i 64 caratteri e deve essere univoco. Quando un utente digitare l'alias nella riga A di un messaggio di posta elettronica, viene risolto nel nome visualizzato del gruppo.
 
-   - <sup>\*</sup>**Indirizzo di** posta elettronica : l'indirizzo di posta elettronica è costituito dall'alias a sinistra del simbolo della posta (@) e da un dominio sul lato destro. Per impostazione predefinita, il valore **di Alias** viene utilizzato per il valore dell'alias, ma è possibile modificarlo. Per il valore del dominio, fare clic sull'elenco a discesa e selezionare e accettare il dominio nell'organizzazione.
+   - <sup>\*</sup>**Indirizzo di** posta elettronica : l'indirizzo di posta elettronica è costituito dall'alias a sinistra del simbolo di posta elettronica (@) e da un dominio sul lato destro. Per impostazione predefinita, il valore **di Alias** viene utilizzato per il valore dell'alias, ma è possibile modificarlo. Per il valore del dominio, fare clic sull'elenco a discesa e selezionare e accettare il dominio nell'organizzazione.
 
    - **Descrizione:** questa descrizione viene visualizzata nella rubrica e nel riquadro dei dettagli nell'interfaccia di amministrazione di Exchange.
 
@@ -172,7 +172,7 @@ New-EOPDistributionGroup -Name "<Unique Name>" -ManagedBy @("UserOrGroup1","User
 
 - Se non si utilizza il parametro _Alias,_ viene utilizzato il parametro _Name_ per il valore dell'alias. Gli spazi vengono rimossi e i caratteri non supportati vengono convertiti in punti interrogativi (?).
 
-- Se non si utilizza il _parametro PrimarySmtpAddress,_ il valore alias viene utilizzato nel _parametro PrimarySmtpAddress._
+- Se non si utilizza il parametro _PrimarySmtpAddress,_ il valore alias viene utilizzato nel _parametro PrimarySmtpAddress._
 
 - Se non si utilizza il parametro _Type,_ il valore predefinito è Distribution.
 

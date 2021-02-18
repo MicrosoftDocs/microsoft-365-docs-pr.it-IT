@@ -20,20 +20,20 @@ ms.collection:
 description: Gli amministratori possono conoscere la funzionalità Allegati sicuri in Microsoft Defender per Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5d2d348856dbd51cabe2b320d315406076921fee
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: f0d7028f33e7a9259d12930631f259ae1cedc4fe
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261538"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287030"
 ---
 # <a name="safe-attachments-in-microsoft-defender-for-office-365"></a>Allegati sicuri in Microsoft Defender per Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Allegati sicuri in [Microsoft Defender per Office 365](office-365-atp.md) offre un ulteriore livello di protezione per gli allegati di posta elettronica che sono già stati analizzati dalla protezione [antimalware in Exchange Online Protection (EOP).](anti-malware-protection.md) In particolare, allegati sicuri utilizza un ambiente virtuale per controllare gli allegati nei messaggi di posta elettronica prima di essere recapitati ai destinatari (un processo noto come _detonazione)._
 

@@ -19,20 +19,20 @@ ms.custom:
 description: Questo articolo illustra le modifiche da implementare alle funzionalità di protezione in Azure Information Protection
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 0769306c3aa2d1a357e1d5999d1a1406c02aa5f3
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: fe85a46e3f20cda62cd8a52bd5df92257f8fee57
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261562"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286670"
 ---
 # <a name="protection-features-in-azure-information-protection-rolling-out-to-existing-tenants"></a>Funzionalità di protezione in Azure Information Protection in distribuzione nei tenant esistenti
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Microsoft Defender per Office 365 Piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender per Office 365 Piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Per facilitare il passaggio iniziale per la protezione delle informazioni, a partire da luglio 2018 tutti i tenant idonei per Azure Information Protection avranno le funzionalità di protezione di Azure Information Protection attivate per impostazione predefinita. Le funzionalità di protezione in Azure Information Protection in precedenza erano note in Office 365 come Rights Management o Azure RMS. Se l'organizzazione ha un piano di servizio di Office E3 o un piano di servizio superiore, è ora possibile iniziare a proteggere le informazioni tramite Azure Information Protection quando queste funzionalità vengono implementazioni.
 

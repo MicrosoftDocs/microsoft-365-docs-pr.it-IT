@@ -21,21 +21,21 @@ ms.custom:
 description: Gli amministratori possono conoscere le funzionalità di protezione anti-phishing in Exchange Online Protection (EOP) e Microsoft Defender per Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f42ea3159dc5ed975852aaca10ce6f344b71d749
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 4fef8aa30f2b41c0ba84a6535969b12448e80562
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175632"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289054"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Protezione anti-phishing in Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 *Il phishing* è un attacco tramite posta elettronica che tenta di rubare informazioni riservate nei messaggi che sembrano essere provenienti da mittenti legittimi o attendibili. Esistono categorie specifiche di phishing. Ad esempio:
 
@@ -67,7 +67,7 @@ Microsoft Defender per Office 365 contiene funzionalità anti-phishing aggiuntiv
 
 - **Visualizzazioni della** campagna : Machine learning e altre euristiche identificano e analizzano i messaggi coinvolti in attacchi di phishing coordinati contro l'intero servizio e l'organizzazione. Per altre informazioni, vedere [Visualizzazioni campagna in Microsoft Defender per Office 365.](campaigns.md)
 
-- **Simulatore di attacco:** gli amministratori possono creare messaggi di phishing falsi e inviarli agli utenti interni come strumento didattico. Per altre informazioni, vedere [Simulatore di attacchi in Microsoft Defender per Office 365.](attack-simulator.md)
+- **Simulatore di** attacco: gli amministratori possono creare messaggi di phishing falsi e inviarli agli utenti interni come strumento didattico. Per altre informazioni, vedere [Simulatore di attacchi in Microsoft Defender per Office 365.](attack-simulator.md)
 
 ## <a name="other-anti-phishing-resources"></a>Altre risorse anti-phishing
 

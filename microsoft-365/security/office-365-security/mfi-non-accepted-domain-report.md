@@ -14,21 +14,21 @@ ms.custom:
 description: Gli amministratori possono imparare a usare il report dominio non accettato nel dashboard del flusso di posta nel Centro sicurezza & conformità per monitorare i messaggi dall'organizzazione locale in cui il dominio del mittente non è configurato in Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 573fb0ba2bf7981b6eb7df4eec7c8c4e5d596cac
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: 6d7355af49c5810a593c5776b70cf7497b43af6b
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150821"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287866"
 ---
 # <a name="non-accepted-domain-report-in-the-security--compliance-center"></a>Report dominio non accettato nel Centro sicurezza & conformità
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Il **report** Dominio non accettato nel [dashboard](mail-flow-insights-v2.md) del flusso di posta nel Centro sicurezza [&](https://protection.office.com) conformità visualizza informazioni sui messaggi provenienti dall'organizzazione di posta elettronica locale in cui il dominio del mittente non è configurato come dominio accettato nell'organizzazione di Microsoft 365.
 
@@ -68,7 +68,7 @@ Quando si seleziona una riga nella tabella, viene visualizzato un riquadro a com
 - **Numero messaggi**
 - **Messaggi di esempio:** è possibile fare clic **su Visualizza** messaggi di esempio per visualizzare i risultati [della](message-trace-scc.md) traccia dei messaggi per un campione dei messaggi interessati.
 
-![Riquadro a comparsa Dettagli dopo aver selezionato una riga nella visualizzazione Tabella dettagli nel report Dominio non accettato](../../media/mfi-non-accepted-domain-report-details-flyout.png)
+![Riquadro a comparsa Dettagli dopo la selezione di una riga nella visualizzazione Tabella dettagli nel report Dominio non accettato](../../media/mfi-non-accepted-domain-report-details-flyout.png)
 
 Per tornare alla visualizzazione report, fare clic su **Visualizza report.**
 

@@ -13,19 +13,19 @@ ms.assetid: 599b8048-1056-457b-aae4-c063138fd319
 description: Nella tabella seguente viene fornito un elenco delle funzionalità disponibili nel servizio di filtro della posta elettronica ospitato in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2c66c1cd8715717bae92ac81fbefe050f5e485eb
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 7dbdf30df0659565d775bfba2cf968ac56f6a4ac
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166172"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286850"
 ---
 # <a name="eop-features"></a>Funzionalità di Exchange Online Protection
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
--  [Exchange Online Protection autonomo](https://go.microsoft.com/fwlink/?linkid=2148611)
+-  [Exchange Online Protection autonomo](exchange-online-protection-overview.md)
 
 Nella tabella seguente viene fornito un elenco delle funzionalità disponibili nel servizio di filtro della posta elettronica ospitato in Exchange Online Protection (EOP).
 

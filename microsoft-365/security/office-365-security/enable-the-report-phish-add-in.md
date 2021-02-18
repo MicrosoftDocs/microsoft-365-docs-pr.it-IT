@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come abilitare il componente aggiuntivo Segnala phishing per Outlook e Outlook sul Web, per singoli utenti o per l'intera organizzazione.
-ms.openlocfilehash: abac24e447d0afe9bc725dd8f9a976dce900b278
-ms.sourcegitcommit: c0cfb9b354db56fdd329aec2a89a9b2cf160c4b0
+ms.openlocfilehash: 8242f3fcac27f8c76f7bef5a84c70960a204e3bd
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50094678"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286658"
 ---
 # <a name="enable-the-report-phishing-add-in"></a>Abilitare il componente aggiuntivo Segnala phishing
 
@@ -29,7 +29,7 @@ ms.locfileid: "50094678"
 
 
 > [!NOTE]
-> Se si è un amministratore di un'organizzazione di Microsoft 365 con cassette postali di Exchange Online, è consigliabile usare il portale Invii nel Centro sicurezza & conformità. Per ulteriori informazioni, vedere [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft.](admin-submission.md)
+> Gli amministratori di un'organizzazione di Microsoft 365 con cassette postali di Exchange Online consigliano di usare il portale Invii nel Centro sicurezza & conformità. Per ulteriori informazioni, vedere [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft.](admin-submission.md)
 
 I componenti aggiuntivi Segnala messaggio e Segnala phishing per Outlook e Outlook sul Web (in precedenza noto come Outlook Web App) consentono di segnalare facilmente falsi positivi (messaggi di posta elettronica non consentiti) o falsi negativi (posta elettronica non consentita) a Microsoft e alle relative consociati per l'analisi.
 
@@ -41,7 +41,7 @@ Il componente aggiuntivo Segnala phishing consente di segnalare solo i messaggi 
 
 Se si è un singolo utente, è possibile abilitare il componente aggiuntivo Segnala phishing [per se stessi.](#get-the-report-phishing-add-in-for-yourself)
 
-Se si è un amministratore globale o un amministratore di Exchange Online ed Exchange è configurato per l'utilizzo dell'autenticazione OAuth, è possibile abilitare il componente aggiuntivo [Segnala phishing per l'organizzazione.](#get-and-enable-the-report-phishing-add-in-for-your-organization) Il report phishing Add-In è ora disponibile tramite [la distribuzione centralizzata.](https://docs.microsoft.com/microsoft-365/admin/manage/centralized-deployment-of-add-ins)
+Se si è un amministratore globale o un amministratore di Exchange Online ed Exchange è configurato per l'utilizzo dell'autenticazione OAuth, è possibile abilitare il componente aggiuntivo [Segnala phishing per l'organizzazione.](#get-and-enable-the-report-phishing-add-in-for-your-organization) Il report phishing Add-In è ora disponibile tramite [la distribuzione centralizzata.](../../admin/manage/centralized-deployment-of-add-ins.md)
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
@@ -69,7 +69,7 @@ Se si è un amministratore globale o un amministratore di Exchange Online ed Exc
 
 2. Fare **clic su SCARICA ORA.**
 
-3. Nella finestra di dialogo visualizzata esaminare le condizioni per l'utilizzo e l'informativa sulla privacy e quindi fare clic su **Continua.**
+3. Nella finestra di dialogo visualizzata, esaminare le condizioni per l'utilizzo e l'informativa sulla privacy e quindi fare clic su **Continua.**
 
 4. Accedi usando l'account aziendale o dell'istituto di istruzione (per uso aziendale) o l'account Microsoft (per uso personale).
 
@@ -104,7 +104,7 @@ Dopo aver installato e abilitato il componente aggiuntivo, verranno visualizzate
 
 6. Nella finestra di dialogo visualizzata esaminare le informazioni sulla licenza e sulla privacy e quindi fare clic su **Continua.**
 
-7. Nella pagina **Configura componente aggiuntivo** visualizzata configurare le impostazioni seguenti:
+7. Nella pagina **Configura componente** aggiuntivo visualizzata configurare le impostazioni seguenti:
 
    - **Utenti assegnati:** selezionare uno dei seguenti valori:
 

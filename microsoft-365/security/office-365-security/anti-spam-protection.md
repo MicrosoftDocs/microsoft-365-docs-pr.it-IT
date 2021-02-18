@@ -21,21 +21,21 @@ ms.custom:
 description: Gli amministratori possono conoscere le impostazioni e i filtri di protezione da posta indesiderata che consentono di evitare la posta indesiderata in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2ae2c4f42d42c37f5b7a7df2b6c8306fd390b0af
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: f82e3f36d00994a68ed579779bed314318c51f47
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50175860"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288946"
 ---
 # <a name="anti-spam-protection-in-eop"></a>Protezione da posta indesiderata in EOP
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 > [!NOTE]
 > Questo argomento è destinato agli amministratori. Per gli argomenti relativi agli utenti finali, vedere [Overview of the Junk Email Filter](https://support.microsoft.com/office/5ae3ea8e-cf41-4fa0-b02a-3b96e21de089) e Learn about junk email and [phishing.](https://support.microsoft.com/office/86c1d76f-4d5a-4967-9647-35665dc17c31)
@@ -79,7 +79,7 @@ Ecco alcune procedure consigliate che si applicano a entrambi gli scenari:
 
 - **Esaminare le intestazioni dei messaggi di** protezione da posta indesiderata: questi valori diranno perché un messaggio è stato contrassegnato come posta indesiderata o perché ha ignorato il filtro posta indesiderata. Per ulteriori informazioni, vedere [Intestazioni messaggi della protezione da posta indesiderata](anti-spam-message-headers.md).
 
-- Puntare il record MX a **Microsoft 365:** per consentire a EOP di fornire la protezione migliore, è sempre consigliabile che la posta elettronica sia stata recapitata prima a Microsoft 365. Per istruzioni, vedere [Creare record DNS presso qualsiasi provider di hosting DNS per Microsoft 365.](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)
+- Puntare il record MX a **Microsoft 365:** per consentire a EOP di fornire la protezione migliore, è sempre consigliabile che la posta elettronica sia stata recapitata prima a Microsoft 365. Per istruzioni, vedere [Creare record DNS presso qualsiasi provider di hosting DNS per Microsoft 365.](../../admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
 
   Se il record MX punta a un'altra posizione(ad esempio, una soluzione o un dispositivo di protezione da posta indesiderata di terze parti), è difficile per EOP fornire un filtro della posta indesiderata accurato. In questo scenario, è necessario configurare il filtro avanzato per i connettori (noto anche come _skip listing)._ Per istruzioni, vedere [Enhanced Filtering for Connectors in Exchange Online.](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors)
 

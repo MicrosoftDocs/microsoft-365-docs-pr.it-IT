@@ -6,6 +6,7 @@ author: JoeDavies-MSFT
 manager: Laurawi
 ms.prod: m365-security
 ms.topic: article
+audience: Admin
 f1.keywords:
 - NOCSH
 ms.reviewer: martincoetzer
@@ -19,18 +20,18 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: e70274f5718d1c8e8fca1be780649cdb0fcef851
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 87f064627446a0e41f5ed864c2ae37a2f0e60ba4
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142898"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286814"
 ---
 # <a name="common-identity-and-device-access-policies"></a>Criteri comuni di identità e accesso dei dispositivi
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
 - Azure
 
 Questo articolo descrive i criteri consigliati comuni per proteggere l'accesso ai servizi cloud di Microsoft 365, incluse le applicazioni locali pubblicate con il proxy di applicazione di Azure Active Directory (Azure AD).
@@ -45,9 +46,9 @@ Nel diagramma seguente viene illustrato il set di criteri consigliato. Mostra a 
 
 [Vedere una versione più grande di questa immagine](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/microsoft-365-policies-configurations/Identity_device_access_policies_byplan.png)
 
-Ecco un riepilogo PDF di una pagina con collegamenti ai singoli criteri:
+Ecco un riepilogo pdf di una pagina con collegamenti ai singoli criteri:
 
-[![Immagine di scorrimento per l'identità e la protezione del dispositivo per gli stampati di Microsoft 365](../../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br> [Visualizzazione in formato PDF](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Download in formato PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
+[![Immagine di scorrimento per l'identità e la protezione dei dispositivi per gli stampati di Microsoft 365](../../media/microsoft-365-policies-configurations/MSFT-cloud-architecture-identity-device-protection-handout.png)](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) <br> [Visualizzazione in formato PDF](../../downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf) \| [Download in formato PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/MSFT-cloud-architecture-identity-device-protection-handout.pdf)
 
 Nella parte restante di questo articolo viene descritto come configurare questi criteri.
 
@@ -222,7 +223,7 @@ Il framework di protezione dei dati APP è organizzato in tre livelli di configu
 
 Per visualizzare i consigli specifici per ogni livello di configurazione e le app minime che devono essere protette, consulta Framework di protezione dei dati [usando i criteri di protezione delle app.](https://docs.microsoft.com/mem/intune/apps/app-protection-framework)
 
-Usando i principi descritti [nelle](microsoft-365-policies-configurations.md)configurazioni di identità e accesso ai dispositivi, i livelli di protezione di base e di protezione dei dati sensibili sono strettamente associati alle impostazioni di protezione dei dati avanzate aziendali di livello 2. Il livello di protezione altamente regolamentato è strettamente associato alle impostazioni di protezione dei dati aziendali di livello 3.
+Utilizzando i principi descritti [nelle](microsoft-365-policies-configurations.md)configurazioni di identità e accesso ai dispositivi, i livelli di protezione di base e dati sensibili sono strettamente associati alle impostazioni di protezione dei dati aziendali di livello 2. Il livello di protezione altamente regolamentato è strettamente associato alle impostazioni di protezione dei dati aziendali di livello 3.
 
 |Livello di protezione|Criteri di protezione delle app|Altre informazioni|
 |---|---|---|
@@ -240,9 +241,9 @@ Per creare nuovi criteri di protezione delle app per ogni piattaforma (iOS e And
 
 Per applicare i criteri di protezione app applicati in Intune, è necessario creare un criterio di accesso condizionale per richiedere app client approvate e le condizioni impostate nei criteri di protezione app.
 
-L'applicazione dei criteri di protezione app richiede un set di criteri descritti in Richiedi criteri di protezione delle app per l'accesso [alle app cloud con accesso condizionale.](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access) Questi criteri sono inclusi in questo set consigliato di criteri di configurazione delle identità e degli accessi.
+L'applicazione dei criteri di protezione app richiede un set di criteri descritti in Richiedi criteri di protezione delle app per l'accesso [alle app cloud con accesso condizionale.](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access) Questi criteri sono inclusi in questo set consigliato di criteri di configurazione di identità e accesso.
 
-Per creare i criteri di accesso condizionale che richiedono app approvate e protezione APP, seguire "Passaggio 1: Configurare un criterio di accesso condizionale di Azure AD per Microsoft 365" nello scenario 1: le app [di Microsoft 365](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)richiedono app approvate con criteri di protezione delle app, che consentono a Outlook per iOS e Android, ma bloccano la connessione a Exchange Online dei client Exchange ActiveSync in grado di OAuth.
+Per creare i criteri di accesso condizionale che richiedono app approvate e protezione APP, seguire "Passaggio 1: Configurare un criterio di accesso condizionale di Azure AD per Microsoft 365" nello scenario 1: le app [di Microsoft 365](https://docs.microsoft.com/azure/active-directory/conditional-access/app-protection-based-conditional-access#scenario-1-office-365-apps-require-approved-apps-with-app-protection-policies)richiedono app approvate con criteri di protezione delle app, che consentono a Outlook per iOS e Android, ma bloccano la connessione a Exchange Online da parte dei client Exchange ActiveSync in grado di OAuth.
 
    > [!NOTE]
    > Questo criterio garantisce agli utenti mobili di accedere a tutti gli endpoint di Office usando le app applicabili.
@@ -293,7 +294,7 @@ Per istruzioni dettagliate sulla creazione di criteri di conformità in Intune, 
 
 Le impostazioni seguenti sono consigliate per i PC che eseguono Windows 10 e versioni successive, come configurato nel passaggio **2:** impostazioni di conformità, del processo di creazione dei criteri.
 
-Per informazioni sulle > di valutazione del servizio di attestazione dell'integrità di **Windows,** vedere questa tabella.
+Per informazioni sulle > di valutazione del **servizio di attestazione** dell'integrità di Windows, vedere questa tabella.
 
 |Proprietà|Valore|Azione|
 |---|---|---|
@@ -391,4 +392,4 @@ Per richiedere la conformità per tutti i dispositivi:
 
 [![Passaggio 3: Criteri per utenti guest ed esterni](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-3.png)](identity-access-policies-guest-access.md)
 
-[Informazioni sui suggerimenti per i criteri per gli utenti guest ed esterni](identity-access-policies-guest-access.md)
+[Informazioni sui suggerimenti per i criteri per utenti guest ed esterni](identity-access-policies-guest-access.md)

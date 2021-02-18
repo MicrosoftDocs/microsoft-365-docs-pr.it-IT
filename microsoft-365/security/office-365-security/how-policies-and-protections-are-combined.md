@@ -17,21 +17,21 @@ ms.custom:
 description: Gli amministratori possono ottenere informazioni sull'ordine di applicazione delle protezioni in Exchange Online Protection (EOP) e su come il valore di priorità nei criteri di protezione determina quale criterio viene applicato.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7f3d4a607f702349d3a8e43c1eceba5ecbb697d7
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: ec21be03280a8b7da122569d51186efc1f756a69
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167480"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286838"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Ordine e precedenza della protezione della posta elettronica
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Nelle organizzazioni di Microsoft 365 con cassette postali in Exchange Online o nelle organizzazioni Exchange Online Protection (EOP) autonome senza cassette postali di Exchange Online, la posta elettronica in ingresso può essere contrassegnata da più forme di protezione. Ad esempio, i criteri anti-phishing incorporati in EOP disponibili per tutti i clienti di Microsoft 365 e i criteri anti-phishing più affidabili disponibili per i clienti di Microsoft Defender per Office 365. I messaggi passano anche attraverso più analisi di rilevamento per malware, posta indesiderata, phishing e così via. Data questa attività, potrebbe esserci confusione su quale criterio viene applicato.
 

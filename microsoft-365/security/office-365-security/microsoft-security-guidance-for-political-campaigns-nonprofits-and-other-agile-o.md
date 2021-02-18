@@ -22,20 +22,20 @@ ms.assetid: 10d1004b-42b6-4e2b-aaa2-18ddd9118f64
 description: "Riepilogo: indicazioni relative alla pianificazione e all'implementazione per organizzazioni dinamiche con un profilo maggiormente a rischio."
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e7d16f63b808edc008022b17d20461df6cd30e75
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
+ms.openlocfilehash: f8ed01d2c41529782c5c714bfe66096b97300712
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50150773"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287402"
 ---
 # <a name="microsoft-security-guidance-for-political-campaigns-nonprofits-and-other-agile-organizations"></a>Guida sulla sicurezza Microsoft per organizzazioni che si occupano della campagna politica, no profit e altre organizzazioni Agile
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
 
  **Riepilogo:** indicazioni relative alla pianificazione e all'implementazione per organizzazioni dinamiche con un profilo maggiormente a rischio.
 
@@ -69,6 +69,6 @@ Per ulteriori informazioni sulle funzionalità di protezione per una dimostrazio
 
 ## <a name="see-also"></a>Vedere anche
 
-[Guida al lab test (TLG) per adozione del cloud](https://docs.microsoft.com/microsoft-365/enterprise/cloud-adoption-test-lab-guides-tlgs)
+[Guida al lab test (TLG) per adozione del cloud](../../enterprise/cloud-adoption-test-lab-guides-tlgs.md)
 
-[Risorse sull'architettura IT di Microsoft Cloud](https://docs.microsoft.com/microsoft-365/solutions/cloud-architecture-models)
+[Risorse sull'architettura IT di Microsoft Cloud](../../solutions/cloud-architecture-models.md)

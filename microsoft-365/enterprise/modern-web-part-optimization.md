@@ -21,12 +21,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Informazioni su come usare Diagnostica pagine per ottimizzare le prestazioni delle web part nelle pagine moderne dei siti di SharePoint Online.
-ms.openlocfilehash: f7b72aa8ed212147c06660585c4e58e548762c35
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: ca1b9328ad71fdd4a3f3c6c6be47eaa3993d4fc7
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519752"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50287150"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Ottimizzare le prestazioni delle web part nelle pagine moderne di siti di SharePoint Online
 
@@ -56,13 +56,16 @@ Se il risultato **Le web part influiscono sul tempo di caricamento delle pagine*
 
 Le informazioni disponibili nei risultati includono:
 
-- **Autore**: indica se la web part è personalizzata oppure predefinita Microsoft
-- **Nome e ID**: informazioni di identificazione utili per trovare la web part nella pagina
-- **Totale**: tempo totale di caricamento della web part
-- **Caricamento modulo**: tempo necessario per recuperare e caricare i componenti della web part
-- **Caricamento lazy**: tempo per il caricamento posticipato delle web part non visualizzate nella sezione principale della pagina
-- **Inizializzazione**: tempo necessario per l'inizializzazione della web part
-- **Rendering**: tempo necessario per consentire alla web part di recuperare ed eseguire il rendering dei risultati
+- **Realizzato da** mostra se la web part è personalizzata o Microsoft OOTB.
+- **Il nome e l'ID** mostrano informazioni di identificazione che consentono di trovare la web part nella pagina.
+- **Totale** mostra il tempo totale per il caricamento, l'inizializzazione e il rendering della web part. È il tempo relativo totale impiegato dalla web part per il rendering nella pagina, dall'inizio alla fine.
+- **Caricamento modulo** mostra il tempo impiegato per scaricare, valutare e caricare i file JavaScript e CSS delle estensioni. Verrà quindi avviato il processo Init.
+- **Caricamento lazy** mostra il tempo per il caricamento posticipato delle web part non visualizzate nella sezione principale della pagina. Esistono alcune condizioni in cui sono presenti troppe web part di cui eseguire il rendering e vengono accodate per il rendering per ridurre al minimo il tempo di caricamento della pagina.
+- **Init** mostra il tempo impiegato dalla web part per inizializzare i dati.
+    Si tratta di una chiamata asincrona e il tempo di init è il calcolo del tempo per la funzione onInit quando viene risolta la promessa restituita.
+- **Il** rendering mostra il tempo impiegato per eseguire il rendering dell'interfaccia utente dopo il completamento del caricamento del modulo e di Init.
+    È il tempo di esecuzione di JavaScript per montare il dom nel documento (pagina).
+    Il rendering delle risorse asincrone, ad esempio le immagini, potrebbe richiedere tempo aggiuntivo.
 
 Queste informazioni vengono fornite per consentire a progettisti e sviluppatori di risolvere i problemi. Devono essere fornite al team di progettazione e sviluppo.
 
@@ -80,7 +83,7 @@ Sono tre le categorie delle possibili cause dei problemi di prestazioni delle we
   - Riutilizzare framework come _React_ e _Fabric imports_, che fanno parte di SharePoint Framework (SPFx). Per altre informazioni, vedere [Panoramica di SharePoint Framework](https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview).
   - Assicurarsi di usare la versione più recente di SharePoint Framework e di eseguire l'aggiornamento alle nuove versioni non appena disponibili.
 - Recupero e memorizzazione dei dati nella cache
-  - Se la web part si basa su chiamate aggiuntive al server per recuperare i dati per la visualizzazione, verificare che tali API server siano veloci e/o implementare la memorizzazione nella cache sul lato client (ad esempio, l'uso di _localStorage_ o _IndexedDB_ per set più grandi).
+  - Se la web part si basa su chiamate aggiuntive al server per recuperare i dati per la visualizzazione, assicurarsi che tali API server siano veloci e/o implementare la memorizzazione nella cache sul lato client (ad esempio, l'uso di _localStorage_ o _IndexedDB_ per set più grandi).
   - Se sono necessarie più chiamate per eseguire il rendering dei dati critici, provare a eseguirle in batch nel server o a usare altri metodi per consolidare le richieste in un'unica chiamata.
   - In alternativa, se alcuni elementi dei dati richiedono una API più lenta, ma non sono essenziali per il rendering iniziale, sdoppiarli in una chiamata separata che viene eseguita dopo il rendering dei dati critici.
   - Se più parti usano gli stessi dati, usare un livello dati comune per evitare chiamate duplicate.

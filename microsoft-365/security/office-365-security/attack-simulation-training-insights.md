@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Gli amministratori possono scoprire in che modo la formazione sulla simulazione degli attacchi nel Centro sicurezza Microsoft 365 influisce sui dipendenti e può ottenere informazioni dettagliate dai risultati della simulazione e della formazione.
 ms.technology: mdo
-ms.openlocfilehash: b7fd414cc355e768077198eb5215720c4d4a9444
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 43319089f604d32bf295392dd223cf65af8bd4be
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49933067"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288658"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>Acquisire informazioni approfondite attraverso la formazione del Simulatore di attacchi
 
@@ -34,7 +34,7 @@ Nel grafico è possibile vedere:
 - **Tasso di compromissione previsto** che riflette la percentuale media di compromissione per le simulazioni che usano lo stesso tipo di payload in altri tenant di Microsoft 365 che usano la formazione per la simulazione degli attacchi.
 - **Il tasso di compromissione** effettivo riflette la percentuale di dipendenti che sono ersi per la simulazione.
 
-Riflette inoltre la differenza tra il numero effettivo di dipendenti compromessi dall'attacco e il `<number> less susceptible to phishing` tasso di compromissione previsto. Questo numero di dipendenti è meno probabile che venga compromesso da attacchi simili in futuro, mentre indica come i dipendenti hanno fatto complessivamente in contrasto con il tasso di `<percent%> better than predicted rate` compromissione previsto.
+Riflette inoltre la differenza tra il numero effettivo di dipendenti compromessi dall'attacco e il `<number> less susceptible to phishing` tasso di compromissione previsto. Questo numero di dipendenti è meno probabile che venga compromesso da attacchi simili in futuro, mentre indica come i dipendenti hanno fatto nel complesso in contrasto con il tasso di `<percent%> better than predicted rate` compromissione previsto.
 
 > [!div class="mx-imgBorder"]
 > ![Panoramica della scheda impatto sul comportamento nella formazione sulla simulazione degli attacchi](../../media/attack-sim-preview-behavior-impact-card.png)
@@ -45,7 +45,7 @@ Per visualizzare un report più dettagliato, fare clic su Visualizza simulazioni
 
 Nella scheda [ **Simulations**](https://security.microsoft.com/attacksimulator?viewid=simulations)selezionare una simulazione per visualizzare i dettagli della simulazione, dove è presente la **sezione Azioni consigliate.**
 
-Nella sezione azioni consigliate vengono fornite informazioni dettagliate sui suggerimenti disponibili in [Microsoft Secure Score.](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-secure-score) Questi consigli si basano sul payload usato nella simulazione e ti aiuteranno a proteggere i dipendenti e il tuo ambiente. Facendo clic su ogni azione di miglioramento verranno fornite informazioni dettagliate.
+Nella sezione azioni consigliate vengono fornite informazioni dettagliate sui suggerimenti disponibili in [Microsoft Secure Score.](../mtp/microsoft-secure-score.md) Questi consigli si basano sul payload usato nella simulazione e ti aiuteranno a proteggere i dipendenti e il tuo ambiente. Facendo clic su ogni azione di miglioramento, verranno fornite informazioni dettagliate.
 
 > [!div class="mx-imgBorder"]
 > ![Sezione Azioni consigliate sul training per la simulazione degli attacchi](../../media/attack-sim-preview-recommended-actions.png)

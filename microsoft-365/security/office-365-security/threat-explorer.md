@@ -19,19 +19,19 @@ description: Usare Esplora risorse e i rilevamenti in tempo reale nel Centro sic
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5cbb8bd57a2e9bde8d19c960a71066d3ea5531c1
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: daa7b4014d1302743578d79c2e1e0e1d2d5ac61f
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233643"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288898"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Esplora minacce e rilevamenti in tempo reale
 
 
 **Si applica a**
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Se [l'organizzazione](#new-features-in-threat-explorer-and-real-time-detections)dispone di Microsoft Defender per [Office 365](office-365-atp.md)e si dispone delle autorizzazioni [necessarie,](#required-licenses-and-permissions)si dispone di rilevamenti di **Esplora** risorse o in tempo reale **(in** precedenza report in tempo *reale,* vedere le novità!). Nel Centro sicurezza & conformità passare a **Gestione** minacce e quindi scegliere **Esplora risorse** _o_ **rilevamenti in tempo reale.**
 
@@ -160,7 +160,7 @@ Attualmente, la posizione di recapito viene visualizzata nella griglia della pos
 
 ### <a name="system-overrides"></a>Sostituzioni del sistema
 
-*Le sostituzioni* di sistema consentono di creare eccezioni al percorso di recapito previsto di un messaggio. La posizione di recapito fornita dal sistema viene sovrascritta in base alle minacce e ad altri rilevamenti identificati dallo stack di filtro. Le sostituzioni del sistema possono essere impostate tramite criteri tenant o utente per recapitare il messaggio come suggerito dal criterio. Le sostituzioni possono identificare il recapito involontario di messaggi dannosi a causa di lacune di configurazione, ad esempio un criterio Mittente sicuro troppo ampio impostato da un utente. Questi valori di override possono essere:
+*Le sostituzioni* di sistema consentono di creare eccezioni al percorso di recapito previsto di un messaggio. Il percorso di recapito fornito dal sistema viene sovrascritto in base alle minacce e ad altri rilevamenti identificati dallo stack di filtro. Le sostituzioni del sistema possono essere impostate tramite criteri tenant o utente per recapitare il messaggio come suggerito dal criterio. Le sostituzioni possono identificare il recapito involontario di messaggi dannosi a causa di lacune di configurazione, ad esempio un criterio Mittente sicuro troppo ampio impostato da un utente. Questi valori di override possono essere:
 
 - Consentito dai criteri utente: un utente crea criteri a livello di cassetta postale per consentire domini o mittenti.
 - Bloccato dai criteri utente: un utente crea criteri a livello di casella di posta per bloccare domini o mittenti.
@@ -181,7 +181,7 @@ I miglioramenti includono:
 
 - Correzioni tra filtri URL *(URL* e dominio *URL* e dominio *URL* e percorso): gli aggiornamenti influiscono sulla ricerca dei messaggi che contengono un verdetto URL/clic. È stato abilitato il supporto per le ricerche indipendenti dal protocollo, in modo da poter cercare un URL senza utilizzare `http` . Per impostazione predefinita, la ricerca URL è mappata a http, a meno che non venga specificato in modo esplicito un altro valore. Ad esempio:
 
-   -  Eseguire la ricerca con e senza il prefisso nei campi di filtro `http://` **URL,** **URL Domain** e **URL Domain and Path.** Le ricerche dovrebbero mostrare gli stessi risultati.
+   -  Cercare con e senza il prefisso nei campi di filtro `http://` **URL,** **URL Domain** e **URL Domain and Path.** Le ricerche dovrebbero mostrare gli stessi risultati.
 
    -  Cercare il prefisso `https://` **nell'URL.** Se non viene specificato alcun valore, viene `http://` utilizzato il prefisso.
 
@@ -215,7 +215,7 @@ Per migliorare il processo di ricerca, abbiamo aggiornato Esplora minacce e i ri
 
 ### <a name="timezone-improvements"></a>Miglioramenti del fuso orario
 
-Verrà visualizzato il fuso orario per i record di posta elettronica nel portale e per i dati esportati. Sarà visibile tra esperienze come griglia di posta elettronica, riquadro a comparsa Dettagli, Sequenza temporale della posta elettronica e messaggi di posta elettronica simili, quindi il fuso orario per il set di risultati è chiaro.
+Verrà visualizzato il fuso orario per i record di posta elettronica nel portale e per i dati esportati. Sarà visibile tra esperienze come griglia di posta elettronica, riquadro a comparsa Dettagli, Sequenza temporale e messaggi di posta elettronica simili, quindi il fuso orario per il set di risultati è chiaro.
 
 > [!div class="mx-imgBorder"]
 > ![Visualizzare il fuso orario in Esplora risorse](../../media/TimezoneImprovements.png)
@@ -262,7 +262,7 @@ Sarà possibile visualizzare sia il GUID che il nome delle regole di trasporto a
 
 #### <a name="important-note"></a>Nota importante:
 
-La ricerca ETR e la disponibilità del nome dipendono dal ruolo specifico assegnato all'utente. Per visualizzare i nomi ETR e la ricerca, è necessario disporre di uno dei ruoli/autorizzazioni seguenti. Se non è stato assegnato alcuno di questi ruoli, non è possibile visualizzare i nomi delle regole di trasporto o cercare i messaggi utilizzando i nomi ETR. Tuttavia, è possibile visualizzare le informazioni sull'etichetta ETR e sul GUID nei dettagli del messaggio di posta elettronica. Altre esperienze di visualizzazione dei record nelle griglie di posta elettronica, nei riquadri a comparsa dei messaggi di posta elettronica, nei filtri e nell'esportazione non sono interessate.
+La disponibilità della ricerca ETR e del nome dipende dal ruolo specifico assegnato all'utente. Per visualizzare i nomi ETR e la ricerca, è necessario disporre di uno dei ruoli/autorizzazioni seguenti. Se non è stato assegnato alcuno di questi ruoli, non è possibile visualizzare i nomi delle regole di trasporto o cercare i messaggi utilizzando i nomi ETR. Tuttavia, è possibile visualizzare le informazioni sull'etichetta ETR e sul GUID nei dettagli del messaggio di posta elettronica. Altre esperienze di visualizzazione dei record nelle griglie di posta elettronica, nei riquadri a comparsa dei messaggi di posta elettronica, nei filtri e nell'esportazione non sono interessate.
 
 - Solo EXO - Prevenzione della perdita dei dati: tutti
 - Solo EXO - O365SupportViewConfig: All
@@ -278,7 +278,7 @@ All'interno della griglia di posta elettronica, del riquadro a comparsa Dettagli
 
 ### <a name="inbound-connectors"></a>Connettori in ingresso
 
-I connettori sono una raccolta di istruzioni che personalizzano il flusso della posta elettronica da e verso l'organizzazione di Microsoft 365 o Office 365. Consentono di applicare eventuali restrizioni o controlli di sicurezza. In Esplora minacce è ora possibile visualizzare i connettori correlati a un messaggio di posta elettronica e cercare i messaggi di posta elettronica utilizzando i nomi dei connettori.
+I connettori sono una raccolta di istruzioni che personalizzano il flusso della posta elettronica da e verso l'organizzazione di Microsoft 365 o Office 365. Consentono di applicare eventuali restrizioni o controlli di sicurezza. In Esplora minacce, è ora possibile visualizzare i connettori correlati a un messaggio di posta elettronica e cercare i messaggi di posta elettronica utilizzando i nomi dei connettori.
 
 La ricerca dei connettori è di natura "contiene", il che significa che anche le ricerche parziali delle parole chiave dovrebbero funzionare. All'interno della visualizzazione griglia principale, del riquadro a comparsa Dettagli e del file CSV esportato, i connettori vengono visualizzati nel formato Nome/GUID, come illustrato di seguito:
 
@@ -297,9 +297,9 @@ Queste nuove funzionalità sono descritte di seguito.
 
 ### <a name="preview-email-header-and-download-email-body"></a>Visualizzare in anteprima l'intestazione e scaricare il corpo del messaggio di posta elettronica
 
-È ora possibile visualizzare in anteprima un'intestazione di posta elettronica e scaricare il corpo del messaggio in Threat Explorer Gli amministratori possono analizzare le intestazioni e i messaggi di posta elettronica scaricati per le minacce. Poiché il download dei messaggi di posta elettronica può rischiare l'esposizione delle informazioni, questo processo è controllato dal controllo dell'accesso basato sui ruoli (RBAC). Un nuovo ruolo, *Anteprima,* deve essere aggiunto a un altro gruppo di ruoli (ad esempio Operazioni di sicurezza o Amministratore sicurezza) per consentire il download dei messaggi di posta elettronica nella visualizzazione tutti i messaggi di posta elettronica. Tuttavia, la visualizzazione dell'intestazione del messaggio di posta elettronica non richiede alcun ruolo aggiuntivo (diverso da quello necessario per visualizzare i messaggi in Esplora minacce).
+È ora possibile visualizzare in anteprima un'intestazione di posta elettronica e scaricare il corpo del messaggio in Threat Explorer Gli amministratori possono analizzare le intestazioni e i messaggi di posta elettronica scaricati per le minacce. Poiché il download dei messaggi di posta elettronica può rischiare l'esposizione delle informazioni, questo processo è controllato dal controllo dell'accesso basato sui ruoli (RBAC). Un nuovo ruolo, *Anteprima,* deve essere aggiunto a un altro gruppo di ruoli ,ad esempio Operazioni di sicurezza o Amministratore sicurezza, per consentire il download dei messaggi di posta elettronica nella visualizzazione tutti i messaggi di posta elettronica. Tuttavia, la visualizzazione dell'intestazione del messaggio di posta elettronica non richiede alcun ruolo aggiuntivo (diverso da quello necessario per visualizzare i messaggi in Esplora minacce).
 
-Explorer e i rilevamenti in tempo reale otterranno anche nuovi campi che forniscono un quadro più completo della posizione dei messaggi di posta elettronica. Queste modifiche semplificano la ricerca delle operazioni di sicurezza. Tuttavia, il risultato principale è che è possibile conoscere rapidamente la posizione dei messaggi di posta elettronica problematici.
+Explorer e i rilevamenti in tempo reale otterranno anche nuovi campi che forniscono un quadro più completo della posizione dei messaggi di posta elettronica. Queste modifiche facilitano la ricerca delle operazioni di sicurezza. Tuttavia, il risultato principale è che è possibile conoscere rapidamente la posizione dei messaggi di posta elettronica problematici.
 
 Come viene eseguita questa operazione? Lo stato del recapito è ora suddiviso in due colonne:
 
@@ -319,7 +319,7 @@ Ecco cosa può e non può vedere l'utente:
 |Recapitato|Bloccato|
 |Posta indesiderata|Sostituito|
 
-**Il percorso di** recapito mostra i risultati dei criteri e dei rilevamenti eseguiti dopo il recapito. È collegato **_all'azione recapito._** Questi sono i valori possibili:
+**Il percorso di** recapito mostra i risultati dei criteri e dei rilevamenti eseguiti dopo il recapito. È collegato **_all'azione di recapito._** Questi sono i valori possibili:
 
 - *Posta in arrivo o cartella:* il messaggio di posta elettronica si trova nella cartella Posta in arrivo o in una cartella (in base alle regole di posta elettronica).
 - *Locale o esterno:* la cassetta postale non esiste nel cloud ma è locale.
@@ -331,7 +331,7 @@ Ecco cosa può e non può vedere l'utente:
 
 ### <a name="email-timeline"></a>Sequenza temporale della posta elettronica
 
-La **sequenza temporale della** posta elettronica è una nuova funzionalità di Explorer che migliora l'esperienza di ricerca per gli amministratori. Riduce il tempo impiegato per controllare posizioni diverse per provare a comprendere l'evento. Quando si verificano più eventi contemporaneamente all'arrivo di un messaggio di posta elettronica, tali eventi vengono visualizzati in una visualizzazione sequenza temporale. Alcuni eventi che si verificano dopo il recapito della posta elettronica vengono acquisiti nella **colonna Azione** speciale. Gli amministratori possono combinare le informazioni della sequenza temporale con l'azione speciale eseguita sul post-recapito della posta per ottenere informazioni dettagliate sul funzionamento dei loro criteri, su dove è stata infine instradata la posta e, in alcuni casi, sulla valutazione finale.
+La **sequenza temporale della** posta elettronica è una nuova funzionalità di Explorer che migliora l'esperienza di ricerca per gli amministratori. Riduce il tempo impiegato per controllare posizioni diverse per provare a comprendere l'evento. Quando si verificano più eventi contemporaneamente all'arrivo di un messaggio di posta elettronica, tali eventi vengono visualizzati in una visualizzazione sequenza temporale. Alcuni eventi che si verificano dopo il recapito della posta elettronica vengono acquisiti nella **colonna Azione** speciale. Gli amministratori possono combinare le informazioni della sequenza temporale con l'azione speciale eseguita sul post-recapito della posta per ottenere informazioni dettagliate sul funzionamento dei criteri, su dove è stata infine instradata la posta e, in alcuni casi, sulla valutazione finale.
 
 Per ulteriori informazioni, vedere Analizzare e correggere i messaggi di posta elettronica dannosi [recapitati in Office 365.](investigate-malicious-email-that-was-delivered.md)
 
@@ -341,14 +341,14 @@ Per ulteriori informazioni, vedere Analizzare e correggere i messaggi di posta e
 
 **Explorer** \> **View Phish** \> **Clic** \> **Gli URL principali o** i **clic principali degli URL** \> selezionano qualsiasi record per aprire il riquadro a comparsa url.
 
-Quando si seleziona un URL nell'elenco, nel riquadro a comparsa viene visualizzato un nuovo pulsante **Esporta.** Utilizzare questo pulsante per spostare i dati in un foglio di calcolo di Excel per semplificare la creazione di report.
+Quando si seleziona un URL nell'elenco, viene visualizzato un nuovo pulsante **Esporta** nel riquadro a comparsa. Utilizzare questo pulsante per spostare i dati in un foglio di calcolo di Excel per semplificare la creazione di report.
 
 Seguire questo percorso per accedere alla stessa posizione nel report rilevamenti in tempo reale:
 
 **Explorer** \> **Rilevamenti in tempo reale** \> **View Phish** \> **URL** \> **URL principali o** **clic principali Selezionare** qualsiasi record per aprire il riquadro a comparsa URL passare alla \> \> **scheda** Clic.
 
 > [!TIP]
-> L'ID messaggio di rete associa il clic a messaggi di posta elettronica specifici quando si esegue una ricerca sull'ID tramite Esplora risorse o strumenti di terze parti associati. Tali ricerche identificano il messaggio di posta elettronica associato a un risultato del clic. La presenza dell'ID messaggio di rete correlato consente un'analisi più rapida e potente.
+> L'ID messaggio di rete mappa il clic indietro a messaggi di posta elettronica specifici quando si esegue una ricerca sull'ID tramite Esplora risorse o strumenti di terze parti associati. Tali ricerche identificano il messaggio di posta elettronica associato a un risultato del clic. La presenza dell'ID messaggio di rete correlato consente un'analisi più rapida e potente.
 
 > [!div class="mx-imgBorder"]
 > ![Scheda Clic in Esplora risorse](../../media/tp_ExportClickResultAndNetworkID.png)
@@ -380,7 +380,7 @@ Il report viene aggiornato per visualizzare i risultati rilevati dal malware nel
 
 ## <a name="view-phishing-url-and-click-verdict-data"></a>Visualizzare l'URL di phishing e fare clic sui dati del verdetto
 
-Si supponga di voler visualizzare i tentativi di phishing tramite URL nei messaggi di posta elettronica, incluso un elenco di URL consentiti, bloccati e ignorati. Per identificare gli URL su cui è stato fatto clic, [è necessario](atp-safe-links.md) configurare collegamenti sicuri. Assicurarsi di configurare i criteri [collegamenti](set-up-atp-safe-links-policies.md) sicuri per la protezione del momento del clic e la registrazione dei verdetti clic per collegamenti sicuri.
+Si supponga di voler visualizzare i tentativi di phishing tramite URL nei messaggi di posta elettronica, incluso un elenco di URL consentiti, bloccati e ignorati. Per identificare gli URL su cui è stato fatto clic, [è necessario](atp-safe-links.md) configurare collegamenti sicuri. Assicurarsi di configurare i criteri [collegamenti](set-up-atp-safe-links-policies.md) sicuri per la protezione con il tempo di clic e la registrazione dei verdetti clic per collegamenti sicuri.
 
 Per esaminare gli URL dei phish nei messaggi e fare clic sugli URL nei messaggi di [   >  **phish,**](threat-explorer-views.md#email--phish) usa la visualizzazione E-mail phish di Explorer o rilevamenti in tempo reale.
 
@@ -400,7 +400,7 @@ Per esaminare gli URL dei phish nei messaggi e fare clic sugli URL nei messaggi 
 
    Il report viene aggiornato per visualizzare due diverse tabelle URL nella scheda URL del report:
 
-   - **Gli URL principali sono** gli URL nei messaggi filtrati e l'azione di recapito della posta elettronica conta per ogni URL. Nella visualizzazione e-mail di Phish, questo elenco contiene in genere URL legittimi. Gli utenti malintenzionati includono nei messaggi una combinazione di URL buoni e non erri per tentare di ottenerli, ma rendono i collegamenti dannosi più interessanti. La tabella degli URL è ordinata in base al numero totale di messaggi di posta elettronica, ma questa colonna è nascosta per semplificare la visualizzazione.
+   - **Gli URL principali sono** gli URL nei messaggi filtrati e l'azione di recapito della posta elettronica conta per ogni URL. Nella visualizzazione E-mail di phish, questo elenco contiene in genere URL legittimi. Gli utenti malintenzionati includono nei messaggi una combinazione di URL buoni e non erri per tentare di ottenerli, ma rendono i collegamenti dannosi più interessanti. La tabella degli URL è ordinata in base al numero totale di messaggi di posta elettronica, ma questa colonna è nascosta per semplificare la visualizzazione.
 
    - **I clic principali** sono gli URL con collegamenti sicuri su cui è stato fatto clic, ordinati in base al numero totale di clic. Anche questa colonna non viene visualizzata, per semplificare la visualizzazione. Il conteggio totale per colonna indica il numero di verdetti clic su Collegamenti sicuri per ogni URL su cui è stato fatto clic. Nella visualizzazione posta elettronica di Phish, questi sono in genere URL sospetti o dannosi. Ma la visualizzazione potrebbe includere URL che non sono minacce ma sono nei messaggi di phish. I clic url sui collegamenti senza ritorno a capo non vengono visualizzati qui.
 
@@ -422,7 +422,7 @@ All'interno dei riquadri a comparsa e-mail o URL, dei clic principali e delle es
 - **Consentito:** All'utente è stato consentito passare all'URL.
 - **Bloccato:** All'utente è stato impedito di passare all'URL.
 - **Verdetto in sospeso:** All'utente è stata presentata la pagina detonazione in sospeso.
-- **Bloccato ignorato:** All'utente è stato impedito di passare direttamente all'URL. Tuttavia, l'utente ha sovrascritto il blocco per passare all'URL.
+- **Bloccato ignorato:** All'utente è stato impedito di passare direttamente all'URL. Ma l'utente ha sovrascritto il blocco per passare all'URL.
 - **Verdetto in sospeso ignorato:** All'utente è stata presentata la pagina di detonazione. Tuttavia, l'utente ha sovrascritto il messaggio per accedere all'URL.
 - **Errore:** All'utente è stata visualizzata la pagina di errore o si è verificato un errore durante l'acquisizione del verdetto.
 - **Errore:** Si è verificata un'eccezione sconosciuta durante l'acquisizione del verdetto. L'utente potrebbe aver fatto clic sull'URL.
@@ -462,7 +462,7 @@ Oltre agli scenari descritti in questo articolo, sono disponibili molte più opz
 - [Visualizzare i file dannosi rilevati in SharePoint Online, OneDrive e Microsoft Teams](malicious-files-detected-in-spo-odb-or-teams.md)
 - [Panoramica delle visualizzazioni in Esplora minacce (e rilevamenti in tempo reale)](threat-explorer-views.md)
 - [Report dello stato di protezione dalle minacce](view-email-security-reports.md#threat-protection-status-report)
-- [Indagine e reazione automatizzate in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-autoir)
+- [Indagine e reazione automatizzate in Microsoft Threat Protection](../mtp/mtp-autoir.md)
 
 ## <a name="required-licenses-and-permissions"></a>Licenze e autorizzazioni obbligatorie
 

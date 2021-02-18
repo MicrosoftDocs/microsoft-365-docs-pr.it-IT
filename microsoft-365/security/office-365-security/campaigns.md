@@ -19,19 +19,19 @@ ms.collection:
 description: Informazioni su Visualizzazioni campagna in Microsoft Defender per Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e3b9c1a9a19e38ea83b13d9028af1a6ba042b900
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: e7742b26eb901bc9dfe79d01a9f3414adf524dd9
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165920"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286898"
 ---
 # <a name="campaign-views-in-microsoft-defender-for-office-365"></a>Visualizzazioni campagna in Microsoft Defender per Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Microsoft Defender per Office 365 piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft Defender per Office 365 Piano 2](office-365-atp.md)
 
 Visualizzazioni campagna è una funzionalità di Microsoft Defender per Office 365 Piano 2 (ad esempio Microsoft 365 E5 o organizzazioni con un componente aggiuntivo Defender per Office 365 Piano 2). Visualizzazioni campagna nel Centro sicurezza & conformità identifica e categorizza gli attacchi di phishing nel servizio. Visualizzazione campagne consente di:
 
@@ -168,7 +168,7 @@ Dopo aver creato un filtro di base o avanzato, è possibile salvarlo utilizzando
 
 Per esportare il grafico o l'elenco delle campagne, fare clic su Esporta e selezionare Esporta **dati del grafico** o Esporta elenco **campagne.** 
 
-Se si dispone di un abbonamento a Microsoft Defender for Endpoint, è possibile fare clic su Impostazioni **MDE** per connettere o disconnettere le informazioni sulle campagne con Microsoft Defender for Endpoint. Per ulteriori informazioni, vedere [Integrare Microsoft Defender per Office 365 con Microsoft Defender for Endpoint.](integrate-office-365-ti-with-wdatp.md)
+Se hai un abbonamento a Microsoft Defender for Endpoint, puoi fare clic su Impostazioni **MDE** per connettere o disconnettere le informazioni sulle campagne con Microsoft Defender per Endpoint. Per ulteriori informazioni, vedere [Integrare Microsoft Defender per Office 365 con Microsoft Defender for Endpoint.](integrate-office-365-ti-with-wdatp.md)
 
 ## <a name="campaign-details"></a>Dettagli campagna
 
@@ -184,7 +184,7 @@ Nella parte superiore della visualizzazione dei dettagli della campagna sono dis
 
 - **Impatto:** questa sezione contiene i dati seguenti per il filtro dell'intervallo di date selezionato (o selezionato nella sequenza temporale):
   - Numero totale di destinatari.
-  - Il numero di messaggi "Posta in arrivo" (ovvero recapitati nella posta in arrivo, non nella cartella Posta indesiderata).
+  - Il numero di messaggi "Posta in arrivo" (ovvero recapitati nella Posta in arrivo e non nella cartella Posta indesiderata).
   - Numero di utenti che hanno fatto clic sul payload dell'URL nel messaggio di phishing.
   - Numero di utenti che hanno visitato l'URL.
 
@@ -217,7 +217,7 @@ Il diagramma include le seguenti informazioni:
 
   |Valore|Verdetto del filtro posta indesiderata|Descrizione|
   |---|---|---|
-  |**Consentito**|`SFV:SKN` <p> `SFV:SKI`|Il messaggio è stato contrassegnato come non indesiderato e/o ha ignorato il filtro prima di essere valutato dal filtro posta indesiderata. Ad esempio, il messaggio è stato contrassegnato come non indesiderato da una regola del flusso di posta (nota anche come regola di trasporto). <p> Il messaggio ha ignorato il filtro posta indesiderata per altri motivi. Ad esempio, il mittente e il destinatario sembrano essere nella stessa organizzazione.|
+  |**Consentito**|`SFV:SKN` <p> `SFV:SKI`|Il messaggio è stato contrassegnato come non indesiderato e/o è stato ignorato prima di essere valutato dal filtro posta indesiderata. Ad esempio, il messaggio è stato contrassegnato come non indesiderato da una regola del flusso di posta (nota anche come regola di trasporto). <p> Il messaggio ha ignorato il filtro posta indesiderata per altri motivi. Ad esempio, il mittente e il destinatario sembrano essere nella stessa organizzazione.|
   |**Bloccato**|`SFV:SKS`|Il messaggio è stato contrassegnato come posta indesiderata prima di essere valutato dal filtro posta indesiderata. Ad esempio, in base a una regola del flusso di posta.|
   |**Rilevato**|`SFV:SPM`|Il messaggio è stato contrassegnato come posta indesiderata dal filtro della posta indesiderata.|
   |**Non rilevato**|`SFV:NSPM`|Il messaggio è stato contrassegnato come non indesiderato dal filtro posta indesiderata.|
@@ -268,7 +268,7 @@ Le schede nella visualizzazione dei dettagli della campagna consentono di analiz
 > [!TIP]
 > Le informazioni visualizzate nelle schede sono controllate dall'intervallo di date ombreggiato nella sequenza temporale, come descritto nella sezione [Informazioni della](#campaign-information) campagna.
 
-- **Clic sull'URL:** se gli utenti non hanno fatto clic sull'URL del payload nel messaggio, questa sezione sarà vuota. Se un utente è stato in grado di fare clic sull'URL, verranno popolati i valori seguenti:
+- **Clic url:** se gli utenti non hanno fatto clic sull'URL del payload nel messaggio, questa sezione sarà vuota. Se un utente è stato in grado di fare clic sull'URL, verranno popolati i valori seguenti:
   - **Utente:**<sup>\*</sup>
   - **URL**<sup>\*</sup>
   - **Ora clic**

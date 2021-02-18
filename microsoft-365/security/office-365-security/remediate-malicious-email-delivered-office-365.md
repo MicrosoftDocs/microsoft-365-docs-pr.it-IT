@@ -15,19 +15,19 @@ appliesto:
 - Microsoft 365 Defender
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2f623957a79ccd76702482cd23b4d8ce219603f6
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 1b32982298a368dc435dad8b6c09188321d099e2
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166880"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50289234"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Correggere i messaggi di posta elettronica dannosi recapitati in Office 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
--    [Microsoft Defender per Office 365 piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
+- [Microsoft Defender per Office 365 Piano 2](office-365-atp.md)
 
 La correzione significa eseguire un'azione prescritta contro una minaccia. La posta elettronica dannosa inviata all'organizzazione può essere pulita dal sistema, tramite l'eliminazione automatica a zero ore (ZAP) o dai team di sicurezza attraverso azioni di correzione come lo spostamento nella posta in *arrivo,* lo spostamento nella posta *indesiderata,* lo spostamento agli elementi *eliminati,* l'eliminazione reverssione *o* l'eliminazione *permanente.* Microsoft Defender per Office 365 P2/E5 consente ai team di sicurezza di correggere le minacce nelle funzionalità di posta elettronica e collaborazione tramite un'indagine manuale e automatizzata.
 

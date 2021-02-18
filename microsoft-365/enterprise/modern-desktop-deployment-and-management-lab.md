@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su e dove accedere al Lab Kit di distribuzione di Windows e Office.
-ms.openlocfilehash: 459b0fd246455f46a1c1ff497379487de9fdb61d
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 9b558ad20a84bc902dd9a4a78ebafdbcecd8a9bb
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142266"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288264"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Lab Kit di distribuzione di Windows e Office
 
@@ -99,7 +99,7 @@ Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuz
 
 [Scaricare il Lab Kit di distribuzione di Windows e Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-* La versione di base 2002 installata può essere aggiornata alla versione 2010 utilizzando e l'aggiornamento nella console. Usa una connessione Internet a larghezza di banda larga per scaricare questo contenuto e consenti 30-45 minuti per il provisioning automatico. L'ambiente lab richiede almeno 16 GB di memoria disponibile e 150 GB di spazio libero su disco. Per ottenere prestazioni ottimali, sono consigliati 32 GB di memoria disponibile e 300 GB di spazio libero. Il kit scade l'11 febbraio 2021. Una nuova versione verrà pubblicata prima della scadenza.
+* La versione di base 2002 installata può essere aggiornata alla versione 2010 utilizzando e l'aggiornamento nella console. Usa una connessione Internet a larghezza di banda larga per scaricare questo contenuto e consenti 30-45 minuti per il provisioning automatico. L'ambiente lab richiede almeno 16 GB di memoria disponibile e 150 GB di spazio libero su disco. Per ottenere prestazioni ottimali, sono consigliati 32 GB di memoria disponibile e 300 GB di spazio libero. Il kit scade il 2 maggio 2021. Una nuova versione verrà pubblicata prima della scadenza.
 
 ## <a name="additional-guidance"></a>Indicazioni aggiuntive
 

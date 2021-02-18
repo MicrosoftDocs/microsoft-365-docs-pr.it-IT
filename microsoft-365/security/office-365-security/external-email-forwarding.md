@@ -15,21 +15,21 @@ ms.custom:
 description: .
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e578cadf6687e02c900299a75bdd00a9d6e5b2ee
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 77f666e5eeceee3f5b324e5b9b6fac721c10e410
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166148"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286868"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Controllare l'inoltro automatico della posta elettronica esterna in Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 Gli amministratori potrebbero avere requisiti aziendali per limitare o controllare i messaggi inoltrati automaticamente ai destinatari esterni (destinatari esterni all'organizzazione). L'inoltro della posta elettronica può essere utile, ma può anche rappresentare un rischio per la sicurezza dovuto alla potenziale divulgazione di informazioni. Gli utenti malintenzionati potrebbero usare queste informazioni per attaccare l'organizzazione o i partner.
 
@@ -72,8 +72,8 @@ Le impostazioni del dominio remoto e le regole del flusso di posta sono indipend
 
 Questa indipendenza di funzionalità consente (ad esempio) di consentire l'inoltro automatico nei criteri di filtro della posta indesiderata in uscita, ma di utilizzare i domini remoti per controllare i domini esterni a cui gli utenti possono inoltrare i messaggi.
 
-## <a name="the-blocked-email-forwarding-message"></a>Il messaggio di inoltro della posta elettronica bloccato
+## <a name="blocked-email-forwarding-messages"></a>Messaggi di inoltro della posta elettronica bloccati
 
-Quando un messaggio viene rilevato come inoltrato  automaticamente e i criteri dell'organizzazione bloccano tale attività, il messaggio viene restituito al mittente in un rapporto di mancato recapito contenente le seguenti informazioni:
+Quando un messaggio viene rilevato come [](configure-the-outbound-spam-policy.md) inoltrato automaticamente e il criterio di filtro della posta indesiderata in uscita blocca tale attività, il messaggio viene restituito al mittente in un rapporto di mancato recapito contenente le seguenti informazioni: 
 
 `5.7.520 Access denied, Your organization does not allow external forwarding. Please contact your administrator for further assistance. AS(7555)`

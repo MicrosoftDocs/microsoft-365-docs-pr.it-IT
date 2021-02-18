@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Connettersi al tenant di Microsoft 365 con PowerShell per Microsoft 365 per eseguire attività dell'interfaccia di amministrazione tramite riga di comando.
-ms.openlocfilehash: 33f9af45418ae8a1f126d2b321e7246201bd1f6e
-ms.sourcegitcommit: f07442d077eb4357fa5d99d051b035705eb30efa
+ms.openlocfilehash: 0691304a2d40f7ae4262e6761902f16b4f6d5ee2
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "49002406"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288114"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>Collegare Microsoft 365 con PowerShell
 
@@ -117,7 +117,7 @@ PowerShell Core non supporta il Modulo di Microsoft Azure Active Directory per W
 
 È necessario eseguire questi passaggi nel computer una sola volta. Tuttavia, è probabile che sia necessario aggiornare periodicamente il software.
   
-1.  Se non si esegue Windows 10, installare la versione a 64 bit dell'Assistente per l'accesso a Microsoft Online Services: [Assistente per l'accesso a Microsoft Online Services per professionisti IT - RTW](https://go.microsoft.com/fwlink/p/?LinkId=286152).
+1.  Se non si esegue Windows 10, installare la versione a 64 bit dell'Assistente per l'accesso a Microsoft Online Services: [Assistente per l'accesso a Microsoft Online Services per professionisti IT - RTW](https://www.microsoft.com/Download/details.aspx?id=28177).
     
 2. Seguire questa procedura per installare il Modulo di Microsoft Azure Active Directory per Windows PowerShell:
     

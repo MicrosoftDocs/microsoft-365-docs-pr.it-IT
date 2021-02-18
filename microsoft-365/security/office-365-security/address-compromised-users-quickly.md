@@ -15,21 +15,21 @@ ms.date: 02/25/2020
 description: Informazioni su come velocizzare il processo di rilevamento e gestione degli account utente compromessi con funzionalità di analisi e risposta automatizzate in Microsoft Defender per Office 365 Piano 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2159ab7ad7e13c4cd4c2c428317ee7d99f78158c
-ms.sourcegitcommit: 3dc795ea862b180484f76b3eb5d046e74041252b
+ms.openlocfilehash: 1dda8c9b4aec30fd35efa153aaf032eee23b5e8a
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/10/2021
-ms.locfileid: "50176064"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50288742"
 ---
 # <a name="address-compromised-user-accounts-with-automated-investigation-and-response"></a>Risolvere gli account utente compromessi con analisi e risposta automatizzate
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 
 [Microsoft Defender per Office 365 Piano 2](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2) include potenti funzionalità di analisi e risposta [automatizzate](office-365-air.md) (AIR). Tali funzionalità consentono al team delle operazioni di sicurezza di risparmiare molto tempo e impegno per gestire le minacce. Microsoft continua a migliorare le funzionalità di sicurezza. Di recente, le funzionalità AIR sono state migliorate per includere un playbook sulla sicurezza degli utenti compromesso (attualmente in anteprima). Leggi questo articolo per altre informazioni sul playbook sulla sicurezza degli utenti compromesso. E vedere il post di blog Accelerare il tempo per rilevare e rispondere alla compromissione degli utenti e limitare l'ambito di violazione con [Microsoft Defender per Office 365](https://techcommunity.microsoft.com/t5/Security-Privacy-and-Compliance/Speed-up-time-to-detect-and-respond-to-user-compromise-and-limit/ba-p/977053) per ulteriori dettagli.
@@ -97,7 +97,7 @@ Per ulteriori informazioni, vedere [Visualizzare i dettagli di un'indagine.](air
 
 - **L'automazione assiste, ma non sostituisce, il team delle operazioni di sicurezza.** Le funzionalità di analisi e risposta automatizzate possono rilevare un utente compromesso nelle prime fasi, ma è probabile che il team delle operazioni di sicurezza dovrà impegnarsi ed eseguire alcune indagini e correzioni. Serve aiuto? Vedere [Rivedere e approvare le azioni.](air-review-approve-pending-completed-actions.md)
 
-- **Non fare affidamento su un avviso di accesso sospetto come unico indicatore.** Quando un account utente viene compromesso, potrebbe o meno attivare un avviso di accesso sospetto. A volte è la serie di attività che si verificano dopo la compromissione di un account che attiva un avviso. Vuoi saperne di più sugli avvisi? Vedere [Criteri di avviso.](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)
+- **Non fare affidamento su un avviso di accesso sospetto come unico indicatore.** Quando un account utente viene compromesso, potrebbe o meno attivare un avviso di accesso sospetto. A volte è la serie di attività che si verificano dopo la compromissione di un account che attiva un avviso. Vuoi saperne di più sugli avvisi? Vedere [Criteri di avviso.](../../compliance/alert-policies.md)
 
 ## <a name="next-steps"></a>Passaggi successivi
 

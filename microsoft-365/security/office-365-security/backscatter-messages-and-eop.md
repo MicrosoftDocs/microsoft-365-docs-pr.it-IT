@@ -19,21 +19,21 @@ ms.custom:
 description: In questo articolo vengono apprese informazioni su Backscatter and Microsoft Exchange Online Protection (EOP)
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3cdc556a8cc193466d150fc82298796779841cca
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 3d9556c69e5db460933b355e8bf12903d56f21b5
+ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50165956"
+ms.lasthandoff: 02/18/2021
+ms.locfileid: "50286970"
 ---
 # <a name="backscatter-in-eop"></a>Backscatter in Exchange Online Protection
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Exchange Online Protection](https://go.microsoft.com/fwlink/?linkid=2148611)
-- [Microsoft Defender per Office 365 piano 1 e piano 2](https://go.microsoft.com/fwlink/?linkid=2148715)
-- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [Exchange Online Protection](exchange-online-protection-overview.md)
+- [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
+- [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 *I rapporti di mancato* recapito (noti anche come rapporti di mancato recapito o notifiche di mancato recapito) ricevuti per i messaggi che non sono stati inviati. Gli spammer falsificano (spoofing) l'indirizzo da: dei loro messaggi e spesso utilizzano indirizzi di posta elettronica reali per dare credibilità ai loro messaggi. Pertanto, quando gli spammer inviano inevitabilmente messaggi a destinatari inesistenti (la posta indesiderata è un'operazione di volume elevato), il server di posta elettronica di destinazione viene essenzialmente in ingannato a restituire il messaggio non recapitabile in un rapporto di mancato recapito al mittente contraffatto nell'indirizzo Da:.
 
