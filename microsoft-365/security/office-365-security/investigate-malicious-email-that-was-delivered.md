@@ -16,16 +16,16 @@ search.appverid:
 ms.assetid: 8f54cd33-4af7-4d1b-b800-68f8818e5b2a
 ms.collection:
 - M365-security-compliance
-description: Informazioni su come usare le funzionalità di analisi e risposta alle minacce per trovare e analizzare i messaggi di posta elettronica dannosi.
+description: Informazioni su come usare le funzionalità di analisi e risposta alle minacce per trovare e analizzare la posta elettronica dannosa.
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b36e16f5351ab30ac8150fbc3e87feb9ca4a6453
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 0700345ed32b736669adc4e35ddc8aa1476b699f
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286634"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406457"
 ---
 # <a name="investigate-malicious-email-that-was-delivered-in-office-365"></a>Analizzare la posta elettronica dannosa recapitata in Office 365
 
@@ -36,7 +36,7 @@ ms.locfileid: "50286634"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-[Microsoft Defender per Office 365](office-365-atp.md) consente di analizzare le attività che mettono a rischio le persone nell'organizzazione e di intervenire per proteggere l'organizzazione. Ad esempio, se si fa parte del team di sicurezza dell'organizzazione, è possibile individuare e analizzare i messaggi di posta elettronica sospetti recapitati. A tale scopo, puoi usare [Esplora minacce (o](threat-explorer.md)rilevamenti in tempo reale).
+[Microsoft Defender per Office 365](office-365-atp.md) consente di analizzare le attività che mettono a rischio le persone nell'organizzazione e di intervenire per proteggere l'organizzazione. Ad esempio, se si fa parte del team di sicurezza dell'organizzazione, è possibile individuare e analizzare i messaggi di posta elettronica sospetti recapitati. A tale scopo, puoi usare [Esplora minacce (o rilevamenti](threat-explorer.md)in tempo reale).
 
 > [!NOTE]
 > Passare all'articolo sulla correzione [qui.](remediate-malicious-email-delivered-office-365.md)
@@ -45,13 +45,13 @@ ms.locfileid: "50286634"
 
 Verificare che vengano soddisfatti i seguenti requisiti:
 
-- L'organizzazione dispone [di Microsoft Defender per Office 365](office-365-atp.md) e le licenze vengono assegnate agli [utenti.](../../admin/manage/assign-licenses-to-users.md)
+- L'organizzazione [dispone di Microsoft Defender per Office 365](office-365-atp.md) e le licenze vengono assegnate agli [utenti.](../../admin/manage/assign-licenses-to-users.md)
 
 - [la registrazione di](../../compliance/turn-audit-log-search-on-or-off.md) controllo è attivata per l'organizzazione.
 
-- L'organizzazione dispone di criteri definiti per la protezione da posta indesiderata, antimalware, anti-phishing e così via. Vedere [Proteggere dalle minacce in Office 365.](protect-against-threats.md)
+- L'organizzazione dispone di criteri definiti per la posta indesiderata, antimalware, anti-phishing e così via. Vedere [Proteggere dalle minacce in Office 365.](protect-against-threats.md)
 
-- Si è un amministratore globale o si dispone del ruolo Amministratore della sicurezza o Ricerca ed eliminazione nel Centro sicurezza & conformità. Vedere [Autorizzazioni nel Centro sicurezza & conformità.](permissions-in-the-security-and-compliance-center.md) Per alcune azioni, è inoltre necessario disporre di un nuovo ruolo Anteprima assegnato.
+- L'utente è un amministratore globale o ha il ruolo Di amministratore della sicurezza o Ricerca ed eliminazione assegnato nel Centro sicurezza & conformità. Vedere [Autorizzazioni nel Centro sicurezza & conformità.](permissions-in-the-security-and-compliance-center.md) Per alcune azioni, è inoltre necessario disporre di un nuovo ruolo Anteprima assegnato.
 
 ### <a name="preview-role-permissions"></a>Autorizzazioni per il ruolo anteprima
 
@@ -67,10 +67,10 @@ Per eseguire determinate azioni, ad esempio la visualizzazione delle intestazion
 |
 
 > [!NOTE]
-> *L'anteprima* è un ruolo e non un gruppo di ruoli; Il ruolo Anteprima deve essere aggiunto a un gruppo di ruoli esistente per Office 365 (all'indirizzo [https://protection.office.com](https://protection.office.com) ). Passare a **Autorizzazioni** e quindi modificare un gruppo di ruoli esistente o aggiungere un nuovo gruppo di ruoli con il ruolo **Anteprima** assegnato.
+> *L'anteprima* è un ruolo e non un gruppo di ruoli; Il ruolo Anteprima deve essere aggiunto a un gruppo di ruoli esistente per Office 365 (all'indirizzo <https://protection.office.com> ). Passare a **Autorizzazioni** e quindi modificare un gruppo di ruoli esistente o aggiungere un nuovo gruppo di ruoli con **il** ruolo Anteprima assegnato.
 > Al ruolo Amministratore globale viene assegnata l'interfaccia di amministrazione di Microsoft 365 ( ) e i ruoli Amministratore della sicurezza e Lettore sicurezza vengono assegnati nel Centro <https://admin.microsoft.com> sicurezza & conformità ( <https://protection.office.com> ). Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere [Autorizzazioni nel Centro sicurezza & conformità.](permissions-in-the-security-and-compliance-center.md)
 
-Comprendiamo che l'anteprima e il download della posta elettronica sono attività sensibili, pertanto il controllo è abilitato per queste attività. Una volta che un amministratore esegue queste attività nei messaggi di posta elettronica, i log di controllo vengono generati per la stessa operazione e possono essere visibili nel Centro sicurezza & e conformità di Office 365 ( [https://protection.office.com](https://protection.office.com) ). Passare alla **ricerca nel** log di  >  **controllo di** ricerca e filtrare in base al nome dell'amministratore nella sezione Ricerca. I risultati filtrati mostreranno l'attività **AdminMailAccess.** Selezionare una riga per visualizzare i dettagli nella sezione **Ulteriori informazioni** sulla posta elettronica in anteprima o scaricata.
+Comprendiamo che l'anteprima e il download della posta elettronica sono attività sensibili, pertanto il controllo è abilitato per queste attività. Dopo che un amministratore esegue queste attività nei messaggi di posta elettronica, i log di controllo vengono generati per la stessa operazione e possono essere visibili nel Centro sicurezza & e conformità di Office 365 ( <https://protection.office.com> ). Passare alla **ricerca nel** log di  >  **controllo e** filtrare in base al nome dell'amministratore nella sezione Ricerca. I risultati filtrati mostreranno l'attività **AdminMailAccess.** Selezionare una riga per visualizzare i dettagli nella sezione **Ulteriori informazioni** sulla posta elettronica in anteprima o scaricata.
 
 ## <a name="find-suspicious-email-that-was-delivered"></a>Trovare messaggi di posta elettronica sospetti recapitati
 
@@ -99,9 +99,9 @@ Esplora minacce è un potente report che può servire a più scopi, come trovare
 
 4. **Ricerca e filtro in Esplora** minacce: i filtri vengono visualizzati nella parte superiore della pagina nella barra di ricerca per aiutare gli amministratori nelle indagini. Si noti che è possibile applicare più filtri contemporaneamente e più valori delimitati da virgole aggiunti a un filtro per restringere la ricerca. Attenzione:
 
-    - I filtri corrispondono esattamente alla maggior parte delle condizioni di filtro.
+    - I filtri corrispondono esattamente alla maggior parte delle condizioni del filtro.
     - Il filtro dell'oggetto utilizza una query CONTAINS.
-    - I filtri URL funzionano con o senza protocolli (ad esempio https).
+    - I filtri URL funzionano con o senza protocolli (ad esempio, https).
     - I filtri dominio URL, percorso URL e dominio URL e percorso non richiedono un protocollo per il filtro.
     - È necessario fare clic sull'icona Aggiorna ogni volta che si modificano i valori del filtro per ottenere risultati pertinenti.
 
@@ -124,7 +124,7 @@ Esplora minacce è un potente report che può servire a più scopi, come trovare
     - **Bloccato:** tutti i messaggi di posta elettronica messi in quarantena, non riusciti o eliminati. Questa operazione è completamente inaccessibile dall'utente.
     - **Sostituito:** qualsiasi messaggio di posta elettronica in cui gli allegati dannosi vengono sostituiti da file txt che specificano che l'allegato era dannoso
 
-    **Posizione di recapito**: il filtro percorso di recapito è disponibile per consentire agli amministratori di capire dove si è conclusa la posta dannosa sospetta e quali azioni sono state eseguite su di esso. I dati risultanti possono essere esportati in un foglio di calcolo. I percorsi di recapito possibili sono:
+    **Posizione di recapito**: il filtro percorso di recapito è disponibile per aiutare gli amministratori a capire dove sono finiti i messaggi dannosi sospetti e quali azioni sono state eseguite su di esso. I dati risultanti possono essere esportati in un foglio di calcolo. I percorsi di recapito possibili sono:
 
     - **Posta in arrivo o cartella:** il messaggio di posta elettronica si trova nella cartella Posta in arrivo o in una cartella specifica, in base alle regole di posta elettronica.
     - **Locale o esterno:** la cassetta postale non esiste nel cloud ma è locale.
@@ -149,7 +149,7 @@ Esplora minacce è un potente report che può servire a più scopi, come trovare
     |Bloccato dai criteri utente|Il recapito della posta alla cassetta postale è stato bloccato come indicato dai criteri utente.|
     |
 
-    **Minaccia URL:** il campo relativo alla  minaccia URL è stato incluso nella scheda dei dettagli di un messaggio di posta elettronica per indicare la minaccia presentata da un URL. Le minacce presentate da un URL possono includere *malware,*  virus o posta indesiderata e un URL senza minacce dirà *Nessuno* nella sezione relativa alle minacce.
+    **Minaccia URL:** il campo della minaccia  URL è stato incluso nella scheda dei dettagli di un messaggio di posta elettronica per indicare la minaccia presentata da un URL. Le minacce presentate da un URL possono includere *malware,*  virus o posta indesiderata e un URL senza minacce dirà *Nessuno* nella sezione relativa alle minacce.
 
 7. **Visualizzazione della sequenza temporale della posta** elettronica: il team delle operazioni di sicurezza potrebbe dover approfondire i dettagli della posta elettronica per analizzare ulteriormente. La sequenza temporale della posta elettronica consente agli amministratori di visualizzare le azioni eseguite su un messaggio di posta elettronica dal recapito al post-recapito. Per visualizzare una sequenza temporale di posta elettronica, fare clic sull'oggetto di un messaggio di posta elettronica, quindi fare clic su Sequenza temporale e-mail. Viene visualizzata tra le altre intestazioni del pannello, ad esempio Riepilogo o Dettagli. Questi risultati possono essere esportati in un foglio di calcolo.
 
@@ -167,7 +167,7 @@ In [Esplora minacce (e rilevamenti](threat-explorer.md)in tempo  reale)  sono or
 
 Lo stato del recapito è ora suddiviso in due colonne:
 
-- **Azione di recapito** - Qual è lo stato di questo messaggio di posta elettronica?
+- **Azione di recapito-** Qual è lo stato di questo messaggio di posta elettronica?
 
 - **Posizione di recapito-** Dove è stato instradato questo messaggio di posta elettronica?
 
@@ -181,7 +181,7 @@ L'azione di recapito è l'azione eseguita su un messaggio di posta elettronica a
 
 - **Sostituito:** qualsiasi messaggio di posta elettronica in cui allegati dannosi vengono sostituiti da file txt che specificano che l'allegato era dannoso.
 
-Il percorso di recapito mostra i risultati dei criteri e dei rilevamenti eseguiti dopo il recapito. È collegato a un'azione di recapito. Questo campo è stato aggiunto per fornire informazioni dettagliate sull'azione eseguita quando viene trovato un messaggio di posta elettronica problematico. Ecco i valori possibili della posizione di recapito:
+Il percorso di recapito mostra i risultati dei criteri e dei rilevamenti eseguiti dopo il recapito. È collegato a un'azione di recapito. Questo campo è stato aggiunto per fornire informazioni dettagliate sull'azione eseguita quando viene trovato un messaggio di posta elettronica con problemi. Ecco i valori possibili della posizione di recapito:
 
 - **Posta in arrivo o cartella:** il messaggio di posta elettronica si trova nella cartella Posta in arrivo o in una cartella (in base alle regole di posta elettronica).
 

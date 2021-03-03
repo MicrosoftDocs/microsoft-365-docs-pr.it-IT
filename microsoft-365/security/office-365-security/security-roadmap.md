@@ -19,12 +19,12 @@ ms.assetid: 28c86a1c-e4dd-4aad-a2a6-c768a21cb352
 description: Suggerimenti principali del team di sicurezza informatica di Microsoft per l'implementazione delle funzionalità di sicurezza per proteggere l'ambiente Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a7d376eb7266975dc7582b83bfd4fa5e930ccea4
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 728519b4285cf9345052540a0207948f80c18cd2
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288170"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407409"
 ---
 # <a name="security-roadmap---top-priorities-for-the-first-30-days-90-days-and-beyond"></a>Roadmap della sicurezza - Priorità principali per i primi 30, 90 giorni e oltre
 
@@ -61,12 +61,12 @@ Queste attività possono essere eseguite rapidamente e hanno un impatto minimo s
 
 ****
 
-|Area|Tasks|
+|Area|Attività|
 |---|---|
 |Gestione della sicurezza|<ul><li>Controllare Secure Score e prendere nota del punteggio corrente ( <https://securescore.office.com> ).</li><li>Attivare la registrazione di controllo per Office 365. Vedere [Ricerca nel log di controllo.](../../compliance/search-the-audit-log-in-security-and-compliance.md)</li><li>[Configurare Microsoft 365 per una maggiore sicurezza.](tenant-wide-setup-for-increased-security.md)</li><li>Rivedere regolarmente dashboard e report nel Centro sicurezza Microsoft 365 e in Cloud App Security.</li></ul>|
 |Protezione dalle minacce|[Connettere Microsoft 365 a Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/connect-office-365-to-microsoft-cloud-app-security) per iniziare il monitoraggio usando i criteri di rilevamento delle minacce predefiniti per i comportamenti anomali. Sono necessari sette giorni per creare una linea di base per il rilevamento di anomalie. <p>  Implementare la protezione per gli account amministratore:<ul><li>Usare account amministratore dedicati per le attività di amministratore.</li><li>Applicare l'autenticazione a più fattori (MFA) per gli account amministratore.</li><li>Usa un [dispositivo Windows 10 altamente sicuro per](https://docs.microsoft.com/windows-hardware/design/device-experiences/oem-highly-secure) le attività di amministrazione.</li></ul>|
 |Gestione delle identità e degli accessi|<ul><li>[Abilitare Azure Active Directory Identity Protection.](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable)</li><li>Per gli ambienti con identità federate, applicare la sicurezza degli account (lunghezza, validità, complessità e così via).</li></ul>|
-|Protezione delle informazioni|Esaminare consigli di esempio sulla protezione delle informazioni. La protezione delle informazioni richiede il coordinamento all'interno dell'organizzazione. Per iniziare, usare queste risorse:<ul><li>[Information Protection di Office 365 per il GDPR](https://aka.ms/o365gdpr)</li><li>[Configurare Teams con tre livelli di protezione](../../solutions/configure-teams-three-tiers-protection.md) (tra cui condivisione, classificazione, prevenzione della perdita dei dati e Azure Information Protection)</li></ul>|
+|Protezione delle informazioni|Esaminare consigli di esempio sulla protezione delle informazioni. La protezione delle informazioni richiede il coordinamento all'interno dell'organizzazione. Per iniziare, usare queste risorse:<ul><li>[Information Protection di Office 365 per il GDPR](https://docs.microsoft.com/compliance/regulatory/gdpr)</li><li>[Configurare Teams con tre livelli di protezione](../../solutions/configure-teams-three-tiers-protection.md) (tra cui condivisione, classificazione, prevenzione della perdita dei dati e Azure Information Protection)</li></ul>|
 |
 
 ## <a name="90-days--enhanced-protections"></a>90 giorni : protezioni avanzate
@@ -79,9 +79,9 @@ Queste attività richiedono una quantità di tempo leggermente superiore per la 
 |Area|Attività|
 |---|---|
 |Gestione della sicurezza|<ul><li>Controllare Secure Score per le azioni consigliate per l'ambiente ( <https://securescore.office.com> ).</li><li>Continuare a esaminare regolarmente dashboard e report nel Centro sicurezza Microsoft 365, in Cloud App Security e negli strumenti SIEM.</li><li>Cercare e implementare gli aggiornamenti software.</li><li>Eseguire simulazioni di attacco per attacchi di phishing, password spray e attacchi con password di forza bruta usando il [simulatore](attack-simulator.md) di attacchi (incluso in [Office 365 Threat Intelligence).](office-365-ti.md)</li><li>Cercare i rischi di condivisione esaminando i report predefiniti in Cloud App Security (nella scheda Investigate).</li><li>Controllare [Compliance Manager per](../../compliance/compliance-manager.md) verificare lo stato delle normative applicabili all'organizzazione (ad esempio GDPR, NIST 800-171).</li></ul>|
-|Protezione dalle minacce|Implementare protezioni avanzate per gli account amministratore: <ul><li>Configurare [le workstation con accesso privilegiato](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/privileged-access-workstations) (PAW) per l'attività di amministratore.</li><li>Configurare [Azure AD Privileged Identity Management.](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)</li><li>Configurare uno strumento siem (Security Information and Event Management) per raccogliere i dati di registrazione da Office 365, Cloud App Security e altri servizi, tra cui AD FS. Il log di controllo archivia i dati solo per 90 giorni. L'acquisizione di questi dati nello strumento SIEM consente di archiviare i dati per un periodo più lungo.</li></ul>|
+|Protezione dalle minacce|Implementare protezioni avanzate per gli account amministratore: <ul><li>Configurare [le workstation con accesso privilegiato](https://docs.microsoft.com/security/compass/privileged-access-devices) (PAW) per l'attività di amministratore.</li><li>Configurare [Azure AD Privileged Identity Management.](https://docs.microsoft.com/azure/active-directory/active-directory-privileged-identity-management-configure)</li><li>Configurare uno strumento siem (Security Information and Event Management) per raccogliere i dati di registrazione da Office 365, Cloud App Security e altri servizi, tra cui AD FS. Il log di controllo archivia i dati solo per 90 giorni. L'acquisizione di questi dati nello strumento SIEM consente di archiviare i dati per un periodo più lungo.</li></ul>|
 |Gestione delle identità e degli accessi|<ul><li>Abilitare e applicare l'autenticazione a più fattori per tutti gli utenti.</li><li>Implementare un set di [accesso condizionale e criteri correlati.](microsoft-365-policies-configurations.md)</li></ul>|
-|Protezione delle informazioni| Adattare e implementare i criteri di protezione delle informazioni. Queste risorse includono esempi: <ul><li>[Information Protection di Office 365 per il GDPR](https://aka.ms/o365gdpr)</li><li>[Configurare Teams con tre livelli di protezione](../../solutions/configure-teams-three-tiers-protection.md)</li></ul> <p> Usare i criteri di prevenzione della perdita dei dati e gli strumenti di monitoraggio in Microsoft 365 per i dati archiviati in Microsoft 365 (anziché Cloud App Security). <p> Usare Cloud App Security con Microsoft 365 per funzionalità di avviso avanzate (diverse dalla prevenzione della perdita dei dati).|
+|Protezione delle informazioni| Adattare e implementare i criteri di protezione delle informazioni. Queste risorse includono esempi: <ul><li>[Information Protection di Office 365 per il GDPR](https://docs.microsoft.com/compliance/regulatory/gdpr)</li><li>[Configurare Teams con tre livelli di protezione](../../solutions/configure-teams-three-tiers-protection.md)</li></ul> <p> Usare i criteri di prevenzione della perdita dei dati e gli strumenti di monitoraggio in Microsoft 365 per i dati archiviati in Microsoft 365 (anziché Cloud App Security). <p> Usare Cloud App Security con Microsoft 365 per funzionalità di avviso avanzate (diverse dalla prevenzione della perdita di dati).|
 |
 
 ## <a name="beyond"></a>Oltre
@@ -94,7 +94,7 @@ Si tratta di misure di sicurezza importanti che si basano sul lavoro precedente.
 |Area|Attività|
 |---|---|
 |Gestione della sicurezza|<ul><li>Continuare a pianificare le azioni seguenti utilizzando Secure Score ( <https://securescore.office.com> ).</li><li>Continuare a esaminare regolarmente dashboard e report nel Centro sicurezza Microsoft 365, in Cloud App Security e negli strumenti SIEM.</li><li>Continuare a cercare e implementare gli aggiornamenti software.</li><li>Integrare eDiscovery nei processi legali e di risposta alle minacce.</li></ul>|
-|Protezione dalle minacce|<ul><li>Implementare [Secure Privileged Access](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access) (SPA) per i componenti di identità in locale (AD, AD FS).</li><li>Usare Cloud App Security per monitorare le minacce insider.</li><li>Individuare l'utilizzo di Shadow IT SaaS tramite Cloud App Security.</li></ul>|
+|Protezione dalle minacce|<ul><li>Implementare [Secure Privileged Access](https://docs.microsoft.com/windows-server/identity/securing-privileged-access/securing-privileged-access) (SPA) per i componenti di identità in locale (AD, AD FS).</li><li>Usare Cloud App Security per monitorare le minacce Insider.</li><li>Individuare l'utilizzo Shadow IT SaaS tramite Cloud App Security.</li></ul>|
 |Gestione delle identità e degli accessi|<ul><li>Perfezionare i criteri e i processi operativi.</li><li>Usare Azure AD Identity Protection per identificare le minacce insider.</li></ul>|
 |Protezione delle informazioni|Affinare i criteri di protezione delle informazioni: <ul><li>Etichette di riservatezza e prevenzione della perdita dei dati (DLP) di Microsoft 365 e Office 365 o Azure Information Protection.</li><li>Avvisi e criteri di Cloud App Security.</li></ul>|
 |

@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom:
 - autoir
 ms.technology: mdo
-ms.openlocfilehash: 48d7e1a7497f9bc2a07a84b36fb07939d25609bf
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 8a91a55d9598b5e780474315ddf1f7019e593fed
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289150"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406163"
 ---
 # <a name="how-to-report-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Come segnalare falsi positivi/negativi nelle funzionalità di analisi e risposta automatizzate
 
@@ -41,7 +41,7 @@ Se le funzionalità di analisi e risposta [automatizzate (AIR) in Office 365](au
 
 - [Segnalazione di un falso positivo/negativo a Microsoft;](#report-a-false-positivenegative-to-microsoft-for-analysis)
 - [Modifica degli avvisi](#adjust-an-alert-to-prevent-false-positives-from-recurring) (se necessario); e
-- [Annullamento delle azioni di correzione eseguite.](#undo-a-remediation-action)
+- [Annullamento delle azioni correttive eseguite.](#undo-a-remediation-action)
 
 Usa questo articolo come guida.
 
@@ -53,7 +53,7 @@ Se AIR in Microsoft Defender per Office 365 ha perso un messaggio di posta elett
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Modificare un avviso per evitare che i falsi positivi si ricorrentino
 
-Se un avviso viene attivato da un uso legittimo o non è accurato, puoi gestire gli avvisi nel portale [di Cloud App Security.](https://docs.microsoft.com/cloud-app-security/managing-alerts)
+Se un avviso viene attivato da un uso legittimo o non è accurato, è possibile gestire gli avvisi nel portale [di Cloud App Security.](https://docs.microsoft.com/cloud-app-security/managing-alerts)
 
 Se l'organizzazione usa [Microsoft Defender per Endpoint](https://docs.microsoft.com/windows/security/threat-protection) oltre a Office 365 e un file, un indirizzo IP, un URL o un dominio viene considerato come malware in un dispositivo, anche se è sicuro, è possibile creare un indicatore personalizzato con un'azione ["Consenti"](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-indicators)per il dispositivo.
 
@@ -64,7 +64,7 @@ Nella maggior parte dei casi, se è stata eseguita un'azione di correzione su un
 > [!IMPORTANT]
 > Assicurarsi di disporre delle autorizzazioni necessarie prima di tentare di eseguire le attività seguenti.
 
-### <a name="undo-an-action-using-threat-explorer"></a>Annullare un'azione con Esplora minacce
+### <a name="undo-an-action-using-threat-explorer"></a>Annullare un'azione tramite Esplora minacce
 
 Con Esplora minacce, il team delle operazioni di sicurezza può trovare un messaggio di posta elettronica interessato da un'azione e potenzialmente annullare l'azione.
 
@@ -78,10 +78,10 @@ Con Esplora minacce, il team delle operazioni di sicurezza può trovare un messa
 
 Nel centro notifiche è possibile visualizzare le azioni di correzione eseguite e potenzialmente annullare l'azione.
 
-1. Passare al Centro sicurezza Microsoft 365 ( [https://security.microsoft.com](https://security.microsoft.com) ).
-2. Nel riquadro di spostamento selezionare **Centro notifiche.** 
+1. Accedere al Centro sicurezza Microsoft 365 ( <https://security.microsoft.com> ).
+2. Nel riquadro di spostamento selezionare **Centro notifiche.**
 3. Selezionare la **scheda Cronologia** per visualizzare l'elenco delle azioni completate.
-4. Selezionare un elemento. Viene visualizzato il riquadro a comparsa. 
+4. Selezionare un elemento. Viene visualizzato il riquadro a comparsa.
 5. Nel riquadro a comparsa selezionare **Annulla.** Solo le azioni che possono essere annullate avranno un **pulsante** Annulla.
 
 ## <a name="see-also"></a>Vedere anche

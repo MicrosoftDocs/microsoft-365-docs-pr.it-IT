@@ -12,18 +12,20 @@ f1.keywords:
 ms.custom: seo-marvel-mar2020
 localization_priority: normal
 description: Informazioni su come amministrare le impostazioni multi-geografiche di Exchange Online nell'ambiente Microsoft 365 con PowerShell.
-ms.openlocfilehash: 63eb1957611fd57e216012435188a6ddd1b232d3
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 83889b4582d2e305b2cb9f07a64307e85d30be77
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49552008"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406043"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Amministrazione delle cassette postali di Exchange Online in un ambiente multi-geografico
 
 Exchange Online PowerShell è necessario per visualizzare e configurare le proprietà multi-geografiche nell'ambiente Microsoft 365. Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 È necessario il [modulo di PowerShell di Microsoft Azure Active Directory](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) v1.1.166.0 o versione successiva in V1. x per visualizzare la proprietà **PreferredDataLocation** sugli oggetti utente. Gli oggetti utente sincronizzati con AAD Connect in AAD non possono contenere i valori **PreferredDataLocation** modificati direttamente tramite ADD PowerShell. Gli oggetti utente solo cloud possono essere modificati tramite AAD PowerShell. Per connettersi a PowerShell di Azure Active Directory, vedere [Connettersi a PowerShell](connect-to-microsoft-365-powershell.md).
+
+Negli ambienti multi-geografici di Exchange Online, non è necessario eseguire alcuna procedura manuale per aggiungere geo al tenant. Dopo aver ricevuto il post del Centro messaggi che indica che multi-geo è pronto per Exchange Online, tutte le geo disponibili saranno pronte e configurate per l'uso.
 
 ## <a name="connect-directly-to-a-geo-location-using-exchange-online-powershell"></a>È possibile connettersi direttamente a una posizione geografica con PowerShell di Exchange Online.
 
@@ -160,7 +162,7 @@ Non è possibile spostare le cassette postali inattive conservate per motivi di 
 
 5. Dopo aver confermato che la cassetta postale è stata spostata nella nuova posizione geografica, impostare nuovamente il blocco per controversia legale per la cassetta postale recuperata. Per istruzioni, vedere Blocco per controversia legale [per una cassetta postale.](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold#place-a-mailbox-on-litigation-hold)
 
-6. Dopo aver verificato che il blocco per controversia legale è in corso, consentire all'Assistente cartelle gestite di elaborare di nuovo la cassetta postale sostituendo con il nome, l'alias, l'account o l'indirizzo di posta elettronica della cassetta postale ed eseguendo il comando seguente in PowerShell di \<MailboxIdentity\> [Exchange Online:](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+6. Dopo aver verificato che il blocco per controversia legale è in corso, consentire all'Assistente cartelle gestite di elaborare nuovamente la cassetta postale sostituendo con il nome, l'alias, l'account o l'indirizzo di posta elettronica della cassetta postale ed eseguendo il comando seguente in PowerShell di \<MailboxIdentity\> [Exchange Online:](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
 
     ```powershell
     Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $false

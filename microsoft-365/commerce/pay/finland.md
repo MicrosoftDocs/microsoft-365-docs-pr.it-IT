@@ -1,8 +1,8 @@
 ---
 title: Informazioni di pagamento per la Finlandia
-author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
+author: cmcatee-MSFT
 ms.author: cmcatee
 manager: scotv
 audience: Admin
@@ -13,24 +13,33 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ce84cb49d0b120b50fba27980e9b061ac81f6290
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: cdcc7508ffb0974a5c6ef5105c09521af5f62116
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647648"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406957"
 ---
 # <a name="payment-information-for-finland"></a>Informazioni di pagamento per la Finlandia
 
 [Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Pagare solo in EUR e fare riferimento ai numeri di fattura per la rimessa di pagamento.
-
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Bank:** Citibank, Londra  
-**Codice SWIFT/BIC:** CITIGB2L  
-**IBAN:** GB31CITI18500812207591  
-**Sort Code:** 185008  
-**Numero di conto:** 12207591  
-**Nome account:** MICROSOFT  
+**Pagare in EUR e fare riferimento ai numeri di fattura per la rimessa di pagamento.**
+
+Se si dispone di una fattura fatturata da **Microsoft Ireland Operations Limited,** utilizzare queste informazioni bancarie:
+
+Bank: Citibank, Londra\
+Codice SWIFT: CITIGB2L\
+Codice IBAN: GB31CITI18500812207591\
+Numero di conto: 12207591\
+Nome account: MICROSOFT
+
+Se si dispone di una fattura fatturata da **Microsoft Oy** per ordini e consumi a partire dal 1° marzo 2021, utilizzare le seguenti informazioni bancarie:
+
+Bank: Citibank Europe plc\
+Codice SWIFT: CITIIE2X\
+Codice IBAN: IE97CITI99005170000127\
+Numero account: 70000127\
+Nome account: MICROSOFT

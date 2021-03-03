@@ -15,12 +15,12 @@ ms.custom:
 description: Gli amministratori possono visualizzare le domande frequenti e le risposte sulle attività di amministrazione delegata in Microsoft 365 per i partner e i rivenditori Microsoft.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 971572f8bff80da6dd63bed8958112332292feb9
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 304fbba16d6c8e81e965462e3405824bd22982c9
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288360"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50405937"
 ---
 # <a name="delegated-administration-faq"></a>Domande frequenti sull'amministrazione delegata
 
@@ -35,11 +35,11 @@ Se si è un partner o un rivenditore Microsoft e si è  effettuato l'accesso com
 
 L'amministrazione delegata consente di gestire Microsoft 365 (incluse le impostazioni EOP) come se si fosse un amministratore all'interno dell'organizzazione. I passaggi per configurare l'amministrazione delegata sono descritti nell'elenco seguente:
 
-1. Iscriviti e diventa un [consulente di Microsoft Office 365](https://aka.ms/cloudbenefits).
+1. Iscriviti e diventa un [consulente di Microsoft Office 365](https://partner.microsoft.com/?cloudbenefits).
 
-2. Iscriversi per l'amministrazione delegata. Prima di iniziare ad amministrare il tenant di un cliente, deve autorizzarti come amministratore delegato. Per ricevere la sua approvazione, devi innanzitutto [inviargli un'offerta per l'amministrazione delegata](https://support.microsoft.com/office/26530dc0-ebba-415b-86b1-b55bc06b073e). Puoi anche offrire l'amministrazione delegata al cliente in un secondo momento.
+2. Iscriversi per l'amministrazione delegata. Prima di poter iniziare ad amministrare il tenant di un cliente, deve autorizzarti come amministratore delegato. Per ricevere la sua approvazione, devi innanzitutto [inviargli un'offerta per l'amministrazione delegata](https://support.microsoft.com/office/26530dc0-ebba-415b-86b1-b55bc06b073e). Puoi anche offrire l'amministrazione delegata al cliente in un secondo momento.
 
-3. Crea l'account amministratore delegato usando la procedura descritta in [Aggiungere, modificare o eliminare un partner consulente sottoscrizione.](../../admin/misc/add-partner.md)
+3. Crea l'account amministratore delegato usando i passaggi descritti in [Aggiungere, modificare o eliminare un partner consulente sottoscrizione.](../../admin/misc/add-partner.md)
 
 Visita [Partner: crea la tua azienda e amministra la sottoscrizione per i partner](https://support.microsoft.com/office/30dd1681-47e0-4cbc-abfe-a222cd111319) per altre informazioni su come configurare l'amministrazione delegata.
 

@@ -17,15 +17,15 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Gli amministratori possono ottenere informazioni sulla spoof intelligence in Exchange Online Protection (EOP), dove è possibile consentire o bloccare mittenti falsificati specifici.
+description: Gli amministratori possono ottenere informazioni sulla spoof intelligence in Exchange Online Protection (EOP), dove è possibile consentire o bloccare specifici mittenti falsificati.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2a65400d1b48abfc6ac0e4dd38a8245dd7b4f87b
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 482978e93325344d897fcf907b026743fc393d47
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289688"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406641"
 ---
 # <a name="configure-spoof-intelligence-in-eop"></a>Configurare spoof intelligence in EOP
 
@@ -62,15 +62,15 @@ Spoof intelligence, e in particolare il criterio di spoof intelligence predefini
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Per poter eseguire le procedure contenute in questo articolo è necessario disporre delle autorizzazioni appropriate nel Centro sicurezza e conformità:
+- Per eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni in **Exchange Online:**
   - Per modificare i criteri di spoof intelligence o abilitare o disabilitare spoof intelligence, è necessario essere membri dei gruppi di ruoli **Gestione** organizzazione o **Amministratore** sicurezza.
   - Per l'accesso in sola lettura ai criteri di spoof intelligence, è necessario essere membri dei gruppi di ruoli **Lettore** globale o Lettore **di** sicurezza.
 
-  Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
+  Per ulteriori informazioni, vedere [Autorizzazioni in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
 
   **Note**:
 
-  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie nel centro Sicurezza e conformità _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
+  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 offre agli utenti le autorizzazioni e le autorizzazioni necessarie per altre funzionalità di Microsoft 365.  Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
   - Anche il gruppo di ruoli di **Gestione organizzazione sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre inoltre l'accesso di sola lettura a tale funzionalità.
 
 - Per le impostazioni consigliate per spoof intelligence, vedere [Impostazioni dei criteri anti-phishing predefiniti di EOP.](recommended-settings-for-eop-and-office365-atp.md#eop-default-anti-phishing-policy-settings)
@@ -78,7 +78,7 @@ Spoof intelligence, e in particolare il criterio di spoof intelligence predefini
 ## <a name="use-the-security--compliance-center-to-manage-spoofed-senders"></a>Usare il Centro sicurezza & conformità per gestire i mittenti falsificati
 
 > [!NOTE]
-> Se si dispone di un abbonamento a Microsoft 365 Enterprise E5 o si è acquistato separatamente un componente aggiuntivo di Microsoft Defender per Office 365, è anche possibile gestire i mittenti che effettuano lo spoofing del dominio tramite spoof [intelligence.](walkthrough-spoof-intelligence-insight.md)
+> Se si dispone di un abbonamento a Microsoft 365 Enterprise E5 o se è stato acquistato separatamente un componente aggiuntivo di Microsoft Defender per Office 365, è anche possibile gestire i mittenti che effettuano lo spoofing del dominio tramite spoof [intelligence.](walkthrough-spoof-intelligence-insight.md)
 
 1. Nel Centro sicurezza e conformità, andare a **Gestione delle minacce** \> **Criteri** \> **Filtro della posta indesiderata**.
 
@@ -110,7 +110,7 @@ Spoof intelligence, e in particolare il criterio di spoof intelligence predefini
 
    - **Infrastruttura di invio:** dominio trovato in una ricerca DNS inversa (record PTR) dell'indirizzo IP del server di posta elettronica di origine. Se l'indirizzo IP di origine non dispone di un record PTR, l'infrastruttura di invio viene identificata come \<source IP\> /24 (ad esempio, 192.168.100.100/24).
 
-     Per ulteriori informazioni sulle origini dei messaggi e sui mittenti dei messaggi, vedere [Panoramica degli standard dei messaggi di posta elettronica.](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)
+     Per ulteriori informazioni sulle origini dei messaggi e sui mittenti dei messaggi, vedere [Una panoramica degli standard dei messaggi di posta elettronica.](how-office-365-validates-the-from-address.md#an-overview-of-email-message-standards)
 
    - **Numero di messaggi**: numero di messaggi dall'infrastruttura di invio all'organizzazione che contengono il mittente o i mittenti falsificati specificati negli ultimi 30 giorni.
 
@@ -127,7 +127,7 @@ Spoof intelligence, e in particolare il criterio di spoof intelligence predefini
 
    - **Ultimo messaggio visualizzato:** l'ultima data in cui un messaggio è stato ricevuto dall'infrastruttura di invio che contiene l'utente falsificato.
 
-   - **Consentito lo spoofing?**: I valori visualizzati di seguito sono:
+   - **Consentito lo spoofing?**: I valori visualizzati qui sono:
      - **Sì:** i messaggi provenienti dalla combinazione di utente falsificato e infrastruttura di invio sono consentiti e non trattati come messaggi di posta elettronica falsificati.
      - **No:** i messaggi provenienti dalla combinazione di utente falsificato e infrastruttura di invio vengono contrassegnati come falsificati. L'azione è controllata dal criterio anti-phishing predefinito o dai criteri anti-phishing personalizzati (il valore predefinito è Sposta messaggio **nella cartella Posta indesiderata).** Per ulteriori informazioni, vedere la sezione successiva.
 
@@ -219,7 +219,7 @@ Per verificare di aver configurato spoof intelligence con mittenti autorizzati e
 
 Essere accurati sulla protezione da spoofing e phishing. Ecco alcuni modi correlati per controllare i mittenti che effettuano lo spoofing del dominio e impedire loro di danneggiare l'organizzazione:
 
-- Controllare il **Rapporto messaggi falsificati.** È possibile utilizzare questo report spesso per visualizzare e gestire i mittenti falsificati. Per informazioni, vedere [report Falsificazioni.](view-email-security-reports.md#spoof-detections-report)
+- Controllare il **Rapporto messaggi falsificati.** È possibile utilizzare questo report spesso per visualizzare e gestire i mittenti falsificati. Per informazioni, vedere [il report Falsificazioni.](view-email-security-reports.md#spoof-detections-report)
 
 - Esaminare la configurazione di Sender Policy Framework (SPF). Per una rapida introduzione a SPF e le istruzioni di configurazione, vedere [Configurare SPF in Microsoft 365 per prevenire lo spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md). Per informazioni più dettagliate su come Office 365 utilizza SPF oppure per risolvere i problemi o per eseguire distribuzioni non standard (ad esempio, le distribuzioni ibride), iniziare da [How Office 365 uses Sender Policy Framework (SPF) to prevent spoofing](how-office-365-uses-spf-to-prevent-spoofing.md).
 

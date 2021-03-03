@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 91366e8f255d277d4d40de4c4cd3330283da718c
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: e125a6dfb35b7018b5f85100184c842da9231327
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50166451"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407326"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Ulteriori informazioni sui tipi di informazioni riservate
 
@@ -84,7 +84,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_argentina_national_id trova contenuto che corrisponde al modello.
 - Viene trovata una parola Keyword_argentina_national_id da un utente.
 
@@ -118,9 +118,9 @@ In una definizione di entità del tipo di informazioni riservate, il livello di 
 
 Un livello di probabilità elevato restituisce il numero più basso di falsi positivi, ma può comportare più falsi negativi. I livelli di probabilità bassa o media rendono più falsi positivi, ma da pochi a zero falsi negativi.
 
-- **probabilità bassa**: valore di 65, gli elementi corrispondenti conterranno il numero minimo di falsi negativi, ma il maggior numero di falsi positivi.  
-- **probabilità media**: valore di 75, gli elementi corrispondenti conterranno una quantità media di falsi positivi e falsi negativi.  
-- **confidenza** elevata : valore di 85, gli elementi corrispondenti conterranno il numero minimo di falsi positivi, ma il maggior numero di falsi negativi.  
+- **probabilità bassa**: valore di 65, gli elementi corrispondenti conterranno il numero minimo di falsi negativi, ma il maggior numero di falsi positivi. La probabilità bassa restituisce tutte le corrispondenze di confidenza bassa, media e alta.
+- **probabilità media:** valore pari a 75, gli elementi corrispondenti conterranno una quantità media di falsi positivi e falsi negativi. La probabilità media restituisce tutte le corrispondenze di confidenza media e alta.  
+- **probabilità elevata:** valore pari a 85, gli elementi corrispondenti conterranno il numero minimo di falsi positivi, ma il maggior numero di falsi negativi. La probabilità elevata restituisce solo corrispondenze con confidenza elevata.  
 
 È consigliabile usare modelli di livello di probabilità elevata con conteggi bassi, ad esempio da cinque a dieci, e modelli di probabilità bassa con conteggi più elevati, ad esempio 20 o più.
 

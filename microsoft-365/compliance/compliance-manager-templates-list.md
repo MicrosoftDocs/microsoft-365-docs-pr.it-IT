@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager fornisce modelli per la creazione di valutazioni in linea con le normative, gli standard e le leggi nazionali, regionali e del settore.
-ms.openlocfilehash: 2127daddaf44d25d9a43969e8bfafe5def39a260
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: 73777746606c20d43cdf330b04e7301b5c512bcc
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519283"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406748"
 ---
 # <a name="compliance-manager-templates-list"></a>Elenco dei modelli di Compliance Manager
 
@@ -42,12 +42,15 @@ Di seguito è riportato l'elenco completo dei modelli in Compliance Manager. Ogn
 
 **Dove trovare i modelli**
 
-In Compliance Manager passare alla pagina **modelli di** valutazione. Verrà visualizzato un elenco di tutti i modelli disponibili per l'organizzazione.
+In Compliance Manager passare alla pagina **modelli di** valutazione. Verrà visualizzato un elenco di tutti i modelli disponibili per l'organizzazione. È importante comprendere la distinzione tra modelli inclusi e premium:
 
 - **I modelli inclusi** sono modelli inclusi nel contratto di licenza dell'organizzazione.
  - **I modelli** Premium visualizzano modelli aggiuntivi che l'organizzazione può scegliere di ottenere (fare riferimento alle [condizioni del servizio).](https://go.microsoft.com/fwlink/?linkid=2132371)
 
 Altre informazioni [su come visualizzare e gestire i modelli.](compliance-manager-templates.md#viewing-and-managing-templates-from-the-assessment-templates-page)
+
+> [!NOTE]
+> Per [ulteriori informazioni sui](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) modelli inclusi e premium e per informazioni sui modelli disponibili per l'organizzazione, vedere Tipi di modello.
 
 ## <a name="included-templates"></a>Modelli inclusi
 
@@ -55,6 +58,9 @@ Altre informazioni [su come visualizzare e gestire i modelli.](compliance-manage
 - [GDPR](https://docs.microsoft.com/compliance/regulatory/gdpr) dell'Unione Europea (Microsoft 365, Office 365, Intune)
 - [ISO 27001:2013](https://docs.microsoft.com/compliance/regulatory/offering-iso-27001)
 - NIST 800-53 Rev.4
+
+> [!NOTE]
+> Per i clienti della US Government Community (GCC) Moderate e GCC High, sono inclusi i modelli CmMC (Cybersecurity Maturity Model Certification) da 1 a 5, oltre ai modelli sopra elencati.
 
 ## <a name="premium-templates"></a>Modelli Premium
 
@@ -125,7 +131,7 @@ Altre informazioni [su come visualizzare e gestire i modelli.](compliance-manage
 - Ceco - On Cyber Security and Change of Related Acts (Act on Cyber Security) - Act No. 181 (Microsoft 365)
 - Delaware Computer Security Breaches - Commerce and Trade Subtitle II - 12B-100 to 12B-104
 - Danimarca - Data Protection Act
-- Danimarca - Ordine esecutivo sulle informazioni e sul consenso richiesto in caso di archiviazione e accesso alle informazioni in End-User terminali
+- Danimarca - Ordine esecutiva sulle informazioni e il consenso richiesti in caso di archiviazione e accesso alle informazioni in End-User terminali
 - [DFARS](https://docs.microsoft.com/compliance/regulatory/offering-dfars) (Microsoft 365)
 - Direttiva 2013/40/UE dell'Europa e del Consiglio (Microsoft 365)
 - Dubai - Regolamento sulla protezione dei dati sanitari (Microsoft 365)
@@ -140,9 +146,9 @@ Altre informazioni [su come visualizzare e gestire i modelli.](compliance-manage
 - Direttiva UE 2006/24/EC
 - Regole sulla privacy FDIC (Microsoft 365)
 - [Federal Financial Institutions Examination Council (FFIEC) Information Security Booklet](https://docs.microsoft.com/compliance/regulatory/offering-ffiec-us) (Microsoft 365, Intune)
-- [Controlli FedRamp High Security](https://docs.microsoft.com/compliance/regulatory/offering-fedramp) (Office 365)
+- [Controlli fedramp ad alta sicurezza](https://docs.microsoft.com/compliance/regulatory/offering-fedramp) (Office 365)
 - [FedRamp High Security Controls_NIST 800-53](https://docs.microsoft.com/compliance/regulatory/offering-fedramp) (Microsoft 365)
-- [FedRAMP Moderate](https://docs.microsoft.com/compliance/regulatory/offering-fedramp)
+- [FedRAMP Moderato](https://docs.microsoft.com/compliance/regulatory/offering-fedramp)
 - Finlandia - Data Protection Act
 - Criteri finlandese per la valutazione della sicurezza delle informazioni dei servizi cloud (Microsoft 365)
 - FINRA Cybersecurity Checklist
@@ -220,7 +226,7 @@ Altre informazioni [su come visualizzare e gestire i modelli.](compliance-manage
 - [NIST CSF](https://docs.microsoft.com/compliance/regulatory/offering-nist-csf) (Microsoft 365)
 - NIST Privacy Framework
 - Pubblicazione speciale NIST 800-128 (Microsoft 365)
-- Pubblicazione speciale NIST 1800-1 Protezione delle registrazioni sanitarie elettroniche nei dispositivi mobili (Microsoft 365)
+- NIST Special Publication 1800-1 Securing Electronic Health Records on Mobile Devices (Microsoft 365)
 - NIST Special Publication 1800-5 IT Asset Management
 - Norvegia - Personal Data Act (Microsoft 365)
 - NYDFS (Microsoft 365)

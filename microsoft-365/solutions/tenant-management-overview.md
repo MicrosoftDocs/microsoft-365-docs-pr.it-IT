@@ -11,15 +11,17 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-tenantmanagement
+- m365solution-overview
+- tenant-management
 ms.custom:
 - Ent_Solutions
 description: Panoramica della pianificazione, della distribuzione e del funzionamento continuo dei tenant di Microsoft 365.
-ms.openlocfilehash: f7daeaed149b5b6199ac9012b3ffa3d811029099
-ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
+ms.openlocfilehash: 42bde00fbd4ddc1cf92236f099a22b2260dbb980
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49908635"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50405679"
 ---
 # <a name="tenant-management-for-microsoft-365-for-enterprise"></a>Gestione tenant per Microsoft 365 per le aziende
 
@@ -41,7 +43,7 @@ Ma prima di tutto, prendiamoci un momento per capire che cos'è un tenant e che 
 
 Un tenant di Microsoft 365 è un'istanza dedicata dei servizi di Microsoft 365 e dei dati dell'organizzazione archiviati in una posizione predefinita specifica, ad esempio Europa o Nord America. Questa posizione viene specificata quando si crea il tenant per l'organizzazione. Ogni tenant di Microsoft 365 è distinto, univoco e separato da tutti gli altri tenant di Microsoft 365. Si crea un tenant di Microsoft 365 quando si acquistano uno o più prodotti da Microsoft, ad esempio Microsoft 365 E3 o E5, e un set di licenze per ognuno.
 
-Il tenant di Microsoft 365 include anche un tenant di Azure Active Directory (Azure AD), che è un'istanza dedicata di Azure AD per gli account utente, i gruppi e altri oggetti. Ogni tenant di Azure AD è distinto, univoco e separato da tutti gli altri tenant di Azure AD. Anche se l'organizzazione può avere più tenant di Azure AD che è possibile configurare con le sottoscrizioni di Azure, i tenant di Microsoft 365 possono usare solo un singolo tenant di Azure AD, quello creato al momento della creazione del tenant. 
+Il tenant di Microsoft 365 include anche un tenant di Azure Active Directory (Azure AD), che è un'istanza dedicata di Azure AD per account utente, gruppi e altri oggetti. Ogni tenant di Azure AD è distinto, univoco e separato da tutti gli altri tenant di Azure AD. Anche se l'organizzazione può avere più tenant di Azure AD che è possibile configurare con le sottoscrizioni di Azure, i tenant di Microsoft 365 possono usare solo un singolo tenant di Azure AD, quello creato al momento della creazione del tenant. 
 
 Ecco un esempio:
 
@@ -56,7 +58,7 @@ Oltre al nome e alla posizione corretti per il tenant, esistono altri elementi d
 Ecco gli elementi:
 
 - Si dispone del set corretto di prodotti (sottoscrizioni) e licenze.
-  - Il set di prodotti corrisponde alle esigenze aziendali, IT e di sicurezza.
+  - Il set di prodotti soddisfa le esigenze aziendali, IT e di sicurezza.
   - Esiste un numero adeguato di licenze per i dipendenti e cambiamenti previsti nel personale.
 - Per la rete:
   - Sono stati configurati i nomi di dominio DNS corretti.
@@ -68,7 +70,7 @@ Ecco gli elementi:
 - La gestione delle identità e degli accessi è stata configurata.
   - È necessario l'accesso utente sicuro con autenticazione a più fattori o senza password.
   - Si dispone di criteri di accesso condizionale che applicano i requisiti di accesso e le restrizioni per livelli di sicurezza più elevati.
-- I server Office locali e i relativi dati sono stati migrati nelle app cloud o vengono usati in una configurazione ibrida.
+- I server Di Office locali e i relativi dati sono stati migrati nelle app cloud o vengono usati in una configurazione ibrida.
 - Si esegue la gestione dei dispositivi con Intune o Basic Mobility and Security integrato in Microsoft 365.
   - I dispositivi di proprietà dell'organizzazione vengono registrati e gestiti.
   - Le app per i dispositivi personali vengono gestite.
@@ -92,7 +94,7 @@ Nelle sezioni e nella tabella seguenti sono elencate le funzionalità principali
 
 | Capacità o funzionalità | Descrizione | Licenze |
 |:-------|:-----|:-------|
-| Più tenant | Ogni tenant di Microsoft 365 è distinto, univoco e separato da tutti gli altri tenant di Microsoft 365. Con più tenant, esistono restrizioni e considerazioni aggiuntive per la gestione e la fornitura di servizi agli utenti. | Microsoft 365 E3 o E5 | 
+| Più tenant | Ogni tenant di Microsoft 365 è distinto, univoco e separato da tutti gli altri tenant di Microsoft 365. Con più tenant, esistono limitazioni e considerazioni aggiuntive per la gestione e la fornitura di servizi agli utenti. | Microsoft 365 E3 o E5 | 
 | Migrazione delle cassette postali tra tenant | Gli amministratori tenant possono spostare le cassette postali tra tenant con dipendenze dell'infrastruttura minime nei sistemi locali. In questo modo si elimina la necessità di eseguire l'offboard e l'onboard delle cassette postali. | Microsoft 365 E3 o E5 | 
 | Multi-Geo | Il tenant può archiviare i dati in pausa nelle altre posizioni geografiche del datacenter scelte per soddisfare i requisiti di residenza dei dati. | Microsoft 365 E3 o E5 | 
 | Spostare i dati di base in un nuovo data center geografico | Poiché Microsoft aggiunge nuove posizioni geografiche del datacenter per ulteriori risorse di capacità e calcolo, è possibile richiedere uno spostamento geografico del datacenter per la residenza dei dati in-geo per i dati principali dei clienti. | Microsoft 365 E3 o E5 | 

@@ -17,18 +17,18 @@ search.appverid:
 - MOE150
 - MET150
 description: Gli amministratori possono abilitare il supporto delle etichette di riservatezza per i file di Word, Excel e PowerPoint in SharePoint e OneDrive.
-ms.openlocfilehash: f84407046d2b1d91d834d090f49fc385df36ec51
-ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
+ms.openlocfilehash: 91322ff3a1dbe2e6b5506e1e3d8a49156b005d7b
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50279354"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407284"
 ---
 # <a name="enable-sensitivity-labels-for-office-files-in-sharepoint-and-onedrive"></a>Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive
 
->*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
+>*[Indicazioni per la sicurezza e conformità dell'assegnazione di licenze Microsoft 365](https://aka.ms/ComplianceSD).*
 
-Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive in modo che gli utenti possano applicare le etichette [di](sensitivity-labels.md) riservatezza in Office sul Web. Quando questa funzionalità è abilitata, gli utenti visualizzano il pulsante Riservatezza sulla barra multifunzione in modo che possano applicare etichette e visualizzano qualsiasi nome di etichetta applicato sulla barra di stato.  
+Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive in modo che gli utenti possano applicare le etichette [di](sensitivity-labels.md) riservatezza in Office sul Web. Quando questa funzionalità è abilitata, gli utenti visualizzano il pulsante Riservatezza sulla barra multifunzione in modo che possano applicare etichette e visualizzano qualsiasi nome di etichetta applicato sulla barra di stato. 
 
 L'abilitazione di questa funzionalità consente inoltre a SharePoint e OneDrive di elaborare il contenuto dei file crittografati utilizzando un'etichetta di riservatezza. L'etichetta può essere applicata in Office per il Web o nelle app desktop di Office e caricata o salvata in SharePoint e OneDrive. Fino a quando non si abilita questa funzionalità, questi servizi non possono elaborare i file crittografati, il che significa che la creazione condivisa, eDiscovery, la prevenzione della perdita dei dati, la ricerca e altre funzionalità di collaborazione non funzioneranno per questi file.
 
@@ -44,7 +44,7 @@ Dopo aver abilitato le etichette di riservatezza per i file di Office in SharePo
 
 - Gli utenti esterni possono accedere ai documenti etichettati con crittografia utilizzando account guest. Per ulteriori informazioni, vedere [Supporto per utenti esterni e contenuto con etichetta.](sensitivity-labels-office-apps.md#support-for-external-users-and-labeled-content) 
 
-- Office 365 eDiscovery supporta la ricerca full-text per questi file e i criteri di prevenzione della perdita dei dati (DLP) supportano il contenuto in questi file.
+- Office 365 eDiscovery supporta la ricerca full-text per questi file e i criteri di prevenzione della perdita di dati (DLP) supportano il contenuto in questi file.
 
 > [!NOTE]
 > Se la crittografia è stata applicata con una chiave locale (una topologia di gestione delle chiavi spesso definita "hold your own key" o HYOK) o tramite la crittografia a chiave [doppia,](double-key-encryption.md)il comportamento del servizio per l'elaborazione del contenuto del file non cambia. Pertanto, per questi file, la creazione condivisa, eDiscovery, la prevenzione della perdita dei dati, la ricerca e altre funzionalità di collaborazione non funzioneranno.
@@ -72,6 +72,9 @@ Usare l'app di sincronizzazione di OneDrive versione 19.002.0121.0008 o successi
 
 ## <a name="limitations"></a>Limitazioni
 
+> [!WARNING]
+> Esiste un problema corrente con Power Query e i componenti aggiuntivi personalizzati con Excel sul Web: non crittografare questi file utilizzando etichette di riservatezza perché i dati possono essere persi quando il file viene salvato. Al contrario, applicare un'etichetta senza crittografia.
+
 - SharePoint e OneDrive non applicano automaticamente le etichette di riservatezza ai file esistenti già crittografati con le etichette di Azure Information Protection. Al contrario, perché le funzionalità funzionino dopo aver abilitato le etichette di riservatezza per i file di Office in SharePoint e OneDrive, completare queste attività:
     
     1. Assicurarsi di aver eseguito la migrazione delle etichette [](create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy) di [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/configure-policy-migrate-labels) alle etichette di riservatezza e di averle pubblicate dal Centro conformità Microsoft 365 o dall'interfaccia di amministrazione per l'etichettatura equivalente.
@@ -79,11 +82,11 @@ Usare l'app di sincronizzazione di OneDrive versione 19.002.0121.0008 o successi
     2. Scaricare i file e quindi caricarli in SharePoint.
 
 - SharePoint e OneDrive non possono elaborare i file crittografati quando l'etichetta che ha applicato la crittografia ha una delle configurazioni [seguenti per la crittografia:](encryption-sensitivity-labels.md#configure-encryption-settings)
-    - **Consentire agli utenti di assegnare autorizzazioni** quando applicano l'etichetta e la casella di controllo **In Word, PowerPoint** ed Excel, chiedere agli utenti di specificare le autorizzazioni. Questa impostazione viene talvolta definita "autorizzazioni definite dall'utente".
-    - **La scadenza dell'accesso degli** utenti al contenuto è impostata su un valore diverso da **Mai.**
+    - **Consentire agli utenti di assegnare le autorizzazioni** quando applicano l'etichetta e la casella di controllo **In Word, PowerPoint** ed Excel, chiedere agli utenti di specificare le autorizzazioni. Questa impostazione viene talvolta definita "autorizzazioni definite dall'utente".
+    - **L'accesso degli utenti al contenuto scade** è impostato su un valore diverso da **Mai.**
     - **È selezionata la crittografia a** chiave doppia.
     
-    Per le etichette con una di queste configurazioni di crittografia, le etichette non vengono visualizzate agli utenti di Office sul Web. Inoltre, le nuove funzionalità non possono essere usate con documenti etichettati che già dispongono di queste impostazioni di crittografia. Questi documenti, ad esempio, non verranno restituiti nei risultati della ricerca, anche se vengono aggiornati.
+    Per le etichette con una di queste configurazioni di crittografia, le etichette non vengono visualizzate agli utenti di Office sul Web. Inoltre, le nuove funzionalità non possono essere usate con documenti etichettati che già dispongono di queste impostazioni di crittografia. Ad esempio, questi documenti non verranno restituiti nei risultati della ricerca, anche se vengono aggiornati.
 
 - Per i documenti crittografati, la stampa non è supportata.
 
@@ -91,22 +94,25 @@ Usare l'app di sincronizzazione di OneDrive versione 19.002.0121.0008 o successi
 
 - Il sito di tracciabilità dei documenti di Azure Information Protection non è supportato.
 
-- Le app desktop e per dispositivi mobili di Office non supportano la creazione condivisa per i file etichettati con crittografia. Queste app continuano ad aprire file con etichetta e crittografati in modalità di modifica esclusiva.
+- Per impostazione predefinita, le app desktop e mobili di Office non supportano la creazione condivisa per i file etichettati con crittografia. Queste app continuano ad aprire file con etichetta e crittografati in modalità di modifica esclusiva.
+    
+    > [!NOTE]
+    > La creazione condivisa è ora supportata in anteprima. Per ulteriori informazioni, vedere [Abilitare la creazione condivisa per i file crittografati con etichette di riservatezza.](sensitivity-labels-coauthoring.md)
 
-- Se un amministratore modifica le impostazioni per un'etichetta pubblicata già applicata ai file scaricati nel client di sincronizzazione degli utenti, gli utenti potrebbero non essere in grado di salvare le modifiche apportate al file nella cartella di sincronizzazione di OneDrive. Questo scenario si applica ai file etichettati con crittografia e anche quando la modifica dell'etichetta deriva da un'etichetta che non ha applicato la crittografia a un'etichetta che applica la crittografia. Gli utenti [visualizzano un cerchio rosso con un errore](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)con una croce bianca e gli viene chiesto di salvare le nuove modifiche come copia separata. Al contrario, possono chiudere e riaprire il file o usare Office sul Web.
+- Se un amministratore modifica le impostazioni per un'etichetta pubblicata già applicata ai file scaricati nel client di sincronizzazione degli utenti, gli utenti potrebbero non essere in grado di salvare le modifiche apportate al file nella cartella di sincronizzazione di OneDrive. Questo scenario si applica ai file etichettati con crittografia e anche quando la modifica dell'etichetta deriva da un'etichetta che non ha applicato la crittografia a un'etichetta che applica la crittografia. Gli utenti [visualizzano un cerchio rosso con un'icona](https://support.office.com/article/what-do-the-onedrive-icons-mean-11143026-8000-44f8-aaa9-67c985aa49b3)a forma di croce bianca e gli viene chiesto di salvare le nuove modifiche come copia separata. Al contrario, possono chiudere e riaprire il file o usare Office sul Web.
 
 - Se un documento con etichetta viene caricato in SharePoint o OneDrive e l'etichetta ha applicato la crittografia utilizzando un account di un nome dell'entità servizio, il documento non può essere aperto in Office sul Web. Gli scenari di esempio includono Microsoft Cloud App Security e un file inviato a Teams tramite posta elettronica.
 
 - Gli utenti possono provare a salvare i problemi dopo la modalità offline o in modalità sospensione quando, invece di usare Office per il Web, usano le app desktop e mobili per Word, Excel o PowerPoint. Per questi utenti, quando riprendono la sessione dell'app di Office e provano a salvare le modifiche, viene visualizzato un messaggio di errore di caricamento con l'opzione per salvare una copia invece di salvare il file originale. 
 
-- I documenti crittografati nei modi seguenti non possono essere aperti in Office sul Web:
+- I documenti che sono stati crittografati nei modi seguenti non possono essere aperti in Office sul Web:
     - Crittografia che usa una chiave locale ("tenere la propria chiave" o HYOK)
     - Crittografia applicata tramite la [crittografia a chiave doppia](double-key-encryption.md)
     - Crittografia applicata in modo indipendente da un'etichetta, ad esempio applicando direttamente un modello di protezione Rights Management.
 
 - Le etichette [configurate per altre lingue](create-sensitivity-labels.md#additional-label-settings-with-security--compliance-center-powershell) non sono supportate e visualizzano solo la lingua originale.
 
-- Non è possibile impedire l'acquisizione di schermate per i documenti crittografati. Per ulteriori informazioni, vedere [Can Rights Management prevent screen captures?](/azure/information-protection/faqs-rms#can-rights-management-prevent-screen-captures)
+- Non è possibile impedire le acquisizioni dello schermo per i documenti crittografati. Per ulteriori informazioni, vedere [Can Rights Management prevent screen captures?](/azure/information-protection/faqs-rms#can-rights-management-prevent-screen-captures)
 
 - Se si elimina un'etichetta applicata a un documento in SharePoint o OneDrive, anziché rimuovere l'etichetta dai criteri di etichetta applicabili, il documento scaricato non verrà etichettato o crittografato. Se invece il documento con etichetta è archiviato all'esterno di SharePoint o OneDrive, il documento rimane crittografato se l'etichetta viene eliminata. Si noti che, sebbene sia possibile eliminare le etichette durante una fase di test, è molto raro eliminare un'etichetta in un ambiente di produzione.
 
@@ -126,7 +132,7 @@ Questa opzione è il modo più semplice per abilitare le etichette di riservatez
     
     ![Pulsante Attiva ora per abilitare le etichette di riservatezza per Office Online](../media/sensitivity-labels-turn-on-banner.png)
     
-    Il comando viene eseguito immediatamente e, al successivo aggiornamento della pagina, il messaggio o il pulsante non viene più visualizzato.
+    Il comando viene eseguito immediatamente e al successivo aggiornamento della pagina, il messaggio o il pulsante non viene più visualizzato.
 
 > [!NOTE]
 > Se si dispone di Microsoft 365 Multi-Geo, è necessario usare PowerShell per abilitare queste funzionalità per tutte le posizioni geografiche. Per informazioni dettagliate, vedere la sezione successiva.
@@ -153,7 +159,7 @@ Prima di eseguire il comando PowerShell per abilitare le etichette di riservatez
 
 4. Selezionare la lingua e fare clic su **Scarica**.
 
-5. Scegliere tra il file MSI x64 o x86. Scaricare il file x64 se si esegue la versione a 64 bit di Windows o il file x86 se si esegue la versione a 32 bit. Se non lo sai, vedi Quale versione del sistema operativo [Windows è in esecuzione?](https://support.microsoft.com/help/13443/windows-which-operating-system)
+5. Scegliere tra il file MSI x64 o x86. Scaricare il file x64 se si esegue la versione a 64 bit di Windows o il file x86 se si esegue la versione a 32 bit. In caso contrario, vedere Quale versione del sistema operativo [Windows è in esecuzione?](https://support.microsoft.com/help/13443/windows-which-operating-system)
 
 6. Dopo aver scaricato il file, eseguirlo e seguire i passaggi dell'Installazione guidata.
 
@@ -182,27 +188,27 @@ Le modifiche seguenti vengono replicate entro un'ora: le etichette di riservatez
 
 Le modifiche seguenti vengono replicate entro 24 ore: modifiche alle impostazioni delle etichette di riservatezza per le etichette esistenti.
 
-Poiché il ritardo di replica è di solo un'ora per le nuove etichette di riservatezza, è improbabile che si verifichi lo scenario nell'esempio. Tuttavia, come protezione, è consigliabile pubblicare prima nuove etichette per pochi utenti di test, attendere un'ora e quindi verificare il comportamento delle etichette in SharePoint e OneDrive. Come passaggio finale, rendere l'etichetta disponibile a più utenti aggiungendo altri utenti al criterio di etichetta esistente oppure aggiungere l'etichetta a un criterio di etichetta esistente per gli utenti standard. Al momento in cui gli utenti standard vedono l'etichetta, l'etichetta è già sincronizzata con SharePoint e OneDrive.
+Poiché il ritardo di replica è di solo un'ora per le nuove etichette di riservatezza, è improbabile che si verifichi lo scenario nell'esempio. Tuttavia, come protezione, è consigliabile pubblicare prima le nuove etichette per pochi utenti di test, attendere un'ora e quindi verificare il comportamento delle etichette in SharePoint e OneDrive. Come passaggio finale, rendere l'etichetta disponibile a più utenti aggiungendo altri utenti al criterio di etichetta esistente oppure aggiungere l'etichetta a un criterio di etichetta esistente per gli utenti standard. Al momento in cui gli utenti standard vedono l'etichetta, l'etichetta è già sincronizzata con SharePoint e OneDrive.
 
 ## <a name="sharepoint-information-rights-management-irm-and-sensitivity-labels"></a>SharePoint Information Rights Management (IRM) ed etichette di riservatezza
 
 [SharePoint Information Rights Management (IRM)](set-up-irm-in-sp-admin-center.md) è una tecnologia meno recente per proteggere i file a livello di elenco e raccolta applicando la crittografia e le restrizioni quando i file vengono scaricati. Questa tecnologia di protezione meno recente è progettata per impedire agli utenti non autorizzati di aprire il file mentre si trova all'esterno di SharePoint.
 
-In confronto, le etichette di riservatezza forniscono le impostazioni di protezione dei contrassegni visivi (intestazioni, piè di pagina, filigrane) oltre alla crittografia. Le impostazioni di crittografia [](https://docs.microsoft.com/azure/information-protection/configure-usage-rights) supportano l'intera gamma di diritti di utilizzo per limitare le operazioni che gli utenti possono eseguire sul contenuto e le stesse etichette di riservatezza sono supportate per [molti scenari.](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels) L'utilizzo dello stesso metodo di protezione con impostazioni coerenti tra carichi di lavoro e app determina una strategia di protezione coerente.
+In confronto, le etichette di riservatezza forniscono le impostazioni di protezione dei contrassegni visivi (intestazioni, piè di pagina, filigrane) oltre alla crittografia. Le impostazioni di crittografia [](https://docs.microsoft.com/azure/information-protection/configure-usage-rights) supportano l'intera gamma di diritti di utilizzo per limitare le operazioni che gli utenti possono eseguire con il contenuto e le stesse etichette di riservatezza sono supportate per [molti scenari.](get-started-with-sensitivity-labels.md#common-scenarios-for-sensitivity-labels) L'utilizzo dello stesso metodo di protezione con impostazioni coerenti tra carichi di lavoro e app determina una strategia di protezione coerente.
 
 Tuttavia, è possibile utilizzare entrambe le soluzioni di protezione insieme e il comportamento è il seguente: 
 
 - Se si carica un file con un'etichetta di riservatezza che applica la crittografia, SharePoint non è in grado di elaborare il contenuto di questi file in modo che la creazione condivisa, eDiscovery, DLP e la ricerca non siano supportate per questi file.
 
-- Se si etichetta un file usando Office sul Web, vengono applicate tutte le impostazioni di crittografia dell'etichetta. Per questi file, sono supportati la creazione condivisa, eDiscovery, DLP e la ricerca.
+- Se si etichetta un file usando Office sul Web, vengono applicate tutte le impostazioni di crittografia dell'etichetta. Per questi file sono supportati la creazione condivisa, eDiscovery, DLP e la ricerca.
 
-- Se si scarica un file etichettato utilizzando Office sul Web, l'etichetta viene mantenuta e vengono applicate tutte le impostazioni di crittografia dell'etichetta anziché le impostazioni di restrizione IRM.
+- Se si scarica un file etichettato utilizzando Office sul Web, l'etichetta viene mantenuta e vengono applicate le impostazioni di crittografia dell'etichetta anziché le impostazioni di restrizione IRM.
 
 - Se si scarica un file Office o PDF non crittografato con un'etichetta di riservatezza, vengono applicate le impostazioni IRM.
 
 - Se è stata abilitata una qualsiasi delle impostazioni aggiuntive della raccolta IRM, che includono l'impedimento agli utenti di caricare documenti che non supportano IRM, queste impostazioni vengono applicate.
 
-Con questo comportamento, è possibile essere certi che tutti i file Di Office e PDF sono protetti da accesso non autorizzato se vengono scaricati, anche se non sono etichettati. Tuttavia, i file con etichetta caricati non trarranno vantaggio dalle nuove funzionalità.
+Con questo comportamento, è possibile essere certi che tutti i file di Office e PDF sono protetti da accessi non autorizzati se vengono scaricati, anche se non sono etichettati. Tuttavia, i file con etichetta caricati non trarranno vantaggio dalle nuove funzionalità.
 
 
 ## <a name="search-for-documents-by-sensitivity-label"></a>Cercare documenti in base all'etichetta di riservatezza
@@ -261,6 +267,6 @@ Se si dispone di Microsoft 365 Multi-Geo, è necessario eseguire questo comando 
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Dopo aver abilitato le etichette di riservatezza per i file di Office in SharePoint e OneDrive, è consigliabile etichettare automaticamente questi file usando i criteri di etichettatura automatica. Per ulteriori informazioni, vedere [Applicare automaticamente un'etichetta di riservatezza al contenuto.](apply-sensitivity-label-automatically.md)
+Dopo aver abilitato le etichette di riservatezza per i file di Office in SharePoint e OneDrive, prendere in considerazione l'etichettatura automatica di questi file usando criteri di etichettatura automatica. Per ulteriori informazioni, vedere [Applicare automaticamente un'etichetta di riservatezza al contenuto.](apply-sensitivity-label-automatically.md)
 
 È necessario condividere i propri documenti etichettati e crittografati con persone esterne all’organizzazione?  Vedere [Condivisione di documenti crittografati con utenti esterni](sensitivity-labels-office-apps.md#sharing-encrypted-documents-with-external-users).

@@ -19,12 +19,12 @@ ms.custom:
 description: Gli amministratori possono imparare a configurare il filtro connessioni in Exchange Online Protection (EOP) per consentire o bloccare i messaggi di posta elettronica dai server di posta elettronica.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: c6ec8b4adcdda692ee561f7d50bacf0511642269
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: bdc8033996c41238bb1defe831eb8e8c7650bb44
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290046"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406091"
 ---
 # <a name="configure-connection-filtering"></a>Configurare il filtro connessioni
 
@@ -36,13 +36,13 @@ ms.locfileid: "50290046"
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
 
-Se si è un cliente di Microsoft 365 con cassette postali in Exchange Online o un cliente autonomo di Exchange Online Protection (EOP) senza cassette postali di Exchange Online, si utilizza il filtro connessioni in EOP (in particolare, il criterio di filtro delle connessioni predefinito) per identificare i server di posta elettronica di origine validi o non validi in base agli indirizzi IP. I componenti principali del criterio di filtro delle connessioni predefinito sono:
+Se si è clienti di Microsoft 365 con cassette postali in Exchange Online o un cliente autonomo di Exchange Online Protection (EOP) senza cassette postali di Exchange Online, si utilizza il filtro connessioni in EOP (in particolare, il criterio di filtro delle connessioni predefinito) per identificare i server di posta elettronica di origine validi o non validi in base agli indirizzi IP. I componenti principali del criterio di filtro delle connessioni predefinito sono:
 
 - **Elenco indirizzi IP consentiti**: consente di ignorare il filtro della posta indesiderata per tutti i messaggi in arrivo dai server di posta elettronica di origine specificati in base all'indirizzo IP o all'intervallo di indirizzi IP. Per gli scenari in cui il filtro della posta indesiderata può ancora verificarsi sui messaggi provenienti da queste origini, vedere la sezione Scenari in cui i messaggi provenienti da origini nell'elenco indirizzi [IP](#scenarios-where-messages-from-sources-in-the-ip-allow-list-are-still-filtered) consentiti vengono ancora filtrati più avanti in questo articolo. Per ulteriori informazioni su come l'elenco indirizzi IP consentiti deve rientrare nella strategia generale dei mittenti attendibili, vedere Creare elenchi di [mittenti attendibili in EOP.](create-safe-sender-lists-in-office-365.md)
 
 - **Elenco indirizzi IP bloccati:** bloccare tutti i messaggi in arrivo dai server di posta elettronica di origine specificati in base all'indirizzo IP o all'intervallo di indirizzi IP. I messaggi in arrivo vengono rifiutati, non contrassegnati come posta indesiderata e non viene eseguito alcun filtro aggiuntivo. Per ulteriori informazioni su come l'elenco indirizzi IP bloccati deve rientrare nella strategia globale dei mittenti bloccati, vedere Creare elenchi di mittenti [bloccati in EOP.](create-block-sender-lists-in-office-365.md)
 
-- **Elenco indirizzi attendibili:** *l'elenco indirizzi* attendibili è un elenco di indirizzi consentiti dinamico nel datacenter Microsoft che non richiede alcuna configurazione del cliente. Microsoft identifica queste origini di posta elettronica attendibili dalle sottoscrizioni a vari elenchi di terze parti. Abilitare o disabilitare l'utilizzo dell'elenco indirizzi attendibili; non è possibile configurare i server di posta elettronica di origine nell'elenco indirizzi attendibili. Il filtro posta indesiderata viene ignorato sui messaggi in arrivo dai server di posta elettronica nell'elenco indirizzi attendibili.
+- **Elenco indirizzi attendibili:** *l'elenco indirizzi* attendibili è un elenco di indirizzi consentiti dinamico nel datacenter Microsoft che non richiede alcuna configurazione del cliente. Microsoft identifica queste origini di posta elettronica attendibili dalle sottoscrizioni a vari elenchi di terze parti. Abilitare o disabilitare l'utilizzo dell'elenco indirizzi attendibili; non è possibile configurare i server di posta elettronica di origine nell'elenco indirizzi attendibili. Il filtro della posta indesiderata viene ignorato sui messaggi in arrivo dai server di posta elettronica nell'elenco indirizzi attendibili.
 
 In questo argomento viene descritto come configurare il criterio di filtro delle connessioni predefinito nel Centro sicurezza & conformità o in PowerShell (PowerShell di Exchange Online per le organizzazioni di Microsoft 365 con cassette postali in Exchange Online; PowerShell EOP autonomo per le organizzazioni senza cassette postali di Exchange Online). Per ulteriori informazioni sul modo in cui EOP utilizza il filtro connessioni fa parte delle impostazioni generali della protezione da posta indesiderata [dell'organizzazione,](anti-spam-protection.md)vedere Protezione da posta indesiderata.
 
@@ -55,15 +55,15 @@ In questo argomento viene descritto come configurare il criterio di filtro delle
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Per poter eseguire le procedure contenute in questo articolo è necessario disporre delle autorizzazioni appropriate nel Centro sicurezza e conformità:
+- Per eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni in **Exchange Online:**
   - Per modificare il criterio di filtro delle connessioni predefinito, è necessario essere membri dei gruppi di ruoli **Gestione** organizzazione o **Amministratore** sicurezza.
   - Per l'accesso in sola lettura al criterio di filtro  delle connessioni  predefinito, è necessario essere membri dei gruppi di ruoli Lettore globale o Lettore di sicurezza.
 
-  Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
+  Per ulteriori informazioni, vedere [Autorizzazioni in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
 
   **Note**:
 
-  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie nel centro Sicurezza e conformità _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
+  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 offre agli utenti le autorizzazioni e le autorizzazioni necessarie per altre funzionalità di Microsoft 365.  Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
   - Anche il gruppo di ruoli di **Gestione organizzazione sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre inoltre l'accesso di sola lettura a tale funzionalità.
 
 - Per trovare gli indirizzi IP di origine dei server di posta elettronica (mittenti) che si desidera consentire o bloccare, è possibile controllare il campo di intestazione IP di connessione **(CIP)** nell'intestazione del messaggio. Per visualizzare l'intestazione di un messaggio in diversi client di posta elettronica, vedere Visualizzare le intestazioni [dei messaggi Internet in Outlook.](https://support.microsoft.com/office/cd039382-dc6e-4264-ac74-c048563d212c)
@@ -74,7 +74,7 @@ In questo argomento viene descritto come configurare il criterio di filtro delle
 
 ## <a name="use-the-security--compliance-center-to-modify-the-default-connection-filter-policy"></a>Utilizzare il Centro sicurezza & conformità per modificare il criterio di filtro delle connessioni predefinito
 
-1. Nel Centro sicurezza & conformità e passare a **Protezione** da posta indesiderata dei criteri \> **di** gestione \> **delle minacce.**
+1. Nel Centro sicurezza & conformità e passare **a** Protezione da posta indesiderata dei criteri \> **di** gestione \> **delle minacce.**
 
 2. Nella pagina **Impostazioni protezione da posta indesiderata** espandere Criteri filtro **connessioni** facendo clic sull'icona Espandi e quindi su ![ Modifica ](../../media/scc-expand-icon.png) **criterio.**
 
@@ -96,19 +96,19 @@ In questo argomento viene descritto come configurare il criterio di filtro delle
 
      Per aggiungere l'indirizzo IP o l'intervallo di indirizzi, fare clic **sull'icona** ![ ](../../media/ITPro-EAC-AddIcon.png) Aggiungi. Per rimuovere una voce, selezionare la voce in **Indirizzo IP bloccato** e quindi fare clic su  ![ ](../../media/scc-remove-icon.png) Rimuovi. Al termine, fare clic su **Salva**.
 
-   - **Attivare l'elenco di indirizzi attendibili:** abilitare o disabilitare l'utilizzo dell'elenco di indirizzi attendibili per identificare i mittenti noti e attendibili che ignorano il filtro posta indesiderata.
+   - **Attivare l'elenco di** indirizzi attendibili: abilitare o disabilitare l'utilizzo dell'elenco di indirizzi attendibili per identificare i mittenti noti e attendibili che ignorano il filtro posta indesiderata.
 
 4. Al termine, fare clic su **Salva**.
 
 ## <a name="use-the-security--compliance-center-to-view-the-default-connection-filter-policy"></a>Usare il Centro sicurezza & conformità per visualizzare il criterio di filtro delle connessioni predefinito
 
-1. Nel Centro sicurezza & conformità e passare a **Protezione** da posta indesiderata dei criteri \> **di** gestione \> **delle minacce.**
+1. Nel Centro sicurezza & conformità e passare **a** Protezione da posta indesiderata dei criteri \> **di** gestione \> **delle minacce.**
 
 2. Nella pagina **Impostazioni protezione posta indesiderata** fare clic sull'elenco a discesa accanto al criterio predefinito denominato Criterio filtro **connessioni.**
 
 3. Le impostazioni dei criteri vengono visualizzate nell'elenco a discesa che si apre.
 
-## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-modify-the-default-connection-filter-policy"></a>Utilizzare PowerShell di Exchange Online o PowerShell di EOP autonomo per modificare il criterio di filtro delle connessioni predefinito
+## <a name="use-exchange-online-powershell-or-standalone-eop-powershell-to-modify-the-default-connection-filter-policy"></a>Utilizzare PowerShell di Exchange Online o PowerShell EOP autonomo per modificare il criterio di filtro delle connessioni predefinito
 
 Utilizzare la sintassi seguente:
 
@@ -174,7 +174,7 @@ Una volta consapevoli dei potenziali problemi, è possibile creare una regola de
 
 - Azione regola: **modificare le proprietà dei messaggi** Impostare il livello di probabilità di posta indesiderata \> **(SCL)** Ignorare il filtro posta \> **indesiderata.**
 
-È possibile controllare la regola, testarla, attivare la regola durante un periodo di tempo specifico e altre selezioni. È consigliabile testare la regola per un periodo prima di applicarla. Per ulteriori informazioni, vedere [Gestire le regole del flusso di posta in Exchange Online.](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)
+È possibile controllare la regola, testarla, attivarla durante un periodo di tempo specifico e altre selezioni. È consigliabile testare la regola per un periodo prima di applicarla. Per ulteriori informazioni, vedere [Gestire le regole del flusso di posta in Exchange Online.](https://docs.microsoft.com/Exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules)
 
 ### <a name="skip-spam-filtering-on-selective-email-domains-from-the-same-source"></a>Ignorare il filtro della posta indesiderata nei domini di posta elettronica selettivi della stessa origine
 

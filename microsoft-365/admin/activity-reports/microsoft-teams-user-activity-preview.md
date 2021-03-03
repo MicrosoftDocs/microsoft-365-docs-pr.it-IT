@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come ottenere il report attività degli utenti di Microsoft Teams e ottenere informazioni approfondite sull'attività di Teams nell'organizzazione.
-ms.openlocfilehash: e8e4ab6fd78fb290243d8fdc780b5a7a14ca2ee0
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 41403bcda1d1485798ac5eefe8f3386a314aea1b
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233411"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406181"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-teams-user-activity"></a>Report di Microsoft 365 nell'interfaccia di amministrazione - Attività degli utenti di Microsoft Teams
 
@@ -42,7 +42,7 @@ Il **dashboard** report di Microsoft 365 mostra la panoramica delle attività tr
 
 È possibile visualizzare l'attività degli utenti nel report di Teams scegliendo la **scheda Attività** utente. <br/>![Report di Microsoft 365 - Attività degli utenti di Microsoft Teams.](../../media/1011877f-3cf0-4417-9447-91d0b2312aab.png)
 
-Selezionare **Scegli colonne** per aggiungere o rimuovere colonne dal report.  <br/> ![Teams user activity report - choose columns](../../media/a1513028-cf09-4186-93a6-8a203cd22475.png)
+Selezionare **Scegli colonne** per aggiungere o rimuovere colonne dal report.  <br/> ![Teams user activity report - choose columns](../../media/6d3c013e-2c5e-4d66-bb41-998aa4bd1c20.png)
 
 È inoltre possibile esportare i dati del report in un file CSV di Excel selezionando il **collegamento Esporta.** Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriore analisi. Se gli utenti sono meno di 2000, è possibile ordinarli e filtrarli direttamente nella tabella del report. Se invece gli utenti sono più di 2000, per ordinarli e filtrarli occorre esportare i dati. Il formato esportato per **l'ora audio,** **l'ora video** e il tempo di condivisione **dello** schermo segue il formato di durata ISO8601.
 
@@ -59,9 +59,15 @@ Per garantire la qualità dei dati, eserciteremo controlli di convalida dei dati
 |Totale riunioni   <br/> |Numero di riunioni online a cui l'utente ha partecipato durante il periodo di tempo specificato.  <br/> |
 |Chiamate 1:1   <br/> | Numero di chiamate 1:1 a cui l'utente ha partecipato durante il periodo di tempo specificato.  <br/> |
 |Data ultima attività (UTC)  <br/> |L'ultima data in cui l'utente ha partecipato a un'attività di Microsoft Teams.<br/> |
-|Riunioni adhoc   <br/> | Numero di riunioni non pianificate nel calendario a cui l'utente ha partecipato durante il periodo di tempo specificato.  <br/> |
-|Riunioni organizzate adhoc <br/> |Numero di riunioni non pianificate nel calendario organizzato dall'utente durante il periodo di tempo specificato. <br/>|
-|Riunioni pianificate  <br/> |Numero di riunioni pianificate organizzate da un utente durante il periodo di tempo specificato.  <br/> |
-|È concesso in licenza |Selezionato se l'utente ha la licenza per l'uso di Teams.|
-|Altre attività|L'utente è attivo, ma ha eseguito altre attività rispetto ai tipi di azione esposti offerti nel rapporto (invio o risposta a messaggi di canale e messaggi di chat, pianificazione o partecipazione a chiamate e riunioni 1:1). Esempi di azioni sono quando un utente modifica lo stato di Teams o il messaggio di stato di Teams o apre un post di messaggio del canale, ma non risponde. |
+|Riunioni ad hoc   <br/> | Numero di riunioni ad hoc a cui un utente ha partecipato durante il periodo di tempo specificato.  <br/> |
+|Riunioni organizzate ad hoc <br/> |Numero di riunioni ad hoc organizzate da un utente durante il periodo di tempo specificato. <br/>|
+|Totale riunioni organizzate  <br/> |Somma delle riunioni pianificate, ricorrenti, ad hoc e non classificate una sola volta organizzate da un utente durante il periodo di tempo specificato.  <br/> |
+|Totale riunioni a cui hanno partecipato  <br/> |Somma delle riunioni pianificate, ricorrenti, ad hoc e non classificate a cui un utente ha partecipato durante il periodo di tempo specificato.  <br/> |
+|Riunioni organizzate una sola volta  <br/> |Numero di riunioni pianificate una sola volta organizzate da un utente durante il periodo di tempo specificato.  <br/> |
+|Riunioni organizzate ricorrenti pianificate  <br/> |Numero di riunioni ricorrenti organizzate da un utente durante il periodo di tempo specificato.  <br/> |
+|Riunioni a cui è stata pianificata una sola volta  <br/> |Numero di riunioni pianificate una sola volta a cui un utente ha partecipato durante il periodo di tempo specificato.  <br/> |
+|Riunioni a cui hanno partecipato ricorrenti pianificate  <br/> |Numero di riunioni ricorrenti a cui un utente ha partecipato durante il periodo di tempo specificato.  <br/> |
+|È concesso in licenza  <br/> |Selezionato se l'utente ha la licenza per l'uso di Teams. <br/>|
+|Altre attività  <br/>|L'utente è attivo, ma ha eseguito altre attività rispetto ai tipi di azione esposti offerti nel rapporto (invio o risposta a messaggi di canale e messaggi di chat, pianificazione o partecipazione a chiamate e riunioni 1:1). Esempi di azioni sono quando un utente modifica lo stato di Teams o il messaggio di stato di Teams o apre un post del messaggio del canale, ma non risponde.  <br/>|
+|riunioni non classificate <br/>|Quella che non può essere classificata come pianificazione o ricorrente o ad hoc. Si tratta di numeri brevi e non possono essere identificati principalmente a causa di informazioni di telemetria manomissioni. |
 |||

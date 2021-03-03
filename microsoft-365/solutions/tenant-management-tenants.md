@@ -11,15 +11,17 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-tenantmanagement
+- tenant-management
+- m365solution-scenario
 ms.custom:
 - Ent_Solutions
 description: Distribuire e gestire uno o più tenant di Microsoft 365, con opzioni per posizioni multi-geografiche e in movimento.
-ms.openlocfilehash: 567a2cb46e715ec560bf973a33ab83cfa63d403b
-ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
+ms.openlocfilehash: 4d9bd685fce6fb2f11b8e17bebae6460e0c10bd2
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49908592"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406385"
 ---
 # <a name="step-1-your-microsoft-365-for-enterprise-tenants"></a>Passaggio 1. Tenant di Microsoft 365 per le aziende
 
@@ -45,7 +47,7 @@ Esistono molti motivi per cui l'organizzazione potrebbe avere più tenant:
 - Chiara separazione della personalizzazione per le organizzazioni conglomerate
 - Tenant di pre-produzione, test o sandbox
 
-Ecco un esempio di un'organizzazione con due tenant (Tenant A e Tenant B) nella stessa posizione geografica del datacenter predefinito. Ogni tenant come tenant di Azure AD separato.
+Ecco un esempio di un'organizzazione che ha due tenant (Tenant A e Tenant B) nella stessa posizione geografica del datacenter predefinito. Ogni tenant come tenant di Azure AD separato.
 
 ![Più tenant di Microsoft 365 con i propri tenant di Azure AD](../media/tenant-management-overview/tenant-management-example-multi-tenant.png)
 
@@ -63,7 +65,7 @@ Prima della migrazione delle cassette postali tra tenant (in anteprima), quando 
 
 Ecco due tenant di esempio e le relative cassette postali prima della migrazione delle cassette postali tra tenant.
 
-![Più tenant di Microsoft 365 e relative cassette postali](../media/tenant-management-overview/tenant-management-cross-tenant-mailbox-before.png)
+![Più tenant di Microsoft 365 e le relative cassette postali](../media/tenant-management-overview/tenant-management-cross-tenant-mailbox-before.png)
 
 In questa figura, due tenant separati hanno i propri domini e un set di cassette postali di Exchange.
 
@@ -107,12 +109,12 @@ Per ulteriori informazioni, vedere Spostamento dei dati di base in nuove posizio
 
 ## <a name="products-and-licenses-for-a-tenant"></a>Prodotti e licenze per un tenant
 
-Il tenant di Microsoft 365 viene creato quando si acquista il primo prodotto, ad esempio Microsoft 365 E3. Insieme al prodotto sono presenti licenze, a cui viene addebitata una tariffa mensile o annuale. Un amministratore assegna quindi una licenza disponibile da uno dei prodotti a un account utente, direttamente o tramite l'appartenenza al gruppo. A seconda delle esigenze aziendali dell'organizzazione, potrebbe essere necessario un set di prodotti, ognuno con il proprio pool di licenze. 
+Il tenant di Microsoft 365 viene creato quando si acquista il primo prodotto, ad esempio Microsoft 365 E3. Insieme al prodotto sono presenti licenze a cui viene addebitata una tariffa mensile o annuale. Un amministratore assegna quindi una licenza disponibile da uno dei prodotti a un account utente, direttamente o tramite l'appartenenza al gruppo. A seconda delle esigenze aziendali dell'organizzazione, potrebbe essere necessario un set di prodotti, ognuno con il proprio pool di licenze. 
 
 Per determinare il set di prodotti e il numero di licenze per ognuno di essi, è necessario pianificare quanto prima:
 
 - Assicurarsi di disporre di licenze sufficienti per gli account utente che necessitano di funzionalità avanzate.
-- Impedisci l'eserzione delle licenze o la presenza di troppe licenze non assegnate, in base alle modifiche apportate al personale dell'organizzazione.
+- Impedisci l'eserzione delle licenze o il numero di licenze non assegnate, in base alle modifiche apportate al personale dell'organizzazione.
 
 
 ## <a name="results-of-step-1"></a>Risultati del Passaggio 1

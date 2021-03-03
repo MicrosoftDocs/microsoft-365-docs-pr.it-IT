@@ -19,12 +19,12 @@ description: Gli amministratori possono scoprire come funziona l'intelligence sp
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 91cd26498b2a14166f1be10921b9d5b2ea8d583c
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 8ca40e2cde08e5ea213d4c19366f038f1da19fa7
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287972"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407217"
 ---
 # <a name="walkthrough---spoof-intelligence-insight-in-microsoft-defender-for-office-365"></a>Procedura dettagliata: Informazioni dettagliate sull'intelligence per lo spoofing in Microsoft Defender per Office 365
 
@@ -34,13 +34,16 @@ ms.locfileid: "50287972"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Nelle organizzazioni di Microsoft 365 con Defender per Office 365, è possibile usare le informazioni dettagliate di Spoof intelligence per determinare rapidamente quali mittenti esterni inviano legittimamente messaggi di posta elettronica non autenticati (messaggi provenienti da domini che non superano i controlli SPF, DKIM o DMARC).
+Nelle organizzazioni di Microsoft 365 con Defender per Office 365, è possibile usare le informazioni di spoof intelligence per determinare rapidamente quali mittenti esterni inviano legittimamente messaggi di posta elettronica non autenticati (messaggi provenienti da domini che non superano i controlli SPF, DKIM o DMARC).
 
 Consentendo ai mittenti esterni noti di inviare messaggi falsificati da posizioni note, è possibile ridurre i falsi positivi (messaggi di posta elettronica contrassegnati come non consentiti). Monitorando i mittenti falsificati consentiti, si fornisce un ulteriore livello di sicurezza per impedire l'arrivo di messaggi non sicuri nell'organizzazione.
 
 Per ulteriori informazioni su report e informazioni dettagliate, vedere Report e informazioni dettagliate nel [Centro sicurezza & conformità.](reports-and-insights-in-security-and-compliance.md)
 
 Questa procedura dettagliata è una delle diverse per il Centro sicurezza & conformità. Per informazioni sull'esplorazione di report e informazioni dettagliate, vedere le procedure dettagliate nella [sezione Argomenti](#related-topics) correlati.
+
+> [!NOTE]
+> Le informazioni dettagliate di spoof intelligence mostrano i dati degli ultimi 7 giorni. I [criteri di spoof intelligence](learn-about-spoof-intelligence.md) e il cmdlet [Get-PhishFilterPolicy](https://docs.microsoft.com/powershell/module/exchange/get-phishfilterpolicy) corrispondente in PowerShell di Exchange Online mostrano i dati degli ultimi 30 giorni. [Get-SpoofMailReport mostra](https://docs.microsoft.com/powershell/module/exchange/get-spoofmailreport) i dati per un massimo di 90 giorni.
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
@@ -88,7 +91,7 @@ Questa procedura dettagliata è una delle diverse per il Centro sicurezza & conf
 
      - Spoofing di confidenza moderato: in base ai modelli di invio cronologici e al punteggio di reputazione dei domini, siamo moderatamente certi che i domini siano falsificati e che i messaggi inviati da questi domini siano legittimi. I falsi positivi sono più probabili in questa categoria rispetto allo spoofing ad alta probabilità.
 
-   **Domini non sospetti:** il dominio non ha superato i controlli di autenticazione esplicita della posta elettronica [SPF,](how-office-365-uses-spf-to-prevent-spoofing.md) [DKIM](use-dkim-to-validate-outbound-email.md)e [DMARC.](use-dmarc-to-validate-email.md) Tuttavia, il dominio ha superato i controlli impliciti di autenticazione della posta elettronica ([autenticazione composita).](email-validation-and-authentication.md#composite-authentication) Di conseguenza, non è stata eseguita alcuna azione anti-spoofing sul messaggio.
+   **Domini non sospetti:** il dominio non ha superato i controlli espliciti di autenticazione della posta elettronica [SPF,](how-office-365-uses-spf-to-prevent-spoofing.md) [DKIM](use-dkim-to-validate-outbound-email.md)e [DMARC.](use-dmarc-to-validate-email.md) Tuttavia, il dominio ha superato i controlli impliciti di autenticazione della posta elettronica ([autenticazione composita).](email-validation-and-authentication.md#composite-authentication) Di conseguenza, non è stata eseguita alcuna azione anti-spoofing sul messaggio.
 
 ### <a name="view-detailed-information-about-suspicious-domains-from-the-spoof-intelligence-insight"></a>Visualizzare informazioni dettagliate sui domini sospetti dalle informazioni di Spoof intelligence
 
@@ -99,7 +102,7 @@ Questa procedura dettagliata è una delle diverse per il Centro sicurezza & conf
    - **Numero di messaggi**: numero di messaggi dall'infrastruttura di invio all'organizzazione che contengono il dominio falsificato specificato negli ultimi 7 giorni.
    - **Ultimo messaggio visualizzato:** l'ultima data in cui un messaggio è stato ricevuto dall'infrastruttura di invio che contiene il dominio falsificato.
    - **Tipo di spoofing:** questo valore è **Esterno.**
-   - **Consentito lo spoofing?**: I valori visualizzati qui sono:
+   - **Consentito lo spoofing?**: I valori visualizzati di seguito sono:
      - **Sì:** i messaggi provenienti dalla combinazione del dominio dell'utente falsificato e dell'infrastruttura di invio sono consentiti e non trattati come messaggi di posta elettronica falsificati.
      - **No:** i messaggi provenienti dalla combinazione del dominio dell'utente falsificato e dell'infrastruttura di invio vengono contrassegnati come falsificati. L'azione è controllata dal criterio anti-phishing predefinito o dai criteri anti-phishing personalizzati (il valore predefinito è Sposta messaggio **nella cartella Posta indesiderata).**
 
@@ -110,9 +113,9 @@ Questa procedura dettagliata è una delle diverse per il Centro sicurezza & conf
    - Cosa è necessario fare.
    - Riepilogo del dominio.
    - WhoIs data about the sender.
-   - Messaggi simili che abbiamo visto nel tenant dallo stesso mittente.
+   - Messaggi simili che sono stati visualizzati nel tenant dallo stesso mittente.
 
-   Da qui è anche possibile scegliere di aggiungere o rimuovere la coppia dominio/infrastruttura di invio dall'elenco Consenti **spoofing** dei mittenti consentiti. È sufficiente impostare l'interruttore di conseguenza.
+   Da qui, è anche possibile scegliere di aggiungere o rimuovere la coppia dominio/infrastruttura di invio dall'elenco Consenti **spoofing** dei mittenti consentiti. È sufficiente impostare l'interruttore di conseguenza.
 
    ![Screenshot of a domain in the Spoof intelligence insight details pane](../../media/03ad3e6e-2010-4e8e-b92e-accc8bbebb79.png)
 

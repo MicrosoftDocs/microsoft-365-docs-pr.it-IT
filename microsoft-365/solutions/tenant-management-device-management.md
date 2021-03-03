@@ -11,21 +11,23 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-tenantmanagement
+- tenant-management
+- m365solution-scenario
 ms.custom:
 - Ent_Solutions
 description: Distribuire l'opzione corretta per la gestione di dispositivi e app per i tenant di Microsoft 365.
-ms.openlocfilehash: a581af3ec2ec192112656f1919e27f5b05a41cb1
-ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
+ms.openlocfilehash: 96412cb52540e87341fa67e20382951db7becfbe
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49908584"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406373"
 ---
 # <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>Passaggio 5. Gestione di dispositivi e app per i tenant di Microsoft 365 per le aziende
 
 Microsoft 365 per le aziende include funzionalità che consentono di gestire i dispositivi e l'uso delle app in tali dispositivi all'interno dell'organizzazione con gestione di dispositivi mobili (MDM) e gestione di applicazioni mobili (MAM). Puoi gestire i dispositivi iOS, Android, macOS e Windows per proteggere l'accesso alle risorse dell'organizzazione, inclusi i dati. Ad esempio, è possibile impedire l'invio di messaggi di posta elettronica a persone esterne all'organizzazione o isolare i dati dell'organizzazione dai dati personali nei dispositivi personali dei lavoratori.
 
-Ecco un esempio di convalida e gestione degli utenti, dei loro dispositivi e dell'uso di app locali e cloud per la produttività come Microsoft Teams.
+Ecco un esempio di convalida e gestione degli utenti, dei loro dispositivi e dell'uso di app di produttività locali e cloud come Microsoft Teams.
 
 ![Convalida e gestione di utenti, dispositivi e app](../media/tenant-management-overview/tenant-management-device-app-mgmt.png)
 
@@ -46,14 +48,14 @@ Potrai anche determinare come gestire i dispositivi personali e i dispositivi di
 
 ## <a name="identity-and-device-access-configurations"></a>Configurazioni di identità e accesso dei dispositivi
 
-Microsoft fornisce un set di configurazioni per [l'identità e](../security/office-365-security/microsoft-365-policies-configurations.md) l'accesso ai dispositivi per garantire una forza lavoro sicura e produttiva. Queste configurazioni includono l'uso di:
+Microsoft fornisce un set di configurazioni per [l'identità e l'accesso](../security/office-365-security/microsoft-365-policies-configurations.md) ai dispositivi per garantire una forza lavoro sicura e produttiva. Queste configurazioni includono l'uso di:
 
 - Criteri di Accesso condizionale di Azure AD
 - Criteri di conformità dei dispositivi e di protezione delle app di Microsoft Intune
 - Criteri di rischio utente di Azure AD Identity Protection
 - Criteri aggiuntivi delle app cloud
 
-Ecco un esempio dell'applicazione di queste impostazioni e criteri per convalidare e limitare gli utenti, i loro dispositivi e l'uso di app locali e cloud di produttività come Microsoft Teams.
+Ecco un esempio dell'applicazione di queste impostazioni e criteri per convalidare e limitare gli utenti, i loro dispositivi e l'uso di app di produttività locali e cloud come Microsoft Teams.
 
 ![Configurazioni di identità e accesso ai dispositivi per i requisiti e le restrizioni per gli utenti, i dispositivi e l'uso delle app](../media/tenant-management-overview/tenant-management-device-app-mgmt-golden-config.png)
 
@@ -64,7 +66,7 @@ Per l'accesso ai dispositivi e la gestione delle app, usa le configurazioni negl
 
 ## <a name="results-of-step-5"></a>Risultati del passaggio 5
 
-Per la gestione di dispositivi e app per il tenant di Microsoft 365, sono stati determinati le impostazioni e i criteri di Intune per convalidare e limitare gli utenti, i relativi dispositivi e l'uso di app di produttività locali e cloud.
+Per la gestione di dispositivi e app per il tenant di Microsoft 365, sono stati determinati le impostazioni e i criteri di Intune per convalidare e limitare gli utenti, i dispositivi e l'uso delle app di produttività locale e cloud.
 
 Ecco un esempio di tenant con gestione di app e dispositivi Intune con i nuovi elementi evidenziati.
 

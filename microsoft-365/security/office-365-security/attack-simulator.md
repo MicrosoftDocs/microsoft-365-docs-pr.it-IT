@@ -20,12 +20,12 @@ ms.custom:
 description: Gli amministratori possono imparare a usare il simulatore di attacchi per eseguire attacchi simulati di phishing e password nelle organizzazioni di Microsoft 365 E5 o Microsoft Defender per Office 365 Piano 2.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1e877900698d033cb99154b31e32fa04ff7d1010
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 85b376701ffa0c567fd66aa629371e9f69b354e9
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289582"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407474"
 ---
 # <a name="attack-simulator-in-microsoft-defender-for-office-365"></a>Simulatore di attacchi in Microsoft Defender per Office 365
 
@@ -33,7 +33,7 @@ ms.locfileid: "50289582"
 
 **Si applica a** [Microsoft Defender per Office 365 piano 2](office-365-atp.md)
 
-Se l'organizzazione dispone di Microsoft Defender per Office 365 Piano 2, che include funzionalità di analisi e risposta alle [minacce,](office-365-ti.md)è possibile utilizzare il simulatore di attacchi nel Centro sicurezza & e conformità per eseguire scenari di attacco realistici nell'organizzazione. Questi attacchi simulati consentono di identificare e individuare gli utenti vulnerabili prima che un attacco reale influisca sulla linea di fondo. Leggi questo articolo per altre informazioni.
+Se l'organizzazione dispone di Microsoft Defender per Office 365 Piano 2, che include funzionalità di analisi e risposta alle [minacce,](office-365-ti.md)è possibile utilizzare il simulatore di attacchi nel Centro sicurezza & e conformità per eseguire scenari di attacco realistici nell'organizzazione. Questi attacchi simulati consentono di identificare e individuare gli utenti vulnerabili prima che un attacco reale influisca sui tuoi utili. Leggi questo articolo per altre informazioni.
 
 > [!NOTE]
 > L'esperienza del simulatore di attacchi v1 è stata passata alla modalità di sola lettura e sostituita dal training del simulatore di attacco descritto in Introduzione all'uso della formazione per la simulazione [degli attacchi.](attack-simulation-training-get-started.md)
@@ -43,11 +43,13 @@ Se l'organizzazione dispone di Microsoft Defender per Office 365 Piano 2, che in
 
 - Per aprire il Centro sicurezza e conformità, passare a <https://protection.office.com/>. Il simulatore  di attacco è disponibile nel \> **simulatore di attacco per la gestione delle minacce.** Vai direttamente al simulatore di attacco, apri <https://protection.office.com/attacksimulator> .
 
-- Per altre informazioni sulla disponibilità del simulatore di attacchi tra diversi abbonamenti a Microsoft 365, vedere Descrizione del servizio [Microsoft Defender per Office 365.](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
+- Per ulteriori informazioni sulla disponibilità del simulatore di attacchi tra diversi abbonamenti a Microsoft 365, vedere Descrizione del servizio [Microsoft Defender per Office 365.](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)
 
 - È necessario essere membri dei gruppi di ruoli **Gestione organizzazione** o **Amministratore** sicurezza. Per altre informazioni sui gruppi di ruoli nel Centro sicurezza e conformità, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 
 - Il tuo account deve essere configurato per l'autenticazione a più fattori (MFA) per creare e gestire campagne in Simulatore di attacchi. Per istruzioni, vedere [Configurare l'autenticazione a più fattori.](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)
+
+- Il simulatore di attacchi funziona solo sulle cassette postali basate sul cloud.
 
 - Le campagne di phishing raccoglieranno ed eelaborare gli eventi per 30 giorni. I dati cronologici della campagna saranno disponibili fino a 90 giorni dopo l'avvio della campagna.
 
@@ -57,7 +59,7 @@ Se l'organizzazione dispone di Microsoft Defender per Office 365 Piano 2, che in
 
 ## <a name="spear-phishing-campaigns"></a>Campagne di phishing con phishing
 
-*Il phishing* è un termine generico per gli attacchi di posta elettronica che tentano di rubare informazioni riservate nei messaggi che sembrano essere provenienti da mittenti legittimi o attendibili. *Il phishing* di phishing mirato è un attacco di phishing mirato che usa contenuti mirati e personalizzati appositamente personalizzati per i destinatari di destinazione (in genere, dopo la ricognizione sui destinatari da parte dell'autore dell'attacco).
+*Il phishing* è un termine generico per gli attacchi di posta elettronica che tentano di rubare informazioni riservate nei messaggi che sembrano essere provenienti da mittenti legittimi o attendibili. *Il phishing* di phishing è un attacco di phishing mirato che utilizza contenuti mirati e personalizzati appositamente personalizzati per i destinatari di destinazione (in genere, dopo la ricognizione sui destinatari da parte dell'autore dell'attacco).
 
 Nel simulatore di attacchi sono disponibili due diversi tipi di campagne di phishing:
 
@@ -86,9 +88,9 @@ Una parte importante di qualsiasi campagna di phishing è l'aspetto del messaggi
 
 #### <a name="step-1-optional-create-a-custom-email-template"></a>Passaggio 1 (facoltativo): Creare un modello di posta elettronica personalizzato
 
-Se si desidera utilizzare uno dei modelli predefiniti o creare il messaggio di posta elettronica direttamente nella procedura guidata, è possibile ignorare questo passaggio.
+Se si sta per utilizzare uno dei modelli predefiniti o creare il messaggio di posta elettronica direttamente nella procedura guidata, è possibile ignorare questo passaggio.
 
-1. Nel Centro sicurezza & conformità passare al simulatore **di attacco di gestione** delle \> **minacce.**
+1. Nel Centro sicurezza & conformità passare a Simulatore di **attacchi di gestione** delle \> **minacce.**
 
 2. Nella pagina **Simulate attacks** fare clic su Attack **Details** nelle sezioni Spear **Phishing (Credentials Harvest)** o **Spear Phishing (Attachment).**
 
@@ -100,9 +102,9 @@ Se si desidera utilizzare uno dei modelli predefiniti o creare il messaggio di p
 
 5. Nel passaggio **Configura dettagli posta elettronica** configurare le impostazioni seguenti:
 
-   - **Da (nome):** nome visualizzato utilizzato per il mittente del messaggio.
+   - **From (Nome):** nome visualizzato utilizzato per il mittente del messaggio.
 
-   - **Da (posta elettronica):** indirizzo di posta elettronica del mittente.
+   - **Da (Posta elettronica):** indirizzo di posta elettronica del mittente.
 
    - **URL del server di accesso** phishing: fare clic sull'elenco a discesa e selezionare uno degli URL disponibili nell'elenco. Questo è l'URL su cui gli utenti saranno tentati di fare clic. Le opzioni disponibili sono:
 
@@ -131,13 +133,13 @@ Se si desidera utilizzare uno dei modelli predefiniti o creare il messaggio di p
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
-6. Nel passaggio **Componi messaggio di posta** elettronica, creare il corpo del messaggio di posta elettronica. È possibile utilizzare la **scheda Posta** elettronica (un editor HTML avanzato) o la scheda **Origine** (codice HTML non elaborato).
+6. Nel passaggio **Scrivi messaggio di posta** elettronica, creare il corpo del messaggio di posta elettronica. È possibile utilizzare la **scheda Posta** elettronica (un editor HTML avanzato) o la scheda **Origine** (codice HTML non elaborato).
 
    La formattazione HTML può essere semplice o complessa come necessario. È possibile inserire immagini e testo per migliorare la credibilità del messaggio nel client di posta elettronica del destinatario.
 
    - `${username}` inserisce il nome del destinatario.
 
-   - `${loginserverurl}` inserisce il valore **URL del server di accesso** phishing del passaggio precedente.
+   - `${loginserverurl}` inserisce il valore **URL del server** di accesso phishing del passaggio precedente.
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
@@ -145,7 +147,7 @@ Se si desidera utilizzare uno dei modelli predefiniti o creare il messaggio di p
 
 #### <a name="step-2-create-and-launch-the-spear-phishing-campaign"></a>Passaggio 2: creare e avviare la campagna di phishing con phishing
 
-1. Nel Centro sicurezza & conformità passare al simulatore **di attacco di gestione** delle \> **minacce.**
+1. Nel Centro sicurezza & conformità passare a Simulatore di **attacchi di gestione** delle \> **minacce.**
 
 2. Nella pagina **Simula attacchi** effettuare una delle seguenti selezioni in base al tipo di campagna che si desidera creare:
 
@@ -168,7 +170,7 @@ Se si desidera utilizzare uno dei modelli predefiniti o creare il messaggio di p
 
    - Fare **clic su Rubrica** per selezionare i destinatari (utenti o gruppi) per la campagna. Ogni destinatario di destinazione deve disporre di una cassetta postale di Exchange Online. Se si fa **clic su Filtro** e **Applica** senza immettere un criterio di ricerca, tutti i destinatari vengono restituiti e aggiunti alla campagna.
 
-   - Fare **clic su** Importa e quindi **importa** file per importare un valore con valori delimitati da virgole (CSV) o un file di indirizzi di posta elettronica separati da righe. Ogni riga deve contenere l'indirizzo di posta elettronica del destinatario.
+   - Fare **clic su** Importa e quindi **importa** file per importare un valore con valori delimitati da virgole (CSV) o un file di indirizzi di posta elettronica separati da riga. Ogni riga deve contenere l'indirizzo di posta elettronica del destinatario.
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
@@ -176,9 +178,9 @@ Se si desidera utilizzare uno dei modelli predefiniti o creare il messaggio di p
 
    Se è stato selezionato un modello nel **passaggio Start,** la maggior parte di questi valori è già configurata, ma è possibile modificarli.
 
-   - **Da (nome):** nome visualizzato utilizzato per il mittente del messaggio.
+   - **From (Nome):** nome visualizzato utilizzato per il mittente del messaggio.
 
-   - **Da (posta elettronica):** indirizzo di posta elettronica del mittente. È possibile immettere un indirizzo di posta elettronica reale o falso dal dominio di posta elettronica dell'organizzazione oppure un indirizzo di posta elettronica esterno reale o falso. Un indirizzo di posta elettronica del mittente valido dell'organizzazione verrà effettivamente risolto nel client di posta elettronica del destinatario.
+   - **Da (Posta elettronica):** indirizzo di posta elettronica del mittente. È possibile immettere un indirizzo di posta elettronica reale o falso dal dominio di posta elettronica dell'organizzazione oppure un indirizzo di posta elettronica esterno reale o falso. Un indirizzo di posta elettronica del mittente valido dell'organizzazione verrà effettivamente risolto nel client di posta elettronica del destinatario.
 
    - **URL del server di accesso** phishing: fare clic sull'elenco a discesa e selezionare uno degli URL disponibili nell'elenco. Questo è l'URL su cui gli utenti saranno tentati di fare clic. Le opzioni disponibili sono:
 
@@ -213,7 +215,7 @@ Se si desidera utilizzare uno dei modelli predefiniti o creare il messaggio di p
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
-6. Nel passaggio **Componi messaggio di posta** elettronica, creare il corpo del messaggio di posta elettronica. Se è stato selezionato un modello nel **passaggio Start,** il corpo del messaggio è già configurato, ma è possibile personalizzarlo. È possibile utilizzare la **scheda Posta** elettronica (un editor HTML avanzato) o la scheda **Origine** (codice HTML non elaborato).
+6. Nel passaggio **Scrivi messaggio di posta** elettronica, creare il corpo del messaggio di posta elettronica. Se è stato selezionato un modello nel **passaggio Start,** il corpo del messaggio è già configurato, ma è possibile personalizzarlo. È possibile utilizzare la **scheda Posta** elettronica (un editor HTML avanzato) o la scheda **Origine** (codice HTML non elaborato).
 
    La formattazione HTML può essere semplice o complessa come necessario. È possibile inserire immagini e testo per migliorare la credibilità del messaggio nel client di posta elettronica del destinatario.
 
@@ -221,14 +223,14 @@ Se si desidera utilizzare uno dei modelli predefiniti o creare il messaggio di p
 
    - `${loginserverurl}`inserisce il valore **URL del server di accesso phishing.**
 
-   Per le campagne **di spear phishing (allegato),** è consigliabile rimuovere il collegamento dal  corpo del messaggio (in caso contrario, il messaggio conterrà sia un collegamento che un allegato e i clic sul collegamento non vengono monitorati in una campagna allegato).
+   Per le campagne di **spear phishing (allegato),** è necessario rimuovere il collegamento dal corpo  del messaggio (in caso contrario, il messaggio conterrà sia un collegamento che un allegato e i clic sul collegamento non vengono monitorati in una campagna allegato).
 
    > [!div class="mx-imgBorder"]
    > ![Comporre il corpo del messaggio di posta elettronica](../../media/9bd65af4-1f9d-45c1-8c06-796d7ccfd425.jpg)
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
-7. Nel passaggio **Conferma** fai clic su **Fine** per avviare la campagna. Il messaggio di phishing viene recapitato ai destinatari di destinazione.
+7. Nel passaggio **Conferma** fare clic su **Fine** per avviare la campagna. Il messaggio di phishing viene recapitato ai destinatari di destinazione.
 
 ## <a name="password-attack-campaigns"></a>Campagne di attacco con password
 
@@ -240,30 +242,30 @@ Nel simulatore di attacchi sono disponibili due diversi tipi di campagne di atta
 
   Per l'attacco con dizionario, è possibile specificare una o più password da provare (immesse manualmente o in un file caricato) e specificare uno o più utenti.
 
-- **Attacco di tipo password spray:** un attacco *di tipo password spray* utilizza la stessa password considerata con attenzione rispetto a un elenco di account utente (una password contro molti account). Gli attacchi di tipo password spray sono più difficili da rilevare rispetto agli attacchi di forza bruta delle password (la probabilità di successo aumenta quando un utente malintenzionato tenta una password su decine o centinaia di account senza il rischio di inciampare nel blocco non corretto della password dell'utente).
+- **Attacco di tipo password spray:** un attacco *di tipo password spray* utilizza la stessa password considerata con attenzione rispetto a un elenco di account utente (una password contro molti account). Gli attacchi con password spray sono più difficili da rilevare rispetto agli attacchi di forza bruta delle password (la probabilità di successo aumenta quando un utente malintenzionato tenta una password su decine o centinaia di account senza il rischio di inciampare nel blocco errato della password dell'utente).
 
   Per l'attacco di tipo password spray, è possibile specificare una sola password da provare e uno o più utenti.
 
 > [!NOTE]
-> Gli attacchi alle password in Attack Simulator passano le richieste di autenticazione di base di nome utente e password a un endpoint, quindi funzionano anche con altri metodi di autenticazione (AD FS, sincronizzazione hash delle password, pass-through, PingFederate e così via). Per gli utenti che hanno abilitato l'autenticazione a più fattori, anche se l'attacco con password tenta la  password effettiva, il tentativo verrà sempre registrato come errore (in altre parole, gli utenti MFA non verranno mai visualizzati nel conteggio tentativi riusciti della campagna). Questo è il risultato previsto. L'autenticazione a più fattori è un metodo principale per la protezione da attacchi con password.
+> Gli attacchi alle password in Attack Simulator passano le richieste di autenticazione di base di nome utente e password a un endpoint, quindi funzionano anche con altri metodi di autenticazione (AD FS, sincronizzazione hash delle password, pass-through, PingFederate e così via). Per gli utenti che hanno abilitato l'autenticazione a più fattori, anche se l'attacco con password tenta la  password effettiva, il tentativo verrà sempre registrato come errore (in altre parole, gli utenti MFA non verranno mai visualizzati nel conteggio tentativi riusciti della campagna). Questo è il risultato previsto. L'autenticazione a più fattori è un metodo principale per proteggere gli attacchi alle password.
 
 ### <a name="create-and-launch-a-password-attack-campaign"></a>Creare e avviare una campagna di attacco con password
 
-1. Nel Centro sicurezza & conformità passare al simulatore **di attacco di gestione** delle \> **minacce.**
+1. Nel Centro sicurezza & conformità passare a Simulatore di **attacchi di gestione** delle \> **minacce.**
 
 2. Nella pagina **Simula attacchi** effettuare una delle seguenti selezioni in base al tipo di campagna che si desidera creare:
 
-   - Nella sezione **Brute Force Password (Dictionary Attack)** fai clic su **Launch Attack** o **su Attack Details** Launch \> **Attack.**
+   - Nella sezione **Brute Force Password (Dictionary Attack)** fai clic su **Launch Attack** o su **Attack Details** Launch \> **Attack.**
 
-   - nella sezione **Attacco con password spray,** fare clic **su Launch Attack** o su **Attack Details** \> **Launch Attack.**
+   - nella sezione **Attacco con password spray** fare clic su Launch **Attack** o su **Attack Details** \> **Launch Attack.**
 
-3. La **procedura guidata Configura attacco password** viene avviata in un nuovo riquadro a comparsa. Nel passaggio **iniziale** immettere un nome visualizzato univoco per la campagna e quindi fare clic su **Avanti.**
+3. La **procedura guidata Configura attacco** password viene avviata in un nuovo riquadro a comparsa. Nel passaggio **iniziale** immettere un nome visualizzato univoco per la campagna e quindi fare clic su **Avanti.**
 
 4. Nel passaggio **Utenti di** destinazione eseguire una delle operazioni seguenti:
 
    - Fare **clic su Rubrica** per selezionare i destinatari (utenti o gruppi) per la campagna. Ogni destinatario di destinazione deve disporre di una cassetta postale di Exchange Online. Se si fa **clic su Filtro** e **Applica** senza immettere un criterio di ricerca, tutti i destinatari vengono restituiti e aggiunti alla campagna.
 
-   - Fare **clic su** Importa e quindi **importa** file per importare un valore con valori delimitati da virgole (CSV) o un file di indirizzi di posta elettronica separati da righe. Ogni riga deve contenere l'indirizzo di posta elettronica del destinatario.
+   - Fare **clic su** Importa e quindi **importa** file per importare un valore con valori delimitati da virgole (CSV) o un file di indirizzi di posta elettronica separati da riga. Ogni riga deve contenere l'indirizzo di posta elettronica del destinatario.
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
@@ -279,7 +281,7 @@ Nel simulatore di attacchi sono disponibili due diversi tipi di campagne di atta
 
    Al termine dell'operazione, fare clic su **Avanti**.
 
-6. Nel passaggio **Conferma** fai clic su **Fine** per avviare la campagna. Le password specificate vengono tentate per gli utenti specificati.
+6. Nel passaggio **Conferma** fare clic su **Fine** per avviare la campagna. Le password specificate vengono tentate per gli utenti specificati.
 
 ## <a name="view-campaign-results"></a>Visualizzare i risultati della campagna
 
@@ -291,7 +293,7 @@ Al termine della campagna, lo stato cambia in **Attacco completato.** Puoi visua
 
 - Nella pagina principale **Simulate attacks** fai clic **su View Report** sotto il nome della campagna.
 
-- Nella pagina principale **Simulate attacks** fare clic **su Attack Details** nella sezione relativa al tipo di attacco. Nella pagina **Dettagli attacco** visualizzata, selezionare la campagna nella sezione **Cronologia** attacchi.
+- Nella pagina principale **Simulate attacks** fare clic **su Attack Details** nella sezione relativa al tipo di attacco. Nella pagina **dei dettagli dell'attacco** che si apre, selezionare la campagna nella sezione **Cronologia** attacchi.
 
 Una delle azioni precedenti consente di accedere a una pagina denominata **Dettagli attacco.** Le informazioni disponibili in questa pagina per ogni tipo di campagna sono descritte nelle sezioni seguenti.
 
@@ -311,11 +313,11 @@ Le informazioni seguenti sono disponibili nella pagina dei dettagli **dell'attac
 
 - **Media clic**: somma del tempo impiegato da tutti gli utenti per fare clic sul collegamento diviso per il numero di utenti che hanno fatto clic sul collegamento.
 
-- **Click Success Rate**: percentuale calcolata da (numero di utenti che hanno fatto clic sul collegamento) / **Totale utenti di destinazione.**
+- **Click Success Rate**: percentuale calcolata da (numero di utenti che hanno fatto clic sul collegamento) / **Totale utenti mirati.**
 
 - **Credenziali più veloci:** tempo impiegato dal primo utente per immettere le credenziali dopo l'avvio della campagna.
 
-- **Media credenziali**: somma del tempo impiegato da tutti per immettere le credenziali diviso per il numero di utenti che hanno immesso le credenziali.
+- **Credenziali medie**: somma del tempo impiegato da tutti per immettere le credenziali diviso per il numero di utenti che hanno immesso le credenziali.
 
 - **Percentuale di successo delle** credenziali : percentuale calcolata da (numero di utenti che hanno immesso le credenziali) / **Totale utenti di destinazione.**
 
@@ -331,7 +333,7 @@ Le informazioni seguenti sono disponibili nella pagina dei dettagli **dell'attac
 
   - L'indirizzo IP del client.
 
-  - Dettagli sulla versione di Windows e del Web browser dell'utente.
+  - Dettagli sulla versione di Windows e web browser dell'utente.
 
   È possibile fare **clic su Esporta** per esportare i risultati in un file CSV.
 

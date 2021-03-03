@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Impostare le autorizzazioni utente e i ruoli di Microsoft Compliance Manager e configurare test automatizzati delle azioni. Gestire la cronologia utente e filtrare la visualizzazione del dashboard.
-ms.openlocfilehash: c032f537dd0a24632cc702f8363697b85df7e7ca
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 3c8f3f30741d4b0fac5c940bc6ec3fb56ea4f79e
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233774"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50405796"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introduzione a Compliance Manager
 
@@ -30,7 +30,7 @@ ms.locfileid: "50233774"
 
 ## <a name="who-can-access-compliance-manager"></a>Chi può accedere a Compliance Manager
 
-Compliance Manager è disponibile per le organizzazioni con licenze di Office 365 e Microsoft 365 e per i clienti di US Government Community Cloud (GCC) Moderate e GCC High. La disponibilità della valutazione e le funzionalità di gestione dipendono dal contratto di licenza.  [Visualizzare i dettagli della descrizione del servizio.](https://go.microsoft.com/fwlink/?linkid=2132371)
+Compliance Manager è disponibile per le organizzazioni con licenze di Office 365 e Microsoft 365 e per i clienti di US Government Community Cloud (GCC) Moderate e GCC High. Le funzionalità di gestione e disponibilità della valutazione dipendono dal contratto di licenza.  [Visualizzare i dettagli della descrizione del servizio.](https://go.microsoft.com/fwlink/?linkid=2132371)
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
@@ -68,7 +68,7 @@ Per impostare le autorizzazioni e assegnare ruoli nel Centro sicurezza & e confo
 
 6. Seleziona la casella di controllo accanto ai nomi che vuoi aggiungere, quindi seleziona il **pulsante** Aggiungi nella parte inferiore.
 
-7. Al termine dell'assegnazione degli utenti, **selezionare** Fine, quindi **salva** e **chiudi.**
+7. Al termine dell'assegnazione degli utenti, selezionare **Fine,** quindi **salva** e **chiudi.**
 
 ##### <a name="more-about-the-office-365-security--compliance-center"></a>Ulteriori informazioni sul Centro sicurezza e conformità & di Office 365
 
@@ -108,7 +108,7 @@ Alcune azioni di miglioramento in Compliance Manager vengono monitorate anche da
 
 Il test automatico è attivato per impostazione predefinita per le organizzazioni nuove di Compliance Manager. Quando si distribuisce per la prima volta Microsoft 365 o Office 365, secure score impiega circa sette giorni per raccogliere completamente i dati e fattoriarlo nel punteggio di conformità.  Quando il test automatizzato è attivato, la data del test dell'azione non verrà aggiornata, ma lo stato del test verrà aggiornato. Quando vengono create nuove valutazioni, i punteggi includono automaticamente i punteggi di controllo Microsoft e l'integrazione di Secure Score.
 
-L'amministratore globale dell'organizzazione può modificare le impostazioni per i test automatizzati in qualsiasi momento. È possibile disattivare i test automatizzati per le azioni di miglioramento comuni o attivarlo per singole azioni. Seguire le istruzioni riportate di seguito per modificare le impostazioni di test automatizzati.
+L'amministratore globale dell'organizzazione può modificare le impostazioni per i test automatizzati in qualsiasi momento. È possibile disattivare i test automatizzati per le azioni di miglioramento comuni o attivarlo per singole azioni. Seguire le istruzioni riportate di seguito per modificare le impostazioni di test automatizzato.
 
 #### <a name="to-manage-your-automated-testing-settings"></a>Per gestire le impostazioni di test automatizzati:
 
@@ -126,7 +126,7 @@ L'amministratore globale dell'organizzazione può modificare le impostazioni per
 
 **Nota:** Solo l'amministratore globale può attivare o disattivare gli aggiornamenti automatici per tutte le azioni. L'amministratore di Compliance Manager può attivare gli aggiornamenti automatici per singole azioni, ma non per tutte le azioni a livello globale.
 
-### <a name="manage-user-history"></a>Gestire la cronologia utenti
+### <a name="manage-user-history"></a>Gestire la cronologia degli utenti
 
 Le **impostazioni di Gestione cronologia utenti** consentono di identificare rapidamente quali utenti hanno lavorato con le azioni di miglioramento in Compliance Manager. I dati utente identificabili associati alle azioni di miglioramento includono tutte le operazioni di implementazione e test eseguite, i documenti caricati e le note immesse. La comprensione e il recupero di questo tipo di dati potrebbero essere necessari per le esigenze di conformità dell'organizzazione.
 
@@ -138,7 +138,7 @@ Le impostazioni della cronologia utente consentono inoltre di riassegnare tutte 
 
 2. Nella pagina delle impostazioni selezionare **Compliance Manager.**
 
-3. Selezionare **Gestisci cronologia utenti** dal riquadro di spostamento a sinistra.
+3. Selezionare **Gestisci cronologia utente** dal riquadro di spostamento a sinistra.
 
 Nella **pagina Gestisci cronologia utenti** viene visualizzato un elenco di tutti gli utenti in base all'indirizzo di posta elettronica assegnato a un'azione di miglioramento. Utilizzare il **pulsante Cerca** per trovare rapidamente un utente specifico digitando l'indirizzo di posta elettronica.
 
@@ -184,7 +184,7 @@ Il report riflette lo stato dell'azione di miglioramento alla data di creazione.
 
 7. Quando viene visualizzato il nome dell'utente desiderato in **Azioni** di miglioramento, selezionare l'utente e quindi **selezionare Assegna azioni.**
 
-8. Al termine della riassegnazione, nel riquadro a comparsa verrà visualizzato un messaggio di conferma per confermare che tutte le azioni di miglioramento dell'utente precedente sono state riassegnate al nuovo utente. Se si riceve un avviso di errore di riassegnazione, chiudere la finestra e riprovare. Per chiudere il riquadro a comparsa, selezionare **Fine.**
+8. Una volta completata la riassegnazione, nel riquadro a comparsa verrà visualizzato un messaggio di conferma per confermare che tutte le azioni di miglioramento dell'utente precedente sono state riassegnate al nuovo utente. Se si riceve un avviso di errore di riassegnazione, chiudere la finestra e riprovare. Per chiudere il riquadro a comparsa, selezionare **Fine.**
 
 Il nuovo assegnataio riceve un messaggio di posta elettronica a cui è stato assegnato un'azione di miglioramento. Il messaggio di posta elettronica contiene un collegamento diretto alla pagina dei dettagli dell'azione di miglioramento.
  
@@ -209,17 +209,17 @@ Per eliminare la cronologia di un utente, eseguire la procedura seguente:
 
 6. Viene visualizzata una finestra che richiede di confermare l'eliminazione definitiva della cronologia dell'utente. Per continuare con l'eliminazione, selezionare **Elimina cronologia.** Per uscire senza eliminare la cronologia, selezionare **Annulla.**
 
-7. Si arriva di nuovo alla **pagina** Gestisci cronologia utente con un messaggio di conferma nella parte superiore che indica che la cronologia per l'utente è stata eliminata.
+7. Si arriva di nuovo alla **pagina** Gestisci cronologia utenti con un messaggio di conferma nella parte superiore che indica che la cronologia per l'utente è stata eliminata.
 
 ## <a name="understand-the-compliance-manager-dashboard"></a>Informazioni sul dashboard di Compliance Manager
 
-Il dashboard di Compliance Manager è progettato per fornire una panoramica della situazione attuale di conformità.
+Il dashboard di Compliance Manager è progettato per fornire una visualizzazione a colpo d'occhio della posizione attuale di conformità.
 
 ![Compliance Manager - dashboard](../media/compliance-manager-dashboard.png "Dashboard di Compliance Manager")
 
 ### <a name="overall-compliance-score"></a>Punteggio di conformità complessivo
 
-Il punteggio di conformità è in primo piano. Mostra una percentuale in base ai punti raggiungibili per il completamento delle azioni di miglioramento che rispendono i principali standard e normative di protezione dei dati. I punti [delle azioni di Microsoft,](compliance-manager-assessments.md#microsoft-actions-tab)che vengono gestiti da Microsoft, vengono conteggiati anche per il punteggio di conformità.
+Il punteggio di conformità è in primo piano. Mostra una percentuale in base ai punti raggiungibili per il completamento delle azioni di miglioramento che rispendono i principali standard e normative di protezione dei dati. Anche i [punti delle azioni di Microsoft,](compliance-manager-assessments.md#microsoft-actions-tab)gestite da Microsoft, vengono conteggiati per il punteggio di conformità.
 
 Quando si arriva a Compliance Manager per la prima volta, il punteggio iniziale si basa sulla baseline di protezione dei dati di [Microsoft 365.](compliance-manager-assessments.md#data-protection-baseline-default-assessment) Questa valutazione di base, disponibile per tutte le organizzazioni, è un insieme di controlli che include standard e normative comuni del settore. Compliance Manager analizza le soluzioni Microsoft 365 esistenti e fornisce una valutazione iniziale in base alle impostazioni di privacy e sicurezza correnti. Quando si aggiungono valutazioni rilevanti per l'organizzazione, il punteggio diventa più significativo per l'utente.
 
@@ -227,7 +227,7 @@ Quando si arriva a Compliance Manager per la prima volta, il punteggio iniziale 
 
 ### <a name="key-improvement-actions"></a>Azioni di miglioramento chiave
 
-In questa sezione sono elencate le principali azioni di miglioramento che è possibile eseguire in questo momento per ottenere il maggiore impatto positivo sul punteggio di conformità complessivo. Selezionare **Visualizza tutte le azioni di miglioramento** per passare alla pagina delle azioni di miglioramento.
+In questa sezione sono elencate le principali azioni di miglioramento che è possibile eseguire in questo momento per ottenere il massimo impatto positivo sul punteggio di conformità complessivo. Selezionare **Visualizza tutte le azioni di miglioramento** per passare alla pagina delle azioni di miglioramento.
 
 ### <a name="solutions-that-affect-your-score"></a>Soluzioni che influiscono sul punteggio
 
@@ -242,7 +242,7 @@ Questa sezione offre una visualizzazione più dettagliata del punteggio in due m
 
 ### <a name="filtering-your-dashboard-view"></a>Applicazione di filtri alla visualizzazione dashboard
 
-È possibile filtrare la visualizzazione dashboard per visualizzare solo gli elementi correlati a normative e standard specifici, soluzioni, tipo di azione, gruppi di valutazione o categorie di protezione dei dati. Filtrando la visualizzazione in questo modo, verrà filtrato anche il punteggio nel dashboard, che mostra quanti punti hai ottenuto sul totale dei punti possibili in base ai criteri di filtro.
+È possibile filtrare la visualizzazione dashboard per visualizzare solo gli elementi correlati a normative e standard specifici, soluzioni, tipo di azione, gruppi di valutazione o categorie di protezione dei dati. Filtrare la visualizzazione in questo modo consente anche di filtrare il punteggio nel dashboard, mostrando il numero di punti ottenuti dal totale dei punti possibili in base ai criteri di filtro.
 
 Per applicare i filtri:
 
@@ -253,7 +253,7 @@ Dopo aver applicato un filtro, il punteggio verrà modificato in tempo reale. La
 
 Per rimuovere i filtri:
 
-- **Nell'intestazione Filtri applicati** sopra il punteggio di conformità, selezionare la **X** accanto al singolo filtro che si desidera rimuovere. oppure
+- **Nell'intestazione Filtri applicati** sopra il punteggio di conformità, selezionare la **X** accanto al singolo filtro che si desidera rimuovere; oppure
 - Selezionare **Filtro** sul lato superiore destro del dashboard, quindi nel riquadro **a** comparsa Filtri selezionare **Cancella filtri.**
 
 ## <a name="improvement-actions-page"></a>Pagina Azioni di miglioramento
@@ -262,7 +262,7 @@ Per rimuovere i filtri:
 
 ### <a name="view-your-improvement-actions"></a>Visualizzare le azioni di miglioramento
 
-Il dashboard di Compliance Manager mostra le **azioni di miglioramento chiave.** Per visualizzare tutte le azioni di miglioramento, selezionare la scheda Azioni di miglioramento nel dashboard, che consente di visualizzare la pagina delle azioni di miglioramento. È inoltre possibile selezionare Visualizza tutte le azioni di miglioramento sotto l'elenco delle azioni di miglioramento principali nel dashboard per accedere alla pagina delle azioni di miglioramento.
+Il dashboard di Compliance Manager mostra le **azioni principali di miglioramento.** Per visualizzare tutte le azioni di miglioramento, selezionare la scheda Azioni di miglioramento nel dashboard, che consente di visualizzare la pagina delle azioni di miglioramento. È inoltre possibile selezionare Visualizza tutte le azioni di miglioramento sotto l'elenco delle azioni di miglioramento principali nel dashboard per accedere alla pagina delle azioni di miglioramento.
 
 Nella pagina delle azioni di miglioramento vengono visualizzate tutte le azioni di miglioramento gestite dall'organizzazione. Le azioni gestite da Microsoft possono essere visualizzate all'interno di ogni valutazione (ulteriori informazioni [sulle azioni di Microsoft).](compliance-manager-assessments.md#microsoft-actions-tab)
 
@@ -272,11 +272,11 @@ La visualizzazione predefinita per questa pagina non mostra le azioni di miglior
 
 Nella pagina delle azioni di miglioramento vengono mostrati i punti dati seguenti per ogni azione di miglioramento:
 
-- **Punti ottenuti**: numero di punti ottenuti sul totale disponibile completando l'azione
+- **Punti ottenuti:** numero di punti ottenuti sul totale disponibile completando l'azione
 - **Normative**: le normative o gli standard relativi all'azione
 - **Gruppo**: il gruppo a cui è stata assegnata l'azione
 - **Soluzioni**: la soluzione in cui è possibile eseguire l'azione
-- **Valutazioni:** le valutazioni che contengono l'azione
+- **Valutazioni**: le valutazioni che contengono l'azione
 - **Categorie**: la categoria di protezione dei dati correlata (ad esempio, proteggere le informazioni, gestire i dispositivi e così via)
 - **Stato test:**
     - **Nessuno:** nessun aggiornamento dello stato registrato
@@ -284,7 +284,7 @@ Nella pagina delle azioni di miglioramento vengono mostrati i punti dati seguent
     - **Superato** : implementazione testata correttamente
     - **Rischio basso non riuscito** - test non riuscito, basso rischio
     - **Rischio medio non riuscito** - test non riuscito, rischio medio
-    - **Rischio elevato non riuscito** - test non riusciti, rischio elevato
+    - **Rischio elevato non riuscito** - test non riuscito, rischio elevato
     - **Fuori ambito:** l'azione non è nell'ambito della valutazione e non influisce sul punteggio
     - **Da verificare:** per il test manuale, indica che un'azione è stata implementata ma non testata; per il test automatizzato, indica che un'azione è in attesa del risultato dell'automazione
     - **Impossibile essere rilevato:** impossibile determinare lo stato automatico
@@ -312,15 +312,17 @@ Puoi anche modificare la visualizzazione per visualizzare le valutazioni per gru
 
 Nella pagina delle soluzioni vengono visualizzate le soluzioni dell'organizzazione connesse alle azioni di miglioramento. Nella tabella sono elencati il contributo di ogni soluzione al punteggio complessivo, i punti ottenuti e possibili all'interno di tale soluzione e il numero rimanente di azioni di miglioramento raggruppate in tale soluzione che possono aumentare il punteggio.
 
-Esistono due modi per eseguire un'azione da questa schermata:
+Da questa schermata puoi eseguire un'azione in due modi:
 
-1. Nella riga della soluzione prevista, nella colonna **Azioni rimanenti** selezionare il numero con collegamento ipertestuale. Verrà visualizzata una visualizzazione filtrata della schermata delle azioni di miglioramento che mostra le azioni di miglioramento non testate per la soluzione.
+1. Nella riga della soluzione prevista, nella colonna **Azioni rimanenti,** selezionare il numero con collegamento ipertestuale. Verrà visualizzata una visualizzazione filtrata della schermata delle azioni di miglioramento che mostra le azioni di miglioramento non testate per la soluzione.
 
 2. Nella riga della soluzione prevista selezionare Apri nella colonna **Apri** **soluzione.** La soluzione o la posizione verranno visualizzati nei Centri sicurezza e conformità di Microsoft 365 e Office 365 in cui è possibile eseguire l'azione consigliata.
 
 ## <a name="assessments-page"></a>Pagina Valutazioni
 
 Nella pagina delle valutazioni sono elencate tutte [le](compliance-manager-assessments.md) valutazioni impostate per l'organizzazione. Il denominatore del punteggio di conformità è determinato da tutte le valutazioni monitorate. Quando aggiungi altre valutazioni, vedrai più azioni di miglioramento elencate nella pagina delle azioni di miglioramento e il denominatore del punteggio di conformità aumenta.
+
+Il **contatore dei** modelli attivati nella parte superiore della pagina mostra il numero di modelli di valutazione attivi attualmente in uso fuori dal numero totale di modelli disponibili per l'organizzazione. Per [ulteriori informazioni, vedere](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) Tipo di modello.
 
 Nella pagina delle valutazioni sono riepilogate le informazioni chiave su ogni valutazione:
 
@@ -353,7 +355,9 @@ Per impostazione predefinita, nella pagina delle valutazioni viene visualizzata 
 
 ## <a name="assessment-templates-page"></a>Pagina Modelli di valutazione
 
-Un modello è un framework per la creazione di una valutazione in Compliance Manager. Nella pagina modelli di valutazione viene visualizzato un elenco di modelli e dettagli chiave. L'elenco include i modelli forniti da Compliance Manager e tutti i modelli modificati o creati dall'organizzazione. È possibile applicare filtri per trovare un modello in base alla certificazione, all'ambito del prodotto, al paese, al settore e all'utente che lo ha creato.
+Un modello è un framework per la creazione di una valutazione in Compliance Manager. Nella pagina modelli di valutazione viene visualizzato un elenco di modelli e dettagli chiave. L'elenco include i modelli forniti da Compliance Manager e tutti i modelli modificati o creati dall'organizzazione. È possibile applicare filtri per trovare un modello basato sulla certificazione, l'ambito del prodotto, il paese, il settore e l'utente che lo ha creato.
+
+Il **contatore dei** modelli attivati nella parte superiore della pagina mostra il numero di modelli di valutazione attivi attualmente in uso fuori dal numero totale di modelli disponibili per l'organizzazione. Per [ulteriori informazioni, vedere](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) Tipo di modello.
 
 Selezionare un modello dalla riga corrispondente per visualizzare la relativa pagina dei dettagli, che contiene una descrizione del modello e ulteriori informazioni sulla certificazione, l'ambito e i dettagli dei controlli. Da questa pagina è possibile selezionare i pulsanti appropriati per creare una valutazione, esportare i dati del modello in Excel o modificare il modello.
 

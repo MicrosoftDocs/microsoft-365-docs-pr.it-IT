@@ -11,15 +11,17 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-tenantmanagement
+- tenant-management
+- m365solution-scenario
 ms.custom:
 - Ent_Solutions
 description: Distribuire il modello di identità corretto per i tenant di Microsoft 365 e applicare l'accesso utente sicuro.
-ms.openlocfilehash: 40ea67d9b30a385e36af45f57bd33906c10e495d
-ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
+ms.openlocfilehash: ca545e0152b567cd566ce939e369988f864042a9
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49908560"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407171"
 ---
 # <a name="step-3-identity-for-your-microsoft-365-for-enterprise-tenants"></a>Passaggio 3. Identità per i tenant di Microsoft 365 per le aziende
 
@@ -40,7 +42,7 @@ Ecco i componenti di base dell'identità solo cloud.
  
 ![Componenti di base dell'identità solo cloud](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
-In questa illustrazione, gli utenti locali e remoti a questo scopo a questo scopo attuino l'accesso con gli account nel tenant di Azure AD del tenant di Microsoft 365.
+In questa illustrazione, gli utenti locali e remoti a cui si accede con gli account nel tenant di Azure AD del tenant di Microsoft 365.
 
 Ecco i componenti di base dell'identità ibrida.
 
@@ -60,7 +62,7 @@ Ecco i due tipi di autenticazione quando si utilizza il modello di identità ibr
 
 | Tipo di autenticazione | Descrizione |
 |:-------|:-----|
-| Autenticazione gestita | Azure AD gestisce il processo di autenticazione usando una versione con hash archiviata localmente della password o invia le credenziali a un agente software locale per essere autenticato da Servizi di dominio Active Directory locale. <br> <br>  Esistono due tipi di autenticazione gestita: la sincronizzazione dell'hash delle password (PHS) e l'autenticazione pass-through (PTA). Con PHS, Azure AD esegue l'autenticazione stessa. Con PTA, Azure AD dispone di SERVIZI di dominio Active Directory che esegue l'autenticazione. |
+| Autenticazione gestita | Azure AD gestisce il processo di autenticazione usando una versione con hash archiviata localmente della password o invia le credenziali a un agente software locale per essere autenticato da Servizi di dominio Active Directory locale. <br> <br>  Esistono due tipi di autenticazione gestita: sincronizzazione dell'hash delle password (PHS) e autenticazione pass-through (PTA). Con PHS, Azure AD esegue l'autenticazione stessa. Con PTA, Azure AD dispone di SERVIZI di dominio Active Directory che esegue l'autenticazione. |
 | Autenticazione federata | Azure AD reindirizza il computer client che richiede l'autenticazione a un altro provider di identità. |
 |  |  |
 
@@ -75,7 +77,7 @@ Per aumentare la sicurezza degli account di accesso degli utenti, utilizzare le 
 | Windows Hello for Business | Sostituisce le password con l'autenticazione avanzata a due fattori quando si accede a un dispositivo Windows. I due fattori sono un nuovo tipo di credenziale utente che è associato a un dispositivo e a una biometria o a un PIN. | [Panoramica di Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview) | Microsoft 365 E3 o E5 |
 | Protezione delle password di Azure AD | Rileva e blocca le password deboli note e le relative varianti e può anche bloccare ulteriori termini deboli specifici dell'organizzazione. | [Configurare la protezione con password di Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) | Microsoft 365 E3 o E5 |
 | Usare l'autenticazione a più fattori | L'autenticazione a più fattori richiede che gli utenti siano soggetti a una verifica aggiuntiva oltre alla password dell'account utente, ad esempio la verifica con un'app per smartphone o un SMS inviato a uno smartphone. Vedi [questo video per](https://support.microsoft.com/office/set-up-multi-factor-authentication-in-microsoft-365-business-a32541df-079c-420d-9395-9d59354f7225) istruzioni su come gli utenti configurano l'autenticazione a più fattori. | [MFA per Microsoft 365 per le aziende](../enterprise/microsoft-365-secure-sign-in.md#mfa) | Microsoft 365 E3 o E5 |
-| Configurazioni di identità e accesso dei dispositivi | Impostazioni e criteri costituiti da funzionalità prerequisiti consigliate e dalle relative impostazioni combinate con l'accesso condizionale, Intune e i criteri di Azure AD Identity Protection che determinano se una determinata richiesta di accesso deve essere concessa e in quali condizioni.  | [Configurazioni di identità e accesso dei dispositivi](../security/office-365-security/microsoft-365-policies-configurations.md) | Microsoft 365 E3 o E5 |
+| Configurazioni di identità e accesso dei dispositivi | Impostazioni e criteri costituiti dalle funzionalità prerequisiti consigliate e dalle relative impostazioni combinate con i criteri di Accesso condizionale, Intune e Azure AD Identity Protection che determinano se una determinata richiesta di accesso deve essere concessa e in quali condizioni.  | [Configurazioni di identità e accesso dei dispositivi](../security/office-365-security/microsoft-365-policies-configurations.md) | Microsoft 365 E3 o E5 |
 | Azure AD Identity Protection | Proteggersi dalla compromissione delle credenziali, in cui un utente malintenzionato determina il nome account e la password di un utente per ottenere l'accesso ai servizi cloud e ai dati di un'organizzazione. | [Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection) | Microsoft 365 E5 o Microsoft 365 E3 con il componente aggiuntivo Identity & Threat Protection |
 |  |  |  |
 

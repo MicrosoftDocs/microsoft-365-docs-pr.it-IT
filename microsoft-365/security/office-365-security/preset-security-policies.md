@@ -15,12 +15,12 @@ ms.collection:
 description: Gli amministratori possono imparare ad applicare le impostazioni dei criteri Standard e Strict tra le funzionalità di protezione di Exchange Online Protection (EOP) e Microsoft Defender per Office 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e8f254f2a1ea2dcf1a4b51594a5c340e91cb3f15
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: b49b980d217d60865029c8e64ad02ed722f6b86e
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290776"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407457"
 ---
 # <a name="preset-security-policies-in-eop-and-microsoft-defender-for-office-365"></a>Criteri di sicurezza preimpostati in EOP e Microsoft Defender per Office 365
 
@@ -31,7 +31,7 @@ ms.locfileid: "50290776"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-I criteri di sicurezza preimpostati forniscono una posizione centralizzata per l'applicazione di tutti i criteri di posta indesiderata, malware e phishing consigliati agli utenti contemporaneamente. Le impostazioni dei criteri non sono configurabili. Vengono invece impostati da Microsoft e si basano sulle osservazioni e sulle esperienze dei datacenter per trovare un equilibrio tra mantenere i contenuti dannosi lontano dagli utenti senza interrompere il loro lavoro.
+I criteri di sicurezza preimpostati forniscono una posizione centralizzata per l'applicazione di tutti i criteri di posta indesiderata, malware e phishing consigliati agli utenti contemporaneamente. Le impostazioni dei criteri non sono configurabili. Vengono invece impostati da Microsoft e si basano sulle osservazioni e sulle esperienze dei datacenter per trovare un equilibrio tra mantenere i contenuti dannosi lontano dagli utenti senza interrompere il proprio lavoro.
 
 Il resto di questo argomento descrive i criteri di sicurezza preimpostati e come configurarli.
 
@@ -50,7 +50,7 @@ Inoltre, l'ordine di precedenza è importante se più criteri di sicurezza preim
 Un profilo determina il livello di protezione. Sono disponibili i profili seguenti:
 
 - **Protezione standard:** un profilo di protezione di base adatto alla maggior parte degli utenti.
-- **Protezione rigida:** profilo di protezione più aggressivo per gli utenti selezionati (target di alto valore o utenti con priorità).
+- **Protezione rigida:** un profilo di protezione più aggressivo per gli utenti selezionati (target di alto valore o utenti con priorità).
 
 Si utilizzano regole con condizioni ed eccezioni che determinano a chi sono o non vengono applicati i profili.
 
@@ -70,11 +70,11 @@ I criteri di sicurezza preimpostati utilizzano i criteri corrispondenti delle va
 
   - [Criteri di protezione dalla posta indesiderata](configure-your-spam-filter-policies.md) denominati Criteri di sicurezza **preimpostati standard** e Criteri di sicurezza **preimpostati rigorosi.**
   - [Criteri antimalware denominati](configure-anti-malware-policies.md) **Criteri di sicurezza preimpostati standard** e Criteri di sicurezza **preimpostati rigorosi.**
-  - [Criteri anti-phishing EOP](set-up-anti-phishing-policies.md#spoof-settings) denominati Criteri di sicurezza **preimpostati standard** e Criteri di **sicurezza preimpostati rigorosi** (impostazioni di spoofing).
+  - [Criteri anti-phishing EOP denominati](set-up-anti-phishing-policies.md#spoof-settings) Criteri di sicurezza **preimpostati standard** e Criteri di **sicurezza preimpostati rigorosi** (impostazioni di spoofing).
 
-- **Criteri di Microsoft Defender per Office 365**: sono incluse le organizzazioni con abbonamenti ai componenti aggiuntivi di Microsoft 365 E5 o Defender per Office 365:
+- **Criteri di Microsoft Defender per Office 365:** sono incluse le organizzazioni con abbonamenti ai componenti aggiuntivi di Microsoft 365 E5 o Defender per Office 365:
 
-  - Criteri anti-phishing in Microsoft Defender per Office 365 denominati Criteri di sicurezza preimpostati **standard** e Criteri di sicurezza **preimpostati** rigorosi, che includono:
+  - Criteri anti-phishing in Microsoft Defender per Office 365 denominati Criteri di sicurezza preimpostati **standard** e **Criteri** di sicurezza preimpostati rigorosi, che includono:
 
     - Le stesse [impostazioni di spoofing](set-up-anti-phishing-policies.md#spoof-settings) disponibili nei criteri anti-phishing di EOP.
     - [Impostazioni di rappresentazione](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
@@ -109,13 +109,13 @@ In altre parole, le  impostazioni del criterio di protezione Strict sostituiscon
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- È necessario disporre delle autorizzazioni nel Centro sicurezza e conformità per poter eseguire le procedure contenute in questo articolo:
+- Per eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni in **Exchange Online:**
   - Per configurare i criteri di sicurezza preimpostati, è necessario essere membri dei **gruppi di** ruoli Gestione organizzazione o **Amministratore** sicurezza.
   - Per l'accesso in sola lettura ai criteri di sicurezza preimpostati, è necessario essere membri del gruppo di ruoli **Lettore** globale.
 
-  Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
+  Per ulteriori informazioni, vedere [Autorizzazioni in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
 
-  **Nota:** l'aggiunta di utenti al ruolo Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft  365 offre agli utenti le autorizzazioni necessarie nel Centro sicurezza & e conformità e le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
+  **Nota:** l'aggiunta di utenti al ruolo di Azure Active Directory corrispondente  nell'interfaccia di amministrazione di Microsoft 365 offre agli utenti le autorizzazioni e le autorizzazioni necessarie per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
 
 ### <a name="use-the-security--compliance-center-to-assign-preset-security-policies-to-users"></a>Usare il Centro sicurezza & conformità per assegnare criteri di sicurezza preimpostati agli utenti
 
@@ -159,8 +159,8 @@ Per disabilitare i **criteri di protezione Standard** o Strict **protection** pu
 
 ### <a name="how-do-you-know-these-procedures-worked"></a>Come verificare se queste procedure hanno avuto esito positivo?
 
-Per verificare di aver correttamente assegnato i criteri di protezione **Standard** o Strict **Protection** a un utente, usa un'impostazione  di protezione in cui il valore predefinito è diverso dall'impostazione di protezione **Standard,** che è diversa dall'impostazione Di protezione restrittiva.
+Per verificare di aver correttamente assegnato i criteri di protezione **Standard** o Strict **Protection** a un utente, usa un'impostazione  di protezione in cui il valore predefinito è diverso dall'impostazione di protezione **Standard,** che è diversa dall'impostazione Di protezione strict.
 
 Ad esempio, per la posta elettronica rilevata come posta indesiderata (non alta probabilità di posta indesiderata) verificare  che il messaggio sia recapitato nella cartella Posta indesiderata per gli utenti di protezione **Standard** e messo in quarantena per gli utenti con protezione avanzata.
 
-Oppure, per la posta elettronica in [blocco,](bulk-complaint-level-values.md)verificare che il valore BCL 6 o superiore recapita il messaggio nella  cartella Posta indesiderata per gli utenti di protezione **standard** e che il valore BCL 4 o superiore meti in quarantena il messaggio per gli utenti con protezione avanzata.
+Oppure, per la posta elettronica in [blocco,](bulk-complaint-level-values.md)verificare che il valore BCL 6 o superiore recapita il messaggio nella  cartella Posta indesiderata per gli utenti di protezione **standard** e che il valore BCL 4 o superiore meti in quarantena il messaggio per gli utenti con protezione strict.

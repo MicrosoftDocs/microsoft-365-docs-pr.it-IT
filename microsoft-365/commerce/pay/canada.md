@@ -13,32 +13,35 @@ ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a4a60c841ebb31163281cd8de3c27460e10b0811
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2eccedc234ee6bf9a3049671b4fa4142ba85bd69
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637512"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406993"
 ---
 # <a name="payment-information-for-canada"></a>Informazioni di pagamento per il Canada
 
 [Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Pagare solo in CAD e fare riferimento al numero o ai numeri di fattura della rimessa di pagamento.
-
-## <a name="check"></a>Assegno
-
-**Payee:** Microsoft
-
-**Indirizzo postale:**  
-Bank of America, Lockbox 910430, PO Box 4090, STN A, Toronto ON M5W 0E9, Canada
-
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 
-**Bank:** Bank of America, Toronto  
-**Codice SWIFT:** BOFACATT  
-**Numero account:** 45571239  
-**Nome account:** Microsoft  
-**BANK ID:** 241  
-**Branch:** 56792  
-**Routing/transito #:** 024156792  
+**Si prega di pagare in CAD e di fare riferimento ai numeri di fattura sulla rimessa di pagamento.**
+
+Se si dispone di una fattura fatturata da **Microsoft Corporation,** utilizzare queste informazioni bancarie:
+
+Bank: Bank of America, Toronto\
+Codice SWIFT: BOFACATT\
+Numero di conto: 45571239\
+Nome account: MICROSOFT\
+BANK ID: 241\
+Branch: 56792\
+Nome account: MICROSOFT
+
+Se si dispone di una fattura fatturata da **Microsoft Canada Inc.** per ordini e consumi a partire dal 1° marzo 2021, utilizzare le seguenti informazioni bancarie:
+
+Bank: Citibank N.A., Canadian Branch\
+Routing Number: 032820012\
+Codice BIC/SWIFT: CITICATTBCH\
+Numero account: 3003600001\
+Nome account: MICROSOFT

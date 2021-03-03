@@ -19,12 +19,12 @@ description: Usare Esplora risorse e i rilevamenti in tempo reale nel Centro sic
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: daa7b4014d1302743578d79c2e1e0e1d2d5ac61f
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 614cd7c256fe8af5fd7474a2101f937b1ecfd0d3
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288898"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406409"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Esplora minacce e rilevamenti in tempo reale
 
@@ -41,18 +41,37 @@ Se [l'organizzazione](#new-features-in-threat-explorer-and-real-time-detections)
 |![Esplora minacce](../../media/threatmgmt-explorer.png)|![Rilevamenti in tempo reale](../../media/threatmgmt-realtimedetections.png)|
 |
 
-Esplora risorse o rilevamenti in tempo reale consentono al team delle operazioni di sicurezza di analizzare e rispondere alle minacce in modo efficiente. Il report è simile all'immagine seguente:
+Esplora risorse o rilevamenti in tempo reale consentono al team delle operazioni di sicurezza di analizzare e rispondere in modo efficiente alle minacce. Il report è simile all'immagine seguente:
 
 ![Passare a Esplora gestione \> minacce](../../media/cab32fa2-66f1-4ad5-bc1d-2bac4dbeb48c.png)
 
 Con questo report, è possibile:
 
 - [Visualizzare il malware rilevato dalle funzionalità di sicurezza di Microsoft 365](#see-malware-detected-in-email-by-technology)
-- [Visualizzare l'URL di phishing e fare clic sui dati del verdetto](#view-phishing-url-and-click-verdict-data)
+- [Visualizzare l'URL di phishing e fare clic su dati verdetto](#view-phishing-url-and-click-verdict-data)
 - [Avviare un processo di analisi e risposta](#start-automated-investigation-and-response) automatizzato da una visualizzazione in Esplora risorse (solo Defender per Office 365 Piano 2)
 - [Analizzare la posta elettronica dannosa e altro ancora](#more-ways-to-use-explorer-and-real-time-detections)
 
-## <a name="improvements-to-threat-explorer-and-real-time-detections"></a>Miglioramenti a Esplora minacce e rilevamenti in tempo reale
+## <a name="improvements-to-threat-hunting-experience"></a>Miglioramenti all'esperienza di ricerca delle minacce
+
+### <a name="introduction-of-alert-id-for-mdo-alerts-within-explorerreal-time-detections-preview"></a>Introduzione dell'ID avviso per gli avvisi MDO in Esplora risorse/Rilevamenti in tempo reale (anteprima)
+Oggi, se si passa da un avviso a Esplora minacce, viene aperta una visualizzazione filtrata all'interno di Esplora risorse, con la visualizzazione filtrata in base all'ID dei criteri di avviso (l'ID criterio è un identificatore univoco per un criterio di avviso).
+Stiamo rendendo questa integrazione più pertinente introducendo l'ID avviso (vedi un esempio di ID avviso di seguito) in Esplora minacce e rilevamenti in tempo reale in modo da visualizzare i messaggi rilevanti per l'avviso specifico, nonché un conteggio dei messaggi di posta elettronica. Sarà inoltre possibile vedere se un messaggio fa parte di un avviso, nonché passare da tale messaggio all'avviso specifico.  
+
+L'ID avviso è disponibile all'interno dell'URL quando si visualizza un singolo avviso. Un esempio è che `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1`
+
+> [!div class="mx-imgBorder"]
+> ![Filtro per l'ID avviso](../../media/AlertID-Filter.png)
+
+> [!div class="mx-imgBorder"]
+> ![ID avviso nel riquadro a comparsa dei dettagli](../../media/AlertID-DetailsFlyout.png)
+
+ 
+### <a name="extending-the-explorer-and-real-time-detections-data-retention-and-search-limit-for-trial-tenants-from-7-to-30-days-preview"></a>Estensione della conservazione dei dati di Explorer (e dei rilevamenti in tempo reale) e del limite di ricerca per i tenant di prova da 7 a 30 giorni (anteprima)  
+Come parte di questa modifica, sarà possibile cercare e filtrare i dati di posta elettronica in 30 giorni (un aumento rispetto ai 7 giorni precedenti) nei rilevamenti in tempo reale/Esplora minacce per i tenant di valutazione di Defender per Office P1 e P2. Ciò non influisce sui tenant di produzione per i clienti P1 e P2/E5, che hanno già le funzionalità di ricerca e conservazione dei dati di 30 giorni. 
+
+### <a name="updated-limits-for-export-of-records-for-threat-explorer-preview"></a>Limiti aggiornati per l'esportazione dei record per Esplora minacce (anteprima) 
+Come parte di questo aggiornamento, il numero di righe per i record di posta elettronica che possono essere esportati da Esplora minacce è aumentato da 9990 a 200.000 record. Il set di colonne che è possibile esportare attualmente rimarrà invariato, ma il numero di righe aumenterà rispetto al limite corrente.
 
 ### <a name="tags-in-threat-explorer"></a>Tag in Esplora minacce
 
@@ -72,7 +91,7 @@ La **colonna Tag** nella griglia della posta elettronica contiene tutti i tag ap
 
 #### <a name="filtering"></a>Filtro
 
-È possibile utilizzare i tag come filtro. Cerca solo in scenari con account con priorità o tag utente specifici. È inoltre possibile escludere i risultati con determinati tag. Combina questa funzionalità con altri filtri per restringere l'ambito dell'indagine.
+È possibile utilizzare i tag come filtro. Cerca solo in scenari con account con priorità o tag utente specifici. È inoltre possibile escludere i risultati con determinati tag. Combinare questa funzionalità con altri filtri per restringere l'ambito dell'indagine.
 
 [![Tag di filtro](../../media/tags-filter-normal.png)](../../media/tags-filter-normal.png#lightbox)
 
@@ -81,12 +100,15 @@ La **colonna Tag** nella griglia della posta elettronica contiene tutti i tag ap
 
 #### <a name="email-detail-flyout"></a>Riquadro a comparsa Dettagli messaggio di posta elettronica
 Per visualizzare i singoli tag per il mittente e il destinatario, selezionare l'oggetto per aprire il riquadro a comparsa dei dettagli del messaggio. Nella scheda **Riepilogo,** i tag mittente e destinatario vengono visualizzati separatamente, se sono presenti per un messaggio di posta elettronica.
-Le informazioni sui singoli tag per mittente e destinatario si estendono anche ai dati CSV esportati, dove è possibile visualizzare questi dettagli in due colonne separate.
+Le informazioni sui singoli tag per il mittente e il destinatario si estendono anche ai dati CSV esportati, dove è possibile visualizzare questi dettagli in due colonne separate.
 
 > [!div class="mx-imgBorder"]
 > ![Tag dettagli posta elettronica](../../media/tags-flyout.png)
 
 Le informazioni sui tag vengono visualizzate anche nel riquadro a comparsa dei clic sull'URL. To view it, go to Phish or All Email view and then to the **URLs** or **URL Clicks** tab. Seleziona un singolo riquadro a comparsa URL per visualizzare ulteriori dettagli sui clic per tale URL, inclusi i tag associati a tale clic.
+
+
+### <a name="updated-timeline-view"></a>Visualizzazione Sequenza temporale aggiornata
 
 > [!div class="mx-imgBorder"]
 > ![Tag URL](../../media/tags-urls.png)
@@ -99,12 +121,12 @@ Ci siamo concentrati sui miglioramenti della piattaforma e della qualità dei da
 
 Dopo questi aggiornamenti, verrà visualizzata una singola voce per ogni messaggio, indipendentemente dal diverso evento di post-recapito che influisce sul messaggio. Le azioni possono includere ZAP, correzione manuale (che significa azione dell'amministratore), recapito dinamico e così via.
 
-Oltre a mostrare minacce malware e phishing, viene visualizzato il verdetto di posta indesiderata associato a un messaggio di posta elettronica. All'interno del messaggio di posta elettronica, vedere tutte le minacce associate al messaggio di posta elettronica insieme alle tecnologie di rilevamento corrispondenti. Un messaggio di posta elettronica può avere zero, una o più minacce. You'll see the current threats in the **Details** section of the email flyout. Per più minacce (ad esempio malware e phishing), il campo **tecnico** di rilevamento mostra il mapping di rilevamento delle minacce, che è la tecnologia di rilevamento che ha identificato la minaccia.
+Oltre a mostrare minacce di malware e phishing, viene visualizzato il verdetto di posta indesiderata associato a un messaggio di posta elettronica. All'interno del messaggio di posta elettronica, vedere tutte le minacce associate al messaggio di posta elettronica insieme alle tecnologie di rilevamento corrispondenti. Un messaggio di posta elettronica può avere zero, una o più minacce. Vedrai le minacce correnti nella **sezione** Dettagli del riquadro a comparsa della posta elettronica. Per più minacce (ad esempio malware e phishing), il campo **tecnico** di rilevamento mostra il mapping di rilevamento delle minacce, che è la tecnologia di rilevamento che ha identificato la minaccia.
 
 L'insieme di tecnologie di rilevamento ora include nuovi metodi di rilevamento, nonché tecnologie di rilevamento della posta indesiderata. È possibile utilizzare lo stesso set di tecnologie di rilevamento per filtrare i risultati nelle diverse visualizzazioni della posta elettronica (Malware, Phish, All Email).
 
 > [!NOTE]
-> L'analisi dei verdetti potrebbe non essere necessariamente collegata a entità. Ad esempio, un messaggio di posta elettronica potrebbe essere classificato come posta indesiderata o di phish, ma non vi sono URL contrassegnati con un verdetto di phish/spam. Questo perché i filtri valutano anche il contenuto e altri dettagli per un messaggio di posta elettronica prima di assegnare un verdetto.
+> L'analisi dei verdetti potrebbe non essere necessariamente collegata a entità. Ad esempio, un messaggio di posta elettronica potrebbe essere classificato come posta indesiderata o di posta indesiderata, ma non vi sono URL contrassegnati con un verdetto di tipo phish/spam. Questo perché i filtri valutano anche il contenuto e altri dettagli per un messaggio di posta elettronica prima di assegnare un verdetto.
 
 #### <a name="threats-in-urls"></a>Minacce negli URL
 
@@ -123,7 +145,7 @@ La visualizzazione Sequenza temporale identifica tutti gli eventi di recapito e 
 - **Origine:** Origine dell'evento. Può essere admin/system/user.
 - **Evento:** Include eventi di primo livello come il recapito originale, la correzione manuale, ZAP, gli invii e il recapito dinamico.
 - **Azione:** L'azione specifica eseguita nell'ambito dell'azione ZAP o dell'amministratore (ad esempio, eliminazione rescisa).
-- **Minacce:** Copre le minacce (malware, phish, posta indesiderata) identificate in quel momento.
+- **Minacce:** Copre le minacce (malware, malware, posta indesiderata) identificate in quel momento.
 - **Risultato/Dettagli:** Ulteriori informazioni sul risultato dell'azione, ad esempio se è stata eseguita come parte dell'azione ZAP/amministratore.
 
 ### <a name="original-and-latest-delivery-location"></a>Percorso di recapito originale e più recente
@@ -138,7 +160,7 @@ Attualmente, la posizione di recapito viene visualizzata nella griglia della pos
 > [!NOTE]
 > Esistono alcuni casi in cui la posizione **di recapito e** **l'azione di recapito** possono essere mostrate come "sconosciute":
 >
-> - La posizione  di recapito potrebbe essere  "recapitata" e la posizione di recapito come "sconosciuta" se il messaggio è stato recapitato, ma una regola di Posta in arrivo ha spostato il messaggio in una cartella predefinita (ad esempio Bozza o Archivio) anziché nella cartella Posta in arrivo o Posta indesiderata.
+> - La posizione  di recapito potrebbe essere  "recapitata" e la posizione di recapito come "sconosciuta" se il messaggio è stato recapitato, ma una regola di Posta in arrivo ha spostato il messaggio in una cartella predefinita (ad esempio Bozza o Archivio) invece che nella cartella Posta in arrivo o Posta indesiderata.
 >
 > - **Il percorso di recapito** più recente può essere sconosciuto se è stata tentata un'azione di amministratore/sistema (ad esempio ZAP), ma il messaggio non è stato trovato. In genere, l'azione viene eseguita dopo che l'utente ha spostato o eliminato il messaggio. In questi casi, verificare la colonna **Risultato/Dettagli** nella visualizzazione Sequenza temporale. Cercare l'istruzione "Messaggio spostato o eliminato dall'utente".
 
@@ -147,7 +169,7 @@ Attualmente, la posizione di recapito viene visualizzata nella griglia della pos
 
 ### <a name="additional-actions"></a>Azioni aggiuntive
 
-*Sono state applicate ulteriori* azioni dopo il recapito del messaggio di posta elettronica. Possono includere *ZAP,* correzione manuale *(azione* eseguita da un amministratore come eliminazione rescisa), recapito dinamico e rielaborazione *(per* un messaggio di posta elettronica che è stato rilevato come valido in modo retroattivo).
+*Sono state applicate ulteriori* azioni dopo il recapito del messaggio di posta elettronica. Possono includere *ZAP,* correzione manuale *(azione* eseguita da un amministratore, ad esempio eliminazione rescisa), recapito dinamico e rielaborata *(per* un messaggio di posta elettronica che è stato rilevato come valido in modo retroattivo).
 
 > [!NOTE]
 > - Come parte delle modifiche in sospeso, il valore "Rimosso da ZAP" attualmente indicato nel filtro Azione di recapito sta per andare via. You'll have a way to search for all email with the ZAP attempt through **Additional actions.**
@@ -160,7 +182,7 @@ Attualmente, la posizione di recapito viene visualizzata nella griglia della pos
 
 ### <a name="system-overrides"></a>Sostituzioni del sistema
 
-*Le sostituzioni* di sistema consentono di creare eccezioni al percorso di recapito previsto di un messaggio. Il percorso di recapito fornito dal sistema viene sovrascritto in base alle minacce e ad altri rilevamenti identificati dallo stack di filtro. Le sostituzioni del sistema possono essere impostate tramite criteri tenant o utente per recapitare il messaggio come suggerito dal criterio. Le sostituzioni possono identificare il recapito involontario di messaggi dannosi a causa di lacune di configurazione, ad esempio un criterio Mittente sicuro troppo ampio impostato da un utente. Questi valori di override possono essere:
+*Le sostituzioni* di sistema consentono di creare eccezioni al percorso di recapito previsto di un messaggio. Il percorso di recapito fornito dal sistema viene sovrascritto in base alle minacce e ad altri rilevamenti identificati dallo stack di filtro. Le sostituzioni di sistema possono essere impostate tramite criteri tenant o utente per recapitare il messaggio come suggerito dal criterio. Le sostituzioni possono identificare il recapito involontario di messaggi dannosi a causa di lacune di configurazione, ad esempio un criterio Mittente sicuro troppo ampio impostato da un utente. Questi valori di override possono essere:
 
 - Consentito dai criteri utente: un utente crea criteri a livello di cassetta postale per consentire domini o mittenti.
 - Bloccato dai criteri utente: un utente crea criteri a livello di casella di posta per bloccare domini o mittenti.
@@ -181,7 +203,7 @@ I miglioramenti includono:
 
 - Correzioni tra filtri URL *(URL* e dominio *URL* e dominio *URL* e percorso): gli aggiornamenti influiscono sulla ricerca dei messaggi che contengono un verdetto URL/clic. È stato abilitato il supporto per le ricerche indipendenti dal protocollo, in modo da poter cercare un URL senza utilizzare `http` . Per impostazione predefinita, la ricerca URL è mappata a http, a meno che non venga specificato in modo esplicito un altro valore. Ad esempio:
 
-   -  Cercare con e senza il prefisso nei campi di filtro `http://` **URL,** **URL Domain** e **URL Domain and Path.** Le ricerche dovrebbero mostrare gli stessi risultati.
+   -  Eseguire la ricerca con e senza il prefisso nei campi di filtro `http://` **URL,** **URL Domain** e **URL Domain and Path.** Le ricerche dovrebbero mostrare gli stessi risultati.
 
    -  Cercare il prefisso `https://` **nell'URL.** Se non viene specificato alcun valore, viene `http://` utilizzato il prefisso.
 
@@ -191,7 +213,7 @@ I miglioramenti includono:
 
 Il livello di probabilità di phish aiuta a identificare il grado di sicurezza con cui un messaggio di posta elettronica è stato classificato come "phish". I due valori possibili sono *High* e *Normal.* Nelle fasi iniziali, questo filtro sarà disponibile solo nella visualizzazione Phish di Esplora minacce.
 
-[![Livello di probabilità di phish in Esplora risorse](../../media/Phish_Confidence_Level.png)](../../media/Phish_Confidence_Level.png#lightbox)
+[![Livello di probabilità di phish in Explorer](../../media/Phish_Confidence_Level.png)](../../media/Phish_Confidence_Level.png#lightbox)
 
 ### <a name="zap-url-signal"></a>Segnale URL ZAP
 
@@ -215,7 +237,7 @@ Per migliorare il processo di ricerca, abbiamo aggiornato Esplora minacce e i ri
 
 ### <a name="timezone-improvements"></a>Miglioramenti del fuso orario
 
-Verrà visualizzato il fuso orario per i record di posta elettronica nel portale e per i dati esportati. Sarà visibile tra esperienze come griglia di posta elettronica, riquadro a comparsa Dettagli, Sequenza temporale e messaggi di posta elettronica simili, quindi il fuso orario per il set di risultati è chiaro.
+Verrà visualizzato il fuso orario per i record di posta elettronica nel portale e per i dati esportati. Sarà visibile tra esperienze come griglia di posta elettronica, riquadro a comparsa Dettagli, Sequenza temporale della posta elettronica e messaggi di posta elettronica simili, quindi il fuso orario per il set di risultati è chiaro.
 
 > [!div class="mx-imgBorder"]
 > ![Visualizzare il fuso orario in Esplora risorse](../../media/TimezoneImprovements.png)
@@ -224,7 +246,7 @@ Verrà visualizzato il fuso orario per i record di posta elettronica nel portale
 
 Alcuni utenti hanno commentato la confusione con l'aggiornamento automatico (ad esempio, non appena si modifica la data, la pagina viene aggiornata) e l'aggiornamento manuale (per altri filtri). Analogamente, la rimozione dei filtri comporta l'aggiornamento automatico. La modifica dei filtri durante la modifica della query può causare esperienze di ricerca incoerenti. Per risolvere questi problemi, stiamo passando a un meccanismo di filtro manuale.
 
-Dal punto di vista dell'esperienza, l'utente può applicare e rimuovere il diverso intervallo di filtri (dal set di filtri e dalla data) e selezionare il pulsante di aggiornamento per filtrare i risultati dopo aver definito la query. Anche il pulsante aggiorna viene sottolineato sullo schermo. Abbiamo anche aggiornato le descrizioni comandi correlate e la documentazione nel prodotto.
+Dal punto di vista dell'esperienza, l'utente può applicare e rimuovere l'intervallo di filtri diverso (dal set di filtri e dalla data) e selezionare il pulsante di aggiornamento per filtrare i risultati dopo aver definito la query. Anche il pulsante di aggiornamento viene sottolineato sullo schermo. Abbiamo anche aggiornato le descrizioni comandi correlate e la documentazione nel prodotto.
 
 > [!div class="mx-imgBorder"]
 > ![Selezionare Aggiorna per filtrare i risultati](../../media/ManualRefresh.png)
@@ -256,13 +278,13 @@ You'll be able to export the list of targeted users, up to a limit of 3,000, alo
 
 ### <a name="exchange-transport-rules"></a>Regole di trasporto di Exchange
 
-Come parte dell'arricchimento dei dati, sarà possibile visualizzare tutte le diverse regole di trasporto di Exchange applicate a un messaggio. Queste informazioni saranno disponibili nella visualizzazione griglia della posta elettronica. Per visualizzarla, selezionare **Opzioni colonna** nella griglia e quindi Aggiungere la regola di trasporto **di Exchange** dalle opzioni di colonna. Sarà visibile anche nel riquadro **a** comparsa Dettagli nel messaggio di posta elettronica.
+Come parte dell'arricchimento dei dati, sarà possibile visualizzare tutte le diverse regole di trasporto di Exchange (ETR) applicate a un messaggio. Queste informazioni saranno disponibili nella visualizzazione griglia e-mail. Per visualizzarla, selezionare **Opzioni colonna** nella griglia e quindi Aggiungere la regola di trasporto **di Exchange** dalle opzioni di colonna. Sarà visibile anche nel riquadro **a** comparsa Dettagli nel messaggio di posta elettronica.
 
 Sarà possibile visualizzare sia il GUID che il nome delle regole di trasporto applicate al messaggio. Sarà possibile cercare i messaggi utilizzando il nome della regola di trasporto. Si tratta di una ricerca "Contiene", che significa che è possibile eseguire anche ricerche parziali.
 
 #### <a name="important-note"></a>Nota importante:
 
-La disponibilità della ricerca ETR e del nome dipende dal ruolo specifico assegnato all'utente. Per visualizzare i nomi ETR e la ricerca, è necessario disporre di uno dei ruoli/autorizzazioni seguenti. Se non è stato assegnato alcuno di questi ruoli, non è possibile visualizzare i nomi delle regole di trasporto o cercare i messaggi utilizzando i nomi ETR. Tuttavia, è possibile visualizzare le informazioni sull'etichetta ETR e sul GUID nei dettagli del messaggio di posta elettronica. Altre esperienze di visualizzazione dei record nelle griglie di posta elettronica, nei riquadri a comparsa dei messaggi di posta elettronica, nei filtri e nell'esportazione non sono interessate.
+La disponibilità della ricerca ETR e del nome dipende dal ruolo specifico assegnato all'utente. Per visualizzare i nomi ETR e la ricerca, è necessario disporre di uno dei ruoli/autorizzazioni seguenti. Se non si dispone di uno di questi ruoli assegnati, non è possibile visualizzare i nomi delle regole di trasporto o cercare i messaggi utilizzando i nomi ETR. Tuttavia, è possibile visualizzare le informazioni sull'etichetta ETR e sul GUID nei dettagli del messaggio di posta elettronica. Altre esperienze di visualizzazione dei record in griglie di posta elettronica, riquadri a comparsa di posta elettronica, filtri ed esportazione non sono interessate.
 
 - Solo EXO - Prevenzione della perdita dei dati: tutti
 - Solo EXO - O365SupportViewConfig: All
@@ -271,7 +293,7 @@ La disponibilità della ricerca ETR e del nome dipende dal ruolo specifico asseg
 - Solo EXO - Regole di trasporto: Tutte
 - Solo EXO - View-Only configurazione: Tutti
 
-All'interno della griglia di posta elettronica, del riquadro a comparsa Dettagli e del file CSV esportato, gli etR vengono presentati con un nome/GUID, come illustrato di seguito.
+All'interno della griglia della posta elettronica, del riquadro a comparsa Dettagli e del file CSV esportato, gli etr vengono presentati con un nome/GUID, come illustrato di seguito.
 
 > [!div class="mx-imgBorder"]
 > ![Regole di trasporto di Exchange](../../media/ETR_Details.png)
@@ -287,17 +309,43 @@ La ricerca dei connettori è di natura "contiene", il che significa che anche le
 
 ## <a name="new-features-in-threat-explorer-and-real-time-detections"></a>Nuove funzionalità in Esplora minacce e rilevamenti in tempo reale
 
-In Esplora minacce e nei rilevamenti in tempo reale sono disponibili tre nuove funzionalità:
-
-- [Visualizzare in anteprima l'intestazione e scaricare il corpo del messaggio di posta elettronica](#preview-email-header-and-download-email-body)
+- [Visualizzare i messaggi di posta elettronica di phishing inviati a utenti e domini rappresentati](#view-phishing-emails-sent-to-impersonated-users-and-domains)
+-  [Visualizzare in anteprima l'intestazione e scaricare il corpo del messaggio di posta elettronica](#preview-email-header-and-download-email-body)
 - [Sequenza temporale della posta elettronica](#email-timeline)
 - [Esportare i dati di clic url](#export-url-click-data)
 
-Queste nuove funzionalità sono descritte di seguito.
+### <a name="view-phishing-emails-sent-to-impersonated-users-and-domains"></a>Visualizzare i messaggi di posta elettronica di phishing inviati a utenti e domini rappresentati
+
+Per identificare i tentativi di phishing contro utenti e domini rappresentati da utenti devono essere aggiunti all'elenco *degli utenti da proteggere.* Per i domini, gli amministratori devono abilitare i *domini dell'organizzazione* o aggiungere un nome di dominio *ai domini da proteggere.* I domini da proteggere sono disponibili nella pagina dei criteri *anti-phishing* nella *sezione Rappresentazione.*
+
+Per esaminare i messaggi di phish e cercare utenti o domini impersonati, usare la visualizzazione Posta [elettronica > Phish](threat-explorer-views.md) di Explorer.
+
+In questo esempio viene utilizzato Esplora minacce.
+
+1. Nel [Centro sicurezza & conformità](https://protection.office.com) ( , scegliere Gestione delle https://protection.office.com) minacce > Explorer (o rilevamenti in tempo reale).
+
+2. Nel menu Visualizza scegliere Posta elettronica > Phish.
+
+   Qui è possibile scegliere il **dominio rappresentato o** **l'utente rappresentato.**
+
+3. **Selezionare** Dominio **rappresentato** e quindi digitare un dominio protetto nella casella di testo.
+
+   Ad esempio, cercare nomi di dominio protetti come *contoso,* *contoso.com* o *contoso.com.au*.
+
+4. Selezionare l'oggetto di qualsiasi messaggio nella scheda Posta elettronica > Dettagli per visualizzare ulteriori informazioni sulla rappresentazione, ad esempio Dominio rappresentato/Posizione rilevata.
+
+5. **OPPURE** Selezionare **Utente rappresentato e** digitare l'indirizzo di posta elettronica di un utente protetto nella casella di testo.
+
+6. Selezionare **l'oggetto** di qualsiasi messaggio nella scheda **Dettagli** della scheda Posta elettronica per visualizzare ulteriori informazioni sulla rappresentazione dell'utente o del dominio e  >   sulla *posizione rilevata.*
+
+:::image type="content" source="../../media/threat-ex-views-impersonated-user-image.png" alt-text="Riquadro dei dettagli di Esplora minacce per un utente protetto che mostra la posizione di rilevamento e la minaccia rilevata (qui imitazione di un utente).":::
+
+> [!TIP]
+> **Per risultati ottimali,** utilizzare indirizzi *di posta elettronica completi per* cercare utenti protetti. L'utente protetto sarà più rapido e corretto se si cerca *firstname.lastname@contoso.com,* ad esempio quando si analizza la rappresentazione dell'utente. Quando si cerca un dominio protetto, la ricerca prenderà il dominio radice (ad esempio, contoso.com) e il nome di dominio (*contoso*). La ricerca del dominio radice *contoso.com* restituirà sia le contoso.com *che* il nome di dominio *contoso.*
 
 ### <a name="preview-email-header-and-download-email-body"></a>Visualizzare in anteprima l'intestazione e scaricare il corpo del messaggio di posta elettronica
 
-È ora possibile visualizzare in anteprima un'intestazione di posta elettronica e scaricare il corpo del messaggio in Threat Explorer Gli amministratori possono analizzare le intestazioni e i messaggi di posta elettronica scaricati per le minacce. Poiché il download dei messaggi di posta elettronica può rischiare l'esposizione delle informazioni, questo processo è controllato dal controllo dell'accesso basato sui ruoli (RBAC). Un nuovo ruolo, *Anteprima,* deve essere aggiunto a un altro gruppo di ruoli ,ad esempio Operazioni di sicurezza o Amministratore sicurezza, per consentire il download dei messaggi di posta elettronica nella visualizzazione tutti i messaggi di posta elettronica. Tuttavia, la visualizzazione dell'intestazione del messaggio di posta elettronica non richiede alcun ruolo aggiuntivo (diverso da quello necessario per visualizzare i messaggi in Esplora minacce).
+È ora possibile visualizzare in anteprima un'intestazione di posta elettronica e scaricare il corpo del messaggio in Threat Explorer Gli amministratori possono analizzare intestazioni/messaggi di posta elettronica scaricati per le minacce. Poiché il download dei messaggi di posta elettronica può rischiare l'esposizione delle informazioni, questo processo è controllato dal controllo dell'accesso basato sui ruoli (RBAC). Un nuovo ruolo, *Anteprima,* deve essere aggiunto a un altro gruppo di ruoli (ad esempio Operazioni di sicurezza o Amministratore sicurezza) per consentire il download dei messaggi di posta elettronica nella visualizzazione tutti i messaggi di posta elettronica. Tuttavia, la visualizzazione dell'intestazione del messaggio di posta elettronica non richiede alcun ruolo aggiuntivo (diverso da quello necessario per visualizzare i messaggi in Esplora minacce).
 
 Explorer e i rilevamenti in tempo reale otterranno anche nuovi campi che forniscono un quadro più completo della posizione dei messaggi di posta elettronica. Queste modifiche facilitano la ricerca delle operazioni di sicurezza. Tuttavia, il risultato principale è che è possibile conoscere rapidamente la posizione dei messaggi di posta elettronica problematici.
 
@@ -312,14 +360,14 @@ Come viene eseguita questa operazione? Lo stato del recapito è ora suddiviso in
 |---|---|---|---|
 |La posta elettronica è stata recapitata nella posta in arrivo o nella cartella di un utente e l'utente può accedervi.|La posta elettronica è stata inviata alla cartella Posta indesiderata o Eliminata dell'utente e l'utente può accedervi.|Messaggi di posta elettronica messi in quarantena, non riusciti o eliminati. Questi messaggi di posta elettronica non sono accessibili all'utente.|La posta elettronica aveva allegati dannosi sostituiti da file txt che indicavano che l'allegato era dannoso.|
 
-Ecco cosa può e non può vedere l'utente:
+Ecco cosa può o non può vedere l'utente:
 
 |Accessibile agli utenti finali|Inaccessibile agli utenti finali|
 |---|---|
 |Recapitato|Bloccato|
 |Posta indesiderata|Sostituito|
 
-**Il percorso di** recapito mostra i risultati dei criteri e dei rilevamenti eseguiti dopo il recapito. È collegato **_all'azione di recapito._** Questi sono i valori possibili:
+**Il percorso di** recapito mostra i risultati dei criteri e dei rilevamenti eseguiti dopo il recapito. È collegato **_all'azione recapito._** Ecco i valori possibili:
 
 - *Posta in arrivo o cartella:* il messaggio di posta elettronica si trova nella cartella Posta in arrivo o in una cartella (in base alle regole di posta elettronica).
 - *Locale o esterno:* la cassetta postale non esiste nel cloud ma è locale.
@@ -331,7 +379,7 @@ Ecco cosa può e non può vedere l'utente:
 
 ### <a name="email-timeline"></a>Sequenza temporale della posta elettronica
 
-La **sequenza temporale della** posta elettronica è una nuova funzionalità di Explorer che migliora l'esperienza di ricerca per gli amministratori. Riduce il tempo impiegato per controllare posizioni diverse per provare a comprendere l'evento. Quando si verificano più eventi contemporaneamente all'arrivo di un messaggio di posta elettronica, tali eventi vengono visualizzati in una visualizzazione sequenza temporale. Alcuni eventi che si verificano dopo il recapito della posta elettronica vengono acquisiti nella **colonna Azione** speciale. Gli amministratori possono combinare le informazioni della sequenza temporale con l'azione speciale eseguita sul post-recapito della posta per ottenere informazioni dettagliate sul funzionamento dei criteri, su dove è stata infine instradata la posta e, in alcuni casi, sulla valutazione finale.
+La **sequenza temporale della** posta elettronica è una nuova funzionalità di Explorer che migliora l'esperienza di ricerca per gli amministratori. Riduce il tempo impiegato per controllare posizioni diverse per provare a comprendere l'evento. Quando si verificano più eventi in corrispondenza o vicino allo stesso momento dell'arrivo di un messaggio di posta elettronica, tali eventi vengono visualizzati in una visualizzazione sequenza temporale. Alcuni eventi che si verificano dopo il recapito della posta elettronica vengono acquisiti nella **colonna Azione** speciale. Gli amministratori possono combinare le informazioni della sequenza temporale con le azioni speciali intraprese sul post-recapito della posta per ottenere informazioni dettagliate sul funzionamento dei loro criteri, su dove è stata infine instradata la posta e, in alcuni casi, sulla valutazione finale.
 
 Per ulteriori informazioni, vedere Analizzare e correggere i messaggi di posta elettronica dannosi [recapitati in Office 365.](investigate-malicious-email-that-was-delivered.md)
 
@@ -339,16 +387,16 @@ Per ulteriori informazioni, vedere Analizzare e correggere i messaggi di posta e
 
 È ora possibile esportare i report per i clic su URL in Microsoft Excel per visualizzare **l'ID** messaggio di rete e fare clic sul verdetto, in modo da spiegare dove ha avuto origine il traffico di clic dell'URL. Ecco come funziona: in Gestione minacce sulla barra di avvio veloce di Office 365, seguire questa catena:
 
-**Explorer** \> **View Phish** \> **Clic** \> **Gli URL principali o** i **clic principali degli URL** \> selezionano qualsiasi record per aprire il riquadro a comparsa url.
+**Explorer** \> **View Phish** \> **Clic** \> **Gli URL principali o** i **clic principali degli URL** \> selezionano qualsiasi record per aprire il riquadro a comparsa dell'URL.
 
-Quando si seleziona un URL nell'elenco, viene visualizzato un nuovo pulsante **Esporta** nel riquadro a comparsa. Utilizzare questo pulsante per spostare i dati in un foglio di calcolo di Excel per semplificare la creazione di report.
+Quando si seleziona un URL nell'elenco, nel riquadro a comparsa viene visualizzato un nuovo pulsante **Esporta.** Utilizzare questo pulsante per spostare i dati in un foglio di calcolo di Excel per semplificare la creazione di report.
 
 Seguire questo percorso per accedere alla stessa posizione nel report rilevamenti in tempo reale:
 
 **Explorer** \> **Rilevamenti in tempo reale** \> **View Phish** \> **URL** \> **URL principali o** **clic principali Selezionare** qualsiasi record per aprire il riquadro a comparsa URL passare alla \> \> **scheda** Clic.
 
 > [!TIP]
-> L'ID messaggio di rete mappa il clic indietro a messaggi di posta elettronica specifici quando si esegue una ricerca sull'ID tramite Esplora risorse o strumenti di terze parti associati. Tali ricerche identificano il messaggio di posta elettronica associato a un risultato del clic. La presenza dell'ID messaggio di rete correlato consente un'analisi più rapida e potente.
+> L'ID messaggio di rete associa il clic a messaggi di posta elettronica specifici quando si esegue una ricerca sull'ID tramite Esplora risorse o strumenti di terze parti associati. Tali ricerche identificano il messaggio di posta elettronica associato a un risultato del clic. La presenza dell'ID messaggio di rete correlato consente un'analisi più rapida e potente.
 
 > [!div class="mx-imgBorder"]
 > ![Scheda Clic in Esplora risorse](../../media/tp_ExportClickResultAndNetworkID.png)
@@ -357,9 +405,9 @@ Seguire questo percorso per accedere alla stessa posizione nel report rilevament
 
 Si supponga di voler visualizzare il malware rilevato nei messaggi di posta elettronica ordinati in base alla tecnologia Microsoft 365. A tale scopo, utilizzare la visualizzazione [Posta > malware](threat-explorer-views.md#email--malware) di Esplora risorse (o rilevamenti in tempo reale).
 
-1. Nel Centro sicurezza & conformità ( ), scegliere Esplora gestione <https://protection.office.com>  \> **minacce** (o **rilevamenti in tempo reale).** In questo esempio viene utilizzato Explorer.
+1. Nel Centro sicurezza & conformità ( ), scegliere Esplora gestione minacce (o rilevamenti <https://protection.office.com>  \>  in **tempo reale).** In questo esempio viene utilizzato Explorer.
 
-2. Scegliere **Malware** di posta **elettronica** dal menu \> **Visualizza.**
+2. Scegliere **Malware di** posta **elettronica** dal menu \> **Visualizza.**
 
    > [!div class="mx-imgBorder"]
    > ![Menu Visualizza per Esplora risorse](../../media/ExplorerViewEmailMalwareMenu.png)
@@ -378,13 +426,13 @@ Si supponga di voler visualizzare il malware rilevato nei messaggi di posta elet
 
 Il report viene aggiornato per visualizzare i risultati rilevati dal malware nella posta elettronica, utilizzando l'opzione tecnologia selezionata. Da qui è possibile eseguire ulteriori analisi.
 
-## <a name="view-phishing-url-and-click-verdict-data"></a>Visualizzare l'URL di phishing e fare clic sui dati del verdetto
+## <a name="view-phishing-url-and-click-verdict-data"></a>Visualizzare l'URL di phishing e fare clic su dati verdetto
 
-Si supponga di voler visualizzare i tentativi di phishing tramite URL nei messaggi di posta elettronica, incluso un elenco di URL consentiti, bloccati e ignorati. Per identificare gli URL su cui è stato fatto clic, [è necessario](atp-safe-links.md) configurare collegamenti sicuri. Assicurarsi di configurare i criteri [collegamenti](set-up-atp-safe-links-policies.md) sicuri per la protezione con il tempo di clic e la registrazione dei verdetti clic per collegamenti sicuri.
+Si supponga di voler visualizzare i tentativi di phishing tramite URL nei messaggi di posta elettronica, incluso un elenco di URL consentiti, bloccati ed ignorati. Per identificare gli URL su cui è stato fatto clic, [è necessario](atp-safe-links.md) configurare collegamenti sicuri. Assicurarsi di configurare i criteri [collegamenti](set-up-atp-safe-links-policies.md) sicuri per la protezione del momento del clic e la registrazione dei verdetti clic per collegamenti sicuri.
 
 Per esaminare gli URL dei phish nei messaggi e fare clic sugli URL nei messaggi di [   >  **phish,**](threat-explorer-views.md#email--phish) usa la visualizzazione E-mail phish di Explorer o rilevamenti in tempo reale.
 
-1. Nel Centro sicurezza & conformità ( ), scegliere Esplora gestione <https://protection.office.com>  \> **minacce** (o **rilevamenti in tempo reale).** In questo esempio viene utilizzato Explorer.
+1. Nel Centro sicurezza & conformità ( ), scegliere Esplora gestione minacce (o rilevamenti <https://protection.office.com>  \>  in **tempo reale).** In questo esempio viene utilizzato Explorer.
 
 2. Scegliere **E-mail**  phish dal menu \> **Visualizza.**
 
@@ -400,7 +448,7 @@ Per esaminare gli URL dei phish nei messaggi e fare clic sugli URL nei messaggi 
 
    Il report viene aggiornato per visualizzare due diverse tabelle URL nella scheda URL del report:
 
-   - **Gli URL principali sono** gli URL nei messaggi filtrati e l'azione di recapito della posta elettronica conta per ogni URL. Nella visualizzazione E-mail di phish, questo elenco contiene in genere URL legittimi. Gli utenti malintenzionati includono nei messaggi una combinazione di URL buoni e non erri per tentare di ottenerli, ma rendono i collegamenti dannosi più interessanti. La tabella degli URL è ordinata in base al numero totale di messaggi di posta elettronica, ma questa colonna è nascosta per semplificare la visualizzazione.
+   - **Gli URL principali sono** gli URL nei messaggi filtrati verso il basso e l'azione di recapito della posta elettronica conta per ogni URL. Nella visualizzazione e-mail di Phish, questo elenco contiene in genere URL legittimi. Gli utenti malintenzionati includono nei messaggi una combinazione di URL buoni e non erati per tentare di ottenerli, ma rendono i collegamenti dannosi più interessanti. La tabella degli URL è ordinata in base al numero totale di messaggi di posta elettronica, ma questa colonna è nascosta per semplificare la visualizzazione.
 
    - **I clic principali** sono gli URL con collegamenti sicuri su cui è stato fatto clic, ordinati in base al numero totale di clic. Anche questa colonna non viene visualizzata, per semplificare la visualizzazione. Il conteggio totale per colonna indica il numero di verdetti clic su Collegamenti sicuri per ogni URL su cui è stato fatto clic. Nella visualizzazione posta elettronica di Phish, questi sono in genere URL sospetti o dannosi. Ma la visualizzazione potrebbe includere URL che non sono minacce ma sono nei messaggi di phish. I clic url sui collegamenti senza ritorno a capo non vengono visualizzati qui.
 
@@ -422,7 +470,7 @@ All'interno dei riquadri a comparsa e-mail o URL, dei clic principali e delle es
 - **Consentito:** All'utente è stato consentito passare all'URL.
 - **Bloccato:** All'utente è stato impedito di passare all'URL.
 - **Verdetto in sospeso:** All'utente è stata presentata la pagina detonazione in sospeso.
-- **Bloccato ignorato:** All'utente è stato impedito di passare direttamente all'URL. Ma l'utente ha sovrascritto il blocco per passare all'URL.
+- **Bloccato ignorato:** All'utente è stato impedito di passare direttamente all'URL. Tuttavia, l'utente ha sovrascritto il blocco per passare all'URL.
 - **Verdetto in sospeso ignorato:** All'utente è stata presentata la pagina di detonazione. Tuttavia, l'utente ha sovrascritto il messaggio per accedere all'URL.
 - **Errore:** All'utente è stata visualizzata la pagina di errore o si è verificato un errore durante l'acquisizione del verdetto.
 - **Errore:** Si è verificata un'eccezione sconosciuta durante l'acquisizione del verdetto. L'utente potrebbe aver fatto clic sull'URL.
@@ -431,7 +479,7 @@ All'interno dei riquadri a comparsa e-mail o URL, dei clic principali e delle es
 
 Si supponga di voler visualizzare i messaggi di posta elettronica segnalati dagli [](enable-the-report-message-add-in.md) utenti dell'organizzazione come posta *indesiderata,* non indesiderata o *phishing* tramite il componente aggiuntivo Segnala messaggio o Segnala [phishing.](enable-the-report-phish-add-in.md) Per visualizzarli, usa la visualizzazione [   >  **Invii di posta**](threat-explorer-views.md#email--submissions) elettronica di Esplora risorse (o rilevamenti in tempo reale).
 
-1. Nel Centro sicurezza & conformità ( ), scegliere Esplora gestione <https://protection.office.com>  \> **minacce** (o **rilevamenti in tempo reale).** In questo esempio viene utilizzato Explorer.
+1. Nel Centro sicurezza & conformità ( ), scegliere Esplora gestione minacce (o rilevamenti <https://protection.office.com>  \>  in **tempo reale).** In questo esempio viene utilizzato Explorer.
 
 2. Scegliere **Invii** **di** posta elettronica dal menu \> **Visualizza.**
 
@@ -452,7 +500,7 @@ Il rapporto viene aggiornato per visualizzare i dati relativi ai messaggi di pos
 > [!NOTE]
 > Le funzionalità di analisi e risposta automatizzate sono disponibili in *Microsoft Defender per Office 365 Piano 2* e Office *365 E5.*
 
-[L'analisi e la risposta automatizzate](automated-investigation-response-office.md) possono risparmiare tempo e impegno del team delle operazioni di sicurezza dedicato all'analisi e alla mitigazione degli attacchi informatici. Oltre a configurare avvisi che possono attivare un playbook sulla sicurezza, puoi avviare un processo di analisi e risposta automatizzato da una visualizzazione in Esplora risorse. Per informazioni dettagliate, vedere Esempio: un amministratore [della sicurezza attiva un'indagine da Explorer.](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)
+[L'analisi e la risposta automatizzate](automated-investigation-response-office.md) possono risparmiare tempo e impegno del team delle operazioni di sicurezza dedicato all'analisi e alla mitigazione degli attacchi informatici. Oltre a configurare avvisi che possono attivare un playbook sulla sicurezza, puoi avviare un processo di analisi e risposta automatizzato da una visualizzazione in Esplora risorse. Per informazioni dettagliate, vedere [Esempio: un amministratore della sicurezza attiva un'indagine da Explorer.](automated-investigation-response-office.md#example-a-security-administrator-triggers-an-investigation-from-threat-explorer)
 
 ## <a name="more-ways-to-use-explorer-and-real-time-detections"></a>Altri modi per usare Esplora risorse e i rilevamenti in tempo reale
 
@@ -495,6 +543,10 @@ Per ulteriori informazioni sui ruoli e sulle autorizzazioni, vedere le risorse s
 ## <a name="differences-between-threat-explorer-and-real-time-detections"></a>Differenze tra Esplora minacce e rilevamenti in tempo reale
 
 - Il *report rilevamenti in tempo* reale è disponibile in Defender per Office 365 Piano 1. *Esplora minacce* è disponibile in Defender per Office 365 Piano 2.
-- Il report rilevamenti in tempo reale consente di visualizzare i rilevamenti in tempo reale. Esplora minacce esegue anche questa operazione, ma fornisce anche ulteriori dettagli per un determinato attacco.
+- Il report rilevamenti in tempo reale consente di visualizzare i rilevamenti in tempo reale. Anche Esplora minacce esegue questa operazione, ma fornisce anche ulteriori dettagli per un determinato attacco.
 - Una *visualizzazione Tutti i* messaggi di posta elettronica è disponibile in Esplora minacce, ma non nel report rilevamenti in tempo reale.
 - Altre funzionalità di filtro e azioni disponibili sono incluse in Esplora minacce. Per altre informazioni, vedere [Microsoft Defender per Office 365 Service Description: Feature availability across Defender for Office 365 plans.](https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description#feature-availability-across-advanced-threat-protection-atp-plans)
+
+## <a name="other-articles"></a>Altri articoli
+
+[Analizzare i messaggi di posta elettronica con la pagina entità di posta elettronica](mdo-email-entity-page.md)

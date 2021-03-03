@@ -11,15 +11,17 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-tenantmanagement
+- tenant-management
+- m365solution-scenario
 ms.custom:
 - Ent_Solutions
 description: Ottimizzare l'accesso di rete ai tenant di Microsoft 365.
-ms.openlocfilehash: 1e57911a6e8c51af3ae00ff0f9053bf9273e0e17
-ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
+ms.openlocfilehash: 5eac0793d2afc924a919671ffa105362ea1866d9
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49908648"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407193"
 ---
 # <a name="step-2-optimal-networking-for-your-microsoft-365-for-enterprise-tenants"></a>Passaggio 2. Rete ottimale per i tenant di Microsoft 365 per le aziende
 
@@ -37,9 +39,9 @@ Per ottimizzare l'accesso alla rete per il tenant, è necessario:
 
 Per le reti aziendali, è consigliabile ottimizzare l'esperienza dell'utente finale abilitando l'accesso di rete con le massime prestazioni tra i client e gli endpoint di Microsoft 365 più vicini. La qualità dell'esperienza utente finale è direttamente correlata alle prestazioni e alla velocità di risposta dell'applicazione utilizzata dall'utente. Ad esempio, Microsoft Teams si basa su una bassa latenza in modo che le chiamate telefoniche, le conferenze e le collaborazioni su schermo condivise degli utenti siano senza problemi.
 
-L'obiettivo principale nella progettazione della rete dovrebbe essere ridurre al minimo la latenza riducendo il tempo di andata e ritorno (RTT) dai dispositivi client alla rete globale Microsoft, la backbone di rete pubblica di Microsoft che collega tutti i datacenter Di Microsoft con bassa latenza, punti di ingresso dell'applicazione cloud a disponibilità elevata, noti come porte anteriori, distribuiti in tutto il mondo.
+L'obiettivo principale nella progettazione della rete dovrebbe essere ridurre al minimo la latenza riducendo il tempo di andata e ritorno (RTT) dai dispositivi client alla rete globale Microsoft, la backbone di rete pubblica di Microsoft che interconnette tutti i datacenter di Microsoft con bassa latenza, punti di ingresso dell'applicazione cloud a disponibilità elevata, noti come porte anteriori, distribuiti in tutto il mondo.
 
-Ecco un esempio di rete aziendale tradizionale.
+Ecco un esempio di una rete aziendale tradizionale.
 
 ![Una rete aziendale tradizionale con accesso centrale a Internet](../media/tenant-management-overview/tenant-management-networking-traditional.png)
 
@@ -62,7 +64,7 @@ Se si implementano questi principi, si ottiene una rete aziendale ottimizzata pe
 
 ![Una rete aziendale ottimizzata per Microsoft 365](../media/tenant-management-overview/tenant-management-networking-optimized.png)
 
-In questa illustrazione, le succursali dispongono di una propria connessione Internet tramite un dispositivo WAN (SDWAN) software-defined, che invia il traffico attendibile di Microsoft 365 al front door più vicino a livello regionale. Nella sede centrale, il traffico attendibile di Microsoft 365 ignora il dispositivo di sicurezza o proxy e i dispositivi intermedi non vengono più utilizzati.
+In questa figura, le succursali dispongono di una propria connessione Internet tramite un dispositivo WAN (SDWAN) software-defined, che invia il traffico attendibile di Microsoft 365 al front door più vicino a livello regionale. Nella sede centrale, il traffico attendibile di Microsoft 365 ignora il dispositivo di sicurezza o proxy e i dispositivi intermedi non vengono più utilizzati.
 
 Ecco come la configurazione ottimizzata risolve i problemi di latenza di una rete aziendale tradizionale:
 
@@ -82,7 +84,7 @@ In questa illustrazione, il traffico di Microsoft 365 deve intraprendere un perc
 
 Grazie alla modalità split tunneling, è possibile configurare il client VPN per escludere tipi specifici di traffico da inviare tramite la connessione VPN alla rete dell'organizzazione.
 
-Per ottimizzare l'accesso alle risorse cloud di Microsoft 365, configurare i client VPN di split tunneling per escludere il traffico agli endpoint di Microsoft 365 di categoria **Ottimizzazione** tramite connessione VPN. Per altre informazioni, vedere le categorie [](../enterprise/microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) di [endpoint di Office 365](../enterprise/microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories) e gli elenchi degli endpoint di categoria Optimize per lo split tunneling.
+Per ottimizzare l'accesso alle risorse cloud di Microsoft 365, configurare i client VPN di split tunneling per escludere il traffico agli endpoint di Microsoft 365 di categoria **Ottimizzazione** tramite connessione VPN. Per altre informazioni, vedere le categorie [](../enterprise/microsoft-365-vpn-implement-split-tunnel.md#implement-vpn-split-tunneling) di endpoint di [Office 365](../enterprise/microsoft-365-network-connectivity-principles.md#new-office-365-endpoint-categories) e gli elenchi degli endpoint di categoria Optimize per lo split tunneling.
 
 Ecco il flusso di traffico risultante per lo split tunneling, in cui la maggior parte del traffico verso le app cloud di Microsoft 365 ignora la connessione VPN.
 
@@ -106,9 +108,9 @@ Di seguito sono disponibili informazioni dettagliate sulla rete specifiche per o
 - [Uscita dalla rete con backhauled](../enterprise/office-365-network-mac-perf-insights.md#backhauled-network-egress)
 - [Prestazioni migliori rilevate per i clienti nelle vicinanze](../enterprise/office-365-network-mac-perf-insights.md#better-performance-detected-for-customers-near-you)
 - [Utilizzo di una porta d'ingresso del servizio Exchange Online non ottimale](../enterprise/office-365-network-mac-perf-insights.md#use-of-a-non-optimal-exchange-online-service-front-door)
-- [Uso di un front door del servizio SharePoint Online non ottimale](../enterprise/office-365-network-mac-perf-insights.md#use-of-a-non-optimal-sharepoint-online-service-front-door)
-- [Bassa velocità di download dalla porta d'ingresso di SharePoint](../enterprise/office-365-network-mac-perf-insights.md#low-download-speed-from-sharepoint-front-door)
-- [Uscita di rete ottimale per gli utenti della Cina](../enterprise/office-365-network-mac-perf-insights.md#china-user-optimal-network-egress)
+- [Utilizzo di una porta d'ingresso del servizio SharePoint Online non ottimale](../enterprise/office-365-network-mac-perf-insights.md#use-of-a-non-optimal-sharepoint-online-service-front-door)
+- [Bassa velocità di download dalla porta principale di SharePoint](../enterprise/office-365-network-mac-perf-insights.md#low-download-speed-from-sharepoint-front-door)
+- [Uscita ottimale della rete dell'utente in Cina](../enterprise/office-365-network-mac-perf-insights.md#china-user-optimal-network-egress)
 
 >[!IMPORTANT]
 >Le informazioni dettagliate sulla rete, i consigli sulle prestazioni e le valutazioni nell'interfaccia di amministrazione di Microsoft 365 sono attualmente in stato di anteprima. È disponibile solo per i tenant di Microsoft 365 che sono stati registrati nel programma di anteprima delle funzionalità.
@@ -121,7 +123,7 @@ Una rete per la distribuzione di contenuti (CDN) basata sul cloud consente di ri
 
 La rete per la distribuzione di contenuti di Office 365 è costituita da diverse reti per la distribuzione di contenuti che consentono di ospitare le risorse statiche in più località o _origini_ e gestirle da reti globali ad alta velocità. A seconda del tipo di contenuto che si desidera ospitare nella  rete CDN di Office 365, è possibile aggiungere origini **pubbliche,** origini private o entrambe.
 
-Quando viene distribuita e configurata, la rete CDN di Office 365 carica le risorse da origini pubbliche e private e le rende disponibili per l'accesso rapido agli utenti che si trovano su Internet.
+Se distribuita e configurata, la rete CDN di Office 365 carica le risorse da origini pubbliche e private e le rende disponibili per l'accesso rapido agli utenti che si trovano in Internet.
 
 ![Rete CDN di Office 365 distribuita per gli utenti](../media/O365-CDN/o365-cdn-flow-transparent.svg "Rete CDN di Office 365 distribuita per gli utenti")
 
@@ -131,7 +133,7 @@ Per ulteriori informazioni, vedere Usare la rete CDN di [Office 365 con SharePoi
 
 Per fare in modo che i client locali, i dispositivi perimetrali e i servizi di analisi dei pacchetti basati su cloud saltino l'elaborazione del traffico attendibile di Microsoft 365, è necessario configurarli con il set di endpoint (intervalli di indirizzi IP e nomi DNS) corrispondenti ai servizi di Microsoft 365. Questi endpoint possono essere configurati manualmente nei firewall e in altri dispositivi di sicurezza perimetrale, nei file PAC per i computer client per ignorare i proxy o nei dispositivi SD-WAN nelle succursali. Tuttavia, gli endpoint cambiano nel tempo, richiedendo una manutenzione manuale continua degli elenchi di endpoint in queste posizioni.
 
-Per automatizzare la gestione della presentazione e delle modifiche per gli endpoint di Microsoft 365 nei file PAC client e nei dispositivi di rete, usare il servizio Web basato su REST dell'indirizzo IP e dell'URL di [Office 365.](../enterprise/microsoft-365-ip-web-service.md) Questo servizio consente di identificare e differenziare meglio il traffico di rete di Microsoft 365, facilitando la valutazione, la configurazione e il rispetto delle modifiche più recenti.
+Per automatizzare la presentazione e la gestione delle modifiche per gli endpoint di Microsoft 365 nei file PAC client e nei dispositivi di rete, usare il servizio Web basato su REST dell'indirizzo IP e dell'URL di [Office 365.](../enterprise/microsoft-365-ip-web-service.md) Questo servizio consente di identificare e differenziare meglio il traffico di rete di Microsoft 365, facilitando la valutazione, la configurazione e il rispetto delle modifiche più recenti.
 
 Puoi usare PowerShell, Python o altri linguaggi per determinare le modifiche apportate agli endpoint nel tempo e configurare i file PAC e i dispositivi di rete perimetrale.
 
@@ -148,7 +150,7 @@ Per ulteriori informazioni, vedere Servizio Web url e indirizzo IP di [Office 36
 Per il tenant di Microsoft 365 con una rete ottimale, è stato determinato:
 
 - Come ottimizzare le prestazioni di rete per gli utenti locali aggiungendo connessioni Internet a tutte le succursali ed eliminando gli hairpin di rete.
-- Come implementare la presentazione automatica degli endpoint attendibili per i file PAC basati su client e i dispositivi e i servizi di rete, inclusi gli aggiornamenti continui (più adatti per le reti aziendali).
+- Come implementare la presentazione automatica degli endpoint attendibili per i file PAC basati su client e i dispositivi e i servizi di rete, inclusi gli aggiornamenti continui (più adatti alle reti aziendali).
 - Come supportare l'accesso dei lavoratori remoti alle risorse locali.
 - Come usare Network Insights
 - Come distribuire la rete CDN di Office 365.
@@ -177,4 +179,4 @@ Su base continuativa, potrebbe essere necessario:
 
 [![Passaggio 3. Sincronizzare le identità e applicare gli accesso sicuri](../media/tenant-management-overview/tenant-management-step-grid-identity.png)](tenant-management-identity.md)
 
-Continuare con [l'identità](tenant-management-identity.md) per sincronizzare gli account e i gruppi locali e applicare gli accesso degli utenti sicuri.
+Continuare con [l'identità](tenant-management-identity.md) per sincronizzare gli account e i gruppi locali e applicare gli accesso degli utenti protetti.

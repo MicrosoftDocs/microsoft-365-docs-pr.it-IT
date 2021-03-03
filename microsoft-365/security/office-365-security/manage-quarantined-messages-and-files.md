@@ -19,12 +19,12 @@ ms.custom:
 description: Gli amministratori possono imparare a visualizzare e gestire i messaggi in quarantena per tutti gli utenti in Exchange Online Protection (EOP). Gli amministratori delle organizzazioni con Microsoft Defender per Office 365 possono anche gestire i file in quarantena in SharePoint Online, OneDrive for Business e Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 22bcf0cefb746e92ccadf8254f4076b47ee475c4
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: b0515d610b38986c2b5339c1cb967a7b150914a2
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287786"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50405819"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Gestire i messaggi e i file messi in quarantena come amministratore in EOP
 
@@ -49,22 +49,22 @@ I messaggi in quarantena vengono visualizzati e gestiti nel Centro sicurezza & c
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Per poter eseguire le procedure contenute in questo articolo è necessario disporre delle autorizzazioni appropriate nel Centro sicurezza e conformità:
+- Per eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni in **Exchange Online:**
   - Per intervenire sui messaggi in quarantena per tutti gli utenti, è necessario essere membri dei gruppi di ruoli **Gestione** **organizzazione,** Amministratore sicurezza o **Amministratore** <sup>\*</sup> quarantena.
   - Per l'accesso in sola lettura ai messaggi in quarantena per  tutti  gli utenti, è necessario essere membri dei gruppi di ruoli Lettore globale o Lettore di sicurezza.
 
-  Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
+  Per ulteriori informazioni, vedere [Autorizzazioni in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
 
   **Note**:
 
-  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie nel centro Sicurezza e conformità _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
+  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 offre agli utenti le autorizzazioni e le autorizzazioni necessarie per altre funzionalità di Microsoft 365.  Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
   - Anche il gruppo di ruoli di **Gestione organizzazione sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre inoltre l'accesso di sola lettura a tale funzionalità.
-  - <sup>\*</sup> I membri del **gruppo di** ruoli Amministratore quarantena devono inoltre essere membri del gruppo di ruoli Di gestione di **Hygiene** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) per eseguire le procedure di quarantena in PowerShell di Exchange Online.
+  - <sup>\*</sup> I membri del **gruppo di** ruoli Amministratore quarantena devono inoltre essere membri del gruppo di ruoli Gestione **di Hygiene** in Exchange [Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) per eseguire le procedure di quarantena in PowerShell di Exchange Online.
 
 - I messaggi in quarantena vengono conservati per un periodo di tempo predefinito prima di essere eliminati automaticamente:
   - 30 giorni per i messaggi messi in quarantena dai criteri di protezione dalla posta indesiderata (posta indesiderata, phishing e posta elettronica in blocco). Questo è il valore predefinito e il valore massimo. Per configurare (inferiore) questo valore, vedere [Configurare i criteri di protezione da posta indesiderata.](configure-your-spam-filter-policies.md)
   - 15 giorni per i messaggi contenenti malware.
-  - 15 giorni per i file messi in quarantena da Allegati sicuri per SharePoint, OneDrive e Microsoft Teams in Defender per Office 365.
+  - 15 giorni per i file messi in quarantena dagli allegati sicuri per SharePoint, OneDrive e Microsoft Teams in Defender per Office 365.
 
   Quando un messaggio scade dalla quarantena, non è possibile recuperarlo.
 
@@ -109,7 +109,7 @@ I messaggi in quarantena vengono visualizzati e gestiti nel Centro sicurezza & c
      - **Phishing:** il verdetto del filtro della posta indesiderata è stato posta elettronica di **phishing** o protezione anti-phishing messo in quarantena il messaggio ([impostazioni di spoofing](set-up-anti-phishing-policies.md#spoof-settings) o [protezione della rappresentazione).](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)
      - **Malware**
      - **Posta indesiderata**
-     - **High Confidence Phish**
+     - **Phish ad alta confidenza**
 
    - **Tipo di criteri**: filtrare i messaggi in base al tipo di criteri:
      - **Criteri antimalware**
@@ -154,9 +154,9 @@ Quando si seleziona un messaggio di posta elettronica nell'elenco, i seguenti de
 
 - **Oggetto**
 
-- **Motivo quarantena:** indica se un messaggio è stato identificato come posta **indesiderata,** inviata in **blocco,** **phish,** corrispondente a una regola del flusso di posta **(** regola di trasporto ) o se è stato identificato come contenente **malware.**
+- **Motivo quarantena:** indica se un messaggio è stato identificato come Posta **indesiderata,** In **blocco,** **Phish,** corrisponde a una regola del flusso di posta **(** regola di trasporto ) o è stato identificato come contenente **malware.**
 
-- **Numero destinatari**
+- **Numero di destinatari**
 
 - **Destinatari**: se il messaggio contiene più destinatari, è necessario fare clic su **Anteprima messaggio** o **Visualizza intestazione messaggio** per visualizzare l'elenco completo dei destinatari.
 
@@ -168,7 +168,7 @@ Quando si seleziona un messaggio di posta elettronica nell'elenco, i seguenti de
 
 ### <a name="take-action-on-quarantined-email"></a>Eseguire azioni sulla posta elettronica in quarantena
 
-Dopo aver selezionato un messaggio, sono disponibili diverse opzioni per le azioni da eseguire sui messaggi **nel** riquadro a comparsa Dettagli:
+Dopo aver selezionato un messaggio, sono disponibili diverse opzioni per le azioni da eseguire sui messaggi nel **riquadro** a comparsa Dettagli:
 
 - **Messaggio di** rilascio: nel riquadro a comparsa visualizzato, scegliere le opzioni seguenti:
 
@@ -260,7 +260,7 @@ Nelle organizzazioni con Defender per Office 365, gli amministratori possono ges
    - **Motivo quarantena:** l'unico valore disponibile è **Malware.**
    - **Tipo di criterio**
 
-Dopo aver trovato un file in quarantena specifico, selezionare il file per visualizzarvi i dettagli ed eseguire un'azione su di esso (ad esempio, visualizzare, rilasciare, scaricare o eliminare il messaggio).
+Dopo aver trovato un file in quarantena specifico, selezionare il file per visualizzarvi i dettagli e intervenire su di esso (ad esempio, visualizzare, rilasciare, scaricare o eliminare il messaggio).
 
 #### <a name="view-quarantined-file-details"></a>Visualizzare i dettagli dei file in quarantena
 
@@ -278,7 +278,7 @@ Quando si seleziona un file nell'elenco, nel  riquadro a comparsa Dettagli vengo
 - **Organizzazione** ID univoco dell'organizzazione.
 - **Data ultima modifica**
 - **Modificato da:** l'ultimo utente che ha modificato il file.
-- **Valore SHA-256 (Secure Hash Algorithm) a 256 bit:** è possibile utilizzare questo valore hash per identificare il file in altri archivi di reputazione o in altre posizioni nell'ambiente.
+- **Valore SHA-256 (Secure Hash Algorithm) a 256 bit:** è possibile utilizzare questo valore hash per identificare il file in altri archivi di reputazione o in altre posizioni dell'ambiente.
 
 ### <a name="take-action-on-quarantined-files"></a>Eseguire un'azione sui file in quarantena
 

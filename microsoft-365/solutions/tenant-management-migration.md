@@ -11,15 +11,17 @@ ms.collection:
 - M365-subscription-management
 - Strat_O365_Enterprise
 - m365solution-tenantmanagement
+- tenant-management
+- m365solution-scenario
 ms.custom:
 - Ent_Solutions
 description: Eseguire la migrazione dei dispositivi Windows, delle app client di Office e dei server Office per i tenant di Microsoft 365.
-ms.openlocfilehash: 3230f7e1087b573691f04b9335a15b4ad6d20b65
-ms.sourcegitcommit: 99a7354e6a6b4d9d5202674ef57852d52a43fef6
+ms.openlocfilehash: 85f1c0d927b881c4d1526ce538ae54f5954a0664
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "49908627"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406361"
 ---
 # <a name="step-4-migration-for-your-microsoft-365-for-enterprise-tenants"></a>Passaggio 4. Migrazione per i tenant di Microsoft 365 per le aziende
 
@@ -36,7 +38,7 @@ Per ottimizzare il valore aziendale della famiglia di prodotti integrata di Micr
 
 ## <a name="migrating-to-windows-10"></a>Migrazione a Windows 10
 
-Ogni licenza di Microsoft 365 per le aziende include una licenza per Windows 10 Enterprise. Per eseguire la migrazione dei dispositivi che eseguono Windows 7 o Windows 8.1, puoi eseguire un aggiornamento sul posto. Il supporto per Windows 7 è terminato *il 14 gennaio 2020.* 
+Ogni licenza di Microsoft 365 per le aziende include una licenza per Windows 10 Enterprise. Per eseguire la migrazione dei dispositivi che eseguono Windows 7 o Windows 8.1, puoi eseguire un aggiornamento sul posto. Il supporto per Windows 7 è terminato il *14 gennaio 2020.* 
 
 Per altri metodi di installazione di Windows 10 Enterprise oltre a un aggiornamento sul posto, vedi Scenari di distribuzione [di Windows 10.](https://docs.microsoft.com/windows/deployment/windows-10-deployment-scenarios) È anche possibile [pianificare la distribuzione di Windows 10](https://aka.ms/planforwin10deployment) autonomamente.
 
@@ -64,7 +66,7 @@ Utilizzare le risorse seguenti per informazioni sulla migrazione di utenti e dat
 
 ## <a name="transition-your-entire-organization"></a>Transizione dell'intera organizzazione
 
-Per ottenere un quadro migliore di come spostare l'intera organizzazione nei prodotti e servizi in Microsoft 365 per le aziende, scaricare questo poster di transizione:
+Per ottenere un quadro più completo di come spostare l'intera organizzazione nei prodotti e servizi in Microsoft 365 per le aziende, scaricare questo poster sulla transizione:
 
 [![Immagine che mostra il poster transizione a Microsoft 365.](../media/microsoft-365-overview/transition-org-to-m365.png)](https://download.microsoft.com/download/2/c/7/2c7bcc04-aae3-4604-9707-1ffff66b9851/transition-org-to-m365.pdf)
 

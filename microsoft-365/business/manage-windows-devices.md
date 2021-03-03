@@ -24,12 +24,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Informazioni su come abilitare Microsoft 365 per proteggere i dispositivi Windows 10 aggiunti ad Active Directory locali in pochi passaggi.
-ms.openlocfilehash: 6275c6c4be9cd9631ab095f8b0e1b39683022bb2
-ms.sourcegitcommit: d988faa292c2661ffea43c7161aef92b2b4b99bc
+ms.openlocfilehash: 0b597110447272be128bfe1866234ac25a8e67e6
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/04/2020
-ms.locfileid: "46560844"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407079"
 ---
 # <a name="enable-domain-joined-windows-10-devices-to-be-managed-by-microsoft-365-business-premium"></a>Abilitare la gestione dei dispositivi Windows 10 aggiunti a un dominio da Microsoft 365 Business Premium
 
@@ -53,7 +53,7 @@ Per [la procedura, vedere](manage-domain-users.md) Sincronizzare gli utenti di d
 Vai a Endpoint [Manager](https://endpoint.microsoft.com/#blade/Microsoft_Intune_Enrollment/EnrollmentMenu/overview) e nella pagina Di Microsoft  Intune seleziona Registrazione **dispositivo,** quindi nella pagina Panoramica assicurati che l'autorità **MDM** sia **Intune.**
 
 - Se **l'autorità MDM** **è None,** fai clic **sull'autorità MDM** per impostarla su **Intune.**
-- Se l'autorità **MDM** è **Microsoft Office 365,** vai a Dispositivi registrare i dispositivi e usa la finestra di dialogo Aggiungi autorità MDM a destra per aggiungere l'autorità MDM di Intune (la finestra di dialogo Aggiungi autorità MDM è disponibile solo se l'autorità MDM è impostata su Microsoft Office  >   365).    
+- Se l'autorità **MDM** è **Microsoft Office 365,** vai a Dispositivi registrati dispositivi e usa la finestra di dialogo Aggiungi autorità MDM a destra per aggiungere l'autorità MDM di Intune (la finestra di dialogo Aggiungi autorità MDM è disponibile solo se l'autorità MDM è impostata su Microsoft Office  >   365).    
 
 ## <a name="2-verify-azure-ad-is-enabled-for-joining-computers"></a>2. Verificare che Azure AD sia abilitato per l'aggiunta di computer
 
@@ -67,7 +67,7 @@ Vai a Endpoint [Manager](https://endpoint.microsoft.com/#blade/Microsoft_Intune_
 
 ## <a name="3-verify-azure-ad-is-enabled-for-mdm"></a>3. Verificare che Azure AD sia abilitato per MDM
 
-- Accedere all'interfaccia di amministrazione <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>  e selezionare **Endpoint Managemen** t (selezionare **Mostra tutto** se **Endpoint Manager** non è visibile)
+- Passare all'interfaccia di amministrazione e <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>  selezionare **Endpoint Managemen** t (selezionare **Mostra tutto** se Endpoint **Manager** non è visibile)
 - **Nell'interfaccia di amministrazione di Microsoft Endpoint Manager** vai a **Registrazione** automatica dispositivi  >    >  **Windows.**  >  
 - Verificare che l'ambito utente MDM sia abilitato.
 
@@ -105,14 +105,14 @@ Il primo comando stabilisce una connessione con il cloud Microsoft e, quando ric
 
 ## <a name="get-the-latest-administrative-templates"></a>Ottenere i modelli amministrativi più recenti
 
-Se non vedi il criterio Abilita la registrazione automatica MDM con le credenziali predefinite di **Azure AD,** è possibile che non sia installato ADMX per Windows 10, versione 1803, versione 1809 o versione 1903. Per risolvere il problema, segui questi passaggi (nota: la versione più recente di MDM.admx è compatibile con le versioni precedenti):
+Se non vedi il criterio Abilita la registrazione automatica MDM con le credenziali predefinite di **Azure AD,** è possibile che non sia installato ADMX per Windows 10, versione 1803 o successiva. Per risolvere il problema, segui questi passaggi (nota: la versione più recente di MDM.admx è compatibile con le versioni precedenti):
 
-1.  Download: [Modelli amministrativi (admx) per l'aggiornamento di windows 10 maggio 2019 (1903).](https://www.microsoft.com/download/details.aspx?id=58495&WT.mc_id=rss_alldownloads_all)
-2.  Installare il pacchetto nel controller di dominio primario (PDC).
-3.  Passa alla cartella, a seconda della versione: **C:\Programmi (x86)\Microsoft Group Policy\Windows 10 May 2019 Update (1903) v3.**
+1.  Download: [Modelli amministrativi (admx) per Windows 10 Ottobre 2020 Update (20H2)](https://www.microsoft.com/download/102157).
+2.  Installare il pacchetto in un controller di dominio.
+3.  Passare alla cartella, a seconda della versione dei modelli amministrativi: **C:\Programmi (x86)\Microsoft Group Policy\Windows 10 October 2020 Update (20H2)**.
 4.  Rinominare la **cartella Policy Definitions** nel percorso precedente a **PolicyDefinitions.**
-5.  Copiare **la cartella PolicyDefinitions** **in C:\Windows\SYSVOL\domain\Policies.** 
-    -   Se si prevede di usare un archivio criteri centrale per l'intero dominio, aggiungere il contenuto di PolicyDefinitions.
-6.  Riavviare il controller di dominio primario perché il criterio sia disponibile. Questa procedura funzionerà anche per qualsiasi versione futura.
+5.  Copiare **la cartella PolicyDefinitions** nella condivisione SYSVOL, per impostazione predefinita in **C:\Windows\SYSVOL\domain\Policies.** 
+    -   Se si prevede di usare un archivio criteri centrale per l'intero dominio, aggiungere il contenuto di PolicyDefinitions in questa posizione.
+6.  Nel caso in cui siano presenti diversi controller di dominio, attendere la replica di SYSVOL per la disponibilità dei criteri. Questa procedura funzionerà anche per qualsiasi versione futura dei modelli amministrativi.
 
-A questo punto dovresti essere in grado di vedere il criterio Abilitare la registrazione **automatica in MDM usando le credenziali predefinite di Azure AD** disponibili.
+A questo punto dovresti essere in grado di vedere il criterio Abilitare la registrazione **automatica mdm usando le credenziali predefinite di Azure AD** disponibili.

@@ -21,12 +21,12 @@ ms.custom: seo-marvel-apr2020
 ms.reviewer: vippand
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5934abb3afec3253da78c680735730b63ddb5701
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 2fd999c27598db6f17073cfe82e4c4f91ffb1667
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287354"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407205"
 ---
 # <a name="whats-new-in-microsoft-defender-for-office-365"></a>Novità di Microsoft Defender per Office 365
 
@@ -40,6 +40,12 @@ Questo articolo elenca le nuove funzionalità della versione più recente di Mic
 
 > [!TIP]
 > Non si dispone ancora di Microsoft Defender per Office 365? [Contattare le vendite per avviare una versione di valutazione.](https://info.microsoft.com/ww-landing-M365SMB-web-contact.html)
+
+## <a name="februarymarch-2021"></a>Febbraio/marzo 2021 
+
+- Integrazione dell'ID avviso (ricerca con ID avviso e Alert-Explorer spostamento) nelle [esperienze di ricerca](threat-explorer.md)
+- Aumento dei limiti per l'esportazione di record da 9990 a 200.000 in [esperienze di ricerca](threat-explorer.md)
+- Estensione della conservazione dei dati di Explorer (e dei rilevamenti in tempo reale) e del limite di ricerca per i tenant di prova da 7 (limite precedente) a 30 giorni nelle esperienze [di ricerca](threat-explorer.md)
 
 ## <a name="december-2020"></a>Dicembre 2020
 
@@ -59,7 +65,7 @@ Questo articolo elenca le nuove funzionalità della versione più recente di Mic
 
 ## <a name="julyaugust-2020"></a>Luglio/agosto 2020
 
-- [Miglioramenti dell'esperienza di ricerca](threat-explorer.md#improvements-to-threat-explorer-and-real-time-detections) (Microsoft Defender per Office 365 Piano 1 o Piano 2)
+- [Miglioramenti dell'esperienza di ricerca](threat-explorer.md#improvements-to-threat-hunting-experience) (Microsoft Defender per Office 365 Piano 1 o Piano 2)
 - [Applicare facilmente le impostazioni consigliate usando criteri di sicurezza preimpostati](preset-security-policies.md)
 
 ## <a name="marchapril-2020"></a>Marzo/aprile 2020
@@ -111,7 +117,7 @@ Questo articolo elenca le nuove funzionalità della versione più recente di Mic
 
 ## <a name="microsoft-defender-for-office-365-plan-1-and-plan-2"></a>Microsoft Defender per Office 365 Piano 1 e Piano 2
 
-Si è a sapere che Microsoft Defender per Office 365 è disponibile in due piani? [Ulteriori informazioni su cosa include ogni piano.](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2)
+Si è a sapere che Microsoft Defender per Office 365 è disponibile in due piani? [Ulteriori informazioni sugli elementi inclusi in ogni piano.](office-365-atp.md#microsoft-defender-for-office-365-plan-1-and-plan-2)
 
 ## <a name="see-also"></a>Vedere anche
 

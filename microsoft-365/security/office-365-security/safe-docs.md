@@ -16,12 +16,12 @@ ms.collection:
 description: Informazioni su Documenti sicuri in Microsoft 365 E5 o Microsoft 365 E5 Security.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a3f4ed3535c7e53774b9b567b50f7c06e99cef9d
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 75dfa9e5687a4c4b561067190e7ce338074b2f66
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288586"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407421"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Sicurezza documenti in Microsoft 365 E5
 
@@ -43,21 +43,21 @@ Documenti sicuri è una funzionalità di Microsoft 365 E5 o Microsoft 365 E5 Sec
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
-- È necessario disporre delle autorizzazioni nel Centro sicurezza e conformità per poter eseguire le procedure contenute in questo articolo:
+- Per eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni in **Exchange Online:**
   - Per configurare le impostazioni di Documenti sicuri, è necessario essere membri dei gruppi di ruoli **Gestione** organizzazione o **Amministratore** sicurezza.
   - Per l'accesso in sola lettura alle impostazioni di  Documenti sicuri, è necessario essere membri dei gruppi di ruoli Lettore globale o Lettore **di** sicurezza.
 
-  Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
+  Per ulteriori informazioni, vedere [Autorizzazioni in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
 
   > [!NOTE]
   >
-  > - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie nel centro Sicurezza e conformità _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
+  > - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 offre agli utenti le autorizzazioni e le autorizzazioni necessarie per altre funzionalità di Microsoft 365.  Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
   >
   > - Anche il gruppo di ruoli di **Gestione organizzazione sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre inoltre l'accesso di sola lettura a tale funzionalità.
 
 ### <a name="how-does-microsoft-handle-your-data"></a>In che modo Microsoft gestisce i dati?
 
-Per proteggere l'utente, i documenti sicuri inviano i file al cloud [di Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) per l'analisi. I dettagli su come Microsoft Defender per Endpoint gestisce i dati sono disponibili qui: [Microsoft Defender per l'archiviazione e la privacy dei dati degli endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
+Per proteggere l'utente, Documenti sicuri invia i file al cloud [Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) per l'analisi. I dettagli su come Microsoft Defender per Endpoint gestisce i dati sono disponibili qui: [Microsoft Defender per l'archiviazione e la privacy dei dati degli endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/data-storage-privacy)
 
 I file inviati da Documenti sicuri non vengono conservati in Defender oltre il tempo necessario per l'analisi (in genere, meno di 24 ore).
 
@@ -98,7 +98,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Set-AtpPoli
 
 Per verificare di aver abilitato e configurato Documenti sicuri, eseguire una delle operazioni seguenti:
 
-- Nel Centro sicurezza & conformità passare  a Allegati sicuri \>  \> **ATP**   dei criteri di  gestione delle minacce, fare clic su Impostazioni globali e verificare l'opzione Attiva documenti sicuri per i client di Office e Consenti agli utenti di fare clic su Visualizzazione protetta anche se Documenti sicuri identifica il file come impostazioni dannose.
+- Nel Centro sicurezza & conformità passare  a Allegati sicuri \>  \> **atp**   dei criteri di  gestione delle minacce, fare clic su Impostazioni globali e verificare l'opzione Attiva documenti sicuri per i client di Office e Consenti agli utenti di fare clic su Visualizzazione protetta anche se Documenti sicuri identifica il file come impostazioni dannose.
 
 - Eseguire il comando seguente in PowerShell di Exchange Online e verificare i valori delle proprietà:
 

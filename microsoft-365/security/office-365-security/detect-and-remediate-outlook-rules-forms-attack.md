@@ -18,12 +18,12 @@ description: Informazioni su come riconoscere e correggere gli attacchi iniezion
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e22cfa97ae59fdd094c161cdaeff899dc1dd6507
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 30ddd5f57dee2156504211e76304d346a63e192d
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286394"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406701"
 ---
 # <a name="detect-and-remediate-outlook-rules-and-custom-forms-injections-attacks"></a>Rilevare e correggere gli attacchi iniezioni di regole e moduli personalizzati di Outlook
 
@@ -34,70 +34,69 @@ ms.locfileid: "50286394"
 
 ## <a name="what-is-the-outlook-rules-and-custom-forms-injection-attack"></a>Che cos'è l'attacco di inserimento di regole e moduli personalizzati di Outlook?
 
-Dopo che un utente malintenzionato ha violato un account nella tenancy e si è insediato, ci sarà il tentativo di stabilire un modo per rimanere o un modo per rientrare dopo che sono stati individuati e rimossi. Questa operazione viene definita creazione di un meccanismo di persistenza. A tale scopo, è possibile utilizzare le regole di Outlook o inserire moduli personalizzati in Outlook.
-In entrambi i casi, la regola o il modulo viene sincronizzato dal servizio cloud fino al client desktop, in modo che un formato completo e la nuova installazione del software client non eliminino il meccanismo di inserimento. Questo perché quando il software client Outlook si riconnette alla cassetta postale nel cloud, scarica nuovamente le regole e i moduli dal cloud. Una volta che le regole e i moduli sono stati installati, l'utente malintenzionato le usa per eseguire codice remoto o personalizzato, in genere per installare malware nel computer locale. Il malware quindi ruba nuovamente le credenziali o esegue altre attività illecite.
-La buona notizia è che se si mantiene i client patch alla versione più recente, non si è vulnerabili alla minaccia in quanto le impostazioni predefinite del client Outlook bloccano entrambi i meccanismi.
+Dopo che un utente malintenzionato ottiene l'accesso all'organizzazione, tenterà di stabilire una base per rimanere o rientrare dopo essere stato individuato. Questa attività viene definita *creazione di un meccanismo di persistenza.* Esistono due modi in cui un utente malintenzionato può utilizzare Outlook per stabilire un meccanismo di persistenza:
+
+- Sfruttando le regole di Outlook.
+- Inserimento di moduli personalizzati in Outlook.
+
+La reinstallazione di Outlook o la configurazione di un nuovo computer da parte dell'utente interessato non sarà utile. Quando la nuova installazione di Outlook si connette alla cassetta postale, tutte le regole e i moduli vengono sincronizzati dal cloud. Le regole o i moduli sono in genere progettati per eseguire codice remoto e installare malware nel computer locale. Il malware ruba le credenziali o esegue altre attività illecite.
+
+La buona notizia è che, se si mantiene i client outlook patch alla versione più recente, non si è vulnerabili alla minaccia in quanto le impostazioni predefinite del client Outlook bloccano entrambi i meccanismi.
 
 Gli attacchi in genere seguono questi modelli:
 
 **L'exploit delle regole:**
 
-1. L'autore dell'attacco ruba il nome utente e la password di uno degli utenti.
+1. L'utente malintenzionato ruba le credenziali di un utente.
 
-2. L'utente malintenzionato accede quindi alla cassetta postale di Exchange degli utenti. La cassetta postale può essere in Exchange online o in Exchange locale.
+2. L'autore dell'attacco accede alla cassetta postale di Exchange dell'utente (Exchange Online o Exchange locale).
 
-3. L'autore dell'attacco crea quindi una regola di inoltro nella cassetta postale che viene attivata quando la cassetta postale riceve un messaggio di posta elettronica che corrisponde ai criteri della regola. I criteri della regola e il contenuto del messaggio di posta elettronica trigger sono personalizzati l'uno per l'altro.
+3. L'autore dell'attacco crea una regola di inoltro della posta in arrivo nella cassetta postale. La regola di inoltro viene attivata quando la cassetta postale riceve un messaggio specifico dall'utente malintenzionato che soddisfa le condizioni della regola. Le condizioni della regola e il formato dei messaggi sono personalizzati.
 
-4. L'utente malintenzionato invia il messaggio di posta elettronica trigger all'utente che utilizza normalmente la propria cassetta postale.
+4. L'utente malintenzionato invia il messaggio di posta elettronica trigger alla cassetta postale compromessa, che viene ancora utilizzata normalmente dall'utente ignara.
 
-5. Quando il messaggio di posta elettronica viene ricevuto, la regola viene attivata. L'azione della regola è in genere l'avvio di un'applicazione in un server remoto (WebDAV).
+5. Quando la cassetta postale riceve un messaggio che soddisfa le condizioni della regola, viene applicata l'azione della regola. In genere, l'azione della regola è avviare un'applicazione in un server Remoto (WebDAV).
 
-6. L'applicazione installa in genere malware, ad esempio [Powershell,](https://www.powershellempire.com/)localmente nel computer dell'utente.
+6. In genere, l'applicazione installa malware nel computer dell'utente ,ad esempio [PowerShell 2013.](https://www.powershellempire.com/)
 
-7. Il malware consente all'utente malintenzionato di rubare nuovamente il nome utente e la password o altre credenziali dal computer locale ed eseguire altre attività dannose.
+7. Il malware consente all'utente malintenzionato di rubare (o rubare di nuovo) il nome utente e la password o altre credenziali dal computer locale ed eseguire altre attività dannose.
 
 **L'exploit dei moduli:**
 
-1. L'autore dell'attacco ruba il nome utente e la password di uno degli utenti.
+1. L'utente malintenzionato ruba le credenziali di un utente.
 
-2. L'utente malintenzionato accede quindi alla cassetta postale di Exchange degli utenti. La cassetta postale può essere in Exchange online o in Exchange locale.
+2. L'autore dell'attacco accede alla cassetta postale di Exchange dell'utente (Exchange Online o Exchange locale).
 
-3. L'autore dell'attacco crea quindi un modello di modulo di posta elettronica personalizzato e lo inserisce nella cassetta postale dell'utente. Il modulo personalizzato viene attivato quando la cassetta postale riceve un messaggio di posta elettronica che richiede che la cassetta postale carichi il modulo personalizzato. Il modulo personalizzato e il formato dei messaggi di posta elettronica sono personalizzati l'uno per l'altro.
-4. L'utente malintenzionato invia il messaggio di posta elettronica trigger all'utente, che utilizza normalmente la propria cassetta postale.
+3. L'autore dell'attacco inserisce un modello di modulo di posta elettronica personalizzato nella cassetta postale dell'utente. Il modulo personalizzato viene attivato quando la cassetta postale riceve un messaggio specifico dall'utente malintenzionato che richiede alla cassetta postale di caricare il modulo personalizzato. Il modulo personalizzato e il formato del messaggio sono personalizzati l'uno per l'altro.
 
-5. Quando il messaggio di posta elettronica viene ricevuto, il modulo viene caricato. Il modulo avvia un'applicazione in un server Remoto (WebDAV).
+4. L'utente malintenzionato invia il messaggio di posta elettronica trigger alla cassetta postale compromessa, che viene ancora utilizzata normalmente dall'utente ignara.
 
-6. L'applicazione installa in genere malware, ad esempio [Powershell,](https://www.powershellempire.com/)localmente nel computer dell'utente.
+5. Quando la cassetta postale riceve il messaggio, la cassetta postale carica il modulo richiesto. Il modulo avvia un'applicazione in un server Remoto (WebDAV).
 
-7. Il malware consente all'utente malintenzionato di rubare nuovamente il nome utente e la password o altre credenziali dal computer locale ed eseguire altre attività dannose.
+6. In genere, l'applicazione installa malware nel computer dell'utente ,ad esempio [PowerShell 2013.](https://www.powershellempire.com/)
+
+7. Il malware consente all'utente malintenzionato di rubare (o rubare di nuovo) il nome utente e la password o altre credenziali dal computer locale ed eseguire altre attività dannose.
 
 ## <a name="what-a-rules-and-custom-forms-injection-attack-might-look-like-office-365"></a>Quale potrebbe essere l'aspetto di un attacco di inserimento di regole e moduli personalizzati come Office 365?
 
 È improbabile che questi meccanismi di persistenza siano notati dagli utenti e in alcuni casi potrebbero anche essere invisibili. Questo articolo spiega come cercare uno dei sette segni (Indicatori di compromissione) elencati di seguito. Se si trova uno di questi elementi, è necessario eseguire la procedura di correzione.
 
-- Indicatori della compromissione delle regole:
-
+- **Indicatori della compromissione delle regole:**
   - L'azione regola è avviare un'applicazione.
-
   - La regola fa riferimento a un FILE EXE, ZIP o URL.
-
   - Nel computer locale cercare i nuovi processi avviati dal PID di Outlook.
 
-- Indicatori della compromissione dei moduli personalizzati:
-
-  - Modulo personalizzato presente salvato come classe messaggio personalizzata.
-
+- **Indicatori della compromissione dei moduli personalizzati:**
+  - Moduli personalizzati presenti salvati come classe messaggio personalizzata.
   - La classe messaggio contiene codice eseguibile.
-
-  - In genere archiviati nelle cartelle Libreria moduli personali o Posta in arrivo.
-
+  - In genere, i moduli dannosi vengono archiviati nelle cartelle Libreria moduli personali o Posta in arrivo.
   - Il modulo è denominato IPM. Nota. [nome personalizzato].
 
 ## <a name="steps-for-finding-signs-of-this-attack-and-confirming-it"></a>Passaggi per individuare i segni di questo attacco e confermarlo
 
-È possibile utilizzare uno di questi due metodi per confermare l'attacco:
+È possibile utilizzare uno dei metodi seguenti per confermare l'attacco:
 
-- Esaminare manualmente le regole e i moduli per ogni cassetta postale utilizzando il client Outlook. Questo metodo è accurato, ma è possibile controllare solo l'utente della cassetta postale alla volta che può richiedere molto tempo se si dispone di molti utenti da controllare. Può anche causare una violazione del computer da cui si esegue il controllo.
+- Esaminare manualmente le regole e i moduli per ogni cassetta postale utilizzando il client Outlook. Questo metodo è accurato, ma è possibile controllare una sola cassetta postale alla volta. Questo metodo può richiedere molto tempo se hai molti utenti da controllare e potrebbe anche infettare il computer in uso.
 
 - Utilizzare lo script [Get-AllTenantRulesAndForms.ps1](https://github.com/OfficeDev/O365-InvestigationTooling/blob/master/Get-AllTenantRulesAndForms.ps1) PowerShell per eseguire automaticamente il dump di tutte le regole di inoltro della posta e i moduli personalizzati per tutti gli utenti della tenancy. Questo è il metodo più rapido e sicuro con il minor sovraccarico possibile.
 
@@ -117,11 +116,11 @@ Gli attacchi in genere seguono questi modelli:
 
 1. Aprire il client Outlook dell'utente come utente.
 
-2. Seguire i passaggi descritti in [Mostra la scheda Sviluppo](https://support.microsoft.com/office/e1192344-5e56-4d45-931b-e5fd9bea2d45) per la versione di Outlook degli utenti.
+2. Seguire i passaggi descritti in [Mostra la scheda Sviluppo](https://support.microsoft.com/office/e1192344-5e56-4d45-931b-e5fd9bea2d45) per la versione di Outlook dell'utente.
 
 3. Aprire la scheda sviluppatore ora visibile in Outlook e fare clic **su Progetta modulo.**
 
-4. Selezionare Posta **in** arrivo **dall'elenco Cerca in.** Cercare eventuali moduli personalizzati. I moduli personalizzati sono abbastanza rari che, se si dispone di moduli personalizzati, vale la pena avere un aspetto più approfondito.
+4. Selezionare Posta **in** arrivo dall'elenco **Cerca in.** Cercare eventuali moduli personalizzati. I moduli personalizzati sono abbastanza rari che, se si dispone di moduli personalizzati, vale la pena avere un aspetto più approfondito.
 
 5. Analizzare eventuali moduli personalizzati, in particolare quelli contrassegnati come nascosti.
 
@@ -133,7 +132,7 @@ Il modo più semplice per verificare un attacco a regole o moduli personalizzati
 
 #### <a name="pre-requisites"></a>Prerequisiti
 
-Per eseguire lo script, è necessario disporre di diritti di amministratore globale perché lo script si connette a tutte le cassette postali della tenancy per leggere le regole e i moduli.
+Sarà necessario disporre dei diritti di amministratore globale per eseguire lo script perché lo script si connette a tutte le cassette postali del tenancy per leggere le regole e i moduli.
 
 1. Accedi al computer da cui eseguirai lo script con diritti di amministratore locale.
 
@@ -151,9 +150,9 @@ Per eseguire lo script, è necessario disporre di diritti di amministratore glob
 
   - **IsPotentiallyMalicious (colonna D):** se questo valore è "TRUE", è probabile che la regola sia dannosa.
 
-  - **ActionCommand (colonna G):** se viene elencata un'applicazione o un file con estensione exe, zip o una voce che fa riferimento a un URL, che non dovrebbe essere presente, è probabile che la regola sia dannosa.
+  - **ActionCommand (colonna G):** se questa colonna elenca un'applicazione o un file con estensioni .exe o .zip o una voce sconosciuta che fa riferimento a un URL, è probabile che la regola sia dannosa.
 
-- **MailboxFormsExport-*aaaa-mm-gg*.csv:** in generale, l'utilizzo di moduli personalizzati è molto raro. Se nella cartella di lavoro è presente una cartella di lavoro, aprire la cassetta postale dell'utente ed esaminare il modulo stesso. Se l'organizzazione non l'ha inserita intenzionalmente, è probabile che sia dannosa.
+- **MailboxFormsExport-*aaaa-mm-gg*.csv:** in generale, l'utilizzo di moduli personalizzati è raro. Se nella cartella di lavoro è presente una cartella di lavoro, aprire la cassetta postale dell'utente ed esaminare il modulo stesso. Se l'organizzazione non l'ha inserita intenzionalmente, è probabile che sia dannosa.
 
 ## <a name="how-to-stop-and-remediate-the-outlook-rules-and-forms-attack"></a>Come arrestare e correggere l'attacco alle regole e ai moduli di Outlook
 
@@ -161,11 +160,11 @@ Se si trovano prove di uno di questi attacchi, la correzione è semplice, basta 
 
 ### <a name="using-outlook"></a>Utilizzo di Outlook
 
-1. Identificare tutti i dispositivi utilizzati dall'utente con Outlook. Dovranno essere tutti puliti dal potenziale malware. Non consentire all'utente di accedere e usare la posta elettronica finché non vengono puliti tutti i dispositivi.
+1. Identificare tutti i dispositivi utilizzati dall'utente con Outlook. Dovranno essere tutti puliti da potenziali malware. Non consentire all'utente di accedere e usare la posta elettronica finché non vengono puliti tutti i dispositivi.
 
 2. Seguire i passaggi descritti in [Eliminare una regola](https://support.microsoft.com/office/2f0e7139-f696-4422-8498-44846db9067f) per ogni dispositivo.
 
-3. Se non si è sicuri della presenza di altro malware, è possibile formattare e installare di nuovo tutto il software nel dispositivo. Per i dispositivi mobili puoi seguire i passaggi del produttore per ripristinare l'immagine di fabbrica del dispositivo.
+3. Se non si è sicuri della presenza di altro malware, è possibile formattare e reinstallare tutto il software nel dispositivo. Per i dispositivi mobili, puoi seguire i passaggi del produttore per ripristinare l'immagine di fabbrica del dispositivo.
 
 4. Installare le versioni più aggiornate di Outlook. Tenere presente che la versione corrente di Outlook blocca entrambi i tipi di attacco per impostazione predefinita.
 
@@ -195,7 +194,7 @@ Esistono due cmdlet di PowerShell remoti che è possibile utilizzare per rimuove
 
 ### <a name="first-protect-your-accounts"></a>Prima di tutto: proteggere gli account
 
-Gli exploit regole e moduli vengono usati da un utente malintenzionato solo dopo aver rubato o violato uno degli account dell'utente. Pertanto, il primo passaggio per impedire l'uso di questi exploit nell'organizzazione consiste nel proteggere in modo aggressivo gli account utente. Alcuni dei modi più comuni in cui vengono violati gli account sono gli attacchi di phishing [o di irrorazione delle password.](https://www.dabcc.com/microsoft-defending-against-password-spray-attacks/)
+Gli exploit regole e moduli vengono usati da un utente malintenzionato solo dopo aver rubato o violato uno degli account dell'utente. Pertanto, il primo passaggio per impedire l'uso di questi exploit nell'organizzazione consiste nel proteggere in modo aggressivo gli account utente. Alcuni dei modi più comuni in cui vengono violati gli account sono tramite attacchi di phishing [o password spray.](https://www.microsoft.com/security/blog/2020/04/23/protecting-organization-password-spray-attacks/)
 
 Il modo migliore per proteggere gli account utente, in particolare gli account amministratore, è configurare l'autenticazione a più [fattori per gli utenti.](../../admin/security-and-compliance/set-up-multi-factor-authentication.md) È inoltre consigliabile:
 
@@ -203,11 +202,11 @@ Il modo migliore per proteggere gli account utente, in particolare gli account a
 
   - **Più tentativi** di accesso non riusciti: questo criterio consente di profilire l'ambiente e di attivare avvisi quando gli utenti eseguono più attività di accesso non riuscite in una singola sessione rispetto alla linea di base appresa, che potrebbe indicare un tentativo di violazione.
 
-  - **Viaggi impossibili:** questo criterio consente di profilire l'ambiente e di attivare avvisi quando le attività vengono rilevate dallo stesso utente in posizioni diverse in un periodo di tempo inferiore al tempo di viaggio previsto tra le due posizioni. Ciò potrebbe indicare che un utente diverso usa le stesse credenziali. Il rilevamento di questo comportamento anomalo richiede un periodo di apprendimento iniziale di sette giorni durante il quale apprende il modello di attività di un nuovo utente.
+  - **Viaggi impossibili:** questo criterio consente di profilire l'ambiente e di attivare avvisi quando le attività vengono rilevate dallo stesso utente in posizioni diverse in un periodo di tempo inferiore al tempo di viaggio previsto tra le due posizioni. Ciò potrebbe indicare che un utente diverso utilizza le stesse credenziali. Il rilevamento di questo comportamento anomalo richiede un periodo di apprendimento iniziale di sette giorni durante il quale apprende il modello di attività di un nuovo utente.
 
   - **Attività impersonata** insolita (da parte dell'utente): questo criterio consente di profilire l'ambiente e di attivare avvisi quando gli utenti eseguono più attività rappresentate in una singola sessione rispetto alla previsione appresa, che potrebbe indicare un tentativo di violazione.
 
-- Sfruttare uno strumento come [Office 365 Secure Score per](https://securescore.office.com/) gestire le configurazioni e i comportamenti di sicurezza dell'account.
+- Usare uno strumento come [Office 365 Secure Score](https://securescore.office.com/) per gestire le configurazioni e i comportamenti di sicurezza degli account.
 
 ### <a name="second-keep-your-outlook-clients-current"></a>Secondo: Mantenere i client Outlook sempre attivi
 
@@ -223,13 +222,13 @@ Per ulteriori informazioni sulle singole patch di sicurezza, vedere:
 
 - [Patch di sicurezza di Outlook 2016](https://support.microsoft.com/help/3191883)
 
-- [Patch di sicurezza di Outlook 2013](https://support.microsoft.com/help/3191938)
+- [Patch di protezione di Outlook 2013](https://support.microsoft.com/help/3191938)
 
 ### <a name="third-monitor-your-outlook-clients"></a>Terzo: monitorare i client Outlook
 
-Tieni presente che anche con le patch e gli aggiornamenti installati, un utente malintenzionato può modificare la configurazione del computer locale per abilitare nuovamente il comportamento "Avvia applicazione". È possibile utilizzare [Gestione avanzata Criteri di gruppo](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/) per monitorare e applicare i criteri del computer locale ai client.
+Tieni presente che anche con le patch e gli aggiornamenti installati, è possibile che un utente malintenzionato modifini la configurazione del computer locale per abilitare nuovamente il comportamento "Avvia applicazione". È possibile utilizzare [Gestione avanzata Criteri di gruppo](https://docs.microsoft.com/microsoft-desktop-optimization-pack/agpm/) per monitorare e applicare i criteri del computer locale ai client.
 
-Puoi vedere se "Avvia applicazione" è stato ri-abilitato tramite una sostituzione nel Registro di sistema usando le informazioni in Come visualizzare il Registro di sistema usando le versioni a [64 bit di Windows.](https://support.microsoft.com/help/305097) Controllare queste sottochiavi:
+Puoi vedere se "Avvia applicazione" è stato ri-abilitato tramite un override nel Registro di sistema usando le informazioni in Come visualizzare il Registro di sistema usando le versioni a [64 bit di Windows.](https://support.microsoft.com/help/305097) Controllare queste sottochiavi:
 
 - **Outlook 2016:**`HKEY_CURRENT_USER\Software\Microsoft\Office\16.0\Outlook\Security\`
 
@@ -237,13 +236,13 @@ Puoi vedere se "Avvia applicazione" è stato ri-abilitato tramite una sostituzio
 
 Cercare la chiave EnableUnsafeClientMailRules. Se è presente ed è impostato su 1, la patch di sicurezza di Outlook è stata ignorata e il computer è vulnerabile all'attacco modulo/regole. Se il valore è 0, l'azione "Avvia applicazione" viene disabilitata. Se è installata la versione aggiornata e con patch di Outlook e questa chiave del Registro di sistema non è presente, un sistema non è vulnerabile a questi attacchi.
 
-I clienti con installazioni di Exchange locali devono prendere in considerazione la possibilità di bloccare le versioni precedenti di Outlook che non dispongono di patch disponibili. Per informazioni dettagliate su questo processo, vedere l'articolo [Configure Outlook client blocking.](https://docs.microsoft.com/exchange/configure-outlook-client-blocking-exchange-2013-help)
+I clienti con installazioni exchange locali devono prendere in considerazione la possibilità di bloccare le versioni precedenti di Outlook in cui non sono disponibili patch. Per informazioni dettagliate su questo processo, vedere l'articolo [Configure Outlook client blocking.](https://docs.microsoft.com/exchange/configure-outlook-client-blocking-exchange-2013-help)
 
 ## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a>Proteggere Microsoft 365 come un professionista della sicurezza informatica
 
 L'abbonamento a Microsoft 365 include un potente set di funzionalità di protezione che consente di proteggere i propri dati e quelli degli altri utenti. Usare la [Roadmap della sicurezza di Microsoft 365: principali priorità per i primi 30 giorni, 90 giorni e oltre](security-roadmap.md) per implementare le procedure consigliate da Microsoft per proteggere il tenant di Microsoft 365.
 
-- Attività da eseguire i primi 30 giorni. Queste hanno effetto immediato e sono a basso impatto per gli utenti.
+- Attività da eseguire i primi 30 giorni. Hanno un effetto immediato e hanno un impatto basso sugli utenti.
 
 - Attività da completare in 90 giorni. Queste attività richiedono una quantità di tempo leggermente superiore per la pianificazione e l'implementazione, ma aumentano notevolmente il livello di sicurezza.
 

@@ -19,12 +19,12 @@ description: Informazioni sulle azioni di correzione nelle funzionalità di anal
 ms.technology: mdo
 ms.prod: m365-security
 ms.date: 01/29/2021
-ms.openlocfilehash: a11e9ee6a4c2426951fe2b4aa4f2dd08d1931f1c
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 40d0d8a14e0dd340d931a1c43425854b96702c65
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287114"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407095"
 ---
 # <a name="review-and-manage-remediation-actions-in-office-365"></a>Esaminare e gestire le azioni correttive in Office 365
 
@@ -42,7 +42,7 @@ Queste azioni di correzione non vengono eseguite a meno che il team delle operaz
 
 ## <a name="approve-or-reject-pending-actions"></a>Approvare (o rifiutare) le azioni in sospeso
 
-1. Accedere al Centro sicurezza Microsoft 365 [https://security.microsoft.com](https://security.microsoft.com) e accedere.
+1. Accedere al Centro sicurezza Microsoft 365 ( <https://security.microsoft.com> ) e accedere.
 2. Nel riquadro di spostamento selezionare **Centro notifiche.**
 3. Nella scheda **In** sospeso esaminare l'elenco delle azioni in attesa di approvazione.
 4. Selezionare un elemento nell'elenco. Viene visualizzato il riquadro a comparsa. 
@@ -53,19 +53,19 @@ Queste azioni di correzione non vengono eseguite a meno che il team delle operaz
 
 ## <a name="undo-one-remediation-action"></a>Annullare un'azione correttiva
 
-1. Accedere al centro notifiche ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) e accedere.
+1. Accedere al centro notifiche ( <https://security.microsoft.com/action-center> ) e accedere.
 2. Nella scheda **Cronologia** selezionare un'azione che si desidera annullare.
 3. Nel riquadro sul lato destro dello schermo selezionare **Annulla.**
 
 ## <a name="undo-multiple-remediation-actions"></a>Annullare più azioni correttive
 
-1. Accedere al centro notifiche ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) e accedere.
+1. Accedere al centro notifiche ( <https://security.microsoft.com/action-center> ) e accedere.
 2. Nella scheda **Cronologia** selezionare le azioni che si desidera annullare. Assicurarsi di selezionare gli elementi con lo stesso tipo di azione. Verrà visualizzato un riquadro a comparsa.
 3. Nel riquadro a comparsa selezionare Annulla.
 
 ## <a name="to-remove-a-file-from-quarantine-across-multiple-devices"></a>Per rimuovere un file dalla quarantena su più dispositivi
 
-1. Accedere al centro notifiche ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ) e accedere.
+1. Accedere al centro notifiche ( <https://security.microsoft.com/action-center> ) e accedere.
 2. Nella scheda **Cronologia** selezionare un file con il tipo di azione **File quarantena.**
 3. Nel riquadro sul lato destro dello schermo, selezionare Applica **a X altre istanze** del file e quindi scegliere **Annulla.**
 

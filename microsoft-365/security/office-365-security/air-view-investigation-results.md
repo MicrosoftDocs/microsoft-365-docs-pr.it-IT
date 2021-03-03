@@ -19,12 +19,12 @@ description: Durante e dopo un'indagine automatizzata in Microsoft 365, è possi
 ms.date: 01/29/2021
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9ab32444f2c0b4f9f6140c20fe8356f016d62c30
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 2d6d4a710878d65462110f317cafeeef64617667
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287078"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406689"
 ---
 # <a name="details-and-results-of-an-automated-investigation-in-microsoft-365"></a>Dettagli e risultati di un'indagine automatizzata in Microsoft 365
 
@@ -46,10 +46,10 @@ Lo stato dell'analisi indica l'avanzamento dell'analisi e delle azioni. Durante 
 |**In avvio**|L'indagine è stata attivata e in attesa di avviare l'esecuzione.|
 |**In esecuzione**|Il processo di indagine è iniziato ed è in corso. Questo stato si verifica anche quando [vengono approvate azioni in](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions) sospeso.|
 |**Nessuna minaccia trovata**|L'indagine è terminata e non sono state identificate minacce (account utente, messaggio di posta elettronica, URL o file). <p> **SUGGERIMENTO:** se si sospetta che sia stato perso qualcosa (ad esempio un falso negativo), è possibile eseguire un'azione usando [Esplora minacce.](threat-explorer.md)|
-|**Minacce trovate**|L'indagine automatizzata ha rilevato problemi, ma non sono disponibili azioni di correzione specifiche per risolverli. <p> Lo **stato Minacce trovate** può verificarsi quando è stato identificato un tipo di attività dell'utente, ma non sono disponibili azioni di pulizia. Tra gli esempi sono incluse le seguenti attività utente: <br/>- Un [evento di prevenzione della](../../compliance/data-loss-prevention-policies.md) perdita di dati (DLP)<br/>- Anomalia di invio di un messaggio di posta elettronica<br/>- Malware inviato<br/>- Phish inviato <p> L'indagine non ha rilevato URL, file o messaggi di posta elettronica dannosi da correggere e nessuna attività della cassetta postale da correggere, ad esempio la disattivazione delle regole di inoltro o della delega. <p> **SUGGERIMENTO:** se si sospetta che sia stato perso qualcosa (ad esempio un falso negativo), è possibile analizzare ed eseguire un'azione utilizzando [Esplora minacce.](threat-explorer.md)|
+|**Minacce trovate**|L'indagine automatizzata ha rilevato problemi, ma non sono disponibili azioni di correzione specifiche per risolverli. <p> Lo **stato Minacce trovate** può verificarsi quando è stato identificato un tipo di attività dell'utente, ma non sono disponibili azioni di pulizia. Tra gli esempi sono incluse le attività degli utenti seguenti: <br/>- Un [evento di prevenzione della](../../compliance/data-loss-prevention-policies.md) perdita di dati (DLP)<br/>- Anomalia di invio di un messaggio di posta elettronica<br/>- Malware inviato<br/>- Phish inviato <p> L'indagine non ha rilevato URL, file o messaggi di posta elettronica dannosi da correggere e nessuna attività della cassetta postale da correggere, ad esempio la disattivazione delle regole di inoltro o della delega. <p> **SUGGERIMENTO:** se si sospetta che sia stato perso qualcosa (ad esempio un falso negativo), è possibile analizzare ed eseguire un'azione utilizzando [Esplora minacce.](threat-explorer.md)|
 |**Terminated By System**|L'indagine è stata interrotta. Un'indagine può interrompersi per diversi motivi: <br/>- Le azioni in sospeso dell'indagine sono scadute. Timeout delle azioni in sospeso dopo l'attesa dell'approvazione per una settimana.<br/>- Sono presenti troppe azioni. Ad esempio, se ci sono troppi utenti che fa clic su URL dannosi, può superare la capacità dell'indagine di eseguire tutti gli analizzatori, quindi l'indagine si interrompe.<p> **SUGGERIMENTO:** se un'indagine si interrompe prima dell'azione, provare a usare [Esplora](threat-explorer.md) minacce per individuare e risolvere le minacce.|
 |**Azione in sospeso**|L'indagine ha rilevato una minaccia, ad esempio un messaggio di posta elettronica dannoso, un URL dannoso o un'impostazione rischiosa della cassetta postale e un'azione per correggere tale minaccia in attesa [di approvazione.](air-review-approve-pending-completed-actions.md) <p> Lo **stato Azione** in sospeso viene attivato quando viene trovata qualsiasi minaccia con un'azione corrispondente. Tuttavia, l'elenco delle azioni in sospeso può aumentare durante l'esecuzione di un'indagine. Visualizzare i dettagli dell'indagine per verificare se altri elementi sono ancora in attesa di completamento.|
-|**Correzione**|L'indagine è terminata e tutte le azioni correttive sono state approvate (come completamente corretti). <p> **NOTA:** le azioni di correzione approvate possono contenere errori che impediscono l'azione da eseguire. Indipendentemente dal fatto che le azioni di correzione siano state completate correttamente, lo stato dell'indagine non cambia. Visualizzare i dettagli dell'indagine.|
+|**Correzione**|L'indagine è terminata e tutte le azioni correttive sono state approvate (come completamente corretti). <p> **NOTA:** le azioni di correzione approvate possono contenere errori che impediscono l'azione. Indipendentemente dal fatto che le azioni di correzione siano state completate correttamente, lo stato dell'indagine non cambia. Visualizzare i dettagli dell'indagine.|
 |**Parzialmente corretti**|L'indagine ha comportato azioni correttive e alcune sono state approvate e completate. Altre azioni sono ancora in [sospeso.](air-review-approve-pending-completed-actions.md)|
 |**Operazione non riuscita**|Almeno un analizzatore di analisi ha incontrato un problema per cui non è stato possibile completarlo correttamente. <p> **NOTA:** se un'indagine non riesce dopo l'approvazione delle azioni correttive, è possibile che le azioni di correzione abbia avuto esito positivo. Visualizzare i dettagli dell'indagine. |
 |**Accodato dalla limitazione**|Un'indagine viene tenuta in coda. Al termine di altre indagini, iniziano le indagini in coda. La limitazione consente di evitare prestazioni di servizio scarse.  <p> **SUGGERIMENTO:** le azioni in sospeso possono limitare il numero di nuove indagini che possono essere eseguite. Assicurarsi di [approvare (o rifiutare) le azioni in sospeso.](air-review-approve-pending-completed-actions.md#approve-or-reject-pending-actions)|
@@ -58,7 +58,7 @@ Lo stato dell'analisi indica l'avanzamento dell'analisi e delle azioni. Durante 
 
 ## <a name="view-details-of-an-investigation"></a>Visualizzare i dettagli di un'indagine
 
-1. Accedere al Centro sicurezza Microsoft 365 [https://security.microsoft.com](https://security.microsoft.com) e accedere.
+1. Accedere al Centro sicurezza Microsoft 365 ( <https://security.microsoft.com> ) e accedere.
 2. Nel riquadro di spostamento selezionare **Centro notifiche.**
 3. Nella scheda **In** sospeso o **Cronologia** selezionare un'azione. Viene visualizzato il riquadro a comparsa.
 4. Nel riquadro a comparsa selezionare Apri **pagina di analisi.** 
@@ -68,7 +68,7 @@ Lo stato dell'analisi indica l'avanzamento dell'analisi e delle azioni. Durante 
 
 Alcuni tipi di avvisi attivano un'indagine automatizzata in Microsoft 365. Per altre informazioni, vedi i [criteri di avviso che attivano le indagini automatizzate.](office-365-air.md#which-alert-policies-trigger-automated-investigations)
 
-1. Accedere al Centro sicurezza Microsoft 365 [https://security.microsoft.com](https://security.microsoft.com) e accedere.
+1. Accedere al Centro sicurezza Microsoft 365 ( <https://security.microsoft.com> ) e accedere.
 2. Nel riquadro di spostamento selezionare **Centro notifiche.**
 3. Nella scheda **In** sospeso o **Cronologia** selezionare un'azione. Viene visualizzato il riquadro a comparsa.
 4. Nel riquadro a comparsa selezionare Apri **pagina di analisi.** 

@@ -17,12 +17,12 @@ description: Informazioni su come usare Esplora minacce e il report sui rilevame
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: aef3f7fe69e5cbd1d70b7aee3284f0c5dc6416df
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: b00b78432a34ec982208586f2fe19c1588354293
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290286"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406481"
 ---
 # <a name="views-in-threat-explorer-and-real-time-detections"></a>Visualizzazioni in Esplora minacce e rilevamenti in tempo reale
 
@@ -53,7 +53,10 @@ Quando si apre Explorer per la prima volta (o il report dei rilevamenti in tempo
 |Microsoft Defender per Office 365 P2 a pagamento|Esplora minacce|30|
 |
 
-Utilizzare il menu **Visualizza** per modificare le informazioni visualizzate. Le descrizioni comandi ti aiutano a determinare quale visualizzazione usare.
+> [!NOTE]
+> We will soon be extending the Explorer (and Real-time detections) data retention and search limit for trial tenants from 7 to 30 days. Questa modifica viene monitorata come parte della roadmap n. 70544 ed è attualmente in fase di implementazione.
+
+Utilizzare il menu **Visualizza** per modificare le informazioni visualizzate. Le descrizioni comandi consentono di determinare la visualizzazione da usare.
 
 ![Menu Visualizzazione Esplora minacce](../../media/ThreatExplorerViewMenu.png)
 
@@ -61,7 +64,7 @@ Dopo aver selezionato una visualizzazione, è possibile applicare filtri e impos
 
 ## <a name="email--malware"></a>Malware > posta elettronica
 
-Per visualizzare questo report, in Esplora risorse (o rilevamenti in tempo reale), scegliere **Visualizza** \> **malware di posta** \> **elettronica.** Questa visualizzazione mostra informazioni sui messaggi di posta elettronica identificati come contenenti malware.
+Per visualizzare questo report, in Esplora risorse (o rilevamenti in tempo reale), scegliere **Visualizza** malware \> **di posta** \> **elettronica.** Questa visualizzazione mostra informazioni sui messaggi di posta elettronica identificati come contenenti malware.
 
 ![Visualizzare i dati relativi ai messaggi di posta elettronica identificati come malware](../../media/ExplorerEmailMalwareMenu.png)
 
@@ -97,7 +100,7 @@ Quando si seleziona un elemento nell'elenco, ad esempio un URL rilevato, viene v
 
 ## <a name="email--submissions"></a>Invii di > posta elettronica
 
-Per visualizzare questo report, in Esplora risorse (o rilevamenti in tempo reale), scegliere **Visualizza** \> **invii di posta** \> **elettronica.** Questa visualizzazione mostra la posta elettronica segnalata dagli utenti come posta indesiderata, non indesiderata o phishing.
+Per visualizzare questo report, in Esplora risorse (o rilevamenti in tempo reale), scegliere **Visualizza invii** \> **di posta** \> **elettronica.** Questa visualizzazione mostra la posta elettronica segnalata dagli utenti come posta indesiderata, non indesiderata o di phishing.
 
 ![Messaggi di posta elettronica segnalati dagli utenti](../../media/ThreatExplorerEmailUserReportedViewOptions.png)
 
@@ -115,12 +118,12 @@ Selezionare un elemento nell'elenco per visualizzare ulteriori dettagli.
 
 ## <a name="email--all-email"></a>Posta > tutti i messaggi di posta elettronica
 
-Per visualizzare questo report,  in Esplora risorse scegliere Visualizza tutta \> **la posta** \> **elettronica.** Queste visualizzazioni mostrano una visualizzazione dettagliata dell'attività di posta elettronica, inclusa la posta elettronica identificata come dannosa a causa di phishing o malware, nonché tutta la posta non dannosa (normale posta elettronica, posta indesiderata e posta inviata in blocco).
+Per visualizzare questo report,  in Esplora risorse scegliere Visualizza tutta \> **la posta** \> **elettronica.** Queste visualizzazioni mostrano una visualizzazione all-up dell'attività di posta elettronica, inclusa la posta elettronica identificata come dannosa a causa di phishing o malware, nonché tutta la posta non dannosa (posta elettronica normale, posta indesiderata e posta inviata in blocco).
 
 > [!NOTE]
 > Se viene visualizzato un errore che legge troppi dati da **visualizzare,** aggiungere un filtro e, se necessario, restringere l'intervallo di date visualizzato.
 
-Per applicare un filtro, scegliere **Mittente,** selezionare un elemento nell'elenco e quindi fare clic sul pulsante Aggiorna. In questo esempio, abbiamo usato **la tecnologia di rilevamento** come filtro (sono disponibili diverse opzioni). Visualizzare le informazioni in base al mittente, al dominio del mittente, ai destinatari, all'oggetto, al nome del file dell'allegato, alla famiglia di malware, allo stato di protezione (azioni intraprese dalle funzionalità e dai criteri di protezione dalle minacce in Office 365), alla tecnologia di rilevamento (come è stato rilevato il malware) e altro ancora.
+Per applicare un filtro, scegliere **Mittente,** selezionare un elemento nell'elenco e quindi fare clic sul pulsante Aggiorna. In questo esempio abbiamo usato la **tecnologia di rilevamento** come filtro (sono disponibili diverse opzioni). Visualizzare le informazioni in base al mittente, al dominio del mittente, ai destinatari, all'oggetto, al nome del file dell'allegato, alla famiglia di malware, allo stato di protezione (azioni intraprese dalle funzionalità e dai criteri di protezione dalle minacce in Office 365), alla tecnologia di rilevamento (come è stato rilevato il malware) e altro ancora.
 
 ![Visualizzare i dati sulla posta elettronica rilevata dalla tecnologia di rilevamento](../../media/0c032eb3-6021-4174-9f06-ff8f30c245ca.png)
 
@@ -146,7 +149,7 @@ Se **si fa clic su Detonazione ATP** in questo grafico, verrà restituita una vi
 
 ![Explorer filtrato per visualizzare solo i risultati della detonazione di Defender per Office 365](../../media/7241d7dd-27bc-467d-9db8-6e806c49df14.png)
 
-In questa visualizzazione sono ora in corso i dati per i file che sono stati detonati dagli [allegati sicuri.](atp-safe-attachments.md) Sotto il grafico, è possibile visualizzare i dettagli relativi a messaggi di posta elettronica specifici con allegati rilevati dagli allegati sicuri.
+In questa visualizzazione sono ora in corso i dati per i file che sono stati detonati dagli [allegati sicuri.](atp-safe-attachments.md) Sotto il grafico è possibile visualizzare i dettagli relativi a messaggi di posta elettronica specifici con allegati rilevati da Allegati sicuri.
 
 ![Dettagli specifici sui messaggi di posta elettronica con allegati rilevati](../../media/c91fb05c-d1d4-4085-acc6-f7008a415c2a.png)
 

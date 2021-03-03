@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b2e359f193f3c8b0502a1995b8e9d515eb03a983
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 250fba7bdf89425bce601112c7863eb9d1c952be
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287690"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407445"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Analisi e risposta automatizzate (AIR) in Microsoft Defender per Office 365
 
@@ -39,7 +39,7 @@ ms.locfileid: "50287690"
 
 [Microsoft Defender per Office 365](office-365-atp.md) include potenti funzionalità di analisi e risposta automatizzate (AIR) che consentono di risparmiare tempo e fatica nel team delle operazioni di sicurezza. Quando vengono attivati avvisi, il team delle operazioni di sicurezza deve esaminare, definire le priorità e rispondere a tali avvisi. Tenere il passo con il volume di avvisi in arrivo può essere eccessivo. L'automazione di alcune di queste attività può essere utile.
 
-AIR consente al team delle operazioni di sicurezza di operare in modo più efficiente ed efficace. Le funzionalità AIR includono processi di indagine automatizzati in risposta alle minacce note che esistono oggi. Le azioni correttive appropriate attendono l'approvazione, consentendo al team delle operazioni di sicurezza di rispondere in modo efficace alle minacce rilevate. Con AIR, il team delle operazioni di sicurezza può concentrarsi sulle attività con priorità più alta senza perdere di vista gli avvisi importanti attivati.
+AIR consente al team delle operazioni di sicurezza di operare in modo più efficiente ed efficace. Le funzionalità AIR includono processi di indagine automatizzati in risposta alle minacce note che esistono oggi. Le azioni correttive appropriate attendono l'approvazione, consentendo al team delle operazioni di sicurezza di rispondere in modo efficace alle minacce rilevate. Con AIR, il team delle operazioni di sicurezza può concentrarsi sulle attività con priorità più alta senza perdere di vista gli avvisi importanti che vengono attivati.
 
 In questo articolo viene descritto:
 
@@ -68,7 +68,7 @@ Durante e dopo ogni indagine automatizzata, il team delle operazioni di sicurezz
 
 - [Visualizzare i dettagli relativi a un avviso correlato a un'indagine](air-view-investigation-results.md#view-details-about-an-alert-related-to-an-investigation)
 - [Visualizzare i dettagli dei risultati di un'indagine](air-view-investigation-results.md#view-details-of-an-investigation)
-- [Rivedere e approvare le azioni a seguito di un'indagine](air-review-approve-pending-completed-actions.md)
+- [Rivedere e approvare le azioni in seguito a un'indagine](air-review-approve-pending-completed-actions.md)
 
 > [!TIP]
 > Per una panoramica più dettagliata, vedere [Funzionamento di AIR.](automated-investigation-response-office.md)
@@ -85,7 +85,7 @@ Le funzionalità AIR sono incluse in [Microsoft Defender per Office 365,](office
 - [Allegati sicuri per SharePoint, OneDrive e Microsoft Teams](protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
 - [Eliminazione automatica a zero ore per la posta elettronica.](protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop)
 
-Inoltre, assicurarsi di esaminare i criteri di avviso [dell'organizzazione,](../../compliance/alert-policies.md)in particolare i criteri [predefiniti nella categoria gestione delle minacce.](../../compliance/alert-policies.md#default-alert-policies)
+Inoltre, assicurarsi di esaminare i criteri di avviso [dell'organizzazione,](../../compliance/alert-policies.md)in particolare i criteri [predefiniti nella categoria di gestione delle minacce.](../../compliance/alert-policies.md#default-alert-policies)
 
 ## <a name="which-alert-policies-trigger-automated-investigations"></a>Quali criteri di avviso attivano indagini automatizzate?
 
@@ -111,7 +111,7 @@ Le autorizzazioni vengono concesse tramite determinati ruoli, ad esempio quelli 
 |Attività|Ruoli obbligatori|
 |---|---|
 |Configurare le funzionalità AIR|Uno dei ruoli seguenti: <ul><li>Amministratore globale</li><li>Amministratore della sicurezza</li></ul> <p> Questi ruoli possono essere assegnati in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o nel Centro sicurezza & [conformità.](permissions-in-the-security-and-compliance-center.md)|
-|Avviare un'indagine automatizzata <p> --- o --- <p> Approvare o rifiutare le azioni consigliate|Uno dei ruoli seguenti, assegnato in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o nel Centro sicurezza & [conformità:](permissions-in-the-security-and-compliance-center.md) <ul><li>Amministratore globale</li><li>Amministratore della sicurezza</li><li>Operatore della sicurezza</li><li>Ruolo con autorizzazioni di lettura per la sicurezza <br> --- e --- </li><li>Ricerca ed eliminazione (questo ruolo viene assegnato solo nel [Centro sicurezza & conformità.](permissions-in-the-security-and-compliance-center.md) Potrebbe essere necessario creare un nuovo gruppo di ruoli e aggiungere il ruolo Di ricerca ed eliminazione a tale nuovo gruppo di ruoli.</li></ul>|
+|Avviare un'indagine automatizzata <p> --- o --- <p> Approvare o rifiutare le azioni consigliate|Uno dei ruoli seguenti, assegnato in [Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o nel Centro sicurezza & [conformità:](permissions-in-the-security-and-compliance-center.md) <ul><li>Amministratore globale</li><li>Amministratore della sicurezza</li><li>Operatore della sicurezza</li><li>Ruolo con autorizzazioni di lettura per la sicurezza <br> --- e --- </li><li>Ricerca ed eliminazione (questo ruolo viene assegnato solo nel Centro [sicurezza & conformità.](permissions-in-the-security-and-compliance-center.md) Potrebbe essere necessario creare un nuovo gruppo di ruoli e aggiungere il ruolo di ricerca ed eliminazione a tale nuovo gruppo di ruoli.</li></ul>|
 
 ## <a name="required-licenses"></a>Licenze necessarie
 
@@ -128,13 +128,13 @@ Se si usano già le funzionalità AIR in Microsoft Defender per Office 365, si s
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centro notifiche unificato":::
 
-Il centro sicurezza nuovo e migliorato riunisce le funzionalità AIR in [Microsoft Defender per Office 365](office-365-atp.md) e in Microsoft Defender for [Endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) Con questi aggiornamenti e miglioramenti, il team delle operazioni di sicurezza sarà in grado di visualizzare i dettagli sulle indagini automatizzate e sulle azioni di correzione in tutta la posta elettronica, il contenuto di collaborazione, gli account utente e i dispositivi, il tutto in un'unica posizione.
+Il centro sicurezza nuovo e migliorato riunisce le funzionalità AIR in [Microsoft Defender per Office 365](office-365-atp.md) e in Microsoft Defender per [Endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/automated-investigations) Con questi aggiornamenti e miglioramenti, il team delle operazioni di sicurezza sarà in grado di visualizzare i dettagli sulle indagini automatizzate e sulle azioni di correzione in tutta la posta elettronica, il contenuto di collaborazione, gli account utente e i dispositivi, il tutto in un'unica posizione.
 
 > [!TIP]
-> Il nuovo Centro sicurezza Microsoft 365 ( [https://security.microsoft.com](https://security.microsoft.com) ) sostituisce i centri seguenti:
+> Il nuovo Centro sicurezza Microsoft 365 ( <https://security.microsoft.com> ) sostituisce i centri seguenti:
 >
-> - Centro sicurezza e conformità & di Office 365 ( [https://protection.office.com](https://protection.office.com) )
-> - Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )
+> - Centro sicurezza e conformità & di Office 365 ( <https://protection.office.com> )
+> - Microsoft Defender Security Center ( <https://securitycenter.windows.com> )
 >
 > Oltre alla modifica dell'URL, è stato creato un nuovo aspetto, progettato per offrire al team di sicurezza un'esperienza più semplificata, con visibilità su più rilevamenti di minacce in un'unica posizione.
 

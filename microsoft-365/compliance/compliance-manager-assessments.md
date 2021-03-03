@@ -13,13 +13,13 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Creare valutazioni in Microsoft Compliance Manager per soddisfare i requisiti di normative e certificazioni importanti per l'organizzazione.
-ms.openlocfilehash: d09103f58be3a5fa39b57ca35da411e8046aace5
-ms.sourcegitcommit: 61d7284b412d0f7bbd8bbb2225c2e6324f86b717
+description: Creare valutazioni in Microsoft Compliance Manager per soddisfare i requisiti delle normative e delle certificazioni importanti per l'organizzazione.
+ms.openlocfilehash: 06b644293c014dafbe46c115b498c2ad2390e99d
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "48262291"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406758"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Creare e gestire valutazioni in Compliance Manager
 
@@ -57,7 +57,7 @@ Esistono tre modi per configurare le valutazioni:
 
 **Usare una valutazione precompisa**
 
-Avvia il percorso di conformità scegliendo una valutazione già impostata da Compliance Manager. Offriamo un'ampia [](compliance-manager-templates.md) selezione di modelli per normative e certificazioni in linea con i settori, le aree geografiche e gli standard di protezione dei dati comuni, come GDPR e ISO 27001. I modelli contengono i controlli e le azioni di miglioramento che ti aiutano a soddisfare i requisiti di una determinata certificazione. Ti verrà richiesto di scegliere un modello quando inizi a [creare una valutazione.](#use-a-pre-built-assessment)
+Avvia il percorso di conformità scegliendo una valutazione già impostata da Compliance Manager. Offriamo un'ampia [](compliance-manager-templates.md) selezione di modelli per normative e certificazioni in linea con i settori, le aree geografiche e gli standard di protezione dei dati comuni, come GDPR e ISO 27001. I modelli contengono i controlli e le azioni di miglioramento per aiutarti a soddisfare i requisiti di una determinata certificazione. Ti verrà chiesto di scegliere un modello quando inizi a [creare una valutazione.](#use-a-pre-built-assessment)
 
 **Estendere una valutazione precompisa in base alle proprie esigenze**
 
@@ -81,7 +81,7 @@ I gruppi sono contenitori che consentono di organizzare le valutazioni. È possi
   - ISO 27001:2013
   - ISO 27018:2014
 
-Quando due valutazioni diverse nello stesso gruppo condividono azioni di miglioramento gestite dall'utente, qualsiasi aggiornamento apportato ai dettagli o allo stato di implementazione di un'azione verrà sincronizzato automaticamente con la stessa azione in qualsiasi altra valutazione del gruppo. Questa sincronizzazione consente di implementare un'unica azione di miglioramento e di soddisfare diversi requisiti in più normative.
+Quando due valutazioni diverse nello stesso gruppo condividono le azioni di miglioramento gestite dall'utente, qualsiasi aggiornamento apportato ai dettagli o allo stato di implementazione di un'azione verrà sincronizzato automaticamente con la stessa azione in qualsiasi altra valutazione del gruppo. Questa sincronizzazione consente di implementare un'unica azione di miglioramento e di soddisfare diversi requisiti in più normative.
 
 ### <a name="how-to-create-a-group"></a>Come creare un gruppo
 
@@ -105,7 +105,7 @@ I gruppi non possono essere creati come entità autonome. Un gruppo deve contene
 
 Esistono due punti di partenza per creare una valutazione da un modello di Compliance Manager.
 
-Puoi iniziare il processo dalla pagina delle  valutazioni selezionando il pulsante Aggiungi valutazione e quindi usando la procedura guidata di creazione della valutazione. I passaggi per questo processo sono riportati di seguito.
+È possibile iniziare il processo dalla pagina  delle valutazioni selezionando il pulsante Aggiungi valutazione e quindi utilizzando la procedura guidata di creazione della valutazione. I passaggi per questo processo sono riportati di seguito.
 
 Puoi anche iniziare dalla pagina dei modelli di valutazione trovando il modello desiderato e selezionandolo nell'elenco per arrivare alla relativa pagina dei dettagli. Nella pagina dei dettagli del modello selezionare **Crea valutazione.** Verrà quindi immessa la procedura guidata con il modello già selezionato.
 
@@ -115,7 +115,7 @@ Puoi anche iniziare dalla pagina dei modelli di valutazione trovando il modello 
 
 2. Passare alla pagina **delle valutazioni** in Compliance Manager e selezionare **Aggiungi valutazione.** Una valutazione guidata verrà visualizzata in un riquadro a comparsa di grandi dimensioni.
 
-3. **Selezionare un modello:** scegliere un modello da utilizzare come base per la valutazione. Seleziona il pulsante di opzione accanto al modello scelto, quindi seleziona **Avanti.**
+3. **Selezionare un modello:** scegliere un modello da utilizzare come base per la valutazione. Vedrai l'elenco dei modelli suddivisi in categorie incluse e premium (vedi [Tipi di modello](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) per altre informazioni). Seleziona il pulsante di opzione accanto al modello scelto, quindi seleziona **Avanti.**
 
 4. **Nome e gruppo:** Immettere un nome per la valutazione nel **campo Nome valutazione.** I nomi delle valutazioni devono essere univoci all'interno dei gruppi. Se il nome della valutazione corrisponde al nome di un'altra valutazione in un determinato gruppo, verrà visualizzato un errore che richiede di creare un nome diverso.
 
@@ -129,7 +129,7 @@ Puoi anche iniziare dalla pagina dei modelli di valutazione trovando il modello 
 
 6. **Rivedere e terminare:** Nell'ultima schermata della procedura guidata vengono visualizzati il modello, il nome e il gruppo scelti per la valutazione. Puoi modificare una qualsiasi di queste impostazioni dai collegamenti sullo schermo, riportandoti ai passaggi pertinenti della procedura guidata. Quando si è pronti, selezionare **Crea valutazione.**
 
-7. La schermata successiva conferma che la nuova valutazione è stata creata correttamente. Seleziona **Fine** per chiudere la procedura guidata e la pagina dei dettagli della nuova valutazione verrà visualizzata sullo schermo.
+7. La schermata successiva conferma che la nuova valutazione è stata creata correttamente. Selezionare **Fine** per chiudere la procedura guidata e la pagina dei dettagli della nuova valutazione verrà visualizzata sullo schermo.
 
 Se viene visualizzata una **schermata di** valutazione non riuscita dopo aver selezionato **Crea** valutazione, selezionare **Riprova** per creare di nuovo la valutazione.
 
@@ -137,13 +137,13 @@ Se viene visualizzata una **schermata di** valutazione non riuscita dopo aver se
 
 ## <a name="extend-a-pre-built-assessment"></a>Estendere una valutazione pre-creata
 
-È possibile modificare una valutazione pre-creata aggiungendo controlli e azioni di miglioramento personalizzati al modello della valutazione. Questo processo è denominato "estensione di un modello Microsoft" in Compliance Manager. Quando si estende il modello di una valutazione, riceverà gli aggiornamenti rilasciati da Microsoft, che potrebbero verificarsi quando vengono apportate modifiche al prodotto o al regolamento correlato (vedere Accettazione di aggiornamenti per [le valutazioni).](#accepting-updates-to-assessments)
+È possibile modificare una valutazione pre-creata aggiungendo controlli e azioni di miglioramento personalizzati al modello della valutazione. Questo processo è denominato "estensione di un modello Microsoft" in Compliance Manager. Quando si estende il modello di una valutazione, riceverà gli aggiornamenti rilasciati da Microsoft, che potrebbero verificarsi quando vengono apportate modifiche al prodotto o al regolamento correlato (vedere Accettazione di aggiornamenti [per le valutazioni).](#accepting-updates-to-assessments)
 
 Questo processo verrà completato iniziando dalla pagina dei modelli **di** valutazione anziché dalla **pagina delle valutazioni.**
 
 **Prima di iniziare**
 
-Per prepararsi a questo processo, è innanzitutto necessario assemblare un foglio di calcolo di Excel formattato in modo specifico per importare i dati del modello necessari. Esistono requisiti speciali per i [file di Excel](compliance-manager-templates.md#formatting-your-template-data-with-excel) formattati utilizzati nel processo di estensione. Vedere questi punti aggiuntivi per evitare errori nel processo di importazione:
+Per prepararsi a questo processo, è necessario prima assemblare un foglio di calcolo di Excel formattato in modo specifico per importare i dati del modello necessari. Esistono requisiti speciali per i [file di Excel](compliance-manager-templates.md#formatting-your-template-data-with-excel) formattati utilizzati nel processo di estensione. Vedere questi punti aggiuntivi per evitare errori nel processo di importazione:
 
 - Il foglio di calcolo deve contenere solo le azioni e i controlli che si desidera aggiungere alla valutazione. 
 - Il foglio di calcolo non può contenere controlli o azioni già esistenti nella valutazione che si desidera modificare.
@@ -155,25 +155,27 @@ Dopo aver formattato il foglio di calcolo, eseguire la procedura seguente.
 
 1. Vai alla pagina **Modelli di valutazione** e seleziona Crea nuovo **modello.** Verrà aperta una procedura guidata per la creazione di modelli.
 
-2. Scegliere il tipo di modello che si desidera creare. In questo caso, selezionare **Estendi un modello Microsoft,** quindi **Selezionare.**
+2. Scegliere il tipo di modello che si desidera creare. In questo caso, selezionare **Estendi un modello Microsoft,** quindi **Selezionare il modello Microsoft.**
 
-3. Sul lato destro dello schermo viene visualizzato un riquadro a comparsa di selezione del modello. Usare **la** ricerca per applicare filtri per l'individuazione del modello desiderato
+3. Sul lato destro dello schermo viene visualizzato un riquadro a comparsa di selezione del modello, che mostra un elenco di tutti i modelli e il relativo stato attivo o inattivo. Il **contatore dei** modelli attivati mostra quanti modelli sono attualmente in uso al di fuori del numero totale disponibile per l'uso. Se si è oltre il limite, verrà visualizzato un avviso sulla barra dei messaggi. Per [ulteriori informazioni, vedere](compliance-manager-templates.md#template-types-included-and-premium-active-and-inactive) Tipi di modello.
 
-4. Dopo aver individuato il modello, seleziona il pulsante di opzione a sinistra del nome e quindi seleziona **Salva.**
+4. Sul lato destro dello schermo viene visualizzato un riquadro a comparsa di selezione del modello. Usare **la** ricerca per applicare filtri per l'individuazione del modello desiderato
 
-5. Nella schermata successiva viene visualizzato il modello selezionato. Se corretto, selezionare **Avanti.** Se non è corretto, scegliere **Seleziona un modello diverso** per scegliere di nuovo.
+5. Dopo aver individuato il modello, seleziona il pulsante di opzione a sinistra del nome e quindi seleziona **Salva.**
 
-6. Nella schermata **Carica file** selezionare **Sfoglia** per trovare e caricare il file di Excel formattato contenente tutti i dati del modello necessari.
+6. Nella schermata successiva viene visualizzato il modello selezionato. Se corretto, selezionare **Avanti.** Se non è corretto, scegliere **Seleziona un modello diverso** da scegliere di nuovo.
 
-7. Se non si verificano problemi con il file, nella schermata successiva viene visualizzato il nome del file caricato. Selezionare **Avanti** per continuare (se è necessario modificare il file, selezionare **Carica un altro file).**
+7. Nella schermata **Carica file** selezionare Sfoglia per **trovare** e caricare il file di Excel formattato contenente tutti i dati del modello necessari.
+
+8. Se non si verificano problemi con il file, nella schermata successiva viene visualizzato il nome del file caricato. Selezionare **Avanti** per continuare (se è necessario modificare il file, selezionare **Carica un altro file).**
 
     - Se si verifica un problema con il file, nella parte superiore viene visualizzato un messaggio di errore che spiega il problema. You'll need to fix and re-upload your file. Se il foglio di calcolo non è formattato correttamente o se sono presenti informazioni non valide in alcuni campi, si verificano errori.
  
-8. La **schermata Revisione e** fine mostra il numero di azioni e controlli di miglioramento e il punteggio massimo per il modello. Quando si è pronti per l'approvazione, selezionare **Avanti.** Se è necessario apportare modifiche, selezionare **Carica un file diverso.**
+9. La **schermata Revisione e** fine mostra il numero di azioni e controlli di miglioramento e il punteggio massimo per il modello. Quando si è pronti per l'approvazione, selezionare **Avanti.** Se è necessario apportare modifiche, selezionare **Carica un file diverso.**
 
-9. L'ultima schermata conferma la creazione di un nuovo modello. Selezionare **Fine per** uscire dalla procedura guidata.
+10. L'ultima schermata conferma la creazione di un nuovo modello. Selezionare **Fine per** uscire dalla procedura guidata.
 
-10. Arriverai alla pagina dei dettagli del nuovo modello. Da qui è possibile creare la valutazione selezionando **Crea valutazione.** Per indicazioni, iniziare dal passaggio #4 nelle istruzioni per la [creazione della valutazione precedenti.](#to-create-an-assessment)
+11. Arriverai alla pagina dei dettagli del nuovo modello. Da qui è possibile creare la valutazione selezionando **Crea valutazione.** Per indicazioni, iniziare dal passaggio #4 nelle istruzioni per la [creazione della valutazione precedenti.](#to-create-an-assessment)
 
 ## <a name="create-your-own-custom-assessment"></a>Creare una valutazione personalizzata
 
@@ -218,7 +220,7 @@ Ogni valutazione ha una pagina dei dettagli che offre una panoramica dei tuoi pr
 
 La scheda panoramica contiene un grafico che mostra la percentuale di completamento della valutazione. Questo grafico contiene un'analisi dei punti delle azioni di cui si è proprietari e dei punti delle azioni di proprietà di Microsoft, in modo da poter vedere quanti altri punti sono necessari per completare la valutazione.
 
-Le azioni di miglioramento chiave per i controlli nella valutazione sono elencate in ordine di massimo impatto potenziale per guadagnare punti. Il grafico associato dettaglia lo stato aggregato dei test delle azioni di miglioramento, in modo da poter valutare rapidamente cosa è stato testato e cosa deve ancora essere fatto.
+Le azioni di miglioramento chiave per i controlli nella valutazione sono elencate in ordine di massimo impatto potenziale per guadagnare punti. Nel grafico associato viene indicato in dettaglio lo stato aggregato dei test delle azioni di miglioramento, in modo da poter valutare rapidamente cosa è stato testato e cosa è ancora necessario fare.
 
 Per accedere alle singole azioni di miglioramento, visitare la **scheda Controlli** o Le **azioni di** miglioramento.
 
@@ -235,8 +237,8 @@ Sotto il grafico, una tabella elenca informazioni dettagliate su ogni controllo 
     - **Nessuna:** tutte le azioni di miglioramento non sono state testate
     - **Fuori ambito:** tutte le azioni di miglioramento non sono nell'ambito di questa valutazione
     - **In corso:** le azioni di miglioramento hanno uno stato diverso da quello elencato in precedenza, che potrebbe includere "in corso", "credito parziale" o "non rilevato"
-- **ID di** controllo : numero di identificazione del controllo, assegnato dal corrispondente regolamento, standard o criterio
-- **Punti ottenuti:** il numero di punti ottenuti completando le azioni, fuori dal numero totale di punti raggiungibili 
+- **ID controllo**: numero di identificazione del controllo, assegnato dal corrispondente regolamento, standard o criterio
+- **Punti ottenuti:** il numero di punti ottenuti completando le azioni, del numero totale di punti raggiungibili 
 - **Azioni :** numero di azioni completate al di fuori del numero totale di azioni da eseguire
 - **Azioni Microsoft**: numero di azioni completate da Microsoft 
 
@@ -252,17 +254,17 @@ Selezionare un'azione di miglioramento per visualizzarne la pagina dei dettagli 
 
 ### <a name="microsoft-actions-tab"></a>Scheda Azioni Microsoft
 
-Nella scheda Azioni Microsoft sono elencate tutte le azioni della valutazione gestite da Microsoft. L'elenco mostra i dettagli principali dell'azione, tra cui: stato del test, punti che contribuiscono al punteggio di conformità complessivo, normative e standard associati, soluzione applicabile, tipo di azione e famiglia di controlli. Selezionare un'azione di miglioramento per visualizzare la relativa pagina dei dettagli.
+Nella scheda Azioni Microsoft sono elencate tutte le azioni della valutazione gestite da Microsoft. L'elenco mostra i dettagli principali delle azioni, tra cui: stato del test, punti che contribuiscono al punteggio di conformità complessivo, normative e standard associati, soluzione applicabile, tipo di azione e famiglia di controlli. Selezionare un'azione di miglioramento per visualizzarne la pagina dei dettagli.
 
 Ulteriori informazioni sul [modo in cui i controlli e le azioni di miglioramento vengono monitorati e classificati.](compliance-score-calculation.md)
 
-## <a name="accepting-updates-to-assessments"></a>Accettazione degli aggiornamenti per le valutazioni
+## <a name="accepting-updates-to-assessments"></a>Accettazione degli aggiornamenti alle valutazioni
 
 Quando un aggiornamento è disponibile per una valutazione, vedrai una notifica e avrai la possibilità di accettarlo o rinviare l'aggiornamento per un secondo momento.
 
 ### <a name="what-causes-an-update"></a>Cause di un aggiornamento
 
-Un aggiornamento di valutazione si verifica quando sono presenti modifiche al modello sottostanti che influiscono sul punteggio. Le modifiche possono implicare la modifica del mapping dei controlli o altre indicazioni in base alle modifiche normative o ai cambiamenti di prodotto. Gli aggiornamenti di valutazione possono provenire dall'organizzazione (ad esempio, quando [viene](compliance-manager-templates.md#modify-a-template)modificato un modello personalizzato) e da Microsoft.
+Un aggiornamento di valutazione si verifica quando sono presenti modifiche al modello sottostanti che influiscono sul punteggio. Le modifiche possono implicare la modifica del mapping dei controlli o altre indicazioni in base alle modifiche normative o ai cambiamenti del prodotto. Gli aggiornamenti di valutazione possono provenire dall'organizzazione (ad esempio, quando [viene](compliance-manager-templates.md#modify-a-template)modificato un modello personalizzato) e da Microsoft.
 
 Se Microsoft aggiorna un modello di Compliance Manager esteso, la valutazione erediterà tali aggiornamenti una volta accettati. La valutazione manterrà gli attributi aggiuntivi applicati alla valutazione al momento dell'estensione.
 
@@ -277,7 +279,7 @@ La pagina dei dettagli della valutazione mostra anche **un'etichetta di** aggior
 
 Un messaggio nella parte superiore della pagina dei dettagli della valutazione mostra che è disponibile un aggiornamento per tale valutazione. Seleziona il **pulsante Rivedi** aggiornamento nel banner per rivedere le modifiche specifiche e accettare o rinviare l'aggiornamento.
 
-La pagina dei dettagli della valutazione può anche elencare le azioni di miglioramento con un'etichetta **di** aggiornamento in sospeso accanto. Tali aggiornamenti sono per modifiche specifiche alle azioni di miglioramento e devono essere accettati separatamente. Per [altre informazioni, vedere Accettazione degli aggiornamenti per le azioni](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions) di miglioramento.
+La pagina dei dettagli della valutazione può anche elencare le azioni di miglioramento con un'etichetta **di** aggiornamento in sospeso accanto. Tali aggiornamenti sono per modifiche specifiche alle azioni di miglioramento e devono essere accettati separatamente. Per [altre informazioni, vedere Accettazione di aggiornamenti per le azioni](compliance-manager-improvement-actions.md#accepting-updates-to-improvement-actions) di miglioramento.
 
 #### <a name="review-update-to-accept-or-defer"></a>Rivedere l'aggiornamento da accettare o rinviare
 
