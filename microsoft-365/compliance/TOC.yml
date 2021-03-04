@@ -237,6 +237,8 @@
               href: data-loss-prevention-policies.md
             - name: Informazioni sulla prevenzione della perdita di dati degli endpoint
               href: endpoint-dlp-learn-about.md
+            - name: Informazioni sullo scanner locale per la prevenzione della perdita dei dati di Microsoft 365 (anteprima)
+              href: dlp-on-premises-scanner-learn.md
         - name: Introduzione alla prevenzione della perdita dei dati
           items:
             - name: Introduzione ai criteri di prevenzione della perdita dei dati predefiniti
@@ -245,6 +247,8 @@
               href: create-a-dlp-policy-from-a-template.md
             - name: 'Creare, testare e ottimizzare i criteri di prevenzione della perdita dei dati'
               href: create-test-tune-dlp-policy.md
+            - name: Introduzione allo scanner locale per la prevenzione della perdita dei dati di Microsoft 365 (anteprima)
+              href: dlp-on-premises-scanner-get-started.md
             - name: Introduzione alla prevenzione della perdita di dati degli endpoint
               href: endpoint-dlp-getting-started.md
             - name: Configurazione del proxy del dispositivo e delle impostazioni di connessione a internet per la prevenzione della perdita di dati degli endpoint
@@ -269,6 +273,8 @@
               href: dlp-microsoft-teams.md
             - name: Uso di Prevenzione della perdita di dati degli endpoint
               href: endpoint-dlp-using.md
+            - name: Usare lo scanner locale per la prevenzione della perdita dei dati di Microsoft 365 (anteprima)
+              href: dlp-on-premises-scanner-use.md
             - name: Usare notifiche e suggerimenti per i criteri nei criteri di prevenzione della perdita dei dati
               href: use-notifications-and-policy-tips.md
             - name: Elementi inclusi nei modelli dei criteri di prevenzione della perdita dei dati
