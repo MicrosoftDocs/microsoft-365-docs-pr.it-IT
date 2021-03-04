@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Scopri come aggiungere un altro amministratore.
-ms.openlocfilehash: edeaf39c83271d1ba5be1af175a48fba94e7e2af
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 83b4432858f33f8132647840b746bb5aa23d68b5
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927647"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423178"
 ---
 # <a name="add-an-admin"></a>Aggiungere un amministratore
 
@@ -52,7 +50,7 @@ Se è presente una persona IT esterna che aiuterà a gestire l'azienda, è possi
 
 1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare **Utenti,** **Utenti attivi** e quindi **Aggiungi utente.**
 1. Nella pagina **Configura le nozioni di** base immettere il nome dell'utente, il nome visualizzato e il nome utente.
-1. Selezionare la **casella di controllo Invia password tramite posta** elettronica al completamento per inviare la password dell'utente tramite posta elettronica. Digitare l'indirizzo di posta elettronica. Separare più indirizzi con un punto e virgola. Selezionare **Avanti**.
+1. Selezionare la **casella di controllo Invia password tramite posta** elettronica al completamento per inviare loro la password dell'utente tramite posta elettronica. Digitare l'indirizzo di posta elettronica. Separare più indirizzi con un punto e virgola. Selezionare **Avanti**.
 1. **Nell'elenco a** discesa Seleziona posizione scegliere la posizione dell'utente.
 1. Selezionare la **casella di controllo Crea utente senza licenza** del prodotto. Non è necessario assegnare a questo utente una licenza perché gestirà solo i servizi di Microsoft 365 e non li usa. Selezionare **Avanti**.
 1. Espandere la **sezione** Ruoli. Deselezionare la casella di controllo accanto al ruolo corrente dell'utente e quindi scegliere **Amministratore globale.** Selezionare **Avanti**.

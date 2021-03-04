@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Panoramica del modo in cui Microsoft 365 consente di lavorare ovunque.
-ms.openlocfilehash: 55327fff51b67107aab7069c0036e8ded9b73cbb
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 7c3a0ee4b69f7fa4e07064f0adc108afe70bd54d
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927779"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421682"
 ---
 # <a name="work-from-anywhere---overview"></a>Lavorare da qualsiasi luogo - panoramica
 
@@ -63,7 +61,7 @@ Archiviare i file aziendali in Microsoft Teams o SharePoint. In questo modo l'ut
 1. Aprire OneDrive ed eseguire l'accesso.
 1. Segui le istruzioni per completare la configurazione e avviare la sincronizzazione.
 
-Serve aiuto? Consigli su [dove archiviare i file,](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790)su come usare l'app [OneDrive per](https://support.microsoft.com/office/448d4051-3a43-4d2e-b1d8-de0aa03c069e) dispositivi mobili e su come [sincronizzare file e cartelle.](https://support.microsoft.com/office/d9262485-9bf8-4ceb-bac2-e83f68cb6a97)
+Serve aiuto? Consigli su [dove archiviare i file,](https://support.microsoft.com/office/c7c20284-bc94-47f4-9728-d28e9daf0790)su come [usare l'app OneDrive per](https://support.microsoft.com/office/448d4051-3a43-4d2e-b1d8-de0aa03c069e) dispositivi mobili e su come [sincronizzare file e cartelle.](https://support.microsoft.com/office/d9262485-9bf8-4ceb-bac2-e83f68cb6a97)
 
 ## <a name="open-and-edit-your-files-from-any-device"></a>Aprire e modificare i file da qualsiasi dispositivo
 
@@ -104,6 +102,6 @@ Dal portatile:
 
 Dal telefono:
 
-- Sia prima che durante la riunione, l'avviso per la riunione verrà visualizzato nell'elenco delle chat o in una conversazione di canale in Microsoft Teams.
+- Sia prima che durante la riunione, l'avviso di riunione verrà visualizzato nell'elenco delle chat o in una conversazione di canale in Microsoft Teams.
 
     È possibile partecipare da tale avviso riunione o dal **calendario** della :::image type="icon" source="../media/meetings-icon.png" border="false"::: riunione
