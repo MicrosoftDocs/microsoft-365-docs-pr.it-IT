@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Informazioni su come spostare i file aziendali in SharePoint.
-ms.openlocfilehash: 7e95e09dda5d2cd7131093e98d2965a55b42cd0a
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: ab19fed6f0ebe473cbe8493ceebc5f4ca7dc9a8f
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927155"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422712"
 ---
 # <a name="move-files-to-sharepoint"></a>Spostare file in SharePoint
 

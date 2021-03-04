@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Informazioni su come eliminare gli utenti in Microsoft 365 per le aziende.
-ms.openlocfilehash: 01c26431947950195c5fc711d8bd0d82c808beec
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 902bf9d22a904064562346d2451cef596b71cca6
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927275"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422748"
 ---
 # <a name="delete-a-user"></a>Eliminare un utente
 
@@ -42,7 +40,7 @@ Quando un dipendente lascia l'azienda, è necessario rimuoverlo da Microsoft 365
 1. Selezionare l'utente che si desidera rimuovere e quindi selezionare **Elimina utente.**
 1. Seleziona la casella per rimuovere la licenza e seleziona la casella per rimuovere gli alias di posta elettronica.
 1. Se l'utente disponeva di autorizzazioni delegate per la cassetta postale, è possibile rimuoverle qui.
-1. Selezionare la casella per concedere a un altro utente l'accesso a OneDrive dell'ex dipendente e cercare tale utente.
+1. Seleziona la casella per concedere a un altro utente l'accesso a OneDrive dell'ex dipendente e cerca tale utente.
 1. Selezionarne il nome.
 1. Questo utente avrà ora 30 giorni per spostare i file in un nuovo percorso.
 1. Selezionare la casella per concedere a un altro utente l'accesso alla posta elettronica dell'ex dipendente e scegliere Seleziona un **utente e impostare le opzioni di posta elettronica.**

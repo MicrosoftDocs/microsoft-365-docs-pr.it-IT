@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Ulteriori informazioni sull'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 3070d6e9ce035786291fab4557648ab6bc520540
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: b936a42629086c8674bd2d89454e98e387b15efc
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927587"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423036"
 ---
 # <a name="overview-of-the-microsoft-365-admin-center"></a>Informazioni generali sull'interfaccia di amministrazione di Microsoft 365
 
@@ -50,6 +48,6 @@ Seleziona un utente per visualizzare altre opzioni, ad esempio la gestione delle
 
 Per abilitare altre funzionalità disponibili con l'abbonamento, selezionare **Installazione.** Qui è possibile attivare la sicurezza di accesso, la protezione delle app per dispositivi mobili, DLP e altre funzionalità incluse nell'abbonamento.
 
-Se è necessario supporto in qualsiasi momento, scegliere **Serve aiuto.** Immetti la domanda e quindi controlla i collegamenti visualizzati. If you don't get your answer here, choose **Contact support** to open a service request. 
+Se è necessario supporto in qualsiasi momento, scegliere **Serve aiuto.** Immettere la domanda, quindi controllare i collegamenti visualizzati. If you don't get your answer here, choose **Contact support** to open a service request. 
 
 Per altre informazioni sulla gestione di fatturazione, password, utenti e amministratori, vedere le altre lezioni di questo corso.

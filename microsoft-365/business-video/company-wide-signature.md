@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Informazioni su come creare una firma di posta elettronica a livello aziendale.
-ms.openlocfilehash: 3a9623837b3a68fa8cc0fb378293ec463d9bb789
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 22676ef6464e15e63efbe77d6dd6e88b4e494896
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928304"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422808"
 ---
 # <a name="create-a-company-wide-email-signature"></a>Creare una firma di posta elettronica a livello aziendale
 
@@ -44,9 +42,9 @@ In ogni messaggio di posta elettronica inviato dagli utenti dell'organizzazione 
 1. Nella pagina **Nuova** regola:
     1. Immettere un nome per la regola.
     1. **Nell'elenco a** discesa Applica questa regola se selezionare Applica a tutti i **messaggi.**
-    1. **Nell'elenco** a discesa Fare quanto segue verificare che **sia** visualizzato Aggiungi dichiarazione di non responsabilità.
+    1. **Nell'elenco** a discesa Fare quanto segue verificare **che** sia visualizzato Aggiungi dichiarazione di non responsabilità.
     1. Sul lato destro della pagina, selezionare Immetti testo **e** quindi immettere il testo per la firma di posta elettronica nella casella di testo Specifica dichiarazione **di** non responsabilità. È possibile migliorare l'aspetto della firma formattazione del testo con HTML.
-    1. Se vuoi che un'immagine venga visualizzata nella firma, dovrai usare un URL disponibile pubblicamente per tale immagine. Passare all'immagine sul Web, fare clic con il pulsante destro del mouse e scegliere **Copia indirizzo immagine.** Incollare l'indirizzo nella **casella di testo** Specifica dichiarazione di non responsabilità. Selezionare **OK,** quindi scorrere verso il basso.
+    1. Se vuoi che un'immagine venga visualizzata nella firma, dovrai usare un URL disponibile pubblicamente per tale immagine. Passare all'immagine sul Web, fare clic con il pulsante destro del mouse su di essa e selezionare **Copia indirizzo immagine.** Incollare l'indirizzo nella **casella di testo** Specifica dichiarazione di non responsabilità. Selezionare **OK,** quindi scorrere verso il basso.
     1. Per assicurarsi che la firma funzioni con i messaggi di posta elettronica crittografati, aggiungere un'opzione di fallback. A destra della pagina scegliere **Seleziona** uno, **Scegliere** Ritorno a capo e quindi **OK.**
     1. Scorrere verso il basso e lasciare la modalità impostata **su Applica** e quindi selezionare **Salva.**
 1. Verrà visualizzato un messaggio di avviso. Selezionare **Sì** per applicare la regola a tutti i messaggi futuri.

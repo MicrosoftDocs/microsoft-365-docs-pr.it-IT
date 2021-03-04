@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Informazioni su come ottenere assistenza o supporto per gli amministratori in Microsoft 365 Business Premium.
-ms.openlocfilehash: bcfe140ec87b50048db570ad4efe4575135b3191
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 852b931f4710ad4117560485002ebe10ef97d3ad
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927167"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422580"
 ---
 # <a name="get-help-or-support"></a>Ottenere assistenza o supporto tecnico
 
@@ -36,7 +34,7 @@ ms.locfileid: "49927167"
 
 È necessario parlare subito con qualcuno? Gli amministratori devono avere i dettagli dell'account pronti quando chiami il supporto.
 
-Se non si è un amministratore Provare [il supporto Microsoft](https://go.microsoft.com/fwlink/?linkid=860695) per gli utenti finali di home e business.
+Se non si è un amministratore Provare [il supporto Microsoft](https://go.microsoft.com/fwlink/?linkid=860695) per gli utenti finali di home page e aziende.
 
 - **Negli Stati Uniti, chiamare il numero 1 800 865 9408.**
 - **In Australia, chiamare il numero 1 800 197 503.**

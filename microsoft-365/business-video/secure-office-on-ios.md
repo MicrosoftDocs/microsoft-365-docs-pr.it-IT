@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Informazioni su come proteggere le app di Office in iOS con Microsoft 365 Business Premium.
-ms.openlocfilehash: fd7fdd32500f9a2362ac29059abe9424d045c206
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 197041a4eb9ada65f4b6046d93f2a856cbdfb40d
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928031"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422112"
 ---
 # <a name="secure-office-apps-on-ios"></a>Proteggere le app di Office in iOS
 
@@ -40,8 +38,8 @@ Puoi configurare un criterio di accesso utente che richiede agli utenti mobili d
 
 1. Accedere all'interfaccia di amministrazione di Microsoft 365.
 1. In **Criteri** scegliere **Aggiungi criterio.**
-1. Nel riquadro **Aggiungi criterio** immettere un nome **in** Nome criterio e scegliere il tipo di criterio desiderato in Tipo **di criterio.**
-1. Attivare Gestisci **la modalità di accesso degli** utenti ai file di Office nei dispositivi mobili e quindi verificare che le tre impostazioni seguenti siano attivate:
+1. Nel riquadro **Aggiungi criterio** immettere un nome in **Nome** criterio e scegliere il tipo di criterio desiderato in Tipo **di criterio.**
+1. Attivare Gestisci **il modo in cui gli utenti accedono** ai file di Office nei dispositivi mobili e quindi verificare che le tre impostazioni seguenti siano attivate:
     - **Richiedi un PIN o l'impronta digitale per accedere alle app di Office**
     - **Proteggere i file di lavoro quando i dispositivi vengono smarriti o rubati**
     - **Crittografare i file di lavoro**

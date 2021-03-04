@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Informazioni su come modificare il nome o l'indirizzo di posta elettronica di un utente.
-ms.openlocfilehash: c54665a774803c0386801b226b3f76f019b20321
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: f45f0bb2f2243a6105f6b5f3de89dd4693acbe17
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927407"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422952"
 ---
 # <a name="change-a-users-name-or-email-address"></a>Modificare il nome o l'indirizzo di posta elettronica di un utente
 

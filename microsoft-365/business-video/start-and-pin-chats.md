@@ -9,31 +9,29 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Informazioni su come avviare e aggiungere chat in Microsoft Teams.
-ms.openlocfilehash: 22a24a533f4d3627ac66ab8e0472071ff88eb516
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 02e7336a5de51526e7c1535eb62724823753d8a0
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927815"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421884"
 ---
 # <a name="chat-with-employees-and-customers"></a>Chattare con dipendenti e clienti
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWedV6?autoplay=false]
 
-È possibile chattare internamente con i colleghi o chattare con un utente guest, ad esempio un cliente o un partner. Se [l'accesso guest è attivato](https://docs.microsoft.com/microsoftteams/set-up-guests) per l'azienda, è sufficiente digitare un indirizzo di posta elettronica per aggiungere un guest a una chat.
+È possibile chattare internamente con i colleghi o con un utente guest, ad esempio un cliente o un partner. Se [l'accesso guest è attivato](https://docs.microsoft.com/microsoftteams/set-up-guests) per l'azienda, è sufficiente digitare un indirizzo di posta elettronica per aggiungere un guest a una chat.
 
 ## <a name="try-it"></a>Perché non provarlo?
 

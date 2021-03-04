@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 68196f126ac470088d7ba5e2923accc492d8764c
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: f2e92967b8951cd0f5a3c394a537404db1d53819
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929551"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50424024"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -64,8 +64,12 @@ invoke FileProfile(x,y)
 
 ## <a name="arguments"></a>Argomenti
 
-- **x**-colonna ID file da utilizzare: `SHA1` , , o ; funzione utilizzata se non `SHA256` `InitiatingProcessSHA1` `InitiatingProcessSHA256` `SHA1` specificata
+- **x**- colonna ID file da utilizzare: , , o ; viene utilizzata `SHA1` dalla funzione se non `SHA256` `InitiatingProcessSHA1` `InitiatingProcessSHA256` `SHA1` specificata
 - **y**: limite al numero di record da arricchire, da 1 a 1000; utilizza 100 se non specificato
+
+
+>[!TIP]
+> Le funzioni di arricchimento mostreranno informazioni supplementari solo quando sono disponibili. La disponibilità delle informazioni è varia e dipende da molti fattori. Tenere presente questa considerazione quando si usa FileProfile() nelle query o nella creazione di rilevamenti personalizzati. Per ottenere risultati ottimali, è consigliabile utilizzare la funzione FileProfile() con SHA1.
 
 ## <a name="examples"></a>Esempi
 

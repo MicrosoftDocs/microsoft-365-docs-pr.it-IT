@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Scopri come ospitare riunioni online per la tua azienda.
-ms.openlocfilehash: 178091c5233da5e96ed6c9f074b5418cc00c4155
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 18a142700e8b83545219ddabf17be7d562037140
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926127"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422316"
 ---
 # <a name="host-online-meetings-for-your-business"></a>Ospitare riunioni online per l'azienda
 
@@ -65,7 +63,7 @@ Usare Microsoft Teams per partecipare alle riunioni sia con i dipendenti dell'az
 1. Nel riquadro di spostamento sinistro di Microsoft Teams scegliere **Riunioni.**
 1. Aprire la riunione a cui si vuole partecipare e scegliere **Partecipa alla riunione di Microsoft Teams.**
 1. All'apertura della riunione, scegliere **Partecipa ora.**
-1. Qualsiasi client invitato alla riunione aprirà la riunione nel calendario, selezionerà il collegamento alla riunione, scarierà l'app Teams o la aprirà sul Web, immetterà il nome e scegli **Partecipa.**
+1. Qualsiasi client invitato alla riunione aprirà la riunione nel calendario, selezionerà il collegamento alla riunione, scarierà l'app Teams o la aprirà sul Web, immetterne il nome e scegliere **Partecipa.**
 1. Quando viene visualizzato il client nella sala di attesa, scegliere **Ammetti** per consentirgli di accedere.
 1. Non appena tutti si uniscono, è possibile avviare la riunione.
  
@@ -81,4 +79,4 @@ Serve aiuto? Vedere [Avviare una chiamata da una chat in Teams.](https://support
 
 [6 modi per rendere più efficienti le riunioni virtuali](https://products.office.com/en-us/business/articles/6-ways-to-make-virtual-meetings-more-efficient)
 
-[Creare agende per le riunioni online](https://products.office.com/en-us/business/articles/6-ways-to-make-your-online-meeting-agendas-pop)
+[Rendere pop le agende delle riunioni online](https://products.office.com/en-us/business/articles/6-ways-to-make-your-online-meeting-agendas-pop)

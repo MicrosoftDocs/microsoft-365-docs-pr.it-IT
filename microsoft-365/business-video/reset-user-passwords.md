@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Informazioni su come reimpostare le password utente in Microsoft 365 per le aziende.
-ms.openlocfilehash: 07752229e30c2a15ad1ece120a07b947bbe9c895
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 897ee87149c779d3de6d2175993d17e88dfc270f
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928098"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422268"
 ---
 # <a name="reset-passwords-for-your-users"></a>Reimpostare le password per gli utenti
 

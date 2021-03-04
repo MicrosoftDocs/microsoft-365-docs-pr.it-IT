@@ -15,12 +15,13 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 74a5b557ae610f8d008ad9d43bd2ccac43179131
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+- m365solution-scenario
+ms.openlocfilehash: a4c7b711c0a977e0980cd0c72f9369833e9e5c65
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613844"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423597"
 ---
 # <a name="information-barriers-in-microsoft-365"></a>Barriere di informazioni in Microsoft 365
 

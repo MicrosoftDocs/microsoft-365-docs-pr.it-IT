@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Informazioni su come interrompere l'inoltro automatico dei messaggi di posta elettronica.
-ms.openlocfilehash: ebbe37ab5c4a60c6ac4b6ebf8877247199460fa1
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: ca4383a3f9d64a123955ebe005d0fad5819d3a5d
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925887"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421800"
 ---
 # <a name="stop-email-auto-forward"></a>Arrestare l'inoltro automatico della posta elettronica
 
@@ -40,11 +38,11 @@ Se un pirata informatico ottiene l'accesso alla cassetta postale di un utente, p
 
 1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare  **Exchange,** flusso di posta e, nella scheda delle regole, selezionare il segno più e scegliere **crea una nuova regola.** 
 1. Selezionare **Altre opzioni.** Assegnare un nome alla nuova regola.
-1. Aprire quindi l'elenco a discesa per **applicare la regola se**, selezionare **il** mittente e quindi è **interno esterno.**
+1. Aprire quindi l'elenco a discesa per **applicare questa regola se**, selezionare **il** mittente e quindi è **interno esterno.**
 1. Selezionare **Interno all'organizzazione** e quindi **OK.**
 1. Scegliere **aggiungi condizione,** aprire l'elenco a discesa, selezionare **Le proprietà del** messaggio, quindi includere il tipo di **messaggio.**
 1. Aprire **l'elenco a** discesa Seleziona tipo di messaggio, scegliere **Inoltro automatico,** quindi **OK.**
-1. Aprire **l'elenco** a discesa Fare quanto segue, selezionare **Blocca il messaggio,** quindi **rifiutare il messaggio e includere una spiegazione.**
+1. Aprire **l'elenco** a discesa Fare quanto segue, selezionare **Blocca il messaggio,** **rifiutare il messaggio e includere una spiegazione.**
 1. Immettere il testo del messaggio per la spiegazione, quindi selezionare **OK.**
 1. Scorrere verso il basso e selezionare **Salva.**
 

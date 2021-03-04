@@ -18,20 +18,27 @@ search.appverid:
 - MOE150
 - MET150
 description: Un classificatore di Microsoft 365 è uno strumento che è possibile formare per riconoscere vari tipi di contenuto fornendogli esempi da esaminare. Questo articolo illustra come creare e formare un classificatore personalizzato e come riqualificarli per aumentare l'accuratezza.
-ms.openlocfilehash: bca1de5edc3efd38f943b02091c3f47d832e6a19
-ms.sourcegitcommit: 54d1a2f363b2d5b63aae258c3cec0573a08f2866
+ms.openlocfilehash: a73acd7665cd23f13329bb5db4e890b0f3b0d861
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49752660"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423295"
 ---
 # <a name="get-started-with-trainable-classifiers"></a>Per iniziare con i classificatori sottoponibili a training
 
 Un classificatore formabile di Microsoft 365 è uno strumento che è possibile formare per riconoscere vari tipi di contenuto fornendogli esempi da esaminare. Una volta preparato, è possibile utilizzarlo per identificare l'elemento per l'applicazione delle etichette di riservatezza di Office, dei criteri di conformità delle comunicazioni e dei criteri delle etichette di conservazione.
 
-La creazione di un classificatore sotto forma di un classificatore sotto forma di training personalizzato implica innanzitutto la creazione di campioni selezionati dall'utente e che corrispondano in modo positivo alla categoria. Quindi, dopo averli elaborati, puoi testare la capacità dei classificatori di prevedere fornendo una combinazione di campioni positivi e negativi. In questo articolo viene illustrato come creare e formare un classificatore personalizzato e come migliorare le prestazioni dei classificatori e dei classificatori pre-addestrati personalizzati nel corso della loro durata tramite la riqualificazione.
+La creazione di un classificatore sotto forma di un classificatore sotto forma di training personalizzato implica innanzitutto la creazione di campioni selezionati dall'utente e che corrispondano in modo positivo alla categoria. Quindi, dopo averli elaborati, puoi testare la capacità dei classificatori di prevedere fornendo una combinazione di campioni positivi e negativi. Questo articolo illustra come creare e formare un classificatore personalizzato e come migliorare le prestazioni dei classificatori e dei classificatori pre-addestrati personalizzati nel corso della loro durata tramite la riqualificazione.
 
 Per ulteriori informazioni sui diversi tipi di classificatori, vedere Informazioni sui classificatori disponibili [per il training.](classifier-learn-about.md)
+
+Guardare questo video per un breve riepilogo della creazione di un classificatore formabile. Dovrai comunque leggere questo articolo completo per ottenere i dettagli.
+
+</br>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWyGL7]
+
 
 ## <a name="prerequisites"></a>Prerequisiti
 
@@ -46,7 +53,7 @@ Per accedere ai classificatori nell'interfaccia utente:
 - L'amministratore globale deve acconsentire esplicitamente al tenant per creare classificatori personalizzati.
 - Il ruolo amministratore di conformità è necessario per formare un classificatore.
 
-Per usare i classificatori in questi scenari, sono necessari account con queste autorizzazioni:
+Saranno necessari account con queste autorizzazioni per usare i classificatori in questi scenari:
 
 - Scenario dei criteri di etichetta di conservazione: ruoli Gestione record e Gestione conservazione 
 - Scenario dei criteri per le etichette di riservatezza: Amministratore della sicurezza, Amministratore conformità, Amministratore dati di conformità
@@ -61,7 +68,7 @@ Per usare i classificatori in questi scenari, sono necessari account con queste 
 
 ### <a name="timeline"></a>Sequenza temporale
 
-Questa sequenza temporale riflette una distribuzione di esempio di classificatori sotto forma di training.
+Questa sequenza temporale riflette una distribuzione di esempio di classificatori sotto forma di sottosezioni.
 
 ![trainable-classifier-timeline](../media/trainable-classifier-deployment-timeline_border.png)
 
@@ -84,11 +91,11 @@ Quando si desidera che un classificatore sotto forma di training identifitta in 
 Dopo che il classificatore sotto forma di training ha elaborato un numero sufficiente di campioni positivi per creare un modello di previsione, devi testare le previsioni che effettua per verificare se il classificatore è in grado di distinguere correttamente tra gli elementi che corrispondono alla categoria e gli elementi che non lo fanno. A tale scopo, seleziona un altro set, probabilmente più grande, di contenuti selezionati dall'utente, costituiti da campioni che dovrebbero rientrare nella categoria e dai campioni che non lo saranno. È consigliabile eseguire il test con dati diversi rispetto ai dati di inizializzazione iniziali forniti per la prima volta. Dopo averli elaborati, puoi passare manualmente attraverso i risultati e verificare se ogni previsione è corretta, errata o non sei sicuro. Il classificatore di cui è possibile eseguire il training usa questo feedback per migliorare il modello di previsione.
 
 > [!TIP]
-> Per ottenere risultati ottimali, devi avere almeno 200 elementi nell'esempio di test impostato con una distribuzione uniforme di corrispondenze positive e negative.
+> Per ottenere risultati ottimali, impostare almeno 200 elementi nell'esempio di test con una distribuzione uniforme di corrispondenze positive e negative.
 
 ## <a name="how-to-create-a-trainable-classifier"></a>Come creare un classificatore di cui è possibile eseguire il training
 
-1. Raccogliere tra 50 e 500 elementi di contenuto di seed. Devono essere solo esempi che rappresentano in modo forte il tipo di contenuto che si desidera venga identificato in modo positivo dal classificatore sotto forma di contenuto nella categoria di classificazione. Per i tipi di file supportati, vedere Default [crawled file name extensions and parsed file types in SharePoint](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) Server .
+1. Raccogliere tra 50 e 500 elementi di contenuto di seed. Questi devono essere solo esempi che rappresentano in modo forte il tipo di contenuto che il classificatore sotto forma di training deve identificare in modo positivo nella categoria di classificazione. Per i tipi di file supportati, vedere [ Default crawled file name extensions and parsed file types in SharePoint](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) Server .
 
    > [!IMPORTANT]
    > Gli elementi di esempio di seed e test non devono essere crittografati e devono essere in inglese.
@@ -107,7 +114,7 @@ Dopo che il classificatore sotto forma di training ha elaborato un numero suffic
 
 5. Choose **Create trainable classifier**.
 
-6. Compilare i valori appropriati per i campi e la categoria di elementi che si desidera identificare da questo `Name` `Description` classificatore sotto forma di training.
+6. Compilare i valori appropriati per i campi e la categoria di elementi che si desidera identificare da `Name` `Description` questo classificatore sotto forma di training.
 
 7. Selezionare l'URL del sito, della raccolta e della cartella di SharePoint Online per il sito di contenuto seme del passaggio 2. Scegliere `Add` .
 
@@ -120,7 +127,7 @@ Dopo che il classificatore sotto forma di training ha elaborato un numero suffic
     > [!div class="mx-imgBorder"]
     > ![Classificatore di cui è possibile eseguire il training pronto per il test](../media/classifier-trainable-ready-to-test-detail.png)
 
-11. Raccogliere almeno 200 elementi di contenuto di test (10.000 max) per ottenere risultati ottimali. Questi devono essere una combinazione di elementi che sono positivi forti, negativi forti e alcuni che sono un po' meno ovvi nella loro natura. Per i tipi di file supportati, vedere Default [crawled file name extensions and parsed file types in SharePoint](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) Server .
+11. Raccogliere almeno 200 elementi di contenuto di test (10.000 max) per ottenere risultati ottimali. Questi devono essere una combinazione di elementi che sono positivi forti, negativi forti e alcuni che sono un po' meno ovvi nella loro natura. Per i tipi di file supportati, vedere [ Default crawled file name extensions and parsed file types in SharePoint](https://docs.microsoft.com/sharepoint/technical-reference/default-crawled-file-name-extensions-and-parsed-file-types) Server .
 
     > [!IMPORTANT]
     > Gli elementi di esempio non devono essere crittografati e devono essere in inglese.
@@ -128,7 +135,7 @@ Dopo che il classificatore sotto forma di training ha elaborato un numero suffic
 12. Inserire il contenuto di test in una cartella di SharePoint Online dedicata solo al contenuto *di test.* Prendere nota dell'URL del sito, della raccolta e della cartella di SharePoint Online.
 
     > [!TIP]
-    > Se si crea un nuovo sito e una nuova cartella per i dati di test, è necessario indicizzare almeno un'ora per tale posizione prima di creare il classificatore di cui è possibile eseguire il training che utilizzerà i dati di seeder.
+    > Se si crea un nuovo sito e una nuova cartella per i dati di test, è necessario indicizzare almeno un'ora per tale posizione prima di creare il classificatore di cui è possibile eseguire il training che utilizzerà i dati di seed.
 
 13. Scegliere `Add items to test` .
 

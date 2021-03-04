@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come creare regole di posta elettronica per impedire ransomware.
-ms.openlocfilehash: 3b45af71aa26beb31e21f5db662091f46343f97d
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+description: Informazioni su come creare regole di posta elettronica per prevenire ransomware.
+ms.openlocfilehash: 0d8b4a9de881f47752ac0bfbf778453d6ee73046
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926115"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422255"
 ---
 # <a name="create-email-rules-to-prevent-ransomware"></a>Creare regole di posta elettronica per impedire ransomware
 
@@ -40,9 +38,9 @@ Microsoft 365 consente di proteggere l'azienda da ransomware impedendo l'apertur
 
 1. Nell'interfaccia di amministrazione di [https://admin.microsoft.com](https://admin.microsoft.com) , scegliere **Exchange** in Interfaccia **di amministrazione.**
 1. Scegliere Flusso di posta dal menu **a sinistra.**
-1. Nella scheda delle regole scegliere la freccia accanto al simbolo più (+), quindi scegliere **Crea una nuova regola.**
+1. Nella scheda delle regole fare clic sulla freccia accanto al simbolo più (+) e quindi **scegliere Crea una nuova regola.**
 1. Nella pagina **nuova regola** immettere un nome per la regola, scorrere verso il basso e quindi scegliere **Altre opzioni.**
-1. In **Applica questa regola se**, selezionare Qualsiasi **allegato** e quindi selezionare l'estensione del file include queste **parole.**
+1. In **Applica questa regola se**, selezionare Qualsiasi **allegato** e quindi selezionare l'estensione **del file che include queste parole.**
 1. Nella casella **in** specificare parole o frasi immettere le estensioni di file a cui si desidera applicare la regola, ad esempio le estensioni di file che possono contenere macro. Usa il simbolo più (+) per aggiungerli uno alla volta.
 
     Per ulteriori informazioni sui tipi di file, vedere [Proteggere da ransomware.](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/secure-your-business-data#ransomware)

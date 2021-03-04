@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Scopri come configurare l'autenticazione a più fattori nel telefono.
-ms.openlocfilehash: b682ec58c73d90b0936c107ab8fef1de5aff867d
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: a41f8b99dfbfc25af0815450b42cb83884e3246e
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925935"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422052"
 ---
 # <a name="set-up-multi-factor-authentication-on-your-phone"></a>Configurare l'autenticazione a più fattori nel telefono
 
@@ -39,7 +37,7 @@ L'autenticazione a più fattori offre maggiore sicurezza per l'azienda. Segui qu
 ## <a name="try-it"></a>Perché non provarlo?
 
 1. Quando accedi a , vedrai il [https://office.com](https://office.com) prompt Ulteriori **informazioni** necessarie. Scegliere **Avanti**.
-1. In **Passaggio 1** scegliere **App per dispositivi mobili** nell'elenco **a** discesa Telefono di autenticazione.
+1. In **Passaggio 1** scegliere **App per dispositivi mobili** nell'elenco a discesa Telefono di autenticazione. 
 1. In Come vuoi usare l'app per dispositivi mobili, seleziona il metodo che vuoi usare per accedere:
     - Seleziona **Ricevi notifiche per la verifica per** l'autenticazione direttamente dalla tua app per dispositivi mobili, che può includere l'autenticazione tramite impronta digitale.
     - Selezionare **Usa codice di verifica** per immettere un nuovo codice di verifica ogni volta che si esegue l'autenticazione.

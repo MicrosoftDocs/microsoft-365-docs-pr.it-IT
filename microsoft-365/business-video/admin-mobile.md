@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Informazioni su come installare l'app per dispositivi mobili Di amministrazione di Microsoft 365 nel telefono.
-ms.openlocfilehash: 110e691858537a90a7bee03b4318a5f415b3e83f
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 43c2c2905dec978a520e2bf2d4b9b2aa7318b7a7
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927539"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423012"
 ---
 # <a name="install-the-microsoft-365-admin-mobile-app-on-your-phone"></a>Installare l'app Microsoft 365 Admin per dispositivi mobili nel telefono
 

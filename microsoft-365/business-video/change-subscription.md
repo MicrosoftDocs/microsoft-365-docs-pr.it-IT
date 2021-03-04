@@ -9,32 +9,30 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Informazioni su come spostare gli utenti in un abbonamento diverso.
-ms.openlocfilehash: b3b82dcf029395dbbe49d0e0ea87f87f4494b4f0
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 158201eb4bcdf7e4b7451c1811dcc68692f341ff
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927419"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422964"
 ---
 # <a name="move-users-to-different-subscriptions"></a>Spostare gli utenti in sottoscrizioni diverse
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SBE2?autoplay=false]
 
-Quando gli utenti cambiano ruolo, potrebbero aver bisogno di funzionalità non disponibili nell'abbonamento a Microsoft 365 Business Premium corrente. In questo caso, è possibile aggiungere un nuovo abbonamento che includa tali funzionalità e assegnare licenze alle persone che ne hanno bisogno.
+Quando gli utenti cambiano ruolo, potrebbero aver bisogno di funzionalità non disponibili nell'abbonamento a Microsoft 365 Business Premium corrente. In questo caso, è possibile aggiungere un nuovo abbonamento che includa tali funzionalità e assegnare licenze agli utenti che ne hanno bisogno.
 
 ## <a name="try-it"></a>Perché non provarlo?
 
@@ -56,5 +54,5 @@ Quando gli utenti cambiano ruolo, potrebbero aver bisogno di funzionalità non d
 ### <a name="remove-an-unused-license"></a>Rimuovere una licenza inutilizzata
 
 1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare **Fatturazione** e quindi Prodotti **& servizi.**
-1. Selezionare l'abbonamento che si desidera modificare e quindi selezionare **Aggiungi/rimuovi licenze.**
-1. Usare la freccia in giù per ridurre il numero di licenze per l'abbonamento e quindi selezionare **Invia modifica.** A questo punto si dispone del numero di licenze giusto per gli utenti.
+1. Selezionare l'abbonamento che si desidera modificare e quindi **selezionare Aggiungi/rimuovi licenze.**
+1. Usare la freccia in giù per ridurre il numero di licenze per l'abbonamento e quindi selezionare **Invia modifica.** A questo punto si dispone del numero di licenze per gli utenti.

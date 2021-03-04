@@ -9,32 +9,30 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Informazioni su come aggiungere un altro dominio all'abbonamento.
-ms.openlocfilehash: a5df440f3b7e28c2bdbc69f9383a8399ef193ed0
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: fef3dc06f270b79cc7f9e729b39727c9116b923d
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927611"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423084"
 ---
 # <a name="add-another-domain"></a>Aggiungere un altro dominio
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4dN8c?autoplay=false]
 
-L'azienda potrebbe avere bisogno di più nomi di dominio per scopi diversi. Ad esempio, potresti voler aggiungere un'ortografia diversa del nome della società perché i clienti lo stanno già usando e le loro comunicazioni non sono riuscite a raggiungere l'utente.
+L'azienda potrebbe avere bisogno di più nomi di dominio per scopi diversi. Ad esempio, potrebbe essere necessario aggiungere un'ortografia diversa del nome della società perché i clienti lo stanno già usando e le loro comunicazioni non sono riuscite a raggiungere l'utente.
 
 ## <a name="try-it"></a>Perché non provarlo?
 

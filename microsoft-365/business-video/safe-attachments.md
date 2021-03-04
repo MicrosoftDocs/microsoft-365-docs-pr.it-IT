@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Informazioni su come gestire allegati sicuri.
-ms.openlocfilehash: 75146a05a091cf91a77ee3bc9bb63c813d84dce3
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 89297ec7daeca4b20c01baa9f9554d4574d9df6a
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926103"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422280"
 ---
 # <a name="manage-safe-attachments"></a>Gestire allegati sicuri
 
@@ -40,7 +38,7 @@ Microsoft Defender per Office 365, in precedenza denominato Microsoft 365 ATP o 
 
 1. Accedere [all'interfaccia di amministrazione](https://admin.microsoft.com)e selezionare **Installazione.**
 1. Scorrere verso il basso **fino ad aumentare la protezione dalle minacce avanzate.** Selezionare **Visualizza,** **Gestisci** e quindi **allegati sicuri ATP.**
-1. Selezionare la regola per gli allegati sicuri e quindi scegliere **l'icona** Modifica.
+1. Selezionare la regola degli allegati sicuri e quindi scegliere **l'icona** Modifica.
 1. Selezionare **le** impostazioni e quindi verificare che l'opzione Blocca sia selezionata.
 1. Scorrere verso il basso. Choose **Enable redirect**, and enter your email address or the address of the person you want to review the blocked attachments.
 1. Selezionare **applicato a** e quindi selezionare il nome di dominio.
@@ -51,4 +49,4 @@ La regola degli allegati sicuri di ATP è stata aggiornata.
 
 Ora che la protezione è stata impostata, non sarà possibile aprire un file dannoso da Outlook, OneDrive, SharePoint o Teams. I file interessati avranno schermate rosse accanto. Se qualcuno tenta di aprire un file bloccato, riceverà un messaggio di avviso.
 
-Dopo che il criterio è stato in esecuzione per un po', visitare la pagina Report per vedere cosa è stato analizzato.
+Dopo che il criterio è stato in esecuzione per un po', visita la pagina Report per vedere cosa è stato analizzato.

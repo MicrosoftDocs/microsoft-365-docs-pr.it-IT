@@ -15,12 +15,13 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 7fecfd7088f65effd6addddc51c1236c7b2af191
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+- m365solution-scenario
+ms.openlocfilehash: a5cd9d62670b35f7093a3d38cf9e499df407de97
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613870"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423809"
 ---
 # <a name="privileged-access-management-in-microsoft-365"></a>Gestione degli accessi privilegiati in Microsoft 365
 

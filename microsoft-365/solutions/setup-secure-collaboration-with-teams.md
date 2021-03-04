@@ -16,26 +16,26 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 description: Informazioni su come configurare una collaborazione sicura sui contenuti in Teams per proteggere i dati in base alla riservatezza.
-ms.openlocfilehash: c92dc6dbf62d3fa0cb00307447b3d5a793830394
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: c7881328da2ef78d043b12db29f50b961d79b2cb
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233857"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423994"
 ---
 # <a name="set-up-secure-collaboration-with-microsoft-365"></a>Proteggere la collaborazione con Microsoft 365
 
-La possibilità di condividere facilmente le informazioni con le persone giuste, evitando il sovrastono, è fondamentale per il successo di un'organizzazione. Ciò include la possibilità di condividere i dati sensibili in modo sicuro solo con gli utenti che devono accedervi. A seconda del progetto, potrebbe essere incluso la condivisione di dati sensibili con persone esterne all'organizzazione.
+La possibilità di condividere facilmente le informazioni con le persone giuste, evitando il sovrastono, è fondamentale per il successo di un'organizzazione. Ciò include la possibilità di condividere i dati sensibili in modo sicuro solo con gli utenti che devono accedervi. A seconda del progetto, ciò potrebbe includere la condivisione di dati sensibili con persone esterne all'organizzazione.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxMmL?autoplay=false]
 
-Questa guida alla soluzione di collaborazione include due componenti che consentono di:
+Questa guida alla soluzione di collaborazione include due componenti utili:
 - Distribuire Microsoft Teams con il giusto livello di protezione per ogni progetto
 - Configurare la condivisione esterna con le impostazioni di sicurezza appropriate per ogni progetto
 
 ![Distribuire Teams con una protezione appropriata e configurare la condivisione esterna con le impostazioni di sicurezza appropriate](..\media\solutions-architecture-center\secure-collaboration-overview.png)
 
-Se gli strumenti di collaborazione sul contenuto versatili e facili da usare non sono disponibili, gli utenti spesso collaborano inviando tramite posta elettronica i documenti. Si tratta di un metodo di collaborazione noioso e rischioso per gli errori e può aumentare il rischio di una condivisione inappropriata delle informazioni. Se gli utenti trovano troppo difficile condividere le informazioni, potrebbero tornare a usare prodotti consumer non regolamentati dall'IT. Questo può rappresentare un rischio ancora maggiore.
+Se non sono disponibili strumenti di collaborazione sul contenuto versatili e di facile utilizzo, gli utenti spesso collaboreranno inviando tramite posta elettronica i documenti. Si tratta di un metodo di collaborazione noioso e rischioso per gli errori e può aumentare il rischio di una condivisione inappropriata delle informazioni. Se gli utenti trovano troppo difficile condividere le informazioni, potrebbero tornare a usare prodotti consumer non regolamentati dall'IT. Questo può rappresentare un rischio ancora maggiore.
 
 Con Microsoft 365, è possibile distribuire Teams con un'ampia gamma di configurazioni che consentono di:
 
@@ -43,7 +43,7 @@ Con Microsoft 365, è possibile distribuire Teams con un'ampia gamma di configur
 - Abilitare una collaborazione semplice
 - Creare un equilibrio tra sicurezza e usabilità che aumenta la soddisfazione degli utenti e riduce il rischio di shadow IT
 
-La maggior parte delle organizzazioni dispone di una vasta gamma di informazioni, con diversi gradi di riservatezza e diversi gradi di impatto aziendale se le informazioni vengono condivise in modo inappropriato. A seconda della riservatezza di una determinata informazione, è possibile consentire la condivisione con:
+La maggior parte delle organizzazioni ha un'ampia gamma di informazioni, con diversi gradi di riservatezza e diversi gradi di impatto aziendale se le informazioni vengono condivise in modo inappropriato. A seconda della riservatezza di una determinata informazione, è possibile consentire la condivisione con:
 
 - Chiunque (non autenticato)
 - Persone all'interno dell'organizzazione
@@ -52,7 +52,7 @@ La maggior parte delle organizzazioni dispone di una vasta gamma di informazioni
 
 Le informazioni, ad esempio le opuscoli di marketing, sono destinate alla condivisione su vasta base all'esterno dell'organizzazione. Informazioni come i menu della mensa non sono destinate alla condivisione esterna, ma non avrebbero alcun impatto aziendale se fossero condivise esternamente. Questi tipi di informazioni non necessitano di alcuna protezione.
 
-Le stesse depliant marketing, mentre sono in fase di sviluppo, potrebbero essere condivise solo all'interno dell'organizzazione. In questo caso, le impostazioni di condivisione predefinite in Teams potrebbero essere sufficienti.
+Le stesse depliant marketing, in fase di sviluppo, potrebbero essere condivise solo all'interno dell'organizzazione. In questo caso, le impostazioni di condivisione predefinite in Teams potrebbero essere sufficienti.
 
 Le informazioni su un nuovo prodotto in fase di sviluppo potrebbero essere considerate sensibili, anche all'interno dell'organizzazione. In questo caso potrebbe essere appropriato un livello di protezione maggiore. Ad esempio, è possibile limitare l'accesso a queste informazioni ai membri di un team specifico. A seconda del progetto, potrebbe essere necessario collaborare con persone esterne all'organizzazione, ad esempio un fornitore o un'organizzazione partner.
 
@@ -71,11 +71,15 @@ Per configurare la collaborazione sicura, usare queste funzionalità e funzional
 | Microsoft Teams   | Accesso guest, team privati, canali privati | Microsoft 365 E1, E3 ed E5 |
 | Conformità di Microsoft 365  | Etichette di riservatezza    | Microsoft 365 E3 e E5 |
 
+### <a name="collaboration-governance"></a>Collaborazione di governance
+
+Microsoft 365 offre molte opzioni per la governance della soluzione di collaborazione. È consigliabile utilizzare questo contenuto di distribuzione insieme al contenuto [sulla governance](collaboration-governance-overview.md) della collaborazione per creare la soluzione di collaborazione migliore per l'organizzazione.
+
 ### <a name="using-teams-for-all-kinds-of-data"></a>Uso di Teams per tutti i tipi di dati
 
-Per gestire l'accesso alle informazioni con sensibilità diverse, sono stati sviluppati tre [diversi livelli di protezione per Teams.](configure-teams-three-tiers-protection.md) È possibile personalizzare uno qualsiasi di questi livelli per soddisfare meglio le esigenze o l'azienda. 
+Per gestire l'accesso alle informazioni con sensibilità diverse, sono stati sviluppati tre [diversi livelli di protezione per Teams.](configure-teams-three-tiers-protection.md) È possibile personalizzare uno qualsiasi di questi livelli per soddisfare meglio le esigenze o la propria azienda. 
 
-![Immagine di scorrimento per poster dell'architettura logica di Teams](../media/solutions-architecture-center/Teams-tiers-of-protection-1.png)
+![Immagine di tre livelli di protezione per Teams](../media/solutions-architecture-center/Teams-tiers-of-protection-1.png)
 
 
 Questi *livelli,* di *base,* sensibili e altamente sensibili, aumentano gradualmente le protezioni che impediscono la sovrascrittura e la potenziale perdita di informazioni, come illustrato nella tabella seguente. 
@@ -103,11 +107,11 @@ Iniziare con il livello di base e  quindi  aggiungere team che usano i livelli s
 - [Configurare team con la protezione dei dati sensibili](configure-teams-sensitive-protection.md)
 - [Configurare team con la protezione dei dati altamente sensibili](configure-teams-highly-sensitive-protection.md)
 
-Se si dispone di un progetto altamente sensibile che richiede una protezione aggiuntiva dalla condivisione anche all'interno dell'organizzazione, è possibile configurare un team che utilizza una propria etichetta di riservatezza per crittografare i file in modo che solo i membri del team possano leggerli. Per [informazioni dettagliate, vedere Configurare un team con isolamento](secure-teams-security-isolation.md) di sicurezza.
+Se si dispone di un progetto altamente sensibile che richiede una protezione aggiuntiva dalla condivisione anche all'interno dell'organizzazione, è possibile configurare un team che utilizza una propria etichetta di riservatezza per crittografare i file in modo che solo i membri del team possano leggerli. Per [informazioni dettagliate, vedere](secure-teams-security-isolation.md) Configurare un team con isolamento di sicurezza.
 
 ### <a name="sharing-with-people-outside-your-organization"></a>Condivisione con persone esterne all'organizzazione
 
-Potrebbe essere necessario condividere informazioni di riservatezza con persone esterne [all'organizzazione.](collaborate-with-people-outside-your-organization.md) Questo può variare dalla condivisione di un singolo documento con una sola persona alla collaborazione a un progetto principale con un'organizzazione partner di grandi dimensioni o con professionisti di tutto il mondo. In Microsoft 365, questa gamma di condivisione esterna può essere eseguita facilmente e con le misure di sicurezza appropriate per proteggere le informazioni riservate.
+Potrebbe essere necessario condividere informazioni di riservatezza con persone esterne [all'organizzazione.](collaborate-with-people-outside-your-organization.md) Questo può variare dalla condivisione di un singolo documento con una sola persona alla collaborazione su un progetto principale con un'organizzazione partner di grandi dimensioni o con professionisti di tutto il mondo. In Microsoft 365, questa gamma di condivisione esterna può essere eseguita facilmente e con le misure di sicurezza appropriate per proteggere le informazioni riservate.
 
 Queste risorse consentono di iniziare a configurare l'ambiente per collaborare con persone esterne all'organizzazione:
 
@@ -122,6 +126,76 @@ A seconda della riservatezza delle informazioni condivise, è possibile aggiunge
 - [Creare un ambiente di condivisione guest sicuro](create-secure-guest-sharing-environment.md)
 
 Se si ha un progetto principale con un'organizzazione partner, è possibile utilizzare Azure Entitlement Management per gestire gli utenti guest di tale organizzazione in un team configurato per il progetto. Per informazioni dettagliate, vedere Creare una [extranet B2B con utenti guest](b2b-extranet.md) gestiti.
+
+
+
+## <a name="training-for-administrators"></a>Formazione per gli amministratori
+
+Questi moduli di formazione di Microsoft Learn consentono di apprendere le funzionalità di collaborazione, governance e identità in Teams e SharePoint.
+
+#### <a name="teams"></a>Teams
+
+|Formazione:|Gestione della collaborazione in team con Microsoft Teams|
+|:---|:---|
+|![Icona formazione sulla collaborazione di Teams](../media/manage-team-collaboration-with-microsoft-teams.svg)|Gestione della collaborazione in team con Microsoft Teams descrive caratteristiche e funzionalità di Microsoft Teams, l'hub centrale per la collaborazione in team di Microsoft 365. Viene spiegato in che modo usare Teams per facilitare il lavoro in team e la comunicazione all'interno dell'organizzazione, in locale e in remoto, su un'ampia gamma di dispositivi, dai PC fissi ai tablet o telefoni, sfruttando al contempo tutte le interessanti funzionalità delle applicazioni di Office 365. Si potrà acquisire una panoramica del modo in cui Teams offre un ambiente completo e flessibile per la collaborazione tra applicazioni e dispositivi. Questo percorso di apprendimento può essere utile per prepararsi per la certificazione Microsoft 365 Certified: Teams Administrator Associate.<br><br>2 ore 17 min - Percorso di apprendimento - 5 moduli|
+
+> [!div class="nextstepaction"]
+> [Avviare >](https://docs.microsoft.com/learn/modules/m365-teams-collab-prepare-deployment/introduction/)
+
+#### <a name="sharepoint"></a>SharePoint
+
+|Formazione:|Collaborare con SharePoint in Microsoft 365|
+|:---|:---|
+|![Icona formazione di SharePoint](../media/collaborate-with-sharepoint-in-microsoft-365.svg)|Gestire il contenuto condiviso con Microsoft SharePoint introduce alle funzionalità e caratteristiche di SharePoint e al suo funzionamento con Microsoft 365. Verranno apprese informazioni riguardanti i diversi tipi di siti di SharePoint, inclusi i siti hub, nonché la protezione delle informazioni, la creazione di report e il monitoraggio. Verranno inoltre apprese informazioni su come utilizzare la condivisione di file e cartelle di SharePoint per ottimizzare la collaborazione, su come condividere i file esternamente e come gestire i siti di SharePoint nell'interfaccia di amministrazione di SharePoint. Questo percorso di apprendimento può essere utile per prepararsi per la certificazione Microsoft 365 Certified: Teamwork Administrator Associate.<br><br>1 hr 14 min - Learning Path - 4 Modules|
+
+> [!div class="nextstepaction"]
+> [Avviare >](https://docs.microsoft.com/learn/modules/m365-teams-sharepoint-plan-sharepoint/introduction/)
+
+#### <a name="information-protection"></a>Protezione delle informazioni
+
+|Formazione:|Proteggere le informazioni aziendali con Microsoft 365|
+|:---|:---|
+|![Icona formazione sulla protezione delle informazioni di Teams](../media/protect-enterprise-information-microsoft-365.svg)|Proteggere le informazioni dell'organizzazione è più impegnativo che mai. Il percorso di apprendimento Proteggere le informazioni aziendali con Microsoft 365 spiega come proteggere le informazioni sensibili da un elevato numero di condivisioni o da uso improprio, come individuare e classificare i dati, come proteggerli con etichette di riservatezza e come monitorare e analizzare le informazioni sensibili per evitare perdite. Questo percorso di apprendimento può aiutare a prepararsi per microsoft 365 Certified: Security Administrator Associate e Microsoft 365 Certified: Enterprise Administration Expert certifications..<br><br>1 hr - Percorso di apprendimento - 5 moduli|
+
+> [!div class="nextstepaction"]
+> [Avviare >](https://docs.microsoft.com/learn/modules/m365-security-info-overview/introduction/)
+
+#### <a name="identity-and-access"></a>Identità e accesso
+
+|Formazione:|Proteggere l'identità e l'accesso con Azure Active Directory|
+|:---|:---|
+|![Icona formazione su identità e accesso](../media/protect-identity-and-access-with-microsoft-365.svg)|Il percorso formativo Identità e accesso copre le più recenti tecnologie di identità e accesso, gli strumenti per rafforzare l'autenticazione e le linee guida per la protezione delle identità all'interno dell'organizzazione. Le tecnologie di identità e accesso di Microsoft consentono di proteggere l'identità dell'organizzazione, sia locali che nel cloud, e di offrire agli utenti la possibilità di lavorare in tutta sicurezza da qualsiasi luogo. Questo percorso di apprendimento può essere utile per prepararsi per le certificazioni Microsoft 365 Certified: Security Administrator Associate e Microsoft 365 Certified: Enterprise Administration Expert.<br><br>2 ore 52 min - Percorso di apprendimento - 6 moduli|
+
+> [!div class="nextstepaction"]
+> [Avviare >](https://docs.microsoft.com/learn/modules/m365-identity-overview/introduction/)
+
+## <a name="training-for-end-users"></a>Formazione per gli utenti finali
+
+Questi moduli di formazione possono aiutare gli utenti a usare Teams, i gruppi e SharePoint per la collaborazione in Microsoft 365.
+
+|Teams|SharePoint|
+|:---|:---|
+|![Configurare e personalizzare l'icona di formazione del team](../media/set-up-customize-team-training.png)<br>**[Configurare e personalizzare il team](https://support.microsoft.com/office/702a2977-e662-4038-bef5-bdf8ee47b17b)**|![Icona di formazione sulla condivisione e la sincronizzazione di SharePoint](../media/sharepoint-share-sync-training.png)<br>**[Condividere e sincronizzare](https://support.microsoft.com/office/98cb2ff2-c27e-42ea-b055-c2d895f8a5de)**|
+|![Icona di formazione per caricare e trovare file in Teams](../media/smc-teams-upload-find-files-training.png)<br>**[Caricare e trovare file](https://support.microsoft.com/office/57b669db-678e-424e-b0a0-15d19215cb12)**||
+|![Icona Collaborare in team e canali](../media/teams-collaborate-channels-training.png)<br>**[Collaborare in team e canali](https://support.microsoft.com/office/c3d63c10-77d5-4204-a566-53ddcf723b46)**|||
+
+## <a name="illustrations"></a>Illustrazioni
+
+Queste illustrazioni consentono di comprendere in che modo gruppi e team interagiscono con altri servizi in Microsoft 365 e quali funzionalità di governance e conformità sono disponibili per gestire questi servizi nell'organizzazione.
+
+### <a name="groups-in-microsoft-365-for-it-architects"></a>Gruppi in Microsoft 365 per architetti IT
+Cosa devono sapere gli architetti IT sui gruppi di Microsoft 365
+
+|**Elemento**|**Descrizione**|
+|:-----|:-----|
+|[![Immagine di scorrimento per infografica dei gruppi](../downloads/msft-m365-groups-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-groups.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-groups.vsdx) <br> Aggiornato nel giugno 2019|Queste immagini mostrano dettagliatamente i diversi gruppi, come questi vengono creati e gestiti, e alcuni consigli di governance.|
+
+### <a name="microsoft-teams-and-related-productivity-services-in-microsoft-365-for-it-architects"></a>Microsoft Teams e servizi di produttività correlati in Microsoft 365 per architetti IT
+L'architettura logica dei servizi di produttività in Microsoft 365, con Microsoft Teams.
+
+|**Elemento**|**Descrizione**|
+|:-----|:-----|
+|[![Immagine di scorrimento per poster dell'architettura logica di Teams](../downloads/msft-teams-logical-architecture-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) <br/> [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/msft-m365-teams-logical-architecture.pdf) \| [Visio](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/msft-m365-teams-logical-architecture.vsdx)  <br>Aggiornato nell'aprile 2019   |Microsoft offre una serie di servizi di produttività che interagiscono tra loro per offrire esperienze di collaborazione con governance dei dati, sicurezza e conformità integrate. <br/> <br/>Questa serie di immagini consente di visualizzare l'architettura logica di servizi di produttività per enterprise architect, con Microsoft Teams.|
 
 ## <a name="deploy-the-secure-collaboration-solution"></a>Distribuire la soluzione di collaborazione sicura
 

@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Informazioni su come aggiungere utenti in Microsoft 365 per le aziende.
-ms.openlocfilehash: f9e00312883adcc1771fae809614b6fc88bc0269
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 8f3b0076b04066e4d67f00b92c04cd364e40e05d
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927575"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423072"
 ---
 # <a name="add-a-new-user"></a>Aggiungere un nuovo utente
 
@@ -48,4 +46,4 @@ Quando una nuova persona si unisce all'azienda, è necessario aggiungerla all'ab
 1. Se si desidera che l'utente sia un amministratore, espandere Ruolo **s,** deselezionare la casella di controllo Utente (nessun accesso **amministratore)** e selezionare un ruolo di amministratore nell'elenco. Per ulteriori informazioni sui ruoli di amministratore e su come configurarli, vedere [Che cos'è un amministratore?](what-is-admin.md)
 1. In **Informazioni profilo** immettere i dettagli relativi al lavoro, al reparto, all'ufficio e così via dell'utente. L'utente o il nuovo utente può sempre aggiungere queste informazioni in un secondo momento. Selezionare **Avanti.**
 1. Esaminare i dettagli dell'utente. Se devi acquistare una licenza aggiuntiva per questo utente, verrà visualizzata una notifica nella pagina della recensione. Selezionare **Fine aggiunta** e quindi chiudi. 
-1. Verificare che l'utente sia stato creato correttamente: nell'interfaccia di amministrazione di Microsoft 365, nel riquadro di spostamento sinistro, selezionare **Utenti** e **quindi Utenti attivi.** Il nuovo utente deve essere elencato, insieme alla licenza assegnata.
+1. Verificare che l'utente sia stato creato correttamente: nell'interfaccia di amministrazione di Microsoft 365, nel riquadro di spostamento sinistro, selezionare **Utenti** e **quindi Utenti attivi.** Il nuovo utente dovrebbe essere elencato, insieme alla licenza assegnata.

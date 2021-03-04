@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Informazioni sulle funzionalità di sicurezza incluse in Microsoft 365 per le aziende.
-ms.openlocfilehash: 72ed57d0f6392d7475f11aebb9da700e6aef78ae
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: e21dc1a9f27f9b5896ace2f09ebb936b8189fdd3
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928139"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422328"
 ---
 # <a name="overview-of-security"></a>Panoramica della sicurezza
 
@@ -45,7 +43,7 @@ Microsoft 365 Business Premium include Office 365 Advanced Threat Protection (AT
 
 L'autenticazione a più fattori (MFA) o la verifica in due passaggi richiede la presentazione di una seconda forma di autenticazione, ad esempio un codice di verifica, per confermare l'identità prima di poter accedere alle risorse.  
 
-Windows Defender fornisce una protezione completa per il sistema, i file e le attività online da virus, malware, spyware e altre minacce.
+Windows Defender offre una protezione completa per il sistema, i file e le attività online da virus, malware, spyware e altre minacce.
 
 ## <a name="data-protection"></a>Protezione dei dati
 
@@ -63,7 +61,7 @@ Le funzionalità avanzate di gestione dei dispositivi di Microsoft 365 Business 
 
 È possibile utilizzare i criteri di accesso condizionale per richiedere misure di sicurezza aggiuntive per determinati utenti e attività. Ad esempio, è possibile richiedere l'autenticazione a più fattori (MFA) o bloccare i client che non supportano l'accesso condizionale.
 
-Con MDM puoi proteggere e gestire i dispositivi mobili degli utenti come iPhone, iPad, Android e Windows Phone. Puoi creare e gestire i criteri di sicurezza dei dispositivi, cancellare in remoto un dispositivo per rimuovere tutti i dati aziendali, ripristinare le impostazioni di fabbrica di un dispositivo e visualizzare report dettagliati sul dispositivo. 
+Con MDM puoi proteggere e gestire i dispositivi mobili degli utenti come iPhone, iPad, Android e Telefoni Windows. Puoi creare e gestire i criteri di sicurezza dei dispositivi, cancellare in remoto un dispositivo per rimuovere tutti i dati aziendali, ripristinare le impostazioni di fabbrica di un dispositivo e visualizzare report dettagliati sul dispositivo. 
 
 Puoi abilitare la crittografia BitLocker per proteggere i dati in caso di perdita o furto di un dispositivo e abilitare Windows Exploit Guard per fornire protezione avanzata dal ransomware.
 

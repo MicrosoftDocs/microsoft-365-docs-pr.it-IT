@@ -15,16 +15,17 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 1461a63cc57a5d93e06b1df89dfa0f3f7e8bc559
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+- m365solution-scenario
+ms.openlocfilehash: cb029ddcaf63accfd0b49c6b317976ad1a00ab40
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49613861"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423224"
 ---
 # <a name="communication-compliance-in-microsoft-365"></a>Conformità delle comunicazioni in Microsoft 365
 
-La protezione delle informazioni riservate e il rilevamento e l'azione in caso di molestie sul luogo di lavoro sono una parte importante della conformità ai criteri e agli standard interni. La conformità delle comunicazioni in Microsoft 365 consente di ridurre al minimo questi rischi, consentendo di rilevare, acquisire ed eseguire rapidamente azioni di correzione per la posta elettronica e le comunicazioni di Microsoft Teams. Queste includono comunicazioni inappropriate contenenti volgarità, minacce, molestie e comunicazioni che condividono informazioni riservate all'interno e all'esterno dell'organizzazione.
+La protezione delle informazioni riservate e il rilevamento e l'azione in caso di molestie sul luogo di lavoro sono una parte importante della conformità ai criteri e agli standard interni. La conformità delle comunicazioni in Microsoft 365 consente di ridurre al minimo questi rischi consentendo di rilevare, acquisire ed eseguire rapidamente azioni di correzione per la posta elettronica e le comunicazioni di Microsoft Teams. Queste includono comunicazioni inappropriate contenenti volgarità, minacce, molestie e comunicazioni che condividono informazioni riservate all'interno e all'esterno dell'organizzazione.
 
 ## <a name="configure-communication-compliance-for-microsoft-365"></a>Configurare la conformità delle comunicazioni per Microsoft 365
 

@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Informazioni su come gestire la configurazione dei criteri di prevenzione della perdita dei dati.
-ms.openlocfilehash: e963cf85fee887b6e91c6e54b00aaa9e5174e3b6
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 54cd508ef0b0cfcf8b71dc86a4903f77a5354c36
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927959"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422064"
 ---
 # <a name="prevent-data-loss-with-dlp"></a>Prevenire la perdita di dati con DLP
 
@@ -43,7 +41,7 @@ I criteri di prevenzione della perdita dei dati consentono di identificare e pro
 1. Per modificare un criterio, selezionarlo, scegliere **Modifica criterio,** quindi selezionare gli elementi da modificare. Ad esempio, selezionare **Posizioni per** modificare gli elementi analizzati.
 1. Per abilitare l'analisi del contenuto in Microsoft  Teams, attivare l'interruttore Attiva e quindi selezionare **Salva.**
 1. Per modificare le impostazioni dei criteri, selezionare **Modifica.**
-1. Dovrai impostare regole separate che si applicano a piccole e grandi quantità di contenuti sensibili rilevati. Espandere la regola di volume ridotto. Scegliere **Modifica regola.**
+1. Dovrai impostare regole separate che si applicano a piccole e grandi quantità di contenuti sensibili rilevati. Espandere la regola con volume ridotto. Scegliere **Modifica regola.**
 1. Rivedere le impostazioni e regolarle in base alle esigenze. Ad esempio, è possibile scegliere di personalizzare il **testo del messaggio di posta elettronica** e il testo del **suggerimento per il criterio.** Selezionare **Salva**.
 1. Ripetere l'operazione per la regola di volume elevato. Selezionare **Salva** e quindi **Chiudi.**
 1. Per creare un nuovo criterio, selezionare **Crea un criterio.**

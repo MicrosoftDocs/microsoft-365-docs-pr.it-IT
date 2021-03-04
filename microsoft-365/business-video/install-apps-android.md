@@ -9,27 +9,25 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Informazioni su come installare Outlook e altre app di Office nei dispositivi Android.
-ms.openlocfilehash: 3b449d98a9e19e8f4ce8a3cc84dbbdce058dc310
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 8e4abb38ad56d9bfe8f5e3a580dd1075cd16a564
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925123"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422544"
 ---
-# <a name="install-outlook-and-office-apps-on-android-devices"></a>Installare Outlook e le app di Office nei dispositivi Android
+# <a name="install-outlook-and-office-apps-on-android-devices"></a>Installare le app di Outlook e Office nei dispositivi Android
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWfquk?autoplay=false]
 
@@ -44,5 +42,5 @@ Se il dispositivo Android è gestito da Microsoft 365 Business Premium, potrebbe
 5. In **Immettere la password** digitare la password e quindi scegliere **Accedi.**
 6. Nella pagina successiva scegliere  **Continua**  se si desidera aggiungere un altro account. In caso contrario, scegliere **Ignora.**
 7. Quando viene richiesto di aggiungere l'app Portale aziendale Intune, scegliere **Vai a store.**
-8. Installare e aprire l'app portale aziendale intune, quindi scegliere  **OK**  quando viene visualizzato il messaggio che indica che l'organizzazione protegge i dati in questa app.
-9. Se viene richiesto un PIN, immettere un PIN di 4 cifre che verrà utilizzato&#39;per sbloccare  il telefono, scegliere **Invia,** confermare il PIN e quindi scegliere di nuovo Invia.
+8. Installare e aprire l'app portale aziendale intune e quindi scegliere  **OK**  quando viene visualizzato il messaggio che indica che l'organizzazione protegge i dati in questa app.
+9. Se viene richiesto un PIN, immetti un PIN di 4 cifre che&#39;userai per sbloccare  il telefono, scegli **Invia,** conferma il PIN e quindi scegli di nuovo Invia.

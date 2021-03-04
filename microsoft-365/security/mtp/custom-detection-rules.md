@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: d58292f658446259bfab5b1b55c8b462d081421c
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: 51a6bc33778248a69e533d9e2077365a63b97e30
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080624"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50424132"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Creare e gestire regole di rilevamento personalizzate
 
@@ -51,7 +51,7 @@ Per gestire le autorizzazioni necessarie, un **amministratore globale** può:
 - Controllare le impostazioni RBAC per Microsoft Defender for Endpoint in [Microsoft Defender Security Center](https://securitycenter.windows.com/) in **Ruoli**  >  **autorizzazioni**  >  **impostazioni.** Selezionare il ruolo corrispondente per assegnare **l'autorizzazione per la gestione delle impostazioni di** sicurezza.
 
 > [!NOTE]
-> Per gestire i rilevamenti personalizzati,  gli **operatori** della sicurezza dovranno disporre dell'autorizzazione per gestire le impostazioni di sicurezza in Microsoft Defender per Endpoint se RBAC è attivato.
+> Per gestire i rilevamenti personalizzati,  gli **operatori** della sicurezza dovranno disporre dell'autorizzazione per la gestione delle impostazioni di sicurezza in Microsoft Defender per Endpoint se RBAC è attivato.
 
 ## <a name="create-a-custom-detection-rule"></a>Creare una regola di rilevamento personalizzata
 ### <a name="1-prepare-the-query"></a>1. Preparare la query.
@@ -72,7 +72,7 @@ Per creare una regola di rilevamento personalizzata, la query deve restituire le
     - `DeviceName`
     - `RemoteDeviceName`
     - `RecipientEmailAddress`
-    - `SenderFromAddress` (mittente della busta o Return-Path destinatario)
+    - `SenderFromAddress` (mittente della busta o indirizzo Return-Path destinatario)
     - `SenderMailFromAddress` (indirizzo del mittente visualizzato dal client di posta elettronica)
     - `RecipientObjectId`
     - `AccountObjectId`
@@ -124,7 +124,7 @@ Quando si salva o si modifica una nuova regola, viene eseguita e viene verificat
 - **Ogni ora:** viene eseguita ogni ora, controllando i dati delle ultime 2 ore
 
 >[!TIP]
-> Associare i filtri tempo nella query alla durata di lookback. I risultati al di fuori della durata del lookback vengono ignorati.  
+> Associare i filtri tempo nella query alla durata di lookback. I risultati al di fuori della durata di lookback vengono ignorati.  
 
 Selezionare la frequenza che corrisponde alla frequenza con cui si desidera monitorare i rilevamenti. Considerare la capacità dell'organizzazione di rispondere agli avvisi.
 
@@ -145,7 +145,7 @@ Queste azioni vengono applicate ai dispositivi nella `DeviceId` colonna dei risu
 - **Limita l'esecuzione dell'app:** imposta restrizioni sul dispositivo per consentire l'esecuzione solo dei file firmati con un certificato emesso da Microsoft. [Altre informazioni sulle restrizioni per le app con Microsoft Defender for Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#restrict-app-execution)
 
 #### <a name="actions-on-files"></a>Azioni sui file
-Se questa opzione è selezionata, è possibile scegliere di applicare l'azione Del **file** in quarantena ai file nella colonna , , o dei `SHA1` risultati della `InitiatingProcessSHA1` `SHA256` `InitiatingProcessSHA256` query. Questa azione elimina il file dalla posizione corrente e ne mette in quarantena una copia.
+Se questa opzione è selezionata, è possibile scegliere di applicare l'azione Del **file** in quarantena ai file nella colonna , , o dei `SHA1` risultati della `InitiatingProcessSHA1` `SHA256` `InitiatingProcessSHA256` query. Questa azione elimina il file dalla posizione corrente e ne mette una copia in quarantena.
 
 #### <a name="actions-on-users"></a>Azioni sugli utenti
 Se selezionata, **l'azione** Contrassegna utente come compromessa viene eseguita sugli utenti nella `AccountObjectId` colonna , o nella colonna dei risultati della `InitiatingProcessAccountObjectId` `RecipientObjectId` query. Questa azione imposta il livello di rischio degli utenti su "alto" in Azure Active Directory, attivando i criteri [di protezione delle identità corrispondenti.](https://docs.microsoft.com/azure/active-directory/identity-protection/overview-identity-protection)
@@ -165,6 +165,12 @@ Verranno interrogati solo i dati dei dispositivi nell'ambito. Inoltre, le azioni
 
 ### <a name="6-review-and-turn-on-the-rule"></a>6. Rivedere e attivare la regola.
 Dopo aver esaminato la regola, selezionare **Crea** per salvarla. La regola di rilevamento personalizzata viene eseguita immediatamente. Viene eseguito di nuovo in base alla frequenza configurata per verificare la presenza di corrispondenze, generare avvisi ed eseguire azioni di risposta.
+
+
+>[!Important] 
+>I rilevamenti personalizzati devono essere periodicamente esaminati per verificare l'efficienza e l'efficacia. Per assicurarsi di creare rilevamenti che attivano avvisi veri, esaminare i rilevamenti personalizzati esistenti seguendo i passaggi descritti in Gestire le regole [di rilevamento personalizzate esistenti.](#manage-existing-custom-detection-rules) <br>  
+È possibile mantenere il controllo sull'ampia gamma o specificità dei rilevamenti personalizzati, in modo che eventuali falsi avvisi generati da rilevamenti personalizzati potrebbero indicare la necessità di modificare determinati parametri delle regole.
+
 
 ## <a name="manage-existing-custom-detection-rules"></a>Gestire le regole di rilevamento personalizzate esistenti
 Puoi visualizzare l'elenco delle regole di rilevamento personalizzate esistenti, controllarne le esecuzioni precedenti ed esaminare gli avvisi che hanno attivato. È inoltre possibile eseguire una regola su richiesta e modificarla.
@@ -189,7 +195,7 @@ Per visualizzare informazioni complete su una regola di rilevamento personalizza
 
 - **Esegui:** esegui la regola immediatamente. In questo modo viene reimpostato anche l'intervallo per l'esecuzione successiva.
 - **Modifica:** modificare la regola senza modificare la query
-- **Modifica query**: modifica la query nella ricerca avanzata
+- **Modifica query**: modificare la query nella ricerca avanzata
 - **Attivare**  /  **Disattivare:** abilitare o arrestare l'esecuzione della regola
 - **Elimina:** disattivare la regola e rimuoverla
 

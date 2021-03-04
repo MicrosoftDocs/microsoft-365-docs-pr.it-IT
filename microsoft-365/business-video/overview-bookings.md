@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Informazioni su Microsoft Bookings.
-ms.openlocfilehash: 67ed948793b4d43f92b376d7e299564f5d734550
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 681667d8f399c0bf5ba1b84ee67352a30d10d78d
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928127"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422340"
 ---
 # <a name="overview-of-microsoft-bookings"></a>Panoramica di Microsoft Bookings
 
@@ -45,10 +43,10 @@ Microsoft Bookings è un'app online e mobile per piccole imprese che fornisce se
 
 ## <a name="use-bookings"></a>Usare Bookings
 
-- Nel dashboard **di Bookings,** esaminare l'indirizzo dell'ufficio, l'orario e altre informazioni aziendali e, se necessario, aggiornarsi.
+- Nel dashboard **di Bookings** esamina l'indirizzo dell'azienda, l'orario e altre informazioni aziendali e aggiorna, se necessario.
 - Nella pagina **Calendario,** l'utente e il personale possono aggiungere o aggiornare gli appuntamenti dei clienti. È possibile visualizzare il calendario per giorno, settimana o mese.
 - Nella pagina **Clienti,** i nuovi clienti possono essere aggiunti o importati da altri account come Gmail o un dispositivo.
-- La **pagina** Personale consente di aggiungere e gestire il personale. È importante aggiungere i propri indirizzi di posta elettronica in modo che possano ricevere notifiche immediate di nuovi appuntamenti.
+- La **pagina Personale** consente di aggiungere e gestire il personale. È importante aggiungere i propri indirizzi di posta elettronica in modo che possano ricevere notifiche immediate di nuovi appuntamenti.
 - La **pagina Servizi** consente di aggiungere o gestire i servizi che i clienti scelgono quando prenotano un appuntamento.
 - Infine, nella pagina **Prenotazioni** sono disponibili molte impostazioni come i criteri di pianificazione, le notifiche tramite posta elettronica, le impostazioni del fuso orario e altro ancora.
 

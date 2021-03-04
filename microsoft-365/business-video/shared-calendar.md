@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Informazioni su come creare un calendario condiviso.
-ms.openlocfilehash: 8851f801eafc11348e35551c06309eb0115c2212
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 22cf4473e7d370a3ae09b76e42d9ab29d0508a44
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927851"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421812"
 ---
 # <a name="create-a-shared-calendar"></a>Creare un calendario condiviso
 
@@ -37,7 +35,7 @@ ms.locfileid: "49927851"
 
 Un calendario condiviso consente di visualizzare rapidamente quando le persone sono disponibili per riunioni o altri eventi.
 
-1. In Outlook, selezionare l'icona del calendario.
+1. In Outlook selezionare l'icona del calendario.
 1. Nella scheda **Home** scegliere **Aggiungi calendario,** quindi **Da Rubrica.**
 1. Aggiungere utenti al calendario condiviso immettendo il proprio nome o selezionandolo nell'elenco e quindi scegliere **OK.**
 1. È ora possibile visualizzare il calendario e i calendari per le persone aggiunte.

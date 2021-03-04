@@ -17,13 +17,13 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Prima di poter usare i servizi di Microsoft 365 con il dispositivo, potrebbe essere necessario registrarlo in Dispositivi mobili e sicurezza di base per Microsoft 365.
-ms.openlocfilehash: dc5a43b12fce50c9146200a4559fe9b7e6824b18
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+description: Prima di poter usare i servizi di Microsoft 365 con il dispositivo, potrebbe essere necessario registrarlo in Basic Mobility and Security per Microsoft 365.
+ms.openlocfilehash: 2a9c0bd9faf670d7dca340d3bc4e9f6586bd6b66
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49877057"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423202"
 ---
 # <a name="enroll-your-mobile-device-using-basic-mobility-and-security"></a>Registrare il dispositivo mobile con Dispositivi mobili e sicurezza di base
 
@@ -47,7 +47,7 @@ Basic Mobility and Security per Microsoft 365 ospitato dal servizio Intune funzi
 Se il dispositivo non è elencato in precedenza ed è necessario usarlo con Basic Mobility and Security, contattare l'amministratore aziendale o dell'istituto di istruzione.
 
 >[!TIP]
->Se si verificano problemi durante la registrazione del dispositivo, vedere [Risolvere i problemi di sicurezza e mobilità di base.](/basic-mobility-security/troubleshoot.md)
+>Se si verificano problemi durante la registrazione del dispositivo, vedere [Risolvere i problemi di sicurezza e mobilità di base.](troubleshoot.md)
 
 ## <a name="set-up-your-mobile-device-with-intune-and-basic-mobility-and-security"></a>Configurare il dispositivo mobile con Intune e Basic Mobility and Security
 
@@ -69,7 +69,7 @@ Per connettere e configurare il telefono o il tablet iOS con il portale aziendal
 
 Passare a Google Play Store e scaricare e installare il portale aziendale di Intune.
 
-Per connettere e configurare il telefono o il tablet Android con il portale aziendale a Microsoft 365, vedere Registrare il [dispositivo con Portale aziendale.](https://go.microsoft.com/fwlink/?linkid=875317)
+Per connettere e configurare il telefono o il tablet Android con il portale aziendale a Microsoft 365, vedere [Registrare il dispositivo con Portale aziendale.](https://go.microsoft.com/fwlink/?linkid=875317)
 
 ### <a name="windows-81-and-windows-10"></a>Windows 8.1 e Windows 10
 

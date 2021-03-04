@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Informazioni sull'abbonamento a Microsoft 365 più giusto per l'organizzazione.
-ms.openlocfilehash: 81ec93f5295fe9eb39538e74fc82b41b26641302
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 9bb72b01c7b1119f96120702e7b4f9c80aa4e729
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927371"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422820"
 ---
 # <a name="choose-a-microsoft-365-subscription"></a>Scegliere un abbonamento a Microsoft 365
 

@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Informazioni su come pianificare un evento con Microsoft Planner.
-ms.openlocfilehash: d978232dffaede882e81a491b4d927183781aa0f
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 11453ae83f636e20cd67cc7a4202e8d6995e09a1
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928097"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422304"
 ---
 # <a name="use-microsoft-planner-to-plan-an-event"></a>Usare Microsoft Planner per pianificare un evento
 
@@ -39,7 +37,7 @@ Usare Microsoft Planner per pianificare un evento, ad esempio tenere traccia del
 
 ### <a name="work-with-buckets"></a>Usare i bucket
 
-Usa i bucket per ordinare le attività in base al tipo, ad esempio pianificazione di eventi, marketing e materiale pubblicitario e pr.
+Usa i bucket per ordinare le attività in base al tipo, ad esempio pianificazione di eventi, marketing e materiale pubblicitario e PR.
 
 1. Selezionare  **Aggiungi nuovo contenitore**  e digitare una nuova categoria di attività.
 2. Selezionare  **+**  questa opzione per aggiungere attività a un contenitore e digitare un nome.

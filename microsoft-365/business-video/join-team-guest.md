@@ -9,25 +9,23 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Informazioni su come entrare a far parte di un team come guest in Microsoft Teams.
-ms.openlocfilehash: 31d5acb1a0294a54bcb5b5c7c74d76dbba7124f7
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 8ed7b8c92fa9fbe22c8a4f74b89916266a4af46f
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925027"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422484"
 ---
 # <a name="join-a-team-as-a-guest"></a>Partecipare a un team come Guest
 
@@ -35,9 +33,9 @@ ms.locfileid: "49925027"
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-Se si riceve un invito di Microsoft Teams a partecipare a un team, è necessario accettare l'invito in due passaggi.
+Se si riceve un invito di Microsoft Teams a unirsi a un team, è necessario accettare l'invito in due passaggi.
 
-1. Aprire l'invito tramite posta elettronica e selezionare **Apri Microsoft Teams.** Se l'invito non viene visualizzato, controllare la cartella Posta indesiderata.
+1. Aprire l'invito tramite posta elettronica e selezionare **Apri Microsoft Teams.** Se l'invito non viene visualizzato, controllare la cartella posta indesiderata.
   1. Se l'indirizzo di posta elettronica non è stato usato in precedenza per creare un account Microsoft, è necessario crearne uno.
 
      Nella finestra **di dialogo Crea account** selezionare **Avanti,** creare una password e selezionare **Avanti.**
@@ -46,7 +44,7 @@ Se si riceve un invito di Microsoft Teams a partecipare a un team, è necessario
 1. Se non si vuole scaricare l'app Microsoft Teams, selezionare **Usa l'app Web.**
 1. Nell'app Web di Teams è possibile visualizzare o rispondere ai  post oppure creare post personalizzati e selezionare la scheda File per visualizzare o modificare i documenti del team.
 
-    Se si usa già l'app Teams nell'organizzazione per partecipare a un team come guest, è molto più semplice.
+    Se si usa già l'app Teams nell'organizzazione per entrare a far parte di un team come guest, è molto più semplice.
 
 1. È sufficiente aprire l'app Microsoft Teams e scegliere  **Sì**  per passare al team a cui si è invitati.  Ora è possibile collaborare al progetto in Teams.
 2. Per tornare al team dell'azienda, selezionarlo  **nell'elenco a**  discesa Organizzazione.

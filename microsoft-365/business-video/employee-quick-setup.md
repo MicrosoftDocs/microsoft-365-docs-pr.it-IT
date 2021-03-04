@@ -1,5 +1,5 @@
 ---
-title: Guida alla configurazione rapida dei dipendenti
+title: Guida rapida alla configurazione dei dipendenti
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -9,26 +9,24 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Aiutare i dipendenti a configurare le app di Office che ottengono con Microsoft 365 Business Premium.
-ms.openlocfilehash: 1715562a648af42bff07ab9a3e62647e386125cb
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: c336e12e05a0bb2f0967c7e7591913cbb2ce6742
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927251"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422760"
 ---
 # <a name="employee-quick-setup"></a>Configurazione rapida per i dipendenti
 
