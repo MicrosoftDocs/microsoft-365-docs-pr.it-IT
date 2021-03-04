@@ -9,54 +9,52 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 monikerRange: o365-worldwide
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Scopri come aggiungere un altro amministratore.
-ms.openlocfilehash: edeaf39c83271d1ba5be1af175a48fba94e7e2af
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 83b4432858f33f8132647840b746bb5aa23d68b5
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49927647"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423178"
 ---
-# <a name="add-an-admin"></a><span data-ttu-id="36df6-103">Aggiungere un amministratore</span><span class="sxs-lookup"><span data-stu-id="36df6-103">Add an admin</span></span>
+# <a name="add-an-admin"></a><span data-ttu-id="20049-103">Aggiungere un amministratore</span><span class="sxs-lookup"><span data-stu-id="20049-103">Add an admin</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfO?autoplay=false]
 
-<span data-ttu-id="36df6-104">Quando si effettua l'iscrizione a Microsoft 365 Business, si diventa automaticamente un amministratore globale. Per facilitare la gestione dell'azienda, è possibile rendere amministratori anche altri utenti.</span><span class="sxs-lookup"><span data-stu-id="36df6-104">When you sign up for Microsoft 365 Business, you automatically become a global admin. To help manage the business, you can make other people admins as well.</span></span> 
+<span data-ttu-id="20049-104">Quando si effettua l'iscrizione a Microsoft 365 Business, si diventa automaticamente un amministratore globale. Per facilitare la gestione dell'azienda, è possibile rendere amministratori anche altri utenti.</span><span class="sxs-lookup"><span data-stu-id="20049-104">When you sign up for Microsoft 365 Business, you automatically become a global admin. To help manage the business, you can make other people admins as well.</span></span> 
 
-## <a name="try-it"></a><span data-ttu-id="36df6-105">Perché non provarlo?</span><span class="sxs-lookup"><span data-stu-id="36df6-105">Try it!</span></span>
+## <a name="try-it"></a><span data-ttu-id="20049-105">Perché non provarlo?</span><span class="sxs-lookup"><span data-stu-id="20049-105">Try it!</span></span>
 
-### <a name="add-an-existing-employee-as-an-admin"></a><span data-ttu-id="36df6-106">Aggiungere un dipendente esistente come amministratore</span><span class="sxs-lookup"><span data-stu-id="36df6-106">Add an existing employee as an admin</span></span>
+### <a name="add-an-existing-employee-as-an-admin"></a><span data-ttu-id="20049-106">Aggiungere un dipendente esistente come amministratore</span><span class="sxs-lookup"><span data-stu-id="20049-106">Add an existing employee as an admin</span></span>
 
-1. <span data-ttu-id="36df6-107">Quando si effettua l'iscrizione a Microsoft 365 Business, si diventa automaticamente un amministratore globale. Per facilitare la gestione dell'azienda, è possibile rendere amministratori anche altri utenti.</span><span class="sxs-lookup"><span data-stu-id="36df6-107">When you sign up for Microsoft 365 Business, you automatically become a global admin. To help manage the business, you can make other people admins as well.</span></span> 
-1. <span data-ttu-id="36df6-108">Nell'interfaccia di amministrazione di Microsoft 365 selezionare **Utenti** e quindi **Utenti attivi.**</span><span class="sxs-lookup"><span data-stu-id="36df6-108">In the Microsoft 365 admin center, select **Users**, and then **Active users**.</span></span>
-1. <span data-ttu-id="36df6-109">Scegliere l'utente che si desidera impostare come amministratore e quindi selezionare **Gestisci ruoli.**</span><span class="sxs-lookup"><span data-stu-id="36df6-109">Choose the user you want to make an admin, and then select **Manage roles**.</span></span>
-1. <span data-ttu-id="36df6-110">Nel riquadro **Gestisci ruoli** deselezionare la casella di controllo ruolo corrente dell'utente e selezionare il nuovo ruolo che si desidera assegnare all'utente.</span><span class="sxs-lookup"><span data-stu-id="36df6-110">On the **Manage roles** pane, clear the user's current role check box, and select the new role that you want to assign to the user.</span></span>
-1. <span data-ttu-id="36df6-111">Selezionare **Salva modifiche** e quindi chiudere il riquadro di conferma aggiornato dei **ruoli** di amministratore.</span><span class="sxs-lookup"><span data-stu-id="36df6-111">Select **Save changes**, and then close the **Admin roles updated** confirmation pane.</span></span>
+1. <span data-ttu-id="20049-107">Quando si effettua l'iscrizione a Microsoft 365 Business, si diventa automaticamente un amministratore globale. Per facilitare la gestione dell'azienda, è possibile rendere amministratori anche altri utenti.</span><span class="sxs-lookup"><span data-stu-id="20049-107">When you sign up for Microsoft 365 Business, you automatically become a global admin. To help manage the business, you can make other people admins as well.</span></span> 
+1. <span data-ttu-id="20049-108">Nell'interfaccia di amministrazione di Microsoft 365 selezionare **Utenti** e quindi **Utenti attivi.**</span><span class="sxs-lookup"><span data-stu-id="20049-108">In the Microsoft 365 admin center, select **Users**, and then **Active users**.</span></span>
+1. <span data-ttu-id="20049-109">Scegliere l'utente che si desidera impostare come amministratore e quindi selezionare **Gestisci ruoli.**</span><span class="sxs-lookup"><span data-stu-id="20049-109">Choose the user you want to make an admin, and then select **Manage roles**.</span></span>
+1. <span data-ttu-id="20049-110">Nel riquadro **Gestisci ruoli** deselezionare la casella di controllo ruolo corrente dell'utente e selezionare il nuovo ruolo che si desidera assegnare all'utente.</span><span class="sxs-lookup"><span data-stu-id="20049-110">On the **Manage roles** pane, clear the user's current role check box, and select the new role that you want to assign to the user.</span></span>
+1. <span data-ttu-id="20049-111">Selezionare **Salva modifiche** e quindi chiudere il riquadro di conferma aggiornato dei **ruoli** di amministratore.</span><span class="sxs-lookup"><span data-stu-id="20049-111">Select **Save changes**, and then close the **Admin roles updated** confirmation pane.</span></span>
 
-### <a name="add-someone-outside-the-company-as-an-admin"></a><span data-ttu-id="36df6-112">Aggiungere un utente esterno all'azienda come amministratore</span><span class="sxs-lookup"><span data-stu-id="36df6-112">Add someone outside the company as an admin</span></span>
+### <a name="add-someone-outside-the-company-as-an-admin"></a><span data-ttu-id="20049-112">Aggiungere un utente esterno all'azienda come amministratore</span><span class="sxs-lookup"><span data-stu-id="20049-112">Add someone outside the company as an admin</span></span>
 
-<span data-ttu-id="36df6-113">Se è presente una persona IT esterna che aiuterà a gestire l'azienda, è possibile aggiungerla come amministratore globale.</span><span class="sxs-lookup"><span data-stu-id="36df6-113">If there's an external IT person who will help manage your business, you can add them as a global admin.</span></span>
+<span data-ttu-id="20049-113">Se è presente una persona IT esterna che aiuterà a gestire l'azienda, è possibile aggiungerla come amministratore globale.</span><span class="sxs-lookup"><span data-stu-id="20049-113">If there's an external IT person who will help manage your business, you can add them as a global admin.</span></span>
 
-1. <span data-ttu-id="36df6-114">Nell'interfaccia di amministrazione di Microsoft 365 selezionare **Utenti,** **Utenti attivi** e quindi **Aggiungi utente.**</span><span class="sxs-lookup"><span data-stu-id="36df6-114">In the Microsoft 365 admin center, select **Users**, **Active users**, and then **Add a user**.</span></span>
-1. <span data-ttu-id="36df6-115">Nella pagina **Configura le nozioni di** base immettere il nome dell'utente, il nome visualizzato e il nome utente.</span><span class="sxs-lookup"><span data-stu-id="36df6-115">On the **Set up the basics** page, enter the user's name, display name, and username.</span></span>
-1. <span data-ttu-id="36df6-116">Selezionare la **casella di controllo Invia password tramite posta** elettronica al completamento per inviare la password dell'utente tramite posta elettronica.</span><span class="sxs-lookup"><span data-stu-id="36df6-116">Select the **Send password in email upon completion** check box to have the user's password emailed to them.</span></span> <span data-ttu-id="36df6-117">Digitare l'indirizzo di posta elettronica.</span><span class="sxs-lookup"><span data-stu-id="36df6-117">Type their email address.</span></span> <span data-ttu-id="36df6-118">Separare più indirizzi con un punto e virgola.</span><span class="sxs-lookup"><span data-stu-id="36df6-118">Separate multiple addresses with semicolons.</span></span> <span data-ttu-id="36df6-119">Selezionare **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="36df6-119">Select **Next**.</span></span>
-1. <span data-ttu-id="36df6-120">**Nell'elenco a** discesa Seleziona posizione scegliere la posizione dell'utente.</span><span class="sxs-lookup"><span data-stu-id="36df6-120">In the **Select location** drop-down list, choose the user's location.</span></span>
-1. <span data-ttu-id="36df6-121">Selezionare la **casella di controllo Crea utente senza licenza** del prodotto.</span><span class="sxs-lookup"><span data-stu-id="36df6-121">Select the **Create user without product license** check box.</span></span> <span data-ttu-id="36df6-122">Non è necessario assegnare a questo utente una licenza perché gestirà solo i servizi di Microsoft 365 e non li usa.</span><span class="sxs-lookup"><span data-stu-id="36df6-122">You don't need to assign this user a license because they'll only be managing the Microsoft 365 services, and not using them.</span></span> <span data-ttu-id="36df6-123">Selezionare **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="36df6-123">Select **Next**.</span></span>
-1. <span data-ttu-id="36df6-124">Espandere la **sezione** Ruoli.</span><span class="sxs-lookup"><span data-stu-id="36df6-124">Expand the **Roles** section.</span></span> <span data-ttu-id="36df6-125">Deselezionare la casella di controllo accanto al ruolo corrente dell'utente e quindi scegliere **Amministratore globale.**</span><span class="sxs-lookup"><span data-stu-id="36df6-125">Clear the check box next to the user's current role, and then choose **Global administrator**.</span></span> <span data-ttu-id="36df6-126">Selezionare **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="36df6-126">Select **Next**.</span></span>
-1. <span data-ttu-id="36df6-127">Rivedere le impostazioni e quindi selezionare **Fine** aggiunta.</span><span class="sxs-lookup"><span data-stu-id="36df6-127">Review your settings, and then select **Finish adding**.</span></span>
-1. <span data-ttu-id="36df6-128">Selezionare **Chiudi**.</span><span class="sxs-lookup"><span data-stu-id="36df6-128">Select **Close**.</span></span>
+1. <span data-ttu-id="20049-114">Nell'interfaccia di amministrazione di Microsoft 365 selezionare **Utenti,** **Utenti attivi** e quindi **Aggiungi utente.**</span><span class="sxs-lookup"><span data-stu-id="20049-114">In the Microsoft 365 admin center, select **Users**, **Active users**, and then **Add a user**.</span></span>
+1. <span data-ttu-id="20049-115">Nella pagina **Configura le nozioni di** base immettere il nome dell'utente, il nome visualizzato e il nome utente.</span><span class="sxs-lookup"><span data-stu-id="20049-115">On the **Set up the basics** page, enter the user's name, display name, and username.</span></span>
+1. <span data-ttu-id="20049-116">Selezionare la **casella di controllo Invia password tramite posta** elettronica al completamento per inviare loro la password dell'utente tramite posta elettronica.</span><span class="sxs-lookup"><span data-stu-id="20049-116">Select the **Send password in email upon completion** check box to have the user's password emailed to them.</span></span> <span data-ttu-id="20049-117">Digitare l'indirizzo di posta elettronica.</span><span class="sxs-lookup"><span data-stu-id="20049-117">Type their email address.</span></span> <span data-ttu-id="20049-118">Separare più indirizzi con un punto e virgola.</span><span class="sxs-lookup"><span data-stu-id="20049-118">Separate multiple addresses with semicolons.</span></span> <span data-ttu-id="20049-119">Selezionare **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="20049-119">Select **Next**.</span></span>
+1. <span data-ttu-id="20049-120">**Nell'elenco a** discesa Seleziona posizione scegliere la posizione dell'utente.</span><span class="sxs-lookup"><span data-stu-id="20049-120">In the **Select location** drop-down list, choose the user's location.</span></span>
+1. <span data-ttu-id="20049-121">Selezionare la **casella di controllo Crea utente senza licenza** del prodotto.</span><span class="sxs-lookup"><span data-stu-id="20049-121">Select the **Create user without product license** check box.</span></span> <span data-ttu-id="20049-122">Non è necessario assegnare a questo utente una licenza perché gestirà solo i servizi di Microsoft 365 e non li usa.</span><span class="sxs-lookup"><span data-stu-id="20049-122">You don't need to assign this user a license because they'll only be managing the Microsoft 365 services, and not using them.</span></span> <span data-ttu-id="20049-123">Selezionare **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="20049-123">Select **Next**.</span></span>
+1. <span data-ttu-id="20049-124">Espandere la **sezione** Ruoli.</span><span class="sxs-lookup"><span data-stu-id="20049-124">Expand the **Roles** section.</span></span> <span data-ttu-id="20049-125">Deselezionare la casella di controllo accanto al ruolo corrente dell'utente e quindi scegliere **Amministratore globale.**</span><span class="sxs-lookup"><span data-stu-id="20049-125">Clear the check box next to the user's current role, and then choose **Global administrator**.</span></span> <span data-ttu-id="20049-126">Selezionare **Avanti**.</span><span class="sxs-lookup"><span data-stu-id="20049-126">Select **Next**.</span></span>
+1. <span data-ttu-id="20049-127">Rivedere le impostazioni e quindi selezionare **Fine** aggiunta.</span><span class="sxs-lookup"><span data-stu-id="20049-127">Review your settings, and then select **Finish adding**.</span></span>
+1. <span data-ttu-id="20049-128">Selezionare **Chiudi**.</span><span class="sxs-lookup"><span data-stu-id="20049-128">Select **Close**.</span></span>
 
-<span data-ttu-id="36df6-129">Il nuovo amministratore globale può ora aiutare a gestire i servizi di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="36df6-129">Your new global admin can now help manage your Microsoft 365 services.</span></span>
+<span data-ttu-id="20049-129">Il nuovo amministratore globale può ora aiutare a gestire i servizi di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="20049-129">Your new global admin can now help manage your Microsoft 365 services.</span></span>
