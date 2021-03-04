@@ -19,12 +19,12 @@ ms.collection:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come utilizzare un criterio di prevenzione della perdita dei dati (DLP) per proteggere i documenti con proprietà da un sistema di terze parti.
-ms.openlocfilehash: cf026e447ad1f0da3486a36dd5e36c52c09998cb
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 971d2a1dd4f69f7bbd2598e31fc99c9c5cfe1eda
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288229"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423799"
 ---
 # <a name="create-a-dlp-policy-to-protect-documents-with-fci-or-other-properties"></a>Creare criteri di prevenzione della perdita dei dati per proteggere i documenti con FCI o altre proprietà
 
@@ -40,9 +40,9 @@ Ad esempio, l'organizzazione potrebbe utilizzare Windows Server FCI per identifi
 
 In Microsoft 365, è possibile creare un criterio DLP che identifichi i documenti la cui proprietà è impostata su valori specifici, ad esempio Alto e **Medio,** e quindi eseguire un'azione come il blocco dell'accesso a tali file.  Lo stesso criterio può disporre di un'altra regola che consente di eseguire un'azione diversa se la proprietà è impostata su **Bassa**, come l'invio di una notifica tramite posta elettronica. In questo modo, DLP si integra con FCI di Windows Server e consente di proteggere i documenti di Office caricati o condivisi in Microsoft 365 da file server basati su Windows Server.
 
-Un criterio DLP cerca semplicemente una coppia di nome/valore di proprietà specifiche. È possibile utilizzare qualsiasi proprietà del documento, purché la proprietà disponga di una proprietà gestita corrispondente per la ricerca in SharePoint. Ad esempio, una raccolta siti di SharePoint potrebbe utilizzare un tipo di contenuto denominato **Report di andata e ritorno** con un campo obbligatorio denominato **Cliente**. Ogni volta che un utente crea un report di questo tipo, è necessario immettere il nome del cliente. Questa coppia nome/valore della proprietà può essere utilizzata anche in un criterio DLP, ad esempio  se si desidera una regola che blocchi l'accesso al documento per gli utenti guest quando il campo Cliente contiene **Contoso.**
+Un criterio DLP cerca semplicemente una coppia di nome/valore di proprietà specifiche. È possibile utilizzare qualsiasi proprietà del documento, purché la proprietà disponga di una proprietà gestita corrispondente per la ricerca in SharePoint. Ad esempio, una raccolta siti di SharePoint potrebbe utilizzare un tipo di contenuto denominato **Report di andata e ritorno** con un campo obbligatorio denominato **Cliente**. Ogni volta che un utente crea un report di questo tipo, è necessario immettere il nome del cliente. Questa coppia nome/valore di proprietà può essere utilizzata anche in un criterio DLP, ad esempio  se si desidera una regola che blocca l'accesso al documento per gli utenti guest quando il campo Cliente contiene **Contoso.**
 
-Se si desidera applicare il criterio DLP al contenuto con etichette di Microsoft 365 specifiche, non seguire i passaggi qui descritti. Informazioni su come utilizzare [un'etichetta di conservazione come condizione in un criterio DLP.](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)
+Se si desidera applicare il criterio DLP al contenuto con etichette di Microsoft 365 specifiche, non seguire i passaggi qui descritti. Informazioni sull'utilizzo di [un'etichetta di conservazione come condizione in un criterio DLP.](data-loss-prevention-policies.md#using-a-retention-label-as-a-condition-in-a-dlp-policy)
 
 ## <a name="before-you-create-the-dlp-policy"></a>Prima di creare il criterio DLP
 
@@ -97,7 +97,7 @@ Prima di tutto, eseguire la procedura precedente per creare una proprietà gesti
 
 Successivamente, creano un criterio DLP con due regole che utilizzano entrambe la condizione Le proprietà del **documento contengono uno di questi valori:**
 
-- **Contenuto FCI PII - Alto, Moderato** La prima regola limita l'accesso al documento se la proprietà di classificazione FCI **Informazioni** personali è uguale a **Alta** o **Moderata** e il documento viene condiviso con persone esterne all'organizzazione.
+- **Contenuto FCI PII - Alto, Moderato** La prima regola limita l'accesso al documento se la proprietà di classificazione FCI **Personally Identifiable Information** è uguale a **High** o **Moderate** e il documento viene condiviso con persone esterne all'organizzazione.
 
 - **Contenuto FCI PII - Basso** La seconda regola invia una notifica al proprietario del documento se la proprietà di classificazione FCI **Informazioni** personali è uguale a **Bassa** e il documento viene condiviso con persone esterne all'organizzazione.
 
@@ -105,9 +105,9 @@ Successivamente, creano un criterio DLP con due regole che utilizzano entrambe l
 
 La condizione Le proprietà del **documento** contengono uno di questi valori temporaneamente non disponibili nell'interfaccia utente del Centro sicurezza e conformità, ma è comunque possibile usare questa condizione &amp; tramite PowerShell. È possibile utilizzare i cmdlet per utilizzare un criterio DLP e utilizzare i cmdlet con il parametro per aggiungere la condizione Le proprietà del documento contengono `New\Set\Get-DlpCompliancePolicy` `New\Set\Get-DlpComplianceRule` uno di questi `ContentPropertyContainsWords` **valori.**
 
-Per ulteriori informazioni su questi cmdlet, vedere Cmdlet [del Centro sicurezza e &amp; conformità.](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
+Per ulteriori informazioni su questi cmdlet, vedere Cmdlet [del Centro sicurezza e &amp; conformità.](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell)
 
-1. [Connettersi al Centro &amp; sicurezza e conformità tramite Remote PowerShell](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [Connettersi al Centro &amp; sicurezza e conformità tramite Remote PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell)
 
 2. Creare il criterio utilizzando  `New-DlpCompliancePolicy` .
 
@@ -125,9 +125,9 @@ Questo PowerShell crea un criterio DLP che si applica a tutte le posizioni.
    New-DlpComplianceRule -Name FCI_PII_content-High,Moderate -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $true -ContentPropertyContainsWords "Personally Identifiable Information:High,Moderate" -Disabled $falseNew-DlpComplianceRule -Name FCI_PII_content-Low -Policy FCI_PII_policy -AccessScope NotInOrganization -BlockAccess $false -ContentPropertyContainsWords "Personally Identifiable Information:Low" -Disabled $false -NotifyUser Owner
    ```
 
-   FCI di Windows Server include molte proprietà predefinite, tra cui **informazioni** personali utilizzate in questo esempio. I valori possibili per ogni proprietà possono essere diversi per ogni organizzazione. I **valori High,** **Moderate** **e Low** utilizzati qui sono solo un esempio. Per l'organizzazione, è possibile visualizzare le proprietà di classificazione FCI di Windows Server con i relativi valori possibili in Gestione risorse file server nel file server basato su Windows Server. Per ulteriori informazioni, vedere [Creare una proprietà di classificazione.](https://go.microsoft.com/fwlink/p/?LinkID=627456)
+   FCI di Windows Server include molte proprietà predefinite, tra cui **informazioni** personali utilizzate in questo esempio. I valori possibili per ogni proprietà possono essere diversi per ogni organizzazione. I **valori Alto,** **Moderato** **e Basso** utilizzati qui sono solo un esempio. Per l'organizzazione, è possibile visualizzare le proprietà di classificazione FCI di Windows Server con i relativi valori possibili in Gestione risorse file server nel file server basato su Windows Server. Per ulteriori informazioni, vedere [Creare una proprietà di classificazione.](https://go.microsoft.com/fwlink/p/?LinkID=627456)
 
-Al termine, i criteri dovrebbero avere due nuove regole che usano entrambe le proprietà del documento **contenenti una di queste condizioni di** valori. Questa condizione non verrà visualizzata nell'interfaccia utente, anche se verranno visualizzate altre condizioni, azioni e impostazioni.
+Al termine, i criteri dovrebbero avere due nuove regole che usano entrambe le proprietà del documento **contengono una qualsiasi di queste condizioni di** valori. Questa condizione non verrà visualizzata nell'interfaccia utente, anche se verranno visualizzate altre condizioni, azioni e impostazioni.
 
 Una regola blocca l'accesso al contenuto dove la proprietà **Informazioni personali** è uguale a **Elevata** o **Moderata**. Una seconda regola invia una notifica sul contenuto dove la proprietà **Informazioni personali** è uguale a **Bassa**.
 
@@ -135,7 +135,7 @@ Una regola blocca l'accesso al contenuto dove la proprietà **Informazioni perso
 
 ## <a name="after-you-create-the-dlp-policy"></a>Dopo aver creato il criterio DLP
 
-Eseguendo i passaggi descritti nelle sezioni precedenti verrà creato un criterio DLP che rileverà rapidamente il contenuto con tale proprietà, ma solo se il contenuto è stato appena caricato (in modo che il contenuto sia indicizzato) o se il contenuto è precedente ma è stato appena modificato (in modo che il contenuto sia stato indicizzato nuovamente).
+Eseguendo i passaggi descritti nelle sezioni precedenti, verrà creato un criterio DLP che rileverà rapidamente il contenuto con tale proprietà, ma solo se il contenuto è stato appena caricato (in modo che il contenuto sia indicizzato) o se il contenuto è precedente, ma è stato semplicemente modificato (in modo che il contenuto sia nuovamente indicizzato).
 
 Per rilevare il contenuto con tale proprietà ovunque, è possibile richiedere manualmente che la raccolta, il sito o una raccolta siti vengano reindicizzati in modo che il criterio DLP sia a conoscenza di tutto il contenuto con tale proprietà. In SharePoint Online, il contenuto viene automaticamente sottoposto a ricerca per indicizzazione in base a una pianificazione definita. Il crawler rileva il contenuto modificato dall'ultima ricerca per indicizzazione e aggiorna l'indice. Se è necessario che il criterio DLP protegga il contenuto prima della prossima ricerca per indicizzazione pianificata, è possibile eseguire questi passaggi.
 

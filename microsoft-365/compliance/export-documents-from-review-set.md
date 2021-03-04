@@ -17,14 +17,14 @@ search.appverid:
 ms.assetid: ''
 description: Informazioni su come selezionare ed esportare il contenuto da un insieme di recensioni per presentazioni o recensioni esterne.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: b3be21d4c90c861c83acf612e9aadc373189f7ba
-ms.sourcegitcommit: 2160e7cf373f992dd4d11793a59cb8c44f8d587e
+ms.openlocfilehash: a2ca8e2f400d9f257549e59305d1fd56586185e2
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/26/2020
-ms.locfileid: "48285362"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423647"
 ---
-# <a name="export-documents-from-a-review-set-in-advanced-ediscovery"></a>Esportare documenti da un insieme da rivedere in Advanced eDiscovery
+# <a name="export-documents-from-a-review-set-in-advanced-ediscovery"></a>Esportare documenti da un insieme di recensioni in Advanced eDiscovery
 
 L'esportazione consente agli utenti di personalizzare il contenuto incluso nel pacchetto di download. Lo strumento di esportazione fornisce una pagina di configurazione con le impostazioni seguenti:
 
@@ -44,7 +44,7 @@ L'esportazione consente agli utenti di personalizzare il contenuto incluso nel p
 
 - Metadati
   
-  - Carica file: questo file contiene i metadati per ogni file. Per ulteriori informazioni sui campi inclusi, vedere Campi dei metadati del documento [in Advanced eDiscovery.](document-metadata-fields-in-Advanced-eDiscovery.md) Questo file può in genere essere ingerito da strumenti di eDiscovery di terze parti.
+  - Carica file: questo file contiene i metadati per ogni file. Per ulteriori informazioni sui campi inclusi, vedere [Campi dei metadati del documento in Advanced eDiscovery.](document-metadata-fields-in-Advanced-eDiscovery.md) Questo file può in genere essere ingerito da strumenti di eDiscovery di terze parti.
   
   - Tag: se selezionata, le informazioni di tagging verranno incluse nel file di caricamento.
 
@@ -62,15 +62,15 @@ L'esportazione consente agli utenti di personalizzare il contenuto incluso nel p
 
   - File di testo: includi versioni di testo estratte di file nativi.
   
-  - Sostituisci i file nativi con PDF convertiti: se i file PDF redatti vengono generati durante la revisione, questi file sono disponibili per l'esportazione. È possibile scegliere di esportare solo i file nativi che sono stati redatti (non selezionando questa opzione) oppure è possibile selezionare questa opzione per esportare i file PDF che contengono le azioni effettive.
+  - Sostituisci i nativi con PDF convertiti: se i file PDF redatti vengono generati durante la revisione, questi file sono disponibili per l'esportazione. È possibile scegliere di esportare solo i file nativi che sono stati redatti (non selezionando questa opzione) oppure è possibile selezionare questa opzione per esportare i file PDF che contengono le azioni effettive.
 
-- Opzioni di output (il contenuto esportato è disponibile per il download direttamente tramite un Web browser o può essere inviato a un account di archiviazione di Azure. Le prime due opzioni consentono il download diretto.
+- Opzioni di output (il contenuto esportato è disponibile per il download direttamente tramite un Web browser o può essere inviato a un account di archiviazione di Azure. Le prime due opzioni abilitano il download diretto.
   
   - File e file PST (la posta elettronica viene aggiunta ai file PST quando possibile) - I file vengono esportati in un formato simile alla struttura di directory originale visualizzata dagli utenti nelle applicazioni native.  Per ulteriori informazioni, vedere la sezione [Relativa ai file con estensione loose e alla struttura di esportazione PST.](#loose-files-and-pst-export-structure)
   
   - Struttura di directory ridotto: i file vengono esportati e inclusi nel download.
   
-  - Struttura di directory ridotto esportata nell'account di archiviazione di Azure: i file vengono esportati nell'archivio di Azure dell'organizzazione.
+  - Struttura di directory ridotto esportata nell'account di archiviazione di Azure: i file vengono esportati nell'account di archiviazione di Azure dell'organizzazione.
 
 ## <a name="loose-files-and-pst-export-structure"></a>File con estensione loose e struttura di esportazione PST
 
@@ -105,4 +105,4 @@ Se si seleziona questa opzione di esportazione, il contenuto esportato viene org
   - Extracted_text_files- Questa cartella contiene tutti i file di testo estratti che sono stati generati durante l'elaborazione.
 
 > [!NOTE]
-> I processi di esportazione vengono conservati per tutta la durata del caso e possono essere scaricati purché il caso non sia stato eliminato.
+> I processi di esportazione vengono conservati per tutta la durata del caso. Tuttavia, è necessario scaricare il contenuto da un processo di esportazione entro 30 giorni dal completamento del processo di esportazione.

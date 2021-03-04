@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pronti per iniziare a implementare i criteri e le etichette di riservatezza per gestire i dati della tua organizzazione, ma in dubbio su come iniziare? Leggere alcune indicazioni utili per iniziare.
-ms.openlocfilehash: 26568d2a603e447156aead751178555fa400db5e
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: bb73f0871bfc2ad707d31ef6d4d57e18218842a5
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682531"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406516"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -82,9 +82,11 @@ Usare la seguente tabella per eseguire il mapping dei requisiti aziendali relati
 
 Se si usano etichette di conservazione per la gestione dei record, esistono ulteriori scenari, univoci per le etichette di conservazione, che consentono di contrassegnare il contenuto come record. Vedere [Scenari comuni per la gestione dei record](get-started-with-records-management.md#common-scenarios-for-records-management).
 
-## <a name="end-user-documentation-for-retention-labels"></a>Documentazione per gli utenti finali sulle etichette di conservazione
+## <a name="end-user-documentation-for-retention"></a>Documentazione per l'utente finale per la conservazione
 
-Le etichette di conservazione, diversamente dai criteri di conservazione, hanno una presenza sull'interfaccia utente nelle app Microsoft 365. Assicurarsi di fornire indicazioni agli utenti finali e all'help desk prima di distribuire le etichette di conservazione alla rete di produzione.
+La maggior parte dei criteri di conservazione funzionano in modo discreto in background senza interazione dell'utente. Pertanto, richiedono poca documentazione per gli utenti. I criteri di conservazione per Teams informano gli utenti quando i loro messaggi sono stati eliminati attraverso un collegamento a [Messaggi di Teams sui criteri di conservazione](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
+
+Poiché le etichette di conservazione sono presenti nelle app di Microsoft 365, assicurarsi di fornire indicazioni agli utenti finali e all'help desk prima di distribuire le etichette alla rete di produzione.
 
 La documentazione per gli utenti finali più efficace è costituita dalle indicazioni e istruzioni personalizzate per i nomi e le configurazioni delle etichette di conservazione scelte. Per informazioni su un pacchetto di download da usare per formare gli utenti e guidare l'adozione, leggere il post di blog seguente: [Formazione dell’utente finale sulle etichette di conservazione in M365 - Come velocizzare l'adozione](https://techcommunity.microsoft.com/t5/microsoft-security-and/end-user-training-for-retention-labels-in-m365-how-to-accelerate/ba-p/1750861).
 

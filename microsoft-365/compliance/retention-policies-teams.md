@@ -17,16 +17,21 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione applicabili a Microsoft Teams.
-ms.openlocfilehash: b3b0451f2f1b0950f2b2ee723025a796f1814038
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: 5c992a988dbffc12824b2b64c1ea9a8fb6d22d67
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261503"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50406526"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Informazioni sulla conservazione per Microsoft Teams
 
 >*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
+
+> [!NOTE]
+> Se l’utente visualizza un messaggio in Teams che indica che le chat e i messaggi sono stati eliminati da un criterio di conservazione, vedere [Messaggi di Teams sui criteri di conservazione](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
+> 
+> Le informazioni fornite in questa pagina sono riservate agli amministratori IT che gestiscono questi criteri di conservazione.
 
 Questo articolo integra [Informazioni sulla conservazione](retention.md) con informazioni specifiche per i messaggi di Microsoft Teams.
 
@@ -43,7 +48,7 @@ Usando i criteri di conservazione per Teams è possibile conservare ed eliminare
 > [!NOTE]
 > L'inclusione del contenuto della scheda è un'aggiunta recente ed è attualmente in fase di distribuzione ai tenant. Per altre informazioni vedere [Funzionalità di conformità di Microsoft 365 ora disponibili per il contenuto delle schede adattive tramite le app in Teams](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
 
-I messaggi Teams nei canali privati non sono attualmente supportati per i criteri di conservazione. Quando si usano criteri di conservazione per Teams, non vengono inclusi frammenti di codice, memo vocali registrati dal client per dispositivi mobili Teams e reazioni di altri utenti sotto forma di emoticon.
+I messaggi Teams nei canali privati non sono attualmente supportati per i criteri di conservazione. Quando si usano i criteri di conservazione per Teams, non vengono inclusi frammenti di codice, memo vocali registrati dal client per dispositivi mobili di Teams, anteprime, immagini di annunci e reazioni di altri utenti sotto forma di emoticon.
 
 I messaggi di posta elettronica e i file usati con Teams non sono inclusi nei criteri di conservazione per Teams. Questi elementi hanno criteri di conservazione personalizzati.
 

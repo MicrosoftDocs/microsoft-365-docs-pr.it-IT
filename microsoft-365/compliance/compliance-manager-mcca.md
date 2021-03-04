@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come usare Microsoft Compliance Configuration Analyzer per iniziare rapidamente a usare Microsoft Compliance Manager.
-ms.openlocfilehash: 86c4b04deb8313f3013a6d9ad349c0f4112db773
-ms.sourcegitcommit: 719b89baca1bae14455acf2e517ec18fc473636c
+ms.openlocfilehash: 41315dd072e089bd61767181b17dffd5fba88281
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50122396"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423427"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>Analizzatore configurazione di conformità Microsoft per Compliance Manager (anteprima)
 
@@ -33,7 +33,7 @@ MCCA consente di vedere rapidamente quali azioni di miglioramento in Compliance 
 
 Una risorsa aggiuntiva per comprendere MCCA è visitare le istruzioni [README su GitHub.](https://github.com/OfficeDev/MCCA#overview) In questa pagina vengono fornite informazioni dettagliate sui prerequisiti e vengono fornite istruzioni di installazione complete. Non è necessario un account GitHub per accedere a questa pagina.
 
-**Disponibilità:** MCCA è disponibile per tutte le organizzazioni con licenze di Office 365 e Microsoft 365 e clienti moderati della US Government Community (GCC), con piani in corso per espandere il servizio ai clienti GCC High.
+**Disponibilità:** MCCA è disponibile per tutte le organizzazioni con licenze di Office 365 e Microsoft 365 e clienti della US Government Community (GCC) Moderate e GCC High, con piani in corso per espandere il servizio ai clienti DOD.
 
 ## <a name="install-mcca-and-run-a-report"></a>Installare MCCA ed eseguire un report
 
@@ -44,7 +44,7 @@ Per iniziare, è necessario il modulo PowerShell di Exchange Online (v2.0.3 o ve
 
 #### <a name="step-2-install-mcca"></a>Passaggio 2: installare MCCA
 
-Per installare MCCA, iniziare usando PowerShell in modalità amministratore. Seguire i passaggi seguenti:
+Per installare MCCA, iniziare con PowerShell in modalità amministratore. Seguire la procedura seguente:
 
 1. Seleziona il pulsante **Start di** Windows.
 2. Digitare **PowerShell,** fare clic con il pulsante destro **del Windows PowerShell** e quindi scegliere Esegui come **amministratore.**
@@ -64,6 +64,12 @@ Dopo aver installato MCCA, è possibile eseguire MCCA e generare un report. Per 
     ```powershell
     Get-MCCAReport
     ```
+   Se sei un cliente GCC High, dovrai fornire un parametro di input aggiuntivo per eseguire il report:
+
+    ```powershell
+    Get-MCCAReport -ExchangeEnvironmentName O365USGovGCCHigh
+    ```
+
 3. Dopo l'esecuzione di MCCA, esegue un controllo della versione iniziale e richiede le credenziali. Al prompt Input the user name, sign in with your Microsoft 365 account email address ([view the roles eligible to create reports](#role-based-reporting)). Immettere quindi la password al prompt della password.
 
 La generazione del report richiederà circa 2-5 minuti. Al termine, viene visualizzata una finestra del browser in cui viene visualizzato il report HTML. Ogni volta che esegui lo strumento, ti chiederà le credenziali e genererà un nuovo report. Questo report viene archiviato localmente nella directory seguente:
@@ -74,7 +80,7 @@ Da questa directory è possibile accedere ai report generati in precedenza.
 
 ## <a name="understanding-your-report"></a>Informazioni sul report
 
-Il report riflette i dati in base alla data e all'ora in cui è stato generato. Nella sezione superiore vengono fornite informazioni dettagliate su quando è stata generata, sul nome dell'organizzazione e sull'ID tenant.
+Il report riflette i dati in base alla data e all'ora in cui è stato generato. Nella sezione superiore sono disponibili informazioni dettagliate su quando è stata generata, sul nome dell'organizzazione e sull'ID tenant.
 
 #### <a name="geolocation-based-reporting"></a>Report basati sulla georilevazione
 
@@ -122,7 +128,7 @@ La tabella seguente mostra quali ruoli hanno accesso a quali sezioni del report.
 ![MCCA - ruoli](../media/compliance-manager-mcca-roles.png "Ruoli MCCA")
 
 Eccezioni:
-1. L'utente non sarà in grado di generare report per IP a parte la sezione "Utilizzare IRM per Exchange Online".
+1. L'utente non sarà in grado di generare un rapporto per IP a parte la sezione "Utilizzare IRM per Exchange Online".
 2. L'utente sarà in grado di generare un rapporto per IP a parte la sezione "Utilizzare IRM per Exchange Online".
 3. L'utente sarà in grado di generare un report per IP a parte la sezione "Abilitare la conformità delle comunicazioni in O365".
 4. L'utente non sarà in grado di generare report per IP a parte la sezione "Abilitare il controllo in Office 365".
@@ -138,9 +144,9 @@ MCCA valuta le configurazioni correnti in base alle azioni di miglioramento cons
 
 Accanto a ogni soluzione Microsoft sono presenti caselle con codice a colori che indicano il numero di elementi che corrispondono alle azioni di miglioramento in Compliance Manager. Le azioni sono suddivise in tre stati di stato:
 
-- **OK:** le azioni che soddisfano le condizioni consigliate e che non necessitano di attenzione in questo momento
+- **OK:** le azioni che soddisfano le condizioni consigliate e non necessitano attenzione in questo momento
 - **Miglioramento:** azioni che necessitano attenzione
-- **Suggerimento:** azioni che non necessitano di attenzione, ma per le quali si consigliano le procedure consigliate
+- **Raccomandazione:** azioni che non necessitano di attenzione, ma per le quali si consigliano le procedure consigliate
  
 Selezionare una casella per visualizzare miglioramenti e suggerimenti.
 

@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Utilizzare lo strumento di importazione per aggiungere rapidamente più responsabile e le origini dati associate a un caso in Advanced eDiscovery.
-ms.openlocfilehash: 65ae932fac759896690e5fa65ec1d4173439ccb6
-ms.sourcegitcommit: 36d12e02f6fda199ae7f2fb72fe52d7e2b5b4efd
+ms.openlocfilehash: 98ff3690fe7fd8c956fce436585014ef0db82a26
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "49740303"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50421613"
 ---
 # <a name="import-custodians-to-an-advanced-ediscovery-case"></a>Importare i responsabile in un caso di Advanced eDiscovery
 
@@ -42,7 +42,7 @@ Per i casi di Advanced eDiscovery che coinvolgono molti amministratori, è possi
 
 6. Nella pagina **a comparsa Importa i responsabile** fare clic su **Sfoglia** e quindi caricare il file CSV contenente le informazioni sui responsabile.
 
-   Dopo il caricamento del file CSV, viene creato e visualizzato un processo denominato **BulkAddCustodian** nella **scheda Processi.** Il processo convalida i responsabile e le origini dati associate e quindi li aggiunge alla **pagina Origini** dati del caso.
+   Dopo il caricamento del file CSV, viene creato e visualizzato un processo **denominato BulkAddCustodian** nella **scheda Processi.** Il processo convalida i responsabile e le origini dati associate e quindi li aggiunge alla **pagina Origini** dati del caso.
 
 ## <a name="custodian-csv-file"></a>File CSV del responsabile
 
@@ -53,12 +53,15 @@ Dopo aver scaricato il modello di responsabile CSV, è possibile aggiungere i re
 |**Contatto responsabileEmail**     |Indirizzo di posta elettronica UPN del responsabile. Ad esempio, sarad@contoso.onmicrosoft.com.           |
 |**Exchange abilitato** | Valore TRUE/FALSE per includere o non includere la cassetta postale del responsabile.      |
 |**OneDrive abilitato** | Valore TRUE/FALSE per includere o non includere l'account OneDrive for Business del responsabile. |
-|**Is OnHold**        | Valore TRUE/FALSE per indicare se le origini dati del responsabile devono essere in attesa.       |
+|**Is OnHold**        | Valore TRUE/FALSE per indicare se mettere in attesa le origini dati del responsabile. <sup>1</sup>     |
 |**Tipo Carico di lavoro1**         |Valore stringa che indica il tipo di origine dati da associare al responsabile. I valori possibili includono: <br/>- ExchangeMailbox<br/> - SharePointSite<br/>- TeamsMailbox<br/>- TeamsSite<br/> - YammerMailbox<br/>- YammerSite |
 |**Posizione carico di lavoro 1**     | A seconda del tipo di carico di lavoro, si tratta della posizione dell'origine dati. Ad esempio, l'indirizzo di posta elettronica per una cassetta postale di Exchange o l'URL di un sito di SharePoint. |
 |||
 
-Ecco un esempio di un file CSV con le informazioni del responsabile:<br/><br/>
+> [!NOTE]
+> <sup>1</sup> È possibile mettere in attesa un massimo di 1.000 cassette postali e 100 siti utilizzando il processo di importazione dei responsabile e il file CSV. È possibile utilizzare questo processo per aggiungere più di 1.000 responsabile a un caso, ma i limiti di blocco sono ancora applicabili. Per ulteriori informazioni sui limiti di blocco, vedere [Limiti in Advanced eDiscovery.](limits-ediscovery20.md#hold-limits)
+
+Ecco un esempio di un file CSV con informazioni sui responsabile:<br/><br/>
 
 |Contatto responsabileEmail      | Exchange abilitato | OneDrive abilitato | Is OnHold | Tipo Carico di lavoro1 | Posizione carico di lavoro 1             |
 | ----------------- | ---------------- | ---------------- | --------- | -------------- | ------------------------------ |
@@ -66,7 +69,7 @@ Ecco un esempio di un file CSV con le informazioni del responsabile:<br/><br/>
 |pillarp@onmicrosoft.contoso.com | TRUE             | TRUE             | TRUE      | |  |
 ||||||
 
-## <a name="custodian-and-data-source-validation"></a>Convalida del responsabile e dell'origine dati
+## <a name="custodian-and-data-source-validation"></a>Convalida dell'origine dati e del responsabile
 
 Dopo aver caricato il file CSV del responsabile, Advanced eDiscovery esegue le operazioni seguenti:
 
@@ -94,16 +97,16 @@ Per aggiungere origini dati convalidate per un responsabile:
 
 3. Fare **clic su** Modifica nella parte superiore della pagina a comparsa per rimuovere origini dati non valide o aggiungerne di nuove.
 
-4. Dopo aver rimosso le origini dati non convalidate o averne  aggiunto una nuova, il valore **Attivo** viene visualizzato nella colonna Stato del responsabile nella **scheda Origini** dati. Per aggiungere origini che in precedenza non erano valide, segui i passaggi di correzione seguenti per aggiungerle manualmente a un responsabile.
+4. Dopo aver rimosso le origini dati non convalidate o averne  aggiunto una nuova, il valore **Attivo** viene visualizzato nella colonna Stato del responsabile nella **scheda Origini** dati. Per aggiungere origini che in precedenza non erano valide, segui la procedura di correzione riportata di seguito per aggiungerle manualmente a un responsabile.
 
 ### <a name="remediating-invalid-data-sources"></a>Correzione di origini dati non valide
 
 Per aggiungere e associare manualmente un'origine dati precedentemente non valida:
 
-1. Nella scheda **Origini dati selezionare** un responsabile per aggiungere e associare manualmente un'origine dati precedentemente non valida.
+1. Nella scheda **Origini dati** selezionare un responsabile per aggiungere e associare manualmente un'origine dati precedentemente non valida.
 
 2. Fare **clic** su Modifica nella parte superiore della pagina del riquadro a comparsa per associare cassette postali, siti, gruppi di Teams o Yammer al responsabile. A tale scopo, fare **clic su Modifica** accanto al tipo di percorso dati appropriato.
 
 3. Fare **clic su** Avanti per visualizzare la pagina delle impostazioni **di** blocco e configurare l'impostazione di blocco per le origini dati aggiunte.
 
-4. Fare **clic** su Avanti per visualizzare **la pagina Rivedi** i revisori e quindi su **Invia** per salvare le modifiche.
+4. Fare **clic su** Avanti per visualizzare la pagina Rivedi i **revisori** e quindi su **Invia** per salvare le modifiche.

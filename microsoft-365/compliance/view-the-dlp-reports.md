@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: Usare i report DLP in Office 365 per visualizzare il numero di corrispondenze, sostituzioni o falsi positivi dei criteri DLP e vedere se stanno andando verso l'alto o verso il basso nel tempo.
-ms.openlocfilehash: 1ddcd60dc9314779ade2f7ceae02d336f902e483
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: eb281f4d912a9e21716d7f9859564a02f9c23401
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818996"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423829"
 ---
 # <a name="view-the-reports-for-data-loss-prevention"></a>Visualizzare i report di prevenzione della perdita di dati
 
@@ -54,11 +54,11 @@ Dopo aver creato i criteri di prevenzione della perdita dei dati (DLP), è neces
     
   - Visualizzare le giustificazioni inviate dagli utenti quando risolvono un suggerimento per i criteri ignorando il criterio.
     
-  - Individuare i casi in cui i criteri DLP sono in conflitto con i processi aziendali validi, verificando un numero elevato di sostituzioni utente.
+  - Individuare i casi in cui i criteri DLP sono in conflitto con i processi aziendali validi in caso di un numero elevato di sostituzioni utente.
     
 Tutti i report DLP possono mostrare i dati del periodo di quattro mesi più recente. La visualizzazione dei dati più recenti nei report può richiedere fino a 24 ore.
   
-Questi report sono disponibili nel dashboard dei report del &amp; Centro \> **sicurezza e** \> **conformità.**
+Questi report sono disponibili nel dashboard dei report &amp; del Centro sicurezza e \>  \> **conformità.**
   
 ![Report corrispondenze dei criteri DLP](../media/117d20c9-d379-403f-ad68-1f5cd6c4e5cf.png)
   
@@ -68,7 +68,7 @@ Se il criterio DLP consente agli utenti di ignorarlo, è possibile utilizzare il
   
 ![Campo Giustificazione nei dettagli del report di falsi positivi e override dlp](../media/e11e3126-026d-4e77-a16d-74a0686d1fa3.png)
   
-## <a name="take-action-on-insights-and-recommendations"></a>Intervenire su informazioni dettagliate e suggerimenti
+## <a name="take-action-on-insights-and-recommendations"></a>Eseguire azioni su informazioni dettagliate e suggerimenti
 
 I report possono mostrare informazioni dettagliate e suggerimenti in cui è possibile fare clic sull'icona di avviso rossa per visualizzare i dettagli sui potenziali problemi e intraprendere possibili azioni correttive.
   
@@ -88,7 +88,7 @@ Per visualizzare i report DLP nel Centro sicurezza & conformità, è necessario 
 
 Per usare la maggior parte dei cmdlet per il Centro sicurezza e conformità, è necessario:
   
-1. [Connettersi al Centro &amp; sicurezza e conformità tramite Remote PowerShell](https://go.microsoft.com/fwlink/?LinkID=799771&amp;clcid=0x409)
+1. [Connettersi al Centro &amp; sicurezza e conformità tramite Remote PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell&amp;clcid=0x409)
     
 2. Utilizzare uno di questi [cmdlet del Centro sicurezza e &amp; conformità](https://go.microsoft.com/fwlink/?LinkID=799772&amp;clcid=0x409)
     

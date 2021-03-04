@@ -16,13 +16,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Questo articolo descrive i limiti del caso principale di eDiscovery in Microsoft 365.
-ms.openlocfilehash: 43d267acdb0c1fee0202c74832b376e066241d7c
-ms.sourcegitcommit: 495b66b77d6dbe6d69e5b06b304089e4e476e568
+description: Questo articolo descrive i limiti nel caso di eDiscovery di base in Microsoft 365.
+ms.openlocfilehash: 2699e9b2511c742bb295f69611a976f6a3955980
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "49799663"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423447"
 ---
 # <a name="limits-in-core-ediscovery"></a>Limiti in Core eDiscovery
 
@@ -30,10 +30,10 @@ Nella tabella seguente sono elencati i limiti per i casi principali di eDiscover
     
   | Descrizione del limite | Limite |
   |:-----|:-----|
-  |Numero massimo di casi per un'organizzazione  <br/> |Nessun limite  <br/> |
-  |Numero massimo di blocchi dei casi per un'organizzazione  <br/> |10.000  <br/> |
-  |Numero massimo di cassette postali in un blocco caso singolo  <br/> |1.000  <br/> |
-  |Numero massimo di siti di SharePoint e OneDrive for Business in un blocco caso singolo  <br/> |100  <br/> |
+  |Numero massimo di casi per un'organizzazione.  <br/> |Nessun limite  <br/> |
+  |Numero massimo di blocchi dei casi per un'organizzazione.  <br/> |10.000  <br/> |
+  |Numero massimo di cassette postali in un singolo blocco caso. Questo limite include il totale combinato delle cassette postali degli utenti e le cassette postali associate ai gruppi di Microsoft 365, Microsoft Teams e Gruppi di Yammer.  <br/> |1.000  <br/> |
+  |Numero massimo di siti in un blocco caso singolo. Questo limite include il totale combinato dei siti di OneDrive for Business, dei siti di SharePoint e dei siti associati a Gruppi di Microsoft 365, Microsoft Teams e Gruppi di Yammer.  <br/> |100  <br/> |
   |Numero massimo di casi visualizzati nella home page principale di eDiscovery e numero massimo di elementi visualizzati nelle schede Esenzioni, Ricerche ed Esportazione all'interno di un caso. <sup>1</sup> |1.000|
   |||
 

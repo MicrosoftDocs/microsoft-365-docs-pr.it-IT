@@ -16,12 +16,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come gli strumenti di eDiscovery di Microsoft 365 gestiscono i documenti crittografati allegati ai messaggi di posta elettronica e archiviati in SharePoint Online e OneDrive for Business.
-ms.openlocfilehash: aeb1d927a5da24c55838fe3379451956949d8b4f
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: 4ddc66d595b9d2129a7ba1b75e69586ccbd130f7
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044768"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423819"
 ---
 # <a name="decryption-in-microsoft-365-ediscovery-tools"></a>Decrittografia negli strumenti di eDiscovery di Microsoft 365
 
@@ -31,11 +31,11 @@ Per eseguire attività comuni di eDiscovery su contenuto crittografato, i respon
 
 Per semplificare la gestione del contenuto crittografato nel flusso di lavoro di eDiscovery, gli strumenti di eDiscovery di Microsoft 365 ora incorporano la decrittografia dei file crittografati allegati ai messaggi di posta elettronica e inviati in Exchange Online. Inoltre, i documenti crittografati archiviati in SharePoint Online e OneDrive for Business vengono decrittografati in Advanced eDiscovery. 
 
-Prima di questa nuova funzionalità, solo il contenuto di un messaggio di posta elettronica protetto da Rights Management (e non dai file allegati) era decrittografato. Non è stato possibile decrittografare i documenti crittografati in SharePoint e OneDrive durante il flusso di lavoro di eDiscovery. Ora, se un file crittografato con una tecnologia di crittografia Microsoft è allegato a un messaggio di posta elettronica o si trova in un account di SharePoint o OneDrive, questi elementi crittografati vengono decrittografati quando i risultati della ricerca vengono preparati per l'anteprima, aggiunti a una recensione impostata in Advanced eDiscovery ed esportati. In questo modo i responsabili di eDiscovery possono visualizzare il contenuto degli allegati di posta elettronica crittografati e dei documenti del sito quando visualizzano in anteprima i risultati della ricerca e rivederli dopo essere stati aggiunti a un insieme da rivedere in Advanced eDiscovery.
+Prima di questa nuova funzionalità, solo il contenuto di un messaggio di posta elettronica protetto da Rights Management (e non dai file allegati) era decrittografato. Non è stato possibile decrittografare i documenti crittografati in SharePoint e OneDrive durante il flusso di lavoro di eDiscovery. Ora, se un file crittografato con una tecnologia di crittografia Microsoft è allegato a un messaggio di posta elettronica o si trova in un account di SharePoint o OneDrive, tali elementi crittografati vengono decrittografati quando i risultati della ricerca vengono preparati per l'anteprima, aggiunti a una recensione impostata in Advanced eDiscovery ed esportati. Ciò consente ai responsabili di eDiscovery di visualizzare il contenuto degli allegati di posta elettronica crittografati e dei documenti del sito quando visualizzano in anteprima i risultati della ricerca ed esaminarli dopo essere stati aggiunti a un insieme di recensioni in Advanced eDiscovery.
 
 ## <a name="supported-encryption-technologies"></a>Tecnologie di crittografia supportate
 
-Gli strumenti di Microsoft eDiscovery supportano gli elementi crittografati con le tecnologie di crittografia Microsoft. Queste tecnologie includono Crittografia messaggi di Office, Azure Rights Management e Microsoft Information Protection (in particolare le etichette di riservatezza). Per ulteriori informazioni sulle tecnologie di crittografia Microsoft, vedere [Crittografia.](encryption.md) Il contenuto crittografato da tecnologie di crittografia di terze parti non è supportato. Ad esempio, la visualizzazione in anteprima o l'esportazione di contenuto crittografato con tecnologie non Microsoft non è supportata.
+Gli strumenti di Microsoft eDiscovery supportano gli elementi crittografati con le tecnologie di crittografia Microsoft. Queste tecnologie sono Azure Rights Management e Microsoft Information Protection (in particolare le etichette di riservatezza). Per ulteriori informazioni sulle tecnologie di crittografia Microsoft, vedere [Crittografia.](encryption.md) Il contenuto crittografato da tecnologie di crittografia di terze parti non è supportato. Ad esempio, la visualizzazione in anteprima o l'esportazione di contenuto crittografato con tecnologie non Microsoft non è supportata.
 
 ## <a name="ediscovery-activities-that-support-encrypted-items"></a>Attività di eDiscovery che supportano gli elementi crittografati
 
@@ -63,6 +63,6 @@ I documenti crittografati con le impostazioni precedenti possono comunque essere
 
 ## <a name="requirements-for-decryption-in-ediscovery"></a>Requisiti per la decrittografia in eDiscovery
 
-È necessario disporre del ruolo di decrittografia RMS per visualizzare in anteprima, esaminare ed esportare i file crittografati con le tecnologie di crittografia Microsoft. È inoltre necessario essere assegnati a questo ruolo per esaminare ed eseguire query su file crittografati aggiunti a un insieme da rivedere in Advanced eDiscovery.
+È necessario disporre del ruolo di decrittografia RMS per visualizzare in anteprima, rivedere ed esportare i file crittografati con le tecnologie di crittografia Microsoft. È inoltre necessario essere assegnati a questo ruolo per esaminare ed eseguire query su file crittografati aggiunti a un insieme da rivedere in Advanced eDiscovery.
 
-Questo ruolo viene assegnato per impostazione predefinita al  gruppo di ruoli Gestore di eDiscovery nella pagina Autorizzazioni nel Centro sicurezza & Conformità di Office 365. Per ulteriori informazioni sul ruolo di decrittografia RMS, vedere [Assegnare le autorizzazioni di eDiscovery.](assign-ediscovery-permissions.md#rms-decrypt)
+Questo ruolo viene assegnato per impostazione predefinita al  gruppo di ruoli Gestore di eDiscovery nella pagina Autorizzazioni nel Centro sicurezza & conformità di Office 365. Per ulteriori informazioni sul ruolo di decrittografia RMS, vedere [Assegnare autorizzazioni di eDiscovery.](assign-ediscovery-permissions.md#rms-decrypt)

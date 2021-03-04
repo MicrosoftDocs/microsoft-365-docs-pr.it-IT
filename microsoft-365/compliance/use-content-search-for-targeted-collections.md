@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: e3cbc79c-5e97-43d3-8371-9fbc398cd92e
 ms.custom: seo-marvel-apr2020
 description: Usare Ricerca contenuto nel Centro conformità Microsoft 365 per eseguire raccolte mirate, che garantiscono che gli elementi si trovino in una specifica cassetta postale o cartella del sito.
-ms.openlocfilehash: 0908b8262942e7a1c4d80bc511d4b8cbcc6dc646
-ms.sourcegitcommit: 20d1158c54a5058093eb8aac23d7e4dc68054688
+ms.openlocfilehash: 9c549b3ae418d13b6e1aafbf0cc171c52f89e621
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "49376593"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423457"
 ---
 # <a name="use-content-search-for-targeted-collections"></a>Usare Ricerca contenuto per le raccolte di destinazione
 
@@ -39,7 +39,7 @@ La funzionalità Ricerca contenuto nel Centro conformità Microsoft 365 non forn
 
     Inoltre, è necessario disporre del ruolo Destinatari di posta nell'organizzazione di Exchange Online. Questa operazione è necessaria per eseguire il cmdlet **Get-MailboxFolderStatistics,** incluso nello script. Per impostazione predefinita, il ruolo Destinatari di posta viene assegnato ai gruppi di ruoli Gestione organizzazione e Gestione destinatari in Exchange Online. Per ulteriori informazioni sull'assegnazione delle autorizzazioni in Exchange Online, vedere [Gestire i membri del gruppo di ruoli.](https://go.microsoft.com/fwlink/p/?linkid=692102) È inoltre possibile creare un gruppo di ruoli personalizzato, assegnare il ruolo Destinatari di posta e quindi aggiungere i membri che devono eseguire lo script nel passaggio 1. Per ulteriori informazioni, vedere [Gestire gruppi di ruoli](https://go.microsoft.com/fwlink/p/?linkid=730688).
 
-- Lo script in questo articolo supporta l'autenticazione moderna. È possibile usare lo script così come è se si è un'organizzazione di Microsoft 365 o Microsoft 365 GCC. If you are an Office 365 Germany organization, a Microsoft 365 GCC High organization, or a Microsoft 365 DoD organization, you will have to edit the script to successfully run it. In particolare, è necessario modificare la riga e utilizzare il `Connect-ExchangeOnline` *parametro ExchangeEnvironmentName* (e il valore appropriato per il tipo di organizzazione) per connettersi a PowerShell di Exchange Online.  Inoltre, è necessario modificare la riga e usare i parametri `Connect-IPPSSession` *ConnectionUri* e *AzureADAuthorizationEndpointUri* (e i valori appropriati per il tipo di organizzazione) per connettersi a PowerShell per Centro sicurezza & conformità. Per ulteriori informazioni, vedere gli esempi in [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell?#connect-to-exchange-online-powershell-without-using-mfa) and Connect to Security & Compliance Center [PowerShell.](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)
+- Lo script in questo articolo supporta l'autenticazione moderna. È possibile usare lo script così come è se si è un'organizzazione di Microsoft 365 o Microsoft 365 GCC. If you are an Office 365 Germany organization, a Microsoft 365 GCC High organization, or a Microsoft 365 DoD organization, you will have to edit the script to successfully run it. In particolare, è necessario modificare la riga e utilizzare il `Connect-ExchangeOnline` *parametro ExchangeEnvironmentName* (e il valore appropriato per il tipo di organizzazione) per connettersi a PowerShell di Exchange Online.  Inoltre, è necessario modificare la riga e utilizzare i parametri `Connect-IPPSSession` *ConnectionUri* e *AzureADAuthorizationEndpointUri* (e i valori appropriati per il tipo di organizzazione) per connettersi a PowerShell per Centro sicurezza & conformità. Per ulteriori informazioni, vedere gli esempi in [Connect to Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell?#connect-to-exchange-online-powershell-without-using-mfa) and Connect to Security & Compliance Center [PowerShell.](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell#connect-to-security--compliance-center-powershell-without-using-mfa)
 
 - Ogni volta che si esegue lo script, viene creata una nuova sessione remota di PowerShell. Ciò significa che è possibile utilizzare tutte le sessioni remote di PowerShell disponibili. Per evitare che ciò accada, eseguire il comando seguente per disconnettere le sessioni remote di PowerShell attive.
 
@@ -47,7 +47,7 @@ La funzionalità Ricerca contenuto nel Centro conformità Microsoft 365 non forn
   Get-PSSession | Remove-PSSession
   ```
 
-    Per ulteriori informazioni, vedere [Connessione a Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+    Per ulteriori informazioni, vedere [Connessione a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Lo script include una gestione minima degli errori. Lo scopo principale dello script è visualizzare rapidamente un elenco di ID cartella delle cassette postali o percorsi di sito che possono essere utilizzati nella sintassi della query di ricerca di una ricerca di contenuto per eseguire una raccolta di destinazione.
 
@@ -57,7 +57,7 @@ La funzionalità Ricerca contenuto nel Centro conformità Microsoft 365 non forn
 
 Lo script eseguito in questo primo passaggio restituirà un elenco delle cartelle delle cassette postali o delle cartelle di SharePoint e OneDrive for Business e l'ID o il percorso della cartella corrispondente per ogni cartella. Quando si esegue questo script, verranno richieste le informazioni seguenti.
   
-- **Indirizzo di posta elettronica o URL** del sito: digitare un indirizzo di posta elettronica del responsabile per restituire un elenco di cartelle e ID cartella delle cassette postali di Exchange. In or type the URL for a SharePoint site or a OneDrive for Business site to return a list of paths for the specified site. Ecco alcuni esempi:
+- **Indirizzo di posta elettronica o URL** del sito: digitare un indirizzo di posta elettronica del responsabile per restituire un elenco delle cartelle delle cassette postali di Exchange e degli ID cartella. In or type the URL for a SharePoint site or a OneDrive for Business site to return a list of paths for the specified site. Ecco alcuni esempi:
 
   - **Exchange**: stacig@contoso.onmicrosoft.com <spam> <spam>
 
@@ -69,7 +69,7 @@ Lo script eseguito in questo primo passaggio restituirà un elenco delle cartell
 
 Per visualizzare un elenco delle cartelle delle cassette postali o dei nomi site documentlink (percorso):
   
-1. Salvare il testo seguente in un file Windows PowerShell script utilizzando il suffisso del nome file ps1. ad esempio `GetFolderSearchParameters.ps1` .
+1. Salvare il testo seguente in un file Windows PowerShell script utilizzando il suffisso del nome file ps1; ad esempio `GetFolderSearchParameters.ps1` .
 
    ```powershell
    #########################################################################################################
@@ -195,7 +195,7 @@ Per visualizzare un elenco delle cartelle delle cassette postali o dei nomi site
   
 ### <a name="script-output-for-mailbox-folders"></a>Output dello script per le cartelle delle cassette postali
 
-Se si ottengono gli ID delle cartelle delle cassette postali, lo script si connette a PowerShell di Exchange Online, esegue il cmdlet **Get-MailboxFolderStatisics** e quindi visualizza l'elenco delle cartelle della cassetta postale specificata. Per ogni cartella nella cassetta postale, lo script visualizza il nome della cartella nella colonna **FolderPath** e l'ID cartella nella **colonna FolderQuery.** Inoltre, lo script aggiunge il prefisso **di folderId** (che è il nome della proprietà della cassetta postale) all'ID cartella. Poiché la **proprietà folderid** è una proprietà in cui è possibile eseguire ricerche, verrà utilizzata in una query di ricerca nel passaggio 2 per eseguire  `folderid:<folderid>` ricerche in tale cartella. Lo script visualizza un massimo di 100 cartelle delle cassette postali.
+Se si ottengono gli ID delle cartelle delle cassette postali, lo script si connette a PowerShell di Exchange Online, esegue il cmdlet **Get-MailboxFolderStatisics** e quindi visualizza l'elenco delle cartelle della cassetta postale specificata. Per ogni cartella nella cassetta postale, lo script visualizza il nome della cartella nella colonna **FolderPath** e l'ID cartella nella **colonna FolderQuery.** Inoltre, lo script aggiunge il prefisso **di folderId** (che è il nome della proprietà della cassetta postale) all'ID cartella. Poiché la **proprietà folderid** è una proprietà in cui è possibile eseguire ricerche, verrà utilizzata in una query di ricerca nel  `folderid:<folderid>` passaggio 2 per eseguire ricerche in tale cartella. Lo script visualizza un massimo di 100 cartelle delle cassette postali.
 
 > [!IMPORTANT]
 > Lo script in questo articolo include la logica di codifica che converte i valori id cartella di 64 caratteri restituiti da **Get-MailboxFolderStatistics** nello stesso formato di 48 caratteri indicizzato per la ricerca. Se si esegue semplicemente il cmdlet **Get-MailboxFolderStatistics** in PowerShell per ottenere un ID cartella (anziché eseguire lo script in questo articolo), una query di ricerca che utilizza tale valore id cartella avrà esito negativo. È necessario eseguire lo script per ottenere gli ID cartella formattati correttamente che possono essere utilizzati in una ricerca di contenuto.
@@ -216,7 +216,7 @@ Ecco un esempio dell'output restituito dallo script per le cartelle del sito.
   
 ## <a name="step-2-use-a-folder-id-or-documentlink-to-perform-a-targeted-collection"></a>Passaggio 2: Usare un ID cartella o un documentlink per eseguire una raccolta di destinazione
 
-Dopo aver eseguito lo script per raccogliere un elenco di ID cartella o collegamenti a documenti per un utente specifico, il passaggio successivo per passare al Centro conformità Microsoft 365 e creare una nuova ricerca di contenuto per eseguire ricerche in una cartella specifica. Verrà utilizzata la coppia or property:value nella query di ricerca configurata nella casella della parola chiave Ricerca contenuto (o come valore per il parametro ContentMatchQuery se si utilizza il `folderid:<folderid>` `documentlink:<path>` cmdlet **New-ComplianceSearch).**  È possibile combinare la  `folderid` proprietà o con altri parametri di ricerca o condizioni di  `documentlink` ricerca. Se si include solo la proprietà o nella query, la ricerca restituirà tutti gli elementi  `folderid` che si trovano nella cartella  `documentlink` specificata.
+Dopo aver eseguito lo script per raccogliere un elenco di ID cartella o collegamenti a documenti per un utente specifico, il passaggio successivo per passare al Centro conformità Microsoft 365 e creare una nuova ricerca di contenuto per eseguire una ricerca in una cartella specifica. Verrà utilizzata la coppia or property:value nella query di ricerca configurata nella casella della parola chiave Ricerca contenuto (o come valore per il parametro ContentMatchQuery se si utilizza il `folderid:<folderid>` `documentlink:<path>` cmdlet **New-ComplianceSearch).**  È possibile combinare la  `folderid` proprietà o con altri parametri di ricerca o condizioni di  `documentlink` ricerca. Se si include solo la proprietà o nella query, la ricerca restituirà tutti gli elementi  `folderid` che si trovano nella cartella  `documentlink` specificata.
   
 1. Accedere con l'account e le credenziali usati per [https://compliance.microsoft.com](https://compliance.microsoft.com) eseguire lo script nel passaggio 1.
 
@@ -232,7 +232,7 @@ Dopo aver eseguito lo script per raccogliere un elenco di ID cartella o collegam
 
 5. Eseguire una delle operazioni seguenti, a seconda che si eservi una ricerca in una cartella della cassetta postale o in una cartella del sito:
 
-    - Accanto a **Posta elettronica di Exchange,** fare clic su Scegli **utenti, gruppi** o team e quindi aggiungere la stessa cassetta postale specificata durante l'esecuzione dello script nel passaggio 1.
+    - Accanto alla posta elettronica di **Exchange,** fare clic su Scegli **utenti, gruppi** o team e quindi aggiungere la stessa cassetta postale specificata durante l'esecuzione dello script nel passaggio 1.
 
       Oppure
 
@@ -242,7 +242,7 @@ Dopo aver eseguito lo script per raccogliere un elenco di ID cartella o collegam
   
 ### <a name="examples-of-search-queries-for-targeted-collections"></a>Esempi di query di ricerca per raccolte di destinazione
 
-Ecco alcuni esempi di utilizzo delle proprietà  `folderid` e in una query di ricerca per eseguire una raccolta di  `documentlink` destinazione. I segnaposto vengono utilizzati per  `folderid:<folderid>` e  `documentlink:<path>` per risparmiare spazio. 
+Ecco alcuni esempi di utilizzo delle proprietà e delle proprietà  `folderid` in una query di ricerca per eseguire una raccolta di  `documentlink` destinazione. I segnaposto vengono utilizzati per  `folderid:<folderid>` e  `documentlink:<path>` per risparmiare spazio. 
   
 - In questo esempio viene eseguita la ricerca in tre diverse cartelle delle cassette postali. È possibile utilizzare una sintassi di query simile per cercare le cartelle nascoste nella cartella Elementi ripristinabili di un utente.
 
@@ -268,13 +268,13 @@ Ecco alcuni esempi di utilizzo delle proprietà  `folderid` e in una query di ri
   documentlink:<path> AND (lastmodifiedtime>=01/01/2017 AND lastmodifiedtime<=01/21/2017)
   ```
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 Quando si usa lo script in questo articolo per eseguire raccolte mirate, tenere presente quanto segue.
   
 - Lo script non rimuove alcuna cartella dai risultati. Pertanto, alcune cartelle elencate nei risultati potrebbero non essere ricercabili (o restituire zero elementi) perché contengono contenuto generato dal sistema o perché contengono solo sottocartelle e non elementi della cassetta postale.
 
-- Questo script restituisce solo le informazioni sulla cartella per la cassetta postale principale dell'utente. Non restituisce informazioni sulle cartelle nella cassetta postale di archiviazione dell'utente. Per restituire informazioni sulle cartelle nella cassetta postale di archiviazione dell'utente, è possibile modificare lo script. A tale scopo, modificare la riga `$folderStatistics = Get-MailboxFolderStatistics $emailAddress` `$folderStatistics = Get-MailboxFolderStatistics $emailAddress -Archive` in, quindi salvare ed eseguire lo script modificato. Questa modifica restituirà gli ID cartella per le cartelle e le sottocartelle nella cassetta postale di archiviazione dell'utente. Per eseguire una ricerca nell'intera cassetta postale di archiviazione, è possibile connettere tutte le coppie id cartella proprietà:valore a un `OR` operatore in una query di ricerca.
+- Questo script restituisce solo le informazioni sulla cartella per la cassetta postale principale dell'utente. Non restituisce informazioni sulle cartelle nella cassetta postale di archiviazione dell'utente. Per restituire informazioni sulle cartelle nella cassetta postale di archiviazione dell'utente, è possibile modificare lo script. A tale scopo, modificare la riga `$folderStatistics = Get-MailboxFolderStatistics $emailAddress` `$folderStatistics = Get-MailboxFolderStatistics $emailAddress -Archive` in, quindi salvare ed eseguire lo script modificato. Questa modifica restituirà gli ID cartella per le cartelle e le sottocartelle nella cassetta postale di archiviazione dell'utente. Per eseguire ricerche nell'intera cassetta postale di archiviazione, è possibile connettere tutte le coppie id cartella proprietà:valore a un `OR` operatore in una query di ricerca.
 
 - Quando si esegue una ricerca nelle cartelle delle cassette postali, viene eseguita la ricerca solo nella cartella specificata (identificata dalla relativa proprietà), mentre le sottocartelle non `folderid` vengono cercate. Per cercare nelle sottocartelle, è necessario utilizzare l'ID cartella per la sottocartella in cui si desidera eseguire la ricerca.
 

@@ -14,12 +14,12 @@ ms.assetid: 421f72bd-dd43-4be1-82f5-0ae9ac43bd00
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come creare un blocco In-Place per una cassetta postale eliminata in modo resciso per renderla inattiva e conservarne il contenuto.
-ms.openlocfilehash: 4dcd6539519675094da9a05c7701b9f8511ce9a1
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 638cc0554f216a0cb552c1f8eacef3d692d9f792
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44818865"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423767"
 ---
 # <a name="put-an-in-place-hold-on-a-soft-deleted-mailbox-in-exchange-online"></a>Inserire un In-Place blocco su una cassetta postale eliminata in modo resciso in Exchange Online
 
@@ -31,13 +31,13 @@ Informazioni su come creare un blocco In-Place per una cassetta postale eliminat
 Potrebbe verificarsi una situazione in cui una persona ha lasciato l'organizzazione e l'account utente e la cassetta postale corrispondenti sono stati eliminati. In seguito, ci si rende conto che ci sono informazioni nella cassetta postale che devono essere conservate. Cosa potete fare? Se il periodo di conservazione della cassetta postale eliminata non è scaduto, è possibile impostare un blocco In-Place sulla cassetta postale eliminata (denominata cassetta postale eliminata in modo retto) e renderla una cassetta postale inattiva. Una  *cassetta postale inattiva*  viene utilizzata per conservare la posta elettronica di un ex dipendente dopo che ha lasciato l'organizzazione. Il contenuto di una cassetta postale inattiva viene conservato per tutta la durata del blocco In-Place che è stato inserito nella cassetta postale eliminata in modo reversivo quando è stata resa inattiva. Dopo aver reso inattiva la cassetta postale, è possibile eseguire ricerche nella cassetta postale utilizzando eDiscovery di In-Place in Exchange Online, Ricerca contenuto nel Centro sicurezza & conformità o centro eDiscovery in SharePoint Online. 
   
 > [!NOTE]
-> In Exchange Online, una cassetta postale con eliminazione temporanea è una cassetta postale che è stata eliminata, ma che può essere recuperata entro un periodo di conservazione specifico. Il periodo di conservazione delle cassette postali con eliminazione temporanea in Exchange Online è pari a 30 giorni. Ciò significa che la cassetta postale può essere recuperata (o resa inattiva) entro 30 giorni dall'eliminazione. Dopo 30 giorni, una cassetta postale eliminata in maniera reverscita viene contrassegnata per l'eliminazione definitiva e non può essere recuperata o resa inattiva. 
+> In Exchange Online, una cassetta postale con eliminazione temporanea è una cassetta postale che è stata eliminata, ma che può essere recuperata entro un periodo di conservazione specifico. Il periodo di conservazione delle cassette postali con eliminazione temporanea in Exchange Online è pari a 30 giorni. Ciò significa che la cassetta postale può essere recuperata (o resa inattiva) entro 30 giorni dall'eliminazione. Dopo 30 giorni, una cassetta postale eliminata in maniera reversa viene contrassegnata per l'eliminazione definitiva e non può essere recuperata o resa inattiva. 
   
-## <a name="requirements-for-in-place-holds"></a>Requisiti per le In-Place di archiviazione
+## <a name="requirements-for-in-place-holds"></a>Requisiti per In-Place blocchi
 
 - È necessario utilizzare il cmdlet **New-MailboxSearch** in Windows PowerShell per inserire un In-Place blocco su una cassetta postale eliminata in modo resciso. Non è possibile utilizzare l'interfaccia di amministrazione di Exchange (EAC) o il Centro eDiscovery in SharePoint Online. 
 
-- Per informazioni su come usare Windows PowerShell per connettersi a Exchange Online, vedere [Connessione a Exchange Online PowerShell](https://go.microsoft.com/fwlink/p/?linkid=396554).
+- Per informazioni su come usare Windows PowerShell per connettersi a Exchange Online, vedere [Connessione a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
 
 - Eseguire il seguente comando per ottenere informazioni sull'identità delle cassette postali eliminate in modo reciso nell'organizzazione. 
 
@@ -84,7 +84,7 @@ Utilizzare il cmdlet **New-MailboxSearch** per rendere inattiva una cassetta pos
    Get-Mailbox -InactiveMailboxOnly -Identity $SoftDeletedMailbox.DistinguishedName  | FL IsInactiveMailbox
    ```
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 Dopo aver fatto di una cassetta postale eliminata in modo reciso una cassetta postale inattiva, è possibile gestire la cassetta postale in diversi modi. Per altre informazioni, vedere:
   

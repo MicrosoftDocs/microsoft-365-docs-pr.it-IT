@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: e893b19a-660c-41f2-9074-d3631c95a014
 ms.custom: seo-marvel-apr2020
 description: Come attivare o disattivare la funzionalità di ricerca dei log di controllo nel Centro sicurezza & conformità per abilitare o disabilitare la capacità degli amministratori di eseguire ricerche nel log di controllo.
-ms.openlocfilehash: 1f3da9671b9e5287d715a438a11b0a0eef164584
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 3f3e1b913dd163e74f9e5359de772dfcbf3bd786
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976329"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423677"
 ---
 # <a name="turn-audit-log-search-on-or-off"></a>Abilitare o disabilitare la ricerca dei log di controllo
 
@@ -67,11 +67,11 @@ Se la ricerca nel log di controllo non è attivata per l'organizzazione, è poss
 
     ![Fare clic su Attiva controllo](../media/39a9d35f-88d0-4bbe-a962-0be2f838e2bf.png)
   
-    Il banner viene aggiornato per dire che il log di controllo è in fase di preparazione e che è possibile cercare le attività degli utenti e degli amministratori in poche ore.
+    Il banner viene aggiornato per dire che il log di controllo è in fase di preparazione ed è possibile cercare attività di utenti e amministratori in poche ore.
 
 ### <a name="use-powershell-to-turn-on-audit-log-search"></a>Usare PowerShell per attivare la ricerca nel log di controllo
 
-1. [Connettersi a PowerShell per Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=396554)
+1. [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. Eseguire il comando di PowerShell seguente per attivare la ricerca nel log di controllo in Office 365.
 
@@ -85,7 +85,7 @@ Se la ricerca nel log di controllo non è attivata per l'organizzazione, è poss
 
 È necessario utilizzare PowerShell di Exchange Online per disattivare la ricerca nel log di controllo.
   
-1. [Connettersi a PowerShell per Exchange Online](https://go.microsoft.com/fwlink/p/?LinkID=396554)
+1. [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
 
 2. Eseguire il seguente comando di PowerShell per disattivare la ricerca nel log di controllo.
 
