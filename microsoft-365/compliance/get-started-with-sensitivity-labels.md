@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pronti per iniziare a implementare le etichette di riservatezza per proteggere i dati dell'organizzazione, ma in dubbio su come iniziare? Leggere alcune guide pratiche utili per iniziare il percorso di implementazione dell'etichettatura.
-ms.openlocfilehash: 03408a2f9e57421ea613bdb38e253401526f8f71
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 31c0ae4cdbeabb10fd44aaffaa24a8597e644941
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242366"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407160"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Iniziare a usare le etichette di riservatezza
 
@@ -85,6 +85,7 @@ Tutti gli scenari richiedono di [Creare e configurare etichette di riservatezza 
 |Consentire agli utenti di etichettare e proteggere i file dai computer Windows tramite app di Office, Esplora file e PowerShell|[Client di etichettatura unificata di Azure Information Protection per Windows](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)|
 |Crittografare documenti e messaggi di posta elettronica con etichette di riservatezza e limitare gli utenti autorizzati ad accedervi e il relativo uso |[Limitare l'accesso al contenuto utilizzando le etichette di riservatezza per applicare la crittografia](encryption-sensitivity-labels.md)|
 |Abilitare le etichette di riservatezza per Office sul Web, con supporto per creazione condivisa, eDiscovery, prevenzione della perdita dei dati e ricerca, anche quando i documenti sono crittografati | [Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
+|Usare la creazione condivisa e il salvataggio automatico nelle app desktop di Office quando i documenti sono crittografati | [Abilitare la creazione condivisa di file crittografati con etichette di riservatezza](sensitivity-labels-coauthoring.md)
 |Applicare automaticamente etichette di riservatezza ai documenti e ai messaggi di posta elettronica | [Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md)|
 |Usare le etichette di riservatezza per proteggere il contenuto in Teams e SharePoint |[Usare le etichette di riservatezza con Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint](sensitivity-labels-teams-groups-sites.md)|
 |Impedisce l’uso da parte degli utenti o li mette in guardia dal condividere file o messaggi di posta elettronica con una specifica etichetta di riservatezza |[Usare le etichette di riservatezza come condizioni nei criteri di prevenzione della perdita dei dati (anteprima)](dlp-sensitivity-label-as-condition.md) |

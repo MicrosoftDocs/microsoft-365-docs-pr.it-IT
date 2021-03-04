@@ -16,23 +16,26 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Usare i criteri di conservazione per tenere sotto controllo molto efficacemente i contenuti che gli utenti generano con posta elettronica, documenti e conversazioni. Mantenere il contenuto desiderato e liberarsi di quello che non serve.
-ms.openlocfilehash: 1806000b47a19c07da11a6a732eeacf5d60a7da0
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+description: Usare i criteri di conservazione per mantenere il controllo in modo efficiente dei contenuti che gli utenti generano tramite posta elettronica, documenti e conversazioni. Mantenere il contenuto desiderato e liberarsi di quello che non serve.
+ms.openlocfilehash: 02d3fd17e4aac34546e545ec10621bc99b945b31
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261325"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50405714"
 ---
 # <a name="create-and-configure-retention-policies"></a>Creare e configurare criteri di conservazione
 
 >*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
 
-Usare un criterio di conservazione per decidere proattivamente se conservare il contenuto, eliminarlo o entrambe le cose, ovvero conservarlo ed eliminarlo successivamente.
+Usare i criteri di conservazione per gestire i dati dell'organizzazione determinando in modo proattivo se conservare i contenuti, eliminarli o conservarli per poi eliminarli.
 
-I criteri di conservazione permettono di farlo in modo molto efficiente, assegnando le stesse impostazioni di conservazione per il contenuto in base alla posizione, a livello di sito o di cassetta postale. Se non si sa se occorre usare un criterio di conservazione o un'etichetta di conservazione, vedere [Criteri di conservazione ed etichette di conservazione](retention.md#retention-policies-and-retention-labels).
+I criteri di conservazione consentono di eseguire questa operazione in modo estremamente efficiente assegnando le stesse impostazioni di conservazione a livello di contenitore in modo che siano ereditate automaticamente dai contenuti di tale contenitore. Ad esempio, tutti gli elementi dei siti di SharePoint, i messaggi di posta elettronica nelle cassette postali di Exchange degli utenti, i messaggi nei canali dei team usati con Microsoft Teams. Se non si è certi se usare un criterio di conservazione a livello di contenitore o un'etichetta di conservazione a livello di elemento, vedere [Criteri di conservazione ed etichette di conservazione](retention.md#retention-policies-and-retention-labels).
 
-Per saperne di più sul funzionamento della conservazione e sui criteri di conservazione, vedere [Informazioni sui criteri e le etichette di conservazione](retention.md).
+Per altre informazioni sui criteri di conservazione e sul funzionamento della conservazione in Microsoft 365, vedere [Informazioni sui criteri e le etichette di conservazione](retention.md).
+
+> [!NOTE]
+> Le informazioni fornite in questa pagina sono riservate agli amministratori di conformità. Se non si è amministratori e si vuole comprendere come sono stati configurati i criteri di conservazione per le app in uso, contattare l'help desk, il reparto IT o l'amministratore. Se vengono visualizzati messaggi sui criteri di conservazione nelle chat di Teams e nei messaggi di canale, può essere utile consultare [Messaggi di Teams sui criteri di conservazione](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
@@ -40,7 +43,7 @@ L'amministratore globale dell'organizzazione dispone delle autorizzazioni comple
 
 ## <a name="create-and-configure-a-retention-policy"></a>Creare e configurare un criterio di conservazione
 
-Anche se un criterio di conservazione può supportare più posizioni, non è possibile creare un singolo criterio di conservazione che includa tutte le posizioni supportate:
+Anche se i criteri di conservazione possono supportare più servizi identificati come "posizioni" nei criteri di conservazione, non è possibile creare un singolo criterio di conservazione che includa tutte le posizioni supportate:
 
 - Posta elettronica di Exchange
 - Sito di SharePoint
@@ -53,7 +56,7 @@ Anche se un criterio di conservazione può supportare più posizioni, non è pos
 - Messaggi della community di Yammer
 - Messaggi privati di Yammer
 
-Se si selezionano le posizioni di Teams o Yammer quando si crea un criterio di conservazione, le altre posizioni vengono automaticamente escluse. Di conseguenza, le istruzioni da seguire variano in base alla necessità o meno di includere le posizioni di Teams o Yammer:
+Se si selezionano le posizioni di Teams o Yammer quando si crea un criterio di conservazione, le altre posizioni vengono automaticamente escluse. Ciò significa che le istruzioni da seguire variano in base alla necessità di includere le posizioni di Teams o Yammer:
 
 - [Istruzioni per un criterio di conservazione per posizioni di Teams](#retention-policy-for-teams-locations)
 - [Istruzioni per un criterio di conservazione per posizioni di Yammer](#retention-policy-for-yammer-locations)
