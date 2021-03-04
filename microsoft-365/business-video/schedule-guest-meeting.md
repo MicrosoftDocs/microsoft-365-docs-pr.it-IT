@@ -9,42 +9,40 @@ audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
-ROBOTS: NOINDEX, NOFOLLOW
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 ms.custom:
 - AdminSurgePortfolio
 - adminvideo
-- okr_smb
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 description: Informazioni su come pianificare una riunione di Teams con utenti guest.
-ms.openlocfilehash: 2da05fdd4bc10bb1cc0dea5cd769c4630787820c
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 8ac8ec610a60084b21809eef8c56d0619be4e43a
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926091"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50422232"
 ---
-# <a name="schedule-a-teams-meeting-with-guests"></a><span data-ttu-id="24993-103">Pianificare una riunione di Teams con utenti guest</span><span class="sxs-lookup"><span data-stu-id="24993-103">Schedule a Teams meeting with guests</span></span>
+# <a name="schedule-a-teams-meeting-with-guests"></a><span data-ttu-id="e7898-103">Pianificare una riunione di Teams con utenti guest</span><span class="sxs-lookup"><span data-stu-id="e7898-103">Schedule a Teams meeting with guests</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOhP?autoplay=false]
 
-<span data-ttu-id="24993-104">È possibile invitare persone esterne all'organizzazione a una riunione senza doverle aggiungere a Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="24993-104">You can invite people from outside of your organization to a meeting without having to add them to Microsoft Teams.</span></span> <span data-ttu-id="24993-105">Ecco come funziona per i clienti o i partner quando aderiscono [a una riunione senza un account teams.](https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508)</span><span class="sxs-lookup"><span data-stu-id="24993-105">Here's how it works for your customers or partners when they [join a meeting without a Teams account](https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508).</span></span>
+<span data-ttu-id="e7898-104">È possibile invitare persone esterne all'organizzazione a una riunione senza doverle aggiungere a Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="e7898-104">You can invite people from outside of your organization to a meeting without having to add them to Microsoft Teams.</span></span> <span data-ttu-id="e7898-105">Ecco come funziona per i clienti o i partner quando aderiscono [a una riunione senza un account teams.](https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508)</span><span class="sxs-lookup"><span data-stu-id="e7898-105">Here's how it works for your customers or partners when they [join a meeting without a Teams account](https://support.microsoft.com/office/c6efc38f-4e03-4e79-b28f-e65a4c039508).</span></span>
 
-## <a name="try-it"></a><span data-ttu-id="24993-106">Perché non provarlo?</span><span class="sxs-lookup"><span data-stu-id="24993-106">Try it!</span></span>
+## <a name="try-it"></a><span data-ttu-id="e7898-106">Perché non provarlo?</span><span class="sxs-lookup"><span data-stu-id="e7898-106">Try it!</span></span>
 
-<span data-ttu-id="24993-107">Con Microsoft Teams, è possibile creare nuovi team quando si avviano nuovi progetti o si aggiungono clienti.</span><span class="sxs-lookup"><span data-stu-id="24993-107">With Microsoft Teams, you can create new teams as you start new projects or add customers.</span></span>
+<span data-ttu-id="e7898-107">Con Microsoft Teams, è possibile creare nuovi team quando si avviano nuovi progetti o si aggiungono clienti.</span><span class="sxs-lookup"><span data-stu-id="e7898-107">With Microsoft Teams, you can create new teams as you start new projects or add customers.</span></span>
 
-1. <span data-ttu-id="24993-108">Nella scheda **Teams** selezionare Partecipa o crea un **team,** Crea **team,** **Crea un team da zero** e quindi **Privato.**</span><span class="sxs-lookup"><span data-stu-id="24993-108">On the  **Teams** tab, select **Join or create a team**, **Create team**, **Build a team from scratch**, and then **Private**.</span></span>
-2. <span data-ttu-id="24993-109">Immettere un nome per il team, una descrizione e quindi selezionare **Crea.**</span><span class="sxs-lookup"><span data-stu-id="24993-109">Enter a name for your team, a description, and then select  **Create**.</span></span>
-3. <span data-ttu-id="24993-110">Nella pagina **Aggiungi membri** aggiungere membri interni cercandoli e selezionandoli, quindi aggiungere membri guest immettendo l'indirizzo di posta elettronica e quindi selezionando **Aggiungi.**</span><span class="sxs-lookup"><span data-stu-id="24993-110">On the  **Add members**  page, add internal members by searching and selecting them, and add guest members by entering their email address, and then select  **Add**.</span></span>
+1. <span data-ttu-id="e7898-108">Nella scheda **Teams** selezionare Partecipa o crea **un team,** Crea **team,** **Crea un team da zero** e quindi **Privato.**</span><span class="sxs-lookup"><span data-stu-id="e7898-108">On the  **Teams** tab, select **Join or create a team**, **Create team**, **Build a team from scratch**, and then **Private**.</span></span>
+2. <span data-ttu-id="e7898-109">Immettere un nome per il team, una descrizione e quindi selezionare **Crea.**</span><span class="sxs-lookup"><span data-stu-id="e7898-109">Enter a name for your team, a description, and then select  **Create**.</span></span>
+3. <span data-ttu-id="e7898-110">Nella pagina **Aggiungi membri** aggiungere membri interni cercandoli e selezionandoli, quindi aggiungere membri guest immettendo il proprio indirizzo di posta elettronica e quindi selezionare **Aggiungi.**</span><span class="sxs-lookup"><span data-stu-id="e7898-110">On the  **Add members**  page, add internal members by searching and selecting them, and add guest members by entering their email address, and then select  **Add**.</span></span>
 
-    <span data-ttu-id="24993-111">Se non  **sono presenti corrispondenze,** è necessario abilitare la condivisione guest.</span><span class="sxs-lookup"><span data-stu-id="24993-111">If you see  **We didn't find any matches** , you must enable guest sharing.</span></span> <span data-ttu-id="24993-112">Passare all'interfaccia di amministrazione di Microsoft 365, scegliere l'interfaccia di amministrazione di Teams, scegliere Impostazioni a livello di **organizzazione,** Accesso **guest** e attivare Consenti accesso **guest in Teams.**</span><span class="sxs-lookup"><span data-stu-id="24993-112">Go to the Microsoft 365 admin center, choose the Teams admin center, choose  **Org-wide settings**,  **Guest access** , and turn on  **Allow guest access in Teams**.</span></span> <span data-ttu-id="24993-113">Questa modifica può richiedere fino a 24 ore.</span><span class="sxs-lookup"><span data-stu-id="24993-113">This change may take up to 24 hours.</span></span>
+    <span data-ttu-id="e7898-111">Se non  **sono presenti corrispondenze,** è necessario abilitare la condivisione guest.</span><span class="sxs-lookup"><span data-stu-id="e7898-111">If you see  **We didn't find any matches** , you must enable guest sharing.</span></span> <span data-ttu-id="e7898-112">Passare all'interfaccia di amministrazione di Microsoft 365, scegliere l'interfaccia di amministrazione di Teams, scegliere Impostazioni a livello di **organizzazione,** Accesso **guest** e attivare Consenti accesso **guest in Teams.**</span><span class="sxs-lookup"><span data-stu-id="e7898-112">Go to the Microsoft 365 admin center, choose the Teams admin center, choose  **Org-wide settings**,  **Guest access** , and turn on  **Allow guest access in Teams**.</span></span> <span data-ttu-id="e7898-113">Questa modifica può richiedere fino a 24 ore.</span><span class="sxs-lookup"><span data-stu-id="e7898-113">This change may take up to 24 hours.</span></span>
 
-1. <span data-ttu-id="24993-114">Selezionare **Chiudi.**</span><span class="sxs-lookup"><span data-stu-id="24993-114">Select  **Close**.</span></span> <span data-ttu-id="24993-115">Gli utenti guest e i membri riceveranno inviti al team.</span><span class="sxs-lookup"><span data-stu-id="24993-115">Your guests and members will receive invitations to the team.</span></span>
-2. <span data-ttu-id="24993-116">Nel canale Generale, immettere un messaggio di saluto per tutti e selezionare **Invia.**</span><span class="sxs-lookup"><span data-stu-id="24993-116">On the General channel, enter a greeting for everyone and select  **Send**.</span></span>
-3. <span data-ttu-id="24993-117">Nella scheda  **File** aggiungere i documenti su cui si desidera lavorare insieme.</span><span class="sxs-lookup"><span data-stu-id="24993-117">On the  **Files** tab, add documents that you want to work on together.</span></span> <span data-ttu-id="24993-118">Puoi crearli qui o trascinare i file dal computer.</span><span class="sxs-lookup"><span data-stu-id="24993-118">You can create them here or drag and drop files from your computer.</span></span>
+1. <span data-ttu-id="e7898-114">Selezionare **Chiudi.**</span><span class="sxs-lookup"><span data-stu-id="e7898-114">Select  **Close**.</span></span> <span data-ttu-id="e7898-115">Gli utenti guest e i membri riceveranno inviti al team.</span><span class="sxs-lookup"><span data-stu-id="e7898-115">Your guests and members will receive invitations to the team.</span></span>
+2. <span data-ttu-id="e7898-116">Nel canale Generale, immettere un messaggio di saluto per tutti e selezionare **Invia.**</span><span class="sxs-lookup"><span data-stu-id="e7898-116">On the General channel, enter a greeting for everyone and select  **Send**.</span></span>
+3. <span data-ttu-id="e7898-117">Nella scheda  **File** aggiungere i documenti su cui si desidera lavorare insieme.</span><span class="sxs-lookup"><span data-stu-id="e7898-117">On the  **Files** tab, add documents that you want to work on together.</span></span> <span data-ttu-id="e7898-118">Puoi crearli qui o trascinare i file dal computer.</span><span class="sxs-lookup"><span data-stu-id="e7898-118">You can create them here or drag and drop files from your computer.</span></span>
