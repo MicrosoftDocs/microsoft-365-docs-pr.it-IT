@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Usare la funzionalità di ricerca e rimozione nel Centro sicurezza e conformità per cercare un messaggio di posta elettronica ed eliminarlo da tutte le cassette postali dell'organizzazione.
-ms.openlocfilehash: f4bcd012708c0b7e9fa37b06288cda18ad4766cf
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 52871fc85a4d5aec1754c1957f2087552b442daf
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546534"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423697"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Cercare ed eliminare messaggi di posta elettronica
 
@@ -47,7 +47,7 @@ ms.locfileid: "47546534"
 
 - È possibile rimuovere al massimo 10 elementi per ogni cassetta postale alla volta. Poiché la possibilità di cercare e di rimuovere i messaggi è uno strumento di intervento, questo limite garantisce che i messaggi vengano rimossi rapidamente dalle cassette postali. Lo scopo di questa funzionalità non è svuotare le cassette postali degli utenti.
 
-- Il numero massimo di cassette postali supportato dalla ricerca di contenuto per eliminare gli elementi con un'operazione di ricerca e rimozione è 50.000. Se la ricerca di contenuto, creata nel [Passaggio 1](#step-1-create-a-content-search-to-find-the-message-to-delete), include più di 50.000 cassette postali di origine, l'azione di rimozione, creata nel Passaggio 3, non riuscirà. Vedere la sezione [Ulteriori informazioni](#more-information) per ottenere suggerimenti su come eseguire un'operazione di ricerca e rimozione su più di 50.000 cassette postali.
+- Il numero massimo di cassette postali supportato dalla ricerca di contenuto da usare per eliminare gli elementi con un'operazione di ricerca e rimozione è 50.000. Se la ricerca, creata nel [Passaggio 1](#step-1-create-a-content-search-to-find-the-message-to-delete), include più di 50.000 cassette postali, l'azione di rimozione, creata nel Passaggio 3, non riuscirà. La ricerca in più di 50.000 cassette postali in un'unica operazione può in genere verificarsi quando si configura la ricerca in modo da includere tutte le cassette postali dell'organizzazione. Questa restrizione si applica inoltre quando meno di 50.000 cassette postali contengono elementi che corrispondono alla query di ricerca. Vedere la sezione [Altre informazioni](#more-information) per indicazioni sull'uso dei filtri di autorizzazioni per la ricerca ed eliminare elementi da più di 50.000 cassette postali.
 
 - La procedura descritta in questo articolo può essere usata solo per eliminare elementi nelle cassette postali e cartelle pubbliche di Exchange Online. Non è possibile usarla per eliminare il contenuto dai siti di SharePoint o OneDrive for Business.
 
@@ -143,7 +143,7 @@ Per altre informazioni, vedere [New-ComplianceSearchAction](https://docs.microso
 
 - **Come si fa a eliminare un messaggio da più di 50.000 cassette postali?**
 
-  Come spiegato in precedenza, è possibile eseguire un'operazione di ricerca e rimozione su un massimo di 50.000 cassette postali. Se è necessario eseguire un'operazione di ricerca e rimozione su più di 50.000 cassette postali, è consigliabile creare dei filtri delle autorizzazioni di ricerca temporanei per ridurre il numero di cassette postali in cui eseguire la ricerca a meno di 50.000. Se ad esempio nell'organizzazione sono presenti cassette postali in dipartimenti, stati o paesi diversi, è possibile creare un filtro delle autorizzazioni di ricerca in base a una di queste proprietà delle cassette postali per eseguire la ricerca in un sottoinsieme di cassette postali dell'organizzazione. Dopo aver creato il filtro delle autorizzazioni di ricerca, è necessario creare la ricerca, come descritto nel Passaggio 1, e quindi eliminare il messaggio, come descritto nel Passaggio 3. È quindi possibile modificare il filtro in modo da cercare e rimuovere i messaggi in un insieme di cassette postali diverso. Per altre informazioni sulla creazione di filtri delle autorizzazioni di ricerca, vedere [Configurare i filtri delle autorizzazioni per la Ricerca contenuto](permissions-filtering-for-content-search.md).
+  Come indicato in precedenza, è possibile eseguire un'operazione di ricerca ed eliminazione su un massimo di 50.000 cassette postali, anche se meno di 50.000 cassette contengono elementi che corrispondono alla query di ricerca. Se è necessario eseguire un'operazione di ricerca e rimozione su più di 50.000 cassette postali, è consigliabile creare dei filtri delle autorizzazioni di ricerca temporanei per ridurre il numero di cassette postali in cui eseguire la ricerca a meno di 50.000. Se ad esempio nell'organizzazione sono presenti cassette postali in dipartimenti, stati o paesi diversi, è possibile creare un filtro delle autorizzazioni di ricerca in base a una di queste proprietà delle cassette postali per eseguire la ricerca in un sottoinsieme di cassette postali dell'organizzazione. Dopo aver creato il filtro delle autorizzazioni di ricerca, è necessario creare la ricerca, come descritto nel Passaggio 1, e quindi eliminare il messaggio, come descritto nel Passaggio 3. È quindi possibile modificare il filtro in modo da cercare e rimuovere i messaggi in un insieme di cassette postali diverso. Per altre informazioni sulla creazione di filtri delle autorizzazioni di ricerca, vedere [Configurare i filtri delle autorizzazioni per la Ricerca contenuto](permissions-filtering-for-content-search.md).
 
 - **Gli elementi non indicizzati inclusi nei risultati della ricerca verranno eliminati?**
 

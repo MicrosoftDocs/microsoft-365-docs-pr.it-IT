@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Creare etichette di conservazione e criteri di etichettatura automatica in modo da poter applicare automaticamente etichette per conservare ciò che serve ed eliminare ciò che non serve
-ms.openlocfilehash: 69bada084aa3817b49b75d970a1a8d304f6853e6
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: 34b6fb53095a2c3f52598b84e82cae3083b98f21
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261347"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423305"
 ---
 # <a name="automatically-apply-a-retention-label-to-retain-or-delete-content"></a>Applicare automaticamente un'etichetta di conservazione per conservare o eliminare il contenuto
 
@@ -282,6 +282,14 @@ Quando si modifica un'etichetta di conservazione o un criterio di applicazione a
 Alcune impostazioni non possono essere modificate dopo aver creato e salvato l'etichetta o i criteri, tra cui:
 - L’etichetta di conservazione, il nome del criterio di conservazione e le impostazioni di conservazione, ad eccezione del periodo di conservazione. Tuttavia, non è possibile modificare il periodo di conservazione quando il periodo di conservazione è basato sulla data di etichettatura degli elementi.
 - Opzione per contrassegnare gli elementi come record.
+
+### <a name="deleting-retention-labels"></a>Eliminazione delle etichette di conservazione.
+
+È possibile eliminare le etichette di conservazione che al momento non sono incluse in alcun criterio di conservazione, che non sono configurate per la conservazione basata su eventi o che contrassegnano gli elementi come record normativi. La possibilità di eliminare etichette di conservazione che contrassegnano gli elementi come record è al momento in fase di distribuzione in anteprima.
+
+Nel caso delle etichette di conservazione eliminabili, l'eliminazione non riuscirà se sono state applicate agli elementi e viene visualizzato un collegamento a Esplora contenuto per identificare gli elementi etichettati.
+
+Tuttavia, la visualizzazione degli elementi etichettati in Esplora contenuto può richiedere fino a due giorni. In questo scenario, l'etichetta di conservazione può essere eliminata senza visualizzare il collegamento a Esplora contenuto.
 
 ## <a name="locking-the-policy-to-prevent-changes"></a>Blocco dei criteri per evitare le modifiche
 

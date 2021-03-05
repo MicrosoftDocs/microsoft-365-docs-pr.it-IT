@@ -15,12 +15,12 @@ search.appverid:
 - MOE150
 - MET150
 description: I processi di Advanced eDiscovery consentono di tenere traccia dello stato dei processi di lunga durata correlati all'esecuzione di varie attività di Advanced eDiscovery.
-ms.openlocfilehash: f5c366b8809b1b5c08b15972118c40d7d29e33c4
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: 7b80df3f9891105d59a1741e9e0288ef0e67c25e
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49750767"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454657"
 ---
 # <a name="manage-jobs-in-advanced-ediscovery"></a>Gestire i processi in Advanced eDiscovery
 
@@ -29,7 +29,7 @@ Ecco un elenco dei processi (che in genere sono processi di lunga durata) che ve
 | Tipo processo            | Descrizione     |
 | :----------------- | :----------     |
 |Aggiunta di dati a un insieme da rivedere | Un utente aggiunge i risultati di una ricerca a un insieme da rivedere. Questo processo è costituito da due processi secondari: </br>• **GatheringItems:** viene generato un elenco di elementi che corrispondono alla query di ricerca (e all'origine dati di Microsoft 365 in cui si trovano). </br>• **Inserimento &** indicizzazione: gli elementi che corrispondono alla query di ricerca vengono copiati in un percorso di archiviazione di Azure (in un processo denominato *inserimento)* e quindi gli elementi nel percorso di archiviazione di Azure vengono reindicizzati. Questo nuovo indice viene utilizzato durante l'esecuzione di query e l'analisi degli elementi nel set di dati. </br></br>Per ulteriori informazioni, vedere [Aggiungere risultati di ricerca a un insieme da rivedere.](add-data-to-review-set.md) |
-|Aggiunta di dati a un altro insieme da rivedere | Un utente aggiunge documenti da un insieme di recensioni a un altro insieme di recensioni nello stesso caso. Per ulteriori informazioni, vedere [Aggiungere dati a un insieme da rivedere da un altro insieme da rivedere.](add-data-to-review-set-from-another-review-set.md)|
+|Aggiunta di dati a un altro insieme da rivedere | Un utente aggiunge documenti da un insieme di recensioni a un altro insieme di revisioni nello stesso caso. Per ulteriori informazioni, vedere [Aggiungere dati a un insieme da rivedere da un altro insieme da rivedere.](add-data-to-review-set-from-another-review-set.md)|
 |Aggiunta di dati non Di Microsoft 365 a un insieme da rivedere | Un utente carica dati non Di Microsoft 365 in un insieme da rivedere. Anche i dati vengono indicizzati durante questo processo. Ad esempio, i file di un file server locale o di un computer client vengono caricati in un insieme da rivedere. Per ulteriori informazioni, vedere [Caricare dati non Di Microsoft 365 in un insieme da rivedere.](load-non-office-365-data-into-a-review-set.md)| 
 |Aggiunta di dati corretti a un insieme da rivedere | I dati con errori di elaborazione vengono corretti e caricati di nuovo in un insieme da rivedere. Per altre informazioni, vedere:</br>• [Correzione degli errori durante l'elaborazione dei dati](error-remediation-when-processing-data-in-advanced-ediscovery.md)</br>• [Correzione degli errori di un singolo elemento](single-item-error-remediation.md)| 
 |Confronto dei set di carico | Un utente esamina le differenze tra diversi set di carico in un insieme da rivedere. Un set di carico è un'istanza di aggiunta di dati a un insieme da rivedere. Ad esempio, se si aggiungono i risultati di due ricerche diverse allo stesso insieme da rivedere, ognuna rappresenta un set di carico. |
@@ -39,7 +39,7 @@ Ecco un elenco dei processi (che in genere sono processi di lunga durata) che ve
 |Preparazione dei dati per l'esportazione | Un utente esporta documenti da un insieme da rivedere. Al termine del processo di esportazione, possono scaricare i dati esportati in un computer locale. Per ulteriori informazioni, vedere [Esportare i dati del caso.](exporting-data-ediscover20.md) | 
 |Preparazione per la risoluzione degli errori |Quando un utente seleziona un file e crea una nuova correzione  degli errori nella visualizzazione Errori nella scheda Elaborazione di un caso, il primo passaggio del processo consiste nel caricare il file con l'errore di elaborazione in un percorso di Archiviazione di Azure nel cloud Microsoft. Questo processo tiene traccia dello stato del processo di caricamento. Per ulteriori informazioni sul flusso di lavoro di correzione degli errori, vedere [Correzione degli errori durante l'elaborazione dei dati.](error-remediation-when-processing-data-in-advanced-ediscovery.md) | 
 |Preparazione dell'anteprima della ricerca | Dopo che un utente crea ed esegue una nuova ricerca (o esegue di nuovo una ricerca esistente), lo strumento di ricerca prepara un sottoinsieme di elementi di esempio (corrispondenti alla query di ricerca) che possono essere visualizzati in anteprima. L'anteprima dei risultati della ricerca consente di determinare l'efficacia della ricerca.  Per ulteriori informazioni, vedere [Raccogliere dati per un caso.](collecting-data-for-ediscovery.md#view-search-results-and-statistics) | 
-|Re-indexing custodian data | Quando si aggiunge un responsabile a un caso, tutti gli elementi parzialmente indicizzati nelle origini dati selezionate del responsabile vengono reindicizzati da un processo denominato *Indicizzazione avanzata.* Questo processo viene attivato anche  quando si  fa clic su Aggiorna indice nella scheda Elaborazione di un caso e quando si aggiorna l'indice per un responsabile specifico nella pagina a comparsa delle proprietà del responsabile. Per ulteriori informazioni, vedere [Indicizzazione avanzata dei dati dei depositario.](indexing-custodian-data.md)
+|Re-indexing custodian data | Quando si aggiunge un responsabile a un caso, tutti gli elementi parzialmente indicizzati nelle origini dati selezionate del responsabile vengono reindicizzati da un processo denominato *Indicizzazione avanzata.* Questo processo viene attivato anche  quando si  fa clic su Aggiorna indice nella scheda Elaborazione di un caso e quando si aggiorna l'indice per un responsabile specifico nella pagina a comparsa delle proprietà dei responsabile. Per ulteriori informazioni, vedere [Indicizzazione avanzata dei dati dei depositario.](indexing-custodian-data.md)
 |Esecuzione dell'analisi | Un utente analizza i dati in un insieme da rivedere eseguendo strumenti di analisi di Advanced eDiscovery come il rilevamento quasi duplicato, l'analisi del threading della posta elettronica e l'analisi dei temi. Per ulteriori informazioni, vedere [Analizzare i dati in un insieme da rivedere.](analyzing-data-in-review-set.md) | 
 |Applicazione di tag ai documenti | Questo processo viene attivato quando un utente fa clic su Avvia processo **di tagging** nel riquadro Di **tagging** durante la revisione dei documenti in un insieme da rivedere. Un utente può avviare questo processo dopo aver taggato i documenti in un insieme da rivedere e quindi averli selezionati in blocco nel riquadro dei documenti di visualizzazione. Per ulteriori informazioni, vedere [Aggiungere tag ai documenti in un insieme da rivedere.](tagging-documents.md) | 
 |||
@@ -54,6 +54,6 @@ Nella tabella seguente vengono descritti i diversi stati di stato dei processi.
 | Invio non riuscito | Invio del processo non riuscito.  È consigliabile tentare di eseguire di nuovo l'azione che ha attivato il processo. |
 | In corso | Il processo è in corso, è possibile monitorare lo stato del processo nella **scheda** Processi. |
 | Operazione riuscita | Il processo è stato completato correttamente. La data e l'ora di completamento del processo vengono visualizzate nella **colonna** Completato della **scheda** Processi. |
-| Parzialmente riuscito | Il processo è stato parzialmente completato. Questo stato viene in genere restituito quando il processo non ha trovato dati parzialmente indicizzati (detti anche dati non indicizzati) in alcune delle origini dati dei responsabile.  |
+| Parzialmente riuscito | Il processo ha avuto esito positivo. Questo stato viene in genere restituito quando il processo non ha trovato dati parzialmente indicizzati (detti anche dati non indicizzati) in alcune delle origini dati dei responsabile.  |
 | Non riuscito | Il processo non è riuscito.  È consigliabile tentare di eseguire di nuovo l'azione che ha attivato il processo. Se il processo non riesce una seconda volta, è consigliabile contattare il supporto tecnico Microsoft e fornire le informazioni di supporto del processo. |
 |||

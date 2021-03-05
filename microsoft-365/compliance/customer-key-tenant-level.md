@@ -15,12 +15,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Informazioni su come configurare Customer Key per tutti i dati all'interno del tenant di Microsoft 365.
-ms.openlocfilehash: 60704f77e17222de790cb397653a2275144d770e
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 7bc5403f73e2d61f47e92ab5c94509f3fe9f3e33
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288147"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454647"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>Panoramica di Customer Key per Microsoft 365 a livello di tenant (anteprima pubblica)
 
@@ -63,7 +63,7 @@ Prima di iniziare, verificare quanto segue:
 
 ### <a name="create-two-new-azure-subscriptions"></a>Creare due nuove sottoscrizioni di Azure
 
-Customer Key richiede due chiavi per ogni criterio di crittografia dei dati. A tale scopo, è necessario creare due sottoscrizioni di Azure. Come procedura consigliata, Microsoft consiglia di avere membri separati dell'organizzazione per configurare una chiave in ogni abbonamento. Usare queste sottoscrizioni di Azure solo per amministrare le chiavi di crittografia per Microsoft 365. Questo protegge l'organizzazione nel caso in cui uno degli operatori elimini accidentalmente, intenzionalmente o in modo dannoso o in altro modo le chiavi di cui sono responsabili.
+Customer Key richiede due chiavi per ogni criterio di crittografia dei dati. A tale scopo, è necessario creare due sottoscrizioni di Azure. Come procedura consigliata, Microsoft consiglia di avere membri separati dell'organizzazione per configurare una chiave in ogni abbonamento. Usare queste sottoscrizioni di Azure solo per amministrare le chiavi di crittografia per Microsoft 365. Ciò protegge l'organizzazione nel caso in cui uno degli operatori elimini accidentalmente, intenzionalmente o in modo dannoso o in altro modo le chiavi di cui sono responsabili.
 
 Non esiste un limite pratico al numero di sottoscrizioni di Azure che è possibile creare per l'organizzazione. Seguire questa procedura consigliata consente di ridurre al minimo l'impatto dell'errore umano e allo stesso tempo di gestire le risorse usate da Customer Key.
 
@@ -107,7 +107,7 @@ Prima di contattare il team di Microsoft 365, è necessario eseguire la procedur
 
 ### <a name="create-a-premium-azure-key-vault-in-each-subscription"></a>Creare un Azure Key Vault premium in ogni sottoscrizione
 
-I passaggi per creare un insieme di credenziali delle chiavi sono documentati in Introduzione a [Azure Key Vault,](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)che guida l'utente attraverso l'installazione e l'avvio di Azure PowerShell, la connessione alla sottoscrizione di Azure, la creazione di un gruppo di risorse e la creazione di un insieme di credenziali delle chiavi in tale gruppo di risorse.
+I passaggi per creare un insieme di credenziali delle chiavi sono documentati in Introduzione a [Azure Key Vault,](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)che guida l'utente nell'installazione e nell'avvio di Azure PowerShell, nella connessione alla sottoscrizione di Azure, nella creazione di un gruppo di risorse e nella creazione di un insieme di credenziali delle chiavi in tale gruppo di risorse.
   
 Quando si crea un insieme di credenziali delle chiavi, è necessario scegliere uno SKU: Standard o Premium. Lo SKU standard consente di proteggere le chiavi dell'insieme di credenziali delle chiavi di Azure con il software ( nessuna protezione con chiave HSM (Hardware Security Module) e lo SKU Premium consente l'uso di HMS per la protezione delle chiavi key vault. Customer Key accetta gli insiemi di credenziali delle chiavi che usano uno degli SKU, anche se Microsoft consiglia vivamente di usare solo lo SKU Premium. Il costo delle operazioni con le chiavi di entrambi i tipi è lo stesso, quindi l'unica differenza di costo è il costo mensile per ogni chiave protetta da HSM. Per informazioni [dettagliate, vedi](https://azure.microsoft.com/pricing/details/key-vault/) i prezzi di Key Vault.
   
@@ -167,7 +167,7 @@ Per abilitare l'eliminazione recisa nei key vault, eseguire la procedura seguent
   
 1. Accedere alla sottoscrizione di Azure con Windows PowerShell. Per istruzioni, vedere [Accedere con Azure PowerShell.](https://docs.microsoft.com/powershell/azure/authenticate-azureps)
 
-2. Eseguire il cmdlet [Get-AzKeyVault.](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvault) In questo esempio, *il nome dell'insieme di* credenziali è il nome dell'insieme di credenziali delle chiavi per cui si abilita l'eliminazione soft:
+2. Eseguire il cmdlet [Get-AzKeyVault.](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvault) In questo esempio, *il nome dell'insieme di* credenziali è il nome dell'insieme di credenziali delle chiavi per cui si abilita l'eliminazione rescisa:
 
    ```powershell
    $v = Get-AzKeyVault -VaultName <vault name>
@@ -194,7 +194,7 @@ Add-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Destination <HSM|Sof
 
 Dove:
 
-- *il nome* dell'insieme di credenziali è il nome dell'insieme di credenziali delle chiavi in cui si desidera creare la chiave.
+- *il nome dell'insieme* di credenziali è il nome dell'insieme di credenziali delle chiavi in cui si desidera creare la chiave.
 
 - *key name* è il nome che si desidera assegnare alla nuova chiave.
 
@@ -211,7 +211,7 @@ Add-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-V
 
 ### <a name="check-the-recovery-level-of-your-keys"></a>Controllare il livello di ripristino delle chiavi
 
-Microsoft 365 richiede che la sottoscrizione di Azure Key Vault sia impostata su Non annullare e che le chiavi usate da Customer Key sia abilitata l'eliminazione rescisa. Puoi confermare questo aspetto esaminando il livello di ripristino delle chiavi.
+Microsoft 365 richiede che la sottoscrizione di Azure Key Vault sia impostata su Non annullare e che le chiavi usate da Customer Key sia abilitata l'eliminazione rescisa. Puoi confermarlo osservando il livello di ripristino delle chiavi.
   
 Per controllare il livello di ripristino di una chiave, in Azure PowerShell, eseguire il cmdlet Get-AzKeyVaultKey seguente:
   
@@ -219,7 +219,7 @@ Per controllare il livello di ripristino di una chiave, in Azure PowerShell, ese
 (Get-AzKeyVaultKey -VaultName <vault name> -Name <key name>).Attributes
 ```
 
-Se la proprietà _Recovery Level_ restituisce un valore diverso dal valore **Recoverable+ProtectedSubscription,** sarà necessario leggere questo articolo e assicurarsi di aver seguito tutti i passaggi per inserire la sottoscrizione nell'elenco Non annullare e di aver abilitato l'eliminazione reversibile in ognuno degli insiemi di credenziali delle chiavi. Successivamente, inviare uno screenshot dell'output `(Get-AzKeyVaultKey -VaultName <vault name> -Name <key name>).Attributes` della posta elettronica a m365ck@microsoft.com.
+Se la proprietà _Recovery Level_ restituisce un valore diverso dal valore **Recoverable+ProtectedSubscription,** sarà necessario leggere questo articolo e assicurarsi di aver seguito tutti i passaggi per inserire la sottoscrizione nell'elenco Non annullare e di aver abilitato l'eliminazione reversibile in ognuno degli insiemi di credenziali delle chiavi. Successivamente, inviare a m365ck@microsoft.com uno screenshot dell'output `(Get-AzKeyVaultKey -VaultName <vault name> -Name <key name>).Attributes` m365ck@microsoft.com.
 
 ### <a name="back-up-azure-key-vault"></a>Eseguire il backup di Azure Key Vault
 

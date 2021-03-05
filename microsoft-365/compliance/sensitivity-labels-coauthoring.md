@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Attivare l'impostazione che consente la creazione condivisa e il salvataggio automatico dei documenti etichettati e crittografati nelle app desktop in SharePoint e OneDrive.
-ms.openlocfilehash: a5c3e84e4ca8874f99a07294dccfd2e4ad7ed81f
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 3946fa5a08011cc98e8dfad921a08ca0fa77af7a
+ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50417380"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50423863"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Abilitare la creazione condivisa di file crittografati con etichette di riservatezza
 
@@ -89,7 +89,7 @@ Prima di attivare questa funzionalità, assicurarsi di aver compreso i seguenti 
         - Android: non ancora supportato
     
     - **Client di etichettatura unificata e scanner di Azure Information Protection** 
-        - Una versione di anteprima pubblica (versione minima di 2.10.45.0) che è possibile installare dall'[Area download Microsoft](https://aka.ms/aip-coauth-pp) e da una delle versioni delle app di Microsoft 365 Apps for enterprise per Windows elencate nell'elemento precedente.
+        - Una versione di anteprima pubblica (nome dell’installazione di AzInfoProtection_2.10.46_CoAuthoring_PublicPreview.exe) che è possibile installare dall'[Area download Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018) e da una delle versioni delle app di Microsoft 365 Apps for enterprise per Windows elencate nell'elemento precedente.
     
     - **App di sincronizzazione OneDrive per Windows o macOS:**
         - Versione minima di 19.002.0121.0008
@@ -122,6 +122,8 @@ Prima di abilitare l'impostazione del tenant per la creazione condivisa dei file
     - Viene selezionata una **Crittografia a chiave doppia**.
     
     Le etichette con una di queste configurazioni di crittografia vengono visualizzate nelle app di Office. Tuttavia, quando gli utenti selezionano queste etichette e nessun altro sta modificando il documento, vengono avvisati che la creazione condivisa e il salvataggio automatico non saranno disponibili. Se qualcun altro sta modificando il documento, gli utenti visualizzeranno un messaggio che indica che non è possibile applicare le etichette.
+
+- Se si usa il client di etichettatura unificata di Azure Information Protection: Controllare la documentazione relativa a questo client di etichettatura per [ulteriori requisiti o limitazioni](https://docs.microsoft.com/azure/information-protection/known-issues#known-issues-for-co-authoring-public-preview).
 
 ## <a name="known-issues-for-this-preview"></a>Problemi noti di questa anteprima
 

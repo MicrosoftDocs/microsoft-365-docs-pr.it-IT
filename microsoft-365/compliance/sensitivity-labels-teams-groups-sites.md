@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare le etichette di riservatezza per proteggere il contenuto in siti di SharePoint e Microsoft Teams e in gruppi di Microsoft 365.
-ms.openlocfilehash: 7eea07b91647af2b0b7121f9d9c1f018bc9fc630
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: 3565b47e21d81b4b3d560d72a29f2deae9587709
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261459"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50407316"
 ---
 # <a name="use-sensitivity-labels-to-protect-content-in-microsoft-teams-microsoft-365-groups-and-sharepoint-sites"></a>Usare le etichette di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint
 
@@ -32,7 +32,7 @@ Le [etichette di riservatezza](sensitivity-labels.md), oltre a essere usate per 
 
 - Privacy (pubblica o privata) dei siti dei team e dei gruppi di Microsoft 365
 - Accesso utenti esterni
-- Condivisione esterna dai siti di SharePoint (anteprima)
+- Condivisione esterna dai siti di SharePoint
 - Accesso da dispositivi non gestiti
 
 > [!IMPORTANT]
@@ -100,7 +100,7 @@ L'abilitazione delle etichette di riservatezza per i contenitori indica che è p
 
 4. Se è stato selezionato **Accesso dispositivo e impostazioni condivisione esterna**, configurare le seguenti impostazioni:
     
-    - **Controlla la condivisione esterna da siti di SharePoint etichettati**: selezionare questa opzione, attualmente in anteprima, per selezionare in seguito la condivisione con tutti gli utenti, gli utenti guest nuovi ed esistenti, o soltanto gli utenti della propria organizzazione. Per altre informazioni su questa configurazione e sulle impostazioni, vedere la documentazione di SharePoint [Attivare e disattivare la condivisione esterna per un sito](https://docs.microsoft.com/sharepoint/change-external-sharing-site).
+    - **Controlla la condivisione esterna da siti di SharePoint etichettati**: selezionare questa opzione per selezionare in seguito la condivisione con tutti gli utenti, gli utenti guest nuovi ed esistenti, gli utenti guest esistenti o soltanto gli utenti della propria organizzazione. Per altre informazioni su questa configurazione e sulle impostazioni, vedere la documentazione di SharePoint [Attivare e disattivare la condivisione esterna per un sito](https://docs.microsoft.com/sharepoint/change-external-sharing-site).
     
     - **Accedi da dispositivi non gestiti**: questa opzione si serve della funzionalità di SharePoint che usa l'accesso condizionale di Azure AD per bloccare o limitare l'accesso ai contenuti di SharePoint e OneDrive da dispositivi non gestiti. Per altre informazioni, vedere [Controllare l'accesso da dispositivi non gestiti](/sharepoint/control-access-from-unmanaged-devices) dalla documentazione di SharePoint. L'opzione specificata per questa impostazione dell'etichetta equivale all'esecuzione di un comando di PowerShell per un sito, come descritto nei passaggi 3-5 [Bloccare o limitare l'accesso a uno specifico sito di SharePoint o OneDrive](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices#block-or-limit-access-to-a-specific-sharepoint-site-or-onedrive) della sezione delle istruzioni di SharePoint.
         

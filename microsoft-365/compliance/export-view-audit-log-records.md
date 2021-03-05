@@ -18,12 +18,12 @@ search.appverid:
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
 ms.custom: seo-marvel-apr2020
 description: In questo articolo viene illustrato come esportare, configurare e visualizzare i record del log di controllo di Microsoft 365.
-ms.openlocfilehash: 688ba06fc9c5c2b26eef93fb1a68d311db9da5d8
-ms.sourcegitcommit: 9ce9001aa41172152458da27c1c52825355f426d
+ms.openlocfilehash: a7f731bb30ffdddfe7898ee4051060b8e22c093e
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/03/2020
-ms.locfileid: "47358494"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454667"
 ---
 # <a name="export-configure-and-view-audit-log-records"></a>Esportare, configurare e visualizzare i record del log di controllo
 
@@ -86,6 +86,9 @@ Il passaggio successivo consiste nell'usare la funzionalità di trasformazione J
 
    > [!NOTE]
    > Le proprietà JSON visualizzate nello screenshot precedente (dopo aver fatto clic su Carica **altro)** si basano sulle proprietà trovate nella colonna **AuditData** delle prime 1.000 righe del file CSV. Se sono presenti proprietà JSON diverse nei record dopo le prime 1.000 righe, queste proprietà (e una colonna corrispondente) non verranno incluse quando la colonna **AuditData** è suddivisa in più colonne. Per evitare questo problema, è consigliabile eseguire nuovamente la ricerca nel log di controllo e limitare i criteri di ricerca in modo da restituire un numero inferiore di record. Un'altra soluzione alternativa  consiste nel filtrare gli elementi nella colonna Operazioni per ridurre il numero di righe (prima di eseguire il passaggio 5 precedente) prima di trasformare l'oggetto JSON nella **colonna AuditData.**
+
+   > [!TIP]
+   > Per visualizzare un attributo all'interno di un elenco,  ad esempio AuditData.AffectedItems, fare clic sull'icona Espandi nell'angolo superiore destro della colonna da cui si desidera estrarre un attributo e quindi selezionare Espandi in nuova **riga.**  Da qui sarà un record ed  è possibile fare clic sull'icona Espandi nell'angolo superiore destro della colonna, visualizzare gli attributi e selezionare quello che si desidera visualizzare o estrarre.
 
 8. Eseguire una delle operazioni seguenti per formattare il titolo delle colonne aggiunte per ogni proprietà JSON selezionata.
 

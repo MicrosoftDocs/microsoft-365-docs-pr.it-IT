@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 4cd6e62fd236bf9fd3683425b1e98315fc26dd71
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: e2d0f4f4abbe538d11d61869f52285f19c23a253
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421693"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461807"
 ---
 # <a name="communication-compliance-feature-reference"></a>Informazioni di riferimento sulla funzionalità di conformità delle comunicazioni
 
@@ -32,7 +32,7 @@ ms.locfileid: "50421693"
 >[!Important]
 >L'uso di PowerShell per creare e gestire i criteri di conformità delle comunicazioni non è supportato. Per creare e gestire questi criteri, è necessario utilizzare i controlli di gestione dei criteri nella soluzione di conformità alle comunicazioni [di Microsoft 365.](https://compliance.microsoft.com/supervisoryreview)
 
-I criteri di conformità delle comunicazioni vengono creati per le organizzazioni di Microsoft 365 nel Centro conformità Microsoft 365. I criteri di conformità delle comunicazioni definiscono quali comunicazioni e utenti sono soggetti a revisione nell'organizzazione, definiscono le condizioni personalizzate che le comunicazioni devono soddisfare e specificano chi deve eseguire le revisioni. Gli utenti *a* cui è assegnato il ruolo di amministratore della  conformità delle comunicazioni possono configurare i criteri e chiunque abbia questo ruolo assegnato può accedere alla pagina Conformità delle comunicazioni e alle impostazioni globali nel Centro conformità Microsoft 365. Se necessario, è possibile esportare la cronologia delle modifiche a un criterio in un file CSV (valori delimitati da virgole) che include anche lo stato degli avvisi in sospeso, gli elementi inoltrati e gli elementi risolti. I criteri non possono essere rinominati e possono essere eliminati quando non sono più necessari.
+I criteri di conformità delle comunicazioni vengono creati per le organizzazioni di Microsoft 365 nel Centro conformità Microsoft 365. I criteri di conformità delle comunicazioni definiscono quali comunicazioni e utenti sono soggetti a revisione nell'organizzazione, definiscono le condizioni personalizzate che le comunicazioni devono soddisfare e specificano chi deve eseguire le revisioni. Gli utenti *a* cui è assegnato il ruolo di amministratore della  conformità delle comunicazioni possono configurare i criteri e chiunque abbia questo ruolo assegnato può accedere alla pagina Conformità comunicazioni e alle impostazioni globali nel Centro conformità Microsoft 365. Se necessario, è possibile esportare la cronologia delle modifiche a un criterio in un file CSV (valori delimitati da virgole) che include anche lo stato degli avvisi in sospeso, gli elementi inoltrati e gli elementi risolti. I criteri non possono essere rinominati e possono essere eliminati quando non sono più necessari.
 
 >[!NOTE]
 >I criteri di supervisione creati nel Centro sicurezza & conformità per gli abbonamenti a Office 365 non possono eseguire la migrazione a Microsoft 365. Se si esegue la migrazione da un abbonamento a Office 365 a un abbonamento a Microsoft 365, è necessario creare nuovi criteri di conformità delle comunicazioni per sostituire i criteri di supervisione esistenti.
@@ -46,7 +46,7 @@ I modelli di criteri sono impostazioni dei criteri predefinite che è possibile 
 | **Linguaggio offensivo e anti-molestie** | Monitorare le comunicazioni per il linguaggio offensivo | - Posizioni: Exchange Online, Microsoft Teams, Yammer, Skype for Business <br> - Direzione: in ingresso, in uscita, interno <br> - Percentuale revisione: 100% <br> - Condizioni: classificatore di linguaggio offensivo |
 | **Informazioni sensibili** | Monitorare le comunicazioni per informazioni riservate | - Posizioni: Exchange Online, Microsoft Teams, Yammer, Skype for Business <br> - Direzione: in ingresso, in uscita, interno <br> - Percentuale revisione: 10% <br> - Condizioni: informazioni riservate, modelli di contenuto predefiniti e tipi, opzione del dizionario personalizzato, allegati di dimensioni superiori a 1 MB |
 | **Conformità alle normative** | Monitorare le comunicazioni per informazioni relative alla conformità alle normative finanziarie | - Posizioni: Exchange Online, Microsoft Teams, Yammer, Skype for Business <br> - Direzione: in ingresso, in uscita <br> - Percentuale revisione: 10% <br> - Condizioni: opzione dizionario personalizzato, allegati di dimensioni superiori a 1 MB |
-| **Conflitto di interesse** | Monitorare le comunicazioni tra due gruppi o due utenti per evitare conflitti di interesse | - Posizioni: Exchange Online, Microsoft Teams, Yammer, Skype for Business <br> - Direzione: interno <br> - Percentuale revisione: 100% <br> - Condizioni: Nessuna |
+| **Conflitto di interesse** | Monitorare le comunicazioni tra due gruppi o due utenti per evitare conflitti di interesse | - Posizioni: Exchange Online, Microsoft Teams, Yammer, Skype for Business <br> - Direzione: Interno <br> - Percentuale revisione: 100% <br> - Condizioni: Nessuna |
 
 Le comunicazioni vengono analizzate ogni 24 ore dalla creazione dei criteri. Ad esempio, se si crea un criterio linguistico offensivo alle 11.00, il criterio raccoglierà i segnali di conformità delle comunicazioni ogni 24 ore alle 11.00 di ogni giorno. La modifica di un criterio non cambia questa volta. Per visualizzare la data e l'ora dell'ultima analisi di un criterio, passare alla colonna *Ultima* analisi dei criteri nella **pagina** Criteri. Dopo aver creato un nuovo criterio, potrebbero essere necessarie fino a 24 ore per visualizzare la data e l'ora della prima analisi dei criteri. La data e l'ora dell'ultima analisi verranno convertite nel fuso orario del sistema locale.
 
@@ -122,7 +122,7 @@ Per cercare dati di chat di Teams nelle cassette postali basate sul cloud degli 
 
 - **Posta elettronica di Exchange:** le cassette postali ospitate su Exchange Online nell'ambito dell'abbonamento a Microsoft 365 o Office 365 sono tutte idonee per l'analisi dei messaggi. L'elaborazione dei messaggi di posta elettronica e degli allegati di Exchange corrispondenti alle condizioni dei criteri di conformità delle comunicazioni può richiedere fino a 24 ore. I tipi di allegati supportati per la conformità delle comunicazioni sono gli stessi dei tipi di file supportati per le ispezioni del contenuto delle regole del flusso di posta [di Exchange.](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments#supported-file-types-for-mail-flow-rule-content-inspection)
 
-- **Yammer:** è possibile analizzare i messaggi privati e le conversazioni pubbliche e gli allegati associati nelle community di Yammer. Quando un utente viene aggiunto ai criteri di conformità delle comunicazioni che includono Yammer come canale definito, le comunicazioni tra tutte le community di Yammer di cui l'utente è membro vengono incluse nel processo di analisi. L'elaborazione delle chat e degli allegati di Yammer che corrispondono alle condizioni dei criteri di conformità delle comunicazioni può richiedere fino a 24 ore. Yammer deve essere in [modalità nativa per i](/yammer/configure-your-yammer-network/overview-native-mode) criteri di conformità delle comunicazioni per monitorare le comunicazioni e gli allegati di Yammer. In modalità nativa, tutti gli utenti di Yammer sono in Azure Active Directory (AAD), tutti i gruppi sono gruppi di Office 365 e tutti i file sono archiviati in SharePoint Online.
+- **Yammer:** è possibile analizzare i messaggi privati e le conversazioni pubbliche e gli allegati associati nelle community di Yammer. Quando un utente viene aggiunto ai criteri di conformità delle comunicazioni che includono Yammer come canale definito, le comunicazioni tra tutte le community di Yammer di cui l'utente è membro vengono incluse nel processo di analisi. L'elaborazione delle chat e degli allegati di Yammer che corrispondono alle condizioni dei criteri di conformità delle comunicazioni può richiedere fino a 24 ore. Yammer deve essere in modalità [nativa per i](/yammer/configure-your-yammer-network/overview-native-mode) criteri di conformità delle comunicazioni per monitorare le comunicazioni e gli allegati di Yammer. In modalità nativa, tutti gli utenti di Yammer sono in Azure Active Directory (AAD), tutti i gruppi sono gruppi di Office 365 e tutti i file sono archiviati in SharePoint Online.
 
 - **Skype for Business online:** è possibile supervisionare le comunicazioni in chat e gli allegati associati in Skype for Business online. L'elaborazione delle chat di Skype for Business online che corrispondono alle condizioni dei criteri di conformità delle comunicazioni può richiedere fino a 24 ore. Le conversazioni di chat supervisionate derivano da [conversazioni precedenti salvate in Skype for Business online.](https://support.office.com/article/Find-a-previous-Skype-for-Business-conversation-18892eba-5f18-4281-8c87-fd48bd72e6a2)  Utilizzare la seguente configurazione di gestione dei gruppi per supervisionare le comunicazioni di chat degli utenti in Skype for Business online:
 
@@ -131,16 +131,6 @@ Per cercare dati di chat di Teams nelle cassette postali basate sul cloud degli 
 - Origini di terze **parti:** è possibile analizzare le comunicazioni per i dati importati nelle cassette postali dell'organizzazione di Microsoft 365 da origini di terze parti come [Instant Bloomberg,](archive-instant-bloomberg-data.md) [Slack,](archive-slack-data.md) [Zoom,](archive-zoommeetings-data.md)SMS e molti altri. Per un elenco completo dei connettori supportati nella conformità delle comunicazioni, vedere [Archiviare dati di terze parti.](archiving-third-party-data.md)
 
     È necessario configurare un connettore di terze parti per l'organizzazione di Microsoft 365 prima di poter assegnare il connettore a un criterio di conformità delle comunicazioni. Nella **sezione Origini di terze parti** della procedura guidata dei criteri di conformità delle comunicazioni vengono visualizzati solo i connettori di terze parti attualmente configurati.
-
-## <a name="transitioning-from-supervision-in-office-365"></a>Transizione dalla supervisione in Office 365
-
-Le organizzazioni che usano i criteri di supervisione in Office 365 e pianificano la transizione ai criteri di conformità delle comunicazioni in Microsoft 365 devono comprendere questi punti importanti:
-
-- Entrambe le soluzioni possono essere utilizzate affiancate nell'organizzazione, ma i criteri utilizzati in ogni soluzione devono avere nomi di criteri univoci. I gruppi e i dizionari di parole chiave personalizzati possono essere condivisi tra soluzioni durante un periodo di transizione.
-- I messaggi salvati in supervisione nelle corrispondenze dei criteri di Office 365 non possono essere spostati o condivisi nella conformità delle comunicazioni in Microsoft 365.
-- La soluzione di supervisione in Office 365 verrà completamente sostituita dalla soluzione di conformità delle comunicazioni in Microsoft 365. È consigliabile creare nuovi criteri nella conformità delle comunicazioni che hanno le stesse impostazioni dei criteri di supervisione esistenti per usare i nuovi miglioramenti di analisi e correzione. Quando si passa alla conformità delle comunicazioni in Microsoft 365, è consigliabile pianificare l'esportazione dei dati di report dalla supervisione in Office 365 se si dispone di requisiti dei criteri di conservazione di conformità interni.
-
-Per informazioni sul ritiro per la supervisione in Office 365, vedere la roadmap di [Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) per informazioni dettagliate.
 
 ## <a name="policy-settings"></a>Impostazioni dei criteri
 
@@ -153,7 +143,7 @@ Per informazioni sul ritiro per la supervisione in Office 365, vedere la roadmap
 Per impostazione predefinita, **la condizione Direction** è visualizzata e non può essere rimossa. Le impostazioni della direzione di comunicazione in un criterio vengono scelte singolarmente o insieme:
 
 - **In ingresso:** è possibile scegliere **In ingresso** per esaminare le comunicazioni inviate **alle** persone che si è scelto di supervisionare.
-- **In** uscita: è possibile scegliere **In**  uscita se si desidera esaminare le comunicazioni inviate dalle persone che si è scelto di supervisionare.
+- **In** uscita: è possibile scegliere **In** uscita se si desidera esaminare le comunicazioni inviate **dalle** persone che si è scelto di supervisionare.
 - **Interno:** è possibile scegliere **Interno** per esaminare le comunicazioni inviate **tra** le persone identificate nel criterio.
 
 ### <a name="sensitive-information-types"></a>Tipi di informazioni sensibili
@@ -165,11 +155,11 @@ Per impostazione predefinita, **la condizione Direction** è visualizzata e non 
 - Privacy
 - Tipo di informazioni personalizzato
 
-Per ulteriori informazioni sui dettagli delle informazioni riservate e sui modelli inclusi nei tipi predefiniti, vedere Definizioni delle entità dei tipi [di informazioni riservate.](sensitive-information-type-entity-definitions.md)
+Per ulteriori informazioni sui dettagli delle informazioni riservate e sui modelli inclusi nei tipi predefiniti, vedere Definizioni delle entità [dei tipi di informazioni riservate.](sensitive-information-type-entity-definitions.md)
 
 ### <a name="custom-keyword-dictionaries"></a>Dizionari di parole chiave personalizzati
 
-Configurare dizionari di parole chiave personalizzati (o lessiconi) per fornire una gestione semplice delle parole chiave specifiche dell'organizzazione o del settore. I dizionari di parole chiave supportano fino a 100 KB di termini (post-compressione) nel dizionario e supportano qualsiasi lingua. Il limite del tenant è anche di 100 KB dopo la compressione. Se necessario, è possibile applicare più dizionari di parole chiave personalizzati a un singolo criterio o disporre di un singolo dizionario di parole chiave per criterio. Questi dizionari vengono assegnati in un criterio di conformità delle comunicazioni e possono essere provenienti da un file (ad esempio un elenco csv o txt) o da un elenco che è possibile importare nel Centro [conformità.](create-a-keyword-dictionary.md) Utilizzare dizionari personalizzati quando è necessario supportare termini o lingue specifici dell'organizzazione e dei criteri.
+Configurare dizionari di parole chiave personalizzati (o lessiconi) per fornire una gestione semplice delle parole chiave specifiche dell'organizzazione o del settore. I dizionari di parole chiave supportano fino a 100 KB di termini (post-compressione) nel dizionario e supportano qualsiasi lingua. Il limite del tenant è anche di 100 KB dopo la compressione. Se necessario, è possibile applicare più dizionari di parole chiave personalizzati a un singolo criterio o disporre di un singolo dizionario di parole chiave per criterio. Questi dizionari vengono assegnati in un criterio di conformità delle comunicazioni e possono essere provenienti da un file (ad esempio un elenco csv o txt) o da un elenco che è possibile importare nel Centro [conformità.](create-a-keyword-dictionary.md) Utilizzare dizionari personalizzati quando è necessario supportare termini o lingue specifiche dell'organizzazione e dei criteri.
 
 ### <a name="classifiers"></a>Classificatori
 
@@ -188,12 +178,12 @@ I classificatori globali e configurabili per la conformità delle comunicazioni 
 
 - **Minaccia:** esegue la ricerca di minacce per commettere atti di violenza o danni fisici a una persona o a una proprietà.
 - **Molestie mirate:** scansioni di comportamenti offensivi destinati alle persone relative a etna, colore, provenienza nazionale, colore, nazionalità.
-- **Volgarità:** esegue la ricerca di espressioni volgari che invocherebbe la maggior parte delle persone.
+- **Volgarità:** esegue la ricerca di espressioni volgari che invade la maggior parte delle persone.
 - **Immagini per adulti:** esegue la ricerca di immagini di natura sessuale esplicita.
 - **Immagini racy:** esegue la ricerca di immagini che sono di natura sessuale, ma che contengono contenuto meno esplicito rispetto alle immagini ritenute per adulti.
 - **Immagini gory:** esegue la ricerca di immagini che ritraggono violenza e violenza.
 
-I *classificatori* di immagini Per adulti, *Racy* e *Gory* analizzano i file nei formati .jpeg, .png, .gif e .bmp. Le dimensioni dei file di immagine devono essere inferiori a 4 megabyte (MB) e le dimensioni delle immagini devono essere maggiori di 50x50 pixel e superiori a 50 kilobyte (KB) per l'immagine da qualificare per la valutazione. L'identificazione delle immagini è supportata per i messaggi di posta elettronica di Exchange Online e i canali e le chat di Microsoft Teams.
+I *classificatori* di immagini Per adulti, *Racy* e *Gory* analizzano i file nei formati .jpeg, .png, .gif e .bmp. Le dimensioni dei file di immagine devono essere inferiori a 4 megabyte (MB) e le dimensioni delle immagini devono essere maggiori di 50x50 pixel e superiori a 50 kilobyte (KB) per l'immagine da qualificare per la valutazione. L'identificazione dell'immagine è supportata per i messaggi di posta elettronica di Exchange Online e i canali e le chat di Microsoft Teams.
 
 I classificatori globali e configurabili predefiniti non forniscono un elenco esaustivo di termini o immagini in queste aree. Inoltre, gli standard linguistici e culturali cambiano continuamente e, alla luce di queste realtà, Microsoft si riserva il diritto di aggiornare i classificatori a propria discrezione. Anche se i classificatori possono aiutare l'organizzazione nel monitoraggio di queste aree, i classificatori non sono destinati a fornire l'unico mezzo dell'organizzazione per monitorare o risolvere tali linguaggi o immagini. L'organizzazione, non Microsoft, rimane responsabile di tutte le decisioni relative al monitoraggio, all'analisi e al blocco della lingua e delle immagini in queste aree, inclusa la conformità alla privacy locale e ad altre leggi applicabili. Microsoft incoraggia la consulenza con i consulenti legali prima della distribuzione e dell'uso.
 
@@ -206,12 +196,12 @@ Per informazioni sui classificatori che possono essere addestrati in Microsoft 3
 
 Configurare criteri di conformità delle comunicazioni predefiniti o personalizzati per analizzare e identificare il testo stampato o scritto a mano da immagini che potrebbero essere inappropriate nell'organizzazione. I servizi cognitivi di Azure integrati e il supporto dell'analisi ottica per identificare il testo nelle immagini consentono agli analisti e agli investigatori di rilevare e agire in casi in cui si potrebbero perdere comportamenti inappropriati nelle comunicazioni principalmente non testuali.
 
-Puoi abilitare il riconoscimento ottico dei caratteri (OCR) nei nuovi criteri di modelli, criteri personalizzati o aggiornare i criteri esistenti per espandere il supporto per l'elaborazione di immagini e allegati incorporati. Se abilitata in un criterio creato da un modello di criteri, l'analisi automatica è supportata per le immagini incorporate o allegate nei messaggi di posta elettronica e nelle chat di Microsoft Teams. Per i criteri personalizzati, una o più impostazioni condizionali associate a parole chiave, classificatori predefiniti o tipi di informazioni riservate devono essere configurate nei criteri per consentire la selezione dell'analisi OCR.
+È possibile abilitare il riconoscimento ottico dei caratteri (OCR) nei nuovi criteri di modelli, criteri personalizzati o aggiornare i criteri esistenti per espandere il supporto per l'elaborazione di immagini e allegati incorporati. Se abilitata in un criterio creato da un modello di criteri, l'analisi automatica è supportata per le immagini incorporate o allegate nei messaggi di posta elettronica e nelle chat di Microsoft Teams. Per i criteri personalizzati, una o più impostazioni condizionali associate a parole chiave, classificatori predefiniti o tipi di informazioni riservate devono essere configurate nei criteri per consentire la selezione dell'analisi OCR.
 
 Le immagini da 50 KB a 4 MB nei formati di immagine seguenti vengono analizzate ed elaborate:
 
 - .jpg/.jpeg (gruppo di esperti fotografici congiunti)
-- .png (portable network graphics)
+- .png (grafica di rete portatile)
 - .bmp (bitmap)
 - .tiff (formato di file di immagine tag)
 - .pdf (formato di documento portatile)
@@ -219,7 +209,7 @@ Le immagini da 50 KB a 4 MB nei formati di immagine seguenti vengono analizzate 
 >[!NOTE]
 >L'analisi e l'estrazione di immagini PDF incorporate e allegate sono attualmente supportate solo per i messaggi di posta elettronica.
 
-Quando si esaminano gli avvisi in sospeso per i criteri con OCR abilitato, le immagini identificate e corrispondenti alle condizioni dei criteri vengono visualizzate come elementi figlio per gli avvisi associati. È possibile visualizzare l'immagine originale per valutare il testo identificato nel contesto del messaggio originale. La disponibilità delle immagini rilevate con avvisi può richiedere fino a 48 ore.
+Quando si esaminano gli avvisi in sospeso per i criteri con OCR abilitato, le immagini identificate e corrispondenti alle condizioni dei criteri vengono visualizzate come elementi figlio per gli avvisi associati. È possibile visualizzare l'immagine originale per valutare il testo identificato nel contesto con il messaggio originale. La disponibilità delle immagini rilevate con avvisi può richiedere fino a 48 ore.
 
 ### <a name="conditional-settings"></a>Impostazioni condizionali
 <a name="ConditionalSettings"> </a>
@@ -232,19 +222,19 @@ Nella tabella seguente vengono illustrate ulteriori informazioni su ogni condizi
 |:-----|:-----|
 | **Il contenuto corrisponde a uno di questi classificatori** | Applica al criterio quando qualsiasi classificatore viene incluso o escluso in un messaggio. Alcuni classificatori sono predefiniti nel tenant e i classificatori personalizzati devono essere configurati separatamente prima che siano disponibili per questa condizione. Solo un classificatore può essere definito come condizione in un criterio. Per ulteriori informazioni sulla configurazione dei classificatori, vedere [Learn about trainable classifiers (preview)](classifier-learn-about.md). |
 | **Il contenuto contiene uno di questi tipi di informazioni sensibili** | Applica al criterio quando qualsiasi tipo di informazione sensibile viene incluso o escluso in un messaggio. Alcuni classificatori sono predefiniti nel tenant e i classificatori personalizzati possono essere configurati separatamente o come parte del processo di assegnazione della condizione. Ogni tipo di informazione sensibile scelto viene applicato separatamente e solo uno di questi tipi di informazioni riservate deve essere applicato per applicare il criterio al messaggio. Per ulteriori informazioni sui tipi di informazioni sensibili personalizzati, vedere [Informazioni sui tipi di informazioni riservate.](sensitive-information-type-learn-about.md) |
-| **Il messaggio viene ricevuto da uno di questi domini**  <br><br> **Il messaggio non viene ricevuto da uno di questi domini** | Applicare il criterio per includere o escludere domini o indirizzi di posta elettronica specifici nei messaggi ricevuti. Immettere ogni dominio o indirizzo di posta elettronica e separare più domini o indirizzi di posta elettronica con una virgola. Ogni dominio o indirizzo di posta elettronica immesso viene applicato separatamente, solo un dominio o un indirizzo di posta elettronica deve essere applicato per applicare il criterio al messaggio. <br><br> Se si desidera analizzare tutta la posta elettronica da un dominio specifico, ma escludere i messaggi che non necessitano di revisione (newsletter, annunci e così via), è necessario configurare un messaggio non ricevuto da uno di questi domini condizione che esclude l'indirizzo di posta elettronica (ad esempio "newsletter@contoso.com").  |
+| **Il messaggio viene ricevuto da uno di questi domini**  <br><br> **Il messaggio non viene ricevuto da nessuno di questi domini** | Applicare il criterio per includere o escludere domini o indirizzi di posta elettronica specifici nei messaggi ricevuti. Immettere ogni dominio o indirizzo di posta elettronica e separare più domini o indirizzi di posta elettronica con una virgola. Ogni dominio o indirizzo di posta elettronica immesso viene applicato separatamente, solo un dominio o un indirizzo di posta elettronica deve essere applicato per applicare il criterio al messaggio. <br><br> Se si desidera analizzare tutta la posta elettronica da un dominio specifico, ma escludere i messaggi che non necessitano di revisione (newsletter, annunci e così via), è necessario configurare un messaggio non ricevuto da uno di questi domini condizione che esclude l'indirizzo di posta elettronica (ad esempio "newsletter@contoso.com").  |
 | **Il messaggio viene inviato a uno di questi domini**  <br><br> **Il messaggio non viene inviato ad alcuno di questi domini** | Applicare il criterio per includere o escludere domini o indirizzi di posta elettronica specifici nei messaggi inviati. Immettere ogni dominio o indirizzo di posta elettronica e separare più domini o indirizzi di posta elettronica con una virgola. Ogni dominio o indirizzo di posta elettronica viene applicato separatamente, solo un dominio o un indirizzo di posta elettronica deve essere applicato per applicare il criterio al messaggio. <br><br> Se si desidera analizzare tutta la posta elettronica inviata a un dominio specifico, ma si desidera escludere i messaggi inviati che non necessitano di revisione, è necessario configurare due condizioni: <br> - Un **messaggio viene inviato a una condizione di** questi domini che definisce il dominio ("contoso.com"), AND <br> - Un **messaggio non viene inviato ad alcuna** condizione di questi domini che esclude l'indirizzo di posta elettronica ("subscriptions@contoso.com"). |
 | **Il messaggio è classificato con una di queste etichette**  <br><br> **Il messaggio non è classificato con nessuna di queste etichette** | Per applicare il criterio quando alcune etichette di conservazione vengono incluse o escluse in un messaggio. Le etichette di conservazione devono essere configurate separatamente e le etichette configurate vengono scelte come parte di questa condizione. Ogni etichetta scelta viene applicata separatamente (solo una di queste etichette deve essere applicata per applicare il criterio al messaggio). Per ulteriori informazioni sulle etichette di conservazione, vedere [Informazioni sui criteri di conservazione e sulle etichette di conservazione.](retention.md)|
 | **Il messaggio contiene una di queste parole**  <br><br> **Il messaggio non contiene nessuna di queste parole** | Per applicare il criterio quando determinate parole o frasi vengono incluse o escluse in un messaggio, immettere ogni parola separata da una virgola. Per frasi di due o più parole, utilizzare le virgolette attorno alla frase. Ogni parola o frase immessa viene applicata separatamente (solo una parola deve essere applicata per applicare il criterio al messaggio). Per ulteriori informazioni sull'immissione di parole o frasi, vedere la sezione successiva che corrisponde a parole e frasi a messaggi di posta [elettronica o allegati.](communication-compliance-feature-reference.md#Matchwords)|
-| **L'allegato contiene una di queste parole**  <br><br> **L'allegato non contiene nessuna di queste parole** | Per applicare il criterio quando determinate parole o frasi vengono incluse o escluse in un allegato di un messaggio ,ad esempio un documento di Word, immettere ogni parola separata da una virgola. Per frasi di due o più parole, utilizzare le virgolette attorno alla frase. Ogni parola o frase immessa viene applicata separatamente (solo una parola deve essere applicata per applicare il criterio all'allegato). Per ulteriori informazioni sull'immissione di parole o frasi, vedere la sezione successiva che corrisponde a parole e frasi a messaggi di posta [elettronica o allegati.](communication-compliance-feature-reference.md#Matchwords)|
+| **L'allegato contiene una di queste parole**  <br><br> **L'allegato non contiene nessuna di queste parole** | Per applicare il criterio quando determinate parole o frasi vengono incluse o escluse in un allegato del messaggio ,ad esempio un documento di Word, immettere ogni parola separata da una virgola. Per frasi di due o più parole, utilizzare le virgolette attorno alla frase. Ogni parola o frase immessa viene applicata separatamente (solo una parola deve essere applicata per applicare il criterio all'allegato). Per ulteriori informazioni sull'immissione di parole o frasi, vedere la sezione successiva che corrisponde a parole e frasi a messaggi di posta [elettronica o allegati.](communication-compliance-feature-reference.md#Matchwords)|
 | **L'allegato è uno di questi tipi di file**  <br><br> **L'allegato non è uno di questi tipi di file** | Per supervisionare le comunicazioni che includono o escludono tipi specifici di allegati, immettere le estensioni di file,ad esempio .exe o .pdf. Se si desidera includere o escludere più estensioni di file, immetterli in righe separate. Solo un'estensione dell'allegato deve corrispondere per l'applicazione del criterio.|
-| **La dimensione del messaggio è superiore a**  <br><br> **La dimensione del messaggio non è superiore a** | Per esaminare i messaggi in base a una determinata dimensione, utilizzare queste condizioni per specificare la dimensione massima o minima che un messaggio può avere prima di essere sottoposto a revisione. Ad esempio, se  si specifica che la dimensione dei messaggi è superiore a \> **1,0 MB,** tutti i messaggi di dimensioni superiori a 1,01 MB sono soggetti a revisione. È possibile scegliere byte, kilobyte, megabyte o gigabyte per questa condizione.|
+| **La dimensione del messaggio è superiore a**  <br><br> **La dimensione del messaggio non è superiore a** | Per esaminare i messaggi in base a una determinata dimensione, utilizzare queste condizioni per specificare la dimensione massima o minima che un messaggio può avere prima di essere sottoposto a revisione. Ad esempio, se  si specifica che la dimensione del messaggio è superiore a \> **1,0 MB,** tutti i messaggi di dimensioni superiori a 1,01 MB sono soggetti a revisione. È possibile scegliere byte, kilobyte, megabyte o gigabyte per questa condizione.|
 | **L'allegato è più grande di**  <br><br> **L'allegato non è più grande di** | Per esaminare i messaggi in base alle dimensioni degli allegati, specificare la dimensione massima o minima che un allegato può avere prima che il messaggio e i relativi allegati siano soggetti a revisione. Ad esempio, se  si specifica che l'allegato è superiore a \> **2,0 MB,** tutti i messaggi con allegati di 2,01 MB e oltre sono soggetti a revisione. È possibile scegliere byte, kilobyte, megabyte o gigabyte per questa condizione.|
    
 #### <a name="matching-words-and-phrases-to-emails-or-attachments"></a>Corrispondenza di parole e frasi a messaggi di posta elettronica o allegati
 <a name="Matchwords"> </a>
 
-Ogni parola immessa e separata da una virgola viene applicata separatamente (solo una parola deve essere applicata per applicare la condizione del criterio al messaggio di posta elettronica o all'allegato). Ad esempio, usiamo la **condizione,** Il messaggio contiene una di queste parole, con le parole chiave "banker", "confidential" e "insider trading" separate da una virgola (banker, confidential,"insider trading"). Il criterio si applica a tutti i messaggi che includono la parola "banker", "confidential" o la frase "insider trading". Per applicare questa condizione dei criteri, è necessario che si verifichi solo una di queste parole o frasi. Le parole nel messaggio o nell'allegato devono corrispondere esattamente a quelle immesse.
+Ogni parola immessa e separata con una virgola viene applicata separatamente (solo una parola deve essere applicata per applicare la condizione del criterio al messaggio di posta elettronica o all'allegato). Ad esempio, usiamo la **condizione,** Il messaggio contiene una di queste parole, con le parole chiave "banker", "confidential" e "insider trading" separate da una virgola (banker, confidential,"insider trading"). Il criterio si applica a tutti i messaggi che includono la parola "banker", "confidential" o la frase "insider trading". Per applicare questa condizione dei criteri, è necessario che si verifichi solo una di queste parole o frasi. Le parole nel messaggio o nell'allegato devono corrispondere esattamente a quelle immesse.
 
 >[!IMPORTANT]
 >Quando si importa un file di dizionario personalizzato, ogni parola o frase deve essere separata da un ritorno a capo e su una riga separata. <br> Ad esempio: <br><br>
@@ -252,14 +242,14 @@ Ogni parola immessa e separata da una virgola viene applicata separatamente (sol
 >*confidential* <br>
 >*insider trading*
 
-Per analizzare i messaggi di posta elettronica [](create-test-tune-dlp-policy.md) e gli allegati [](create-a-keyword-dictionary.md) per le stesse parole chiave, creare un criterio di prevenzione della perdita dei dati con un dizionario di parole chiave personalizzato per i termini che si desidera analizzare nei messaggi. Questa configurazione dei criteri identifica le parole chiave definite che vengono visualizzate nel messaggio di posta elettronica **O** nell'allegato di posta elettronica. L'utilizzo delle impostazioni dei criteri condizionali standard *(* Il messaggio contiene una di queste parole e l'allegato contiene una di queste parole) per identificare i termini nei messaggi e negli allegati richiede che i termini siano presenti **sia** nel messaggio che nell'allegato. 
+Per analizzare i messaggi di posta elettronica [](create-test-tune-dlp-policy.md) e gli allegati [](create-a-keyword-dictionary.md) per le stesse parole chiave, creare un criterio di prevenzione della perdita dei dati con un dizionario di parole chiave personalizzato per i termini che si desidera analizzare nei messaggi. Questa configurazione dei criteri identifica le parole chiave definite che vengono visualizzate nel messaggio di posta elettronica **o** nell'allegato di posta elettronica. L'utilizzo delle impostazioni dei criteri condizionali standard *(* Il messaggio contiene una di queste parole e l'allegato contiene una di queste parole) per identificare i termini nei messaggi e negli allegati richiede che i termini siano presenti **sia** nel messaggio che nell'allegato. 
   
 #### <a name="enter-multiple-conditions"></a>Immettere più condizioni
 
 Se si immettono più condizioni, Microsoft 365 usa tutte le condizioni insieme per determinare quando applicare i criteri di conformità delle comunicazioni agli elementi di comunicazione. Quando si configurano più condizioni, è necessario che vengano soddisfatte tutte le condizioni per l'applicazione del criterio, a meno che non venga immessa un'eccezione. Ad esempio, è necessario un criterio che si applica se un messaggio contiene la parola "trade" ed è superiore a 2 MB. Tuttavia, se il messaggio contiene anche le parole "Approvato da Contoso finanziario", il criterio non dovrebbe essere applicato. In questo esempio le tre condizioni vengono definite nel modo seguente:
   
 - **Il messaggio contiene una di queste parole,** con la parola chiave "trade"
-- **La dimensione del messaggio è maggiore di**, con il valore 2 MB
+- **La dimensione dei messaggi è maggiore di**, con il valore 2 MB
 - **Il messaggio non contiene nessuna di queste parole,** con le parole chiave "Approvato dal team finanziario di Contoso"
 
 ### <a name="review-percentage"></a>Percentuale revisione
@@ -273,7 +263,7 @@ La protezione della privacy degli utenti che hanno corrispondenze ai criteri è 
 Per gli utenti con una corrispondenza di conformità delle comunicazioni, è possibile scegliere una delle impostazioni seguenti nelle **impostazioni di conformità delle comunicazioni:**
 
 - **Mostra versioni anonime** dei nomi utente: i nomi utente sono  anonimi per impedire agli utenti nel gruppo di ruoli Analista di conformità della comunicazione di vedere chi è associato agli avvisi dei criteri. Gli utenti nel *gruppo di ruoli Communication Compliance Investigator* visualizzano sempre i nomi utente, non le versioni anonime. Ad esempio, un utente "Grace Grace" apparirebbe con uno pseudonimo casuale come "AnonIS8-988" in tutte le aree dell'esperienza di conformità delle comunicazioni. La scelta di questa impostazione consente di anonimizzare tutti gli utenti con corrispondenze dei criteri correnti e precedenti e si applica a tutti i criteri. Le informazioni del profilo utente nei dettagli dell'avviso di conformità delle comunicazioni non saranno disponibili quando si sceglie questa opzione. Tuttavia, i nomi utente vengono visualizzati quando si aggiungono nuovi utenti ai criteri esistenti o quando si assegnano utenti a nuovi criteri. Se si sceglie di disattivare questa impostazione, i nomi utente vengono visualizzati per tutti gli utenti con corrispondenze dei criteri correnti o precedenti.
-- **Non mostrare versioni anonime** dei nomi utente: i nomi utente vengono visualizzati per tutte le corrispondenze dei criteri correnti e precedenti per gli avvisi di conformità alle comunicazioni. Le informazioni del profilo utente (nome, titolo, alias e organizzazione o reparto) vengono visualizzate per l'utente per tutti gli avvisi di conformità alle comunicazioni.
+- **Non mostrare versioni anonime dei** nomi utente: i nomi utente vengono visualizzati per tutte le corrispondenze dei criteri correnti e precedenti per gli avvisi di conformità alle comunicazioni. Le informazioni del profilo utente (nome, titolo, alias e organizzazione o reparto) vengono visualizzate per l'utente per tutti gli avvisi di conformità alle comunicazioni.
 
 ## <a name="notice-templates"></a>Modelli di avviso
 
@@ -284,7 +274,7 @@ I modelli di avviso sono modelli di posta elettronica personalizzati in cui è p
 |**Campo**|**Obbligatorio**| **Dettagli** |
 |:-----|:-----|:-----|
 |**Nome del modello** | Sì | Il nome descrittivo del modello di avviso che verrà selezionato nel flusso di lavoro di notifica durante la correzione supporta i caratteri di testo. |
-| **Indirizzo del mittente** | Sì | L'indirizzo di uno o più utenti o gruppi che inviano il messaggio all'utente con una corrispondenza ai criteri, selezionata da Active Directory per l'abbonamento. |
+| **Indirizzo del mittente** | Sì | L'indirizzo di uno o più utenti o gruppi che inviano il messaggio all'utente con una corrispondenza ai criteri, selezionato da Active Directory per l'abbonamento. |
 | **Indirizzi CC e Ccn** | No | Utenti o gruppi facoltativi a cui notificare la corrispondenza dei criteri, selezionati da Active Directory per l'abbonamento. |
 | **Oggetto** | Sì | Le informazioni visualizzate nella riga dell'oggetto del messaggio supportano i caratteri di testo. |
 | **Corpo del messaggio** | Sì | Le informazioni visualizzate nel corpo del messaggio supportano valori di testo o HTML. |
@@ -322,7 +312,7 @@ I filtri di conformità delle comunicazioni consentono di filtrare e ordinare i 
 | **Domini destinatario** | Dominio a cui è stato inviato il messaggio. Questo dominio è in genere il dominio di sottoscrizione di Microsoft 365 per impostazione predefinita. |
 | **Destinatario** | Utente a cui è stato inviato il messaggio. |
 | **Mittente** | Persona che ha inviato il messaggio. |
-| **Dominio del mittente** | Il dominio che ha inviato il messaggio. |
+| **Dominio del mittente** | Dominio che ha inviato il messaggio. |
 | **Dimensioni** | Dimensione del messaggio in KB. |
 | **Oggetto/Titolo** | Oggetto del messaggio o titolo della chat. |
 | **Tag** | Tag assegnati a un messaggio, di tipo *Questionable,* *Compliant* o *Non conforme.* |
@@ -348,7 +338,7 @@ Per i criteri di conformità delle comunicazioni, i seguenti valori dei criteri 
 
 ### <a name="change-the-severity-level-for-an-alert-policy"></a>Modificare il livello di gravità per un criterio di avviso
 
-Se si desidera modificare il livello di gravità assegnato in un criterio di avviso per uno specifico criterio di conformità delle comunicazioni, eseguire la procedura seguente:
+Se si desidera modificare il livello di gravità assegnato in un criterio di avviso per uno specifico criterio di conformità delle comunicazioni, completare i passaggi seguenti:
 
 1. Accedere con [https://compliance.microsoft.com](https://compliance.microsoft.com) le credenziali di un account amministratore nell'organizzazione di Microsoft 365.
 
@@ -368,7 +358,7 @@ Se si desidera modificare il livello di gravità assegnato in un criterio di avv
 
 [Microsoft Power Automate è](/power-automate/getting-started) un servizio di flusso di lavoro che automatizza le azioni tra applicazioni e servizi. Utilizzando i flussi dei modelli o creati manualmente, è possibile automatizzare le attività comuni associate a tali applicazioni e servizi. Quando si abilita Power Automate flows per la conformità delle comunicazioni, è possibile automatizzare le attività importanti per avvisi e utenti. È possibile configurare i flussi di Power Automate per informare i responsabili quando gli utenti hanno avvisi di conformità alle comunicazioni e altre applicazioni.
 
-I clienti con abbonamenti a Microsoft 365 che includono la conformità delle comunicazioni non necessitano di ulteriori licenze power automate per usare il modello power automate di conformità alle comunicazioni predefinito consigliato. Il modello predefinito può essere personalizzato per supportare l'organizzazione e coprire gli scenari di conformità delle comunicazioni di base. Se si sceglie di usare le funzionalità avanzate di Power Automate in questi modelli, creare un modello personalizzato con il connettore di conformità di Microsoft 365 o usare i modelli di Power Automate per altre aree di conformità in Microsoft 365, potrebbero essere necessarie ulteriori licenze di Power Automate.
+I clienti con abbonamenti a Microsoft 365 che includono la conformità delle comunicazioni non necessitano di ulteriori licenze power automate per usare il modello power automate di conformità alle comunicazioni predefinito consigliato. Il modello predefinito può essere personalizzato per supportare l'organizzazione e coprire gli scenari di conformità delle comunicazioni di base. Se si sceglie di usare le funzionalità avanzate di Power Automate in questi modelli, creare un modello personalizzato usando il connettore di conformità di Microsoft 365 o usare i modelli di Power Automate per altre aree di conformità in Microsoft 365, potrebbero essere necessarie ulteriori licenze di Power Automate.
 
 >[!IMPORTANT]
 >Si ricevono richieste di convalida delle licenze aggiuntive durante il test dei flussi di Power Automate? È possibile che l'organizzazione non abbia ancora ricevuto aggiornamenti del servizio per questa funzionalità di anteprima. Gli aggiornamenti sono in fase di distribuzione e tutte le organizzazioni con abbonamenti a Microsoft 365 che includono la conformità alle comunicazioni devono disporre del supporto delle licenze per i flussi creati dai modelli power automate consigliati entro il 30 ottobre 2020.
@@ -377,7 +367,7 @@ I clienti con abbonamenti a Microsoft 365 che includono la conformità delle com
 
 Il modello Power Automate seguente viene fornito ai clienti per supportare l'automazione dei processi per gli avvisi di conformità alle comunicazioni:
 
-- **Notificare al responsabile quando un utente** ha un avviso di conformità delle comunicazioni: alcune organizzazioni potrebbero avere la necessità di ricevere una notifica di gestione immediata quando un utente ha un avviso di conformità delle comunicazioni. Quando questo flusso è configurato e selezionato, al responsabile del caso all'utente viene inviato un messaggio di posta elettronica con le seguenti informazioni su tutti gli avvisi:
+- **Notificare al responsabile quando un utente** ha un avviso di conformità delle comunicazioni: alcune organizzazioni potrebbero avere la necessità di ricevere una notifica di gestione immediata quando un utente ha un avviso di conformità delle comunicazioni. Quando questo flusso viene configurato e selezionato, al responsabile del caso all'utente viene inviato un messaggio di posta elettronica con le seguenti informazioni su tutti gli avvisi:
     - Criteri applicabili per l'avviso
     - Data/ora dell'avviso
     - Livello di gravità dell'avviso
@@ -422,25 +412,25 @@ Completare la procedura seguente per modificare un flusso di Power Automate:
 1. Nel Centro conformità Microsoft 365 passare **a** Criteri di conformità delle comunicazioni e selezionare il criterio con  >   l'avviso che si desidera esaminare.
 2. Dal criterio, selezionare la scheda **In** sospeso e selezionare un avviso in sospeso.
 3. Seleziona **Power Automate dal** menu dell'azione di avviso.
-4. Nella pagina **Flussi di Power Automate** selezionare il flusso da modificare. Scegliere **Modifica** dal menu controllo di flusso.
+4. Nella pagina **Flussi di Power Automate** selezionare il flusso da modificare. Seleziona **Modifica** dal menu di controllo del flusso.
 5. Selezionare i **puntini di sospensione**  >  **Impostazioni** per modificare l'impostazione di un componente di flusso o i puntini di sospensione  >  **Elimina** per eliminare un componente di flusso.
 6. Selezionare **Salva** e quindi **Chiudi per** completare la modifica del flusso.
 
 ### <a name="delete-a-power-automate-flow"></a>Eliminare un flusso di Power Automate
 
-Se è necessario eliminare un flusso, si userà il controllo **Power Automate** quando si lavora direttamente in un avviso. Per eliminare un flusso di Power Automate, è necessario essere membri di almeno un gruppo di ruoli di conformità delle comunicazioni.
+Se devi eliminare un flusso, userai il controllo **Power Automate** quando lavori direttamente in un avviso. Per eliminare un flusso di Power Automate, è necessario essere membri di almeno un gruppo di ruoli di conformità delle comunicazioni.
 
 Completare la procedura seguente per eliminare un flusso di Power Automate:
 
 1. Nel Centro conformità Microsoft 365 passare **a** Criteri di conformità delle comunicazioni e selezionare il criterio con  >   l'avviso che si desidera esaminare.
 2. Dal criterio, selezionare la scheda **In** sospeso e selezionare un avviso in sospeso.
 3. Seleziona **Power Automate dal** menu dell'azione di avviso.
-4. Nella pagina **Flussi di Power Automate** selezionare il flusso da eliminare. Scegliere **Elimina** dal menu di controllo del flusso.
+4. Nella pagina **Flussi di Power Automate** selezionare il flusso da eliminare. Seleziona **Elimina** dal menu di controllo del flusso.
 5. Nella finestra di dialogo di conferma dell'eliminazione, selezionare **Elimina** per rimuovere il flusso oppure **scegliere Annulla** per uscire dall'azione di eliminazione.
 
 ## <a name="reports-preview"></a>Report (anteprima)
 
-Il nuovo dashboard **Report** è la posizione centrale per la visualizzazione di tutti i report di conformità delle comunicazioni. I widget di report offrono una rapida visualizzazione delle informazioni dettagliate più comunemente necessarie per una valutazione generale dello stato delle attività di conformità delle comunicazioni. Le informazioni contenute nei widget dei report non possono essere esportate. I report dettagliati forniscono informazioni approfondite relative a specifiche aree di conformità delle comunicazioni e consentono di filtrare, raggruppare, ordinare ed esportare le informazioni durante la revisione.
+Il nuovo dashboard **Report** è la posizione centrale per la visualizzazione di tutti i report di conformità delle comunicazioni. I widget di report offrono una rapida visualizzazione delle informazioni dettagliate più comunemente necessarie per una valutazione generale dello stato delle attività di conformità delle comunicazioni. Le informazioni contenute nei widget dei report non possono essere esportate. I report dettagliati forniscono informazioni approfondite relative a specifiche aree di conformità delle comunicazioni e consentono di filtrare, raggruppare, ordinare ed esportare informazioni durante la revisione.
 
 ![Dashboard dei report di conformità delle comunicazioni](../media/communication-compliance-reports-dashboard.png)
 
@@ -450,7 +440,7 @@ Il **dashboard Report** contiene i seguenti widget di report e collegamenti dett
 - **Elementi risolti dal** widget dei criteri: visualizza il numero di avvisi di corrispondenza dei criteri risolti dal criterio nel tempo.
 - **Gli utenti con la maggior parte dei** criteri corrispondono al widget: visualizza gli utenti (o i nomi utente anonimi) e il numero di corrispondenze dei criteri per un determinato periodo.
 - **Criterio con la maggior parte delle** corrispondenze widget: visualizza i criteri e il numero di corrispondenze per un determinato periodo, classificati dal più alto al più basso per le corrispondenze.
-- **Escalation in base al** widget dei criteri: visualizza il numero di escalation per criterio in un determinato momento.
+- **Escalation in base al** widget dei criteri: visualizza il numero di escalation per criterio in un determinato periodo di tempo.
 - **Impostazioni dei** criteri e report dettagliati sullo stato: fornisce un'analisi dettagliata della configurazione e delle impostazioni dei criteri, nonché lo stato generale di ogni criterio (corrispondenze e azioni) nei messaggi. Include informazioni sui criteri e sul modo in cui i criteri sono associati a utenti e gruppi, posizioni, percentuali di revisione, revisori, stato e data dell'ultima modifica del criterio. Utilizzare *l'opzione* Esporta per creare un file CSV contenente i dettagli del report.
 - **Elementi e azioni per report dettagliato** dei criteri: esaminare ed esportare gli elementi corrispondenti e le azioni di correzione per ogni criterio. Include informazioni sui criteri e il modo in cui i criteri sono associati a:
 
@@ -530,6 +520,16 @@ In questo esempio vengono restituite le attività di aggiornamento per i criteri
 ```PowerShell
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -RecordType Discovery -Operations SupervisionPolicyCreated,SupervisionPolicyUpdated,SupervisionPolicyDeleted
 ```
+
+## <a name="transitioning-from-supervision-in-office-365"></a>Transizione dalla supervisione in Office 365
+
+Le organizzazioni che usano criteri di supervisione in Office 365 devono pianificare immediatamente la transizione ai criteri di conformità delle comunicazioni in Microsoft 365 e devono comprendere questi punti importanti:
+
+- La soluzione di supervisione in Office 365 è stata completamente sostituita dalla soluzione di conformità delle comunicazioni in Microsoft 365. È consigliabile creare nuovi criteri nella conformità delle comunicazioni che hanno le stesse impostazioni dei criteri di supervisione esistenti per usare i nuovi miglioramenti di analisi e correzione. Quando si passa alla conformità delle comunicazioni in Microsoft 365, è consigliabile pianificare l'esportazione dei dati di report dalla supervisione in Office 365 se si dispone di requisiti dei criteri di conservazione di conformità interni.
+- I messaggi salvati in supervisione nelle corrispondenze dei criteri di Office 365 non possono essere spostati o condivisi nella conformità delle comunicazioni in Microsoft 365.
+- Per le organizzazioni con entrambe le soluzioni utilizzate affiancate durante il processo di transizione, i criteri utilizzati in ogni soluzione devono avere nomi di criteri univoci. I gruppi e i dizionari di parole chiave personalizzati possono essere condivisi tra soluzioni durante un periodo di transizione.
+
+Per informazioni sul ritiro per la supervisione in Office 365, vedere la roadmap di [Microsoft 365](https://www.microsoft.com/microsoft-365/roadmap) per informazioni dettagliate.
 
 ## <a name="ready-to-get-started"></a>Pronti per iniziare?
 
