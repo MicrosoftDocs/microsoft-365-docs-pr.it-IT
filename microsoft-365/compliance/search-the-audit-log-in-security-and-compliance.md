@@ -17,14 +17,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.assetid: 0d4d0f35-390b-4518-800e-0c7ec95e946c
-description: Usare il Centro sicurezza e conformità di Office 365 o il Centro conformità Microsoft 365 per eseguire una ricerca nel log di controllo unificato e vedere le attività di utenti e amministratori nell'organizzazione.
+description: Usare il Centro conformità Microsoft 365 per eseguire una ricerca nel log di controllo unificato e vedere le attività di utenti e amministratori nell'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 2e95c2f3627a6bb0c28b736437012a92107b3533
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: a751ffea9fa184faf90bfe7c43b44c5d4e53bfbf
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976247"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461817"
 ---
 # <a name="search-the-audit-log-in-the-compliance-center"></a>Eseguire una ricerca nel log di controllo nel Centro conformità
 
@@ -61,6 +61,8 @@ Se è necessario verificare se un utente ha visualizzato un documento specifico 
 - Attività utente e amministratore in Microsoft Forms
 
 - Attività utente e amministratore per le etichette di riservatezza per siti che usano SharePoint Online o Microsoft Teams
+
+- Attività amministratore nelle e-mail di Briefing e in MyAnalytics
 
 ## <a name="requirements-to-search-the-audit-log"></a>Requisiti per la ricerca nel log di controllo
 
@@ -178,7 +180,7 @@ Ecco il processo per la ricerca nel log di controllo in Office 365.
 
       Nel log di controllo vengono registrate più di 100 attività di utenti e amministratori. Fare clic sulla scheda **Attività controllate** in questo articolo per visualizzare le descrizioni delle singole attività per i vari servizi.
 
-   1. **Data inizio** e **Data fine**: per impostazione predefinita, sono selezionati gli ultimi sette giorni. Selezionare un intervallo di date e ore per visualizzare gli eventi che si sono verificati in quel periodo. La data e l'ora sono specificate in formato UTC (Coordinated Universal Time). L'intervallo massimo che è possibile specificare è 90 giorni. Se l'intervallo di date selezionato è maggiore di 90 giorni, verrà visualizzato un errore.
+   1. **Data inizio** e **Data fine**: per impostazione predefinita, sono selezionati gli ultimi sette giorni. Selezionare un intervallo di date e ore per visualizzare gli eventi che si sono verificati in quel periodo. La data e l'ora vengono visualizzati nel fuso orario locale. L'intervallo massimo che è possibile specificare è 90 giorni. Se l'intervallo di date selezionato è maggiore di 90 giorni, verrà visualizzato un errore.
 
       > [!TIP]
       > Se si usa l'intervallo di date massimo di 90 giorni, selezionare l'ora corrente per **Data inizio**. In caso contrario, verrà visualizzato un errore che indica che la data di inizio è precedente alla data di fine. Se è stato attivato il controllo negli ultimi 90 giorni, l'intervallo di date massimo non può iniziare prima della data in cui il controllo è stato attivato.
@@ -221,7 +223,7 @@ I risultati di una ricerca nel log di controllo vengono visualizzati in **Risult
 
 I risultati includono le informazioni seguenti relative a ogni evento restituito dalla ricerca:
 
-- **Data**: data e ora (in formato UTC) in cui si è verificato l'evento.
+- **Data**: data e ora (nel fuso orario locale) in cui si è verificato l'evento.
 
 - **Indirizzo IP**: indirizzo IP del dispositivo usato durante la registrazione dell'attività. L'indirizzo IP viene visualizzato in formato IPv4 o IPv6.
 
@@ -368,7 +370,7 @@ Fare clic su uno dei collegamenti seguenti per passare a una tabella specifica.
         [Attività di Power BI](#power-bi-activities)
     :::column-end:::
     :::column:::
-        [Microsoft Workplace Analytics](#microsoft-workplace-analytics-activities)
+        [Microsoft Workplace Analytics](#workplace-analytics-activities)
     :::column-end:::
     :::column:::
         [Attività di Microsoft Teams](#microsoft-teams-activities)
@@ -417,6 +419,18 @@ Fare clic su uno dei collegamenti seguenti per passare a una tabella specifica.
     :::column-end:::
     :::column:::
         [Attività su criteri di conservazione ed etichette di conservazione](#retention-policy-and-retention-label-activities)
+    :::column-end:::
+    :::column:::
+        [Attività e-mail di briefing](#briefing-email-activities)
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+        [Attività di MyAnalytics](#myanalytics-activities)
+    :::column-end:::
+    :::column:::
+        [Attività barriere informative](#information-barriers-activities)
     :::column-end:::
     :::column:::
         [Attività di amministrazione di Exchange](#exchange-admin-audit-log)
@@ -791,7 +805,7 @@ Per un elenco e una descrizione dettagliata delle attività di eDiscovery regist
 
 La registrazione di controllo per Power BI non è abilitata per impostazione predefinita. Per cercare le attività di Power BI nel log di controllo, è necessario abilitare il controllo nel portale di amministrazione di Power BI. Per le istruzioni, vedere la sezione "Log di controllo" nel [portale di amministrazione di Power BI](https://docs.microsoft.com/power-bi/service-admin-portal#audit-logs).
 
-### <a name="microsoft-workplace-analytics-activities"></a>Attività di Microsoft Workplace Analytics
+### <a name="workplace-analytics-activities"></a>Attività di Workplace Analytics
 
 Workplace Analytics offre informazioni dettagliate sul modo in cui i gruppi collaborano nell'organizzazione. La tabella seguente elenca le attività eseguite dagli utenti a cui è assegnato il ruolo di amministratore o i ruoli di analista in Workplace Analytics. Gli utenti a cui è stato assegnato il ruolo di analista hanno accesso completo a tutte le caratteristiche del servizio e usano il prodotto per eseguire l'analisi. Gli utenti a cui è stato assegnato il ruolo di amministratore possono configurare le impostazioni di privacy e le impostazioni predefinite del sistema e possono preparare, caricare e verificare i dati aziendali in Workplace Analytics. Per ulteriori informazioni, vedere [Workplace Analytics](https://docs.microsoft.com/workplace-analytics/index-orig).
 
@@ -970,6 +984,42 @@ La tabella seguente elenca gli eventi risultanti dalle attività di etichettatur
 | Impostazioni aggiornate per un criterio di conservazione | SetRetentionComplianceRule | L'amministratore ha modificato le impostazioni di conservazione per un criterio di conservazione esistente. Le impostazioni di conservazione specificano per quanto tempo devono essere conservati gli elementi e cosa accade alla scadenza del periodo di conservazione, ad esempio eliminazione degli elementi, archiviazione oppure conservazione e poi eliminazione. Questa attività corrisponde anche all'esecuzione del cmdlet [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule). |
 | Etichetta di conservazione aggiornata |SetComplianceTag  | L'amministratore ha aggiornato un'etichetta di conservazione esistente.|
 | Criterio di conservazione aggiornato |SetRetentionCompliancePolicy |L'amministratore ha aggiornato un criterio di conservazione esistente. Gli aggiornamenti che attivano questo evento includono l'aggiunta o l'esclusione di percorsi di contenuto ai quali applicare il criterio di conservazione.|
+||||
+
+### <a name="briefing-email-activities"></a>Attività e-mail di Briefing
+
+La tabella seguente elenca le attività delle e-mail di Briefing registrate nel log di controllo di Office 365. Per ulteriori informazioni sulle e-mail di Briefing, vedere:
+
+- [Panoramica delle e-mail di Briefing](https://docs.microsoft.com/Briefing/be-overview)
+
+- [Configurare e-mail di Briefing](https://docs.microsoft.com/Briefing/be-admin)
+
+|**Nome descrittivo**|**Operazione**|**Descrizione**|
+|:-----|:-----|:-----|
+|Impostazioni sulla privacy dell'organizzazione aggiornate|UpdatedOrganizationBriefingSettings|L'amministratore aggiorna le impostazioni sulla privacy dell'organizzazione per le e-mail di Briefing. |
+|Impostazioni sulla privacy dell'utente aggiornate|UpdatedUserBriefingSettings|L'amministratore aggiorna le impostazioni sulla privacy dell'utente per le e-mail di Briefing.
+||||
+
+### <a name="myanalytics-activities"></a>MyAnalytics activities
+
+La tabella seguente elenca le attività in MyAnalytics registrate nel log di controllo di Office 365. Per altre informazioni su MyAnalytics, vedere [MyAnalytics per gli amministratori](https://docs.microsoft.com/workplace-analytics/myanalytics/overview/mya-for-admins).
+
+|**Nome descrittivo**|**Operazione**|**Descrizione**|
+|:-----|:-----|:-----|
+|Updated organization MyAnalytics settings|UpdatedOrganizationMyAnalyticsSettings|L'amministratore aggiorna le impostazioni a livello di organizzazione per MyAnalytics. |
+|Updated user MyAnalytics settings|UpdatedUserMyAnalyticsSettings|L'amministratore aggiorna le impostazioni utente per MyAnalytics.|
+||||
+
+### <a name="information-barriers-activities"></a>Attività barriere informative
+
+La tabella seguente elenca le attività relative alle barriere informative registrate nel log di controllo di Office 365. Per altre informazioni sulle barriere informative, vedere [Ulteriori informazioni sulle barriere informative in Microsoft 365](information-barriers.md).
+
+|**Nome descrittivo**|**Operazione**|**Descrizione**|
+|:----------------|:------------|:--------------|
+| Segmenti aggiunti a un sito | SegmentsAdded | Un amministratore di SharePoint o globale, oppure il proprietario di un sito ha aggiunto uno o più segmenti di barriere informative a un sito. |
+| Segmenti modificati di un sito | SegmentsChanged | Un amministratore di SharePoint o globale ha modificato uno o più segmenti di barriere informative per un sito. |
+| Segmenti rimossi da un sito | SegmentsRemoved | Un amministratore di SharePoint o globale ha rimosso uno o più segmenti di barriere informative da un sito. |
+||||
 
 ### <a name="exchange-admin-audit-log"></a>Log di controllo dell'amministratore di Exchange
 
