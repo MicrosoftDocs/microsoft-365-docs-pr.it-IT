@@ -17,12 +17,12 @@ ms.custom:
 description: Gli amministratori possono conoscere le opzioni disponibili e preferite per consentire i messaggi in ingresso in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ddcd6240cfc80350920999f9fc1e8ea188834553
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 33f4e9ac33f7952612e8b469345e38507ece5f4b
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289712"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453742"
 ---
 # <a name="create-safe-sender-lists-in-eop"></a>Creare elenchi di mittenti attendibili in EOP
 
@@ -48,7 +48,7 @@ Le regole del flusso di posta consentono la massima flessibilità per garantire 
 >
 > - Prestare attenzione a monitorare attentamente *eventuali eccezioni* apportate al filtro posta indesiderata utilizzando elenchi di mittenti attendibili.
 >
-> - Sebbene sia possibile utilizzare gli elenchi di mittenti attendibili per facilitare l'utilizzo di falsi positivi (messaggi di posta elettronica non sicuri contrassegnati come non attendibili), è consigliabile considerare l'utilizzo degli elenchi di mittenti attendibili come soluzione temporanea da evitare, se possibile. Non è consigliabile gestire i falsi positivi utilizzando gli elenchi di mittenti attendibili, perché le eccezioni al filtro posta indesiderata possono aprire l'organizzazione allo spoofing e ad altri attacchi. Se si insistono a utilizzare gli elenchi di mittenti attendibili per gestire i falsi positivi, è necessario essere in grado di segnalare messaggi e file a [Microsoft](report-junk-email-messages-to-microsoft.md) nell'argomento.
+> - Sebbene sia possibile utilizzare gli elenchi di mittenti attendibili per facilitare l'uso di falsi positivi (messaggi di posta elettronica contrassegnati come non sicuri), è consigliabile considerare l'utilizzo degli elenchi di mittenti attendibili come soluzione temporanea da evitare, se possibile. Non è consigliabile gestire i falsi positivi utilizzando gli elenchi di mittenti attendibili, perché le eccezioni al filtro posta indesiderata possono aprire l'organizzazione allo spoofing e ad altri attacchi. Se si insistono a utilizzare gli elenchi di mittenti attendibili per gestire i falsi positivi, è necessario essere in grado di segnalare messaggi e file a [Microsoft](report-junk-email-messages-to-microsoft.md) nell'argomento.
 >
 > - Per consentire a un dominio di inviare messaggi di posta elettronica non autenticati (ignorare la protezione anti-spoofing) ma non di ignorare i controlli antispam e antimalware, è possibile aggiungerlo all'elenco Mittenti attendibili [AllowedToSpoof](walkthrough-spoof-intelligence-insight.md)
 >

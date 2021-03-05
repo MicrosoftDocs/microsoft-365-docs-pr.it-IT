@@ -1,19 +1,19 @@
 ---
 title: Dispositivi Microsoft Managed Desktop
 description: Questo articolo elenca le specifiche per i dispositivi approvati per Microsoft Managed Desktop.
-keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: ee2e473f947f35d4f0d192005718a26e89590fab
-ms.sourcegitcommit: b3bb5bf5efa197ef8b16a33401b0b4f5663d3aa0
+ms.openlocfilehash: 4a71727a21151f1c1aec23a859a91fb616ad71c5
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50032658"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453694"
 ---
 # <a name="microsoft-managed-desktop-devices"></a>Dispositivi Microsoft Managed Desktop 
 
@@ -23,12 +23,12 @@ Per ulteriori informazioni su Microsoft Managed Desktop, vedere la documentazion
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-Per essere registrato in Microsoft Managed Desktop, un dispositivo deve essere uno dei modelli seguenti e soddisfare o superare le specifiche elencate per RAM, famiglia di processori e spazio su disco. 
+Per essere registrato in Microsoft Managed Desktop, un dispositivo deve essere uno dei modelli seguenti e soddisfare o superare le specifiche elencate per LA RAM, la famiglia di processori e lo spazio su disco. 
 
 I collegamenti ai dispositivi qui sono solo per riferimento. Se vuoi ordinare i dispositivi, contatta i contatti del canale commerciale per assicurarti di scegliere le configurazioni corrette. In questa tabella, la data *di archiviazione* è la data in cui questi modelli saranno soggetti a una durata del servizio Microsoft Managed Desktop più breve; i dispositivi di questo tipo onboarded dopo questa data non riceveranno un periodo di supporto completo di tre anni da Microsoft Managed Desktop. I dispositivi archiviati sono elencati anche nei [dispositivi archiviati di Microsoft Managed Desktop.](archived-device-list.md) *La data di* ritiro è la data in cui questo modello non sarà più supportato da Microsoft Managed Desktop. In tale data, tutti i dispositivi registrati di questo modello verranno rimossi da Microsoft Managed Desktop, indipendentemente dal momento in cui sono stati registrati.
 
 >[!NOTE]
->I dispositivi possono essere aggiunti a questa tabella in qualsiasi momento, ma forniremo un avviso di 90 giorni per qualsiasi modifica che influisce sulla data di archiviazione o ritiro. I dispositivi aggiunti più di recente sono contrassegnati con * *\** _.
+>I dispositivi possono essere aggiunti a questa tabella in qualsiasi momento, ma forniremo un avviso di 90 giorni per qualsiasi modifica che influisce sulla data di archiviazione o ritiro. I dispositivi aggiunti più di recente sono contrassegnati con **\*** .
 
 
 ## <a name="microsoft-managed-desktop-devices"></a>Dispositivi Desktop gestiti Microsoft
@@ -38,15 +38,16 @@ I collegamenti ai dispositivi qui sono solo per riferimento. Se vuoi ordinare i 
 | Modello    | Specifiche minime  | Requisiti aggiuntivi    | Data di archiviazione   | Data di ritiro   |
 |----------|----------------|---------------------------|----------------|--------------------|
 | [Dell Precision 5310 2 in 1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-5310-2-in-1-business-laptop/spd/latitude-13-5310-2-in-1-laptop) | 256 GB/ Intel i5 / 8 GB di RAM | Fotocamera a IR necessaria | 28 aprile 2022  | 28 aprile 2025 |
+| [Dell Latitude 3510](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/latitude-3510-business-laptop/spd/latitude-15-3510-laptop) | 256 GB/ Intel i5 / 8 GB di RAM | Fotocamera a IR necessaria | 28 aprile 2022 | 28 aprile 2025  |
 | [Dell Latitude 5410](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-5410-business-laptop/spd/latitude-14-5410-laptop) | 256 GB/ Intel i5 / 8 GB di RAM | Fotocamera a IR necessaria | 28 aprile 2022 | 28 aprile 2025  |
-| [Dell Latitude 5510](https://www.dell.com/en-us/work/shop/laptops/15-5510/spd/latitude-15-5510-laptop)_* | 256 GB/ Intel i5 / 8 GB di RAM | Fotocamera a IR necessaria | 28 aprile 2022 | 28 aprile 2025 |
+| [Dell Latitude 5510](https://www.dell.com/en-us/work/shop/laptops/15-5510/spd/latitude-15-5510-laptop)** | 256 GB/ Intel i5 / 8 GB di RAM | Fotocamera a IR necessaria | 28 aprile 2022 | 28 aprile 2025 |
 | [Dell Latitude 7310 / 7310 2-in-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/latitude-7310-business-laptop-or-2-in-1/spd/latitude-13-7310-2-in-1-laptop) | 256 GB/ Intel i5 / 8 GB di RAM | Fotocamera a IR necessaria | 4 maggio 2022  | 4 maggio 2025  |
-| [Dell Latitude 7410 / 7410 2-in-1](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-7410-business-laptop-or-2-in-1/spd/latitude-14-7410-2-in-1-laptop) | 256 GB/ Intel i5 / 8 GB di RAM | Fotocamera a IR necessaria | 19 maggio 2022  | 19 maggio 2025  |
+| **\*[Dell Latitude 7420 / 7420 2-in-1](https://www.dell.com/en-us/work/shop/dell-laptops-and-notebooks/new-latitude-7420-business-laptop-or-2-in-1/spd/latitude-14-7420-2-in-1-laptop)** | 256 GB/ Intel i5 / 8 GB di RAM | Fotocamera a IR necessaria | 22 marzo 2023  | 22 marzo 2026  |
 | [Dell Latitude 9410 2-in-1](https://www.dell.com/en-us/work/shop/laptops/new-14-9410-2-in-1/spd/latitude-14-9410-2-in-1-laptop) | 256 GB/ Intel i5 / 8 GB di RAM | Fotocamera a IR necessaria | 5 maggio 2022  | 5 maggio 2025  |
 | [Dell Latitude 9510](https://www.dell.com/en-us/work/shop/2-in-1-laptops-tablets/new-latitude-9510-laptop-or-2-in-1/spd/latitude-15-9510-2-in-1-laptop) | 256 GB/ Intel i5 / 8 GB di RAM | Fotocamera a IR necessaria | 5 maggio 2022  | 5 maggio 2025  |
-| [Dell Optiplex 3080](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-3080-tower-and-small-form-factor/spd/optiplex-3080-desktop) | 128 GB/ Intel i3 / 8 GB di RAM | Nessuno | 27 maggio 2022  | 27 maggio 2025  |
-| [Dell Optiplex 7480](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-7480-all-in-one-desktop/spd/optiplex-7480-aio) | 128 GB/ Intel i3 / 8 GB di RAM | Nessuno | 15 maggio 2022  | 15 maggio 2025  |
-| [Dell 5550 Workstation](https://www.dell.com/en-us/work/shop/laptops/new-15-5550-workstation/spd/precision-15-5550-laptop) | 256 GB/ Intel i5 / 8 GB di RAM | Nessuno | 27 maggio 2022  | 27 maggio 2025  |
+| [Dell Optiplex 3080](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-3080-tower-and-small-form-factor/spd/optiplex-3080-desktop) | 128 GB/ Intel i3 / 8 GB di RAM | None | 27 maggio 2022  | 27 maggio 2025  |
+| [Dell Optiplex 7480](https://www.dell.com/en-us/work/shop/desktops-all-in-one-pcs/optiplex-7480-all-in-one-desktop/spd/optiplex-7480-aio) | 128 GB/ Intel i3 / 8 GB di RAM | None | 15 maggio 2022  | 15 maggio 2025  |
+| [Dell 5550 Workstation](https://www.dell.com/en-us/work/shop/laptops/new-15-5550-workstation/spd/precision-15-5550-laptop) | 256 GB/ Intel i5 / 8 GB di RAM | None | 27 maggio 2022  | 27 maggio 2025  |
 
 ### <a name="hp"></a>HP
 
@@ -66,12 +67,12 @@ I collegamenti ai dispositivi qui sono solo per riferimento. Se vuoi ordinare i 
 
 | Modello    | Specifiche minime  | Requisiti aggiuntivi    | Data di archiviazione   | Data di ritiro   |
 |----------|----------------|---------------------------|----------------|--------------------|
-| [Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab) | 256 GB/ Intel i5 / 8 GB di RAM | Nessuno | 21 maggio 2022 | 21 maggio 2027 |
-| [Surface Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab) | 128 GB / Intel Core M3 / 8 GB di RAM | Nessuno | 21 maggio 2022 | 21 maggio 2027 |
-| [Surface Laptop Go](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 GB/ Intel i5 / 8 GB di RAM | Nessuno | 12 ottobre 2022 | 12 ottobre 2025 |
-| [Surface Laptop 3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 GB/ Intel i5 / 8 GB di RAM | Nessuno | 22 ottobre 2021 | 22 ottobre 2024 |
-| [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 GB/ Intel i5 / 8 GB di RAM | Nessuno | 22 ottobre 2021 | 22 ottobre 2024 |
-| **\*[Surface Pro 7+](https://www.microsoft.com/p/surface-pro-7-for-business/8p43n3k93409?activetab=pivot%3aoverviewtab)** | 128 GB/ Intel i5 / 8 GB di RAM | Nessuno | 15 gennaio 2022 | 15 gennaio 2025 |
+| [Surface Book 3](https://www.microsoft.com/p/surface-book-3-for-business/93h0mb2gqd5b?activetab=pivot%3aoverviewtab) | 256 GB/ Intel i5 / 8 GB di RAM | None | 21 maggio 2022 | 21 maggio 2027 |
+| [Surface Go 2](https://www.microsoft.com/p/surface-go-2-for-business/8wzd6dhzj7kv?activetab=pivot%3aoverviewtab) | 128 GB / Intel Core M3 / 8 GB di RAM | None | 21 maggio 2022 | 21 maggio 2027 |
+| [Surface Laptop Go](https://www.microsoft.com/surface/business/surface-laptop-go) | 128 GB/ Intel i5 / 8 GB di RAM | None | 12 ottobre 2022 | 12 ottobre 2025 |
+| [Surface Laptop 3](https://www.microsoft.com/surface/business/surface-laptop-3) | 128 GB/ Intel i5 / 8 GB di RAM | None | 22 ottobre 2021 | 22 ottobre 2024 |
+| [Surface Pro 7](https://www.microsoft.com/surface/business/surface-pro-7) | 128 GB/ Intel i5 / 8 GB di RAM | None | 22 ottobre 2021 | 22 ottobre 2024 |
+| **\*[Surface Pro 7+](https://www.microsoft.com/p/surface-pro-7-for-business/8p43n3k93409?activetab=pivot%3aoverviewtab)** | 128 GB/ Intel i5 / 8 GB di RAM | None | 15 gennaio 2022 | 15 gennaio 2025 |
 
 Inoltre, il dispositivo deve soddisfare anche questi criteri:     
 

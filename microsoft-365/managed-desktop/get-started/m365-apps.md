@@ -10,12 +10,12 @@ f1.keywords:
 ms.author: jaimeo
 ms.topic: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 98995084fb7de9ecb434b70b5d38793a20675f19
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 26e62d6e59f1f90e35d9e18e6eed917a66876645
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840350"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453922"
 ---
 # <a name="microsoft-365-apps-for-enterprise"></a>Microsoft 365 Apps for enterprise
 
@@ -53,20 +53,20 @@ Microsoft Managed Desktop scaglionare ogni versione per identificare eventuali p
 
 - Test: zero giorni
 - Primo: zero giorni
-- Veloce: 7 giorni
-- Ampio: 21 giorni
+- Veloce: 3 giorni
+- Ampio: 7 giorni
 
-Microsoft Managed Desktop imposta una scadenza di aggiornamento di sette [giorni](https://docs.microsoft.com/deployoffice/configure-update-settings-microsoft-365-apps) per i dispositivi. Una volta che l'aggiornamento è disponibile, deve essere installato entro sette giorni. Agli [](https://docs.microsoft.com/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) utenti viene notificato che gli aggiornamenti sono necessari in diverse posizioni: l'applicazione, nell'area di notifica 12 ore prima della scadenza, e riceve un avviso di 15 minuti prima della scadenza. Tutte le app di Microsoft 365 devono essere chiuse per completare l'aggiornamento.
+Microsoft Managed Desktop imposta una scadenza di aggiornamento di sette [giorni](https://docs.microsoft.com/deployoffice/configure-update-settings-microsoft-365-apps) per i dispositivi. Una volta che l'aggiornamento è disponibile, deve essere installato entro sette giorni. Agli [](https://docs.microsoft.com/deployoffice/end-user-update-notifications-microsoft-365-apps#notifications-your-users-see-when-you-set-an-update-deadline-for-microsoft-365-apps) utenti viene notificato che gli aggiornamenti sono necessari in diverse posizioni: l'applicazione, nella barra delle applicazioni 12 ore prima della scadenza, e riceve un avviso di 15 minuti prima della scadenza. Tutte le app di Microsoft 365 devono essere chiuse per completare l'aggiornamento.
 
 ### <a name="pausing-or-rolling-back-an-update"></a>Sospensione o rollback di un aggiornamento
 
-Se è necessario sospendere o eseguire il rollback dell'aggiornamento delle [](../working-with-managed-desktop/admin-support.md) app di Microsoft 365 per qualsiasi motivo, determinare una richiesta di supporto dell'amministratore tramite il portale Microsoft Managed Desktop.
+Se è necessario sospendere o eseguire il rollback dell'aggiornamento delle app di Microsoft 365 per qualsiasi motivo, determinare una richiesta di supporto [dell'amministratore](../working-with-managed-desktop/admin-support.md) tramite il portale Microsoft Managed Desktop.
 
 Durante un rilascio, Microsoft Managed Desktop monitora la frequenza di errore di tutte le app di Microsoft 365. Se si nota una differenza significativa di qualità tra la nuova versione e il relativo predecessore, è possibile contattarti tramite il portale di amministrazione di Microsoft Managed Desktop. A seconda della gravità, verrà chiesto se si desidera sospendere il rilascio o se si è intrapresa un'azione per attenuare un problema. 
 
 ### <a name="delivery-optimization"></a>Ottimizzazione recapito
 
-Ottimizzazione recapito è una tecnologia di distribuzione peer-to-peer disponibile in Windows 10. Consente ai dispositivi di condividere contenuti, ad esempio aggiornamenti, scaricati da Microsoft tramite Internet. L'uso di questo strumento può contribuire a ridurre la larghezza di banda di rete perché un dispositivo può ottenere parti dell'aggiornamento da un altro dispositivo nella rete locale invece di dover scaricare completamente l'aggiornamento da Microsoft.
+Ottimizzazione recapito è una tecnologia di distribuzione peer-to-peer disponibile in Windows 10. Consente ai dispositivi di condividere contenuti, ad esempio aggiornamenti, scaricati da Microsoft tramite Internet. L'uso di questo strumento consente di ridurre la larghezza di banda di rete perché un dispositivo può ottenere parti dell'aggiornamento da un altro dispositivo nella rete locale invece di dover scaricare completamente l'aggiornamento da Microsoft.
 
 [Ottimizzazione recapito](https://docs.microsoft.com/deployoffice/delivery-optimization) è abilitato per impostazione predefinita nei dispositivi che eseguono le edizioni Windows 10 Enterprise o Windows 10 Education. 
 
@@ -146,7 +146,7 @@ Esistono altre impostazioni delle app di Microsoft 365 che Microsoft Managed Des
 
 **Valore predefinito**: Disabilitato
 
-Alcune organizzazioni sono preoccupate per gli utenti che hanno accesso ai file aziendali e personali nei propri dispositivi. È possibile archiviazione di una richiesta di servizio con il team Microsoft Managed Desktop Operations che richiede che questa impostazione sia abilitata. 
+Alcune organizzazioni sono preoccupate per l'accesso degli utenti ai file aziendali e personali nei propri dispositivi. È possibile archiviazione di una richiesta di servizio con il team Microsoft Managed Desktop Operations che richiede che questa impostazione sia abilitata. 
 
 ## <a name="settings-you-manage"></a>Impostazioni gestite
 
@@ -159,7 +159,7 @@ Esistono molti altri criteri che Microsoft Managed Desktop non ha ancora imposta
     - Fornire una descrizione (facoltativa).
     - Nelle **assegnazioni,** scegliere se questo criterio si applica a tutti gli utenti di Microsoft 365 Apps for enterprise o solo agli utenti che accedono in modo anonimo ai documenti tramite Office per il Web.
     - Selezionare il gruppo di sicurezza basato su AAD assegnato alla configurazione dei criteri. Ogni configurazione dei criteri può essere assegnata a un solo gruppo e a ogni gruppo può essere assegnata una sola configurazione di criteri.
-    - Configurare le impostazioni dei criteri da includere nella configurazione dei criteri. Puoi cercare il nome dell'impostazione dei criteri per trovare l'impostazione dei criteri che vuoi configurare. È inoltre possibile filtrare in base all'applicazione, se il criterio è una linea di base di sicurezza consigliata e se il criterio è stato configurato. La colonna della piattaforma indica se il criterio viene applicato a Microsoft 365 Apps for enterprise per dispositivi Windows, Office per il Web o a tutti.
+    - Configurare le impostazioni dei criteri da includere nella configurazione dei criteri. Puoi cercare il nome dell'impostazione dei criteri per trovare l'impostazione di criteri che vuoi configurare. È inoltre possibile filtrare l'applicazione, se il criterio è una linea di base di sicurezza consigliata e se il criterio è stato configurato. La colonna della piattaforma indica se il criterio viene applicato a Microsoft 365 Apps for enterprise per dispositivi Windows, Office per il Web o a tutti.
 4.  Dopo aver effettuato le selezioni, scegliere **Crea.**
 
 > [!NOTE]

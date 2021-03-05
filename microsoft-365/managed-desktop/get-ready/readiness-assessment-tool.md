@@ -1,7 +1,7 @@
 ---
 title: Strumenti di valutazione della conformità
 description: Illustra i due strumenti, i controlli eseguiti e il significato dei risultati
-keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 1a00f7d5fb37cc9eea3f9454d473703084960864
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 0311450386f3b7c9f950276340901daacc06b2a8
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142934"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453938"
 ---
 # <a name="readiness-assessment-tools"></a>Strumenti di valutazione della conformità
 
@@ -26,7 +26,7 @@ Per informazioni dettagliate sull'utilizzo dello strumento di verifica della con
 
 ## <a name="online-readiness-assessment-tool-for-management-settings"></a>Strumento di valutazione della preparazione online per le impostazioni di gestione
 
-Lo strumento online controlla le impostazioni in Microsoft Endpoint Manager (in particolare, Microsoft Intune), Azure Active Directory (Azure AD) e Microsoft 365 per verificare che funzionino con Microsoft Managed Desktop. Microsoft Managed Desktop conserva i dati associati a questi controlli per 12 mesi dopo l'ultima volta che si esegue un controllo nell'organizzazione di Azure AD (tenant). Dopo 12 mesi, la conservazione viene mantenuta in forma non identificata. Puoi scegliere di eliminare i dati raccolti.
+Lo [strumento online](https://aka.ms/mmdart) controlla le impostazioni in Microsoft Endpoint Manager (in particolare, Microsoft Intune), Azure Active Directory (Azure AD) e Microsoft 365 per verificare che funzionino con Microsoft Managed Desktop. Microsoft Managed Desktop conserva i dati associati a questi controlli per 12 mesi dopo l'ultima volta che si esegue un controllo nell'organizzazione di Azure AD (tenant). Dopo 12 mesi, la conservazione viene mantenuta in forma non identificata. Puoi scegliere di eliminare i dati raccolti.
 
 Chiunque abbia almeno il ruolo di lettore globale o amministratore di Intune sarà in [](readiness-assessment-fix.md#multifactor-authentication) grado di eseguire questo strumento, ma due dei controlli[(](readiness-assessment-fix.md#conditional-access-policies) criteri di accesso condizionale e autenticazione a più fattori richiedono autorizzazioni aggiuntive.
  
@@ -83,7 +83,7 @@ Per ogni controllo, lo strumento segnala uno dei quattro possibili risultati:
 |---------|---------|
 |Pronto     | Non è necessaria alcuna azione prima di completare la registrazione.        |
 |Avviso    | Seguire i passaggi dello strumento per un'esperienza ottimale con la registrazione e per gli utenti. È *possibile* completare la registrazione, ma è necessario risolvere questi problemi prima di distribuire il primo dispositivo.        |
-|Non pronto | *La registrazione avrà esito* negativo se questi problemi non vengono risolti. Segui i passaggi dello strumento per risolverli.        |
+|Non pronto | *La registrazione avrà esito* negativo se questi problemi non vengono risolti. Seguire i passaggi dello strumento per risolverli.        |
 |Error | Il ruolo Azure Active Director (AD) in uso non dispone di autorizzazioni sufficienti per eseguire questo controllo. |
 
 ## <a name="after-enrollment"></a>Dopo la registrazione

@@ -16,12 +16,12 @@ ms.assetid: 4250c4bc-6102-420b-9e0a-a95064837676
 ms.collection:
 - M365-security-compliance
 description: Informazioni su come abilitare il componente aggiuntivo Segnala phishing per Outlook e Outlook sul Web, per singoli utenti o per l'intera organizzazione.
-ms.openlocfilehash: 8242f3fcac27f8c76f7bef5a84c70960a204e3bd
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 12543364943321689d0efa2c2942351b3d3ec6f9
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286658"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453766"
 ---
 # <a name="enable-the-report-phishing-add-in"></a>Abilitare il componente aggiuntivo Segnala phishing
 
@@ -29,7 +29,7 @@ ms.locfileid: "50286658"
 
 
 > [!NOTE]
-> Gli amministratori di un'organizzazione di Microsoft 365 con cassette postali di Exchange Online consigliano di usare il portale Invii nel Centro sicurezza & conformità. Per ulteriori informazioni, vedere [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft.](admin-submission.md)
+> Gli amministratori di un'organizzazione di Microsoft 365 con cassette postali di Exchange Online consigliano di usare il portale Invii nel Centro sicurezza & conformità. Per altre informazioni, vedi Usare l'invio dell'amministratore per inviare posta [indesiderata, phish, URL e file sospetti a Microsoft.](admin-submission.md)
 
 I componenti aggiuntivi Segnala messaggio e Segnala phishing per Outlook e Outlook sul Web (in precedenza noto come Outlook Web App) consentono di segnalare facilmente falsi positivi (messaggi di posta elettronica non consentiti) o falsi negativi (posta elettronica non consentita) a Microsoft e alle relative consociati per l'analisi.
 
@@ -43,17 +43,17 @@ Se si è un singolo utente, è possibile abilitare il componente aggiuntivo Segn
 
 Se si è un amministratore globale o un amministratore di Exchange Online ed Exchange è configurato per l'utilizzo dell'autenticazione OAuth, è possibile abilitare il componente aggiuntivo [Segnala phishing per l'organizzazione.](#get-and-enable-the-report-phishing-add-in-for-your-organization) Il report phishing Add-In è ora disponibile tramite [la distribuzione centralizzata.](../../admin/manage/centralized-deployment-of-add-ins.md)
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Il componente aggiuntivo Segnala phishing funziona con la maggior parte degli abbonamenti a Microsoft 365 e dei prodotti seguenti:
 
   - Outlook sul Web
   - Outlook 2013 SP1 o versione successiva
-  - Outlook 2016 per Mac
+  - Outlook 2016 per Mac o versione successiva
   - Outlook incluso nelle app di Microsoft 365 per le aziende
   - App Outlook per iOS e Android
 
-- Il componente aggiuntivo Segnala phishing non è disponibile per le cassette postali nelle organizzazioni Exchange locali.
+- Il componente aggiuntivo Segnala phishing non è disponibile per le cassette postali condivise o le cassette postali nelle organizzazioni Exchange locali.
 
 - È possibile configurare i messaggi segnalati da copiare o reindirizzare a una cassetta postale specificata. Per altre informazioni, vedi [Criteri di invio degli utenti.](user-submission.md)
 
@@ -67,9 +67,9 @@ Se si è un amministratore globale o un amministratore di Exchange Online ed Exc
 
 1. Passare a Microsoft AppSource e cercare il componente aggiuntivo <https://appsource.microsoft.com/marketplace/apps> Segnala phishing.
 
-2. Fare **clic su SCARICA ORA.**
+2. Fare **clic su GET IT NOW**.
 
-3. Nella finestra di dialogo visualizzata, esaminare le condizioni per l'utilizzo e l'informativa sulla privacy e quindi fare clic su **Continua.**
+3. Nella finestra di dialogo visualizzata esaminare le condizioni per l'utilizzo e l'informativa sulla privacy e quindi fare clic su **Continua.**
 
 4. Accedi usando l'account aziendale o dell'istituto di istruzione (per uso aziendale) o l'account Microsoft (per uso personale).
 
@@ -142,7 +142,7 @@ Gli utenti a cui è assegnato il componente aggiuntivo visualizzano le icone seg
 
 2. Trovare e selezionare il **componente aggiuntivo Segnala** phishing.
 
-3. Nel riquadro **a comparsa Modifica rapporto phishing** visualizzato, rivedere e modificare le impostazioni in base alle esigenze dell'organizzazione. Al termine, fare clic su **Salva**.
+3. Nel riquadro **a comparsa Modifica** rapporto phishing visualizzato, rivedere e modificare le impostazioni in base alle esigenze dell'organizzazione. Al termine, scegliere **Salva**.
 
 ## <a name="view-and-review-reported-messages"></a>Visualizzare ed esaminare i messaggi segnalati
 

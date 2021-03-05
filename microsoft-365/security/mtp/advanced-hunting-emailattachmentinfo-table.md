@@ -20,12 +20,12 @@ mms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: b810d7b15ef47a33a0675086219d2193cea00f2e
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: dd1af6e9ece8a3728db74eadc163ce277e6e84eb
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145020"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461622"
 ---
 # <a name="emailattachmentinfo"></a>EmailAttachmentInfo
 
@@ -53,8 +53,6 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `FileName` | stringa | Nome del file a cui è stata applicata l'azione registrata |
 | `FileType` | stringa | Tipo di estensione del file |
 | `SHA256` | stringa | SHA-256 del file a cui è stata applicata l'azione registrata. (questo campo in genere non viene popolato: usare la colonna SHA1, se disponibile). |
-| `MalwareFilterVerdict` | stringa | Verdetto del gruppo di filtri della posta elettronica che indica se il messaggio contiene Malware: Malware, No malware |
-| `MalwareDetectionMethod` | stringa | Metodo usato per rilevare malware nella posta elettronica: motore antimalware, reputazione file, allegati sicuri |
 | `ThreatTypes` | stringa | Verdetto dello stack di filtro della posta elettronica che indica se il messaggio di posta elettronica contiene malware, phishing o altre minacce |
 | `ThreatNames` | stringa | Nome di rilevamento per malware o altre minacce rilevate |
 | `DetectionMethods` | stringa | Metodi utilizzati per rilevare malware, phishing o altre minacce rilevate nel messaggio di posta elettronica |

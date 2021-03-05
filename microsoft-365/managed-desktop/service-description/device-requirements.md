@@ -1,7 +1,7 @@
 ---
 title: Requisiti dei dispositivi
 description: Riepilogo dei requisiti hardware e software minimi per i dispositivi che funzionano con Microsoft Managed Desktop
-keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
 ms.localizationpriority: normal
@@ -9,12 +9,12 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: a6b5cbbcb2f48797130b080d9d1dd1e6427d4fb8
-ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
+ms.openlocfilehash: 90dee316ee5bdc99b6a2386260a3be38728e7282
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50110052"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453718"
 ---
 # <a name="device-requirements"></a>Requisiti dei dispositivi
 
@@ -68,6 +68,7 @@ I dispositivi devono soddisfare o superare i limiti seguenti per l'archiviazione
 
 - L'unità di avvio deve essere di qualsiasi tipo diverso da un disco rigido. Ad esempio, le unità SSD, NVMe e eMMC sono tutte scelte valide.
 - L'unità di avvio deve avere una capacità di almeno 128 GB.
+- La memoria del dispositivo interno (RAM) deve essere uguale o superiore a 8 GB.
 
 Se il dispositivo è stato creato dopo il 1° luglio 2020, deve avere anche una fotocamera A/D, un lettore di impronta digitale o entrambi per supportare [Windows Hello.](https://docs.microsoft.com/windows-hardware/design/device-experiences/windows-hello-enhanced-sign-in-security)
 

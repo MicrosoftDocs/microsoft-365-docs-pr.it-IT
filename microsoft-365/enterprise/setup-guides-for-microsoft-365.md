@@ -21,12 +21,12 @@ search.appverid:
 - BCS160
 ms.assetid: 165f46e8-3533-4d76-be57-97f81ebd40f2
 description: Accelerare la pianificazione e la configurazione di Microsoft 365 o Office 365 con le guide alla configurazione.
-ms.openlocfilehash: 9bddf24e4133dfac32a0175b754709ba0c840760
-ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+ms.openlocfilehash: 6ad00819b172d7cb0cfb5b63a93c0910df5517e6
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "49794425"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454148"
 ---
 # <a name="setup-guides-for-microsoft-365-and-office-365-services"></a>Guide alla configurazione per i servizi di Office 365 e Microsoft 365
 
@@ -61,7 +61,7 @@ Ogni guida fornisce istruzioni dettagliate, risorse, articoli e, se necessario, 
 
 ### <a name="prepare-your-environment"></a>Predisporre l'ambiente
 
-La [guida Preparazione dell'ambiente](https://aka.ms/prepareyourenvironment) consente di preparare l'ambiente dell'organizzazione per i servizi di Microsoft 365 e Office 365. Indipendentemente dall'obiettivo, è necessario completare alcune attività per garantire la corretta distribuzione. Per evitare errori durante la preparazione dell'ambiente, vengono fornite istruzioni dettagliate per connettere il dominio, aggiungere utenti, assegnare licenze, configurare la posta elettronica con Exchange Online e installare o distribuire le app di Office. 
+La [guida Preparazione dell'ambiente](https://aka.ms/prepareyourenvironment) consente di preparare l'ambiente dell'organizzazione per i servizi di Microsoft 365 e Office 365. Indipendentemente dall'obiettivo, è necessario completare alcune attività per garantire una distribuzione corretta. Per evitare errori durante la preparazione dell'ambiente, vengono fornite istruzioni dettagliate per connettere il dominio, aggiungere utenti, assegnare licenze, configurare la posta elettronica con Exchange Online e installare o distribuire le app di Office. 
 
 ### <a name="email-setup-advisor"></a>Avviso per la configurazione della posta elettronica
 
@@ -94,7 +94,7 @@ La [guida alla configurazione di Desktop](https://aka.ms/wvdsetupguide) virtuale
 
 Microsoft Edge è stato ricostruito da zero per garantire la compatibilità e le prestazioni di livello mondiale, la sicurezza e la privacy che ti meriti e le nuove funzionalità progettate per garantire il meglio del Web.
 
-La guida alla configurazione di [Microsoft Edge](https://aka.ms/edgeadvisor) ti aiuterà a configurare l'individuazione siti aziendale per vedere quali siti a cui si accede nell'organizzazione potrebbe dover usare la modalità IE, esaminare e configurare importanti funzionalità di sicurezza, configurare criteri di privacy e criteri aggiuntivi per soddisfare i requisiti dell'organizzazione e gestire l'accesso Web nei dispositivi. È possibile scaricare Microsoft Edge in singoli dispositivi oppure verrà illustrato come eseguire la distribuzione a più utenti dell'organizzazione con Configuration Manager o Microsoft Intune. 
+La guida alla configurazione di [Microsoft Edge](https://aka.ms/edgeadvisor) ti aiuterà a configurare l'individuazione siti aziendale per vedere quali siti a cui si accede nell'organizzazione potrebbe dover usare la modalità IE, esaminare e configurare importanti funzionalità di sicurezza, configurare criteri di privacy e criteri aggiuntivi per soddisfare i requisiti dell'organizzazione e gestire l'accesso Web nei dispositivi. Puoi scaricare Microsoft Edge in singoli dispositivi oppure ti mostreremo come eseguire la distribuzione a più utenti dell'organizzazione con Configuration Manager o Microsoft Intune. 
 
 ### <a name="microsoft-search-setup-guide"></a>Guida alla configurazione di Microsoft Search
 
@@ -104,13 +104,13 @@ La [guida alla configurazione di Microsoft Search](https://aka.ms/MicrosoftSearc
 
 ### <a name="intune-configuration-manager-co-management-setup-guide"></a>Guida alla configurazione della co-gestione di Intune Configuration Manager
 
-Usa la guida alla configurazione della [co-gestione](https://aka.ms/comanagementsetup) di Intune Configuration Manager per i dispositivi client esistenti di Configuration Manager e i nuovi dispositivi basati su Internet che l'organizzazione vuole gestire insieme a Microsoft Intune e Configuration Manager. Questa guida alla distribuzione della co-gestione consente di gestire i dispositivi Windows 10 e aggiunge nuove funzionalità ai dispositivi dell'organizzazione, pur ricevendo i vantaggi di entrambe le soluzioni.
+Usa la guida alla configurazione della [co-gestione](https://aka.ms/comanagementsetup) di Intune Configuration Manager per i dispositivi client esistenti di Configuration Manager e i nuovi dispositivi basati su Internet che l'organizzazione vuole gestire in modo co-responsabile sia con Microsoft Intune che con Configuration Manager. Questa guida alla distribuzione della co-gestione consente di gestire i dispositivi Windows 10 e aggiunge nuove funzionalità ai dispositivi dell'organizzazione, pur ricevendo i vantaggi di entrambe le soluzioni.
 
 ## <a name="guides-for-authentication-and-access"></a>Guide per l'autenticazione e l'accesso
 
 ### <a name="azure-ad-setup-guide"></a>Guida alla configurazione di Azure AD
 
-La [guida alla configurazione di Azure AD](https://aka.ms/aadpguidance) fornisce informazioni per garantire che l'organizzazione abbia una solida base di sicurezza. In questa guida verranno impostate funzionalità iniziali, come il controllo dell'accesso basato sui ruoli di Azure (RBAC di Azure) per gli amministratori, Azure AD Connect per la directory locale e Azure AD Connect Health, in modo da poter monitorare l'integrità dell'identità ibrida durante le sincronizzazioni automatizzate. 
+La [guida alla configurazione di Azure AD](https://aka.ms/aadpguidance) fornisce informazioni per garantire che l'organizzazione abbia una solida base di sicurezza. In questa guida verranno impostate funzionalità iniziali, come il controllo dell'accesso basato sui ruoli di Azure per gli amministratori, Azure AD Connect per la directory locale e Azure AD Connect Health, in modo da poter monitorare l'integrità dell'identità ibrida durante le sincronizzazioni automatizzate. 
 
 Include inoltre informazioni essenziali sull'abilitazione della reimpostazione della password self-service, l'accesso condizionale e l'accesso integrato di terze parti, tra cui la protezione avanzata delle identità e l'automazione del provisioning degli utenti.
 
@@ -187,7 +187,7 @@ La guida alla configurazione di [Microsoft Teams](https://aka.ms/teamsguidance) 
 
 ### <a name="sharepoint-setup-guide"></a>Guida all'installazione di SharePoint
 
-La guida alla configurazione [di SharePoint](https://aka.ms/spoguidance) consente di configurare l'archiviazione dei documenti e la gestione del contenuto di SharePoint, creare siti, configurare la condivisione esterna, eseguire la migrazione dei dati e configurare impostazioni avanzate e guidare il coinvolgimento degli utenti e le comunicazioni all'interno dell'organizzazione. Seguire i passaggi per configurare i criteri di autorizzazione per la condivisione del contenuto, scegliere gli strumenti di sincronizzazione della migrazione e abilitare le impostazioni di sicurezza per l'ambiente SharePoint. 
+La guida alla configurazione [di SharePoint](https://aka.ms/spoguidance) consente di configurare l'archiviazione dei documenti e la gestione del contenuto di SharePoint, creare siti, configurare la condivisione esterna, eseguire la migrazione dei dati e configurare impostazioni avanzate e guidare l'impegno degli utenti e le comunicazioni all'interno dell'organizzazione. Seguire i passaggi per configurare i criteri di autorizzazione per la condivisione del contenuto, scegliere gli strumenti di sincronizzazione della migrazione e abilitare le impostazioni di sicurezza per l'ambiente SharePoint. 
 
 ### <a name="onedrive-setup-guide"></a>Guida alla configurazione di OneDrive
 
@@ -201,7 +201,7 @@ Connettersi e interagire all'interno dell'organizzazione con Yammer. [L'advisor 
 
 ### <a name="in-place-upgrade-with-configuration-manager"></a>Aggiornamento sul posto con Configuration Manager
 
-Usa [l'aggiornamento sul posto](https://aka.ms/win10upgradedemo) con la guida di Configuration Manager durante l'aggiornamento dei dispositivi Windows 7 e Windows 8.1 alla versione più recente di Windows 10. Verrà utilizzato lo script fornito per verificare i prerequisiti e configurare automaticamente un aggiornamento sul posto.
+Usa [l'aggiornamento sul posto](https://aka.ms/win10upgradedemo) con la guida di Configuration Manager durante l'aggiornamento dei dispositivi Windows 7 e Windows 8.1 alla versione più recente di Windows 10. Lo script fornito verrà utilizzato per verificare i prerequisiti e configurare automaticamente un aggiornamento sul posto.
 
 ### <a name="deploy-office-to-your-users"></a>Distribuire Office agli utenti
 
@@ -215,4 +215,10 @@ Usare la [Guida alla distribuzione](https://aka.ms/officeremoteinstall) di Offic
 
 ### <a name="deploy-and-update-microsoft-365-apps-with-configuration-manager"></a>Distribuire e aggiornare Microsoft 365 Apps con Configuration Manager
 
-Per le organizzazioni che usano Configuration Manager, è possibile usare l'advisor Distribuire e aggiornare [Microsoft 365 Apps con Configuration Manager](https://aka.ms/oppinstall) per generare uno script che configurerà automaticamente la distribuzione di App di Microsoft 365 usando le procedure consigliate dai tecnici di FastTrack. Utilizzare questa guida per creare gruppi di distribuzione, personalizzare le app e le funzionalità di Office, configurare installazioni dinamiche o snelle ed eseguire lo script per creare le applicazioni, le regole di distribuzione automatica e le raccolte di dispositivi necessarie per la distribuzione. 
+Per le organizzazioni che usano Configuration Manager, è possibile usare l'advisor Distribuire e aggiornare [Microsoft 365 Apps con Configuration Manager](https://aka.ms/oppinstall) per generare uno script che configurerà automaticamente la distribuzione di App di Microsoft 365 usando le procedure consigliate dai tecnici di FastTrack. Utilizzare questa guida per creare i gruppi di distribuzione, personalizzare le app e le funzionalità di Office, configurare installazioni dinamiche o snelle ed eseguire lo script per creare le applicazioni, le regole di distribuzione automatica e le raccolte di dispositivi necessarie per la distribuzione. 
+
+### <a name="integrate-a-third-party-cloud-app-with-azure-ad"></a>Integrare un'app cloud di terze parti con Azure AD
+
+Improve the user experience and provide an additional layer of security by integrating your third-party app with ‎Azure Active Directory (Azure AD). Con questa esperienza end-to-end, è possibile eseguire la maggior parte della configurazione direttamente da questa procedura guidata. Se appropriato, verrà reindirizzato alla pagina di configurazione corrispondente.
+
+Usare la [procedura guidata Integrare app cloud di terze](https://admin.microsoft.com/Adminportal/Home?#/azureadappintegration) parti per integrare un'app cloud di terze parti con Azure AD.

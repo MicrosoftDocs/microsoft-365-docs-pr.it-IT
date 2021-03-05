@@ -21,13 +21,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
-description: Informazioni su come distribuire i componenti aggiuntivi agli utenti e ai gruppi dell'organizzazione tramite la distribuzione centralizzata nell'interfaccia di amministrazione.
-ms.openlocfilehash: 5d17242d98f0e58ec4bfbcfd5b7014e6a6e0a6c5
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+description: Informazioni su come distribuire componenti aggiuntivi a utenti e gruppi dell'organizzazione tramite la distribuzione centralizzata nell'interfaccia di amministrazione.
+ms.openlocfilehash: 4dc7552f2341097b95e763297d2f701f162f83ec
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114502"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454395"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Distribuire i componenti aggiuntivi nell'interfaccia di amministrazione
 
@@ -68,7 +68,7 @@ Prima di iniziare, vedere [Determine if Centralized Deployment of add-ins works 
 2. Selezionare **Distribuisci componente aggiuntivo** nella parte superiore della pagina e quindi fare clic su **Avanti.**
  
     > [!NOTE]
-    > L'interfaccia di amministrazione viene aggiornata all'esperienza di distribuzione con le app integrate. Se i passaggi precedenti non sono visualizzati, passare alla sezione Distribuzione centralizzata andando su **Impostazioni**  >  **app integrate.** Nella parte superiore della **pagina App integrate** scegliere Componenti **aggiuntivi.**
+    > L'interfaccia di amministrazione viene aggiornata all'esperienza di distribuzione con le app integrate. Le app integrate sono visibili solo agli amministratori globali, mentre per altri esiste ancora la vecchia esperienza. Se i passaggi precedenti non sono visualizzati, passare alla sezione Distribuzione centralizzata andando su **Impostazioni**  >  **app integrate.** Nella parte superiore della **pagina App integrate** scegliere Componenti **aggiuntivi.**
     
 3. Seleziona un'opzione e segui le istruzioni.
   
@@ -91,7 +91,7 @@ Prima di iniziare, vedere [Determine if Centralized Deployment of add-ins works 
     > [!NOTE]
     > Per visualizzare l'icona del componente aggiuntivo sulla barra multifunzione dell'app, potrebbe essere necessario il riavvio di Office. La visualizzazione dei componenti aggiuntivi di Outlook nelle barre multifunzione dell'app può richiedere fino a 24 ore.
     
-8. Al termine, selezionare **Avanti.** Se si è distribuito solo a se stessi, è possibile selezionare Cambia chi ha accesso al componente aggiuntivo **da** distribuire a più utenti.
+8. Al termine, selezionare **Avanti.** Se è stata distribuita solo a se stessi, è possibile selezionare Cambia chi ha accesso al componente aggiuntivo **per** la distribuzione a più utenti.
 
     Se il componente aggiuntivo è stato distribuito ad altri membri dell'organizzazione, seguire le istruzioni per annunciare la distribuzione del componente aggiuntivo. <br/>
   
@@ -99,7 +99,7 @@ Prima di iniziare, vedere [Determine if Centralized Deployment of add-ins works 
   
 ### <a name="considerations-when-assigning-an-add-in-to-users-and-groups"></a>Considerazioni per l'assegnazione di un componente aggiuntivo a utenti e gruppi
 
-Gli amministratori possono assegnare un componente aggiuntivo a tutti gli utenti o a gruppi e utenti specifici. Ogni opzione ha delle implicazioni:
+Gli amministratori globali e gli amministratori di Exchange possono assegnare un componente aggiuntivo a tutti gli utenti o a utenti e gruppi specifici. Ogni opzione ha delle implicazioni:
   
 - **Tutti** Questa opzione consente di assegnare il componente aggiuntivo a ogni utente dell'organizzazione. Usare questa opzione con moderazione e solo per i componenti aggiuntivi che effettivamente servono a tutti gli utenti dell'organizzazione. 
     
@@ -107,7 +107,7 @@ Gli amministratori possono assegnare un componente aggiuntivo a tutti gli utenti
     
 - **Gruppi** Se si assegna un componente aggiuntivo a un gruppo, agli utenti aggiunti al gruppo viene assegnato automaticamente il componente aggiuntivo. Quando un utente viene rimosso da un gruppo, perde l'accesso al componente aggiuntivo. In entrambi i casi, non è necessaria alcuna azione aggiuntiva da parte dell'amministratore. 
 
-- **Just me** Se assegni un componente aggiuntivo solo a te stesso, il componente aggiuntivo viene assegnato solo al tuo account, ideale per testare il componente aggiuntivo.
+- **Just me** Se assegni un componente aggiuntivo a te stesso, il componente aggiuntivo viene assegnato solo al tuo account, ideale per testarlo.
     
 L'opzione appropriata per l'organizzazione dipende dalla configurazione. È tuttavia consigliabile eseguire le assegnazioni utilizzando i gruppi. Gli amministratori possono trovare più semplice gestire i componenti aggiuntivi usando i gruppi e controllando l'appartenenza a tali gruppi invece di assegnare singoli utenti ogni volta. In alcune situazioni, è possibile limitare l'accesso a un piccolo gruppo di utenti assegnando manualmente gli utenti a utenti specifici.
   

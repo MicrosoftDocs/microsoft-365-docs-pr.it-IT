@@ -10,15 +10,15 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
-- m365initiative-topics
+- m365initiative-viva-topics
 localization_priority: None
 description: Informazioni su come trovare risorse per gli argomenti di Microsoft Viva.
-ms.openlocfilehash: d5c54bda3432fc9a1ff5ce4342cc523544eb6e78
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 31031697b7825b725c020952a6217b278aa09f02
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242867"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454124"
 ---
 # <a name="introduction-to-microsoft-viva-topics"></a>Introduzione agli argomenti di Microsoft Viva
 
@@ -31,7 +31,7 @@ ms.locfileid: "50242867"
 
 Viva Topics è un servizio di Office 365 che consente alle organizzazioni di trasformare le informazioni in conoscenze.
 
-Le risorse in questa pagina sono progettate per iniziare a conoscere e a usare Viva Topics nell'organizzazione.
+Le risorse in questa pagina sono progettate per iniziare a conoscere e usare Viva Topics nella propria organizzazione.
 
 ## <a name="get-started"></a>Per iniziare
 
@@ -63,7 +63,7 @@ Le risorse in questa sezione consentono all'amministratore dell'organizzazione d
 |:-----|:-----|
 |Informazioni su come configurare Microsoft Viva|[Configurare Microsoft Viva](set-up-topic-experiences.md)|
 |Informazioni su come configurare le autorizzazioni utente|[Gestire le autorizzazioni dell'argomento](topic-experiences-user-permissions.md)|
-|Informazioni su come gestire chi può visualizzare gli argomenti|[Gestire la visibilità dell'argomento](topic-experiences-knowledge-rules.md)|
+|Informazioni su come gestire gli utenti che possono visualizzare gli argomenti|[Gestire la visibilità dell'argomento](topic-experiences-knowledge-rules.md)|
 |Informazioni su come gestire le impostazioni di individuazione degli argomenti|[Gestire la scoperta dell'argomento](topic-experiences-discovery.md)|
 
 ## <a name="work-with-topics"></a>Lavorare con gli argomenti

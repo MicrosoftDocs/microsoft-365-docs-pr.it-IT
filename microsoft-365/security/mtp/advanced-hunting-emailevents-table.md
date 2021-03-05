@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: f39e8f77a53b018fdf9c96981524e12f9aface65
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: a0892e03e0ac4c6fc6bcda1b7b159ce403a7ce2e
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145044"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461618"
 ---
 # <a name="emailevents"></a>EmailEvents
 
@@ -35,7 +35,7 @@ ms.locfileid: "50145044"
 
 - Microsoft 365 Defender
 
-La tabella nello schema di ricerca avanzata contiene informazioni sugli eventi che coinvolgono l'elaborazione dei messaggi di posta elettronica `EmailEvents` in Microsoft Defender per Office 365. [](advanced-hunting-overview.md) Utilizzare questo riferimento per creare query che forniscano informazioni da questa tabella.
+La tabella nello schema di ricerca avanzata contiene informazioni sugli eventi che coinvolgono l'elaborazione dei messaggi di posta elettronica `EmailEvents` in Microsoft Defender per Office 365. [](advanced-hunting-overview.md) Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
 
 >[!TIP]
 > Per informazioni dettagliate sui tipi di eventi (valori) supportati da una tabella, utilizzare il riferimento allo schema predefinito `ActionType` disponibile nel Centro sicurezza. [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
@@ -62,10 +62,6 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `EmailDirection` | stringa | Direzione del messaggio di posta elettronica relativa alla rete: in entrata, in uscita, interna all'organizzazione |
 | `DeliveryAction` | stringa | Azioni di recapito del messaggio di posta elettronica: consegnato, inserito nella posta indesiderata, bloccato o sostituito |
 | `DeliveryLocation` | stringa | Posizione di recapito del messaggio di posta elettronica: cartella Posta in arrivo, locale/esterno, Posta indesiderata, Quarantena, invio non riuscito, non elaborato, Elementi eliminati |
-| `PhishFilterVerdict` | stringa | Verdetto del gruppo di filtri della posta elettronica che indica se il messaggio contiene phishing: Phishing o No phishing |
-| `PhishDetectionMethod` | stringa | Metodo usato per rilevare la posta elettronica come un falso: reputazione url dannoso, detonazione URL collegamenti sicuri, filtro avanzato per il phish, filtro anti-spoofing generale, anti-spoofing: intra-org, anti-spoofing: dominio esterno, rappresentazione del dominio, rappresentazione utente, imitazione del marchio |
-| `MalwareFilterVerdict` | stringa | Verdetto del gruppo di filtri della posta elettronica che indica se il messaggio contiene Malware: Malware, No malware |
-| `MalwareDetectionMethod` | stringa | Metodo usato per rilevare malware nella posta elettronica: motore antimalware, reputazione file, allegati sicuri |
 | `ThreatTypes` | stringa | Verdetto dello stack di filtro della posta elettronica che indica se il messaggio di posta elettronica contiene malware, phishing o altre minacce |
 | `ThreatNames` | stringa |Nome di rilevamento per malware o altre minacce rilevate |
 | `DetectionMethods` | stringa | Metodi utilizzati per rilevare malware, phishing o altre minacce rilevate nel messaggio di posta elettronica |

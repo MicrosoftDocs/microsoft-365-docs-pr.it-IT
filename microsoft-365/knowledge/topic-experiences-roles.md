@@ -1,5 +1,5 @@
 ---
-title: Ruoli microsoft Viva Topics
+title: Ruoli di Microsoft Viva Topics
 ms.author: efrene
 author: efrene
 manager: pamgreen
@@ -11,17 +11,17 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
-- m365initiative-topics
+- m365initiative-viva-topics
 localization_priority: None
 description: Informazioni sui ruoli utente in Viva Topics.
-ms.openlocfilehash: e2975201124045574c516aad49bc5059db969b76
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: d5b57e768a1de8bc0447492067371630b2d045f6
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107435"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453943"
 ---
-# <a name="microsoft-viva-topics-roles"></a>Ruoli microsoft Viva Topics 
+# <a name="microsoft-viva-topics-roles"></a>Ruoli di Microsoft Viva Topics 
 
 Quando si usano Viva Topics nell'ambiente Microsoft 365, gli utenti possono avere i ruoli seguenti:
 -   Visualizzatore argomenti

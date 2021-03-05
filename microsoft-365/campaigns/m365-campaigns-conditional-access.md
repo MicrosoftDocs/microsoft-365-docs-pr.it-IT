@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come richiedere l'autenticazione a più fattori e configurare i criteri di accesso condizionale per Microsoft 365 per le aziende.
-ms.openlocfilehash: b13ba9f8c948d9a1209655c44871ca62cb5354dd
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: e16b7f4ff7d215ee749435806be214a807cc60a4
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044501"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453670"
 ---
 # <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>Richiedere l'autenticazione a più fattori e configurare i criteri di accesso condizionale
 
@@ -43,7 +43,7 @@ Attualmente, i criteri di base includono i criteri seguenti:
   - **Richiedi autenticazione a più** fattori per gli amministratori: richiede l'autenticazione a più fattori per i ruoli di amministratore con privilegi più elevati, incluso l'amministratore globale.
   - **Protezione dell'utente finale:** richiede l'autenticazione a più fattori per gli utenti solo quando un accesso è rischioso. 
 - Configurare nel portale di Azure Active Directory:
-  - **Bloccare l'autenticazione legacy:** le app client meno recenti e alcune nuove app non usano protocolli di autenticazione più recenti e più sicuri. Queste app meno recenti possono ignorare i criteri di accesso condizionale e ottenere l'accesso non autorizzato all'ambiente. Questo criterio blocca l'accesso dai client che non supportano l'accesso condizionale. 
+  - **Bloccare l'autenticazione legacy:** le app client meno recenti e alcune nuove app non usano protocolli di autenticazione più recenti e più sicuri. Queste app precedenti possono ignorare i criteri di accesso condizionale e ottenere l'accesso non autorizzato all'ambiente. Questo criterio blocca l'accesso dai client che non supportano l'accesso condizionale. 
   - **Richiedi L'autenticazione a più** fattori per la gestione dei servizi : richiede l'autenticazione a più fattori per l'accesso agli strumenti di gestione, incluso il portale di Azure (in cui è possibile configurare i criteri di base).
 
 È consigliabile abilitare tutti questi criteri di base. Dopo aver abilitato questi criteri, agli amministratori e agli utenti verrà richiesto di registrarsi per l'autenticazione a più fattori di Azure AD.
@@ -56,9 +56,9 @@ Per richiedere a tutti gli utenti di accedere con un secondo formato di ID:
 
 1. Accedere all'interfaccia di amministrazione e <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> scegliere **Installazione.**
 
-2. Nella pagina Installazione scegliere **Visualizza** nella scheda Rendi più sicuro **l'accesso.**
+2. On the Setup page, choose **View** in the **Make sign-in more secure** card.
 
-    ![Rendere più sicura la scheda di accesso.](../media/setupmfa.png)
+    ![Rendere l'accesso più sicuro.](../media/setupmfa.png)
 3. Nella pagina Rendi più sicuro l'accesso scegliere **Introduzione.**
 
 4. Nel riquadro Rafforzare la sicurezza di accesso selezionare  le caselle di controllo accanto a Richiedi autenticazione a più fattori per gli amministratori e Richiedi agli utenti di registrarsi per l'autenticazione a più fattori e bloccare l'accesso se vengono rilevati **rischi.**
@@ -70,7 +70,7 @@ Per richiedere a tutti gli utenti di accedere con un secondo formato di ID:
 
 ## <a name="set-up-baseline-policies"></a>Configurare i criteri di base
 
-1. Passare al portale [di Azure](https://portal.azure.com)e quindi passare ad Accesso condizionale di Azure **Active Directory** per creare un \>  nuovo **criterio.**
+1. Passare al portale [di Azure](https://portal.azure.com)e quindi passare ad Accesso condizionale per la sicurezza di Azure **Active Directory** per creare un \>  \>  **nuovo criterio.**
 
 Per ogni criterio, vedere le istruzioni specifiche seguenti: <br>
     - [Richiedere l'autenticazione a più fattori per gli amministratori](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-baseline-protect-administrators) <br>

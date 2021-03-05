@@ -11,15 +11,15 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
-- m365initiative-topics
+- m365initiative-viva-topics
 ms.service: ''
 localization_priority: Normal
-ms.openlocfilehash: 9dfad7e179699c599d9320390aaefd2dac176fbb
-ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
+ms.openlocfilehash: ac8e4b8cdcdfd4d2de0c48a22500338c7a8480a8
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50279411"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454172"
 ---
 # <a name="edit-an-existing-topic"></a>Modificare un argomento esistente 
 
@@ -55,7 +55,7 @@ I knowledge manager possono inoltre modificare gli argomenti direttamente dalla 
 
 ### <a name="to-edit-a-topic-page"></a>Per modificare una pagina dell'argomento
 
-1. Nella pagina dell'argomento selezionare **Modifica.** Ciò consente di apportare modifiche in base alle necessità della pagina dell'argomento.
+1. Nella pagina dell'argomento selezionare **Modifica.** In questo modo è possibile apportare le modifiche necessarie alla pagina dell'argomento.
 
    ![Controllo di modifica](../media/knowledge-management/topic-page-edit.png) </br>  
 
@@ -67,7 +67,7 @@ I knowledge manager possono inoltre modificare gli argomenti direttamente dalla 
 
     ![Sezione Descrizione](../media/knowledge-management/description.png)</br>
 
-4. Nella sezione <b>Persone aggiunte</b> puoi "aggiungere" una persona per mostrarla come esperta in materia nell'argomento. Iniziare digitandone il nome o <b></b> l'indirizzo di posta elettronica nella casella Aggiungi un nuovo utente e quindi selezionando l'utente che si desidera aggiungere dai risultati della ricerca. Puoi anche "rimuovere" questi elementi <b></b> selezionando l'icona Rimuovi dall'elenco nella scheda utente.
+4. Nella sezione <b>Persone aggiunte</b> puoi "aggiungere" una persona per mostrarla come esperta in materia nell'argomento. Iniziare digitandone il nome o <b></b> l'indirizzo di posta elettronica nella casella Aggiungi un nuovo utente e quindi selezionando l'utente che si desidera aggiungere dai risultati della ricerca. Puoi anche "rimuovere" le voci <b></b> selezionando l'icona Rimuovi dall'elenco nella scheda utente.
  
     ![Aggiungere persone aggiunte](../media/knowledge-management/pinned-people.png)</br>
 

@@ -16,12 +16,12 @@ ms.collection:
 description: Gli amministratori possono imparare a identificare gruppi specifici di utenti con tag utente in Microsoft Defender per Office 365 Piano 2. Il filtro tag è disponibile per avvisi, report e indagini in Microsoft Defender per Office 365 per identificare rapidamente gli utenti contrassegnati.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 62d858fe5962b94f536d4ccbd712e21bdd5caa57
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 6e5ddffad6405f48a9af55b5123729eb256064a7
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290130"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453646"
 ---
 # <a name="user-tags-in-microsoft-defender-for-office-365"></a>Tag utente in Microsoft Defender per Office 365
 
@@ -45,9 +45,9 @@ Dopo aver applicato tag di sistema o tag personalizzati agli utenti, è possibil
 
 Questo articolo spiega come configurare i tag utente nel Centro sicurezza & conformità. Non sono disponibili cmdlet nel Centro sicurezza & conformità per gestire i tag utente.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla **pagina Tag** utente, aprire <https://protection.office.com/userTags> .
+- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla **pagina Tag** utente, aprire <https://protection.office.com/userTags> .
 
 - Per poter eseguire le procedure contenute in questo articolo è necessario disporre delle autorizzazioni appropriate nel Centro sicurezza e conformità:
   - Per creare, modificare ed eliminare tag utente, è necessario essere membri dei gruppi **di** ruoli Gestione organizzazione o Amministratore **sicurezza.**
@@ -59,7 +59,7 @@ Questo articolo spiega come configurare i tag utente nel Centro sicurezza & conf
   **Note**:
 
   - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie nel centro Sicurezza e conformità _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
-  - La gestione dei tag utente è controllata dai **ruoli Lettore tag,** **Collaboratore** tag **e Gestione** tag.
+  - La gestione dei tag utente è controllata dai **ruoli Lettore tag** **e Gestione** tag.
 
 - È inoltre possibile gestire e monitorare gli account con priorità nell'interfaccia di amministrazione di Microsoft 365. Per istruzioni, vedere [Gestire e monitorare gli account con priorità.](../../admin/setup/priority-accounts.md)
 
@@ -110,7 +110,7 @@ Questo articolo spiega come configurare i tag utente nel Centro sicurezza & conf
 
 2. Nella **pagina Tag utente** visualizzata selezionare il tag utente che si desidera visualizzare e quindi fare clic su **Modifica tag.**
 
-3. La procedura guidata per i criteri si apre in un **riquadro a comparsa** Modifica tag. Fare **clic su** Avanti per esaminare e modificare le impostazioni.
+3. La procedura guidata per i criteri si apre in **un riquadro a comparsa** Modifica tag. Fare **clic su** Avanti per rivedere e modificare le impostazioni.
 
    Al termine, fare clic su **Invia.**
 

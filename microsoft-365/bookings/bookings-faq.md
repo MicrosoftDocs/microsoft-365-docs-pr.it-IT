@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Domande frequenti su Microsoft Bookings.
-ms.openlocfilehash: 35e1b71fb7d87d40aa9a3a60d2e3cf108f36c2bf
-ms.sourcegitcommit: 98b889e674ad1d5fa37d4b6c5fc3eda60a1d67f3
+ms.openlocfilehash: a293bf86225731917068712c2887ea79c2540039
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "49751382"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454290"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Domande frequenti su Microsoft Bookings
 
@@ -21,11 +21,11 @@ ms.locfileid: "49751382"
 
 ### <a name="what-is-microsoft-bookings"></a>Che cos'è Microsoft Bookings?
 
-Microsoft Bookings è un'app di Microsoft 365 che semplifica la pianificazione e la gestione degli appuntamenti. Bookings include un calendario di prenotazione basato sul Web e si integra con Outlook per ottimizzare il calendario del personale, offrendo ai clienti la flessibilità di prenotare un orario adatto alle proprie esigenze. I messaggi di posta elettronica di notifica automatizzati non vengono visualizzati e le organizzazioni risparmiano tempo con una riduzione delle attività di pianificazione ripetitive. Bookings consente di condurre facilmente appuntamenti virtuali tramite Skype o Microsoft Teams e consente di gestire la pianificazione quotidiana tramite l'app Prenotazioni in Teams. Con la possibilità predefinita di personalizzare, Bookings è progettato per soddisfare le esigenze di più parti di qualsiasi organizzazione.
+Microsoft Bookings è un'app di Microsoft 365 che semplifica la pianificazione e la gestione degli appuntamenti. Bookings include un calendario di prenotazione basato sul Web e si integra con Outlook per ottimizzare il calendario del personale, offrendo ai clienti la flessibilità di prenotare un orario più adatto. I messaggi di posta elettronica di notifica automatizzati non vengono visualizzati e le organizzazioni risparmiano tempo con una riduzione delle attività di pianificazione ripetitive. Bookings consente di condurre facilmente appuntamenti virtuali tramite Skype o Microsoft Teams e consente di gestire la pianificazione quotidiana tramite l'app Prenotazioni in Teams. Con la possibilità predefinita di personalizzare, Bookings è progettato per soddisfare le esigenze di più parti di qualsiasi organizzazione.
 
 ### <a name="how-do-i-use-microsoft-bookings"></a>Come si usa Microsoft Bookings?
 
-Bookings è un servizio online, quindi non è necessario scaricare nulla. Basta passare alla selezione delle app nell'esperienza Web di Microsoft 365. Gli amministratori possono anche usare l'app complementare Bookings per rimanere sempre al corrente delle informazioni più recenti sui clienti e sui loro appuntamenti.
+Bookings è un servizio online, quindi non è necessario scaricare nulla. Basta passare alla selezione delle app nell'esperienza Web di Microsoft 365. Gli amministratori possono anche usare l'app complementare Bookings per rimanere al corrente delle informazioni più recenti sui clienti e sui loro appuntamenti.
 
 ### <a name="who-has-access-to-microsoft-bookings"></a>Chi ha accesso a Microsoft Bookings?
 
@@ -53,7 +53,7 @@ Sì. Viene fornito un collegamento alla pagina di prenotazione all'interno della
 
 ### <a name="can-our-it-department-control-whether-end-users-can-access-bookings"></a>Il reparto IT può controllare se gli utenti finali possono accedere a Bookings?
 
-Bookings è disponibile nei tenant Microsoft 365 Business Premium, Microsoft 365 Business Standard, M365 A3/A5 ed E3/E5 per impostazione predefinita, ma gli amministratori possono disattivarla nell'interfaccia di amministrazione di Microsoft 365, se lo desiderano. A tale scopo, [seguire queste istruzioni.](turn-bookings-on-or-off.md)
+Bookings è disponibile nei tenant Microsoft 365 Business Premium, Microsoft 365 Business Standard, M365 A3/A5 ed E3/E5 per impostazione predefinita, ma gli amministratori possono disattivarlo nell'interfaccia di amministrazione di Microsoft 365, se lo desiderano. A tale scopo, [seguire queste istruzioni.](turn-bookings-on-or-off.md)
 
 Se un cliente desidera disabilitare l'accesso a Bookings per alcune licenze idonee nel tenant, può utilizzare criteri di gruppo per limitare le licenze o implementare un criterio cassetta postale di OWA che limiterà chi è in grado di creare nuovi calendari di Bookings.
 
@@ -126,13 +126,13 @@ Una licenza di Bookings offre funzionalità complete al prodotto, inclusa la cre
 
 È possibile mantenere il provider corrente, ma Bookings invierà tutte le notifiche al messaggio di posta elettronica usato nell'account di Microsoft 365.
 
-### <a name="can-my-employees-use-bookings-without-a-microsoft-365-account"></a>I dipendenti possono usare Bookings senza un account Di Microsoft 365?
+### <a name="can-my-employees-use-bookings-without-a-microsoft-365-account"></a>I dipendenti possono usare Bookings senza un account Microsoft 365?
 
 Sì. You can add your staff with any email, and they will still get the email confirmation and the calendar invite when someone books an appointment with them.
 
 ### <a name="can-i-create-more-than-one-bookings-calendar-under-the-same-microsoft-365-account-and-switch-between-them"></a>È possibile creare più calendari di Bookings con lo stesso account di Microsoft 365 e passare da un calendario all'altro?
 
-Sì. È possibile creare e gestire più calendari di Bookings con un account. Puoi passare da una all'altra usando il caret accanto al nome dell'azienda nell'app Web Bookings.
+Sì. È possibile creare e gestire più calendari di Bookings con un account. È possibile passare da una all'altra utilizzando il caret accanto al nome dell'azienda nell'app Web Bookings.
 
 ### <a name="what-if-my-organization-has-mixed-licenses-with-f1f3-e1-and-e3e5"></a>Cosa succede se l'organizzazione ha licenze miste con F1/F3, E1 ed E3/E5?
 
@@ -142,9 +142,9 @@ In questo esempio, i dipendenti della sede centrale con una licenza M365 E3 hann
 
 I dipendenti dello Store con licenze E1/F1/F3 o senza licenze possono comunque essere aggiunti come membri del personale ai calendari con ruolo Guest e quindi prenotati per gli appuntamenti e riceveranno messaggi di posta elettronica di conferma al momento della prenotazione. Possono comunque essere prenotati durante le ore disponibili/pianificate, come indicato nella scheda del personale. La disponibilità del calendario di Bookings vincola gli orari prenotabili in base alle ore impostate e all'orario di servizio.
 
-I dipendenti dello Store verranno inoltre visualizzati come non disponibili in Bookings se un appuntamento è già stato pianificato in quel momento tramite l'app Web Prenotazioni. Gli appuntamenti prenotati tramite Bookings verranno riflessi come occupati nel calendario di un membro del personale all'interno di Bookings. Il personale con una licenza non abilitata per Bookings può comunque avere un impatto sul calendario personale sulla disponibilità in Bookings, purché si trova nello stesso tenant.
+I dipendenti dello Store verranno inoltre visualizzati come non disponibili in Bookings se un appuntamento è già stato pianificato in quel momento tramite l'app Web Prenotazioni. Gli appuntamenti prenotati tramite Bookings verranno riflessi come occupati nel calendario di un membro del personale all'interno di Bookings. Il personale con una licenza non abilitata per Bookings può comunque avere un impatto sul calendario personale sulla disponibilità in Bookings, purché si trova all'interno dello stesso tenant.
 
-Gli utenti con ruolo Guest possono visualizzare tutte le informazioni fornite dal cliente durante la creazione iniziale dell'appuntamento. Ad esempio, se il rappresentante dello Store prenotato per l'appuntamento deve chiamare il cliente prima dell'appuntamento, avrà accesso alle informazioni fornite dal cliente durante il processo di pianificazione. Il membro del personale prenotato avrà accesso a tutte le informazioni visualizzate nel messaggio di posta elettronica di conferma, nonché all'evento del calendario ics (ad esempio il numero di telefono del cliente se è stato immesso).
+Gli utenti con ruolo Guest possono visualizzare tutte le informazioni fornite dal cliente durante la creazione iniziale dell'appuntamento. Ad esempio, se il rappresentante dello Store prenotato per l'appuntamento deve chiamare il cliente prima dell'appuntamento, avrà accesso alle informazioni fornite dal cliente durante il processo di pianificazione. Il membro del personale prenotato avrà accesso a tutte le informazioni visualizzate nel messaggio di posta elettronica di conferma, nonché all'evento del calendario .ics (ad esempio il numero di telefono del cliente se è stato immesso).
 
 Gli utenti con ruolo Guest non potranno accedere all'app Web Bookings per modificare le impostazioni o per visualizzare e gestire gli appuntamenti (aggiunta, annullamento e riprogrammazione). Tuttavia, possono prendere appuntamenti per conto dei clienti utilizzando la pagina Self-service, nello stesso modo in cui un cliente può prendere un appuntamento.
 
@@ -166,7 +166,7 @@ Le uniche persone che hanno accesso ai calendari di Bookings creati (tramite l'a
 
 ### <a name="are-video-conferencing-meetings-integrated-into-the-bookings-app"></a>Le riunioni di videoconferenza sono integrate nell'app Bookings?
 
-Le riunioni online sono disponibili all'interno di Bookings quando si usano i client Skype o Microsoft Teams. Le riunioni online possono essere abilitate a livello di servizio e il client di riunione scelto (Skype o Teams) sarà quello impostato per impostazione predefinita per un membro del personale prenotato. Per partecipare alle riunioni online, a ogni nuovo appuntamento verrà allegato un collegamento univoco alla riunione e, inoltre, le opzioni di partecipazione semplice sono incluse nell'evento e nei messaggi di posta elettronica di conferma.
+Le riunioni online sono disponibili all'interno di Bookings quando si usano i client Skype o Microsoft Teams. Le riunioni online possono essere abilitate a livello di servizio e il client di riunione scelto (Skype o Teams) sarà quello impostato per impostazione predefinita per un membro del personale prenotato. Per partecipare alle riunioni online, a ogni nuovo appuntamento verrà allegato un collegamento univoco alla riunione e, inoltre, nell'evento e nei messaggi di posta elettronica di conferma sono incluse le opzioni di partecipazione semplice.
 
 ### <a name="how-does-scheduling-policy-work"></a>Come funziona il criterio di pianificazione?
 
@@ -176,7 +176,7 @@ Un'impostazione **denominata Lead time massimo** determina il più lontano antic
 
 ### <a name="how-does-bookings-work-across-time-zones"></a>Come funziona Bookings nei fusi orari?
 
-Per impostazione predefinita, tutti gli orari sono nel fuso orario dell'azienda (il fuso orario locale). Ciò significa che qualsiasi impostazione configurata per un calendario di Bookings, ad esempio l'orario di lavoro, verrà visualizzata in questo fuso orario. La pagina Self-service consente di visualizzare tutti gli appuntamenti nel fuso orario dell'utente finale, che possono essere disattivati se lo si desidera. Se mostra sempre le **fasce** orarie nel fuso orario aziendale rimane deselezionata nella scheda della pagina Prenotazioni, gli utenti che visitano la pagina potranno visualizzare le fasce orarie nei propri fusi orari locali.
+Per impostazione predefinita, tutti gli orari sono nel fuso orario aziendale (il fuso orario locale). Ciò significa che qualsiasi impostazione configurata per un calendario di Bookings, ad esempio l'orario di lavoro, verrà visualizzata in questo fuso orario. La pagina Self-service consente di visualizzare tutti gli appuntamenti nel fuso orario dell'utente finale, che possono essere disattivati se lo si desidera. Se mostra sempre le **fasce** orarie nel fuso orario aziendale rimane deselezionata nella scheda della pagina Prenotazioni, gli utenti che visitano la pagina potranno visualizzare le fasce orarie nei propri fusi orari locali.
 
 :::image type="content" source="media/bookings-faq-region.png" alt-text="Impostazioni relative all'area geografica e al fuso orario di Bookings":::
 
@@ -204,7 +204,7 @@ Sì, abbiamo una funzionalità di prenotazione di gruppo che consente a più per
 
 ### <a name="can-calendars-remain-unpublished-not-public-facing-but-still-accessible-to-designated-users"></a>I calendari possono rimanere non pubblicati (non pubblici) ma comunque accessibili agli utenti designati?
 
-Sì. È presente una casella di controllo nella scheda pagina Prenotazione nell'app Web: richiedere un account di **Microsoft 365 o Office 365** dall'organizzazione per la prenotazione. Se si seleziona questa casella di controllo, l'accesso alle pagine self-service viene limitato solo a quelli all'interno del tenant. Il calendario di Bookings che si trova all'interno dell'app Web per la creazione e la gestione è accessibile solo agli utenti aggiunti come personale alla pagina con ruoli di amministratore o visualizzatore.
+Sì. È presente una casella di controllo nella scheda pagina Prenotazione nell'app Web: richiedere **un account di Microsoft 365 o Office 365** dall'organizzazione per la prenotazione. Se si seleziona questa casella di controllo, l'accesso alle pagine in self-service viene limitato solo a quelli all'interno del tenant. Il calendario di Bookings che si trova all'interno dell'app Web per la creazione e la gestione è accessibile solo agli utenti aggiunti come personale alla pagina con ruoli di amministratore o visualizzatore.
 
 :::image type="content" source="media/bookings-faq-access-ctrl.png" alt-text="Controllo di accesso alla pagina di prenotazione in Bookings":::
 
@@ -230,7 +230,7 @@ Sì, è possibile creare calendari di Bookings separati per ogni servizio oppure
 
 ### <a name="what-options-are-available-for-embedding-a-consent-form-or-disclosure-for-those-booking-an-appointment"></a>Quali opzioni sono disponibili per incorporare un modulo di consenso o la divulgazione per chi prenota un appuntamento?
 
-È consigliabile abilitare la **casella di** controllo Consenso all'utilizzo dei dati del cliente nella pagina Di prenotazione e personalizzare il testo in modo da comunicare correttamente i requisiti di divulgazione o consenso dell'organizzazione. Un'altra opzione è aggiungere un campo personalizzato al servizio che include un collegamento al modulo di consenso e richiedere ai clienti di confermare di aver completato il modulo prima di poter procedere con l'appuntamento. È anche possibile aggiungere l'URL del modulo di consenso come note aggiuntive nei messaggi di posta elettronica di conferma e promemoria, ma ciò non impedirà agli utenti di prenotare un appuntamento.
+È consigliabile abilitare la **casella di** controllo Consenso all'utilizzo dei dati del cliente nella pagina Di prenotazione e personalizzare il testo in modo da comunicare correttamente i requisiti di divulgazione o consenso dell'organizzazione. Un'altra opzione è aggiungere un campo personalizzato al servizio che include un collegamento al modulo di consenso e richiedere ai clienti di confermare di aver completato il modulo prima di procedere con l'appuntamento. È anche possibile aggiungere l'URL del modulo di consenso come note aggiuntive nei messaggi di posta elettronica di conferma e promemoria, ma ciò non impedirà agli utenti di prenotare un appuntamento.
 
 ### <a name="what-changes-can-be-made-to-the-staff-selection-capability-on-the-self-service-booking-page"></a>Quali modifiche possono essere apportate alla funzionalità di selezione del personale nella pagina di prenotazione self-service?
 
@@ -274,7 +274,7 @@ Questa sezione non supporta il formato RTF, ma può essere aggiunta una sezione 
 
 Il comando seguente può essere utilizzato per recuperare le informazioni di tutte le cassette postali di Bookings e degli utenti che hanno accesso a esse.
 
-`Get-Mailbox -RecipientTypeDetails SchedulingMailbox -ResultSize:Unlimited | Get-MailboxPermission |Select-Object Identity,User,AccessRights | Where-Object {($\_.user -like '\*@\*')}`
+`Get-Mailbox -RecipientTypeDetails SchedulingMailbox -ResultSize:Unlimited | Get-MailboxPermission |Select-Object Identity,User,AccessRights | Where-Object {($_.user -like '@')}`
 
 ## <a name="technical-questions"></a>Domande tecniche
 
@@ -303,7 +303,7 @@ Per informazioni sulla sincronizzazione del calendario del personale, vedere [Ag
 
 ### <a name="the-staff-member-needs-to-change-their-calendar-permissions"></a>Il membro del personale deve modificare le autorizzazioni del calendario
 
-Per poter sincronizzare correttamente Bookings con i calendari dei membri del personale, ogni membro del personale deve condividere il proprio calendario. Ogni membro del personale deve seguire queste istruzioni per condividere il proprio calendario.
+Per consentire la corretta sincronizzazione di Bookings con i calendari dei membri del personale, ogni membro del personale deve condividere il proprio calendario. Ogni membro del personale deve seguire queste istruzioni per condividere il proprio calendario.
 
 1. Accedere a Microsoft 365 e quindi selezionare **Outlook** dall'icona di avvio delle app.
 

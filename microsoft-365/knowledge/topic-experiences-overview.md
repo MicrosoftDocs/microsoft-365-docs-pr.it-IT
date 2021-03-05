@@ -11,15 +11,15 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
-- m365initiative-topics
+- m365initiative-viva-topics
 localization_priority: None
 description: Panoramica degli argomenti viva.
-ms.openlocfilehash: f45e0f7c6090d4584526aa9c2abb5ec98213d635
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 91442ba12b3d5df1d9934022751f4bc381cd40e8
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107640"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453970"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Panoramica di Microsoft Viva Topics 
 
@@ -31,9 +31,9 @@ Viva Topics usa la tecnologia Microsoft AI, Microsoft 365, Microsoft Graph, Sear
 
 </br>
 
-Viva Topics consente di risolvere un problema aziendale chiave in molte aziende, fornendo le informazioni agli utenti quando ne hanno bisogno. Ad esempio, i nuovi dipendenti devono imparare rapidamente molte nuove informazioni e trovare termini di cui non conoscono nulla durante la lettura delle informazioni aziendali. Per saperne di più, l'utente potrebbe dover allontanarsi da ciò che sta facendo e dedicare tempo prezioso alla ricerca di dettagli, ad esempio informazioni sul termine, chi nell'organizzazione è un esperto in materia e forse siti e documenti correlati al termine.
+Viva Topics consente di risolvere un problema aziendale chiave in molte aziende, fornendo le informazioni agli utenti quando ne hanno bisogno. Ad esempio, i nuovi dipendenti devono imparare rapidamente molte nuove informazioni e trovare termini di cui non sanno nulla quando leggono le informazioni aziendali. Per saperne di più, l'utente potrebbe dover allontanarsi da ciò che sta facendo e dedicare tempo prezioso alla ricerca di dettagli, ad esempio informazioni sul termine, chi nell'organizzazione è un esperto in materia e forse siti e documenti correlati al termine.
 
-Viva Topics usa l'intelligenza artificiale per cercare e identificare **automaticamente gli argomenti** nell'organizzazione. Vengono compilate informazioni su di esse, ad esempio una breve descrizione, persone che lavorano all'argomento e siti, file e pagine ad esso correlati. Un responsabile o un collaboratore può scegliere di aggiornare le informazioni sull'argomento in base alle esigenze. Gli argomenti sono disponibili per gli utenti, il che significa che per ogni istanza dell'argomento visualizzata in un sito di SharePoint moderno nelle notizie e nelle pagine, il testo verrà evidenziato. Gli utenti possono scegliere di selezionare l'argomento per saperne di più nei dettagli dell'argomento. Gli argomenti sono disponibili anche nel servizio di ricerca di SharePoint.
+Viva Topics usa l'intelligenza artificiale per cercare e identificare **automaticamente gli argomenti** nell'organizzazione. Vengono compilate informazioni su di esse, ad esempio una breve descrizione, persone che lavorano all'argomento e siti, file e pagine ad esso correlati. Un responsabile della knowledge base o un collaboratore può scegliere di aggiornare le informazioni sull'argomento in base alle esigenze. Gli argomenti sono disponibili per gli utenti, il che significa che per ogni istanza dell'argomento visualizzata in un sito di SharePoint moderno nelle notizie e nelle pagine, il testo verrà evidenziato. Gli utenti possono scegliere di selezionare l'argomento per saperne di più nei dettagli dell'argomento. Gli argomenti sono disponibili anche nel servizio di ricerca di SharePoint.
 
 
 ## <a name="how-topics-are-displayed-to-users"></a>Modalità di visualizzazione degli argomenti agli utenti
@@ -64,7 +64,7 @@ Quando un argomento viene identificato e l'intelligenza artificiale determina ch
 - Persone che potrebbero essere a conoscenza dell'argomento.
 - File, pagine e siti correlati all'argomento.
 
-Gli amministratori delle informazioni possono scegliere di eseguire la ricerca per indicizzazione in tutti i siti di SharePoint nel tenant per argomenti o di selezionare solo alcuni siti.
+Gli amministratori della knowledge base possono scegliere di eseguire la ricerca per indicizzazione in tutti i siti di SharePoint nel tenant per argomenti o di selezionare solo determinati siti.
 
 Vedere [Individuazione e cura degli argomenti](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation)
 
@@ -80,7 +80,7 @@ Quando si usano Viva Topics nell'ambiente Microsoft 365, gli utenti avranno i ru
 
 - Amministratori della knowledge base: gli amministratori della knowledge base configurano Viva Topics e lo gestiscono tramite i controlli di amministrazione nell'interfaccia di amministrazione di Microsoft 365. Attualmente, un amministratore globale o di SharePoint di Microsoft 365 può fungere da amministratore della knowledge base.
 
-Per [ulteriori informazioni, vedere i](topic-experiences-roles.md) ruoli viva topics.
+Per [ulteriori informazioni, vedere i](topic-experiences-roles.md) ruoli di Viva Topics.
 
 ## <a name="topic-management"></a>Gestione degli argomenti
 

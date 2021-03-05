@@ -15,12 +15,12 @@ appliesto:
 - Microsoft 365 Defender
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1b32982298a368dc435dad8b6c09188321d099e2
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 6c5c94ce3994424a6d4b6f4a4ac587f5cc5e33ca
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289234"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454698"
 ---
 # <a name="remediate-malicious-email-delivered-in-office-365"></a>Correggere i messaggi di posta elettronica dannosi recapitati in Office 365
 
@@ -29,7 +29,7 @@ ms.locfileid: "50289234"
 **Si applica a**
 - [Microsoft Defender per Office 365 Piano 2](office-365-atp.md)
 
-La correzione significa eseguire un'azione prescritta contro una minaccia. La posta elettronica dannosa inviata all'organizzazione può essere pulita dal sistema, tramite l'eliminazione automatica a zero ore (ZAP) o dai team di sicurezza attraverso azioni di correzione come lo spostamento nella posta in *arrivo,* lo spostamento nella posta *indesiderata,* lo spostamento agli elementi *eliminati,* l'eliminazione reverssione *o* l'eliminazione *permanente.* Microsoft Defender per Office 365 P2/E5 consente ai team di sicurezza di correggere le minacce nelle funzionalità di posta elettronica e collaborazione tramite un'indagine manuale e automatizzata.
+La correzione significa eseguire un'azione prescritta contro una minaccia. I messaggi di posta elettronica dannosi inviati all'organizzazione possono essere puliti dal sistema, tramite zap (zero-hour auto purge) o dai team di sicurezza attraverso azioni di correzione come lo spostamento nella posta in *arrivo,* lo spostamento nella posta *indesiderata,* lo spostamento agli elementi *eliminati,* l'eliminazione reversa o l'eliminazione *permanente.* Microsoft Defender per Office 365 P2/E5 consente ai team di sicurezza di correggere le minacce nelle funzionalità di posta elettronica e collaborazione tramite un'indagine manuale e automatizzata.
 
 > [!NOTE]
 > Per correggere la posta elettronica dannosa, i team di sicurezza necessitano *del* ruolo di ricerca ed eliminazione assegnato. L'assegnazione di ruolo viene eseguita tramite le autorizzazioni nel Centro sicurezza e conformità.
@@ -59,7 +59,7 @@ Dopo aver selezionato i messaggi di posta elettronica tramite Esplora minacce, �
 
 - Approvazione in due passaggi: un'azione di "aggiunta alla correzione" può essere eseguita dagli amministratori che non dispongono delle autorizzazioni appropriate o che devono attendere di eseguire l'azione. In questo caso, i messaggi di posta elettronica di destinazione vengono aggiunti a un contenitore di correzione. L'approvazione è necessaria prima dell'esecuzione della correzione.
 
-**Le azioni automatizzate di analisi e** risposta vengono attivate da avvisi o dai team delle operazioni di sicurezza da Esplora minacce. Tali azioni possono includere azioni di correzione consigliate che devono essere approvate da un team delle operazioni di sicurezza. Queste azioni sono incluse **nella** scheda Azione nell'indagine automatizzata.
+**Le azioni di analisi e risposta** automatizzate vengono attivate da avvisi o dai team delle operazioni di sicurezza di Esplora minacce. Queste azioni possono includere azioni di correzione consigliate che devono essere approvate da un team delle operazioni di sicurezza. Queste azioni sono incluse **nella** scheda Azione nell'indagine automatizzata.
 
 > [!div class="mx-imgBorder"]
 > [![Posta con malware nella pagina "Zapped" che mostra l'ora di esecuzione di Zap.](../../media/tp-RemediationArticle3.png)](../../media/tp-RemediationArticle3.png#lightbox)
@@ -113,7 +113,7 @@ Aprire qualsiasi elemento di correzione per visualizzarne i dettagli, tra cui il
   > [!div class="mx-imgBorder"]
   > [![Riquadro a comparsa del cluster di posta elettronica ZAP.](../../media/tp-RemediationArticle6.png)](../../media/tp-RemediationArticle6.png#lightbox)
 
-  Selezionare un elemento di invio della posta per visualizzare i dettagli di tale correzione, ad esempio la query (quando la correzione viene attivata tramite indagini automatizzate o Esplora minacce tramite la selezione di una query) e l'ora di inizio e fine della correzione. Viene inoltre visualizzato un elenco dei messaggi inviati per la correzione. Quando i messaggi vengono spostati al di fuori del periodo di conservazione di Esplora minacce, i messaggi scompaiono da questo elenco. L'elenco mostra anche i singoli messaggi che sono corretti.
+  Selezionare un elemento per l'invio di posta per visualizzare i dettagli di tale correzione, ad esempio la query (quando la correzione viene attivata tramite indagini automatizzate o Esplora minacce tramite la selezione di una query) e l'ora di inizio e fine della correzione. Viene inoltre visualizzato un elenco dei messaggi inviati per la correzione. Quando i messaggi vengono spostati al di fuori del periodo di conservazione di Esplora minacce, i messaggi scompaiono da questo elenco. L'elenco mostra anche i singoli messaggi che sono corretti.
 
 - **Log azioni:** questa scheda mostra i messaggi corretti, tra cui la data approvata, l'amministratore che ha approvato l'azione, l'azione, lo stato e i conteggi.
 
@@ -127,9 +127,11 @@ Aprire qualsiasi elemento di correzione per visualizzarne i dettagli, tra cui il
 
   Poiché è possibile intervenire solo sui messaggi di posta elettronica corretti, la pulizia di ogni messaggio di posta elettronica viene visualizzata come completata o non riuscita. Dai messaggi di posta elettronica correttivi totali, vengono segnalate le mitigazioni riuscite e non riuscite.
 
-  - **Operazione** riuscita: è stata eseguita l'azione desiderata per correggere i messaggi di posta elettronica. Ad esempio: un amministratore vuole rimuovere i messaggi di posta elettronica dalle cassette postali, in modo che l'amministratore esempli l'azione di eliminazione recisa dei messaggi di posta elettronica. Se un messaggio di posta elettronica correttiva non viene trovato nella cartella originale dopo l'esecuzione dell'azione, lo stato verrà visualizzato come corretto.
+  - **Operazione** riuscita: è stata eseguita l'azione desiderata per correggere i messaggi di posta elettronica. Ad esempio: un amministratore vuole rimuovere i messaggi di posta elettronica dalle cassette postali, in modo che l'amministratore esemplii l'azione di eliminazione recisa dei messaggi di posta elettronica. Se un messaggio di posta elettronica correttiva non viene trovato nella cartella originale dopo l'esecuzione dell'azione, lo stato verrà visualizzato come corretto.
 
-  - **Errore:** l'azione desiderata per correggere i messaggi di posta elettronica non è riuscita. Ad esempio: un amministratore vuole rimuovere i messaggi di posta elettronica dalle cassette postali, in modo che l'amministratore esempli l'azione di eliminazione recisa dei messaggi di posta elettronica. Se nella cassetta postale viene ancora trovato un messaggio di posta elettronica correttiva dopo l'azione, lo stato verrà visualizzato come non riuscito.
+  - **Errore:** l'azione desiderata per correggere i messaggi di posta elettronica non è riuscita. Ad esempio: un amministratore vuole rimuovere i messaggi di posta elettronica dalle cassette postali, in modo che l'amministratore esemplii l'azione di eliminazione recisa dei messaggi di posta elettronica. Se nella cassetta postale viene ancora trovato un messaggio di posta elettronica correttiva dopo l'azione, lo stato verrà visualizzato come non riuscito.
+  
+  - **Già nella destinazione:** l'azione desiderata è già stata eseguita nel messaggio di posta elettronica oppure il messaggio di posta elettronica esiste già nel percorso di destinazione. Ad esempio: un messaggio di posta elettronica è stato eliminato in modo reciso dall'amministratore tramite Explorer il primo giorno. Quindi messaggi di posta elettronica simili vengono visualizzati nel giorno 2, che vengono nuovamente eliminati in modo reciso dall'amministratore. Durante la selezione di questi messaggi di posta elettronica, l'amministratore finisce per raccogliere alcuni messaggi di posta elettronica dal primo giorno che sono già eliminati in modo reciso. Ora questi messaggi di posta elettronica non verranno più visualizzati come "già nella destinazione", poiché non è stata eseguita alcuna azione su di essi come se fossero presenti nella posizione di destinazione.
 
   Selezionare un elemento nel registro azioni per visualizzare i dettagli della correzione. Se i dettagli sono "riuscito" o "non trovato nella cassetta postale", l'elemento è già stato rimosso dalla cassetta postale. A volte si verifica un errore sistemico durante la correzione. In questi casi, è buona idea ritentare la correzione.
 

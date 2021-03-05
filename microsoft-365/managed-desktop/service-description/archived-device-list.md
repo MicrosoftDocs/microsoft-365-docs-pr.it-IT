@@ -1,7 +1,7 @@
 ---
 title: Dispositivi archiviati di Microsoft Managed Desktop
 description: Dispositivi in avvicinamento al ritiro che è ancora possibile registrare, ma che avranno una durata del supporto ridotta
-keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
+keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5d386000fab8894dd60790d3514ae93feaa03a22
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: e392d071b77226a23001d8628c3b9c711b06e228
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841280"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454584"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Dispositivi archiviati di Microsoft Managed Desktop
 
@@ -27,7 +27,7 @@ Per garantire la migliore esperienza utente, Microsoft Managed Desktop ritira il
 
 <!-- Microsoft 365 E5; Device as a Service -->
 <!-- Split from device & technologies topic. Destination topic for aka.ms/device-list  -->
-Per essere registrato in Microsoft Managed Desktop, un dispositivo deve essere uno dei modelli seguenti e soddisfare o superare le specifiche elencate per LA RAM, la famiglia di processori e lo spazio su disco. Non sono supportate altre personalizzazioni.
+Per essere registrato in Microsoft Managed Desktop, un dispositivo deve essere uno dei modelli seguenti e soddisfare o superare le specifiche elencate per RAM, famiglia di processori e spazio su disco. Non sono supportate altre personalizzazioni.
 
 
 
@@ -44,7 +44,8 @@ Per essere registrato in Microsoft Managed Desktop, un dispositivo deve essere u
 |Dell Latitude 7200 2-in-1 | 256 GB/ Intel i5 / 8 GB di RAM | Fotocamera a IR necessaria | **1 maggio 2024** |
 |Dell Latitude 7300 / 7400 / 7400 2-in-1 | 256 GB/ Intel i5 / 8 GB di RAM | Fotocamera a IR necessaria | **1 maggio 2024**  |
 |Dell Latitude 7390 / 7390 2-in-1 / 7490 | 256 GB/ Intel i5 / 8 GB di RAM   | Fotocamera a IR necessaria | **9 gennaio 2023** |
-|Dell Optiplex 3070 | 128 GB/ Intel i3 / 8 GB di RAM | Nessuno | **1 maggio 2025**  |
+|Dell Latitude 7410 / 7410 2-in-1 | 256 GB/ Intel i5 / 8 GB di RAM | Fotocamera a IR necessaria | **19 maggio 2025**  |
+|Dell Optiplex 3070 | 128 GB/ Intel i3 / 8 GB di RAM | None | **1 maggio 2025**  |
 |HP EliteBook 830 / 840 / 850 G5| 128 GB/ Intel i5 / 8 GB di RAM | SKU con 5VS01AV, fotocamera AR o sensore di impronta digitale obbligatorio  | **15 febbraio 2023** |
 |HP EliteBook 830 / 840 / 850 G6| 128 GB/ Intel i5 / 8 GB di RAM | SKU con 5VS01AV, fotocamera AR o sensore di impronta digitale obbligatorio  | **30 novembre 2023** |
 |HP Elite x2 1013 G3| 256 GB/ Intel i5 / 8 GB di RAM | SKU con 5VS03AV, fotocamera AR necessaria |**14 maggio 2023** |
@@ -57,12 +58,12 @@ Per essere registrato in Microsoft Managed Desktop, un dispositivo deve essere u
 |HP EliteDesk 800 G4 SFF | 128 GB/ Intel i3 / 8 GB di RAM | SKU con 5VS04AV | **18 luglio 2023** |
 |HP EliteOne 800 G4 23,8 in AIO |128 GB/ Intel i3 / 8 GB di RAM |SKU con 5VS04AV| **18 luglio 2023** |
 |HP ZBook 14u/15u G6 Mobile Workstation |256 GB/ Intel i5 / 8 GB di RAM |SKU con 5VS04AV, fotocamera AR necessaria| **30 novembre 2023** |
-|Surface Book 2| 256 GB/ Intel i5 / 8 GB di RAM | Nessuno | **16 novembre 2022** |
-|Surface Go| 128 GB / Intel 4415Y / 8 GB di RAM | Nessuno | **2 agosto 2023** |
-|Surface Laptop| 256 GB/ Intel i5 / 8 GB di RAM | Nessuno | **20 maggio 2022** |
-|Surface Laptop 2| 128 GB/ Intel i5 / 8 GB di RAM | Nessuno | **16 ottobre 2023** |
-|Surface Pro| 256 GB/ Intel i5 / 8 GB di RAM | Nessuno | **15 giugno 2022** |
-|Surface Pro 6| 128 GB/ Intel i5 / 8 GB di RAM | Nessuno | **16 ottobre 2023** |
+|Surface Book 2| 256 GB/ Intel i5 / 8 GB di RAM | None | **16 novembre 2022** |
+|Surface Go| 128 GB / Intel 4415Y / 8 GB di RAM | None | **2 agosto 2023** |
+|Surface Laptop| 256 GB/ Intel i5 / 8 GB di RAM | None | **20 maggio 2022** |
+|Surface Laptop 2| 128 GB/ Intel i5 / 8 GB di RAM | None | **16 ottobre 2023** |
+|Surface Pro| 256 GB/ Intel i5 / 8 GB di RAM | None | **15 giugno 2022** |
+|Surface Pro 6| 128 GB/ Intel i5 / 8 GB di RAM | None | **16 ottobre 2023** |
 
 Inoltre, il dispositivo deve anche:
 

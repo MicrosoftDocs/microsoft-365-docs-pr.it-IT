@@ -11,15 +11,15 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
-- m365initiative-topics
+- m365initiative-viva-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: d9965c04335e77abc449cbc155ece63372869ee9
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 54e513fc12a42d2779ee5f35628781676adc0f48
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107745"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453994"
 ---
 # <a name="topic-center-overview"></a>Panoramica sul centro argomenti
 
@@ -61,11 +61,11 @@ Nella home page del Centro argomenti è possibile visualizzare gli argomenti del
 
    ![Connessioni suggerite](../media/knowledge-management/my-topics.png) </br>
  
-- Connessioni confermate: si tratta di argomenti in cui si è aggiunti nella pagina dell'argomento o che è stata confermata una connessione suggerita all'argomento. Gli argomenti verranno spostati dalla sezione suggerita a conferma quando si conferma una connessione suggerita.
+- Connessioni confermate: si tratta di argomenti in cui sei stato aggiunto nella pagina dell'argomento o hai confermato una connessione suggerita all'argomento. Gli argomenti verranno spostati dalla sezione suggerita a conferma quando si conferma una connessione suggerita.
  
    ![Argomenti confermati](../media/knowledge-management/my-topics-confirmed.png) </br>
 
-Dopo aver confermato la connessione a un argomento, l'utente può apportare modifiche alla pagina dell'argomento per curarne la connessione. Ad esempio, possono fornire ulteriori informazioni sulla connessione all'argomento.
+Quando un utente conferma la connessione a un argomento, può apportare modifiche alla pagina dell'argomento per curarne la connessione. Ad esempio, possono fornire ulteriori informazioni sulla connessione all'argomento.
 
 
 ## <a name="manage-topics-page"></a>Pagina Gestisci argomenti
@@ -86,7 +86,7 @@ Nella pagina Gestisci argomenti il dashboard dell'argomento mostra tutti gli arg
 Se si dispone **delle autorizzazioni per la creazione e la** modifica di argomenti, è possibile:
 
 - [Modificare gli argomenti esistenti:](edit-a-topic.md)è possibile apportare modifiche alle pagine degli argomenti esistenti create tramite l'individuazione.
-- [Creare nuovi argomenti:](create-a-topic.md)puoi creare nuovi argomenti per quelli che non sono stati trovati tramite individuazione o se gli strumenti di intelligenza artificiale non hanno trovato prove sufficienti per creare un argomento.
+- [Creare nuovi argomenti:](create-a-topic.md)è possibile creare nuovi argomenti per quelli che non sono stati trovati tramite l'individuazione o se gli strumenti di intelligenza artificiale non hanno trovato prove sufficienti per creare un argomento.
 
 
 

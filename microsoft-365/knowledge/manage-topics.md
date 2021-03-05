@@ -11,14 +11,14 @@ ms.prod: microsoft-365-enterprise
 search.appverid: ''
 ms.collection:
 - enabler-strategic
-- m365initiative-topics
+- m365initiative-viva-topics
 localization_priority: None
-ms.openlocfilehash: 45e8f26823998278f9a332d2ea1e362b77f2032b
-ms.sourcegitcommit: a048fefb081953aefa7747c08da52a7722e77288
+ms.openlocfilehash: 3d083537f3a9337d88d63861e0bf66867f558aba
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50107195"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454006"
 ---
 # <a name="manage-topics-in-the-topic-center"></a>Gestire gli argomenti nel Centro argomenti 
 
@@ -35,7 +35,7 @@ Nel Centro argomenti viva, un responsabile  della knowledge base può visualizza
 
 
 
-I knowledge manager consentono di guidare gli argomenti individuati nel ciclo di vita degli argomenti in cui sono:
+I responsabili della conoscenza consentono di guidare gli argomenti individuati nel ciclo di vita degli argomenti in cui sono:
 
 - Consigliato: un argomento è stato identificato dall'intelligenza artificiale e dispone di risorse, connessioni e proprietà di supporto sufficienti.
 - Confermato: viene convalidato un argomento suggerito dall'intelligenza artificiale. La convalida viene eseguita tramite la conferma di un responsabile della conoscenza. Inoltre, un argomento può essere confermato se almeno due utenti forniscono feedback positivo tramite la domanda di feedback nella scheda dell'argomento.
@@ -67,7 +67,7 @@ Nella pagina Gestione argomenti del Centro argomenti gli argomenti individuati n
 
 Per esaminare un argomento consigliato:
 
-1. Nella pagina **Gestisci argomenti** selezionare la **scheda Suggeriti,** selezionare l'argomento per aprire la pagina dell'argomento.</br>
+1. Nella pagina **Gestisci argomenti** selezionare la **scheda Suggeriti** e selezionare l'argomento per aprire la pagina dell'argomento.</br>
 
 2. Nella pagina dell'argomento esaminare la pagina dell'argomento e selezionare **Modifica** se è necessario apportare modifiche alla pagina. La pubblicazione di eventuali modifiche sposterà questo argomento nella **scheda** Published.
 
@@ -85,7 +85,7 @@ Per esaminare un argomento consigliato:
 
 ### <a name="quality-score"></a>Punteggio qualità
 
-A ogni argomento visualizzato nella pagina Argomenti suggeriti <b>è</b> assegnato un punteggio di qualità. Il punteggio di qualità è un riflesso della quantità di informazioni che l'utente medio potrà visualizzare per le informazioni sull'argomento, tenendo presente che ogni utente può visualizzare più o meno informazioni a causa delle autorizzazioni che possono o meno avere sulle informazioni in un argomento. 
+A ogni argomento visualizzato nella pagina Argomenti suggeriti <b>è</b> assegnato un punteggio di qualità. Il punteggio Di qualità riflette la quantità di informazioni che l'utente medio potrà visualizzare per le informazioni sull'argomento, tenendo presente che ogni utente può visualizzare più o meno informazioni a causa delle autorizzazioni che possono o meno avere sulle informazioni in un argomento. 
 
 Il punteggio Di qualità può essere utile per fornire informazioni dettagliate sugli argomenti con il maggior numero di informazioni e può essere utile per trovare argomenti che potrebbero dover essere modificati manualmente.  Ad esempio, un argomento con un punteggio di qualità inferiore può essere il risultato di alcuni utenti che non hanno autorizzazioni di SharePoint per i file o i siti pertinenti inclusi nell'argomento. Un collaboratore può quindi modificare l'argomento in modo da includere le informazioni (se appropriato), che saranno quindi visualizzabili per tutti gli utenti che possono visualizzare l'argomento.
 
@@ -93,7 +93,7 @@ Il punteggio Qualità può variare da 1 a 100. Un argomento appena individuato a
 
 ### <a name="impressions"></a>Impression
 
-Nella <b>colonna Impression viene</b> visualizzato il numero di volte in cui un argomento è stato visualizzato agli utenti finali. Sono incluse le visualizzazioni tramite le schede degli argomenti nella ricerca, le evidenziazioni degli argomenti e le visualizzazioni del Centro argomenti. Non riflette il click-through su questi argomenti, ma che l'argomento è stato visualizzato. La colonna Impression verrà visualizzata per gli argomenti nelle schede Suggeriti, Confermati, Pubblicati e Rimossi nella pagina Gestisci argomenti.
+Nella <b>colonna Impression viene</b> visualizzato il numero di volte in cui un argomento è stato visualizzato agli utenti finali. Sono incluse le visualizzazioni tramite le schede degli argomenti nella ricerca, le evidenziazioni degli argomenti e le visualizzazioni del Centro argomenti. Non riflette il click-through su questi argomenti, ma che l'argomento è stato visualizzato. La colonna Impression verrà visualizzata per gli argomenti nelle schede Suggerite, Confermate, Pubblicate e Rimosse nella pagina Gestisci argomenti.
 
 
 ## <a name="confirmed-topics"></a>Argomenti confermati
@@ -102,7 +102,7 @@ Nella pagina Gestisci argomenti, gli argomenti individuati nelle posizioni di or
 
 Per esaminare un argomento confermato:
 
-1. Nella scheda **Confermata** selezionare l'argomento per aprire la pagina dell'argomento.</br>
+1. Nella scheda **Confirmed** selezionare l'argomento per aprire la pagina dell'argomento.</br>
 
 2. Nella pagina dell'argomento esaminare la pagina dell'argomento e selezionare **Modifica** se è necessario apportare modifiche alla pagina.
 

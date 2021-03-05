@@ -17,12 +17,12 @@ ms.collection:
 description: Informazioni su come abilitare il componente aggiuntivo Segnala messaggio per Outlook e Outlook sul Web, per singoli utenti o per l'intera organizzazione.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 08ad2f61cc5dcd2e59af89ca788319c81e2f6bdb
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 5eed0fc8905020ea12d3fa6a51c5c8051205b0da
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287366"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50453754"
 ---
 # <a name="enable-the-report-message-add-in"></a>Abilitare il componente aggiuntivo Segnala messaggio
 
@@ -36,7 +36,7 @@ ms.locfileid: "50287366"
 > [!NOTE]
 > Gli amministratori di un'organizzazione di Microsoft 365 con cassette postali di Exchange Online consigliano di usare il portale Invii nel Centro sicurezza & conformità. Per ulteriori informazioni, vedere [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft.](admin-submission.md)
 
-I componenti aggiuntivi Segnala messaggio e Segnala phishing per Outlook e Outlook sul Web (in precedenza noto come Outlook Web App) consentono di segnalare facilmente falsi positivi (messaggi di posta elettronica non consentiti) o falsi negativi (posta elettronica non consentita) a Microsoft e alle relative consociati per l'analisi.
+I componenti aggiuntivi Segnala messaggio e Segnala phishing per Outlook e Outlook sul Web (in precedenza noto come Outlook Web App) consentono agli utenti di segnalare facilmente falsi positivi (messaggi di posta elettronica non consentiti) o falsi negativi (posta elettronica non consentita) a Microsoft e alle relative consociati per l'analisi.
 
 Microsoft usa questi invii per migliorare l'efficacia delle tecnologie di protezione della posta elettronica. Ad esempio, se gli utenti segnalano molti messaggi contrassegnati come posta indesiderata come non indesiderata utilizzando il componente aggiuntivo Segnala messaggio, il team di sicurezza dell'organizzazione potrebbe dover modificare i criteri di protezione dalla posta [indesiderata.](configure-your-spam-filter-policies.md)
 
@@ -48,7 +48,7 @@ Se si è un singolo utente, è possibile abilitare manualmente il [componente ag
 
 Se si è un amministratore globale o un amministratore di Exchange Online ed Exchange è configurato per l'utilizzo dell'autenticazione OAuth, è possibile abilitare il componente aggiuntivo Segnala messaggio [per l'organizzazione.](#get-and-enable-the-report-message-add-in-for-your-organization) La funzionalità Segnala messaggio Add-In è ora disponibile tramite [la distribuzione centralizzata.](../../admin/manage/centralized-deployment-of-add-ins.md)
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Il componente aggiuntivo Segnala messaggio funziona con la maggior parte degli abbonamenti a Microsoft 365 e dei prodotti seguenti:
 
@@ -58,7 +58,7 @@ Se si è un amministratore globale o un amministratore di Exchange Online ed Exc
   - Outlook incluso nelle app di Microsoft 365 per le aziende
   - App Outlook per iOS e Android
 
-- Il componente aggiuntivo Segnala messaggio non è disponibile per le cassette postali nelle organizzazioni Exchange locali.
+- Il componente aggiuntivo Segnala messaggio non è disponibile per le cassette postali condivise o le cassette postali nelle organizzazioni Exchange locali.
 
 - È possibile configurare i messaggi segnalati da copiare o reindirizzare a una cassetta postale specificata. Per altre informazioni, vedi [Criteri di invio degli utenti.](user-submission.md)
 
@@ -76,7 +76,7 @@ Se si è un amministratore globale o un amministratore di Exchange Online ed Exc
 
    ![Segnala messaggio - Scaricalo subito](../../media/ReportMessageGETITNOW.png)
 
-3. Nella finestra di dialogo visualizzata, esaminare le condizioni per l'utilizzo e l'informativa sulla privacy e quindi fare clic su **Continua.**
+3. Nella finestra di dialogo visualizzata esaminare le condizioni per l'utilizzo e l'informativa sulla privacy e quindi fare clic su **Continua.**
 
 4. Accedi usando l'account aziendale o dell'istituto di istruzione (per uso aziendale) o l'account Microsoft (per uso personale).
 
@@ -115,7 +115,7 @@ Per informazioni su come utilizzare il componente aggiuntivo, vedere Utilizzare 
 
 6. Nella finestra di dialogo visualizzata esaminare le informazioni sulla licenza e sulla privacy e quindi fare clic su **Continua.**
 
-7. Nella pagina **Configura componente** aggiuntivo visualizzata configurare le impostazioni seguenti:
+7. Nella pagina **Configura componente aggiuntivo** visualizzata configurare le impostazioni seguenti:
 
    - **Utenti assegnati:** selezionare uno dei seguenti valori:
 
@@ -163,7 +163,7 @@ Quando si invia una notifica agli utenti sul componente aggiuntivo Segnala messa
 
 2. Trovare e selezionare il **componente aggiuntivo Segnala** messaggio.
 
-3. Nel riquadro **a comparsa Modifica** messaggio rapporto visualizzato, rivedere e modificare le impostazioni in base alle esigenze dell'organizzazione. Al termine, fare clic su **Salva**.
+3. Nel riquadro **a comparsa Modifica** messaggio rapporto visualizzato, rivedere e modificare le impostazioni in base alle esigenze dell'organizzazione. Al termine, scegliere **Salva**.
 
    ![Impostazioni per il componente aggiuntivo Segnala messaggio](../../media/EditReportMessageAddIn.png)
 

@@ -10,20 +10,20 @@ ms.topic: article
 ms.prod: microsoft-365-enterprise
 ms.collection:
 - enabler-strategic
-- m365initiative-topics
+- m365initiative-viva-topics
 ms.service: ''
 search.appverid: ''
 localization_priority: Normal
-ms.openlocfilehash: fbdd0e9b75e92d8080d9aaf43a2d1eaa8baacbc3
-ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
+ms.openlocfilehash: c3ba9ce6675e81a99309243db251b34a21a4b43f
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50279389"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454160"
 ---
 # <a name="create-a-new-topic"></a>Creare un nuovo argomento 
 
-In Viva Topics puoi creare un nuovo argomento se non ne viene individuato uno tramite l'indicizzazione o se la tecnologia IA non ha trovato prove sufficienti per stabilirlo come argomento.
+In Viva Topics puoi creare un nuovo argomento se non ne viene individuato uno tramite l'indicizzazione o se la tecnologia di intelligenza artificiale non ha trovato prove sufficienti per stabilirlo come argomento.
 
 > [!Note] 
 > Anche se le informazioni contenute in un argomento raccolto dall'intelligenza artificiale sono limitate per motivi di [sicurezza,](topic-experiences-security-trimming.md)tenere presente che la descrizione dell'argomento e le informazioni sulle persone in un argomento creato manualmente sono visibili a tutti gli utenti che dispongono delle autorizzazioni per visualizzare l'argomento. 
@@ -52,19 +52,21 @@ Per creare un nuovo argomento, è necessario:
 
 ### <a name="to-create-a-new-topic"></a>Per creare un nuovo argomento:
 
-1. Nella sezione **Assegnare un nome all'argomento** digitare il nome del nuovo argomento.
+1. Selezionare l'opzione per creare una nuova pagina dell'argomento dalla barra multifunzione nella pagina Gestisci argomenti.
+
+2.   Nella sezione **Assegnare un nome all'argomento** digitare il nome del nuovo argomento.
 
     ![Assegnare un nome a questo argomento](../media/knowledge-management/k-new-topic-page.png) </br> 
 
 
-2. Nella sezione <b>Nomi alternativi</b> digitare eventuali altri nomi a cui potrebbe essere fatto riferimento nell'argomento. 
+3. Nella sezione <b>Nomi alternativi</b> digitare eventuali altri nomi a cui potrebbe essere fatto riferimento nell'argomento. 
 
     ![Nomi alternativi](../media/knowledge-management/alt-names.png) </br> 
-3. Nella sezione <b>Descrizione</b> digitare un paio di frasi che descrivono l'argomento. 
+4. Nella sezione <b>Descrizione</b> digitare un paio di frasi che descrivono l'argomento. 
 
     ![Descrizione dell'argomento](../media/knowledge-management/description.png)</br>
 
-4. Nella sezione <b>Persone aggiunte</b> puoi "aggiungere" una persona per mostrarla come esperta in materia nell'argomento. Iniziare digitandone il nome o l'indirizzo di posta elettronica nella casella aggiungi <b>un</b> nuovo utente e quindi selezionare l'utente che si desidera aggiungere dai risultati della ricerca. Puoi anche "rimuovere" le voci <b></b> selezionando l'icona Rimuovi dall'elenco nella scheda utente. Puoi anche trascinare la persona per modificare l'ordine di visualizzazione dell'elenco di persone.
+4. Nella sezione <b>Persone aggiunte</b> puoi "aggiungere" una persona per mostrarla come esperta in materia nell'argomento. Iniziare digitando il nome o l'indirizzo di posta elettronica nella casella aggiungi <b>un</b> nuovo utente e quindi selezionare l'utente che si desidera aggiungere dai risultati della ricerca. Puoi anche "rimuovere" le voci <b></b> selezionando l'icona Rimuovi dall'elenco nella scheda utente. Puoi anche trascinare la persona per modificare l'ordine di visualizzazione dell'elenco di persone.
  
     ![Persone aggiunte](../media/knowledge-management/pinned-people.png)</br>
 

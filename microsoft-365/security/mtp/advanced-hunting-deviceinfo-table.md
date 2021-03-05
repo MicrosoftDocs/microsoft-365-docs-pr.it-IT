@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 6462096a6c1b44ee11299f652a54f261d0355523
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: 53948f3d470fb85ddfda8dbcf5b64024755ca50e
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145368"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461624"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -37,7 +37,7 @@ ms.locfileid: "50145368"
 
 
 
-La tabella nello schema di ricerca avanzata contiene informazioni sui computer dell'organizzazione, tra cui la versione del sistema operativo, gli utenti `DeviceInfo` attivi e il nome del computer. [](advanced-hunting-overview.md) Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
+La tabella nello schema di ricerca avanzata contiene informazioni sui dispositivi nell'organizzazione, tra cui la versione del sistema operativo, gli utenti `DeviceInfo` attivi e il nome del computer. [](advanced-hunting-overview.md) Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
 
 Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il riferimento sulla Ricerca avanzata](advanced-hunting-schema-tables.md).
 
@@ -52,13 +52,24 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `OSPlatform` | stringa | Piattaforma del sistema operativo in esecuzione sul computer. Indica sistemi operativi specifici, incluse le varianti all'interno della stessa famiglia, ad esempio Windows 10 e Windows 7 |
 | `OSBuild` | stringa | Versione build del sistema operativo in esecuzione nel computer |
 | `IsAzureADJoined` | boolean | Indicatore booleano che indica se il computer è aggiunto ad Azure Active Directory |
-| `DeviceObjectId` | stringa | Identificatore univoco per il dispositivo in Azure AD |
+| `AadObjectId` | stringa | Identificatore univoco per il dispositivo in Azure AD |
 | `LoggedOnUsers` | stringa | Elenco di tutti gli utenti registrati nel computer al momento dell'evento in formato matrice JSON |
 | `RegistryDeviceTag` | stringa | Tag del computer aggiunto tramite il Registro di sistema |
 | `ReportId` | long | Identificatore di evento basato su un contatore ripetuto. Per identificare eventi univoci, questa colonna deve essere usata insieme alle colonne DeviceName e Timestamp |
 |`AdditionalFields` | stringa | Ulteriori informazioni sull'evento in formato matrice JSON |
 | `OSVersion` | stringa | Versione del sistema operativo in esecuzione sul computer |
 | `MachineGroup` | stringa | Gruppo di computer del computer. Questo gruppo viene utilizzato dal controllo dell'accesso basato sui ruoli per determinare l'accesso al computer |
+
+La `DeviceInfo` tabella fornisce informazioni sul dispositivo in base agli heartbeat, ovvero report periodici o segnali provenienti da un dispositivo. Ogni quindici minuti, il dispositivo invia un heartbeat parziale che contiene attributi che cambiano frequentemente, ad esempio `LoggedOnUsers` . Una volta al giorno, viene inviato un heartbeat completo contenente gli attributi del dispositivo.
+
+Puoi usare la query di esempio seguente per ottenere lo stato più recente di un dispositivo:
+
+```kusto
+// Get latest information on user/device
+DeviceInfo
+| where DeviceName == "example" and isnotempty(OSPlatform)
+| summarize arg_max(Timestamp, *) by DeviceId 
+```
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)

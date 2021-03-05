@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ee1777debdb91a6ac73737db2db48e434ed3e2e2
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: afa5cd42545eddafb1d0ec1a6d88eb0903e07820
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49930091"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "50454552"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Prerequisiti di Microsoft 365 Defender
 
@@ -49,9 +49,6 @@ Una di queste licenze consente di accedere alle funzionalità di Microsoft 365 D
 - Che cosa è Microsoft Defender per identità? 
 - Microsoft Cloud App Security
 - Defender per Office 365 (Piano 2)
-
-> [!NOTE]
-> Le licenze di valutazione per Office 365 attualmente non forniscono l'accesso a Microsoft 365 Defender.
 
 Per ulteriori informazioni, [vedere i piani di servizio di Microsoft 365 Enterprise.](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)
 
