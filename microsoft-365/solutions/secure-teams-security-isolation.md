@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Informazioni su come creare un team con un'etichetta di riservatezza univoca per la sicurezza.
-ms.openlocfilehash: 439dee40d1501801fc09d570614a591259c6f09c
-ms.sourcegitcommit: 31be333178b934c519f419656f4c3a53e1beffdc
+ms.openlocfilehash: 5ddd42f9e2f2779ca6bf864554140a3f18d2cdea
+ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "49881706"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "50405703"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Configurare un team con l'isolamento di sicurezza
 
@@ -44,6 +44,7 @@ Gli elementi della configurazione di un team con l’isolamento di sicurezza son
 
 Guardare il video per una panoramica del processo di distribuzione.
 <br>
+<br>
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4mGHf]
 
 <a name="poster"></a> Per un riepilogo di 1 pagina di questo scenario, vedere il [poster Microsoft Teams con isolamento della sicurezza](../downloads/team-security-isolation-poster.pdf).
@@ -51,6 +52,10 @@ Guardare il video per una panoramica del processo di distribuzione.
 [![Poster Microsoft Teams con l’isolamento di sicurezza](../media/secure-teams-security-isolation/team-security-isolation-poster.png)](../downloads/team-security-isolation-poster.pdf)
 
 È anche possibile scaricare il poster in formato [PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/team-security-isolation-poster.pdf) o [PowerPoint](https://download.microsoft.com/download/8/0/5/8057fc16-c044-40b6-a652-7ed555ba2895/team-security-isolation-poster.pptx) e stamparlo in formato lettera, legale o tabloid (27,9 x 43,2 cm).
+
+Provare questa configurazione nel proprio ambiente laboratorio di test con [queste istruzioni](team-security-isolation-dev-test.md).
+
+Altre informazioni su come Contoso Corporation ha utilizzato un team isolato per un progetto top secret in [questo case study](contoso-team-for-top-secret-project.md).
 
 ## <a name="initial-protections"></a>Protezioni iniziali
 
