@@ -36,10 +36,6 @@
           href: communication-compliance-feature-reference.md
         - name: 'Case Study: Contoso configura rapidamente i criteri relativi al linguaggio offensivo'
           href: communication-compliance-case-study.md
-        - name: Criteri di supervisione in Office 365
-          href: supervision-policies.md
-        - name: Configurare i criteri di supervisione per Office 365
-          href: configure-supervision-policies.md
     - name: Gestione dei rischi Insider
       items:
         - name: Panoramica
