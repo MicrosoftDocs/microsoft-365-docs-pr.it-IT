@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: ff93a341-6f0f-4f06-9690-726052e1be64
 description: "Riepilogo: usare PowerShell per gestire le proprietà dell'account utente di Skype for Business online con i criteri."
-ms.openlocfilehash: 20a75fa1c131f693fcf30d20477af5c9ee7aed35
-ms.sourcegitcommit: 22755cebfbfa2c4dc3f8b4f54ccb23636a211ee5
+ms.openlocfilehash: ca945bc05e76525b4b2df6fb0b982a8468d87810
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/15/2020
-ms.locfileid: "48477042"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515053"
 ---
 # <a name="manage-skype-for-business-online-policies-with-powershell"></a>Gestire i criteri di Skype for Business Online con PowerShell
 
@@ -41,8 +41,7 @@ Utilizzare queste istruzioni per ottenere la configurazione che consenta di eseg
    ```powershell
    Import-Module MicrosoftTeams
    $userCredential = Get-Credential
-   $sfbSession = New-CsOnlineSession -Credential $userCredential
-   Import-PSSession $sfbSession
+   Connect-MicrosoftTeams -Credential $userCredential
    ```
 
    Quando richiesto, immettere il nome e la password dell'account Administrator di Skype for Business online.

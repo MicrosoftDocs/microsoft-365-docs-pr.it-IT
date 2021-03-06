@@ -18,12 +18,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: 1fd32aa688256f1ac8e63eec902c3a18b2143f09
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 63f40ff12972695e391bd25973fd9a7195fab5b1
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242915"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515029"
 ---
 # <a name="microsoft-defender-for-endpoint-in-the-microsoft-365-security-center"></a>Microsoft Defender per Endpoint nel Centro sicurezza Microsoft 365
 
@@ -49,6 +49,9 @@ Microsoft Defender for Endpoint nel Centro sicurezza Microsoft 365 supporta la c
 > [!IMPORTANT]
 > Ciò che viene visualizzato nel Centro sicurezza Microsoft 365 dipende dagli abbonamenti correnti. Ad esempio, se non si dispone di una licenza per Microsoft Defender per Office 365, la sezione E-mail & Collaboration non verrà visualizzata.
 
+>[!Note]
+>Il nuovo portale unificato non è disponibile per: US Government Community Cloud (GCC) US Government Community Cloud High (GCC High) US Department of Defense All US government institutions with commercial licenses
+
 Dai un'occhiata al Centro sicurezza Microsoft 365 migliorato: [https://security.microsoft.com](https://security.microsoft.com) .
 
 Ulteriori informazioni sui vantaggi: Panoramica del Centro sicurezza [Microsoft 365](overview-security-center.md)
@@ -62,7 +65,7 @@ Questa tabella è un riferimento rapido alle modifiche tra Microsoft Defender Se
 |**Area**  |**Descrizione della modifica**  |
 |---------|---------|
 | [Eventi imprevisti & avvisi](incidents-overview.md)  | Nel Centro sicurezza Microsoft 365 è possibile gestire eventi imprevisti e avvisi in tutti gli endpoint, la posta elettronica e le identità. L'esperienza è stata convergente per aiutarti a trovare più facilmente gli eventi correlati. Per ulteriori informazioni, vedere [Panoramica degli eventi imprevisti.](incidents-overview.md)   |
-| [Ricerca](advanced-hunting-overview.md)  |  La modifica delle regole di rilevamento personalizzate create in Microsoft Defender for Endpoint per includere le tabelle di identità e di posta elettronica le sposta automaticamente in Microsoft 365 Defender. Gli avvisi corrispondenti verranno visualizzati anche in Microsoft 365 Defender. Per ulteriori informazioni su queste modifiche, vedere [Eseguire la migrazione di regole di rilevamento personalizzate.](advanced-hunting-migrate-from-mdatp.md#migrate-custom-detection-rules) La `DeviceAlertEvents` tabella per la ricerca avanzata non è disponibile in Microsoft 365 Defender. Per eseguire query sulle informazioni sugli avvisi specifici del dispositivo in Microsoft 365 Defender, è possibile utilizzare le tabelle e le tabelle per contenere ulteriori informazioni provenienti da un `AlertInfo` `AlertEvidence` set di origini diverse. Crea la query correlata al dispositivo successiva seguendo [query di scrittura senza DeviceAlertEvents.](advanced-hunting-migrate-from-mdatp.md#write-queries-without-devicealertevents)|
+| [Ricerca](advanced-hunting-overview.md)  |  La modifica delle regole di rilevamento personalizzate create in Microsoft Defender for Endpoint per includere le tabelle di identità e di posta elettronica le sposta automaticamente in Microsoft 365 Defender. Gli avvisi corrispondenti verranno visualizzati anche in Microsoft 365 Defender. Per ulteriori informazioni su queste modifiche, vedere Eseguire [la migrazione di regole di rilevamento personalizzate.](advanced-hunting-migrate-from-mdatp.md#migrate-custom-detection-rules) La `DeviceAlertEvents` tabella per la ricerca avanzata non è disponibile in Microsoft 365 Defender. Per eseguire query sulle informazioni sugli avvisi specifici del dispositivo in Microsoft 365 Defender, è possibile utilizzare le tabelle e le tabelle per contenere ulteriori informazioni provenienti da un `AlertInfo` `AlertEvidence` set di origini diverse. Crea la query correlata al dispositivo successiva seguendo [query di scrittura senza DeviceAlertEvents.](advanced-hunting-migrate-from-mdatp.md#write-queries-without-devicealertevents)|
 |[Centro notifiche](mtp-action-center.md)    | Elenca le azioni in sospeso e completate eseguite in seguito a indagini automatizzate e azioni di correzione. In precedenza, il centro notifiche nel Microsoft Defender Security Center ha elencato le azioni in sospeso e completate per le azioni di correzione eseguite solo sui dispositivi, mentre le indagini automatizzate hanno elencato avvisi e stato. Nel centro sicurezza Microsoft 365 migliorato, il centro notifiche riunisce le azioni di correzione e le indagini su posta elettronica, dispositivi e utenti, il tutto in un'unica posizione.  |
 | [Analisi delle minacce](threat-analytics.md) |  Spostato nella parte superiore della barra di spostamento per semplificarne l'individuazione e l'utilizzo. Ora include informazioni sulle minacce sia per gli endpoint che per la posta elettronica e la collaborazione.    |
 
@@ -79,15 +82,15 @@ Questa tabella è un riferimento rapido alle modifiche tra Microsoft Defender Se
 | Gestione della configurazione   |  Nessuna modifica.  |
 
 > [!NOTE]
-> **L'analisi e la correzione automatiche** sono ora parte degli incidenti. È possibile visualizzare gli eventi di analisi e correzione automatizzati nella **scheda Analisi** > eventi imprevisti.
+> **L'analisi e la correzione automatiche** sono ora parte degli incidenti. È possibile visualizzare gli eventi di analisi e correzione automatizzati nella **scheda Incident > Investigation.**
 
 ### <a name="access-and-reporting"></a>Accesso e creazione di report
 
 |**Area**  |**Descrizione della modifica**  |
 |---------|---------|
-| Report  | Vedere i report per gli endpoint e la collaborazione & posta elettronica, tra cui protezione dalle minacce, integrità e conformità dei dispositivi e dispositivi vulnerabili. |
-| Sanità  |  Attualmente si collega alla pagina "Integrità dei servizi" nell'interfaccia di amministrazione di [Microsoft 365.](https://admin.microsoft.com/) |
-| Impostazioni |  Gestire le impostazioni per il Centro sicurezza Microsoft 365, Microsoft 365 Defender, Endpoint, Collaborazione & posta elettronica, Identità e Individuazione dispositivi.   |
+| Report  | Vedi i report per gli endpoint e la collaborazione & posta elettronica, tra cui protezione dalle minacce, integrità e conformità dei dispositivi e dispositivi vulnerabili. |
+| Sanità  |  Attualmente si collega alla pagina "Integrità dei servizi" nell'interfaccia di amministrazione [di Microsoft 365.](https://admin.microsoft.com/) |
+| Impostazioni |  Gestire le impostazioni per il Centro sicurezza Microsoft 365, Microsoft 365 Defender, endpoint, collaborazione & posta elettronica, identità e individuazione dei dispositivi.   |
 
 ## <a name="microsoft-365-security-navigation-and-capabilities"></a>Funzionalità e spostamento per la sicurezza di Microsoft 365
 

@@ -22,12 +22,12 @@ ms.custom:
 description: Gli amministratori possono scoprire in che modo zap (zero-hour auto purge) può spostare retroattivamente i messaggi recapitati in una cassetta postale di Exchange Online nella cartella Posta indesiderata o in quarantena che sono retroattivamente trovati come posta indesiderata o phishing.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5fd41cf45ad2a49d74684ae3e20dded5c1b8f034
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 0f6cd7522581db1fbc594e9350c8712359498e3b
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287306"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509291"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Zero-hour auto purge (ZAP) in Exchange Online
 
@@ -69,13 +69,13 @@ Per **i** messaggi letti o non letti identificati come phishing dopo il recapito
 
 - **Reindirizzare il messaggio all'indirizzo di posta** elettronica, **eliminare il messaggio,** **mettere in quarantena** il messaggio.
 
-Per impostazione predefinita, zap phishing è abilitato nei criteri di protezione dalla posta indesiderata e l'azione predefinita per il verdetto del filtro della posta elettronica di **phishing** è **Il** messaggio in quarantena, il che significa che ZAP phishing messo in quarantena il messaggio per impostazione predefinita.
+Per impostazione predefinita, zap phishing è abilitato nei criteri di protezione dalla posta indesiderata e l'azione predefinita per il verdetto del filtro della posta elettronica di **phishing** è **Il** messaggio in quarantena, il che significa che ZAP phishing messi in quarantena il messaggio per impostazione predefinita.
 
 Per ulteriori informazioni sulla configurazione dei verdetti del filtro posta indesiderata, vedere Configurare i criteri di protezione da [posta indesiderata in Microsoft 365.](configure-your-spam-filter-policies.md)
 
 ### <a name="spam-zap"></a>ZaP della posta indesiderata
 
-Per **i messaggi** non letti identificati come posta indesiderata dopo il recapito, il  risultato zap dipende dall'azione configurata per il verdetto filtro posta indesiderata nel criterio di protezione da posta indesiderata applicabile. Le azioni del verdetto filtro disponibili per la posta indesiderata e i possibili risultati ZAP sono descritte nell'elenco seguente:
+Per **i messaggi** non letti identificati come posta indesiderata dopo il recapito, il  risultato ZAP dipende dall'azione configurata per il verdetto filtro posta indesiderata nel criterio di protezione da posta indesiderata applicabile. Le azioni del verdetto filtro disponibili per la posta indesiderata e i possibili risultati ZAP sono descritte nell'elenco seguente:
 
 - **Aggiungi X-Header**, **antepone l'oggetto al** testo: ZAP non fa alcuna azione sul messaggio.
 
@@ -87,13 +87,13 @@ Per impostazione predefinita, zap della posta indesiderata è abilitato  nei cri
 
 Per ulteriori informazioni sulla configurazione dei verdetti del filtro posta indesiderata, vedere Configurare i criteri di protezione da [posta indesiderata in Microsoft 365.](configure-your-spam-filter-policies.md)
 
-### <a name="zap-considerations-for-microsoft-defender-for-office-365"></a>Considerazioni zap per Microsoft Defender per Office 365
+### <a name="zap-considerations-for-microsoft-defender-for-office-365"></a>Considerazioni su ZAP per Microsoft Defender per Office 365
 
-ZAP non metta in quarantena i [](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies) messaggi in corso di recapito dinamico nell'analisi degli allegati sicuri o in cui il filtro antimalware EOP ha già sostituito l'allegato con il **file** di Text.txtmalware. Se viene ricevuto un segnale di phishing o di posta indesiderata per questi tipi di messaggi e il verdetto di filtro nel criterio di protezione da posta indesiderata è impostato per eseguire un'azione sul messaggio (Sposta nella posta indesiderata, Reindirizza, Elimina o Quarantena), ZAP per impostazione predefinita verrà impostata su "Sposta nella posta indesiderata".
+ZAP non metta in quarantena i [](atp-safe-attachments.md#dynamic-delivery-in-safe-attachments-policies) messaggi in corso di recapito dinamico nell'analisi degli allegati sicuri o in cui il filtro antimalware EOP ha già sostituito l'allegato con il **file** di Text.txtmalware. Se viene ricevuto un segnale di phishing o di posta indesiderata per questi tipi di messaggi e il verdetto filtro nei criteri di protezione da posta indesiderata è impostato per eseguire un'azione sul messaggio (sposta nella posta indesiderata, reindirizza, elimina o quarantena), ZAP per impostazione predefinita verrà impostata su un'azione "Sposta nella posta indesiderata".
 
 ## <a name="how-to-see-if-zap-moved-your-message"></a>Come verificare se ZAP ha spostato il messaggio
 
-Per determinare se ZAP ha spostato il messaggio, è possibile utilizzare il rapporto sullo stato di [Threat Protection](view-email-security-reports.md#threat-protection-status-report) o Esplora minacce (e rilevamenti in tempo [reale).](threat-explorer.md) Si noti che, come azione di sistema, ZAP non viene registrato nei registri di controllo delle cassette postali di Exchange.
+Per determinare se ZAP ha spostato il messaggio, è possibile utilizzare il rapporto sullo stato di [Protezione](view-email-security-reports.md#threat-protection-status-report) dalle minacce o Esplora minacce (e rilevamenti in tempo [reale).](threat-explorer.md) Si noti che, come azione di sistema, ZAP non viene registrato nei registri di controllo delle cassette postali di Exchange.
 
 ## <a name="zap-faq"></a>Domande frequenti su ZAP
 
@@ -108,6 +108,10 @@ ZAP prenderà un'azione su un messaggio in base alla configurazione dei criteri 
 ### <a name="what-if-im-using-safe-senders-mail-flow-rules-or-allowedblocked-sender-lists"></a>Cosa succede se si utilizzano mittenti attendibili, regole del flusso di posta o elenchi di mittenti consentiti/bloccati?
 
 I mittenti attendibili, le regole del flusso di posta o bloccano e consentono le impostazioni dell'organizzazione hanno la precedenza. Questi messaggi sono esclusi da ZAP perché il servizio sta eseguendo le operazioni configurate per l'operazione. Questo è un altro motivo per cui prestare attenzione alla configurazione dei messaggi per ignorare il filtro.
+
+### <a name="what-are-the-licensing-requirements-for-zap-to-work"></a>Quali sono i requisiti di licenza per il funzionamento di ZAP?
+
+Non esistono limitazioni per le licenze. ZAP funziona su tutte le cassette postali ospitate su Exchange Online. ZAP non funziona in ambienti Exchange Online Protection (EOP) autonomi che proteggono le cassette postali di Exchange locali.
 
 ### <a name="what-if-a-message-is-moved-to-another-folder-eg-inbox-rules"></a>Cosa succede se un messaggio viene spostato in un'altra cartella (ad esempio, regole posta in arrivo)?
 

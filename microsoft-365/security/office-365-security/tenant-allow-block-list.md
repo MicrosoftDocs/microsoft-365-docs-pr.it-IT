@@ -16,12 +16,12 @@ ms.collection:
 description: Gli amministratori possono imparare a configurare gli elementi consentiti e bloccati nell'elenco tenant consentiti/bloccati nel portale di sicurezza.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 960fbf26b610485fb46c935b04aedcc593b85752
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 20e460f4e93f7b87faaead8b87ba561224e38938
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50407251"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515209"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Gestire l'elenco di tenant consentiti/bloccati
 
@@ -38,50 +38,54 @@ ms.locfileid: "50407251"
 >
 > Non è possibile configurare **gli** elementi consentiti nell'elenco tenant consentiti/bloccati in questo momento.
 
-Nelle organizzazioni di Microsoft 365 con cassette postali in Exchange Online o nelle organizzazioni Exchange Online Protection (EOP) autonome senza cassette postali di Exchange Online, potrebbe non essere d'accordo con il verdetto filtro EOP. Ad esempio, un messaggio potrebbe essere contrassegnato come non positivo (falso positivo) o un messaggio non erto potrebbe essere consentito (un falso negativo).
+Nelle organizzazioni di Microsoft 365 con cassette postali in Exchange Online o nelle organizzazioni Exchange Online Protection (EOP) autonome senza cassette postali di Exchange Online, potrebbe non essere d'accordo con il verdetto del filtro EOP. Ad esempio, un messaggio potrebbe essere contrassegnato come non positivo (falso positivo) o un messaggio non erto potrebbe essere consentito (un falso negativo).
 
-L'elenco tenant consentiti/bloccati nel Centro sicurezza & conformità consente di ignorare manualmente i verdetti del filtro di Microsoft 365. L'elenco tenant consentiti/bloccati viene utilizzato durante il flusso di posta e al momento in cui l'utente fa clic. È possibile specificare URL o file da bloccare sempre.
+L'elenco tenant consentiti/bloccati nel Centro sicurezza & conformità consente di ignorare manualmente i verdetti del filtro di Microsoft 365. L'elenco tenant consentiti/bloccati viene utilizzato durante il flusso di posta e al momento dei clic dell'utente. È possibile specificare URL o file da bloccare sempre.
 
 In questo articolo viene descritto come configurare le voci nell'elenco Tenant consentiti/bloccati nel Centro sicurezza & conformità o in PowerShell (PowerShell di Exchange Online per le organizzazioni Di Microsoft 365 con cassette postali in Exchange Online; PowerShell EOP autonomo per le organizzazioni senza cassette postali di Exchange Online).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- Aprire il Centro sicurezza e conformità in <https://protection.office.com/>. Per passare direttamente alla pagina **Elenco tenant consentiti/bloccati,** utilizzare <https://protection.office.com/tenantAllowBlockList> .
+- Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla pagina **Elenco tenant consentiti/bloccati,** utilizzare <https://protection.office.com/tenantAllowBlockList> .
 
 - È possibile specificare i file utilizzando il valore hash SHA256 del file. Per trovare il valore hash SHA256 di un file in Windows, eseguire il comando seguente in un prompt dei comandi:
 
-  ```dos
+  ```console
   certutil.exe -hashfile "<Path>\<Filename>" SHA256
   ```
 
   Un valore di esempio è `768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3a` . I valori hash percettivi (pHash) non sono supportati.
 
-- I valori url disponibili sono descritti nella sintassi dell'URL per la sezione Tenant [Allow/Block List](#url-syntax-for-the-tenant-allowblock-list) più avanti in questo articolo.
+- I valori url disponibili sono descritti nella sintassi dell'URL per la sezione [Tenant Allow/Block List](#url-syntax-for-the-tenant-allowblock-list) più avanti in questo articolo.
 
 - L'elenco tenant consentiti/bloccati consente un massimo di 500 voci per gli URL e 500 voci per gli hash dei file.
 
-- Una voce deve essere attiva entro 15 minuti.
+- Il numero massimo di caratteri per ogni voce è:
+  - Hash dei file = 64
+  - URL = 250
+
+- Una voce deve essere attiva entro 30 minuti.
 
 - Per impostazione predefinita, le voci nell'elenco tenant consentite/bloccate scadranno dopo 30 giorni. È possibile specificare una data o impostarla in modo che non scada mai.
 
 - Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell). Per connettersi a PowerShell di EOP autonomo, vedere [Connettersi a PowerShell per Exchange Online Protection](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell).
 
-- Per eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni in **Exchange Online:**
+- Prima di eseguire le procedure descritte in questo articolo, occorre disporre delle autorizzazioni in **Exchange Online**:
   - Per aggiungere e rimuovere valori dall'elenco tenant consentiti/bloccati, è necessario essere membri dei gruppi di ruoli Gestione organizzazione o **Amministratore** sicurezza. 
   - Per l'accesso in sola lettura all'elenco tenant consentiti/bloccati,  è necessario essere membri dei gruppi di ruoli Lettore globale o Lettore di sicurezza. 
 
-  Per ulteriori informazioni, vedere [Autorizzazioni in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
+  Per altre informazioni, vedere [Autorizzazioni in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo).
 
-  **Note**:
-
-  - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 offre agli utenti le autorizzazioni e le autorizzazioni necessarie per altre funzionalità di Microsoft 365.  Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
-  - Anche il gruppo di ruoli di **Gestione organizzazione sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre inoltre l'accesso di sola lettura a tale funzionalità.
+  > [!NOTE]
+  > 
+  > - L'aggiunta di utenti al ruolo di Azure Active Directory corrispondente nell'interfaccia di amministrazione di Microsoft 365 fornisce agli utenti le autorizzazioni necessarie _e_ le autorizzazioni per altre funzionalità di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
+  > - Anche il gruppo di ruoli di **Gestione organizzazione sola visualizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups) offre inoltre l'accesso di sola lettura a tale funzionalità.
 
 ## <a name="use-the-security--compliance-center-to-create-url-entries-in-the-tenant-allowblock-list"></a>Usare il Centro sicurezza & conformità per creare voci URL nell'elenco tenant consentiti/bloccati
 
 Per informazioni dettagliate sulla sintassi per le voci URL, vedere la sintassi dell'URL per la sezione Tenant [Allow/Block List](#url-syntax-for-the-tenant-allowblock-list) più avanti in questo articolo.
 
-1. Nel Centro sicurezza e & conformità passare **a** Elenchi di \>  \> **blocco/consentiti** tenant dei criteri di gestione delle minacce.
+1. Nel Centro sicurezza & conformità passare **a** Elenchi di \>  \> **blocco/consenti** tenant dei criteri di gestione delle minacce.
 
 2. Nella pagina **Elenco indirizzi consentiti/blocca tenant** verificare che la scheda **URL** sia selezionata e quindi fare clic su **Blocca**
 
@@ -91,9 +95,9 @@ Per informazioni dettagliate sulla sintassi per le voci URL, vedere la sintassi 
 
    - **Nessuna scadenza:** eseguire una delle operazioni seguenti:
 
-     - Verificare che l'impostazione sia disattivata ( Interruttore disattivato ) e utilizzare la casella Scadenza per specificare la data di ![ ](../../media/scc-toggle-off.png) scadenza per le voci. 
+     - Verificare che l'impostazione sia disattivata ( Attiva/Disattiva ) e utilizzare la casella Scadenza per specificare la data di ![ ](../../media/scc-toggle-off.png) scadenza per le voci. 
 
-     oppure
+       oppure
 
      - Spostare l'interruttore a destra per configurare le voci in modo che non scadono mai: ![Attiva](../../media/scc-toggle-on.png).
 
@@ -103,17 +107,17 @@ Per informazioni dettagliate sulla sintassi per le voci URL, vedere la sintassi 
 
 ## <a name="use-the-security--compliance-center-to-create-file-entries-in-the-tenant-allowblock-list"></a>Usare il Centro sicurezza & conformità per creare voci di file nell'elenco tenant consentiti/bloccati
 
-1. Nel Centro sicurezza e & conformità passare **a** Elenchi di \>  \> **blocco/consentiti** tenant dei criteri di gestione delle minacce.
+1. Nel Centro sicurezza & conformità passare **a** Elenchi di \>  \> **blocco/consenti** tenant dei criteri di gestione delle minacce.
 
 2. Nella pagina **Elenco tenant consentiti/blocca** selezionare la **scheda File** e quindi fare clic su **Blocca.**
 
-3. Nel riquadro **a comparsa Aggiungi file da** bloccare, configurare le impostazioni seguenti:
+3. Nel riquadro **a comparsa Aggiungi file** da bloccare, configurare le impostazioni seguenti:
 
    - **Aggiungere hash di file:** immettere un valore hash SHA256 per riga, fino a un massimo di 20.
 
    - **Nessuna scadenza:** eseguire una delle operazioni seguenti:
 
-     - Verificare che l'impostazione sia disattivata ( Interruttore disattivato ) e utilizzare la casella Scadenza per specificare la data di ![ ](../../media/scc-toggle-off.png) scadenza per le voci. 
+     - Verificare che l'impostazione sia disattivata ( Attiva/Disattiva ) e utilizzare la casella Scadenza per specificare la data di ![ ](../../media/scc-toggle-off.png) scadenza per le voci. 
 
      oppure
 
@@ -125,11 +129,11 @@ Per informazioni dettagliate sulla sintassi per le voci URL, vedere la sintassi 
 
 ## <a name="use-the-security--compliance-center-to-view-entries-in-the-tenant-allowblock-list"></a>Usare il Centro sicurezza & conformità per visualizzare le voci nell'elenco tenant consentiti/bloccati
 
-1. Nel Centro sicurezza e & conformità passare **a** Elenchi di \>  \> **blocco/consentiti** tenant dei criteri di gestione delle minacce.
+1. Nel Centro sicurezza & conformità passare **a** Elenchi di \>  \> **blocco/consenti** tenant dei criteri di gestione delle minacce.
 
 2. Selezionare la **scheda URL** o **File.**
 
-Fare clic sulle intestazioni di colonna seguenti per eseguire l'ordinamento crescente o decrescente:
+Fare clic sulle intestazioni di colonna seguenti per ordinare in ordine crescente o decrescente:
 
 - **Valore**: l'URL o l'hash del file.
 - **Data ultimo aggiornamento**
@@ -140,7 +144,7 @@ Fare **clic su** Cerca, immettere tutto o parte di un valore e quindi premere IN
 
 Fare **clic su Filtro.** Nel riquadro **a** comparsa Filtro visualizzato configurare una delle impostazioni seguenti:
 
-- **Non scadere**: seleziona Disattivato: ![ Attiva o ](../../media/scc-toggle-off.png) disattiva: ![ Attiva/Disattiva. ](../../media/scc-toggle-on.png)
+- **Non scadere**: seleziona Disattivato: ![ Attiva o ](../../media/scc-toggle-off.png) disattiva: ![ Attiva/ ](../../media/scc-toggle-on.png) Disattiva.
 
 - **Last updated**: Select a start date (**From**), an end date (**To**) or both.
 
@@ -154,29 +158,29 @@ Per cancellare i filtri esistenti,  fare clic **su Filtro** e nel riquadro a com
 
 Non è possibile modificare l'URL o i valori di file bloccati esistenti all'interno di una voce. Per modificare questi valori, è necessario eliminare e ricreare la voce.
 
-1. Nel Centro sicurezza e & conformità passare **a** Elenchi di \>  \> **blocco/consentiti** tenant dei criteri di gestione delle minacce.
+1. Nel Centro sicurezza & conformità passare **a** Elenchi di \>  \> **blocco/consenti** tenant dei criteri di gestione delle minacce.
 
 2. Selezionare la **scheda URL** o **File.**
 
-3. Selezionare la voce di blocco che si desidera modificare e quindi fare clic **sull'icona** ![ ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) Modifica.
+3. Selezionare la voce di blocco che si desidera modificare e quindi fare clic **sull'icona Modifica** ![ ](../../media/0cfcb590-dc51-4b4f-9276-bb2ce300d87e.png) modifica.
 
 4. Nel riquadro a comparsa visualizzato configurare le impostazioni seguenti:
 
    - **Nessuna scadenza:** eseguire una delle operazioni seguenti:
 
-     - Verificare che l'impostazione sia disattivata ( Interruttore disattivato ) e utilizzare la casella Scadenza per specificare la ![ data di scadenza per la ](../../media/scc-toggle-off.png) voce. 
+     - Verificare che l'impostazione sia disattivata ( Attiva/Disattiva ) e utilizzare la casella Scadenza per specificare la data di ![ ](../../media/scc-toggle-off.png) scadenza della voce. 
 
-     oppure
+       oppure
 
      - Spostare l'interruttore a destra per configurare la voce in modo che non scada mai: ![Attiva](../../media/scc-toggle-on.png).
 
    - **Nota facoltativa:** immettere un testo descrittivo per la voce.
 
-5. Al termine, fare clic su **Salva**.
+5. Al termine, scegliere **Salva**.
 
 ## <a name="use-the-security--compliance-center-to-remove-block-entries-from-the-tenant-allowblock-list"></a>Usare il Centro sicurezza & conformità per rimuovere le voci di blocco dall'elenco tenant consentiti/bloccati
 
-1. Nel Centro sicurezza e & conformità passare **a** Elenchi di \>  \> **blocco/consentiti** tenant dei criteri di gestione delle minacce.
+1. Nel Centro sicurezza & conformità passare **a** Elenchi di \>  \> **blocco/consenti** tenant dei criteri di gestione delle minacce.
 
 2. Selezionare la **scheda URL** o **File.**
 
@@ -197,13 +201,13 @@ New-TenantAllowBlockListItems -ListType <Url | FileHash> -Block -Entries <String
 In questo esempio viene aggiunta una voce URL di blocco per contoso.com e tutti i sottodomini ,ad esempio contoso.com, www.contoso.com e xyz.abc.contoso.com). Poiché non sono stati utilizzati i parametri ExpirationDate o NoExpiration, la voce scade dopo 30 giorni.
 
 ```powershell
-New-TenantAllowBlockListItem -ListType Url -Block -Entries ~contoso.com
+New-TenantAllowBlockListItems -ListType Url -Block -Entries ~contoso.com
 ```
 
 In questo esempio viene aggiunta una voce di blocco per i file specificati che non scadono mai.
 
 ```powershell
-New-TenantAllowBlockListItem -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
+New-TenantAllowBlockListItems -ListType FileHash -Block -Entries "768a813668695ef2483b2bde7cf5d1b2db0423a0d3e63e498f3ab6f2eb13ea3","2c0a35409ff0873cfa28b70b8224e9aca2362241c1f0ed6f622fef8d4722fd9a" -NoExpiration
 ```
 
 Per informazioni dettagliate sulla sintassi e sui parametri, vedere [New-TenantAllowBlockListItems.](https://docs.microsoft.com/powershell/module/exchange/new-tenantallowblocklistitems)
@@ -317,7 +321,7 @@ Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Remove-Tena
 
 ### <a name="url-entry-scenarios"></a>Scenari di immissione url
 
-Le voci url valide e i relativi risultati sono descritti nelle sezioni seguenti.
+Le voci URL valide e i relativi risultati sono descritti nelle sezioni seguenti.
 
 #### <a name="scenario-no-wildcards"></a>Scenario: nessun carattere jolly
 

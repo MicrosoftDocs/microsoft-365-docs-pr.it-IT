@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: cd06286083297d0930270868b99a14f8ddb2f4b2
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 31a2f647351c05842f36198ad05b149086b53b1f
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461668"
+ms.locfileid: "50509303"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Schema ricerca avanzata - Modifiche alla denominazione
 
@@ -76,7 +76,7 @@ Le modifiche di denominazione vengono applicate automaticamente alle query salva
 
 ## <a name="february-2021"></a>Febbraio 2021
 
-1. Nelle tabelle [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) e [EmailEvents,](advanced-hunting-emailevents-table.md) le colonne e le colonne sono state deprecate e sostituite `MalwareFilterVerdict` con la `PhishFilterVerdict` `ThreatTypes` colonna. Le colonne e le colonne `MalwareDetectionMethod` sono state `PhishDetectionMethod` deprecate e sostituite con la `DetectionMethods` colonna. Questa snellizione consente di fornire ulteriori informazioni nelle nuove colonne. Il mapping viene fornito di seguito.
+1. Nelle tabelle [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) e [EmailEvents](advanced-hunting-emailevents-table.md) le colonne e le colonne sono `MalwareFilterVerdict` state `PhishFilterVerdict` sostituite dalla `ThreatTypes` colonna. Anche `MalwareDetectionMethod` le colonne e le colonne sono state `PhishDetectionMethod` sostituite dalla `DetectionMethods` colonna. Questa snellizione consente di fornire ulteriori informazioni nelle nuove colonne. Il mapping viene fornito di seguito.
 
 | Nome della tabella | Nome colonna originale | Nome nuova colonna | Motivo della modifica
 |--|--|--|--|
@@ -86,11 +86,11 @@ Le modifiche di denominazione vengono applicate automaticamente alle query salva
 | `EmailEvents` | `MalwareFilterVerdict` <br>`PhishFilterVerdict` | `ThreatTypes` | Includere altri tipi di minaccia |
 
 
-2. Nelle tabelle `EmailAttachmentInfo` e nelle tabelle è stata aggiunta la colonna per fornire ulteriori informazioni sulla minaccia di posta `EmailEvents` `ThreatNames` elettronica. Questa colonna contiene valori come Posta indesiderata o Phish.
+2. Nelle tabelle `EmailAttachmentInfo` e `EmailEvents` nelle tabelle, la colonna è stata `ThreatNames` aggiunta per fornire ulteriori informazioni sulla minaccia di posta elettronica. Questa colonna contiene valori come Posta indesiderata o Phish.
 
-3. Nella tabella [DeviceInfo](advanced-hunting-deviceinfo-table.md) abbiamo sostituito la `DeviceObjectId` colonna con in base al feedback dei `AadDeviceId` clienti.
+3. Nella tabella [DeviceInfo](advanced-hunting-deviceinfo-table.md) la colonna è stata sostituita dalla colonna in base `DeviceObjectId` al feedback dei `AadDeviceId` clienti.
 
-4. Nella tabella [DeviceEvents](advanced-hunting-deviceevents-table.md) sono stati aggiornati diversi nomi ActionType per riflettere meglio la descrizione dell'azione. I dettagli sono disponibili di seguito.
+4. Nella tabella [DeviceEvents](advanced-hunting-deviceevents-table.md) sono stati modificati diversi nomi ActionType per riflettere meglio la descrizione dell'azione. I dettagli delle modifiche sono disponibili di seguito.
 
 | Nome della tabella | Nome ActionType originale | Nuovo nome ActionType | Motivo della modifica
 |--|--|--|--|

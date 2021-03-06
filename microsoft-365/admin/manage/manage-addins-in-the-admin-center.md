@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Informazioni sull'uso dei componenti aggiuntivi centralizzati per distribuire i componenti aggiuntivi a utenti e gruppi dell'organizzazione.
-ms.openlocfilehash: 5366bd5be80559f23490aeb54f9417a189169e12
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: b888c0f329e3f1f36f5aa566df7efbab07cd1f5f
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114202"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509135"
 ---
 # <a name="manage-add-ins-in-the-admin-center"></a>Gestire i componenti aggiuntivi nell'interfaccia di amministrazione
 
@@ -61,7 +61,7 @@ Un componente aggiuntivo può essere nello stato **Attivo** **o Disattivato.**
 1. Nell'interfaccia di amministrazione passare **alla** pagina Servizi & componenti  >  **aggiuntivi.**
 
      > [!NOTE]
-    > L'interfaccia di amministrazione viene aggiornata all'esperienza di distribuzione con le app integrate. Se i passaggi precedenti non sono visualizzati, passare alla sezione Distribuzione centralizzata andando su **Impostazioni**  >  **app integrate.** Nella parte superiore della **pagina App integrate** scegliere Componenti **aggiuntivi.**
+    > L'interfaccia di amministrazione viene aggiornata all'esperienza di distribuzione con le app integrate. Se non vedi i passaggi precedenti, vai alla sezione Distribuzione centralizzata andando su **Impostazioni**  >  **app integrate.** Nella parte superiore della **pagina App integrate** scegliere Componenti **aggiuntivi.**
 
 2. Selezionare il componente aggiuntivo distribuito.
 
@@ -76,7 +76,7 @@ Dopo la distribuzione, gli amministratori possono anche gestire l'accesso degli 
 1. Nell'interfaccia di amministrazione passare **alla** pagina Servizi & componenti  >  **aggiuntivi.**
 
      > [!NOTE]
-    > L'interfaccia di amministrazione viene aggiornata all'esperienza di distribuzione con le app integrate. Se i passaggi precedenti non sono visualizzati, passare alla sezione Distribuzione centralizzata andando su **Impostazioni**  >  **app integrate.** Nella parte superiore della **pagina App integrate** scegliere Componenti **aggiuntivi.**
+    > L'interfaccia di amministrazione viene aggiornata all'esperienza di distribuzione con le app integrate. Se non vedi i passaggi precedenti, vai alla sezione Distribuzione centralizzata andando su **Impostazioni**  >  **app integrate.** Nella parte superiore della **pagina App integrate** scegliere Componenti **aggiuntivi.**
 
 2. Selezionare il componente aggiuntivo distribuito.
 
@@ -96,7 +96,7 @@ In quanto organizzazione, è possibile impedire il download di nuovi componenti 
 1. Nell'interfaccia di amministrazione passare a **Impostazioni** \> [Servizi &amp; componenti aggiuntivi](https://go.microsoft.com/fwlink/p/?linkid=2053743).
 
      > [!NOTE]
-    > L'interfaccia di amministrazione viene aggiornata all'esperienza di distribuzione con le app integrate. Se i passaggi precedenti non sono visualizzati, passare alla sezione Distribuzione centralizzata andando su **Impostazioni**  >  **app integrate.** Nella parte superiore della **pagina App integrate** scegliere Componenti **aggiuntivi.**
+    > L'interfaccia di amministrazione viene aggiornata all'esperienza di distribuzione con le app integrate. Se non vedi i passaggi precedenti, vai alla sezione Distribuzione centralizzata andando su **Impostazioni**  >  **app integrate.** Nella parte superiore della **pagina App integrate** scegliere Componenti **aggiuntivi.**
     
 3. Selezionare **App e servizi di proprietà dell'utente.**
     
@@ -117,7 +117,7 @@ Questo impedirà a tutti gli utenti di acquisire i componenti aggiuntivi seguent
     
 - Componenti aggiuntivi in Microsoft 365
     
-Un utente che tenta di accedere all'archivio visualizza il messaggio seguente: **Spiacenti, Microsoft 365** è stato configurato per impedire l'acquisizione individuale di componenti aggiuntivi di Office Store.
+Un utente che tenta di accedere all'archivio visualizza il messaggio seguente: Microsoft **365** è stato configurato per impedire l'acquisizione individuale di componenti aggiuntivi di Office Store.
   
 Il supporto per la disattivazione di Office Store è disponibile nelle versioni seguenti:
   
@@ -131,7 +131,7 @@ Il supporto per la disattivazione di Office Store è disponibile nelle versioni 
     
 Ciò non impedisce a un amministratore di utilizzare la distribuzione centralizzata per assegnare un componente aggiuntivo da Office Store.
   
-Per impedire a un utente di accedere con un account Microsoft, è possibile limitare l'accesso all'uso solo dell'account dell'organizzazione. Per ulteriori informazioni, vedere [Identità, autenticazione e autorizzazione in Office 2016.](https://technet.microsoft.com/library/jj683102%28v=office.16%29.aspx)  
+Per impedire a un utente di accedere con un account Microsoft, è possibile limitare l'accesso in modo che utilizzi solo l'account dell'organizzazione. Per ulteriori informazioni, vedere [Identità, autenticazione e autorizzazione in Office 2016.](https://technet.microsoft.com/library/jj683102%28v=office.16%29.aspx)  
 
 > [!NOTE]
 > Se si impedisce agli utenti di accedere all'Office Store, non sarà possibile eseguire il sideload dei componenti aggiuntivi [di Office per i test.](https://docs.microsoft.com/office/dev/add-ins/testing/create-a-network-shared-folder-catalog-for-task-pane-and-content-add-ins)
@@ -166,7 +166,7 @@ Se il componente aggiuntivo distribuito non supporta i comandi dei componenti ag
 
 Altre informazioni sulla creazione e sulla compilazione dei [componenti aggiuntivi per Office](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins).
   
-[Utilizzare i cmdlet di PowerShell per la distribuzione centralizzata per gestire i componenti aggiuntivi.](https://docs.microsoft.com/office365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins)
+[Utilizzare i cmdlet di PowerShell per la distribuzione centralizzata per gestire i componenti aggiuntivi.](https://docs.microsoft.com/microsoft-365/enterprise/use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins)
   
 [Risoluzione dei problemi: i componenti aggiuntivi non vengono visualizzati dall'utente](https://docs.microsoft.com/office365/troubleshoot/access-management/user-not-seeing-add-ins)
 
