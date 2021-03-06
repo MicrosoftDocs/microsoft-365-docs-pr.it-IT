@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Monitorare e gestire lo smaltimento del contenuto, sia che si utilizzi una revisione per l'eliminazione o che il contenuto venga eliminato automaticamente in base alle impostazioni configurate.
-ms.openlocfilehash: 9c2e9055d0468270df4e46fe39115708762052f3
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: 092067e676c1cbae3fae6e9d6a5ff77099ce4631
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682669"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461881"
 ---
 # <a name="disposition-of-content"></a>Eliminazione del contenuto
 
@@ -52,15 +52,13 @@ Verificare che il controllo sia abilitato almeno un giorno prima della prima azi
 
 ## <a name="disposition-reviews"></a>Revisioni per l'eliminazione
 
-Quando il contenuto raggiunge la fine del periodo di conservazione, ci possono essere diversi motivi per cui è consigliabile esaminare il contenuto prima di decidere se possa essere eliminato senza problemi ("disposto"). Ad esempio, potrebbe essere necessario:
+Quando un contenuto raggiunge la fine del periodo di conservazione, ci sono diversi motivi per cui si può scegliere di esaminare il contenuto prima di decidere se eliminarlo definitivamente ("eliminato"). Ad esempio, invece di eliminare il contenuto può essere necessario:
   
 - Sospendere l'eliminazione del contenuto pertinente in caso di controversie legali o di un controllo.
-    
-- Rimuovere il contenuto dall'elenco di eliminazioni per archiviarlo, se tale contenuto ha un valore storico o di ricerca.
-    
+
 - Assegnare un periodo di conservazione diverso al contenuto, perché ad esempio le impostazioni di conservazione originali erano una soluzione temporanea o provvisoria.
-    
-- Restituire il contenuto ai clienti o trasferirlo a un'altra organizzazione.
+
+- Spostare il contenuto dalla posizione esistente a una posizione di archiviazione, ad esempio se il contenuto ha un valore storico o di ricerca.
 
 Quando viene attivata una revisione per l'eliminazione alla fine del periodo di conservazione:
   

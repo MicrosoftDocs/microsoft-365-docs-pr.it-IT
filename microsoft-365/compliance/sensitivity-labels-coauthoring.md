@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Attivare l'impostazione che consente la creazione condivisa e il salvataggio automatico dei documenti etichettati e crittografati nelle app desktop in SharePoint e OneDrive.
-ms.openlocfilehash: 3946fa5a08011cc98e8dfad921a08ca0fa77af7a
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: d26696530ed86e6608b6473fead0775fb07a060b
+ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423863"
+ms.locfileid: "50454637"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Abilitare la creazione condivisa di file crittografati con etichette di riservatezza
 
@@ -37,12 +37,14 @@ Se questa impostazione non è abilitata per il tenant, quando gli utenti usano l
 
 Inoltre, l'abilitazione di questa funzionalità comporta il supporto della funzionalità di [salvataggio automatico](https://support.office.com/article/what-is-autosave-6d6bd723-ebfd-4e40-b5f6-ae6e8088f7a5) per i file etichettati e crittografati.
 
+Per leggere l'annuncio sul rilascio, vedere il post di blog [Annuncio della creazione condivisa su documenti crittografati con Microsoft Information Protection e aggiornamenti delle etichette](https://techcommunity.microsoft.com/t5/microsoft-security-and/announcing-co-authoring-on-microsoft-information-protection/ba-p/2164162).
+
 ## <a name="metadata-changes-for-sensitivity-labels"></a>Modifiche ai metadati delle etichette di riservatezza
 
 > [!IMPORTANT]
 > Dopo aver abilitato l'impostazione per la creazione condivisa, le informazioni di etichettatura per i file non crittografati non vengono più salvate nelle proprietà personalizzate.
 > 
-> Non abilitare questa impostazione se nell’organizzazione sono presenti app, servizi, script o strumenti che leggono o scrivono i metadati delle etichette nella posizione precedente.
+> Non abilitare questa impostazione se si usano app, servizi, script o strumenti che leggono o scrivono i metadati delle etichette nella posizione precedente.
 
 Prima di abilitare l'impostazione per supportare la creazione condivisa per le app desktop di Office, è importante tenere presente che questa azione apporta modifiche ai metadati delle etichette salvati e letti dai file di Office.
 
@@ -80,16 +82,16 @@ Prima di attivare questa funzionalità, assicurarsi di aver compreso i seguenti 
 
 - Le etichette di riservatezza devono essere [abilitate per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) per il tenant. Se questa funzionalità non è già stata abilitata, quando si seleziona l'impostazione per attivare la creazione condivisa per i file con etichette di riservatezza, questa verrà abilitata automaticamente.
 
-- Tutte le app, i servizi e gli strumenti operativi del tenant devono supportare la nuova [etichettature dei metadati](#metadata-changes-for-sensitivity-labels):
+- Microsoft 365 Apps for enterprise:
+    - **Windows**: [Canale corrente (Anteprima)](https://office.com/insider) con build minima 16.0.13801.20182 o [Canale beta](https://office.com/insider) con build minima 16.0.13819.20006
+    - **macOS**: [Canale beta](https://office.com/insider) con build minima 16.47.218.0
+    - **iOS**: non ancora supportato
+    - **Android**: non ancora supportato
+
+- Tutte le app, i servizi e gli strumenti operativi del tenant devono supportare la nuova [etichettatura dei metadati](#metadata-changes-for-sensitivity-labels). Se si usa una delle opzioni seguenti, verificare le versioni minime richieste:
     
-    - **Microsoft 365 Apps for enterprise**
-        - Windows: [Canale corrente (Anteprima)](https://office.com/insider) con build minima 16.0.13801.20182 o [Canale beta](https://office.com/insider) con build minima 16.0.13819.20006
-        - macOS: [Canale beta](https://office.com/insider) con build minima 16.47.218.0
-        - iOS: non ancora supportato
-        - Android: non ancora supportato
-    
-    - **Client di etichettatura unificata e scanner di Azure Information Protection** 
-        - Una versione di anteprima pubblica (nome dell’installazione di AzInfoProtection_2.10.46_CoAuthoring_PublicPreview.exe) che è possibile installare dall'[Area download Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018) e da una delle versioni delle app di Microsoft 365 Apps for enterprise per Windows elencate nell'elemento precedente.
+    - **Client di etichettatura unificata e scanner di Azure Information Protection:**
+        - Versione di anteprima pubblica (nome di installazione di AzInfoProtection_2.10.46_CoAuthoring_PublicPreview.exe) che è possibile installare dall'[Area download Microsoft](https://www.microsoft.com/en-us/download/details.aspx?id=53018)
     
     - **App di sincronizzazione OneDrive per Windows o macOS:**
         - Versione minima di 19.002.0121.0008
@@ -144,9 +146,9 @@ Durante l'anteprima è necessario usare un URL specifico per accedere a questa i
 
 1. Accedere al Centro conformità Microsoft 365 come amministratore globale per il tenant di test tramite il collegamento seguente:
     
-    ````
+    ```http
     https://compliance.microsoft.com/co-authoring_for_files_with_sensitivity_labels
-    ````
+    ```
     Questo collegamento consente di accedere direttamente all'impostazione del tenant **Creazione condivisa per i file con etichette di riservatezza**.
 
     > [!IMPORTANT]
