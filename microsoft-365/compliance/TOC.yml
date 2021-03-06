@@ -158,6 +158,8 @@
           href: sensitivity-labels-sharepoint-onedrive-files.md
         - name: Gestire le etichette di riservatezza nelle app di Office
           href: sensitivity-labels-office-apps.md
+        - name: Abilitare la creazione condivisa di documenti crittografati con etichette di riservatezza (anteprima)
+          href: sensitivity-labels-coauthoring.md
     - name: Crittografia
       items:
         - name: Comprendere la crittografia
