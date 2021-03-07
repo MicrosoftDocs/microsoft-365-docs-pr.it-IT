@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-jun2020
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: Come configurare Teams per una maggiore sicurezza della condivisione dei file con tre livelli di protezione, in modo da bilanciare la sicurezza con la facilità di collaborazione.
-ms.openlocfilehash: cb49c35cc1c485d45656b1716d385cf626322ce8
-ms.sourcegitcommit: 1beaf89d2faa32f11fe1613be2fa2b31c4bc4a91
+ms.openlocfilehash: d41effb6db9f8995c3c878523babf200ab9af762
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "49602008"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509243"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Configurare Teams con tre livelli di protezione
 
@@ -114,6 +114,8 @@ Vedere i riferimenti seguenti per creare un ambiente di condivisione guest sicur
 ## <a name="access-from-unmanaged-devices"></a>Accesso da dispositivi non gestiti
 
 Per i livelli dei dati sensibili e altamente sensibili, l'accesso al contenuto di SharePoint viene limitato mediante l'applicazione di etichette di riservatezza. L'accesso condizionale di Azure Active Directory offre numerose opzioni per determinare il modo in cui gli utenti accedono a Microsoft 365, incluse limitazioni basate su luogo, rischio, conformità dei dispositivi e altri fattori. Si consiglia di leggere l'articolo [Informazioni sull'accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) e valutare quali altri criteri potrebbero essere appropriati per l'organizzazione.
+
+Si noti che gli utenti guest spesso non hanno dispositivi gestiti dall'organizzazione. Se si consentono gli utenti guest in uno qualsiasi dei livelli, considerare i tipi di dispositivi che useranno per accedere ai team e ai siti e impostare i criteri per i dispositivi non gestiti di conseguenza.
 
 ## <a name="next-step"></a>Passaggio successivo
 

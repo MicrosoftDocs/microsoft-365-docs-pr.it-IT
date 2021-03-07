@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Informazioni sull'elaborazione di moduli in Microsoft SharePoint Syntex
-ms.openlocfilehash: 4a6ecc9e6eaca6f0b61f8c04b67eabb29674f6bd
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 1dba8828a158a5163017ee5f37735f44e974274c
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242447"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515161"
 ---
 # <a name="form-processing-overview"></a>Panoramica dell'elaborazione di moduli
 
@@ -45,6 +45,13 @@ Gli amministratori di Office 365 devono [abilitare l'elaborazione del modulo](ht
 ### <a name="file-limitations"></a>Limitazioni relative ai file
 
 Quando si usano modelli di elaborazione dei moduli, assicurarsi di prendere nota dei [requisiti e delle limitazioni per l'utilizzo dei file](https://docs.microsoft.com/ai-builder/form-processing-model-requirements).
+
+### <a name="multi-geo-environments"></a>Ambienti multi-geografici
+
+Quando si configura SharePoint Syntex in un [ambiente Microsoft 365 Multi-Geo](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo), è possibile configurarlo solo per usare l'elaborazione dei moduli nella posizione centrale. Se si vuole usare l'elaborazione dei moduli in una località satellitare, contattare il supporto Microsoft.
+
+
+
 
 
 

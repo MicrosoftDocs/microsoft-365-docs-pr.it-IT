@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Informazioni su come creare un centro contenuti.
-ms.openlocfilehash: 4377cbfbda8572fe9e08a079a05146961105298b
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: 3544bbef7cf2f898733c7aaad620487098a2dd24
+ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976532"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "50515137"
 ---
 # <a name="create-a-content-center-in-microsoft-sharepoint-syntex"></a>Creare un centro contenuti in Microsoft SharePoint Syntex
 
@@ -35,18 +35,27 @@ Per creare e gestire i modelli di analisi del documento, è necessario prima di 
 È possibile creare un centro contenuti predefinito durante la [configurazione](set-up-content-understanding.md). Ma un amministratore di SharePoint può anche scegliere di creare altri centri, se necessario. Anche se un singolo centro contenuti può essere utile per gli ambienti in cui si vuole eseguire un rollup di tutte le attività del modello, è consigliabile avere altri centri per più reparti all'interno dell'organizzazione, che possono avere esigenze e requisiti di autorizzazione diversi per i propri modelli.
 
 > [!NOTE]
-> Un amministratore di SharePoint può creare un sito del centro contenuti come [creerebbe qualsiasi altro sito di SharePoint](https://docs.microsoft.com/sharepoint/create-site-collection) tramite il pannello di provisioning del sito dell'interfaccia di amministrazione.
+> In un [ambiente Microsoft 365 Multi-Geo](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo) se si ha un unico centro contenuti predefinito nella posizione centrale, è possibile fornire un roll-up dell'attività del modello solo dall'interno di tale posizione. Attualmente non è possibile ottenere un roll-up dell'attività del modello attraverso i limiti della farm nell'ambiente multi-geografico. 
+
+
+## <a name="create-a-content-center"></a>Creare un centro contenuti
+
+Un amministratore di SharePoint può creare un sito del centro contenuti come [creerebbe qualsiasi altro sito di SharePoint](https://docs.microsoft.com/sharepoint/create-site-collection) tramite il pannello di provisioning del sito dell'interfaccia di amministrazione.
 
 Per creare un nuovo centro contenuti:
 
 1. Nell'interfaccia di amministrazione di Microsoft 365, passare all’interfaccia di amministrazione di SharePoint.
+
 2. Nella interfaccia di amministrazione di SharePoint selezionare **Siti attivi** in **Siti**.
+
 3. Nella pagina **Siti attivi** fare clic su **Creare** e quindi selezionare **Altre opzioni**.
+
 4. Nel menu **Scegliere un modello**, selezionare **Centro contenuti**.
+
 5. Per il nuovo sito, fornire un **nome del sito**, un **amministratore principale** e una **lingua**.</br>
 
-> [!NOTE] 
-> È possibile selezionare un sito del centro contenuti per il rendering in una qualsiasi delle lingue disponibili, ma si noti che attualmente i modelli possono essere creati solo per i file in inglese. Si noti anche che, come altri modelli di sito, la lingua del sito predefinita non è modificabile dopo la creazione del sito.</br>
+   > [!NOTE] 
+   > È possibile selezionare un sito del centro contenuti per il rendering in una qualsiasi delle lingue disponibili, ma si noti che attualmente i modelli possono essere creati solo per i file in inglese. Si noti anche che, come altri modelli di sito, la lingua del sito predefinita non è modificabile dopo la creazione del sito.</br>
 
 6. Selezionare **Completato**.
  
