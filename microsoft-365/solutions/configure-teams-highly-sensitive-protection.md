@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Come distribuire team con la protezione dei dati altamente sensibili.
-ms.openlocfilehash: 2679a8a0bd8cf5cc3d35d517e8a44921fc4fdbc1
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 7e746ebc81d1ccd9aea2953fd42004715f8d7819
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921135"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509267"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Configurare team con la protezione dei dati altamente sensibili
 
@@ -79,7 +79,7 @@ Per creare un'etichetta di riservatezza
 17. Fare clic su **Avanti**.
 18. Nella pagina **Definire le impostazioni di condivisione esterna e di accesso del dispositivo**, selezionare **Controllare la condivisione esterna da siti SharePoint con etichetta**.
 19. In **Il contenuto può essere condiviso con**, scegliere **Utenti ospiti nuovi ed esistenti** se si sta consentendo l'accesso a utenti guest o **Solo persone nell'organizzazione** in caso contrario.
-20. In **Accesso da dispositivi non gestiti** scegliere **Blocca accesso**.
+20. In **Accesso da dispositivi non gestiti** scegliere **Blocca accesso**. Se si consente l'accesso guest e questi non hanno dispositivi gestiti, è possibile scegliere **Consenti l’accesso limitato, solo sul Web**.
 21. Fare clic su **Avanti**.
 22. Nella pagina **Applicazione automatica di etichette per le colonne del database**, fare clic su **Avanti**.
 23. Fare clic su **Crea etichetta**, quindi su **Fine**.

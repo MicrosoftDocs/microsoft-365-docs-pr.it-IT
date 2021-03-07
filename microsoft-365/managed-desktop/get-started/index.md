@@ -6,12 +6,12 @@ ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 02f12174ef3b8a55f9642bba41c845952b1c1c48
-ms.sourcegitcommit: dffb9b72acd2e0bd286ff7e79c251e7ec6e8ecae
+ms.openlocfilehash: 141eb16ae77c44c51358c07a74f5050eb07dc26f
+ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "47950545"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50509279"
 ---
 # <a name="get-started-with-microsoft-managed-desktop"></a>Guida introduttiva a Microsoft Managed Desktop
 
@@ -21,7 +21,7 @@ Ora che è stata eseguita la registrazione al servizio, seguire questa procedura
 > Questo è l'ordine consigliato da seguire, ma la sequenza può essere flessibile.
 
 1. [Aggiungere e verificare i contatti degli amministratori nel portale di amministrazione](add-admin-contacts.md)
-2. [Modificare l'accesso condizionale](conditional-access.md)
+2. [Modificare le impostazioni dopo la registrazione](conditional-access.md)
 3. [Assegnare licenze](assign-licenses.md)
 4. [Distribuire il Portale aziendale Intune](company-portal.md)
 5. [Abilitare Enterprise State Roaming](enterprise-state-roaming.md)
