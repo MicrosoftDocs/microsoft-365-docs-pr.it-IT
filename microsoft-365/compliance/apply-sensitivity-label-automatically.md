@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea un'etichetta di riservatezza, è possibile assegnare automaticamente un'etichetta a file e messaggi di posta elettronica oppure chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: 4bbea7810c20d72ef75bbb5602b1daddfce45576
-ms.sourcegitcommit: 4f40f5be140a23bacff6fd7b85536de14fc7d499
+ms.openlocfilehash: 4eeedca64d1b2244355bb3e0e233969bdd02810c
+ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50084677"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "50461891"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
@@ -60,7 +60,7 @@ Esistono due metodi diversi per applicare automaticamente un'etichetta di riserv
     
     Caratteristiche specifiche dell'etichettatura automatica per SharePoint e OneDrive:
     - Sono supportati i file di Office per Word, PowerPoint ed Excel. È supportato il formato Open XML, ad esempio le estensioni .docx e .xlsx, ma non il formato di Microsoft Office 97-2003, ad esempio le estensioni .doc e .xls.
-        - Questi file possono essere etichettati automaticamente quando non fanno parte di una sessione aperta e se sono stati creati, caricati o modificati da quando sono state create le politiche di etichettatura automatica, oppure se sono file esistenti che non sono stati modificati da quando sono state creati i criteri di etichettatura automatica.
+        - Questi file inattivi possono essere etichettati automaticamente prima o dopo la creazione dei criteri di etichettatura automatica. Tenere presente che i file non possono essere etichettati automaticamente se fanno parte di una sessione aperta poiché il file è aperto.
     - Massimo 25.000 file etichettati automaticamente nel tenant al giorno.
     - Massimo di 10 criteri di etichettatura automatica per tenant, ognuno dei quali ha un massimo di 10 siti (SharePoint o OneDrive).
     - I valori esistenti per "Modificato", "Modificato da" e la data non vengono cambiati dai criteri di etichettatura automatica, sia per la modalità di simulazione che per l'applicazione delle etichette.
