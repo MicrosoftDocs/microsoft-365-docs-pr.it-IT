@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9ee6a347905e42c9271e824ce7ef1945bf34742f
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 734df0a8af82e1629c0b1808959ba1fe5b0c2bed
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648348"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50542515"
 ---
 # <a name="payment-information-for-tanzania"></a>Informazioni di pagamento per la Tanzania
 

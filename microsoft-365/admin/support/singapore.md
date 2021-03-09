@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: aa74f60ab87bccacefb11822edd02c75b5bdacc9
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 452461f2147484b6bf5f034b612afccdd08e1449
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48639804"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544493"
 ---
 # <a name="contact-support-for-singapore"></a>Contattare il supporto tecnico per Singapore
 
@@ -30,7 +29,7 @@ ms.locfileid: "48639804"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Inglese: Mon-Fri dalle 9.00 alle 18.00
+Inglese: Mon-Fri 9.00-18.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 

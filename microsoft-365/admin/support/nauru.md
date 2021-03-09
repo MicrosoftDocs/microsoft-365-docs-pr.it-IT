@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e255e67ccc74d6322adcc88b59b8b9980e0e70f8
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 280bfb29f0040708e022cc06ad40a7d8a548e9a0
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48640812"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50545513"
 ---
-# <a name="contact-support-for-nauru"></a>Contattare il supporto per Nauru
+# <a name="contact-support-for-nauru"></a>Contattare il supporto tecnico per Nauru
 
 [Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 

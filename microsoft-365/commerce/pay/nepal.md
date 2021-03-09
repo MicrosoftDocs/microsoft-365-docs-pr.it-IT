@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 0190eb9584d5b5e5bfaf66d58d8dfc154b9ed1a9
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 1c60505284e8343ce525f12f85ed3fc66946cccc
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649080"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50543053"
 ---
 # <a name="payment-information-for-nepal"></a>Informazioni di pagamento per il Nepal
 

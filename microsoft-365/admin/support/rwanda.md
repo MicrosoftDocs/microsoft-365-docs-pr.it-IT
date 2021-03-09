@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a43b4046d29a2df6376f90e288f9cb81ce477407
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 3b5567455ac9683fcdfddc46d6e5c0ca6b763ca7
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48640104"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544805"
 ---
 # <a name="contact-support-for-rwanda"></a>Contattare il supporto per il Ruanda
 

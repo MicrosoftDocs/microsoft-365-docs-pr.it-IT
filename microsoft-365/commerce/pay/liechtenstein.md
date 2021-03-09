@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f286e19870a265a0036523c020e4d1891da1d9a2
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: f4f9e5844264c6c002c07fa9cb3902b9a46f0d02
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649416"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50543353"
 ---
 # <a name="payment-information-for-liechtenstein"></a>Informazioni di pagamento per Liechtenstein
 
@@ -31,5 +30,5 @@ Pagare solo in CHF e fare riferimento ai numeri di fattura per la rimessa di pag
 **Bank:** Citibank, Londra  
 **Codice SWIFT:** CITIGB2L  
 **IBAN:** GB44CITI18500812207648  
-**Numero account:** 12207648  
+**Numero di conto:** 12207648  
 **Nome account:** MICROSOFT  

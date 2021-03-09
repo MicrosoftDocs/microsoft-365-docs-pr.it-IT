@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 44dff4ec1233cf53a22ee830eb30e21579f1d228
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 5fcdc7d9890df18fa24c80a2169c75b1300b986c
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638700"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50543509"
 ---
 # <a name="contact-support-for-vatican-city"></a>Contattare il supporto per città del Vaticano
 

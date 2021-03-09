@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d69c277418c8944d2020eedf0e5e18230c12a25b
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d3eb7b9d6c08dbe7b671f8d185b4e9a0e852b1e1
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48640560"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50545261"
 ---
 # <a name="contact-support-for-norway"></a>Contattare il supporto per la Norvegia
 

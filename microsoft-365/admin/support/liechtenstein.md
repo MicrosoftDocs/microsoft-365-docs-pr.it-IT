@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ad7439a8bb1fdfdfa96357f64fe0e0c476aad68a
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b0d9b58db7ac8e71ad4c71fdd951418413679dd2
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48641436"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50546185"
 ---
 # <a name="contact-support-for-liechtenstein"></a>Contattare il supporto per Liechtenstein
 
