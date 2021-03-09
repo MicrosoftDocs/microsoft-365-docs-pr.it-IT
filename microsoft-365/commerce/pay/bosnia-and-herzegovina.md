@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3a4cfaeadff1f623ba4825db7ea1e0cb1e841324
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: e60024b369a8b18135d35a365bd1670ba9346523
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637704"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50549365"
 ---
 # <a name="payment-information-for-bosnia-and-herzegovina"></a>Informazioni di pagamento per Bosnia ed Erzegovina
 

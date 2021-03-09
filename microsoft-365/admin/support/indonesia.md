@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: b651ad2a719a08ff5d6a7427cd3ccb268f043f13
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 742b49bcc9690f85cf8a5ea626bd948ce59eae04
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48641988"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50546725"
 ---
 # <a name="contact-support-for-indonesia"></a>Contattare il supporto per l'Indonesia
 
@@ -34,7 +33,7 @@ ms.locfileid: "48641988"
 
 Bahasa Indonesia: Mon-Fri dalle 8.00 alle 17.00
 
-Inglese: Mon-Fri dalle 9.00 alle 18.00
+Inglese: Mon-Fri 9.00-18.00
 
 ### <a name="technical-support"></a>Supporto tecnico:
 

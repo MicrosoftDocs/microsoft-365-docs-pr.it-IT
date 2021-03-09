@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per Grenada
+title: Informazioni di supporto per Grenada
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2f65d1be7525bac63d04f578c28578e84c4e0f2f
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 7ab6ec1ac3cdbcaea3ae7732ed49a4418376f801
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48642420"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50547145"
 ---
-# <a name="contact-support-for-grenada"></a>Contattare il supporto per Grenada
+# <a name="contact-support-for-grenada"></a>Contattare il supporto tecnico per Grenada
 
 [Trova un altro paese o area geografica](../contact-support-for-business-products.md).
 
