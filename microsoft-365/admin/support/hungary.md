@@ -9,35 +9,34 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 809cd8c5087dfabc6825bcc8cf53f3c02213b7d2
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 9475a197b189c98cd920a5eb6b52be82c0e7144d
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48642156"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50546869"
 ---
-# <a name="contact-support-for-hungary"></a><span data-ttu-id="574f5-103">Contattare il supporto per l'Ungheria</span><span class="sxs-lookup"><span data-stu-id="574f5-103">Contact support for Hungary</span></span>
+# <a name="contact-support-for-hungary"></a><span data-ttu-id="47400-103">Contattare il supporto per l'Ungheria</span><span class="sxs-lookup"><span data-stu-id="47400-103">Contact support for Hungary</span></span>
 
-<span data-ttu-id="574f5-104">[Trova un altro paese o area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="574f5-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="47400-104">[Trova un altro paese o area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="47400-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="574f5-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="574f5-105">Phone number</span></span>
-<span data-ttu-id="574f5-106">+36 80 983 899</span><span class="sxs-lookup"><span data-stu-id="574f5-106">+36 80 983 899</span></span>
+## <a name="phone-number"></a><span data-ttu-id="47400-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="47400-105">Phone number</span></span>
+<span data-ttu-id="47400-106">+36 80 983 899</span><span class="sxs-lookup"><span data-stu-id="47400-106">+36 80 983 899</span></span>
 
-## <a name="hours"></a><span data-ttu-id="574f5-107">Ore</span><span class="sxs-lookup"><span data-stu-id="574f5-107">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="574f5-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="574f5-108">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="47400-107">Ore</span><span class="sxs-lookup"><span data-stu-id="47400-107">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="47400-108">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="47400-108">Billing Support:</span></span>
 
-<span data-ttu-id="574f5-109">Inglese: lun-ven 9:00-17:00</span><span class="sxs-lookup"><span data-stu-id="574f5-109">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="47400-109">Inglese: lun-ven 9:00-17:00</span><span class="sxs-lookup"><span data-stu-id="47400-109">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="574f5-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="574f5-110">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="47400-110">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="47400-110">Technical Support:</span></span>
 
-<span data-ttu-id="574f5-111">Ungherese: Mon-Fri dalle 8.00 alle 18.00</span><span class="sxs-lookup"><span data-stu-id="574f5-111">Hungarian: Mon-Fri 8 AM-6 PM</span></span>
+<span data-ttu-id="47400-111">Ungherese: Mon-Fri dalle 8.00 alle 18.00</span><span class="sxs-lookup"><span data-stu-id="47400-111">Hungarian: Mon-Fri 8 AM-6 PM</span></span>
 
-<span data-ttu-id="574f5-112">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="574f5-112">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="47400-112">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="47400-112">English: 24 hours a day, 7 days a week</span></span>
 
-<span data-ttu-id="574f5-113">Numero di telefono alternativo: +36 1 778 9292</span><span class="sxs-lookup"><span data-stu-id="574f5-113">Alternative Phone Number: +36 1 778 9292</span></span>
+<span data-ttu-id="47400-113">Numero di telefono alternativo: +36 1 778 9292</span><span class="sxs-lookup"><span data-stu-id="47400-113">Alternative Phone Number: +36 1 778 9292</span></span>
 
-<span data-ttu-id="574f5-114">Costo in base alle tariffe telefoniche locali</span><span class="sxs-lookup"><span data-stu-id="574f5-114">Local call charges apply</span></span>
+<span data-ttu-id="47400-114">Costo in base alle tariffe telefoniche locali</span><span class="sxs-lookup"><span data-stu-id="47400-114">Local call charges apply</span></span>
