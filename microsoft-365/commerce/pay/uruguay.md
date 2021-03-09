@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 246e66dbfac1e27092d462f3fa2039b6e0fdcefd
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: c80b461a27ee747c14cfa521dfd617a67db3b1a2
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648108"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50549929"
 ---
 # <a name="payment-information-for-uruguay"></a>Informazioni di pagamento per l'Uruguay
 

@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 8d86824978eb8b153d3b24580387b85dbbab7736
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 5a4d9d4ae41eaf198bf71542fb09d25793964b2b
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648072"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50549857"
 ---
 # <a name="payment-information-for-uzbekistan"></a>Informazioni di pagamento per l'Uzbekistan
 

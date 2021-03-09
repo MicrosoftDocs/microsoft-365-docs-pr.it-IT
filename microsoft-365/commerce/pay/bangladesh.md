@@ -1,5 +1,5 @@
 ---
-title: Informazioni di pagamento per il Bangladesh
+title: Informazioni sui pagamenti per il Bangladesh
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 36eff0eae165978a851e2f4a6c899175aa87fb0d
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 93ed8431efaec9201df9c8ddfc2212aa23d24267
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637908"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50549545"
 ---
 # <a name="payment-information-for-bangladesh"></a>Informazioni di pagamento per il Bangladesh
 

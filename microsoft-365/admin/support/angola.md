@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 60709209f3d1d2686d5ef0b5e357fd4dca366a3e
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d9b028ce2a66c83ac11ac9e7982bac2be9b1197e
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48644340"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50549077"
 ---
 # <a name="contact-support-for-angola"></a>Contattare il supporto per l'Angola
 

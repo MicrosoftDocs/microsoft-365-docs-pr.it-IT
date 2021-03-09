@@ -1,5 +1,5 @@
 ---
-title: Prevenzione della perdita dei dati e Microsoft Teams
+title: Prevenzione della perdita di dati e Microsoft Teams
 f1.keywords:
 - NOCSH
 ms.author: chrfox
@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: È ora possibile applicare i criteri DLP alle chat e ai canali di Microsoft Teams. Leggi questo articolo per altre informazioni sul suo funzionamento.
-ms.openlocfilehash: 13d5d73423cc6ad7db76076f6a53dde668b8fa5c
-ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
+ms.openlocfilehash: 4b6f0c2e6915e7e96ba862fc6862b69aa0d827fd
+ms.sourcegitcommit: d3c1b08b3a8af29ef19ffe77da063920f28fe290
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50279364"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50572662"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevenzione della perdita dei dati e Microsoft Teams
 
@@ -28,9 +28,6 @@ ms.locfileid: "50279364"
 > Le funzionalità di prevenzione della perdita dei dati sono state aggiunte di recente ai messaggi di chat e canali di Microsoft Teams per gli utenti con licenza per Office 365 E5/A5, Microsoft 365 E5/A5, Microsoft 365 Information Protection and Governance o Office 365 Advanced Compliance. Office 365 e Microsoft 365 E3 includono la protezione DLP per SharePoint Online, OneDrive ed Exchange Online. Sono inclusi anche i file condivisi tramite Teams perché Teams usa SharePoint Online e OneDrive per condividere i file.
 Il supporto per la protezione DLP in Teams Chat richiede E5.
 Per altre informazioni sui requisiti di licenza, vedere [Linee guida per le licenze dei servizi a livello di tenant di Microsoft 365](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance).
-
-> [!IMPORTANT]
-> DLP per Teams è supportato solo quando l'utente dispone di una cassetta postale in Exchange Online
 
 ## <a name="overview-of-dlp-for-microsoft-teams"></a>Panoramica della prevenzione della perdita dei dati per Microsoft Teams
 
@@ -71,7 +68,7 @@ Per eseguire questa attività, è necessario disporre di un ruolo che dispone de
 
 2. Scegliere **Criteri di prevenzione della perdita dei**  >  **dati.**
 
-3. Selezionare un criterio e accanto a Impostazioni **criterio** scegliere **Modifica.**
+3. Selezionare un criterio e accanto a **Impostazioni criterio** scegliere **Modifica.**
 
 4. Creare una nuova regola o modificare una regola esistente per il criterio.<br/>![Modifica di una regola per un criterio](../media/dlp-teams-editrule.png)<br/>
 
@@ -133,9 +130,9 @@ Per eseguire questa attività, è necessario disporre di un ruolo che dispone de
 > Se si desidera assicurarsi che i documenti contenenti informazioni riservate non siano condivisi in modo inappropriato in Teams, verificare che i siti di **SharePoint** e gli account di **OneDrive** siano attivati, insieme ai messaggi di chat e canali di **Teams.**
 
 
-6. Nella scheda **Impostazioni criteri,** **in** Personalizza il tipo di contenuto che si desidera proteggere, mantenere le impostazioni semplici predefinite oppure scegliere Usa impostazioni **avanzate** e quindi **scegliere Avanti.** Se si scelgono impostazioni avanzate, è possibile creare o modificare le regole per i criteri. Per informazioni su questo argomento, vedere [Impostazioni semplici e impostazioni avanzate.](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings)
+6. Nella scheda **Impostazioni criteri,** **in** Personalizza il tipo di contenuto che si desidera proteggere, mantenere le impostazioni semplici predefinite oppure scegliere Usa impostazioni **avanzate** e quindi **scegliere Avanti.** Se si scelgono impostazioni avanzate, è possibile creare o modificare le regole per il criterio. Per informazioni su questo argomento, vedere [Impostazioni semplici e impostazioni avanzate.](data-loss-prevention-policies.md#simple-settings-vs-advanced-settings)
 
-7.  Nella scheda **Impostazioni dei criteri,** in Che cosa vuoi fare se rileviamo **informazioni sensibili,** esamina le impostazioni. Di seguito è possibile scegliere se mantenere i suggerimenti per i criteri predefiniti e le notifiche tramite posta [elettronica](use-notifications-and-policy-tips.md)oppure personalizzarli.<br/>![Impostazioni dei criteri DLP con suggerimenti e notifiche](../media/dlp-teams-policysettings-tipsemails.png)<br/>Al termine della revisione o della modifica delle impostazioni, scegliere **Avanti.**
+7.  Nella scheda **Impostazioni dei criteri,** in Cosa vuoi fare se vengono rilevate **informazioni sensibili,** esamina le impostazioni. Di seguito è possibile scegliere se mantenere i suggerimenti per i criteri predefiniti e le notifiche tramite posta [elettronica](use-notifications-and-policy-tips.md)oppure personalizzarli.<br/>![Impostazioni dei criteri DLP con suggerimenti e notifiche](../media/dlp-teams-policysettings-tipsemails.png)<br/>Al termine della revisione o della modifica delle impostazioni, scegliere **Avanti.**
 
 8. Nella  scheda Impostazioni criteri, in Si desidera attivare il criterio o testare prima gli **elementi?**, scegliere se attivare il [criterio,](data-loss-prevention-policies.md#roll-out-dlp-policies-gradually-with-test-mode)testarlo per primo o mantenerlo disattivato per il momento e quindi scegliere **Avanti.**<br/>![Specificare se attivare il criterio](../media/dlp-teams-policysettings-turnonnow.png)<br/>
 
