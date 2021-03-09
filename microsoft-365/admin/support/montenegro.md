@@ -9,33 +9,32 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: ecc049812b1c5dbeaf2b722fdbda08e309f00ac9
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2a99515ced22c03767476e9f709b9e38a3cc3536
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48641004"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50545681"
 ---
-# <a name="contact-support-for-montenegro"></a><span data-ttu-id="427cc-103">Contattare il supporto tecnico per il Montenegro</span><span class="sxs-lookup"><span data-stu-id="427cc-103">Contact support for Montenegro</span></span>
+# <a name="contact-support-for-montenegro"></a><span data-ttu-id="4f6b9-103">Contattare il supporto tecnico per il Montenegro</span><span class="sxs-lookup"><span data-stu-id="4f6b9-103">Contact support for Montenegro</span></span>
 
-<span data-ttu-id="427cc-104">[Trova un altro paese o area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="427cc-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
+<span data-ttu-id="4f6b9-104">[Trova un altro paese o area geografica](../contact-support-for-business-products.md).</span><span class="sxs-lookup"><span data-stu-id="4f6b9-104">[Find another country or region](../contact-support-for-business-products.md).</span></span>
 
-## <a name="phone-number"></a><span data-ttu-id="427cc-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="427cc-105">Phone number</span></span>
-<span data-ttu-id="427cc-106">080 081 110</span><span class="sxs-lookup"><span data-stu-id="427cc-106">080 081 110</span></span>
+## <a name="phone-number"></a><span data-ttu-id="4f6b9-105">Numero di telefono</span><span class="sxs-lookup"><span data-stu-id="4f6b9-105">Phone number</span></span>
+<span data-ttu-id="4f6b9-106">080 081 110</span><span class="sxs-lookup"><span data-stu-id="4f6b9-106">080 081 110</span></span>
 
-<span data-ttu-id="427cc-107">Selezionare l'opzione 9</span><span class="sxs-lookup"><span data-stu-id="427cc-107">Select option 9</span></span>
+<span data-ttu-id="4f6b9-107">Selezionare l'opzione 9</span><span class="sxs-lookup"><span data-stu-id="4f6b9-107">Select option 9</span></span>
 
-<span data-ttu-id="427cc-108">Immettere il codice 7708</span><span class="sxs-lookup"><span data-stu-id="427cc-108">Enter code 7708</span></span>
+<span data-ttu-id="4f6b9-108">Immettere il codice 7708</span><span class="sxs-lookup"><span data-stu-id="4f6b9-108">Enter code 7708</span></span>
 
-## <a name="hours"></a><span data-ttu-id="427cc-109">Ore</span><span class="sxs-lookup"><span data-stu-id="427cc-109">Hours</span></span>
-### <a name="billing-support"></a><span data-ttu-id="427cc-110">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="427cc-110">Billing Support:</span></span>
+## <a name="hours"></a><span data-ttu-id="4f6b9-109">Ore</span><span class="sxs-lookup"><span data-stu-id="4f6b9-109">Hours</span></span>
+### <a name="billing-support"></a><span data-ttu-id="4f6b9-110">Supporto per la fatturazione:</span><span class="sxs-lookup"><span data-stu-id="4f6b9-110">Billing Support:</span></span>
 
-<span data-ttu-id="427cc-111">Inglese: lun-ven 9:00-17:00</span><span class="sxs-lookup"><span data-stu-id="427cc-111">English: Mon-Fri 9 AM-5 PM</span></span>
+<span data-ttu-id="4f6b9-111">Inglese: lun-ven 9:00-17:00</span><span class="sxs-lookup"><span data-stu-id="4f6b9-111">English: Mon-Fri 9 AM-5 PM</span></span>
 
-### <a name="technical-support"></a><span data-ttu-id="427cc-112">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="427cc-112">Technical Support:</span></span>
+### <a name="technical-support"></a><span data-ttu-id="4f6b9-112">Supporto tecnico:</span><span class="sxs-lookup"><span data-stu-id="4f6b9-112">Technical Support:</span></span>
 
-<span data-ttu-id="427cc-113">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="427cc-113">English: 24 hours a day, 7 days a week</span></span>
+<span data-ttu-id="4f6b9-113">Inglese: 24 ore al giorno, 7 giorni alla settimana</span><span class="sxs-lookup"><span data-stu-id="4f6b9-113">English: 24 hours a day, 7 days a week</span></span>
