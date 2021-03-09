@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: cb05a415b945a2a4bc85f535cb9c0f14d821d9f1
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 96c53f7c87c1bb26369677e19b1e93162880f250
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637260"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50551537"
 ---
-# <a name="payment-information-for-czech-republic"></a>Informazioni sui pagamenti per la Repubblica Ceca
+# <a name="payment-information-for-czech-republic"></a>Informazioni di pagamento per la Repubblica Ceca
 
 [Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 

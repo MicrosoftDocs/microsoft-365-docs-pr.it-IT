@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: e22d51316d77ad4a6bc049a217098237d883e072
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: f19e3b94aab6ae538ffab4c88fa43380bfeebe88
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637428"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50551573"
 ---
 # <a name="payment-information-for-croatia"></a>Informazioni di pagamento per la Croazia
 

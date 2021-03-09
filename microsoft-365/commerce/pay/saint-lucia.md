@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 2e06e18739880282bf4c07f127082d5cbb8f87d5
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: a452ab4721c23eec8c1a06e82f8ceaa8df0b3620
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648756"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50550361"
 ---
 # <a name="payment-information-for-saint-lucia"></a>Informazioni di pagamento per Saint Lucia
 

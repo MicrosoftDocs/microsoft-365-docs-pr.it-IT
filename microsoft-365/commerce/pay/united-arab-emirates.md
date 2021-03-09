@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 12d178053b028b664ddcdd02a5df8cdb765d9dc5
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 13c3bd40d2ba28fcf228b6696f94af1b1db73028
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48648144"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50550013"
 ---
 # <a name="payment-information-for-united-arab-emirates"></a>Informazioni di pagamento per gli Emirati Arabi Uniti
 

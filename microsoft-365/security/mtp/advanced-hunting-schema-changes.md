@@ -1,7 +1,7 @@
 ---
 title: Modifiche di denominazione nello schema di ricerca avanzata di Microsoft 365 Defender
 description: Tenere traccia e rivedere le tabelle e le colonne delle modifiche di denominazione nello schema di ricerca avanzata
-keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, microsoft threat protection, Microsoft 365, mtp, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, dati, modifiche di denominazione, rinominare, Microsoft Threat Protection
+keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, microsoft threat protection, Microsoft 365, mtp, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, dati, modifiche dei nomi, rinominare, Microsoft Threat Protection
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 31a2f647351c05842f36198ad05b149086b53b1f
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 948c8bb5c1e6b67f6de355bc532c6b14d5a83933
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509303"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50551873"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Schema ricerca avanzata - Modifiche alla denominazione
 
@@ -76,7 +76,7 @@ Le modifiche di denominazione vengono applicate automaticamente alle query salva
 
 ## <a name="february-2021"></a>Febbraio 2021
 
-1. Nelle tabelle [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) e [EmailEvents](advanced-hunting-emailevents-table.md) le colonne e le colonne sono `MalwareFilterVerdict` state `PhishFilterVerdict` sostituite dalla `ThreatTypes` colonna. Anche `MalwareDetectionMethod` le colonne e le colonne sono state `PhishDetectionMethod` sostituite dalla `DetectionMethods` colonna. Questa snellizione consente di fornire ulteriori informazioni nelle nuove colonne. Il mapping viene fornito di seguito.
+1. Nelle tabelle [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) e [EmailEvents,](advanced-hunting-emailevents-table.md) le colonne e sono `MalwareFilterVerdict` state `PhishFilterVerdict` sostituite dalla `ThreatTypes` colonna. Anche `MalwareDetectionMethod` le colonne e le colonne sono state `PhishDetectionMethod` sostituite dalla `DetectionMethods` colonna. Questa snellizione consente di fornire ulteriori informazioni nelle nuove colonne. Il mapping viene fornito di seguito.
 
 | Nome della tabella | Nome colonna originale | Nome nuova colonna | Motivo della modifica
 |--|--|--|--|
@@ -98,7 +98,7 @@ Le modifiche di denominazione vengono applicate automaticamente alle query salva
 | `DeviceEvents` | `UsbDriveMount` | `UsbDriveMounted` | Feedback dei clienti |
 | `DeviceEvents` | `UsbDriveUnmount` | `UsbDriveUnmounted` | Feedback dei clienti |
 | `DeviceEvents` | `WriteProcessMemoryApiCall` | `WriteToLsassProcessMemory` | Feedback dei clienti |
-| `DeviceEvents` | `AntivirusDetection` | `EdrBlock` | Feedback dei clienti |
+
 
 
 

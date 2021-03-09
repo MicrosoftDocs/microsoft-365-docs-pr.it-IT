@@ -9,22 +9,21 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 9d0b6cb118005ae7e3ae8e110a436faa9829e4b5
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: dcab44878f1627f17a20859f92eec2964ee0b4a8
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647256"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50550961"
 ---
 # <a name="payment-information-for-hong-kong"></a>Informazioni di pagamento per Hong Kong
 
 [Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
-Seguire le istruzioni di pagamento riportate nella fattura e fare riferimento ai numeri di fattura sulla rimessa di pagamento.
+Seguire le istruzioni di pagamento sulla fattura e fare riferimento ai numeri di fattura nella rimessa di pagamento.
 
 ## <a name="electronic-funds-transfer"></a>Bonifico bancario
 

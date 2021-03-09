@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 06d350d168d4cdf2766c150ca6fa665974542fdc
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: f081d49b5df25e7ba22dd67050a9037540d41e0c
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48637272"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50551561"
 ---
 # <a name="payment-information-for-cyprus"></a>Informazioni di pagamento per Cipro
 

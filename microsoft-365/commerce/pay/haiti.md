@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f98fc0321cf8e5cf804f45ae22279ac149ad2c80
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 91dd34d9714b878f64ab7828cbff67a8df1ada9b
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647376"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50551009"
 ---
 # <a name="payment-information-for-haiti"></a>Informazioni di pagamento per Haiti
 

@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: c9957ea31a51cd48757e33d4b94a8731f43cd772
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 57fa409906a5255ff3d40ca87ef41508c9ac8d8a
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647268"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50550997"
 ---
 # <a name="payment-information-for-honduras"></a>Informazioni di pagamento per Honduras
 

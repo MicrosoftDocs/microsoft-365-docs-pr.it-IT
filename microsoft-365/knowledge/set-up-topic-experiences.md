@@ -10,18 +10,18 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Informazioni su come configurare Gli argomenti di Microsoft Viva
-ms.openlocfilehash: a90e75330527992f8519d625f94fe0d5ecb3de6b
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: cc420a0631f5b861341116abcd50cfe90e15450e
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261470"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50551891"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Configurare Microsoft Viva Topics
 
 È possibile utilizzare l'interfaccia di amministrazione di Microsoft 365 per configurare gli [argomenti.](topic-experiences-overview.md) 
 
-È importante pianificare il modo migliore per impostare e configurare gli argomenti nell'ambiente. Prima di iniziare le procedure descritte in questo articolo, leggere Plan [for Microsoft Viva Topics.](plan-topic-experiences.md)
+È importante pianificare il modo migliore per impostare e configurare gli argomenti nell'ambiente. Leggere gli argomenti [relativi alla pianificazione per Microsoft Viva prima](plan-topic-experiences.md) di iniziare le procedure descritte in questo articolo.
 
 È necessario essere [iscritti ad Argomenti Viva](https://www.microsoft.com/microsoft-viva/topics) ed essere un amministratore globale o un amministratore di SharePoint per accedere all'interfaccia di amministrazione di Microsoft 365 e configurare Gli argomenti.
 
@@ -50,7 +50,7 @@ Per configurare gli argomenti
 
     ![Informazioni di base](../media/k-get-started.png) 
 
-4. Nella pagina **Scegliere in che modo Viva Topics può trovare gli** argomenti, è necessario configurare l'individuazione degli argomenti. Nella sezione **Selezione origini argomenti di SharePoint** selezionare quali siti di SharePoint verranno sottoposti a ricerca per indicizzazione come origini per gli argomenti durante l'individuazione. Scegli tra:
+4. Nella pagina **Scegliere in che modo Viva Topics può trovare gli** argomenti, è necessario configurare l'individuazione degli argomenti. Nella sezione **Selezionare le origini degli argomenti di SharePoint** selezionare i siti di SharePoint che verranno sottoposti a ricerca per indicizzazione come origini per gli argomenti durante l'individuazione. Scegli tra:
     - **Tutti i siti:** tutti i siti di SharePoint nell'organizzazione. Sono inclusi i siti correnti e futuri.
     - **Tutti, ad eccezione dei siti** selezionati: digitare i nomi dei siti che si desidera escludere.  Puoi anche caricare un elenco di siti che vuoi rifiutare esplicitamente dall'individuazione. I siti creati in futuro verranno inclusi come origini per l'individuazione degli argomenti. 
     - **Solo siti selezionati:** digitare i nomi dei siti che si desidera includere. È inoltre possibile caricare un elenco di siti. I siti creati in futuro non verranno inclusi come origini per l'individuazione degli argomenti.
@@ -125,7 +125,7 @@ Per configurare gli argomenti
 
 ## <a name="assign-licenses"></a>Assegnare le licenze
 
-Dopo aver configurato le esperienze per gli argomenti, è necessario assegnare licenze agli utenti che utilizzano gli argomenti. Solo gli utenti con una licenza possono visualizzare informazioni sugli argomenti, tra cui evidenziazioni, schede argomento, pagine degli argomenti e il Centro argomenti. 
+Dopo aver configurato le esperienze per gli argomenti, è necessario assegnare licenze agli utenti che utilizzano gli argomenti. Solo gli utenti con una licenza possono visualizzare informazioni su argomenti quali evidenziazioni, schede argomento, pagine di argomenti e il Centro argomenti. 
 
 Per assegnare le licenze:
 
@@ -133,9 +133,13 @@ Per assegnare le licenze:
 
 2. Seleziona gli utenti di cui vuoi ottenere la licenza e fai clic **su Licenze e app.**
 
-3. In **App,** verificare che sia selezionata **l'opzione** Cerca nei connettori grafici con esperienze indice **ed** argomento.
+3. In **Licenze** selezionare **Viva Topics.**
 
-4. Fare clic su **Salva modifiche**.
+4. In **App,** verificare che sia selezionata l'opzione Cerca nei connettori grafici **con indice (Argomenti Viva)** e Argomenti **Viva.**
+
+    ![Licenze microsoft Viva Topics nell'interfaccia di amministrazione di Microsoft 365](../media/topic-experiences-licenses.png)
+
+5. Fare clic su **Salva modifiche**.
 
 ## <a name="manage-topic-experiences"></a>Gestire le esperienze degli argomenti
 

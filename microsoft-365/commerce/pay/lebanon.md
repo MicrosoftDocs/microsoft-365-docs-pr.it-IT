@@ -1,5 +1,5 @@
 ---
-title: Informazioni di pagamento per il Libano
+title: Informazioni sui pagamenti per il Libano
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,18 +9,17 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3061023a58cb10f62e07b61cd4174dafe18f0ad0
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 2a2720bb700416b1a1d55ea8c48cd2aba6bec80a
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48649476"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50550529"
 ---
-# <a name="payment-information-for-lebanon"></a>Informazioni di pagamento per il Libano
+# <a name="payment-information-for-lebanon"></a>Informazioni sui pagamenti per il Libano
 
 [Trova un altro paese o area geografica](../billing-and-payments/pay-for-your-subscription.md).
 
