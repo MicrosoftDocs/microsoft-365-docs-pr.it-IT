@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 10ce19845201f40f25728867ea2768c37d40f84d
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: f8bd77592506892213c97105db34c6c53c19e601
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48639864"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544577"
 ---
 # <a name="contact-support-for-sao-tome-and-principe"></a>Contattare il supporto per Sao Tome e Principe
 

@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per il Costa Rica
+title: Informazioni di supporto per il Costa Rica
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 4c64625fbe84210bb8f5aecdff92dfa0ebb9d3d0
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: bece1749f0ce3bd8b0debd5a391cbce8895644e7
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48643176"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50547853"
 ---
 # <a name="contact-support-for-costa-rica"></a>Contattare il supporto tecnico per il Costa Rica
 

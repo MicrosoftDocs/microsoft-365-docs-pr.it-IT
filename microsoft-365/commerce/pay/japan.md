@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 44df2d2fcc3c424a6962ac8ca456c41147971eb5
-ms.sourcegitcommit: b4119682bd3c036289e851fff56fde869c816479
+ms.openlocfilehash: 60b541bb61c7a74c29b82c89669414d1578f8c58
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/22/2020
-ms.locfileid: "45204768"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50550721"
 ---
 # <a name="payment-information-for-japan"></a>Informazioni di pagamento per il Giappone
 

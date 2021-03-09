@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Commerce_Pay
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su dove inviare il pagamento per l'abbonamento.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a460d462cc758c55b97f8069b7dadf1e2a9addd9
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 87b7bf995f4d3db93bcf2ea764fe86f6fce219d6
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48647028"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50550757"
 ---
 # <a name="payment-information-for-jamaica"></a>Informazioni di pagamento per la Giamaica
 

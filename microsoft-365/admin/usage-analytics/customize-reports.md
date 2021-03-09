@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9b76065f-29b9-4b89-8059-c5f9db9ddbf6
 description: Informazioni su come personalizzare i report nel browser e in Power BI Desktop.
-ms.openlocfilehash: 0375b61b6922c99acf927a4283571451deabaf14
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 3c662dfa91939c68f0aa0a85c19a1fab003064bf
+ms.sourcegitcommit: d3c1b08b3a8af29ef19ffe77da063920f28fe290
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114298"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50572651"
 ---
 # <a name="customize-the-reports-in-microsoft-365-usage-analytics"></a>Personalizzare i report nell'analisi dell'utilizzo di Microsoft 365
 
@@ -46,7 +46,7 @@ I due esempi seguenti illustrano come modificare un oggetto visivo esistente e c
   
 ### <a name="modify-an-existing-visual"></a>Modificare un oggetto visivo esistente
 
-Questo esempio mostra come modificare la scheda **Attivazione all'interno** del report **Attivazione/Licenze.** 
+Questo esempio mostra come modificare la scheda **Attivazione** all'interno del report **attivazione/licenza.** 
   
 1. Nel report **Attivazione/Licenze** seleziona la **scheda Attivazione.**
     
@@ -74,7 +74,7 @@ L'esempio seguente illustra come creare un nuovo oggetto visivo per tenere tracc
     
 3. Nella parte inferiore della pagina, selezionare il pulsante ![Pulsante Aggiungi pagina in Power BI](../../media/d3b8c117-17d4-4f53-b078-8fefc2155b24.png) per creare una nuova pagina.
   
-4. **Nell'area Visualizzazioni** a destra scegliere il grafico a **barre** in pila (riga superiore, prima da sinistra).
+4. Nell'area **Visualizzazioni** a destra scegliere il grafico a **barre** in pila (riga superiore, prima da sinistra).
 
     ![Seleziona grafico a barre](../../media/214c3fed-6eae-43e6-83fb-708a2d74406e.png)
     
@@ -136,9 +136,9 @@ Per la maggior parte dei clienti è sufficiente modificare i report e gli oggett
   
 ### <a name="use-the-microsoft-365-usage-analytics-template"></a>Usare il modello di analisi dell'utilizzo di Microsoft 365
 
-È anche possibile usare il file modello di Power BI che corrisponde ai report di analisi dell'utilizzo di Microsoft 365 come punto di partenza per connettersi ai dati. Il vantaggio di usare il file PBIT è che ha la stringa di connessione già stabilita. È anche possibile sfruttare tutte le misure personalizzate create, oltre ai dati che lo schema di base restituisce, usandole come base di sviluppo.
+È anche possibile usare il file modello di Power BI che corrisponde ai report di analisi di utilizzo di Microsoft 365 come punto di partenza per connettersi ai dati. Il vantaggio di usare il file PBIT è che ha la stringa di connessione già stabilita. È anche possibile sfruttare tutte le misure personalizzate create, oltre ai dati che lo schema di base restituisce, usandole come base di sviluppo.
   
-È possibile scaricare il file modello di Power BI dall'Area download Microsoft [dall'Area download.](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit) Dopo aver scaricato il file del modello di Power BI seguire questa procedura per iniziare:
+È possibile scaricare il file modello di Power BI [dall'Area download Microsoft.](https://download.microsoft.com/download/7/8/2/782ba8a7-8d89-4958-a315-dab04c3b620c/Microsoft%20365%20Usage%20Analytics.pbit) Dopo aver scaricato il file modello di Power BI, eseguire la procedura seguente per iniziare:
   
 1. Aprire il file PBIT.
     
@@ -146,9 +146,9 @@ Per la maggior parte dei clienti è sufficiente modificare i report e gli oggett
     
     ![Enter your tenant ID to open the pbit file](../../media/071ed0bf-8b9d-49c6-81fc-fd4c6cc85bd3.png)
   
-3. Quando richiesto, immettere le credenziali di amministratore per l'autenticazione in Microsoft 365.
+3. Immettere le credenziali di amministratore per l'autenticazione in Microsoft 365 quando richiesto.
     
-     per ulteriori informazioni sugli utenti autorizzati ad accedere ai report di analisi dell'utilizzo di Microsoft 365. 
+     per altre informazioni sugli utenti autorizzati ad accedere ai report di analisi dell'utilizzo di Microsoft 365. 
     
     Una volta ottenuta l'autorizzazione, i dati verranno aggiornati nel file di Power BI.
     
