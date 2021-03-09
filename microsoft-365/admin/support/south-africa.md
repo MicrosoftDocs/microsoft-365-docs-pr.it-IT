@@ -1,5 +1,5 @@
 ---
-title: Informazioni sul supporto per il Sudafrica
+title: Informazioni di supporto per il Sudafrica
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 5132300971929ea4d728d7b50d6cbbff8206be64
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: ba6129d4b33a67a31c0fe3a8993ac2fb3d386696
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48639588"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544301"
 ---
 # <a name="contact-support-for-south-africa"></a>Contattare il supporto per il Sudafrica
 

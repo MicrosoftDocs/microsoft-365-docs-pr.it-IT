@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 3066f28c2a42a48ab534bd58df7a62a2562b184d
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 25d286ada84f75f75759f8c0d0bac85b613a7c41
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48640416"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50545201"
 ---
 # <a name="contact-support-for-palestinian-authority"></a>Contattare il supporto per l'Autorità palestinese
 

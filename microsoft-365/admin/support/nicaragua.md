@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 512e9b3e64b28b4d19bde728d5e9a4da0c0ef578
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 03b6fe3d60b10815268dbb6db170ca4418f7454e
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48640668"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50545442"
 ---
 # <a name="contact-support-for-nicaragua"></a>Contattare il supporto tecnico per il Nicaragua
 

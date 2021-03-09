@@ -1,5 +1,5 @@
 ---
-title: Informazioni di supporto per le isole Salomone
+title: Informazioni sul supporto per le isole Salomone
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: f6722ca5516c9915c5b737cc84cba6632d0aa2fe
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: ce709131b7a2e25a352a2cdafdf0bb79c98b4f3b
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48639636"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544325"
 ---
 # <a name="contact-support-for-solomon-islands"></a>Contattare il supporto per le isole Salomone
 

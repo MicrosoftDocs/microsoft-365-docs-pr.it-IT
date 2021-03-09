@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: d91c656459133e21b4e2c6fd032d582f520d1254
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: b25fafc787b7995eff933082f00a0e9ce931c518
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48640044"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544733"
 ---
 # <a name="contact-support-for-saint-pierre-and-miquelon"></a>Contattare il supporto tecnico per Saint Pierre e Miquelon
 
@@ -30,7 +29,7 @@ ms.locfileid: "48640044"
 ## <a name="hours"></a>Ore
 ### <a name="billing-support"></a>Supporto per la fatturazione:
 
-Francese: Mon-Fri 6.00-14.00
+Francese: Mon-Fri dalle 6.00 alle 14.00
 
 Inglese: Mon-Fri 6.00-14.00
 

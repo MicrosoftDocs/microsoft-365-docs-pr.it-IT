@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a4e3ab28c307dc654f96c862492e36b36824213f
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 7da79d5cdd4766b1c0a6b3f0fc4010ec70cd955e
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48639576"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50544277"
 ---
 # <a name="contact-support-for-south-georgia-and-south-sandwich-islands"></a>Contattare il supporto per la Georgia del Sud e le Isole Panino Del Sud
 

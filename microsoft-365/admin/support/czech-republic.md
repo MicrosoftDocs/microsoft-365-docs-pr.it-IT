@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 733dc4fb2300c834af9a862592355a2b77f38b9d
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: f04c1a05ee18472742910b0131a746f7c9b7691c
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48643116"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50547889"
 ---
 # <a name="contact-support-for-czech-republic"></a>Contattare il supporto tecnico per la Repubblica Ceca
 

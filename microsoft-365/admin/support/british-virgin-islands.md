@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: 6156cd390d66303ae5c37a767b5d35935f77d32f
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: fe03d0a211ad0f197b95c048eb62e423701f0927
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48643668"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50548394"
 ---
 # <a name="contact-support-for-british-virgin-islands"></a>Contattare il supporto per le Isole Vergini Britanniche
 

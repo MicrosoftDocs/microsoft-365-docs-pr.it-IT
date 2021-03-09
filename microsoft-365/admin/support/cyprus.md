@@ -1,5 +1,5 @@
 ---
-title: Informazioni di supporto per Cipro
+title: Informazioni sul supporto per Cipro
 author: cmcatee-MSFT
 f1.keywords:
 - NOCSH
@@ -9,16 +9,15 @@ audience: Admin
 ms.topic: reference
 ms.service: o365-administration
 ms.collection: Adm_Support
-ms.custom: AdminSurgePortfolio
 localization_priority: Normal
 description: Informazioni su come contattare il supporto per il proprio paese o area geografica.
 ROBOTS: NOINDEX, NOFOLLOW
-ms.openlocfilehash: a00aba346a48524303199b63b3622bfb9a742bd3
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: e93ccd2f9ddb545f1ad8ea094b854b7c8df797f2
+ms.sourcegitcommit: 6e260f5f5842debe1098138eecea9068330dc17f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48643152"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "50547901"
 ---
 # <a name="contact-support-for-cyprus"></a>Contattare il supporto per Cipro
 
