@@ -3,7 +3,7 @@ title: URL e intervalli di indirizzi IP per Office 365 gestito da 21Vianet
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 01/04/2021
+ms.date: 08/28/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-administration
@@ -21,12 +21,12 @@ f1.keywords:
 - NOCSH
 description: Questo articolo elenca gli URL e gli intervalli di indirizzi IP per Office 365 se gestito da 21Vianet in Cina.
 hideEdit: true
-ms.openlocfilehash: 8a17cb9da5cf552615abf1ac20a67463e8430eb7
-ms.sourcegitcommit: a76de3d1604d755b29053e7bf557c0008be6ad23
+ms.openlocfilehash: dae2b5feb4fbf7fc3e9bdd2419e2d114b5507ee8
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "49787810"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50597071"
 ---
 # <a name="urls-and-ip-address-ranges-for-office-365-operated-by-21vianet"></a>URL e intervalli di indirizzi IP per Office 365 gestito da 21Vianet
 
@@ -38,9 +38,9 @@ ms.locfileid: "49787810"
   
 |||
 |:-----|:-----|
-|**Ultimo aggiornamento:** 01/04/2021 - ![RSS](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [Abbonamento al Log delle modifiche](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**Download:** tutte le destinazioni obbligatorie e facoltative in un unico elenco in [formato JSON](https://endpoints.office.com/endpoints/China?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> |
+|**Last updated:** 28/08/2020 - ![ RSS Change Log ](../media/5dc6bb29-25db-4f44-9580-77c735492c4b.png) [subscription](https://endpoints.office.com/version/China?allversions=true&format=rss&clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7)|**Download:** tutte le destinazioni necessarie e facoltative in un unico elenco [JSON formattato](https://endpoints.office.com/endpoints/China?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7).  <br/> |
 
-Iniziare con [Gestione degli endpoint di Office 365](managing-office-365-endpoints.md) per conoscere i nostri consigli sulla gestione della connessione di rete con questi dati. I dati degli endpoint vengono aggiornati all'inizio di ogni mese con i nuovi URL e indirizzi IP pubblicati 30 giorni prima di essere attivi. In questo modo, i clienti che non hanno ancora automatizzato gli aggiornamenti possono completare le loro procedure prima che sia necessaria una nuova connessione. Inoltre, gli endpoint potrebbero essere aggiornati anche durante il mese qualora fosse necessario gestire problemi di supporto, problemi di sicurezza o altri requisiti operativi immediati. I dati mostrati più avanti in questa pagina sono tutti generati dai servizi Web basati su REST. Se si utilizza uno script o un dispositivo di rete per accedere a questi dati, passare direttamente al [servizio Web](microsoft-365-ip-web-service.md).
+Iniziare con [la gestione degli endpoint di Office 365](managing-office-365-endpoints.md) per comprendere i suggerimenti per la gestione della connettività di rete con questi dati. I dati degli endpoint vengono aggiornati in base alle esigenze all'inizio di ogni mese con nuovi INDIRIZZI IP e URL pubblicati 30 giorni prima di essere attivi. Ciò consente ai clienti che non dispongono ancora di aggiornamenti automatici di completare i processi prima che sia necessaria una nuova connettività. Gli endpoint possono essere aggiornati anche durante il mese, se necessario per risolvere escalation di supporto, incidenti di sicurezza o altri requisiti operativi immediati. I dati mostrati in questa pagina vengono tutti generati dai servizi Web basati su REST. Se si utilizza uno script o un dispositivo di rete per accedere a questi dati, è consigliabile passare direttamente al [servizio Web.](microsoft-365-ip-web-service.md)
 
 I dati degli endpoint riportati di seguito elencano i requisiti di connessione del computer di un utente a Office 365. Non sono incluse le connessioni di rete da Microsoft a una rete cliente, a volte chiamate connessioni di rete ibride o in ingresso.
 

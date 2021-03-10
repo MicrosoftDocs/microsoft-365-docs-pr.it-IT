@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Hai una domanda sul funzionamento delle nuove funzionalità di protezione dei messaggi? Verificare la disponibilità di una risposta qui.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a88d853905ed8462972c9f423254a49424974bb7
-ms.sourcegitcommit: c550c1b5b9e67398fd95bfb0256c4f5c7930b2be
+ms.openlocfilehash: 1bb5e93b08b74f5691c76e9a59bf9fa970e08f36
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50066839"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50597196"
 ---
 # <a name="message-encryption-faq"></a>Domande frequenti sulla crittografia dei messaggi
 
@@ -34,7 +34,7 @@ OME combina la crittografia della posta elettronica e le funzionalità di rights
 
 È possibile utilizzare le nuove funzionalità per OME nelle condizioni seguenti:
   
-- Se OME o IRM non sono mai stati impostati per Exchange Online in Office 365.
+- Se non è mai stato configurato OME o IRM per Exchange Online in Office 365.
 
 - Se OME e IRM sono stati impostati, è possibile utilizzare questi passaggi se si utilizza il servizio Azure Rights Management di Azure Information Protection.
 
@@ -84,7 +84,7 @@ Vedere [Configurare le nuove funzionalità di crittografia dei messaggi di Offic
   
 ## <a name="will-the-previous-version-of-ome-be-deprecated"></a>La versione precedente di OME sarà deprecata?
 
-You can still use the previous version of OME, it will not be deprecated at this time. Tuttavia, è consigliabile che le organizzazioni utilizzino la nuova e migliorata soluzione OME. I clienti che non hanno già distribuito OME non possono configurare una nuova distribuzione della versione precedente di OME.
+È ancora possibile usare la versione precedente di OME, che non sarà deprecata al momento. Tuttavia, è consigliabile che le organizzazioni usino la nuova e migliorata soluzione OME. I clienti che non hanno già distribuito OME non possono configurare una nuova distribuzione della versione precedente di OME.
   
 ## <a name="my-organization-uses-active-directory-rights-management-can-i-use-this-functionality"></a>L'organizzazione utilizza Active Directory Rights Management, è possibile utilizzare questa funzionalità?
 
@@ -92,11 +92,11 @@ No. Se si utilizza Exchange Online con Active Directory Rights Management Servic
   
 ## <a name="my-organization-has-an-exchange-hybrid-deployment-can-i-use-this-feature"></a>L'organizzazione ha una distribuzione ibrida di Exchange. È possibile utilizzare questa funzionalità?
 
-Gli utenti locali possono inviare posta crittografata utilizzando le regole del flusso di posta di Exchange Online. A tale scopo, è necessario instradare la posta elettronica tramite Exchange Online. Per ulteriori informazioni, vedere Parte 2: Configurare il flusso di posta dal server di posta [elettronica a Microsoft 365.](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365)
+Gli utenti locali possono inviare posta crittografata utilizzando le regole del flusso di posta di Exchange Online. A tale scopo, è necessario instradare la posta elettronica tramite Exchange Online. Per ulteriori informazioni, vedere Parte 2: Configurare il flusso di posta dal server di posta elettronica [a Microsoft 365.](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365)
   
 ## <a name="what-email-client-do-i-need-to-use-in-order-to-create-an-ome-encrypted-message-what-applications-are-supported-for-sending-protected-messages"></a>Quale client di posta elettronica è necessario utilizzare per creare un messaggio crittografato con OME? Quali applicazioni sono supportate per l'invio di messaggi protetti?
 
-È possibile creare messaggi protetti da Outlook 2016, Outlook 2013 per Windows e Mac e da Outlook sul Web. Per ulteriori informazioni sull'invio di messaggi crittografati, vedere Inviare, visualizzare e rispondere ai messaggi [crittografati in Outlook per PC.](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-us&rs=en-us&ad=us)
+È possibile creare messaggi protetti da Outlook 2016, Outlook 2013 per Windows e Mac e da Outlook sul Web. Per ulteriori informazioni sull'invio di messaggi crittografati, vedere Inviare, visualizzare e rispondere [ai messaggi crittografati in Outlook per PC.](https://support.microsoft.com/office/send-view-and-reply-to-encrypted-messages-in-outlook-for-pc-eaa43495-9bbb-4fca-922a-df90dee51980?ui=en-us&rs=en-us&ad=us)
   
 ## <a name="what-email-clients-are-supported-to-read-and-reply-to-protected-emails"></a>Quali client di posta elettronica sono supportati per leggere e rispondere ai messaggi di posta elettronica protetti?
 
@@ -118,7 +118,7 @@ Se è supportato un formato di file, ad esempio un file di Word, Excel o PowerPo
   
 ## <a name="are-pdf-file-attachments-supported"></a>Gli allegati di file PDF sono supportati?
 
-La risposta breve è sì. La crittografia PDF consente di proteggere i documenti PDF sensibili tramite comunicazioni sicure o una collaborazione sicura. Quando si invia un messaggio di posta elettronica, il servizio Office 365 crittografa gli allegati di file PDF non il client Outlook.
+La risposta breve è sì. La crittografia PDF consente di proteggere i documenti PDF sensibili tramite comunicazioni protette o la collaborazione protetta. Quando si invia un messaggio di posta elettronica, il servizio Office 365 crittografa gli allegati di file PDF non il client Outlook.
 
 Per Outlook sul Web, Outlook per iOS e Outlook per Android, è possibile crittografare i PDF inviati senza ulteriori passaggi. Questi client supportano in modo nativo la crittografia PDF.
 
@@ -130,7 +130,7 @@ Per abilitare la crittografia per gli allegati PDF, eseguire il seguente comando
 Set-IRMConfiguration -EnablePdfEncryption $true
 ```
 
-La crittografia PDF consente di proteggere i documenti PDF sensibili tramite comunicazioni sicure o una collaborazione sicura. Per tutti i client Outlook, i messaggi e gli allegati PDF non protetti ereditano la protezione OME del criterio di prevenzione della perdita di dati (DLP) o della regola del flusso di posta in Exchange Online. Inoltre, se un utente di Outlook sul Web allega un documento PDF non protetto e applica la protezione al messaggio, il messaggio eredita la protezione del messaggio. Gli utenti possono aprire gli allegati crittografati solo in applicazioni che supportano PDF protetti (ad esempio, il portale OME e il visualizzatore di Azure Information Protection).
+La crittografia PDF consente di proteggere i documenti PDF sensibili tramite comunicazioni protette o la collaborazione protetta. Per tutti i client Outlook, i messaggi e gli allegati PDF non protetti ereditano la protezione OME del criterio di prevenzione della perdita di dati (DLP) o della regola del flusso di posta in Exchange Online. Inoltre, se un utente di Outlook sul Web allega un documento PDF non protetto e applica la protezione al messaggio, il messaggio eredita la protezione del messaggio. Gli utenti possono aprire gli allegati crittografati solo in applicazioni che supportano PDF protetti (ad esempio, il portale OME e il visualizzatore di Azure Information Protection).
 
 > [!IMPORTANT]
 > Il client desktop di Outlook non supporta la crittografia PDF.
@@ -174,7 +174,7 @@ Sì. Tutti i messaggi di posta elettronica crittografati sono individuabili dall
 
 ## <a name="can-i-remove-encryption-from-email"></a>È possibile rimuovere la crittografia dalla posta elettronica?
 
-Gli amministratori possono configurare una regola del flusso di posta per rimuovere la crittografia dalla posta in uscita. Non è possibile rimuovere la crittografia utilizzando una regola del flusso di posta dai messaggi in arrivo.
+Gli amministratori possono configurare una regola del flusso di posta per rimuovere la crittografia. Non è possibile rimuovere la crittografia utilizzando una regola del flusso di posta dalla posta applicata da un'altra organizzazione, a meno che la posta non venga incririzzata utilizzando la protezione solo crittografia.
 
 ## <a name="is-delegated-access-supported"></a>L'accesso delegato è supportato?
 
@@ -205,7 +205,7 @@ Nella tabella seguente sono elencati i client supportati per le cassette postali
 
 Esistono attualmente due limitazioni note:
 
-- Non è possibile aprire allegati ai messaggi di posta elettronica ricevuti nei dispositivi mobili utilizzando Outlook mobile.
+- Non è possibile aprire allegati ai messaggi di posta elettronica ricevuti nei dispositivi mobili utilizzando Outlook Mobile.
 
 - Non è possibile l'assegnazione tramite un gruppo di sicurezza abilitato alla posta elettronica. Microsoft supporta solo l'accesso fornito dall'assegnazione diretta dell'utente alla cassetta postale condivisa e tale mapping automatico è abilitato per Exchange Online. Il mapping automatico è abilitato per impostazione predefinita per Exchange Online.
 

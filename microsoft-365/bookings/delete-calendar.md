@@ -9,16 +9,16 @@ ms.service: bookings
 localization_priority: Normal
 ms.assetid: 8c3a913c-2247-4519-894d-b6263eeb9920
 description: Usare l'interfaccia di amministrazione di Microsoft 365 o Windows PowerShell per eliminare i calendari di Bookings.
-ms.openlocfilehash: 1f8df15eafac7867f7ae852e344e1c5730362598
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 7407298adb402de79a1010b51544deee4b94cf5a
+ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454206"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50604021"
 ---
 # <a name="delete-a-booking-calendar-in-bookings"></a>Eliminare un calendario delle prenotazioni in Bookings
 
-Questo articolo spiega come eliminare un calendario delle prenotazioni indesiderato. È possibile eliminare il calendario delle prenotazioni nell'interfaccia di amministrazione di Microsoft 365 oppure usare PowerShell. Il calendario di Bookings è una cassetta postale in Exchange Online in modo da eliminare l'account utente corrispondente per eliminare il calendario delle prenotazioni.
+Questo articolo spiega come eliminare un calendario di prenotazione indesiderato. È possibile eliminare il calendario delle prenotazioni nell'interfaccia di amministrazione di Microsoft 365 oppure usare PowerShell. Il calendario di Bookings è una cassetta postale in Exchange Online in modo da eliminare l'account utente corrispondente per eliminare il calendario delle prenotazioni.
 
 > [!IMPORTANT]
 > Tutti i calendari di prenotazione creati nel 2017 o prima devono essere eliminati usando le istruzioni di PowerShell in questo argomento. Tutti i calendari di prenotazione creati nel 2018 o dopo possono essere eliminati nell'interfaccia di amministrazione di Microsoft 365.
@@ -87,7 +87,7 @@ Per eseguire questi passaggi, è necessario utilizzare una finestra di comando a
 6. Per verificare che il calendario sia stato eliminato, immettere il comando seguente:
 
    ```powershell
-    Get-EXOMailbox -RecipientTypeDetails Scheduling
+    Get-EXOMailbox -RecipientTypeDetails SchedulingMailbox
    ```
 
    Il calendario eliminato non verrà visualizzato nell'output.

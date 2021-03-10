@@ -16,16 +16,16 @@ ms.assetid: 9b7daf19-d5f2-415b-bc43-a0f5f4a585e8
 ms.collection:
 - M365-security-compliance
 description: Gli amministratori possono imparare a creare regole del flusso di posta (regole di trasporto) per crittografare e decrittografare i messaggi utilizzando la crittografia dei messaggi di Office 365.
-ms.openlocfilehash: 28486f601a79e294550bbceb48ad57069024fd5a
-ms.sourcegitcommit: ae3aa7f29be16d08950cf23cad489bc069aa8617
+ms.openlocfilehash: 8060309f350b50c2aadc9a703e7a57a4caf8808c
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "48408606"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50597228"
 ---
 # <a name="define-mail-flow-rules-to-encrypt-email-messages"></a>Definire le regole del flusso di posta per crittografare i messaggi di posta elettronica
 
-Gli amministratori globali possono creare regole del flusso di posta (note anche come regole di trasporto) per proteggere i messaggi di posta elettronica inviati e ricevuti. È possibile configurare regole per crittografare i messaggi di posta elettronica in uscita e rimuovere la crittografia dai messaggi crittografati provenienti dall'interno dell'organizzazione o dalle risposte ai messaggi crittografati inviati dall'organizzazione. È possibile utilizzare l'interfaccia di amministrazione di Exchange (EAC) o PowerShell di Exchange Online per creare queste regole. Oltre alle regole di crittografia generale, è possibile scegliere di abilitare o disabilitare le opzioni di crittografia di singoli messaggi per gli utenti finali.
+In quanto amministratore che gestisce Exchange Online, è possibile creare regole del flusso di posta (note anche come regole di trasporto) per proteggere i messaggi di posta elettronica inviati e ricevuti. È possibile configurare regole per crittografare i messaggi di posta elettronica in uscita e rimuovere la crittografia dai messaggi crittografati provenienti dall'interno dell'organizzazione o dalle risposte ai messaggi crittografati inviati dall'organizzazione. È possibile utilizzare l'interfaccia di amministrazione di Exchange (EAC) o PowerShell di Exchange Online per creare queste regole. Oltre alle regole di crittografia generale, è possibile scegliere di abilitare o disabilitare le opzioni di crittografia di singoli messaggi per gli utenti finali.
 
 Non è possibile crittografare la posta in ingresso da mittenti esterni all'organizzazione.
 
@@ -34,7 +34,7 @@ Se di recente è stata eseguita la migrazione da Active Directory RMS ad Azure I
 Per informazioni sui componenti che costituiscono le regole del flusso di posta e sul funzionamento delle regole del flusso di posta, vedere Regole del flusso di posta (regole di [trasporto) in Exchange Online.](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) Per ulteriori informazioni sul funzionamento delle regole del flusso di posta con Azure Information Protection, vedere Configurazione delle regole del flusso di posta di [Exchange Online per le etichette di Azure Information Protection.](https://docs.microsoft.com/azure/information-protection/deploy-use/configure-exo-rules)
 
 > [!IMPORTANT]
-> Per gli ambienti ibridi di Exchange, gli utenti locali possono inviare e ricevere posta crittografata utilizzando OME solo se la posta elettronica viene instradata tramite Exchange Online. Per configurare OME in un ambiente exchange [](https://docs.microsoft.com/Exchange/exchange-hybrid) ibrido, è necessario prima configurare la distribuzione ibrida utilizzando la procedura guidata di configurazione ibrida e quindi configurare il flusso di posta da [Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-1-configure-mail-to-flow-from-office-365-to-your-on-premises-email-server) al server di posta elettronica e configurare il flusso della posta dal server di posta elettronica a [Office 365.](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365) Dopo aver configurato il flusso di posta tramite Office 365, è possibile configurare le regole del flusso di posta per OME usando queste indicazioni.
+> Per gli ambienti ibridi di Exchange, gli utenti locali possono inviare e ricevere posta crittografata utilizzando OME solo se la posta elettronica viene instradata tramite Exchange Online. Per configurare OME in un ambiente ibrido [](https://docs.microsoft.com/Exchange/exchange-hybrid) di Exchange, è necessario prima configurare l'ambiente ibrido utilizzando la procedura guidata di configurazione ibrida e quindi configurare il flusso di posta da [Office 365](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-1-configure-mail-to-flow-from-office-365-to-your-on-premises-email-server) al server di posta elettronica e configurare il flusso della posta dal server di posta elettronica a [Office 365.](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#part-2-configure-mail-to-flow-from-your-email-server-to-office-365) Dopo aver configurato il flusso di posta tramite Office 365, è possibile configurare le regole del flusso di posta per OME usando queste indicazioni.
 
 ## <a name="create-mail-flow-rules-to-encrypt-email-messages-with-the-new-ome-capabilities"></a>Creare regole del flusso di posta per crittografare i messaggi di posta elettronica con le nuove funzionalità di OME
 
@@ -48,7 +48,7 @@ Per informazioni sui componenti che costituiscono le regole del flusso di posta 
 
 3. Nell'interfaccia di amministrazione di Microsoft 365 scegliere **Interfaccia di** amministrazione di \> **Exchange.**
 
-4. Nell'interfaccia di amministrazione di Exchange, andare a **Regole** del flusso di posta e selezionare Nuova \>  icona Crea nuova  ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **regola.** Per ulteriori informazioni sull'utilizzo dell'interfaccia di amministrazione di Exchange, vedere Interfaccia di amministrazione [di Exchange in Exchange Online.](https://docs.microsoft.com/exchange/exchange-admin-center)
+4. Nell'interfaccia di amministrazione di Exchange, andare a Regole del **flusso** di posta e \>  selezionare **Nuova** icona ![ Crea nuova ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **regola.** Per ulteriori informazioni sull'utilizzo dell'interfaccia di amministrazione di Exchange, vedere Interfaccia di amministrazione [di Exchange in Exchange Online.](https://docs.microsoft.com/exchange/exchange-admin-center)
 
 5. In **Nome** digitare un nome per la regola, ad esempio Crittografa posta per DrToniRamos@hotmail.com.
 
@@ -62,13 +62,13 @@ Per informazioni sui componenti che costituiscono le regole del flusso di posta 
 
       - Per immettere un nuovo nome, digitare un indirizzo di posta elettronica nella casella **dei** nomi di controllo e quindi selezionare **controlla nomi** \> **OK.**
 
-7. Per aggiungere altre condizioni, scegliere **Altre opzioni,** quindi **aggiungi condizione** e selezionare dall'elenco.
+7. Per aggiungere altre condizioni, scegliere **Altre opzioni,** quindi aggiungi **condizione** e selezionare dall'elenco.
 
    Ad esempio, per applicare la regola solo se  il destinatario si trova all'esterno dell'organizzazione, selezionare aggiungi condizione e quindi selezionare Il destinatario è **esterno/interno** All'esterno \> **dell'organizzazione** \> **OK.**
 
 8. Per abilitare la crittografia utilizzando le nuove funzionalità  di OME, in Eseguire le operazioni seguenti **selezionare** Modifica la sicurezza dei messaggi e quindi scegliere Applica crittografia dei messaggi di **Office 365 e protezione dei diritti.** Selezionare un modello RMS nell'elenco, scegliere **Salva** e quindi **OK.**
   
-  L'elenco dei modelli include tutti i modelli e le opzioni predefiniti, nonché tutti i modelli personalizzati creati per l'uso da Office 365. Se l'elenco è vuoto, assicurarsi di aver configurato la crittografia dei messaggi di Office 365 con le nuove funzionalità descritte in Configurare le nuove funzionalità di crittografia dei messaggi di [Office 365.](set-up-new-message-encryption-capabilities.md) Per informazioni sui modelli predefiniti, vedere Configurazione e gestione dei [modelli per Azure Information Protection.](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates) Per informazioni **sull'opzione Non inoltrare,** vedere [Opzione Non inoltrare per i messaggi di posta elettronica.](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails) Per informazioni sull'opzione **solo crittografia,** vedere [l'opzione Solo crittografia per i messaggi di posta elettronica.](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)
+  L'elenco dei modelli include tutti i modelli e le opzioni predefiniti, nonché tutti i modelli personalizzati creati per l'uso da Office 365. Se l'elenco è vuoto, assicurarsi di aver configurato la crittografia dei messaggi di Office 365 con le nuove funzionalità descritte in Configurare le nuove funzionalità di crittografia dei messaggi di [Office 365.](set-up-new-message-encryption-capabilities.md) Per informazioni sui modelli predefiniti, vedere Configurazione e gestione dei [modelli per Azure Information Protection.](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates) Per informazioni **sull'opzione Non inoltrare,** vedere [Opzione Non inoltrare per i messaggi di posta elettronica.](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails) Per informazioni sull'opzione **Solo crittografia,** vedere [Opzione Solo crittografia per i messaggi di posta elettronica.](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)
 
   È possibile scegliere **di aggiungere un'azione** se si desidera specificare un'altra azione.
 
@@ -86,19 +86,21 @@ Per informazioni sui componenti che costituiscono le regole del flusso di posta 
 
 6. Per abilitare la crittografia utilizzando le nuove funzionalità  di OME, in Eseguire le operazioni seguenti **scegliere** Modifica la sicurezza dei messaggi e quindi Applicare la crittografia dei messaggi di **Office 365** e la protezione dei diritti. Selezionare un modello RMS nell'elenco, scegliere **Salva** e quindi **OK.**
 
-   L'elenco dei modelli include tutti i modelli e le opzioni predefiniti, nonché tutti i modelli personalizzati creati per l'uso da Office 365. Se l'elenco è vuoto, assicurarsi di aver configurato la crittografia dei messaggi di Office 365 con le nuove funzionalità descritte in Configurare le nuove funzionalità di crittografia dei messaggi di [Office 365](set-up-new-message-encryption-capabilities.md)integrate in Azure Information Protection. Per informazioni sui modelli predefiniti, vedere Configurazione e gestione dei [modelli per Azure Information Protection.](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates) Per informazioni **sull'opzione Non inoltrare,** vedere [Opzione Non inoltrare per i messaggi di posta elettronica.](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails) Per informazioni sull'opzione **solo crittografia,** vedere [l'opzione Solo crittografia per i messaggi di posta elettronica.](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)
+   L'elenco dei modelli include tutti i modelli e le opzioni predefiniti, nonché tutti i modelli personalizzati creati per l'uso da Office 365. Se l'elenco è vuoto, assicurarsi di aver configurato la crittografia dei messaggi di Office 365 con le nuove funzionalità descritte in Configurare le nuove funzionalità di crittografia dei messaggi di [Office 365](set-up-new-message-encryption-capabilities.md)integrate in Azure Information Protection. Per informazioni sui modelli predefiniti, vedere Configurazione e gestione dei [modelli per Azure Information Protection.](https://docs.microsoft.com/information-protection/deploy-use/configure-policy-templates) Per informazioni **sull'opzione Non inoltrare,** vedere [Opzione Non inoltrare per i messaggi di posta elettronica.](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails) Per informazioni sull'opzione **Solo crittografia,** vedere [Opzione Solo crittografia per i messaggi di posta elettronica.](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails)
 
    È possibile scegliere **di aggiungere un'azione** se si desidera specificare un'altra azione.
 
-7. **Nell'elenco Fare quanto segue,** rimuovere tutte le azioni assegnate a **Modifica** sicurezza messaggio Applicare la versione precedente \> **di OME.**
+7. **Nell'elenco Fare quanto** segue, rimuovere tutte le azioni assegnate a **Modifica** protezione messaggio Applicare la versione precedente \> **di OME.**
 
 8. Scegliere **Salva**.
 
-## <a name="create-mail-flow-rules-to-remove-encryption-for-outgoing-email-messages-with-the-new-ome-capabilities"></a>Creare regole del flusso di posta per rimuovere la crittografia per i messaggi di posta elettronica in uscita con le nuove funzionalità di OME
+## <a name="create-mail-flow-rules-to-remove-encryption-for-email-messages-with-the-new-ome-capabilities"></a>Creare regole del flusso di posta per rimuovere la crittografia per i messaggi di posta elettronica con le nuove funzionalità di OME
 
-È possibile definire le regole del flusso di posta per attivare la rimozione della crittografia dei messaggi con le nuove funzionalità di OME utilizzando l'interfaccia di amministrazione di Exchange.
+È possibile definire le regole del flusso di posta per attivare la rimozione della crittografia dei messaggi con le nuove funzionalità OME utilizzando l'interfaccia di amministrazione di Exchange.
 
 ### <a name="use-the-eac-to-create-a-rule-to-remove-encryption-from-email-messages-with-the-new-ome-capabilities"></a>Utilizzo dell'interfaccia di amministrazione di Exchange per creare una regola per rimuovere la crittografia dai messaggi di posta elettronica con le nuove funzionalità di OME
+
+È possibile rimuovere la crittografia accessibile dall'organizzazione. Ciò significa che qualsiasi crittografia applicata dall'organizzazione o qualsiasi messaggio di posta elettronica ha solo crittografia.
 
 1. In un Web browser, usando un account aziendale o dell'istituto di istruzione a cui sono state concesse autorizzazioni di amministratore globale, accedere a [Office 365.](https://support.office.com/article/b9582171-fd1f-4284-9846-bdd72bb28426#ID0EAABAAA=Web_browser)
 
@@ -106,15 +108,15 @@ Per informazioni sui componenti che costituiscono le regole del flusso di posta 
 
 3. Nell'interfaccia di amministrazione di Microsoft 365 scegliere **Interfaccia di** amministrazione di \> **Exchange.**
 
-4. Nell'interfaccia di amministrazione di Exchange, andare a **Regole** del flusso di posta e selezionare Nuova \>  icona Crea nuova  ![ ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **regola.** Per ulteriori informazioni sull'utilizzo dell'interfaccia di amministrazione di Exchange, vedere Interfaccia di amministrazione [di Exchange in Exchange Online.](https://docs.microsoft.com/exchange/exchange-admin-center)
+4. Nell'interfaccia di amministrazione di Exchange, andare a Regole del **flusso** di posta e \>  selezionare **Nuova** icona ![ Crea nuova ](../media/457cd93f-22c2-4571-9f83-1b129bcfb58e.gif) \> **regola.** Per ulteriori informazioni sull'utilizzo dell'interfaccia di amministrazione di Exchange, vedere Interfaccia di amministrazione [di Exchange in Exchange Online.](https://docs.microsoft.com/exchange/exchange-admin-center)
 
 5. In **Nome** digitare un nome per la regola, ad esempio Rimuovi crittografia dalla posta in uscita.
 
-6. In **Applica questa regola se**, selezionare le condizioni in cui la crittografia deve essere rimossa dai messaggi. Aggiungi **il mittente si trova** \> **all'interno dell'organizzazione.** Aggiungere ora ulteriori condizioni per destinatari specifici, ad esempio Il **destinatario si trova** \> **all'esterno dell'organizzazione.**
+6. In **Applica questa regola se**, selezionare le condizioni in cui la crittografia deve essere rimossa dai messaggi. Aggiungi **Il destinatario si trova** \> **all'esterno dell'organizzazione** **o all'interno dell'organizzazione.**
 
 7. In **Eseguire le operazioni seguenti,** selezionare Modifica la **sicurezza** dei messaggi Rimuovere la crittografia dei messaggi di \> **Office 365 e la protezione dei diritti.**
 
-8. Selezionare **Salva**.
+8. Seleziona **Salva**.
 
 ## <a name="create-mail-flow-rules-for-office-365-message-encryption-without-the-new-capabilities"></a>Creare regole del flusso di posta per la crittografia dei messaggi di Office 365 senza le nuove funzionalità
 

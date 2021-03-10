@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 ms.assetid: 093a6d0d-890b-489e-9f46-b15687d3fe4f
 description: Informazioni su un utente attivo dell'analisi di utilizzo di Microsoft 365, dei report attività e delle metriche di adozione.
-ms.openlocfilehash: b4834d96b2f762d77f0d27309cf8c71a782b0dcd
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 7b8d15a88568c9af8b11a157dad2ec5f76ace6d3
+ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44402883"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50603973"
 ---
 # <a name="active-user-in-microsoft-365-usage-reports"></a>Utente attivo nei report sull'utilizzo di Microsoft 365
 
@@ -33,7 +33,7 @@ Un utente attivo dei prodotti Microsoft 365 per l'analisi dell'utilizzo di [Micr
   
 |**Prodotto**|**Definizione di utente attivo**|**Note**|
 |:-----|:-----|:-----|
-|Exchange Online  <br/> |Qualsiasi utente che abbia letto o inviato un messaggio di posta elettronica.  <br/> |Nessuna informazione del calendario è rappresentata, verranno aggiunte in un aggiornamento imminente.  <br/> |
+|Exchange Online  <br/> |Qualsiasi utente che abbia eseguito una delle azioni seguenti: Segna come già letto, invia messaggi, crea appuntamenti, invia convocazioni di riunione, accetta (come provvisorio) o rifiuta le convocazioni di riunione, annulla le riunioni.  <br/> |Nessuna informazione del calendario è rappresentata, verranno aggiunte in un aggiornamento imminente.  <br/> |
 |SharePoint Online  <br/> |Qualsiasi utente che abbia interagito con un file mediante la creazione, modifica, visualizzazione, eliminazione, condivisione interna o esterna o sincronizzazione con i client in tutti i siti o visualizzato una pagina in qualsiasi sito.  <br/> |La metrica utente attiva per SharePoint Online nell'app modello Analisi di utilizzo di Microsoft 365 riflette solo gli utenti che hanno fatto attività di file in un sito del team di SharePoint o in un sito di gruppo. L'app modello verrà aggiornata per sincronizzare la definizione con quella presente nei report sull'utilizzo nell'interfaccia di amministrazione.  <br/> |
 |OneDrive for Business  <br/> |Qualsiasi utente che abbia interagito con un file mediante la creazione, modifica, visualizzazione, eliminazione, condivisione interna o esterna o sincronizzazione con i client.  <br/> ||
 |Yammer  <br/> |Qualsiasi utente che abbia letto, pubblicato o espresso apprezzamento per un messaggio in Yammer.  <br/> ||

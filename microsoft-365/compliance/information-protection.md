@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Implementare Microsoft Information Protection (MIP) per proteggere le informazioni sensibili ovunque ci si trovi.
-ms.openlocfilehash: bf464fd4ea0314a86a10696f8bda62e85a70ea49
-ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
+ms.openlocfilehash: b65f5ea2d4c24bc1c2ef2a34e25150446902d940
+ms.sourcegitcommit: d3c1b08b3a8af29ef19ffe77da063920f28fe290
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50099702"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50572618"
 ---
 # <a name="microsoft-information-protection-in-microsoft-365"></a>Microsoft Information Protection in Microsoft 365.
 
@@ -41,8 +41,7 @@ Per informazioni su come gestire i dati, vedere [Microsoft Information Governanc
 > [!NOTE]
 > Per informazioni su come classificare ed etichettare i dati in Azure Purview, attualmente in anteprima, vedere  [Etichettare contenuto in Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label).
 > 
-> Per informazioni su questa versione recente, vedere il post di blog [Microsoft Information Protection e Microsoft Azure competenza: insieme è meglio](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-information-protection-and-microsoft-azure-purview/ba-p/1957481).
-
+> Per gli annunci di rilascio di Azure Purview, vedere i post di blog seguenti: [Microsoft Information Protection e Microsoft Azure Purview: l'unione fa la forza](https://techcommunity.microsoft.com/t5/microsoft-security-and/microsoft-information-protection-and-microsoft-azure-purview/ba-p/1957481) and [Azure Purview at Spring Ignite 2021](https://techcommunity.microsoft.com/t5/azure-purview/azure-purview-at-spring-ignite-2021/ba-p/2175919).
 
 
 Per comprendere l’insieme dei dati e identificare i dati importanti nell'ambiente ibrido, usare le funzionalità seguenti:
