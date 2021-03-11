@@ -15,12 +15,12 @@ ms.collection:
 - SPO_Content
 localization_priority: Normal
 description: Informazioni su Microsoft 365 Multi-Geo, come funziona Multi-Geo e quali posizioni geografiche sono disponibili per l'archiviazione dei dati.
-ms.openlocfilehash: a8eba731fac16e56ef66ac0a905de521dfa7a6c8
-ms.sourcegitcommit: b64f36d3873fa0041b24bec029deb73ccfdfdbac
+ms.openlocfilehash: ce8b752cc6a335249f9d8e03289fd16b04756ce9
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48877232"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712343"
 ---
 # <a name="plan-for-microsoft-365-multi-geo"></a>Piano per Microsoft 365 Multi-Geo
 
@@ -80,3 +80,7 @@ Per informazioni dettagliate sull'esperienza di Teams in un tenant Microsoft 365
 Per iniziare a configurare Microsoft 365 Multi-Geo, vedere [Configurare Microsoft 365 Multi-Geo](multi-geo-tenant-configuration.md).
 
 Dopo aver completato la configurazione, è necessario [eseguire la migrazione delle raccolte OneDrive dell'utente](move-onedrive-between-geo-locations.md) per consentire agli utenti di lavorare dalla propria posizione dati preferita.
+
+## <a name="related-topics"></a>Argomenti correlati
+
+[Configurazione di eDiscovery per Microsoft 365 Multi-Geo](https://docs.microsoft.com/microsoft-365/enterprise/multi-geo-ediscovery-configuration)

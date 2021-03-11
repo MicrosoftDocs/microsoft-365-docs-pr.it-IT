@@ -1,7 +1,7 @@
 ---
 title: Tabella DeviceLogonEvents nello schema di ricerca avanzata
 description: Informazioni sugli eventi di autenticazione o accesso nella tabella DeviceLogonEvents dello schema di ricerca avanzata
-keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, microsoft threat protection, Microsoft 365, mtp, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, logonevents, DeviceLogonEvents, autenticazione, accesso, accesso
+keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, microsoft threat protection, microsoft 365, mtp, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, logonevents, DeviceLogonEvents, autenticazione, accesso, accesso
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 60455c0a66548654da52544e3d7ece84aecb9cf3
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: 4b47d27855876eaec8512ecaa060875ad8d52a80
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145440"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712439"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
@@ -37,10 +37,10 @@ ms.locfileid: "50145440"
 
 
 
-La tabella nello schema di ricerca avanzata contiene informazioni sugli accessi degli utenti e altri eventi `DeviceLogonEvents` di autenticazione nei dispositivi. [](advanced-hunting-overview.md) Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
+La tabella nello schema di ricerca avanzata contiene informazioni sugli accessi degli utenti `DeviceLogonEvents` e altri eventi di autenticazione nei dispositivi. [](advanced-hunting-overview.md) Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
 
 >[!TIP]
-> Per informazioni dettagliate sui tipi di eventi (valori) supportati da una tabella, utilizzare il riferimento allo schema predefinito `ActionType` disponibile nel Centro sicurezza. [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
+> Per informazioni dettagliate sui tipi di eventi (valori) supportati da una tabella, utilizzare il riferimento allo schema predefinito `ActionType` disponibile nel Centro sicurezza.
 
 Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il riferimento sulla Ricerca avanzata](advanced-hunting-schema-tables.md).
 
@@ -55,7 +55,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `AccountSid` | stringa | Identificatore di sicurezza (SID) dell'account |
 | `Protocol` | stringa | Protocollo utilizzato durante la comunicazione |
 | `FailureReason` | stringa | Informazioni che spiegano perché l'azione registrata non è riuscita |
-| `LogonType` | stringa | Tipo di sessione di accesso, in particolare:<br><br> - **Interattivo:** l'utente interagisce fisicamente con il computer usando la tastiera e lo schermo locali<br><br> - **Accessi remoti interattivi (RDP):** l'utente interagisce con il computer in remoto tramite Desktop remoto, Servizi terminal, Assistenza remota o altri client RDP<br><br> - **Rete:** sessione avviata quando si accede al computer tramite PsExec o quando si accede a risorse condivise nel computer, ad esempio stampanti e cartelle condivise.<br><br> - **Batch** - Sessione avviata da attività pianificate<br><br> - **Servizio** - Sessione avviata dai servizi all'avvio<br> |
+| `LogonType` | stringa | Tipo di sessione di accesso, in particolare:<br><br> - **Interattivo:** l'utente interagisce fisicamente con il computer usando la tastiera e lo schermo locali<br><br> - **Accessi remoti interattivi (RDP):** l'utente interagisce con il computer in remoto tramite Desktop remoto, Servizi terminal, Assistenza remota o altri client RDP<br><br> - **Rete** : sessione avviata quando si accede al computer tramite PsExec o quando si accede a risorse condivise nel computer, ad esempio stampanti e cartelle condivise<br><br> - **Batch** - Sessione avviata da attività pianificate<br><br> - **Servizio** - Sessione avviata dai servizi all'avvio<br> |
 | `LogonId` | stringa | Identificatore di una sessione di accesso. Questo identificatore è univoco nello stesso computer solo tra un riavvio e l'altro |
 | `RemoteDeviceName` | stringa | Nome del computer che ha eseguito un'operazione remota nel computer interessato. A seconda dell'evento segnalato, questo nome può essere un nome di dominio completo (FQDN), un nome NetBIOS o un nome host senza informazioni sul dominio |
 | `RemoteIP` | stringa | Indirizzo IP connesso a |

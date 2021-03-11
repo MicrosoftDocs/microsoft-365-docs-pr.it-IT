@@ -5,7 +5,7 @@ author: msfttracyp
 manager: dansimp
 ms.date: 08/13/2020
 audience: Admin
-ms.topic: overview
+ms.topic: conceptual
 localization_priority: Normal
 search.appverid:
 - MET150
@@ -16,12 +16,12 @@ ms.collection:
 description: Sicurezza in Office 365, da EOP a Defender per Office 365 Piani 1 e 2, standard e rigide configurazioni di sicurezza e altro ancora. Comprendere cosa si ha e come proteggere le proprietà.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: cbe95946ab7214efded8feca39578c364b948df0
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: e1c6e768098cd59892c2572fb52497c873aef1a3
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287902"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50711941"
 ---
 # <a name="office-365-security-overview"></a>Panoramica della sicurezza di Office 365
 
@@ -44,7 +44,7 @@ Ogni abbonamento a Office 365 include funzionalità di sicurezza. Gli obiettivi 
 1. Microsoft Defender per Office 365 Piano 2 (Defender per Office P2)
 
 > [!NOTE]
-> Se l'abbonamento è stato acquistato ed è necessario implementare le funzionalità di sicurezza in questo *momento,* passare alla procedura descritta nell'articolo [Protezione dalle](protect-against-threats.md) minacce. Se non si ha di nuovo l'abbonamento e si vuole conoscere la licenza prima di iniziare, consultare Fatturazione > Prodotti nell'interfaccia di amministrazione di [Microsoft 365.](https://admin.microsoft.com/AdminPortal/#/homepage)
+> Se l'abbonamento è stato acquistato ed è necessario implementare le funzionalità di sicurezza in questo *momento,* passare alla procedura descritta nell'articolo [Protezione dalle](protect-against-threats.md) minacce. Se non si ha una nuova sottoscrizione e si vuole conoscere la licenza prima di iniziare, consultare Fatturazione > Prodotti nell'interfaccia di amministrazione di [Microsoft 365.](https://admin.microsoft.com/AdminPortal/#/homepage)
 
 La sicurezza di Office 365 si basa sulle protezioni principali offerte da EOP. EOP è presente in qualsiasi sottoscrizione in cui è possibile trovare le cassette postali di Exchange Online (tenere presente che tutti i prodotti di sicurezza qui descritti sono basati sul cloud).
 
@@ -74,7 +74,7 @@ If you have an Office 365 E3, or below, you have EOP, but with the option to buy
 
 ## <a name="the-office-365-security-ladder-from-eop-to-microsoft-defender-for-office-365"></a>La sicurezza di Office 365 da EOP a Microsoft Defender per Office 365
 
-![EOP e Microsoft Defender per Office 365 e la loro attenzione alla sicurezza, andando da Protezione e rilevamento per analizzare e rispondere. La configurazione dell'autenticazione della posta elettronica (almeno DKIM e DMARC) deve essere impostata per EOP e configurato.](../../media/tp_EOPATPP1P2Take6.gif#lightbox)
+![EOP e Microsoft Defender per Office 365 e la loro attenzione alla sicurezza, andando da Protezione e rilevamento per analizzare e rispondere. La configurazione dell'autenticazione della posta elettronica (almeno DKIM e DMARC) deve essere impostata per EOP e la configurazione.](../../media/tp_EOPATPP1P2Take6.gif#lightbox)
 
 > [!IMPORTANT]
 > Informazioni dettagliate su queste pagine: [Exchange Online Protection](exchange-online-protection-overview.md)e Defender per Office [365.](office-365-atp.md)
@@ -113,7 +113,7 @@ Vantaggi con **Defender per Office 365, Piano 2** (ad oggi):
 
 |Impedisci/Rileva|Investigare|Risposta|
 |---|---|---|
-|Le tecnologie includono tutto in EOP e Microsoft Defender per Office 365 P1 plus:<u1><li>Stesso</li>|<li>**Esplora minacce**</li><li>Tracker delle minacce</li><li>Visualizzazioni campagna</li>|<li>Analisi e risposta automatizzate (AIR)</li><li>AIR da Esplora minacce</li><li>AIR per gli utenti compromessi</li><li>API di integrazione SIEM per le indagini automatizzate</li>
+|Le tecnologie includono tutto in EOP e Microsoft Defender per Office 365 P1 plus:<u1><li>Stesso</li>|<li>**Esplora minacce**</li><li>Tracker delle minacce</li><li>Visualizzazioni campagna</li>|<li>Analisi e risposta automatizzate (AIR)</li><li>AIR da Threat Explorer</li><li>AIR per gli utenti compromessi</li><li>API di integrazione SIEM per le indagini automatizzate</li>
 
 Pertanto, Microsoft Defender per Office 365  P2 si espande sul lato dell'indagine e della risposta della casa e aggiunge una nuova forza di ricerca. Automazione.
 
@@ -122,7 +122,7 @@ In Microsoft Defender per Office 365 P2, lo strumento di ricerca principale è d
 Per informazioni dettagliate su Microsoft Defender per Office 365 P1 e P2, **[passare a questo articolo.](office-365-atp.md)**
 
 > [!TIP]
-> EOP e Microsoft Defender per Office 365 sono diversi anche per quanto riguarda gli utenti finali. In EOP e Defender per Office 365 P1, l'attenzione è la consapevolezza e quindi questi due servizi includono il componente aggiuntivo Segnala messaggio *di Outlook in* modo che gli utenti possano segnalare i messaggi di posta elettronica che trovano sospetti, per un'ulteriore analisi. <p> In Defender per Office 365 P2 (che contiene tutto in EOP e P1), lo stato attivo passa a un'ulteriore formazione per gli utenti finali e quindi il Security Operations Center ha accesso a un potente strumento *simulatore* di minacce e alle metriche dell'utente finale fornite. 
+> EOP e Microsoft Defender per Office 365 sono diversi anche per quanto riguarda gli utenti finali. In EOP e Defender per Office 365 P1, l'attenzione è la consapevolezza e quindi questi due servizi includono il componente aggiuntivo Segnala messaggio *di Outlook in* modo che gli utenti possano segnalare i messaggi di posta elettronica che trovano sospetti, per un'ulteriore analisi. <p> In Defender per Office 365 P2 (che contiene tutto in EOP e P1), lo stato attivo passa a un'ulteriore formazione per gli utenti finali e quindi il Centro operativo per la sicurezza ha accesso a un potente strumento *simulatore* di minacce e alle metriche dell'utente finale fornite. 
 
 ## <a name="microsoft-defender-for-office-365-plan-1-vs-plan-2-cheat-sheet"></a>Microsoft Defender per Office 365 Piano 1 e foglio trucchi piano 2
 
@@ -148,7 +148,7 @@ Questa guida di riferimento rapido consente di comprendere quali funzionalità s
 
 ## <a name="where-to-go-next"></a>Dove andare dopo
 
-If you're a Security Admin, you may need to configure DKIM or DMARC for your mail. È possibile implementare impostazioni di sicurezza "Strict" per gli utenti con priorità o cercare le novità del prodotto. Oppure, se si usa Security Ops, è possibile sfruttare i rilevamenti in tempo reale o Esplora minacce per analizzare e rispondere oppure formare il rilevamento degli utenti finali con il simulatore di attacchi. In entrambi i casi, di seguito sono riportati alcuni suggerimenti aggiuntivi su cosa esaminare successivamente.
+If you're a Security Admin, you may need to configure DKIM or DMARC for your mail. È possibile implementare preimpostazioni di sicurezza "Strict" per gli utenti con priorità o cercare le novità del prodotto. Oppure, se si usa Security Ops, è possibile sfruttare i rilevamenti in tempo reale o Esplora minacce per analizzare e rispondere oppure formare il rilevamento degli utenti finali con il simulatore di attacchi. In entrambi i casi, di seguito sono riportati alcuni suggerimenti aggiuntivi per gli elementi da esaminare successivamente.
 
 [Autenticazione della posta elettronica, tra cui SPF, DKIM e DMARC (con collegamenti alla configurazione di tutti e tre)](email-validation-and-authentication.md)
 

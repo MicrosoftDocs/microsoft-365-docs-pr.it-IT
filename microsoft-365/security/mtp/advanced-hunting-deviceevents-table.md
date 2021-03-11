@@ -1,7 +1,7 @@
 ---
 title: Tabella DeviceEvents nello schema di ricerca avanzata
 description: Informazioni su antivirus, firewall e altri tipi di eventi nella tabella degli eventi vari dei dispositivi (DeviceEvents) dello schema di ricerca avanzata
-keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, microsoft threat protection, Microsoft 365, mtp, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, eventi di sicurezza, antivirus, firewall, exploit guard, DeviceEvents
+keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, protezione dalle minacce Microsoft, Microsoft 365, mtp, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, eventi di sicurezza, antivirus, firewall, exploit guard, DeviceEvents
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1340464fbe71e919a60668cf7d1b2f535eb6d260
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: 02e0caed602ffa14a756f0cc8e695fc9fb953efc
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145326"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712475"
 ---
 # <a name="deviceevents"></a>DeviceEvents
 
@@ -37,10 +37,10 @@ ms.locfileid: "50145326"
 
 
 
-La tabella o gli eventi vari dei dispositivi nello schema di ricerca avanzata contengono informazioni sui vari tipi di evento, inclusi gli eventi attivati dai controlli di sicurezza, ad esempio Windows Defender Antivirus e `DeviceEvents` Protezione dagli exploit. [](advanced-hunting-overview.md) Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
+La tabella o gli eventi vari dei dispositivi nello schema di ricerca avanzata contengono informazioni sui vari tipi di evento, inclusi gli eventi attivati dai controlli di sicurezza, ad esempio Windows Defender Antivirus e `DeviceEvents` protezione dagli exploit. [](advanced-hunting-overview.md) Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
 
 >[!TIP]
-> Per informazioni dettagliate sui tipi di eventi (valori) supportati da una tabella, utilizzare il riferimento allo schema predefinito `ActionType` disponibile nel Centro sicurezza. [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
+> Per informazioni dettagliate sui tipi di eventi (valori) supportati da una tabella, utilizzare il riferimento allo schema predefinito `ActionType` disponibile nel Centro sicurezza.
 
 Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il riferimento sulla Ricerca avanzata](advanced-hunting-schema-tables.md).
 
@@ -72,7 +72,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `RemoteIP` | stringa | Indirizzo IP connesso a |
 | `RemotePort` | int | Porta TCP nel dispositivo remoto a cui era in corso la connessione |
 | `LocalIP` | stringa | Indirizzo IP assegnato al computer locale utilizzato durante la comunicazione |
-| `LocalPort` | int | Porta TCP nel computer locale utilizzato durante la comunicazione |
+| `LocalPort` | int | Porta TCP sul computer locale utilizzata durante la comunicazione |
 | `FileOriginUrl` | stringa | URL da cui è stato scaricato il file |
 | `FileOriginIP` | stringa | Indirizzo IP da cui è stato scaricato il file |
 | `AdditionalFields` | stringa | Ulteriori informazioni sull'evento in formato matrice JSON |

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 774676e15e9018b13674149b6a2e147a91000814
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: 6e12ddfc402f1bd420f57369cc6d54f2e670d710
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145500"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712379"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 
@@ -38,7 +38,7 @@ ms.locfileid: "50145500"
 La tabella nello schema di ricerca avanzata contiene informazioni sulle azioni post-recapito eseguite sui messaggi di posta elettronica `EmailPostDeliveryEvents` elaborati da Microsoft 365. [](advanced-hunting-overview.md) Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
 
 >[!TIP]
-> Per informazioni dettagliate sui tipi di eventi (valori) supportati da una tabella, utilizzare il riferimento allo schema predefinito `ActionType` disponibile nel Centro sicurezza. [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
+> Per informazioni dettagliate sui tipi di eventi (valori) supportati da una tabella, utilizzare il riferimento allo schema predefinito `ActionType` disponibile nel Centro sicurezza.
 
 Per ottenere ulteriori informazioni sui singoli messaggi di posta elettronica, è inoltre possibile utilizzare le tabelle [`EmailEvents`](advanced-hunting-emailevents-table.md) [`EmailAttachmentInfo`](advanced-hunting-emailattachmentinfo-table.md) , e [`EmailUrlInfo`](advanced-hunting-emailurlinfo-table.md) . Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il riferimento sulla Ricerca avanzata](advanced-hunting-schema-tables.md).
 
@@ -58,9 +58,9 @@ Per ottenere ulteriori informazioni sui singoli messaggi di posta elettronica, �
 ## <a name="supported-event-types"></a>Tipi di evento supportati
 Questa tabella acquisisce gli eventi con i valori `ActionType` seguenti:
 
-- **Correzione manuale: un** amministratore ha preso manualmente un'azione su un messaggio di posta elettronica dopo che è stato recapitato alla cassetta postale dell'utente. Sono incluse le azioni eseguite manualmente tramite [Esplora](../office-365-security/threat-explorer.md) minacce o le approvazioni di azioni di analisi e risposta [automatizzate (AIR).](mtp-autoir-actions.md)
+- **Correzione manuale: un** amministratore ha preso manualmente un'azione su un messaggio di posta elettronica dopo che è stato recapitato alla cassetta postale dell'utente. Sono incluse le azioni eseguite manualmente tramite [Esplora](../office-365-security/threat-explorer.md) minacce o l'approvazione di azioni di analisi e risposta [automatizzate (AIR).](mtp-autoir-actions.md)
 - **PHISH ZAP** - [Zero-hour auto purge (ZAP)](../office-365-security/zero-hour-auto-purge.md) took action on a phishing email after delivery.
-- **ZAP antimalware-** Zero-hour Auto Purge (ZAP) ha preso azione su un messaggio di posta elettronica trovato contenente malware dopo il recapito.
+- **ZAP antimalware:** zap (Zero-Hour Auto Purge) ha preso azione su un messaggio di posta elettronica trovato contenente malware dopo il recapito.
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)

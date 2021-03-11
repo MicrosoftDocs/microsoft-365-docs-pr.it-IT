@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 462ba35f584b45bbfeb0d8a3de3b118ba1c9e17c
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 3481190a615cfa8914b3623f09d4079468bd431f
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932323"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712115"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>Utilizzare i risultati delle query di ricerca avanzata
 
@@ -37,7 +37,7 @@ ms.locfileid: "49932323"
 
 [!INCLUDE [Prerelease information](../includes/prerelease.md)]
 
-Anche se è [](advanced-hunting-overview.md) possibile creare query di ricerca avanzata per restituire informazioni molto precise, è anche possibile utilizzare i risultati della query per ottenere ulteriori informazioni e analizzare attività e indicatori specifici. È possibile eseguire le azioni seguenti sui risultati della query:
+Anche se è [](advanced-hunting-overview.md) possibile creare query di ricerca avanzata per restituire informazioni molto precise, è anche possibile utilizzare i risultati delle query per ottenere ulteriori informazioni e analizzare attività e indicatori specifici. È possibile eseguire le azioni seguenti sui risultati della query:
 
 - Visualizzare i risultati come tabella o grafico
 - Esportare tabelle e grafici
@@ -94,13 +94,13 @@ Se hai a che fare con un elenco di valori non finiti, puoi usare l'operatore per
 
 ```kusto
 EmailEvents
-| where PhishFilterVerdict == "Phish"
-| summarize Count = count() by SenderFromDomain
+| where ThreatTypes has "Phish" 
+| summarize Count = count() by SenderFromDomain 
 | top 10 by Count
 ```
 Usa la visualizzazione grafico a torta per mostrare in modo efficace la distribuzione nei domini principali:
 
-![Immagine dei risultati delle query di ricerca avanzata visualizzati come grafico a torta a torta che mostra la distribuzione dei messaggi di posta elettronica ](../../media/advanced-hunting-pie-chart.jpg)
+![Immagine dei risultati delle query di ricerca avanzata visualizzati come grafico a torta grafico a torta che mostra la distribuzione di messaggi di posta elettronica ](../../media/advanced-hunting-pie-chart.jpg)
  *di phishing nei domini dei mittenti principali*
 
 #### <a name="file-activities-over-time"></a>Attività sui file nel tempo

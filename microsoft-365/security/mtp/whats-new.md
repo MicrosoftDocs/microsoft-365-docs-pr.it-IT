@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 72c6ec814c5f3317f582cb4bfb21858677fbb7e1
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 1f5fa231c371ca7a8d6a22ca0b4ff388fd89004c
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509123"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50711917"
 ---
 # <a name="whats-new-in-microsoft-365-defender"></a>Novità di Microsoft 365 Defender
 
@@ -39,8 +39,10 @@ Feed RSS: ricevere una notifica quando questa pagina viene aggiornata copiando e
 https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+functionality+in+Microsoft+365+defender%22&locale=en-us
 ```
 
+## <a name="march-2021"></a>Marzo 2021
+- [Tabella CloudAppEvents](advanced-hunting-cloudappevents-table.md) <br>Informazioni sugli eventi in varie app e servizi cloud coperti da Microsoft Cloud App Security. In questa tabella sono inoltre incluse informazioni precedentemente disponibili in `AppFileEvents` .
 ## <a name="february-2021"></a>Febbraio 2021
-- (Anteprima) Il Centro sicurezza [Microsoft 365 avanzato ( https://security.microsoft.com) ](https://security.microsoft.com) è ora disponibile in anteprima pubblica. Questa nuova esperienza porta Defender per Endpoint e Defender per Office 365 al centro. [Ulteriori informazioni sulle modifiche.](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center)
+- (Anteprima) Il Centro sicurezza [Microsoft 365 avanzato è https://security.microsoft.com) ](https://security.microsoft.com) ora disponibile in anteprima pubblica. Questa nuova esperienza porta Defender per Endpoint e Defender per Office 365 al centro. [Ulteriori informazioni sulle modifiche.](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center)
 
 ## <a name="september-2020"></a>Settembre 2020
 - [Tabella IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md) <br> Trovare eventi che coinvolgono un controller di dominio locale che esegue Active Directory (AD). In [questa tabella di](advanced-hunting-overview.md) schema di ricerca avanzata viene illustrata una serie di eventi correlati all'identità e di eventi di sistema nel controller di dominio.
@@ -65,6 +67,6 @@ https://docs.microsoft.com/api/search/rss?search=%22Lists+the+new+features+and+f
 - [Miglioramenti della ricerca avanzata](advanced-hunting-overview.md) <br> Ricerca proattiva delle minacce nell'area di lavoro moderna con Kusto Query Language e uno schema ottimizzato per la sicurezza.
 
 ## <a name="march-2019"></a>Marzo 2019
-- Ricerca avanzata <br> Pagina di destinazione per varie funzionalità di ricerca che consentono di individuare in modo proattivo minacce che interessano posta elettronica, dati, dispositivi e identità.
+- Ricerca avanzata <br> Pagina di destinazione per varie funzionalità di ricerca che consentono di individuare in modo proattivo minacce che interessano posta elettronica e dati, dispositivi e identità.
 - [Microsoft Secure Score](microsoft-secure-score.md) <br> Misurazione della posizione di sicurezza di un'organizzazione, con un numero maggiore che indica ulteriori azioni di miglioramento intraprese. Se si segue il punteggio di sicurezza, è possibile proteggere l'organizzazione dalle minacce. 
 - [Report](monitoring-and-reporting.md) <br>  Include una serie di schede che coprono un'ampia gamma di aree monitorate dagli analisti e dagli amministratori della sicurezza nell'ambito delle loro operazioni quotidiane.

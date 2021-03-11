@@ -15,16 +15,16 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.topic: article
+ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 89e72d703bd70647d6c2b00732315b8e5f015cc7
-ms.sourcegitcommit: a1846b1ee2e4fa397e39c1271c997fc4cf6d5619
+ms.openlocfilehash: 87149ab9c99168d62f5114555a46b8bfaee83ab2
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50167202"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712103"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>Panoramica del Centro sicurezza Microsoft 365 unificato
 
@@ -51,7 +51,7 @@ Il Centro sicurezza Microsoft 365 riunisce le funzionalità dei portali di sicur
 Se sono necessarie informazioni sulle modifiche del Centro sicurezza & e conformità di Office 365 o di Microsoft Defender Security Center, vedere:
 
 - [Defender per Office 365 nel Centro sicurezza Microsoft 365](microsoft-365-security-center-mdo.md)
-- [Defender per Endpoint nel Centro sicurezza Microsoft 365](microsoft-365-security-center-mde.md)
+- [Defender per endpoint nel Centro sicurezza Microsoft 365](microsoft-365-security-center-mde.md)
 
 ## <a name="what-to-expect"></a>Cosa aspettarsi
 
@@ -79,17 +79,17 @@ La snellizione dei centri di sicurezza crea un unico riquadro per l'analisi di e
 
 Ad esempio, facendo doppio clic sul  nome di un evento imprevisto con gravità elevata viene visualizzata una pagina che dimostra il vantaggio dei centri convergenza.
 
-![Incidente in più fasi che implica l'escalation dei privilegi su più endpoint, che mostra come vedere 16 dispositivi coinvolti e 9 utenti coinvolti.](../../media/converged-incident-info-3.png)
+![Incidente in più fasi che implica l'escalation dei privilegi in più endpoint, che mostra come vedere 16 dispositivi coinvolti e 9 utenti coinvolti.](../../media/converged-incident-info-3.png)
 
 > [!TIP]
-> La scheda **Utenti** convergenti è un buon punto per iniziare le richieste. Questa singola pagina consente di visualizzare informazioni per gli utenti provenienti da carichi di lavoro convergenti (Microsoft Defender per Endpoint, Microsoft Defender for Identity e MCAS, se lo si utilizza) e una serie di origini come Active Directory locale, Azure Active Directory, sincronizzato, locale e utenti di terze parti. Ulteriori informazioni sulla [nuova esperienza degli utenti.](investigate-users.md)
+> La scheda **Utenti** convergenti è un buon punto per iniziare le richieste. Questa singola pagina mostra informazioni per gli utenti provenienti da carichi di lavoro convergenti (Microsoft Defender per Endpoint, Microsoft Defender per l'identità e MCAS, se lo si utilizza) e una serie di origini come Active Directory locale, Azure Active Directory, sincronizzato, locale e utenti di terze parti. Ulteriori informazioni sulla [nuova esperienza degli utenti.](investigate-users.md)
 
-Le informazioni sull'incidente mostrano le specifiche dell'utente/identità e i dispositivi a rischio, oltre alle cassette postali interessate. Inoltre, correla tutte le **informazioni dell'indagine** e raccoglie **prove.** Ciò consente agli amministratori e ai team delle operazioni di sicurezza di eseguire il pivot da un avviso ad alto rischio agli utenti e alle cassette postali interessati. Osservando le schede **Operazioni** non consentite nella parte superiore di questa pagina, sono disponibili altri pivot di sicurezza chiave da questa singola posizione.
+Le informazioni sull'incidente mostrano le specifiche dell'utente/identità e i dispositivi a rischio, oltre alle cassette postali interessate. Inoltre, correla tutte le **informazioni dell'indagine** e raccoglie **prove.** In questo modo gli amministratori e i team delle operazioni di sicurezza possono eseguire più facilmente il pivot da un avviso ad alto rischio agli utenti e alle cassette postali interessati. Osservando le schede **Operazioni** non consentite nella parte superiore di questa pagina, sono disponibili altri pivot di sicurezza chiave da questa singola posizione.
 
 > [!IMPORTANT]
 > Nella parte superiore di qualsiasi pagina per un evento imprevisto specifico verranno visualizzate le schede **Riepilogo,** **Avvisi,** **Dispositivi,** **Utenti,** Cassette **postali,** Indagini e **Prove.**
 
-Se **si seleziona Analisi,** viene aperta una pagina con un grafico dell'analisi in corso e uno stato, ad esempio in attesa di approvazione, per la correzione. Prendere tempo per selezionare eventi imprevisti specifici nell'ambiente, eseguire il drill-down in queste schede e praticare la creazione di un profilo per diversi tipi di minacce. La familiarità trarrà vantaggio da eventuali indagini più urgenti.
+Se **si seleziona Analisi,** viene aperta una pagina con un grafico dell'analisi in corso e uno stato, ad esempio in attesa di approvazione, per la correzione. Prendere tempo per selezionare eventi imprevisti specifici nell'ambiente, eseguire il drill-down in queste schede e praticare la creazione di un profilo per diversi tipi di minacce. La familiarità trarrà vantaggio da eventuali indagini successive pressanti.
 
 ## <a name="improved-processes"></a>Processi migliorati
 
@@ -116,7 +116,7 @@ I report sono anche unificati nel Centro sicurezza Microsoft 365. Gli amministra
 
 La **home** page mostra molte delle schede comuni necessarie ai team di sicurezza. La composizione di schede e dati dipende dal ruolo dell'utente. Poiché il Centro sicurezza Microsoft 365 usa il controllo dell'accesso basato sui ruoli, ruoli diversi visualizzano schede più significative per il loro lavoro quotidiano.  
 
-Queste informazioni a colpo d'occhio consentono di tenere il passo con le attività più recenti nell'organizzazione. Il Centro sicurezza Microsoft 365 riunisce segnali provenienti da origini diverse per presentare una visione olistica dell'ambiente Microsoft 365.
+Queste informazioni a colpo d'occhio consentono di tenere il passo con le attività più recenti nell'organizzazione. Il Centro sicurezza Microsoft 365 riunisce i segnali provenienti da origini diverse per presentare una visione olistica dell'ambiente Microsoft 365.
 
 Le carte rientrano nelle seguenti categorie:
 
@@ -130,9 +130,9 @@ Tenere traccia e rispondere alle minacce emergenti con la seguente esperienza in
 
 - Una migliore copertura dei dati tra Microsoft Defender per Endpoint e Microsoft Defender per Office 365, rendendo possibile la gestione combinata degli incidenti, l'indagine automatica, la correzione e la ricerca proattiva o reattiva delle minacce nel dominio. 
 - Rilevamenti e mitigazioni correlati alla posta elettronica da Microsoft Defender per Office 365, oltre ai dati dell'endpoint già disponibili da Microsoft Defender per Endpoint.
-- Una visualizzazione degli eventi imprevisti correlati alle minacce che aggregano gli avvisi in storie di attacco end-to-end in Microsoft Defender for Endpoint e Microsoft Defender per Office 365 per ridurre la coda di lavoro, oltre a semplificare e velocizzare l'indagine.
+- Una visualizzazione degli eventi imprevisti correlati alle minacce che aggregano gli avvisi nelle storie di attacco end-to-end in Microsoft Defender for Endpoint e Microsoft Defender per Office 365 per ridurre la coda di lavoro, oltre a semplificare e velocizzare l'indagine.
 - Tentativi di attacco rilevati e bloccati dalle soluzioni di Microsoft 365 Defender. Sono inoltre disponibili dati che è possibile utilizzare per eseguire azioni preventive che attenuano il rischio di ulteriore esposizione e aumentano la resilienza. 
-- Progettazione avanzata che mette sotto i riflettori informazioni utili per identificare rapidamente i dati su cui concentrarsi, analizzare e sfruttare i report.
+- Progettazione avanzata che mette sotto i riflettori le informazioni utili per identificare rapidamente i dati su cui concentrarsi, analizzare e sfruttare i report.
 
 ## <a name="a-centralized-learning-hub"></a>Hub di apprendimento centralizzato
 
@@ -145,7 +145,7 @@ L'hub di apprendimento si apre con percorsi di apprendimento organizzati su argo
 Dopo aver fatto clic sul contenuto, può essere utile aggiungere un segnalibro a questo sito e organizzare i segnalibri in una cartella "Sicurezza" o "Critica". Per visualizzare tutti i percorsi di apprendimento, fai clic sul collegamento Mostra tutto nel pannello principale.
 
 > [!NOTE]
-> Nella parte  superiore dell'hub di apprendimento del Centro sicurezza Microsoft 365 sono disponibili filtri utili che consentono di scegliere tra i prodotti (attualmente Microsoft 365 Defender, Microsoft Defender for Endpoint e Microsoft Defender per Office 365). Si noti che è elencato il numero di risorse di apprendimento per ogni sezione, che può aiutare gli studenti a tenere traccia del numero di risorse disponibili per la formazione e l'apprendimento.
+> Nella parte  superiore dell'hub di apprendimento del Centro sicurezza Microsoft 365 sono disponibili filtri utili che consentono di scegliere tra i prodotti (attualmente Microsoft 365 Defender, Microsoft Defender per Endpoint e Microsoft Defender per Office 365). Si noti che è elencato il numero di risorse di apprendimento per ogni sezione, che può aiutare gli studenti a tenere traccia del numero di risorse disponibili per la formazione e l'apprendimento.
 >
 > Oltre al filtro prodotto, sono elencati argomenti correnti, tipi di risorse (dai video ai webinar), livelli di familiarità o esperienza con le aree di sicurezza, i ruoli di sicurezza e le funzionalità del prodotto.
 
@@ -161,12 +161,12 @@ Usa il **pulsante Questo prodotto** per il feedback *del* prodotto:
     1. Fai clic con il pulsante destro del mouse sul pulsante e su "Apri in una nuova scheda" se vuoi continuare a leggere queste indicazioni.
 2. Verrà visualizzato il **forum uservoice.**
 3. Sono disponibili 2 opzioni:
-    1. Scorrere verso il basso fino alla casella di testo Come è possibile migliorare la conformità o proteggere meglio gli utenti *in Office 365?* e incollare nel Centro sicurezza *Microsoft 365.* Puoi cercare nei risultati un'idea come la tua e votarla in modo up-vote oppure usare il pulsante **Per pubblicare una nuova idea.**
+    1. Scorrere verso il basso fino alla casella di testo Come è possibile migliorare la conformità o proteggere meglio gli utenti *in Office 365?* e incollare nel Centro *sicurezza Microsoft 365.* Puoi cercare nei risultati un'idea come la tua e votarla in modo up-vote oppure usare il pulsante **Per pubblicare una nuova idea.**
     1. Se si è certi che il problema sia già stato segnalato e si  desidera aumentarne il profilo con un voto (o voti), usare la casella Commenti e suggerimenti sul lato destro di UserVoice. Cercare il Centro sicurezza *Microsoft 365,* **individuare il problema e usare il pulsante di voto** per aumentarne lo stato.
 
 Usa *questa pagina per* commenti e suggerimenti sull'articolo stesso. Grazie per il feedback. La tua voce ci aiuta a migliorare i prodotti.
 
-### <a name="explore-what-the-security-center-has-to-offer"></a>Scopri cosa offre il Centro sicurezza
+### <a name="explore-what-the-security-center-has-to-offer"></a>Esplorare le funzionalità del Centro sicurezza
 
 Continuare a esplorare le funzionalità e le funzionalità nel Centro sicurezza Microsoft 365:
 

@@ -1,7 +1,7 @@
 ---
 title: Tabella DeviceNetworkEvents nello schema di ricerca avanzata
 description: Informazioni sugli eventi di connessione di rete su cui è possibile eseguire query dalla tabella DeviceNetworkEvents dello schema di ricerca avanzata
-keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, microsoft threat protection, Microsoft 365, mtp, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, devicenetworkevents, NetworkCommunicationEvents, connessione di rete, ip remoto, ip locale
+keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, microsoft threat protection, microsoft 365, mtp, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, devicenetworkevents, NetworkCommunicationEvents, connessione di rete, ip remoto, ip locale
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c9509c76e5fa945c693e67f394b6432f939b58a5
-ms.sourcegitcommit: 005028af7c5a6b2e95f17a0037958131484d9e73
+ms.openlocfilehash: 65b9b7608b39f802cc82c62b87d7104ee4ff4304
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50145332"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712427"
 ---
 # <a name="devicenetworkevents"></a>DeviceNetworkEvents
 
@@ -40,7 +40,7 @@ ms.locfileid: "50145332"
 La `DeviceNetworkEvents` tabella nello schema di ricerca [avanzata](advanced-hunting-overview.md) contiene informazioni sulle connessioni di rete e sugli eventi correlati. Usare questo riferimento per creare query che restituiscono informazioni dalla tabella.
 
 >[!TIP]
-> Per informazioni dettagliate sui tipi di eventi (valori) supportati da una tabella, utilizzare il riferimento allo schema predefinito `ActionType` disponibile nel Centro sicurezza. [](advanced-hunting-schema-tables.md?#get-schema-information-in-the-security-center)
+> Per informazioni dettagliate sui tipi di eventi (valori) supportati da una tabella, utilizzare il riferimento allo schema predefinito `ActionType` disponibile nel Centro sicurezza.
 
 Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il riferimento sulla Ricerca avanzata](advanced-hunting-schema-tables.md).
 
@@ -59,7 +59,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `LocalIPType` | stringa | Tipo di indirizzo IP, ad esempio Public, Private, Reserved, Loopback, Teredo, FourToSixMapping e Broadcast |
 | `RemoteIPType` | stringa | Tipo di indirizzo IP, ad esempio Public, Private, Reserved, Loopback, Teredo, FourToSixMapping e Broadcast |
 | `InitiatingProcessSHA1` | stringa | SHA-1 del processo (file immagine) che ha avviato l'evento |
-| `InitiatingProcessSHA256` | stringa | SHA-256 del processo (file immagine) che ha avviato l'evento. (questo campo in genere non viene popolato: usare la colonna SHA1, se disponibile). |
+| `InitiatingProcessSHA256` | stringa | SHA-256 del processo (file di immagine) che ha avviato l'evento. (questo campo in genere non viene popolato: usare la colonna SHA1, se disponibile). |
 | `InitiatingProcessMD5` | stringa | Hash MD5 del processo (file immagine) che ha avviato l'evento |
 | `InitiatingProcessFileName` | stringa | Nome del processo che ha avviato l'evento |
 | `InitiatingProcessFileSize` | long | Dimensioni del file che ha eseguito il processo responsabile dell'evento |

@@ -3,7 +3,7 @@ title: Routing di rete informato di Microsoft 365
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 12/22/2020
+ms.date: 03/10/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -14,12 +14,12 @@ ms.collection:
 - Ent_O365
 - Strat_O365_Enterprise
 description: Routing di rete informato di Microsoft 365
-ms.openlocfilehash: 367f83684a4a200e3ddd630e1412c756d7093da1
-ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
+ms.openlocfilehash: 5275f8ea55afaf621555b440e7fae4a6d11cad91
+ms.sourcegitcommit: 6e4ddf35aaf747599f476f9988bcef02cacce1b6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "49749552"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50717588"
 ---
 # <a name="microsoft-365-informed-network-routing-preview"></a>Routing di rete informato di Microsoft 365 (anteprima)
 
@@ -32,7 +32,7 @@ Il routing di rete informato è una funzionalità che integra varie applicazioni
 
 Il routing di rete informato fornisce un canale di condivisione dei dati bidirezionale tra Microsoft e la soluzione SD-WAN. Per ogni sede e circuito Internet configurato, Microsoft condivide periodicamente il feedback con la soluzione SD-WAN sulla qualità delle esperienze delle applicazioni di Microsoft 365 selezionate per il traffico di rete associato a ogni circuito Internet specifico. Usando questo feedback, la soluzione SD-WAN può quindi eseguire azioni di ripristino intelligenti instradamento del traffico delle applicazioni di Microsoft 365 tramite collegamenti disponibili alternativi. 
 
-Le degradazioni della qualità del servizio nel percorso di un determinato circuito Internet, ad esempio un aumento della latenza o un'elevata perdita di pacchetti, sono difficili da rilevare in modo continuo. Queste degradazioni possono essere dannose per le esperienze utente per applicazioni come Exchange Online, SharePoint, OneDrive e Microsoft Teams. I sintomi più comuni includono la ricerca lenta del contenuto di Exchange, tempi di trasferimento elevati quando si interagisce con le raccolte documenti di SharePoint o OneDrive o una scarsa qualità delle chiamate o delle riunioni in Microsoft Teams.
+Le degradazioni della qualità del servizio nel percorso di un determinato circuito Internet, ad esempio un aumento della latenza o un'elevata perdita di pacchetti, sono difficili da rilevare in modo continuo. Queste degradazioni possono essere dannose per le esperienze utente per applicazioni come Exchange Online, SharePoint, OneDrive e Microsoft Teams. I sintomi comuni includono la ricerca lenta del contenuto di Exchange, tempi di trasferimento elevati quando si interagisce con le raccolte documenti di SharePoint o OneDrive o una scarsa qualità delle chiamate o delle riunioni in Microsoft Teams.
 
 Il meccanismo di feedback e ripristino all'interno del routing informato sulla rete cerca di rilevare dinamicamente tali problemi in tempo quasi reale e informa la soluzione SD-WAN distribuita di eseguire azioni di ripristino automatico.
 
@@ -59,7 +59,7 @@ Nel caso in cui non vi sia almeno un circuito di rete che fornisce l'accesso dir
 
 ### <a name="application-usage"></a>Utilizzo dell'applicazione
 
-I dati sull'esperienza dell'applicazione (riflessi tramite metriche di qualità di rete) vengono raccolti tramite l'uso di Microsoft Outlook nei dispositivi che eseguono Windows, Teams, SharePoint e OneDrive. Quando si valuta l'integrità di un circuito di rete, non viene preso in considerazione altro traffico di applicazioni.
+I dati sull'esperienza delle applicazioni (riflessi tramite metriche di qualità di rete) vengono raccolti tramite l'uso di applicazioni client Microsoft specifiche. Le metriche di Exchange riflettono l'utilizzo del client Outlook e di alcuni utilizzi di Outlook Web App. Le metriche di SharePoint e OneDrive riflettono l'utilizzo degli endpoint di SharePoint specifici del tenant, indipendentemente dall'applicazione client. Le metriche di Teams riflettono l'utilizzo del client desktop di Teams. Quando si valuta l'integrità di un circuito di rete, non viene preso in considerazione altro traffico di applicazioni.
 
 ## <a name="enabling-informed-network-routing"></a>Abilitazione del routing di rete informato
 
@@ -113,7 +113,7 @@ Selezionare **Fine** e quindi chiudere il riquadro di configurazione della soluz
 
 Gran parte della configurazione verrà eseguita per il routing di rete informato all'interno della soluzione SD-WAN, ad esempio la configurazione della modalità di instradamento del traffico in circostanze normali e i percorsi alternativi da utilizzare se vengono rilevati problemi. Per informazioni dettagliate su questi passaggi di configurazione, consultare il provider di soluzioni SD-WAN.
 
-Ogni posizione dell'ufficio deve essere configurata nell'interfaccia di amministrazione di Microsoft 365 in modo che il routing di rete informato possa identificare correttamente il traffico associato ai circuiti di rete che forniscono connettività a queste posizioni.
+Ogni posizione dell'ufficio deve essere configurata nell'interfaccia di amministrazione di Microsoft 365 in modo che il routing di rete informato possa identificare correttamente il traffico associato ai circuiti di rete che forniscono la connettività a queste posizioni.
 
 Le posizioni di Office possono essere rilevate automaticamente come parte della raccolta continua di telemetria di rete di Microsoft. Di conseguenza, alcune posizioni potrebbero essere pre-popolate nell'interfaccia di amministrazione per il tenant. 
 
@@ -146,7 +146,7 @@ La funzionalità di routing di rete informata può essere disabilitata per l'int
 
 ### <a name="step-1-open-sd-wan-solution-configuration-options"></a>Passaggio 1: Aprire le opzioni di configurazione della soluzione SD-WAN
 
-[Nell'interfaccia di amministrazione di Microsoft 365](https://admin.microsoft.com/) selezionare Integrità > **Connettività** di rete nel riquadro di spostamento sinistro.
+Nell'interfaccia di amministrazione di [Microsoft 365](https://admin.microsoft.com/) selezionare **> connettività** di rete nel riquadro di spostamento a sinistra.
 
 Selezionare **Impostazioni > soluzione SD-WAN** per aprire il riquadro di configurazione del routing di rete informato.
 
