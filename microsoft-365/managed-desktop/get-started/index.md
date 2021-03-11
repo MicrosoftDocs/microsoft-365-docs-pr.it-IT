@@ -6,19 +6,21 @@ ms.service: m365-md
 author: jaimeo
 ms.author: jaimeo
 ms.localizationpriority: normal
-ms.openlocfilehash: 141eb16ae77c44c51358c07a74f5050eb07dc26f
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 49cf658c7d146f75d54d1f74f0034db64c3cc5dc
+ms.sourcegitcommit: d3c1b08b3a8af29ef19ffe77da063920f28fe290
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509279"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50572553"
 ---
 # <a name="get-started-with-microsoft-managed-desktop"></a>Guida introduttiva a Microsoft Managed Desktop
 
-Ora che è stata eseguita la registrazione al servizio, seguire questa procedura per confermare i contatti dell'amministratore, regolare le impostazioni di accesso condizionale, assegnare le licenze agli utenti, abilitare l'Enterprise State Roaming, ottenere e configurare i dispositivi, preparare gli utenti e distribuire app sui dispositivi.
+A questo punto, quando si è pronti per iscriversi, aprire [Microsoft Endpoint Manager](https://endpoint.microsoft.com/) e passare a **Amministrazione Tenant**. Selezionare **Registrazione tenant** sotto la sottosezione di **Microsoft Managed Desktop**, quindi seguire la procedura guidata per registrare il tenant con Microsoft Managed Desktop.
 
 > [!NOTE]
-> Questo è l'ordine consigliato da seguire, ma la sequenza può essere flessibile.
+> Per completare la registrazione è necessario aver eseguito l'accesso come amministratore globale. Per altre informazioni, vedere il [portale di amministrazione](access-admin-portal.md) per dettagli.
+
+Al termine della registrazione, eseguire la procedura seguente per configurare il servizio. Questo è l'ordine consigliato da seguire, ma la sequenza può essere flessibile. 
 
 1. [Aggiungere e verificare i contatti degli amministratori nel portale di amministrazione](add-admin-contacts.md)
 2. [Modificare le impostazioni dopo la registrazione](conditional-access.md)
