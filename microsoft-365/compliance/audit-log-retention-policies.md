@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: I criteri di conservazione dei log di controllo fanno parte delle nuove funzionalità di Audit avanzato di Microsoft 365. Un criterio di conservazione dei log di controllo consente di specificare quanto a lungo conservare i log di controllo nell'organizzazione.
-ms.openlocfilehash: eeddf4c963284acaa908e07ddfdae77ec0bb080c
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: fd7e5dc37daad220257b4203679c6bb765140385
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114935"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712046"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Gestire i criteri di conservazione dei log di controllo
 
@@ -47,7 +47,7 @@ Audit avanzato in Microsoft 365 include un criterio di conservazione dei log di 
 
 - Un'organizzazione può avere un massimo di 50 criteri di conservazione dei log di controllo.
 
-- Per conservare un log di controllo di per più di 90 giorni, l'utente che ha generato il log di controllo deve avere una licenza di Office 365 E5 o Microsoft 365 E5 o una licenza per il componente aggiuntivo Audit Microsoft 365 E5 Compliance o E5 eDiscovery.
+- Per conservare un log di controllo per più di 90 giorni (e fino a un anno), l'utente che genera il log di controllo (eseguendo un’attività controllata) deve avere una licenza di Office 365 E5 o Microsoft 365 E5 oppure una licenza per il componente aggiuntivo Audit Microsoft 365 E5 Compliance o E5 eDiscovery. Per conservare i log di controllo per 10 anni, all'utente che genera il log di controllo deve anche essere assegnata una licenza per il componente aggiuntivo di conservazione dei log di controllo di 10 anni oltre a una licenza E5.
 
 - Tutti i criteri di conservazione dei log di controllo personalizzati (creati dall'organizzazione) hanno priorità rispetto al criterio di conservazione predefinito. Se ad esempio si crea un criterio di conservazione dei log di controllo per l'attività delle cassette postali di Exchange con un periodo di conservazione più breve di un anno, i record di controllo delle attività delle cassette postali di Exchange verranno conservati per la durata più breve specificata dal criterio personalizzato.
 

@@ -1,5 +1,5 @@
 ---
-title: Collaborare con gli utenti guest in un team
+title: Collaborazione con gli utenti guest in un team
 ms.author: mikeplum
 author: MikePlumleyMSFT
 manager: serdars
@@ -14,167 +14,167 @@ ms.collection:
 - m365initiative-externalcollab
 ms.custom:
 - seo-marvel-apr2020
-localization_priority: Normal
+localization_priority: Priority
 f1.keywords: NOCSH
-description: Informazioni sui passaggi di configurazione di Microsoft 365 necessari per configurare un team per la collaborazione su attività, conversazioni e documentazione con gli utenti guest in Teams.
-ms.openlocfilehash: 66c5692dd8cd233d8b3639f8ce0755ce51b60c0a
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
-ms.translationtype: MT
+description: Informazioni sulla procedura di configurazione di Microsoft 365 necessaria per consentire a un team di comunicare, collaborare ad attività e documenti con utenti guest in Teams.
+ms.openlocfilehash: 986f9c1f343c8ccc3d76557291938d170923c89b
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233075"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712319"
 ---
-# <a name="collaborate-with-guests-in-a-team"></a>Collaborare con gli utenti guest in un team
+# <a name="collaborate-with-guests-in-a-team"></a>Collaborazione con gli utenti guest in un team
 
-Se è necessario collaborare con gli utenti guest tra documenti, attività e conversazioni, è consigliabile usare Microsoft Teams. Teams offre tutte le funzionalità di collaborazione disponibili in Office e SharePoint con chat persistente e un set personalizzabile ed estendibile di strumenti di collaborazione in un'esperienza utente unificata.
+Se occorre collaborare con utenti guest a documenti e attività e comunicare, è consigliabile usare Microsoft Teams. Teams offre tutte le funzionalità di collaborazione disponibili in Office e SharePoint con una chat persistente e un set personalizzabile ed estendibile di strumenti di collaborazione in un'esperienza utente unificata.
 
-In questo articolo verranno descritti i passaggi di configurazione di Microsoft 365 necessari per configurare un team per la collaborazione con gli utenti guest. Dopo aver configurato l'accesso guest, è possibile invitare utenti guest a team seguendo la procedura descritta in [Aggiungere guest a un team in Teams.](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f)
+Questo articolo illustra la procedura di configurazione di Microsoft 365 necessaria per consentire a un team di collaborare con utenti guest. Dopo aver configurato l'accesso agli utenti guest, è possibile invitarli ai team seguendo la procedura descritta in [Aggiungere utenti guest a un team in Teams](https://support.microsoft.com/office/fccb4fa6-f864-4508-bdde-256e7384a14f).
 
 ## <a name="video-demonstration"></a>Dimostrazione video
 
-In questo video vengono illustrati i passaggi di configurazione descritti in questo documento.</br>
+Il video mostra la procedura di configurazione descritta in questo documento.</br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE44NTr?autoplay=false]
 
 ## <a name="azure-external-collaboration-settings"></a>Impostazioni di collaborazione esterna di Azure
 
-La condivisione in Microsoft 365 è regolata al livello più alto dalle impostazioni di collaborazione esterna [B2B in Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations) Se la condivisione guest è disabilitata o limitata in Azure AD, questa impostazione sostituisce tutte le impostazioni di condivisione configurate in Microsoft 365.
+La condivisione in Microsoft 365 è regolata al livello più alto dalle [impostazioni di collaborazione esterna B2B in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Se in Azure AD la condivisione con gli utenti guest è disabilitata o limitata, questa impostazione sovrascrive tutte le impostazioni di condivisione configurate in Microsoft 365.
 
 Controllare le impostazioni di collaborazione esterna B2B per assicurarsi che la condivisione con gli utenti guest non sia bloccata.
 
-![Screenshot della pagina delle impostazioni delle relazioni aziendali di Azure Active Directory](../media/azure-ad-organizational-relationships-settings.png)
+![Screenshot della pagina delle impostazioni di Organizational Relationships di Azure Active Directory](../media/azure-ad-organizational-relationships-settings.png)
 
-Per impostare le impostazioni di collaborazione esterna
+Per configurare le impostazioni di collaborazione esterna.
 
-1. Accedere ad Azure Active Directory all'indirizzo [https://aad.portal.azure.com](https://aad.portal.azure.com) .
-2. Nel riquadro di spostamento sinistro fare clic su **Azure Active Directory.**
-3. Fare **clic su Identità esterne.**
-4. Nel riquadro **di spostamento sinistro** della schermata Introduzione fare clic su Impostazioni collaborazione **esterna.**
-5. Verificare che **gli amministratori e gli utenti** nel  ruolo di mittente dell'invito guest possano invitare e che i membri possano invitare siano entrambi impostati su **Sì.**
+1. Accedere ad Azure Active Directory su [https://aad.portal.azure.com](https://aad.portal.azure.com).
+2. Nel riquadro di spostamento a sinistra, fare clic su **Azure Active Directory**.
+3. Fare clic su **Identità esterne**.
+4. Nella schermata **Attività iniziali**, nel riquadro di spostamento a sinistra, fare clic su **Impostazioni di collaborazione esterna**.
+5. Verificare che le opzioni **Amministratori e utenti con il ruolo di guest possono invitare** e **I membri possono invitare** siano entrambe impostate su **Sì**.
 6. Se si apportano modifiche, fare clic su **Salva**.
 
-Prendere nota delle impostazioni nella **sezione Restrizioni di** collaborazione. Assicurarsi che i domini dei guest con cui si vuole collaborare non siano bloccati.
+Prendere nota delle impostazioni nella sezione **Restrizioni di collaborazione**. Verificare che i domini degli utenti guest con cui si desidera collaborare non siano bloccati.
 
-Se si lavora con utenti guest di più organizzazioni, è possibile limitare la possibilità di accedere ai dati della directory. Ciò impedirà loro di vedere chi altro è un guest nella directory. A tale scopo, in Restrizioni di accesso degli utenti **guest,** selezionare Gli utenti guest hanno accesso limitato alle proprietà e l'appartenenza alle impostazioni degli oggetti **directory** o l'accesso degli utenti Guest è limitato alle proprietà e alle appartenenze dei propri oggetti **directory.**
+Se si lavora con utenti guest da più organizzazioni, è possibile limitare la possibilità di accesso ai dati della directory. In questo modo, non potranno vedere gli altri utenti guest nella directory. A questo scopo in **Restrizioni di accesso degli utenti guest**, selezionare **Gli utenti guest hanno accesso limitato alle proprietà e all'iscrizione delle impostazioni degli oggetti della directory** oppure **L'accesso degli utenti guest è limitato alle proprietà e alle iscrizioni dei propri oggetti della directory**.
 
-## <a name="teams-guest-access-settings"></a>Impostazioni di accesso guest di Teams
+## <a name="teams-guest-access-settings"></a>Impostazioni di accesso degli utenti guest
 
-Teams dispone di un interruttore master on/off per l'accesso guest e di un'ampia gamma di impostazioni disponibili per controllare le operazioni che gli utenti guest possono eseguire in un team. L'opzione master Consenti **l'accesso guest in Teams** deve essere **attivata** perché l'accesso guest funzioni in Teams.
+Teams ha un interruttore principale Attivato/Disattivato per l'accesso degli utenti guest e una varietà di impostazioni disponibili per controllare le operazioni che gli utenti guest possono eseguire in un team. L'interruttore principale **Consenti accesso ospite in Teams** deve essere **Attivato** perché l'accesso guest funzioni in Teams.
 
-Verificare che l'accesso guest sia abilitato in Teams e apportare eventuali modifiche alle impostazioni guest in base alle esigenze aziendali. Tenere presente che queste impostazioni influiscono su tutti i team.
+Verificare che l'accesso guest sia abilitato in Teams e apportare eventuali modifiche alle impostazioni in base alle esigenze aziendali. Tenere presente che le impostazioni influiscono su tutti i team.
 
 ![Screenshot dell'opzione di accesso guest in Teams](../media/teams-guest-access-toggle-on.png)
 
 Per configurare le impostazioni di accesso guest di Teams
 
 1. Accedere all'interfaccia di amministrazione di Microsoft 365 all'indirizzo [https://admin.microsoft.com](https://admin.microsoft.com).
-2. Nel riquadro di spostamento sinistro fare clic su **Mostra tutto.**
-3. In **Interfacce di amministrazione** fare clic su **Teams**.
-4. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Teams espandere **Impostazioni a livello** di organizzazione e fare clic su Accesso **guest.**
+2. Nel riquadro di spostamento a sinistra, fare clic su **Mostra tutto**.
+3. In **Interfacce di amministrazione**, fare clic su **Teams**.
+4. Nell'interfaccia di amministrazione di Teams espandere **Impostazioni a livello di organizzazione** nel riquadro di spostamento a sinistra e fare clic su **Accesso guest**.
 5. Assicurarsi che l'opzione **Consenti accesso ospite in Teams** sia **** abilitata.
 6. Apportare le modifiche desiderate alle impostazioni guest aggiuntive e quindi fare clic su **Salva**.
 
-Una volta attivato l'accesso guest di Teams, è possibile controllare facoltativamente l'accesso guest ai singoli team e ai siti di SharePoint associati utilizzando le etichette di riservatezza. Per altre informazioni, vedere [Usare le etichette di riservatezza per proteggere i contenuti in Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+Dopo aver attivato l'accesso guest in Teams, è possibile controllare in modo facoltativo l'accesso guest a singoli team e relativi siti di SharePoint associati usando etichette di riservatezza. Per altre informazioni, vedere [Usare le etichette di riservatezza per proteggere i contenuti in Microsoft Teams, Gruppi di Microsoft 365 e nei siti di SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
 
 > [!NOTE]
-> Potrebbero essere necessario fino a 24 ore prima che le impostazioni guest di Teams diventino attive dopo l'attivazione.
+> Dopo l'attivazione, potrebbero essere necessarie fino a 24 ore prima che le impostazioni guest di Teams diventino effettive.
 
-## <a name="microsoft-365-groups-guest-settings"></a>Impostazioni guest dei gruppi di Microsoft 365
+## <a name="microsoft-365-groups-guest-settings"></a>Impostazioni guest di Gruppi di Microsoft 365
 
-Teams usa i gruppi di Microsoft 365 per l'appartenenza al team. Le impostazioni guest dei gruppi di Microsoft 365 devono essere attivate per consentire il funzionamento dell'accesso guest in Teams.
+Teams usa Gruppi di Microsoft 365 per l'iscrizione al team. Per il funzionamento dell'accesso degli utenti guest in Teams, è necessario che le impostazioni guest di Gruppi di Microsoft 365 siano attivate.
 
 ![Screenshot delle impostazioni guest di Gruppi di Microsoft 365 nell'interfaccia di amministrazione di Microsoft 365](../media/office-365-groups-guest-settings.png)
 
-Per configurare le impostazioni guest dei gruppi di Microsoft 365
+Per configurare le impostazioni guest di Gruppi di Microsoft 365
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft 365 espandere **Impostazioni.**
-2. Fare **clic su Impostazioni organizzazione.**
-3. Nell'elenco fare clic su **Gruppi di Microsoft 365.**
-4. Verificare che le caselle di controllo Consenti ai proprietari del gruppo di aggiungere persone esterne all'organizzazione ai gruppi di **Microsoft 365** come guest e che le caselle di controllo Consenti ai membri del gruppo **guest** di accedere al contenuto del gruppo siano entrambe selezionate.
-5. Se sono state apportate modifiche, fare clic **su Salva modifiche.**
+1. Nel riquadro di spostamento a sinistra dell'interfaccia di amministrazione di Microsoft 365, espandere **Impostazioni**.
+2. Fare clic su **Impostazioni organizzazione**.
+3. Nell'elenco, fare clic su **Gruppi di Microsoft 365**.
+4. Verificare che le caselle di controllo **Consenti ai proprietari del gruppo di aggiungere persone esterne all'organizzazione ai Gruppi di Microsoft 365 come utenti guest** e **Consenti ai membri del gruppo guest di accedere ai contenuti del gruppo** siano entrambe selezionate.
+5. Se si apportano modifiche, fare clic su **Salva modifiche**.
 
 
-## <a name="sharepoint-organization-level-sharing-settings"></a>Impostazioni di condivisione a livello di organizzazione di SharePoint
+## <a name="sharepoint-organization-level-sharing-settings"></a>Impostazioni di condivisione a livello di organizzazione in SharePoint
 
-I contenuti di Teams, ad esempio file, cartelle ed elenchi, vengono tutti archiviati in SharePoint. Per consentire agli utenti guest di accedere a questi elementi in Teams, le impostazioni di condivisione a livello di organizzazione di SharePoint devono consentire la condivisione con gli utenti guest.
+I contenuti dei team, ad esempio file, cartelle ed elenchi, sono tutti archiviati in SharePoint. Per consentire ai guest di accedere a questi elementi in Teams, le impostazioni di condivisione a livello di organizzazione in SharePoint devono consentire la condivisione con gli utenti guest.
 
-Le impostazioni a livello di organizzazione determinano le impostazioni disponibili per i singoli siti, inclusi i siti associati ai team. Le impostazioni del sito non possono essere più permissive delle impostazioni a livello di organizzazione.
+Le impostazioni a livello di organizzazione determinano quali impostazioni sono disponibili per i singoli siti, tra cui i siti associati ai team. Le impostazioni del sito non possono essere più permissive delle impostazioni a livello di organizzazione.
 
-Se si desidera consentire la condivisione di file e cartelle con utenti non autenticati, scegliere **Chiunque.** Se si desidera assicurarsi che tutti gli utenti guest devono eseguire l'autenticazione, scegliere Utenti guest **nuovi ed esistenti.** Scegliere l'impostazione più permissiva che sarà necessaria a qualsiasi sito dell'organizzazione.
+Se si vuole consentire la condivisione di file e cartelle con utenti non autenticati, scegliere **Chiunque**. Per assicurarsi che tutti gli utenti guest siano autenticati, scegliere **Utenti guest nuovi ed esistenti**. Scegliere l'impostazione più permissiva necessaria a tutti i siti dell'organizzazione.
 
 ![Screenshot delle impostazioni di condivisione a livello di organizzazione in SharePoint](../media/sharepoint-organization-external-sharing-controls.png)
 
 
-Per configurare le impostazioni di condivisione a livello di organizzazione di SharePoint
+Per configurare le impostazioni di condivisione a livello di organizzazione in SharePoint
 
-1. Nell'interfaccia di amministrazione di Microsoft 365, nel riquadro di spostamento sinistro, in **Interfaccia di amministrazione,** fare clic su **SharePoint.**
-2. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di SharePoint espandere **Criteri** e quindi fare clic su **Condivisione.**
-3. Verificare che la condivisione esterna per SharePoint sia impostata su **Chiunque** o Utenti guest nuovi **ed esistenti.**
+1. Nel riquadro di spostamento a sinistra dell'interfaccia di amministrazione di Microsoft 365, in **Interfacce di amministrazione**, fare clic su **SharePoint**.
+2. Nel riquadro di spostamento a sinistra dell'interfaccia di amministrazione di SharePoint, espandere **Criteri** poi fare clic su **Condivisione**.
+3. Assicurarsi che la condivisione esterna per SharePoint sia impostata su **Chiunque** oppure **Utenti guest nuovi ed esistenti**.
 4. Se si apportano modifiche, fare clic su **Salva**.
 
 
-## <a name="sharepoint-organization-level-default-link-settings"></a>Impostazioni di collegamento predefinite a livello di organizzazione di SharePoint
+## <a name="sharepoint-organization-level-default-link-settings"></a>Impostazioni dei collegamenti predefiniti a livello di organizzazione di SharePoint
 
-Le impostazioni predefinite dei collegamenti a file e cartelle determinano l'opzione di collegamento che verrà visualizzata agli utenti per impostazione predefinita quando condividono un file o una cartella. Gli utenti possono modificare il tipo di collegamento in una delle altre opzioni prima della condivisione, se lo si desidera.
+Le impostazioni predefinite per i collegamenti a file e cartelle determinano le opzioni di collegamento visualizzate dagli utenti per impostazione predefinita durante la condivisione di un file o una cartella. Se si desidera, gli utenti possono modificare il tipo di collegamento in una delle altre opzioni prima della condivisione.
 
-Tenere presente che questa impostazione influisce su tutti i team e i siti di SharePoint nell'organizzazione.
+Tenere presente che questa impostazione influisce su tutti i team e i siti di SharePoint dell'organizzazione.
 
-Scegliere uno dei tipi di collegamento seguenti che verranno selezionati per impostazione predefinita quando gli utenti condividono file e cartelle:
+Scegliere uno dei tipi di collegamento seguenti, selezionato per impostazione predefinita, quando gli utenti condividono file e cartelle:
 
-- **Chiunque abbia il collegamento:** scegliere questa opzione se si prevede di eseguire una grande condivisione non autenticata di file e cartelle. Se si desidera consentire collegamenti *chiunque* ma si è preoccupati per la condivisione accidentale non autenticata, considerare una delle altre opzioni come predefinita. Questo tipo di collegamento è disponibile solo se è stata abilitata la **condivisione chiunque.**
-- **Solo gli utenti dell'organizzazione:** scegliere questa opzione se si prevede che la maggior parte della condivisione di file e cartelle sia con utenti interni all'organizzazione.
-- **Persone specifiche:** considerare questa opzione se si prevede di eseguire molte attività di condivisione di file e cartelle con utenti guest. Questo tipo di collegamento funziona con gli utenti guest e richiede l'autenticazione.
+- **Chiunque abbia il collegamento**: scegliere questa opzione se si prevede di eseguire molte condivisioni non autenticate di file e cartelle. Se si desidera autorizzare *Chiunque* abbia il collegamento, ma si è preoccupati in caso di condivisione accidentale non autenticata, considerare una delle altre opzioni come predefinite. Questo tipo di collegamento è disponibile solo se è stata abilitata la condivisione **Chiunque**.
+- **Solo gli utenti dell'organizzazione**: scegliere questa opzione se si prevede che la maggior parte delle condivisioni di file e cartelle sia con persone interne all'organizzazione.
+- **Utenti specifici**: valutare questa opzione se si prevede di condividere molti file e cartelle con utenti guest. Questo tipo di collegamento funziona con gli utenti guest e richiede l'autenticazione degli utenti.
  
 ![Screenshot delle impostazioni di condivisione di file e cartelle a livello di organizzazione in SharePoint](../media/sharepoint-organization-files-folders-sharing-settings.png)
 
 
-Per impostare le impostazioni di collegamento predefinite a livello di organizzazione di SharePoint
+Per configurare le impostazioni dei collegamenti predefiniti a livello di organizzazione in SharePoint
 
 1. Passare alla pagina Condivisione nell'interfaccia di amministrazione di SharePoint.
-2. In **Collegamenti a file e cartelle** selezionare il collegamento di condivisione predefinito che si desidera utilizzare.
+2. In **Collegamenti a file e cartelle**, selezionare il collegamento di condivisione predefinito che si desidera usare.
 3. Se si apportano modifiche, fare clic su **Salva**.
 
-## <a name="create-a-team"></a>Creare un team
+## <a name="create-a-team"></a>Creazione di un team
 
-Il passaggio successivo consiste nel creare il team che si prevede di usare per la collaborazione con gli utenti guest.
+Il passaggio successivo consiste nel creare il team che si prevede di usare per collaborare con gli utenti guest.
 
 Per creare un team
-1. In Teams, nella scheda **Teams,** fare clic su **Partecipa o crea un team** nella parte inferiore del riquadro sinistro.
-2. Fare **clic su Crea team.**
-3. Fare **clic su Crea un team da zero.**
-4. Scegliere **Privato** o **Pubblico.**
-5. Digitare un nome e una descrizione per il team e quindi fare clic su **Crea.**
-6. Fare **clic su Ignora.**
+1. In Teams, nella scheda **Teams**, fare clic su **Partecipa o crea un team** nella parte inferiore del riquadro a sinistra.
+2. Fare clic su **Crea team**.
+3. Fare clic su **Creare un team da zero**.
+4. Scegliere **Privato** o **Pubblico**.
+5. Digitare un nome e una descrizione per il team e fare clic su **Crea**.
+6. Fare clic **Ignora**.
 
-Inviteremo gli utenti in un secondo momento. Successivamente, è importante controllare le impostazioni di condivisione a livello di sito per il sito di SharePoint associato al team.
+In seguito verranno invitato gli utenti. È quindi importante controllare le impostazioni di condivisione a livello di sito per il sito di SharePoint associato al team.
 
 ## <a name="sharepoint-site-level-sharing-settings"></a>Impostazioni di condivisione a livello di sito di SharePoint
 
-Controllare le impostazioni di condivisione a livello di sito per assicurarsi che consentano il tipo di accesso desiderato per il team. Ad esempio, se si impostano le impostazioni a livello di organizzazione su **Chiunque**, ma si desidera che tutti gli utenti guest eseercitino l'autenticazione per questo team, assicurarsi che le impostazioni di condivisione a livello di sito siano impostate su Utenti guest nuovi ed **esistenti.**
+Controllare le impostazioni di condivisione a livello di sito per assicurarsi che consentano il tipo di accesso desiderato per il team. Ad esempio, se si configurano le impostazioni a livello di organizzazione su **Chiunque**, ma si vuole che tutti gli utenti guest siano autenticati per accedere al team, verificare che le impostazioni di condivisione a livello di sito siano impostate su **Utenti guest nuovi ed esistenti**.
 
 ![Screenshot delle impostazioni di condivisione esterna dei siti di SharePoint](../media/sharepoint-site-external-sharing-settings.png)
 
 Per configurare le impostazioni di condivisione a livello di sito
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di SharePoint espandere **Siti** e fare clic su **Siti attivi.**
+1. Nel riquadro di spostamento a sinistra dell'interfaccia di amministrazione di SharePoint, espandere **Siti** e fare clic su **Siti attivi**.
 2. Selezionare il sito del team appena creato.
-3. Fare clic su ... e scegliere **Condivisione.**
-4. Verificare che la condivisione sia impostata **su Chiunque o** Utenti guest nuovi ed **esistenti.**
+3. Fare clic su ... e scegliere **Condivisione**.
+4. Verificare che la condivisione sia impostata su **Chiunque** o **Utenti guest nuovi ed esistenti**.
 5. Se si apportano modifiche, fare clic su **Salva**.
 
 ## <a name="invite-users"></a>Invitare utenti
 
-Le impostazioni di condivisione guest sono ora configurate, quindi è possibile iniziare ad aggiungere utenti interni e guest al team. 
+Le impostazioni di condivisione guest sono ora configurate, quindi è possibile iniziare ad aggiungere gli utenti interni e quelli guest al team. 
 
 Per invitare utenti interni a un team
-1. Nel team fare clic su **Altre opzioni** ( ) e quindi su **\*\*\*** Aggiungi **membro.**
-2. Digitare il nome della persona che si desidera invitare.
+1. Nel team, fare clic su **Altre opzioni** (**\*\*\***) e quindi su **Aggiungi membri**.
+2. Digitare il nome dell'utente da invitare.
 3. Fare clic su **Aggiungi**, quindi fare clic su **Chiudi**.
 
-Per invitare utenti guest a un team
-1. Nel team fare clic su **Altre opzioni** ( ) e quindi su **\*\*\*** Aggiungi **membro.**
-2. Digitare l'indirizzo di posta elettronica del guest che si desidera invitare.
-3. Fare **clic su Modifica informazioni guest.**
-4. Digitare il nome completo del guest e fare clic sul segno di spunta.
+Per invitare utenti guest in un team
+1. Nel team, fare clic su **Altre opzioni** (**\*\*\***) e quindi su **Aggiungi membri**.
+2. Digitare l'indirizzo di posta elettronica dell'utente guest che si vuole invitare.
+3. Fare clic su **Modifica le informazioni relative agli utenti guest**.
+4. Digitare il nome completo dell'utente guest e fare clic sul segno di spunta.
 5. Fare clic su **Aggiungi**, quindi fare clic su **Chiudi**.
 
 ## <a name="see-also"></a>Vedere anche
@@ -189,4 +189,4 @@ Per invitare utenti guest a un team
 
 [Integrazione di SharePoint e OneDrive con Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)
 
-[Le opzioni di condivisione sono disattivate durante la condivisione da SharePoint o OneDrive](https://docs.microsoft.com/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)
+[Le opzioni di condivisione sono disattivate quando si condivide da SharePoint o OneDrive](https://docs.microsoft.com/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)

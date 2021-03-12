@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione applicabili a Microsoft Teams.
-ms.openlocfilehash: 137fcdad514e8272b99ab735a0cf1ed6f6e3e00e
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 4296924684e13e163f28e0f952b2cd380cdcc047
+ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461797"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "50712012"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Informazioni sulla conservazione per Microsoft Teams
 
@@ -58,8 +58,8 @@ I messaggi di posta elettronica e i file usati con Teams non sono inclusi nei cr
 
 Queste cassette postali sono elencate dall'attributo RecipientTypeDetails:
 
-- **UserMailbox**: queste cassette postali archiviano i messaggi per gli utenti di Teams che hanno una cassetta postale di Exchange Online.
-- **MailUser**: queste cassette postali archiviano i messaggi per gli utenti di Teams che hanno una cassetta postale per un server Exchange locale e non Exchange Online.
+- **MailUser**: queste cassette postali archiviano i messaggi per gli utenti di Teams basati sul cloud.
+- **UserMailbox**: queste cassette postali archiviano i messaggi per gli [utenti di Teams locali](search-cloud-based-mailboxes-for-on-premises-users.md).
 - **GroupMailbox**: queste cassette postali archiviano i messaggi per i canali di Teams.
 
 Altri tipi di cassette postali, ad esempio RoomMailbox usato per le sale riunioni di Teams, non sono supportati per i criteri di conservazione di Teams.
