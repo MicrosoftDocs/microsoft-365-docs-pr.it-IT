@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione e sulle etichette di conservazione, utili per conservare tutto che serve ed eliminare ciò che non serve.
-ms.openlocfilehash: a716e3dd8138d5f7f9b5f8d8abbdb401211db9ae
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 67697124df7908dca2ace74dc5de921d18d817c6
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461871"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727325"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -362,13 +362,13 @@ La protezione dell'archiviazione viene applicata dopo la creazione dei criteri d
 
 ## <a name="releasing-a-policy-for-retention"></a>Rilascio dei criteri di conservazione
 
-Se i criteri di conservazione non hanno una protezione dell'archiviazione è possibile eliminare i criteri in qualsiasi momento, in questo modo vengono disabilitate le impostazioni di conservazione applicate in precedenza. È anche possibile mantenere i criteri ma cambiare lo stato della posizione su Disattivato.
+Se i criteri di conservazione non hanno una protezione dell'archiviazione è possibile eliminare i criteri in qualsiasi momento, in questo modo vengono disabilitate le impostazioni di conservazione applicate in precedenza. È possibile inoltre mantenere il criterio, ma rimuovere un sito per SharePoint o un account per OneDrive, o modificare lo stato della posizione in off, o disabilitare il criterio.
  
-Eseguendo entrambe le operazione, il contenuto di SharePoint o OneDrive conservato nella Raccolta di archiviazione non viene eliminato immediatamente e definitivamente. Per evitare perdite accidentali di dati, è previsto un periodo di tolleranza di 30 giorni, durante il quale la scadenza del contenuto per tale criterio non viene applicata alla raccolta di archiviazione, in modo da poter ripristinare qualsiasi contenuto in caso di necessità. Inoltre, non è possibile eliminare manualmente questo contenuto durante il periodo di tolleranza.
+Quando viene intrapresa una qualsiasi delle azioni precedenti, qualsiasi contenuto di SharePoint o OneDrive soggetto a conservazione dal criterio continuerà a essere conservato per 30 giorni per evitare la perdita accidentale di dati. In questo periodo di tolleranza di 30 giorni, non sarà possibile eliminare il sito, i file eliminati verranno ancora conservati (i file continuano a essere aggiunti alla raccolta di archiviazione), ma il processo timer che pulisce periodicamente la raccolta di archiviazione verrà sospeso per questi file, così da poterli ripristinare, se necessario.
 
-È possibile riportare lo stato della posizione su Attivato durante il periodo di tolleranza; in tal caso, nessun contenuto verrà eliminato per tale criterio.
+Per ulteriori informazioni sulla raccolta di archiviazione, vedere [Come funziona la conservazione per SharePoint e OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
 
-Il periodo di tolleranza di 30 giorni in SharePoint e in OneDrive corrisponde al periodo di attesa di 30 giorni in Exchange. Per altre informazioni, vedere [Gestione della permanenza nelle cassette postali ](identify-a-hold-on-an-exchange-online-mailbox.md#managing-mailboxes-on-delay-hold).
+In base al comportamento durante il periodo di tolleranza, se viene ri-abilitato il criterio o modificato lo stato della posizione nuovamente su on entro 30 giorni, il criterio verrà ripristinato senza alcuna perdita di dati permanente durante questo periodo.
 
 ## <a name="auditing-retention-configuration"></a>Configurazione del controllo della conservazione
 

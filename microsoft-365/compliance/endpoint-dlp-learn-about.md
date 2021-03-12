@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La Prevenzione della perdita di dati degli endpoint di Microsoft 365 estende il monitoraggio delle attività dei file e le azioni di protezione agli endpoint. I file vengono resi visibili nelle soluzioni di conformità di Microsoft 365 '
-ms.openlocfilehash: d5394499b5514e6e0a49f958a62e70cde61ebf44
-ms.sourcegitcommit: 88820cd2536a7da868e472d10b4d265c52e5692b
+ms.openlocfilehash: c4f0d10808d564fc0ee19510c25d33caba0471ff
+ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "50279310"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741587"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Informazioni sulla prevenzione della perdita di dati degli endpoint di Microsoft 365
 
@@ -43,6 +43,8 @@ Microsoft Endpoint DLP consente di controllare e gestire i tipi di attività seg
 |copiare su supporto rimovibile USB |Rileva quando un utente tenta di copiare un elemento o un'informazione su un supporto rimovibile o un dispositivo USB.         | controllabile e limitabile|
 |copiare su condivisione di rete    |Rileva quando un utente tenta di copiare un elemento in una condivisione di rete o in un'unità di rete mappata         |controllabile e limitabile|
 |stampare un documento    |Rileva quando un utente tenta di stampare un elemento protetto su una stampante locale o di rete.| controllabile e limitabile         |
+|copiare in una sessione remota|Rileva quando un utente tenta di copiare un elemento in una sessione desktop remota |  controllabile e limitabile|
+|copiare in un dispositivo Bluetooth|Rileva quando un utente cerca di copiare un elemento in un'app Bluetooth non consentita (come definito nell'elenco delle app Bluetooth non consentite nelle impostazioni Endpoint DLP).| controllabile e limitabile|
 |creare un elemento.|Rileva quando un utente crea un elemento| controllabile|
 |rinominare un elemento|Rileva quando un utente rinomina un elemento| controllabile|
 

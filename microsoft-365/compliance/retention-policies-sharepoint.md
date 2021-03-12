@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sul funzionamento della conservazione per SharePoint e OneDrive.
-ms.openlocfilehash: ff4b4f517daccbce908411f3b5a62c0a1f11ba57
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: dd1260df23579ad2e6605805bafe9e36d2274a8e
+ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50597176"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "50727401"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Informazioni sulla conservazione per SharePoint e OneDrive
 
@@ -67,8 +67,10 @@ Non è necessario che gli elementi di SharePoint con un’etichetta di conservaz
 Per conservare tali contenuti quando un utente tenta di modificarli o eliminarli, viene eseguita una verifica del contenuto per stabilire se è stato modificato dopo l'applicazione delle impostazioni di conservazione. Nel caso della prima modifica dell’applicazione delle impostazioni di conservazione, il contenuto viene copiato nella raccolta di archiviazione che permette all'utente di modificare o eliminare i contenuti originali. Il contenuto di una raccolta siti può essere copiato nella raccolta di archiviazione, indipendentemente dalle impostazioni di conservazione.
   
 Un processo timer pulisce periodicamente la raccolta di archiviazione. Per i contenuti rimasti nella raccolta di archiviazione per più di 30 giorni, questo processo confronta i contenuti con tutte le query usate dalle impostazioni di conservazione per tali contenuti. I contenuti che superano il periodo di conservazione configurato vengono eliminati dalla raccolta di archiviazione e dalla posizione originale, se ancora presenti. Questo processo timer viene eseguito ogni sette giorni. Ciò significa che, oltre al periodo minimo di 30 giorni, possono essere necessari fino a 37 giorni perché il contenuto sia eliminato dalla raccolta di archiviazione.
-  
-Questo comportamento si applica ai contenuti che esistono al momento dell'applicazione delle impostazioni di conservazione. Inoltre, per i criteri di conservazione, i nuovi contenuti creati o aggiunti alla raccolta siti in seguito all'inclusione nei criteri conservazione, verranno conservati dopo l'eliminazione. Tuttavia, i nuovi contenuti non vengono copiati nella raccolta di archiviazione al momento della prima modifica, ma solo quando viene eliminato. Per conservare tutte le versioni di un file, è necessario attivare il [controllo delle versioni](#how-retention-works-with-document-versions).
+
+Nel momento in cui i file vengono mantenuti nella raccolta di archiviazione, gli amministratori non potranno eliminare il sito SharePoint o l'account OneDrive dei contenuti.
+
+Il comportamento correlato alla copia dei file nella raccolta di archiviazione si applica ai contenuti che esistono al momento dell'applicazione dei criteri di conservazione. Inoltre, per i criteri di conservazione, i nuovi contenuti creati o aggiunti al sito in seguito all'inclusione nei criteri, verranno mantenuti nella raccolta di archiviazione. Tuttavia, i nuovi contenuti non vengono copiati nella raccolta di archiviazione al momento della prima modifica, ma solo quando viene eliminato. Per conservare tutte le versioni di un file, è necessario attivare il [controllo delle versioni](#how-retention-works-with-document-versions).
   
 Se si prova a eliminare una raccolta, un elenco, una cartella o un sito soggetti a conservazione, viene visualizzato un messaggio di errore. È possibile eliminare una cartella se prima di tutto si spostano o si eliminano eventuali file soggetti a conservazione presenti nella cartella.
 
