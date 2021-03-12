@@ -1,7 +1,7 @@
 ---
 title: Integrare i ticket ServiceNow nel Centro sicurezza e conformità di Microsoft 365
 description: Informazioni su come creare e tenere traccia dei ticket in ServiceNow dal Centro sicurezza e conformità di Microsoft 365.
-keywords: sicurezza, Microsoft 365, M365, conformità, centro conformità, centro sicurezza, ServiceNow, ticket, attività, SNOW, connessione
+keywords: sicurezza, Microsoft 365, M365, conformità, centro conformità, centro sicurezza, ServiceNow, ticket, attività, NEVE, connessione
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 4e647c2e526bb5cf99b1f40c07fc542315ebcd01
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 74d406e46e223a065e0931c081cf1a039fc2a8b9
+ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925483"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741544"
 ---
 # <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a>Integrare i ticket ServiceNow nel Centro sicurezza e conformità di Microsoft 365
 
@@ -35,6 +35,4 @@ ms.locfileid: "49925483"
 >**Il periodo di anteprima per il connettore ServiceNow è terminato**<br>
 >Questa funzionalità non è più disponibile. Grazie per il feedback e il supporto continuo durante la determinazione dei passaggi successivi.
 
-ServiceNow è una popolare piattaforma di cloud computing che consente alle aziende di gestire i flussi di lavoro digitali per le operazioni aziendali. La piattaforma now include flussi di lavoro IT, flussi di lavoro per i dipendenti e flussi di lavoro dei clienti. [Ulteriori informazioni su ServiceNow](https://www.servicenow.com/)
-
-Microsoft ha collaborato con ServiceNow per semplificare agli amministratori IT la gestione dei ticket e delle attività in entrambe le piattaforme. Il Centro sicurezza [Microsoft 365](overview-security-center.md) e il Centro conformità [Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) sono stati migliorati grazie alla possibilità di creare e tenere traccia dei ticket in modo nativo in ServiceNow.
+ServiceNow è una popolare piattaforma di cloud computing che aiuta le aziende a gestire i flussi di lavoro digitali per le operazioni aziendali. La piattaforma Now include flussi di lavoro IT, flussi di lavoro dei dipendenti e flussi di lavoro dei clienti.

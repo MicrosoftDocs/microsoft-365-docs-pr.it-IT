@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sul funzionamento della conservazione per SharePoint e OneDrive.
-ms.openlocfilehash: 253b4f2c09468b45b8e6102f585a8e4b7bbe4e4e
-ms.sourcegitcommit: ddbc6f8ebadf2f8149dff910b743535cbc3fa3c8
+ms.openlocfilehash: ff4b4f517daccbce908411f3b5a62c0a1f11ba57
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "49992502"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50597176"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Informazioni sulla conservazione per SharePoint e OneDrive
 
@@ -66,7 +66,7 @@ Non è necessario che gli elementi di SharePoint con un’etichetta di conservaz
 
 Per conservare tali contenuti quando un utente tenta di modificarli o eliminarli, viene eseguita una verifica del contenuto per stabilire se è stato modificato dopo l'applicazione delle impostazioni di conservazione. Nel caso della prima modifica dell’applicazione delle impostazioni di conservazione, il contenuto viene copiato nella raccolta di archiviazione che permette all'utente di modificare o eliminare i contenuti originali. Il contenuto di una raccolta siti può essere copiato nella raccolta di archiviazione, indipendentemente dalle impostazioni di conservazione.
   
-Un processo timer pulisce periodicamente la raccolta di archiviazione. Questo processo confronta tutti i contenuti della raccolta di archiviazione con tutte le query usate dalle impostazioni di conservazione per tali contenuti. Il contenuto precedente al periodo di conservazione configurato viene eliminato dalla raccolta di archiviazione e dalla posizione originale, se è ancora lì. Questo processo timer viene eseguito ogni 7 giorni, quindi può essere necessario attendere fino a 7 giorni prima che il contenuto venga eliminato.
+Un processo timer pulisce periodicamente la raccolta di archiviazione. Per i contenuti rimasti nella raccolta di archiviazione per più di 30 giorni, questo processo confronta i contenuti con tutte le query usate dalle impostazioni di conservazione per tali contenuti. I contenuti che superano il periodo di conservazione configurato vengono eliminati dalla raccolta di archiviazione e dalla posizione originale, se ancora presenti. Questo processo timer viene eseguito ogni sette giorni. Ciò significa che, oltre al periodo minimo di 30 giorni, possono essere necessari fino a 37 giorni perché il contenuto sia eliminato dalla raccolta di archiviazione.
   
 Questo comportamento si applica ai contenuti che esistono al momento dell'applicazione delle impostazioni di conservazione. Inoltre, per i criteri di conservazione, i nuovi contenuti creati o aggiunti alla raccolta siti in seguito all'inclusione nei criteri conservazione, verranno conservati dopo l'eliminazione. Tuttavia, i nuovi contenuti non vengono copiati nella raccolta di archiviazione al momento della prima modifica, ma solo quando viene eliminato. Per conservare tutte le versioni di un file, è necessario attivare il [controllo delle versioni](#how-retention-works-with-document-versions).
   

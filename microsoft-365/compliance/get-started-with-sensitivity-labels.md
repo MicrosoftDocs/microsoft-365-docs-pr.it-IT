@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pronti per iniziare a implementare le etichette di riservatezza per proteggere i dati dell'organizzazione, ma in dubbio su come iniziare? Leggere alcune guide pratiche utili per iniziare il percorso di implementazione dell'etichettatura.
-ms.openlocfilehash: 47bbc722ad87d5bde4b1e0dfb732e08dad3938f2
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: ef89cadc09dea7c2186fbf4a0d76d2c690aa8acc
+ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423637"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "50597218"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Iniziare a usare le etichette di riservatezza
 
@@ -34,7 +34,7 @@ Per informazioni sulle etichette di riservatezza e su come favoriscono la protez
 
 Se si ha [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection), determinare se è necessario eseguire la migrazione delle etichette alla piattaforma di etichetta unificata e quale client di etichettatura usare:
 - [Come si può determinare se il tenant si trova nella piattaforma di etichettatura unificata?](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)
-- [Scegliere il client di etichettatura da usare per i computer Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers)
+- [Scegliere la soluzione di etichettatura di Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)
 
 Quando si è pronti per iniziare a proteggere i dati dell'organizzazione usando le etichette di riservatezza:
 
