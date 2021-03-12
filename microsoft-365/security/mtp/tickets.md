@@ -1,7 +1,7 @@
 ---
 title: Integrare i ticket ServiceNow nel Centro sicurezza e conformità di Microsoft 365
 description: Informazioni su come creare e tenere traccia dei ticket in ServiceNow dal Centro sicurezza e conformità di Microsoft 365.
-keywords: sicurezza, Microsoft 365, M365, conformità, centro conformità, centro sicurezza, ServiceNow, ticket, attività, SNOW, connessione
+keywords: sicurezza, Microsoft 365, M365, conformità, centro conformità, centro sicurezza, ServiceNow, ticket, attività, NEVE, connessione
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.localizationpriority: medium
@@ -20,21 +20,19 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 4e647c2e526bb5cf99b1f40c07fc542315ebcd01
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 74d406e46e223a065e0931c081cf1a039fc2a8b9
+ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49925483"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741544"
 ---
-# <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a><span data-ttu-id="b3918-104">Integrare i ticket ServiceNow nel Centro sicurezza e conformità di Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="b3918-104">Integrate ServiceNow tickets into the Microsoft 365 security center and compliance center</span></span>
+# <a name="integrate-servicenow-tickets-into-the-microsoft-365-security-center-and-compliance-center"></a><span data-ttu-id="e188f-104">Integrare i ticket ServiceNow nel Centro sicurezza e conformità di Microsoft 365</span><span class="sxs-lookup"><span data-stu-id="e188f-104">Integrate ServiceNow tickets into the Microsoft 365 security center and compliance center</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 >[!CAUTION]
-><span data-ttu-id="b3918-105">**Il periodo di anteprima per il connettore ServiceNow è terminato**</span><span class="sxs-lookup"><span data-stu-id="b3918-105">**The preview period for the ServiceNow connector has ended**</span></span><br>
-><span data-ttu-id="b3918-106">Questa funzionalità non è più disponibile.</span><span class="sxs-lookup"><span data-stu-id="b3918-106">This capability is no longer available.</span></span> <span data-ttu-id="b3918-107">Grazie per il feedback e il supporto continuo durante la determinazione dei passaggi successivi.</span><span class="sxs-lookup"><span data-stu-id="b3918-107">Thank you for your feedback and continued support while we determine next steps.</span></span>
+><span data-ttu-id="e188f-105">**Il periodo di anteprima per il connettore ServiceNow è terminato**</span><span class="sxs-lookup"><span data-stu-id="e188f-105">**The preview period for the ServiceNow connector has ended**</span></span><br>
+><span data-ttu-id="e188f-106">Questa funzionalità non è più disponibile.</span><span class="sxs-lookup"><span data-stu-id="e188f-106">This capability is no longer available.</span></span> <span data-ttu-id="e188f-107">Grazie per il feedback e il supporto continuo durante la determinazione dei passaggi successivi.</span><span class="sxs-lookup"><span data-stu-id="e188f-107">Thank you for your feedback and continued support while we determine next steps.</span></span>
 
-<span data-ttu-id="b3918-108">ServiceNow è una popolare piattaforma di cloud computing che consente alle aziende di gestire i flussi di lavoro digitali per le operazioni aziendali.</span><span class="sxs-lookup"><span data-stu-id="b3918-108">ServiceNow is a popular cloud computing platform that helps companies manage digital workflows for enterprise operations.</span></span> <span data-ttu-id="b3918-109">La piattaforma now include flussi di lavoro IT, flussi di lavoro per i dipendenti e flussi di lavoro dei clienti.</span><span class="sxs-lookup"><span data-stu-id="b3918-109">Their Now platform has IT workflows, employee workflows, and customer workflows.</span></span> [<span data-ttu-id="b3918-110">Ulteriori informazioni su ServiceNow</span><span class="sxs-lookup"><span data-stu-id="b3918-110">Learn more about ServiceNow</span></span>](https://www.servicenow.com/)
-
-<span data-ttu-id="b3918-111">Microsoft ha collaborato con ServiceNow per semplificare agli amministratori IT la gestione dei ticket e delle attività in entrambe le piattaforme.</span><span class="sxs-lookup"><span data-stu-id="b3918-111">Microsoft has partnered with ServiceNow to make it easier for IT admins to manage their tickets and tasks in both platforms.</span></span> <span data-ttu-id="b3918-112">Il Centro sicurezza [Microsoft 365](overview-security-center.md) e il Centro conformità [Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) sono stati migliorati grazie alla possibilità di creare e tenere traccia dei ticket in modo nativo in ServiceNow.</span><span class="sxs-lookup"><span data-stu-id="b3918-112">[Microsoft 365 security center](overview-security-center.md) and the [Microsoft 365 compliance center](https://docs.microsoft.com/microsoft-365/compliance/microsoft-365-compliance-center) are being enhanced with the ability to natively create and track tickets in ServiceNow.</span></span>
+<span data-ttu-id="e188f-108">ServiceNow è una popolare piattaforma di cloud computing che aiuta le aziende a gestire i flussi di lavoro digitali per le operazioni aziendali.</span><span class="sxs-lookup"><span data-stu-id="e188f-108">ServiceNow is a popular cloud computing platform that helps companies manage digital workflows for enterprise operations.</span></span> <span data-ttu-id="e188f-109">La piattaforma Now include flussi di lavoro IT, flussi di lavoro dei dipendenti e flussi di lavoro dei clienti.</span><span class="sxs-lookup"><span data-stu-id="e188f-109">Their Now platform has IT workflows, employee workflows, and customer workflows.</span></span>
