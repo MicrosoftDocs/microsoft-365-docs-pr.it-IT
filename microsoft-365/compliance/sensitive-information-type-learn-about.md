@@ -16,12 +16,12 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 description: ''
-ms.openlocfilehash: 90b545f60c68ac6b76509e14daf1258df66e1c63
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 13dee9d5744639149960a16adcf36b7ebe5718f7
+ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741533"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50766401"
 ---
 # <a name="learn-about-sensitive-information-types"></a>Ulteriori informazioni sui tipi di informazioni riservate
 
@@ -129,6 +129,7 @@ Un livello di confidenza elevato restituisce il numero minimo di falsi positivi,
 > - Tutti i criteri con accuratezza minima o modelli SIT personalizzati con livelli di probabilità compresi tra 76 e 100 verranno mappati a un livello di sicurezza elevato. 
 > - Tutti i criteri con accuratezza minima o modelli SIT personalizzati con livelli di probabilità compresi tra 66 e 75 verranno mappati alla probabilità media.
 > - Tutti i criteri con accuratezza minima o modelli SIT personalizzati con livelli di confidenza inferiori o uguali a 65 verranno mappati alla probabilità bassa. 
+
 ## <a name="creating-custom-sensitive-information-types"></a>Creazione dei tipi di informazioni sensibili personalizzati
 
 Per creare tipi di informazioni sensibili personalizzati nel Centro sicurezza e conformità, è possibile scegliere tra diverse opzioni:
