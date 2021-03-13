@@ -6,7 +6,7 @@ ms.author: pebaum
 author: pebaum
 manager: scotv
 audience: Admin
-ms.topic: article
+ms.topic: landing-page
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
@@ -22,12 +22,12 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: Dopo aver configurato Microsoft 365, informazioni su come installare singole applicazioni di Office nel Mac, nel PC o nei dispositivi mobili e configurare la posta elettronica in Outlook.
-ms.openlocfilehash: dc8a4c3670dacf4b3cc85637c3e18c51a8c8e350
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: c1d88aa1e754424e7a4ef3e486efc8a9618d3e9b
+ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988033"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50766356"
 ---
 # <a name="install-office-applications"></a>Installare le applicazioni di Office
 
@@ -47,7 +47,7 @@ Seguire questi collegamenti per informazioni su come:
 
 ::: moniker range="o365-21vianet"
 
-Se è stato acquistato Azure Active Directory Premium (AADP) Piano 1 o Piano 2, si è idonei per Microsoft Identity Manager (MIM). Per scaricare MIM, passare [all'Area download.](https://www.microsoft.com/zh-cn/download/details.aspx?id=58498)
+Se hai acquistato Azure Active Directory Premium (AADP) Piano 1 o Piano 2, sei idoneo per Microsoft Identity Manager (MIM). Per scaricare MIM, passare [all'Area download.](https://www.microsoft.com/zh-cn/download/details.aspx?id=58498)
 
 ::: moniker-end
 

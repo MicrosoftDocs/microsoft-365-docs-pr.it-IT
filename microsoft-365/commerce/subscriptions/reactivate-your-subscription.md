@@ -1,7 +1,7 @@
 ---
 title: Riattivare l'abbonamento
 f1.keywords:
-- NOCSH
+- CSH
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
 description: Informazioni su come riattivare l'abbonamento alla scadenza, alla disabilitazione o all'annullamento.
-ms.openlocfilehash: 01dee5e8a4c5a9ef7d30c21f66186086900b6cc1
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 3e360e37a108c290e13ca3c1a147f8eb099648e6
+ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114622"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50766390"
 ---
 # <a name="reactivate-your-subscription"></a>Riattivare l'abbonamento
 
@@ -38,11 +38,11 @@ ms.locfileid: "50114622"
 
 ::: moniker-end
 
-È possibile riattivare l'abbonamento nell'interfaccia di amministrazione se: l'abbonamento è scaduto, è stato disabilitato da Microsoft o se è stato annullato durante un periodo di tempo.
+È possibile riattivare l'abbonamento nell'interfaccia di amministrazione se: l'abbonamento è scaduto, è stato disabilitato da Microsoft o se è stato annullato nel corso di un periodo di sottoscrizione.
   
 ## <a name="before-you-begin"></a>Informazioni preliminari
 
-Per riattivare un abbonamento, è necessario essere un amministratore globale o di fatturazione. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
+Per riattivare una sottoscrizione, devi essere un amministratore globale o di fatturazione. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
 
 **Se non si è un amministratore** Contattare l'amministrazione per riattivare l'abbonamento.
 
@@ -51,8 +51,8 @@ Per riattivare un abbonamento, è necessario essere un amministratore globale o 
 ::: moniker range="o365-worldwide"
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
-2. Nella scheda **Prodotti**, trovare l'abbonamento da riattivare. Seleziona **Altre azioni** (tre puntini), quindi seleziona **Riattiva la sottoscrizione**.\
-    Se l'opzione Riattiva **l'abbonamento** non è visualizzata, [contattare il supporto.](../../admin/contact-support-for-business-products.md)
+2. Nella scheda **Prodotti**, trovare l'abbonamento da riattivare. Seleziona **Altre azioni** (tre puntini), quindi seleziona **Riattiva questa sottoscrizione**.\
+    Se l'opzione Riattiva **questa sottoscrizione** non è visualizzata, contattare [il supporto](../../admin/contact-support-for-business-products.md)tecnico.
 3. Nel riquadro **Riattiva l’abbonamento**, selezionare una modalità di pagamento nell'elenco a discesa oppure selezionare **Aggiungi modalità di pagamento**.
 4. Selezionare **Salva**.
 
@@ -62,20 +62,20 @@ Per riattivare un abbonamento, è necessario essere un amministratore globale o 
   
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
 
-2. Individuare l'abbonamento che si desidera riattivare, quindi selezionare **Riattiva.**
+2. Trova l'abbonamento che vuoi riattivare, quindi seleziona **Riattiva**.
 
     ![Close-up of a Subscription card that says Disabled and Reduced functionality with a Reactivate button.](../../media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
   
-    Se l'opzione **Riattiva** come azione disponibile non è disponibile, chiamare il [supporto](../../admin/contact-support-for-business-products.md) per riattivare l'abbonamento.
+    Se non vedi **Riattiva** come azione disponibile, chiama il [supporto](../../admin/contact-support-for-business-products.md) per riattivare l'abbonamento.
 
 3. Immettere i dettagli sul pagamento. È possibile aggiornare le attuali informazioni sul pagamento.
 
-   Se l'abbonamento è scaduto, dopo aver inviato i dettagli del  pagamento, l'abbonamento torna allo stato attivo e la data di fatturazione successiva si estende di un mese o di un anno, a seconda dell'impegno corrente dell'abbonamento. Se si paga tramite carta di credito o conto corrente bancario, il costo dell'estensione verrà addebitato sulla carta o sul conto. Se si paga tramite fattura, l'estensione verrà riportata nella fattura successiva. Per assicurarsi che l'abbonamento non scada di nuovo, [attivare la fatturazione ricorrente.](renew-your-subscription.md#turn-recurring-billing-off-or-on)
+   Se l'abbonamento è scaduto, dopo aver inviato i dettagli di pagamento, l'abbonamento torna allo stato attivo e la **data** di fatturazione successiva si estende di un mese o di un anno, a seconda dell'impegno dell'abbonamento corrente. Se si paga tramite carta di credito o conto corrente bancario, il costo dell'estensione verrà addebitato sulla carta o sul conto. Se si paga tramite fattura, l'estensione verrà riportata nella fattura successiva. Per assicurarti che l'abbonamento non scada di nuovo, [attiva Fatturazione ricorrente.](renew-your-subscription.md#turn-recurring-billing-off-or-on)
 
    > [!NOTE]
    > La possibilità di pagare tramite conto corrente bancario non è disponibile in alcuni paesi o aree geografiche.
   
-   Se l'abbonamento è stato annullato o è stato disabilitato perché non è  stato ricevuto un pagamento, torna allo stato attivo e la data di fatturazione successiva rimane la stessa.
+   Se l'abbonamento è stato annullato o è stato disabilitato perché non è stato ricevuto un pagamento, torna allo stato attivo e la **data** di fatturazione successiva rimane la stessa.
 
 ::: moniker-end
 
@@ -83,20 +83,20 @@ Per riattivare un abbonamento, è necessario essere un amministratore globale o 
   
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
 
-2. Individuare l'abbonamento che si desidera riattivare, quindi selezionare **Riattiva.**
+2. Trova l'abbonamento che vuoi riattivare, quindi seleziona **Riattiva**.
 
     ![Close-up of a Subscription card that says Disabled and Reduced functionality with a Reactivate button.](../../media/4042c2c7-48d3-4add-963f-42f9fbcede07.png)
   
-    Se l'opzione **Riattiva** come azione disponibile non è disponibile, chiamare il [supporto](../../admin/contact-support-for-business-products.md) per riattivare l'abbonamento.
+    Se non vedi **Riattiva** come azione disponibile, chiama il [supporto](../../admin/contact-support-for-business-products.md) per riattivare l'abbonamento.
 
 3. Immettere i dettagli sul pagamento. È possibile aggiornare le attuali informazioni sul pagamento.
 
-   Se l'abbonamento è scaduto, dopo aver inviato i dettagli del  pagamento, l'abbonamento torna allo stato attivo e la data di fatturazione successiva si estende di un mese o di un anno, a seconda dell'impegno corrente dell'abbonamento. Se si paga tramite carta di credito o conto corrente bancario, il costo dell'estensione verrà addebitato sulla carta o sul conto. Se si paga tramite fattura, l'estensione verrà riportata nella fattura successiva. Per assicurarsi che l'abbonamento non scada di nuovo, [attivare la fatturazione ricorrente.](renew-your-subscription.md#turn-recurring-billing-off-or-on)
+   Se l'abbonamento è scaduto, dopo aver inviato i dettagli di pagamento, l'abbonamento torna allo stato attivo e la **data** di fatturazione successiva si estende di un mese o di un anno, a seconda dell'impegno dell'abbonamento corrente. Se si paga tramite carta di credito o conto corrente bancario, il costo dell'estensione verrà addebitato sulla carta o sul conto. Se si paga tramite fattura, l'estensione verrà riportata nella fattura successiva. Per assicurarti che l'abbonamento non scada di nuovo, [attiva Fatturazione ricorrente.](renew-your-subscription.md#turn-recurring-billing-off-or-on)
 
    > [!NOTE]
    > La possibilità di pagare tramite conto corrente bancario non è disponibile in alcuni paesi o aree geografiche.
   
-   Se l'abbonamento è stato annullato o è stato disabilitato perché non è  stato ricevuto un pagamento, torna allo stato attivo e la data di fatturazione successiva rimane la stessa.
+   Se l'abbonamento è stato annullato o è stato disabilitato perché non è stato ricevuto un pagamento, torna allo stato attivo e la **data** di fatturazione successiva rimane la stessa.
 
 ::: moniker-end
 

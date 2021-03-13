@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 7dc1c01a-090f-4971-9677-f1b192d6c910
 description: Informazioni su come impostare le chiavi del Registro di sistema per abilitare l'autenticazione moderna per i dispositivi Microsoft Office 2013.
-ms.openlocfilehash: 34078291fa237b63c391a7e90ba06ea0085c37cb
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 2a4be82328d391db7808cb9197ce259275b567c6
+ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926559"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50758929"
 ---
 # <a name="enable-modern-authentication-for-office-2013-on-windows-devices"></a>Abilitare l'autenticazione moderna per Office 2013 nei dispositivi Windows
 
@@ -42,10 +42,10 @@ Per abilitare l'autenticazione moderna per tutti i dispositivi che eseguono Wind
   
 |**Chiave del Registro di sistema**|**Tipo**|**Valore** |
 |:-------|:------:|--------:|
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1   |
-|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1  |
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\EnableADAL  |REG_DWORD  |1  |
+|HKCU\SOFTWARE\Microsoft\Office\15.0\Common\Identity\Version |REG_DWORD |1 |
    
-Dopo aver impostato le chiavi del Registro di sistema, è possibile impostare le app dei dispositivi di Office 2013 per l'uso dell'autenticazione a più fattori [(MFA)](set-up-multi-factor-authentication.md) con Microsoft 365. 
+Dopo aver impostato le chiavi del Registro di sistema, è possibile impostare le app dei dispositivi di Office 2013 per l'utilizzo dell'autenticazione a più fattori [(MFA)](set-up-multi-factor-authentication.md) con Microsoft 365. 
   
 Se si è attualmente connessi con una delle app client, è necessario disconnettersi e accedere di nuovo per rendere effettive le modifiche. In caso contrario, le impostazioni MRU e di roaming non saranno disponibili finché non viene stabilita l'identità ADAL.
   
@@ -60,5 +60,6 @@ Per disabilitare l'autenticazione moderna in un dispositivo, impostare le seguen
 ## <a name="related-articles"></a>Articoli correlati
 [Accedere a Office 2013 con un secondo metodo di verifica](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
 
-  
+[Outlook richiede la password e non usa l'autenticazione moderna per connettersi a Office 365](https://docs.microsoft.com/outlook/troubleshoot/authentication/outlook-prompt-password-modern-authentication-enabled)
 
+  
