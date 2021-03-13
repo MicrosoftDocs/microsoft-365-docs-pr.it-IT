@@ -8,7 +8,7 @@ manager: laurawi
 audience: Admin
 ms.topic: article
 ms.service: O365-seccomp
-ms.date: 04/17/2019
+ms.date: ''
 localization_priority: Priority
 ms.collection:
 - M365-security-compliance
@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Scoprire come creare, modificare, rimuovere e testare tipi di informazioni sensibili personalizzati per la prevenzione della perdita dei dati (DLP) nell'interfaccia utente grafica nel Centro sicurezza e conformità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 94f0f6b68e9f952e0d52ce7cb71ccf03913584f4
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 049c3c123053b4bd833ea95a2413b81366586870
+ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929352"
+ms.lasthandoff: 03/13/2021
+ms.locfileid: "50766367"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Introduzione ai tipi di informazione sensibile personalizzati
 
@@ -64,7 +64,7 @@ Segui questa procedura per creare un nuovo tipo di informazione sensibile che pu
 5. Scegli e definisci l'**elemento primario**. L'elemento primario può essere una **espressione regolare** con una convalida facoltativa, un **elenco di parole chiave**, un **dizionario di parole chiave**, oppure una delle **funzioni** preconfigurate. Per altre informazioni sulle funzioni DLP, vedere [Elementi cercati dalle funzioni dei criteri di prevenzione della perdita dei dati](what-the-dlp-functions-look-for.md).
 6. Immetti un valore per **Prossimità caratteri**.
 7. (Facoltativo) Aggiungi gli elementi di supporto, se disponibili. Gli elementi di supporto possono essere espressioni regolari con una convalida facoltativa, elenchi o dizionari di parole chiave, oppure una delle funzioni preconfigurate. 
-8.  (Facoltativo) Aggiungi altri controlli tramite l'elenco dei controlli disponibili 
+8.  (Facoltativo) Aggiungi eventuali [**altri controlli**](#more-information-on-additional-checks) dall'elenco dei controlli disponibili.
 9. Scegli **Crea**.
 10. Scegli **Avanti**.
 11. Scegli il **livello di confidenza consigliato** per questo tipo di informazione sensibile.
@@ -73,7 +73,7 @@ Segui questa procedura per creare un nuovo tipo di informazione sensibile che pu
 > [!IMPORTANT]
 > Microsoft 365 usa il crawler di ricerca per identificare e classificare le informazioni sensibili nei siti di SharePoint Online e OneDrive for Business. Per identificare il nuovo tipo di informazioni sensibili personalizzato nel contenuto esistente, è necessario ripetere la ricerca per indicizzazione del contenuto. Il contenuto viene sottoposto a ricerca per indicizzazione in base a una pianificazione, ma è possibile ripetere manualmente la ricerca per indicizzazione del contenuto per una raccolta siti, un elenco o una raccolta. Per altre informazioni, vedere [Richiedere manualmente la ricerca per indicizzazione e la reindicizzazione di un sito, di una raccolta o di un elenco](https://docs.microsoft.com/sharepoint/crawl-site-content).
 
-13. Nella pagina **Classificazione dati** saranno mostrate tutti i tipi di informazione sensibile inclusi nell'elenco. Scegli **Aggiorna**, quindi cerca oppure usa lo strumento di ricerca per trovare il tipo di informazione sensibile appena creato.
+13. Nella pagina **Classificazione dati** saranno mostrate tutti i tipi di informazione sensibile inclusi nell'elenco. Scegli **Aggiorna**, quindi cerca oppure usa lo strumento di ricerca per trovare il tipo di informazione sensibili creato.
 
 ## <a name="test-a-sensitive-information-type"></a>Collaudare i tipi di informazione sensibile
 
@@ -87,7 +87,7 @@ Puoi collaudare qualsiasi tipo di informazione sensibile dell'elenco. Ti suggeri
 ## <a name="modify-custom-sensitive-information-types-in-the-compliance-center"></a>Modificare tipi di informazione sensibile personalizzati nel Centro conformità
 
 1. Nel Centro conformità, vai a **Classificazione dati** \> **Tipi di informazione sensibile**, scegli il tipo di informazione sensibile che vuoi rimuovere dall'elenco e seleziona **Modifica**.
-2. Puoi aggiungere altre configurazioni, con elementi principali e di supporto, livelli di confidenza, prossimità dei caratteri e controlli aggiuntivi specifici, oppure modifica/rimuovere quelle esistenti. Per altre informazioni, leggi [Creare un tipo di informazione sensibile personalizzato](#create-a-custom-sensitive-information-type).
+2. Puoi aggiungere altre configurazioni, con elementi principali e di supporto, livelli di confidenza, prossimità dei caratteri e [**controlli aggiuntivi specifici**](#more-information-on-additional-checks), oppure modificare/rimuovere quelle esistenti.
 
 ## <a name="remove-custom-sensitive-information-types-in-the-compliance-center"></a>Rimuovere tipi di informazione sensibile personalizzati nel Centro conformità 
 
@@ -113,7 +113,7 @@ Usa questa procedura per creare un nuovo tipo di informazione sensibile basato s
 7. Puoi scegliere di modificare o rimuovere le configurazioni esistenti e aggiungerne di nuove. Scegli il livello di confidenza predefinito per la nuova configurazione. I valori sono **Bassa confidenza**, **Media confidenza**, e **Alta confidenza**.
 8. Scegli e definisci l'**elemento primario**. L'elemento primario può essere una **espressione regolare**, un **elenco di parole chiave**, un **dizionario di parole chiave**, oppure una delle **funzioni** preconfigurate. Vedi [Elementi cercati dalle funzioni dei criteri di prevenzione della perdita dei dati](what-the-dlp-functions-look-for.md).
 9. Immetti un valore per **Prossimità caratteri**.
-10. (Facoltativo) Se hai **Elementi di supporto** o qualsiasi **Controllo aggiuntivo**, aggiungili. Se necessario, puoi raggruppare i tuoi **Elementi di supporto**.
+10. (Facoltativo) Se hai **Elementi di supporto** o [**Altri controlli**](#more-information-on-additional-checks), aggiungili. Se necessario, puoi raggruppare i tuoi **Elementi di supporto**.
 11. Scegli **Crea**.
 12. Scegli **Avanti**.
 13. Scegli il **livello di confidenza consigliato** per questo tipo di informazione sensibile.
@@ -122,7 +122,24 @@ Usa questa procedura per creare un nuovo tipo di informazione sensibile basato s
 È anche possibile creare tipi di informazioni sensibili personalizzati usando PowerShell e le funzionalità del classificatore Exact Data Match. Per altre informazioni su questi metodi, vedere:
 - [Creare un tipo di informazioni sensibili personalizzato in PowerShell per Centro sicurezza e conformità](create-a-custom-sensitive-information-type-in-scc-powershell.md)
 - [Creare un tipo di informazioni sensibili personalizzato per DLP con Exact Data Match (EDM)](create-custom-sensitive-information-types-with-exact-data-match-based-classification.md)
- 
+
+## <a name="more-information-on-additional-checks"></a>Maggiori informazioni sugli altri controlli
+
+Ecco le definizioni e alcuni esempi per gli altri controlli disponibili.
+
+**Escludi corrispondenze specifiche**: questo controllo consente di definire le parole chiave da escludere quando si rilevano le corrispondenze per i criteri che si stanno modificando. Ad esempio, è possibile escludere i numeri di carta di credito di prova come "4111111111111111" in modo che non possano corrispondere a un numero valido.
+
+**Inizia o non inizia con caratteri**: questo controllo consente di definire i caratteri con cui gli elementi corrispondenti devono o non devono iniziare. Ad esempio, se si vuole che i criteri rilevino solo i numeri di carta di credito che iniziano con 41, 42 o 43, selezionare **Inizia con** e aggiungere 41, 42 e 43 all'elenco, separati da virgole. 
+
+**Termina o non termina con caratteri**: questo controllo consente di definire i caratteri con cui gli elementi corrispondenti devono o non devono terminare. Ad esempio, se il numero ID del dipendente non può terminare con 0 o 1, selezionare **Non termina con** e aggiungere 0 e 1 all'elenco, separati da virgole.
+
+**Escludi caratteri duplicati**: questo controllo consente di ignorare le corrispondenze in cui tutte le cifre sono uguali. Ad esempio, se il numero ID del dipendente a sei cifre non può avere tutte le stesse cifre uguali, è possibile selezionare **Escludi caratteri duplicati** per escludere 111111, 222222, 333333, 444444, 555555, 666666, 777777, 888888, 999999 e 000000 dall'elenco delle corrispondenze valide per l'ID dipendente.
+
+**Includi o escludi i prefissi**: questo controllo consente di definire le parole chiave che devono o non devono trovarsi immediatamente prima dell'entità corrispondente. In base all'opzione selezionata, le entità saranno o meno considerate corrispondenze se sono precedute dai prefissi inclusi qui. Ad esempio, se si **esclude** il prefisso **GUID:**, qualsiasi entità preceduta da **GUID:** non verrà considerata una corrispondenza.
+
+**Includi o escludi suffissi**: questo controllo consente di definire le parole chiave che devono o non devono trovarsi immediatamente dopo l'entità corrispondente. In base all'opzione selezionata, le entità saranno o meno considerate corrispondenze se sono seguite dai suffissi inclusi qui. Ad esempio, se si **esclude** il suffisso **:GUID**, qualunque testo seguito da **:GUID** non sarà considerato una corrispondenza.
+
+
 > [!NOTE]
 > Microsoft 365 Information Protection supporta, in anteprima, i set di caratteri a due byte nelle lingue seguenti:
 > - Cinese (semplificato)
