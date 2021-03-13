@@ -8,23 +8,24 @@ manager: scotv
 audience: Admin
 ms.topic: article
 ms.service: o365-administration
-localization_priority: Normal
+localization_priority: Priority
 ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_TOC
+ms.custom:
+- AdminSurgePortfolio
 - commerce
-ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Informazioni su come annullare la sottoscrizione di valutazione o a pagamento di Microsoft 365 per le aziende.
+description: Informazioni su come annullare la versione di valutazione o l'abbonamento a pagamento a Microsoft 365 per le aziende.
 ms.date: ''
-ms.openlocfilehash: 5d96b541030646668f636ee09cc3ccc4b43ef75a
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
-ms.translationtype: MT
+ms.openlocfilehash: 45e953fd415bb2d508554b47fb3226dcae74cb6b
+ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233341"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "50741402"
 ---
 # <a name="cancel-your-subscription"></a>Annullare l'abbonamento
 
@@ -35,29 +36,29 @@ ms.locfileid: "50233341"
 
 ::: moniker-end
 
-*Idoneità:* Se agli utenti sono assegnate meno di 25 licenze, è possibile annullare la sottoscrizione di valutazione o a pagamento di Microsoft 365 per le aziende online nell'interfaccia di amministrazione di Microsoft 365 in qualsiasi momento. Se agli utenti sono assegnate più di 25 licenze, ridurlo a meno di 25 o chiamare il supporto tecnico [per annullare l'abbonamento.](../../admin/contact-support-for-business-products.md)
+*Idoneità:* Se si hanno meno di 25 licenze assegnate a utenti, è possibile annullare la versione di valutazione o l'abbonamento a pagamento di Microsoft 365 per le aziende online nell'interfaccia di amministrazione di Microsoft 365 in qualsiasi momento. Se si hanno più di 25 licenze assegnate a utenti, ridurlo a meno di 25 o [contattare il supporto per annullare l'abbonamento](../../admin/contact-support-for-business-products.md).
 
 *Rimborso:* eventuali crediti proporzionali verranno rimessi entro il successivo ciclo di fatturazione.
 
 > [!NOTE]
-> Se si dispone di più abbonamenti allo stesso prodotto, ad esempio Microsoft 365 Business Premium, annullarne uno non inciderà sulle licenze o sui servizi acquistati all'interno degli altri abbonamenti.
+> Se si hanno più abbonamenti allo stesso prodotto, ad esempio Microsoft 365 Business Premium, annullarne uno non influisce sulle licenze o i servizi acquistati all'interno degli altri abbonamenti.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-Per eseguire le attività di questo articolo, è necessario essere un amministratore globale o di fatturazione. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
+È necessario essere un amministratore globale o un amministratore di fatturazione per eseguire le procedure descritte in questo articolo. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
 
-## <a name="steps-to-cancel-your-subscription"></a>Procedura per annullare l'abbonamento
+## <a name="steps-to-cancel-your-subscription"></a>Passaggi per annullare l'abbonamento
 
-Se è stato aggiunto il proprio nome di dominio da utilizzare con l'abbonamento, è necessario rimuovere il dominio prima di annullare l'abbonamento. Per ulteriori informazioni, vedere [Rimuovere un dominio.](../../admin/get-help-with-domains/remove-a-domain.md)
+Se si è aggiunto il nome del proprio dominio per usarlo con l’abbonamento, è necessario rimuovere il dominio prima di annullare l'abbonamento. Per altre informazioni, vedere [Rimuovere un dominio](../../admin/get-help-with-domains/remove-a-domain.md).
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti,</a> quindi selezionare la **scheda** Prodotti.
-2. Trovare l'abbonamento che si desidera annullare. Selezionare **Altre azioni** (tre puntini), quindi selezionare **Annulla l’abbonamento**.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>, quindi selezionare la scheda **Prodotti**.
+2. Trovare l'abbonamento da annullare. Selezionare **Altre azioni** (tre puntini), quindi selezionare **Annulla l’abbonamento**.
 3. Nel riquadro **Annulla abbonamento** scegliere un motivo per cui si vuole annullare l'abbonamento. Se si vuole, inviare un feedback.
 4. Selezionare **Salva**.
 
-L'abbonamento ora viene visualizzato in **stato** Disabilitato e ha funzionalità ridotte fino a quando non viene eliminato. Per altre informazioni su cosa aspettarsi quando un abbonamento a pagamento a Microsoft 365 per le aziende viene annullato, vedere Cosa succede ai dati e all'accesso al termine dell'abbonamento a [Microsoft 365](what-if-my-subscription-expires.md) per le aziende?
+L'abbonamento apparirà ora in uno stato **Disabilitato** e le sue funzionalità saranno limitate fino all'eliminazione. Per altre informazioni sulle conseguenze dell'annullamento di un abbonamento a pagamento a Microsoft 365 per le aziende, vedere [Cosa succede ai dati personali al termine dell'abbonamento a Microsoft 365 per le aziende?](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -65,15 +66,15 @@ L'abbonamento ora viene visualizzato in **stato** Disabilitato e ha funzionalit�
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
 
-2. Nella pagina **Sottoscrizioni** selezionare una sottoscrizione.
+2. Nella pagina **Abbonamenti** selezionare un abbonamento.
 
-3. Scegliere **Annulla abbonamento dal** menu **Altre azioni.**
+3. Selezionare **Annulla abbonamento** dal menu **Altre azioni**.
 
-    ![Close up of the More Actions menu.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
+    ![Primo piano del menu Altre azioni.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
 
-4. Esaminare le date importanti, inviare commenti e suggerimenti sul motivo dell'annullamento, quindi selezionare **Annulla abbonamento.**
+4. Verificare le date importanti, indicare il motivo dell'annullamento e quindi selezionare **Annulla abbonamento**.
 
-    L'abbonamento ora viene visualizzato in **stato Disabilitato** e ha funzionalità ridotte fino a quando non viene eliminato. Per altre informazioni su cosa aspettarsi quando un abbonamento a pagamento a Microsoft 365 per le aziende viene annullato, vedere Cosa succede ai dati e all'accesso al termine dell'abbonamento a [Microsoft 365](what-if-my-subscription-expires.md) per le aziende?
+    L'abbonamento apparirà ora in uno stato **Disabilitato** e le sue funzionalità saranno limitate fino all'eliminazione. Per altre informazioni sulle conseguenze dell'annullamento di un abbonamento a pagamento a Microsoft 365 per le aziende, vedere [Cosa succede ai dati personali al termine dell'abbonamento a Microsoft 365 per le aziende?](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
@@ -81,64 +82,64 @@ L'abbonamento ora viene visualizzato in **stato** Disabilitato e ha funzionalit�
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
 
-2. Nella pagina **Sottoscrizioni** selezionare una sottoscrizione.
+2. Nella pagina **Abbonamenti** selezionare un abbonamento.
 
-3. Scegliere **Annulla abbonamento dal** menu **Altre azioni.**
+3. Selezionare **Annulla abbonamento** dal menu **Altre azioni**.
 
-    ![Close up of the More Actions menu.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
+    ![Primo piano del menu Altre azioni.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
 
-4. Esaminare le date importanti, inviare commenti e suggerimenti sul motivo dell'annullamento, quindi selezionare **Annulla abbonamento.**
+4. Verificare le date importanti, indicare il motivo dell'annullamento e quindi selezionare **Annulla abbonamento**.
 
-    L'abbonamento ora viene visualizzato in **stato** Disabilitato e ha funzionalità ridotte fino a quando non viene eliminato. Per altre informazioni su cosa aspettarsi quando un abbonamento a pagamento a Microsoft 365 per le aziende viene annullato, vedere Cosa succede ai dati e all'accesso al termine dell'abbonamento a [Microsoft 365](what-if-my-subscription-expires.md) per le aziende?
+    L'abbonamento apparirà ora in uno stato **Disabilitato** e le sue funzionalità saranno limitate fino all'eliminazione. Per altre informazioni sulle conseguenze dell'annullamento di un abbonamento a pagamento a Microsoft 365 per le aziende, vedere [Cosa succede ai dati personali al termine dell'abbonamento a Microsoft 365 per le aziende?](what-if-my-subscription-expires.md)
 
 ::: moniker-end
 
-## <a name="what-happens-when-you-cancel-a-subscription"></a>Cosa succede quando si annulla un abbonamento
+## <a name="what-happens-when-you-cancel-a-subscription"></a>Che cosa accade quando si annulla un abbonamento
 
-Se si annulla una sottoscrizione prima della fine del periodo di tempo, lo stato della sottoscrizione passa direttamente allo stato disabilitato. Per la maggior parte degli abbonamenti, nella maggior parte dei paesi e delle aree geografiche lo stato disabilitato dura 90 giorni. Gli amministratori possono comunque accedere ed eseguire il backup dei dati per l'organizzazione [](back-up-data-before-switching-plans.md) mentre l'abbonamento è in stato disabilitato, ma è consigliabile che gli amministratori eservino il backup dei dati prima di annullare un abbonamento, soprattutto se si tratta dell'unico abbonamento. Gli amministratori possono anche riattivare la sottoscrizione mentre è nello stato disabilitato.
+Se si annulla un abbonamento prima del termine del periodo di valutazione, lo stato dell'abbonamento passa direttamente allo stato disabilitato. Per la maggior parte degli abbonamenti e nella maggior parte dei paesi e delle aree geografiche, lo stato Scaduto dura 90 giorni. Gli amministratori possono ancora accedere ed eseguire il backup dei dati dell'organizzazione mentre l'abbonamento è nello stato disabilitato, ma è consigliabile che gli amministratori [eseguano il backup dei loro dati](back-up-data-before-switching-plans.md) prima di annullare un abbonamento, specialmente se si tratta solo del loro abbonamento. Gli amministratori possono anche riattivare l'abbonamento che si trova nello stato Disabilitato.
 
-Dopo 90 minuti, la sottoscrizione passa allo stato eliminato. I dati che lasci in ritardo possono essere eliminati dopo questi 90 giorni non oltre i 180 giorni successivi all'annullamento. Non è possibile rimuovere una modalità di pagamento da un abbonamento annullato fino a quando non raggiunge lo stato eliminato.
+Dopo 90 giorni, l'abbonamento passa allo stato eliminato.. I dati della che non vengono spostati possono essere eliminati dopo 90 giorni e in ogni caso verranno eliminati entro 180 giorni dall'annullamento. Non è possibile rimuovere una modalità di pagamento da un abbonamento annullato finché non raggiunge lo stato eliminato.
 
 ### <a name="what-to-expect-for-you-and-your-users-if-you-cancel-a-subscription"></a>Conseguenze per amministratori e utenti dell'annullamento di una sottoscrizione
   
-- **Accesso amministratore** Gli amministratori possono comunque accedere all'interfaccia di amministrazione e acquistare altri abbonamenti in base alle esigenze. Gli amministratori globali o di fatturazione hanno 90 giorni per [riattivare](reactivate-your-subscription.md) la sottoscrizione con tutti i dati intatti.
+- **Accesso dell'amministratore** Gli amministratori possono ancora eseguire l'accesso e aprire l'Interfaccia di amministrazione, oltre ad acquistare altri abbonamenti in base alle necessità. Un amministratore globale o di fatturazione ha 90 giorni di tempo per [riattivare l’abbonamento](reactivate-your-subscription.md) con tutti i dati inalterati.
 
-- **Accesso utente** Gli utenti non potranno usare servizi come OneDrive for Business o accedere ai dati dei clienti come la posta elettronica o i documenti nei siti del team. Le applicazioni di Office, come Word e Excel, entreranno alla fine in una modalità di sola lettura con funzionalità ridotte e visualizzeranno [notifiche di prodotto senza licenza](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx).
+- **Accesso degli utenti:** gli utenti non potranno usare i servizi come OneDrive for Business o accedere ai dati della società, come la posta elettronica o i documenti nei siti del team. Le applicazioni di Office, come Word e Excel, entreranno alla fine in una modalità di sola lettura con funzionalità ridotte e visualizzeranno [Notifiche di prodotto senza licenza](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx).
 
-Per altre informazioni, vedere [Cosa succede ai dati e all'accesso al termine dell'abbonamento?](what-if-my-subscription-expires.md)
+Per altre informazioni, vedere [Che cosa succede ai dati personali al termine dell'abbonamento?](what-if-my-subscription-expires.md)
 
 > [!IMPORTANT]
-> Se si desidera che i dati dell'abbonamento siano eliminati prima del termine del periodo tipico disabilitato, è possibile [chiudere l'account.](../close-your-account.md)
+> Se si vogliono eliminare i dati dell'abbonamento prima del termine del periodo standard di disabilitazione, è possibile [chiudere l’account](../close-your-account.md).
 
 ## <a name="other-steps-you-might-have-to-take"></a>Altri passaggi che potrebbe essere necessario eseguire
 
-### <a name="change-custom-domain-settings"></a>Modificare le impostazioni di dominio personalizzate
+### <a name="change-custom-domain-settings"></a>Modificare le impostazioni del dominio personalizzato
 
-Se si utilizza un dominio personalizzato con l'abbonamento, è necessario eseguire alcuni passaggi aggiuntivi prima di poter annullare l'abbonamento. Se non si dispone di un dominio personalizzato, è possibile passare a [Salvare i dati.](#save-your-data)
+Se si usa un dominio personalizzato con il proprio abbonamento, è necessario eseguire alcuni passaggi aggiuntivi prima di poter annullare l'abbonamento. Se non si ha un dominio personalizzato, è possibile passare direttamente a [Salvare i dati](#save-your-data).
 
-#### <a name="change-your-domain-nameserver-records-if-needed"></a>Modificare i record del server dei nomi di dominio (se necessario)
+#### <a name="change-your-domain-nameserver-records-if-needed"></a>Modificare i record dei server dei nomi del dominio (se necessario)
 
-Se si configura un dominio personalizzato, sono stati aggiunti record DNS in modo che il dominio funzioni con i servizi di Microsoft 365. Prima di rimuovere il dominio, assicurarsi di aggiornare i record DNS, ad esempio il record MX del dominio, nell'host DNS.
+Se si è configurato un dominio personalizzato, sono stati aggiunti i record DNS necessari per il funzionamento del dominio con i servizi di Microsoft 365. Prima di rimuovere il dominio, assicurarsi di aggiornare i record DNS, come il record MX del dominio, presso l'host DNS.
 
-Ad esempio, modificare il record MX nell'host DNS. La posta elettronica inviata al dominio smette di essere inviata al proprio indirizzo Microsoft e passa al nuovo provider di posta elettronica. Un record MX determina infatti la destinazione della posta elettronica per il dominio.
+Ad esempio, modificare il record MX presso l'host DNS. La posta elettronica inviata al dominio non verrà più inviata all'indirizzo Microsoft e verrà invece indirizzata al nuovo provider di posta elettronica. Un record MX determina infatti la destinazione della posta elettronica per il dominio.
 
-- Se i record dei server dei nomi (NS) puntano ai server dei nomi [di Microsoft 365,](../../admin/setup/add-domain.md)le modifiche apportate al record MX non hanno effetto finché non si modificano i record NS in modo che puntino al nuovo host DNS (vedere il passaggio 2).
+- Se i record server dei nomi (NS) [puntano ai server dei nomi di Microsoft 365](../../admin/setup/add-domain.md), le modifiche del record MX non avranno effetto finché non si modificano i record NS in modo che puntino al nuovo host DNS (vedere il passaggio 2).
 
-- Prima di aggiornare il record MX, in modo che gli utenti sappiano la data in cui si prevede di cambiare la posta elettronica e il nuovo provider di posta elettronica che si prevede di utilizzare. Inoltre, se gli utenti desiderano spostare la posta elettronica Microsoft esistente nel nuovo provider, devono eseguire ulteriori operazioni.
+- Prima di aggiornare il record MX, comunicare agli utenti la data prevista per il trasferimento della posta elettronica e il nuovo provider di posta elettronica che si prevede di utilizzare. Inoltre, se gli utenti vogliono trasferire l'account di posta elettronica Microsoft esistente nel nuovo provider, devono eseguire passaggi aggiuntivi.
 
 - Il giorno dell'aggiornamento del record MX eseguire i passaggi rimanenti descritti in questo articolo.
 
-#### <a name="update-your-domain-mx-and-other-dns-records-if-youre-using-a-custom-domain"></a>Aggiornare il dominio MX e altri record DNS (se si utilizza un dominio personalizzato)
+#### <a name="update-your-domain-mx-and-other-dns-records-if-youre-using-a-custom-domain"></a>Aggiornare il record MX e altri record DNS del dominio (se si usa un dominio personalizzato)
 
-Se i record del server dei nomi (NS) sono stati impostati su Microsoft 365 durante la configurazione del dominio, è necessario configurare o aggiornare il record MX e altri record DNS nell'host DNS che si intende utilizzare, quindi modificare il record NS in tale host DNS.
+Se durante la configurazione del dominio i record del server dei nomi (NS) sono stati aggiornati in modo da puntare a Microsoft 365, è necessario configurare o aggiornare il record MX e altri record DNS presso il nuovo host DNS previsto e quindi modificare anche i record NS.
 
-Se non è stato cambiato record NS durante la configurazione del dominio, quando si modifica il record MX, la posta inizia subito a passare al nuovo indirizzo.
+Se i record NS non sono stati aggiornati al momento della configurazione del dominio, quando si modifica il record MX la posta inizia subito a essere recapitata al nuovo indirizzo.
 
-Per modificare i record NS, vedere [Rimuovere un dominio.](../../admin/get-help-with-domains/remove-a-domain.md)
+Per modificare i record NS, vedere [Rimuovere un dominio](../../admin/get-help-with-domains/remove-a-domain.md).
 
 ### <a name="save-your-data"></a>Salvare i dati
 
-Quando l'annullamento diventa effettivo, gli utenti perdono l'accesso ai propri dati. Prima di annullare l'abbonamento, fare in modo che salvino i file di OneDrive for Business o SharePoint Online in un altro percorso. I dati dei clienti che lasci potrebbero essere eliminati dopo 30 giorni e non oltre 180 giorni dopo l'annullamento.
+Quando l'annullamento diventa effettivo, gli utenti perdono l'accesso ai propri dati. Prima di annullare l'abbonamento, impostare il salvataggio dei file di OneDrive for Business o SharePoint Online in un'altra posizione. I dati della società che non vengono spostati possono essere eliminati dopo 30 giorni e in ogni caso verranno eliminati entro 180 giorni dall'annullamento.
 
 - Per spostare posta elettronica, contatti, attività e informazioni del calendario in un altro account, vedere [Esportare o eseguire il backup di posta elettronica, contatti e calendari in un file PST di Outlook](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91.aspx).
 
@@ -146,14 +147,14 @@ Quando l'annullamento diventa effettivo, gli utenti perdono l'accesso ai propri 
 
 ### <a name="uninstall-office-optional"></a>Disinstallare Office (facoltativo)
 
-Se l'abbonamento è stato annullato e gli utenti non sono stati spostati in un altro abbonamento che include Microsoft 365, Microsoft 365 viene eseguito in modalità con funzionalità ridotte. [](move-users-different-subscription.md) In questo caso, gli utenti possono solo leggere e stampare documenti e le applicazioni di Microsoft 365 visualizzano le notifiche di prodotto senza [licenza.](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx) Per evitare confusione, chiedere agli utenti di [disinstallare Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx) dai propri computer.
+Se l'abbonamento è stato annullato e non [ha spostato gli utenti su un altro abbonamento](move-users-different-subscription.md) che include Microsoft 365, Microsoft 365 viene eseguito in modalità con funzionalità ridotte. In questa modalità gli utenti possono solo leggere e stampare documenti e le applicazioni di Microsoft 365 visualizzano [Notifiche di prodotto senza licenza](https://support.microsoft.com/office/0d23d3c0-c19c-4b2f-9845-5344fedc4380.aspx). Per evitare confusione, chiedere agli utenti di [disinstallare Office](https://support.microsoft.com/office/9dd49b83-264a-477a-8fcc-2fdf5dbf61d8.aspx) dai propri computer.
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-Se vuoi chiudere completamente l'account con Microsoft, vedi [Chiudere l'account.](../close-your-account.md)
+Se si vuole chiudere completamente l'account con Microsoft, vedere [Chiudere l'account](../close-your-account.md).
 
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
 [Rinnovare l'abbonamento](renew-your-subscription.md) (articolo)\
 [Riattivare l'abbonamento](reactivate-your-subscription.md) (articolo)\
-[Spostare gli utenti in un abbonamento diverso](move-users-different-subscription.md) (articolo)
+[Trasferire gli utenti a un abbonamento diverso](move-users-different-subscription.md) (articolo)
