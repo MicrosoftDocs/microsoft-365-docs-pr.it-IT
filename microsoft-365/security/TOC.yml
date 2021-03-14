@@ -285,8 +285,6 @@
                   items:
                     - name: Panoramica sull'integrazione di ServiceNow
                       href: ./mtp/tickets.md
-                    - name: Ticket di ServiceNow nel Centro sicurezza
-                      href: ./mtp/tickets-security-center.md
             - name: 'API supportate di Microsoft 365 Defender (anteprima) '
               items:
                 - name: Panoramica sulle API supportate da Microsoft 365 Defender (anteprima)
