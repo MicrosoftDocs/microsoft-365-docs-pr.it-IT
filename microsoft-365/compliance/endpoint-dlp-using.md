@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Informazioni su come configurare i criteri di prevenzione della perdita dei dati (DLP) per usare le posizioni di Prevenzione della perdita di dati degli endpoint di Microsoft 365.
-ms.openlocfilehash: 6723f3f0903ba6a0e1833bfae1f3dea2362e2c30
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 1bb4013069b8f4890ba420f13a0203eb63973121
+ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406210"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "50820188"
 ---
 # <a name="using-endpoint-data-loss-prevention"></a>Uso della prevenzione della perdita di dati degli endpoint
 
@@ -81,6 +81,9 @@ Limitare la condivisione dei file riservati che corrispondono ai criteri, con i 
 Se la modalità elenco è impostata su **Blocca**, l'utente non potrà caricare elementi sensibili in tali domini. Quando un'azione di caricamento viene bloccata perché un elemento corrisponde a un criterio di prevenzione della perdita dei dati, DLP genera un avviso o blocca il caricamento dell'elemento sensibile.
 
 Se la modalità elenco è impostata su **Consenti**, gli utenti possono caricare gli elementi sensibili **_solo_** in tali domini e l'accesso in caricamento a tutti gli altri domini non è consentito.
+
+> [!IMPORTANT]
+> Se la modalità di restrizione del servizio è impostata su "Consenti", per applicare le restrizioni occorre aver configurato almeno un dominio del servizio.
 
 #### <a name="unallowed-browsers"></a>Browser non consentiti
 
