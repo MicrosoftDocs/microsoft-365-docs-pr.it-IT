@@ -44,16 +44,18 @@
           href: insider-risk-management.md
         - name: Piano per la gestione dei rischi Insider
           href: insider-risk-management-plan.md
-        - name: Introduzione alle impostazioni dei rischi Insider
-          href: insider-risk-management-settings.md
         - name: Introduzione alla gestione dei rischi Insider
           href: insider-risk-management-configure.md
+        - name: Introduzione alle impostazioni dei rischi Insider
+          href: insider-risk-management-settings.md
         - name: Creare e gestire i criteri dei rischi Insider
           href: insider-risk-management-policies.md
         - name: Esaminare gli avvisi relativi ai rischi Insider
           href: insider-risk-management-alerts.md
         - name: Intervenire riguardo ai casi di rischio Insider
           href: insider-risk-management-cases.md
+        - name: Rivedere le attività con il log di audit del rischio Insider
+          href: insider-risk-management-audit-log.md
         - name: Esaminare i dati con l'explorer del contenuto di gestione dei rischi Insider
           href: insider-risk-management-content-explorer.md
         - name: Gestire il flusso di lavoro con il dashboard utenti
@@ -237,8 +239,12 @@
               href: data-loss-prevention-policies.md
             - name: Informazioni sulla prevenzione della perdita di dati degli endpoint
               href: endpoint-dlp-learn-about.md
+            - name: Informazioni sul criterio predefinito per la prevenzione della perdita di dati in Microsoft Teams (anteprima)
+              href: dlp-teams-default-policy.md
             - name: Informazioni sullo scanner locale per la prevenzione della perdita dei dati di Microsoft 365 (anteprima)
               href: dlp-on-premises-scanner-learn.md
+            - name: Informazioni sul Centro conformità Microsoft (anteprima)
+              href: dlp-chrome-learn-about.md
         - name: Introduzione alla prevenzione della perdita dei dati
           items:
             - name: Introduzione ai criteri di prevenzione della perdita dei dati predefiniti
@@ -253,6 +259,8 @@
               href: endpoint-dlp-getting-started.md
             - name: Configurazione del proxy del dispositivo e delle impostazioni di connessione a internet per la prevenzione della perdita di dati degli endpoint
               href: endpoint-dlp-configure-proxy.md
+            - name: Introduzione all'estensione della Conformità Microsoft (anteprima)
+              href: dlp-chrome-get-started.md
             - name: Strumenti e metodi di onboarding della prevenzione della perdita di dati degli endpoint per i dispositivi Windows 10
               items:
                 - name: Strumenti e metodi di onboarding per i dispositivi Windows 10

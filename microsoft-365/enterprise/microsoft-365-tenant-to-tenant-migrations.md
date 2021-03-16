@@ -19,22 +19,22 @@ f1.keywords:
 - NOCSH
 description: Informazioni su come eseguire la migrazione dei tenant di Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 09b2bc77333afaf1991064369846241328db85ff
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: f6e8277a7ca768db3a4a4acd2488859b7764a40c
+ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461644"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "50819715"
 ---
 # <a name="microsoft-365-tenant-to-tenant-migrations"></a>Migrazioni da tenant a tenant di Microsoft 365
 
-Esistono diversi approcci di architettura per fusioni, acquisizioni, dismisshe e altri scenari che potrebbero portare alla migrazione di un tenant di Microsoft 365 esistente in un nuovo tenant. La maggior parte dei clienti collabora con Microsoft Consulting Services o con un partner Microsoft per eseguire la migrazione dei tenant, incluso l'uso di strumenti di terze parti per eseguire la migrazione del contenuto. 
+Esistono diversi approcci di architettura per fusioni, acquisizioni, cessioni e altri scenari che potrebbero portare a eseguire la migrazione di un tenant di Microsoft 365 esistente a un nuovo tenant. La maggior parte dei clienti collabora con Microsoft Consulting Services o con un partner Microsoft per eseguire la migrazione dei tenant, incluso l'utilizzo di strumenti di terze parti per eseguire la migrazione del contenuto. 
 
 Usare il [modello di architettura](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) di migrazione da tenant a tenant per comprendere come pianificare le migrazioni da tenant a tenant di Microsoft 365 e i passaggi di una migrazione.
 
 [![Modello di migrazione da tenant a tenant](../media/solutions-architecture-center/msft-tenant-to-tenant-migration-thumb.png)](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) 
 
-Questo modello viene scaricato in [formato PDF](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-tenant-to-tenant-migration.pdf) e stampato su carta formato lettera, legale o tabloid (11 x 17).
+È possibile scaricare questo modello in [formato PDF](https://download.microsoft.com/download/b/a/1/ba19dfe7-96e2-4983-8783-4dcff9cebe7b/microsoft-365-tenant-to-tenant-migration.pdf) e stamparlo su carta formato lettera, legale o tabloid (11 x 17).
 
 Questo modello fornisce indicazioni e un punto di partenza per la pianificazione con sezioni su:
 
@@ -45,4 +45,4 @@ Questo modello contiene anche esempi dettagliati di:
 
 - Flusso di migrazione di un singolo evento
 - Flusso di migrazione in fasi
-- Spostamento di un tenant o flusso diviso
+- Spostamento tenant o flusso diviso
