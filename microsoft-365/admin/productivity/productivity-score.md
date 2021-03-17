@@ -2,8 +2,8 @@
 title: Punteggio della produttività Microsoft
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: pebaum
+author: pebaum
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,16 +19,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Panoramica del punteggio della produttività Microsoft.
-ms.openlocfilehash: 0ce25175b3307e986c079c1614e38e8d87828e04
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 72f9bcfb273912629744ec25ad9c0be720e76081
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509087"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838426"
 ---
 # <a name="microsoft-productivity-score"></a>Punteggio della produttività Microsoft 
 
-Il punteggio della produttività supporta il percorso verso la trasformazione digitale con approfondimenti sul modo in cui l'organizzazione usa Microsoft 365 e le esperienze tecnologiche di supporto. Il punteggio dell'organizzazione misura le esperienze con la tecnologia e delle persone e può essere confrontato ai benchmark di organizzazioni simili per dimensione.
+Il punteggio della produttività supporta il percorso verso la trasformazione digitale con approfondimenti sul modo in cui l'organizzazione usa Microsoft 365 e le esperienze tecnologiche di supporto. Il punteggio dell’organizzazione riflette le misurazioni delle persone e dell'esperienza con la tecnologia e può essere confrontato con i benchmark di organizzazioni di dimensioni simili alla propria.
 
 Fornisce:
 
@@ -40,7 +40,7 @@ Forniamo metriche, approfondimenti e consigli in due aree:
 
 - **Esperienze delle persone:** Quantifica come lavora l'organizzazione utilizzando le categorie di Microsoft 365 quali collaborazione ai contenuti, mobilità, riunioni e lavoro in team.  
 
-    Per ognuna delle categorie menzionate, consultiamo le ricerche pubbliche per identificare le best practice e i vantaggi correlati sotto forma di efficacia dell'organizzazione. Ad esempio, una ricerca di [Forrester](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf) ha mostrato che quando le persone collaborano e condividono contenuti nel cloud (invece di inviare contenuti per posta elettronica), possono risparmiare fino a 100 minuti a settimana. Inoltre, quantifichiamo l'utilizzo di queste best practice nell'organizzazione per verificare la propria posizione nel percorso verso la trasformazione digitale. 
+    Per ognuna delle categorie menzionate, consultiamo le ricerche pubbliche per identificare alcune procedure consigliate e i vantaggi associati sotto forma di efficacia organizzativa. Ad esempio, una ricerca di [Forrester](https://vc2prod.blob.core.windows.net/vc-resources/TEIStudies/TEI%20of%20Microsoft%20365%20E5%20-%20Oct%202018.pdf) ha mostrato che quando le persone collaborano e condividono contenuti nel cloud (invece di inviare contenuti per posta elettronica), possono risparmiare fino a 100 minuti a settimana. Inoltre, quantifichiamo l'utilizzo di queste best practice nell'organizzazione per verificare la propria posizione nel percorso verso la trasformazione digitale. 
 
 - **Esperienze con la tecnologia:** l'organizzazione dipende da una tecnologia affidabile con prestazioni elevate, nonché dall'uso efficiente di Microsoft 365. [L'analisi degli endpoint](https://aka.ms/endpointanalytics) consente di comprendere in che modo l'organizzazione può essere influenzata da problemi di prestazioni e integrità con l'hardware e il software. L'integrità di Microsoft  365 Apps consente di comprendere se i dispositivi nell'organizzazione eseguono Microsoft 365 Apps sui canali consigliati.
 
@@ -72,7 +72,7 @@ Il punteggio della produttività include i dati di Exchange, SharePoint, OneDriv
 Il punteggio dell'organizzazione viene aggiornato ogni giorno e riflette le azioni dell'utente completate negli ultimi 28 giorni (compreso il giorno corrente).
 
 
-## <a name="pre-requisites"></a>Prerequisiti 
+## <a name="prerequisites"></a>Prerequisiti 
 
 I dati sulle esperienze degli utente richiedono un abbonamento a Microsoft 365 for business o Office 365 per aziende. Per i dati di analisi degli endpoint per il tenant è necessario aggiungere Microsoft Intune all'abbonamento. Intune ti consente di proteggere i dati dell'organizzazione con la gestione di dispositivi e app. Dopo aver aggiunto Intune, è possibile attivare la funzione analisi endpoint nell'esperienza di Intune. Altre informazioni su [Microsoft Intune](https://docs.microsoft.com/mem/intune/). 
 > [!NOTE]
@@ -92,9 +92,9 @@ Il punteggio della produttività è disponibile solo nell'interfaccia di amminis
 > [!NOTE]
 > Solo un professionista IT con un ruolo di amministratore globale può registrarsi o acconsentire esplicitamente in un tenant per il punteggio della produttività.
 
-Si noti che queste informazioni vengono utilizzate unicamente per incoraggiare la trasformazione digitale tramite Microsoft 365 e dovrebbero pertanto essere condivise con discrezione. 
+Il modello di controllo degli accessi in base al ruolo per Punteggio della produttività aiuta le organizzazioni a eseguire ulteriori operazioni di trasformazione digitale con Microsoft 365, fornendo la flessibilità necessaria per assegnare ruoli ai professionisti IT all'interno di un'organizzazione.
 
-Microsoft si impegna a proteggere la privacy di tutti gli utenti. Questo [documento sulla privacy](privacy.md)  spiega i controlli che forniamo, in quanto amministratori IT della tua organizzazione, per garantire che le informazioni siano utilizzabili senza compromettere la fiducia riposta in Microsoft .
+Microsoft si impegna a proteggere la privacy di tutti gli utenti. Questo [documento sulla privacy](privacy.md) spiega i controlli che forniamo, in quanto amministratori IT della tua organizzazione, per garantire che le informazioni siano utilizzabili senza compromettere la fiducia riposta in Microsoft.
 
 È possibile accedere all'esperienza dalla home page di Amministrazione Microsoft 365 in **report** > **Punteggio della produttività**.
 

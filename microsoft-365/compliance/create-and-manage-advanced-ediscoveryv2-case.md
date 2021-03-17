@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: In questo articolo viene descritto come creare e gestire i casi di Advanced eDiscovery. Il primo passaggio consiste nel creare un caso e iniziare a usare funzionalità e funzionalità avanzate di eDiscovery.
-ms.openlocfilehash: 80cfe31a86060cb3603a101b314273cc67750bd8
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 0301213cf6d7e3c30b98ad5125468c6c75ed95b1
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727543"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838257"
 ---
 # <a name="create-and-manage-an-advanced-ediscovery-case"></a>Creare e gestire un caso advanced eDiscovery
 
@@ -82,15 +82,15 @@ Per iniziare a usare Advanced eDiscovery, ecco un flusso di lavoro di base in li
 
    - È possibile utilizzare il flusso [di lavoro delle comunicazioni](managing-custodian-communications.md) in Advanced eDiscovery per inviare una notifica di blocco legale ai custodi.
 
-2. **[Cercare nelle origini dati i dati rilevanti per il caso](collecting-data-for-ediscovery.md)**. Dopo aver aggiunto i custodi e le origini dati non di custodia a un caso, utilizzare lo strumento di ricerca incorporato per cercare in tali origini dati i dati che potrebbero essere rilevanti per il caso. Le parole chiave, le proprietà e le condizioni vengono utilizzate per creare [query](building-search-queries.md) di ricerca che restituiscono risultati di ricerca con i dati più rilevanti per il caso. È inoltre possibile:
+2. **[Raccogliere dati rilevanti da origini dati](create-draft-collection.md)**. Dopo aver aggiunto i custodi e le origini dati non di custodia a un caso, usa lo strumento di raccolta incorporato per cercare in queste origini dati contenuti che potrebbero essere rilevanti per il caso. Le parole chiave, le proprietà e le condizioni vengono utilizzate per creare [query](building-search-queries.md) di ricerca che restituiscono risultati di ricerca con i dati più rilevanti per il caso. È inoltre possibile:
 
-   - Visualizzare [le statistiche di](search-statistics-in-advanced-ediscovery.md) ricerca che consentono di perfezionare una query di ricerca per restringere i risultati.
+   - Visualizzare [le statistiche di](collection-statistics-reports.md) raccolta che consentono di affinare una raccolta per limitare i risultati.
 
-   - Visualizzare in anteprima i risultati della ricerca per verificare rapidamente se vengono trovati i dati pertinenti.
+   - Visualizzare in anteprima un esempio della raccolta per verificare rapidamente se vengono trovati i dati rilevanti.
 
-   - Rivedere una query ed eseguire di nuovo la ricerca.
+   - Rivedere una query ed eseguire di nuovo la raccolta.
 
-3. **[Aggiungere dati a un set di revisione](add-data-to-review-set.md)**. Dopo aver configurato e verificato che una ricerca restituisca i dati desiderati, il passaggio successivo consiste nell'aggiungere i risultati della ricerca a un set di recensioni. Quando si aggiungono dati a un set di revisione, gli elementi vengono copiati dalla posizione originale in una posizione sicura di Archiviazione di Azure. I dati vengono reindicizzati per ottimizzarlo per ricerche approfondite e veloci durante la revisione e l'analisi degli elementi nel set di recensioni. Inoltre, è anche possibile [aggiungere dati non di Office 365 in un set di recensioni.](load-non-office-365-data-into-a-review-set.md)
+3. **[Eseguire il commit della raccolta in un set di revisione.](commit-draft-collection.md)** Dopo aver configurato e verificato che una ricerca restituisca i dati desiderati, il passaggio successivo consiste nell'aggiungere i risultati della ricerca a un set di recensioni. Quando si aggiungono dati a un set di revisione, gli elementi vengono copiati dalla posizione originale in una posizione sicura di Archiviazione di Azure. I dati vengono reindicizzati per ottimizzarlo per ricerche approfondite e veloci durante la revisione e l'analisi degli elementi nel set di recensioni. Inoltre, è anche possibile [aggiungere dati non di Office 365 in un set di recensioni.](load-non-office-365-data-into-a-review-set.md)
 
    Esiste anche un tipo speciale di set di recensioni a cui è possibile aggiungere dati, denominato insieme *di revisione delle conversazioni.* Questi tipi di set di recensioni offrono funzionalità di ricostruzione delle conversazioni per ricostruire, rivedere ed esportare conversazioni a thread come quelle in Microsoft Teams. Per ulteriori informazioni, vedere [Review conversations in Advanced eDiscovery.](conversation-review-sets.md)
 

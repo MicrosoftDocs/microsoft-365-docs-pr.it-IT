@@ -16,12 +16,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Informazioni su come gestire le funzionalità correlate nei gruppi di Microsoft 365, Teams, SharePoint e Yammer.
-ms.openlocfilehash: a9b4767c450ffc775fb84711e48b9f6c775419e5
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 01dea57504bf5d68c0bb13376379379f29044191
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741598"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838468"
 ---
 # <a name="what-is-collaboration-governance"></a>Che cos'è la governance della collaborazione?
 
@@ -40,6 +40,10 @@ Questa serie di articoli consente di comprendere come interagiscono gruppi, team
 ### <a name="setting-up-secure-collaboration-with-microsoft-365"></a>Configurazione di una collaborazione sicura con Microsoft 365
 
 Esistono molte opzioni per la distribuzione di Gruppi di Microsoft 365 e Teams per una collaborazione sicura nell'organizzazione. È consigliabile usare questo contenuto di governance insieme a Configurare una collaborazione sicura con [Microsoft 365](setup-secure-collaboration-with-teams.md) e gli articoli associati per creare la soluzione di collaborazione migliore per l'organizzazione.
+
+### <a name="data-residency"></a>Residenza dati
+
+Se l'organizzazione è multi-nazionale e si hanno requisiti di residenza dei dati per aree geografiche diverse, includere [Microsoft 365 Multi-Geo](/microsoft-365/enterprise/microsoft-365-multi-geo) come parte del piano di governance della collaborazione.
 
 ## <a name="why-microsoft-365-groups-are-important"></a>Perché i gruppi di Microsoft 365 sono importanti
 
@@ -109,6 +113,8 @@ Quando si avvia il processo di pianificazione della governance, tenere presenti 
 - **Allinearsi alle priorità aziendali:** gli obiettivi aziendali consentono di definire il tempo e l'energia necessari per investire nella governance.
 
 - **Incorporare le decisioni di** governance direttamente nelle soluzioni create: molte decisioni di governance possono essere implementate attivando o disattivando le funzionalità in Microsoft 365.
+
+- **Utilizzare un approccio in più fasi:** implementare prima le funzionalità di collaborazione a un piccolo gruppo di utenti. Ottenere feedback da questi utenti, controllare i ticket dell'help desk e aggiornare le impostazioni o i processi necessari prima di procedere con un gruppo più grande.
 
 - **Rafforzare con la formazione:** adattare soluzioni come i percorsi di apprendimento di [Microsoft 365](https://docs.microsoft.com/office365/customlearning) per garantire che le aspettative specifiche dell'organizzazione siano rafforzate con la formazione fornita da Microsoft.
 

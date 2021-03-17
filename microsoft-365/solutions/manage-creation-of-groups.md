@@ -17,18 +17,22 @@ search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Informazioni su come controllare quali utenti possono creare gruppi di Microsoft 365.
-ms.openlocfilehash: f2d1a2062d43af750a84984aab66329ed6a4db22
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: 04c2b6e738ed41f8d4a2bf96716fb74b1d260497
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50819703"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838640"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>Gestire chi può creare gruppi in Microsoft 365
 
 Per impostazione predefinita, tutti gli utenti possono creare gruppi di Microsoft 365. Questo è l'approccio consigliato perché consente agli utenti di iniziare a collaborare senza richiedere assistenza da parte dell'IT.
 
-Se l'azienda richiede di limitare gli utenti che possono creare gruppi, è possibile farlo seguendo le procedure descritte in questo articolo. Quando si limitano gli utenti autorizzati a creare un gruppo, questo influisce su tutti i servizi che si basano sui gruppi per l'accesso, tra cui:
+Se l'azienda richiede di limitare gli utenti che possono creare gruppi, è possibile limitare la creazione di gruppi di Microsoft 365 ai membri di un gruppo o di un gruppo di sicurezza di Microsoft 365 specifico.
+
+Se si è preoccupati per la creazione di team o gruppi non conformi agli standard aziendali, è consigliabile richiedere agli utenti di completare un corso di formazione e quindi aggiungerli al gruppo di utenti consentiti.
+
+Quando si limitano gli utenti autorizzati a creare un gruppo, questo influisce su tutti i servizi che si basano sui gruppi per l'accesso, tra cui:
 
 - Outlook
 - SharePoint
@@ -38,8 +42,6 @@ Se l'azienda richiede di limitare gli utenti che possono creare gruppi, è possi
 - Planner
 - Power BI (classico)
 - Project for the web / Roadmap
-
-È possibile limitare la creazione del gruppo di Microsoft 365 ai membri di un gruppo o di un gruppo di sicurezza specifico di Microsoft 365. Per configurare questo valore, utilizzare Windows PowerShell. In questo articolo vengono descritti i passaggi necessari.
 
 I passaggi descritti in questo articolo non impediscono ai membri di determinati ruoli di creare gruppi. Gli amministratori globali di Office 365 possono creare gruppi con qualsiasi mezzo, ad esempio l'interfaccia di amministrazione di Microsoft 365, Planner, Teams, Exchange e SharePoint Online. Altri ruoli possono creare gruppi con mezzi limitati, elencati di seguito.
 
@@ -141,7 +143,7 @@ Set-AzureADDirectorySetting -Id $settingsObjectID -DirectorySetting $settingsCop
 
 L'ultima riga dello script visualizza le impostazioni aggiornate:
 
-![This is what your settings will look like when you're done.](../media/952cd982-5139-4080-9add-24bafca0830c.png)
+![Screenshot dell'output dello script di PowerShell.](../media/952cd982-5139-4080-9add-24bafca0830c.png)
 
 Se in futuro si desidera modificare il gruppo utilizzato, è possibile eseguire di nuovo lo script con il nome del nuovo gruppo.
 

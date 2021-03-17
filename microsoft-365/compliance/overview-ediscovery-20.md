@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 description: Informazioni sulla soluzione Advanced eDiscovery in Microsoft 365. In questo articolo viene fornita una panoramica di Advanced eDiscovery in Microsoft 365, uno strumento che consente di gestire le indagini interne ed esterne. Vengono inoltre incorniciati i motivi aziendali per l'utilizzo di Advanced eDiscovery per gestire le indagini legali.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6623682dedd0342f1e88478127d23bbbd4ab9dbb
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 80a1505bf19beb954c0746efb7fb29f99d6a916b
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727587"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838224"
 ---
 # <a name="overview-of-microsoft-365-advanced-ediscovery"></a>Panoramica di Microsoft 365 Advanced eDiscovery
 
@@ -103,7 +103,7 @@ Quando si aggiunge un responsabile e le origini dati di custodia corrispondenti 
 
 ### <a name="collecting-case-data"></a>Raccolta dei dati del caso
 
-Utilizzare la **scheda Ricerche** per creare ricerche per cercare il contenuto rilevante per il caso nelle origini dati sul posto e non depositario. È possibile creare ed eseguire ricerche basate su query (utilizzando parole chiave e condizioni) per identificare un set di messaggi di posta elettronica e documenti rilevanti per il caso e che si desidera esaminare e analizzare ulteriormente nei passaggi successivi del flusso di lavoro di eDiscovery. È possibile creare una o più ricerche associate al caso. È inoltre possibile utilizzare lo strumento di ricerca per visualizzare in anteprima i documenti di esempio e visualizzare le statistiche di ricerca per perfezionare e migliorare i risultati della ricerca. Dopo aver soddisfatto i risultati della ricerca che contengono tutti i dati rilevanti per il caso, è necessario aggiungere i risultati della ricerca a un set di revisione per ulteriori analisi, analisi e analisi. Per ulteriori informazioni, vedere [Raccogliere dati per un caso.](collecting-data-for-ediscovery.md)
+Utilizzare la **scheda Raccolte** per creare ricerche eDiscovery per cercare nelle origini dati sul posto e non depositario il contenuto rilevante per il caso. È possibile creare ed eseguire raccolte basate su query (utilizzando parole chiave e condizioni) per identificare un set di messaggi di posta elettronica e documenti rilevanti per il caso e che si desidera esaminare e analizzare ulteriormente nei passaggi successivi del flusso di lavoro di eDiscovery. È possibile creare una o più raccolte associate al caso. È inoltre possibile utilizzare lo strumento di raccolta per visualizzare in anteprima i documenti di esempio e visualizzare le statistiche di ricerca per perfezionare e migliorare i risultati della ricerca. Dopo aver soddisfatto i risultati della raccolta che contengono i dati rilevanti per il caso, è possibile eseguire il commit della raccolta in un set di revisione per un'ulteriore revisione, analisi ed analisi. Per ulteriori informazioni, vedere [Raccogliere dati per un caso.](collecting-data-for-ediscovery.md)
 
 ### <a name="reviewing-and-analyzing-case-data"></a>Revisione e analisi dei dati dei casi
 

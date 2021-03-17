@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Informazioni sulle opzioni disponibili per creare un ambiente di condivisione guest sicuro in Microsoft 365, fornendo l'accesso guest per una migliore collaborazione.
-ms.openlocfilehash: c52feeb8e5c85d38dfa1623ecdd7c2ee2a381fbd
-ms.sourcegitcommit: 1a9f0f878c045e1ddd59088ca2a94397605a242a
+ms.openlocfilehash: 28b2efba9f0c4ba17811a9871b05ab9f5a7a4839
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "49667706"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838683"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Creare un ambiente di condivisione guest sicuro
 
@@ -45,7 +45,7 @@ Si noti che in questo articolo non verranno illustrate le impostazioni per l'abi
 
 ## <a name="set-up-multi-factor-authentication-for-guests"></a>Configurare l'autenticazione a più fattori per gli utenti guest
 
-L'autenticazione a più fattori riduce notevolmente la possibilità di compromissione di un account. Dal momento che gli utenti guest possono usare account di posta elettronica personali che non aderiscono a criteri di governance o procedure consigliate, richiedere l'autenticazione a più fattori per i guest è particolarmente importante. Qualora il nome utente e la password di un utente guest fossero rubati, l'uso di un secondo fattore di autenticazione ridurrebbe notevolmente le possibilità che soggetti sconosciuti possano accedere ai siti e ai file dell'organizzazione.
+L'autenticazione a più fattori riduce notevolmente la possibilità di compromissione di un account. Dal momento che gli utenti guest possono usare account di posta elettronica personali che non aderiscono a criteri di governance o procedure consigliate, richiedere l'autenticazione a più fattori per gli utenti guest è particolarmente importante. Qualora il nome utente e la password di un utente guest fossero rubati, l'uso di un secondo fattore di autenticazione ridurrebbe notevolmente le possibilità che soggetti sconosciuti possano accedere ai siti e ai file dell'utente.
 
 In questo esempio verrà configurata l'autenticazione a più fattori per gli utenti guest usando criteri di accesso condizionale in Azure Active Directory.
 
@@ -70,7 +70,7 @@ Ora gli utenti guest dovranno effettuare la registrazione all'autenticazione a p
 
 ## <a name="set-up-a-terms-of-use-for-guests"></a>Configurare un documento di condizioni per l'utilizzo per gli utenti guest
 
-In alcune situazioni, gli utenti guest non hanno firmato accordi di non divulgazione o altri accordi legali con l'organizzazione. Si può richiedere ai guest di accettare le condizioni per l'utilizzo prima di accedere ai file che sono stati condivisi con loro. Le condizioni per l'utilizzo possono essere visualizzate al primo tentativo di accesso a un file o a un sito condiviso.
+In alcune situazioni, gli utenti guest potrebbero non aver firmato accordi di non divulgazione o altri accordi legali con l'organizzazione. Si può richiedere ai guest di accettare le condizioni per l'utilizzo prima di accedere ai file che sono stati condivisi con loro. Le condizioni per l'utilizzo possono essere visualizzate al primo tentativo di accesso a un file o a un sito condiviso.
 
 Per creare le condizioni di utilizzo, è necessario prima di tutto creare il documento in Word o in un'altra applicazione e quindi salvarlo come file PDF. Successivamente, si potrà caricare il file in Azure AD.
 
@@ -118,37 +118,30 @@ Ora, la prima volta che un utente guest tenterà di accedere al contenuto, a un 
 
 Le verifiche di accesso in Azure AD consentono di automatizzare una revisione periodica dell'accesso degli utenti a diversi team e gruppi. Richiedendo una verifica di accesso per gli utenti guest, ci si può assicurare che questi ultimi non mantengano l'accesso alle informazioni riservate dell'organizzazione più a lungo del necessario.
 
-Le verifiche di accesso possono essere organizzate in programmi. Un programma è un raggruppamento di verifiche di accesso simili, che è possibile usare per organizzare le verifiche di accesso a scopi di reporting e controllo.
-
-Per creare un programma
-
-1. Accedere al portale di Azure e aprire la pagina [Identity Governance](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade).
-2. Nel menu a sinistra fare clic su **Programmi**.
-3. Fare clic su **Nuovo programma**.
-4. Compilare i campi **Nome** e **Descrizione**.
-5. Fare clic su **Crea**.
-
-Una volta creato il programma, è possibile creare una verifica di accesso guest e associarla al programma.
-
 Per configurare una verifica di accesso per gli utenti guest
 
 1. Nel menu a sinistra della pagina [Identity Governance](https://portal.azure.com/#blade/Microsoft_AAD_ERM/DashboardBlade) fare clic su **Verifiche di accesso**.
 2. Fare clic su **Nuova verifica di accesso**.
+3. Scegliere l’opzione **Team + Gruppi**.
+4. Scegliere l’opzione **Tutti i gruppi di Microsoft 365 con utenti guest**. Fare clic su **Seleziona gruppi da escludere** per escludere eventuali gruppi.
+5. Scegliere l’opzione **Solo utenti guest** e quindi fare clic su **Avanti: Verifiche**.
+6. In **Seleziona revisori** scegliere **Proprietari del gruppo**.
+7. Fare clic su **Seleziona revisori di fallback**, scegliere i revisori di fallback e quindi fare clic su **Seleziona**.
+8. In **Specificare la ricorrenza della revisione** scegliere **Trimestrale**.
+9. Selezionare una data di inizio e una durata.
+10. Per **Fine** scegliere **Mai** e quindi fare clic su **Avanti: Impostazioni**.
 
-   ![Screenshot delle impostazioni di verifica di accesso di Azure AD](../media/azure-ad-create-access-review.png)
+    ![Screenshot della scheda di verifica accesso di Azure AD](../media/azure-ad-create-access-review.png)
 
-3. Digitare un nome nella casella **Nome**.
-4. Per **Frequenza** scegliere **Trimestrale**.
-5. Per **Fine** scegliere **Mai**.
-6. Per **Ambito** scegliere **Solo utenti guest**.
-7. Fare clic su **Raggruppa**, selezionare i gruppi che si vogliono includere nella verifica di accesso e quindi fare clic su **Seleziona**.
-8. In **Programmi** fare clic su **Collegamento al programma**.
-9. Nel pannello **Selezionare un programma** scegliere **Programma verifiche accesso guest**
-10. Fare clic su **Avvia**.
+11. Nella scheda **Impostazioni** rivedere le impostazioni di conformità alle regole aziendali.
 
-Verrà creata una revisione di accesso separata per ogni gruppo specificato. I proprietari di ogni gruppo riceveranno un messaggio di posta elettronica trimestrale per approvare o negare l'accesso guest ai propri gruppi.
+    ![Screenshot della scheda delle impostazioni di verifica accesso di Azure AD](../media/azure-ad-create-access-review-settings.png)
 
-È importante tenere presente che è possibile concedere ai guest l'accesso a team o gruppi oppure a singoli file e cartelle. Quando si fornisce loro l'accesso a file e cartelle, gli utenti guest possono anche non far parte di un gruppo specifico. Se si vogliono eseguire verifiche di accesso sugli utenti guest che non appartengono a un team o a un gruppo, è possibile creare un gruppo dinamico in Azure AD per includere tutti i guest e quindi creare una verifica di accesso per tale gruppo. I proprietari dei siti possono anche gestire la [scadenza dei guest per il sito](https://support.microsoft.com/office/25bee24f-42ad-4ee8-8402-4186eed74dea)
+12. Fare clic su **Avanti: Rivedi + Crea**.
+13. Digitare un **Nome verifica** e rivedere le impostazioni.
+14. Fare clic su **Crea**.
+
+È importante tenere presente che è possibile concedere ai guest l'accesso a team o gruppi oppure a singoli file e cartelle. Quando si fornisce loro l'accesso a file e cartelle, gli utenti guest possono anche non far parte di un gruppo specifico. Se si vogliono eseguire verifiche di accesso sugli utenti guest che non appartengono a un team o a un gruppo, è possibile creare un gruppo dinamico in Azure AD per includere tutti gli utenti guest e quindi creare una verifica di accesso per tale gruppo. I proprietari dei siti possono anche gestire la [scadenza dei guest per il sito](https://support.microsoft.com/office/25bee24f-42ad-4ee8-8402-4186eed74dea)
 
 ### <a name="more-information"></a>Ulteriori informazioni
 
@@ -156,7 +149,7 @@ Verrà creata una revisione di accesso separata per ogni gruppo specificato. I p
 
 [Creare una verifica di accesso di gruppi o applicazioni nelle verifiche di accesso di Azure AD](https://docs.microsoft.com/azure/active-directory/governance/create-access-review)
 
-## <a name="set-up-web-only-access-for-guest-users"></a>Configurare l'accesso solo Web per gli utenti guest
+## <a name="set-up-web-only-access-for-guests"></a>Configurare l'accesso solo Web per gli utenti guest
 
 Richiedendo agli utenti guest di accedere ai team, ai siti e ai file solo tramite un Web browser, è possibile ridurre la superficie di attacco e semplificare l'amministrazione.
 
@@ -192,9 +185,9 @@ Per limitare i guest al solo accesso Web per SharePoint
 
 Si noti che questa impostazione nell'interfaccia di amministrazione di SharePoint crea un criterio di accesso condizionale di supporto in Azure AD.
 
-## <a name="configure-a-session-timeout-for-guest-users"></a>Configurare un timeout della sessione per gli utenti guest
+## <a name="configure-a-session-timeout-for-guests"></a>Configurare un criterio di timeout della sessione per gli utenti guest
 
-Richiedere ai guest di eseguire l'autenticazione a intervalli regolari può ridurre la possibilità che utenti sconosciuti accedano al contenuto dell'organizzazione se il dispositivo di un utente guest non è mantenuto al sicuro. È possibile configurare un criterio di accesso condizionale di timeout della sessione per gli utenti guest in Azure AD.
+Richiedere agli utenti guest di eseguire l'autenticazione a intervalli regolari può ridurre la possibilità che utenti sconosciuti accedano al contenuto dell'organizzazione se il dispositivo di un utente guest non è protetto. È possibile configurare un criterio di accesso condizionale di timeout della sessione per gli utenti guest in Azure AD.
 
 Per configurare un criterio di timeout della sessione guest
 

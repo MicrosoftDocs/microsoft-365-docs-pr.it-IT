@@ -15,12 +15,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Informazioni su come configurare customer key per tutti i dati all'interno del tenant di Microsoft 365.
-ms.openlocfilehash: 7ffa9a8148a8ae699711b62da48cd2c856d48cac
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 2fed4730e79f6e2ace827eab338bf9da8fe55260
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727479"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838241"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>Panoramica del codice "Customer Key" per Microsoft 365 a livello di tenant (anteprima pubblica)
 
@@ -49,7 +49,7 @@ Ad esempio, i file di Microsoft Teams e alcune registrazioni di chiamate e riuni
 
 ## <a name="set-up-customer-key-at-the-tenant-level-public-preview"></a>Configurare customer key a livello di tenant (anteprima pubblica)
 
-Questi passaggi sono simili ma non identici a quelli per la configurazione del codice "Customer Key" a livello di applicazione. È consigliabile usare questa anteprima pubblica solo con i dati di test nei tenant di test. Non usare questa versione con i dati di produzione o nell'ambiente di produzione. Se si dispone già di una distribuzione di produzione di Customer Key, eseguire questi passaggi per configurare customer key a livello di tenant in un ambiente di testing.
+Questi passaggi sono simili ma non identici a quelli per la configurazione del codice "Customer Key" a livello di applicazione. È consigliabile usare questa anteprima pubblica solo con i dati di test nei tenant di test. Non usare questa versione con i dati di produzione o nell'ambiente di produzione. Se si dispone già di una distribuzione di produzione di Customer Key, eseguire questi passaggi per configurare customer key a livello di tenant in un ambiente di testing. Dopo aver assegnato una protezione esecuzione programmi a livello di tenant al tenant, è possibile avviare il processo di convalida e contattare m365ck@microsoft.com con domande o dubbi. È inoltre possibile trovare i passaggi di convalida documentati nell'anteprima pubblica di Istruzioni di convalida per la crittografia in stato di [in-rest per Microsoft 365.](https://aka.ms/CustomerKey/PublicPreviewValidation)
 
 La maggior parte di queste attività verrà completata connettendosi in remoto ad Azure PowerShell. Per ottenere risultati ottimali, usare la versione 4.4.0 o successiva di Azure PowerShell.
 
@@ -318,7 +318,7 @@ Parametri:
 ### <a name="assign-policy"></a>Assegnare criteri
 
 ```powershell
-Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy “<Default_PolicyName or Default_PolicyID>”
+Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy "<Default_PolicyName or Default_PolicyID>"
 ```
 
 Descrizione: questo cmdlet viene utilizzato per configurare i criteri di crittografia dei dati predefiniti. Questo criterio verrà usato per crittografare i dati in tutti i carichi di lavoro di supporto. 
@@ -326,7 +326,7 @@ Descrizione: questo cmdlet viene utilizzato per configurare i criteri di crittog
 Esempio:
 
 ```powershell
-Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy “Default_PolicyName”
+Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy "Default_PolicyName"
 ```
 
 Parametri:
@@ -354,7 +354,7 @@ Set-M365DataAtRestEncryptionPolicy -Identity "NAM Policy" -Enabled $false
 Aggiornare un criterio di crittografia dei dati.
 
 ```powershell
-Set-M365DataAtRestEncryptionPolicy -Identity “EUR Policy” -Refresh
+Set-M365DataAtRestEncryptionPolicy -Identity "EUR Policy" -Refresh
 ```
 
 Parametri:
