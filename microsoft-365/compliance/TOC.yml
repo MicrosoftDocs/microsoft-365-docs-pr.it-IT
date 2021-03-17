@@ -540,6 +540,8 @@
               href: de-duplication-in-ediscovery-search-results.md
             - name: Differenze tra i risultati della ricerca stimati ed effettivi
               href: differences-between-estimated-and-actual-ediscovery-search-results.md
+            - name: Contenuto archiviato nelle cassette postali per eDiscovery
+              href: what-is-stored-in-exo-mailbox.md
             - name: Decrittografia negli strumenti di eDiscovery
               href: ediscovery-decryption.md
         - name: Script di PowerShell per la ricerca contenuto
@@ -570,6 +572,8 @@
               href: assign-ediscovery-permissions.md
             - name: Query con parole chiave e condizioni di ricerca
               href: keyword-queries-and-search-conditions.md
+            - name: Contenuto archiviato nelle cassette postali per eDiscovery
+              href: what-is-stored-in-exo-mailbox.md
             - name: Configurare i filtri delle autorizzazioni di ricerca
               href: permissions-filtering-for-content-search.md
             - name: Configurare i limiti di conformità
@@ -635,14 +639,27 @@
         - name: Gestire errori di elaborazione
           href: processing-data-for-case.md
           items:
-            - name: Indicizzazione avanzata dei dati dei responsabili
+            - name: Indicizzazione avanzata del contenuto dei responsabili
               href: indexing-custodian-data.md
-            - name: Correzione degli errori durante l'elaborazione dei dati
+            - name: Correzione degli errori durante l'elaborazione del contenuto
               href: error-remediation-when-processing-data-in-advanced-ediscovery.md
             - name: Correzione degli errori dei singoli elementi
               href: single-item-error-remediation.md
+        - name: Raccogliere contenuti per un caso (anteprima)
+          items:
+            - name: Informazioni sulle raccolte (anteprima)
+              href: collections-overview.md
+            - name: Creare una raccolta bozza (anteprima)
+              href: create-draft-collection.md
+            - name: Eseguire il commit di una raccolta bozza in un insieme da rivedere (anteprima)
+              href: commit-draft-collection.md
+            - name: Statistiche e report di raccolte (anteprima)
+              href: collection-statistics-reports.md
+            - name: Creare query di ricerca per le raccolte
+              href: building-search-queries.md
+            - name: Query con parole chiave e condizioni di ricerca
+              href: keyword-queries-and-search-conditions.md
         - name: Raccogliere i dati per un caso
-          href: collecting-data-for-ediscovery.md
           items:
             - name: Creare una ricerca
               href: create-search-to-collect-data.md
@@ -661,7 +678,7 @@
               href: load-non-Office-365-data-into-a-review-set.md
             - name: Aggiungere dati a un altro insieme da rivedere
               href: add-data-to-review-set-from-another-review-set.md
-        - name: Esaminare i dati del caso
+        - name: Rivedere il contenuto dei casi
           items:
             - name: Usare la dashboard dell'insieme da rivedere
               href: advanced-ediscovery-dashboard.md
@@ -671,7 +688,7 @@
               href: review-set-search.md
             - name: Contrassegnare i documenti in un insieme da rivedere
               href: tagging-documents.md
-        - name: Analizzare i dati del caso
+        - name: Analizzare il contenuto dei casi
           href: analyzing-data-in-review-set.md
           items:
             - name: Rilevamento di documenti simili
@@ -680,11 +697,11 @@
               href: email-threading-in-advanced-ediscovery.md
             - name: Temi
               href: themes-in-advanced-ediscovery.md
-            - name: Usare il modulo Rilevanza per l'analisi dei dati
+            - name: Usare il modulo Rilevanza per l'analisi del contenuto
               href: using-relevance.md
             - name: Ritiro del modulo Rilevanza
               href: relevance-module-retirement.md
-        - name: Esportare i dati del caso
+        - name: Esportare il contenuto di un caso
           href: exporting-data-ediscover20.md
           items:
             - name: Scaricare i documenti da un insieme da rivedere
@@ -725,6 +742,8 @@
               href: permissions-filtering-for-content-search.md
             - name: Configurare i limiti di conformità
               href: set-up-compliance-boundaries.md
+            - name: Contenuto archiviato nelle cassette postali per eDiscovery
+              href: what-is-stored-in-exo-mailbox.md
             - name: Decrittografia negli strumenti di eDiscovery
               href: ediscovery-decryption.md
             - name: Raccogliere informazioni di diagnostica di eDiscovery
