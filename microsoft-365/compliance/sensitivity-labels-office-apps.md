@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informazioni utili agli amministratori IT per gestire le etichette di riservatezza nelle app di Office per desktop, dispositivi mobili e Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 7dcd0ce9b439d78b79d95b3eca39d80ca440726c
-ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
+ms.openlocfilehash: 782c4fdda7e515d921063937f59b199510beaf08
+ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50826188"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "50838615"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gestire le etichette di riservatezza nelle app di Office
 
@@ -352,6 +352,11 @@ Altre informazioni per l'etichettatura integrata:
 - Quando è impostata l'etichettatura obbligatoria, gli utenti non possono rimuovere le etichette di riservatezza dai documenti, ma possono modificare un'etichetta esistente.
 
 Per indicazioni su quando usare questa impostazione, vedere le informazioni sulle [impostazioni dei criteri](sensitivity-labels.md#what-label-policies-can-do).
+
+> [!NOTE]
+> Se si usa l'impostazione predefinita dei criteri di etichetta per documenti e messaggi di posta elettronica, oltre all'etichetta obbligatoria: 
+>
+> l'etichetta predefinita ha sempre la priorità rispetto all'etichetta obbligatoria. Tuttavia, per i documenti, il client di etichettatura unificata di Azure Information Protection applica l'etichetta predefinita a tutti i documenti senza etichetta, mentre l'etichettatura predefinita viene applicata ai nuovi documenti e non ai documenti esistenti senza etichetta. Questa differenza nel comportamento implica che quando si usa l'etichettatura obbligatoria con l'impostazione predefinita dell'etichetta, agli utenti viene chiesto di applicare un'etichetta di riservatezza più spesso quando usano l'etichettatura predefinita rispetto a quando usano il client di etichettatura unificata di Azure Information Protection.
 
 ## <a name="end-user-documentation"></a>Documentazione per gli utenti finali
 
