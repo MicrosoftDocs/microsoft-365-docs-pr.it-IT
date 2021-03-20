@@ -14,57 +14,57 @@ ms.collection:
 - Adm_O365
 search.appverid:
 - MET150
-description: Informazioni sulle opzioni di pagamento disponibili per il pagamento dell'abbonamento con un profilo di fatturazione.
+description: Scopri quali opzioni di pagamento sono disponibili per pagare l'abbonamento con un profilo di fatturazione.
 ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce
-ms.openlocfilehash: 15feb1b806b46d147d427256ce2416ea75b48bbe
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 750420b6fac8fff16130710ef96a9ceb6345a87a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50143125"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911831"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>Come pagare l'abbonamento con un profilo di fatturazione
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
-Quando si acquista un abbonamento, si paga con un profilo di fatturazione. Il profilo di fatturazione è collegato a una modalità di pagamento specifica e può essere una carta di credito o di debito o una fattura, ma non un conto corrente bancario.
+Quando si acquista un abbonamento, si paga con un profilo di fatturazione. Il profilo di fatturazione è collegato a un metodo di pagamento specifico e può essere una carta di credito o di debito o una fattura, ma non un conto corrente bancario.
 
-Se non sei sicuro che il tuo account abbia un profilo di fatturazione, vedi [Informazioni sui profili di fatturazione.](manage-billing-profiles.md) Se non si dispone di un profilo di fatturazione, vedere [Come pagare l'abbonamento.](pay-for-your-subscription.md)
+Se non si è sicuri di disporre di un account con profilo di fatturazione, vedere [Informazioni sui profili di fatturazione](manage-billing-profiles.md). Se non si dispone di un profilo di fatturazione, vedere [Come pagare l'abbonamento.](pay-for-your-subscription.md)
 
 ## <a name="paying-with-recurring-billing-turned-on-or-off"></a>Pagamento con fatturazione ricorrente attivata o disattivata
 
-Per impostazione predefinita, la fatturazione ricorrente viene automaticamente attivata per tutte le sottoscrizioni a pagamento che usano la fatturazione ricorrente. A ogni periodo di fatturazione viene addebitato automaticamente il metodo di pagamento associato al profilo di fatturazione per pagare tutte le sottoscrizioni che usano tale profilo di fatturazione. Se la modalità di pagamento viene  rifiutata, puoi usare il pulsante Paga ora nella fattura per effettuare un pagamento una sola volta per l'abbonamento.
+Per impostazione predefinita, la fatturazione ricorrente viene automaticamente attivata per tutte le sottoscrizioni a pagamento che utilizzano la fatturazione ricorrente. A ogni periodo di fatturazione viene addebitato automaticamente il metodo di pagamento associato al profilo di fatturazione per pagare le sottoscrizioni che utilizzano tale profilo di fatturazione. Se la modalità di pagamento viene  rifiutata, puoi usare il pulsante Paga ora nella fattura per effettuare un pagamento una sola volta per l'abbonamento.
 
-Se la fatturazione ricorrente è disattivata per  un profilo di fatturazione, puoi usare il pulsante Paga ora nella fattura per pagarla a ogni periodo di fatturazione, indipendentemente dal metodo di pagamento collegato al profilo di fatturazione. Puoi anche pagare tramite assegno o bonifico bancario (EFT). Le istruzioni per eseguire questa operazione sono incluse nella copia PDF della fattura.
+Se la fatturazione ricorrente è disattivata per  un profilo di fatturazione, è possibile utilizzare il pulsante Paga ora nella fattura per pagare ogni periodo di fatturazione, indipendentemente dal metodo di pagamento collegato al profilo di fatturazione. È inoltre possibile pagare tramite assegno o trasferimento di fondi elettronici (EFT). Le istruzioni per eseguire questa operazione sono incluse nella copia PDF della fattura.
 
 ## <a name="paying-by-invoice"></a>Pagamento tramite fattura
 
-Se si dispone di un profilo di fatturazione configurato per il pagamento tramite fattura, è possibile pagare l'abbonamento con assegno o EFT. Puoi anche usare una carta di credito per effettuare un pagamento online usando il pulsante **Paga** ora nella fattura.
+Se si dispone di un profilo di fatturazione configurato per il pagamento tramite fattura, è possibile pagare l'abbonamento con un assegno o EFT. Puoi anche usare una carta di credito per effettuare un pagamento online usando **il** pulsante Paga ora nella fattura.
 
-Per essere idoneo al pagamento tramite fattura, è necessario:
+Per l'idoneità al pagamento tramite fattura, occorre:
 
-- Essere un cliente stabilito
-- Avere un costo di sottoscrizione superiore a un determinato importo (questo importo varia in base alla posizione del servizio)
+- Essere clienti abituali
+- Disporre di un abbonamento con costi superiori a un determinato importo (l'importo varia in base alla località del servizio)
 - Superare una verifica del credito
 
 Se è necessaria una verifica del credito, questa informazione verrà comunicata al momento dell'acquisto dell'abbonamento. Se si accetta di essere contattati, si riceverà un messaggio di posta elettronica con altre informazioni sulla richiesta di approvazione del credito. Le verifiche del credito vengono in genere completate in due giorni lavorativi.
 
-Se il profilo di fatturazione è supportato da una fattura, viene visualizzato un messaggio di posta elettronica quando l'estratto conto è pronto per la visualizzazione. Questo messaggio di posta elettronica non contiene una copia dell'estratto conto. Tuttavia, è possibile scegliere di [ricevere una copia dell'estratto conto come allegato di posta elettronica](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email). L'estratto conto include i dettagli sulle opzioni di pagamento e su dove inviare il pagamento. Se immetti un numero di ordine di acquisto (PO) nel profilo di fatturazione, il numero viene visualizzato nell'estratto conto. Per informazioni su come accedere agli estratti conto, vedere [Visualizzare l'estratto conto o la fattura](view-your-bill-or-invoice.md).
+Se il profilo di fatturazione è supportato da una fattura, viene visualizzato un messaggio di posta elettronica quando l'estratto conto è pronto per la visualizzazione. Questo messaggio di posta elettronica non contiene una copia dell'estratto conto. Tuttavia, è possibile scegliere di [ricevere una copia dell'estratto conto come allegato di posta elettronica](view-your-bill-or-invoice.md#receive-a-copy-of-your-billing-statement-in-email). L'estratto conto include i dettagli sulle opzioni di pagamento e su dove inviare il pagamento. Se si immette un numero di ordine di acquisto (PO) nel profilo di fatturazione, il numero viene visualizzato nell'estratto conto. Per informazioni su come accedere agli estratti conto, vedere [Visualizzare l'estratto conto o la fattura](view-your-bill-or-invoice.md).
 
-## <a name="where-do-i-send-my-check-or-eft-payment"></a>Dove è possibile inviare il pagamento tramite assegno o bonifico?
+## <a name="where-do-i-send-my-check-or-eft-payment"></a>Come pagare tramite assegno o bonifico bancario
 
-[Controllare la fattura per](view-your-bill-or-invoice.md) le istruzioni di pagamento. Puoi anche usare l'elenco a discesa seguente per trovare le istruzioni di pagamento per il tuo paese. Se non si è sicuri di quanto è dovuto, è possibile  controllare la fattura e la cronologia della fatturazione online nella scheda Fatture della pagina Fatture & <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">pagamenti.</a>
+Per istruzioni sul pagamento, vedere [Pagare la fattura](view-your-bill-or-invoice.md). Puoi anche usare l'elenco a discesa seguente per trovare le istruzioni di pagamento per il tuo paese. Se non si è sicuri dell'importo dovuto, controllare la fattura e la cronologia della fatturazione online nella scheda **Fatture** nella pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=2102895" target="_blank">Fatture e pagamenti</a>.
 
 > [!NOTE]
-> Il pagamento tramite assegno è disponibile solo in alcuni paesi.
+> Il pagamento tramite assegno è disponibile solo in alcuni paesi o aree geografiche.
 
  **Selezionare il paese/area geografica di destinazione della fattura nel menu a discesa sotto.**
 
@@ -222,20 +222,20 @@ Se il profilo di fatturazione è supportato da una fattura, viene visualizzato u
 > - [Zambia](../pay/zambia.md)
 > - [Zimbabwe](../pay/zimbabwe.md)
 
-## <a name="can-i-pay-my-invoice-online"></a>Posso pagare la fattura online?
+## <a name="can-i-pay-my-invoice-online"></a>Possibilità di pagare la fattura online
 
-Se la fatturazione ricorrente è disattivata per il profilo di fatturazione, è possibile utilizzare una carta di credito per pagare la fattura online. Per effettuare un pagamento, usare il pulsante **Paga ora** nella fattura nell'interfaccia di amministrazione di Microsoft 365. Per trovare la fattura, vedere [Visualizzare la fattura.](view-your-bill-or-invoice.md)
+Se la fatturazione ricorrente è disattivata per il profilo di fatturazione, è possibile utilizzare una carta di credito per pagare la fattura online. Per effettuare un pagamento, usa **il** pulsante Paga ora nella fattura nell'interfaccia di amministrazione di Microsoft 365. Per trovare la fattura, vedere Visualizzare la fattura o [la fattura.](view-your-bill-or-invoice.md)
 
-## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>Posso passare dalla modalità di pagamento corrente a quella per il pagamento tramite fattura?
+## <a name="can-i-change-from-my-current-payment-method-to-paying-by-invoice"></a>Passaggio dalla modalità di pagamento attuale a quella tramite fattura
 
-Se il tuo profilo di fatturazione è supportato da carta di credito o di debito, puoi solo modificare la modalità di pagamento in un'altra carta di credito o di debito. Non è possibile passare al pagamento tramite fattura.
+Se il profilo di fatturazione è supportato da carta di credito o di debito, è possibile modificare la modalità di pagamento solo con un'altra carta di credito o di debito. Non è possibile passare al pagamento tramite fattura.
 
-## <a name="can-i-change-from-paying-by-invoice-to-using-a-different-payment-method"></a>È possibile passare dal pagamento tramite fattura all'utilizzo di un metodo di pagamento diverso?
+## <a name="can-i-change-from-paying-by-invoice-to-using-a-different-payment-method"></a>Possibilità di cambiare dalla modalità di pagamento tramite fattura a un metodo di pagamento diverso
 
-Se il tuo profilo di fatturazione è supportato dai pagamenti tramite fattura, non puoi modificare la modalità di pagamento. Puoi usare il pulsante **Paga ora** nella fattura per pagare con una carta di credito o di debito o tramite assegno o EFT.
+Se il profilo di fatturazione è supportato dai pagamenti tramite fattura, non è possibile modificare la modalità di pagamento. Puoi usare il pulsante **Paga ora** nella fattura per pagare con una carta di credito o di debito oppure tramite assegno o EFT.
 
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
 [Gestire i metodi di pagamento](manage-payment-methods.md) (articolo)\
-[Visualizzare la fattura](view-your-bill-or-invoice.md) (articolo)\
-[Comprendere la fattura (articolo)](understand-your-invoice.md)
+[Visualizzare l'estratto conto o la fattura](view-your-bill-or-invoice.md) (articolo)\
+[Informazioni sull'estratto conto o la fattura](understand-your-invoice.md) (articolo)

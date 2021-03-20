@@ -18,12 +18,12 @@ ms.custom:
 - commerce
 search.appverid:
 - MET150
-ms.openlocfilehash: c1715d2420315c6e645303c959512a45d47fddfe
-ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
+ms.openlocfilehash: bf3f79e425b3f7cd86f1a5ab95a337ef5127e345
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50759207"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911472"
 ---
 # <a name="manage-auto-claim-policies"></a>Gestire i criteri di attestazione automatica
 
@@ -41,9 +41,9 @@ Dopo aver creato un criterio di attestazione automatica, è possibile eseguire l
 > [!IMPORTANT]
 > I criteri di attestazione automatica sono attualmente disponibili solo per Microsoft Teams. Altri prodotti saranno disponibili per l'uso in futuro.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
-Devi essere un amministratore globale, fatturazione o utente per creare e gestire i criteri di attestazione automatica. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore di Microsoft 365](../../admin/add-users/about-admin-roles.md).
+Devi essere un amministratore globale per creare e gestire i criteri di attestazione automatica. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore di Microsoft 365](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="turn-the-auto-claim-policy-feature-on-or-off"></a>Attivare o disattivare la funzionalità dei criteri di attestazione automatica
 
@@ -158,7 +158,7 @@ Se al criterio sono stati assegnati prodotti di backup, puoi modificare l'ordine
 
 È possibile tornare periodicamente alla **scheda** Criteri di attestazione automatica per visualizzare un elenco di utenti che hanno richiesto licenze in base ai criteri creati.
 
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
 [Assegnare licenze agli utenti](../../admin/manage/assign-licenses-to-users.md) (articolo)\
 [Acquistare o rimuovere licenze di sottoscrizione](buy-licenses.md) (articolo)\

@@ -29,12 +29,12 @@ search.appverid:
 - MET150
 ms.assetid: 496e690b-b75d-4ff5-bf34-cc32905d0364
 description: Informazioni su Microsoft 365 Business Premium, un servizio in abbonamento che include le app di produttività di Office e funzionalità di protezione avanzata dalle minacce informatiche.
-ms.openlocfilehash: e67ae036bf3ce7811f19c8745838bb51dde073ea
-ms.sourcegitcommit: 815229e39a0f905d9f06717f00dc82e2a028fa7c
+ms.openlocfilehash: aa6e313f0f3db1c3401836c3e1737c219fcf6c3a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "48842181"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913003"
 ---
 # <a name="overview-of-microsoft-365-business-premium"></a>Panoramica di Microsoft 365 Business Premium
 
@@ -48,9 +48,9 @@ Questo video offre una rapida panoramica di Microsoft 365 Business Premium.<br><
   
 Se il video è stato utile, vedere la [serie di corsi di formazione completa per piccole imprese e nuovi utenti di Microsoft 365](https://support.microsoft.com/office/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816). 
 
-Microsoft 365 Business Premium è inteso per un massimo di 300 licenze. Se occorrono più licenze, vedere la documentazione di [Microsoft 365 Enterprise](https://go.microsoft.com/fwlink/p/?linkid=860986) per maggiori informazioni.
+Microsoft 365 Business Premium è inteso per un massimo di 300 licenze. Se occorrono più licenze, vedere la documentazione di [Microsoft 365 Enterprise](../enterprise/index.yml) per maggiori informazioni.
 
-Per un elenco completo delle funzionalità, vedere la [descrizione del servizio Microsoft 365 Business Premium](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description).
+Per un elenco completo delle funzionalità, vedere la [descrizione del servizio Microsoft 365 Business Premium](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-business-service-description).
   
 ## <a name="small-business-security-needs"></a>Esigenze di sicurezza delle piccole imprese
 
@@ -73,9 +73,9 @@ Microsoft 365 Business Premium aiuta a **difendersi dalle minacce** mediante:
 
 - Analisi dei collegamenti nei messaggi di posta elettronica e nei documenti in tempo reale per bloccare i siti Web non sicuri (collegamenti sicuri).
 
-- Esecuzione di analisi avanzata degli allegati di posta elettronica in un ambiente sandbox per rilevare malware appena sviluppato (allegati sicuri). 
+- Esecuzione di un'analisi avanzata degli allegati di posta elettronica in un ambiente sandbox per rilevare il malware appena sviluppato (allegati sicuri). 
 
-- Abilitazione di criteri anti-phishing che usano modelli di apprendimento automatico e il rilevamento della rappresentazione per fornire protezione da attacchi avanzati (anti-phishing in Defender per l'intelligence di Office 365). 
+- Abilitazione dei criteri anti-phishing che utilizzano modelli di machine learning e rilevamento della rappresentazione per fornire protezione dagli attacchi avanzati (anti-phishing in Defender per l'intelligence di Office 365). 
 
 - Configurazione di criteri avanzati che disabilitano l'accesso da posizioni non attendibili o escludono l'autenticazione a più fattori da posizioni attendibili, ad esempio la rete dell'ufficio (Azure MFA con IP attendibili e accesso condizionale). 
 
@@ -103,7 +103,7 @@ I **dispositivi vengono protetti** mediante:
 
 - Uso di controlli semplificati per gestire i criteri per tutti i PC Windows 10 nell'azienda, applicazione della crittografia BitLocker e installazione automatica degli aggiornamenti critici di Windows (applicazione dei criteri di aggiornamento di Windows).
 
-Per l'elenco completo delle funzionalità di sicurezza, vedere [Funzionalità di sicurezza di Microsoft 365 Business Premium](security-features.md). Dopo aver [configurato Microsoft 365 Business Premium](set-up.md), vedere gli articoli su come [aumentare la protezione dalle minacce](increase-threat-protection.md) e come [configurare le funzionalità di conformità](set-up-compliance.md) per iniziare a usare le funzionalità di sicurezza non incluse come parte della configurazione guidata. Leggere anche [I 10 principali modi per proteggere i piani di Office 365 e Microsoft 365 Business Premium](https://docs.microsoft.com/office365/admin/security-and-compliance/secure-your-business-data) per una panoramica su come configurare protezioni contro criminali informatici e hacker.
+Per l'elenco completo delle funzionalità di sicurezza, vedere [Funzionalità di sicurezza di Microsoft 365 Business Premium](security-features.md). Dopo aver [configurato Microsoft 365 Business Premium](set-up.md), vedere gli articoli su come [aumentare la protezione dalle minacce](increase-threat-protection.md) e come [configurare le funzionalità di conformità](set-up-compliance.md) per iniziare a usare le funzionalità di sicurezza non incluse come parte della configurazione guidata. Leggere anche [I 10 principali modi per proteggere i piani di Office 365 e Microsoft 365 Business Premium](/office365/admin/security-and-compliance/secure-your-business-data) per una panoramica su come configurare protezioni contro criminali informatici e hacker.
 
 ## <a name="get-microsoft-365-business-premium"></a>Ottenere Microsoft 365 Business Premium
 

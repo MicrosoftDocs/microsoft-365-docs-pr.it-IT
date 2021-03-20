@@ -25,13 +25,13 @@ search.appverid:
 - BCS160
 - MET150
 ms.assetid: fae8819d-7235-495f-9f07-d016f545887f
-description: Informazioni su come verificare che le impostazioni di protezione delle app di Microsoft 365 per le aziende siano applicate ai dispositivi Windows 10 degli utenti.
-ms.openlocfilehash: 39aee3bc811cb0090d58f9a282de7a8162c097b3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Scopri come verificare che le impostazioni di protezione delle app di Microsoft 365 per le aziende siano effettive sui dispositivi Windows 10 degli utenti.
+ms.openlocfilehash: ff99b3a4fce49aebdb5c72f51e46678a7821e186
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44403591"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912415"
 ---
 # <a name="validate-device-protection-settings-on-windows-10-pcs"></a>Verificare le impostazioni di protezione nei PC Windows 10
 
@@ -39,17 +39,17 @@ ms.locfileid: "44403591"
 
 Dopo aver [configurato i criteri per i dispositivi](protection-settings-for-windows-10-pcs.md), possono essere necessarie alcune ore prima che i criteri siano applicati ai dispositivi degli utenti. Per verificare che i criteri siano stati applicati, esaminare le diverse schermate delle impostazioni di Windows sui dispositivi degli utenti. Poiché gli utenti non saranno in grado di modificare le impostazioni di Windows Update e Windows Defender Antivirus nei dispositivi Windows 10, molte opzioni saranno disattivate.
   
-1. Vai a **Impostazioni Aggiornamento** della \> **sicurezza &amp; Opzioni** \> **di riavvio di Windows Update** e verifica che tutte le impostazioni siano \>  disattivate. 
+1. Vai a **Impostazioni Aggiorna** \> **&amp; sicurezza** Opzioni di \> **riavvio** di Windows Update e verifica che tutte le impostazioni siano in \>  grigio. 
     
     ![Tutte le opzioni di riavvio sono disattivate.](../media/31308da9-18b0-47c5-bbf6-d5fa6747c376.png)
   
-2. Vai a **Impostazioni Aggiornamento** della sicurezza Opzioni avanzate di Windows Update e verifica che tutte le impostazioni \> **&amp;** siano \>  \>  disattivate. 
+2. Vai a **Impostazioni** \> **Aggiorna &amp; sicurezza** \> **Opzioni avanzate di Windows Update** e verifica che tutte le impostazioni siano in \>  grigio. 
     
     ![Le opzioni degli aggiornamenti avanzati di Windows sono tutte disattivate.](../media/049cf281-d503-4be9-898b-c0a3286c7fc2.png)
   
 3. Go to **Settings** \> **Update &amp; security** \> **Windows Update** \> **Advanced options** \> **Choose how updates are delivered**.
     
-    Verificare che sia possibile visualizzare il messaggio (in rosso) che alcune impostazioni sono nascoste o gestite dall'organizzazione e che tutte le opzioni sono disattivate.
+    Verificare che sia possibile visualizzare il messaggio (in rosso) che alcune impostazioni sono nascoste o gestite dall'organizzazione e che tutte le opzioni sono in grigio.
     
     ![Choose how updates are delivered page indicates settings are hidden or managed by your organization.](../media/6b3e37c5-da41-4afd-9983-b4f406216b59.png)
   
@@ -57,16 +57,14 @@ Dopo aver [configurato i criteri per i dispositivi](protection-settings-for-wind
     
 5. Verificare che tutte le opzioni siano disattivate. 
     
-    ![Le impostazioni di protezione da virus e minacce sono disattivate.](../media/9ca68d40-a5d9-49d7-92a4-c581688b5926.png)
+    ![Le impostazioni di Protezione da virus e minacce sono disattivate.](../media/9ca68d40-a5d9-49d7-92a4-c581688b5926.png)
   
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Documentazione e risorse di Microsoft 365 per le aziende](https://go.microsoft.com/fwlink/p/?linkid=853701)
+[Documentazione e risorse di Microsoft 365 per le aziende](./index.yml)
   
 [Introduzione a Microsoft 365 per le aziende](microsoft-365-business-overview.md)
   
 [Gestire Microsoft 365 per le aziende](manage.md)
   
 [Impostare le configurazioni dei dispositivi per PC Windows 10](protection-settings-for-windows-10-pcs.md)
-  
-

@@ -27,18 +27,18 @@ search.appverid:
 - MET150
 ms.assetid: cbc6bfe5-565a-4fb8-95f0-b06e7b74ac46
 description: Aiutare gli utenti a installare le app di Office nei dispositivi Windows 10 e a installare facilmente Office nei PC Windows 10 dall'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 680c1c4e43a037c6afd109220090f387b207f8b1
-ms.sourcegitcommit: d39694d7b2c98350b0d568dfd03fa0ef44ed4c1d
+ms.openlocfilehash: 5337c8ef008c1af79490eb6b6705d450055d24fb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/10/2020
-ms.locfileid: "46601984"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913347"
 ---
 # <a name="help-your-users-install-office-on-windows-10-devices"></a>Aiutare gli utenti a installare Office nei dispositivi Windows 10
 
-[![Etichetta per comunicare all'utente che l'interfaccia di amministrazione sta cambiando ed è possibile trovare altre informazioni alla pagina aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](https://docs.microsoft.com/office365/admin/microsoft-365-admin-center-preview)
+[![Etichetta per comunicare all'utente che l'interfaccia di amministrazione sta cambiando ed è possibile trovare altre informazioni alla pagina aka.ms/aboutM365preview.](../media/m365admincenterchanging.png)](/office365/admin/microsoft-365-admin-center-preview)
 
-È possibile installare Office nei PC Windows 10 in modo semplice e rapido dall'interfaccia di amministrazione di Microsoft 365.
+È possibile installare Office in modo semplice e rapido nei PC Windows 10 dall'interfaccia di amministrazione di Microsoft 365.
   
 Prima di iniziare, leggere [Preparare l'installazione di Office nei client](prepare-for-office-client-deployment.md) per informazioni sulla coesistenza di Office con le app di Office già installate.
 
@@ -50,17 +50,17 @@ Se il video è stato utile, consultare la [serie dei corsi di formazione complet
 
 ## <a name="manage-office-deployments"></a>Gestire le distribuzioni di Office
 
-1. Accedere all'interfaccia di amministrazione di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> e accedere con le credenziali di amministratore globale. 
+1. Accedere all'interfaccia di amministrazione <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a> all'indirizzo e accedere con le credenziali di amministratore globale. 
 
-2. Passare al **programma di** installazione nel riquadro di spostamento sinistro e nella **pagina Installazione** scorrere fino ad App **e aggiornamenti.**
+2. Passare a **Installazione** nel riquadro di spostamento sinistro e nella pagina **Installazione** scorrere fino a **App e aggiornamenti.**
     > [!NOTE]
     > Questa scheda potrebbe non essere visualizzata se tutti gli utenti hanno installato le app di Office.
   
-3. On the **Help users install their Office apps** card, choose **View**, and then **Get started.**
+3. Nella scheda **Help users install their Office apps** scegliere **View** e quindi **Get started**.
     
-4. Nel riquadro **E-mail users a link to download Office,** select the users you want to email, and **then Email selected users.**
+4. Nel riquadro **Invia tramite posta elettronica agli** utenti un collegamento per scaricare Office selezionare gli utenti che si desidera inviare tramite posta elettronica e quindi Inviare un messaggio di posta elettronica agli utenti **selezionati.**
 
-   ![Selezionare gli utenti per inviare messaggi di posta elettronica con il collegamento di download di Office.](../media/sendemailtousers.png)
+   ![Selezionare gli utenti per inviare posta elettronica con il collegamento di download di Office.](../media/sendemailtousers.png)
 
 ## <a name="for-more-on-setting-up-and-using-microsoft-365-business-premium"></a>Per altre informazioni sulla configurazione e sull'uso di Microsoft 365 Business Premium
 

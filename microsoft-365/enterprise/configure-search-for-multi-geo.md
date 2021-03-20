@@ -13,12 +13,12 @@ localization_priority: Normal
 f1.keywords:
 - NOCSH
 description: Informazioni su come configurare la ricerca in un ambiente multi-geografico. Solo alcuni client, ad esempio OneDrive for Business, possono restituire risultati in un ambiente multi-geografico.
-ms.openlocfilehash: e213e93cfbc967a723b4d27f4b36a83fe6687da9
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: b3a96b1d0652cb954c58ae410583befa078460d9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547153"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911163"
 ---
 # <a name="configure-search-for-microsoft-365-multi-geo"></a>Configurare la ricerca di Microsoft 365 Multi-Geo
 
@@ -84,7 +84,7 @@ Alcune delle funzionalità di ricerca già note potrebbero funzionare diversamen
 <tr class="odd">
 <td align="left"></td>
 <td align="left">La ricerca multi-geografica non supporta il bucket di criteri di affinamento numerici.</td>
-<td align="left">Utilizzare il <a href="https://docs.microsoft.com/sharepoint/dev/general-development/query-refinement-in-sharepoint">parametro "Discretize" per</a> i criteri di affinamento numerici.</td>
+<td align="left">Utilizzare il <a href="/sharepoint/dev/general-development/query-refinement-in-sharepoint">parametro "Discretize" per</a> i criteri di affinamento numerici.</td>
 </tr>
 <tr class="even">
 <td align="left">ID documenti</td>
@@ -98,7 +98,7 @@ Alcune delle funzionalità di ricerca già note potrebbero funzionare diversamen
 </tr>
 <tr class="even">
 <td align="left">Ricerca ibrida</td>
-<td align="left">In un ambiente SharePoint ibrido con <a href="https://docs.microsoft.com/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">Ricerca ibrida nel cloud</a>, il contenuto locale viene aggiunto all'indice di Microsoft 365 della posizione centrale.</td>
+<td align="left">In un ambiente SharePoint ibrido con <a href="/sharepoint/hybrid/learn-about-cloud-hybrid-search-for-sharepoint">Ricerca ibrida nel cloud</a>, il contenuto locale viene aggiunto all'indice di Microsoft 365 della posizione centrale.</td>
 <td align="left"></td>
 </tr>
 </tbody>
@@ -168,7 +168,7 @@ Ogni Centro ricerche dispone di diverse verticali ed è necessario configurarle 
 <span id="_Get_custom_search" class="anchor"><span id="_Ref501388387" class="anchor"></span></span>
 ## <a name="get-custom-search-applications-to-show-results-from-all-or-some-geo-locations"></a>Fare in modo che le applicazioni di ricerca personalizzate mostrino risultati di tutte o di alcune posizioni geografiche
 
-Per ottenere i risultati di tutte o alcune posizioni geografiche nelle applicazioni di ricerca personalizzate, è necessario specificare i parametri di query con la richiesta all'API REST del servizio di ricerca di SharePoint. A seconda dei parametri della query, la query viene inviata a tutte le posizioni geografiche o solo ad alcune. Ad esempio, se serve inviare la query solo a un sottoinsieme di posizioni geografiche per trovare informazioni pertinenti, è possibile estendere la query solo ad esse. Se la richiesta ha esito positivo, l'API REST del servizio di ricerca di SharePoint restituisce i dati della risposta.
+Le applicazioni di ricerca personalizzate ottengono risultati da tutte o da alcune posizioni geografiche specificando parametri di query con la richiesta all'API REST di ricerca di SharePoint. A seconda dei parametri di query, la query viene impostata su tutte le posizioni geografiche o su alcune posizioni geografiche. Ad esempio, se devi solo eseguire una query su un sottoinsieme di posizioni geografiche per trovare informazioni rilevanti, puoi controllare la ventola solo su queste. Se la richiesta ha esito positivo, l'API REST di ricerca di SharePoint restituisce i dati di risposta.
 
 ### <a name="requirement"></a>Requisito
 
@@ -205,7 +205,7 @@ MultiGeoSearchConfiguration - Questo è un elenco facoltativo di quali posizioni
 </tbody>
 </table>
 
-Se si omette DataLocation o EndPoint oppure se DataLocation è duplicato, la richiesta ha esito negativo. [È possibile ottenere informazioni sull'endpoint delle posizioni geografiche di un tenant utilizzando Microsoft Graph](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-discovery).
+Se si omette DataLocation o EndPoint oppure se DataLocation è duplicato, la richiesta ha esito negativo. [È possibile ottenere informazioni sull'endpoint delle posizioni geografiche di un tenant utilizzando Microsoft Graph](/sharepoint/dev/solution-guidance/multigeo-discovery).
 
 ### <a name="response-data"></a>Dati di risposta
 
@@ -257,7 +257,7 @@ https:// \<tenant\> / \_ api/search/query?querytext='sharepoint'&Properties='Ena
 
 #### <a name="sample-get-request-to-fan-out-to-some-geo-locations"></a>Esempio di richiesta GET estesa ad **alcune** posizioni geografiche
 
-https:// \<tenant\> / \_ api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation \\ :"NAM" \\ ,Endpoint \\ :"https \\ ://contosoNAM.sharepoint.com" \\ ,SourceId \\ :"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"} \\ ,{DataLocation \\ :"CAN" \\ ,Endpoint \\ :"https \\ ://contosoCAN.sharepoint-df.com"}]'
+https:// \<tenant\> / \_ api/search/query?querytext='site'&ClientType='my_client_id'&Properties='EnableMultiGeoSearch:true, MultiGeoSearchConfiguration:[{DataLocation \\ :"NAM" \\ ,Endpoint \\ :"https \\ ://contosoNAM.sharepoint.com",SourceId \\ \\ :"B81EAB55-3140-4312-B0F4-9459D1B4FFEE"} \\ ,{DataLocation \\ :"CAN" \\ ,Endpoint \\ :"https \\ ://contosoCAN.sharepoint-df.com"}]'
 
 > [!NOTE]
 > Le virgole e i due punti nell'elenco di posizioni geografiche per la proprietà MultiGeoSearchConfiguration sono preceduti dalla **barra rovesciata**. Questo perché le richieste GET usano i due punti per separare le proprietà e le virgole per separare gli argomenti delle proprietà. Senza la barra rovesciata come carattere di escape, la proprietà MultiGeoSearchConfiguration viene interpretata in modo errato.

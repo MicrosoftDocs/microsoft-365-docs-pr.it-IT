@@ -27,17 +27,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 018a2a96-3811-4b5d-b751-3b6330b34256
-description: Scopri come rimuovere i dati aziendali dai dispositivi gestiti tramite criteri di protezione e ripristinare le impostazioni predefinite dei dispositivi Windows 10.
-ms.openlocfilehash: 88311a2cf08ee0b1ceb4ef3eb599efe5ebccdb05
-ms.sourcegitcommit: a5ed189fa789975f8c3ed39db1d52f2ef7d671aa
+description: Scopri come rimuovere i dati aziendali dai dispositivi gestiti tramite i criteri di protezione e reimpostare i dispositivi Windows 10 sulle impostazioni di fabbrica.
+ms.openlocfilehash: 8c5472eada4cded3a6869c031ab902928876095f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/10/2020
-ms.locfileid: "45101622"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913215"
 ---
 # <a name="manage-protected-devices-with-microsoft-365-business-premium"></a>Gestire i dispositivi protetti con Microsoft 365 Business Premium
 
-Dopo che un utente connette il dispositivo all'organizzazione accedendo con l'account aziendale al dispositivo o alle app di Office nel dispositivo, è possibile proteggere il dispositivo con i criteri impostati. I dispositivi connessi sono elencati nella **pagina** Dispositivi. In caso di perdita o di furto di un dispositivo, è possibile gestirlo da questa pagina per rimuovere eventuali dati aziendali. È anche possibile ripristinare le impostazioni del produttore per i dispositivi Windows 10, in modo da cancellare eventuali impostazioni personalizzate. 
+Dopo che un utente connette il dispositivo all'organizzazione accedendo con il proprio account aziendale al dispositivo o alle app di Office nel dispositivo, è possibile proteggere il dispositivo con i criteri impostati. I dispositivi connessi sono elencati nella **pagina** Dispositivi. In caso di perdita o di furto di un dispositivo, è possibile gestirlo da questa pagina per rimuovere eventuali dati aziendali. È anche possibile ripristinare le impostazioni del produttore per i dispositivi Windows 10, in modo da cancellare eventuali impostazioni personalizzate. 
 
 Per altre informazioni sulle attività che puoi usare per gestire i dispositivi, vedi questi articoli: 
   
@@ -45,6 +45,4 @@ Per altre informazioni sulle attività che puoi usare per gestire i dispositivi,
   
 [Ripristinare le impostazioni del produttore per i dispositivi Windows 10](reset-devices-to-factory-settings.md)
 
-[Aggiungere un dispositivo gestito](https://docs.microsoft.com/microsoft-365/business/app-protection-settings-for-android-and-ios)
-  
-
+[Aggiungere un dispositivo gestito](./app-protection-settings-for-android-and-ios.md)

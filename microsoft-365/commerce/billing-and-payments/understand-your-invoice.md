@@ -19,19 +19,19 @@ search.appverid:
 - MET150
 description: Scopri come leggere e comprendere la tua fattura per i prodotti aziendali Microsoft.
 keywords: account di fatturazione, informazioni sull'organizzazione, fatture
-ms.openlocfilehash: 521ef49e7f2292f8ea09210fb0edcce0d56e1b76
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 2b11cca810b17ae2dacc3ddab723725608ffceb5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126574"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911699"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Come leggere la fattura
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -60,13 +60,13 @@ Il **Riepilogo di fatturazione** mostra il riepilogo degli addebiti dal periodo 
 | --- | --- |
 | Addebiti|Numero totale di prodotti acquistati per questo periodo di fatturazione e relativi costi e tasse. Gli acquisti vengono aggregati per fornire una visione concisa della fattura. |
 | Crediti |Crediti ottenuti con i resi |
-| Crediti Azure applicati |I crediti Azure applicati automaticamente agli addebiti Azure per ogni periodo di fatturazione. Se non hai crediti Azure, questo campo è nascosto. Per informazioni sui crediti Azure, vedere [Tieni traccia del saldo crediti Azure del Contratto del cliente Microsoft](https://docs.microsoft.com/azure/billing/billing-mca-check-azure-credits-balance). |
+| Crediti Azure applicati |I crediti Azure applicati automaticamente agli addebiti Azure per ogni periodo di fatturazione. Se non hai crediti Azure, questo campo è nascosto. Per informazioni sui crediti Azure, vedere [Tieni traccia del saldo crediti Azure del Contratto del cliente Microsoft](/azure/billing/billing-mca-check-azure-credits-balance). |
 | Subtotale |Importo al lordo di imposte dovuto |
 | Imposte |Il tipo e l'importo delle imposte che paghi, a seconda del paese del tuo profilo di fatturazione. Se non sei tenuto a pagare imposte, non ne verranno mostrate sulla tua fattura. |
 
 ### <a name="understand-your-charges"></a>Informazioni sugli addebiti
 
-Le pagine degli addebiti mostrano il costo suddiviso per prodotto. Per i clienti Azure, gli addebiti potrebbero essere organizzati per sezione della fattura. Per altre informazioni su come vengono usate le sezioni della fattura con i prodotti Azure, vedere [Sezioni fattura](https://docs.microsoft.com/azure/billing/billing-mca-overview#invoice-sections) in [Introduzione agli account di fatturazione del Contratto del cliente Microsoft](https://docs.microsoft.com/azure/billing/billing-mca-overview). All'interno di ogni ordine di prodotti, il costo è suddiviso per famiglia di servizi.
+Le pagine degli addebiti mostrano il costo suddiviso per prodotto. Per i clienti Azure, gli addebiti potrebbero essere organizzati per sezione della fattura. Per altre informazioni su come vengono usate le sezioni della fattura con i prodotti Azure, vedere [Sezioni fattura](/azure/billing/billing-mca-overview#invoice-sections) in [Introduzione agli account di fatturazione del Contratto del cliente Microsoft](/azure/billing/billing-mca-overview). All'interno di ogni ordine di prodotti, il costo è suddiviso per famiglia di servizi.
 
 | Termine |Descrizione |
 | --- | --- |
@@ -86,7 +86,7 @@ L'importo totale dovuto per ogni famiglia di servizi viene calcolato sottraendo 
 
 > Totale = Addebiti/Crediti - Credito Azure + Imposta
 
-Se nella fattura sono presenti addebiti di Azure su cui si desiderano maggiori dettagli, vedere [Rivedi la fattura del Contratto del cliente Microsoft](https://docs.microsoft.com/azure/cost-management-billing/understand/review-customer-agreement-bill).
+Se nella fattura sono presenti addebiti di Azure su cui si desiderano maggiori dettagli, vedere [Rivedi la fattura del Contratto del cliente Microsoft](/azure/cost-management-billing/understand/review-customer-agreement-bill).
 
 ## <a name="understand-the-last-invoice-page"></a>Comprendere l’ultima pagina della fattura
 

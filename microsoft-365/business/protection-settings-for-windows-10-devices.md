@@ -29,12 +29,12 @@ search.appverid:
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
 description: Scopri come creare o modificare i criteri di gestione delle app e proteggere i file di lavoro nei dispositivi Windows 10 personali degli utenti.
-ms.openlocfilehash: f85a59649e43c141b62091337b842a490d411833
-ms.sourcegitcommit: abf63669daf12993ad3353e4b578f41c8910b20f
+ms.openlocfilehash: 64c6aa620171a373cd7564c7de3abbf4a4546c4e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/27/2020
-ms.locfileid: "47289200"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50912823"
 ---
 # <a name="set-or-edit-application-protection-settings-for-windows-10-devices"></a>Impostare o modificare le impostazioni di protezione delle applicazioni per i dispositivi Windows 10
 
@@ -43,8 +43,8 @@ Questo articolo si applica a Microsoft 365 Business Premium.
 ## <a name="edit-an-app-management-policy-for-windows-10"></a>Modificare un criterio di gestione delle app per Windows 10
 
 1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>.     
-2. Sulla barra di spostamento sinistra scegliere **Criteri** \> **dispositivi.**
-1. Scegli un criterio di app di Windows esistente e quindi **Modifica.**
+2. Nel riquadro di spostamento sinistro scegliere **Criteri** \> **dispositivi.**
+1. Scegli un criterio app di Windows esistente e quindi **Modifica**.
 1. Scegliere **Modifica** accanto a un'impostazione che si desidera modificare e quindi **Salva.**
 
 ## <a name="create-an-app-management-policy-for-windows-10"></a>Creare criteri di gestione delle app per Windows 10
@@ -52,22 +52,22 @@ Questo articolo si applica a Microsoft 365 Business Premium.
 Se gli utenti hanno dispositivi Windows 10 personali in cui eseguono attività di lavoro, è possibile proteggere anche i dati in questi dispositivi.
   
 1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a>. 
-2. Nel riquadro di spostamento sinistro scegliere **Aggiungi** \> **criteri** \> **dispositivi.**
+2. Nel riquadro di spostamento sinistro scegliere **Criteri** \> **dispositivi** \> **Aggiungi**.
 3. Nel riquadro **Aggiungi criterio** immettere un nome univoco per il criterio. 
 4. In **Tipo di criterio** scegliere **Gestione applicazioni per Windows 10**.
 5. In **Tipo di dispositivo** scegliere Personale o Proprietà **società.** 
 6. L'opzione **Crittografa i file di lavoro** viene attivata automaticamente. 
 7. Impostare **Impedisci agli utenti di copiare dati aziendali in file personali e forzali a salvare i file di lavoro in OneDrive for Business** su **Sì** per evitare che gli utenti salvino i file di lavoro nei rispettivi PC. 
-9. Espandere **Recupera dati nei dispositivi Windows.** È consigliabile **attivarla.**
-    Prima di passare al percorso del certificato dell'agente di recupero dati, è necessario crearne uno. Per istruzioni, vedere Creare e verificare un certificato dell'agente di recupero dati [EFS (Encrypting File System).](https://go.microsoft.com/fwlink/p/?linkid=853700)
+9. Espandi **Recupera dati nei dispositivi Windows.** È consigliabile **attivarlo.**
+    Prima di passare al percorso del certificato dell'agente di recupero dati, è necessario crearne uno. Per istruzioni, vedere [Create and verify an Encrypting File System (EFS) Data Recovery Agent (DRA) certificate](/windows/security/information-protection/windows-information-protection/create-and-verify-an-efs-dra-certificate).
     
-    Per impostazione predefinita, i file di lavoro sono crittografati con una chiave segreta archiviata nel dispositivo e associata al profilo dell'utente. Solo l'utente può aprire e decrittografare il file. Tuttavia, se un dispositivo viene perso o se un utente viene rimosso, un file può restare bloccato in stato crittografato. Un amministratore può usare il certificato dell'agente di recupero dati per decrittografare il file.
+    Per impostazione predefinita, i file di lavoro sono crittografati con una chiave segreta archiviata nel dispositivo e associata al profilo dell'utente. Solo l'utente può aprire e decrittografare il file. Tuttavia, se un dispositivo viene perso o se un utente viene rimosso, un file può restare bloccato in stato crittografato. Un amministratore può utilizzare il certificato dell'agente di recupero dati (DRA) per decrittografare il file.
     
     ![Browse to Data Recovery Agent certificate.](../media/7d7d664f-b72f-4293-a3e7-d0fa7371366c.png)
   
-10. Espandere **Proteggi percorsi di rete** e cloud aggiuntivi se si desidera aggiungere ulteriori domini o percorsi di SharePoint Online per assicurarsi che i file in tutte le app elencate siano protetti. Se è necessario immettere più voci per uno dei campi, usare il punto e virgola (;) per separare le voci.
+10. Espandere **Proteggi percorsi di rete** e cloud aggiuntivi se si desidera aggiungere altri domini o percorsi di SharePoint Online per assicurarsi che i file in tutte le app elencate siano protetti. Se è necessario immettere più voci per uno dei campi, usare il punto e virgola (;) per separare le voci.
     
     ![Expand Protect additional network and cloud locations, and enter domains or SharePoint Online sites you own.](../media/7afaa0c7-ba53-456d-8c61-312c45e09625.png)
   
 11. In **Chi otterrà queste impostazioni?** specificare i destinatari. Se non si vuole usare il gruppo di sicurezza predefinito **Tutti gli utenti**, scegliere **Modifica**, scegliere i gruppi di sicurezza che riceveranno queste impostazioni \> **Seleziona**.
-12. Infine, scegliere **Aggiungi** per salvare il criterio e assegnarlo ai dispositivi. 
+12. Infine, scegliere **Aggiungi** per salvare il criterio e assegnarlo ai dispositivi.

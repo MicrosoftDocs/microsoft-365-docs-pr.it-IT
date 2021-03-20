@@ -19,22 +19,22 @@ ms.custom:
 - manage_licenses
 search.appverid:
 - MET150
-description: Informazioni su abbonamenti e licenze in Microsoft 365 per le aziende.
+description: Informazioni sulle sottoscrizioni e sulle licenze in Microsoft 365 per le aziende.
 ms.date: 07/01/2020
-ms.openlocfilehash: ccfcb52548fb79267c550afba63c2f5a96b99ed1
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 6310b3e48c59da3243746cceca2d0516f511b827
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928511"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911435"
 ---
 # <a name="understand-subscriptions-and-licenses-in-microsoft-365-for-business"></a>Informazioni su abbonamenti e licenze in Microsoft 365 per le aziende
 
-Quando si acquista un abbonamento a Microsoft 365 per le aziende, si effettua l'iscrizione per un set di app e servizi che si paga su base mensile o annuale. Le applicazioni e i servizi ricevuti nell'ambito dell'abbonamento dipendono dal prodotto acquistato, ad esempio Microsoft 365 Apps for business o Microsoft 365 Business Standard. È possibile vedere cosa viene fornito con ogni prodotto nella pagina [Microsoft 365 per](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1) piccole e medie imprese.
+Quando si acquista un abbonamento a Microsoft 365 per le aziende, si registra per un set di app e servizi che si paga su base mensile o annuale. Le applicazioni e i servizi ricevuti nell'ambito dell'abbonamento dipendono dal prodotto acquistato, ad esempio Microsoft 365 Apps for business o Microsoft 365 Business Standard. Puoi vedere cosa viene fornito con ogni prodotto nella pagina [Microsoft 365 per](https://products.office.com/compare-all-microsoft-office-products?&activetab=tab:primaryr1) piccole e medie imprese.
 
-Quando si acquista un abbonamento, occorre specificare il numero di licenze necessario, in base al numero di utenti presenti all'interno dell'organizzazione. Dopo aver acquistato una sottoscrizione, è possibile creare account per gli utenti dell'organizzazione e quindi assegnare una licenza a ogni persona. Quando le esigenze dell'organizzazione cambiano, è possibile acquistare altre licenze per ospitare nuove persone o riassegnare le licenze ad altri utenti quando qualcuno lascia l'organizzazione.
+Quando si acquista un abbonamento, occorre specificare il numero di licenze necessario, in base al numero di utenti presenti all'interno dell'organizzazione. Dopo aver acquistato una sottoscrizione, è possibile creare account per gli utenti dell'organizzazione e quindi assegnare una licenza a ogni persona. In base alle esigenze dell'organizzazione, è possibile acquistare altre licenze per ospitare nuovi utenti o riassegnare le licenze ad altri utenti quando un utente lascia l'organizzazione.
 
-Se si hanno più abbonamenti, è possibile assegnare le licenze a utenti diversi per ogni abbonamento. Ad esempio, è possibile assegnare tutti gli utenti a tutte le applicazioni e i servizi di Microsoft 365 come parte di un abbonamento a Microsoft 365 Business Standard. È inoltre possibile assegnare un sottoinsieme di utenti a Visio Online tramite un abbonamento a Visio separato.
+Se si hanno più abbonamenti, è possibile assegnare le licenze a utenti diversi per ogni abbonamento. Ad esempio, è possibile assegnare tutti gli utenti a tutte le applicazioni e servizi di Microsoft 365 come parte di un abbonamento a Microsoft 365 Business Standard. È inoltre possibile assegnare un sottoinsieme di utenti a Visio Online tramite una sottoscrizione visio separata.
 
 ## <a name="how-many-devices-can-people-install-office-on"></a>Su quanti dispositivi è possibile installare Office?
 
@@ -55,9 +55,9 @@ La tabella seguente descrive cosa accade automaticamente quando si assegna una l
   
 |**Se l'abbonamento include questo servizio**|**Ecco cosa accade automaticamente**|
 |:-----|:-----|
-|Exchange Online  <br/> |Viene creata una cassetta postale per l'utente. <br/> Per informazioni sul contratto di servizio per il completamento di questa attività, vedere ["Configurazione..." nell'interfaccia di amministrazione di Microsoft 365.](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center) |
+|Exchange Online  <br/> |Viene creata una cassetta postale per l'utente. <br/> Per informazioni sul contratto di servizio per questa attività da completare, vedere ["Configurazione..." messaggi nell'interfaccia di amministrazione di Microsoft 365](https://support.microsoft.com/help/2635238/setting-up-messages-in-the-office-365-admin-center). |
 |SharePoint Online  <br/> |All'utente vengono assegnate autorizzazioni di modifica per il sito del team predefinito di SharePoint Online.  <br/> |
-|Skype for Business online  <br/> |La persona ha accesso alle funzionalità associate alla licenza.  <br/> |
+|Skype for Business online  <br/> |L'utente ha accesso alle funzionalità associate alla licenza.  <br/> |
 |Microsoft 365 Apps for enterprise  <br/> |La persona può scaricare le app di Office su un massimo di cinque Mac o PC, cinque tablet e cinque smartphone.  <br/> |
 
 ## <a name="understand-licenses-for-non-user-mailboxes"></a>Informazioni sulle licenze per cassette postali non di utenti
@@ -66,9 +66,9 @@ Non è necessario assegnare licenze a cassette postali di risorse o sale e casse
   
 - [Creare una cassetta postale condivisa](../../admin/email/create-a-shared-mailbox.md)
 - [Rimuovere una licenza da una cassetta postale condivisa](../../admin/email/remove-license-from-shared-mailbox.md)
-- [Cassette postali condivise in Exchange Online](https://docs.microsoft.com/exchange/collaboration-exo/shared-mailboxes) per tutti gli altri piani di Microsoft 365.
-- [Creare e gestire cassette postali sala](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-room-mailboxes)
-- [Gestire le cassette postali attrezzatura](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-equipment-mailboxes)
+- [Cassette postali condivise in Exchange Online](/exchange/collaboration-exo/shared-mailboxes) per tutti gli altri piani di Microsoft 365.
+- [Creare e gestire cassette postali sala](/exchange/recipients-in-exchange-online/manage-room-mailboxes)
+- [Gestire le cassette postali attrezzatura](/exchange/recipients-in-exchange-online/manage-equipment-mailboxes)
 
 ## <a name="who-can-assign-licenses"></a>Chi può assegnare licenze?
 
@@ -82,7 +82,7 @@ Tipi diversi di amministratori possono usare le licenze in modi diversi, in base
 |Amministratore del supporto dei servizi  <br/> |No  <br/> |No  <br/> |No  <br/> |No  <br/> |
 |Amministratore utenti  <br/> |Sì  <br/> |Sì  <br/> |No  <br/> |Sì  <br/> |
 
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
 [Acquistare o rimuovere licenze per l'abbonamento aziendale](buy-licenses.md) (articolo)\
 [Assegnare licenze agli utenti](../../admin/manage/assign-licenses-to-users.md) (articolo)\

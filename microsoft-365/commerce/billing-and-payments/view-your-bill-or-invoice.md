@@ -28,12 +28,12 @@ ms.custom:
 - AdminSurgePortfolio
 description: La fattura o l'estratto conto è disponibile nell'interfaccia di amministrazione di Microsoft 365. È anche possibile salvare e stampare una copia della fattura.
 ms.date: 07/31/2020
-ms.openlocfilehash: 5bf257847ec880855841035792c7714fd24d9b68
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: 395c9773d4bc67ed466d7b3f8d568cecedddfd36
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49928533"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50911646"
 ---
 # <a name="view-your-bill-or-invoice"></a>Visualizzare la fattura
 
@@ -80,4 +80,4 @@ Se è presente un saldo e si preferisce pagarlo, è possibile farlo online. Per 
 
 [Pagare con fattura, carta di credito o conto corrente bancario](pay-for-your-subscription.md) (articolo) \
 [Gestire i metodi di pagamento](manage-payment-methods.md) (articolo) \
-[Minecraft: opzioni di pagamento di Education Edition](https://go.microsoft.com/fwlink/p/?linkid=838761) (articolo)
+[Minecraft: opzioni di pagamento di Education Edition](/education/windows/school-get-minecraft) (articolo)
