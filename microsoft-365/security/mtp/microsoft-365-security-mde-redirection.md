@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 626bc9950512438bfa43e6500adf72940ddcbfec
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: bdad55a98dba868d45ecea383ba379108ee5305a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727566"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906759"
 ---
 # <a name="redirecting-accounts-from-microsoft-defender-for-endpoint-to-the-microsoft-365-security-center"></a>Reindirizzamento degli account da Microsoft Defender per Endpoint al Centro sicurezza Microsoft 365
 
@@ -42,7 +42,7 @@ In linea con l'approccio tra domini di Microsoft alla protezione dalle minacce c
 Questa guida spiega come instradare gli account al Centro sicurezza Microsoft 365 abilitando il reindirizzamento automatico dall'ex portale di Microsoft Defender for Endpoint (securitycenter.windows.com o securitycenter.microsoft.com) al portale del Centro sicurezza Microsoft 365 (security.microsoft.com).
 
 > [!NOTE]
-> Microsoft Defender for Endpoint nel centro sicurezza Microsoft 365 supporta la concessione dell'accesso ai provider di servizi di sicurezza gestiti [(MSSP)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) nello stesso modo in cui viene concesso l'accesso nel Centro sicurezza [Microsoft Defender.](https://docs.microsoft.com/microsoft-365/security/mtp/mssp-access)
+> Microsoft Defender for Endpoint nel centro sicurezza Microsoft 365 supporta la concessione dell'accesso ai provider di servizi di sicurezza gestiti [(MSSP)](/windows/security/threat-protection/microsoft-defender-atp/grant-mssp-access) nello stesso modo in cui viene concesso l'accesso nel Centro sicurezza [Microsoft Defender.](./mssp-access.md)
 
 ## <a name="what-to-expect"></a>Cosa aspettarsi
 Una volta abilitato il reindirizzamento automatico, gli account che accedono all'ex portale di Microsoft Defender for Endpoint a securitycenter.windows.com o securitycenter.microsoft.com, verranno automaticamente instradati al portale del centro sicurezza Microsoft 365 in security.microsoft.com.

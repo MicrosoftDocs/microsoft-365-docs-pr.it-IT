@@ -17,22 +17,22 @@ search.appverid:
 - MET150
 ms.custom: seo-marvel-apr2020
 description: Usare uno script di PowerShell che esegue il cmdlet Search-UnifiedAuditLog in Exchange Online per cercare il log di audit. Questo script è ottimizzato per restituire un set di record di controllo di grandi dimensioni (fino a 50.000). Lo script esporta questi record in un file CSV che è possibile visualizzare o trasformare usando Power Query in Excel.
-ms.openlocfilehash: 3d44054d8d1111fe86e06460f5ca4d442d0d1625
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 7ac3903abffc0bedb28363159c81b1f67a199f32
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233330"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907764"
 ---
 # <a name="use-a-powershell-script-to-search-the-audit-log"></a>Usare uno script PowerShell per la ricerca nel log di audit
 
 La sicurezza, la conformità e il controllo sono diventati una priorità assoluta per gli amministratori IT al giorno d’oggi. Microsoft 365 offre diverse funzionalità incorporate per aiutare le organizzazioni a gestire la sicurezza, la conformità e il controllo. In particolare, la registrazione di controllo unificata consente di esaminare gli incidenti di sicurezza e i problemi di conformità. È possibile recuperare i log di audit usando i metodi seguenti:
 
-- [L’API Office 365 Management Activity](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference)
+- [L’API Office 365 Management Activity](/office/office-365-management-api/office-365-management-activity-api-reference)
 
 - Lo [strumento di ricerca nel log di audit](search-the-audit-log-in-security-and-compliance.md) nel Centro conformità Microsoft 365
 
-- Il cmdlet [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) in Exchange Online PowerShell
+- Il cmdlet [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) in Exchange Online PowerShell
 
 Se è necessario recuperare regolarmente i log di audit, è consigliabile prendere in considerazione una soluzione che usi l'API Office 365 Management Activity, in quanto può offrire alle organizzazioni di grandi dimensioni la scalabilità e le prestazioni per recuperare milioni di record di controllo in modo continuativo. L'uso dello strumento di ricerca nel log di audit nel Centro conformità Microsoft 365 è un ottimo modo per trovare rapidamente i record di controllo per operazioni specifiche che si verificano in un intervallo di tempo più breve. L'uso di intervalli di tempo più lunghi nello strumento di ricerca nel log di audit, in particolare per le organizzazioni di grandi dimensioni, potrebbe restituire una quantità di record troppo elevata per essere gestita o esportata facilmente.
 
@@ -56,7 +56,7 @@ In situazioni in cui è necessario recuperare manualmente i dati di controllo pe
 
 ## <a name="step-1-connect-to-exchange-online-powershell"></a>Passaggio 1: Connettersi a Exchange Online PowerShell
 
-La prima operazione da eseguire consiste nel connettersi a Exchange Online PowerShell. È possibile connettersi usando l'autenticazione moderna o l'autenticazione a più fattori (MFA). Per istruzioni dettagliate, vedere [Connettersi a Exchange Online PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+La prima operazione da eseguire consiste nel connettersi a Exchange Online PowerShell. È possibile connettersi usando l'autenticazione moderna o l'autenticazione a più fattori (MFA). Per istruzioni dettagliate, vedere [Connettersi a Exchange Online PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 ## <a name="step-2-modify-and-run-the-script-to-retrieve-audit-records"></a>Passaggio 2: Modificare ed eseguire lo script per recuperare i record di controllo
 
@@ -146,12 +146,12 @@ Write-Host "Script complete! Finished retrieving audit records for the date rang
    |`$logFile`|"d:\temp\AuditSearchLog.txt"|Specifica il nome e il percorso del file di log che contiene informazioni sullo stato della ricerca nel log di audit eseguita dallo script. Lo script scrive i timestamp UTC nel file di log.|
    |`$outputFile`|"d:\temp\AuditRecords.csv"|Specifica il nome e il percorso del file CSV che contiene i record di controllo restituiti dallo script.|
    |`[DateTime]$start` e `[DateTime]$end`|[DateTime]::UtcNow.AddDays(-1) <br/>[DateTime]::UtcNow|Specifica l'intervallo di date per la ricerca nel log di audit. Lo script restituirà i record per le attività di controllo che si sono verificate all’interno dell'intervallo di date specificato. Ad esempio, per restituire le attività eseguite nel mese di gennaio 2021, è possibile usare una data di inizio `"2021-01-01"` e una data di fine `"2021-01-31"` (racchiudere i valori tra virgolette doppie). Il valore di esempio nello script restituisce i record per le attività eseguite nelle 24 ore precedenti. Se non si include un timestamp nel valore, viene utilizzato il timestamp predefinito 00:00 (mezzanotte) nella data specificata.|
-   |`$record`|"AzureActiveDirectory"|Specifica il tipo di record delle attività di controllo (chiamate anche *operazioni*) da cercare. Questa proprietà indica il servizio o la caratteristica in cui è stata attivata un'attività. Per un elenco dei tipi di record che è possibile usare per questa variabile, vedere [Tipo di record del log di audit](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype). È possibile usare il nome del tipo di record o il valore di enumerazione. <br/><br/>**Suggerimento:** per restituire i record di controllo per tutti i tipi di record, usare il valore `$null` (senza virgolette).|
+   |`$record`|"AzureActiveDirectory"|Specifica il tipo di record delle attività di controllo (chiamate anche *operazioni*) da cercare. Questa proprietà indica il servizio o la caratteristica in cui è stata attivata un'attività. Per un elenco dei tipi di record che è possibile usare per questa variabile, vedere [Tipo di record del log di audit](/office/office-365-management-api/office-365-management-activity-api-schema#auditlogrecordtype). È possibile usare il nome del tipo di record o il valore di enumerazione. <br/><br/>**Suggerimento:** per restituire i record di controllo per tutti i tipi di record, usare il valore `$null` (senza virgolette).|
    |`$resultSize`|5000|Specifica il numero di risultati restituiti ogni volta che il cmdlet **Search-UnifiedAuditLog** viene chiamato dallo script (definito come *set di risultati*). 5000 è il valore massimo supportato dal cmdlet. Lasciare questo valore così come è.|
    |`$intervalMinutes`|60|Per superare il limite di 5000 record restituiti, questa variabile accetta l'intervallo di dati specificato e lo suddivide in intervalli di tempo inferiori. Ora ogni intervallo, e non l'intervallo di date intero, è soggetto al limite di output di 5000 record del comando. Il valore predefinito di 5000 record per intervallo di 60 minuti all’interno dell'intervallo di date deve essere sufficiente per la maggior parte delle organizzazioni. Tuttavia, se lo script restituisce un errore che indica `maximum results limitation reached`, ridurre l'intervallo di tempo, ad esempio a 30 o anche 15 minuti, ed eseguire di nuovo lo script.|
    ||||
 
-   La maggior parte delle variabili elencate nella tabella precedente corrispondono ai parametri per il cmdlet **Search-UnifiedAuditLog**. Per ulteriori informazioni su questi parametri, vedere [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog).
+   La maggior parte delle variabili elencate nella tabella precedente corrispondono ai parametri per il cmdlet **Search-UnifiedAuditLog**. Per ulteriori informazioni su questi parametri, vedere [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog).
 
 3. Aprire Windows PowerShell sul computer locale e passare alla cartella in cui è stato salvato lo script modificato.
 

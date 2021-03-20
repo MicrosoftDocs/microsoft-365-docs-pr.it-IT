@@ -17,16 +17,14 @@ ms.collection:
 - M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
-description: Questo articolo contiene informazioni sulle nuove funzionalità di Office 365 Message Encryption (OME).
-ms.openlocfilehash: b1a9c58a17b5f8434325191828063ec91a116e88
-ms.sourcegitcommit: 46644f9778bc70ab6d62783e0a1e60ba2eccc27f
+description: In questo articolo sono contenute informazioni sulle nuove funzionalità di Crittografia messaggi di Office 365.
+ms.openlocfilehash: 947df41d15ef3ac3d98d425645857fbdd6fb2817
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/08/2020
-ms.locfileid: "44166097"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908544"
 ---
 # <a name="configure-irm-to-use-azure-rights-management"></a>Configurare IRM con Azure Rights Management
 
-Con il rilascio di nuove funzionalità di Office 365 Message Encryption (OME), non è più necessario impostare IRM separatamente. Non è consigliabile configurare nuove distribuzioni con OME legacy e IRM con Azure Rights Management. Per ulteriori informazioni sulle nuove funzionalità OME, vedere [Domande frequenti su Crittografia dei messaggi di Office 365Office 365 Message Encryption](https://docs.microsoft.com/microsoft-365/compliance/ome-faq). Se si è pronti per iniziare a usare le nuove funzionalità OME all'interno dell'organizzazione, vedere [Configurare nuove funzionalità di Office 365 Message Encryption in Azure Information Protection](https://docs.microsoft.com/microsoft-365/compliance/set-up-new-message-encryption-capabilities).
-  
-
+Con il rilascio di nuove funzionalità di Office 365 Message Encryption (OME), non è più necessario impostare IRM separatamente. Non è consigliabile configurare nuove distribuzioni con OME legacy e IRM con Azure Rights Management. Per ulteriori informazioni sulle nuove funzionalità OME, vedere [Domande frequenti su Crittografia dei messaggi di Office 365Office 365 Message Encryption](./ome-faq.md). Se si è pronti per iniziare a usare le nuove funzionalità OME all'interno dell'organizzazione, vedere [Configurare nuove funzionalità di Office 365 Message Encryption in Azure Information Protection](./set-up-new-message-encryption-capabilities.md).

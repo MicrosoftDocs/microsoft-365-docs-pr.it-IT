@@ -1,5 +1,5 @@
 ---
-title: Domande frequenti sulla mobilità e la sicurezza di base
+title: Domande frequenti su Mobilità e sicurezza di base
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -18,44 +18,44 @@ ms.custom:
 search.appverid:
 - MET150
 description: Domande frequenti sulla mobilità e la sicurezza di base.
-ms.openlocfilehash: 5651b9f9742c45f1229e55b298cf78532c835c9a
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: a538c0b3f9fa6a4bf1861734fc9dea94030760a3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49876877"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906265"
 ---
-# <a name="basic-mobility-and-security-frequently-asked-questions-faq"></a>Domande frequenti sulla mobilità e la sicurezza di base
+# <a name="basic-mobility-and-security-frequently-asked-questions-faq"></a>Domande frequenti su Mobilità e sicurezza di base
 
-Questo articolo contiene domande frequenti su Basic Mobility and Security, una funzionalità che consente di gestire e proteggere i dispositivi mobili in Microsoft 365. Se non riesci a trovare una risposta alla tua domanda, contattaci lasciando un commento nella pagina, in modo che possiamo prendere in considerazione l'aggiunta della domanda a questo articolo.
+Questo articolo contiene le domande frequenti su Dispositivi mobili e sicurezza di base, una funzionalità che consente di gestire e proteggere i dispositivi mobili in Microsoft 365. Se non riesci a trovare una risposta alla tua domanda, contattaci lasciando un commento nella pagina in modo che possiamo prendere in considerazione l'aggiunta della domanda a questo articolo.
 
-## <a name="how-can-i-get-basic-mobility-and-security-i-dont-see-it-in-the-microsoft-365-admin-center"></a>Come è possibile ottenere funzionalità di mobilità e sicurezza di base? Non viene visualizzato nell'interfaccia di amministrazione di Microsoft 365
+## <a name="how-can-i-get-basic-mobility-and-security-i-dont-see-it-in-the-microsoft-365-admin-center"></a>Come posso ottenere dispositivi mobili e sicurezza di base? Non viene visualizzato nell'interfaccia di amministrazione di Microsoft 365
 
-1.  Attivare Dispositivi mobili e sicurezza di base dalla pagina Sicurezza e conformità [& di Office 365.](https://protection.office.com/)
+1.  Attivare Dispositivi mobili e sicurezza di base andando alla pagina Sicurezza di [Office 365 & conformità.](https://protection.office.com/)
 
-2.  Passare a Prevenzione della perdita di dati > gestione dei dispositivi.
+2.  Vai a Prevenzione della perdita di dati > gestione dei dispositivi.
 
-## <a name="how-can-i-get-started-with-device-management-in-basic-mobility-and-security"></a>Come posso iniziare a usare la gestione dei dispositivi in Basic Mobility and Security?
+## <a name="how-can-i-get-started-with-device-management-in-basic-mobility-and-security"></a>Come posso iniziare a usare la gestione dei dispositivi in Dispositivi mobili e sicurezza di base?
 
-Per iniziare a usare Basic Mobility and Security, è necessario eseguire quattro passaggi: 
+Sono disponibili quattro passaggi per iniziare a usare La mobilità e la sicurezza di base: 
 
-1. Attivare la funzionalità Di base per dispositivi mobili e sicurezza in [Office 365 Security & Compliance.](https://protection.office.com/)
+1. Attivare Dispositivi mobili e sicurezza di base andando a [Office 365 Security & Compliance](https://protection.office.com/).
 
 2. Vai a Prevenzione della perdita di dati > gestione dei dispositivi > criteri dispositivo.
     
-3. Creare criteri di gestione dei dispositivi e applicarli a gruppi di utenti impostati nei gruppi di sicurezza. È consigliabile iniziare distribuendo i criteri a un piccolo gruppo di test. Per altre info, vedi [Creare criteri di sicurezza dei dispositivi in Dispositivi mobili e sicurezza di base.](create-device-security-policies.md)
+3. Creare criteri di gestione dei dispositivi e applicarli a gruppi di utenti impostati nei gruppi di sicurezza. È consigliabile iniziare distribuendo i criteri in un piccolo gruppo di test. Per altre info, vedi [Creare criteri di sicurezza dei dispositivi in Dispositivi mobili e sicurezza di base.](create-device-security-policies.md)
 
-4. Agli utenti a cui è stato applicato un criterio viene richiesto di registrare i dispositivi quando tentano di accedere ai dati di Microsoft 365. Per altre info, vedi [Registrare il dispositivo mobile con Dispositivi mobili e sicurezza di base.](enroll-your-mobile-device.md)
+4. Agli utenti a cui è stato applicato un criterio viene richiesto di registrare i dispositivi quando tentano di accedere ai dati di Microsoft 365. Per altre info, vedi [Registrare il dispositivo mobile usando Dispositivi mobili e sicurezza di base.](enroll-your-mobile-device.md)
 
 Per ulteriori informazioni, vedere [Set up Basic Mobility and Security.](set-up.md)
 
-## <a name="im-trying-to-set-up-basic-mobility-and-security-but-it-seems-stuck-the-microsoft-365-service-health-has-been-showing-provisioning-for-a-while-what-can-i-do"></a>Si sta provando a configurare Basic Mobility and Security, ma sembra bloccato. Integrità dei servizi di Microsoft 365 mostra il "provisioning" da un po' di tempo. per correggere il problema?
+## <a name="im-trying-to-set-up-basic-mobility-and-security-but-it-seems-stuck-the-microsoft-365-service-health-has-been-showing-provisioning-for-a-while-what-can-i-do"></a>Si sta tentando di configurare La mobilità di base e la sicurezza, ma sembra bloccata. Integrità dei servizi di Microsoft 365 mostra il "provisioning" da un po' di tempo. per correggere il problema?
 
-Potrebbe essere necessario del tempo per prepararsi al servizio. Al termine del provisioning, verrà visualizzata la pagina Dispositivi mobili e sicurezza di base. If you've waited 24 hours and the status is still provisioning, please contact Support and we'll help figure out what the issue is. Per le opzioni di supporto, vedere [Serve ancora assistenza?](https://support.microsoft.com/office/frequently-asked-questions-about-basic-mobility-and-security-3871f99c-c9db-4a23-86f9-902c1b02f58d#bkmk_needhelp).
+Potrebbe essere necessario del tempo per prepararsi al servizio. Al termine del provisioning, verrà visualizzata la pagina Dispositivi mobili e sicurezza di base. Se hai atteso 24 ore e lo stato è ancora provisioning, contatta il supporto e ti aieremo a capire qual è il problema. Per le opzioni di supporto, vedere [Serve ancora assistenza?](https://support.microsoft.com/office/frequently-asked-questions-about-basic-mobility-and-security-3871f99c-c9db-4a23-86f9-902c1b02f58d#bkmk_needhelp).
 
-## <a name="what-can-i-do-if-device-enrollment-fails"></a>Cosa posso fare se la registrazione del dispositivo non riesce?
+## <a name="what-can-i-do-if-device-enrollment-fails"></a>Cosa posso fare se la registrazione dei dispositivi ha esito negativo?
 
-Se si verificano problemi durante la registrazione di un dispositivo, controlla prima di tutto quanto segue:
+Se si verificano problemi durante la registrazione di un dispositivo, controllare quanto segue:
 
 - Assicurati che il dispositivo non sia già registrato con un altro provider di gestione dei dispositivi mobili, ad esempio Intune.
 
@@ -63,30 +63,30 @@ Se si verificano problemi durante la registrazione di un dispositivo, controlla 
 
 - Passare a una rete WIFI o cellulare diversa nel dispositivo.
 
-- Per i dispositivi Android o iOS, disinstalla e reinstalla l'app Portale aziendale Intune nel dispositivo.
+- Per i dispositivi Android o iOS, disinstalla e reinstalla l'app Portale aziendale intune nel dispositivo.
     
-Se la registrazione non funziona ancora, vedere Risolvere i problemi [di sicurezza e mobilità di base.](troubleshoot.md)
+Se la registrazione non funziona ancora, vedi Risolvere i problemi relativi alla [mobilità e alla sicurezza di base.](troubleshoot.md)
 
 ## <a name="whats-the-difference-between-intune-and-basic-mobility-and-security"></a>Qual è la differenza tra Intune e Basic Mobility and Security?
 
-Basic Mobility and Security è ospitato dal servizio Intune. Si tratta di un sottoinsieme di servizi intune forniti come ulteriore vantaggio per Microsoft 365 ed è una soluzione basata sul cloud integrata per la gestione dei dispositivi nell'organizzazione. Per un confronto affiancato dei due servizi per decidere se usare Intune o Basic Mobility and Security per Microsoft 365, vedere Scegliere tra Basic Mobility Security e [Intune.](choose-between-basic-mobility-and-security-and-intune.md)
+La mobilità e la sicurezza di base sono ospitate dal servizio Intune. Si tratta di un sottoinsieme di servizi Intune forniti come ulteriore vantaggio per Microsoft 365 ed è una soluzione basata sul cloud incorporata per la gestione dei dispositivi nell'organizzazione. Per un confronto affiancato tra i due servizi per decidere se usare Intune o Basic Mobility and Security per Microsoft 365 è la soluzione più adatta per te, vedi Scegliere tra Basic Mobility Security e [Intune.](choose-between-basic-mobility-and-security-and-intune.md)
 
 ## <a name="how-do-policies-work-for-basic-mobility-and-security-how-do-i-set-them-up-disable-them"></a>Come funzionano i criteri per la mobilità e la sicurezza di base? Come si configurano? Disabilitarli?
 
-Dopo aver completato la configurazione iniziale per Basic Mobility and Security, è possibile creare criteri e applicarli a gruppi di utenti nel Centro sicurezza & conformità. I criteri richiedono agli utenti dei criteri di registrare i propri dispositivi in Sicurezza e mobilità di base prima che il dispositivo possa essere usato per accedere ai dati di Microsoft 365. I criteri impostati determinano le impostazioni per i dispositivi mobili, ad esempio la frequenza con cui le password devono essere reimpostate o se è necessaria la crittografia dei dati. Per altre informazioni, vedere [Creare criteri di sicurezza dei dispositivi nel](create-device-security-policies.md)Centro sicurezza e mobilità di base e Nel Centro conformità Microsoft   [365.](https://support.microsoft.com/office/7e696a40-b86b-4a20-afcc-559218b7b1b8)
+Dopo aver completato la configurazione iniziale per Dispositivi mobili e sicurezza di base, è possibile creare criteri e applicarli a gruppi di utenti nel Centro sicurezza & conformità. I criteri richiedono agli utenti dei criteri di registrare i propri dispositivi in Dispositivi mobili e sicurezza di base prima che il dispositivo possa essere usato per accedere ai dati di Microsoft 365. I criteri impostati determinano le impostazioni per i dispositivi mobili, ad esempio la frequenza con cui le password devono essere reimpostate o se è necessaria la crittografia dei dati. Per ulteriori informazioni, vedere [Create device security policies in Basic Mobility and Security](create-device-security-policies.md)and Microsoft   [365 compliance center.](https://support.microsoft.com/office/7e696a40-b86b-4a20-afcc-559218b7b1b8)
 
 Per istruzioni dettagliate sulla creazione e la distribuzione dei criteri dei dispositivi, vedi Creare criteri di sicurezza dei dispositivi [in Dispositivi mobili e sicurezza di base.](create-device-security-policies.md)
 
 Se si desidera escludere un gruppo specifico di utenti dai criteri, è possibile aggiungere un gruppo al gruppo di esclusione.
 
-## <a name="can-i-switch-from-exchange-activesync-device-management-to-basic-mobility-and-security-for-microsoft-365"></a>È possibile passare dalla gestione Exchange ActiveSync dispositivi a Dispositivi mobili e sicurezza di base per Microsoft 365?
+## <a name="can-i-switch-from-exchange-activesync-device-management-to-basic-mobility-and-security-for-microsoft-365"></a>Posso passare dalla gestione Exchange ActiveSync dispositivi a Dispositivi mobili di base e sicurezza per Microsoft 365?
 
-Se si usano già i criteri di Exchange ActiveSync per gestire i dispositivi mobili, è possibile iniziare a usare Dispositivi mobili e sicurezza di base seguendo la procedura per configurare Dispositivi mobili e sicurezza di base. Per ulteriori informazioni, vedere [Proteggere l'accesso](https://go.microsoft.com/fwlink/?LinkId=615145) di utenti e dispositivi [e Configurare la mobilità e la sicurezza di base.](set-up.md)
+Se si usano già criteri di Exchange ActiveSync per gestire i dispositivi mobili, è possibile iniziare a usare Dispositivi mobili e sicurezza di base seguendo la procedura per configurare Dispositivi mobili e sicurezza di base. Per ulteriori informazioni, vedere [Protect user and device access](../../compliance/protect-access-to-data-and-services.md) e Set up Basic Mobility and [Security.](set-up.md)
 
-Quando si applicano i criteri creati in Sicurezza e mobilità di base a gruppi di utenti Exchange ActiveSync, questi criteri sostituiscono i criteri cassetta postale dei dispositivi mobili e le regole di accesso ai dispositivi creati in precedenza nell'interfaccia di amministrazione di Exchange per tali utenti.
+Quando si applicano i criteri creati in Dispositivi mobili e sicurezza di base a gruppi di utenti Exchange ActiveSync, questi criteri sostituiscono i criteri cassetta postale dei dispositivi mobili e le regole di accesso ai dispositivi creati in precedenza nell'interfaccia di amministrazione di Exchange per tali utenti.
 
-Dopo la registrazione di un dispositivo in Basic Mobility and Security, qualsiasi criterio cassetta Exchange ActiveSync cassetta postale del dispositivo mobile o regola di accesso al dispositivo applicata al dispositivo viene ignorato.
+Dopo la registrazione di un dispositivo in Dispositivi mobili e sicurezza di base, qualsiasi criterio cassetta postale o regola di accesso del dispositivo Exchange ActiveSync dispositivo mobile applicato al dispositivo viene ignorato.
 
-## <a name="i--set-up-basic-mobility-and-security-but-now-i-want-to-remove-it-what-are-the-steps"></a>Ho configurato Basic Mobility and Security, ma ora voglio rimuoverlo. Quali sono i passaggi?
+## <a name="i--set-up-basic-mobility-and-security-but-now-i-want-to-remove-it-what-are-the-steps"></a>Ho configurato Dispositivi mobili e sicurezza di base, ma ora voglio rimuoverlo. Quali sono i passaggi?
 
-Purtroppo, non è possibile semplicemente "annullare il provisioning" di Base Mobility and Security dopo aver configurato. Tuttavia, puoi rimuoverlo per i gruppi di utenti rimuovendo i gruppi di sicurezza degli utenti dai criteri dei dispositivi che hai creato. In caso contrario, puoi disabilitarlo per tutti rimuovendo i criteri dei dispositivi in modo che non siano applicati e non applicati. Per altre info, vedi [Disattivare Dispositivi mobili e sicurezza di base.](turn-off.md)
+Purtroppo, non puoi semplicemente "annullare il provisioning" di Base Mobility and Security dopo aver configurato il provisioning. Puoi tuttavia rimuoverlo per gruppi di utenti rimuovendo i gruppi di sicurezza degli utenti dai criteri del dispositivo che hai creato. In caso contrario, puoi disabilitarlo per tutti rimuovendo i criteri del dispositivo in modo che non siano presenti e non vengano applicati. Per altre info, vedi [Disattivare Dispositivi mobili e sicurezza di base.](turn-off.md)

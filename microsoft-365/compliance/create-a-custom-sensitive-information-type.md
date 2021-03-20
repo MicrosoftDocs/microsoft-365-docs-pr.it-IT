@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Scoprire come creare, modificare, rimuovere e testare tipi di informazioni sensibili personalizzati per la prevenzione della perdita dei dati (DLP) nell'interfaccia utente grafica nel Centro sicurezza e conformità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 049c3c123053b4bd833ea95a2413b81366586870
-ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
+ms.openlocfilehash: 36238d14d3d6a1f84b0fdcae62635922f62b58d3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50766367"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908490"
 ---
 # <a name="get-started-with-custom-sensitive-information-types"></a>Introduzione ai tipi di informazione sensibile personalizzati
 
@@ -45,9 +45,9 @@ I tipi di informazione sensibile personalizzati creati con questo metodo vengono
     - [funzioni](what-the-dlp-functions-look-for.md)
     - [livello di confidenza](sensitive-information-type-learn-about.md#more-on-confidence-levels)
  
-- È necessario avere le autorizzazioni di amministrazione globale o di amministrazione della conformità per creare, collaudare e distribuire un tipo personalizzato di informazione riservata tramite l'interfaccia utente. Vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/office365/admin/add-users/about-admin-roles?view=o365-worldwide) di Office 365.
+- È necessario avere le autorizzazioni di amministrazione globale o di amministrazione della conformità per creare, collaudare e distribuire un tipo personalizzato di informazione riservata tramite l'interfaccia utente. Vedere [Informazioni sui ruoli di amministratore](/office365/admin/add-users/about-admin-roles?view=o365-worldwide) di Office 365.
 
-- L'organizzazione deve disporre di un abbonamento, ad esempio Office 365 Enterprise, che includa le funzionalità per la prevenzione della perdita dei dati (DLP). Vedere la descrizione del servizio [Criteri di messaggistica e conformità](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc). 
+- L'organizzazione deve disporre di un abbonamento, ad esempio Office 365 Enterprise, che includa le funzionalità per la prevenzione della perdita dei dati (DLP). Vedere la descrizione del servizio [Criteri di messaggistica e conformità](/office365/servicedescriptions/exchange-online-protection-service-description/messaging-policy-and-compliance-servicedesc). 
 
 
 > [!IMPORTANT]
@@ -71,7 +71,7 @@ Segui questa procedura per creare un nuovo tipo di informazione sensibile che pu
 12. Verifica le tue impostazioni e scegli **Invia**.
 
 > [!IMPORTANT]
-> Microsoft 365 usa il crawler di ricerca per identificare e classificare le informazioni sensibili nei siti di SharePoint Online e OneDrive for Business. Per identificare il nuovo tipo di informazioni sensibili personalizzato nel contenuto esistente, è necessario ripetere la ricerca per indicizzazione del contenuto. Il contenuto viene sottoposto a ricerca per indicizzazione in base a una pianificazione, ma è possibile ripetere manualmente la ricerca per indicizzazione del contenuto per una raccolta siti, un elenco o una raccolta. Per altre informazioni, vedere [Richiedere manualmente la ricerca per indicizzazione e la reindicizzazione di un sito, di una raccolta o di un elenco](https://docs.microsoft.com/sharepoint/crawl-site-content).
+> Microsoft 365 usa il crawler di ricerca per identificare e classificare le informazioni sensibili nei siti di SharePoint Online e OneDrive for Business. Per identificare il nuovo tipo di informazioni sensibili personalizzato nel contenuto esistente, è necessario ripetere la ricerca per indicizzazione del contenuto. Il contenuto viene sottoposto a ricerca per indicizzazione in base a una pianificazione, ma è possibile ripetere manualmente la ricerca per indicizzazione del contenuto per una raccolta siti, un elenco o una raccolta. Per altre informazioni, vedere [Richiedere manualmente la ricerca per indicizzazione e la reindicizzazione di un sito, di una raccolta o di un elenco](/sharepoint/crawl-site-content).
 
 13. Nella pagina **Classificazione dati** saranno mostrate tutti i tipi di informazione sensibile inclusi nell'elenco. Scegli **Aggiorna**, quindi cerca oppure usa lo strumento di ricerca per trovare il tipo di informazione sensibili creato.
 

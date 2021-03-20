@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Informazioni su come Exchange Online e Microsoft 365 utilizzano Transport Layer Security (TLS) e Forward Secrecy (FS) per proteggere le comunicazioni di posta elettronica. Ottenere inoltre informazioni sul certificato emesso da Microsoft per Exchange Online.
-ms.openlocfilehash: 6e23ebc6451b9d139f1b18838007411028a059f3
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: cc7ca631f9322fdc8a85cfaba197e63d06d08aee
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727457"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906952"
 ---
 # <a name="how-exchange-online-uses-tls-to-secure-email-connections"></a>Modalità d'uso di TLS in Exchange Online per proteggere le connessioni di posta elettronica
 
@@ -45,17 +45,17 @@ I server di Exchange Online consentono di crittografare sempre le connessioni ad
   
 ## <a name="how-microsoft-365-uses-tls-between-microsoft-365-and-external-trusted-partners"></a>Come Microsoft 365 usa TLS tra Microsoft 365 e partner attendibili esterni
 
-Per impostazione predefinita, Exchange Online utilizza sempre TLS opportunistico. Ciò significa che Exchange Online tenta sempre di crittografare prima le connessioni con la versione più sicura di TLS, quindi si fa strada verso il basso nell'elenco delle crittografie TLS finché non ne trova una su cui entrambe le parti sono d'accordo. A meno che Non sia stato configurato Exchange Online per garantire che i messaggi a tale destinatario vengano inviati solo tramite connessioni protette, per impostazione predefinita il messaggio verrà inviato non crittografato se l'organizzazione destinatario non supporta la crittografia TLS. Tls opportunistico è sufficiente per la maggior parte delle aziende. Tuttavia, per le aziende che hanno requisiti di conformità, ad esempio organizzazioni mediche, bancarie o governative, è possibile configurare Exchange Online per richiedere o forzare TLS. Per istruzioni, vedere [Configure mail flow using connectors in Office 365](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx).
+Per impostazione predefinita, Exchange Online utilizza sempre TLS opportunistico. Ciò significa che Exchange Online tenta sempre di crittografare prima le connessioni con la versione più sicura di TLS, quindi si fa strada verso il basso nell'elenco delle crittografie TLS finché non ne trova una su cui entrambe le parti sono d'accordo. A meno che Non sia stato configurato Exchange Online per garantire che i messaggi a tale destinatario vengano inviati solo tramite connessioni protette, per impostazione predefinita il messaggio verrà inviato non crittografato se l'organizzazione destinatario non supporta la crittografia TLS. Tls opportunistico è sufficiente per la maggior parte delle aziende. Tuttavia, per le aziende che hanno requisiti di conformità, ad esempio organizzazioni mediche, bancarie o governative, è possibile configurare Exchange Online per richiedere o forzare TLS. Per istruzioni, vedere [Configure mail flow using connectors in Office 365](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
   
-Se si decide di configurare TLS tra la propria organizzazione e un'organizzazione partner attendibile, in Exchange Online è possibile utilizzare TLS forzato per creare canali di comunicazione attendibili. TLS forzato richiede che l'organizzazione partner esegua l'autenticazione a Exchange Online con un certificato di sicurezza per inviare la posta all'utente. A tale scopo, il partner dovrà gestire i propri certificati. In Exchange Online, i connettori vengono utilizzati per proteggere i messaggi inviati dall'accesso non autorizzato prima che arrivino al provider di posta elettronica del destinatario. Per informazioni sull'utilizzo dei connettori per configurare il flusso di posta, vedere [Configure mail flow using connectors in Office 365](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx).
+Se si decide di configurare TLS tra la propria organizzazione e un'organizzazione partner attendibile, in Exchange Online è possibile utilizzare TLS forzato per creare canali di comunicazione attendibili. TLS forzato richiede che l'organizzazione partner esegua l'autenticazione a Exchange Online con un certificato di sicurezza per inviare la posta all'utente. A tale scopo, il partner dovrà gestire i propri certificati. In Exchange Online, i connettori vengono utilizzati per proteggere i messaggi inviati dall'accesso non autorizzato prima che arrivino al provider di posta elettronica del destinatario. Per informazioni sull'utilizzo dei connettori per configurare il flusso di posta, vedere [Configure mail flow using connectors in Office 365](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
   
 ## <a name="tls-and-hybrid-exchange-server-deployments"></a>TLS e distribuzioni ibride di Exchange Server
 
-Se si gestisce una distribuzione ibrida di Exchange, il server Exchange locale deve eseguire l'autenticazione in Microsoft 365 utilizzando un certificato di sicurezza per inviare posta ai destinatari le cui cassette postali sono solo in Office 365. Di conseguenza, è necessario gestire i propri certificati di sicurezza per i server Exchange locali. Inoltre, è necessario archiviare e conservare questi certificati per i server in modo sicuro. Per ulteriori informazioni sulla gestione dei certificati nelle distribuzioni ibride, vedere [Certificate requirements for hybrid deployments](https://technet.microsoft.com/library/hh563848%28v=exchg.150%29.aspx).
+Se si gestisce una distribuzione ibrida di Exchange, il server Exchange locale deve eseguire l'autenticazione in Microsoft 365 utilizzando un certificato di sicurezza per inviare posta ai destinatari le cui cassette postali sono solo in Office 365. Di conseguenza, è necessario gestire i propri certificati di sicurezza per i server Exchange locali. Inoltre, è necessario archiviare e conservare questi certificati per i server in modo sicuro. Per ulteriori informazioni sulla gestione dei certificati nelle distribuzioni ibride, vedere [Certificate requirements for hybrid deployments](/exchange/certificate-requirements).
   
 ## <a name="how-to-set-up-forced-tls-for-exchange-online-in-office-365"></a>Come configurare TLS forzato per Exchange Online in Office 365
 
-Per i clienti di Exchange Online, affinché TLS forzato sia utilizzato per proteggere tutta la posta elettronica inviata e ricevuta, è necessario configurare più di un connettore che richiede TLS. Sarà necessario un connettore per la posta elettronica inviata alle cassette postali degli utenti e un altro connettore per la posta elettronica inviata dalle cassette postali degli utenti. Creare tali connettori nell'interfaccia di amministrazione di Exchange in Office 365. Per istruzioni, vedere [Configure mail flow using connectors in Office 365](https://technet.microsoft.com/library/ms.exch.eac.connectorselection%28v=exchg.150%29.aspx).
+Per i clienti di Exchange Online, affinché TLS forzato sia utilizzato per proteggere tutta la posta elettronica inviata e ricevuta, è necessario configurare più di un connettore che richiede TLS. Sarà necessario un connettore per la posta elettronica inviata alle cassette postali degli utenti e un altro connettore per la posta elettronica inviata dalle cassette postali degli utenti. Creare tali connettori nell'interfaccia di amministrazione di Exchange in Office 365. Per istruzioni, vedere [Configure mail flow using connectors in Office 365](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/use-connectors-to-configure-mail-flow).
   
 ## <a name="tls-certificate-information-for-exchange-online"></a>Informazioni sul certificato TLS per Exchange Online
 
@@ -111,10 +111,8 @@ In genere, si ricevono automaticamente gli aggiornamenti dei certificati radice 
 
 Per un elenco delle suite di crittografia supportate, vedi [Informazioni di riferimento tecniche sulla crittografia.](technical-reference-details-about-encryption.md)
   
-[Impostare i connettori per il flusso di posta sicura con un'organizzazione partner](https://technet.microsoft.com/library/dn751021%28v=exchg.150%29.aspx)
+[Impostare i connettori per il flusso di posta sicura con un'organizzazione partner](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-for-secure-mail-flow-with-a-partner)
   
-[Connettori con sicurezza avanzata della posta elettronica](https://technet.microsoft.com/library/261d92e4-7371-4555-b781-2062b5bb5278.aspx)
+[Connettori con sicurezza avanzata della posta elettronica](/previous-versions/exchange-server/exchange-150/dn942516(v=exchg.150))
   
 [Crittografia in Microsoft 365](encryption.md)
-  
-

@@ -18,54 +18,54 @@ ms.custom:
 search.appverid:
 - MET150
 description: Configurare Dispositivi mobili e sicurezza di base per proteggere e gestire i dispositivi mobili degli utenti.
-ms.openlocfilehash: 38f122141b370468bc591df49b3e1891a8a66a43
-ms.sourcegitcommit: 8849dd6f80217c29f427c7f008d918f30c792240
+ms.openlocfilehash: 2f74307d41d83dd2e6fce2b68283ce0966e850e8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "49876865"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906241"
 ---
 # <a name="set-up-basic-mobility-and-security"></a>Impostare Basic Mobility + Security
 
 L'interfaccia di sicurezza e mobilità di base integrata per Microsoft 365 consente di proteggere e gestire i dispositivi mobili degli utenti, ad esempio iPhone, iPad, Android e telefoni Windows. È possibile creare e gestire criteri di sicurezza, cancellare tutti i dati in remoto e visualizzare report dettagliati sui dispositivi.
 
-Hai domande? Per domande frequenti su come risolvere le domande più comuni, vedere Domande frequenti sulla mobilità e la sicurezza di [base.](frequently-asked-questions.md) Tenere presente che non è possibile utilizzare un account amministratore delegato per gestire i dispositivi mobili e la sicurezza di base. Per altre info, vedi [Partner: Offrire l'amministrazione delegata.](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e) 
+Hai domande? Per domande frequenti su come risolvere le domande più comuni, vedere [Basic Mobility and Security Frequently-asked questions (FAQ)](frequently-asked-questions.md). Tenere presente che non è possibile utilizzare un account amministratore delegato per gestire i dispositivi mobili e la sicurezza di base. Per altre info, vedi [Partner: Offrire l'amministrazione delegata.](https://support.microsoft.com/office/partners-offer-delegated-administration-26530dc0-ebba-415b-86b1-b55bc06b073e) 
 
-La gestione dei dispositivi fa parte del Centro sicurezza & conformità, quindi è necessario avviarlo per avviare la configurazione di sicurezza e mobilità di base.
+La gestione dei dispositivi fa parte del Centro sicurezza & conformità, quindi dovrai andare lì per avviare la configurazione di base per dispositivi mobili e sicurezza.
 
 ## <a name="activate-the-basic-mobility-and-security-service"></a>Attivare il servizio Di base per dispositivi mobili e sicurezza
 
-1. Accedere a Microsoft 365 con l'account di amministratore globale.
+1. Accedi a Microsoft 365 con il tuo account amministratore globale.
 
-2. Passare a [Attiva mobilità e sicurezza di base.](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx)
+2. Vai a [Attiva mobilità e sicurezza di base.](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx)
 
-   L'attivazione di Basic Mobility and Security può richiedere del tempo. Al termine, si riceverà un messaggio di posta elettronica che spiega i passaggi successivi da eseguire.
+   L'attivazione di Dispositivi mobili e sicurezza di base può richiedere del tempo. Al termine, riceverai un messaggio di posta elettronica che spiega i passaggi successivi da eseguire.
 
 ## <a name="set-up-mobile-device-management"></a>Configurare Gestione dispositivi mobili
 
-Quando il servizio è pronto, completare i passaggi seguenti per completare l'installazione.
+Quando il servizio è pronto, completare la procedura seguente per completare l'installazione.
 
 ### <a name="step-1-required-configure-domains-for-basic-mobility-and-security"></a>Passaggio 1: (obbligatorio) Configurare i domini per dispositivi mobili e sicurezza di base
 
-Se non si dispone di un dominio personalizzato associato a Microsoft 365 o se non si gestiscono i dispositivi Windows, è possibile ignorare questa sezione. In caso contrario, sarà necessario aggiungere record DNS per il dominio presso l'host DNS. If you've added the records already, as part of setting up your domain with Microsoft 365, you're all set. Dopo aver aggiunto i record, gli utenti di Microsoft 365 dell'organizzazione che aseguono l'accesso al proprio dispositivo Windows con un indirizzo di posta elettronica che usa il dominio personalizzato vengono reindirizzati per la registrazione a Basic Mobility and Security.
+Se non hai un dominio personalizzato associato a Microsoft 365 o se non gestisci i dispositivi Windows, puoi ignorare questa sezione. In caso contrario, sarà necessario aggiungere record DNS per il dominio nell'host DNS. Se hai già aggiunto i record, come parte della configurazione del dominio con Microsoft 365, sei tutto impostato. Dopo aver aggiunto i record, gli utenti di Microsoft 365 nell'organizzazione che a loro volta aseguono il proprio dispositivo Windows con un indirizzo di posta elettronica che usa il dominio personalizzato vengono reindirizzati per la registrazione in Dispositivi mobili e sicurezza di base.
 
-Serve aiuto per la configurazione dei record? Trovare il registrar e selezionare il nome del registrar per accedere alla Guida dettagliata per la creazione del record DNS nell'elenco fornito in Aggiungere record DNS per connettere [il dominio.](https://docs.microsoft.com/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider) Usa queste istruzioni per creare record CNAME descritti in [Semplificare la registrazione di Windows senza Azure AD Premium.](https://docs.microsoft.com/mem/intune/enrollment/windows-enroll#simplify-windows-enrollment-without-azure-ad-premium)
+Serve assistenza per la configurazione dei record? Individuare il registrar e selezionare il nome del registrar per accedere alla Guida dettagliata per la creazione di record DNS nell'elenco fornito in [Add DNS records to connect your domain](/office365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider). Seguire queste istruzioni per creare record CNAME descritti in [Semplificare la registrazione di Windows senza Azure AD Premium.](/mem/intune/enrollment/windows-enroll#simplify-windows-enrollment-without-azure-ad-premium)
 
-Dopo aver aggiunto i due record CNAME, tornare al Centro sicurezza & conformità e passare a Prevenzione della perdita di dati Gestione dispositivi per completare  >     il passaggio successivo.
+Dopo aver aggiunto i due record CNAME, tornare al Centro sicurezza e conformità & e passare a Prevenzione della perdita di dati Gestione dei dispositivi per completare  >     il passaggio successivo.
 
 ### <a name="step-2-required-configure-an-apns-certificate-for-ios-devices"></a>Passaggio 2: (obbligatorio) Configurare un certificato APNs per i dispositivi iOS
 
-Per gestire i dispositivi iOS come iPad e iPhone, devi creare un certificato APNs.
+Per gestire dispositivi iOS come iPad e iPhone, devi creare un certificato APNs.
 
-1. Accedere a Microsoft 365 con l'account di amministratore globale.
+1. Accedi a Microsoft 365 con il tuo account amministratore globale.
 
 2. Nel browser digitare:  [https://protection.office.com](https://protection.office.com/) .
 
-3. Selezionare  **Gestione dispositivi per la prevenzione della** perdita dei dati e scegliere Il certificato   >  **** **APNs per i dispositivi iOS.**
+3. Seleziona  **Prevenzione della perdita dei dati** Gestione   >  **dei** dispositivi e scegli Certificato **APNs per i dispositivi iOS.**
 
 4. Nella pagina Impostazioni certificato notifica Push Apple scegliere **Avanti.**
 
-5. Selezionare **Download your CSR file** and save the Certificate signing request to somewhere on your computer that   you'll remember. Selezionare **Avanti.**
+5. Seleziona **Download your CSR file** and save the Certificate signing request to somewhere on your computer that   you'll remember. Selezionare **Avanti**.
 
 6. Nella pagina Crea un certificato APNs:
 
@@ -90,37 +90,37 @@ Per gestire i dispositivi iOS come iPad e iPhone, devi creare un certificato APN
 
 ### <a name="step-3-recommended-set-up-multi-factor-authentication"></a>Passaggio 3: (scelta consigliata) Configurare l'autenticazione a più fattori
 
-L'autenticazione a più fattori consente di proteggere l'accesso a Microsoft 365 per la registrazione di dispositivi mobili richiedendo una seconda forma di autenticazione. Gli utenti devono confermare una chiamata telefonica, un SMS o una notifica dell'app sul dispositivo mobile dopo aver immesso correttamente la password dell'account aziendale. Possono registrare il dispositivo solo dopo il completamento di questa seconda forma di autenticazione. Dopo la registrazione dei dispositivi utente in Basic Mobility and Security, gli utenti possono accedere alle risorse di Microsoft 365 solo con il proprio account aziendale.
+MFA consente di proteggere l'accesso a Microsoft 365 per la registrazione di dispositivi mobili richiedendo una seconda forma di autenticazione. Gli utenti devono confermare una chiamata telefonica, un SMS o una notifica dell'app sul dispositivo mobile dopo aver immesso correttamente la password dell'account aziendale. Possono registrare il dispositivo solo dopo il completamento di questa seconda forma di autenticazione. Dopo aver registrato i dispositivi utente in Dispositivi mobili e sicurezza di base, gli utenti possono accedere alle risorse di Microsoft 365 solo con il proprio account aziendale.
 
-Per informazioni su come attivare l'autenticazione a più fattori nel portale di Azure AD, vedere [Configurare l'autenticazione a più fattori.](https://go.microsoft.com/fwlink/p/?LinkId=519255)
+Per informazioni su come attivare l'autenticazione a più fattori nel portale di Azure AD, vedere [Configurare l'autenticazione a più fattori.](../security-and-compliance/set-up-multi-factor-authentication.md)
 
-Dopo aver configurato l'autenticazione a più fattori, tornare al **** Centro sicurezza & conformità e passare a Criteri dispositivo di gestione dei dispositivi per la prevenzione della perdita dei dati per completare   >     >  ****   il passaggio successivo.
+Dopo aver configurato l'autenticazione a più fattori &, tornare **** al Centro sicurezza e conformità e passare a Prevenzione della perdita di dati Criteri dei dispositivi per completare   >     >  ****   il passaggio successivo.
 
 ### <a name="step-4-recommended-manage-device-security-policies"></a>Passaggio 4: (scelta consigliata) Gestire i criteri di sicurezza dei dispositivi
 
-Il passaggio successivo consiste nel creare e distribuire criteri di sicurezza dei dispositivi per proteggere i dati dell'organizzazione di Microsoft 365. Ad esempio, puoi evitare la perdita di dati se un utente perde il dispositivo creando un criterio per bloccare i dispositivi dopo cinque minuti di inattività e cancellare i dispositivi dopo tre errori di accesso.
+Il passaggio successivo consiste nel creare e distribuire i criteri di sicurezza dei dispositivi per proteggere i dati dell'organizzazione di Microsoft 365. Ad esempio, puoi evitare la perdita di dati se un utente perde il dispositivo creando un criterio per bloccare i dispositivi dopo cinque minuti di inattività e cancellare i dispositivi dopo tre errori di accesso.
 
-1. Accedere a Microsoft 365 con l'account di amministratore globale.
+1. Accedi a Microsoft 365 con il tuo account amministratore globale.
 
-2. Selezionare [Attiva gestione dispositivi mobili.](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx) Se il servizio è attivato, i passaggi di attivazione verranno visualizzati con un collegamento a [Gestisci dispositivi.](https://admin.microsoft.com/adminportal/home#/MifoDevices)  
+2. Selezionare [Attiva gestione dispositivi mobili](https://admin.microsoft.com/EAdmin/Device/IntuneInventory.aspx). Se il servizio è attivato, i passaggi di attivazione vedrai un collegamento a [Gestisci dispositivi.](https://admin.microsoft.com/adminportal/home#/MifoDevices)  
 
-3. Vai a **Criteri dispositivo.**
+3. Vai a **Criteri dispositivo**.
 
-   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Impostazioni dei criteri di sicurezza e mobilità di base":::
+   :::image type="content" source="../../media/basic-mobility-security/bms-4-policy.png" alt-text="Impostazioni di base dei criteri di sicurezza e dispositivi mobili":::
 
-4. Creare e distribuire i criteri di sicurezza dei dispositivi appropriati per l'organizzazione seguendo la procedura descritta in Creare criteri di sicurezza dei dispositivi [in Dispositivi mobili e sicurezza di base.](create-device-security-policies.md)
+4. Creare e distribuire i criteri di sicurezza dei dispositivi appropriati per l'organizzazione seguendo la procedura descritta in Creare criteri di sicurezza [dei dispositivi in Dispositivi mobili e sicurezza di base.](create-device-security-policies.md)
 
 > [!TIP]
 >
-> - Quando crei un nuovo criterio, puoi impostare il criterio per consentire l'accesso e segnalare una violazione dei criteri in cui un dispositivo utente non è conforme al criterio. In questo modo è possibile vedere quanti dispositivi mobili sono influenzati dai criteri senza bloccare l'accesso a Microsoft 365.
+> - Quando crei un nuovo criterio, potresti voler impostare il criterio per consentire l'accesso e segnalare una violazione dei criteri in cui un dispositivo utente non è conforme ai criteri. In questo modo è possibile vedere quanti dispositivi mobili sono influenzati dal criterio senza bloccare l'accesso a Microsoft 365.
 >
-> - Prima di distribuire un nuovo criterio a tutti gli utenti dell'organizzazione, è consigliabile testarlo nei dispositivi usati da un numero limitato di utenti.
+> - Prima di distribuire un nuovo criterio a tutti gli utenti dell'organizzazione, è consigliabile testarlo nei dispositivi utilizzati da un numero limitato di utenti.
 >
-> - Inoltre, prima di distribuire i criteri, invii all'organizzazione informazioni sui potenziali effetti della registrazione di un dispositivo in Dispositivi mobili e sicurezza di base. A seconda di come sono stati impostati i criteri, i dispositivi che non sono conformi ai criteri (dispositivi non conformi) potrebbero essere bloccati dall'accesso a Microsoft 365. Nei dispositivi non conformi potrebbero essere installate anche app, foto e altre informazioni personali che, in un dispositivo registrato, potrebbero essere eliminate se il dispositivo viene cancellato. Per altre info, vedi [Cancellare un dispositivo mobile in Dispositivi mobili e sicurezza di base.](wipe-mobile-device.md)
+> - Inoltre, prima di distribuire i criteri, invii all'organizzazione i potenziali effetti della registrazione di un dispositivo in Dispositivi mobili e sicurezza di base. A seconda di come si configurano i criteri, i dispositivi che non sono conformi ai criteri (dispositivi non conformi) potrebbero essere bloccati dall'accesso a Microsoft 365. Nei dispositivi non conformi potrebbero essere installate anche app, foto e altre informazioni personali che, in un dispositivo registrato, potrebbero essere eliminate se il dispositivo viene cancellato. Per altre info, vedi [Cancellare i dati di un dispositivo mobile in Dispositivi mobili e sicurezza di base.](wipe-mobile-device.md)
 
-## <a name="make-sure-users-enroll-their-devices"></a>Verificare che gli utenti registrano i propri dispositivi
+## <a name="make-sure-users-enroll-their-devices"></a>Assicurarsi che gli utenti registrano i propri dispositivi
 
-Dopo aver creato e distribuito un criterio di gestione dei dispositivi mobili, ogni utente di Microsoft 365 con licenza nell'organizzazione a cui si applicano i criteri del dispositivo riceve un messaggio di registrazione al successivo accesso a Microsoft 365 dal dispositivo mobile. Devono completare i passaggi di registrazione e attivazione prima di poter accedere alla posta elettronica e ai documenti di Microsoft 365. Per altre info, vedi [Registrare il dispositivo mobile con Dispositivi mobili e sicurezza di base.](enroll-your-mobile-device.md)
+Dopo aver creato e distribuito un criterio di gestione dei dispositivi mobili, ogni utente di Microsoft 365 con licenza nell'organizzazione a cui si applicano i criteri del dispositivo riceve un messaggio di registrazione al successivo accesso a Microsoft 365 dal dispositivo mobile. Devono completare i passaggi di registrazione e attivazione prima di poter accedere alla posta elettronica e ai documenti di Microsoft 365. Per altre info, vedi [Registrare il dispositivo mobile usando Dispositivi mobili e sicurezza di base.](enroll-your-mobile-device.md)
 
 > [!IMPORTANT]
 > Se la lingua preferita di un utente non è supportata dal processo di registrazione, gli utenti potrebbero ricevere notifiche di registrazione e passaggi sui dispositivi mobili in un'altra lingua. Non tutte le lingue supportate in Microsoft 365 sono attualmente supportate per il processo di registrazione nei dispositivi mobili.

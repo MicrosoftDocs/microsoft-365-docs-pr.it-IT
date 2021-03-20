@@ -15,24 +15,24 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Informazioni su e dove accedere al Lab Kit di distribuzione di Windows e Office.
-ms.openlocfilehash: 9b558ad20a84bc902dd9a4a78ebafdbcecd8a9bb
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: dd066339ccfefdc58eb241bb9fdb69cdd5a458d8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288264"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907457"
 ---
 # <a name="windows-and-office-deployment-lab-kit"></a>Lab Kit di distribuzione di Windows e Office
 
-Windows e Office Deployment Lab Kit sono progettati per aiutarti a pianificare, testare e convalidare la distribuzione e la gestione dei desktop che eseguono Windows 10 Enterprise e Microsoft 365 Apps for enterprise. I laboratori del kit usano Microsoft Endpoint Configuration Manager, Desktop Analytics, lo Strumento di personalizzazione di Office, OneDrive, Windows Autopilot e altro ancora.
+Il lab kit di distribuzione di Windows e Office è progettato per facilitare la pianificazione, il test e la convalida della distribuzione e della gestione dei desktop che eseguono Windows 10 Enterprise e Microsoft 365 Apps for enterprise. I laboratori del kit riguardano Microsoft Endpoint Configuration Manager, Desktop Analytics, lo Strumento di personalizzazione di Office, OneDrive, Windows Autopilot e altro ancora.
 
-Questo kit è altamente consigliato per le organizzazioni che si preparano per gli aggiornamenti di Windows 8.1 a Windows 10. Si applica anche se attualmente si usa Windows 10, Microsoft 365 Apps for enterprise (in precedenza Office 365 ProPlus) o Office 2019. In quanto ambiente isolato, il lab risultante è ideale per esplorare gli aggiornamenti dello strumento di distribuzione e testare l'automazione correlata alla distribuzione.
+Questo kit è altamente consigliato per le organizzazioni che si preparano per gli aggiornamenti di Windows 8.1 a Windows 10. Si applica anche se attualmente si usa Windows 10, Microsoft 365 Apps for enterprise (in precedenza Office 365 ProPlus) o Office 2019. In quanto ambiente isolato, il lab risultante è ideale per esplorare gli aggiornamenti degli strumenti di distribuzione e testare l'automazione correlata alla distribuzione.
 
 [Scaricare il Lab Kit di distribuzione di Windows e Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
 ## <a name="a-complete-lab-environment"></a>Un ambiente lab completo
 
-Il kit fornisce un ambiente lab virtuale con provisioning automatico, inclusi client desktop aggiunti a un dominio, un controller di dominio, un gateway Internet e un'istanza di Configuration Manager completamente configurata. Il kit contiene le versioni di valutazione più recenti dei prodotti seguenti:
+Il kit fornisce un ambiente lab virtuale di cui è stato eseguito il provisioning automatico, inclusi i client desktop aggiunti al dominio, un controller di dominio, un gateway Internet e un'istanza di Configuration Manager completamente configurata. Il kit contiene le versioni di valutazione più recenti dei prodotti seguenti:
 
   - NOVITÀ! Windows 10 Enterprise, versione 20H2
   - Windows 7 Enterprise
@@ -65,13 +65,13 @@ Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuz
 - Manutenzione di Windows 10 tramite Criteri di gruppo
 - Manutenzione di Windows 10 con Microsoft Intune   
 - Manutenzione di Windows 10 con Configuration Manager   
-- Manutenzione di Microsoft 365 Apps for enterprise con Configuration Manager   
+- Manutenzione di Microsoft 365 Apps for enterprise tramite Configuration Manager   
 - Manutenzione di Microsoft 365 Apps for enterprise con Intune  
 - Sicurezza e conformità   
 
 ### <a name="prepare-applications"></a>Preparare le applicazioni    
 
-- Preparazione Toolkit per Office  
+- Readiness Toolkit for Office  
 - Creazione di pacchetti MSIX e conversione di applicazioni Win32   
 
 ### <a name="deploy-windows-10"></a>Distribuire Windows 10   
@@ -83,7 +83,7 @@ Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuz
 
 ### <a name="deploy-microsoft-365-apps-for-enterprise"></a>Come distribuire App di Microsoft 365 per grandi imprese    
 
-- Distribuzione gestita dal cloud  
+- Distribuzione gestita cloud  
 - Distribuzione gestita localmente    
 - Distribuzione di Microsoft 365 Apps for enterprise in dispositivi non aggiunti ad Active Directory 
 - Distribuzione gestita dall'organizzazione con Configuration Manager
@@ -99,19 +99,19 @@ Le guide dei lab forniscono indicazioni dettagliate su più scenari di distribuz
 
 [Scaricare il Lab Kit di distribuzione di Windows e Office](https://www.microsoft.com/evalcenter/evaluate-lab-kit).
 
-* La versione di base 2002 installata può essere aggiornata alla versione 2010 utilizzando e l'aggiornamento nella console. Usa una connessione Internet a larghezza di banda larga per scaricare questo contenuto e consenti 30-45 minuti per il provisioning automatico. L'ambiente lab richiede almeno 16 GB di memoria disponibile e 150 GB di spazio libero su disco. Per ottenere prestazioni ottimali, sono consigliati 32 GB di memoria disponibile e 300 GB di spazio libero. Il kit scade il 2 maggio 2021. Una nuova versione verrà pubblicata prima della scadenza.
+* La versione di base 2002 installata può essere aggiornata alla versione 2010 utilizzando e l'aggiornamento nella console. Usa una connessione Internet a larghezza di banda ampia per scaricare questo contenuto e consenti 30-45 minuti per il provisioning automatico. L'ambiente lab richiede almeno 16 GB di memoria disponibile e 150 GB di spazio libero su disco. Per ottenere prestazioni ottimali, sono consigliati 32 GB di memoria disponibile e 300 GB di spazio libero. Il kit scade il 2 maggio 2021. Una nuova versione verrà pubblicata prima della scadenza.
 
 ## <a name="additional-guidance"></a>Indicazioni aggiuntive
 
   - [Serie di video sulla distribuzione desktop di Microsoft Mechanics](https://www.aka.ms/watchhowtoshift)
 
-  - [Distribuzione del sistema operativo di Microsoft Endpoint Configuration Manager](https://docs.microsoft.com/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
+  - [Distribuzione del sistema operativo di Microsoft Endpoint Configuration Manager](/mem/configmgr/osd/understand/introduction-to-operating-system-deployment)
 
-  - [Pianificare la distribuzione di Windows 10](https://docs.microsoft.com/windows/deployment/planning/index)
+  - [Pianificare la distribuzione di Windows 10](/windows/deployment/planning/index)
 
-  - [Guida alla distribuzione di Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps)
+  - [Guida alla distribuzione di Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps)
 
-  - [Introduzione a Intune](https://docs.microsoft.com/intune/get-started-evaluation)
+  - [Introduzione a Intune](/intune/get-started-evaluation)
 
 ## <a name="related-resources"></a>Risorse correlate
 

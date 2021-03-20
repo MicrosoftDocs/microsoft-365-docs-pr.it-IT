@@ -20,36 +20,36 @@ ms.assetid: cca08d26-6fbf-4b2c-b102-b226e4cd7381
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come generare un report contenente informazioni su tutti i blocchi associati ai casi di eDiscovery.
-ms.openlocfilehash: 35e432104e7c1358887eb89ae96b9bb0d1d12a0f
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 04282f6f2481d892fa16d685936efeec55feae77
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546978"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908410"
 ---
 # <a name="create-a-report-on-holds-in-ediscovery-cases"></a>Creare un report sui casi di blocco in eDiscovery
 
-Lo script in questo articolo consente agli amministratori di eDiscovery e ai responsabili di eDiscovery di generare un report contenente informazioni su tutti i blocchi associati ai casi di eDiscovery nel Centro conformità in Office 365 o Microsoft 365. Il report contiene informazioni quali il nome del caso a cui è associata un'esenzione, i percorsi dei contenuti che vengono messi in attesa e se il blocco è basato su query. Se in alcuni casi non sono presenti esenzioni, lo script creerà un report aggiuntivo con un elenco di casi senza blocchi.
+Lo script in questo articolo consente agli amministratori di eDiscovery e ai responsabili di eDiscovery di generare un report contenente informazioni su tutti i blocchi associati ai casi di eDiscovery nel Centro conformità in Office 365 o Microsoft 365. Il report contiene informazioni quali il nome del caso a cui è associata un'esenzione, le posizioni del contenuto che vengono poste in attesa e se il blocco è basato su query. Se in alcuni casi non sono presenti esenzioni, lo script creerà un report aggiuntivo con un elenco di casi senza esenzioni.
 
 Per una [descrizione](#more-information) dettagliata delle informazioni incluse nel report, vedere la sezione Ulteriori informazioni.
 
 ## <a name="admin-requirements-and-script-information"></a>Requisiti dell'amministratore e informazioni sullo script
 
-- Per generare un report su tutti i casi di eDiscovery nell'organizzazione, è necessario essere un amministratore di eDiscovery nell'organizzazione. Se si è un responsabile di eDiscovery, il report includerà solo informazioni sui casi a cui è possibile accedere. Per ulteriori informazioni sulle autorizzazioni di eDiscovery, vedere [Assegnare autorizzazioni di eDiscovery.](assign-ediscovery-permissions.md)
+- Per generare un report su tutti i casi di eDiscovery nell'organizzazione, è necessario essere un amministratore di eDiscovery nell'organizzazione. Se si è un responsabile di eDiscovery, il report includerà solo informazioni sui casi a cui è possibile accedere. Per ulteriori informazioni sulle autorizzazioni di eDiscovery, vedere [Assign eDiscovery permissions](assign-ediscovery-permissions.md).
 
-- Lo script in questo articolo presenta una gestione degli errori minima. Lo scopo principale è creare rapidamente un report sui blocchi associati ai casi di eDiscovery nell'organizzazione.
+- Lo script in questo articolo ha una gestione minima degli errori. Lo scopo principale è creare rapidamente report sulle esenzioni associate ai casi di eDiscovery nell'organizzazione.
 
 - Gli script di esempio forniti in questo articolo non sono supportati da alcun programma o servizio standard di supporto Microsoft. Gli script di esempio sono forniti così come sono senza alcun tipo di garanzia. Inoltre Microsoft declina ogni responsabilità su garanzie implicite, senza alcuna limitazione, incluse le garanzie implicite di commerciabilità e/o adeguatezza per uno scopo specifico. Qualsiasi rischio eventuale pervenga, durante l'utilizzo degli script di esempio e della documentazione, si intende a carico dell'utente. In nessun caso Microsoft, i suoi autori o chiunque altro coinvolto nella creazione, produzione o consegna degli script è da ritenersi responsabile per qualsiasi danno eventuale (inclusi, senza limitazione alcuna, danni riguardanti profitti aziendali, interruzione di attività, perdita di informazioni aziendali o altra perdita pecuniaria) derivanti dall'utilizzo o dall'incapacità di utilizzo degli script di esempio e della documentazione, anche nel caso in cui Microsoft sia stata avvisata della possibilità di tali danni.
 
 ## <a name="step-1-connect-to-the-security--compliance-center-powershell"></a>Passaggio 1: connettersi a PowerShell & Centro sicurezza e conformità
 
-Il primo passaggio consiste nel connettersi a PowerShell & Centro sicurezza e conformità per l'organizzazione. Per ottenere istruzioni dettagliate, vedere [Connettersi a PowerShell in Centro sicurezza e conformità](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+Il primo passaggio consiste nel connettersi a PowerShell & Centro sicurezza e conformità per l'organizzazione. Per ottenere istruzioni dettagliate, vedere [Connettersi a PowerShell in Centro sicurezza e conformità](/powershell/exchange/connect-to-scc-powershell).
 
-## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Passaggio 2: Eseguire lo script per segnalare i blocchi associati ai casi di eDiscovery
+## <a name="step-2-run-the-script-to-report-on-holds-associated-with-ediscovery-cases"></a>Passaggio 2: eseguire lo script per segnalare i blocchi associati ai casi di eDiscovery
 
-Dopo aver eseguito la connessione a PowerShell & Centro sicurezza e conformità, il passaggio successivo consiste nel creare ed eseguire lo script che raccoglie informazioni sui casi di eDiscovery nell'organizzazione.
+Dopo aver eseguito la connessione & PowerShell al Centro sicurezza e conformità, il passaggio successivo consiste nel creare ed eseguire lo script che raccoglie informazioni sui casi di eDiscovery nell'organizzazione.
 
-1. Salvare il testo seguente in un file Windows PowerShell script utilizzando il suffisso del nome file ps1. ad esempio, CaseHoldsReport.ps1.
+1. Salvare il testo seguente in un file Windows PowerShell script utilizzando il suffisso del nome di file ps1. ad esempio, CaseHoldsReport.ps1.
 
    ```powershell
    #script begin
@@ -154,34 +154,34 @@ Dopo aver eseguito la connessione a PowerShell & Centro sicurezza e conformità,
    > [!TIP]
    > Per salvare il report nella stessa cartella in cui si trova lo script, digitare un punto (".") quando viene richiesto di specificare una cartella di destinazione. Per salvare il report in una sottocartella della cartella in cui si trova lo script, è sufficiente digitare il nome della sottocartella.
 
-   Lo script inizia a raccogliere informazioni su tutti i casi di eDiscovery nell'organizzazione. Non accedere al file di report mentre lo script è in esecuzione. Al termine dello script, viene visualizzato un messaggio di conferma nella Windows PowerShell sessione. Dopo aver visualizzato questo messaggio, è possibile accedere al rapporto nella cartella specificata nel passaggio 4. Il nome del file per il report è `CaseHoldsReport<DateTimeStamp>.csv` .
+   Lo script inizia a raccogliere informazioni su tutti i casi di eDiscovery nell'organizzazione. Non accedere al file di report durante l'esecuzione dello script. Al termine dello script, viene visualizzato un messaggio di conferma nella Windows PowerShell sessione. Dopo aver visualizzato questo messaggio, è possibile accedere al report nella cartella specificata nel passaggio 4. Il nome del file per il report è `CaseHoldsReport<DateTimeStamp>.csv` .
 
    In aggiunta, lo script crea anche un report con un elenco di casi che non dispongono di esenzioni. Il nome del file per questo report è `CaseswithNoHolds<DateTimeStamp>.csv` .
 
-   Ecco un esempio di esecuzione dello script CaseHoldsReport.ps1 seguente.
+   Ecco un esempio di esecuzione dello script CaseHoldsReport.ps1.
 
    ![Output dopo l'esecuzione dello script CaseHoldsReport.ps1](../media/7d312ed5-505e-4ec5-8f06-3571e3524a1a.png)
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
-Il report di blocco del caso creato quando si esegue lo script in questo articolo contiene le informazioni seguenti su ogni blocco. Come spiegato in precedenza, è necessario essere un amministratore di eDiscovery per restituire informazioni su tutti i blocchi nell'organizzazione. Per ulteriori informazioni sui blocchi dei casi, vedere [casi di eDiscovery.](ediscovery-cases.md)
+Il report di conservazione dei casi creato quando si esegue lo script in questo articolo contiene le informazioni seguenti su ogni blocco. Come spiegato in precedenza, è necessario essere un amministratore di eDiscovery per restituire informazioni per tutte le esenzioni nell'organizzazione. Per ulteriori informazioni sui casi di conservazione, vedere [casi di eDiscovery](./get-started-core-ediscovery.md).
 
-- Nome del blocco e nome del caso di eDiscovery a cui è associato il blocco.
+- Il nome del blocco e il nome del caso eDiscovery a cui è associato il blocco.
 
 - Indica se il caso di eDiscovery è attivo o chiuso.
 
-- Se l'esenzione è abilitata o disabilitata.
+- Indica se il blocco è abilitato o disabilitato.
 
 - I membri del caso di eDiscovery a cui è associato il blocco. I membri del caso possono visualizzare o gestire un caso, a seconda delle autorizzazioni di eDiscovery assegnate.
 
-- Ora e data di creazione del caso.
+- Data e ora di creazione del caso.
 
-- Se un caso è chiuso, l'utente che lo ha chiuso e l'ora e la data di chiusura.
+- Se un caso è chiuso, l'utente che lo ha chiuso e l'ora e la data in cui è stato chiuso.
 
 - Le cassette postali di Exchange e i percorsi dei siti di SharePoint in attesa.
 
 - Se il blocco è basato su query, la sintassi della query.
 
-- L'ora e la data di creazione dell'esenzione e la persona che l'ha creata.
+- Ora e data in cui è stato creato il blocco e la persona che l'ha creata.
 
-- Data e ora dell'ultima modifica dell'esenzione e dell'utente che l'ha modificata.
+- Data e ora dell'ultima modifica del blocco e dell'utente che l'ha modificata.

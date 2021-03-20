@@ -19,19 +19,19 @@ ms.collection:
 search.appverid:
 - MET150
 description: Informazioni su come configurare il proxy del dispositivo e le impostazioni di connessione Internet per la prevenzione della perdita di dati degli endpoint.
-ms.openlocfilehash: 1e723adfbf16ba1180558e34b0fe4867e6337c57
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 3b8ebdbb08a6a866cc84df2031e77378925eaa0e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49841626"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907006"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp"></a>Configurazione del proxy del dispositivo e delle impostazioni di connessione Internet per la prevenzione della perdita di dati degli endpoint
 
 La Prevenzione della perdita dei dati degli endpoint Microsoft usa Microsoft Windows HTTP (WinHTTP) per segnalare i dati e comunicare con il servizio cloud degli endpoint Microsoft. La Prevenzione della perdita dei dati degli endpoint integrata viene eseguita nel sistema attraverso l'account LocalSystem.
 
 > [!TIP]
-> Per le organizzazioni che usano i proxy come porta di accesso a Internet, è possibile usare la protezione della rete per esaminare gli eventi che si verificano dietro un proxy. Per altre informazioni, vedere [Esaminare gli eventi di connessione che si verificano dietro i proxy di inoltro](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/investigate-behind-proxy).
+> Per le organizzazioni che usano i proxy come porta di accesso a Internet, è possibile usare la protezione della rete per esaminare gli eventi che si verificano dietro un proxy. Per altre informazioni, vedere [Esaminare gli eventi di connessione che si verificano dietro i proxy di inoltro](/windows/security/threat-protection/microsoft-defender-atp/investigate-behind-proxy).
 
 L'impostazione di configurazione WinHTTP è indipendente dalle impostazioni del proxy di esplorazione Internet (WinINet) di Windows Internet e può solo individuare un server proxy usando i metodi di individuazione automatica seguenti:
 
@@ -89,7 +89,7 @@ Usare netsh per configurare un proxy statico a livello di sistema.
 
      `netsh winhttp reset proxy`
 
-Per altre informazioni, vedere [Sintassi comando netsh, contesti e formattazione](https://docs.microsoft.com/windows-server/networking/technologies/netsh/netsh-contexts).
+Per altre informazioni, vedere [Sintassi comando netsh, contesti e formattazione](/windows-server/networking/technologies/netsh/netsh-contexts).
 
 
 ## <a name="enable-access-to-endpoint-dlp-cloud-service-urls-in-the-proxy-server"></a>Abilitare l'accesso agli URL del servizio cloud della Prevenzione della perdita dei dati degli endpoint nel server proxy
@@ -129,7 +129,7 @@ Sostituire *HardDrivePath* con il percorso in cui è stato scaricato lo strument
 Se almeno una delle opzioni di connettività restituisce uno stato (200), il client Defender per Endpoint può comunicare correttamente con l'URL testato usando questo metodo di connettività. 
 
 Tuttavia, se i risultati della verifica della connettività indicano un errore, viene visualizzato un errore HTTP (vedere codici di stato HTTP). È quindi possibile usare gli URL nella tabella illustrata in [Abilitare l'accesso agli URL del servizio cloud della Prevenzione della perdita dei dati degli endpoint nel server proxy](#enable-access-to-endpoint-dlp-cloud-service-urls-in-the-proxy-server). Gli URL usati variano a seconda dell'area selezionata durante la procedura di onboarding.
-[!NOTE] Strumento di analisi della connettività non è compatibile con la regola ASR [Bloccare le creazioni di processi provenienti dai comandi PSExec e WMI](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules). È necessario disabilitare temporaneamente questa regola per eseguire lo strumento di connettività.
+[!NOTE] Strumento di analisi della connettività non è compatibile con la regola ASR [Bloccare le creazioni di processi provenienti dai comandi PSExec e WMI](/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction#attack-surface-reduction-rules). È necessario disabilitare temporaneamente questa regola per eseguire lo strumento di connettività.
 
 [!NOTE] Quando TelemetryProxyServer è impostato, nel Registro o tramite Criteri di Gruppo, Defender for Endpoint ricade in modalità diretta se non può accedere al proxy definito.
 Argomenti correlati •   Onboarding di dispositivi Windows 10 •   Risolvere i problemi di onboarding della Microsoft Prevenzione della perdita dei dati degli endpoint
@@ -145,8 +145,8 @@ Argomenti correlati •   Onboarding di dispositivi Windows 10 •   Risolvere i
 - [Panoramica sulla prevenzione della perdita dei dati](data-loss-prevention-policies.md)
 - [Creare, testare e ottimizzare un criterio di prevenzione della perdita dei dati](create-test-tune-dlp-policy.md)
 - [Introduzione a Esplora attività](data-classification-activity-explorer.md)
-- [Microsoft Defender ATP](https://docs.microsoft.com/windows/security/threat-protection/)
-- [Strumenti e metodi di onboarding per i dispositivi Windows 10](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
+- [Microsoft Defender ATP](/windows/security/threat-protection/)
+- [Strumenti e metodi di onboarding per i dispositivi Windows 10](/windows/security/threat-protection/microsoft-defender-atp/configure-endpoints)
 - [Abbonamento a Microsoft 365](https://www.microsoft.com/microsoft-365/compare-microsoft-365-enterprise-plans?rtc=1)
-- [Dispositivi aggiunti ad Azure AD](https://docs.microsoft.com/azure/active-directory/devices/concept-azure-ad-join)
+- [Dispositivi aggiunti ad Azure AD](/azure/active-directory/devices/concept-azure-ad-join)
 - [Scaricare il nuovo Microsoft Edge basato su Chromium](https://support.microsoft.com/help/4501095/download-the-new-microsoft-edge-based-on-chromium)

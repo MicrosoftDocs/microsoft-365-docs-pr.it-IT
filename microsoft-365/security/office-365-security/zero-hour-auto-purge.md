@@ -22,12 +22,12 @@ ms.custom:
 description: Gli amministratori possono scoprire come l'eliminazione automatica di zero ore (ZAP) può spostare retroattivamente i messaggi recapitati in una cassetta postale di Exchange Online nella cartella Posta indesiderata o in quarantena che si trovano retroattivamente come posta indesiderata o phishing.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: be47d8dfda68bfb6819b6423542970c7768c6ffb
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: b5744fdd4ce371f62fcb4b07a4cbcd003405c3db
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820259"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907977"
 ---
 # <a name="zero-hour-auto-purge-zap-in-exchange-online"></a>Eliminazione automatica a zero ore (ZAP) in Exchange Online
 
@@ -121,4 +121,4 @@ ZAP funziona ancora finché il messaggio non è stato eliminato o finché l'azio
 
 ZAP non mettere in quarantena i messaggi dalle cassette postali in attesa. ZAP può spostare i messaggi nella cartella Posta indesiderata in base all'azione configurata per un verdetto di posta indesiderata o phishing nei criteri di protezione da posta indesiderata.
 
-Per ulteriori informazioni sui blocchi in Exchange Online, vedere [In-Place Hold and Litigation Hold in Exchange Online](https://docs.microsoft.com/Exchange/security-and-compliance/in-place-and-litigation-holds).
+Per ulteriori informazioni sui blocchi in Exchange Online, vedere [In-Place Hold and Litigation Hold in Exchange Online](/Exchange/security-and-compliance/in-place-and-litigation-holds).

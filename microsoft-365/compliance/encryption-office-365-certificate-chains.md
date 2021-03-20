@@ -17,16 +17,16 @@ ms.collection:
 - M365-security-compliance
 - Strat_O365_IP
 description: Visualizzare un elenco completo dei certificati radice e delle autorità di certificazione (CA) in Microsoft 365.
-ms.openlocfilehash: 3dd85ae9ec4e691c8b3dce03256e1afb1fcb6274
-ms.sourcegitcommit: 2c4c7ebe9bea52765ece0ed27d3ea77313711b10
+ms.openlocfilehash: c5b00a3a663c2ae4862cfa3d11f92015c0331e59
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50068931"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907720"
 ---
 # <a name="microsoft-365-encryption-chains"></a>Catene di crittografia di Microsoft 365
 
-Microsoft 365 sfrutta diversi provider di certificati. Di seguito viene descritto l'elenco completo dei certificati radice di Microsoft 365 noti che i clienti possono riscontrare quando accedono a Microsoft 365. Per informazioni sui certificati che potrebbe essere necessario installare nella propria infrastruttura, vedere Pianificare certificati SSL di terze parti [per Microsoft 365.](https://docs.microsoft.com/microsoft-365/enterprise/plan-for-third-party-ssl-certificates) Le seguenti informazioni sui certificati si applicano a tutte le istanze cloud nazionali e internazionali di Microsoft 365.
+Microsoft 365 sfrutta diversi provider di certificati. Di seguito viene descritto l'elenco completo dei certificati radice di Microsoft 365 noti che i clienti possono riscontrare quando accedono a Microsoft 365. Per informazioni sui certificati che potrebbe essere necessario installare nella propria infrastruttura, vedere [Plan for third-party SSL certificates for Microsoft 365](../enterprise/plan-for-third-party-ssl-certificates.md). Le seguenti informazioni sui certificati si applicano a tutte le istanze cloud nazionali e internazionali di Microsoft 365.
 
 Last updated: **16/10/2020**
 
@@ -36,22 +36,22 @@ Last updated: **16/10/2020**
 | **Tipo di certificato** | **Download P7b** | **Endpoint CRL** | **Endpoint OCSP** | **Endpoint AIA** |
 | --- | --- | --- | --- | --- |
 | Certificati radice attendibili pubblicamente | [Bundle di certificati radice di Microsoft 365 (P7B)](https://download.microsoft.com/download/4/a/b/4ab1c940-826b-444b-b287-b7a902e68da0/m365_root_certs_20201012.p7b) | crl.globalsign.net<br>www.d-trust.net | N/D | N/D |
-| Certificati intermedi pubblicamente attendibili | [Bundle di certificati intermedi di Microsoft 365 (P7B)](https://download.microsoft.com/download/1/4/7/14777f28-3fde-4958-aebf-bd192a4a7fac/m365_intermediate_certs_20201013.p7b) | cdp1.public-trust.com<br>crl.cnnic.cn<br>crl.entrust.net<br>crl.globalsign.com<br>crl.globalsign.net<br>crl.identrust.com<br>crl.thawte.com<br>crl3.digicert.com<br>crl4.digicert.com<br>s1.symcb.com<br>www.d-trust.net | isrg.trustid.ocsp.identrust.com<br>ocsp.digicert.com<br>ocsp.entrust.net<br>ocsp.globalsign.com<br>ocsp.omniroot.com<br>ocsp.startssl.com<br>ocsp.thawte.com<br>ocsp2.globalsign.com<br>ocspcnnicroot.cnnic.cn<br>root-c3-ca2-2009.ocsp.d-trust.net<br>root-c3-ca2-ev-2009.ocsp.d-trust.net<br>s2.symcb.com | aia.startssl.com<br>apps.identrust.com<br>cacert.omniroot.com<br>www.cnnic.cn |
+| Certificati intermedi pubblicamente attendibili | [Microsoft 365 Intermediate Certificate Bundle (P7B)](https://download.microsoft.com/download/1/4/7/14777f28-3fde-4958-aebf-bd192a4a7fac/m365_intermediate_certs_20201013.p7b) | cdp1.public-trust.com<br>crl.cnnic.cn<br>crl.entrust.net<br>crl.globalsign.com<br>crl.globalsign.net<br>crl.identrust.com<br>crl.thawte.com<br>crl3.digicert.com<br>crl4.digicert.com<br>s1.symcb.com<br>www.d-trust.net | isrg.trustid.ocsp.identrust.com<br>ocsp.digicert.com<br>ocsp.entrust.net<br>ocsp.globalsign.com<br>ocsp.omniroot.com<br>ocsp.startssl.com<br>ocsp.thawte.com<br>ocsp2.globalsign.com<br>ocspcnnicroot.cnnic.cn<br>root-c3-ca2-2009.ocsp.d-trust.net<br>root-c3-ca2-ev-2009.ocsp.d-trust.net<br>s2.symcb.com | aia.startssl.com<br>apps.identrust.com<br>cacert.omniroot.com<br>www.cnnic.cn |
 
-Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori dettagli sui provider di certificati.
+Espandi le sezioni radice e intermedie seguenti per visualizzare ulteriori dettagli sui provider di certificati.
 
-## <a name="microsoft-365-root-certificate-details"></a>**Dettagli certificato radice di Microsoft 365**
+## <a name="microsoft-365-root-certificate-details"></a>**Dettagli del certificato radice di Microsoft 365**
 
 ### <a name="baltimore-cybertrust-root"></a>**Baltimore CyberTrust Root**
 
-| **Oggetto** | CN=Baltimore CyberTrust Root<br>OU=CyberTrust<br>O=Baltimore<br>C=IE |
+| **Oggetto** | CN=Baltimore CyberTrust Root<br>OU=CyberTrust<br>O=Baltimora<br>C=IE |
 | --- | --- |
 | **Numero di serie** | 02:00:00:B9 |
 | **Lunghezza chiave pubblica** | RSA 2048 bit (e 65537) |
 | **Algoritmo di firma** | sha1RSA |
 | **Validità non prima** | 12 maggio 18:46:00 2000 UTC |
 | **Validità non dopo** | 12 maggio 23:59:00 2025 UTC |
-| **Identificatore chiave del soggetto** | e5:9d:59:30:82:47:58:cc:ac:fa:08:54:36:86:7b:3a:b5:04:4d:f0 |
+| **Identificatore chiave dell'oggetto** | e5:9d:59:30:82:47:58:cc:ac:fa:08:54:36:86:7b:3a:b5:04:4d:f0 |
 | **Identificazione personale (SHA-1)** | D4DE20D05E66FC53FE1A50882C78DB2852CAE474 |
 | **Identificazione personale (SHA-256)** | 16AF57A9F676B0AB126095AA5EBADEF22AB31119D644AC95CD4B93DBF3F26AEB |
 | **Pin (SHA-256)** | Y9mvm0exBk1JoQ57f9Vm28jKo5lFm/woKcVxrYxu80o= |
@@ -64,24 +64,24 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 | **Lunghezza chiave pubblica** | RSA 2048 bit (e 65537) |
 | **Algoritmo di firma** | sha1RSA |
 | **Validità non prima** | 16 aprile 07:09:14 UTC |
-| **Validità non dopo** | 16 aprile 07:09:14 UTC |
-| **Identificatore chiave del soggetto** | 65:f2:31:ad:2a:f7:f7:dd:52:96:0a:c7:02:c1:0e:ef:a6:d5:3b:11 |
-| **Identificatore chiave dell'autorità** | keyid:65:f2:31:ad:2a:f7:f7:dd:52:96:0a:c7:02:c1:0e:ef:a6:d5:3b:11 |
+| **Validità non dopo** | 16 aprile 07:09:14 2027 UTC |
+| **Identificatore chiave dell'oggetto** | 65:f2:31:ad:2a:f7:f7:dd:52:96:0a:c7:02:c1:0e:ef:a6:d5:3b:11 |
+| **Identificatore chiave autorità** | keyid:65:f2:31:ad:2a:f7:f7:dd:52:96:0a:c7:02:c1:0e:ef:a6:d5:3b:11 |
 | **Identificazione personale (SHA-1)** | 8BAF4C9B1DF02A92F7DA128EB91BACF498604B6F |
 | **Identificazione personale (SHA-256)** | E28393773DA845A679F2080CC7FB44A3B7A1C3792CB7EB7729FDCB6A8D99AEA7 |
 | **Pin (SHA-256)** | H0IkzshPyZztiB/2/P0+IfjFGcVHqmpd094kcwLOUNE= |
 
-### <a name="digicert-global-root-ca"></a>**Ca radice globale di DigiCert**
+### <a name="digicert-global-root-ca"></a>**Ca radice globale DigiCert**
 
-| **Oggetto** | CN=DigiCert Global Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
+| **Oggetto** | CN=DigiCert Ca radice globale<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
 | **Numero di serie** | 08:3B:E0:56:90:42:46:B1:A1:75:6A:C9:59:91:C7:4A |
 | **Lunghezza chiave pubblica** | RSA 2048 bit (e 65537) |
 | **Algoritmo di firma** | sha1RSA |
-| **Validità non prima** | 10 novembre 00:00:00 UTC |
+| **Validità non prima** | 10 novembre 00:00:00 2006 UTC |
 | **Validità non dopo** | 10 novembre 00:00:00 2031 UTC |
-| **Identificatore chiave del soggetto** | 03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
-| **Identificatore chiave dell'autorità** | keyid:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
+| **Identificatore chiave dell'oggetto** | 03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
+| **Identificatore chiave autorità** | keyid:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
 | **Identificazione personale (SHA-1)** | A8985D3A65E5E5C4B2D7D66D40C6DD2FB19C5436 |
 | **Identificazione personale (SHA-256)** | 4348A0E9444C78CB265E058D5E8944B4D84F9662BD26DB257F8934A443C70161 |
 | **Pin (SHA-256)** | r/mIkG3eEpVdm+u/ko/cwxzOMo1bk4TyHIlByibiA5E= |
@@ -94,12 +94,12 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 | **Numero di serie** | 03:3A:F1:E6:A7:11:A9:A0:BB:28:64:B1:1D:09:FA:E5 |
 | **Lunghezza chiave pubblica** | RSA 2048 bit |
 | **Algoritmo di firma** | sha256RSA |
-| **Validità non prima** | Giovedì 1 agosto 2013 05.00 |
-| **Validità non fino a quando** | Venerdì 15 gennaio 2038 4.00 |
-| **Identificatore chiave del soggetto** | 4E2254201895E6E36E60FFAFAB912ED06178F39 |
-| **Identificatore chiave dell'autorità** | KeyID:4e:22:54:20:18:95:e6:e3:6e:e6:0f:fa:b9:12:ed:06:17:8f:39 |
+| **Validità non prima** | Giovedì 1 agosto 2013 05:00 |
+| **Validità non fino a quando** | Venerdì 15 gennaio 2038 04.00 |
+| **Identificatore chiave dell'oggetto** | 4E2254201895E6E36E60FFAFAB912ED06178F39 |
+| **Identificatore chiave autorità** | KeyID:4e:22:54:20:18:95:e6:e3:6e:e6:0f:fa:fa:b9:12:ed:06:17:8f:39 |
 | **Identificazione personale (SHA-1)** | DF3C24F9BFD666761B268073FE06D1CC8D4F82A4 |
-| **Identificazione personale (SHA-256)** | CB3CCBB76031E5E0138F8DD39A23F9DE47FFC35E43C1144CEA27D46A5AB1CB5F |
+| **Identificazione personale (SHA-256)** | CB3CCBB76031E5E0138F8D39A23F9DE47FFC35E43C1144CEA27D46A5AB1CB5F |
 
 ### <a name="digicert-high-assurance-ev-root-ca"></a>**DigiCert High Assurance EV Root CA**
 
@@ -108,10 +108,10 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 | **Numero di serie** | 02:AC:5C:26:6A:0B:40:9B:8F:0B:79:F2:AE:46:25:77 |
 | **Lunghezza chiave pubblica** | RSA 2048 bit (e 65537) |
 | **Algoritmo di firma** | sha1RSA |
-| **Validità non prima** | 10 novembre 00:00:00 UTC |
+| **Validità non prima** | 10 novembre 00:00:00 2006 UTC |
 | **Validità non dopo** | 10 novembre 00:00:00 2031 UTC |
-| **Identificatore chiave del soggetto** | b1:3e:c3:69:03:f8:bf:47:01:d4:98:26:1a:08:02:ef:63:64:2b:c3 |
-| **Identificatore chiave dell'autorità** | keyid:b1:3e:c3:69:03:f8:bf:47:01:d4:98:26:1a:08:02:ef:63:64:2b:c3 |
+| **Identificatore chiave dell'oggetto** | b1:3e:c3:69:03:f8:bf:47:01:d4:98:26:1a:08:02:ef:63:64:2b:c3 |
+| **Identificatore chiave autorità** | keyid:b1:3e:c3:69:03:f8:bf:47:01:d4:98:26:1a:08:02:ef:63:64:2b:c3 |
 | **Identificazione personale (SHA-1)** | 5FB7EE0633E259DBAD0C4C9AE6D38F1A61C7DC25 |
 | **Identificazione personale (SHA-256)** | 7431E5F4C3C1CE4690774F0B61E05440883BA9A01ED00BA6ABD7806ED3B118CF |
 | **Pin (SHA-256)** | WoiWRyIOVNa9ihaBciRSC7XHjliYS9VwUGOIud4PB18= |
@@ -124,8 +124,8 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 | **Lunghezza chiave pubblica** | RSA 2048 bit (e 65537) |
 | **Algoritmo di firma** | sha256RSA |
 | **Validità non prima** | Nov 05 08:35:58 2009 UTC |
-| **Validità non dopo** | 05 novembre 08:35:58 2029 UTC |
-| **Identificatore chiave del soggetto** | fd:da:14:c4:9f:30:de:21:bd:1e:42:39:fc:ab:63:23:49:e0:f1:84 |
+| **Validità non dopo** | Nov 05 08:35:58 2029 UTC |
+| **Identificatore chiave dell'oggetto** | fd:da:14:c4:9f:30:de:21:bd:1e:42:39:fc:ab:63:23:49:e0:f1:84 |
 | **Identificazione personale (SHA-1)** | 58E8ABB0361533FB80F79B1B6D29D3FF8D5F00F0 |
 | **Identificazione personale (SHA-256)** | 49E7A442ACF0EA6287050054B52564B650E4F49E42E348D6AA38E039E957B1C1 |
 | **Pin (SHA-256)** | 7KDxgUAs56hlKzG00DbfJH46MLf0GlDZHsT5CwBrQ6E= |
@@ -138,24 +138,24 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 | **Numero di serie** | 09:83:F4 |
 | **Lunghezza chiave pubblica** | RSA 2048 bit (e 65537) |
 | **Algoritmo di firma** | sha256RSA |
-| **Validità non prima** | 05 novembre 08:50:46 UTC |
-| **Validità non dopo** | 05 novembre 08:50:46 2029 UTC |
-| **Identificatore chiave del soggetto** | d3:94:8a:4c:62:13:2a:19:2e:cc:af:72:8a:7d:36:d7:9a:1c:dc:67 |
+| **Validità non prima** | Nov 05 08:50:46 2009 UTC |
+| **Validità non dopo** | Nov 05 08:50:46 2029 UTC |
+| **Identificatore chiave dell'oggetto** | d3:94:8a:4c:62:13:2a:19:2e:cc:af:72:8a:7d:36:d7:9a:1c:dc:67 |
 | **Identificazione personale (SHA-1)** | 96C91B0B95B4109842FAD0D82279FE60FAB91683 |
-| **Identificazione personale (SHA-256)** | EEC5496B988CE98625B934092EEEC2908BED0B0F316C2D4730C84EAF1F3D34881 |
+| **Identificazione personale (SHA-256)** | EEC5496B988CE98625B934092EEC2908BED0B0F316C2D4730C84EAF1F3D34881 |
 | **Pin (SHA-256)** | /zQvtsTIvTCkcG9zSJU58Z5uSMwF9GJUZU9mENvFQOk= |
 | **URL CRL** | ldap://directory.d-trust.net/CN=D-TRUST%20Root%20Class%203%20CA%202%20EV%202009,O=D-Trust%20GmbH,C=DE?certificaterevocationlist<br>http://www.d-trust.net/crl/d-trust\_root\_class\_3\_ca\_2\_ev\_2009.crl |
 
-### <a name="dst-root-ca-x3"></a>**CA radice dell'ora legale X3**
+### <a name="dst-root-ca-x3"></a>**Ora legale CA radice X3**
 
 | **Oggetto** | CN=DST Root CA X3<br>O=Digital Signature Trust Co. |
 | --- | --- |
 | **Numero di serie** | 44:AF:B0:80:D6:A3:27:BA:89:30:39:86:2E:F8:40:6B |
 | **Lunghezza chiave pubblica** | RSA 2048 bit (e 65537) |
 | **Algoritmo di firma** | sha1RSA |
-| **Validità non prima** | 30 set 21.12.19 2000 UTC |
-| **Validità non dopo** | 30 set 14:01:15 2021 UTC |
-| **Identificatore chiave del soggetto** | c4:a7:b1:a4:7b:2c:71:fa:db:e1:4b:90:75:ff:c4:15:60:85:89:10 |
+| **Validità non prima** | Set 30 21:12:19 2000 UTC |
+| **Validità non dopo** | Set 30 14:01:15 2021 UTC |
+| **Identificatore chiave dell'oggetto** | c4:a7:b1:a4:7b:2c:71:fa:db:e1:4b:90:75:ff:c4:15:60:85:89:10 |
 | **Identificazione personale (SHA-1)** | DAC9024F54D8F6DF94935FB1732638CA6AD77C13 |
 | **Identificazione personale (SHA-256)** | 0687260331A72403D909F105E69BCF0D32E1BD2493FFC6D9206D11BCD6770739 |
 | **Pin (SHA-256)** | Vjs8r4z+80wjNcr1YKepWQboSIRi63WsWXhIMN+eWys= |
@@ -167,42 +167,42 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 | **Numero di serie** | 4A:53:8C:28 |
 | **Lunghezza chiave pubblica** | RSA 2048 bit (e 65537) |
 | **Algoritmo di firma** | sha256RSA |
-| **Validità non prima** | 07 luglio 17:25:54 UTC |
-| **Validità non dopo** | Dic 07 17:55:54 2030 UTC |
-| **Identificatore chiave del soggetto** | 6a:72:26:7a:d0:1e:ef:7d:e7:3b:69:51:d4:6c:8d:9f:90:12:66:ab |
+| **Validità non prima** | Lug 07 17:25:54 2009 UTC |
+| **Validità non dopo** | 07 dicembre 17:55:54 2030 UTC |
+| **Identificatore chiave dell'oggetto** | 6a:72:26:7a:d0:1e:ef:7d:e7:3b:69:51:d4:6c:8d:9f:90:12:66:ab |
 | **Identificazione personale (SHA-1)** | 8CF427FD790C3AD166068DE81E57EFBB932272D4 |
 | **Identificazione personale (SHA-256)** | 43DF5774B03E7FEF5FE40D931A7BEDF1BB2E6B42738C4E6D3841103D3AA7F339 |
 | **Pin (SHA-256)** | du6FkDdMcVQ3u8prumAo6t3i3G27uMP2EOhR8R0at/U= |
 
 ### <a name="entrustnet-certification-authority-2048"></a>**Entrust.net Certification Authority (2048)**
 
-| **Oggetto** | CN=Entrust.net Certification Authority (2048)<br>OU=(c) 1999 Entrust.net Limited<br>OU=www.entrust.net/CPS \_ 2048 incorp. per rif. (limit s liab.)<br>O=Entrust.net |
+| **Oggetto** | CN=Entrust.net Certification Authority (2048)<br>OU=(c) 1999 Entrust.net Limited<br>OU=www.entrust.net/CPS \_ 2048 incorp. per rif. (limite s liab.)<br>O=Entrust.net |
 | --- | --- |
 | **Numero di serie** | 38:63:DE:F8 |
 | **Lunghezza chiave pubblica** | RSA 2048 bit (e 65537) |
 | **Algoritmo di firma** | sha1RSA |
-| **Validità non prima** | Dic 24 17:50:51 1999 UTC |
-| **Validità non dopo** | 24 luglio 14:15:12 2029 UTC |
-| **Identificatore chiave del soggetto** | 55:e4:81:d1:11:80:be:d8:89:b9:08:a3:31:f9:a1:24:09:16:b9:70 |
+| **Validità non prima** | 24 dicembre 17:50:51 1999 UTC |
+| **Validità non dopo** | 24 luglio 14:15:12 UTC |
+| **Identificatore chiave dell'oggetto** | 55:e4:81:d1:11:80:be:d8:89:b9:08:a3:31:f9:a1:24:09:16:b9:70 |
 | **Identificazione personale (SHA-1)** | 503006091D97D4F5AE39F7CBE7927D7D652D3431 |
 | **Identificazione personale (SHA-256)** | 6DC47172E01CBCB0BF62580D895FE2B8AC9AD4F873801E0C10B9C837D21EB177 |
 | **Pin (SHA-256)** | HqPF5D7WbC2imDpCpKebHpBnhs6fG1hiFBmgBGOofTg= |
 
-### <a name="globalsign-root-ca---r1"></a>**Ca radice GlobalSign - R1**
+### <a name="globalsign-root-ca---r1"></a>**GlobalSign Root CA - R1**
 
-| **Oggetto** | CN=GlobalSign Root CA<br>OU=Root CA<br>O=GlobalSign nv-sa<br>C=BE |
+| **Oggetto** | CN=GlobalSign Ca radice<br>OU=Ca radice<br>O=GlobalSign nv-sa<br>C=BE |
 | --- | --- |
 | **Numero di serie** | 04:00:00:00:00:01:15:4B:5A:C3:94 |
 | **Lunghezza chiave pubblica** | RSA 2048 bit (e 65537) |
 | **Algoritmo di firma** | sha1RSA |
 | **Validità non prima** | Set 01 12:00:00 1998 UTC |
 | **Validità non dopo** | 28 gennaio 12:00:00 2028 UTC |
-| **Identificatore chiave del soggetto** | 60:7b:66:1a:45:0d:97:ca:89:50:2f:7d:04:cd:34:a8:ff:fc:fd:4b |
+| **Identificatore chiave dell'oggetto** | 60:7b:66:1a:45:0d:97:ca:89:50:2f:7d:04:cd:34:a8:ff:fc:fd:4b |
 | **Identificazione personale (SHA-1)** | B1BC968BD4F49D622AA89A81F2150152A41D829C |
 | **Identificazione personale (SHA-256)** | EBD41040E4BB3EC742C9E381D31EF2A41A48B6685C96E7CEF3C1DF6CD4331C99 |
 | **Pin (SHA-256)** | K87oWBWM9UZfyddvDfoxL+8lpNyoUB2ptGtn0fv6G2Q= |
 
-### <a name="globalsign-root-ca---r3"></a>**Ca radice GlobalSign - R3**
+### <a name="globalsign-root-ca---r3"></a>**GlobalSign Root CA - R3**
 
 | **Oggetto** | CN=GlobalSign<br>O=GlobalSign<br>OU=GlobalSign Root CA - R3 |
 | --- | --- |
@@ -210,10 +210,10 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 | **Numero di serie** | 04:00:00:00:00:01:21:58:53:08:A2 |
 | **Lunghezza chiave pubblica** | RSA 2048 bit |
 | **Algoritmo di firma** | sha256RSA |
-| **Validità non prima** | Mercoledì 18 marzo 2009 3.00 |
-| **Validità non fino a quando** | Domenica 18 marzo 2029 3.00 |
-| **Identificatore chiave del soggetto** | 8FF04B7FA82E4524AE4D50FA639A8BDEE2DD1BBC |
-| **Identificatore chiave dell'autorità** | KeyID:8f:f0:4b:7f:a8:2e:45:24:ae:4d:50:fa:63:9a:8b:de:e2:dd:1b:bc |
+| **Validità non prima** | Mercoledì 18 marzo 2009 3:00 |
+| **Validità non fino a quando** | Domenica 18 marzo 2029 3:00 |
+| **Identificatore chiave dell'oggetto** | 8FF04B7FA82E4524AE4D50FA639A8BDEE2DD1BBC |
+| **Identificatore chiave autorità** | KeyID:8f:f0:4b:7f:a8:2e:45:24:ae:4d:50:fa:63:9a:8b:de:e2:dd:1b:bc |
 | **Identificazione personale (SHA-1)** | D69B561148F01C77C54578C10926DF5B856976AD |
 | **Identificazione personale (SHA-256)** | CBB522D7B7F127AD6A0113865BDF1CD4102E7D0759AF635A7CF4720DC963C53B |
 
@@ -224,28 +224,28 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 | **Numero di serie** | 60:01:97:B7:46:A7:EA:B4:B4:9A:D6:4B:2F:F7:90:FB |
 | **Lunghezza chiave pubblica** | RSA 2048 bit (e 65537) |
 | **Algoritmo di firma** | sha256RSA |
-| **Validità non prima** | Apr 02 00:00:00 2008 UTC |
+| **Validità non prima** | 02 aprile 00:00:00 2008 UTC |
 | **Validità non dopo** | Dic 01 23:59:59 2037 UTC |
-| **Identificatore chiave del soggetto** | ad:6c:aa:94:60:9c:ed:e4:ff:fa:3e:0a:74:2b:63:03:f7:b6:59:bf |
+| **Identificatore chiave dell'oggetto** | ad:6c:aa:94:60:9c:ed:e4:ff:fa:3e:0a:74:2b:63:03:f7:b6:59:bf |
 | **Identificazione personale (SHA-1)** | F18B538D1BE903B6A6F056435B171589CAF36BF2 |
 | **Identificazione personale (SHA-256)** | 4B03F45807AD70F21BFC2CAE71C9FDE4604C064CF5FFB686BAE5DBAAD7FDD34C |
 | **Pin (SHA-256)** | GQbGEk27Q4V40A4GbVBUxsN/D6YCjAVUXgmU7drshik= |
 
-### <a name="verisign-class-3-public-primary-certification-authority---g5"></a>**VeriSign Class 3 Public Primary Certification Authority - G5**
+### <a name="verisign-class-3-public-primary-certification-authority---g5"></a>**VeriSign Classe 3 Autorità di certificazione principale pubblica - G5**
 
-| **Oggetto** | CN=VeriSign Class 3 Public Primary Certification Authority - G5<br>OU= &quot; (c) 2006 VeriSign, Inc. - Solo per uso autorizzato&quot;<br>OU=VeriSign Trust Network<br>O= &quot; VeriSign, Inc.&quot;<br>C=US |
+| **Oggetto** | CN=VeriSign Classe 3 Autorità di certificazione principale pubblica - G5<br>OU= &quot; (c) 2006 VeriSign, Inc. - Solo per uso autorizzato&quot;<br>OU=VeriSign Trust Network<br>O= &quot; VeriSign, Inc.&quot;<br>C=US |
 | --- | --- |
 | **Numero di serie** | 18:DA:D1:9E:26:7D:E8:BB:4A:21:58:CD:CC:6B:3B:4A |
 | **Lunghezza chiave pubblica** | RSA 2048 bit (e 65537) |
 | **Algoritmo di firma** | sha1RSA |
-| **Validità non prima** | 8 novembre 08:00:00 2006 UTC |
-| **Validità non dopo** | 16 luglio 23:59:59 UTC |
-| **Identificatore chiave del soggetto** | 7f:d3:65:a7:c2:dd:ec:bb:f0:30:09:f3:43:39:fa:02:af:33:31:33 |
+| **Validità non prima** | Nov 08 00:00:00 2006 UTC |
+| **Validità non dopo** | 16 luglio 23:59:59 2036 UTC |
+| **Identificatore chiave dell'oggetto** | 7f:d3:65:a7:c2:dd:ec:bb:f0:30:09:f3:43:39:fa:02:af:33:31:33 |
 | **Identificazione personale (SHA-1)** | 4EB6D578499B1CCF5F581EAD56BE3D9B6744A5E5 |
-| **Identificazione personale (SHA-256)** | 9ACFAB7E43C8D880D06B262A94DEEEEE4B4659989C3D0CAF19BAF6405E41AB7DF |
+| **Identificazione personale (SHA-256)** | 9ACFAB7E43C8D880D06B262A94DEEEE4B4659989C3D0CAF19BAF6405E41AB7DF |
 | **Pin (SHA-256)** | JbQbUG5JMJUoI6brnx0x3vZF6jilxsapbXGVfjhN8Fg= |
 
-## <a name="microsoft-365-intermediate-certificate-details"></a>**Dettagli sui certificati intermedi di Microsoft 365**
+## <a name="microsoft-365-intermediate-certificate-details"></a>**Microsoft 365 Intermediate Certificate Details**
 
 ### <a name="cnnic-sha256-ssl"></a>**CNNIC SHA256 SSL**
 
@@ -255,10 +255,10 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 | **Numero di serie** | 49:33:00:7C |
 | **Lunghezza chiave pubblica** | RSA 2048 bit (e 65537) |
 | **Algoritmo di firma** | sha256RSA |
-| **Validità non prima** | Dic 18 12:32:18 2014 UTC |
-| **Validità non dopo** | Dic 18 12:32:18 2024 UTC |
-| **Identificatore chiave del soggetto** | b7:d1:59:8b:8c:0d:06:28:47:23:00:3a:36:04:a5:ee:38:76:53:3c |
-| **Identificatore chiave dell'autorità** | keyid:65:f2:31:ad:2a:f7:f7:dd:52:96:0a:c7:02:c1:0e:ef:a6:d5:3b:11 |
+| **Validità non prima** | 18 dicembre 12:32:18 UTC |
+| **Validità non dopo** | 18 dicembre 12:32:18 2024 UTC |
+| **Identificatore chiave dell'oggetto** | b7:d1:59:8b:8c:0d:06:28:47:23:00:3a:36:04:a5:ee:38:76:53:3c |
+| **Identificatore chiave autorità** | keyid:65:f2:31:ad:2a:f7:f7:dd:52:96:0a:c7:02:c1:0e:ef:a6:d5:3b:11 |
 | **Identificazione personale (SHA-1)** | FC844648FC708433921BE88B18C48787A3E2813E |
 | **Identificazione personale (SHA-256)** | FA8B9F99DBB94E7B772AA9190846E777047C15C7A3BF4A1AF9C0CA984A689511 |
 | **Pin (SHA-256)** | dKZRcLDh7hBNZTmTIHOGJ6C2Om/ITjUCPkOnLTnrZXk= |
@@ -275,10 +275,10 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 | **Numero di serie** | 09:90:63 |
 | **Lunghezza chiave pubblica** | RSA 2048 bit (e 65537) |
 | **Algoritmo di firma** | sha256RSA |
-| **Validità non prima** | 12 novembre 12:46:55 UTC |
-| **Validità non dopo** | 05 novembre 08:35:58 2029 UTC |
-| **Identificatore chiave del soggetto** | 50:19:32:94:9a:c4:b5:04:4d:56:d0:c0:83:21:d5:35:55:b0:b1:7a |
-| **Identificatore chiave dell'autorità** | keyid:fd:da:14:c4:9f:30:de:21:bd:1e:42:39:fc:ab:63:23:49:e0:f1:84 |
+| **Validità non prima** | 12 novembre 12:46:55 2009 UTC |
+| **Validità non dopo** | Nov 05 08:35:58 2029 UTC |
+| **Identificatore chiave dell'oggetto** | 50:19:32:94:9a:c4:b5:04:4d:56:d0:c0:83:21:d5:35:55:b0:b1:7a |
+| **Identificatore chiave autorità** | keyid:fd:da:14:c4:9f:30:de:21:bd:1e:42:39:fc:ab:63:23:49:e0:f1:84 |
 | **Identificazione personale (SHA-1)** | 2FC5DE6528CDBE50A14C382FC1DE524FAABF95FC |
 | **Identificazione personale (SHA-256)** | 6AC159B4C2BC8E729F3B84642EF1286BCC80D775FE278C740ADA468D59439025 |
 | **Pin (SHA-256)** | 9w0QP9HzLXkfs+4zENaUFq2XKcQON1oyksoJ+Gg2AZE= |
@@ -294,10 +294,10 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 | **Numero di serie** | 09:90:64 |
 | **Lunghezza chiave pubblica** | RSA 2048 bit (e 65537) |
 | **Algoritmo di firma** | sha256RSA |
-| **Validità non prima** | 12 novembre 12.52.43 UTC |
-| **Validità non dopo** | 05 novembre 08:50:46 2029 UTC |
-| **Identificatore chiave del soggetto** | ac:ed:a5:9d:7a:a2:b6:43:f1:18:8a:25:6a:6c:b1:cc:a8:f2:5a:d4 |
-| **Identificatore chiave dell'autorità** | keyid:d3:94:8a:4c:62:13:2a:19:2e:cc:af:72:8a:7d:36:d7:9a:1c:dc:67 |
+| **Validità non prima** | 12 novembre 12:52:43 2009 UTC |
+| **Validità non dopo** | Nov 05 08:50:46 2029 UTC |
+| **Identificatore chiave dell'oggetto** | ac:ed:a5:9d:7a:a2:b6:43:f1:18:8a:25:6a:6c:b1:cc:a8:f2:5a:d4 |
+| **Identificatore chiave autorità** | keyid:d3:94:8a:4c:62:13:2a:19:2e:cc:af:72:8a:7d:36:d7:9a:1c:dc:67 |
 | **Identificazione personale (SHA-1)** | 1069423D308D0FC54575059638560FC7556E32B3 |
 | **Identificazione personale (SHA-256)** | B0935DC04B4E60C0C42DEF7EC57A1B1D8F958D17988E71CC80A8CF5E635BA5B4 |
 | **Pin (SHA-256)** | lv5BNZ5aWd27ooolULDolFTwIaaWjHvG4yyH3rss4X8= |
@@ -313,11 +313,11 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 | **Lunghezza chiave pubblica** | RSA 2048 bit |
 | **Algoritmo di firma** | sha256RSA |
 | **Validità non prima** | Mercoledì 4 marzo 2020 04.04 |
-| **Validità non fino a quando** | Lunedì 4 marzo 2030 4.04 |
-| **Identificatore chiave del soggetto** | 06BDA69B60795031BED5A9024AA0D095538B2F34 |
-| **Identificatore chiave dell'autorità** | KeyID:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
+| **Validità non fino a quando** | Lunedì 4 marzo 2030 04.04 |
+| **Identificatore chiave dell'oggetto** | 06BDA69B60795031BED5A9024AA0D095538B2F34 |
+| **Identificatore chiave autorità** | KeyID:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
 | **Identificazione personale (SHA-1)** | 4D1FA5D1FB1AC3917C08E43F65015E6AEA571179 |
-| **Identificazione personale (SHA-256)** | CB57B3FF2040CB269497625BC90FA9D7B4ED4938C6F60F42F69AFDF508AC2993 |
+| **Identificazione personale (SHA-256)** | CB57B3FF2040CB269497625BC90FA9D7B4ED4938C60F60F42F69AFDF508AC2993 |
 | **URL CRL** | http://crl.digicert.cn/DigiCertGlobalRootCA.crl |
 | **URL OCSP** | http://ocsp.digicert.cn |
 
@@ -325,16 +325,16 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 
 | **Oggetto** | CN=DigiCert Cloud Services CA-1<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
-| **Autorità di certificazione** | CN=DigiCert Global Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
+| **Autorità di certificazione** | CN=DigiCert Ca radice globale<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | **Numero di serie** | 01:9E:C1:C6:BD:3F:59:7B:B2:0C:33:38:E5:51:D8:77 |
 | **Lunghezza chiave pubblica** | RSA 2048 bit |
 | **Algoritmo di firma** | sha256RSA |
-| **Validità non prima** | 4 agosto 2015 12:00 |
+| **Validità non prima** | 4 agosto 2015 12.00 |
 | **Validità non fino a quando** | 4 agosto 2030 12.00 |
-| **Identificatore chiave del soggetto** | dd:51:d0:a2:31:73:a9:73:ae:8f:b4:01:7e:5d:8c:57:cb:9f:f0:f7 |
-| **Identificatore chiave dell'autorità** | 03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
+| **Identificatore chiave dell'oggetto** | dd:51:d0:a2:31:73:a9:73:ae:8f:b4:01:7e:5d:8c:57:cb:9f:f0:f7 |
+| **Identificatore chiave autorità** | 03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
 | **Identificazione personale (SHA-1)** | 81B68D6CD2f221F8F534E677523BB236BBA1DC56 |
-| **Identificazione personale (SHA-256)** | 2F6889961A7CA7067E8BA103C2CF9B9A924F8CA293F11178E23A1978D2F133D3 |
+| **Identificazione personale (SHA-256)** | 2F6889961A7CA7067E8BA103C2CF9B9A924F8CA293F11178E23A1978D2F1333D3 |
 | **Pin (SHA-256)** | UgpUVparimk8QCjtWQaUQ7EGrtrykc/L8N66EhFY3VE= |
 | **URL CRL** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl<br>http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
 | **URL OCSP** | http://ocsp.digicert.com |
@@ -343,14 +343,14 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 
 | **Oggetto** | CN=DigiCert Cloud Services CA-1<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
-| **Autorità di certificazione** | CN=DigiCert Global Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
+| **Autorità di certificazione** | CN=DigiCert Ca radice globale<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | **Numero di serie** | 0F:17:1A:48:C6:F2:23:80:92:18:CD:2E:D6:DD:C0:E8 |
 | **Lunghezza chiave pubblica** | RSA 2048 bit |
 | **Algoritmo di firma** | sha256RSA |
 | **Validità non prima** | 25 settembre 2020 00:00 |
 | **Validità non dopo** | 24 settembre 2030 23.59 |
-| **Identificatore chiave del soggetto** | dd:51:d0:a2:31:73:a9:73:ae:8f:b4:01:7e:5d:8c:57:cb:9f:f0:f7 |
-| **Identificatore chiave dell'autorità** | 03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
+| **Identificatore chiave dell'oggetto** | dd:51:d0:a2:31:73:a9:73:ae:8f:b4:01:7e:5d:8c:57:cb:9f:f0:f7 |
+| **Identificatore chiave autorità** | 03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
 | **Identificazione personale (SHA-1)** | B3F6B64A07BB9611F4717407841F564FB991F29 |
 | **Identificazione personale (SHA-256)** | 5F88694615E4C61686E106B84C3338C6720C535F60D36F61282ED15E1977DD44 | -
 | **Pin (SHA-256)** | UgpUVparimk8QCjtWQaUQ7EGrtrykc/L8N66EhFY3VE= |
@@ -365,11 +365,11 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 | **Numero di serie** | 0C:79:A9:44:B0:8C:11:95:20:92:61:5F:E2:6B:1D:83 |
 | **Lunghezza chiave pubblica** | RSA 2048 bit |
 | **Algoritmo di firma** | sha256RSA |
-| **Validità non prima** | Martedì 22 ottobre 2013 05.00 |
+| **Validità non prima** | Martedì 22 ottobre 2013 05:00 |
 | **Validità non fino a quando** | Domenica 22 ottobre 2028 05.00 |
-| **Identificatore chiave del soggetto** | 3DD350A5D6A0ADEEF34A600A65D321D4F8F8D60F |
-| **Identificatore chiave dell'autorità** | KeyID:b1:3e:c3:69:03:f8:bf:47:01:d4:98:26:1a:08:02:ef:63:64:2b:c3 |
-| **Identificazione personale (SHA-1)** | 7E2F3A4F8FE8FA8A5730AECA029696637E986F3F |
+| **Identificatore chiave dell'oggetto** | 3DD350A5D6A0ADEEF34A600A65D321D4F8F8D60F |
+| **Identificatore chiave autorità** | KeyID:b1:3e:c3:69:03:f8:bf:47:01:d4:98:26:1a:08:02:ef:63:64:2b:c3 |
+| **Identificazione personale (SHA-1)** | 7E2F3A4F8FE8FA8A5730AECA02969637E986F3F |
 | **Identificazione personale (SHA-256)** | 403E062A2653059113285BAF80A0D4AE422C848C9F78FAD01FC94BC5B87FEF1A |
 | **URL CRL** | http://crl4.digicert.com/DigiCertHighAssuranceEVRootCA.crl |
 | **URL OCSP** | http://ocsp.digicert.com |
@@ -383,9 +383,9 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 | **Lunghezza chiave pubblica** | RSA 2048 bit (e 65537) |
 | **Algoritmo di firma** | sha256RSA |
 | **Validità non prima** | Ott 22 12:00:00 2013 UTC |
-| **Validità non dopo** | Ott 22 12:00:00 2028 UTC |
-| **Identificatore chiave del soggetto** | 51:68:ff:90:af:02:07:75:3c:cc:d9:65:64:62:a2:12:b8:59:72:3b |
-| **Identificatore chiave dell'autorità** | keyid:b1:3e:c3:69:03:f8:bf:47:01:d4:98:26:1a:08:02:ef:63:64:2b:c3 |
+| **Validità non dopo** | 22 ottobre 12:00:00 2028 UTC |
+| **Identificatore chiave dell'oggetto** | 51:68:ff:90:af:02:07:75:3c:cc:d9:65:64:62:a2:12:b8:59:72:3b |
+| **Identificatore chiave autorità** | keyid:b1:3e:c3:69:03:f8:bf:47:01:d4:98:26:1a:08:02:ef:63:64:2b:c3 |
 | **Identificazione personale (SHA-1)** | A031C46782E6E6C662C2C87C76DA9AA62CCABD8E |
 | **Identificazione personale (SHA-256)** | 19400BE5B7A31FB733917700789D2F0A2471C0C9D506C0E504C06C16D7CB17C0 |
 | **Pin (SHA-256)** | k2v657xBsOVe1PQRwOsHsw3bsGT2VzIqz5K+59sNQws= |
@@ -396,14 +396,14 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 
 | **Oggetto** | CN=DigiCert SHA2 Secure Server CA<br>O=DigiCert Inc<br>C=US |
 | --- | --- |
-| **Autorità di certificazione** | CN=DigiCert Global Root CA<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
+| **Autorità di certificazione** | CN=DigiCert Ca radice globale<br>OU=www.digicert.com<br>O=DigiCert Inc<br>C=US |
 | **Numero di serie** | 01:FD:A3:EB:6E:CA:75:C8:88:43:8B:72:4B:CF:BC:91 |
 | **Lunghezza chiave pubblica** | RSA 2048 bit (e 65537) |
 | **Algoritmo di firma** | sha256RSA |
 | **Validità non prima** | Mar 08 12:00:00 2013 UTC |
 | **Validità non dopo** | Mar 08 12:00:00 2023 UTC |
-| **Identificatore chiave del soggetto** | 0f:80:61:1c:82:31:61:d5:2f:28:e7:8d:46:38:b4:2c:e1:c6:d9:e2 |
-| **Identificatore chiave dell'autorità** | keyid:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
+| **Identificatore chiave dell'oggetto** | 0f:80:61:1c:82:31:61:d5:2f:28:e7:8d:46:38:b4:2c:e1:c6:d9:e2 |
+| **Identificatore chiave autorità** | keyid:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
 | **Identificazione personale (SHA-1)** | 1FB86B1168EC743154062E8C9CC5B171A4B7CCB4 |
 | **Identificazione personale (SHA-256)** | 154C433C491929C5EF686E838E323664A00E6A0D822CCC958FB4DAB03E49A08F |
 | **Pin (SHA-256)** | 5kJvNEMw0KjrCAu7eXY5HZdvyCS13BbA0VJG1RSP91w= |
@@ -418,10 +418,10 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 | **Numero di serie** | 02:74:2E:AA:17:CA:8E:21:C7:17:BB:1F:FC:FD:0C:A0 |
 | **Lunghezza chiave pubblica** | RSA 2048 bit |
 | **Algoritmo di firma** | sha256RSA |
-| **Validità non prima** | Martedì 22 settembre 2020 17:00 |
+| **Validità non prima** | Martedì 22 settembre 2020 17.00 |
 | **Validità non fino a quando** | Domenica 22 settembre 2030 16.59 |
-| **Identificatore chiave del soggetto** | 0F80611C823161D52F28E78D4638B42CE1C6D9E2 |
-| **Identificatore chiave dell'autorità** | KeyID:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
+| **Identificatore chiave dell'oggetto** | 0F80611C823161D52F28E78D4638B42CE1C6D9E2 |
+| **Identificatore chiave autorità** | KeyID:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
 | **Identificazione personale (SHA-1)** | 626D44E704D1CEABE3BF0D53397464AC8080142C |
 | **Identificazione personale (SHA-256)** | C1AD7778796D20BCA65C889A2655021156528BB62FF5FA43E1B8E5A83E3D2EAA |
 | **URL CRL** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
@@ -435,10 +435,10 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 | **Numero di serie** | 0A:35:08:D5:5C:29:2B:01:7D:F8:AD:65:C0:0F:F7:E4 |
 | **Lunghezza chiave pubblica** | RSA 2048 bit |
 | **Algoritmo di firma** | sha256RSA |
-| **Validità non prima** | Mercoledì 23 settembre 2020 17:00 |
+| **Validità non prima** | Mercoledì 23 settembre 2020 17.00 |
 | **Validità non fino a quando** | Lunedì 23 settembre 2030 16.59 |
-| **Identificatore chiave del soggetto** | B76BA2EAA8AA848C79EAB4DA0F98B2C59576B9F4 |
-| **Identificatore chiave dell'autorità** | KeyID:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
+| **Identificatore chiave dell'oggetto** | B76BA2EAA8A848C79EAB4DA0F98B2C59576B9F4 |
+| **Identificatore chiave autorità** | KeyID:03:de:50:35:56:d1:4c:bb:66:f0:a3:e2:1b:1b:c3:97:b2:3d:d1:55 |
 | **Identificazione personale (SHA-1)** | 6938FD4D98BAB03FAADB97B34396831E3780AEA1 |
 | **Identificazione personale (SHA-256)** | 25768713D3B459F9382D2A594F85F34709FD2A8930731542A4146FFB246BEC69 |
 | **URL CRL** | http://crl3.digicert.com/DigiCertGlobalRootCA.crl http://crl4.digicert.com/DigiCertGlobalRootCA.crl |
@@ -448,14 +448,14 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 
 | **Oggetto** | CN=Entrust Certification Authority - L1C<br>OU= &quot; (c) 2009 Entrust, Inc.&quot;<br>OU=www.entrust.net/rpa è incorporato per riferimento<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
-| **Autorità di certificazione** | CN=Entrust.net Certification Authority (2048)<br>OU=(c) 1999 Entrust.net Limited<br>OU=www.entrust.net/CPS \_ 2048 incorp. per rif. (limits liab.)<br>O=Entrust.net |
+| **Autorità di certificazione** | CN=Entrust.net Certification Authority (2048)<br>OU=(c) 1999 Entrust.net Limited<br>OU=www.entrust.net/CPS \_ 2048 incorp. by ref. (limits liab.)<br>O=Entrust.net |
 | **Numero di serie** | 4C:0E:8C:39 |
 | **Lunghezza chiave pubblica** | RSA 2048 bit (e 65537) |
 | **Algoritmo di firma** | sha1RSA |
-| **Validità non prima** | 11 novembre 15:40:40 UTC |
+| **Validità non prima** | 11 novembre 15:40:40 2011 UTC |
 | **Validità non dopo** | 12 novembre 02:51:17 2021 UTC |
-| **Identificatore chiave del soggetto** | 1e:f1:ab:89:06:f8:49:0f:01:33:77:ee:14:7a:ee:19:7c:93:28:4d |
-| **Identificatore chiave dell'autorità** | keyid:55:e4:81:d1:11:80:be:d8:89:b9:08:a3:31:f9:a1:24:09:16:b9:70 |
+| **Identificatore chiave dell'oggetto** | 1e:f1:ab:89:06:f8:49:0f:01:33:77:ee:14:7a:ee:19:7c:93:28:4d |
+| **Identificatore chiave autorità** | keyid:55:e4:81:d1:11:80:be:d8:89:b9:08:a3:31:f9:a1:24:09:16:b9:70 |
 | **Identificazione personale (SHA-1)** | C53E73073F93CE7895DE7484126BC303DAB9E657 |
 | **Identificazione personale (SHA-256)** | 0EE4DAF71A85D842D23F4910FD4C909B7271861931F1D5FEAC868225F52700E2 |
 | **Pin (SHA-256)** | VFv5NemtodoRftw8KsvFb8AoCWwOJL6bOJS+Ui0bQ94= |
@@ -467,31 +467,31 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 | **Oggetto** | CN=Entrust Certification Authority - L1K<br>OU= &quot; (c) 2012 Entrust, Inc. - solo per uso autorizzato&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
 | --- | --- |
 | **Autorità di certificazione** | CN=Entrust Root Certification Authority - G2<br>OU= &quot; (c) 2009 Entrust, Inc. - solo per uso autorizzato&quot;<br>OU=See www.entrust.net/legal-terms<br>O= &quot; Entrust, Inc.&quot;<br>C=US |
-| **Numero di serie** | 0E:E9:4C:C3:00:00:00:00:51:D3:77:85 |
+| **Numero di serie** | 0E:E9:4C:C3:00:00:00:00:00:51:D3:77:85 |
 | **Lunghezza chiave pubblica** | RSA 2048 bit (e 65537) |
 | **Algoritmo di firma** | sha256RSA |
-| **Validità non prima** | Ott 05 19:13:56 2015 UTC |
-| **Validità non dopo** | Dic 05 19:43:56 2030 UTC |
-| **Identificatore chiave del soggetto** | 82:a2:70:74:dd:bc:53:3f:cf:7b:d4:f7:cd:7f:a7:60:c6:0a:4c:bf |
-| **Identificatore chiave dell'autorità** | keyid:6a:72:26:7a:d0:1e:ef:7d:e7:3b:69:51:d4:6c:8d:9f:90:12:66:ab |
+| **Validità non prima** | 05 ottobre 19:13:56 UTC |
+| **Validità non dopo** | 05 dicembre 19:43:56 2030 UTC |
+| **Identificatore chiave dell'oggetto** | 82:a2:70:74:dd:bc:53:3f:cf:7b:d4:f7:cd:7f:a7:60:c6:0a:4c:bf |
+| **Identificatore chiave autorità** | keyid:6a:72:26:7a:d0:1e:ef:7d:e7:3b:69:51:d4:6c:8d:9f:90:12:66:ab |
 | **Identificazione personale (SHA-1)** | F21C12F46CDB6B2E16F09F9419CDFF328437B2D7 |
 | **Identificazione personale (SHA-256)** | 13EFB39A2F6654E8C67BD04F4C6D4C90CD6CAB5091BCEDC73787F6B77D3D3FE7 |
 | **Pin (SHA-256)** | 980Ionqp3wkYtN9SZVgMzuWQzJta1nfxNPwTem1X0uc= |
 | **URL CRL** | http://crl.entrust.net/g2ca.crl |
 | **URL OCSP** | http://ocsp.entrust.net |
 
-### <a name="globalsign-extended-validation-ca---sha256---g2"></a>**Ca di convalida estesa GlobalSign - SHA256 - G2**
+### <a name="globalsign-extended-validation-ca---sha256---g2"></a>**GlobalSign Extended Validation CA - SHA256 - G2**
 
 | **Oggetto** | CN=GlobalSign Extended Validation CA - SHA256 - G2<br>O=GlobalSign nv-sa<br>C=BE |
 | --- | --- |
-| **Autorità di certificazione** | CN=GlobalSign<br>O=GlobalSign<br>OU=GlobalSign Root CA - R2 |
+| **Autorità di certificazione** | CN=GlobalSign<br>O=GlobalSign<br>OU=GlobalSign Ca radice - R2 |
 | **Numero di serie** | 04:00:00:00:00:01:44:4E:F0:4A:55 |
 | **Lunghezza chiave pubblica** | RSA 2048 bit (e 65537) |
 | **Algoritmo di firma** | sha256RSA |
-| **Validità non prima** | 20 febbraio 10:00:00 2014 UTC |
-| **Validità non dopo** | Dic 15 08:00:00 2021 UTC |
-| **Identificatore chiave del soggetto** | da:40:77:43:65:1c:f8:fe:a7:e3:f4:64:82:3e:4d:43:13:22:31:02 |
-| **Identificatore chiave dell'autorità** | keyid:9b:e2:07:57:67:1c:1e:c0:6a:06:de:59:b4:9a:2d:df:dc:19:86:2e |
+| **Validità non prima** | Feb 20 10:00:00 2014 UTC |
+| **Validità non dopo** | 15 dicembre 08:00:00 2021 UTC |
+| **Identificatore chiave dell'oggetto** | da:40:77:43:65:1c:f8:fe:a7:e3:f4:64:82:3e:4d:43:13:22:31:02 |
+| **Identificatore chiave autorità** | keyid:9b:e2:07:57:67:1c:1e:c0:6a:06:de:59:b4:9a:2d:df:dc:19:86:2e |
 | **Identificazione personale (SHA-1)** | 65BE102BE26928650E0EF54DC8F4F15AF5F98E8B |
 | **Identificazione personale (SHA-256)** | 24F91C0705A0A5338641B365FB0D9D9709B56297CFF1857E73C02C1636D486AA |
 | **Pin (SHA-256)** | LvRiGEjRqfzurezaWuj8Wie2gyHMrW5Q06LspMnox7A= |
@@ -506,10 +506,10 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 | **Numero di serie** | 48:A4:02:DD:27:92:0D:A2:08:34:9D:D1:99:7B |
 | **Lunghezza chiave pubblica** | RSA 2048 bit (e 65537) |
 | **Algoritmo di firma** | sha256RSA |
-| **Validità non prima** | 21 settembre 00:00:00 UTC |
-| **Validità non dopo** | 21 settembre 00:00:00 2026 UTC |
-| **Identificatore chiave del soggetto** | dd:b3:e7:6d:a8:2e:e8:c5:4e:6e:cf:74:e6:75:3c:94:15:ce:e8:1d |
-| **Identificatore chiave dell'autorità** | keyid:8f:f0:4b:7f:a8:2e:45:24:ae:4d:50:fa:63:9a:8b:de:e2:dd:1b:bc |
+| **Validità non prima** | Set 21 00:00:00 2016 UTC |
+| **Validità non dopo** | Set 21 00:00:00 2026 UTC |
+| **Identificatore chiave dell'oggetto** | dd:b3:e7:6d:a8:2e:e8:c5:4e:6e:cf:74:e6:75:3c:94:15:ce:e8:1d |
+| **Identificatore chiave autorità** | keyid:8f:f0:4b:7f:a8:2e:45:24:ae:4d:50:fa:63:9a:8b:de:e2:dd:1b:bc |
 | **Identificazione personale (SHA-1)** | 6023192FE7B59D2789130A9FE4094F9B5570D4A2 |
 | **Identificazione personale (SHA-256)** | AED5DD9A5339685DFB029F6D89A14335A96512C3CACC52B2994AF8B6B37FA4D2 |
 | **Pin (SHA-256)** | 86fLIetopQLDNxFZ0uMI66Xpl1pFgLlHHn9v6kT0i4I= |
@@ -524,10 +524,10 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 | **Numero di serie** | 04:00:00:00:00:01:31:89:C6:44:C9 |
 | **Lunghezza chiave pubblica** | RSA 2048 bit (e 65537) |
 | **Algoritmo di firma** | sha256RSA |
-| **Validità non prima** | 02 agosto 10:00:00 UTC |
+| **Validità non prima** | 02 agosto 10:00:00 2011 UTC |
 | **Validità non dopo** | 02 agosto 10:00:00 2022 UTC |
-| **Identificatore chiave del soggetto** | 96:de:61:f1:bd:1c:16:29:53:1c:c0:cc:7d:3b:83:00:40:e6:1a:7c |
-| **Identificatore chiave dell'autorità** | keyid:8f:f0:4b:7f:a8:2e:45:24:ae:4d:50:fa:63:9a:8b:de:e2:dd:1b:bc |
+| **Identificatore chiave dell'oggetto** | 96:de:61:f1:bd:1c:16:29:53:1c:c0:cc:7d:3b:83:00:40:e6:1a:7c |
+| **Identificatore chiave autorità** | keyid:8f:f0:4b:7f:a8:2e:45:24:ae:4d:50:fa:63:9a:8b:de:e2:dd:1b:bc |
 | **Identificazione personale (SHA-1)** | EF90B2B86F4756EBE7D36FF3015D63523A0076E9 |
 | **Identificazione personale (SHA-256)** | 0B339212D7CFF17A2C59E35669B58E77350133750A78DA9404770EDD470DEF76 |
 | **Pin (SHA-256)** | IQBnNBEiFuhj+8x6X8XLgh01V9Ic5/V3IRQLNFFc7v4= |
@@ -538,16 +538,16 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 
 | **Oggetto** | CN=GlobalSign Organization Validation CA - SHA256 - G2<br>O=GlobalSign nv-sa<br>C=BE |
 | --- | --- |
-| **Autorità di certificazione** | CN=GlobalSign Root CA<br>OU=Root CA<br>O=GlobalSign nv-sa<br>C=BE |
+| **Autorità di certificazione** | CN=GlobalSign Ca radice<br>OU=Ca radice<br>O=GlobalSign nv-sa<br>C=BE |
 | **Numero di serie** | 04:00:00:00:00:01:44:4E:F0:42:47 |
 | **Lunghezza chiave pubblica** | RSA 2048 bit (e 65537) |
 | **Algoritmo di firma** | sha256RSA |
-| **Validità non prima** | 20 febbraio 10:00:00 2014 UTC |
+| **Validità non prima** | Feb 20 10:00:00 2014 UTC |
 | **Validità non dopo** | 20 febbraio 10:00:00 2024 UTC |
-| **Identificatore chiave del soggetto** | 96:de:61:f1:bd:1c:16:29:53:1c:c0:cc:7d:3b:83:00:40:e6:1a:7c |
-| **Identificatore chiave dell'autorità** | keyid:60:7b:66:1a:45:0d:97:ca:89:50:2f:7d:04:cd:34:a8:ff:fc:fd:4b |
+| **Identificatore chiave dell'oggetto** | 96:de:61:f1:bd:1c:16:29:53:1c:c0:cc:7d:3b:83:00:40:e6:1a:7c |
+| **Identificatore chiave autorità** | keyid:60:7b:66:1a:45:0d:97:ca:89:50:2f:7d:04:cd:34:a8:ff:fc:fd:4b |
 | **Identificazione personale (SHA-1)** | 902EF2DEEB3C5B13EA4C3D5193629309E231AE55 |
-| **Identificazione personale (SHA-256)** | 74EF335E5E18788307FB9D89CB704BEC112ABD23487DBFF41C4DED5070F241D9 |
+| **Identificazione personale (SHA-256)** | 74EF335E5E1878307FB9D89CB704BEC112ABD23487DBFF41C4DED5070F241D9 |
 | **Pin (SHA-256)** | IQBnNBEiFuhj+8x6X8XLgh01V9Ic5/V3IRQLNFFc7v4= |
 | **URL CRL** | http://crl.globalsign.net/root.crl |
 | **URL OCSP** | http://ocsp.globalsign.com/rootr1 |
@@ -561,9 +561,9 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 | **Lunghezza chiave pubblica** | RSA 2048 bit |
 | **Algoritmo di firma** | sha256RSA |
 | **Validità non prima** | Giovedì 3 settembre 2015 17.00 |
-| **Validità non fino a quando** | Mercoledì 3 settembre 2025 17:00 |
-| **Identificatore chiave del soggetto** | 6886B87D7AD96D496B872F188B15346CD7B47A0E |
-| **Identificatore chiave dell'autorità** | KeyID:60:7b:66:1a:45:0d:97:ca:89:50:2f:7d:04:cd:34:a8:ff:fc:fd:4b |
+| **Validità non fino a quando** | Mercoledì 3 settembre 2025 17.00 |
+| **Identificatore chiave dell'oggetto** | 6886B87D7AD96D496B872F188B15346CD7B47A0E |
+| **Identificatore chiave autorità** | KeyID:60:7b:66:1a:45:0d:97:ca:89:50:2f:7d:04:cd:34:a8:ff:fc:fd:4b |
 | **Identificazione personale (SHA-1)** | 20D1EBAB5A71587B9116E4C74415D1A85B0DDDA5 |
 | **Identificazione personale (SHA-256)** | 699D54B7482A5D329331EA0415CC2EDCD60FDA01D19E71D054196BCE0677735C |
 | **URL CRL** | http://crl.globalsign.com/root.crl |
@@ -579,14 +579,14 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 | **Algoritmo di firma** | sha256RSA |
 | **Validità non prima** | Martedì 20 novembre 2018 16.00 |
 | **Validità non fino a quando** | Lunedì 20 novembre 2028 16.00 |
-| **Identificatore chiave del soggetto** | F8EF7FF2CD7867A8DE6F8F248D88F1870302B3EB |
-| **Identificatore chiave dell'autorità** | KeyID:8f:f0:4b:7f:a8:2e:45:24:ae:4d:50:fa:63:9a:8b:de:e2:dd:1b:bc |
+| **Identificatore chiave dell'oggetto** | F8EF7FF2CD7867A8DE6F8F248D88F1870302B3EB |
+| **Identificatore chiave autorità** | KeyID:8f:f0:4b:7f:a8:2e:45:24:ae:4d:50:fa:63:9a:8b:de:e2:dd:1b:bc |
 | **Identificazione personale (SHA-1)** | DFE83023062B997682708B4EAB8E819AFF5D9775 |
 | **Identificazione personale (SHA-256)** | B676FFA3179E8812093A1B5EAFEE876AE7A6AAF231078DAD1BFB21CD2893764A |
 | **URL CRL** | http://crl.globalsign.com/root-r3.crl |
 | **URL OCSP** | http://ocsp2.globalsign.com/rootr3 |
 
-### <a name="lets-encrypt-authority-x3"></a>**Crittografiamo Authority X3**
+### <a name="lets-encrypt-authority-x3"></a>**Crittografare Authority X3**
 
 | **Oggetto** | CN=Let's Encrypt Authority X3<br>O=Let's Encrypt<br>C=US |
 | --- | --- |
@@ -596,8 +596,8 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 | **Algoritmo di firma** | sha256RSA |
 | **Validità non prima** | Mar 17 16:40:46 2016 UTC |
 | **Validità non dopo** | Mar 17 16:40:46 2021 UTC |
-| **Identificatore chiave del soggetto** | a8:4a:6a:63:04:7d:dd:ba:e6:d1:39:b7:a6:45:65:ef:f3:a8:ec:a1 |
-| **Identificatore chiave dell'autorità** | keyid:c4:a7:b1:a4:7b:2c:71:fa:db:e1:4b:90:75:ff:c4:15:60:85:89:10 |
+| **Identificatore chiave dell'oggetto** | a8:4a:6a:63:04:7d:dd:ba:e6:d1:39:b7:a6:45:65:ef:f3:a8:ec:a1 |
+| **Identificatore chiave autorità** | keyid:c4:a7:b1:a4:7b:2c:71:fa:db:e1:4b:90:75:ff:c4:15:60:85:89:10 |
 | **Identificazione personale (SHA-1)** | E6A3B45B062D509B3382282D196EFE97D5956CCB |
 | **Identificazione personale (SHA-256)** | 25847D668EB4F04FDD40B12B6B0740C567DA7D024308EB6C2C96FE41D9DE218D |
 | **Pin (SHA-256)** | YLh1dUR9y6Kja30RrAn7JKnbQG/uEtLMkBgFF2Fuihg= |
@@ -605,7 +605,7 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 | **URL CRL** | http://crl.identrust.com/DSTROOTCAX3CRL.crl |
 | **URL OCSP** | http://isrg.trustid.ocsp.identrust.com |
 
-### <a name="microsoft-azure-tls-issuing-ca-01"></a>**Microsoft Azure TLS Issuing CA 01**
+### <a name="microsoft-azure-tls-issuing-ca-01"></a>**Ca di emissione TLS di Microsoft Azure 01**
 
 | **Oggetto** | CN=Microsoft Azure TLS Issuing CA 01<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
@@ -615,14 +615,14 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 | **Algoritmo di firma** | sha384RSA |
 | **Validità non prima** | Mercoledì 29 luglio 2020 05.30 |
 | **Validità non fino a quando** | Giovedì 27 giugno 2024 16.59 |
-| **Identificatore chiave del soggetto** | 0F205DD7A15795DB92CF2BD0C7C27704CE728076 |
-| **Identificatore chiave dell'autorità** | KeyID:4e:22:54:20:18:95:e6:e3:6e:e6:0f:fa:b9:12:ed:06:17:8f:39 |
+| **Identificatore chiave dell'oggetto** | 0F205DD7A15795DB92CF2BD0C7C27704CE728076 |
+| **Identificatore chiave autorità** | KeyID:4e:22:54:20:18:95:e6:e3:6e:e6:0f:fa:fa:b9:12:ed:06:17:8f:39 |
 | **Identificazione personale (SHA-1)** | 2F2877C5D778C31E0F29C7E371DF5471BD673173 |
 | **Identificazione personale (SHA-256)** | 24C7299864E0A2A6964F551C0E8DF2461532FA8C48E4DBBB6080716691F190E5 |
 | **URL CRL** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
 | **URL OCSP** | http://ocsp.digicert.com |
 
-### <a name="microsoft-azure-tls-issuing-ca-02"></a>**Microsoft Azure TLS Issuing CA 02**
+### <a name="microsoft-azure-tls-issuing-ca-02"></a>**Autorità di certificazione emittente TLS di Microsoft Azure 02**
 
 | **Oggetto** | CN=Microsoft Azure TLS Issuing CA 02<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
@@ -632,14 +632,14 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 | **Algoritmo di firma** | sha384RSA |
 | **Validità non prima** | Mercoledì 29 luglio 2020 05.30 |
 | **Validità non fino a quando** | Giovedì 27 giugno 2024 16.59 |
-| **Identificatore chiave del soggetto** | 00AB91FC216226979AA8791B61419060A96267FD |
-| **Identificatore chiave dell'autorità** | KeyID:4e:22:54:20:18:95:e6:e3:6e:e6:0f:fa:b9:12:ed:06:17:8f:39 |
-| **Identificazione personale (SHA-1)** | E7EEA674CA718E3BEFD90858E09F8372AD0AE2AA |
-| **Identificazione personale (SHA-256)** | 15A98761EBE011554DA3A46D206B0812CB2EB69AE87AA11A6DD4CB84ED5142A |
+| **Identificatore chiave dell'oggetto** | 00AB91FC216226979AAA8791B61419060A96267FD |
+| **Identificatore chiave autorità** | KeyID:4e:22:54:20:18:95:e6:e3:6e:e6:0f:fa:fa:b9:12:ed:06:17:8f:39 |
+| **Identificazione personale (SHA-1)** | E7EEA674CA718E3BEFD90858E09F8372AD0AE2AAA |
+| **Identificazione personale (SHA-256)** | 15A98761EBE011554DA3A46D206B0812CB2EB69AE87AAA11A6DD4CB84ED5142A |
 | **URL CRL** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
 | **URL OCSP** | http://ocsp.digicert.com |
 
-### <a name="microsoft-azure-tls-issuing-ca-05"></a>**Microsoft Azure TLS Issuing CA 05**
+### <a name="microsoft-azure-tls-issuing-ca-05"></a>**Autorità di certificazione emittente TLS di Microsoft Azure 05**
 
 | **Oggetto** | CN=Microsoft Azure TLS Issuing CA 05<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
@@ -649,14 +649,14 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 | **Algoritmo di firma** | sha384RSA |
 | **Validità non prima** | Mercoledì 29 luglio 2020 05.30 |
 | **Validità non fino a quando** | Giovedì 27 giugno 2024 16.59 |
-| **Identificatore chiave del soggetto** | C7B29C7F1CE3B85AEFE9681AA85D94C126526A68 |
-| **Identificatore chiave dell'autorità** | KeyID:4e:22:54:20:18:95:e6:e3:6e:e6:0f:fa:b9:12:ed:06:17:8f:39 |
+| **Identificatore chiave dell'oggetto** | C7B29C7F1CE3B85AEFE9681AA85D94C126526A68 |
+| **Identificatore chiave autorità** | KeyID:4e:22:54:20:18:95:e6:e3:6e:e6:0f:fa:fa:b9:12:ed:06:17:8f:39 |
 | **Identificazione personale (SHA-1)** | 6C3AF02E7F269AA73AFD0EFF2A88A4A1F04ED1E5 |
-| **Identificazione personale (SHA-256)** | D6831BA43607F5AC19778D627531562AF55145F191CAB5EFAFA0E0005442B302 |
+| **Identificazione personale (SHA-256)** | D6831BA43607F5AC19778D627531562AF55145F191CAB5EFA0E005442B302 |
 | **URL CRL** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
 | **URL OCSP** | http://ocsp.digicert.com |
 
-### <a name="microsoft-azure-tls-issuing-ca-06"></a>**Microsoft Azure TLS Issuing CA 06**
+### <a name="microsoft-azure-tls-issuing-ca-06"></a>**Autorità di certificazione emittente TLS di Microsoft Azure 06**
 
 | **Oggetto** | CN=Microsoft Azure TLS Issuing CA 06<br>O=Microsoft Corporation<br>C=US |
 | --- | --- |
@@ -666,8 +666,8 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 | **Algoritmo di firma** | sha384RSA |
 | **Validità non prima** | Mercoledì 29 luglio 2020 05.30 |
 | **Validità non fino a quando** | Giovedì 27 giugno 2024 16.59 |
-| **Identificatore chiave del soggetto** | D5C1673AC2A39DF477525B59123829E65568BBA5 |
-| **Identificatore chiave dell'autorità** | KeyID:4e:22:54:20:18:95:e6:e3:6e:e6:0f:fa:b9:12:ed:06:17:8f:39 |
+| **Identificatore chiave dell'oggetto** | D5C1673AC2A39DF477525B59123829E65568BBA5 |
+| **Identificatore chiave autorità** | KeyID:4e:22:54:20:18:95:e6:e3:6e:e6:0f:fa:fa:b9:12:ed:06:17:8f:39 |
 | **Identificazione personale (SHA-1)** | 30E01761AB97E59A06B41EF20AF6F2DE7EF4F7B0 |
 | **Identificazione personale (SHA-256)** | 48FF8B494668C752304B48BFE818758987DEF6582E5F09B921F4B60BB3D6A8DD |
 | **URL CRL** | http://crl3.digicert.com/DigiCertGlobalRootG2.crl http://crl4.digicert.com/DigiCertGlobalRootG2.crl |
@@ -677,14 +677,14 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 
 | **Oggetto** | CN=Microsoft IT TLS CA 1<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
 | --- | --- |
-| **Autorità di certificazione** | CN=Baltimore CyberTrust Root<br>OU=CyberTrust<br>O=Baltimore<br>C=IE |
+| **Autorità di certificazione** | CN=Baltimore CyberTrust Root<br>OU=CyberTrust<br>O=Baltimora<br>C=IE |
 | **Numero di serie** | 08:B8:7A:50:1B:BE:9C:DA:2D:16:4D:3E:39:51:BF:55 |
 | **Lunghezza chiave pubblica** | RSA 4096 bit (e 65537) |
 | **Algoritmo di firma** | sha256RSA |
-| **Validità non prima** | 20 maggio 12:51:28 UTC |
+| **Validità non prima** | 20 maggio 12:51:28 2016 UTC |
 | **Validità non dopo** | 20 maggio 12:51:28 2024 UTC |
-| **Identificatore chiave del soggetto** | 58:88:9f:d6:dc:9c:48:22:b7:14:3e:ff:84:88:e8:e6:85:ff:fa:7d |
-| **Identificatore chiave dell'autorità** | keyid:e5:9d:59:30:82:47:58:cc:ac:fa:08:54:36:86:7b:3a:b5:04:4d:f0 |
+| **Identificatore chiave dell'oggetto** | 58:88:9f:d6:dc:9c:48:22:b7:14:3e:ff:84:88:e8:e6:85:ff:fa:7d |
+| **Identificatore chiave autorità** | keyid:e5:9d:59:30:82:47:58:cc:ac:fa:08:54:36:86:7b:3a:b5:04:4d:f0 |
 | **Identificazione personale (SHA-1)** | 417E225037FBFAA4F95761D5AE729E1AEA7E3A42 |
 | **Identificazione personale (SHA-256)** | 4FF404F02E2CD00188F15D1C00F4B6D1E38B5A395CF85314EAEBA855B6A64B75 |
 | **Pin (SHA-256)** | xjXxgkOYlag7jCtR5DreZm9b61iaIhd+J3+b2LiybIw= |
@@ -695,14 +695,14 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 
 | **Oggetto** | CN=Microsoft IT TLS CA 2<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
 | --- | --- |
-| **Autorità di certificazione** | CN=Baltimore CyberTrust Root<br>OU=CyberTrust<br>O=Baltimore<br>C=IE |
+| **Autorità di certificazione** | CN=Baltimore CyberTrust Root<br>OU=CyberTrust<br>O=Baltimora<br>C=IE |
 | **Numero di serie** | 0F:2C:10:C9:5B:06:C0:93:7F:B8:D4:49:F8:3E:85:69 |
 | **Lunghezza chiave pubblica** | RSA 4096 bit (e 65537) |
 | **Algoritmo di firma** | sha256RSA |
 | **Validità non prima** | 20 maggio 12:51:57 2016 UTC |
 | **Validità non dopo** | 20 maggio 12:51:57 2024 UTC |
-| **Identificatore chiave del soggetto** | 91:9e:3b:44:6c:3d:57:9c:42:77:2a:34:d7:4f:d1:cc:4a:97:2c:da |
-| **Identificatore chiave dell'autorità** | keyid:e5:9d:59:30:82:47:58:cc:ac:fa:08:54:36:86:7b:3a:b5:04:4d:f0 |
+| **Identificatore chiave dell'oggetto** | 91:9e:3b:44:6c:3d:57:9c:42:77:2a:34:d7:4f:d1:cc:4a:97:2c:da |
+| **Identificatore chiave autorità** | keyid:e5:9d:59:30:82:47:58:cc:ac:fa:08:54:36:86:7b:3a:b5:04:4d:f0 |
 | **Identificazione personale (SHA-1)** | 54D9D20239080C32316ED9FF980A48988F4ADF2D |
 | **Identificazione personale (SHA-256)** | 4E107C981B42ACBE41C01067E16D44DB64814D4193E572317EA04B87C79C475F |
 | **Pin (SHA-256)** | wBdPad95AU7OgLRs0FU/E6ILO1MSCM84kJ9y0H+TT7s= |
@@ -713,14 +713,14 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 
 | **Oggetto** | CN=Microsoft IT TLS CA 4<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
 | --- | --- |
-| **Autorità di certificazione** | CN=Baltimore CyberTrust Root<br>OU=CyberTrust<br>O=Baltimore<br>C=IE |
+| **Autorità di certificazione** | CN=Baltimore CyberTrust Root<br>OU=CyberTrust<br>O=Baltimora<br>C=IE |
 | **Numero di serie** | 0B:6A:B3:B0:3E:B1:A9:F6:C4:60:92:6A:A8:CD:FE:B3 |
 | **Lunghezza chiave pubblica** | RSA 4096 bit (e 65537) |
 | **Algoritmo di firma** | sha256RSA |
-| **Validità non prima** | 20 maggio 12:52:38 UTC |
+| **Validità non prima** | 20 maggio 12:52:38 2016 UTC |
 | **Validità non dopo** | 20 maggio 12:52:38 2024 UTC |
-| **Identificatore chiave del soggetto** | 7a:7b:8c:c1:cf:e7:a0:ca:1c:d4:6b:fa:fb:e1:33:c3:0f:1a:a2:9d |
-| **Identificatore chiave dell'autorità** | keyid:e5:9d:59:30:82:47:58:cc:ac:fa:08:54:36:86:7b:3a:b5:04:4d:f0 |
+| **Identificatore chiave dell'oggetto** | 7a:7b:8c:c1:cf:e7:a0:ca:1c:d4:6b:fa:fb:e1:33:c3:0f:1a:a2:9d |
+| **Identificatore chiave autorità** | keyid:e5:9d:59:30:82:47:58:cc:ac:fa:08:54:36:86:7b:3a:b5:04:4d:f0 |
 | **Identificazione personale (SHA-1)** | 8A38755D0996823FE8FA3116A277CE446EAC4E99 |
 | **Identificazione personale (SHA-256)** | 5FFAC43E0DDC5B4AF2B696F6BC4DB7E91DF314BB8FE0D0713A0B1A7AD2A68FAC |
 | **Pin (SHA-256)** | wUY9EOTJmS7Aj4fDVCu/KeE++mV7FgIcbn4WhMz1I2k= |
@@ -731,14 +731,14 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 
 | **Oggetto** | CN=Microsoft IT TLS CA 5<br>OU=Microsoft IT<br>O=Microsoft Corporation<br>L=Redmond<br>S=Washington<br>C=US |
 | --- | --- |
-| **Autorità di certificazione** | CN=Baltimore CyberTrust Root<br>OU=CyberTrust<br>O=Baltimore<br>C=IE |
+| **Autorità di certificazione** | CN=Baltimore CyberTrust Root<br>OU=CyberTrust<br>O=Baltimora<br>C=IE |
 | **Numero di serie** | 08:88:CD:52:5F:19:24:44:4D:14:A5:82:91:DE:B9:52 |
 | **Lunghezza chiave pubblica** | RSA 4096 bit (e 65537) |
 | **Algoritmo di firma** | sha256RSA |
 | **Validità non prima** | 20 maggio 12:53:03 2016 UTC |
 | **Validità non dopo** | 20 maggio 12:53:03 2024 UTC |
-| **Identificatore chiave del soggetto** | 08:fe:25:9f:74:ea:87:04:c2:bc:bb:8e:a8:38:5f:33:c6:d1:6c:65 |
-| **Identificatore chiave dell'autorità** | keyid:e5:9d:59:30:82:47:58:cc:ac:fa:08:54:36:86:7b:3a:b5:04:4d:f0 |
+| **Identificatore chiave dell'oggetto** | 08:fe:25:9f:74:ea:87:04:c2:bc:bb:8e:a8:38:5f:33:c6:d1:6c:65 |
+| **Identificatore chiave autorità** | keyid:e5:9d:59:30:82:47:58:cc:ac:fa:08:54:36:86:7b:3a:b5:04:4d:f0 |
 | **Identificazione personale (SHA-1)** | AD898AC73DF333EB60AC1F5FC6C4B2219DDB79B7 |
 | **Identificazione personale (SHA-256)** | F0EE5914ED94C7252D058B4E39808AEE6FA8F62CF0974FB7D6D2A9DF16E3A87F |
 | **Pin (SHA-256)** | RCbqB+W8nwjznTeP4O6VjqcwdxIgI79eBpnBKRr32gc= |
@@ -755,10 +755,10 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 | **Algoritmo di firma** | sha256RSA |
 | **Validità non prima** | Martedì 21 luglio 2020 16.00 |
 | **Validità non fino a quando** | Martedì 8 ottobre 2024 12.00 |
-| **Identificatore chiave del soggetto** | B5760C3011CEC792424D4CC75C2CC8A90CE80B64 |
-| **Identificatore chiave dell'autorità** | KeyID:e5:9d:59:30:82:47:58:cc:ac:fa:08:54:36:86:7b:3a:b5:04:4d:f0 |
+| **Identificatore chiave dell'oggetto** | B5760C3011CEC792424D4CC75C2CC8A90CE80B64 |
+| **Identificatore chiave autorità** | KeyID:e5:9d:59:30:82:47:58:cc:ac:fa:08:54:36:86:7b:3a:b5:04:4d:f0 |
 | **Identificazione personale (SHA-1)** | 703D7A8F0EBF55AAA59F98EAF4A206004EB2516A |
-| **Identificazione personale (SHA-256)** | 04EEEA8E50B4775B3C24797262917EE50002EC4C75B56CDF3EE1C18CFCA5BA52 |
+| **Identificazione personale (SHA-256)** | 04EEEA8E50B4775B3C24797262917E5002EC4C75B56CDF3EE1C18CFCA5BA52 |
 | **URL CRL** | http://crl3.digicert.com/Omniroot2025.crl |
 | **URL OCSP** | http://ocsp.digicert.com |
 
@@ -772,8 +772,8 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 | **Algoritmo di firma** | sha256RSA |
 | **Validità non prima** | Martedì 21 luglio 2020 16.00 |
 | **Validità non fino a quando** | Martedì 8 ottobre 2024 12.00 |
-| **Identificatore chiave del soggetto** | FF2F7FE106F438F32DED258D98C2FE0EF66CFCFA |
-| **Identificatore chiave dell'autorità** | KeyID:e5:9d:59:30:82:47:58:cc:ac:fa:08:54:36:86:7b:3a:b5:04:4d:f0 |
+| **Identificatore chiave dell'oggetto** | FF2F7FE106F438F32DED258D98C2FE0EF66CFCFA |
+| **Identificatore chiave autorità** | KeyID:e5:9d:59:30:82:47:58:cc:ac:fa:08:54:36:86:7b:3a:b5:04:4d:f0 |
 | **Identificazione personale (SHA-1)** | B0C2D2D13CDD56CDAA6AB6E2C04440BE4A429C75 |
 | **Identificazione personale (SHA-256)** | 05E4005DB0C382F3BD66B47729E9011577601BF6F7B287E9A52CED710D258346 |
 | **URL CRL** | http://crl3.digicert.com/Omniroot2025.crl |
@@ -783,15 +783,15 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 
 | **Oggetto** | CN=Symantec Class 3 EV SSL CA - G3<br>OU=Symantec Trust Network<br>O=Symantec Corporation<br>C=US |
 | --- | --- |
-| **Autorità di certificazione** | CN=VeriSign Class 3 Public Primary Certification Authority - G5<br>OU= &quot; (c) 2006 VeriSign, Inc. - Solo per uso autorizzato&quot;<br>OU=VeriSign Trust Network<br>O= &quot; VeriSign, Inc.&quot;<br>C=US |
+| **Autorità di certificazione** | CN=VeriSign Classe 3 Autorità di certificazione principale pubblica - G5<br>OU= &quot; (c) 2006 VeriSign, Inc. - Solo per uso autorizzato&quot;<br>OU=VeriSign Trust Network<br>O= &quot; VeriSign, Inc.&quot;<br>C=US |
 | **Nome alternativo soggetto** | Indirizzo directory: CN=SymantecPKI-1-533 |
 | **Numero di serie** | 7E:E1:4A:6F:6F:EF:F2:D3:7F:3F:AD:65:4D:3A:DA:B4 |
 | **Lunghezza chiave pubblica** | RSA 2048 bit (e 65537) |
 | **Algoritmo di firma** | sha256RSA |
 | **Validità non prima** | Ott 31 00:00:00 2013 UTC |
-| **Validità non dopo** | Ott 30 23:59:59 2023 UTC |
-| **Identificatore chiave del soggetto** | 01:59:ab:e7:dd:3a:0b:59:a6:64:63:d6:cf:20:07:57:d5:91:e7:6a |
-| **Identificatore chiave dell'autorità** | keyid:7f:d3:65:a7:c2:dd:ec:bb:f0:30:09:f3:43:39:fa:02:af:33:31:33 |
+| **Validità non dopo** | 30 ottobre 23:59:59 2023 UTC |
+| **Identificatore chiave dell'oggetto** | 01:59:ab:e7:dd:3a:0b:59:a6:64:63:d6:cf:20:07:57:d5:91:e7:6a |
+| **Identificatore chiave autorità** | keyid:7f:d3:65:a7:c2:dd:ec:bb:f0:30:09:f3:43:39:fa:02:af:33:31:33 |
 | **Identificazione personale (SHA-1)** | E3FC0AD84F2F5A83ED6F86F567F8B14B40DCBF12 |
 | **Identificazione personale (SHA-256)** | 9E6BC5F9ECC52460E8EDC02C644D1BE1CB9F2316F41DAF3B616A0B2058294B31 |
 | **Pin (SHA-256)** | gMxWOrX4PMQesK9qFNbYBxjBfjUvlkn/vN1n+L9lE5E= |
@@ -802,15 +802,15 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 
 | **Oggetto** | CN=Symantec Class 3 Secure Server CA - G4<br>OU=Symantec Trust Network<br>O=Symantec Corporation<br>C=US |
 | --- | --- |
-| **Autorità di certificazione** | CN=VeriSign Class 3 Public Primary Certification Authority - G5<br>OU= &quot; (c) 2006 VeriSign, Inc. - Solo per uso autorizzato&quot;<br>OU=VeriSign Trust Network<br>O= &quot; VeriSign, Inc.&quot;<br>C=US |
+| **Autorità di certificazione** | CN=VeriSign Classe 3 Autorità di certificazione principale pubblica - G5<br>OU= &quot; (c) 2006 VeriSign, Inc. - Solo per uso autorizzato&quot;<br>OU=VeriSign Trust Network<br>O= &quot; VeriSign, Inc.&quot;<br>C=US |
 | **Nome alternativo soggetto** | Indirizzo directory: CN=SymantecPKI-1-534 |
 | **Numero di serie** | 51:3F:B9:74:38:70:B7:34:40:41:8D:30:93:06:99:FF |
 | **Lunghezza chiave pubblica** | RSA 2048 bit (e 65537) |
 | **Algoritmo di firma** | sha256RSA |
 | **Validità non prima** | Ott 31 00:00:00 2013 UTC |
-| **Validità non dopo** | Ott 30 23:59:59 2023 UTC |
-| **Identificatore chiave del soggetto** | 5f:60:cf:61:90:55:df:84:43:14:8a:60:2a:b2:f5:7a:f4:43:18:ef |
-| **Identificatore chiave dell'autorità** | keyid:7f:d3:65:a7:c2:dd:ec:bb:f0:30:09:f3:43:39:fa:02:af:33:31:33 |
+| **Validità non dopo** | 30 ottobre 23:59:59 2023 UTC |
+| **Identificatore chiave dell'oggetto** | 5f:60:cf:61:90:55:df:84:43:14:8a:60:2a:b2:f5:7a:f4:43:18:ef |
+| **Identificatore chiave autorità** | keyid:7f:d3:65:a7:c2:dd:ec:bb:f0:30:09:f3:43:39:fa:02:af:33:31:33 |
 | **Identificazione personale (SHA-1)** | FF67367C5CD4DE4AE18BCCE1D70FDABD7C866135 |
 | **Identificazione personale (SHA-256)** | EAE72EB454BF6C3977EBD289E970B2F5282949190093D0D26F98D0F0D6A9CF17 |
 | **Pin (SHA-256)** | 9n0izTnSRF+W4W4JTq51avSXkWhQB8duS2bxVLfzXsY= |
@@ -826,10 +826,10 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 | **Numero di serie** | 36:34:9E:18:C9:9C:26:69:B6:56:2E:6C:E5:AD:71:32 |
 | **Lunghezza chiave pubblica** | RSA 2048 bit (e 65537) |
 | **Algoritmo di firma** | sha256RSA |
-| **Validità non prima** | 23 maggio 00:00:00 UTC |
+| **Validità non prima** | 23 maggio 00:00:00 2013 UTC |
 | **Validità non dopo** | 22 maggio 23:59:59 2023 UTC |
-| **Identificatore chiave del soggetto** | 2b:9a:35:ae:01:18:38:30:e1:70:7a:05:e0:11:76:a3:ce:bd:90:14 |
-| **Identificatore chiave dell'autorità** | keyid:ad:6c:aa:94:60:9c:ed:e4:ff:fa:3e:0a:74:2b:63:03:f7:b6:59:bf |
+| **Identificatore chiave dell'oggetto** | 2b:9a:35:ae:01:18:38:30:e1:70:7a:05:e0:11:76:a3:ce:bd:90:14 |
+| **Identificatore chiave autorità** | keyid:ad:6c:aa:94:60:9c:ed:e4:ff:fa:3e:0a:74:2b:63:03:f7:b6:59:bf |
 | **Identificazione personale (SHA-1)** | 67D147D5DAB7F28D663CA5B7A9568F087427B9F7 |
 | **Identificazione personale (SHA-256)** | 3F3AF9C9CC2C7599EF8F6DD7CA516CFC1797D7D12002254F3BFD0D4D0FE9DE86 |
 | **Pin (SHA-256)** | /36ymPAVaJl3QDyB1lUkVf9GqJNug0R8JJPDN6348p8= |
@@ -840,14 +840,14 @@ Espandere le sezioni radice e intermedie seguenti per visualizzare ulteriori det
 
 | **Oggetto** | CN=Verizon Akamai SureServer CA G14-SHA2<br>OU=Cybertrust<br>O=Verizon Enterprise Solutions<br>L=Amsterdam<br>C=NL |
 | --- | --- |
-| **Autorità di certificazione** | CN=Baltimore CyberTrust Root<br>OU=CyberTrust<br>O=Baltimore<br>C=IE |
+| **Autorità di certificazione** | CN=Baltimore CyberTrust Root<br>OU=CyberTrust<br>O=Baltimora<br>C=IE |
 | **Numero di serie** | 07:27:A4:6B |
 | **Lunghezza chiave pubblica** | RSA 2048 bit (e 65537) |
 | **Algoritmo di firma** | sha256RSA |
-| **Validità non prima** | Apr 02 14:36:10 2014 UTC |
-| **Validità non dopo** | Apr 02 14:35:52 2021 UTC |
-| **Identificatore chiave del soggetto** | f8:bd:fa:af:73:77:c6:c7:1b:f9:4b:4d:11:a7:d1:33:af:af:72:11 |
-| **Identificatore chiave dell'autorità** | keyid:e5:9d:59:30:82:47:58:cc:ac:fa:08:54:36:86:7b:3a:b5:04:4d:f0 |
+| **Validità non prima** | 02 aprile 14:36:10 UTC |
+| **Validità non dopo** | 02 aprile 14:35:52 UTC |
+| **Identificatore chiave dell'oggetto** | f8:bd:fa:af:73:77:c6:c7:1b:f9:4b:4d:11:a7:d1:33:af:af:72:11 |
+| **Identificatore chiave autorità** | keyid:e5:9d:59:30:82:47:58:cc:ac:fa:08:54:36:86:7b:3a:b5:04:4d:f0 |
 | **Identificazione personale (SHA-1)** | 6AD2B04E2196E48BF685752890E811CD2ED60606 |
 | **Identificazione personale (SHA-256)** | 7373D219B42547E41BCB752BCBCBE93F592FF6F99C340CE57B73D38C3EC0BA98 |
 | **Pin (SHA-256)** | 8XFPrRr4VxmEIYKUu35QtR3oGbduX1AlrBzaBUHgp7c= |

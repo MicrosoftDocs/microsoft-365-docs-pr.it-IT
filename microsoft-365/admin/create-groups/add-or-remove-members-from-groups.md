@@ -18,19 +18,19 @@ search.appverid:
 - MET150
 ms.assetid: e186d224-a324-4afa-8300-0e4fc0c3000a
 description: Informazioni su come aggiungere un membro a un gruppo, rimuovere un membro dal gruppo e gestire lo stato del proprietario del gruppo nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 34c026bced5563e07a1ae0d13f4c691cfaf3f624
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: 997145b85d2990d5bf7184f5e97a0a8d1c86dae9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663244"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907917"
 ---
 # <a name="add-or-remove-members-from-microsoft-365-groups-using-the-admin-center"></a>Aggiungere o rimuovere membri dai gruppi di Microsoft 365 tramite l'interfaccia di amministrazione
 
-In Microsoft 365, i membri del gruppo in genere creano i propri gruppi, si aggiungono ai gruppi a cui vogliono partecipare o vengono invitati dai proprietari del gruppo. Se la proprietà del gruppo cambia o se si determina che un membro deve essere aggiunto o rimosso, l'amministratore può anche apportare tale modifica. Queste modifiche possono essere apportate solo da un amministratore globale, da un amministratore di Exchange, da un amministratore di gruppi o da un amministratore utente. [Che cos'è un gruppo di Microsoft 365?](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
+In Microsoft 365, i membri del gruppo in genere creano i propri gruppi, si aggiungono ai gruppi a cui vogliono partecipare o vengono invitati dai proprietari dei gruppi. Se la proprietà del gruppo cambia o se si determina che un membro deve essere aggiunto o rimosso, l'amministratore può anche apportare tale modifica. Solo un amministratore globale, un amministratore di Exchange, un amministratore di gruppi o un amministratore utente può apportare queste modifiche. [Che cos'è un gruppo di Microsoft 365?](https://support.microsoft.com/office/b565caa1-5c40-40ef-9915-60fdb2d97fa2)
 
 > [!TIP]
-> Se non si è un amministratore, è possibile [aggiungere o rimuovere membri tramite Outlook.](https://support.microsoft.com/office/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de)
+> Se non si è un amministratore, è possibile [aggiungere o rimuovere membri utilizzando Outlook.](https://support.microsoft.com/office/3b650f4a-5c9b-4f94-a1bb-0cca4b1091de)
   
 ## <a name="add-a-member-to-a-group-in-the-admin-center"></a>Aggiungere un membro a un gruppo nell'interfaccia di amministrazione
 
@@ -38,7 +38,7 @@ In Microsoft 365, i membri del gruppo in genere creano i propri gruppi, si aggiu
 
 2. Fare clic sul nome di un gruppo.
 
-3. Nella scheda Membri del  riquadro dei dettagli selezionare Visualizza tutti e **gestisci membri** e quindi Aggiungi **membri.**
+3. Nella scheda Membri del riquadro dei dettagli **selezionare** Visualizza tutti e **gestisci membri** e quindi **Aggiungi membri.**
 
 4. Cercare o selezionare il nome del membro da aggiungere.
 
@@ -50,7 +50,7 @@ In Microsoft 365, i membri del gruppo in genere creano i propri gruppi, si aggiu
 
 2. Fare clic su un utente.
 
-3. Nel riquadro dei dettagli, nella scheda **Account,** selezionare **Gestisci gruppi.**
+3. Nella scheda **Account** del riquadro dei dettagli selezionare **Gestisci gruppi**.
 
 4. Cercare o selezionare il nome del gruppo che si desidera aggiungere.
 
@@ -65,7 +65,7 @@ In Microsoft 365, i membri del gruppo in genere creano i propri gruppi, si aggiu
 
 2. Fare clic sul nome di un gruppo.
 
-3. Nella scheda Membri del  riquadro dei dettagli selezionare **Visualizza tutti e gestisci membri.**
+3. Nella scheda Membri del riquadro dei dettagli **selezionare** Visualizza tutti e **gestisci membri.**
 
 4. Accanto al membro che si desidera rimuovere, selezionare la X.
 
@@ -75,15 +75,15 @@ In Microsoft 365, i membri del gruppo in genere creano i propri gruppi, si aggiu
 
 Per impostazione predefinita, la persona che crea il gruppo ne è il proprietario. Spesso un gruppo include più proprietari a scopo di backup o per altri motivi. I membri possono essere alzati di livello allo stato di proprietari e i proprietari possono essere abbassati di livello allo stato di membri.
   
-### <a name="promote-a-member-to-owner-status-in-the-admin-center"></a>Alzare di livello un membro allo stato di proprietario nell'interfaccia di amministrazione
+### <a name="promote-a-member-to-owner-status-in-the-admin-center"></a>Alzare di livello un membro a proprietario nell'interfaccia di amministrazione
 
 1. Nell'interfaccia di amministrazione passare alla [**pagina Gruppi**](https://admin.microsoft.com/Adminportal/Home?#/groups) attivi.  
 
 2. Fare clic sul nome di un gruppo.
 
-3. Nel riquadro dei dettagli, nella **scheda** Membri, selezionare **Visualizza tutti e gestisci proprietari.**
+3. Nella scheda Membri del riquadro dei dettagli **selezionare** Visualizza tutti e **gestisci proprietari.**
 
-4. Selezionare **Aggiungi proprietari.**
+4. Selezionare **Aggiungi proprietari**.
 
 5. Selezionare la casella di controllo accanto al nome del membro che si desidera aggiungere.
 
@@ -95,17 +95,17 @@ Per impostazione predefinita, la persona che crea il gruppo ne è il proprietari
 
 2. Fare clic sul nome di un gruppo.
 
-3. Nel riquadro dei dettagli, nella **scheda** Membri, selezionare **Visualizza tutti e gestisci proprietari.**
+3. Nella scheda Membri del riquadro dei dettagli **selezionare** Visualizza tutti e **gestisci proprietari.**
 
-4. Selezionare la X accanto al nome del proprietario.
+4. Seleziona la X accanto al nome del proprietario.
 
 5. Selezionare **Salva**.
 
 ## <a name="more-on-managing-membership"></a>Altre informazioni sulla gestione dell'appartenenza
 
-- [Gestire dinamicamente i gruppi in Azure Active Directory](https://go.microsoft.com/fwlink/?linkid=847632): vedere la sezione "Come si gestisce l'appartenenza a un gruppo dinamicamente?"
+- [Gestire dinamicamente i gruppi in Azure Active Directory](/azure/active-directory/fundamentals/active-directory-groups-create-azure-portal): vedere la sezione "Come si gestisce l'appartenenza a un gruppo dinamicamente?"
 
-- Per aggiungere centinaia o migliaia di utenti ai gruppi, utilizzare [Add-UnifiedGroupLinks.](https://docs.microsoft.com/powershell/module/exchange/add-unifiedgrouplinks)
+- Per aggiungere centinaia o migliaia di utenti ai gruppi, utilizzare [Add-UnifiedGroupLinks.](/powershell/module/exchange/add-unifiedgrouplinks)
 
 - [Assegnare un nuovo proprietario a un gruppo orfano](https://support.microsoft.com/office/86bb3db6-8857-45d1-95c8-f6d540e45732)
 
@@ -117,6 +117,6 @@ Per impostazione predefinita, la persona che crea il gruppo ne è il proprietari
 
 - [Gestire l'accesso guest nei gruppi di Microsoft 365](manage-guest-access-in-groups.md)
 
-- [Gestire i gruppi di Microsoft 365 con PowerShell:](https://docs.microsoft.com/microsoft-365/enterprise/manage-microsoft-365-groups-with-powershell)in questo articolo vengono presentati i cmdlet principali e vengono forniti esempi
+- [Gestire i gruppi di Microsoft 365 con PowerShell:](../../enterprise/manage-microsoft-365-groups-with-powershell.md)in questo articolo vengono presentati i cmdlet principali e vengono forniti esempi
 
-- [Criteri di denominazione dei gruppi di Microsoft 365](groups-naming-policy.md)
+- [Criteri di denominazione dei gruppi di Microsoft 365](../../solutions/groups-naming-policy.md)

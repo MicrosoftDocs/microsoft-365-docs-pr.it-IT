@@ -12,31 +12,31 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-- m365solution-ediscovery
+- m365solution-aed
 - m365initiative-compliance
-- m365initiative-scenario
+- m365solution-scenario
 search.appverid:
 - MOE150
 - MET150
 description: In questo articolo viene descritto come creare e gestire i casi di Advanced eDiscovery. Il primo passaggio consiste nel creare un caso e iniziare a usare funzionalità e funzionalità avanzate di eDiscovery.
-ms.openlocfilehash: 0301213cf6d7e3c30b98ad5125468c6c75ed95b1
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: d0f63bca90945c3dfe13b08fa0f1d139da8a9189
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838257"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908362"
 ---
 # <a name="create-and-manage-an-advanced-ediscovery-case"></a>Creare e gestire un caso advanced eDiscovery
 
 Dopo aver impostato Advanced eDiscovery e aver assegnato le autorizzazioni ai responsabili [di eDiscovery](get-started-with-advanced-ediscovery.md#step-2-assign-ediscovery-permissions) nell'organizzazione che gestiranno i casi, il passaggio successivo consiste nel creare e gestire un caso.
 
-In questo articolo viene inoltre fornita una panoramica generale dell'utilizzo dei casi per gestire il flusso di lavoro advanced eDiscovery per un'indagine legale.
+In questo articolo viene inoltre fornita una panoramica generale dell'utilizzo dei casi per gestire il flusso di lavoro advanced eDiscovery per un caso legale o altri tipi di indagini.
 
 ## <a name="create-a-case"></a>Creare un caso
 
-Completare la procedura seguente per creare un caso e aggiungere membri. L'utente che crea il caso viene aggiunto automaticamente come membro.
+Completare la procedura seguente per creare un caso e aggiungere membri. L'utente che crea il caso viene aggiunto automaticamente come membro. I membri del caso possono accedere al caso nel Centro conformità Microsoft 365 ed eseguire attività avanzate di eDiscovery.
 
-1. Accedere a [https://compliance.microsoft.com](https://compliance.microsoft.com) e accedere utilizzando le credenziali per l'account utente a cui sono state assegnate le autorizzazioni di eDiscovery. I membri del gruppo di ruoli Gestione organizzazione possono inoltre creare casi di Advanced eDiscovery.
+1. Accedere a <https://compliance.microsoft.com> e accedere utilizzando le credenziali per l'account utente a cui sono state assegnate le autorizzazioni di eDiscovery. I membri del gruppo di ruoli Gestione organizzazione possono inoltre creare casi di Advanced eDiscovery.
 
 2. Nel riquadro di spostamento sinistro del Centro conformità Microsoft 365 fare clic su **Mostra** tutto e quindi su **eDiscovery > avanzate**.
 
@@ -82,7 +82,7 @@ Per iniziare a usare Advanced eDiscovery, ecco un flusso di lavoro di base in li
 
    - È possibile utilizzare il flusso [di lavoro delle comunicazioni](managing-custodian-communications.md) in Advanced eDiscovery per inviare una notifica di blocco legale ai custodi.
 
-2. **[Raccogliere dati rilevanti da origini dati](create-draft-collection.md)**. Dopo aver aggiunto i custodi e le origini dati non di custodia a un caso, usa lo strumento di raccolta incorporato per cercare in queste origini dati contenuti che potrebbero essere rilevanti per il caso. Le parole chiave, le proprietà e le condizioni vengono utilizzate per creare [query](building-search-queries.md) di ricerca che restituiscono risultati di ricerca con i dati più rilevanti per il caso. È inoltre possibile:
+2. **[Raccogliere il contenuto pertinente dalle origini dati.](create-draft-collection.md)** Dopo aver aggiunto i custodi e le origini dati non di custodia a un caso, usa lo strumento di raccolta incorporato per cercare in queste origini dati contenuti che potrebbero essere rilevanti per il caso. Le parole chiave, le proprietà e le condizioni vengono utilizzate per creare [query](building-search-queries.md) di ricerca che restituiscono risultati di ricerca con i dati più rilevanti per il caso. È inoltre possibile:
 
    - Visualizzare [le statistiche di](collection-statistics-reports.md) raccolta che consentono di affinare una raccolta per limitare i risultati.
 
@@ -107,3 +107,15 @@ Per iniziare a usare Advanced eDiscovery, ecco un flusso di lavoro di base in li
    - [Analizzare i dati del caso](analyzing-data-in-review-set.md). La funzionalità di analisi in Advanced eDiscovery è potente. Dopo aver eseguito l'analisi sui dati nel set di revisione, eseguono analisi come il rilevamento quasi dei duplicati, il threading della posta elettronica e i temi che consentono di ridurre il volume di documenti da esaminare. Vengono inoltre generati report di analisi che riepilogano il risultato dell'esecuzione dell'analisi. Come spiegato in precedenza, l'esecuzione dell'analisi esegue anche il modello di rilevamento [dei privilegi avvocato-client.](attorney-privilege-detection.md#use-the-attorney-client-privilege-detection-model)
 
 5. **Esportare e scaricare i dati del caso**. Un passaggio finale dopo la raccolta, la revisione e l'analisi dei dati dei casi consiste nell'esportarlo da Advanced eDiscovery per la revisione esterna o per la revisione da parte di persone esterne al team di indagine. L'esportazione dei dati è un processo in due passaggi. Il primo passaggio [](export-documents-from-review-set.md) consiste nell'esportare i dati dal set di revisione e copiare i dati in un percorso di archiviazione di Azure diverso (uno fornito da Microsoft o uno gestito dall'organizzazione). Quindi si usa Azure Storage Explorer per [scaricare](download-export-jobs.md) i dati in un computer locale. Oltre ai file di dati esportati, il contenuto del pacchetto di esportazione contiene anche un report di esportazione, un rapporto riepilogativo e un rapporto errori.
+
+## <a name="advanced-ediscovery-architecture"></a>Architettura avanzata di eDiscovery
+
+Ecco un diagramma dell'architettura che mostra il flusso di lavoro end-to-end advanced eDiscovery in un ambiente con una singola area geografica e in un ambiente multi-geografico e il flusso di dati end-to-end allineato al modello di riferimento per l'individuazione [elettronica.](overview-ediscovery-20.md#advanced-ediscovery-alignment-with-the-electronic-discovery-reference-model)
+
+[![Poster modello: Architettura avanzata di eDiscovery in Microsoft 365](../media/solutions-architecture-center/ediscovery-poster-thumb.png)](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+
+[Visualizzazione come immagine](../media/solutions-architecture-center/m365-advanced-ediscovery-architecture.png)
+
+[Scarica come file PDF](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.pdf)
+
+[Download come file di Visio](https://download.microsoft.com/download/d/1/c/d1ce536d-9bcf-4d31-b75b-fcf0dc560665/m365-advanced-ediscovery-architecture.vsdx)

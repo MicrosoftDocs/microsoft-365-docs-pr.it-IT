@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: d6466f0d-5d13-464a-adcb-00906ae87029
 description: Informazioni su come configurare e usare Microsoft 365 su computer, telefono e tablet.
-ms.openlocfilehash: 437e644190017a0031d7c91d239f5b4f0a8d3773
-ms.sourcegitcommit: d739f48b991793c08522a3d5323beba27f0111b2
+ms.openlocfilehash: 8df5170190a464c71030c938be61df591032c45c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "50142074"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906289"
 ---
 # <a name="get-started"></a>Per iniziare
 
@@ -58,13 +58,12 @@ L'organizzazione ha recentemente ottenuto Microsoft 365 e ora è necessario usar
 
 Ecco alcune risorse utili per iniziare.
   
-- [Formazione per gli amministratori:](https://docs.microsoft.com/microsoft-365/admin)ottieni i collegamenti alle classi online gratuite per gli amministratori.
+- [Formazione per gli amministratori](../index.yml): ottenere collegamenti a corsi online gratuiti per gli amministratori.
     
-- [Guida per gli](https://docs.microsoft.com/microsoft-365/admin/admin-home)amministratori: informazioni sulle attività principali, introduzione agli strumenti di amministrazione e risoluzione dei problemi.
+- [Guida per gli](./admin-overview.md)amministratori: informazioni sulle attività principali, introduzione agli strumenti di amministrazione e risoluzione dei problemi.
     
-- [Contattare il supporto - Guida per gli](../contact-support-for-business-products.md) amministratori: chiamaci, apri una richiesta online o consenti alla community di assistenza. 
+- [Contattare il supporto - Guida per](../contact-support-for-business-products.md) l'amministratore: chiamaci, apri una richiesta online o consenti alla community di assistenza. 
     
 ## <a name="related-articles"></a>Articoli correlati
 
 [Configurare Microsoft 365 per le aziende - Guida per gli amministratori](../setup/setup.md)
-

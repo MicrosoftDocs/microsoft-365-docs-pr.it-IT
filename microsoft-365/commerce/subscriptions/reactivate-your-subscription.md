@@ -22,25 +22,25 @@ search.appverid:
 - MET150
 ms.assetid: 23aa9dd5-a2b0-42f5-8893-9541d2f3761f
 description: Informazioni su come riattivare l'abbonamento alla scadenza, alla disabilitazione o all'annullamento.
-ms.openlocfilehash: 3e360e37a108c290e13ca3c1a147f8eb099648e6
-ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
+ms.openlocfilehash: d33b40d0cfb35f19d8894204173212d37dc40666
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50766390"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907847"
 ---
 # <a name="reactivate-your-subscription"></a>Riattivare l'abbonamento
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
 È possibile riattivare l'abbonamento nell'interfaccia di amministrazione se: l'abbonamento è scaduto, è stato disabilitato da Microsoft o se è stato annullato nel corso di un periodo di sottoscrizione.
   
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Per riattivare una sottoscrizione, devi essere un amministratore globale o di fatturazione. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../../admin/add-users/about-admin-roles.md).
 
@@ -100,7 +100,7 @@ Per riattivare una sottoscrizione, devi essere un amministratore globale o di fa
 
 ::: moniker-end
 
-## <a name="related-content"></a>Contenuti correlati
+## <a name="related-content"></a>Contenuto correlato
 
 [Provare o acquistare un abbonamento a Microsoft 365 per le aziende](../try-or-buy-microsoft-365.md) (articolo)\
 [Rinnovare Microsoft 365 per le aziende](renew-your-subscription.md) (articolo)\

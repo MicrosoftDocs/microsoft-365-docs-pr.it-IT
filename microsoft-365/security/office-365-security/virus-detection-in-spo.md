@@ -20,12 +20,12 @@ description: Informazioni su come SharePoint Online rileva i virus nei file cari
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9ba3d19c6b04b93d9b1089540b7483d8b2e7246c
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: a651d198f441c26525cbfb5d7406ae350db8b79e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727500"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908083"
 ---
 # <a name="built-in-virus-protection-in-sharepoint-online-onedrive-and-microsoft-teams"></a>Protezione da virus incorporata in SharePoint Online, OneDrive e Microsoft Teams
 
@@ -62,7 +62,7 @@ Ecco cosa succede:
 
 > [!NOTE]
 >
-> Gli amministratori possono utilizzare il parametro *DisallowInfectedFileDownload* nel cmdlet [Set-SPOTenant](https://docs.microsoft.com/powershell/module/sharepoint-online/Set-SPOTenant) in PowerShell di SharePoint Online per impedire agli utenti di scaricare file infetti, anche nella finestra di avviso anti-virus. Per istruzioni, vedere [Use SharePoint Online PowerShell to prevent users from downloading malicious files](turn-on-atp-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).
+> Gli amministratori possono utilizzare il parametro *DisallowInfectedFileDownload* nel cmdlet [Set-SPOTenant](/powershell/module/sharepoint-online/Set-SPOTenant) in PowerShell di SharePoint Online per impedire agli utenti di scaricare file infetti, anche nella finestra di avviso anti-virus. Per istruzioni, vedere [Use SharePoint Online PowerShell to prevent users from downloading malicious files](turn-on-atp-for-spo-odb-and-teams.md#step-2-recommended-use-sharepoint-online-powershell-to-prevent-users-from-downloading-malicious-files).
 >
 > Non appena si abilita il *parametro DisallowInfectedFileDownload,* l'accesso ai file rilevati/bloccati è completamente bloccato per gli utenti e gli amministratori.
 
@@ -76,6 +76,6 @@ Le organizzazioni di Microsoft 365 con [Microsoft Defender per Office 365](offic
 
 ## <a name="related-articles"></a>Articoli correlati
 
-[Protezione da malware e ransomware in Microsoft 365](https://docs.microsoft.com/compliance/assurance/assurance-malware-and-ransomware-protection)
+[Protezione da malware e ransomware in Microsoft 365](/compliance/assurance/assurance-malware-and-ransomware-protection)
 
 Per ulteriori informazioni sull'antivirus in SharePoint Online, OneDrive e Microsoft Teams, vedere [Protect against threats](protect-against-threats.md) e Turn on Safe Attachments for [SharePoint, OneDrive, and Microsoft Teams.](turn-on-atp-for-spo-odb-and-teams.md)

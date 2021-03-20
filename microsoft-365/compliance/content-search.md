@@ -21,12 +21,12 @@ ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 ms.custom:
 - seo-marvel-apr2020
 description: Usare lo strumento Ricerca contenuto nel Centro conformità di Microsoft per cercare contenuto nei diversi servizi di Microsoft 365.
-ms.openlocfilehash: b497c584dce02279e0d2a0e68a8f5ada415164e5
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: 2e9dcde65a4f2728782fd300f962dfb3e80ed3c9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988210"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908628"
 ---
 # <a name="content-search"></a>Ricerca contenuto
 
@@ -228,9 +228,9 @@ Tenere presente quanto segue quando si usa l'elenco di parole chiave per creare 
   
 ### <a name="searching-onedrive-accounts"></a>Eseguire una ricerca negli account di OneDrive
 
-- Per ottenere un elenco degli URL dei siti di OneDrive nell'organizzazione, vedere [Creare un elenco di tutti i percorsi di OneDrive nell'organizzazione](https://docs.microsoft.com/onedrive/list-onedrive-urls). Lo script in questo articolo crea un file di testo che contiene un elenco di tutti i siti di OneDrive. Per eseguire questo script, è necessario installare e usare SharePoint Online Management Shell. Assicurarsi di aggiungere l'URL del dominio MySite dell'organizzazione a ogni sito OneDrive che si desidera includere nella ricerca. Si tratta del dominio che contiene tutti i siti di OneDrive, ad esempio, `https://contoso-my.sharepoint.com`. Di seguito viene riportato un esempio di sito OneDrive di un utente: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
+- Per ottenere un elenco degli URL dei siti di OneDrive nell'organizzazione, vedere [Creare un elenco di tutti i percorsi di OneDrive nell'organizzazione](/onedrive/list-onedrive-urls). Lo script in questo articolo crea un file di testo che contiene un elenco di tutti i siti di OneDrive. Per eseguire questo script, è necessario installare e usare SharePoint Online Management Shell. Assicurarsi di aggiungere l'URL del dominio MySite dell'organizzazione a ogni sito OneDrive che si desidera includere nella ricerca. Si tratta del dominio che contiene tutti i siti di OneDrive, ad esempio, `https://contoso-my.sharepoint.com`. Di seguito viene riportato un esempio di sito OneDrive di un utente: `https://contoso-my.sharepoint.com/personal/sarad_contoso_onmicrosoft.com`.
     
-    Nei rari casi in cui il nome dell'entità utente (UPN) di una persona viene modificato, l'URL per il relativo percorso OneDrive viene modificato in modo da incorporare il nuovo UPN. Se ciò si verifica, è necessario modificare la ricerca contenuto aggiungendo il nuovo URL di OneDrive dell'utente e rimuovendo quello precedente. Per altre informazioni, vedere [Come le modifiche UPN influiscono sull'URL di OneDrive](https://docs.microsoft.com/onedrive/upn-changes).
+    Nei rari casi in cui il nome dell'entità utente (UPN) di una persona viene modificato, l'URL per il relativo percorso OneDrive viene modificato in modo da incorporare il nuovo UPN. Se ciò si verifica, è necessario modificare la ricerca contenuto aggiungendo il nuovo URL di OneDrive dell'utente e rimuovendo quello precedente. Per altre informazioni, vedere [Come le modifiche UPN influiscono sull'URL di OneDrive](/onedrive/upn-changes).
   
 ### <a name="searching-microsoft-teams-and-microsoft-365-groups"></a>Eseguire una ricerca nei Gruppi di Microsoft 365 e Microsoft Teams
 
@@ -240,7 +240,7 @@ Tenere presente quanto segue quando si cerca contenuto in Microsoft Teams e nei 
   
 - Per cercare contenuti in Teams e nei Gruppi di Microsoft 365, è necessario specificare la cassetta postale e il sito di SharePoint associati a un gruppo o a un team.
 
-- Il contenuto dei canali privati è archiviato nella cassetta postale di ogni utente, non nella cassetta postale del team. Per cercare contenuto nei canali privati, vedere [eDiscovery di canali privati](https://docs.microsoft.com/microsoftteams/ediscovery-investigation#ediscovery-of-private-channels).
+- Il contenuto dei canali privati è archiviato nella cassetta postale di ogni utente, non nella cassetta postale del team. Per cercare contenuto nei canali privati, vedere [eDiscovery di canali privati](/microsoftteams/ediscovery-investigation#ediscovery-of-private-channels).
     
 - Eseguire il cmdlet **Get-UnifiedGroup** in Exchange Online per visualizzare le proprietà di un team o di un gruppo di Microsoft 365. È un buon modo per ottenere l'URL del sito associato a un team o a un gruppo. Ad esempio, il comando seguente consente di visualizzare le proprietà selezionate per un gruppo di Microsoft 365 denominato Senior Leadership Team: 
     
@@ -298,7 +298,7 @@ Tenere presente quanto segue quando si cerca contenuto in Microsoft Teams e nei 
 
    Per altre informazioni, vedere [Microsoft Teams lancia eDiscovery per chiamate e riunioni](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-teams-launches-ediscovery-for-calling-and-meetings/ba-p/210947).
 
-- Il contenuto della scheda generato dalle app nei canali di Teams, nelle chat tra due persone e nelle chat 1xN viene archiviato nelle cassette postali e può fare l’oggetto di una ricerca. Una *scheda* è un contenitore di interfaccia utente per piccole parti di contenuto. Le schede possono avere più proprietà e allegati e possono includere pulsanti per attivare azioni della scheda. Per altre informazioni, vedere [Schede](https://docs.microsoft.com/microsoftteams/platform/task-modules-and-cards/what-are-cards).
+- Il contenuto della scheda generato dalle app nei canali di Teams, nelle chat tra due persone e nelle chat 1xN viene archiviato nelle cassette postali e può fare l’oggetto di una ricerca. Una *scheda* è un contenitore di interfaccia utente per piccole parti di contenuto. Le schede possono avere più proprietà e allegati e possono includere pulsanti per attivare azioni della scheda. Per altre informazioni, vedere [Schede](/microsoftteams/platform/task-modules-and-cards/what-are-cards).
 
   Come nel caso di altri contenuti di Teams, il luogo di archiviazione del contenuto delle schede dipende da dove è stata usata la scheda. Il contenuto delle schede usate in un canale di Teams viene archiviato nella cassetta postale di gruppo di Teams. Il contenuto delle schede per chat tra due persone e 1xN viene archiviato nelle cassette postali dei partecipanti alla chat.
 
@@ -412,14 +412,14 @@ Sono supportati anche i seguenti tipi di contenitori di file. È possibile visua
 
 ### <a name="searching-for-content-in-a-sharepoint-multi-geo-environment"></a>Ricerca di contenuto in un ambiente SharePoint Multi-Geo
 
-Se un manager di eDiscovery deve cercare contenuto in aree diverse in SharePoint e OneDrive in un [ambiente SharePoint Multi-Geo](https://go.microsoft.com/fwlink/?linkid=860840), è necessario eseguire le operazioni seguenti:
+Se un manager di eDiscovery deve cercare contenuto in aree diverse in SharePoint e OneDrive in un [ambiente SharePoint Multi-Geo](../enterprise/multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md), è necessario eseguire le operazioni seguenti:
 
 1. Creare un account utente distinto per ogni posizione geografica satellite i cui il manager di eDiscovery deve eseguire la ricerca. Per cercare contenuto in siti in tale posizione geografica, il manager di eDiscovery deve accedere all'account creato per la posizione e quindi eseguire una ricerca di contenuto.
 
 2. Creare un filtro delle autorizzazioni di ricerca per ogni posizione geografica satellite (e l'account utente corrispondente) in cui il manager di eDiscovery deve eseguire la ricerca. Ognuno di questi filtri delle autorizzazioni di ricerca limita l'ambito della ricerca di contenuto a una specifica posizione geografica quando il manager di eDiscovery è connesso all'account utente associato a quella posizione.
 
 > [!TIP]
-> Quando si usa lo strumento di ricerca in [Advanced eDiscovery](overview-ediscovery-20.md), non è necessario usare questa strategia. Il motivo è che quando si esegue una ricerca in siti di SharePoint e account di OneDrive in Advanced eDiscovery, la ricerca viene eseguita in tutti i data center. È necessario usare questa strategia basata sugli account utente specifici dell'area geografica e sui filtri delle autorizzazioni di ricerca solo quando si usa lo strumento Ricerca contenuto e si eseguono ricerche associate a [casi di eDiscovery](ediscovery-cases.md).
+> Quando si usa lo strumento di ricerca in [Advanced eDiscovery](overview-ediscovery-20.md), non è necessario usare questa strategia. Il motivo è che quando si esegue una ricerca in siti di SharePoint e account di OneDrive in Advanced eDiscovery, la ricerca viene eseguita in tutti i data center. È necessario usare questa strategia basata sugli account utente specifici dell'area geografica e sui filtri delle autorizzazioni di ricerca solo quando si usa lo strumento Ricerca contenuto e si eseguono ricerche associate a [casi di eDiscovery](./get-started-core-ediscovery.md).
 
 Si supponga, ad esempio, che un manager di eDiscovery debba cercare contenuto di SharePoint e OneDrive in posizioni satellite del Nord America, dell’Europa e dell’Asia Pacifico. Il primo passaggio consiste nel creare tre account utente, uno per ogni posizione. Il passaggio successivo consiste nel creare tre filtri delle autorizzazioni di ricerca, uno per ogni posizione *e* account utente corrispondente. Ecco alcuni esempi dei tre filtri delle autorizzazioni di ricerca per questo scenario. In ognuno di questi esempi il parametro **Area** specifica la posizione del datacenter di SharePoint per quell'area geografica e il parametro **Utenti** specifica l'account utente corrispondente.
 

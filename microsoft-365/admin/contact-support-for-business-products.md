@@ -22,12 +22,12 @@ search.appverid:
 description: Ottenere supporto tecnico e per la fatturazione usando i numeri di telefono indicati per il proprio paese o area geografica o inviando una richiesta di assistenza online.
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: 7679539e64588827b6dcc20f6f98bc67e613aae6
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: aa843f0c81f38e53b525b6e56d7f3fa69696de79
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261336"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907039"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>Modi di contattare il supporto tecnico per i prodotti per le aziende - Guida per l'amministratore
 
@@ -36,7 +36,7 @@ ms.locfileid: "50261336"
 > [!IMPORTANT]
 > Per usare questi metodi di assistenza, è necessario essere amministratori di un abbonamento aziendale. Se non si è un amministratore aziendale, usare [questa pagina di assistenza](https://support.microsoft.com/contactus).
 
-Per iniziare, [verificare lo stato di integrità corrente dei servizi](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health). È possibile visualizzare informazioni dettagliate sulle problematiche presenti e passate nel dashboard <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Integrità dei servizi</a>. Se si verifica un problema che non è elencato, è possibile ottenere supporto in uno dei modi seguenti:
+Per iniziare, [verificare lo stato di integrità corrente dei servizi](../enterprise/view-service-health.md). È possibile visualizzare informazioni dettagliate sulle problematiche presenti e passate nel dashboard <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Integrità dei servizi</a>. Se si verifica un problema che non è elencato, è possibile ottenere supporto in uno dei modi seguenti:
 
 ## <a name="online-support"></a>Supporto online
 
@@ -214,7 +214,7 @@ Il ruolo del supporto di 21Vianet consiste nel:
 
 ## <a name="feature-availability"></a>Disponibilità delle funzionalità
 
-Per visualizzare la disponibilità delle funzionalità tra i piani di Office 365, vedere [Descrizione dei servizi di Office 365](https://go.microsoft.com/fwlink/p/?linkid=846911).
+Per visualizzare la disponibilità delle funzionalità tra i piani di Office 365, vedere [Descrizione dei servizi di Office 365](/office365/servicedescriptions/office-365-platform-service-description/office-365-operated-by-21vianet).
 
 ## <a name="follow-us-on-wechat"></a>Seguici su WeChat
 

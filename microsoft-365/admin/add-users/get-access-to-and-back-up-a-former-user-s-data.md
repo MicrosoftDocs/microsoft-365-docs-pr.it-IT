@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: Informazioni su come conservare i file e i messaggi di posta elettronica di un dipendente quando la persona lascia l'organizzazione.
-ms.openlocfilehash: 32f64efb30acb5438e5add8bcb897200951e6362
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+ms.openlocfilehash: 38cc44bbe602f3c8c38ca54391d0967fbafbfcf7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780614"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906313"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>Accedere ai dati di un ex utente ed eseguirne il backup
 
@@ -38,9 +38,9 @@ Quando un dipendente lascia l'organizzazione, è probabile che si desideri acced
     
 ## <a name="access-a-former-users-onedrive-documents"></a>Accedere ai documenti di OneDrive di un ex utente
 
-Se si rimuove la licenza di un utente ma non si elimina l'account, è possibile concedere l'accesso al contenuto in OneDrive dell'utente. Se si elimina l'account dell'utente, si hanno 30 giorni per impostazione predefinita per accedere ai dati di OneDrive dell'ex utente. [Informazioni su come impostare la conservazione di OneDrive per gli utenti eliminati.](/onedrive/set-retention) Se non si ripristina un [account utente entro](/office365/admin/add-users/restore-user) questo periodo di tempo, il contenuto di OneDrive viene eliminato. 
+Se si rimuove la licenza di un utente ma non si elimina l'account, è possibile concedere l'accesso al contenuto in OneDrive dell'utente. Se elimini l'account dell'utente, hai 30 giorni per impostazione predefinita per accedere ai dati di OneDrive dell'ex utente. [Informazioni su come impostare la conservazione di OneDrive per gli utenti eliminati.](/onedrive/set-retention) Se non si ripristina un [account utente entro](/office365/admin/add-users/restore-user) questo periodo di tempo, il relativo contenuto di OneDrive viene eliminato. 
 
-Per conservare i file di OneDrive di un ex utente, prima di tutto concedere l'accesso a OneDrive e quindi spostare i file che si desidera conservare. 
+Per conservare i file di OneDrive di un ex utente, concedere innanzitutto l'accesso a OneDrive e quindi spostare i file che si desidera mantenere. 
 
 ::: moniker range="o365-worldwide"
 
@@ -48,13 +48,13 @@ Per conservare i file di OneDrive di un ex utente, prima di tutto concedere l'ac
     
 2. Selezionare un utente.
 
-3. Nel riquadro destro selezionare **OneDrive.** In **Ottieni accesso ai file** selezionare Crea collegamento ai **file.**
+3. Nel riquadro destro selezionare **OneDrive**. In **Ottieni accesso ai file** seleziona Crea collegamento ai **file**.
 
-4. Selezionare il collegamento per aprire il percorso del file. Scaricare i file nel computer oppure  selezionare Sposta **in** o Copia per spostarli o copiarli nel proprio OneDrive o in una raccolta condivisa. 
+4. Selezionare il collegamento per aprire il percorso del file. Scaricare i file nel computer oppure  selezionare Sposta **in** o Copia in per spostarli o copiarli nel proprio OneDrive o in una raccolta condivisa. 
 
 > [!NOTE]
 > È possibile spostare o copiare fino a 500 MB di file e cartelle alla volta.<br/>
-> Quando si spostano o si copiano documenti con cronologia delle versioni, viene spostata solo la versione più recente.  
+> Quando si spostano o copiano documenti con cronologia delle versioni, viene spostata solo la versione più recente.  
 
 ::: moniker-end
 
@@ -64,13 +64,13 @@ Per conservare i file di OneDrive di un ex utente, prima di tutto concedere l'ac
 
 2. Selezionare un utente.
 
-3. Nel riquadro destro espandere Impostazioni **di OneDrive** e quindi accanto ad **Access** selezionare **File di Access.**
+3. Nel riquadro destro espandere Impostazioni **di OneDrive** e quindi accanto ad **Access** selezionare **Accedi ai file.**
 
-4. Selezionare il collegamento per aprire il percorso del file. Scaricare i file nel computer oppure  selezionare Sposta **in** o Copia per spostarli o copiarli nel proprio OneDrive o in una raccolta condivisa. 
+4. Selezionare il collegamento per aprire il percorso del file. Scaricare i file nel computer oppure  selezionare Sposta **in** o Copia in per spostarli o copiarli nel proprio OneDrive o in una raccolta condivisa. 
 
 > [!NOTE]
 > È possibile spostare o copiare fino a 500 MB di file e cartelle alla volta.<br/>
-> Quando si spostano o si copiano documenti con cronologia delle versioni, viene spostata solo la versione più recente.  
+> Quando si spostano o copiano documenti con cronologia delle versioni, viene spostata solo la versione più recente.  
 
 ::: moniker-end
 
@@ -80,21 +80,21 @@ Per conservare i file di OneDrive di un ex utente, prima di tutto concedere l'ac
 
 2. Selezionare un utente.
 
-3. Nel riquadro destro espandere Impostazioni **di OneDrive** e quindi accanto ad **Access** selezionare **File di Access.**
+3. Nel riquadro destro espandere Impostazioni **di OneDrive** e quindi accanto ad **Access** selezionare **Accedi ai file.**
 
-4. Selezionare il collegamento per aprire il percorso del file. Scaricare i file nel computer oppure  selezionare Sposta **in** o Copia per spostarli o copiarli nel proprio OneDrive o in una raccolta condivisa.  
+4. Selezionare il collegamento per aprire il percorso del file. Scaricare i file nel computer oppure  selezionare Sposta **in** o Copia in per spostarli o copiarli nel proprio OneDrive o in una raccolta condivisa.  
 
 > [!NOTE]
 > È possibile spostare o copiare fino a 500 MB di file e cartelle alla volta.<br/>
-> Quando si spostano o si copiano documenti con cronologia delle versioni, viene spostata solo la versione più recente.  
+> Quando si spostano o copiano documenti con cronologia delle versioni, viene spostata solo la versione più recente.  
 
 ::: moniker-end
     
 
 
-## <a name="revoke-admin-access-to-a-users-onedrive"></a>Revocare l'accesso dell'amministratore a OneDrive di un utente
+## <a name="revoke-admin-access-to-a-users-onedrive"></a>Revocare l'accesso amministratore a OneDrive di un utente
 
-In quanto amministratore globale, è possibile concedere a se stessi l'accesso al contenuto in OneDrive di un utente, ma è possibile rimuovere l'accesso quando non è più necessario. 
+In quanto amministratore globale, puoi concedere l'accesso al contenuto in OneDrive di un utente, ma potresti voler rimuovere l'accesso quando non è più necessario. 
 
 ::: moniker range="o365-worldwide"
 
@@ -106,7 +106,7 @@ In quanto amministratore globale, è possibile concedere a se stessi l'accesso a
 
 ::: moniker range="o365-germany"
 
-1. Accedere all'interfaccia <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">di amministrazione</a> come amministratore globale o amministratore di SharePoint.
+1. Accedere <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">all'interfaccia di amministrazione</a> come amministratore globale o amministratore di SharePoint.
 
     Se viene visualizzato un messaggio che indica che non si dispone dell'autorizzazione per accedere all'interfaccia di amministrazione, non si dispone delle autorizzazioni di amministratore nell'organizzazione.
 
@@ -120,9 +120,9 @@ In quanto amministratore globale, è possibile concedere a se stessi l'accesso a
 
 ::: moniker-end
 
-2. Nel riquadro sinistro selezionare Interfaccia di amministrazione **di** \> **SharePoint.** Potrebbe essere necessario selezionare **Mostra tutto** per vedere l'elenco di interfacce di amministrazione.
+2. Nel riquadro sinistro selezionare **Interfaccia di amministrazione di** \> **SharePoint.** Potrebbe essere necessario selezionare **Mostra tutto** per vedere l'elenco di interfacce di amministrazione.
 
-3. Se viene visualizzata l'interfaccia  di amministrazione di SharePoint classica, selezionare Apri ora nella parte superiore della pagina per aprire l'interfaccia di amministrazione di SharePoint.
+3. Se viene visualizzata l'interfaccia di amministrazione di SharePoint classica, selezionare **Apri** ora nella parte superiore della pagina per aprire l'interfaccia di amministrazione di SharePoint.
 
 4. Nel riquadro sinistro selezionare **Altre funzionalità.**
 
@@ -130,9 +130,9 @@ In quanto amministratore globale, è possibile concedere a se stessi l'accesso a
 
 6. In **Utenti** selezionare **Gestisci profili utente.**
 
-7. Immettere il nome dell'utente e selezionare **Trova.**
+7. Immettere il nome dell'utente e selezionare **Trova**.
 
-8. Fare clic con il pulsante destro del mouse sull'utente e quindi scegliere **Gestisci proprietari raccolta siti.**
+8. Fare clic con il pulsante destro del mouse sull'utente e quindi **scegliere Gestisci proprietari raccolta siti**.
 
 9. Rimuovere la persona che non ha più bisogno di accedere ai dati dell'utente e quindi selezionare **OK.**
 
@@ -141,13 +141,13 @@ In quanto amministratore globale, è possibile concedere a se stessi l'accesso a
 
 Per salvare i messaggi di posta elettronica, il calendario, le attività e i contatti dell'ex dipendente, è possibile esportare le informazioni in un file di dati di Outlook (con estensione pst).
   
-1. [Aggiungere la posta elettronica dell'ex](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) dipendente a Outlook (se si reimposta la [password dell'utente,](reset-passwords.md)è possibile impostarla solo su qualcosa che si conosce).
+1. [Aggiungere il messaggio di posta elettronica dell'ex](https://support.microsoft.com/office/6e27792a-9267-4aa4-8bb6-c84ef146101b) dipendente a Outlook (se si reimposta la [password dell'utente,](reset-passwords.md)è possibile impostarlo su un elemento che solo si conosce).
     
-2. In Outlook selezionare **File.**
+2. In Outlook, selezionare **File**.
     
-    ![Aspetto della barra multifunzione in Outlook 2016.](../../media/d7f66ed3-9861-4521-b410-e86a58ab15a7.png)
+    ![Questo è l'aspetto della barra multifunzione in Outlook 2016.](../../media/d7f66ed3-9861-4521-b410-e86a58ab15a7.png)
   
-3. Selezionare **Apri &amp;** \> **importazione/esportazione.**
+3. Selezionare **Apri &amp;** \> **Esportazione/Importazione/Esportazione.**
     
     ![Comando Importa/esporta nella visualizzazione Backstage](../../media/6013919e-d8ce-4902-b7b4-78ff4260a2f8.jpg)
   
@@ -155,9 +155,9 @@ Per salvare i messaggi di posta elettronica, il calendario, le attività e i con
     
     ![Opzione Esporta in un file nell'Importazione/Esportazione guidata](../../media/458466a0-366b-4fbf-a2db-1919412c6527.jpg)
   
-5. Selezionare **File di dati di Outlook (pst)** e quindi fare clic su **Avanti.**
+5. Selezionare **File di dati di Outlook (.pst)** e quindi fare clic su **Avanti.**
     
-6. Selezionare l'account che si desidera esportare selezionando il nome o l'indirizzo di posta elettronica, ad esempio Cassetta postale - Anna Weiler o anne@contoso.com. Se si vuole esportare tutto il contenuto dell'account, inclusi i messaggi di posta elettronica, il calendario, i contatti, le attività e le note, verificare che sia selezionata la casella di controllo **Includi sottocartelle**. 
+6. Selezionare l'account che si desidera esportare selezionando il nome o l'indirizzo di posta elettronica, ad esempio Cassetta postale - Anne Weiler o anne@contoso.com. Se si vuole esportare tutto il contenuto dell'account, inclusi i messaggi di posta elettronica, il calendario, i contatti, le attività e le note, verificare che sia selezionata la casella di controllo **Includi sottocartelle**. 
     
     > [!NOTE]
     > È possibile esportare un solo account alla volta. Se si desidera esportare più account, ripetere questi passaggi per ognuno di essi. 
@@ -166,10 +166,10 @@ Per salvare i messaggi di posta elettronica, il calendario, le attività e i con
   
 7. Selezionare **Avanti**.
     
-8. Selezionare **Sfoglia** per selezionare la posizione in cui salvare il file di dati di Outlook (.pst). Digitare un  *nome di file* e quindi fare clic su **OK** per continuare. 
+8. Selezionare **Sfoglia** per selezionare la posizione in cui salvare il file di dati di Outlook (.pst). Digitare un  *nome di file* e quindi scegliere **OK** per continuare. 
     
     > [!NOTE]
-    > Se l'esportazione è già stata usata, verranno visualizzati il nome del file e il percorso della cartella precedenti. Digitare un *nome di file diverso prima* di selezionare **OK.** 
+    > Se l'esportazione è già stata usata, verranno visualizzati il nome del file e il percorso della cartella precedenti. Digitare un *nome di file diverso* prima di selezionare **OK.** 
   
 9. Se si esegue l'esportazione in un File di dati di Outlook (.pst) esistente, in **Opzioni** specificare come procedere per l'esportazione di elementi già esistenti nel file.
     
@@ -177,25 +177,25 @@ Per salvare i messaggi di posta elettronica, il calendario, le attività e i con
     
 Outlook avvia immediatamente l'esportazione, a meno che non venga creato un nuovo File di dati di Outlook (pst) o non venga usato un file protetto da password.
   
-   - Se si crea un nuovo File di dati di Outlook (pst), è possibile impostare una password facoltativa per proteggerlo. Quando viene visualizzata la finestra di dialogo Crea file di dati di **Outlook,** digitare la *password* nelle caselle **Password** e **Verifica password** e quindi selezionare **OK.** Nella finestra **di dialogo Password file** di dati di Outlook digitare la *password* e quindi fare clic su **OK.**
+   - Se si crea un nuovo File di dati di Outlook (pst), è possibile impostare una password facoltativa per proteggerlo. Quando viene visualizzata la finestra di dialogo Crea file di dati di **Outlook,** digitare la *password* nelle caselle **Password** e Verifica **password** e quindi selezionare **OK.** Nella finestra **di dialogo Password file** di dati di Outlook digitare la *password* e quindi selezionare **OK.**
     
-  - Se si sta esportando in un file di dati di Outlook (pst) esistente protetto da password, nella finestra di dialogo Password file di dati di **Outlook** digitare la *password* e quindi selezionare **OK.**
+  - Se si sta esportando in un file di dati di Outlook (pst) esistente protetto da password, nella finestra di dialogo **Password file** di dati di Outlook digitare la  *password* e quindi scegliere **OK**.
     
-Informazioni su come [esportare o eseguire il backup](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91) di posta elettronica, contatti e calendario in un file PST di Outlook in Outlook 2010. 
+Informazioni su come [esportare o eseguire il backup](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91) di posta elettronica, contatti e calendario in un file pst di Outlook in Outlook 2010. 
   
   
   > [!NOTE]
-  > Per impostazione predefinita, la posta elettronica è disponibile offline per un periodo di 12 mesi. Se necessario, vedere come aumentare [i dati disponibili offline.](Https://docs.microsoft.com/outlook/troubleshoot/mailboxes/only-subset-items-synchronized)
+  > Per impostazione predefinita, la posta elettronica è disponibile offline per un periodo di 12 mesi. Se necessario, vedere come aumentare [i dati disponibili offline.](/outlook/troubleshoot/mailboxes/only-subset-items-synchronized)
  
 ## <a name="give-another-user-access-to-a-former-users-email"></a>Concedere a un altro utente l'accesso alla posta elettronica di un ex utente 
 
 Per concedere l'accesso ai messaggi di posta elettronica, al calendario, alle attività e ai contatti dell'ex dipendente a un altro dipendente, importare le informazioni nella posta in arrivo di Outlook di un altro dipendente.
 
 > [!NOTE]
-> È inoltre possibile [convertire la cassetta postale dell'ex](https://docs.microsoft.com/office365/admin/email/convert-user-mailbox-to-shared-mailbox) utente in una cassetta postale condivisa o inoltrare la posta elettronica di un ex dipendente a un altro [dipendente.](https://docs.microsoft.com/office365/admin/add-users/remove-former-employee#forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox)
+> È inoltre possibile [convertire la cassetta postale dell'ex](/office365/admin/email/convert-user-mailbox-to-shared-mailbox) utente in una cassetta postale condivisa o inoltrare la posta elettronica di un ex dipendente a un altro [dipendente.](/office365/admin/add-users/remove-former-employee#forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox)
 
   
-1. In Outlook, andare a **File** \> **Open Export &amp;** \> **Import/Export**.
+1. In Outlook, andare a **File** \> **Apri &amp; Esporta** \> **Importazione/Esportazione**.
     
     Viene avviata l'Importazione/Esportazione guidata.
     
@@ -203,7 +203,7 @@ Per concedere l'accesso ai messaggi di posta elettronica, al calendario, alle at
     
     ![Importazione/Esportazione guidata](../../media/15cdd674-cd7b-492c-8e93-992cfa890f26.jpg)
   
-3. Selezionare **File di dati di Outlook (pst)** e selezionare **Avanti.**
+3. Selezionare **File di dati di Outlook (.pst)** e selezionare **Avanti.**
     
 4. Passare al file PST che si vuole importare.
     
@@ -218,7 +218,7 @@ Per concedere l'accesso ai messaggi di posta elettronica, al calendario, alle at
 9. Select **Finish**.
 
 > [!NOTE]
-> I passaggi rimangono gli stessi per accedere ai dati di OneDrive e di posta elettronica di un utente esistente.
+> I passaggi rimangono gli stessi per accedere a OneDrive e ai dati di posta elettronica di un utente esistente.
     
 > [!TIP]
 > Se si desidera importare o ripristinare solo alcuni elementi da un file di dati di Outlook (pst), è possibile aprire il file di dati di Outlook. Nel riquadro di spostamento trascinare quindi gli elementi dalle cartelle File di dati di Outlook alle cartelle di Outlook esistenti. 
@@ -227,9 +227,8 @@ Per concedere l'accesso ai messaggi di posta elettronica, al calendario, alle at
 ## <a name="related-articles"></a>Articoli correlati
 [Rimuovere un ex dipendente da Office 365](remove-former-employee.md)
 
-[Aggiungere e rimuovere amministratori in un account di OneDrive](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive)
+[Aggiungere e rimuovere amministratori in un account OneDrive](/sharepoint/manage-user-profiles#add-and-remove-admins-for-a-users-onedrive)
 
 [Ripristinare un OneDrive eliminato](/onedrive/restore-deleted-onedrive)
   
 [Conservazione ed eliminazione di OneDrive](/onedrive/retention-and-deletion)
-  

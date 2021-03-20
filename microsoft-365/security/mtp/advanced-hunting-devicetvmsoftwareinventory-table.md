@@ -1,7 +1,7 @@
 ---
 title: Tabella DeviceTvmSoftwareInventory nello schema di ricerca avanzata
 description: Informazioni sull'inventario del software nei dispositivi nella tabella DeviceTvmSoftwareInventory dello schema di ricerca avanzata.
-keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, protezione dalle minacce Microsoft, Microsoft 365, mtp, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, gestione delle vulnerabilità del & delle minacce, TVM, gestione dei dispositivi, software, inventario, vulnerabilità, ID CVE, OS DeviceTvmSoftwareInventoryVulnerabilities
+keywords: ricerca avanzata, ricerca di minacce, ricerca di minacce informatiche, protezione dalle minacce Microsoft, Microsoft 365, mtp, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, gestione delle vulnerabilità del & delle minacce, TVM, gestione dei dispositivi, software, inventario, vulnerabilità, ID CVE, OS DeviceTvmSoftwareInventoryVulnerabilities
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 445e6f767cc2269315a0b280df2f4deefa2faa08
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 0bdd3b8564a01b36d1c21d0f49a29ce1afd98348
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423976"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50907329"
 ---
 # <a name="devicetvmsoftwareinventory"></a>DeviceTvmSoftwareInventory
 
@@ -36,13 +36,13 @@ ms.locfileid: "50423976"
 - Microsoft 365 Defender
 
 >[!IMPORTANT]
-> Alcune informazioni riguardano prodotti non rilasciati in precedenza che potrebbero essere sostanzialmente modificati prima del rilascio sul mercato. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Alcune informazioni riguardano prodotti prereleased che possono essere sostanzialmente modificati prima che venga rilasciato commercialmente. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
-La tabella nello schema di ricerca avanzata contiene l'inventario threat & Vulnerability Management del software attualmente installato nei dispositivi della rete, incluse le informazioni sulla `DeviceTvmSoftwareInventory` [fine](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) del supporto. Ad esempio, puoi cercare eventi che coinvolgono dispositivi installati con una versione software attualmente vulnerabile. Utilizzare questo riferimento per creare query che forniscano informazioni dalla tabella.
+La tabella nello schema di ricerca avanzata contiene l'inventario threat & Vulnerability Management del software attualmente installato nei dispositivi della rete, incluse le informazioni sulla fine `DeviceTvmSoftwareInventory` del supporto. [](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt) Puoi, ad esempio, cercare eventi che coinvolgono dispositivi installati con una versione software attualmente vulnerabile. Utilizzare questo riferimento per creare query che forniscano informazioni dalla tabella.
 
 >[!NOTE]
-> La `DeviceTvmSoftwareInventory` tabella e le tabelle sono state `DeviceTvmSoftwareVulnerabilities` `DeviceTvmSoftwareInventoryVulnerabilities` sostituite. Insieme, le prime due tabelle includono più colonne che puoi usare per informare le attività di gestione della volgarità o cercare dispositivi vulnerabili.
+> Le `DeviceTvmSoftwareInventory` tabelle e hanno `DeviceTvmSoftwareVulnerabilities` sostituito la `DeviceTvmSoftwareInventoryVulnerabilities` tabella. Insieme, le prime due tabelle includono più colonne che puoi usare per informare le attività di gestione della vulnerablità o cercare dispositivi vulnerabili.
 
 Per informazioni sulle altre tabelle nello schema per Ricerca avanzata vedere [le informazioni di riferimento sulla Ricerca avanzata](advanced-hunting-schema-tables.md).
 
@@ -56,8 +56,8 @@ Per informazioni sulle altre tabelle nello schema per Ricerca avanzata vedere [l
 | `SoftwareVendor` | stringa | Nome del fornitore del software |
 | `SoftwareName` | stringa | Nome del prodotto software |
 | `SoftwareVersion` | stringa | Numero della versione del prodotto software |
-| `EndOfSupportStatus` | stringa | Indica la fase del ciclo di vita del prodotto software rispetto alla data di fine del supporto (EOS) o fine del ciclo di vita (EOL) specificata |
-| `EndOfSupportDate` | stringa | Data di fine del supporto (EOS) o fine del ciclo di vita (EOL) del prodotto software |
+| `EndOfSupportStatus` | stringa | Indica la fase del ciclo di vita del prodotto software rispetto alla data di fine del supporto (EOS) o di fine vita (EOL) specificata |
+| `EndOfSupportDate` | stringa | Data di fine del supporto (EOS) o fine vita (EOL) del prodotto software |
 
 
 
@@ -69,4 +69,4 @@ Per informazioni sulle altre tabelle nello schema per Ricerca avanzata vedere [l
 - [Cercare tra dispositivi, posta elettronica, app e identità](advanced-hunting-query-emails-devices.md)
 - [Comprendere lo schema](advanced-hunting-schema-tables.md)
 - [Applicare le procedure consigliate per le query](advanced-hunting-best-practices.md)
-- [Panoramica della Gestione della vulnerabilità e delle minacce](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Panoramica della Gestione della vulnerabilità e delle minacce](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
