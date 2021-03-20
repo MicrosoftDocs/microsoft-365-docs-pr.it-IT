@@ -16,16 +16,16 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 0d93ff4a-8fbd-42b8-9227-d817dba0046d
 description: In questo articolo vengono fornite risorse per la progettazione e l'implementazione di siti Internet di Sharepoint Server 2013 ospitati in Servizi infrastruttura di Azure.
-ms.openlocfilehash: 48e0ec38d315aae3d409c3319a4528430331bb94
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: f6c7bec1dccc48c1080f76c30bb31b98a473f66e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47546619"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909763"
 ---
 # <a name="internet-sites-in-microsoft-azure-using-sharepoint-server-2013"></a>Siti Internet in Microsoft Azure che utilizzano SharePoint Server 2013
 
- I siti Internet che usano SharePoint Server 2013 traggono vantaggio dall'essere ospitati in Servizi infrastruttura di Azure. In questo articolo sono disponibili risorse utili per progettare e implementare questa soluzione.
+ I siti Internet che usano SharePoint Server 2013 traggono vantaggio dall'hosting in Servizi infrastruttura di Azure. In questo articolo sono disponibili risorse utili per progettare e implementare questa soluzione.
 
 ## <a name="using-azure-infrastructure-services-for-internet-sites"></a>Utilizzare i servizi infrastruttura di Azure per i siti Internet
 
@@ -39,7 +39,7 @@ Microsoft Azure fornisce un'opzione interessante per ospitare siti Internet basa
 
 - Sfruttare Azure Active Directory per gli account cliente.
 
-- Aggiungere funzionalità attualmente non disponibili in Microsoft 365, ad esempio analisi e report approfonditi.
+- Aggiungere funzionalità attualmente non disponibili in Microsoft 365, ad esempio la creazione di report approfonditi e l'analisi.
 
 ## <a name="resources"></a>Risorse
 
@@ -54,4 +54,4 @@ Le seguenti illustrazioni tecniche e i seguenti articoli forniscono informazioni
 
 ## <a name="see-also"></a>Vedere anche
 
-[Microsoft 365 Solution and Architecture Center](../solutions/solution-architecture-center.md)
+[Centro soluzioni e architetture di Microsoft 365](../solutions/index.yml)

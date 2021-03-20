@@ -20,12 +20,12 @@ search.appverid:
 description: Informazioni su come riconoscere e rispondere a un account di posta elettronica compromesso usando gli strumenti disponibili in Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5dfb40c195cb9df9c8f2ac5d1cfbacdda022d416
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 774d96fb22bb13d4b4edcfab45f27ca9e52c5e88
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406725"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908831"
 ---
 # <a name="responding-to-a-compromised-email-account"></a>Rispondere a un account di posta elettronica compromesso
 
@@ -102,7 +102,7 @@ Seguire le procedure in [reimpostare la password per un utente ](../../admin/add
 >
 > - Se l'identità dell'utente locale è federata con Microsoft 365, è necessario cambiare la password locale e quindi informare l'amministratore della violazione.
 >
-> - Assicurati di aggiornare le password dell'app. Le password dell'app non vengono automaticamente revocate quando si reimposta la password di un account utente. L'utente deve eliminare le password dell'app esistenti e crearne nuove. Per istruzioni, vedere [creare ed eliminare password per le app dalla pagina Verifica di sicurezza aggiuntiva](https://docs.microsoft.com/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page).
+> - Assicurati di aggiornare le password dell'app. Le password dell'app non vengono automaticamente revocate quando si reimposta la password di un account utente. L'utente deve eliminare le password dell'app esistenti e crearne nuove. Per istruzioni, vedere [creare ed eliminare password per le app dalla pagina Verifica di sicurezza aggiuntiva](/azure/active-directory/user-help/multi-factor-authentication-end-user-app-passwords#create-and-delete-app-passwords-from-the-additional-security-verification-page).
 >
 > - È altamente consigliabile abilitare l'autenticazione a più fattori (MFA) per evitare violazioni, soprattutto per gli account con privilegi amministrativi. Per maggiori dettagli sull’autenticazione a più fattori, visitare [Configurare l’autenticazione a più fattori](../../admin/security-and-compliance/set-up-multi-factor-authentication.md).
 

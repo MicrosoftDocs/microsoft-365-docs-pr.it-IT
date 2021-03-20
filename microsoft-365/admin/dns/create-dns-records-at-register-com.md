@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 55bd8c38-3316-48ae-a368-4959b2c1684e
-description: Informazioni su come verificare il dominio e configurare i record DNS per posta elettronica, Skype for Business online e altri servizi Register.com per Microsoft.
-ms.openlocfilehash: dd2f3d516b5309fee85dd572470fe610ff277a68
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for Business Online e altri servizi Register.com per Microsoft.
+ms.openlocfilehash: 439b96ef7ad2fd70b94c3945519d4fa270e43fd2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657593"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910055"
 ---
 # <a name="create-dns-records-at-registercom-for-microsoft"></a>Creare record DNS in Register.com per Microsoft
 
@@ -67,9 +67,9 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 0:44)](
     
 2. Selezionare **Domini**.
     
-3. Selezionare **Gestisci.**
+3. Selezionare **Gestisci**.
     
-4. Individuare la riga contenente il nome del dominio che si desidera modificare. e quindi, in tale riga, selezionare **Gestisci.**
+4. Individuare la riga contenente il nome del dominio che si desidera modificare. e quindi, in tale riga, selezionare **Gestisci**.
     
 5. Scorrere verso il basso **fino alla sezione Advanced Technical Settings** e quindi selezionare Edit TXT Records **(SPF)**.
     
@@ -82,7 +82,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 0:44)](
    
 7. Selezionare **Continua.**
     
-8. Nella pagina successiva, selezionare **di nuovo Continua** per confermare le modifiche. 
+8. Nella pagina successiva selezionare di **nuovo Continua** per confermare le modifiche. 
     
 9. Attendere alcuni minuti prima di continuare, in modo che il record appena creato venga aggiornato in Internet.
     
@@ -110,13 +110,13 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 3:32)](
     
 2. Selezionare **Domini**.
     
-3. Selezionare **Gestisci.**
+3. Selezionare **Gestisci**.
     
-4. Individuare la riga contenente il nome del dominio che si desidera modificare. e quindi, in tale riga, selezionare **Gestisci.**
+4. Individuare la riga contenente il nome del dominio che si desidera modificare. e quindi, in tale riga, selezionare **Gestisci**.
     
-5. Scorrere fino alla **sezione Advanced Technical Settings** e quindi selezionare Edit Mail **Exchanger Records.**
+5. Scorrere fino alla **sezione Impostazioni tecniche avanzate** e quindi selezionare Modifica record Mail **Exchanger.**
     
-    ![Select Edit Mail Exchanger Records](../../media/366b96a1-9147-4bbb-9f8f-50856466cc61.png)
+    ![Selezionare Modifica record Mail Exchanger](../../media/366b96a1-9147-4bbb-9f8f-50856466cc61.png)
   
 6. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori della tabella seguente.
     
@@ -124,7 +124,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 3:32)](
     
     |****Host Name****|****Priority****|****Mail Server****|
     |:-----|:-----|:-----|
-    |@  <br/> |High  <br/> Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  <br/>**Nota:** ottenere il valore \<*domain-key*\> dal proprio account Microsoft. <br> [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
+    |@  <br/> |High  <br/> Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](../setup/domains-faq.yml). <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/>  <br/>**Nota:** ottenere il valore \<*domain-key*\> dal proprio account Microsoft. <br> [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
    
     ![Copiare e incollare il valore dalla tabella](../../media/a1a15a14-c3dc-45dc-adcd-90fdb3f7455d.png)
   
@@ -136,7 +136,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 3:32)](
     
     ![Selezionare Continua](../../media/6ef6ce01-ce21-4e3c-8209-4aa9a3dd4b76.png)
   
-9. Nella pagina successiva, selezionare **di nuovo Continua** per confermare e salvare le modifiche. 
+9. Nella pagina successiva selezionare di nuovo **Continua** per confermare e salvare le modifiche. 
     
     ![Selezionare Continua](../../media/adba4a60-bf61-44fc-9ad9-360e66f8a2ee.png)
   
@@ -149,17 +149,17 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 4:23)](
     
 2. Selezionare **Domini**.
     
-3. Selezionare **Gestisci.**
+3. Selezionare **Gestisci**.
     
-4. Individuare la riga contenente il nome del dominio che si desidera modificare. e quindi, in tale riga, selezionare **Gestisci.**
+4. Individuare la riga contenente il nome del dominio che si desidera modificare. e quindi, in tale riga, selezionare **Gestisci**.
     
-5. Scorrere fino alla **sezione Advanced Technical Settings** e quindi selezionare Edit Domain **Aliases Records.**
+5. Scorrere fino alla **sezione Impostazioni tecniche avanzate** e quindi selezionare Modifica record alias di **dominio**.
     
-    ![Select Edit Domain Aliases Records](../../media/9fbc31ed-d67c-4828-8bd4-b51068f1e0ca.png)
+    ![Selezionare Modifica record alias di dominio](../../media/9fbc31ed-d67c-4828-8bd4-b51068f1e0ca.png)
   
-6. Selezionare **Aggiungi altri alias di dominio.**
+6. Selezionare **Aggiungi altri alias di dominio**.
     
-    ![Select Add more domains aliases](../../media/b787505f-5566-4879-8552-13f9e89cbf6b.png)
+    ![Selezionare Aggiungi altri alias di domini](../../media/b787505f-5566-4879-8552-13f9e89cbf6b.png)
   
 7. Aggiungere i record CNAME necessari.
     
@@ -179,7 +179,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 4:23)](
     
     ![Selezionare Continua](../../media/1942612b-338a-48fa-a45d-2d5434516723.png)
   
-9. Nella pagina successiva, selezionare **di nuovo Continua** per confermare e salvare le modifiche. 
+9. Nella pagina successiva selezionare di nuovo **Continua** per confermare e salvare le modifiche. 
     
     ![Selezionare Continua](../../media/3342b570-0633-49c5-9175-5cc8e4a67b53.png)
   
@@ -195,13 +195,13 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 5:12)](
     
 2. Selezionare **Domini**.
     
-3. Selezionare **Gestisci.**
+3. Selezionare **Gestisci**.
     
-4. Individuare la riga contenente il nome del dominio che si desidera modificare. e quindi, in tale riga, selezionare **Gestisci.**
+4. Individuare la riga contenente il nome del dominio che si desidera modificare. e quindi, in tale riga, selezionare **Gestisci**.
     
 5. Scorrere fino alla **sezione Advanced Technical Settings** e quindi selezionare Edit TXT Records **(SPF)**.
     
-    ![Select Edit TXT Records (SPF)](../../media/c917577a-8b3a-4210-ab6e-776e84f926d0.png)
+    ![Selezionare Modifica record TXT (SPF)](../../media/c917577a-8b3a-4210-ab6e-776e84f926d0.png)
   
 6. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori della tabella seguente.
     
@@ -215,7 +215,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 5:12)](
     
     ![Selezionare Continua](../../media/08250c98-1a86-48a8-ad94-f96cf338126b.png)
   
-8. Nella pagina successiva, selezionare **di nuovo Continua** per confermare e salvare le modifiche. 
+8. Nella pagina successiva selezionare di nuovo **Continua** per confermare e salvare le modifiche. 
     
     ![Selezionare Continua](../../media/56be3b0a-dc71-471c-9be3-6ab927296f67.png)
   
@@ -228,11 +228,11 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 5:55)](
     
 2. Selezionare **Domini**.
     
-3. Selezionare **Gestisci.**
+3. Selezionare **Gestisci**.
     
-4. Individuare la riga contenente il nome del dominio che si desidera modificare. e quindi, in tale riga, selezionare **Gestisci.**
+4. Individuare la riga contenente il nome del dominio che si desidera modificare. e quindi, in tale riga, selezionare **Gestisci**.
     
-5. Scorrere fino alla **sezione Advanced Technical Settings** e quindi selezionare Edit **SRV Records.**
+5. Scorrere fino alla **sezione Impostazioni tecniche avanzate** e quindi selezionare Modifica record **SRV.**
     
     ![Selezionare Modifica record SRV](../../media/73c149ae-f0d6-460e-880a-7e04a995acc3.png)
   
@@ -244,8 +244,8 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 5:55)](
     
     |****Service****|****Proto****|****Name****|****Priority****|****Weight****|****Port****|****Target****|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |@  <br/> |High  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/>  <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |High  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/>  <br/> |
+    |_sip  <br/> |_tls  <br/> |@  <br/> |High  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/>  <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |@  <br/> |High  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/>  <br/> |
    
     ![Copiare e incollare i valori dalla tabella](../../media/71304c81-5845-4a8f-b969-d9efc8721184.png)
   
@@ -257,14 +257,13 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 5:55)](
     
     Digitare o copiare e incollare i valori della seconda riga della tabella precedente nelle caselle per il secondo record.
     
-9. Dopo aver aggiunto entrambi i record SRV, selezionare **Continua.**
+9. Dopo aver aggiunto entrambi i record SRV, selezionare **Continua**.
     
     ![Selezionare Continua](../../media/008b255a-42d3-442d-83ea-3ffcb7c8fc5d.png)
   
-10. Nella pagina successiva, selezionare **di nuovo Continua** per confermare e salvare le modifiche. 
+10. Nella pagina successiva selezionare di nuovo **Continua** per confermare e salvare le modifiche. 
     
     ![Selezionare Continua](../../media/b4166e3d-7e4b-41ef-b616-747e95aefc37.png)
   
 > [!NOTE]
 > In genere, l'applicazione delle modifiche al DNS richiede circa 15 minuti. Tuttavia, a volte può capitare che l'aggiornamento di una modifica nel sistema DNS di Internet richieda più tempo. In caso di problemi con il flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Individuare e correggere i problemi dopo l'aggiunta del dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
-  

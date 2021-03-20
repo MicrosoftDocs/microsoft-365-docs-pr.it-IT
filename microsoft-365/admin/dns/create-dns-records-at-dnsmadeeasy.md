@@ -1,5 +1,5 @@
 ---
-title: Creare record DNS su DNSMadeEasy per Microsoft
+title: Creare record DNS in DNSMadeEasy per Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,21 +20,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: e158b079-b054-4b7e-8e01-e55169ce18d7
-description: Informazioni su come verificare il dominio e configurare i record DNS per posta elettronica, Skype for Business online e altri servizi su DNSMadeEasy per Microsoft.
-ms.openlocfilehash: 719b416564447b3a6f4108b747ae921b4f6f6bb8
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for Business Online e altri servizi in DNSMadeEasy per Microsoft.
+ms.openlocfilehash: 11e8072ab3c798ed550043370d0e6e79c7370b4d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657949"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910391"
 ---
-# <a name="create-dns-records-at-dnsmadeeasy-for-microsoft"></a>Creare record DNS su DNSMadeEasy per Microsoft
+# <a name="create-dns-records-at-dnsmadeeasy-for-microsoft"></a>Creare record DNS in DNSMadeEasy per Microsoft
 
  **Se non si trova ciò che si sta cercando, [vedere le domande frequenti sui domini](../setup/domains-faq.yml)**. 
   
 Se il proprio provider di hosting DNS è DNSMadeEasy, seguire i passaggi di questo articolo per verificare il dominio e configurare i record DNS per la posta elettronica, Skype for Business online e così via.
   
-Dopo aver aggiunto questi record in DNSMadeEasy, il dominio sarà configurato per l'utilizzo con i servizi Microsoft.
+Dopo aver aggiunto questi record in DNSMadeEasy, il dominio verrà configurato per l'utilizzo con i servizi Microsoft.
   
 
   
@@ -56,7 +56,7 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
     
 2. **Nell'area** **Domini** aggiornati di recente della pagina Console di gestione selezionare il dominio che si desidera aggiornare. 
     
-3. Nell'area **TXT Records** della pagina **Managed DNS** selezionare il controllo ( ) ( **+** Add **new**).
+3. Nell'area **TXT Records** della pagina **Managed DNS** selezionare il controllo ( ) ( ) ( **+** Add **new**).
     
     Può essere necessario scorrere la pagina.
     
@@ -110,7 +110,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Name**|**Server**|**MX Level**|**TTL**|
     |:-----|:-----|:-----|:-----|
-    |Lasciare vuoto questo campo.  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> **Nota:** ottenere il valore \<*domain-key*\> dal proprio account Microsoft. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |1800  <br/> |
+    |Lasciare vuoto questo campo.  <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> **Nota:** ottenere il valore \<*domain-key*\> dal proprio account Microsoft. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |10    <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](../setup/domains-faq.yml). <br/> |1800  <br/> |
    
     ![DNSMadeEasy-BP-Configure-2-2](../../media/69b53af9-1eec-435c-8434-1b6058c1ec82.png)
   
@@ -126,7 +126,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![DNSMadeEasy-BP-Configure-2-4-2](../../media/e9064c07-1ce7-4387-b47a-90d4193da374.png)
   
-8. Nella finestra **di dialogo Elimina record MX,** selezionare **Elimina** per confermare le modifiche. 
+8. Nella finestra **di dialogo Elimina record MX** selezionare Elimina **per** confermare le modifiche. 
     
     ![DNSMadeEasy-BP-Configure-2-5](../../media/03c405e5-868f-468f-b6d2-046d27b201fb.png)
   
@@ -165,19 +165,19 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     Nella sezione **CNAME Records** selezionare il controllo **(+)** ( **Add new**), creare un record utilizzando i valori della riga successiva della tabella e quindi selezionare di nuovo **Submit** per completare il record. 
     
-    Ripetere questo processo fino a creare tutti e cinque i record CNAME.
+    Ripetere questo processo finché non sono stati creati tutti e cinque i record CNAME.
     
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Aggiungere un record TXT per SPF per evitare di ricevere posta indesiderata
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un singolo record  *SPF*  che include entrambi i set di valori. Servono esempi? Consultare [Record Domain Name System (DNS) esterni per Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records). Per convalidare il record SPF, è possibile utilizzare uno di questi[strumenti di convalida SPF.](../setup/domains-faq.yml) 
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Aggiungere invece i valori Microsoft necessari al record corrente in modo da disporre di un singolo record  *SPF*  che include entrambi i set di valori. Servono esempi? Consultare [Record Domain Name System (DNS) esterni per Microsoft](../../enterprise/external-domain-name-system-records.md). Per convalidare il record SPF, è possibile utilizzare uno di questi[strumenti di convalida SPF.](../setup/domains-faq.yml) 
   
 1. Per iniziare, passare alla propria pagina dei domini su DNSMadeEasy usando [questo collegamento](https://cp.dnsmadeeasy.com/). Verrà richiesto di eseguire l'accesso.
     
 2. **Nell'area** **Domini** aggiornati di recente della pagina Console di gestione selezionare il dominio che si desidera aggiornare. 
     
-3. Nell'area **TXT Records** della pagina **Managed DNS** selezionare il **controllo (+)** ( **Add new**).
+3. **Nell'area TXT** **Records** della pagina Managed DNS selezionare il **controllo (+)** ( **Add new**).
     
     Può essere necessario scorrere la pagina.
     
@@ -202,7 +202,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
 2. **Nell'area** **Domini** aggiornati di recente della pagina Console di gestione selezionare il dominio che si desidera aggiornare. 
     
-3. **Nell'area** **SRV Records** della pagina Managed DNS selezionare il controllo **(+)** ( **Add new**).
+3. Nell'area **Record SRV** della pagina **DNS** gestito selezionare il **controllo (+)** ( **Aggiungi nuovo**).
     
     Può essere necessario scorrere la pagina.
     
@@ -214,8 +214,8 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Name**|**Priorità**|**Peso**|**Porta**|**Host**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip._tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |1800  <br/> |
-    |_sipfederationtls._tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |1800  <br/> |
+    |_sip._tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |1800  <br/> |
+    |_sipfederationtls._tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |1800  <br/> |
    
     ![DNSMadeEasy-BP-Configure-5-2](../../media/e1155f94-575f-441a-9a61-d948391d42ca.png)
   
@@ -225,9 +225,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 6. Aggiungere l'altro record SRV.
     
-    Nella sezione **SRV Records** selezionare il controllo **(+)** ( **Add new**), creare un record utilizzando i valori della riga successiva della tabella e quindi selezionare di nuovo **Submit** per completare il record. 
+    Nella sezione **Record SRV** selezionare il controllo **(+)** ( **Aggiungi** nuovo ), creare un record utilizzando i  valori della riga successiva della tabella e quindi selezionare di nuovo Invia per completare il record. 
     
 > [!NOTE]
 > In genere, l'applicazione delle modifiche al DNS richiede circa 15 minuti. Tuttavia, a volte può capitare che l'aggiornamento di una modifica nel sistema DNS di Internet richieda più tempo. In caso di problemi con il flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Individuare e correggere i problemi dopo l'aggiunta del dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
-  
-

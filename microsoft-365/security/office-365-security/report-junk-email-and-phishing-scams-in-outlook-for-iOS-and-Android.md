@@ -14,15 +14,15 @@ search.appverid:
 ms.assetid: 758822b5-0126-463a-9d08-7366bb2a807d
 ms.collection:
 - M365-security-compliance
-description: Gli amministratori possono conoscere le opzioni di segnalazione della posta indesiderata, non della posta indesiderata e di phishing incorporate in Outlook per iOS e Android.
+description: Gli amministratori possono conoscere le opzioni predefinite per la segnalazione della posta indesiderata, non della posta indesiderata e del phishing in Outlook per iOS e Android.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: e6e63f534a9f9516c6e1a87ff82d5b0916d25778
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: eda0d8d43244834236a70374df6b7d6ccf0b69ab
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509327"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908819"
 ---
 # <a name="report-junk-and-phishing-email-in-outlook-for-ios-and-android-in-exchange-online"></a>Segnalare posta indesiderata e phishing in Outlook per iOS e Android in Exchange Online
 
@@ -37,13 +37,13 @@ Nelle organizzazioni di Microsoft 365 con cassette postali in Exchange Online o 
 
 ## <a name="what-do-you-need-to-know-before-you-begin"></a>Cosa è necessario sapere prima di iniziare
 
-- Per una migliore esperienza di invio da parte dell'utente, ti consigliamo di usare i componenti aggiuntivi Segnala messaggio e Segnala phishing. Per [ulteriori informazioni,](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-message-add-in) vedere Abilitare il componente aggiuntivo Segnala messaggio e Abilitare [il](https://docs.microsoft.com/microsoft-365/security/office-365-security/enable-the-report-phish-add-in) componente aggiuntivo Segnala phishing.
+- Per la migliore esperienza di invio degli utenti, ti consigliamo di usare i componenti aggiuntivi Segnala messaggio e Segnala phishing. Per ulteriori informazioni, vedere [Enable the Report Message add-in](./enable-the-report-message-add-in.md) e Enable the Report Phishing [add-in.](./enable-the-report-phish-add-in.md)
 
-- Se si è un amministratore di un'organizzazione con cassette postali di Exchange Online, si consiglia di utilizzare il portale Invii nel Centro sicurezza & conformità. Per altre informazioni, vedi Usare l'invio dell'amministratore per inviare posta [indesiderata, phish, URL e file sospetti a Microsoft.](admin-submission.md)
+- Se si è un amministratore di un'organizzazione con cassette postali di Exchange Online, è consigliabile utilizzare il portale invii nel Centro sicurezza & conformità. Per ulteriori informazioni, vedere [Use Admin Submission to submit suspected spam, phish, URLs, and files to Microsoft](admin-submission.md).
 
-- È possibile configurare i messaggi segnalati da copiare o reindirizzare a una cassetta postale specificata. Per altre informazioni, vedi [Criteri per gli invii degli utenti.](user-submission.md)
+- È possibile configurare i messaggi segnalati da copiare o reindirizzare a una cassetta postale specificata. Per ulteriori informazioni, vedere [Criteri di invio degli utenti.](user-submission.md)
 
-- Per ulteriori informazioni sulla segnalazione dei messaggi a Microsoft, vedere [Segnalare messaggi e file a Microsoft.](report-junk-email-messages-to-microsoft.md)
+- Per ulteriori informazioni sulla segnalazione dei messaggi a Microsoft, vedere [Segnalare messaggi e file a Microsoft](report-junk-email-messages-to-microsoft.md).
 
   > [!NOTE]
-  > Se la segnalazione della posta indesiderata è disabilitata per Outlook nei criteri di invio degli utenti, i messaggi di posta indesiderata o di phishing verranno spostati nella cartella Posta indesiderata e non segnalati all'amministratore o a Microsoft.
+  > Se la segnalazione della posta indesiderata è disabilitata per Outlook nei criteri di invio degli utenti, i messaggi di posta indesiderata o phishing verranno spostati nella cartella Posta indesiderata e non segnalati all'amministratore o a Microsoft.

@@ -3,7 +3,6 @@ title: Sottoscrizioni, licenze, account e tenant per offerte cloud di Microsoft
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
-ms.date: 06/25/2020
 audience: ITPro
 ms.topic: conceptual
 ms.service: o365-solutions
@@ -21,12 +20,12 @@ ms.custom:
 - seo-marvel-apr2020
 - Ent_Architecture
 description: Comprendere le relazioni delle organizzazioni, le sottoscrizioni, le licenze, gli account utente e i tenant tra le offerte cloud di Microsoft.
-ms.openlocfilehash: c48e2ecc321f4b6e06ced13f029e344faf12650b
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+ms.openlocfilehash: eaf1c2399b5d44ea8d6000042b3258d0e8b5a7de
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446032"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909515"
 ---
 # <a name="subscriptions-licenses-accounts-and-tenants-for-microsofts-cloud-offerings"></a>Sottoscrizioni, licenze, account e tenant per offerte cloud di Microsoft
 
@@ -66,7 +65,11 @@ Per le offerte cloud SaaS di Microsoft, una licenza consente a un account utente
 **Figura 2: licenze comprese nelle sottoscrizioni basate su SaaS di un'organizzazione**
 
 ![Un esempio di più licenze all'interno delle sottoscrizioni per le offerte cloud di Microsoft basate su SaaS.](../media/Subscriptions/Subscriptions-Fig2.png)
-  
+
+>[!Note]
+>Una procedura consigliata per la sicurezza consiste nell'usare account utente separati, assegnandogli ruoli specifici per le funzioni amministrative. Non è necessario assegnare a questi utenti una licenza per i servizi cloud che amministrano. Ad esempio, non è necessario assegnare una licenza Microsoft 365 all'account di un amministratore di SharePoint.
+>
+
 Per i servizi cloud basati su PaaS di Azure, le licenze software sono integrate nel prezzo del servizio.
   
 Per le macchine virtuali basate su IaaS di Azure, potrebbero essere necessarie altre licenze per usare il software o l'applicazione installata sull'immagine di una macchina virtuale. Alcune immagini della macchina virtuale dispongono di versioni concesse in licenza o software installato; i costi sono inclusi nella tariffa al minuto del server. Alcuni esempi sono le immagini della macchina virtuale per SQL Server 2014 e SQL Server 2016.  
@@ -153,7 +156,7 @@ Per aggiungere una sottoscrizione di Azure con la stessa organizzazione e il ten
     
 3. Nella pagina **Aggiungi sottoscrizione**, selezionare un'offerta e completare le informazioni di pagamento e il contratto.
     
-Se sono state acquistate sottoscrizioni di Azure e Microsoft 365 separate e si desidera accedere al tenant di Microsoft 365 Azure AD dalla sottoscrizione di Azure, vedere le istruzioni riportate nell'articolo [Aggiungere un abbonamento Azure esistente al tenant di Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
+Se sono state acquistate sottoscrizioni di Azure e Microsoft 365 separate e si desidera accedere al tenant di Microsoft 365 Azure AD dalla sottoscrizione di Azure, vedere le istruzioni riportate nell'articolo [Aggiungere un abbonamento Azure esistente al tenant di Active Directory](/azure/active-directory/fundamentals/active-directory-how-subscriptions-associated-directory).
  
 ## <a name="see-also"></a>Vedere anche
 
@@ -166,4 +169,3 @@ Se sono state acquistate sottoscrizioni di Azure e Microsoft 365 separate e si d
 ## <a name="next-step"></a>Passaggio successivo
 
 [Valutazione della connettività di rete di Microsoft 365](assessing-network-connectivity.md)
-  

@@ -20,19 +20,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 7a2efd75-0771-4897-ba7b-082fe5bfa9da
-description: Informazioni su come verificare il dominio e configurare i record DNS per posta elettronica, Skype for Business online e altri servizi su Amazon Web Services (AWS) per Microsoft.
-ms.openlocfilehash: bb687b8685aed79f5f768c12d652205bbbed0f59
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for Business Online e altri servizi in Amazon Web Services (AWS) per Microsoft.
+ms.openlocfilehash: 12f9341ab381324266cf2da1ca6b5423df9973dd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657973"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910415"
 ---
 # <a name="create-dns-records-at-amazon-web-services-aws-for-microsoft"></a>Creare record DNS in Amazon Web Services (AWS) per Microsoft
 
  Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.yml)**. 
   
-Se AWS è il provider di hosting DNS, seguire i passaggi di questo articolo per verificare il dominio e configurare i record DNS per posta elettronica, Skype Online for Business e così via.
+Se AWS è il provider di hosting DNS, seguire la procedura descritta in questo articolo per verificare il dominio e configurare i record DNS per la posta elettronica, Skype Online for Business e così via.
   
 Dopo aver aggiunto questi record in AWS, il dominio sarà configurato per l'utilizzo con i servizi Microsoft.
   
@@ -51,11 +51,11 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
   
 1. Per iniziare, passare alla propria pagina dei domini su AWS usando [questo collegamento](https://console.aws.amazon.com/route53/home). Verrà richiesto di eseguire l'accesso.
     
-2. Nella pagina **Risorse** selezionare **Zone ospitate.**
+2. Nella pagina **Risorse** selezionare **Aree ospitate**.
     
-3. Nella colonna Domain **Name** della pagina **Hosted Zones** selezionare il nome del dominio che si desidera modificare. 
+3. Nella **colonna** Nome dominio della  pagina Zone ospitate selezionare il nome del dominio che si desidera modificare. 
     
-4. Selezionare **Crea set di record.**
+4. Selezionare **Crea set di record**.
     
 5. In the **Create Record Set** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -73,7 +73,7 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
     
 7. Attendere alcuni minuti prima di continuare, in modo che il record appena creato venga aggiornato in Internet.
     
-Dopo aver aggiunto il record nel sito del registrar, si tornerà a Microsoft e si richiederà una ricerca per il record.
+Dopo aver aggiunto il record nel sito del registrar, si torna a Microsoft e si richiede una ricerca per il record.
   
 Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
@@ -94,11 +94,11 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 
 1. Per iniziare, passare alla propria pagina dei domini su AWS usando [questo collegamento](https://console.aws.amazon.com/route53/home). Verrà richiesto di eseguire l'accesso.
     
-2. Nella pagina **Risorse** selezionare **Aree ospitate.**
+2. Nella pagina **Risorse** selezionare **Aree ospitate**.
     
-3. Nella colonna Domain **Name** della pagina **Hosted Zones** selezionare il nome del dominio che si desidera modificare. 
+3. Nella **colonna** Nome dominio della  pagina Zone ospitate selezionare il nome del dominio che si desidera modificare. 
     
-4. Selezionare **Crea set di record.**
+4. Selezionare **Crea set di record**.
     
 5. In the **Create Record Set** area, in the boxes for the new record, type or copy and paste the values from the following table. 
     
@@ -106,7 +106,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Nome**|**Type**|**Alias**|**TTL (Seconds)**|**Value**|**Routing Policy**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |Lasciare vuoto questo campo.  <br/> |MX - Mail exchange  <br/> |No  <br/> |300  <br/> |0  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> 0 è il valore di priorità MX. Aggiungerlo all'inizio del valore MX, separato dal resto del valore da uno spazio.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> **Nota:** Ottenere il \<*domain-key*\> proprio account microsoft 365. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |Semplice  <br/> |
+    |Lasciare vuoto questo campo.  <br/> |MX - Mail exchange  <br/> |No  <br/> |300  <br/> |0  *\<domain-key\>*  .mail.protection.outlook.com.  <br/> 0 è il valore di priorità MX. Aggiungerlo all'inizio del valore MX, separato dal resto del valore da uno spazio.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> **Nota:** Ottenere \<*domain-key*\> l'utente dal proprio account Microsoft 365. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |Semplice  <br/> |
        
     ![AWS-BP-Configure-2-1](../../media/94a71ce7-1b3b-4b1a-9ad3-9592db133075.png)
   
@@ -119,7 +119,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     > [!IMPORTANT]
     > AWS archivia i record MX come un set che potrebbe contenere più record. **DO NOT** select **Delete Record Set**, as this will delete all of your MX records, including the one you just added. Seguire invece queste istruzioni. 
   
-    Prima di tutto, selezionare il set di record MX.
+    Selezionare innanzitutto il set di record MX.
     
     ![AWS-BP-Configurazione-2-3](../../media/9d9388cb-e2d0-43b7-928c-e1d07e519c6f.png)
   
@@ -136,11 +136,11 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 
 1. Per iniziare, passare alla propria pagina dei domini su AWS usando [questo collegamento](https://console.aws.amazon.com/route53/home). Verrà richiesto di eseguire l'accesso.
     
-2. Nella pagina **Risorse** selezionare **Zone ospitate.**
+2. Nella pagina **Risorse** selezionare **Aree ospitate**.
     
-3. Nella colonna Domain **Name** della pagina **Hosted Zones** selezionare il nome del dominio che si desidera modificare. 
+3. Nella **colonna** Nome dominio della  pagina Zone ospitate selezionare il nome del dominio che si desidera modificare. 
     
-4. Selezionare **Crea set di record.**
+4. Selezionare **Crea set di record**.
     
 5. Aggiungere il primo record CNAME.
     
@@ -164,21 +164,21 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 7. Aggiungere gli altri quattro record CNAME.
     
-    Nella pagina **Zone** ospitate selezionare Crea **set** di record, creare un record utilizzando i  valori della riga successiva della tabella e quindi selezionare di nuovo Crea per completare il record. 
+    Nella **pagina Zone ospitate** selezionare Crea set di **record,** creare un record utilizzando i valori della riga successiva della tabella e quindi selezionare di nuovo **Crea** per completare il record. 
     
-    Ripetere questo processo fino a creare tutti e cinque i record CNAME.
+    Ripetere questo processo finché non sono stati creati tutti e cinque i record CNAME.
     
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Aggiungere un record TXT per SPF per evitare di ricevere posta indesiderata
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un singolo record  *SPF*  che include entrambi i set di valori. Servono esempi? Consultare [Record Domain Name System (DNS) esterni per Microsoft](https://docs.microsoft.com/microsoft-365/enterprise/external-domain-name-system-records). Per convalidare il record SPF, è possibile utilizzare uno di questi[strumenti di convalida SPF.](../setup/domains-faq.yml) 
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Aggiungere invece i valori Microsoft necessari al record corrente in modo da disporre di un singolo record  *SPF*  che include entrambi i set di valori. Servono esempi? Consultare [Record Domain Name System (DNS) esterni per Microsoft](../../enterprise/external-domain-name-system-records.md). Per convalidare il record SPF, è possibile utilizzare uno di questi[strumenti di convalida SPF.](../setup/domains-faq.yml) 
   
 1. Per iniziare, passare alla propria pagina dei domini su AWS usando [questo collegamento](https://console.aws.amazon.com/route53/home). Verrà richiesto di eseguire l'accesso.
     
-2. Nella pagina **Risorse** selezionare **Zone ospitate.**
+2. Nella pagina **Risorse** selezionare **Aree ospitate**.
     
-3. Nella colonna Domain **Name** della pagina **Hosted Zones** selezionare il nome del dominio che si desidera modificare. 
+3. Nella **colonna** Nome dominio della  pagina Zone ospitate selezionare il nome del dominio che si desidera modificare. 
     
 4. Selezionare il set di record **TXT.** 
     
@@ -201,11 +201,11 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 
 1. Per iniziare, passare alla propria pagina dei domini su AWS usando [questo collegamento](https://console.aws.amazon.com/route53/home). Verrà richiesto di eseguire l'accesso.
     
-2. Nella pagina **Risorse** selezionare **Zone ospitate.**
+2. Nella pagina **Risorse** selezionare **Aree ospitate**.
     
-3. Nella colonna Domain **Name** della pagina **Hosted Zones** selezionare il nome del dominio che si desidera modificare. 
+3. Nella **colonna** Nome dominio della  pagina Zone ospitate selezionare il nome del dominio che si desidera modificare. 
     
-4. Selezionare **Crea set di record.**
+4. Selezionare **Crea set di record**.
     
 5. Aggiungere il primo record SRV:
     
@@ -226,8 +226,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 7. Per aggiungere l'altro record SRV:
     
-    Nella pagina **Zone** ospitate selezionare Crea **set** di record, creare un record utilizzando i  valori della riga successiva della tabella e quindi selezionare di nuovo Crea per completare il record. 
+    Nella **pagina Zone ospitate** selezionare Crea set di **record,** creare un record utilizzando i valori della riga successiva della tabella e quindi selezionare di nuovo **Crea** per completare il record. 
     
 > [!NOTE]
 > In genere, l'applicazione delle modifiche al DNS richiede circa 15 minuti. Tuttavia, a volte può capitare che l'aggiornamento di una modifica nel sistema DNS di Internet richieda più tempo. In caso di problemi con il flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Individuare e correggere i problemi dopo l'aggiunta del dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
-  

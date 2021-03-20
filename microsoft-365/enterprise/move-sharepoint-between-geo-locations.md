@@ -13,14 +13,14 @@ ms.collection:
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-description: Informazioni su come spostare un sito di SharePoint in una posizione geografica diversa all'interno dell'ambiente multi-geografico e comunicare le aspettative delle modifiche agli utenti.
+description: Informazioni su come spostare un sito di SharePoint in una posizione geografica diversa all'interno dell'ambiente multi-geografico e comunicare agli utenti le aspettative delle modifiche.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 819496b9f7612afa1db902e6fc5a0844e99d7a8e
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: eed323b2e2b8f68a4a603052657e17495bb17690
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47545637"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910931"
 ---
 # <a name="move-a-sharepoint-site-to-a-different-geo-location"></a>Trasferire un sito di SharePoint in una posizione geografica diversa
 
@@ -74,7 +74,7 @@ L'orario di entrambi i parametri deve essere specificato in formato UTC (Coordin
 
 Per il trasferimento geografico di siti di SharePoint è necessario connettersi ed eseguire l'operazione dall'URL di amministrazione di SharePoint nella posizione geografica in cui è ubicato il sito.
 
-Ad esempio, se l'URL del sito è <https://contosohealthcare.sharepoint.com/sites/Turbines> , connettersi all'URL di amministrazione di SharePoint all'indirizzo <https://contosohealthcare-admin.sharepoint.com> :
+Ad esempio, se l'URL del sito <https://contosohealthcare.sharepoint.com/sites/Turbines> è , connettersi all'URL di amministrazione di SharePoint all'indirizzo <https://contosohealthcare-admin.sharepoint.com> :
 
 ```powershell
 Connect-SPOService -Url https://contosohealthcare-admin.sharepoint.com
@@ -145,8 +145,8 @@ Start-SPOUnifiedGroupMove -GroupAlias <GroupAlias> -DestinationDataLocation <Des
 
 È possibile determinare lo stato di un trasferimento di sito da o verso la posizione geografica a cui si è connessi con i cmdlet seguenti:
 
-- [Get-SPOSiteContentMoveState](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spositecontentmovestate) (siti non connessi a gruppi)
-- [Get-SPOUnifiedGroupMoveState](https://docs.microsoft.com/powershell/module/sharepoint-online/get-spounifiedgroupmovestate) (siti connessi a gruppi)
+- [Get-SPOSiteContentMoveState](/powershell/module/sharepoint-online/get-spositecontentmovestate) (siti non connessi a gruppi)
+- [Get-SPOUnifiedGroupMoveState](/powershell/module/sharepoint-online/get-spounifiedgroupmovestate) (siti connessi a gruppi)
 
 Usare il parametro `-SourceSiteUrl` per specificare il sito di cui si vuole vedere lo stato di trasferimento.
 

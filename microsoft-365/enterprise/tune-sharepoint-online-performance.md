@@ -18,17 +18,17 @@ f1.keywords:
 - CSH
 ms.custom: Adm_O365
 ms.assetid: f0522d4a-fbf4-41f9-854e-c9b59555091d
-description: Contiene collegamenti ad altri articoli che spiegano come migliorare le prestazioni dei tempi di download delle pagine per SharePoint Online.
-ms.openlocfilehash: c488cb47205c8f250494420ffe3a068244411859
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Contiene collegamenti ad altri articoli che illustrano come migliorare le prestazioni dei tempi di download delle pagine per SharePoint Online.
+ms.openlocfilehash: 9ce463898b81e1653932864276be2fa8d6ce830b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691391"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909335"
 ---
 # <a name="tune-sharepoint-online-performance"></a>Ottimizzare le prestazioni di SharePoint Online
 
-Questo articolo contiene collegamenti ad altri articoli che spiegano come migliorare le prestazioni dei tempi di download delle pagine per SharePoint Online. Questo articolo fa parte del progetto Pianificazione della rete e ottimizzazione delle prestazioni [per office 365.](https://aka.ms/tune)
+Questo articolo contiene collegamenti ad altri articoli che illustrano come migliorare le prestazioni dei tempi di download delle pagine per SharePoint Online. Questo articolo fa parte del progetto Pianificazione della rete e ottimizzazione delle prestazioni [per Office 365.](./network-planning-and-performance.md)
 
 ## <a name="articles-about-fine-tuning-sharepoint-online-performance"></a>Articoli sull'ottimizzazione delle prestazioni di SharePoint Online
 
@@ -40,7 +40,7 @@ Utilizzare questi articoli per ottimizzare le prestazioni di SharePoint Online.
 
 - [Opzioni di spostamento per SharePoint Online](navigation-options-for-sharepoint-online.md)
 
-- [Indicazioni sulle prestazioni per i portali di SharePoint Online](https://docs.microsoft.com/sharepoint/dev/solution-guidance/portal-performance)
+- [Indicazioni sulle prestazioni per i portali di SharePoint Online](/sharepoint/dev/solution-guidance/portal-performance)
 
 - [Ottimizzazione delle immagini per SharePoint Online](image-optimization-for-sharepoint-online.md)
 
@@ -58,14 +58,14 @@ Utilizzare questi articoli per ottimizzare le prestazioni di SharePoint Online.
 
 - [Utilizzo della cache oggetti con SharePoint Online](using-the-object-cache-with-sharepoint-online.md)
 
-- [Procedura: Evitare la limitazione o il blocco in SharePoint Online](https://msdn.microsoft.com/library/office/dn889829.aspx)
+- [Procedura: Evitare la limitazione o il blocco in SharePoint Online](/sharepoint/dev/general-development/how-to-avoid-getting-throttled-or-blocked-in-sharepoint-online)
 
-- [Ottimizzare gli iFrame nelle pagine moderne del portale di SharePoint Online](modern-iframe-optimization.md)
+- [Ottimizzare gli iFrame nelle pagine del portale moderno di SharePoint Online](modern-iframe-optimization.md)
 
-- [Ottimizzare le prestazioni delle web part nelle pagine moderne del portale di SharePoint Online](modern-web-part-optimization.md)
+- [Ottimizzare le prestazioni delle web part nelle pagine del portale moderno di SharePoint Online](modern-web-part-optimization.md)
 
-- [Ottimizzare le chiamate di pagina nelle pagine moderne del portale di SharePoint Online](modern-page-call-optimization.md)
+- [Ottimizzare le chiamate di pagina nelle pagine del portale moderno di SharePoint Online](modern-page-call-optimization.md)
 
-- [Ottimizzare il peso delle pagine nelle pagine moderne del portale di SharePoint Online](modern-page-weight-optimization.md)
+- [Ottimizzare il peso delle pagine nelle pagine del portale moderno di SharePoint Online](modern-page-weight-optimization.md)
 
-- [Ottimizzare le immagini nelle pagine moderne del portale di SharePoint Online](modern-image-optimization.md)
+- [Ottimizzare le immagini nelle pagine del portale moderno di SharePoint Online](modern-image-optimization.md)

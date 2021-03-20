@@ -15,12 +15,12 @@ ms.custom:
 description: .
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 77f666e5eeceee3f5b324e5b9b6fac721c10e410
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 4614fc9661c892457800b70e2f04f577b418b417
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286868"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910775"
 ---
 # <a name="control-automatic-external-email-forwarding-in-microsoft-365"></a>Controllare l'inoltro automatico della posta elettronica esterna in Microsoft 365
 
@@ -31,26 +31,26 @@ ms.locfileid: "50286868"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Gli amministratori potrebbero avere requisiti aziendali per limitare o controllare i messaggi inoltrati automaticamente ai destinatari esterni (destinatari esterni all'organizzazione). L'inoltro della posta elettronica può essere utile, ma può anche rappresentare un rischio per la sicurezza dovuto alla potenziale divulgazione di informazioni. Gli utenti malintenzionati potrebbero usare queste informazioni per attaccare l'organizzazione o i partner.
+Gli amministratori potrebbero avere requisiti aziendali per limitare o controllare i messaggi inoltrati automaticamente a destinatari esterni (destinatari esterni all'organizzazione). L'inoltro della posta elettronica può essere utile, ma può anche rappresentare un rischio per la sicurezza a causa della potenziale divulgazione di informazioni. Gli utenti malintenzionati potrebbero usare queste informazioni per attaccare l'organizzazione o i partner.
 
 
 In Microsoft 365 sono disponibili i seguenti tipi di inoltro automatico:
 
-- Gli utenti possono configurare [le regole di Posta](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) in arrivo per inoltrare automaticamente i messaggi ai mittenti esterni (deliberatamente o a causa di un account compromesso).
+- Gli utenti possono configurare [le regole di Posta](https://support.microsoft.com/office/c24f5dea-9465-4df4-ad17-a50704d66c59) in arrivo per inoltrare automaticamente i messaggi ai mittenti esterni (deliberatamente o a seguito di un account compromesso).
 
-- Gli amministratori possono configurare [l'inoltro delle](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) cassette postali (noto anche come _inoltro SMTP)_ per inoltrare automaticamente i messaggi ai destinatari esterni. L'amministratore può scegliere se inoltrare semplicemente i messaggi o conservare copie dei messaggi inoltrati nella cassetta postale.
+- Gli amministratori possono configurare [l'inoltro delle cassette](/exchange/recipients-in-exchange-online/manage-user-mailboxes/configure-email-forwarding) postali (noto anche come inoltro _SMTP)_ per inoltrare automaticamente i messaggi ai destinatari esterni. L'amministratore può scegliere se inoltrare semplicemente i messaggi o conservare copie dei messaggi inoltrati nella cassetta postale.
 
 È possibile utilizzare i criteri di filtro della posta indesiderata in uscita per controllare l'inoltro automatico ai destinatari esterni. Sono disponibili tre impostazioni:
 
 - **Automatico:** l'inoltro esterno automatico è bloccato. L'inoltro automatico interno dei messaggi continuerà a funzionare. Questa è l'impostazione predefinita.
-- **On:** l'inoltro esterno automatico è consentito e non limitato.
-- **Disattivato:** l'inoltro esterno automatico è disabilitato e verrà visualizzato un rapporto di mancato recapito (noto anche come NDR o notifica di mancato recapito) al mittente.
+- **On**: l'inoltro esterno automatico è consentito e non limitato.
+- **Disattivato:** l'inoltro esterno automatico è disabilitato e verrà visualizzato un rapporto di mancato recapito (noto anche come rapporto di mancato recapito o messaggio di mancato recapito) al mittente.
 
-Per istruzioni su come configurare queste impostazioni, vedere Configurare il filtro posta indesiderata [in uscita in EOP.](configure-the-outbound-spam-policy.md)
+Per istruzioni su come configurare queste impostazioni, vedere [Configure outbound spam filtering in EOP.](configure-the-outbound-spam-policy.md)
 
 > [!NOTE]
 >
-> - La disabilitazione dell'inoltro automatico disabilita le regole di Posta in arrivo (utenti) o l'inoltro delle cassette postali (amministratori) che reindirizzano i messaggi agli indirizzi esterni.
+> - La disabilitazione dell'inoltro automatico disabilita le regole di Posta in arrivo (utenti) o l'inoltro delle cassette postali (amministratori) che reindirizzano i messaggi a indirizzi esterni.
 >
 > - L'inoltro automatico dei messaggi tra utenti interni non è influenzato dalle impostazioni dei criteri di filtro della posta indesiderata in uscita.
 >
@@ -58,11 +58,11 @@ Per istruzioni su come configurare queste impostazioni, vedere Configurare il fi
 
 ## <a name="how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls"></a>Funzionamento delle impostazioni dei criteri di filtro della posta indesiderata in uscita con altri controlli di inoltro automatico della posta elettronica
 
-Gli amministratori potrebbero aver già configurato altri controlli per consentire o bloccare l'inoltro automatico della posta elettronica. Ad esempio:
+Come amministratore, potresti aver già configurato altri controlli per consentire o bloccare l'inoltro automatico della posta elettronica. Ad esempio:
 
-- [Domini remoti per](https://docs.microsoft.com/exchange/mail-flow-best-practices/remote-domains/remote-domains) consentire o bloccare l'inoltro automatico della posta elettronica ad alcuni o a tutti i domini esterni.
+- [Domini remoti per](/exchange/mail-flow-best-practices/remote-domains/remote-domains) consentire o bloccare l'inoltro automatico della posta elettronica ad alcuni o a tutti i domini esterni.
 
-- Condizioni e azioni nelle regole del flusso di [posta](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) di Exchange (note anche come regole di trasporto) per rilevare e bloccare i messaggi inoltrati automaticamente ai destinatari esterni.
+- Condizioni e azioni nelle regole del flusso di [posta](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rules) di Exchange (note anche come regole di trasporto) per rilevare e bloccare i messaggi inoltrati automaticamente ai destinatari esterni.
 
 Le impostazioni del dominio remoto e le regole del flusso di posta sono indipendenti dalle impostazioni dei criteri di filtro della posta indesiderata in uscita. Ad esempio:
 
@@ -70,10 +70,10 @@ Le impostazioni del dominio remoto e le regole del flusso di posta sono indipend
 
 - Si consente l'inoltro automatico nei criteri di filtro della posta indesiderata in uscita, ma si utilizzano le regole del flusso di posta o le impostazioni del dominio remoto per bloccare la posta elettronica inoltrata automaticamente. In questo esempio, le regole del flusso di posta o le impostazioni del dominio remoto bloccano i messaggi inoltrati automaticamente.
 
-Questa indipendenza di funzionalità consente (ad esempio) di consentire l'inoltro automatico nei criteri di filtro della posta indesiderata in uscita, ma di utilizzare i domini remoti per controllare i domini esterni a cui gli utenti possono inoltrare i messaggi.
+Questa funzionalità consente, ad esempio, di consentire l'inoltro automatico nei criteri di filtro della posta indesiderata in uscita, ma di utilizzare i domini remoti per controllare i domini esterni a cui gli utenti possono inoltrare i messaggi.
 
 ## <a name="blocked-email-forwarding-messages"></a>Messaggi di inoltro della posta elettronica bloccati
 
-Quando un messaggio viene rilevato come [](configure-the-outbound-spam-policy.md) inoltrato automaticamente e il criterio di filtro della posta indesiderata in uscita blocca tale attività, il messaggio viene restituito al mittente in un rapporto di mancato recapito contenente le seguenti informazioni: 
+Quando un messaggio viene rilevato come [](configure-the-outbound-spam-policy.md) inoltrato automaticamente e il criterio di filtro della posta indesiderata in uscita blocca tale attività, il messaggio viene restituito al mittente in un rapporto di mancato recapito contenente le informazioni seguenti: 
 
 `5.7.520 Access denied, Your organization does not allow external forwarding. Please contact your administrator for further assistance. AS(7555)`

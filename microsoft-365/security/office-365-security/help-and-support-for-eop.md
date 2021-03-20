@@ -13,12 +13,12 @@ ms.assetid: 64535a0a-1044-413f-8bc2-ed8e8a0bc54c
 description: Viene fornita da Microsoft l'assistenza per EOP attraverso una cospicua varietà di luoghi e metodi tra cui tra cui il supporto in autonomia e assistito.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 945f3c4e32a6c41193e3df4813cc4ed4fe9f7b1f
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 0b48c9fadb53fbb7b392c7d4711efc6136509444
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289794"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910739"
 ---
 # <a name="help-and-support-for-eop"></a>Guida e supporto tecnico per Exchange Online Protection
 
@@ -29,11 +29,11 @@ ms.locfileid: "50289794"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Nelle organizzazioni di Microsoft 365 con cassette postali in Exchange Online o nelle organizzazioni Exchange Online Protection (EOP) autonome senza cassette postali di Exchange Online, le risorse di supporto tecnico elencate in questo articolo consentono di trovare risposte in caso di difficoltà con EOP. Viene fornita da Microsoft l'assistenza per EOP attraverso una cospicua varietà di luoghi e metodi tra cui tra cui il supporto in autonomia e assistito.
+Nelle organizzazioni di Microsoft 365 con cassette postali in Exchange Online o nelle organizzazioni autonome di Exchange Online Protection (EOP) senza cassette postali di Exchange Online, le risorse di supporto tecnico elencate in questo articolo consentono di trovare risposte in caso di difficoltà con EOP. Viene fornita da Microsoft l'assistenza per EOP attraverso una cospicua varietà di luoghi e metodi tra cui tra cui il supporto in autonomia e assistito.
 
 ## <a name="self-support-options"></a>Opzioni di supporto in autonomia
 
-Al momento dell'accesso, l'interfaccia di amministrazione di Microsoft 365 fornisce informazioni sullo stato dei servizi dell'organizzazione. Inoltre, la sezione sull'integrità dei servizi mostra lo stato corrente dei servizi, i dettagli sulle interruzioni e le interruzioni ed elenca i tempi di manutenzione pianificati. L'interfaccia di amministrazione di Microsoft 365 fornisce inoltre informazioni sui problemi noti e sulle risoluzioni previste. Se si è interessati da un evento a livello di servizio, verrà visualizzato un avviso (generalmente unito all'icona di una campana). Si consiglia di leggere e intervenire su tutti gli elementi, come necessario. Per ulteriori informazioni sull'area di integrità del servizio, vedere [Integrità e continuità dei servizi.](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity) Potrebbe essere possibile trovare altre informazioni da soli usando gli strumenti, i forum e i siti della community elencati qui.
+Al momento dell'accesso, l'interfaccia di amministrazione di Microsoft 365 fornisce informazioni sullo stato dei servizi dell'organizzazione. Inoltre, la sezione integrità del servizio mostra lo stato corrente dei servizi, i dettagli sulle interruzioni e le interruzioni ed elenca i tempi di manutenzione pianificati. L'interfaccia di amministrazione di Microsoft 365 fornisce inoltre informazioni sui problemi noti e sulle risoluzioni previste. Se si è interessati da un evento a livello di servizio, verrà visualizzato un avviso (generalmente unito all'icona di una campana). Si consiglia di leggere e intervenire su tutti gli elementi, come necessario. Per ulteriori informazioni sull'area di integrità del servizio, vedere [Integrità e continuità del servizio.](/office365/servicedescriptions/office-365-platform-service-description/service-health-and-continuity) Potresti essere in grado di trovare altre informazioni personali usando gli strumenti, i forum e i siti della community elencati qui.
 
 Articolo relativo alle [informazioni generali dei prodotti per Exchange Online Protection](https://products.office.com/exchange/exchange-email-security-spam-protection)
 
@@ -47,7 +47,7 @@ Articolo relativo alle [informazioni generali dei prodotti per Exchange Online P
 
 ## <a name="assisted-support-from-microsoft"></a>Supporto assistito di Microsoft
 
-È possibile ottenere assistenza da Microsoft avviando una nuova richiesta di servizio nell'interfaccia di amministrazione di Microsoft 365 o chiamando il telefono. Gli abbonati al supporto Premier hanno opzioni di supporto aggiuntive.
+È possibile ottenere assistenza da Microsoft avviando una nuova richiesta di servizio all'interno dell'interfaccia di amministrazione di Microsoft 365 o chiamando il telefono. Gli abbonati al supporto Premier hanno opzioni di supporto aggiuntive.
 
 ### <a name="support-for-microsoft-premier-support-subscribers"></a>Supporto per i sottoscrittori del Supporto Premier Microsoft
 
@@ -67,7 +67,7 @@ Per ulteriori informazioni su come il supporto Premier può aiutare l'organizzaz
 
 1. Accedere all'interfaccia di amministrazione di Microsoft 365.
 
-2. Per problemi generali relativi al prodotto, visitare il **supporto** tecnico Per richiedere assistenza \>  \> **clienti.**
+2. Per problemi generali relativi al prodotto, passare a **Supporto** \> **Tecnico Richiedi assistenza** \> **clienti.**
 
    Per le domande antecedenti all'acquisto di EOP o domande su fatturazione e sottoscrizioni, andare alla pagina **Supporto** \> **Richiedi l'assistenza clienti** \> **Chiamare il supporto per la sottoscrizione e la fatturazione**.
 
@@ -93,4 +93,4 @@ Microsoft fornisce numeri di telefono locali o un numero verde per il supporto d
 
 ## <a name="for-more-information-about-eop-documentation"></a>Per ulteriori informazioni sulla documentazione di EOP
 
-[Accessibilità in Exchange Online](https://docs.microsoft.com/Exchange/accessibility/accessibility)
+[Accessibilità in Exchange Online](/Exchange/accessibility/accessibility)

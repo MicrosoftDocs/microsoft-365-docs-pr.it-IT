@@ -21,24 +21,24 @@ search.appverid:
 - MED150
 ms.assetid: ee5f861e-bd48-4267-83d1-a4ead4b4a00d
 description: In questo articolo, trovare informazioni sull'uso di PowerShell per disattivare la sincronizzazione della directory per Microsoft 365.
-ms.openlocfilehash: 0bd8591f91dcf20cb1061b3cd93f69511027bab1
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 036130b70382e28ad9d8cb10786ad5e266375c20
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690924"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909311"
 ---
 # <a name="turn-off-directory-synchronization-for-microsoft-365"></a>Disattivare la sincronizzazione della directory per Microsoft 365
-È possibile utilizzare PowerShell per disattivare la sincronizzazione della directory. Non è tuttavia consigliabile disattivare la sincronizzazione della directory come passaggio di risoluzione dei problemi. Se è necessaria assistenza per la risoluzione dei problemi di sincronizzazione della directory, vedere l'articolo risolvere i problemi relativi alla sincronizzazione della [directory per Microsoft 365.](fix-problems-with-directory-synchronization.md) 
+È possibile utilizzare PowerShell per disattivare la sincronizzazione della directory. Tuttavia, non è consigliabile disattivare la sincronizzazione della directory come passaggio di risoluzione dei problemi. Per assistenza nella risoluzione dei problemi di sincronizzazione della directory, vedere l'articolo Risolvere i problemi di [sincronizzazione della directory per Microsoft 365.](fix-problems-with-directory-synchronization.md) 
   
-[Se necessario, contattare](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) il supporto tecnico per i prodotti aziendali.
+[Se necessario,](https://support.office.com/article/32a17ca7-6fa0-4870-8a8d-e25ba4ccfd4b) contattare il supporto per i prodotti aziendali.
   
 ## <a name="turn-off-directory-synchronization"></a>Disattivare la sincronizzazione della directory  
 Per disattivare la sincronizzazione della directory:
   
-1. Innanzitutto, installare il software necessario e connettersi all'abbonamento a Microsoft 365. Per istruzioni, vedere [Connettersi con il modulo di Microsoft Azure Active Directory per Windows PowerShell.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+1. Innanzitutto, installare il software necessario e connettersi all'abbonamento a Microsoft 365. Per istruzioni, vedere [Connect with the Microsoft Azure Active Directory Module for Windows PowerShell](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell).
     
-2. Utilizzare [Set-MsolDirSyncEnabled per](https://go.microsoft.com/fwlink/p/?LinkId=821939) disabilitare la sincronizzazione della directory: 
+2. Utilizzare [Set-MsolDirSyncEnabled](/previous-versions/azure/dn194097(v=azure.100)) per disabilitare la sincronizzazione della directory: 
     
   ```powershell
   Set-MsolDirSyncEnabled -EnableDirSync $false
@@ -47,4 +47,3 @@ Per disattivare la sincronizzazione della directory:
 >[!Note]
 >Se si utilizza questo comando, è necessario attendere 72 ore prima di poter riattivare la sincronizzazione della directory.
 >
- 

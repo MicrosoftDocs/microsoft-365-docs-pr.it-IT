@@ -1,5 +1,5 @@
 ---
-title: Creare record DNS in Network Solutions per Microsoft
+title: Creare record DNS in Network Solutions for Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,15 +20,15 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 1dc55f9f-5309-450f-acc3-b2b4119c8be3
-description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in Network Solutions per Microsoft.
-ms.openlocfilehash: 9cb403bb8b469f2d7f4e6138ba5833120ea53585
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for Business Online e altri servizi in Network Solutions for Microsoft.
+ms.openlocfilehash: f25e21037695c99489adc9038bf70629a103ec7a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657792"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910139"
 ---
-# <a name="create-dns-records-at-network-solutions-for-microsoft"></a>Creare record DNS in Network Solutions per Microsoft
+# <a name="create-dns-records-at-network-solutions-for-microsoft"></a>Creare record DNS in Network Solutions for Microsoft
 
  **Se non si trova ciò che si sta cercando, [vedere le domande frequenti sui domini](../setup/domains-faq.yml)**. 
   
@@ -46,7 +46,7 @@ Ecco i principali record da aggiungere. Seguire i passaggi indicati sotto oppure
     
 - [Aggiungere i due record SRV necessari per Microsoft](#add-the-two-srv-records-that-are-required-for-microsoft)
     
-Dopo aver aggiunto questi record in Network Solutions, il dominio sarà configurato per l'uso con i servizi Microsoft.
+Dopo aver aggiunto questi record in Network Solutions, il dominio sarà configurato per l'utilizzo con i servizi Microsoft.
   
 
   
@@ -66,7 +66,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 0:47)](
 1. Per iniziare, passare alla propria pagina dei domini su Network Solutions usando [questo collegamento](https://www.networksolutions.com/manage-it). Verrà richiesto di eseguire l'accesso.
     
     > [!IMPORTANT]
-    > Prima di selezionare il pulsante di **accesso** , selezionare First **Manage My Domain Names** nell'elenco **a discesa log in to:** . 
+    > Prima di selezionare il **pulsante Accesso,** scegliere  Gestisci nomi di **dominio nell'elenco** a discesa Accedi a: . 
   
     ![Scegliere Manage My Domain Names e accedere a Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -74,9 +74,9 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 0:47)](
     
     ![Selezionare la casella di controllo per il dominio](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. Selezionare **modifica DNS**.
+3. Selezionare **Modifica DNS**.
     
-    ![Selezionare modifica DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![Selezionare Modifica DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
 4. Selezionare **Gestisci record DNS avanzati**.
     
@@ -84,7 +84,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 0:47)](
     
     ![Selezionare Gestisci record DNS avanzati](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. Scorrere verso il basso fino alla sezione **Text (TXT Records)** e quindi scegliere **Edit TXT Records**.
+5. Scorrere verso il basso **fino alla sezione Text (TXT Records)** e quindi selezionare Edit TXT **Records**.
     
     ![Selezionare Modifica record TXT](../../media/240a01d6-750a-4da6-8554-641b571e4b71.png)
   
@@ -94,11 +94,11 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 0:47)](
     |:-----|:-----|:-----|
     |@  <br/> (The system will change this value to **@ (None)** when you save the record.)  <br/> |3600  <br/> |MS=ms *XXXXXXXX*  <br/> **Note:** questo è un esempio. Usare il valore specifico di **Indirizzo di destinazione o puntamento** indicato nella tabella.  [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)   |
        
-    ![Digitare o incollare i valori nelle caselle per il nuovo record](../../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
+    ![Digitare o incollare i valori nelle caselle del nuovo record](../../media/8a76daab-b6ff-4c82-ba68-192b24fbb934.png)
   
-7. Selezionare **continua**.
+7. Selezionare **Continua.**
     
-    ![Seleziona continua](../../media/89e7fb38-b4d9-4949-a1bb-d0dd10b361e0.png)
+    ![Selezionare Continua](../../media/89e7fb38-b4d9-4949-a1bb-d0dd10b361e0.png)
   
 8. Selezionare **Salva modifiche**.
     
@@ -135,7 +135,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 3:51)](
 1. Per iniziare, passare alla propria pagina dei domini su Network Solutions usando [questo collegamento](https://www.networksolutions.com/manage-it). Verrà richiesto di eseguire l'accesso.
     
     > [!IMPORTANT]
-    > Prima di selezionare il pulsante di **accesso** , selezionare First **Manage My Domain Names** nell'elenco **a discesa log in to:** . 
+    > Prima di selezionare il **pulsante Accesso,** scegliere  Gestisci nomi di **dominio nell'elenco** a discesa Accedi a: . 
   
     ![Scegliere Manage My Domain Names e accedere a Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -143,9 +143,9 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 3:51)](
     
     ![Selezionare la casella di controllo per il dominio](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. Selezionare **modifica DNS**.
+3. Selezionare **Modifica DNS**.
     
-    ![Selezionare modifica DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![Selezionare Modifica DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
 4. Selezionare **Gestisci record DNS avanzati**.
     
@@ -153,7 +153,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 3:51)](
     
     ![Selezionare Gestisci record DNS avanzati](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. Scorrere verso il basso fino alla sezione **mail servers (MX Records)** e quindi selezionare **Edit MX Records**.
+5. Scorrere verso il basso **fino alla sezione Mail Servers (MX Records)** e quindi selezionare Edit MX **Records**.
     
     ![Selezionare Modifica record MX](../../media/74b4e412-9073-4d2d-8710-fe340b223798.png)
   
@@ -161,13 +161,13 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 3:51)](
     
     |**Priorità**|**TTL**|**Mail Server**|
     |:-----|:-----|:-----|
-    |10   <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |3600  <br/> | *\<domain-key\>*  . mail.protection.outlook.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> **Nota:** Ottenere il vostro  *\<domain-key\>*  dal vostro account Microsoft. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
+    |10    <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](../setup/domains-faq.yml). <br/> |3600  <br/> | *\<domain-key\>*  .mail.protection.outlook.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> **Nota:** Ottenere  *\<domain-key\>*  l'utente dal proprio account Microsoft. [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
        
-    ![Digitare o incollare i valori nelle caselle per il nuovo record](../../media/0bb96872-cc6e-4dfa-a649-fb7efbbf0012.png)
+    ![Digitare o incollare i valori nelle caselle del nuovo record](../../media/0bb96872-cc6e-4dfa-a649-fb7efbbf0012.png)
   
-7. Selezionare **continua**.
+7. Selezionare **Continua.**
     
-    ![Seleziona continua](../../media/963f758b-e79d-4452-8340-7eba8a3972c9.png)
+    ![Selezionare Continua](../../media/963f758b-e79d-4452-8340-7eba8a3972c9.png)
   
 8. Selezionare **Salva modifiche**.
     
@@ -177,9 +177,9 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 3:51)](
     
     ![Select the Delete check box for other MX records](../../media/709d6133-9f5d-490a-a91e-95e21ca94695.png)
   
-10. Quando sono tutti selezionati, selezionare **continua**.
+10. Quando sono tutti selezionati, selezionare **Continua.**
     
-    ![Seleziona continua](../../media/4710f988-0bbc-4ba7-bf31-ca2392b2900e.png)
+    ![Selezionare Continua](../../media/4710f988-0bbc-4ba7-bf31-ca2392b2900e.png)
   
 11. Selezionare **Salva modifiche**.
     
@@ -193,7 +193,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 4:43)](
 1. Per iniziare, passare alla propria pagina dei domini su Network Solutions usando [questo collegamento](https://www.networksolutions.com/manage-it). Verrà richiesto di eseguire l'accesso.
     
     > [!IMPORTANT]
-    > Prima di selezionare il pulsante di **accesso** , selezionare First **Manage My Domain Names** nell'elenco **a discesa log in to:** . 
+    > Prima di selezionare il **pulsante Accesso,** scegliere  Gestisci nomi di **dominio nell'elenco** a discesa Accedi a: . 
   
     ![Scegliere Manage My Domain Names e accedere a Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -201,9 +201,9 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 4:43)](
     
     ![Selezionare la casella di controllo per il dominio](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. Selezionare **modifica DNS**.
+3. Selezionare **Modifica DNS**.
     
-    ![Selezionare modifica DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![Selezionare Modifica DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
 4. Selezionare **Gestisci record DNS avanzati**.
     
@@ -213,7 +213,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 4:43)](
   
 5. Scorrere verso il basso fino alla sezione **Host Aliases (CNAME Records)** e quindi selezionare **Edit CNAME Records**.
     
-    ![Selezionare Modifica record CNAME in alias host](../../media/2d0a4666-8d40-48f4-886c-64a5157baaf5.png)
+    ![Selezionare Modifica record CNAME in Alias host](../../media/2d0a4666-8d40-48f4-886c-64a5157baaf5.png)
   
 6. Nelle caselle dei nuovi quattro record digitare oppure copiare e incollare i valori della tabella seguente.
     
@@ -227,9 +227,9 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 4:43)](
     
     ![Digitare o incollare i valori per i nuovi record](../../media/5ce0b30c-b46c-4778-aa5a-fb5e2f0961c1.png)
   
-7. Dopo aver aggiunto tutti i record CNAME necessari, selezionare **continua**.
+7. Dopo aver aggiunto tutti i record CNAME necessari, selezionare **Continua.**
     
-    ![Seleziona continua](../../media/4978bd8b-f6a6-458d-9522-ad612b301c4a.png)
+    ![Selezionare Continua](../../media/4978bd8b-f6a6-458d-9522-ad612b301c4a.png)
   
 8. Selezionare **Salva modifiche**.
     
@@ -239,14 +239,14 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 4:43)](
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un  *singolo*  record SPF che includa entrambi i set di valori. 
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Aggiungere invece i valori Microsoft necessari al record corrente in modo da disporre di un singolo record  *SPF*  che include entrambi i set di valori. 
   
 Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 5:35)](https://support.microsoft.com/office/c49698c2-6991-47fb-b5ac-18e49a505099).
   
 1. Per iniziare, passare alla propria pagina dei domini su Network Solutions usando [questo collegamento](https://www.networksolutions.com/manage-it). Verrà richiesto di eseguire l'accesso.
     
     > [!IMPORTANT]
-    > Prima di selezionare il pulsante di **accesso** , selezionare First **Manage My Domain Names** nell'elenco **a discesa log in to:** . 
+    > Prima di selezionare il **pulsante Accesso,** scegliere  Gestisci nomi di **dominio nell'elenco** a discesa Accedi a: . 
   
     ![Scegliere Manage My Domain Names e accedere a Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -254,9 +254,9 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 5:35)](
     
     ![Selezionare la casella di controllo per il dominio](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. Selezionare **modifica DNS**.
+3. Selezionare **Modifica DNS**.
     
-    ![Selezionare modifica DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![Selezionare Modifica DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
 4. Selezionare **Gestisci record DNS avanzati**.
     
@@ -264,9 +264,9 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 5:35)](
     
     ![Selezionare Gestisci record DNS avanzati](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. Scorrere verso il basso fino alla sezione **Text (TXT Records)** e quindi scegliere **Edit TXT Records**.
+5. Scorrere verso il basso **fino alla sezione Text (TXT Records)** e quindi selezionare Edit TXT **Records**.
     
-    ![Selezionare Modifica record TXT in testo](../../media/a69a2631-6da2-4e81-99ab-9a9ab9b30b07.png)
+    ![Selezionare Modifica record TXT in Testo](../../media/a69a2631-6da2-4e81-99ab-9a9ab9b30b07.png)
   
 6. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori seguenti.
     
@@ -276,9 +276,9 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 5:35)](
        
     ![Digitare o incollare i valori per il nuovo record](../../media/11564eca-e2ee-4f17-af2b-a00eb7c157db.png)
   
-7. Selezionare **continua**.
+7. Selezionare **Continua.**
     
-    ![Seleziona continua](../../media/482a8dae-0c79-47c4-8bd8-87965683de24.png)
+    ![Selezionare Continua](../../media/482a8dae-0c79-47c4-8bd8-87965683de24.png)
   
 8. Selezionare **Salva modifiche**.
     
@@ -292,7 +292,7 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 6:18)](
 1. Per iniziare, passare alla propria pagina dei domini su Network Solutions usando [questo collegamento](https://www.networksolutions.com/manage-it). Verrà richiesto di eseguire l'accesso.
     
     > [!IMPORTANT]
-    > Prima di selezionare il pulsante di **accesso** , selezionare First **Manage My Domain Names** nell'elenco **a discesa log in to:** . 
+    > Prima di selezionare il **pulsante Accesso,** scegliere  Gestisci nomi di **dominio nell'elenco** a discesa Accedi a: . 
   
     ![Scegliere Manage My Domain Names e accedere a Network Solutions](../../media/fda7d4a1-9445-4086-be9c-87c6983ef2aa.png)
   
@@ -300,9 +300,9 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 6:18)](
     
     ![Selezionare la casella di controllo per il dominio](../../media/2c13d2ba-4a31-44da-812c-2cc90900a183.png)
   
-3. Selezionare **modifica DNS**.
+3. Selezionare **Modifica DNS**.
     
-    ![Selezionare modifica DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
+    ![Selezionare Modifica DNS](../../media/9d7c269f-48d1-442c-9d7b-63bd384a36a9.png)
   
 4. Selezionare **Gestisci record DNS avanzati**.
     
@@ -310,9 +310,9 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 6:18)](
     
     ![Selezionare Gestisci record DNS avanzati](../../media/fd2956d6-eec3-47ea-b60a-266bab14f51f.png)
   
-5. Scorrere verso il basso fino alla sezione **Service (SRV Records)** e quindi selezionare **Edit SRV Records**.
+5. Scorrere verso il basso **fino alla sezione Servizio (record SRV)** e quindi selezionare Modifica record **SRV**.
     
-    ![Selezionare Modifica record SRV in servizio](../../media/9a9248ea-5de5-4e16-9364-f7600fa371f5.png)
+    ![Selezionare Modifica record SRV in Servizio](../../media/9a9248ea-5de5-4e16-9364-f7600fa371f5.png)
   
 6. Nelle caselle dei nuovi due record digitare oppure copiare e incollare i valori della tabella seguente.
     
@@ -320,14 +320,14 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 6:18)](
     
     |**Service**|**Protocol**|**TTL**|**Priorità**|**Peso**|**Porta**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |3600  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |3600  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |
+    |_sip  <br/> |_tls  <br/> |3600  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |3600  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |
        
     ![Digitare o incollare i valori per i nuovi record](../../media/86968d1c-8e43-4e61-aeaa-37fc7d7ef7a7.png)
   
-7. Selezionare **continua**.
+7. Selezionare **Continua.**
     
-    ![Seleziona continua](../../media/bfe2c778-5d2b-4bb6-a79d-c3ff9caf9e1e.png)
+    ![Selezionare Continua](../../media/bfe2c778-5d2b-4bb6-a79d-c3ff9caf9e1e.png)
   
 8. Selezionare **Salva modifiche**.
     
@@ -335,4 +335,3 @@ Seguire i passaggi indicati sotto oppure [guardare il video (iniziare da 6:18)](
   
 > [!NOTE]
 >  In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
-  

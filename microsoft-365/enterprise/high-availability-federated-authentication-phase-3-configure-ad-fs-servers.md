@@ -16,18 +16,18 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 202b76ff-74a6-4486-ada1-a9bf099dab8f
 description: Informazioni su come creare e configurare i server AD FS per l'autenticazione federata a disponibilità elevata per Microsoft 365 in Microsoft Azure.
-ms.openlocfilehash: bf8b52f4cd0dead0c264b71363fd5248397ae88d
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 388a99aa496c4ecd9145759d4dfb1b9441b4fb2c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691568"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909799"
 ---
 # <a name="high-availability-federated-authentication-phase-3-configure-ad-fs-servers"></a>Fase 3 dell'autenticazione federata a disponibilità elevata: configurare i server AD FS
 
-In questa fase di distribuzione della disponibilità elevata per l'autenticazione federata di Microsoft 365 nei servizi dell'infrastruttura di Azure, viene creato un servizio di bilanciamento del carico interno e due server AD FS.
+In questa fase di distribuzione della disponibilità elevata per l'autenticazione federata di Microsoft 365 nei servizi infrastruttura di Azure, si crea un servizio di bilanciamento del carico interno e due server AD FS.
   
-È necessario completare questa fase prima di passare alla [fase 4: configurare i proxy dell'applicazione Web.](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) Vedere [Distribuire l'autenticazione federata a disponibilità elevata per Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) per tutte le fasi.
+È necessario completare questa fase prima di passare alla [fase 4: configurare i proxy dell'applicazione Web.](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) Per tutte le fasi, vedere Distribuire l'autenticazione federata a disponibilità elevata per [Microsoft 365 in Azure.](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
 ## <a name="create-the-ad-fs-server-virtual-machines-in-azure"></a>Creare le macchine virtuali dei server AD FS in Azure
 
@@ -45,15 +45,15 @@ Utilizzare il seguente blocco di comandi di PowerShell per creare le macchine vi
     
 - Tabella A, per i set di disponibilità
     
-Tenere presente che la tabella M è stata definita nella fase [2:](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) Configurare i controller di dominio e le tabelle R, V, S, I e A nella fase [1: configurare Azure.](high-availability-federated-authentication-phase-1-configure-azure.md)
+Tenere presente che è stata definita la tabella M nella [fase 2:](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) configurare i controller di dominio e le tabelle R, V, S, I e A nella [fase 1: configurare Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 > [!NOTE]
-> [!NOTA] I seguenti comandi consentono di utilizzare la versione più recente di Azure PowerShell. Vedere [Introduzione ad Azure PowerShell.](https://docs.microsoft.com/powershell/azure/get-started-azureps) 
+> [!NOTA] I seguenti comandi consentono di utilizzare la versione più recente di Azure PowerShell. Vedere [Introduzione ad Azure PowerShell.](/powershell/azure/get-started-azureps) 
   
 Per prima cosa, creare un bilanciamento del carico interno di Azure per i due server AD FS. Specificare i valori per le variabili, rimuovendo i \< and > caratteri. Una volta forniti tutti i valori opportuni, eseguire il blocco risultante nel prompt dei comandi di Azure PowerShell o in PowerShell ISE.
   
 > [!TIP]
-> Per generare blocchi di comandi di PowerShell pronti all'esecuzione in base alle impostazioni personalizzate, utilizzare questa cartella di lavoro di configurazione [di Microsoft Excel.](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx) 
+> Per generare blocchi di comandi di PowerShell pronti per l'esecuzione in base alle impostazioni personalizzate, utilizzare questa cartella di lavoro di configurazione [di Microsoft Excel.](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx) 
 
 ```powershell
 # Set up key variables
@@ -135,7 +135,7 @@ New-AzVM -ResourceGroupName $rgName -Location $locName -VM $vm
   
 Per ogni macchina virtuale, usare il client desktop remoto di propria scelta e creare una connessione desktop remoto. Usare il nome DNS Intranet o il nome computer e le credenziali dell'account di amministratore locale.
   
-Per ogni macchina virtuale, unirli al dominio di Active Directory Domain Services (AD DS) appropriato con questi comandi al prompt dei Windows PowerShell.
+Per ogni macchina virtuale, aggiungerli al dominio di Servizi di dominio Active Directory appropriato con questi comandi al prompt Windows PowerShell.
   
 ```powershell
 $domName="<AD DS domain name to join, such as corp.contoso.com>"
@@ -152,12 +152,10 @@ Di seguito è riportata la configurazione risultante dal completamento corretto 
   
 ## <a name="next-step"></a>Passaggio successivo
 
-Utilizzare [la fase 4: configurare i proxy delle applicazioni Web](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) per continuare a configurare questo carico di lavoro.
+Utilizzare [La fase 4: configurare i proxy delle applicazioni Web](high-availability-federated-authentication-phase-4-configure-web-application-pro.md) per continuare a configurare questo carico di lavoro.
   
 ## <a name="see-also"></a>Vedere anche
 
 [Distribuire l'autenticazione federata a disponibilità elevata per Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
 [Identità federata per l'ambiente di sviluppo/test di Microsoft 365](federated-identity-for-your-microsoft-365-dev-test-environment.md)
-
-

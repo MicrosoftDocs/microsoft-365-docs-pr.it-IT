@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: 758759ad-63ee-4ea9-90a3-39f941897b7d
 description: Informazioni sui tipi di gruppi che è possibile usare.
-ms.openlocfilehash: dfb726fadbfbcf69a8ff57fa3d9025cd8811e617
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 8565b567706a70bb014fab42b23e9c55fb0efc45
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727248"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908747"
 ---
 # <a name="compare-groups"></a>Confrontare i gruppi
 
@@ -45,19 +45,19 @@ I gruppi di Microsoft 365 vengono usati per la collaborazione tra gli utenti, si
 
 È possibile aggiungere persone esterne alla propria organizzazione a un gruppo, purché questo sia stato [abilitato dall'amministratore](manage-guest-access-in-groups.md). È inoltre possibile consentire ai mittenti esterni di inviare messaggi di posta elettronica all'indirizzo di posta elettronica del gruppo.
 
-I gruppi di Microsoft 365 possono essere [configurati per l'appartenenza dinamica in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-change-type), consentendo l'aggiunta o la rimozione dei membri del gruppo in base agli attributi degli utenti, ad esempio reparto, posizione, titolo e così via.
+I gruppi di Microsoft 365 possono essere [configurati per l'appartenenza dinamica in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-change-type), consentendo l'aggiunta o la rimozione dei membri del gruppo in base agli attributi degli utenti, ad esempio reparto, posizione, titolo e così via.
 
 È possibile accedere ai gruppi di Microsoft 365 tramite le app per dispositivi mobili come Outlook per iOS e Outlook per Android.
 
-I membri del gruppo possono inviare o inviare per conto dell'indirizzo di posta elettronica del gruppo se l'opzione è stata [abilitata dall'amministratore](allow-members-to-send-as-or-send-on-behalf-of-group.md).
+I membri del gruppo possono inviare o inviare per conto dell'indirizzo di posta elettronica del gruppo se l'opzione è stata [abilitata dall'amministratore](../../solutions/allow-members-to-send-as-or-send-on-behalf-of-group.md).
 
 ## <a name="distribution-groups"></a>Gruppi di distribuzione
 
-[I gruppi di distribuzione](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups) vengono usati per inviare notifiche a un gruppo di persone. Queste persone possono ricevere messaggi di posta elettronica esterni se abilitati dall'amministratore.
+[I gruppi di distribuzione](/exchange/recipients-in-exchange-online/manage-distribution-groups/manage-distribution-groups) vengono usati per inviare notifiche a un gruppo di persone. Queste persone possono ricevere messaggi di posta elettronica esterni se abilitati dall'amministratore.
 
 I gruppi di distribuzione sono ideali per quelle situazioni in cui è necessario trasmettere informazioni a un gruppo di persone, ad esempio agli "utenti dell'edificio A" o "tutti gli utenti di Contoso".
 
-I gruppi di distribuzione possono essere [aggiornati ai gruppi di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/manage/upgrade-distribution-lists).
+I gruppi di distribuzione possono essere [aggiornati ai gruppi di Microsoft 365](../manage/upgrade-distribution-lists.md).
 
 ## <a name="security-groups"></a>Gruppi di sicurezza
 
@@ -65,7 +65,7 @@ I gruppi di distribuzione possono essere [aggiornati ai gruppi di Microsoft 365]
 
 I gruppi di sicurezza possono contenere utenti o dispositivi. La creazione di un gruppo di sicurezza per i dispositivi può essere usata con i servizi di gestione dei dispositivi mobili, ad esempio Intune.
 
-I gruppi di sicurezza possono essere [configurati per l'appartenenza dinamica in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-change-type), consentendo l'aggiunta o la rimozione dei membri o dei dispositivi del gruppo in base agli attributi degli utenti, ad esempio reparto, posizione o titolo oppure gli attributi del dispositivo come la versione del sistema operativo.
+I gruppi di sicurezza possono essere [configurati per l'appartenenza dinamica in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-change-type), consentendo l'aggiunta o la rimozione dei membri o dei dispositivi del gruppo in base agli attributi degli utenti, ad esempio reparto, posizione o titolo oppure gli attributi del dispositivo come la versione del sistema operativo.
 
 ## <a name="mail-enabled-security-groups"></a>Gruppi di sicurezza abilitati alla posta elettronica
 

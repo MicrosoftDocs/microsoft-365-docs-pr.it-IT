@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ce17f413b23ef9ef6abf79a2710a5cec9b05206c
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 1151cddbad2f5b8633b0e0f19a24c470f85d7614
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838532"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908987"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Valutare Microsoft Defender per Office 365
 
@@ -44,7 +44,7 @@ Defender per Office 365 in modalità di valutazione crea i criteri di posta elet
 
 Con la modalità di valutazione, [gli allegati](atp-safe-attachments.md)sicuri, i [collegamenti sicuri](atp-safe-links.md)e i criteri di rappresentazione basati [sull'intelligence](set-up-anti-phishing-policies.md#impersonation-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365) delle cassette postali vengono impostati per conto dell'utente. Tutti i criteri di Defender per Office 365 vengono creati in modalità non di imposizione in background e non sono visibili all'utente.
 
-Nell'ambito dell'installazione, la modalità di valutazione configura anche [il filtro avanzato per i connettori.](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) Migliora l'accuratezza del filtro conservando le informazioni sull'indirizzo IP e sul mittente, che altrimenti vengono perse quando la posta passa attraverso un gateway di sicurezza della posta elettronica (ESG) davanti a Defender per Office 365. Il filtro avanzato per i connettori migliora inoltre l'accuratezza del filtro per i criteri di protezione da posta indesiderata e anti-phishing di Exchange Online Protection (EOP) esistenti.
+Nell'ambito dell'installazione, la modalità di valutazione configura anche [il filtro avanzato per i connettori.](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/enhanced-filtering-for-connectors) Migliora l'accuratezza del filtro conservando le informazioni sull'indirizzo IP e sul mittente, che altrimenti vengono perse quando la posta passa attraverso un gateway di sicurezza della posta elettronica (ESG) davanti a Defender per Office 365. Il filtro avanzato per i connettori migliora inoltre l'accuratezza del filtro per i criteri di protezione da posta indesiderata e anti-phishing di Exchange Online Protection (EOP) esistenti.
 
 Il filtro avanzato abilitato per i connettori migliora l'accuratezza del filtro, ma può alterare la recapitabilità di determinati messaggi se si dispone di un gruppo di protezione di Exchange davanti a Defender per Office 365 e attualmente non si ignora il filtro EOP. L'impatto è limitato ai criteri EOP; L'installazione dei criteri MDO nell'ambito della valutazione viene creata in modalità non di imposizione. Per ridurre al minimo il potenziale impatto sulla produzione, è possibile ignorare tutti i filtri EOP creando una regola di trasporto per impostare il livello di probabilità di posta indesiderata su -1. Per [informazioni dettagliate, vedere Use the EAC to create a mail flow rule that sets the SCL of a message.](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md#use-the-eac-to-create-a-mail-flow-rule-that-sets-the-scl-of-a-message)  
 
@@ -72,7 +72,7 @@ Se non hai una di queste licenze, dovrai ottenere una licenza di valutazione.
 
 #### <a name="trial"></a>Valutazione
 
-Per ottenere una licenza di valutazione per Microsoft Defender per  Office 365, è necessario disporre del ruolo Amministratore fatturazione o **Amministratore globale.** Richiedere l'autorizzazione a un utente con il ruolo amministratore globale. [Informazioni sulle sottoscrizioni e sulle licenze](https://docs.microsoft.com/microsoft-365/commerce/licenses/subscriptions-and-licenses)
+Per ottenere una licenza di valutazione per Microsoft Defender per  Office 365, è necessario disporre del ruolo Amministratore fatturazione o **Amministratore globale.** Richiedere l'autorizzazione a un utente con il ruolo amministratore globale. [Informazioni sulle sottoscrizioni e sulle licenze](../../commerce/licenses/subscriptions-and-licenses.md)
 
 Una volta ottenuto il ruolo appropriato, il percorso consigliato è ottenere una licenza di valutazione per Microsoft Defender per Office 365 (Piano 2) nell'interfaccia di amministrazione di Microsoft 365 andando a Fatturazione > Servizi di acquisto. La versione di valutazione include una versione di valutazione gratuita di 30 giorni per 25 licenze. [Ottenere una versione di valutazione per Microsoft Defender per Office 365 (Piano 2)](https://admin.microsoft.com/AdminPortal/Home#/catalog/offer-details/microsoft-defender-for-office-365-plan-2-/223860DC-15D6-42D9-A861-AE05473069FA).
 
@@ -80,14 +80,14 @@ Avrai una finestra di 30 giorni con la valutazione per monitorare e segnalare le
 
 ### <a name="roles"></a>Ruoli
 
-I ruoli di Exchange Online sono necessari per configurare Defender per Office 365 in modalità di valutazione.
+**I ruoli di Exchange Online sono necessari** per configurare Defender per Office 365 in modalità di valutazione. L'assegnazione di un ruolo di amministratore della sicurezza o di conformità di Microsoft 365 non funzionerà.
 
-- [Informazioni sulle autorizzazioni in Exchange Online](https://docs.microsoft.com/exchange/permissions-exo/permissions-exo)
+- [Informazioni sulle autorizzazioni in Exchange Online](/exchange/permissions-exo/permissions-exo)
 - [Informazioni sull'assegnazione dei ruoli di amministratore](../../admin/add-users/assign-admin-roles.md)
 
 Sono necessari i ruoli seguenti:
 
-|Attività|Ruolo|
+|Attività|Ruolo (in Exchange Online)|
 |---|---|
 |Ottenere una versione di valutazione gratuita o acquistare Microsoft Defender per Office 365 (Piano 2)|Ruolo amministratore fatturazione O Ruolo amministratore globale|
 |Creare criteri di valutazione|Ruolo Domini remoti e accettati; Ruolo di amministratore della sicurezza|
@@ -95,7 +95,6 @@ Sono necessari i ruoli seguenti:
 |Eliminare i criteri di valutazione|Ruolo Domini remoti e accettati; Ruolo di amministratore della sicurezza |
 |Visualizzare il report di valutazione|Ruolo di amministratore della sicurezza O ruolo lettore di sicurezza|
 |
-
 
 ### <a name="enhanced-filtering"></a>Filtro avanzato
 
@@ -111,7 +110,7 @@ I collegamenti URL nei corpi dei messaggi di posta elettronica non vengono inclu
 
 ### <a name="email-routing"></a>Routing della posta elettronica
 
-Preparare i dettagli corrispondenti che sarà necessario configurare come viene instradato il messaggio di posta elettronica, incluso il nome del connettore in ingresso che instrada la posta. Se si utilizza solo Exchange Online Protection, non si dispone di un connettore.  [Informazioni sul flusso di posta e sul routing della posta elettronica](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/mail-flow)
+Preparare i dettagli corrispondenti che sarà necessario configurare come viene instradato il messaggio di posta elettronica, incluso il nome del connettore in ingresso che instrada la posta. Se si utilizza solo Exchange Online Protection, non si dispone di un connettore.  [Informazioni sul flusso di posta e sul routing della posta elettronica](/office365/servicedescriptions/exchange-online-service-description/mail-flow)
 
 Gli scenari di routing della posta elettronica supportati includono:
 

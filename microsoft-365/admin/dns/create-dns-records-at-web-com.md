@@ -20,19 +20,19 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 84acd4fc-6eec-4d00-8bed-568f036ae2af
-description: Informazioni su come verificare il dominio e configurare i record DNS per posta elettronica, Skype for Business online e altri servizi web.com per Microsoft.
-ms.openlocfilehash: 943070f3790f532a0cc686270e0ecdea08f802fd
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for Business Online e altri servizi web.com per Microsoft.
+ms.openlocfilehash: b667b2e69822fcd69babda7790a6468b640b073b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49656892"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909983"
 ---
 # <a name="create-dns-records-at-webcom-for-microsoft"></a>Creare record DNS in web.com per Microsoft
 
  Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.yml)**. 
   
-Se web.com è il provider di hosting DNS, seguire i passaggi di questo articolo per verificare il dominio e configurare i record DNS per posta elettronica, Skype for Business online e così via.
+Se web.com è il provider di hosting DNS, seguire i passaggi di questo articolo per verificare il dominio e configurare i record DNS per la posta elettronica, Skype for Business online e così via.
   
 Dopo aver aggiunto questi record in web.com, il dominio sarà configurato per l'utilizzo con i servizi Microsoft.
 
@@ -46,7 +46,7 @@ Dopo aver aggiunto questi record in web.com, il dominio sarà configurato per l'
 > [!IMPORTANT]
 > È necessario eseguire questa procedura presso il registrar da cui è stato acquistato e registrato il dominio. 
   
-Quando si è effettuato l'web.com, è stato aggiunto un dominio utilizzando il web.com **di** installazione. 
+Dopo aver effettuato l'web.com, è stato aggiunto un dominio utilizzando il processo di web.com **di** installazione. 
   
 Per verificare e creare record DNS per il dominio in Microsoft, è innanzitutto necessario modificare i server dei nomi presso il registrar in modo che utilizzino i server dei nomi di web.com.
   
@@ -62,7 +62,7 @@ Per modificare i server dei nomi del dominio presso il registrar, seguire questa
     |Secondo server dei nomi  <br/> |Utilizzare il valore del server dei nomi fornito da web.com.  <br/> |
    
     > [!TIP]
-    > You should use at least two name server records. Se sono elencati altri server dei nomi, è necessario eliminarli. 
+    > You should use at least two name server records. Se sono elencati altri server dei nomi, è consigliabile eliminarli. 
   
 3. Salvare le modifiche apportate.
     
@@ -81,10 +81,10 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
   
 2. Nella pagina **Account Manager** selezionare My **Domain Names**. 
   
-3. In **Manage *my domain***, select **Edit Advanced DNS Records**.
+3. In **Manage *my domain***, selezionare **Edit Advanced DNS Records**.
 
   
-4. Nella pagina **Domain Names,** in **Text (TXT Records),** fare clic **su Edit TXT Records** e quindi selezionare i valori dalla tabella seguente. 
+4. Nella pagina **Domain Names,** in **Text (TXT Records)** fare clic **su Edit TXT Records** e quindi selezionare i valori dalla tabella seguente. 
     
     |**Host**|**TTL**|**Text**|
     |:-----|:-----|:----|
@@ -125,13 +125,13 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 2. Nella pagina **Account Manager** selezionare My **Domain Names**. 
   
-3. In **Manage *my domain***, select **Edit Advanced DNS Records**.
+3. In **Manage *my domain***, selezionare **Edit Advanced DNS Records**.
 
-4. In **Mail Servers (MX Records)** fare clic **su Edit MX Records** e quindi selezionare i valori dalla tabella seguente. 
+4. In **Mail Servers (MX Records)** fare clic **su Edit MX Records** e quindi selezionare i valori della tabella seguente. 
     
     |**Priorità**|**TTL**|**Mail server**|
     |:-----|:-----|:-----|
-    |1   <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |3600  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere il  *\<domain-key\>*  proprio account Microsoft.   [Come trovarlo](../get-help-with-domains/information-for-dns-records.md) |
+    |1  <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](../setup/domains-faq.yml). <br/> |3600  <br/> |*\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere  *\<domain-key\>*  l'utente dal proprio account Microsoft.   [Come trovarlo](../get-help-with-domains/information-for-dns-records.md) |
    
 
 5. Selezionare **Salva**.
@@ -148,7 +148,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
      
 2. Nella pagina **Account Manager** selezionare My **Domain Names**. 
   
-3. In **Manage *my domain***, select **Edit Advanced DNS Records**.
+3. In **Manage *my domain***, selezionare **Edit Advanced DNS Records**.
 
 4. Aggiungere il primo dei sei record CNAME.
     
@@ -174,17 +174,17 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un singolo record  *SPF*  che include entrambi i set di valori. 
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Aggiungere invece i valori Microsoft necessari al record corrente in modo da disporre di un singolo record  *SPF*  che include entrambi i set di valori. 
   
 1. To get started, go to your domains page at web.com by using [this link](https://checkout.web.com/manage-it/index.jsp). Eseguire prima l'accesso.
     
   
 2. Nella pagina **Account Manager** selezionare My **Domain Names**. 
   
-3. In **Manage *my domain***, select **Edit Advanced DNS Records**.
+3. In **Manage *my domain***, selezionare **Edit Advanced DNS Records**.
 
   
-4. Nella pagina **Domain Names,** in **Text (TXT Records),** fare clic **su Edit TXT Records** e quindi selezionare i valori dalla tabella seguente.   
+4. Nella pagina **Domain Names,** in **Text (TXT Records)** fare clic **su Edit TXT Records** e quindi selezionare i valori dalla tabella seguente.   
     
     |**Host**|**TTL**|**Text**|
     |:-----|:-----|:-----|
@@ -201,22 +201,22 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 <a name="BKMK_add_SRV"> </a>
 
 > [!IMPORTANT]
-> Tieni presente che la web.com è responsabile di rendere disponibile questa funzionalità. In caso di discrepanze tra i passaggi riportati di seguito e l'interfaccia web.com corrente (interfaccia utente grafica), utilizzare la web.com [Community.](https://community.web.com.com/) 
+> Tieni presente che questa web.com è responsabile della disponibilità di questa funzionalità. Nel caso in cui si vedano discrepanze tra i passaggi seguenti e l'interfaccia gui di web.com corrente (interfaccia utente grafica), sfruttare la web.com [Community](https://community.web.com.com/). 
 
 1. To get started, go to your domains page at web.com by using [this link](https://checkout.web.com/manage-it/index.jsp). Eseguire prima l'accesso.
       
 2. Nella pagina **Account Manager** selezionare My **Domain Names**. 
   
-3. In **Manage *my domain***, select **Edit Advanced DNS Records**.
+3. In **Manage *my domain***, selezionare **Edit Advanced DNS Records**.
   
 4. Aggiungere il primo dei due record SRV.
 
-    In **Service (SRV Records)** fare clic **su Edit SRV Records** e quindi selezionare i valori dalla tabella seguente. 
+    In **Servizio (record SRV)** fare clic su **Modifica record SRV** e quindi selezionare i valori dalla tabella seguente. 
         
     |**Servizio**|**Protocol**|**TTL**|**Priorità**|**Peso**|**Porta**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip |_tls |3600 | 100|1  |443 |sipfed.online.lync.com  |
-    |_sipfederationtls |_tcp |3600 |100 |1  |5061 | sipfed.online.lync.com |
+    |_sip |_tls |3600 | 100|1 |443 |sipfed.online.lync.com  |
+    |_sipfederationtls |_tcp |3600 |100 |1 |5061 | sipfed.online.lync.com |
 
   
 5. Aggiungere l'altro record SRV scegliendo i valori dalla seconda riga della tabella. 
@@ -228,4 +228,3 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
 > [!NOTE]
 >  In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
-  

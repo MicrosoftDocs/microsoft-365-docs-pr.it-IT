@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 54ae2002-b38e-43a1-82fa-3e49d78fda56
-description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in Namecheap per Microsoft.
-ms.openlocfilehash: 1e0fa8839e4ceae5074059d6ae05e3c7456611c2
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for Business Online e altri servizi in Namecheap per Microsoft.
+ms.openlocfilehash: 3de8c4fb7809423848564590193e00537362c034
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657840"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910151"
 ---
 # <a name="create-dns-records-at-namecheap-for-microsoft"></a>Creare record DNS in Namecheap per Microsoft
 
@@ -34,7 +34,7 @@ ms.locfileid: "49657840"
   
 Se il proprio provider di hosting DNS è Namecheap, seguire i passaggi di questo articolo per verificare il dominio e configurare i record DNS per posta elettronica, Skype for Business online e così via.
   
-Dopo aver aggiunto questi record in Namecheap, il dominio sarà configurato per l'uso con i servizi Microsoft.
+Dopo aver aggiunto questi record in Namecheap, il dominio verrà configurato per l'utilizzo con i servizi Microsoft.
   
 > [!NOTE]
 > In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
@@ -53,32 +53,32 @@ Effettuare le operazioni seguenti.
     
     ![Namecheap-BP-Configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
-2. Nella pagina di **destinazione** , in **account**, scegliere **Domain List** nell'elenco a discesa. 
+2. Nella pagina **Di destinazione,** in **Account,** scegliere **Elenco domini** nell'elenco a discesa. 
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. Nella pagina **elenco dei domini** trovare il nome del dominio che si desidera modificare, quindi selezionare **Gestisci**.
+3. Nella pagina **Elenco domini** individuare il nome del dominio che si desidera modificare e quindi selezionare **Gestisci**.
     
     ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
-4. Selezionare **DNS avanzato**.
+4. Selezionare **ADVANCED DNS**.
     
     ![Namecheap-BP-Configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
-5. Nella sezione **Host Records** selezionare **Aggiungi nuovo record**.
+5. Nella sezione **HOST RECORDS** selezionare ADD **NEW RECORD**.
     
     ![Namecheap-BP-Configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
 6. Nell'elenco a discesa **Type** selezionare **TXT Record**.
     
     > [!NOTE]
-    > L'elenco a discesa **tipo** viene visualizzato automaticamente quando si seleziona **Aggiungi nuovo record**. 
+    > **L'elenco** a discesa Tipo viene visualizzato automaticamente quando si seleziona **AGGIUNGI NUOVO RECORD**. 
   
     ![Namecheap-BP-Verify-1-1](../../media/a5b40973-19b5-4c32-8e1b-1521aa971836.png)
   
 7. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori della tabella seguente.
     
-    Scegliere il valore **TTL** nell'elenco a discesa. 
+    Scegliere il **valore TTL** nell'elenco a discesa. 
     
     |**Tipo**|**Host**|**Valore**|**TTL**|
     |:-----|:-----|:-----|:-----|
@@ -86,7 +86,7 @@ Effettuare le operazioni seguenti.
        
     ![Namecheap-BP-Verify-1-2](../../media/fe75c0fd-f85c-4bef-8068-edaf9779b7f1.png)
   
-8. Selezionare il controllo **Salva modifiche** (segno di spunta). 
+8. Selezionare il **controllo Salva** modifiche (segno di spunta). 
     
     ![Namecheap-BP-Verify-1-3](../../media/b48d2c67-66b5-4aa4-8e59-0c764f236fac.png)
   
@@ -123,15 +123,15 @@ Effettuare le operazioni seguenti.
     
     ![Namecheap-BP-Configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
-2. Nella pagina di **destinazione** , in **account**, scegliere **Domain List** nell'elenco a discesa. 
+2. Nella pagina **Di destinazione,** in **Account,** scegliere **Elenco domini** nell'elenco a discesa. 
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. Nella pagina **elenco dei domini** trovare il nome del dominio che si desidera modificare, quindi selezionare **Gestisci**.
+3. Nella pagina **Elenco domini** individuare il nome del dominio che si desidera modificare e quindi selezionare **Gestisci**.
     
     ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
-4. Selezionare **DNS avanzato**.
+4. Selezionare **ADVANCED DNS**.
     
     ![Namecheap-BP-Configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
@@ -147,25 +147,25 @@ Effettuare le operazioni seguenti.
   
 7. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori della tabella seguente
     
-    (la casella **Priority** è quella senza nome accanto alla casella **Value**. Scegliere il valore **TTL** nell'elenco a discesa. 
+    (la casella **Priority** è quella senza nome accanto alla casella **Value**. Scegliere il **valore TTL** nell'elenco a discesa. 
     
     |**Tipo**|**Host**|**Valore**|**Priorità**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|
-    |Record MX  <br/> |@  <br/> |\<*domain-key*\>. mail.protection.outlook.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> **Nota:** Ottenere il vostro  *\<domain-key\>*  dal vostro account Microsoft.  [Come trovarla](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |30 min  <br/> |
+    |Record MX  <br/> |@  <br/> |\<*domain-key*\>.mail.protection.outlook.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> **Nota:** Ottenere  *\<domain-key\>*  l'utente dal proprio account Microsoft.  [Come trovarla](../get-help-with-domains/information-for-dns-records.md)          |0  <br/> Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](../setup/domains-faq.yml). <br/> |30 min  <br/> |
        
     ![Namecheap-BP-Configure-2-2-2](../../media/f3b76d62-5022-48c1-901b-8615a8571309.png)
   
-8. Selezionare il controllo **Salva modifiche** (segno di spunta). 
+8. Selezionare il **controllo Salva** modifiche (segno di spunta). 
     
     ![Namecheap-BP-Configure-2-3](../../media/ef4e3112-36d2-47c8-a478-136a565dd71d.png)
   
 9. Se sono presenti altri record MX, usare il processo in due passaggi seguente per rimuovere ognuno di essi:
     
-    In primo luogo, selezionare l' **icona di eliminazione** (Cestino) per il record che si desidera rimuovere. 
+    Selezionare innanzitutto **l'icona Elimina** (cestino) per il record che si desidera rimuovere. 
     
     ![Namecheap-BP-Configure-2-4](../../media/7a7a751f-29c2-495f-8f55-98ca37ce555a.png)
   
-    In secondo luogo, selezionare **Sì** per confermare l'eliminazione. 
+    In secondo momento, **selezionare Sì** per confermare l'eliminazione. 
     
     ![Namecheap-BP-Configure-2-5](../../media/85ebc0c7-8787-43ee-9e7b-647375b3345c.png)
   
@@ -181,26 +181,26 @@ Effettuare le operazioni seguenti.
     
     ![Namecheap-BP-Configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
-2. Nella pagina di **destinazione** , in **account**, scegliere **Domain List** nell'elenco a discesa. 
+2. Nella pagina **Di destinazione,** in **Account,** scegliere **Elenco domini** nell'elenco a discesa. 
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. Nella pagina **elenco dei domini** trovare il nome del dominio che si desidera modificare, quindi selezionare **Gestisci**.
+3. Nella pagina **Elenco domini** individuare il nome del dominio che si desidera modificare e quindi selezionare **Gestisci**.
     
     ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
-4. Selezionare **DNS avanzato**.
+4. Selezionare **ADVANCED DNS**.
     
     ![Namecheap-BP-Configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
-5. Nella sezione **Host Records** selezionare **Aggiungi nuovo record**.
+5. Nella sezione **HOST RECORDS** selezionare ADD **NEW RECORD**.
     
     ![Namecheap-BP-Configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
 6. Nell'elenco a discesa **Type** selezionare **CNAME Record**.
     
     > [!NOTE]
-    > L'elenco a discesa **tipo** viene visualizzato automaticamente quando si seleziona **Aggiungi nuovo record**. 
+    > **L'elenco** a discesa Tipo viene visualizzato automaticamente quando si seleziona **AGGIUNGI NUOVO RECORD**. 
   
     ![Namecheap-BP-Configure-3-1](../../media/0898f3b2-06ab-4364-a86a-a603a25b39f4.png)
   
@@ -214,51 +214,51 @@ Effettuare le operazioni seguenti.
     |CNAME  <br/> |enterpriseregistration  <br/> |enterpriseregistration.windows.net.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |3600  <br/> |
     |CNAME  <br/> |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |3600  <br/> |
        
-    ![Namecheap-BP-configure-3-2](../../media/f79c5679-34eb-4544-8517-caa2e8a4111a.png)
+    ![Namecheap-BP-Configure-3-2](../../media/f79c5679-34eb-4544-8517-caa2e8a4111a.png)
   
-8. Selezionare il controllo **Salva modifiche** (segno di spunta). 
+8. Selezionare il **controllo Salva** modifiche (segno di spunta). 
     
     ![Namecheap-BP-Configure-3-3](../../media/91a5cce4-ca41-41ec-b976-aafe681a4d68.png)
   
-9. Utilizzando i quattro passaggi precedenti e i valori delle altre cinque righe nella tabella, aggiungere ognuno degli altri cinque record CNAME.
+9. Utilizzando i quattro passaggi precedenti e i valori delle altre cinque righe della tabella, aggiungere ognuno degli altri cinque record CNAME.
 
   
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Aggiungere un record TXT per SPF per evitare di ricevere posta indesiderata
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un  *singolo*  record SPF che includa entrambi i set di valori. 
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Aggiungere invece i valori Microsoft necessari al record corrente in modo da disporre di un singolo record  *SPF*  che include entrambi i set di valori. 
 
 Effettuare le operazioni seguenti.
   
 1. Per iniziare, passare alla propria pagina dei domini su Namecheap usando [questo collegamento](https://www.namecheap.com/myaccount/login.aspx?ReturnUrl=%2f). Verrà richiesto di eseguire l'accesso e continuare.
     
-2. Nella pagina di **destinazione** , in **account**, scegliere **Domain List** nell'elenco a discesa. 
+2. Nella pagina **Di destinazione,** in **Account,** scegliere **Elenco domini** nell'elenco a discesa. 
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. Nella pagina **elenco dei domini** individuare il nome del dominio che si desidera modificare e quindi selezionare **Gestisci**.
+3. Nella pagina **Elenco domini** individuare il nome del dominio che si desidera modificare e quindi selezionare **Gestisci**.
     
     ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
-4. Selezionare **DNS avanzato**.
+4. Selezionare **ADVANCED DNS**.
     
     ![Namecheap-BP-Configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
-5. Nella sezione **Host Records** selezionare **Aggiungi nuovo record**.
+5. Nella sezione **HOST RECORDS** selezionare ADD **NEW RECORD**.
     
     ![Namecheap-BP-Configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
 6. Nell'elenco a discesa **Type** selezionare **TXT Record**.
     
     > [!NOTE]
-    > L'elenco a discesa **tipo** viene visualizzato automaticamente quando si seleziona **Aggiungi nuovo record**. 
+    > **L'elenco** a discesa Tipo viene visualizzato automaticamente quando si seleziona **AGGIUNGI NUOVO RECORD**. 
   
     ![Namecheap-BP-Configure-4-1](../../media/c5d1fddb-28b5-48ec-91c9-3e5d3955ac80.png)
   
 7. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori della tabella seguente.
     
-    Scegliere il valore **TTL** nell'elenco a discesa. 
+    Scegliere il **valore TTL** nell'elenco a discesa. 
     
     |**Tipo**|**Host**|**Valore**|**TTL**|
     |:-----|:-----|:-----|:-----|
@@ -266,7 +266,7 @@ Effettuare le operazioni seguenti.
        
     ![Namecheap-BP-Configure-4-2](../../media/ea0829f1-990b-424b-b26e-9859468318dd.png)
   
-8. Selezionare il controllo **Salva modifiche** (segno di spunta). 
+8. Selezionare il **controllo Salva** modifiche (segno di spunta). 
     
     ![Namecheap-BP-Configure-4-3](../../media/f2846c36-ace3-43d8-be5d-a65e2c267619.png)
   
@@ -277,26 +277,26 @@ Effettuare le operazioni seguenti.
     
     ![Namecheap-BP-Configure-1-1](../../media/1827f9fc-4dc9-4f9d-a392-7817c47b00b3.png)
   
-2. Nella pagina di **destinazione** , in **account**, scegliere **Domain List** nell'elenco a discesa. 
+2. Nella pagina **Di destinazione,** in **Account,** scegliere **Elenco domini** nell'elenco a discesa. 
     
     ![Namecheap-BP-Configure-1-2](../../media/3f457d64-4589-422c-ae34-fc24b0e819eb.png)
   
-3. Nella pagina **elenco dei domini** individuare il nome del dominio che si desidera modificare e quindi selezionare **Gestisci**.
+3. Nella pagina **Elenco domini** individuare il nome del dominio che si desidera modificare e quindi selezionare **Gestisci**.
     
     ![Namecheap-BP-Configure-1-3](../../media/fb2020d8-707c-4148-835e-304ac6244d66.png)
   
-4. Selezionare **DNS avanzato**.
+4. Selezionare **ADVANCED DNS**.
     
     ![Namecheap-BP-Configure-1-4](../../media/05a4f0b9-1d27-448e-9954-2b23304c5f65.png)
   
-5. Nella sezione **Host Records** selezionare **Aggiungi nuovo record**.
+5. Nella sezione **HOST RECORDS** selezionare ADD **NEW RECORD**.
     
     ![Namecheap-BP-Configure-1-5](../../media/8849abfe-deb6-4f6a-b56d-e69be9a28b0f.png)
   
 6. Nell'elenco a discesa **Type** selezionare **SRV Record**.
     
     > [!NOTE]
-    > L'elenco a discesa **tipo** viene visualizzato automaticamente quando si seleziona **Aggiungi nuovo record**. 
+    > **L'elenco** a discesa Tipo viene visualizzato automaticamente quando si seleziona **AGGIUNGI NUOVO RECORD**. 
   
     ![Namecheap-BP-Configure-5-1](../../media/fd55cd7c-2243-4de1-8d39-2c3f7ea3ae51.png)
   
@@ -304,12 +304,12 @@ Effettuare le operazioni seguenti.
     
     |**Servizio**|**Protocollo**|**Priorità**|**Peso**|**Porta**|**Target**|**TTL**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |_sip  <br/> |_tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |30 min  <br/> |
-    |_sipfederationtls  <br/> |_tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |30 min  <br/> |
+    |_sip  <br/> |_tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |30 min  <br/> |
+    |_sipfederationtls  <br/> |_tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com.  <br/> **Questo valore DEVE terminare con un punto (.)** <br/> |30 min  <br/> |
        
     ![Namecheap-BP-Configure-5-2](../../media/ff9566ea-0096-4b7f-873c-027080a23b56.png)
   
-8. Selezionare il controllo **Salva modifiche** (segno di spunta). 
+8. Selezionare il **controllo Salva** modifiche (segno di spunta). 
     
     ![Namecheap-BP-Configure-5-3](../../media/48a8dee4-c66d-449d-8759-9e9784c82b13.png)
   
@@ -319,4 +319,3 @@ Effettuare le operazioni seguenti.
 > In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
   
 
-  

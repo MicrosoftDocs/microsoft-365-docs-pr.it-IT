@@ -1,5 +1,5 @@
 ---
-title: Creare record DNS in Crazy Domains for Microsoft
+title: Creare record DNS in Crazy Domains per Microsoft
 f1.keywords:
 - NOCSH
 ms.author: pebaum
@@ -20,21 +20,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 6386d63e-b78f-4736-90e7-b99a2c116a9f
-description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for business online e altri servizi in Crazy Domains for Microsoft.
-ms.openlocfilehash: 4b39a51f96299879207b96d1e15d039905440b0a
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for Business Online e altri servizi in Crazy Domains for Microsoft.
+ms.openlocfilehash: 425ecfa6f8b6c4085bdffb3d2701008ecb895b84
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658496"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910463"
 ---
-# <a name="create-dns-records-at-crazy-domains-for-microsoft"></a>Creare record DNS in Crazy Domains for Microsoft
+# <a name="create-dns-records-at-crazy-domains-for-microsoft"></a>Creare record DNS in Crazy Domains per Microsoft
 
  **Se non si trova ciò che si sta cercando, [vedere le domande frequenti sui domini](../setup/domains-faq.yml)**. 
   
 Se il proprio provider di hosting DNS è Crazy Domains, seguire i passaggi di questo articolo per verificare il dominio e configurare i record DNS per posta elettronica, Skype for Business online e così via.
   
-Dopo aver aggiunto questi record in Crazy Domains, il dominio sarà configurato per l'uso con i servizi Microsoft.
+Dopo aver aggiunto questi record in Crazy Domains, il dominio sarà configurato per l'utilizzo con i servizi Microsoft.
   
 
   
@@ -53,15 +53,15 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
     
     ![CrazyDomains-BP-Configure-1-1](../../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
   
-2. Nella sezione **My account** selezionare **Domains**.
+2. Nella sezione **Account personale** selezionare **Domini**.
     
     ![CrazyDomains-BP-Configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
-3. Nella sezione **Domain** della pagina Domain **names** selezionare il nome del dominio da aggiornare. 
+3. Nella sezione **Dominio della**  pagina Domain Names selezionare il nome del dominio da aggiornare. 
     
     ![CrazyDomains-BP-Configure-1-3](../../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
   
-4. Nella sezione **impostazioni DNS** selezionare l'icona dell'elenco a discesa. 
+4. Nella sezione **Impostazioni DNS** selezionare l'icona dell'elenco a discesa. 
     
     ![CrazyDomains-BP-Configure-1-4-1](../../media/c7573fbf-467d-49c1-abb6-8c7b9b4af83d.png)
   
@@ -120,15 +120,15 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![CrazyDomains-BP-Configure-1-1](../../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
   
-2. Nella sezione **My account** selezionare **Domains**.
+2. Nella sezione **Account personale** selezionare **Domini**.
     
     ![CrazyDomains-BP-Configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
-3. Nella sezione **Domain** della pagina Domain **names** selezionare il nome del dominio da aggiornare. 
+3. Nella sezione **Dominio della**  pagina Domain Names selezionare il nome del dominio da aggiornare. 
     
     ![CrazyDomains-BP-Configure-1-3](../../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
   
-4. Nella sezione **impostazioni DNS** selezionare l'icona dell'elenco a discesa. 
+4. Nella sezione **Impostazioni DNS** selezionare l'icona dell'elenco a discesa. 
     
     ![CrazyDomains-BP-Configure-1-4-1](../../media/c7573fbf-467d-49c1-abb6-8c7b9b4af83d.png)
   
@@ -146,11 +146,11 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 8. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori della tabella seguente.
     
-    Scegliere il valore di **priorità** dall'elenco a discesa. 
+    Scegliere il **valore Priority** nell'elenco a discesa. 
     
     |**Posta per area**|**Priorità**|**Assegnato al server**|
     |:-----|:-----|:-----|
-    |Lasciare vuoto questo campo.  <br/> |1   <br/> Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere il vostro  *\<domain-key\>*  dal vostro account Microsoft.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
+    |Lasciare vuoto questo campo.  <br/> |1  <br/> Per altre informazioni sulla priorità, vedere [Che cos'è la priorità MX](../setup/domains-faq.yml). <br/> | *\<domain-key\>*  .mail.protection.outlook.com  <br/> **Nota:** Ottenere  *\<domain-key\>*  l'utente dal proprio account Microsoft.           [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)          |
        
    ![CrazyDomains-BP-Configure-2-3](../../media/e27df6a6-19a6-4e58-9716-a74be1c3f8da.png)
   
@@ -158,7 +158,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![CrazyDomains-BP-Configure-2-4](../../media/ba25cdef-a436-48bf-b0e9-5dffd03234a4.png)
   
-10. Se nella sezione **MX record** sono presenti altri record MX, selezionare **Modify** per uno di questi record. 
+10. Se nella sezione MX Record sono elencati altri **record MX,** selezionare **Modifica** per uno di questi record. 
     
     ![CrazyDomains-BP-Configure-2-5](../../media/9acdda39-33ec-4b24-ad83-91c26f9c599b.png)
   
@@ -179,15 +179,15 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![CrazyDomains-BP-Configure-1-1](../../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
   
-2. Nella sezione **My account** selezionare **Domains**.
+2. Nella sezione **Account personale** selezionare **Domini**.
     
     ![CrazyDomains-BP-Configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
-3. Nella sezione **Domain** della pagina Domain **names** selezionare il nome del dominio da aggiornare. 
+3. Nella sezione **Dominio della**  pagina Domain Names selezionare il nome del dominio da aggiornare. 
     
     ![CrazyDomains-BP-Configure-1-3](../../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
   
-4. Nella sezione **impostazioni DNS** selezionare l'icona dell'elenco a discesa. 
+4. Nella sezione **Impostazioni DNS** selezionare l'icona dell'elenco a discesa. 
     
     ![CrazyDomains-BP-Configure-1-4-1](../../media/c7573fbf-467d-49c1-abb6-8c7b9b4af83d.png)
   
@@ -197,11 +197,11 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 6. Nell'elenco a discesa **Add Record:** selezionare **CNAME Record**. 
     
-    ![CrazyDomains-BP-configure-3-1](../../media/2f02538b-fc79-46d2-a2b7-1022eaf0fb08.png)
+    ![CrazyDomains-BP-Configure-3-1](../../media/2f02538b-fc79-46d2-a2b7-1022eaf0fb08.png)
   
 7. Selezionare **Aggiungi**.
     
-    ![CrazyDomains-BP-configure-3-2](../../media/4c5929cf-1c21-4af9-899b-e36091f0f14d.png)
+    ![CrazyDomains-BP-Configure-3-2](../../media/4c5929cf-1c21-4af9-899b-e36091f0f14d.png)
   
 8. Aggiungere il primo dei sei record CNAME.
     
@@ -215,41 +215,41 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     |enterpriseregistration  <br/> |enterpriseregistration.windows.net  <br/> |
     |enterpriseenrollment  <br/> |enterpriseenrollment-s.manage.microsoft.com  <br/> |
    
-    ![CrazyDomains-BP-configure-3-3](../../media/81a7b837-3f4d-4565-89a9-380e4d318acf.png)
+    ![CrazyDomains-BP-Configure-3-3](../../media/81a7b837-3f4d-4565-89a9-380e4d318acf.png)
   
 9. Selezionare **Aggiungi record CNAME**.
     
-    ![CrazyDomains-BP-configure-3-4](../../media/9bcba729-7085-4ebc-8183-ecde82f5c364.png)
+    ![CrazyDomains-BP-Configure-3-4](../../media/9bcba729-7085-4ebc-8183-ecde82f5c364.png)
   
 10. Aggiungere il secondo record CNAME.
     
-    Nelle caselle del nuovo record, utilizzare i valori della riga successiva della tabella e quindi selezionare di nuovo **Aggiungi record CNAME**.
+    Nelle caselle del nuovo record utilizzare i valori della riga successiva della tabella e quindi selezionare di nuovo **Aggiungi record CNAME.**
     
     Ripetere questa procedura fino a creare tutti e sei i record CNAME.
     
-11. Selezionare **Update** per salvare le modifiche. 
+11. Selezionare **Aggiorna** per salvare le modifiche. 
     
-    ![CrazyDomains-BP-configure-3-5](../../media/dbe578f6-359c-428c-b296-ca624cecfc3c.png)
+    ![CrazyDomains-BP-Configure-3-5](../../media/dbe578f6-359c-428c-b296-ca624cecfc3c.png)
   
 ## <a name="add-a-txt-record-for-spf-to-help-prevent-email-spam"></a>Aggiungere un record TXT per SPF per evitare di ricevere posta indesiderata
 <a name="BKMK_add_TXT"> </a>
 
 > [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un  *singolo*  record SPF che includa entrambi i set di valori. 
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Aggiungere invece i valori Microsoft necessari al record corrente in modo da disporre di un singolo record  *SPF*  che include entrambi i set di valori. 
   
 1. Per iniziare, passare alla propria pagina dei domini su Crazy Domains usando [questo collegamento](https://manage.crazydomains.com/members/domains/). Verrà richiesto di eseguire l'accesso.
     
     ![CrazyDomains-BP-Configure-1-1](../../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
   
-2. Nella sezione **My account** selezionare **Domains**.
+2. Nella sezione **Account personale** selezionare **Domini**.
     
     ![CrazyDomains-BP-Configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
-3. Nella sezione **Domain** della pagina Domain **names** selezionare il nome del dominio da aggiornare. 
+3. Nella sezione **Dominio della**  pagina Domain Names selezionare il nome del dominio da aggiornare. 
     
     ![CrazyDomains-BP-Configure-1-3](../../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
   
-4. Nella sezione **impostazioni DNS** selezionare l'icona dell'elenco a discesa. 
+4. Nella sezione **Impostazioni DNS** selezionare l'icona dell'elenco a discesa. 
     
     ![CrazyDomains-BP-Configure-1-4-1](../../media/c7573fbf-467d-49c1-abb6-8c7b9b4af83d.png)
   
@@ -284,15 +284,15 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![CrazyDomains-BP-Configure-1-1](../../media/40c5117c-acad-4fe5-bf0d-d3c362b08a16.png)
   
-2. Nella sezione **My account** selezionare **Domains**.
+2. Nella sezione **Account personale** selezionare **Domini**.
     
     ![CrazyDomains-BP-Configure-1-2](../../media/778576c3-560e-4ffb-b3b4-bd92fc6a6bd4.png)
   
-3. Nella sezione **Domain** della pagina Domain **names** selezionare il nome del dominio da aggiornare. 
+3. Nella sezione **Dominio della**  pagina Domain Names selezionare il nome del dominio da aggiornare. 
     
     ![CrazyDomains-BP-Configure-1-3](../../media/4dd7bb74-c8ed-4b4a-b4c1-d9538fc6bd9a.png)
   
-4. Nella sezione **impostazioni DNS** selezionare l'icona dell'elenco a discesa. 
+4. Nella sezione **Impostazioni DNS** selezionare l'icona dell'elenco a discesa. 
     
     ![CrazyDomains-BP-Configure-1-4-1](../../media/c7573fbf-467d-49c1-abb6-8c7b9b4af83d.png)
   
@@ -314,12 +314,12 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     |**Record Type**|**Sub Domain**|**Priorità**|**Peso**|**Porta**|**Target**|
     |:-----|:-----|:-----|:-----|:-----|:-----|
-    |Record SRV  <br/> |_sip._tls  <br/> |100  <br/> |1   <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
-    |Record SRV  <br/> |_sipfederationtls._tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
+    |Record SRV  <br/> |_sip._tls  <br/> |100  <br/> |1  <br/> |443  <br/> |sipdir.online.lync.com  <br/> |
+    |Record SRV  <br/> |_sipfederationtls._tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |sipfed.online.lync.com  <br/> |
    
     ![CrazyDomains-BP-Configure-5-3](../../media/cc0ea6eb-7358-434e-bd1a-2737725c6d41.png)
   
-9. Selezionare **Add SRV record**.
+9. Selezionare **Aggiungi record SRV**.
     
     ![CrazyDomains-BP-Configure-5-4](../../media/de4ec312-6833-469a-b23a-f376140a35ca.png)
   
@@ -327,10 +327,9 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     Nelle caselle del nuovo record usare i valori della seconda riga nella tabella.
     
-11. Selezionare **Update** per salvare le modifiche. 
+11. Selezionare **Aggiorna** per salvare le modifiche. 
     
     ![CrazyDomains-BP-Configure-5-5](../../media/f0bb1dd6-3772-4293-bf74-710f635e0658.png)
   
 > [!NOTE]
 > In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
-  

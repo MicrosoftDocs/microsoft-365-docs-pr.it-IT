@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Utilizzare queste guide al lab di test per configurare dimostrazioni, modelli di verifica o ambienti di sviluppo e test per Microsoft 365 per le aziende.
-ms.openlocfilehash: fefbb18fd108dceba6f387fb8244619c4bb1c167
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: a006f549d0ac68562faee9c935df7f15161b2f12
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487471"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50909599"
 ---
 # <a name="microsoft-365-for-enterprise-test-lab-guides"></a>Guide al lab di test di Microsoft 365 per le aziende
 
@@ -31,19 +31,19 @@ ms.locfileid: "48487471"
 
 Le guide al lab di test (TLG) facilitano la conoscenza dei prodotti Microsoft. Forniscono istruzioni prescrittive per configurare ambienti di testing semplificati ma rappresentativi. È possibile utilizzare questi ambienti per la dimostrazione, la personalizzazione o la creazione di modelli di verifica complessi per la durata di un abbonamento di valutazione o a pagamento.
 
-Le TG sono progettate per essere modulari. Si basano l'uno sull'altro per creare più configurazioni che corrispondano maggiormente alle esigenze di configurazione di apprendimento o test. L'esperienza "L'ho creata io e funziona" consente di comprendere i requisiti di distribuzione di un nuovo prodotto o scenario, in modo da poter pianificare meglio l'hosting in produzione.
+I TG sono progettati per essere modulari. Si basano l'uno sull'altro per creare più configurazioni che corrispondano più strettamente alle esigenze di apprendimento o di configurazione di test. L'esperienza hands-on "L'ho creata io e funziona" consente di comprendere i requisiti di distribuzione di un nuovo prodotto o scenario, in modo da poter pianificare meglio l'hosting in produzione.
 
-È inoltre possibile utilizzare le TG per creare ambienti rappresentativi per sviluppare e testare applicazioni, note anche come ambienti di sviluppo/test.
+È inoltre possibile utilizzare IGG per creare ambienti rappresentativi per sviluppare e testare applicazioni, note anche come ambienti di sviluppo/test.
   
 ![Guide al lab di test per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
-Per una mappa visiva di tutti gli articoli della guida del lab di test di Microsoft 365 per le aziende, espandere l'immagine seguente o passare a [Microsoft 365 per enterprise Test Lab Guide Stack.](../downloads/Microsoft365EnterpriseTLGStack.pdf)
+Per una mappa visiva a tutti gli articoli dello stack guida del laboratorio di testing di Microsoft 365 per le aziende, espandere il grafico seguente o passare a [Microsoft 365 per enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf).
 
 [![Serie di guide al lab di test di Microsoft 365 per le aziende](../media/m365-enterprise-test-lab-guides/microsoft-365-enterprise-tlg-stack.png)](../downloads/Microsoft365EnterpriseTLGStack.pdf)
 
 ## <a name="base-configuration"></a>Configurazione di base
 
-Prima di tutto, creare un ambiente di testing [per Microsoft 365 per le aziende.](https://docs.microsoft.com/microsoft-365-enterprise/) È possibile creare due diversi tipi di configurazioni di base:
+Innanzitutto, creare un ambiente di testing [per Microsoft 365 per le aziende](/microsoft-365-enterprise/). È possibile creare due diversi tipi di configurazioni di base:
 
 - [Configurazione di base](lightweight-base-configuration-microsoft-365-enterprise.md) leggera: utilizzare questa opzione quando si desidera configurare e dimostrare le funzionalità e le funzionalità di Microsoft 365 per le aziende in un ambiente solo cloud, che non include componenti locali.
 
@@ -69,7 +69,7 @@ Per verificare le funzionalità e le capacità relative alla gestione delle iden
 
 - [Accesso Single Sign-On facile di Azure AD](single-sign-on-m365-ent-test-environment.md)
   
-   Abilitare e testare l'accesso Single #A0 facile di Azure AD (SSO facile) con un controller di dominio di Servizi di dominio Active Directory.
+   Abilitare e testare Azure AD Seamless Single Sign-On (SSO senza soluzione di continuità) con un controller di dominio di Servizi di dominio Active Directory.Enable and test Azure AD Seamless Single Sign-On (Seamless SSO) with an AD DS domain controller.
 
 - [Autenticazione a più fattori](multi-factor-authentication-microsoft-365-test-environment.md)
   
@@ -85,7 +85,7 @@ Per verificare le funzionalità e le capacità relative alla gestione delle iden
 
 - [Reimpostazione delle password](password-reset-m365-ent-test-environment.md)
 
-   Utilizzare la reimpostazione della password in self-service per reimpostare la password.
+   Utilizzare la reimpostazione della password self-service per reimpostare la password.
 
 - [Licenze automatiche e appartenenza a gruppi](automate-licenses-group-membership-microsoft-365-test-environment.md)
 

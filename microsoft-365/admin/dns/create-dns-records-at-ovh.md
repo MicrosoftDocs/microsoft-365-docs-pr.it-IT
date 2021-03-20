@@ -20,13 +20,13 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 5176feef-36dc-4d84-842f-1f2b5a21ba96
-description: Informazioni su come verificare il dominio e configurare i record DNS per posta elettronica, Skype for Business online e altri servizi in OVH per Microsoft.
-ms.openlocfilehash: 14c3796ff6686ae0d98ec32ec6ddf6afc004a3c3
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for Business Online e altri servizi in OVH per Microsoft.
+ms.openlocfilehash: a43593af80d2f651e4407de64ed9aab51f1c1ecb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49657780"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50910067"
 ---
 # <a name="create-dns-records-at-ovh-for-microsoft"></a>Creare record DNS in OVH per Microsoft
 
@@ -68,7 +68,7 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
     
     ![OVH Select the domain](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
-3. Selezionare **la zona DNS.**
+3. Selezionare **Zona DNS**.
     
     ![OVH select DNS zone](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
@@ -76,11 +76,11 @@ Prima di usare il proprio dominio con Microsoft, è necessario dimostrare di ess
     
     ![OVH Add an entry](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
-5. Select **TXT**
+5. Selezionare **TXT**
     
     ![OVH select TXT entry](../../media/3aaa9dae-0b1d-436b-a980-b67a970f31a9.png)
   
-6. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori della tabella seguente. Per assegnare un valore TTL, scegliere **Personalized** nell'elenco a discesa e quindi digitare il valore nella casella di testo. 
+6. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori della tabella seguente. Per assegnare un valore TTL, scegliere **Personalizzato** nell'elenco a discesa e quindi digitare il valore nella casella di testo. 
     
     |**Tipo di record**|**Sottodominio**|**TTL**|**Valore**|
     |:-----|:-----|:-----|:-----|
@@ -124,7 +124,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![OVH Select the domain](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
-3. Selezionare **la zona DNS.**
+3. Selezionare **Zona DNS**.
     
     ![OVH select DNS zone](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
@@ -132,18 +132,18 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![OVH Add an entry](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
-5. Selezionare **MX.**
+5. Selezionare **MX**.
     
     ![OVH MX record type](../../media/29b5e54e-440a-41f2-9eb9-3de573922ddf.png)
   
-6. Nelle caselle per il nuovo record digitare oppure copiare e incollare i valori indicati nella tabella seguente. Per assegnare un valore TTL, scegliere **Personalized** nell'elenco a discesa e quindi digitare il valore nella casella di testo. 
+6. Nelle caselle per il nuovo record digitare oppure copiare e incollare i valori indicati nella tabella seguente. Per assegnare un valore TTL, scegliere **Personalizzato** nell'elenco a discesa e quindi digitare il valore nella casella di testo. 
     
     > [!NOTE]
-    > Per impostazione predefinita, OVH utilizza la notazione relativa per la destinazione, che aggiunge il nome di dominio alla fine del record di destinazione. Per usare invece la notazione assoluta, aggiungere un punto al record di destinazione, come mostrato nella tabella seguente. 
+    > Per impostazione predefinita, OVH usa la notazione relativa per la destinazione, che aggiunge il nome di dominio alla fine del record di destinazione. Per usare invece la notazione assoluta, aggiungere un punto al record di destinazione, come mostrato nella tabella seguente. 
   
     |**Tipo di record**|**Sottodominio**|**TTL**|**Priorità**|**Destinazione**|
     |:-----|:-----|:-----|:-----|:-----|
-    |MX  <br/> |(lasciare vuoto)  <br/> |3600 (secondi)  <br/> |10    <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq). <br/> |\<domain-key\>.mail.protection.outlook.com.  <br/> **Nota:** Ottenere il  *\<domain-key\>*  proprio account Microsoft.  [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)  |
+    |MX  <br/> |(lasciare vuoto)  <br/> |3600 (secondi)  <br/> |10    <br/> Per altre informazioni sulla priorità, vedere [Informazioni sulla priorità MX](../setup/domains-faq.yml). <br/> |\<domain-key\>.mail.protection.outlook.com.  <br/> **Nota:** Ottenere  *\<domain-key\>*  l'utente dal proprio account Microsoft.  [Come trovarlo](../get-help-with-domains/information-for-dns-records.md)  |
    
     ![Record MX OVH per la posta](../../media/6e2f5655-93e2-4620-8f19-c452e7edf8f0.png)
   
@@ -155,7 +155,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![OVH MX record select Confirm](../../media/090bfb11-a753-4af0-8982-582a4069a169.png)
   
-9. Se sono presenti altri record MX, eliminarli tutti nella pagina **DNS zone**. Selezionare ogni record e quindi nella colonna **Azioni** selezionare l'icona Elimina **cestino.** 
+9. Se sono presenti altri record MX, eliminarli tutti nella pagina **DNS zone**. Selezionare ogni record e quindi nella **colonna Azioni** selezionare l'icona Elimina **cestino.** 
     
     ![OVH delete MX record](../../media/892b328b-7057-4828-b8c5-fe26284dc8c2.png)
   
@@ -172,7 +172,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![OVH Select the domain](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
-3. Selezionare **la zona DNS.**
+3. Selezionare **Zona DNS**.
     
     ![OVH select DNS zone](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
@@ -180,13 +180,13 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![OVH Add an entry](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
-5. Selezionare **CNAME.**
+5. Selezionare **CNAME**.
     
     ![OVH add CNAME record type](../../media/33c7ac74-18d7-4ae1-9e27-1c0f9773a3c3.png)
   
 6. Creare il primo record CNAME.
     
-    Nelle caselle del nuovo record digitare oppure copiare e incollare i valori dalla prima riga della tabella seguente. Per assegnare un valore TTL, scegliere **Personalized** nell'elenco a discesa e quindi digitare il valore nella casella di testo. 
+    Nelle caselle del nuovo record digitare oppure copiare e incollare i valori dalla prima riga della tabella seguente. Per assegnare un valore TTL, scegliere **Personalizzato** nell'elenco a discesa e quindi digitare il valore nella casella di testo. 
     
     |**Tipo di record**|**Sottodominio**|**Destinazione**|**TTL**|
     |:-----|:-----|:-----|:-----|
@@ -212,7 +212,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
 <a name="bkmk_spf"> </a>
 
 > [!IMPORTANT]
-> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Al contrario, aggiungere i valori Microsoft necessari al record corrente in modo da disporre di un singolo record  *SPF*  che include entrambi i set di valori. 
+> Non può essere presente più di un record TXT per SPF per un dominio. Se il dominio ha più record SPF, si verificheranno errori nella gestione della posta elettronica, oltre a problemi di recapito e di classificazione della posta indesiderata. Se si dispone già di un record SPF per il dominio, non crearne uno nuovo per Microsoft. Aggiungere invece i valori Microsoft necessari al record corrente in modo da disporre di un singolo record  *SPF*  che include entrambi i set di valori. 
   
 1. Per iniziare, passare alla propria pagina dei domini in OVH usando [questo collegamento](https://www.ovh.com/manager/). Verrà chiesto di accedere.
     
@@ -222,7 +222,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![OVH Select the domain](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
-3. Selezionare **la zona DNS.**
+3. Selezionare **Zona DNS**.
     
     ![OVH select DNS zone](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
@@ -230,7 +230,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![OVH Add an entry](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
-5. Selezionare **TXT.**
+5. Selezionare **TXT**.
     
 6. Nelle caselle del nuovo record digitare oppure copiare e incollare i valori seguenti.
     
@@ -242,7 +242,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
   
 7. Selezionare **Avanti**.
     
-    ![OVH Add TXT record for SPF and select Next](../../media/7937eb7c-114f-479f-a916-bcbe476d6108.png)
+    ![OVH Add TXT record for SPF e seleziona Next](../../media/7937eb7c-114f-479f-a916-bcbe476d6108.png)
   
 8. Selezionare **Conferma**.
     
@@ -259,7 +259,7 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![OVH Select the domain](../../media/fe407909-4ea6-4b92-a3bd-dec4022b1d8d.png)
   
-3. Selezionare **la zona DNS.**
+3. Selezionare **Zona DNS**.
     
     ![OVH select DNS zone](../../media/45218cbe-f3f8-4804-87f9-cfcef89ea113.png)
   
@@ -267,18 +267,18 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
     ![OVH Add an entry](../../media/13ded54b-9e48-4c98-8e1b-8c4a99633bc0.png)
   
-5. Selezionare **SRV.**
+5. Selezionare **SRV**.
     
     ![OVH select SRV record type](../../media/66bad536-a531-4a4e-b08d-c0d99f6ea1b2.png)
   
 6. Creare il primo record SRV.
     
-    Nelle caselle del nuovo record digitare oppure copiare e incollare i valori dalla prima riga della tabella seguente. Per assegnare un valore TTL, scegliere **Personalized** nell'elenco a discesa e quindi digitare il valore nella casella di testo. 
+    Nelle caselle del nuovo record digitare oppure copiare e incollare i valori dalla prima riga della tabella seguente. Per assegnare un valore TTL, scegliere **Personalizzato** nell'elenco a discesa e quindi digitare il valore nella casella di testo. 
     
     |**Tipo di record**|**Sottodominio**|**Priorità**|**Peso**|**Porta**|**TTL**|**Destinazione**|
     |:-----|:-----|:-----|:-----|:-----|:-----|:-----|
-    |SRV (Service)  <br/> |_sip._tls  <br/> |100  <br/> |1   <br/> |443  <br/> |3600 (secondi)  <br/> |sipdir.online.lync.com.  <br/> |
-    |SRV (Service)  <br/> |_sipfederationtls._tcp  <br/> |100  <br/> |1   <br/> |5061  <br/> |3600 (secondi)  <br/> |sipfed.online.lync.com.  <br/> |
+    |SRV (Service)  <br/> |_sip._tls  <br/> |100  <br/> |1  <br/> |443  <br/> |3600 (secondi)  <br/> |sipdir.online.lync.com.  <br/> |
+    |SRV (Service)  <br/> |_sipfederationtls._tcp  <br/> |100  <br/> |1  <br/> |5061  <br/> |3600 (secondi)  <br/> |sipfed.online.lync.com.  <br/> |
        
     ![Record SRV OVH](../../media/73956b9e-9e4f-40a5-803e-c4ead2f77fa6.png)
   
@@ -292,4 +292,3 @@ Quando Microsoft trova il record TXT corretto, il dominio è verificato.
     
 > [!NOTE]
 >  In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
-  

@@ -12,15 +12,15 @@ localization_priority: Normal
 ms.assetid: 23b47b57-0eec-46a3-a03b-366ea014ab31
 ms.custom:
 - seo-marvel-apr2020
-description: Gli amministratori possono imparare a eseguire un rapporto del gruppo di ruoli amministratore in Exchange Online Protection (EOP) autonomo. Questo rapporto registra quando un amministratore aggiunge o rimuove membri dai gruppi di ruoli di amministratore.
+description: Gli amministratori possono imparare a eseguire un report del gruppo di ruoli amministratore in Exchange Online Protection (EOP) autonomo. Questo report registra quando un amministratore aggiunge o rimuove membri dai gruppi di ruoli di amministratore.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d778e807a087a5e29b31645457d4a81bd05c5649
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 0281dcb13f5cee0ba8db8c4faed5054f481337cf
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288020"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908795"
 ---
 # <a name="run-an-administrator-role-group-report-in-standalone-eop"></a>Eseguire un report di un gruppo di ruoli amministratore in Exchange Online Protection autonomo
 
@@ -31,32 +31,32 @@ ms.locfileid: "50288020"
 
 Nelle organizzazioni di Exchange Online Protection (EOP) autonome senza cassette postali di Exchange Online, quando un amministratore aggiunge o rimuove membri dai gruppi di ruoli amministrativi, il servizio registra ogni occorrenza. Per ulteriori informazioni sui gruppi di ruoli in EOP autonomo, vedere [Autorizzazioni in EOP autonomo.](feature-permissions-in-eop.md)
 
-Quando si esegue un rapporto del gruppo di ruoli amministratore nell'interfaccia di amministrazione di Exchange (EAC), le voci vengono visualizzate come risultati della ricerca e includono i gruppi di ruoli interessati, chi ha modificato l'appartenenza al gruppo di ruoli e quando e quali aggiornamenti di appartenenza sono stati effettuati. Utilizzare questo rapporto per monitorare le modifiche apportate alle autorizzazioni amministrative assegnate agli utenti dell'organizzazione.
+Quando si esegue un report del gruppo di ruoli di amministratore nell'interfaccia di amministrazione di Exchange (EAC), le voci vengono visualizzate come risultati della ricerca e includono i gruppi di ruoli interessati, chi ha modificato l'appartenenza al gruppo di ruoli e quando e quali aggiornamenti di appartenenza sono stati eseguiti. Utilizzare questo rapporto per monitorare le modifiche apportate alle autorizzazioni amministrative assegnate agli utenti dell'organizzazione.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
-- Per aprire l'interfaccia di amministrazione di Exchange, vedere l'interfaccia di amministrazione [di Exchange in EOP autonomo.](exchange-admin-center-in-exchange-online-protection-eop.md)
+- Per aprire l'interfaccia di amministrazione di Exchange, vedere Interfaccia di amministrazione [di Exchange in EOP autonomo.](exchange-admin-center-in-exchange-online-protection-eop.md)
 
-- Per eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni in Exchange Online Protection. In particolare, è necessario  il ruolo Registri di controllo o Registri di controllo di sola visualizzazione, che vengono assegnati ai gruppi di ruoli Gestione **organizzazione,** Gestione conformità e Amministratore sicurezza per impostazione predefinita.   Per ulteriori informazioni, vedere [Permissions in standalone EOP](feature-permissions-in-eop.md) and [Use the EAC modify the list of members in role groups.](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups)
+- Per eseguire le procedure descritte in questo articolo, è necessario disporre delle autorizzazioni in Exchange Online Protection. In particolare, è necessario  **il** ruolo Log di controllo o Log di controllo  di sola visualizzazione, assegnati ai gruppi di ruoli **Gestione** **organizzazione,** Gestione conformità e Amministratore sicurezza per impostazione predefinita. Per ulteriori informazioni, vedere [Permissions in standalone EOP](feature-permissions-in-eop.md) e [Use the EAC modify the list of members in role groups](manage-admin-role-group-permissions-in-eop.md#use-the-eac-modify-the-list-of-members-in-role-groups).
 
-- Per informazioni sui tasti di scelta rapida applicabili alle procedure descritte in questo articolo, vedere Tasti di scelta rapida per l'interfaccia di amministrazione di [Exchange in Exchange Online.](https://docs.microsoft.com/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
+- Per informazioni sui tasti di scelta rapida applicabili alle procedure descritte in questo articolo, vedere Tasti di scelta rapida per l'interfaccia di amministrazione di [Exchange in Exchange Online.](/Exchange/accessibility/keyboard-shortcuts-in-admin-center)
 
 > [!TIP]
 > Problemi? Chiedere assistenza nel forum [Exchange Online Protection](https://social.technet.microsoft.com/Forums/forefront/home?forum=FOPE).
 
 ## <a name="use-the-eac-to-run-an-administrator-role-group-report"></a>Esecuzione del report del gruppo di ruoli amministratore tramite EAC
 
-Eseguire il rapporto del gruppo di ruoli amministratore per trovare le modifiche ai gruppi di ruoli di gestione in un determinato intervallo di tempo.
+Eseguire il report del gruppo di ruoli di amministratore per trovare le modifiche ai gruppi di ruoli di gestione in un determinato intervallo di tempo.
 
-1. Nell'interfaccia di amministrazione di Exchange, accedere a Controllo di **gestione** della conformità e quindi scegliere Esegui un report del gruppo \> di ruoli **amministratore.**
+1. Nell'interfaccia di amministrazione di Exchange, andare a **Gestione** conformità Controllo e quindi scegliere Esegui un report del gruppo \> di **ruoli amministratore.**
 
-2. Nella pagina **Cerca modifiche ai gruppi di ruoli di** amministratore visualizzata, configurare le impostazioni seguenti:
+2. Nella pagina **Cerca modifiche ai gruppi di ruoli di** amministratore visualizzata configurare le impostazioni seguenti:
 
-   - **Data di inizio** **e Data di fine:** immettere un intervallo di date. Per impostazione predefinita, il rapporto cerca le modifiche apportate ai gruppi di ruoli amministratore nelle ultime due settimane.
+   - **Data inizio** e **Data fine**: immettere un intervallo di date. Per impostazione predefinita, il rapporto cerca le modifiche apportate ai gruppi di ruoli amministratore nelle ultime due settimane.
 
-   - **Selezionare i gruppi di ruoli:** per impostazione predefinita, vengono cercati tutti i gruppi di ruoli. Per filtrare i risultati in base a gruppi di ruoli specifici, fare clic **su Seleziona gruppi di ruoli.** Nella finestra di dialogo visualizzata, selezionare un gruppo di ruoli e fare clic **su aggiungi ->**. Ripetere questo passaggio tutte le volte necessarie e quindi fare clic su **OK** al termine.
+   - **Seleziona gruppi di ruoli**: per impostazione predefinita, vengono cercati tutti i gruppi di ruoli. Per filtrare i risultati in base a gruppi di ruoli specifici, fare clic **su Seleziona gruppi di ruoli.** Nella finestra di dialogo visualizzata selezionare un gruppo di ruoli e fare clic **su aggiungi ->**. Ripetere questo passaggio il numero di volte necessario e quindi fare clic su **OK** al termine.
 
-3. Al termine, fare clic su **Cerca.**
+3. Al termine, fare clic su **Cerca**.
 
 Se utilizzando i criteri specificati vengono trovate delle modifiche, queste verranno visualizzate nel riquadro dei risultati. Fare clic su un gruppo di ruoli nei risultati della ricerca per visualizzare le modifiche nel riquadro dei dettagli.
 
@@ -74,12 +74,12 @@ Per determinare se un utente è stato aggiunto o rimosso, è necessario confront
 
 In questo esempio, l'account utente Amministratore ha apportato le modifiche seguenti:
 
-- Il 06/02/2018, l'utente è stato aggiunto.
-- Il 19/02/2018, l'utente pilarp è stato rimosso.
+- Il 06/02/2018 l'utente è stato aggiunto.
+- Il 19/02/2018 l'utente pilarp è stato rimosso.
 
-## <a name="use-standalone-exchange-online-powershell-to-search-for-audit-log-entries"></a>Utilizzare PowerShell di Exchange Online autonomo per cercare voci del log di controllo
+## <a name="use-standalone-exchange-online-powershell-to-search-for-audit-log-entries"></a>Utilizzare PowerShell di Exchange Online autonomo per cercare voci del registro di controllo
 
-È possibile utilizzare PowerShell di Exchange Online per cercare le voci del log di controllo che soddisfano i criteri specificati. Per un elenco dei criteri di ricerca, vedere [Search-AdminAuditLog search criteria.](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#search-adminauditlog-cmdlet) Questa procedura utilizza il cmdlet **Search-AdminAuditLog** e visualizza i risultati della ricerca in PowerShell di Exchange Online. È possibile utilizzare questo cmdlet per la restituzione di un set di risultati che supera i limiti definiti nel cmdlet **New-AdminAuditLogSearch** o nei report di controllo di Interfaccia di amministrazione di Exchange.
+È possibile utilizzare PowerShell di Exchange Online per cercare voci del registro di controllo che soddisfano i criteri specificati. Per un elenco dei criteri di ricerca, vedere [Search-AdminAuditLog search criteria](/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#search-adminauditlog-cmdlet). Questa procedura utilizza il cmdlet **Search-AdminAuditLog** e visualizza i risultati della ricerca in PowerShell di Exchange Online. È possibile utilizzare questo cmdlet per la restituzione di un set di risultati che supera i limiti definiti nel cmdlet **New-AdminAuditLogSearch** o nei report di controllo di Interfaccia di amministrazione di Exchange.
 
 Per effettuare una ricerca nel log di controllo in base ai criteri specificati, utilizzare la sintassi seguente.
 
@@ -95,7 +95,7 @@ In questo esempio viene eseguita la ricerca di tutte le voci del log di controll
 - **Data di** inizio : 04/08/2018
 - **Data di** fine : 03/10/2018
 - **ID utente**: `davids` , `chrisd` , `kima`
-- **Cmdlet :** **Set-Mailbox**
+- **Cmdlets**: **Set-Mailbox**
 - **Parametri**: _ProhibitSendQuota,_ _ProhibitSendReceiveQuota,_ _IssueWarningQuota,_ _MaxSendSize,_ _MaxReceiveSize_
 
 ```PowerShell
@@ -112,21 +112,21 @@ In questo esempio vengono cercate le modifiche apportate a una cassetta postale 
 Search-AdminAuditLog -StartDate 05/01/2018 -EndDate 10/03/2018 -ObjectID contoso.com/Users/DavidS
 ```
 
-Se le ricerche restituiscono molte voci di registro, si consiglia di utilizzare la procedura descritta in **Utilizzare PowerShell** di Exchange Online per cercare le voci del log di controllo e inviare i risultati a un destinatario più avanti in questo articolo. Nella procedura descritta nella sezione citata, viene inviato un file XML come allegato di posta elettronica ai destinatari specificati, consentendo di estrarre più facilmente i dati a cui si è interessati.
+Se le ricerche restituiscono molte voci di registro, è consigliabile utilizzare la procedura descritta in **Use Exchange Online PowerShell to search for audit log e** send results to a recipient later in this article. Nella procedura descritta nella sezione citata, viene inviato un file XML come allegato di posta elettronica ai destinatari specificati, consentendo di estrarre più facilmente i dati a cui si è interessati.
 
-Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Search-AdminAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-adminauditlog).
+Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Search-AdminAuditLog](/powershell/module/exchange/search-adminauditlog).
 
 ### <a name="view-details-of-audit-log-entries"></a>Visualizzazione dei dettagli del log di controllo
 
-Il cmdlet **Search-AdminAuditLog** restituisce i campi descritti nel [contenuto del registro di controllo.](https://docs.microsoft.com/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#audit-log-contents) Dei due campi restituiti dal cmdlet, due, ovvero **CmdletParameters** e **ModifiedProperties**, contengono ulteriori informazioni non visualizzabili per impostazione predefinita.
+Il cmdlet **Search-AdminAuditLog** restituisce i campi descritti in [Contenuto del registro di controllo.](/Exchange/policy-and-compliance/admin-audit-logging/admin-audit-logging#audit-log-contents) Dei due campi restituiti dal cmdlet, due, ovvero **CmdletParameters** e **ModifiedProperties**, contengono ulteriori informazioni non visualizzabili per impostazione predefinita.
 
-Per visualizzare il contenuto dei campi **CmdletParameters** e **ModifiedProperties**, attenersi alla procedura riportata di seguito. In or, you can use the procedure in **Use Exchange Online PowerShell to search for audit log e send results to a recipient** later in this article to create an XML file.
+Per visualizzare il contenuto dei campi **CmdletParameters** e **ModifiedProperties**, attenersi alla procedura riportata di seguito. In caso contrario, è possibile utilizzare la procedura descritta in Utilizzare **PowerShell** di Exchange Online per cercare voci del registro di controllo e inviare risultati a un destinatario più avanti in questo articolo per creare un file XML.
 
 In questa procedura vengono utilizzati i seguenti concetti:
 
-- [about_Arrays](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_arrays)
+- [about_Arrays](/powershell/module/microsoft.powershell.core/about/about_arrays)
 
-- [about_Variables](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/about/about_variables)
+- [about_Variables](/powershell/module/microsoft.powershell.core/about/about_variables)
 
 1. Scegliere i criteri in base ai quali eseguire la ricerca, eseguire il cmdlet **Search-AdminAuditLog** e memorizzare i risultati in una variabile utilizzando il comando seguente.
 
@@ -134,7 +134,7 @@ In questa procedura vengono utilizzati i seguenti concetti:
    $Results = Search-AdminAuditLog <search criteria>
    ```
 
-2. Ogni voce del registro di controllo viene archiviata come elemento matrice nella variabile `$Results` . È possibile selezionare un elemento di matrice specificandone l'indice. Gli indici degli elementi di matrice iniziano da zero (0) per il primo elemento della matrice. Ad esempio, per recuperare il quinto elemento della matrice, il cui indice è 4, utilizzare il comando seguente.
+2. Ogni voce del log di controllo viene archiviata come elemento di matrice nella variabile `$Results` . È possibile selezionare un elemento di matrice specificandone l'indice. Gli indici degli elementi di matrice iniziano da zero (0) per il primo elemento della matrice. Ad esempio, per recuperare il quinto elemento della matrice, il cui indice è 4, utilizzare il comando seguente.
 
    ```PowerShell
    $Results[4]

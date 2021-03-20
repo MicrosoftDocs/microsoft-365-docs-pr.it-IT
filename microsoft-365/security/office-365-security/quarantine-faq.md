@@ -19,12 +19,12 @@ description: Gli amministratori possono visualizzare le domande frequenti e le r
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8496ae4f1702bb63328be0c494d8829c9ddd8cf2
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 112f8a9f0714d962f8ea18ade5455178ba773858
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289402"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908843"
 ---
 # <a name="quarantined-messages-faq"></a>Domande frequenti sui messaggi in quarantena
 
@@ -35,9 +35,9 @@ ms.locfileid: "50289402"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-In questo argomento vengono fornite le domande frequenti e le risposte sui messaggi di posta elettronica in quarantena per le organizzazioni di Microsoft 365 con cassette postali in Exchange Online o organizzazioni exchange Online Protection (EOP) autonome senza cassette postali di Exchange Online.
+In questo argomento vengono fornite domande frequenti e risposte sui messaggi di posta elettronica in quarantena per le organizzazioni di Microsoft 365 con cassette postali in Exchange Online o organizzazioni autonome di Exchange Online Protection (EOP) senza cassette postali di Exchange Online.
 
-Per domande e risposte sulla protezione da posta indesiderata, vedere Domande frequenti [sulla protezione da posta indesiderata.](anti-spam-protection-faq.md)
+Per domande e risposte sulla protezione da posta indesiderata, vedere Domande frequenti sulla protezione [da posta indesiderata.](anti-spam-protection-faq.md)
 
 Per domande e risposte sulla protezione antimalware, vedere [Domande frequenti sulla protezione antimalware.](anti-malware-protection-faq-eop.md)
 
@@ -45,25 +45,25 @@ Per domande e risposte sulla protezione anti-spoofing, vedere Domande frequenti 
 
 ## <a name="how-do-i-manage-messages-that-were-quarantined-for-malware"></a>Come si gestiscono i messaggi messi in quarantena per malware?
 
-Solo gli amministratori possono gestire i messaggi messi in quarantena per malware. Per ulteriori informazioni, vedere Gestire i messaggi e i file in quarantena [come amministratore.](manage-quarantined-messages-and-files.md)
+Solo gli amministratori possono gestire i messaggi messi in quarantena per malware. Per ulteriori informazioni, vedere [Manage quarantined messages and files as an admin](manage-quarantined-messages-and-files.md).
 
 ## <a name="how-do-i-quarantine-spam"></a>Come mettere in quarantena la posta indesiderata?
 
-Per impostazione predefinita, i messaggi classificati come posta indesiderata o posta inviata in blocco dal filtro della posta indesiderata vengono recapitati nella cassetta postale dell'utente e spostati nella cartella Posta indesiderata. Tuttavia, è possibile creare e configurare criteri di protezione dalla posta indesiderata per mettere in quarantena la posta indesiderata o i messaggi di posta elettronica in blocco. Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md).
+Per impostazione predefinita, i messaggi classificati come posta indesiderata o posta in blocco dal filtro della posta indesiderata vengono recapitati nella cassetta postale dell'utente e spostati nella cartella Posta indesiderata. È tuttavia possibile creare e configurare criteri di protezione da posta indesiderata per mettere in quarantena i messaggi di posta elettronica di posta indesiderata o in blocco. Per altre informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md).
 
 ## <a name="how-do-i-give-users-access-to-the-quarantine"></a>Come si consente agli utenti di accedere alla quarantena?
 
-Un utente deve disporre di un account valido per accedere ai propri messaggi in quarantena. EOP autonomo richiede che gli utenti siano rappresentati come utenti di posta elettronica in EOP (creati manualmente o creati tramite la sincronizzazione della directory). Per ulteriori informazioni sulla gestione degli utenti in ambienti EOP autonomi, vedere [Manage mail users in EOP.](manage-mail-users-in-eop.md)
+Un utente deve disporre di un account valido per accedere ai propri messaggi in quarantena. EOP autonomo richiede che gli utenti siano rappresentati come utenti di posta in EOP (creati manualmente o creati tramite la sincronizzazione della directory). Per ulteriori informazioni sulla gestione degli utenti in ambienti EOP autonomi, vedere [Manage mail users in EOP](manage-mail-users-in-eop.md).
 
 ## <a name="what-messages-can-end-users-access-in-quarantine"></a>A quali messaggi possono accedere gli utenti finali in quarantena?
 
-Gli utenti possono accedere alla posta indesiderata, alla posta elettronica in blocco e (a partire da aprile 2020) ai messaggi di phishing in cui sono destinatari. Gli utenti finali non possono accedere al malware in quarantena, al  phishing ad alta probabilità o ai messaggi messi in quarantena a causa dell'azione Recapita il messaggio all'azione di quarantena ospitata nelle regole del flusso di posta (note anche come regole di trasporto). Per ulteriori informazioni sugli utenti che accedono ai messaggi in quarantena, vedere Trovare e [rilasciare i messaggi in quarantena come utente.](find-and-release-quarantined-messages-as-a-user.md)
+Gli utenti possono accedere alla posta indesiderata, alla posta elettronica in blocco e (a partire da aprile 2020) ai messaggi di phishing in cui sono destinatari. Gli utenti finali non possono accedere al malware in quarantena, al  phishing ad alta probabilità o ai messaggi messi in quarantena a causa dell'azione Recapita il messaggio alla quarantena ospitata nelle regole del flusso di posta (note anche come regole di trasporto). Per ulteriori informazioni sugli utenti che accedono ai messaggi in quarantena, vedere Trovare e rilasciare i [messaggi in quarantena come utente.](find-and-release-quarantined-messages-as-a-user.md)
 
-## <a name="how-long-are-messages-kept-in-the-quarantine"></a>Per quanto tempo i messaggi vengono mantenuti in quarantena?
+## <a name="how-long-are-messages-kept-in-the-quarantine"></a>Per quanto tempo i messaggi vengono conservati in quarantena?
 
-È possibile configurare per quanto tempo i messaggi di posta indesiderata, phishing e posta elettronica in blocco vengono mantenuti in quarantena utilizzando i criteri di protezione da posta indesiderata. Il valore predefinito è 30 giorni, che è anche il massimo. Per ulteriori informazioni, vedere [Configurare i criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md)
+È possibile configurare per quanto tempo i messaggi di posta elettronica di posta indesiderata, phishing e posta elettronica in blocco vengono mantenuti in quarantena utilizzando i criteri di protezione da posta indesiderata. Il valore predefinito è 30 giorni, che è anche il massimo. Per ulteriori informazioni, vedere [Configure anti-spam policies in EOP](configure-your-spam-filter-policies.md)
 
-Per i messaggi messi in quarantena dall'azione della regola del flusso di posta Recapitare il messaggio alla quarantena ospitata, i messaggi vengono mantenuti in quarantena per 30 giorni. Non è possibile configurare questa durata.
+Per i messaggi messi in quarantena dall'azione della regola del flusso di posta Recapita il messaggio alla quarantena ospitata, i messaggi vengono mantenuti in quarantena per 30 giorni. Non è possibile configurare questa durata.
 
 Dopo la scadenza del periodo di tempo, i messaggi vengono eliminati e non sono ripristinabili.
 
@@ -71,7 +71,7 @@ Dopo la scadenza del periodo di tempo, i messaggi vengono eliminati e non sono r
 
 Nel Centro sicurezza & conformità è possibile selezionare e rilasciare fino a 100 messaggi alla volta.
 
-Gli amministratori possono utilizzare i cmdlet [Get-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/get-quarantinemessage) e [Release-QuarantineMessage](https://docs.microsoft.com/powershell/module/exchange/release-quarantinemessage) in PowerShell di Exchange Online o EOP PowerShell autonomo per trovare e rilasciare i messaggi in quarantena in blocco e per segnalare i falsi positivi in blocco.
+Gli amministratori possono utilizzare i cmdlet [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) e [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage) in PowerShell di Exchange Online o PowerShell EOP autonomo per trovare e rilasciare i messaggi in quarantena in blocco e per segnalare i falsi positivi in blocco.
 
 ## <a name="are-wildcards-supported-when-searching-for-quarantined-messages-can-i-search-for-quarantined-messages-for-a-specific-domain"></a>Sono supportati i caratteri jolly nella ricerca dei messaggi in quarantena? Posso cercare i messaggi in quarantena in base a un dominio specifico?
 
@@ -79,7 +79,7 @@ I caratteri jolly non sono supportati nel Centro sicurezza & conformità. Ad ese
 
 Ad esempio, copia il codice di PowerShell seguente in NotePad e salva il file con estensione ps1 in un percorso facile da trovare (ad esempio, C:\Data\QuarantineRelease.ps1).
 
-Quindi, dopo aver eseguito la connessione a [PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) o [PowerShell per Exchange Online Protection,](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)eseguire il comando seguente per eseguire lo script:
+Quindi, dopo aver eseguito la connessione a [PowerShell di Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell) o [PowerShell di Exchange Online Protection,](/powershell/exchange/connect-to-exchange-online-protection-powershell)eseguire il comando seguente per eseguire lo script:
 
 ```powershell
 & C:\Data\QuarantineRelease.ps1
@@ -87,7 +87,7 @@ Quindi, dopo aver eseguito la connessione a [PowerShell di Exchange Online](http
 
 Lo script esegue le azioni seguenti:
 
-- Individuare i messaggi non ricevuti messi in quarantena come posta indesiderata da tutti i mittenti nel dominio fabrikam. Il numero massimo di risultati è 50.000 (50 pagine di 1000 risultati).
+- Trovare i messaggi non letti messi in quarantena come posta indesiderata da tutti i mittenti nel dominio fabrikam. Il numero massimo di risultati è 50.000 (50 pagine di 1000 risultati).
 - Salvare i risultati in un file CSV.
 - Rilasciare i messaggi in quarantena corrispondenti a tutti i destinatari originali.
 
