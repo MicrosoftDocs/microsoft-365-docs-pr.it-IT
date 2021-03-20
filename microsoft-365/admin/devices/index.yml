@@ -1,8 +1,8 @@
 ### YamlMime:Landing
-title: Proteggere e gestire i dispositivi e i dati dell'app
+title: Proteggere e gestire dispositivi e dati dell'app
 summary: Consulta queste risorse per aiutare gli amministratori a scegliere tra i metodi di gestione dei dati di dispositivi e app.
 metadata:
-  title: Proteggere e gestire i dispositivi e i dati dell'app
+  title: Proteggere e gestire dispositivi e dati dell'app
   description: Gestire e proteggere i dispositivi e i dati dell'app
   ms.service: O365-administration
   ms.topic: landing-page
@@ -11,12 +11,12 @@ metadata:
   ms.date: 09/09/2020
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: a70d8471d8344f7bf479e050c59d6c6b3d97f5fe
-  ms.sourcegitcommit: 5a355bde865369f64ea1788a378da23c65b1d249
+  ms.openlocfilehash: 2b15d19025f42db0b4f79adb6f4156f7a115f227
+  ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 11/06/2020
-  ms.locfileid: "48930274"
+  ms.lasthandoff: 03/19/2021
+  ms.locfileid: "50910439"
 landingContent:
 - title: Diversi metodi MDM e MAM
   linkLists:
@@ -24,21 +24,21 @@ landingContent:
     links:
     - text: Esaminare le opzioni di protezione dei dati di dispositivi e app
       url: choose-device-security.md
-- title: Gestire i dispositivi e i dati dell'app con Microsoft Intune
+- title: Gestire i dispositivi e i dati delle app con Microsoft Intune
   linkLists:
   - linkListType: overview
     links:
     - text: Panoramica della registrazione dei dispositivi
-      url: https://docs.microsoft.com/mem/intune/enrollment/device-enrollment
+      url: /mem/intune/enrollment/device-enrollment
   - linkListType: how-to-guide
     links:
     - text: Configurare la registrazione automatica per i dispositivi Windows 10
-      url: https://docs.microsoft.com/mem/intune/enrollment/quickstart-setup-auto-enrollment
+      url: /mem/intune/enrollment/quickstart-setup-auto-enrollment
     - text: Configurare la registrazione Android
-      url: https://docs.microsoft.com/mem/intune/enrollment/android-enroll
+      url: /mem/intune/enrollment/android-enroll
     - text: Configurare la registrazione iOS/iPadOS
-      url: https://docs.microsoft.com/mem/intune/enrollment/ios-enroll
-- title: Gestire i dispositivi e i dati delle app con Microsoft 365 Business Premium
+      url: /mem/intune/enrollment/ios-enroll
+- title: Gestire dispositivi e dati dell'app con Microsoft 365 Business Premium
   linkLists:
   - linkListType: how-to-guide
     links:
@@ -54,15 +54,15 @@ landingContent:
     links:
     - text: Panoramica di Microsoft 365 per le aziende
       url: ../../enterprise/microsoft-365-overview.md
-    - text: Road map sulla gestione dei dispositivi per Microsoft 365 per le aziende
+    - text: Road map per la gestione dei dispositivi per Microsoft 365 per le aziende
       url: ../../enterprise/device-management-roadmap-microsoft-365.md
-- title: Gestire dispositivi e dati dell'app con dispositivi mobili e sicurezza di base
+- title: Gestire i dispositivi e i dati delle app con dispositivi mobili e sicurezza di base
   linkLists:
   - linkListType: overview
     links:
     - text: Panoramica Basic Mobility + Security
       url: ../basic-mobility-security/overview.md
-    - text: Configurare la mobilità e la sicurezza di base
+    - text: Configurare dispositivi mobili e sicurezza di base
       url: ../basic-mobility-security/set-up.md
     - text: Funzionalità di mobilità e sicurezza di base
       url: ../basic-mobility-security/capabilities.md
