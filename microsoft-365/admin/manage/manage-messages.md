@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 97af2932-0868-4ccf-8f6b-21a94946c58a
 description: Informazioni su come gestire i messaggi del Centro messaggi per agevolare la gestione delle modifiche.
-ms.openlocfilehash: 3f0a3c5fe20e76d0fff63cefe7e6eaa687696426
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
-ms.translationtype: HT
+ms.openlocfilehash: ee3df1b2f4855421dab4d6715add6503027b24bc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405961"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915279"
 ---
 # <a name="manage-messages-in-message-center"></a>Gestire i messaggi nel Centro messaggi
 
@@ -171,6 +171,6 @@ Quando si apre un messaggio in un riquadro di lettura, è possibile usare le fre
 
 ## <a name="track-your-message-center-tasks-in-planner"></a>Tenere traccia delle attività del Centro messaggi in Planner
 
-Nel Centro messaggi di Microsoft 365 arrivano molte informazioni utili riguardanti le modifiche ai servizi di Microsoft 365. Può risultare difficile tenere traccia di quali modifiche richiedono di portare a termine le attività, della data di scadenza e dell'autore e monitorarle fino al completamento. Potrebbe anche risultare utile aggiungere note riguardanti un elemento e contrassegnarle per controllarle in un secondo momento. È possibile effettuare tutte queste operazioni e molto altro durante la sincronizzazione dei messaggi dall'interfaccia di amministrazione di Microsoft 365 a Microsoft Planner. Per altre informazioni, vedere [Tenere traccia delle attività del Centro messaggi in Planner](https://docs.microsoft.com/office365/planner/track-message-center-tasks-planner).
+Nel Centro messaggi di Microsoft 365 arrivano molte informazioni utili riguardanti le modifiche ai servizi di Microsoft 365. Può risultare difficile tenere traccia di quali modifiche richiedono di portare a termine le attività, della data di scadenza e dell'autore e monitorarle fino al completamento. Potrebbe anche risultare utile aggiungere note riguardanti un elemento e contrassegnarle per controllarle in un secondo momento. È possibile effettuare tutte queste operazioni e molto altro durante la sincronizzazione dei messaggi dall'interfaccia di amministrazione di Microsoft 365 a Microsoft Planner. Per altre informazioni, vedere [Tenere traccia delle attività del Centro messaggi in Planner](/office365/planner/track-message-center-tasks-planner).
 
-Per una panoramica del Centro messaggi, vedere [Centro messaggi in Microsoft 365](message-center.md). Per informazioni su come impostare le preferenze per la lingua per abilitare la traduzione automatica dei post del Centro messaggi, vedere [Traduzione dei post del Centro messaggi](language-translation-for-message-center-posts.md). Se si cerca un modo alternativo per ottenere informazioni in tempo reale sull'integrità dei servizi e comunicazioni del Centro messaggi, vedere [Panoramica sull'API per le comunicazioni di servizio di Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=848507).
+Per una panoramica del Centro messaggi, vedere [Centro messaggi in Microsoft 365](message-center.md). Per informazioni su come impostare le preferenze per la lingua per abilitare la traduzione automatica dei post del Centro messaggi, vedere [Traduzione dei post del Centro messaggi](language-translation-for-message-center-posts.md). Se si cerca un modo alternativo per ottenere informazioni in tempo reale sull'integrità dei servizi e comunicazioni del Centro messaggi, vedere [Panoramica sull'API per le comunicazioni di servizio di Microsoft 365](/previous-versions/office/developer/o365-enterprise-developers/jj984343(v=office.15)).

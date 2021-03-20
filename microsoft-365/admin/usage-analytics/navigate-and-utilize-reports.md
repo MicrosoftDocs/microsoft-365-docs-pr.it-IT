@@ -20,27 +20,27 @@ search.appverid:
 - MOE150
 ms.assetid: 286fcf0b-ffc7-4593-8073-d7a4a5dd2b45
 description: Informazioni su come visualizzare i report utilizzando le schede e i filtri di spostamento.
-ms.openlocfilehash: aa7508b65d2a2b949c8e6737e92171ebb95812e1
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: d3f080bdf2ec5544a0ef9d06139cad682962d57d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114274"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913911"
 ---
 # <a name="navigate-and-utilize-the-reports-in-microsoft-365-usage-analytics"></a>Esplorare e usare i report nell'analisi dell'utilizzo di Microsoft 365 
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
-Il dashboard offre una rapida panoramica delle principali metriche di adozione e utilizzo. Selezionando le metriche di primo livello, è possibile accedere ai report che forniscono ulteriori dettagli e informazioni dettagliate. Ogni scheda del report contiene visualizzazioni dei dati specifiche di un aspetto dell'utilizzo e dell'adozione per l'organizzazione. I dati raccolti sono illustrati nel titolo di ogni report e viene visualizzato un riquadro che contiene ulteriori informazioni sulle visualizzazioni nella scheda del report che si sta visualizzando.
+Il dashboard offre una rapida panoramica delle principali metriche di adozione e utilizzo. Selezionando le metriche di primo livello, è possibile accedere ai report che forniscono ulteriori dettagli e informazioni dettagliate. Ogni scheda del report contiene visualizzazioni dei dati specifiche di un aspetto dell'utilizzo e dell'adozione per l'organizzazione. I dati raccolti sono illustrati nel titolo di ogni report e viene visualizzato un riquadro contenente ulteriori informazioni sulle visualizzazioni nella scheda del report che si sta visualizzando.
 
 Ecco alcuni suggerimenti per iniziare a usare i report:
 
-- Usare le schede di spostamento a sinistra o in una metrica correlata nella pagina **Riepilogo** dirigenti per passare a ogni report di primo livello.
+- Usa le schede di spostamento a sinistra o su una metrica correlata nella pagina **Executive Summary** per passare a ogni report di primo livello.
 
     ![Mostra le schede di spostamento a sinistra](../../media/navigate-usage-analytics1.png)
 
@@ -48,7 +48,7 @@ Ecco alcuni suggerimenti per iniziare a usare i report:
 
     ![Mostra le schede di spostamento nella parte superiore di ogni report](../../media/navigate-usage-analytics2.png)
 
-- Molti report contengono un filtro dei dati in cui è possibile filtrare in base al prodotto, all'attributo AAD o all'attività che si desidera visualizzare. Possono essere a selezione singola o a selezione multipla.
+- Molti report contengono un filtro dei dati in cui è possibile filtrare il prodotto, l'attributo AAD o l'attività che si desidera visualizzare. Possono essere a selezione singola o a selezione multipla.
 
     ![Mostra un filtro dei dati](../../media/navigate-usage-analytics3.png)
 
@@ -57,7 +57,7 @@ Ecco alcuni suggerimenti per iniziare a usare i report:
 
 - Passare il mouse sui punti dati per visualizzare un callout che contiene informazioni dettagliate.
 
-    ![Mostra l'esempio di passaggio del mouse](../../media/navigate-usage-analytics6.png)
+    ![Esempio di passaggio del mouse](../../media/navigate-usage-analytics6.png)
 
 L'utente che ha creato un'istanza dell'app modello avrà la possibilità di personalizzare il report in base alle proprie esigenze. Per personalizzare l'app modello:
 
@@ -70,20 +70,20 @@ L'utente che ha creato un'istanza dell'app modello avrà la possibilità di pers
 
 - Usare PowerBI Desktop per importare specifiche origini dati.
 
-Per condividere i report, è sufficiente selezionare il pulsante Condividi ![Power BI Share icon](../../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) nella parte superiore della pagina.
+Per condividere i report, basta selezionare il pulsante Condividi ![Power BI Share icon](../../media/dbb0569d-2013-4f9d-ab9d-d01b09631b92.png) nella parte superiore della pagina.
 
-Per informazioni su come personalizzare i report, vedere Personalizzazione dei report nell'analisi dell'utilizzo di [Microsoft 365.](customize-reports.md)
+Per informazioni su come personalizzare i report, vedere [Personalizzazione dei report nell'analisi dell'utilizzo di Microsoft 365.](customize-reports.md)
 
 Nella documentazione della Guida di Power BI sono disponibili moltissime altre informazioni:
 
-- [Concetti di base di Power BI](https://docs.microsoft.com/power-bi/service-basic-concepts)
+- [Concetti di base di Power BI](/power-bi/service-basic-concepts)
 
     Informazioni su dashboard, set di dati, report e altri concetti di Power BI.
 
-- [Introduzione a Power BI](https://docs.microsoft.com/power-bi/service-get-started?wt.mc_id=O365_Reports_PBI_contentpack)
+- [Introduzione a Power BI](/power-bi/service-get-started?wt.mc_id=O365_Reports_PBI_contentpack)
 
     Informazioni sulle funzionalità di base in Power BI, con collegamenti ad articoli che spiegano come usare Power BI Desktop.
 
-- [Condividere dashboard e report](https://docs.microsoft.com/power-bi/service-share-dashboards)
+- [Condividere dashboard e report](/power-bi/service-share-dashboards)
 
     Informazioni su come condividere report con colleghi o persone esterne all'organizzazione. È inoltre possibile condividere il report o una versione filtrata del report.

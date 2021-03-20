@@ -1,5 +1,5 @@
 ---
-title: Errore di disattivazione di un account in Outlook sul Web?
+title: Ottenere un errore di disattivazione di un account in Outlook sul Web?
 f1.keywords:
 - CSH
 ms.author: pebaum
@@ -17,15 +17,15 @@ search.appverid:
 - MET150
 ms.assetid: 7e453a40-66df-44ab-92a1-96786cb7fb34
 description: Informazioni su come aggiungere una licenza agli utenti senza licenza per correggere l'errore di disabilitazione dell'account.
-ms.openlocfilehash: b05b19ceb3c4b173164d37f780fd558bdd2d8040
-ms.sourcegitcommit: d578b28ed1886abd083b01b93f01b354067e6d47
+ms.openlocfilehash: f44ab0811fa3be0642ca662da7fae8cb1d967369
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "48804868"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914943"
 ---
 # <a name="getting-an-account-disabled-error-in-outlook-on-the-web"></a>Errore di disattivazione di un account in Outlook sul Web
 
 Se viene visualizzato l'errore **L'account** è stato disabilitato quando si tenta di aprire Outlook sul Web (in precedenza noto come Outlook Web App), l'amministratore potrebbe aver disabilitato l'accesso a `X-OWA-Error: Microsoft.Exchange.Data.Storage.AccountDisabledException` Outlook sul Web.
 
-L'amministratore può risolvere questo errore seguendo la procedura descritta nell'argomento Abilitare o [disabilitare Outlook Web App per una cassetta postale.](https://docs.microsoft.com/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app)
+L'amministratore può correggere questo errore seguendo la procedura descritta nell'argomento Abilitare o [disabilitare Outlook Web App per una cassetta postale.](/exchange/recipients-in-exchange-online/manage-user-mailboxes/enable-or-disable-outlook-web-app)

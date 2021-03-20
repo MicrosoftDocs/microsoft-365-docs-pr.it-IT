@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Consentire agli utenti di essere produttivi con Teams, Exchange, SharePoint e altri servizi di Microsoft 365.
-ms.openlocfilehash: ce19085a358861238e9a7cd4d650246d08fd272d
-ms.sourcegitcommit: 1ac884d8470b2f2a58b6f79e324fd91e4d11dceb
+ms.openlocfilehash: 7b62191d08e5ff91e54bb16b06a0511e02f16b6d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50055493"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916179"
 ---
 # <a name="step-5-deploy-remote-worker-productivity-apps-and-services"></a>Passaggio 5. Distribuire le app e i servizi per la produttività dei lavoratori remoti
 
@@ -42,7 +42,7 @@ Per essere produttivi, le persone devono comunicare e collaborare tra loro. Devo
 
 Teams consente di chattare, fare riunioni, chiamate e collaborare in un'unica posizione. Milioni di persone svolgono il proprio lavoro ogni giorno in Teams perché riunisce tutto il necessario per lavorare in remoto in un hub per il lavoro di in team. 
 
-Per istruzioni dettagliate, vedere [Supporto per i lavoratori remoti con Microsoft Teams](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams). 
+Per istruzioni dettagliate, vedere [Supporto per i lavoratori remoti con Microsoft Teams](/microsoftteams/support-remote-work-with-teams). 
 
 Guarda il video [Abilitare il lavoro ibrido con i webcast di Microsoft Teams](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/) per linee guida e demo sull'uso di Teams per il lavoro remoto.
 
@@ -76,10 +76,10 @@ Per la collaborazione sui contenuti, i lavoratori remoti possono utilizzare le c
 
 Potrebbe essere necessario eseguire la migrazione dei documenti in SharePoint o OneDrive da:
 
-- [Siti del team di SharePoint Server](https://docs.microsoft.com/sharepointmigration/sp-teams-sites-migration-guide)
-- [MySites](https://docs.microsoft.com/sharepointmigration/mysites-to-onedrive-migration-guide)
-- [Condivisioni file](https://docs.microsoft.com/sharepointmigration/fileshare-to-odsp-migration-guide)
-- [Box](https://docs.microsoft.com/sharepointmigration/box-to-onedrive-and-sharepoint-migration-guide)
+- [Siti del team di SharePoint Server](/sharepointmigration/sp-teams-sites-migration-guide)
+- [MySites](/sharepointmigration/mysites-to-onedrive-migration-guide)
+- [Condivisioni file](/sharepointmigration/fileshare-to-odsp-migration-guide)
+- [Box](/sharepointmigration/box-to-onedrive-and-sharepoint-migration-guide)
 
 Per proteggere SharePoint e OneDrive, vedere [questo articolo](../security/office-365-security/sharepoint-file-access-policies.md) sui criteri di identità e accesso ai dispositivi consigliati.
 
@@ -87,15 +87,15 @@ Per proteggere SharePoint e OneDrive, vedere [questo articolo](../security/offic
 
 Microsoft 365 Apps rappresenta l'esperienza di Office più produttiva e sicura per le aziende, perché consente alle persone di collaborare facilmente ovunque e in qualsiasi momento. I lavoratori remoti possono collaborare a un documento con più persone contemporaneamente, visualizzare modifiche e cambiamenti in tempo reale e creare in modalità condivisa con altri su qualsiasi portatile, PC o dispositivo mobile.
 
-Per altre informazioni, vedere la [Guida alla distribuzione di Microsoft 365 Apps](https://docs.microsoft.com/deployoffice/deployment-guide-microsoft-365-apps).
+Per altre informazioni, vedere la [Guida alla distribuzione di Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps).
 
 ## <a name="admin-technical-resources-for-productivity-apps-and-services"></a>Risorse amministrative tecniche per app e servizi per la produttività
 
-- [Supporto per i lavoratori remoti con Microsoft Teams](https://docs.microsoft.com/microsoftteams/support-remote-work-with-teams)
+- [Supporto per i lavoratori remoti con Microsoft Teams](/microsoftteams/support-remote-work-with-teams)
 - [Abilitare il lavoro ibrido con i webcast di Microsoft Teams](https://resources.techcommunity.microsoft.com/enabling-hybrid-work/)
 - [Download di Teams Customer Success Kit ](https://www.microsoft.com/download/details.aspx?id=54244)
-- [Strumenti per favorire l'adozione di Teams](https://docs.microsoft.com/microsoftteams/adopt-tools-and-downloads) 
-- [Creare una strategia di gestione del cambiamento per Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/change-management-strategy)
+- [Strumenti per favorire l'adozione di Teams](/microsoftteams/adopt-tools-and-downloads) 
+- [Creare una strategia di gestione del cambiamento per Microsoft Teams](/MicrosoftTeams/change-management-strategy)
 - [Teams con tre livelli di protezione](configure-teams-three-tiers-protection.md)
 
 ## <a name="user-training-resources-for-productivity-apps-and-services"></a>Risorse per la formazione degli utenti su servizi e app di produttività

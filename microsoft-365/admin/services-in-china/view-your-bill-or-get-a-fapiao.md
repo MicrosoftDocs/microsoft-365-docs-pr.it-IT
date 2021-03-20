@@ -21,27 +21,27 @@ search.appverid:
 ms.assetid: c29d38b5-53a6-4bd9-b7aa-ce12c902da83
 description: Visualizzare l'estratto conto o la fattura su Office 365 gestito da 21Vianet in Cina.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 402634941180fbe7abf26637b8fa7096d8c8eb7c
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: aa6a83f7054488b4e8944010a24341daeb83c690
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114256"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914295"
 ---
 # <a name="view-your-bill-or-get-a-fapiao-in-office-365-operated-by-21vianet"></a>Visualizzare la fattura o ottenere un Fapiao in Office 365 gestito da 21Vianet
 
 > [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
-È possibile visualizzare l'estratto conto o la fattura per informazioni sugli addebiti dell'abbonamento a Office 365 gestito da 21Vianet. Puoi anche ottenere un Fapiao (la prova di acquisto finale). Puoi inviare la richiesta Fapiao al nostro sistema [di gestione Fapiao](https://go.microsoft.com/fwlink/p/?linkid=837465) circa tre giorni dopo aver pagato. 
+È possibile visualizzare l'estratto conto o la fattura per informazioni sull'abbonamento a Office 365 gestito da 21Vianet. Puoi anche ottenere un Fapiao (la prova finale dell'acquisto). Puoi inviare la richiesta Fapiao al nostro sistema [di gestione Fapiao](https://go.microsoft.com/fwlink/p/?linkid=837465) circa tre giorni dopo aver pagato. 
   
 ## <a name="find-your-billing-statement-or-request-a-fapiao"></a>Trovare l'estratto conto o richiedere un Fapiao
 
-1. [Nell'interfaccia di amministrazione](https://go.microsoft.com/fwlink/p/?linkid=850627)passare alla pagina **Fatture** & \> **pagamento.**
+1. [Nell'interfaccia di amministrazione](https://go.microsoft.com/fwlink/p/?linkid=850627)passare alla pagina **Fatturazione** \> **& pagamenti.**
 
-2. Trovare la fattura desiderata, selezionarla o scegliere di scaricare il PDF.
+2. Trova la fattura desiderata, seleziona la visualizzazione o scegli di scaricare il PDF.
 
-  - Per richiedere un Fapiao, seleziona **Ottieni Fapiaos.**
+  - Per richiedere un Fapiao, seleziona **Get Fapiaos.**
 
     > [!NOTE]
-    > È necessario un account registrato per accedere al [sistema di gestione fapiao.](https://go.microsoft.com/fwlink/p/?linkid=837465) Se non è stato ancora configurato un account, vedere Richiedere un [Fapiao per Office 365 gestito da 21Vianet.](apply-for-a-fapiao.md)
+    > È necessario un account registrato per accedere al [sistema di gestione fapiao.](https://go.microsoft.com/fwlink/p/?linkid=837465) Se non è già stato configurato un account, vedere [Apply for a Fapiao for Office 365 operated by 21Vianet](apply-for-a-fapiao.md).

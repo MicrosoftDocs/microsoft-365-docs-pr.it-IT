@@ -20,13 +20,13 @@ search.appverid:
 - MOE150
 ms.assetid: 6016b50e-2b6e-4164-b565-2fde401fda3a
 ROBOTS: NOINDEX
-description: Seguire questo elenco di controllo durante l'eliminazione dell'account di Microsoft 365 di un utente.
-ms.openlocfilehash: 2fcd675bef7dbc5b38ee45b050dca5dacb4fd386
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Seguire questo elenco di controllo durante l'eliminazione dell'account Microsoft 365 di un utente.
+ms.openlocfilehash: de0c69c0a785787491d60f5fe6d17c0129b929db
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399375"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914763"
 ---
 # <a name="quick-help-deleted-users-checklist"></a>Guida rapida: Elenco di controllo utenti eliminati
 
@@ -34,7 +34,7 @@ A volte può rendersi necessario eliminare un utente dall'organizzazione, ad ese
   
 ## <a name="remove-the-microsoft-365-license-from-the-user"></a>Rimuovere la licenza di Microsoft 365 dall'utente
 
-È possibile rimuovere una licenza da un utente cercandolo nella  home page o nella pagina Utenti attivi e quindi selezionandolo. Nella scheda **Licenze e app** deselezionare la casella di controllo per la licenza che si desidera rimuovere dall'utente. [Leggere l'articolo completo](../manage/remove-licenses-from-users.md).
+È possibile rimuovere una licenza da un utente cercando l'utente nella home page o nella pagina **Utenti** attivi e quindi selezionandoli. Nella scheda **Licenze e app** deselezionare la casella di controllo per la licenza che si desidera rimuovere dall'utente. [Leggere l'articolo completo](../manage/remove-licenses-from-users.md).
   
 ## <a name="block-sign-in"></a>Bloccare l'accesso
 
@@ -46,12 +46,12 @@ A volte può rendersi necessario eliminare un utente dall'organizzazione, ad ese
   
 ## <a name="delete-user"></a>Elimina utente
 
-È possibile eliminare l'utente cercando l'utente nella home page o dalla **pagina Utenti** eliminati. Selezionare l'utente e selezionare **Elimina utente.** [Leggere l'articolo completo](../add-users/delete-a-user.md).
+È possibile eliminare l'utente cercando l'utente nella home page o dalla **pagina Utenti** eliminati. Selezionare l'utente e selezionare **Elimina utente**. [Leggere l'articolo completo](../add-users/delete-a-user.md).
   
 ## <a name="what-to-do-with-the-unassigned-license"></a>Cosa fare con la licenza rimossa
 
-Se si ha un nuovo dipendente o una persona che si unisce all'organizzazione, è possibile assegnargli questa licenza in modo che possa usare Microsoft 365. Cercare l'utente nella home page o nella pagina **Utenti attivi** e selezionarlo. Nella scheda **Licenze e app** selezionare la casella di controllo per la licenza che si desidera aggiungere al nuovo utente. [Leggere l'articolo completo](../manage/assign-licenses-to-users.md).
+Se si dispone di un nuovo dipendente o di una persona che si unisce all'organizzazione, è possibile assegnargli questa licenza in modo che possa usare Microsoft 365. Cercare l'utente nella home page o nella pagina **Utenti attivi** e selezionarlo. Nella scheda **Licenze e app** selezionare la casella di controllo per la licenza che si desidera aggiungere al nuovo utente. [Leggere l'articolo completo](../manage/assign-licenses-to-users.md).
   
 ## <a name="remove-license-so-you-dont-have-to-pay-for-it"></a>Rimuovere la licenza per interromperne il pagamento
 
-Le licenze non più necessarie possono essere rimosse dall'abbonamento in modo che non vengano più addebitate. Nella home page dell'interfaccia di amministrazione digitare **sottoscrizione** e selezionare **Visualizza sottoscrizioni.** Selezionare **Aggiungi/rimuovi licenze.** Nella casella **Totale licenze** immettere il numero totale di licenze necessarie per l'abbonamento e quindi selezionare **Invia modifica.** Ad esempio, se si hanno 5 licenze e occorre rimuoverne 1, immettere **4**. [Leggere l'articolo completo](../../commerce/licenses/remove-licenses-from-subscription.md).
+Le licenze non più necessarie possono essere rimosse dall'abbonamento in modo che non vengano più addebitate. Nella home page dell'interfaccia di amministrazione digitare **sottoscrizione** e selezionare **Visualizza sottoscrizioni.** Selezionare **Aggiungi/rimuovi licenze**. Nella casella **Totale licenze** immettere il numero totale di licenze necessarie per l'abbonamento e quindi selezionare **Invia modifica.** Ad esempio, se si hanno 5 licenze e occorre rimuoverne 1, immettere **4**. [Leggere l'articolo completo](../../commerce/licenses/buy-licenses.md).

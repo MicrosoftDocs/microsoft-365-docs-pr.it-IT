@@ -23,19 +23,19 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Informazioni su come impostare i criteri di scadenza delle password per l'organizzazione nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 4a7b544b6eded6f0cd6441ad7f6b02de790e5e44
-ms.sourcegitcommit: 9adb89206daa075af34a73bcb7e8fb86d7c2919a
+ms.openlocfilehash: ffe3ca74ce901eef359e1bcb80c4044ce4bf9ad7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50603985"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915075"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Impostare i criteri di scadenza delle password per l'organizzazione
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-worldwide).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../microsoft-365-admin-center-preview.md?view=o365-worldwide).
 
 ::: moniker-end
 
@@ -75,25 +75,25 @@ Seguire la procedura seguente se si vogliono impostare le password degli utenti 
 
 ## <a name="prevent-last-password-from-being-used-again"></a>Impedire il riutilizzo dell'ultima password
 
-In Active Directory (AD) locale è possibile impedire agli utenti di riciclare le vecchie password applicando la cronologia delle password. Vedere [Creare criteri password personalizzati](https://docs.microsoft.com/azure/active-directory-domain-services/password-policy#create-a-custom-password-policy).
+In Active Directory (AD) locale è possibile impedire agli utenti di riciclare le vecchie password applicando la cronologia delle password. Vedere [Creare criteri password personalizzati](/azure/active-directory-domain-services/password-policy#create-a-custom-password-policy).
 
-In Azure AD, quando l'utente modifica una password, non è possibile usare di nuovo l'ultima password. Il criterio password viene applicato a tutti gli account utente creati e gestiti direttamente in Azure AD. Questo criterio password non può essere modificato. Vedere i [criteri per le password di Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts).
+In Azure AD, quando l'utente modifica una password, non è possibile usare di nuovo l'ultima password. Il criterio password viene applicato a tutti gli account utente creati e gestiti direttamente in Azure AD. Questo criterio password non può essere modificato. Vedere i [criteri per le password di Azure AD](/azure/active-directory/authentication/concept-sspr-policy#password-policies-that-only-apply-to-cloud-user-accounts).
 
 ## <a name="synchronize-user-passwords-hashes-from-an-on-premises-active-directory-to-azure-ad-microsoft-365"></a>Sincronizzare gli hash delle password degli utenti da un server di Active Directory locale ad Azure Active Directory (Microsoft 365)
 
 Questo articolo spiega come configurare i criteri di scadenza per gli utenti basati solo su cloud (Azure Active Directory). Non si applica agli utenti con identità ibride che usano la sincronizzazione dell'hash delle password, l'autenticazione pass-through o la federazione locale, ad esempio ADFS.
   
-Per informazioni sulla sincronizzazione degli hash delle password utente da Active Directory locale ad Azure Active Directory, vedere [Implementare la sincronizzazione degli hash delle password con il servizio di sincronizzazione di Azure AD Connect](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).
+Per informazioni sulla sincronizzazione degli hash delle password utente da Active Directory locale ad Azure Active Directory, vedere [Implementare la sincronizzazione degli hash delle password con il servizio di sincronizzazione di Azure AD Connect](/azure/active-directory/hybrid/how-to-connect-password-hash-synchronization).
 
 ## <a name="password-policies-and-account-restrictions-in-azure-active-directory"></a>Criteri per le password e restrizioni di Azure Active Directory
 
-È possibile configurare più criteri per le password e restrizioni in Azure Active Directory. Vedere [Criteri per le password e restrizioni di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/authentication/concept-sspr-policy) per altre informazioni.
+È possibile configurare più criteri per le password e restrizioni in Azure Active Directory. Vedere [Criteri per le password e restrizioni di Azure Active Directory](/azure/active-directory/authentication/concept-sspr-policy) per altre informazioni.
 
 ## <a name="update-password-policy"></a>Aggiornare i criteri password
 
 Il cmdlet Set-MsolPasswordPolicy aggiorna i criteri delle password di un dominio o di un tenant specifico. Sono necessarie due impostazioni. La prima indica il periodo di validità di una password prima che debba essere cambiata e la seconda indica il numero di giorni prima della data di scadenza della password in cui si attiverà l'invio agli utenti della prima notifica della scadenza.
 
-Per informazioni su come aggiornare i criteri delle password per un dominio o un tenant specifico, vedere [Set-MsolPasswordPolicy](https://docs.microsoft.com/powershell/module/msonline/set-msolpasswordpolicy?view=azureadps-1.0).
+Per informazioni su come aggiornare i criteri delle password per un dominio o un tenant specifico, vedere [Set-MsolPasswordPolicy](/powershell/module/msonline/set-msolpasswordpolicy?view=azureadps-1.0).
 
 ## <a name="related-content"></a>Contenuti correlati
 

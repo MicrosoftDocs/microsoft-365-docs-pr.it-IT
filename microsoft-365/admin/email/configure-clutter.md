@@ -19,26 +19,26 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 832276bd-d024-47b6-a80a-a6b884907a5b
-description: "Informazioni su come abilitare o disabilitare la funzionalità Messaggi secondari per tutti gli utenti o per utenti specifici dell'organizzazione, utilizzando Exchange PowerShell. "
-ms.openlocfilehash: 67267b0865dfcfd6c0ba66d59ce1d0d111d59325
-ms.sourcegitcommit: 659adf65d88ee44f643c471e6202396f1ffb6576
+description: "Informazioni su come abilitare o disabilitare la funzionalità Messaggi secondari per tutti gli utenti o specifici dell'organizzazione tramite PowerShell di Exchange. "
+ms.openlocfilehash: ac68893bc0aeea5ab214698c54524921e2b1921d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/17/2020
-ms.locfileid: "44780278"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915903"
 ---
 # <a name="configure-clutter-for-your-organization"></a>Configurare Messaggi secondari per l'organizzazione
 
 > [!TIP]
-> [Posta in arrivo evidenziata](../setup/configure-focused-inbox.md) sostituirà Messaggi secondari. Ulteriori informazioni: [Aggiornamento della Posta in arrivo con stato attivo e dei piani per Messaggi secondari](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448)
+> [Posta in arrivo evidenziata](../setup/configure-focused-inbox.md) sostituirà Messaggi secondari. Ulteriori informazioni: [Aggiornamento in Posta in arrivo mirata e piani per Messaggi secondari](https://techcommunity.microsoft.com/t5/Outlook-Blog/Update-on-Focused-Inbox-and-our-plans-for-Clutter/ba-p/136448)
   
-In quanto amministratore, potrebbe essere necessario gestire la funzionalità Messaggi secondari in Microsoft 365. Per attivare o disattivare questa funzionalità per gli utenti dell'organizzazione, è necessario usare Exchange PowerShell. Gli utenti possono attivarla/disattivarla usando queste istruzioni: [Disattivare/attivare Messaggi secondari in Outlook.](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c)
+In quanto amministratore, potrebbe essere necessario gestire la funzionalità Messaggi secondari in Microsoft 365. Per attivare o disattivare questa funzionalità per gli utenti dell'organizzazione, è necessario usare Exchange PowerShell. Gli utenti possono attivarlo/disattivarlo usando queste istruzioni: [Disattivare/attivare Messaggi secondari in Outlook.](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c)
   
-Per informazioni sull'uso di Exchange PowerShell, vedere [Uso di PowerShell con Exchange Online](https://go.microsoft.com/fwlink/?LinkID=402831) e [Connettersi a PowerShell di Exchange Online](https://go.microsoft.com/fwlink/?LinkID=722415). È necessario disporre di un account con almeno il ruolo di amministratore del servizio Exchange e la possibilità di connettersi a Exchange Online con PowerShell. 
+Per informazioni sull'uso di Exchange PowerShell, vedere [Uso di PowerShell con Exchange Online](/powershell/exchange/exchange-online-powershell) e [Connettersi a PowerShell di Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell). È necessario disporre di un account con almeno il ruolo di amministratore del servizio Exchange e la possibilità di connettersi a Exchange Online con PowerShell. 
   
 ## <a name="turn-clutter-on-using-exchange-powershell"></a>Attivare Messaggi secondari mediante Exchange PowerShell
 
-È possibile abilitare Messaggi secondari manualmente per una cassetta postale eseguendo il cmdlet [Set-Clutter](https://go.microsoft.com/fwlink/?LinkID=834446). Si possono anche visualizzare le impostazioni di Messaggi secondari per le cassette postali dell'organizzazione eseguendo il cmdlet [Get-Clutter](https://go.microsoft.com/fwlink/?LinkID=834759). 
+È possibile abilitare Messaggi secondari manualmente per una cassetta postale eseguendo il cmdlet [Set-Clutter](/powershell/module/exchange/set-clutter). Si possono anche visualizzare le impostazioni di Messaggi secondari per le cassette postali dell'organizzazione eseguendo il cmdlet [Get-Clutter](/powershell/module/exchange/get-clutter). 
   
 Attivare Messaggi secondari per un singolo utente di nome Allie Bellew:
     
@@ -47,20 +47,20 @@ Attivare Messaggi secondari per un singolo utente di nome Allie Bellew:
 
 ## <a name="turn-clutter-off-using-exchange-powershell"></a>Disattivare Messaggi secondari mediante Exchange PowerShell
 
-È possibile disabilitare Messaggi secondari manualmente per una cassetta postale eseguendo il cmdlet [Set-Clutter](https://go.microsoft.com/fwlink/?LinkID=834446). Si possono anche visualizzare le impostazioni di **Messaggi secondari** per le cassette postali dell'organizzazione eseguendo il cmdlet [Get-Clutter](https://go.microsoft.com/fwlink/?LinkID=834759). 
+È possibile disabilitare Messaggi secondari manualmente per una cassetta postale eseguendo il cmdlet [Set-Clutter](/powershell/module/exchange/set-clutter). Si possono anche visualizzare le impostazioni di **Messaggi secondari** per le cassette postali dell'organizzazione eseguendo il cmdlet [Get-Clutter](/powershell/module/exchange/get-clutter). 
   
 Disattivare Messaggi secondari per un singolo utente di nome Allie Bellew:
     
 `Set-Clutter -Identity "Allie Bellew" -Enable $false`
 
-Se si usa PowerShell per creare gli utenti in blocco, occorre eseguire [Set-Clutter](https://go.microsoft.com/fwlink/?LinkID=834446) su ogni cassetta postale degli utenti per gestire Messaggi secondari. 
+Se si usa PowerShell per creare gli utenti in blocco, occorre eseguire [Set-Clutter](/powershell/module/exchange/set-clutter) su ogni cassetta postale degli utenti per gestire Messaggi secondari. 
   
 ## <a name="when-does-the-clutter-onoff-switch-appear-to-users-in-outlook-on-the-web"></a>Quando viene visualizzato l'interruttore di attivazione/disattivazione di Messaggi secondari per gli utenti di Outlook sul Web?
 <a name="bkmk_onoff"> </a>
 
-In quanto amministratore, è possibile ri abilitare Messaggi secondari tramite Exchange PowerShell. Dopo averlo fatto, la funzionalità Posta in arrivo evidenziata verrà disattivata e verrà riattivato Messaggi secondari. 
+In quanto amministratore, è possibile ri abilitare Messaggi secondari tramite PowerShell di Exchange. Dopo averlo fatto, la funzionalità Posta in arrivo evidenziata verrà disattivata e verrà riattivato Messaggi secondari. 
   
- **Se si usa Outlook sul Web con un abbonamento a Microsoft 365 Business Premium:**
+ **Se si utilizza Outlook sul Web con un abbonamento a Microsoft 365 Business Premium:**
   
 - Se l'utente ha abilitato Messaggi secondari: 
     
@@ -101,8 +101,6 @@ In quanto amministratore, è possibile ri abilitare Messaggi secondari tramite E
 
 [Usare la caratteristica Messaggi secondari per ordinare i messaggi con priorità bassa in Outlook](https://support.microsoft.com/office/7b50c5db-7704-4e55-8a1b-dfc7bf1eafa0)
     
-[Utilizzare Messaggi secondari per ordinare i messaggi con priorità bassa in OWA](https://support.microsoft.com/office/fe4d64ca-bf73-48f1-91b4-9a659e008bce)
+[Utilizzare Messaggi secondari per ordinare i messaggi con priorità bassa OWA](https://support.microsoft.com/office/fe4d64ca-bf73-48f1-91b4-9a659e008bce)
     
 [Disattivare la caratteristica Messaggi secondari in Outlook](https://support.microsoft.com/office/a9c72a77-1bc4-40e6-ba6d-103c1d1aba4c)
-    
-

@@ -20,12 +20,12 @@ description: Informazioni su come verificare il dominio e creare record DNS pres
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: 01fd78033afb6add41975826ed8daddf052826b2
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: d6e8a5a0e23bf9bb9e302566a72b9e1cc6b7bff4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49655601"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915651"
 ---
 # <a name="add-dns-records-to-connect-your-domain"></a>Aggiungere record DNS per connettere il dominio
 
@@ -125,11 +125,11 @@ Verificare che i campi siano impostati sui valori seguenti:
 
 Salvare il record.
 
-Convalidare il record SPF usando uno di questi [strumenti di convalida SPF](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
+Convalidare il record SPF usando uno di questi [strumenti di convalida SPF](/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
 
 SPF è progettata per prevenire spoofing, ma esistono tecniche spoofing che SPF non è in grado di evitare. Per proteggersi da queste minacce, dopo aver configurato SPF è consigliabile impostare anche DKIM e DMARC per Microsoft 365. 
 
-Per iniziare, vedere [Usare DKIM per convalidare la posta elettronica in uscita inviata dal proprio dominio in Microsoft 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx) e [Usare DKIM per convalidare la posta elettronica in Microsoft 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
+Per iniziare, vedere [Usare DKIM per convalidare la posta elettronica in uscita inviata dal proprio dominio in Microsoft 365](../../security/office-365-security/use-dkim-to-validate-outbound-email.md) e [Usare DKIM per convalidare la posta elettronica in Microsoft 365](../../security/office-365-security/use-dmarc-to-validate-email.md).
 
 ### <a name="add-srv-records-for-communications-services-teams-skype-for-business"></a>Aggiungere record SRV per servizi di comunicazione (Teams, Skype for Business)
 

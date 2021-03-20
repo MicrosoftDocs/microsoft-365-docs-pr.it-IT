@@ -28,24 +28,24 @@ search.appverid:
 - MOW150
 ms.assetid: a3e3bddb-582e-4133-8670-e61b9f58627e
 description: Informazioni su come importare contatti, calendari e messaggi di posta elettronica da Gmail o da un altro provider di posta elettronica ed eseguirne la migrazione a Microsoft 365.
-ms.openlocfilehash: eb82711bc8fb431c6e29272b601b898566446f02
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: 91c8177322e8ebc1e1530675d92d60e96cc73adb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906382"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914103"
 ---
 # <a name="migrate-email-and-contacts-to-microsoft-365"></a>Eseguire la migrazione di posta elettronica e contatti a Microsoft 365
 
 Importare o eseguire la migrazione della posta elettronica da Gmail o da un altro provider di posta elettronica a Microsoft 365.
   
- **Vuoi assistenza?**  Contattare il supporto tecnico di [Microsoft 365 per le aziende.](../contact-support-for-business-products.md) 
+ **Vuoi assistenza per questo?**  [Contattare il supporto di Microsoft 365 per le aziende](../contact-support-for-business-products.md) . 
   
 Per questa attività è necessaria una versione di Outlook installata nel desktop. Outlook è incluso nella maggior [](https://go.microsoft.com/fwlink/p/?LinkId=723731)parte dei piani di Microsoft 365.
   
 ### <a name="migrate-gmail-to-microsoft-365"></a>Eseguire la migrazione di Gmail a Microsoft 365
 
-Seguire questa procedura per importare o eseguire la migrazione di posta elettronica, contatti e calendario da Gmail in Outlook con Microsoft 365:
+Seguire questa procedura per importare o migrare posta elettronica, contatti e calendario da Gmail in Outlook con Microsoft 365:
   
 - [Importare la posta elettronica di Gmail in Outlook](https://support.microsoft.com/office/20fdb8f2-fed8-4b14-baf0-bf04b9c44bf7)
     
@@ -55,9 +55,9 @@ Seguire questa procedura per importare o eseguire la migrazione di posta elettro
     
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c1e45708-9a92-475b-910b-f5aa40614d92?autoplay=false]
   
-### <a name="import-outlook-pst-files-to-microsoft-365-desktop"></a>Importare i file pst di Outlook in Microsoft 365 (desktop)
+### <a name="import-outlook-pst-files-to-microsoft-365-desktop"></a>Importare file pst di Outlook in Microsoft 365 (desktop)
 
-Seguire questa procedura per esportare posta elettronica, contatti e calendari da Outlook in un file .pst e quindi importare il file in Outlook con Microsoft 365:
+Seguire questa procedura per esportare posta elettronica, contatti e calendari da Outlook in un file PST e quindi importare il file in Outlook con Microsoft 365:
   
 1. [Esportare posta elettronica, contatti e calendario](https://support.microsoft.com/office/14252b52-3075-4e9b-be4e-ff9ef1068f91)
     
@@ -75,7 +75,7 @@ To start the process, open Outlook and choose **File** \> **Open &amp; Export** 
   
 ## <a name="see-other-email-accounts-in-outlook"></a>Visualizzare gli altri account di posta elettronica in Outlook
 
-Vuoi solo visualizzare la posta elettronica da un altro provider (ad esempio Gmail, Yahoo o Live.com) in Outlook? Non è necessario importare o eseguire la migrazione. È possibile configurare Outlook o Outlook Web App in modo da poter accedere agli altri account dalla stessa posizione della cassetta postale di Microsoft 365 e inviare, ricevere e leggere i messaggi di posta elettronica inviati a tali account.
+Vuoi solo visualizzare la posta elettronica da un altro provider (ad esempio Gmail, Yahoo o Live.com) in Outlook? Non è necessario importare o migrare. È possibile configurare Outlook o Outlook Web App in modo da poter accedere agli altri account dalla stessa posizione della cassetta postale di Microsoft 365 e inviare, ricevere e leggere i messaggi di posta elettronica inviati a tali account.
   
 ### <a name="outlook-desktop"></a>Outlook (desktop)
 
@@ -89,4 +89,4 @@ Serve una procedura più dettagliata? Vedere [Aggiungere un account](https://sup
   
 ## <a name="multiple-mailboxes-admins-can-bulk-import-email-contacts-and-calendars-to-microsoft-365"></a>Più cassette postali: gli amministratori possono importare in blocco posta elettronica, contatti e calendari in Microsoft 365
 
-A seconda del sistema di posta elettronica di origine, è possibile scegliere tra diversi metodi di migrazione in blocco. Leggere Modalità di migrazione di più account di posta elettronica a [Microsoft 365](https://docs.microsoft.com/Exchange/mailbox-migration/mailbox-migration) per decidere il metodo più appropriato.
+A seconda del sistema di posta elettronica di origine, è possibile scegliere tra diversi metodi di migrazione in blocco. Leggere Modi per eseguire la migrazione di più account di posta elettronica [a Microsoft 365](/Exchange/mailbox-migration/mailbox-migration) per decidere il metodo più appropriato.

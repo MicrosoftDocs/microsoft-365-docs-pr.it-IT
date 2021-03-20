@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: "Informazioni su come configurare Posta in arrivo evidenziata per tutti gli utenti o per utenti specifici dell'organizzazione. "
-ms.openlocfilehash: e6c77bdff00e7cd98f5034267699e19d8582db27
-ms.sourcegitcommit: 38d828ae8d4350ae774a939c8decf30cb36c3bea
+ms.openlocfilehash: 7059fbb886669af99c1471789cbbc623dc9719b8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49551902"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914283"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>Configurare Posta in arrivo evidenziata per tutti gli utenti nell'organizzazione
 
@@ -41,9 +41,9 @@ Per attivare o disattivare Posta in arrivo evidenziata per tutti gli utenti dell
   
 L'esempio di PowerShell seguente **disattiva** la Posta in arrivo evidenziata nell'organizzazione. La funzionalità rimane comunque disponibile per gli utenti, che, se vogliono, possono riabilitarla in ciascuno dei propri client. 
   
-1. [Connettersi a Exchange Online tramite la sessione remota di PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
+1. [Connettersi a Exchange Online tramite la sessione remota di PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-2. Per poter eseguire queste procedure occorre aver ricevuto le autorizzazioni appropriate. Per informazioni sulle autorizzazioni necessarie, vedere la voce "Regole di trasporto" in [Criteri di messaggistica e autorizzazioni di conformità](https://go.microsoft.com/fwlink/p/?LinkId=829796).
+2. Per poter eseguire queste procedure occorre aver ricevuto le autorizzazioni appropriate. Per informazioni sulle autorizzazioni necessarie, vedere la voce "Regole di trasporto" in [Criteri di messaggistica e autorizzazioni di conformità](/exchange/messaging-policy-and-compliance-permissions-exchange-2013-help).
 
 3. Eseguire il cmdlet **Get-OrganizationConfig**. 
 
@@ -87,7 +87,7 @@ Quando un utente decide di iniziare a usare la Posta in arrivo evidenziata, la f
 
 Questo esempio **disattiva** la Posta in arrivo evidenziata per Tim Matthews nell'organizzazione Contoso. La funzionalità rimarrà comunque disponibile per questo utente, che, se vuole, può abilitare di nuovo la Posta in arrivo evidenziata in ognuno dei suoi client. 
   
-1. [Connettersi a Exchange Online tramite la sessione remota di PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
+1. [Connettersi a Exchange Online tramite la sessione remota di PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
 2. Prima di eseguire queste procedure, è necessario che siano assegnate le autorizzazioni. Per informazioni sulle autorizzazioni necessarie, vedere la voce "Regole di trasporto" nell'argomento Criteri di messaggistica e autorizzazioni di conformità.
 
@@ -123,16 +123,16 @@ Questo esempio **disattiva** la Posta in arrivo evidenziata per Tim Matthews nel
 
     L'immagine seguente mostra un esempio in cui tutti i messaggi inviati da "Reparto Retribuzioni" devono essere recapitati in Posta in arrivo evidenziata.
 
-    ![retribuzioni focusedinbox](../../media/focusedinbox-transport-rule.PNG)
+    ![focusedinbox payroll](../../media/focusedinbox-transport-rule.PNG)
 
 > [!NOTE]
 > Il testo del valore dell’intestazione del messaggio in questo esempio è **X-MS-Exchange-Organization-BypassFocusedInbox**.
   
 ## <a name="use-powershell-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>Usare PowerShell per creare una regola di trasporto che indirizzi i messaggi di posta elettronica alla visualizzazione Evidenziata per tutti gli utenti
 
-1. [Connettersi a Exchange Online tramite la sessione remota di PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=396554).
+1. [Connettersi a Exchange Online tramite la sessione remota di PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
-2. Per poter eseguire queste procedure occorre aver ricevuto le autorizzazioni appropriate. Per informazioni sulle autorizzazioni necessarie, vedere la voce "Regole di trasporto" in [Criteri di messaggistica e autorizzazioni di conformità](https://go.microsoft.com/fwlink/p/?LinkId=829796).
+2. Per poter eseguire queste procedure occorre aver ricevuto le autorizzazioni appropriate. Per informazioni sulle autorizzazioni necessarie, vedere la voce "Regole di trasporto" in [Criteri di messaggistica e autorizzazioni di conformità](/exchange/messaging-policy-and-compliance-permissions-exchange-2013-help).
 
 3. Eseguire questo comando per consentire il recapito di tutti i messaggi inviati, ad esempio, da "Reparto Retribuzioni" alla Posta in arrivo evidenziata.
 
@@ -142,7 +142,7 @@ Questo esempio **disattiva** la Posta in arrivo evidenziata per Tim Matthews nel
 
 > [!IMPORTANT]
 > In questo esempio sia "X-MS-Exchange-Organization-BypassFocusedInbox" che "true" fanno distinzione tra maiuscole e minuscole.
-> Inoltre, Posta in arrivo evidenziata rispetterà l'intestazione X per evitare i messaggi secondari, pertanto se si usa questa impostazione in Messaggi secondari, verrà usata anche in Posta in arrivo evidenziata. Per informazioni dettagliate su sintassi e parametri, vedere [New-TransportRule](https://go.microsoft.com/fwlink/p/?LinkId=830194).
+> Inoltre, Posta in arrivo evidenziata rispetterà l'intestazione X per evitare i messaggi secondari, pertanto se si usa questa impostazione in Messaggi secondari, verrà usata anche in Posta in arrivo evidenziata. Per informazioni dettagliate su sintassi e parametri, vedere [New-TransportRule](/powershell/module/exchange/new-transportrule).
 
 ### <a name="how-do-you-know-this-worked"></a>Come verificare se l'operazione ha avuto esito positivo
 

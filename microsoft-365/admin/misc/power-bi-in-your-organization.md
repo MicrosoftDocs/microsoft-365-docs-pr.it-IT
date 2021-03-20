@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: d7941332-8aec-4e5e-87e8-92073ce73dc5
 ROBOTS: NOINDEX
 description: Informazioni su Power BI e su come gli utenti dell'organizzazione possono usare questo servizio di analisi business.
-ms.openlocfilehash: e549ff25b7db41d6a582b4af0506d67787df7e0d
-ms.sourcegitcommit: 7355cc8871cde5fac6d7d6dcecc3e41e35601623
+ms.openlocfilehash: c2f07c4e1e6da814eb31186ba0c132021479ad4a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "48906586"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914703"
 ---
 # <a name="power-bi-in-your-organization"></a>Power BI nell'organizzazione
 
@@ -36,11 +36,11 @@ Microsoft Power BI consente agli utenti di visualizzare dati, condividere scoper
   
 ## <a name="does-power-bi-meet-national-regional-and-industry-specific-compliance-requirements"></a>Power BI soddisfa i requisiti di conformità nazionali, regionali e specifici del settore?
 
-Per ulteriori informazioni sulla conformità di Power BI, vedere il [Centro protezione Microsoft.](https://go.microsoft.com/fwlink/?LinkId=785324)
+Per ulteriori informazioni sulla conformità di Power BI, vedere [Centro protezione Microsoft.](https://go.microsoft.com/fwlink/?LinkId=785324)
   
 ## <a name="how-do-users-sign-up-for-power-bi"></a>In che modo gli utenti si iscrivono a Power BI?
 
-Gli amministratori possono iscriversi a Power BI tramite il sito [Web di Power BI.](https://powerbi.microsoft.com/en-us/) È anche possibile iscriversi tramite la pagina di acquisto dei servizi nell'interfaccia di amministrazione di Microsoft 365. Quando un amministratore si i iscrizione a Power BI, può assegnare licenze di sottoscrizione utente agli utenti che devono avere accesso.
+Gli amministratori possono iscriversi a Power BI tramite il sito [Web di Power BI.](https://powerbi.microsoft.com/en-us/) Puoi anche iscriverti tramite la pagina di acquisto dei servizi nell'interfaccia di amministrazione di Microsoft 365. Quando un amministratore esegue l'iscrizione a Power BI, può assegnare licenze di sottoscrizione utente agli utenti che devono avere accesso.
   
 Inoltre, i singoli utenti dell'organizzazione potrebbero essere in grado di iscriversi a Power BI tramite il [sito Web di Power BI](https://powerbi.microsoft.com/en-us/). Quando un utente dell'organizzazione si iscrive a Power BI, gli viene assegnata automaticamente una licenza di Power BI.
   
@@ -48,30 +48,30 @@ Inoltre, i singoli utenti dell'organizzazione potrebbero essere in grado di iscr
 
 Esistono tre possibili scenari:
   
-### <a name="scenario-1-your-organization-already-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-already-has-a-microsoft-365-account"></a>Scenario 1: l'organizzazione ha già un ambiente Microsoft 365 e l'utente che si iscrive a Power BI ha già un account Microsoft 365.
+### <a name="scenario-1-your-organization-already-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-already-has-a-microsoft-365-account"></a>Scenario 1: l'organizzazione ha già un ambiente Microsoft 365 esistente e l'utente che si iscrive a Power BI ha già un account Microsoft 365.
 
 In questo scenario, se un utente ha già un account aziendale o dell'istituto di istruzione nel tenant (ad esempio contoso.com) ma non ha ancora Power BI, Microsoft attiverà semplicemente il piano per tale account e l'utente riceverà automaticamente una notifica relativa all'uso del servizio Power BI.
   
-### <a name="scenario-2-your-organization-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-doesnt-have-a-microsoft-365-account"></a>Scenario 2: l'organizzazione ha un ambiente Microsoft 365 esistente e l'utente che si iscrive a Power BI non ha un account Microsoft 365.
+### <a name="scenario-2-your-organization-has-an-existing-microsoft-365-environment-and-the-user-signing-up-for-power-bi-doesnt-have-a-microsoft-365-account"></a>Scenario 2: l'organizzazione dispone di un ambiente Microsoft 365 esistente e l'utente che si iscrive a Power BI non dispone di un account Microsoft 365.
 
-In questo scenario, l'utente ha un indirizzo di posta elettronica nel dominio dell'organizzazione (ad esempio, contoso.com), ma non dispone ancora di un account di Microsoft 365. In questo caso, l'utente può iscriversi a Power BI per ricevere automaticamente un account. In questo modo l'utente potrà accedere al servizio Power BI. Ad esempio, se un dipendente di nome Nancy usa il suo indirizzo di posta elettronica aziendale (ad esempio, Nancy@contoso.com) per iscriversi, Microsoft aggiungerà automaticamente Nancy come utente nell'ambiente di Microsoft 365 Contoso e attiverà Power BI per tale account.
+In questo scenario, l'utente ha un indirizzo di posta elettronica nel dominio dell'organizzazione (ad esempio, contoso.com) ma non dispone ancora di un account Microsoft 365. In questo caso, l'utente può iscriversi a Power BI per ricevere automaticamente un account. In questo modo l'utente potrà accedere al servizio Power BI. Ad esempio, se un dipendente denominato Nancy usa il suo indirizzo di posta elettronica aziendale (ad esempio, Nancy@contoso.com) per iscriversi, Microsoft aggiungerà automaticamente Nancy come utente nell'ambiente Contoso Microsoft 365 e attiverà Power BI per tale account.
   
 ### <a name="scenario-3-your-organization-does-not-have-a-microsoft-365-environment-connected-to-your-email-domain"></a>Scenario 3: l'organizzazione non dispone di un ambiente Microsoft 365 connesso al dominio di posta elettronica.
 
 L'organizzazione non deve eseguire azioni amministrative per sfruttare Power BI.
   
 > [!IMPORTANT]
-> Se l'organizzazione dispone di più domini di posta elettronica e si preferisce che tutte le estensioni degli indirizzi di posta elettronica siano nello stesso tenant, prima che gli utenti creino il tenant principale, aggiungere tutti i domini degli indirizzi di posta elettronica a tale tenant prima che gli utenti creino il tenant principale. Non esiste un meccanismo automatizzato per spostare gli utenti tra i tenant dopo che sono stati creati. Per altre informazioni su questo processo, vedere Se si dispone di più [domini,](#if-i-have-multiple-domains-can-i-control-the-tenant-that-users-are-added-to) è possibile controllare il tenant a cui vengono aggiunti gli utenti? Più avanti in questo articolo e Aggiungere un dominio [a Office 365](../setup/add-domain.md) online.
+> Se l'organizzazione dispone di più domini di posta elettronica e si preferisce che tutte le estensioni degli indirizzi di posta elettronica siano nello stesso tenant, prima che gli utenti creino il tenant principale, aggiungere tutti i domini degli indirizzi di posta elettronica al tenant prima che gli utenti creino il tenant primario. Non esiste un meccanismo automatizzato per spostare gli utenti tra i tenant dopo che sono stati creati. Per ulteriori informazioni su questo processo, vedere Se si dispone di più [domini,](#if-i-have-multiple-domains-can-i-control-the-tenant-that-users-are-added-to) è possibile controllare il tenant a cui vengono aggiunti gli utenti? più avanti in questo articolo e Aggiungere un dominio [a Office 365](../setup/add-domain.md) online.
   
 ## <a name="how-will-this-change-the-way-i-manage-identities-for-users-in-my-organization-today"></a>Come cambierà la gestione delle identità per gli attuali utenti dell'organizzazione?
 
-Se l'organizzazione dispone già di un ambiente Microsoft 365 e tutti gli utenti dell'organizzazione dispongono di account Microsoft 365, la gestione delle identità non cambierà.
+Se l'organizzazione dispone già di un ambiente Microsoft 365 esistente e tutti gli utenti dell'organizzazione dispongono di account Microsoft 365, la gestione delle identità non cambierà.
   
-Se l'organizzazione ha già un ambiente Microsoft 365 ma non tutti gli utenti dell'organizzazione hanno account Microsoft 365, verrà creato un utente nel tenant e verranno assegnate le licenze in base all'indirizzo di posta elettronica aziendale o dell'istituto di istruzione dell'utente. Questo significa che il numero di utenti da gestire in un determinato momento aumenterà man mano che nuovi utenti nell'organizzazione si iscriveranno al servizio.
+Se l'organizzazione dispone già di un ambiente Microsoft 365 esistente ma non tutti gli utenti dell'organizzazione dispongono di account Microsoft 365, verrà creato un utente nel tenant e verranno assegnate le licenze in base all'indirizzo di posta elettronica aziendale o dell'istituto di istruzione dell'utente. Questo significa che il numero di utenti da gestire in un determinato momento aumenterà man mano che nuovi utenti nell'organizzazione si iscriveranno al servizio.
   
 Se la directory viene gestita in locale e si usa Active Directory Federation Services (ADFS), Microsoft non aggiungerà utenti al tenant e tutti gli utenti che proveranno ad aggiungersi al tenant riceveranno un messaggio che li invita a contattare l'amministratore dell'organizzazione.
   
-Se l'organizzazione non dispone di un ambiente Microsoft 365 connesso al dominio di posta elettronica, non ci saranno cambiamenti nella modalità di gestione dell'identità. Gli utenti verranno aggiunti a una nuova directory di utenti basata sul cloud e si avrà la possibilità di scegliere se assumere il ruolo di amministratore del tenant per gestirli.
+Se l'organizzazione non dispone di un ambiente Microsoft 365 connesso al dominio di posta elettronica, non ci saranno modifiche alla modalità di gestione dell'identità. Gli utenti verranno aggiunti a una nuova directory di utenti basata sul cloud e si avrà la possibilità di scegliere se assumere il ruolo di amministratore del tenant per gestirli.
   
 ## <a name="what-is-the-process-to-manage-a-tenant-created-by-microsoft-for-my-users"></a>Qual è la procedura per gestire un tenant creato da Microsoft per gli utenti?
 
@@ -103,7 +103,7 @@ Se Microsoft ha creato un tenant, è possibile chiedere di gestirlo eseguendo la
 
     ![Icona di avvio delle app con l'app Amministratore evidenziata](../../media/4eea9dbc-591b-48be-9916-322d41c6525b.png)
   
-5. Leggere le istruzioni nella pagina **Diventare l'amministratore** e quindi selezionare **Sì, voglio essere l'amministratore.**
+5. Leggere le istruzioni nella **pagina Diventare** l'amministratore e quindi selezionare **Sì, voglio essere l'amministratore.**
 
     > [!NOTE]
     >  Se questa opzione non viene visualizzata, è già presente un amministratore.
@@ -120,17 +120,17 @@ Se si vuole che gli utenti stiano nello stesso tenant indipendentemente dalle es
 > Non esiste un meccanismo automatizzato supportato per trasferire gli utenti da un tenant all'altro dopo la creazione. Per informazioni sull'aggiunta di domini a un singolo tenant di Microsoft 365, vedere [Aggiungere un dominio a Office 365.](../setup/add-domain.md)
 
 > [!IMPORTANT]
-> Per altre informazioni e indicazioni sulla gestione dei tenant, vedere [Che cos'è l'amministrazione di Power BI?](https://docs.microsoft.com/power-bi/service-admin-administering-power-bi-in-your-organization).
+> Per ulteriori informazioni e indicazioni sulla gestione dei tenant, vedere [Che cos'è l'amministrazione di Power BI?](/power-bi/service-admin-administering-power-bi-in-your-organization).
   
 ## <a name="how-can-i-prevent-users-from-joining-my-existing-tenant"></a>Come è possibile impedire agli utenti di partecipare al tenant esistente?
 
-È possibile eseguire alcune operazioni come amministratore per impedire agli utenti di accedere al tenant esistente. Se si blocca l'accesso degli utenti al tenant, i tentativi degli utenti di accedere avranno esito negativo e verranno indirizzati a contattare l'amministratore dell'organizzazione. Non è necessario ripetere questo processo se è già stata disabilitata la distribuzione automatica delle licenze (ad esempio, Office 365 Education per studenti, istituti di istruzione e personale).
+Esistono passaggi che è possibile eseguire come amministratore per impedire agli utenti di accedere al tenant esistente. Se si blocca l'accesso degli utenti al tenant, i tentativi degli utenti di accedere avranno esito negativo e verranno indirizzati a contattare l'amministratore dell'organizzazione. Non è necessario ripetere questo processo se è già stata disabilitata la distribuzione automatica delle licenze ( ad esempio, Office 365 Education per studenti, istituti di istruzione e personale).
   
-Questa procedura richiede l'uso di Windows PowerShell. Per informazioni su Windows PowerShell, vedere [Guida introduttiva di PowerShell](https://go.microsoft.com/fwlink/p/?LinkID=286814).
+Questa procedura richiede l'uso di Windows PowerShell. Per informazioni su Windows PowerShell, vedere [Guida introduttiva di PowerShell](/powershell/scripting/overview).
   
-Per eseguire la procedura seguente, è necessario installare l'ultima versione a 64 bit del modulo [Azure Active Directory V2 PowerShell.](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.5)
+Per eseguire la procedura seguente, è necessario installare la versione più recente a 64 bit del modulo PowerShell di [Azure Active Directory V2.](https://www.powershellgallery.com/packages/AzureADPreview/2.0.2.5)
   
-Dopo aver selezionato il collegamento, seleziona **Esegui per** eseguire il pacchetto del programma di installazione.
+Dopo aver selezionato il collegamento, selezionare **Esegui per** eseguire il pacchetto del programma di installazione.
   
 **Disabilitare l'aggiunta automatica al tenant**: usare questo comando di Windows PowerShell per impedire ai nuovi utenti di aggiungersi a un tenant gestito:
   
@@ -139,9 +139,9 @@ Per disabilitare l'aggiunta automatica di nuovi utenti al tenant:  `Set-MsolComp
 Per abilitare l'aggiunta automatica di nuovi utenti al tenant:  `Set-MsolCompanySettings -AllowEmailVerifiedUsers $true`
   
 > [!NOTE]
-> Questo blocco impedisce ai nuovi utenti dell'organizzazione di iscriversi a Power BI. Gli utenti che si iscrivono a Power BI prima della disabilitazione delle nuove iscrizioni per l'organizzazione manterranno le proprie licenze. Vedere [come rimuovere Power BI](#how-do-i-remove-power-bi-for-users-that-already-signed-up) per gli utenti che hanno già effettuato l'accesso? Per istruzioni su come rimuovere l'accesso a Power BI per gli utenti che in precedenza si sono registrati al servizio.
+> Questo blocco impedisce ai nuovi utenti dell'organizzazione di iscriversi a Power BI. Gli utenti che si iscrivono a Power BI prima della disabilitazione delle nuove iscrizioni per l'organizzazione manterranno le proprie licenze. Vedere [Come rimuovere Power BI](#how-do-i-remove-power-bi-for-users-that-already-signed-up) per gli utenti che hanno già effettuato l'accesso? per istruzioni su come rimuovere l'accesso a Power BI per gli utenti che si erano precedentemente registrati al servizio.
   
-## <a name="how-can-i-allow-users-to-join-my-existing-tenant"></a>Come è possibile consentire agli utenti di aggiungersi al tenant esistente?
+## <a name="how-can-i-allow-users-to-join-my-existing-tenant"></a>Come è possibile consentire agli utenti di partecipare al tenant esistente?
 
 Per consentire agli utenti di aggiungersi al tenant, eseguire il comando opposto a quello descritto nella domanda precedente:  `Set-MsolCompanySettings -AllowEmailVerifiedUsers $true`
   
@@ -151,7 +151,7 @@ Usare il seguente script di PowerShell:  `Get-MsolCompanyInformation | fl allow*
   
 ## <a name="how-can-i-prevent-my-existing-users-from-starting-to-use-power-bi"></a>Come è possibile impedire agli utenti di iniziare a usare Power BI?
 
-**Disabilitare la distribuzione automatica delle licenze**: Usare questo script di Windows PowerShell per disabilitare la distribuzione automatica delle licenze per gli attuali utenti. Non è necessario ripetere questo processo se è già stata disabilitata la distribuzione automatica delle licenze (ad esempio, Office 365 Education per studenti, istituti di istruzione e personale).
+**Disabilitare la distribuzione automatica delle licenze**: Usare questo script di Windows PowerShell per disabilitare la distribuzione automatica delle licenze per gli attuali utenti. Non è necessario ripetere questo processo se è già stata disabilitata la distribuzione automatica delle licenze ( ad esempio, Office 365 Education per studenti, istituti di istruzione e personale).
   
 Per disabilitare la distribuzione automatica delle licenze per gli attuali utenti:  `Set-MsolCompanySettings -AllowAdHocSubscriptions $false`
   
@@ -186,7 +186,7 @@ Se un utente si è connesso a Power BI, ma non si desidera più che abbia access
 
 2. Trova l'utente per cui vuoi rimuovere la licenza, quindi seleziona il suo nome.
 
-3. Accanto a **Licenze di prodotto** selezionare **Modifica.**
+3. Accanto a **Licenze prodotto** selezionare **Modifica.**
 
 4. Disattivare **l'opzione Microsoft Power BI.**
 
@@ -200,7 +200,7 @@ Se un utente si è connesso a Power BI, ma non si desidera più che abbia access
 
 2. Trova l'utente per cui vuoi rimuovere la licenza, quindi seleziona il suo nome.
 
-3. Accanto a **Licenze di prodotto** selezionare **Modifica.**
+3. Accanto a **Licenze prodotto** selezionare **Modifica.**
 
 4. Disattivare **l'opzione Microsoft Power BI.**
 
@@ -222,7 +222,7 @@ Potrebbe verificarsi un aumento nella richiesta di reimpostazione delle password
   
 ## <a name="why-did-1-million-licenses-for-microsoft-power-bi-show-up-in-my-tenant"></a>Perché nel tenant sono presenti 1 milione di licenze per Microsoft Power BI?
 
-Gli utenti di un'organizzazione idonea sono a loro volta idonei a usare il servizio Microsoft Power BI e queste licenze rappresentano la capacità disponibile per i nuovi utenti di Power BI nel tenant. Per queste licenze non vengono addebitati costi. Se si è scelto di consentire agli utenti di iscriversi a Power BI, gli verrà assegnata una di queste licenze gratuite al termine del processo di iscrizione. È inoltre possibile scegliere di assegnare queste licenze agli utenti manualmente tramite l'interfaccia di amministrazione.
+Gli utenti di un'organizzazione idonea sono a loro volta idonei a usare il servizio Microsoft Power BI e queste licenze rappresentano la capacità disponibile per i nuovi utenti di Power BI nel tenant. Per queste licenze non vengono addebitati costi. Se si è scelto di consentire agli utenti di iscriversi a Power BI, gli verrà assegnata una di queste licenze gratuite disponibili al termine del processo di registrazione. Puoi anche scegliere di assegnare queste licenze agli utenti tramite l'interfaccia di amministrazione.
   
 ## <a name="is-this-free-will-i-be-charged-for-these-licenses"></a>È gratuito? Verrà addebitato un costo per queste licenze?
 

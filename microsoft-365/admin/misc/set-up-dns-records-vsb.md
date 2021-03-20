@@ -20,12 +20,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Informazioni su come verificare il dominio e creare record DNS con Microsoft 365.
 ms.custom:
 - AdminSurgePortfolio
-ms.openlocfilehash: c5c33af8a5635d1092aec2f1bffdfc942f2e4851
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 506ee887edbc59956aee11059a7085bc4b22624e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126336"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914595"
 ---
 # <a name="connect-your-domain-to-microsoft-365"></a>Connettere il proprio dominio a Microsoft 365
 
@@ -72,10 +72,10 @@ Verificare che i campi siano impostati sui valori seguenti:
 
 Salvare il record.
 
-Convalidare il record SPF usando uno di questi [strumenti di convalida SPF](https://docs.microsoft.com/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
+Convalidare il record SPF usando uno di questi [strumenti di convalida SPF](/office365/admin/setup/domains-faq#how-can-i-validate-spf-records-for-my-domain)
 
 SPF è progettata per prevenire spoofing, ma esistono tecniche spoofing che SPF non è in grado di evitare. Per proteggersi da queste minacce, dopo aver configurato SPF è consigliabile impostare anche DKIM e DMARC per Microsoft 365.
 
-Per iniziare, vedere [Usare DKIM per convalidare la posta elettronica in uscita inviata dal proprio dominio in Microsoft 365](https://technet.microsoft.com/library/mt695945%28v=exchg.150%29.aspx) e [Usare DKIM per convalidare la posta elettronica in Microsoft 365](https://technet.microsoft.com/library/mt734386%28v=exchg.150%29.aspx).
+Per iniziare, vedere [Usare DKIM per convalidare la posta elettronica in uscita inviata dal proprio dominio in Microsoft 365](../../security/office-365-security/use-dkim-to-validate-outbound-email.md) e [Usare DKIM per convalidare la posta elettronica in Microsoft 365](../../security/office-365-security/use-dmarc-to-validate-email.md).
 
 Infine, tornare configurazione dominio guidata dell'interfaccia di amministrazione per completare la configurazione.

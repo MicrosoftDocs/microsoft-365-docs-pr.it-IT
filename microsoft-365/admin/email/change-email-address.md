@@ -25,19 +25,19 @@ search.appverid:
 - GEA150
 ms.assetid: f4d8cae9-6d06-4c4b-b4e5-6581fd05ea82
 description: "Modificare l'indirizzo di posta elettronica iniziale in un indirizzo di posta elettronica descrittivo come tom@fourthcoffee.com. A tale scopo, è necessario acquistare un nome di dominio e aggiungerlo a Microsoft 365. "
-ms.openlocfilehash: 445b78f759cee79a794f9656afd5b26051534e26
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 10dff4e0523062ae763c08a972563dc8b5582038
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114022"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915927"
 ---
 # <a name="change-your-email-address-to-use-your-custom-domain"></a>Cambiare l'indirizzo di posta elettronica per usare il dominio personalizzato
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -51,17 +51,17 @@ L'indirizzo di posta elettronica iniziale in Microsoft 365 include .onmicrosoft.
 
 ::: moniker range="o365-germany"
 
-L'indirizzo di posta elettronica iniziale in Office 365 Germany include .onmicrosoft.de, ad esempio tom@fourthcoffee.onmicrosoft.de. Puoi modificarlo in un indirizzo più amichevole come tom@fourthcoffee.de. You'll need your own domain name, like fourthcoffee.de first. Se è già disponibile è possibile procedere. In caso contrario, vedere l'articolo su come [acquistarne uno da un registrar](../get-help-with-domains/buy-a-domain-name.md).
+L'indirizzo di posta elettronica iniziale in Office 365 Germany include .onmicrosoft.de, ad esempio tom@fourthcoffee.onmicrosoft.de. Puoi modificarlo in un indirizzo più amichevole come tom@fourthcoffee.de. Avrai bisogno del tuo nome di dominio, come fourthcoffee.de primo. Se è già disponibile è possibile procedere. In caso contrario, vedere l'articolo su come [acquistarne uno da un registrar](../get-help-with-domains/buy-a-domain-name.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-L'indirizzo di posta elettronica iniziale in Office 365 gestito da 21Vianet include partner.onmschina.cn, ad esempio tom@fourthcoffee.partner.onmschina.cn. Puoi modificarlo in un indirizzo più amichevole come tom@fourthcoffee.cn. You'll need your own domain name, like fourthcoffee.cn first. Se è già disponibile è possibile procedere. In caso contrario, vedere l'articolo su come [acquistarne uno da un registrar](../get-help-with-domains/buy-a-domain-name.md).
+L'indirizzo di posta elettronica iniziale in Office 365 gestito da 21Vianet include partner.onmschina.cn, ad esempio tom@fourthcoffee.partner.onmschina.cn. Puoi modificarlo in un indirizzo più amichevole come tom@fourthcoffee.cn. Avrai bisogno del tuo nome di dominio, come fourthcoffee.cn primo. Se è già disponibile è possibile procedere. In caso contrario, vedere l'articolo su come [acquistarne uno da un registrar](../get-help-with-domains/buy-a-domain-name.md).
 
 ::: moniker-end
 
-Quando si modifica la posta elettronica del dominio in modo che venga inviata a Microsoft 365, aggiornando il record MX del dominio durante la configurazione, tutta la posta elettronica inviata a tale dominio inizierà a essere inviata a Microsoft 365. Assicurarsi di aver aggiunto utenti e creato cassette postali in Microsoft 365 per tutti gli utenti che hanno posta elettronica nel dominio prima di modificare il record MX. Non si vuole spostare la posta elettronica per tutti gli utenti del dominio in Microsoft 365? È possibile eseguire la procedura pilota [di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain?view=o365-worldwide)con pochi indirizzi di posta elettronica.
+Quando si modifica la posta elettronica del dominio in modo che venga inviata a Microsoft 365, aggiornando il record MX del dominio durante l'installazione, tutti i messaggi inviati a tale dominio inizieranno a essere inviati a Microsoft 365. Assicurarsi di aver aggiunto utenti e creato cassette postali in Microsoft 365 per tutti gli utenti che hanno posta elettronica nel dominio PRIMA di modificare il record MX. Non si desidera spostare la posta elettronica per tutti gli utenti del dominio in Microsoft 365? È possibile eseguire la procedura pilota [di Microsoft 365](../misc/pilot-microsoft-365-from-my-custom-domain.md?view=o365-worldwide)con pochi indirizzi di posta elettronica.
   
 ## <a name="change-your-email-address-to-use-your-custom-domain-using-the-microsoft-365-admin-center"></a>Modificare l'indirizzo di posta elettronica per usare il dominio personalizzato tramite l'interfaccia di amministrazione di Microsoft 365
 
@@ -91,7 +91,7 @@ Per eseguire questa procedura, è necessario disporre di un account amministrato
     
 4. Seguire i vari passaggi per confermare di essere proprietari del dominio e modificare l'indirizzo di posta elettronica.
     
-You'll be guided to get everything set up correctly with your domain in Microsoft 365.
+Verrà indicato come configurare tutto correttamente con il dominio in Microsoft 365.
 
 > [!NOTE]
 > Se non si utilizza una licenza di Exchange, non è possibile utilizzare il dominio per inviare o ricevere messaggi di posta elettronica dal tenant di Microsoft 365.
@@ -99,4 +99,3 @@ You'll be guided to get everything set up correctly with your domain in Microsof
 ## <a name="related-articles"></a>Articoli correlati
 
 [Acquistare un dominio personalizzato con Microsoft 365](../get-help-with-domains/buy-a-domain-name.md)
- 

@@ -13,12 +13,12 @@ ms.prod: microsoft-365-enterprise
 localization_priority: Priority
 description: Microsoft 365 consente alle organizzazioni del settore energetico di passare a una piattaforma di collaborazione moderna, contribuendo a mantenere i dati e i sistemi sicuri e conformi alle normative.
 ms.custom: seo-marvel-jun2020
-ms.openlocfilehash: 1e5acc09c72b47f583c2ee9330f78bf3e68aaa33
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: 086cc176190549f2ec8e49ea992744059c5d9005
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558491"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916119"
 ---
 # <a name="key-compliance-and-security-considerations-for-the-energy-industry"></a>Considerazioni chiave su conformità e sicurezza per il settore energetico
 ![Immagine metaforica di una visione globale dei vari settori che usano il cloud](../media/solution-arch-center/MSC17_global_016.png)
@@ -38,7 +38,7 @@ Gli standard normativi raccomandati per le organizzazioni del settore energetico
 - Azure e Azure per enti pubblici hanno ricevuto un'autorizzazione a operare provvisoria (P-ATO) a livello di impatto elevato, il livello più elevato di autorizzazione di FedRAMP. 
 
 Per informazioni sui servizi cloud Microsoft e FedRAMP, vedere le risorse seguenti:
-- [Panoramica su Microsoft e FedRAMP](https://docs.microsoft.com/microsoft-365/compliance/offering-fedramp?view=o365-worldwide)
+- [Panoramica su Microsoft e FedRAMP](/compliance/regulatory/offering-FedRAMP?view=o365-worldwide)
 - [Report FedRAMP di Office 365](https://servicetrust.microsoft.com/ViewPage/MSComplianceGuideV3?docTab=7027ead0-3d6b-11e9-b9e1-290b1eb4cdeb_FedRAMP_Reports)
 
 

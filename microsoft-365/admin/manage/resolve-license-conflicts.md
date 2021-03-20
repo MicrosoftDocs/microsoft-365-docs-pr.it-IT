@@ -21,23 +21,23 @@ search.appverid:
 - BEA160
 ms.assetid: 796f7eda-b1f8-479a-adee-bd9226ca47ec
 description: Informazioni su come risolvere i conflitti di licenza con l'abbonamento a Microsoft 365 per le aziende.
-ms.openlocfilehash: 284a6b169c02314dd2bbd0e13c10c081cb50f58d
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: e2b5daa71164b41825282bd5652549347b8307c1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114454"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915183"
 ---
 # <a name="resolve-license-conflicts"></a>Risoluzione dei conflitti di licenze
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
-È consigliabile acquistare le licenze necessarie per l'abbonamento prima di creare nuovi utenti. In questo modo, quando si creano gli account utente sarà possibile assegnare una licenza ai nuovi utenti. Se tutte le licenze disponibili sono già state assegnate agli utenti, ma alcune di esse sono scadute, oppure se si prova a rimuovere una licenza già assegnata a un utente, si verificheranno conflitti di licenza. Per ulteriori informazioni, vedere [Rimuovere licenze dall'abbonamento.](../../commerce/licenses/remove-licenses-from-subscription.md)
+È consigliabile acquistare le licenze necessarie per l'abbonamento prima di creare nuovi utenti. In questo modo, quando si creano gli account utente sarà possibile assegnare una licenza ai nuovi utenti. Se tutte le licenze disponibili sono già state assegnate agli utenti, ma alcune di esse sono scadute, oppure se si prova a rimuovere una licenza già assegnata a un utente, si verificheranno conflitti di licenza. Per ulteriori informazioni, vedere [Rimuovere licenze dall'abbonamento.](../../commerce/licenses/buy-licenses.md)
   
 ## <a name="how-do-i-view-license-conflicts"></a>Come si visualizzano i conflitti di licenza?
 
@@ -66,7 +66,7 @@ ms.locfileid: "50114454"
 
 ## <a name="how-do-i-resolve-license-conflicts"></a>Come si risolvono i conflitti di licenza?
 
-È possibile risolvere i conflitti di licenza [acquistando](../../commerce/licenses/buy-licenses.md) altre licenze o rimuovendo le licenze dagli utenti [che non ne hanno più bisogno.](remove-licenses-from-users.md) È possibile [eliminare un account utente per liberare una licenza](../add-users/delete-a-user.md).
+È possibile risolvere i conflitti di licenza acquistando [altre licenze](../../commerce/licenses/buy-licenses.md) o rimuovendo le licenze dagli utenti che non ne hanno [più bisogno.](remove-licenses-from-users.md) È possibile [eliminare un account utente per liberare una licenza](../add-users/delete-a-user.md).
   
 ## <a name="related-articles"></a>Articoli correlati
 

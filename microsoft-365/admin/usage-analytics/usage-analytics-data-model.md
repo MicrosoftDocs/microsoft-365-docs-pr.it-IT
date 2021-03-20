@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 08c5307c-4a6b-4761-8410-a6c96725760f
 description: "Informazioni su come l'analisi dell'utilizzo si connette a un'API e fornisce una tendenza mensile di utilizzo di vari servizi di Microsoft 365.  "
-ms.openlocfilehash: 7d1e797fc388934f66ddc45d2e7f51566e89ad23
-ms.sourcegitcommit: bf9e0091e5bdc78d9b23be64583eb816bb059eb2
+ms.openlocfilehash: 1975fc0bdba279b281fb45c8aec22255579ef414
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50758941"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913851"
 ---
 # <a name="microsoft-365-usage-analytics-data-model"></a>Modello di dati nell'analisi dell'utilizzo di Microsoft 365
 
@@ -35,7 +35,7 @@ ms.locfileid: "50758941"
 L'analisi dell'utilizzo di Microsoft 365 si connette a un'API che espone un modello di dati multidimensionale. Le API utilizzate dall'analisi dei dati di utilizzo di Microsoft 365 per generare i dati derivano dalle diverse API Graph disponibili in generale. La funzione dell'API di analisi dell'utilizzo di Microsoft 365 non è generalmente disponibile.
   
 > [!NOTE]
-> Per ulteriori informazioni, vedere Utilizzo dei report di utilizzo di [Microsoft 365 in Microsoft Graph.](https://go.microsoft.com/fwlink/p/?linkid=864336) 
+> Per ulteriori informazioni, vedere Utilizzo dei report di utilizzo di [Microsoft 365 in Microsoft Graph.](/graph/api/resources/report) 
   
 Questa API fornisce informazioni sulla tendenza mensile di utilizzo dei vari servizi di Microsoft 365. Per i dati esatti restituiti dall'API fare riferimento alla tabella contenuta nella sezione seguente.
   
@@ -295,5 +295,3 @@ La tabella fornisce dati sul numero di attivazioni di sottoscrizioni di Office n
 |WinRtCount  <br/> |Numero di attivazioni per ogni piano di servizio per dispositivi Windows Mobile entro la fine dell'intervallo di tempo.  <br/> |
 |Timeframe  <br/> |Questa colonna contiene il valore di data. Usato come relazione Molti-a-uno per la tabella Calendar.  <br/> |
 |Content Date  <br/> |Se l'intervallo di tempo mostra il mese corrente, questo valore rappresenterà l'ultima data del mese corrente per cui i dati sono disponibili.  <br/> Se l'intervallo di tempo mostra il mese precedente, questo valore rappresenterà l'ultima data del mese dell'intervallo di tempo.  <br/> |
-   
-

@@ -23,16 +23,16 @@ ms.custom:
 - AdminSurgePortfolio
 - okr_smb
 description: Informazioni su come creare gruppi di distribuzione o elenchi nell'interfaccia di amministrazione di Microsoft 365 in modo da poter inviare messaggi di posta elettronica a un gruppo senza dover digitare il nome di ogni destinatario.
-ms.openlocfilehash: 7c416612fa241d7fec11a2e24a29e149594951e3
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: 5c4781653a5f18b7a41dc20212771368132801cd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080470"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914247"
 ---
 # <a name="create-distribution-groups-in-the-microsoft-365-admin-center"></a>Creare gruppi di distribuzione nell'interfaccia di amministrazione di Microsoft 365
   
-Utilizzato quando si desidera inviare posta elettronica a un gruppo di persone senza dover digitare il nome di ogni singolo destinatario, i gruppi di distribuzione (liste di distribuzione) sono organizzati in base a un particolare oggetto di discussione (ad esempio "Marketing") o da utenti che condividono lavoro comune che richiede loro di comunicare frequentemente. Le liste di distribuzione consentono anche di inoltrare automaticamente messaggi a più indirizzi di posta elettronica.
+Utilizzato quando si desidera inviare messaggi di posta elettronica a un gruppo di persone senza dover digitare il nome di ogni singolo destinatario, i gruppi di distribuzione (liste di distribuzione) sono organizzati da un particolare oggetto di discussione (ad esempio "Marketing") o da utenti che condividono attività comuni che richiedono loro di comunicare frequentemente. Le liste di distribuzione consentono anche di inoltrare automaticamente messaggi a più indirizzi di posta elettronica.
 
 I gruppi di distribuzione sono talvolta denominati liste di distribuzione.
   
@@ -58,9 +58,9 @@ Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.mic
 
 1. Selezionare l'icona di avvio delle app  e scegliere **Amministratore**.
     
-    Non riesci a trovare l'app che stai cercando? Nell'icona di avvio delle app seleziona Tutte le **app** per visualizzare un elenco alfabetico delle app disponibili. Tramite la lista è possibile cercare un'applicazione specifica. 
+    Non riesci a trovare l'app che stai cercando? Nell'icona di avvio delle app seleziona **Tutte le app** per visualizzare un elenco alfabetico delle app disponibili. Tramite la lista è possibile cercare un'applicazione specifica. 
     
-2. Selezionare **Gruppi** \> **di** gruppi nel riquadro di spostamento sinistro e quindi **selezionare Aggiungi gruppo.** 
+2. Selezionare **Gruppi** \> **Gruppi** nel riquadro di spostamento a sinistra e quindi **selezionare Aggiungi un gruppo.** 
       
 3. Nel campo **Scegliere un tipo di gruppo** scegliere **Distribuzione** e quindi **Avanti.**
   
@@ -70,8 +70,6 @@ Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.mic
     
 6. Per aggiungere utenti alla lista di distribuzione, vedere [Aggiungere un utente o un contatto a un gruppo di distribuzione.](../email/add-user-or-contact-to-distribution-list.md)
     
-Vedere come usare il gruppo in Outlook 2016 e Outlook sul Web nell'argomento Usare i gruppi di contatti (in precedenza liste [di distribuzione) in Outlook.](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) 
+Vedere come utilizzare il gruppo in Outlook 2016 e Outlook sul Web nell'argomento [Use contact groups (formerly distribution lists) in Outlook.](https://support.microsoft.com/office/1c97fcb2-0ed4-41e6-b401-58f9d7d40e39) 
   
-Per informazioni sui [problemi relativi alle liste di distribuzione,](https://docs.microsoft.com/office365/troubleshoot/groups/distribution-list-issues) vedere Problemi relativi ai gruppi di distribuzione. 
-  
-
+Per informazioni sui [problemi relativi alle liste di](/office365/troubleshoot/groups/distribution-list-issues) distribuzione, vedere Problemi relativi al gruppo di distribuzione. 

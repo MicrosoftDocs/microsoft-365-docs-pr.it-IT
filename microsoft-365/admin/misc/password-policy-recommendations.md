@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9fa2539a-2211-41fd-85a0-bc37b9619ca4
 description: Informazioni su come rendere più sicura l'organizzazione da attacchi alle password e perché è necessario bloccare le password comuni e abilitare l'autenticazione a più fattori basata sul rischio.
-ms.openlocfilehash: 66a4048ac1add3a0d47f256dc29519a91ae6cb11
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: ca9a88b0bb154416837254d785cf9cfee8876ae6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926715"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914727"
 ---
 # <a name="password-policy-recommendations"></a>Suggerimenti sui criteri delle password
 
@@ -136,10 +136,10 @@ Con l'autenticazione a più fattori basata sul rischio, quando il sistema rileva
 
 ## <a name="related-articles"></a>Articoli correlati
 
-[Reimpostare password](https://docs.microsoft.com/microsoft-365/admin/add-users/reset-passwords)
+[Reimpostare password](../add-users/reset-passwords.md)
 
-[Impostare la password di un singolo utente in modo che non scada mai](https://docs.microsoft.com/microsoft-365/admin/add-users/set-password-to-never-expire)
+[Impostare la password di un singolo utente in modo che non scada mai](../add-users/set-password-to-never-expire.md)
 
-[Consentire agli utenti di reimpostare le loro password](https://docs.microsoft.com/microsoft-365/admin/add-users/let-users-reset-passwords)
+[Consentire agli utenti di reimpostare le loro password](../add-users/let-users-reset-passwords.md)
 
-[Inviare nuovamente la password utente - Guida per amministratori](https://docs.microsoft.com/microsoft-365/admin/add-users/resend-user-password)
+[Inviare nuovamente la password utente - Guida per amministratori](../add-users/resend-user-password.md)

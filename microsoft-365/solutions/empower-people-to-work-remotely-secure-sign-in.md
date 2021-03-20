@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: È necessario che l'utente remoto acceda con l'autenticazione a più fattori (MFA).
-ms.openlocfilehash: 7df6b1335c0ca45c06eee98eeff89f59b6365807
-ms.sourcegitcommit: 8e696c084d097520209c864140af11aa055b979e
+ms.openlocfilehash: d27268ac4c71e74afe6ef04cc61fb029b665c1a0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "50097141"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916203"
 ---
 # <a name="step-1-increase-sign-in-security-for-remote-workers-with-mfa"></a>Passaggio 1. Aumentare la sicurezza di accesso per i lavoratori remoti con la MFA.
 
@@ -36,8 +36,8 @@ Sono disponibili tre modi per richiedere agli utenti di utilizzare la MFA in bas
 
 |Piano  |Consiglio  |
 |---------|---------|
-|Tutti i piani di Microsoft 365 (senza licenze di Azure AD Premium P1 o P2)     |[Abilitare le impostazioni predefinite di sicurezza in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Le impostazioni predefinite di sicurezza in Azure AD includono la MFA per utenti e amministratori.   |
-|Microsoft 365 E3 (include le licenze di Azure AD Premium P1)     | Usare i [criteri comuni di accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) per configurare i criteri seguenti: <br>- [Richiedere la MFA per amministratori](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Richiedere la MFA per tutti gli utenti](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Bloccare l'autenticazione legacy](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
+|Tutti i piani di Microsoft 365 (senza licenze di Azure AD Premium P1 o P2)     |[Abilitare le impostazioni predefinite di sicurezza in Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Le impostazioni predefinite di sicurezza in Azure AD includono la MFA per utenti e amministratori.   |
+|Microsoft 365 E3 (include le licenze di Azure AD Premium P1)     | Usare i [criteri comuni di accesso condizionale](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) per configurare i criteri seguenti: <br>- [Richiedere la MFA per amministratori](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Richiedere la MFA per tutti gli utenti](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Bloccare l'autenticazione legacy](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
 |Microsoft 365 E5 (include le licenze di Azure AD Premium P2)     | Sfruttando Azure AD Identity Protection, iniziare a implementare il [set raccomandato di accesso condizionale e criteri correlati](../security/office-365-security/identity-access-policies.md) di Microsoft creando questi criteri:<br> - [Richiedere la MFA quando il rischio di accesso è considerato *medio* o *elevato*](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Bloccare i client che non supportano l'autenticazione moderna](../security/office-365-security/identity-access-policies.md#block-clients-that-dont-support-multi-factor)<br>- [Gli utenti a rischio elevato devono modificare la password](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
@@ -49,7 +49,7 @@ Gli utenti hanno 14 giorni per registrarsi per la MFA con l'app Microsoft Authen
 
 Le impostazioni di sicurezza predefinite garantiscono che tutte le organizzazioni dispongano di un livello base di sicurezza per l'accesso degli utenti abilitato per impostazione predefinita. È possibile disabilitare le impostazioni predefinite di sicurezza a favore della MFA con criteri di accesso condizionale o per singoli account.
 
-Per altre informazioni, vedere questa [panoramica delle impostazioni predefinite di sicurezza](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
+Per altre informazioni, vedere questa [panoramica delle impostazioni predefinite di sicurezza](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
 
 ## <a name="conditional-access-policies"></a>Criteri di accesso condizionale
 
@@ -63,7 +63,7 @@ Questo criterio consente di richiedere l'autenticazione a più fattori in base a
 
 L'accesso condizionale richiede licenze di Azure AD Premium P1, che sono incluse con Microsoft 365 E3 ed E5.
 
-Per altre informazioni, vedere questa [panoramica dell'accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
+Per altre informazioni, vedere questa [panoramica dell'accesso condizionale](/azure/active-directory/conditional-access/overview).
 
 ## <a name="azure-ad-identity-protection-support"></a>Supporto di Azure AD Identity Protection
 
@@ -73,9 +73,9 @@ Con Azure AD Identity Protection è possibile creare un criterio di accesso cond
 
 Azure AD Identity Protection richiede licenze di Azure AD Premium P2, che sono incluse in Microsoft 365 E5.
 
-Per altre informazioni, vedere [Accesso condizionale basato sul rischio](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk#require-mfa-medium-or-high-sign-in-risk-users).
+Per altre informazioni, vedere [Accesso condizionale basato sul rischio](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk#require-mfa-medium-or-high-sign-in-risk-users).
 
-Tramite Azure AD Identity Protection è anche possibile creare un criterio per chiedere agli utenti di iscriversi per l'autenticazione a più fattori. Per altre informazioni, vedere [Configurare i criteri di registrazione dell'autenticazione a più fattori di Azure](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
+Tramite Azure AD Identity Protection è anche possibile creare un criterio per chiedere agli utenti di iscriversi per l'autenticazione a più fattori. Per altre informazioni, vedere [Configurare i criteri di registrazione dell'autenticazione a più fattori di Azure](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
 
 
 ## <a name="using-these-methods-together"></a>Usare questi metodi insieme
@@ -97,11 +97,11 @@ Questa tabella mostra i risultati dell'abilitazione della MFA con impostazioni p
 
 ## <a name="let-your-users-reset-their-own-passwords"></a>Consentire agli utenti di reimpostare le loro password
 
-La reimpostazione della password self-service consente agli utenti di reimpostare le proprie password senza bisogno dell'intervento del personale IT. Gli utenti possono reimpostare rapidamente le password in qualsiasi momento e da qualsiasi luogo. Per altre informazioni, vedere [Pianificare una distribuzione della reimpostazione della password self-service di Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/howto-sspr-deployment).
+La reimpostazione della password self-service consente agli utenti di reimpostare le proprie password senza bisogno dell'intervento del personale IT. Gli utenti possono reimpostare rapidamente le password in qualsiasi momento e da qualsiasi luogo. Per altre informazioni, vedere [Pianificare una distribuzione della reimpostazione della password self-service di Azure AD](/azure/active-directory/authentication/howto-sspr-deployment).
 
 ## <a name="sign-in-to-saas-apps-with-azure-ad"></a>Accedere alle app SaaS con Azure AD
 
-Oltre a fornire agli utenti l'autenticazione basata sul cloud, Azure AD può anche essere il modo più semplice per proteggere tutte le app, che si trovino in locale, nel cloud di Microsoft o in un altro cloud. [Integrando le app in Azure AD](https://docs.microsoft.com/azure/active-directory/manage-apps/plan-an-application-integration), i lavoratori remoti possono individuare facilmente le applicazioni di cui hanno bisogno e accedere in tutta sicurezza.
+Oltre a fornire agli utenti l'autenticazione basata sul cloud, Azure AD può anche essere il modo più semplice per proteggere tutte le app, che si trovino in locale, nel cloud di Microsoft o in un altro cloud. [Integrando le app in Azure AD](/azure/active-directory/manage-apps/plan-an-application-integration), i lavoratori remoti possono individuare facilmente le applicazioni di cui hanno bisogno e accedere in tutta sicurezza.
 
 ## <a name="admin-technical-resources-for-mfa-and-identity"></a>Risorse tecniche per amministratori per MFA e identità
 

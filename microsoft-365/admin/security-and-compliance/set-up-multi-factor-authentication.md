@@ -23,30 +23,30 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Scopri come configurare l'autenticazione a più fattori per l'organizzazione.
 monikerRange: o365-worldwide
-ms.openlocfilehash: d08ef54c545809bbb2277f8d0a8471245400a3ac
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 54c862d8f7c25472d84557e177a9107d2c14d846
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50514969"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914463"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Configurare l'autenticazione a più fattori
 
 Basandosi sulla conoscenza dell'[autenticazione a più fattori (MFA) e del relativo supporto in Microsoft 365](multi-factor-authentication-microsoft-365.md), è ora di configurarla e implementarla nell'organizzazione.
 
 > [!IMPORTANT]
-> Se è stato acquistato un abbonamento o una versione di valutazione dopo il 21 ottobre 2019 e viene richiesto di eseguire l'autenticazione a più fattori quando si accede, le [impostazioni di sicurezza predefinite](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) sono state abilitate automaticamente per l'abbonamento.
+> Se è stato acquistato un abbonamento o una versione di valutazione dopo il 21 ottobre 2019 e viene richiesto di eseguire l'autenticazione a più fattori quando si accede, le [impostazioni di sicurezza predefinite](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults) sono state abilitate automaticamente per l'abbonamento.
 
 ## <a name="before-you-begin"></a>Informazioni preliminari
 
 - È necessario essere un ammistratore globale per gestire l-autenticazione MFA. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../add-users/about-admin-roles.md).
 - Se l'autenticazione a più fattori per utente è abilitata, è necessario [Disabilitare l'autenticazione a più fattori per utente ereditata](#turn-off-legacy-per-user-mfa).
-- Se si hanno client di Office 2013 su dispositivi Windows, [attivare Autenticazione moderna per i client Office 2013](https://docs.microsoft.com/microsoft-365/admin/security-and-compliance/enable-modern-authentication).
-- Avanzato: se si hanno servizi directory di terze parti con Active Directory Federation Services (ADFS), configurare il server Azure MFA. Per altre informazioni, vedere [Scenari avanzati con l’autenticazione a più fattori di Azure AD e soluzioni VPN di terze parti](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfaserver-nps-vpn).
+- Se si hanno client di Office 2013 su dispositivi Windows, [attivare Autenticazione moderna per i client Office 2013](./enable-modern-authentication.md).
+- Avanzato: se si hanno servizi directory di terze parti con Active Directory Federation Services (ADFS), configurare il server Azure MFA. Per altre informazioni, vedere [Scenari avanzati con l’autenticazione a più fattori di Azure AD e soluzioni VPN di terze parti](/azure/active-directory/authentication/howto-mfaserver-nps-vpn).
 
 ## <a name="turn-security-defaults-on-or-off"></a>Attivare o disattivare le impostazioni di sicurezza predefinite
 
-Per gran parte delle organizzazioni, le impostazioni di sicurezza predefinite offrono un buon livello di sicurezza aggiuntiva. Per altre informazioni, vedere [Che cosa sono le impostazioni predefinite per la sicurezza?](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
+Per gran parte delle organizzazioni, le impostazioni di sicurezza predefinite offrono un buon livello di sicurezza aggiuntiva. Per altre informazioni, vedere [Che cosa sono le impostazioni predefinite per la sicurezza?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
 Se l'abbonamento è nuovo, l'impostazione predefinita della sicurezza potrebbe essere già attivata automaticamente.
 
@@ -58,7 +58,7 @@ Se l'abbonamento è nuovo, l'impostazione predefinita della sicurezza potrebbe e
 4. Nella parte inferiore della pagina scegliere **Gestire le impostazioni di sicurezza predefinite**.
 5. Scegliere **Sì** per abilitare le impostazioni di sicurezza predefinite o **No** per disabilitare le impostazioni predefinite per la sicurezza, quindi scegliere **Salva**.
 
-Se i [criteri di accesso condizionale di base](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-baseline-protection) sono stati usati, sarà richiesto di disattivarli prima di iniziare a usare le impostazioni di sicurezza predefinite.
+Se i [criteri di accesso condizionale di base](/azure/active-directory/conditional-access/concept-baseline-protection) sono stati usati, sarà richiesto di disattivarli prima di iniziare a usare le impostazioni di sicurezza predefinite.
 
 1. Passare alla pagina [Accesso condizionale - Criteri](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/Policies).
 2. Scegliere ciascun criterio di base che è **Attivato** e impostare **Abilitare il criterio** su **Disattivato**.
@@ -73,9 +73,9 @@ Se l'organizzazione ha esigenze di sicurezza di accesso più granulare, i criter
 > [!IMPORTANT]
 > Disabilitare sia l’autenticazione a più fattori per utente che le impostazioni di sicurezza prima di abilitare i criteri di accesso condizionale.
 
-L'accesso condizionale è disponibile per i clienti che hanno acquistato Azure AD Premium P1 o licenze che lo includono, come Microsoft 365 Business Premium e Microsoft 365 E3. Per altre informazioni, vedere [Creare un criterio di accesso condizionale](https://docs.microsoft.com/azure/active-directory/authentication/tutorial-enable-azure-mfa).
+L'accesso condizionale è disponibile per i clienti che hanno acquistato Azure AD Premium P1 o licenze che lo includono, come Microsoft 365 Business Premium e Microsoft 365 E3. Per altre informazioni, vedere [Creare un criterio di accesso condizionale](/azure/active-directory/authentication/tutorial-enable-azure-mfa).
 
-L'accesso condizionale basato sul rischio è disponibile con la licenza P2 di Azure AD Premium P2 o con licenze che lo includono, come Microsoft 365 E5. Per altre informazioni, vedere [Accesso condizionale basato sul rischio](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-risk).
+L'accesso condizionale basato sul rischio è disponibile con la licenza P2 di Azure AD Premium P2 o con licenze che lo includono, come Microsoft 365 E5. Per altre informazioni, vedere [Accesso condizionale basato sul rischio](/azure/active-directory/conditional-access/howto-conditional-access-policy-risk).
 
 Per altre informazioni su Azure AD P1 e P2, vedere [Prezzi di Azure Active Directory](https://azure.microsoft.com/pricing/details/active-directory/).
 
@@ -104,6 +104,6 @@ Se l'autenticazione a più fattori per utente è stata attivata in precedenza, �
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Video: Attivare l'autenticazione a più fattori](https://docs.microsoft.com/microsoft-365/business-video/turn-on-mfa)
+[Video: Attivare l'autenticazione a più fattori](../../business-video/turn-on-mfa.md)
 
-[Video: Attivare l'autenticazione a più fattori per il telefono](https://docs.microsoft.com/microsoft-365/business-video/set-up-mfa)
+[Video: Attivare l'autenticazione a più fattori per il telefono](../../business-video/set-up-mfa.md)

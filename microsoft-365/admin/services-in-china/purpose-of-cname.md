@@ -18,14 +18,14 @@ search.appverid:
 - MET150
 - MOE150
 ROBOTS: NOINDEX
-description: Ulteriori informazioni sul record CNAME "MSOID" in Office 365 che indirizza l'utente al server migliore per i processi di autenticazione, in modo da ottenere una risposta più rapida.
+description: Ulteriori informazioni sul record CNAME "MSOID" in Office 365 che indirizza l'utente al server migliore per i processi di autenticazione, in modo da ottenere una risposta più veloce.
 monikerRange: o365-21vianet
-ms.openlocfilehash: aea04391768993c40978d94b50817244cd77405c
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ms.openlocfilehash: a1d587abc9db03c9a1f7c5f66711fde3648a0e96
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49655485"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914307"
 ---
 # <a name="whats-the-purpose-of-the-office-365-cname-record-for-msoid"></a>Qual è lo scopo del record aggiuntivo CNAME di Office 365 per MSOID?
 
@@ -41,8 +41,6 @@ Se tale record CNAME non è presente per il proprio dominio, queste applicazioni
   
  **Se Office 365 gestisce i record DNS del dominio,** Office 365 configura automaticamente questo record CNAME. 
   
- **Se si gestiscono i record DNS per il** dominio presso l'host DNS, è possibile crearlo manualmente seguendo le istruzioni per [l'host DNS.](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider)
+ **Se si gestiscono record DNS per il** dominio nell'host DNS, è possibile creare manualmente questo record seguendo le istruzioni [per l'host DNS.](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md)
   
-Se si sta pianificando una distribuzione di Office 365 e si desiderano ulteriori informazioni su tutti i record DNS che potrebbe essere necessario aggiungere o aggiornare, leggere queste informazioni in Riferimento: Record domain name system esterni per [Office 365.](https://go.microsoft.com/fwlink/?LinkId=579013)
-  
-
+Se si sta pianificando una distribuzione di Office 365 e si desiderano ulteriori informazioni su tutti i record DNS che potrebbe essere necessario aggiungere o aggiornare, vedere Informazioni su di essi in Riferimento: record di Domain Name System esterni per [Office 365](../../enterprise/external-domain-name-system-records.md).

@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 787d7a75-e201-46f3-a242-f698162ff09f
-description: Informazioni su come aggiornare una o più liste di distribuzione ai gruppi di Microsoft 365 in Outlook e su come usare PowerShell per aggiornare più liste di distribuzione contemporaneamente.
-ms.openlocfilehash: 95f887b4386b349dc9d8bb471deab19b5425f6f5
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+description: Informazioni su come aggiornare una o più liste di distribuzione ai gruppi di Microsoft 365 in Outlook e su come utilizzare PowerShell per aggiornare più liste di distribuzione contemporaneamente.
+ms.openlocfilehash: 7fd6090e00e9099feb93685a276b5e207bd05419
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080528"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915003"
 ---
 # <a name="upgrade-distribution-lists-to-microsoft-365-groups-in-outlook"></a>Aggiornare le liste di distribuzione ai gruppi di Microsoft 365 in Outlook
 
-È possibile aggiornare le liste di distribuzione ai gruppi di Microsoft 365 con Outlook. Questo è un ottimo modo per fornire alle liste di distribuzione dell'organizzazione tutte le funzionalità e le funzionalità dei gruppi di Microsoft 365. [Perché è consigliabile eseguire l'aggiornamento delle liste di distribuzione ai gruppi di Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
+È possibile aggiornare le liste di distribuzione ai gruppi di Microsoft 365 con Outlook. Questo è un ottimo modo per offrire alle liste di distribuzione dell'organizzazione tutte le funzionalità dei gruppi di Microsoft 365. [Perché è consigliabile eseguire l'aggiornamento delle liste di distribuzione ai gruppi di Outlook](https://support.microsoft.com/office/7fb3d880-593b-4909-aafa-950dd50ce188)
 
 È possibile aggiornare le liste di distribuzione una per volta oppure diverse contemporaneamente.
 
@@ -39,15 +39,15 @@ Per aggiornare una lista di distribuzione, è necessario essere un amministrator
 
 1. Accedere all'<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">interfaccia di amministrazione di Exchange</a>.
 
-2. Nell'interfaccia di amministrazione di Exchange, accedere a **Gruppi** \> **di destinatari.**<br/>Verrà visualizzato un avviso che indica che sono presenti liste di distribuzione (denominate anche gruppi di **distribuzione)** idonee per l'aggiornamento ai gruppi di Microsoft 365.<br/> ![Seleziona il pulsante Per iniziare](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
+2. Nell'interfaccia di amministrazione di Exchange, andare a **Destinatari** \> **Gruppi**.<br/>Verrà visualizzato un avviso che indica che sono presenti liste di distribuzione (denominate anche gruppi di **distribuzione)** idonee per l'aggiornamento ai gruppi di Microsoft 365.<br/> ![Seleziona il pulsante Introduzione](../../media/8cf838b4-2644-401f-a366-08c1eea183eb.png)
 
 3. Selezionare una o più liste di distribuzione (chiamate anche **gruppo di distribuzione** ) nella pagina **Gruppi**.<br/>![Selezionare un gruppo di distribuzione](../../media/2c303433-d60b-4100-a6ae-5809b03a8cdb.png)
 
 4. Selezionare l'icona di aggiornamento.<br/>![Icona Aggiorna a Gruppi di Microsoft 365](../../media/1e28cb3d-bff3-4be3-8329-1902d2d54720.png)
 
-5. Nella finestra di dialogo delle informazioni selezionare **Sì per** confermare l'aggiornamento. Il processo inizia immediatamente. A seconda delle dimensioni e del numero di DLL da aggiornare, il processo può richiedere minuti o ore.<br/>Se la lista di distribuzione non può essere aggiornata, viene visualizzata una finestra di dialogo che indica questo problema. Vedere [Quali liste di distribuzione non possono essere aggiornate?](#which-distribution-lists-cant-be-upgraded).
+5. Nella finestra di dialogo delle informazioni selezionare **Sì** per confermare l'aggiornamento. Il processo inizia immediatamente. A seconda delle dimensioni e del numero di DLL da aggiornare, il processo può richiedere minuti o ore.<br/>Se la lista di distribuzione non può essere aggiornata, viene visualizzata una finestra di dialogo che indica questo problema. Vedere [Quali liste di distribuzione non possono essere aggiornate?](#which-distribution-lists-cant-be-upgraded).
 
-6. Se si aggiornano più liste di distribuzione, utilizzare l'elenco a discesa per filtrare le liste di distribuzione aggiornate. Se l'elenco non è completo, attendere  più tempo e quindi selezionare Aggiorna per vedere cosa è stato aggiornato correttamente.<br/>Al termine del processo di aggiornamento per tutte le liste di distribuzione selezionate, non viene visualizzato alcun avviso. Per ottenere questa informazione, è possibile esaminare le liste di distribuzione elencate in **Disponibili per l'aggiornamento** o **Liste di distribuzione aggiornate**.
+6. Se si stanno aggiornando più liste di distribuzione, utilizzare l'elenco a discesa per filtrare le liste di distribuzione aggiornate. Se l'elenco non è completo, attendere ancora un po', quindi selezionare **Aggiorna** per vedere cosa è stato aggiornato correttamente.<br/>Al termine del processo di aggiornamento per tutte le liste di distribuzione selezionate, non viene visualizzato alcun avviso. Per ottenere questa informazione, è possibile esaminare le liste di distribuzione elencate in **Disponibili per l'aggiornamento** o **Liste di distribuzione aggiornate**.
 
 7. Se è stata selezionata una lista di distribuzione per l'aggiornamento, ma questa viene ancora visualizzata nella pagina in Disponibili per l'aggiornamento, l'aggiornamento non è riuscito. Vedere [Che cosa fare se l'aggiornamento non riesce](#what-to-do-if-the-upgrade-doesnt-work).
 
@@ -74,25 +74,25 @@ Per aggiornare una singola dll, eseguire il comando seguente:
 Upgrade-DistributionGroup -DlIdentities \<Dl SMTP address\>`
 ```
 
-Ad esempio, se si desidera aggiornare una dll con indirizzo SMTP dl1@contoso.com, eseguire il comando seguente:
+Ad esempio, se si desidera aggiornare una DLL con indirizzo SMTP dl1@contoso.com, eseguire il comando seguente:
 
 ```PowerShell
 Upgrade-DistributionGroup -DlIdentities dl1@contoso.com`
 ```
 
 > [!NOTE]
-> È inoltre possibile aggiornare una singola lista di distribuzione a un gruppo di Microsoft 365 utilizzando il cmdlet [PowerShell New-UnifiedGroup](https://go.microsoft.com/fwlink/?LinkID=786379)
+> È inoltre possibile aggiornare una singola lista di distribuzione a un gruppo di Microsoft 365 utilizzando il cmdlet [PowerShell New-UnifiedGroup](/powershell/module/exchange/new-unifiedgroup)
 
-### <a name="upgrade-multiple-dls-in-a-batch"></a>Aggiornare più dll in un batch
+### <a name="upgrade-multiple-dls-in-a-batch"></a>Aggiornare più DLL in un batch
 
-È inoltre possibile passare più DLL come batch e aggiornarle insieme:
+Puoi anche passare più DLL come batch e aggiornarle insieme:
 
 ```PowerShell
 Upgrade-DistributionGroup -DlIdentities \<DL SMTP address1\>, \< DL SMTP address2\>,
 \< DL SMTP address3\>, \< DL SMTP address 4\>
 ```
 
-Ad esempio, se si desidera aggiornare cinque dll con indirizzo SMTP e `dl1@contoso.com` , e , eseguire il comando `dl2@contoso.com` `dl3@contoso.com` `dl4@contoso.com` `dl5@contoso.com` seguente:
+Ad esempio, se si desidera aggiornare cinque DLL con indirizzo SMTP `dl1@contoso.com` e , e , eseguire il comando `dl2@contoso.com` `dl3@contoso.com` `dl4@contoso.com` `dl5@contoso.com` seguente:
 
 `Upgrade-DistributionGroup -DlIdentities dl1@contoso.com, dl2@contoso.com, dl3@contoso.com, dl4@contoso.com, dl5@contoso.com`
 
@@ -103,7 +103,7 @@ Esistono due modi per aggiornare tutte le DLL idonee.
 > [!NOTE]
 > Il cmdlet Upgrade-DistributionGroup non riceve dati dalla pipeline, per questo motivo è necessario utilizzare l'operatore "foreach-object" per la corretta {} esecuzione.
 
-1. Ottenere le DLL idonee nel tenant e aggiornarle usando il comando di aggiornamento:
+1. Ottieni le DLL idonee nel tenant e aggiornale usando il comando di aggiornamento:
 
 ```PowerShell
 Get-EligibleDistributionGroupForMigration | Foreach-Object{
@@ -111,7 +111,7 @@ Get-EligibleDistributionGroupForMigration | Foreach-Object{
 }
 ```
 
-2. Ottieni l'elenco di tutte le DLL e aggiorna solo le DLL idonee:
+2. Ottenere l'elenco di tutte le DLL e aggiornare solo le DLL idonee:
 
 ```PowerShell
 Get-DistributionGroup| Foreach-Object{
@@ -129,24 +129,24 @@ Get-DistributionGroup| Foreach-Object{
 |:-----|:-----|
 |Lista di distribuzione gestita in locale  <br/> |No  <br/> |
 |Liste di distribuzione annidate. La lista di distribuzione ha gruppi figlio o è membro di un altro gruppo.  <br/> |No  <br/> |
-|Liste di distribuzione con **membro RecipientTypeDetails** diverso **da UserMailbox**, **SharedMailbox**, **TeamMailbox**, **MailUser**  <br/> |No  <br/> |
+|Liste di distribuzione con **membro RecipientTypeDetails** diverso **da UserMailbox,** **SharedMailbox,** **TeamMailbox,** **MailUser**  <br/> |No  <br/> |
 |Lista di distribuzione che ha più di 100 proprietari  <br/> |No  <br/> |
 |Lista di distribuzione che ha solo membri, ma nessun proprietario  <br/> |No  <br/> |
 |Lista di distribuzione che ha un alias contenente caratteri speciali  <br/> |No  <br/> |
 |Lista di distribuzione configurata come indirizzo di inoltro per la cassetta postale condivisa  <br/> |No  <br/> |
-|Se la dll fa parte della restrizione **mittente** in un'altra DL.  <br/> |No  <br/> |
+|Se la dll fa parte di **Sender Restriction** in un'altra DL.  <br/> |No  <br/> |
 |Gruppi di sicurezza  <br/> |No  <br/> |
 |Liste di distribuzione dinamiche  <br/> |No  <br/> |
 |Liste di distribuzione convertite in **RoomLists**  <br/> |No  <br/> |
 |Liste di distribuzione **in cui MemberJoinRestriction** e/o **MemberDepartRestriction** è **Closed**  <br/> |No  <br/> |
 
-### <a name="check-which-dls-are-eligible-for-upgrade"></a>Verificare quali dll sono idonee per l'aggiornamento
+### <a name="check-which-dls-are-eligible-for-upgrade"></a>Verificare quali DLL sono idonee per l'aggiornamento
 
-Se vuoi verificare se una DL è idonea o meno, puoi eseguire il comando seguente:
+Se si desidera verificare se una dll è idonea o meno, è possibile eseguire il comando seguente:
 
 `Get-DistributionGroup \<DL SMTP address\> | Get-EligibleDistributionGroupForMigration`
 
-Se si desidera verificare quali dll sono idonee per l'aggiornamento, eseguire il comando seguente:
+Se si desidera verificare quali DLL sono idonee per l'aggiornamento, eseguire il comando seguente:
 
 `Get-EligibleDistributionGroupForMigration`
 
@@ -156,9 +156,9 @@ Persone con diritti di amministratore globale o amministratore di Exchange.
 
 ### <a name="why-is-the-contact-card-still-showing-a-distribution-list-what-should-i-do-to-prevent-a-upgraded-distribution-list-from-showing-up-in-my-auto-suggest-list"></a>Perché la scheda contatto mostra ancora una lista di distribuzione? Come si impedisce la visualizzazione di una lista di distribuzione aggiornata nell'elenco dei suggerimenti automatici?
 
-- For Outlook: When someone tries to send an email in Outlook by typing the Microsoft 365 group name after migration, the recipient will be resolved as the distribution list instead of the group. La scheda contatto del destinatario sarà la scheda contatto degli elenchi di distribuzione. Questo dipende dalla cache dei destinatari o dalla cache dei nomi alternativi in Outlook. Il messaggio di posta elettronica verrà inviato correttamente al gruppo, ma potrebbe causare confusione al mittente.<br/>È possibile eseguire i passaggi descritti in questo argomento, [Informazioni relative all'elenco di completamento automatico di Outlook](https://go.microsoft.com/fwlink/?LinkID=798736) per reimpostare la cache e risolvere il problema.
+- For Outlook: When someone tries to send an email in Outlook by typing the Microsoft 365 group name after migration, the recipient will be resolved as the distribution list instead of the group. La scheda contatto del destinatario sarà la scheda contatto degli elenchi di distribuzione. Questo dipende dalla cache dei destinatari o dalla cache dei nomi alternativi in Outlook. Il messaggio di posta elettronica verrà inviato correttamente al gruppo, ma potrebbe causare confusione al mittente.<br/>È possibile eseguire i passaggi descritti in questo argomento, [Informazioni relative all'elenco di completamento automatico di Outlook](/outlook/troubleshoot/contacts/information-about-the-outlook-autocomplete-list) per reimpostare la cache e risolvere il problema.
 
-- Per Outlook sul Web: in caso di Outlook sul Web, il destinatario della lista di distribuzione rimarrà nella cache. È possibile seguire la procedura [descritta](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58) in Rimuovere il nome suggerito o l'indirizzo di posta elettronica dall'elenco di completamento automatico per aggiornare la cache per visualizzare la scheda contatto del gruppo.
+- Per Outlook sul Web: in caso di Outlook sul Web, il destinatario della lista di distribuzione rimarrà ancora nella cache. È possibile seguire la procedura descritta in [Rimuovere](https://support.microsoft.com/office/9E1419D9-E88F-445B-B07F-F558B8A37C58) il nome suggerito o l'indirizzo di posta elettronica dall'elenco di completamento automatico per aggiornare la cache per visualizzare la scheda contatto del gruppo.
 
 ### <a name="do-new-group-members-get-a-welcome-email-in-their-inbox"></a>I nuovi membri del gruppo ricevono un messaggio di posta elettronica di benvenuto nella propria posta in arrivo?
 
@@ -166,11 +166,11 @@ No. L'impostazione per abilitare i messaggi di benvenuto è impostata su false p
 
 ### <a name="what-if-one-or-some-of-the-dls-are-not-upgraded"></a>Cosa succede se una o alcune delle DLL non vengono aggiornate?
 
-Esistono alcuni casi in cui, sebbene DL sia idoneo ma non possa essere aggiornato. La dll non viene aggiornata e rimane come DL.
+Esistono alcuni casi in cui DL è idoneo ma non può essere aggiornato. La dll non viene aggiornata e rimane come DL.
 
-- Se l'amministratore ha applicato i criteri degli indirizzi di posta elettronica di gruppo per i gruppi in un'organizzazione e tenta di aggiornare le DLL che non soddisfano i criteri, la dll non viene aggiornata 
+- Se l'amministratore ha applicato criteri dell'indirizzo di posta elettronica di gruppo per i gruppi di un'organizzazione e tenta di aggiornare le DLL che non soddisfano i criteri, la dll non viene aggiornata 
 
-- DLs with **MemberJoinRestriction** or **MemberDepartRestriction** set to **Closed**, could not be upgraded
+- Non è stato possibile aggiornare le DLL con **MemberJoinRestriction** o **MemberDepartRestriction** impostato su **Closed**.
 
 ### <a name="what-happens-to-the-dl-if-the-upgrade-from-eac-fails"></a>Che cosa succede alla lista di distribuzione se l'aggiornamento dall'interfaccia di amministrazione di Exchange non riesce?
 

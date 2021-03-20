@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Per informazioni su come eseguire il pilota della funzionalità di posta elettronica dal dominio personalizzato a una cassetta postale di Microsoft 365 usando solo due account di test.
-ms.openlocfilehash: 6cc5b1163f666af4bd13047ab3b1fda7fd747b5f
-ms.sourcegitcommit: 849b365bd3eaa9f3c3a9ef9f5973ef81af9156fa
+ms.openlocfilehash: 019f1786756a036132f95fd5e8ef8a1d42cd515b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/16/2020
-ms.locfileid: "49688218"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914715"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>Eseguire il pilota Microsoft 365 dal dominio personalizzato
 
@@ -32,7 +32,7 @@ ms.locfileid: "49688218"
 
 - È necessario gestire i record DNS di Microsoft 365 presso il proprio provider di hosting DNS, piuttosto che Microsoft 365 li gestisca per tuo conto.
 
-    Per altre informazioni, vedere [Aggiungere record DNS per connettere il dominio](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+    Per altre informazioni, vedere [Aggiungere record DNS per connettere il dominio](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
 - Le informazioni sulla disponibilità per gli utenti dell'altro server di posta elettronica non sono disponibili.
 
@@ -115,22 +115,22 @@ Esistono due procedure:
 
 Assicurarsi di aver completato le operazioni seguenti in Microsoft 365 o Office 365:
 
-1. Per configurare i connettori, è necessario ricevere le autorizzazioni prima di iniziare. Per sapere quali sono le autorizzazioni necessarie, vedere la voce relativa ai connettori Microsoft 365 e Office 365 nell'argomento[Autorizzazioni di funzionalità in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/feature-permissions-in-eop).
+1. Per configurare i connettori, è necessario ricevere le autorizzazioni prima di iniziare. Per sapere quali sono le autorizzazioni necessarie, vedere la voce relativa ai connettori Microsoft 365 e Office 365 nell'argomento[Autorizzazioni di funzionalità in EOP](../../security/office-365-security/feature-permissions-in-eop.md).
 
 2. Se si desidera che EOP o Exchange Online inoltrino i messaggi dai server di posta elettronica a Internet, scegliere tra:
 
-   - Usare un certificato configurato con un nome di oggetto che corrisponda a un dominio accettato in Microsoft 365 o Office 365. È consigliabile che il nome comune del certificato o il nome alternativo dell'oggetto corrisponda al dominio SMTP primario per l'organizzazione. Per informazioni dettagliate, vedere [Prerequisiti per l'ambiente di posta elettronica locale](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#prerequisites-for-your-on-premises-email-environment).
+   - Usare un certificato configurato con un nome di oggetto che corrisponda a un dominio accettato in Microsoft 365 o Office 365. È consigliabile che il nome comune del certificato o il nome alternativo dell'oggetto corrisponda al dominio SMTP primario per l'organizzazione. Per informazioni dettagliate, vedere [Prerequisiti per l'ambiente di posta elettronica locale](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/set-up-connectors-to-route-mail#prerequisites-for-your-on-premises-email-environment).
 
    -OPPURE-
 
    - Verificare che tutti i domini mittente dell'organizzazione e i sottodomini siano configurati come domini accettati in Microsoft 365 o Office 365.
 
-   Per altre informazioni su come definire i domini accettati, vedere [Gestione dei domini accettati in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) e [Abilitazione del flusso di posta per i sottodomini in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains).
+   Per altre informazioni su come definire i domini accettati, vedere [Gestione dei domini accettati in Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) e [Abilitazione del flusso di posta per i sottodomini in Exchange Online](/exchange/mail-flow-best-practices/manage-accepted-domains/enable-mail-flow-for-subdomains).
 
-3. Decidere se si desidera usare le regole del flusso di posta (conosciute anche come regole di trasporto) o i nomi di dominio per recapitare la posta da Microsoft 365 o Office 365 ai server di posta elettronica. La maggior parte delle aziende sceglie di recapitare la posta per tutti i domini accettati. Per ulteriori informazioni, vedere [Scenario: Routing condizionale della posta in Exchange Online](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/conditional-mail-routing).
+3. Decidere se si desidera usare le regole del flusso di posta (conosciute anche come regole di trasporto) o i nomi di dominio per recapitare la posta da Microsoft 365 o Office 365 ai server di posta elettronica. La maggior parte delle aziende sceglie di recapitare la posta per tutti i domini accettati. Per ulteriori informazioni, vedere [Scenario: Routing condizionale della posta in Exchange Online](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/conditional-mail-routing).
 
 > [!NOTE]
-> È possibile configurare le regole del flusso di posta come descritto in [Azioni relative alla regola del flusso di posta in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions) Ad esempio, è possibile utilizzare le regole del flusso di posta con i connettori se la posta è attualmente diretta tramite liste di distribuzione a più siti.
+> È possibile configurare le regole del flusso di posta come descritto in [Azioni relative alla regola del flusso di posta in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions) Ad esempio, è possibile utilizzare le regole del flusso di posta con i connettori se la posta è attualmente diretta tramite liste di distribuzione a più siti.
 
 ### <a name="2-set-up-a-connector-from-microsoft-365-or-office-365-to-your-email-server"></a>2. Configurare un connettore da Microsoft 365 o Office 365 al server di posta elettronica
 
@@ -140,13 +140,13 @@ Configurare i connettori usando la procedura guidata.
 
 Per avviare la procedura guidata, fare clic sul simbolo più **+**. Nella prima schermata, scegliere **da** Office 365 e **per** il server di posta elettronica dell'organizzazione.
 
-Fare clic su **Successivo** e seguire le istruzioni della procedura guidata. Fare clic sui collegamenti **Guida** o **Ulteriori informazioni** se si necessita di maggiori delucidazioni. La procedura guidata mostrerà le operazioni da eseguire per la configurazione. Al termine, verificare che il connettore venga convalidato. Se il connettore non viene convalidato, fare doppio clic sul messaggio visualizzato per ottenere ulteriori informazioni e vedere [Convalidare i connettori](https://docs.microsoft.com/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors) per ricevere assistenza per la risoluzione dei problemi.
+Fare clic su **Successivo** e seguire le istruzioni della procedura guidata. Fare clic sui collegamenti **Guida** o **Ulteriori informazioni** se si necessita di maggiori delucidazioni. La procedura guidata mostrerà le operazioni da eseguire per la configurazione. Al termine, verificare che il connettore venga convalidato. Se il connettore non viene convalidato, fare doppio clic sul messaggio visualizzato per ottenere ulteriori informazioni e vedere [Convalidare i connettori](/exchange/mail-flow-best-practices/use-connectors-to-configure-mail-flow/validate-connectors) per ricevere assistenza per la risoluzione dei problemi.
 
 
 
 ### <a name="step-7-update-dns-records-at-your-dns-hosting-provider"></a>Passaggio 7: Aggiornare i record DNS presso il provider di hosting DNS
 
-Accedere al sito Web del proprio provider di hosting DNS e seguire le istruzioni in [Aggiungere i record DNS per connettere il dominio](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/create-dns-records-at-any-dns-hosting-provider).
+Accedere al sito Web del proprio provider di hosting DNS e seguire le istruzioni in [Aggiungere i record DNS per connettere il dominio](../get-help-with-domains/create-dns-records-at-any-dns-hosting-provider.md).
 
 **Fare le seguenti due eccezioni:**
 
@@ -190,4 +190,3 @@ Al termine di questo passaggio, tutti i messaggi di posta elettronica inviati a 
 Dal momento che si stanno spostando solo due utenti di test e gli utenti A e B usano Outlook, è possibile spostare la posta elettronica aprendo il precedente file .PST nel nuovo profilo di Outlook e copiando i messaggi, gli elementi del calendario, i contatti e così via. Per altre informazioni, vedere [Importare posta elettronica, contatti e calendario da un file .pst di Outlook](https://support.microsoft.com/office/import-email-contacts-and-calendar-from-an-outlook-pst-file-431a8e9a-f99f-4d5f-ae48-ded54b3440ac).
 
 Dopo l'importazione nelle posizioni appropriate nella cassetta postale di Microsoft 365, è possibile accedere agli elementi ovunque e da qualsiasi dispositivo.
-

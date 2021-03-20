@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Panoramica del punteggio della produttività Microsoft.
-ms.openlocfilehash: 72f9bcfb273912629744ec25ad9c0be720e76081
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: d818bd766f76f3df6c67a740d6ad1994a2be66de
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838426"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914583"
 ---
 # <a name="microsoft-productivity-score"></a>Punteggio della produttività Microsoft 
 
@@ -44,7 +44,7 @@ Forniamo metriche, approfondimenti e consigli in due aree:
 
 - **Esperienze con la tecnologia:** l'organizzazione dipende da una tecnologia affidabile con prestazioni elevate, nonché dall'uso efficiente di Microsoft 365. [L'analisi degli endpoint](https://aka.ms/endpointanalytics) consente di comprendere in che modo l'organizzazione può essere influenzata da problemi di prestazioni e integrità con l'hardware e il software. L'integrità di Microsoft  365 Apps consente di comprendere se i dispositivi nell'organizzazione eseguono Microsoft 365 Apps sui canali consigliati.
 
-Per una panoramica e dettagli sui prerequisiti, vedere [Informazioni sull'analisi degli endpoint](https://docs.microsoft.com/mem/analytics/overview). Per altre informazioni sugli approfondimenti della connettività di rete di Microsoft 365, vedere [Panoramica sulla connettività di rete](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-networking-overview).
+Per una panoramica e dettagli sui prerequisiti, vedere [Informazioni sull'analisi degli endpoint](/mem/analytics/overview). Per altre informazioni sugli approfondimenti della connettività di rete di Microsoft 365, vedere [Panoramica sulla connettività di rete](../../enterprise/microsoft-365-networking-overview.md).
   
 
 ## <a name="how-the-score-is-calculated"></a>Come viene calcolato il punteggio
@@ -74,7 +74,8 @@ Il punteggio dell'organizzazione viene aggiornato ogni giorno e riflette le azio
 
 ## <a name="prerequisites"></a>Prerequisiti 
 
-I dati sulle esperienze degli utente richiedono un abbonamento a Microsoft 365 for business o Office 365 per aziende. Per i dati di analisi degli endpoint per il tenant è necessario aggiungere Microsoft Intune all'abbonamento. Intune ti consente di proteggere i dati dell'organizzazione con la gestione di dispositivi e app. Dopo aver aggiunto Intune, è possibile attivare la funzione analisi endpoint nell'esperienza di Intune. Altre informazioni su [Microsoft Intune](https://docs.microsoft.com/mem/intune/). 
+I dati sulle esperienze degli utente richiedono un abbonamento a Microsoft 365 for business o Office 365 per aziende. Per i dati di analisi degli endpoint per il tenant è necessario aggiungere Microsoft Intune all'abbonamento. Intune ti consente di proteggere i dati dell'organizzazione con la gestione di dispositivi e app. Dopo aver aggiunto Intune, è possibile attivare la funzione analisi endpoint nell'esperienza di Intune. Altre informazioni su [Microsoft Intune](/mem/intune/). 
+
 > [!NOTE]
 > Non è necessaria una licenza per Workplace Analytics per ottenere le funzionalità del punteggio della produttività.
 
@@ -129,7 +130,7 @@ Le pagine dei dettagli sono:
 - [Mobilità: esperienze delle persone](mobility.md)
 - [Lavoro in team: esperienze delle persone](teamwork.md)
 - [Integrità Microsoft 365 Apps: esperienze con la tecnologia](apps-health.md)
-- [Analisi endpoint](https://docs.microsoft.com/mem/analytics/productivity-score)
+- [Analisi endpoint](/mem/analytics/productivity-score)
 
 ## <a name="business-continuity-special-report"></a>Report speciale continuità aziendale
 
@@ -143,12 +144,12 @@ Questo report aiuta le organizzazioni a capire:
 
 - se le riunioni da remoto supportano un processo decisionale efficace.
 
-[Altre informazioni sul report continuità aziendale](https://aka.ms/bcrps)
+[Altre informazioni sul report continuità aziendale](/Workplace-Analytics/tutorials/bcrps)
 
-[Altre informazioni su Microsoft Graph](https://docs.microsoft.com/graph/).
+[Altre informazioni su Microsoft Graph](/graph/).
 
 > [!NOTE]
-> Sono disponibili dati analitici sulla produttività da [MyAnalytics dashboard](https://docs.microsoft.com/workplace-analytics/myanalytics/use/dashboard-2).
+> Sono disponibili dati analitici sulla produttività da [MyAnalytics dashboard](/workplace-analytics/myanalytics/use/dashboard-2).
 
 
 ## <a name="we-want-to-hear-from-you"></a>L'opinione degli utenti è importante

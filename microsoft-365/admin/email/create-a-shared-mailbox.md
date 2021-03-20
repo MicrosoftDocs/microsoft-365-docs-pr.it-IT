@@ -23,17 +23,17 @@ search.appverid:
 - MOE150
 ms.assetid: 871a246d-3acd-4bba-948e-5de8be0544c9
 description: Creare una cassetta postale condivisa consente di affidare a più utenti all'interno dell'azienda la responsabilità di leggere e rispondere ai messaggi di posta elettronica inviati a un unico indirizzo.
-ms.openlocfilehash: d71e33aa0a04bd52f707038ac31e98bef68f27b0
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 004473b329b14be9287f249b1d640c3b0803412a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287234"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915879"
 ---
 # <a name="create-a-shared-mailbox"></a>Creare una cassetta postale condivisa 
 
 > [!NOTE]
-> Se l'organizzazione utilizza un ambiente Exchange ibrido, è necessario ricorrere all'interfaccia di amministrazione di Exchange per creare e gestire cassette postali condivise. Vedere [Creare cassette postali condivise nell'interfaccia di amministrazione di Exchange](https://docs.microsoft.com/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?view=exchserver-2019&preserve-view=true.)<br><br>
+> Se l'organizzazione utilizza un ambiente Exchange ibrido, è necessario ricorrere all'interfaccia di amministrazione di Exchange per creare e gestire cassette postali condivise. Vedere [Creare cassette postali condivise nell'interfaccia di amministrazione di Exchange](/Exchange/collaboration/shared-mailboxes/create-shared-mailboxes?preserve-view=true.&view=exchserver-2019)<br><br>
 > Se non si è sicuri di dover creare una cassetta postale condivisa o un gruppo di Microsoft 365 per Outlook, vedere [Confrontare i gruppi](../create-groups/compare-groups.md) per indicazioni. Notare che al momento non è possibile eseguire la migrazione di una cassetta postale condivisa a un gruppo di Microsoft 365. Se si vuole ottenere questa possibilità, inviare commenti e suggerimenti [votando qui](https://go.microsoft.com/fwlink/?linkid=871518).
 
 Le cassette postali condivise consentono a un gruppo di persone di monitorare e inviare posta elettronica da un indirizzo di posta elettronica comune, come info@contoso.com. Quando un utente del gruppo risponde a un messaggio inviato alla cassetta postale condivisa, il messaggio di risposta sembrerà inviato dalla cassetta postale condivisa, non dal singolo utente.
@@ -153,13 +153,13 @@ Ma cosa succede se un amministratore reimposta semplicemente la password dell'ac
 4. Nel riquadro a comparsa **Modifica stato di accesso**, verificare che l'opzione Blocca l'accesso dell'utente sia selezionata, selezionare **Salva** e quindi **Chiudi**.
 ::: moniker-end
 
-Per istruzioni su come bloccare l'accesso per gli account con Azure AD PowerShell (anche per molti account contemporaneamente), vedere [Bloccare gli account utente con Office 365 PowerShell](https://docs.microsoft.com/microsoft-365/enterprise/block-user-accounts-with-microsoft-365-powershell).
+Per istruzioni su come bloccare l'accesso per gli account con Azure AD PowerShell (anche per molti account contemporaneamente), vedere [Bloccare gli account utente con Office 365 PowerShell](../../enterprise/block-user-accounts-with-microsoft-365-powershell.md).
 
 ## <a name="add-the-shared-mailbox-to-outlook"></a>Aggiungere la cassetta postale condivisa in Outlook
 
 Se nell'azienda è abilitata l'impostazione AutoMapping (per impostazione predefinita, è abilitata nella maggior parte dei casi), la cassetta postale condivisa verrà visualizzata nell'app Outlook degli utenti automaticamente dopo la chiusura e il riavvio di Outlook. 
 
-L'opzione AutoMapping viene impostata sulla cassetta postale dell'utente, non su quella condivisa.   Questo significa che se si cerca di usare un gruppo di sicurezza per gestire le autorizzazioni di accesso alla cassetta postale condivisa, AutoMapping non funziona. Se quindi si vuole usare questa impostazione, occorre assegnare le autorizzazioni in modo esplicito. L’opzione AutoMapping è attivata per impostazione predefinita. Per informazioni su come disattivarla, vedere [Rimuovere AutoMapping per una cassetta postale condivisa](https://docs.microsoft.com/office365/troubleshoot/administration/remove-automapping-for-shared-mailbox).
+L'opzione AutoMapping viene impostata sulla cassetta postale dell'utente, non su quella condivisa.   Questo significa che se si cerca di usare un gruppo di sicurezza per gestire le autorizzazioni di accesso alla cassetta postale condivisa, AutoMapping non funziona. Se quindi si vuole usare questa impostazione, occorre assegnare le autorizzazioni in modo esplicito. L’opzione AutoMapping è attivata per impostazione predefinita. Per informazioni su come disattivarla, vedere [Rimuovere AutoMapping per una cassetta postale condivisa](/office365/troubleshoot/administration/remove-automapping-for-shared-mailbox).
 
 Per ulteriori informazioni sulle cassette postali condivise in Outlook, vedere:
 
@@ -209,5 +209,3 @@ Dopo aver creato la cassetta postale condivisa, viene creato automaticamente un 
 [Rimuovere una licenza da una cassetta postale condivisa](remove-license-from-shared-mailbox.md)
 
 [Risolvere i problemi relativi alle cassette postali condivise](resolve-issues-with-shared-mailboxes.md)
-
-

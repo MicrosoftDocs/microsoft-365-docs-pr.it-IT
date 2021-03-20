@@ -20,32 +20,32 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determinare se il tenant e gli utenti soddisfano i requisiti, in modo da poter utilizzare la distribuzione centralizzata per distribuire i componenti aggiuntivi di Office.
-ms.openlocfilehash: 04c5f9090ca788f00f2d17d3af59e8022195e9be
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: c9f2879e989085042758cc1c5385bea45427e7ff
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519366"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915459"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinare se la distribuzione centralizzata dei componenti aggiuntivi funziona per l'organizzazione
 
-La distribuzione centralizzata è il modo consigliato e più ricco di funzionalità per la maggior parte dei clienti di distribuire componenti aggiuntivi di Office a utenti e gruppi all'interno dell'organizzazione. Gli amministratori possono usare queste indicazioni per determinare se l'organizzazione e gli utenti soddisfano i requisiti in modo da poter usare la distribuzione centralizzata.
+La distribuzione centralizzata è il modo consigliato e più ricco di funzionalità per la maggior parte dei clienti di distribuire componenti aggiuntivi di Office a utenti e gruppi all'interno dell'organizzazione. Se sei un amministratore, usa queste indicazioni per determinare se l'organizzazione e gli utenti soddisfano i requisiti in modo da poter usare la distribuzione centralizzata.
 
 La distribuzione centralizzata offre i vantaggi seguenti:
   
 - Un amministratore globale può assegnare un componente aggiuntivo direttamente a un utente, a più utenti tramite un gruppo o a tutti gli utenti dell'organizzazione.
     
-- All'avvio dell'applicazione di Office pertinente, il componente aggiuntivo viene scaricato automaticamente. Se il componente aggiuntivo supporta i comandi del componente aggiuntivo, il componente aggiuntivo verrà visualizzato automaticamente nella barra multifunzione all'interno dell'applicazione di Office.
+- All'avvio dell'applicazione di Office rilevante, il componente aggiuntivo viene scaricato automaticamente. Se il componente aggiuntivo supporta i comandi del componente aggiuntivo, il componente aggiuntivo verrà visualizzato automaticamente nella barra multifunzione all'interno dell'applicazione di Office.
     
 - I componenti aggiuntivi non vengono più visualizzati per gli utenti se l'amministratore disattiva o elimina il componente aggiuntivo oppure se l'utente viene rimosso da Azure Active Directory o da un gruppo a cui è assegnato il componente aggiuntivo.
 
-La distribuzione centralizzata supporta tre piattaforme desktop windows, Mac e app di Office online. La distribuzione centralizzata supporta anche iOS e Android (solo componenti aggiuntivi per Outlook Mobile).
+La distribuzione centralizzata supporta tre piattaforme desktop Windows, Mac e app di Office online. La distribuzione centralizzata supporta anche iOS e Android (solo componenti aggiuntivi per Outlook Mobile).
 
 La visualizzazione di un componente aggiuntivo per tutti gli utenti può richiedere fino a 24 ore.
   
 ## <a name="requirements"></a>Requisiti
 
-La distribuzione centralizzata dei componenti aggiuntivi richiede che gli utenti utilizzino SKU Di Microsoft 365 Enterprise: E3/E5/F3 o SKU aziendali: Business Basic, Business Standard, Business Premium (e hanno effettuato l'accesso a Office con il proprio ID organizzazione) e che le cassette postali di Exchange Online e Di Exchange Online siano attive. La directory di sottoscrizione deve essere in o federata in Azure Active Directory.
+Per la distribuzione centralizzata dei componenti aggiuntivi è necessario che gli utenti utilizzino SKU Di Microsoft 365 Enterprise: E3/E5/F3 o SKU aziendali: Business Basic, Business Standard, Business Premium (e sono connessi a Office utilizzando l'ID dell'organizzazione) e disporre di cassette postali di Exchange Online e di Exchange Online attive. La directory di sottoscrizione deve essere in o federata in Azure Active Directory.
 È possibile visualizzare i requisiti specifici per Office ed Exchange di seguito oppure utilizzare Verifica compatibilità [distribuzione centralizzata.](#centralized-deployment-compatibility-checker)
 
 La distribuzione centralizzata non supporta quanto segue:
@@ -70,8 +70,8 @@ La distribuzione centralizzata non supporta quanto segue:
   - Versione 16.0.4494.1000 o successiva di Office Professional Plus 2016 (MSI) o Office Standard 2016 (MSI)\*
   - Versione 15.0.4937.1000 o successiva di Office Professional Plus 2013 (MSI) o Office Standard 2013 (MSI)\*
   - Versione 16.0.9318.1000 o successiva di Office 2016 per Mac 
-- Versione 2.75.0 o successiva di Outlook Mobile per iOS 
-- Versione 2.2.145 o successiva di Outlook Mobile per Android 
+- Versione 2.75.0 o successiva di Outlook mobile per iOS 
+- Versione 2.2.145 o successiva di Outlook mobile per Android 
     
     *Le versioni MSI di Outlook mostrano i componenti aggiuntivi installati dall'amministratore nella barra multifunzione di Outlook appropriata, non nella sezione "Componenti aggiuntivi".
 
@@ -79,18 +79,18 @@ La distribuzione centralizzata non supporta quanto segue:
 
 Microsoft Exchange archivia i manifesti dei componenti aggiuntivi all'interno del tenant dell'organizzazione. L'amministratore che distribuisce i componenti aggiuntivi e gli utenti che ricevono tali componenti aggiuntivi devono essere in una versione di Exchange Online che supporta l'autenticazione OAuth.
   
-Contattare l'amministratore di Exchange dell'organizzazione per sapere quale configurazione è in uso. La connettività OAuth per ogni utente può essere verificata usando il cmdlet di PowerShell [Test-OAuthConnectivity](https://go.microsoft.com/fwlink/p/?linkid=846351). 
+Contattare l'amministratore di Exchange dell'organizzazione per sapere quale configurazione è in uso. La connettività OAuth per ogni utente può essere verificata usando il cmdlet di PowerShell [Test-OAuthConnectivity](/powershell/module/exchange/test-oauthconnectivity). 
 
 
 ### <a name="centralized-deployment-compatibility-checker"></a>Verifica compatibilità distribuzione centralizzata
 
-Con Verifica compatibilità distribuzione centralizzata è possibile verificare se gli utenti del tenant sono impostati per l'utilizzo della distribuzione centralizzata per Word, Excel e PowerPoint. Verifica compatibilità non è necessario per il supporto di Outlook. Scaricare Verifica compatibilità [qui](https://aka.ms/officeaddindeploymentorgcompatibilitychecker).
+Tramite Verifica compatibilità distribuzione centralizzata è possibile verificare se gli utenti del tenant sono impostati per l'utilizzo della distribuzione centralizzata per Word, Excel e PowerPoint. Verifica compatibilità non è necessario per il supporto di Outlook. Scaricare Verifica compatibilità [qui](https://aka.ms/officeaddindeploymentorgcompatibilitychecker).
   
 #### <a name="run-the-compatibility-checker"></a>Eseguire Verifica compatibilità
   
-1. Avvia una finestra di PowerShell.exe con privilegi elevati.
+1. Avviare una finestra PowerShell.exe elevata.
     
-2. Eseguire il comando riportato di seguito:
+2. Eseguire il comando qui riportato:
 
    ```powershell
    Import-Module O365CompatibilityChecker
@@ -101,7 +101,7 @@ Con Verifica compatibilità distribuzione centralizzata è possibile verificare 
    ```powershell
    Invoke-CompatibilityCheck
    ```
-   Questo comando richiede di specificare  *_TenantDomain_* (ad esempio, *TailspinToysIncorporated.onmicrosoft. </span> com*) e  *_le credenziali TenantAdmin_* (usare le credenziali di amministratore globale) e quindi richiede il consenso.
+   Questo comando richiede di specificare  *_TenantDomain,_* ad esempio *TailspinToysIncorporated.onmicrosoft. </span> com*)  *_e Le credenziali TenantAdmin_* (usare le credenziali di amministratore globale) e quindi richiede il consenso.
     
    > [!NOTE]
    > A seconda del numero di utenti nel tenant, la verifica potrebbe richiedere minuti o ore. 
@@ -125,12 +125,12 @@ Al termine dell'esecuzione dello strumento, viene generato un file di output in 
   
 ## <a name="user-and-group-assignments"></a>Assegnazioni di utenti e gruppi
 
-La funzionalità di distribuzione centralizzata attualmente supporta la maggior parte dei gruppi supportati da Azure Active Directory, inclusi i gruppi di Microsoft 365, le liste di distribuzione e i gruppi di sicurezza.
+La funzionalità distribuzione centralizzata attualmente supporta la maggior parte dei gruppi supportati da Azure Active Directory, inclusi i gruppi di Microsoft 365, le liste di distribuzione e i gruppi di sicurezza.
   
 > [!NOTE]
 > I gruppi di sicurezza non abilitati alla posta elettronica non sono attualmente supportati. 
   
-La distribuzione centralizzata supporta le assegnazioni a singoli utenti, gruppi e tutti gli utenti del tenant. La distribuzione centralizzata supporta gli utenti in gruppi di primo livello o in gruppi senza gruppi padre, ma non gli utenti in gruppi annidati o in gruppi con gruppi padre.
+La distribuzione centralizzata supporta le assegnazioni a singoli utenti, gruppi e a tutti gli utenti del tenant. La distribuzione centralizzata supporta gli utenti in gruppi di primo livello o in gruppi senza gruppi padre, ma non gli utenti in gruppi annidati o in gruppi con gruppi padre.
    
 Esaminare l'esempio seguente, in cui Valeria, Pupetta e il gruppo Reparto vendite vengono assegnati a un componente aggiuntivo. Reparto vendite costa occidentale è un gruppo annidato, quindi Gianni e Albertino non sono assegnati a un componente aggiuntivo.
   
@@ -147,14 +147,13 @@ Il modo più semplice per rilevare se un gruppo contiene gruppi annidati consist
   
 ![Scheda Appartenenza della scheda contatto di Outlook](../../media/a9f9b6ab-9c19-4822-9e3d-414ca068c42f.png)
   
-In alternativa, è possibile usare l'API di Azure Active Directory Graph per eseguire query per trovare l'elenco dei gruppi all'interno di un gruppo. Per altre informazioni, vedere [Operazioni su gruppi | Riferimento API Graph](https://go.microsoft.com/fwlink/p/?linkid=846342).
+In alternativa, è possibile usare l'API di Azure Active Directory Graph per eseguire query per trovare l'elenco dei gruppi all'interno di un gruppo. Per altre informazioni, vedere [Operazioni su gruppi | Riferimento API Graph](/previous-versions/azure/ad/graph/api/groups-operations).
   
 ### <a name="contacting-microsoft-for-support"></a>Contattare Microsoft per assistenza
 
-Se si verificano problemi durante il caricamento del componente aggiuntivo durante l'uso delle app di Office per il Web (Word, Excel e così via), distribuite centralmente, potrebbe essere necessario contattare il supporto tecnico Microsoft[(](../contact-support-for-business-products.md)informazioni su come ). Fornire le informazioni seguenti sull'ambiente Microsoft 365 nel ticket di supporto.
+Se l'utente o gli utenti riscontrano problemi durante il caricamento del componente aggiuntivo durante l'utilizzo delle app di Office per il Web (Word, Excel e così via), che sono state distribuite centralmente, potrebbe essere necessario contattare il supporto Tecnico Microsoft[(](../contact-support-for-business-products.md)informazioni su come ). Fornisci le informazioni seguenti sull'ambiente Microsoft 365 nel ticket di supporto.
   
 |**Piattaforma**|**Informazioni di debug**|
 |:-----|:-----|
-|Ufficio  <br/> | Log di Charles/Fiddler  <br/>  ID tenant ( [informazioni](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id.aspx))  <br/>  CorrelationID. Visualizzare l'origine di una delle pagine di Office e cercare il valore dell'ID correlazione e inviarlo al supporto:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
+|Ufficio  <br/> | Log di Charles/Fiddler  <br/>  ID tenant ( [informazioni](/onedrive/find-your-office-365-tenant-id.aspx))  <br/>  CorrelationID. Visualizzare l'origine di una delle pagine di Office e cercare il valore id correlazione e inviarlo al supporto:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |Rich client (Windows, Mac)  <br/> | Log di Charles/Fiddler  <br/>  Numeri di build dell'app client (preferibilmente come screenshot da **File/Account)**  <br/> |
-   

@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: ae950c9e-e8d9-4108-b0cb-449156998580
 description: Informazioni su come gestire i propri record DNS o consentire a Microsoft di gestire i record DNS.
-ms.openlocfilehash: ddf3b7faf7ac336b2d7caf3b7d35d9a4f101b122
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: f3c3710320c62d20c6a16818cd138c9b686d2781
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126360"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915567"
 ---
 # <a name="set-up-your-domain-host-specific-instructions"></a>Configurare il dominio (istruzioni specifiche per l'ost)
 
@@ -35,7 +35,7 @@ Per iniziare a usare un dominio personalizzato (contoso.com) con Microsoft 365, 
   
 È possibile aggiungere e gestire i record DNS utilizzando gli strumenti di amministrazione dell'host di dominio oppure assegnare a Microsoft il controllo dei record di dominio e verranno impostati automaticamente.
   
-Selezionare l'host di dominio seguente per la procedura esatta. Se non si è sicuri di chi sia l'host, vedere [Trovare il registrar.](find-your-domain-registrar.md)
+Seleziona l'host di dominio di seguito per la procedura esatta. Se non si è certi di chi sia l'host, vedere [Trovare il registrar.](find-your-domain-registrar.md)
   
 
 ## <a name="let-microsoft-365-manage-your-dns-records"></a>Consentire a Microsoft 365 di gestire i record DNS
@@ -51,13 +51,13 @@ Selezionare l'host di dominio seguente per la procedura esatta. Se non si è sic
 |[Namecheap](../dns/change-nameservers-at-namecheap.md)|
 |[Network Solutions](../dns/change-nameservers-at-network-solutions.md) |  
 
-Oppure, informazioni su come [modificare i server dei nomi per configurare Microsoft 365 con qualsiasi registrar.](change-nameservers-at-any-domain-registrar.md)
+In caso contrario, informazioni su come modificare i server dei [nomi per configurare Microsoft 365 con qualsiasi registrar.](change-nameservers-at-any-domain-registrar.md)
 
 ## <a name="manage-your-own-dns-records"></a>Gestire i propri record DNS
 
 |                           |                          |
 |---------------------------|--------------------------|
-| [1&1 IONOS](../dns/create-dns-records-at-1-1-internet.md) | [Hover](../dns/create-dns-records-at-hover.md) |
+| [1&1 IONOS](../dns/create-dns-records-at-1-1-internet.md) | [Hover](./create-dns-records-at-any-dns-hosting-provider.md) |
 | [123-reg.co.uk](../dns/create-dns-records-at-123-reg-co-uk.md) | [Gestito da Google (eNom)](../dns/create-dns-records-for-domain-managed-by-google-enom.md)|
 | [Amazon Web Services (AWS)](../dns/create-dns-records-at-aws.md) | [MyDomain](../dns/create-dns-records-at-mydomain.md) |
 | [Zone DNS di Azure](../dns/create-dns-records-for-azure-dns-zones.md) | [name.com](../dns/create-dns-records-at-name-com.md) |
@@ -74,4 +74,3 @@ Oppure, informazioni su come [modificare i server dei nomi per configurare Micro
 |[Hostgator](../dns/create-dns-records-at-hostgator.md)  | [Yahoo!   Small Business](../dns/create-dns-records-at-yahoo-small-business.md)  |
 
 [Ho bisogno di istruzioni generali, perché l'host di dominio non è in questo elenco. ](create-dns-records-at-any-dns-hosting-provider.md)
-   

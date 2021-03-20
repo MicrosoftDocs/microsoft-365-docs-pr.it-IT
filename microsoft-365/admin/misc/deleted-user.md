@@ -20,13 +20,13 @@ search.appverid:
 - MOE150
 ms.assetid: 481b460e-f799-4fac-9592-4d5c51bdcbd8
 ROBOTS: NOINDEX
-description: Informazioni su come eliminare o ripristinare l'account di Microsoft 365 di un utente.
-ms.openlocfilehash: 13908a83ffa39369b2aea71e7212fd0d41488c44
-ms.sourcegitcommit: a005395165db8896f4109674443b5e5e9209861d
+description: Informazioni su come eliminare o ripristinare l'account Microsoft 365 di un utente.
+ms.openlocfilehash: 3b078b782246229d1ddfb1f1fa51282140e71eb0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/31/2020
-ms.locfileid: "44432184"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914787"
 ---
 # <a name="quick-help-deleted-user"></a>Guida rapida: Utente eliminato
 
@@ -38,9 +38,9 @@ Potrebbe essere necessario eliminare un [utente](../add-users/add-users.md) dell
   
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
 
-2. Selezionare un utente e quindi sopra l'elenco di utenti selezionare **Altre opzioni** (**...**) e quindi scegliere **Elimina utente.**
+2. Selezionare un utente e quindi sopra l'elenco degli utenti selezionare **Altre opzioni** (**...**) e quindi scegliere **Elimina utente**.
   
-3. Nel riquadro di conferma dell'eliminazione selezionare **Elimina utente.** <br/>[Leggi l'articolo completo.](../add-users/delete-a-user.md)
+3. Nel riquadro di conferma dell'eliminazione selezionare **Elimina utente**. <br/>[Leggi l'articolo completo.](../add-users/delete-a-user.md)
   
 ::: moniker-end
 
@@ -48,9 +48,9 @@ Potrebbe essere necessario eliminare un [utente](../add-users/add-users.md) dell
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>.  
 
-2. Selezionare un utente e quindi sopra l'elenco di utenti scegliere **Altro** > **Elimina utente.**
+2. Selezionare un utente e quindi sopra l'elenco degli utenti scegliere **Altro** > **Elimina un utente**.
   
-3. Nel riquadro di conferma dell'eliminazione selezionare **Elimina utente.** <br/>[Leggi l'articolo completo.](../add-users/delete-a-user.md)
+3. Nel riquadro di conferma dell'eliminazione selezionare **Elimina utente**. <br/>[Leggi l'articolo completo.](../add-users/delete-a-user.md)
 
 ::: moniker-end
 
@@ -58,16 +58,16 @@ Potrebbe essere necessario eliminare un [utente](../add-users/add-users.md) dell
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>. 
 
-2. Selezionare un utente e quindi sopra l'elenco di utenti scegliere **Altro** > **Elimina utente.**
+2. Selezionare un utente e quindi sopra l'elenco degli utenti scegliere **Altro** > **Elimina un utente**.
   
-3. Nel riquadro di conferma dell'eliminazione selezionare **Elimina utente.** <br/>[Leggi l'articolo completo.](../add-users/delete-a-user.md)
+3. Nel riquadro di conferma dell'eliminazione selezionare **Elimina utente**. <br/>[Leggi l'articolo completo.](../add-users/delete-a-user.md)
 
 ::: moniker-end
 
   
 ## <a name="restore-a-user"></a>Ripristinare un utente
 
-È possibile ripristinare gli utenti cercando gli  utenti eliminati nella home page e  scegliendo Utenti eliminati nei risultati oppure selezionando la pagina Utenti eliminati dal riquadro di spostamento sinistro e scegliendo l'utente che si desidera ripristinare.  [Leggere l'articolo completo](../add-users/delete-a-user.md).
+È possibile ripristinare gli  utenti cercando gli  utenti eliminati nella home page e scegliendo Utenti eliminati nei risultati oppure andando alla pagina **Utenti** eliminati dal riquadro di spostamento sinistro e scegliendo l'utente che si desidera ripristinare. [Leggere l'articolo completo](../add-users/delete-a-user.md).
   
 ## <a name="what-are-deleted-users"></a>Cosa sono gli utenti eliminati?
 
@@ -75,7 +75,7 @@ Un [utente](../add-users/add-users.md) eliminato è un account aziendale o dell'
   
 ## <a name="does-deleting-a-user-free-up-their-microsoft-365-license"></a>L'eliminazione di un utente libera la licenza di Microsoft 365?
 
-Sì, l'eliminazione dell'utente libera la licenza di Microsoft 365 assegnata a tale utente. È quindi possibile assegnare la licenza a un altro utente. [Leggere l'articolo completo](../../commerce/licenses/remove-licenses-from-subscription.md).
+Sì, l'eliminazione dell'utente libera la licenza di Microsoft 365 assegnata a tale utente. È quindi possibile assegnare la licenza a un altro utente. [Leggere l'articolo completo](../../commerce/licenses/buy-licenses.md).
   
 ## <a name="i-had-a-deleted-user-listed-in-deleted-users-and-then-it-disappeared-what-happened"></a>Un utente elencato in precedenza in Utenti eliminati non è più visualizzato. Che cosa è successo?
 
@@ -91,6 +91,4 @@ Quando si elimina un utente, i relativi dati non vanno persi, ma vengono archivi
   
 ## <a name="how-do-i-restore-a-user"></a>Come si ripristina un utente?
 
-È possibile ripristinare gli utenti cercando gli  utenti eliminati nella home page e  scegliendo Utenti eliminati nei risultati oppure selezionando la pagina Utenti eliminati dal riquadro di spostamento sinistro e scegliendo l'utente che si desidera ripristinare.  [Leggere l'articolo completo](../add-users/delete-a-user.md).
-  
-
+È possibile ripristinare gli  utenti cercando gli  utenti eliminati nella home page e scegliendo Utenti eliminati nei risultati oppure andando alla pagina **Utenti** eliminati dal riquadro di spostamento sinistro e scegliendo l'utente che si desidera ripristinare. [Leggere l'articolo completo](../add-users/delete-a-user.md).

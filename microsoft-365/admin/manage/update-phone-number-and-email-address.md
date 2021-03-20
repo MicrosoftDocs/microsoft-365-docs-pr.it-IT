@@ -20,19 +20,19 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: Aggiornare il numero di telefono e l'indirizzo di posta elettronica dell'amministratore nell'interfaccia di amministrazione. Queste informazioni sono necessarie se si desidera reimpostare la propria password di amministratore.
-ms.openlocfilehash: 8ceb2fdc6543bf38089b40d3a66dfc2ab1d7dc64
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: a5b1548ee6ac0fa6bac976758ea8f6753ea2853c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114430"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914991"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>Aggiornare il numero di telefono e l'indirizzo di posta elettronica dell'amministratore
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 Questo articolo spiega come l'amministratore può modificare il telefono e l'indirizzo di posta elettronica dell'azienda in Microsoft 365.
@@ -41,18 +41,18 @@ Per sapere come cambiare le informazioni del profilo dell'organizzazione, ad ese
   
 ## <a name="to-update-your-phone-number-and-email-address"></a>Per aggiornare il numero di telefono e l'indirizzo di posta elettronica
 
-Usare la **pagina Informazioni di sicurezza** per modificare il numero di cellulare e l'indirizzo di posta elettronica alternativo. L'indirizzo di posta elettronica alternativo viene utilizzato per le notifiche importanti, ad esempio la reimpostazione della password di amministratore (non la password di amministratore del computer). 
+Usare la **pagina Info sicurezza** per modificare il numero di cellulare e l'indirizzo di posta elettronica alternativo. L'indirizzo di posta elettronica alternativo viene utilizzato per le notifiche importanti, ad esempio la reimpostazione della password di amministratore (non la password dell'amministratore del computer). 
   
 1. Passare all'interfaccia di amministrazione di Microsoft 365.
 
-2. Nell'intestazione selezionare l'icona del profilo \> **Info di sicurezza** \> **dell'account personale.**
+2. Nell'intestazione seleziona l'icona del profilo \> **Info di sicurezza** \> **dell'account personale.**
 
-3. Nella scheda **Info di sicurezza** seleziona Aggiungi **metodo** \> **telefono** \> **alternativo telefono** o **e-mail** per aggiungere dettagli. Per aggiornare i dettagli del cellulare, del telefono e dell'indirizzo di posta elettronica alternativo, selezionare **Cambia.** Assicurarsi di usare un indirizzo diverso dall'indirizzo di posta elettronica Microsoft per l'indirizzo di posta elettronica alternativo.
+3. Nella scheda **Info di sicurezza** seleziona **Aggiungi** metodo \> **Telefono** alternativo telefono o \> **E-mail** per aggiungere dettagli.  Per aggiornare i dettagli del cellulare, del telefono e dell'indirizzo di posta elettronica alternativo, selezionare **Cambia**. Assicurati di usare un indirizzo diverso dall'indirizzo di posta elettronica Microsoft per l'indirizzo di posta elettronica alternativo.
 
     > [!IMPORTANT]
-    > L'indirizzo di posta elettronica alternativo e il numero di cellulare sono necessari per reimpostare la password di amministratore (non la password di amministratore del computer).
+    > L'indirizzo di posta elettronica alternativo e il numero di cellulare sono necessari per reimpostare la password dell'amministratore (non la password dell'amministratore del computer).
 
-4. Al termine, selezionare **Salva.**
+4. Al termine, selezionare **Salva**.
   
 In caso di domande sulla fatturazione, vedere:
   

@@ -20,30 +20,30 @@ search.appverid:
 - GEA150
 description: Ulteriori informazioni su Azure Information Protection (AIP) per Office 365 gestito da 21Vianet e su come configurarlo per i clienti in Cina.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 300e7633237511fb9de64199ae7cf54594f2239e
-ms.sourcegitcommit: 3b369a44b71540c8b8214ce588a7aa6f47c3bb1e
+ms.openlocfilehash: 77790249cbd544b2f11e9a16dd77bab297cac509
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "50099679"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50914319"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>Supporto di Azure Information Protection per Office 365 gestito da 21Vianet
 
-Questo articolo illustra le differenze tra il supporto di Azure Information Protection (AIP) per Office 365 gestito da 21Vianet e le offerte commerciali, nonché istruzioni specifiche per la configurazione di AIP per i clienti in Cina, tra cui come installare lo scanner AIP locale e gestire i processi di analisi del &mdash; contenuto.
+In questo articolo vengono illustrate le differenze tra il supporto di Azure Information Protection (AIP) per Office 365 gestito da 21Vianet e le offerte commerciali, nonché istruzioni specifiche per la configurazione di AIP per i clienti in Cina, tra cui come installare lo scanner AIP locale e gestire i processi di analisi del &mdash; contenuto.
 
 ## <a name="differences-between-aip-for-office-365-operated-by-21vianet-and-commercial-offerings"></a>Differenze tra AIP per Office 365 gestito da 21Vianet e offerte commerciali
 
-Anche se l'obiettivo è fornire tutte le funzionalità commerciali ai clienti in Cina con l'offerta AIP per Office 365 gestito da 21Vianet, alcune funzionalità mancanti sono da evidenziare.
+Anche se il nostro obiettivo è fornire tutte le funzionalità commerciali ai clienti in Cina con l'offerta AIP per Office 365 gestita da 21Vianet, alcune funzionalità mancanti sono da evidenziare.
 
 L'elenco seguente include le lacune esistenti tra AIP per Office 365 gestito da 21Vianet e le offerte commerciali a partire da gennaio 2021:
 
 - Information Rights Management (IRM) è supportato solo per Microsoft 365 Apps for enterprise (build 11731.10000 o versione successiva). Office 2010, Office 2013 e altre versioni di Office 2016 non sono supportati.
 
-- La migrazione da Active Directory Rights Management Services (AD RMS) ad AIP non è attualmente disponibile.
+- La migrazione da Active Directory Rights Management Services (AD RMS) a AIP non è attualmente disponibile.
   
-- La condivisione di messaggi di posta elettronica protetti con gli utenti nel cloud commerciale è supportata.
+- È supportata la condivisione di messaggi di posta elettronica protetti con gli utenti nel cloud commerciale.
   
-- La condivisione di documenti e allegati di posta elettronica con gli utenti nel cloud commerciale non è attualmente disponibile. Sono inclusi Office 365 gestito da utenti di 21Vianet nel cloud commerciale, utenti non di Office 365 gestiti da 21Vianet nel cloud commerciale e utenti con licenza RMS per singoli utenti.
+- La condivisione di documenti e allegati di posta elettronica con gli utenti nel cloud commerciale non è attualmente disponibile. Sono inclusi Office 365 gestito da utenti di 21Vianet nel cloud commerciale, utenti non di Office 365 gestiti da 21Vianet nel cloud commerciale e utenti con una licenza RMS per singoli utenti.
   
 - IRM con SharePoint (siti e raccolte protetti tramite IRM) non è attualmente disponibile.
   
@@ -56,17 +56,17 @@ L'elenco seguente include le lacune esistenti tra AIP per Office 365 gestito da 
 ## <a name="configure-aip-for-customers-in-china"></a>Configurare AIP per i clienti in Cina
 
 Per configurare AIP per i clienti in Cina:
-1. [Abilitare Rights Management per il tenant.](#step-1-enable-rights-management-for-the-tenant)
+1. [Abilitare Rights Management per il tenant](#step-1-enable-rights-management-for-the-tenant).
 
-2. [Configurare la crittografia DNS.](#step-2-configure-dns-encryption)
+2. [Configurare la crittografia DNS](#step-2-configure-dns-encryption).
 
-3. [Installare e configurare il client di etichettatura unificato AIP.](#step-3-install-and-configure-the-aip-unified-labeling-client)
+3. [Installare e configurare il client di etichettatura unificato AIP](#step-3-install-and-configure-the-aip-unified-labeling-client).
 
-4. [Configurare le app AIP in Windows.](#step-4-configure-aip-apps-on-windows)
+4. [Configurare le app AIP in Windows](#step-4-configure-aip-apps-on-windows).
 
-5. [Installare lo scanner AIP locale e gestire i](#step-5-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs)processi di analisi del contenuto. 
+5. [Installare lo scanner AIP locale e gestire i processi di analisi del contenuto.](#step-5-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs) 
 
-### <a name="step-1-enable-rights-management-for-the-tenant"></a>Passaggio 1: abilitare Rights Management per il tenant
+### <a name="step-1-enable-rights-management-for-the-tenant"></a>Passaggio 1: Abilitare Rights Management per il tenant
 
 Per il corretto funzionamento della crittografia, è necessario che RMS sia abilitato per il tenant.
 
@@ -82,9 +82,9 @@ Per il corretto funzionamento della crittografia, è necessario che RMS sia abil
 
 ### <a name="step-2-configure-dns-encryption"></a>Passaggio 2: Configurare la crittografia DNS
 
-Per il corretto funzionamento della crittografia, le applicazioni client di Office devono connettersi all'istanza cina del servizio e avviare il bootstrap da qui. Per reindirizzare le applicazioni client all'istanza del servizio corretto, l'amministratore tenant deve configurare un record DNS SRV con informazioni sull'URL di Azure RMS. Senza il record DNS SRV, l'applicazione client tenterà di connettersi all'istanza del cloud pubblico per impostazione predefinita e avrà esito negativo.
+Per il corretto funzionamento della crittografia, le applicazioni client di Office devono connettersi all'istanza cinese del servizio e avviare il bootstrap da lì. Per reindirizzare le applicazioni client all'istanza del servizio giusta, l'amministratore tenant deve configurare un record DNS SRV con informazioni sull'URL di Azure RMS. Senza il record DNS SRV, l'applicazione client tenterà di connettersi all'istanza del cloud pubblico per impostazione predefinita e avrà esito negativo.
 
-Inoltre, si presuppone che gli utenti accederanno con un nome utente basato sul dominio di proprietà del tenant (ad esempio, ) e non con il nome `joe@contoso.cn` `onmschina` utente (ad esempio, `joe@contoso.onmschina.cn` ). Il nome di dominio del nome utente viene utilizzato per il reindirizzamento DNS all'istanza del servizio corretta.
+Inoltre, il presupposto è che gli utenti accederanno con un nome utente basato sul dominio di proprietà del tenant (ad esempio, ) e non con il nome `joe@contoso.cn` `onmschina` utente (ad esempio, `joe@contoso.onmschina.cn` ). Il nome di dominio dal nome utente viene utilizzato per il reindirizzamento DNS all'istanza del servizio corretta.
 
 #### <a name="configure-dns-encryption---windows"></a>Configurare la crittografia DNS - Windows
 
@@ -95,25 +95,25 @@ Inoltre, si presuppone che gli utenti accederanno con un nome utente basato sul 
     3. Connettersi al servizio utilizzando `Connect-AipService -environmentname azurechinacloud` .
     4. Eseguire `(Get-AipServiceConfiguration).RightsManagementServiceId` per ottenere l'ID RMS.
 
-2. Accedere al provider DNS, passare alle impostazioni DNS per il dominio e quindi aggiungere un nuovo record SRV.
+2. Accedere al provider DNS, accedere alle impostazioni DNS per il dominio e quindi aggiungere un nuovo record SRV.
 
     - Servizio = `_rmsredir`
-    - Protocol = `_http`
-    - Nome = `_tcp`
+    - Protocollo = `_http`
+    - Name = `_tcp`
     - Target = `[GUID].rms.aadrm.cn` (dove GUID è l'ID RMS)
     - Priorità, Peso, Secondi, TTL = valori predefiniti
 
-3. Associare il dominio personalizzato al tenant nel [portale di Azure.](https://portal.azure.cn/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Domains) Verrà aggiunta una voce in DNS, che potrebbe richiedere alcuni minuti per essere verificata dopo l'aggiunta del valore alle impostazioni DNS.
+3. Associare il dominio personalizzato al tenant nel [portale di Azure.](https://portal.azure.cn/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Domains) Verrà aggiunta una voce in DNS, che potrebbe richiedere alcuni minuti per essere verificata dopo aver aggiunto il valore alle impostazioni DNS.
 
-4. Accedere all'interfaccia di amministrazione di Microsoft 365 con le credenziali di amministratore globale corrispondenti e aggiungere il dominio (ad esempio, `contoso.cn` ) per la creazione degli utenti. Nel processo di verifica potrebbero essere necessarie ulteriori modifiche al DNS. Dopo aver eseguito la verifica, gli utenti possono essere creati.
+4. Accedere all'interfaccia di amministrazione di Microsoft 365 con le credenziali di amministratore globale corrispondenti e aggiungere il dominio (ad esempio, `contoso.cn` ) per la creazione degli utenti. Nel processo di verifica potrebbero essere necessarie ulteriori modifiche al DNS. Al termine della verifica, gli utenti possono essere creati.
 
 #### <a name="configure-dns-encryption---mac-ios-android"></a>Configurare la crittografia DNS - Mac, iOS, Android
 
-Accedere al provider DNS, passare alle impostazioni DNS per il dominio e quindi aggiungere un nuovo record SRV.
+Accedere al provider DNS, accedere alle impostazioni DNS per il dominio e quindi aggiungere un nuovo record SRV.
 
 - Servizio = `_rmsdisco`
-- Protocol = `_http`
-- Nome = `_tcp`
+- Protocollo = `_http`
+- Name = `_tcp`
 - Target = `api.aadrm.cn`
 - Port = `80`
 - Priorità, Peso, Secondi, TTL = valori predefiniti
@@ -129,35 +129,35 @@ Per altre informazioni, vedere:
 - [Requisiti di sistema AIP](/azure/information-protection/requirements)
 - [Guida introduttiva AIP: Distribuire il client AIP](/azure/information-protection/quickstart-deploy-client)
 - [Guida all'amministratore AIP](/azure/information-protection/rms-client/clientv2-admin-guide)
-- [Manuale dell'utente AIP](/azure/information-protection/rms-client/clientv2-user-guide)
-- [Informazioni sulle etichette di riservatezza di Microsoft 365](/microsoft-365/compliance/sensitivity-labels)
+- [Guida per l'utente AIP](/azure/information-protection/rms-client/clientv2-user-guide)
+- [Informazioni sulle etichette di riservatezza di Microsoft 365](../../compliance/sensitivity-labels.md)
 
 ### <a name="step-4-configure-aip-apps-on-windows"></a>Passaggio 4: Configurare le app AIP in Windows
 
 Le app AIP in Windows necessitano della chiave del Registro di sistema seguente per puntare al cloud sovrano corretto per Azure Cina:
 
 - Nodo del Registro di sistema = `HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\MSIP`
-- Nome = `CloudEnvType`
-- Valore = `6` (valore predefinito = 0)
-- Tipo = `REG_DWORD`
+- Name = `CloudEnvType`
+- Value = `6` (valore predefinito = 0)
+- Type = `REG_DWORD`
 
 > [!IMPORTANT]
-> Assicurati di non eliminare la chiave del Registro di sistema dopo una disinstallazione. Se la chiave è vuota, errata o inesistente, la funzionalità verrà utilizzata come valore predefinito (valore predefinito = 0 per il cloud commerciale). Se la chiave è vuota o errata, al registro viene aggiunto anche un errore di stampa.
+> Assicurarsi di non eliminare la chiave del Registro di sistema dopo una disinstallazione. Se la chiave è vuota, errata o inesistente, la funzionalità si comporterà come valore predefinito (valore predefinito = 0 per il cloud commerciale). Se la chiave è vuota o errata, al registro viene aggiunto anche un errore di stampa.
 
 ### <a name="step-5-install-the-aip-on-premises-scanner-and-manage-content-scan-jobs"></a>Passaggio 5: installare lo scanner AIP locale e gestire i processi di analisi del contenuto
 
-Installare lo scanner AIP locale per analizzare la rete e le condivisioni di contenuto per i dati sensibili e applicare le etichette di classificazione e protezione in base alla configurazione nei criteri dell'organizzazione.
+Installare lo scanner AIP locale per analizzare la rete e le condivisioni di contenuto alla ricerca di dati sensibili e applicare etichette di classificazione e protezione come configurato nei criteri dell'organizzazione.
 
 Quando si installa lo scanner e si gestiscono i processi di analisi del contenuto, utilizzare i cmdlet seguenti anziché l'interfaccia del portale di Azure utilizzata dalle offerte commerciali:<br><br>
 
 | Cmdlet | Descrizione |
 |--|--|
-| [Add-AIPScannerRepository](/powershell/module/azureinformationprotection/add-aipscannerrepository) | Aggiunge un nuovo archivio al processo di analisi del contenuto. |
+| [Add-AIPScannerRepository](/powershell/module/azureinformationprotection/add-aipscannerrepository) | Aggiunge un nuovo repository al processo di analisi del contenuto. |
 | [Get-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/get-aipscannercontentscanjob) | Ottiene informazioni dettagliate sul processo di analisi del contenuto. |
-| [Get-AIPScannerRepository](/powershell/module/azureinformationprotection/get-aipscannerrepository) | Ottiene informazioni dettagliate sugli archivi definiti per il processo di analisi del contenuto. |
+| [Get-AIPScannerRepository](/powershell/module/azureinformationprotection/get-aipscannerrepository) | Ottiene i dettagli sugli archivi definiti per il processo di analisi del contenuto. |
 | [Remove-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/remove-aipscannercontentscanjob) | Elimina il processo di analisi del contenuto. |
-| [Remove-AIPScannerRepository](/powershell/module/azureinformationprotection/remove-aipscannerrepository) | Rimuove un archivio dal processo di analisi del contenuto. |
+| [Remove-AIPScannerRepository](/powershell/module/azureinformationprotection/remove-aipscannerrepository) | Rimuove un repository dal processo di analisi del contenuto. |
 | [Set-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/set-aipscannercontentscanjob) | Definisce le impostazioni per il processo di analisi del contenuto. |
 | [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/set-aipscannerrepository) | Definisce le impostazioni per un archivio esistente nel processo di analisi del contenuto. |
 
-Per altre informazioni, vedere [Che cos'è lo scanner](/azure/information-protection/deploy-aip-scanner) di etichettatura unificata di Azure Information Protection? e Gestire i processi di analisi del contenuto solo tramite [PowerShell.](/azure/information-protection/deploy-aip-scanner-prereqs#use-powershell-with-a-disconnected-computer)
+Per ulteriori informazioni, vedere [Che cos'è lo scanner](/azure/information-protection/deploy-aip-scanner) di etichettatura unificato di Azure Information Protection? e Gestire i processi di analisi del contenuto solo tramite [PowerShell.](/azure/information-protection/deploy-aip-scanner-prereqs#use-powershell-with-a-disconnected-computer)

@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-jun2020
 ms.assetid: 1d51bd87-17bf-457c-b698-61821de3afa0
 description: Come configurare Teams per una maggiore sicurezza della condivisione dei file con tre livelli di protezione, in modo da bilanciare la sicurezza con la facilità di collaborazione.
-ms.openlocfilehash: d41effb6db9f8995c3c878523babf200ab9af762
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: 37d59d968d3a8e83a5b42fcce4c0400940314a41
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509243"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916215"
 ---
 # <a name="configure-teams-with-three-tiers-of-protection"></a>Configurare Teams con tre livelli di protezione
 
@@ -42,7 +42,7 @@ Le configurazioni descritte in questo articolo sono allineate alle raccomandazio
 
 - Protezione dati altamente sensibili
 
-Per altre informazioni su questi livelli e le funzionalità consigliate per ogni livello, vedere [immagini Microsoft Cloud for Enterprise Architects](https://docs.microsoft.com/microsoft-365/solutions/cloud-architecture-models)
+Per altre informazioni su questi livelli e le funzionalità consigliate per ogni livello, vedere [immagini Microsoft Cloud for Enterprise Architects](./cloud-architecture-models.md)
 
 
 ## <a name="three-tiers-at-a-glance"></a>I tre livelli a colpo d'occhio
@@ -68,11 +68,11 @@ I team per la protezione dei dati sensibili e altamente sensibili sono team priv
 
 ## <a name="sensitivity-labels"></a>Etichette di riservatezza
 
-Nei livelli dei dati sensibili e altamente sensibili vengono usate etichette di riservatezza per proteggere il team e i file associati. Per implementare questi livelli, è necessario abilitare le [etichette di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di Office 365 e siti di SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+Nei livelli dei dati sensibili e altamente sensibili vengono usate etichette di riservatezza per proteggere il team e i file associati. Per implementare questi livelli, è necessario abilitare le [etichette di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di Office 365 e siti di SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 Anche se il livello di base non richiede l'uso di etichette di riservatezza, è consigliabile creare un'etichetta "generale" e quindi richiedere che tutti i team vengano etichettati. Questo contribuirà a garantire che gli utenti facciano una scelta consapevole in merito alla riservatezza quando creano un team. Se si prevede di distribuire il livello dei dati sensibili o altamente sensibili, è consigliabile creare un'etichetta "generale" che possa essere usata per i team di base e per i file non riservati.
 
-Se non si ha familiarità con le etichette di riservatezza, è consigliabile leggere [Iniziare a usare le etichette di riservatezza](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-sensitivity-labels) per iniziare. 
+Se non si ha familiarità con le etichette di riservatezza, è consigliabile leggere [Iniziare a usare le etichette di riservatezza](../compliance/get-started-with-sensitivity-labels.md) per iniziare. 
 
 Se nell'organizzazione sono già state distribuite etichette di riservatezza, valutare il modo in cui le etichette usate nei livelli dei dati sensibili e altamente sensibili si inseriscono nella strategia di etichettatura complessiva. 
 
@@ -95,7 +95,7 @@ Per impostazione predefinita, sia i proprietari che i membri del team possono co
 
 ## <a name="guest-sharing"></a>Condivisione con gli utenti guest
 
-Se è necessario collaborare con persone esterne all'organizzazione, si consiglia di configurare l'[integrazione di SharePoint e OneDrive con Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) per un'esperienza di condivisione e amministrazione ottimale.
+Se è necessario collaborare con persone esterne all'organizzazione, si consiglia di configurare l'[integrazione di SharePoint e OneDrive con Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) per un'esperienza di condivisione e amministrazione ottimale.
 
 La condivisione con gli utenti guest in Teams è disattivata per impostazione predefinita, anche se la condivisione per i gruppi di Office 365 (in cui è archiviato l'appartenenza al team) e SharePoint è attivata. Nel livello di base la condivisione di Teams viene attivata. Se necessario, è possibile disattivarla nei livelli dei dati sensibili e altamente sensibili usando un'etichetta di riservatezza.
 
@@ -113,7 +113,7 @@ Vedere i riferimenti seguenti per creare un ambiente di condivisione guest sicur
 
 ## <a name="access-from-unmanaged-devices"></a>Accesso da dispositivi non gestiti
 
-Per i livelli dei dati sensibili e altamente sensibili, l'accesso al contenuto di SharePoint viene limitato mediante l'applicazione di etichette di riservatezza. L'accesso condizionale di Azure Active Directory offre numerose opzioni per determinare il modo in cui gli utenti accedono a Microsoft 365, incluse limitazioni basate su luogo, rischio, conformità dei dispositivi e altri fattori. Si consiglia di leggere l'articolo [Informazioni sull'accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/overview) e valutare quali altri criteri potrebbero essere appropriati per l'organizzazione.
+Per i livelli dei dati sensibili e altamente sensibili, l'accesso al contenuto di SharePoint viene limitato mediante l'applicazione di etichette di riservatezza. L'accesso condizionale di Azure Active Directory offre numerose opzioni per determinare il modo in cui gli utenti accedono a Microsoft 365, incluse limitazioni basate su luogo, rischio, conformità dei dispositivi e altri fattori. Si consiglia di leggere l'articolo [Informazioni sull'accesso condizionale](/azure/active-directory/conditional-access/overview) e valutare quali altri criteri potrebbero essere appropriati per l'organizzazione.
 
 Si noti che gli utenti guest spesso non hanno dispositivi gestiti dall'organizzazione. Se si consentono gli utenti guest in uno qualsiasi dei livelli, considerare i tipi di dispositivi che useranno per accedere ai team e ai siti e impostare i criteri per i dispositivi non gestiti di conseguenza.
 
@@ -123,6 +123,6 @@ Per iniziare, [configurare il livello di protezione di base](configure-teams-bas
 
 ## <a name="see-also"></a>Vedere anche
 
-[Sicurezza e conformità in Microsoft Teams](https://docs.microsoft.com/microsoftteams/security-compliance-overview)
+[Sicurezza e conformità in Microsoft Teams](/microsoftteams/security-compliance-overview)
 
-[Criteri di avviso nel Centro sicurezza e conformità](https://docs.microsoft.com/microsoft-365/compliance/alert-policies)
+[Criteri di avviso nel Centro sicurezza e conformità](../compliance/alert-policies.md)

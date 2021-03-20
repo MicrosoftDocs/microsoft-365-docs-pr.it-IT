@@ -23,19 +23,19 @@ search.appverid:
 - MET150
 description: Informazioni su come assegnare licenze agli utenti.
 ms.date: 08/14/2020
-ms.openlocfilehash: b5179006da896dbadab10d43a43b094acedcb806
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 9f044f29cabf4976d5fbf17b22777da62e4414c5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50113986"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50915495"
 ---
 # <a name="assign-licenses-to-users"></a>Assegnare licenze agli utenti
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
 
@@ -50,8 +50,8 @@ ms.locfileid: "50113986"
 ## <a name="before-you-begin"></a>Prima di iniziare
 
 - Per assegnare le licenze è necessario essere un amministratore globale, delle licenze o degli utenti. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore di Microsoft 365](../add-users/about-admin-roles.md).
-- È possibile [assegnare licenze ad account utente con PowerShell di Office 365](https://go.microsoft.com/fwlink/p/?linkid=850410).
-- Per usare licenze basate su gruppi, vedere [Assegnare licenze agli utenti in base all'appartenenza ai gruppi in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign).
+- È possibile [assegnare licenze ad account utente con PowerShell di Office 365](../../enterprise/assign-licenses-to-user-accounts-with-microsoft-365-powershell.md).
+- Per usare licenze basate su gruppi, vedere [Assegnare licenze agli utenti in base all'appartenenza ai gruppi in Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign).
 - Alcuni servizi, come Sway, vengono assegnati agli utenti automaticamente e non è necessario assegnarli singolarmente.
 
 ::: moniker range="o365-worldwide"
@@ -163,7 +163,7 @@ Nella pagina **Utenti attivi** si assegnano licenze utente ai prodotti.
 
 ## <a name="assign-a-license-to-a-guest-user"></a>Assegnare una licenza a un utente guest
 
-È possibile invitare gli utenti guest a collaborare con l'organizzazione nell'interfaccia di amministrazione di Azure Active Directory. Per informazioni sugli utenti guest, vedere [Cos'è l'accesso degli utenti guest in Azure Active Directory B2B?](https://docs.microsoft.com/azure/active-directory/external-identities/what-is-b2b) Se vi sono utenti guest, vedere [Guida introduttiva: aggiungere utenti guest alla directory nel portale di Azure](https://docs.microsoft.com/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).
+È possibile invitare gli utenti guest a collaborare con l'organizzazione nell'interfaccia di amministrazione di Azure Active Directory. Per informazioni sugli utenti guest, vedere [Cos'è l'accesso degli utenti guest in Azure Active Directory B2B?](/azure/active-directory/external-identities/what-is-b2b) Se vi sono utenti guest, vedere [Guida introduttiva: aggiungere utenti guest alla directory nel portale di Azure](/azure/active-directory/external-identities/b2b-quickstart-add-guest-users-portal).
 
 > [!IMPORTANT]
 > Per eseguire questi passaggi, è necessario essere un amministratore globale.

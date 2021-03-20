@@ -23,36 +23,36 @@ ms.custom:
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: Informazioni su come eseguire l'Microsoft Office al client Office più recente per gli utenti dell'organizzazione.
-ms.openlocfilehash: 3f8ea0d16e1c27414b5f3e11e842e336fadb3e75
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 14be8d63b2acb3e4838640dc399595c0ba3f97f5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233319"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913995"
 ---
-# <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Aggiornare gli utenti di Microsoft 365 per le aziende all'ultima versione del client di Office
+# <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Aggiornare gli utenti di Microsoft 365 per le aziende all'ultimo client di Office
 
 ## <a name="office-2010-reaches-end-of-support"></a>Office 2010 raggiunge la fine del supporto
 
 Office 2010 ha raggiunto la fine del supporto il 13 ottobre 2020. Microsoft non fornirà più quanto segue:
 
-- Supporto tecnico per problemi
+- Supporto tecnico per i problemi
 
-- Correzioni di bug per i problemi rilevati
+- Correzioni di bug per i problemi individuati
 
-- Correzioni per la sicurezza per le vulnerabilità individuate
+- Correzioni della sicurezza per le vulnerabilità individuate
 
-Per ulteriori informazioni, vedere la guida di orientamento alla fine del supporto di [Office 2010.](https://docs.microsoft.com/deployoffice/endofsupport/office-2010-end-support-roadmap)
+Per [ulteriori informazioni, vedere Office 2010 end of support roadmap.](/deployoffice/endofsupport/office-2010-end-support-roadmap)
 
  **Questo è l'argomento giusto per te?**
   
- Se si è l'amministratore responsabile dell'abbonamento a Microsoft 365 per le aziende nell'organizzazione, si è nel posto giusto. Gli amministratori sono in genere responsabili di attività come la gestione degli utenti, la reimpostazione delle password, la gestione delle installazioni di Office e l'aggiunta o la rimozione di licenze.
+ Se sei l'amministratore responsabile dell'abbonamento a Microsoft 365 per le aziende nell'organizzazione, sei nel posto giusto. Gli amministratori sono in genere responsabili di attività quali la gestione degli utenti, la reimpostazione delle password, la gestione delle installazioni di Office e l'aggiunta o la rimozione di licenze.
 
- Se non si è un amministratore e si dispone di un prodotto della famiglia [Microsoft 365,](https://support.microsoft.com/office/28cbc8cf-1332-4f04-9123-9b660abb629e#BKMK_OfficePlans) vedere Come eseguire l'aggiornamento di [Office](https://support.microsoft.com/office/ee68f6cf-422f-464a-82ec-385f65391350) per informazioni sull'aggiornamento della versione precedente di Office per uso domestico.
+ Se non si è un amministratore e si dispone di un prodotto della famiglia [Microsoft 365,](https://support.microsoft.com/office/28cbc8cf-1332-4f04-9123-9b660abb629e#BKMK_OfficePlans) vedere [How do I upgrade Office](https://support.microsoft.com/office/ee68f6cf-422f-464a-82ec-385f65391350) per informazioni sull'aggiornamento della versione precedente di Office per uso domestico.
 
 ## <a name="get-ready-to-upgrade-to-microsoft-365"></a>Prepararsi per l'aggiornamento a Microsoft 365
 
-Gli amministratori possono controllare la versione di Office che gli utenti dell'organizzazione possono installare. È consigliabile aiutare gli utenti dell'organizzazione che eseguono versioni precedenti di Office, ad esempio Office 2010, Office 2013 o Office 2016, a eseguire l'aggiornamento alla versione più recente per sfruttare i miglioramenti della sicurezza e della produttività.
+Gli amministratori controllano la versione di Office che gli utenti dell'organizzazione possono installare. È consigliabile consentire agli utenti dell'organizzazione che eseguono versioni precedenti di Office, ad esempio Office 2010, Office 2013 o Office 2016, di eseguire l'aggiornamento alla versione più recente per sfruttare i miglioramenti apportati alla sicurezza e alla produttività.
 
 ## <a name="upgrade-steps"></a>Passaggi di aggiornamento
 
@@ -63,9 +63,9 @@ I passaggi riportati di seguito illustrano il processo per aggiornare gli utenti
 [Verificare i requisiti di sistema](https://www.microsoft.com/microsoft-365/microsoft-365-and-office-resources) per Office per verificare che i dispositivi siano compatibili con la versione più recente di Office. Ad esempio, le versioni più recenti di Office non possono essere installate nei computer che eseguono Windows XP o Windows Vista.
   
 > [!TIP]
-> Se nella tua organizzazione sono presenti utenti che eseguono versioni precedenti di Windows nei loro PC o portatili, ti consigliamo di eseguire l'aggiornamento a Windows 10. Windows 7 ha raggiunto la fine del supporto. Il [supporto per Windows 7 termina a gennaio 2020](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1) per altre info.
+> Se gli utenti dell'organizzazione eseguono versioni precedenti di Windows nei propri PC o portatili, ti consigliamo di eseguire l'aggiornamento a Windows 10. Windows 7 ha raggiunto la fine del supporto. Per altre info, leggi Il supporto per Windows 7 termina a [gennaio 2020.](https://www.microsoft.com/microsoft-365/windows/end-of-windows-7-support?rtc=1)
 
-Vedi i requisiti [di sistema di Windows 10](https://www.microsoft.com/windows/windows-10-specifications) per verificare se puoi aggiornare i sistemi operativi.
+Vedi i requisiti [di sistema di Windows 10](https://www.microsoft.com/windows/windows-10-specifications) per verificare se puoi aggiornare i loro sistemi operativi.
 
 ### <a name="check-application-compatibility"></a>Verificare la compatibilità delle applicazioni
 
@@ -77,7 +77,7 @@ Ad esempio, se si usano componenti aggiuntivi di terze parti con la versione ins
 
 Alcuni piani di Microsoft 365 non includono le versioni desktop complete di Office e i passaggi per l'aggiornamento sono diversi se il piano non include Office.
   
-Non si è certi del piano di sottoscrizione di cui si dispone? Vedere [qual è l'abbonamento a Microsoft 365 per le aziende?](../admin-overview/what-subscription-do-i-have.md)
+Non si è certi del piano di sottoscrizione di cui si dispone? Vedere [Qual è l'abbonamento a Microsoft 365 per le aziende?](../admin-overview/what-subscription-do-i-have.md)
   
 Se il piano esistente include Office, passare al [Passaggio 3: Disinstallare Office](#step-3---uninstall-office).
   
@@ -99,12 +99,12 @@ Passare a un abbonamento che include Office. Vedere [Passare a un piano di Micro
 
 ## <a name="step-3---uninstall-office"></a>Passaggio 3: Disinstallare Office
 
-Prima di installare la versione più recente di Office, è consigliabile disinstallare tutte le versioni precedenti di Office. Tuttavia, se si cambia idea sull'aggiornamento di Office, tenere presente le istanze seguenti in cui non sarà possibile reinstallare Office dopo la disinstallazione.
+Prima di installare la versione più recente di Office, è consigliabile disinstallare tutte le versioni precedenti di Office. Tuttavia, se si cambia idea sull'aggiornamento di Office, prendere nota dei casi seguenti in cui non sarà possibile reinstallare Office dopo la disinstallazione.
   
 Se si dispone di componenti aggiuntivi di terze parti, contattare il produttore per verificare se è disponibile un aggiornamento che funzionerà con la versione più recente di Office.
 
 > [!TIP]
-> Se si verificano problemi durante la disinstallazione di Office, è possibile utilizzare lo strumento Assistente supporto e ripristino Microsoft per rimuovere Office: scaricare ed eseguire l'Assistente supporto e ripristino [Microsoft.](https://go.microsoft.com/fwlink/?LinkID=2155008)
+> Se si verificano problemi durante la disinstallazione di Office, è possibile utilizzare lo strumento Assistente supporto e ripristino Microsoft per rimuovere Office: Scaricare ed eseguire l'Assistente supporto e ripristino [Microsoft.](https://go.microsoft.com/fwlink/?LinkID=2155008)
 
 ### <a name="select-the-version-of-office-you-want-to-uninstall"></a>Selezionare la versione di Office da disinstallare
 
@@ -114,11 +114,11 @@ Se si dispone di componenti aggiuntivi di terze parti, contattare il produttore 
   
 ### <a name="known-issues-trying-to-reinstall-older-versions-of-office-after-an-uninstall"></a>Problemi noti relativi alla reinstallazione di versioni precedenti di Office dopo averle disinstallate
 
- **Office tramite un contratto multilicenza** Se non si ha più accesso ai file di origine di queste versioni di Office con contratto multilicenza, non sarà possibile reinstallarlo.
+ **Office tramite un contratto multilicenza** Se non si ha più accesso ai file di origine di queste versioni con contratto multilicenza di Office, non sarà possibile reinstallarlo.
 
- **Office preinstallato nel computer** Se non si dispone più di un disco o di un codice Product Key (se Office è stato fornito con uno), non sarà possibile reinstallarlo.
+ **Office preinstallato nel computer** Se non si dispone più di un disco o di un codice Product Key (se Office è stato fornito con uno) non sarà possibile reinstallarlo.
 
- **Sottoscrizioni non supportate** Se la copia di Office è stata ottenuta tramite sottoscrizioni sospese, ad esempio Office 365 Small Business Premium o Office 365 Mid-size Business, non sarà possibile installare una versione precedente di Office a meno che non si abbia il codice Product Key fornito con l'abbonamento.
+ **Sottoscrizioni non supportate** Se la copia di Office è stata ottenuta tramite abbonamenti sospesi, ad esempio Office 365 Small Business Premium o Office 365 Mid-size Business, non sarà possibile installare una versione precedente di Office a meno che non si abbia il codice Product Key fornito con l'abbonamento.
 
 Se si preferisce installare la versione precedente di Office affiancato alla versione più recente, in [Installare e usare più versioni di Office nello stesso PC](https://support.microsoft.com/office/6ebb44ce-18a3-43f9-a187-b78c513788bf) è riportato un elenco delle versioni che lo consentono. Un'installazione affiancata potrebbe essere la scelta giusta se, ad esempio, sono stati installati componenti aggiuntivi di terze parti che vengono usati con la versione precedente di Office e non si è ancora sicuri che siano compatibili con la versione più recente.
 
@@ -128,7 +128,7 @@ Se non è già stato fatto, assegnare licenze agli utenti dell'organizzazione ch
   
 ## <a name="step-5---install-office"></a>Passaggio 5: Installare Office
 
-Dopo aver verificato gli utenti che si desidera aggiornare hanno tutte le licenze, il passaggio finale consiste nel fare in modo che installino Office, vedere Scaricare e installare o reinstallare Office nel [PC o nel Mac.](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
+Dopo aver verificato gli utenti che si desidera aggiornare tutti hanno licenze, il passaggio finale consiste nel fare in modo che installino Office, vedere Scaricare e installare o reinstallare Office nel PC o [nel Mac.](https://support.microsoft.com/office/4414eaaf-0478-48be-9c42-23adc4716658)
   
 > [!TIP]
-> Se non si desidera che gli utenti installino Office, vedere Gestire le impostazioni di [download del software in Office 365.](https://docs.microsoft.com/DeployOffice/manage-software-download-settings-office-365) È possibile utilizzare lo Strumento di distribuzione di [Office](https://docs.microsoft.com/DeployOffice/overview-office-deployment-tool) per scaricare il software di Office nella rete locale e quindi distribuire Office utilizzando il metodo di distribuzione del software utilizzato in genere.
+> Se non si desidera che gli utenti installino Office, vedere [Manage software download settings in Office 365](/DeployOffice/manage-software-download-settings-office-365). È possibile utilizzare lo [Strumento di distribuzione](/DeployOffice/overview-office-deployment-tool) di Office per scaricare il software di Office nella rete locale e quindi distribuire Office utilizzando il metodo di distribuzione del software utilizzato in genere.

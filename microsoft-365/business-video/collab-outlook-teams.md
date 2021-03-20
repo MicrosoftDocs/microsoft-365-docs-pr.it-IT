@@ -20,16 +20,16 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come usare Outlook e Microsoft Teams per collaborare.
-ms.openlocfilehash: 14a3cdf28c4e0c855671c67af36fa25ac47c6568
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: dd1030833a10678b4630d9e86905c98d30ac15fe
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422832"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50913659"
 ---
 # <a name="use-outlook-and-teams-together"></a>Usare Outlook e Teams insieme
 
-Quando si comunica con dipendenti, partner, clienti e altri utenti della piccola azienda, usare Outlook e Teams in Microsoft 365. In Outlook sono disponibili posta elettronica, calendari, contatti e attività, mentre in Teams sono disponibili conversazioni, file, riunioni e accesso rapido alle app microsoft e di terze parti. Ecco un riepilogo di come è possibile usare ognuno di essi nell'azienda.
+Quando si comunica con dipendenti, partner, clienti e altri utenti della piccola azienda, utilizzare Outlook e Teams in Microsoft 365. In Outlook sono disponibili messaggi di posta elettronica, calendari, contatti e attività, mentre in Teams sono disponibili conversazioni, file, riunioni e accesso rapido alle app microsoft e di terze parti. Ecco un riepilogo di come è possibile usare ognuno di essi nell'azienda.
 
 ## <a name="microsoft-outlook"></a>Microsoft Outlook
 
@@ -42,10 +42,10 @@ Quando si comunica con dipendenti, partner, clienti e altri utenti della piccola
 
 ## <a name="microsoft-teams"></a>Microsoft Teams
 
-- Avere conversazioni in tempo reale con il team e invitare clienti o utenti guest alla conversazione.
+- Avere conversazioni ricche e in tempo reale con il team e invitare clienti o utenti guest alla conversazione.
 - Avere chat o chiamate private e condividere lo schermo tra loro.
-- Pianificare e partecipare a riunioni con dipendenti e guest.
-- Aggiungere o condividere file dal sito di SharePoint o OneDrive for Business associato.
+- Pianificare e partecipare a riunioni con dipendenti e ospiti.
+- Aggiungere o condividere file dal sito di SharePoint associato o da OneDrive for Business.
 - Aggiungere altre app come Planner, Power BI o GitHub a Teams.
 
 :::image type="content" source="../media/teams-model.png" alt-text="Immagine stilizzata della home page di Microsoft Teams."::: 
@@ -54,4 +54,4 @@ Quando si comunica con dipendenti, partner, clienti e altri utenti della piccola
 
 [Che cos'è Outlook?](https://support.microsoft.com/office10f1fa35-f33a-4cb7-838c-a7f3e6228b20)
 
-[Panoramica di Teams](https://docs.microsoft.com/MicrosoftTeams/Teams-overview)
+[Panoramica di Teams](/MicrosoftTeams/Teams-overview)
