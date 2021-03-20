@@ -1,7 +1,7 @@
 ---
-title: Eseguire la migrazione di query di ricerca avanzata da Microsoft Defender per Endpoint
+title: Eseguire la migrazione di query di ricerca avanzate da Microsoft Defender per Endpoint
 description: Informazioni su come modificare le query di Microsoft Defender for Endpoint in modo da poterle usare in Microsoft 365 Defender
-keywords: ricerca avanzata, ricerca delle minacce, ricerca delle minacce informatiche, protezione dalle minacce Microsoft, Microsoft 365, mtp, m365, microsoft defender atp, mdatp, ricerca, query, telemetria, rilevamenti personalizzati, schema, kusto, Microsoft 365, mapping
+keywords: ricerca avanzata, ricerca delle minacce, ricerca di minacce informatiche, protezione dalle minacce Microsoft, Microsoft 365, mtp, m365, microsoft defender atp, mdatp, ricerca, query, telemetria, rilevamenti personalizzati, schema, kusto, Microsoft 365, mapping
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,21 +21,21 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 4d29f4f3df3d65ad72a19f059763523d7f7cba31
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: 5f356c5861586d4435a619a056a6fa1a0afc53f0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50597005"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904139"
 ---
-# <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>Eseguire la migrazione di query di ricerca avanzata da Microsoft Defender per Endpoint
+# <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>Eseguire la migrazione di query di ricerca avanzate da Microsoft Defender per Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
 **Si applica a:**
 - Microsoft 365 Defender
 
-Spostare i flussi di lavoro di ricerca avanzata da Microsoft Defender for Endpoint per cercare in modo proattivo le minacce usando un set più ampio di dati. In Microsoft 365 Defender, si ottiene l'accesso ai dati da altre soluzioni di sicurezza di Microsoft 365, tra cui:
+Sposta i flussi di lavoro di ricerca avanzati da Microsoft Defender for Endpoint per cercare in modo proattivo le minacce usando un set più ampio di dati. In Microsoft 365 Defender, si ottiene l'accesso ai dati da altre soluzioni di sicurezza di Microsoft 365, tra cui:
 
 - Microsoft Defender per endpoint
 - Microsoft Defender per Office 365
@@ -43,37 +43,37 @@ Spostare i flussi di lavoro di ricerca avanzata da Microsoft Defender for Endpoi
 - Che cosa è Microsoft Defender per identità?
 
 >[!NOTE]
->La maggior parte dei clienti di Microsoft Defender per endpoint [può usare Microsoft 365 Defender senza licenze aggiuntive.](prerequisites.md#licensing-requirements) Per avviare la transizione dei flussi di lavoro di ricerca avanzata da Defender per Endpoint, [attivare Microsoft 365 Defender.](mtp-enable.md)
+>La maggior parte dei clienti di Microsoft Defender per Endpoint [può usare Microsoft 365 Defender senza licenze aggiuntive.](prerequisites.md#licensing-requirements) Per avviare la transizione dei flussi di lavoro di ricerca avanzata da Defender for Endpoint, [attiva Microsoft 365 Defender.](mtp-enable.md)
 
-È possibile eseguire la transizione senza influire sui flussi di lavoro di Defender for Endpoint esistenti. Le query salvate rimangono intatte e le regole di rilevamento personalizzate continuano a essere eseguite e a generare avvisi. Tuttavia, saranno visibili in Microsoft 365 Defender. 
+Puoi eseguire la transizione senza influire sui flussi di lavoro esistenti di Defender for Endpoint. Le query salvate rimangono intatte e le regole di rilevamento personalizzate continuano a essere eseguite e a generare avvisi. Saranno tuttavia visibili in Microsoft 365 Defender. 
 
 ## <a name="schema-tables-in-microsoft-365-defender-only"></a>Tabelle dello schema solo in Microsoft 365 Defender
-Lo schema di ricerca avanzata di [Microsoft 365 Defender](advanced-hunting-schema-tables.md) fornisce tabelle aggiuntive contenenti i dati di varie soluzioni di sicurezza di Microsoft 365. Le tabelle seguenti sono disponibili solo in Microsoft 365 Defender:
+Lo schema di ricerca avanzata di [Microsoft 365 Defender](advanced-hunting-schema-tables.md) fornisce tabelle aggiuntive contenenti dati di varie soluzioni di sicurezza di Microsoft 365. Le tabelle seguenti sono disponibili solo in Microsoft 365 Defender:
 
 | Nome della tabella | Descrizione |
 |------------|-------------|
 | [AlertEvidence](advanced-hunting-alertevidence-table.md) | File, indirizzi IP, URL, utenti o dispositivi associati agli avvisi |
-| [AlertInfo](advanced-hunting-alertinfo-table.md) | Avvisi di Microsoft Defender per Endpoint, Microsoft Defender per Office 365, Microsoft Cloud App Security e Microsoft Defender for Identity, incluse le informazioni sulla gravità e le categorie di minacce  |
-| [AppFileEvents](advanced-hunting-appfileevents-table.md) | Attività relative ai file nelle app e nei servizi cloud |
+| [AlertInfo](advanced-hunting-alertinfo-table.md) | Avvisi da Microsoft Defender per Endpoint, Microsoft Defender per Office 365, Microsoft Cloud App Security e Microsoft Defender for Identity, incluse le informazioni sulla gravità e le categorie di minacce  |
+| [AppFileEvents](advanced-hunting-appfileevents-table.md) | Attività correlate ai file in app e servizi cloud |
 | [EmailAttachmentInfo](advanced-hunting-emailattachmentinfo-table.md) | Informazioni sui file allegati ai messaggi di posta elettronica |
-| [EmailEvents](advanced-hunting-emailevents-table.md) | Eventi di posta elettronica di Microsoft 365, inclusi gli eventi di recapito e blocco della posta elettronica |
+| [EmailEvents](advanced-hunting-emailevents-table.md) | Eventi di posta elettronica di Microsoft 365, inclusi il recapito della posta elettronica e gli eventi di blocco |
 | [EmailPostDeliveryEvents](advanced-hunting-emailpostdeliveryevents-table.md) | Eventi di sicurezza che si verificano dopo il recapito, dopo che Microsoft 365 ha recapitato i messaggi di posta elettronica alla cassetta postale del destinatario |
 | [EmailUrlInfo](advanced-hunting-emailurlinfo-table.md) | Informazioni sugli URL nei messaggi di posta elettronica |
-| [IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md) | Eventi che coinvolgono un controller di dominio locale che esegue Active Directory (AD). In questa tabella viene illustrata una serie di eventi correlati all'identità e di eventi di sistema nel controller di dominio. |
+| [IdentityDirectoryEvents](advanced-hunting-identitydirectoryevents-table.md) | Eventi che coinvolgono un controller di dominio locale che esegue Active Directory (AD). In questa tabella viene illustrata una serie di eventi correlati all'identità ed eventi di sistema nel controller di dominio. |
 | [IdentityInfo](advanced-hunting-identityinfo-table.md) | Informazioni sull'account da varie origini, tra cui Azure Active Directory |
-| [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md) | Eventi di autenticazione in Active Directory e Nei servizi online Microsoft |
+| [IdentityLogonEvents](advanced-hunting-identitylogonevents-table.md) | Eventi di autenticazione in Active Directory e Microsoft online Services |
 | [IdentityQueryEvents](advanced-hunting-identityqueryevents-table.md) | Query per oggetti Active Directory, ad esempio utenti, gruppi, dispositivi e domini |
 
 >[!IMPORTANT]
-> Le query e i rilevamenti personalizzati che usano tabelle dello schema disponibili solo in Microsoft 365 Defender possono essere visualizzati solo in Microsoft 365 Defender.
+> Le query e i rilevamenti personalizzati che utilizzano tabelle dello schema disponibili solo in Microsoft 365 Defender possono essere visualizzati solo in Microsoft 365 Defender.
 
 ## <a name="map-devicealertevents-table"></a>Tabella Map DeviceAlertEvents
-Le `AlertInfo` tabelle `AlertEvidence` e `DeviceAlertEvents` sostituiscono la tabella nello schema di Microsoft Defender per endpoint. Oltre ai dati relativi agli avvisi per i dispositivi, queste due tabelle includono dati sugli avvisi per identità, app e messaggi di posta elettronica.
+Le `AlertInfo` tabelle e `AlertEvidence` sostituiscono la tabella nello schema di Microsoft `DeviceAlertEvents` Defender for Endpoint. Oltre ai dati sugli avvisi per i dispositivi, queste due tabelle includono i dati sugli avvisi per identità, app e messaggi di posta elettronica.
 
-Utilizzare la tabella seguente per verificare il mapping `DeviceAlertEvents` delle colonne alle colonne nelle tabelle e nelle `AlertInfo` `AlertEvidence` colonne.
+Utilizzare la tabella seguente per verificare il mapping `DeviceAlertEvents` delle colonne alle colonne nelle tabelle e `AlertInfo` `AlertEvidence` .
 
 >[!TIP]
->Oltre alle colonne della tabella seguente, la tabella include molte altre colonne che forniscono un quadro più olistico degli avvisi `AlertEvidence` provenienti da varie origini. [Visualizzare tutte le colonne AlertEvidence](advanced-hunting-alertevidence-table.md) 
+>Oltre alle colonne della tabella seguente, la tabella include molte altre colonne che forniscono un'immagine più olistica degli avvisi `AlertEvidence` provenienti da varie origini. [Vedi tutte le colonne AlertEvidence](advanced-hunting-alertevidence-table.md) 
 
 | Colonna DeviceAlertEvents | Dove trovare gli stessi dati in Microsoft 365 Defender |
 |-------------|-----------|-------------|-------------|
@@ -89,17 +89,17 @@ Utilizzare la tabella seguente per verificare il mapping `DeviceAlertEvents` del
 | `RemoteUrl` | `AlertEvidence` tavolo |
 | `RemoteIP` | `AlertEvidence` tavolo |
 | `AttackTechniques` | `AlertInfo` tavolo |
-| `ReportId` | Questa colonna viene in genere usata in Microsoft Defender for Endpoint per individuare i record correlati in altre tabelle. In Microsoft 365 Defender, è possibile ottenere i dati correlati direttamente dalla `AlertEvidence` tabella. |
-| `Table` | Questa colonna viene in genere usata in Microsoft Defender per Endpoint per ulteriori informazioni sugli eventi in altre tabelle. In Microsoft 365 Defender, è possibile ottenere i dati correlati direttamente dalla `AlertEvidence` tabella. |
+| `ReportId` | Questa colonna viene in genere utilizzata in Microsoft Defender for Endpoint per individuare i record correlati in altre tabelle. In Microsoft 365 Defender puoi ottenere i dati correlati direttamente dalla `AlertEvidence` tabella. |
+| `Table` | Questa colonna viene in genere usata in Microsoft Defender for Endpoint per ulteriori informazioni sugli eventi in altre tabelle. In Microsoft 365 Defender puoi ottenere i dati correlati direttamente dalla `AlertEvidence` tabella. |
 
-## <a name="adjust-existing-microsoft-defender-for-endpoint-queries"></a>Modificare le query esistenti di Microsoft Defender per endpoint
-Le query di Microsoft Defender per endpoint funzionano così come sono, a meno che non fanno riferimento alla `DeviceAlertEvents` tabella. Per usare queste query in Microsoft 365 Defender, applicare queste modifiche:
+## <a name="adjust-existing-microsoft-defender-for-endpoint-queries"></a>Modificare le query esistenti di Microsoft Defender for Endpoint
+Le query di Microsoft Defender for Endpoint funzionano così come sono, a meno che non fanno riferimento alla `DeviceAlertEvents` tabella. Per usare queste query in Microsoft 365 Defender, applicare queste modifiche:
 
 - Sostituire `DeviceAlertEvents` con `AlertInfo` .
 - Unire le `AlertInfo` tabelle e le tabelle per ottenere dati `AlertEvidence` `AlertId` equivalenti.
 
 ### <a name="original-query"></a>Query originale
-La query seguente usa `DeviceAlertEvents` Microsoft Defender per Endpoint per ottenere gli avvisi che coinvolgono _powershell.exe:_
+La query seguente usa `DeviceAlertEvents` Microsoft Defender for Endpoint per ottenere gli avvisi che coinvolgono _powershell.exe:_
 
 ```kusto
 DeviceAlertEvents
@@ -107,7 +107,7 @@ DeviceAlertEvents
 | where AttackTechniques has "PowerShell (T1086)" and FileName == "powershell.exe"
 ```
 ### <a name="modified-query"></a>Query modificata
-La query seguente è stata modificata per l'uso in Microsoft 365 Defender. Invece di controllare il nome del file direttamente da , esegue il join e verifica il `DeviceAlertEvents` nome del file nella `AlertEvidence` tabella.
+La query seguente è stata modificata per l'utilizzo in Microsoft 365 Defender. Invece di controllare il nome del file direttamente da , viene aggiunta e verificata la `DeviceAlertEvents` presenza del nome del file nella `AlertEvidence` tabella.
 
 ```kusto
 AlertInfo 
@@ -119,16 +119,16 @@ AlertInfo
 
 ## <a name="migrate-custom-detection-rules"></a>Eseguire la migrazione di regole di rilevamento personalizzate
 
-Quando le regole di Microsoft Defender per endpoint vengono modificate in Microsoft 365 Defender, continuano a funzionare come prima se la query risultante esamina solo le tabelle dei dispositivi. 
+Quando le regole di Microsoft Defender for Endpoint vengono modificate in Microsoft 365 Defender, continuano a funzionare come prima se la query risultante esamina solo le tabelle dei dispositivi. 
 
-Ad esempio, gli avvisi generati da regole di rilevamento personalizzate che eseguono query solo sulle tabelle dei dispositivi continueranno a essere recapitati al SIEM e genereranno notifiche tramite posta elettronica, a seconda di come sono stati configurati in Microsoft Defender per Endpoint. Anche le regole di eliminazione esistenti in Defender per Endpoint continueranno a essere applicate.
+Ad esempio, gli avvisi generati da regole di rilevamento personalizzate che eseguono query solo sulle tabelle dei dispositivi continueranno a essere recapitati al SIEM e genereranno notifiche di posta elettronica, a seconda di come sono stati configurati in Microsoft Defender for Endpoint. Anche le regole di eliminazione esistenti in Defender for Endpoint continueranno ad essere applicate.
 
-Dopo aver modificato una regola di Defender per endpoint in modo che eserviti query sulle tabelle di identità e di posta elettronica, disponibili solo in Microsoft 365 Defender, la regola viene spostata automaticamente in Microsoft 365 Defender. 
+Dopo aver modificato una regola di Defender for Endpoint in modo che eseere query sulle tabelle di identità e posta elettronica, disponibili solo in Microsoft 365 Defender, la regola viene spostata automaticamente in Microsoft 365 Defender. 
 
 Avvisi generati dalla regola migrata:
 
 - Non sono più visibili nel portale di Defender for Endpoint (Microsoft Defender Security Center)
-- Interrompere il recapito al SIEM o generare notifiche tramite posta elettronica. Per risolvere questo problema, configurare le notifiche tramite Microsoft 365 Defender per ottenere gli avvisi. È possibile usare [l'API di Microsoft 365 Defender per](api-incident.md) ricevere notifiche per avvisi di rilevamento dei clienti o eventi imprevisti correlati.
+- Smettere di essere recapitati al SIEM o generare notifiche di posta elettronica. Per risolvere questo problema, configurare le notifiche tramite Microsoft 365 Defender per ottenere gli avvisi. Puoi usare [l'API di Microsoft 365 Defender per](api-incident.md) ricevere notifiche per avvisi di rilevamento dei clienti o eventi imprevisti correlati.
 - Non verrà eliminato da Microsoft Defender per le regole di eliminazione degli endpoint. Per impedire la generazione di avvisi per determinati utenti, dispositivi o cassette postali, modificare le query corrispondenti per escludere tali entità in modo esplicito.
 
 Se si modifica una regola in questo modo, verrà richiesta una conferma prima dell'applicazione di tali modifiche.
@@ -137,17 +137,17 @@ I nuovi avvisi generati dalle regole di rilevamento personalizzate nel portale d
 
 - Titolo e descrizione dell'avviso 
 - Asset influenzati
-- Azioni intraprese in risposta all'avviso
+- Azioni eseguite in risposta all'avviso
 - Risultati della query che hanno attivato l'avviso 
 - Informazioni sulla regola di rilevamento personalizzata 
  
-![Immagine della pagina nuovo avviso](../../media/new-alert-page.png)
+![Immagine della pagina del nuovo avviso](../../media/new-alert-page.png)
 
 ## <a name="write-queries-without-devicealertevents"></a>Scrivere query senza DeviceAlertEvents
 
-Nello schema di Microsoft 365 Defender, le tabelle e le tabelle sono disponibili per supportare il set di informazioni diverse che accompagnano gli avvisi `AlertInfo` `AlertEvidence` provenienti da varie origini. 
+Nello schema di Microsoft 365 Defender, le tabelle e vengono fornite per supportare il set diversificato di informazioni che accompagnano `AlertInfo` gli avvisi provenienti da diverse `AlertEvidence` origini. 
 
-Per ottenere le stesse informazioni sull'avviso che hai usato per ottenere dalla tabella nello schema di Microsoft Defender for Endpoint, filtra la tabella in base a e quindi unisci ogni ID univoco alla tabella, che fornisce informazioni dettagliate su eventi ed `DeviceAlertEvents` `AlertInfo` `ServiceSource` `AlertEvidence` entità. 
+Per ottenere le stesse informazioni di avviso che hai usato per ottenere dalla tabella nello schema di Microsoft Defender for Endpoint, filtra la tabella in base a e quindi unisci ogni ID univoco alla tabella, che fornisce informazioni dettagliate sull'evento e `DeviceAlertEvents` `AlertInfo` sull'entità. `ServiceSource` `AlertEvidence` 
 
 Vedi la query di esempio seguente:
 
@@ -158,7 +158,7 @@ AlertInfo
 | join AlertEvidence on AlertId
 ```
 
-Questa query restituisce molte più colonne rispetto allo `DeviceAlertEvents` schema di Microsoft Defender per endpoint. Per mantenere gestibili i risultati, `project` utilizzare per ottenere solo le colonne a cui si è interessati. L'esempio seguente proietta colonne che potrebbero interessarti quando l'indagine ha rilevato attività di PowerShell:
+Questa query restituisce molte più colonne rispetto `DeviceAlertEvents` allo schema di Microsoft Defender for Endpoint. Per mantenere gestibili i risultati, utilizzare per ottenere solo le colonne `project` a cui si è interessati. L'esempio seguente proietta colonne che potrebbero interessarti quando l'indagine ha rilevato l'attività di PowerShell:
 
 ```kusto
 AlertInfo
@@ -182,4 +182,4 @@ AlertInfo
 - [Attivare Microsoft 365 Defender](advanced-hunting-query-language.md)
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)
 - [Comprendere lo schema](advanced-hunting-schema-tables.md)
-- [Ricerca avanzata in Microsoft Defender per Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
+- [Ricerca avanzata in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)

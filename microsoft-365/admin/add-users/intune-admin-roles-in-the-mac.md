@@ -16,18 +16,18 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: I ruoli di amministratore sono associati a funzioni aziendali e forniscono le autorizzazioni per eseguire determinate attività nell'interfaccia di amministrazione. Ad esempio, l'amministratore del servizio apre ticket di supporto presso Microsoft.
-ms.openlocfilehash: 48bb0f3d1a3a239025017fda261945094a3eda79
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: 7f733dab02ab3ff33131be96a96451d7d1c14f55
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126082"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904409"
 ---
 # <a name="intune-admin-roles-in-the-microsoft-365-admin-center"></a>Ruoli di amministratore di Intune nell’interfaccia di amministrazione di Microsoft 365
 
 L'abbonamento a Microsoft 365 o Office 365 include un set di ruoli di amministratore che possono essere assegnati a determinati utenti all'interno dell'organizzazione tramite l'interfaccia di amministrazione di Microsoft 365. Ogni ruolo di amministratore è associato a funzioni aziendali comuni e assegna le autorizzazioni per eseguire determinate attività nelle interfacce di amministrazione.
 
-L'interfaccia di amministrazione di Microsoft 365 consente di gestire alcuni ruoli di Microsoft Intune. Questi ruoli, tuttavia, sono un sottoinsieme dei ruoli disponibili nell’interfaccia di amministrazione di Intune. Per le descrizioni dettagliate dei ruoli di Microsoft Intune, vedere [Controllo degli accessi in base al ruolo con Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/role-based-access-control).
+L'interfaccia di amministrazione di Microsoft 365 consente di gestire alcuni ruoli di Microsoft Intune. Questi ruoli, tuttavia, sono un sottoinsieme dei ruoli disponibili nell’interfaccia di amministrazione di Intune. Per le descrizioni dettagliate dei ruoli di Microsoft Intune, vedere [Controllo degli accessi in base al ruolo con Microsoft Intune](/mem/intune/fundamentals/role-based-access-control).
 
 Per altre informazioni sull'assegnazione di ruoli nell'interfaccia di amministrazione di Microsoft 365, vedere [Assegnare ruoli di amministratore](assign-admin-roles.md).
 
@@ -58,7 +58,7 @@ Un partner può assegnare questi ruoli:
 
 - Amministrazione limitata: questo ruolo dispone di privilegi equivalenti a quelli del ruolo di amministratore di supporto tecnico.
 
-Prima che il partner possa assegnare questi ruoli agli utenti, è necessario aggiungerlo come amministratore con delega al proprio account. Il processo viene avviato da un partner autorizzato, che invia un messaggio di posta elettronica nel quale richiede l'autorizzazione ad agire come amministratore con delega. Per istruzioni, vedere [Autorizzare o rimuovere relazioni con i partner](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner).
+Prima che il partner possa assegnare questi ruoli agli utenti, è necessario aggiungerlo come amministratore con delega al proprio account. Il processo viene avviato da un partner autorizzato, che invia un messaggio di posta elettronica nel quale richiede l'autorizzazione ad agire come amministratore con delega. Per istruzioni, vedere [Autorizzare o rimuovere relazioni con i partner](../misc/add-partner.md).
   
 ## <a name="related-articles"></a>Articoli correlati
 

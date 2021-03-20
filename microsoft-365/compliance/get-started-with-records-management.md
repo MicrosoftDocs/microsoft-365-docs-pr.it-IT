@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Se è necessaria una soluzione di gestione dei record per Microsoft 365 che gestisca i contenuti di valore per obblighi legali, aziendali o normativi, di seguito vengono riportate alcune indicazioni utili per iniziare.
-ms.openlocfilehash: 0dc0258ed53aa07df778f5d0883b02b7635f50d8
-ms.sourcegitcommit: 29eb89b8ba0628fbef350e8995d2c38369a4ffa2
+ms.openlocfilehash: a757cabf13e85731bd16ccd84f1eea3dbe7e432a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "49682723"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906008"
 ---
 # <a name="get-started-with-records-management"></a>Introduzione alla gestione dei record
 
->*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
+>*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Pronto a iniziare a gestire i contenuti di valore dell'organizzazione per gli obblighi legali, aziendali o normativi usando una soluzione di gestione dei record in Microsoft 365? usare le seguenti indicazioni generali:
 
@@ -45,7 +45,7 @@ Pronto a iniziare a gestire i contenuti di valore dell'organizzazione per gli ob
 
 Numerosi abbonamenti diversi supportano la gestione dei record e i requisiti di licenza per gli utenti dipendono dalle funzionalità utilizzate.
 
-Per visualizzare le opzioni di licenza da assegnare agli utenti per trarre vantaggio dalle funzionalità di conformità di Microsoft 365, vedere [Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD). Per la gestione dei record, vedere la sezione [Gestione dei record](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management) e il relativo file PDF o Excel per i requisiti di licenza a livello di funzionalità.
+Per visualizzare le opzioni di licenza da assegnare agli utenti per trarre vantaggio dalle funzionalità di conformità di Microsoft 365, vedere [Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Per la gestione dei record, vedere la sezione [Gestione dei record](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#records-management) e il relativo file PDF o Excel per i requisiti di licenza a livello di funzionalità.
 
 ## <a name="permissions-required-for-records-management"></a>Autorizzazioni necessarie per la gestione dei record
 
@@ -53,9 +53,9 @@ Ai membri del team di conformità responsabili della gestione dei record è nece
 
 Per un ruolo di sola lettura, è possibile creare un nuovo gruppo di ruoli e aggiungere a questo gruppo il ruolo **Gestione dei record View-Only**. 
 
-Per altre informazioni su questi gruppi di ruoli e ruoli, vedere [Autorizzazioni nel Centro sicurezza e conformità](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center#roles-in-the-security--compliance-center).
+Per altre informazioni su questi gruppi di ruoli e ruoli, vedere [Autorizzazioni nel Centro sicurezza e conformità](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center).
 
-Per istruzioni su come aggiungere utenti a gruppi di ruoli e assegnare i ruoli, vedere [Concedere agli utenti l'accesso al Centro sicurezza e conformità](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
+Per istruzioni su come aggiungere utenti a gruppi di ruoli e assegnare i ruoli, vedere [Concedere agli utenti l'accesso al Centro sicurezza e conformità](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 Queste autorizzazioni sono necessarie solo per creare, configurare e applicare etichette di conservazione che dichiarano i record e gestire le eliminazioni. La persona che configura tali etichette non ha bisogno di accedere al contenuto.
 

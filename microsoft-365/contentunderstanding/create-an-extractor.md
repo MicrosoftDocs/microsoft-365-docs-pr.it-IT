@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Informazioni su come creare un estrattore in Microsoft SharePoint Syntex.
-ms.openlocfilehash: b0b03d0e8804097f34f9cd5b17504263097d8696
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 8218d04d2f5cb4e8f8f67bdcd744b7f1a4a4d18a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242501"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905813"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Creare un estrattore in Microsoft SharePoint Syntex.
 
@@ -86,12 +86,12 @@ Per identificare la *Data di avvio del servizio*, è possibile creare una spiega
 4. Selezionare **Salva**.
 
 > [!NOTE]
-> Per altre informazioni sui tipi di spiegazione, vedere [Tipi di spiegazione](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview).  
+> Per altre informazioni sui tipi di spiegazione, vedere [Tipi di spiegazione](./explanation-types-overview.md).  
 
 
 ### <a name="use-the-explanation-library"></a>Usare la raccolta di spiegazioni
 
-Per creare spiegazioni per elementi come le date, è più facile [usare la raccolta di spiegazioni](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-the-explanation-library) piuttosto che immettere manualmente tutte le varianti. La raccolta di spiegazioni è un set di spiegazioni predefinite di tipo frase o criteri. La raccolta cerca di fornire tutti i formati per elenchi di frasi o criteri comuni, come date, numeri di telefono, codici postali e molti altri. 
+Per creare spiegazioni per elementi come le date, è più facile [usare la raccolta di spiegazioni](./explanation-types-overview.md#use-the-explanation-library) piuttosto che immettere manualmente tutte le varianti. La raccolta di spiegazioni è un set di spiegazioni predefinite di tipo frase o criteri. La raccolta cerca di fornire tutti i formati per elenchi di frasi o criteri comuni, come date, numeri di telefono, codici postali e molti altri. 
 
 Per l'esempio *Data di avvio del servizio*, è più efficace usare la spiegazione predefinita per *Data* nella raccolta di spiegazioni:
 

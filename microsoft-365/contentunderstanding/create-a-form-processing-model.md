@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Creare un modello di elaborazione dei moduli in Microsoft SharePoint Syntex.
-ms.openlocfilehash: c025317a5eb88199b849f90b51fac9779e1c97a2
-ms.sourcegitcommit: 162c01dfaa2fdb3225ce4c24964c1065ce22ed5d
+ms.openlocfilehash: d71273e416bf7922627e44d9423eaa8903411689
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "49976010"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905847"
 ---
 # <a name="create-a-form-processing-model-in-microsoft-sharepoint-syntex"></a>Creare un modello di elaborazione dei moduli in Microsoft SharePoint Syntex
 
@@ -27,7 +27,7 @@ ms.locfileid: "49976010"
 
 </br>
 
-Con [AI Builder](https://docs.microsoft.com/ai-builder/overview), una funzionalità di Microsoft PowerApps, gli utenti di SharePoint Syntex possono creare un [modello di elaborazione dei moduli](form-processing-overview.md) direttamente da una raccolta documenti di SharePoint. 
+Con [AI Builder](/ai-builder/overview), una funzionalità di Microsoft PowerApps, gli utenti di SharePoint Syntex possono creare un [modello di elaborazione dei moduli](form-processing-overview.md) direttamente da una raccolta documenti di SharePoint. 
 
 La creazione di un modello di elaborazione dei moduli prevede i passaggi seguenti:
  - Passaggio 1: creare il modello di elaborazione moduli per creare il tipo di contenuto
@@ -68,7 +68,7 @@ Per creare un modello di elaborazione dei moduli, occorre prima di tutto assegna
 Dopo aver creato il nuovo modello di elaborazione dei moduli, nel browser viene aperta una nuova pagina del modello di elaborazione dei moduli di PowerApps AI Builder. In questa pagina è possibile aggiungere e analizzare i documenti di esempio. </br>
 
 > [!NOTE]
-> Quando si cercano file di esempio da usare, vedere i [requisiti dei documenti di input per il modello di elaborazione moduli e suggerimenti per l'ottimizzazione](https://docs.microsoft.com/ai-builder/form-processing-model-requirements). 
+> Quando si cercano file di esempio da usare, vedere i [requisiti dei documenti di input per il modello di elaborazione moduli e suggerimenti per l'ottimizzazione](/ai-builder/form-processing-model-requirements). 
 
    ![Power Apps AI Builder](../media/content-understanding/powerapps.png)</br> 
  
@@ -148,6 +148,6 @@ Dopo aver pubblicato il modello e avere creato il relativo flusso di PowerAutoma
 
 ## <a name="see-also"></a>Vedere anche
   
-[Documentazione di Power Automate](https://docs.microsoft.com/power-automate/)
+[Documentazione di Power Automate](/power-automate/)
 
-[Formazione: migliorare le prestazioni aziendali con AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)
+[Formazione: migliorare le prestazioni aziendali con AI Builder](/learn/paths/improve-business-performance-ai-builder/?source=learn)

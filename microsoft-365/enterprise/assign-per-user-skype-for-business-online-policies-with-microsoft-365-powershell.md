@@ -1,5 +1,5 @@
 ---
-title: Assegnare criteri skype for Business online per utente con PowerShell per Microsoft 365
+title: Assegnare criteri di Skype for Business online per utente con PowerShell per Microsoft 365
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -13,17 +13,17 @@ f1.keywords:
 - NOCSH
 ms.custom: seo-marvel-apr2020
 ms.assetid: 36743c86-46c2-46be-b9ed-ad9d4e85d186
-description: 'Riepilogo: usare PowerShell per Microsoft 365 per assegnare le impostazioni di comunicazione per utente con i criteri di Skype for Business online.'
-ms.openlocfilehash: 6ee237e5d2ee0c9f472f372a6aa66c9612336265
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+description: 'Riepilogo: usare PowerShell per Microsoft 365 per assegnare impostazioni di comunicazione per utente con i criteri di Skype for Business online.'
+ms.openlocfilehash: 2d3d953fe0beb74cc63f914137942f068ce90be7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50514981"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905405"
 ---
-# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Assegnare criteri skype for Business online per utente con PowerShell per Microsoft 365
+# <a name="assign-per-user-skype-for-business-online-policies-with-powershell-for-microsoft-365"></a>Assegnare criteri di Skype for Business online per utente con PowerShell per Microsoft 365
 
-*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
+*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
 L'uso di PowerShell per Microsoft 365 è un modo efficiente per assegnare impostazioni di comunicazione per utente con i criteri di Skype for Business online.
   
@@ -34,7 +34,7 @@ Utilizzare queste istruzioni per ottenere la configurazione che consenta di eseg
   > [!Note]
    > Il connettore di Skype for Business Online fa parte al momento del modulo PowerShell di Teams più recente. Se si usa la versione pubblica di PowerShell di Teams più recente, non è necessario installare il connettore di Skype for Business Online.
 
-1. Installare il [modulo PowerShell di Teams.](https://docs.microsoft.com/microsoftteams/teams-powershell-install)
+1. Installare il [modulo di PowerShell di Teams](/microsoftteams/teams-powershell-install).
     
 2. Aprire il prompt dei comandi Windows PowerShell ed eseguire quanto segue: 
     
@@ -71,7 +71,7 @@ EnablePublicCloudAudioVideoAccess : False
 EnableOutsideAccess               : True
 ```
 
-Quando si conosce il criterio da assegnare ad Alex, è possibile assegnarlo utilizzando il cmdlet [Grant-CsExternalAccessPolicy](https://go.microsoft.com/fwlink/?LinkId=523974). Di seguito viene riportato un esempio:
+Quando si conosce il criterio da assegnare ad Alex, è possibile assegnarlo utilizzando il cmdlet [Grant-CsExternalAccessPolicy](/powershell/module/skype/Get-CsExternalAccessPolicy). Di seguito viene riportato un esempio:
   
 ```powershell
 Grant-CsExternalAccessPolicy -Identity "Alex Darrow" -PolicyName "FederationOnly"
@@ -106,7 +106,7 @@ Il comando imposta il nome del criterio di accesso esterno assegnato ad Alex su 
 
 ## <a name="managing-large-numbers-of-users"></a>Gestione di un numero elevato di utenti
 
-Per gestire un numero elevato di utenti (1000 o più), è necessario eseguire il batch dei comandi tramite un blocco di script utilizzando il cmdlet [Invoke-Command.](https://docs.microsoft.com/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7)  Negli esempi precedenti, ogni volta che viene eseguito un cmdlet, è necessario configurare la chiamata e quindi attendere il risultato prima di inviarlo di nuovo.  Quando si utilizza un blocco di script, i cmdlet possono essere eseguiti in remoto e, una volta completati, inviare nuovamente i dati. 
+Per gestire un numero elevato di utenti (1000 o più), è necessario batch i comandi tramite un blocco di script utilizzando il cmdlet [Invoke-Command.](/powershell/module/microsoft.powershell.core/invoke-command?view=powershell-7)  Negli esempi precedenti, ogni volta che viene eseguito un cmdlet, è necessario configurare la chiamata e quindi attendere il risultato prima di inviarlo di nuovo.  Quando si utilizza un blocco di script, in questo modo i cmdlet possono essere eseguiti in remoto e, una volta completati, inviare di nuovo i dati. 
 
 ```powershell
 $users = Get-CsOnlineUser -Filter { ClientPolicy -eq $null } -ResultSize 500
@@ -133,7 +133,7 @@ $count = 0
 }
 ```
 
-In questo modo verranno trovati 500 utenti alla volta che non dispongono di un criterio client. Concederà loro il criterio client "ClientPolicyNoIMURL" e il criterio di accesso esterno "FederationAndPicDefault". I risultati vengono suddivisi in gruppi di 50 e ogni batch di 50 viene quindi inviato al computer remoto.
+In questo modo verranno trovati 500 utenti alla volta che non dispongono di un criterio client. Concederà loro il criterio client "ClientPolicyNoIMURL" e il criterio di accesso esterno "FederationAndPicDefault". I risultati vengono suddivisi in batch in gruppi di 50 e ogni batch di 50 viene quindi inviato al computer remoto.
   
 ## <a name="see-also"></a>Vedere anche
 

@@ -18,12 +18,12 @@ ms.custom:
 - httpsfix
 ms.assetid: 53d3eef6-4a16-4fb9-903c-816d5d98d7e8
 description: "Riepilogo: Effettuare la connessione a tutti i servizi di Microsoft 365 in un'unica finestra di PowerShell."
-ms.openlocfilehash: cd030018dabff628af18d173cf542a3d375b27d0
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 18ff8e1789242b4dde3b4b31aaccf2462e4c5d74
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515113"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905129"
 ---
 # <a name="connect-to-all-microsoft-365-services-in-a-single-powershell-window"></a>Effettuare la connessione a tutti i servizi di Microsoft 365 in un'unica finestra di PowerShell
 
@@ -38,7 +38,7 @@ Non si tratta di uno scenario ottimale per la gestione di Microsoft 365, poiché
 
 Per poter gestire tutti i servizi di Microsoft 365 da una singola istanza di PowerShell, prendere in considerazione i prerequisiti seguenti:
   
-- L'account aziendale o dell'istituto di istruzione di Microsoft 365 usato per queste procedure deve avere un ruolo di amministratore di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles). Questo è un requisito per PowerShell per Microsoft 365, ma non necessariamente per tutti gli altri servizi di Microsoft 365.
+- L'account aziendale o dell'istituto di istruzione di Microsoft 365 usato per queste procedure deve avere un ruolo di amministratore di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../admin/add-users/about-admin-roles.md). Questo è un requisito per PowerShell per Microsoft 365, ma non necessariamente per tutti gli altri servizi di Microsoft 365.
     
 - È possibile usare le seguenti versioni a 64 bit di Windows:
     
@@ -56,7 +56,7 @@ Per poter gestire tutti i servizi di Microsoft 365 da una singola istanza di Pow
     
   - Windows Server 2008 R2 SP1*
     
-    \* È necessario installare Microsoft .NET Framework 4.5.*x* e quindi Windows Management Framework 3.0 o 4.0. Per altre informazioni, vedere [Windows Management Framework](https://docs.microsoft.com/powershell/scripting/windows-powershell/wmf/overview).
+    \* È necessario installare Microsoft .NET Framework 4.5.*x* e quindi Windows Management Framework 3.0 o 4.0. Per altre informazioni, vedere [Windows Management Framework](/powershell/scripting/windows-powershell/wmf/overview).
     
     È necessario utilizzare una versione a 64 bit di Windows, a causa dei requisiti, per il modulo di Skype for Business Online e una per moduli di Microsoft 365.
     
@@ -64,9 +64,9 @@ Per poter gestire tutti i servizi di Microsoft 365 da una singola istanza di Pow
     
   - [Azure Active Directory V2](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
   - [SharePoint Online Management Shell](https://go.microsoft.com/fwlink/p/?LinkId=255251)
-  - [Skype for Business Online, moduli PowerShell](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
-  - [Exchange Online PowerShell V2](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-v2-module)
-  - [Panoramica di PowerShell per Teams](https://docs.microsoft.com/microsoftteams/teams-powershell-overview)
+  - [Skype for Business Online, moduli PowerShell](/microsoftteams/teams-powershell-overview)
+  - [Exchange Online PowerShell V2](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exchange-online-powershell-v2-module)
+  - [Panoramica di PowerShell per Teams](/microsoftteams/teams-powershell-overview)
     
 -  PowerShell deve essere configurato per l'esecuzione di script firmati per Skype for Business Online e il Centro sicurezza &amp; conformità. Eseguire il comando seguente in una sessione di PowerShell con privilegi elevati, ossia una sessione di PowerShell aperta usando **Esegui come amministratore**.
     
@@ -128,7 +128,7 @@ Seguire questa procedura per connettersi a tutti i servizi in una singola finest
    ```
 
    > [!Note]
-   > Per connettersi a Exchange Online per i cloud di Microsoft 365 diversi da quello internazionale, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+   > Per connettersi a Exchange Online per i cloud di Microsoft 365 diversi da quello internazionale, vedere [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
 7. Eseguire i comandi seguenti per connettersi al Centro sicurezza &amp; conformità.
     
@@ -138,7 +138,7 @@ Seguire questa procedura per connettersi a tutti i servizi in una singola finest
    ```
 
    > [!Note]
-   > Per connettersi al Centro sicurezza &amp; conformità per i cloud di Microsoft 365 diversi da quello internazionale, vedere [Connettersi al Centro sicurezza e conformità di PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+   > Per connettersi al Centro sicurezza &amp; conformità per i cloud di Microsoft 365 diversi da quello internazionale, vedere [Connettersi al Centro sicurezza e conformità di PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 8. Eseguire i comandi seguenti per connettersi a PowerShell di Teams.
     
@@ -149,7 +149,7 @@ Seguire questa procedura per connettersi a tutti i servizi in una singola finest
    ```
   
    > [!Note]
-   > Per connettersi a cloud di Microsoft Teams diversi da quello ** internazionale, vedere [Connect-MicrosoftTeams](https://docs.microsoft.com/powershell/module/teams/connect-microsoftteams).
+   > Per connettersi a cloud di Microsoft Teams diversi da quello ** internazionale, vedere [Connect-MicrosoftTeams](/powershell/module/teams/connect-microsoftteams).
   
 
 

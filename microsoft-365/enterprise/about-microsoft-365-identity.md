@@ -23,18 +23,18 @@ search.appverid:
 - BCS160
 ms.assetid: 06a189e7-5ec6-4af2-94bf-a22ea225a7a9
 description: Informazioni su come gestire il servizio di identità utente di Azure AD in Microsoft 365 usando modelli di identità solo cloud o ibridi.
-ms.openlocfilehash: 6b5b80584408671a1925e32df1fbf458b7c16139
-ms.sourcegitcommit: 04c4252457d9b976d31f53e0ba404e8f5b80d527
+ms.openlocfilehash: b54ccce6ea2a468e02d9db95e7932d847df4e64b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/01/2020
-ms.locfileid: "48327952"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905705"
 ---
 # <a name="microsoft-365-identity-models-and-azure-active-directory"></a>Modelli di identità di Microsoft 365 e Azure Active Directory
 
-*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
+*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
-Microsoft 365 usa Azure Active Directory (Azure AD), un servizio di autenticazione e identità utente basato sul cloud incluso nell'abbonamento a Microsoft 365, per gestire le identità e l'autenticazione per Microsoft 365. Configurare correttamente l'infrastruttura di gestione delle identità è fondamentale per gestire l'accesso utente e le autorizzazioni di Microsoft 365 per l'organizzazione.
+Microsoft 365 usa Azure Active Directory (Azure AD), un servizio di autenticazione e identità utente basato su cloud incluso nell'abbonamento a Microsoft 365, per gestire le identità e l'autenticazione per Microsoft 365. Configurare correttamente l'infrastruttura di identità è fondamentale per gestire l'accesso utente e le autorizzazioni di Microsoft 365 per l'organizzazione.
 
 Prima di iniziare, guardare questo video che illustra i modelli di identità e l'autenticazione per Microsoft 365.
 
@@ -52,7 +52,7 @@ Ecco i due tipi di identità con la descrizione dei vantaggi e dell'ambiente in 
 
 | Attributo | Identità solo cloud | Identità ibrida |
 |:-------|:-----|:-----|
-| **Definizione** | L'account utente esiste solo nel tenant di Azure AD per l'abbonamento a Microsoft 365. | L'account utente esiste in AD DS, ma una copia si trova anche nel tenant di Azure AD per l'abbonamento a Microsoft 365. L'account utente in Azure AD potrebbe anche includere una versione con hash della password dell'account utente di Servizi di dominio Active Directory già con hash. |
+| **Definizione** | L'account utente esiste solo nel tenant di Azure AD per l'abbonamento a Microsoft 365. | L'account utente esiste in AD DS, ma una copia si trova anche nel tenant di Azure AD per l'abbonamento a Microsoft 365. L'account utente in Azure AD potrebbe includere anche una versione con hash della password dell'account utente di Servizi di dominio Active Directory già con hash. |
 | **Autenticazione delle credenziali utente in Microsoft 365** | Per eseguire l'autenticazione, il tenant di Azure AD per l'abbonamento a Microsoft 365 usa l'account dell'identità cloud. | Il tenant di Azure AD per l'abbonamento a Microsoft 365 gestisce il processo di autenticazione oppure reindirizza l'utente a un altro provider di identità. |
 | **Indicato per** | Organizzazioni che non hanno o necessitano di un'istanza locale di AD DS. | Organizzazioni che usano AD DS o un altro provider di identità. |
 | **Principale vantaggio** | Semplice da usare. Non richiede altri strumenti o server di directory. | Gli utenti possono usare le stesse credenziali per accedere a risorse locali o basate sul cloud. |
@@ -60,16 +60,16 @@ Ecco i due tipi di identità con la descrizione dei vantaggi e dell'ambiente in 
 
 ## <a name="cloud-only-identity"></a>Identità solo cloud
 
-Un'identità solo cloud usa solo gli account utente che esistono in Azure AD. L'identità solo cloud viene in genere usata da organizzazioni di piccole dimensioni che non dispongono di server locali o non utilizzano Servizi di dominio Active Directory per gestire le identità locali. 
+Un'identità solo cloud usa solo gli account utente che esistono in Azure AD. L'identità solo cloud viene in genere utilizzata da organizzazioni di piccole dimensioni che non dispongono di server locali o non utilizzano Servizi di dominio Active Directory per gestire le identità locali. 
 
 Ecco i componenti di base dell'identità solo cloud.
  
 ![Componenti di base dell'identità solo cloud](../media/about-microsoft-365-identity/cloud-only-identity.png)
 
-Gli utenti locali e remoti (online) usano gli account utente e le password di Azure AD per accedere ai servizi cloud di Microsoft 365. Azure AD autentica le credenziali utente in base agli account utente e alle password archiviate.
+Sia gli utenti locali che gli utenti remoti (online) usano gli account utente e le password di Azure AD per accedere ai servizi cloud di Microsoft 365. Azure AD autentica le credenziali utente in base agli account utente e alle password archiviate.
 
 ### <a name="administration"></a>Amministrazione
-Poiché gli account utente sono archiviati solo in Azure AD, è possibile gestire le identità cloud con strumenti come l'interfaccia di amministrazione di [Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/add-users/) [e Windows PowerShell.](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md) 
+Poiché gli account utente sono archiviati solo in Azure AD, è possibile gestire le identità cloud con strumenti quali l'interfaccia di amministrazione di [Microsoft 365](../admin/add-users/index.yml) [e Windows PowerShell](manage-user-accounts-and-licenses-with-microsoft-365-powershell.md). 
 
 ## <a name="hybrid-identity"></a>Identità ibrida
 
@@ -99,7 +99,7 @@ Non si usa l'interfaccia di amministrazione di Microsoft 365 o PowerShell per Mi
 
 Se è necessario il modello di identità solo cloud, vedere [Identità solo cloud.](cloud-only-identities.md)
 
-Se è necessario il modello di identità ibrido, vedere [Identità ibrida.](plan-for-directory-synchronization.md)
+Se è necessario il modello di identità ibrido, vedere [Identità ibrida](plan-for-directory-synchronization.md).
 
 
 ## <a name="see-also"></a>Vedere anche

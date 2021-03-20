@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Informazioni su come creare un centro contenuti.
-ms.openlocfilehash: 3544bbef7cf2f898733c7aaad620487098a2dd24
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 34ba45cd62214743e5a6784893e0f24e9815fdfb
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50515137"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905825"
 ---
 # <a name="create-a-content-center-in-microsoft-sharepoint-syntex"></a>Creare un centro contenuti in Microsoft SharePoint Syntex
 
@@ -35,12 +35,12 @@ Per creare e gestire i modelli di analisi del documento, è necessario prima di 
 È possibile creare un centro contenuti predefinito durante la [configurazione](set-up-content-understanding.md). Ma un amministratore di SharePoint può anche scegliere di creare altri centri, se necessario. Anche se un singolo centro contenuti può essere utile per gli ambienti in cui si vuole eseguire un rollup di tutte le attività del modello, è consigliabile avere altri centri per più reparti all'interno dell'organizzazione, che possono avere esigenze e requisiti di autorizzazione diversi per i propri modelli.
 
 > [!NOTE]
-> In un [ambiente Microsoft 365 Multi-Geo](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-multi-geo) se si ha un unico centro contenuti predefinito nella posizione centrale, è possibile fornire un roll-up dell'attività del modello solo dall'interno di tale posizione. Attualmente non è possibile ottenere un roll-up dell'attività del modello attraverso i limiti della farm nell'ambiente multi-geografico. 
+> In un [ambiente Microsoft 365 Multi-Geo](../enterprise/microsoft-365-multi-geo.md) se si ha un unico centro contenuti predefinito nella posizione centrale, è possibile fornire un roll-up dell'attività del modello solo dall'interno di tale posizione. Attualmente non è possibile ottenere un roll-up dell'attività del modello attraverso i limiti della farm nell'ambiente multi-geografico. 
 
 
 ## <a name="create-a-content-center"></a>Creare un centro contenuti
 
-Un amministratore di SharePoint può creare un sito del centro contenuti come [creerebbe qualsiasi altro sito di SharePoint](https://docs.microsoft.com/sharepoint/create-site-collection) tramite il pannello di provisioning del sito dell'interfaccia di amministrazione.
+Un amministratore di SharePoint può creare un sito del centro contenuti come [creerebbe qualsiasi altro sito di SharePoint](/sharepoint/create-site-collection) tramite il pannello di provisioning del sito dell'interfaccia di amministrazione.
 
 Per creare un nuovo centro contenuti:
 
@@ -63,7 +63,7 @@ Dopo aver creato un sito del centro contenuti, questo verrà elencato nella pagi
 
 ### <a name="give-access-to-additional-users"></a>Assegnare l'accesso ad altri utenti
  
-Dopo aver creato il sito, è possibile concedere ad altri utenti l'accesso al sito tramite il [modello di autorizzazioni del sito di SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-sharing-permissions)standard.
+Dopo aver creato il sito, è possibile concedere ad altri utenti l'accesso al sito tramite il [modello di autorizzazioni del sito di SharePoint](/sharepoint/modern-experience-sharing-permissions)standard.
 
 ## <a name="see-also"></a>Vedere anche
 [Creare un classificatore](create-a-classifier.md)
@@ -76,4 +76,4 @@ Dopo aver creato il sito, è possibile concedere ad altri utenti l'accesso al si
 
 [Creare un modello di elaborazione moduli](create-a-form-processing-model.md)
 
-[Applicare un modello](apply-a-model.md)    
+[Applicare un modello](apply-a-model.md)

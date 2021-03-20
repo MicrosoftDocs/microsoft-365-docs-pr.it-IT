@@ -19,22 +19,22 @@ search.appverid:
 - MOE150
 - MET150
 description: Pronti per iniziare a implementare le etichette di riservatezza per proteggere i dati dell'organizzazione, ma in dubbio su come iniziare? Leggere alcune guide pratiche utili per iniziare il percorso di implementazione dell'etichettatura.
-ms.openlocfilehash: ef89cadc09dea7c2186fbf4a0d76d2c690aa8acc
-ms.sourcegitcommit: 8950d3cb0f3087be7105e370ed02c7a575d00ec2
+ms.openlocfilehash: b88e32ccfc0f82749ede2b0919001e9c29f7f7be
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "50597218"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906018"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Iniziare a usare le etichette di riservatezza
 
->*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
+>*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Per informazioni sulle etichette di riservatezza e su come favoriscono la protezione dei dati dell'organizzazione, vedere [informazioni sulle etichette di riservatezza](sensitivity-labels.md).
 
-Se si ha [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-information-protection), determinare se è necessario eseguire la migrazione delle etichette alla piattaforma di etichetta unificata e quale client di etichettatura usare:
-- [Come si può determinare se il tenant si trova nella piattaforma di etichettatura unificata?](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)
-- [Scegliere la soluzione di etichettatura di Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)
+Se si ha [Azure Information Protection](/azure/information-protection/what-is-information-protection), determinare se è necessario eseguire la migrazione delle etichette alla piattaforma di etichetta unificata e quale client di etichettatura usare:
+- [Come si può determinare se il tenant si trova nella piattaforma di etichettatura unificata?](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)
+- [Scegliere la soluzione di etichettatura di Windows](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)
 
 Quando si è pronti per iniziare a proteggere i dati dell'organizzazione usando le etichette di riservatezza:
 
@@ -54,7 +54,7 @@ Procedura di base per la distribuzione e l'applicazione di etichette di riservat
 
 Numerosi abbonamenti diversi supportano le etichette di riservatezza e i requisiti di licenza per gli utenti dipendono dalle funzionalità utilizzate.
 
-Per visualizzare le opzioni di licenza da assegnare agli utenti per trarre vantaggio dalle funzionalità di conformità di Microsoft 365, vedere [Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD). Per le etichette di riservatezza, vedere la sezione [Information Protection](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) e il download del relativo PDF o Excel.
+Per visualizzare le opzioni di licenza da assegnare agli utenti per trarre vantaggio dalle funzionalità di conformità di Microsoft 365, vedere [Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Per le etichette di riservatezza, vedere la sezione [Information Protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection) e il download del relativo PDF o Excel.
 
 ## <a name="permissions-required-to-create-and-manage-sensitivity-labels"></a>Autorizzazioni necessarie per creare e gestire etichette di riservatezza
 
@@ -64,7 +64,7 @@ Per impostazione predefinita, gli amministratori globali del tenant hanno access
 
 In alternativa all'utilizzo dei ruoli predefiniti, è possibile creare un nuovo gruppo di ruoli e aggiungere l’**amministratore dell'etichetta di riservatezza** o la **configurazione dell’organizzazione** al gruppo. Per un ruolo di sola lettura, usare **Lettore di etichette di riservatezza**. 
 
-Per istruzioni su come aggiungere utenti ai ruoli predefiniti o creare i gruppi di ruoli, vedere [Concedere agli utenti l'accesso al Centro sicurezza e conformità di Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
+Per istruzioni su come aggiungere utenti ai ruoli predefiniti o creare i gruppi di ruoli, vedere [Concedere agli utenti l'accesso al Centro sicurezza e conformità di Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 Queste autorizzazioni sono necessarie solo per creare e configurare le etichette di riservatezza e i relativi criteri di etichetta. Non sono invece necessarie per applicare le etichette nelle app o nei servizi. Se sono necessarie autorizzazioni aggiuntive per configurazioni specifiche relative alle etichette di riservatezza, tali autorizzazioni verranno riportate nelle rispettive istruzioni nella documentazione.
 
@@ -82,19 +82,19 @@ Tutti gli scenari richiedono di [Creare e configurare etichette di riservatezza 
 |Operazione da eseguire|Documentazione|
 |----------------|---------------|
 |Gestire le etichette di riservatezza per le app di Office in modo che il contenuto venga etichettato non appena creato, incluso il supporto per l’etichettatura manuale su tutte le piattaforme |[Gestire le etichette di riservatezza nelle app di Office](sensitivity-labels-office-apps.md)|
-|Consentire agli utenti di etichettare e proteggere i file dai computer Windows tramite app di Office, Esplora file e PowerShell|[Client di etichettatura unificata di Azure Information Protection per Windows](https://docs.microsoft.com/azure/information-protection/rms-client/aip-clientv2)|
+|Consentire agli utenti di etichettare e proteggere i file dai computer Windows tramite app di Office, Esplora file e PowerShell|[Client di etichettatura unificata di Azure Information Protection per Windows](/azure/information-protection/rms-client/aip-clientv2)|
 |Crittografare documenti e messaggi di posta elettronica con etichette di riservatezza e limitare gli utenti autorizzati ad accedervi e il relativo uso |[Limitare l'accesso al contenuto utilizzando le etichette di riservatezza per applicare la crittografia](encryption-sensitivity-labels.md)|
 |Abilitare le etichette di riservatezza per Office sul Web, con supporto per creazione condivisa, eDiscovery, prevenzione della perdita dei dati e ricerca, anche quando i documenti sono crittografati | [Abilitare le etichette di riservatezza per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md)
 |Usare la creazione condivisa e il salvataggio automatico nelle app desktop di Office quando i documenti sono crittografati | [Abilitare la creazione condivisa di file crittografati con etichette di riservatezza](sensitivity-labels-coauthoring.md)
 |Applicare automaticamente etichette di riservatezza ai documenti e ai messaggi di posta elettronica | [Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md)|
 |Usare le etichette di riservatezza per proteggere il contenuto in Teams e SharePoint |[Usare le etichette di riservatezza con Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint](sensitivity-labels-teams-groups-sites.md)|
 |Impedisce l’uso da parte degli utenti o li mette in guardia dal condividere file o messaggi di posta elettronica con una specifica etichetta di riservatezza |[Usare le etichette di riservatezza come condizioni nei criteri di prevenzione della perdita dei dati (anteprima)](dlp-sensitivity-label-as-condition.md) |
-|Individuare, etichettare e proteggere i file archiviati negli archivi dati locali |[Distribuzione dello strumento di analisi Azure Information Protection per classificare e proteggere automaticamente i file](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)|
-|Individuare, etichettare e proteggere i file archiviati negli archivi dati nel cloud|[Individuare, classificare, etichettare e proteggere i dati regolamentati e sensibili archiviati nel cloud](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
-|Applicare e visualizzare le etichette in Power BI e proteggere i dati quando vengono salvati all'esterno del servizio.|[Etichette di riservatezza in Power BI](https://docs.microsoft.com/power-bi/admin/service-security-sensitivity-label-overview)|
+|Individuare, etichettare e proteggere i file archiviati negli archivi dati locali |[Distribuzione dello strumento di analisi Azure Information Protection per classificare e proteggere automaticamente i file](/azure/information-protection/deploy-aip-scanner)|
+|Individuare, etichettare e proteggere i file archiviati negli archivi dati nel cloud|[Individuare, classificare, etichettare e proteggere i dati regolamentati e sensibili archiviati nel cloud](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)|
+|Applicare e visualizzare le etichette in Power BI e proteggere i dati quando vengono salvati all'esterno del servizio.|[Etichette di riservatezza in Power BI](/power-bi/admin/service-security-sensitivity-label-overview)|
 |Monitorare e capire come vengono usate le etichette di riservatezza nell'organizzazione|[Conoscere i dati - Panoramica della classificazione dei dati](data-classification-overview.md) <br /><br /> [Introduzione alla classificazione dei dati](data-classification-overview.md)|
-|Estendere le etichette di riservatezza ad app e servizi di terze parti|[SDK di Microsoft Information Protection](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk)|
-|Estendere etichette di riservatezza ai contenuti di Archiviazione BLOB di Azure, File di Azure, Azure Data Lake Storage Gen1 e Azure Data Lake Storage Gen12|[Etichettare automaticamente contenuti in Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label) |
+|Estendere le etichette di riservatezza ad app e servizi di terze parti|[SDK di Microsoft Information Protection](/information-protection/develop/overview#microsoft-information-protection-sdk)|
+|Estendere etichette di riservatezza ai contenuti di Archiviazione BLOB di Azure, File di Azure, Azure Data Lake Storage Gen1 e Azure Data Lake Storage Gen12|[Etichettare automaticamente contenuti in Azure Purview](/azure/purview/create-sensitivity-label) |
 
 
 ## <a name="end-user-documentation-for-sensitivity-labels"></a>Documentazione per gli utenti finali sulle etichette di riservatezza
@@ -111,6 +111,6 @@ Per supportare la scrittura di documentazioni personalizzate, questo post di blo
 - [Applicare automaticamente o consigliare l'applicazione di etichette di riservatezza ai file e ai messaggi di posta elettronica in Office](https://support.office.com/article/automatically-apply-or-recommend-sensitivity-labels-to-your-files-and-emails-in-office-622e0d9c-f38c-470a-bcdb-9e90b24d71a1)
     - [Problemi noti con l'applicazione automatica o consigliata delle etichette di riservatezza](https://support.office.com/article/known-issues-with-automatically-applying-or-recommending-sensitivity-labels-451698ae-311b-4d28-83aa-a839a66f6efc)
 
-- [Manuale dell’utente per l’etichettatura unificata di Azure Information Protection](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-user-guide)
+- [Manuale dell’utente per l’etichettatura unificata di Azure Information Protection](/azure/information-protection/rms-client/clientv2-user-guide)
 
-Se le etichette di sensitività applicano la crittografia per i documenti PDF, è possibile aprire questi documenti con Microsoft Edge in Windows o Mac. Per altre informazioni e per lettori alternativi, vedere [quali lettori PDF sono supportati per i PDF protetti?](https://docs.microsoft.com/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)
+Se le etichette di sensitività applicano la crittografia per i documenti PDF, è possibile aprire questi documenti con Microsoft Edge in Windows o Mac. Per altre informazioni e per lettori alternativi, vedere [quali lettori PDF sono supportati per i PDF protetti?](/azure/information-protection/rms-client/protected-pdf-readers#viewing-protected-pdfs-in-microsoft-edge-on-windows-or-mac)

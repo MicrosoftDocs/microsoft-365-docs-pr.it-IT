@@ -14,13 +14,13 @@ ms.collection:
 - Strat_SP_gtc
 - SPO_Content
 localization_priority: Normal
-description: Gli amministratori possono scoprire come amministrare i servizi di SharePoint e OneDrive in un ambiente multi-geografico.
-ms.openlocfilehash: 1b6d2cb1cb9511677f717f0e58553abc4473e1ad
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: Gli amministratori possono informazioni su come amministrare i servizi di SharePoint e OneDrive in un ambiente multi-geografico.
+ms.openlocfilehash: 213070f2f7a04e15a1e2ac3cd9a3ae697b66a718
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46690950"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905601"
 ---
 # <a name="administering-a-multi-geo-environment"></a>Amministrare un ambiente multi-geografico
 
@@ -76,17 +76,17 @@ Gli amministratori possono impostare e gestire criteri di condivisione per ognun
 
 ## <a name="taxonomy"></a>Tassonomia
 
-Microsoft offre supporto per una [tassonomia](https://docs.microsoft.com/sharepoint/managed-metadata) univoca per l'organizzazione dei metadati gestiti tra le località geografiche, con lo schema contenuto nella posizione centrale per l'azienda. È consigliabile gestire la tassonomia globale da una posizione centrale e aggiungere solo termini specifici di una posizione alla posizione della tassonomia satellitare. I termini di tassonomia globale verranno sincronizzate con la posizione satellitare.
+Microsoft offre supporto per una [tassonomia](/sharepoint/managed-metadata) univoca per l'organizzazione dei metadati gestiti tra le località geografiche, con lo schema contenuto nella posizione centrale per l'azienda. È consigliabile gestire la tassonomia globale da una posizione centrale e aggiungere solo termini specifici di una posizione alla posizione della tassonomia satellitare. I termini di tassonomia globale verranno sincronizzate con la posizione satellitare.
 
-Vedere [Gestire i metadati in un tenant multi-geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-managedmetadata) per ulteriori informazioni e istruzioni per gli sviluppatori.
+Vedere [Gestire i metadati in un tenant multi-geo](/sharepoint/dev/solution-guidance/multigeo-managedmetadata) per ulteriori informazioni e istruzioni per gli sviluppatori.
 
 ## <a name="user-profile-application"></a>Applicazione profilo utente
 
-Esiste un'[applicazione del profilo utente](https://docs.microsoft.com/sharepoint/manage-user-profiles) in ogni posizione geografica. Le informazioni del profilo di ogni utente si trovano nella relativa posizione geografica e sono a disposizione dell'amministratore per tale posizione.
+Esiste un'[applicazione del profilo utente](/sharepoint/manage-user-profiles) in ogni posizione geografica. Le informazioni del profilo di ogni utente si trovano nella relativa posizione geografica e sono a disposizione dell'amministratore per tale posizione.
 
-Se si dispone di proprietà personalizzate del profilo, è consigliabile usare lo stesso schema del profilo tra le aree geografiche e popolare le proprietà personalizzate del profilo anche in tutte le posizioni geografiche o laddove necessario.  Per istruzioni su come popolare i dati dei profili utente a livello di programmazione, fare riferimento a [API di aggiornamento del profilo utente in blocco](https://docs.microsoft.com/sharepoint/dev/solution-guidance/bulk-user-profile-update-api-for-sharepoint-online).
+Se si dispone di proprietà personalizzate del profilo, è consigliabile usare lo stesso schema del profilo tra le aree geografiche e popolare le proprietà personalizzate del profilo anche in tutte le posizioni geografiche o laddove necessario.  Per istruzioni su come popolare i dati dei profili utente a livello di programmazione, fare riferimento a [API di aggiornamento del profilo utente in blocco](/sharepoint/dev/solution-guidance/bulk-user-profile-update-api-for-sharepoint-online).
 
-Vedere [Utilizzo dei profili utente per un tenant multi-geo](https://docs.microsoft.com/sharepoint/dev/solution-guidance/multigeo-userprofileexperience) per ulteriori informazioni e istruzioni per gli sviluppatori.
+Vedere [Utilizzo dei profili utente per un tenant multi-geo](/sharepoint/dev/solution-guidance/multigeo-userprofileexperience) per ulteriori informazioni e istruzioni per gli sviluppatori.
 
 ## <a name="video-portal"></a>Portale video
 
@@ -107,4 +107,4 @@ Tuttavia, Stream non è ancora disponibile nei seguenti paesi/aree geografiche a
 
 ## <a name="yammer"></a>Yammer
 
-Yammer non è un carico di lavoro Multi-Geo. I thread di Yammer archiviati in Yammer verranno posizionati nella posizione centrale del tenant. Yammer sta implementazione di una modifica all'archiviazione dei file che archivierà i file di Yammer all'interno di SharePoint. I file di Yammer archiviati in SharePoint verranno posizionati nel sito di SharePoint associato al gruppo di Yammer. I siti dei gruppi di SharePoint si basano sulla logica PDL, come descritto in [Siti e gruppi di SharePoint.](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups)
+Yammer non è un carico di lavoro multi-geografico. I thread di Yammer archiviati in Yammer verranno posizionati nella posizione centrale del tenant. Yammer sta implementazione di una modifica di archiviazione dei file che archivierà i file di Yammer in SharePoint. I file di Yammer archiviati in SharePoint verranno inseriti nel sito di SharePoint associato al gruppo di Yammer. I siti dei gruppi di SharePoint si basano sulla logica PDL, come descritto in [Siti e gruppi di SharePoint.](multi-geo-capabilities-in-onedrive-and-sharepoint-online-in-microsoft-365.md#sharepoint-sites-and-groups)

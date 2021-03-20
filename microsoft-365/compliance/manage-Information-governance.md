@@ -14,16 +14,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Implementare le funzionalità di Governance delle informazioni Microsoft per gestire i dati in base ai requisiti di conformità o normativi.
-ms.openlocfilehash: 6b06de54f18ce4081c3b13d108a5c0ceae6d24a7
-ms.sourcegitcommit: e7bf23df4852b78912229d1d38ec475223597f34
+ms.openlocfilehash: 8a104775cd9bfc75af5b5af9840274f5f84509f0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "49087115"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903492"
 ---
 # <a name="microsoft-information-governance-in-microsoft-365"></a>Governance delle informazioni Microsoft in Microsoft 365
 
->*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
+>*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Usare le funzionalità di Governance delle informazioni Microsoft, a volte abbreviato in MIG, per gestire i dati in base ai requisiti di conformità o normativi.
 
@@ -49,4 +49,3 @@ Per gestire contenuti di valore elevato per obblighi legali, aziendali o normati
 |Funzionalità|Che problemi risolve?|Per iniziare|
 |:------|:------------|---------------------|:----------------------------|
 |[Gestione record](records-management.md)| Un'unica soluzione per la posta elettronica e i documenti che incorpora pianificazione e requisiti di conservazione in un piano di archiviazione che supporta l'intero ciclo di vita del contenuto con dichiarazioni, conservazione ed eliminazione dei record <br /><br />Scenario di esempio: [Eliminazione dei record](disposition.md#disposition-of-records)|[Introduzione alla gestione dei record](get-started-with-records-management.md) |
-

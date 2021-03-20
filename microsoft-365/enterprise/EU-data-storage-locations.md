@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Determinare dove sono archiviati i dati dei clienti Microsoft 365 nell’Unione europea.
-ms.openlocfilehash: 78c2ae75656df017631fce0a189f6e25ee44f20f
-ms.sourcegitcommit: 4cbb4ec26f022f5f9d9481f55a8a6ee8406968d2
+ms.openlocfilehash: 28bfa7c18aff485e084e4d77bb2a36f0f5b7e95f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49527686"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905681"
 ---
 # <a name="data-locations-for-the-european-union"></a>Posizioni dei dati per l'Unione europea
 
@@ -74,14 +74,14 @@ Quando si inizia a usare uno dei servizi sopraindicati, i calcoli necessari per 
 
 Se è necessario un trasferimento temporaneo, si impiegherà sempre crittografia all'avanguardia per il trasferimento e i dati verranno reindirizzati subito dopo alla posizione di archiviazione dati scelta. Questi trasferimenti temporanei vengono effettuati in conformità al diritto europeo applicando le clausole contrattuali standard (SCCs) per i trasferimenti temporanei, insieme alle misure aggiuntive per garantire la protezione dei dati. 
 
-Per altre informazioni, vedere [Clausole del modello dell'Unione europea](https://docs.microsoft.com/microsoft-365/compliance/offering-eu-model-clauses).
+Per altre informazioni, vedere [Clausole del modello dell'Unione europea](/compliance/regulatory/offering-EU-Model-Clauses).
 
 >[!Note]
 >Se si sceglie di usare questi servizi, i dati dei clienti di Sway e Workplace Analytics verranno archiviati e calcolati negli Stati Uniti.
 >
 
 >[!Note]
->Dove necessario, i servizi di Microsoft 365 potrebbero eseguire query e archiviare parti di informazioni di directory del tenant/dati di identità in aree diverse dall'UE per facilitare alcuni scenari. Ad esempio, in scenari di routing della posta elettronica transregionale, routing e autenticazione delle chiamate, i sistemi Microsoft 365 potrebbero necessitare di alcune informazioni sui destinatari UE per instradare le richieste in modo appropriato. Anche i sistemi Microsoft 365 variano in base alle funzioni di identità e autenticazione di Azure Active Directory. Per altre informazioni, vedere [archiviazione di dati di identità per clienti europei in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-data-storage-eu).
+>Dove necessario, i servizi di Microsoft 365 potrebbero eseguire query e archiviare parti di informazioni di directory del tenant/dati di identità in aree diverse dall'UE per facilitare alcuni scenari. Ad esempio, in scenari di routing della posta elettronica transregionale, routing e autenticazione delle chiamate, i sistemi Microsoft 365 potrebbero necessitare di alcune informazioni sui destinatari UE per instradare le richieste in modo appropriato. Anche i sistemi Microsoft 365 variano in base alle funzioni di identità e autenticazione di Azure Active Directory. Per altre informazioni, vedere [archiviazione di dati di identità per clienti europei in Azure Active Directory](/azure/active-directory/fundamentals/active-directory-data-storage-eu).
 >
 
 ## <a name="how-microsoft-protects-your-data"></a>In che modo Microsoft protegge i dati
@@ -126,8 +126,7 @@ Per altre informazioni, vedere [Domande frequenti](https://blogs.microsoft.com/d
 ## <a name="additional-resources"></a>Risorse aggiuntive
  
 - [Protezione dei dati attendibili](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4FhZn) offre una panoramica del modo in cui Microsoft protegge i dati quando si usano i Microsoft Online Services e i servizi professionali. È anche consigliabile consultare i [Microsoft Online Services terms (OST) e la Data Protection Addendum (DPA)](https://www.microsoft.com/licensing/product-licensing/products) che regolano l'uso di questi servizi.
-- [Richieste dell'interessato per il GDPR in Office 365](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dsr-office365) Aiuta a individuare i dati personali o le informazioni personali ed effettuare operazioni su di essi per rispondere alle richieste degli interessati usando prodotti, servizi e strumenti amministrativi di Microsoft 365. 
-- [Valutazione d'impatto sulla protezione dei dati: guida per i titolari del trattamento dei dati che utilizzano Microsoft Office 365](https://docs.microsoft.com/microsoft-365/compliance/gdpr-dpia-office365) aiuta a determinare se l'organizzazione deve redigere una bozza di DPIA, offre indicazioni su "come", include un documento modello DPIA personalizzabile e fornisce una matrice di elementi del servizio DPIA per molti servizi Microsoft 365.
-- [Informazioni sul modo in cui i moduli](https://docs.microsoft.com/learn/paths/audit-safeguard-customer-data/) sono stati concepiti per le persone che addette a controlli, conformità, rischi e ruoli legali, che cercano una comprensione generale, forniscono una panoramica approfondita delle procedure fondamentali di Microsoft 365 per la sicurezza e la privacy per proteggere i dati dei clienti.
-- [Offerte per la conformità Microsoft](https://docs.microsoft.com/microsoft-365/compliance/offering-home) illustra come i servizi Microsoft 365 aiutano l’organizzazione a soddisfare gli standard di conformità normativa. 
-
+- [Richieste dell'interessato per il GDPR in Office 365](/compliance/regulatory/gdpr-dsr-Office365) Aiuta a individuare i dati personali o le informazioni personali ed effettuare operazioni su di essi per rispondere alle richieste degli interessati usando prodotti, servizi e strumenti amministrativi di Microsoft 365. 
+- [Valutazione d'impatto sulla protezione dei dati: guida per i titolari del trattamento dei dati che utilizzano Microsoft Office 365](/compliance/regulatory/gdpr-dpia-office365) aiuta a determinare se l'organizzazione deve redigere una bozza di DPIA, offre indicazioni su "come", include un documento modello DPIA personalizzabile e fornisce una matrice di elementi del servizio DPIA per molti servizi Microsoft 365.
+- [Informazioni sul modo in cui i moduli](/learn/paths/audit-safeguard-customer-data/) sono stati concepiti per le persone che addette a controlli, conformità, rischi e ruoli legali, che cercano una comprensione generale, forniscono una panoramica approfondita delle procedure fondamentali di Microsoft 365 per la sicurezza e la privacy per proteggere i dati dei clienti.
+- [Offerte per la conformità Microsoft](/compliance/regulatory/offering-home) illustra come i servizi Microsoft 365 aiutano l’organizzazione a soddisfare gli standard di conformità normativa.

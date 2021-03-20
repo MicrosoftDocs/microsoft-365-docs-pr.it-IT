@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Informazioni sulla procedura di configurazione di Microsoft 365 necessaria per consentire a un team di comunicare, collaborare ad attività e documenti con utenti guest in Teams.
-ms.openlocfilehash: 986f9c1f343c8ccc3d76557291938d170923c89b
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 4e734af198563d0bc4599b4476b3823384989212
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712319"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904661"
 ---
 # <a name="collaborate-with-guests-in-a-team"></a>Collaborazione con gli utenti guest in un team
 
@@ -38,7 +38,7 @@ Il video mostra la procedura di configurazione descritta in questo documento.</b
 
 ## <a name="azure-external-collaboration-settings"></a>Impostazioni di collaborazione esterna di Azure
 
-La condivisione in Microsoft 365 è regolata al livello più alto dalle [impostazioni di collaborazione esterna B2B in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/external-identities/delegate-invitations). Se in Azure AD la condivisione con gli utenti guest è disabilitata o limitata, questa impostazione sovrascrive tutte le impostazioni di condivisione configurate in Microsoft 365.
+La condivisione in Microsoft 365 è regolata al livello più alto dalle [impostazioni di collaborazione esterna B2B in Azure Active Directory](/azure/active-directory/external-identities/delegate-invitations). Se in Azure AD la condivisione con gli utenti guest è disabilitata o limitata, questa impostazione sovrascrive tutte le impostazioni di condivisione configurate in Microsoft 365.
 
 Controllare le impostazioni di collaborazione esterna B2B per assicurarsi che la condivisione con gli utenti guest non sia bloccata.
 
@@ -74,7 +74,7 @@ Per configurare le impostazioni di accesso guest di Teams
 5. Assicurarsi che l'opzione **Consenti accesso ospite in Teams** sia **** abilitata.
 6. Apportare le modifiche desiderate alle impostazioni guest aggiuntive e quindi fare clic su **Salva**.
 
-Dopo aver attivato l'accesso guest in Teams, è possibile controllare in modo facoltativo l'accesso guest a singoli team e relativi siti di SharePoint associati usando etichette di riservatezza. Per altre informazioni, vedere [Usare le etichette di riservatezza per proteggere i contenuti in Microsoft Teams, Gruppi di Microsoft 365 e nei siti di SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+Dopo aver attivato l'accesso guest in Teams, è possibile controllare in modo facoltativo l'accesso guest a singoli team e relativi siti di SharePoint associati usando etichette di riservatezza. Per altre informazioni, vedere [Usare le etichette di riservatezza per proteggere i contenuti in Microsoft Teams, Gruppi di Microsoft 365 e nei siti di SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 > [!NOTE]
 > Dopo l'attivazione, potrebbero essere necessarie fino a 24 ore prima che le impostazioni guest di Teams diventino effettive.
@@ -187,6 +187,6 @@ Per invitare utenti guest in un team
 
 [Creare una Extranet B2B con guest gestiti](b2b-extranet.md).
 
-[Integrazione di SharePoint e OneDrive con Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview)
+[Integrazione di SharePoint e OneDrive con Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview)
 
-[Le opzioni di condivisione sono disattivate quando si condivide da SharePoint o OneDrive](https://docs.microsoft.com/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)
+[Le opzioni di condivisione sono disattivate quando si condivide da SharePoint o OneDrive](/sharepoint/troubleshoot/administration/sharing-options-grayed-out-when-sharing-from-sharepoint-online-or-onedrive)

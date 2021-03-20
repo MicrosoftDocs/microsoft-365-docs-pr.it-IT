@@ -25,19 +25,19 @@ search.appverid:
 - MOE150
 ms.assetid: 44d96212-4d90-4027-9aa9-a95eddb367d1
 description: 'Seguire questo elenco di controllo per rimuovere un dipendente da Microsoft 365 e proteggere i dati. '
-ms.openlocfilehash: a875a8b7620067cdae46fcae3bb7ef8ce7d148fa
-ms.sourcegitcommit: 0d709e9ab0d8d56c5fc11a921298f82e40e122c5
+ms.openlocfilehash: 2372056cd6bee2387842c74dc2a35d71b88fae9e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50114058"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904397"
 ---
 # <a name="remove-or-delete-a-former-employee"></a>Rimuovere o eliminare un ex dipendente
 
 ::: moniker range="o365-21vianet"
 
 > [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/microsoft-365-admin-center-preview?view=o365-21vianet&preserve-view=true).
+> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 ::: moniker-end
   
@@ -45,7 +45,7 @@ ms.locfileid: "50114058"
 
 ::: moniker range="o365-worldwide"
 
-Guardare un breve video sulla rimozione di un dipendente. <br><br>
+Guarda un breve video sulla rimozione di un dipendente. <br><br>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR] 
 
@@ -55,8 +55,8 @@ Per impedire a un dipendente di accedere:
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
 2. Selezionare la casella accanto al nome dell'utente e quindi selezionare **Reimposta password.**
-3. Immettere una nuova password e quindi selezionare **Reimposta.** Non inviarlo.
-4. Selezionare il nome dell'utente per passare al riquadro delle proprietà e nella scheda **Account** selezionare **Avvia disconnessione.**
+3. Immettere una nuova password e quindi selezionare **Reimposta**. Non inviarlo a loro.
+4. Selezionare il nome dell'utente per passare al riquadro delle proprietà e nella **scheda Account** selezionare **Avvia disconnessione.**
 
 ::: moniker-end
 
@@ -66,9 +66,9 @@ Per impedire a un dipendente di accedere:
 
 2. Selezionare l'utente e quindi fare clic **su Reimposta password.**
 
-3. Immettere una nuova password e quindi selezionare **Reimposta.** Non inviarlo.
+3. Immettere una nuova password e quindi selezionare **Reimposta**. Non inviarlo a loro.
 
-4. Selezionare il nome dell'utente per passare al riquadro delle proprietà e nella scheda **Account** selezionare **Avvia disconnessione.**
+4. Selezionare il nome dell'utente per passare al riquadro delle proprietà e nella **scheda Account** selezionare **Avvia disconnessione.**
 
 ::: moniker-end
 
@@ -78,44 +78,44 @@ Per impedire a un dipendente di accedere:
 
 2. Selezionare l'utente e quindi fare clic **su Reimposta password.**
 
-3. Immettere una nuova password e quindi selezionare **Reimposta.** Non inviarlo.
+3. Immettere una nuova password e quindi selezionare **Reimposta**. Non inviarlo a loro.
 
-4. Selezionare il nome dell'utente per passare al riquadro delle proprietà e nella scheda **Account** selezionare **Avvia disconnessione.**
+4. Selezionare il nome dell'utente per passare al riquadro delle proprietà e nella **scheda Account** selezionare **Avvia disconnessione.**
 
 ::: moniker-end
 
 > [!NOTE]
-> Per avviare la disconnessione, è necessario essere un amministratore globale.
+> È necessario essere un amministratore globale per avviare la disconnessione.
 
-Entro un'ora o dopo aver lasciato la pagina corrente di Microsoft 365 in cui si trova, viene richiesto di accedere di nuovo. Un token di accesso è valido per un'ora, quindi la sequenza temporale dipende dal tempo che rimane su tale token e dal fatto che si snavigare dalla pagina Web corrente.
+Entro un'ora o dopo aver lasciato la pagina corrente di Microsoft 365 in cui si trova, viene richiesto di eseguire di nuovo l'accesso. Un token di accesso è valido per un'ora, quindi la sequenza temporale dipende dal tempo che rimane su quel token e dal fatto che si snavigare fuori dalla pagina Web corrente.
   
 > [!IMPORTANT]
-> Se l'utente si trova in Outlook sul Web, facendo semplicemente clic nella propria cassetta postale, potrebbe non essere espulso immediatamente. Non appena selezionano un riquadro diverso, ad esempio OneDrive, o aggiornano il browser, viene avviata la disconnessione.
+> Se l'utente si trova in Outlook sul Web, basta fare clic nella propria cassetta postale, potrebbe non essere espulso immediatamente. Non appena selezionano un riquadro diverso, ad esempio OneDrive, o aggiornano il browser, viene avviata la disconnessione.
   
-Per usare PowerShell per disconnettere immediatamente un utente, vedere il cmdlet [Revoke-AzureADUserAllRefreshToken](https://go.microsoft.com/fwlink/?linkid=841345).
+Per usare PowerShell per disconnettere immediatamente un utente, vedere il cmdlet [Revoke-AzureADUserAllRefreshToken](/powershell/module/azuread/revoke-azureaduserallrefreshtoken).
   
 Per altre informazioni sul tempo necessario per rimuovere un dipendente dalla posta elettronica, vedere [Cosa occorre sapere sulla chiusura delle sessione di posta elettronica di un dipendente](#what-you-need-to-know-about-terminating-an-employees-email-session).
   
 ## <a name="overview-of-all-the-steps-to-remove-an-employee-and-secure-data"></a>Panoramica della procedura completa per rimuovere un dipendente e proteggere i dati
 
-Una domanda che riceviamo spesso è: "Cosa devo fare per proteggere i dati quando un dipendente lascia l'organizzazione?" Questo articolo spiega come bloccare l'accesso a Microsoft 365 e i passaggi da eseguire per proteggere i dati.
+Una domanda che spesso ci viene data è: "Cosa devo fare per proteggere i dati quando un dipendente lascia l'organizzazione?" Questo articolo spiega come bloccare l'accesso a Microsoft 365 e i passaggi da eseguire per proteggere i dati.
   
 > [!NOTE]
-> If you are a global administrator you can delete the employee, forward their email, choose what to do with their OneDrive content using the new guided experience. Per ulteriori informazioni, vedere [Amministratore globale: Eliminare un utente.](remove-former-employee.md) Tuttavia, ti consigliamo di completare tutti i passaggi aggiuntivi elencati qui per assicurarti che il dipendente non abbia accesso ai dati della tua azienda. 
+> Gli amministratori globali possono eliminare il dipendente, inoltrare la posta elettronica e scegliere cosa fare con il contenuto di OneDrive usando la nuova esperienza guidata. Per ulteriori informazioni, vedere [Amministratore globale: Eliminare un utente.](remove-former-employee.md) Tuttavia, ti consigliamo di completare tutti i passaggi aggiuntivi elencati qui per assicurarti che il dipendente non abbia accesso ai dati della tua azienda. 
   
 Ecco una rapida panoramica. Ogni passaggio è spiegato in dettaglio in questo articolo.
   
 |||
 |:-----|:-----|
 |**Passaggio** <br/> |**Perché eseguire questa operazione** <br/> |
-|1. [Salvare il contenuto della cassetta postale di un ex dipendente](#save-the-contents-of-a-former-employees-mailbox) <br/> |Ciò è utile per la persona che prenderà il controllo del lavoro del dipendente o in caso di controversie legali.  <br/> |
+|1. [Salvare il contenuto della cassetta postale di un ex dipendente](#save-the-contents-of-a-former-employees-mailbox) <br/> |Ciò è utile per la persona che prenderà il controllo del lavoro del dipendente o in caso di controversia legale.  <br/> |
 |2. [Inoltrare la posta elettronica di un ex dipendente a un altro dipendente o convertirla in una cassetta postale condivisa](#forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox) <br/> |Consente di mantenere attivo l'indirizzo di posta elettronica dell'ex dipendente. Se i clienti o i partner continuano a inviare la posta elettronica all'indirizzo dell'ex dipendente, questa operazione consente di inoltrare i messaggi alla persona che ne prende il posto.  <br/> |
 |3. [Cancellare i dati e bloccare il dispositivo mobile di un ex dipendente](#wipe-and-block-a-former-employees-mobile-device) <br/> |Rimuove i dati aziendali dal telefono o dal tablet.  <br/> |
-|4. [Bloccare l'accesso di un ex dipendente ai dati di Microsoft 365](#block-a-former-employees-access-to-microsoft-365-data)<br/> |Impedisce all'utente di accedere alla cassetta postale e ai dati di Microsoft 365.  <br/><br/> **Suggerimento:** quando si blocca l'accesso di un utente, si continua a pagare per la licenza. Per interrompere il pagamento, eliminare la licenza dall'abbonamento (passaggio 5).  |
+|4. [Bloccare l'accesso di un ex dipendente ai dati di Microsoft 365](#block-a-former-employees-access-to-microsoft-365-data)<br/> |Impedisce all'utente di accedere alla cassetta postale e ai dati di Microsoft 365.  <br/><br/> **Suggerimento:** quando blocchi l'accesso di un utente, stai ancora pagando la licenza. Per interrompere il pagamento, eliminare la licenza dall'abbonamento (passaggio 5).  |
 |5. [Spostare il contenuto di OneDrive del dipendente](get-access-to-and-back-up-a-former-user-s-data.md) <br/> |Se si rimuove solo la licenza di un utente, senza eliminare l'account, il contenuto del suo OneDrive rimarrà accessibile anche dopo i 30 giorni.  <br/><br/> Prima di eliminare l'account, occorre spostare il contenuto del suo OneDrive in un'altra posizione facilmente accessibile. Dopo aver eliminato l'account di un dipendente, il contenuto del suo OneDrive viene conservato per **30** giorni. Durante questo periodo di tempo, tuttavia, è possibile ripristinare l'account dell'utente e ottenere l'accesso al contenuto del suo OneDrive. Se l'account viene ripristinato, il contenuto di OneDrive resterà accessibile anche dopo i 30 giorni.  <br/> |
 |5a. Cosa accade se la persona ha usato il suo computer personale per accedere a OneDrive e SharePoint?  <br/> |Se ha usato un computer personale anziché un computer fornito dalla società per scaricare file da OneDrive e SharePoint, non esiste alcun modo per cancellare i file che vi ha archiviato.  <br/><br/> Continuano ad avere accesso ai file sincronizzati con il computer.  <br/> |
-|6. Rimuovere ed eliminare la licenza di [Microsoft 365 da un ex dipendente](#remove-and-delete-the-microsoft-365-license-from-a-former-employee)<br/> |Quando si rimuove una licenza, è possibile assegnarla a un'altra persona. In alternativa, è possibile eliminare la licenza in modo da interromperne il pagamento finché non si assume un'altra persona.  <br/><br/> Quando si rimuove o si elimina una licenza, la posta elettronica, i contatti e il calendario dell'utente vengono conservati per **30 giorni**, quindi eliminati definitivamente. Se si rimuove o si elimina la licenza di un utente, senza eliminare l'account, il contenuto del suo OneDrive rimarrà accessibile anche dopo i 30 giorni.  <br/> |
-|7. [Eliminare l'account utente di un ex dipendente.](#delete-a-former-employees-user-account)<br/> |L'account viene rimosso dall'interfaccia di amministrazione. Consente di tenere tutto in ordine.  <br/> |
+|6. [Rimuovere ed eliminare la licenza di Microsoft 365 da un ex dipendente](#remove-and-delete-the-microsoft-365-license-from-a-former-employee)<br/> |Quando si rimuove una licenza, è possibile assegnarla a un'altra persona. In alternativa, è possibile eliminare la licenza in modo da interromperne il pagamento finché non si assume un'altra persona.  <br/><br/> Quando si rimuove o si elimina una licenza, la posta elettronica, i contatti e il calendario dell'utente vengono conservati per **30 giorni**, quindi eliminati definitivamente. Se si rimuove o si elimina la licenza di un utente, senza eliminare l'account, il contenuto del suo OneDrive rimarrà accessibile anche dopo i 30 giorni.  <br/> |
+|7. [Eliminare l'account utente di un ex dipendente.](#delete-a-former-employees-user-account)<br/> |In questo modo l'account viene rimosso dall'interfaccia di amministrazione. Consente di tenere tutto in ordine.  <br/> |
 
 ## <a name="save-the-contents-of-a-former-employees-mailbox"></a>Salvare il contenuto della cassetta postale di un ex dipendente
 
@@ -131,7 +131,7 @@ Il contenuto della cassetta postale dell'ex dipendente può essere salvato in du
 
     Le cassette postali inattive non possono ricevere posta elettronica e non vengono visualizzate nella rubrica condivisa o in altri elenchi dell'organizzazione.
 
-    Per informazioni su come impostare un blocco su una cassetta postale, vedere [Gestire le cassette postali inattive in Exchange Online.](https://docs.microsoft.com/microsoft-365/compliance/create-and-manage-inactive-mailboxes)
+    Per informazioni su come impostare un blocco su una cassetta postale, vedere [Manage inactive mailboxes in Exchange Online.](../../compliance/create-and-manage-inactive-mailboxes.md)
 
 ## <a name="forward-a-former-employees-email-to-another-employee-or-convert-to-a-shared-mailbox"></a>Inoltrare la posta elettronica di un ex dipendente a un altro dipendente o convertirla in una cassetta postale condivisa
 
@@ -142,13 +142,13 @@ In questo passaggio, l'indirizzo di posta elettronica dell'ex dipendente viene a
 - Se si configura l'inoltro della posta elettronica, ora solo i  *nuovi*  messaggi di posta elettronica inviati all'ex dipendente vengono inviati al dipendente corrente.
 
  > [!IMPORTANT]
- > Se si configura l'inoltro della posta elettronica o una cassetta postale condivisa, alla fine non eliminare l'account dell'ex dipendente. L'account deve restare valido per poter ancorare l'inoltro della posta elettronica o la cassetta postale condivisa.
+ > Se si sta configurando l'inoltro della posta elettronica o una cassetta postale condivisa, alla fine non eliminare l'account dell'ex dipendente. L'account deve restare valido per poter ancorare l'inoltro della posta elettronica o la cassetta postale condivisa.
 
 ::: moniker range="o365-worldwide"
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
 2. Selezionare il nome del dipendente che si desidera bloccare e quindi selezionare la **scheda** Posta.
-3. In **Inoltro posta elettronica** selezionare Gestisci inoltro posta **elettronica.**
+3. In **Inoltro posta elettronica** selezionare Gestisci inoltro posta **elettronica**.
 4. Attivare **Inoltra tutta la posta elettronica inviata a questa cassetta postale**. Nella casella **Indirizzo di inoltro** digitare l'indirizzo di posta elettronica del dipendente corrente che otterrà il messaggio di posta elettronica.
 5. Selezionare **Salva**.
 6. Ricordare di non eliminare l'account dell'ex dipendente.
@@ -159,7 +159,7 @@ In questo passaggio, l'indirizzo di posta elettronica dell'ex dipendente viene a
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>.
 
-2. Selezionare il dipendente che si desidera bloccare ed espandere **Impostazioni posta.**
+2. Selezionare il dipendente che si desidera bloccare ed espandere **Impostazioni di posta**.
 
 3. Accanto a **Inoltro posta elettronica** selezionare **Modifica.**
 
@@ -175,7 +175,7 @@ In questo passaggio, l'indirizzo di posta elettronica dell'ex dipendente viene a
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>.
 
-2. Selezionare il dipendente che si desidera bloccare ed espandere **Impostazioni posta.**
+2. Selezionare il dipendente che si desidera bloccare ed espandere **Impostazioni di posta**.
 
 3. Accanto a **Inoltro posta elettronica** selezionare **Modifica.**
 
@@ -194,7 +194,7 @@ Se l'ex dipendente aveva un telefono dell'organizzazione, è possibile utilizzar
 1. Accedere all'<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">interfaccia di amministrazione di Exchange</a>.
 2. Nell'Interfaccia di amministrazione di Exchange passare a **Destinatari** \> **Cassette postali**.
 3. Selezionare l'utente e in **Dispositivi mobili** selezionare **Visualizza dettagli.**
-4. Nella pagina **Dettagli dispositivo mobile,** in **Dispositivi** mobili, selezionare il dispositivo mobile, selezionare Cancellazione dati nel dispositivo ![ e quindi selezionare ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) **Blocca.**
+4. Nella pagina **Dettagli dispositivo** mobile, in **Dispositivi mobili,** selezionare il dispositivo mobile, selezionare **Cancella** dati cancella dispositivo e quindi ![ selezionare ](../../media/1c113a36-53cb-4974-884f-3ecd9535506e.png) **Blocca.**
 5. Selezionare **Salva**.
    > [!TIP]
    > Assicurarsi di rimuovere o disabilitare l'utente dal servizio Blackberry Enterprise locale. Occorre anche disabilitare gli eventuali dispositivi Blackberry per l'utente. Per informazioni sui passaggi specifici da eseguire per disabilitare l'utente, vedere la guida all'amministrazione di Blackberry Business Cloud Services.
@@ -202,12 +202,12 @@ Se l'ex dipendente aveva un telefono dell'organizzazione, è possibile utilizzar
 ## <a name="block-a-former-employees-access-to-microsoft-365-data"></a>Bloccare l'accesso di un ex dipendente ai dati di Microsoft 365
 
  > [!IMPORTANT]
- > L'applicazione del blocco di un account può richiedere fino a 24 ore. Se è necessario impedire immediatamente l'accesso di un utente, è necessario reimpostarne la [password](reset-passwords.md) e quindi avviare un evento una sola volta che lo disconnetterà dalle sessioni di Microsoft 365 su tutti i dispositivi. Vedere [Disconnessione immediata](#sign-out-now)
+ > L'applicazione del blocco di un account può richiedere fino a 24 ore. Se è necessario impedire immediatamente l'accesso di un utente, è consigliabile reimpostare la [password](reset-passwords.md) e quindi avviare un evento una sola volta che li disconnetterà dalle sessioni di Microsoft 365 su tutti i dispositivi. Vedere [Disconnessione immediata](#sign-out-now)
 
 ::: moniker range="o365-worldwide"
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
-2. Selezionare il nome del dipendente che si desidera bloccare e sotto il nome dell'utente selezionare il simbolo per **Blocca questo utente.**
+2. Selezionare il nome del dipendente che si desidera bloccare e, sotto il nome dell'utente, selezionare il simbolo **per Blocca questo utente.**
 3. Seleziona **Blocca l'accesso dell'utente** e quindi seleziona **Salva.**
 
 ::: moniker-end
@@ -238,14 +238,14 @@ Se si dispone di posta elettronica come parte dell'abbonamento a Microsoft 365, 
   
 1. Accedere all'<a href="https://go.microsoft.com/fwlink/p/?linkid=2059104" target="_blank">interfaccia di amministrazione di Exchange</a>.
 2. Nell'Interfaccia di amministrazione di Exchange passare a **Destinatari** \> **Cassette postali**.
-3. Fare doppio clic sull'utente e passare alla **pagina Funzionalità cassetta** postale. In **Dispositivi mobili** selezionare Disabilita Exchange ActiveSync e Disabilita OWA per i dispositivi **e** rispondere **Sì** a entrambi quando richiesto. 
-4. In **Connettività posta** elettronica selezionare **Disabilita** e rispondere **Sì** quando richiesto.
+3. Fare doppio clic sull'utente e passare alla **pagina Funzionalità cassetta** postale. In **Dispositivi mobili** seleziona **Disabilita** Exchange ActiveSync e Disabilita OWA per i dispositivi **e** rispondi **Sì** a entrambi quando richiesto.
+4. In **Connettività posta** elettronica selezionare **Disabilita** e rispondi **Sì** quando richiesto.
 
 ## <a name="remove-and-delete-the-microsoft-365-license-from-a-former-employee"></a>Rimuovere ed eliminare la licenza di Microsoft 365 da un ex dipendente
 
-Pertanto, non si continua a pagare per una licenza dopo che qualcuno ha lasciato l'organizzazione, è necessario rimuovere la licenza di Microsoft 365 e quindi eliminarla dall'abbonamento. Se si sceglie di non eliminare la licenza dal proprio abbonamento, è possibile assegnarla a un altro utente.
+Per non continuare a pagare una licenza dopo che qualcuno ha lasciato l'organizzazione, è necessario rimuovere la licenza di Microsoft 365 ed eliminarla dall'abbonamento. Se si sceglie di non eliminare la licenza dal proprio abbonamento, è possibile assegnarla a un altro utente.
   
-Quando si rimuove la licenza, tutti i dati dell'utente vengono conservati per 30 giorni. È possibile [accedere](get-access-to-and-back-up-a-former-user-s-data.md) ai dati o [ripristinare](restore-user.md) l'account se l'utente ritorna. Dopo 30 giorni, tutti i dati dell'utente (ad eccezione dei documenti archiviati in SharePoint Online) vengono eliminati definitivamente da Microsoft 365 e non possono essere recuperati.
+Quando si rimuove la licenza, tutti i dati dell'utente vengono conservati per 30 giorni. È possibile [accedere](get-access-to-and-back-up-a-former-user-s-data.md) ai dati o [ripristinare](restore-user.md) l'account se l'utente ritorna. Dopo 30 giorni, tutti i dati dell'utente (ad eccezione dei documenti archiviati in SharePoint Online) vengono eliminati definitivamente da Microsoft 365 e non possono essere ripristinati.
 
 ::: moniker range="o365-worldwide"
 
@@ -259,9 +259,9 @@ Quando si rimuove la licenza, tutti i dati dell'utente vengono conservati per 30
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>.
 
-2. Selezionare il dipendente che si desidera bloccare e quindi accanto a **Licenze di prodotto** selezionare **Modifica.**
+2. Selezionare il dipendente che si desidera bloccare e quindi accanto a **Licenze prodotto** selezionare **Modifica.**
 
-3. Nella pagina **Licenze di** prodotto disattivare le licenze che si desidera rimuovere e quindi selezionare **Salva.**
+3. Nella pagina **Licenze prodotto** disattivare le licenze che si desidera rimuovere e quindi selezionare **Salva**.
 
 ::: moniker-end
 
@@ -269,30 +269,30 @@ Quando si rimuove la licenza, tutti i dati dell'utente vengono conservati per 30
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>.
 
-2. Selezionare il dipendente che si desidera bloccare e quindi accanto a **Licenze di prodotto** selezionare **Modifica.**
+2. Selezionare il dipendente che si desidera bloccare e quindi accanto a **Licenze prodotto** selezionare **Modifica.**
 
-3. Nella pagina **Licenze di** prodotto disattivare le licenze che si desidera rimuovere e quindi selezionare **Salva.**
+3. Nella pagina **Licenze prodotto** disattivare le licenze che si desidera rimuovere e quindi selezionare **Salva**.
 
 ::: moniker-end
 
-**Per ridurre il numero di licenze pagate** fino a quando non si assume un'altra persona, eseguire la procedura seguente:
+**Per ridurre il numero di licenze che si stanno pagando** fino a quando non si assume un'altra persona, eseguire la procedura seguente:
 
 ::: moniker range="o365-worldwide"
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">prodotti</a> e selezionare la **scheda** Prodotti.
 2. Selezionare l'abbonamento da cui si desidera rimuovere le licenze.
-3. Nella pagina dei dettagli selezionare **Rimuovi licenze.**
-4. Nel riquadro **Rimuovi licenze,** in Nuova  quantità, nella casella Totale licenze immettere il numero totale di licenze desiderate per l'abbonamento. Ad esempio, se si dispone di 25 licenze e si desidera rimuoverne una, immettere 24.
+3. Nella pagina dei dettagli seleziona **Rimuovi licenze.**
+4. Nel riquadro **Rimuovi licenze,** in Nuova quantità, nella casella **Totale** licenze immettere il numero totale di licenze desiderate per la sottoscrizione. Ad esempio, se si dispone di 25 licenze e si desidera rimuoverle, immettere 24.
 5. Selezionare **Salva**.
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
-2. Seleziona **Aggiungi/Rimuovi licenze** per eliminare la licenza in modo da non pagarla finché non assumi un'altra persona.
+2. Seleziona **Aggiungi/Rimuovi licenze** per eliminare la licenza in modo da non pagare finché non assumi un'altra persona.
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
-2. Seleziona **Aggiungi/Rimuovi licenze** per eliminare la licenza in modo da non pagarla finché non assumi un'altra persona.
+2. Seleziona **Aggiungi/Rimuovi licenze** per eliminare la licenza in modo da non pagare finché non assumi un'altra persona.
 ::: moniker-end
 
 Quando aggiungi [un'altra](add-users.md) persona alla tua azienda, ti verrà richiesto di acquistare una licenza contemporaneamente, con un solo passaggio.
@@ -307,7 +307,7 @@ Se l'utente appartiene a un gruppo di coda, non sarà più contattato dagli agen
 
 ## <a name="set-up-call-forwarding-to-people-in-your-organization"></a>Configurare l'inoltro di chiamata agli utenti dell'organizzazione
 
-Se è necessario configurare l'inoltro di chiamata per il numero di telefono del dipendente terminato, l'impostazione di inoltro di chiamata nei criteri di chiamata può configurare l'inoltro in cui le chiamate in arrivo possono essere inoltrate ad altri utenti o possono squillare contemporaneamente a un'altra persona. Per ulteriori informazioni, vedere [Criteri di chiamata in Microsoft Teams.](https://docs.microsoft.com/microsoftteams/teams-calling-policy)
+Se è necessario configurare l'inoltro di chiamata per il numero di telefono del dipendente terminato, l'impostazione di inoltro di chiamata nei criteri di chiamata può configurare l'inoltro in cui le chiamate in arrivo possono essere inoltrate ad altri utenti o possono squillare contemporaneamente a un'altra persona. Per ulteriori informazioni, vedere [Calling policies in Microsoft Teams](/microsoftteams/teams-calling-policy).
   
 ## <a name="delete-a-former-employees-user-account"></a>Eliminare l'account utente di un ex dipendente.
 
@@ -349,7 +349,7 @@ Quando si elimina un utente, il suo account diventa inattivo per circa 30 giorni
 
 Se l'organizzazione sincronizza gli account utente con Microsoft 365 da un ambiente Active Directory locale, è necessario eliminare e ripristinare tali account utente nel servizio Active Directory locale. Non è possibile eliminarli o ripristinarli in Office 365.
   
-Per informazioni su come eliminare e ripristinare un account utente in Active Directory, vedere [Eliminare un account utente.](https://go.microsoft.com/fwlink/?linkid=841808)
+Per informazioni su come eliminare e ripristinare un account utente in Active Directory, vedere [Delete a User Account.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11))
   
 Se si usa Azure Active Directory, vedere il cmdlet [Remove-MsolUser](https://go.microsoft.com/fwlink/?linkid=842230) di PowerShell.
   

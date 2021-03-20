@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Descrive la differenza principale tra i modelli di analisi dei documenti e dell’elaborazione dei moduli
-ms.openlocfilehash: a50941ec117480be586ba828e7b49c4a88a310ab
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 9640b028e4b5a9cbd914b183e61de9b8a7ba00bc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712295"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905791"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>Differenza tra i modelli di analisi dei documenti e dell’elaborazione dei moduli 
 
@@ -34,7 +34,7 @@ Sono disponibili due tipi di modello che è possibile usare:
 Anche se vengono usati in genere per lo stesso scopo, le differenze principali elencate di seguito influiscono sulle opzioni che è possibile usare.
 
 > [!NOTE]
-> Per altri esempi sugli scenari dell’elaborazione dei moduli e sull’analisi dei documenti, vedere[Adozione di SharePoint Syntex: guida introduttiva](https://docs.microsoft.com/microsoft-365/contentunderstanding/adoption-getstarted#form-processing-scenario-example).
+> Per altri esempi sugli scenari dell’elaborazione dei moduli e sull’analisi dei documenti, vedere[Adozione di SharePoint Syntex: guida introduttiva](./adoption-getstarted.md#form-processing-scenario-example).
 
 
 ## <a name="structured-versus-unstructured-and-semi-structured-content"></a>Contenuti strutturati contro non strutturati e semi-strutturati
@@ -52,9 +52,9 @@ Usare i modelli di elaborazione moduli per identificare i file ed estrarre dati 
 I modelli di analisi dei documenti vengono creati e gestiti in un sito del centro contenuti di SharePoint. 
 
 > [!NOTE]
-> Per altre informazioni sui documenti di input, vedere [Requisiti e limitazioni dei modelli di elaborazione dei moduli](https://docs.microsoft.com/ai-builder/form-processing-model-requirements). 
+> Per altre informazioni sui documenti di input, vedere [Requisiti e limitazioni dei modelli di elaborazione dei moduli](/ai-builder/form-processing-model-requirements). 
 
-I modelli di elaborazione dei moduli vengono creati in PowerApps [AI Builder](https://docs.microsoft.com/ai-builder/overview), ma la creazione viene avviata direttamente da una raccolta documenti di SharePoint. È necessario abilitare la creazione dei modelli di elaborazione dei moduli nella raccolta documenti per consentire a un utente di creare un modello di elaborazione dei moduli. Gli amministratori possono abilitare la creazione dei modelli di elaborazione dei moduli nelle impostazioni di amministrazione della comprensione dei contenuti. I modelli di elaborazione dei moduli usano i flussi PowerAutomate per elaborare i file quando vengono caricati nella raccolta documenti.
+I modelli di elaborazione dei moduli vengono creati in PowerApps [AI Builder](/ai-builder/overview), ma la creazione viene avviata direttamente da una raccolta documenti di SharePoint. È necessario abilitare la creazione dei modelli di elaborazione dei moduli nella raccolta documenti per consentire a un utente di creare un modello di elaborazione dei moduli. Gli amministratori possono abilitare la creazione dei modelli di elaborazione dei moduli nelle impostazioni di amministrazione della comprensione dei contenuti. I modelli di elaborazione dei moduli usano i flussi PowerAutomate per elaborare i file quando vengono caricati nella raccolta documenti.
 
 Durante la creazione di un modello di informazioni sulla creazione di un documento, è possibile creare un nuovo [tipo di contenuto SharePoint](https://support.microsoft.com/office/use-content-types-to-manage-content-consistently-on-a-site-48512bcb-6527-480b-b096-c03b7ec1d978) salvato nella raccolta Tipi di contenuto di SharePoint. In alternativa, è possibile usare tipi di contenuto esistenti per definire il modello, se necessario.
 
@@ -85,7 +85,7 @@ Usare la tabella seguente per comprendere quando usare l'elaborazione dei moduli
 | Lingue supportate| Inglese <br>Prossimamente nel 2021: lingue con alfabeto latino | I modelli funzionano in tutte le lingue con alfabeto latino. Oltre all'inglese: tedesco, svedese, francese, spagnolo, italiano e portoghese.|
 
 ## <a name="see-also"></a>Vedere anche
-[Formazione: migliorare le prestazioni aziendali con AI Builder](https://docs.microsoft.com/learn/paths/improve-business-performance-ai-builder/?source=learn)
+[Formazione: migliorare le prestazioni aziendali con AI Builder](/learn/paths/improve-business-performance-ai-builder/?source=learn)
 
 
 

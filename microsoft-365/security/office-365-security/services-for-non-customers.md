@@ -1,5 +1,5 @@
 ---
-title: Servizi per i non clienti che inviano la posta a Microsoft 365
+title: Servizi per non clienti che inviano posta a Microsoft 365
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -8,62 +8,63 @@ manager: dansimp
 ms.date: ''
 audience: ITPro
 ms.topic: overview
-ms.service: O365-seccomp
 localization_priority: Normal
 search.appverid:
 - MET150
 ms.assetid: 19fd3e0f-8dbf-4049-a810-2c8ee6cefd48
 ms.collection:
 - M365-security-compliance
-description: Per mantenere la fiducia degli utenti nell'utilizzo della posta elettronica, Microsoft ha messo a punto vari criteri e tecnologie che consentono di proteggere gli utenti.
-ms.openlocfilehash: 478f94d2ed1a03253168486d48fb2b2df57a6a5e
-ms.sourcegitcommit: 9546708a5506fdbadbfe2500cbf1bd1aeaec6fcb
+description: Per mantenere la fiducia degli utenti nell'uso della posta elettronica, Microsoft ha messo in atto diversi criteri e tecnologie per proteggere i nostri utenti.
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 3213cae1b04b3f1a1b861e8f2cfc698576013546
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49021026"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903814"
 ---
-# <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Servizi per i non clienti che inviano la posta a Microsoft 365
+# <a name="services-for-non-customers-sending-mail-to-microsoft-365"></a>Servizi per non clienti che inviano posta a Microsoft 365
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 
-Abuso di posta elettronica, posta indesiderata e messaggi di posta elettronica fraudolenti (phishing) continuano a gravare sull'intero sistema di posta elettronica. Per garantire la fiducia degli utenti nell'utilizzo della posta elettronica, Microsoft ha messo a punto vari criteri e tecnologie per proteggere gli utenti. Tuttavia, Microsoft capisce che la posta elettronica legittima non dovrebbe essere influenzata negativamente. Pertanto, è stata configurata una serie di servizi per consentire ai mittenti di migliorare la possibilità di inviare messaggi di posta elettronica agli utenti di Microsoft 365 gestendo attivamente la propria reputazione di invio.
+L'abuso della posta elettronica, la posta indesiderata e le e-mail fraudolente (phishing) continuano a gravare sull'intero ecosistema di posta elettronica. Per mantenere la fiducia degli utenti nell'uso della posta elettronica, Microsoft ha messo in atto diversi criteri e tecnologie per proteggere i nostri utenti. Tuttavia, Microsoft è a conoscenza del fatto che la posta elettronica legittima non deve essere influenzata negativamente. Di conseguenza, abbiamo creato una famiglia di servizi per aiutare i mittenti a migliorare la loro capacità di recapitare la posta elettronica agli utenti di Microsoft 365 gestendo in modo proattivo la reputazione di invio.
 
-In questa panoramica vengono fornite informazioni sui vantaggi forniti all'organizzazione anche se non si è clienti.
+Questa panoramica fornisce informazioni sui vantaggi offerti all'organizzazione anche se non si è un cliente.
 
-## <a name="sender-solutions"></a>Soluzioni del mittente
+## <a name="sender-solutions"></a>Soluzioni mittente
 
 ****
 
 |Servizio|Vantaggi|
 |---|---|
-|Contenuto della Guida in linea|Fornisce <ul><li>Punto di partenza per qualsiasi problema relativo alla distribuzione di comunicazioni agli utenti di EOP.</li><li>Include una semplice guida online con i criteri e i requisiti.</li><li>Una panoramica dei filtri per la posta indesiderata e delle tecnologie di autenticazione impiegate da Microsoft.</li><ul>|
-|[Supporto tecnico Microsoft](#microsoft-support)|Fornisce supporto per l'escalation e la self-service per i problemi di recapito.|
-|[Portale di delist IP di protezione da posta indesiderata](#anti-spam-ip-delist-portal)|Strumento per inviare la richiesta di esclusione di indirizzi IP. Prima di inoltrare la richiesta, è responsabilità del mittente garantire che qualsiasi ulteriore messaggio di posta proveniente dall'IP in questione non sia abusivo o dannoso.|
-|[Segnalazione di abusi e posta indesiderata per posta indesiderata proveniente da Exchange Online](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|Consente di mantenere la posta indesiderata e gli altri messaggi non voluti inviati da Exchange Online e ingombrare Internet e il sistema di posta elettronica.|
+|Contenuto della Guida online|Fornisce: <ul><li>Un punto di partenza per tutte le domande relative al recapito delle comunicazioni agli utenti di EOP.</li><li>Include una semplice guida online con i criteri e i requisiti.</li><li>Panoramica dei filtri per la posta indesiderata e delle tecnologie di autenticazione utilizzate da Microsoft.</li><ul>|
+|[Supporto Tecnico Microsoft](#microsoft-support)|Fornisce supporto self-help e escalation per i problemi di recapito.|
+|[Portale antispam IP Delist](#anti-spam-ip-delist-portal)|Uno strumento per inviare la richiesta di delist ip. Prima di inviare questa richiesta, è responsabilità del mittente assicurarsi che qualsiasi ulteriore posta proveniente dall'IP in questione non sia offensiva o dannosa.|
+|[Segnalazione di abuso e posta indesiderata per la posta indesiderata proveniente da Exchange Online](#abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online)|Impedisce l'invio di posta indesiderata e altri messaggi indesiderati da Exchange Online e l'ingombro di Internet e del sistema di posta.|
 |
 
-## <a name="microsoft-support"></a>Supporto tecnico Microsoft
+## <a name="microsoft-support"></a>Supporto Tecnico Microsoft
 
-Microsoft offre diverse opzioni di supporto per gli utenti che hanno problemi a inviare messaggi di posta elettronica ai destinatari di Microsoft 365. È consigliabile:
+Microsoft offre diverse opzioni di supporto per gli utenti che hanno problemi a inviare posta ai destinatari di Microsoft 365. È consigliabile:
 
-- Seguire le istruzioni riportate in qualsiasi rapporto di mancato recapito ricevuto.
+- Seguire le istruzioni contenute in qualsiasi rapporto di mancato recapito ricevuto.
 
-- Consultare i problemi più comuni riscontrati dai non clienti nella [risoluzione dei problemi relativi alla posta inviata a Office 365](troubleshooting-mail-sent-to-office-365.md).
+- Vedere i problemi più comuni riscontrati dai non clienti in Risoluzione dei problemi [relativi alla posta inviata a Office 365.](troubleshooting-mail-sent-to-office-365.md)
 
-- Utilizzare il portale di rimozione della [lista di Microsoft 365](https://sender.office.com) per inviare una richiesta affinché l'IP sia stato rimosso dall'elenco dei mittenti bloccati.
+- Usare il [portale di rimozione di Microsoft 365](https://sender.office.com) per inviare una richiesta di rimozione dell'IP dall'elenco dei mittenti bloccati.
 
-- Leggere i [Forum della community Microsoft](https://community.office365.com/f/).
+- Leggere i [forum della community Microsoft](https://community.office365.com/f/).
 
-- Contattare il cliente che si sta tentando di inviare tramite posta elettronica utilizzando un altro metodo e chiedergli di contattare il supporto tecnico Microsoft e di aprire un ticket di supporto per conto dell'utente. In alcuni casi, per motivi legali, il supporto tecnico Microsoft deve comunicare direttamente con il mittente che possiede lo spazio IP che viene bloccato. Tuttavia, i non clienti in genere non sono in grado di aprire ticket di supporto.
+- Contattare il cliente che si sta tentando di inviare tramite posta elettronica utilizzando un altro metodo e chiedere loro di contattare il Supporto Tecnico Microsoft e aprire un ticket di supporto per conto dell'utente. In alcuni casi, per motivi legali, il supporto Tecnico Microsoft deve comunicare direttamente con il mittente proprietario dello spazio IP bloccato. Tuttavia, i non clienti in genere non possono aprire ticket di supporto.
 
-  Per ulteriori informazioni sul supporto tecnico Microsoft per Office 365, vedere [support](https://docs.microsoft.com/office365/servicedescriptions/office-365-platform-service-description/support).
+  Per ulteriori informazioni sul supporto tecnico Microsoft per Office 365, vedere [Support](/office365/servicedescriptions/office-365-platform-service-description/support).
 
-## <a name="anti-spam-ip-delist-portal"></a>Portale di delist IP di protezione da posta indesiderata
+## <a name="anti-spam-ip-delist-portal"></a>Portale antispam IP Delist
 
-Si tratta di un portale self-service che è possibile utilizzare per rimuovere se stessi dall'elenco dei mittenti bloccati di Microsoft 365. Utilizzare questo portale se si riceve un messaggio di errore quando si tenta di inviare una posta elettronica a un destinatario il cui indirizzo di posta elettronica è in Microsoft 365 e non si ritiene di dover essere. Per altre informazioni, vedere [Usare il portale per l'esclusione di indirizzi IP dal filtro della posta indesiderata per rimuoversi dall'elenco di mittenti bloccati](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
+Si tratta di un portale self-service che è possibile usare per rimuovere se stessi dall'elenco dei mittenti bloccati di Microsoft 365. Utilizzare questo portale se si riceve un messaggio di errore quando si tenta di inviare un messaggio di posta elettronica a un destinatario il cui indirizzo di posta elettronica è in Microsoft 365 e non si pensa di doverlo fare. Per altre informazioni, vedere [Usare il portale per l'esclusione di indirizzi IP dal filtro della posta indesiderata per rimuoversi dall'elenco di mittenti bloccati](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
 
-## <a name="abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online"></a>Segnalazione di abusi e posta indesiderata per posta indesiderata proveniente da Exchange Online
+## <a name="abuse-and-spam-reporting-for-junk-email-originating-from-exchange-online"></a>Segnalazione di abuso e posta indesiderata per la posta indesiderata proveniente da Exchange Online
 
-A volte Microsoft365 viene utilizzato da terze parti per inviare messaggi di posta indesiderata, in violazione dei termini di utilizzo e criteri. Se si riceve un messaggio di posta indesiderata da Office 365, è possibile segnalarli a Microsoft. Per istruzioni, vedere [segnalare i messaggi e i file a Microsoft](report-junk-email-messages-to-microsoft.md).
+A volte Microsoft365 viene utilizzato da terze parti per inviare posta indesiderata, in violazione delle condizioni per l'utilizzo e i criteri. Se si riceve posta indesiderata da Office 365, è possibile segnalare questi messaggi a Microsoft. Per istruzioni, vedere [Segnalare messaggi e file a Microsoft](report-junk-email-messages-to-microsoft.md).

@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: Usare l'azione di controllo delle cassette postali MailItemsAccessed per eseguire indagini forensi sugli account utente compromessi.
-ms.openlocfilehash: 15379a5c24ee222cf097e94d46dc46de0e385820
-ms.sourcegitcommit: c1f9a1b2a34146c51c9e33c4119a388b249ce7a9
+ms.openlocfilehash: e9dda101b330f6632e66c226156df3497ac38453
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "49868004"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903482"
 ---
 # <a name="use-advanced-audit-to-investigate-compromised-accounts"></a>Usare Audit avanzato per le indagini sugli account compromessi
 
@@ -31,7 +31,7 @@ Per semplificare le indagini sugli account di posta elettronica compromessi, ora
 
 ## <a name="the-mailitemsaccessed-mailbox-auditing-action"></a>Azione di controllo delle cassette postali MailItemsAccessed
 
-La nuova azione MailItemsAccessed fa parte della nuova funzionalità [Audit avanzato](advanced-audit.md). È parte del [controllo delle cassette postali di Exchange](https://docs.microsoft.com/office365/securitycompliance/enable-mailbox-auditing#mailbox-auditing-actions) ed è abilitata per impostazione predefinita per gli utenti a cui è assegnata una licenza di Office 365 o Microsoft 365 E5 o per le organizzazioni con un abbonamento al componente aggiuntivo Microsoft 365 E5 Compliance.
+La nuova azione MailItemsAccessed fa parte della nuova funzionalità [Audit avanzato](advanced-audit.md). È parte del [controllo delle cassette postali di Exchange](/office365/securitycompliance/enable-mailbox-auditing#mailbox-auditing-actions) ed è abilitata per impostazione predefinita per gli utenti a cui è assegnata una licenza di Office 365 o Microsoft 365 E5 o per le organizzazioni con un abbonamento al componente aggiuntivo Microsoft 365 E5 Compliance.
 
 L'azione di controllo delle cassette postali MailItemsAccessed copre tutti i protocolli di posta elettronica: POP, IMAP, MAPI, EWS, Exchange ActiveSync e REST. Copre anche entrambi i tipi di accesso alla posta elettronica: *sync* e *bind*.
 
@@ -67,7 +67,7 @@ Vedere il passaggio 1 nella sezione [Usare i record di controllo MailItemsAccess
 
 Il controllo delle cassette postali genera record di controllo per l'accesso ai messaggi di posta elettronica, per offrire la certezza che i messaggi di posta elettronica non siano stati compromessi. Per questo motivo, nei casi in cui non siamo certi che sia stato eseguito l'accesso a determinati dati, presupponiamo che sia avvenuto, registrando tutte le attività di accesso alla posta.
 
-In genere i record di controllo MailItemsAccessed vengono usati a scopi forensi dopo la risoluzione di una violazione dei dati e l'espulsione dell'autore dell'attacco. Per avviare l'indagine, è necessario identificare il set di cassette postali che sono state compromesse e determinare il periodo di tempo in cui l'utente malintenzionato ha avuto accesso alle cassette postali dell'organizzazione. Quindi, è possibile usare i cmdlet **UnifiedAuditLog** o **Search-MailboxAuditLog** in [PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) per cercare i record di controllo che corrispondono alla violazione dei dati. 
+In genere i record di controllo MailItemsAccessed vengono usati a scopi forensi dopo la risoluzione di una violazione dei dati e l'espulsione dell'autore dell'attacco. Per avviare l'indagine, è necessario identificare il set di cassette postali che sono state compromesse e determinare il periodo di tempo in cui l'utente malintenzionato ha avuto accesso alle cassette postali dell'organizzazione. Quindi, è possibile usare i cmdlet **UnifiedAuditLog** o **Search-MailboxAuditLog** in [PowerShell di Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell) per cercare i record di controllo che corrispondono alla violazione dei dati. 
 
 È possibile eseguire uno dei comandi seguenti per cercare i record di controllo MailItemsAccessed:
 
@@ -192,4 +192,4 @@ Questa è la sintassi del comando visualizzato nello screenshot precedente:
 
 ```powershell
 Search-MailboxAuditLog -Identity admin -ShowDetails -Operations MailItemsAccessed -ResultSize 2000 | Select LastAccessed,Operation,AuditOperationsCountInAggregatedRecord,ClientInfoString
-``` 
+```

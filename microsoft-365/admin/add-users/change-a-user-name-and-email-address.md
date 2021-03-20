@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: fb5ac074-e203-4e1f-9843-b9d1a3e03297
 description: "Informazioni su come un amministratore globale può modificare il nome visualizzato e l'indirizzo e-mail di un utente. "
-ms.openlocfilehash: 7f894af3778964dfa6c696c1f467bc0dd8313f32
-ms.sourcegitcommit: 98146c67a1d99db5510fa130340d3b7be8d81b21
+ms.openlocfilehash: 6a5498f4e480802f8770f7b7adde55fe7c996dc8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "49585295"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904481"
 ---
 # <a name="change-a-user-name-and-email-address"></a>Cambiare un nome utente e un indirizzo e-mail
 
@@ -65,7 +65,7 @@ Per eseguire questi passaggi, è necessario essere un [amministratore globale](a
 
 3. Nella prima casella digitare la prima parte del nuovo indirizzo di posta elettronica. Se si è aggiunto il proprio dominio a Microsoft 365, è possibile specificarlo per il nuovo alias usando l'elenco a discesa.
 
-4. Seleziona **Salva**.
+4. Selezionare **Salva**.
 
 ::: moniker-end
 
@@ -221,7 +221,7 @@ Potrebbero essere necessarie fino a 24 ore prima che la modifica diventi effetti
 
 ### <a name="a-parameter-cannot-be-found-that-matches-parameter-name-emailaddresses"></a>"Non è possibile trovare un parametro corrispondente al nome 'EmailAddresses'"
 
-Se viene visualizzato il messaggio di errore **Non è possibile trovare un parametro corrispondente al nome "EmailAddresses"**, significa che l'operazione sta impiegando più tempo del previsto per completare la configurazione del tenant o del dominio personalizzato, se ne è stato aggiunto uno di recente. Per completare la configurazione possono essere necessarie fino a 4 ore. Attendere il tempo necessario per il completamento della procedura e quindi riprovare. Se il problema persiste, contattare il [supporto](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products), che provvederà a eseguire una sincronizzazione completa.
+Se viene visualizzato il messaggio di errore **Non è possibile trovare un parametro corrispondente al nome "EmailAddresses"**, significa che l'operazione sta impiegando più tempo del previsto per completare la configurazione del tenant o del dominio personalizzato, se ne è stato aggiunto uno di recente. Per completare la configurazione possono essere necessarie fino a 4 ore. Attendere il tempo necessario per il completamento della procedura e quindi riprovare. Se il problema persiste, contattare il [supporto](../contact-support-for-business-products.md), che provvederà a eseguire una sincronizzazione completa.
   
 ### <a name="were-sorry-the-user-couldnt-be-edited-review-the-user-information-and-try-again"></a>"Non è stato possibile modificare l'utente. Controllare le informazioni sull'utente e riprovare"
 
@@ -249,7 +249,7 @@ Set-MsolUserPrincipalName -UserPrincipalName anne.wallace@contoso.onmicrosoft.co
 > [!TIP]
 > In questo modo l'attributo **userPrincipalName** dell'utente verrà cambiato e non avrà nessun rapporto con l'indirizzo di posta elettronica di Microsoft Online Email Routing Address (MOERA) dell'utente. È tuttavia consigliabile che il nome UPN di accesso dell'utente corrisponda al suo indirizzo SMTP principale. 
   
-Per informazioni su come cambiare il nome di un utente in Active Directory, vedere [Rinominare un account utente](https://go.microsoft.com/fwlink/?LinkId=809091) in Windows Server 2003 e versioni precedenti.
+Per informazioni su come cambiare il nome di un utente in Active Directory, vedere [Rinominare un account utente](/previous-versions/windows/it-pro/windows-server-2003/cc772952(v=ws.10)) in Windows Server 2003 e versioni precedenti.
   
 ## <a name="related-articles"></a>Articoli correlati
 

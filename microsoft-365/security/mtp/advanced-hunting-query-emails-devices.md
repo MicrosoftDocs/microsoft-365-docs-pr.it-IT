@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: a12b2dcf2de472f43e782e2064944ec774bdb9e1
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 1149d8fa614854bdbbd2c154f0e92f6a9c28ce00
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727260"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904068"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Ricerca di minacce su dispositivi, messaggi di posta elettronica, app e identità
 
@@ -50,7 +50,7 @@ Utilizzare queste query per informazioni su come ottenere rapidamente informazio
 ### <a name="obtain-user-accounts-from-email-addresses"></a>Ottenere account utente da indirizzi di posta elettronica
 Durante la creazione di query su [tabelle che includono sia dispositivi che messaggi di posta elettronica](advanced-hunting-schema-tables.md), è probabile che sia necessario ottenere i nomi degli account utente dagli indirizzi di posta elettronica del mittente o del destinatario. In genere è possibile eseguire questa operazione per l'indirizzo del mittente o del destinatario utilizzando *l'host locale* dall'indirizzo di posta elettronica.
 
-Nel frammento di codice seguente usiamo la funzione [tostring()](https://docs.microsoft.com/azure/data-explorer/kusto/query/tostringfunction) Kusto per estrarre l'host locale subito prima degli indirizzi di posta elettronica dei destinatari `@` nella colonna `RecipientEmailAddress` .
+Nel frammento di codice seguente usiamo la funzione [tostring()](/azure/data-explorer/kusto/query/tostringfunction) Kusto per estrarre l'host locale subito prima degli indirizzi di posta elettronica dei destinatari `@` nella colonna `RecipientEmailAddress` .
 
 ```kusto
 //Query snippet showing how to extract the account name from an email address
@@ -86,7 +86,7 @@ Department, City, Country
 Lo [schema di ricerca avanzata](advanced-hunting-schema-tables.md) fornisce informazioni dettagliate sul dispositivo in varie tabelle. Ad esempio, la [tabella DeviceInfo fornisce](advanced-hunting-deviceinfo-table.md) informazioni complete sul dispositivo in base ai dati degli eventi aggregati regolarmente. Questa query utilizza la tabella per verificare se un utente potenzialmente compromesso ( ) ha eseguito l'accesso a qualsiasi dispositivo e quindi elenca gli avvisi che sono stati attivati `DeviceInfo` `<account-name>` in tali dispositivi.
 
 >[!Tip]
-> Questa query utilizza per specificare un inner join , che impedisce `kind=inner` la deduplicazione dei valori sul lato sinistro per [](https://docs.microsoft.com/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor) `DeviceId` .
+> Questa query utilizza per specificare un inner join , che impedisce `kind=inner` la deduplicazione dei valori sul lato sinistro per [](/azure/data-explorer/kusto/query/joinoperator?pivots=azuredataexplorer#inner-join-flavor) `DeviceId` .
 
 ```kusto
 DeviceInfo

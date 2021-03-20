@@ -16,16 +16,16 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Gestisci questi ruoli di amministratore di Azure nell’interfaccia di amministrazione di Microsoft 365
-ms.openlocfilehash: 7a4e28667bc16d6619fe87451cd48ea77d89c81d
-ms.sourcegitcommit: eac5d9f759f290d3c51cafaf335a1a1c43ded927
+ms.openlocfilehash: b07174763384150a7ae8cda6709f5d0ec5cb40ec
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/06/2021
-ms.locfileid: "50126106"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50904493"
 ---
 # <a name="azure-active-directory-roles-in-the-microsoft-365-admin-center"></a>Ruoli di Azure Active Directory nell'interfaccia di amministrazione di Microsoft 365
 
-L'interfaccia di amministrazione di Microsoft 365 consente di gestire più di 30 ruoli di Azure AD. Questi ruoli, tuttavia, sono un sottoinsieme dei ruoli disponibili nel portale di Azure. Se si ha un'azienda di grandi dimensioni, nel portale di Azure potrebbero essere presenti ruoli che soddisfano le esigenze dell'organizzazione. Per le descrizioni dettagliate dei ruoli di Azure AD, vedere [Autorizzazioni del ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
+L'interfaccia di amministrazione di Microsoft 365 consente di gestire più di 30 ruoli di Azure AD. Questi ruoli, tuttavia, sono un sottoinsieme dei ruoli disponibili nel portale di Azure. Se si ha un'azienda di grandi dimensioni, nel portale di Azure potrebbero essere presenti ruoli che soddisfano le esigenze dell'organizzazione. Per le descrizioni dettagliate dei ruoli di Azure AD, vedere [Autorizzazioni del ruolo di amministratore in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 
 Un utente a cui è assegnato un ruolo di amministratore avrà lo stesso livello di accesso a tutti i servizi cloud a cui è abbonata l'organizzazione, indipendentemente da come viene assegnato il ruolo, con l'interfaccia di amministrazione di Microsoft 365, nel portale di Azure o con il modulo di Azure AD per Windows PowerShell.
 
@@ -37,7 +37,7 @@ Nell'interfaccia di amministrazione di Microsoft 365 è possibile passare a **Ru
 
 ## <a name="all-azure-ad-roles"></a>Tutti i ruoli di Azure AD
 
-Ecco un elenco dei ruoli di amministratore disponibili nell'interfaccia di amministrazione di Microsoft 365. Cerchi le descrizioni dettagliate dei ruoli di amministratore di Microsoft 365? Vedere [Informazioni sui ruoli di amministratore](https://docs.microsoft.com/microsoft-365/admin/add-users/about-admin-roles?view=o365-worldwide)
+Ecco un elenco dei ruoli di amministratore disponibili nell'interfaccia di amministrazione di Microsoft 365. Cerchi le descrizioni dettagliate dei ruoli di amministratore di Microsoft 365? Vedere [Informazioni sui ruoli di amministratore](./about-admin-roles.md?view=o365-worldwide)
 
 |Ruolo di amministratore     |Descrizione  |
 |---------|---------|
@@ -57,7 +57,7 @@ Ecco un elenco dei ruoli di amministratore disponibili nell'interfaccia di ammin
 |Amministratore di Exchange     |  Ha accesso completo a Exchange Online, crea e gestisce gruppi, gestisce le richieste di servizio e monitora l'integrità dei servizi.    |
 |Amministratore del provider di identità esterno    |     Configura i provider di identità per l'uso nella federazione diretta.    |
 |Amministratore globale     |    Ha accesso illimitato a tutte le funzionalità di gestione e alla maggior parte dei dati in tutte le interfacce di amministrazione.     |
-|Ruolo con autorizzazioni di lettura globali     |    Ha accesso in sola lettura a tutte le funzionalità di gestione e alla maggior parte dei dati nelle interfacce di amministrazione. Per una descrizione dettagliata dei diritti d'accesso e delle limitazioni di questo ruolo, vedere [Autorizzazioni del ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).    |
+|Ruolo con autorizzazioni di lettura globali     |    Ha accesso in sola lettura a tutte le funzionalità di gestione e alla maggior parte dei dati nelle interfacce di amministrazione. Per una descrizione dettagliata dei diritti d'accesso e delle limitazioni di questo ruolo, vedere [Autorizzazioni del ruolo di amministratore in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#global-reader).    |
 |Amministratore gruppi   |Crea gruppi e gestisce tutte le impostazioni dei gruppi nelle interfacce di amministrazione.|
 |Mittente dell'invito guest     |    Gestisce gli inviti degli utenti guest di Azure Active Directory B2B.     |
 |Amministratore di supporto tecnico     | Reimposta le password e le riautenticazioni per tutti gli utenti non amministratori e alcuni ruoli di amministratore, gestisce le richieste di servizio e monitora l'integrità dei servizi.      |
@@ -99,7 +99,7 @@ Un partner può assegnare questi ruoli:
 
 - Amministrazione limitata: questo ruolo dispone di privilegi equivalenti a quelli del ruolo di amministratore di supporto tecnico.
 
-Prima che il partner possa assegnare questi ruoli agli utenti, è necessario aggiungerlo come amministratore con delega al proprio account. Il processo viene avviato da un partner autorizzato, che invia un messaggio di posta elettronica nel quale richiede l'autorizzazione ad agire come amministratore con delega. Per istruzioni, vedere [Autorizzare o rimuovere relazioni con i partner](https://docs.microsoft.com/microsoft-365/admin/misc/add-partner).
+Prima che il partner possa assegnare questi ruoli agli utenti, è necessario aggiungerlo come amministratore con delega al proprio account. Il processo viene avviato da un partner autorizzato, che invia un messaggio di posta elettronica nel quale richiede l'autorizzazione ad agire come amministratore con delega. Per istruzioni, vedere [Autorizzare o rimuovere relazioni con i partner](../misc/add-partner.md).
   
 ## <a name="related-articles"></a>Articoli correlati
 

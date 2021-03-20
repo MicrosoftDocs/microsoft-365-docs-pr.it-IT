@@ -1,5 +1,5 @@
 ---
-title: Testare Microsoft 365 con le guide dei laboratori di testing (TLG)
+title: Testare Microsoft 365 con le guide dei laboratori di testing (TG)
 ms.author: josephd
 author: JoeDavies-MSFT
 manager: laurawi
@@ -19,15 +19,15 @@ ms.custom:
 - Ent_TLGs
 - seo-marvel-apr2020
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
-description: 'Riepilogo: usare queste guide dei laboratori di testing (TLG) per configurare dimostrazioni, strumenti di verifica o ambienti di sviluppo/test per Microsoft 365.'
-ms.openlocfilehash: 9a8c13cfc89eff0852cc0589448e7745220e47b9
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+description: 'Riepilogo: utilizzare queste guide ai laboratori di testing (TG) per configurare ambienti dimostrativi, di prova o di sviluppo/test per Microsoft 365.'
+ms.openlocfilehash: 6d6beccf450f3c03e4503bdcb18a189658a1af13
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691100"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905177"
 ---
-# <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a>Testare Microsoft 365 con le guide dei laboratori di testing (TLG)
+# <a name="test-microsoft-365-with-test-lab-guides-tlgs"></a>Testare Microsoft 365 con le guide dei laboratori di testing (TG)
 
 Le guide dei lab di test sono utili per imparare velocemente a usare i prodotti Microsoft. Sono ideali quando si ha la necessità di valutare una tecnologia o una configurazione prima di stabilire se è adatta alle proprie esigenze oppure prima di distribuirla ai propri utenti. L'esperienza pratica e manuale consente di comprendere i requisiti di implementazione relativi a un nuovo prodotto oppure a una nuova soluzione; in questo modo è possibile pianificare al meglio l'hosting in produzione.
   
@@ -49,10 +49,10 @@ Usare questi articoli per creare l'ambiente di sviluppo/test di Microsoft 365:
 
     Questa operazione è facoltativa ma diventa necessaria se si vuole creare una configurazione aziendale simulata per un'identità ibrida.
     
-Per altre guide ai laboratori di testing che si applicano sia a Office 365 che a Microsoft 365, vedere [Guide dei laboratori di testing.](m365-enterprise-test-lab-guides.md)  
+Per ulteriori TG che si applicano sia a Office 365 che a Microsoft 365, vedere [Test Lab Guides](m365-enterprise-test-lab-guides.md).  
     
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Microsoft 365 Solution and Architecture Center](../solutions/solution-architecture-center.md)
+[Centro soluzioni e architetture di Microsoft 365](../solutions/index.yml)
   
 [Soluzioni ibride](hybrid-solutions.md)

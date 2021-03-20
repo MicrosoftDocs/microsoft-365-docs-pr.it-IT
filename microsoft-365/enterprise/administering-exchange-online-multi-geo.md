@@ -12,16 +12,16 @@ f1.keywords:
 ms.custom: seo-marvel-mar2020
 localization_priority: normal
 description: Informazioni su come amministrare le impostazioni multi-geografiche di Exchange Online nell'ambiente Microsoft 365 con PowerShell.
-ms.openlocfilehash: 83889b4582d2e305b2cb9f07a64307e85d30be77
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: c8f06318313c4192fc2b3a289727933c5a54f3ad
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406043"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50905585"
 ---
 # <a name="administering-exchange-online-mailboxes-in-a-multi-geo-environment"></a>Amministrazione delle cassette postali di Exchange Online in un ambiente multi-geografico
 
-Exchange Online PowerShell è necessario per visualizzare e configurare le proprietà multi-geografiche nell'ambiente Microsoft 365. Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell).
+Exchange Online PowerShell è necessario per visualizzare e configurare le proprietà geografiche nell'ambiente Microsoft 365. Per informazioni su come connettersi a PowerShell per Exchange Online, vedere [Connettersi a PowerShell per Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell).
 
 È necessario il [modulo di PowerShell di Microsoft Azure Active Directory](https://social.technet.microsoft.com/wiki/contents/articles/28552.microsoft-azure-active-directory-powershell-module-version-release-history.aspx) v1.1.166.0 o versione successiva in V1. x per visualizzare la proprietà **PreferredDataLocation** sugli oggetti utente. Gli oggetti utente sincronizzati con AAD Connect in AAD non possono contenere i valori **PreferredDataLocation** modificati direttamente tramite ADD PowerShell. Gli oggetti utente solo cloud possono essere modificati tramite AAD PowerShell. Per connettersi a PowerShell di Azure Active Directory, vedere [Connettersi a PowerShell](connect-to-microsoft-365-powershell.md).
 
@@ -31,13 +31,13 @@ Negli ambienti multi-geografici di Exchange Online, non è necessario eseguire a
 
 In genere, PowerShell di Exchange Online si connetterà alla posizione geografica centrale. Tuttavia, è anche possibile connettersi alla posizioni geografiche satellite. Per una migliore prestazione, è consigliabile connettersi direttamente alla posizione geografica satellite quando si gestiscono solo gli utenti di tale specifica posizione.
 
-I requisiti per l'installazione e l'uso del modulo EXO V2 sono descritti in [Installazione e gestione del modulo V2 EXO](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
+I requisiti per l'installazione e l'uso del modulo EXO V2 sono descritti in [Installazione e gestione del modulo V2 EXO](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module).
 
-Per connettere PowerShell di Exchange Online a una posizione geografica specifica, il *parametro ConnectionUri* è diverso da quello delle normali istruzioni di connessione. Il resto dei comandi e i valori sono uguali.
+Per connettere PowerShell di Exchange Online a una posizione geografica specifica, il *parametro ConnectionUri* è diverso rispetto alle normali istruzioni di connessione. Il resto dei comandi e i valori sono uguali.
 
-In particolare, è necessario aggiungere il `?email=<emailaddress>` valore alla fine del valore _ConnectionUri._ `<emailaddress>` è l'indirizzo di posta elettronica **di qualsiasi** cassetta postale nella posizione geografica di destinazione. Le autorizzazioni per tale cassetta postale o la relazione con le credenziali non sono un fattore; l'indirizzo di posta elettronica indica semplicemente a PowerShell di Exchange Online dove connettersi.
+In particolare, è necessario aggiungere il `?email=<emailaddress>` valore alla fine del valore _ConnectionUri._ `<emailaddress>` è l'indirizzo di posta **elettronica di qualsiasi** cassetta postale nella posizione geografica di destinazione. Le autorizzazioni per la cassetta postale o la relazione con le credenziali non sono un fattore. l'indirizzo di posta elettronica indica semplicemente a PowerShell di Exchange Online dove connettersi.
 
-I clienti di Microsoft 365 o Microsoft 365 GCC in genere non devono usare il parametro _ConnectionUri_ per connettersi a PowerShell di Exchange Online. Tuttavia, per connettersi a una posizione geografica specifica, è necessario utilizzare il parametro _ConnectionUri_ in modo da poter essere `?email=<emailaddress>` utilizzato nel valore.
+I clienti di Microsoft 365 o Microsoft 365 GCC in genere non devono utilizzare il parametro _ConnectionUri_ per connettersi a PowerShell di Exchange Online. Tuttavia, per connettersi a una posizione geografica specifica, è necessario utilizzare il parametro _ConnectionUri_ in modo da poter `?email=<emailaddress>` utilizzare il valore.
 
 ### <a name="connect-to-a-geo-location-in-exchange-online-powershell"></a>Connettersi a una posizione geografica in PowerShell di Exchange Online
 
@@ -49,13 +49,13 @@ Le istruzioni di connessione seguenti funzionano per gli account che sono o non 
    Import-Module ExchangeOnlineManagement
    ```
 
-2. Nell'esempio seguente, admin@contoso.onmicrosoft.com è l'account amministratore e la posizione geografica di destinazione è la posizione geografica in cui risiede la cassetta olga@contoso.onmicrosoft.com cassetta postale.
+2. Nell'esempio seguente, admin@contoso.onmicrosoft.com è l'account amministratore e la posizione geografica di destinazione è la posizione geografica in cui risiede olga@contoso.onmicrosoft.com cassetta postale.
 
    ```powershell
    Connect-ExchangeOnline -UserPrincipalName admin@contoso.onmicrosoft.com -ConnectionUri https://outlook.office365.com/powershell?email=olga@contoso.onmicrosoft.com
    ```
 
-3. Immettere la password per il admin@contoso.onmicrosoft.com nel prompt visualizzato. Se l'account è configurato per l'autenticazione a più fattori, devi anche immettere il codice di sicurezza.
+3. Immettere la password per il admin@contoso.onmicrosoft.com nel prompt visualizzato. Se l'account è configurato per MFA, devi anche immettere il codice di sicurezza.
 
 ## <a name="view-the-available-geo-locations-that-are-configured-in-your-exchange-online-organization"></a>Visualizzare le posizioni geografiche disponibili configurate nella propria organizzazione di Exchange Online
 
@@ -136,7 +136,7 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 
 > [!NOTE]
 >
-> - Come accennato in precedenza, non è possibile utilizzare questa procedura per gli oggetti utente sincronizzati da Active Directory locale. È necessario modificare il valore **PreferredDataLocation** in Active Directory e sincronizzarlo con AAD Connect. Per ulteriori informazioni, vedere [Sincronizzazione di Azure Active Directory Connect: configurare il percorso di dati preferito per le risorse di Microsoft 365](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
+> - Come accennato in precedenza, non è possibile utilizzare questa procedura per gli oggetti utente sincronizzati da Active Directory locale. È necessario modificare il valore **PreferredDataLocation** in Active Directory e sincronizzarlo con AAD Connect. Per ulteriori informazioni, vedere [Sincronizzazione di Azure Active Directory Connect: configurare il percorso di dati preferito per le risorse di Microsoft 365](/azure/active-directory/connect/active-directory-aadconnectsync-feature-preferreddatalocation).
 >
 > - Il tempo necessario per spostare una cassetta postale in una nuova posizione geografica dipende da diversi fattori:
 >
@@ -146,31 +146,31 @@ Set-MsolUser -UserPrincipalName michelle@contoso.onmicrosoft.com -PreferredDataL
 
 ### <a name="move-an-inactive-mailbox-to-a-specific-geo"></a>Spostare una cassetta postale inattiva in una posizione geografica specifica
 
-Non è possibile spostare le cassette postali inattive conservate per motivi di conformità (ad esempio, cassette postali con blocco per controversia legale) modificandone il **valore PreferredDataLocation.** Per spostare una cassetta postale inattiva in una posizione geografica diversa, procedere come segue:
+Non è possibile spostare le cassette postali inattive conservate per motivi di conformità (ad esempio, cassette postali con conservazione per controversia legale) modificando il **relativo valore PreferredDataLocation.** Per spostare una cassetta postale inattiva in una posizione geografica diversa, eseguire la procedura seguente:
 
-1. Recuperare la cassetta postale inattiva. Per istruzioni, vedere [Recuperare una cassetta postale inattiva.](https://docs.microsoft.com/microsoft-365/compliance/recover-an-inactive-mailbox)
+1. Ripristinare la cassetta postale inattiva. Per istruzioni, vedere [Recover an inactive mailbox](../compliance/recover-an-inactive-mailbox.md).
 
-2. Impedire all'Assistente cartelle gestite di elaborare la cassetta postale recuperata sostituendo il nome, l'alias, l'account o l'indirizzo di posta elettronica della cassetta postale ed eseguendo il comando seguente \<MailboxIdentity\> in [PowerShell di Exchange Online:](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+2. Impedire all'Assistente cartelle gestite di elaborare la cassetta postale recuperata sostituendo con il nome, l'alias, l'account o l'indirizzo di posta elettronica della cassetta postale ed eseguendo il comando seguente \<MailboxIdentity\> in [PowerShell di Exchange Online:](/powershell/exchange/connect-to-exchange-online-powershell)
 
     ```powershell
     Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $true
     ```
 
-3. Assegnare **una licenza di Exchange Online Piano 2** alla cassetta postale recuperata. Questo passaggio è necessario per impostare nuovamente il blocco per controversia legale per la cassetta postale. Per istruzioni, vedere [Assegnare licenze agli utenti.](https://docs.microsoft.com/microsoft-365/admin/manage/assign-licenses-to-users)
+3. Assegnare **una licenza di Exchange Online Piano 2** alla cassetta postale recuperata. Questo passaggio è necessario per impostare nuovamente il blocco per controversia legale per la cassetta postale. Per istruzioni, vedere [Assegnare licenze agli utenti.](../admin/manage/assign-licenses-to-users.md)
 
 4. Configurare il **valore PreferredDataLocation** nella cassetta postale come descritto nella sezione precedente.
 
-5. Dopo aver confermato che la cassetta postale è stata spostata nella nuova posizione geografica, impostare nuovamente il blocco per controversia legale per la cassetta postale recuperata. Per istruzioni, vedere Blocco per controversia legale [per una cassetta postale.](https://docs.microsoft.com/microsoft-365/compliance/create-a-litigation-hold#place-a-mailbox-on-litigation-hold)
+5. Dopo aver confermato che la cassetta postale è stata spostata nella nuova posizione geografica, ripostare la cassetta postale recuperata in Conservazione per controversia legale. Per istruzioni, vedere [Place a mailbox on Litigation Hold](../compliance/create-a-litigation-hold.md#place-a-mailbox-on-litigation-hold).
 
-6. Dopo aver verificato che il blocco per controversia legale è in corso, consentire all'Assistente cartelle gestite di elaborare nuovamente la cassetta postale sostituendo con il nome, l'alias, l'account o l'indirizzo di posta elettronica della cassetta postale ed eseguendo il comando seguente in PowerShell di \<MailboxIdentity\> [Exchange Online:](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell)
+6. Dopo aver verificato che sia in corso il blocco per controversia legale, consentire all'Assistente cartelle gestite di elaborare di nuovo la cassetta postale sostituendo con il nome, l'alias, l'account o l'indirizzo di posta elettronica della cassetta postale ed eseguendo il comando seguente in PowerShell di \<MailboxIdentity\> [Exchange Online:](/powershell/exchange/connect-to-exchange-online-powershell)
 
     ```powershell
     Set-Mailbox <MailboxIdentity> -ElcProcessingDisabled $false
     ```
 
-7. Rendere nuovamente inattiva la cassetta postale rimuovendo l'account utente associato alla cassetta postale. Per istruzioni, vedere [Eliminare un utente dall'organizzazione.](https://docs.microsoft.com/microsoft-365/admin/add-users/delete-a-user) Questo passaggio rilascia anche la licenza di Exchange Online Piano 2 per altri utilizzi.
+7. Rendere di nuovo inattiva la cassetta postale rimuovendo l'account utente associato alla cassetta postale. Per istruzioni, vedere [Eliminare un utente dall'organizzazione.](../admin/add-users/delete-a-user.md) Questo passaggio rilascia anche la licenza di Exchange Online Piano 2 per altri utilizzi.
 
-**Nota:** quando si sposta una cassetta postale inattiva in una posizione geografica diversa, è possibile che si influisca sui risultati della ricerca di contenuto o sulla possibilità di eseguire ricerche nella cassetta postale dalla posizione geografica precedente. Per ulteriori informazioni, vedere [Ricerca ed esportazione di contenuto in ambienti Multi-Geo.](https://docs.microsoft.com/microsoft-365/compliance/set-up-compliance-boundaries#searching-and-exporting-content-in-multi-geo-environments)
+**Nota:** quando si sposta una cassetta postale inattiva in una posizione geografica diversa, è possibile che si influisca sui risultati della ricerca di contenuto o sulla possibilità di eseguire ricerche nella cassetta postale dalla posizione geografica precedente. Per ulteriori informazioni, vedere [Ricerca ed esportazione di contenuto in ambienti multi-geografici.](../compliance/set-up-compliance-boundaries.md#searching-and-exporting-content-in-multi-geo-environments)
 
 ## <a name="create-new-cloud-mailboxes-in-a-specific-geo-location"></a>Creare nuove cassette postali nel cloud in una posizione geografica specifica
 
@@ -207,11 +207,11 @@ Per ulteriori informazioni sulla creazione di nuovi account utente e la ricerca 
 
 ## <a name="onboard-existing-on-premises-mailboxes-in-a-specific-geo-location"></a>Effettuare l’integrazione di cassette postali locali esistenti in una posizione geografica specifica
 
-È possibile usare i processi e gli strumenti standard di integrazione per eseguire la migrazione di una cassetta postale di un'organizzazione di Exchange locale a Exchange Online, tra cui la [Dashboard di migrazione nell'interfaccia](https://support.office.com/article/d164b35c-f624-4f83-ac58-b7cae96ab331)e il cmdlet [New-MigrationBatch ](https://docs.microsoft.com/powershell/module/exchange/new-migrationbatch) in PowerShell di Exchange Online.
+È possibile usare i processi e gli strumenti standard di integrazione per eseguire la migrazione di una cassetta postale di un'organizzazione di Exchange locale a Exchange Online, tra cui la [Dashboard di migrazione nell'interfaccia](https://support.office.com/article/d164b35c-f624-4f83-ac58-b7cae96ab331)e il cmdlet [New-MigrationBatch ](/powershell/module/exchange/new-migrationbatch) in PowerShell di Exchange Online.
 
 Il primo passaggio consiste nel verificare che esista un oggetto utente per ogni cassetta postale su cui effettuare l’integrazione e verificare che sia configurato il corretto valore della **PreferredDataLocation** in Azure AD. Gli strumenti di integrazione rispetteranno il valore **PreferredDataLocation** e verrà eseguita la migrazione delle cassette postali direttamente alla posizione geografica specificata.
 
-Oppure, la procedura seguente consente di aggiungere cassette postali direttamente a una posizione geografica specifica tramite il cmdlet [New-MoveRequest](https://docs.microsoft.com/powershell/module/exchange/new-moverequest) in PowerShell di Exchange Online.
+Oppure, la procedura seguente consente di aggiungere cassette postali direttamente a una posizione geografica specifica tramite il cmdlet [New-MoveRequest](/powershell/module/exchange/new-moverequest) in PowerShell di Exchange Online.
 
 1. Verificare che esista un oggetto utente per ogni cassetta postale su cui effettuare l’integrazione e che la **PreferredDataLocation** sia impostata sul valore desiderato in Azure AD. Il valore di **PreferredDataLocation** sarà sincronizzato con l’attributo di **MailboxRegion** del corrispondente oggetto utente di posta in Exchange Online.
 
