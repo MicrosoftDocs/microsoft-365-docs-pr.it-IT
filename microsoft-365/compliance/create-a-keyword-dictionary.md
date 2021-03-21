@@ -18,17 +18,20 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni sulla procedura di base per la creazione di un dizionario di parole chiave nel Centro sicurezza e conformità di Office 365.
-ms.openlocfilehash: 488e39921f36a6557378a6214269fcb399114972
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: ff96eda71857b4b0f802462da96e4f4abbaf05f4
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921578"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50908390"
 ---
 # <a name="create-a-keyword-dictionary"></a>Creare un dizionario di parole chiave
 
 La prevenzione della perdita dei dati consente di identificare, monitorare e proteggere gli elementi sensibili. Per identificare gli elementi sensibili talvolta è necessario cercare le parole chiave, in particolare quando si identifica un contenuto generico, ad esempio comunicazioni relative al settore sanitario, o contenuti con linguaggio inappropriato o esplicito. Anche se è possibile creare elenchi di parole chiave nei tipi di informazioni sensibili, tali elenchi hanno dimensioni limitate e richiedono la modifica di file XML per la loro creazione o modifica. I dizionari di parole chiave offrono una gestione semplificata delle parole chiave e, su scala più ampia, supportano fino a 1 MB di termini (dopo la compressione) per dizionario, e supportano qualsiasi lingua. Anche il limite del tenant è di 1 MB dopo la compressione. Il limite di 1 MB dopo la compressione significa che tutti i dizionari combinati di un tenant possono contenere quasi 1 milione di caratteri.
   
+> [!NOTE]
+> Esiste un limite di 50 tipi di informazioni sensibili basati su dizionario di parole chiave che possono essere creati per tenant.
+
 > [!NOTE]
 > Microsoft 365 Information Protection supporta in anteprima i set di caratteri a due byte per le lingue seguenti:
 > - Cinese (semplificato)
@@ -78,7 +81,7 @@ Seguire la procedura seguente per creare e importare parole chiave per un dizion
     
 ## <a name="create-a-keyword-dictionary-from-a-file-using-powershell"></a>Creare un dizionario di parole chiave da un file con PowerShell
 
-Spesso, quando si deve creare un dizionario di grandi dimensioni, vengono usate parole chiave provenienti da un file o da un elenco esportato da un'altra origine. In questo caso, si crea un dizionario di parole chiave contenente un elenco di termini inappropriati da filtrare nella posta elettronica esterna. Prima di tutto,[connettersi a PowerShell per ](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell) Centro sicurezza e conformità&amp;.
+Spesso, quando si deve creare un dizionario di grandi dimensioni, vengono usate parole chiave provenienti da un file o da un elenco esportato da un'altra origine. In questo caso, si crea un dizionario di parole chiave contenente un elenco di termini inappropriati da filtrare nella posta elettronica esterna. Prima di tutto,[connettersi a PowerShell per ](/powershell/exchange/connect-to-scc-powershell) Centro sicurezza e conformità&amp;.
   
 1. Copiare le parole chiave in un file di testo e verificare che ogni parola chiave sia su una riga separata.
     
@@ -118,7 +121,7 @@ $terms = $dict.KeywordDictionary.split(',').trim()
 
 A questo punto si rimuovono alcuni termini dal dizionario. Il dizionario di esempio include solo alcune parole chiave, quindi è possibile evitare l'esportazione modificando il dizionario direttamente nel Blocco note. In genere, però, i dizionari contengono una grande quantità di testo, quindi è utile conoscere la procedura per modificarli facilmente in PowerShell.
   
-Nell'ultimo passaggio le parole chiave sono state salvate in una matrice. Ci sono diversi modi per [rimuovere elementi da una matrice](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-powershell-1.0/ee692802(v=technet.10)), ma l'approccio più diretto consiste nel creare una matrice di termini da rimuovere dal dizionario e quindi copiare solo i termini del dizionario che non si trovano nell'elenco di termini da rimuovere.
+Nell'ultimo passaggio le parole chiave sono state salvate in una matrice. Ci sono diversi modi per [rimuovere elementi da una matrice](/previous-versions/windows/it-pro/windows-powershell-1.0/ee692802(v=technet.10)), ma l'approccio più diretto consiste nel creare una matrice di termini da rimuovere dal dizionario e quindi copiare solo i termini del dizionario che non si trovano nell'elenco di termini da rimuovere.
   
 Eseguire il comando `$terms` per visualizzare l'elenco attuale di termini. L'output del comando avrà questo aspetto: 
   

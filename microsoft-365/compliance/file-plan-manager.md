@@ -17,16 +17,16 @@ search.appverid:
 ms.assetid: af398293-c69d-465e-a249-d74561552d30
 description: Il piano di archiviazione offre funzionalità di gestione avanzate per le etichette di conservazione.
 ms.custom: seo-marvel-may2020
-ms.openlocfilehash: c56f71032ccf154e5d9f416b42df1345da03d9a4
-ms.sourcegitcommit: c083602dda3cdcb5b58cb8aa070d77019075f765
+ms.openlocfilehash: 422a76db5705e80c67803b798275e1faedd1d7aa
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "48199017"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50906876"
 ---
 # <a name="use-file-plan-to-manage-retention-labels"></a>Usare il piano di archiviazione per gestire le etichette di conservazione
 
->*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
+>*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Anche se è possibile creare e gestire le etichette di conservazione dalla **Governance delle informazioni** nel Centro conformità Microsoft 365, il piano di archiviazione di **Gestione dei record** offre funzionalità di gestione aggiuntive:
 
@@ -143,8 +143,13 @@ Per importare nuove etichette di conservazione e modificare le etichette di cons
 
    ![Modello di piano di archiviazione vuoto aperto in Excel](../media/file-plan-blank-template.png)
 
-3. Compilare il modello in base alle informazioni seguenti che descrivono le proprietà e i valori validi per ogni proprietà. Per l'importazione, ogni valore può contenere 64 caratteri al massimo. <br/>
-
+3. Compilare il modello in base alle informazioni seguenti che descrivono le proprietà e i valori validi per ogni proprietà. Per l'importazione, alcuni valori hanno una lunghezza massima:
+    
+    - **LabelName**: lunghezza massima di 64 caratteri
+    - **Comment** e **Notes**: lunghezza massima di 1.024 caratteri
+    - Tutti gli altri valori: lunghezza illimitata
+    <br/>
+    
    |Proprietà|Tipo|Valori validi|
    |:-----|:-----|:-----|
    |LabelName|Stringa|Questa proprietà specifica il nome dell'etichetta di conservazione.|
@@ -152,7 +157,7 @@ Per importare nuove etichette di conservazione e modificare le etichette di cons
    |Notes|Stringa|Usare questa proprietà per aggiungere una descrizione relativa all'etichetta di conservazione per gli utenti. Questa descrizione viene visualizzata quando gli utenti passano con il mouse sull'etichetta in app quali Outlook, SharePoint e OneDrive. Se si lascia vuota questa proprietà, viene visualizzata una descrizione predefinita, che illustra le impostazioni di conservazione dell'etichetta. |
    |IsRecordLabel|Stringa|Questa proprietà specifica se l'etichetta contrassegna il contenuto come record. I valori validi sono: </br>**TRUE**: l'etichetta contrassegna l'elemento come record e, di conseguenza, l'elemento non può essere eliminato. </br>**FALSE**: l'etichetta non contrassegna il contenuto come record. Questo è il valore predefinito.|
    |RetentionAction|Stringa|Questa proprietà specifica l'azione da intraprendere dopo la scadenza del valore specificato dalla proprietà RetentionDuration. I valori validi sono: </br>**Delete**: gli elementi più vecchi del valore specificato dalla proprietà RetentionDuration vengono eliminati.</br>**Keep**: gli elementi vengono mantenuti per la durata specificata dalla proprietà RetentionDuration e non viene eseguita alcuna azione alla scadenza del periodo definito per la durata. </br>**KeepAndDelete**: gli elementi vengono mantenuti per la durata specificata dalla proprietà RetentionDuration e quindi vengono eliminati alla scadenza del periodo definito per la durata.   |
-   |RetentionDuration|Stringa|La proprietà specifica per quanti giorni mantenere il contenuto. I valori validi sono: </br>**Unlimited**: gli elementi verranno mantenuti a tempo indeterminato. </br>***n***: un numero intero positivo, ad esempio **365**. 
+   |RetentionDuration|Stringa|La proprietà specifica per quanti giorni mantenere il contenuto. I valori validi sono: </br>**Unlimited**: gli elementi verranno mantenuti a tempo indeterminato. </br>**_n_*_: un numero intero positivo, ad esempio _* 365**. 
    |RetentionType|Stringa|Questa proprietà specifica se la durata del periodo di conservazione è stata calcolata a partire dalla data di creazione del contenuto, dalla data dell'evento, dalla data di etichettatura o dalla data dell'ultima modifica. I valori validi sono: </br>**CreationAgeInDays**</br>**EventAgeInDays**</br>**TaggedAgeInDays**</br>**ModificationAgeInDays** |
    |ReviewerEmail|SmtpAddress|Quando questa proprietà è popolata, verrà attivata una revisione delle clausole alla scadenza della durata della conservazione. Questa proprietà consente di specificare l'indirizzo di posta elettronica del revisore per l'azione di conservazione **KeepAndDelete**. È possibile includere l'indirizzo di posta elettronica di singoli utenti, gruppi di distribuzione o gruppi di sicurezza. È possibile indicare più indirizzi di posta elettronica separati da punto e virgola.|
    |ReferenceId|Stringa|Questa proprietà specifica il valore visualizzato nel descrittore **ID riferimento** del piano di archiviazione, che è possibile utilizzare come valore univoco per l'organizzazione.| 
@@ -164,7 +169,7 @@ Per importare nuove etichette di conservazione e modificare le etichette di cons
    |CitationUrl|Stringa|Questa proprietà specifica l'URL visualizzato nel descrittore **Clausola/citazione** del piano di archiviazione.|
    |CitationJurisdiction|Stringa|Questa proprietà specifica il settore di competenza o agenzia visualizzati nel descrittore **Clausola/citazione** del piano di archiviazione. Ad esempio, "U.S. Securities and Exchange Commission (SEC)".|
    |Regulatory|Stringa|Lasciare vuota. Questa proprietà non viene usata al momento.|
-   |EventType|Stringa|Questa proprietà specifica la regola di conservazione associata all'etichetta. È possibile utilizzare qualsiasi valore che identifichi la regola in modo univoco. Ad esempio:</br>**Nome**</br>**Nome distinto (DN)**</br>**GUID** </br>È possibile usare il cmdlet [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancerule) per visualizzare le regole di conservazione disponibili. Tenere presente che, poiché i valori EventType sono univoci per l'organizzazione, se si esportano etichette da un'organizzazione, non è possibile usare i valori per la proprietà EventType di tale organizzazione durante l'importazione delle etichette in un'altra organizzazione.|
+   |EventType|Stringa|Questa proprietà specifica la regola di conservazione associata all'etichetta. È possibile utilizzare qualsiasi valore che identifichi la regola in modo univoco. Ad esempio:</br>**Nome**</br>**Nome distinto (DN)**</br>**GUID** </br>È possibile usare il cmdlet [Get-RetentionComplianceRule](/powershell/module/exchange/get-retentioncompliancerule) per visualizzare le regole di conservazione disponibili. Tenere presente che, poiché i valori EventType sono univoci per l'organizzazione, se si esportano etichette da un'organizzazione, non è possibile usare i valori per la proprietà EventType di tale organizzazione durante l'importazione delle etichette in un'altra organizzazione.|
    |||
 
    Ecco un esempio di modello che contiene informazioni sulle etichette di conservazione.
