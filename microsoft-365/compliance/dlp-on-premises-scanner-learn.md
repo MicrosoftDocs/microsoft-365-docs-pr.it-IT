@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: La prevenzione della perdita dei dati di Microsoft 365 nello scanner locale estende il monitoraggio delle attività sui file e le azioni di protezione per tali file nelle condivisioni di file locali e cartelle e raccolte documenti di SharePoint locali. I file vengono analizzati e protetti tramite uno scanner di Azure Information Protection (AIP)
-ms.openlocfilehash: 996de5ea640a16ef2a250830d7167aa316b54a21
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: fa1c14520c8ad0afa4856fdd8a1c59a0f71f400d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50417360"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917812"
 ---
 # <a name="learn-about-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>Informazioni sullo scanner locale per la prevenzione della perdita dei dati di Microsoft 365 (anteprima)
 
@@ -36,12 +36,12 @@ Lo **scanner locale DPL** esegue una ricerca per indicizzazione dei dati locali 
 
 Lo scanner locale DPL si basa su un'implementazione completa dello scanner Azure Information Protection (AIP) per monitorare, etichettare e proteggere gli elementi sensibili. Se non si ha familiarità con lo scanner AIP, è consigliabile familiarizzare con esso. Vedere questi articoli:
 
-- [Che cos'è Azure Information Protection?](https://docs.microsoft.com/azure/information-protection/what-is-information-protection)
-- [Che cos’è lo scanner di etichettatura unificata di Azure Information Protection](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner)
-- [Requisiti per l’installazione e la distribuzione dello scanner di etichettatura unificata di Azure Information Protection](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-prereqs)
-- [Esercitazione: installazione dello scanner di etichettatura unificata di Azure Information Protection](https://docs.microsoft.com/azure/information-protection/tutorial-install-scanner)
-- [Configurazione e installazione dello scanner di etichettatura unificata di Azure Information Protection](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install)
-- [Client di etichettatura unificata di Azure Information Protection - Cronologia di rilascio delle versioni e criteri di supporto](https://docs.microsoft.com/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)
+- [Che cos'è Azure Information Protection?](/azure/information-protection/what-is-information-protection)
+- [Che cos’è lo scanner di etichettatura unificata di Azure Information Protection](/azure/information-protection/deploy-aip-scanner)
+- [Requisiti per l’installazione e la distribuzione dello scanner di etichettatura unificata di Azure Information Protection](/azure/information-protection/deploy-aip-scanner-prereqs)
+- [Esercitazione: installazione dello scanner di etichettatura unificata di Azure Information Protection](/azure/information-protection/tutorial-install-scanner)
+- [Configurazione e installazione dello scanner di etichettatura unificata di Azure Information Protection](/azure/information-protection/deploy-aip-scanner-configure-install)
+- [Client di etichettatura unificata di Azure Information Protection - Cronologia di rilascio delle versioni e criteri di supporto](/azure/information-protection/rms-client/unifiedlabelingclient-version-release-history)
 
 ## <a name="dlp-on-premises-scanner-actions"></a>Azioni dello scanner locale DPL
 
@@ -56,7 +56,7 @@ Quando un file rilevato rappresenta un potenziale rischio in caso di perdita o d
 
 |Azione |Descrizione  |
 |---------|---------|
-|**Impedire a queste persone di accedere ai file archiviati nello scanner locale - Tutti** | Se applicata, questa azione blocca l'accesso a tutti gli account, a eccezione del proprietario del contenuto, dell'ultimo account che ha modificato l'elemento e dell'amministratore. Questo viene ottenuto rimuovendo tutti gli account dalle autorizzazioni NTFS/SharePoint a livello di file tranne il proprietario del file, il proprietario del repository (con 'impostazione [Imposta proprietario repository](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install#use-a-data-loss-prevention-dlp-policy-public-preview) nel processo di analisi del contenuto), l'ultimo modificatore (può essere identificato solo in SharePoint) e l'amministratore. All'account dello scanner vengono concessi anche i diritti FC sul file.|
+|**Impedire a queste persone di accedere ai file archiviati nello scanner locale - Tutti** | Se applicata, questa azione blocca l'accesso a tutti gli account, a eccezione del proprietario del contenuto, dell'ultimo account che ha modificato l'elemento e dell'amministratore. Questo viene ottenuto rimuovendo tutti gli account dalle autorizzazioni NTFS/SharePoint a livello di file tranne il proprietario del file, il proprietario del repository (con 'impostazione [Imposta proprietario repository](/azure/information-protection/deploy-aip-scanner-configure-install#use-a-data-loss-prevention-dlp-policy-public-preview) nel processo di analisi del contenuto), l'ultimo modificatore (può essere identificato solo in SharePoint) e l'amministratore. All'account dello scanner vengono concessi anche i diritti FC sul file.|
 |**Impedire a queste persone di accedere ai file archiviati nello scanner locale - bloccare l'accesso a livello di organizzazione (pubblico)**    |Se applicata, questa azione rimuove i SID **_Tutti gli_*_, _*_NT AUTHORITY\authenticated users_*_, e _*_Domain Users_** dall'elenco di controllo di accesso file (ACL). Solo gli utenti e i gruppi a cui sono stati esplicitamente concessi diritti per il file o la cartella padre potranno accedere al file.|
 |**Impostare le autorizzazioni nel file**|Quando viene applicata, questa azione forza il file a ereditare le autorizzazioni della relativa cartella padre. Per impostazione predefinita, questa azione verrà applicata solo se le autorizzazioni nella cartella padre sono più restrittive rispetto alle autorizzazioni già presenti nel file. Ad esempio, se l'elenco ACL del file è impostato per consentire solo **_utenti specifici_*_ e la cartella padre è configurata per consentire _*_Domain Users_*_ group, le autorizzazioni per la cartella padre non vengono ereditate dal file. È possibile ignorare questo comportamento selezionando l'opzione _* Eredita anche se le autorizzazioni padre sono meno restrittive per**.|
 |**Rimuovere il file da una posizione non corretta**|Se viene applicata, questa azione sostituisce il file originale con un file di stub con estensione txt e inserisce una copia del file originale in una cartella di quarantena. 

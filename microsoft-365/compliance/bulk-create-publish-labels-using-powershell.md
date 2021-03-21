@@ -18,16 +18,16 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni sull'uso di PowerShell per la creazione e la pubblicazione di etichette di conservazione dalla riga di comando, indipendentemente dal centro conformità di Microsoft 365.
-ms.openlocfilehash: 5b8bb7a08c9794139e840d59f9238d858e15dd4e
-ms.sourcegitcommit: 2b8c3fc39a7cbd4ca35e98dca430d2470cd2c925
+ms.openlocfilehash: 1c3a1e1b9e363659b276d2f11a929308f43737b3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "47426983"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918222"
 ---
 # <a name="create-and-publish-retention-labels-by-using-powershell"></a>Creare e pubblicare etichette di conservazione con PowerShell
 
->*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
+>*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Se hai deciso di usare le [etichette di conservazione](retention.md) per tenere o eliminare documenti e messaggi di posta elettronica in Microsoft 365, ti renderai conto che ne esistono centinaia per creare e pubblicare. Il metodo consigliato per creare etichette di conservazione in larga scala consiste nell'usare il [piano di archiviazione](file-plan-manager.md) dal centro conformità di Microsoft 365. Tuttavia, è anche possibile usare [PowerShell](retention.md#powershell-cmdlets-for-retention-policies-and-retention-labels).
   
@@ -51,7 +51,7 @@ Gli script di esempio forniti in questo articolo non sono supportati da alcun pr
 
 2. Convertire il testo in colonne: **dati** tab \> **testo in colonne** \> **delimitato** \> **virgola** \> **generale**
 
-2. Sostituire gli esempi con le voci per le proprie etichette di conservazione e impostazioni. Per ulteriori informazioni sui valori dei parametri, vedere [New-ComplianceTag](https://go.microsoft.com/fwlink/?linkid=866511).
+2. Sostituire gli esempi con le voci per le proprie etichette di conservazione e impostazioni. Per ulteriori informazioni sui valori dei parametri, vedere [New-ComplianceTag](/powershell/module/exchange/new-compliancetag).
 
 3. Salvare il foglio di lavoro come file .csv in un percorso facile da trovare per un passaggio successivo. Ad esempio: C:\>Scripts\Labels.csv
 
@@ -78,7 +78,7 @@ LabelName_t_4,Record label tag - financial,$true,Keep,730,CreationAgeInDays,
 
 2. Convertire il testo in colonne: **dati** tab \> **testo in colonne** \> **delimitato** \> **virgola** \> **generale**
 
-2. Sostituire gli esempi con le voci relative ai criteri dell'etichetta di conservazione e alle relative impostazioni. Per ulteriori informazioni sui parametri disponibili per il cmdlet, vedere [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancepolicy).
+2. Sostituire gli esempi con le voci relative ai criteri dell'etichetta di conservazione e alle relative impostazioni. Per ulteriori informazioni sui parametri disponibili per il cmdlet, vedere [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy).
 
 3. Salvare il foglio di lavoro come file .csv in un percorso facile da trovare per un passaggio successivo. Ad esempio: `<path>Policies.csv`
 
@@ -736,7 +736,7 @@ if ($ResultCSV)
 
 ## <a name="step-4-run-the-powershell-script"></a>Passaggio 4: eseguire lo script di PowerShell
 
-Prima di tutto,[connettersi a PowerShell in Centro sicurezza e conformità](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+Prima di tutto,[connettersi a PowerShell in Centro sicurezza e conformità](/powershell/exchange/connect-to-scc-powershell).
 
 Quindi, eseguire lo script che crea e pubblica le etichette di conservazione:
   
@@ -761,5 +761,3 @@ Usare il file di log creato dallo script per controllare i risultati e identific
 ```
 <path>.\Log_Publish_Compliance_Tag_01112018_151239.txt
 ```
-
-

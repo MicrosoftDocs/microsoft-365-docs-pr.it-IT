@@ -14,12 +14,12 @@ f1.keywords:
 ms.custom: ''
 ms.assetid: 054c16e6-9fd1-4e85-a0e6-81788b8410ea
 description: Usare PowerShell per Microsoft 365 per gestire i criteri, i criteri per gli utenti e le impostazioni delle riunioni di Skype for Business online.
-ms.openlocfilehash: 1992edfb6d1c141c7ed4db22064960873b768865
-ms.sourcegitcommit: babbba2b5bf69fd3facde2905ec024b753dcd1b3
+ms.openlocfilehash: 4477dadf0ea38a81ac0ae282da3f74fc12f3406f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "50514957"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916681"
 ---
 # <a name="manage-skype-for-business-online-with-powershell"></a>Gestire Skype for Business Online con PowerShell
 
@@ -32,7 +32,7 @@ Gli amministratori di Skype fo Business online sono responsabili della gestione 
   > [!Note]
    > Il connettore di Skype for Business Online fa parte al momento del modulo PowerShell di Teams più recente. Se si usa la versione pubblica di PowerShell di Teams più recente, non è necessario installare il connettore di Skype for Business Online.
    
-Installare il [modulo di PowerShell di Teams](https://docs.microsoft.com/microsoftteams/teams-powershell-install).
+Installare il [modulo di PowerShell di Teams](/microsoftteams/teams-powershell-install).
 
 
 ## <a name="connect-using-admin-credentials"></a>Connettersi con le credenziali di amministratore.
@@ -75,4 +75,4 @@ Per ulteriori informazioni, vedere:
   
 [Guida introduttiva a PowerShell per Microsoft 365](getting-started-with-microsoft-365-powershell.md)
 
-[Riferimenti per i cmdlet di PowerShell per Skype for Business](https://docs.microsoft.com/powershell/module/skype/?view=skype-ps)
+[Riferimenti per i cmdlet di PowerShell per Skype for Business](/powershell/module/skype/?view=skype-ps)

@@ -16,12 +16,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Informazioni su come gestire le funzionalità correlate nei gruppi di Microsoft 365, Teams, SharePoint e Yammer.
-ms.openlocfilehash: 01dea57504bf5d68c0bb13376379379f29044191
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: b31e9bf1cd46f94343a489497fb5eb00e138ce60
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838468"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916443"
 ---
 # <a name="what-is-collaboration-governance"></a>Che cos'è la governance della collaborazione?
 
@@ -59,7 +59,7 @@ I gruppi di Microsoft 365 includono una famiglia di risorse collegate che gli ut
 |[Posta in arrivo](https://support.office.com/article/have-a-group-conversation-in-outlook-a0482e24-a769-4e39-a5ba-a7c56e828b22)|Per le conversazioni di posta elettronica tra i membri del gruppo. Questa posta in arrivo ha un indirizzo di posta elettronica e può essere impostata per accettare messaggi da persone esterne al gruppo e anche all'esterno dell'organizzazione, in modo molto simile a una lista di distribuzione tradizionale.|
 |[Blocco appunti di OneNote](https://support.office.com/article/get-started-with-onenote-e768fafa-8f9b-4eac-8600-65aa10b2fe97)|Per raccogliere idee, ricerche e informazioni|
 |[Planner](https://support.office.com/article/microsoft-planner-help-4a9a13c6-3adf-4a60-a6fc-15c0b15e16fc)|Per assegnare e gestire le attività di progetto tra i membri del gruppo|
-|[Area di lavoro di Power BI](https://docs.microsoft.com/power-bi/collaborate-share/service-new-workspaces)|Uno spazio di collaborazione dati con dashboard e report|
+|[Area di lavoro di Power BI](/power-bi/collaborate-share/service-new-workspaces)|Uno spazio di collaborazione dati con dashboard e report|
 |[Progetto e roadmap](https://support.microsoft.com/project)|Strumenti di gestione dei progetti basati sul Web|
 |[Sito del team di SharePoint](https://support.office.com/article/what-is-a-sharepoint-team-site-75545757-36c3-46a7-beed-0aaa74f0401e)|Archivio centrale per informazioni, collegamenti e contenuti relativi al gruppo|
 |[Stream](https://support.microsoft.com/microsoft-stream)|Un servizio di streaming video|
@@ -114,9 +114,10 @@ Quando si avvia il processo di pianificazione della governance, tenere presenti 
 
 - **Incorporare le decisioni di** governance direttamente nelle soluzioni create: molte decisioni di governance possono essere implementate attivando o disattivando le funzionalità in Microsoft 365.
 
+
 - **Utilizzare un approccio in più fasi:** implementare prima le funzionalità di collaborazione a un piccolo gruppo di utenti. Ottenere feedback da questi utenti, controllare i ticket dell'help desk e aggiornare le impostazioni o i processi necessari prima di procedere con un gruppo più grande.
 
-- **Rafforzare con la formazione:** adattare soluzioni come i percorsi di apprendimento di [Microsoft 365](https://docs.microsoft.com/office365/customlearning) per garantire che le aspettative specifiche dell'organizzazione siano rafforzate con la formazione fornita da Microsoft.
+- **Rafforzare con la formazione:** adattare soluzioni come i percorsi di apprendimento di [Microsoft 365](/office365/customlearning) per garantire che le aspettative specifiche dell'organizzazione siano rafforzate con la formazione fornita da Microsoft.
 
 - **Avere una strategia per comunicare** i criteri e le linee guida di governance nell'organizzazione: creare un Centro per l'adozione di Microsoft 365 in un sito di comunicazione di SharePoint per comunicare criteri e procedure.
 
@@ -175,7 +176,7 @@ Questi moduli di formazione di Microsoft Learn consentono di apprendere le funzi
 |![Icona formazione sulla protezione delle informazioni](../media/information-protection-governance.svg)|La quantità di dati generati oggi sta diventando più veloce che mai, i dipendenti vogliono lavorare ovunque e il panorama normativo è in continua evoluzione. Le soluzioni Microsoft per la protezione delle informazioni e la governance consentono alle organizzazioni di raggiungere il giusto equilibrio tra la protezione dei dati e la produttività delle persone. Questo percorso di apprendimento può essere utile per prepararsi per le certificazioni Microsoft 365 Certified: Security Administrator Associate e Microsoft 365 Certified: Enterprise Administration Expert.<br><br>5 ore 13 min - Percorso di apprendimento - 7 moduli|
 
 > [!div class="nextstepaction"]
-> [Avviare >](https://docs.microsoft.com/learn/modules/m365-compliance-information-governance/introduction/)
+> [Avviare >](/learn/modules/m365-compliance-information-governance/introduction/)
 
 <br><br>
 
@@ -184,16 +185,16 @@ Questi moduli di formazione di Microsoft Learn consentono di apprendere le funzi
 |![Icona formazione teams](../media/protect-enterprise-information-microsoft-365.svg)|Proteggere le informazioni dell'organizzazione è più impegnativo che mai. Il percorso di apprendimento Proteggere le informazioni aziendali con Microsoft 365 spiega come proteggere le informazioni sensibili da un elevato numero di condivisioni o da uso improprio, come individuare e classificare i dati, come proteggerli con etichette di riservatezza e come monitorare e analizzare le informazioni sensibili per evitare perdite. Questo percorso di apprendimento può aiutare a prepararsi per le certificazioni Microsoft 365 Certified: Security Administrator Associate e Microsoft 365 Certified: Enterprise Administration Expert certifications..<br><br>1 ora - Percorso di apprendimento - 5 moduli|
 
 > [!div class="nextstepaction"]
-> [Avviare >](https://docs.microsoft.com/learn/modules/m365-security-info-overview/introduction/)
+> [Avviare >](/learn/modules/m365-security-info-overview/introduction/)
 
 #### <a name="security-and-compliance"></a>Sicurezza e conformità
 
 |Formazione:|Dimostrazione delle principali conoscenze sulle funzionalità per la sicurezza e la conformità di Microsoft 365|
 |:---|:---|
-|![Icona formazione sicurezza e conformità](../media/microsoft-365-security-and-compliance-capabilities.svg)|Informazioni sulle aree delle soluzioni di sicurezza e conformità di Microsoft 365 e sulle funzionalità disponibili per aiutare le aziende a proteggere l'azienda e soddisfare i requisiti normativi. Se non si ha familiarità con i concetti di cloud computing di base, è consigliabile prendere [Concetti cloud - Principi del cloud computing.](https://docs.microsoft.com/learn/modules/principles-cloud-computing/index)<br><br>3 ore 11 min - Percorso di apprendimento - 8 moduli|
+|![Icona formazione sicurezza e conformità](../media/microsoft-365-security-and-compliance-capabilities.svg)|Informazioni sulle aree delle soluzioni di sicurezza e conformità di Microsoft 365 e sulle funzionalità disponibili per aiutare le aziende a proteggere l'azienda e soddisfare i requisiti normativi. Se non si ha familiarità con i concetti di cloud computing di base, è consigliabile prendere [Concetti cloud - Principi del cloud computing.](/learn/modules/principles-cloud-computing/index)<br><br>3 ore 11 min - Percorso di apprendimento - 8 moduli|
 
 > [!div class="nextstepaction"]
-> [Avviare >](https://docs.microsoft.com/learn/modules/what-is-m365/1-introduction/)
+> [Avviare >](/learn/modules/what-is-m365/1-introduction/)
 
 ## <a name="illustrations"></a>Illustrazioni
 
@@ -248,6 +249,6 @@ Vedere un esempio dietro le quinte di come i gruppi di Microsoft 365, SharePoint
 
 ## <a name="see-also"></a>Vedere anche
 
-[Documentazione sulla sicurezza di Microsoft 365](https://docs.microsoft.com/microsoft-365/security)
+[Documentazione sulla sicurezza di Microsoft 365](../security/index.yml)
 
-[Documentazione sulla conformità di Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance)
+[Documentazione sulla conformità di Microsoft 365](../compliance/index.yml)

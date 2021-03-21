@@ -17,18 +17,18 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Usare Microsoft Endpoint Manager per gestire dispositivi, PC e altri endpoint.
-ms.openlocfilehash: bca3e8e79264a2218dd1036e50be1c9ab29d2b8a
-ms.sourcegitcommit: ae646779d84e993cf80b1207e76b856a21be5790
+ms.openlocfilehash: db06c7d65da1939ffbb04db64ea901e211b074f6
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "49749600"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918339"
 ---
 # <a name="step-4-deploy-endpoint-management-for-your-devices-pcs-and-other-endpoints"></a>Passaggio 4. Distribuire la gestione degli endpoint per dispositivi, PC e altri endpoint
 
 Con i lavoratori remoti, è necessario supportare un numero crescente di dispositivi personali. La gestione degli endpoint è un approccio alla sicurezza basato su criteri che richiede che i dispositivi siano conformi a criteri specifici prima che gli venga consentito l'accesso alle risorse. Microsoft Endpoint Manager offre strumenti moderni per la gestione che garantiscono la sicurezza dei dati sia nel cloud sia in locale. 
 
-[Microsoft Endpoint Manager](https://docs.microsoft.com/mem/endpoint-manager-overview) include servizi e strumenti che consentono di gestire dispositivi mobili, computer desktop, macchine virtuali, dispositivi incorporati e server combinando i servizi seguenti, probabilmente già noti e usati.
+[Microsoft Endpoint Manager](/mem/endpoint-manager-overview) include servizi e strumenti che consentono di gestire dispositivi mobili, computer desktop, macchine virtuali, dispositivi incorporati e server combinando i servizi seguenti, probabilmente già noti e usati.
 
 ![Componenti di gestione degli endpoint per Microsoft 365](../media/empower-people-to-work-remotely/endpoint-managment-step-grid.png)
 
@@ -40,13 +40,13 @@ Microsoft Intune è un servizio basato sul cloud che è incentrato sulla gestion
 
 - **MAM:** i lavoratori remoti potrebbero non voler concedere il controllo completo sui propri dispositivi personali, noti anche come dispositivi di BYOD (bring-your-own). È possibile fornire opzioni ai lavoratori remoti e continuare a proteggere l'organizzazione. Ad esempio, i lavoratori remoti possono registrare i propri dispositivi, per avere accesso completo alle risorse dell'organizzazione. In alternativa, se desiderano accedere solo alla posta elettronica o a Microsoft Teams, gli utenti possono usare i criteri di protezione delle app che richiedono l'autenticazione a più fattori (MFA) per l'uso di queste app.
 
-Per altre informazioni, vedere questa [panoramica di Microsoft Intune](https://docs.microsoft.com/intune/fundamentals/what-is-intune).
+Per altre informazioni, vedere questa [panoramica di Microsoft Intune](/intune/fundamentals/what-is-intune).
 
 ## <a name="configuration-manager"></a>Configuration Manager
 
 Configuration Manager è una soluzione di gestione locale per gestire desktop, server e computer portatili collegati nella rete aziendale o in Internet. Usare Configuration Manager per distribuire app, aggiornamenti software e sistemi operativi. È anche possibile monitorare la conformità, eseguire query, intervenire sui client in tempo reale e molto altro ancora. È possibile abilitare la soluzione per il cloud e integrarla con Intune, Azure AD, Microsoft Defender per endpoint e altri servizi cloud. 
 
-Per altre informazioni, vedere questa [panoramica di Configuration Manager](https://docs.microsoft.com/mem/configmgr/core/understand/introduction).
+Per altre informazioni, vedere questa [panoramica di Configuration Manager](/mem/configmgr/core/understand/introduction).
 
 ## <a name="co-management"></a>Co-gestione
 
@@ -54,7 +54,7 @@ La co-gestione integra l'investimento esistente in Configuration Manager locale 
 
 La co-gestione usa funzionalità cloud basate su Intune, tra cui l'accesso condizionale e l'applicazione della conformità del dispositivo. Alcune attività restano in locale, mentre altre vengono eseguite nel cloud.
 
-Per altre informazioni, vedere questa [panoramica della co-gestione](https://docs.microsoft.com/mem/configmgr/comanage/overview).
+Per altre informazioni, vedere questa [panoramica della co-gestione](/mem/configmgr/comanage/overview).
 
 ## <a name="desktop-analytics"></a>Desktop Analytics
 
@@ -68,7 +68,7 @@ Con Desktop Analytics, è possibile:
 - Creare gruppi pilota che rappresentino l'intera applicazione e le proprietà del driver in un insieme minimo di dispositivi.
 - Distribuire Windows 10 ai dispositivi pilota e gestiti dalla produzione.
 
-Per altre informazioni, vedere questa [panoramica di Desktop Analytics](https://docs.microsoft.com/mem/configmgr/desktop-analytics/overview).
+Per altre informazioni, vedere questa [panoramica di Desktop Analytics](/mem/configmgr/desktop-analytics/overview).
 
 ## <a name="windows-autopilot"></a>Windows Autopilot
 
@@ -79,13 +79,13 @@ Windows Autopilot consente al reparto IT di preconfigurare dispositivi gestendo 
 - Dal punto di vista dell'utente, bastano poche semplici operazioni per rendere il proprio dispositivo pronto per l'uso. 
 - Dal punto di vista dell'IT, l'unica interazione richiesta all'utente finale consiste nel connettersi a una rete e verificare le credenziali.
 
-Per altre informazioni, vedere questa [panoramica di Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot).
+Per altre informazioni, vedere questa [panoramica di Windows Autopilot](/windows/deployment/windows-autopilot/windows-autopilot).
 
 ## <a name="admin-technical-resources-for-endpoint-management"></a>Risorse amministrative tecniche per la gestione degli endpoint
 
 - [Roadmap di gestione dei dispositivi per Microsoft 365](../enterprise/device-management-roadmap-microsoft-365.md)
-- [Come registrare tipi diversi di dispositivi per la gestione di dispositivi mobili](https://docs.microsoft.com/mem/intune/enrollment/device-enrollment)
-- [Come formare gli utenti finali su Microsoft Intune](https://docs.microsoft.com/mem/intune/fundamentals/end-user-educate)
+- [Come registrare tipi diversi di dispositivi per la gestione di dispositivi mobili](/mem/intune/enrollment/device-enrollment)
+- [Come formare gli utenti finali su Microsoft Intune](/mem/intune/fundamentals/end-user-educate)
  
 ## <a name="results-of-step-4"></a>Risultati del Passaggio 4
 

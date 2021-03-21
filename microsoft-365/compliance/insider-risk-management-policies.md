@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 17ac5506b6445854b1d9fe8ba6b5f5356f6a3827
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: 96d265a7b909b439f960c951b10c84f4bc7a63b0
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50819822"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916830"
 ---
 # <a name="insider-risk-management-policies"></a>Criteri di gestione dei rischi Insider
 
@@ -278,7 +278,7 @@ Completare la procedura seguente per creare un nuovo criterio:
 
 11. Se è stato selezionato Si desidera specificare i siti di SharePoint, le etichette di riservatezza e/o i tipi di informazioni riservate come contenuto prioritario nel passaggio precedente, verranno visualizzate le pagine dei dettagli per i siti di **SharePoint,** i tipi di informazioni riservate e le etichette di  *riservatezza.* Usare queste pagine di dettaglio per definire SharePoint, i tipi di informazioni riservate e le etichette di riservatezza per definire la priorità nel criterio.
 
-    - **Siti di SharePoint**: selezionare **Aggiungi sito di SharePoint** e selezionare le organizzazioni di SharePoint a cui si ha accesso e si desidera definire le priorità. Ad esempio, *"group1@contoso.sharepoint.com/sites/group1"*.
+    - **Siti di SharePoint**: selezionare **Aggiungi sito di SharePoint** e selezionare i siti di SharePoint a cui si ha accesso e si desidera definire le priorità. Ad esempio, *"group1@contoso.sharepoint.com/sites/group1"*.
     - **Tipo di informazioni riservate:** seleziona **Aggiungi tipo di informazioni** riservate e seleziona i tipi di riservatezza di cui vuoi definire la priorità. Ad esempio, *"U.S. Bank Account Number"* e *"Credit Card Number"*.
     - **Etichette di riservatezza**: selezionare **Aggiungi etichetta di riservatezza** e selezionare le etichette di cui si desidera definire la priorità. Ad esempio, *"Confidential"* e *"Secret"*.
 
@@ -323,7 +323,7 @@ Completare la procedura seguente per gestire un criterio esistente:
 
 11. Se è stato selezionato Si desidera specificare i siti di SharePoint, le etichette di riservatezza e/o i tipi di informazioni riservate come contenuto prioritario nel passaggio precedente, verranno visualizzate le pagine dei dettagli per i siti di **SharePoint,** i tipi di informazioni riservate e le etichette di  *riservatezza.* Usare queste pagine di dettaglio per definire SharePoint, i tipi di informazioni riservate e le etichette di riservatezza per definire la priorità nel criterio.
 
-    - **Siti di SharePoint**: selezionare **Aggiungi sito di SharePoint** e selezionare le organizzazioni di SharePoint a cui si ha accesso e si desidera definire le priorità. Ad esempio, *"group1@contoso.sharepoint.com/sites/group1"*.
+    - **Siti di SharePoint**: selezionare **Aggiungi sito di SharePoint** e selezionare i siti di SharePoint a cui si ha accesso e si desidera definire le priorità. Ad esempio, *"group1@contoso.sharepoint.com/sites/group1"*.
     - **Tipo di informazioni riservate:** seleziona **Aggiungi tipo di informazioni** riservate e seleziona i tipi di riservatezza di cui vuoi definire la priorità. Ad esempio, *"U.S. Bank Account Number"* e *"Credit Card Number"*.
     - **Etichette di riservatezza**: selezionare **Aggiungi etichetta di riservatezza** e selezionare le etichette di cui si desidera definire la priorità. Ad esempio, *"Confidential"* e *"Secret"*.
 
@@ -354,14 +354,20 @@ Completare la procedura seguente per copiare un criterio esistente:
 3. Nella pagina dei dettagli del criterio selezionare Copia.
 4. Nella procedura guidata dei criteri assegnare un nome al nuovo criterio e aggiornare la configurazione dei criteri in base alle esigenze.
 
-## <a name="add-users-to-a-policy"></a>Aggiungere utenti a un criterio
+## <a name="immediately-start-scoring-user-activity"></a>Iniziare immediatamente a segnare l'attività utente
 
-In alcuni scenari potrebbe essere necessario aggiungere temporaneamente utenti ai criteri di rischio insider dopo che un evento insolito viene segnalato all'esterno del flusso di lavoro di gestione dei rischi insider. Utilizzare Inizia attività di punteggio per gli utenti nella scheda Criteri per aggiungere manualmente uno o più criteri di rischio insider per un periodo di tempo specifico, per iniziare immediatamente ad assegnare i punteggi di rischio alla propria attività e per ignorare il requisito per un utente di avere un indicatore di attivazione (ad esempio, una corrispondenza dei criteri DLP). Puoi anche aggiungere un motivo per aggiungere l'utente al criterio. Gli utenti aggiunti manualmente ai criteri vengono visualizzati nel dashboard Utenti.
+In alcuni scenari potrebbe essere necessario avviare immediatamente l'assegnazione dei punteggi di rischio agli utenti con criteri di rischio insider al di fuori del flusso di lavoro degli eventi di attivazione della gestione dei rischi insider. Utilizzare  Inizia attività di punteggio  per gli utenti nella scheda Criteri per aggiungere manualmente uno o più criteri di rischio insider per un periodo di tempo specifico, per iniziare immediatamente ad assegnare i punteggi di rischio alla propria attività e per ignorare il requisito per un utente di avere un indicatore di attivazione (ad esempio, una corrispondenza dei criteri DLP). Puoi anche aggiungere un motivo per aggiungere l'utente al criterio, che verrà visualizzato nella sequenza temporale delle attività degli utenti. Gli utenti aggiunti manualmente ai criteri vengono visualizzati nel **dashboard** Utenti e gli avvisi vengono creati se l'attività soddisfa le soglie di avviso dei criteri.
+
+Alcuni scenari in cui potresti voler iniziare immediatamente a segnare le attività degli utenti:
+
+- Quando gli utenti vengono identificati con problemi di rischio e si desidera iniziare immediatamente ad assegnare i punteggi di rischio alla propria attività per uno o più criteri
+- Quando si verifica un evento imprevisto che potrebbe richiedere l'avvio immediato dell'assegnazione dei punteggi di rischio all'attività degli utenti coinvolti per uno o più criteri
+- Se il connettore HR non è ancora stato configurato, ma si desidera iniziare ad assegnare punteggi di rischio alle attività degli utenti per gli eventi HR caricando un file CSV per gli utenti
 
 >[!NOTE]
->La visualizzazione dei nuovi utenti aggiunti manualmente nel dashboard Utenti potrebbe richiedere diverse ore. La visualizzazione delle attività per i 90 giorni precedenti per questi utenti può richiedere fino a 24 ore. Per visualizzare le attività per gli utenti aggiunti manualmente, passare alla scheda Utenti e selezionare l'utente nel dashboard Utenti e aprire la scheda Attività utente nel riquadro dei dettagli.
+>La visualizzazione dei nuovi utenti aggiunti manualmente nel **dashboard** Utenti potrebbe richiedere diverse ore. La visualizzazione delle attività per i 90 giorni precedenti per questi utenti può richiedere fino a 24 ore. Per visualizzare le attività per gli utenti aggiunti manualmente, passare alla scheda **Utenti** e selezionare l'utente nel **dashboard** Utenti e aprire la scheda **Attività** utente nel riquadro dei dettagli.
 
-Per aggiungere manualmente uno o più utenti a uno o più criteri di gestione dei rischi insider, eseguire la procedura seguente:
+Per avviare manualmente l'attività di punteggio per gli utenti in uno o più criteri di gestione dei rischi insider, completare i passaggi seguenti:
 
 1. Nel Centro [conformità Microsoft 365](https://compliance.microsoft.com)passare a **Gestione dei** rischi Insider e selezionare la **scheda** Criteri.
 2. Nel dashboard dei criteri selezionare i criteri a cui si desidera aggiungere utenti.

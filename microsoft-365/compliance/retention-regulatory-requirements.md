@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Risorse che consentono di soddisfare i requisiti normativi per la governance delle informazioni e la gestione dei record.
-ms.openlocfilehash: e46abc4efec356cfd058414063d3e76ffe8ff224
-ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
+ms.openlocfilehash: a2629dbd9df4b582b2aeb7726de87d81eb726a76
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "50109935"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917782"
 ---
 # <a name="regulatory-requirements-for-information-governance-and-records-management"></a>Requisiti normativi per la governance delle informazioni e la gestione dei record
 
->*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
+>*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Usare le risorse illustrate in questa pagina per soddisfare i requisiti normativi specifici per la governance delle informazioni e la gestione dei record in Microsoft 365. Ogni sezione di questo documento si concentra su una o più normative correlate e include indicazioni o valutazioni di terze parti su come configurare Microsoft 365 per facilitare la conformità ai requisiti descritti.
 

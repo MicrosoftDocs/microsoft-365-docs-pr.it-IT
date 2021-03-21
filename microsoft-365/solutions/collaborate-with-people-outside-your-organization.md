@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Informazioni su come configurare le app di Microsoft 365 come Teams, OneDrive e SharePoint per la collaborazione con persone esterne all'organizzazione.
-ms.openlocfilehash: 7b8e5e30d8222d055fc5f64472c4083db614d4bd
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: 359e72c12c43ca1ea984f93d87ab4868e6d1eb66
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261514"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916395"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Collaborare con persone esterne all'organizzazione
 
@@ -32,29 +32,29 @@ Le funzionalità di condivisione esterna in Microsoft 365 offrono agli utenti de
 La collaborazione con persone esterne all'organizzazione è costituita da due componenti principali:
 
 - **Abilitare la** condivisione: configurare i controlli di condivisione tra Azure Active Directory, Teams, Gruppi di Microsoft 365 e SharePoint per consentire il livello di condivisione desiderato per l'organizzazione.
--  Abilitare una sicurezza aggiuntiva: mentre le funzionalità di condivisione di base possono essere configurate per richiedere l'autenticazione di persone esterne all'organizzazione, Microsoft 365 offre molte funzionalità di sicurezza e conformità aggiuntive che consentono di proteggere i dati e mantenere i criteri di governance durante la condivisione esterna.
+-  Abilitare sicurezza aggiuntiva: sebbene le funzionalità di condivisione di base possano essere configurate in modo da richiedere l'autenticazione a persone esterne all'organizzazione, Microsoft 365 offre molte funzionalità di sicurezza e conformità aggiuntive per proteggere i dati e mantenere i criteri di governance durante la condivisione esterna.
 
 ## <a name="enable-sharing"></a>Abilitare la condivisione
 
-Per impostazione predefinita, in Microsoft 365 la condivisione con persone esterne all'organizzazione è abilitata. Molti scenari di condivisione esterna funzionano senza ulteriori configurazioni. Per confermare le impostazioni per uno scenario in uso o abilitarne uno nuovo, scegliere una delle opzioni seguenti:
+Per impostazione predefinita, in Microsoft 365 è abilitata la condivisione con persone esterne all'organizzazione. Molti scenari di condivisione esterna funzionano senza ulteriori configurazioni. Per verificare le impostazioni per uno scenario in uso o abilitarne uno nuovo, scegliere una delle opzioni seguenti:
 
-- [Collaborare ai](collaborate-on-documents.md) documenti: informazioni su come configurare Microsoft 365 per consentire la condivisione e la collaborazione con persone esterne all'organizzazione (utenti guest e utenti non autenticati) su file e cartelle.
+- [Collaborare ai documenti:](collaborate-on-documents.md) informazioni su come configurare Microsoft 365 per consentire la condivisione e la collaborazione con utenti esterni all'organizzazione (sia guest che utenti non autenticati) su file e cartelle.
 - [Collaborare in un sito:](collaborate-in-site.md) informazioni su come configurare Microsoft 365 per abilitare la condivisione di siti di SharePoint con utenti guest.
 - [Collaborare come team:](collaborate-as-team.md) informazioni su come configurare Microsoft 365 per abilitare la collaborazione guest in Teams.
 
-Per una panoramica completa delle impostazioni di condivisione guest disponibili in Microsoft 365, vedere Informazioni di riferimento sulle impostazioni di condivisione [guest di Microsoft 365.](microsoft-365-guest-settings.md)
+Per un'occhiata completa alle impostazioni di condivisione guest disponibili in Microsoft 365, vedere Riferimento alle impostazioni di condivisione guest di [Microsoft 365.](microsoft-365-guest-settings.md)
 
-## <a name="enable-additional-security"></a>Abilitare una sicurezza aggiuntiva
+## <a name="enable-additional-security"></a>Abilitare sicurezza aggiuntiva
 
 Dopo aver abilitato lo scenario che si desidera utilizzare per la condivisione con persone esterne all'organizzazione, prendere in considerazione misure di sicurezza aggiuntive per proteggere il contenuto da condivisione accidentale o intenzionale inappropriata.
 
-- [Procedure consigliate per la condivisione di file](best-practices-anonymous-sharing.md) e cartelle con utenti non autenticati: informazioni sulle procedure consigliate per la condivisione con utenti non autenticati.
-- [Limitare l'esposizione accidentale:](share-limit-accidental-exposure.md) informazioni su come ridurre le probabilità di condividere accidentalmente contenuti sensibili con persone esterne all'organizzazione.
-- Creare un ambiente di condivisione [guest](create-secure-guest-sharing-environment.md) sicuro: informazioni sugli strumenti forniti in Microsoft 365 per garantire che la condivisione con persone esterne all'organizzazione sia eseguita in modo sicuro e conforme ai requisiti di governance.
+- [Procedure consigliate per la condivisione](best-practices-anonymous-sharing.md) di file e cartelle con utenti non autenticati - Informazioni sulle procedure consigliate per la condivisione con utenti non autenticati.
+- [Limitare l'esposizione accidentale:](share-limit-accidental-exposure.md) informazioni su come ridurre le possibilità di condivisione accidentale di contenuti sensibili con persone esterne all'organizzazione.
+- [Creare](create-secure-guest-sharing-environment.md) un ambiente di condivisione guest sicuro- Informazioni sugli strumenti disponibili in Microsoft 365 per garantire che la condivisione con persone esterne all'organizzazione sia eseguita in modo sicuro e conforme ai requisiti di governance.
 
-## <a name="collaborate-with-partner-companies"></a>Collaborare con società partner
+## <a name="collaborate-with-partner-companies"></a>Collaborare con le società partner
 
-Quando si lavora a un progetto di grandi dimensioni che coinvolge molti utenti guest di un'altra organizzazione o se si ha una relazione continua con i fornitori in cui gli utenti guest cambiano spesso, è possibile utilizzare la gestione dei diritti in Azure Active Directory per semplificare la gestione degli utenti guest e consentire all'azienda partner di condividere tale responsabilità. Per informazioni dettagliate, vedere Creare una [extranet B2B con utenti guest](b2b-extranet.md) gestiti.
+Quando si lavora a un progetto di grandi dimensioni che coinvolge molti utenti guest di un'altra organizzazione o se si dispone di una relazione fornitore continua in cui gli utenti guest cambiano spesso, è possibile utilizzare la gestione dei diritti in Azure Active Directory per semplificare la gestione degli utenti guest e consentire all'azienda partner di condividere tale responsabilità. Per informazioni dettagliate, vedere Create [a B2B Extranet with managed guests.](b2b-extranet.md)
 
 ## <a name="limit-sharing"></a>Limitare la condivisione
 
@@ -62,6 +62,6 @@ Se alcune delle funzionalità di condivisione in Microsoft 365 sono in conflitto
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-[Introduzione alla collaborazione sui file in Microsoft 365](https://docs.microsoft.com/sharepoint/intro-to-file-collaboration)
+[Introduzione alla collaborazione su file in Microsoft 365](/sharepoint/intro-to-file-collaboration)
 
-[Pianificare la collaborazione file in SharePoint con Microsoft 365](https://docs.microsoft.com/sharepoint/deploy-file-collaboration)
+[Pianificare la collaborazione file in SharePoint con Microsoft 365](/sharepoint/deploy-file-collaboration)

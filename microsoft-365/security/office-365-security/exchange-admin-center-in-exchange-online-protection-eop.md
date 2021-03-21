@@ -17,12 +17,12 @@ ms.collection:
 description: Informazioni sull'interfaccia di gestione Web in Exchange Online Protection (EOP) autonomo.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ec9dcbccbee734ea7c475b1ac0a5f9a92a0b401b
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: ab834d14673370a39e148aefa568591ff4c50b8f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50286958"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916995"
 ---
 # <a name="exchange-admin-center-in-standalone-eop"></a>Interfaccia di amministrazione di Exchange Online Protection autonomo
 
@@ -31,9 +31,9 @@ ms.locfileid: "50286958"
 **Si applica a**
 -  [Exchange Online Protection autonomo](exchange-online-protection-overview.md)
 
-L'interfaccia di amministrazione di Exchange è una console di gestione basata sul Web per Exchange Online Protection (EOP) autonomo.
+L'interfaccia di amministrazione di Exchange (EAC) è una console di gestione basata sul Web per Exchange Online Protection (EOP) autonomo.
 
-Per informazioni sulla versione Exchange Online di questo argomento, vedere Vedere [Interfaccia di amministrazione di Exchange in Exchange Online.](https://docs.microsoft.com/exchange/exchange-admin-center)
+Per informazioni sulla versione exchange online di questo argomento, vedere Exchange Online. Vedere [Interfaccia di amministrazione di Exchange in Exchange Online](/exchange/exchange-admin-center).
 
 ## <a name="open-the-eac-in-eop"></a>Aprire l'interfaccia di amministrazione di Exchange in EOP
 
@@ -41,15 +41,15 @@ I clienti EOP autonomi possono accedere all'interfaccia di amministrazione di Ex
 
 - **Dall'interfaccia di amministrazione di Microsoft 365:**
 
-  1. Passare a <https://admin.microsoft.com> e fare clic su Mostra **tutto.**
+  1. Vai a <https://admin.microsoft.com> e fai clic su Mostra **tutto.**
 
      ![Fare clic su Mostra tutto nell'interfaccia di amministrazione di Microsoft 365](../../media/m365-center-show-all.png)
 
-  2. Nella sezione **Admin center** visualizzata, fare clic su Tutte le centri **di amministrazione.**
+  2. Nella sezione **Admin center** visualizzata fare clic su Tutte le centri **di amministrazione.**
 
      ![Fare clic su Tutte le centri di amministrazione nell'interfaccia di amministrazione di Microsoft 365](../../media/m365-center-select-all-admin-centers.png)
 
-  3. Nella pagina **Tutte le centri di** amministrazione visualizzata fare clic su Exchange Online **Protection.**
+  3. Nella pagina **Tutte le centri di amministrazione** visualizzata fare clic su Exchange Online **Protection.**
 
 - Passare direttamente a `https://admin.protection.outlook.com/ecp/` .
 
@@ -63,20 +63,20 @@ In questa sezione vengono illustrati gli elementi dell'interfaccia utente dispon
 
 È il primo livello di esplorazione per la maggior parte delle attività da eseguire in EAC. Il riquadro delle funzionalità è organizzato in aree funzionali.
 
-- **Destinatari**: consente di visualizzare i gruppi e i contatti esterni.
+- **Destinatari**: qui è possibile visualizzare i gruppi e i contatti esterni.
 
-- **Autorizzazioni:** qui è possibile gestire i ruoli di amministratore.
+- **Autorizzazioni**: consente di gestire i ruoli di amministratore.
 
-- **Gestione della conformità:** qui è possibile trovare il report del gruppo di ruoli amministratore e il report del log di controllo dell'amministratore.
+- **Gestione della conformità:** qui è possibile trovare il report del gruppo di ruoli di amministratore e il report del log di controllo dell'amministratore.
 
-- **Protezione:** qui è possibile gestire i criteri antimalware, i criteri di filtro delle connessioni predefiniti e DKIM.
+- **Protezione**: è qui che è possibile gestire i criteri antimalware, i criteri di filtro delle connessioni predefiniti e DKIM.
 
   > [!NOTE]
-  > È consigliabile gestire i criteri antimalware e i criteri di filtro delle connessioni predefiniti nel Centro sicurezza & conformità. Per ulteriori informazioni, vedere [Configurare i criteri antimalware in EOP](configure-anti-malware-policies.md) e Configurare il filtro [connessioni in EOP.](configure-the-connection-filter-policy.md)
+  > È consigliabile gestire i criteri antimalware e i criteri di filtro delle connessioni predefiniti nel Centro sicurezza & conformità. Per ulteriori informazioni, vedere [Configure anti-malware policies in EOP](configure-anti-malware-policies.md) e [Configure connection filtering in EOP.](configure-the-connection-filter-policy.md)
 
-- **Flusso di posta**: consente di gestire le regole del flusso di posta (note anche come regole di trasporto), i domini accettati e i connettori, nonché dove è possibile eseguire la traccia dei messaggi.
+- **Flusso di posta**: consente di gestire le regole del flusso di posta (note anche come regole di trasporto), i domini accettati e i connettori, nonché dove è possibile eseguire traccia dei messaggi.
 
-- **Ibrido:** qui è possibile eseguire la procedura guidata [di](https://docs.microsoft.com/Exchange/hybrid-configuration-wizard)configurazione ibrida e dove è possibile installare il modulo [PowerShell di Exchange Online.](https://docs.microsoft.com/powershell/exchange/mfa-connect-to-exchange-online-powershell)
+- **Ibrido**: è qui che è possibile eseguire la procedura guidata [di](/Exchange/hybrid-configuration-wizard)configurazione ibrida e dove è possibile installare il modulo [PowerShell di Exchange Online.](/powershell/exchange/mfa-connect-to-exchange-online-powershell)
 
 ### <a name="tabs"></a>Schede
 
@@ -110,17 +110,17 @@ Quando si seleziona un oggetto dalla visualizzazione elenco, nel riquadro dei de
 
 ### <a name="me-tile-and-help"></a>Riquadro Io e Guida
 
-Il riquadro **Io** consente di disconnettersi da EAC e accedere come altro utente. Dal menu **a** ![ discesa Help Icon è possibile eseguire le operazioni ](../../media/ITPro-EAC-HelpIcon.gif) seguenti:
+Il riquadro **Io** consente di disconnettersi da EAC e accedere come altro utente. Dal menu **a** ![ discesa Icona Guida è possibile eseguire le operazioni ](../../media/ITPro-EAC-HelpIcon.gif) seguenti:
 
-- **Guida**: fare clic ![ sull'icona ](../../media/ITPro-EAC-HelpIcon.gif) della Guida per visualizzare il contenuto della Guida online.
+- **Guida**: fare clic ![ sull'icona ? ](../../media/ITPro-EAC-HelpIcon.gif) per visualizzare il contenuto della Guida online.
 - **Feedback:** lasciare il feedback.
-- **Community:** pubblicare una domanda per trovare risposte nei forum della community.
-- **Disattiva finestra della** Guida : nella finestra della Guida viene visualizzata la Guida contestuale per i campi quando si crea o si modifica un oggetto. È possibile disabilitare la finestra della Guida o riattivarla se era stata disabilitata.
-- **Mostra registrazione comandi**: viene visualizzata una nuova finestra che mostra i comandi di PowerShell equivalenti in base a quanto configurato in EAC.
+- **Community**: inviare una domanda per trovare risposte nei forum della community.
+- **Disattiva il fumetto della** Guida : la finestra della Guida visualizza la Guida contestuale per i campi quando si crea o si modifica un oggetto. È possibile disabilitare la finestra della Guida o riattivarla se era stata disabilitata.
+- **Show Command Logging**: Viene visualizzata una nuova finestra che mostra i comandi di PowerShell equivalenti in base a quanto configurato in EAC.
 
 ## <a name="supported-browsers"></a>Browser supportati
 
-Per la migliore esperienza nell'utilizzo di EAC, si consiglia di utilizzare sempre i browser più recenti, i client e le app di Office. Si consiglia inoltre di installare gli aggiornamenti software quando disponibili. Per ulteriori informazioni sui browser supportati e sui requisiti di sistema per il servizio, vedere [Requisiti di sistema per Office.](https://products.office.com/office-system-requirements)
+Per la migliore esperienza nell'utilizzo di EAC, si consiglia di utilizzare sempre i browser più recenti, i client e le app di Office. Si consiglia inoltre di installare gli aggiornamenti software quando disponibili. Per ulteriori informazioni sui browser supportati e sui requisiti di sistema per il servizio, vedere [Requisiti di sistema per Office](https://products.office.com/office-system-requirements).
 
 ## <a name="supported-languages"></a>Lingue supportate
 

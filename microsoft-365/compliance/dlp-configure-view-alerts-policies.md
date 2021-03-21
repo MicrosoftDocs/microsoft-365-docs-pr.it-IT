@@ -20,12 +20,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come definire e gestire gli avvisi per i criteri DLP.
-ms.openlocfilehash: 7bc9d9b59c0424792f995be42591548b758c99ec
-ms.sourcegitcommit: 89095172c9c4793d56645b4c885ac8e30936bd0a
+ms.openlocfilehash: 0594cee5208049aef16dee6fa03954faae2a1cdd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/13/2021
-ms.locfileid: "50766421"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917862"
 ---
 # <a name="configure-and-view-alerts-for-dlp-polices-preview"></a>Configurare e visualizzare gli avvisi per i criteri DLP (anteprima)
 
@@ -44,7 +44,7 @@ Le funzionalità seguenti fanno parte di questa anteprima:
     -   Dispositivi
 -   **Opzioni di configurazione avanzata degli** avvisi: queste opzioni fanno parte del flusso di creazione dei criteri DLP. Usarli per creare configurazioni avanzate degli avvisi. È possibile creare un avviso a evento singolo o aggregato, in base al numero di eventi o alle dimensioni dei dati persi.
 
-## <a name="before-you-begin"></a>Informazioni preliminari
+## <a name="before-you-begin"></a>Prima di iniziare
 
 Prima di iniziare, verificare di disporre dei prerequisiti necessari:
 
@@ -54,9 +54,9 @@ Prima di iniziare, verificare di disporre dei prerequisiti necessari:
 
 ### <a name="licensing-for-the-dlp-alert-management-dashboard"></a>Gestione delle licenze per il dashboard di gestione degli avvisi DLP
 
-Tutti i tenant idonei per la prevenzione della perdita dei dati di Office 365 possono accedere al nuovo dashboard di gestione degli avvisi DLP. To get started, you should be eligible for Office 365 DLP for Exchange Online, SharePoint Online, and OneDrive for Business. Per ulteriori informazioni sui requisiti di licenza per la prevenzione della perdita dei dati di Office 365, vedere Quali licenze forniscono a un utente i diritti a [beneficiare del servizio?](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16).
+Tutti i tenant idonei per la prevenzione della perdita dei dati di Office 365 possono accedere al nuovo dashboard di gestione degli avvisi DLP. To get started, you should be eligible for Office 365 DLP for Exchange Online, SharePoint Online, and OneDrive for Business. Per ulteriori informazioni sui requisiti di licenza per la prevenzione della perdita dei dati di Office 365, vedere Quali licenze forniscono a un utente i diritti a [beneficiare del servizio?](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#which-licenses-provide-the-rights-for-a-user-to-benefit-from-the-service-16).
 
-I clienti che partecipano [all'anteprima](https://docs.microsoft.com/microsoft-365/compliance/endpoint-dlp-learn-about?view=o365-worldwide) pubblica dlp degli endpoint o che sono idonei per DLP di [Teams](https://docs.microsoft.com/microsoft-365/compliance/dlp-microsoft-teams?view=o365-worldwide) visualizzano gli avvisi dei criteri DLP degli endpoint e gli avvisi dei criteri DLP di Teams nel dashboard di gestione degli avvisi DLP.
+I clienti che partecipano [all'anteprima](./endpoint-dlp-learn-about.md?view=o365-worldwide) pubblica dlp degli endpoint o che sono idonei per DLP di [Teams](./dlp-microsoft-teams.md?view=o365-worldwide) visualizzano gli avvisi dei criteri DLP degli endpoint e gli avvisi dei criteri DLP di Teams nel dashboard di gestione degli avvisi DLP.
 
 ### <a name="licensing-for-alert-configuration-options"></a>Licenze per le opzioni di configurazione degli avvisi
 

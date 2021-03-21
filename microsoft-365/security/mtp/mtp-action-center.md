@@ -17,17 +17,16 @@ audience: ITPro
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.topic: conceptual
+ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 12/09/2020
-ms.technology: m365d
-ms.openlocfilehash: 45e02e4ce7d5d813cc8215a1f27ed9c415707cb1
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.date: 02/01/2021
+ms.openlocfilehash: c1eba9d78d45068788789825c3513a0fa70255b9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49930427"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917136"
 ---
 # <a name="the-action-center"></a>Centro operativo
 
@@ -36,10 +35,6 @@ ms.locfileid: "49930427"
 
 **Si applica a:**
 - Microsoft 365 Defender
-
-Utilizzare il centro notifiche ( ) per visualizzare i risultati delle indagini correnti e passate nei dispositivi e nelle cassette postali [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) dell'organizzazione. A seconda del tipo di minaccia e del verdetto [risultante,](https://docs.microsoft.com/microsoft-365/security/mtp/mtp-remediation-actions) le azioni di correzione possono verificarsi automaticamente o dopo l'approvazione da parte del team delle operazioni di sicurezza dell'organizzazione. Tutte le azioni correttive, siano esse in attesa di approvazione o già approvate, vengono consolidate nel centro notifiche. 
-
-![Centro notifiche](../../media/air-actioncenter.png)
 
 ## <a name="a-single-pane-of-glass-experience"></a>Un'esperienza a "riquadro unico"
 
@@ -50,77 +45,94 @@ Il centro notifiche include un "riquadro unico" per le attività, ad esempio:
 
 Il team delle operazioni di sicurezza può operare in modo più efficace ed efficiente, perché il centro notifiche offre una panoramica completa di Microsoft 365 Defender sul lavoro.
 
-## <a name="go-to-the-action-center"></a>Accedere al centro notifiche
+## <a name="a-new-unified-action-center"></a>Un nuovo centro notifiche unificato
 
-1. Andare su [https://security.microsoft.com](https://security.microsoft.com) ed eseguire l’accesso. 
+Siamo lieti di annunciare un nuovo centro notifiche unificato ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) )! 
 
-2. Nel riquadro di spostamento, scegliere **Centro notifiche**. 
+:::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centro notifiche unificato in Microsoft 365 Defender":::
 
-3. Nel centro notifiche verranno visualizzate due **schede:** In sospeso e **Cronologia.**
+Il centro notifiche migliorato elenca le azioni di correzione in sospeso e completate per i dispositivi, i messaggi di posta elettronica & contenuto di collaborazione e le identità in un'unica posizione.
+- Se in precedenza si usava il Centro sicurezza & e conformità di Office 365 ( ), provare il nuovo centro notifiche unificato nel Centro sicurezza [https://protection.office.com](https://protection.office.com) Microsoft 365 ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
+- Se si usava il Centro notifiche nel Microsoft Defender Security Center ( ), provare il nuovo centro notifiche unificato nel Centro sicurezza [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) Microsoft 365 ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
+- Se si usava già il Centro sicurezza Microsoft 365 ( ), nel Centro notifiche saranno disponibili diversi miglioramenti [https://security.microsoft.com](https://security.microsoft.com) ( [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) ).
 
-    - Nella scheda **In sospeso** sono elencate le indagini che richiedono la revisione e l'approvazione da parte di qualcuno nel team delle operazioni di sicurezza per continuare. Assicurarsi di rivedere e agire sugli elementi in sospeso visualizzati nella scheda.
+Il centro notifiche unificato riunisce le azioni di correzione in Defender for Endpoint e Defender per Office 365. Definisce un linguaggio comune per tutte le azioni di correzione e offre un'esperienza di indagine unificata. Il centro notifiche offre al team delle operazioni di sicurezza un'esperienza di "singolo riquadro di vetro" per visualizzare e gestire le azioni di correzione.  
 
-    - Nella scheda **Cronologia** sono elencate le indagini precedenti e le azioni correttive intraprese automaticamente. È possibile visualizzare i dati relativi all'ultimo giorno, mese, all'ultima settimana o agli ultimi sei mesi.
+È possibile utilizzare il centro notifiche unificato se si dispone delle autorizzazioni appropriate e di una o più delle sottoscrizioni seguenti:
 
-4. Per visualizzare solo le colonne desiderate, selezionare **Personalizza colonne**.<br/>![Centro notifiche in Microsoft 365 Defender](../../media/mtp-action-center.png)
-
-5. Selezionare un elemento nell'elenco per visualizzare maggiori dettagli relativi a un'indagine. Si aprirà la visualizzazione dei dettagli dell'indagine.<br/>![Dettagli indagine](../../media/mtp-air-investdetails.png)
-
-    - Se l'indagine riguarda il contenuto della posta elettronica (ad esempio, l'entità è una cassetta postale), i dettagli dell'indagine si aprono nel Centro sicurezza & conformità ( [https://protection.office.com/threatinvestigation](https://protection.office.com/threatinvestigation) ). 
-
-    - Se l'indagine riguarda un dispositivo, i dettagli dell'indagine vengono aperti nel Centro sicurezza ([https://security.microsoft.com](https://security.microsoft.com)). 
+- [Defender per endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
+- [Defender per Office 365](../office-365-security/office-365-atp.md)
+- [Microsoft 365 Defender](./microsoft-threat-protection.md)
 
 > [!TIP]
-> Se ritieni che qualcosa sia stato perso o rilevato in modo errato dalle funzionalità di analisi e risposta automatizzate in Microsoft 365 Defender, contattaci. Vedere Come segnalare falsi positivi/negativi nelle funzionalità di analisi e risposta [automatizzate (AIR) in Microsoft 365 Defender.](mtp-autoir-report-false-positives-negatives.md)
+> Per ulteriori informazioni, vedere [Requisiti](./prerequisites.md).
 
-## <a name="available-actions"></a>Azioni disponibili
+## <a name="using-the-action-center"></a>Utilizzo del centro notifiche
 
-Quando vengono eseguite azioni correttive, vengono elencate nella **scheda Cronologia** nel centro notifiche. Tali azioni includono:
+1. Andare su [https://security.microsoft.com](https://security.microsoft.com) ed eseguire l'accesso. 
+2. Nel riquadro di spostamento, scegliere **Centro notifiche**. 
+
+Quando si visita il centro notifiche, vengono visualizzate due schede: Azioni in sospeso e Cronologia. Nella tabella seguente sono riepilogati gli elementi che verranno visualizzati in ogni scheda:
+
+|Scheda  |Descrizione  |
+|---------|---------|
+|**In sospeso**     | Visualizza un elenco di azioni che richiedono attenzione. È possibile approvare o rifiutare le azioni una alla volta oppure selezionare più azioni se hanno lo stesso tipo di azione (ad esempio file di quarantena). <p>**SUGGERIMENTO:** verificare e approvare (o rifiutare) le azioni in sospeso il prima possibile in modo che le indagini automatizzate possano essere completate in modo rapido.       |
+|**Cronologia**     | Funge da log di controllo per le azioni eseguite, ad esempio: <br/>- Azioni correttive intraprese a seguito di indagini automatizzate <br/>- Azioni di correzione eseguite su messaggi di posta elettronica, file o URL sospetti o dannosi<br/>- Azioni di correzione approvate dal team delle operazioni di sicurezza <br/>- Comandi eseguiti e azioni di correzione applicate durante le sessioni di Live Response<br/>- Azioni di correzione eseguite dalla protezione antivirus <p>Consente di annullare determinate azioni (vedere [Annullare le azioni completate).](mtp-autoir-actions.md#undo-completed-actions)        |
+
+È possibile personalizzare, ordinare, filtrare ed esportare i dati nel centro notifiche.
+
+:::image type="content" source="../../media/m3d-action-center-columnsfilters.png" alt-text="Il centro notifiche consente di ordinare, filtrare e personalizzare l'elenco di azioni":::
+
+- Selezionare un'intestazione di colonna per ordinare gli elementi in ordine crescente o decrescente.
+- Utilizzare il filtro periodo di tempo per visualizzare i dati relativi al giorno, alla settimana, ai 30 giorni o ai 6 mesi precedenti.
+- Scegliere le colonne che si desidera visualizzare.
+- Specificare il numero di elementi da includere in ogni pagina di dati.
+- Utilizzare i filtri per visualizzare solo gli elementi che si desidera visualizzare.
+- Selezionare **Esporta** per esportare i risultati in un file CSV.
+
+## <a name="actions-tracked-in-the-action-center"></a>Azioni rilevate nel centro notifiche
+
+Tutte le azioni, in attesa di approvazione o già eseguite, vengono rilevate nel centro notifiche. Le azioni disponibili includono:
 
 - Raccogliere il pacchetto di analisi 
 - Isola dispositivo (questa azione può essere annullata) 
-- Offboard machine 
-- Rilasciare l'esecuzione del codice 
+- Computer offboard 
+- Esecuzione del codice di rilascio 
 - Rilascio dalla quarantena 
 - Esempio di richiesta 
 - Limitare l'esecuzione del codice (questa azione può essere annullata) 
 - Eseguire l'analisi antivirus 
 - Arrestare e mettere in quarantena 
 
-> [!NOTE]
-> Oltre alle azioni di correzione eseguite automaticamente, il team delle operazioni di sicurezza può eseguire azioni manuali per risolvere le minacce rilevate. Per ulteriori informazioni sulle azioni di correzione automatiche e manuali, vedere [Azioni di correzione.](mtp-remediation-actions.md)
+Oltre alle azioni di correzione eseguite automaticamente [](mtp-autoir.md)a seguito di indagini automatizzate, il centro notifiche tiene traccia delle azioni intraprese dal team di sicurezza per affrontare le minacce rilevate e le azioni intraprese a seguito delle funzionalità di protezione dalle minacce in Microsoft 365 Defender. Per ulteriori informazioni sulle azioni di correzione automatiche e manuali, vedere [Azioni di correzione.](mtp-remediation-actions.md)
 
-## <a name="action-source"></a>Origine azione
+## <a name="viewing-action-source-details"></a>Visualizzazione dei dettagli dell'origine dell'azione
 
-(**NUOVO!**) Come sai, Microsoft 365 Defender riunisce funzionalità di analisi e risposta automatizzate in più servizi, ad esempio [Microsoft Defender per Endpoint](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) e Microsoft Defender per Office [365.](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-atp) Il centro notifiche nuovo e migliorato ora include una colonna **di origine** azione che indica la origine di ogni azione correttiva. 
-
-Nella tabella seguente vengono descritti i valori **possibili per l'origine dell'azione:**
+(**NEW!**) Il centro notifiche migliorato ora include una **colonna Origine** azione che indica da dove è stata eseguita ogni azione. Nella tabella seguente vengono descritti i possibili **valori dell'origine azione:**
 
 | Valore di origine dell'azione | Descrizione |
 |:-----|:---|
-| **Azione manuale del dispositivo** | Un'azione manuale eseguita su un dispositivo. Alcuni esempi includono [l'isolamento del dispositivo](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network) o [la quarantena dei file.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts#stop-and-quarantine-files) |
-| **Azione manuale tramite posta elettronica** | Un'azione manuale eseguita sulla posta elettronica. Un esempio include l'eliminazione recisa dei messaggi di posta elettronica o [la correzione di un messaggio di posta elettronica.](https://docs.microsoft.com/microsoft-365/security/office-365-security/remediate-malicious-email-delivered-office-365) |
-| **Azione automatica del dispositivo** | Un'azione automatizzata eseguita su un'entità, ad esempio un file o un processo. Esempi di azioni automatizzate includono l'invio di un file in quarantena, l'interruzione di un processo e la rimozione di una chiave del Registro di sistema. Vedere [Azioni di correzione in Microsoft Defender per Endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation#remediation-actions) |
-| **Azione di posta elettronica automatizzata** | Un'azione automatica eseguita sul contenuto della posta elettronica, ad esempio un messaggio di posta elettronica, un allegato o un URL. Esempi di azioni automatizzate includono l'eliminazione recisa dei messaggi di posta elettronica, il blocco degli URL e la disattivazione dell'inoltro della posta esterna. Vedere [Azioni di correzione in Microsoft Defender per Office 365.](https://docs.microsoft.com/microsoft-365/security/office-365-security/air-remediation-actions) |
-| **Azione di ricerca avanzata** | Azioni eseguite su dispositivi o posta elettronica con [ricerca avanzata.](https://docs.microsoft.com/microsoft-365/security/mtp/advanced-hunting-overview) |
-| **Azione Esplora risorse** | Azioni eseguite sul contenuto della posta elettronica con [Esplora risorse.](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer) |
-| **Azione di risposta in tempo reale manuale** | Azioni eseguite su un dispositivo con [risposta in tempo reale.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response) Alcuni esempi includono l'eliminazione di un file, l'interruzione di un processo e la rimozione di un'attività pianificata. |
-| **Azione di risposta in tempo reale** | Azioni eseguite su un dispositivo con LE API [di Microsoft Defender per endpoint.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/management-apis#microsoft-defender-for-endpoint-apis) Esempi di azioni includono l'isolamento di un dispositivo, l'esecuzione di un'analisi antivirus e il recupero di informazioni su un file. |
+| **Azione manuale del dispositivo** | Azione manuale eseguita su un dispositivo. Alcuni esempi includono [l'isolamento del dispositivo](/windows/security/threat-protection/microsoft-defender-atp/respond-machine-alerts#isolate-devices-from-the-network) [o la quarantena dei file.](/windows/security/threat-protection/microsoft-defender-atp/respond-file-alerts#stop-and-quarantine-files) |
+| **Azione manuale per la posta elettronica** | Un'azione manuale eseguita sulla posta elettronica. Un esempio include l'eliminazione recidiva dei messaggi di posta elettronica [o la correzione di un messaggio di posta elettronica.](../office-365-security/remediate-malicious-email-delivered-office-365.md) |
+| **Azione automatica del dispositivo** | Azione automatizzata eseguita su un'entità, ad esempio un file o un processo. Esempi di azioni automatizzate includono l'invio di un file in quarantena, l'arresto di un processo e la rimozione di una chiave del Registro di sistema. (Vedere [Azioni di correzione in Microsoft Defender per Endpoint).](/windows/security/threat-protection/microsoft-defender-atp/manage-auto-investigation#remediation-actions) |
+| **Azione di posta elettronica automatizzata** | Azione automatizzata eseguita sul contenuto della posta elettronica, ad esempio un messaggio di posta elettronica, un allegato o un URL. Esempi di azioni automatizzate includono l'eliminazione recisa dei messaggi di posta elettronica, il blocco degli URL e la disattivazione dell'inoltro della posta esterna. Vedere [Azioni di correzione in Microsoft Defender per Office 365.](../office-365-security/air-remediation-actions.md) |
+| **Azione di ricerca avanzata** | Azioni eseguite su dispositivi o posta elettronica con [ricerca avanzata.](./advanced-hunting-overview.md) |
+| **Azione Esplora risorse** | Azioni eseguite sul contenuto della posta elettronica con [Explorer](../office-365-security/threat-explorer.md). |
+| **Azione di risposta in tempo reale manuale** | Azioni eseguite su un dispositivo con [risposta in tempo reale.](/windows/security/threat-protection/microsoft-defender-atp/live-response) Alcuni esempi includono l'eliminazione di un file, l'interruzione di un processo e la rimozione di un'attività pianificata. |
+| **Azione di risposta in tempo reale** | Azioni eseguite su un dispositivo con LE API di [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/management-apis#microsoft-defender-for-endpoint-apis). Esempi di azioni includono l'isolamento di un dispositivo, l'esecuzione di un'analisi antivirus e il recupero di informazioni su un file. |
 
 ## <a name="required-permissions-for-action-center-tasks"></a>Autorizzazioni necessarie per le attività del centro notifiche
 
-Per approvare o rifiutare le azioni in sospeso nel centro notifiche, è necessario disporre delle autorizzazioni elencate nella tabella seguente:
+Per eseguire attività quali l'approvazione o il rifiuto di azioni in sospeso nel centro notifiche, è necessario disporre delle autorizzazioni elencate nella tabella seguente:
 
 |Azione correttiva |Ruoli e autorizzazioni necessari |
 |--|----|
-|Correzione di Microsoft Defender per endpoint (dispositivi) |Ruolo di amministratore della protezione assegnato in Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) o nell'interfaccia di amministrazione di Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- o ---<br/>Ruolo azioni correttive attive assegnato in Microsoft Defender per endpoint <br/> <br/> Per altre informazioni, vedere le risorse seguenti: <br/>- [Autorizzazioni del ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Creare e gestire ruoli per il controllo dell'accesso basato sui ruoli (Microsoft Defender per endpoint)](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/user-roles)  |
-|Correzione di Microsoft Defender per Office 365 (contenuto di Office e posta elettronica)  |Ruolo di amministratore della protezione assegnato in Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) o nell'interfaccia di amministrazione di Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- e --- <br/>Ruolo di ricerca ed eliminazione assegnato al Centro sicurezza & conformità ( [https://protection.office.com](https://protection.office.com) ) <br/><br/>**IMPORTANTE:** se il ruolo Amministratore della sicurezza è assegnato solo nel Centro sicurezza & e conformità, non sarà possibile accedere alle funzionalità del Centro notifiche o di Microsoft 365 Defender. È necessario avere il ruolo di amministratore della protezione assegnato in Azure Active Directory o nell'interfaccia di amministrazione di Microsoft 365. <br/><br/>Per altre informazioni, vedere le risorse seguenti: <br/>- [Autorizzazioni del ruolo di amministratore in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Autorizzazioni nel Centro sicurezza & conformità](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
+|Microsoft Defender for Endpoint remediation (dispositivi) |Ruolo di **amministratore della protezione** assegnato in Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) o nell'interfaccia di amministrazione di Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- o ---<br/>**Ruolo azioni di correzione attive** assegnato in Microsoft Defender per Endpoint <br/> <br/> Per altre informazioni, vedere le risorse seguenti: <br/>- [Autorizzazioni del ruolo di amministratore in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Creare e gestire ruoli per il controllo dell'accesso basato sui ruoli (Microsoft Defender for Endpoint)](/windows/security/threat-protection/microsoft-defender-atp/user-roles)  |
+|Correzione di Microsoft Defender per Office 365 (contenuto di Office e posta elettronica)  |Ruolo di **amministratore della protezione** assegnato in Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) o nell'interfaccia di amministrazione di Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- e --- <br/>**Ruolo di ricerca ed eliminazione** assegnato al Centro sicurezza & conformità ( [https://protection.office.com](https://protection.office.com) ) <br/><br/>**IMPORTANTE:** se il  ruolo Amministratore della sicurezza è assegnato solo nel Centro conformità di Office 365 Security & ( ), non sarà possibile accedere al Centro notifiche o alle funzionalità di [https://protection.office.com](https://protection.office.com) Microsoft 365 Defender. È necessario disporre del **ruolo amministratore della** sicurezza assegnato in Azure Active Directory o nell'interfaccia di amministrazione di Microsoft 365. <br/><br/>Per altre informazioni, vedere le risorse seguenti: <br/>- [Autorizzazioni del ruolo di amministratore in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Autorizzazioni nel Centro sicurezza & conformità](../office-365-security/permissions-in-the-security-and-compliance-center.md) |
 
-> [!NOTE]
-> Gli utenti che hanno il ruolo di amministratore globale assegnato in Azure Active Directory possono approvare o rifiutare qualsiasi azione in sospeso nel centro notifiche. Tuttavia, come procedura consigliata, l'organizzazione dovrebbe limitare il numero di persone a cui è assegnato il ruolo di amministratore globale. È consigliabile usare i ruoli di amministratore della protezione, azioni correttive attive e ricerca ed eliminazione elencati in precedenza per le autorizzazioni del centro notifiche.
+> [!TIP]
+> Gli utenti che hanno il ruolo di **amministratore globale** assegnato in Azure Active Directory possono approvare o rifiutare qualsiasi azione in sospeso nel centro notifiche. Tuttavia, come procedura consigliata, l'organizzazione deve limitare il numero di persone a cui è assegnato il **ruolo amministratore** globale. È consigliabile utilizzare i ruoli **Amministratore** **sicurezza,** Azioni di correzione attive e Ricerca ed eliminazione elencati nella tabella precedente per le autorizzazioni del centro notifiche. 
 
-## <a name="next-steps"></a>Passaggi successivi 
+## <a name="next-step"></a>Passaggio successivo 
 
-- [Approvare o rifiutare le azioni in sospeso in seguito a un'indagine automatizzata](mtp-autoir-actions.md)
-- [Visualizzare i risultati di un'indagine automatizzata](mtp-autoir-results.md)
-
+- [Esaminare e gestire le azioni di correzione](mtp-autoir-actions.md)

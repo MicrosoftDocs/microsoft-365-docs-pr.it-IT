@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Come distribuire team con un livello di protezione di base.
-ms.openlocfilehash: 11554dbd7e33a77c9f6397ae9c5e91669f537081
-ms.sourcegitcommit: 7ecd10b302b3b3dfa4ba3be3a6986dd3c189fbff
+ms.openlocfilehash: 4f38bf286b8ebd3edf6f7705299008566d2b7c8f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "49921871"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916335"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Configurare team con la protezione di base
 
@@ -37,9 +37,9 @@ Come primo passaggio, è consigliabile configurare criteri di base per le identi
 
 |Opzione|Informazioni|
 |:------|:-----------|
-|Allegati sicuri per SPO, OneDrive e Teams|[Allegati sicuri](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-attachments)<br>[Defender per Office 365 - SharePoint, OneDrive e Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-for-spo-odb-and-teams)|
-|Sicurezza documenti|[Sicurezza documenti in Microsoft Defender per Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/safe-docs)|
-|Collegamenti sicuri per Teams|[Collegamenti sicuri di Office 365 in Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links-for-teams)<br>[Collegamenti sicuri](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)|
+|Allegati sicuri per SPO, OneDrive e Teams|[Allegati sicuri](../security/office-365-security/atp-safe-attachments.md)<br>[Defender per Office 365 - SharePoint, OneDrive e Microsoft Teams](../security/office-365-security/atp-for-spo-odb-and-teams.md)|
+|Sicurezza documenti|[Sicurezza documenti in Microsoft Defender per Office 365](../security/office-365-security/safe-docs.md)|
+|Collegamenti sicuri per Teams|[Collegamenti sicuri di Office 365 in Teams](../security/office-365-security/atp-safe-links.md#safe-links-settings-for-microsoft-teamssafe-links-settings-for-microsoft-teams)<br>[Collegamenti sicuri](../security/office-365-security/atp-safe-links.md)|
 
 ## <a name="teams-guest-sharing"></a>Condivisione con gli utenti guest in Teams
 
@@ -59,7 +59,7 @@ Per configurare le impostazioni di accesso guest di Teams
 > [!NOTE]
 > Dopo l'attivazione, potrebbero essere necessarie fino a 24 ore prima che le impostazioni guest di Teams diventino effettive.
 
-La condivisione guest è attivata per impostazione predefinita per i gruppi di Office 365 e SharePoint. Tuttavia, se in precedenza si sono modificate le impostazioni di condivisione guest per la propria organizzazione, è consigliabile rivedere [Collaborare con gli utenti guest in un team](https://docs.microsoft.com/microsoft-365/solutions/collaborate-as-team) per assicurarsi che la condivisione guest sia disponibile in Teams.
+La condivisione guest è attivata per impostazione predefinita per i gruppi di Office 365 e SharePoint. Tuttavia, se in precedenza si sono modificate le impostazioni di condivisione guest per la propria organizzazione, è consigliabile rivedere [Collaborare con gli utenti guest in un team](./collaborate-as-team.md) per assicurarsi che la condivisione guest sia disponibile in Teams.
 
 ## <a name="site-and-file-sharing"></a>Condivisione di siti e file
 
@@ -71,7 +71,7 @@ Per modificare il collegamento di condivisione predefinito
 3. In **Collegamenti di file e cartelle** selezionare **Solo gli utenti dell'organizzazione**.
 4. Fare clic su **Salva**.
 
-Per un'esperienza di condivisione guest ottimale, è inoltre consigliabile abilitare l'[Integrazione di SharePoint e OneDrive con Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview).
+Per un'esperienza di condivisione guest ottimale, è inoltre consigliabile abilitare l'[Integrazione di SharePoint e OneDrive con Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview).
 
 ## <a name="create-a-team"></a>Creare un team
 
@@ -94,12 +94,12 @@ Per aggiornare le impostazioni di condivisione del sito
 
 In Microsoft 365 sono disponibili altri metodi per proteggere i contenuti. Valutare se le opzioni seguenti possono migliorare la sicurezza per l'organizzazione.
 
-- Fare in modo che gli utenti guest accettino le [condizioni per l'utilizzo](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use).
-- Configurare un [criterio di timeout della sessione](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) per gli utenti guest.
-- Creare [tipi di informazioni sensibili](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types) e usare la [prevenzione della perdita dei dati](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) per impostare criteri per l'accesso alle informazioni riservate.
+- Fare in modo che gli utenti guest accettino le [condizioni per l'utilizzo](/azure/active-directory/conditional-access/terms-of-use).
+- Configurare un [criterio di timeout della sessione](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) per gli utenti guest.
+- Creare [tipi di informazioni sensibili](../compliance/sensitive-information-type-learn-about.md) e usare la [prevenzione della perdita dei dati](../compliance/data-loss-prevention-policies.md) per impostare criteri per l'accesso alle informazioni riservate.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Gestire i criteri di riunione in Teams](https://docs.microsoft.com/microsoftteams/meeting-policies-in-teams)
+[Gestire i criteri di riunione in Teams](/microsoftteams/meeting-policies-in-teams)
 
-[Introduzione alla gestione dei rischi Insider](https://docs.microsoft.com/microsoft-365/compliance/insider-risk-management-configure)
+[Introduzione alla gestione dei rischi Insider](../compliance/insider-risk-management-configure.md)

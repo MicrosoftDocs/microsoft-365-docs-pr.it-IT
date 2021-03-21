@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: informazioni sulle condizioni ed eccezioni dei criteri dlp
-ms.openlocfilehash: 93311ec369f8dd240b1e76c9e29ef8cc0a144cc2
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 02880a89bf580d94bad4a5dbdce5027b0a194487
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741369"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918012"
 ---
 # <a name="dlp-policy-conditions-exceptions-and-actions-preview"></a>Condizioni, eccezioni e azioni dei criteri DLP (anteprima)
 
@@ -105,7 +105,7 @@ Le tabelle nelle sezioni seguenti descrivono le condizioni e le eccezioni dispon
 |Dimensione dei messaggi su|condition: *MessageSizeOver* <br/> exception: *ExceptIfMessageSizeOver*| Dimensioni    |Messaggi in cui la dimensione totale (messaggio più allegato) è uguale o superiore al valore specificato. <br/>**Nota**: i limiti di dimensione dei messaggi per le cassette postali vengono valutati prima delle regole del flusso di posta. Un messaggio troppo grande per una cassetta postale verrà rifiutato prima che una regola con questa condizione possa essere applicata al messaggio.  |
 | Con importanza    | condition: *WithImportance* <br/> exception: *ExceptIfWithImportance*    | Priorità    | Messaggi contrassegnati con il livello di priorità specificato.    |
 | Il set di caratteri del contenuto contiene parole    | condition: *ContentCharacterSetContainsWords* <br/> *ExceptIfContentCharacterSetContainsWords*    | CharacterSets    | Messaggi che contengono i nomi dei set di caratteri specificati.    |
-| Ha override del mittente    | condition: *HasSenderOverride* <br/> exception: *ExceptIfHasSenderOverride*    | n/d    | Messaggi in cui il mittente ha scelto di ignorare un criterio di prevenzione della perdita di dati (DLP). Per ulteriori informazioni sui criteri DLP, vedere [Prevenzione della perdita dei dati](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies).   |
+| Ha override del mittente    | condition: *HasSenderOverride* <br/> exception: *ExceptIfHasSenderOverride*    | n/d    | Messaggi in cui il mittente ha scelto di ignorare un criterio di prevenzione della perdita di dati (DLP). Per ulteriori informazioni sui criteri DLP, vedere [Prevenzione della perdita dei dati](./data-loss-prevention-policies.md).   |
 | Corrispondenze del tipo di messaggio    | condition: *MessageTypeMatches* <br/> exception: *ExceptIfMessageTypeMatches*    | MessageType    | Messaggi del tipo specificato.    |
 
 ## <a name="actions-for-dlp-policies"></a>Azioni per i criteri DLP
@@ -124,7 +124,3 @@ In questa tabella vengono descritte le azioni disponibili in DLP.
 |Aggiungere il manager del mittente come destinatario|AddRecipients | Prima proprietà: *AddedManagerAction*</br>Seconda proprietà: *Field* | Aggiunge il responsabile del mittente al messaggio come tipo di destinatario specificato ( To, Cc, Bcc ) o reindirizza il messaggio al gestore del mittente senza indicare il mittente o il destinatario. Questa operazione funziona solo se l'attributo Manager del mittente è definito in Active Directory. Questo parametro utilizza la sintassi: @{AddManagerAsRecipientType = "<To \| Cc \| Bcc>"}|    
 Oggetto anteposto    |PrependSubject    |Stringa    |Consente di aggiungere il testo specificato all'inizio del campo Subject del messaggio. Valutare l'uso di uno spazio o dei due punti (:) come ultimo carattere del testo specificato per distinguerlo dal testo dell'oggetto originale.</br>Per impedire l'aggiunta della stessa stringa ai messaggi che contengono già il testo nell'oggetto (ad esempio risposte), aggiungere l'eccezione "L'oggetto contiene parole" (ExceptIfSubjectContainsWords) alla regola.    |
 Applicare la dichiarazione di non responsabilità HTML    |ApplyHtmlDisclaimer    |First, proprietà: *Text*</br>Seconda proprietà: *Location*</br>Terza proprietà: *azione di fallback*    |Applica la dichiarazione di non responsabilità HTML specificata al percorso richiesto del messaggio.</br>Questo parametro utilizza la sintassi: @{ Text = " " ; Location = <Append \| Prepend>; FallbackAction = <Wrap \| Ignore \| Reject> }
-
-
-
-

@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Panoramica di Viva Topics.
-ms.openlocfilehash: 91442ba12b3d5df1d9934022751f4bc381cd40e8
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
-ms.translationtype: HT
+ms.openlocfilehash: 68a88e74a674a7bbc290ae0e8f88bfbe0277d910
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50453970"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917381"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Panoramica di Microsoft Viva Topics 
 
@@ -66,7 +66,7 @@ Quando un argomento viene identificato e l'IA determina di avere informazioni su
 
 Gli amministratori delle informazioni possono scegliere di eseguire la ricerca per indicizzazione di tutti i siti di SharePoint nel tenant o di selezionarne solo alcuni.
 
-Vedere [Scoperta e conservazione dell'argomento](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation)
+Vedere [Scoperta e conservazione dell'argomento](./topic-experiences-discovery-curation.md)
 
 ## <a name="roles"></a>Ruoli
 
@@ -108,7 +108,7 @@ I controlli amministratore nell'interfaccia di amministrazione di Microsoft 365 
 - Controllare quali utenti possono creare e modificare gli argomenti.
 - Controllare quale utente può visualizzare gli argomenti.
 
-Vedere [assegnare autorizzazioni utente](https://docs.microsoft.com/microsoft-365/knowledge/plan-topic-experiences#user-permissions), [gestire visibilità argomento](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-knowledge-rules), e [gestire individuazione argomento](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery) per ulteriori informazioni sui controlli amministratore.
+Vedere [assegnare autorizzazioni utente](./plan-topic-experiences.md#user-permissions), [gestire visibilità argomento](./topic-experiences-knowledge-rules.md), e [gestire individuazione argomento](./topic-experiences-discovery.md) per ulteriori informazioni sui controlli amministratore.
 
 ## <a name="topic-curation--feedback"></a>Cura degli argomenti e feedback
 
@@ -120,8 +120,7 @@ Agli utenti a cui consenti l'accesso per visualizzare gli argomenti nel lavoro q
 
 Inoltre, gli utenti con le autorizzazioni appropriate possono taggare elementi come conversazioni di Yammer che sono rilevanti per un argomento e aggiungerli a un argomento specifico. 
 
-Vedere [Scoperta e conservazione dell'argomento](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-discovery-curation)
+Vedere [Scoperta e conservazione dell'argomento](./topic-experiences-discovery-curation.md)
 
 
 ## <a name="see-also"></a>Vedere anche
-

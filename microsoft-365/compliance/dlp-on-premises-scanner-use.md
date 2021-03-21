@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Informazioni su come usare la prevenzione della perdita dei dati di Microsoft 365 nello scanner locale per analizzare i dati inattivi e implementare azioni di protezione per le condivisioni di file locali e le cartelle e raccolte documenti di SharePoint locali.
-ms.openlocfilehash: 34be93f5c9980a7f8ea8ad31b708af14a8725f73
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: c46b67ca392732616329bad138166c892cd06640
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50417363"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917822"
 ---
 # <a name="use-the-microsoft-365-data-loss-prevention-on-premises-scanner-preview"></a>Usare lo scanner locale per la prevenzione della perdita dei dati di Microsoft 365 (anteprima)
 
@@ -47,7 +47,7 @@ I dati dello scanner locale DPL vengono visualizzati in diverse aree
  
 #### <a name="microsoft-365-audit-log"></a>Log di audit Microsoft 365
 
-Durante l'anteprima pubblica, le corrispondenze delle regole DPL sono disponibili nell'interfaccia utente del log di audit, vedere [Individuare i log di audit nel Centro conformità](search-the-audit-log-in-security-and-compliance.md) o accessibili tramite PowerShell [Search UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps).
+Durante l'anteprima pubblica, le corrispondenze delle regole DPL sono disponibili nell'interfaccia utente del log di audit, vedere [Individuare i log di audit nel Centro conformità](search-the-audit-log-in-security-and-compliance.md) o accessibili tramite PowerShell [Search UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps).
 
 #### <a name="aip"></a>AIP
 

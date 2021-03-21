@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Come distribuire team con la protezione dei dati altamente sensibili.
-ms.openlocfilehash: 7e746ebc81d1ccd9aea2953fd42004715f8d7819
-ms.sourcegitcommit: a6b998fef5bdb35ec6726c743a24fea721535fcd
+ms.openlocfilehash: fdc3c1ab2c780289b7405623779b8af89da8ba17
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50509267"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50916287"
 ---
 # <a name="configure-teams-with-protection-for-highly-sensitive-data"></a>Configurare team con la protezione dei dati altamente sensibili
 
@@ -44,8 +44,8 @@ A seconda del tipo di attività, è possibile abilitare la condivisione guest pe
 
 Per informazioni dettagliate sulla condivisione sicura di con gli utenti guest, vedere le risorse seguenti:
 
-- [Limitare l'esposizione accidentale ai file durante la condivisione con persone esterne all'organizzazione](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure)
-- [Creare un ambiente di condivisione guest sicuro](https://docs.microsoft.com/microsoft-365/solutions/create-secure-guest-sharing-environment)
+- [Limitare l'esposizione accidentale ai file durante la condivisione con persone esterne all'organizzazione](./share-limit-accidental-exposure.md)
+- [Creare un ambiente di condivisione guest sicuro](./create-secure-guest-sharing-environment.md)
 
 Per consentire o impedire la condivisione guest, è possibile usare una combinazione di un'etichetta di riservatezza per il team e di controlli di condivisione a livello di team per il sito di SharePoint associato, entrambi illustrati più avanti.
 
@@ -53,7 +53,7 @@ Per consentire o impedire la condivisione guest, è possibile usare una combinaz
 
 Per il livello di protezione dei dati altamente sensibili si userà un'etichetta di riservatezza per classificare il team. Questa etichetta può essere usata anche per classificare e crittografare singoli file in questo o in altri team o in altre posizioni dei file, ad esempio SharePoint o OneDrive. 
 
-Come primo passaggio, è necessario abilitare le etichette di riservatezza per Teams. Per informazioni dettagliate, vedere [Usare le etichette di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di Office 365 e siti di SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+Come primo passaggio, è necessario abilitare le etichette di riservatezza per Teams. Per informazioni dettagliate, vedere [Usare le etichette di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di Office 365 e siti di SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 Se nell'organizzazione sono già state distribuite etichette di riservatezza, valutare il modo in cui questa etichetta si inserisce nella strategia di etichettatura complessiva. È possibile modificare il nome o le impostazioni, se necessario, per soddisfare le esigenze dell'organizzazione.
 
@@ -84,7 +84,7 @@ Per creare un'etichetta di riservatezza
 22. Nella pagina **Applicazione automatica di etichette per le colonne del database**, fare clic su **Avanti**.
 23. Fare clic su **Crea etichetta**, quindi su **Fine**.
 
-Dopo avere creato l'etichetta, è necessario pubblicarla per gli utenti che la useranno. Per la protezione dei dati sensibili, l'etichetta sarà resa disponibile per tutti gli utenti. È possibile pubblicare l'etichetta nel Centro conformità Microsoft 365, nella scheda **Criteri delle etichette** della pagina **Protezione delle informazioni**. Se si ha un criterio esistente applicato a tutti gli utenti, aggiungere questa etichetta a tale criterio. Se è necessario creare un nuovo criterio, vedere [Pubblicare etichette di riservatezza creando un criterio di etichetta](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels#publish-sensitivity-labels-by-creating-a-label-policy).
+Dopo avere creato l'etichetta, è necessario pubblicarla per gli utenti che la useranno. Per la protezione dei dati sensibili, l'etichetta sarà resa disponibile per tutti gli utenti. È possibile pubblicare l'etichetta nel Centro conformità Microsoft 365, nella scheda **Criteri delle etichette** della pagina **Protezione delle informazioni**. Se si ha un criterio esistente applicato a tutti gli utenti, aggiungere questa etichetta a tale criterio. Se è necessario creare un nuovo criterio, vedere [Pubblicare etichette di riservatezza creando un criterio di etichetta](../compliance/create-sensitivity-labels.md#publish-sensitivity-labels-by-creating-a-label-policy).
 
 ## <a name="create-a-team"></a>Creare un team
 
@@ -108,7 +108,7 @@ Per limitare la creazione di canali privati
 2. Nella scheda **Impostazioni** espandere **Autorizzazioni dei membri**.
 3. Deselezionare la casella di controllo **Consenti ai membri di creare canali privati**.
 
-È anche possibile usare i [criteri dei team](https://docs.microsoft.com/MicrosoftTeams/teams-policies) per controllare chi può creare canali privati.
+È anche possibile usare i [criteri dei team](/MicrosoftTeams/teams-policies) per controllare chi può creare canali privati.
 
 ## <a name="sharepoint-settings"></a>Impostazioni di SharePoint
 
@@ -135,7 +135,7 @@ Per aggiornare le impostazioni dei siti
 6. In Tipo di collegamento di condivisione predefinito deselezionare la casella di controllo **Uguale all'impostazione a livello di organizzazione** e selezionare **Persone con accesso esistente**.
 7. Fare clic su **Salva**.
 
-Se si vuole creare uno script per questa operazione come parte del processo di creazione del team, è possibile usare [set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite) con i parametri seguenti:
+Se si vuole creare uno script per questa operazione come parte del processo di creazione del team, è possibile usare [set-SPOSite](/powershell/module/sharepoint-online/set-sposite) con i parametri seguenti:
 
 - `-SharingCapability Disabled` per disattivare la condivisione guest (per impostazione predefinita è attivata)
 - `-DefaultSharingLinkType Internal` per impostare il collegamento di condivisione predefinito su *Persone specifiche*
@@ -159,5 +159,4 @@ Per fare in modo che solo i proprietari possano condividere il sito
 
 ## <a name="see-also"></a>Vedere anche
 
-[Creare e configurare etichette di riservatezza e i relativi criteri](https://docs.microsoft.com/microsoft-365/compliance/create-sensitivity-labels)
-
+[Creare e configurare etichette di riservatezza e i relativi criteri](../compliance/create-sensitivity-labels.md)

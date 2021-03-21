@@ -17,12 +17,12 @@ ms.custom:
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Informazioni sulle opzioni disponibili per creare un ambiente di condivisione guest sicuro in Microsoft 365, fornendo l'accesso guest per una migliore collaborazione.
-ms.openlocfilehash: 28b2efba9f0c4ba17811a9871b05ab9f5a7a4839
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 0eb999d48bc0976d7c2bb32ff1bdba8d63409d81
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838683"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918467"
 ---
 # <a name="create-a-secure-guest-sharing-environment"></a>Creare un ambiente di condivisione guest sicuro
 
@@ -39,7 +39,7 @@ In questo articolo sono inclusi gli argomenti seguenti:
 - Assegnazione automatica di un'etichetta di riservatezza ai documenti che contengono un tipo di informazioni sensibili.
 - Rimozione automatica dell'accesso guest dai file con un'etichetta di riservatezza.
 
-Alcune delle opzioni descritte in questo articolo richiedono che i guest abbiano un account in Azure Active Directory. Per fare in modo che gli utenti guest siano inclusi nella directory quando si condividono con loro file e cartelle, usare l'[anteprima dell'integrazione di SharePoint e OneDrive con Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview).
+Alcune delle opzioni descritte in questo articolo richiedono che i guest abbiano un account in Azure Active Directory. Per fare in modo che gli utenti guest siano inclusi nella directory quando si condividono con loro file e cartelle, usare l'[anteprima dell'integrazione di SharePoint e OneDrive con Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview).
 
 Si noti che in questo articolo non verranno illustrate le impostazioni per l'abilitazione della condivisione guest. Per informazioni dettagliate su come abilitare la condivisione guest per scenari diversi, vedere [Collaborare con utenti esterni all'organizzazione](collaborate-with-people-outside-your-organization.md).
 
@@ -66,7 +66,7 @@ Ora gli utenti guest dovranno effettuare la registrazione all'autenticazione a p
 
 ### <a name="more-information"></a>Altre informazioni
 
-[Pianificare la distribuzione dell’autenticazione a più fattori di Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/howto-mfa-getstarted)
+[Pianificare la distribuzione dell’autenticazione a più fattori di Azure AD](/azure/active-directory/authentication/howto-mfa-getstarted)
 
 ## <a name="set-up-a-terms-of-use-for-guests"></a>Configurare un documento di condizioni per l'utilizzo per gli utenti guest
 
@@ -108,11 +108,11 @@ Per creare i criteri di accesso condizionale
 Ora, la prima volta che un utente guest tenterà di accedere al contenuto, a un team o a un sito dell'organizzazione, dovrà accettare le condizioni per l'utilizzo.
 
 > [!NOTE]
-> L'uso dell’accesso condizionale richiede una licenza di Azure AD Premium P1. Per altre informazioni, vedere [Cos’è l’accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
+> L'uso dell’accesso condizionale richiede una licenza di Azure AD Premium P1. Per altre informazioni, vedere [Cos’è l’accesso condizionale](/azure/active-directory/conditional-access/overview).
 
 ### <a name="more-information"></a>Ulteriori informazioni
 
-[Condizioni per l'utilizzo di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use)
+[Condizioni per l'utilizzo di Azure Active Directory](/azure/active-directory/conditional-access/terms-of-use)
 
 ## <a name="set-up-guest-access-reviews"></a>Configurare le verifiche di accesso per gli utenti guest
 
@@ -145,15 +145,15 @@ Per configurare una verifica di accesso per gli utenti guest
 
 ### <a name="more-information"></a>Ulteriori informazioni
 
-[Gestire l'accesso guest con le verifiche di accesso di Azure AD](https://docs.microsoft.com/azure/active-directory/governance/manage-guest-access-with-access-reviews)
+[Gestire l'accesso guest con le verifiche di accesso di Azure AD](/azure/active-directory/governance/manage-guest-access-with-access-reviews)
 
-[Creare una verifica di accesso di gruppi o applicazioni nelle verifiche di accesso di Azure AD](https://docs.microsoft.com/azure/active-directory/governance/create-access-review)
+[Creare una verifica di accesso di gruppi o applicazioni nelle verifiche di accesso di Azure AD](/azure/active-directory/governance/create-access-review)
 
 ## <a name="set-up-web-only-access-for-guests"></a>Configurare l'accesso solo Web per gli utenti guest
 
 Richiedendo agli utenti guest di accedere ai team, ai siti e ai file solo tramite un Web browser, è possibile ridurre la superficie di attacco e semplificare l'amministrazione.
 
-Per i gruppi di Microsoft 365 e Teams, si usano i criteri di accesso condizionale di Azure AD. Per SharePoint, la configurazione si esegue nell'interfaccia di amministrazione di SharePoint. È anche possibile [usare le etichette di riservatezza per limitare gli utenti guest all'accesso solo Web](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+Per i gruppi di Microsoft 365 e Teams, si usano i criteri di accesso condizionale di Azure AD. Per SharePoint, la configurazione si esegue nell'interfaccia di amministrazione di SharePoint. È anche possibile [usare le etichette di riservatezza per limitare gli utenti guest all'accesso solo Web](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 Per limitare agli utenti guest l’accesso solo Web per gruppi e team:
 
@@ -222,7 +222,7 @@ Per creare un tipo di informazioni sensibili
 
 ### <a name="more-information"></a>Altre informazioni
 
-[Tipi di informazioni sensibili personalizzati](https://docs.microsoft.com/Office365/SecurityCompliance/custom-sensitive-info-types)
+[Tipi di informazioni sensibili personalizzati](/Office365/SecurityCompliance/custom-sensitive-info-types)
 
 ## <a name="create-an-auto-labeling-policy-to-assign-a-sensitivity-label-based-on-a-sensitive-information-type"></a>Creare un criterio di applicazione automatica di etichette per assegnare un'etichetta di riservatezza in base a un tipo di informazioni sensibili
 
@@ -252,11 +252,11 @@ Una volta impostato il criterio, se un utente digita "Progetto Saturno" in un do
 
 ### <a name="more-information"></a>Altre informazioni
 
-[Applicare automaticamente un'etichetta di riservatezza al contenuto](https://docs.microsoft.com/microsoft-365/compliance/apply-sensitivity-label-automatically)
+[Applicare automaticamente un'etichetta di riservatezza al contenuto](../compliance/apply-sensitivity-label-automatically.md)
 
 ## <a name="create-a-dlp-policy-to-remove-guest-access-to-highly-sensitive-files"></a>Creare un criterio DLP per rimuovere l'accesso guest ai file estremamente riservati
 
-È possibile usare [prevenzione della perdita dei dati (DLP)](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) per impedire la condivisione indesiderata di contenuto riservato da parte dei guest. La prevenzione della perdita dei dati può intervenire sulla base dell'etichetta di riservatezza di un file e rimuovere l'accesso guest.
+È possibile usare [prevenzione della perdita dei dati (DLP)](../compliance/data-loss-prevention-policies.md) per impedire la condivisione indesiderata di contenuto riservato da parte dei guest. La prevenzione della perdita dei dati può intervenire sulla base dell'etichetta di riservatezza di un file e rimuovere l'accesso guest.
 
 Per creare una regola DLP
 
@@ -287,9 +287,9 @@ Per creare una regola DLP
 
 Sono disponibili delle opzioni aggiuntive in Microsoft 365 e Azure Active Directory che possono aiutare a proteggere l'ambiente di condivisione guest.
 
-- È possibile creare un elenco di domini di condivisione consentiti o rifiutati per limitare le persone con cui gli utenti possono condividere contenuti. Per altre informazioni, vedere [Limitare la condivisione di contenuti di SharePoint e OneDrive per dominio](https://docs.microsoft.com/sharepoint/restricted-domains-sharing) e [Consentire o bloccare gli inviti per gli utenti B2B da organizzazioni specifiche](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list).
-- È possibile porre limiti agli altri tenant di Azure Active Directory a cui gli utenti possono connettersi. Per informazioni, vedere [Utilizzare le restrizioni del tenant per gestire l'accesso alle applicazioni cloud SaaS](https://docs.microsoft.com/azure/active-directory/manage-apps/tenant-restrictions).
-- È possibile creare un ambiente gestito in cui i partner possano contribuire alla gestione degli account guest. Per informazioni, vedere [Creare una Extranet B2B con guest gestiti](https://docs.microsoft.com/Office365/Enterprise/b2b-extranet).
+- È possibile creare un elenco di domini di condivisione consentiti o rifiutati per limitare le persone con cui gli utenti possono condividere contenuti. Per altre informazioni, vedere [Limitare la condivisione di contenuti di SharePoint e OneDrive per dominio](/sharepoint/restricted-domains-sharing) e [Consentire o bloccare gli inviti per gli utenti B2B da organizzazioni specifiche](/azure/active-directory/b2b/allow-deny-list).
+- È possibile porre limiti agli altri tenant di Azure Active Directory a cui gli utenti possono connettersi. Per informazioni, vedere [Utilizzare le restrizioni del tenant per gestire l'accesso alle applicazioni cloud SaaS](/azure/active-directory/manage-apps/tenant-restrictions).
+- È possibile creare un ambiente gestito in cui i partner possano contribuire alla gestione degli account guest. Per informazioni, vedere [Creare una Extranet B2B con guest gestiti](/Office365/Enterprise/b2b-extranet).
 
 ## <a name="see-also"></a>Vedere anche
 

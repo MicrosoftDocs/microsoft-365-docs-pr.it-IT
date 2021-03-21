@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione e sulle etichette di conservazione, utili per conservare tutto che serve ed eliminare ciò che non serve.
-ms.openlocfilehash: 67697124df7908dca2ace74dc5de921d18d817c6
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 0eaf89b3f49d8b69cb7b36e4e25df90946c19e32
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727325"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917208"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
->*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
+>*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
 > Se vengono visualizzati messaggi sui criteri di conservazione nelle app, contattare il reparto IT per informazioni sulla loro configurazione. Se questi messaggi si riferiscono alla chat di Teams o a messaggi di canale, vedere [Messaggi di Teams sui criteri di conservazione](https://support.microsoft.com/office/teams-messages-about-retention-policies-c151fa2f-1558-4cf9-8e51-854e925b483b).
@@ -96,7 +96,7 @@ Diversamente dai criteri di conservazione, le impostazioni di conservazione dell
 
 - Applicare un'etichetta predefinita per i documenti di SharePoint.
 
-- Supportare la [revisione per l'eliminazione](disposition-reviews.md) per rivedere il contenuto prima che sia eliminato definitivamente.
+- Supportare la [revisione per l'eliminazione](./disposition.md) per rivedere il contenuto prima che sia eliminato definitivamente.
 
 - Contrassegnare il contenuto come [record](records-management.md#records) come parte delle impostazioni dell'etichetta e avere sempre una [prova dell'eliminazione](disposition.md#disposition-of-records) quando il contenuto viene eliminato al termine del periodo di conservazione.
 
@@ -200,7 +200,7 @@ Le cartelle pubbliche di Exchange, Skype e i messaggi di Teams e Yammer non supp
 È possibile applicare una sola etichetta di conservazione alla volta a un messaggio di posta elettronica o un documento. Un'etichetta di conservazione può essere applicata [manualmente](create-apply-retention-labels.md#manually-apply-retention-labels) da un utente finale o da un amministratore oppure automaticamente utilizzando uno dei seguenti metodi:
 
 - [Criteri applicazione automatica etichette](apply-retention-labels-automatically.md).
-- [Modello di analisi dei documenti in Microsoft SharePoint Syntex](https://docs.microsoft.com/microsoft-365/contentunderstanding/apply-a-retention-label-to-a-model)
+- [Modello di analisi dei documenti in Microsoft SharePoint Syntex](../contentunderstanding/apply-a-retention-label-to-a-model.md)
 - [Etichetta predefinita per i documenti di SharePoint](create-apply-retention-labels.md#applying-a-default-retention-label-to-all-content-in-a-sharepoint-library-folder-or-document-set) o [Outlook](create-apply-retention-labels.md#applying-a-default-retention-label-to-an-outlook-folder)
 - [Regole di Outlook](create-apply-retention-labels.md#automatically-applying-a-retention-label-to-email-by-using-rules)
 
@@ -376,35 +376,35 @@ Le azioni dell’amministratore inerenti i criteri di conservazione e la conserv
 
 ## <a name="powershell-cmdlets-for-retention-policies-and-retention-labels"></a>Cmdlet di PowerShell per criteri ed etichette di conservazione
 
-Per usare i cmdlet di conservazione, è prima necessario [connettersi a PowerShell per Centro sicurezza e conformità di Office 365](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell). Quindi, usare uno dei cmdlet seguenti:
+Per usare i cmdlet di conservazione, è prima necessario [connettersi a PowerShell per Centro sicurezza e conformità di Office 365](/powershell/exchange/connect-to-scc-powershell). Quindi, usare uno dei cmdlet seguenti:
 
-- [Get-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/get-compliancetag)
+- [Get-ComplianceTag](/powershell/module/exchange/get-compliancetag)
 
-- [New-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/new-compliancetag)
+- [New-ComplianceTag](/powershell/module/exchange/new-compliancetag)
 
-- [Remove-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/remove-compliancetag)
+- [Remove-ComplianceTag](/powershell/module/exchange/remove-compliancetag)
 
-- [Set-ComplianceTag](https://docs.microsoft.com/powershell/module/exchange/set-compliancetag)
+- [Set-ComplianceTag](/powershell/module/exchange/set-compliancetag)
 
-- [Enable-ComplianceTagStorage](https://docs.microsoft.com/powershell/module/exchange/enable-compliancetagstorage)
+- [Enable-ComplianceTagStorage](/powershell/module/exchange/enable-compliancetagstorage)
 
-- [Get-ComplianceTagStorage](https://docs.microsoft.com/powershell/module/exchange/get-compliancetagstorage)
+- [Get-ComplianceTagStorage](/powershell/module/exchange/get-compliancetagstorage)
 
-- [Get-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancepolicy)
+- [Get-RetentionCompliancePolicy](/powershell/module/exchange/get-retentioncompliancepolicy)
 
-- [New-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancepolicy)
+- [New-RetentionCompliancePolicy](/powershell/module/exchange/new-retentioncompliancepolicy)
 
-- [Remove-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/remove-retentioncompliancepolicy)
+- [Remove-RetentionCompliancePolicy](/powershell/module/exchange/remove-retentioncompliancepolicy)
 
-- [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy)
+- [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy)
 
-- [Get-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancerule)
+- [Get-RetentionComplianceRule](/powershell/module/exchange/get-retentioncompliancerule)
 
-- [New-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/new-retentioncompliancerule)
+- [New-RetentionComplianceRule](/powershell/module/exchange/new-retentioncompliancerule)
 
-- [Remove-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/remove-retentioncompliancerule)
+- [Remove-RetentionComplianceRule](/powershell/module/exchange/remove-retentioncompliancerule)
 
-- [Set-RetentionComplianceRule](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancerule)
+- [Set-RetentionComplianceRule](/powershell/module/exchange/set-retentioncompliancerule)
 
 ## <a name="when-to-use-retention-policies-and-retention-labels-or-ediscovery-holds"></a>Quando usare i criteri di conservazione e le etichette di conservazione o i blocchi di eDiscovery
 
@@ -430,11 +430,11 @@ Se il contenuto è soggetto sia alle impostazioni di conservazione sia a un bloc
 Se usi strumenti di eDiscovery meno recenti per conservare i dati, vedi le risorse seguenti:
 
 - Exchange: 
-    - [Conservazione in locale e per controversia legale](https://go.microsoft.com/fwlink/?linkid=846124)
-    - [Come identificare il tipo di blocco applicato a una cassetta postale di Exchange Online](https://docs.microsoft.com/microsoft-365/compliance/identify-a-hold-on-an-exchange-online-mailbox)
+    - [Conservazione in locale e per controversia legale](/exchange/security-and-compliance/in-place-and-litigation-holds)
+    - [Come identificare il tipo di blocco applicato a una cassetta postale di Exchange Online](./identify-a-hold-on-an-exchange-online-mailbox.md)
 
 - SharePoint e OneDrive: 
-    - [Aggiungere contenuto a un caso e archiviare origini blocco nel centro eDiscovery](https://docs.microsoft.com/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center)
+    - [Aggiungere contenuto a un caso e archiviare origini blocco nel centro eDiscovery](/SharePoint/governance/add-content-to-a-case-and-place-sources-on-hold-in-the-ediscovery-center)
 
 - [Ritiro degli strumenti legacy di eDiscovery](legacy-ediscovery-retirement.md)
 
@@ -446,7 +446,7 @@ Se attualmente si usano queste funzionalità, continueranno a funzionare paralle
 
 **Funzionalità precedenti di Exchange Online:**
 
-- [Tag di conservazione e criteri di conservazione](https://go.microsoft.com/fwlink/?linkid=846125), noti anche come [gestione record di messaggistica (MRM)](https://go.microsoft.com/fwlink/?linkid=846126) (solo eliminazione)
+- [Tag di conservazione e criteri di conservazione](/exchange/security-and-compliance/messaging-records-management/retention-tags-and-policies), noti anche come [gestione record di messaggistica (MRM)](/exchange/security-and-compliance/messaging-records-management/messaging-records-management) (solo eliminazione)
 
 **Funzionalità precedenti di SharePoint e OneDrive:**
 
@@ -462,8 +462,8 @@ Se si sono configurati i siti di SharePoint per criteri tipo di contenuto o crit
 
 ## <a name="related-information"></a>Informazioni correlate
 
-- [Limiti di SharePoint Online](https://docs.microsoft.com/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
-- [Limiti e specifiche per Microsoft Teams](https://docs.microsoft.com/microsoftteams/limits-specifications-teams) 
+- [Limiti di SharePoint Online](/office365/servicedescriptions/sharepoint-online-service-description/sharepoint-online-limits)
+- [Limiti e specifiche per Microsoft Teams](/microsoftteams/limits-specifications-teams) 
 - [Risorse che consentono di soddisfare i requisiti normativi per la governance delle informazioni e la gestione dei record](retention-regulatory-requirements.md)
 
 ## <a name="configuration-guidance"></a>Linee guida per la configurazione
@@ -473,4 +473,3 @@ Se si è pronti per creare criteri di conservazione, vedere [Creare e configurar
 Per creare e applicare etichette di conservazione:
 - [Creare etichette di conservazione e applicarle nelle app](create-apply-retention-labels.md)
 - [Applicare automaticamente un'etichetta di conservazione al contenuto](apply-retention-labels-automatically.md)
-

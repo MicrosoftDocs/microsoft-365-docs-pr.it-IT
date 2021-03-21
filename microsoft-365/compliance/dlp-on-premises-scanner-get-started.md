@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Configurare lo scanner per la prevenzione della perdita dei dati locali di Microsoft 365
-ms.openlocfilehash: e0d7bc9eeae7d701c14aaaeeed7a01cab33829ea
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 7e190a1d6e902af3406f7e8f317efe80e825e7f2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50417369"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50917832"
 ---
 # <a name="get-started-with-the-data-loss-prevention-on-premises-scanner-preview"></a>Introduzione allo scanner per la prevenzione della perdita dei dati locali (anteprima)
 
@@ -41,7 +41,7 @@ Prima di iniziare a usare lo scanner per la prevenzione della perdita dei dati l
 - Microsoft 365 E5 Information Protection & Governance 
 
 
-Per altre informazioni sulle licenze complete, vedere [Indicazioni sulla gestione delle licenze di Microsoft 365 per la sicurezza e la conformità](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+Per altre informazioni sulle licenze complete, vedere [Indicazioni sulla gestione delle licenze di Microsoft 365 per la sicurezza e la conformità](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ### <a name="permissions"></a>Autorizzazioni
 
@@ -56,13 +56,13 @@ I dati provenienti dallo scanner per la prevenzione della perdita dei dati local
 ### <a name="dlp-on-premises-scanner-prerequisites"></a>Prerequisiti scanner per la prevenzione della perdita dei dati locali
 
 - Lo scanner Azure Information Protection (AIP) implementa la corrispondenza e l'applicazione dei criteri di prevenzione della perdita dei dati. Lo scanner viene installato come parte del client AIP. Pertanto l'installazione deve soddisfare tutti i prerequisiti di AIP, del client AIP e dello scanner di etichette unificato AIP.
-- Distribuire il client e lo scanner AIP. Per ulteriori informazioni vedere [Installare il client di etichettatura unificata AIP](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app) e [][Configurazione e installazione dello scanner di etichettatura unificata di Azure Information Protection](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install).
+- Distribuire il client e lo scanner AIP. Per ulteriori informazioni vedere [Installare il client di etichettatura unificata AIP](/azure/information-protection/rms-client/install-unifiedlabelingclient-app) e [][Configurazione e installazione dello scanner di etichettatura unificata di Azure Information Protection](/azure/information-protection/deploy-aip-scanner-configure-install).
 - È necessario che almeno un'etichetta e un criterio siano pubblicati nel tenant, anche se tutte le regole di rilevamento sono basate solo su tipi di informazioni riservate.
 
 ## <a name="deploy-the-dlp-on-premises-scanner"></a>Distribuire lo scanner per la prevenzione della perdita dei dati locali
 
-1. Seguire le procedure descritte in [Installare il client di etichettatura unificato AIP](https://docs.microsoft.com/azure/information-protection/rms-client/install-unifiedlabelingclient-app). 
-2. Per completare l’installazione dello scanner, seguire le procedure descritte in [Configurazione e installazione dello scanner di etichettatura unificata Azure Information Protection](https://docs.microsoft.com/azure/information-protection/deploy-aip-scanner-configure-install)
+1. Seguire le procedure descritte in [Installare il client di etichettatura unificato AIP](/azure/information-protection/rms-client/install-unifiedlabelingclient-app). 
+2. Per completare l’installazione dello scanner, seguire le procedure descritte in [Configurazione e installazione dello scanner di etichettatura unificata Azure Information Protection](/azure/information-protection/deploy-aip-scanner-configure-install)
     1. La configurazione delle attività di individuazione della rete è un passaggio facoltativo. È possibile questo passaggio e definire archivi specifici da analizzare nel processo di analisi del contenuto.
     2. È necessario creare un processo di analisi del contenuto e specificare gli archivi che ospitano i file che devono essere valutati dal motore di prevenzione della perdita dei dati.
     3. Abilitare le regole per la prevenzione della perdita dei dati nel processo di analisi del contenuto creato e impostare l'opzione **Applica** su **Disattivato**, a meno che non si desideri procedere direttamente alla fase di applicazione di prevenzione della perdita dei dati.
@@ -115,7 +115,7 @@ I dati provenienti dallo scanner per la prevenzione della perdita dei dati local
 
 2. Fare riferimento alle procedure in [Introduzione a Esplora attività](data-classification-activity-explorer.md) per accedere a tutti i dati relativi allo scanner per la prevenzione della perdita dei dati locale e filtrarli.
 
-3. Aprire il [registro di controllo nel Centro conformità](https://security.microsoft.com/auditlogsearch). Durante l'anteprima pubblica, le corrispondenze alle regole di prevenzione della perdita dei dati sono disponibili nell'interfaccia utente del registro di controllo o sono accessibili da [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps) di PowerShell 
+3. Aprire il [registro di controllo nel Centro conformità](https://security.microsoft.com/auditlogsearch). Durante l'anteprima pubblica, le corrispondenze alle regole di prevenzione della perdita dei dati sono disponibili nell'interfaccia utente del registro di controllo o sono accessibili da [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog?view=exchange-ps) di PowerShell 
 
 
 ## <a name="next-steps"></a>Passaggi successivi

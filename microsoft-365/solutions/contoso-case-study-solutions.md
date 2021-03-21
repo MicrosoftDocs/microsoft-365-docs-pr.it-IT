@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Modalità di distribuzione delle soluzioni di Microsoft 365 da parte di un'organizzazione fittizia ma rappresentativa a livello internazionale.
-ms.openlocfilehash: 1e06da623a9d580d71823ab030976b213a9e7022
-ms.sourcegitcommit: 6fc6aaa2b7610e148f41018abd229e3c55b2f3d0
+ms.openlocfilehash: 0c11b849f75e5707c5f49762c0b279a5dbfb2fd1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "49620552"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918419"
 ---
 # <a name="microsoft-365-solutions-for-the-contoso-corporation"></a>Soluzioni di Microsoft 365 per Contoso Corporation
 
@@ -36,6 +36,6 @@ Vedere in che modo Contoso ha usato Microsoft 365 per le soluzioni e gli scenari
 
 - [Un team isolato per un progetto di massima riservatezza](contoso-team-for-top-secret-project.md)
 
-- [La migrazione degli utenti locali a Teams per servizi di comunicazioni, collaborazione e voce unificati](https://docs.microsoft.com/MicrosoftTeams/voice-case-study-overview)
+- [La migrazione degli utenti locali a Teams per servizi di comunicazioni, collaborazione e voce unificati](/MicrosoftTeams/voice-case-study-overview)
 
 - [Configurare un criterio contro il linguaggio offensivo per le comunicazioni in Microsoft Teams, Exchange e Yammer](../compliance/communication-compliance-case-study.md)
