@@ -24,36 +24,36 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: Comprendere i motivi per cui a volte il cambio di piano deve essere eseguito manualmente o chiamando il supporto.
-ms.openlocfilehash: 8e217ad59e6436641af3b2f0151a760da5239839
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: d13b7290f4b5f9aede7406cf76ee60cac262c814
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646752"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922269"
 ---
 # <a name="why-cant-i-switch-microsoft-365-for-business-plans"></a>Perché non è possibile cambiare piano di Microsoft 365 per le aziende?
 
 ::: moniker range="o365-worldwide"
 > [!NOTE]
-> Questo articolo si applica all'interfaccia di amministrazione precedente. Per visualizzare l'articolo [sull'interfaccia](upgrade-to-different-plan.md#why-cant-i-upgrade-plans)di amministrazione (anteprima), vedere Perché non è possibile aggiornare i piani? . L'anteprima è disponibile per tutti gli amministratori di Microsoft  365, è possibile acconsentire esplicitamente selezionando Prova l'interruttore Di anteprima nella parte superiore della home page. Per altre informazioni, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
+> Questo articolo si applica alla vecchia interfaccia di amministrazione. Per visualizzare l'articolo [sull'interfaccia](upgrade-to-different-plan.md#why-cant-i-upgrade-plans)di amministrazione (anteprima), vedere Perché non è possibile aggiornare i piani? . L'anteprima è disponibile per tutti gli amministratori di Microsoft 365, puoi acconsentire esplicitamente selezionando **Prova** l'interruttore Di anteprima nella parte superiore della home page. Per altre informazioni, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../../admin/microsoft-365-admin-center-preview.md).
 ::: moniker-end
 
 Se il pulsante Cambia  piano non è visualizzato, il piano non può essere commutato automaticamente. In alcuni casi è possibile risolvere il problema e usare il pulsante **Cambia piano**, in altri invece si può scegliere di [cambiare piano manualmente](switch-plans-manually.md). Posizionare il puntatore del mouse sull'icona delle informazioni per visualizzare un messaggio che spiega il motivo per cui il pulsante **Cambia piano** non è disponibile. Usare le informazioni in questo articolo per risolvere il problema.
   
 ::: moniker range="o365-worldwide"
 
- **Serve altro?** [Acquistare un altro abbonamento](../buy-another-subscription.md)  |  [Annullare l'abbonamento](cancel-your-subscription.md)  |  [Abbonamenti e fatturazione](../index.yml)  |  [Chiamare il supporto](../../admin/contact-support-for-business-products.md)
+ **Serve altro?** [Acquistare un altro abbonamento](../try-or-buy-microsoft-365.md)  |  [Annullare l'abbonamento](cancel-your-subscription.md)  |  [Abbonamenti e fatturazione](../index.yml)  |  [Chiamare il supporto](../../admin/contact-support-for-business-products.md)
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
- **Serve altro?** [Acquistare un altro abbonamento](../buy-another-subscription.md)  |  [Annullare l'abbonamento](cancel-your-subscription.md)  |  [Abbonamenti e fatturazione](../index.yml)  |  [Chiamare il supporto](../../admin/contact-support-for-business-products.md)
+ **Serve altro?** [Acquistare un altro abbonamento](../try-or-buy-microsoft-365.md)  |  [Annullare l'abbonamento](cancel-your-subscription.md)  |  [Abbonamenti e fatturazione](../index.yml)  |  [Chiamare il supporto](../../admin/contact-support-for-business-products.md)
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
- **Serve altro?** [Acquistare o provare sottoscrizioni per Office 365 gestito da 21Vianet](../../admin/services-in-china/buy-or-try-subscriptions.md)  |  [Annullare l'abbonamento](cancel-your-subscription.md)  |  [Chiamare il supporto](../../admin/contact-support-for-business-products.md)
+ **Serve altro?** [Acquistare o provare abbonamenti per Office 365 gestito da 21Vianet](../../admin/services-in-china/buy-or-try-subscriptions.md)  |  [Annullare l'abbonamento](cancel-your-subscription.md)  |  [Chiamare il supporto](../../admin/contact-support-for-business-products.md)
 
 ::: moniker-end
 
@@ -63,19 +63,19 @@ Se il pulsante Cambia  piano non è visualizzato, il piano non può essere commu
 
 ::: moniker range="o365-worldwide"
 
-Per cambiare piano automaticamente con il pulsante **Cambia piano**, a tutti gli utenti devono essere assegnate licenze valide. Se sono state assegnate più licenze di quante ne sono state acquistate, nella pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenze</a> verrà visualizzato un avviso che informa della presenza di un conflitto di licenze che deve essere risolto. [Informazioni su come risolvere i conflitti di licenza](../../admin/manage/resolve-license-conflicts.md). Dopo aver risolto i conflitti di licenza, dovrebbe essere visualizzato il pulsante **Cambia piano**. In caso contrario, è possibile [cambiare piano manualmente](switch-plans-manually.md)oppure chiamare il [supporto.](../../admin/contact-support-for-business-products.md)
+Per cambiare piano automaticamente con il pulsante **Cambia piano**, a tutti gli utenti devono essere assegnate licenze valide. Se sono state assegnate più licenze di quante ne sono state acquistate, nella pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenze</a> verrà visualizzato un avviso che informa della presenza di un conflitto di licenze che deve essere risolto. [Informazioni su come risolvere i conflitti di licenza](../../admin/manage/resolve-license-conflicts.md). Dopo aver risolto i conflitti di licenza, dovrebbe essere visualizzato il pulsante **Cambia piano**. In caso contrario, è possibile [cambiare piano manualmente](switch-plans-manually.md)o chiamare il [supporto](../../admin/contact-support-for-business-products.md)tecnico.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Per cambiare piano automaticamente con il pulsante **Cambia piano**, a tutti gli utenti devono essere assegnate licenze valide. Se sono state assegnate più licenze di quante ne sono state acquistate, nella pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenze</a> verrà visualizzato un avviso che informa della presenza di un conflitto di licenze che deve essere risolto. [Informazioni su come risolvere i conflitti di licenza](../../admin/manage/resolve-license-conflicts.md). Dopo aver risolto i conflitti di licenza, dovrebbe essere visualizzato il pulsante **Cambia piano**. In caso contrario, è possibile [cambiare piano manualmente](switch-plans-manually.md)oppure chiamare il [supporto.](../../admin/contact-support-for-business-products.md)
+Per cambiare piano automaticamente con il pulsante **Cambia piano**, a tutti gli utenti devono essere assegnate licenze valide. Se sono state assegnate più licenze di quante ne sono state acquistate, nella pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenze</a> verrà visualizzato un avviso che informa della presenza di un conflitto di licenze che deve essere risolto. [Informazioni su come risolvere i conflitti di licenza](../../admin/manage/resolve-license-conflicts.md). Dopo aver risolto i conflitti di licenza, dovrebbe essere visualizzato il pulsante **Cambia piano**. In caso contrario, è possibile [cambiare piano manualmente](switch-plans-manually.md)o chiamare il [supporto](../../admin/contact-support-for-business-products.md)tecnico.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Per cambiare piano automaticamente con il pulsante **Cambia piano**, a tutti gli utenti devono essere assegnate licenze valide. Se sono state assegnate più licenze di quante ne sono state acquistate, nella pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenze</a> verrà visualizzato un avviso che informa della presenza di un conflitto di licenze che deve essere risolto. [Informazioni su come risolvere i conflitti di licenza](../../admin/manage/resolve-license-conflicts.md). Dopo aver risolto i conflitti di licenza, dovrebbe essere visualizzato il pulsante **Cambia piano**. In caso contrario, è possibile [cambiare piano manualmente](switch-plans-manually.md)oppure chiamare il [supporto.](../../admin/contact-support-for-business-products.md)
+Per cambiare piano automaticamente con il pulsante **Cambia piano**, a tutti gli utenti devono essere assegnate licenze valide. Se sono state assegnate più licenze di quante ne sono state acquistate, nella pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenze</a> verrà visualizzato un avviso che informa della presenza di un conflitto di licenze che deve essere risolto. [Informazioni su come risolvere i conflitti di licenza](../../admin/manage/resolve-license-conflicts.md). Dopo aver risolto i conflitti di licenza, dovrebbe essere visualizzato il pulsante **Cambia piano**. In caso contrario, è possibile [cambiare piano manualmente](switch-plans-manually.md)o chiamare il [supporto](../../admin/contact-support-for-business-products.md)tecnico.
 
 ::: moniker-end
 
@@ -84,23 +84,23 @@ Per cambiare piano automaticamente con il pulsante **Cambia piano**, a tutti gli
 
 ::: moniker range="o365-worldwide"
 
-Per verificare se si sono verificati problemi di provisioning <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank"></a> o integrità del servizio, nell'interfaccia di amministrazione passare alla pagina Integrità dei servizi o selezionare **Integrità** \> **servizio integrità.**
+Per verificare se sono presenti problemi di provisioning o di integrità del servizio, nell'interfaccia di amministrazione passare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=842900" target="_blank">Integrità</a> dei servizi o selezionare **Integrità** \> **servizio integrità.**
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Per verificare se si sono verificati problemi di provisioning o integrità dei <a href="https://go.microsoft.com/fwlink/p/?linkid=848042" target="_blank"></a> servizi, nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina Integrità dei servizi o selezionare **Integrità** \> **servizio integrità.**
+Per verificare se sono presenti problemi di provisioning o di integrità del servizio, nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=848042" target="_blank">Integrità</a> dei servizi o selezionare **Integrità** \> **servizio integrità.**
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Per verificare se si sono verificati problemi di provisioning o integrità dei <a href="https://go.microsoft.com/fwlink/p/?linkid=850629" target="_blank"></a> servizi, nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina Integrità dei servizi o selezionare **Integrità** \> **servizio integrità.**
+Per verificare se sono presenti problemi di provisioning o di integrità del servizio, nell'interfaccia di amministrazione di Microsoft 365 passare alla pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=850629" target="_blank">Integrità</a> dei servizi o selezionare **Integrità** \> **servizio integrità.**
 
 ::: moniker-end
 
-Se il provisioning del piano non è stato ancora completato o si è verificato un problema di integrità di un servizio, attendere alcune ore finché il servizio non diventa di nuovo disponibile e riprovare. Se il problema persiste, contattare [il supporto.](../../admin/contact-support-for-business-products.md)
+Se il provisioning del piano non è stato ancora completato o si è verificato un problema di integrità di un servizio, attendere alcune ore finché il servizio non diventa di nuovo disponibile e riprovare. Se il problema persiste, contattare [il supporto](../../admin/contact-support-for-business-products.md).
   
 ### <a name="you-cant-switch-plans-because-another-plan-is-in-the-process-of-being-switched-and-is-pending-a-credit-check"></a>Non è possibile cambiare piano perché è in corso un altro cambio di piano in attesa di una verifica del credito.
 
@@ -108,11 +108,11 @@ Attendere il completamento della verifica del credito prima di cambiare piano. L
   
 ### <a name="currently-this-subscription-is-not-eligible-to-switch-plans"></a>Attualmente l'abbonamento non è idoneo per un cambio di piano.
 
-È possibile [cambiare piano manualmente o](switch-plans-manually.md) chiamare il [supporto.](../../admin/contact-support-for-business-products.md)
+È possibile [cambiare piano manualmente o](switch-plans-manually.md) chiamare il [supporto](../../admin/contact-support-for-business-products.md).
   
 ### <a name="i-see-a-different-message-than-whats-listed-here"></a>Il messaggio visualizzato è diverso rispetto a quello riportato di seguito.
 
-È possibile [cambiare piano manualmente o](switch-plans-manually.md) chiamare il [supporto.](../../admin/contact-support-for-business-products.md)
+È possibile [cambiare piano manualmente o](switch-plans-manually.md) chiamare il [supporto](../../admin/contact-support-for-business-products.md).
   
 ## <a name="additional-reasons-the-switch-plans-button-is-unavailable"></a>Altri motivi per cui il pulsante Cambia piano non è disponibile
 
@@ -120,15 +120,15 @@ Attendere il completamento della verifica del credito prima di cambiare piano. L
 
 Se l'abbonamento è stato pagato in anticipo, può essere possibile [cambiare piano manualmente](switch-plans-manually.md). Tuttavia, se si cambia piano prima della scadenza di quello corrente, non si riceverà un accredito per il tempo inutilizzato rimanente nell'attuale abbonamento.
   
-È inoltre possibile [chiamare il supporto tecnico](../../admin/contact-support-for-business-products.md) per ottenere assistenza.
+Puoi anche chiamare [il supporto](../../admin/contact-support-for-business-products.md) per assistenza.
   
 ### <a name="you-have-a-government-or-non-profit-plan"></a>Il piano è destinato a enti pubblici o organizzazioni no profit
 
-Se si dispone di un piano per enti pubblici o no profit, è possibile cambiare piano [manualmente](switch-plans-manually.md) o chiamare [il supporto](../../admin/contact-support-for-business-products.md) per assistenza.
+Se si dispone di un piano governativo o no profit, è possibile cambiare piano [manualmente](switch-plans-manually.md) o [chiamare il supporto](../../admin/contact-support-for-business-products.md) per assistenza.
   
 ### <a name="3000-or-more-licenses-have-been-purchased-and-assigned-for-the-subscription"></a>Per l'abbonamento sono state acquistate e assegnate almeno 3.000 licenze
 
-Il pulsante **Cambia piano** non è disponibile per abbonamenti che includono almeno 3.000 licenze assegnate agli utenti. Tuttavia, potrebbe essere possibile [cambiare piano manualmente](switch-plans-manually.md). È inoltre possibile [chiamare il supporto tecnico](../../admin/contact-support-for-business-products.md) per ottenere assistenza.
+Il pulsante **Cambia piano** non è disponibile per abbonamenti che includono almeno 3.000 licenze assegnate agli utenti. Tuttavia, potrebbe essere possibile [cambiare piano manualmente](switch-plans-manually.md). Puoi anche chiamare [il supporto](../../admin/contact-support-for-business-products.md) per assistenza.
   
 ### <a name="the-subscription-that-you-want-to-switch-from-has-a-temporary-issue"></a>L'abbonamento che si vuole cambiare ha un problema temporaneo
 
@@ -138,7 +138,7 @@ Un altro motivo per cui il pulsante **Cambia piano** può diventare temporaneame
 
 Quando cambia piano, vengono visualizzati solo i piani a cui è possibile passare in base ai servizi inclusi in quello corrente. Si può passare solo a un piano che include gli stessi servizi correlati ai dati, come Exchange Online o SharePoint Online, o a una versione superiore di questi servizi. In questo modo, gli utenti non perderanno i dati correlati ai servizi durante il passaggio.
   
-Se il piano non è idoneo per il cambio di piano automatico, potrebbe essere possibile [cambiare piano manualmente](switch-plans-manually.md). È inoltre possibile [chiamare il supporto tecnico](../../admin/contact-support-for-business-products.md) per ottenere assistenza.
+Se il piano non è idoneo per il cambio di piano automatico, potrebbe essere possibile [cambiare piano manualmente](switch-plans-manually.md). Puoi anche chiamare [il supporto](../../admin/contact-support-for-business-products.md) per assistenza.
   
 > [!NOTE]
 > Il passaggio manuale da un piano Office 365 Small Business, Office 365 Small Business Premium o Office 365 Midsize Business non è supportato.

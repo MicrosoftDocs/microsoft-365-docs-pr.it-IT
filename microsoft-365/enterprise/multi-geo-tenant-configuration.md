@@ -15,12 +15,12 @@ f1.keywords:
 ms.custom: seo-marvel-apr2020
 localization_priority: Normal
 description: Questo articolo illustra come aggiungere posizioni satellitari e configurare il tenant per Microsoft 365 Multi-Geo.
-ms.openlocfilehash: fb907c02a4714c5a2d8e47245321252e7186a8a7
-ms.sourcegitcommit: f3059a0065496623e36e5a084cd2291e6b844597
+ms.openlocfilehash: 9176c66e8d0aa7e893ef137131147f8e0c85d3ac
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/28/2021
-ms.locfileid: "50040569"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923649"
 ---
 # <a name="microsoft-365-multi-geo-tenant-configuration"></a>Configurazione del tenant di Microsoft 365 Multi-Geo
 
@@ -93,7 +93,7 @@ La procedura contenuta in questa sezione richiede il [modulo di Microsoft Azure 
 
 1.  [Connettersi e accedere](/powershell/connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell) con le credenziali di amministratore globale del tenant.
 
-2.  Usare il cmdlet [Set-MsolUser](https://docs.microsoft.com/powershell/msonline/v1/set-msoluser) per impostare la posizione dati preferita per ognuno degli utenti. Ad esempio:
+2.  Usare il cmdlet [Set-MsolUser](/powershell/msonline/v1/set-msoluser) per impostare la posizione dati preferita per ognuno degli utenti. Ad esempio:
 
     `Set-MsolUser -userprincipalName Robyn.Buckley@Contoso.com -PreferredDatalocation EUR`
 
@@ -110,10 +110,10 @@ La procedura contenuta in questa sezione richiede il [modulo di Microsoft Azure 
 
 ## <a name="onedrive-provisioning-and-the-effect-of-pdl"></a>Provisioning di OneDrive e l'effetto della posizione dati preferita
 
-Se l'utente ha già un sito OneDrive creato nel tenant, impostare il PDL non sposterà automaticamente il OneDrive esistente. Per spostare OneDrive di un utente, vedere Spostamento geografico di [OneDrive for Business.](move-onedrive-between-geo-locations.md)
+Se l'utente ha già un sito OneDrive creato nel tenant, impostare il PDL non sposterà automaticamente il OneDrive esistente. Per spostare OneDrive di un utente, vedere [OneDrive for Business Geo Move](move-onedrive-between-geo-locations.md).
 
 > [!NOTE]
-> Exchange Online sposta automaticamente la cassetta postale dell'utente se il PLD cambia e MailboxRegion non corrisponde più al codice di posizione geografica del database delle cassette postali. Per ulteriori informazioni, vedere [Amministrazione delle cassette postali di Exchange Online in un ambiente multi-geografico.](https://docs.microsoft.com/microsoft-365/enterprise/administering-exchange-online-multi-geo)
+> Exchange Online sposta automaticamente la cassetta postale dell'utente se il PLD cambia e MailboxRegion non corrisponde più al codice di posizione geografica del database delle cassette postali. Per ulteriori informazioni, vedere [Administering Exchange Online mailboxes in a multi-geo environment](./administering-exchange-online-multi-geo.md).
 
 Se l'utente non dispone di un sito di OneDrive all'interno del tenant, il provisioning di OneDrive verrà eseguito in base al valore della posizione dati preferita, presupponendo che la posizione dati preferita dell'utente corrisponda a una delle posizioni satellite della società.
 

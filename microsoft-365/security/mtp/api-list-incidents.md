@@ -1,7 +1,7 @@
 ---
-title: API per gli eventi imprevisti in Microsoft 365 Defender
+title: API di elenchi di eventi imprevisti in Microsoft 365 Defender
 description: Informazioni su come elencare le API per gli eventi imprevisti in Microsoft 365 Defender
-keywords: elenco, evento imprevisto, eventi imprevisti, api
+keywords: list, incident, incidents, api
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,14 +20,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 39a170a1845ab33f67d77b2de3d5f298f67fdc99
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: d1e2ceb4c5cc662fe0aff248f2d0662ad6a2cc82
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49932071"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922235"
 ---
-# <a name="list-incidents-api-in-microsoft-365-defender"></a>API per gli eventi imprevisti in Microsoft 365 Defender
+# <a name="list-incidents-api-in-microsoft-365-defender"></a>API di elenchi di eventi imprevisti in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -37,12 +37,12 @@ ms.locfileid: "49932071"
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
-> Alcune informazioni riguardano prodotti non rilasciati in precedenza che potrebbero essere sostanzialmente modificati prima del rilascio sul mercato. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Alcune informazioni riguardano prodotti prereleased che possono essere sostanzialmente modificati prima che venga rilasciato commercialmente. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 
 ## <a name="api-description"></a>Descrizione API
 
-L'API degli eventi imprevisti dell'elenco consente di ordinare gli eventi imprevisti per creare una risposta informata alla cybersecurity. Espone una raccolta di eventi imprevisti che sono stati contrassegnati nella rete, nell'intervallo di tempo specificato nei criteri di conservazione dell'ambiente. Gli eventi imprevisti più recenti vengono visualizzati all'inizio dell'elenco. Ogni evento imprevisto contiene una matrice di avvisi correlati e le relative entità.
+L'API elenca eventi imprevisti consente di ordinare gli eventi imprevisti per creare una risposta informata alla sicurezza informatica. Espone una raccolta di eventi imprevisti contrassegnati nella rete, entro l'intervallo di tempo specificato nei criteri di conservazione dell'ambiente. Gli eventi imprevisti più recenti vengono visualizzati all'inizio dell'elenco. Ogni evento imprevisto contiene una matrice di avvisi correlati e le relative entità.
 
 L'API supporta gli operatori **OData** seguenti:
 
@@ -57,13 +57,13 @@ L'API supporta gli operatori **OData** seguenti:
 
 ## <a name="permissions"></a>Autorizzazioni
 
-Per chiamare questa API, è necessaria una delle autorizzazioni seguenti. Per altre informazioni, incluso come scegliere le autorizzazioni, vedere Accedere alle API di [Microsoft 365 Defender](api-access.md)
+Per chiamare questa API è necessaria una delle autorizzazioni seguenti. Per altre informazioni, inclusa la scelta delle autorizzazioni, vedi Accedere alle [API di Microsoft 365 Defender](api-access.md)
 
-Tipo di autorizzazione | Autorizzazione | Nome visualizzato autorizzazioni
+Tipo di autorizzazione | Autorizzazione | Nome visualizzato autorizzazione
 -|-|-
 Applicazione | Incident.Read.All | Leggere tutti gli eventi imprevisti
 Applicazione | Incident.ReadWrite.All | Lettura e scrittura di tutti gli eventi imprevisti
-Delegato (account aziendale o dell'istituto di istruzione) | Incident.Read | Leggi gli eventi imprevisti
+Delegato (account aziendale o dell'istituto di istruzione) | Incident.Read | Eventi imprevisti di lettura
 Delegato (account aziendale o dell'istituto di istruzione) | Incident.ReadWrite | Eventi imprevisti di lettura e scrittura
 
 > [!Note]
@@ -95,19 +95,19 @@ Se ha esito positivo, questo metodo restituisce `200 OK` e un elenco di eventi [
 
 ## <a name="schema-mapping"></a>Mapping dello schema
 
-### <a name="incident-metadata"></a>Metadati dell'evento imprevisto
+### <a name="incident-metadata"></a>Metadati degli eventi imprevisti
 
 Nome del campo | Descrizione | Valore di esempio
 -|-|-
 incidentId | Identificatore univoco per rappresentare l'evento imprevisto | 924565
-redirectIncidentId | Viene popolato solo nel caso in cui un evento imprevisto venga raggruppato insieme a un altro evento imprevisto, come parte della logica di elaborazione degli eventi imprevisti. | 924569
+redirectIncidentId | Popolato solo nel caso in cui un evento imprevisto venga raggruppato insieme a un altro evento imprevisto, come parte della logica di elaborazione degli eventi imprevisti. | 924569
 incidentName | Valore stringa disponibile per ogni evento imprevisto. | Attività ransomware
 createdTime | Ora di creazione dell'evento imprevisto. | 2020-09-06T14:46:57.0733333Z
-lastUpdateTime | Ora dell'ultimo aggiornamento dell'evento imprevisto nel back-end.<br /><br /> Questo campo può essere utilizzato quando si imposta il parametro della richiesta per l'intervallo di tempo in cui vengono recuperati gli eventi imprevisti. | 2020-09-06T14:46:57.29Z
-assignedTo | Proprietario dell'evento oppure *null se* non è assegnato alcun proprietario. | secop2@contoso.com
-classificazione | Specifica l'evento imprevisto. I valori della proprietà *sono: Unknown,* *FalsePositive,* *TruePositive* | Unknown
-determinazione | Specifica la determinazione dell'incidente. I valori della proprietà sono: *NotAvailable,* *Apt,* *Malware,* *SecurityPersonnel,* *SecurityTesting,* *UnwantedSoftware,* *Other* | NotAvailable
-status | Categorizzare gli eventi imprevisti *(come Attivo* o *Risolto).* Può essere utile per organizzare e gestire la risposta agli eventi imprevisti. | Attivazione
+lastUpdateTime | Ora dell'ultimo aggiornamento dell'evento imprevisto nel back-end.<br /><br /> Questo campo può essere utilizzato quando si imposta il parametro request per l'intervallo di tempo in cui vengono recuperati gli eventi imprevisti. | 2020-09-06T14:46:57.29Z
+assignedTo | Proprietario dell'evento imprevisto oppure *null se* non è assegnato alcun proprietario. | secop2@contoso.com
+classificazione | Specifica per l'evento imprevisto. I valori delle proprietà *sono: Unknown,* *FalsePositive,* *TruePositive* | Unknown
+determinazione | Specifica la determinazione dell'evento imprevisto. I valori delle proprietà sono: *NotAvailable,* *Apt,* *Malware,* *SecurityPersonnel,* *SecurityTesting,* *UnwantedSoftware,* *Other* | NotAvailable
+status | Categorizzare gli eventi imprevisti *(come Active* o *Resolved).* Può essere utile per organizzare e gestire la risposta agli eventi imprevisti. | Attivo
 gravità | Indica il possibile impatto sulle risorse. Maggiore è la gravità, maggiore sarà l'impatto. In genere, gli elementi di gravità superiore richiedono l'attenzione più immediata.<br /><br />Uno dei valori seguenti: *Informational,* *Low,**Medium e *High.* | Medio
 tag | Matrice di tag personalizzati associati a un evento imprevisto, ad esempio per contrassegnare un gruppo di eventi imprevisti con una caratteristica comune. | \[\]
 avvisi | Matrice contenente tutti gli avvisi correlati all'evento imprevisto, oltre ad altre informazioni, ad esempio la gravità, le entità coinvolte nell'avviso e l'origine degli avvisi. | \[\] (vedi i dettagli sui campi degli avvisi di seguito)
@@ -118,75 +118,75 @@ Nome del campo | Descrizione | Valore di esempio
 -|-|-
 alertId | Identificatore univoco per rappresentare l'avviso | caD70CFEE2-1F54-32DB-9988-3A868A1EBFAC
 incidentId | Identificatore univoco per rappresentare l'evento imprevisto a cui è associato questo avviso | 924565
-serviceSource | Servizio da cui ha origine l'avviso, ad esempio Microsoft Defender per Endpoint, Microsoft Cloud App Security, Microsoft Defender for Identity o Microsoft Defender per Office 365. | MicrosoftCloudAppSecurity
+serviceSource | Servizio da cui proviene l'avviso, ad esempio Microsoft Defender for Endpoint, Microsoft Cloud App Security, Microsoft Defender for Identity o Microsoft Defender per Office 365. | MicrosoftCloudAppSecurity
 creationTime | Ora di creazione dell'avviso. | 2020-09-06T14:46:55.7182276Z
 lastUpdatedTime | Ora dell'ultimo aggiornamento dell'avviso nel back-end. | 2020-09-06T14:46:57.2433333Z
-resolvedTime | Ora in cui è stato risolto l'avviso. | 2020-09-10T05:22:59Z
-firstActivity | Ora in cui l'avviso segnala per la prima volta che l'attività è stata aggiornata nel back-end.| 2020-09-04T05:22:59Z
+resolvedTime | Ora in cui l'avviso è stato risolto. | 2020-09-10T05:22:59Z
+firstActivity | Ora in cui l'avviso ha segnalato per la prima volta che l'attività è stata aggiornata nel back-end.| 2020-09-04T05:22:59Z
 title | Breve valore stringa di identificazione disponibile per ogni avviso. | Attività ransomware
-descrizione | Valore stringa che descrive ogni avviso. | L'utente Test User2 (testUser2@contoso.com) ha modificato 99 file con più estensioni che terminano con l'estensione non comune *herunterladen.* Si tratta di un numero insolito di manipolazioni di file ed è indicativo di un potenziale attacco ransomware.
-category | Visualizzazione visiva e numerica dell'avanzamento dell'attacco lungo la kill chain. Allineato al [framework MITRE ATT&CK™](https://attack.mitre.org/). | Impatto
+descrizione | Valore stringa che descrive ogni avviso. | L'utente Test User2 (testUser2@contoso.com) ha modificato 99 file con più estensioni che terminano con l'estensione non comune *herunterladen*. Si tratta di un numero insolito di manipolazioni di file ed è indicativo di un potenziale attacco ransomware.
+category | Visual and numeric view of how far the attack has progressed along the kill chain. Allineato al framework [MITRE ATT&CK™](https://attack.mitre.org/). | Impatto
 status | Categorizzare gli avvisi *(come Nuovo,* *Attivo* o *Risolto).* Può essere utile per organizzare e gestire la risposta agli avvisi. | Nuova
 gravità | Indica il possibile impatto sulle risorse. Maggiore è la gravità, maggiore sarà l'impatto. In genere, gli elementi di gravità superiore richiedono l'attenzione più immediata.<br>Uno dei valori seguenti: *Informational,* *Low,**Medium e *High.* | Medio
-investigationId | ID di analisi automatizzato attivato da questo avviso. | 1234
+investigationId | ID dell'indagine automatizzata attivato da questo avviso. | 1234
 investigationState | Informazioni sullo stato corrente dell'indagine. Uno dei valori seguenti: *Unknown,* *Terminated,* *SuccessfullyRemediated,* *Benign,* *Failed,* *PartiallyRemediated,* *Running,* *PendingApproval,* *PendingResource,* *PartiallyInvestigated,* *TerminatedByUser,* *TerminatedBySystem,* *Queued,* *InnerFailure,* *PreexistingAlert,* *UnsupportedOs,* *UnsupportedAlertType,* *SuppressedAlert.* | UnsupportedAlertType
-classificazione | Specifica l'evento imprevisto. I valori della proprietà *sono: Unknown,* *FalsePositive,* *TruePositive* o *Null* | Unknown
-determinazione | Specifica la determinazione dell'incidente. I valori della proprietà sono: *NotAvailable,* *Apt,* *Malware,* *SecurityPersonnel,* *SecurityTesting,* *UnwantedSoftware,* *Other* o  *null* | Apt
-assignedTo | Proprietario dell'evento oppure *null se* non è assegnato alcun proprietario. | secop2@contoso.com
+classificazione | Specifica per l'evento imprevisto. I valori delle proprietà *sono: Unknown,* *FalsePositive,* *TruePositive* o *null* | Unknown
+determinazione | Specifica la determinazione dell'evento imprevisto. I valori delle proprietà sono: *NotAvailable,* *Apt,* *Malware,* *SecurityPersonnel,* *SecurityTesting,* *UnwantedSoftware,* *Other* o  *null* | Apt
+assignedTo | Proprietario dell'evento imprevisto oppure *null se* non è assegnato alcun proprietario. | secop2@contoso.com
 actorName | Gruppo di attività, se presente, associato a questo avviso. | BORON
 threatFamilyName | Famiglia di minacce associata a questo avviso. | null
-mitreTechniques | Le tecniche di attacco, in linea con il framework [miTRE ATT&CK](https://attack.mitre.org/)™ framework. | \[\]
-dispositivi | Tutti i dispositivi in cui sono stati inviati avvisi relativi all'incidente. | \[\] (vedi i dettagli sui campi entità di seguito)
+mitreTechniques | Le tecniche di attacco, allineate al framework di&CK ™ [MITRE.](https://attack.mitre.org/) | \[\]
+dispositivi | Tutti i dispositivi in cui sono stati inviati avvisi relativi all'evento imprevisto. | \[\] (vedi i dettagli sui campi dell'entità di seguito)
 
 ### <a name="device-format"></a>Formato dispositivo
 
 Nome del campo | Descrizione | Valore di esempio
 -|-|-
 DeviceId | ID dispositivo designato in Microsoft Defender ATP. | 24c222b0b60fe148eeece49ac83910cc6a7ef491
-aadDeviceId |  ID dispositivo designato in [Azure Active Directory.](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-whatis) Disponibile solo per i dispositivi aggiunti a un dominio. | null
+aadDeviceId |  ID dispositivo designato in [Azure Active Directory.](/azure/active-directory/fundamentals/active-directory-whatis) Disponibile solo per i dispositivi aggiunti a un dominio. | null
 deviceDnsName | Nome di dominio completo per il dispositivo. | user5cx.middleeast.corp.contoso.com
 osPlatform | Piattaforma del sistema operativo in esecuzione nel dispositivo.| WindowsServer2016
-osBuild | Versione build per il sistema operativo in esecuzione nel dispositivo. | 14393
-rbacGroupName | Gruppo [di controllo di accesso](https://docs.microsoft.com/azure/role-based-access-control/overview) basato sui ruoli (RBAC) associato al dispositivo. | WDATP-Ring0
-firstSeen | Ora della prima visualizzazione del dispositivo. | 2020-02-06T14:16:01.9330135Z
-healthStatus | Stato di integrità del dispositivo. | Attivazione
-riskScore | Punteggio di rischio per il dispositivo. | Fortemente
-entità | Tutte le entità che sono state identificate come parte o correlate a un determinato avviso. | \[\] (vedi i dettagli sui campi entità di seguito)
+osBuild | Versione della build per il sistema operativo in esecuzione nel dispositivo. | 14393
+rbacGroupName | Gruppo [di controllo di accesso](/azure/role-based-access-control/overview) basato sui ruoli associato al dispositivo. | WDATP-Ring0
+firstSeen | Ora in cui il dispositivo è stato visualizzato per la prima volta. | 2020-02-06T14:16:01.9330135Z
+healthStatus | Stato di integrità del dispositivo. | Attivo
+riskScore | Punteggio di rischio per il dispositivo. | Alta
+entità | Tutte le entità identificate come parte o correlate a un determinato avviso. | \[\] (vedi i dettagli sui campi dell'entità di seguito)
 
 ### <a name="entity-format"></a>Formato entità
 
 Nome del campo | Descrizione | Valore di esempio
 -|-|-
-entityType | Entità che sono state identificate come parte o correlate a un determinato avviso.<br>I valori delle proprietà sono: *User,* *Ip,* *Url,* *File,* *Process,* *MailBox,* *MailMessage,* *MailCluster,* *Registry* | Utente
-sha1 | Disponibile se entityType è *File.*<br>Hash del file per gli avvisi associati a un file o a un processo. | 5de839186691aa96ee2ca6d74f0a38fb8d1bd6dd
-sha256 | Disponibile se entityType è *File.*<br>Hash del file per gli avvisi associati a un file o a un processo. | 28cb017dfc99073aa1b47c1b30f413e3ce774c4991eb4158de50f9dbb36d8043
-fileName | Disponibile se entityType è *File.*<br>Nome file per gli avvisi associati a un file o a un processo | Detector.UnitTests.dll
-filePath | Disponibile se entityType è *File.*<br>Percorso del file per gli avvisi associati a un file o a un processo | C: \\ \agent_work_temp\Deploy\SYSTEM\2020-09-06 12_14_54\Out
-processId | Disponibile se entityType è *Process.* | 24348
-processCommandLine | Disponibile se entityType è *Process.* | "Il file è pronto per il download \_1911150169.exe"
-processCreationTime | Disponibile se entityType è *Process.* | 2020-07-18T03:25:38.5269993Z
-parentProcessId | Disponibile se entityType è *Process.* | 16840
-parentProcessCreationTime | Disponibile se entityType è *Process.* | 2020-07-18T02:12:32.8616797Z
-ipAddress | Disponibile se entityType è *Ip.* <br>Indirizzo IP per gli avvisi associati a eventi di rete, ad esempio la comunicazione *a una destinazione di rete dannosa.* | 62.216.203.204
-url | Disponibile se entityType è *Url.* <br>URL per gli avvisi associati a eventi di rete, ad esempio la comunicazione *con una destinazione di rete dannosa.* | down.esales360.cn
-accountName | Disponibile se entityType è *User.* | testUser2
-domainName | Disponibile se entityType è *User.* | europe.corp.contoso
-userSid | Disponibile se entityType è *User.* | S-1-5-21-1721254763-462695806-1538882281-4156657
-aadUserId | Disponibile se entityType è *User.* | fc8f7484-f813-4db2-afab-bc1507913fb6
+entityType | Entità identificate come parte o correlate a un determinato avviso.<br>I valori delle proprietà sono: *User,* *Ip,* *Url,* *File,* *Process,* *MailBox,* *MailMessage,* *MailCluster,* *Registry* | Utente
+sha1 | Disponibile se entityType è *File*.<br>Hash del file per gli avvisi associati a un file o a un processo. | 5de839186691aa96ee2ca6d74f0a38fb8d1bd6dd
+sha256 | Disponibile se entityType è *File*.<br>Hash del file per gli avvisi associati a un file o a un processo. | 28cb017dfc99073aa1b47c1b30f413e3ce774c4991eb4158de50f9dbb36d8043
+fileName | Disponibile se entityType è *File*.<br>Nome file per gli avvisi associati a un file o a un processo | Detector.UnitTests.dll
+filePath | Disponibile se entityType è *File*.<br>Percorso file per gli avvisi associati a un file o a un processo | C: \\ \agent_work_temp\Deploy\SYSTEM\2020-09-06 12_14_54\Out
+processId | Disponibile se entityType è *Process*. | 24348
+processCommandLine | Disponibile se entityType è *Process*. | "Il file è pronto per il download \_1911150169.exe"
+processCreationTime | Disponibile se entityType è *Process*. | 2020-07-18T03:25:38.5269993Z
+parentProcessId | Disponibile se entityType è *Process*. | 16840
+parentProcessCreationTime | Disponibile se entityType è *Process*. | 2020-07-18T02:12:32.8616797Z
+ipAddress | Disponibile se entityType è *Ip*. <br>Indirizzo IP per gli avvisi associati a eventi di rete, ad esempio *Comunicazione con una destinazione di rete dannosa.* | 62.216.203.204
+url | Disponibile se entityType è *Url*. <br>URL per gli avvisi associati a eventi di rete, ad esempio Comunicazione *con una destinazione di rete dannosa.* | down.esales360.cn
+accountName | Disponibile se entityType è *User*. | testUser2
+domainName | Disponibile se entityType è *User*. | europe.corp.contoso
+userSid | Disponibile se entityType è *User*. | S-1-5-21-1721254763-462695806-1538882281-4156657
+aadUserId | Disponibile se entityType è *User*. | fc8f7484-f813-4db2-afab-bc1507913fb6
 userPrincipalName | Disponibile se entityType è *User* / *MailBox* / *MailMessage.* | testUser2@contoso.com
-mailboxDisplayName | Disponibile se entityType è *MailBox.* | test User2
+mailboxDisplayName | Disponibile se entityType è *MailBox*. | test User2
 mailboxAddress | Disponibile se entityType è *User* / *MailBox* / *MailMessage.* | testUser2@contoso.com
-clusterBy | Disponibile se entityType è *MailCluster.* | Oggetto; P2SenderDomain; ContentType
+clusterBy | Disponibile se entityType è  *MailCluster*. | Subject; P2SenderDomain; ContentType
 mittente | Disponibile se entityType è *User* / *MailBox* / *MailMessage.* | user.abc@mail.contoso.co.in
 destinatario | Disponibile se entityType è *MailMessage.* | testUser2@contoso.com
 subject | Disponibile se entityType è *MailMessage.* | \[Attenzione \] ESTERNA
-deliveryAction | Disponibile se entityType è *MailMessage.* | Recapitato
+deliveryAction | Disponibile se entityType è *MailMessage.* | Recapitati
 securityGroupId | Disponibile se entityType è *SecurityGroup.* | 301c47c8-e15f-4059-ab09-e2ba9ffd372b
-securityGroupName | Disponibile se entityType è *SecurityGroup.* | Operatori di configurazione di rete
-registryHive | Disponibile se entityType è *Registry.* | HKEY \_ LOCAL \_ MACHINE |
-registryKey | Disponibile se entityType è *Registry.* | SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
-registryValueType | Disponibile se entityType è *Registry.* | Stringa
-registryValue | Disponibile se entityType è *Registry.* | 31-00-00-00
+securityGroupName | Disponibile se entityType è *SecurityGroup.* | Network Configuration Operators
+registryHive | Disponibile se entityType è  *Registry*. | HKEY \_ COMPUTER \_ LOCALE |
+registryKey | Disponibile se entityType è  *Registry*. | SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
+registryValueType | Disponibile se entityType è  *Registry*. | Stringa
+registryValue | Disponibile se entityType è  *Registry*. | 31-00-00-00
 deviceId | ID, se presente, del dispositivo correlato all'entità. | 986e5df8b73dacd43c8917d17e523e76b13c75cd
 
 ## <a name="example"></a>Esempio

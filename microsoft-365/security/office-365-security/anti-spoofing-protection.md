@@ -22,12 +22,12 @@ localization_priority: Priority
 description: Informazioni per amministratori sulle funzionalità anti-spoofing disponibili in Exchange Online Protection (EOP), che possono contribuire a ridurre gli attacchi di phishing da mittenti e domini contraffatti.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2b20ae766ee308e9c59ed0d495df7c5a97c79b00
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 1d048a65b34bc97a619855216945d1cc988bf9e2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287066"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921385"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protezione anti-spoofing in EOP
 
@@ -94,7 +94,7 @@ Microsoft distingue tra due diversi tipi di spoofing dei messaggi:
   - Il mittente e il destinatario si trovano in sottodomini nello stesso dominio:
     > Da: laura@marketing.fabrikam.com <br> A: julia@engineering.fabrikam.com
 
-  - Il mittente e il destinatario si trovano in domini diversi che appartengono alla stessa organizzazione, vale a dire che entrambi i domini sono configurati come [domini accettati](https://docs.microsoft.com/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) nella stessa organizzazione:
+  - Il mittente e il destinatario si trovano in domini diversi che appartengono alla stessa organizzazione, vale a dire che entrambi i domini sono configurati come [domini accettati](/exchange/mail-flow-best-practices/manage-accepted-domains/manage-accepted-domains) nella stessa organizzazione:
     > Da: mittente @ microsoft.com <br> A: destinatario @ bing.com
 
     Negli indirizzi di posta elettronica vengono usati spazi per impedire la raccolta da parte di spambot.
@@ -150,7 +150,7 @@ Per consentire ai messaggi delle liste di distribuzione di superare i controlli 
 
   - Consultare le domande frequenti su DMARC.org e leggere la domanda: [I operate a mailing list and I want to interoperate with DMARC, what should I do?](https://dmarc.org/wiki/FAQ#I_operate_a_mailing_list_and_I_want_to_interoperate_with_DMARC.2C_what_should_I_do.3F) (Gestisco una lista di distribuzione e desidero interagire con DMARC, cosa devo fare?).
 
-  - Leggere le istruzioni in questo post di blog: [A tip for mailing list operators to interoperate with DMARC to avoid failures](https://blogs.msdn.microsoft.com/tzink/2017/03/22/a-tip-for-mailing-list-operators-to-interoperate-with-dmarc-to-avoid-failures/) (Un suggerimento per gli operatori delle liste di distribuzione che interagiscono con DMARC per evitare errori).
+  - Leggere le istruzioni in questo post di blog: [A tip for mailing list operators to interoperate with DMARC to avoid failures](/archive/blogs/tzink/a-tip-for-mailing-list-operators-to-interoperate-with-dmarc-to-avoid-failures) (Un suggerimento per gli operatori delle liste di distribuzione che interagiscono con DMARC per evitare errori).
 
   - Prendere in considerazione l'installazione degli aggiornamenti nel server delle liste di distribuzione per supportare ARC, vedere<http://arc-spec.org>.
 

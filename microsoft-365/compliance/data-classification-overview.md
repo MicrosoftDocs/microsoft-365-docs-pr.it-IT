@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Il dashboard di classificazione dei dati offre visibilità sulla quantità di dati riservati che sono stati individuati e classificati nell'organizzazione.
-ms.openlocfilehash: 7bf9a7151f8df45716ab032dd3c62a33f4f5adc8
-ms.sourcegitcommit: da34ac08c7d029c2c42d4428d0bb03fd57c448be
+ms.openlocfilehash: 8f3bb2da1e7011fef334ec345a02d7facedc25fc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "48999396"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922680"
 ---
 # <a name="know-your-data---data-classification-overview"></a>Conoscere i dati - Panoramica della classificazione dei dati
 
@@ -37,7 +37,7 @@ Gli amministratori Microsoft 365 e gli amministratori della conformità possono 
 
 Queste funzionalità vengono anche gestite nella pagina di classificazione dei dati:
 - [classificatori sottoponibili a training](classifier-learn-about.md)
-- [tipi di informazioni sensibili](what-the-sensitive-information-types-look-for.md)
+- [tipi di informazioni sensibili](./sensitive-information-type-entity-definitions.md)
 
 La funzionalità Classificazione dei dati è disponibile nel **Centro conformità Microsoft 365** o nel **Centro sicurezza Microsoft 365** > **Classificazione** > **Classificazione dei dati**.
 
@@ -49,7 +49,7 @@ Classificazione dei dati consentità di analizzare il contenuto riservato e il c
 
 ## <a name="prerequisites"></a>Prerequisiti
 
-Un determinato numero di sottoscrizioni supporta Endpoint DLP. Per vedere le opzioni di licenza per Endpoint DLP, vedere [Linee guida sulle licenze Information Protection](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection). 
+Un determinato numero di sottoscrizioni supporta Endpoint DLP. Per vedere le opzioni di licenza per Endpoint DLP, vedere [Linee guida sulle licenze Information Protection](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-protection). 
 
 ### <a name="permissions"></a>Autorizzazioni
 
@@ -97,7 +97,7 @@ La scheda etichetta di riservatezza mostra il numero di elementi (e-mail o docum
 
 > [!NOTE]
 > Se non sono state create o pubblicate etichette di riservatezza o non è stata applicata alcuna etichetta di riservatezza ai contenuti, la scheda visualizzerà il messaggio "Non sono state rilevate etichette di riservatezza". Per iniziare a usare le etichette di riservatezza vedere:
->- [Iniziare ad usare le etichette di riservatezza](get-started-with-sensitivity-labels.md) oppure per AIP [Configurare i criteri di protezione delle informazioni in Azure](https://docs.microsoft.com/azure/information-protection/configure-policy)
+>- [Iniziare ad usare le etichette di riservatezza](get-started-with-sensitivity-labels.md) oppure per AIP [Configurare i criteri di protezione delle informazioni in Azure](/azure/information-protection/configure-policy)
 
 ## <a name="top-retention-labels-applied-to-content"></a>Principali etichette di conservazione applicate ai contenuti
 

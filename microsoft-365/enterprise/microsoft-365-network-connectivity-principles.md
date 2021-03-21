@@ -17,12 +17,12 @@ f1.keywords:
 - NOCSH
 description: Questo articolo fornisce le indicazioni più recenti per ottimizzare in modo sicuro la connettività di rete di Microsoft 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a6f104f53abd0a9aa2376b09c93af96d7f8178e8
-ms.sourcegitcommit: d3ca8021f7da00a474ac14aac5f1358204a848f2
+ms.openlocfilehash: e0391133721270c0fdfb288b5d26ab23f301a844
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "49519740"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923291"
 ---
 # <a name="microsoft-365-network-connectivity-principles"></a>Principi di connettività di rete di Microsoft 365
 
@@ -228,7 +228,7 @@ Per raggiungere un approccio olistico alla sicurezza avanzata, è necessario con
   - Assicura l'uscita locale per il traffico di Microsoft 365
 - È possibile indirizzare i miglioramenti in modo incrementale come descritto nella sezione [Ottimizzazione incrementale](microsoft-365-network-connectivity-principles.md#BKMK_IncOpt). Alcune tecniche di ottimizzazione possono offrire rapporti costi/benefici migliori in base all'architettura di rete, ed è necessario scegliere ottimizzazioni che siano più importanti per la propria organizzazione.
 
-Per ulteriori informazioni sulla sicurezza e conformità di Microsoft 365, vedere l’articolo [Sicurezza Microsoft 365](https://docs.microsoft.com/microsoft-365/security) e [Conformità Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance).
+Per ulteriori informazioni sulla sicurezza e conformità di Microsoft 365, vedere l’articolo [Sicurezza Microsoft 365](../security/index.yml) e [Conformità Microsoft 365](../compliance/index.yml).
   
 ## <a name="incremental-optimization"></a>Ottimizzazione incrementale
 <a name="BKMK_IncOpt"> </a>

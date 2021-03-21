@@ -13,12 +13,12 @@ localization_priority: Priority
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Fornisce un’introduzione ai componenti, ai piani e ai percorsi di distribuzione di Microsoft 365 per le aziende.
-ms.openlocfilehash: 324e5166dd722f9fcd682db7e536a4b864365025
-ms.sourcegitcommit: 2c4c7ebe9bea52765ece0ed27d3ea77313711b10
+ms.openlocfilehash: 19bc4763f60fae1db914ab7c1f10354e7904cb50
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "50068974"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923171"
 ---
 # <a name="microsoft-365-for-enterprise-overview"></a>Panoramica di Microsoft 365 per le aziende
 
@@ -87,7 +87,7 @@ Questo poster di due pagine è modo rapido per inventariare l'infrastruttura esi
 
 Questi prodotti hanno raggiunto la fine del supporto il **13 ottobre 2020**:
 
-- [Office 2010](https://docs.microsoft.com/DeployOffice/office-2010-end-support-roadmap)
+- [Office 2010](/DeployOffice/office-2010-end-support-roadmap)
 - [Exchange Server 2010](exchange-2010-end-of-support.md)
 
 [SharePoint Server 2010](upgrade-from-sharepoint-2010.md) raggiungerà la fine del supporto il **13 aprile 2021**.
@@ -120,11 +120,11 @@ Per avere un esempio di come Microsoft 365 è stato implementato da una organizz
 
 ## <a name="additional-microsoft-365-products"></a>Altri prodotti di Microsoft 365
 
-- [Microsoft 365 Business Premium](https://docs.microsoft.com/microsoft-365/business/)
+- [Microsoft 365 Business Premium](../business/index.yml)
 
   È possibile unire le migliori funzionalità di produttività e collaborazione con soluzioni per la sicurezza e la gestione dei dispositivi per proteggere i dati aziendali di piccole e medie imprese.
 
-- [Microsoft 365 Education](https://docs.microsoft.com/education)
+- [Microsoft 365 Education](/education)
 
   Permette ai docenti di sbloccare la creatività, promuovere la collaborazione e di offrire un'esperienza semplice e sicura in un'unica soluzione conveniente pensata per l'istruzione.
 
@@ -154,7 +154,7 @@ Per altre informazioni e per esempi di configurazione per piccole e medie impres
 
 ![Formazione sulle nozioni fondamentali di Microsoft 365](../media/microsoft-365-overview/m365-fundamentals.svg)
 
-Per altre informazioni su Microsoft 365 e su come ottenere una certificazione Microsoft 365, si può iniziare da [Microsoft 365 Certified: aspetti fondamentali](https://docs.microsoft.com/learn/paths/m365-fundamentals/).
+Per altre informazioni su Microsoft 365 e su come ottenere una certificazione Microsoft 365, si può iniziare da [Microsoft 365 Certified: aspetti fondamentali](/learn/paths/m365-fundamentals/).
 
 ## <a name="see-also"></a>Vedere anche
 

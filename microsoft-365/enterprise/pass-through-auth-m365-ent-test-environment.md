@@ -18,16 +18,16 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: ''
 description: "Riepilogo: configurare l'autenticazione pass-through per l'ambiente di testing di Microsoft 365."
-ms.openlocfilehash: d83de4ece4d1eaeddac882cf46a4fe85b8ba7cd4
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: cdbb6927fb8ca0001e3089c7169ce9046208e8f8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487447"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921529"
 ---
 # <a name="pass-through-authentication-for-your-microsoft-365-test-environment"></a>Autenticazione pass-through per l'ambiente di testing di Microsoft 365
 
-*Questa guida del laboratorio di testing può essere usata sia per gli ambienti di testing di Microsoft 365 per le aziende che per Office 365 Enterprise.*
+*Questa guida al laboratorio di testing può essere usata sia per gli ambienti di testing di Microsoft 365 per le aziende che per gli ambienti di testing di Office 365 Enterprise.*
 
 Le organizzazioni che vogliono usare direttamente l'infrastruttura di Active Directory Domain Services locale per l'autenticazione per le applicazioni e servizi basati sul cloud di Microsoft, possono usare l'autenticazione pass-through. In questo articolo viene descritto come configurare l'ambiente di testing di Microsoft 365 per l'autenticazione pass-through, con la seguente configurazione come risultato:
   
@@ -38,7 +38,7 @@ Le fasi principali della configurazione dell'ambiente di testing sono tre:
 1.    Creare l'ambiente di testing dell'organizzazione simulata di Microsoft 365 con per la sincronizzazione hash delle password.
 2.    Configurare Azure AD Connect su APP1 per l'autenticazione pass-through.
     
-![Guide del laboratorio di testing per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
+![Guide al lab di test per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png) 
     
 > [!TIP]
 > Fare clic [qui](../downloads/Microsoft365EnterpriseTLGStack.pdf) per consultare una mappa di tutti gli articoli disponibili nella serie di guide al lab di test di Microsoft 365 per le aziende.
@@ -94,7 +94,7 @@ Di seguito è riportata la configurazione risultante:
  
 Questa configurazione è costituita da:
 
-- Sottoscrizioni di valutazione o a pagamento di Microsoft 365 E5 con il dominio DNS testlab.\<your domain name> registrato.
+- Una versione di valutazione di Microsoft 365 E5 o sottoscrizioni a pagamento con il dominio DNS testlab.\<your domain name> registrato.
 - Una intranet dell'organizzazione semplificata connessa a Internet e costituita dalle macchine virtuali DC1, APP1 e CLIENT1 in una sottorete di una rete virtuale Azure. Un Agente di autenticazione viene eseguito su APP1 per gestire le richieste di autenticazione pass-through dal tenant di Azure AD dell'abbonamento a Microsoft 365.
 
 ## <a name="next-step"></a>Passaggio successivo
@@ -107,4 +107,4 @@ Esplorare altre caratteristiche e funzionalità [identità](m365-enterprise-test
 
 [Panoramica di Microsoft 365 per le aziende](microsoft-365-overview.md)
 
-[Documentazione di Microsoft 365 for enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Documentazione di Microsoft 365 for enterprise](/microsoft-365-enterprise/)

@@ -1,5 +1,5 @@
 ---
-title: Uso dei modelli di valutazione in Microsoft Compliance Manager
+title: Utilizzo dei modelli di valutazione in Microsoft Compliance Manager
 f1.keywords:
 - NOCSH
 ms.author: chvukosw
@@ -13,71 +13,71 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-description: Informazioni su come usare e gestire i modelli per la creazione di valutazioni in Microsoft Compliance Manager. Creare e modificare modelli utilizzando un file di Excel formattato.
-ms.openlocfilehash: 9f76ff6202ff9ad4a876c57209748dd7c98877b4
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+description: Informazioni su come usare e gestire i modelli per la creazione di valutazioni in Microsoft Compliance Manager. Creare e modificare modelli utilizzando un file excel formattato.
+ms.openlocfilehash: 2d95aa4172d80a81e8c635edb01ab56579513c53
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405830"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922786"
 ---
-# <a name="working-with-assessment-templates-in-compliance-manager"></a>Uso dei modelli di valutazione in Compliance Manager
+# <a name="working-with-assessment-templates-in-compliance-manager"></a>Utilizzo dei modelli di valutazione in Compliance Manager
 
-**In questo articolo:** Comprendere **il funzionamento dei modelli** e come **gestirli** dalla pagina dei modelli di valutazione. Istruzioni per la **creazione di** nuovi modelli, **la modifica** dei modelli esistenti, la **formattazione dei** dati del modello con Excel e l'esportazione dei report **dei modelli.**
+**In questo articolo:** Comprendere **il funzionamento dei modelli** e come **gestirli** dalla pagina dei modelli di valutazione. Istruzioni per la **creazione di** nuovi modelli, la **modifica dei** modelli esistenti, la formattazione dei dati del modello **con Excel** e l'esportazione di report **modello.**
 
 > [!IMPORTANT]
-> I modelli di valutazione disponibili per l'organizzazione dipendono dal contratto di licenza. [Esaminare i dettagli.](https://go.microsoft.com/fwlink/?linkid=2132371)
+> I modelli di valutazione disponibili per l'organizzazione dipendono dal contratto di licenza. [Esaminare i dettagli](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="templates-overview"></a>Panoramica dei modelli
 
-Un modello è un framework di controlli per la creazione di una valutazione in Compliance Manager. Il nostro set completo di modelli può aiutare l'organizzazione a rispettare i requisiti nazionali, regionali e specifici del settore che regolano la raccolta e l'uso dei dati. Si fa riferimento ai modelli con lo stesso nome della certificazione o della normativa sottostante, ad esempio il modello GDPR dell'Unione Europea e il modello ISO 27001:2013.
+Un modello è un framework di controlli per la creazione di una valutazione in Compliance Manager. Il nostro set completo di modelli può aiutare l'organizzazione a rispettare i requisiti nazionali, regionali e specifici del settore che regolano la raccolta e l'uso dei dati. Ci riferiamo ai modelli con lo stesso nome della certificazione o del regolamento sottostante, ad esempio il modello GDPR dell'UE e il modello ISO 27001:2013.
 
- Visualizza [l'elenco completo dei modelli.](compliance-manager-templates-list.md)
+ Visualizzare [l'elenco completo dei modelli](compliance-manager-templates-list.md).
 
 ## <a name="template-types-included-and-premium-active-and-inactive"></a>Tipi di modello: inclusi e premium, attivi e inattivi
 
 #### <a name="included-and-premium-templates"></a>Modelli inclusi e premium
 
-I modelli disponibili per l'utilizzo si basano sul contratto di licenza dell'organizzazione ([visualizzare i dettagli delle licenze).](https://go.microsoft.com/fwlink/?linkid=2132371) Esistono due categorie di modelli: incluso e premium.
+I modelli disponibili per l'utilizzo si basano sul contratto di licenza dell'organizzazione ([visualizzare i dettagli della licenza](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)). Esistono due categorie di modelli: incluso e premium.
 
 1. **I modelli inclusi** sono disponibili per l'utilizzo nell'ambito del contratto di licenza dell'organizzazione.
 2. **I modelli** Premium devono essere acquistati per poter creare valutazioni da essi. Dopo l'acquisto, è possibile creare tutte le valutazioni da un modello in base alle esigenze.
 
 #### <a name="active-and-inactive-templates"></a>Modelli attivi e inattivi
 
-I modelli visualizzano uno stato di attivazione come attivo o inattivo:
+I modelli visualizzano lo stato di attivazione attivo o inattivo:
 
 - Un modello viene considerato **attivo** dopo aver creato una valutazione da tale modello.
 - Un modello viene considerato **inattivo** se l'organizzazione non lo usa come framework per una valutazione.
 
-Quando acquisti un modello Premium e crei una valutazione da esso, tale modello è attivo per un anno. L'acquisto verrà rinnovato automaticamente, a meno che non si annulli il rinnovo.
+Quando acquisti un modello premium e crei una valutazione da esso, tale modello è attivo per un anno. L'acquisto verrà rinnovato automaticamente a meno che non si annulli il rinnovo.
 
 **Contatore dei modelli attivati**
 
-La pagina di valutazione e la pagina dei modelli di valutazione hanno un contatore **dei modelli** attivato nella parte superiore. Il contatore visualizza il numero di modelli in uso fuori dal numero idoneo per l'uso in base al contratto di licenza.
+La pagina di valutazione e la pagina dei modelli di valutazione hanno un **contatore dei modelli** attivato nella parte superiore. Il contatore visualizza il numero di modelli in uso fuori dal numero idoneo per l'utilizzo in base al contratto di licenza.
 
 Ad esempio, se il contatore mostra 2/5, significa che l'organizzazione ha attivato 2 modelli dei 5 disponibili per l'utilizzo.
 
-Se il contatore mostra 5/2, questo indica che l'organizzazione supera i suoi limiti e deve acquistare 3 dei modelli premium in uso.
+Se il contatore indica 5/2, significa che l'organizzazione supera i limiti e deve acquistare 3 dei modelli premium in uso.
 
-Per [ulteriori dettagli, vedere](https://go.microsoft.com/fwlink/?linkid=2132371) la guida alle licenze di Compliance Manager.
+Per [ulteriori dettagli, vedere Linee guida](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) per le licenze di Compliance Manager.
 
 ## <a name="viewing-and-managing-templates-from-the-assessment-templates-page"></a>Visualizzazione e gestione dei modelli dalla pagina dei modelli di valutazione
 
-La pagina dei modelli di valutazione in Compliance Manager visualizza un elenco di modelli e dettagli chiave. L'elenco include i modelli forniti da Compliance Manager e tutti i modelli modificati o creati dall'organizzazione. È possibile applicare filtri per trovare un modello basato su certificazione, ambito di prodotto, paese, settore, chi lo ha creato e se il modello è abilitato per la creazione della valutazione.
+Nella pagina modelli di valutazione in Compliance Manager viene visualizzato un elenco di modelli e dettagli chiave. L'elenco include i modelli forniti da Compliance Manager e tutti i modelli modificati o creati dall'organizzazione. È possibile applicare filtri per trovare un modello basato su certificazione, ambito del prodotto, paese, settore, chi lo ha creato e se il modello è abilitato per la creazione della valutazione.
 
-Selezionare un modello dalla riga corrispondente per visualizzare la relativa pagina dei dettagli. Questa pagina contiene una descrizione del modello e ulteriori informazioni sulla certificazione, l'ambito e i dettagli dei controlli. Da questa pagina è possibile selezionare i pulsanti appropriati per creare una valutazione, esportare i dati del modello in Excel o modificare il modello.
+Selezionare un modello dalla riga corrispondente per visualizzare la relativa pagina dei dettagli. Questa pagina contiene una descrizione del modello e ulteriori informazioni sulla certificazione, l'ambito e i dettagli dei controlli. In questa pagina è possibile selezionare i pulsanti appropriati per creare una valutazione, esportare i dati del modello in Excel o modificare il modello.
 
 ## <a name="creating-and-modifying-templates-overview"></a>Panoramica della creazione e della modifica dei modelli
 
-Per modificare un modello esistente o per creare un nuovo modello personalizzato, si utilizzerà un foglio di calcolo di Excel formattato in modo specifico ([scaricare](https://go.microsoft.com/fwlink/?linkid=2124865)un esempio ) per assemblare i dati del controllo necessari. Dopo aver completato il foglio di calcolo, importarlo in Compliance Manager durante il processo di creazione o modifica di un modello.
+Per modificare un modello esistente o creare un nuovo modello personalizzato, si utilizzerà un foglio di calcolo di Excel formattato appositamente ([scaricare](https://go.microsoft.com/fwlink/?linkid=2124865)un esempio ) per assemblare i dati del controllo necessari. Dopo aver completato il foglio di calcolo, importarlo in Compliance Manager durante il processo di creazione o modifica di un modello.
 
 > [!NOTE]
 > Il foglio di calcolo ha un formato e uno schema specifici che devono essere utilizzati oppure non verrà importato correttamente in Compliance Manager. Le [istruzioni di formattazione](#formatting-your-template-data-with-excel) sono riportate di seguito.
 
 **Ruoli obbligatori**
 
-Solo gli utenti che hanno un ruolo di amministratore globale o di amministrazione di Compliance Manager possono creare e modificare i modelli. Ulteriori informazioni su [ruoli e autorizzazioni.](compliance-manager-setup.md#set-user-permissions-and-assign-roles)
+Solo gli utenti che hanno un ruolo amministratore globale o amministratore di Compliance Manager possono creare e modificare i modelli. Ulteriori informazioni sui [ruoli e sulle autorizzazioni](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
 ## <a name="create-a-new-template"></a>Creare un nuovo modello
 
@@ -86,17 +86,17 @@ Per creare un nuovo modello personalizzato (usato per la creazione di valutazion
 1. Passare alla pagina **dei modelli di** valutazione in Compliance Manager.
 2. Selezionare **Crea nuovo modello.** Verrà aperta una procedura guidata per la creazione di modelli.
 3. Scegliere il tipo di modello che si desidera creare. In questo caso, selezionare **Crea un modello personalizzato,** quindi selezionare **Avanti.**
-4. At the **Upload file** screen, select **Browse** to find and upload your formatted Excel file containing all the required template data (see instructions for properly formatting [your file](#formatting-your-template-data-with-excel)).
-5. Se non si verificano problemi con il file, verrà visualizzato il nome del file caricato. Selezionare **Avanti** per continuare. Se è necessario modificare il file, selezionare **Carica un file diverso.**
-    - Se si verifica un errore con il file, nella parte superiore viene visualizzato un messaggio di errore che spiega il problema. Dovrai correggere il file e caricarlo di nuovo. Gli errori si verificano se il foglio di calcolo non è formattato correttamente o se sono presenti informazioni non valide in determinati campi (fare di nuovo riferimento alle [istruzioni di formattazione).](#formatting-your-template-data-with-excel)  
+4. Nella schermata **Carica file** selezionare Sfoglia per trovare e caricare il file excel formattato contenente tutti i dati del modello necessari (vedere le istruzioni per formattare [correttamente il file).](#formatting-your-template-data-with-excel) 
+5. In caso di problemi con il file, verrà visualizzato il nome del file caricato. Selezionare **Avanti** per continuare. Se è necessario modificare il file, selezionare **Carica un altro file.**
+    - Se si verifica un errore con il file, nella parte superiore viene visualizzato un messaggio di errore che spiega il problema. Dovrai correggere il file e caricarlo di nuovo. Gli errori si verificano se il foglio di calcolo è formattato in modo non corretto o se sono presenti informazioni non valide in determinati campi (fare di nuovo riferimento alle istruzioni [di formattazione).](#formatting-your-template-data-with-excel)  
     
-6. La **schermata Revisione e** fine mostra il numero di azioni e controlli di miglioramento e il punteggio massimo per il modello. Quando si è pronti per l'approvazione, **selezionare Crea modello.** Se è necessario apportare modifiche, selezionare **Indietro.**
-7. L'ultima schermata conferma la creazione di un nuovo modello. Selezionare **Fine per** uscire dalla procedura guidata.
+6. La **schermata Revisione e** fine mostra il numero di azioni e controlli di miglioramento e il punteggio massimo per il modello. Quando sei pronto per l'approvazione, seleziona **Crea modello.** Se è necessario apportare modifiche, selezionare **Indietro.**
+7. L'ultima schermata conferma la creazione di un nuovo modello. Selezionare **Fine** per uscire dalla procedura guidata.
 8. Verrà visualizzata la pagina dei dettagli del nuovo modello, in cui è possibile [creare la valutazione.](compliance-manager-assessments.md#create-your-own-custom-assessment)
 
 ## <a name="formatting-your-template-data-with-excel"></a>Formattazione dei dati del modello con Excel
 
-Il foglio di calcolo di Excel utilizzato per creare i modelli contiene quattro schede, tre delle quali sono necessarie:
+Il foglio di calcolo di Excel utilizzato per creare modelli contiene quattro schede, tre delle quali sono necessarie:
 
 1. [Modello](#template-tab) (obbligatorio)
 2. [ControlFamily](#controlfamily-tab) (obbligatorio)
@@ -107,51 +107,51 @@ Quando si compila il foglio di calcolo con i dati del modello, il foglio di calc
 
 ##### <a name="template-tab"></a>Scheda Modello
 
-La **scheda Modello** è obbligatoria. Le informazioni contenute in questa scheda forniscono i metadati relativi al modello. Sono disponibili quattro colonne obbligatorie. Le colonne devono mantenere l'ordine nel foglio di Excel come indicato di seguito. È possibile aggiungere una propria **colonna dopo** le quattro colonne per fornire dimensioni personalizzate. In questo caso, assicurarsi di aggiungerli alla **scheda** Dimensioni usando le [istruzioni riportate di seguito.](#dimensions-tab)
+La **scheda Modello** è obbligatoria. Le informazioni contenute in questa scheda forniscono metadati sul modello. Sono disponibili quattro colonne obbligatorie. Le colonne devono mantenere l'ordine nel foglio di Excel come indicato di seguito. È possibile aggiungere una colonna **personale dopo** le quattro colonne per fornire dimensioni personalizzate. In questo caso, assicurarsi di aggiungerli alla **scheda** Dimensioni usando le [istruzioni riportate di seguito.](#dimensions-tab)
 
-- **title**: questo è il titolo del modello, che deve essere univoco. Non può condividere un nome con un altro modello presente in Compliance Manager, inclusi i propri modelli o un modello di Compliance Manager.
+- **title**: questo è il titolo del modello, che deve essere univoco. Non può condividere un nome con un altro modello di Compliance Manager, inclusi i propri modelli o un modello di Compliance Manager.
 
-- **product**: dimensione obbligatoria. Elencare il prodotto associato al modello.
+- **product**: si tratta di una dimensione obbligatoria. Elencare il prodotto associato al modello.
 
-- **certification:** questa è la normativa che stai usando per il modello.
+- **certification**: si tratta della normativa in uso per il modello.
 
-- **inScopeServices:** questi sono i servizi all'interno del prodotto a cui si rivolge questa valutazione (ad esempio, se office 365 è stato elencato come prodotto, Microsoft Teams potrebbe essere un servizio nell'ambito). È possibile elencare più servizi separati da due punti e virgola.
+- **inScopeServices**: Si tratta dei servizi all'interno del prodotto a cui si rivolge questa valutazione (ad esempio, se Office 365 è stato elencato come prodotto, Microsoft Teams potrebbe essere un servizio nell'ambito). È possibile elencare più servizi separati da due punti e virgola.
 
 > [!NOTE]
-> I dati inseriti nelle  celle **del** prodotto e della certificazione non possono essere modificati dopo l'importazione del foglio di calcolo per creare o personalizzare un modello. Inoltre, un gruppo non può contenere due valutazioni con la stessa combinazione **di prodotto/certificazione.** Puoi avere più modelli con la stessa combinazione di prodotto/certificazione.
+> I dati inseriti nelle  celle **del** prodotto e della certificazione non possono essere modificati dopo l'importazione del foglio di calcolo per creare o personalizzare un modello. Inoltre, un gruppo non può contenere due valutazioni con la stessa combinazione **prodotto/certificazione.** Puoi avere più modelli con la stessa combinazione di prodotto/certificazione.
 
 ##### <a name="controlfamily-tab"></a>Scheda ControlFamily
 
 La **scheda ControlFamily** è obbligatoria.  Le colonne obbligatorie in questa scheda, che devono seguire l'ordine indicato nel foglio di calcolo di esempio, sono:
 
-- **controlName**: questo è il nome del controllo della certificazione, dello standard o della normativa, che in genere è un tipo di ID. I nomi dei controlli devono essere univoci all'interno di un modello. Non è possibile avere più controlli con lo stesso nome nel foglio di calcolo.
+- **controlName**: Questo è il nome del controllo della certificazione, dello standard o della normativa, che in genere è un tipo di ID. I nomi dei controlli devono essere univoci all'interno di un modello. Non è possibile avere più controlli con lo stesso nome nel foglio di calcolo.
 
-- **controlFamily:** specifica una parola o una frase per controlFamily, che identifica un ampio raggruppamento di controlli. Un controlFamily non deve essere univoco; può essere elencato più di una volta in un foglio di calcolo. Lo stesso controlFamily può anche essere elencato in più modelli, anche se non hanno alcuna relazione tra loro. Ogni controlFamily deve essere mappato ad almeno un controllo.
+- **controlFamily**: specifica una parola o una frase per controlFamily, che identifica un ampio raggruppamento di controlli. Un controlFamily non deve essere univoco. può essere elencato più di una volta in un foglio di calcolo. Lo stesso controlFamily può anche essere elencato in più modelli, anche se non hanno alcuna relazione l'uno con l'altro. Ogni controlFamily deve essere mappato ad almeno un controllo.
 
-- **controlTitle**: specifica un titolo per il controllo. Mentre controlName è un codice di riferimento, il titolo è un formato RTF in genere presente nelle normative.
+- **controlTitle**: fornire un titolo per il controllo. Mentre controlName è un codice di riferimento, il titolo è un formato RTF in genere presente nelle normative.
 
-- **controlDescription:** fornire una descrizione del controllo.
+- **controlDescription**: fornire una descrizione del controllo.
 
-- **controlActionTitle:** titolo di un'azione che si desidera correlare a questo controllo. È possibile aggiungere più azioni separando due punti e virgola senza spazi. Ogni controllo elencato deve includere almeno un'azione e l'azione deve esistere( ciò  significa che è possibile elencare un'azione elencata nella scheda Azioni dello stesso foglio di calcolo, un'azione presente in un modello diverso o un'azione creata da Microsoft). Controlli diversi possono fare riferimento alla stessa azione.
+- **controlActionTitle**: titolo di un'azione che si desidera correlare a questo controllo. È possibile aggiungere più azioni separando due punti e virgola senza spazio tra loro. Ogni controllo elencato deve includere almeno un'azione e l'azione deve esistere, ovvero  è possibile elencare un'azione elencata nella scheda Azioni dello stesso foglio di calcolo, un'azione presente in un modello diverso o un'azione creata da Microsoft. Controlli diversi possono fare riferimento alla stessa azione.
 
 ##### <a name="actions-tab"></a>Scheda Azioni
 
-La **scheda Azioni** è obbligatoria.  Designa le azioni di miglioramento gestite dall'organizzazione e non quelle di Microsoft, già esistenti in Compliance Manager. Le colonne necessarie per questa scheda, che devono seguire l'ordine indicato nel foglio di calcolo di esempio, sono:
+La **scheda Azioni** è obbligatoria.  Designa le azioni di miglioramento gestite dall'organizzazione e non quelle di Microsoft, che esistono già in Compliance Manager. Le colonne obbligatorie per questa scheda, che devono seguire l'ordine indicato nel foglio di calcolo di esempio, sono:
 
-- **actionTitle:** questo è il titolo dell'azione ed è un campo obbligatorio. Il titolo fornito deve essere univoco. **Importante:** se si fa riferimento a un'azione già esistente (ad esempio in un altro modello) e si modifica uno dei relativi elementi nelle colonne successive, tali modifiche verranno propagate alla stessa azione in altri modelli.
+- **actionTitle**: questo è il titolo dell'azione ed è un campo obbligatorio. Il titolo fornito deve essere univoco. **Importante:** se si fa riferimento a un'azione già esistente (ad esempio in un altro modello) e si modifica uno dei relativi elementi nelle colonne successive, tali modifiche verranno propagate alla stessa azione in altri modelli.
 
-- **implementationType:** in questo campo obbligatorio elenca uno dei tre tipi di implementazione seguenti:
-    - **Operativo:** azioni implementate da persone e processi per proteggere la riservatezza, l'integrità e la disponibilità di sistemi, risorse, dati e personale dell'organizzazione (ad esempio: sensibilizzazione e formazione sulla sicurezza)
-    - **Tecniche:** azioni completate tramite l'uso di tecnologie e meccanismi contenuti nei componenti hardware, software o firmware del sistema informatico per proteggere la riservatezza, l'integrità e la disponibilità dei sistemi e dei dati dell'organizzazione (ad esempio: autenticazione a più fattori)
-    - **Documentazione** : azioni implementate tramite criteri e procedure documentati che definiscono e definiscono i controlli necessari per proteggere la riservatezza, l'integrità e la disponibilità di sistemi, risorse, dati e personale dell'organizzazione (ad esempio: criteri di sicurezza delle informazioni)
+- **implementationType**: in questo campo obbligatorio elencare uno dei tre tipi di implementazione seguenti:
+    - **Operativo** : azioni implementate da persone e processi per proteggere la riservatezza, l'integrità e la disponibilità di sistemi, risorse, dati e personale dell'organizzazione (ad esempio, consapevolezza della sicurezza e formazione)
+    - **Tecnico** - Azioni completate tramite l'uso di tecnologie e meccanismi contenuti nei componenti hardware, software o firmware del sistema in informazioni per proteggere la riservatezza, l'integrità e la disponibilità dei sistemi e dei dati dell'organizzazione (ad esempio: autenticazione a più fattori)
+    - **Documentazione** : azioni implementate tramite criteri e procedure documentati che stabiliscono e definiscono i controlli necessari per proteggere la riservatezza, l'integrità e la disponibilità di sistemi, risorse, dati e personale dell'organizzazione (ad esempio, un criterio di sicurezza delle informazioni)
 
-- **actionScore:** in questo campo obbligatorio, fornisci un valore di punteggio numerico per l'azione. Deve essere un numero intero compreso tra 1 e 99. non può essere 0, null o vuoto. Più alto è il numero, maggiore è il valore verso il miglioramento della postura di conformità. L'immagine seguente mostra il modo in cui Compliance Manager ottiene i controlli:
+- **actionScore**: in questo campo obbligatorio, fornisci un valore di punteggio numerico per l'azione. Deve essere un numero intero compreso tra 1 e 99. non può essere 0, null o vuoto. Maggiore è il numero, maggiore è il valore per migliorare la postura di conformità. L'immagine seguente mostra come Compliance Manager punteggia i controlli:
 
-![Compliance Manager controlla i valori dei punti](../media/compliance-score-action-scoring.png "Compliance Manager controlla i valori dei punti")
+![Valori dei punti dei controlli di Compliance Manager](../media/compliance-score-action-scoring.png "Valori dei punti dei controlli di Compliance Manager")
 
-- **actionDescriptionTitle:** questo è il titolo della descrizione ed è obbligatorio. Questo titolo della descrizione ti consente di eseguire la stessa azione in più modelli e di visualizzare una descrizione diversa in ogni modello.  Questo campo consente di chiarire il modello a cui fa riferimento la descrizione. Nella maggior parte dei casi, è possibile inserire il nome del modello che si sta creando in questo campo.
+- **actionDescriptionTitle**: questo è il titolo della descrizione ed è obbligatorio. Questo titolo della descrizione consente di eseguire la stessa azione in più modelli e di visualizzare una descrizione diversa in ogni modello.  Questo campo consente di chiarire il modello a cui fa riferimento la descrizione. Nella maggior parte dei casi, è possibile inserire il nome del modello che si sta creando in questo campo.
 
-- **actionDescription:** fornire una descrizione dell'azione. È possibile applicare la formattazione, ad esempio testo in grassetto e collegamenti ipertestuali. Questo campo è obbligatorio.
+- **actionDescription**: fornire una descrizione dell'azione. È possibile applicare formattazioni quali testo in grassetto e collegamenti ipertestuali. Questo campo è obbligatorio.
 
 - **dimension-Action Purpose**: campo facoltativo. Se viene incluso, l'intestazione deve includere il prefisso "dimension-". Tutte le dimensioni incluse qui verranno utilizzate come filtri in Compliance Manager e verranno visualizzate nella pagina dei dettagli delle azioni di miglioramento in Compliance Manager.
 
@@ -159,96 +159,96 @@ La **scheda Azioni** è obbligatoria.  Designa le azioni di miglioramento gestit
 
 La **scheda Dimensioni** è facoltativa. Tuttavia, se si fa riferimento a una dimensione altrove, è necessario specificarla qui se non esiste in un modello già creato o in un modello Microsoft. Le colonne per questa scheda sono elencate di seguito:
 
-- **dimensionKey**: list as "product", "certifications", "action purpose"
-- **dimensionValue**: esempi: Office 365, HIPPA, Preventivo, Detective
+- **dimensionKey**: elenco come "prodotto", "certificazioni", "scopo azione"
+- **dimensionValue**: esempi: Office 365, HIPPA, Preventative, Detective
 
-Per visualizzare le dimensioni esistenti, accedere a **Gestione tenant** e selezionare la **scheda** Dimensioni. Inoltre, ogni volta che si esporta un modello  esistente, il foglio di calcolo esportato avrà la scheda Dimensioni, in cui sono elencate tutte le dimensioni utilizzate nel modello.
+Per visualizzare le dimensioni esistenti, accedere a **Gestione tenant** e selezionare la **scheda** Dimensioni. Inoltre, ogni volta che si esporta un modello esistente, il foglio di calcolo esportato avrà la scheda **Dimensioni,** in cui sono elencate tutte le dimensioni utilizzate nel modello.
 
 ## <a name="modify-a-template"></a>Modificare un modello
 
-È possibile modificare un modello già creato, ad esempio aggiungere controlli o aggiungere o rimuovere azioni di miglioramento. Il processo è simile al processo di creazione del modello in cui verrà caricato un file di Excel formattato con i dati del modello.
+Potresti voler modificare un modello già creato, ad esempio aggiungere controlli o aggiungere o rimuovere azioni di miglioramento. Il processo è simile al processo di creazione del modello, in cui si carica il file di Excel formattato con i dati del modello.
 
-Tuttavia, esistono particolari dettagli da tenere presenti durante la formattazione del file con le modifiche ai dati del modello esistente. **È consigliabile leggere attentamente queste istruzioni per assicurarsi di non sovrascrivere i dati esistenti che si desidera conservare.**
+Tuttavia, esistono particolari dettagli da tenere presenti durante la formattazione del file con le modifiche ai dati del modello esistenti. **È consigliabile leggere attentamente queste istruzioni per assicurarsi di non sovrascrivere i dati esistenti che si desidera conservare.**
 
-### <a name="template-modification-process-steps"></a>Passaggi del processo di modifica del modello
+### <a name="template-modification-process-steps"></a>Passaggi del processo di modifica dei modelli
 
 Per modificare un modello, eseguire la procedura seguente:
 
-1. Nella pagina **dei modelli di** valutazione selezionare il modello che si desidera modificare, visualizzando la relativa pagina dei dettagli.
-2. Selezionare **Esporta in Excel.** Verrà scaricato un file di Excel con tutti i dati del modello. Salvare il file nel computer locale.
+1. Nella pagina **dei modelli di** valutazione seleziona il modello che vuoi modificare, che ne visualizza la pagina dei dettagli.
+2. Selezionare **Esporta in Excel**. Verrà scaricato un file di Excel con tutti i dati del modello. Salvare il file nel computer locale.
 3. Apportare le modifiche al modello [modificando il file di Excel utilizzando le istruzioni riportate di seguito.](#formatting-your-excel-file-to-modify-a-template)
 4. Dopo aver apportato modifiche al file di Excel, salvare il file.
-5. Nella pagina dei dettagli del modello selezionare **Modifica** modello per avviare la procedura guidata di modifica. 
-6. Nella schermata **Carica file** selezionare Sfoglia **per** trovare e caricare il file di Excel.
-7. Se non si verificano problemi con il file, nella schermata successiva viene visualizzato il nome del file caricato. Selezionare **Avanti** per continuare (se è necessario modificare il file, selezionare **Carica un altro file).**
-    - Se si verifica un problema con il file, nella parte superiore viene visualizzato un messaggio di errore che spiega il problema. Dovrai correggere il file e caricarlo di nuovo. Se il foglio di calcolo non è formattato correttamente o se sono presenti informazioni non valide in alcuni campi, si verificano errori.
+5. Nella pagina dei dettagli del modello seleziona **Modifica modello** per avviare la procedura guidata di modifica. 
+6. Nella schermata **Carica file** selezionare **Sfoglia per** trovare e caricare il file di Excel.
+7. Se non si verificano problemi con il file, nella schermata successiva viene visualizzato il nome del file caricato. Selezionare **Avanti** per continuare (se è necessario modificare il file, selezionare **Carica un altro file**).
+    - Se si verifica un problema con il file, nella parte superiore viene visualizzato un messaggio di errore che spiega il problema. Dovrai correggere il file e caricarlo di nuovo. Gli errori si verificano se il foglio di calcolo è formattato in modo non corretto o se sono presenti informazioni non valide in alcuni campi.
 
-8. La **schermata Revisione e** fine mostra il numero di azioni e controlli di miglioramento e il punteggio massimo per il modello. Quando si è pronti per l'approvazione, selezionare **Avanti.**
-9. L'ultima schermata conferma che il modello è stato modificato. Selezionare **Fine per** uscire dalla procedura guidata.
+8. La **schermata Revisione e** fine mostra il numero di azioni e controlli di miglioramento e il punteggio massimo per il modello. Quando si è pronti per l'approvazione, selezionare **Avanti**.
+9. L'ultima schermata conferma che il modello è stato modificato. Selezionare **Fine** per uscire dalla procedura guidata.
 
-Il modello includerà ora le modifiche apportate. Tutte le valutazioni che usano questo modello modificato mostreranno gli aggiornamenti in sospeso e dovrai accettare gli aggiornamenti per le valutazioni in base alle modifiche apportate nel modello. Ulteriori informazioni sugli [aggiornamenti alle valutazioni.](compliance-manager-assessments.md#accepting-updates-to-assessments)
+Il modello includerà le modifiche apportate. Tutte le valutazioni che utilizzano questo modello modificato ora mostreranno gli aggiornamenti in sospeso e dovrai accettare gli aggiornamenti per le valutazioni per riflettere le modifiche apportate nel modello. Ulteriori informazioni sugli [aggiornamenti per le valutazioni](compliance-manager-assessments.md#accepting-updates-to-assessments).
 
 > [!NOTE]
-> Se si usa Compliance Manager in una lingua diversa dall'inglese, si noterà che parte del testo viene visualizzato in inglese quando si esporta un modello in Excel. I titoli delle azioni (sia le azioni di miglioramento che le azioni di Microsoft) devono essere in inglese per essere riconosciuti dai controlli. Se si apportano modifiche al titolo di un'azione, assicurarsi di scriverlo in inglese in modo che il file venga importato correttamente.
+> Se si utilizza Compliance Manager in una lingua diversa dall'inglese, si noterà che parte del testo viene visualizzato in inglese quando si esporta un modello in Excel. I titoli delle azioni (sia le azioni di miglioramento che le azioni microsoft) devono essere in inglese per essere riconosciuti dai controlli. Se si apportano modifiche al titolo di un'azione, assicurarsi di scriverlo in inglese in modo che il file venga importato correttamente.
 
 ### <a name="formatting-your-excel-file-to-modify-a-template"></a>Formattazione del file di Excel per modificare un modello
 
 Passare a una sezione seguente per trovare rapidamente le istruzioni necessarie:
 
-- [Modificare gli attributi del modello principale](#edit-the-main-template-attributes)
+- [Modificare gli attributi principali del modello](#edit-the-main-template-attributes)
 - [Aggiungere un'azione di miglioramento](#add-an-improvement-action)
 - [Modificare le informazioni di un'azione di miglioramento](#edit-an-improvement-actions-information)
 - [Modificare il nome di un'azione di miglioramento](#change-an-improvement-actions-name)
 - [Rimuovere un'azione di miglioramento](#remove-an-improvement-action)
 - [Rimuovere un controllo](#remove-a-control)
 
-#### <a name="edit-the-main-template-attributes"></a>Modificare gli attributi del modello principale
+#### <a name="edit-the-main-template-attributes"></a>Modificare gli attributi principali del modello
 
-Nella scheda **Modelli** è possibile modificare  qualsiasi elemento nella colonna del titolo, **nella colonna inScopeServices** e in qualsiasi altra colonna aggiunta. Tuttavia, non è possibile modificare nulla nelle colonne **del** prodotto **o della** certificazione.
+Nella scheda **Modelli** è possibile modificare qualsiasi elemento nella colonna **del** titolo, **nella colonna inScopeServices** e in qualsiasi altra colonna aggiunta. Tuttavia, non è possibile modificare nulla nelle colonne **del prodotto** **o della** certificazione.
 
 #### <a name="add-an-improvement-action"></a>Aggiungere un'azione di miglioramento
 
 1. Passare alla **scheda** Azioni. Aggiungere le informazioni nei campi obbligatori nella prima riga vuota sotto le azioni esistenti.
-2. Vai alla scheda **ControlFamily.** Individuare la riga contenente il controllo a cui è mappata l'azione di miglioramento. Aggiungere la nuova azione alla colonna **controlActionTitle** in tale riga (ricordare di separare più azioni in questo campo con due punti e virgola, senza spazio tra di loro).
+2. Vai alla **scheda ControlFamily.** Individuare la riga contenente il controllo a cui è mappata l'azione di miglioramento. Aggiungi la nuova azione alla colonna **controlActionTitle** di tale riga (ricordati di separare più azioni in questo campo con due punti e virgola, senza spazio tra di loro).
 3. Salvare il foglio di calcolo.
 
 #### <a name="edit-an-improvement-actions-information"></a>Modificare le informazioni di un'azione di miglioramento
 
-È possibile modificare le informazioni di qualsiasi azione di *miglioramento, ad eccezione del titolo.* È possibile modificare qualsiasi cella dalle colonne B e versioni successive e, quando si importa di nuovo il file nel modello, le azioni di miglioramento in tale modello conterranno i dati aggiornati.
+È possibile modificare le informazioni di qualsiasi azione di miglioramento *ad eccezione del titolo*. È possibile modificare qualsiasi cella dalle colonne B in poi e quando si importa di nuovo il file nel modello, le azioni di miglioramento in tale modello conterranno i dati aggiornati.
 
-Non è possibile modificare **l'azioneTitle** (colonna A) perché, in tal caso, Compliance Manager considera questa azione come una nuova azione di miglioramento. Se si desidera modificare il nome di un'azione di miglioramento, vedere le istruzioni immediatamente seguenti.
+Non è possibile modificare **l'azioneTitle** (colonna A) perché in tal caso, Compliance Manager considera questa azione come una nuova azione di miglioramento. Se si desidera modificare il nome di un'azione di miglioramento, vedere le istruzioni immediatamente seguenti.
 
 #### <a name="change-an-improvement-actions-name"></a>Modificare il nome di un'azione di miglioramento
 
-Se si desidera modificare il nome di un'azione di miglioramento, è necessario designare esplicitamente nel foglio di calcolo la sostituzione di un nome esistente con un nuovo nome. Eseguire la procedura seguente:
+Se si desidera modificare il nome di un'azione di miglioramento, è necessario indicare esplicitamente nel foglio di calcolo che si sta sostituendo un nome esistente con un nuovo nome. Eseguire la procedura seguente:
 
-1. Nella scheda **Azioni del** foglio di calcolo aggiungere una nuova colonna al foglio di calcolo dopo la colonna A.
-2. In questa nuova colonna, che ora è la colonna B, inserire come intestazione nella riga 1: **oldActionTitle.**
-3. Copiare il contenuto della colonna A e incollarlo nella colonna B. In questo modo i titoli delle azioni di miglioramento esistenti, che sono gli elementi che si desidera modificare, vengono visualizzati nella colonna B.
-4. Nella colonna A, **actionTitle,** eliminare il nome precedente e sostituirlo con il nuovo nome per l'azione di miglioramento.
+1. Nella scheda **Azioni** del foglio di calcolo aggiungere una nuova colonna al foglio di calcolo dopo la colonna A.
+2. In questa nuova colonna, che ora è la colonna B, inserire come intestazione nella riga 1: **oldActionTitle**.
+3. Copiare il contenuto della colonna A e incollarlo nella colonna B. In questo modo i titoli delle azioni di miglioramento esistenti, che sono ciò che si desidera modificare, vengono visualizzati nella colonna B.
+4. Nella colonna A, **actionTitle,** eliminare il vecchio nome e sostituirlo con il nuovo nome per l'azione di miglioramento.
 
-Si noti che i titoli delle azioni, sia per le azioni di miglioramento che per le azioni di Microsoft, devono essere scritti in inglese per essere riconosciuti quando si fa riferimento nei controlli.
+Si noti che i titoli delle azioni, sia per le azioni di miglioramento che per le azioni microsoft, devono essere scritti in inglese per essere riconosciuti quando si fa riferimento nei controlli.
 
 #### <a name="remove-an-improvement-action"></a>Rimuovere un'azione di miglioramento
 
-Per rimuovere un'azione di miglioramento da un modello, è necessario rimuoverla da ogni controllo che vi fa riferimento. Seguire i passaggi seguenti per modificare il foglio di calcolo:
+Per rimuovere un'azione di miglioramento da un modello, è necessario rimuoverla da ogni controllo che vi fa riferimento. Seguire la procedura seguente per modificare il foglio di calcolo:
 
 1. Nella scheda **ControlFamily** cercare il titolo dell'azione di miglioramento che si desidera rimuovere.
 2. Eliminare il titolo dell'azione di miglioramento nelle celle in cui viene visualizzata. Se l'azione di miglioramento è l'unica azione eseguita su tale riga, eliminare l'intera riga, rimuovendo così il controllo.
-3. Nella scheda **Azioni** eliminare la riga contenente l'azione di miglioramento da eliminare.
+3. Nella scheda **Azioni** eliminare la riga contenente l'azione di miglioramento che si sta eliminando.
 4. Salvare il foglio di calcolo.
 
 Quando si importa di nuovo il foglio di calcolo nel modello, l'azione di miglioramento verrà rimossa dal modello.
 
-La rimozione di un'azione di miglioramento da un modello non rimuove completamente l'azione di miglioramento da Compliance Manager. Tale azione può comunque essere referenziato da un altro modello.
+La rimozione di un'azione di miglioramento da un modello non rimuove completamente l'azione di miglioramento da Compliance Manager. È comunque possibile fare riferimento a tale azione da un altro modello.
 
 #### <a name="remove-a-control"></a>Rimuovere un controllo
 
 Per rimuovere un controllo, modificare il foglio di calcolo seguendo la procedura seguente, quindi importare di nuovo il foglio di calcolo:
 
 1. Nella scheda **ControlFamily** individuare il controllo che si desidera rimuovere nella **colonna controlName.**
-2. Eliminare la riga per tale controllo.
-    - Se il controllo eliminato contiene azioni di miglioramento a cui non fanno riferimento altri controlli, sarà necessario rimuovere tali azioni di miglioramento dalla **scheda** Azioni. In caso contrario, verrà visualizzato un errore di convalida.
+2. Eliminare la riga per il controllo.
+    - Se questo controllo eliminato contiene azioni di miglioramento a cui nessun altro controllo fa riferimento, sarà necessario rimuovere tali azioni di miglioramento dalla **scheda** Azioni. In caso contrario, verrà visualizzato un errore di convalida.
 
 3. Salvare il foglio di calcolo.
 
@@ -256,7 +256,7 @@ Quando si importa di nuovo il foglio di calcolo nel modello, il controllo verrà
 
 ## <a name="export-a-template"></a>Esportare un modello
 
-È possibile esportare un file di Excel contenente tutti i dati di un modello. Sarà necessario esportare un modello per modificare il modello, poiché questo sarà il file di Excel modificato e caricato nel processo [di modifica.](#modify-a-template)
+È possibile esportare un file di Excel contenente tutti i dati di un modello. Sarà necessario esportare un modello per modificare il modello, in quanto si tratta del file di Excel modificato e caricato nel processo [di modifica.](#modify-a-template)
 
 Per esportare il modello, passare alla pagina dei dettagli del modello e selezionare il **pulsante Esporta in Excel.**
 

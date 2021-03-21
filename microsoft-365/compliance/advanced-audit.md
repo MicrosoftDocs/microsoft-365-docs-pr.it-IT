@@ -18,19 +18,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Audit avanzato in Microsoft 365 fornisce nuove funzionalità di audit per aiutare l'organizzazione nelle indagini forensi e di conformità.
-ms.openlocfilehash: 012361e8ebbf1961d5ca21cef97357d5150523d5
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 0a77a5c54ce328a3966a952fc8fef08553f42462
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712056"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923486"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Audit avanzato in Microsoft 365
 
 La [funzionalità di audit unificato](search-the-audit-log-in-security-and-compliance.md) in Microsoft 365 consente alle organizzazioni di avere visibilità su molti tipi di attività controllate in molti servizi diversi in Microsoft 365. Audit avanzato aiuta le organizzazioni a svolgere indagini forensi e di conformità aumentando il periodo di conservazione dei log di controllo richiesto per condurre un'indagine, fornendo accesso a eventi cruciali che consentono di determinare la portata della violazione e velocizzando l'accesso alla API Office 365 Management Activity.
 
 > [!NOTE]
-> Audit avanzato è disponibile per le organizzazioni con un abbonamento a Office 365 E5/G5 o Microsoft 365 Enterprise E5/G5. Inoltre, è possibile assegnare agli utenti una licenza per il componente aggiuntivo Microsoft 365 E5 Compliance o per E5 Discovery and Audit Compliance nei casi in cui sia necessaria una licenza a utente per le funzionalità Audit avanzato, come nel caso di conservazione a lungo termine dei log di controllo e di accesso agli eventi cruciali per le indagini. Per altre informazioni sulle licenze, vedere [Indicazioni sulla gestione delle licenze di Microsoft 365 per la sicurezza e la conformità](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit).
+> Audit avanzato è disponibile per le organizzazioni con un abbonamento a Office 365 E5/G5 o Microsoft 365 Enterprise E5/G5. Inoltre, è possibile assegnare agli utenti una licenza per il componente aggiuntivo Microsoft 365 E5 Compliance o per E5 Discovery and Audit Compliance nei casi in cui sia necessaria una licenza a utente per le funzionalità Audit avanzato, come nel caso di conservazione a lungo termine dei log di controllo e di accesso agli eventi cruciali per le indagini. Per altre informazioni sulle licenze, vedere [Indicazioni sulla gestione delle licenze di Microsoft 365 per la sicurezza e la conformità](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#advanced-audit).
 
 Questo articolo fornisce una panoramica delle funzionalità di Audit avanzato e mostra come configurare gli utenti per l'Audit avanzato.
 
@@ -85,7 +85,7 @@ Per cercare i record di controllo MailItemsAccessed, è possibile cercare l'atti
 
 ![Ricerca di azioni MailItemsAccessed nello strumento Ricerca log di audit](../media/AdvAudit_MailItemsAccessed.png)
 
-È anche possibile eseguire i comandi [Search-UnifiedAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) o [Search-MailboxAuditLog -Operations MailItemsAccessed](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) in PowerShell per Exchange Online.
+È anche possibile eseguire i comandi [Search-UnifiedAuditLog -Operations MailItemsAccessed](/powershell/module/exchange/search-unifiedauditlog) o [Search-MailboxAuditLog -Operations MailItemsAccessed](/powershell/module/exchange/search-mailboxauditlog) in PowerShell per Exchange Online.
 
 ### <a name="send"></a>Send
 
@@ -103,7 +103,7 @@ Per cercare i record di controllo dell'evento Send, cercare l'attività **Messag
 
 ![Cercare le azioni di invio dei messaggi nello strumento di ricerca nel log di controllo](../media/AdvAudit_SentMessage.png)
 
-È anche possibile eseguire i comandi [Search-UnifiedAuditLog -Operations Send](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) o [Search-MailboxAuditLog -Operations Send](https://docs.microsoft.com/powershell/module/exchange/search-mailboxauditlog) in PowerShell per Exchange Online.
+È anche possibile eseguire i comandi [Search-UnifiedAuditLog -Operations Send](/powershell/module/exchange/search-unifiedauditlog) o [Search-MailboxAuditLog -Operations Send](/powershell/module/exchange/search-mailboxauditlog) in PowerShell per Exchange Online.
 
 ### <a name="searchqueryinitiatedexchange"></a>SearchQueryInitiatedExchange
 
@@ -125,7 +125,7 @@ Per cercare i record di controllo dell'evento SearchQueryInitiatedExchange, cerc
 
 ![Cercare le azioni di ricerca dei messaggi di posta elettronica nello strumento di ricerca dei log di controllo](../media/AdvAudit_SearchExchange.png)
 
-È anche possibile eseguire [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExchange](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) in PowerShell per Exchange Online.
+È anche possibile eseguire [Search-UnifiedAuditLog -Operations SearchQueryInitiatedExchange](/powershell/module/exchange/search-unifiedauditlog) in PowerShell per Exchange Online.
 
 > [!NOTE]
 > Bisogna eseguire questo comando in PowerShell per Exchange Online, in modo che gli eventi SearchQueryInitiatedExchange (eseguiti dallo specifico utente E5) siano inclusi nei risultati della ricerca dei log di controllo: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`.<br/><br/>
@@ -150,7 +150,7 @@ Per cercare i record di controllo dell'evento SearchQueryInitiatedSharePoint, ce
 
 ![Cercare le azioni di ricerca eseguite in SharePoint nello strumento di ricerca dei log di controllo](../media/AdvAudit_SearchSharePoint.png)
 
-È anche possibile eseguire [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) in PowerShell per Exchange Online.
+È anche possibile eseguire [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](/powershell/module/exchange/search-unifiedauditlog) in PowerShell per Exchange Online.
 
 > [!NOTE]
 > Bisogna eseguire questo comando in PowerShell per Exchange Online, in modo che gli eventi SearchQueryInitiatedExchange (eseguiti dallo specifico utente E5) siano inclusi nei risultati della ricerca dei log di controllo: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`.<br/><br/>
@@ -165,7 +165,7 @@ Con il rilascio di Audit avanzato, si passa da un limite a livello di publisher 
 
 A tutte le organizzazioni viene inizialmente assegnata una baseline di 2.000 richieste al minuto. Questo limite verrà incrementato in modo dinamico in base al numero di postazioni di un'organizzazione e all'abbonamento di licenza. Le organizzazioni E5 otterranno circa il doppio della larghezza di banda delle organizzazioni non E5. Sarà anche previsto un tetto per la larghezza di banda massima per proteggere l'integrità del servizio.
 
-Per altre informazioni, vedere la sezione dedicata alla limitazione dell'API nell'argomento di [riferimento all'API Office 365 Management Activity](https://docs.microsoft.com/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling).
+Per altre informazioni, vedere la sezione dedicata alla limitazione dell'API nell'argomento di [riferimento all'API Office 365 Management Activity](/office/office-365-management-api/office-365-management-activity-api-reference#api-throttling).
 
 ## <a name="set-up-advanced-audit-for-users"></a>Configurare Audit avanzato per gli utenti
 
@@ -183,7 +183,7 @@ Le funzionalità di Audit avanzato, come la possibilità di registrare eventi cr
 
    La registrazione dei record di controllo per MailItemsAccessed, Send e altri eventi cruciali per l'utente inizierà entro 24 ore.
 
-Per le organizzazioni che assegnano licenze ai gruppi di utenti usando le licenze basate su gruppi, è necessario disabilitare l'assegnazione delle licenze per il controllo avanzato di Microsoft 365 per il gruppo. Dopo aver salvato le modifiche, verificare che il controllo avanzato di Microsoft 365 sia disabilitato per il gruppo. Quindi, riabilitare l'assegnazione delle licenze per il gruppo. Per istruzioni sulle licenze basate su gruppi, vedere [Assegnare licenze agli utenti in base all'appartenenza ai gruppi in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-groups-assign).
+Per le organizzazioni che assegnano licenze ai gruppi di utenti usando le licenze basate su gruppi, è necessario disabilitare l'assegnazione delle licenze per il controllo avanzato di Microsoft 365 per il gruppo. Dopo aver salvato le modifiche, verificare che il controllo avanzato di Microsoft 365 sia disabilitato per il gruppo. Quindi, riabilitare l'assegnazione delle licenze per il gruppo. Per istruzioni sulle licenze basate su gruppi, vedere [Assegnare licenze agli utenti in base all'appartenenza ai gruppi in Azure Active Directory](/azure/active-directory/users-groups-roles/licensing-groups-assign).
 
 Inoltre, se sono state personalizzate le azioni della cassetta postale registrate nelle cassette postali degli utenti o nelle cassette postali condivise, le nuove azioni predefinite della cassetta postale, come MailItemsAccessed, non verranno controllate automaticamente in tali cassette postali. Per informazioni sulla modifica delle azioni della cassetta postale controllate per ogni tipo di accesso, vedere la sezione "Modificare o ripristinare le azioni della cassetta postale registrate per impostazione predefinita" in [Gestire il controllo delle cassette postali](enable-mailbox-auditing.md#change-or-restore-mailbox-actions-logged-by-default).
 

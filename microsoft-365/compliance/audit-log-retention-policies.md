@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: ''
 description: I criteri di conservazione dei log di controllo fanno parte delle nuove funzionalità di Audit avanzato di Microsoft 365. Un criterio di conservazione dei log di controllo consente di specificare quanto a lungo conservare i log di controllo nell'organizzazione.
-ms.openlocfilehash: fd7e5dc37daad220257b4203679c6bb765140385
-ms.sourcegitcommit: 88ab08c0fa1acbc9e066009e131b9f2b0d506c64
+ms.openlocfilehash: 53449b6b83373eb2f749a4547845866dbea4a2af
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "50712046"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922852"
 ---
 # <a name="manage-audit-log-retention-policies"></a>Gestire i criteri di conservazione dei log di controllo
 
@@ -104,7 +104,7 @@ Per modificare un criterio, selezionarlo in modo da visualizzare il riquadro a c
 
 
 > [!IMPORTANT]
-> Se si usa il cmdlet **New-UnifiedAuditLogRetentionPolicy**, è possibile creare un criterio di conservazione dei log di controllo per i tipi di record o le attività non disponibili nello strumento **Crea criteri di conservazione dei log di controllo** del dashboard. In questo caso, non sarà possibile modificare il criterio, ad esempio modificare la durata di conservazione o aggiungere e rimuovere attività, dal dashboard **Criteri di conservazione dei log di controllo**. Nel centro conformità si potrà solo visualizzare ed eliminare il criterio. Per modificarlo sarà necessario usare il cmdlet [Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-unifiedauditlogretentionpolicy) in PowerShell per Centro sicurezza e conformità.<br/><br/>**Suggerimento:** nella parte superiore del riquadro a comparsa viene visualizzato un messaggio per i criteri che devono essere modificati tramite PowerShell.
+> Se si usa il cmdlet **New-UnifiedAuditLogRetentionPolicy**, è possibile creare un criterio di conservazione dei log di controllo per i tipi di record o le attività non disponibili nello strumento **Crea criteri di conservazione dei log di controllo** del dashboard. In questo caso, non sarà possibile modificare il criterio, ad esempio modificare la durata di conservazione o aggiungere e rimuovere attività, dal dashboard **Criteri di conservazione dei log di controllo**. Nel centro conformità si potrà solo visualizzare ed eliminare il criterio. Per modificarlo sarà necessario usare il cmdlet [Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy) in PowerShell per Centro sicurezza e conformità.<br/><br/>**Suggerimento:** nella parte superiore del riquadro a comparsa viene visualizzato un messaggio per i criteri che devono essere modificati tramite PowerShell.
 
 ### <a name="delete-policies-in-the-dashboard"></a>Eliminare i criteri nel dashboard
 
@@ -118,7 +118,7 @@ Per creare e gestire i criteri di conservazione dei log di controllo è possibil
 
 Seguire questa procedura per creare criteri di conservazione del log di controllo in PowerShell:
 
-1. [Connettersi a PowerShell in Centro sicurezza e conformità](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+1. [Connettersi a PowerShell in Centro sicurezza e conformità](/powershell/exchange/connect-to-scc-powershell).
 
 2. Eseguire il comando seguente per creare un criterio di conservazione dei log di controllo.
 
@@ -142,11 +142,11 @@ Ecco un altro esempio relativo alla creazione di un criterio di conservazione de
 New-UnifiedAuditLogRetentionPolicy -Name "SixMonth retention for admin logons" -RecordTypes AzureActiveDirectoryStsLogon -Operations UserLoggedIn -UserIds admin@contoso.onmicrosoft.com -RetentionDuration SixMonths -Priority 25
 ```
 
-Per altre informazioni, vedere [New-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/new-unifiedauditlogretentionpolicy).
+Per altre informazioni, vedere [New-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/new-unifiedauditlogretentionpolicy).
 
 ### <a name="view-policies-in-powershell"></a>Visualizzazione dei criteri in PowerShell
 
-Usare il cmdlet [Get-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/get-unifiedauditlogretentionpolicy) in PowerShell per Centro sicurezza e conformità per visualizzare i criteri di conservazione dei log di controllo.
+Usare il cmdlet [Get-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/get-unifiedauditlogretentionpolicy) in PowerShell per Centro sicurezza e conformità per visualizzare i criteri di conservazione dei log di controllo.
 
 Ecco un comando di esempio per visualizzare le impostazioni di tutti i criteri di conservazione dei log di controllo nell'organizzazione. Questo comando ordina i criteri dalla priorità più alta a quella più bassa.
 
@@ -159,11 +159,11 @@ Get-UnifiedAuditLogRetentionPolicy | Sort-Object -Property Priority -Descending 
 
 ### <a name="edit-policies-in-powershell"></a>Modificare i criteri in PowerShell
 
-Usare il cmdlet [Set-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/set-unifiedauditlogretentionpolicy) in PowerShell per Centro sicurezza e conformità per modificare un criterio di conservazione dei log di controllo esistente.
+Usare il cmdlet [Set-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/set-unifiedauditlogretentionpolicy) in PowerShell per Centro sicurezza e conformità per modificare un criterio di conservazione dei log di controllo esistente.
 
 ### <a name="delete-policies-in-powershell"></a>Eliminare criteri in PowerShell
 
-Usare il cmdlet [Remove-UnifiedAuditLogRetentionPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-unifiedauditlogretentionpolicy) in PowerShell per Centro sicurezza e conformità per eliminare un criterio di conservazione dei log di controllo. La rimozione dei criteri dall'organizzazione può richiedere fino a 30 minuti.
+Usare il cmdlet [Remove-UnifiedAuditLogRetentionPolicy](/powershell/module/exchange/remove-unifiedauditlogretentionpolicy) in PowerShell per Centro sicurezza e conformità per eliminare un criterio di conservazione dei log di controllo. La rimozione dei criteri dall'organizzazione può richiedere fino a 30 minuti.
 
 ## <a name="more-information"></a>Altre informazioni
 

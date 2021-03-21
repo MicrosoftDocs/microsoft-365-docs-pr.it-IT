@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sul funzionamento della conservazione per Exchange.
-ms.openlocfilehash: 4e8a536aaa81b0117f40b0ce330491fa8430f97c
-ms.sourcegitcommit: 66b8fc1d8ba4f17487cd2004ac19cf2fff472f3d
+ms.openlocfilehash: 0763b8bdab75ac76197b8c89f187bb573a3e4bb1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "48754436"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922510"
 ---
 # <a name="learn-about-retention-for-exchange"></a>Informazioni sulla conservazione per Exchange
 
@@ -44,7 +44,7 @@ Altri elementi archiviati in una cassetta postale, ad esempio i messaggi di Skyp
 
 ## <a name="how-retention-works-for-exchange"></a>Funzionamento della conservazione per Exchange
 
-Le cassette postali e le cartella pubbliche utilizzano la cartella [Elementi ripristinabili](https://docs.microsoft.com/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) per conservare gli elementi. Solo gli utenti a cui sono state assegnate autorizzazioni di eDiscovery possono visualizzare il contenuto di una cartella Elementi ripristinabili di un altro utente.
+Le cassette postali e le cartella pubbliche utilizzano la cartella [Elementi ripristinabili](/exchange/security-and-compliance/recoverable-items-folder/recoverable-items-folder) per conservare gli elementi. Solo gli utenti a cui sono state assegnate autorizzazioni di eDiscovery possono visualizzare il contenuto di una cartella Elementi ripristinabili di un altro utente.
   
 Quando un utente elimina un messaggio da una cartella (fatta eccezione per la cartella Posta eliminata), per impostazione predefinita il messaggio viene trasferito nella cartella Posta eliminata. Quando un utente elimina un elemento dalla cartella Posta eliminata, il messaggio viene spostato nella cartella Elementi ripristinabili. Tuttavia, un utente può eliminare temporaneamente un elemento (MAIUSC+CANC) di qualsiasi cartella. Con questa operazione la cartella Posta eliminata viene ignorata e l'elemento viene inserito direttamente nella cartella Elementi ripristinabili.
   

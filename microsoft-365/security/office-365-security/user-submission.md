@@ -17,12 +17,12 @@ ms.collection:
 description: Gli amministratori possono imparare a configurare una cassetta postale per raccogliere posta indesiderata e phishing segnalati dagli utenti.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 37b473e2cfffff3984ff81245f09e98ee18685ea
-ms.sourcegitcommit: 450661071e44854f0a0a92af648f76d907767b71
+ms.openlocfilehash: 0ac1028ca3485f75518ccca298a1fd85a7bf40ec
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "50826199"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922391"
 ---
 # <a name="user-submissions-policy"></a>Criteri per gli invii di utenti
 
@@ -68,14 +68,14 @@ Utilizzare gli articoli seguenti per configurare i prerequisiti necessari in mod
 
 Dopo aver verificato che la cassetta postale soddisfi tutti i prerequisiti applicabili, utilizzare il Centro sicurezza [&](#use-the-security--compliance-center-to-configure-the-user-submissions-mailbox) conformità per configurare la cassetta postale di invio degli utenti (in questo articolo).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
 
 - Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla **pagina Invii utente,** usa <https://protection.office.com/userSubmissionsReportMessage> .
 
 - Per modificare la configurazione per gli invii di utenti, è necessario essere membri di uno dei gruppi di ruoli seguenti:
 
   - **Gestione organizzazione** o **Amministratore sicurezza** nel [Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
-  - **Gestione dell'organizzazione** in [Exchange Online](https://docs.microsoft.com/Exchange/permissions-exo/permissions-exo#role-groups).
+  - **Gestione dell'organizzazione** in [Exchange Online](/Exchange/permissions-exo/permissions-exo#role-groups).
 
 - È necessario accedere a PowerShell di Exchange Online. Se l'account che si sta tentando di utilizzare non ha accesso a PowerShell di Exchange Online, verrà visualizzato un errore simile al seguente quando si specifica la cassetta postale degli invii:
 
@@ -83,8 +83,8 @@ Dopo aver verificato che la cassetta postale soddisfi tutti i prerequisiti appli
 
   Per ulteriori informazioni sull'abilitazione o disabilitazione dell'accesso a PowerShell di Exchange Online, vedere i seguenti argomenti:
 
-  - [Abilitare o disabilitare l'accesso a PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/disable-access-to-exchange-online-powershell) 
-  - [Regole di Accesso client in Exchange Online](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
+  - [Abilitare o disabilitare l'accesso a PowerShell di Exchange Online](/powershell/exchange/disable-access-to-exchange-online-powershell) 
+  - [Regole di Accesso client in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules)
 
 ## <a name="use-the-security--compliance-center-to-configure-the-user-submissions-mailbox"></a>Utilizzare il Centro sicurezza & conformità per configurare la cassetta postale degli invii degli utenti
 
@@ -155,4 +155,3 @@ Nell'esempio seguente:
 `3|49871234-6dc6-43e8-abcd-08d797f20abe|167.220.232.101|test@contoso.com|(test phishing submission)`
 
 I messaggi che non seguono questo formato non verranno visualizzati correttamente nel portale invii.
-

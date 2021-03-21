@@ -23,29 +23,29 @@ search.appverid:
 - MOE150
 - BEA160
 ms.assetid: fce1510d-9ea5-4aff-8752-1676ec7fede3
-description: Informazioni su come applicare un codice promozionale all'abbonamento a Microsoft 365 per ridurre il prezzo e come risolvere i problemi relativi al codice promozionale in caso di errore.
-ms.openlocfilehash: 09f39b6f82153c6b23525ab41cfb94e77437d062
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+description: Scopri come applicare un codice promozionale all'abbonamento a Microsoft 365 per ridurre il prezzo e come risolvere i problemi relativi al codice promozionale in caso di errore.
+ms.openlocfilehash: c526d5fd44db5e653f79c4987a35c72cdd6fdcad
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48646740"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921757"
 ---
 # <a name="use-your-promo-code-to-reduce-price"></a>Usare il codice promozionale per ridurre il prezzo
 
-Quando acquisti un abbonamento, puoi usare un codice promozionale per ridurre il prezzo. Leggi questo articolo per informazioni su come applicare un codice [](#promo-code-terms)promozionale all'abbonamento, per informazioni sui termini del codice promozionale e per risolvere i problemi relativi [ai codici promozionali.](#troubleshooting-promo-codes)
+Quando acquisti un abbonamento, puoi usare un codice promozionale per ridurre il prezzo. Leggi questo articolo per informazioni su come applicare un codice promozionale all'abbonamento, per informazioni sui termini del codice promozionale [e](#promo-code-terms)per risolvere i problemi relativi ai [codici promozionali.](#troubleshooting-promo-codes)
   
 ## <a name="apply-a-promo-code-to-your-subscription"></a>Applicare un codice promozionale all'abbonamento
 
 1. Iniziare l'acquisto acquistando un nuovo abbonamento o aggiungendo servizi a un abbonamento esistente.
     
-2. When you check out, choose **Have a promo or discount code?, and then enter your code in the box. 
+2. Quando estrai, scegli **Avere un codice promozionale o di sconto?, quindi immetti il codice nella casella. 
   
-3. Selezionare **Applica codice promozionale.** Verrà visualizzata la conferma che l'applicazione è stata eseguita correttamente. If you see a different message, refer to [Troubleshooting promo codes](#troubleshooting-promo-codes) to figure out why. 
+3. Seleziona **Applica codice promozionale.** Verrà visualizzata la conferma che l'applicazione è stata eseguita correttamente. If you see a different message, refer to [Troubleshooting promo codes](#troubleshooting-promo-codes) to figure out why. 
     
-4. Continuare l'estrazione. Nella pagina di conferma dell'ordine, vedrai il codice dello sconto incluso con l'importo. 
+4. Continuare l'estrazione. Nella pagina di conferma dell'ordine, vedrai il codice di sconto incluso con l'importo. 
     
-In qualsiasi momento dopo il completamento dell'acquisto, lo sconto associato al codice promozionale può essere visualizzato nella fattura. Per altre informazioni, vedere [Visualizzare il file](billing-and-payments/view-your-bill-or-invoice.md).
+In qualsiasi momento dopo il completamento dell'acquisto, lo sconto associato al codice promozionale può essere visualizzato nella fattura. Per ulteriori informazioni, vedere [View your](billing-and-payments/view-your-bill-or-invoice.md).
   
 ## <a name="promo-code-terms"></a>Condizioni per i codici promozionali
 
@@ -73,8 +73,8 @@ Se viene visualizzato un messaggio di errore dopo l'immissione del codice promoz
   
 ## <a name="related-articles"></a>Articoli correlati
 
-[Acquistare un abbonamento dalla versione di valutazione gratuita](buy-a-subscription-from-your-free-trial.md)
+[Acquistare un abbonamento dalla versione di valutazione gratuita](./try-or-buy-microsoft-365.md)
   
-[Acquistare un altro abbonamento](buy-another-subscription.md)
+[Acquistare un altro abbonamento](./try-or-buy-microsoft-365.md)
   
 [Acquistare o modificare un componente aggiuntivo](buy-or-edit-an-add-on.md)

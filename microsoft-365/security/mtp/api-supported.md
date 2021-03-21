@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ee03e5a255a88c084403842e7bf0319c06c0517b
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: a162226793cc63a9e7e4d490c721a2c488ac64fc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49926199"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922175"
 ---
 # <a name="supported-microsoft-365-defender-apis"></a>API supportate di Microsoft 365 Defender 
 
@@ -35,13 +35,13 @@ ms.locfileid: "49926199"
 - Microsoft 365 Defender
 
 > [!IMPORTANT]
-> Alcune informazioni riguardano prodotti non rilasciati in precedenza che potrebbero essere sostanzialmente modificati prima del rilascio sul mercato. Microsoft makes no warranties, express or implied, with respect to the information provided here.
+> Alcune informazioni riguardano prodotti prereleased che possono essere sostanzialmente modificati prima che venga rilasciato commercialmente. Microsoft makes no warranties, express or implied, with respect to the information provided here.
 
 ## <a name="list-of-available-apis"></a>Elenco delle API disponibili
 
 Articolo | Descrizione
 -|-
-[Rilevazione avanzata API](api-advanced-hunting.md) | Eseguire query di Ricerca avanzata.
+[Rilevazione avanzata API](api-advanced-hunting.md) | Eseguire query di ricerca avanzata.
 [Incidenti delle API](api-incident.md) | Elencare e aggiornare gli eventi imprevisti, insieme ad altre attività pratiche.
 
 ### <a name="endpoint-uris"></a>URI endpoint
@@ -52,9 +52,9 @@ L'URI di base per entrambe le API principali è: https://api.security.microsoft.
 - Europa: api-eu.security.microsoft.com
 - Regno Unito: api-uk.security.microsoft.com
 
-I token possono essere acquisiti accedendo https://api.security.microsoft.com a .
+I token possono essere acquisiti accedendo a https://api.security.microsoft.com .
 
-Tutte le API lungo il `/api` percorso usano il protocollo [OData,](https://docs.microsoft.com/odata/overview) ad esempio https://api.security.microsoft.com/api/incidents .
+Tutte le API lungo `/api` il percorso usano il protocollo [OData,](/odata/overview) ad esempio https://api.security.microsoft.com/api/incidents .
 
 ## <a name="related-articles"></a>Articoli correlati
 

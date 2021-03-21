@@ -16,12 +16,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Stato di integrità dei servizi di Microsoft 365
-ms.openlocfilehash: f7bb310452f841c04eabdd683d3ec82b4ad2b57a
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: d0e32fb34cf1d14a5da8c10a07551cee00e2421a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686603"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923113"
 ---
 # <a name="microsoft-365-network-health-status"></a>Stato di integrità della rete di Microsoft 365
 
@@ -44,5 +44,5 @@ In caso venissero rilevati problemi significativi all'interno della rete globale
 Queste risorse consentono di migliorare l'utilizzo della rete per i servizi Microsoft.
 
 - [Ottimizzare la connettività di Microsoft 365 per gli utenti remoti tramite split tunneling per VPN](microsoft-365-vpn-split-tunnel.md)
-- [Principi di connettività della rete di Microsoft 365](https://aka.ms/pnc)
-- [Lavorare in remoto usando i servizi di rete di Azure](https://docs.microsoft.com/azure/networking/working-remotely-support)
+- [Principi di connettività della rete di Microsoft 365](./microsoft-365-network-connectivity-principles.md)
+- [Lavorare in remoto usando i servizi di rete di Azure](/azure/networking/working-remotely-support)

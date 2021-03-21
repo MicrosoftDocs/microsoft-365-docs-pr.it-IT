@@ -19,12 +19,12 @@ ms.reviewer: sstewart
 search.appverid:
 - MET150
 description: Informazioni su come ottimizzare le prestazioni delle estensioni personalizzate nelle pagine moderne dei siti di SharePoint Online.
-ms.openlocfilehash: 92d328c64c89a1a01bbcd50fb7ad04affdf69af8
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 05d9b9cd9ad70630169595dc42080c718b39dbc8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287198"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923059"
 ---
 # <a name="optimize-custom-extension-performance-in-sharepoint-online-modern-site-pages"></a>Ottimizzare le prestazioni delle estensioni personalizzate nelle pagine moderne dei siti di SharePoint Online
 
@@ -37,25 +37,25 @@ Lo strumento Diagnostica pagine per SharePoint è un'estensione del browser per 
 >[!NOTE]
 >Lo strumento Diagnostica pagine funziona solo per SharePoint Online e non può essere usato in una pagina di sistema di SharePoint.
 
-Quando si analizza una pagina del sito di SharePoint con lo strumento Diagnostica pagine per SharePoint, è possibile visualizzare informazioni  sulle estensioni personalizzate  che superano la metrica di base nelle estensioni che influiscono sui tempi di caricamento e/o sul numero di estensioni utilizzate nel riquadro Test di diagnostica  
+Quando si analizza una pagina del sito di SharePoint con lo strumento Diagnostica pagine per SharePoint, è possibile visualizzare informazioni  sulle estensioni personalizzate che superano la metrica di base nelle estensioni che influiscono sui tempi di caricamento e/o sul numero di estensioni utilizzate nel riquadro Test di _diagnostica_  
 
 I risultati possibili includono:
 
 - **Attenzione** (rosso): in questa sezione sono elencate tutte le estensioni _personalizzate_ il cui caricamento richiede più di **un** secondo. Il tempo di caricamento totale visualizzato nei risultati del test è suddiviso per caricamento del modulo e inizializzazione. Inoltre, se in una pagina sono presenti troppe estensioni, possono influire sul  tempo di caricamento della pagina e questo verrà evidenziato se nella pagina vengono utilizzate sette o più estensioni.
-- **Opportunità di miglioramento**  (giallo) Se vengono utilizzate cinque o più estensioni, verranno evidenziate in questa sezione come avviso fino a quando non vengono utilizzate sette o più estensioni, che verranno quindi evidenziate come attenzione necessaria.
+- **Opportunità di** miglioramento (giallo) **Se** vengono utilizzate cinque o più estensioni, verranno evidenziate in questa sezione come avviso fino a quando non vengono utilizzate sette o più estensioni, che verranno evidenziate come Attenzione necessaria.
 - **Nessuna azione necessaria** (verde): nessuna estensione richiede più di un secondo per il caricamento.
 
-Se un'estensione influisce sul tempo di caricamento della pagina o se  la pagina contiene troppe estensioni, il risultato verrà visualizzato nella sezione Attenzione richiesta dei risultati. Fai clic sul risultato per visualizzare i dettagli sull'estensione che si sta caricando lentamente o che sono state evidenziate troppe estensioni. Gli aggiornamenti futuri dello strumento Diagnostica pagine per SharePoint potrebbero includere novità relative alle regole di analisi, di conseguenza assicurarsi di usare sempre la versione più recente dello strumento.
+Se un'estensione influisce sul tempo di caricamento della pagina o se  la pagina contiene troppe estensioni, il risultato viene visualizzato nella sezione Attenzione necessaria dei risultati. Fare clic sul risultato per visualizzare i dettagli sull'estensione che viene caricata lentamente o che sono state evidenziate troppe estensioni. Gli aggiornamenti futuri dello strumento Diagnostica pagine per SharePoint potrebbero includere novità relative alle regole di analisi, di conseguenza assicurarsi di usare sempre la versione più recente dello strumento.
 
 ![Risultati del tempo di caricamento delle pagine](../media/page-diagnostics-for-spo/pagediag-extensions-load-time.png)
 
 Le informazioni disponibili nei risultati includono:
 
 - **Nome e ID**: informazioni di identificazione utili per trovare l’estensione nella pagina
-- **Totale** mostra il tempo totale per il caricamento e l'inizializzazione dell'estensione. È il tempo relativo totale impiegato dall'estensione per l'esecuzione nella pagina, dall'inizio alla fine.
-- **Caricamento modulo** mostra il tempo impiegato per scaricare, valutare e caricare i file JavaScript e CSS delle estensioni. Verrà quindi avviato il processo Init.
+- **Totale** mostra il tempo totale per l'estensione per il caricamento e l'inizializzazione del modulo. È il tempo relativo totale impiegato dall'estensione per l'esecuzione nella pagina, dall'inizio alla fine.
+- **Caricamento modulo** mostra il tempo impiegato per scaricare, valutare e caricare le estensioni JavaScript e i file CSS. Verrà quindi avviato il processo Init.
 - **Init** mostra il tempo impiegato dall'estensione per inizializzare i dati.
-    Si tratta di una chiamata asincrona e il tempo di init è il calcolo del tempo per la funzione onInit quando viene risolta la promessa restituita.
+    Si tratta di una chiamata asincrona e il tempo di init è il calcolo del tempo per la funzione onInit quando la promessa restituita viene risolta.
 
 Queste informazioni vengono fornite per consentire a progettisti e sviluppatori di risolvere i problemi. Devono essere fornite al team di progettazione e sviluppo.
 
@@ -88,7 +88,7 @@ Gli autori delle pagine possono anche usare il risultato del controllo per verif
 
 - **Dimensioni e dipendenze delle estensioni**
   - Per il download ottimale delle risorse statiche è necessario usare la rete per la distribuzione di contenuti di Office 365. Per i file _js/css_ sono preferibili origini pubbliche della rete per la distribuzione di contenuti. Per altre informazioni sull'uso della rete CDN di Office 365, vedere [Usare la rete per la distribuzione di contenuti di Office 365 con SharePoint Online](use-microsoft-365-cdn-with-spo.md).
-  - Riutilizzare framework come _React_ e _Fabric imports_, che fanno parte di SharePoint Framework (SPFx). Per altre informazioni, vedere [Panoramica di SharePoint Framework](https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview).
+  - Riutilizzare framework come _React_ e _Fabric imports_, che fanno parte di SharePoint Framework (SPFx). Per altre informazioni, vedere [Panoramica di SharePoint Framework](/sharepoint/dev/spfx/sharepoint-framework-overview).
   - Assicurarsi di usare la versione più recente di SharePoint Framework e di eseguire l'aggiornamento alle nuove versioni non appena disponibili.
 - **Recupero e memorizzazione dei dati nella cache**
   - Se l’estensione si basa su chiamate server aggiuntive per il recupero dei dati da visualizzare, assicurarsi che le API server siano veloci e/o implementino la memorizzazione nella cache lato client, ad esempio con _localStorage_ o _IndexDB_ per set di dimensioni maggiori.
@@ -115,7 +115,7 @@ Prima di revisionare le pagine per correggere i problemi di prestazioni, prender
 
 [Ottimizzare le prestazioni di Office 365](tune-microsoft-365-performance.md)
 
-[Prestazioni nell'esperienza moderna di SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[Prestazioni nell'esperienza moderna di SharePoint](/sharepoint/modern-experience-performance)
 
 [Reti per la distribuzione di contenuti](content-delivery-networks.md)
 

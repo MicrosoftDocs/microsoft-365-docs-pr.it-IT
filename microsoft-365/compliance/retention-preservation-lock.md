@@ -15,16 +15,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Usare la protezione dell'archiviazione con i criteri di conservazione e i criteri delle etichette di conservazione per soddisfare i requisiti normativi e proteggersi dagli amministratori non autorizzati.
-ms.openlocfilehash: 9890c73495bd14ea7264f3314f6313254ef1bf6b
-ms.sourcegitcommit: a0cddd1f888edb940717e434cda2dbe62e5e9475
+ms.openlocfilehash: 72f667b970b4257a3a540fb74a121c620892b56d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "49612988"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922530"
 ---
 # <a name="use-preservation-lock-to-restrict-changes-to-retention-policies-and-retention-label-policies"></a>Usare la protezione dell'archiviazione per limitare le modifiche ai criteri di conservazione e ai criteri per le etichette di conservazione
 
->*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
+>*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 La protezione dell'archiviazione blocca i criteri di conservazione o i criteri per le etichette di conservazione in modo che nessuno, incluso l'amministratore, possa disattivarli, eliminarli o renderli meno restrittivi. Questa configurazione potrebbe essere necessaria per i requisiti normativi e consente di proteggersi da amministratori non autorizzati.
 
@@ -56,13 +56,13 @@ Se è necessario usare la protezione dell'archiviazione, occorre usare PowerShel
 
 Tutti i criteri per la conservazione e con qualsiasi configurazione supportano la protezione dell'archiviazione.
 
-1. [Connettersi a PowerShell in Centro sicurezza e conformità](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+1. [Connettersi a PowerShell in Centro sicurezza e conformità](/powershell/exchange/connect-to-scc-powershell).
 
-2. Trovare il nome del criterio da bloccare eseguendo [Get-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/get-retentioncompliancepolicy). Ad esempio:
+2. Trovare il nome del criterio da bloccare eseguendo [Get-RetentionCompliancePolicy](/powershell/module/exchange/get-retentioncompliancepolicy). Ad esempio:
     
    ![Elenco dei criteri di conservazione in PowerShell](../media/retention-policy-preservation-lock-get-retentioncompliancepolicy.PNG)
 
-3. Per applicare la protezione dell’archiviazione al criterio, eseguire il cmdlet [Set-RetentionCompliancePolicy](https://docs.microsoft.com/powershell/module/exchange/set-retentioncompliancepolicy) con il nome del criterio e il parametro *RestrictiveRetention* impostato su true:
+3. Per applicare la protezione dell’archiviazione al criterio, eseguire il cmdlet [Set-RetentionCompliancePolicy](/powershell/module/exchange/set-retentioncompliancepolicy) con il nome del criterio e il parametro *RestrictiveRetention* impostato su true:
     
     ```powershell
     Set-RetentionCompliancePolicy -Identity "<Name of Policy>" –RestrictiveRetention $true

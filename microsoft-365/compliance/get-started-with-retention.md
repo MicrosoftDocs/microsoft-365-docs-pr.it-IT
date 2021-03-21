@@ -19,16 +19,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Pronti per iniziare a implementare i criteri e le etichette di riservatezza per gestire i dati della tua organizzazione, ma in dubbio su come iniziare? Leggere alcune indicazioni utili per iniziare.
-ms.openlocfilehash: bb73f0871bfc2ad707d31ef6d4d57e18218842a5
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 27f361ba98cdaecb5b7788283c8d4244583ee82c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406516"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922620"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
->*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
+>*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Pronti per iniziare a gestire i dati della tua organizzazione, conservando il contenuto che occorre mantenere ed eliminando il contenuto non necessario? Usare le seguenti indicazioni generali per iniziare:
 
@@ -48,7 +48,7 @@ Pronti per iniziare a gestire i dati della tua organizzazione, conservando il co
 
 I criteri, le etichette di conservazione e i requisiti di licenza per gli utenti in base alle caratteristiche da usare sono supportati da una serie di abbonamenti diversi.
 
-Per visualizzare le opzioni di licenza da assegnare agli utenti per trarre vantaggio dalle funzionalità di conformità di Microsoft 365, vedere [Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD). Per la conservazione, vedere la sezione [Governance delle informazioni](https://docs.microsoft.com/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-governance) e il relativo file PDF o Excel per i requisiti di licenza a livello di funzionalità.
+Per visualizzare le opzioni di licenza da assegnare agli utenti per trarre vantaggio dalle funzionalità di conformità di Microsoft 365, vedere [Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance). Per la conservazione, vedere la sezione [Governance delle informazioni](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#information-governance) e il relativo file PDF o Excel per i requisiti di licenza a livello di funzionalità.
 
 ## <a name="permissions-required-to-create-and-manage-retention-policies-and-retention-labels"></a>Autorizzazioni necessarie per la creazione e gestione dei criteri ed etichette di conservazione
 
@@ -56,9 +56,9 @@ Ai membri del team di conformità che creeranno e gestiranno i criteri e le etic
 
 In alternativa all'utilizzo di questo ruolo predefinito, è possibile creare un nuovo gruppo di ruoli e aggiungere a questo gruppo il ruolo **Gestione conservazione**. Per sola lettura, usare **Gestione conservazione solo visualizzazione**. 
 
-Per altre informazioni su gruppi di ruoli e ruoli, vedere [Autorizzazioni nel Centro sicurezza e conformità](https://docs.microsoft.com/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center#roles-in-the-security--compliance-center).
+Per altre informazioni su gruppi di ruoli e ruoli, vedere [Autorizzazioni nel Centro sicurezza e conformità](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center).
 
-Per istruzioni su come aggiungere utenti a gruppi di ruoli e assegnare i ruoli, vedere [Concedere agli utenti l'accesso al Centro sicurezza e conformità](https://docs.microsoft.com/microsoft-365/security/office-365-security/grant-access-to-the-security-and-compliance-center).
+Per istruzioni su come aggiungere utenti a gruppi di ruoli e assegnare i ruoli, vedere [Concedere agli utenti l'accesso al Centro sicurezza e conformità](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 Queste autorizzazioni sono necessarie solo per creare, configurare e applicare criteri di conservazione ed etichette di conservazione. La persona che configura tali criteri ed etichette non ha bisogno di accedere al contenuto.
 

@@ -20,18 +20,18 @@ search.appverid:
 - MET150
 ms.assetid: 4436582f-211a-45ec-b72e-33647f97d8a3
 description: Questo articolo spiega cosa succede ai dati dell'utente quando l'abbonamento a Microsoft 365 scade o viene disabilitato oppure viene annullato dall'utente.
-ms.openlocfilehash: a9e2e68c0eee119126af93552a50f1859f708c1f
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 7560e715a9b1951915866f96c8df3bd1f884a475
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741358"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921817"
 ---
 # <a name="what-happens-to-my-data-and-access-when-my-microsoft-365-for-business-subscription-ends"></a>Che cosa succede ai dati personali al termine dell'abbonamento a Microsoft 365?
 
 Quando termina l'abbonamento, sia perché scade sia perché si decide di annullarlo, l'accesso ai servizi di Microsoft 365, alle applicazioni e ai dati della società passa attraverso vari stati prima che l'abbonamento venga completamente disattivato o *eliminato*. Se si è consapevoli di questo percorso, si sarà più preparati a riportare l'abbonamento a uno stato attivo prima che sia troppo tardi oppure, se si vuole realmente disattivare Microsoft 365, a eseguire il backup dei dati prima che vengano eliminati definitivamente.
 
-Leggere queste importanti informazioni prima di contattare il [supporto Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/contact-support-for-business-products).
+Leggere queste importanti informazioni prima di contattare il [supporto Microsoft 365](../../admin/contact-support-for-business-products.md).
   
 ## <a name="what-happens-to-data-when-a-subscription-expires"></a>Cosa succede ai dati alla scadenza di un abbonamento?
 
@@ -51,7 +51,7 @@ L'immagine seguente mostra cosa aspettarsi quando scade un abbonamento a pagamen
 *Per la maggior parte delle offerte, nella maggior parte dei paesi e delle aree geografiche.
   
 > [!NOTE]
-> **Che cosa sono i "dati del cliente"?** I dati del cliente, definiti nelle [condizioni dei Microsoft Online Services](https://go.microsoft.com/fwlink/p/?LinkId=613649), indicano tutti i dati, inclusi tutti i file di testo, audio e di immagine forniti a Microsoft dal cliente, o per conto del cliente, mediante l'uso dei servizi di Microsoft 365. Per altre informazioni sulla protezione dei dati del cliente, vedere [Get started with the Microsoft Service Trust Portal](https://docs.microsoft.com/microsoft-365/compliance/get-started-with-service-trust-portal).
+> **Che cosa sono i "dati del cliente"?** I dati del cliente, definiti nelle [condizioni dei Microsoft Online Services](https://go.microsoft.com/fwlink/p/?LinkId=613649), indicano tutti i dati, inclusi tutti i file di testo, audio e di immagine forniti a Microsoft dal cliente, o per conto del cliente, mediante l'uso dei servizi di Microsoft 365. Per altre informazioni sulla protezione dei dati del cliente, vedere [Get started with the Microsoft Service Trust Portal](../../compliance/get-started-with-service-trust-portal.md).
 
 ## <a name="what-happens-if-i-cancel-a-subscription"></a>Cosa succede se si annulla un abbonamento?
 
@@ -210,13 +210,13 @@ Al termine del periodo di valutazione, non è possibile continuare a usare Micro
 
 ::: moniker range="o365-worldwide"
 
-- **Acquistare Microsoft 365.** Trascorso il periodo di valutazione, l'abbonamento entra in un periodo di tolleranza, che concede altri 30 giorni di tempo (per la maggior parte delle versioni di valutazione e nella maggior parte dei paesi e delle aree geografiche) per acquistare Microsoft 365. Per informazioni su come convertire la versione di valutazione in un abbonamento a pagamento, vedere [Acquistare la versione di valutazione di Microsoft 365 per le aziende](../buy-a-subscription-from-your-free-trial.md).
+- **Acquistare Microsoft 365.** Trascorso il periodo di valutazione, l'abbonamento entra in un periodo di tolleranza, che concede altri 30 giorni di tempo (per la maggior parte delle versioni di valutazione e nella maggior parte dei paesi e delle aree geografiche) per acquistare Microsoft 365. Per informazioni su come convertire la versione di valutazione in un abbonamento a pagamento, vedere [Acquistare la versione di valutazione di Microsoft 365 per le aziende](../try-or-buy-microsoft-365.md).
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-- **Acquistare Microsoft 365.** Trascorso il periodo di valutazione, l'abbonamento entra in un periodo di tolleranza, che concede altri 30 giorni di tempo (per la maggior parte delle versioni di valutazione e nella maggior parte dei paesi e delle aree geografiche) per acquistare Microsoft 365. Per informazioni su come convertire la versione di valutazione in un abbonamento a pagamento, vedere [Acquistare la versione di valutazione di Microsoft 365 per le aziende](../buy-a-subscription-from-your-free-trial.md).
+- **Acquistare Microsoft 365.** Trascorso il periodo di valutazione, l'abbonamento entra in un periodo di tolleranza, che concede altri 30 giorni di tempo (per la maggior parte delle versioni di valutazione e nella maggior parte dei paesi e delle aree geografiche) per acquistare Microsoft 365. Per informazioni su come convertire la versione di valutazione in un abbonamento a pagamento, vedere [Acquistare la versione di valutazione di Microsoft 365 per le aziende](../try-or-buy-microsoft-365.md).
 
 ::: moniker-end
 
@@ -235,7 +235,6 @@ Al termine del periodo di valutazione, non è possibile continuare a usare Micro
 
 ## <a name="related-content"></a>Contenuti correlati 
 
-[Annullare l'abbonamento](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/cancel-your-subscription) (articolo)\
-[Rinnovare Microsoft 365 per le aziende](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/renew-your-subscription) (articolo)\
-[Riattivare l'abbonamento](https://docs.microsoft.com/microsoft-365/commerce/subscriptions/reactivate-your-subscription) (articolo)
-
+[Annullare l'abbonamento](./cancel-your-subscription.md) (articolo)\
+[Rinnovare Microsoft 365 per le aziende](./renew-your-subscription.md) (articolo)\
+[Riattivare l'abbonamento](./reactivate-your-subscription.md) (articolo)

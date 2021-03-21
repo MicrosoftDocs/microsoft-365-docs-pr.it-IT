@@ -15,12 +15,12 @@ ms.collection:
 - m365solution-mip
 - m365initiative-compliance
 description: Informazioni su come configurare customer key per tutti i dati all'interno del tenant di Microsoft 365.
-ms.openlocfilehash: 2fed4730e79f6e2ace827eab338bf9da8fe55260
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: f50986b4e72808d4a1cd4dc8ee0182eb9c0a2455
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838241"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50922690"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>Panoramica del codice "Customer Key" per Microsoft 365 a livello di tenant (anteprima pubblica)
 
@@ -68,9 +68,9 @@ Non esiste un limite pratico al numero di sottoscrizioni di Azure che è possibi
 
 La perdita temporanea o permanente delle chiavi di crittografia radice può essere dannosa o addirittura catastrofica per il funzionamento del servizio e può causare la perdita di dati. Per questo motivo, le risorse utilizzate con Customer Key richiedono una protezione avanzata. Tutte le risorse di Azure usate con Customer Key offrono meccanismi di protezione oltre la configurazione predefinita. Le sottoscrizioni di Azure possono essere contrassegnate o registrate in modo da impedire l'annullamento immediato e irrevocabile. Questa operazione viene definita registrazione per un periodo di conservazione obbligatorio. I passaggi necessari per registrare le sottoscrizioni di Azure per un periodo di conservazione obbligatorio richiedono la collaborazione con Microsoft. Questo processo può richiedere fino a cinque giorni lavorativi. In precedenza, a volte questo è stato definito "Non annullare".
   
-Prima di contattare il team di Microsoft 365, è necessario eseguire la procedura seguente per ogni sottoscrizione di Azure che si usa con customer key. Prima di iniziare, assicurati di avere installato il modulo Az di [Azure PowerShell.](https://docs.microsoft.com/powershell/azure/new-azureps-module-az)
+Prima di contattare il team di Microsoft 365, è necessario eseguire la procedura seguente per ogni sottoscrizione di Azure che si usa con customer key. Prima di iniziare, assicurati di avere installato il modulo Az di [Azure PowerShell.](/powershell/azure/new-azureps-module-az)
 
-1. Accedi con Azure PowerShell. Per istruzioni, vedere [Sign in with Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
+1. Accedi con Azure PowerShell. Per istruzioni, vedere [Sign in with Azure PowerShell](/powershell/azure/authenticate-azureps).
 
 2. Eseguire il cmdlet Register-AzProviderFeature per registrare le sottoscrizioni per l'utilizzo di un periodo di conservazione obbligatorio. Eseguire questa azione per ogni sottoscrizione.
 
@@ -104,7 +104,7 @@ Prima di contattare il team di Microsoft 365, è necessario eseguire la procedur
 
 ### <a name="create-a-premium-azure-key-vault-in-each-subscription"></a>Creare un azure key vault premium in ogni sottoscrizione
 
-I passaggi per creare un insieme di credenziali delle chiavi sono documentati in Introduzione a [Azure Key Vault,](https://azure.microsoft.com/documentation/articles/key-vault-get-started/)che consente di installare e avviare Azure PowerShell, connettersi alla sottoscrizione di Azure, creare un gruppo di risorse e creare un insieme di credenziali delle chiavi in tale gruppo di risorse.
+I passaggi per creare un insieme di credenziali delle chiavi sono documentati in Introduzione a [Azure Key Vault,](/azure/key-vault/general/overview)che consente di installare e avviare Azure PowerShell, connettersi alla sottoscrizione di Azure, creare un gruppo di risorse e creare un insieme di credenziali delle chiavi in tale gruppo di risorse.
   
 Quando si crea un insieme di credenziali delle chiavi, è necessario scegliere una SKU: Standard o Premium. Lo SKU standard consente di proteggere le chiavi dell'insieme di credenziali delle chiavi di Azure con il software - non esiste alcuna protezione delle chiavi HSM (Hardware Security Module) - e lo SKU Premium consente l'uso di HMS per la protezione delle chiavi dell'insieme di credenziali delle chiavi. Customer Key accetta gli insiemi di credenziali delle chiavi che usano una delle due SKU, anche se Microsoft consiglia vivamente di usare solo la SKU Premium. Il costo delle operazioni con chiavi di entrambi i tipi è lo stesso, quindi l'unica differenza di costo è il costo mensile per ogni chiave protetta da HSM. Per [informazioni dettagliate, vedere Key Vault pricing.](https://azure.microsoft.com/pricing/details/key-vault/)
   
@@ -113,7 +113,7 @@ Quando si crea un insieme di credenziali delle chiavi, è necessario scegliere u
 
 Usa un prefisso comune per gli insiemi di credenziali delle chiavi e includi un'abbreviazione dell'uso e dell'ambito dell'insieme di credenziali delle chiavi e delle chiavi. Ad esempio, per il servizio Contoso in cui si trovano gli insiemi di credenziali in Nord America, una possibile coppia di nomi è Contoso-O365-NA-VaultA1 e Contoso-O365-NA-VaultA2. I nomi degli insiemi di credenziali sono stringhe univoche a livello globale in Azure, quindi potrebbe essere necessario provare le varianti dei nomi desiderati nel caso in cui i nomi desiderati siano già stati rivendicati da altri clienti di Azure. Una volta configurati, i nomi dell'insieme di credenziali non possono essere modificati, quindi la procedura consigliata consiste nell'avere un piano scritto per la configurazione e utilizzare una seconda persona per verificare che il piano venga eseguito correttamente.
 
-Se possibile, creare gli insiemi di credenziali in aree non abbinate. Le aree di Azure abbinate offrono disponibilità elevata tra i domini di errore del servizio. Pertanto, le coppie regionali possono essere ritenute come l'area di backup reciproca. Ciò significa che una risorsa di Azure posizionata in un'area ottiene automaticamente la tolleranza di errore attraverso l'area associata. Per questo motivo, la scelta delle aree per due insiemi di credenziali utilizzati in un criterio di crittografia dei dati in cui le aree sono abbinate significa che sono in uso solo un totale di due aree di disponibilità. La maggior parte delle aree geografiche ha solo due aree, quindi non è ancora possibile selezionare aree non abbinate. Se possibile, scegliere due aree non associate per i due insiemi di credenziali utilizzati con un criterio di crittografia dei dati. Ciò trae vantaggio da un totale di quattro aree di disponibilità. Per altre informazioni, vedere Continuità aziendale e ripristino di emergenza [(BCDR):](https://docs.microsoft.com/azure/best-practices-availability-paired-regions) Azure Paired Regions per un elenco corrente di coppie regionali.
+Se possibile, creare gli insiemi di credenziali in aree non abbinate. Le aree di Azure abbinate offrono disponibilità elevata tra i domini di errore del servizio. Pertanto, le coppie regionali possono essere ritenute come l'area di backup reciproca. Ciò significa che una risorsa di Azure posizionata in un'area ottiene automaticamente la tolleranza di errore attraverso l'area associata. Per questo motivo, la scelta delle aree per due insiemi di credenziali utilizzati in un criterio di crittografia dei dati in cui le aree sono abbinate significa che sono in uso solo un totale di due aree di disponibilità. La maggior parte delle aree geografiche ha solo due aree, quindi non è ancora possibile selezionare aree non abbinate. Se possibile, scegliere due aree non associate per i due insiemi di credenziali utilizzati con un criterio di crittografia dei dati. Ciò trae vantaggio da un totale di quattro aree di disponibilità. Per altre informazioni, vedere Continuità aziendale e ripristino di emergenza [(BCDR):](/azure/best-practices-availability-paired-regions) Azure Paired Regions per un elenco corrente di coppie regionali.
 
 ### <a name="assign-permissions-to-each-key-vault"></a>Assegnare autorizzazioni a ogni insieme di credenziali delle chiavi
 
@@ -124,7 +124,7 @@ Per ogni insieme di credenziali delle chiavi, dovrai definire tre set separati d
   > [!IMPORTANT]
   > Il set di autorizzazioni assegnate agli amministratori dell'insieme di credenziali delle chiavi non include l'autorizzazione per l'eliminazione delle chiavi. Si tratta di una pratica intenzionale e importante. L'eliminazione delle chiavi di crittografia in genere non viene eseguita, poiché in questo modo vengono eliminati definitivamente i dati. Come procedura consigliata, non concedere questa autorizzazione agli amministratori dell'insieme di credenziali delle chiavi per impostazione predefinita. Al contrario, riservare questo valore ai collaboratori dell'insieme di credenziali chiave e assegnarlo a un amministratore solo a breve termine, una volta compresa una chiara comprensione delle conseguenze.
   
-  Per assegnare queste autorizzazioni a un utente dell'organizzazione, accedere alla sottoscrizione di Azure con Azure PowerShell. Per istruzioni, vedere [Sign in with Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
+  Per assegnare queste autorizzazioni a un utente dell'organizzazione, accedere alla sottoscrizione di Azure con Azure PowerShell. Per istruzioni, vedere [Sign in with Azure PowerShell](/powershell/azure/authenticate-azureps).
 
    Eseguire il cmdlet Set-AzKeyVaultAccessPolicy per assegnare le autorizzazioni necessarie.
 
@@ -138,7 +138,7 @@ Per ogni insieme di credenziali delle chiavi, dovrai definire tre set separati d
    Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -UserPrincipalName alice@contoso.com -PermissionsToKeys create,import,list,get,backup,restore
    ```
 
-- **Collaboratori dell'insieme di** credenziali delle chiavi che possono modificare le autorizzazioni nell'insieme di credenziali delle chiavi di Azure stesso. È necessario modificare queste autorizzazioni quando i dipendenti lasciano o si uniscono al team o nella rara situazione in cui gli amministratori dell'insieme di credenziali delle chiavi hanno legittimamente bisogno dell'autorizzazione per eliminare o ripristinare una chiave. A questo set di collaboratori dell'insieme di credenziali chiave deve essere concesso il ruolo Collaboratore nell'insieme di credenziali delle chiavi. Puoi assegnare questo ruolo usando Azure Resource Manager. Per la procedura dettagliata, vedere [Use Role-Based Access Control](https://docs.microsoft.com/azure/active-directory/role-based-access-control-configure) to manage access to your Azure subscription resources. L'amministratore che crea una sottoscrizione ha questo accesso per impostazione predefinita e la possibilità di assegnare altri amministratori al ruolo Collaboratore.
+- **Collaboratori dell'insieme di** credenziali delle chiavi che possono modificare le autorizzazioni nell'insieme di credenziali delle chiavi di Azure stesso. È necessario modificare queste autorizzazioni quando i dipendenti lasciano o si uniscono al team o nella rara situazione in cui gli amministratori dell'insieme di credenziali delle chiavi hanno legittimamente bisogno dell'autorizzazione per eliminare o ripristinare una chiave. A questo set di collaboratori dell'insieme di credenziali chiave deve essere concesso il ruolo Collaboratore nell'insieme di credenziali delle chiavi. Puoi assegnare questo ruolo usando Azure Resource Manager. Per la procedura dettagliata, vedere [Use Role-Based Access Control](/azure/active-directory/role-based-access-control-configure) to manage access to your Azure subscription resources. L'amministratore che crea una sottoscrizione ha questo accesso per impostazione predefinita e la possibilità di assegnare altri amministratori al ruolo Collaboratore.
 
 - Servizio di crittografia dei dati in pausa di **Microsoft 365** che esegue il lavoro del codice "Customer Key" a livello di tenant. Per concedere l'autorizzazione a Microsoft 365, eseguire il cmdlet **Set-AzKeyVaultAccessPolicy** utilizzando la sintassi seguente:
 
@@ -162,9 +162,9 @@ Quando è possibile ripristinare rapidamente le chiavi, è meno probabile che si
   
 Per abilitare l'eliminazione soft nei vault delle chiavi, completare la procedura seguente:
   
-1. Accedi alla sottoscrizione di Azure con Windows PowerShell. Per istruzioni, vedere [Sign in with Azure PowerShell](https://docs.microsoft.com/powershell/azure/authenticate-azureps).
+1. Accedi alla sottoscrizione di Azure con Windows PowerShell. Per istruzioni, vedere [Sign in with Azure PowerShell](/powershell/azure/authenticate-azureps).
 
-2. Eseguire il cmdlet [Get-AzKeyVault.](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvault) In questo esempio, *il nome dell'insieme di* credenziali è il nome dell'insieme di credenziali delle chiavi per cui si sta abilitando l'eliminazione recidiva:
+2. Eseguire il cmdlet [Get-AzKeyVault.](/powershell/module/az.keyvault/get-azkeyvault) In questo esempio, *il nome dell'insieme di* credenziali è il nome dell'insieme di credenziali delle chiavi per cui si sta abilitando l'eliminazione recidiva:
 
    ```powershell
    $v = Get-AzKeyVault -VaultName <vault name>
@@ -183,7 +183,7 @@ Per abilitare l'eliminazione soft nei vault delle chiavi, completare la procedur
 
 Esistono due modi per aggiungere chiavi a un insieme di credenziali delle chiavi di Azure; è possibile creare una chiave direttamente in Key Vault oppure importare una chiave. La creazione di una chiave direttamente in Key Vault è il metodo meno complicato, mentre l'importazione di una chiave offre un controllo totale sulla modalità di generazione della chiave. Usa le chiavi RSA. Azure Key Vault non supporta il ritorno a capo e l'annullamento del wrapping con chiavi di curva ellittiche.
   
-Per creare una chiave direttamente nell'insieme di credenziali delle chiavi, eseguire il cmdlet [Add-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/add-azkeyvaultkey) come segue:
+Per creare una chiave direttamente nell'insieme di credenziali delle chiavi, eseguire il cmdlet [Add-AzKeyVaultKey](/powershell/module/az.keyvault/add-azkeyvaultkey) come segue:
   
 ```powershell
 Add-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Destination <HSM|Software> -KeyOps wrapKey,unwrapKey
@@ -222,7 +222,7 @@ Se la proprietà _Recovery Level_ restituisce un valore diverso da **Recoverable
 
 Subito dopo la creazione o qualsiasi modifica apportata a una chiave, eseguire un backup e archiviare copie del backup, sia online che offline. Non connettere copie offline ad alcuna rete. Archiviarli invece in una struttura di archiviazione fisica sicura o commerciale. Almeno una copia del backup deve essere archiviata in un percorso accessibile in caso di emergenza. I BLOB di backup sono l'unico mezzo per ripristinare il materiale delle chiavi nel caso in cui una chiave dell'insieme di credenziali delle chiavi sia definitivamente distrutta o altrimenti resa inoperabile. Le chiavi esterne all'insieme di credenziali delle chiavi di Azure e che sono state importate in Azure Key Vault non sono idonee come backup perché i metadati necessari per l'uso della chiave da parte del cliente non esistono con la chiave esterna. Solo un backup eseguito da Azure Key Vault può essere usato per le operazioni di ripristino con Customer Key. Pertanto, è essenziale eseguire un backup di Azure Key Vault dopo aver caricato o creato una chiave.
   
-Per creare un backup di una chiave di Azure Key Vault, eseguire il cmdlet [Backup-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/backup-azkeyvaultkey) come segue:
+Per creare un backup di una chiave di Azure Key Vault, eseguire il cmdlet [Backup-AzKeyVaultKey](/powershell/module/az.keyvault/backup-azkeyvaultkey) come segue:
 
 ```powershell
 Backup-AzKeyVaultKey -VaultName <vault name> -Name <key name>
@@ -245,7 +245,7 @@ L'esecuzione della convalida prima di utilizzare le chiavi in una protezione ese
   
 Per verificare che le chiavi siano abilitate per le operazioni get, wrapKey e unwrapKey:
   
-Eseguire il cmdlet [Get-AzKeyVault](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvault) come segue:
+Eseguire il cmdlet [Get-AzKeyVault](/powershell/module/az.keyvault/get-azkeyvault) come segue:
   
 ```powershell
 Get-AzKeyVault -VaultName <vault name>
@@ -265,7 +265,7 @@ Esempio: per il servizio Di crittografia dati in pausa di Microsoft 365, sostitu
   Set-AzKeyVaultAccessPolicy -VaultName Contoso-O365EX-NA-VaultA1 -PermissionsToKeys wrapKey,unwrapKey,get -ServicePrincipalName c066d759-24ae-40e7-a56f-027002b5d3e4
   ```
 
-Per verificare che non sia impostata una data di scadenza per le chiavi, eseguire il cmdlet [Get-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/get-azkeyvault) come indicato di seguito:
+Per verificare che non sia impostata una data di scadenza per le chiavi, eseguire il cmdlet [Get-AzKeyVaultKey](/powershell/module/az.keyvault/get-azkeyvault) come indicato di seguito:
   
 ```powershell
 Get-AzKeyVaultKey -VaultName <vault name>
@@ -273,7 +273,7 @@ Get-AzKeyVaultKey -VaultName <vault name>
 
 Una chiave scaduta non può essere utilizzata da Customer Key e le operazioni tentate con una chiave scaduta avranno esito negativo e potrebbero causare un'interruzione del servizio. È consigliabile che le chiavi utilizzate con customer key non abbia una data di scadenza. Una data di scadenza, una volta impostata, non può essere rimossa, ma può essere modificata in una data diversa. Se è necessario utilizzare una chiave con una data di scadenza impostata, modificare il valore di scadenza in 31/12/9999. Le chiavi con una data di scadenza impostata su una data diversa dal 31/12/9999 non supereranno la convalida di Microsoft 365.
   
-Per modificare una data di scadenza impostata su un valore diverso dal 31/12/9999, eseguire il cmdlet [Update-AzKeyVaultKey](https://docs.microsoft.com/powershell/module/az.keyvault/update-azkeyvaultkey) come segue:
+Per modificare una data di scadenza impostata su un valore diverso dal 31/12/9999, eseguire il cmdlet [Update-AzKeyVaultKey](/powershell/module/az.keyvault/update-azkeyvaultkey) come segue:
   
 ```powershell
 Update-AzKeyVaultKey -VaultName <vault name> -Name <key name> -Expires (Get-Date -Date "12/31/9999")
@@ -291,7 +291,7 @@ In Azure PowerShell:
 
 ## <a name="set-up-the-customer-key-encryption-policy-for-your-tenant"></a>Configurare il criterio di crittografia customer key per il tenant
 
-Per poter eseguire questi cmdlet, è necessario disporre delle autorizzazioni appropriate. Sebbene in questo articolo siano elencati tutti i parametri per i cmdlet, è possibile che non si abbia accesso ad alcuni parametri se non sono inclusi nelle autorizzazioni assegnate. Per individuare le autorizzazioni necessarie per eseguire cmdlet o parametri nell'organizzazione, vedere [Trovare le autorizzazioni necessarie per eseguire i cmdlet di Exchange](https://docs.microsoft.com/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions).
+Per poter eseguire questi cmdlet, è necessario disporre delle autorizzazioni appropriate. Sebbene in questo articolo siano elencati tutti i parametri per i cmdlet, è possibile che non si abbia accesso ad alcuni parametri se non sono inclusi nelle autorizzazioni assegnate. Per individuare le autorizzazioni necessarie per eseguire cmdlet o parametri nell'organizzazione, vedere [Trovare le autorizzazioni necessarie per eseguire i cmdlet di Exchange](/powershell/exchange/exchange-server/find-exchange-cmdlet-permissions).
 
 ### <a name="create-policy"></a>Creare criteri
 

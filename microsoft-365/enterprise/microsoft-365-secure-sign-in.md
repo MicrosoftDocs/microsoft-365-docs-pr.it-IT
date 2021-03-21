@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-coredeploy
 ms.custom: ''
 description: Richiedere agli utenti di accedere in modo sicuro con l'autenticazione a più fattori (MFA) e altre funzionalità.
-ms.openlocfilehash: 8426d902ff8be8541b5d770af6d34cdf71868047
-ms.sourcegitcommit: c1dd5be42fe0c5dcc7c05817c941edd9076febf8
+ms.openlocfilehash: c470a8bb1e67925ced929225796ac30191db247e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "49558527"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50923137"
 ---
 # <a name="secure-user-sign-ins-to-your-microsoft-365-tenant"></a>Autenticazioni sicure degli utenti nel tenant di Microsoft 365
 
@@ -37,43 +37,43 @@ Per aumentare la sicurezza degli accessi degli utenti:
 
 Windows Hello for Business in Windows 10 Enterprise sostituisce le password con l'autenticazione complessa a due fattori durante l'accesso a un dispositivo Windows. I due fattori sono un nuovo tipo di credenziale utente che è associato a un dispositivo e a una biometria o a un PIN.
 
-Per altre informazioni, vedere [Panoramica di Windows Hello for Business](https://docs.microsoft.com/windows/security/identity-protection/hello-for-business/hello-overview).
+Per altre informazioni, vedere [Panoramica di Windows Hello for Business](/windows/security/identity-protection/hello-for-business/hello-overview).
 
 
 ## <a name="azure-ad-password-protection"></a>Protezione delle password di Azure AD
 
 La protezione delle password di Azure AD rileva e blocca le password deboli note e le loro varianti, inoltre può bloccare altri termini vulnerabili specifici dell’organizzazione. Gli elenchi predefiniti di password escluse globalmente sono applicate automaticamente a tutti gli utenti dei tenant di Azure AD. È possibile definire altre voci in un elenco di password escluse personalizzato. Quando gli utenti modificano o reimpostano le loro password, gli elenchi di password escluse sono controllati per applicare l'uso di password sicure.
 
-Per altre informazioni, vedere [Configurare la protezione delle password di protezione di Azure AD](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad).
+Per altre informazioni, vedere [Configurare la protezione delle password di protezione di Azure AD](/azure/active-directory/authentication/concept-password-ban-bad).
 
 ## <a name="mfa"></a>MFA
 
 La MFA richiede che gli accessi utente siano soggetti a un'ulteriore verifica oltre alla password dell'account utente. Anche se un utente malintenzionato determina una password dell'account utente, deve anche essere in grado di rispondere a un'ulteriore verifica, ad esempio un SMS inviato a uno smartphone prima che venga concesso l'accesso.
 
-![L'inserimento della password corretta e una verifica aggiuntiva consentono di eseguire l’accesso correttamente.](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
+![L'inserimento della password corretta e un'ulteriore verifica permettono di accedere](../media/empower-people-to-work-remotely/remote-workers-mfa.png)
 
-Il primo passo per usare l'autenticazione MFA è di ***richiederla per tutti gli account amministratore** _, noti anche come account con privilegi.
+Il primo passo per usare l'autenticazione MFA è di ***richiederla per tutti gli account amministratore***, noti anche come account privilegiati.
 
-Oltre a questo primo passaggio, Microsoft consiglia l'autenticazione a più fattori per tutti gli utenti.
+Oltre a questo primo passaggio, Microsoft raccomanda l'autenticazione a più fattori per tutti gli utenti.
 
 Sono disponibili tre modi per richiedere agli amministratori o agli utenti di utilizzare la MFA in base al piano Microsoft 365.
 
 | Piano | Consiglio |
 |---------|---------|
-|Tutti i piani di Microsoft 365 (senza licenze di Azure AD Premium P1 o P2)     |[Abilitare le impostazioni predefinite di sicurezza in Azure AD](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Le impostazioni predefinite di sicurezza in Azure AD includono la MFA per utenti e amministratori.   |
-|Microsoft 365 E3 (include le licenze di Azure AD Premium P1)     | Usare i [criteri comuni di accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/concept-conditional-access-policy-common) per configurare i criteri seguenti: <br>- [Richiedere la MFA per amministratori](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Richiedere la MFA per tutti gli utenti](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Bloccare l'autenticazione legacy](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
+|Tutti i piani di Microsoft 365 (senza licenze di Azure AD Premium P1 o P2)     |[Abilitare le impostazioni predefinite di sicurezza in Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Le impostazioni predefinite di sicurezza in Azure AD includono la MFA per utenti e amministratori.   |
+|Microsoft 365 E3 (include le licenze di Azure AD Premium P1)     | Usare i [criteri comuni di accesso condizionale](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) per configurare i criteri seguenti: <br>- [Richiedere la MFA per amministratori](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br>- [Richiedere la MFA per tutti gli utenti](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br> - [Bloccare l'autenticazione legacy](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)       |
 |Microsoft 365 E5 (include le licenze di Azure AD Premium P2)     | Sfruttando Azure AD Identity Protection, iniziare a implementare il [set raccomandato di accesso condizionale e criteri correlati](../security/office-365-security/identity-access-policies.md) di Microsoft creando questi due criteri:<br> - [Richiedere la MFA quando il rischio di accesso è considerato *medio* o *elevato*](../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br>- [Gli utenti a rischio elevato devono modificare la password](../security/office-365-security/identity-access-policies.md#high-risk-users-must-change-password)       |
 | | |
 
 ### <a name="security-defaults"></a>Impostazioni predefinite per la sicurezza
 
-Le impostazioni predefinite di sicurezza sono una nuova funzionalità per gli abbonamenti a pagamento o di valutazione di Microsoft 365 e Office 365 creati dopo il 21 ottobre 2019. Questi abbonamenti hanno impostazioni predefinite di sicurezza attivate, che _*_richiedono a tutti gli utenti di utilizzare la MFA con l'app Microsoft Authenticator_*_.
+Le impostazioni predefinite di sicurezza sono una nuova funzionalità per gli abbonamenti a pagamento o di valutazione di Microsoft 365 e Office 365 creati dopo il 21 ottobre 2019. Questi abbonamenti hanno impostazioni predefinite di sicurezza attivate, che ***richiedono a tutti gli utenti di utilizzare la MFA con l'app Microsoft Authenticator***.
  
-Per registrarsi per la MFA con l'app Microsoft Authenticator dai propri smartphone, gli utenti hanno a disposizione 14 giorni dalla prima volta che accedono dopo aver abilitato le impostazioni predefinite di sicurezza. Trascorsi 14 giorni, l'utente non sarà in grado di accedere fino al completamento della registrazione della MFA.
+Gli utenti hanno 14 giorni per registrarsi per la MFA con l'app Microsoft Authenticator dai propri smartphone, periodo che inizia dalla prima volta che accedono dopo aver abilitato le impostazioni predefinite di sicurezza. Trascorsi 14 giorni, l'utente non sarà in grado di accedere fino al completamento della registrazione della MFA.
 
 Le impostazioni di sicurezza predefinite garantiscono che tutte le organizzazioni dispongano di un livello base di sicurezza per l'accesso degli utenti abilitato per impostazione predefinita. È possibile disabilitare le impostazioni predefinite di sicurezza a favore della MFA con criteri di accesso condizionale o per singoli account.
 
-Per altre informazioni, vedere questa [panoramica delle impostazioni predefinite di sicurezza](https://docs.microsoft.com/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
+Per altre informazioni, vedere questa [panoramica delle impostazioni predefinite di sicurezza](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults).
 
 ### <a name="conditional-access-policies"></a>Criteri di accesso condizionale
 
@@ -87,7 +87,7 @@ Questo criterio consente di richiedere l'autenticazione a più fattori in base a
 
 L'accesso condizionale richiede licenze di Azure AD Premium P1, che sono incluse con Microsoft 365 E3 ed E5.
 
-Per altre informazioni, vedere la [panoramica dell'accesso condizionale](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
+Per altre informazioni, vedere la [panoramica dell'accesso condizionale](/azure/active-directory/conditional-access/overview).
 
 ### <a name="using-these-methods-together"></a>Usare questi metodi insieme
 
@@ -102,7 +102,7 @@ Questa tabella mostra i risultati dell'abilitazione della MFA con impostazioni p
 
 | Metodo | Abilitato | Disattivato | Metodo di autenticazione aggiuntivo |
 |:-------|:-----|:-------|:-------|
-| _ *Impostazioni predefinite per la sicurezza**  | Non è possibile utilizzare i criteri di accesso condizionale | È possibile utilizzare i criteri di accesso condizionale | App Microsoft Authenticator |
+| **Impostazioni predefinite per la sicurezza**  | Non è possibile utilizzare i criteri di accesso condizionale | È possibile utilizzare i criteri di accesso condizionale | App Microsoft Authenticator |
 | **Criteri di accesso condizionale** | Se alcuni sono abilitati, non è possibile abilitare le impostazioni predefinite per la sicurezza | Se sono tutti disabilitati, è possibile abilitare le impostazioni predefinite per la sicurezza  | Specificato dall'utente durante la registrazione della MFA  |
 ||||
 
@@ -137,16 +137,16 @@ Con Azure AD Identity Protection, è possibile:
 | Esaminare gli incidenti sospetti e risolverli con azioni amministrative | È possibile esaminare gli eventi di rischio usando le informazioni sugli incidenti di sicurezza. I flussi di lavoro di base sono disponibili per tenere traccia delle analisi e per attuare azioni correttive, come le reimpostazioni delle password. |
 |||
 
-Vedere [altre informazioni su Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection).
+Vedere [altre informazioni su Azure AD Identity Protection](/azure/active-directory/active-directory-identityprotection).
 
-Vedere i [passaggi per abilitare Azure AD Identity Protection](https://docs.microsoft.com/azure/active-directory/active-directory-identityprotection-enable).
+Vedere i [passaggi per abilitare Azure AD Identity Protection](/azure/active-directory/active-directory-identityprotection-enable).
 
 ## <a name="admin-technical-resources-for-mfa-and-secure-sign-ins"></a>Risorse tecniche per amministratori per MFA e autenticazioni sicure
 
 - [MFA per Microsoft 365](../admin/security-and-compliance/multi-factor-authentication-microsoft-365.md)
 - [Roadmap delle identità per Microsoft 365](identity-roadmap-microsoft-365.md)
 - [Video di formazione su Azure Academy Azure AD](https://www.youtube.com/watch?v=pN8o0owHfI0&list=PL-V4YVm6AmwUFpC3rXr2i2piRQ708q_ia)
-- [Configurare i criteri di registrazione dell'autenticazione a più fattori di Azure AD](https://docs.microsoft.com/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
+- [Configurare i criteri di registrazione dell'autenticazione a più fattori di Azure AD](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy)
 - [Configurazioni di identità e accesso dei dispositivi](../security/office-365-security/microsoft-365-policies-configurations.md)
 
 ## <a name="next-step"></a>Passaggio successivo

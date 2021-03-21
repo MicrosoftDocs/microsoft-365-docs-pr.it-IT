@@ -14,14 +14,14 @@ ms.collection:
 - m365initiative-viva-topics
 ms.service: ''
 localization_priority: Normal
-ms.openlocfilehash: ac8e4b8cdcdfd4d2de0c48a22500338c7a8480a8
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 34c6551dd3a40852368b40d960bf921c52f46372
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454172"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921517"
 ---
-# <a name="edit-an-existing-topic"></a>Modificare un argomento esistente 
+# <a name="edit-an-existing-topic"></a>Modifica un modello esistente 
 
 </br>
 
@@ -29,29 +29,29 @@ ms.locfileid: "50454172"
 
 </br>
 
-In Viva Topics puoi modificare un argomento esistente. Potrebbe essere necessario eseguire questa operazione se si desidera correggere o aggiungere ulteriori informazioni a una pagina dell'argomento esistente. 
+In Viva Topics è possibile modificare un argomento esistente. Potrebbe essere necessario eseguire questa operazione se si desidera correggere o aggiungere ulteriori informazioni a una pagina di argomento esistente. 
 
 > [!Note] 
-> Anche se le informazioni contenute in un argomento raccolto dall'intelligenza artificiale sono limitate per motivi di [sicurezza,](topic-experiences-security-trimming.md)tenere presente che la descrizione dell'argomento e le informazioni sulle persone che aggiungi manualmente durante la modifica di un argomento esistente sono visibili a tutti gli utenti che dispongono delle autorizzazioni per visualizzare gli argomenti. 
+> Mentre le informazioni in un argomento raccolto dall'IA sono limitate per motivi di [sicurezza,](topic-experiences-security-trimming.md)tenere presente che la descrizione dell'argomento e le informazioni sulle persone che vengono aggiunti manualmente durante la modifica di un argomento esistente sono visibili a tutti gli utenti che dispongono delle autorizzazioni per visualizzare gli argomenti. 
 
 ## <a name="requirements"></a>Requisiti
 
 Per modificare un argomento esistente, è necessario:
 - Avere una licenza Viva Topics.
-- Disporre delle autorizzazioni [**per gli utenti che possono creare o modificare argomenti.**](https://docs.microsoft.com/microsoft-365/knowledge/topic-experiences-user-permissions) Gli amministratori della knowledge base possono concedere agli utenti questa autorizzazione nelle impostazioni delle autorizzazioni dell'argomento Viva Topics. 
+- Disporre delle autorizzazioni [**per gli utenti che possono creare o modificare argomenti.**](./topic-experiences-user-permissions.md) Gli amministratori della knowledge base possono concedere agli utenti questa autorizzazione nelle impostazioni delle autorizzazioni dell'argomento Viva Topics. 
 
 > [!Note] 
-> Gli utenti che dispongono dell'autorizzazione per gestire gli argomenti nel Centro argomenti (responsabili della knowledge base) dispongono già delle autorizzazioni per creare e modificare gli argomenti.
+> Gli utenti che dispongono dell'autorizzazione per gestire gli argomenti nel Centro argomenti (responsabili della conoscenza) dispongono già delle autorizzazioni per creare e modificare gli argomenti.
 
-## <a name="how-to-edit-a-topic-page"></a>Come modificare una pagina dell'argomento
+## <a name="how-to-edit-a-topic-page"></a>Come modificare una pagina di argomento
 
-Gli utenti  che dispongono dell'autorizzazione Chi può creare o modificare argomenti possono modificare un <b></b> argomento aprendo la pagina dell'argomento da un'evidenziazione dell'argomento e quindi selezionando il pulsante Modifica in alto a destra nella pagina dell'argomento. La pagina dell'argomento può essere aperta anche dalla home page del Centro argomenti, dove è possibile trovare tutti gli argomenti a cui si dispone di una connessione.
+Gli utenti  che dispongono dell'autorizzazione Chi può creare o modificare argomenti possono modificare un <b></b> argomento aprendo la pagina dell'argomento da un'evidenziazione dell'argomento e quindi selezionando il pulsante Modifica in alto a destra nella pagina dell'argomento. La pagina dell'argomento può essere aperta anche dalla home page del Centro argomenti in cui è possibile trovare tutti gli argomenti a cui si dispone di una connessione.
 
    ![Pulsante Modifica](../media/knowledge-management/edit-button.png) </br> 
 
 I knowledge manager possono inoltre modificare gli argomenti direttamente dalla pagina Gestisci argomenti selezionando l'argomento e quindi selezionando <b>Modifica</b> sulla barra degli strumenti.
 
-   ![Modificare l'argomento in Gestisci argomenti](../media/knowledge-management/manage-topics-edit.png) </br> 
+   ![Modifica argomento in Gestisci argomenti](../media/knowledge-management/manage-topics-edit.png) </br> 
 
 ### <a name="to-edit-a-topic-page"></a>Per modificare una pagina dell'argomento
 
@@ -60,18 +60,18 @@ I knowledge manager possono inoltre modificare gli argomenti direttamente dalla 
    ![Controllo di modifica](../media/knowledge-management/topic-page-edit.png) </br>  
 
 
-2. Nella sezione <b>Nomi alternativi</b> digitare eventuali altri nomi a cui potrebbe essere fatto riferimento nell'argomento. 
+2. Nella sezione <b>Nomi alternativi</b> digitare eventuali altri nomi a cui potrebbe fare riferimento l'argomento. 
 
     ![Nomi alternativi](../media/knowledge-management/alt-names.png) </br> 
-3. Nella sezione <b>Descrizione</b> digitare un paio di frasi che descrivono l'argomento. In caso contrario, aggiornarla se necessario.
+3. Nella sezione <b>Descrizione</b> digitare un paio di frasi che descrivono l'argomento. Oppure, se esiste già una descrizione, aggiornarla, se necessario.
 
     ![Sezione Descrizione](../media/knowledge-management/description.png)</br>
 
-4. Nella sezione <b>Persone aggiunte</b> puoi "aggiungere" una persona per mostrarla come esperta in materia nell'argomento. Iniziare digitandone il nome o <b></b> l'indirizzo di posta elettronica nella casella Aggiungi un nuovo utente e quindi selezionando l'utente che si desidera aggiungere dai risultati della ricerca. Puoi anche "rimuovere" le voci <b></b> selezionando l'icona Rimuovi dall'elenco nella scheda utente.
+4. Nella sezione <b>Persone aggiunte</b> puoi "aggiungere" una persona per mostrarla come esperta in materia sull'argomento. Iniziare digitandone il nome o l'indirizzo di posta elettronica nella casella <b>Aggiungi</b> un nuovo utente e quindi selezionando l'utente che si desidera aggiungere dai risultati della ricerca. Puoi anche "sbloccarli" selezionando l'icona Rimuovi <b>dall'elenco</b> nella scheda utente.
  
     ![Aggiungere persone aggiunte](../media/knowledge-management/pinned-people.png)</br>
 
-    La <b>sezione Persone suggerite</b> mostra agli utenti che l'intelligenza artificiale potrebbe essere un esperto in materia sull'argomento, dalla connessione alle risorse sull'argomento. Puoi modificarne lo stato da Consigliato a Aggiunto selezionando l'icona del pin nella scheda utente.
+    La <b>sezione Persone suggerite</b> mostra agli utenti che l'IA potrebbe essere un esperto di materia sull'argomento, dalla connessione alle risorse sull'argomento. Puoi modificarne lo stato da Suggerito a Aggiunto selezionando l'icona del pin nella scheda utente.
 
    ![Aggiungere un utente consigliato](../media/knowledge-management/suggested-people.png)</br>
 
@@ -79,9 +79,9 @@ I knowledge manager possono inoltre modificare gli argomenti direttamente dalla 
 
    ![Sezione File e pagine aggiunti](../media/knowledge-management/pinned-files-and-pages.png)</br>
  
-    Per aggiungere un nuovo file, selezionare <b>Aggiungi,</b>selezionare il sito di SharePoint dai siti Frequenti o Seguiti e quindi selezionare il file dalla raccolta documenti del sito.
+    Per aggiungere un nuovo file, <b>selezionare</b>Aggiungi , selezionare il sito di SharePoint dai siti frequenti o seguiti e quindi selezionare il file dalla raccolta documenti del sito.
 
-    È inoltre possibile utilizzare <b>l'opzione Da</b> un collegamento per aggiungere un file o una pagina specificando l'URL. 
+    Puoi anche usare <b>l'opzione Da un collegamento</b> per aggiungere un file o una pagina specificando l'URL. 
 
    > [!Note] 
    > I file e le pagine aggiunti devono trovarsi nello stesso tenant di Microsoft 365. Se vuoi aggiungere un collegamento a una risorsa esterna nell'argomento, puoi aggiungerlo tramite l'icona canvas nel passaggio 9.
@@ -90,21 +90,21 @@ I knowledge manager possono inoltre modificare gli argomenti direttamente dalla 
 
    ![Sezione File e pagine suggeriti](../media/knowledge-management/suggested-files-and-pages.png)</br>
 
-    Puoi modificare un file o una pagina suggerita in un file o una pagina aggiunta selezionando l'icona aggiunta.
+    Puoi modificare un file o una pagina suggerita in un file o una pagina aggiunti selezionando l'icona aggiunta.
 
 7.  La <b>sezione Siti correlati</b> mostra i siti che dispongono di informazioni sull'argomento. 
 
     ![Sezione Siti correlati](../media/knowledge-management/related-sites.png)</br>
 
-    È possibile aggiungere un <b></b> sito correlato selezionando Aggiungi e quindi cercando il sito oppure selezionandolo nell'elenco dei siti frequenti o recenti.</br>
+    È possibile aggiungere un sito correlato <b>selezionando</b> Aggiungi e quindi cercando il sito o selezionandolo nell'elenco dei siti frequenti o recenti.</br>
     
     ![Selezionare un sito](../media/knowledge-management/sites.png)</br>
 
-8. Nella <b>sezione Argomenti correlati</b> vengono illustrate le connessioni esistenti tra gli argomenti. È possibile aggiungere una connessione a un argomento diverso selezionando il pulsante Connetti <b>a</b> un argomento correlato, quindi digitando il nome dell'argomento correlato e selezionandolo dai risultati della ricerca. 
+8. La <b>sezione Argomenti correlati</b> mostra le connessioni esistenti tra gli argomenti. È possibile aggiungere una connessione a un argomento diverso selezionando il pulsante Connetti <b>a</b> un argomento correlato, quindi digitando il nome dell'argomento correlato e selezionandolo dai risultati della ricerca. 
 
    ![Sezione Argomenti correlati](../media/knowledge-management/related-topic.png)</br>  
 
-    È quindi possibile fornire una descrizione del modo in cui sono correlati gli argomenti e selezionare <b>Aggiorna.</b></br>
+    È quindi possibile fornire una descrizione del modo in cui gli argomenti sono correlati e selezionare <b>Aggiorna</b>.</br>
 
    ![Descrizione degli argomenti correlati](../media/knowledge-management/related-topics-update.png)</br> 
 
@@ -112,7 +112,7 @@ I knowledge manager possono inoltre modificare gli argomenti direttamente dalla 
 
    ![Argomenti correlati connessi](../media/knowledge-management/related-topics-final.png)</br> 
 
-   Per rimuovere un argomento correlato, selezionare l'argomento che si desidera rimuovere, quindi selezionare <b>l'icona Rimuovi</b> argomento.</br>
+   Per rimuovere un argomento correlato, selezionare l'argomento che si desidera rimuovere, quindi selezionare <b>l'icona Rimuovi argomento.</b></br>
  
    ![Rimuovere l'argomento correlato](../media/knowledge-management/remove-related.png)</br>  
 
@@ -121,22 +121,15 @@ I knowledge manager possono inoltre modificare gli argomenti direttamente dalla 
    ![Conferma rimozione](../media/knowledge-management/remove-related-confirm.png)</br> 
 
 
-9. Puoi anche aggiungere elementi statici alla pagina, ad esempio testo, immagini o collegamenti, selezionando l'icona dell'area di disegno, che puoi trovare sotto la breve descrizione. Selezionandola si aprirà la casella degli strumenti di SharePoint da cui è possibile scegliere l'elemento che si desidera aggiungere alla pagina.
+9. Puoi anche aggiungere elementi statici alla pagina, ad esempio testo, immagini o collegamenti, selezionando l'icona dell'area di disegno, che puoi trovare sotto la breve descrizione. Selezionandolo verrà aperta la casella degli strumenti di SharePoint da cui è possibile scegliere l'elemento che si desidera aggiungere alla pagina.
 
    ![Icona Canvas](../media/knowledge-management/webpart-library.png)</br> 
 
 
-10. Selezionare **Pubblica o** **Ripubblica** per salvare le modifiche. **La ripubblicazione** sarà l'opzione disponibile se l'argomento è stato pubblicato in precedenza.
+10. Selezionare **Pubblica** o **Ripubblica** per salvare le modifiche. **La** ripubblicazione sarà l'opzione disponibile se l'argomento è stato pubblicato in precedenza.
 
 
 ## <a name="see-also"></a>Vedere anche
-
-
-
-  
-
-
-
 
 
 
