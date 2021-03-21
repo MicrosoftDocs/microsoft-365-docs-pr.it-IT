@@ -17,16 +17,16 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: seo-marvel-apr2020
 description: 'Riepilogo: creare una rete virtuale cross-premise simulata in Microsoft Azure come ambiente di testing di Microsoft 365.'
-ms.openlocfilehash: ce8b1963e97decc58820bff7b563bb835a843772
-ms.sourcegitcommit: 53ff1fe6d6143b0bf011031eea9b85dc01ae4f74
+ms.openlocfilehash: 545cce668df66b594de6b45ddd506b87afcf44ac
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "48487652"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926033"
 ---
 # <a name="simulated-cross-premises-virtual-network-in-a-microsoft-365-test-environment"></a>Rete virtuale cross-premise simulata in un ambiente di testing di Microsoft 365
 
-*Questa guida del laboratorio di testing può essere usata sia per gli ambienti di testing di Microsoft 365 per le aziende che per Office 365 Enterprise.*
+*Questa guida al laboratorio di testing può essere usata sia per gli ambienti di testing di Microsoft 365 per le aziende che per gli ambienti di testing di Office 365 Enterprise.*
 
 In questo articolo viene mostrato come creare un ambiente basato su cloud con Microsoft Azure usando due reti virtuali Azure. Di seguito è riportata la configurazione risultante.   
   
@@ -59,12 +59,12 @@ Le fasi principali della configurazione dell'ambiente di testing sono tre:
 > [!NOTE]
 > Questa configurazione richiede una sottoscrizione a pagamento di Azure. 
 
-È possibile utilizzare l'ambiente risultante per testare le funzionalità di [Microsoft 365 per](https://www.microsoft.com/microsoft-365/enterprise) le aziende con altre guide al lab [di test](m365-enterprise-test-lab-guides.md) o da soli.
+È possibile utilizzare l'ambiente risultante per testare le caratteristiche e le funzionalità di [Microsoft 365 per](https://www.microsoft.com/microsoft-365/enterprise) le aziende con ulteriori guide al laboratorio di [testing](m365-enterprise-test-lab-guides.md) o da soli.
 
 ![Guide al lab di test per il cloud Microsoft](../media/m365-enterprise-test-lab-guides/cloud-tlg-icon.png)
 
 > [!TIP]
-> Passare a [Microsoft 365 per le aziende](../downloads/Microsoft365EnterpriseTLGStack.pdf) Test Lab Guide Stack per una mappa visiva a tutti gli articoli nello stack guida del lab di test di Microsoft 365 per le aziende.
+> Passare a [Microsoft 365 per enterprise Test Lab Guide Stack](../downloads/Microsoft365EnterpriseTLGStack.pdf) per una mappa visiva a tutti gli articoli nello stack di Guide ai laboratori di testing di Microsoft 365 per le aziende.
 
 ## <a name="phase-1-configure-the-testlab-virtual-network"></a>Fase 1: configurare la rete virtuale TestLab
 
@@ -81,7 +81,7 @@ In questa fase, viene creata e configurata la nuova rete virtuale XPrem, viene q
 Innanzitutto, avviare un prompt dei comandi di Azure PowerShell sul computer locale.
   
 > [!NOTE]
-> I seguenti comandi consentono di utilizzare la versione più recente di Azure PowerShell. Vedere [Panoramica dei cmdlet di Azure PowerShell](https://docs.microsoft.com/powershell/azureps-cmdlets-docs/). 
+> I seguenti comandi consentono di utilizzare la versione più recente di Azure PowerShell. Vedere [Panoramica dei cmdlet di Azure PowerShell](/powershell/azureps-cmdlets-docs/). 
   
 Accedere al proprio account di Azure con questo comando.
   
@@ -205,7 +205,7 @@ Questa è la configurazione corrente.
   
 L’ambiente cloud ibrido di Azure simulato è ora pronto per eseguire test.
   
-A questo punto è possibile sperimentare le funzionalità aggiuntive di [Microsoft 365 per le aziende.](https://www.microsoft.com/microsoft-365/enterprise)
+A questo punto è possibile sperimentare funzionalità aggiuntive di [Microsoft 365 per le aziende.](https://www.microsoft.com/microsoft-365/enterprise)
   
 ## <a name="next-steps"></a>Passaggi successivi
 
@@ -221,4 +221,4 @@ Esplorare questi altri insiemi di guide al lab test:
 
 [Panoramica di Microsoft 365 per le aziende](microsoft-365-overview.md)
 
-[Documentazione di Microsoft 365 for enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)
+[Documentazione di Microsoft 365 for enterprise](/microsoft-365-enterprise/)

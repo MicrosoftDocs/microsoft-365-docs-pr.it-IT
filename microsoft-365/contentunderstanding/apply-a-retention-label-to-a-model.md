@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Questo articolo spiega come applicare un'etichetta di conservazione a un modello in SharePoint Syntex
-ms.openlocfilehash: 48c0b983316cfe29019d09cb20546fa4b325b3b0
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 796130bfa967663b5696f49279154cfe9b16f703
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242772"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925369"
 ---
 # <a name="apply-a-retention-label-to-a-model-in-sharepoint-syntex"></a>Applicare un'etichetta di conservazione a un modello in SharePoint Syntex
 
@@ -28,14 +28,14 @@ ms.locfileid: "50242772"
 </br>
 
 
-Applicare un'[etichetta di conservazione](https://docs.microsoft.com/microsoft-365/compliance/retention) a un modello in Microsoft SharePoint Syntex è molto semplice. È possibile farlo sia per i modelli di analisi dei documenti, sia per i modelli di elaborazione dei moduli.
+Applicare un'[etichetta di conservazione](../compliance/retention.md) a un modello in Microsoft SharePoint Syntex è molto semplice. È possibile farlo sia per i modelli di analisi dei documenti, sia per i modelli di elaborazione dei moduli.
 
 Le etichette di conservazione permettono di applicare impostazioni di conservazione ai documenti identificati dai modelli.  Ad esempio, si può fare modo che il modello non solo identifichi i documenti di tipo *Contratto di assicurazione* caricati in una raccolta documenti, ma anche che applichi l'etichetta di conservazione *Business*, in modo che non sia possibile eliminare questi documenti dalla raccolta per il periodo di tempo specificato, ad esempio i cinque mesi successivi.
 
 Si può applicare al modello un'etichetta di conservazione preesistente, usando le impostazioni del modello nella home page del modello. 
 
 > [!Important]
-> Affinché siano disponibili etichette di conservazione da applicare ai modelli di analisi dei documenti, occorre [crearle e pubblicarle nel Centro conformità Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels#how-to-create-and-publish-retention-labels).
+> Affinché siano disponibili etichette di conservazione da applicare ai modelli di analisi dei documenti, occorre [crearle e pubblicarle nel Centro conformità Microsoft 365](../compliance/create-apply-retention-labels.md#how-to-create-and-publish-retention-labels).
 
 ## <a name="to-add-a-retention-label-to-a-document-understanding-model"></a>Per aggiungere un'etichetta di conservazione a un modello di analisi dei documenti
 
@@ -73,13 +73,13 @@ Ad esempio, a tutti i documenti *Contratto di assicurazione* identificati dal mo
 ## <a name="to-add-a-retention-label-to-a-form-processing-model"></a>Per aggiungere un'etichetta di conservazione a un modello di elaborazione moduli
 
 > [!Important]
-> Affinché siano disponibili etichette di conservazione da applicare al modello di elaborazione moduli, occorre [crearle e pubblicarle nel Centro conformità Microsoft 365](https://docs.microsoft.com/microsoft-365/compliance/create-apply-retention-labels#how-to-create-and-publish-retention-labels).
+> Affinché siano disponibili etichette di conservazione da applicare al modello di elaborazione moduli, occorre [crearle e pubblicarle nel Centro conformità Microsoft 365](../compliance/create-apply-retention-labels.md#how-to-create-and-publish-retention-labels).
 
 È possibile applicare un'etichetta di conservazione a un modello di elaborazione moduli quando si crea il modello oppure applicarla a un modello esistente.
 
 ### <a name="to-add-a-retention-label-when-you-create-a-form-processing-model"></a>Per aggiungere un'etichetta di conservazione al momento della creazione di un modello di elaborazione moduli
 
-1. Quando si [crea un nuovo modello di elaborazione moduli](https://docs.microsoft.com/microsoft-365/contentunderstanding/create-a-form-processing-model), selezionare <b>Impostazioni avanzate.</b>
+1. Quando si [crea un nuovo modello di elaborazione moduli](./create-a-form-processing-model.md), selezionare <b>Impostazioni avanzate.</b>
 2. Nella sezione <b>Etichetta di conservazione</b> delle <b>Impostazioni avanzate</b> selezionare il menu e quindi l'etichetta di conservazione da applicare al modello.</b>
 
  
@@ -132,5 +132,3 @@ Si può aggiungere un'etichetta di conservazione a un modello di elaborazione mo
 [Creare un estrattore](create-an-extractor.md)
 
 [Panoramica sull'analisi dei documenti](document-understanding-overview.md)
-
-

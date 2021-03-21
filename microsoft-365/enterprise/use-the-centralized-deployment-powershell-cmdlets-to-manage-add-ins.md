@@ -20,18 +20,18 @@ ms.assetid: 94f4e86d-b8e5-42dd-b558-e6092f830ec9
 ms.custom:
 - seo-marvel-apr2020
 description: Utilizzare i cmdlet di PowerShell per la distribuzione centralizzata per distribuire e gestire i componenti aggiuntivi di Office per l'organizzazione di Microsoft 365.
-ms.openlocfilehash: 659f12d2533601c4b2165a95ddbf59ea521945b8
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 7872deedfcfe058f0a4ac63c489bbed139699d18
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691441"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924673"
 ---
 # <a name="use-the-centralized-deployment-powershell-cmdlets-to-manage-add-ins"></a>Usare i cmdlet di PowerShell della distribuzione centralizzata per gestire i componenti aggiuntivi
 
-Gli amministratori globali di Microsoft 365 possono distribuire i componenti aggiuntivi di Office agli utenti tramite la funzionalità di distribuzione centralizzata (vedere Distribuire i componenti aggiuntivi di [Office nell'interfaccia di amministrazione).](https://docs.microsoft.com/microsoft-365/admin/manage/manage-deployment-of-add-ins) Oltre a distribuire i componenti aggiuntivi di Office tramite l'interfaccia di amministrazione di Microsoft 365, è anche possibile usare Microsoft PowerShell. Installare il [modulo di distribuzione Add-In O365 per Windows PowerShell](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment). 
+Gli amministratori globali di Microsoft 365 possono distribuire i componenti aggiuntivi di Office agli utenti tramite la funzionalità distribuzione centralizzata (vedere Distribuire componenti aggiuntivi di [Office nell'interfaccia di amministrazione).](../admin/manage/manage-deployment-of-add-ins.md) Oltre a distribuire componenti aggiuntivi di Office tramite l'interfaccia di amministrazione di Microsoft 365, è anche possibile usare Microsoft PowerShell. Installare il [modulo di distribuzione Add-In O365](https://www.powershellgallery.com/packages/O365CentralizedAddInDeployment)per Windows PowerShell . 
 
-Dopo aver scaricato il modulo, aprire una finestra Windows PowerShell normale ed eseguire il cmdlet seguente:
+Dopo aver scaricato il modulo, aprire una finestra Windows PowerShell ed eseguire il cmdlet seguente:
 
 ```powershell
  Import-Module -Name O365CentralizedAddInDeployment
@@ -49,7 +49,7 @@ Prima di poter utilizzare i cmdlet per la distribuzione centralizzata, è necess
   Connect-OrganizationAddInService
   ```
 
-3. Nella pagina **Immetti credenziali immettere** le credenziali di amministratore globale di Microsoft 365. In alternativa, è possibile immettere le credenziali direttamente nel cmdlet. 
+3. Nella pagina **Immetti credenziali** immettere le credenziali di amministratore globale di Microsoft 365. In alternativa, è possibile immettere le credenziali direttamente nel cmdlet. 
     
     Eseguire il cmdlet seguente specificando le credenziali di amministratore aziendale come oggetto PSCredential.
     
@@ -60,11 +60,11 @@ Prima di poter utilizzare i cmdlet per la distribuzione centralizzata, è necess
   ```
 
 > [!NOTE]
-> Per altre informazioni sull'uso di PowerShell, vedere [Connettersi a Microsoft 365 con PowerShell.](https://go.microsoft.com/fwlink/p/?linkid=848585) 
+> Per ulteriori informazioni sull'uso di PowerShell, vedere [Connettersi a Microsoft 365 con PowerShell.](./connect-to-microsoft-365-powershell.md) 
   
 ## <a name="upload-an-add-in-manifest"></a>Caricare un manifesto del componente aggiuntivo
 
-Eseguire il cmdlet **New-OrganizationAdd-In** per caricare un manifesto del componente aggiuntivo da un percorso, che può essere un percorso di file o un URL. L'esempio seguente mostra il percorso di un file per il valore del _parametro ManifestPath._ 
+Eseguire il cmdlet **New-OrganizationAdd-In** per caricare un manifesto del componente aggiuntivo da un percorso, che può essere un percorso di file o un URL. Nell'esempio seguente viene illustrato un percorso di file per il valore del _parametro ManifestPath._ 
   
 ```powershell
 New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale 'en-US'
@@ -78,20 +78,20 @@ New-OrganizationAddIn -ManifestPath 'C:\Users\Me\Desktop\taskpane.xml' -Locale '
 
 ## <a name="upload-an-add-in-from-the-office-store"></a>Caricare un componente aggiuntivo da Office Store
 
-Eseguire il cmdlet **New-OrganizationAddIn** per caricare un manifesto dall'Office Store.
+Eseguire il cmdlet **New-OrganizationAddIn** per caricare un manifesto da Office Store.
   
-Nell'esempio seguente, il cmdlet **New-OrganizationAddIn** specifica l'AssetId per un componente aggiuntivo per una posizione negli Stati Uniti e un mercato del contenuto.
+Nell'esempio seguente, il cmdlet **New-OrganizationAddIn** specifica l'AssetId per un componente aggiuntivo per una posizione e un mercato del contenuto negli Stati Uniti.
   
 ```powershell
 New-OrganizationAddIn -AssetId 'WA104099688' -Locale 'en-US' -ContentMarket 'en-US'
 ```
 
-Per determinare il valore del  _parametro AssetId,_ è possibile copiarlo dall'URL della pagina Web di Office Store per il componente aggiuntivo. Gli AssetId iniziano sempre con "WA" seguito da un numero. Nell'esempio precedente, ad esempio, l'origine per il valore AssetId di WA104099688 è l'URL della pagina Web di Office Store per il componente aggiuntivo: [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688) .
+Per determinare il valore del  _parametro AssetId,_ è possibile copiarlo dall'URL della pagina Web di Office Store per il componente aggiuntivo. AssetIds inizia sempre con "WA" seguito da un numero. Nell'esempio precedente, ad esempio, l'origine per il valore AssetId di WA104099688 è l'URL della pagina Web di Office Store per il componente aggiuntivo: [https://store.office.com/en-001/app.aspx?assetid=WA104099688](https://store.office.com/en-001/app.aspx?assetid=WA104099688) .
   
 I valori per il  _parametro Locale_ e il parametro  _ContentMarket_ sono identici e indicano il paese/area geografica da cui si sta tentando di installare il componente aggiuntivo. Il formato è en-US, fr-FR. e così via. 
   
 > [!NOTE]
-> I componenti aggiuntivi caricati da Office Store verranno aggiornati automaticamente entro pochi giorni dalla disponibilità dell'aggiornamento più recente in Office Store. 
+> I componenti aggiuntivi caricati da Office Store verranno aggiornati automaticamente entro pochi giorni dalla disponibilità dell'ultimo aggiornamento in Office Store. 
   
 ## <a name="get-details-of-an-add-in"></a>Ottenere i dettagli di un componente aggiuntivo
 
@@ -101,13 +101,13 @@ Eseguire il cmdlet **Get-OrganizationAddIn** come illustrato di seguito per otte
 Get-OrganizationAddIn
 ```
 
-Eseguire il cmdlet **Get-OrganizationAddIn** con un valore per il parametro  _ProductId_ per specificare per quale componente aggiuntivo si desidera recuperare i dettagli. 
+Eseguire il cmdlet **Get-OrganizationAddIn** con un valore per il parametro  _ProductId_ per specificare il componente aggiuntivo per cui si desidera recuperare i dettagli. 
   
 ```powershell
 Get-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
 ```
 
-Per ottenere tutti i dettagli di tutti i componenti aggiuntivi più gli utenti e i gruppi assegnati, eseguire il piped dell'output del cmdlet **Get-OrganizationAddIn** al cmdlet Format-List, come illustrato nell'esempio seguente.
+Per ottenere tutti i dettagli di tutti i componenti aggiuntivi più gli utenti e i gruppi assegnati, eseguire il pipe dell'output del cmdlet **Get-OrganizationAddIn** al cmdlet Format-List, come illustrato nell'esempio seguente.
   
 ```powershell
 foreach($G in (Get-organizationAddIn)){Get-OrganizationAddIn -ProductId $G.ProductId | Format-List}
@@ -147,7 +147,7 @@ Per assegnare un componente aggiuntivo a tutti gli utenti del tenant, eseguire l
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -AssignToEveryone $true
 ```
 
-Per non assegnare un componente aggiuntivo a tutti gli utenti e ripristinare gli utenti e i gruppi precedentemente assegnati, è possibile eseguire lo stesso cmdlet e disattivare il parametro  _AssignToEveryone_ impostandone il valore su  `$false` .
+Per non assegnare un componente aggiuntivo a tutti gli utenti e ripristinare gli utenti e i gruppi precedentemente assegnati, è possibile eseguire lo stesso cmdlet e disattivare il  _parametro AssignToEveryone_ impostandone il valore su  `$false` .
   
 ```powershell
 Set-OrganizationAddInAssignments -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -AssignToEveryone $false
@@ -162,11 +162,11 @@ Set-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122 -ManifestP
 ```
 
 > [!NOTE]
-> I componenti aggiuntivi caricati da Office Store verranno aggiornati automaticamente entro pochi giorni dalla disponibilità dell'aggiornamento più recente in Office Store. 
+> I componenti aggiuntivi caricati da Office Store verranno aggiornati automaticamente entro pochi giorni dalla disponibilità dell'ultimo aggiornamento in Office Store. 
   
 ## <a name="delete-an-add-in"></a>Eliminare un componente aggiuntivo
 
-Per eliminare un componente aggiuntivo, eseguire il cmdlet **Remove-OrganizationAddIn** con il parametro  _ProductId,_ come illustrato nell'esempio seguente. 
+Per eliminare un componente aggiuntivo, eseguire il cmdlet **Remove-OrganizationAddIn** con il  _parametro ProductId,_ come illustrato nell'esempio seguente. 
   
 ```powershell
 Remove-OrganizationAddIn -ProductId 6a75788e-1c6b-4e9b-b5db-5975a2072122
@@ -272,10 +272,8 @@ If an add-in has been deployed, it has to be removed from the cache in each comp
 
 ## <a name="get-detailed-help-for-each-cmdlet"></a>Ottenere informazioni dettagliate per ogni cmdlet
 
-È possibile esaminare la Guida dettagliata per ogni cmdlet utilizzando il cmdlet Get-help. Ad esempio, il cmdlet seguente fornisce informazioni dettagliate sulla Remove-OrganizationAddIn cmdlet.
+È possibile esaminare la Guida dettagliata per ogni cmdlet utilizzando il cmdlet Get-help. Ad esempio, il cmdlet seguente fornisce informazioni dettagliate sul cmdlet Remove-OrganizationAddIn.
   
 ```powershell
 Get-help Remove-OrganizationAddIn -Full
 ```
-
-

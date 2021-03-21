@@ -18,12 +18,12 @@ ms.collection:
 f1.keywords:
 - NOCSH
 description: Informazioni su come usare lo split tunneling per VPN con Office 365 per ottimizzare la connettività di Office 365 per gli utenti remoti.
-ms.openlocfilehash: 103a5cc36c9e981ccef5717971e32330078ed721
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+ms.openlocfilehash: 9f54d8836105896d8d00afc4a622975c007bda85
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456388"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924189"
 ---
 # <a name="optimize-office-365-connectivity-for-remote-users-using-vpn-split-tunneling"></a>Ottimizzare la connettività di Office 365 per gli utenti remoti tramite split tunneling VPN
 <!---
@@ -43,7 +43,7 @@ L'aspetto fondamentale di questo approccio è quello di fornire alle aziende un 
 
 - Attenua subito la causa principale della maggior parte dei problemi relativi alle prestazioni e alla capacità di rete segnalati dai clienti nelle architetture VPN aziendali che hanno impatto sull'esperienza utente di Office 365
   
-  La soluzione consigliata si rivolge in modo specifico agli endpoint del servizio Office 365 della categoria **Optimize** nell'argomento [URL e intervalli di indirizzi IP per Office 365](https://aka.ms/o365ips). Il traffico verso questi endpoint è estremamente sensibile alla limitazione della latenza e della larghezza di banda, quindi consentire di bypassare il tunnel VPN può migliorare notevolmente l'esperienza dell'utente finale e ridurre il carico di rete aziendale. Le connessioni di Office 365, che non costituiscono la maggior parte delle larghezze di banda o dell'esperienza utente, possono continuare a essere instradate attraverso il tunnel VPN insieme al resto del traffico connesso a Internet. Per ulteriori informazioni, vedere [La strategia split tunneling per VPN](#the-vpn-split-tunnel-strategy).
+  La soluzione consigliata si rivolge in modo specifico agli endpoint del servizio Office 365 della categoria **Optimize** nell'argomento [URL e intervalli di indirizzi IP per Office 365](./urls-and-ip-address-ranges.md). Il traffico verso questi endpoint è estremamente sensibile alla limitazione della latenza e della larghezza di banda, quindi consentire di bypassare il tunnel VPN può migliorare notevolmente l'esperienza dell'utente finale e ridurre il carico di rete aziendale. Le connessioni di Office 365, che non costituiscono la maggior parte delle larghezze di banda o dell'esperienza utente, possono continuare a essere instradate attraverso il tunnel VPN insieme al resto del traffico connesso a Internet. Per ulteriori informazioni, vedere [La strategia split tunneling per VPN](#the-vpn-split-tunnel-strategy).
 
 - Possibilità di configurazione, collaudo e implementazione rapida dai clienti e senza ulteriori requisiti di infrastruttura o applicazioni
 
@@ -90,7 +90,7 @@ Questo set limitato di endpoint può essere diviso dal tunnel VPN forzato e invi
 
 Elementi di sicurezza quali DLP, protezione AV, autenticazione e controllo degli accessi possono essere forniti in modo molto più efficiente rispetto a questi endpoint a diversi livelli all'interno del servizio. Inoltre, distogliendo la maggior parte del volume del traffico dalla VPN, questa soluzione rende disponibile capacità VPN per il traffico aziendale critico che ancora si basa su di esso. Consente inoltre di evitare di passare attraverso un programma di aggiornamento, in molti casi, lungo e costoso per far fronte a questo nuovo modo di operare.
 
-![Dettagli sulla configurazione della VPN split tunneling](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
+![Dettagli sulla configurazione della VPN split tunnel](../media/vpn-split-tunneling/vpn-split-tunnel-example.png)
 
 _Figura 3 - Soluzione split tunnel VPN con evidenti eccezioni di Office 365 inviate direttamente al servizio. Tutto il resto del traffico è obbligato a tornare nella rete aziendale indipendentemente dalla destinazione._
 

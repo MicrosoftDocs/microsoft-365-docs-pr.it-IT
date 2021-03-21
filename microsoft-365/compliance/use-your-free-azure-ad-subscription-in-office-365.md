@@ -17,12 +17,12 @@ search.appverid:
 ms.assetid: d104fb44-1c42-4541-89a6-1f67be22e4ad
 description: Informazioni su come accedere ad Azure Active Directory, incluso nell'abbonamento a pagamento dell'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: c968d4ae8cc5f0798b6ba7d5bcb52ca6fe7d6116
-ms.sourcegitcommit: 6501e01a9ab131205a3eef910e6cea7f65b3f010
+ms.openlocfilehash: 5bc1c57c0c40df03d27471aafd222908ba9d5887
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 07/30/2020
-ms.locfileid: "46528152"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925452"
 ---
 # <a name="use-your-free-azure-active-directory-subscription"></a>Usare la sottoscrizione gratuita di Azure Active Directory
 
@@ -48,8 +48,8 @@ Usare una sessione di esplorazione privata, invece di una normale, per accedere 
 
 ## <a name="more-information"></a>Altre informazioni
 
-- Un abbonamento gratuito ad Azure Active Directory non include il report delle attività di accesso. Per registrare l'attività di accesso (che può essere utile in caso di violazione dei dati), è necessario un abbonamento ad Azure Active Directory Premium. Per altre informazioni, vedere [Per quanto tempo Azure AD archivia i dati?](https://docs.microsoft.com/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)
+- Un abbonamento gratuito ad Azure Active Directory non include il report delle attività di accesso. Per registrare l'attività di accesso (che può essere utile in caso di violazione dei dati), è necessario un abbonamento ad Azure Active Directory Premium. Per altre informazioni, vedere [Per quanto tempo Azure AD archivia i dati?](/azure/active-directory/reports-monitoring/reference-reports-data-retention#how-long-does-azure-ad-store-the-data)
 
 - È anche possibile accedere all'interfaccia di amministrazione di **Azure Active Directory** dall'interfaccia di amministrazione di Microsoft 365. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft 365 fare clic su **Interfacce di amministrazione** \> **Azure Active Directory**.
 
-- Per informazioni sulla gestione degli utenti e dei gruppi e sull'esecuzione di altre attività di gestione delle directory, vedere [Gestione della directory di Azure AD](https://docs.microsoft.com/azure/active-directory/active-directory-administer).
+- Per informazioni sulla gestione degli utenti e dei gruppi e sull'esecuzione di altre attività di gestione delle directory, vedere [Gestione della directory di Azure AD](/azure/active-directory/active-directory-administer).

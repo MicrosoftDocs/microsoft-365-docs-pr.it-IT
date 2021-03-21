@@ -16,22 +16,22 @@ ms.assetid: 2c956776-0016-4be6-b4cd-133a237f4a9e
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come configurare IRM di Exchange Online per l'utilizzo di Active Directory Rights Management Service (AD RMS) locale per soddisfare i requisiti dell'organizzazione.
-ms.openlocfilehash: be53b54328c2c1e08e51a84b7251e23c3e7468c3
-ms.sourcegitcommit: 973f5449784cb70ce5545bc3cf57bf1ce5209218
+ms.openlocfilehash: 6a9759fce102c60dd766dd86ba8c9e6d4a02d85b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/19/2020
-ms.locfileid: "44815443"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924990"
 ---
 # <a name="exchange-online-mail-encryption-with-ad-rms"></a>Crittografia della posta di Exchange Online con AD RMS
 
-Per aiutare ad impedire la fuga di informazioni, in Exchange Online è inclusa la funzionalità Information Rights Management (IRM) che fornisce una protezione online e offline dei messaggi di posta elettronica e degli allegati. È possibile configurare IRM di Exchange Online per l'utilizzo di Active Directory Rights Management Service (AD RMS) locale, se necessario, per soddisfare i requisiti dell'organizzazione. Ciò non è comune. Se non è necessario utilizzare AD RMS, utilizzare la crittografia dei messaggi di [Office 365.](ome.md) 
+Per aiutare ad impedire la fuga di informazioni, in Exchange Online è inclusa la funzionalità Information Rights Management (IRM) che fornisce una protezione online e offline dei messaggi di posta elettronica e degli allegati. È possibile configurare IRM di Exchange Online per l'utilizzo di Active Directory Rights Management Service (AD RMS) locale, se necessario, per soddisfare i requisiti dell'organizzazione. Questo non è comune. Se non è necessario utilizzare AD RMS, utilizzare la crittografia dei messaggi di [Office 365.](ome.md) 
 
 La protezione IRM può essere applicata dagli utenti di Microsoft Outlook o Outlook sul web, nonché dagli amministratori utilizzando le regole di protezione del trasporto o le regole di protezione di Outlook. IRM consente agli utenti di controllare chi è autorizzato ad accedere, inoltrare, stampare o copiare dati riservati all'interno di un messaggio di posta elettronica.
   
 ## <a name="changes-to-how-irm-works-with-office-365-message-encryption-ome-and-azure-active-directory"></a>Modifiche al funzionamento di IRM con Crittografia messaggi di Office 365 (OME) e Azure Active Directory
 
-A partire da settembre 2017, quando si configurano le nuove funzionalità di Crittografia messaggi di Office 365 per l'organizzazione, si configura anche IRM per l'utilizzo con Azure Rights Management (Azure RMS). IRM con Azure RMS non viene più configurato separatamente. Al contrario, OME e Rights Management sono perfettamente integrati. Per ulteriori dettagli sulle nuove funzionalità, vedere [Domande frequenti su Crittografia dei messaggi di Office 365Office 365 Message Encryption](https://docs.microsoft.com/microsoft-365/compliance/ome-faq). Se si è pronti per iniziare a usare le nuove funzionalità OME all'interno dell'organizzazione, vedere [Configurare nuove funzionalità di Office 365 Message Encryption in Azure Information Protection](https://docs.microsoft.com/microsoft-365/compliance/set-up-new-message-encryption-capabilities).
+A partire da settembre 2017, quando si configurano le nuove funzionalità di Crittografia messaggi di Office 365 per l'organizzazione, si configura anche IRM per l'utilizzo con Azure Rights Management (Azure RMS). IRM con Azure RMS non viene più configurato separatamente. Al contrario, OME e Rights Management sono perfettamente integrati. Per ulteriori dettagli sulle nuove funzionalità, vedere [Domande frequenti su Crittografia dei messaggi di Office 365Office 365 Message Encryption](./ome-faq.md). Se si è pronti per iniziare a usare le nuove funzionalità OME all'interno dell'organizzazione, vedere [Configurare nuove funzionalità di Office 365 Message Encryption in Azure Information Protection](./set-up-new-message-encryption-capabilities.md).
   
 ## <a name="how-irm-works-with-exchange-online-and-active-directory-rights-management-services"></a>Funzionamento di IRM con Exchange Online e Active Directory Rights Management Services
 
@@ -47,6 +47,4 @@ Una volta abilitata, la protezione IRM può essere applicata ai messaggi come ri
     
 - **Gli amministratori possono utilizzare le regole di protezione del trasporto per applicare la protezione IRM automaticamente a Outlook e Outlook sul web.** È possibile creare regole di protezione del trasporto per proteggere i messaggi mediante IRM. Configurare l'azione della regola di protezione del trasporto per applicare un modello dei criteri per i diritti AD RMS ai messaggi che soddisfano la condizione della regola. Dopo avere abilitato IRM, i modelli dei criteri per i diritti AD RMS dell'organizzazione sono disponibili per essere utilizzati con l'azione della regola di protezione del trasporto chiamata **Applica protezione dei diritti al messaggio con**.
     
-- **Gli amministratori possono creare regole di protezione di Outlook.** Le regole di protezione di Outlook applicano automaticamente la protezione IRM ai messaggi in Outlook 2010 e non in Outlook sul web, in base alle condizioni del messaggio che includono il reparto del mittente, il destinatario del messaggio e se i destinatari si trovano all'interno o all'esterno dell'organizzazione. Per ulteriori informazioni, vedere [Create an Outlook Protection Rule](https://technet.microsoft.com/library/da64750d-faaf-44de-ad8c-888eba7fbdbf.aspx).
-    
-
+- **Gli amministratori possono creare regole di protezione di Outlook.** Le regole di protezione di Outlook applicano automaticamente la protezione IRM ai messaggi in Outlook 2010 e non in Outlook sul web, in base alle condizioni del messaggio che includono il reparto del mittente, il destinatario del messaggio e se i destinatari si trovano all'interno o all'esterno dell'organizzazione. Per ulteriori informazioni, vedere [Create an Outlook Protection Rule](/exchange/create-an-outlook-protection-rule-exchange-2013-help).

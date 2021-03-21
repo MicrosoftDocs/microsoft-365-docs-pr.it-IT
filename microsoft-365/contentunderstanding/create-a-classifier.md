@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Informazioni su come creare un classificatore
-ms.openlocfilehash: bff23807fce18bf4a585dbb1ec47c1502ab686f6
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 13ae099d051ac526dc5b13e4cb55a1dc10eec087
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242689"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925357"
 ---
 # <a name="create-a-classifier-in-microsoft-sharepoint-syntex"></a>Creare un classificatore in Microsoft SharePoint Syntex
 
@@ -32,7 +32,7 @@ Un classificatore è un tipo di modello che è possibile usare per automatizzare
 
 ![Documento Rinnovo del contratto](../media/content-understanding/contract-renewal.png)
 
-La creazione di un classificatore consente di creare un nuovo [tipo di contenuto di SharePoint](https://docs.microsoft.com/sharepoint/governance/content-type-and-workflow-planning#content-type-overview) che verrà associato al modello.
+La creazione di un classificatore consente di creare un nuovo [tipo di contenuto di SharePoint](/sharepoint/governance/content-type-and-workflow-planning#content-type-overview) che verrà associato al modello.
 
 Quando si crea il classificatore, è necessario creare *spiegazioni* per definire il modello. In questo modo è possibile identificare i dati comuni che si prevede di trovare in modo coerente in questo tipo di documento. 
 

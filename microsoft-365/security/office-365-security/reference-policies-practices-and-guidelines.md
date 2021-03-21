@@ -14,15 +14,15 @@ search.appverid:
 ms.assetid: ff3f140b-b005-445f-bfe0-7bc3f328aaf0
 ms.collection:
 - M365-security-compliance
-description: Microsoft ha sviluppato diversi criteri, procedure e adottato diverse procedure consigliate del settore per proteggere gli utenti da posta elettronica abusiva, indesiderata o dannosa.
+description: Microsoft ha sviluppato diversi criteri, procedure e adottato diverse procedure consigliate del settore per proteggere i nostri utenti da messaggi di posta elettronica abusivi, indesiderati o dannosi.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f53b1c36417b15e366b527dd1c12e4f23c06f632
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 8ed78e4a0f233e8d04fbcfb7d7fa7b3859bc0e17
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50406597"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925233"
 ---
 # <a name="reference-policies-practices-and-guidelines"></a>Informazioni di riferimento: criteri, procedure e linee guida
 
@@ -33,9 +33,9 @@ ms.locfileid: "50406597"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Microsoft si impegna a fornire l'esperienza utente più attendibile sul Web. Pertanto, Microsoft ha sviluppato diversi criteri, procedure e adottato diverse procedure consigliate del settore per proteggere gli utenti da messaggi di posta elettronica abusivi, indesiderati o dannosi. I mittenti che tentano di inviare messaggi di posta elettronica agli utenti devono assicurarsi di comprendere appieno e di seguire le indicazioni fornite in questo articolo per aiutare in questo sforzo ed evitare potenziali problemi di recapito.
+Microsoft si impegna a fornire l'esperienza utente più attendibile sul Web. Di conseguenza, Microsoft ha sviluppato diversi criteri, procedure e adottato diverse procedure consigliate del settore per proteggere i nostri utenti da messaggi di posta elettronica abusivi, indesiderati o dannosi. I mittenti che tentano di inviare messaggi di posta elettronica agli utenti devono assicurarsi di avere una conoscenza completa e di seguire le indicazioni fornite in questo articolo per contribuire a questo sforzo ed evitare potenziali problemi di recapito.
 
-Se non si è conformi a questi criteri e linee guida, il team di supporto potrebbe non essere in grado di assisterlo. Se si rispettano le linee guida, le procedure e i criteri presentati in questo articolo e si verificano ancora problemi di recapito in base all'indirizzo IP di invio, seguire la procedura per inviare una richiesta di diserzione. Per istruzioni, vedere [Usare il portale di eliminazione per rimuoversi dall'elenco dei mittenti bloccati.](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md)
+Se non sei conforme a questi criteri e linee guida, potrebbe non essere possibile che il nostro team di supporto possa assisterti. Se si aderenza alle linee guida, alle procedure e ai criteri presentati in questo articolo e si verificano ancora problemi di recapito in base all'indirizzo IP di invio, seguire la procedura per inviare una richiesta di rimozione. Per istruzioni, vedere [Use the delist portal to remove yourself from the blocked senders list](use-the-delist-portal-to-remove-yourself-from-the-office-365-blocked-senders-lis.md).
 
 ## <a name="general-microsoft-policies"></a>Criteri generali di Microsoft
 
@@ -47,11 +47,11 @@ La posta elettronica inviata agli utenti di Microsoft 365 deve essere conforme a
 
 ## <a name="governmental-regulations"></a>Normative governative
 
-I messaggi di posta elettronica inviati agli utenti di Microsoft 365 devono rispettare tutte le leggi e le normative applicabili che regolano le comunicazioni di posta elettronica nella giurisdizione applicabile.
+I messaggi di posta elettronica inviati agli utenti di Microsoft 365 devono rispettare tutte le leggi e le normative applicabili che disciplinano le comunicazioni di posta elettronica nella giurisdizione applicabile.
 
 - [CAN-SPAM Act: Guida alla conformità per le aziende](https://www.ftc.gov/tips-advice/business-center/guidance/can-spam-act-compliance-guide-business)
 
-- [Risposte e responsabilità "Rimuovimi": gli esperti di e-mail devono rispettare le attestazioni di annullamento della sottoscrizione](https://www.lawpublish.com/ftc-emai-marketers-unsubscribe-claims.html)
+- [Risposte e responsabilità "Rimuovimi": gli esperti di e-mail devono rispettare le attestazioni di "annullamento della sottoscrizione"](https://www.lawpublish.com/ftc-emai-marketers-unsubscribe-claims.html)
 
 ## <a name="technical-guidelines"></a>Linee guida tecniche
 
@@ -63,7 +63,7 @@ I messaggi di posta elettronica inviati a Microsoft 365 devono essere conformi a
 
 Inoltre, i server di posta elettronica che si connettono a Microsoft 365 devono rispettare i requisiti seguenti:
 
-- Il mittente deve rispettare tutti gli standard tecnici per la trasmissione della posta elettronica Internet, come pubblicato dalla Internet Engineering Task Force (IETF) della Internet Society, tra cui RFC 5321, RFC 5322 e altri.
+- Il mittente deve rispettare tutti gli standard tecnici per la trasmissione della posta elettronica Internet, come pubblicato dalla Internet Society's Internet Engineering Task Force (IETF), tra cui RFC 5321, RFC 5322 e altri.
 
 - Dopo aver specificato un codice di risposta di errore SMTP numerico compreso tra 500 e 599 (noto anche come risposta di mancato recapito permanente o rapporto di mancato recapito), il mittente non deve tentare di ritrasmettere il messaggio a tale destinatario.
 
@@ -83,13 +83,13 @@ I mittenti, gli ISP e altri provider di servizi devono gestire attivamente la re
 
 ## <a name="microsoft-365-limits"></a>Limiti di Microsoft 365
 
-I mittenti devono rispettare i limiti di Microsoft 365 elencati nei [limiti di Exchange Online Protection.](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)
+I mittenti devono rispettare i limiti di Microsoft 365 elencati in [Exchange Online Protection Limits.](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-limits)
 
 ## <a name="email-delivery-resources-and-organizations"></a>Risorse e organizzazioni per il recapito della posta elettronica
 
-Microsoft collabora attivamente con enti del settore e provider di servizi per migliorare l'ecosistema di internet e posta elettronica. Queste organizzazioni hanno pubblicato i documenti delle procedure consigliate che vengono supportati e consigliati ai mittenti di attenersi. In questo modo si migliora la possibilità di recapitare la posta elettronica tra diversi provider di servizi di posta elettronica in tutto il mondo.
+Microsoft collabora attivamente con enti del settore e provider di servizi per migliorare l'ecosistema internet e della posta elettronica. Queste organizzazioni hanno pubblicato documenti di procedure consigliate che vengono supportati e consigliati ai mittenti di attenersi. In questo modo si migliora la possibilità di recapitare la posta elettronica tra diversi provider di servizi di posta elettronica in tutto il mondo.
 
-- [Gruppo di lavoro anti-abuso di malware di messaggistica mobile](https://www.m3aawg.org/)
+- [Messaging Malware Mobile Anti-Abuse Working Group](https://www.m3aawg.org/)
 
 - [Online Trust Alliance](https://www.internetsociety.org/ota/)
 
@@ -97,8 +97,8 @@ Microsoft collabora attivamente con enti del settore e provider di servizi per m
 
 ## <a name="abuse-and-spam-reporting"></a>Segnalazione di abuso e posta indesiderata
 
-Per segnalare messaggi di posta elettronica illegali, abusivi, indesiderati o dannosi, vedere Segnalare messaggi [e file a Microsoft.](report-junk-email-messages-to-microsoft.md) L'invio di questi tipi di comunicazioni è una violazione dei criteri Microsoft e verranno intraprese azioni appropriate sui report confermati.
+Per segnalare messaggi di posta elettronica illegali, abusivi, indesiderati o dannosi, vedere [Segnalare messaggi e file a Microsoft](report-junk-email-messages-to-microsoft.md). L'invio di questi tipi di comunicazioni è una violazione dei criteri Microsoft e verranno intraprese azioni appropriate nei report confermati.
 
 ## <a name="law-enforcement"></a>Forze dell'ordine
 
-If you are a member of law enforcement and wish to serve Microsoft Corporation with legal documentation regarding Office 365, or if you have questions regarding legal documentation you have submitted to Microsoft, please call (1) (425) 722-1299.
+Se si è membri delle forze dell'ordine e si desidera fornire a Microsoft Corporation la documentazione legale relativa a Office 365 o se si hanno domande sulla documentazione legale inviata a Microsoft, chiamare (1) (425) 722-1299.

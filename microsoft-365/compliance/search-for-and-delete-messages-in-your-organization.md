@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 3526fd06-b45f-445b-aed4-5ebd37b3762a
 description: Usare la funzionalità di ricerca e rimozione nel Centro sicurezza e conformità per cercare un messaggio di posta elettronica ed eliminarlo da tutte le cassette postali dell'organizzazione.
-ms.openlocfilehash: 52871fc85a4d5aec1754c1957f2087552b442daf
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: b7bb1008120df8efefc983d526d90e8397b3a89e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50423697"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50924236"
 ---
 # <a name="search-for-and-delete-email-messages"></a>Cercare ed eliminare messaggi di posta elettronica
 
@@ -61,9 +61,9 @@ Il primo passaggio consiste nel creare ed eseguire una ricerca contenuto per tro
 
 - [Query con parole chiave per la Ricerca contenuto](keyword-queries-and-search-conditions.md)
 
-- [New-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/New-ComplianceSearch)
+- [New-ComplianceSearch](/powershell/module/exchange/New-ComplianceSearch)
 
-- [Start-ComplianceSearch](https://docs.microsoft.com/powershell/module/exchange/Start-ComplianceSearch)
+- [Start-ComplianceSearch](/powershell/module/exchange/Start-ComplianceSearch)
 
 > [!NOTE]
 > I percorsi di contenuto all'interno dei quali viene eseguita la Ricerca contenuto creata in questo passaggio non possono includere siti di SharePoint o OneDrive for Business. In una Ricerca contenuto che verrà usata per inviare messaggi di posta elettronica è possibile includere solo cassette postali e cartelle pubbliche. Se la Ricerca contenuto include siti, si riceverà un messaggio di errore al Passaggio 3 quando si esegue il cmdlet **New-ComplianceSearchAction**.
@@ -80,7 +80,7 @@ L'obiettivo della query di ricerca è limitare i risultati della ricerca solo al
 
 - Visualizzare in anteprima i risultati della ricerca per verificare che la ricerca di contenuto restituisca solo il messaggio (o i messaggi) da eliminare.
 
-- Per ottenere il numero totale di risultati, usare le statistiche di stima della ricerca, visualizzate nel riquadro dei dettagli della ricerca nel Centro di sicurezza e conformità oppure tramite il cmdlet [Get-ComplianceSearch](https://go.microsoft.com/fwlink/p/?LinkId=517934). 
+- Per ottenere il numero totale di risultati, usare le statistiche di stima della ricerca, visualizzate nel riquadro dei dettagli della ricerca nel Centro di sicurezza e conformità oppure tramite il cmdlet [Get-ComplianceSearch](/powershell/module/exchange/get-compliancesearch). 
 
 Ecco due esempi di query per trovare messaggi di posta elettronica sospetti.
 
@@ -105,7 +105,7 @@ Start-ComplianceSearch -Identity $Search.Identity
 
 ## <a name="step-2-connect-to-security--compliance-center-powershell"></a>Passaggio 2: Connettersi a PowerShell in Centro sicurezza e conformità
 
-Il passaggio successivo consiste nel connettersi a PowerShell in Centro sicurezza e conformità per l'organizzazione. Per ottenere istruzioni dettagliate, vedere [Connettersi a PowerShell in Centro sicurezza e conformità](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+Il passaggio successivo consiste nel connettersi a PowerShell in Centro sicurezza e conformità per l'organizzazione. Per ottenere istruzioni dettagliate, vedere [Connettersi a PowerShell in Centro sicurezza e conformità](/powershell/exchange/connect-to-scc-powershell).
 
 Dopo essersi connessi a PowerShell per il Centro sicurezza e conformità, eseguire i cmdlet **New-ComplianceSearch** e **Start-ComplianceSearch** che preparati nel passaggio precedente.
 
@@ -127,7 +127,7 @@ New-ComplianceSearchAction -SearchName "Remove Phishing Message" -Purge -PurgeTy
 
 Quando si esegue il comando precedente per eliminare i messaggi temporaneamente o definitivamente, la ricerca specificata dal parametro *SearchName* è la ricerca contenuto creata nel Passaggio 1.
 
-Per altre informazioni, vedere [New-ComplianceSearchAction](https://docs.microsoft.com/powershell/module/exchange/New-ComplianceSearchAction).
+Per altre informazioni, vedere [New-ComplianceSearchAction](/powershell/module/exchange/New-ComplianceSearchAction).
 
 ## <a name="more-information"></a>Ulteriori informazioni
 

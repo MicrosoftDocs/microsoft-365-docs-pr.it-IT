@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Informazioni su come applicare un modello pubblicato a una raccolta documenti di SharePoint
-ms.openlocfilehash: 17da1e37f72504ac5e0e26c0dd190efced08d285
-ms.sourcegitcommit: d354727303d9574991b5a0fd298d2c9414e19f6c
+ms.openlocfilehash: 42168537c8d449a075b5e29ef9905b6b98b8d714
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "50080787"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50925401"
 ---
 # <a name="apply-a-document-understanding-model-in-microsoft-sharepoint-syntex"></a>Applicare un modello di analisi dei documenti in Microsoft SharePoint Syntex.
 
@@ -94,7 +94,7 @@ Quando a una raccolta documenti viene applicato un modello di analisi dei docume
 
    ![Colonna Data di classificazione](../media/content-understanding/class-date-column.png)</br> 
 
-Il campo Data di classificazione viene usato dal trigger [<b>Quando un file viene classificato da un modello di comprensione dei contenuti</b>](https://docs.microsoft.com/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) per eseguire un flusso di Power Automate dopo che un modello di comprensione dei contenuti Syntex ha completato l'elaborazione di un file e aggiornato il campo "Data di classificazione".
+Il campo Data di classificazione viene usato dal trigger [<b>Quando un file viene classificato da un modello di comprensione dei contenuti</b>](/connectors/sharepointonline/#when-a-file-is-classified-by-a-content-understanding-model) per eseguire un flusso di Power Automate dopo che un modello di comprensione dei contenuti Syntex ha completato l'elaborazione di un file e aggiornato il campo "Data di classificazione".
 
    ![Trigger di flusso](../media/content-understanding/trigger.png)</br>
 
@@ -108,5 +108,3 @@ Il trigger <b>Quando un file viene classificato da un modello di comprensione de
 [Creare un estrattore](create-an-extractor.md)
 
 [Panoramica sull'analisi dei documenti](document-understanding-overview.md)
-
-
