@@ -4,13 +4,12 @@ ms.author: dansimp
 author: dansimp
 ms.prod: m365-security
 ms.topic: include
-ms.openlocfilehash: 7924a91f8ee9cc004d196a4d17bf4dae015464c6
-ms.sourcegitcommit: e920e68c8d0eac8b152039b52cfc139d478a67b3
-ms.translationtype: MT
+ms.openlocfilehash: 822a841294e263edc1f961b7c00dfc97f55c176e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "50151271"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50903898"
 ---
 > [!IMPORTANT]
-> Il nuovo [Centro sicurezza Microsoft 365](https://security.microsoft.com) è ora disponibile in anteprima pubblica. Questa nuova esperienza porta Defender per Endpoint, Defender per Office 365, Microsoft 365 Defender e altro ancora nel Centro sicurezza Microsoft 365. I team di sicurezza possono ora gestire tutte le indagini su endpoint, posta elettronica e prodotti, la configurazione e la correzione senza dover passare a portali di prodotti separati. [Ulteriori informazioni sulle modifiche.](https://docs.microsoft.com/microsoft-365/security/mtp/overview-security-center)
-
+> Il nuovo [Centro sicurezza Microsoft 365](https://security.microsoft.com) è ora disponibile in anteprima pubblica. Questa nuova esperienza consente di accedere a Defender per endpoint, Defender per Office 365, Microsoft 365 Defender e altre soluzioni nel Centro sicurezza Microsoft 365. I team di sicurezza possono ora gestire tutte le indagini su endpoint, posta elettronica e tra i prodotti, la configurazione e le correzioni senza passare ai portali dei prodotti separati. [Altre informazioni sulle novità](../mtp/overview-security-center.md).
