@@ -21,16 +21,16 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Con la gestione dei record di Microsoft 365, è possibile applicare le pianificazioni di conservazione in un piano di archiviazione che gestisce la conservazione, la dichiarazione dei record e l’eliminazione.
-ms.openlocfilehash: 857f8118bb2cc0f94065a8b8696c92bd3ae05cc4
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: 4f07732e403d711e2fa89bfb7c61c9eadfb2bd0b
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461851"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926184"
 ---
 # <a name="learn-about-records-management-in-microsoft-365"></a>Informazioni sulla gestione dei record in Microsoft 365
 
->*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
+>*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Le organizzazioni di tutti i tipi richiedono una soluzione di gestione dei record per gestire i record normativi, legali e di rilevanza per l'azienda tra i dati aziendali. La gestione dei record in Microsoft 365 consente alle organizzazioni di gestire gli obblighi legali, offre la possibilità di dimostrare la conformità alle normative e aumenta l'efficienza con una disponibilità regolare di elementi che non devono essere più conservati, non sono più di valore o non più obbligatori ai fini aziendali.
 
@@ -94,9 +94,7 @@ Note a piè di pagina:
 
 <sup>1</sup> Supportato da OneDrive ed Exchange conservando una copia in una posizione protetta, ma bloccato da SharePoint.
 
-Messaggio che un utente vede se tenta di eliminare un documento con etichetta in SharePoint:
-
-![Messaggio che segnala che un elemento non è stato eliminato da SharePoint](../media/d0020726-1593-4a96-b07c-89b275e75c49.png)
+Quando viene applicata un'etichetta di conservazione a un elemento elenco con un documento allegato, tale documento non erediterà le impostazioni di conservazione e potrà essere eliminato dall'elemento elenco. Al contrario, se tale elemento fosse stato dichiarato un record con un'etichetta di conservazione, il documento allegato avrebbe ereditato le impostazioni di conservazione e non avrebbe potuto essere eliminato. 
 
 <sup>2</sup> I container includono le raccolte documenti in SharePoint e le cassette postali in Exchange.
 
