@@ -14,18 +14,18 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 0f1dbf52-5bff-44cc-a264-1b48641af98f
 description: "Riepilogo: configurare Azure AD Connect per l'autenticazione federata a disponibilità elevata per Microsoft 365 in Microsoft Azure."
-ms.openlocfilehash: f00763487261b62940ac5def38d35158db77a699
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 2bca2b758486b85d185870e2e14b495b8f084cb7
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691336"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929409"
 ---
 # <a name="high-availability-federated-authentication-phase-5-configure-federated-authentication-for-microsoft-365"></a>Fase 5 dell'autenticazione federata a disponibilità elevata: configurare l'autenticazione federata per Microsoft 365
 
-In questa fase finale della distribuzione dell'autenticazione federata a disponibilità elevata per Microsoft 365 nei servizi infrastruttura di Azure, si ottiene e si installa un certificato emesso da un'autorità di certificazione pubblica, verificare la configurazione, quindi installare ed eseguire Azure AD Connect nel server di sincronizzazione della directory. Azure AD Connect configura l'abbonamento a Microsoft 365 e i server proxy dell'applicazione Web e Active Directory Federation Services (ADFS) per l'autenticazione federata.
+In questa fase finale della distribuzione dell'autenticazione federata a disponibilità elevata per Microsoft 365 nei servizi infrastruttura di Azure, si ottiene e si installa un certificato emesso da un'autorità di certificazione pubblica, verificare la configurazione, quindi installare ed eseguire Azure AD Connect nel server di sincronizzazione della directory. Azure AD Connect configura la sottoscrizione a Microsoft 365 e i server proxy di active Directory Federation Services (AD FS) e dell'applicazione Web per l'autenticazione federata.
   
-Vedere [Distribuire l'autenticazione federata a disponibilità elevata per Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) per tutte le fasi.
+Per tutte le fasi, vedere Distribuire l'autenticazione federata a disponibilità elevata per [Microsoft 365 in Azure.](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
 ## <a name="get-a-public-certificate-and-copy-it-to-the-directory-synchronization-server"></a>Ottenere un certificato pubblico e copiarlo nel server di sincronizzazione della directory
 
@@ -39,7 +39,7 @@ Ottenere un certificato digitale da un'Autorità di certificazione pubblica con 
     
 Inoltre, i computer e i dispositivi dell'organizzazione devono considerare attendibile l'Autorità di certificazione pubblica che emette il certificato digitale. Tale attendibilità viene stabilita con l'installazione di un certificato radice da parte dell'Autorità di certificazione pubblica nell'archivio Autorità di certificazione radice attendibili su computer e dispositivi. I computer che eseguono Microsoft Windows, in genere, includono un set di questi tipi di certificati installati dalle Autorità di certificazione di uso comune. Se il certificato radice non è ancora stato installato dall'Autorità di certificazione pubblica, è necessario distribuirlo ai computer e ai dispositivi dell'organizzazione.
   
-Per ulteriori informazioni sui requisiti dei certificati per l'autenticazione federata, vedere [Prerequisiti per l'installazione e la configurazione dei servizi federativi](https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect-prerequisites#prerequisites-for-federation-installation-and-configuration).
+Per ulteriori informazioni sui requisiti dei certificati per l'autenticazione federata, vedere [Prerequisiti per l'installazione e la configurazione dei servizi federativi](/azure/active-directory/connect/active-directory-aadconnect-prerequisites#prerequisites-for-federation-installation-and-configuration).
   
 Quando si riceve il certificato, copiarlo in una cartella nell'unità C: del server di sincronizzazione della directory. Ad esempio, assegnare al file il nome SSL.pfx e archiviarlo nella cartella C: \\ Certs nel server di sincronizzazione della directory.
   
@@ -57,7 +57,7 @@ A questo punto dovrebbe essere possibile configurare Azure AD Connect e l'autent
     
 - Un record A DNS privato per il servizio federativo FQDN sceglie l’indirizzo IP privato di bilanciamento del carico interno di Azure per i server AD FS.
     
-- Un certificato digitale esmittente da un'autorità di certificazione pubblica adatto per le connessioni SSL con san impostato sull'FQDN del servizio federativo è un file PFX archiviato nel server di sincronizzazione della directory.
+- Un certificato digitale esmittente dall'autorità di certificazione pubblica adatto per le connessioni SSL con la san impostata sull'FQDN del servizio federativo è un file PFX archiviato nel server di sincronizzazione della directory.
     
 - Il certificato radice per l'Autorità di certificazione pubblica viene installato nell'archivio Autorità di certificazione radice attendibili su computer e dispositivi.
     
@@ -69,7 +69,7 @@ Di seguito viene riportato un esempio per l'organizzazione Contoso:
   
 ## <a name="run-azure-ad-connect-to-configure-federated-authentication"></a>Eseguire Azure AD Connect per configurare l'autenticazione federata
 
-Lo strumento Azure AD Connect configura i server AD FS, i server proxy dell'applicazione Web e Microsoft 365 per l'autenticazione federata con questa procedura:
+Lo strumento Azure AD Connect configura i server AD FS, i server proxy dell'applicazione Web e Microsoft 365 per l'autenticazione federata con questi passaggi:
   
 1. Creare una connessione desktop remoto al server di sincronizzazione della directory con un account di dominio con privilegi di amministratore locale.
     
@@ -87,7 +87,7 @@ Lo strumento Azure AD Connect configura i server AD FS, i server proxy dell'appl
     
 8. Nella pagina **Connetti ad Azure AD** digitare il nome e la password di un account amministratore globale per l'abbonamento a Microsoft 365 e quindi fare clic su **Avanti.**
     
-9. Nella  pagina Connetti le directory verificare che la foresta di Servizi di dominio Active Directory locale sia selezionata **nella** foresta, digitare il nome e la password di un account amministratore di dominio, fare clic su Aggiungi **directory** e quindi su **Avanti.**
+9. Nella  pagina Connetti le directory verificare che la foresta di Servizi di dominio Active Directory locale sia selezionata in **Foresta,** digitare il nome e la password di un account amministratore di dominio, fare clic su Aggiungi **directory** e quindi su **Avanti.**
     
 10. Nella pagina **Configurazione dell'accesso ad Azure AD**, fare clic su **Avanti**.
     
@@ -135,7 +135,7 @@ Di seguito viene riportata la configurazione finale, con i nomi segnaposto per i
   
 **Fase 5: la configurazione finale dell'infrastruttura di autenticazione federata con disponibilità elevata in Azure**
 
-![La configurazione finale dell'infrastruttura di autenticazione federata di Microsoft 365 a disponibilità elevata in Azure](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
+![Configurazione finale dell'infrastruttura di autenticazione federata di Microsoft 365 a disponibilità elevata in Azure](../media/c5da470a-f2aa-489a-a050-df09b4d641df.png)
   
 L'infrastruttura di autenticazione federata a disponibilità elevata per Microsoft 365 in Azure è stata completata.
   
@@ -145,8 +145,6 @@ L'infrastruttura di autenticazione federata a disponibilità elevata per Microso
   
 [Identità federata per l'ambiente di sviluppo/test di Microsoft 365](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
-[Microsoft 365 Solution and Architecture Center](../solutions/solution-architecture-center.md)
+[Centro soluzioni e architetture di Microsoft 365](../solutions/index.yml)
 
 [Identità federata per Microsoft 365](https://support.office.com/article/Understanding-Office-365-identity-and-Azure-Active-Directory-06a189e7-5ec6-4af2-94bf-a22ea225a7a9#bk_federated)
-
-

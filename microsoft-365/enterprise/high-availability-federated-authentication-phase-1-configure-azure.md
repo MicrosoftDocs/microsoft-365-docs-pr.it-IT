@@ -14,16 +14,16 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 91266aac-4d00-4b5f-b424-86a1a837792c
 description: "Riepilogo: configurare l'infrastruttura di Microsoft Azure per ospitare l'autenticazione federata a disponibilità elevata per Microsoft 365."
-ms.openlocfilehash: d2a9fe3c31468cd53576a82639e0e61901192d8e
-ms.sourcegitcommit: c029834c8a914b4e072de847fc4c3a3dde7790c5
+ms.openlocfilehash: 7f9a935648fedd2c6235c443f7398f97c0a06e06
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "47332341"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929109"
 ---
 # <a name="high-availability-federated-authentication-phase-1-configure-azure"></a>Fase 1 dell'autenticazione federata a disponibilità elevata: configurare Azure
 
-In questa fase vengono creati i gruppi di risorse, la rete virtuale (VNet) e i set di disponibilità in Azure che ospiteranno le macchine virtuali nelle fasi 2, 3 e 4. È necessario completare questa fase prima di passare a [Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Vedere [Distribuire l'autenticazione federata a disponibilità elevata per Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) per tutte le fasi.
+In questa fase vengono creati i gruppi di risorse, la rete virtuale (VNet) e i set di disponibilità in Azure che ospiteranno le macchine virtuali nelle fasi 2, 3 e 4. È necessario completare questa fase prima di passare a [Phase 2: Configure domain controllers](high-availability-federated-authentication-phase-2-configure-domain-controllers.md). Per tutte le fasi, vedere Distribuire l'autenticazione federata a disponibilità elevata per [Microsoft 365 in Azure.](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
 È necessario eseguire il provisioning di Azure con questi componenti di base:
   
@@ -57,13 +57,13 @@ Per le prime tre subnet, specificare un nome e un singolo spazio di indirizzi IP
     
 2. Convertire i bit risultanti in formato decimale ed esprimerli come spazio di indirizzi con la lunghezza del prefisso impostata sulle dimensioni della subnet del gateway.
     
-Vedi [lo strumento di calcolo dello](address-space-calculator-for-azure-gateway-subnets.md) spazio degli indirizzi per le subnet del gateway di Azure per un blocco di comandi di PowerShell e un'applicazione console C# o Python che esegue automaticamente questo calcolo.
+Vedi [Strumento di calcolo dello spazio degli](address-space-calculator-for-azure-gateway-subnets.md) indirizzi per le subnet gateway di Azure per un blocco di comandi di PowerShell C# o un'applicazione console Python che esegue automaticamente questo calcolo.
   
 Consultare il reparto IT per determinare tali spazi di indirizzi in base allo spazio di indirizzi della rete virtuale.
   
 |**Elemento**|**Nome della subnet**|**Spazio di indirizzi della subnet**|**Scopo**|
 |:-----|:-----|:-----|:-----|
-|1.  <br/> |![riga](../media/Common-Images/TableLine.png)  <br/> |![riga](../media/Common-Images/TableLine.png)  <br/> |Subnet utilizzata dal controller di dominio di Servizi di dominio Active Directory e dalle macchine virtuali del server di sincronizzazione della directory.  <br/> |
+|1.  <br/> |![riga](../media/Common-Images/TableLine.png)  <br/> |![riga](../media/Common-Images/TableLine.png)  <br/> |Subnet utilizzata dal controller di dominio Servizi di dominio Active Directory e dalle macchine virtuali del server di sincronizzazione della directory.  <br/> |
 |2.  <br/> |![riga](../media/Common-Images/TableLine.png)  <br/> |![riga](../media/Common-Images/TableLine.png)  <br/> |La subnet utilizzata dalle macchine virtuali di AD FS.  <br/> |
 |3.  <br/> |![riga](../media/Common-Images/TableLine.png)  <br/> |![riga](../media/Common-Images/TableLine.png)  <br/> |La subnet utilizzata dalle macchine virtuali del proxy di applicazione Web.  <br/> |
 |4.  <br/> |GatewaySubnet  <br/> |![riga](../media/Common-Images/TableLine.png)  <br/> |La subnet utilizzata dalle macchine virtuali del gateway di Azure.  <br/> |
@@ -106,10 +106,10 @@ Per l'insieme degli spazi di indirizzi della rete locale, compilare la tabella L
    
  **Tabella L: prefissi degli indirizzi per la rete locale**
   
-Ora iniziamo a creare l'infrastruttura di Azure per ospitare l'autenticazione federata per Microsoft 365.
+Iniziamo ora a creare l'infrastruttura di Azure per ospitare l'autenticazione federata per Microsoft 365.
   
 > [!NOTE]
-> [!NOTA] I seguenti comandi consentono di utilizzare la versione più recente di Azure PowerShell. Vedere [Introduzione ad Azure PowerShell.](https://docs.microsoft.com/powershell/azure/get-started-azureps) 
+> [!NOTA] I seguenti comandi consentono di utilizzare la versione più recente di Azure PowerShell. Vedere [Introduzione ad Azure PowerShell.](/powershell/azure/get-started-azureps) 
   
 Avviare un prompt dei comandi di Azure PowerShell e accedere al proprio account.
   
@@ -118,7 +118,7 @@ Connect-AzAccount
 ```
 
 > [!TIP]
-> Per generare blocchi di comandi di PowerShell pronti all'esecuzione in base alle impostazioni personalizzate, utilizzare questa cartella di lavoro di configurazione [di Microsoft Excel.](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx) 
+> Per generare blocchi di comandi di PowerShell pronti per l'esecuzione in base alle impostazioni personalizzate, utilizzare questa cartella di lavoro di configurazione [di Microsoft Excel.](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx) 
 
 Ottenere il nome della sottoscrizione utilizzando il comando seguente.
   
@@ -126,7 +126,7 @@ Ottenere il nome della sottoscrizione utilizzando il comando seguente.
 Get-AzSubscription | Sort Name | Select Name
 ```
 
-Per le versioni precedenti di Azure PowerShell, utilizzare questo comando.
+Per le versioni precedenti di Azure PowerShell, usa invece questo comando.
   
 ```powershell
 Get-AzSubscription | Sort Name | Select SubscriptionName
@@ -253,7 +253,7 @@ $vnetConnection=New-AzVirtualNetworkGatewayConnection -Name $vnetConnectionName 
 ```
 
 > [!NOTE]
-> L'autenticazione federata di singoli utenti non fa affidamento ad alcuna risorsa locale. Tuttavia, se questa connessione VPN da sito a sito non è più disponibile, i controller di dominio nella rete virtuale non riceveranno aggiornamenti per gli account utente e i gruppi effettuati in Servizi di dominio Active Directory locale. Per assicurarsi che ciò non avvenga, è possibile configurare la disponibilità elevata per la connessione VPN da sito a sito. Per maggiori informazioni, vedere [Connettività cross-premise e da rete virtuale a rete virtuale a disponibilità elevata](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-highlyavailable)
+> L'autenticazione federata di singoli utenti non fa affidamento ad alcuna risorsa locale. Tuttavia, se questa connessione VPN da sito a sito non è più disponibile, i controller di dominio nella rete virtuale non riceveranno aggiornamenti per gli account utente e i gruppi effettuati in Servizi di dominio Active Directory locali. Per assicurarsi che ciò non avvenga, è possibile configurare la disponibilità elevata per la connessione VPN da sito a sito. Per maggiori informazioni, vedere [Connettività cross-premise e da rete virtuale a rete virtuale a disponibilità elevata](/azure/vpn-gateway/vpn-gateway-highlyavailable)
   
 Successivamente, registrare l'indirizzo IPv4 pubblico del gateway VPN di Azure per la rete virtuale visualizzato con questo comando:
   
@@ -261,7 +261,7 @@ Successivamente, registrare l'indirizzo IPv4 pubblico del gateway VPN di Azure p
 Get-AzPublicIpAddress -Name $publicGatewayVipName -ResourceGroupName $rgName
 ```
 
-Successivamente, configurare il dispositivo VPN locale per stabilire una connessione con il gateway VPN di Azure. Per ulteriori informazioni, vedere [Configurare il dispositivo VPN](https://docs.microsoft.com/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
+Successivamente, configurare il dispositivo VPN locale per stabilire una connessione con il gateway VPN di Azure. Per ulteriori informazioni, vedere [Configurare il dispositivo VPN](/azure/vpn-gateway/vpn-gateway-about-vpn-devices).
   
 Per configurare il dispositivo VPN locale, è necessario quanto segue:
   
@@ -314,8 +314,6 @@ Utilizzare [la fase 2: configurare i controller di](high-availability-federated-
   
 [Identità federata per l'ambiente di sviluppo/test di Microsoft 365](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
-[Microsoft 365 Solution and Architecture Center](../solutions/solution-architecture-center.md)
+[Centro soluzioni e architetture di Microsoft 365](../solutions/index.yml)
 
 [Informazioni sull'identità di Microsoft 365 e Azure Active Directory](about-microsoft-365-identity.md)
-
-

@@ -18,22 +18,22 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: bb003bdb-3c22-4141-ae3b-f0656fc23b9c
 description: Informazioni su come assegnare licenze agli account utente e disabilitare piani di servizio specifici contemporaneamente tramite PowerShell per Microsoft 365.
-ms.openlocfilehash: b027c805638284a78d4e49f4c65518be02e60392
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 7486968f6f4822047a1697ee1e05129277fd11a8
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691174"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929433"
 ---
 # <a name="disable-access-to-microsoft-365-services-while-assigning-user-licenses"></a>Disabilitare l'accesso ai servizi di Microsoft 365 durante l'assegnazione delle licenze utente
 
-*Questo articolo si applica sia a Microsoft 365 Enterprise che a Office 365 Enterprise*.
+*Questo articolo può essere applicato sia a Microsoft 365 Enterprise che a Office 365 Enterprise.*
 
-Gli abbonamenti a Microsoft 365 sono disponibili con piani di servizio per i singoli servizi. Gli amministratori di Microsoft 365 spesso devono disabilitare determinati piani quando assegnano licenze agli utenti. Con le istruzioni contenute in questo articolo, è possibile assegnare una licenza di Microsoft 365 disabilitando piani di servizio specifici tramite PowerShell per un singolo account utente o più account utente.
+Gli abbonamenti a Microsoft 365 sono disponibili con piani di servizio per singoli servizi. Gli amministratori di Microsoft 365 spesso devono disabilitare determinati piani quando assegnano licenze agli utenti. Con le istruzioni contenute in questo articolo, è possibile assegnare una licenza di Microsoft 365 disabilitando piani di servizio specifici tramite PowerShell per un singolo account utente o più account utente.
 
 ## <a name="use-the-azure-active-directory-powershell-for-graph-module"></a>Usare il modulo di Azure Active Directory PowerShell per Graph
 
-Prima di [tutto, connettersi al tenant di Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
+Innanzitutto, [connettersi al tenant di Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-azure-active-directory-powershell-for-graph-module)
   
 
 Successivamente, elencare i piani di licenza per il tenant con questo comando.
@@ -44,7 +44,7 @@ Get-AzureADSubscribedSku | Select SkuPartNumber
 
 Successivamente, ottenere il nome di accesso dell'account a cui si desidera aggiungere una licenza, noto anche come nome dell'entità utente (UPN).
 
-Successivamente, compilare un elenco di servizi da abilitare. Per un elenco completo dei piani di licenza (noti anche come nomi di prodotto), dei piani di servizio inclusi e dei nomi descrittivi corrispondenti, vedere Nomi dei prodotti e identificatori dei piani di servizio per la [gestione delle licenze.](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)
+Successivamente, compilare un elenco di servizi da abilitare. Per un elenco completo dei piani di licenza (noti anche come nomi di prodotto), dei piani di servizio inclusi e dei nomi descrittivi corrispondenti, vedere Nomi dei prodotti e identificatori del piano di servizio [per le licenze](/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
 
 Per il blocco di comandi seguente, inserire il nome dell'entità utente dell'account utente, il numero della parte SKU e l'elenco dei piani di servizio per abilitare e rimuovere il testo esplicativo e i \< and > caratteri. Successivamente, eseguire i comandi risultanti nel prompt dei comandi di PowerShell.
   
@@ -67,7 +67,7 @@ Set-AzureADUserLicense -ObjectId $user.ObjectId -AssignedLicenses $LicensesToAss
 
 ## <a name="use-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Usare il Modulo di Microsoft Azure Active Directory per Windows PowerShell
 
-Prima di [tutto, connettersi al tenant di Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
+Innanzitutto, [connettersi al tenant di Microsoft 365.](connect-to-microsoft-365-powershell.md#connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell)
 
 Eseguire quindi questo comando per visualizzare le sottoscrizioni correnti:
   
@@ -89,9 +89,9 @@ Nella visualizzazione del comando  `Get-MsolAccountSku`:
     
 - **ConsumedUnits** è il numero di licenze assegnate agli utenti per la sottoscrizione.
     
-Prendere nota di AccountSkuId per l'abbonamento a Microsoft 365 contenente gli utenti di cui si desidera ottenere la licenza. Inoltre, assicurarsi che siano disponibili licenze sufficienti da assegnare (sottrarre **ConsumedUnits** da **ActiveUnits** ).
+Nota accountSkuId per l'abbonamento a Microsoft 365 che contiene gli utenti di cui vuoi ottenere la licenza. Inoltre, assicurarsi che siano disponibili licenze sufficienti da assegnare (sottrarre **ConsumedUnits** da **ActiveUnits** ).
   
-Eseguire quindi questo comando per visualizzare i dettagli sui piani di servizio di Microsoft 365 disponibili in tutti gli abbonamenti:
+Eseguire quindi questo comando per visualizzare i dettagli sui piani di servizio di Microsoft 365 disponibili in tutte le sottoscrizioni:
   
 ```powershell
 Get-MsolAccountSku | Select -ExpandProperty ServiceStatus
@@ -109,19 +109,19 @@ La tabella seguente mostra i piani di servizio di Microsoft 365 e i relativi nom
 | `TEAMS1` <br/> |Microsoft Teams  <br/> |
 | `YAMMER_ENTERPRISE` <br/> |Yammer  <br/> |
 | `RMS_S_ENTERPRISE` <br/> |Azure Rights Management (RMS)  <br/> |
-| `OFFICESUBSCRIPTION` <br/> |Microsoft 365 Apps for enterprise *(in precedenza office 365 ProPlus)*  <br/> |
+| `OFFICESUBSCRIPTION` <br/> |Microsoft 365 Apps for enterprise *(in precedenza denominato Office 365 ProPlus)*  <br/> |
 | `MCOSTANDARD` <br/> |Skype for Business Online  <br/> |
 | `SHAREPOINTWAC` <br/> |Ufficio   <br/> |
 | `SHAREPOINTENTERPRISE` <br/> |SharePoint Online  <br/> |
 | `EXCHANGE_S_ENTERPRISE` <br/> |Exchange Online, piano 2  <br/> |
    
-Per un elenco completo dei piani di licenza (noti anche come nomi di prodotto), dei piani di servizio inclusi e dei nomi descrittivi corrispondenti, vedere Nomi dei prodotti e identificatori dei piani di servizio per la [gestione delle licenze.](https://docs.microsoft.com/azure/active-directory/users-groups-roles/licensing-service-plan-reference)
+Per un elenco completo dei piani di licenza (noti anche come nomi di prodotto), dei piani di servizio inclusi e dei nomi descrittivi corrispondenti, vedere Nomi dei prodotti e identificatori del piano di servizio [per le licenze](/azure/active-directory/users-groups-roles/licensing-service-plan-reference).
    
 Dopo aver creato AccountSkuId e i piani di servizio da disabilitare, è possibile assegnare licenze per un singolo utente o per più utenti.
   
 ### <a name="for-a-single-user"></a>Per un utente singolo
 
-Per un singolo utente, inserire il nome dell'entità utente dell'account utente, AccountSkuId e l'elenco dei piani di servizio per disabilitare e rimuovere il testo esplicativo e i \< and > caratteri. Successivamente, eseguire i comandi risultanti nel prompt dei comandi di PowerShell.
+Per un singolo utente, inserire il nome dell'entità utente dell'account utente, l'AccountSkuId e l'elenco dei piani di servizio per disabilitare e rimuovere il testo esplicativo e i \< and > caratteri. Successivamente, eseguire i comandi risultanti nel prompt dei comandi di PowerShell.
   
 ```powershell
 $userUPN="<the user's account name in email format>"

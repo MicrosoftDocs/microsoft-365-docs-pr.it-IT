@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 ms.assetid: 4c46c8cb-17d0-44b5-9776-005fced8e618
 description: Informazioni su come controllare quali utenti possono creare gruppi di Microsoft 365.
-ms.openlocfilehash: 04c2b6e738ed41f8d4a2bf96716fb74b1d260497
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 9c3edf335ce09f04e9b0b538e69fa607a9c34044
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838640"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929157"
 ---
 # <a name="manage-who-can-create-microsoft-365-groups"></a>Gestire chi può creare gruppi in Microsoft 365
 
@@ -63,7 +63,7 @@ Per gestire chi crea i gruppi, le persone seguenti hanno bisogno di licenze di A
 - Membri del gruppo a cui è consentito creare gruppi
 
 > [!NOTE]
-> Per [ulteriori informazioni su come assegnare licenze di Azure,](https://docs.microsoft.com/azure/active-directory/fundamentals/license-users-groups) vedere Assegnare o rimuovere licenze nel portale di Azure Active Directory.
+> Per [ulteriori informazioni su come assegnare licenze di Azure,](/azure/active-directory/fundamentals/license-users-groups) vedere Assegnare o rimuovere licenze nel portale di Azure Active Directory.
 
 Le persone seguenti non hanno bisogno di licenze EDU di Azure AD Premium o Azure AD Basic EDU assegnate:
 
@@ -83,19 +83,19 @@ Gli amministratori dei ruoli sopra elencati non devono essere membri di questo g
 
 4. Completare la configurazione del gruppo, aggiungere persone o altri gruppi che si desidera possano creare gruppi nell'organizzazione.
 
-Per istruzioni dettagliate, vedere Creare, modificare o eliminare un gruppo di sicurezza nell'interfaccia di amministrazione di [Microsoft 365.](https://docs.microsoft.com/microsoft-365/admin/email/create-edit-or-delete-a-security-group)
+Per istruzioni dettagliate, vedere Creare, modificare o eliminare un gruppo di sicurezza nell'interfaccia di amministrazione di [Microsoft 365.](../admin/email/create-edit-or-delete-a-security-group.md)
 
 ## <a name="step-2-run-powershell-commands"></a>Passaggio 2: Eseguire i comandi di PowerShell
 
-È necessario utilizzare la versione di anteprima di [Azure Active Directory PowerShell for Graph (AzureAD) (nome](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) modulo **AzureADPreview)** per modificare l'impostazione di accesso guest a livello di gruppo:
+È necessario utilizzare la versione di anteprima di [Azure Active Directory PowerShell for Graph (AzureAD) (nome](/powershell/azure/active-directory/install-adv2) modulo **AzureADPreview)** per modificare l'impostazione di accesso guest a livello di gruppo:
 
-- Se non è ancora stata installata una versione del modulo PowerShell di Azure AD, vedere [installare il modulo Azure AD](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2?view=azureadps-2.0-preview&preserve-view=true) e seguire le istruzioni per installare la versione di anteprima pubblica.
+- Se non è ancora stata installata una versione del modulo PowerShell di Azure AD, vedere [installare il modulo Azure AD](/powershell/azure/active-directory/install-adv2?preserve-view=true&view=azureadps-2.0-preview) e seguire le istruzioni per installare la versione di anteprima pubblica.
 
 - Se è installata la versione 2.0 disponibile a livello generale del modulo PowerShell di Azure AD (AzureAD), è necessario disinstallarlo eseguendo `Uninstall-Module AzureAD` nella sessione di PowerShell e quindi installare la versione di anteprima eseguendo `Install-Module AzureADPreview`.
 
 - Se è già stata installata la versione Preview, eseguire `Install-Module AzureADPreview` per verificare che sia la versione più recente di questo modulo.
 
-Copiare lo script seguente in un editor di testo, ad esempio Blocco note, [o Windows PowerShell ISE.](https://docs.microsoft.com/powershell/scripting/components/ise/introducing-the-windows-powershell-ise)
+Copiare lo script seguente in un editor di testo, ad esempio Blocco note, [o Windows PowerShell ISE.](/powershell/scripting/components/ise/introducing-the-windows-powershell-ise)
 
 Sostituire *\<GroupName\>* con il nome del gruppo creato. Ad esempio:
 
@@ -109,7 +109,7 @@ Eseguire lo script digitando:
 
 `.\GroupCreators.ps1`
 
-e [accedere con l'account amministratore](https://docs.microsoft.com/microsoft-365/enterprise/connect-to-microsoft-365-powershell#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) quando richiesto.
+e [accedere con l'account amministratore](../enterprise/connect-to-microsoft-365-powershell.md#step-2-connect-to-azure-ad-for-your-microsoft-365-subscription) quando richiesto.
 
 ```PowerShell
 $GroupName = "<GroupName>"
@@ -164,7 +164,7 @@ L'applicazione delle modifiche può richiedere 30 minuti o più. È possibile ve
 Ripetere la stessa procedura con un membro del gruppo.
 
 > [!NOTE]
-> Se i membri del gruppo non sono in grado di creare gruppi, verificare che non siano bloccati tramite il criterio OWA [cassetta postale](https://go.microsoft.com/fwlink/?linkid=852135).
+> Se i membri del gruppo non sono in grado di creare gruppi, verificare che non siano bloccati tramite il criterio OWA [cassetta postale](/powershell/module/exchange/set-owamailboxpolicy).
 
 ## <a name="related-topics"></a>Argomenti correlati
 
@@ -172,10 +172,10 @@ Ripetere la stessa procedura con un membro del gruppo.
 
 [Creare il piano di governance della collaborazione](collaboration-governance-first.md)
 
-[Guida introduttiva a PowerShell di Office 365](https://go.microsoft.com/fwlink/p/?LinkId=808033)
+[Guida introduttiva a PowerShell di Office 365](../enterprise/getting-started-with-microsoft-365-powershell.md)
 
-[Configurare la gestione dei gruppi in modalità self-service in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-self-service-management)
+[Configurare la gestione dei gruppi in modalità self-service in Azure Active Directory](/azure/active-directory/users-groups-roles/groups-self-service-management)
 
-[Set-ExecutionPolicy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy)
+[Set-ExecutionPolicy](/powershell/module/microsoft.powershell.security/set-executionpolicy)
 
-[Cmdlet di Azure Active Directory per la configurazione delle impostazioni dei gruppi](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets)
+[Cmdlet di Azure Active Directory per la configurazione delle impostazioni dei gruppi](/azure/active-directory/users-groups-roles/groups-settings-cmdlets)

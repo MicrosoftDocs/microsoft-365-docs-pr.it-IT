@@ -12,15 +12,15 @@ localization_priority: Normal
 ms.assetid: e87e84e1-7be0-44bf-a414-d91d60ed8817
 ms.custom:
 - seo-marvel-apr2020
-description: In questo articolo viene illustrato come utilizzare PowerShell per applicare le impostazioni di configurazione ai tenant in Microsoft Exchange Online Protection (EOP).
+description: In questo articolo imparerai a usare PowerShell per applicare le impostazioni di configurazione ai tenant in Microsoft Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4823ed09cd8a9d72aef21df3d51213cb4512b4f9
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 77a1dce25901845628f8148c44a0d0783088255e
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288538"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928509"
 ---
 # <a name="sample-script-for-applying-eop-settings-to-multiple-tenants"></a>Script di esempio per l'applicazione delle impostazioni di Exchange Online Protection a più tenant
 
@@ -29,15 +29,15 @@ ms.locfileid: "50288538"
 **Si applica a**
 -  [Exchange Online Protection autonomo](exchange-online-protection-overview.md)
 
-Il seguente script di esempio consente agli amministratori di Microsoft Exchange Online Protection (EOP) che gestiscono più tenant (società) di utilizzare PowerShell di Exchange Online per visualizzare e/o applicare le impostazioni di configurazione ai tenant.
+Lo script di esempio seguente consente agli amministratori di Microsoft Exchange Online Protection (EOP) che gestiscono più tenant (società) di utilizzare PowerShell di Exchange Online per visualizzare e/o applicare le impostazioni di configurazione ai tenant.
 
 ## <a name="to-run-a-script-or-cmdlet-on-multiple-tenants"></a>Eseguire uno script o un cmdlet su più tenant
 
-1. Se non è già stato fatto, [installare il modulo V2 di Exchange Online.](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)
+1. Se non l'hai già fatto, [installa il modulo Exchange Online V2.](/powershell/exchange/exchange-online-powershell-v2#install-and-maintain-the-exo-v2-module)
 
-2. Usando un'app per fogli di calcolo (ad esempio, Excel), crea un file CSV con i dettagli seguenti:
+2. Usando un'app per fogli di calcolo (ad esempio Excel), crea un file CSV con i dettagli seguenti:
 
-   - Colonna UserName: l'account che verrà utilizzato per la connessione (ad esempio, `admin@contoso.onmicrosoft.com` ).
+   - Colonna UserName: l'account che verrà utilizzato per connettersi ( ad esempio, `admin@contoso.onmicrosoft.com` ).
    - Colonna cmdlet: il cmdlet o il comando da eseguire (ad esempio, `Get-AcceptedDomain` o `Get-AcceptedDomain | FT Name` ).
 
    Il file sarà simile al seguente:
@@ -69,7 +69,7 @@ Il seguente script di esempio consente agli amministratori di Microsoft Exchange
 ## <a name="runcmdletonmultipletenantsps1"></a>RunCmdletOnMultipleTenants.ps1
 
 > [!NOTE]
-> Potrebbe essere necessario modificare la `Connect-IPPSSession` riga nello script in modo che corrisponda al proprio ambiente. Ad esempio, Office 365 Germany richiede un _valore ConnectionUri_ diverso da quello corrente in uno script. Per informazioni dettagliate, vedere Connettersi [a PowerShell di Exchange Online.](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-protection-powershell)
+> Potrebbe essere necessario modificare la riga nello script in modo `Connect-IPPSSession` che corrisponda all'ambiente. Ad esempio, Office 365 Germany richiede un _valore ConnectionUri_ diverso rispetto al valore corrente in uno script. Per informazioni dettagliate, vedere Connect to [Exchange Online Powershell.](/powershell/exchange/connect-to-exchange-online-protection-powershell)
 
 ```powershell
 # This script runs Windows PowerShell cmdlets on multiple tenants.

@@ -14,30 +14,30 @@ f1.keywords:
 ms.custom: Ent_Solutions
 ms.assetid: 1c903173-67cd-47da-86d9-d333972dda80
 description: "Riepilogo: configurare i server proxy dell'applicazione Web per l'autenticazione federata a disponibilità elevata per Microsoft 365 in Microsoft Azure."
-ms.openlocfilehash: fd63274ffb9528cedb88fc2ba77834cfd56664d4
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 95d73d05f2eef087e606df14db180b24c69d5932
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46691339"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929073"
 ---
 # <a name="high-availability-federated-authentication-phase-4-configure-web-application-proxies"></a>Fase 4 dell'autenticazione federata a disponibilità elevata: configurare i proxy applicazione Web
 
-In questa fase di distribuzione della disponibilità elevata per l'autenticazione federata di Microsoft 365 nei servizi dell'infrastruttura di Azure, viene creato un servizio di bilanciamento del carico interno e due server AD FS.
+In questa fase di distribuzione della disponibilità elevata per l'autenticazione federata di Microsoft 365 nei servizi infrastruttura di Azure, si crea un servizio di bilanciamento del carico interno e due server AD FS.
   
-È necessario completare questa fase prima di passare alla [fase 5: Configurare l'autenticazione federata per Microsoft 365.](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) Vedere [Distribuire l'autenticazione federata a disponibilità elevata per Microsoft 365 in Azure](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md) per tutte le fasi.
+È necessario completare questa fase prima di passare alla [fase 5: configurare l'autenticazione federata per Microsoft 365.](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) Per tutte le fasi, vedere Distribuire l'autenticazione federata a disponibilità elevata per [Microsoft 365 in Azure.](deploy-high-availability-federated-authentication-for-microsoft-365-in-azure.md)
   
 ## <a name="create-the-internet-facing-load-balancer-in-azure"></a>Creare il bilanciatore di carico per traffico Internet in Azure
 
 È necessario creare un bilanciatore di carico per traffico Internet affinché Azure distribuisca il traffico di autenticazione del client in arrivo da Internet uniformemente tra i due server proxy dell'applicazione Web.
   
 > [!NOTE]
-> [!NOTA] I seguenti comandi consentono di utilizzare la versione più recente di Azure PowerShell. Vedere [Introduzione ad Azure PowerShell.](https://docs.microsoft.com/powershell/azure/get-started-azureps) 
+> [!NOTA] I seguenti comandi consentono di utilizzare la versione più recente di Azure PowerShell. Vedere [Introduzione ad Azure PowerShell.](/powershell/azure/get-started-azureps) 
   
 Una volta forniti i valori per i gruppi di risorse e il percorso, eseguire il blocco risultante nel prompt dei comandi di Azure PowerShell o in PowerShell ISE.
   
 > [!TIP]
-> Per generare blocchi di comandi di PowerShell pronti all'esecuzione in base alle impostazioni personalizzate, utilizzare questa cartella di lavoro di configurazione [di Microsoft Excel.](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx) 
+> Per generare blocchi di comandi di PowerShell pronti per l'esecuzione in base alle impostazioni personalizzate, utilizzare questa cartella di lavoro di configurazione [di Microsoft Excel.](https://github.com/MicrosoftDocs/OfficeDocs-Enterprise/raw/live/Enterprise/downloads/O365FedAuthInAzure_Config.xlsx) 
 
 ```powershell
 # Set up key variables
@@ -60,7 +60,7 @@ Write-Host (Get-AzPublicIpaddress -Name "WebProxyPublicIP" -ResourceGroup $rgNam
 
 ## <a name="determine-your-federation-service-fqdn-and-create-dns-records"></a>Determinare il nome di dominio completo del servizio federativo e creare record DNS
 
-È necessario determinare il nome DNS per identificare il nome del servizio federativo su Internet. Azure AD Connect configurerà Microsoft 365 con questo nome nella fase 5, che diventerà parte dell'URL inviato da Microsoft 365 per connettere i client per ottenere un token di sicurezza. Un esempio è fs.contoso.com (dove fs è l'acronimo di federation service, cioè servizio federativo).
+È necessario determinare il nome DNS per identificare il nome del servizio federativo su Internet. Azure AD Connect configurerà Microsoft 365 con questo nome nella fase 5, che diventerà parte dell'URL inviato da Microsoft 365 ai client che si connettono per ottenere un token di sicurezza. Un esempio è fs.contoso.com (dove fs è l'acronimo di federation service, cioè servizio federativo).
   
 Una volta ottenuto il nome di dominio completo del servizio federativo, creare un record di tipo A del dominio DNS pubblico per il nome di dominio completo che consente di determinare l'indirizzo IP pubblico del bilanciatore di carico per traffico Internet di Azure.
   
@@ -94,7 +94,7 @@ Si noti che i seguenti set di comandi di Azure PowerShell utilizzano i valori in
     
 - Tabella A, per i set di disponibilità
     
-Tenere presente che la tabella M è stata definita nella fase [2:](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) Configurare i controller di dominio e le tabelle R, V, S, I e A nella [fase 1: configurare Azure.](high-availability-federated-authentication-phase-1-configure-azure.md)
+Tenere presente che è stata definita la tabella M nella [fase 2:](high-availability-federated-authentication-phase-2-configure-domain-controllers.md) configurare i controller di dominio e le tabelle R, V, S, I e A nella [fase 1: configurare Azure](high-availability-federated-authentication-phase-1-configure-azure.md).
   
 Una volta forniti tutti i valori opportuni, eseguire il blocco risultante nel prompt dei comandi di Azure PowerShell o in PowerShell ISE.
   
@@ -160,7 +160,7 @@ Di seguito è riportata la configurazione risultante dal completamento corretto 
   
 ## <a name="next-step"></a>Passaggio successivo
 
-Usare [la fase 5: configurare l'autenticazione federata per Microsoft 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) per continuare a configurare questo carico di lavoro.
+Utilizzare [la fase 5: configurare l'autenticazione federata per Microsoft 365](high-availability-federated-authentication-phase-5-configure-federated-authentic.md) per continuare a configurare questo carico di lavoro.
   
 ## <a name="see-also"></a>Vedere anche
 
@@ -168,5 +168,4 @@ Usare [la fase 5: configurare l'autenticazione federata per Microsoft 365](high-
   
 [Identità federata per l'ambiente di sviluppo/test di Microsoft 365](federated-identity-for-your-microsoft-365-dev-test-environment.md)
   
-[Microsoft 365 Solution and Architecture Center](../solutions/solution-architecture-center.md)
-
+[Centro soluzioni e architetture di Microsoft 365](../solutions/index.yml)

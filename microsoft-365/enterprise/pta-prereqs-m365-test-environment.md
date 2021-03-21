@@ -14,22 +14,22 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Creare un ambiente Microsoft 365 per testare l’accesso di identità e dispositivi con i prerequisiti per l'autenticazione pass-through.
-ms.openlocfilehash: 71ba116ee45f031b156934e0924a0c3d460110d5
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 3d7b92bb064ee1b008ac98f836aff6e0287739af
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233763"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929001"
 ---
 # <a name="identity-and-device-access-prerequisites-for-pass-through-authentication-in-your-microsoft-365-test-environment"></a>Prerequisiti per l’accesso di identità e dispositivi per l’autenticazione pass-through nell’ambiente di testing di Microsoft 365
 
-*Questa guida del laboratorio di testing può essere usata solo per gli ambienti di testing di Microsoft 365 per le aziende.*
+*Questa guida al laboratorio di testing può essere utilizzata solo per gli ambienti di testing di Microsoft 365 per le aziende.*
 
-[Le configurazioni di](../security/office-365-security/microsoft-365-policies-configurations.md) identità e accesso ai dispositivi sono un set di configurazioni e criteri di accesso condizionale per proteggere l'accesso a tutti i servizi in Microsoft 365 per le aziende integrati con Azure Active Directory (Azure AD).
+[Le configurazioni di identità](../security/office-365-security/microsoft-365-policies-configurations.md) e accesso ai dispositivi sono un set di configurazioni e criteri di accesso condizionale per proteggere l'accesso a tutti i servizi in Microsoft 365 per le aziende integrati con Azure Active Directory (Azure AD).
 
 In questo articolo viene descritto come è possibile configurare un ambiente di testing di Microsoft 365 che soddisfi i requisiti di [Configurazione dei prerequisiti di autenticazione pass-through ](../security/office-365-security/identity-access-prerequisites.md#prerequisites) per l’accesso di identità e dispositivi.
 
-Esistono dieci fasi per configurare questo ambiente di testing:
+La configurazione di questo ambiente di testing è in dieci fasi:
 
 1. Creare un’organizzazione fittizia con autenticazione pass-through per l’ambiente di testing di Microsoft 365.
 2. Configurare l’accesso unificato Single Sign-On di Azure AD
@@ -37,7 +37,7 @@ Esistono dieci fasi per configurare questo ambiente di testing:
 4. Configurare il writeback delle password
 5. Configurare la reimpostazione self-service delle password
 6. Configurare l’autenticazione a più fattori
-7. Abilitare la registrazione automatica dei dispositivi di computer Windows aggiunti a un dominio
+7. Abilitare la registrazione automatica dei dispositivi dei computer Windows aggiunti al dominio
 8. Configurare la protezione con password di Azure AD 
 9. Abilitare Azure AD Identity Protection
 10. Abilitare l'autenticazione moderna per Exchange Online e Skype for Business Online
@@ -58,7 +58,7 @@ Seguire le istruzioni contenute nella [Fase 2 della guida al lab di test per l�
 
 Prima di tutto determinare gli indirizzi IP pubblici o gli intervalli di indirizzi usati all'interno dell'organizzazione.
 
-Quindi, seguire le istruzioni contenute in [Configurare le posizioni specifiche in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/reports-monitoring/quickstart-configure-named-locations) per aggiungere gli indirizzi o gli intervalli di indirizzi come posizioni specifiche. 
+Quindi, seguire le istruzioni contenute in [Configurare le posizioni specifiche in Azure Active Directory](/azure/active-directory/reports-monitoring/quickstart-configure-named-locations) per aggiungere gli indirizzi o gli intervalli di indirizzi come posizioni specifiche. 
 
 ## <a name="phase-4-configure-password-writeback"></a>Fase 4: configurare il writeback delle password
 
@@ -88,13 +88,13 @@ Seguire le istruzioni contenute nella [Fase 2 della guida al lab di test per aut
 
 Testare l'autenticazione a più fattori solo per l'account Utente 2.
 
-## <a name="phase-7-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>Fase 7: abilitare la registrazione automatica dei dispositivi dei computer Windows aggiunti a un dominio 
+## <a name="phase-7-enable-automatic-device-registration-of-domain-joined-windows-computers"></a>Fase 7: abilitare la registrazione automatica dei dispositivi dei computer Windows aggiunti al dominio 
 
-Segui [queste istruzioni per](https://docs.microsoft.com/azure/active-directory/devices/hybrid-azuread-join-plan) abilitare la registrazione automatica dei dispositivi dei computer Windows aggiunti a un dominio.
+Segui [queste istruzioni per](/azure/active-directory/devices/hybrid-azuread-join-plan) abilitare la registrazione automatica dei dispositivi dei computer Windows aggiunti al dominio.
 
 ## <a name="phase-8-configure-azure-ad-password-protection"></a>Fase 8: configurare la protezione con password di Azure AD 
 
-Seguire [queste istruzioni](https://docs.microsoft.com/azure/active-directory/authentication/concept-password-ban-bad) per bloccare le password deboli note e le relative varianti.
+Seguire [queste istruzioni](/azure/active-directory/authentication/concept-password-ban-bad) per bloccare le password deboli note e le relative varianti.
 
 ## <a name="phase-9-enable-azure-ad-identity-protection"></a>Fase 9: abilitare Azure AD Identity Protection
 
@@ -102,11 +102,11 @@ Seguire le istruzioni contenute nella [Fase 2 della guida al lab di test per Azu
 
 ## <a name="phase-10-enable-modern-authentication-for-exchange-online-and-skype-for-business-online"></a>Fase 10: abilitare l'autenticazione moderna per Exchange Online e Skype for Business online
 
-Per Exchange Online, fare clic su [queste istruzioni](https://docs.microsoft.com/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later). 
+Per Exchange Online, fare clic su [queste istruzioni](/Exchange/clients-and-mobile-in-exchange-online/enable-or-disable-modern-authentication-in-exchange-online#enable-or-disable-modern-authentication-in-exchange-online-for-client-connections-in-outlook-2013-or-later). 
 
 Per Skype for Business Online:
 
-1. Connettere a [Skype for Business Online](https://docs.microsoft.com/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell).
+1. Connettere a [Skype for Business Online](/SkypeForBusiness/set-up-your-computer-for-windows-powershell/set-up-your-computer-for-windows-powershell).
 
 2. Eseguire questo comando.
 
@@ -124,7 +124,7 @@ Il risultato è un ambiente di testing che soddisfa i requisiti di [Configurazio
 
 ## <a name="next-step"></a>Passaggio successivo
 
-Usare i [criteri comuni di identità e accesso ai dispositivi](identity-access-policies.md) per configurare i criteri basati sui prerequisiti e proteggere identità e dispositivi.
+Usare i [criteri comuni di identità e accesso ai dispositivi](../security/office-365-security/identity-access-policies.md) per configurare i criteri basati sui prerequisiti e proteggere identità e dispositivi.
 
 ## <a name="see-also"></a>Vedere anche
 
@@ -136,5 +136,4 @@ Usare i [criteri comuni di identità e accesso ai dispositivi](identity-access-p
 
 [Panoramica di Microsoft 365 per le aziende](microsoft-365-overview.md)
 
-[Documentazione di Microsoft 365 for enterprise](https://docs.microsoft.com/microsoft-365-enterprise/)
-
+[Documentazione di Microsoft 365 for enterprise](/microsoft-365-enterprise/)

@@ -1,5 +1,5 @@
 ---
-title: Panoramica degli eventi imprevisti in Microsoft 365 Defender
+title: Panoramica degli incidenti in Microsoft 365 Defender
 description: Analizzare gli eventi imprevisti visualizzati su dispositivi, utenti e cassette postali.
 keywords: eventi, avvisi, analisi, correlazione, attacco, computer, dispositivi, utenti, identità, cassetta postale, posta elettronica, 365, Microsoft, M365
 search.product: eADQiWindows 10XVcnh
@@ -22,14 +22,14 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 7fcbecddd5e8f83e9c78d6db90939fbfc2f2df07
-ms.sourcegitcommit: 855719ee21017cf87dfa98cbe62806763bcb78ac
+ms.openlocfilehash: de3fba2692f5b6df7c7192c328a3911287cd7ce2
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "49929283"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928725"
 ---
-# <a name="incidents-overview-in-microsoft-365-defender"></a>Panoramica degli eventi imprevisti in Microsoft 365 Defender
+# <a name="incidents-overview-in-microsoft-365-defender"></a>Panoramica degli incidenti in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
@@ -37,11 +37,11 @@ ms.locfileid: "49929283"
 **Si applica a:**
 - Microsoft 365 Defender
 
-> Si vuole provare Microsoft 365 Defender? È possibile [valutarlo in un ambiente lab o](https://aka.ms/mtp-trial-lab) eseguire il progetto pilota in [produzione.](https://aka.ms/m365d-pilotplaybook)
+> Vuoi provare Microsoft 365 Defender? È possibile [valutarlo in un ambiente lab o](./mtp-evaluation.md?ocid=cx-docs-MTPtriallab) eseguire il progetto pilota in [produzione.](./mtp-pilot.md?ocid=cx-evalpilot)
 >
 
 
-Gli eventi imprevisti si basano su avvisi correlati. Gli avvisi vengono creati quando un'attività o un evento dannoso viene visualizzato nella rete. I singoli avvisi forniscono preziose indicazioni su un attacco in corso. Tuttavia, gli attacchi in genere utilizzano diversi vettori e tecniche per eseguire una violazione. La torta di singoli indizi può essere impegnativa e dispendiosa in termini di tempo.
+Gli eventi imprevisti si basano su avvisi correlati. Gli avvisi vengono creati quando un'attività o un evento dannoso viene visualizzato nella rete. I singoli avvisi forniscono indicazioni preziose su un attacco in corso. Tuttavia, gli attacchi in genere utilizzano vari vettori e tecniche per eseguire una violazione. La torta di singoli indizi può essere impegnativa e dispendiosa in termini di tempo.
 
 Questo breve video offre una panoramica degli eventi imprevisti in Microsoft 365 Defender.
 <br>
@@ -50,13 +50,13 @@ Questo breve video offre una panoramica degli eventi imprevisti in Microsoft 365
 
 Un evento imprevisto è una raccolta di avvisi correlati che costituiscono la storia di un attacco. Gli eventi dannosi e sospetti rilevati in entità di dispositivi, utenti e cassette postali diversi nella rete vengono aggregati automaticamente da Microsoft 365 Defender. Il raggruppamento degli avvisi correlati in un evento imprevisto offre ai difensori della sicurezza una visualizzazione completa di un attacco. 
 
-Ad esempio, i difensori della sicurezza possono vedere dove è iniziato l'attacco, quali tattiche sono state usate e quanto l'attacco è passato alla rete. Possono anche vedere l'ambito dell'attacco, ad esempio il numero di dispositivi, utenti e cassette postali interessati, il livello di impatto e altri dettagli sulle entità interessate.
+Ad esempio, i difensori della sicurezza possono vedere dove è iniziato l'attacco, quali tattiche sono state usate e quanto l'attacco è andato nella rete. Possono inoltre visualizzare l'ambito dell'attacco, ad esempio il numero di dispositivi, utenti e cassette postali interessati, il livello di impatto e altri dettagli sulle entità interessate.
 
-Se abilitato, Microsoft 365 Defender può analizzare e risolvere automaticamente i singoli avvisi tramite automazione e intelligenza artificiale. I difensori della sicurezza possono anche eseguire ulteriori passaggi di correzione per risolvere l'attacco direttamente dalla visualizzazione degli incidenti. 
+Se abilitato, Microsoft 365 Defender può analizzare e risolvere automaticamente i singoli avvisi tramite l'automazione e l'intelligenza artificiale. I difensori della sicurezza possono anche eseguire ulteriori passaggi di correzione per risolvere l'attacco direttamente dalla vista degli incidenti. 
 
-Gli eventi imprevisti degli ultimi 30 giorni vengono visualizzati nella coda degli eventi imprevisti. Da qui, i difensori della sicurezza possono vedere quali incidenti devono essere classificati in ordine di priorità in base al livello di rischio e ad altri fattori. 
+Gli eventi imprevisti degli ultimi 30 giorni vengono visualizzati nella coda degli eventi imprevisti. Da qui, i difensori della sicurezza possono vedere quali incidenti devono essere classificati in base al livello di rischio e ad altri fattori. 
 
-I difensori della sicurezza possono anche rinominare gli eventi imprevisti, assegnarli a singoli analisti, classificare e aggiungere tag agli eventi imprevisti per un'esperienza di gestione degli eventi imprevisti migliore e più personalizzata.
+I difensori della sicurezza possono anche rinominare gli incidenti, assegnarli a singoli analisti, classificare e aggiungere tag agli incidenti per un'esperienza di gestione degli eventi imprevisti migliore e più personalizzata.
 
 
 

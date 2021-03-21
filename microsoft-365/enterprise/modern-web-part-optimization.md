@@ -20,20 +20,20 @@ ms.custom:
 ms.reviewer: sstewart
 search.appverid:
 - MET150
-description: Informazioni su come usare Diagnostica pagine per ottimizzare le prestazioni delle web part nelle pagine moderne dei siti di SharePoint Online.
-ms.openlocfilehash: ca1b9328ad71fdd4a3f3c6c6be47eaa3993d4fc7
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+description: Informazioni su come usare Diagnostica pagine per ottimizzare le prestazioni delle web part nelle pagine di siti moderni di SharePoint Online.
+ms.openlocfilehash: 2a72ecd8bc1f6dee4166809f72ce5f9bce422dc9
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50287150"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50929061"
 ---
 # <a name="optimize-web-part-performance-in-sharepoint-online-modern-site-pages"></a>Ottimizzare le prestazioni delle web part nelle pagine moderne di siti di SharePoint Online
 
 Le pagine moderne dei siti di SharePoint Online contengono web part che possono influire sui tempi di caricamento complessivi delle pagine. Questo articolo spiega come determinare l'impatto delle web part presenti nelle pagine sulla latenza percepita dall'utente e come risolvere problemi comuni.
 
 >[!NOTE]
->Per altre informazioni sulle prestazioni nei portali moderni di SharePoint Online, vedere [Prestazioni nell'esperienza moderna di SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance).
+>Per altre informazioni sulle prestazioni nei portali moderni di SharePoint Online, vedere [Prestazioni nell'esperienza moderna di SharePoint](/sharepoint/modern-experience-performance).
 
 ## <a name="use-the-page-diagnostics-for-sharepoint-tool-to-analyze-web-parts"></a>Usare lo strumento Diagnostica pagine per SharePoint per analizzare le web part
 
@@ -57,15 +57,15 @@ Se il risultato **Le web part influiscono sul tempo di caricamento delle pagine*
 Le informazioni disponibili nei risultati includono:
 
 - **Realizzato da** mostra se la web part è personalizzata o Microsoft OOTB.
-- **Il nome e l'ID** mostrano informazioni di identificazione che consentono di trovare la web part nella pagina.
+- **Nome e ID** mostra informazioni di identificazione che consentono di trovare la web part nella pagina.
 - **Totale** mostra il tempo totale per il caricamento, l'inizializzazione e il rendering della web part. È il tempo relativo totale impiegato dalla web part per il rendering nella pagina, dall'inizio alla fine.
-- **Caricamento modulo** mostra il tempo impiegato per scaricare, valutare e caricare i file JavaScript e CSS delle estensioni. Verrà quindi avviato il processo Init.
-- **Caricamento lazy** mostra il tempo per il caricamento posticipato delle web part non visualizzate nella sezione principale della pagina. Esistono alcune condizioni in cui sono presenti troppe web part di cui eseguire il rendering e vengono accodate per il rendering per ridurre al minimo il tempo di caricamento della pagina.
+- **Caricamento modulo** mostra il tempo impiegato per scaricare, valutare e caricare le estensioni JavaScript e i file CSS. Verrà quindi avviato il processo Init.
+- **Caricamento lazy** indica il tempo per il caricamento posticipato delle web part non visualizzate nella sezione principale della pagina. Esistono determinate condizioni in cui sono presenti troppe web part di cui eseguire il rendering e vengono accodate per il rendering per ridurre al minimo il tempo di caricamento della pagina.
 - **Init** mostra il tempo impiegato dalla web part per inizializzare i dati.
-    Si tratta di una chiamata asincrona e il tempo di init è il calcolo del tempo per la funzione onInit quando viene risolta la promessa restituita.
-- **Il** rendering mostra il tempo impiegato per eseguire il rendering dell'interfaccia utente dopo il completamento del caricamento del modulo e di Init.
-    È il tempo di esecuzione di JavaScript per montare il dom nel documento (pagina).
-    Il rendering delle risorse asincrone, ad esempio le immagini, potrebbe richiedere tempo aggiuntivo.
+    Si tratta di una chiamata asincrona e il tempo di init è il calcolo del tempo per la funzione onInit quando la promessa restituita viene risolta.
+- **Render** mostra il tempo impiegato per eseguire il rendering dell'interfaccia utente dopo il caricamento del modulo e il completamento di Init.
+    È il tempo di esecuzione JavaScript per montare il DOM nel documento (pagina).
+    Il rendering delle risorse asincrone, ad esempio le immagini, potrebbe richiedere più tempo per il completamento.
 
 Queste informazioni vengono fornite per consentire a progettisti e sviluppatori di risolvere i problemi. Devono essere fornite al team di progettazione e sviluppo.
 
@@ -80,10 +80,10 @@ Sono tre le categorie delle possibili cause dei problemi di prestazioni delle we
   - Spostare gli scenari meno frequenti e modificare il codice della modalità, ad esempio il riquadro delle proprietà, per separare i blocchi con l'istruzione _import()_.
   - Esaminare le dipendenze del file _package.json_ per rimuovere completamente il codice inutilizzato. Spostare tutte le dipendenze relative solo a test/compilazione in devDependencies.
   - Per il download ottimale delle risorse statiche è necessario usare la rete per la distribuzione di contenuti di Office 365. Per i file _js/css_ sono preferibili origini pubbliche della rete per la distribuzione di contenuti. Per altre informazioni sull'uso della rete CDN di Office 365, vedere [Usare la rete per la distribuzione di contenuti di Office 365 con SharePoint Online](use-microsoft-365-cdn-with-spo.md).
-  - Riutilizzare framework come _React_ e _Fabric imports_, che fanno parte di SharePoint Framework (SPFx). Per altre informazioni, vedere [Panoramica di SharePoint Framework](https://docs.microsoft.com/sharepoint/dev/spfx/sharepoint-framework-overview).
+  - Riutilizzare framework come _React_ e _Fabric imports_, che fanno parte di SharePoint Framework (SPFx). Per altre informazioni, vedere [Panoramica di SharePoint Framework](/sharepoint/dev/spfx/sharepoint-framework-overview).
   - Assicurarsi di usare la versione più recente di SharePoint Framework e di eseguire l'aggiornamento alle nuove versioni non appena disponibili.
 - Recupero e memorizzazione dei dati nella cache
-  - Se la web part si basa su chiamate aggiuntive al server per recuperare i dati per la visualizzazione, assicurarsi che tali API server siano veloci e/o implementare la memorizzazione nella cache sul lato client (ad esempio, l'uso di _localStorage_ o _IndexedDB_ per set più grandi).
+  - Se la web part si basa su chiamate server aggiuntive per recuperare i dati per la visualizzazione, verificare che tali API del server siano veloci e/o implementino la memorizzazione nella cache sul lato client (ad esempio, l'uso di _localStorage_ o _IndexedDB_ per set più grandi).
   - Se sono necessarie più chiamate per eseguire il rendering dei dati critici, provare a eseguirle in batch nel server o a usare altri metodi per consolidare le richieste in un'unica chiamata.
   - In alternativa, se alcuni elementi dei dati richiedono una API più lenta, ma non sono essenziali per il rendering iniziale, sdoppiarli in una chiamata separata che viene eseguita dopo il rendering dei dati critici.
   - Se più parti usano gli stessi dati, usare un livello dati comune per evitare chiamate duplicate.
@@ -107,7 +107,7 @@ Prima di revisionare le pagine per correggere i problemi di prestazioni, prender
 
 [Ottimizzare le prestazioni di Office 365](tune-microsoft-365-performance.md)
 
-[Prestazioni nell'esperienza moderna di SharePoint](https://docs.microsoft.com/sharepoint/modern-experience-performance)
+[Prestazioni nell'esperienza moderna di SharePoint](/sharepoint/modern-experience-performance)
 
 [Reti per la distribuzione di contenuti](content-delivery-networks.md)
 
