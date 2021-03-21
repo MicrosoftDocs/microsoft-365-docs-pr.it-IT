@@ -16,12 +16,12 @@ ms.custom: ''
 localization_priority: Priority
 f1.keywords: NOCSH
 description: Informazioni su come limitare l'esposizione accidentale di informazioni quando si condividono file con persone esterne all'organizzazione.
-ms.openlocfilehash: 430c00d46fa3801d0869b05a651fadd3bf5dea28
-ms.sourcegitcommit: 8a726ed7ec19a8728c079780fa4d343a5f759fbb
+ms.openlocfilehash: 952337790ce2f0418dd5ab637435f1523b27b562
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 11/13/2020
-ms.locfileid: "49029970"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928413"
 ---
 # <a name="limit-accidental-exposure-to-files-when-sharing-with-people-outside-your-organization"></a>Limitare l'esposizione accidentale ai file durante la condivisione con persone esterne all'organizzazione
 
@@ -37,7 +37,7 @@ Se le persone dell'organizzazione devono eseguire la condivisione non autenticat
 
 Se si vuole che le persone esterne all'organizzazione eseguano sempre l'autenticazione per accedere al contenuto di SharePoint, Groups o Teams, è possibile disattivare la condivisione *Chiunque*. In questo modo si impedisce agli utenti di condividere il contenuto senza autenticazione.
 
-Se si disabilitano i collegamenti di tipo *Chiunque* , gli utenti potranno comunque condividerli facilmente con gli utenti guest utilizzando i collegamenti di tipo *Persone specifiche*. In questo caso, per poter accedere al contenuto condiviso, tutte le persone esterne all'organizzazione dovranno eseguire l'autenticazione.
+Se si disabilitano i collegamenti di tipo *Chiunque*, gli utenti potranno comunque condividerli facilmente con gli utenti guest utilizzando i collegamenti di tipo *Persone specifiche*. In questo caso, per poter accedere al contenuto condiviso, tutte le persone esterne all'organizzazione dovranno eseguire l'autenticazione.
 
 In base alle proprie esigenze, è possibile disabilitare i collegamenti di tipo *Chiunque* per siti specifici o per l'intera organizzazione.
 
@@ -67,7 +67,7 @@ Con un elenco di domini consentiti è possibile specificare un elenco di domini 
 
 Con un elenco di domini non consentiti è possibile specificare un elenco di domini da cui gli utenti dell'organizzazione non possono condividere con persone esterne all'organizzazione. La condivisione con i domini elencati è bloccata. Questa opzione può essere utile, ad esempio, se si vuole impedire che alcuni concorrenti possano accedere a contenuto della propria organizzazione.
 
-Gli elenchi di domini consentiti e non consentiti influiscono solo sulle condivisioni con utenti guest. Gli utenti possono continuare a condividere contenuti con persone da domini non consentiti tramite i collegamenti di tipo *Chiunque* , se questi non sono stati disabilitati. Per ottenere risultati ottimali con gli elenchi di domini consentiti e non consentiti, è consigliabile disabilitare i collegamenti di tipo *Chiunque* come descritto sopra.
+Gli elenchi di domini consentiti e non consentiti influiscono solo sulle condivisioni con utenti guest. Gli utenti possono continuare a condividere contenuti con persone da domini non consentiti tramite i collegamenti di tipo *Chiunque*, se questi non sono stati disabilitati. Per ottenere risultati ottimali con gli elenchi di domini consentiti e non consentiti, è consigliabile disabilitare i collegamenti di tipo *Chiunque* come descritto sopra.
 
 Per creare un elenco di domini consentiti o non consentiti
 1. Nella parte sinistra dell'interfaccia di amministrazione di SharePoint, fare clic su **Condivisione**.
@@ -79,19 +79,19 @@ Per creare un elenco di domini consentiti o non consentiti
 
 5. Fare clic su **Salva**.
 
-Se si vuole limitare la condivisione in base al dominio a un livello superiore rispetto a SharePoint e OneDrive, è possibile [consentire o bloccare gli inviti agli utenti B2B da organizzazioni specifiche](https://docs.microsoft.com/azure/active-directory/b2b/allow-deny-list) in Azure Active Directory. (È necessario configurare l’[anteprima dell'integrazione di SharePoint e OneDrive con Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) perché queste impostazioni influiscano su SharePoint e OneDrive.)
+Se si vuole limitare la condivisione in base al dominio a un livello superiore rispetto a SharePoint e OneDrive, è possibile [consentire o bloccare gli inviti agli utenti B2B da organizzazioni specifiche](/azure/active-directory/b2b/allow-deny-list) in Azure Active Directory. (È necessario configurare l’[anteprima dell'integrazione di SharePoint e OneDrive con Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) perché queste impostazioni influiscano su SharePoint e OneDrive.)
 
 ## <a name="limit-sharing-of-files-folders-and-sites-with-people-outside-your-organization-to-specified-security-groups"></a>Limitare la condivisione di file, cartelle e siti con persone esterne all'organizzazione a gruppi di sicurezza specifici
 
 È possibile limitare la condivisione di file, cartelle e siti con persone esterne all'organizzazione ai membri di un gruppo di sicurezza specifico. Questa opzione è utile se si vuole abilitare la condivisione esterna, ma con un flusso di lavoro di approvazione o un processo di richiesta. In alternativa, è possibile richiedere agli utenti di completare un corso di formazione prima che vengano aggiunti al gruppo di sicurezza e sia consentita la condivisione esterna.
 
 Per limitare la condivisione esterna ai membri di un gruppo di sicurezza
-1. Nella parte sinistra dell' [interfaccia di amministrazione di SharePoint](https://admin.microsoft.com/sharepoint), in **Criteri** , fare clic su **Condivisione**.
-2. In **Condivisione esterna** , espandere **Altre impostazioni condivisione esterna**.
+1. Nella parte sinistra dell'[interfaccia di amministrazione di SharePoint](https://admin.microsoft.com/sharepoint), in **Criteri**, fare clic su **Condivisione**.
+2. In **Condivisione esterna**, espandere **Altre impostazioni condivisione esterna**.
 
 3. Selezionare **Consenti solo agli utenti di gruppi di sicurezza specifici di condividere esternamente** e quindi selezionare **Gestisci i gruppi di sicurezza**.
 
-    ![Screenshot del riquadro Gestisci gruppi di sicurezza](https://docs.microsoft.com/sharepoint/sharepointonline/media/manage-security-groups.png)
+    ![Screenshot del riquadro Gestisci gruppi di sicurezza](/sharepoint/sharepointonline/media/manage-security-groups.png)
 
 4. Nella casella **Aggiungi un gruppo di sicurezza** immettere un nome per un gruppo di sicurezza. Viene visualizzata la finestra del gruppo di sicurezza.
 

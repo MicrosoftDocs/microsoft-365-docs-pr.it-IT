@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ''
 description: Informazioni su come conservare i custodi e le relative origini dati per conservare il contenuto pertinente per il caso advanced eDiscovery.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: fbad81e93635f823fab1c4f44867760d00fc59ed
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 07edcb2707d1dffecfa5a2aac6c4340ac6cbe53f
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838587"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926374"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Gestire i blocchi in Advanced eDiscovery
 
@@ -80,7 +80,7 @@ Per creare un blocco non di custodia per un caso advanced eDiscovery:
       Vedere la **sezione Domande** frequenti per suggerimenti su come mettere in attesa i gruppi di Microsoft 365 e Microsoft Teams.
 
       > [!NOTE]
-      > L'URL per l'account OneDrive di un utente include il nome dell'entità utente (UPN, User Principal Name), ad esempio `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` . Nel raro caso in cui l'UPN di una persona viene modificato, anche l'URL di OneDrive cambierà per incorporare il nuovo UPN. Se l'account di OneDrive di un utente fa parte di un blocco non depositario e il relativo UPN viene modificato, è necessario aggiornare il blocco e puntare al nuovo URL di OneDrive. Per altre informazioni, vedere [Come le modifiche UPN influiscono sull'URL di OneDrive](https://docs.microsoft.com/onedrive/upn-changes).
+      > L'URL per l'account OneDrive di un utente include il nome dell'entità utente (UPN, User Principal Name), ad esempio `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` . Nel raro caso in cui l'UPN di una persona viene modificato, anche l'URL di OneDrive cambierà per incorporare il nuovo UPN. Se l'account di OneDrive di un utente fa parte di un blocco non depositario e il relativo UPN viene modificato, è necessario aggiornare il blocco e puntare al nuovo URL di OneDrive. Per altre informazioni, vedere [Come le modifiche UPN influiscono sull'URL di OneDrive](/onedrive/upn-changes).
 
    1. **Cartelle pubbliche di Exchange** - Spostare l'interruttore interruttore nella posizione Tutti per mettere in attesa tutte le cartelle pubbliche nell'organizzazione di Exchange Online. Si noti che non è possibile scegliere cartelle pubbliche specifiche da mettere in attesa. Lasciare l'interruttore **interruttore** impostato su Nessuno se non si desidera mettere un'esenzione sulle cartelle pubbliche.
 
@@ -92,7 +92,7 @@ Per creare un blocco non di custodia per un caso advanced eDiscovery:
 
     - Fare  **clic su** Aggiungi condizioni per aggiungere una o più condizioni per limitare la query di ricerca per l'esenzione. Ogni condizione aggiunge una clausola alla query di ricerca KQL creata ed eseguita quando si crea il blocco. Ad esempio, è possibile specificare un intervallo di date in modo che i messaggi di posta elettronica o i documenti del sito creati nell'intervallo di date siano messi in attesa. Una condizione è collegata logicamente alla query con parola chiave (specificata nella relativa casella) dall'operatore AND. Ciò significa che gli elementi devono soddisfare sia la query con parole chiave che la condizione da mantenere.
 
-     Per ulteriori informazioni sulla creazione di una query di ricerca e sull'utilizzo di condizioni, vedere Query con parole chiave e condizioni [di ricerca per Ricerca contenuto.](https://docs.microsoft.com/office365/SecurityCompliance/keyword-queries-and-search-conditions)
+     Per ulteriori informazioni sulla creazione di una query di ricerca e sull'utilizzo di condizioni, vedere Query con parole chiave e condizioni [di ricerca per Ricerca contenuto.](/office365/SecurityCompliance/keyword-queries-and-search-conditions)
 
 11. Dopo aver configurato un blocco basato su query, fare clic su **Avanti.**
 

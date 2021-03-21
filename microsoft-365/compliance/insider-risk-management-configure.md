@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: d1ac0bd289185f47fc5eb0bbe34c16fbe28bba84
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: a995b6fdbbff36c6466f5e55cda9d7e196fa2c02
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50819892"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927030"
 ---
 # <a name="get-started-with-insider-risk-management"></a>Introduzione alla gestione dei rischi Insider
 
@@ -227,7 +227,7 @@ I criteri di gestione dei rischi insider includono gli utenti assegnati e defini
 
 11. Se è stato selezionato Si desidera specificare i siti di SharePoint, le etichette di riservatezza e/o i tipi di informazioni riservate come contenuto prioritario nel passaggio precedente, verranno visualizzate le pagine dei dettagli per i siti di **SharePoint,** i tipi di informazioni riservate e le etichette di  *riservatezza.* Usare queste pagine di dettaglio per definire SharePoint, i tipi di informazioni riservate e le etichette di riservatezza per definire la priorità nel criterio.
 
-    - **Siti di SharePoint**: selezionare **Aggiungi sito di SharePoint** e selezionare le organizzazioni di SharePoint a cui si ha accesso e si desidera definire le priorità. Ad esempio, *"group1@contoso.sharepoint.com/sites/group1"*.
+    - **Siti di SharePoint**: selezionare **Aggiungi sito di SharePoint** e selezionare i siti di SharePoint a cui si ha accesso e si desidera definire le priorità. Ad esempio, *"group1@contoso.sharepoint.com/sites/group1"*.
     - **Tipo di informazioni riservate:** seleziona **Aggiungi tipo di informazioni** riservate e seleziona i tipi di riservatezza di cui vuoi definire la priorità. Ad esempio, *"U.S. Bank Account Number"* e *"Credit Card Number"*.
     - **Etichette di riservatezza**: selezionare **Aggiungi etichetta di riservatezza** e selezionare le etichette di cui si desidera definire la priorità. Ad esempio, *"Confidential"* e *"Secret"*.
 

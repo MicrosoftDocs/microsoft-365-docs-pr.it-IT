@@ -19,12 +19,12 @@ ms.assetid: f87cb016-7876-4317-ae3c-9169b311ff8a
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come inviare e ricevere messaggi di posta elettronica crittografati tra persone interne ed esterne all'organizzazione.
-ms.openlocfilehash: 8d1803442428f3061c686afa0b790d3f468abde8
-ms.sourcegitcommit: 06d9e056eabfbac8fafe66cc32907b33d4ae8253
+ms.openlocfilehash: 504fa9918636cd596cde0d242083ccb7b9817e69
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "50741327"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50927714"
 ---
 # <a name="message-encryption"></a>Crittografia dei messaggi
 
@@ -36,7 +36,7 @@ Con La crittografia dei messaggi di Office 365, l'organizzazione può inviare e 
 
 Il resto di questo articolo si applica alle nuove funzionalità OME.
 
-Crittografia messaggi di Office 365 è un servizio online basato su Microsoft Azure Rights Management (Azure RMS) che fa parte di Azure Information Protection. Questo servizio include criteri di crittografia, identità e autorizzazione per proteggere la posta elettronica. È possibile crittografare i messaggi utilizzando i modelli di rights management, [l'opzione Non inoltrare](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)e l'opzione [di sola crittografia](https://docs.microsoft.com/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
+Crittografia messaggi di Office 365 è un servizio online basato su Microsoft Azure Rights Management (Azure RMS) che fa parte di Azure Information Protection. Questo servizio include criteri di crittografia, identità e autorizzazione per proteggere la posta elettronica. È possibile crittografare i messaggi utilizzando i modelli di rights management, [l'opzione Non inoltrare](/information-protection/deploy-use/configure-usage-rights#do-not-forward-option-for-emails)e l'opzione [di sola crittografia](/information-protection/deploy-use/configure-usage-rights#encrypt-only-option-for-emails).
 
 Gli utenti possono quindi crittografare i messaggi di posta elettronica e vari allegati utilizzando queste opzioni. Per un elenco completo dei tipi di allegati supportati, vedere "Tipi di file coperti dai criteri IRM quando sono allegati ai messaggi" in Introduzione a IRM per i messaggi [di posta elettronica.](https://support.office.com/article/bb643d33-4a3f-4ac7-9770-fd50d95f58dc#FileTypesforIRM)
 
@@ -54,7 +54,7 @@ Gli utenti finali che leggono la posta crittografata o protetta da diritti su cl
 
 Se il mittente della posta protetta si trova in GCC High e il destinatario si trova all'esterno di GCC High, inclusi gli utenti commerciali, gli utenti Outlook.com e gli utenti di altri provider di posta elettronica come Gmail, il destinatario riceve una posta wrapper. La posta wrapper indirizza il destinatario al portale OME in cui il destinatario è in grado di leggere e rispondere al messaggio. In caso contrario, se il mittente e il destinatario sono entrambi nell'ambiente GCC High, anche se non fanno parte della stessa organizzazione, i destinatari che utilizzano i client di Outlook per leggere la posta ricevono esperienze di lettura native di prima classe per la posta crittografata e protetta da diritti. Per ulteriori informazioni sulla diversa esperienza in GCC High, vedere [Confrontare le versioni di OME.](ome-version-comparison.md)
 
-Per ulteriori informazioni sui limiti di dimensione per i messaggi e gli allegati che è possibile crittografare utilizzando OME, vedere [Limiti di Exchange Online.](https://technet.microsoft.com/library/exchange-online-limits.aspx)
+Per ulteriori informazioni sui limiti di dimensione per i messaggi e gli allegati che è possibile crittografare utilizzando OME, vedere [Limiti di Exchange Online.](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits)
 
 ## <a name="how-office-365-advanced-message-encryption-works-on-top-of-ome"></a>Funzionamento della crittografia avanzata dei messaggi di Office 365 in OME
 

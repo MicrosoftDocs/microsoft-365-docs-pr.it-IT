@@ -16,16 +16,16 @@ search.appverid:
 - MET150
 description: Configurare etichette di riservatezza per la crittografia per proteggere i dati con restrizioni di accesso e utilizzo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 602b4b3abd2b07386ad130e4b2cd21bb593eee7e
-ms.sourcegitcommit: a9ac702c9efc9defded3bfa65618b94bac00c237
+ms.openlocfilehash: 6f906e2a3ddd8a0847174a61e9f2b28238e5dc19
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/16/2021
-ms.locfileid: "50261573"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928074"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza
 
->*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
+>*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Quando si crea un'etichetta di riservatezza, è possibile limitare l'accesso al contenuto a cui verrà applicata l'etichetta. Ad esempio, con le impostazioni di crittografia di un'etichetta di riservatezza, è possibile proteggere i contenuti per determinare le condizioni seguenti:
 
@@ -49,9 +49,9 @@ Le impostazioni di crittografia sono disponibili quando si [crea un'etichetta di
 
 ## <a name="understand-how-the-encryption-works"></a>Come funziona la crittografia
 
-La crittografia usa il servizio Azure Rights Management (Azure RMS) di Azure Information Protection. Questa soluzione di protezione usa criteri di crittografia, identità e autorizzazione. Per ulteriori informazioni, vedere [Informazioni su Azure Rights Management](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) nella documentazione di Azure Information Protection. 
+La crittografia usa il servizio Azure Rights Management (Azure RMS) di Azure Information Protection. Questa soluzione di protezione usa criteri di crittografia, identità e autorizzazione. Per ulteriori informazioni, vedere [Informazioni su Azure Rights Management](/azure/information-protection/what-is-azure-rms) nella documentazione di Azure Information Protection. 
 
-Se si usa questa soluzione di crittografia, la caratteristica **utente con privilegi avanzati** garantisce che le persone e i servizi autorizzati possano sempre leggere e controllare i dati crittografati per l'organizzazione. Se necessario, la crittografia può essere rimossa o modificata. Per altre informazioni, vedere [Configurazione di utenti con privilegi avanzati per Azure Information Protection e servizi di individuazione o di ripristino dei dati](https://docs.microsoft.com/azure/information-protection/configure-super-users).
+Se si usa questa soluzione di crittografia, la caratteristica **utente con privilegi avanzati** garantisce che le persone e i servizi autorizzati possano sempre leggere e controllare i dati crittografati per l'organizzazione. Se necessario, la crittografia può essere rimossa o modificata. Per altre informazioni, vedere [Configurazione di utenti con privilegi avanzati per Azure Information Protection e servizi di individuazione o di ripristino dei dati](/azure/information-protection/configure-super-users).
 
 ## <a name="how-to-configure-a-label-for-encryption"></a>Come configurare un'etichetta per la crittografia
 
@@ -93,8 +93,8 @@ La tabella seguente identifica cosa accade alla crittografia esistente quando si
 
 Si noti che nei casi in cui viene applicata la nuova crittografia dell'etichetta o la crittografia originale viene rimossa, ciò si verifica solo se l'utente che applica l'etichetta dispone di un ruolo o diritto di utilizzo che supporta questa azione:
 
-- Il [diritto di utilizzo](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) Esportazione o Controllo completo.
-- Il ruolo di [emittente di Rights Management o proprietario di Rights Management](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) o [utente con privilegi avanzati](https://docs.microsoft.com/azure/information-protection/configure-super-users).
+- Il [diritto di utilizzo](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions) Esportazione o Controllo completo.
+- Il ruolo di [emittente di Rights Management o proprietario di Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) o [utente con privilegi avanzati](/azure/information-protection/configure-super-users).
 
 Se l'utente non dispone di uno di questi diritti o ruoli, l'etichetta non può essere applicata, quindi la crittografia originale viene mantenuta. L'utente visualizza il messaggio seguente: **Non si dispone dell'autorizzazione per apportare questa modifica all'etichetta di riservatezza. Contattare il proprietario del contenuto.**
 
@@ -141,7 +141,7 @@ Se non è stata impostata alcuna data di scadenza, il periodo di validità prede
 
 Oltre al nuovo processo di autenticazione, vengono valutati nuovamente il gruppo a cui appartiene l'utente e le impostazioni di crittografia. Questo significa che, se dopo l'ultimo accesso, sono cambiate le impostazioni di crittografia o è cambiato il gruppo di appartenenza dell'utente, anche le autorizzazioni per accedere allo stesso documento o messaggio di posta elettronica potrebbero essere cambiate.
 
-Per ulteriori informazioni su come modificare l'impostazione predefinita di 30 giorni, vedere [Licenza d'uso di Rights Management](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-use-license).
+Per ulteriori informazioni su come modificare l'impostazione predefinita di 30 giorni, vedere [Licenza d'uso di Rights Management](/azure/information-protection/configure-usage-rights#rights-management-use-license).
 
 ### <a name="assign-permissions-to-specific-users-or-groups"></a>Assegnare autorizzazioni a utenti o gruppi specifici
 
@@ -163,7 +163,7 @@ Quando si assegnano le autorizzazioni, è possibile scegliere:
 
 - Tutti gli utenti autenticati. Accertarsi di comprendere i [requisiti e le limitazioni](#requirements-and-limitations-for-add-any-authenticated-users) di questa impostazione prima di selezionarla.
 
-- Qualsiasi utente o gruppo di sicurezza abilitato alla posta elettronica, gruppo di distribuzione o gruppo di Microsoft 365 ([denominato in precedenza gruppo di Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) in Azure AD. Il gruppo Microsoft 365 può avere un'appartenenza statica o [un'appartenenza dinamica](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule). Non è possibile usare un [gruppo di distribuzione dinamico di Exchange](https://docs.microsoft.com/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups) perché questo tipo di gruppo non è sincronizzato con Azure AD e non è possibile usare un gruppo di sicurezza abilitato alla posta.
+- Qualsiasi utente o gruppo di sicurezza abilitato alla posta elettronica, gruppo di distribuzione o gruppo di Microsoft 365 ([denominato in precedenza gruppo di Office 365](https://techcommunity.microsoft.com/t5/microsoft-365-blog/office-365-groups-will-become-microsoft-365-groups/ba-p/1303601)) in Azure AD. Il gruppo Microsoft 365 può avere un'appartenenza statica o [un'appartenenza dinamica](/azure/active-directory/users-groups-roles/groups-create-rule). Non è possibile usare un [gruppo di distribuzione dinamico di Exchange](/Exchange/recipients/dynamic-distribution-groups/dynamic-distribution-groups) perché questo tipo di gruppo non è sincronizzato con Azure AD e non è possibile usare un gruppo di sicurezza abilitato alla posta.
 
 - Qualsiasi indirizzo di posta elettronica o dominio. Usare questa opzione per specificare tutti gli utenti di un'altra organizzazione che usa Azure AD, immettendo qualsiasi nome di dominio di tale organizzazione. Si può usare questa opzione anche per i provider di servizi di social networking immettendo il nome di dominio, ad esempio **gmail.com**, **hotmail.com** o **outlook.com**.
 
@@ -179,7 +179,7 @@ Quando si scelgono tutti gli utenti e i gruppi nell'organizzazione o si sfoglia 
 Questa opzione non limita gli utenti che possono accedere al contenuto crittografato dall'etichetta, anche se crittografa il contenuto e specifica le opzioni per limitare il modo in cui è possibile usarlo (autorizzazioni) e accedervi (scadenza e accesso offline). Tuttavia, l'applicazione che apre il contenuto crittografato deve essere in grado di supportare l'autenticazione in uso. Per questo motivo, i provider di servizi di social networking federati, come Google, e l'autenticazione tramite passcode monouso funzionano solo per la posta elettronica e solo quando si usa Exchange Online. È possibile usare gli account Microsoft con le app di Office 365 e il [visualizzatore Azure Information Protection](https://portal.azurerms.com/#/download).
 
 > [!NOTE]
-> È consigliabile usare questa impostazione con l'[integrazione di SharePoint e OneDrive con Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) quando le etichette di riservatezza sono [abilitate per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
+> È consigliabile usare questa impostazione con l'[integrazione di SharePoint e OneDrive con Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview) quando le etichette di riservatezza sono [abilitate per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md).
 
 Alcuni scenari tipici per l'impostazione di qualsiasi utente autenticate:
 
@@ -191,10 +191,10 @@ Alcuni scenari tipici per l'impostazione di qualsiasi utente autenticate:
 
 Quando si sceglie quali autorizzazioni assegnare agli utenti o ai gruppi, è possibile selezionare:
 
-- Un [livello di autorizzazione predefinito](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels) con un gruppo di diritti preimpostato, ad esempio Coautore o Revisore.
+- Un [livello di autorizzazione predefinito](/azure/information-protection/configure-usage-rights#rights-included-in-permissions-levels) con un gruppo di diritti preimpostato, ad esempio Coautore o Revisore.
 - Autorizzazioni personalizzate, in cui è possibile scegliere uno o più diritti di utilizzo.
 
-Per altre informazioni su come selezionare le autorizzazioni appropriate, vedere [Diritti di utilizzo e relative descrizioni](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions).  
+Per altre informazioni su come selezionare le autorizzazioni appropriate, vedere [Diritti di utilizzo e relative descrizioni](/azure/information-protection/configure-usage-rights#usage-rights-and-descriptions).  
 
 ![Opzioni per scegliere autorizzazioni preimpostate o personalizzate](../media/Sensitivity-Choose-permissions-settings.png)
 
@@ -214,7 +214,7 @@ All'emittente di Rights Management sono sempre concesse le autorizzazioni di con
 - L'emittente di Rights Management può sempre accedere offline al documento o al messaggio di posta elettronica.
 - L'emittente di Rights Management può aprire un documento anche se è stato revocato.
 
-Per ulteriori informazioni, vedere [Emittente di Rights Management e proprietario di Rights Management](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner).
+Per ulteriori informazioni, vedere [Emittente di Rights Management e proprietario di Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner).
 
 ### <a name="double-key-encryption"></a>Crittografia a chiave doppia
 
@@ -229,7 +229,7 @@ Per altre informazioni, prerequisiti e istruzioni di configurazione, vedere [Cri
 
 È possibile usare queste opzioni per consentire agli utenti di assegnare autorizzazioni quando applicano manualmente un'etichetta di riservatezza al contenuto:
 
-- In Outlook, un utente può selezionare restrizioni equivalenti all'opzione [Non inoltrare](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) per determinati destinatari.
+- In Outlook, un utente può selezionare restrizioni equivalenti all'opzione [Non inoltrare](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) per determinati destinatari.
 
 - In Word, PowerPoint ed Excel, agli utenti viene chiesto di selezionare le autorizzazioni personalizzate per utenti, gruppi o organizzazioni specifici.
 
@@ -406,7 +406,7 @@ Prima di utilizzare la crittografia, potrebbe essere necessario eseguire alcune 
 
 - Attivazione della protezione di Azure Information Protection
     
-    Per la crittografia nelle etichette di riservatezza, il servizio di protezione (Azure Rights Management) di Azure Information Protection deve essere attivato per il tenant. Nei tenant più recenti, questa è l'impostazione predefinita, ma potrebbe essere necessario attivare il servizio manualmente. Per altre informazioni, vedere [Attivazione del servizio di protezione di Azure Information Protection](https://docs.microsoft.com/azure/information-protection/activate-service).
+    Per la crittografia nelle etichette di riservatezza, il servizio di protezione (Azure Rights Management) di Azure Information Protection deve essere attivato per il tenant. Nei tenant più recenti, questa è l'impostazione predefinita, ma potrebbe essere necessario attivare il servizio manualmente. Per altre informazioni, vedere [Attivazione del servizio di protezione di Azure Information Protection](/azure/information-protection/activate-service).
 
 - Configurare Exchange per Azure Information Protection
     
@@ -416,8 +416,8 @@ Prima di utilizzare la crittografia, potrebbe essere necessario eseguire alcune 
     
     Per assicurarsi che Exchange possa supportare questi ulteriori scenari, consultare gli articoli seguenti:
     
-    - Per Exchange Online, vedere le istruzioni per [Exchange Online: configurazione di IRM](https://docs.microsoft.com/azure/information-protection/configure-office365#exchangeonline-irm-configuration).
-    - Per Exchange locale, è necessario distribuire il [connettore RMS e configurare i server Exchange](https://docs.microsoft.com/azure/information-protection/deploy-rms-connector). 
+    - Per Exchange Online, vedere le istruzioni per [Exchange Online: configurazione di IRM](/azure/information-protection/configure-office365#exchangeonline-irm-configuration).
+    - Per Exchange locale, è necessario distribuire il [connettore RMS e configurare i server Exchange](/azure/information-protection/deploy-rms-connector). 
 
 ## <a name="next-steps"></a>Passaggi successivi
 

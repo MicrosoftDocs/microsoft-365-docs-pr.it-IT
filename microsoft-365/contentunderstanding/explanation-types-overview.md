@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Informazioni sui tipi di spiegazione in Microsoft SharePoint Syntex
-ms.openlocfilehash: caba92b635feaf8f87e2c487559f70be3fab6df9
-ms.sourcegitcommit: 78f48304f990e969a052fe6536b2e8d6856e1086
+ms.openlocfilehash: 5187b27438f25db1a2714f1fbc7b31db6d060ccc
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "50242630"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50928401"
 ---
 # <a name="introduction-to-explanation-types"></a>Introduzione ai tipi di spiegazione
 
@@ -71,7 +71,7 @@ Inoltre, se l'elenco criteri prevede requisiti per le maiuscole, è possibile se
    ![Solo le maiuscole esatte](../media/content-understanding/exact-caps.png)
 
 > [!NOTE]
-> Anziché creare manualmente una spiegazione elenco criteri, usare la [raccolta spiegazioni](https://docs.microsoft.com/microsoft-365/contentunderstanding/explanation-types-overview#use-explanation-templates) per usare modelli di elenchi di criteri per elenchi di criteri comuni, quali *Data*, *Numero di telefono*, *Numero di carta di credito* e così via.
+> Anziché creare manualmente una spiegazione elenco criteri, usare la [raccolta spiegazioni](#use-explanation-templates) per usare modelli di elenchi di criteri per elenchi di criteri comuni, quali *Data*, *Numero di telefono*, *Numero di carta di credito* e così via.
 
 ## <a name="proximity"></a>Prossimità 
 

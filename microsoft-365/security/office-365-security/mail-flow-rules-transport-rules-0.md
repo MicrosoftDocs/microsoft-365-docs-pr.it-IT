@@ -13,12 +13,12 @@ ms.assetid: 9c2cf227-eff7-48ef-87fb-487186e47363
 description: È possibile utilizzare le regole del flusso di posta (regole di trasporto) per identificare ed eseguire azioni sui messaggi che attraversano l'organizzazione.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d189a9f4b21828fa4e23f7d5a325b4e9c56259bc
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 7f3edb8b764df0699a9837fc1ce261837c636255
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50289938"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926845"
 ---
 # <a name="mail-flow-rules-transport-rules-in-standalone-eop"></a>Regole del flusso di posta (regole di trasporto) in Exchange Online Protection autonomo
 
@@ -29,21 +29,21 @@ ms.locfileid: "50289938"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](office-365-atp.md)
 - [Microsoft 365 Defender](../mtp/microsoft-threat-protection.md)
 
-Nelle organizzazioni Exchange Online Protection (EOP) autonome senza cassette postali di Exchange Online, è possibile utilizzare le regole del flusso di posta (note anche come regole di trasporto) per identificare ed eseguire azioni sui messaggi che passano attraverso l'organizzazione.
+Nelle organizzazioni di Exchange Online Protection (EOP) autonome senza cassette postali di Exchange Online, è possibile utilizzare le regole del flusso di posta (note anche come regole di trasporto) per identificare ed eseguire azioni sui messaggi che attraversano l'organizzazione.
 
 In questo argomento vengono illustrati i componenti delle regole del flusso di posta e il relativo funzionamento.
 
-Per la procedura per creare, copiare e gestire le regole del flusso di posta, vedere Gestire le regole del [flusso di posta in Exchange Online.](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules) Per ciascuna regola è possibile applicare, verificare o testare e inviare una notifica al mittente. Per ulteriori informazioni sulle opzioni di test, vedere [Test mail flow rules](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) and Policy Tips in Exchange [Online.](https://docs.microsoft.com/exchange/security-and-compliance/data-loss-prevention/policy-tips)
+Per la procedura di creazione, copia e gestione delle regole del flusso di posta, vedere [Manage mail flow rules in Exchange Online.](/exchange/security-and-compliance/mail-flow-rules/manage-mail-flow-rules) Per ciascuna regola è possibile applicare, verificare o testare e inviare una notifica al mittente. Per ulteriori informazioni sulle opzioni di test, vedere [Test mail flow rules](/exchange/security-and-compliance/mail-flow-rules/test-mail-flow-rules) and Policy Tips in Exchange [Online.](/exchange/security-and-compliance/data-loss-prevention/policy-tips)
 
-Per report di riepilogo e dettagliati sui messaggi corrispondenti alle regole del flusso di posta, vedere Utilizzare i report di protezione della posta per visualizzare i dati relativi al malware, alla posta indesiderata e [ai rilevamenti delle regole.](https://docs.microsoft.com/exchange/monitoring/use-mail-protection-reports)
+Per report di riepilogo e dettagliati sui messaggi corrispondenti alle regole del flusso di posta, vedere [Use mail protection reports to view data about malware, spam, and rule detections](/exchange/monitoring/use-mail-protection-reports).
 
 Per implementare determinati criteri di messaggistica usando le regole del flusso di posta, vedere gli argomenti seguenti:
 
-- [Utilizzare le regole del flusso di posta per esaminare gli allegati dei messaggi in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
+- [Utilizzare le regole del flusso di posta per esaminare gli allegati dei messaggi in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
 
 - [Configurare la crittografia in Office 365 Enterprise](../../compliance/set-up-encryption.md)
 
-- [Dichiarazioni di non responsabilità, firme, piè di pagina o intestazioni dei messaggi a livello di organizzazione in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)
+- [Dichiarazioni di non responsabilità, firme, piè di pagina o intestazioni dei messaggi a livello di organizzazione in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/disclaimers-signatures-footers-or-headers)
 
 - [Usare le regole del flusso di posta per impostare il livello di probabilità di posta indesiderata (SCL) nei messaggi](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md)
 
@@ -53,7 +53,7 @@ Per implementare determinati criteri di messaggistica usando le regole del fluss
 
 - [Definire le regole per crittografare o decrittografare i messaggi di posta elettronica in Office 365](../../compliance/define-mail-flow-rules-to-encrypt-email.md)
 
-Nel video seguente viene fornita una dimostrazione della configurazione delle regole del flusso di posta in EOP autonomo.
+Nel video seguente viene illustrata la configurazione delle regole del flusso di posta in EOP autonomo.
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/7cdcd2cb-9382-4065-98e1-81257b32a189?autoplay=false]
 
@@ -63,17 +63,17 @@ Una regola del flusso di posta è composta da condizioni, eccezioni, azioni e pr
 
 - **Condizioni**: identificare i messaggi a cui si desidera applicare le azioni. Alcune condizioni esaminano i campi d'intestazione dei messaggi (ad esempio, i campi A, Da, o Cc). Altre condizioni esaminano le proprietà del messaggio (ad esempio, l'oggetto, il corpo, gli allegati, la dimensione o la classificazione). Per la maggior parte delle condizioni l'utente deve specificare un operatore di confronto (ad esempio, uguale a, diverso da o contiene) e un valore da utilizzare per la corrispondenza. Se non sono presenti condizioni o eccezioni, la regola viene applicata a tutti i messaggi.
 
-Per ulteriori informazioni sulle condizioni delle regole del flusso di posta in EOP autonomo, vedere Condizioni ed eccezioni delle regole del flusso di posta [(predicati) in Exchange Online.](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
+Per ulteriori informazioni sulle condizioni delle regole del flusso di posta in EOP autonomo, vedere [Mail flow rule conditions and exceptions (predicates) in Exchange Online.](/exchange/security-and-compliance/mail-flow-rules/conditions-and-exceptions)
 
 - **Eccezioni:** identificare facoltativamente i messaggi a cui non devono essere applicate le azioni. Nelle eccezioni sono presenti gli stessi identificatori dei messaggi disponibili nelle condizioni. Le eccezioni sostituiscono le condizioni e impediscono l'esecuzione delle azioni della regola su un messaggio, anche nel caso in cui il messaggio soddisfi tutte le condizioni configurate.
 
-- **Azioni:** specificare l'operazione da eseguire per i messaggi che soddisfano le condizioni della regola e che non corrispondono ad alcuna eccezione. Sono disponibili molte azioni, ad esempio il rifiuto, l'eliminazione o il reindirizzamento dei messaggi, l'aggiunta di altri destinatari, l'aggiunta di prefissi all'oggetto del messaggio o l'inserimento di dichiarazioni di non responsabilità nel corpo del messaggio.
+- **Azioni**: specificare l'operazione da eseguire per i messaggi che soddisfano le condizioni della regola e non corrispondono ad alcuna eccezione. Sono disponibili molte azioni, ad esempio il rifiuto, l'eliminazione o il reindirizzamento dei messaggi, l'aggiunta di altri destinatari, l'aggiunta di prefissi all'oggetto del messaggio o l'inserimento di dichiarazioni di non responsabilità nel corpo del messaggio.
 
-Per ulteriori informazioni sulle azioni delle regole del flusso di posta disponibili in EOP autonomo, vedere Azioni delle regole del flusso di [posta in Exchange Online.](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
+Per ulteriori informazioni sulle azioni delle regole del flusso di posta disponibili in EOP autonomo, vedere [Mail flow rule actions in Exchange Online.](/exchange/security-and-compliance/mail-flow-rules/mail-flow-rule-actions)
 
 - **Proprietà**: specificare altre impostazioni delle regole che non sono condizioni, eccezioni o azioni. Ad esempio, quando è necessario applicare la regola oppure se applicare o verificare la regola, il periodo in cui la regola è attiva.
 
-  Per ulteriori informazioni, vedere la sezione proprietà delle regole del flusso [di](#mail-flow-rule-properties) posta in questo articolo.
+  Per ulteriori informazioni, vedere la sezione [Proprietà delle regole del](#mail-flow-rule-properties) flusso di posta in questo articolo.
 
 ### <a name="multiple-conditions-exceptions-and-actions"></a>Più condizioni, eccezioni e azioni
 
@@ -95,9 +95,9 @@ Nella tabella seguente vengono descritte le proprietà della regola che sono dis
 
 ****
 
-|Nome proprietà nell'interfaccia di amministrazione di Exchange|Nome del parametro in PowerShell|Descrizione|
+|Nome proprietà nell'interfaccia di amministrazione di Exchange|Nome parametro in PowerShell|Descrizione|
 |---|---|---|
-|**Priorità**|_Priority_|Indica in che ordine le regole vengono applicate ai messaggi. La priorità predefinita si basa sul momento di creazione della regola; le regole meno recenti hanno una priorità superiore rispetto a quelle più nuove, mentre le regole con priorità superiore vengono elaborate prima delle regole con priorità inferiore. <p> La priorità della regola vengono modificate nell'interfaccia di amministrazione di Exchange spostando la regola verso l'alto o verso il basso nell'elenco delle regole. In PowerShell, impostare il numero di priorità (0 è la priorità più alta). <p> Ad esempio, in caso di una regola per rifiutare i messaggi che includono un numero di carta di credito e un'altra che richiede l'approvazione, è possibile far applicare per prima la regola per il rifiuto e interrompere l'applicazione delle altre regole.  |
+|**Priorità**|_Priority_|Indica in che ordine le regole vengono applicate ai messaggi. La priorità predefinita si basa sul momento di creazione della regola; le regole meno recenti hanno una priorità superiore rispetto a quelle più nuove, mentre le regole con priorità superiore vengono elaborate prima delle regole con priorità inferiore. <p> La priorità della regola vengono modificate nell'interfaccia di amministrazione di Exchange spostando la regola verso l'alto o verso il basso nell'elenco delle regole. In PowerShell si imposta il numero di priorità (0 è la priorità più alta). <p> Ad esempio, in caso di una regola per rifiutare i messaggi che includono un numero di carta di credito e un'altra che richiede l'approvazione, è possibile far applicare per prima la regola per il rifiuto e interrompere l'applicazione delle altre regole.  |
 |**Modalità**|_Mode_|È possibile specificare se la regola deve elaborare i messaggi immediatamente oppure se le regole devono essere testate senza coinvolgere il recapito del messaggio (con o senza suggerimenti sui criteri DLP). <p> I suggerimenti per i criteri presentano una breve nota in Outlook o Outlook sul Web che fornisce informazioni sulle possibili violazioni dei criteri alla persona che sta creando il messaggio. Per ulteriori informazioni, vedere **Suggerimenti per i criteri**. <p> Per ulteriori informazioni sulle modalità, vedere **Testare una regola del flusso di posta elettronica**.|
 |**Attiva la regola in data** <p> **Disattiva la regola in data**|_ActivationDate_ <p> _ExpiryDate_| Specifica l'intervallo di date in cui la data è attiva.|
 |Casella di controllo **On** selezionata o deselezionata|Nuove regole: parametro _Enabled_ nel cmdlet **New-TransportRule**. <p> Regole esistenti: Utilizzare il cmdlet **Enable-TransportRule** o **Disable-TransportRule**. <p> Il valore viene visualizzato nella proprietà **State** della regola.|È possibile creare una regola disabilitata e abilitarla successivamente, quando l'utente è pronto per sottoporla a test. In alternativa, è possibile disabilitare una regola senza eliminarla per preservare le impostazioni.|
@@ -121,14 +121,14 @@ Esistono diversi tipi di messaggi che passano attraverso un'organizzazione. Nell
 
 |Tipo di messaggio|È possibile applicare una regola?|
 |---|---|
-|**Messaggi normali:** messaggi che contengono un singolo corpo del messaggio RTF, HTML o testo normale oppure un insieme di corpi dei messaggi a più parti o alternativo.|Sì|
-|**Crittografia dei messaggi di Office 365:** messaggi crittografati dalla crittografia dei messaggi di Office 365 in Office 365. Per ulteriori informazioni, vedere [Crittografia in Office 365](../../compliance/encryption.md).|Le regole possono sempre accedere alle intestazioni delle buste ed elaborare i messaggi in base alle condizioni che esaminano quelle intestazioni. <p> Affinché una regola possa esaminare o modificare i contenuti di un messaggio crittografato, è necessario verificare che la crittografia di trasporto sia abilitata (Obbligatoria o Facoltativa; l'impostazione predefinita è Facoltativa). Per ulteriori informazioni, vedere [Definire le regole per crittografare o decrittografare i messaggi di posta elettronica in Office 365.](../../compliance/define-mail-flow-rules-to-encrypt-email.md)|
+|**Messaggi normali**: Messaggi che contengono un singolo corpo di messaggio RTF, HTML o testo normale oppure un insieme di corpi dei messaggi in più parti o alternativi.|Sì|
+|**Crittografia dei messaggi di Office 365**: Messaggi crittografati dalla crittografia dei messaggi di Office 365 in Office 365. Per ulteriori informazioni, vedere [Crittografia in Office 365](../../compliance/encryption.md).|Le regole possono sempre accedere alle intestazioni delle buste ed elaborare i messaggi in base alle condizioni che esaminano quelle intestazioni. <p> Affinché una regola possa esaminare o modificare i contenuti di un messaggio crittografato, è necessario verificare che la crittografia di trasporto sia abilitata (Obbligatoria o Facoltativa; l'impostazione predefinita è Facoltativa). Per ulteriori informazioni, vedere [Definire le regole per crittografare o decrittografare i messaggi di posta elettronica in Office 365.](../../compliance/define-mail-flow-rules-to-encrypt-email.md)|
 |**Messaggi crittografati (S/MIME)**|Le regole possono accedere solo alle intestazioni delle buste ed elaborare i messaggi in base alle condizioni che esaminano quelle intestazioni. <p> Le regole con le condizioni che richiedono l'analisi del contenuto del messaggio oppure le azioni che modificano i contenuti del messaggio non possono essere elaborate.|
 |**Messaggi protetti da RMS:** messaggi a cui è stato applicato un criterio Active Directory Rights Management Services (AD RMS) o Azure Rights Management (RMS).|Le regole possono sempre accedere alle intestazioni delle buste ed elaborare i messaggi in base alle condizioni che esaminano quelle intestazioni. <p> Affinché una regola possa esaminare o modificare i contenuti di un messaggio protetto da RMS, è necessario verificare che la crittografia di trasporto sia abilitata (Obbligatoria o Facoltativa; l'impostazione predefinita è Facoltativa).|
-|**Messaggi con firma non crittografata:** messaggi firmati ma non crittografati.|Sì|
-|**Messaggi di** messaggistica unificata : messaggi creati o elaborati dal servizio di messaggistica unificata, quali messaggi vocali, fax, notifiche di chiamata senza risposta e messaggi creati o inoltrati utilizzando Microsoft Outlook Voice Access.|Sì|
-|**Messaggi anonimi**: messaggi inviati da mittenti anonimi.|Sì|
-|**Report di lettura:** report generati in risposta alle richieste di conferma di lettura da parte dei mittenti. I rapporti di lettura hanno una classe messaggio `IPM.Note*.MdnRead` di o `IPM.Note*.MdnNotRead` .|Sì|
+|**Messaggi con firma non crittografata**: Messaggi firmati ma non crittografati.|Sì|
+|**Messaggi di** messaggistica unificata : Messaggi creati o elaborati dal servizio messaggistica unificata, ad esempio messaggi vocali, fax, notifiche di chiamata senza risposta e messaggi creati o inoltrati utilizzando Microsoft Outlook Voice Access.|Sì|
+|**Messaggi anonimi**: Messaggi inviati da mittenti anonimi.|Sì|
+|**Report di lettura**: report generati in risposta alle richieste di conferma di lettura da parte dei mittenti. I report di lettura hanno una classe messaggio `IPM.Note*.MdnRead` di o `IPM.Note*.MdnNotRead` .|Sì|
 |
 
 ## <a name="what-else-should-i-know"></a>Informazioni aggiuntive
@@ -139,8 +139,8 @@ Esistono diversi tipi di messaggi che passano attraverso un'organizzazione. Nell
 
 ## <a name="for-more-information"></a>Ulteriori informazioni
 
-[Utilizzare le regole del flusso di posta per esaminare gli allegati dei messaggi in Exchange Online](https://docs.microsoft.com/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
+[Utilizzare le regole del flusso di posta per esaminare gli allegati dei messaggi in Exchange Online](/exchange/security-and-compliance/mail-flow-rules/inspect-message-attachments)
 
 [Crittografia della posta elettronica in Office 365](../../compliance/email-encryption.md)
 
-[Limiti delle regole di journal, trasporto e posta in arrivo](https://docs.microsoft.com/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#journal-transport-and-inbox-rule-limits)
+[Limiti delle regole del journal, del trasporto e della posta in arrivo](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#journal-transport-and-inbox-rule-limits)

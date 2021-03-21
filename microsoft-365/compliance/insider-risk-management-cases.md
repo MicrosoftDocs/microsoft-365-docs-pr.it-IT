@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 58c8d2cdebdef6c0307b0c234951f6d32e5009df
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: f6f01a1bed296b6af2e6be973de6605910809fc3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50820177"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50926404"
 ---
 # <a name="insider-risk-management-cases"></a>Casi di gestione dei rischi insider
 
@@ -241,27 +241,6 @@ Per i casi aperti prima di abilitare l'integrazione di Microsoft Team, gli inves
 Quando un caso viene risolto, il team Microsoft associato verrà automaticamente archiviato (nascosto e trasformato in sola lettura).
 
 Per ulteriori informazioni su Microsoft Teams per la gestione dei rischi insider, vedere [Introduzione alle impostazioni di gestione dei rischi insider.](insider-risk-management-settings.md#microsoft-teams-preview)
-
-### <a name="share-the-case"></a>Condividere il caso
-
-La condivisione di un caso di gestione dei rischi insider consente agli investigatori e agli analisti del rischio di collaborare facilmente con altri stakeholder della conformità nell'organizzazione. È possibile condividere rapidamente un collegamento a un caso di gestione dei rischi insider con parti interessate esterne dall'area di gestione dei casi. Per accedere al caso di gestione dei rischi insider dal collegamento, le parti interessate devono essere incluse in uno qualsiasi dei gruppi di ruoli di gestione dei rischi insider.
-
->[!NOTE]
->Grazie per il feedback e il supporto durante l'anteprima del connettore ServiceNow. Abbiamo deciso di terminare l'anteprima del connettore ServiceNow e interrompere il supporto nella gestione dei rischi insider il 30 novembre 2020. Stiamo valutando attivamente metodi alternativi per fornire ai clienti l'integrazione di ServiceNow nella gestione dei rischi insider.
-
-Sono disponibili le opzioni di condivisione seguenti:
-
-- **ServiceNow:** dopo aver configurato il connettore Microsoft 365 ServiceNow per l'organizzazione di Microsoft 365, è possibile condividere facilmente un collegamento al caso, aprire un evento imprevisto o richiedere una modifica con l'organizzazione ServiceNow. Per condividere il caso con ServiceNow, selezionare **Azioni caso**  >  **Condividi**  >  **servizioNow** dall'azione del caso. L'integrazione di ServiceNow con i supporti per la gestione dei rischi insider include le seguenti informazioni e azioni sul caso:
-    - **Nome attività**: Nome della nuova attività ServiceNow.
-    - **Task description**: Descrizione della nuova attività ServiceNow. Questo campo di descrizione modificabile include automaticamente un collegamento al caso di gestione dei rischi insider.
-    - **Tipo di attività**: Tipo di attività per la nuova attività ServiceNow, *evento imprevisto* *o richiesta di modifica.*
-    - **Priority**: priorità per la nuova attività ServiceNow, *Planning,* *Low,* *Moderate,* *High* o *Critical.*
-    - **Scadenza**: data richiesta per il completamento dell'attività ServiceNow.
-
-![Condivisione della gestione dei rischi insider con ServiceNow](../media/insider-risk-share-servicenow.png)
-
-- **Posta** elettronica : condivide un collegamento al caso di gestione dei rischi insider in un messaggio di posta elettronica. È possibile scegliere qualsiasi client di posta elettronica configurato localmente con questa opzione di condivisione. Per condividere il collegamento del caso con la posta elettronica, selezionare **Condividi**  >  **posta elettronica** dalla barra degli strumenti delle azioni del caso.
-- **Copia collegamento**: copia negli Appunti un collegamento al caso di gestione dei rischi insider. Per copiare il collegamento del caso negli Appunti, selezionare **Condividi**  >  **collegamento Copia** dalla barra degli strumenti delle azioni del caso.
 
 ### <a name="resolve-the-case"></a>Risolvere il caso
 
