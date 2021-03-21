@@ -108,6 +108,8 @@
           href: get-started/get-started-devices.md
         - name: Esperienza iniziale con Autopilot e pagina stato registrazione
           href: get-started/esp-first-run.md
+        - name: "Servizi di posizione di Windows\_10"
+          href: get-started/device-location.md
         - name: Introduzione al controllo delle applicazioni
           href: get-started/get-started-app-control.md
         - name: Distribuire le app

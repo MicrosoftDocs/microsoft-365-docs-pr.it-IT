@@ -14,12 +14,12 @@ metadata:
   audience: ITPro
   ms.date: 11/08/2019
   localization_priority: Priority
-  ms.openlocfilehash: 5b7ae6a04088ea51a6850bf8dbe99235c281796d
-  ms.sourcegitcommit: fa5659cb66d84dcfeebc03b47bd9d38017d8934d
+  ms.openlocfilehash: bb4639a79a0adb55ecf06dcd7898e5e0535c748e
+  ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
   ms.translationtype: HT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 02/05/2021
-  ms.locfileid: "50109914"
+  ms.lasthandoff: 03/19/2021
+  ms.locfileid: "50928485"
 landingContent:
 - title: Guide della soluzione fondamentali
   linkLists:
@@ -42,7 +42,7 @@ landingContent:
     - text: Illustrazioni sulla produttività di Microsoft 365
       url: productivity-illustrations.md
     - text: Poster sull'architettura di Teams
-      url: https://docs.microsoft.com/MicrosoftTeams/teams-architecture-solutions-posters?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json&view=o365-worldwide
+      url: /MicrosoftTeams/teams-architecture-solutions-posters?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
     - text: Principi di progettazione
       url: design-principles.md
 - title: Risorse del carico di lavoro
@@ -66,31 +66,31 @@ landingContent:
     - text: Governance collaborativa
       url: collaboration-governance-overview.md
     - text: Collaborazione ai file
-      url: https://docs.microsoft.com/sharepoint/deploy-file-collaboration?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json&view=o365-worldwide
+      url: /sharepoint/deploy-file-collaboration?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
     - text: Intranet intelligente
-      url: https://docs.microsoft.com/sharepoint/intelligent-internet-overview?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json&view=o365-worldwide
+      url: /sharepoint/intelligent-internet-overview?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
     - text: Guida di OneDrive per le aziende
-      url: https://docs.microsoft.com/onedrive/plan-onedrive-enterprise?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json&view=o365-worldwide
+      url: /onedrive/plan-onedrive-enterprise?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
 - title: Guide alle soluzioni per la sicurezza e la conformità
   linkLists:
   - linkListType: deploy
     links:
     - text: Principali attività per i team di sicurezza per supportare il lavoro da casa
-      url: https://docs.microsoft.com/microsoft-365/security/top-security-tasks-for-remote-work?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json&view=o365-worldwide
+      url: ../security/top-security-tasks-for-remote-work.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
     - text: Sicurezza Microsoft 365 per Business Decision Maker (BDM)
-      url: https://docs.microsoft.com/microsoft-365/security/microsoft-365-security-for-bdm?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json&view=o365-worldwide
-    - text: Distribuire Microsoft Defender Advanced Threat Protection
-      url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/deployment-phases?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json&view=o365-worldwide
+      url: ../security/microsoft-365-security-for-bdm.md?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
+    - text: Distribuire Microsoft Defender per endpoint
+      url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
   - linkListType: reference
     links:
     - text: "ISO: piano d'azione consigliato"
-      url: https://docs.microsoft.com/microsoft-365/compliance/iso-action-plan?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json&view=o365-worldwide
+      url: /compliance/regulatory/iso-action-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
     - text: "NIST: piano d'azione consigliato"
-      url: https://docs.microsoft.com/microsoft-365/compliance/nist-action-plan?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json&view=o365-worldwide
+      url: /compliance/regulatory/nist-action-plan?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
     - text: "NIST: piano d'azione consigliato"
-      url: https://docs.microsoft.com/microsoft-365/compliance/ccpa-faq?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json&view=o365-worldwide
+      url: /compliance/regulatory/ccpa-faq?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
     - text: "GDPR: piano d'azione consigliato"
-      url: https://docs.microsoft.com/microsoft-365/compliance/gdpr?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json&view=o365-worldwide
+      url: /compliance/regulatory/gdpr?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
 - title: Guida specifica del settore
   linkLists:
   - linkListType: overview
@@ -100,10 +100,10 @@ landingContent:
     - text: Sicurezza e conformità per i servizi energetici e di utilità
       url: energy-secure-collaboration.md
     - text: Teams per il settore sanitario
-      url: https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json&view=o365-worldwide
+      url: /MicrosoftTeams/expand-teams-across-your-org/healthcare/teams-in-hc?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
     - text: Teams per l'istruzione
-      url: https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json&view=o365-worldwide
+      url: /MicrosoftTeams/expand-teams-across-your-org/teams-for-education-landing-page?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
     - text: Teams per enti pubblici
-      url: https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json&view=o365-worldwide
+      url: /MicrosoftTeams/expand-teams-across-your-org/teams-for-government-landing-page?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
     - text: Supporto per i lavoratori remoti degli enti pubblici con Teams
-      url: https://docs.microsoft.com/MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams?toc=/microsoft-365/solutions/toc.json&bc=/microsoft-365/solutions/breadcrumb/toc.json&view=o365-worldwide
+      url: /MicrosoftTeams/expand-teams-across-your-org/gov-support-remote-work-with-teams?bc=%2fmicrosoft-365%2fsolutions%2fbreadcrumb%2ftoc.json&toc=%2fmicrosoft-365%2fsolutions%2ftoc.json&view=o365-worldwide
