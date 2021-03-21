@@ -17,12 +17,12 @@ ms.custom:
 - seo-marvel-apr2020
 localization_priority: Priority
 description: Informazioni sulle impostazioni di condivisione guest disponibili in Microsoft 365 che possono influire sulla condivisione con persone esterne all'organizzazione.
-ms.openlocfilehash: 997ce1375660f1a0e87d0babe647caada09e9e93
-ms.sourcegitcommit: 47de4402174c263ae8d70c910ca068a7581d04ae
+ms.openlocfilehash: c87f1d0ea8a35d7685f91c1b20a709c58ec4d040
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "49663656"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920217"
 ---
 # <a name="microsoft-365-guest-sharing-settings-reference"></a>Riferimento alle impostazioni di condivisione guest di Microsoft 365
 
@@ -35,7 +35,7 @@ Questo articolo fornisce informazioni di riferimento per le varie impostazioni c
 Azure Active Directory è il servizio directory utilizzato da Microsoft 365. Le impostazioni delle relazioni aziendali di Azure Active Directory interessano direttamente la condivisione in Teams, Gruppi di Microsoft 365, SharePoint e OneDrive.
 
 > [!NOTE]
-> Queste impostazioni influiscono su SharePoint solo se è stata configurata [l'integrazione di SharePoint e OneDrive con Azure AD B2B (anteprima)](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview). Nella tabella seguente si presuppone che sia stata configurata.
+> Queste impostazioni influiscono su SharePoint solo se è stata configurata [l'integrazione di SharePoint e OneDrive con Azure AD B2B (anteprima)](/sharepoint/sharepoint-azureb2b-integration-preview). Nella tabella seguente si presuppone che sia stata configurata.
 
 ### <a name="organizational-relationships-settings"></a>Impostazioni delle relazioni aziendali
 
@@ -49,7 +49,7 @@ Azure Active Directory è il servizio directory utilizzato da Microsoft 365. Le 
 |Gli amministratori e gli utenti nel ruolo Mittente dell'invito guest possono inviare inviti|Sì|Se l'impostazione è su **Sì**, gli amministratori possono invitare utenti guest tramite Azure AD e tramite le esperienze di condivisione di Microsoft 365, come Teams e SharePoint; se l'impostazione è su **No**, non possono farlo.|
 |I membri possono invitare|Sì|Se l'impostazione è su **Sì**, i membri di Azure AD possono invitare utenti guest tramite Azure AD; se l'impostazione è su **No**, non possono farlo. Se l'impostazione è su **Sì**, i membri dei gruppi di Microsoft 365 possono invitare guest con l'approvazione dei proprietari; se l'impostazione è su **No**, i membri dei gruppi di Microsoft 365 possono invitare guest con l'approvazione dei proprietari ma i proprietari devono essere amministratori globali per concedere l'approvazione. <br><br>Tenere presente che **I membri possono invitare** si riferisce ai membri di Azure AD (anziché agli utenti guest) e non ai membri di siti o gruppi in Microsoft 365. <br><br>È identica all'impostazione **Consenti agli utenti di aggiungere nuovi utenti guest all'organizzazione** in Sicurezza e protezione di Microsoft 365.|
 |Gli utenti guest possono invitare|Sì|Se l'impostazione è su **Sì**, gli utenti guest nella directory possono invitare altri utenti guest a collaborare su risorse di Azure AD e su file e cartelle in SharePoint e OneDrive; se l'impostazione è su **No**, non possono farlo. <br><br>Tenere presente che **Consentire agli utenti esterni di trovare gli account utente nella directory digitando le corrispondenze esatte degli indirizzi di posta elettronica** deve essere attivata nell'interfaccia di amministrazione di SharePoint affinché gli utenti guest possano condividere file e cartelle con altri utenti guest.|
-|Abilita passcode monouso tramite posta elettronica per gli utenti guest (anteprima)|No|Se l'impostazione è su **Sì**, gli utenti guest senza un account del servizio gestito o un account aziendale o dell'istituto di istruzione possono [eseguire l'autenticazione con Azure AD utilizzando un passcode monouso](https://docs.microsoft.com/azure/active-directory/b2b/one-time-passcode); se l'impostazione è su **No**, gli utenti dovranno creare un account Microsoft per eseguire l'autenticazione. Questa impostazione deve essere su **Sì** affinché [Integrazione di SharePoint e OneDrive con Azure AD B2B (anteprima)](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) funzioni.|
+|Abilita passcode monouso tramite posta elettronica per gli utenti guest (anteprima)|No|Se l'impostazione è su **Sì**, gli utenti guest senza un account del servizio gestito o un account aziendale o dell'istituto di istruzione possono [eseguire l'autenticazione con Azure AD utilizzando un passcode monouso](/azure/active-directory/b2b/one-time-passcode); se l'impostazione è su **No**, gli utenti dovranno creare un account Microsoft per eseguire l'autenticazione. Questa impostazione deve essere su **Sì** affinché [Integrazione di SharePoint e OneDrive con Azure AD B2B (anteprima)](/sharepoint/sharepoint-azureb2b-integration-preview) funzioni.|
 |Restrizioni di collaborazione|Consenti l'invio di inviti a qualsiasi dominio|Questa impostazione consente di specificare un elenco di domini autorizzati o bloccati per la condivisione. Se si specificano domini autorizzati, gli inviti di condivisione possono essere inviati solo a tali domini. Se si specificano domini non autorizzati, gli inviti di condivisione non possono essere inviati a tali domini.<br><br> Questa impostazione interessa le esperienze di condivisione di Microsoft 365 come Teams e SharePoint. È possibile autorizzare o bloccare i domini a un livello più granulare utilizzando i filtri per i domini in SharePoint o Teams.|
 
 Questa impostazione influisce sul modo in cui gli utenti sono invitati nella directory. Non influisce sulla condivisione con gli utenti guest già presenti nella directory.
@@ -81,7 +81,7 @@ L'interfaccia di amministrazione di Microsoft 365 presenta delle impostazioni a 
 |Consenti ai membri del gruppo esterni all'organizzazione di accedere al contenuto del gruppo|Attivato|Se l'impostazione è su **Attivato**, gli utenti guest possono accedere al contenuto del gruppo; se l'impostazione è su **Disattivato**, non possono farlo. Questa impostazione deve essere su **Attivato** per qualsiasi scenario in cui gli utenti guest interagiscono con Teams o i Gruppi di Microsoft 365.|
 |Consenti ai proprietari del gruppo di aggiungere persone esterne all'organizzazione ai gruppi|Attivato|Se è su **Attivato**, i proprietari di Teams o Gruppi di Microsoft 365 possono invitare nuovi guest al gruppo. Se è su **Disattivato**, i proprietari possono invitare solo utenti guest già presenti nella directory.|
 
-Queste impostazioni sono a livello di organizzazione. Vedere [Creare impostazioni per un gruppo specifico](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-settings-cmdlets#create-settings-for-a-specific-group) per informazioni sulle modifiche di queste impostazioni a livello di gruppo con PowerShell.
+Queste impostazioni sono a livello di organizzazione. Vedere [Creare impostazioni per un gruppo specifico](/azure/active-directory/users-groups-roles/groups-settings-cmdlets#create-settings-for-a-specific-group) per informazioni sulle modifiche di queste impostazioni a livello di gruppo con PowerShell.
 
 ## <a name="teams"></a>Teams
 
@@ -166,7 +166,7 @@ Poiché OneDrive è una gerarchia di siti all'interno di SharePoint, le impostaz
 |**Impostazione**|**Predefinita**|**Descrizione**|
 |:-----|:-----|:-----|
 |Limita condivisione esterna in base al dominio|Disattivato|Questa impostazione consente di specificare un elenco di domini autorizzati o bloccati per la condivisione. Se si specificano domini autorizzati, gli inviti di condivisione possono essere inviati solo a tali domini. Se si specificano domini non autorizzati, gli inviti di condivisione non possono essere inviati a tali domini.<br><br> Questa impostazione influisce su tutti i siti di SharePoint e OneDrive nell'organizzazione.|
-|Gli utenti guest devono accedere con lo stesso account a cui vengono inviati gli inviti di condivisione|Disattivato|Impedisce agli utenti guest di utilizzare gli inviti di condivisione dei siti con un indirizzo di posta elettronica diverso da quello al quale è stato inviato l'invito.<br><br>[L'integrazione di SharePoint e OneDrive con Azure AD B2B (anteprima)](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview) non usa questa impostazione perché tutti gli utenti guest vengono aggiunti alla directory in base all'indirizzo di posta elettronica al quale è stato inviato l'invito. Non è possibile utilizzare indirizzi di posta elettronica alternativi per accedere al sito.|
+|Gli utenti guest devono accedere con lo stesso account a cui vengono inviati gli inviti di condivisione|Disattivato|Impedisce agli utenti guest di utilizzare gli inviti di condivisione dei siti con un indirizzo di posta elettronica diverso da quello al quale è stato inviato l'invito.<br><br>[L'integrazione di SharePoint e OneDrive con Azure AD B2B (anteprima)](/sharepoint/sharepoint-azureb2b-integration-preview) non usa questa impostazione perché tutti gli utenti guest vengono aggiunti alla directory in base all'indirizzo di posta elettronica al quale è stato inviato l'invito. Non è possibile utilizzare indirizzi di posta elettronica alternativi per accedere al sito.|
 |Consenti agli utenti guest di condividere elementi che non possiedono|Attivato|Se è su **Attivato**, gli utenti guest possono condividere elementi che non possiedono con altri utenti o utenti guest; se è su **Disattivato**, non possono farlo. Gli utenti guest possono sempre condividere elementi di cui hanno il controllo completo.|
 
 ### <a name="sharepoint-and-onedrive-file-and-folder-link-settings"></a>Impostazioni dei collegamenti a file e cartelle di SharePoint e OneDrive
@@ -209,7 +209,7 @@ Poiché queste impostazioni sono soggette alle impostazioni a livello di organiz
 
 È possibile impostare le autorizzazioni di condivisione guest per ogni sito di SharePoint. Questa impostazione è valida sia per la condivisione di siti che per la condivisione di file e cartelle. La condivisione *Chiunque* non è disponibile per la condivisione di siti. Se si sceglie **Chiunque**, gli utenti possono condividere file e cartelle utilizzando i collegamenti *Chiunque* e il sito stesso con utenti guest nuovi ed esistenti.
 
-Se al sito è applicata un'etichetta di riservatezza, tale etichetta può controllare le impostazioni di condivisione esterna. Per altre informazioni, vedere [Usare le etichette di riservatezza per proteggere i contenuti in Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+Se al sito è applicata un'etichetta di riservatezza, tale etichetta può controllare le impostazioni di condivisione esterna. Per altre informazioni, vedere [Usare le etichette di riservatezza per proteggere i contenuti in Microsoft Teams, gruppi di Microsoft 365 e siti di SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md).
 
 **Navigazione:** Interfaccia di amministrazione di SharePoint > Siti attivi > selezionare il sito > scheda Criteri > Modifica le impostazioni di condivisione esterna
 
@@ -251,8 +251,8 @@ Nella tabella seguente viene mostrata l'impostazione di condivisione predefinita
 
 ## <a name="see-also"></a>Vedere anche
 
-[Panoramica sulla condivisione esterna in SharePoint e OneDrive](https://docs.microsoft.com/sharepoint/external-sharing-overview)
+[Panoramica sulla condivisione esterna in SharePoint e OneDrive](/sharepoint/external-sharing-overview)
 
-[Accesso guest in Microsoft Teams](https://docs.microsoft.com/MicrosoftTeams/guest-access)
+[Accesso guest in Microsoft Teams](/MicrosoftTeams/guest-access)
 
 [Aggiunta di guest a Gruppi di Microsoft 365](https://support.office.com/article/bfc7a840-868f-4fd6-a390-f347bf51aff6)

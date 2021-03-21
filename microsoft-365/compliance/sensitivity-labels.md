@@ -22,16 +22,16 @@ description: Usare le etichette di riservatezza di Microsoft Information Protect
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 6cdf7a6b9e75b575abda2c93f7531c45d93a9a51
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 6c1f8b404ddcda45d782a6517880955a6199025d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838629"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919592"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informazioni sulle etichette di riservatezza
 
->*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
+>*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
 > Se si stanno cercando informazioni sulle etichette di riservatezza che vengono visualizzate nelle app di Office, vedere [Applciare etichette di riservatezza a file ed e-mail in Office](https://support.microsoft.com/topic/apply-sensitivity-labels-to-your-files-and-email-in-office-2f96e7cd-d5a4-403b-8bd7-4cc636bae0f9).
@@ -49,9 +49,9 @@ Esempio che mostra le etichette di riservatezza disponibili in Excel dalla sched
 Per applicare le etichette di riservatezza, gli utenti devono aver eseguito l'accesso con l'account aziendale o dell'istituto di istruzione di Microsoft 365.
 
 > [!NOTE]
-> Le etichette di riservatezza sono ora supportate per i tenant delle entità governative degli Stati Uniti (GCC e GCC-H) Per altre informazioni, vedere le note sulla versione di Microsoft 365 Apps for enterprise, [Versione 2101: 26 gennaio](https://docs.microsoft.com/officeupdates/current-channel#version-2101-january-26).
+> Le etichette di riservatezza sono ora supportate per i tenant delle entità governative degli Stati Uniti (GCC e GCC-H) Per altre informazioni, vedere le note sulla versione di Microsoft 365 Apps for enterprise, [Versione 2101: 26 gennaio](/officeupdates/current-channel#version-2101-january-26).
 >
-> Per l’etichettatura unificata del client e dello scanner di Azure Information Protection, vedere [Descrizione del servizio Azure Information Protection Premium Government](https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
+> Per l’etichettatura unificata del client e dello scanner di Azure Information Protection, vedere [Descrizione del servizio Azure Information Protection Premium Government](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
 
 È possibile usare le etichette di riservatezza per:
   
@@ -118,7 +118,7 @@ Quando si applica un'etichetta di riservatezza a un messaggio di posta elettroni
     
     ![Messaggio in cui si richiede di assegnare un'etichetta obbligatoria](../media/Sensitivity-label-Prompt-for-required-label.png)
     
-    Per altre informazioni sulle impostazioni di **applicazione automatica di etichette ai file e ai messaggi di posta elettronica** quando si crea o modifica un’etichetta di riservatezza, vedere [Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md) per le app Office e [Etichettare automaticamente i file in Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label).
+    Per altre informazioni sulle impostazioni di **applicazione automatica di etichette ai file e ai messaggi di posta elettronica** quando si crea o modifica un’etichetta di riservatezza, vedere [Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md) per le app Office e [Etichettare automaticamente i file in Azure Purview](/azure/purview/create-sensitivity-label).
 
 ### <a name="label-scopes"></a>Ambiti di etichetta
 
@@ -134,7 +134,7 @@ Per impostazione predefinita, è sempre selezionato l'ambito **File e messaggi d
 
 - **Gruppi e siti**: [abilitare le etichette di riservatezza per i contenitori e sincronizzare le etichette](sensitivity-labels-teams-groups-sites.md#how-to-enable-sensitivity-labels-for-containers-and-synchronize-labels)
 
-- **Risorse di Azure Purview (anteprima)**: [etichettare automaticamente i contenuti in Azure Purview](https://go.microsoft.com/fwlink/?linkid=2148989).
+- **Risorse di Azure Purview (anteprima)**: [etichettare automaticamente i contenuti in Azure Purview](/azure/purview/create-sensitivity-label).
 
 Se si modificano le impostazioni predefinite in modo che non siano selezionate tutti gli ambiti, viene visualizzata la prima pagina delle impostazioni di configurazione per gli ambiti non selezionati, ma non è possibile configurare le impostazioni. Ad esempio, se non è selezionato l'ambito per i file e i messaggi di posta elettronica, non è possibile selezionare le opzioni nella pagina successiva:
 
@@ -178,7 +178,7 @@ A differenza delle etichette di conservazione, che vengono pubblicate in posizio
 
 Quando si configura un criterio di etichetta, è possibile:
 
-- **Scegliere gli utenti e i gruppi che vedranno le etichette.** Le etichette possono essere pubblicate per qualsiasi utente specifico, gruppo di sicurezza abilitato per la posta elettronica, gruppo di distribuzione o gruppo di Microsoft 365, che può avere [appartenenza dinamica](https://docs.microsoft.com/azure/active-directory/users-groups-roles/groups-create-rule) in Azure AD.
+- **Scegliere gli utenti e i gruppi che vedranno le etichette.** Le etichette possono essere pubblicate per qualsiasi utente specifico, gruppo di sicurezza abilitato per la posta elettronica, gruppo di distribuzione o gruppo di Microsoft 365, che può avere [appartenenza dinamica](/azure/active-directory/users-groups-roles/groups-create-rule) in Azure AD.
 
 - **Applicare un’etichetta predefinita** a tutti i nuovi documenti e messaggi di posta elettronica creati dagli utenti e dai gruppi inclusi nel criterio dell’etichetta e la stessa o una differente etichetta predefinita ai contenitori (se sono state [abilitate le etichette di riservatezza per Microsoft Teams, i gruppi di Microsoft 365 e i siti di SharePoint](sensitivity-labels-teams-groups-sites.md)). Con questa impostazione, il client di etichettatura unificata di Azure Information Protection applica l'etichetta predefinita anche ai documenti esistenti senza etichetta. Gli utenti possono sempre modificare l'etichetta predefinita, se non è quella giusta per il documento o la posta elettronica.
     
@@ -236,7 +236,7 @@ Se sono state distribuite etichette con Azure Information Protection, usare le s
 > [!NOTE]
 > La gestione delle etichette di Azure Information Protection nel portale di Azure non sarà più disponibile dal **31 marzo 2021**. Per altre informazioni, vedere l'avviso ufficiale di [funzionalità deprecata](https://techcommunity.microsoft.com/t5/azure-information-protection/announcing-timelines-for-sunsetting-label-management-in-the/ba-p/1226179).
 
-Se si usano etichette di Azure Information Protection perché il tenant non si trova ancora sulla [piattaforma di etichettatura unificata](https://docs.microsoft.com/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform), è consigliabile evitare di creare etichette di riservatezza finché non viene attivata l'etichettatura unificata. In questo scenario, le etichette visualizzate nel portale di Azure sono etichette di Azure Information Protection anziché etichette di riservatezza. Queste etichette possono essere usate dal client di Azure Information Protection (classico) nei computer Windows, ma non possono essere usate da dispositivi che eseguono macOS, iOS o Android. Per risolvere il problema, [eseguire la migrazione di queste etichette](/azure/information-protection/configure-policy-migrate-labels) in etichette di riservatezza. 
+Se si usano etichette di Azure Information Protection perché il tenant non si trova ancora sulla [piattaforma di etichettatura unificata](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform), è consigliabile evitare di creare etichette di riservatezza finché non viene attivata l'etichettatura unificata. In questo scenario, le etichette visualizzate nel portale di Azure sono etichette di Azure Information Protection anziché etichette di riservatezza. Queste etichette possono essere usate dal client di Azure Information Protection (classico) nei computer Windows, ma non possono essere usate da dispositivi che eseguono macOS, iOS o Android. Per risolvere il problema, [eseguire la migrazione di queste etichette](/azure/information-protection/configure-policy-migrate-labels) in etichette di riservatezza. 
 
 I metadati applicati da entrambi i set di etichette sono compatibili, quindi non è necessario rietichettare documenti e messaggi di posta elettronica al termine della migrazione.
 
@@ -256,7 +256,7 @@ Anche quando si usa l'etichettatura integrata nelle app di Office, è possibile 
 
 - Un modulo di PowerShell per individuare le informazioni sensibili nei file in locale e applicare o rimuovere etichette e crittografia da tali file.
 
-Se non si ha familiarità con Azure Information Protection o se l’utente è un cliente di Azure Information Protection che ha recentemente eseguito la migrazione delle etichette, vedere [Scegliere la soluzione di etichettatura di Windows](https://docs.microsoft.com/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) nella documentazione di Azure Information Protection.
+Se non si ha familiarità con Azure Information Protection o se l’utente è un cliente di Azure Information Protection che ha recentemente eseguito la migrazione delle etichette, vedere [Scegliere la soluzione di etichettatura di Windows](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution) nella documentazione di Azure Information Protection.
 
 ## <a name="sensitivity-labels-and-microsoft-cloud-app-security"></a>Etichette di riservatezza e Microsoft Cloud App Security
 
@@ -268,11 +268,11 @@ Cloud App Security è compatibile sia con le etichette di riservatezza che con l
 
 - Se nelle interfacce di amministrazione per l'etichettatura non ci sono etichette di riservatezza pubblicate, vengono usate le etichette di Azure Information Protection.
 
-Per le istruzioni su come usare Cloud App Security con queste etichette, vedere [Integrazione di Azure Information Protection](https://docs.microsoft.com/cloud-app-security/azip-integration).
+Per le istruzioni su come usare Cloud App Security con queste etichette, vedere [Integrazione di Azure Information Protection](/cloud-app-security/azip-integration).
 
 ## <a name="sensitivity-labels-and-the-microsoft-information-protection-sdk"></a>Etichette di riservatezza e Microsoft Information Protection SDK
 
-Dato che un'etichetta di riservatezza è archiviata in testo non crittografato nei metadati di un documento, le app e i servizi di terze parti possono leggere e scrivere in questi dati di etichettatura per integrare la distribuzione dell'etichettatura. Inoltre, gli sviluppatori di software possono usare [Microsoft Information Protection SDK](https://docs.microsoft.com/information-protection/develop/overview#microsoft-information-protection-sdk) per supportare pienamente le funzionalità di etichettatura e crittografia su più piattaforme. Per altre informazioni, vedere l'[annuncio della disponibilità generale sul blog della Tech Community](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144). 
+Dato che un'etichetta di riservatezza è archiviata in testo non crittografato nei metadati di un documento, le app e i servizi di terze parti possono leggere e scrivere in questi dati di etichettatura per integrare la distribuzione dell'etichettatura. Inoltre, gli sviluppatori di software possono usare [Microsoft Information Protection SDK](/information-protection/develop/overview#microsoft-information-protection-sdk) per supportare pienamente le funzionalità di etichettatura e crittografia su più piattaforme. Per altre informazioni, vedere l'[annuncio della disponibilità generale sul blog della Tech Community](https://techcommunity.microsoft.com/t5/Microsoft-Information-Protection/Microsoft-Information-Protection-SDK-Now-Generally-Available/ba-p/263144). 
 
 Sono anche disponibili informazioni sulle [soluzioni dei partner integrate con Microsoft Information Protection](https://techcommunity.microsoft.com/t5/Azure-Information-Protection/Microsoft-Information-Protection-showcases-integrated-partner/ba-p/262657).
 

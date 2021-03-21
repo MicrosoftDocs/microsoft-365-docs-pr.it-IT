@@ -8,12 +8,12 @@ ms.localizationpriority: normal
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: b5c5757c5e07e6edd546c0553028ccf56eb1b4f8
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: c51ebdbcd2a8d6d13f5ba0009d470581e317a365
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840314"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920433"
 ---
 # <a name="microsoft-managed-desktop-service-description"></a>Descrizione del servizio Microsoft Managed Desktop
 
@@ -23,13 +23,13 @@ Microsoft Managed Desktop è un servizio che offre agli utenti un'esperienza mod
 - Configurazione dei dispositivi
 - Funzionalità per proteggere utenti e dispositivi, inclusi Windows Hello, BitLocker, SecureBoot e sicurezza basata sulla virtualizzazione secondo le migliori pratiche Microsoft
 - Monitoraggio della sicurezza dei dispositivi e servizi di correzione
-- Compatibilità delle app tramite [Desktop App Assure](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure)
+- Compatibilità delle app tramite [Desktop App Assure](/fasttrack/win-10-desktop-app-assure)
 - Gestione degli aggiornamenti per Windows 10 e delle app di Microsoft 365 Apps for enterprise
 - Dati analitici sull'utilizzo di dispositivi e app
 - Supporto IT per utenti
 - Supporto operativo per professionisti IT
 
-Per dettagli sui servizi specifici inclusi con Microsoft Managed Desktop, vedere gli altri articoli in questa sezione. Se è stato già deciso di usare Microsoft Managed Desktop, gli articoli in [Prepararsi per la registrazione in Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/get-ready/) forniscono la procedura per partecipare al servizio.
+Per dettagli sui servizi specifici inclusi con Microsoft Managed Desktop, vedere gli altri articoli in questa sezione. Se è stato già deciso di usare Microsoft Managed Desktop, gli articoli in [Prepararsi per la registrazione in Microsoft Managed Desktop](../get-ready/index.md) forniscono la procedura per partecipare al servizio.
 
 - [Le aree geografiche e le lingue supportate da Microsoft Managed Desktop ](regions-languages.md) spiega quali aree geografiche e lingue sono supportate con il servizio.
 - Per garantire la migliore esperienza agli utenti, solo alcuni dispositivi sono supportati da Microsoft Managed Desktop. [Programmare dispositivi](device-list.md) specifica i modelli e le configurazioni esatti del dispositivo che è possibile utilizzare con il servizio, indipendentemente dal fatto che vengano forniti o che si lavori con un partner.

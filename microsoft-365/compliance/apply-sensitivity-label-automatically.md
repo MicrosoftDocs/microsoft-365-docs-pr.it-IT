@@ -16,19 +16,19 @@ search.appverid:
 - MOE150
 - MET150
 description: Quando si crea un'etichetta di riservatezza, è possibile assegnare automaticamente un'etichetta a file e messaggi di posta elettronica oppure chiedere agli utenti di selezionare l'etichetta consigliata.
-ms.openlocfilehash: 4eeedca64d1b2244355bb3e0e233969bdd02810c
-ms.sourcegitcommit: a7d1b29a024b942c7d0d8f5fb9b5bb98a0036b68
+ms.openlocfilehash: d645d185524d111af4eafed4b5fba06483525a85
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "50461891"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920076"
 ---
 # <a name="apply-a-sensitivity-label-to-content-automatically"></a>Applicare automaticamente un'etichetta di riservatezza al contenuto
 
->*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
+>*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
-> Per informazioni su come classificare ed etichettare i dati in Azure Purview, attualmente in anteprima, vedere [Etichettare automaticamente contenuti in Azure Purview](https://docs.microsoft.com/azure/purview/create-sensitivity-label).
+> Per informazioni su come classificare ed etichettare i dati in Azure Purview, attualmente in anteprima, vedere [Etichettare automaticamente contenuti in Azure Purview](/azure/purview/create-sensitivity-label).
 
 Quando si crea un'etichetta di riservatezza, è possibile assegnarla automaticamente a file e messaggi di posta elettronica quando soddisfano le condizioni specificate.
 
@@ -64,7 +64,7 @@ Esistono due metodi diversi per applicare automaticamente un'etichetta di riserv
     - Massimo 25.000 file etichettati automaticamente nel tenant al giorno.
     - Massimo di 10 criteri di etichettatura automatica per tenant, ognuno dei quali ha un massimo di 10 siti (SharePoint o OneDrive).
     - I valori esistenti per "Modificato", "Modificato da" e la data non vengono cambiati dai criteri di etichettatura automatica, sia per la modalità di simulazione che per l'applicazione delle etichette.
-    - Quando si applica la crittografia all'etichetta, [l'emittente di Rights Management e il proprietario di Rights Management](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) è il conto che ha modificato per ultimo il file.
+    - Quando si applica la crittografia all'etichetta, [l'emittente di Rights Management e il proprietario di Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) è il conto che ha modificato per ultimo il file.
 
     Caratteristiche specifiche dell'etichettatura automatica per Exchange:
     - A differenza dell'etichettatura manuale o dell'etichettatura automatica per le app di Office, negli allegati di Office (file Word, Excel e PowerPoint) e PDF vengono ricercate anche le condizioni specificate nei criteri di etichettatura automatica. Quando viene rilevata una corrispondenza, viene applicata un'etichetta al messaggio ma non all'allegato.
@@ -72,7 +72,7 @@ Esistono due metodi diversi per applicare automaticamente un'etichetta di riserv
     - Se sono presenti regole per il flusso di posta di Exchange o criteri di prevenzione della perdita dei dati che applicano la crittografia IRM: quando il contenuto viene identificato da queste regole o criteri e da un criterio di applicazione automatica di etichette, l'etichetta viene applicata. Se quell'etichetta applica la crittografia, le impostazioni IRM delle regole per il flusso di posta di Exchange o dei criteri di prevenzione della perdita dei dati vengono ignorate. Se invece quella etichetta non applica la crittografia, in aggiunta all'etichetta vengono applicate le impostazioni IRM delle regole per il flusso di posta di Exchange o dei criteri di prevenzione della perdita dei dati.
     - I messaggi di posta elettronica con crittografia IRM senza etichetta verranno sostituiti da un'etichetta con qualsiasi impostazione di crittografia se esiste una corrispondenza usando l'etichettatura automatica.
     - La posta in arrivo viene etichettata quando esiste una corrispondenza con le condizioni di etichettatura automatica. Tuttavia, se l'etichetta è configurata per la crittografia, la crittografia non viene applicata.
-    - Quando si applica la crittografia all'etichetta, [l'emittente di Rights Management e il proprietario di Rights Management](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) è la persona che invia il messaggio di posta elettronica.
+    - Quando si applica la crittografia all'etichetta, [l'emittente di Rights Management e il proprietario di Rights Management](/azure/information-protection/configure-usage-rights#rights-management-issuer-and-rights-management-owner) è la persona che invia il messaggio di posta elettronica.
     
 
 ## <a name="compare-auto-labeling-for-office-apps-with-auto-labeling-policies"></a>Confronto tra l'applicazione automatica di etichette per le app di Office e i criteri di applicazione automatica di etichette
@@ -151,7 +151,7 @@ Per altre informazioni su questi classificatori, vedere [Informazioni sui classi
 
 Durante il periodo di anteprima dell'opzione, le app seguenti supportano i classificatori sottoponibili a training per le etichette di riservatezza:
 
-- Microsoft 365 Apps for enterprise ([in precedenza Office 365 ProPlus](https://docs.microsoft.com/deployoffice/name-change)) per Windows, ora in distribuzione nel [Canale corrente](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) nella versione 2006 e successive:
+- Microsoft 365 Apps for enterprise ([in precedenza Office 365 ProPlus](/deployoffice/name-change)) per Windows, ora in distribuzione nel [Canale corrente](/deployoffice/overview-update-channels#current-channel-overview) nella versione 2006 e successive:
     - Word
     - Excel
     - PowerPoint
@@ -192,7 +192,7 @@ Caratteristiche specifiche del client di etichettatura unificata di Azure Inform
 
 -  L'assegnazione automatica e consigliata delle etichette si applica a Word, Excel e PowerPoint al salvataggio dei documenti e in Outlook all'invio di messaggi di posta elettronica.
 
-- Affinché Outlook sia in grado di supportare l'etichettatura consigliata, è prima necessario configurare un'[impostazione dei criteri avanzata](https://docs.microsoft.com/azure/information-protection/rms-client/clientv2-admin-guide-customizations#enable-recommended-classification-in-outlook).
+- Affinché Outlook sia in grado di supportare l'etichettatura consigliata, è prima necessario configurare un'[impostazione dei criteri avanzata](/azure/information-protection/rms-client/clientv2-admin-guide-customizations#enable-recommended-classification-in-outlook).
 
 - Le informazioni sensibili possono essere rilevate nel corpo del testo nei documenti e nei messaggi di posta elettronica e nelle intestazioni a piè di pagina, ma non nella riga dell'oggetto o negli allegati di posta elettronica.
 
@@ -272,7 +272,7 @@ Infine, è possibile usare la modalità di simulazione per ottenere un'approssim
     
     Ad esempio, per un utente nel tenant Contoso con il nome utente "rsimone": `https://contoso-my.sharepoint.com/personal/rsimone_contoso_onmicrosoft_com`
     
-    Per verificare la sintassi del tenant e identificare gli URL per gli utenti, vedere [Ottenere un elenco di tutti gli URL di OneDrive dell'utente nell'organizzazione](https://docs.microsoft.com/onedrive/list-onedrive-urls).
+    Per verificare la sintassi del tenant e identificare gli URL per gli utenti, vedere [Ottenere un elenco di tutti gli URL di OneDrive dell'utente nell'organizzazione](/onedrive/list-onedrive-urls).
 
 7. Per la pagina **Configurare regole comuni o avanzate**: mantenere l'impostazione predefinita di **Regole comuni** per definire le regole che identificano il contenuto da etichettare in tutte le posizioni selezionate. Se sono necessarie regole diverse per ogni posizione, selezionare **Regole avanzate**. Quindi, scegliere **Avanti**.
     
@@ -326,9 +326,9 @@ Per visualizzare i risultati del criterio di applicazione automatica di etichett
 
 ### <a name="use-powershell-for-auto-labeling-policies"></a>Usare PowerShell per i criteri di applicazione automatica di etichette.
 
-È possibile usare il [ Centro conformità e conformità di PowerShell](https://docs.microsoft.com/powershell/exchange/scc-powershell) per creare e configurare criteri di applicazione automatica di etichette. Questo significa che è possibile creare script per la creazione e la manutenzione dei criteri di applicazione automatica di etichette, che forniscono anche un metodo più efficiente per specificare multipli URL per OneDrive e percorsi di SharePoint.
+È possibile usare il [ Centro conformità e conformità di PowerShell](/powershell/exchange/scc-powershell) per creare e configurare criteri di applicazione automatica di etichette. Questo significa che è possibile creare script per la creazione e la manutenzione dei criteri di applicazione automatica di etichette, che forniscono anche un metodo più efficiente per specificare multipli URL per OneDrive e percorsi di SharePoint.
 
-Per poter eseguire i comandi di PowerShell, è prima necessario [connettersi al Centro sicurezza e conformità di PowerShell](https://docs.microsoft.com/powershell/exchange/connect-to-scc-powershell).
+Per poter eseguire i comandi di PowerShell, è prima necessario [connettersi al Centro sicurezza e conformità di PowerShell](/powershell/exchange/connect-to-scc-powershell).
 
 Per creare un nuovo criterio di applicazione automatica di etichette: 
 
@@ -356,10 +356,10 @@ Per i criteri di applicazione automatica di etichette esistenti, questo comando 
 
 Per altre informazioni sui cmdlet di PowerShell che supportano i criteri di applicazione automatica di etichette, sui parametri disponibili e su alcuni esempi, vedere la guida ai cmdlet seguente:
 
-- [Get-AutoSensitivityLabelPolicy](https://docs.microsoft.com/powershell/module/exchange/get-autosensitivitylabelpolicy)
-- [New-AutoSensitivityLabelPolicy](https://docs.microsoft.com/powershell/module/exchange/new-autosensitivitylabelpolicy)
-- [New-AutoSensitivityLabelRule](https://docs.microsoft.com/powershell/module/exchange/new-autosensitivitylabelrule)
-- [Remove-AutoSensitivityLabelPolicy](https://docs.microsoft.com/powershell/module/exchange/remove-autosensitivitylabelpolicy)
-- [Remove-AutoSensitivityLabelRule](https://docs.microsoft.com/powershell/module/exchange/remove-autosensitivitylabelrule)
-- [Set-AutoSensitivityLabelPolicy](https://docs.microsoft.com/powershell/module/exchange/set-autosensitivitylabelpolicy)
-- [Set-AutoSensitivityLabelRule](https://docs.microsoft.com/powershell/module/exchange/set-autosensitivitylabelrule)
+- [Get-AutoSensitivityLabelPolicy](/powershell/module/exchange/get-autosensitivitylabelpolicy)
+- [New-AutoSensitivityLabelPolicy](/powershell/module/exchange/new-autosensitivitylabelpolicy)
+- [New-AutoSensitivityLabelRule](/powershell/module/exchange/new-autosensitivitylabelrule)
+- [Remove-AutoSensitivityLabelPolicy](/powershell/module/exchange/remove-autosensitivitylabelpolicy)
+- [Remove-AutoSensitivityLabelRule](/powershell/module/exchange/remove-autosensitivitylabelrule)
+- [Set-AutoSensitivityLabelPolicy](/powershell/module/exchange/set-autosensitivitylabelpolicy)
+- [Set-AutoSensitivityLabelRule](/powershell/module/exchange/set-autosensitivitylabelrule)

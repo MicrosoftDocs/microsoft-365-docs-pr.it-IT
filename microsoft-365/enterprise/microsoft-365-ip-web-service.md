@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 - BCS160
 description: Informazioni su come usare l'indirizzo IP e il servizio Web URL di Office 365 per identificare e distinguere meglio il traffico di rete di Office 365.
-ms.openlocfilehash: 03e6eac86e66db6f9e94c3f98e6d7b565ffa0f14
-ms.sourcegitcommit: d76a4c07f0be2938372bdfae50e0e4d523bd8e9f
+ms.openlocfilehash: 1948491e1d3db724e7b7b6a5275234acab4be08a
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "48456460"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918955"
 ---
 # <a name="office-365-ip-address-and-url-web-service"></a>Servizio Web per URL e indirizzi IP di Office 365
 
@@ -66,7 +66,7 @@ Questi parametri sono comuni a tutti i metodi di servizio Web:
 - **formato = < JSON | CSV >** — Per impostazione predefinita il formato dei dati restituiti è JSON. Questo parametro facoltativo consente di restituire i dati con valori delimitati da virgole (CSV).
 - **ClientRequestId =\<guid>** — GUID necessario creato per l'associazione di client. Generare un GUID univoco per ogni computer che chiama il servizio Web, ossia gli script inclusi in questa pagina generano un GUID. Non usare i GUID illustrati negli esempi seguenti perché potrebbero essere bloccati dal servizio web in futuro. Il formato GUID è _xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx_, dove x rappresenta un numero esadecimale.
 
-  Per generare un GUID, è possibile usare il comando di PowerShell [New-Guid](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) oppure usare un servizio online come [generatore di GUID online](https://www.guidgenerator.com/).
+  Per generare un GUID, è possibile usare il comando di PowerShell [New-Guid](/powershell/module/microsoft.powershell.utility/new-guid?view=powershell-6) oppure usare un servizio online come [generatore di GUID online](https://www.guidgenerator.com/).
 
 ## <a name="version-web-method"></a>Metodo per la versione web
 
@@ -84,7 +84,7 @@ La metodo Web per la versione non è limitata a tariffe e non restituisce mai i 
 
 - instance: il nome breve dell'istanza del servizio di Office 365.
 - latest: l'ultima versione degli endpoint dell'istanza specificata.
-- versioni: elenco di tutte le versioni precedenti per l'istanza specificata. Questo elemento è incluso solo se il parametro _allversions _ è vero.
+- versioni: elenco di tutte le versioni precedenti per l'istanza specificata. Questo elemento è incluso solo se il parametro _allversions_ è vero.
 
 ### <a name="examples"></a>Esempi:
 
@@ -190,12 +190,12 @@ Se si chiama il metodo Web per gli endpoint troppe volte dallo stesso indirizzo 
 Il risultato ottenuto dal metodo Web per gli endpoint è una matrice di record in cui ogni record rappresenta uno specifico set di endpoint.  Gli elementi per ogni record sono:
 
 - id: il numero ID non modificabile del set di endpoint.
-- serviceArea: l'area del servizio di cui fa parte: _Common_, _Exchange_, _SharePoint_o _Skype_.
+- serviceArea: l'area del servizio di cui fa parte: _Common_, _Exchange_, _SharePoint_ o _Skype_.
 - URL: URL per il set di endpoint. Una matrice JSON di record DNS. Questo elemento viene omesso se non specificato.
 - tcpPorts: porte TCP per il set di endpoint. Tutti gli elementi Ports sono formattati come un elenco con valori delimitati da virgole (-). Le porte sono valide per tutti gli indirizzi IP e per tutti gli URL del set di endpoint di una specifica categoria. Questo elemento viene omesso se non specificato.
 - udpPorts: le porte UDP degli intervalli di indirizzi IP nel set di endpoint.  Questo elemento viene omesso se non specificato.
 - ips: gli intervalli di indirizzi IP associati al set di endpoint come associati alle porte UDP o TCP elencate. Una matrice JSON di intervalli di indirizzi IP. Questo elemento viene omesso se non specificato.
-- Categoria: categoria di connettività per il set di endpoint. I valori validi sono _Ottimizza_, _Consenti_ e_Predefinito_. Se si esegue una ricerca nell'output del metodo Web endpoint per la categoria di un indirizzo IP o URL specifico, è possibile che la query restituisca più categorie. In tal caso, seguire le indicazioni della categoria priorità più alta. Se ad esempio il punto finale compare sia in _Ottimizza_ che in _Consenti_, seguire i requisiti per _Ottimizza_. Obbligatorio.
+- Categoria: categoria di connettività per il set di endpoint. I valori validi sono _Ottimizza_, _Consenti_ e _Predefinito_. Se si esegue una ricerca nell'output del metodo Web endpoint per la categoria di un indirizzo IP o URL specifico, è possibile che la query restituisca più categorie. In tal caso, seguire le indicazioni della categoria priorità più alta. Se ad esempio il punto finale compare sia in _Ottimizza_ che in _Consenti_, seguire i requisiti per _Ottimizza_. Obbligatorio.
 - expressRoute: _True_ se il set di endpoint sfrutta la connessione ExpressRoute, _False_ in caso contrario.
 - required: _True_ se il set di endpoint deve avere una connettività per Office 365 che sia supportata. _False_ se il set di endpoint è facoltativo.
 - notes: per gli endpoint facoltativi, questo testo descrive la funzionalità di Office 365 che non sarà disponibile se gli URL o gli indirizzi IP nel set di endpoint non sono accessibili al livello della rete. Questo elemento viene omesso se non specificato.
@@ -258,7 +258,7 @@ Il risultato ottenuto dal metodo Web per le modifiche è una matrice di record i
 
 - id: l'ID non modificabile del record della modifica.
 - endpointSetId: l'ID del record del set di endpoint cui è stata apportata la modifica.
-- disposizione: descrive la modifica apportata al record set di endpoint. I valori sono_cambia_, _aggiungi_ o_rimuovi_.
+- disposizione: descrive la modifica apportata al record set di endpoint. I valori sono _cambia_, _aggiungi_ o _rimuovi_.
 - impatto: non tutte le modifiche saranno ugualmente importanti per ogni ambiente. Questo elemento descrive l'impatto atteso di un ambiente perimetrale della rete aziendale in seguito a questa modifica. Questo elemento è incluso solo in Change Records della versione **2018112800** e versioni successive. Le opzioni per l'impatto sono:-AddedIp-un indirizzo IP è stato aggiunto a Office 365 e sarà presto disponibile per il servizio. Rappresenta una modifica da eseguire in un firewall o un dispositivo di rete perimetrale di livello 3. Se non si aggiunge prima di iniziare a usarlo, può verificarsi un'interruzione del servizio.
   — AddedUrl: un URL è stato aggiunto a Office 365 e sarà presto live nel servizio. Rappresenta una modifica da eseguire in un server proxy o in un dispositivo di rete perimetrale per analisi URL. Se non si aggiunge tale URL prima di iniziare a usarlo, può verificarsi un'interruzione del servizio.
   -AddedIpAndUrl-sono stati aggiunti sia un indirizzo IP che un URL. Rappresenta una modifica da eseguire in un dispositivo firewall di livello 3 o un server proxy o in un dispositivo per analisi URL. Se non si aggiunge tale IP/URL prima di iniziare a usarlo, può verificarsi un'interruzione del servizio.
@@ -365,13 +365,13 @@ Questo script consente di:
     ```
 
 - In ogni successiva esecuzione dello script, se la versione più recente del servizio Web è identica alla versione del file _O365_endpoints_latestversion. txt_, lo script esce senza apportare modifiche.
-- Se la versione più recente del servizio Web è più recente della versione_O365_endpoints_latestversion.txt_, lo script restituirà gli endpoint e i filtri per la versione **Consenti** e **Ottimizza**endpoint di categoria, aggiorna la versione nel file _O365_endpoints_latestversion.txt_ e scrive i dati aggiornati nel file_O365_endpoints_data.txt_.
+- Se la versione più recente del servizio Web è più recente della versione _O365_endpoints_latestversion.txt_, lo script restituirà gli endpoint e i filtri per la versione **Consenti** e **Ottimizza** endpoint di categoria, aggiorna la versione nel file _O365_endpoints_latestversion.txt_ e scrive i dati aggiornati nel file _O365_endpoints_data.txt_.
 
-Lo script genera un _ClientRequestId_ univoco per il computer in cui è stato eseguito e riutilizza questo ID tra più chiamate. Questo ID viene archiviato nel file_O365_endpoints_latestversion. txt_.
+Lo script genera un _ClientRequestId_ univoco per il computer in cui è stato eseguito e riutilizza questo ID tra più chiamate. Questo ID viene archiviato nel file _O365_endpoints_latestversion. txt_.
 
 ### <a name="to-run-the-powershell-script"></a>Per eseguire lo script di PowerShell
 
-1. Copiare lo script e salvarlo nel disco rigido locale o nel percorso dello script come_Get-O365WebServiceUpdates.ps1_.
+1. Copiare lo script e salvarlo nel disco rigido locale o nel percorso dello script come _Get-O365WebServiceUpdates.ps1_.
 1. Eseguire lo script nell'editor di script preferito, ad esempio il codice di PowerShell ISE o VS, o da una console di PowerShell con il comando seguente:
 
     ``` powershell
@@ -607,7 +607,7 @@ Per ricevere notifiche tramite posta elettronica, è possibile usare diversi met
 
 - Per usare una soluzione di Microsoft Flow, vedere [Usare Microsoft Flow per ricevere un messaggio di posta elettronica per le modifiche apportate agli indirizzi IP e agli URL di Office 365](https://techcommunity.microsoft.com/t5/Office-365-Networking/Use-Microsoft-Flow-to-receive-an-email-for-changes-to-Office-365/m-p/240651).
 - Per distribuire un'app logica di Azure con un modello ARM, [vedere notifica di aggiornamento di Office 365 (v 1.1)](https://aka.ms/ipurlws-updates-template).
-- Per scrivere uno script di notifica personalizzato con PowerShell, [vedere Invio-MailMessage](https://docs.microsoft.com/powershell/module/microsoft.powershell.utility/send-mailmessage).
+- Per scrivere uno script di notifica personalizzato con PowerShell, [vedere Invio-MailMessage](/powershell/module/microsoft.powershell.utility/send-mailmessage).
 
 ## <a name="exporting-a-proxy-pac-file"></a>Esportare un file PAC Proxy
 

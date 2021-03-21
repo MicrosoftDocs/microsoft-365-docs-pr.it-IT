@@ -13,16 +13,16 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Attivare l'impostazione che consente la creazione condivisa e il salvataggio automatico dei documenti etichettati e crittografati nelle app desktop in SharePoint e OneDrive.
-ms.openlocfilehash: d26696530ed86e6608b6473fead0775fb07a060b
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 90c00eb448d6d8f02170a37062af05cb0c0db59d
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454637"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919572"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Abilitare la creazione condivisa di file crittografati con etichette di riservatezza
 
->*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
+>*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 > [!NOTE]
 > Questa funzionalità è in anteprima e soggetta a modifiche. 
@@ -58,7 +58,7 @@ Per altre informazioni sulla modifica dei metadati, vedere le seguenti risorse:
 
 - Post di blog: [Modifiche imminenti sull'archiviazione dei metadati di Microsoft Information Protection](https://techcommunity.microsoft.com/t5/microsoft-security-and/upcoming-changes-to-microsoft-information-protection-metadata/ba-p/1904418)
 
-- Specifiche aperte: [2.6.3 LabelInfo vs Proprietà personalizzate dei documenti](https://docs.microsoft.com/openspecs/office_file_formats/ms-offcrypto/13939de6-c833-44ab-b213-e0088bf02341)
+- Specifiche aperte: [2.6.3 LabelInfo vs Proprietà personalizzate dei documenti](/openspecs/office_file_formats/ms-offcrypto/13939de6-c833-44ab-b213-e0088bf02341)
 
 A causa di queste modifiche, non bisogna abilitare tale impostazione se nell’organizzazione sono presenti app, servizi, script o strumenti che leggono o scrivono i metadati delle etichette nella posizione precedente. Se questa impostazione viene abilitata, si potrebbe incorrere in quanto segue:
 
@@ -68,7 +68,7 @@ A causa di queste modifiche, non bisogna abilitare tale impostazione se nell’o
 
 - La creazione condivisa e il salvataggio automatico non funzionano con un documento etichettato e crittografato se un altro utente lo ha aperto in un'app desktop di Office che non supporta la nuova etichettatura dei metadati.
 
-- Una regola del flusso di posta di Exchange Online che [identifica le etichette come proprietà personalizzate negli allegati di Office](https://docs.microsoft.com/azure/information-protection/configure-exo-rules#example-2-rule-that-applies-the-encrypt-only-option-to-emails-when-they-have-attachments-that-are-labeled-confidential--partners-and-these-emails-are-sent-outside-the-organization) non riesce a crittografare la posta elettronica e l'allegato oppure le crittografa in modo non corretto
+- Una regola del flusso di posta di Exchange Online che [identifica le etichette come proprietà personalizzate negli allegati di Office](/azure/information-protection/configure-exo-rules#example-2-rule-that-applies-the-encrypt-only-option-to-emails-when-they-have-attachments-that-are-labeled-confidential--partners-and-these-emails-are-sent-outside-the-organization) non riesce a crittografare la posta elettronica e l'allegato oppure le crittografa in modo non corretto
 
 Per un elenco completo delle app e dei servizi che supportano questa impostazione e le modifiche ai metadati delle etichette, consultare la sezione seguente.
 
@@ -108,7 +108,7 @@ I servizi di Microsoft 365 supportano automaticamente la nuova etichettatura dei
 
 - [Criteri di etichetta automatica](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-policies-for-sharepoint-onedrive-and-exchange)
 - [Criteri di prevenzione della perdita dei dati che usano etichette di riservatezza come condizioni](dlp-sensitivity-label-as-condition.md)
-- [Microsoft Cloud App Security configurato per applicare etichette di riservatezza](https://docs.microsoft.com/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
+- [Microsoft Cloud App Security configurato per applicare etichette di riservatezza](/cloud-app-security/best-practices#discover-classify-label-and-protect-regulated-and-sensitive-data-stored-in-the-cloud)
 
 ## <a name="limitations"></a>Limitazioni
 
@@ -125,7 +125,7 @@ Prima di abilitare l'impostazione del tenant per la creazione condivisa dei file
     
     Le etichette con una di queste configurazioni di crittografia vengono visualizzate nelle app di Office. Tuttavia, quando gli utenti selezionano queste etichette e nessun altro sta modificando il documento, vengono avvisati che la creazione condivisa e il salvataggio automatico non saranno disponibili. Se qualcun altro sta modificando il documento, gli utenti visualizzeranno un messaggio che indica che non è possibile applicare le etichette.
 
-- Se si usa il client di etichettatura unificata di Azure Information Protection: Controllare la documentazione relativa a questo client di etichettatura per [ulteriori requisiti o limitazioni](https://docs.microsoft.com/azure/information-protection/known-issues#known-issues-for-co-authoring-public-preview).
+- Se si usa il client di etichettatura unificata di Azure Information Protection: Controllare la documentazione relativa a questo client di etichettatura per [ulteriori requisiti o limitazioni](/azure/information-protection/known-issues#known-issues-for-co-authoring-public-preview).
 
 ## <a name="known-issues-for-this-preview"></a>Problemi noti di questa anteprima
 
@@ -171,7 +171,7 @@ Dopo aver abilitato la creazione condivisa per i file con etichette di riservate
 
 ![Opzione che mostra la creazione condivisa per le etichette di riservatezza attivata](../media/co-authoring-tenant-option-set-for-sensitivity-labels.png)
 
-Come illustrato nello screenshot, quando questa impostazione è attivata, è possibile contattare il [Supporto tecnico Microsoft](https://docs.microsoft.com/office365/admin/contact-support-for-business-products) e richiedere di disattivarla. Potrebbero essere necessari diversi giorni per processare la richiesta. Inoltre è necessario dimostrare di essere un amministratore globale del tenant. Verranno applicate le tariffe standard del Supporto tecnico. 
+Come illustrato nello screenshot, quando questa impostazione è attivata, è possibile contattare il [Supporto tecnico Microsoft](/office365/admin/contact-support-for-business-products) e richiedere di disattivarla. Potrebbero essere necessari diversi giorni per processare la richiesta. Inoltre è necessario dimostrare di essere un amministratore globale del tenant. Verranno applicate le tariffe standard del Supporto tecnico. 
 
 Se un tecnico del supporto disabilita questa impostazione per il tenant:
 

@@ -40,6 +40,8 @@
       href: ../admin/manage/remove-licenses-from-users.md
     - name: Trasferire gli utenti a un abbonamento diverso
       href: subscriptions/move-users-different-subscription.md
+    - name: Gestire i criteri di richiesta automatica
+      href: licenses/manage-auto-claim-policies.md
     - name: Informazioni su abbonamenti e licenze
       href: licenses/subscriptions-and-licenses.md
 - name: Fatture e pagamenti
@@ -67,7 +69,7 @@
     - name: Gestire account di fatturazione
       href: manage-billing-accounts.md
     - name: Associare un tenant al proprio account di fatturazione
-      href: 'https://docs.microsoft.com/microsoft-store/manage-mpsa-software-microsoft-store-for-business'
+      href: /microsoft-store/manage-mpsa-software-microsoft-store-for-business
 - name: Gestire relazioni con i propri partner
   href: manage-partners.md
 - name: Chiudere il proprio account

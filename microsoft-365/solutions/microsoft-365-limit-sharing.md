@@ -19,12 +19,12 @@ f1.keywords: NOCSH
 ms.custom: ''
 localization_priority: Priority
 description: Altre informazioni sulle opzioni per limitare o disabilitare la condivisione in Microsoft 365.
-ms.openlocfilehash: 388d354886805f593b1c7815f16d1e0156e12fe0
-ms.sourcegitcommit: a62ac3c01ba700a51b78a647e2301f27ac437c5a
+ms.openlocfilehash: 46cef1aac6d3387366a5e8ce9f9c1129f6c83e61
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "50233531"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920205"
 ---
 # <a name="limit-sharing-in-microsoft-365"></a>Limitare la condivisione in Microsoft 365
 
@@ -45,9 +45,9 @@ I metodi di condivisione dei file sono elencati nella tabella seguente. Per info
 
 È anche possibile limitare le condizioni in cui gli utenti accedono ai contenuti condivisi. Per altre informazioni, vedere [accesso condizionale](#conditional-access) più avanti in questo articolo.
 
-Anche se è possibile usare i controlli amministrativi descritti in questo articolo per limitare la condivisione all'interno dell'organizzazione, è consigliabile usare le funzionalità di sicurezza e conformità disponibili in Microsoft 365 per creare un ambiente di condivisione sicura. Per informazioni, vedere [Collaborazione ai file in SharePoint con Microsoft 365](https://docs.microsoft.com/sharepoint/deploy-file-collaboration) e [Configurare team con isolamento di sicurezza](secure-teams-security-isolation.md).
+Anche se è possibile usare i controlli amministrativi descritti in questo articolo per limitare la condivisione all'interno dell'organizzazione, è consigliabile usare le funzionalità di sicurezza e conformità disponibili in Microsoft 365 per creare un ambiente di condivisione sicura. Per informazioni, vedere [Collaborazione ai file in SharePoint con Microsoft 365](/sharepoint/deploy-file-collaboration) e [Configurare team con isolamento di sicurezza](secure-teams-security-isolation.md).
 
-Per informazioni su come viene usata la condivisione all'interno dell'organizzazione, [eseguire un report sulla condivisione di file e cartelle](https://docs.microsoft.com/sharepoint/sharing-reports).
+Per informazioni su come viene usata la condivisione all'interno dell'organizzazione, [eseguire un report sulla condivisione di file e cartelle](/sharepoint/sharing-reports).
 
 ## <a name="microsoft-365-group-or-team"></a>Gruppo o team di Microsoft 365
 
@@ -73,9 +73,9 @@ Per disattivare la condivisione guest nei gruppi di Microsoft 365
     ![Screenshot delle impostazioni di condivisione guest di Gruppi di Microsoft 365 nell'interfaccia di amministrazione di Microsoft 365](../media/office-365-groups-guest-settings-off.png)
 
 > [!NOTE]
-> Se si vuole impedire la condivisione guest per uno specifico gruppo o team, si può usare [Microsoft PowerShell](per-group-guest-access.md) o le [etichette di riservatezza](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites).
+> Se si vuole impedire la condivisione guest per uno specifico gruppo o team, si può usare [Microsoft PowerShell](per-group-guest-access.md) o le [etichette di riservatezza](../compliance/sensitivity-labels-teams-groups-sites.md).
 
-È possibile limitare la condivisione guest agli utenti di domini specifici consentendo o bloccando domini in Azure Active Directory. Questo influirà anche sulla condivisione guest in SharePoint se si è abilitata l'[integrazione di SharePoint e OneDrive con Azure AD B2B](https://docs.microsoft.com/sharepoint/sharepoint-azureb2b-integration-preview).
+È possibile limitare la condivisione guest agli utenti di domini specifici consentendo o bloccando domini in Azure Active Directory. Questo influirà anche sulla condivisione guest in SharePoint se si è abilitata l'[integrazione di SharePoint e OneDrive con Azure AD B2B](/sharepoint/sharepoint-azureb2b-integration-preview).
 
 Per consentire la condivisione di inviti solo dai domini specificati
 1. Nella pagina Panoramica di Azure Active Directory fare clic su **Relazioni aziendali**.
@@ -118,11 +118,11 @@ Per limitare la condivisione del sito in base al dominio
 
 ### <a name="block-access-to-a-site"></a>Bloccare l'accesso ai siti
 
-È possibile bloccare l'accesso a un sito o creare un sito di sola lettura modificando lo stato di blocco del sito. Per i dettagli, vedere [Bloccare e sbloccare i siti](https://docs.microsoft.com/sharepoint/manage-lock-status).
+È possibile bloccare l'accesso a un sito o creare un sito di sola lettura modificando lo stato di blocco del sito. Per i dettagli, vedere [Bloccare e sbloccare i siti](/sharepoint/manage-lock-status).
 
 ### <a name="permissions-inheritance"></a>Ereditarietà delle autorizzazioni
 
-Benché non sia raccomandato, si può usare [Ereditarietà delle autorizzazioni di SharePoint](https://docs.microsoft.com/sharepoint/what-is-permissions-inheritance) per personalizzare il livello di accesso a siti e sottositi.
+Benché non sia raccomandato, si può usare [Ereditarietà delle autorizzazioni di SharePoint](/sharepoint/what-is-permissions-inheritance) per personalizzare il livello di accesso a siti e sottositi.
 
 ## <a name="sharing-with-specific-people"></a>Condivisione con persone specifiche
 
@@ -193,15 +193,15 @@ Set-SPOSite -Identity https://contoso.sharepoint.com -DisableCompanyWideSharingL
 
 Per impostazione predefinita, gli utenti possono creare nuovi siti, gruppi e team da cui possono condividere contentuti (in base alle impostazioni di condivisione). L’utente può limitare chi può creare siti, gruppi e team. Vedere i seguenti riferimenti:
 
-- [Gestire la creazione di siti in SharePoint](https://docs.microsoft.com/sharepoint/manage-site-creation)
-- [Gestire chi può creare gruppi in Microsoft 365](https://docs.microsoft.com/microsoft-365/solutions/manage-creation-of-groups)
+- [Gestire la creazione di siti in SharePoint](/sharepoint/manage-site-creation)
+- [Gestire chi può creare gruppi in Microsoft 365](./manage-creation-of-groups.md)
 
 > [!NOTE]
 > Limitare la creazione di gruppo condiziona la creazione di team.
 
 ## <a name="email"></a>Posta elettronica
 
-È possibile impedire la condivisione indesiderata dei messaggi di posta elettronica usando la crittografia. In questo modo si evita che i messaggi vengano inoltrati o altrimenti condivisi con utenti non autorizzati. La crittografia della posta elettronica può essere abilitata usando etichette di riservatezza. Per informazioni. vedere [Limitare l'accesso al contenuto usando la crittografia nelle etichette di riservatezza](https://docs.microsoft.com/microsoft-365/compliance/encryption-sensitivity-labels).
+È possibile impedire la condivisione indesiderata dei messaggi di posta elettronica usando la crittografia. In questo modo si evita che i messaggi vengano inoltrati o altrimenti condivisi con utenti non autorizzati. La crittografia della posta elettronica può essere abilitata usando etichette di riservatezza. Per informazioni. vedere [Limitare l'accesso al contenuto usando la crittografia nelle etichette di riservatezza](../compliance/encryption-sensitivity-labels.md).
 
 ## <a name="download-or-file-copy"></a>Download o copia di file
 
@@ -209,12 +209,12 @@ Gli utenti che hanno accesso ai file e alle cartelle in Microsoft 365 possono sc
 
 ## <a name="conditional-access"></a>Accesso condizionale
 
-L’accesso condizionale di Azure Active Directory offre opzioni per limitare o prevenire la condivisione con altre persone in base alla posizione della rete, all’integrità del dispositivo, ai rischi legati all’accesso e altri fattori. Vedere [Che cos’è l’accesso condizionale?](https://docs.microsoft.com/azure/active-directory/conditional-access/overview).
+L’accesso condizionale di Azure Active Directory offre opzioni per limitare o prevenire la condivisione con altre persone in base alla posizione della rete, all’integrità del dispositivo, ai rischi legati all’accesso e altri fattori. Vedere [Che cos’è l’accesso condizionale?](/azure/active-directory/conditional-access/overview).
 
 SharePoint offre l’integrazione diretta con l’accesso condizionale di Azure AD sia per i dispositivi non gestiti che per le posizioni di rete. Vedere i seguenti riferimenti per i dettagli:
 
-- [Controllare l'accesso da dispositivi non gestiti](https://docs.microsoft.com/sharepoint/control-access-from-unmanaged-devices)
-- [Controllare l'accesso ai dati di SharePoint e OneDrive in base al percorso di rete](https://docs.microsoft.com/sharepoint/control-access-based-on-network-location)
+- [Controllare l'accesso da dispositivi non gestiti](/sharepoint/control-access-from-unmanaged-devices)
+- [Controllare l'accesso ai dati di SharePoint e OneDrive in base al percorso di rete](/sharepoint/control-access-based-on-network-location)
 
 ## <a name="see-also"></a>Vedere anche
 

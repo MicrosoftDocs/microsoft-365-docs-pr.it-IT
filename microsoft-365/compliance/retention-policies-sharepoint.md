@@ -17,16 +17,16 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sul funzionamento della conservazione per SharePoint e OneDrive.
-ms.openlocfilehash: dd1260df23579ad2e6605805bafe9e36d2274a8e
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 448f3e8e2ab827527b02263fea2b07de4b345dc1
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727401"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919772"
 ---
 # <a name="learn-about-retention-for-sharepoint-and-onedrive"></a>Informazioni sulla conservazione per SharePoint e OneDrive
 
->*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](https://aka.ms/ComplianceSD).*
+>*[Indicazioni per l'assegnazione di licenze di Microsoft 365 per sicurezza e conformità](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).*
 
 Questo articolo integra [Informazioni sulla conservazione](retention.md) con informazioni specifiche per SharePoint e OneDrive.
 
@@ -49,7 +49,11 @@ Per altri carichi di lavoro, vedere:
 > [!TIP]
 > Se si usa una [query con un criterio di applicazione automatica per un'etichetta di conservazione](apply-retention-labels-automatically.md#auto-apply-labels-to-content-with-keywords-or-searchable-properties), è possibile escludere raccolte documenti usando la voce seguente: `NOT(DocumentLink:"<URL to document library>")`
 
-Le voci di elenco non sono supportate dai criteri di conservazione ma dalle etichette di conservazione, ad eccezione delle voci presenti negli elenchi di sistema. Si tratta di elenchi nascosti utilizzati da SharePoint per la gestione del sistema e includono il catalogo della pagina master, il catalogo delle soluzioni e le origini dati.
+Le voci di elenco non sono supportate dai criteri di conservazione ma dalle etichette di conservazione, ad eccezione delle voci presenti negli elenchi di sistema. Si tratta di elenchi nascosti utilizzati da SharePoint per la gestione del sistema e includono il catalogo della pagina master, il catalogo delle soluzioni e le origini dati. Quando si applica un'etichetta di conservazione a un elemento di un elenco con un allegato al documento:
+- Per un'etichetta di conservazione standard (che non dichiara l'elemento come record):
+    - L'allegato del documento non eredita automaticamente le impostazioni di conservazione dell'etichetta, ma può essere etichettato in modo indipendente.
+- Per un'etichetta di conservazione che dichiara l'elemento come record: 
+    - L'allegato del documento eredita automaticamente le impostazioni di conservazione dall'etichetta, se il documento non è già etichettato.
 
 Le impostazioni di conservazione sia dei criteri che delle etichette di conservazione non sono validi per le strutture di organizzazione che includono raccolte, elenchi e cartelle.
 

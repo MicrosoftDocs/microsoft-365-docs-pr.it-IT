@@ -17,19 +17,19 @@ ms.collection:
 - M365-security-compliance
 hideEdit: true
 feedback_system: None
-description: La prevenzione della perdita dei dati (DLP) nel Centro sicurezza e conformità include 80 tipi di informazioni riservate pronte per l'uso &amp; nei criteri DLP. In questo articolo vengono elencati tutti questi tipi di informazioni riservate e viene mostrato cosa cerca un criterio DLP quando rileva ogni tipo.
-ms.openlocfilehash: d23c6900e9aeb9ad9b550bb069b7a9592faa9b10
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+description: La prevenzione della perdita dei dati (DLP) nel Centro sicurezza e conformità include 80 tipi di informazioni riservate pronti per l'uso &amp; nei criteri DLP. Questo articolo elenca tutti questi tipi di informazioni riservate e mostra cosa cerca un criterio DLP quando rileva ogni tipo.
+ms.openlocfilehash: 341ded0c4c7f6ff31074d17624c029e7f6187480
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288137"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919712"
 ---
 # <a name="sensitive-information-type-entity-definitions"></a>Definizioni delle entità tipo di informazioni sensibili
 
-La prevenzione della perdita dei dati (DLP) nel Centro conformità include molti tipi di informazioni riservate pronti per l'uso nei criteri DLP. In questo articolo vengono elencati tutti questi tipi di informazioni riservate e viene mostrato cosa cerca un criterio DLP quando rileva ogni tipo. Una tipologia di informazioni riservate viene definita da un modello identificato da un'espressione regolare o da una funzione. Le prove avvaloranti, come parole chiave e checksum, possono essere usate per identificare un tipo di informazione sensibile. In questa procedura di valutazione vengono usati anche il livello di probabilità e la prossimità.
+La prevenzione della perdita dei dati (DLP) nel Centro conformità include molti tipi di informazioni riservate pronti per l'uso nei criteri DLP. Questo articolo elenca tutti questi tipi di informazioni riservate e mostra cosa cerca un criterio DLP quando rileva ogni tipo. Una tipologia di informazioni riservate viene definita da un modello identificato da un'espressione regolare o da una funzione. Le prove corroborative, come parole chiave e checksum, possono essere usate per identificare un tipo di informazioni riservate. In questa procedura di valutazione vengono usati anche il livello di probabilità e la prossimità.
 
-I tipi di informazioni riservate richiedono uno di questi abbonamenti:
+I tipi di informazioni riservate richiedono una di queste sottoscrizioni:
 - Microsoft 365 E3
 - Microsoft 365 E5
 
@@ -39,11 +39,11 @@ I tipi di informazioni riservate vengono utilizzati in:
 - [Etichette di riservatezza](sensitivity-labels.md)
 - [Etichette di conservazione](retention.md)
 - [Conformità delle comunicazioni](communication-compliance.md)
-- [Criteri di applicazione automatica di etichette](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
+- [Criteri di etichettatura automatica](apply-sensitivity-label-automatically.md#how-to-configure-auto-labeling-for-office-apps)
 
 ## <a name="aba-routing-number"></a>Numero di routing ABA
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 nove cifre che possono essere formattate o non formattate
 
@@ -64,11 +64,11 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+Un criterio ha una probabilità media di rilevamento di questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_aba_routing restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_ABA_Routing.
 
-Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_aba_routing restituisce contenuti che corrispondono al modello.
 
 ```xml
@@ -106,9 +106,9 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - RTN
 
 
-## <a name="argentina-national-identity-dni-number"></a>Argentina - Numero di identità nazionale (DNI)
+## <a name="argentina-national-identity-dni-number"></a>Numero DNI (Argentina National Identity)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Otto cifre con o senza punti
 
@@ -127,9 +127,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_argentina_national_id trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keyword_argentina_national_id da un utente.
+- Viene trovata una parola Keyword_argentina_national_id dall'utente.
 
 ```xml
 <!-- Argentina National Identity (DNI) Number -->
@@ -157,13 +157,13 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
    
 ## <a name="australia-bank-account-number"></a>Numero di conto corrente bancario Australia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
-da sei a dieci cifre con o senza un numero di filiale della banca
+da sei a dieci cifre con o senza un numero di filiale dello stato della banca
 
 ### <a name="pattern"></a>Modello
 
-Il numero di conto è da 6 a 10 cifre.
+Il numero di account è da 6 a 10 cifre.
 
 Numero BSB australiano:
 - tre cifre 
@@ -176,12 +176,12 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_australia_bank_account_number trova contenuto che corrisponde al modello.
 - Viene trovata una parola chiave da Keyword_australia_bank_account_number.
 - L'espressione regolare Regex_australia_bank_account_number_bsb restituisce contenuti che corrispondono al modello.
 
-Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_australia_bank_account_number trova contenuto che corrisponde al modello.
 
 - Viene trovata una parola chiave da Keyword_australia_bank_account_number.
@@ -220,15 +220,15 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%,
 - iaea
 
 ## <a name="australia-business-number"></a>Numero di azienda Australia
-Questo tipo di informazioni riservate è disponibile solo in:
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 11 cifre con delimitatori facoltativi
 
@@ -250,11 +250,11 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_australian_business_number trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keywords_australian_business_number da un utente.
+- Viene trovata una parola Keywords_australian_business_number parola chiave.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_australian_business_number trova contenuto che corrisponde al modello.
 
 ```xml
@@ -274,22 +274,22 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 #### <a name="keyword_australia_business_number"></a>Keyword_australia_business_number
 
 - australia business no
-- numero dell'azienda
+- numero di azienda
 - abn #
 - businessid #
 - business id
 - abn
 - businessno #
 
-## <a name="australia-company-number"></a>Numero di società Australia
-Questo tipo di informazioni riservate è disponibile solo in:
+## <a name="australia-company-number"></a>Numero società Australia
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 nove cifre con delimitatori
 
@@ -310,11 +310,11 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_Australian_Company_Number trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keyword_Australian_Company_Number di codice.
+- Viene trovata una parola Keyword_Australian_Company_Number.
 
-Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_Australian_Company_Number trova contenuto che corrisponde al modello.
 
 ```xml
@@ -334,16 +334,16 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 #### <a name="keyword_australia_company_number"></a>Keyword_australia_company_number
 
 - can
-- australia company no
-- australia company no #
+- australia società no
+- australia società no #
 - australia company number
-- australian company no
-- australian company no #
-- australian company number
+- società australiana no
+- società australiana no #
+- numero di società australiano
 
-## <a name="australia-drivers-license-number"></a>Australia - Numero della patente di guida
+## <a name="australia-drivers-license-number"></a>Numero di patente australiana
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 nove lettere e cifre
 
@@ -357,7 +357,7 @@ nove lettere e cifre:
 
 OPPURE
 
-- Da una a due lettere facoltative (senza distinzione tra maiuscole e minuscole) 
+- da una a due lettere facoltative (senza distinzione tra maiuscole e minuscole) 
 - da quattro a nove cifre
 
 OPPURE
@@ -370,7 +370,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_australia_drivers_license_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_australia_drivers_license_number.
 - Non vengono trovate parole chiava da Keyword_australia_drivers_license_number_exclusions.
@@ -409,8 +409,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - Drivers Licences
 - Driver'Lic
 - Driver'Lics
-- Driver'Licence
-- Driver'Licences
+- Patente di guida
+- Patenti di guida
 - Driver'Lic
 - Driver'Lics
 - Driver'Licence
@@ -441,8 +441,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - Drivers Licences#
 - Driver'Lic #
 - Driver'Lics #
-- Driver'Licence #
-- Driver'Licences #
+- Patente di guida #
+- Patenti di guida #
 - Driver' Lic#
 - Driver'Lics#
 - Driver'Licence#
@@ -492,9 +492,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - Driver's License#
 - Driver's Licenses#
    
-## <a name="australia-medical-account-number"></a>Australia - numero di conto medico
+## <a name="australia-medical-account-number"></a>Numero di conto medico Australia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 10-11 cifre
 
@@ -512,7 +512,7 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_australian_medical_account_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_Australia_Medical_Account_Number.
 - Il checksum ha esito positivo.
@@ -543,9 +543,9 @@ Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di infor
 - medicare
 
    
-## <a name="australia-passport-number"></a>Numero di passaporto Australia
+## <a name="australia-passport-number"></a>Numero di passaporto australiano
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Una lettera seguita da sette cifre
 
@@ -559,9 +559,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_australia_passport_number restituisce contenuti che corrispondono al modello.
-- Viene trovata una parola Keyword_passport o Keyword_australia_passport_number parola chiave.
+- Viene trovata una Keyword_passport o Keyword_australia_passport_number parola chiave.
 
 ```xml
 <!-- Australia Passport Number -->
@@ -614,15 +614,15 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - travel document
 - issuing authority
    
-## <a name="australia-tax-file-number"></a>Numero di file fiscale Australia
+## <a name="australia-tax-file-number"></a>Numero di file fiscale australia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 da otto a nove cifre
 
 ### <a name="pattern"></a>Modello
 
-da otto a nove cifre in genere presentate con spazi, come indicato di seguito:
+da otto a nove cifre in genere presentate con spazi come segue:
 - tre cifre 
 - uno spazio facoltativo 
 - tre cifre 
@@ -635,7 +635,7 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_australian_tax_file_number restituisce contenuti che corrispondono al modello.
 - Non vengono trovate parole chiave da Keyword_Australia_Tax_File_Number o da Keyword_number_exclusions.
 - Il checksum ha esito positivo.
@@ -664,9 +664,9 @@ Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di infor
 - tax file number
 - tfn
 
-## <a name="austria-drivers-license-number"></a>Austria - Numero della patente di guida
+## <a name="austria-drivers-license-number"></a>Austria - Numero di patente di guida
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 otto cifre senza spazi e delimitatori
   
@@ -680,7 +680,7 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
   
 - L'espressione  `Regex_austria_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_austria_eu_driver's_license_number` . 
@@ -712,8 +712,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- patente di guida
+- patenti di guida
 - driverslic
 - driverslics
 - driverslicence
@@ -725,21 +725,21 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- driver licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
-- driver'licence
-- driver'licences
+- patente di guida
+- patenti di guida
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- patente di guida
+- licenze del driver
+- patente di guida
+- patenti di guida
 - driver'slic
-- driver'slics
+- calici del driver
 - driver'slicense
 - driver'slicenses
 - driver'slicence
@@ -749,7 +749,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- patenti di guida
 - dl #
 - dls #
 - driverlic #
@@ -761,8 +761,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lic #
 - driver lics #
 - driver license #
-- driver licenses #
-- driver licences #
+- licenze driver #
+- patenti di guida #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -771,49 +771,49 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
+- driver license #
 - driver licenses #
-- drivers licence #
-- drivers licences #
+- driver licence #
+- driver licences #
 - driver'lic #
 - driver'lics #
 - driver'license #
 - driver'licenses #
-- driver'licence #
-- driver'licences #
+- patente di guida #
+- patenti di guida #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driver'slic #
-- driver'slics #
+- calici del driver #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
+- licenza driv
+- licenze driv
+- licenza driv
 - driv licences
 - driver licen
 - drivers licen
-- driver's licen
+- licen del driver
 - driving lic
 - driving licen
-- driving licenses
+- licenze di guida
 - driving licence
 - driving licences
 - driving permit
@@ -830,17 +830,17 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - Führerscheinnummer
 - Führerscheinnummern
 
-## <a name="austria-identity-card"></a>Carta di identità Austria
-Questo tipo di informazioni riservate è disponibile solo in:
+## <a name="austria-identity-card"></a>Carta d'identità Austria
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
-Combinazione di 24 caratteri di lettere, cifre e caratteri speciali
+Una combinazione di 24 caratteri di lettere, cifre e caratteri speciali
   
 ### <a name="pattern"></a>Modello
 
@@ -856,10 +856,10 @@ Non applicabile
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
   
 - L'espressione  `Regex_austria_eu_national_id_card` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_austria_eu_national_id_card` chiave da. 
+- Viene trovata una parola  `Keywords_austria_eu_national_id_card` chiave from. 
    
 ```xml
       <!-- Austria Identity Card -->
@@ -879,9 +879,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - national id
 - personalausweis republik österreich
 
-## <a name="austria-passport-number"></a>Austria - numero di passaporto
+## <a name="austria-passport-number"></a>Numero di passaporto austriano
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Una lettera seguita da uno spazio facoltativo e sette cifre
   
@@ -899,12 +899,12 @@ non applicabile
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_austria_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_austria_eu_passport_number` . 
 - L'espressione `Regex_eu_passport_date1` regolare trova la data nel formato GG.MM.AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_austria_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_austria_eu_passport_number` . 
     
@@ -939,7 +939,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - passport #
 - passport #
 - passportid
-- passports
+- passaporti
 - passportno
 - passport no
 - passportnumber
@@ -962,9 +962,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - data di emissione
 - data di scadenza
 
-## <a name="austria-social-security-number"></a>Austria - numero di previdenza sociale
+## <a name="austria-social-security-number"></a>Austria - Numero di previdenza sociale
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 10 cifre nel formato specificato
   
@@ -982,11 +982,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_austria_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
 - viene trovata una  `Keywords_austria_eu_ssn_or_equivalent` parola chiave da. 
     
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_austria_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -1010,13 +1010,13 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 #### <a name="keywords_austria_eu_ssn_or_equivalent"></a>Keywords_austria_eu_ssn_or_equivalent
 
-- ssn austriaci
+- austrian ssn
 - ehic number
 - ehic no
-- codice di assicurazione
+- codice assicurativo
 - insurancecode #
 - numero di assicurazione
-- insurance no
+- assicurazione no
 - krankenkassennummer
 - krankenversicherung
 - socialsecurityno
@@ -1036,7 +1036,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 ## <a name="austria-tax-identification-number"></a>Numero di identificazione fiscale Austria
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 nove cifre con trattino facoltativo e barra
   
@@ -1047,7 +1047,7 @@ nove cifre con trattino facoltativo e barra:
 - due cifre
 - un trattino (facoltativo)
 - tre cifre
-- una barra (facoltativa)
+- una barra (facoltativo)
 - quattro cifre
     
 ### <a name="checksum"></a>Checksum
@@ -1056,11 +1056,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_austria_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_austria_eu_tax_file_number` chiave da. 
+- Viene trovata una parola  `Keywords_austria_eu_tax_file_number` chiave from. 
     
-Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_austria_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -1084,15 +1084,15 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - st.nr.
 - steuernummer
 - tax id
-- tax identification no
-- tax identification number
+- identificazione fiscale no
+- codice fiscale
 - tax no #
 - tax no
 - tax number
-- tax registration number
-- taxd #
-- taxdno #
-- taxdnumber #
+- numero di registrazione fiscale
+- rullato #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -1101,21 +1101,21 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - tin #
 - tax number
  
-## <a name="austria-value-added-tax"></a>Imposta sul valore aggiunto in Austria
-Questo tipo di informazioni riservate è disponibile solo in:
+## <a name="austria-value-added-tax"></a>Imposta sul valore aggiunto dell'Austria
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Motivo alfanumerico a 11 caratteri
 
 ### <a name="pattern"></a>Modello
 
-Motivo alfanumerico a 11 caratteri:
+Motivo alfanumerico di 11 caratteri:
 
 - A o a
 - T o t
@@ -1134,11 +1134,11 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_Austria_Value_Added_Tax trova contenuto che corrisponde al modello.
 - Viene trovata una parola Keyword_Austria_Value_Added_Tax da un utente.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_Austria_Value_Added_Tax trova contenuto che corrisponde al modello.
 
 ```xml
@@ -1157,35 +1157,35 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 #### <a name="keyword_austria_value_added_tax"></a>Keyword_austria_value_added_tax
 
-- numero di partita IVA
+- partita IVA
 - vat #
-- numero di partita IVA austriache
+- austrian vat number
 - iva n.
 - vatno #
 - numero di imposta sul valore aggiunto
-- iva in austria
+- austrian vat
 - mwst
 - umsatzsteuernummer
 - mwstnummer
 - ust.-identifikationsnummer
 - umsatzsteuer-identifikationsnummer
-- numero di partita IVA
+- partita IVA
 - atu number
 - uid number
 
 
 ## <a name="azure-documentdb-auth-key"></a>Chiave di autenticazione di Azure DocumentDB
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
-La stringa "DocumentDb" seguita dai caratteri e dalle stringhe delineati nel modello seguente.
+La stringa "DocumentDb" seguita dai caratteri e dalle stringhe descritti nel modello seguente.
 
 ### <a name="pattern"></a>Modello
 
-- La stringa "DocumentDb"
+- Stringa "DocumentDb"
 - Qualsiasi combinazione di 3-200 lettere minuscole o maiuscole, cifre, simboli, caratteri speciali o spazi
-- Simbolo di maggiore di (>), segno di uguale (=), virgolette (") o apostrofo (')
-- Qualsiasi combinazione di 86 lettere minuscole o maiuscole, cifre, barre (/) o segno più (+)
+- Un simbolo di maggiore di (>), un segno di uguale (=), una virgoletta (") o un apostrofo (')
+- Qualsiasi combinazione di 86 lettere minuscole o maiuscole, cifre, barra (/) o segno più (+)
 - Due segni di uguale (=)
 
 ### <a name="checksum"></a>Checksum
@@ -1194,9 +1194,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare CEP_Regex_AzureDocumentDBAuthKey trova contenuto che corrisponde al modello.
-- L'espressione CEP_CommonExampleKeywords non trova contenuto che corrisponde al modello.
+- L'espressione CEP_CommonExampleKeywords non trova contenuto corrispondente al modello.
 
 ```xml
 <!-- Azure Document DB Auth Key -->
@@ -1226,25 +1226,25 @@ Tecnicamente, questo tipo di informazioni riservate identifica queste parole chi
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
-## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Stringa di connessione del database IAAS di Azure e stringa di connessione SQL azure
+## <a name="azure-iaas-database-connection-string-and-azure-sql-connection-string"></a>Stringa di connessione del database IAAS di Azure e stringa di SQL azure
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
-La stringa "Server", "server" o "data source" seguita dai caratteri e dalle stringhe delineati nel modello seguente, inclusa la stringa "cloudapp.azure.<!--no-hyperlink-->com" o "cloudapp.azure.<!--no-hyperlink-->net" o "database.windows.<!--no-hyperlink-->net" e la stringa "Password" o "password" o "pwd".
+Stringa "Server", "server" o "origine dati" seguita dai caratteri e dalle stringhe descritti nel modello seguente, inclusa la stringa "cloudapp.azure.<!--no-hyperlink-->com" o "cloudapp.azure.<!--no-hyperlink-->net" o "database.windows.<!--no-hyperlink-->net" e la stringa "Password" o "password" o "pwd".
 
 ### <a name="pattern"></a>Modello
 
-- stringa "Server", "server" o "origine dati"
-- Da zero a due spazi vuoti
+- la stringa "Server", "server" o "origine dati"
+- da zero a due spazi vuoti
 - un segno di uguale (=)
-- Da zero a due spazi vuoti
+- da zero a due spazi vuoti
 - qualsiasi combinazione di 1-200 lettere minuscole o maiuscole, cifre, simboli, caratteri speciali o spazi
 - Stringa "cloudapp.azure.<!--no-hyperlink-->com", "cloudapp.azure.<!--no-hyperlink-->net" o "database.windows.<!--no-hyperlink-->net"
-- qualsiasi combinazione di 1-300 lettere minuscole o maiuscole, cifre, simboli, caratteri speciali o spazi
+- qualsiasi combinazione tra 1 e 300 lettere minuscole o maiuscole, cifre, simboli, caratteri speciali o spazi
 - la stringa "Password", "password" o "pwd"
-- Da zero a due spazi vuoti
+- da zero a due spazi vuoti
 - un segno di uguale (=)
-- Da zero a due spazi vuoti
+- da zero a due spazi vuoti
 - uno o più caratteri che non sono un punto e virgola (;), virgolette (") o apostrofo (')
 - un punto e virgola (;), virgolette (") o apostrofo (')
 
@@ -1254,9 +1254,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- L'espressione CEP_Regex_AzureConnectionString trova contenuto che corrisponde al modello.
-- L'espressione CEP_CommonExampleKeywords non trova contenuto che corrisponde al modello.
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione regolare CEP_Regex_AzureConnectionString trova contenuto che corrisponde al modello.
+- L'espressione CEP_CommonExampleKeywords non trova contenuto corrispondente al modello.
 
 ```xml
 <!--Azure IAAS Database Connection String and Azure SQL Connection String-->
@@ -1288,24 +1288,24 @@ Tecnicamente, questo tipo di informazioni riservate identifica queste parole chi
 
 ## <a name="azure-iot-connection-string"></a>Stringa di connessione IoT di Azure
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
-La stringa "HostName" seguita dai caratteri e dalle stringhe delineati nel modello seguente, incluse le stringhe "azure-devices.<!--no-hyperlink-->net" e "SharedAccessKey".
+La stringa "HostName" seguita dai caratteri e dalle stringhe descritti nel modello seguente, incluse le stringhe "azure-devices.<!--no-hyperlink-->net" e "SharedAccessKey".
 
 ### <a name="pattern"></a>Modello
 
 - la stringa "HostName"
-- Da zero a due spazi vuoti
+- da zero a due spazi vuoti
 - un segno di uguale (=)
-- Da zero a due spazi vuoti
+- da zero a due spazi vuoti
 - qualsiasi combinazione di 1-200 lettere minuscole o maiuscole, cifre, simboli, caratteri speciali o spazi
 - la stringa "azure-devices.<!--no-hyperlink-->net"
 - qualsiasi combinazione di 1-200 lettere minuscole o maiuscole, cifre, simboli, caratteri speciali o spazi
 - la stringa "SharedAccessKey"
-- Da zero a due spazi vuoti
+- da zero a due spazi vuoti
 - un segno di uguale (=)
-- Da zero a due spazi vuoti
-- qualsiasi combinazione di 43 lettere minuscole o maiuscole, cifre, barre (/) o segno più (+)
+- da zero a due spazi vuoti
+- qualsiasi combinazione di 43 lettere minuscole o maiuscole, cifre, barra (/) o segno più (+)
 - un segno di uguale (=)
 
 ### <a name="checksum"></a>Checksum
@@ -1314,9 +1314,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare CEP_Regex_AzureIoTConnectionString trova contenuto che corrisponde al modello.
-- L'espressione CEP_CommonExampleKeywords non trova contenuto che corrisponde al modello.
+- L'espressione CEP_CommonExampleKeywords non trova contenuto corrispondente al modello.
 
 ```xml
 <!--Azure IoT Connection String-->
@@ -1348,7 +1348,7 @@ Tecnicamente, questo tipo di informazioni riservate identifica queste parole chi
 
 ## <a name="azure-publish-setting-password"></a>Password dell'impostazione di pubblicazione di Azure
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Stringa "userpwd=" seguita da una stringa alfanumerica.
 
@@ -1364,9 +1364,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare CEP_Regex_AzurePublishSettingPasswords trova contenuto che corrisponde al modello.
-- L'espressione CEP_CommonExampleKeywords non trova contenuto che corrisponde al modello.
+- L'espressione CEP_CommonExampleKeywords non trova contenuto corrispondente al modello.
 
 
 ```xml
@@ -1399,18 +1399,18 @@ Tecnicamente, questo tipo di informazioni riservate identifica queste parole chi
 
 ## <a name="azure-redis-cache-connection-string"></a>Stringa di connessione della cache di Azure Redis
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
-Stringa "redis.cache.windows.<!--no-hyperlink-->net" seguito dai caratteri e dalle stringhe delineati nel modello seguente, inclusa la stringa "password" o "pwd".
+Stringa "redis.cache.windows.<!--no-hyperlink-->net" seguito dai caratteri e dalle stringhe descritti nel modello seguente, inclusa la stringa "password" o "pwd".
 
 ### <a name="pattern"></a>Modello
 
-- stringa "redis.cache.windows.<!--no-hyperlink-->net"
+- la stringa "redis.cache.windows.<!--no-hyperlink-->net"
 - qualsiasi combinazione di 1-200 lettere minuscole o maiuscole, cifre, simboli, caratteri speciali o spazi
 - la stringa "password" o "pwd"
-- Da zero a due spazi vuoti
+- da zero a due spazi vuoti
 - un segno di uguale (=)
-- Da zero a due spazi vuoti
+- da zero a due spazi vuoti
 - qualsiasi combinazione di 43 caratteri minuscoli o maiuscoli, cifre, barra (/) o segno più (+)
 - un segno di uguale (=)
 
@@ -1420,9 +1420,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare CEP_Regex_AzureRedisCacheConnectionString trova contenuto che corrisponde al modello.
-- L'espressione CEP_CommonExampleKeywords non trova contenuto che corrisponde al modello.
+- L'espressione CEP_CommonExampleKeywords non trova contenuto corrispondente al modello.
 
 ```xml
 <!--Azure Redis Cache Connection String-->
@@ -1452,19 +1452,19 @@ Tecnicamente, questo tipo di informazioni riservate identifica queste parole chi
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
-## <a name="azure-sas"></a>Azure SAS
+## <a name="azure-sas"></a>Firma di accesso condiviso di Azure
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 La stringa "sig" seguita dai caratteri e dalle stringhe delineati nel modello seguente.
 
 ### <a name="pattern"></a>Modello
 
 - la stringa "sig"
-- Da zero a due spazi vuoti
+- da zero a due spazi vuoti
 - un segno di uguale (=)
-- Da zero a due spazi vuoti
-- qualsiasi combinazione di caratteri compresi tra 43 e 53 caratteri minuscoli o maiuscoli, cifre o il segno di percentuale (%)
+- da zero a due spazi vuoti
+- qualsiasi combinazione di caratteri compresi tra 43 e 53 caratteri che siano lettere minuscole o maiuscole, cifre o il segno di percentuale (%)
 - stringa "%3d"
 - qualsiasi carattere che non sia una lettera minuscola o maiuscola, una cifra o un segno di percentuale (%)
 
@@ -1474,7 +1474,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare CEP_Regex_AzureSAS trova contenuto che corrisponde al modello.
 
 ```xml
@@ -1488,23 +1488,23 @@ Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di infor
 
 ## <a name="azure-service-bus-connection-string"></a>Stringa di connessione del bus di servizio di Azure
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
-La stringa "EndPoint" seguita dai caratteri e dalle stringhe delineati nel modello seguente, incluse le stringhe "servicebus.windows.<!--no-hyperlink-->net" e "SharedAccesKey".
+La stringa "EndPoint" seguita dai caratteri e dalle stringhe descritti nel modello seguente, incluse le stringhe "servicebus.windows.<!--no-hyperlink-->net" e "SharedAccesKey".
 
 ### <a name="pattern"></a>Modello
 
 - la stringa "EndPoint"
-- Da zero a due spazi vuoti
+- da zero a due spazi vuoti
 - un segno di uguale (=)
-- Da zero a due spazi vuoti
+- da zero a due spazi vuoti
 - qualsiasi combinazione di 1-200 lettere minuscole o maiuscole, cifre, simboli, caratteri speciali o spazi
 - la stringa "servicebus.windows.<!--no-hyperlink-->net"
 - qualsiasi combinazione di 1-200 lettere minuscole o maiuscole, cifre, simboli, caratteri speciali o spazi
 - la stringa "SharedAccessKey"
-- Da zero a due spazi vuoti
+- da zero a due spazi vuoti
 - un segno di uguale (=)
-- Da zero a due spazi vuoti
+- da zero a due spazi vuoti
 - qualsiasi combinazione di 43 caratteri minuscoli o maiuscoli, cifre, barra (/) o segno più (+)
 - un segno di uguale (=)
 
@@ -1514,9 +1514,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare CEP_Regex_AzureServiceBusConnectionString trova contenuto che corrisponde al modello.
-- L'espressione CEP_CommonExampleKeywords non trova contenuto che corrisponde al modello.
+- L'espressione CEP_CommonExampleKeywords non trova contenuto corrispondente al modello.
 
 ```xml
 <!--Azure Service Bus Connection String-->
@@ -1548,21 +1548,21 @@ Tecnicamente, questo tipo di informazioni riservate identifica queste parole chi
 
 ## <a name="azure-storage-account-key"></a>Chiave dell'account di archiviazione di Azure
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
-La stringa "DefaultEndpointsProtocol" seguita dai caratteri e dalle stringhe delineati nel modello seguente, inclusa la stringa "AccountKey".
+Stringa "DefaultEndpointsProtocol" seguita dai caratteri e dalle stringhe descritti nel modello seguente, inclusa la stringa "AccountKey".
 
 ### <a name="pattern"></a>Modello
 
 - la stringa "DefaultEndpointsProtocol"
-- Da zero a due spazi vuoti
+- da zero a due spazi vuoti
 - un segno di uguale (=)
-- Da zero a due spazi vuoti
+- da zero a due spazi vuoti
 - qualsiasi combinazione di 1-200 lettere minuscole o maiuscole, cifre, simboli, caratteri speciali o spazi
 - la stringa "AccountKey"
-- Da zero a due spazi vuoti
+- da zero a due spazi vuoti
 - un segno di uguale (=)
-- Da zero a due spazi vuoti
+- da zero a due spazi vuoti
 - qualsiasi combinazione di 86 caratteri minuscoli o maiuscoli, cifre, barra (/) o segno più (+)
 - due segni di uguale (=)
 
@@ -1572,10 +1572,10 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare CEP_Regex_AzureStorageAccountKey trova contenuto che corrisponde al modello.
-- L'espressione CEP_AzureEmulatorStorageAccountFilter non trova contenuto che corrisponde al modello.
-- L'espressione CEP_CommonExampleKeywords non trova contenuto che corrisponde al modello.
+- L'espressione CEP_AzureEmulatorStorageAccountFilter non trova contenuto corrispondente al modello.
+- L'espressione CEP_CommonExampleKeywords non trova contenuto corrispondente al modello.
 
 ```xml
 <!--Azure Storage Account Key-->
@@ -1614,9 +1614,9 @@ Tecnicamente, questo tipo di informazioni riservate identifica queste parole chi
 
 ## <a name="azure-storage-account-key-generic"></a>Chiave dell'account di archiviazione di Azure (generica)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
-Qualsiasi combinazione di 86 lettere minuscole o maiuscole, cifre, barra (/) o segno più (+), preceduta o seguita dai caratteri delineati nel modello seguente.
+Qualsiasi combinazione di 86 lettere minuscole o maiuscole, cifre, barra (/) o segno più (+), preceduta o seguita dai caratteri indicati nel modello seguente.
 
 ### <a name="pattern"></a>Modello
 
@@ -1630,7 +1630,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare CEP_Regex_AzureStorageAccountKeyGeneric trova contenuto che corrisponde al modello.
 
 ```xml
@@ -1641,9 +1641,9 @@ Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di infor
   </Pattern>
 </Entity>
 ```
-## <a name="belgium-drivers-license-number"></a>Belgio - Numero della patente di guida
+## <a name="belgium-drivers-license-number"></a>Numero di patente di guida belgio
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 10 cifre senza spazi e delimitatori
   
@@ -1657,7 +1657,7 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_belgium_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_belgium_eu_driver's_license_number` .
     
@@ -1689,8 +1689,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- patente di guida
+- patenti di guida
 - driverslic
 - driverslics
 - driverslicence
@@ -1702,21 +1702,21 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- driver licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
-- driver'licence
-- driver'licences
+- patente di guida
+- patenti di guida
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- patente di guida
+- licenze del driver
+- patente di guida
+- patenti di guida
 - driver'slic
-- driver'slics
+- calici del driver
 - driver'slicense
 - driver'slicenses
 - driver'slicence
@@ -1726,7 +1726,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- patenti di guida
 - dl #
 - dls #
 - driverlic #
@@ -1738,8 +1738,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lic #
 - driver lics #
 - driver license #
-- driver licenses #
-- driver licences #
+- licenze driver #
+- patenti di guida #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -1748,49 +1748,49 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
+- driver license #
 - driver licenses #
-- drivers licence #
-- drivers licences #
+- driver licence #
+- driver licences #
 - driver'lic #
 - driver'lics #
 - driver'license #
 - driver'licenses #
-- driver'licence #
-- driver'licences #
+- patente di guida #
+- patenti di guida #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driver'slic #
-- driver'slics #
+- calici del driver #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
+- licenza driv
+- licenze driv
+- licenza driv
 - driv licences
 - driver licen
 - drivers licen
-- driver's licen
+- licen del driver
 - driving lic
 - driving licen
-- driving licenses
+- licenze di guida
 - driving licence
 - driving licences
 - driving permit
@@ -1813,18 +1813,18 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - numéro permis conduire
 
 
-## <a name="belgium-national-number"></a>Belgio - numero nazionale
+## <a name="belgium-national-number"></a>Belgio - Numero nazionale
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 11 cifre più delimitatori facoltativi
 
 ### <a name="pattern"></a>Modello
 
 11 cifre più delimitatori:
-- sei cifre e due punti facoltativi nel formato AA. MM.DD data di nascita 
+- sei cifre e due punti facoltativi nel formato AA. MM.DD per la data di nascita 
 - Delimitatore facoltativo da punto, trattino, spazio 
-- tre cifre sequenziali (dispari per i maschi, anche per le femminile) 
+- tre cifre sequenziali (dispari per i maschi, anche per le femmine) 
 - Delimitatore facoltativo da punto, trattino, spazio 
 - due cifre di controllo
 
@@ -1834,12 +1834,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_belgium_national_number trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keyword_belgium_national_number da un utente.
+- Viene trovata una parola Keyword_belgium_national_number.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_belgium_national_number trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
@@ -1876,7 +1876,7 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - identiteitskaart
 - identity
 - iscrizione
-- national number
+- numero nazionale
 - national register
 - nationalnumber #
 - nationalnumber
@@ -1901,15 +1901,15 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - ssn
 - steuernummer
 - tax id
-- tax identification no
-- tax identification number
+- identificazione fiscale no
+- codice fiscale
 - tax no #
 - tax no
 - tax number
-- tax registration number
-- taxd #
-- taxdno #
-- taxdnumber #
+- numero di registrazione fiscale
+- rullato #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -1919,13 +1919,13 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 
 ## <a name="belgium-passport-number"></a>Belgio - numero di passaporto
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 due lettere seguite da sei cifre senza spazi o delimitatori
   
 ### <a name="pattern"></a>Modello
 
-due lettere e seguite da sei cifre
+due lettere e seguito da sei cifre
   
 ### <a name="checksum"></a>Checksum
 
@@ -1933,12 +1933,12 @@ non applicabile
   
 ### <a name="definition"></a>Definizione
 
- Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+ Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_belgium_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_belgium_eu_passport_number` . 
 - L'espressione `Regex_eu_passport_date2` regolare trova la data nel formato GG MM AA o una parola chiave da o viene `Keywords_eu_passport_date` `Keywords_belgium_eu_passport_number` trovata
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_belgium_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_belgium_eu_passport_number` . 
 
@@ -1975,7 +1975,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - passport #
 - passport #
 - passportid
-- passports
+- passaporti
 - passportno
 - passport no
 - passportnumber
@@ -1990,7 +1990,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - paspoort-nr
 - paspoortnummer
 - paspoortnummers
-- Carte passeport
+- Passeport carte
 - Passeport livre
 - Pass-Nr
 - Passnummer
@@ -2001,15 +2001,15 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - data di emissione
 - data di scadenza
 
-## <a name="belgium-value-added-tax-number"></a>Belgio - numero di imposta sul valore aggiunto
-Questo tipo di informazioni riservate è disponibile solo in:
+## <a name="belgium-value-added-tax-number"></a>Numero di imposta sul valore aggiunto del Belgio
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Motivo alfanumerico a 12 caratteri
 
@@ -2021,9 +2021,9 @@ Motivo alfanumerico a 12 caratteri:
 - una lettera E o e
 - una cifra 0
 - una cifra da 1 a 9
-- un punto o un trattino o uno spazio facoltativo
+- un punto facoltativo o un trattino o uno spazio
 - quattro cifre
-- un punto o un trattino o uno spazio facoltativo
+- un punto facoltativo o un trattino o uno spazio
 - quattro cifre
 
 
@@ -2034,11 +2034,11 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_belgium_value_added_tax_number trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keywords_belgium_value_added_tax_number da un utente.
+- Viene trovata una parola chiave da Keywords_belgium_value_added_tax_number.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_belgium_value_added_tax_number trova contenuto che corrisponde al modello.
 
 ```xml
@@ -2059,7 +2059,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 #### <a name="keyword_belgium_value_added_tax_number"></a>Keyword_belgium_value_added_tax_number
 
 - nº tva
-- numero di partita IVA
+- partita IVA
 - vat no
 - numéro t.v.a
 - umsatzsteuer-identifikationsnummer
@@ -2069,9 +2069,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - vat #
 
 
-## <a name="brazil-cpf-number"></a>Numero CPF Brasile
+## <a name="brazil-cpf-number"></a>Brasile - Numero CPF
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 11 cifre che includono una cifra di controllo e possono essere formattate o non formattate
 
@@ -2095,12 +2095,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_brazil_cpf trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keyword_brazil_cpf da un utente.
+- Viene trovata una parola Keyword_brazil_cpf.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_brazil_cpf trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
@@ -2132,9 +2132,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - Receita 
 
    
-## <a name="brazil-legal-entity-number-cnpj"></a>Numero di persona giuridica del Brasile (CNPJ)
+## <a name="brazil-legal-entity-number-cnpj"></a>Numero della persona giuridica del Brasile (CNPJ)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 14 cifre che includono il numero di registrazione, il codice della filiale, le cifre di controllo e i delimitatori
 
@@ -2148,7 +2148,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - un punto 
 - tre cifre (queste prime otto cifre sono il numero di registrazione) 
 - una barra 
-- numero di ramo a quattro cifre 
+- Numero di ramo a quattro cifre 
 - un trattino 
 - due cifre che sono cifre di controllo
 
@@ -2158,12 +2158,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_brazil_cnpj trova contenuto che corrisponde al modello.
 - Viene trovata una parola Keyword_brazil_cnpj da un utente.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_brazil_cnpj trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
@@ -2205,9 +2205,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - Empresa 
 
    
-## <a name="brazil-national-identification-card-rg"></a>Carta di identificazione nazionale (RG) brasile
+## <a name="brazil-national-identification-card-rg"></a>Carta di identità nazionale (RG) del Brasile
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Registro Geral (formato precedente): nove cifre
 
@@ -2235,9 +2235,9 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_brazil_rg trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keyword_brazil_rg da un utente.
+- Viene trovata una parola chiave Keyword_brazil_rg.
 - Il checksum ha esito positivo.
 
 
@@ -2265,9 +2265,9 @@ Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di infor
 - RIC (questa parola chiave fa distinzione tra maiuscole e minuscole) 
 
 
-## <a name="bulgaria-drivers-license-number"></a>Bulgaria - Numero della patente di guida
+## <a name="bulgaria-drivers-license-number"></a>Numero di patente di guida bulgaria
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 nove cifre senza spazi e delimitatori
   
@@ -2281,7 +2281,7 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_bulgaria_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_bulgaria_eu_driver's_license_number` . 
     
@@ -2312,8 +2312,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- patente di guida
+- patenti di guida
 - driverslic
 - driverslics
 - driverslicence
@@ -2325,21 +2325,21 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- driver licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
-- driver'licence
-- driver'licences
+- patente di guida
+- patenti di guida
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- patente di guida
+- licenze del driver
+- patente di guida
+- patenti di guida
 - driver'slic
-- driver'slics
+- calici del driver
 - driver'slicense
 - driver'slicenses
 - driver'slicence
@@ -2349,7 +2349,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- patenti di guida
 - dl #
 - dls #
 - driverlic #
@@ -2361,8 +2361,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lic #
 - driver lics #
 - driver license #
-- driver licenses #
-- driver licences #
+- licenze driver #
+- patenti di guida #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -2371,49 +2371,49 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
+- driver license #
 - driver licenses #
-- drivers licence #
-- drivers licences #
+- driver licence #
+- driver licences #
 - driver'lic #
 - driver'lics #
 - driver'license #
 - driver'licenses #
-- driver'licence #
-- driver'licences #
+- patente di guida #
+- patenti di guida #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driver'slic #
-- driver'slics #
+- calici del driver #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
+- licenza driv
+- licenze driv
+- licenza driv
 - driv licences
 - driver licen
 - drivers licen
-- driver's licen
+- licen del driver
 - driving lic
 - driving licen
-- driving licenses
+- licenze di guida
 - driving licence
 - driving licences
 - driving permit
@@ -2430,15 +2430,15 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - шофьорска книжка
 - шофьорски книжки
 
-## <a name="bulgaria-uniform-civil-number"></a>Bulgaria - numero civile uniforme
-Questo tipo di informazioni riservate è disponibile solo in:
+## <a name="bulgaria-uniform-civil-number"></a>Numero civile uniforme Bulgaria
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 10 cifre senza spazi e delimitatori
   
@@ -2446,9 +2446,9 @@ Questo tipo di informazioni riservate è disponibile solo in:
 
 10 cifre senza spazi e delimitatori
   
-- sei cifre che corrispondono alla data di nascita (AAMMMMD) 
+- sei cifre che corrispondono alla data di nascita (AAMMDD) 
 - due cifre che corrispondono all'ordine di nascita
-- una cifra che corrisponde al sesso: una cifra pari per il maschile e una cifra dispari per la donna
+- una cifra che corrisponde al sesso: una cifra pari per il maschio e una cifra dispari per la donna
 - una cifra di controllo
 
 ### <a name="checksum"></a>Checksum
@@ -2457,11 +2457,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_bulgaria_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_bulgaria_eu_national_id_card` chiave da. 
+- Viene trovata una parola  `Keywords_bulgaria_eu_national_id_card` chiave from. 
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_bulgaria_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -2489,12 +2489,12 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - bnn
 - bucn #
 - bucn
-- edinen grazhdanski nomer
+- nomer edinen grazhdanski
 - egn #
 - egn
 - identification number
 - national id
-- national number
+- numero nazionale
 - nationalnumber #
 - nationalnumber
 - id personale
@@ -2506,7 +2506,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - ssn
 - uniform civil id
 - uniform civil no
-- uniform civil number
+- numero civile uniforme
 - uniformcivilno #
 - uniformcivilno
 - uniformcivilnumber #
@@ -2529,9 +2529,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - униформгражданскине. #
 
 
-## <a name="bulgaria-passport-number"></a>Numero di passaporto Bulgaria
+## <a name="bulgaria-passport-number"></a>Numero di passaporto bulgaro
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 nove cifre senza spazi e delimitatori
   
@@ -2545,12 +2545,12 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_bulgaria_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_bulgaria_eu_passport_number` . 
 - L'espressione `Regex_eu_passport_date1` regolare trova la data nel formato GG.MM.AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_bulgaria_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_bulgaria_eu_passport_number` . 
 
@@ -2584,7 +2584,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - passport #
 - passport #
 - passportid
-- passports
+- passaporti
 - passportno
 - passport no
 - passportnumber
@@ -2596,22 +2596,22 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 - номер на паспорта
 - номер на паспорт
-- паспорт No
+- сасооотт No
 
 #### <a name="keywords_eu_passport_date"></a>Keywords_eu_passport_date
 
 - data di emissione
 - data di scadenza
 
-## <a name="canada-bank-account-number"></a>Canada - numero di conto corrente bancario
+## <a name="canada-bank-account-number"></a>Canada - Numero di conto corrente bancario
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 7 o 12 cifre
 
 ### <a name="pattern"></a>Modello
 
-Un numero di conto corrente canadese è di 7 o 12 cifre.
+Un numero di conto corrente bancario canadese è di 7 o 12 cifre.
 
 Un numero di transito bancario canadese comprende:
 - cinque cifre 
@@ -2626,12 +2626,12 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_canada_bank_account_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_canada_bank_account_number.
 - L'espressione regolare Regex_canada_bank_account_transit_number restituisce contenuti che corrispondono al modello.
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_canada_bank_account_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_canada_bank_account_number.
 
@@ -2677,9 +2677,9 @@ Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di infor
 - direct deposit
 
    
-## <a name="canada-drivers-license-number"></a>Canada - Numero della patente di guida
+## <a name="canada-drivers-license-number"></a>Canada - Numero di patente di guida
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Varia in base alla provincia
 
@@ -2693,7 +2693,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_[province_name]_drivers_license_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_[province_name]_drivers_license_name.
 - Viene trovata una parola chiave da Keyword_canada_drivers_license.
@@ -2795,8 +2795,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - Driver'Lics
 - Driver'License
 - Driver'Licenses
-- Driver'Licence
-- Driver'Licences
+- Patente di guida
+- Patenti di guida
 - Driver'Lic
 - Driver' Lics
 - Driver' License
@@ -2864,8 +2864,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - Driver'Lics # 
 - Driver'License # 
 - Driver'Licenses # 
-- Driver'Licence # 
-- Driver'Licences # 
+- Patente di guida # 
+- Patenti di guida # 
 - Driver' Lic# 
 - Driver' Lics# 
 - Driver' License# 
@@ -2895,9 +2895,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - identificazione # 
 
    
-## <a name="canada-health-service-number"></a>Canada - numero del servizio sanitario
+## <a name="canada-health-service-number"></a>Numero del servizio sanitario canadese
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
  10 cifre
 
@@ -2911,7 +2911,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_canada_health_service_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_canada_health_service_number.
 
@@ -2937,14 +2937,14 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - speciality services
 - automobile accident
 - patient hospital
-- ergasto
+- uno psicologo
 - workers compensation
 - disabilità
 
       
-## <a name="canada-passport-number"></a>Canada - numero di passaporto
+## <a name="canada-passport-number"></a>Numero di passaporto canadese
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 due lettere maiuscole seguite da sei cifre
 
@@ -2958,9 +2958,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_canada_passport_number restituisce contenuti che corrispondono al modello.
-- Viene trovata una parola Keyword_canada_passport_number o Keyword_passport parola chiave.
+- Viene trovata una parola Keyword_canada_passport_number o Keyword_passport viene trovata.
 
 ```xml 
 <!-- Canada Passport Number -->
@@ -3010,9 +3010,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - Passeportn °
 
    
-## <a name="canada-personal-health-identification-number-phin"></a>Canada - NUMERO DI IDENTIFICAZIONE PERSONALE (PHIN)
+## <a name="canada-personal-health-identification-number-phin"></a>Canada personal health identification number (PHIN)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 nove cifre
 
@@ -3026,9 +3026,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_canada_phin restituisce contenuti che corrispondono al modello.
-- Vengono trovate almeno due parole Keyword_canada_phin o Keyword_canada_provinces ricerca.
+- Vengono trovate almeno due parole Keyword_canada_phin o Keyword_canada_provinces.
 
 ```xml
 <!-- Canada PHIN -->
@@ -3081,9 +3081,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - Canada
 
    
-## <a name="canada-social-insurance-number"></a>Canada - numero di previdenza sociale
+## <a name="canada-social-insurance-number"></a>Canada - Numero di previdenza sociale
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 nove cifre con trattini o spazi facoltativi
 
@@ -3104,7 +3104,7 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_canadian_sin restituisce contenuti che corrispondono al modello.
 - Almeno due delle seguenti combinazioni:
     - Viene trovata una parola chiave da Keyword_sin.
@@ -3112,7 +3112,7 @@ Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di infor
     - La funzione Func_eu_date rileva una data nel formato corretto.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_unformatted_canadian_sin restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_sin.
 - Il checksum ha esito positivo.
@@ -3165,11 +3165,11 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - Date of Birth 
 
    
-## <a name="chile-identity-card-number"></a>Cile - Numero di carta di identità
+## <a name="chile-identity-card-number"></a>Numero di carta di identità cileno
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
-da sette a otto cifre più delimitatori di una cifra di controllo o di una lettera
+da sette a otto cifre più delimitatori una cifra di controllo o una lettera
 
 ### <a name="pattern"></a>Modello
 
@@ -3180,7 +3180,7 @@ da sette a otto cifre più delimitatori:
 - un punto facoltativo 
 - tre cifre 
 - un trattino 
-- una cifra o una lettera (senza distinzione tra maiuscole e minuscole) che è una cifra di controllo
+- una cifra o una lettera (senza distinzione tra maiuscole e minuscole), che è una cifra di controllo
 
 ### <a name="checksum"></a>Checksum
 
@@ -3188,12 +3188,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_chile_id_card trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keyword_chile_id_card da un utente.
+- Viene trovata una parola Keyword_chile_id_card parola chiave.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_chile_id_card trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
@@ -3241,18 +3241,18 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - Registro fiscale univoco
 - Ruolo tributario univoco
 - Ruolo fiscale univoco
-- Numero affluenti univoco
+- Numero tributario univoco
 - Numero nazionale univoco
 - Ruolo nazionale univoco
 - Ruolo univoco nazionale
-- Cile - Identità n.
-- Cile - Numero di identità
-- Identità Cile #
+- Identità Cile n.
+- Numero di identità cileno
+- Identità cileno #
 
    
-## <a name="china-resident-identity-card-prc-number"></a>Numero di carta di identità (PRC) residente in Cina
+## <a name="china-resident-identity-card-prc-number"></a>Numero di carta d'identità (PRC) residente in Cina
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 18 cifre
 
@@ -3260,7 +3260,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 18 cifre:
 - sei cifre che sono un codice indirizzo 
-- otto cifre nel formato AAAAMMMMD, ovvero la data di nascita 
+- otto cifre nel formato AAAAMMDD, ovvero la data di nascita 
 - tre cifre che sono un codice d'ordine 
 - una cifra che è una cifra di controllo
 
@@ -3270,12 +3270,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_china_resident_id trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keyword_china_resident_id da un utente.
+- Viene trovata una parola chiave da Keyword_china_resident_id.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_china_resident_id trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
@@ -3308,15 +3308,15 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - 鑑定 
 
    
-## <a name="credit-card-number"></a>Numero di carta di credito
+## <a name="credit-card-number"></a>Numero carta di credito
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
-Da 14 a 16 cifre che possono essere formattate o non formattate (dddddddddddddd) e che devono superare il test Luhn.
+Da 14 a 16 cifre che possono essere formattate o non formattate (dddddddd) e che devono superare il test Luhn.
 
 ### <a name="pattern"></a>Modello
 
-Modello complesso e affidabile che rileva le carte di tutti i principali marchi in tutto il mondo, tra cui Visa, MasterCard, Discover Card, JCB, American Express, carte da disegno e biglietti da pranzo.
+Modello complesso e affidabile che rileva le carte di tutte le principali marche in tutto il mondo, tra cui Visa, MasterCard, Discover Card, JCB, American Express, carte regalo e carte da pranzo.
 
 ### <a name="checksum"></a>Checksum
 
@@ -3324,7 +3324,7 @@ Yes, il checksum Luhn
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_credit_card restituisce contenuti che corrispondono al modello.
 - Si verifica una delle situazioni seguenti:
     - Viene trovata una parola chiave da Keyword_cc_verification.
@@ -3332,7 +3332,7 @@ Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di infor
     - La funzione Func_expiration_date rileva una data nel formato corretto.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_credit_card restituisce contenuti che corrispondono al modello.
 - Il checksum ha esito positivo.
 
@@ -3422,7 +3422,7 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - valor
 - vencimento
 - transazione
-- numero transazione
+- numero di transazione
 - numero di riferimento
 - セキュリティコード
 - セキュリティ コード
@@ -3499,11 +3499,11 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - Scheda aziendale
 - Schede aziendali
 - Tipo di scheda
-- numero di conto della carta
-- account del membro della carta
+- numero dell'account della carta
+- account membro della carta
 - Cardmember Acct.
 - card no.
-- card no
+- scheda no
 - card number
 - carte bancaire
 - carte de crédit
@@ -3515,7 +3515,7 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - kreditkarte
 - karte
 - karteninhaber
-- karteninhabers
+- karteninchabers
 - kreditkarteninhaber
 - kreditkarteninstitut
 - kreditkartentyp
@@ -3608,7 +3608,7 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 
 ## <a name="croatia-drivers-license-number"></a>Croatia driver's license number
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 otto cifre senza spazi e delimitatori
   
@@ -3622,7 +3622,7 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
   
 - L'espressione  `Regex_croatia_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_croatia_eu_driver's_license_number` . 
@@ -3654,8 +3654,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- patente di guida
+- patenti di guida
 - driverslic
 - driverslics
 - driverslicence
@@ -3667,21 +3667,21 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- driver licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
-- driver'licence
-- driver'licences
+- patente di guida
+- patenti di guida
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- patente di guida
+- licenze del driver
+- patente di guida
+- patenti di guida
 - driver'slic
-- driver'slics
+- calici del driver
 - driver'slicense
 - driver'slicenses
 - driver'slicence
@@ -3691,7 +3691,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- patenti di guida
 - dl #
 - dls #
 - driverlic #
@@ -3703,8 +3703,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lic #
 - driver lics #
 - driver license #
-- driver licenses #
-- driver licences #
+- licenze driver #
+- patenti di guida #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -3713,49 +3713,49 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
+- driver license #
 - driver licenses #
-- drivers licence #
-- drivers licences #
+- driver licence #
+- driver licences #
 - driver'lic #
 - driver'lics #
 - driver'license #
 - driver'licenses #
-- driver'licence #
-- driver'licences #
+- patente di guida #
+- patenti di guida #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driver'slic #
-- driver'slics #
+- calici del driver #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
+- licenza driv
+- licenze driv
+- licenza driv
 - driv licences
 - driver licen
 - drivers licen
-- driver's licen
+- licen del driver
 - driving lic
 - driving licen
-- driving licenses
+- licenze di guida
 - driving licence
 - driving licences
 - driving permit
@@ -3770,10 +3770,10 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - vozačke dozvole
 
 
-## <a name="croatia-identity-card-number"></a>Numero di carta di identità della Croazia
-Questa entità del tipo di informazione sensibile è inclusa nel tipo di informazioni riservate del numero di identificazione nazionale dell'Unione Europea. È disponibile come entità autonoma del tipo di informazioni riservate.
+## <a name="croatia-identity-card-number"></a>Numero di carta d'identità della Croazia
+Questa entità del tipo di informazioni riservate è inclusa nel tipo di informazioni riservate NUMERO DI IDENTIFICAZIONE NAZIONALE UE. È disponibile come entità di tipo di informazioni riservate autonomo.
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 nove cifre
 
@@ -3787,9 +3787,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_croatia_id_card trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keyword_croatia_id_card di codice.
+- Viene trovata una parola Keyword_croatia_id_card da un utente.
 
 ```xml
 <!--Croatia Identity Card Number-->
@@ -3814,19 +3814,19 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - osobna iskaznica
 - osobni id
 - osobni identifikacijski broj
-- personal identification number
+- numero di identificazione personale
 - porezni broj
 - porezni identifikacijski broj
 - tax id
-- tax identification no
-- tax identification number
+- identificazione fiscale no
+- codice fiscale
 - tax no #
 - tax no
 - tax number
-- tax registration number
-- taxd #
-- taxdno #
-- taxdnumber #
+- numero di registrazione fiscale
+- rullato #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -3835,9 +3835,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - tin #
 
 
-## <a name="croatia-passport-number"></a>Numero di passaporto croazia
+## <a name="croatia-passport-number"></a>Numero di passaporto croato
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 nove cifre senza spazi e delimitatori
   
@@ -3851,12 +3851,12 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_croatia_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_croatia_eu_passport_number` . 
 - L'espressione `Regex_eu_passport_date1` regolare trova la data nel formato GG.MM.AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_croatia_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_croatia_eu_passport_number` . 
     
@@ -3890,7 +3890,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - passport #
 - passport #
 - passportid
-- passports
+- passaporti
 - passportno
 - passport no
 - passportnumber
@@ -3906,7 +3906,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
    
 ## <a name="croatia-personal-identification-oib-number"></a>Numero di identificazione personale (OIB) della Croazia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 11 cifre
 
@@ -3922,12 +3922,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_croatia_oib_number trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keywords_croatia_eu_tax_file_number di codice.
+- Viene trovata una parola Keywords_croatia_eu_tax_file_number da un utente.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_croatia_oib_number trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
@@ -3957,19 +3957,19 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - osobna iskaznica
 - osobni id
 - osobni identifikacijski broj
-- personal identification number
+- numero di identificazione personale
 - porezni broj
 - porezni identifikacijski broj
 - tax id
-- tax identification no
-- tax identification number
+- identificazione fiscale no
+- codice fiscale
 - tax no #
 - tax no
 - tax number
-- tax registration number
-- taxd #
-- taxdno #
-- taxdnumber #
+- numero di registrazione fiscale
+- rullato #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -3977,70 +3977,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - tin no
 - tin #
 
-## <a name="croatia-social-security-number-or-equivalent-identification"></a>Numero di previdenza sociale della Croazia o identificazione equivalente
-Questa entità del tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate PER ID equivalente o numero di previdenza sociale dell'Unione Europea.
+## <a name="cyprus-drivers-license-number"></a>Numero di licenza per i driver di Cipro
 
-### <a name="format"></a>Formato
-
-11 cifre senza spazi e delimitatori
-  
-### <a name="pattern"></a>Modello
-
-11 cifre:
-  
-- 10 cifre
-- una cifra di controllo
-    
-### <a name="checksum"></a>Checksum
-
-Sì
-  
-### <a name="definition"></a>Definizione
-
-Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-  
-- La funzione  `Func_croatia_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_croatia_eu_ssn_or_equivalent` chiave da. 
-    
-Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-  
-- La funzione  `Func_croatia_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_croatia_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_croatia_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_croatia_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>Parole chiave
-
-#### <a name="keywords_croatia_eu_ssn_or_equivalent"></a>Keywords_croatia_eu_ssn_or_equivalent
-
-- personal identification number
-- master citizen number
-- national identification number
-- social security number
-- nationalnumber #
-- ssn #
-- ssn
-- nationalnumber
-- bnn #
-- bnn
-- personal id number
-- personalidnumber #
-- oib
-- osobni identifikacijski broj
-
-## <a name="cyprus-drivers-license-number"></a>Numero di patente di guida a Cipro
-
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 12 cifre senza spazi e delimitatori
   
@@ -4054,7 +3993,7 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_cyprus_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_cyprus_eu_driver's_license_number` .
 
@@ -4085,8 +4024,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- patente di guida
+- patenti di guida
 - driverslic
 - driverslics
 - driverslicence
@@ -4098,21 +4037,21 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- driver licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
-- driver'licence
-- driver'licences
+- patente di guida
+- patenti di guida
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- patente di guida
+- licenze del driver
+- patente di guida
+- patenti di guida
 - driver'slic
-- driver'slics
+- calici del driver
 - driver'slicense
 - driver'slicenses
 - driver'slicence
@@ -4122,7 +4061,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- patenti di guida
 - dl #
 - dls #
 - driverlic #
@@ -4134,8 +4073,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lic #
 - driver lics #
 - driver license #
-- driver licenses #
-- driver licences #
+- licenze driver #
+- patenti di guida #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -4144,49 +4083,49 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
+- driver license #
 - driver licenses #
-- drivers licence #
-- drivers licences #
+- driver licence #
+- driver licences #
 - driver'lic #
 - driver'lics #
 - driver'license #
 - driver'licenses #
-- driver'licence #
-- driver'licences #
+- patente di guida #
+- patenti di guida #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driver'slic #
-- driver'slics #
+- calici del driver #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
+- licenza driv
+- licenze driv
+- licenza driv
 - driv licences
 - driver licen
 - drivers licen
-- driver's licen
+- licen del driver
 - driving lic
 - driving licen
-- driving licenses
+- licenze di guida
 - driving licence
 - driving licences
 - driving permit
@@ -4201,15 +4140,15 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - άδειες οδήγησης
 
 
-## <a name="cyprus-identity-card"></a>Carta di identità di Cipro
-Questo tipo di informazioni riservate è disponibile solo in:
+## <a name="cyprus-identity-card"></a>Carta d'identità di Cipro
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 10 cifre senza spazi e delimitatori
   
@@ -4223,9 +4162,9 @@ non applicabile
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_cyprus_eu_national_id_card` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_cyprus_eu_national_id_card` chiave da. 
+- Viene trovata una parola  `Keywords_cyprus_eu_national_id_card` chiave from. 
     
 ```xml 
       <!-- Cyprus Identity Card -->
@@ -4241,7 +4180,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 #### <a name="keywords_cyprus_eu_national_id_card"></a>Keywords_cyprus_eu_national_id_card
 
-- id card number
+- id numero di carta
 - numero di carta di identità
 - kimlik karti
 - national identification number
@@ -4249,15 +4188,15 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - ταυτοτητασ
 
 
-## <a name="cyprus-passport-number"></a>Cipro - Numero di passaporto
+## <a name="cyprus-passport-number"></a>Numero di passaporto di Cipro
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 una lettera seguita da 6-8 cifre senza spazi o delimitatori
   
 ### <a name="pattern"></a>Modello
 
-una lettera seguita da sei-otto cifre
+una lettera seguita da sei a otto cifre
   
 ### <a name="checksum"></a>Checksum
 
@@ -4265,12 +4204,12 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_cyprus_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_cyprus_eu_passport_number` . 
-- L'espressione regolare trova la data nel formato `Regex_cyprus_eu_passport_date` GG/MM/AAAA oppure viene trovata una parola chiave `Keywords_cyprus_eu_passport_date` da
+- L'espressione `Regex_cyprus_eu_passport_date` regolare trova la data nel formato GG/MM/AAAA o viene trovata una parola chiave `Keywords_cyprus_eu_passport_date` da
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_cyprus_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_cyprus_eu_passport_number` .  
     
@@ -4305,7 +4244,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - passport #
 - passport #
 - passportid
-- passports
+- passaporti
 - passportno
 - passport no
 - passportnumber
@@ -4333,17 +4272,17 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - rilasciato il
 
 
-## <a name="cyprus-tax-identification-number"></a>Numero di identificazione fiscale di Cipro
-Questo tipo di informazioni riservate è disponibile solo in:
+## <a name="cyprus-tax-identification-number"></a>Codice fiscale di Cipro
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
-otto cifre e una lettera nel formato specificato
+otto cifre e una lettera nello schema specificato
   
 ### <a name="pattern"></a>Modello
 
@@ -4359,11 +4298,11 @@ non applicabile
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_cyprus_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_cyprus_eu_tax_file_number` chiave da. 
+- Viene trovata una parola  `Keywords_cyprus_eu_tax_file_number` chiave from. 
     
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_cyprus_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -4384,16 +4323,16 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 #### <a name="keywords_cyprus_eu_tax_file_number"></a>Keywords_cyprus_eu_tax_file_number
 
 - tax id
-- tax identification code
-- tax identification no
-- tax identification number
+- codice di identificazione fiscale
+- identificazione fiscale no
+- codice fiscale
 - tax no #
 - tax no
 - tax number
-- tax registration number
-- taxd #
-- taxdno #
-- taxdnumber #
+- numero di registrazione fiscale
+- rullato #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -4410,9 +4349,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - φορολογικού κωδικού
 
 
-## <a name="czech-drivers-license-number"></a>Numero della patente di guida ceco
+## <a name="czech-drivers-license-number"></a>Numero di patente di guida ceco
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 due lettere seguite da sei cifre
   
@@ -4431,7 +4370,7 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_czech_republic_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_czech_republic_eu_driver's_license_number` . 
 
@@ -4462,8 +4401,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- patente di guida
+- patenti di guida
 - driverslic
 - driverslics
 - driverslicence
@@ -4475,21 +4414,21 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- driver licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
-- driver'licence
-- driver'licences
+- patente di guida
+- patenti di guida
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- patente di guida
+- licenze del driver
+- patente di guida
+- patenti di guida
 - driver'slic
-- driver'slics
+- calici del driver
 - driver'slicense
 - driver'slicenses
 - driver'slicence
@@ -4499,7 +4438,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- patenti di guida
 - dl #
 - dls #
 - driverlic #
@@ -4511,8 +4450,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lic #
 - driver lics #
 - driver license #
-- driver licenses #
-- driver licences #
+- licenze driver #
+- patenti di guida #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -4521,49 +4460,49 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
+- driver license #
 - driver licenses #
-- drivers licence #
-- drivers licences #
+- driver licence #
+- driver licences #
 - driver'lic #
 - driver'lics #
 - driver'license #
 - driver'licenses #
-- driver'licence #
-- driver'licences #
+- patente di guida #
+- patenti di guida #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driver'slic #
-- driver'slics #
+- calici del driver #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
+- licenza driv
+- licenze driv
+- licenza driv
 - driv licences
 - driver licen
 - drivers licen
-- driver's licen
+- licen del driver
 - driving lic
 - driving licen
-- driving licenses
+- licenze di guida
 - driving licence
 - driving licences
 - driving permit
@@ -4576,12 +4515,12 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - řidičský prúkaz
 - řidičské průkazy
 - číslo řidičského průkazu
-- čísla řidičských průkazů
+- čísla řidičských prýkazých
 
 
 ## <a name="czech-passport-number"></a>Numero di passaporto ceco
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 otto cifre senza spazi o delimitatori
   
@@ -4595,12 +4534,12 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_czech_republic_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_czech_republic_eu_passport_number` . 
 - L'espressione `Regex_eu_passport_date1` regolare trova la data nel formato GG.MM.AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_czech_republic_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_czech_republic_eu_passport_number` . 
     
@@ -4635,7 +4574,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - passport #
 - passport #
 - passportid
-- passports
+- passaporti
 - passportno
 - passport no
 - passportnumber
@@ -4659,7 +4598,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 ## <a name="czech-personal-identity-number"></a>Numero di identità personale ceco
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 nove cifre con barra facoltativa (formato precedente) 10 cifre con barra facoltativa (nuovo formato)
 
@@ -4681,13 +4620,13 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 
 - La funzione Func_czech_id_card trova contenuto che corrisponde al modello.
 - Viene trovata una parola Keyword_czech_id_card da un utente.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 
 - La funzione Func_czech_id_card_new_format trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
@@ -4723,11 +4662,11 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - numero di assicurazione
 - national identification number
 - nationalnumber #
-- national number
+- numero nazionale
 - osobní číslo
 - personalidnumber #
 - personal id number
-- personal identification number
+- numero di identificazione personale
 - numero personale
 - pid #
 - pid
@@ -4739,15 +4678,15 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - ssn #
 - social security number
 - tax id
-- tax identification no
-- tax identification number
+- identificazione fiscale no
+- codice fiscale
 - tax no #
 - tax no
 - tax number
-- tax registration number
-- taxd #
-- taxdno #
-- taxdnumber #
+- numero di registrazione fiscale
+- rullato #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -4756,70 +4695,10 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - tin #
 - numero di identificazione univoco
 
-## <a name="czech-social-security-number-or-equivalent-identification"></a>Numero di previdenza sociale ceco o identificazione equivalente
 
-Questa entità del tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate PER ID equivalente o numero di previdenza sociale dell'Unione Europea.
+## <a name="denmark-drivers-license-number"></a>Numero di patente di guida danimarca
 
-### <a name="format"></a>Formato
-
-10 cifre e una barra rovesciata nel modello specificato
-  
-### <a name="pattern"></a>Modello
-
-10 cifre e una barra rovesciata:
-  
-- sei cifre che corrispondono alla data di nascita (AAMMMMD): 
-- barra rovesciata
-- tre cifre che corrispondono a un numero seriale che separa le persone nate alla stessa data
-- una cifra di controllo
-    
-### <a name="checksum"></a>Checksum
-
-Sì
-  
-### <a name="definition"></a>Definizione
-
-Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- La funzione  `Func_czech_republic_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_czech_republic_eu_ssn_or_equivalent` chiave da. 
-    
-Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- La funzione  `Func_czech_republic_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
-
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_czech_republic_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_czech_republic_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_czech_republic_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>Parole chiave
-
-#### <a name="keywords_czech_republic_eu_ssn_or_equivalent"></a>Keywords_czech_republic_eu_ssn_or_equivalent
-
-- numero di nascita
-- national identification number
-- personal identification number
-- social security number
-- nationalnumber #
-- ssn #
-- ssn
-- national number
-- personal id number
-- personalidnumber #
-- rč
-- rodné číslo
-- rodne cislo
-
-## <a name="denmark-drivers-license-number"></a>Danimarca - Numero della patente di guida
-
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 otto cifre senza spazi e delimitatori
   
@@ -4833,7 +4712,7 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_denmark_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_denmark_eu_driver's_license_number` . 
     
@@ -4864,8 +4743,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- patente di guida
+- patenti di guida
 - driverslic
 - driverslics
 - driverslicence
@@ -4877,21 +4756,21 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- driver licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
-- driver'licence
-- driver'licences
+- patente di guida
+- patenti di guida
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- patente di guida
+- licenze del driver
+- patente di guida
+- patenti di guida
 - driver'slic
-- driver'slics
+- calici del driver
 - driver'slicense
 - driver'slicenses
 - driver'slicence
@@ -4901,7 +4780,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- patenti di guida
 - dl #
 - dls #
 - driverlic #
@@ -4913,8 +4792,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lic #
 - driver lics #
 - driver license #
-- driver licenses #
-- driver licences #
+- licenze driver #
+- patenti di guida #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -4923,49 +4802,49 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
+- driver license #
 - driver licenses #
-- drivers licence #
-- drivers licences #
+- driver licence #
+- driver licences #
 - driver'lic #
 - driver'lics #
 - driver'license #
 - driver'licenses #
-- driver'licence #
-- driver'licences #
+- patente di guida #
+- patenti di guida #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driver'slic #
-- driver'slics #
+- calici del driver #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
+- licenza driv
+- licenze driv
+- licenza driv
 - driv licences
 - driver licen
 - drivers licen
-- driver's licen
+- licen del driver
 - driving lic
 - driving licen
-- driving licenses
+- licenze di guida
 - driving licence
 - driving licences
 - driving permit
@@ -4979,9 +4858,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - kørekortnummer
 
 
-## <a name="denmark-passport-number"></a>Danimarca - numero di passaporto
+## <a name="denmark-passport-number"></a>Numero di passaporto danimarca
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 nove cifre senza spazi e delimitatori
   
@@ -4995,12 +4874,12 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_denmark_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_denmark_eu_passport_number` . 
-- L'espressione `Regex_eu_passport_date2` regolare trova la data nel formato GG MM AA o viene trovata una parola chiave `Keywords_eu_passport_date` da
+- L'espressione `Regex_eu_passport_date2` regolare trova la data nel formato GG MM AA o una parola chiave `Keywords_eu_passport_date` da.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_denmark_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_denmark_eu_passport_number` . 
     
@@ -5036,7 +4915,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - passport #
 - passport #
 - passportid
-- passports
+- passaporti
 - passportno
 - passport no
 - passportnumber
@@ -5056,16 +4935,16 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - data di scadenza
 
 
-## <a name="denmark-personal-identification-number"></a>Danimarca - Numero di identificazione personale
+## <a name="denmark-personal-identification-number"></a>Numero di identificazione personale Danimarca
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 10 cifre contenenti una lineetta
 
 ### <a name="pattern"></a>Modello
 
 10 cifre:
-- sei cifre nel formato MMMMAA, ovvero la data di nascita 
+- sei cifre nel formato DDMMYY, ovvero la data di nascita 
 - un trattino 
 - quattro cifre in cui la cifra finale è una cifra di controllo
 
@@ -5075,12 +4954,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- L'espressione Func_denmark_eu_tax_file_number trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keyword_denmark_id di codice.
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione regolare Func_denmark_eu_tax_file_number trova contenuto che corrisponde al modello.
+- Viene trovata una parola Keyword_denmark_id da un utente.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Func_denmark_eu_tax_file_number trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
@@ -5109,8 +4988,8 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - gesundheitskarte nummer
 - gesundheitsversicherungkarte nummer
 - health card
-- health insurance card number
-- health insurance number
+- numero della carta di assicurazione sanitaria
+- numero di assicurazione sanitaria
 - identification number
 - identifikationsnummer
 - identifikationsnummer #
@@ -5118,7 +4997,7 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - krankenkassennummer
 - nationalid #
 - nationalnumber #
-- national number
+- numero nazionale
 - personalidnumber #
 - personalidentityno #
 - personal id number
@@ -5139,22 +5018,22 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - sundhedskortnummer
 - sygesikring
 - sygesikringkortnummer
-- tax code
-- travel health insurance card
+- codice fiscale
+- carta di assicurazione sanitaria di viaggio
 - uniqueidentityno #
 - tax number
-- tax registration number
+- numero di registrazione fiscale
 - tax id
-- tax identification number
-- taxd #
+- codice fiscale
+- rullato #
 - taxnumber #
 - tax no
 - taxno #
 - taxnumber
-- tax identification no
+- identificazione fiscale no
 - tin #
-- taxdno #
-- taxdnumber #
+- taxidno #
+- taxidnumber #
 - tax no #
 - tin id
 - tin no
@@ -5172,66 +5051,10 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - sygesikringsnr
 - sygesikringsnummer
 
-## <a name="denmark-social-security-number-or-equivalent-identification"></a>Numero di previdenza sociale danimarca o identificazione equivalente
-Questa entità del tipo di informazioni riservate è disponibile solo per il numero di previdenza sociale dell'Unione Europea o per l'ID equivalente.
-
-### <a name="format"></a>Formato
-
-10 cifre e un trattino nel formato specificato
-  
-### <a name="pattern"></a>Modello
-
-10 cifre e un trattino:
-  
-- sei cifre che corrispondono alla data di nascita (DDMMYY) 
-- un trattino
-- quattro cifre che corrispondono a un numero di sequenza
-
-### <a name="checksum"></a>Checksum
-
-Sì
-  
-### <a name="definition"></a>Definizione
-
-Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- La funzione  `Func_denmark_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_denmark_eu_ssn_or_equivalent` chiave da. 
-    
-Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- La funzione  `Func_denmark_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_denmark_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_denmark_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_denmark_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>Parole chiave
-
-#### <a name="keywords_denmark_eu_ssn_or_equivalent"></a>Keywords_denmark_eu_ssn_or_equivalent
-
-- personal identification number
-- national identification number
-- social security number
-- nationalnumber #
-- ssn #
-- ssn
-- national number
-- personal id number
-- personalidnumber #
-- cpr-nummer
-- personnummer
 
 ## <a name="drug-enforcement-agency-dea-number"></a>Numero dea (Drug Enforcement Agency)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 due lettere seguite da sette cifre
 
@@ -5239,7 +5062,7 @@ due lettere seguite da sette cifre
 
 Il modello deve includere tutti gli elementi seguenti:
 - una lettera (senza distinzione tra maiuscole e minuscole) da questo set di lettere possibili: abcdefghjklmnprstux, che è un codice registrante 
-- una lettera (senza distinzione tra maiuscole e minuscole), ovvero la prima lettera del cognome o della cifra "9" del registrante
+- una lettera (senza distinzione tra maiuscole e minuscole), ovvero la prima lettera del cognome o della cifra "9" del dichiarante
 - sette cifre, l'ultima delle quali è la cifra di controllo
 
 ### <a name="checksum"></a>Checksum
@@ -5248,12 +5071,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_dea_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola `Keyword_dea_number` chiave da
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_dea_number restituisce contenuti che corrispondono al modello.
 - Il checksum ha esito positivo.
 
@@ -5287,9 +5110,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - drug enforcement agency
 
 
-## <a name="estonia-drivers-license-number"></a>Estonia - Numero della patente di guida
+## <a name="estonia-drivers-license-number"></a>Numero di patente di guida estonia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 due lettere seguite da sei cifre
   
@@ -5306,7 +5129,7 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_estonia_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_estonia_eu_driver's_license_number` . 
     
@@ -5337,8 +5160,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- patente di guida
+- patenti di guida
 - driverslic
 - driverslics
 - driverslicence
@@ -5350,21 +5173,21 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- driver licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
-- driver'licence
-- driver'licences
+- patente di guida
+- patenti di guida
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- patente di guida
+- licenze del driver
+- patente di guida
+- patenti di guida
 - driver'slic
-- driver'slics
+- calici del driver
 - driver'slicense
 - driver'slicenses
 - driver'slicence
@@ -5374,7 +5197,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- patenti di guida
 - dl #
 - dls #
 - driverlic #
@@ -5386,8 +5209,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lic #
 - driver lics #
 - driver license #
-- driver licenses #
-- driver licences #
+- licenze driver #
+- patenti di guida #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -5396,49 +5219,49 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
+- driver license #
 - driver licenses #
-- drivers licence #
-- drivers licences #
+- driver licence #
+- driver licences #
 - driver'lic #
 - driver'lics #
 - driver'license #
 - driver'licenses #
-- driver'licence #
-- driver'licences #
+- patente di guida #
+- patenti di guida #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driver'slic #
-- driver'slics #
+- calici del driver #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
+- licenza driv
+- licenze driv
+- licenza driv
 - driv licences
 - driver licen
 - drivers licen
-- driver's licen
+- licen del driver
 - driving lic
 - driving licen
-- driving licenses
+- licenze di guida
 - driving licence
 - driving licences
 - driving permit
@@ -5455,14 +5278,14 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 
 ## <a name="estonia-personal-identification-code"></a>Estonia Personal Identification Code
-Questo tipo di informazioni riservate è disponibile solo in:
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 11 cifre senza spazi e delimitatori
   
@@ -5471,7 +5294,7 @@ Questo tipo di informazioni riservate è disponibile solo in:
 11 cifre:
   
 - una cifra che corrisponde al sesso e al secolo di nascita (numero dispari maschile, numero pari femminile; 1-2: 19° secolo; 3-4: 20° secolo; 5-6: 21° secolo)
-- sei cifre che corrispondono alla data di nascita (AAMMMMAD)
+- sei cifre che corrispondono alla data di nascita (AAMMDD)
 - tre cifre che corrispondono a un numero seriale che separa le persone nate nella stessa data
 - una cifra di controllo
     
@@ -5481,11 +5304,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_estonia_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_estonia_eu_national_id_card` chiave da. 
+- Viene trovata una parola  `Keywords_estonia_eu_national_id_card` chiave from. 
     
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_estonia_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -5517,22 +5340,22 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - maksukohustuslase identifitseerimisnumber
 - maksunumber
 - national identification number
-- national number
+- numero nazionale
 - codice personale
 - personal id number
 - codice di identificazione personale
-- personal identification number
+- numero di identificazione personale
 - personalidnumber #
 - tax id
-- tax identification no
-- tax identification number
+- identificazione fiscale no
+- codice fiscale
 - tax no #
 - tax no
 - tax number
-- tax registration number
-- taxd #
-- taxdno #
-- taxdnumber #
+- numero di registrazione fiscale
+- rullato #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -5541,9 +5364,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - tin #
 
 
-## <a name="estonia-passport-number"></a>Estonia - numero di passaporto
+## <a name="estonia-passport-number"></a>Numero di passaporto estone
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 una lettera seguita da sette cifre senza spazi o delimitatori
   
@@ -5557,12 +5380,12 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_estonia_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_estonia_eu_passport_number` . 
 - L'espressione `Regex_eu_passport_date1` regolare trova la data nel formato GG.MM.AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_estonia_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_estonia_eu_passport_number` . 
     
@@ -5597,7 +5420,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - passport #
 - passport #
 - passportid
-- passports
+- passaporti
 - passportno
 - passport no
 - passportnumber
@@ -5615,15 +5438,15 @@ eesti kodaniku pass passi number passinumbrid document no dokumendi nr
 - data di scadenza
 
 
-## <a name="eu-debit-card-number"></a>Numero di carta di debito DELL
+## <a name="eu-debit-card-number"></a>Numero carta di debito UE
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 16 cifre
 
 ### <a name="pattern"></a>Modello
 
-Modello complesso e solido
+Modello complesso e affidabile
 
 ### <a name="checksum"></a>Checksum
 
@@ -5631,7 +5454,7 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_eu_debit_card restituisce contenuti che corrispondono al modello.
 - Si verifica almeno una delle situazioni seguenti:
     - Viene trovata una parola chiave da Keyword_eu_debit_card.
@@ -5723,7 +5546,7 @@ Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di infor
 - checkcards 
 - chequekaart 
 - cirrus 
-- cirrus-edc-tuttora 
+- cirrus-edc-maestro 
 - controlekaart 
 - controlekaarten 
 - credit card 
@@ -5762,7 +5585,7 @@ Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di infor
 - kaarthouders 
 - karte  
 - karteninhaber 
-- karteninhabers
+- karteninchabers
 - kartennr 
 - kartennummer 
 - kreditkarte 
@@ -5771,7 +5594,7 @@ Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di infor
 - kreditkarteninstitut 
 - kreditkartennummer 
 - kreditkartentyp 
-- sinisa 
+- maestro 
 - master card 
 - master cards 
 - mastercard 
@@ -5868,7 +5691,7 @@ Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di infor
 - codigo de seguranca 
 - codigo de segurança 
 - crittogramma 
-- cryptogram 
+- crittogramma 
 - cryptogramme 
 - cv2 
 - cvc 
@@ -5915,9 +5738,9 @@ Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di infor
 - sicherheitsnummer 
 - speldblok 
 - veiligheid nr 
-- perigheidsaantal 
-- perigheidscode 
-- perigheidsnummer 
+- veiligheidsaantal 
+- veiligheidscode 
+- veiligheidsnummer 
 - verfalldatum 
 
 #### <a name="keyword_card_expiration_terms_dict"></a>Keyword_card_expiration_terms_dict
@@ -5965,9 +5788,9 @@ Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di infor
 - válido hasta 
 
 
-## <a name="eu-drivers-license-number"></a>Numero della patente di guida dell'Unione Europea
+## <a name="eu-drivers-license-number"></a>Numero di patente di guida UE
 
-Queste entità sono nel numero di patente di guida dell'Unione Europea e sono tipi di informazioni riservate.
+Queste entità sono nel numero di patente di guida dell'UE e sono tipi di informazioni riservate.
 
 - [Austria](#austria-drivers-license-number) 
 - [Belgio](#belgium-drivers-license-number)
@@ -5986,7 +5809,7 @@ Queste entità sono nel numero di patente di guida dell'Unione Europea e sono ti
 - [Italia](#italy-drivers-license-number)
 - [Lettonia](#latvia-drivers-license-number)
 - [Lituania](#lithuania-drivers-license-number)
-- [Luvamburgo](#luxemburg-drivers-license-number)
+- [Luxemburg](#luxemburg-drivers-license-number)
 - [Malta](#malta-drivers-license-number)
 - [Paesi Bassi](#netherlands-drivers-license-number)
 - [Polonia](#poland-drivers-license-number) 
@@ -5999,9 +5822,9 @@ Queste entità sono nel numero di patente di guida dell'Unione Europea e sono ti
 - [Regno Unito](#uk-drivers-license-number)
 
 
-## <a name="eu-national-identification-number"></a>Numero di identificazione nazionale dell'Unione Europea
+## <a name="eu-national-identification-number"></a>Numero di identificazione nazionale DELL
 
-Queste entità sono nel numero di identificazione nazionale dell'Unione Europea e sono tipi di informazioni riservate.
+Queste entità sono nel numero di identificazione nazionale dell'UE e sono tipi di informazioni riservate.
 
 - [Austria](#austria-identity-card)
 - [Belgio](#belgium-national-number)
@@ -6020,7 +5843,7 @@ Queste entità sono nel numero di identificazione nazionale dell'Unione Europea 
 - [Italia](#italy-fiscal-code)
 - [Lettonia](#latvia-personal-code)
 - [Lituania](#lithuania-personal-code)
-- [Luvamburgo](#luxemburg-national-identification-number-natural-persons)
+- [Luxemburg](#luxemburg-national-identification-number-natural-persons)
 - [Malta](#malta-identity-card-number)
 - [Paesi Bassi](#netherlands-citizens-service-bsn-number)
 - [Polonia](#poland-national-id-pesel)
@@ -6034,7 +5857,7 @@ Queste entità sono nel numero di identificazione nazionale dell'Unione Europea 
 
 ## <a name="eu-passport-number"></a>Numero di passaporto UE 
 
-Queste entità sono nel numero di passaporto dell'Unione Europea e sono tipi di informazioni riservate. Queste entità sono nel bundle dei numeri di passaporto dell'Unione Europea.
+Queste entità sono nel numero di passaporto ue e sono tipi di informazioni riservate. Queste entità sono nel bundle del numero di passaporto ue.
 
 - [Austria](#austria-passport-number)
 - [Belgio](#belgium-passport-number)
@@ -6053,7 +5876,7 @@ Queste entità sono nel numero di passaporto dell'Unione Europea e sono tipi di 
 - [Italia](#italy-passport-number)
 - [Lettonia](#latvia-passport-number)
 - [Lituania](#lithuania-passport-number)
-- [Luvamburgo](#luxemburg-passport-number)
+- [Luxemburg](#luxemburg-passport-number)
 - [Malta](#malta-passport-number)
 - [Paesi Bassi](#netherlands-passport-number)
 - [Polonia](#poland-passport-number)
@@ -6066,9 +5889,9 @@ Queste entità sono nel numero di passaporto dell'Unione Europea e sono tipi di 
 - [Regno Unito](#us--uk-passport-number)
 
 
-## <a name="eu-social-security-number-or-equivalent-identification"></a>Numero di previdenza sociale dell'Unione Europea o identificazione equivalente
+## <a name="eu-social-security-number-or-equivalent-identification"></a>Numero di previdenza sociale ue o identificazione equivalente
 
-Queste entità che sono nel numero di previdenza sociale dell'Unione Europea o in un'identificazione equivalente e sono tipi di informazioni riservate.
+Queste entità presenti nel numero di previdenza sociale dell'Unione Europea o in un'identificazione equivalente e sono tipi di informazioni riservate.
 
 - [Austria](#austria-social-security-number)
 - [Belgio](#belgium-national-number)
@@ -6076,7 +5899,7 @@ Queste entità che sono nel numero di previdenza sociale dell'Unione Europea o i
 - [Ceco](#czech-personal-identity-number)
 - [Danimarca](#denmark-personal-identification-number)
 - [Finlandia](#finland-national-id)
-- [Francia](#france-social-security-number-insee-or-equivalent-identification)
+- [Francia](#france-social-security-number-insee)
 - [Germania](#germany-identity-card-number)
 - [Grecia](#greece-national-id-card)
 - [Ungheria](#hungary-social-security-number-taj)
@@ -6085,9 +5908,9 @@ Queste entità che sono nel numero di previdenza sociale dell'Unione Europea o i
 - [Svezia](#sweden-national-id)
 
 
-## <a name="eu-tax-identification-number"></a>Numero di identificazione fiscale UE
+## <a name="eu-tax-identification-number"></a>Codice fiscale UE
 
-Queste entità sono nel tipo di informazioni riservate del numero di identificazione fiscale dell'Unione Europea.
+Queste entità sono nel tipo di informazioni riservate del numero di identificazione fiscale UE.
 
 - [Austria](#austria-tax-identification-number)
 - [Belgio](#belgium-national-number)
@@ -6106,7 +5929,7 @@ Queste entità sono nel tipo di informazioni riservate del numero di identificaz
 - [Italia](#italy-fiscal-code)
 - [Lettonia](#latvia-personal-code)
 - [Lituania](#lithuania-personal-code)
-- [Luvamburgo](#luxemburg-national-identification-number-non-natural-persons)
+- [Luxemburg](#luxemburg-national-identification-number-non-natural-persons)
 - [Malta](#malta-tax-identification-number)
 - [Paesi Bassi](#netherlands-tax-identification-number)
 - [Polonia](#poland-tax-identification-number)
@@ -6119,9 +5942,9 @@ Queste entità sono nel tipo di informazioni riservate del numero di identificaz
 - [Regno Unito](#uk-unique-taxpayer-reference-number)
 
 
-## <a name="finland-drivers-license-number"></a>Finlandia - Numero della patente di guida
+## <a name="finland-drivers-license-number"></a>Numero di patente di guida finlandia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 10 cifre contenenti una lineetta
   
@@ -6140,7 +5963,7 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_finland_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_finland_eu_driver's_license_number` . 
     
@@ -6171,8 +5994,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- patente di guida
+- patenti di guida
 - driverslic
 - driverslics
 - driverslicence
@@ -6184,21 +6007,21 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- driver licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
-- driver'licence
-- driver'licences
+- patente di guida
+- patenti di guida
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- patente di guida
+- licenze del driver
+- patente di guida
+- patenti di guida
 - driver'slic
-- driver'slics
+- calici del driver
 - driver'slicense
 - driver'slicenses
 - driver'slicence
@@ -6208,7 +6031,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- patenti di guida
 - dl #
 - dls #
 - driverlic #
@@ -6220,8 +6043,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lic #
 - driver lics #
 - driver license #
-- driver licenses #
-- driver licences #
+- licenze driver #
+- patenti di guida #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -6230,49 +6053,49 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
+- driver license #
 - driver licenses #
-- drivers licence #
-- drivers licences #
+- driver licence #
+- driver licences #
 - driver'lic #
 - driver'lics #
 - driver'license #
 - driver'licenses #
-- driver'licence #
-- driver'licences #
+- patente di guida #
+- patenti di guida #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driver'slic #
-- driver'slics #
+- calici del driver #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
+- licenza driv
+- licenze driv
+- licenza driv
 - driv licences
 - driver licen
 - drivers licen
-- driver's licen
+- licen del driver
 - driving lic
 - driving licen
-- driving licenses
+- licenze di guida
 - driving licence
 - driving licences
 - driving permit
@@ -6295,14 +6118,14 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 
 ## <a name="finland-european-health-insurance-number"></a>Finlandia - Numero di assicurazione sanitaria europea
-Questo tipo di informazioni riservate è disponibile solo in:
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Numero a 20 cifre
 
@@ -6320,7 +6143,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione Regex_Finland_European_Health_Insurance_Number trova contenuto che corrisponde al modello.
 - Viene trovata una parola Keyword_Finland_European_Health_Insurance_Number da un utente.
 
@@ -6342,8 +6165,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - finlandehicnumber #
 - finska sjukförsäkringskort
 - health card
-- health insurance card
-- health insurance number
+- carta di assicurazione sanitaria
+- numero di assicurazione sanitaria
 - hälsokort
 - sairaanhoitokortin
 - sairausvakuutuskortti
@@ -6354,18 +6177,18 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - terveyskortti
 
 
-## <a name="finland-national-id"></a>Finlandia - ID nazionale
+## <a name="finland-national-id"></a>Id nazionale Finlandia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 sei cifre più un carattere che indica un secolo più tre cifre più una cifra di controllo
 
 ### <a name="pattern"></a>Modello
 
 Il modello deve includere tutti gli elementi seguenti:
-- sei cifre nel formato MMMMAA, che sono una data di nascita 
+- sei cifre nel formato DDMMYY, che sono una data di nascita 
 - indicatore del secolo ('-', '+' o 'a') 
-- numero di identificazione personale a tre cifre 
+- Numero di identificazione personale a tre cifre 
 - una cifra o una lettera (senza distinzione tra maiuscole e minuscole) che è una cifra di controllo
 
 ### <a name="checksum"></a>Checksum
@@ -6374,14 +6197,14 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - la funzione Func_finnish_national_id trova contenuto che corrisponde al modello
-- viene trovata una parola Keyword_finnish_national_id da un utente
-- checksum superato
+- viene trovata una parola chiave Keyword_finnish_national_id viene trovata
+- il checksum passa
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - la funzione Func_finnish_national_id trova contenuto che corrisponde al modello
-- checksum superato
+- il checksum passa
 
 ```xml
       <!-- Finnish National ID-->
@@ -6412,25 +6235,25 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - idnumber
 - kansallinen henkilötunnus
 - kansallisen henkilökortin
-- national id card
+- carta d'identità nazionale
 - national id no.
 - id personale
-- personal identity code
+- codice di identità personale
 - personalidnumber #
 - personbeteckning
 - personnummer
 - social security number
 - sosiaaliturvatunnus
 - tax id
-- tax identification no
-- tax identification number
+- identificazione fiscale no
+- codice fiscale
 - tax no #
 - tax no
 - tax number
-- tax registration number
-- taxd #
-- taxdno #
-- taxdnumber #
+- numero di registrazione fiscale
+- rullato #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -6447,11 +6270,11 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - verotunnus
 
 
-## <a name="finland-passport-number"></a>Finlandia - numero di passaporto
+## <a name="finland-passport-number"></a>Numero di passaporto finlandia
 
-Questa entità tipo di informazioni riservate è disponibile nel tipo di informazioni riservate Numero di passaporto ue ed è disponibile come entità autonoma del tipo di informazioni riservate.
+Questa entità tipo di informazioni riservate è disponibile nel tipo di informazioni riservate Numero di passaporto UE ed è disponibile come entità di tipo di informazioni riservate autonomo.
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 combinazione di nove lettere e cifre
 
 ### <a name="pattern"></a>Modello
@@ -6465,12 +6288,12 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione `Regex_finland_passport_number` regolare trova contenuto che corrisponde al modello.
 - Viene trovata una `Keywords_eu_passport_number` parola chiave da o `Keyword_finland_passport_number` .
 - L'espressione `Regex_eu_passport_date1` regolare trova la data nel formato GG.MM.AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione `Regex_finland_passport_number` regolare trova contenuto che corrisponde al modello.
 - Viene trovata una `Keywords_eu_passport_number` parola chiave da o `Keyword_finland_passport_number` .
 
@@ -6504,7 +6327,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - passport #
 - passport #
 - passportid
-- passports
+- passaporti
 - passportno
 - passport no
 - passportnumber
@@ -6527,11 +6350,11 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - data di emissione
 - data di scadenza
 
-## <a name="france-drivers-license-number"></a>Francia - Numero della patente di guida
+## <a name="france-drivers-license-number"></a>Francia - Numero di patente di guida
 
-Questa entità tipo di informazioni riservate è disponibile nel tipo di informazione sensibile Numero di patente di guida dell'Unione Europea ed è disponibile come entità autonoma del tipo di informazioni riservate.
+Questa entità tipo di informazioni riservate è disponibile nel tipo di informazioni riservate Numero di patente dell'UE ed è disponibile come entità di tipo di informazioni riservate autonomo.
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 12 cifre
 
@@ -6545,9 +6368,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - la funzione Func_french_drivers_license trova contenuto che corrisponde al modello.
-- viene trovata una parola Keyword_french_drivers_license da un utente.
+- viene trovata una parola chiave Keyword_french_drivers_license ricerca.
 
 ```xml
     <!-- France Driver's License Number -->
@@ -6573,8 +6396,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- patente di guida
+- patenti di guida
 - driverslic
 - driverslics
 - driverslicence
@@ -6586,21 +6409,21 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- driver licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
-- driver'licence
-- driver'licences
+- patente di guida
+- patenti di guida
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- patente di guida
+- licenze del driver
+- patente di guida
+- patenti di guida
 - driver'slic
-- driver'slics
+- calici del driver
 - driver'slicense
 - driver'slicenses
 - driver'slicence
@@ -6610,7 +6433,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- patenti di guida
 - dl #
 - dls #
 - driverlic #
@@ -6622,8 +6445,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lic #
 - driver lics #
 - driver license #
-- driver licenses #
-- driver licences #
+- licenze driver #
+- patenti di guida #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -6632,49 +6455,49 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
+- driver license #
 - driver licenses #
-- drivers licence #
-- drivers licences #
+- driver licence #
+- driver licences #
 - driver'lic #
 - driver'lics #
 - driver'license #
 - driver'licenses #
-- driver'licence #
-- driver'licences #
+- patente di guida #
+- patenti di guida #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driver'slic #
-- driver'slics #
+- calici del driver #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
+- licenza driv
+- licenze driv
+- licenza driv
 - driv licences
 - driver licen
 - drivers licen
-- driver's licen
+- licen del driver
 - driving lic
 - driving licen
-- driving licenses
+- licenze di guida
 - driving licence
 - driving licences
 - driving permit
@@ -6689,15 +6512,15 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - numéros de licence
 
 
-## <a name="france-health-insurance-number"></a>Numero di assicurazione sanitaria francese
-Questo tipo di informazioni riservate è disponibile solo in:
+## <a name="france-health-insurance-number"></a>Numero dell'assicurazione sanitaria francese
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Numero a 21 cifre
 
@@ -6718,9 +6541,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - l'espressione Regex_France_Health_Insurance_Number trova contenuto che corrisponde al modello.
-- viene trovata una parola Keyword_France_Health_Insurance_Number da un utente.
+- viene trovata una parola chiave Keyword_France_Health_Insurance_Number viene trovata.
 
 ```xml
       <!-- France Health Insurance Number -->
@@ -6735,14 +6558,14 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 #### <a name="keyword_france_health_insurance_number"></a>Keyword_France_health_insurance_number
 
-- carta di assicurazione
+- carta assicurativa
 - carte vitale
 - carte d'assuré social
 
 
-## <a name="france-national-id-card-cni"></a>Carta di identità francese (CNI)
+## <a name="france-national-id-card-cni"></a>Carta d'identità francese (CNI)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 12 cifre
 
@@ -6756,9 +6579,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_france_cni restituisce contenuti che corrispondono al modello.
-- Viene trovata una parola Keywords_france_eu_national_id_card da un utente.
+- Viene trovata una parola Keywords_france_eu_national_id_card dall'utente.
 
 ```xml
     <!-- France CNI -->
@@ -6781,16 +6604,16 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - cni
 - compte bancaire
 - national identification number
-- national identity
+- identità nazionale
 - nationalidno #
 - numéro d'assurance maladie
 - numéro de carte vitale
 
    
 ## <a name="france-passport-number"></a>Francia - numero di passaporto
-Questa entità del tipo di informazioni riservate è disponibile nel tipo di informazione sensibile Numero di passaporto UE. È disponibile come entità autonoma del tipo di informazioni riservate.
+Questa entità tipo di informazioni riservate è disponibile nel tipo di informazioni riservate Numero di passaporto UE. È disponibile come entità di tipo di informazioni riservate autonomo.
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 nove cifre e lettere
 
@@ -6807,12 +6630,12 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione `Func_fr_passport` trova contenuto che corrisponde al modello.
 - Viene trovata una `Keywords_eu_passport_number` parola chiave da o `Keywords_france_eu_passport_number` .
 - L'espressione `Regex_eu_passport_date3` regolare trova la data nel formato GG MM AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione `Func_fr_passport` trova contenuto che corrisponde al modello.
 - Viene trovata una `Keywords_eu_passport_number` parola chiave da o `Keywords_france_eu_passport_number` .
 
@@ -6848,7 +6671,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - passport #
 - passport #
 - passportid
-- passports
+- passaporti
 - passportno
 - passport no
 - passportnumber
@@ -6879,9 +6702,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - data di scadenza
 
 
-## <a name="france-social-security-number-insee-or-equivalent-identification"></a>Numero di previdenza sociale francese (INSEE) o identificazione equivalente
+## <a name="france-social-security-number-insee"></a>Numero di previdenza sociale francia (INSEE)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 15 cifre
 
@@ -6898,12 +6721,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione `Func_french_insee` trova contenuto che corrisponde al modello.
 - Viene trovata una parola chiave da Keyword_fr_insee.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_french_insee o Func_fr_insee trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
@@ -6955,9 +6778,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - social insurance number
 
 
-## <a name="france-tax-identification-number"></a>Francia - Numero di identificazione fiscale
+## <a name="france-tax-identification-number"></a>Numero di identificazione fiscale francia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 13 cifre
   
@@ -6983,11 +6806,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_france_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_france_eu_tax_file_number` chiave da. 
+- Viene trovata una parola  `Keywords_france_eu_tax_file_number` chiave from. 
     
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_france_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -7014,15 +6837,15 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 - numéro d'identification fiscale
 - tax id
-- tax identification no
-- tax identification number
+- identificazione fiscale no
+- codice fiscale
 - tax no #
 - tax no
 - tax number
-- tax registration number
-- taxd #
-- taxdno #
-- taxdnumber #
+- numero di registrazione fiscale
+- rullato #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -7032,14 +6855,14 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 
 ## <a name="france-value-added-tax-number"></a>Numero di imposta sul valore aggiunto della Francia
-Questo tipo di informazioni riservate è disponibile solo in:
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Motivo alfanumerico a 13 caratteri
 
@@ -7063,11 +6886,11 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_france_value_added_tax_number trova contenuto che corrisponde al modello.
 - Viene trovata una parola Keywords_france_value_added_tax_number da un utente.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_france_value_added_tax_number trova contenuto che corrisponde al modello.
 
 ```xml
@@ -7086,7 +6909,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 #### <a name="keyword_france_value_added_tax_number"></a>Keyword_France_value_added_tax_number
 
-- numero di partita IVA
+- partita IVA
 - vat no
 - vat #
 - imposta sul valore aggiunto
@@ -7098,11 +6921,11 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - numéro d'identification siren
 
 
-## <a name="germany-drivers-license-number"></a>Germania - Numero della patente di guida
+## <a name="germany-drivers-license-number"></a>Germania - Numero di patente di guida
 
-Questa entità del tipo di informazioni sensibili è inclusa nel tipo di informazione sensibile Numero di patente di guida dell'Unione Europea. È disponibile come entità autonoma del tipo di informazioni riservate.
+Questa entità tipo di informazioni riservate è inclusa nel tipo di informazioni riservate Numero di patente dell'UE. È disponibile come entità di tipo di informazioni riservate autonomo.
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 combinazione di 11 cifre e lettere
 
@@ -7121,7 +6944,7 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_german_drivers_license restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_german_drivers_license_number.
 - Il checksum ha esito positivo.
@@ -7180,8 +7003,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- patente di guida
+- patenti di guida
 - driverslic
 - driverslics
 - driverslicence
@@ -7193,21 +7016,21 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- driver licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
-- driver'licence
-- driver'licences
+- patente di guida
+- patenti di guida
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- patente di guida
+- licenze del driver
+- patente di guida
+- patenti di guida
 - driver'slic
-- driver'slics
+- calici del driver
 - driver'slicense
 - driver'slicenses
 - driver'slicence
@@ -7217,7 +7040,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- patenti di guida
 - dl #
 - dls #
 - driverlic #
@@ -7229,8 +7052,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lic #
 - driver lics #
 - driver license #
-- driver licenses #
-- driver licences #
+- licenze driver #
+- patenti di guida #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -7239,60 +7062,60 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
+- driver license #
 - driver licenses #
-- drivers licence #
-- drivers licences #
+- driver licence #
+- driver licences #
 - driver'lic #
 - driver'lics #
 - driver'license #
 - driver'licenses #
-- driver'licence #
-- driver'licences #
+- patente di guida #
+- patenti di guida #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driver'slic #
-- driver'slics #
+- calici del driver #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
+- licenza driv
+- licenze driv
+- licenza driv
 - driv licences
 - driver licen
 - drivers licen
-- driver's licen
+- licen del driver
 - driving lic
 - driving licen
-- driving licenses
+- licenze di guida
 - driving licence
 - driving licences
 - driving permit
 - dlno
 
 
-## <a name="germany-identity-card-number"></a>Germania - Numero di carta di identità
+## <a name="germany-identity-card-number"></a>Numero carta d'identità Germania
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
-Dal 1° novembre 2010: Nove lettere e cifre
+dal 1° novembre 2010: nove lettere e cifre
 
 dal 1° aprile 1987 al 31 ottobre 2010: 10 cifre
 
@@ -7311,7 +7134,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_germany_id_card trova contenuto che corrisponde al modello.
 - Viene trovata una parola Keyword_germany_id_card da un utente.
 
@@ -7346,16 +7169,16 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 
 ## <a name="germany-passport-number"></a>Germania - Numero di passaporto
 
-Questa entità tipo di informazioni riservate è inclusa nel tipo di informazioni riservate numero di passaporto ue ed è disponibile come entità di tipo di informazioni riservate autonoma.
+Questa entità tipo di informazioni riservate è inclusa nel tipo di informazioni riservate numero di passaporto UE ed è disponibile come entità di tipo di informazioni riservate autonomo.
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 10 cifre o lettere
 
 ### <a name="pattern"></a>Modello
 
 Il modello deve includere tutti gli elementi seguenti:
-- il primo carattere è una cifra o una lettera di questo set (C, F, G, H, J, K) 
+- first character is a digit or a letter from this set (C, F, G, H, J, K) 
 - tre cifre 
 - cinque cifre o lettere di questo set (C, -H, J-N, P, R, T, V-Z) 
 - una cifra
@@ -7366,12 +7189,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_german_passport restituisce contenuti che corrispondono al modello.
 - Viene trovata una `Keyword_german_passport` parola chiave da o `Keywords_eu_passport_number_common` .
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_german_passport_data restituisce contenuti che corrispondono al modello.
 - Viene trovata una `Keyword_german_passport` parola chiave da o `Keywords_eu_passport_number_common` .
 - Il checksum ha esito positivo.
@@ -7415,7 +7238,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - passport #
 - passport #
 - passportid
-- passports
+- passaporti
 - passportno
 - passport no
 - passportnumber
@@ -7424,9 +7247,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - numeri di passaporto
 
 
-## <a name="germany-tax-identification-number"></a>Germania - Numero di identificazione fiscale
+## <a name="germany-tax-identification-number"></a>Numero di identificazione fiscale Germania
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 11 cifre senza spazi e delimitatori
   
@@ -7449,11 +7272,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_germany_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_germany_eu_tax_file_number` chiave da. 
+- Viene trovata una parola  `Keywords_germany_eu_tax_file_number` chiave from. 
     
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_germany_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -7478,15 +7301,15 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - steueridentifikationsnummer
 - steuernummer
 - tax id
-- tax identification no
-- tax identification number
+- identificazione fiscale no
+- codice fiscale
 - tax no #
 - tax no
 - tax number
-- tax registration number
-- taxd #
-- taxdno #
-- taxdnumber #
+- numero di registrazione fiscale
+- rullato #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -7498,21 +7321,21 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - zinnnummer
 
 
-## <a name="germany-value-added-tax-number"></a>Germania - Numero di imposta sul valore aggiunto
-Questo tipo di informazioni riservate è disponibile solo in:
+## <a name="germany-value-added-tax-number"></a>Numero di imposta sul valore aggiunto della Germania
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Motivo alfanumerico a 11 caratteri
 
 ### <a name="pattern"></a>Modello
 
-Motivo alfanumerico a 11 caratteri:
+Motivo alfanumerico di 11 caratteri:
 
 - una lettera D o d
 - una lettera E o e
@@ -7529,11 +7352,11 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_germany_value_added_tax_number trova contenuto che corrisponde al modello.
 - Viene trovata una parola Keywords_germany_value_added_tax_number da un utente.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_germany_value_added_tax_number trova contenuto che corrisponde al modello.
 
 ```xml
@@ -7552,7 +7375,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 #### <a name="keyword_germany_value_added_tax_number"></a>Keyword_germany_value_added_tax_number
 
-- numero di partita IVA
+- partita IVA
 - vat no
 - vat #
 - vat# mehrwertsteuer
@@ -7561,11 +7384,11 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - mehrwertsteuer nummer
 
 
-## <a name="greece-drivers-license-number"></a>Grecia - Numero della patente di guida
+## <a name="greece-drivers-license-number"></a>Numero di patente di guida in Grecia
 
-Questa entità del tipo di informazioni riservate è inclusa nel tipo di informazioni riservate numero di patente di guida dell'Unione Europea ed è disponibile come entità autonoma del tipo di informazioni riservate.
+Questa entità tipo di informazioni riservate è inclusa nel tipo di informazioni riservate Numero di patente dell'UE ed è disponibile come entità di tipo di informazioni riservate autonomo.
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 nove cifre senza spazi e delimitatori
   
@@ -7579,7 +7402,7 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_greece_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_greece_eu_driver's_license_number` . 
     
@@ -7610,8 +7433,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- patente di guida
+- patenti di guida
 - driverslic
 - driverslics
 - driverslicence
@@ -7623,21 +7446,21 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- driver licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
-- driver'licence
-- driver'licences
+- patente di guida
+- patenti di guida
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- patente di guida
+- licenze del driver
+- patente di guida
+- patenti di guida
 - driver'slic
-- driver'slics
+- calici del driver
 - driver'slicense
 - driver'slicenses
 - driver'slicence
@@ -7647,7 +7470,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- patenti di guida
 - dl #
 - dls #
 - driverlic #
@@ -7659,8 +7482,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lic #
 - driver lics #
 - driver license #
-- driver licenses #
-- driver licences #
+- licenze driver #
+- patenti di guida #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -7669,49 +7492,49 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
+- driver license #
 - driver licenses #
-- drivers licence #
-- drivers licences #
+- driver licence #
+- driver licences #
 - driver'lic #
 - driver'lics #
 - driver'license #
 - driver'licenses #
-- driver'licence #
-- driver'licences #
+- patente di guida #
+- patenti di guida #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driver'slic #
-- driver'slics #
+- calici del driver #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
+- licenza driv
+- licenze driv
+- licenza driv
 - driv licences
 - driver licen
 - drivers licen
-- driver's licen
+- licen del driver
 - driving lic
 - driving licen
-- driving licenses
+- licenze di guida
 - driving licence
 - driving licences
 - driving permit
@@ -7728,9 +7551,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - Δίπλωμα οδήγησης
 
 
-## <a name="greece-national-id-card"></a>Carta d'identità della Grecia
+## <a name="greece-national-id-card"></a>Carta d'identità nazionale della Grecia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Combinazione di 7-8 lettere e numeri, oltre a un trattino
 
@@ -7752,11 +7575,11 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_greece_id_card trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keyword_greece_id_card da un utente.
+- Viene trovata una parola chiave Keyword_greece_id_card'utente.
 
-Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_greece_id_card trova contenuto che corrisponde al modello.
 
 ```xml
@@ -7778,17 +7601,17 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 
 - greek id
 - greek national id
-- carta d'identità personale greca
-- greek police id
+- carta d'identità greco
+- id polizia greco
 - carta di identità
 - tautotita
 - ταυτότητα
 - ταυτότητας
 
 
-## <a name="greece-passport-number"></a>Grecia - numero di passaporto
+## <a name="greece-passport-number"></a>Numero di passaporto della Grecia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Due lettere seguite da sette cifre senza spazi o delimitatori
   
@@ -7802,12 +7625,12 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_greece_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_greece_eu_passport_number` . 
-- L'espressione regolare trova la data nel formato `Regex_greece_eu_passport_date` D MMM AA (esempio - 28 agosto 19) o viene trovata una parola chiave `Keywords_greece_eu_passport_date` da
+- L'espressione regolare trova la data nel formato `Regex_greece_eu_passport_date` DD MMM AA (esempio - 28 agosto 19) o viene trovata una parola chiave `Keywords_greece_eu_passport_date` da
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_greece_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_greece_eu_passport_number` . 
     
@@ -7842,7 +7665,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - passport #
 - passport #
 - passportid
-- passports
+- passaporti
 - passportno
 - passport no
 - passportnumber
@@ -7858,20 +7681,20 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 
 ## <a name="greece-social-security-number-amka"></a>Grecia - Numero di previdenza sociale (AMKA)
-Questo tipo di informazioni riservate è disponibile solo in:
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
-111 cifre senza spazi e delimitatori
+Undici cifre senza spazi e delimitatori
   
 ### <a name="pattern"></a>Modello
 
-- 6 cifre come data di nascita AAMMMMAD
+- 6 cifre come data di nascita AAMMDD
 - 4 cifre
 - una cifra di controllo
   
@@ -7881,11 +7704,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_greece_eu_ssn` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_greece_eu_ssn_or_equivalent` chiave da. 
+- Viene trovata una parola  `Keywords_greece_eu_ssn_or_equivalent` chiave from. 
     
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_greece_eu_ssn` trova contenuto che corrisponde al modello. 
 
 ```xml
@@ -7915,15 +7738,15 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - Αριθμού Μητρώου Κοινωνικής Ασφάλισης
 
 
-## <a name="greece-tax-identification-number"></a>Numero di identificazione fiscale grecia
-Questo tipo di informazioni riservate è disponibile solo in:
+## <a name="greece-tax-identification-number"></a>Numero di identificazione fiscale della Grecia
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Nove cifre senza spazi e delimitatori
   
@@ -7937,10 +7760,10 @@ Non applicabile
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
   
 - L'espressione  `Regex_greece_eu_tax_file_number` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_greece_eu_tax_file_number` chiave da. 
+- Viene trovata una parola  `Keywords_greece_eu_tax_file_number` chiave from. 
     
 ```xml
       <!-- Greek Tax Identification Number -->
@@ -7958,20 +7781,20 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 - afm #
 - afm
-- aφμ|aφμ αριθμός
-- aφμ
+- aμμ|aμμ αριθμός
+- aμμ
 - tax id
-- tax identification no
-- tax identification number
+- identificazione fiscale no
+- codice fiscale
 - tax no #
 - tax no
 - tax number
-- tax registration number
+- numero di registrazione fiscale
 - tax registry no
 - tax registry number
-- taxd #
-- taxdno #
-- taxdnumber #
+- rullato #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -7984,9 +7807,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - φορολογικού μητρώου νο
 
 
-## <a name="hong-kong-identity-card-hkid-number"></a>Numero di carta di identità (HKID) di Hong Kong
+## <a name="hong-kong-identity-card-hkid-number"></a>Numero della carta di identità (HKID) di Hong Kong
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Combinazione di 8-9 lettere e numeri. Facoltativamente, l’ultimo carattere può essere racchiuso tra parentesi
 
@@ -8003,12 +7826,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_hong_kong_id_card trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keyword_hong_kong_id_card da un utente.
+- Viene trovata una parola Keyword_hong_kong_id_card.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_hong_kong_id_card trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
@@ -8068,9 +7891,9 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - 香港特別行政區非永久性居民身分証
 
    
-## <a name="hungary-drivers-license-number"></a>Numero della patente di guida in Ungheria
+## <a name="hungary-drivers-license-number"></a>Numero di patente di guida ungherese
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Due lettere seguite da sei cifre
   
@@ -8087,7 +7910,7 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
   
 - L'espressione  `Regex_hungary_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_hungary_eu_driver's_license_number` . 
@@ -8118,8 +7941,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- patente di guida
+- patenti di guida
 - driverslic
 - driverslics
 - driverslicence
@@ -8131,21 +7954,21 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- driver licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
-- driver'licence
-- driver'licences
+- patente di guida
+- patenti di guida
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- patente di guida
+- licenze del driver
+- patente di guida
+- patenti di guida
 - driver'slic
-- driver'slics
+- calici del driver
 - driver'slicense
 - driver'slicenses
 - driver'slicence
@@ -8155,7 +7978,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- patenti di guida
 - dl #
 - dls #
 - driverlic #
@@ -8167,8 +7990,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lic #
 - driver lics #
 - driver license #
-- driver licenses #
-- driver licences #
+- licenze driver #
+- patenti di guida #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -8177,49 +8000,49 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
+- driver license #
 - driver licenses #
-- drivers licence #
-- drivers licences #
+- driver licence #
+- driver licences #
 - driver'lic #
 - driver'lics #
 - driver'license #
 - driver'licenses #
-- driver'licence #
-- driver'licences #
+- patente di guida #
+- patenti di guida #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driver'slic #
-- driver'slics #
+- calici del driver #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
+- licenza driv
+- licenze driv
+- licenza driv
 - driv licences
 - driver licen
 - drivers licen
-- driver's licen
+- licen del driver
 - driving lic
 - driving licen
-- driving licenses
+- licenze di guida
 - driving licence
 - driving licences
 - driving permit
@@ -8235,15 +8058,15 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - vezetői engedélyek
 
 
-## <a name="hungary-personal-identification-number"></a>Ungheria - numero di identificazione personale
-Questo tipo di informazioni riservate è disponibile solo in:
+## <a name="hungary-personal-identification-number"></a>Numero di identificazione personale ungherese
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 11 cifre
   
@@ -8251,9 +8074,9 @@ Questo tipo di informazioni riservate è disponibile solo in:
 
 11 cifre:
   
-- Una cifra che corrisponde al sesso (1-maschile, 2-femminile, altri numeri sono possibili anche per i cittadini nate prima del 1900 o i cittadini con doppia cittadinanza) 
-- Sei cifre che corrispondono alla data di nascita (AAMMMMD)
-- Tre cifre che corrispondono a un numero di serie
+- Una cifra che corrisponde al sesso (1-maschile, 2-femminile, altri numeri sono possibili anche per i cittadini nati prima del 1900 o i cittadini con doppia cittadinanza) 
+- Sei cifre che corrispondono alla data di nascita (AAMMDD)
+- Tre cifre che corrispondono a un numero seriale
 - Una cifra di controllo
     
 ### <a name="checksum"></a>Checksum
@@ -8262,12 +8085,12 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
   
 - La funzione  `Func_hungary_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_hungary_eu_national_id_card` chiave da. 
+- Viene trovata una parola  `Keywords_hungary_eu_national_id_card` chiave from. 
     
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
   
 - La funzione  `Func_hungary_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
@@ -8301,9 +8124,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - személyi igazolvány
 
 
-## <a name="hungary-passport-number"></a>Ungheria - numero di passaporto
+## <a name="hungary-passport-number"></a>Numero di passaporto ungherese
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Due lettere seguite da sei o sette cifre senza spazi o delimitatori
   
@@ -8317,12 +8140,12 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_hungary_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_hungary_eu_passport_number` . 
-- L'espressione regolare trova la data nel formato `Regex_hungary_eu_passport_date` D MMM/MMM AA (esempio - 01 MÁR/MAR 12) o viene trovata una parola chiave `Keywords_eu_passport_date` da
+- L'espressione regolare trova la data nel formato `Regex_hungary_eu_passport_date` DD MMM/MMM AA (esempio - 01 MÁR/MAR 12) o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_hungary_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_hungary_eu_passport_number` . 
     
@@ -8356,7 +8179,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - passport #
 - passport #
 - passportid
-- passports
+- passaporti
 - passportno
 - passport no
 - passportnumber
@@ -8376,9 +8199,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - data di scadenza
 
 
-## <a name="hungary-social-security-number-taj"></a>Ungheria - numero di previdenza sociale (TAJ)
+## <a name="hungary-social-security-number-taj"></a>Codice di previdenza sociale ungherese (TAJ)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Nove cifre senza spazi e delimitatori
   
@@ -8392,12 +8215,12 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
   
 - La funzione  `Func_hungary_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_hungary_eu_ssn_or_equivalent` chiave da. 
+- Viene trovata una parola  `Keywords_hungary_eu_ssn_or_equivalent` chiave from. 
     
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
   
 - La funzione  `Func_hungary_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
     
@@ -8437,15 +8260,15 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - magyar áfa szám
 
 
-## <a name="hungary-tax-identification-number"></a>Numero di identificazione fiscale ungheria
-Questo tipo di informazioni riservate è disponibile solo in:
+## <a name="hungary-tax-identification-number"></a>Numero di identificazione fiscale ungherese
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 10 cifre senza spazi o delimitatori
   
@@ -8463,12 +8286,12 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
   
 - La funzione  `Func_hungary_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_hungary_eu_tax_file_number` chiave da. 
+- Viene trovata una parola  `Keywords_hungary_eu_tax_file_number` chiave from. 
     
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
   
 - La funzione  `Func_hungary_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
@@ -8496,37 +8319,37 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - adóazonosító szám
 - adóhatóság szám
 - adószám
-- ungherese
+- ungherese stagno
 - hungatiantin #
 - tax authority no
 - tax id
-- tax identification no
-- tax identification number
+- identificazione fiscale no
+- codice fiscale
 - tax no #
 - tax no
 - tax number
-- tax registration number
-- taxd #
-- taxdno #
-- taxdnumber #
+- numero di registrazione fiscale
+- rullato #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - tin id
 - tin no
 - tin #
-- numero di partita IVA
+- partita IVA
 
 
 ## <a name="hungary-value-added-tax-number"></a>Numero di imposta sul valore aggiunto dell'Ungheria
-Questo tipo di informazioni riservate è disponibile solo in:
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Motivo alfanumerico a 10 caratteri
 
@@ -8544,12 +8367,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 
 - La funzione Func_hungarian_value_added_tax_number trova contenuto che corrisponde al modello.
 - Viene trovata una parola Keywords_hungarian_value_added_tax_number da un utente.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 
 - La funzione Func_hungarian_value_added_tax_number trova contenuto che corrisponde al modello.
 
@@ -8576,16 +8399,16 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - vatno #
 - hungarianvatno #
 - tax no.
-- imposte sul valore aggiunto
+- imposta sul valore aggiunto áfa
 - közösségi adószám
 - általános forgalmi adó szám
 - hozzáadottérték adó
 - áfa szám
 
 
-## <a name="india-permanent-account-number-pan"></a>India - numero di account permanente (PAN)
+## <a name="india-permanent-account-number-pan"></a>India - Numero di account permanente (PAN)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 10 lettere o cifre
 
@@ -8604,11 +8427,11 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_india_permanent_account_number trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keyword_india_permanent_account_number da un utente.
+- Viene trovata una parola Keyword_india_permanent_account_number.
 
-Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_india_permanent_account_number trova contenuto che corrisponde al modello.
 
 
@@ -8634,9 +8457,9 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - Permanent Account Number 
 - PAN 
    
-## <a name="india-unique-identification-aadhaar-number"></a>India - numero di identificazione univoco (Aadhaar)
+## <a name="india-unique-identification-aadhaar-number"></a>India - Numero di identificazione univoca (Aadhaar)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 12 cifre contenenti spazi o trattini facoltativi 
 
@@ -8656,12 +8479,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_india_aadhaar trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keyword_india_aadhar di codice.
+- Viene trovata una parola Keyword_india_aadhar da un utente.
 - Il checksum ha esito positivo.
 - 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 
 - La funzione Func_india_aadhaar trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
@@ -8688,9 +8511,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - आधार
 - uidai
    
-## <a name="indonesia-identity-card-ktp-number"></a>Indonesia - numero di carta di identità (KTP)
+## <a name="indonesia-identity-card-ktp-number"></a>Numero della carta di identità indonesiana (KTP)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 16 cifre contenenti punti facoltativi 
 
@@ -8702,7 +8525,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - Codice città o area a due cifre  
 - Codice sotto-distretto a due cifre  
 - Un punto (facoltativo)  
-- Sei cifre nel formato MMAAA, ovvero la data di nascita 
+- Sei cifre nel formato DDMMYY, ovvero la data di nascita 
 - Un punto (facoltativo)  
 - Quattro cifre
 
@@ -8712,7 +8535,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 
 - L'espressione regolare Regex_indonesia_id_card trova contenuto che corrisponde al modello.
 - Viene trovata una parola Keyword_indonesia_id_card da un utente.
@@ -8736,7 +8559,7 @@ Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di infor
    
 ## <a name="international-banking-account-number-iban"></a>Numero di conto bancario internazionale (IBAN)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Codice paese (due lettere) più cifre di controllo (due cifre) più numero bban (fino a 30 caratteri)
 
@@ -8749,9 +8572,9 @@ Il modello deve includere tutti gli elementi seguenti:
 - 1-7 gruppi di quattro lettere o cifre (possono essere separati da spazi)
 - 1-3 lettere o cifre
 
-Il formato di ogni paese è leggermente diverso. Il tipo di informazioni riservate IBAN riguarda questi 60 paesi:
+Il formato per ogni paese è leggermente diverso. Il tipo di informazioni riservate IBAN riguarda questi 60 paesi:
 
-ad, ae, al, at, az, ba, be, bg, bh, ch, cr, cy, cz, de, dk, do, ee, es, fi, fo, fr, gb, ge, gi, gl, gr, hr, hu, ie, il, is, it, kw, kz, lb, li, lt, lu, lv, mc, md, me, mk, mr, mt, mu, nl, no, pl, pt, ro, rs, sa, se, si, sk, sm, tn, tr, vg
+ad, ae, al, at, az, ba, be, bg, bh, ch, cr, cy, cz, de, dk, do, ee, es, fi, fo, fr, gb, ge, gi, gl, gr, hr, hu, ie, il, is, it, kw, kz, lb, li, lt, lu, lv, mc, md, me, mk, mr, mt, mu, nl, no, pl, pt, ro, rs, sa, se, si, sk, sm, tn, tn, tr, vg
 
 ### <a name="checksum"></a>Checksum
 
@@ -8759,7 +8582,7 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 
 - La funzione Func_iban restituisce contenuti che corrispondono al modello.
 - Il checksum ha esito positivo.
@@ -8774,12 +8597,12 @@ Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di infor
 
 ### <a name="keywords"></a>Parole chiave
 
-None
+Nessuno
 
    
-## <a name="international-classification-of-diseases-icd-10-cm"></a>Classificazione internazionale delle malattia (ICD-10-CM)
+## <a name="international-classification-of-diseases-icd-10-cm"></a>Classificazione internazionale delle malattie (ICD-10-CM)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Dizionario
 
@@ -8793,12 +8616,12 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- Viene trovata una parola Dictionary_icd_10_updated da un utente.
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- Viene trovata una parola Dictionary_icd_10_updated parola chiave.
 - Viene trovata una parola Dictionary_icd_10_codes da un utente.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- Viene trovata una parola chiave Dictionary_icd_10_ aggiornata.
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- Viene trovata una parola Dictionary_icd_10_ viene aggiornata.
 
 ```xml
       <!-- ICD-10 CM -->
@@ -8815,13 +8638,13 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 ### <a name="keywords"></a>Parole chiave
 
-Qualsiasi termine del dizionario di parole Dictionary_icd_10_updated, che si basa sulla classificazione internazionale di malattia, decima revisione, modifica clinicha [(ICD-10-CM).](https://go.microsoft.com/fwlink/?linkid=852604) Questo tipo cerca solo il termine e non i codici di assicurazione.
+Qualsiasi termine del dizionario Dictionary_icd_10_updated parole chiave, basato sulla classificazione internazionale delle malattie, decima revisione, modifica clinica [(ICD-10-CM).](https://go.microsoft.com/fwlink/?linkid=852604) Questo tipo cerca solo il termine e non i codici di assicurazione.
 
-Qualsiasi termine del dizionario di parole Dictionary_icd_10_codes, che si basa sulla classificazione internazionale di malattia, decima revisione, modifica clinicha [(ICD-10-CM).](https://go.microsoft.com/fwlink/?linkid=852604) Questo tipo cerca solo i codici di assicurazione e non la descrizione.
+Qualsiasi termine del dizionario Dictionary_icd_10_codes parole chiave, basato sulla classificazione internazionale delle malattie, decima revisione, modifica clinica [(ICD-10-CM).](https://go.microsoft.com/fwlink/?linkid=852604) Questo tipo cerca solo i codici di assicurazione, non la descrizione.
 
-## <a name="international-classification-of-diseases-icd-9-cm"></a>Classificazione internazionale delle malattia (ICD-9-CM)
+## <a name="international-classification-of-diseases-icd-9-cm"></a>Classificazione internazionale delle malattie (ICD-9-CM)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Dizionario
 
@@ -8835,11 +8658,11 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - Viene trovata una parola Dictionary_icd_9_updated da un utente.
-- Viene trovata una parola Dictionary_icd_9_codes da un utente.
+- Viene trovata una parola Dictionary_icd_9_codes.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - Viene trovata una parola Dictionary_icd_9_updated da un utente.
 
 ```xml
@@ -8856,13 +8679,13 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 ### <a name="keywords"></a>Parole chiave
 
-Qualsiasi termine del dizionario di parole Dictionary_icd_9_updated, che si basa sulla classificazione internazionale di malattia, nona revisione, modifica clinicha [(ICD-9-CM).](https://go.microsoft.com/fwlink/?linkid=852605) Questo tipo cerca solo il termine e non i codici di assicurazione.
+Qualsiasi termine del dizionario Dictionary_icd_9_updated parole chiave, basato sulla classificazione internazionale delle malattie, nona revisione, modifica clinica [(ICD-9-CM).](https://go.microsoft.com/fwlink/?linkid=852605) Questo tipo cerca solo il termine e non i codici di assicurazione.
 
-Qualsiasi termine del dizionario di parole Dictionary_icd_9_codes, che si basa sulla classificazione internazionale di malattia, nona revisione, modifica clinicha [(ICD-9-CM).](https://go.microsoft.com/fwlink/?linkid=852605) Questo tipo cerca solo i codici di assicurazione e non la descrizione.
+Qualsiasi termine del dizionario Dictionary_icd_9_codes parole chiave, basato sulla classificazione internazionale delle malattie, nona revisione, modifica clinica [(ICD-9-CM).](https://go.microsoft.com/fwlink/?linkid=852605) Questo tipo cerca solo i codici di assicurazione, non la descrizione.
 
 ## <a name="ip-address"></a>Indirizzo IP
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 #### <a name="ipv4"></a>IPv4:
 Modello complesso che rappresenta le versioni formattate (punti) e non formattate (senza punti) degli indirizzi IPv4
@@ -8878,15 +8701,15 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Per IPv6, un criterio DLP ha alta probabilità di aver rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+Per IPv6, un criterio DLP ha una probabilità elevata di aver rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_ipv6_address restituisce contenuti che corrispondono al modello.
 - Non vengono trovate parole chiave da Keyword_ipaddress.
 
-Nel caso di IPv4, un criterio DLP rileva questo tipo di informazioni con una probabilità del 95%, entro 300 caratteri, se:
+Per IPv4, un criterio DLP ha una probabilità elevata di aver rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_ipv4_address restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_ipaddress.
 
-Nel caso di IPv6, un criterio DLP rileva questo tipo di informazioni con una probabilità del 95%, entro 300 caratteri, se:
+Per IPv6, un criterio DLP ha una probabilità elevata di aver rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_ipv6_address restituisce contenuti che corrispondono al modello.
 - Non vengono trovate parole chiave da Keyword_ipaddress.
 
@@ -8924,9 +8747,9 @@ Nel caso di IPv6, un criterio DLP rileva questo tipo di informazioni con una pro
 - internet protocol
 - IP-כתובת ה 
 
-## <a name="ireland-drivers-license-number"></a>Irlanda - Numero della patente di guida
+## <a name="ireland-drivers-license-number"></a>Numero di patente di guida in Irlanda
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Sei cifre seguite da quattro lettere
   
@@ -8943,7 +8766,7 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
   
 - L'espressione  `Regex_ireland_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_ireland_eu_driver's_license_number` . 
@@ -8975,8 +8798,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- patente di guida
+- patenti di guida
 - driverslic
 - driverslics
 - driverslicence
@@ -8988,21 +8811,21 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- driver licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
-- driver'licence
-- driver'licences
+- patente di guida
+- patenti di guida
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- patente di guida
+- licenze del driver
+- patente di guida
+- patenti di guida
 - driver'slic
-- driver'slics
+- calici del driver
 - driver'slicense
 - driver'slicenses
 - driver'slicence
@@ -9012,7 +8835,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- patenti di guida
 - dl #
 - dls #
 - driverlic #
@@ -9024,8 +8847,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lic #
 - driver lics #
 - driver license #
-- driver licenses #
-- driver licences #
+- licenze driver #
+- patenti di guida #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -9034,49 +8857,49 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
+- driver license #
 - driver licenses #
-- drivers licence #
-- drivers licences #
+- driver licence #
+- driver licences #
 - driver'lic #
 - driver'lics #
 - driver'license #
 - driver'licenses #
-- driver'licence #
-- driver'licences #
+- patente di guida #
+- patenti di guida #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driver'slic #
-- driver'slics #
+- calici del driver #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
+- licenza driv
+- licenze driv
+- licenza driv
 - driv licences
 - driver licen
 - drivers licen
-- driver's licen
+- licen del driver
 - driving lic
 - driving licen
-- driving licenses
+- licenze di guida
 - driving licence
 - driving licences
 - driving permit
@@ -9090,9 +8913,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - ceadúnas tiomána
 - ceadúnais tiomána
 
-## <a name="ireland-passport-number"></a>Irlanda - numero di passaporto
+## <a name="ireland-passport-number"></a>Numero di passaporto dell'Irlanda
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Due lettere o cifre seguite da sette cifre senza spazi o delimitatori
   
@@ -9109,12 +8932,12 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_ireland_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_ireland_eu_passport_number` . 
-- L'espressione regolare trova la data nel formato `Regex_ireland_eu_passport_date` D MMM/MMM AAAA (esempio - 01 BEA/MAGGIO 1988) o viene trovata una parola chiave da `Keywords_eu_passport_date`
+- L'espressione regolare trova la data nel formato `Regex_ireland_eu_passport_date` DD MMM/MMM AAAA (esempio - 01 BEA/MAGGIO 1988) o viene trovata una parola chiave da `Keywords_eu_passport_date`
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_ireland_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_ireland_eu_passport_number` .
     
@@ -9149,7 +8972,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - passport #
 - passport #
 - passportid
-- passports
+- passaporti
 - passportno
 - passport no
 - passportnumber
@@ -9173,9 +8996,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - data di scadenza
 
 
-## <a name="ireland-personal-public-service-pps-number"></a>Irlanda - Numero di servizio pubblico personale (PPS)
+## <a name="ireland-personal-public-service-pps-number"></a>Numero del servizio pubblico personale (PPS) dell'Irlanda
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Formato precedente (fino al 31 dicembre 2012):
 - sette cifre seguite da 1-2 lettere 
@@ -9192,7 +9015,7 @@ Formato precedente (fino al 31 dicembre 2012):
 Nuovo formato (1 gennaio 2013 e dopo):
 - sette cifre 
 - una lettera (senza distinzione tra maiuscole e minuscole) che è una cifra di controllo alfabetica 
-- Una lettera facoltativa nell'intervallo A-I o "W"
+- Lettera facoltativa nell'intervallo A-I o "W"
 
 ### <a name="checksum"></a>Checksum
 
@@ -9200,12 +9023,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_ireland_pps trova contenuto che corrisponde al modello.
 - Viene trovata una parola Keywords_ireland_eu_national_id_card da un utente.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_ireland_pps trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
@@ -9226,7 +9049,7 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 
 #### <a name="keywords_ireland_eu_national_id_card"></a>Keywords_ireland_eu_national_id_card
 
-- client identity service
+- servizio identità client
 - identification number
 - personal id number
 - numero di servizio pubblico personale
@@ -9253,15 +9076,15 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - uimhir aitheantais phearsanta
 - uimhir phearsanta seirbhíse poiblí
 - tax id
-- tax identification no
-- tax identification number
+- identificazione fiscale no
+- codice fiscale
 - tax no #
 - tax no
 - tax number
-- tax registration number
-- taxd #
-- taxdno #
-- taxdnumber #
+- numero di registrazione fiscale
+- rullato #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -9270,9 +9093,9 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - tin #
 
 
-## <a name="israel-bank-account-number"></a>Israele - numero di conto corrente bancario
+## <a name="israel-bank-account-number"></a>Numero di conto corrente bancario Israele
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 13 cifre
 
@@ -9294,7 +9117,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_israel_bank_account_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_israel_bank_account_number.
 
@@ -9319,9 +9142,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - Account Number 
 - מספר חשבון בנק 
    
-## <a name="israel-national-identification-number"></a>Israel national identification number
+## <a name="israel-national-identification-number"></a>Numero di identificazione nazionale Israele
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 nove cifre
 
@@ -9335,7 +9158,7 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_israeli_national_id_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_Israel_National_ID.
 - Il checksum ha esito positivo.
@@ -9369,16 +9192,16 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 -   identity no        
 -   identitynumber #
 -   identity number
--   israelidentitynumber       
+-   israeliidentitynumber       
 -   id personale
 -   id univoco  
 
    
-## <a name="italy-drivers-license-number"></a>Italia - Numero della patente di guida
+## <a name="italy-drivers-license-number"></a>Numero di patente di guida italiana
 
-Questa entità del tipo di informazioni riservate è inclusa nel tipo di informazioni riservate numero di patente di guida dell'Unione Europea ed è disponibile come entità autonoma del tipo di informazioni riservate.
+Questa entità tipo di informazioni riservate è inclusa nel tipo di informazioni riservate Numero di patente dell'UE ed è disponibile come entità di tipo di informazioni riservate autonomo.
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 una combinazione di 10 lettere e cifre
 
@@ -9386,7 +9209,7 @@ una combinazione di 10 lettere e cifre
 
 una combinazione di 10 lettere e cifre:
 - una lettera (senza distinzione tra maiuscole e minuscole) 
-- lettera "A" o "V" (senza distinzione tra maiuscole e minuscole) 
+- la lettera "A" o "V" (senza distinzione tra maiuscole e minuscole) 
 - sette cifre
 - una lettera (senza distinzione tra maiuscole e minuscole)
 
@@ -9396,7 +9219,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione `Regex_italy_drivers_license_number` regolare trova contenuto che corrisponde al modello.
 - Viene trovata una `Keywords_eu_driver's_license_number` parola chiave da o `Keyword_italy_drivers_license_number` .
 
@@ -9427,8 +9250,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- patente di guida
+- patenti di guida
 - driverslic
 - driverslics
 - driverslicence
@@ -9440,21 +9263,21 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- driver licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
-- driver'licence
-- driver'licences
+- patente di guida
+- patenti di guida
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- patente di guida
+- licenze del driver
+- patente di guida
+- patenti di guida
 - driver'slic
-- driver'slics
+- calici del driver
 - driver'slicense
 - driver'slicenses
 - driver'slicence
@@ -9464,7 +9287,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- patenti di guida
 - dl #
 - dls #
 - driverlic #
@@ -9476,8 +9299,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lic #
 - driver lics #
 - driver license #
-- driver licenses #
-- driver licences #
+- licenze driver #
+- patenti di guida #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -9486,49 +9309,49 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
+- driver license #
 - driver licenses #
-- drivers licence #
-- drivers licences #
+- driver licence #
+- driver licences #
 - driver'lic #
 - driver'lics #
 - driver'license #
 - driver'licenses #
-- driver'licence #
-- driver'licences #
+- patente di guida #
+- patenti di guida #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driver'slic #
-- driver'slics #
+- calici del driver #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
+- licenza driv
+- licenze driv
+- licenza driv
 - driv licences
 - driver licen
 - drivers licen
-- driver's licen
+- licen del driver
 - driving lic
 - driving licen
-- driving licenses
+- licenze di guida
 - driving licence
 - driving licences
 - driving permit
@@ -9538,24 +9361,24 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 #### <a name="keyword_italy_drivers_license_number"></a>Keyword_italy_drivers_license_number
 
-- numero di patente
+- numero di brevetto
 - patente di guida 
 - patente guida
 - patenti di guida
 - patenti guida
 
 
-## <a name="italy-fiscal-code"></a>Codice fiscale Italia
-Questo tipo di informazioni riservate è disponibile solo in:
+## <a name="italy-fiscal-code"></a>Codice fiscale italiano
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
-Una combinazione di 16 caratteri di lettere e cifre nel modello specificato
+una combinazione di 16 caratteri di lettere e cifre nel modello specificato
   
 ### <a name="pattern"></a>Modello
 
@@ -9563,9 +9386,9 @@ Una combinazione di 16 caratteri di lettere e cifre:
 - tre lettere che corrispondono alle prime tre consonanti nel nome della famiglia
 - tre lettere che corrispondono alla prima, alla terza e alla quarta consonanti nel nome
 - due cifre che corrispondono alle ultime cifre dell'anno di nascita
-- una lettera che corrisponde alla lettera del mese di nascita; le lettere vengono utilizzate in ordine alfabetico, ma vengono utilizzate solo le lettere da A a E, H, L, M, P, R a T (quindi gennaio è A e ottobre è R)
-- due cifre che corrispondono al giorno del mese di nascita; per distinguere i sessi, vengono aggiunte 40 al giorno di nascita delle figlie
-- quattro cifre che corrispondono all'area geografica specifica del paese di nascita della persona (i codici di paese vengono utilizzati per paesi esterni)
+- una lettera che corrisponde alla lettera del mese di nascita: le lettere vengono utilizzate in ordine alfabetico, ma vengono utilizzate solo le lettere da A a E, H, L, M, P, R a T (quindi, gennaio è A e ottobre è R)
+- due cifre che corrispondono al giorno del mese di nascita: per distinguere i sessi, vengono aggiunti 40 al giorno di nascita per le donne
+- quattro cifre che corrispondono al codice di area specifico del comune in cui è nata la persona (i codici a livello nazionale vengono utilizzati per i paesi esterni)
 - una cifra di parità
     
 ### <a name="checksum"></a>Checksum
@@ -9574,11 +9397,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_italy_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_italy_eu_national_id_card` chiave da. 
+- Viene trovata una parola  `Keywords_italy_eu_national_id_card` chiave from. 
     
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_italy_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -9612,18 +9435,18 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - codice ID personale
 - personal id number
 - personalcodeno #
-- tax code
+- codice fiscale
 - tax id
-- tax identification no
-- tax identification number
+- identificazione fiscale no
+- codice fiscale
 - tax identity number
 - tax no #
 - tax no
 - tax number
-- tax registration number
-- taxd #
-- taxdno #
-- taxdnumber #
+- numero di registrazione fiscale
+- rullato #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -9632,9 +9455,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - tin #
 
 
-## <a name="italy-passport-number"></a>Italia - Numero di passaporto
+## <a name="italy-passport-number"></a>Numero di passaporto italiano
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 due lettere o cifre seguite da sette cifre senza spazi o delimitatori
   
@@ -9651,12 +9474,12 @@ non applicabile
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_italy_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_italy_eu_passport_number` . 
-- L'espressione regolare trova la data nel formato `Regex_italy_eu_passport_date` D MMM/MMM AAAA (esempio - 01 GEN/GEN 1988) o viene trovata una parola chiave `Keywords_eu_passport_date` da
+- L'espressione regolare trova la data nel formato `Regex_italy_eu_passport_date` DD MMM/MMM AAAA (esempio - 01 GEN/JAN 1988) o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_italy_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_italy_eu_passport_number` . 
     
@@ -9691,7 +9514,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - passport #
 - passport #
 - passportid
-- passports
+- passaporti
 - passportno
 - passport no
 - passportnumber
@@ -9715,15 +9538,15 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - data di scadenza
 
 
-## <a name="italy-value-added-tax-number"></a>Italia - numero di imposta sul valore aggiunto
-Questo tipo di informazioni riservate è disponibile solo in:
+## <a name="italy-value-added-tax-number"></a>Numero di imposta sul valore aggiunto dell'Italia
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Motivo alfanumerico a 13 caratteri con delimitatori facoltativi
 
@@ -9742,11 +9565,11 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_italy_value_added_tax_number trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keywords_italy_value_added_tax_number da un utente.
+- Viene trovata una parola Keywords_italy_value_added_tax_number dall'utente.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_italy_value_added_tax_number trova contenuto che corrisponde al modello.
 
 ```xml
@@ -9766,16 +9589,16 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 #### <a name="keyword_italy_value_added_tax_number"></a>Keyword_italy_value_added_tax_number
 
-- numero di partita IVA
+- partita IVA
 - vat no
 - vat #
 - iva
 - iva #
 
 
-## <a name="japan-bank-account-number"></a>Giappone - numero di conto corrente bancario
+## <a name="japan-bank-account-number"></a>Numero di conto corrente bancario giappone
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 sette o otto cifre
 
@@ -9783,7 +9606,7 @@ sette o otto cifre
 
 numero di conto corrente bancario:
 - sette o otto cifre
-- codice di succursale del conto corrente bancario:
+- codice filiale del conto corrente bancario:
 - quattro cifre 
 - uno spazio o un trattino (facoltativo) 
 - tre cifre
@@ -9794,14 +9617,14 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_jp_bank_account restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_jp_bank_account.
 - Si verifica una delle situazioni seguenti:
 - La funzione Func_jp_bank_account_branch_code restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_jp_bank_branch_code.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_jp_bank_account restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_jp_bank_account.
 
@@ -9876,9 +9699,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - 支店コード
 - 店番号
 
-## <a name="japan-drivers-license-number"></a>Giappone - Numero della patente di guida
+## <a name="japan-drivers-license-number"></a>Numero di patente di guida giapponese
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 12 cifre
 
@@ -9892,7 +9715,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_jp_drivers_license_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_jp_drivers_license_number.
 
@@ -9947,15 +9770,15 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - 免許 #
 
 
-## <a name="japan-my-number---corporate"></a>Giappone - Corporate
-Questo tipo di informazioni riservate è disponibile solo in:
+## <a name="japan-my-number---corporate"></a>Giappone Il mio numero - Corporate
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Numero a 13 cifre
 
@@ -9972,11 +9795,11 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_japanese_my_number_corporate trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keywords_japanese_my_number_corporate da un utente.
+- Viene trovata una parola Keywords_japanese_my_number_corporate.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_japanese_my_number_corporate trova contenuto che corrisponde al modello.
 
 ```xml
@@ -9996,7 +9819,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 #### <a name="keyword_japan_my_number_corporate"></a>Keyword_japan_my_number_corporate
 
-- corporate number
+- numero aziendale
 - マイナンバー
 - 共通番号
 - マイナンバーカード
@@ -10008,15 +9831,15 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - 指定通知書
 
 
-## <a name="japan-my-number---personal"></a>Giappone - Personale
-Questo tipo di informazioni riservate è disponibile solo in:
+## <a name="japan-my-number---personal"></a>Giappone Il mio numero - Personale
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Numero a 12 cifre
 
@@ -10036,11 +9859,11 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_japanese_my_number_personal trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keywords_japanese_my_number_personal da un utente.
+- Viene trovata una parola Keywords_japanese_my_number_personal.
 
-Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_japanese_my_number_personal trova contenuto che corrisponde al modello.
 
 ```xml
@@ -10060,7 +9883,7 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 
 #### <a name="keyword_japan_my_number_personal"></a>Keyword_japan_my_number_personal
 
-- my number
+- il mio numero
 - マイナンバー
 - 個人番号
 - 共通番号
@@ -10072,9 +9895,9 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - 通知カード
 
    
-## <a name="japan-passport-number"></a>Giappone - numero di passaporto
+## <a name="japan-passport-number"></a>Numero di passaporto giappone
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 due lettere seguite da sette cifre
 
@@ -10088,7 +9911,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_jp_passport restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_jp_passport.
 
@@ -10122,9 +9945,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - 旅券ナンバー
 
 
-## <a name="japan-residence-card-number"></a>Giappone - numero di carta di residenza
+## <a name="japan-residence-card-number"></a>Numero di carta di residenza giappone
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 12 lettere e cifre
 
@@ -10141,7 +9964,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_jp_residence_card_number trova contenuto che corrisponde al modello.
 - Viene trovata una parola Keyword_jp_residence_card_number da un utente.
 
@@ -10159,16 +9982,16 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 #### <a name="keyword_jp_residence_card_number"></a>Keyword_jp_residence_card_number
 
-- Numero di carta di residenza
+- Numero della carta di residenza
 - Carta di residenza no
 - Carta di residenza #
 - 在留カード番号
 - 在留カード
 - 在留番号
 
-## <a name="japan-resident-registration-number"></a>Giappone - Numero di registrazione residente
+## <a name="japan-resident-registration-number"></a>Numero di registrazione residente in Giappone
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 11 cifre
 
@@ -10182,7 +10005,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_jp_resident_registration_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_jp_resident_registration_number.
 
@@ -10212,9 +10035,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - 外国人登録証
 
    
-## <a name="japan-social-insurance-number-sin"></a>Giappone - numero di previdenza sociale (SIN)
+## <a name="japan-social-insurance-number-sin"></a>Giappone - Numero di previdenza sociale (SIN)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 7-12 cifre
 
@@ -10232,11 +10055,11 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_jp_sin restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_jp_sin.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_jp_sin_pre_1997 restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_jp_sin.
 
@@ -10278,9 +10101,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - 厚生年金被保険者整理番号
 
 
-## <a name="latvia-drivers-license-number"></a>Numero della patente lettone
+## <a name="latvia-drivers-license-number"></a>Numero di patente lettone
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 tre lettere seguite da sei cifre
   
@@ -10297,7 +10120,7 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_latvia_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_latvia_eu_driver's_license_number` . 
     
@@ -10328,8 +10151,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- patente di guida
+- patenti di guida
 - driverslic
 - driverslics
 - driverslicence
@@ -10341,21 +10164,21 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- driver licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
-- driver'licence
-- driver'licences
+- patente di guida
+- patenti di guida
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- patente di guida
+- licenze del driver
+- patente di guida
+- patenti di guida
 - driver'slic
-- driver'slics
+- calici del driver
 - driver'slicense
 - driver'slicenses
 - driver'slicence
@@ -10365,7 +10188,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- patenti di guida
 - dl #
 - dls #
 - driverlic #
@@ -10377,8 +10200,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lic #
 - driver lics #
 - driver license #
-- driver licenses #
-- driver licences #
+- licenze driver #
+- patenti di guida #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -10387,49 +10210,49 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
+- driver license #
 - driver licenses #
-- drivers licence #
-- drivers licences #
+- driver licence #
+- driver licences #
 - driver'lic #
 - driver'lics #
 - driver'license #
 - driver'licenses #
-- driver'licence #
-- driver'licences #
+- patente di guida #
+- patenti di guida #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driver'slic #
-- driver'slics #
+- calici del driver #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
+- licenza driv
+- licenze driv
+- licenza driv
 - driv licences
 - driver licen
 - drivers licen
-- driver's licen
+- licen del driver
 - driving lic
 - driving licen
-- driving licenses
+- licenze di guida
 - driving licence
 - driving licences
 - driving permit
@@ -10444,9 +10267,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - autovadītāja apliecības
 - vadītāja apliecība
 
-## <a name="latvia-personal-code"></a>Codice personale Lettonia
+## <a name="latvia-personal-code"></a>Codice personale Lettone
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 11 cifre e un trattino facoltativo
   
@@ -10458,7 +10281,7 @@ Formato precedente
   
 - sei cifre che corrispondono alla data di nascita (DDMMYY) 
 - un trattino
-- una cifra che corrisponde al secolo di nascita ("0" per il 19° secolo, "1" per il 20° e "2" per il 21° secolo)
+- una cifra che corrisponde al secolo di nascita ("0" per il 19° secolo, "1" per il 20° secolo e "2" per il 21° secolo)
 - quattro cifre generate in modo casuale
 
 Nuovo formato
@@ -10474,12 +10297,12 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- La funzione  `Func_latvia_eu_national_id_card` o il regex `Regex_latvia_eu_national_id_card_new_format` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_latvia_eu_national_id_card` chiave da. 
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione  `Func_latvia_eu_national_id_card` o l'espressione regolare `Regex_latvia_eu_national_id_card_new_format` trova contenuto che corrisponde al modello. 
+- Viene trovata una parola  `Keywords_latvia_eu_national_id_card` chiave from. 
     
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- La funzione  `Func_latvia_eu_national_id_card` o il regex `Regex_latvia_eu_national_id_card_new_format` trova contenuto che corrisponde al modello. 
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- La funzione  `Func_latvia_eu_national_id_card` o l'espressione regolare `Regex_latvia_eu_national_id_card_new_format` trova contenuto che corrisponde al modello. 
     
 ```xml
       <!-- Latvia Personal Code -->
@@ -10519,10 +10342,10 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - numero di nascita
 - citizen number
 - numero civile
-- numero di censimento elettronico
+- numero censimento elettronico
 - numero elettronico
 - codice fiscale
-- healthcare user number
+- numero utente sanitario
 - id #
 - id-code
 - identification number
@@ -10545,12 +10368,12 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - personal id number
 - codice di identificazione personale
 - identificatore personale
-- personal identity number
+- numero di identità personale
 - numero personale
 - codice numerico personale
 - personalcodeno #
 - personas kods
-- population identification code
+- codice di identificazione della popolazione
 - numero di servizio pubblico
 - registration number
 - revenue number
@@ -10559,14 +10382,14 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - codice fiscale dello stato
 - tax file number
 - tax id
-- tax identification no
-- tax identification number
+- identificazione fiscale no
+- codice fiscale
 - tax no #
 - tax no
 - tax number
-- taxd #
-- taxdno #
-- taxdnumber #
+- rullato #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -10577,7 +10400,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 ## <a name="latvia-passport-number"></a>Numero di passaporto lettone
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 due lettere o cifre seguite da sette cifre senza spazi o delimitatori
   
@@ -10594,12 +10417,12 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_latvia_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_latvia_eu_passport_number` . 
 - L'espressione `Regex_eu_passport_date1` regolare trova la data nel formato GG.MM.AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_latvia_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_latvia_eu_passport_number` . 
     
@@ -10634,7 +10457,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - passport #
 - passport #
 - passportid
-- passports
+- passaporti
 - passportno
 - passport no
 - passportnumber
@@ -10657,9 +10480,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - data di scadenza
 
 
-## <a name="lithuania-drivers-license-number"></a>Numero della patente di guida in Lituania
+## <a name="lithuania-drivers-license-number"></a>Numero di patente di guida lituania
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 otto cifre senza spazi e delimitatori
   
@@ -10673,7 +10496,7 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_lithuania_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_lithuania_eu_driver's_license_number` . 
     
@@ -10704,8 +10527,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- patente di guida
+- patenti di guida
 - driverslic
 - driverslics
 - driverslicence
@@ -10717,21 +10540,21 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- driver licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
-- driver'licence
-- driver'licences
+- patente di guida
+- patenti di guida
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- patente di guida
+- licenze del driver
+- patente di guida
+- patenti di guida
 - driver'slic
-- driver'slics
+- calici del driver
 - driver'slicense
 - driver'slicenses
 - driver'slicence
@@ -10741,7 +10564,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- patenti di guida
 - dl #
 - dls #
 - driverlic #
@@ -10753,8 +10576,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lic #
 - driver lics #
 - driver license #
-- driver licenses #
-- driver licences #
+- licenze driver #
+- patenti di guida #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -10763,49 +10586,49 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
+- driver license #
 - driver licenses #
-- drivers licence #
-- drivers licences #
+- driver licence #
+- driver licences #
 - driver'lic #
 - driver'lics #
 - driver'license #
 - driver'licenses #
-- driver'licence #
-- driver'licences #
+- patente di guida #
+- patenti di guida #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driver'slic #
-- driver'slics #
+- calici del driver #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
+- licenza driv
+- licenze driv
+- licenza driv
 - driv licences
 - driver licen
 - drivers licen
-- driver's licen
+- licen del driver
 - driving lic
 - driving licen
-- driving licenses
+- licenze di guida
 - driving licence
 - driving licences
 - driving permit
@@ -10821,14 +10644,14 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - vairuotojo pažymėjimo numeriai
 
 ## <a name="lithuania-personal-code"></a>Codice personale Lituania
-Questo tipo di informazioni riservate è disponibile solo in:
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 11 cifre senza spazi e delimitatori
   
@@ -10836,8 +10659,8 @@ Questo tipo di informazioni riservate è disponibile solo in:
 
 11 cifre senza spazi e delimitatori:
   
-- una cifra (1-6) che corrisponde al sesso e al secolo di nascita della persona
-- sei cifre che corrispondono alla data di nascita (AAMMMMD) 
+- una cifra (da 1 a 6) che corrisponde al sesso e al secolo di nascita della persona
+- sei cifre che corrispondono alla data di nascita (AAMMDD) 
 - tre cifre che corrispondono al numero seriale della data di nascita
 - una cifra di controllo
     
@@ -10847,11 +10670,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_lithuania_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_lithuania_eu_tax_file_number` chiave da. 
+- Viene trovata una parola  `Keywords_lithuania_eu_tax_file_number` chiave from. 
     
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_lithuania_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -10878,24 +10701,24 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - asmeninis skaitmeninis kodas
 - asmens kodas
 - citizen service number
-- mokesčiello id
-- mokesčife identifikavimas numeris
-- mokesčife identifikavimo numeris
-- mokesčiello numeris
+- mokesči sua id
+- mokesči? identifikavimas numeris
+- mokesči? identifikavimo numeris
+- mokesči? numeris
 - national identification number
 - codice personale
 - codice numerico personale
 - piliečio paslaugos numeris
 - tax id
-- tax identification no
-- tax identification number
+- identificazione fiscale no
+- codice fiscale
 - tax no #
 - tax no
 - tax number
-- tax registration number
-- taxd #
-- taxdno #
-- taxdnumber #
+- numero di registrazione fiscale
+- rullato #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -10910,7 +10733,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 ## <a name="lithuania-passport-number"></a>Numero di passaporto lituania
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 otto cifre o lettere senza spazi o delimitatori
   
@@ -10924,12 +10747,12 @@ non applicabile
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_lithuania_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_lithuania_eu_passport_number` . 
 - L'espressione `Regex_eu_passport_date3` regolare trova la data nel formato GG MM AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_lithuania_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_lithuania_eu_passport_number` . 
     
@@ -10964,7 +10787,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - passport #
 - passport #
 - passportid
-- passports
+- passaporti
 - passportno
 - passport no
 - passportnumber
@@ -10984,9 +10807,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - data di scadenza
 
 
-## <a name="luxemburg-drivers-license-number"></a>Numero della patente di guida di Lussemburgo
+## <a name="luxemburg-drivers-license-number"></a>Numero di patente di guida di Luxemburg
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 sei cifre senza spazi e delimitatori
   
@@ -11000,7 +10823,7 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_luxemburg_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_luxemburg_eu_driver's_license_number` . 
     
@@ -11031,8 +10854,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- patente di guida
+- patenti di guida
 - driverslic
 - driverslics
 - driverslicence
@@ -11044,21 +10867,21 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- driver licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
-- driver'licence
-- driver'licences
+- patente di guida
+- patenti di guida
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- patente di guida
+- licenze del driver
+- patente di guida
+- patenti di guida
 - driver'slic
-- driver'slics
+- calici del driver
 - driver'slicense
 - driver'slicenses
 - driver'slicence
@@ -11068,7 +10891,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- patenti di guida
 - dl #
 - dls #
 - driverlic #
@@ -11080,8 +10903,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lic #
 - driver lics #
 - driver license #
-- driver licenses #
-- driver licences #
+- licenze driver #
+- patenti di guida #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -11090,49 +10913,49 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
+- driver license #
 - driver licenses #
-- drivers licence #
-- drivers licences #
+- driver licence #
+- driver licences #
 - driver'lic #
 - driver'lics #
 - driver'license #
 - driver'licenses #
-- driver'licence #
-- driver'licences #
+- patente di guida #
+- patenti di guida #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driver'slic #
-- driver'slics #
+- calici del driver #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
+- licenza driv
+- licenze driv
+- licenza driv
 - driv licences
 - driver licen
 - drivers licen
-- driver's licen
+- licen del driver
 - driving lic
 - driving licen
-- driving licenses
+- licenze di guida
 - driving licence
 - driving licences
 - driving permit
@@ -11146,15 +10969,15 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - fahrerlaubnis
 - Führerschäin
 
-## <a name="luxemburg-national-identification-number-natural-persons"></a>Numero di identificazione nazionale (persone fisiche)
-Questo tipo di informazioni riservate è disponibile solo in:
+## <a name="luxemburg-national-identification-number-natural-persons"></a>Numero di identificazione nazionale di Lussemburgo (persone fisiche)
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 13 cifre senza spazi o delimitatori
   
@@ -11171,11 +10994,11 @@ sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_luxemburg_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_luxemburg_eu_national_id_card` chiave da. 
+- Viene trovata una parola  `Keywords_luxemburg_eu_national_id_card` chiave from. 
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_luxemburg_eu_tax_file_number` trova contenuto che corrisponde al modello. 
 
 
@@ -11206,7 +11029,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - id personnelle
 - idpersonnelle #
 - idpersonnelle
-- codice singolo
+- codice individuale
 - individual id
 - identificazione individuale
 - identità individuale
@@ -11221,9 +11044,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - identità univoca
 - uniqueidkey #
 
-## <a name="luxemburg-passport-number"></a>Numero di passaporto di Lussemburgo
+## <a name="luxemburg-passport-number"></a>Numero di passaporto di Luxemburg
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 otto cifre o lettere senza spazi o delimitatori
   
@@ -11237,12 +11060,12 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_luxemburg_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_luxemburg_eu_passport_number` . 
 - L'espressione `Regex_eu_passport_date3` regolare trova la data nel formato GG MM AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_luxemburg_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_luxemburg_eu_passport_number` . 
     
@@ -11277,7 +11100,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - passport #
 - passport #
 - passportid
-- passports
+- passaporti
 - passportno
 - passport no
 - passportnumber
@@ -11287,9 +11110,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 #### <a name="keywords_luxemburg_eu_passport_number"></a>Keywords_luxemburg_eu_passport_number
 - ausweisnummer
-- passaggio lussemburgo
+- luxembourg pass
 - luxembourg passeport
-- passaporto lussemburgo
+- passaporto lussemburghese
 - no de passeport
 - no-reisepass
 - nr-reisepass
@@ -11308,9 +11131,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - data di scadenza
 
 
-## <a name="luxemburg-national-identification-number-non-natural-persons"></a>Numero di identificazione nazionale di Lussemburgo (persone non fisiche)
+## <a name="luxemburg-national-identification-number-non-natural-persons"></a>Numero di identificazione nazionale di Luxemburg (persone non naturali)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 11 cifre
   
@@ -11333,11 +11156,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_luxemburg_eu_tax_file_number_non_natural` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_luxemburg_eu_tax_file_number` chiave da. 
+- Viene trovata una parola  `Keywords_luxemburg_eu_tax_file_number` chiave from. 
     
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_luxemburg_eu_tax_file_number_non_natural` trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -11380,15 +11203,15 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - steueridentifikationsnummer
 - steuernummer
 - tax id
-- tax identification no
-- tax identification number
+- identificazione fiscale no
+- codice fiscale
 - tax no #
 - tax no
 - tax number
-- tax registration number
-- taxd #
-- taxdno #
-- taxdnumber #
+- numero di registrazione fiscale
+- rullato #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -11400,18 +11223,18 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - zinnzahl
 
 
-## <a name="malaysia-identification-card-number"></a>Malaysia - Numero di carta di identità
+## <a name="malaysia-identification-card-number"></a>Numero di carta di identità malese
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 12 cifre contenenti lineette facoltative
 
 ### <a name="pattern"></a>Modello
 
 12 cifre:
-- sei cifre nel formato AAMMMMD, ovvero la data di nascita 
+- sei cifre nel formato AAMMDD, ovvero la data di nascita 
 - un trattino (facoltativo) 
-- codice luogo di nascita a due lettere 
+- Codice luogo di nascita a due lettere 
 - un trattino (facoltativo) 
 - tre cifre casuali 
 - codice di genere a una cifra
@@ -11422,9 +11245,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- L'espressione Regex_malaysia_id_card_number trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keyword_malaysia_id_card_number da un utente.
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione regolare Regex_malaysia_id_card_number trova contenuto che corrisponde al modello.
+- Viene trovata una parola chiave da Keyword_malaysia_id_card_number.
 
 ```xml
 <!-- Malaysia ID Card Number -->
@@ -11447,7 +11270,7 @@ Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di infor
 - ic
 - ic no
 - id card
-- scheda di identificazione
+- carta di identificazione
 - carta di identità
 - k/p
 - k/p no
@@ -11464,11 +11287,11 @@ Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di infor
 - malaysia identity card
 - malaysian identity card
 - nric
-- scheda di identificazione personale
+- carta di identità personale
 
-## <a name="malta-drivers-license-number"></a>Numero della patente di guida di Malta
+## <a name="malta-drivers-license-number"></a>Numero di patente di guida di Malta
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Combinazione di due caratteri e sei cifre nel formato specificato
   
@@ -11488,7 +11311,7 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_malta_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_malta_eu_driver's_license_number` . 
     
@@ -11519,8 +11342,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- patente di guida
+- patenti di guida
 - driverslic
 - driverslics
 - driverslicence
@@ -11532,21 +11355,21 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- driver licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
-- driver'licence
-- driver'licences
+- patente di guida
+- patenti di guida
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- patente di guida
+- licenze del driver
+- patente di guida
+- patenti di guida
 - driver'slic
-- driver'slics
+- calici del driver
 - driver'slicense
 - driver'slicenses
 - driver'slicence
@@ -11556,7 +11379,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- patenti di guida
 - dl #
 - dls #
 - driverlic #
@@ -11568,8 +11391,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lic #
 - driver lics #
 - driver license #
-- driver licenses #
-- driver licences #
+- licenze driver #
+- patenti di guida #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -11578,49 +11401,49 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
+- driver license #
 - driver licenses #
-- drivers licence #
-- drivers licences #
+- driver licence #
+- driver licences #
 - driver'lic #
 - driver'lics #
 - driver'license #
 - driver'licenses #
-- driver'licence #
-- driver'licences #
+- patente di guida #
+- patenti di guida #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driver'slic #
-- driver'slics #
+- calici del driver #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
+- licenza driv
+- licenze driv
+- licenza driv
 - driv licences
 - driver licen
 - drivers licen
-- driver's licen
+- licen del driver
 - driving lic
 - driving licen
-- driving licenses
+- licenze di guida
 - driving licence
 - driving licences
 - driving permit
@@ -11635,15 +11458,15 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - liċenzji tas-sewwieq
 
 
-## <a name="malta-identity-card-number"></a>Numero di carta di identità di Malta
-Questo tipo di informazioni riservate è disponibile solo in:
+## <a name="malta-identity-card-number"></a>Numero di carta d'identità di Malta
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 sette cifre seguite da una lettera
   
@@ -11660,11 +11483,11 @@ Non applicabile
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_malta_eu_national_id_card` regolare trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_malta_eu_national_id_card` chiave da. 
+- Viene trovata una parola  `Keywords_malta_eu_national_id_card` chiave from. 
     
-Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_malta_eu_national_id_card` regolare trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -11702,7 +11525,7 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 
 ## <a name="malta-passport-number"></a>Numero di passaporto di Malta
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 sette cifre senza spazi o delimitatori
   
@@ -11716,12 +11539,12 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_malta_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_malta_eu_passport_number` . 
 - Viene trovata una parola `Keywords_eu_passport_date` chiave da
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_malta_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_malta_eu_passport_number` . 
     
@@ -11753,7 +11576,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - passport #
 - passport #
 - passportid
-- passports
+- passaporti
 - passportno
 - passport no
 - passportnumber
@@ -11775,10 +11598,10 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 ## <a name="malta-tax-identification-number"></a>Numero di identificazione fiscale di Malta
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Per i cittadini maltesi:
-- sette cifre e una lettera nel formato specificato
+- sette cifre e una lettera nello schema specificato
   
 Nazionali non maltesi ed entità maltesi:
 - nove cifre
@@ -11800,12 +11623,12 @@ Non applicabile
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- Il regex  `Regex_malta_eu_tax_file_number`  o trova contenuto che corrisponde al `Regex_malta_eu_tax_file_number_non_maltese_national` modello. 
-- Viene trovata una parola  `Keywords_malta_eu_tax_file_number` chiave da. 
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_malta_eu_tax_file_number`  regolare o trova contenuto che corrisponde al `Regex_malta_eu_tax_file_number_non_maltese_national` modello. 
+- Viene trovata una parola  `Keywords_malta_eu_tax_file_number` chiave from. 
     
-Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- Il regex  `Regex_malta_eu_tax_file_number` o trova contenuto che corrisponde al `Regex_malta_eu_tax_file_number_non_maltese_national` modello. 
+Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione  `Regex_malta_eu_tax_file_number` regolare o trova contenuto che corrisponde al `Regex_malta_eu_tax_file_number_non_maltese_national` modello. 
     
 ```xml
       <!-- Malta Tax ID Number -->
@@ -11843,15 +11666,15 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - numru tat-taxxa
 - codice numerico personale
 - tax id
-- tax identification no
-- tax identification number
+- identificazione fiscale no
+- codice fiscale
 - tax no #
 - tax no
 - tax number
-- tax registration number
-- taxd #
-- taxdno #
-- taxdnumber #
+- numero di registrazione fiscale
+- rullato #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -11862,9 +11685,9 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - numero di identità univoco
 - uniqueidentityno #
 
-## <a name="netherlands-citizens-service-bsn-number"></a>Paesi Bassi - numero di servizio cittadino (BSN)
+## <a name="netherlands-citizens-service-bsn-number"></a>Numero BSN (Netherlands citizen's service)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 otto o nove cifre contenenti spazi facoltativi
 
@@ -11883,9 +11706,9 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_netherlands_bsn trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keyword_netherlands_bsn da un utente.
+- Viene trovata una parola Keyword_netherlands_bsn.
 - Il checksum ha esito positivo.
 
 ```xml
@@ -11906,7 +11729,7 @@ Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di infor
 - bsn
 - hamburgerservicenummer
 - citizen service number
-- person number
+- numero di persona
 - numero personale
 - codice numerico personale
 - numero correlato alla persona
@@ -11924,9 +11747,9 @@ Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di infor
 - numero di identità univoco
 - uniqueidentityno #
 
-## <a name="netherlands-drivers-license-number"></a>Paesi Bassi - Numero della patente di guida
+## <a name="netherlands-drivers-license-number"></a>Numero di patente olandese
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 dieci cifre senza spazi e delimitatori
   
@@ -11940,7 +11763,7 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_netherlands_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_netherlands_eu_driver's_license_number` . 
     
@@ -11971,8 +11794,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- patente di guida
+- patenti di guida
 - driverslic
 - driverslics
 - driverslicence
@@ -11984,21 +11807,21 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- driver licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
-- driver'licence
-- driver'licences
+- patente di guida
+- patenti di guida
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- patente di guida
+- licenze del driver
+- patente di guida
+- patenti di guida
 - driver'slic
-- driver'slics
+- calici del driver
 - driver'slicense
 - driver'slicenses
 - driver'slicence
@@ -12008,7 +11831,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- patenti di guida
 - dl #
 - dls #
 - driverlic #
@@ -12020,8 +11843,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lic #
 - driver lics #
 - driver license #
-- driver licenses #
-- driver licences #
+- licenze driver #
+- patenti di guida #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -12030,49 +11853,49 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
+- driver license #
 - driver licenses #
-- drivers licence #
-- drivers licences #
+- driver licence #
+- driver licences #
 - driver'lic #
 - driver'lics #
 - driver'license #
 - driver'licenses #
-- driver'licence #
-- driver'licences #
+- patente di guida #
+- patenti di guida #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driver'slic #
-- driver'slics #
+- calici del driver #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
+- licenza driv
+- licenze driv
+- licenza driv
 - driv licences
 - driver licen
 - drivers licen
-- driver's licen
+- licen del driver
 - driving lic
 - driving licen
-- driving licenses
+- licenze di guida
 - driving licence
 - driving licences
 - driving permit
@@ -12091,9 +11914,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - rijbewijsnummers
 
 
-## <a name="netherlands-passport-number"></a>Numero di passaporto Paesi Bassi
+## <a name="netherlands-passport-number"></a>Numero di passaporto olandese
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 nove lettere o cifre senza spazi o delimitatori
   
@@ -12107,12 +11930,12 @@ non applicabile
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_netherlands_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_netherlands_eu_passport_number` . 
-- L'espressione regolare trova la data nel formato `Regex_netherlands_eu_passport_date` D MMM/MMM AAAA (esempio - 26 MAA/MAR 2012)
+- L'espressione regolare trova la data nel formato `Regex_netherlands_eu_passport_date` DD MMM/MMM AAAA (esempio - 26 MAA/MAR 2012)
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_netherlands_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_netherlands_eu_passport_number` . 
     
@@ -12144,7 +11967,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - passport #
 - passport #
 - passportid
-- passports
+- passaporti
 - passportno
 - passport no
 - passportnumber
@@ -12160,14 +11983,14 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - paspoort nr
 
 ## <a name="netherlands-tax-identification-number"></a>Numero di identificazione fiscale Paesi Bassi
-Questo tipo di informazioni riservate è disponibile solo in:
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 nove cifre senza spazi o delimitatori
   
@@ -12181,11 +12004,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_netherlands_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_netherlands_eu_tax_file_number` chiave da. 
+- Viene trovata una parola  `Keywords_netherlands_eu_tax_file_number` chiave from. 
     
-Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_netherlands_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -12206,12 +12029,12 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 #### <a name="keywords_netherlands_eu_tax_file_number"></a>Keywords_netherlands_eu_tax_file_number
 
 - btw nummer
-- hollânske tax identification
+- Identificazione fiscale hollânske
 - hulandes impuesto id number
 - hulandes impuesto identification
 - identificatienummer belasting
 - identificatienummer van belasting
-- impuesto identification number
+- numero di identificazione impuesto
 - impuesto number
 - nederland belasting id nummer
 - nederland belasting identificatie
@@ -12219,21 +12042,21 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - nederland belastingnummer
 - nederlande belasting identificatie
 - identificazione fiscale paesi Bassi
-- Identificazione fiscale di Netherland
+- identificazione fiscale di netherland
 - netherlands tin
-- stagno di Netherland
+- stagno di netherland
 - tax id
-- tax identification no
-- tax identification number
-- tax identification tal
+- identificazione fiscale no
+- codice fiscale
+- identificazione fiscale tal
 - tax no #
 - tax no
 - tax number
-- tax registration number
+- numero di registrazione fiscale
 - tax tal
-- taxd #
-- taxdno #
-- taxdnumber #
+- rullato #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -12243,24 +12066,24 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 
 
 ## <a name="netherlands-value-added-tax-number"></a>Numero di imposta sul valore aggiunto dei Paesi Bassi
-Questo tipo di informazioni riservate è disponibile solo in:
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Motivo alfanumerico a 14 caratteri
 
 ### <a name="pattern"></a>Modello
 
-Motivo alfanumerico di 14 caratteri:
+Motivo alfanumerico a 14 caratteri:
 
 - N o n
 - L o l
-- Spazio facoltativo, punto o trattino
+- spazio facoltativo, punto o trattino
 - nove cifre
 - spazio facoltativo, punto o trattino
 - B o b
@@ -12272,11 +12095,11 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_netherlands_value_added_tax_number trova contenuto che corrisponde al modello.
 - Viene trovata una parola Keywords_netherlands_value_added_tax_number da un utente.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_netherlands_value_added_tax_number trova contenuto che corrisponde al modello.
 
 ```xml
@@ -12296,7 +12119,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 #### <a name="keyword_netherlands_value_added_tax_number"></a>Keyword_netherlands_value_added_tax_number
 
-- numero di partita IVA
+- partita IVA
 - vat no
 - vat #
 - wearde tafoege tax getal
@@ -12304,21 +12127,21 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - btw-nummer
 
 
-## <a name="new-zealand-bank-account-number"></a>Numero di conto corrente della Nuova Zelanda
-Questo tipo di informazioni riservate è disponibile solo in:
+## <a name="new-zealand-bank-account-number"></a>Numero di conto corrente bancario della Nuova Zelanda
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Formato da 14 a 16 cifre con delimitatore facoltativo
 
 ### <a name="pattern"></a>Modello
 
-Formato da 14 a 16 cifre con delimitatore facoltativo:
+Motivo da 14 a 16 cifre con delimitatore facoltativo:
 
 - due cifre
 - un trattino o uno spazio facoltativo
@@ -12335,11 +12158,11 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_new_zealand_bank_account_number trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keywords_new_zealand_bank_account_number da un utente.
+- Viene trovata una parola Keywords_new_zealand_bank_account_number.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_new_zealand_bank_account_number trova contenuto che corrisponde al modello.
 
 ```xml
@@ -12366,15 +12189,15 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - bank_acct_nbr
 
 
-## <a name="new-zealand-drivers-license-number"></a>Numero della patente di guida in Nuova Zelanda
-Questo tipo di informazioni riservate è disponibile solo in:
+## <a name="new-zealand-drivers-license-number"></a>Numero di patente di guida neozelandese
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 schema alfanumerico a otto caratteri
 
@@ -12391,11 +12214,11 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_newzealand_driver_license_number trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keywords_newzealand_driver_license_number di codice.
+- Viene trovata una parola Keywords_newzealand_driver_license_number da un utente.
 
-Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_newzealand_driver_license_number trova contenuto che corrisponde al modello.
 
 ```xml
@@ -12418,63 +12241,63 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - driverlicence
 - driverlicences
 - driver lic
-- driver licence
-- driver licences
+- patente di guida
+- patenti di guida
 - driverslic
 - driverslicence
 - driverslicences
 - drivers lic
 - drivers lics
 - drivers licence
-- drivers licences
+- driver licences
 - driver'lic
 - driver'lics
-- driver'licence
-- driver'licences
+- patente di guida
+- patenti di guida
 - driver' lic
 - driver' lics
-- driver' licence
-- driver' licences
+- patente di guida
+- patenti di guida
 - driver'slic
-- driver'slics
+- calici del driver
 - driver'slicence
 - driver'slicences
 - driver's lic
 - driver's lics
 - driver's licence
-- driver's licences
+- patenti di guida
 - driverlic #
 - driverlics #
 - driverlicence #
 - driverlicences #
 - driver lic #
 - driver lics #
-- driver licence #
-- driver licences #
+- patente di guida #
+- patenti di guida #
 - driverslic #
 - driverslics #
 - driverslicence #
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers licence #
-- drivers licences #
+- driver licence #
+- driver licences #
 - driver'lic #
 - driver'lics #
-- driver'licence #
-- driver'licences #
+- patente di guida #
+- patenti di guida #
 - driver' lic #
 - driver' lics #
-- driver' licence #
-- driver' licences #
+- patente di guida #
+- patenti di guida #
 - driver'slic #
-- driver'slics #
+- calici del driver #
 - driver'slicence #
 - driver'slicences #
 - driver's lic #
 - driver's lics #
-- driver's licence #
-- driver's licences #
+- patente di guida #
+- patenti di guida #
 - international driving permit
 - international driving permits
 - nz automobile association
@@ -12482,14 +12305,14 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 
 
 ## <a name="new-zealand-inland-revenue-number"></a>New Zealand inland revenue number
-Questo tipo di informazioni riservate è disponibile solo in:
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 otto o nove cifre con delimitatori facoltativi
 
@@ -12509,11 +12332,11 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_new_zealand_inland_revenue_number trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keywords_new_zealand_inland_revenue_number da un utente.
+- Viene trovata una parola chiave Keywords_new_zealand_inland_revenue_number'utente.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_new_zealand_inland_revenue_number trova contenuto che corrisponde al modello.
 
 ```xml
@@ -12541,15 +12364,15 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - inland revenue number
 
 
-## <a name="new-zealand-ministry-of-health-number"></a>New Zealand ministry of health number
+## <a name="new-zealand-ministry-of-health-number"></a>Numero del ministero della sanità della Nuova Zelanda
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 tre lettere, uno spazio (facoltativo) e quattro cifre
 
 ### <a name="pattern"></a>Modello
 
-- tre lettere (senza distinzione tra maiuscole e minuscole) ad eccezione di "I" e "O"
+- tre lettere (senza distinzione tra maiuscole e minuscole) tranne "I" e "O"
 - uno spazio (facoltativo) 
 - quattro cifre
 
@@ -12559,12 +12382,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_new_zealand_ministry_of_health_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_nz_terms.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_new_zealand_ministry_of_health_number restituisce contenuti che corrispondono al modello.
 - Il checksum ha esito positivo.
 
@@ -12594,19 +12417,19 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - nhi no.
 - NHI #
 - National Health Index No.
-- National Health Index Id
-- National Health Index #
+- ID indice sanitario nazionale
+- Indice sanitario nazionale #
 
-## <a name="new-zealand-social-welfare-number"></a>New Zealand social assiste number
+## <a name="new-zealand-social-welfare-number"></a>Numero di previdenza sociale neozelandese
 
-Questo tipo di informazioni riservate è disponibile solo in:
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 nove cifre
 
@@ -12626,11 +12449,11 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_newzealand_social_welfare_number trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keywords_newzealand_social_welfare_number da un utente.
+- Viene trovata una parola chiave Keywords_newzealand_social_welfare_number'utente.
 
-Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_newzealand_social_welfare_number trova contenuto che corrisponde al modello.
 
 ```xml
@@ -12651,23 +12474,23 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 
 #### <a name="keyword_new_zealand_social_welfare_number"></a>Keyword_new_zealand_social_welfare_number
 
-- social social social #
-- social social social #
-- social social social social no.
-- social social number
+- social assistenzial #
+- social assistenzial #
+- social assistenziale No.
+- numero di previdenza sociale
 - swn #
 
    
-## <a name="norway-identification-number"></a>Norvegia - numero di identificazione
+## <a name="norway-identification-number"></a>Numero di identificazione norvegia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 11 cifre
 
 ### <a name="pattern"></a>Modello
 
 11 cifre:
-- sei cifre nel formato MMMMAA, ovvero la data di nascita 
+- sei cifre nel formato DDMMYY che rappresentano la data di nascita 
 - numero individuale a tre cifre 
 - due cifre di controllo
 
@@ -12677,12 +12500,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_norway_id_number trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keyword_norway_id_number di codice.
+- Viene trovata una parola Keyword_norway_id_number.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_norway_id_numbe trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
@@ -12712,9 +12535,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - Fødselsnummer
 
    
-## <a name="philippines-unified-multi-purpose-identification-number"></a>Numero di identificazione multi-scopo unificato delle Filippine
+## <a name="philippines-unified-multi-purpose-identification-number"></a>Numero di identificazione multivalore unificato delle Filippine
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 12 cifre separate da dei segni meno
 
@@ -12733,7 +12556,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_philippines_unified_id trova contenuto che corrisponde al modello.
 - Viene trovata una parola Keyword_philippines_id da un utente.
 
@@ -12756,9 +12579,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - Carta di identità 
 - Pinag-isang Multi-Layunin ID
 
-## <a name="poland-drivers-license-number"></a>Numero della patente di guida polonia
+## <a name="poland-drivers-license-number"></a>Numero di patente di guida polonia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 14 cifre contenenti due barre
   
@@ -12778,7 +12601,7 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_poland_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_poland_eu_driver's_license_number` . 
     
@@ -12809,8 +12632,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- patente di guida
+- patenti di guida
 - driverslic
 - driverslics
 - driverslicence
@@ -12822,21 +12645,21 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- driver licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
-- driver'licence
-- driver'licences
+- patente di guida
+- patenti di guida
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- patente di guida
+- licenze del driver
+- patente di guida
+- patenti di guida
 - driver'slic
-- driver'slics
+- calici del driver
 - driver'slicense
 - driver'slicenses
 - driver'slicence
@@ -12846,7 +12669,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- patenti di guida
 - dl #
 - dls #
 - driverlic #
@@ -12858,8 +12681,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lic #
 - driver lics #
 - driver license #
-- driver licenses #
-- driver licences #
+- licenze driver #
+- patenti di guida #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -12868,49 +12691,49 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
+- driver license #
 - driver licenses #
-- drivers licence #
-- drivers licences #
+- driver licence #
+- driver licences #
 - driver'lic #
 - driver'lics #
 - driver'license #
 - driver'licenses #
-- driver'licence #
-- driver'licences #
+- patente di guida #
+- patenti di guida #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driver'slic #
-- driver'slics #
+- calici del driver #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
+- licenza driv
+- licenze driv
+- licenza driv
 - driv licences
 - driver licen
 - drivers licen
-- driver's licen
+- licen del driver
 - driving lic
 - driving licen
-- driving licenses
+- licenze di guida
 - driving licence
 - driving licences
 - driving permit
@@ -12924,9 +12747,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - prawo jazdy
 - prawa jazdy
 
-## <a name="poland-identity-card"></a>Carta di identità Polonia
+## <a name="poland-identity-card"></a>Carta di identità polonia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 tre lettere e sei cifre
 
@@ -12940,7 +12763,7 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_polish_national_id restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_polish_national_id_passport_number.
 - Il checksum ha esito positivo.
@@ -12970,13 +12793,13 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
    
 ## <a name="poland-national-id-pesel"></a>ID nazionale Polonia (PESEL)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 11 cifre
 
 ### <a name="pattern"></a>Modello
 
-- sei cifre che rappresentano la data di nascita nel formato AAMMMMD
+- sei cifre che rappresentano la data di nascita nel formato AAMMDD
 - quattro cifre
 - una cifra di controllo
 
@@ -12986,12 +12809,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_pesel_identification_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_pesel_identification_number.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_pesel_identification_number restituisce contenuti che corrispondono al modello.
 - Il checksum ha esito positivo.
 
@@ -13023,10 +12846,10 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - tożsamości narodowej
 
    
-## <a name="poland-passport-number"></a>Numero di passaporto Polonia
-Questa entità del tipo di informazioni riservate è inclusa nel tipo di informazione sensibile Numero di passaporto UE. È disponibile come entità autonoma del tipo di informazioni riservate.
+## <a name="poland-passport-number"></a>Numero di passaporto polonia
+Questa entità tipo di informazioni riservate è inclusa nel tipo di informazioni riservate Numero di passaporto UE. È disponibile come entità di tipo di informazioni riservate autonomo.
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 due lettere e sette cifre
 
@@ -13040,18 +12863,18 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione `Func_polish_passport_number_v2` trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 - Viene trovata una `Keywords_eu_passport_number` parola chiave da o `Keyword_polish_national_passport_number` .
-- Viene trovata una parola `Keywords_eu_passport_date` chiave da.
+- Viene trovata una parola `Keywords_eu_passport_date` chiave from.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione `Func_polish_passport_number_v2` trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 - Viene trovata una `Keywords_eu_passport_number` parola chiave da o `Keyword_polish_national_passport_number` .
 
-Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione `Func_polish_passport_number_v2` trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
@@ -13086,7 +12909,7 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - passport #
 - passport #
 - passportid
-- passports
+- passaporti
 - passportno
 - passport no
 - passportnumber
@@ -13112,20 +12935,20 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 
 
 ## <a name="poland-regon-number"></a>Numero REGON Polonia
-Questo tipo di informazioni riservate è disponibile solo in:
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Numero a 9 o 14 cifre
 
 ### <a name="pattern"></a>Modello
 
-nove cifre o 14 cifre:
+numero a nove cifre o a 14 cifre:
 
 - nove cifre o 
 - nove cifre
@@ -13138,11 +12961,11 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_polish_regon_number trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keywords_polish_regon_number da un utente.
+- Viene trovata una parola chiave Keywords_polish_regon_number'utente.
 
-Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_polish_regon_number trova contenuto che corrisponde al modello.
 
 ```xml
@@ -13164,8 +12987,8 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - regon id
 - numero statistico
 - id statistico
-- statistico no
-- numero rigon
+- statistiche no
+- numero di rigon
 - regonid #
 - regonno #
 - id società
@@ -13178,14 +13001,14 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 
 
 ## <a name="poland-tax-identification-number"></a>Numero di identificazione fiscale polonia
-Questo tipo di informazioni riservate è disponibile solo in:
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 11 cifre senza spazi o delimitatori
   
@@ -13199,9 +13022,9 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_poland_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_poland_eu_tax_file_number` chiave da. 
+- Viene trovata una parola  `Keywords_poland_eu_tax_file_number` chiave from. 
     
   
 ```xml
@@ -13223,33 +13046,33 @@ Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di infor
 - numer identyfikacji podatkowej
 - numeridentyfikacjipodatkowej #
 - tax id
-- tax identification no
-- tax identification number
+- identificazione fiscale no
+- codice fiscale
 - tax no #
 - tax no
 - tax number
-- tax registration number
-- taxd #
-- taxdno #
-- taxdnumber #
+- numero di registrazione fiscale
+- rullato #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
 - tin id
 - tin no
 - tin #
-- partita IVA #
-- partita IVA
+- vat id #
+- vat id
 - vat no
-- numero di partita IVA
+- partita IVA
 - vatid #
 - vatid
 - vatno #
    
 
-## <a name="portugal-citizen-card-number"></a>Portogallo - numero di carta di cittadinanza
+## <a name="portugal-citizen-card-number"></a>Numero di carta di cittadinanza portoghese
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 otto cifre
 
@@ -13263,9 +13086,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_portugal_citizen_card trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keyword_portugal_citizen_card da un utente.
+- Viene trovata una parola chiave da Keyword_portugal_citizen_card.
 
 ```xml
 <!-- Portugal Citizen Card Number -->
@@ -13287,11 +13110,11 @@ Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di infor
 - numero documento
 - documento de identificação
 - id number
-- identification no
+- identificazione no
 - identification number
-- identity card no
+- carta di identità no
 - numero di carta di identità
-- national id card
+- carta d'identità nazionale
 - nic
 - número bi de portugal
 - número de identificação civil
@@ -13300,11 +13123,11 @@ Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di infor
 - portugal bi number
 
 
-## <a name="portugal-drivers-license-number"></a>Portogallo - Numero della patente di guida
+## <a name="portugal-drivers-license-number"></a>Numero di patente di guida portoghese
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
-due motivi - due lettere seguite da 5-8 cifre con caratteri speciali
+due modelli - due lettere seguite da 5-8 cifre con caratteri speciali
   
 ### <a name="pattern"></a>Modello
 
@@ -13329,7 +13152,7 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_portugal_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_portugal_eu_driver's_license_number` . 
     
@@ -13360,8 +13183,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- patente di guida
+- patenti di guida
 - driverslic
 - driverslics
 - driverslicence
@@ -13373,21 +13196,21 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- driver licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
-- driver'licence
-- driver'licences
+- patente di guida
+- patenti di guida
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- patente di guida
+- licenze del driver
+- patente di guida
+- patenti di guida
 - driver'slic
-- driver'slics
+- calici del driver
 - driver'slicense
 - driver'slicenses
 - driver'slicence
@@ -13397,7 +13220,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- patenti di guida
 - dl #
 - dls #
 - driverlic #
@@ -13409,8 +13232,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lic #
 - driver lics #
 - driver license #
-- driver licenses #
-- driver licences #
+- licenze driver #
+- patenti di guida #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -13419,49 +13242,49 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
+- driver license #
 - driver licenses #
-- drivers licence #
-- drivers licences #
+- driver licence #
+- driver licences #
 - driver'lic #
 - driver'lics #
 - driver'license #
 - driver'licenses #
-- driver'licence #
-- driver'licences #
+- patente di guida #
+- patenti di guida #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driver'slic #
-- driver'slics #
+- calici del driver #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
+- licenza driv
+- licenze driv
+- licenza driv
 - driv licences
 - driver licen
 - drivers licen
-- driver's licen
+- licen del driver
 - driving lic
 - driving licen
-- driving licenses
+- licenze di guida
 - driving licence
 - driving licences
 - driving permit
@@ -13483,9 +13306,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - Licença condução Portugal
 - carta de condução
 
-## <a name="portugal-passport-number"></a>Portogallo - numero di passaporto
+## <a name="portugal-passport-number"></a>Numero di passaporto portoghese
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 una lettera seguita da sei cifre senza spazi o delimitatori
   
@@ -13502,12 +13325,12 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_portugal_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_portugal_eu_passport_number` . 
 - L'espressione `Regex_eu_passport_date1` regolare trova la data nel formato GG.MM.AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_portugal_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_portugal_eu_passport_number` .
     
@@ -13542,7 +13365,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - passport #
 - passport #
 - passportid
-- passports
+- passaporti
 - passportno
 - passport no
 - passportnumber
@@ -13559,7 +13382,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - passaporte nº
 - passeport nº
 - números de passaporte
-- passport portoghese
+- passaporti portoghesi
 - número passaporte
 - números passaporte
 
@@ -13569,9 +13392,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - data di scadenza
 
 
-## <a name="portugal-tax-identification-number"></a>Portogallo - numero di identificazione fiscale
+## <a name="portugal-tax-identification-number"></a>Numero di identificazione fiscale del Portogallo
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 nove cifre con spazi facoltativi
   
@@ -13589,11 +13412,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_portugal_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_portugal_eu_tax_file_number` chiave da. 
+- Viene trovata una parola  `Keywords_portugal_eu_tax_file_number` chiave from. 
     
-Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_portugal_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -13620,15 +13443,15 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - número de identificação fisca
 - numero fiscale
 - tax id
-- tax identification no
-- tax identification number
+- identificazione fiscale no
+- codice fiscale
 - tax no #
 - tax no
 - tax number
-- tax registration number
-- taxd #
-- taxdno #
-- taxdnumber #
+- numero di registrazione fiscale
+- rullato #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -13637,9 +13460,9 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - tin #
 
 
-## <a name="romania-drivers-license-number"></a>Numero della patente di guida in Romania
+## <a name="romania-drivers-license-number"></a>Numero di patente di guida romania
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 un carattere seguito da otto cifre
   
@@ -13655,7 +13478,7 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_romania_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_romania_eu_driver's_license_number` . 
     
@@ -13686,8 +13509,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- patente di guida
+- patenti di guida
 - driverslic
 - driverslics
 - driverslicence
@@ -13699,21 +13522,21 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- driver licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
-- driver'licence
-- driver'licences
+- patente di guida
+- patenti di guida
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- patente di guida
+- licenze del driver
+- patente di guida
+- patenti di guida
 - driver'slic
-- driver'slics
+- calici del driver
 - driver'slicense
 - driver'slicenses
 - driver'slicence
@@ -13723,7 +13546,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- patenti di guida
 - dl #
 - dls #
 - driverlic #
@@ -13735,8 +13558,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lic #
 - driver lics #
 - driver license #
-- driver licenses #
-- driver licences #
+- licenze driver #
+- patenti di guida #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -13745,49 +13568,49 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
+- driver license #
 - driver licenses #
-- drivers licence #
-- drivers licences #
+- driver licence #
+- driver licences #
 - driver'lic #
 - driver'lics #
 - driver'license #
 - driver'licenses #
-- driver'licence #
-- driver'licences #
+- patente di guida #
+- patenti di guida #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driver'slic #
-- driver'slics #
+- calici del driver #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
+- licenza driv
+- licenze driv
+- licenza driv
 - driv licences
 - driver licen
 - drivers licen
-- driver's licen
+- licen del driver
 - driving lic
 - driving licen
-- driving licenses
+- licenze di guida
 - driving licence
 - driving licences
 - driving permit
@@ -13806,21 +13629,21 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - permis conducere
 
 ## <a name="romania-personal-numeric-code-cnp"></a>Codice numerico personale Romania (CNP)
-Questo tipo di informazioni riservate è disponibile solo in:
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 13 cifre senza spazi e delimitatori
   
 ### <a name="pattern"></a>Modello
 
 - una cifra da 1 a 9
-- sei cifre che rappresentano la data di nascita (AAMMMMD)
+- sei cifre che rappresentano la data di nascita (AAMMDD)
 - due cifre, che possono essere 01-52 o 99
 - quattro cifre
 
@@ -13830,11 +13653,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_romania_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_romania_eu_national_id_card` chiave da. 
+- Viene trovata una parola  `Keywords_romania_eu_national_id_card` chiave from. 
     
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_romania_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -13883,15 +13706,15 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - tax file no
 - tax file number
 - tax id
-- tax identification no
-- tax identification number
+- identificazione fiscale no
+- codice fiscale
 - tax no #
 - tax no
 - tax number
-- tax registration number
-- taxd #
-- taxdno #
-- taxdnumber #
+- numero di registrazione fiscale
+- rullato #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -13903,9 +13726,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - uniqueidentityno #
 - uniqueidentityno
 
-## <a name="romania-passport-number"></a>Numero di passaporto Romania
+## <a name="romania-passport-number"></a>Numero di passaporto romania
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 otto o nove cifre senza spazi e delimitatori
   
@@ -13919,12 +13742,12 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_romania_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_romania_eu_passport_number` . 
-- L'espressione regolare trova la data nel formato `Regex_romania_eu_passport_date` D MMM/MMM AA (esempio- 01 FEB/FEB 10) o viene trovata una parola chiave `Keywords_eu_passport_date` da
+- L'espressione regolare trova la data nel formato `Regex_romania_eu_passport_date` DD MMM/MMM AA (esempio- 01 FEB/FEB 10) o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_romania_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_romania_eu_passport_number` . 
     
@@ -13959,7 +13782,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - passport #
 - passport #
 - passportid
-- passports
+- passaporti
 - passportno
 - passport no
 - passportnumber
@@ -13977,15 +13800,15 @@ numărul paşaportului numarul pasaportului numerele paşaportului Paşaport nr
 - data di scadenza
 
 
-## <a name="russia-passport-number-domestic"></a>Russia - numero di passaporto nazionale
-Questo tipo di informazioni riservate è disponibile solo in:
+## <a name="russia-passport-number-domestic"></a>Russia - Numero di passaporto nazionale
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Numero a 10 cifre
 
@@ -14005,9 +13828,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione Regex_Russian_Passport_Number_Domestic trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keyword_Russian_Passport_Number da un utente.
+- Viene trovata una parola chiave da Keyword_Russian_Passport_Number.
 
 ```xml
       <!-- Russian Passport Number Domestic -->
@@ -14030,26 +13853,26 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - passportno #
 - passportnumber #
 - паспорт нет
-- паспорт id
+- сасоооо id
 - pоссийской паспорт
 - pусский номер паспорта
 - паспорт #
-- паспортid #
+- сасооорid #
 - номер паспорта
 - номерпаспорта #
 
 
-## <a name="russia-passport-number-international"></a>Russia - numero di passaporto internazionale
-Questo tipo di informazioni riservate è disponibile solo in:
+## <a name="russia-passport-number-international"></a>Russia numero di passaporto internazionale
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
-numero di nove cifre
+numero a nove cifre
 
 ### <a name="pattern"></a>Modello
 
@@ -14065,9 +13888,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione Regex_Russian_Passport_Number_International trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keyword_Russian_Passport_Number da un utente.
+- Viene trovata una parola chiave da Keyword_Russian_Passport_Number.
 
 ```xml
       <!-- Russian Passport Number International -->
@@ -14090,18 +13913,18 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - passportno #
 - passportnumber #
 - паспорт нет
-- паспорт id
+- сасоооо id
 - pоссийской паспорт
 - pусский номер паспорта
 - паспорт #
-- паспортid #
+- сасооорid #
 - номер паспорта
 - номерпаспорта #
 
 
 ## <a name="saudi-arabia-national-id"></a>Arabia Saudita - Identificativo nazionale
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 10 cifre
 
@@ -14115,7 +13938,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_saudi_arabia_national_id restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_saudi_arabia_national_id.
 
@@ -14143,14 +13966,14 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
    
 ## <a name="singapore-national-registration-identity-card-nric-number"></a>Numero NRIC (National Registration Identity Card) di Singapore
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 nove lettere e cifre
 
 ### <a name="pattern"></a>Modello
 
 - nove lettere e cifre:
-- lettera "F", "G", "S" o "T" (senza distinzione tra maiuscole e minuscole) 
+- la lettera "F", "G", "S" o "T" (senza distinzione tra maiuscole e minuscole) 
 - sette cifre 
 - una cifra di controllo alfabetica
 
@@ -14160,12 +13983,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_singapore_nric trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keyword_singapore_nric da un utente.
+- Viene trovata una parola chiave da Keyword_singapore_nric.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_singapore_nric trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
@@ -14195,9 +14018,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - 身份证 
 - 身份證 
 
-## <a name="slovakia-drivers-license-number"></a>Slovacchia - Numero della patente di guida
+## <a name="slovakia-drivers-license-number"></a>Numero di patente di guida slovacchia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 un carattere seguito da sette cifre
   
@@ -14214,7 +14037,7 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_slovakia_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_slovakia_eu_driver's_license_number` . 
     
@@ -14245,8 +14068,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- patente di guida
+- patenti di guida
 - driverslic
 - driverslics
 - driverslicence
@@ -14258,21 +14081,21 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- driver licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
-- driver'licence
-- driver'licences
+- patente di guida
+- patenti di guida
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- patente di guida
+- licenze del driver
+- patente di guida
+- patenti di guida
 - driver'slic
-- driver'slics
+- calici del driver
 - driver'slicense
 - driver'slicenses
 - driver'slicence
@@ -14282,7 +14105,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- patenti di guida
 - dl #
 - dls #
 - driverlic #
@@ -14294,8 +14117,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lic #
 - driver lics #
 - driver license #
-- driver licenses #
-- driver licences #
+- licenze driver #
+- patenti di guida #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -14304,49 +14127,49 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
+- driver license #
 - driver licenses #
-- drivers licence #
-- drivers licences #
+- driver licence #
+- driver licences #
 - driver'lic #
 - driver'lics #
 - driver'license #
 - driver'licenses #
-- driver'licence #
-- driver'licences #
+- patente di guida #
+- patenti di guida #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driver'slic #
-- driver'slics #
+- calici del driver #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
+- licenza driv
+- licenze driv
+- licenza driv
 - driv licences
 - driver licen
 - drivers licen
-- driver's licen
+- licen del driver
 - driving lic
 - driving licen
-- driving licenses
+- licenze di guida
 - driving licence
 - driving licences
 - driving permit
@@ -14362,15 +14185,15 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - vodičského preukazu
 - vodičských preukazov
 
-## <a name="slovakia-personal-number"></a>Slovacchia - numero personale
-Questo tipo di informazioni riservate è disponibile solo in:
+## <a name="slovakia-personal-number"></a>Numero personale Slovacchia
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 nove o dieci cifre contenenti barra rovesciata facoltativa
   
@@ -14387,11 +14210,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_slovakia_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_slovakia_eu_national_id_card` chiave da. 
+- Viene trovata una parola  `Keywords_slovakia_eu_national_id_card` chiave from. 
     
-Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_slovakia_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -14414,18 +14237,18 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 
 - azonosító szám
 - numero di nascita
-- číslo národnej identifikačnej sky
+- číslo národnej identifikačnej karty
 - číslo občianského preukazu
 - daňové číslo
 - id number
-- identification no
+- identificazione no
 - identification number
 - identifikačná karta č
 - identifikačné číslo
-- identity card no
+- carta di identità no
 - numero di carta di identità
 - národná identifikačná značka č
-- national number
+- numero nazionale
 - nationalnumber #
 - nemzeti személyazonosító igazolvány
 - personalidnumber #
@@ -14441,15 +14264,15 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - tax file no
 - tax file number
 - tax id
-- tax identification no
-- tax identification number
+- identificazione fiscale no
+- codice fiscale
 - tax no #
 - tax no
 - tax number
-- tax registration number
-- taxd #
-- taxdno #
-- taxdnumber #
+- numero di registrazione fiscale
+- rullato #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -14457,9 +14280,9 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - tin no
 - tin #
 
-## <a name="slovakia-passport-number"></a>Slovacchia - numero di passaporto
+## <a name="slovakia-passport-number"></a>Numero di passaporto slovacchia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 una cifra o una lettera seguita da sette cifre senza spazi o delimitatori
   
@@ -14473,12 +14296,12 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_slovakia_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_slovakia_eu_passport_number` . 
 - L'espressione `Regex_eu_passport_date1` regolare trova la data nel formato GG.MM.AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_slovakia_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_slovakia_eu_passport_number` . 
     
@@ -14513,7 +14336,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - passport #
 - passport #
 - passportid
-- passports
+- passaporti
 - passportno
 - passport no
 - passportnumber
@@ -14535,9 +14358,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - data di scadenza
 
 
-## <a name="slovenia-drivers-license-number"></a>Numero della patente di guida sloveno
+## <a name="slovenia-drivers-license-number"></a>Numero di patente di guida slovena
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 nove cifre senza spazi e delimitatori
   
@@ -14551,7 +14374,7 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_slovenia_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_slovenia_eu_driver's_license_number` . 
     
@@ -14582,8 +14405,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- patente di guida
+- patenti di guida
 - driverslic
 - driverslics
 - driverslicence
@@ -14595,21 +14418,21 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- driver licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
-- driver'licence
-- driver'licences
+- patente di guida
+- patenti di guida
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- patente di guida
+- licenze del driver
+- patente di guida
+- patenti di guida
 - driver'slic
-- driver'slics
+- calici del driver
 - driver'slicense
 - driver'slicenses
 - driver'slicence
@@ -14619,7 +14442,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- patenti di guida
 - dl #
 - dls #
 - driverlic #
@@ -14631,8 +14454,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lic #
 - driver lics #
 - driver license #
-- driver licenses #
-- driver licences #
+- licenze driver #
+- patenti di guida #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -14641,49 +14464,49 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
+- driver license #
 - driver licenses #
-- drivers licence #
-- drivers licences #
+- driver licence #
+- driver licences #
 - driver'lic #
 - driver'lics #
 - driver'license #
 - driver'licenses #
-- driver'licence #
-- driver'licences #
+- patente di guida #
+- patenti di guida #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driver'slic #
-- driver'slics #
+- calici del driver #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
+- licenza driv
+- licenze driv
+- licenza driv
 - driv licences
 - driver licen
 - drivers licen
-- driver's licen
+- licen del driver
 - driving lic
 - driving licen
-- driving licenses
+- licenze di guida
 - driving licence
 - driving licences
 - driving permit
@@ -14695,30 +14518,30 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 #### <a name="keywords_slovenia_eu_drivers_license_number"></a>Keywords_slovenia_eu_driver's_license_number
 
 - vozniško dovoljenje
-- vozniška številka licence
+- licenza vozniška številka
 - vozniških dovoljenj
 - številka vozniškega dovoljenja
 - številke vozniških dovoljenj
 
 ## <a name="slovenia-unique-master-citizen-number"></a>Slovenia Unique Master Citizen Number
-Questo tipo di informazioni riservate è disponibile solo in:
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 13 cifre senza spazi o delimitatori
   
 ### <a name="pattern"></a>Modello
 
-13 cifre nel formato specificato:
+13 cifre nel modello specificato:
   
 - sette cifre che corrispondono alla data di nascita (DDMMLLL), dove "LLL" corrisponde alle ultime tre cifre dell'anno di nascita 
 - due cifre che corrispondono all'area di nascita "50"
-- tre cifre che corrispondono a una combinazione di sesso e numero di serie per le persone nate nello stesso giorno (000-499 per il sesso maschile e 500-999 per la donna)
+- tre cifre che corrispondono a una combinazione di sesso e numero di serie per le persone nate nello stesso giorno (000-499 per gli uomini e 500-999 per le donne)
 - una cifra di controllo
     
 ### <a name="checksum"></a>Checksum
@@ -14727,11 +14550,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_slovenia_eu_national_id_card` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_slovenia_eu_national_id_card` chiave da. 
+- Viene trovata una parola  `Keywords_slovenia_eu_national_id_card` chiave from. 
     
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_slovenia_eu_national_id_card` trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -14772,14 +14595,14 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - numero cittadino univoco
 - numero ID univoco
 - numero di identità univoco
-- unique master citizen number
+- numero cittadino master univoco
 - numero di registrazione univoco
 - uniqueidentityno #
 - uniqueidentityno #
 
 ## <a name="slovenia-passport-number"></a>Numero di passaporto slovenia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 due lettere seguite da sette cifre senza spazi o delimitatori
   
@@ -14797,12 +14620,12 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_slovenia_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_slovenia_eu_passport_number` . 
 - L'espressione `Regex_eu_passport_date1` regolare trova la data nel formato GG.MM.AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_slovenia_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_slovenia_eu_passport_number` . 
     
@@ -14837,7 +14660,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - passport #
 - passport #
 - passportid
-- passports
+- passaporti
 - passportno
 - passport no
 - passportnumber
@@ -14860,15 +14683,15 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - data di scadenza
 
 
-## <a name="slovenia-tax-identification-number"></a>Numero di identificazione fiscale slovenia
-Questo tipo di informazioni riservate è disponibile solo in:
+## <a name="slovenia-tax-identification-number"></a>Numero di identificazione fiscale Slovenia
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 otto cifre senza spazi o delimitatori
   
@@ -14884,11 +14707,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_slovenia_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_slovenia_eu_tax_file_number` chiave da. 
+- Viene trovata una parola  `Keywords_slovenia_eu_tax_file_number` chiave from. 
     
-Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_slovenia_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -14914,15 +14737,15 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - tax file no
 - tax file number
 - tax id
-- tax identification no
-- tax identification number
+- identificazione fiscale no
+- codice fiscale
 - tax no #
 - tax no
 - tax number
-- tax registration number
-- taxd #
-- taxdno #
-- taxdnumber #
+- numero di registrazione fiscale
+- rullato #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -14931,16 +14754,16 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - tin #
 
 
-## <a name="south-africa-identification-number"></a>South Africa identification number
+## <a name="south-africa-identification-number"></a>Numero di identificazione sudafricano
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 13 cifre che possono contenere spazi
 
 ### <a name="pattern"></a>Modello
 
 13 cifre:
-- sei cifre nel formato AAMMMMD, ovvero la data di nascita 
+- sei cifre nel formato AAMMDD, ovvero la data di nascita 
 - quattro cifre 
 - indicatore di cittadinanza a una cifra 
 - la cifra "8" o "9" 
@@ -14952,7 +14775,7 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_south_africa_identification_number trova contenuto che corrisponde al modello.
 - Viene trovata una parola Keyword_south_africa_identification_number da un utente.
 - Il checksum ha esito positivo.
@@ -14977,18 +14800,18 @@ Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di infor
    
 ## <a name="south-korea-resident-registration-number"></a>South Korea resident registration number
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 13 cifre contenenti un segno meno
 
 ### <a name="pattern"></a>Modello
 
 13 cifre:
-- sei cifre nel formato AAMMMMD, ovvero la data di nascita 
+- sei cifre nel formato AAMMDD, ovvero la data di nascita 
 - un trattino 
 - una cifra determinata dal secolo e dal sesso 
-- Codice dell'area geografica di nascita a quattro cifre 
-- una cifra usata per distinguere le persone per le quali i numeri precedenti sono identici 
+- Codice paese di nascita a quattro cifre 
+- una cifra utilizzata per distinguere le persone per le quali i numeri precedenti sono identici 
 - una cifra di controllo.
 
 ### <a name="checksum"></a>Checksum
@@ -14997,12 +14820,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_south_korea_resident_number trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keyword_south_korea_resident_number da un utente.
+- Viene trovata una parola chiave Keyword_south_korea_resident_number'utente.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_south_korea_resident_number trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
@@ -15029,9 +14852,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - RRN 
 - 주민등록번호
 
-## <a name="spain-drivers-license-number"></a>Spagna - Numero della patente di guida
+## <a name="spain-drivers-license-number"></a>Numero di patente di guida in Spagna
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 otto cifre seguite da un carattere
   
@@ -15048,11 +14871,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_spain_eu_DL_and_NI_number_citizen` o trova contenuto che corrisponde al `Func_spain_eu_DL_and_NI_number_foreigner` modello. 
 - Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_spain_eu_driver's_license_number` . 
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_spain_eu_DL_and_NI_number_citizen` o trova contenuto che corrisponde al `Func_spain_eu_DL_and_NI_number_foreigner` modello. 
     
 ```xml
@@ -15095,8 +14918,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- patente di guida
+- patenti di guida
 - driverslic
 - driverslics
 - driverslicence
@@ -15108,21 +14931,21 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- driver licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
-- driver'licence
-- driver'licences
+- patente di guida
+- patenti di guida
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- patente di guida
+- licenze del driver
+- patente di guida
+- patenti di guida
 - driver'slic
-- driver'slics
+- calici del driver
 - driver'slicense
 - driver'slicenses
 - driver'slicence
@@ -15132,7 +14955,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- patenti di guida
 - dl #
 - dls #
 - driverlic #
@@ -15144,8 +14967,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lic #
 - driver lics #
 - driver license #
-- driver licenses #
-- driver licences #
+- licenze driver #
+- patenti di guida #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -15154,49 +14977,49 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
+- driver license #
 - driver licenses #
-- drivers licence #
-- drivers licences #
+- driver licence #
+- driver licences #
 - driver'lic #
 - driver'lics #
 - driver'license #
 - driver'licenses #
-- driver'licence #
-- driver'licences #
+- patente di guida #
+- patenti di guida #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driver'slic #
-- driver'slics #
+- calici del driver #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
+- licenza driv
+- licenze driv
+- licenza driv
 - driv licences
 - driver licen
 - drivers licen
-- driver's licen
+- licen del driver
 - driving lic
 - driving licen
-- driving licenses
+- licenze di guida
 - driving licence
 - driving licences
 - driving permit
@@ -15221,14 +15044,14 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - licencia manejo
 
 ## <a name="spain-dni"></a>Spagna DNI
-Questo tipo di informazioni riservate è disponibile solo in:
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 otto cifre seguite da un carattere
   
@@ -15246,11 +15069,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_spain_eu_DL_and_NI_number_citizen` o trova contenuto che corrisponde al `Func_spain_eu_DL_and_NI_number_foreigner` modello. 
-- Viene trovata una parola  `Keywords_spain_eu_national_id_card"` chiave da. 
+- Viene trovata una parola  `Keywords_spain_eu_national_id_card"` chiave from. 
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_spain_eu_DL_and_NI_number_citizen` o trova contenuto che corrisponde al `Func_spain_eu_DL_and_NI_number_foreigner` modello. 
 
     
@@ -15287,7 +15110,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - identidadúnico #
 - numero di assicurazione
 - national identification number
-- national identity
+- identità nazionale
 - nationalid #
 - nationalidno #
 - nie #
@@ -15295,20 +15118,20 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - nienúmero #
 - número de identificación
 - número nacional identidad
-- personal identification number
+- numero di identificazione personale
 - identità personale no
 - numero di identità univoco
 - uniqueid #
 
-## <a name="spain-passport-number"></a>Spagna - numero di passaporto
+## <a name="spain-passport-number"></a>Numero di passaporto spagnolo
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
-una combinazione di lettere e numeri di otto o nove caratteri senza spazi o delimitatori
+una combinazione di otto o nove caratteri di lettere e numeri senza spazi o delimitatori
   
 ### <a name="pattern"></a>Modello
 
-una combinazione di lettere e numeri di otto o nove caratteri:
+una combinazione di otto o nove caratteri di lettere e numeri:
   
 - due cifre o lettere 
 - una cifra o una lettera (facoltativo)
@@ -15320,12 +15143,12 @@ Non applicabile
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_spain_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_spain_eu_passport_number` . 
-- L'espressione regolare trova la data nel formato `Regex_spain_eu_passport_date` GG-MM-AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
+- L'espressione `Regex_spain_eu_passport_date` regolare trova la data nel formato GG-MM-AAAA o viene trovata una parola chiave `Keywords_eu_passport_date` da
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_spain_eu_passport_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_passport_number` parola chiave da o `Keywords_spain_eu_passport_number` .
     
@@ -15360,7 +15183,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - passport #
 - passport #
 - passportid
-- passports
+- passaporti
 - passportno
 - passport no
 - passportnumber
@@ -15389,10 +15212,10 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - data di scadenza
 
 
-## <a name="spain-social-security-number-ssn"></a>Spagna - numero di previdenza sociale (SSN)
+## <a name="spain-social-security-number-ssn"></a>Spagna - Numero di previdenza sociale (SSN)
 
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 11-12 cifre
 
@@ -15400,9 +15223,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 11-12 cifre:
 - due cifre 
-- una barra (facoltativa) 
+- una barra (facoltativo) 
 - da sette a otto cifre 
-- una barra (facoltativa) 
+- una barra (facoltativo) 
 - due cifre
 
 ### <a name="checksum"></a>Checksum
@@ -15411,12 +15234,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_spanish_social_security_number restituisce contenuti che corrispondono al modello.
 - Il checksum ha esito positivo.
-- - Viene trovata una parola  `Keywords_spain_eu_ssn_or_equivalent` chiave da. 
+- - Viene trovata una parola  `Keywords_spain_eu_ssn_or_equivalent` chiave from. 
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_spanish_social_security_number restituisce contenuti che corrispondono al modello.
 - Il checksum ha esito positivo.
 
@@ -15444,44 +15267,44 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - social security number
 - número de la seguridad social
 
-## <a name="spain-tax-identification-number"></a>Spagna - Numero di identificazione fiscale
-Questo tipo di informazioni riservate è disponibile solo in:
+## <a name="spain-tax-identification-number"></a>Numero di identificazione fiscale spagna
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
-sette o otto cifre e una o due lettere nel formato specificato
+sette o otto cifre e una o due lettere nel modello specificato
   
 ### <a name="pattern"></a>Modello
 
-Spagnolo natural persons with a Spain National Identity Card:
+Spagnolo Natural Persons with a Spain National Identity Card:
   
 - otto cifre 
 - una lettera maiuscola (maiuscole/minuscole) 
     
-Spagnoli non residenti senza carta di identità nazionale della Spagna
+Spagnoli non residenti senza carta di identità nazionale di Spagna
   
 - una lettera maiuscola "L" (maiuscole/minuscole)
 - sette cifre
 - una lettera maiuscola (maiuscole/minuscole) 
     
-Spagnoli residenti di età inferiore a 14 anni senza carta di identità nazionale della Spagna:
+Spagnoli residenti di età inferiore a 14 anni senza carta d'identità nazionale spagna:
   
 - una lettera maiuscola "K" (maiuscole/minuscole)
 - sette cifre 
 - una lettera maiuscola (maiuscole/minuscole)
     
-Avari con il numero di identificazione di un avariato
+Stranieri con numero di identificazione di uno straniero
   
 - una lettera maiuscola che è "X", "Y" o "Z" (maiuscole/minuscole) 
 - sette cifre
 - una lettera maiuscola (maiuscole/minuscole) 
     
-Avari senza un numero di identificazione per gli incisi
+Stranieri senza numero di identificazione di uno straniero
   
 - una lettera maiuscola che è "M" (maiuscole/minuscole) 
 - sette cifre
@@ -15493,11 +15316,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_spain_eu_tax_file_number` o trova contenuto che corrisponde al `Func_spain_eu_DL_and_NI_number_citizen` modello. 
-- Viene trovata una parola  `Keywords_spain_eu_tax_file_number` chiave da. 
+- Viene trovata una parola  `Keywords_spain_eu_tax_file_number` chiave from. 
     
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_spain_eu_tax_file_number` o trova contenuto che corrisponde al `Func_spain_eu_DL_and_NI_number_citizen` modello. 
     
 ```xml
@@ -15537,15 +15360,15 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - tax file no
 - tax file number
 - tax id
-- tax identification no
-- tax identification number
+- identificazione fiscale no
+- codice fiscale
 - tax no #
 - tax no
 - tax number
-- tax registration number
-- taxd #
-- taxdno #
-- taxdnumber #
+- numero di registrazione fiscale
+- rullato #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -15556,9 +15379,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 ## <a name="sql-server-connection-string"></a>SQL Server stringa di connessione
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
-La stringa "User Id", "User ID", "uid" o "UserId" seguita dai caratteri e dalle stringhe delineati nel modello seguente.
+La stringa "User Id", "User ID", "uid" o "UserId" seguita dai caratteri e dalle stringhe descritti nel modello seguente.
 
 ### <a name="pattern"></a>Modello
 
@@ -15566,9 +15389,9 @@ La stringa "User Id", "User ID", "uid" o "UserId" seguita dai caratteri e dalle 
 - qualsiasi combinazione di 1-200 lettere minuscole o maiuscole, cifre, simboli, caratteri speciali o spazi
 - la stringa "Password" o "pwd" dove "pwd" non è preceduta da una lettera minuscola
 - un segno di uguale (=)
-- qualsiasi carattere diverso dal simbolo del dollaro ($), dal simbolo di percentuale (%), dal simbolo di maggiore di (>), dal simbolo (@), dal punto e virgola ("), dal punto e virgola (;), dalla parentesi graffa sinistra([) o dalla parentesi quadra sinistra ({)
-- qualsiasi combinazione di 7-128 caratteri che non sia un punto e virgola (;), barra (/) o virgolette (")
-- punto e virgola (;) o virgolette (")
+- qualsiasi carattere che non sia un simbolo del dollaro ($), un simbolo di percentuale (%), un simbolo di maggiore di (>), un simbolo di simbolo (@), virgolette ("), un punto e virgola (;), una parentesi graffa sinistra([) o una parentesi quadra sinistra ({)
+- qualsiasi combinazione di 7-128 caratteri che non siano un punto e virgola (;), barra (/) o virgolette (")
+- un punto e virgola (;) o virgolette (")
 
 ### <a name="checksum"></a>Checksum
 
@@ -15576,11 +15399,11 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare CEP_Regex_SQLServerConnectionString trova contenuto che corrisponde al modello.
-- Non viene trovata CEP_GlobalFilter parola chiave da un utente.
-- L'espressione CEP_PasswordPlaceHolder non trova contenuto che corrisponde al modello.
-- L'espressione CEP_CommonExampleKeywords non trova contenuto che corrisponde al modello.
+- Una parola chiave CEP_GlobalFilter non viene trovata.
+- L'espressione CEP_PasswordPlaceHolder non trova contenuto corrispondente al modello.
+- L'espressione CEP_CommonExampleKeywords non trova contenuto corrispondente al modello.
 
 ```sql
 <!---SQL Server Connection String>
@@ -15609,12 +15432,12 @@ Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di infor
 
 Tecnicamente, questo tipo di informazioni riservate identifica queste parole chiave utilizzando un'espressione regolare e non un elenco di parole chiave.
 
-- Password o pwd seguito da 0-2 spazi, un segno di uguale (=), 0-2 spazi e un asterisco (*) -OR-
+- Password o pwd seguiti da 0-2 spazi, un segno di uguale (=), 0-2 spazi e un asterisco (*) -OR-
 - Password o pwd seguito da:
     - Segno di uguale (=)
     - Simbolo minore di (<)
     - Qualsiasi combinazione di 1-200 caratteri maiuscoli o minuscoli, cifre, asterisco (*), trattino (-), sottolineatura (_) o spazi vuoti
-    - Simbolo di maggiore di (>)
+    - Simbolo maggiore di (>)
 
 #### <a name="cep_commonexamplekeywords"></a>CEP_CommonExampleKeywords
 
@@ -15630,9 +15453,9 @@ Tecnicamente, questo tipo di informazioni riservate identifica queste parole chi
 - testacs.<!--no-hyperlink-->com
 - s-int.<!--no-hyperlink-->net
 
-## <a name="sweden-drivers-license-number"></a>Svezia - Numero della patente di guida
+## <a name="sweden-drivers-license-number"></a>Numero di patente di guida in Svezia
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 dieci cifre contenenti un trattino
   
@@ -15650,7 +15473,7 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione  `Regex_sweden_eu_driver's_license_number` regolare trova contenuto che corrisponde al modello. 
 - Viene trovata una  `Keywords_eu_driver's_license_number` parola chiave da o `Keywords_sweden_eu_driver's_license_number` . 
     
@@ -15681,8 +15504,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- patente di guida
+- patenti di guida
 - driverslic
 - driverslics
 - driverslicence
@@ -15694,21 +15517,21 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- driver licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
-- driver'licence
-- driver'licences
+- patente di guida
+- patenti di guida
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- patente di guida
+- licenze del driver
+- patente di guida
+- patenti di guida
 - driver'slic
-- driver'slics
+- calici del driver
 - driver'slicense
 - driver'slicenses
 - driver'slicence
@@ -15718,7 +15541,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- patenti di guida
 - dl #
 - dls #
 - driverlic #
@@ -15730,8 +15553,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driver lic #
 - driver lics #
 - driver license #
-- driver licenses #
-- driver licences #
+- licenze driver #
+- patenti di guida #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -15740,49 +15563,49 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
+- driver license #
 - driver licenses #
-- drivers licence #
-- drivers licences #
+- driver licence #
+- driver licences #
 - driver'lic #
 - driver'lics #
 - driver'license #
 - driver'licenses #
-- driver'licence #
-- driver'licences #
+- patente di guida #
+- patenti di guida #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driver'slic #
-- driver'slics #
+- calici del driver #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
+- licenza driv
+- licenze driv
+- licenza driv
 - driv licences
 - driver licen
 - drivers licen
-- driver's licen
+- licen del driver
 - driving lic
 - driving licen
-- driving licenses
+- licenze di guida
 - driving licence
 - driving licences
 - driving permit
@@ -15807,7 +15630,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 ## <a name="sweden-national-id"></a>Svezia - ID nazionale
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 10 o 12 cifre e un delimitatore facoltativo
 
@@ -15825,12 +15648,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione `Func_swedish_national_identifier` trova contenuto che corrisponde al modello.
 - Viene trovata una parola `Keywords_swedish_national_identifier` chiave da
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione `Func_swedish_national_identifier` trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
@@ -15855,7 +15678,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - id no
 - id number
 - id #
-- identification no
+- identificazione no
 - identification number
 - identifikationsnumret #
 - identifikationsnumret
@@ -15871,7 +15694,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
    
 ## <a name="sweden-passport-number"></a>Svezia - numero di passaporto
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 otto cifre
 
@@ -15885,14 +15708,14 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- L'espressione regolare Regex_sweden_passport_number trova contenuto che corrisponde al modello.
-- una parola chiave `Keywords_eu_passport_number` da o `Keyword_sweden_passport` viene trovata.
-- l'espressione regolare trova una data nel formato `Regex_sweden_eu_passport_date` D MMM/MMM AA (01 GEN/JAN 12) o viene trovata una parola chiave `Keywords_eu_passport_date` da.
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- l'espressione regolare Regex_sweden_passport_number trova contenuto che corrisponde al modello.
+- viene trovata `Keywords_eu_passport_number` una parola chiave da o `Keyword_sweden_passport` .
+- l'espressione regolare trova una data nel formato `Regex_sweden_eu_passport_date` DD MMM/MMM AA (01 JAN/JAN 12) o viene trovata una parola chiave `Keywords_eu_passport_date` da.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- L'espressione regolare Regex_sweden_passport_number trova contenuto che corrisponde al modello.
-- una parola chiave `Keywords_eu_passport_number` da o `Keyword_sweden_passport` viene trovata.
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- l'espressione regolare Regex_sweden_passport_number trova contenuto che corrisponde al modello.
+- viene trovata `Keywords_eu_passport_number` una parola chiave da o `Keyword_sweden_passport` .
 
 
 ```xml
@@ -15926,7 +15749,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - passport #
 - passport #
 - passportid
-- passports
+- passaporti
 - passportno
 - passport no
 - passportnumber
@@ -15936,9 +15759,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 #### <a name="keyword_sweden_passport"></a>Keyword_sweden_passport
 
-- carta di registrazione di Unisa
-- g3 processing fees
-- voce multipla
+- carta di registrazione di alieno
+- g3 spese di elaborazione
+- più voci
 - Numéro de passeport
 - passeport n °
 - passeport non
@@ -15948,8 +15771,8 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - passeportn °
 - passnummer
 - pass nr
-- visa visa visa
-- visas visas
+- visto schengen
+- visti schengen
 - voce singola
 - sverige pass
 - visa requirements
@@ -15962,88 +15785,27 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - data di scadenza
 
 
-## <a name="sweden-social-security-number-or-equivalent-identification"></a>Svezia - numero di previdenza sociale o identificazione equivalente
-Questa entità del tipo di informazioni riservate è disponibile solo nel tipo di informazioni riservate PER ID equivalente o numero di previdenza sociale dell'Unione Europea.
-
-### <a name="format"></a>Formato
-
-12 cifre senza spazi e delimitatori
-  
-### <a name="pattern"></a>Modello
-
-12 cifre:
-  
-- otto cifre che corrispondono alla data di nascita (AAAAMMMMDD) 
-- tre cifre che corrispondono a un numero di serie dove: 
-  - L'ultima cifra nel numero di serie indica il sesso in base all'assegnazione di un numero dispari per il maschile e un numero pari per la donna
-  - Prima del 1990, l'assegnazione di un numero di serie corrispondeva alla provincia in cui è stato portatore del numero. Oppure( se sono nate prima del 1947) in cui erano residenti, in base alle registrazioni fiscali, il 1 gennaio 1947, con un codice speciale (in genere 9 come la settima cifra) per l'evasore.
-- una cifra di controllo
-    
-### <a name="checksum"></a>Checksum
-
-Sì
-  
-### <a name="definition"></a>Definizione
-
-Un criterio DLP rileva questo tipo di informazioni con una probabilità del 85%, entro 300 caratteri, se:
-- La funzione  `Func_sweden_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_sweden_eu_ssn_or_equivalent` chiave da. 
-    
-Un criterio DLP rileva questo tipo di informazioni con una probabilità del 75%, entro 300 caratteri, se:
-- La funzione  `Func_sweden_eu_ssn_or_equivalent` trova contenuto che corrisponde al modello. 
-    
-```xml
- <!-- EU SSN or Equivalent Number -->
-<Entity id="d24e32a4-c0bb-4ba8-899d-6303b95742d9" patternsProximity="300" recommendedConfidence="75">
-        <Pattern confidenceLevel="85">
-          <IdMatch idRef="Func_sweden_eu_ssn_or_equivalent" />
-          <Match idRef="Keywords_sweden_eu_ssn_or_equivalent" />
-        </Pattern> 
-       <Pattern confidenceLevel="75">
-          <IdMatch idRef="Func_sweden_eu_ssn_or_equivalent" />
-        </Pattern>      
-</Entity>
-```
-
-### <a name="keywords"></a>Parole chiave
-
-#### <a name="keywords_sweden_eu_ssn_or_equivalent"></a>Keywords_sweden_eu_ssn_or_equivalent
-
-- personal id number
-- identification number
-- id personale no
-- identity no
-- identification no
-- identificazione personale no
-- personnummer id
-- personligt id-nummer
-- unikt id-nummer
-- personnummer
-- identifikationsnumret
-- personnummer #
-- identifikationsnumret #
-
-## <a name="sweden-tax-identification-number"></a>Svezia - Numero di identificazione fiscale
-Questo tipo di informazioni riservate è disponibile solo in:
+## <a name="sweden-tax-identification-number"></a>Numero di identificazione fiscale svezia
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
-10 cifre e un simbolo nel formato specificato
+10 cifre e un simbolo nel motivo specificato
   
 ### <a name="pattern"></a>Modello
 
 10 cifre e un simbolo:
   
-- sei cifre che corrispondono alla data di nascita (AAMMMMD) 
+- sei cifre che corrispondono alla data di nascita (AAMMDD) 
 - segno più o meno
 - tre cifre che rendono univoco il numero di identificazione dove: 
-  - per i numeri emessi prima del 1990, la settima e l'ottava cifra identificano la provincia di nascita o di persone di origine esterna
-  - la cifra nella nona posizione indica il sesso per dispari per il maschile o anche per la donna
+  - per i numeri emessi prima del 1990, la settima e l'ottava cifra identificano la provincia di nascita o i nati all'estero
+  - la cifra nella nona posizione indica il sesso per dispari per il maschio o anche per la donna
 - una cifra di controllo
     
 ### <a name="checksum"></a>Checksum
@@ -16052,11 +15814,11 @@ Sì
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_sweden_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_sweden_eu_tax_file_number` chiave da. 
+- Viene trovata una parola  `Keywords_sweden_eu_tax_file_number` chiave from. 
     
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_sweden_eu_tax_file_number` trova contenuto che corrisponde al modello. 
     
 ```xml
@@ -16083,20 +15845,20 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - personal id number
 - personnummer
 - skatt id nummer
-- skatt identifikation
+- identifikation skatt
 - skattebetalarens identifikationsnummer
 - sverige tin
 - tax file
 - tax id
-- tax identification no
-- tax identification number
+- identificazione fiscale no
+- codice fiscale
 - tax no #
 - tax no
 - tax number
-- tax registration number
-- taxd #
-- taxdno #
-- taxdnumber #
+- numero di registrazione fiscale
+- rullato #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -16107,7 +15869,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 ## <a name="swift-code"></a>Codice SWIFT
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 quattro lettere seguite da 5-31 lettere o cifre
 
@@ -16126,7 +15888,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_swift restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_swift.
 
@@ -16172,21 +15934,21 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - BICコード
 - SWIFT コード
 - SWIFT 番号
-- Bic 番号
-- Bic コード
+- BiC 番号
+- BiC コード
 - 金融機関識別コード
 - 金融機関コード
 - 銀行コード
 
-## <a name="switzerland-ssn-ahv-number"></a>Svizzera - Numero AVSN SSN
-Questo tipo di informazioni riservate è disponibile solo in:
+## <a name="switzerland-ssn-ahv-number"></a>Svizzera - Numero AVS SSN
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Numero a 13 cifre
 
@@ -16208,11 +15970,11 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_swiss_social_security_number_ahv trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keywords_swiss_social_security_number_ahv da un utente.
+- Viene trovata una parola chiave Keywords_swiss_social_security_number_ahv'utente.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_swiss_social_security_number_ahv trova contenuto che corrisponde al modello.
 
 ```xml
@@ -16232,17 +15994,17 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 #### <a name="keyword_swiss_ssn_ahv_number"></a>Keyword_swiss_ssn_AHV_number
 
-- avv
+- ahv
 - ssn
 - pid
 - numero di assicurazione
 - personalidno #
 - social security number
 - personal id number
-- personal identification no.
+- identificazione personale n.
 - insuranceno #
 - uniqueidno #
-- unique identification no.
+- identificazione univoca no.
 - avs number
 - identità personale no versicherungsnummer
 - identifikationsnummer
@@ -16252,9 +16014,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - numéro de sécurité sociale
 
    
-## <a name="taiwan-national-identification-number"></a>Taiwan national identification number
+## <a name="taiwan-national-identification-number"></a>Taiwan - Numero di identificazione nazionale
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 una lettera (in inglese) seguita da nove cifre
 
@@ -16271,12 +16033,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_taiwanese_national_id restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_taiwanese_national_id.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_taiwanese_national_id restituisce contenuti che corrispondono al modello.
 - Il checksum ha esito positivo.
 
@@ -16312,15 +16074,15 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - 簽名或蓋章 
 - 簽章   
    
-## <a name="taiwan-passport-number"></a>Taiwan passport number
+## <a name="taiwan-passport-number"></a>Numero di passaporto taiwanese
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 - Numero di passaporto biometrico: nove cifre
 - numero di passaporto non biometrico: nove cifre
 
 ### <a name="pattern"></a>Modello
-Numero di passaporto biometrico:
+numero di passaporto biometrico:
 - il carattere "3" 
 - otto cifre
 
@@ -16333,7 +16095,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_taiwan_passport trova contenuto che corrisponde al modello.
 - Viene trovata una parola Keyword_taiwan_passport da un utente.
 
@@ -16363,7 +16125,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
    
 ## <a name="taiwan-resident-certificate-arctarc-number"></a>Numero di certificato residente a Taiwan (ARC/TARC)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 10 lettere e cifre
 
@@ -16379,9 +16141,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
-- L'espressione Regex_taiwan_resident_certificate trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keyword_taiwan_resident_certificate da un utente.
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
+- L'espressione regolare Regex_taiwan_resident_certificate trova contenuto che corrisponde al modello.
+- Viene trovata una parola chiave da Keyword_taiwan_resident_certificate.
 
 ```xml
 <!-- Taiwan Resident Certificate (ARC/TARC) -->
@@ -16413,7 +16175,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 ## <a name="thai-population-identification-code"></a>Codice di identificazione della popolazione thai
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 13 cifre
 
@@ -16429,11 +16191,11 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_Thai_Citizen_Id trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keyword_Thai_Citizen_Id di codice.
+- Viene trovata una parola Keyword_Thai_Citizen_Id da un utente.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_Thai_Citizen_Id trova contenuto che corrisponde al modello.
 
 ```xml
@@ -16463,7 +16225,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
   
 ## <a name="turkish-national-identification-number"></a>Numero di identificazione nazionale turco
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 11 cifre
 
@@ -16477,11 +16239,11 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_Turkish_National_Id trova contenuto che corrisponde al modello.
 - Viene trovata una parola Keyword_Turkish_National_Id da un utente.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_Turkish_National_Id trova contenuto che corrisponde al modello.
 
 ```xml
@@ -16506,9 +16268,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - Vatandaşlık numarası
 - Vatandaşlık no
 
-## <a name="uk-drivers-license-number"></a>Regno Unito driver's license number
+## <a name="uk-drivers-license-number"></a>Regno Unito numero di patente di guida
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Combinazione di 18 lettere e numeri nel formato specificato
 
@@ -16517,7 +16279,7 @@ Combinazione di 18 lettere e numeri nel formato specificato
 18 lettere e cifre:
 - Cinque lettere (senza distinzione tra maiuscole e minuscole) o la cifra "9" al posto di una lettera. 
 - Una cifra.
-- Cinque cifre nel formato data MMDDY per la data di nascita. Il settimo carattere viene incrementato di 50 se il driver è di tipo femminile. per esame, da 51 a 62 invece che da 01 a 12.
+- Cinque cifre nel formato di data MMDDY per la data di nascita. Il settimo carattere viene incrementato di 50 se driver è femminile. per exampe, da 51 a 62 invece che da 01 a 12.
 - Due lettere (senza distinzione tra maiuscole e minuscole) o la cifra "9" al posto di una lettera. 
 - Cinque cifre.
 
@@ -16527,12 +16289,12 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione `Func_uk_drivers_license` trova contenuto che corrisponde al modello.
-- Viene trovata una parola `Keywords_eu_driver's_license_number` chiave da.
+- Viene trovata una parola `Keywords_eu_driver's_license_number` chiave from.
 - Il checksum ha esito positivo.
 
-Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione `Func_uk_drivers_license` trova contenuto che corrisponde al modello.
 - Il checksum ha esito positivo.
 
@@ -16563,8 +16325,8 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - driver lics
 - driver license
 - driver licenses
-- driver licence
-- driver licences
+- patente di guida
+- patenti di guida
 - driverslic
 - driverslics
 - driverslicence
@@ -16576,21 +16338,21 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - drivers license
 - drivers licenses
 - drivers licence
-- drivers licences
+- driver licences
 - driver'lic
 - driver'lics
 - driver'license
 - driver'licenses
-- driver'licence
-- driver'licences
+- patente di guida
+- patenti di guida
 - driver' lic
 - driver' lics
-- driver' license
-- driver' licenses
-- driver' licence
-- driver' licences
+- patente di guida
+- licenze del driver
+- patente di guida
+- patenti di guida
 - driver'slic
-- driver'slics
+- calici del driver
 - driver'slicense
 - driver'slicenses
 - driver'slicence
@@ -16600,7 +16362,7 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - driver's license
 - driver's licenses
 - driver's licence
-- driver's licences
+- patenti di guida
 - dl #
 - dls #
 - driverlic #
@@ -16612,8 +16374,8 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - driver lic #
 - driver lics #
 - driver license #
-- driver licenses #
-- driver licences #
+- licenze driver #
+- patenti di guida #
 - driverslic #
 - driverslics #
 - driverslicense #
@@ -16622,49 +16384,49 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - driverslicences #
 - drivers lic #
 - drivers lics #
-- drivers license #
+- driver license #
 - driver licenses #
-- drivers licence #
-- drivers licences #
+- driver licence #
+- driver licences #
 - driver'lic #
 - driver'lics #
 - driver'license #
 - driver'licenses #
-- driver'licence #
-- driver'licences #
+- patente di guida #
+- patenti di guida #
 - driver' lic #
 - driver' lics #
-- driver' license #
-- driver' licenses #
-- driver' licence #
-- driver' licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driver'slic #
-- driver'slics #
+- calici del driver #
 - driver'slicense #
 - driver'slicenses #
 - driver'slicence #
 - driver'slicences #
 - driver's lic #
 - driver's lics #
-- driver's license #
-- driver's licenses #
-- driver's licence #
-- driver's licences #
+- patente di guida #
+- licenze del driver #
+- patente di guida #
+- patenti di guida #
 - driving licence 
 - driving license
 - dlno #
 - driv lic
 - driv licen
-- driv license
-- driv licenses
-- driv licence
+- licenza driv
+- licenze driv
+- licenza driv
 - driv licences
 - driver licen
 - drivers licen
-- driver's licen
+- licen del driver
 - driving lic
 - driving licen
-- driving licenses
+- licenze di guida
 - driving licence
 - driving licences
 - driving permit
@@ -16673,9 +16435,9 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - dl number
 
    
-## <a name="uk-electoral-roll-number"></a>Regno Unito electoral roll number
+## <a name="uk-electoral-roll-number"></a>Regno Unito numero di rullino elettorale
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 due lettere seguite da 1-4 cifre
 
@@ -16689,7 +16451,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_uk_electoral restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_uk_electoral.
 
@@ -16715,9 +16477,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - electoral roll
 
    
-## <a name="uk-national-health-service-number"></a>Regno Unito national health service number
+## <a name="uk-national-health-service-number"></a>Regno Unito numero del servizio sanitario nazionale
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 10-17 cifre separate da spazi
 
@@ -16736,7 +16498,7 @@ Sì
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_uk_nhs_number restituisce contenuti che corrispondono al modello.
 - Si verifica una delle situazioni seguenti:
     - Viene trovata una parola chiave da Keyword_uk_nhs_number.
@@ -16783,9 +16545,9 @@ Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di infor
 - Birth Date 
    
 ## <a name="uk-national-insurance-number-nino"></a>Regno Unito national insurance number (NINO)
-Questa entità del tipo di informazione sensibile è inclusa nel tipo di informazioni riservate del numero di identificazione nazionale dell'Unione Europea. È disponibile come entità autonoma del tipo di informazioni riservate.
+Questa entità del tipo di informazioni riservate è inclusa nel tipo di informazioni riservate NUMERO DI IDENTIFICAZIONE NAZIONALE UE. È disponibile come entità di tipo di informazioni riservate autonomo.
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 sette o nove caratteri separati da spazi o trattini
 
@@ -16793,7 +16555,7 @@ sette o nove caratteri separati da spazi o trattini
 
 due modelli possibili:
 
-- due lettere (i NINO validi utilizzano solo determinati caratteri in questo prefisso, convalidati da questo modello, senza distinzione tra maiuscole e minuscole)
+- due lettere (i VALORI NINO validi utilizzano solo determinati caratteri in questo prefisso, convalidato da questo modello, senza distinzione tra maiuscole e minuscole)
 - sei cifre
 - 'A', 'B', 'C' o 'D' (come il prefisso, nel suffisso sono consentiti solo determinati caratteri, senza distinzione tra maiuscole e minuscole)
 
@@ -16807,7 +16569,7 @@ OPPURE
 - uno spazio o un trattino
 - due cifre
 - uno spazio o un trattino
-- 'A', 'B', 'C' o 'D'
+- "A", "B", "C" o "D"
 
 ### <a name="checksum"></a>Checksum
 
@@ -16815,11 +16577,11 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_uk_nino restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_uk_nino.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_uk_nino restituisce contenuti che corrispondono al modello.
 
 ```xml
@@ -16860,15 +16622,15 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - nationalinsurancenumber
 
     
-## <a name="uk-unique-taxpayer-reference-number"></a>Regno Unito Numero di riferimento del contribuente univoco
-Questo tipo di informazioni riservate è disponibile solo in:
+## <a name="uk-unique-taxpayer-reference-number"></a>Regno Unito Numero di riferimento fiscale univoco
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 10 cifre senza spazi e delimitatori
  
@@ -16883,9 +16645,9 @@ No
   
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione  `Func_uk_eu_tax_file_number` trova contenuto che corrisponde al modello. 
-- Viene trovata una parola  `Keywords_uk_eu_tax_file_number` chiave da. 
+- Viene trovata una parola  `Keywords_uk_eu_tax_file_number` chiave from. 
     
 ```xml
       <!-- U.K. Unique Taxpayer Reference Number -->
@@ -16904,14 +16666,14 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - tax number
 - tax file
 - tax id
-- tax identification no
-- tax identification number
+- identificazione fiscale no
+- codice fiscale
 - tax no #
 - tax no
-- tax registration number
-- taxd #
-- taxdno #
-- taxdnumber #
+- numero di registrazione fiscale
+- rullato #
+- taxidno #
+- taxidnumber #
 - taxno #
 - taxnumber #
 - taxnumber
@@ -16919,9 +16681,9 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - tin no
 - tin #
 
-## <a name="us-bank-account-number"></a>Numero di conto corrente bancario (Stati Uniti)
+## <a name="us-bank-account-number"></a>Numero di conto corrente bancario statunitense
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 6-17 cifre
 
@@ -16935,7 +16697,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione regolare Regex_usa_bank_account_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_usa_Bank_Account.
 
@@ -16981,17 +16743,17 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - Debit Acct No. 
 - Debit Account No. 
 
-## <a name="us-drivers-license-number"></a>Numero della patente di guida negli Stati Uniti
+## <a name="us-drivers-license-number"></a>Numero di patente di guida statunitense
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 Varia in base allo stato
 
 ### <a name="pattern"></a>Modello
 
 dipende dallo stato, ad esempio New York:
-- verranno utilizzate nove cifre formattate come ddd ddd ddd.
-- nove cifre come dddddddddd non corrisponderanno.
+- le nove cifre formattate come ddd ddd ddd corrisponderanno.
+- nove cifre come dddddddddd non corrispondono.
 
 ### <a name="checksum"></a>Checksum
 
@@ -16999,12 +16761,12 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_new_york_drivers_license_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_[state_name]_drivers_license_name.
-- Viene trovata una parola Keyword_us_drivers_license da un utente.
+- Viene trovata una parola chiave da Keyword_us_drivers_license.
 
-Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_new_york_drivers_license_number restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_[state_name]_drivers_license_name.
 - Viene trovata una parola chiave da Keyword_us_drivers_license_abbreviations.
@@ -17130,12 +16892,12 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 
 #### <a name="keyword_state_name_drivers_license_name"></a>Keyword_[state_name]_drivers_license_name
 
-- abbreviazione di stato (ad esempio, "NY") 
+- abbreviazione dello stato (ad esempio, "NY") 
 - nome dello stato (ad esempio, "New York")
 
-## <a name="us-individual-taxpayer-identification-number-itin"></a>CODICE ITIN (Individual Taxpayer Identification Number) degli Stati Uniti
+## <a name="us-individual-taxpayer-identification-number-itin"></a>Numero di identificazione del singolo contribuente statunitense (ITIN)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 nove cifre che iniziano con "9" e contengono "7" o "8" come quarta cifra, facoltativamente formattate con spazi o trattini
 
@@ -17145,7 +16907,7 @@ formattato:
 - la cifra "9" 
 - due cifre 
 - uno spazio o un trattino 
-- un "7" o "8" 
+- a "7" o "8" 
 - una cifra 
 - uno spazio o un trattino 
 - quattro cifre
@@ -17153,7 +16915,7 @@ formattato:
 non formattato:
 - la cifra "9" 
 - due cifre 
-- un "7" o "8" 
+- a "7" o "8" 
 - cinque cifre
 
 ### <a name="checksum"></a>Checksum
@@ -17162,15 +16924,15 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_formatted_itin restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_itin.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_unformatted_itin restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_itin.
 
-Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_formatted_itin o Func_unformatted_itin trova contenuto che corrisponde al modello.
 
 ```xml
@@ -17197,7 +16959,7 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 
 #### <a name="keyword_itin"></a>Keyword_itin
 
-- taxpayer 
+- contribuente 
 - tax id 
 - tax identification 
 - itin 
@@ -17207,26 +16969,26 @@ Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di info
 - social security 
 - tax payer 
 - itins 
-- taxd 
+- rullato 
 - individual taxpayer 
 
 
-## <a name="us-social-security-number-ssn"></a>Numero di previdenza sociale (SSN) degli Stati Uniti
+## <a name="us-social-security-number-ssn"></a>Numero di previdenza sociale statunitense (SSN)
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 nove cifre, che possono essere formattate o non formattate
 
 > [!NOTE]
-> Se emesso prima della metà del 2011, un SSN ha una formattazione forte in cui alcune parti del numero devono rientrare in determinati intervalli per essere valide (ma non esiste alcun checksum).
+> Se emesso prima della metà del 2011, un SSN ha una formattazione solida in cui alcune parti del numero devono rientrare in determinati intervalli per essere valide (ma non è presente alcun checksum).
 
 ### <a name="pattern"></a>Modello
 
 Quattro funzioni ricercano i nomi SSN in quattro modelli diversi:
-- Func_ssn trova SSN con formattazione forte precedente alla 2011 formattata con trattini o spazi (ddd-dd-dddd OR ddd ddd dddd)
-- Func_unformatted_ssn trova numeri SSN con formattazione forte precedente alla versione 2011 non formattati come nove cifre consecutive (ddddddddd)
-- Func_randomized_formatted_ssn trova i codici SSN post-2011 formattati con trattini o spazi (ddd-dd-dddd OR ddd ddd dddd)
-- Func_randomized_unformatted_ssn trova i numeri SSN post-2011 non formattati come nove cifre consecutive (dddddddd)
+- Func_ssn trova SSN con formattazione forte precedente alla 2011 formattata con trattini o spazi (ddd-dd-dddd OR ddd ddddd)
+- Func_unformatted_ssn trova SSN con formattazione forte precedente alla versione 2011 non formattata come nove cifre consecutive (ddddddddd)
+- Func_randomized_formatted_ssn trova sSN post-2011 formattati con trattini o spazi (ddd-dd-dddd OR ddd ddddd)
+- Func_randomized_unformatted_ssn trova SSN post-2011 non formattati come nove cifre consecutive (ddddddddd)
 
 ### <a name="checksum"></a>Checksum
 
@@ -17235,19 +16997,19 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_ssn restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_ssn.
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_unformatted_ssn trova contenuto che corrisponde al modello.
 - Viene trovata una parola chiave da Keyword_ssn.
 
-Un criterio DLP ha bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has low confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_randomized_formatted_ssn restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_ssn.
 
-Un criterio DLP rileva questo tipo di informazioni con una probabilità del 55%, entro 300 caratteri, se:
+Un criterio DLP ha una bassa probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_randomized_unformatted_ssn restituisce contenuti che corrispondono al modello.
 - Viene trovata una parola chiave da Keyword_ssn.
 
@@ -17278,7 +17040,7 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 55%,
 
 #### <a name="keyword_ssn"></a>Keyword_ssn
 
-- Numero SSA
+- SSA Number
 - social security number
 - social security #
 - social security #
@@ -17291,9 +17053,9 @@ Un criterio DLP rileva questo tipo di informazioni con una probabilità del 55%,
 - SS #
 - SSID
    
-## <a name="us--uk-passport-number"></a>Stati Uniti/Regno Unito passport number
+## <a name="us--uk-passport-number"></a>Stati Uniti / Regno Unito passport number
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 nove cifre
 
@@ -17307,12 +17069,12 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha alta probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has high confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha un'elevata probabilità che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_usa_uk_passport restituisce contenuti che corrispondono al modello.
 - Viene trovata una `Keywords_eu_passport_number` parola chiave da o `Keywords_uk_eu_passport_number` .
 - Viene trovata una parola `Keywords_eu_passport_date` chiave da
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - La funzione Func_usa_uk_passport restituisce contenuti che corrispondono al modello.
 - Viene trovata una `Keywords_eu_passport_number` parola chiave da o `Keywords_uk_eu_passport_number` .
 
@@ -17344,7 +17106,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - passport #
 - passport #
 - passportid
-- passports
+- passaporti
 - passportno
 - passport no
 - passportnumber
@@ -17354,19 +17116,19 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 #### <a name="keywords_uk_eu_passport_number"></a>Keywords_uk_eu_passport_number
 
-- british passport 
+- passaporto inglese 
 - uk passport 
 
 
 ## <a name="ukraine-passport-domestic"></a>Passaporto ucraino nazionale
-Questo tipo di informazioni riservate è disponibile solo in:
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 nove cifre
 
@@ -17380,7 +17142,7 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione Regex_Ukraine_Passport_Domestic trova contenuto che corrisponde al modello.
 - Viene trovata una parola Keyword_Ukraine_Passport_Domestic da un utente.
 
@@ -17398,7 +17160,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 #### <a name="keyword_ukraine_passport_domestic"></a>Keyword_ukraine_passport_domestic
 
-- passaporto ucraina
+- passaporto dell'Ucraina
 - passport number
 - passport no
 - паспорт України
@@ -17406,15 +17168,15 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 - персональний
 
 
-## <a name="ukraine-passport-international"></a>Passaporto ucraino internazionale
-Questo tipo di informazioni riservate è disponibile solo in:
+## <a name="ukraine-passport-international"></a>Passaporto internazionale in Ucraina
+Questo tipo di informazioni riservate è disponibile solo per l'utilizzo in:
 - criteri di prevenzione della perdita di dati
 - criteri di conformità delle comunicazioni
 - governance delle informazioni
 - gestione dei record
-- Microsoft Cloud App Security
+- Sicurezza delle app cloud Microsoft
 
-### <a name="format"></a>Formato
+### <a name="format"></a>Format
 
 schema alfanumerico a otto caratteri
 
@@ -17430,9 +17192,9 @@ No
 
 ### <a name="definition"></a>Definizione
 
-Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:A DLP policy has medium confidence that it's detected this type of sensitive information if, within a proximity of 300 characters:
+Un criterio DLP ha una probabilità media di essere stato rilevato questo tipo di informazioni riservate se, entro una prossimità di 300 caratteri:
 - L'espressione Regex_Ukraine_Passport_International trova contenuto che corrisponde al modello.
-- Viene trovata una parola Keyword_Ukraine_Passport_International da un utente.
+- Viene trovata una parola Keyword_Ukraine_Passport_International parola chiave.
 
 ```xml
       <!-- Ukraine Passport International -->
@@ -17448,7 +17210,7 @@ Un criterio DLP ha una probabilità media che sia stato rilevato questo tipo di 
 
 #### <a name="keyword_ukraine_passport_international"></a>Keyword_ukraine_passport_international
 
-- passaporto ucraina
+- passaporto dell'Ucraina
 - passport number
 - passport no
 - паспорт України

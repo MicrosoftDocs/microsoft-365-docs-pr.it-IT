@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Riepilogo: passaggi di migrazione di Active Directory Federation Services (AD FS) per la migrazione da Microsoft Cloud Deutschland.'
-ms.openlocfilehash: 852fc8f93158d7b6080f1add5a05e7367539f889
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 146f476a43e46925d87763a800467bf52adc73e5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838414"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918907"
 ---
 # <a name="ad-fs-migration-steps-for-the-migration-from-microsoft-cloud-deutschland"></a>Passaggi di migrazione di AD FS per la migrazione da Microsoft Cloud Deutschland
 
@@ -89,7 +89,8 @@ Chiudendo la procedura guidata, viene stabilita l'attendibilità relying party c
 
 ## <a name="ad-fs-disaster-recovery-wid-database"></a>Ripristino di emergenza AD FS (database WID)
 
-Per ripristinare la farm AD FS in uno strumento di ripristino rapido [di ADFS](https://docs.microsoft.com/windows-server/identity/ad-fs/operations/ad-fs-rapid-restore-tool) di emergenza deve essere utilizzato. Pertanto, lo strumento deve essere scaricato e prima dell'inizio della migrazione deve essere creato e archiviato in modo sicuro un backup. In questo esempio sono stati eseguiti i comandi seguenti per eseguire il backup di una farm in esecuzione in un database WID:
+
+Per ripristinare la farm AD FS in uno strumento di ripristino rapido [di ADFS](/windows-server/identity/ad-fs/operations/ad-fs-rapid-restore-tool) di emergenza deve essere utilizzato. Pertanto, lo strumento deve essere scaricato e prima dell'inizio della migrazione deve essere creato e archiviato in modo sicuro un backup. In questo esempio sono stati eseguiti i comandi seguenti per eseguire il backup di una farm in esecuzione in un database WID:
 
 <h2 id="backup"></h2>
 
@@ -127,7 +128,7 @@ Se la farm ha avuto completamente esito negativo e non è possibile tornare alla
 3. Puntare i nuovi record DNS o il servizio di bilanciamento del carico ai nuovi server AD FS.
 
 
-## <a name="more-information"></a>Altre informazioni
+## <a name="more-information"></a>Ulteriori informazioni
 
 Guida introduttiva:
 
@@ -144,6 +145,6 @@ Passaggio attraverso la transizione:
 
 App cloud:
 
-- [Informazioni sul programma di migrazione di Dynamics 365](https://aka.ms/d365ceoptin)
-- [Informazioni sul programma di migrazione di Power BI](https://aka.ms/pbioptin)
-- [Guida introduttiva all'aggiornamento di Microsoft Teams](https://aka.ms/SkypeToTeams-Home)
+- [Informazioni sul programma di migrazione di Dynamics 365](/dynamics365/get-started/migrate-data-german-region)
+- [Informazioni sul programma di migrazione di Power BI](/power-bi/admin/service-admin-migrate-data-germany)
+- [Guida introduttiva all'aggiornamento di Microsoft Teams](/microsoftteams/upgrade-start-here)

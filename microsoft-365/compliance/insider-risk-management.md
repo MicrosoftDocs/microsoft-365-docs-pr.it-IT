@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: b98d2385ee0ae130df115c85010366a5100ab78d
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 30363b544d9016b10dd9aad463d33c40065da0f3
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838447"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919812"
 ---
 # <a name="learn-about-insider-risk-management-in-microsoft-365"></a>Informazioni sulla gestione dei rischi insider in Microsoft 365
 
@@ -125,7 +125,6 @@ Dopo l'analisi dei casi, i revisori possono agire rapidamente per risolvere il c
 Nelle situazioni più gravi potrebbe essere necessario condividere le informazioni sul caso di gestione dei rischi insider con altri revisori o servizi dell'organizzazione. La gestione dei rischi insider è strettamente integrata con altre soluzioni di conformità di Microsoft 365 per facilitare la risoluzione dei rischi end-to-end.
 
 - **Advanced eDiscovery:** l'escalation di un caso di indagine consente di trasferire i dati e la gestione del caso a Advanced eDiscovery in Microsoft 365. Advanced eDiscovery offre un flusso di lavoro end-to-end per conservare, raccogliere, esaminare, analizzare ed esportare contenuto reattivo alle indagini interne ed esterne dell'organizzazione. Consente ai team legali di gestire l'intero flusso di lavoro di notifica di blocco legale. Per ulteriori informazioni sui casi di Advanced eDiscovery, vedere [Overview of Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
-- **ServiceNow (anteprima):** ServiceNow è una popolare piattaforma di cloud computing che consente alle organizzazioni di gestire i flussi di lavoro digitali per le operazioni aziendali. La gestione dei rischi Insider supporta la condivisione degli avvisi caso con il servizio ServiceNow e consente di creare eventi imprevisti e richieste di modifica relative a singoli casi di rischio insider. Per ulteriori informazioni sulla condivisione delle informazioni sugli avvisi con ServiceNow, vedere [Condividere un caso con ServiceNow.](insider-risk-management-cases.md#share-the-case)
 - Integrazione delle API di gestione di **Office 365 (anteprima):** la gestione dei rischi Insider supporta l'esportazione delle informazioni sugli avvisi nei servizi siem (Security Information and Event Management) tramite le API di gestione di Office 365. L'accesso alle informazioni sugli avvisi nella piattaforma più adatto ai processi di rischio dell'organizzazione offre maggiore flessibilità nell'agire sulle attività a rischio. Per ulteriori informazioni sull'esportazione delle informazioni sugli avvisi con le API di gestione di Office 365, vedere [Export alerts](insider-risk-management-settings.md#export-alerts-preview).
 
 >[!NOTE]

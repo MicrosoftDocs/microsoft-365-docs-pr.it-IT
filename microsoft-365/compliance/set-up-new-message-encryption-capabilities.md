@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Scopri di più sulle nuove funzionalità crittografiche di Office 365, che consentono di comunicare tramite posta elettronica in sicurezza con le persone all’interno e all’esterno dell’organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4102611d3be43a5bedffc83fba5c83c0b648ca42
-ms.sourcegitcommit: 27daadad9ca0f02a833ff3cff8a574551b9581da
+ms.openlocfilehash: 1519748c4bd535e0a3ea1cc3ee653e2c81e807bd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/12/2020
-ms.locfileid: "47547618"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919392"
 ---
 # <a name="set-up-new-message-encryption-capabilities"></a>Configurare le nuove funzionalità di Message Encryption
 
@@ -33,14 +33,14 @@ Seguire questa procedura per verificare che le nuove funzionalità di OME siano 
 
 ## <a name="verify-that-azure-rights-management-is-active"></a>Verificare che Azure Rights Management sia attivo
 
-Le nuove funzionalità di OME sfruttano le caratteristiche di protezione di [Azure Rights Management Services (Azure RMS)](https://docs.microsoft.com/azure/information-protection/what-is-information-protection), la tecnologia usata da [Azure Information Protection](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) per proteggere i messaggi di posta elettronica e i documenti tramite crittografia e controlli di accesso.
+Le nuove funzionalità di OME sfruttano le caratteristiche di protezione di [Azure Rights Management Services (Azure RMS)](/azure/information-protection/what-is-information-protection), la tecnologia usata da [Azure Information Protection](/azure/information-protection/what-is-azure-rms) per proteggere i messaggi di posta elettronica e i documenti tramite crittografia e controlli di accesso.
 
-L'unico requisito necessario per usare le nuove funzionalità di OME è che [Azure Rights Management](https://docs.microsoft.com/azure/information-protection/what-is-azure-rms) debba essere attivato nel tenant dell'organizzazione. In tal caso, Microsoft 365 attiva automaticamente le nuove funzionalità di OME e non è necessario eseguire alcuna operazione.
+L'unico requisito necessario per usare le nuove funzionalità di OME è che [Azure Rights Management](/azure/information-protection/what-is-azure-rms) debba essere attivato nel tenant dell'organizzazione. In tal caso, Microsoft 365 attiva automaticamente le nuove funzionalità di OME e non è necessario eseguire alcuna operazione.
 
-Azure RMS viene attivato automaticamente anche per la maggior parte dei piani idonei, pertanto non è necessario eseguire alcuna operazione a tal riguardo. Per altre informazioni, vedere [Attivazione di Azure Rights Management](https://docs.microsoft.com/azure/information-protection/activate-service).
+Azure RMS viene attivato automaticamente anche per la maggior parte dei piani idonei, pertanto non è necessario eseguire alcuna operazione a tal riguardo. Per altre informazioni, vedere [Attivazione di Azure Rights Management](/azure/information-protection/activate-service).
 
 >[!IMPORTANT]
->Se si usa Active Directory Rights Management Services (AD RMS) con Exchange Online, è necessario [eseguire la migrazione ad Azure Information Protection](https://docs.microsoft.com/azure/information-protection/migrate-from-ad-rms-to-azure-rms) prima di poter usare le nuove funzionalità di OME. OME non è compatibile con AD RMS.  
+>Se si usa Active Directory Rights Management Services (AD RMS) con Exchange Online, è necessario [eseguire la migrazione ad Azure Information Protection](/azure/information-protection/migrate-from-ad-rms-to-azure-rms) prima di poter usare le nuove funzionalità di OME. OME non è compatibile con AD RMS.  
 
 Per ulteriori informazioni, vedere:
 
@@ -51,20 +51,20 @@ Per ulteriori informazioni, vedere:
 
 Se è stato disabilitato Azure RMS o se non è stato attivato automaticamente, è possibile attivarlo manualmente in:
 
-- **Interfaccia di amministrazione di Microsoft 365**: per istruzioni, vedere [Come attivare Azure Rights Management dall'interfaccia di amministrazione](https://docs.microsoft.com/azure/information-protection/activate-office365).
-- **Portale di Azure**: per istruzioni, vedere [Come attivare Azure Rights Management dal Portale di Azure](https://docs.microsoft.com/azure/information-protection/activate-azure).
+- **Interfaccia di amministrazione di Microsoft 365**: per istruzioni, vedere [Come attivare Azure Rights Management dall'interfaccia di amministrazione](/azure/information-protection/activate-office365).
+- **Portale di Azure**: per istruzioni, vedere [Come attivare Azure Rights Management dal Portale di Azure](/azure/information-protection/activate-azure).
 
 ## <a name="configure-management-of-your-azure-information-protection-tenant-key"></a>Configurare la gestione della chiave tenant di Azure Information Protection
 
 Questo passo è facoltativo. A Microsoft è consentita la gestione della chiave radice di Azure Information Protection per impostazione predefinita ed è la procedura consigliata per la maggior parte delle organizzazioni. Se questo è il caso, non è necessario eseguire alcuna operazione.
 
-Ci sono diversi motivi, ad esempio i requisiti di conformità, che possono richiedere di generare e gestire una chiave radice, nota anche come bring your own key (BYOK). In questo caso, è consigliabile completare i passaggi necessari prima di configurare le nuove funzionalità di OME. Per altre informazioni, vedere [Pianificazione e implementazione della chiave tenant di Azure Information Protection](https://docs.microsoft.com/information-protection/plan-design/plan-implement-tenant-key).
+Ci sono diversi motivi, ad esempio i requisiti di conformità, che possono richiedere di generare e gestire una chiave radice, nota anche come bring your own key (BYOK). In questo caso, è consigliabile completare i passaggi necessari prima di configurare le nuove funzionalità di OME. Per altre informazioni, vedere [Pianificazione e implementazione della chiave tenant di Azure Information Protection](/information-protection/plan-design/plan-implement-tenant-key).
 
 ## <a name="verify-new-ome-configuration-in-exchange-online-powershell"></a>Verificare la nuova configurazione di OME in PowerShell di Exchange Online
 
-È possibile verificare se il tenant di Microsoft 365 è configurato correttamente per l'uso delle nuove funzionalità di OME disponibili in [PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/exchange-online-powershell).
+È possibile verificare se il tenant di Microsoft 365 è configurato correttamente per l'uso delle nuove funzionalità di OME disponibili in [PowerShell di Exchange Online](/powershell/exchange/exchange-online-powershell).
   
-1. [Connettersi a PowerShell di Exchange Online](https://docs.microsoft.com/powershell/exchange/connect-to-exchange-online-powershell) usando un account con autorizzazioni di amministratore globale nel tenant di Microsoft 365.
+1. [Connettersi a PowerShell di Exchange Online](/powershell/exchange/connect-to-exchange-online-powershell) usando un account con autorizzazioni di amministratore globale nel tenant di Microsoft 365.
 
 2. Eseguire il cmdlet Get-IRMConfiguration.
 
@@ -102,7 +102,7 @@ Ci sono diversi motivi, ad esempio i requisiti di conformità, che possono richi
 
    - Il nome dell'organizzazione sostituirà *Contoso*.
 
-   - I nomi dei modelli predefiniti potrebbero essere diversi rispetto a quelli visualizzati in precedenza. Per altre informazioni, vedere [Configurazione e gestione dei modelli per Azure Information Protection](https://docs.microsoft.com/azure/information-protection/configure-policy-templates).
+   - I nomi dei modelli predefiniti potrebbero essere diversi rispetto a quelli visualizzati in precedenza. Per altre informazioni, vedere [Configurazione e gestione dei modelli per Azure Information Protection](/azure/information-protection/configure-policy-templates).
 
 4. Eseguire il cmdlet Remove-PSSession per disconnettersi dal servizio Rights Management.
 

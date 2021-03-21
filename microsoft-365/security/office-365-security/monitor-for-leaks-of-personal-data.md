@@ -19,12 +19,12 @@ search.appverid:
 description: Informazioni su tre strumenti che è possibile utilizzare per monitorare la perdita di dati personali.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: a8fb8557d6cd2677aeb6dcda75d34e86ada8f68c
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: b51bc5d5d3cbfa8951392f88edc6e178778206df
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50290670"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50921253"
 ---
 # <a name="monitor-for-leaks-of-personal-data"></a>Monitorare la perdita di dati personali
 
@@ -83,7 +83,7 @@ I team di conformità e sicurezza delle informazioni possono usare questi strume
 
 I team di sicurezza delle informazioni possono anche cercare nel log di controllo per analizzare sospette violazioni dei dati e determinarne l'eventuale causa e gravità. Questa funzionalità integrata agevola la conformità agli articoli 33 e 34 dell'RGPD, secondo i quali le notifiche devono essere fornite all'autorità di supervisione dell'RGPD e ai soggetti dei dati interessati da una violazione dei dati entro uno specifico periodo di tempo. Le voci del log di controllo vengono conservate solo per 90 giorni nel servizio (spesso è consigliabile e molte organizzazioni hanno richiesto un periodo di conservazione di tali log anche maggiore).
 
-Sono disponibili soluzioni che consentono di sottoscrivere i log di controllo unificati tramite l'API Microsoft Management Activity, di archiviare voci di log secondo necessità e che forniscono dashboard e avvisi avanzati. Un esempio è [Microsoft Operations Management Suite (OMS)](https://docs.microsoft.com/azure/operations-management-suite/oms-solution-office-365).
+Sono disponibili soluzioni che consentono di sottoscrivere i log di controllo unificati tramite l'API Microsoft Management Activity, di archiviare voci di log secondo necessità e che forniscono dashboard e avvisi avanzati. Un esempio è [Microsoft Operations Management Suite (OMS)](/azure/operations-management-suite/oms-solution-office-365).
 
 Ulteriori informazioni sui criteri di avviso e sulla ricerca nel log di controllo:
 
@@ -95,7 +95,7 @@ Ulteriori informazioni sui criteri di avviso e sulla ricerca nel log di controll
 
 - [Eseguire ricerche nel log di controllo](../../compliance/search-the-audit-log-in-security-and-compliance.md)
 
-- [Search-UnifiedAuditLog](https://docs.microsoft.com/powershell/module/exchange/search-unifiedauditlog) (cmdlet)
+- [Search-UnifiedAuditLog](/powershell/module/exchange/search-unifiedauditlog) (cmdlet)
 
 - [Proprietà dettagliate nel log di controllo](../../compliance/detailed-properties-in-the-office-365-audit-log.md)
 
@@ -130,11 +130,11 @@ Nota: verificare che "Analizza automaticamente i file per le etichette di classi
 
 Ulteriori informazioni:
 
-- [Distribuzione di Cloud App Security](https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security)
+- [Distribuzione di Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security)
 
 - [Ulteriori informazioni su Microsoft Cloud App Security](https://www.microsoft.com/cloud-platform/cloud-app-security)
 
-- [Blocco dei download di informazioni sensibili tramite il proxy di Microsoft Cloud App Security](https://docs.microsoft.com/cloud-app-security/use-case-proxy-block-session-aad)
+- [Blocco dei download di informazioni sensibili tramite il proxy di Microsoft Cloud App Security](/cloud-app-security/use-case-proxy-block-session-aad)
 
 ## <a name="example-file-and-activity-policies-to-detect-sharing-of-personal-data"></a>File di esempio e criteri di attività per rilevare la condivisione di dati personali
 

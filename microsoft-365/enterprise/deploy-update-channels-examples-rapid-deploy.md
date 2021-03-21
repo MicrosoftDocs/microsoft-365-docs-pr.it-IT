@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Modalità con cui un'organizzazione che distribuisce la versione più recente utilizza i canali per le app di Windows 10 e Microsoft 365.
-ms.openlocfilehash: fd1d8ddd342b2781470378c879ef70d2ba304316
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: 29bda1651a83f0e043cf8a0d2a102c6c2e461bfd
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686167"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919075"
 ---
 # <a name="example-of-broad-deployment-for-the-latest-releases"></a>Esempi di distribuzione generale delle versioni più recenti
 
@@ -61,7 +61,7 @@ In base ad obiettivi di rapida distribuzione della versione più recente, questa
 
 L'obiettivo complessivo è eseguire una distribuzione su larga scala della versione più recente del Canale semestrale a seguito della convalida delle modifiche al Canale delle versioni di anteprima da parte di un gruppo di utenti rappresentativi e dei loro dispositivi.
 
-Per altre informazioni sui metodi e sulle strategie di distribuzione di Windows 10, vedere [distribuzione di Windows 10](https://docs.microsoft.com/windows/deployment/).
+Per altre informazioni sui metodi e sulle strategie di distribuzione di Windows 10, vedere [distribuzione di Windows 10](/windows/deployment/).
 
 | Fase | Canale | Guida alla distribuzione |
 |:-------|:-------|:-----|
@@ -85,7 +85,7 @@ Processo di aggiornamento continuativo:
 
 L'obiettivo complessivo è eseguire una distribuzione su larga scala della versione più recente del Canale semestrale a seguito della convalida delle modifiche al Canale delle versioni di anteprima da parte di un gruppo di utenti rappresentativi.
 
-Per altre informazioni sui metodi e sulle strategie di distribuzione delle app di Microsoft 365, vedere [distribuzione delle app di Microsoft 365](https://docs.microsoft.com/deployoffice/plan-office-365-proplus).
+Per altre informazioni sui metodi e sulle strategie di distribuzione delle app di Microsoft 365, vedere [distribuzione delle app di Microsoft 365](/deployoffice/plan-office-365-proplus).
 
 | Fase | Canale | Guida alla distribuzione |
 |:-------|:-------|:-----|

@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e27659517f8c7b5cbc7936b825ac867a2888e251
-ms.sourcegitcommit: 3d48e198e706f22ac903b346cadda06b2368dd1e
+ms.openlocfilehash: 288be30aa9592ba7feed92b9ad49955406f59f10
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "50727205"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918799"
 ---
 # <a name="track-and-respond-to-emerging-threats-with-threat-analytics"></a>Tenere traccia e rispondere alle minacce emergenti con l'analisi delle minacce 
 
@@ -35,7 +35,7 @@ ms.locfileid: "50727205"
 **Si applica a:**
 - Microsoft 365 Defender
 
-> Vuoi provare Microsoft 365 Defender? È possibile [valutarlo in un ambiente lab o](https://aka.ms/mtp-trial-lab) eseguire il progetto pilota in [produzione.](https://aka.ms/m365d-pilotplaybook)
+> Vuoi provare Microsoft 365 Defender? È possibile [valutarlo in un ambiente lab o](./mtp-evaluation.md?ocid=cx-docs-MTPtriallab) eseguire il progetto pilota in [produzione.](./mtp-pilot.md?ocid=cx-evalpilot)
 >
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
@@ -155,7 +155,7 @@ Nella sezione **Mitigazioni** esaminare l'elenco di suggerimenti specifici che c
   - Protezione delle applicazioni potenzialmente indesiderate
   - Protezione in tempo reale
  
-Le informazioni di mitigazione contenute in questa sezione incorporano i dati della gestione delle minacce e delle [vulnerabilità,](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)che forniscono inoltre informazioni dettagliate di drill-down da vari collegamenti nel report.
+Le informazioni di mitigazione contenute in questa sezione incorporano i dati della gestione delle minacce e delle [vulnerabilità,](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)che forniscono inoltre informazioni dettagliate di drill-down da vari collegamenti nel report.
 
 ![Immagine della sezione mitigazioni di un report di analisi delle minacce che mostra i dettagli della configurazione sicura Immagine della sezione mitigazioni di un report di analisi delle minacce che ](../../media/threat-analytics/ta_mitigations_mtp.png)
  ![ mostra i dettagli della vulnerabilità](../../media/threat-analytics/ta_mitigations_mtp2.png)
@@ -181,4 +181,4 @@ Quando si esaminano i dati di analisi delle minacce, tenere presente i fattori s
 ## <a name="related-topics"></a>Argomenti correlati
 - [Trovare in modo proattivo le minacce con la ricerca avanzata](advanced-hunting-overview.md) 
 - [Informazioni sulla sezione relativa al report degli analisti](threat-analytics-analyst-reports.md)
-- [Valutare e risolvere i punti deboli e le esposizioni della sicurezza](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)
+- [Valutare e risolvere i punti deboli e le esposizioni della sicurezza](/windows/security/threat-protection/microsoft-defender-atp/next-gen-threat-and-vuln-mgt)

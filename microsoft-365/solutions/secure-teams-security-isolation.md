@@ -15,12 +15,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Informazioni su come creare un team con un'etichetta di riservatezza univoca per la sicurezza.
-ms.openlocfilehash: 5ddd42f9e2f2779ca6bf864554140a3f18d2cdea
-ms.sourcegitcommit: 070724118be25cd83418d2a56863da95582dae65
+ms.openlocfilehash: 2ecd8e0458f6ebef9ebd1b0c3724195cc70f6378
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "50405703"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920929"
 ---
 # <a name="configure-a-team-with-security-isolation"></a>Configurare un team con l'isolamento di sicurezza
 
@@ -40,7 +40,7 @@ Gli elementi della configurazione di un team con l’isolamento di sicurezza son
     - Crittografa i documenti a cui è applicata l'etichetta
 
 > [!IMPORTANT]
-> Assicurarsi di avere abilitato i [criteri di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di Office 365 e siti di SharePoint](https://docs.microsoft.com/microsoft-365/compliance/sensitivity-labels-teams-groups-sites) prima di procedere con i passaggi descritti in questo articolo.
+> Assicurarsi di avere abilitato i [criteri di riservatezza per proteggere il contenuto in Microsoft Teams, gruppi di Office 365 e siti di SharePoint](../compliance/sensitivity-labels-teams-groups-sites.md) prima di procedere con i passaggi descritti in questo articolo.
 
 Guardare il video per una panoramica del processo di distribuzione.
 <br>
@@ -70,8 +70,8 @@ A seconda del tipo di attività, è possibile abilitare la condivisione guest pe
 
 Per informazioni dettagliate sulla condivisione sicura di con gli utenti guest, vedere le risorse seguenti:
 
-- [Limitare l'esposizione accidentale ai file durante la condivisione con persone esterne all'organizzazione](https://docs.microsoft.com/microsoft-365/solutions/share-limit-accidental-exposure)
-- [Creare un ambiente di condivisione guest sicuro](https://docs.microsoft.com/microsoft-365/solutions/create-secure-guest-sharing-environment)
+- [Limitare l'esposizione accidentale ai file durante la condivisione con persone esterne all'organizzazione](./share-limit-accidental-exposure.md)
+- [Creare un ambiente di condivisione guest sicuro](./create-secure-guest-sharing-environment.md)
 
 Per consentire o impedire la condivisione guest, è possibile usare una combinazione di un'etichetta di riservatezza per il team e di controlli di condivisione a livello di team per il sito di SharePoint associato, entrambi illustrati più avanti.
 
@@ -98,7 +98,7 @@ Per limitare la creazione di canali privati
 2. Nella scheda **Impostazioni** espandere **Autorizzazioni dei membri**.
 3. Deselezionare la casella di controllo **Consenti ai membri di creare canali privati**.
 
-È anche possibile usare i [criteri dei team](https://docs.microsoft.com/MicrosoftTeams/teams-policies) per controllare chi può creare canali privati.
+È anche possibile usare i [criteri dei team](/MicrosoftTeams/teams-policies) per controllare chi può creare canali privati.
 
 ## <a name="create-a-sensitivity-label"></a>Creare un'etichetta di riservatezza
 
@@ -194,7 +194,7 @@ Per aggiornare le impostazioni dei siti
 
 #### <a name="private-channels"></a>Canali privati
 
-Se si aggiungono canali privati al team, ogni canale privato crea un nuovo sito di SharePoint con le impostazioni di condivisione predefinite. Questi siti non sono visibili nell'interfaccia di amministrazione di SharePoint, quindi è necessario usare il cmdlet di PowerShell [Set-SPOSite](https://docs.microsoft.com/powershell/module/sharepoint-online/set-sposite) con i parametri seguenti per aggiornare le impostazioni di condivisione guest:
+Se si aggiungono canali privati al team, ogni canale privato crea un nuovo sito di SharePoint con le impostazioni di condivisione predefinite. Questi siti non sono visibili nell'interfaccia di amministrazione di SharePoint, quindi è necessario usare il cmdlet di PowerShell [Set-SPOSite](/powershell/module/sharepoint-online/set-sposite) con i parametri seguenti per aggiornare le impostazioni di condivisione guest:
 
 - `-SharingCapability Disabled` per disattivare la condivisione guest (per impostazione predefinita è attivata)
 - `-DefaultSharingLinkType Internal` per impostare il collegamento di condivisione predefinito su *Persone specifiche*
@@ -229,10 +229,10 @@ Per invitare utenti al sito
 
 In Microsoft 365 sono disponibili altri metodi per proteggere i contenuti. Valutare se le opzioni seguenti possono migliorare la sicurezza per l'organizzazione.
 
-- Chiedere agli utenti guest di accettare le [condizioni per l'utilizzo](https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use).
-- Configurare un [criterio di timeout della sessione](https://docs.microsoft.com/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) per gli utenti guest.
-- Creare [tipi di informazioni sensibili](https://docs.microsoft.com/microsoft-365/compliance/custom-sensitive-info-types) e usare la [prevenzione della perdita dei dati](https://docs.microsoft.com/microsoft-365/compliance/data-loss-prevention-policies) per impostare criteri per l'accesso alle informazioni riservate.
-- Usare le [verifiche di accesso di Azure Active Directory](https://docs.microsoft.com/azure/active-directory/governance/access-reviews-overview) per verificare periodicamente l'accesso e l'appartenenza al team.
+- Chiedere agli utenti guest di accettare le [condizioni per l'utilizzo](/azure/active-directory/conditional-access/terms-of-use).
+- Configurare un [criterio di timeout della sessione](/azure/active-directory/conditional-access/howto-conditional-access-session-lifetime) per gli utenti guest.
+- Creare [tipi di informazioni sensibili](../compliance/sensitive-information-type-learn-about.md) e usare la [prevenzione della perdita dei dati](../compliance/data-loss-prevention-policies.md) per impostare criteri per l'accesso alle informazioni riservate.
+- Usare le [verifiche di accesso di Azure Active Directory](/azure/active-directory/governance/access-reviews-overview) per verificare periodicamente l'accesso e l'appartenenza al team.
 
 ## <a name="drive-user-adoption-for-team-members"></a>Incoraggiare l'adozione da parte dei membri del team
 
@@ -266,4 +266,4 @@ Ripetere la formazione degli utenti se necessario.
 
 ## <a name="see-also"></a>Vedere anche
 
-[Azure AD Privileged Identity Management](https://docs.microsoft.com/azure/active-directory/privileged-identity-management/pim-configure)
+[Azure AD Privileged Identity Management](/azure/active-directory/privileged-identity-management/pim-configure)

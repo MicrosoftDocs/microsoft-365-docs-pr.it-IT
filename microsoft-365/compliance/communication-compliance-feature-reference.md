@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 30ad9bf968fa91218d15a6f71785d5299e664ddc
-ms.sourcegitcommit: 8f1721de52dbe3a12c11a0fa5ed0ef5972ca8196
+ms.openlocfilehash: 48cc75276e4e3791fa16520df5a4c392c23a0cd5
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "50838499"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919912"
 ---
 # <a name="communication-compliance-feature-reference"></a>Informazioni di riferimento sulla funzionalità di conformità delle comunicazioni
 
@@ -88,7 +88,7 @@ Per aggiornare i ruoli per questi utenti per la nuova struttura del gruppo di ru
 
 ## <a name="supervised-users"></a>Utenti con supervisione
 
-Prima di iniziare a usare la conformità delle comunicazioni, è necessario determinare chi deve essere esaminato dalle comunicazioni. Nel criterio, gli indirizzi di posta elettronica degli utenti identificano gli utenti o i gruppi di persone da supervisionare. Alcuni esempi di questi gruppi sono i gruppi di Microsoft 365, le liste di distribuzione basate su Exchange, le community di Yammer e i canali di Microsoft Teams. È inoltre possibile escludere utenti o gruppi specifici dall'analisi con un gruppo di esclusione specifico o un elenco di gruppi.
+Prima di iniziare a usare la conformità delle comunicazioni, è necessario determinare chi deve essere esaminato dalle comunicazioni. Nel criterio, gli indirizzi di posta elettronica degli utenti identificano gli utenti o i gruppi di persone da supervisionare. Alcuni esempi di questi gruppi sono i gruppi di Microsoft 365, le liste di distribuzione basate su Exchange, le community di Yammer e i canali di Microsoft Teams. È inoltre possibile escludere utenti o gruppi specifici dall'analisi con un gruppo di esclusione specifico o un elenco di gruppi. Per ulteriori informazioni sui tipi di gruppi supportati nei criteri di conformità delle comunicazioni, vedere [Introduzione alla conformità delle comunicazioni.](communication-compliance-configure.md#step-3-optional-set-up-groups-for-communication-compliance)
 
 >[!IMPORTANT]
 >Gli utenti coperti dai criteri di conformità delle comunicazioni devono disporre di una licenza di conformità di Microsoft 365 E5, di una licenza di Office 365 Enterprise E3 con il componente aggiuntivo Conformità avanzata o di essere inclusi in un abbonamento a Office 365 Enterprise E5. Se non si dispone di un piano Enterprise E5 esistente e si desidera provare la conformità delle comunicazioni, è possibile iscriversi a una versione di valutazione di [Office 365 Enterprise E5.](https://go.microsoft.com/fwlink/p/?LinkID=698279)
@@ -112,7 +112,7 @@ Con i criteri di conformità delle comunicazioni, è possibile scegliere di anal
 - **Microsoft Teams:** è possibile analizzare le comunicazioni chat sia nei canali pubblici che privati di Microsoft Teams e nelle singole chat. Quando gli utenti vengono assegnati a un criterio di conformità delle comunicazioni con la copertura di Microsoft Teams selezionata, le comunicazioni di chat per gli utenti vengono monitorate automaticamente in tutti i Microsoft Teams in cui gli utenti sono membri. La copertura di Microsoft Teams viene inclusa automaticamente per i modelli di criteri predefiniti ed è selezionata per impostazione predefinita nel modello di criteri personalizzato. L'elaborazione delle chat di Teams che corrispondono alle condizioni dei criteri di conformità della comunicazione può richiedere fino a 48 ore. Utilizzare le configurazioni di gestione dei gruppi seguenti per supervisionare le singole chat utente e le comunicazioni dei canali in Teams:
 
     - **Per le comunicazioni chat di Teams:** Assegnare singoli utenti o assegnare un [gruppo di distribuzione](https://support.office.com/article/Distribution-groups-E8BA58A8-FAB2-4AAF-8AA1-2A304052D2DE) ai criteri di conformità delle comunicazioni. Questa impostazione è per le relazioni utente/chat uno-a-uno o uno-a-molti.
-    - **Per le comunicazioni di Teams Channel:** Assegnare ai criteri di conformità delle comunicazioni ogni canale di Microsoft Teams o gruppo di Microsoft 365 che si desidera analizzare contenente un utente specifico. Se si aggiunge lo stesso utente ad altri canali di Microsoft Teams o gruppi di Microsoft 365, assicurarsi di aggiungere questi nuovi canali e gruppi ai criteri di conformità delle comunicazioni.
+    - **Per le comunicazioni di Teams Channel:** Assegnare ai criteri di conformità delle comunicazioni ogni canale di Microsoft Teams o gruppo di Microsoft 365 che si desidera analizzare contenente un utente specifico. Se si aggiunge lo stesso utente ad altri canali di Microsoft Teams o gruppi di Microsoft 365, assicurarsi di aggiungere questi nuovi canali e gruppi ai criteri di conformità delle comunicazioni. Se un membro del canale è un utente con supervisione all'interno di un criterio e la direzione *in* ingresso è configurata in un criterio, tutti i messaggi inviati all'interno del canale sono soggetti alla revisione e alle possibili corrispondenze dei criteri (anche per gli utenti nel canale che non sono supervisionati esplicitamente). Ad esempio, l'utente A è il proprietario o un membro di un canale. L'utente B e l'utente C sono membri dello stesso canale e utilizzano un linguaggio corrispondente ai criteri di lingua offensivi che controllano solo l'utente A. L'utente B e l'utente C creano corrispondenze dei criteri per le conversazioni all'interno del canale anche se non sono direttamente controllati nei criteri di linguaggio offensivo. Le conversazioni di Teams tra l'utente B e l'utente C che si trova all'esterno del canale che include l'utente A non sono soggette ai criteri di linguaggio offensivi che includono l'utente A. Per escludere i membri del canale dalla supervisione quando altri membri del canale vengono supervisionati in modo esplicito, disattivare l'impostazione Direzione di comunicazione *in* ingresso nei criteri di conformità delle comunicazioni applicabili.
     - **Per le comunicazioni chat** di Teams con ambienti di posta elettronica ibridi: la conformità delle comunicazioni può monitorare i messaggi di chat per gli utenti delle organizzazioni con una distribuzione di Exchange locale o un provider di posta elettronica esterno che ha abilitato Microsoft Teams. È necessario creare un gruppo di distribuzione per gli utenti con cassette postali locali o esterne da monitorare. Quando si crea un criterio di conformità delle  comunicazioni, si assegna questo gruppo di distribuzione come selezione Di utenti e gruppi supervisionati nella procedura guidata dei criteri.
 
     >[!IMPORTANT]
@@ -428,7 +428,7 @@ Completare la procedura seguente per eliminare un flusso di Power Automate:
 4. Nella pagina **Flussi automatici di alimentazione** selezionare il flusso da eliminare. Seleziona **Elimina** dal menu controllo di flusso.
 5. Nella finestra di dialogo di conferma dell'eliminazione, selezionare **Elimina** per rimuovere il flusso oppure **scegliere Annulla** per uscire dall'azione di eliminazione.
 
-## <a name="reports-preview"></a>Report (anteprima)
+## <a name="reports"></a>Report
 
 Il nuovo dashboard **Report** è la posizione centrale per la visualizzazione di tutti i report di conformità delle comunicazioni. I widget di report offrono una rapida visualizzazione delle informazioni dettagliate più comunemente necessarie per una valutazione complessiva dello stato delle attività di conformità delle comunicazioni. Le informazioni contenute nei widget di report non sono esportabili. I report dettagliati forniscono informazioni approfondite relative a specifiche aree di conformità delle comunicazioni e offrono la possibilità di filtrare, raggruppare, ordinare ed esportare informazioni durante la revisione.
 

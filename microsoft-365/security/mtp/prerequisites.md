@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: afa5cd42545eddafb1d0ec1a6d88eb0903e07820
-ms.sourcegitcommit: 375168ee66be862cf3b00f2733c7be02e63408cf
+ms.openlocfilehash: 0184b2c05121e1ea3bf365263df880548f1b9232
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50454552"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50918871"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Prerequisiti di Microsoft 365 Defender
 
@@ -50,28 +50,28 @@ Una di queste licenze consente di accedere alle funzionalità di Microsoft 365 D
 - Microsoft Cloud App Security
 - Defender per Office 365 (Piano 2)
 
-Per ulteriori informazioni, [vedere i piani di servizio di Microsoft 365 Enterprise.](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)
+Per ulteriori informazioni, visualizzare i piani di servizio di [Microsoft 365 Enterprise.](https://www.microsoft.com/licensing/product-licensing/microsoft-365-enterprise)
 
-> Non hai ancora la licenza? [Provare o acquistare un abbonamento a Microsoft 365](https://docs.microsoft.com/microsoft-365/commerce/try-or-buy-microsoft-365?view=o365-worldwide)
+> Non hai ancora la licenza? [Provare o acquistare un abbonamento a Microsoft 365](../../commerce/try-or-buy-microsoft-365.md?view=o365-worldwide)
 
 ### <a name="check-your-existing--licenses"></a>Controllare le licenze esistenti
 Passare all'interfaccia di amministrazione di Microsoft 365 ([admin.microsoft.com](https://admin.microsoft.com/)) per visualizzare le licenze esistenti. Nell'interfaccia di amministrazione, andare in **Fatturazione** > **Licenze**.
 
 >[!NOTE]
-> Per poter visualizzare le  informazioni  sulla licenza, devi avere il ruolo amministratore fatturazione o lettore globale [in Azure AD.](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) Se si verificano problemi di accesso, rivolgersi a un amministratore globale.
+> Per poter visualizzare le informazioni  sulla licenza, devi essere assegnato al ruolo **Amministratore** fatturazione o Lettore globale [in Azure AD.](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles) Se si verificano problemi di accesso, rivolgersi a un amministratore globale.
 
 ## <a name="required-permissions"></a>Autorizzazioni necessarie
-Per attivare  Microsoft 365 Defender, è necessario essere un amministratore globale o un amministratore della sicurezza **in** Azure Active Directory. Per l'elenco dei ruoli necessari per usare Microsoft 365 Defender e per informazioni su come è regolamentato l'accesso ai dati, vedere informazioni sulla gestione dell'accesso a [Microsoft 365 Defender.](mtp-permissions.md)
+Per attivare Microsoft 365 **Defender,** è necessario essere un amministratore globale o un amministratore della sicurezza **in** Azure Active Directory. Per l'elenco dei ruoli necessari per l'utilizzo di Microsoft 365 Defender e per informazioni su come viene regolamentato l'accesso ai dati, leggere informazioni sulla gestione dell'accesso a [Microsoft 365 Defender.](mtp-permissions.md)
 
 ## <a name="browser-requirements"></a>Requisiti per il browser
-Accedere a Microsoft 365 Defender nel Centro sicurezza Microsoft 365 usando Microsoft Edge, Internet Explorer 11 o qualsiasi Web browser conforme a HTML 5.
+Accedere a Microsoft 365 Defender nel Centro sicurezza Microsoft 365 usando Microsoft Edge, Internet Explorer 11 o qualsiasi web browser conforme a HTML 5.
 
-## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a>Disponibilità per US GCC, GCC High e altri istituti governativi degli Stati Uniti
+## <a name="availability-to-us-gcc-gcc-high-and-other-us-government-institutions"></a>Disponibilità per US GCC, GCC High e altre istituzioni governative statunitensi
 Attualmente, Microsoft 365 Defender *non è* disponibile per:
 - US Government Community Cloud (GCC)
 - US Government Community Cloud High (GCC High)
-- Dipartimento della Difesa degli Stati Uniti
-- Tutti gli istituti governativi degli Stati Uniti con licenze commerciali
+- US Department of Defense
+- Tutte le istituzioni governative statunitensi con licenze commerciali
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica di Microsoft 365 Defender](microsoft-threat-protection.md)

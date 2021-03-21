@@ -15,12 +15,12 @@ ms.collection:
 - M365-subscription-management
 ms.custom: ''
 description: Come le organizzazioni di esempio distribuiscono e aggiornano i canali.
-ms.openlocfilehash: 88567fedd92f01885c4971acc273a676c3e82de8
-ms.sourcegitcommit: 79065e72c0799064e9055022393113dfcf40eb4b
+ms.openlocfilehash: a91ee948ca2051ceccb3883b2dd0198c1070bc03
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "46686155"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919063"
 ---
 # <a name="deployment-and-update-channel-example-configurations"></a>Configurazioni di esempio per la distribuzione e il canale di aggiornamento
 
@@ -41,9 +41,9 @@ Fare clic sul collegamento nella colonna di **esempio** per completare le fasi d
 
 | Offerta cliente/canale | Windows 10 | Microsoft 365 Apps for Enterprise (Windows 10) | Esempio |
 |:-------|:-------|:-----|:-------|
-| Adatto a clienti che desiderano le versioni più recenti non appena esse sono disponibili. | Canale semestrale | [Canale corrente](https://docs.microsoft.com/deployoffice/overview-update-channels#current-channel-overview) | [Versioni più recenti](deploy-update-channels-examples-rapid-deploy.md) |
-| Adatto ad aziende che desiderano ottenere la versione più recente con una prevedibilità aggiuntiva. | Canale semestrale | [Canale Enterprise mensile](https://docs.microsoft.com/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) |  |
-| Adatto ad aziende che necessitano di test IT completi prima di ogni aggiornamento. | Canale semestrale | [Canale Enterprise semestrale](https://docs.microsoft.com/deployoffice/overview-update-channels#semi-annual-enterprise-channel-overview) |  |
+| Adatto a clienti che desiderano le versioni più recenti non appena esse sono disponibili. | Canale semestrale | [Canale corrente](/deployoffice/overview-update-channels#current-channel-overview) | [Versioni più recenti](deploy-update-channels-examples-rapid-deploy.md) |
+| Adatto ad aziende che desiderano ottenere la versione più recente con una prevedibilità aggiuntiva. | Canale semestrale | [Canale Enterprise mensile](/deployoffice/overview-update-channels#monthly-enterprise-channel-overview) |  |
+| Adatto ad aziende che necessitano di test IT completi prima di ogni aggiornamento. | Canale semestrale | [Canale Enterprise semestrale](/deployoffice/overview-update-channels#semi-annual-enterprise-channel-overview) |  |
 |||||
 
 

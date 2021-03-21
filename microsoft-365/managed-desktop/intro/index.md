@@ -9,17 +9,17 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 8e95eb0fd0e03dc718affa7e7cf044beb654bb56
-ms.sourcegitcommit: 83a40facd66e14343ad3ab72591cab9c41ce6ac0
+ms.openlocfilehash: 07d3d50f012b2d93e9f7a75f47b0c35514b51350
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "49840936"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920621"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Cos'è Microsoft Managed Desktop?
 
 
-Microsoft Managed Desktop è un servizio basato sul cloud che raggruppa [Microsoft 365 Enterprise](https://docs.microsoft.com/microsoft-365/enterprise/microsoft-365-overview) (tra cui [Windows 10](https://docs.microsoft.com/windows/windows-10/) Enterprise e [Office 365 Enterprise](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)) con l'aggiunta di queste caratteristiche:
+Microsoft Managed Desktop è un servizio basato sul cloud che raggruppa [Microsoft 365 Enterprise](../../enterprise/microsoft-365-overview.md) (tra cui [Windows 10](/windows/windows-10/) Enterprise e [Office 365 Enterprise](https://www.microsoft.com/microsoft-365/business/compare-more-office-365-for-business-plans)) con l'aggiunta di queste caratteristiche:
 
 - Distribuzione di dispositivi utente
 - Gestione e operazioni servizi IT
@@ -44,7 +44,7 @@ I criteri e le previsioni di sicurezza offrono agli utenti questi vantaggi:
 - Tempi di avvio per i dispositivi Microsoft Managed Desktop di circa un quarto inferiore.
 - Almeno due volte il ciclo di vita della batteria
 - Circa un terzo in meno di arresti anomali dei dispositivi all'anno
-- La mobilità dei dispositivi attraverso [Enterprise State Roaming](https://docs.microsoft.com/azure/active-directory/devices/enterprise-state-roaming-overview), con il quale viene consentito agli utenti di avere la stessa esperienza indipendentemente dal dispositivo di accesso.
+- La mobilità dei dispositivi attraverso [Enterprise State Roaming](/azure/active-directory/devices/enterprise-state-roaming-overview), con il quale viene consentito agli utenti di avere la stessa esperienza indipendentemente dal dispositivo di accesso.
 
 Gli amministratori IT traggono vantaggio da queste caratteristiche:
 
@@ -58,7 +58,7 @@ Microsoft Managed Desktop gestisce i dispositivi registrati e il software Micros
 
 - **Hardware:** anziché far ricercare e verificare dal tuo reparto IT i dispositivi (e i relativi driver), i dispositivi specifici vengono testati con attenzione da Microsoft Managed Desktop, creando una [serie di dispositivi](../service-description/device-list.md) che soddisfano i requisiti di prestazioni a livello aziendale, garantiti per l'uso. È possibile procurarsi i dispositivi da se (o collaborare con un partner) o riutilizzare i dispositivi già esistenti, purché siano nell'elenco approvato. La registrazione dei dispositivi è facile e immediata. Prima di essere distribuiti, è anche possibile [personalizzare](../working-with-managed-desktop/config-setting-overview.md) alcuni caratteristiche del dispositivo per gli utenti.
 - **Aggiornamenti:** Microsoft Managed Desktop consente di configurare e gestire tutti gli aspetti dei [gruppi di distribuzione](../service-description/updates.md) per quanto riguarda aggiornamenti di qualità e funzionalità di Windows 10, driver, firmware, definizioni antivirus e app Microsoft 365 per gli aggiornamenti aziendali. Questo include test e verifica approfonditi di tutti gli aggiornamenti, assicurando che i dispositivi registrati siano sempre aggiornati, riducendo al minimo i disservizi, così da liberare il tuo reparto IT.
-- **App:** nell'ambito di Microsoft 365 Enterprise, Microsoft include (e gestisce) diverse app Microsoft fondamentali. Probabilmente ti occorrono anche altre app per la tua azienda. Anziché far testare, creare e distribuire le app dal tuo reparto IT, Microsoft ti aiuta a distribuirle e può assisterti con [Desktop App Assure](https://docs.microsoft.com/fasttrack/win-10-desktop-app-assure) se necessario. Ulteriori informazioni su [App in Microsoft Managed Desktop](../get-ready/apps.md).
+- **App:** nell'ambito di Microsoft 365 Enterprise, Microsoft include (e gestisce) diverse app Microsoft fondamentali. Probabilmente ti occorrono anche altre app per la tua azienda. Anziché far testare, creare e distribuire le app dal tuo reparto IT, Microsoft ti aiuta a distribuirle e può assisterti con [Desktop App Assure](/fasttrack/win-10-desktop-app-assure) se necessario. Ulteriori informazioni su [App in Microsoft Managed Desktop](../get-ready/apps.md).
 
 
 ## <a name="device-monitoring"></a>Monitoraggio del dispositivo
@@ -79,7 +79,7 @@ Se Microsoft Managed Desktop risulta più appropriato per la tua azienda, puoi a
 - [Tecnologie Microsoft Managed Desktop](technologies.md)
 - [Microsoft Managed Desktop e ITIL](../MMD-and-ITSM.md)
 - [Conformità](compliance.md)
-- [Descrizione del servizio Microsoft Managed Desktop](https://docs.microsoft.com/microsoft-365/managed-desktop/service-description/)
+- [Descrizione del servizio Microsoft Managed Desktop](../service-description/index.md)
 
 **Prepararsi per la registrazione** Questi argomenti descrivono i passaggi da eseguire dall’azienda per prepararsi alla registrazione, tra cui verificare che l'ambiente soddisfi i prerequisiti principali, la configurazione delle reti, la configurazione dei certificati e la preparazione delle app.
 
@@ -114,4 +114,3 @@ Se Microsoft Managed Desktop risulta più appropriato per la tua azienda, puoi a
 <!--When you enroll in Microsoft Managed Desktop, Microsoft provides you with devices that are configured to join your Azure Active Directory tenant. Windows 10, Office 365, and some apps and features associated with [Microsoft 365 Enterprise E5](https://www.microsoft.com/microsoft-365/compare-all-microsoft-365-plans) are installed (by Microsoft) on your devices. When your employees who are using these devices need help, they contact Microsoft Managed Desktop support (provided by Microsoft) through a custom chat app.--> 
 
 <!--With Microsoft Managed Desktop, you get **software as a service** (Microsoft 365 E5), **Device as a service** (Microsoft Surface devices ready to use), and **IT support as a service** (Help desk and more).--> 
- 

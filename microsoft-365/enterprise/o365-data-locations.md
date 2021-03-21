@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Determinare dove sono archiviati i dati dei clienti Microsoft 365 in tutto il mondo '
-ms.openlocfilehash: dc74393eadbd5f1abc62efe7411434d0b919e5fe
-ms.sourcegitcommit: cbe8724bd71d1c002395d98f1451c5f578c824f9
+ms.openlocfilehash: a93f83e7efafa06aa65675342471c26f1b197864
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "49988105"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50920789"
 ---
 <!--
 Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
@@ -58,11 +58,11 @@ Microsoft non rivela gli indirizzi esatti dei propri data center. Abbiamo stabil
 
 ### <a name="does-the-location-of-your-customer-data-have-a-direct-impact-on-your-end-users-experience"></a>La posizione dei dati dei clienti ha un impatto diretto sull'esperienza degli utenti finali?
 
-Le prestazioni di Microsoft 365 non sono semplicemente proporzionali alla distanza dell'utente dalle ubicazioni dei data center. I continui investimenti effettuati da Microsoft nella propria rete cloud globale, nell'infrastruttura cloud globale e nell'architettura dei servizi di Microsoft 365 assicurano agli utenti un'esperienza unica e coerente, indipendentemente da dove vengono archiviati i loro dati inattivi. Se gli utenti riscontrano problemi di prestazioni, è necessario eseguire procedure complete di risoluzione dei problemi. Microsoft ha pubblicato istruzioni per i clienti di Microsoft 365 per pianificare e ottimizzare le prestazioni per gli utenti finali nel [sito Web del supporto di Office](https://go.microsoft.com/fwlink/p/?linkid=862645).
+Le prestazioni di Microsoft 365 non sono semplicemente proporzionali alla distanza dell'utente dalle ubicazioni dei data center. I continui investimenti effettuati da Microsoft nella propria rete cloud globale, nell'infrastruttura cloud globale e nell'architettura dei servizi di Microsoft 365 assicurano agli utenti un'esperienza unica e coerente, indipendentemente da dove vengono archiviati i loro dati inattivi. Se gli utenti riscontrano problemi di prestazioni, è necessario eseguire procedure complete di risoluzione dei problemi. Microsoft ha pubblicato istruzioni per i clienti di Microsoft 365 per pianificare e ottimizzare le prestazioni per gli utenti finali nel [sito Web del supporto di Office](./network-planning-and-performance.md).
 
 ### <a name="how-does-microsoft-help-me-comply-with-my-national-regional-and-industry-specific-regulations"></a>In che modo Microsoft aiuta i clienti a rispettare la conformità a normative nazionali, regionali e specifiche del settore?
 
-Per aiutare i clienti a rispettare la conformità a requisiti nazionali, locali e specifici del settore che regolamentano la raccolta e l'uso dei dati degli utenti, Microsoft 365 include il set più completo di offerte di conformità rispetto a qualsiasi altro provider di strumenti di produttività nel cloud. Per altre informazioni, vedere le [offerte di conformità](https://go.microsoft.com/fwlink/p/?linkid=864391) e altri dettagli nella sezione [Conformità di Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=862317) del Centro protezione Microsoft. Inoltre, alcuni piani di Microsoft 365 offrono ulteriori soluzioni di conformità per agevolare la gestione dei dati, il rispetto della conformità a requisiti legali e normativi e il monitoraggio delle azioni eseguite sui dati.
+Per aiutare i clienti a rispettare la conformità a requisiti nazionali, locali e specifici del settore che regolamentano la raccolta e l'uso dei dati degli utenti, Microsoft 365 include il set più completo di offerte di conformità rispetto a qualsiasi altro provider di strumenti di produttività nel cloud. Per altre informazioni, vedere le [offerte di conformità](/compliance/regulatory/offering-home) e altri dettagli nella sezione [Conformità di Microsoft 365](https://go.microsoft.com/fwlink/p/?linkid=862317) del Centro protezione Microsoft. Inoltre, alcuni piani di Microsoft 365 offrono ulteriori soluzioni di conformità per agevolare la gestione dei dati, il rispetto della conformità a requisiti legali e normativi e il monitoraggio delle azioni eseguite sui dati.
 
 ### <a name="who-can-access-your-data-and-according-to-what-rules"></a>Chi può accedere ai dati e in base a quali regole?
 

@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Connettersi al tenant di Microsoft 365 con PowerShell per Microsoft 365 per eseguire attività dell'interfaccia di amministrazione tramite riga di comando.
-ms.openlocfilehash: 0691304a2d40f7ae4262e6761902f16b4f6d5ee2
-ms.sourcegitcommit: 786f90a163d34c02b8451d09aa1efb1e1d5f543c
+ms.openlocfilehash: 58af42958e9b50ee8e39cbd7bd5aab53812e444c
+ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 02/18/2021
-ms.locfileid: "50288114"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "50919177"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>Collegare Microsoft 365 con PowerShell
 
@@ -60,17 +60,17 @@ Attualmente il modulo di Azure Active Directory PowerShell per Graph non sostitu
 - Per il Modulo di Microsoft Azure Active Directory per Windows PowerShell, è necessario usare PowerShell versione 5.1 o successive fino alla versione 6. Non è possibile usare la versione 7 di PowerShell.
        
 >[!Note]
->Queste procedure sono destinate agli utenti membri di un ruolo di amministratore di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](https://go.microsoft.com/fwlink/p/?LinkId=532367).
+>Queste procedure sono destinate agli utenti membri di un ruolo di amministratore di Microsoft 365. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore](../admin/add-users/about-admin-roles.md).
 
 
 ## <a name="connect-with-the-azure-active-directory-powershell-for-graph-module"></a>Connettersi con il modulo di Azure Active Directory PowerShell per Graph
 
-I comandi nel modulo di Azure Active Directory PowerShell per Graph hanno *AzureAD* nel nome del cmdlet. È possibile installare il [modulo di Azure Active Directory PowerShell per Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2) o [Azure PowerShell](https://docs.microsoft.com/powershell/azure/install-az-ps).
+I comandi nel modulo di Azure Active Directory PowerShell per Graph hanno *AzureAD* nel nome del cmdlet. È possibile installare il [modulo di Azure Active Directory PowerShell per Graph](/powershell/azure/active-directory/install-adv2) o [Azure PowerShell](/powershell/azure/install-az-ps).
 
 Per le procedure che richiedono i nuovi cmdlet nel modulo di Azure Active Directory PowerShell per Graph, seguire questi passaggi per installare il modulo e connettersi alla sottoscrizione di Microsoft 365.
 
 > [!Note]
-> Per informazioni sul supporto per le altre versioni di Windows, vedere [Modulo di Azure Active Directory PowerShell per Graph](https://docs.microsoft.com/powershell/azure/active-directory/install-adv2).
+> Per informazioni sul supporto per le altre versioni di Windows, vedere [Modulo di Azure Active Directory PowerShell per Graph](/powershell/azure/active-directory/install-adv2).
 
 ### <a name="step-1-install-the-required-software"></a>Passaggio 1: installare il software necessario
 
@@ -102,7 +102,7 @@ Nella finestra di dialogo per **accedere all'account**, digitare nome utente e p
 
 Se si utilizza l'autenticazione a più fattori, seguire le istruzioni per fornire ulteriori informazioni di autenticazione, ad esempio un codice di verifica.
 
-Dopo aver eseguito la connessione, è possibile usare i cmdlet per il [modulo di Azure Active Directory PowerShell per Graph](https://docs.microsoft.com/powershell/module/azuread).
+Dopo aver eseguito la connessione, è possibile usare i cmdlet per il [modulo di Azure Active Directory PowerShell per Graph](/powershell/module/azuread).
 
 ## <a name="connect-with-the-microsoft-azure-active-directory-module-for-windows-powershell"></a>Connettersi con il Modulo di Microsoft Azure Active Directory per Windows PowerShell
 
@@ -152,11 +152,11 @@ Se viene visualizzato un messaggio di errore, controllare i problemi seguenti:
     
 - **Il Modulo di Microsoft Azure Active Directory per Windows PowerShell richiede che Microsoft .NET Framework 3.5.* x* sia abilitato nel computer**. È probabile che nel computer sia installata una versione più recente, ad esempio 4 o 4.5.* x*. La compatibilità con le versioni precedenti di .NET Framework può però essere abilitata o disabilitata. Per altre informazioni, vedere gli articoli seguenti:
     
-  - Per Windows Server 2012 o Windows Server 2012 R2, vedere [Abilitare .NET Framework 3.5 con Aggiunta guidata ruoli e funzionalità](https://go.microsoft.com/fwlink/p/?LinkId=532368).
+  - Per Windows Server 2012 o Windows Server 2012 R2, vedere [Abilitare .NET Framework 3.5 con Aggiunta guidata ruoli e funzionalità](/previous-versions/windows/it-pro/windows-8.1-and-8/dn482071(v=win.10)).
     
-  - Per Windows 7 o Windows Server 2008 R2, vedere [Impossibile aprire il Modulo di Azure Active Directory per Windows PowerShell](https://go.microsoft.com/fwlink/p/?LinkId=532370).
+  - Per Windows 7 o Windows Server 2008 R2, vedere [Impossibile aprire il Modulo di Azure Active Directory per Windows PowerShell](/troubleshoot/azure/active-directory/cant-open-aad-module-powershell).
 
-  - Per Windows 10, Windows 8.1 e Windows 8, vedere [Installare .NET Framework 3.5 in Windows 10, Windows 8.1 e Windows 8](https://docs.microsoft.com/dotnet/framework/install/dotnet-35-windows-10).
+  - Per Windows 10, Windows 8.1 e Windows 8, vedere [Installare .NET Framework 3.5 in Windows 10, Windows 8.1 e Windows 8](/dotnet/framework/install/dotnet-35-windows-10).
 
   
 - **La versione di Microsoft Azure Active Directory Module per Windows PowerShell in uso potrebbe essere obsoleta.** Per verificarlo, eseguire il seguente comando in PowerShell per Microsoft 365 o il modulo di Microsoft Azure Active Directory per Windows PowerShell:
@@ -167,7 +167,7 @@ Se viene visualizzato un messaggio di errore, controllare i problemi seguenti:
 
     Se il numero di versione restituito è inferiore a *1.0.8070.2*, disinstallare il Modulo di Microsoft Azure Active Directory per Windows PowerShell e ripetere l'installazione dal [Passaggio 1](#step-1-install-the-required-software).
 
-- **Se viene visualizzato un errore di connessione**, vedere [Errore "Connect-MsolService: si è verificata un'eccezione di tipo"](https://go.microsoft.com/fwlink/p/?LinkId=532377).
+- **Se viene visualizzato un errore di connessione**, vedere [Errore "Connect-MsolService: si è verificata un'eccezione di tipo"](/office365/troubleshoot/active-directory/connect-msoservice-throw-exception).
     
 - **Se viene visualizzato un messaggio di errore "Get-Item: impossibile trovare il percorso", eseguire questo comando:**
 
