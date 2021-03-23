@@ -15,12 +15,12 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: 1e6642113ddba9c9110a65e9032ec59db435ac7f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ee4f18342304cf46f97a6ae7aa6e1ba76685bccd
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919862"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994618"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introduzione alle impostazioni di gestione dei rischi insider
 
@@ -217,7 +217,7 @@ Per ognuna delle seguenti impostazioni di dominio, è possibile immettere fino a
     - File, cartelle, siti condivisi con domini esterni
     - File caricati in domini esterni (con il browser Microsoft Edge)
 
-    Specificando i domini consentiti nelle impostazioni, questa attività con questi domini viene trattata in modo analogo a come viene trattata l'attività interna dell'organizzazione. Ad esempio, i domini aggiunti qui e mappano le attività possono implicare la condivisione di contenuto con un utente esterno all'organizzazione (ad esempio l'invio di posta elettronica a un utente con un indirizzo gmail.com). Non è possibile includere i siti di SharePoint come domini consentiti. 
+    Specificando i domini consentiti nelle impostazioni, questa attività con questi domini viene trattata in modo analogo a come viene trattata l'attività interna dell'organizzazione. Ad esempio, i domini aggiunti qui e mappano le attività possono implicare la condivisione di contenuto con un utente esterno all'organizzazione (ad esempio l'invio di posta elettronica a un utente con un indirizzo gmail.com).
 
 - **Domini di terze parti:** Se l'organizzazione usa domini di terze parti per scopi aziendali (ad esempio l'archiviazione cloud), includerli qui in modo da poter ricevere avvisi per le attività correlate all'indicatore di dispositivo Utilizzare un browser per scaricare contenuto da un sito di terze *parti.*
 
@@ -241,7 +241,7 @@ I campi e i valori seguenti vengono esportati per gli avvisi di gestione dei ris
 |:------------------|:----------------|
 | AlertType | Il tipo dell'avviso è *Personalizzato.*  |
 | AlertId | GUID dell'avviso. Gli avvisi per la gestione dei rischi insider sono modificabili. Quando lo stato dell'avviso cambia, viene generato un nuovo registro con lo stesso AlertID. Questo AlertID può essere usato per correlare gli aggiornamenti per un avviso. |
-| Categoria | La categoria dell'avviso è *InsiderRiskManagement.* Questa categoria può essere usata per distinguere questi avvisi da altri avvisi di sicurezza & conformità. |
+| Category | La categoria dell'avviso è *InsiderRiskManagement.* Questa categoria può essere usata per distinguere questi avvisi da altri avvisi di sicurezza & conformità. |
 | Commenti | Commenti predefiniti per l'avviso. I valori *sono Nuovo avviso* (registrato quando viene creato un avviso) e Avviso *aggiornato* (registrato quando è presente un aggiornamento di un avviso). Utilizzare AlertID per correlare gli aggiornamenti per un avviso. |
 | Dati | I dati dell'avviso includono l'ID utente univoco, il nome dell'entità utente e la data e l'ora (UTC) quando l'utente è stato attivato in un criterio. |
 | Nome | Nome dei criteri per i criteri di gestione dei rischi insider che hanno generato l'avviso. |

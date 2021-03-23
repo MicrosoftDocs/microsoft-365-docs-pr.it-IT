@@ -18,12 +18,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 48cc75276e4e3791fa16520df5a4c392c23a0cd5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 298300de8581d3eea185f05b92bb69cb6e7a69eb
+ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919912"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51034205"
 ---
 # <a name="communication-compliance-feature-reference"></a>Informazioni di riferimento sulla funzionalità di conformità delle comunicazioni
 
@@ -78,7 +78,7 @@ Per facilitare la pianificazione della migrazione, considerare l'esempio seguent
 - Supervisory Review Administrator
 - Gestione dei casi
 - Amministratore conformità
-- Review
+- Revisione
 
 Per aggiornare i ruoli per questi utenti per la nuova struttura del gruppo di ruoli e per separare le autorizzazioni di accesso e gestione per gli utenti, è possibile prendere in considerazione tre nuovi gruppi e le assegnazioni dei nuovi gruppi di ruolo associate:
 
@@ -526,6 +526,21 @@ In questo esempio vengono restituite le attività che corrispondono ai criteri d
 ```PowerShell
 Search-UnifiedAuditLog -StartDate $startDate -EndDate $endDate -Operations SupervisionRuleMatch 
 ```
+
+Le corrispondenze dei criteri di conformità delle comunicazioni vengono archiviate in una cassetta postale di supervisione per ogni criterio. In alcuni casi, potrebbe essere necessario controllare le dimensioni della cassetta postale di supervisione per un criterio per assicurarsi che non si sta avvicinando al limite corrente di 50 GB. Se viene raggiunto il limite della cassetta postale, le corrispondenze dei criteri non vengono acquisite e sarà necessario creare un nuovo criterio (con le stesse impostazioni) per continuare a acquisire corrispondenze per le stesse attività.
+
+Per verificare le dimensioni di una cassetta postale di supervisione per un criterio, completare le operazioni seguenti:
+
+1. Utilizzare il cmdlet [Connect-ExchangeOnline](/powershell/module/exchange/connect-exchangeonline) nel modulo PowerShell V2 di Exchange Online per connettersi a PowerShell di Exchange Online utilizzando l'autenticazione moderna.
+2. Eseguire quanto segue in PowerShell:
+
+    ```PowerShell
+    ForEach ($p in Get-SupervisoryReviewPolicyV2 | Sort-Object Name) 
+    {
+       "<Name of your communication compliance policy>: " + $p.Name
+       Get-MailboxStatistics $p.ReviewMailbox | ft ItemCount,TotalItemSize
+    }
+    ```
 
 ## <a name="transitioning-from-supervision-in-office-365"></a>Transizione dalla supervisione in Office 365
 
