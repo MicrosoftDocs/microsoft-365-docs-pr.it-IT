@@ -15,12 +15,12 @@ ms.collection:
 description: Gli amministratori possono imparare a creare, modificare ed eliminare i criteri anti-phishing avanzati disponibili nelle organizzazioni con Microsoft Defender per Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 2985766cf3388382dbe1d2217843504b2bfd1a1c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9f9fe04b2c3b6db3681212d678c8e827f6a83f41
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906589"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994571"
 ---
 # <a name="configure-anti-phishing-policies-in-microsoft-defender-for-office-365"></a>Configurare i criteri anti-phishing in Microsoft Defender per Office 365
 
@@ -59,7 +59,7 @@ Ogni organizzazione di Microsoft Defender per Office 365 dispone di un criterio 
 
 Per aumentare l'efficacia della protezione anti-phishing in Microsoft Defender per Office 365, è possibile creare criteri anti-phishing personalizzati con impostazioni più rigide applicate a utenti o gruppi di utenti specifici.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla pagina **anti-phishing di ATP,** utilizzare <https://protection.office.com/antiphishing> .
 
@@ -220,11 +220,11 @@ Utilizzare le procedure seguenti per modificare i criteri anti-phishing: un nuov
 
      - **Abilitare l'intelligence delle cassette postali?**: il valore predefinito è **On**. Per disattivarlo, fai scorrere l'interruttore su **Off.**
 
-     - **Enable mailbox intelligence based impersonation protection?**: Questa impostazione è disponibile solo se **Enable mailbox intelligence?** è **On**.
+     - **Abilitare la protezione della rappresentazione basata sull'intelligence delle** cassette postali? : Questa impostazione è disponibile solo se **Abilita intelligence cassetta postale?** è **Attiva**. Attivare questa impostazione per specificare l'azione da eseguire sui messaggi per i rilevamenti di rappresentazione dai risultati dell'intelligence delle cassette postali.
 
-       In Se la **posta elettronica** viene inviata da un utente rappresentato, è possibile specificare una delle azioni seguenti da eseguire sui messaggi che non riescono a usare l'intelligence delle cassette postali (le stesse azioni disponibili per gli utenti protetti e i domini protetti):
+       In **Se la posta elettronica** viene inviata da un utente rappresentato, è possibile specificare una delle azioni seguenti (le stesse azioni disponibili per gli utenti protetti e i domini protetti):
 
-       - **Non applicare alcuna azione**
+       - Non applicare alcuna azione: si noti che questo valore ha lo stesso risultato dell'attivazione di Abilita intelligence cassetta **postale?** ma disattivando Abilita protezione della rappresentazione basata **sull'intelligence** delle cassette **postali?**.
        - **Reindirizzare il messaggio ad altri indirizzi di posta elettronica**
        - **Sposta messaggio nella cartella Posta indesiderata**
        - **Mettere in quarantena il messaggio**

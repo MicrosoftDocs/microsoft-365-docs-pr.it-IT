@@ -17,12 +17,12 @@ ms.custom:
 description: Gli amministratori possono ottenere informazioni sui criteri anti-phishing disponibili in Exchange Online Protection (EOP) e Microsoft Defender per Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: eeb15040f0e47f7d51852dadf68c4b0c37de0975
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3458d6702dab48072e4846038400b087b1a4a8f1
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929229"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994583"
 ---
 # <a name="anti-phishing-policies-in-microsoft-365"></a>Criteri anti-phishing in Microsoft 365
 
@@ -206,17 +206,21 @@ Le impostazioni di rappresentazione seguenti sono disponibili solo nei criteri a
   - **Domini impersonati:** l'indirizzo mittente contiene un dominio protetto.
   - **Caratteri insoliti**: l'indirizzo From contiene set di caratteri insoliti (ad esempio, simboli matematici e testo o una combinazione di lettere maiuscole e minuscole) in un mittente o dominio protetto.
 
-
   > [!IMPORTANT]
   >
-  > Suggerimento per l'abilitazione di un suggerimento per la sicurezza che verrà visualizzato durante il primo contatto tra il mittente e i **destinatari:** anche quando i suggerimenti per la sicurezza della rappresentazione sono disattivati,  è consigliabile utilizzare una regola del flusso di posta (nota anche come regola di trasporto) per aggiungere un'intestazione del messaggio denominata **X-MS-Exchange-EnableFirstContactSafetyTip** con valore abilitato ai messaggi.  Un suggerimento per la sicurezza invierà una notifica ai destinatari la prima volta che riceve un messaggio dal mittente o se spesso non riceve messaggi dal mittente. Questa funzionalità aggiunge un ulteriore livello di protezione da potenziali attacchi di rappresentazione. 
+  > Anche quando i suggerimenti per la sicurezza della rappresentazione sono disattivati, è consigliabile utilizzare una regola del flusso di posta (nota anche come regola  di trasporto) per aggiungere un'intestazione del messaggio denominata **X-MS-Exchange-EnableFirstContactSafetyTip** con valore abilitato ai messaggi.  Un suggerimento per la sicurezza invierà una notifica ai destinatari la prima volta che riceve un messaggio dal mittente o se spesso non riceve messaggi dal mittente. Questa funzionalità aggiunge un ulteriore livello di protezione da potenziali attacchi di rappresentazione.
+  >
   > :::image type="content" source="../../media/safety-tip-first-contact-multiple-recipients.png" alt-text="Testo del suggerimento per la sicurezza per la protezione della rappresentazione con più destinatari.":::
 
-- **Intelligence delle cassette** postali: abilita o disabilita l'intelligenza artificiale (AI) che determina i modelli di posta elettronica degli utenti con i contatti frequenti. Questa impostazione consente all'IA di distinguere i messaggi di posta elettronica legittimi e contraffatti da tali contatti. L'intelligence delle cassette postali è disponibile solo per le cassette postali di Exchange Online.
+- **Intelligence delle cassette** postali: abilita o disabilita l'intelligenza artificiale (AI) che determina i modelli di posta elettronica degli utenti con i contatti frequenti. Questa impostazione consente all'IA di distinguere i messaggi dai mittenti legittimi e impersonati.
 
-- **Protezione della rappresentazione basata sull'intelligence delle** cassette postali : abilita o disabilita i risultati della rappresentazione avanzata in base alla mappa dei singoli mittenti di ogni utente. Questa intelligence consente a Microsoft 365 di personalizzare il rilevamento della rappresentazione dell'utente e gestire meglio i falsi positivi. Quando viene rilevata la rappresentazione dell'utente, è possibile definire un'azione specifica da eseguire sul messaggio:
+  Ad esempio, Gabriela Laureano (glaureano@contoso.com) è il CEO della società, quindi la aggiungi come mittente protetto in **Utenti** per proteggere le impostazioni del criterio. Tuttavia, alcuni dei destinatari che il criterio si applica per comunicare regolarmente con un fornitore denominato anche Gabriela Laureano (glaureano@fabrikam.com). Poiché tali destinatari hanno una cronologia delle comunicazioni con glaureano@fabrikam.com, l'intelligence delle cassette postali non identificherà i messaggi provenienti da glaureano@fabrikam.com come tentativo di rappresentazione di glaureano@contoso.com per tali destinatari.
 
-  - **Non applicare alcuna azione**
+  Per utilizzare contatti frequenti appresi dall'intelligence delle cassette postali (e non presenti)  per proteggere gli utenti dagli attacchi  di rappresentazione, è possibile attivare la protezione della rappresentazione basata sull'intelligence delle cassette postali e specificare l'azione da eseguire se si attiva anche l'intelligence delle cassette **postali.**
+
+- **Protezione della rappresentazione basata sull'intelligence** delle cassette postali : attivare questa impostazione per specificare l'azione da eseguire sui messaggi per i rilevamenti di rappresentazione dai risultati dell'intelligence delle cassette postali:
+
+  - Non applicare alcuna azione: si noti che questo valore  ha lo stesso risultato **dell'attivazione dell'intelligence** per le cassette postali, ma della disattivazione della protezione della rappresentazione basata sull'intelligence per le **cassette postali.**
   - **Reindirizzare il messaggio ad altri indirizzi di posta elettronica**
   - **Sposta messaggio nella cartella Posta indesiderata**
   - **Mettere in quarantena il messaggio**

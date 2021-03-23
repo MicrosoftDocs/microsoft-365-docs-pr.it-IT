@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 ms.service: ''
 localization_priority: Normal
-ms.openlocfilehash: 34c6551dd3a40852368b40d960bf921c52f46372
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 36af6e0f882c87d05c5f397982533fb48875b0da
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50921517"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994607"
 ---
 # <a name="edit-an-existing-topic"></a>Modifica un modello esistente 
 
@@ -67,11 +67,11 @@ I knowledge manager possono inoltre modificare gli argomenti direttamente dalla 
 
     ![Sezione Descrizione](../media/knowledge-management/description.png)</br>
 
-4. Nella sezione <b>Persone aggiunte</b> puoi "aggiungere" una persona per mostrarla come esperta in materia sull'argomento. Iniziare digitandone il nome o l'indirizzo di posta elettronica nella casella <b>Aggiungi</b> un nuovo utente e quindi selezionando l'utente che si desidera aggiungere dai risultati della ricerca. Puoi anche "sbloccarli" selezionando l'icona Rimuovi <b>dall'elenco</b> nella scheda utente.
+4. Nella sezione <b>Persone</b> aggiunte puoi "aggiungere" una persona per mostrargli di avere una connessione all'argomento (ad esempio, un proprietario di una risorsa connessa). Iniziare digitandone il nome o l'indirizzo di posta elettronica nella casella <b>Aggiungi</b> un nuovo utente e quindi selezionando l'utente che si desidera aggiungere dai risultati della ricerca. Puoi anche "sbloccarli" selezionando l'icona Rimuovi <b>dall'elenco</b> nella scheda utente.
  
     ![Aggiungere persone aggiunte](../media/knowledge-management/pinned-people.png)</br>
 
-    La <b>sezione Persone suggerite</b> mostra agli utenti che l'IA potrebbe essere un esperto di materia sull'argomento, dalla connessione alle risorse sull'argomento. Puoi modificarne lo stato da Suggerito a Aggiunto selezionando l'icona del pin nella scheda utente.
+    La <b>sezione Persone suggerite</b> mostra agli utenti che l'intelligenza artificiale potrebbe essere connessa all'argomento dalla connessione alle risorse sull'argomento. Puoi modificarne lo stato da Suggerito a Aggiunto selezionando l'icona del pin nella scheda utente.
 
    ![Aggiungere un utente consigliato](../media/knowledge-management/suggested-people.png)</br>
 

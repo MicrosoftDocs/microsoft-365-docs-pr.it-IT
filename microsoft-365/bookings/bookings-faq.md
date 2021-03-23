@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Domande frequenti su Microsoft Bookings.
-ms.openlocfilehash: c7bf14c35626eeeec781f6a9f45769e0ead1730e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d357ae83d7fe6fdd9f3d0bff724b037e82a3f5d0
+ms.sourcegitcommit: 1df94f04f138ccf1a2356d26174335c44de7052b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913827"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50999530"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Domande frequenti su Microsoft Bookings
 
@@ -65,11 +65,11 @@ Sì, Bookings è personalizzabile e può essere usato per diversi scenari. Quand
 
 ### <a name="is-all-the-functionality-of-the-original-bookings-web-app-available-in-microsoft-teams"></a>Tutte le funzionalità dell'app Web Bookings originale sono disponibili in Microsoft Teams?
 
-Una versione leggera di Bookings è ora disponibile come app in Teams. Trova l'annuncio iniziale [qui](https://www.microsoft.com/microsoft-365/blog/2020/03/06/empowering-care-teams-with-new-tools-in-microsoft-365/). Nell'app Web è disponibile una funzionalità di collegamento diretto e, dopo la configurazione, l'utilizzo quotidiano di Bookings può essere eseguito senza uscire da Teams. Le informazioni sfociano su piattaforme diverse.
+Una versione leggera di Bookings è ora disponibile come app in Teams. L'annuncio iniziale è [qui](https://www.microsoft.com/microsoft-365/blog/2020/03/06/empowering-care-teams-with-new-tools-in-microsoft-365/). Nell'app Web è disponibile una funzionalità di collegamento diretto e, dopo la configurazione, l'utilizzo quotidiano di Bookings può essere eseguito senza uscire da Teams. Le informazioni sfociano su piattaforme diverse.
 
 ### <a name="is-bookings-a-small-business-offering-or-an-enterprise-offering-or-both"></a>Bookings è un'offerta per piccole imprese o Enterprise o entrambe?
 
-Bookings è una soluzione ideale sia per i clienti aziendali che per le piccole imprese, in un'ampia gamma di settori. I casi d'uso includono:
+Bookings è una soluzione ideale sia per i clienti aziendali che per le piccole imprese, in vari settori. I casi d'uso includono:
 
 - Servizi finanziari
     - consultazioni
@@ -144,11 +144,11 @@ I dipendenti dello Store con licenze E1/F1/F3 o senza licenze possono comunque e
 
 I dipendenti dello Store verranno inoltre visualizzati come non disponibili in Bookings se un appuntamento è già stato pianificato in quel momento tramite l'app Web Bookings. Gli appuntamenti prenotati tramite Bookings si rifletteranno come occupati nel calendario di un membro del personale all'interno di Bookings. Il personale con una licenza non abilitata per Bookings può comunque avere un impatto sulla disponibilità del calendario personale in Bookings, purché si trova all'interno dello stesso tenant.
 
-Gli utenti nel ruolo Guest possono visualizzare qualsiasi informazione fornita dal cliente all'interno della creazione dell'appuntamento iniziale. Ad esempio, se il rappresentante dello Store prenotato per l'appuntamento deve chiamare il cliente prima dell'appuntamento, avrà accesso alle informazioni fornite dal cliente durante il processo di pianificazione. Il membro del personale prenotato avrà accesso a tutte le informazioni visualizzate nel messaggio di posta elettronica di conferma, nonché all'evento del calendario .ics (ad esempio il numero di telefono del cliente se è stato immesso).
+Gli utenti nel ruolo Guest possono visualizzare qualsiasi informazione fornita dal cliente all'interno della creazione dell'appuntamento iniziale. Ad esempio, se il rappresentante dello Store prenotato per l'appuntamento deve chiamare il cliente prima dell'appuntamento, avrà accesso alle informazioni fornite dal cliente durante il processo di pianificazione. Il membro del personale prenotato avrà accesso a tutte le informazioni visualizzate nel messaggio di posta elettronica di conferma e all'evento del calendario .ics (ad esempio il numero di telefono del cliente se è stato immesso).
 
 Gli utenti con ruolo Guest non potranno accedere all'app Web Bookings per modificare le impostazioni o per visualizzare e gestire gli appuntamenti (aggiunta, annullamento e riprogrammazione). Tuttavia, possono effettuare appuntamenti per conto dei clienti utilizzando la pagina Self-service, nello stesso modo in cui un cliente potrebbe prendere un appuntamento.
 
-Ti consigliamo di ottenere una licenza per un responsabile aziendale o un amministratore di ogni store con una licenza idonea per Bookings per configurare e gestire pagine e appuntamenti. Il resto del personale potrebbe quindi collaborare con il dipendente concesso in licenza con Bookings per ripianificare o annullare una prenotazione.
+Ti consigliamo di ottenere una licenza per un responsabile aziendale o un amministratore di ogni store con una licenza idonea per Bookings per configurare e gestire pagine e appuntamenti. Il resto del personale potrebbe quindi collaborare con il dipendente concesso in licenza con Bookings per riprogrammare o annullare una prenotazione.
 
 ## <a name="product-features"></a>Funzionalità del prodotto
 
@@ -176,7 +176,7 @@ Un'impostazione **denominata Tempo massimo di anticipo** determina il più lonta
 
 ### <a name="how-does-bookings-work-across-time-zones"></a>Come funziona Bookings nei fusi orari?
 
-Per impostazione predefinita, tutti gli orari sono nel fuso orario aziendale (il fuso orario locale). Ciò significa che qualsiasi impostazione configurata per un calendario di Bookings, ad esempio l'orario di lavoro, verrà visualizzata in questo fuso orario. La pagina Self-service consente di visualizzare tutti gli orari degli appuntamenti nel fuso orario dell'utente finale, che possono essere disattivati se lo si desidera. Se **l'opzione** Mostra sempre le fasce orarie nel fuso orario aziendale rimane deselezionata nella scheda pagina Prenotazioni, gli utenti che visitano la pagina visualizzano le fasce orarie nei propri fusi orari locali.
+Per impostazione predefinita, tutti gli orari sono nel fuso orario aziendale (il fuso orario locale). Qualsiasi impostazione configurata per un calendario di Bookings, ad esempio l'orario di lavoro, verrà visualizzata in questo fuso orario. La pagina Self-service consente di visualizzare tutti gli orari degli appuntamenti nel fuso orario dell'utente finale, che possono essere disattivati se lo si desidera. Se **l'opzione** Mostra sempre le fasce orarie nel fuso orario aziendale rimane deselezionata nella scheda pagina Prenotazioni, gli utenti che visitano la pagina visualizzano le fasce orarie nei propri fusi orari locali.
 
 :::image type="content" source="media/bookings-faq-region.png" alt-text="Impostazioni relative all'area geografica e al fuso orario di Bookings":::
 
@@ -244,7 +244,7 @@ Booking può supportare una grande quantità di visitatori e prenotazioni contem
 
 ### <a name="where-is-bookings-data-stored"></a>Dove vengono archiviati i dati di Bookings?
 
-Bookings è un'app di Microsoft 365, ovvero tutti i dati vengono archiviati nella piattaforma Microsoft 365 e in Exchange. Bookings segue tutti i criteri di archiviazione dei dati impostati da Microsoft, che sono gli stessi criteri seguiti da tutte le app di Office. Bookings utilizza cassette postali condivise in Exchange per archiviare i dettagli relativi a clienti, personale, servizi e appuntamenti. I criteri di conformità per le cassette postali condivise in Exchange si applicano anche alle cassette postali di Bookings. Tutti i dati dei clienti (incluse le informazioni fornite dai clienti al momento della prenotazione) vengono acquisiti in Bookings e archiviati all'interno dell'app, quindi vengono archiviati all'interno di Exchange. Microsoft Bookings usa gli stessi criteri utilizzati da Microsoft 365, che puoi trovare [qui.](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
+Bookings è un'app di Microsoft 365, ovvero tutti i dati vengono archiviati nella piattaforma Microsoft 365 e in Exchange. Bookings segue tutti i criteri di archiviazione dei dati impostati da Microsoft, che sono gli stessi criteri che seguono tutte le app di Office. Bookings utilizza cassette postali condivise in Exchange per archiviare i dettagli relativi a clienti, personale, servizi e appuntamenti. I criteri di conformità per le cassette postali condivise in Exchange si applicano anche alle cassette postali di Bookings. Tutti i dati dei clienti (incluse le informazioni fornite dai clienti al momento della prenotazione) vengono acquisiti in Bookings e archiviati all'interno dell'app, quindi vengono archiviati all'interno di Exchange. Microsoft Bookings usa gli stessi criteri utilizzati da Microsoft 365, che puoi trovare [qui.](https://www.microsoft.com/online/legal/v2/?docid=22&langid=en-us)
 
 ### <a name="is-there-a-way-to-centrally-manage-bookings-calendars-for-all-users"></a>Esiste un modo per gestire centralmente i calendari di Bookings per tutti gli utenti?
 
@@ -274,7 +274,7 @@ Questa sezione non supporta il formato RTF, ma i collegamenti possono essere agg
 
 Il comando seguente può essere utilizzato per recuperare le informazioni di tutte le cassette postali di Bookings e degli utenti che hanno accesso a esse.
 
-`Get-Mailbox -RecipientTypeDetails SchedulingMailbox -ResultSize:Unlimited | Get-MailboxPermission |Select-Object Identity,User,AccessRights | Where-Object {($_.user -like '@')}`
+`Get-Mailbox -RecipientTypeDetails SchedulingMailbox -ResultSize:Unlimited | Get-MailboxPermission |Select-Object Identity,User,AccessRights | Where-Object {($_.user -like '*@*')}`
 
 ## <a name="technical-questions"></a>Domande tecniche
 

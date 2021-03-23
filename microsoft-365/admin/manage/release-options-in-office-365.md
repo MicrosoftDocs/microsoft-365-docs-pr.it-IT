@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Informazioni su come configurare l'opzione di rilascio per gli aggiornamenti di nuovi prodotti e funzionalità nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: f500aac89495c55d27fc4afb699254653786422d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e909cdf35ba9dd8282540783f7c362e5ae49212e
+ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915207"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51034080"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Configurare le opzioni di rilascio Standard o Mirato
 
@@ -117,3 +117,7 @@ Il rilascio mirato consente agli amministratori, ai responsabili delle modifiche
 ## <a name="learn-more"></a>Ulteriori informazioni
 
 Scopri come gestire [i messaggi nel](/office365/admin/manage/message-center) centro messaggi di Microsoft [365](https://admin.microsoft.com/Adminportal/Home?source=applauncher#/MessageCenter) per ricevere notifiche sui prossimi aggiornamenti e rilasci di Microsoft 365.
+
+## <a name="related-articles"></a>Articoli correlati
+
+[Office Insider](https://insider.office.com/join/windows)

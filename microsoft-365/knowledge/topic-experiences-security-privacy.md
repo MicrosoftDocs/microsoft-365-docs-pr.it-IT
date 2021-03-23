@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Informazioni su come pianificare la sicurezza e la privacy di Microsoft Viva Topics
-ms.openlocfilehash: 9ac7ea085be115ef06244422713099c01ec50a36
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 91d0d5c25502a1938976b9457f8a5dafc6ab957b
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917345"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994547"
 ---
 # <a name="microsoft-viva-topics-security-and-privacy"></a>Sicurezza e privacy di Microsoft Viva Topics
 
@@ -51,7 +51,7 @@ Nella tabella seguente vengono descritti gli elementi che gli utenti, i visualiz
 
 |Elemento argomento|Cosa possono vedere gli utenti|
 |:---------|:------------------|
-|Nome argomento|Gli utenti possono visualizzare il nome dell'argomento di tutti gli argomenti nel Centro argomenti. Alcuni argomenti potrebbero non essere visibili se hanno una pertinenza bassa per l'utente.|
+|Nome argomento|Gli utenti possono visualizzare il nome degli argomenti nel Centro argomenti. Alcuni argomenti potrebbero non essere visibili se gli utenti non dispongono delle autorizzazioni per il contenuto di origine o hanno una pertinenza bassa per l'utente.|
 |Descrizione argomento|Le descrizioni generate dall'IA sono visibili solo agli utenti che dispongono delle autorizzazioni per il contenuto di origine. Le descrizioni immesse o modificate manualmente sono visibili a tutti gli utenti.|
 |Persone|Gli utenti aggiunti sono visibili a tutti gli utenti. Gli utenti suggeriti sono visibili solo agli utenti che dispongono delle autorizzazioni per il contenuto di origine.|
 |File|I file sono visibili solo agli utenti che dispongono delle autorizzazioni per il contenuto di origine.|

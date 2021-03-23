@@ -12,12 +12,12 @@ ms.assetid: faf1efd1-3b0c-411a-804d-17f37292eac0
 description: Seguire queste procedure consigliate per Exchange Online Protection (EOP) autonomo per configurare se stessi per l'esito positivo ed evitare errori di configurazione comuni.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6a6a9fd0dfc654ca37fdd5168b3ecc0c4486f9d0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e968316e23fe2d8e68795318f8e0785a662c8aea
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924457"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994559"
 ---
 # <a name="best-practices-for-configuring-standalone-eop"></a>Procedure consigliate per la configurazione di EOP autonomo
 
@@ -44,9 +44,11 @@ Microsoft consente agli amministratori della sicurezza di personalizzare le impo
 
 Queste impostazioni coprono un'ampia gamma di funzionalità esterne ai criteri di sicurezza.
 
+<br>
+
 ****
 
-|Nome funzionalità di sicurezza|Standard|Strict|Aggiungere commenti|
+|Nome funzionalità di sicurezza|Standard|Strict|Comment|
 |---|---|---|---|
 |[Configurazione di SPF per evitare lo spoofing](set-up-spf-in-office-365-to-help-prevent-spoofing.md)|Sì|Sì||
 |[Utilizzare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato in Office 365](use-dkim-to-validate-outbound-email.md)|Sì|Sì||
@@ -55,11 +57,11 @@ Queste impostazioni coprono un'ampia gamma di funzionalità esterne ai criteri d
 |Pianificare i rapporti di malware e posta indesiderata|Sì|Sì||
 |L'inoltro automatico ai domini esterni deve essere non consentito o monitorato|Sì|Sì||
 |Il controllo unificato deve essere abilitato|Sì|Sì||
-|[Connettività IMAP alla cassetta postale](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Disabilitato|Disabilitato||
-|[Connettività POP alla cassetta postale](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Disabilitato|Disabilitato||
-|Invio SMTP autenticato|Disabilitato|Disabilitato|L'invio SMTP del client autenticato (noto anche come invio SMTP client o AUTENTICAZIONE SMTP) è necessario per l'invio di posta elettronica da parte dei client POP3 e IMAP4.|
-|Connettività EWS alla cassetta postale|Disabilitato|Disabilitato||
-|[Connettività di PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell)|Disabilitato|Disabilitato|Disponibile per gli utenti delle cassette postali o gli utenti di posta (oggetti utente restituiti dal cmdlet [Get-User).](/powershell/module/exchange/get-user)|
+|[Connettività IMAP alla cassetta postale](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Disattivato|Disattivato||
+|[Connettività POP alla cassetta postale](/Exchange/clients-and-mobile-in-exchange-online/pop3-and-imap4/enable-or-disable-pop3-or-imap4-access)|Disattivato|Disattivato||
+|Invio SMTP autenticato|Disattivato|Disattivato|L'invio SMTP del client autenticato (noto anche come invio SMTP client o AUTENTICAZIONE SMTP) è necessario per i client POP3 e IMAP4 e per le applicazioni e i dispositivi che generano e inviano posta elettronica. <p> Per istruzioni su come abilitare e disabilitare l'autenticazione SMTP a livello globale o selettivo, vedere [Enable or disable authenticated client SMTP submission in Exchange Online](/exchange/clients-and-mobile-in-exchange-online/authenticated-client-smtp-submission).|
+|Connettività EWS alla cassetta postale|Disattivato|Disattivato|Outlook utilizza i Servizi Web Exchange per la disponibilità, le impostazioni fuori sede e la condivisione del calendario. Se non è possibile disabilitare EWS a livello globale, sono disponibili le opzioni seguenti: <ul><li>Utilizzare [i criteri di](/exchange/clients-and-mobile-in-exchange-online/disable-basic-authentication-in-exchange-online) autenticazione per impedire a EWS di utilizzare l'autenticazione di base se i client supportano l'autenticazione moderna (autenticazione moderna).</li><li>Utilizzare [le regole di Accesso](https://docs.microsoft.com/exchange/clients-and-mobile-in-exchange-online/client-access-rules/client-access-rules) client per limitare EWS a utenti specifici o indirizzi IP di origine.</li><li>Controllare l'accesso di EWS a applicazioni specifiche a livello globale o per utente. Per istruzioni, vedere [Control access to EWS in Exchange](/exchange/client-developer/exchange-web-services/how-to-control-access-to-ews-in-exchange).</li></ul> <p> Il [componente aggiuntivo Segnala](enable-the-report-message-add-in.md) [](enable-the-report-phish-add-in.md) messaggio e segnala phishing usa REST per impostazione predefinita negli ambienti supportati, ma verrà nuovamente visualizzato in EWS se REST non è disponibile. Gli ambienti supportati che utilizzano REST sono:<ul><li>Exchange Online</li><li>Exchange 2019 o Exchange 2016</li><li>Outlook per Windows corrente da un abbonamento a Microsoft 365 o acquisto una sola volta di Outlook 2019.</li><li>Outlook corrente per Mac da un abbonamento a Microsoft 365 o un acquisto una sola volta di Outlook per Mac 2016 o versione successiva.</li><li>Outlook per iOS e Android</li><li>Outlook sul Web</li></ul>|
+|[Connettività di PowerShell](/powershell/exchange/disable-access-to-exchange-online-powershell)|Disattivato|Disattivato|Disponibile per gli utenti delle cassette postali o gli utenti di posta (oggetti utente restituiti dal cmdlet [Get-User).](/powershell/module/exchange/get-user)|
 |Usare [spoof intelligence per](learn-about-spoof-intelligence.md) aggiungere mittenti all'elenco consenti|Sì|Sì||
 |[Blocco edge basato su directory (DBEB)](/Exchange/mail-flow-best-practices/use-directory-based-edge-blocking)|Abilitato|Abilitato|Tipo di dominio = Autorevole|
 |[Configurare l'autenticazione a più fattori per tutti gli account amministratore](../../admin/security-and-compliance/set-up-multi-factor-authentication.md)|Abilitato|Abilitato||
