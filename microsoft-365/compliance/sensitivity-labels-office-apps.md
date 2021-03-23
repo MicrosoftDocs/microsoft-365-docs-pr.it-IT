@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informazioni utili agli amministratori IT per gestire le etichette di riservatezza nelle app di Office per desktop, dispositivi mobili e Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 41716fecd0c70c99fd61b090421cb3dc0277cb48
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 72b5422de2ee4b01e3209ec78ea0c10f1285d682
+ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919552"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51034195"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gestire le etichette di riservatezza nelle app di Office
 
@@ -63,7 +63,7 @@ I numeri elencati indicano la versione minima delle applicazioni di Office neces
 |[Contrassegnare il contenuto](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Sì- consenso esplicito](sensitivity-labels-sharepoint-onedrive-files.md) |
 |[Contrassegni dinamici con variabili](#dynamic-markings-with-variables).                                              | 2010+           | 16.42+     | 2.42+ | 16.0.13328+ | In revisione |
 |[Assegnare ora le autorizzazioni](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+          | 16.21+     | 2.21+ | 16.0.11231+ | [Sì- consenso esplicito](sensitivity-labels-sharepoint-onedrive-files.md) |
-|[Consentire agli utenti di assegnare le autorizzazioni](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | In revisione   | In revisione         | In revisione                                                        |
+|[Consentire agli utenti di assegnare le autorizzazioni <br /> - Chiedere agli utenti](encryption-sensitivity-labels.md#let-users-assign-permissions)                     |2004+ | 16.35+   | In revisione   | In revisione         | In revisione                                                        |
 |[Controllare le attività degli utenti correlate alle etichette](data-classification-activity-explorer.md)                      | 2011+ | 16.43+ | 2.46+ | In distribuzione: 16.0.13628+ | Sì <sup>\*</sup>                                                        |
 |[Richiedere agli utenti di applicare un'etichetta alla posta elettronica e ai documenti](#require-users-to-apply-a-label-to-their-email-and-documents)   | 2101+             | In distribuzione: 16.45+         | Anteprima: [Canale beta](https://office.com/insider) | In distribuzione: 16.0.13628+ | In revisione                                            
 |[Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md)                    | 2009+                                  | In distribuzione: 16.44+ | In revisione | In revisione | [Sì- consenso esplicito](sensitivity-labels-sharepoint-onedrive-files.md) |
@@ -87,7 +87,8 @@ I numeri elencati indicano la versione minima delle applicazioni di Office neces
 |[Contrassegnare il contenuto](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sì               |
 |[Contrassegni dinamici con variabili](#dynamic-markings-with-variables).                                              | In revisione                     | In revisione                 | In revisione         | In revisione           | In revisione               |
 |[Assegnare ora le autorizzazioni](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sì               |
-|[Consentire agli utenti di assegnare le autorizzazioni](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sì               |
+|[Consentire agli utenti di assegnare le autorizzazioni <br /> - Non inoltrare](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sì               |
+|[Consentire agli utenti di assegnare le autorizzazioni <br /> - Solo crittografia](encryption-sensitivity-labels.md#let-users-assign-permissions)  |2011+ | In revisione | In revisione  | In revisione | Distribuzione |
 |[Richiedere agli utenti di applicare un'etichetta alla posta elettronica e ai documenti](#require-users-to-apply-a-label-to-their-email-and-documents)   | In distribuzione: 2101+                        | 16.43+ <sup>\*</sup>                    | In revisione            | In revisione                | Sì                |
 |[Controllare le attività degli utenti correlate alle etichette](data-classification-activity-explorer.md) | 2011+ | In revisione | In revisione           | In revisione               | In revisione |
 |[Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | In revisione           | In revisione               | Sì |

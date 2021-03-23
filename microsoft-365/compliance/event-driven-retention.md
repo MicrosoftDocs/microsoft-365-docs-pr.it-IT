@@ -20,12 +20,12 @@ ms.custom:
 - seo-marvel-may2020
 - seo-marvel-jun2020
 description: In genere, nell’ambito di una soluzione di gestione dei record, è possibile configurare un’etichetta di conservazione per avviare il periodo di conservazione in base a un evento identificato.
-ms.openlocfilehash: 49fe330fa6844361a77caaebb0e6a411297ee643
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ee828b6852440f5be07fdf34df2fb6a11253ae1c
+ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907016"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51034247"
 ---
 # <a name="start-retention-when-an-event-occurs"></a>Avviare la conservazione al verificarsi di un evento
 
@@ -89,7 +89,7 @@ Flusso di lavoro di alto livello per la conservazione basata su eventi:
 
 ### <a name="step-1-create-a-label-whose-retention-period-is-based-on-an-event"></a>Passaggio 1: creare un'etichetta il cui periodo di conservazione sia basato su un evento
 
-Per creare e configurare l'etichetta di conservazione, usare le istruzioni in [Creare e configurare le etichette di conservazione](./create-apply-retention-labels.md#create-and-configure-retention-labels). Ma specifico per la conservazione basata su eventi, nella pagina **Definisci impostazioni di conservazione** della procedura guidata Crea etichetta di conservazione, dopo **Avvia il periodo di conservazione in base a**, selezionare uno dei tipi di eventi predefiniti dall'elenco a discesa o creane uno personalizzato selezionando **Crea nuovo tipo di evento**:
+Per creare e configurare l'etichetta di conservazione, usare le istruzioni in [Creare le etichette di conservazione](./create-apply-retention-labels.md#step-1-create-retention-labels). Ma specifico per la conservazione basata su eventi, nella pagina **Definisci impostazioni di conservazione** della procedura guidata Crea etichetta di conservazione, dopo **Avvia il periodo di conservazione in base a**, selezionare uno dei tipi di eventi predefiniti dall'elenco a discesa o creane uno personalizzato selezionando **Crea nuovo tipo di evento**:
 
 ![Creare un nuovo tipo di evento per un'etichetta di conservazione](../media/SPRetention6.png)
 
@@ -212,7 +212,7 @@ Sono disponibili due opzioni per usare l'API REST:
 
 Prima di usare l'API REST, come amministratore globale, confermare l'URL da usare per chiamare l'evento di conservazione. A questo scopo, eseguire una chiamata all'evento di conservazione GET usando l'URL dell'API REST:
 
-```console
+```http
 https://ps.compliance.protection.outlook.com/psws/service.svc/ComplianceRetentionEvent
 ```
 

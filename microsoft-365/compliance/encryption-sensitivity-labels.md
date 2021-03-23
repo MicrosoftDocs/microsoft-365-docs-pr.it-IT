@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurare etichette di riservatezza per la crittografia per proteggere i dati con restrizioni di accesso e utilizzo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 6f906e2a3ddd8a0847174a61e9f2b28238e5dc19
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4b5d25c51560cfe7a4d55419a7de9ce36321e78f
+ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928074"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51034175"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza
 
@@ -227,27 +227,33 @@ Per altre informazioni, prerequisiti e istruzioni di configurazione, vedere [Cri
 
 ## <a name="let-users-assign-permissions"></a>Consentire agli utenti di assegnare le autorizzazioni
 
+> [!IMPORTANT]
+> Non tutti i client di etichettatura supportano tutte le opzioni che consentono agli utenti di assegnare le loro autorizzazioni. Usare questa sezione per ulteriori informazioni.
+
 È possibile usare queste opzioni per consentire agli utenti di assegnare autorizzazioni quando applicano manualmente un'etichetta di riservatezza al contenuto:
 
-- In Outlook, un utente può selezionare restrizioni equivalenti all'opzione [Non inoltrare](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) per determinati destinatari.
+- In Outlook, un utente può selezionare restrizioni equivalenti all'opzione [Non inoltrare](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) o [Solo crittografia](/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails) per determinati destinatari.
+    
+    L'opzione Non inoltrare è supportata da tutti i client di posta elettronica che supportano le etichette di riservatezza. Tuttavia, l'applicazione dell'opzione **Solo crittografia** con un'etichetta di riservatezza è una release recente supportata solo dall'etichettatura integrata e non dal client di etichettatura unificata di Azure Information Protection. L'etichetta non sarà visibile per i client di posta elettronica che non supportano questa funzionalità.
+    
+    Per controllare quale app Outlook che usa l'etichettatura integrata supporti l'applicazione dell'opzione Solo crittografia con un'etichetta di riservatezza, usare la [tabella funzionalità per Outlook](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-outlook) e la riga **Consenti agli utenti di assegnare autorizzazioni: Solo crittografia**.
 
-- In Word, PowerPoint ed Excel, agli utenti viene chiesto di selezionare le autorizzazioni personalizzate per utenti, gruppi o organizzazioni specifici.
+- In Word, PowerPoint ed Excel, agli utenti viene chiesto di selezionare le autorizzazioni personalizzate per utenti, gruppi oppure organizzazioni specifici.
 
-    > [!NOTE]
-    > Questa opzione per Word, PowerPoint ed Excel è supportata dal client di etichettatura unificata di Azure Information Protection. Per le app che usano l'etichettatura integrata, [controllare quali app la supportano](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint).
-    >
-    > Se questa opzione è selezionata ma non è supportata per l'app di un utente, l'etichetta non viene visualizzata oppure viene visualizzata per coerenza, ma non può essere applicata e viene visualizzato un messaggio di spiegazione per gli utenti.
+    Questa opzione è supportata dal client di etichettatura unificata di Azure Information Protection e da altre app che usano l'etichettatura integrata. Per le app che non supportano questa funzionalità, l'etichetta non sarà visibile agli utenti o sarà visibile per coerenza, ma non potrà essere applicata con un messaggio di spiegazione agli utenti.
+    
+    Per controllare quali app che usano l'etichettatura integrata supportino questa opzione, usare la [tabella funzionalità per Word, Excel e PowerPoint](sensitivity-labels-office-apps.md#sensitivity-label-capabilities-in-word-excel-and-powerpoint) e la riga **Consenti agli utenti di assegnare autorizzazioni: chiedi agli utenti**.
 
 Se le opzioni sono supportate, usare la tabella seguente per accertarsi se gli utenti visualizzano l'etichetta di riservatezza:
 
 |Impostazione |Etichetta visibile in Outlook|Etichetta visibile in Word, Excel, PowerPoint|
 |:-----|:-----|:-----|:-----|
-|**In Outlook, applicare restrizioni equivalenti all'opzione Non inoltrare**|Sì |No |
+|**In Outlook, applicare restrizioni con le opzioni Non inoltrare o Solo crittografia**|Sì |No |
 |**In Word, PowerPoint ed Excel, chiedere agli utenti di specificare le autorizzazioni**|No |Sì|
 
 Se sono selezionate entrambe le impostazioni, l'etichetta sarà visibile sia in Outlook che in Word, Excel e PowerPoint.
 
-Un'etichetta di riservatezza che consente agli utenti di assegnare autorizzazioni può essere applicata al contenuto solo manualmente dagli utenti. Non può essere applicata automaticamente o usata come etichetta consigliata.
+Un'etichetta di riservatezza che consente agli utenti di assegnare autorizzazioni deve essere applicata al contenuto manualmente dagli utenti. Non può essere applicata automaticamente o usata come etichetta consigliata.
 
 Configurazione delle autorizzazioni assegnate dall'utente:
 
@@ -255,13 +261,21 @@ Configurazione delle autorizzazioni assegnate dall'utente:
 
 ### <a name="outlook-restrictions"></a>Restrizioni di Outlook
 
-In Outlook, quando un utente applica un'etichetta di riservatezza che consente di assegnare autorizzazioni a un messaggio, le restrizioni sono le stesse dell'opzione Non inoltrare. Gli utenti vedranno il nome e la descrizione dell'etichetta nella parte superiore del messaggio, il che indica che il contenuto è protetto. Diversamente da Word, PowerPoint ed Excel (vedere la [sezione successiva](#word-powerpoint-and-excel-permissions)), agli utenti non viene chiesto di selezionare autorizzazioni specifiche.
+In Outlook, quando un utente applica un'etichetta di riservatezza che consente di assegnare autorizzazioni a un messaggio, è possibile scegliere **l'opzione Non inoltrare** o **Solo crittografia**. Gli utenti vedranno il nome e la descrizione dell'etichetta nella parte superiore del messaggio, il che indica che il contenuto è protetto. Diversamente da Word, PowerPoint ed Excel (vedere la [sezione successiva](#word-powerpoint-and-excel-permissions)), agli utenti non viene chiesto di selezionare autorizzazioni specifiche.
 
 ![Etichetta di riservatezza applicata a un messaggio in Outlook](../media/sensitivity-label-outlook-protection-applied.png)
 
-Se l'opzione Non inoltrare viene applicata a un messaggio di posta elettronica, il messaggio viene crittografato e i destinatari devono essere autenticati. Quindi i destinatari non potranno inoltrarlo, stamparlo o copiarlo. Ad esempio, nel client Outlook il pulsante Inoltra non è disponibile, le opzioni di menu Salva con nome e Stampa non sono disponibili e non è possibile aggiungere o modificare i destinatari nelle caselle A, Cc o Ccn.
+Se una delle due opzioni viene applicata a un messaggio di posta elettronica, il messaggio viene crittografato e i destinatari devono essere autenticati. Quindi, i destinatari dispongono automaticamente di diritti di accesso con limitazioni:
 
-I documenti di Office non crittografati allegati al messaggio di posta elettronica ereditano automaticamente le stesse restrizioni. I diritti di utilizzo applicati a questi documenti sono Modifica contenuto, Modifica, Salva, Visualizza, Apri, Leggi e Consenti macro. Se l'utente vuole avere diritti di utilizzo diversi per un allegato, o se l’allegato non è un documento di Office che supporta questa protezione ereditata, l'utente deve proteggere il file prima di allegarlo al messaggio di posta elettronica.
+- **Non inoltrare**: i destinatari non possono inoltrare il messaggio di posta elettronica, stamparlo o copiarlo. Ad esempio, nel client Outlook il pulsante Inoltra non è disponibile, le opzioni di menu Salva con nome e Stampa non sono disponibili e non è possibile aggiungere o modificare i destinatari nelle caselle A, Cc o Ccn.
+    
+    Per altre informazioni su come funziona questa opzione, vedere [Opzione Non inoltrare per i messaggi di posta elettronica](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails).
+
+- **Solo crittografia**: i destinatari dispongono di tutti i diritti di utilizzo tranne Salva come, Esporta e Controllo completo. Questa combinazione di diritti di utilizzo significa che i destinatari non hanno restrizioni, tranne quella di non poter rimuovere la protezione. Ad esempio, un destinatario può copiare dall'e-mail, stampare o inoltrare.
+    
+    Per altre informazioni su come funzioni questa opzione, vedere [Opzione Solo crittografia per i messaggi di posta elettronica](https://docs.microsoft.com/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails).
+
+I documenti di Office non crittografati allegati al messaggio di posta elettronica ereditano automaticamente le stesse restrizioni. Per Non inoltrare, i diritti di utilizzo applicati a questi documenti sono Modifica contenuto, Modifica, Salva, Visualizza, Apri, Leggi e Consenti macro. Se l'utente vuole avere diritti di utilizzo diversi per un allegato, o se l'allegato non è un documento di Office che supporta questa protezione ereditata, l'utente deve crittografare il file prima di allegarlo al messaggio di posta elettronica.
 
 ### <a name="word-powerpoint-and-excel-permissions"></a>Autorizzazioni per Word, PowerPoint ed Excel
 
