@@ -1,0 +1,136 @@
+---
+title: Introduzione a Microsoft Teams nella tua piccola azienda
+f1.keywords:
+- NOCSH
+ms.author: twerner
+author: twerner
+manager: scotv
+audience: Admin
+ms.topic: article
+ms.service: o365-administration
+localization_priority: Normal
+ms.collection:
+- M365-subscription-management
+- Adm_O365
+ms.custom:
+- AdminSurgePortfolio
+- adminvideo
+search.appverid:
+- BCS160
+- MET150
+- MOE150
+description: Informazioni su come usare Microsoft Teams nelle piccole aziende.
+ms.openlocfilehash: 592d5eda985239f79ce42291af840ff7762a903c
+ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51034288"
+---
+# <a name="get-started-with-microsoft-teams-in-your-small-business"></a><span data-ttu-id="5a3ef-103">Introduzione a Microsoft Teams nella tua piccola azienda</span><span class="sxs-lookup"><span data-stu-id="5a3ef-103">Get started with Microsoft Teams in your small business</span></span>
+
+- [<span data-ttu-id="5a3ef-104">Usare Teams per la propria azienda (video)</span><span class="sxs-lookup"><span data-stu-id="5a3ef-104">Use Teams for your business (video)</span></span>](#use-teams-for-your-business-video)
+- [<span data-ttu-id="5a3ef-105">Ospitare riunioni online per la propria azienda (video)</span><span class="sxs-lookup"><span data-stu-id="5a3ef-105">Host online meetings for your business (video)</span></span>](#host-online-meetings-for-your-business-video)
+- [<span data-ttu-id="5a3ef-106">Avviare e aggiungere chat (video)</span><span class="sxs-lookup"><span data-stu-id="5a3ef-106">Start and pin chats (video)</span></span>](#start-and-pin-chats-video)
+- [<span data-ttu-id="5a3ef-107">Creare un team a livello aziendale (video)</span><span class="sxs-lookup"><span data-stu-id="5a3ef-107">Create a company-wide team (video)</span></span>](#create-a-company-wide-team-video)
+- [<span data-ttu-id="5a3ef-108">Creare un team con utenti guest (video)</span><span class="sxs-lookup"><span data-stu-id="5a3ef-108">Create a team with guests (video)</span></span>](#create-a-team-with-guests-video)
+
+<span data-ttu-id="5a3ef-109">Il modo in cui lavoriamo e viviamo è cambiato in modo significativo e molte piccole imprese stanno abbracciando il [lavoro remoto.](https://www.microsoft.com/microsoft-teams/work-remotely?ocid=oo_support_mix_marvel_ups_support_smcteamsmb_inline)</span><span class="sxs-lookup"><span data-stu-id="5a3ef-109">The way we work and live has changed significantly and many small businesses are embracing [remote work](https://www.microsoft.com/microsoft-teams/work-remotely?ocid=oo_support_mix_marvel_ups_support_smcteamsmb_inline).</span></span> <span data-ttu-id="5a3ef-110">Man mano che l'azienda lavora per dotare i dipendenti di lavorare in remoto e connettersi virtualmente con i clienti, di seguito è riportato un breve set di linee guida che consentono di iniziare rapidamente a lavorare con Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-110">As your business works to equip employees to work remotely and connect with your customers virtually, below is a brief set of guidelines to help you get up and running quickly with Microsoft Teams.</span></span> 
+
+<span data-ttu-id="5a3ef-111">Se stai solo iniziando a cambiare la tua azienda per lavorare in remoto, sei arrivato nel posto giusto.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-111">If you're just starting to change your business to work remotely, you've come to the right place.</span></span> <span data-ttu-id="5a3ef-112">Con Microsoft 365, è possibile gestire un'azienda virtualmente e rimanere in contatto con dipendenti, partner e clienti tramite riunioni online, [chat,](https://www.microsoft.com/microsoft-teams/instant-messaging?ocid=oo_support_mix_marvel_ups_support_smcteamsmb_inline)condivisione di file e chiamate in Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-112">With Microsoft 365, you can manage a business virtually and stay in touch with your employees, partners, and customers through online meetings, [chats](https://www.microsoft.com/microsoft-teams/instant-messaging?ocid=oo_support_mix_marvel_ups_support_smcteamsmb_inline), file sharing, and calls in Microsoft Teams.</span></span> 
+
+## <a name="use-teams-for-your-business-video"></a><span data-ttu-id="5a3ef-113">Usare Teams per la propria azienda (video)</span><span class="sxs-lookup"><span data-stu-id="5a3ef-113">Use Teams for your business (video)</span></span>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4ueMh?autoplay=false]
+
+<span data-ttu-id="5a3ef-114">Per assistenza nell'utilizzo in remoto, è consigliabile iniziare con questi tre passaggi:</span><span class="sxs-lookup"><span data-stu-id="5a3ef-114">For help with working remotely, we recommend starting with these three steps:</span></span>
+
+## <a name="1-get-ready"></a><span data-ttu-id="5a3ef-115">1. Prepararsi</span><span class="sxs-lookup"><span data-stu-id="5a3ef-115">1. Get ready</span></span> 
+
+<span data-ttu-id="5a3ef-116">Iniziare è facile.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-116">Getting started is easy.</span></span> <span data-ttu-id="5a3ef-117">Se si dispone già di un abbonamento a Microsoft 365, assicurarsi che tutti gli utenti dispongono di una licenza che include Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-117">If you already have a Microsoft 365 subscription, make sure that everyone has a license that includes Microsoft Teams.</span></span> <span data-ttu-id="5a3ef-118">Se l'azienda non dispone ancora di Microsoft Teams, è possibile trovare Microsoft Teams giusto [per la propria azienda](https://aka.ms/TeamsBusinessBasic) e iscriversi.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-118">If your company does not have Microsoft Teams yet, you can [find the right Microsoft Teams for your business](https://aka.ms/TeamsBusinessBasic) and sign up.</span></span>
+
+### <a name="get-microsoft-teams-ready-for-your-customers"></a><span data-ttu-id="5a3ef-119">Prepara Microsoft Teams per i tuoi clienti</span><span class="sxs-lookup"><span data-stu-id="5a3ef-119">Get Microsoft Teams ready for your customers</span></span>
+
+<span data-ttu-id="5a3ef-120">L'accesso guest consente ai team dell'organizzazione di collaborare con persone esterne all'organizzazione concedendo loro l'accesso a team e canali esistenti in Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-120">Guest access allows teams in your organization to collaborate with people outside your organization by granting them access to existing teams and channels in Microsoft Teams.</span></span> <span data-ttu-id="5a3ef-121">Chiunque abbia un account di posta elettronica aziendale o consumer, ad esempio Outlook, Gmail o altri, può partecipare come guest in Microsoft Teams con accesso completo a chat, riunioni e file del team.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-121">Anyone with a business or consumer email account, such as Outlook, Gmail, or others, can participate as a guest in Microsoft Teams with full access to team chats, meetings, and files.</span></span> <span data-ttu-id="5a3ef-122">L'amministratore di Microsoft Teams controlla le funzionalità che gli utenti guest possono (e non possono) usare in Microsoft Teams: vedere [Gestire l'accesso guest.](https://docs.microsoft.com/microsoftteams/set-up-guests)</span><span class="sxs-lookup"><span data-stu-id="5a3ef-122">As the Microsoft Teams admin, you control which features guests can (and can't) use in Microsoft Teams - check out [Manage guest access](https://docs.microsoft.com/microsoftteams/set-up-guests).</span></span>
+
+## <a name="2-start-using-microsoft"></a><span data-ttu-id="5a3ef-123">2. Iniziare a usare Microsoft</span><span class="sxs-lookup"><span data-stu-id="5a3ef-123">2. Start using Microsoft</span></span> 
+
+<span data-ttu-id="5a3ef-124">Ora è il momento di iniziare a usare Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-124">Now it's time to start using Microsoft Teams.</span></span> <span data-ttu-id="5a3ef-125">Puoi usarla dal Web o [installare l'app](https://aka.ms/installteams) nel computer, nel portatile o nel dispositivo mobile.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-125">You can use it from the web, or [install](https://aka.ms/installteams) the app on your computer, laptop, or mobile device.</span></span>
+
+### <a name="meet-from-anywhere"></a><span data-ttu-id="5a3ef-126">Incontrarsi da qualsiasi luogo</span><span class="sxs-lookup"><span data-stu-id="5a3ef-126">Meet from anywhere</span></span>
+
+<span data-ttu-id="5a3ef-127">Con Microsoft Teams, gli utenti possono usare le videoconferenze per comunicare in modo sicuro con i video HD mentre vedono e parlano con altri partecipanti in tempo reale.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-127">With Microsoft Teams, people can use video conferencing to communicate securely with HD video while seeing and talking to other participants in real time.</span></span> <span data-ttu-id="5a3ef-128">Ciò aggiunge un livello di interazione e interazione alla conversazione, poiché il linguaggio del corpo e le espressioni facciali promuovono una maggiore collaborazione e comprensione.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-128">This adds a level of engagement and interaction to the conversation as body language and facial expressions promote higher collaboration and understanding.</span></span>
+
+### <a name="host-online-meetings-for-your-business-video"></a><span data-ttu-id="5a3ef-129">Ospitare riunioni online per la propria azienda (video)</span><span class="sxs-lookup"><span data-stu-id="5a3ef-129">Host online meetings for your business (video)</span></span>
+
+> [!VIDEO https://docs.microsoft.com/microsoft-365/business-video/overview-online-meetings?view=o365-worldwide]
+
+### <a name="chat-from-anywhere"></a><span data-ttu-id="5a3ef-130">Chat da qualsiasi luogo</span><span class="sxs-lookup"><span data-stu-id="5a3ef-130">Chat from anywhere</span></span>
+
+<span data-ttu-id="5a3ef-131">Connettiti in tempo reale su chat private 1:1, chat di gruppo o conversazioni di canale visibili all'intero team.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-131">Connect in real time on private 1:1 chats, group chats or in channel conversations that are visible to the entire team.</span></span> <span data-ttu-id="5a3ef-132">La cronologia chat è disponibile in qualsiasi momento per ricordare le discussioni e le decisioni passate.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-132">Chat history is available at any time to recall past discussions and decisions.</span></span> <span data-ttu-id="5a3ef-133">Ciò aggiunge un grande valore per le nuove persone che tornerà nel team o per i membri correnti del team che desiderano visitare di nuovo il contesto di una conversazione.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-133">This adds a lot of value for new people coming into the team, or for current team members looking to re-visit a conversation’s context.</span></span>
+
+### <a name="start-and-pin-chats-video"></a><span data-ttu-id="5a3ef-134">Avviare e aggiungere chat (video)</span><span class="sxs-lookup"><span data-stu-id="5a3ef-134">Start and pin chats (video)</span></span>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWedV6?autoplay=false]
+
+### <a name="collaborate-with-customers-and-employees"></a><span data-ttu-id="5a3ef-135">Collaborare con clienti e dipendenti</span><span class="sxs-lookup"><span data-stu-id="5a3ef-135">Collaborate with customers and employees</span></span>
+
+<span data-ttu-id="5a3ef-136">Microsoft Teams offre un modo eccellente per rimanere in contatto sia con i dipendenti che con i clienti.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-136">Microsoft Teams provides an excellent way to keep in touch with both your employees and customers.</span></span>
+
+<span data-ttu-id="5a3ef-137">Aiutare tutti gli utenti dell'organizzazione a installare Microsoft Teams nei propri dispositivi.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-137">Help everyone in your organization install Microsoft Teams on their devices.</span></span> <span data-ttu-id="5a3ef-138">Per ulteriori informazioni, vedere [scaricare Microsoft Teams.](https://aka.ms/downloadteams)</span><span class="sxs-lookup"><span data-stu-id="5a3ef-138">For more information, see [download Microsoft Teams](https://aka.ms/downloadteams).</span></span>
+
+<span data-ttu-id="5a3ef-139">Con Microsoft Teams è possibile inviare messaggi istantanei, condividere file e tenere riunioni.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-139">With Microsoft Teams you can send instant messages, share files and hold meetings.</span></span> <span data-ttu-id="5a3ef-140">È possibile [invitare chiunque a una riunione,](https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a)anche se non dispone di Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-140">You can [invite anyone to a meeting](https://support.microsoft.com/office/c61b4f61-ee62-4a06-8bf7-0a1cd302700a), even if they don't have Microsoft Teams.</span></span> <span data-ttu-id="5a3ef-141">Per la collaborazione in tempo reale con chat, condivisione di documenti e chiamate, è possibile invitare persone esterne all'azienda a essere membri del team.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-141">For real-time collaboration with chat, document sharing, and calls, you can invite people outside your business to be a member of your team.</span></span>
+
+### <a name="create-and-organize-teams"></a><span data-ttu-id="5a3ef-142">Creare e organizzare i team</span><span class="sxs-lookup"><span data-stu-id="5a3ef-142">Create and organize teams</span></span>
+
+<span data-ttu-id="5a3ef-143">Un team di Microsoft Teams è progettato per riunire un gruppo di persone che lavorano a stretto contatto per eseguire le operazioni.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-143">A team in Microsoft Teams is designed to bring together a group of people who work closely to get things done.</span></span> <span data-ttu-id="5a3ef-144">Teams può essere dinamico per il lavoro basato su progetto (ad esempio, l'avvio di un prodotto) o in corso, in base ai reparti o alle sedi dell'azienda.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-144">Teams can be dynamic for project-based work (i.e. a product launch), or ongoing, based on your company’s departments or office locations.</span></span> <span data-ttu-id="5a3ef-145">È inoltre possibile configurare team a livello di organizzazione per includere tutti gli utenti dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-145">You can also set up org-wide teams to include everyone in your organization.</span></span>
+
+<span data-ttu-id="5a3ef-146">I canali sono sezioni dedicate all'interno di un team per mantenere le conversazioni organizzate per argomenti, progetti o discipline specifici.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-146">Channels are dedicated sections within a team to keep conversations organized by specific topics, projects or disciplines.</span></span> <span data-ttu-id="5a3ef-147">Le conversazioni, i file e le note per ogni canale sono visibili solo ai membri del gruppo.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-147">Conversations, files, and notes for each channel are only visible to members of that group.</span></span>
+
+### <a name="create-a-company-wide-team-video"></a><span data-ttu-id="5a3ef-148">Creare un team a livello aziendale (video)</span><span class="sxs-lookup"><span data-stu-id="5a3ef-148">Create a company-wide team (video)</span></span>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2GCG9?autoplay=false]
+
+### <a name="create-a-team-with-guests-video"></a><span data-ttu-id="5a3ef-149">Creare un team con utenti guest (video)</span><span class="sxs-lookup"><span data-stu-id="5a3ef-149">Create a team with guests (video)</span></span>
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp?autoplay=false]
+
+### <a name="store-and-share-files"></a><span data-ttu-id="5a3ef-150">Archiviare e condividere file</span><span class="sxs-lookup"><span data-stu-id="5a3ef-150">Store and share files</span></span>
+
+<span data-ttu-id="5a3ef-151">Poiché il team collabora in remoto, avrai file su cui condividere e collaborare, sia all'interno che all'esterno dell'azienda.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-151">As your team works together remotely, you'll have files that you'll want to share and collaborate on, both inside and outside the company.</span></span> <span data-ttu-id="5a3ef-152">Microsoft Teams semplifica la condivisione dei file e la collaborazione.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-152">Microsoft Teams makes it easy to share files and work on them together.</span></span> <span data-ttu-id="5a3ef-153">Se i documenti sono file di Word, Excel o PowerPoint, i colleghi e i clienti possono anche visualizzarli, modificarli e collaborare, direttamente in Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-153">If your documents are Word, Excel or PowerPoint files your colleagues and customers can even view, edit, and collaborate on them, right within Microsoft Teams.</span></span>
+
+<span data-ttu-id="5a3ef-154">Assicurati che i documenti chiave della tua azienda siano salvati nel cloud e pronti per essere condivisi in modo sicuro con clienti, clienti, partner, fornitori e altre persone della tua azienda.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-154">Make sure your company’s key documents are saved in the cloud and ready to be shared securely with clients, customers, partners, suppliers, and other people in your business.</span></span> <span data-ttu-id="5a3ef-155">Mantenere i file nel cloud significa anche ottenere i vantaggi del backup e la possibilità di ripristinare da errori del disco rigido, attacchi ransomware e altre disgrazie.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-155">Keeping files in the cloud also means you get the benefits of backup and the ability to recover from hard drive failures, ransomware attacks, and other misfortunes.</span></span>
+
+- [<span data-ttu-id="5a3ef-156">Condividere i file aziendali</span><span class="sxs-lookup"><span data-stu-id="5a3ef-156">Share your business files</span></span>](https://support.microsoft.com/office/share-your-business-files-overview-6725104a-6df7-4778-99c4-c06217dffecc)
+
+- [<span data-ttu-id="5a3ef-157">Dove archiviare i file</span><span class="sxs-lookup"><span data-stu-id="5a3ef-157">Where to store files</span></span>](https://support.microsoft.com/office/where-to-store-files-c7c20284-bc94-47f4-9728-d28e9daf0790)
+
+## <a name="3-get-everyone-ready"></a><span data-ttu-id="5a3ef-158">3. Prepara tutti</span><span class="sxs-lookup"><span data-stu-id="5a3ef-158">3. Get everyone ready</span></span>
+
+<span data-ttu-id="5a3ef-159">Per aiutare i dipendenti a ottenere il massimo da Microsoft Teams, è possibile condividere con loro i collegamenti seguenti alle risorse di formazione degli utenti finali:</span><span class="sxs-lookup"><span data-stu-id="5a3ef-159">To help your employees get the most out of Microsoft Teams, you can share with them the following links to end user training resources:</span></span>
+
+- <span data-ttu-id="5a3ef-160">Guarda una serie di brevi [video introduttivi](https://support.microsoft.com/office/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7) per una procedura dettagliata di Microsoft Teams.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-160">Watch a series of short [quick start videos](https://support.microsoft.com/office/microsoft-teams-video-training-4f108e54-240b-4351-8084-b1089f0d21d7) for a walkthrough of Microsoft Teams.</span></span>
+
+- <span data-ttu-id="5a3ef-161">Guarda i [video sulle riunioni](https://support.microsoft.com/office/b6caa0d4-eecb-4aa0-bc75-c05f4cd907b2) per informazioni su come usare le riunioni.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-161">Watch the [meetings videos](https://support.microsoft.com/office/b6caa0d4-eecb-4aa0-bc75-c05f4cd907b2) to learn how to use meetings.</span></span>
+
+- <span data-ttu-id="5a3ef-162">Crea o [promuovi il tuo team](https://support.microsoft.com/office/create-an-org-wide-team-037bb27a-bcc9-48fe-8d72-44d9482420a3) a livello di organizzazione in un luogo in cui imparare e fare le cose.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-162">Create or promote your [org-wide team](https://support.microsoft.com/office/create-an-org-wide-team-037bb27a-bcc9-48fe-8d72-44d9482420a3) a place to learn and get things done.</span></span>
+
+## <a name="next-steps"></a><span data-ttu-id="5a3ef-163">Passaggi successivi</span><span class="sxs-lookup"><span data-stu-id="5a3ef-163">Next steps</span></span>
+
+<span data-ttu-id="5a3ef-164">Per un approfondimento delle funzionalità di Microsoft Teams...</span><span class="sxs-lookup"><span data-stu-id="5a3ef-164">For a deeper dive into the functionality of Microsoft Teams...</span></span>
+
+### <a name="secure-your-business-as-it-runs-remotely"></a><span data-ttu-id="5a3ef-165">Proteggere l'azienda durante l'esecuzione in remoto</span><span class="sxs-lookup"><span data-stu-id="5a3ef-165">Secure your business as it runs remotely</span></span>
+
+<span data-ttu-id="5a3ef-166">Una funzionalità di sicurezza altamente consigliata è l'autenticazione a più fattori (MFA).</span><span class="sxs-lookup"><span data-stu-id="5a3ef-166">A highly recommended security feature is multi-factor authentication (MFA).</span></span> <span data-ttu-id="5a3ef-167">L'aggiunta dell'autenticazione a più fattori per i dipendenti remoti richiede loro di immettere un codice di sicurezza ricevuto da un sms, una chiamata telefonica o un'app di autenticazione quando aentrano in Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-167">Adding MFA for remote employees requires them to enter a security code received by a text, phone call, or authentication app when they log into Microsoft 365.</span></span> <span data-ttu-id="5a3ef-168">Se un pirata informatico riceve la password di un utente tramite un attacco di phishing, non può usarla per accedere agli account e ai dati dell'azienda.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-168">If a hacker gets a hold of someone’s password through a phishing attack, they can’t use it to access your company’s accounts and data.</span></span> <span data-ttu-id="5a3ef-169">È possibile aggiungere la protezione MFA dall'interfaccia di amministrazione di Microsoft 365: [Configurare la MFA per i dispositivi mobili.](https://support.microsoft.com/office/set-up-multi-factor-authentication-in-microsoft-365-business-a32541df-079c-420d-9395-9d59354f7225)</span><span class="sxs-lookup"><span data-stu-id="5a3ef-169">You can add MFA protection from the Microsoft 365 Admin Center: [Set up MFA for mobile devices](https://support.microsoft.com/office/set-up-multi-factor-authentication-in-microsoft-365-business-a32541df-079c-420d-9395-9d59354f7225).</span></span>
+
+### <a name="microsoft-teams-templates"></a><span data-ttu-id="5a3ef-170">Modelli di Microsoft Teams</span><span class="sxs-lookup"><span data-stu-id="5a3ef-170">Microsoft Teams templates</span></span>
+
+<span data-ttu-id="5a3ef-171">Per semplificare e semplificare la distribuzione nell'organizzazione, consultare i modelli disponibili in modo specifico per le piccole imprese.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-171">To make deployment in your organization easier and more streamlined, check out the templates that are available specifically for small businesses.</span></span> <span data-ttu-id="5a3ef-172">I modelli di Microsoft Teams consentono di creare rapidamente e facilmente team fornendo un modello predefinito di impostazioni, canali e app preinstallate, orientando gli utenti a iniziare a usare Microsoft Teams in modo efficace.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-172">Microsoft Teams templates allow you to quickly and easily create teams by providing a predefined template of settings, channels, and pre-installed apps, while orienting users to get started using Microsoft Teams effectively.</span></span> <span data-ttu-id="5a3ef-173">Vedere [Introduzione ai modelli di Teams per piccole e medie imprese.](https://docs.microsoft.com/microsoftteams/smb-templates)</span><span class="sxs-lookup"><span data-stu-id="5a3ef-173">See [Get started with Teams templates for small and medium businesses](https://docs.microsoft.com/microsoftteams/smb-templates).</span></span>
+
+### <a name="business-phone-system"></a><span data-ttu-id="5a3ef-174">Sistema telefonico aziendale</span><span class="sxs-lookup"><span data-stu-id="5a3ef-174">Business phone system</span></span>
+
+<span data-ttu-id="5a3ef-175">Trasforma qualsiasi PC, Mac o dispositivo mobile in un telefono aziendale funzionante aggiungendo [Microsoft 365 Business Voice](https://aka.ms/getbusinessvoice) all'abbonamento.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-175">Turn any PC, Mac, or mobile device into a working business phone by adding [Microsoft 365 Business Voice](https://aka.ms/getbusinessvoice) to your subscription.</span></span> <span data-ttu-id="5a3ef-176">Assegnare ai dipendenti il proprio numero di telefono dell'ufficio per effettuare e ricevere chiamate, configurare un sistema di menu delle chiamate per instradare le chiamate, aggiungere audioconferenze e configurare sia numeri a numero verde che a numero verde per la propria azienda.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-176">Give employees their own work phone number to make and receive calls, set up a call menu system to route calls, add audio conferencing, and set up both toll and toll-free numbers for your business.</span></span> <span data-ttu-id="5a3ef-177">Fai tutto questo sostituendo i tradizionali provider di telefonia e i sistemi di telefonia interno che possono essere costose e difficili da gestire.</span><span class="sxs-lookup"><span data-stu-id="5a3ef-177">Do all of this while replacing traditional telephony providers and in-house phone systems that can be costly and difficult to manage.</span></span>
+
+## <a name="related-content"></a><span data-ttu-id="5a3ef-178">Contenuto correlato</span><span class="sxs-lookup"><span data-stu-id="5a3ef-178">Related content</span></span>
+
+<span data-ttu-id="5a3ef-179">[Potenziare la piccola azienda con il lavoro remoto](https://docs.microsoft.com/microsoft-365/admin/misc/empower-your-small-business-with-remote-work.md) (articolo)</span><span class="sxs-lookup"><span data-stu-id="5a3ef-179">[Empower your small business with remote work](https://docs.microsoft.com/microsoft-365/admin/misc/empower-your-small-business-with-remote-work.md) (article)</span></span>
