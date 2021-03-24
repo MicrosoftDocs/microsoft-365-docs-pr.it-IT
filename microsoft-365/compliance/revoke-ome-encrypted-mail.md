@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Come amministratore e come mittente del messaggio, è possibile revocare determinati messaggi di posta elettronica crittografati con Crittografia avanzata messaggi di Office 365.
-ms.openlocfilehash: b49915b6ef72d366a4b2718319150d2d5b640b9f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 340a9e73dba50e28223ee561db749a089c649df6
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917198"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051718"
 ---
 # <a name="revoke-email-encrypted-by-advanced-message-encryption"></a>Revocare la posta elettronica crittografata dalla crittografia avanzata dei messaggi
 
@@ -91,7 +91,7 @@ Esistono diversi modi per trovare l'ID messaggio del messaggio di posta elettron
 
 #### <a name="to-identify-the-message-id-of-the-email-you-want-to-revoke-by-using-office-message-encryption-reports-in-the-security-amp-compliance-center"></a>Per identificare l'ID del messaggio di posta elettronica che si desidera revocare utilizzando i report di Crittografia messaggi di Office nel Centro &amp; sicurezza e conformità
 
-1. Nel Centro &amp; sicurezza e conformità passare al report Crittografia **messaggi**. Per informazioni su questo report, vedere [View email security reports in the Security Compliance &amp; Center.](../security/office-365-security/view-email-security-reports.md)
+1. Nel Centro &amp; sicurezza e conformità passare al report Crittografia **messaggi**. Per informazioni su questo report, vedere [View email security reports in the Security Compliance &amp; Center.](../security/defender-365-security/view-email-security-reports.md)
 
 2. Scegliere la **tabella Visualizza** dettagli e identificare il messaggio che si desidera revocare.
 

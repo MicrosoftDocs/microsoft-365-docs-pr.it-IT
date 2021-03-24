@@ -14,12 +14,12 @@ search.appverid:
 - MET150
 ms.assetid: d945f7dd-f62f-4ca7-b3e7-469824cfd493
 description: Utilizzare eDiscovery e gli strumenti di ricerca per gestire e rispondere a un incidente di fuoriuscita di dati nell'organizzazione.
-ms.openlocfilehash: 9ca637dcd3b4b07846d977d64f535b7b5319d884
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: da473fcdf553176d3c6d4dfa2a4c4b17b2bcce03
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925682"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051978"
 ---
 # <a name="ediscovery-solution-series-data-spillage-scenario---search-and-purge"></a>Serie di soluzioni eDiscovery: scenario di fuoriuscita di dati - Ricerca ed eliminazione
 
@@ -121,7 +121,7 @@ Per analizzare ulteriormente se la posta elettronica con dati sversati è stata 
   
 È possibile utilizzare Traccia messaggi nel Centro sicurezza e conformità oppure utilizzare i cmdlet corrispondenti in PowerShell di Exchange Online. È importante notare che l'analisi dei messaggi non offre garanzie complete sulla completezza dei dati restituiti. Per ulteriori informazioni sull'utilizzo di Traccia messaggi, vedere: 
   
-- [Traccia dei messaggi nel Centro sicurezza e conformità](../security/office-365-security/message-trace-scc.md)
+- [Traccia dei messaggi nel Centro sicurezza e conformità](../security/defender-365-security/message-trace-scc.md)
     
 - [Nuova traccia dei messaggi nel Centro sicurezza & conformità](https://blogs.technet.microsoft.com/exchange/2018/05/02/new-message-trace-in-office-365-security-compliance-center/)
     
@@ -199,7 +199,7 @@ Se le parole chiave nella query di ricerca creata e utilizzata nel passaggio 3 c
     
 ### <a name="auditing-the-data-spillage-investigation-process"></a>Controllo del processo di indagine sulla fuoriuscita di dati
 
-È possibile cercare nel log di controllo le attività di eDiscovery eseguite durante l'indagine. È inoltre possibile eseguire una ricerca nel log di controllo per restituire i record di controllo per il comando **New-ComplianceSearchAction -Purge** eseguito nel passaggio 7 per eliminare i dati sversati. Per altre informazioni, vedere:
+È possibile cercare nel log di controllo le attività di eDiscovery eseguite durante l'indagine. È inoltre possibile eseguire una ricerca nel log di controllo per restituire i record di controllo per il comando **New-ComplianceSearchAction -Purge** eseguito nel passaggio 7 per eliminare i dati sversati. Per ulteriori informazioni, vedere:
 
 - [Eseguire ricerche nel log di controllo](search-the-audit-log-in-security-and-compliance.md)
 

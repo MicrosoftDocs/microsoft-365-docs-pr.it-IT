@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-compliance
 localization_priority: Normal
 description: Informazioni sulle attività che consentono di iniziare rapidamente a utilizzare la conformità in Microsoft 365.
-ms.openlocfilehash: 69aef07e65f5644f9aa294025c8388410f160243
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b8a6f98a38dcb6096287cbc2389648c0e7457e5c
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908586"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052104"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Attività rapide per iniziare a usare il Centro conformità Microsoft 365
 
@@ -34,7 +34,7 @@ Dopo aver completato queste attività di conformità di base, è consigliabile e
 
 Per iniziare, assegnare autorizzazioni di conformità alle persone dell'organizzazione in modo che possano eseguire queste attività e impedire a persone non autorizzate di accedere ad aree esterne alle proprie responsabilità. Prima di iniziare a configurare e implementare soluzioni  di conformità incluse  in Microsoft 365, è necessario assicurarsi di aver assegnato le persone appropriate all'amministratore dei dati di conformità e ai ruoli di amministratore di conformità. Sarà inoltre necessario assegnare gli utenti al ruolo di lettore globale di Azure Active Directory per visualizzare i dati in Compliance Manager.
 
-Per istruzioni dettagliate sulla configurazione delle autorizzazioni e sull'assegnazione delle persone ai ruoli di amministratore, vedere Autorizzazioni nel [Centro sicurezza & conformità.](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
+Per istruzioni dettagliate sulla configurazione delle autorizzazioni e sull'assegnazione delle persone ai ruoli di amministratore, vedere Autorizzazioni nel [Centro sicurezza & conformità.](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md)
 
 ## <a name="task-2-know-your-state-of-compliance"></a>Attività 2: conoscere lo stato di conformità
 
@@ -47,9 +47,9 @@ Per istruzioni dettagliate per iniziare a usare Compliance Manager, vedere [Intr
 >[!IMPORTANT]
 >La sicurezza e la conformità sono strettamente integrate per la maggior parte delle organizzazioni. È importante che l'organizzazione indirizzi le aree di sicurezza di base, protezione dalle minacce e gestione delle identità e degli accessi per fornire un approccio di difesa approfondito sia alla sicurezza che alla conformità.
 >
->Controllare il punteggio di protezione di [Microsoft 365](../security/mtp/microsoft-secure-score.md) nel Centro sicurezza Microsoft 365 e completare le attività descritte negli articoli seguenti:
+>Controllare il punteggio di protezione di [Microsoft 365](../security/defender/microsoft-secure-score.md) nel Centro sicurezza Microsoft 365 e completare le attività descritte negli articoli seguenti:
 >
-> - [Roadmap per la sicurezza - Priorità principali per i primi 30 giorni, 90 giorni e oltre](../security/office-365-security/security-roadmap.md)
+> - [Roadmap per la sicurezza - Priorità principali per i primi 30 giorni, 90 giorni e oltre](../security/defender-365-security/security-roadmap.md)
 > - [Le 12 attività principali per i team di sicurezza per supportare il lavoro da casa](../security/top-security-tasks-for-remote-work.md)
 
 ## <a name="task-3-enable-auditing-for-your-organization"></a>Attività 3: Abilitare il controllo per l'organizzazione
@@ -128,7 +128,7 @@ Per istruzioni dettagliate sull'uso di Esplora attività, vedi [Introduzione a E
 
 Dopo aver configurato le nozioni di base per la gestione della conformità per l'organizzazione, prendere in considerazione le soluzioni di conformità seguenti in Microsoft 365 per proteggere le informazioni riservate e rilevare e agire su ulteriori rischi insider.
 
-### <a name="configure-retention-labels"></a>Configurare le etichette di conservazione
+### <a name="configure-retention-labels"></a>Configurare etichette di conservazione
 
 Mentre i criteri di conservazione si applicano a livello di contenitore a posizioni quali siti di SharePoint e cassette postali di [Exchange,](retention.md#retention-labels) le etichette di conservazione consentono una destinazione più specifica per i criteri di conservazione ed eliminazione. Ad esempio, a livello di documento o messaggio di posta elettronica che gli utenti finali possono applicare manualmente oltre all'applicazione automatica da parte degli amministratori. È inoltre possibile applicare un'etichetta di conservazione a una raccolta documenti, una cartella o un set di documenti in SharePoint, in modo che tutti i documenti archiviati in tale posizione ereditino l'etichetta di conservazione predefinita.
 

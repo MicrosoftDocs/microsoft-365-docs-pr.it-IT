@@ -15,12 +15,12 @@ search.appverid:
 - MET150
 description: Comprendere in che modo Microsoft Compliance Manager calcola un punteggio personalizzato in base alle azioni intraprese per affrontare i rischi e migliorare la propria posizione di conformità.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 75d340c31b4f5477df845531bfb933883f331198
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 756ce207b1e9583bf63f19351e85955950487404
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908576"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052114"
 ---
 # <a name="compliance-score-calculation"></a>Calcolo del punteggio di conformità
 
@@ -61,7 +61,7 @@ Lo stato dell'azione viene aggiornato nel dashboard ogni 24 ore. Dopo aver segui
 
 Ad esempio, se si attiva l'autenticazione a più fattori (MFA) nel portale di Azure AD, Compliance Manager rileva l'impostazione e la riflette nei dettagli della soluzione di accesso di controllo. Al contrario, se non è stata attivata l'autenticazione a più fattori, Compliance Manager contrassegna tale azione come azione consigliata da eseguire.
 
-Ulteriori informazioni su [Secure Score e sul suo funzionamento.](../security/mtp/microsoft-secure-score.md)
+Ulteriori informazioni su [Secure Score e sul suo funzionamento.](../security/defender/microsoft-secure-score.md)
   
 ## <a name="action-types-and-points"></a>Tipi di azione e punti
 

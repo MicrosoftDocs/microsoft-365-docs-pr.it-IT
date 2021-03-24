@@ -20,12 +20,12 @@ search.appverid:
 ms.assetid: 1adffc35-38e5-4f7d-8495-8e0e8721f377
 description: Utilizzare il filtro delle autorizzazioni ricerca contenuto per consentire a un responsabile di eDiscovery di cercare solo un sottoinsieme di cassette postali e siti nell'organizzazione.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: be1daa4785f67ef54f107319bf88438c134896ec
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 78d36ccd602ea546099e768d7e91594a668df586
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927984"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051728"
 ---
 # <a name="configure-permissions-filtering-for-content-search"></a>Configurare il filtro delle autorizzazioni per Ricerca contenuto
 
@@ -45,7 +45,7 @@ Il filtro delle autorizzazioni di ricerca è supportato dalla funzionalità Rice
 
 ## <a name="requirements-to-configure-permissions-filtering"></a>Requisiti per configurare il filtro delle autorizzazioni
 
-- Per eseguire i cmdlet del filtro di sicurezza della conformità, è necessario essere membri del gruppo di ruoli Gestione organizzazione nel Centro sicurezza & conformità. Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](../security/office-365-security/permissions-in-the-security-and-compliance-center.md).
+- Per eseguire i cmdlet del filtro di sicurezza della conformità, è necessario essere membri del gruppo di ruoli Gestione organizzazione nel Centro sicurezza & conformità. Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md).
 
 - È necessario connettersi sia a Exchange Online che a PowerShell & Centro sicurezza e conformità per utilizzare i cmdlet del filtro di sicurezza della conformità. Ciò è necessario perché questi cmdlet richiedono l'accesso alle proprietà delle cassette postali, motivo per cui è necessario connettersi a PowerShell di Exchange Online. Vedere la procedura descritta nella sezione successiva.
 

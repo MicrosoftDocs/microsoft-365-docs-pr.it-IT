@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: 18ab0065a4a6c90f61730a313eb8c54f538fafab
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: aa3af1e3cf507178a5747cca28fbda543aecd334
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918051"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052124"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introduzione alla conformità delle comunicazioni
 
@@ -112,13 +112,13 @@ Utilizzare questa opzione per assegnare utenti a gruppi di ruoli specifici per s
 
 9. Selezionare **Chiudi** per completare la procedura.
 
-Per ulteriori informazioni sui gruppi di ruoli e sulle autorizzazioni, vedere [Autorizzazioni nel Centro conformità.](../security/office-365-security/protect-against-threats.md)
+Per ulteriori informazioni sui gruppi di ruoli e sulle autorizzazioni, vedere [Autorizzazioni nel Centro conformità.](../security/defender-365-security/protect-against-threats.md)
 
 ## <a name="step-2-required-enable-the-audit-log"></a>Passaggio 2 (obbligatorio): abilitare il log di controllo
 
 La conformità delle comunicazioni richiede che i log di controllo mostrino avvisi e monitorino le azioni di correzione intraprese dai revisori. I log di controllo sono un riepilogo di tutte le attività associate a un criterio organizzativo definito o ogni volta che viene modificato un criterio di conformità della comunicazione.
 
-Per istruzioni dettagliate su come attivare o disattivare il controllo, vedere Attivare o [disattivare la ricerca nel log di controllo.](turn-audit-log-search-on-or-off.md) Dopo aver attivare il controllo, viene visualizzato un messaggio che indica che il registro di controllo è in fase di preparazione e che è possibile eseguire una ricerca in un paio d'ore dopo il completamento della preparazione. È necessario eseguire questa azione una sola volta. Per ulteriori informazioni sull'utilizzo del log di controllo, vedere [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
+Per istruzioni dettagliate su come attivare o disattivare il controllo, vedere Attivare o [disattivare la ricerca nel log di controllo.](turn-audit-log-search-on-or-off.md) Dopo l'abilitazione, verrà visualizzato un messaggio che indica che è in corso la preparazione del log di controllo e che sarà possibile eseguire una ricerca in un paio d'ore, dopo il completamento della preparazione. È necessario eseguire questa azione una sola volta. Per ulteriori informazioni sull'utilizzo del log di controllo, vedere [Search the audit log](search-the-audit-log-in-security-and-compliance.md).
 
 ## <a name="step-3-optional-set-up-groups-for-communication-compliance"></a>Passaggio 3 (facoltativo): configurare i gruppi per la conformità delle comunicazioni
 

@@ -19,12 +19,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.assetid: 59414438-99f5-488b-975c-5023f2254369
 description: In questo articolo viene illustrato come creare, testare e ottimizzare un criterio DLP in base alle esigenze dell'organizzazione.
-ms.openlocfilehash: d26412eb54176dfd3c5d881d82076b2a58330ebd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bd4857a2baefb22d789fc713a537d7e4a656718d
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923452"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052084"
 ---
 # <a name="create-test-and-tune-a-dlp-policy"></a>Creare, testare e ottimizzare i criteri di prevenzione della perdita dei dati
 
@@ -50,7 +50,7 @@ I membri del team conformità addetti alla creazione dei criteri DLP necessitano
 
 Utilizzare il **ruolo Gestione conformità DLP** di sola visualizzazione per creare un gruppo di ruoli con privilegi di sola visualizzazione per i criteri DLP e i report DLP.
 
-Per altre informazioni, vedere [Concedere agli utenti l'accesso al Centro conformità di Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Per altre informazioni, vedere [Concedere agli utenti l'accesso al Centro conformità di Office 365](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md).
   
 Queste autorizzazioni sono necessarie per creare e applicare un criterio DLP per non applicare i criteri.
 
