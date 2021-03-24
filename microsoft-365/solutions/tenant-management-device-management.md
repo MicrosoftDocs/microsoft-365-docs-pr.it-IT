@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Distribuire l'opzione corretta per la gestione di dispositivi e app per i tenant di Microsoft 365.
-ms.openlocfilehash: 994ab7d21ae70307fa78e1f7249d39ac314a7358
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0351f6be3f191e1a131da5b0b665a205a0abda8c
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904613"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050995"
 ---
 # <a name="step-5-device-and-app-management-for-your-microsoft-365-for-enterprise-tenants"></a>Passaggio 5. Gestione di dispositivi e app per i tenant di Microsoft 365 per le aziende
 
@@ -48,7 +48,7 @@ Determinerai anche come gestire i dispositivi personali e i dispositivi di propr
 
 ## <a name="identity-and-device-access-configurations"></a>Configurazioni di identità e accesso dei dispositivi
 
-Microsoft fornisce una serie di configurazioni per [l'accesso a identità](../security/office-365-security/microsoft-365-policies-configurations.md) e dispositivi per garantire una forza lavoro sicura e produttiva. Queste configurazioni includono l'uso di:
+Microsoft fornisce una serie di configurazioni per [l'accesso a identità](../security/defender-365-security/microsoft-365-policies-configurations.md) e dispositivi per garantire una forza lavoro sicura e produttiva. Queste configurazioni includono l'uso di:
 
 - Criteri di Accesso condizionale di Azure AD
 - Criteri di conformità dei dispositivi e di protezione delle app di Microsoft Intune
@@ -61,8 +61,8 @@ Ecco un esempio dell'applicazione di queste impostazioni e criteri per convalida
 
 Per l'accesso ai dispositivi e la gestione delle app, usa le configurazioni in questi articoli:
 
-- [Prerequisiti](../security/office-365-security/identity-access-prerequisites.md)
-- [Criteri comuni di identità e accesso dei dispositivi](../security/office-365-security/identity-access-policies.md)
+- [Prerequisiti](../security/defender-365-security/identity-access-prerequisites.md)
+- [Criteri comuni di identità e accesso dei dispositivi](../security/defender-365-security/identity-access-policies.md)
 
 ## <a name="results-of-step-5"></a>Risultati del passaggio 5
 

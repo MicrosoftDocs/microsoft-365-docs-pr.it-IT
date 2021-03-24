@@ -16,12 +16,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: f767b44b66fbc69f28a6514acc3936eb3074e70b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a5ff570439dfecd287a5a5975358262af71d8025
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918479"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051019"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Configurare le funzionalità di protezione dalle minacce in Microsoft 365
 
@@ -42,13 +42,13 @@ Microsoft ha testato e consigliato un set specifico di accesso condizionale e cr
 
 ![Processo di distribuzione della protezione di base](../media/deploy-threat-protection/deploy-threat-protection-identity-access-steps.png) 
 
-1. [Configurare i prerequisiti, incluso Azure AD Identity Protection.](../security/office-365-security/identity-access-prerequisites.md)
-2. [Configurare i criteri comuni di identità e accesso ai dispositivi](../security/office-365-security/identity-access-policies.md) per la protezione di base.
-3. Configurare i criteri [per gli utenti guest,](../security/office-365-security/identity-access-policies-guest-access.md) [Microsoft Teams,](../security/office-365-security/teams-access-policies.md) [Exchange Online](../security/office-365-security/secure-email-recommended-policies.md)e [SharePoint Online e OneDrive.](../security/office-365-security/sharepoint-file-access-policies.md)
+1. [Configurare i prerequisiti, incluso Azure AD Identity Protection.](../security/defender-365-security/identity-access-prerequisites.md)
+2. [Configurare i criteri comuni di identità e accesso ai dispositivi](../security/defender-365-security/identity-access-policies.md) per la protezione di base.
+3. Configurare i criteri [per gli utenti guest,](../security/defender-365-security/identity-access-policies-guest-access.md) [Microsoft Teams,](../security/defender-365-security/teams-access-policies.md) [Exchange Online](../security/defender-365-security/secure-email-recommended-policies.md)e [SharePoint Online e OneDrive.](../security/defender-365-security/sharepoint-file-access-policies.md)
 
 ### <a name="more-information-about-protecting-identities"></a>Ulteriori informazioni sulla protezione delle identità
 
-- [Configurazioni di identità e accesso dei dispositivi](../security/office-365-security/microsoft-365-policies-configurations.md)
+- [Configurazioni di identità e accesso dei dispositivi](../security/defender-365-security/microsoft-365-policies-configurations.md)
 - [Indicazioni sulla sicurezza per Azure MFA](/azure/active-directory/authentication/multi-factor-authentication-security-best-practices)
 
 ## <a name="step-2-configure-microsoft-defender-for-identity"></a>Passaggio 2: Configurare Microsoft Defender per l'identità
@@ -77,7 +77,7 @@ Microsoft Defender for Identity consente agli analisti delle operazioni di sicur
 
 ## <a name="step-3-turn-on-microsoft-365-defender"></a>Passaggio 3: attivare Microsoft 365 Defender
 
-[Microsoft 365 Defender](../security/mtp/microsoft-threat-protection.md) combina i segnali e orchestra le funzionalità in un'unica soluzione. Con la soluzione integrata Microsoft 365 Defender, i professionisti della sicurezza possono unire i segnali di minaccia che ognuno di questi prodotti riceve e determinare l'ambito e l'impatto completi della minaccia; come è entrato nell'ambiente, su cosa ne è interessato e su come attualmente influisce sull'organizzazione. Microsoft 365 Defender adotta un'azione automatica per impedire o arrestare l'attacco e auto-sanare le cassette postali, gli endpoint e le identità degli utenti interessati.
+[Microsoft 365 Defender](../security/defender/microsoft-365-defender.md) combina i segnali e orchestra le funzionalità in un'unica soluzione. Con la soluzione integrata Microsoft 365 Defender, i professionisti della sicurezza possono unire i segnali di minaccia che ognuno di questi prodotti riceve e determinare l'ambito e l'impatto completi della minaccia; come è entrato nell'ambiente, su cosa ne è interessato e su come attualmente influisce sull'organizzazione. Microsoft 365 Defender adotta un'azione automatica per impedire o arrestare l'attacco e auto-sanare le cassette postali, gli endpoint e le identità degli utenti interessati.
 
 Microsoft 365 Defender unifica avvisi, incidenti, indagini e risposte automatizzate e ricerca avanzata tra i carichi di lavoro (Microsoft Defender for Identity, Microsoft Defender per Office 365, Microsoft Defender for Endpoint e Microsoft Cloud App Security) in un unico riquadro di esperienza di vetro. Dopo aver configurato uno o più dei servizi defender per Office 365, attivare Microsoft 365 Defender. Nuove funzionalità vengono aggiunte continuamente a Microsoft 365 Defender; prendere in considerazione la possibilità di acconsentire esplicitamente alla ricezione delle funzionalità di anteprima.
 
@@ -85,22 +85,22 @@ Microsoft 365 Defender unifica avvisi, incidenti, indagini e risposte automatizz
 
 ![Processo per la distribuzione di Microsoft 365 Defender](../media/deploy-threat-protection/deploy-mtp-steps.png) 
 
-1. [Esaminare i prerequisiti](../security/mtp/prerequisites.md).
-2. [Attivare Microsoft 365 Defender](../security/mtp/mtp-enable.md).
-3. [Acconsentire esplicitamente alle funzionalità di anteprima.](../security/mtp/preview.md)
+1. [Esaminare i prerequisiti](../security/defender/prerequisites.md).
+2. [Attivare Microsoft 365 Defender](../security/defender/m365d-enable.md).
+3. [Acconsentire esplicitamente alle funzionalità di anteprima.](../security/defender/preview.md)
 
 ### <a name="more-information-about-microsoft-365-defender"></a>Ulteriori informazioni su Microsoft 365 Defender
 
-- [Che cos'è Microsoft 365 Defender?](../security/mtp/microsoft-threat-protection.md)
-- [Novità di Microsoft 365 Defender](../security/mtp/whats-new.md)
+- [Che cos'è Microsoft 365 Defender?](../security/defender/microsoft-365-defender.md)
+- [Novità di Microsoft 365 Defender](../security/defender/whats-new.md)
 
 ## <a name="step-4-configure-microsoft-defender-for-office-365"></a>Passaggio 4: Configurare Microsoft Defender per Office 365
 
-[Microsoft Defender per Office 365](../security/office-365-security/office-365-atp.md) protegge l'organizzazione dalle minacce dannose nei messaggi di posta elettronica (allegati e URL), nei documenti di Office e negli strumenti di collaborazione. Nella tabella seguente sono elencate le funzionalità e le funzionalità di Microsoft Defender per Office 365 incluse in Microsoft 365 E5:
+[Microsoft Defender per Office 365](../security/defender-365-security/defender-for-office-365.md) protegge l'organizzazione dalle minacce dannose nei messaggi di posta elettronica (allegati e URL), nei documenti di Office e negli strumenti di collaborazione. Nella tabella seguente sono elencate le funzionalità e le funzionalità di Microsoft Defender per Office 365 incluse in Microsoft 365 E5:
 
 |Funzionalità di configurazione, protezione e rilevamento|Funzionalità di automazione, analisi, correzione ed istruzione|
 |---|---|
-|[Allegati sicuri](../security/office-365-security/atp-safe-attachments.md)<br/>[Collegamenti sicuri](../security/office-365-security/atp-safe-links.md)<br/>[Sicurezza documenti](../security/office-365-security/safe-docs.md)<br/>[ATP per SharePoint, OneDrive e Microsoft Teams](../security/office-365-security/atp-for-spo-odb-and-teams.md)<br/>[Anti-phishing in Defender per la protezione di Office 365](../security/office-365-security/set-up-anti-phishing-policies.md#exclusive-settings-in-anti-phishing-policies-in-microsoft-defender-for-office-365)|[Tracker delle minacce](../security/office-365-security/threat-trackers.md)<br/>[Esplora minacce](../security/office-365-security/threat-explorer.md)<br/>[Analisi e risposta automatizzate](../security/office-365-security/office-365-air.md)<br/>[Simulatore di attacchi](../security/office-365-security/attack-simulator.md)|
+|[Allegati sicuri](../security/defender-365-security/safe-attachments.md)<br/>[Collegamenti sicuri](../security/defender-365-security/safe-links.md)<br/>[Sicurezza documenti](../security/defender-365-security/safe-docs.md)<br/>[ATP per SharePoint, OneDrive e Microsoft Teams](../security/defender-365-security/mdo-for-spo-odb-and-teams.md)<br/>[Anti-phishing in Defender per la protezione di Office 365](../security/defender-365-security/set-up-anti-phishing-policies.md#Exclusive-settings-in-anti-phishing-policies-in Microsoft-Defender-for-Office-365)|[Tracker delle minacce](../security/defender-365-security/threat-trackers.md)<br/>[Esplora minacce](../security/defender-365-security/threat-explorer.md)<br/>[Analisi e risposta automatizzate](../security/defender-365-security/office-365-air.md)<br/>[Simulatore di attacchi](../security/defender-365-security/attack-simulator.md)|
 |
 
 Con Microsoft Defender per Office 365, gli utenti di tutta l'organizzazione possono comunicare e collaborare in modo più sicuro, con protezione dalle minacce per il contenuto della posta elettronica e i documenti di Office.
@@ -109,14 +109,14 @@ Con Microsoft Defender per Office 365, gli utenti di tutta l'organizzazione poss
 
 ![Processo per la distribuzione di Microsoft Defender per Office 365](../media/deploy-threat-protection/deploy-office365-atp-steps.png) 
 
-1. [Configurare i criteri di Microsoft Defender per Office 365.](../security/office-365-security/protect-against-threats.md)
-2. [Visualizzare e usare i report di Microsoft Defender per Office 365.](../security/office-365-security/view-reports-for-atp.md)
-3. [Usare le funzionalità di analisi e risposta alle minacce.](../security/office-365-security/office-365-ti.md)
+1. [Configurare i criteri di Microsoft Defender per Office 365.](../security/defender-365-security/protect-against-threats.md)
+2. [Visualizzare e usare i report di Microsoft Defender per Office 365.](../security/defender-365-security/view-reports-for-mdo.md)
+3. [Usare le funzionalità di analisi e risposta alle minacce.](../security/defender-365-security/office-365-ti.md)
 
 ### <a name="more-information-about-microsoft-defender-for-office-365"></a>Ulteriori informazioni su Microsoft Defender per Office 365
 
-- [Panoramica di Microsoft Defender per Office 365](../security/office-365-security/office-365-atp.md)
-- [Novità di Microsoft Defender per Office 365](../security/office-365-security/whats-new-in-office-365-atp.md)
+- [Panoramica di Microsoft Defender per Office 365](../security/defender-365-security/defender-for-office-365.md)
+- [Novità di Microsoft Defender per Office 365](../security/defender-365-security/whats-new-in-defender-for-office-365.md)
 
 ## <a name="step-5-configure-microsoft-defender-for-endpoint"></a>Passaggio 5: Configurare Microsoft Defender per Endpoint
 
@@ -162,19 +162,19 @@ Dopo aver configurato e distribuito i servizi e le funzionalità di protezione d
 ![Centro sicurezza Microsoft 365](../media/solutions-architecture-center/m365-security-center.png)
 
 Il Centro sicurezza Microsoft 365 è destinato in modo specifico agli amministratori della sicurezza e ai team delle operazioni di sicurezza. Nel Centro sicurezza Microsoft 365 è possibile:
-- Visualizzare l'integrità della sicurezza complessiva dell'organizzazione [con Punteggio sicuro](../security/mtp/microsoft-secure-score.md).
-- [Monitorare e visualizzare report](../security/mtp/overview-security-center.md) sullo stato delle identità, dei dati, dei dispositivi, delle app e dell'infrastruttura.
-- Connettere i punti sugli avvisi tramite [eventi imprevisti.](../security/mtp/incident-queue.md)
-- Usa [l'analisi e la correzione automatizzate per](../security/mtp/mtp-autoir.md) affrontare le minacce.
-- [Ricerca proattiva di minacce,](../security/mtp/advanced-hunting-overview.md)ad esempio tentativi di intrusione o attività di violazione che interessano la posta elettronica, i dati, i dispositivi e le identità.
-- [Comprendere le tecniche e le campagne di attacco](../security/mtp/latest-attack-campaigns.md) più recenti con l'analisi delle minacce.
+- Visualizzare l'integrità della sicurezza complessiva dell'organizzazione [con Punteggio sicuro](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score).
+- [Monitorare e visualizzare report](https://docs.microsoft.com/microsoft-365/security/defender/monitoring-and-reporting) sullo stato delle identità, dei dati, dei dispositivi, delle app e dell'infrastruttura.
+- Connettere i punti sugli avvisi tramite [eventi imprevisti.](https://docs.microsoft.com/microsoft-365/security/defender/incident-queue)
+- Usa [l'analisi e la correzione automatizzate per](https://docs.microsoft.com/microsoft-365/security/defender/mtp-autoir) affrontare le minacce.
+- [Ricerca proattiva di minacce,](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-overview)ad esempio tentativi di intrusione o attività di violazione che interessano la posta elettronica, i dati, i dispositivi e le identità.
+- [Comprendere le tecniche e le campagne di attacco](https://docs.microsoft.com/microsoft-365/security/defender/latest-attack-campaigns) più recenti con l'analisi delle minacce.
 - ... e altro ancora!
 
 ### <a name="more-information-about-the-microsoft-365-security-center"></a>Ulteriori informazioni sul Centro sicurezza Microsoft 365
 
-- Introduzione al Centro sicurezza [Microsoft 365.](../security/mtp/overview-security-center.md)
-- [Monitorare e visualizzare i report](../security/mtp/overview-security-center.md).
-- [Vedere i portali di sicurezza in Microsoft 365](../security/mtp/portals.md).
+- Introduzione al Centro sicurezza [Microsoft 365.](../security/defender/overview-security-center.md)
+- [Monitorare e visualizzare i report](../security/defender/overview-security-center.md).
+- [Vedere i portali di sicurezza in Microsoft 365](../security/defender/portals.md).
 
 ## <a name="step-8-train-users"></a>Passaggio 8: formare gli utenti
 

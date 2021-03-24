@@ -12,13 +12,13 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 11cd4222978487b23a12262ec3b7e8d6a0fcf230
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8c31aa5bd255fa1c220ae3e7643ffe5b2e4b0b25
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916359"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050887"
 ---
 # <a name="configure-secure-access-to-microsoft-365-services"></a>Configurare l'accesso sicuro ai servizi di Microsoft 365
 
-Questa soluzione si basa sulla "[configurazione D'oro M365](../security/office-365-security/microsoft-365-policies-configurations.md)" -- indicazioni prescrittive per l'implementazione di MFA, accesso condizionale e criteri correlati per tre livelli di protezione: di base, sensibili, altamente sensibili.
+Questa soluzione si basa sulla "[configurazione D'oro M365](../security/defender-365-security/microsoft-365-policies-configurations.md)" -- indicazioni prescrittive per l'implementazione di MFA, accesso condizionale e criteri correlati per tre livelli di protezione: di base, sensibili, altamente sensibili.

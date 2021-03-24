@@ -1,0 +1,231 @@
+---
+title: Configurare la distribuzione di Microsoft Defender ATP
+description: Informazioni su come configurare la distribuzione per Microsoft Defender ATP
+keywords: distribuire, configurare, convalida delle licenze, configurazione tenant, configurazione di rete
+search.product: eADQiWindows 10XVcnh
+search.appverid: met150
+ms.prod: m365-security
+ms.mktglfcycl: deploy
+ms.sitesec: library
+ms.pagetype: security
+ms.author: macapara
+author: mjcaparas
+localization_priority: Normal
+manager: dansimp
+audience: ITPro
+ms.collection:
+- M365-security-compliance
+- m365solution-endpointprotect
+- m365solution-scenario
+ms.topic: article
+ms.technology: mde
+ms.openlocfilehash: 6e5430d409f1f8212491657b0e4ff7ec52622576
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51063898"
+---
+# <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Configurare Microsoft Defender per la distribuzione degli endpoint
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
+**Si applica a:**
+- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
+
+> Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+La distribuzione di Defender per Endpoint è un processo in tre fasi:
+
+| [![fase di distribuzione - preparazione](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[Fase 1: preparare](prepare-deployment.md) | ![fase di distribuzione - installazione](images/phase-diagrams/setup.png)<br>Fase 2: installazione | [![fase di distribuzione - onboard](images/phase-diagrams/onboard.png)](onboarding.md)<br>[Fase 3: onboard](onboarding.md) |
+| ----- | ----- | ----- |
+| | *Sei qui!*||
+
+Si è attualmente in fase di configurazione.
+
+In questo scenario di distribuzione verrà illustrata la procedura seguente:
+- Convalida delle licenze
+- Configurazione tenant
+- Configurazione di rete
+
+
+>[!NOTE]
+>Allo scopo di guidare l'utente attraverso una distribuzione tipica, questo scenario copre solo l'uso di Microsoft Endpoint Configuration Manager. Defender for Endpoint supporta l'uso di altri strumenti di onboarding, ma non copre questi scenari nella guida alla distribuzione. Per altre informazioni, vedi [Onboard di dispositivi a Microsoft Defender per Endpoint.](onboard-configure.md)
+
+## <a name="check-license-state"></a>Controllare lo stato della licenza
+
+Il controllo dello stato della licenza e del provisioning corretto può essere eseguito tramite l'interfaccia di amministrazione o il portale **di Microsoft Azure.**
+
+1. Per visualizzare le licenze, accedere al portale **di Microsoft Azure** e passare alla sezione Relativa alle licenze del portale di Microsoft [Azure.](https://portal.azure.com/#blade/Microsoft_AAD_IAM/LicensesMenuBlade/Products)
+
+   ![Immagine della pagina Licenze di Azure](images/atp-licensing-azure-portal.png)
+
+1. In alternativa, nell'interfaccia di amministrazione passare a **Fatturazione**  >  **Abbonamenti.**
+
+    Sullo schermo verranno visualizzate tutte le licenze di cui è stato eseguito il provisioning e il relativo **stato corrente.**
+
+    ![Immagine delle licenze di fatturazione](images/atp-billing-subscriptions.png)
+
+
+## <a name="cloud-service-provider-validation"></a>Convalida del provider di servizi cloud
+
+Per ottenere l'accesso alle licenze di cui viene eseguito il provisioning per l'azienda e per controllare lo stato delle licenze, passare all'interfaccia di amministrazione.
+
+1. Nel **portale per i partner** selezionare **Amministra servizi > Office 365**.
+
+2. Facendo clic sul **collegamento Portale per i** partner verrà aperta l'opzione Amministratore per conto **di** e si avrà accesso all'interfaccia di amministrazione del cliente.
+
+   ![Immagine del portale di amministrazione di O365](images/atp-O365-admin-portal-customer.png)
+
+
+
+## <a name="tenant-configuration"></a>Configurazione tenant
+
+Quando accedi a Microsoft Defender Security Center per la prima volta, una procedura guidata che ti guiderà attraverso alcuni passaggi iniziali. Al termine della configurazione guidata, verrà creata un'istanza cloud dedicata di Defender per Endpoint. Il metodo più semplice è eseguire questi passaggi da un dispositivo client Windows 10.
+
+1. Da un Web browser passare a <https://securitycenter.windows.com> .
+
+    ![Immagine di Configurare le autorizzazioni per Microsoft Defender for Endpoint](images/atp-setup-permissions-wdatp-portal.png)
+
+2. Se si passa a una licenza trial, passare al collegamento ( <https://signup.microsoft.com/Signup?OfferId=6033e4b5-c320-4008-a936-909c2825d83c&dl=WIN_DEF_ATP&pc=xxxxxxx-xxxxxx-xxx-x> )
+
+    Una volta completato il passaggio di autorizzazione, **verrà** visualizzata la schermata iniziale.
+3. Eseguire i passaggi di autorizzazione.
+
+    ![Immagine della schermata iniziale per la configurazione del portale](images/welcome1.png)
+
+4. Configurare le preferenze.
+
+   **Posizione di archiviazione dei** dati: è importante configurarla correttamente. Determinare dove il cliente vuole essere ospitato principalmente: Stati Uniti, Ue o Regno Unito. Non è possibile modificare la posizione dopo questa configurazione e Microsoft non trasferirà i dati dalla georilevazione specificata. 
+
+    **Conservazione dei dati:** il valore predefinito è sei mesi.
+
+    **Abilita funzionalità di anteprima:** l'impostazione predefinita è attivata e può essere modificata in un secondo momento.
+
+    ![Immagine della posizione geografica nella configurazione](images/setup-preferences.png)
+
+5. Selezionare **Avanti**.
+
+     ![Immagine della configurazione della preferenza finale](images/setup-preferences2.png)
+
+6. Selezionare **Continua.**
+
+
+## <a name="network-configuration"></a>Configurazione di rete
+Se l'organizzazione non richiede agli endpoint di utilizzare un proxy per accedere a Internet, ignorare questa sezione.
+
+Il sensore Microsoft Defender per endpoint richiede che Microsoft Windows HTTP (WinHTTP) segnali dati dei sensori e comunichi con il servizio Microsoft Defender per endpoint. Il sensore incorporato di Microsoft Defender for Endpoint viene eseguito nel contesto di sistema usando l'account LocalSystem. Il sensore usa i servizi HTTP di Microsoft Windows (WinHTTP) per abilitare le comunicazioni con il servizio cloud Microsoft Defender per endpoint. L'impostazione di configurazione WinHTTP è indipendente dalle impostazioni del proxy di esplorazione Internet di Windows (WinINet) e può individuare un server proxy solo utilizzando i metodi di individuazione seguenti:
+
+**Metodi di individuazione automatica:**
+
+-   Proxy trasparente
+
+-   WPAD (Web Proxy Autodiscovery Protocol)
+
+Se nella topologia di rete è stato implementato un proxy Trasparente o WPAD, non è necessario disporre di impostazioni di configurazione speciali. Per ulteriori informazioni sulle esclusioni di URL di Microsoft Defender for Endpoint nel proxy, vedi la sezione Appendice in questo documento per l'elenco url consentiti o in [Documenti Microsoft.](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-proxy-internet-windows-defender-advanced-threat-protection#enable-access-to-windows-defender-atp-service-urls-in-the-proxy-server)
+
+> [!NOTE]
+> Per un elenco dettagliato degli URL che devono essere consentiti, vedere [questo articolo](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus).
+
+**Configurazione manuale del proxy statico:**
+
+-   Configurazione basata sul Registro di sistema
+
+-   WinHTTP configurato con il comando netsh <br> Adatto solo per i desktop in una topologia stabile (ad esempio, un desktop in una rete aziendale dietro lo stesso proxy)
+
+### <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>Configurare manualmente il server proxy con un proxy statico basato sul registro
+
+Configurare un proxy statico basato sul Registro di sistema per consentire solo al sensore Microsoft Defender for Endpoint di segnalare i dati di diagnostica e comunicare con Microsoft Defender per i servizi endpoint se un computer non è autorizzato a connettersi a Internet. Il proxy statico è configurabile tramite Criteri di gruppo. I criteri di gruppo sono disponibili in:
+
+ - Modelli amministrativi Raccolte dati e anteprime componenti di Windows Configurare l'utilizzo del proxy autenticato per il servizio Esperienza \> \> utente \> connessa e telemetria
+     - Impostarlo su **Abilitato e** selezionare Disabilita utilizzo **proxy autenticato**
+
+1. Aprire la console Gestione Criteri di gruppo.
+2. Creare un criterio o modificare un criterio esistente in base alle procedure dell'organizzazione.
+3. Modificare i Criteri di gruppo e passare a Modelli amministrativi Raccolta dati componenti di Windows e Build di anteprima Configurare l'utilizzo del proxy autenticato per il servizio Esperienza **\> utente \> \> connessa e telemetria**. 
+    ![Immagine della configurazione di Criteri di gruppo](images/atp-gpo-proxy1.png)
+
+4. Selezionare **Abilitato**.
+5. Selezionare **Disabilita utilizzo proxy autenticato**.
+   
+6. Passare a **Modelli amministrativi Raccolta dati componenti di Windows e \> \> Anteprime Build Configura esperienze utente connesse \> e telemetria.**
+    ![Immagine dell'impostazione di configurazione di Criteri di gruppo](images/atp-gpo-proxy2.png)
+7. Selezionare **Abilitato**.
+8. Immettere il **nome del server proxy**.
+
+Il criterio imposta due valori di registro`TelemetryProxyServer` come REG_SZ e `DisableEnterpriseAuthProxy` REG_DWORD nella chiave di registro`HKLM\Software\Policies\Microsoft\Windows\DataCollection`.
+
+Il valore del Registro `TelemetryProxyServer` di sistema assume il formato stringa seguente:
+
+```text
+<server name or ip>:<port>
+```
+
+Ad esempio: 10.0.0.6:8080
+
+Il valore del registro `DisableEnterpriseAuthProxy` deve essere impostato su 1.
+
+###  <a name="configure-the-proxy-server-manually-using-netsh-command"></a>Configurare manualmente il server proxy utilizzando il comando netsh
+
+Usare netsh per configurare un proxy statico a livello di sistema.
+
+> [!NOTE]
+> - Questa operazione avrà effetto su tutte le applicazioni, inclusi i servizi di Windows che usano WinHTTP con proxy predefinito.</br>
+> - I portatili che cambiano topologia (ad esempio, da ufficio a casa) non funzionano correttamente con netsh. È consigliabile usare la configurazione del proxy statico basata sul registro.
+
+1. Aprire una riga di comando con privilegi elevati:
+
+    1. Passare a **Start** e digitare **cmd**.
+
+    1. Fare clic con il pulsante destro del mouse su **Prompt dei comandi** e scegliere **Esegui come amministratore**.
+
+2. Immettere il comando indicato di seguito e premere **INVIO**:
+
+   ```PowerShell
+   netsh winhttp set proxy <proxy>:<port>
+   ```
+
+   Ad esempio: netsh winhttp set proxy 10.0.0.6:8080
+
+
+###  <a name="proxy-configuration-for-down-level-devices"></a>Configurazione proxy per i dispositivi di livello inferiore
+
+I dispositivi Down-Level includono workstation Windows 7 SP1 e Windows 8.1, nonché Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2 e versioni di Windows Server 2016 precedenti a Windows Server CB 1803. Questi sistemi operativi avranno il proxy configurato come parte di Microsoft Management Agent per gestire le comunicazioni dall'endpoint ad Azure. Per informazioni sulla configurazione di un proxy in questi dispositivi, fare riferimento alla Guida alla distribuzione rapida di Microsoft Management Agent.
+
+### <a name="proxy-service-urls"></a>URL del servizio proxy
+Gli URL che includono v20 in essi sono necessari solo se hai dispositivi Windows 10 versione 1803 o successiva. Ad esempio, ```us-v20.events.data.microsoft.com``` è necessario solo se il dispositivo è in Windows 10 versione 1803 o successiva.
+ 
+
+Se un proxy o un firewall blocca il traffico anonimo, poiché il sensore Microsoft Defender for Endpoint si connette dal contesto di sistema, assicurati che il traffico anonimo sia consentito negli URL elencati.
+
+Nel seguente foglio di calcolo scaricabile sono elencati i servizi e gli URL associati a cui la rete deve essere in grado di connettersi. Verificare che non siano presenti regole di filtro firewall o di rete che negherebbero l'accesso *a* questi URL oppure potrebbe essere necessario creare una regola di autorizzazione specifica per tali URL.
+
+|**Foglio di calcolo dell'elenco dei domini**|**Descrizione**|
+|:-----|:-----|
+|![Immagine di scorrimento per il foglio di calcolo degli URL di Microsoft Defender for Endpoint](images/mdatp-urls.png)<br/>  | Foglio di calcolo di record DNS specifici per le posizioni dei servizi, le posizioni geografiche e il sistema operativo. <br><br>[Scaricare il foglio di calcolo qui.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
+
+
+###  <a name="microsoft-defender-for-endpoint-service-backend-ip-range"></a>Intervallo IP back-end del servizio Microsoft Defender for Endpoint
+
+Se i dispositivi di rete non supportano gli URL elencati nella sezione precedente, puoi usare le informazioni seguenti.
+
+Defender for Endpoint si basa sul cloud di Azure, distribuito nelle aree geografiche seguenti:
+
+- \+\<Region Name="uswestcentral">
+- \+\<Region Name="useast2">
+- \+\<Region Name="useast">
+- \+\<Region Name="europenorth">
+- \+\<Region Name="europewest">
+- \+\<Region Name="uksouth">
+- \+\<Region Name="ukwest">
+
+È possibile trovare l'intervallo IP di Azure in [Microsoft Azure Datacenter IP Ranges](https://www.microsoft.com/en-us/download/details.aspx?id=41653).
+
+> [!NOTE]
+> Come soluzione basata sul cloud, l'intervallo di indirizzi IP può cambiare. È consigliabile passare all'impostazione di risoluzione DNS.
+
+## <a name="next-step"></a>Passaggio successivo
+
+![**Fase 3: onboard**](images/onboard.png) <br>[Fase 3: onboard: onboard](onboarding.md)dei dispositivi al servizio in modo che il servizio Microsoft Defender for Endpoint possa ottenere i dati del sensore da essi. 
