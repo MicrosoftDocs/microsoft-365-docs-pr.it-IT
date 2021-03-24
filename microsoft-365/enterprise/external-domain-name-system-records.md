@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 ms.assetid: c0531a6f-9e25-4f2d-ad0e-a70bfef09ac0
 description: Un elenco di riferimento dei record dei nomi di dominio esterni da usare quando si pianifica una distribuzione di Office 365.
-ms.openlocfilehash: c2384f1e330692d43c923a7932db4c3ff2bc99ae
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3aa6bf3362005eb0dae5bca40322fe2178d5d69f
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924213"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051379"
 ---
 # <a name="external-domain-name-system-records-for-office-365"></a>Record Domain Name System (DNS) esterni per Office 365
 
@@ -103,7 +103,7 @@ Per verificare che la rete sia stata configurata correttamente, ci sono dei pass
 <a name="BKMK_SPFrecords"> </a>
 
 > [!IMPORTANT]
->  SPF è progettata per prevenire spoofing, ma esistono tecniche spoofing che SPF non è in grado di evitare. Per proteggersi da queste tecniche, dopo aver configurato SPF, è necessario configurare anche DKIM e DMARC per Office 365. Per iniziare, vedere [Use DKIM to validate outbound email sent from your domain in Office 365](../security/office-365-security/use-dkim-to-validate-outbound-email.md). Successivamente, vedere [Use DMARC to validate email in Office 365](../security/office-365-security/use-dmarc-to-validate-email.md).
+>  SPF è progettata per prevenire spoofing, ma esistono tecniche spoofing che SPF non è in grado di evitare. Per proteggersi da queste tecniche, dopo aver configurato SPF, è necessario configurare anche DKIM e DMARC per Office 365. Per iniziare, vedere [Use DKIM to validate outbound email sent from your domain in Office 365](../security/defender-365-security/use-dkim-to-validate-outbound-email.md). Successivamente, vedere [Use DMARC to validate email in Office 365](../security/defender-365-security/use-dmarc-to-validate-email.md).
   
 I record SPF sono record TXT che consentono di impedire che altri utenti utilizzino il dominio per l'invio di posta indesiderata o comunque dannosa. I record SPF (Sender Policy Framework) identificano i server che sono autorizzati a inviare posta elettronica dal dominio dell'utente.
   
@@ -125,7 +125,7 @@ Un sistema di posta elettronica che riceve un messaggio dal dominio esamina il r
 Per gli scenari in cui non si usa solo la posta elettronica di Exchange Online per Office 365 (ad esempio, quando si utilizza anche la posta elettronica di SharePoint Online), consultare la tabella seguente per stabilire cosa includere nel valore del record.
   
 > [!NOTE]
-> Negli scenari più complessi che includono, ad esempio, server e-mail perimetrale per gestire il traffico della posta attraverso il firewall, è necessario configurare un record SPF più dettagliato. Vedere come [configurare i record SPF in Office 365 per impedire lo spoofing](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md). Sono disponibili ulteriori informazioni sul funzionamento di SPF con Office 365 in [Utilizzo di Sender Policy Framework (SPF) in Office 365 per impedire lo spoofing](../security/office-365-security/how-office-365-uses-spf-to-prevent-spoofing.md).
+> Negli scenari più complessi che includono, ad esempio, server e-mail perimetrale per gestire il traffico della posta attraverso il firewall, è necessario configurare un record SPF più dettagliato. Vedere come [configurare i record SPF in Office 365 per impedire lo spoofing](../security/defender-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md). Sono disponibili ulteriori informazioni sul funzionamento di SPF con Office 365 in [Utilizzo di Sender Policy Framework (SPF) in Office 365 per impedire lo spoofing](../security/defender-365-security/how-office-365-uses-spf-to-prevent-spoofing.md).
   
 | Numero|Se si sta utilizzando...  <br/> |Scopo  <br/> |Aggiungere i seguenti valori  <br/> |
 |:-----|:-----|:-----|:-----|
@@ -181,6 +181,6 @@ TXT Name @
 Values: v=spf1 include:spf.protection.outlook.com include:mail.contoso.com -all
 ```
 
-Questi sono alcuni esempi comuni che possono aiutare ad adattare il record SPF esistente quando si aggiunge il dominio a Office 365 per la posta elettronica. Negli scenari più complessi che includono, ad esempio, server e-mail perimetrale per gestire il traffico della posta attraverso il firewall, è necessario configurare un record SPF più dettagliato. Vedere come [configurare i record SPF in Office 365 per impedire lo spoofing](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md).
+Questi sono alcuni esempi comuni che possono aiutare ad adattare il record SPF esistente quando si aggiunge il dominio a Office 365 per la posta elettronica. Negli scenari più complessi che includono, ad esempio, server e-mail perimetrale per gestire il traffico della posta attraverso il firewall, è necessario configurare un record SPF più dettagliato. Vedere come [configurare i record SPF in Office 365 per impedire lo spoofing](../security/defender-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md).
   
 Ecco un collegamento breve per tornare alla pagina: [https://aka.ms/o365edns]()

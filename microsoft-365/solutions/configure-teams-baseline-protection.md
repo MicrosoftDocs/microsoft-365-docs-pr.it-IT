@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Come distribuire team con un livello di protezione di base.
-ms.openlocfilehash: 4f38bf286b8ebd3edf6f7705299008566d2b7c8f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 678e9824682339afda32342e70848492b738ec6d
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916335"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052506"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Configurare team con la protezione di base
 
@@ -31,15 +31,15 @@ Questo articolo spiega come distribuire team con un livello di protezione di bas
 
 ## <a name="initial-protections"></a>Protezioni iniziali
 
-Come primo passaggio, è consigliabile configurare criteri di base per le identità e l'accesso ai dispositivi. Per informazioni dettagliate, vedere [Suggerimenti sui criteri per la protezione di chat, gruppi e file di Teams](../security/office-365-security/teams-access-policies.md).
+Come primo passaggio, è consigliabile configurare criteri di base per le identità e l'accesso ai dispositivi. Per informazioni dettagliate, vedere [Suggerimenti sui criteri per la protezione di chat, gruppi e file di Teams](../security/defender-365-security/teams-access-policies.md).
 
 È anche consigliabile attivare le funzionalità di base di Defender per Office 365 per prevenire malware in documenti, allegati e collegamenti. È consigliabile attivare ognuna delle opzioni indicate nella tabella seguente.
 
 |Opzione|Informazioni|
 |:------|:-----------|
-|Allegati sicuri per SPO, OneDrive e Teams|[Allegati sicuri](../security/office-365-security/atp-safe-attachments.md)<br>[Defender per Office 365 - SharePoint, OneDrive e Microsoft Teams](../security/office-365-security/atp-for-spo-odb-and-teams.md)|
-|Sicurezza documenti|[Sicurezza documenti in Microsoft Defender per Office 365](../security/office-365-security/safe-docs.md)|
-|Collegamenti sicuri per Teams|[Collegamenti sicuri di Office 365 in Teams](../security/office-365-security/atp-safe-links.md#safe-links-settings-for-microsoft-teamssafe-links-settings-for-microsoft-teams)<br>[Collegamenti sicuri](../security/office-365-security/atp-safe-links.md)|
+|Allegati sicuri per SPO, OneDrive e Teams|[Allegati sicuri](../security/defender-365-security/safe-attachments.md)<br>[Defender per Office 365 - SharePoint, OneDrive e Microsoft Teams](../security/defender-365-security/mdo-for-spo-odb-and-teams.md)|
+|Sicurezza documenti|[Sicurezza documenti in Microsoft Defender per Office 365](../security/defender-365-security/safe-docs.md)|
+|Collegamenti sicuri per Teams|[Collegamenti sicuri di Office 365 in Teams](../security/defender-365-security/safe-links.md#safe-links-settings-for-microsoft-teamssafe-links-settings-for-microsoft-teams)<br>[Collegamenti sicuri](../security/defender-365-security/safe-links.md)|
 
 ## <a name="teams-guest-sharing"></a>Condivisione con gli utenti guest in Teams
 

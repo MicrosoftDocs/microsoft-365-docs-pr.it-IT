@@ -13,12 +13,12 @@ localization_priority: Normal
 ms.collection: M365-subscription-management
 ms.custom: it-pro
 description: Come accedere alle risorse equivalenti al Deprecato Desktop Deployment Center.
-ms.openlocfilehash: c4456d0f17e38920e77c855e31205e51025f111b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 54847305576cb5b2cf96177ad810c1b1ccb11eed
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928169"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051473"
 ---
 # <a name="desktop-deployment-center-deprecated"></a>Desktop Deployment Center (deprecato)
 
@@ -29,7 +29,7 @@ Usa queste risorse per distribuire desktop moderni:
 - [Distribuzione di Windows 10](/windows/deployment/)
 - [Distribuire Microsoft 365 Apps](/deployoffice/deployment-guide-microsoft-365-apps)
 - [Microsoft Intune](/mem/intune/fundamentals/planning-guide)
-- [Criteri di identità e accesso ai dispositivi](../security/office-365-security/microsoft-365-policies-configurations.md)
+- [Criteri di identità e accesso ai dispositivi](../security/defender-365-security/microsoft-365-policies-configurations.md)
 
 È inoltre possibile visualizzare i [video della serie Desktop Deployment di Microsoft Mechanics.](https://www.aka.ms/watchhowtoshift)
 

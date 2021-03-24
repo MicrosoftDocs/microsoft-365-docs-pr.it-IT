@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Informazioni sui criteri di scadenza dei gruppi di Microsoft 365.
-ms.openlocfilehash: 8232e7df2a8390b905386773ed0656eb8239d5c5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 65a746751cd523a5dadce3eca573e6a9bfce0166
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920917"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052303"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Criteri di scadenza dei gruppi di Microsoft 365
 
@@ -38,6 +38,8 @@ I gruppi attivamente in uso vengono rinnovati automaticamente. Una delle azioni 
 - Outlook - Partecipare al gruppo, leggere o scrivere un messaggio di gruppo dal gruppo e come un messaggio (Outlook sul Web).
 - Teams : visitando un canale di teams.
 
+Si noti che l'unica attività di Yammer che attiverà un rinnovo automatico del gruppo è il caricamento di un documento in SharePoint all'interno della community.
+
 > [!IMPORTANT]
 > Quando si modifica il criterio di scadenza, il servizio ricalcola la data di scadenza per ogni gruppo. Inizia sempre il conteggio a partire dalla data di creazione del gruppo e quindi applica il nuovo criterio di scadenza.
 
@@ -51,7 +53,7 @@ I gruppi attivamente in uso vengono rinnovati automaticamente. Una delle azioni 
 |Ruolo|Cosa possono fare|
 |---------|---------|
 |Amministratore globale di Office 365 (in Azure, amministratore della società), Amministratore utente|Creare, leggere, aggiornare o eliminare le impostazioni dei criteri di scadenza dei gruppi di Microsoft 365.|
-|Utente|Rinnovare [o ripristinare](/azure/active-directory/users-groups-roles/groups-restore-deleted) un gruppo di Microsoft 365 di cui sono proprietari|
+|User|Rinnovare [o ripristinare](/azure/active-directory/users-groups-roles/groups-restore-deleted) un gruppo di Microsoft 365 di cui sono proprietari|
 
 ## <a name="how-to-set-the-expiration-policy"></a>Come impostare i criteri di scadenza
 

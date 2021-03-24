@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.topic: article
 description: Attivare l'impostazione che consente la creazione condivisa e il salvataggio automatico dei documenti etichettati e crittografati nelle app desktop in SharePoint e OneDrive.
-ms.openlocfilehash: 90c00eb448d6d8f02170a37062af05cb0c0db59d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 34c674dc5fb9be9cb5572ce1f14e11a0f8ab14ae
+ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919572"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51034225"
 ---
 # <a name="enable-co-authoring-for-files-encrypted-with-sensitivity-labels"></a>Abilitare la creazione condivisa di file crittografati con etichette di riservatezza
 
@@ -83,8 +83,8 @@ Prima di attivare questa funzionalità, assicurarsi di aver compreso i seguenti 
 - Le etichette di riservatezza devono essere [abilitate per i file di Office in SharePoint e OneDrive](sensitivity-labels-sharepoint-onedrive-files.md) per il tenant. Se questa funzionalità non è già stata abilitata, quando si seleziona l'impostazione per attivare la creazione condivisa per i file con etichette di riservatezza, questa verrà abilitata automaticamente.
 
 - Microsoft 365 Apps for enterprise:
-    - **Windows**: [Canale corrente (Anteprima)](https://office.com/insider) con build minima 16.0.13801.20182 o [Canale beta](https://office.com/insider) con build minima 16.0.13819.20006
-    - **macOS**: [Canale beta](https://office.com/insider) con build minima 16.47.218.0
+    - **Windows**: Anteprima: [Anteprima: Canale corrente (Anteprima)](https://office.com/insider)
+    - **macOS**: Anteprima: [Canale beta](https://office.com/insider)
     - **iOS**: non ancora supportato
     - **Android**: non ancora supportato
 

@@ -20,12 +20,12 @@ ROBOTS: NOINDEX, NOFOLLOW
 description: Informazioni su come verificare il dominio e creare record DNS con Microsoft 365.
 ms.custom:
 - AdminSurgePortfolio
-ms.openlocfilehash: 506ee887edbc59956aee11059a7085bc4b22624e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 95b1caadfe0e5b331b2bd777263bd86a88bb581f
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914595"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050655"
 ---
 # <a name="connect-your-domain-to-microsoft-365"></a>Connettere il proprio dominio a Microsoft 365
 
@@ -76,6 +76,6 @@ Convalidare il record SPF usando uno di questi [strumenti di convalida SPF](/off
 
 SPF è progettata per prevenire spoofing, ma esistono tecniche spoofing che SPF non è in grado di evitare. Per proteggersi da queste minacce, dopo aver configurato SPF è consigliabile impostare anche DKIM e DMARC per Microsoft 365.
 
-Per iniziare, vedere [Usare DKIM per convalidare la posta elettronica in uscita inviata dal proprio dominio in Microsoft 365](../../security/office-365-security/use-dkim-to-validate-outbound-email.md) e [Usare DKIM per convalidare la posta elettronica in Microsoft 365](../../security/office-365-security/use-dmarc-to-validate-email.md).
+Per iniziare, vedere [Usare DKIM per convalidare la posta elettronica in uscita inviata dal proprio dominio in Microsoft 365](../../security/defender-365-security/use-dkim-to-validate-outbound-email.md) e [Usare DKIM per convalidare la posta elettronica in Microsoft 365](../../security/defender-365-security/use-dmarc-to-validate-email.md).
 
 Infine, tornare configurazione dominio guidata dell'interfaccia di amministrazione per completare la configurazione.

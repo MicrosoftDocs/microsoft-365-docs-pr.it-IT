@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Ottenere assistenza per aumentare il livello di protezione in Microsoft 365
-ms.openlocfilehash: aff5491bd8319be2daf9c9c4ed0fc6e49b27ee27
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0e8b63fec3b764f10039e9f738fd047ff2c513a4
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912211"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052207"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-subscription"></a>Aumentare la protezione dalle minacce per l'abbonamento a Microsoft 365
 
@@ -36,7 +36,7 @@ Questo articolo consente di aumentare la protezione dell'abbonamento a Microsoft
 
 Prima di iniziare, controllare microsoft Secure Score. Microsoft Secure Score analizza la sicurezza dell'organizzazione in base alle attività e alle impostazioni di sicurezza regolari e assegna un punteggio. Per iniziare, prendere nota del punteggio corrente. L'applicazione delle azioni consigliate in questo articolo aumenta il punteggio. L'obiettivo non è quello di raggiungere il punteggio massimo, ma di essere consapevoli delle opportunità per proteggere l'ambiente che non influiscono negativamente sulla produttività degli utenti.
 
-Per ulteriori informazioni, vedere [Microsoft Secure Score.](../security/mtp/microsoft-secure-score.md)
+Per ulteriori informazioni, vedere [Microsoft Secure Score.](../security/defender/microsoft-secure-score.md)
 
 ## <a name="raise-the-level-of-protection-against-malware-in-mail"></a>Aumentare il livello di protezione dal malware nella posta
 
@@ -58,7 +58,7 @@ L'ambiente Office 365 o Microsoft 365 include la protezione dal malware, ma è p
 
 6. Fare clic su **Salva**.
 
-Per ulteriori informazioni, vedere [Protezione antimalware in EOP.](../security/office-365-security/anti-malware-protection.md)
+Per ulteriori informazioni, vedere [Protezione antimalware in EOP.](../security/defender-365-security/anti-malware-protection.md)
 
 ## <a name="protect-against-ransomware"></a>Proteggere l'ambiente da ransomware
 
@@ -90,7 +90,7 @@ Per creare una regola di trasporto della posta:
 |Eseguire le operazioni seguenti. . .|Invia una notifica al destinatario tramite messaggio|
 |Fornire il testo del messaggio|Non aprire questi tipi di file da persone che non si conoscono perché potrebbero contenere macro con codice dannoso.|
 
-Per altre informazioni, vedere:
+Per ulteriori informazioni, vedere:
 
 - [Ransomware: come ridurre i rischi](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
@@ -138,7 +138,7 @@ Per creare un criterio anti-phishing in Defender per Office 365, guardare questo
 
 4. Nella pagina **Anti-phishing** selezionare **+ Crea**. Viene avviata una procedura guidata che illustra come definire i criteri anti-phishing.
 
-5. Specifica il nome, la descrizione e le impostazioni per i criteri, come consigliato nel grafico seguente. Per ulteriori informazioni, vedere [Informazioni sui criteri anti-phishing in Microsoft Defender per le opzioni di Office 365.](../security/office-365-security/set-up-anti-phishing-policies.md)
+5. Specifica il nome, la descrizione e le impostazioni per i criteri, come consigliato nel grafico seguente. Per ulteriori informazioni, vedere [Informazioni sui criteri anti-phishing in Microsoft Defender per le opzioni di Office 365.](../security/defender-365-security/set-up-anti-phishing-policies.md)
 
 6. Dopo aver esaminato le impostazioni, scegliere **Crea questo criterio** o **Salva**, in base alle esigenze.
 
@@ -153,7 +153,7 @@ Per creare un criterio anti-phishing in Defender per Office 365, guardare questo
 |Aggiungere mittenti e domini attendibili|Qui è possibile aggiungere il proprio dominio o qualsiasi altro dominio trusted.|
 |Applicato a|Selezionare **Il dominio del destinatario è**. In **Uno dei seguenti**, selezionare **Scegli**. Selezionare **+ Aggiungi**. Selezionare la casella di controllo accanto al nome del dominio, ad esempio *contoso. <span> <span> com*, nell'elenco e quindi selezionare **Aggiungi**. Scegliere **Fatto**.|
 
-Per ulteriori informazioni, vedere [Set up anti-phishing policies in Defender for Office 365](../security/office-365-security/set-up-anti-phishing-policies.md).
+Per ulteriori informazioni, vedere [Set up anti-phishing policies in Defender for Office 365](../security/defender-365-security/set-up-anti-phishing-policies.md).
 
 ## <a name="protect-against-malicious-attachments-files-and-links-with-defender-for-office-365"></a>Proteggere da allegati, file e collegamenti dannosi con Defender per Office 365
 
@@ -207,7 +207,7 @@ Per creare un criterio allegati sicuri, guardare [questo breve video](https://su
 |Reindirizzare l'allegato al rilevamento|Abilita reindirizzamento (selezionare questa casella) <br/> Immettere l'account amministratore o la configurazione di una cassetta postale per la quarantena. <br/> Applica la selezione precedente se si verifica il timeout o l'errore dell'analisi antimalware per gli allegati (selezionare questa casella).|
 |Applicato a|Il dominio del destinatario è . . . selezionare il dominio.|
 
-Per ulteriori informazioni, vedere [Set up anti-phishing policies in Defender for Office 365](../security/office-365-security/set-up-anti-phishing-policies.md).
+Per ulteriori informazioni, vedere [Set up anti-phishing policies in Defender for Office 365](../security/defender-365-security/set-up-anti-phishing-policies.md).
 
 ### <a name="set-up-safe-links-in-the-security--compliance-center"></a>Configurare collegamenti sicuri nel Centro sicurezza & conformità
 
@@ -250,7 +250,7 @@ Per creare un nuovo criterio destinato a tutti i destinatari del dominio:
 |Usare allegati sicuri per analizzare il contenuto scaricabile|Selezionare questa casella.|
 |Applicato a|Il dominio del destinatario è . . . selezionare il dominio.|
 
-Per ulteriori informazioni, vedere [Collegamenti sicuri in Defender per Office 365.](../security/office-365-security/atp-safe-links.md)
+Per ulteriori informazioni, vedere [Collegamenti sicuri in Defender per Office 365.](../security/defender-365-security/safe-links.md)
 
 ## <a name="turn-on-the-unified-audit-log"></a>Attivare il registro di controllo unificato
 

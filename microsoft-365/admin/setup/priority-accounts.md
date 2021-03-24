@@ -13,12 +13,12 @@ ms.collection:
 - Adm_O365
 ms.custom: AdminSurgePortfolio
 description: Monitorare i messaggi di posta elettronica non riusciti e ritardati inviati a o da account che hanno un impatto aziendale elevato.
-ms.openlocfilehash: b31cbf79b5b1b8f882c4c7bc8926779410baefe3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0bba1f87f80de9fea249ce2604e83ceeadfb79ee
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914055"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050643"
 ---
 # <a name="manage-and-monitor-priority-accounts"></a>Gestire e monitorare gli account con priorità
 
@@ -26,10 +26,10 @@ In ogni organizzazione di Microsoft 365, ci sono persone essenziali, come dirige
 
 Per aiutare l'organizzazione a proteggere questi account, ora puoi designare utenti specifici come account prioritari e sfruttare funzionalità specifiche dell'app che forniscono loro una protezione aggiuntiva. In futuro, più app e funzionalità supporteranno gli account prioritari e, per iniziare, abbiamo annunciato due funzionalità: la protezione degli **account** prioritari e il monitoraggio del flusso **di posta premium.**
 
-- **Protezione degli account** con priorità - Microsoft Defender per Office 365 (in precedenza Office 365 Advanced Threat Protection) supporta gli account di priorità come tag che possono essere utilizzati nei filtri in avvisi, report e indagini. Per ulteriori informazioni, vedere [Tag utente in Microsoft Defender per Office 365.](../../security/office-365-security/user-tags.md)
+- **Protezione degli account** con priorità - Microsoft Defender per Office 365 (in precedenza Office 365 Advanced Threat Protection) supporta gli account di priorità come tag che possono essere utilizzati nei filtri in avvisi, report e indagini. Per ulteriori informazioni, vedere [Tag utente in Microsoft Defender per Office 365.](../../security/defender-365-security/user-tags.md)
 - **Monitoraggio del flusso di** posta premium - Un flusso di posta integro può essere fondamentale per il successo aziendale e i ritardi o gli errori di recapito possono avere un impatto negativo sull'azienda. È possibile scegliere una soglia per i messaggi di posta elettronica non riusciti o ritardati, ricevere avvisi quando tale soglia viene superata e visualizzare un rapporto dei problemi di posta elettronica per gli account con priorità. Per ulteriori informazioni, vedere [Email issues for priority accounts report in the modern EAC](/exchange/monitoring/mail-flow-reports/mfr-email-issues-for-priority-accounts-report)
 
-Per le procedure consigliate per la sicurezza per gli account con priorità, vedere [Suggerimenti per la sicurezza per gli account con priorità.](../../security/office-365-security/security-recommendations-for-priority-accounts.md)
+Per le procedure consigliate per la sicurezza per gli account con priorità, vedere [Suggerimenti per la sicurezza per gli account con priorità.](../../security/defender-365-security/security-recommendations-for-priority-accounts.md)
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 

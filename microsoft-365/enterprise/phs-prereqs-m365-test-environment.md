@@ -14,20 +14,20 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Creare un ambiente Microsoft 365 per testare l'identità e l’accesso del dispositivo con i prerequisiti per l'autenticazione di sincronizzazione hash delle password.
-ms.openlocfilehash: 3236c79e308f269c07146ff094c7ae27271b97fc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2ca83b6ab715a752d3d9620af631263eb5d84fa3
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928051"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051247"
 ---
 # <a name="identity-and-device-access-prerequisites-for-password-hash-synchronization-in-your-microsoft-365-test-environment"></a>Identità e prerequisiti di accesso dei dispositivi per la sincronizzazione dell’hash delle password in ambiente di testing di Microsoft 365
 
 *Questa guida al laboratorio di testing può essere utilizzata solo per gli ambienti di testing di Microsoft 365 per le aziende.*
 
-[Le configurazioni di identità](../security/office-365-security/microsoft-365-policies-configurations.md) e accesso ai dispositivi sono un set di configurazioni e criteri di accesso condizionale per proteggere l'accesso a tutti i servizi in Microsoft 365 per le aziende integrati con Azure Active Directory (Azure AD).
+[Le configurazioni di identità](../security/defender-365-security/microsoft-365-policies-configurations.md) e accesso ai dispositivi sono un set di configurazioni e criteri di accesso condizionale per proteggere l'accesso a tutti i servizi in Microsoft 365 per le aziende integrati con Azure Active Directory (Azure AD).
 
-In questo articolo viene descritto come configurare un ambiente di testing di Microsoft 365 che soddisfi i requisiti dell'ambiente ibrido con configurazione dei prerequisiti per l'autenticazione della sincronizzazione hash delle [password](../security/office-365-security/identity-access-prerequisites.md#prerequisites) per l'identità e l'accesso ai dispositivi.
+In questo articolo viene descritto come configurare un ambiente di testing di Microsoft 365 che soddisfi i requisiti dell'ambiente ibrido con configurazione dei prerequisiti per l'autenticazione della sincronizzazione hash delle [password](../security/defender-365-security/identity-access-prerequisites.md#prerequisites) per l'identità e l'accesso ai dispositivi.
 
 La configurazione di questo ambiente di testing è in dieci fasi:
 
@@ -119,11 +119,11 @@ Per Skype for Business Online:
   Get-CsOAuthConfiguration
   ```
 
-Il risultato è un ambiente di testing che soddisfa i requisiti di [Active Directory con configurazione dei prerequisiti di sincronizzazione dell’hash delle password](../security/office-365-security/identity-access-prerequisites.md#prerequisites) per l’identità e l’accesso dei dispositivi. 
+Il risultato è un ambiente di testing che soddisfa i requisiti di [Active Directory con configurazione dei prerequisiti di sincronizzazione dell’hash delle password](../security/defender-365-security/identity-access-prerequisites.md#prerequisites) per l’identità e l’accesso dei dispositivi. 
 
 ## <a name="next-step"></a>Passaggio successivo
 
-Usare i [criteri comuni di identità e accesso ai dispositivi](../security/office-365-security/identity-access-policies.md) per configurare i criteri basati sui prerequisiti e proteggere identità e dispositivi.
+Usare i [criteri comuni di identità e accesso ai dispositivi](../security/defender-365-security/identity-access-policies.md) per configurare i criteri basati sui prerequisiti e proteggere identità e dispositivi.
 
 ## <a name="see-also"></a>Vedere anche
 

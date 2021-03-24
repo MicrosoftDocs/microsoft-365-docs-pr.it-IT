@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Informazioni sui tipi di spiegazione in Microsoft SharePoint Syntex
-ms.openlocfilehash: 5187b27438f25db1a2714f1fbc7b31db6d060ccc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b34de9ffc565e3d1a17cac05084e4e4b4113a3c6
+ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928401"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "50994629"
 ---
 # <a name="introduction-to-explanation-types"></a>Introduzione ai tipi di spiegazione
 
@@ -157,25 +157,25 @@ Ad esempio, invece di aggiungere manualmente tutte le varianti per *Data*, è po
  
 La raccolta di spiegazioni include spiegazioni di elenchi frasi di uso comune, tra cui:</br>
 
-- Data</br>
-- Data (numerico)</br>
-- Ora</br>
-- Numero</br>
-- Percentuale</br>
-- Numero di telefono</br>
-- CAP</br>
-- Prima parola della frase</br>
-- Fine della frase</br>
-- Carta di credito</br>
-- Numero di previdenza sociale</br>
-- Casella di controllo</br>
-- Valuta</br>
-- Copia per conoscenza e-mail</br>
-- Data e-mail</br>
-- Saluti e-mail</br>
-- Destinatario e-mail</br>
-- Mittente e-mail</br>
-- Oggetto e-mail</br>
+- Data: date del Calendario, tutti i formati. Include testo e numeri, ad esempio "9 dic 2020".</br>
+- Data (numerica): date del Calendario, tutti i formati. Include numeri, ad esempio 11/01/2020.</br>
+- Ora: formati a 12 e 24 ore.</br>
+- Numero: numeri positivi e negativi fino a 2 cifre decimali. </br>
+- Percentuale: un elenco di criteri che rappresentano una percentuale. Ad esempio: 1%, 11%, 100%, 11,11% e così via.</br>
+- Numero di telefono: formati comuni degli Stati Uniti e internazionali. Ad esempio: 000 000 0000, 000-000-0000, (000)000-0000, (000) 000-0000 e così via.</br>
+- Codice postale ZIP: formati di codice postale ZIP degli Stati Uniti. Ad esempio: 11111, 11111-1111.</br>
+- Prima parola della frase: criteri comuni per parole con un massimo di 9 caratteri. </br>
+- Fine della frase: punteggiatura comune per terminare una frase</br>
+- Carta di credito: formati comuni per i numeri di carta di credito. Ad esempio: 1111-1111-1111-1111. </br>
+- Numero di previdenza sociale: formato del numero di previdenza sociale degli Stati Uniti. Ad esempio: 111-11-1111. </br>
+- Casella di controllo: un elenco frasi che rappresenta le varianti di una casella di controllo spuntata. Ad esempio: _X_, _ _X_ e così via.</br>
+- Valuta: principali simboli internazionali. Ad esempio: $. </br>
+- Cc del messaggio di posta elettronica: un elenco frasi con il termine "Cc:", spesso collocato accanto ai nomi o agli indirizzi di posta elettronica di altre persone o gruppi a cui è stato inviato il messaggio.</br>
+- Data del messaggio di posta elettronica: un elenco frasi con il termine "Inviato il:", spesso collocato accanto alla data di invio del messaggio.</br>
+- Saluto del messaggio di posta elettronica: formule di apertura comuni per i messaggi di posta elettronica.</br>
+- Destinatario del messaggio di posta elettronica: un elenco frasi con il termine "A:", spesso collocato accanto ai nomi o agli indirizzi di posta elettronica delle persone o dei gruppi a cui è stato inviato il messaggio. </br>
+- Mittente del messaggio di posta elettronica: un elenco frasi con il termine "Da:", spesso collocato accanto al nome o all'indirizzo di posta elettronica del mittente. </br>
+- Oggetto del messaggio di posta elettronica: un elenco frasi con il termine "Oggetto:", spesso collocato accanto all'oggetto del messaggio. </br>
 
 La raccolta di spiegazioni include anche tre tipi di modello automatico che funzionano con i dati etichettati nei file di esempio:
 

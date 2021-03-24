@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 043807b2-21db-4d5c-b430-c8a6dee0e6ba
 ROBOTS: NOINDEX, NOFOLLOW
 description: Informazioni sull'autenticazione a più fattori in Microsoft 365.
-ms.openlocfilehash: e1635e48e3948425a6d91f80fd07d50c474b73d7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 080251efa7d7d3bda6ad89e95960e43dd38d076d
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914511"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51050667"
 ---
 # <a name="multi-factor-authentication-for-microsoft-365"></a>Autenticazione a più fattori per Microsoft 365
 
@@ -127,7 +127,7 @@ Per altre informazioni, vedere questa [panoramica dell'accesso condizionale](/az
 
 ### <a name="azure-ad-identity-protection"></a>Azure AD Identity Protection
 
-Con Azure AD Identity Protection, è possibile creare criteri di accesso condizionale aggiuntivi per richiedere [l'autenticazione](../../security/office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk)a più fattori quando il rischio di accesso è medio o elevato.
+Con Azure AD Identity Protection, è possibile creare criteri di accesso condizionale aggiuntivi per richiedere [l'autenticazione](../../security/defender-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk)a più fattori quando il rischio di accesso è medio o elevato.
 
 È possibile usare Azure AD Identity Protection e i criteri di accesso condizionale basati sui rischi con:
 

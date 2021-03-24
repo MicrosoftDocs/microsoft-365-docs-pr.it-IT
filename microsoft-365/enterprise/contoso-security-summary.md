@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Come Contoso usa le funzionalità di sicurezza di Microsoft 365 per le aziende.
-ms.openlocfilehash: 31baf61011fb67fbe11394718086d73afa2bc680
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1bcbaad2409df81121a92e8ad01f794ae28d8dc6
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907663"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051485"
 ---
 # <a name="summary-of-microsoft-365-for-enterprise-security-for-the-contoso-corporation"></a>Riepilogo della sicurezza di Microsoft 365 per le aziende per Contoso Corporation
 
@@ -73,7 +73,7 @@ Per seguire le procedure consigliate per la sicurezza e i requisiti di distribuz
 
 - Accesso alle applicazioni e ai dispositivi più sicuro con i criteri di accesso condizionale
 
-  Contoso usa i [criteri di accesso condizionale](../security/office-365-security/microsoft-365-policies-configurations.md) per identità, dispositivi, Exchange Online e SharePoint. I criteri di accesso condizionale per le identità richiedono la modifica della password per utenti a rischio elevato e impediscono ai client di utilizzare le applicazioni che non supportano l'autenticazione moderna. I criteri per i dispositivi includono la definizione di applicazioni approvate, computer e dispositivi mobili conformi. I criteri di accesso condizionale di Exchange Online includono il blocco del client ActiveSync e la configurazione della crittografia dei messaggi di Office 365. I criteri di accesso condizionale di SharePoint includono misure di sicurezza aggiuntive per i siti sensibili e altamente regolamentati.
+  Contoso usa i [criteri di accesso condizionale](../security/defender-365-security/microsoft-365-policies-configurations.md) per identità, dispositivi, Exchange Online e SharePoint. I criteri di accesso condizionale per le identità richiedono la modifica della password per utenti a rischio elevato e impediscono ai client di utilizzare le applicazioni che non supportano l'autenticazione moderna. I criteri per i dispositivi includono la definizione di applicazioni approvate, computer e dispositivi mobili conformi. I criteri di accesso condizionale di Exchange Online includono il blocco del client ActiveSync e la configurazione della crittografia dei messaggi di Office 365. I criteri di accesso condizionale di SharePoint includono misure di sicurezza aggiuntive per i siti sensibili e altamente regolamentati.
 
 - Windows Hello for Business
 

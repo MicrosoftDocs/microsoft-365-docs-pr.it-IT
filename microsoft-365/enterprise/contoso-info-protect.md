@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 ms.custom: ''
 description: Comprendere in che modo Contoso usa le funzionalità di protezione delle informazioni in Microsoft 365 per le aziende per proteggere le risorse digitali nel cloud.
-ms.openlocfilehash: 90a82fbd4dd77ff0f8faa024ced177a640a10b80
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3bd778708e30253e53cc465e89f7b783141771de
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911039"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051497"
 ---
 # <a name="information-protection-for-the-contoso-corporation"></a>Protezione delle informazioni per Contoso Corporation
 
@@ -41,7 +41,7 @@ Contoso ha eseguito un'analisi dei dati e ha determinato i livelli di classifica
 Nella tabella seguente sono elencati i criteri di informazioni di Contoso.
 
 
-| Valore | Accesso | Conservazione dei dati | Protezione delle informazioni |
+| Valore | Access | Conservazione dei dati | Protezione delle informazioni |
 |:-------|:-----|:-----|:-----|
 | Valore aziendale basso (Livello 1: Base) | Consentire l'accesso a tutti.  | 6 mesi | Usare la crittografia. |
 | Valore aziendale medio (Livello 2: Dati sensibili) | Consentire l'accesso a dipendenti, subappaltatori e partner di Contoso. <BR><BR> Usare MFA, Transport Layer Security (TLS) e Mobile Application Management (MAM). | 2 anni  | Usare i valori hash per l'integrità dei dati.  |
@@ -76,9 +76,9 @@ Contoso ha seguito questi passaggi per preparare Microsoft 365 per le aziende pe
 
 Nell'ambito dell'implementazione di Exchange Online e SharePoint, Contoso ha configurato il set di criteri di accesso condizionale seguente e li ha applicati ai gruppi appropriati:
 
-- [Criteri di accesso alle applicazioni gestite e non gestite sui dispositivi](../security/office-365-security/identity-access-policies.md)
-- [Criteri di accesso di Exchange Online](../security/office-365-security/secure-email-recommended-policies.md)
-- [Criteri di accesso di SharePoint](../security/office-365-security/sharepoint-file-access-policies.md)
+- [Criteri di accesso alle applicazioni gestite e non gestite sui dispositivi](../security/defender-365-security/identity-access-policies.md)
+- [Criteri di accesso di Exchange Online](../security/defender-365-security/secure-email-recommended-policies.md)
+- [Criteri di accesso di SharePoint](../security/defender-365-security/sharepoint-file-access-policies.md)
 
 Ecco un set risultante di criteri di Contoso per la protezione delle informazioni.
 
@@ -117,7 +117,7 @@ Informazioni su come Contoso usa le funzionalità di sicurezza di [Microsoft 365
 
 ## <a name="see-also"></a>Vedere anche
 
-[Roadmap per la sicurezza](../security/office-365-security/security-roadmap.md)
+[Roadmap per la sicurezza](../security/defender-365-security/security-roadmap.md)
 
 [Panoramica di Microsoft 365 per le aziende](microsoft-365-overview.md)
 

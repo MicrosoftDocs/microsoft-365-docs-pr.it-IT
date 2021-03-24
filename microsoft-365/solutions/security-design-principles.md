@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: b6696d15d728e6b66be5e54a9a3c372564c9f187
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7cd9098766024093a0b9fa2d6e95131bf13d09df
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920857"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052483"
 ---
 # <a name="security-hurdles-you-can-sail-overone-architects-viewpoint"></a>Ostacoli di sicurezza su cui è possibile navigare: il punto di vista di un architetto
 
@@ -49,7 +49,7 @@ I clienti che navigano su questi ostacoli hanno buone partnership tra i team ope
 
 Successivamente, adottare un approccio all'architettura Zero Trust. Questo inizia con la creazione di un perimetro di sicurezza moderno basato sull'identità. Progettare l'architettura di sicurezza in cui ogni tentativo di accesso, sia sul posto che nel cloud, viene considerato non attendibile finché non viene verificato: "Non considerare mai attendibile, verifica sempre". Questo approccio di progettazione non solo aumenta la sicurezza e la produttività, ma consente anche agli utenti di lavorare ovunque con qualsiasi tipo di dispositivo. I sofisticati controlli cloud inclusi in Microsoft 365 consentono di proteggere le identità degli utenti controllando l'accesso a risorse preziose in base al livello di rischio degli utenti.
 
-Per una configurazione consigliata, vedere [Configurazioni di identità e accesso ai dispositivi](../security/office-365-security/microsoft-365-policies-configurations.md).
+Per una configurazione consigliata, vedere [Configurazioni di identità e accesso ai dispositivi](../security/defender-365-security/microsoft-365-policies-configurations.md).
 
 ## <a name="transition-security-controls-to-the-cloud"></a>Transizione dei controlli di sicurezza nel cloud
 

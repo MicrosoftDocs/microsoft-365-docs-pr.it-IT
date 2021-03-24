@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - remotework
 description: Proteggere la posta elettronica aziendale e i dati da minacce informatiche, inclusi ransomware, phishing e allegati dannosi.
-ms.openlocfilehash: 67a882aed34ef60e1f06ab6e304e6611d3ca0600
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4bc465af99f02edf91dacceaae14d39b3156e103
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922305"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052423"
 ---
 # <a name="top-12-tasks-for-security-teams-to-support-working-from-home"></a>Le 12 attività principali per i team di sicurezza per supportare il lavoro da casa
 
@@ -56,7 +56,7 @@ Per i clienti che usano i piani aziendali, Microsoft consiglia di completare le 
 |12 |[Monitorare le minacce ed eseguire azioni](#12-monitor-for-threats-and-take-action)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
 
-Prima di iniziare, controllare il [punteggio di protezione di Microsoft 365](./mtp/microsoft-secure-score.md) nel Centro sicurezza Microsoft 365. Da un dashboard centralizzato, è possibile monitorare e migliorare la sicurezza per le identità, i dati, le app, i dispositivi e l'infrastruttura di Microsoft 365. Vengono forniti punti per la configurazione delle funzionalità di sicurezza consigliate, l'esecuzione di attività correlate alla sicurezza (ad esempio la visualizzazione di report) o la gestione di suggerimenti con un'applicazione o un software di terze parti. Le attività consigliate in questo articolo aumentano il punteggio.
+Prima di iniziare, controllare il [punteggio di protezione di Microsoft 365](./defender/microsoft-secure-score.md) nel Centro sicurezza Microsoft 365. Da un dashboard centralizzato, è possibile monitorare e migliorare la sicurezza per le identità, i dati, le app, i dispositivi e l'infrastruttura di Microsoft 365. Vengono forniti punti per la configurazione delle funzionalità di sicurezza consigliate, l'esecuzione di attività correlate alla sicurezza (ad esempio la visualizzazione di report) o la gestione di suggerimenti con un'applicazione o un software di terze parti. Le attività consigliate in questo articolo aumentano il punteggio.
 
 ![Screenshot of Microsoft Secure Score](../media/secure-score.png)
 
@@ -74,7 +74,7 @@ L'applicazione di questi criteri può richiedere solo pochi minuti, ma è necess
 |---|---|
 |Piani di Microsoft 365 (senza Azure AD P1 o P2)|[Abilitare le impostazioni predefinite di sicurezza in Azure AD](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults). Le impostazioni predefinite di sicurezza in Azure AD includono la MFA per utenti e amministratori.|
 |Microsoft 365 E3 (con Azure AD P1)|Usare i [criteri comuni di accesso condizionale](/azure/active-directory/conditional-access/concept-conditional-access-policy-common) per configurare i criteri seguenti: <br/>- [Richiedere la MFA per amministratori](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa) <br/>- [Richiedere la MFA per tutti gli utenti](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa) <br/> - [Bloccare l'autenticazione legacy](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)|
-|Microsoft 365 E5 (con Azure AD P2)|Sfruttando Azure AD Identity Protection, iniziare a implementare il [set raccomandato di accesso condizionale e criteri correlati](./office-365-security/identity-access-policies.md) di Microsoft creando questi due criteri:<br/> - [Richiedere la MFA quando il rischio di accesso è considerato *medio* o *elevato*](./office-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br/>- [Bloccare i client che non supportano l'autenticazione moderna](./office-365-security/identity-access-policies.md#block-clients-that-dont-support-multi-factor)<br/>- [Gli utenti a rischio elevato devono modificare la password](./office-365-security/identity-access-policies.md#high-risk-users-must-change-password)|
+|Microsoft 365 E5 (con Azure AD P2)|Sfruttando Azure AD Identity Protection, iniziare a implementare il [set raccomandato di accesso condizionale e criteri correlati](./defender-365-security/identity-access-policies.md) di Microsoft creando questi due criteri:<br/> - [Richiedere la MFA quando il rischio di accesso è considerato *medio* o *elevato*](./defender-365-security/identity-access-policies.md#require-mfa-based-on-sign-in-risk) <br/>- [Bloccare i client che non supportano l'autenticazione moderna](./defender-365-security/identity-access-policies.md#block-clients-that-dont-support-multi-factor)<br/>- [Gli utenti a rischio elevato devono modificare la password](./defender-365-security/identity-access-policies.md#high-risk-users-must-change-password)|
 |
 
 ## <a name="2-protect-against-threats"></a>2: Proteggere dalle minacce
@@ -86,7 +86,7 @@ Tutti i piani di Microsoft 365 includono un'ampia gamma di funzionalità di prot
 - Protezione anti-phishing
 - Protezione dalla posta indesiderata
 
-Vedere [Protezione dalle minacce in Office 365](office-365-security/protect-against-threats.md) per indicazioni che è possibile usare come punto di partenza.
+Vedere [Protezione dalle minacce in Office 365](defender-365-security/protect-against-threats.md) per indicazioni che è possibile usare come punto di partenza.
 
 ## <a name="3-configure-microsoft-defender-for-office-365"></a>3: Configurare Microsoft Defender per Office 365
 
@@ -98,17 +98,17 @@ Microsoft Defender per Office 365:
 - Protegge l'organizzazione quando gli utenti collaborano e condividono file, identificando e bloccando file dannosi nei siti del team e nelle raccolte documenti.
 - Applica modelli di machine learning e algoritmi avanzati di rilevamento della rappresentazione per evitare attacchi di phishing.
 
-Per una panoramica, incluso un riepilogo dei piani, vedere [Defender for Office 365](office-365-security/office-365-atp.md).
+Per una panoramica, incluso un riepilogo dei piani, vedere [Defender for Office 365](./defender-365-security/defender-for-office-365.md).
 
 L'amministratore globale può configurare queste protezioni:
 
-- [Configurare i criteri collegamenti sicuri](office-365-security/set-up-atp-safe-links-policies.md)
-- [Configurare le impostazioni globali per i collegamenti sicuri](office-365-security/configure-global-settings-for-safe-links.md)
-- [Configurare i criteri allegati sicuri](office-365-security/set-up-atp-safe-attachments-policies.md)
+- [Configurare i criteri collegamenti sicuri](defender-365-security/set-up-safe-links-policies.md)
+- [Configurare le impostazioni globali per i collegamenti sicuri](defender-365-security/configure-global-settings-for-safe-links.md)
+- [Configurare i criteri allegati sicuri](defender-365-security/set-up-safe-attachments-policies.md)
 
 È necessario collaborare con l'amministratore di Exchange Online e l'amministratore di SharePoint Online per configurare Defender per Office 365 per questi carichi di lavoro:
 
-- [ATP per SharePoint, OneDrive e Microsoft Teams](office-365-security/atp-for-spo-odb-and-teams.md)
+- [ATP per SharePoint, OneDrive e Microsoft Teams](defender-365-security/mdo-for-spo-odb-and-teams.md)
 
 ## <a name="4-configure-microsoft-defender-for-identity"></a>4: Configurare Microsoft Defender per l'identità
 
@@ -120,15 +120,15 @@ L'amministratore globale può configurare queste protezioni:
 
 ## <a name="5-turn-on-microsoft-365-defender"></a>5: Attivare Microsoft 365 Defender
 
-Dopo aver configurato Microsoft Defender per Office 365 e Microsoft Defender for Identity, è possibile visualizzare i segnali combinati di queste funzionalità in un unico dashboard. [Microsoft 365 Defender](./mtp/microsoft-threat-protection.md) riunisce avvisi, eventi imprevisti, analisi e risposta automatizzate e ricerca avanzata tra i carichi di lavoro (Microsoft Defender for Identity, Defender per Office 365, Microsoft Defender for Endpoint e Microsoft Cloud App Security) in un singolo riquadro [in security.microsoft.com](https://security.microsoft.com).
+Dopo aver configurato Microsoft Defender per Office 365 e Microsoft Defender for Identity, è possibile visualizzare i segnali combinati di queste funzionalità in un unico dashboard. [Microsoft 365 Defender](./defender/microsoft-365-defender.md) riunisce avvisi, eventi imprevisti, analisi e risposta automatizzate e ricerca avanzata tra i carichi di lavoro (Microsoft Defender for Identity, Defender per Office 365, Microsoft Defender for Endpoint e Microsoft Cloud App Security) in un singolo riquadro [in security.microsoft.com](https://security.microsoft.com).
 
 ![Illustrazione del dashboard MTP](../media/top-ten-security-remote-work-mtp-dashboard.png)
 
 Dopo aver configurato uno o più dei servizi defender per Office 365, attivare MTP. Le nuove funzionalità vengono aggiunte continuamente a MTP; prendere in considerazione la possibilità di acconsentire esplicitamente alla ricezione delle funzionalità di anteprima.
 
-- [Ulteriori informazioni su MTP](./mtp/microsoft-threat-protection.md)
-- [Attivare MTP](./mtp/mtp-enable.md)
-- [Acconsentire esplicitamente alle funzionalità di anteprima](./mtp/preview.md)
+- [Ulteriori informazioni su MTP](./defender/microsoft-365-defender.md)
+- [Attivare MTP](./defender/m365d-enable.md)
+- [Acconsentire esplicitamente alle funzionalità di anteprima](./defender/preview.md)
 
 ## <a name="6-configure-intune-mobile-app-protection-for-phones-and-tablets"></a>6: Configurare la protezione delle app per dispositivi mobili di Intune per telefoni e tablet
 
@@ -141,10 +141,10 @@ I criteri di protezione app includono molte impostazioni. Fortunatamente, non è
 
 Ancora meglio, Microsoft coordina questo framework di protezione delle app con un set di accesso condizionale e criteri correlati che consigliamo a tutte le organizzazioni di usare come punto di partenza. Se hai implementato L'autenticazione a più fattori usando le linee guida di questo articolo, sei a metà strada!
 
-Per configurare la protezione delle app per dispositivi mobili, usa le indicazioni in [Criteri comuni di identità e accesso ai dispositivi:](./office-365-security/identity-access-policies.md)
+Per configurare la protezione delle app per dispositivi mobili, usa le indicazioni in [Criteri comuni di identità e accesso ai dispositivi:](./defender-365-security/identity-access-policies.md)
 
- 1. Usa la [guida Applica criteri di protezione dei](./office-365-security/identity-access-policies.md#apply-app-data-protection-policies) dati APP per creare criteri per iOS e Android. Il livello 2 (protezione avanzata dei dati) è consigliato per la protezione di base.
- 2. Creare una regola di accesso condizionale in [Richiedi app approvate e protezione APP.](./office-365-security/identity-access-policies.md#require-approved-apps-and-app-protection)
+ 1. Usa la [guida Applica criteri di protezione dei](./defender-365-security/identity-access-policies.md#apply-app-data-protection-policies) dati APP per creare criteri per iOS e Android. Il livello 2 (protezione avanzata dei dati) è consigliato per la protezione di base.
+ 2. Creare una regola di accesso condizionale in [Richiedi app approvate e protezione APP.](./defender-365-security/identity-access-policies.md#require-approved-apps-and-app-protection)
 
 ## <a name="7-configure-mfa-and-conditional-access-for-guests-including-intune-mobile-app-protection"></a>7: Configurare L'autenticazione a più fattori e l'accesso condizionale per gli utenti guest, inclusa la protezione delle app per dispositivi mobili di Intune
 
@@ -155,7 +155,7 @@ Se si usa il piano Microsoft 365 E5 e si sfrutta Azure Identity Protection per l
 - Creare una nuova regola di accesso condizionale per richiedere L'autenticazione a più fattori sempre per gli utenti guest e esterni.
 - Aggiornare la regola di accesso condizionale MFA basata sui rischi per escludere utenti guest e utenti esterni.
 
-Usa le indicazioni disponibili in Aggiornamento dei criteri comuni per consentire e proteggere l'accesso [guest](./office-365-security/identity-access-policies-guest-access.md) ed esterno per comprendere il funzionamento dell'accesso guest con Azure AD e aggiornare i criteri interessati.
+Usa le indicazioni disponibili in Aggiornamento dei criteri comuni per consentire e proteggere l'accesso [guest](./defender-365-security/identity-access-policies-guest-access.md) ed esterno per comprendere il funzionamento dell'accesso guest con Azure AD e aggiornare i criteri interessati.
 
 I criteri di protezione delle app per dispositivi mobili di Intune creati, insieme alla regola di accesso condizionale per richiedere app approvate e protezione app, si applicano agli account guest e consentono di proteggere i dati dell'organizzazione.
 
@@ -173,12 +173,12 @@ Puoi anche trarre vantaggio da queste esercitazioni:
 - [Usare Autopilot per registrare i dispositivi Windows in Intune](/mem/intune/enrollment/tutorial-use-autopilot-enroll-devices)
 - [Usare le funzionalità di registrazione dei dispositivi aziendali di Apple in Apple Business Manager (ABM) per registrare i dispositivi iOS/iPadOS in Intune](/mem/intune/enrollment/tutorial-use-device-enrollment-program-enroll-ios)
 
-Dopo la registrazione dei dispositivi, usa le indicazioni in [Criteri di identità](./office-365-security/identity-access-policies.md) e accesso ai dispositivi comuni per creare questi criteri:
+Dopo la registrazione dei dispositivi, usa le indicazioni in [Criteri di identità](./defender-365-security/identity-access-policies.md) e accesso ai dispositivi comuni per creare questi criteri:
 
-- [Definire i criteri di conformità dei](./office-365-security/identity-access-policies.md#define-device-compliance-policies) dispositivi: le impostazioni consigliate per Windows 10 includono la richiesta di protezione antivirus. Se hai Microsoft 365 E5, usa Microsoft Defender for Endpoint per monitorare l'integrità dei dispositivi dei dipendenti. Assicurarsi che i criteri di conformità per altri sistemi operativi includano la protezione antivirus e il software di protezione end-point.
-- [Richiedi PC conformi: questa](./office-365-security/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) è la regola di accesso condizionale in Azure AD che applica i criteri di conformità dei dispositivi.
+- [Definire i criteri di conformità dei](./defender-365-security/identity-access-policies.md#define-device-compliance-policies) dispositivi: le impostazioni consigliate per Windows 10 includono la richiesta di protezione antivirus. Se hai Microsoft 365 E5, usa Microsoft Defender for Endpoint per monitorare l'integrità dei dispositivi dei dipendenti. Assicurarsi che i criteri di conformità per altri sistemi operativi includano la protezione antivirus e il software di protezione end-point.
+- [Richiedi PC conformi: questa](./defender-365-security/identity-access-policies.md#require-compliant-pcs-but-not-compliant-phones-and-tablets) è la regola di accesso condizionale in Azure AD che applica i criteri di conformità dei dispositivi.
 
-Solo un'organizzazione può gestire un dispositivo, quindi assicurati di escludere gli account guest dalla regola di accesso condizionale in Azure AD. Se non si escludono utenti guest ed esterni dai criteri che richiedono la conformità dei dispositivi, questi criteri bloccheranno questi utenti. Per ulteriori informazioni, vedere [Aggiornamento dei criteri comuni per consentire e proteggere l'accesso guest ed esterno.](./office-365-security/identity-access-policies-guest-access.md)
+Solo un'organizzazione può gestire un dispositivo, quindi assicurati di escludere gli account guest dalla regola di accesso condizionale in Azure AD. Se non si escludono utenti guest ed esterni dai criteri che richiedono la conformità dei dispositivi, questi criteri bloccheranno questi utenti. Per ulteriori informazioni, vedere [Aggiornamento dei criteri comuni per consentire e proteggere l'accesso guest ed esterno.](./defender-365-security/identity-access-policies-guest-access.md)
 
 ## <a name="9-optimize-your-network-for-cloud-connectivity"></a>9: Ottimizzare la rete per la connettività cloud
 
@@ -241,11 +241,11 @@ Introduzione a Cloud App Security. Successivamente è possibile configurare cont
 
 ## <a name="12-monitor-for-threats-and-take-action"></a>12: Monitorare le minacce ed eseguire azioni
 
-Microsoft 365 include diversi modi per monitorare lo stato ed eseguire le azioni appropriate. Il punto di partenza migliore è il Centro sicurezza Microsoft 365 ( ), in cui è possibile visualizzare il punteggio Microsoft Secure Score dell'organizzazione ed eventuali avvisi o entità che richiedono [https://security.microsoft.com](https://security.microsoft.com) l'attenzione [](./mtp/microsoft-secure-score.md)dell'utente.
+Microsoft 365 include diversi modi per monitorare lo stato ed eseguire le azioni appropriate. Il punto di partenza migliore è il Centro sicurezza Microsoft 365 ( ), in cui è possibile visualizzare il punteggio Microsoft Secure Score dell'organizzazione ed eventuali avvisi o entità che richiedono [https://security.microsoft.com](https://security.microsoft.com) l'attenzione [](./defender/microsoft-secure-score.md)dell'utente.
 
-- [Introduzione al Centro sicurezza Microsoft 365](./mtp/overview-security-center.md)
-- [Monitorare e visualizzare i report](./mtp/overview-security-center.md)
-- [Vedere i portali di sicurezza in Microsoft 365](./mtp/portals.md)
+- [Introduzione al Centro sicurezza Microsoft 365](./defender/overview-security-center.md)
+- [Monitorare e visualizzare i report](./defender/overview-security-center.md)
+- [Vedere i portali di sicurezza in Microsoft 365](./defender/portals.md)
 
 ## <a name="next-steps"></a>Passaggi successivi
 

@@ -20,12 +20,12 @@ search.appverid:
 - BCS160
 ms.assetid: 77735c9d-8b80-4d2f-890e-a8598547dea6
 description: Informazioni su come implementare ExpressRoute per Office 365, che fornisce un percorso di routing alternativo a molti servizi di Office 365 con connessione Internet.
-ms.openlocfilehash: d0f0b5156aae5a3e2c38f51ba0b74738918593e9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d75fe3a6dab4926babeef61fc14894566ff819b0
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909833"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051367"
 ---
 # <a name="implementing-expressroute-for-office-365"></a>Implementazione di ExpressRoute per Office 365
 
@@ -192,7 +192,7 @@ Spesso, ci sono più località di meet-me che possono essere selezionate all'int
 |**Sedi expressroute meet-me pianificate in California e New York**||
 |:-----|:-----|
 |Posizione  <br/> |Numero di persone  <br/> |Latenza prevista per la rete Microsoft in uscita da Internet  <br/> |Latenza prevista per la rete Microsoft su ExpressRoute  <br/> |
-|Roma  <br/> |10.000  <br/> |~15 ms  <br/> |~10ms (tramite Silicon Valley)  <br/> |
+|Roma  <br/> |10,000  <br/> |~15 ms  <br/> |~10ms (tramite Silicon Valley)  <br/> |
 |Washington DC  <br/> |15,000  <br/> |~20ms  <br/> |~10ms (tramite New York)  <br/> |
 |Dallas  <br/> |5,000  <br/> |~15 ms  <br/> |~40ms (tramite New York)  <br/> |
 
@@ -225,7 +225,7 @@ Il piano di implementazione deve comprendere sia i dettagli tecnici della config
 
 - Decidere fino a dove verranno annunciate le route ExpressRoute nella rete e qual è il meccanismo per i client per selezionare il percorso Internet o ExpressRoute; ad esempio, routing diretto o proxy dell'applicazione.
 
-- Pianificare le modifiche ai record DNS, incluse [le voci di Sender Policy Framework.](../security/office-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md)
+- Pianificare le modifiche ai record DNS, incluse [le voci di Sender Policy Framework.](../security/defender-365-security/set-up-spf-in-office-365-to-help-prevent-spoofing.md)
 
 - Pianificare la strategia NAT tra cui NAT di origine in uscita e in ingresso.
 

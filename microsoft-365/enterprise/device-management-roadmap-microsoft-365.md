@@ -15,12 +15,12 @@ ms.assetid: fb4182e6-5e78-45d0-9641-d791c4519441
 audience: ITPro
 ms.custom: microsoft-intune
 description: La roadmap per configurare la gestione dei dispositivi per Microsoft 365.
-ms.openlocfilehash: 4c37033898865372fea19ddbb53ec9c8586f27b1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ec284a96fc8e7285f89e8a909b76c782b4469ce1
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918967"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051461"
 ---
 # <a name="device-management-roadmap-for-microsoft-365"></a>Roadmap di gestione dei dispositivi per Microsoft 365
 
@@ -54,10 +54,10 @@ In base alla valutazione, inizia a gestire i dispositivi con:
  
 ## <a name="identity-and-device-access-recommendations"></a>Consigli sull’identità e sull’accesso dei dispositivi
 
-Microsoft offre una serie di consigli per [identità e accesso ai dispositivi](../security/office-365-security/microsoft-365-policies-configurations.md) per garantire un ambiente di lavoro protetto e produttivo. Per l'accesso ai dispositivi, usa i suggerimenti e le impostazioni in questi articoli:
+Microsoft offre una serie di consigli per [identità e accesso ai dispositivi](../security/defender-365-security/microsoft-365-policies-configurations.md) per garantire un ambiente di lavoro protetto e produttivo. Per l'accesso ai dispositivi, usa i suggerimenti e le impostazioni in questi articoli:
 
-- [Prerequisiti](../security/office-365-security/identity-access-prerequisites.md)
-- [Criteri comuni di identità e accesso dei dispositivi](../security/office-365-security/identity-access-policies.md)
+- [Prerequisiti](../security/defender-365-security/identity-access-prerequisites.md)
+- [Criteri comuni di identità e accesso dei dispositivi](../security/defender-365-security/identity-access-policies.md)
 
 ## <a name="how-contoso-did-device-management-for-microsoft-365"></a>Come Contoso ha fatto la gestione dei dispositivi per Microsoft 365
 

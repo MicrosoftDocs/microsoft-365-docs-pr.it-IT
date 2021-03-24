@@ -15,38 +15,38 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 ms.custom: ''
-description: Guida di orientamento all'identità per Microsoft 365.
-ms.openlocfilehash: c79b7babbfbd97a13979de1ed23052ac572d9ded
-ms.sourcegitcommit: 9a764c2aed7338c37f6e92f5fb487f02b3c4dfa1
+description: Roadmap per l'identità per Microsoft 365.
+ms.openlocfilehash: 456841bfc15d143409535140f2b5a63ee72e99d2
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "48446288"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051307"
 ---
 # <a name="identity-roadmap-for-microsoft-365"></a>Roadmap delle identità per Microsoft 365
 
-In Microsoft 365 per le aziende, un'infrastruttura di gestione delle identità ben pianificata ed eseguita apre la strada a una maggiore sicurezza, inclusa la limitazione dell'accesso ai carichi di lavoro di produttività e ai relativi dati solo a utenti e dispositivi autenticati.
+In Microsoft 365 per le aziende, un'infrastruttura di identità ben pianificata ed eseguita apre la strada a una maggiore sicurezza, inclusa la limitazione dell'accesso ai carichi di lavoro di produttività e ai relativi dati solo a utenti e dispositivi autenticati.
 
-Per una panoramica dei modelli di identità e dell'autenticazione per Microsoft 365 per le aziende, guardare questo video.
+Per una panoramica dei modelli di identità e dell'autenticazione per Microsoft 365 per le aziende, guarda questo video.
 
 <p> </p>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Pjwu]
 
-Per informazioni sulle funzionalità di identità di ogni piano di Microsoft 365 per le aziende, sul ruolo di Azure Active Directory, sui componenti locali e basati sul cloud e sulle configurazioni di autenticazione più comuni, vedere il [poster](../downloads/m365e-identity-infra.pdf)dell'infrastruttura di identità.
+Per informazioni sulle funzionalità di identità di ogni piano di Microsoft 365 per le aziende, sul ruolo di Azure Active Directory, sui componenti locali e basati su cloud e sulle configurazioni di autenticazione più comuni, vedere il [poster dell'infrastruttura](../downloads/m365e-identity-infra.pdf)di identità.
 
 [![Poster dell'infrastruttura di gestione delle identità](../downloads/m365e-identity-infra.png)](../downloads/m365e-identity-infra.pdf)
 
-Rivedere questo poster di due pagine per aumentare rapidamente i concetti e le configurazioni delle identità per Microsoft 365 per le aziende.
+Esaminare questo poster di due pagine per analizzare rapidamente i concetti e le configurazioni di identità per Microsoft 365 per le aziende.
 
-Puoi anche [scaricare questo poster](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) e stamparlo in formato lettera, legale o tabloid (11 x 17).
+Puoi anche [scaricare questo poster e](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/m365e-identity-infra.pdf) stamparlo in formato lettera, legale o tabloid (11 x 17).
 
-## <a name="plan"></a>Piano
+## <a name="plan"></a>Pianificare
 
 Per pianificare l'implementazione dell'identità:
 
 - [Comprendere i diversi modelli di identità](about-microsoft-365-identity.md)
-- [Pianificare la sincronizzazione delle directory e delle identità ibride](plan-for-directory-synchronization.md)
+- [Pianificare la sincronizzazione dell'identità ibrida e della directory](plan-for-directory-synchronization.md)
 
 ## <a name="deploy"></a>Distribuire
 
@@ -54,18 +54,18 @@ Per distribuire l'implementazione dell'identità:
 
 - [Proteggere gli account di amministrazione globale](protect-your-global-administrator-accounts.md)
 - [Configurare e usare identità solo cloud](cloud-only-identities.md)
-- [Configurare e utilizzare identità ibride](prepare-for-directory-synchronization.md)
+- [Configurare e usare le identità ibride](prepare-for-directory-synchronization.md)
 - [Configurare la sincronizzazione della directory](set-up-directory-synchronization.md)
-- Se necessario, distribuire scenari [di identità ibridi](hybrid-solutions.md)
+- Se necessario, distribuire scenari [di identità ibrida](hybrid-solutions.md)
 
 ### <a name="identity-and-device-access-recommendations"></a>Consigli sull’identità e sull’accesso dei dispositivi
 
-Per garantire una forza lavoro sicura e produttiva, Microsoft fornisce una serie di consigli per [l'identità e l'accesso ai dispositivi.](../security/office-365-security/microsoft-365-policies-configurations.md) Per l'identità, utilizzare i suggerimenti e le impostazioni riportati negli articoli seguenti:
+Per garantire una forza lavoro sicura e produttiva, Microsoft fornisce una serie di suggerimenti per [l'identità e l'accesso ai dispositivi.](../security/defender-365-security/microsoft-365-policies-configurations.md) Per l'identità, usa i suggerimenti e le impostazioni in questi articoli:
 
-- [Prerequisiti](../security/office-365-security/identity-access-prerequisites.md)
-- [Criteri comuni di identità e accesso dei dispositivi](../security/office-365-security/identity-access-policies.md)
+- [Prerequisiti](../security/defender-365-security/identity-access-prerequisites.md)
+- [Criteri comuni di identità e accesso dei dispositivi](../security/defender-365-security/identity-access-policies.md)
 
-## <a name="manage"></a>Gestione
+## <a name="manage"></a>Gestire
 
 Per gestire la distribuzione delle identità di Microsoft 365, vedere:
 
@@ -86,8 +86,8 @@ Informazioni su come gli esperti IT di Microsoft [gestiscono le identità e l'ac
 
 ## <a name="how-contoso-did-identity-for-microsoft-365"></a>Come contoso ha fatto l'identità per Microsoft 365
 
-Per un esempio di come un'organizzazione multinazionale fittizia ma rappresentativa ha distribuito un'infrastruttura di identità ibrida per i servizi cloud di Microsoft 365, vedere [Identità per Contoso Corporation.](contoso-identity.md)
+Per un esempio di come un'organizzazione multinazionale fittizia ma rappresentativa abbia distribuito un'infrastruttura di identità ibrida per i servizi cloud di Microsoft 365, vedere [Identity for the Contoso Corporation.](contoso-identity.md)
 
 ## <a name="next-step"></a>Passaggio successivo
 
-Avviare la pianificazione delle identità con [i modelli di identità.](about-microsoft-365-identity.md)
+Iniziare la pianificazione dell'identità [con i modelli di identità](about-microsoft-365-identity.md).
