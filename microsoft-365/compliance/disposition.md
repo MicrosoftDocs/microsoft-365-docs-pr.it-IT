@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Monitorare e gestire lo smaltimento del contenuto, sia che si utilizzi una revisione per l'eliminazione o che il contenuto venga eliminato automaticamente in base alle impostazioni configurate.
-ms.openlocfilehash: d2c2e4e469efe16277f34a902f6720dc2b39e908
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d9786b5e93801153e168784d51e37a00ee1822bc
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918042"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051928"
 ---
 # <a name="disposition-of-content"></a>Eliminazione del contenuto
 
@@ -44,7 +44,7 @@ Per concedere agli utenti solo le autorizzazioni necessarie per le revisioni per
 
 Inoltre, per visualizzare il contenuto degli elementi durante il processo di eliminazione, aggiungere utenti ai due gruppi di ruoli seguenti: **Visualizzatore contenuto di Esplora contenuto** e **Visualizzatore elenco di Esplora contenuto**. Se gli utenti non hanno le autorizzazioni di questi gruppi di ruoli, possono comunque selezionare un'azione di revisione per l'eliminazione per completare l'operazione, ma devono farlo senza poter vedere il contenuto dell'elemento nel centro conformità.
 
-Per le istruzioni per configurare queste autorizzazioni, vedere [Fornire agli utenti l'accesso al Centro sicurezza e conformità di Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Per le istruzioni per configurare queste autorizzazioni, vedere [Fornire agli utenti l'accesso al Centro sicurezza e conformità di Office 365](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 ### <a name="enable-auditing"></a>Abilitazione del controllo
 

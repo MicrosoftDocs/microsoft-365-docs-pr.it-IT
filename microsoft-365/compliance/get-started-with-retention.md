@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Pronti per iniziare a implementare i criteri e le etichette di riservatezza per gestire i dati della tua organizzazione, ma in dubbio su come iniziare? Leggere alcune indicazioni utili per iniziare.
-ms.openlocfilehash: 27f361ba98cdaecb5b7788283c8d4244583ee82c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 65c196f8838378a10263370b1377b3eb43b14915
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922620"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51051908"
 ---
 # <a name="get-started-with-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -56,9 +56,9 @@ Ai membri del team di conformità che creeranno e gestiranno i criteri e le etic
 
 In alternativa all'utilizzo di questo ruolo predefinito, è possibile creare un nuovo gruppo di ruoli e aggiungere a questo gruppo il ruolo **Gestione conservazione**. Per sola lettura, usare **Gestione conservazione solo visualizzazione**. 
 
-Per altre informazioni su gruppi di ruoli e ruoli, vedere [Autorizzazioni nel Centro sicurezza e conformità](../security/office-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center).
+Per altre informazioni su gruppi di ruoli e ruoli, vedere [Autorizzazioni nel Centro sicurezza e conformità](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md#roles-in-the-security--compliance-center).
 
-Per istruzioni su come aggiungere utenti a gruppi di ruoli e assegnare i ruoli, vedere [Concedere agli utenti l'accesso al Centro sicurezza e conformità](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Per istruzioni su come aggiungere utenti a gruppi di ruoli e assegnare i ruoli, vedere [Concedere agli utenti l'accesso al Centro sicurezza e conformità](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 Queste autorizzazioni sono necessarie solo per creare, configurare e applicare criteri di conservazione ed etichette di conservazione. La persona che configura tali criteri ed etichette non ha bisogno di accedere al contenuto.
 

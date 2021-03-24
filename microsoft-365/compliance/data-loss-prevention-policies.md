@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come identificare, monitorare e proteggere automaticamente le informazioni riservate della tua organizzazione in tutta la suite Office 365.
-ms.openlocfilehash: 7d526d5eeb74f0d31f375974824e7a76344bcd76
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9ef369786aa4b79dbdec551c9750500f9c092906
+ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925810"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "51052074"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Panoramica sulla prevenzione della perdita dei dati
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -534,7 +534,7 @@ I membri del team conformità addetti alla creazione dei criteri di prevenzione 
 
 È anche possibile creare un gruppo di ruoli con privilegi di sola visualizzazione per i report e i criteri DLP concedendo il ruolo di **solo visualizzazione per la gestione della conformità DLP**.
 
-Per altre informazioni, vedere [Concedere agli utenti l'accesso al Centro conformità di Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
+Per altre informazioni, vedere [Concedere agli utenti l'accesso al Centro conformità di Office 365](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md).
   
 Queste autorizzazioni sono necessarie solo per creare e applicare criteri di prevenzione della perdita dei dati. L'applicazione dei criteri non richiede l'accesso al contenuto.
   
