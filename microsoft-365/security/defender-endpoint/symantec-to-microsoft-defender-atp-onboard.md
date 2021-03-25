@@ -21,17 +21,17 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 95b2e4bfc0eca58d6c71670b21ded81affcc219f
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: cc005c559e0f91f1c5888f8d7e4e7a2a420894db
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185504"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218701"
 ---
 # <a name="migrate-from-symantec---phase-3-onboard-to-microsoft-defender-for-endpoint"></a>Eseguire la migrazione da Symantec - Fase 3: onboard a Microsoft Defender per Endpoint
 
 **Si applica a:**
-- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 |[![Fase 1: preparare](images/phase-diagrams/prepare.png)](symantec-to-microsoft-defender-atp-prepare.md)<br/>[Fase 1: preparare](symantec-to-microsoft-defender-atp-prepare.md) |[![Fase 2: configurazione](images/phase-diagrams/setup.png)](symantec-to-microsoft-defender-atp-setup.md)<br/>[Fase 2: configurazione](symantec-to-microsoft-defender-atp-setup.md) |![Fase 3: onboard](images/phase-diagrams/onboard.png)<br/>Fase 3: onboard |
@@ -39,7 +39,7 @@ ms.locfileid: "51185504"
 || |*Sei qui!* |
 
 
-**Benvenuti nella fase 3 della [migrazione da Symantec a Microsoft Defender per Endpoint.](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)** Questa fase di migrazione include i passaggi seguenti:
+**Benvenuti nella fase 3 della [migrazione da Symantec a Microsoft Defender per Endpoint.](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)** Questa fase di migrazione include i passaggi seguenti:
 
 1. [Onboard dei dispositivi a Microsoft Defender for Endpoint](#onboard-devices-to-microsoft-defender-for-endpoint).
 2. [Eseguire un test di rilevamento](#run-a-detection-test).
@@ -105,6 +105,6 @@ A tale scopo, visitare il sito degli scenari dimostrativi di Microsoft Defender 
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-**Congratulazioni**! La migrazione da [Symantec](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)a Microsoft Defender for Endpoint è stata completata. 
+**Congratulazioni**! La migrazione da [Symantec](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)a Microsoft Defender for Endpoint è stata completata. 
 - [Visita il dashboard delle operazioni](security-operations-dashboard.md) di sicurezza in Microsoft Defender Security Center ( [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) ). 
 - [Gestire Microsoft Defender per Endpoint, dopo la migrazione.](manage-atp-post-migration.md)

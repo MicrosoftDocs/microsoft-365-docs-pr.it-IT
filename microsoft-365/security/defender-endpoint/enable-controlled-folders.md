@@ -14,12 +14,12 @@ ms.author: ellevin
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: a35c18d805ef3645659f49b8340cbb4cabab2f8d
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 6d07e2a21bb01794990160cf02837fc524008098
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165070"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218761"
 ---
 # <a name="enable-controlled-folder-access"></a>Abilitare l'accesso controllato alle cartelle
 
@@ -141,4 +141,4 @@ Consente `Disabled` di disattivare la funzionalità.
 
 * [Proteggere le cartelle importanti con l'accesso controllato alle cartelle](controlled-folders.md)
 * [Personalizzare l'accesso controllato alle cartelle](customize-controlled-folders.md)
-* [Valutare Microsoft Defender per Endpoint](evaluate-atp.md)
+* [Valutare Microsoft Defender per Endpoint](evaluate-mde.md)
