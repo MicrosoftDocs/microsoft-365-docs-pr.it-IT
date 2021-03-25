@@ -21,19 +21,19 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.custom: AIR
-ms.openlocfilehash: d2effb44c145a4fbf1006446685dbcd703754e6e
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 7143a360fb7093f94c6f66373587e1c895dd3213
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166210"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51200306"
 ---
 # <a name="overview-of-automated-investigations"></a>Panoramica delle indagini automatizzate
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -99,5 +99,5 @@ Attualmente, AIR supporta solo le seguenti versioni del sistema operativo:
 ## <a name="see-also"></a>Vedere anche
 
 - [Protezione puA](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
-- [Analisi e risposta automatizzate in Microsoft Defender per Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-air)
+- [Analisi e risposta automatizzate in Microsoft Defender per Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/office-365-air)
 - [Analisi e risposta automatizzate in Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/mtp-autoir)
