@@ -1,0 +1,104 @@
+### YamlMime:Landing
+title: Documentazione di Microsoft Defender for Endpoint
+summary: Microsoft Defender for Endpoint offre protezione preventiva, rilevamento post-violazione, analisi automatizzata e risposta.
+metadata:
+  title: Documentazione di Microsoft Defender for Endpoint
+  description: Informazioni su Microsoft Defender per Endpoint e ottimizzare le funzionalità di sicurezza integrate per proteggere i dispositivi, rilevare attività dannose e correggere le minacce# Obbligatorio; Descrizione dell'articolo visualizzata nei risultati della ricerca. < 160 caratteri.
+  services: office-365-security-compliance
+  ms.service: O365-seccomp
+  ms.subservice: subservice
+  ms.topic: landing-page
+  ms.collection: m365-security-compliance
+  author: mjcaparas
+  ms.author: macapara
+  ms.date: 02/5/2021
+  localization_priority: Priority
+  ms.openlocfilehash: a183f4d09b596f6dbecf2dc0636ff516b1b26eb6
+  ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+  ms.translationtype: MT
+  ms.contentlocale: it-IT
+  ms.lasthandoff: 03/23/2021
+  ms.locfileid: "51067722"
+landingContent:
+- title: Microsoft Defender ATP
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Cos'è Microsoft Defender per endpoint?
+      url: microsoft-defender-advanced-threat-protection.md
+  - linkListType: whats-new
+    links:
+    - text: Novità di Microsoft Defender per Endpoint
+      url: whats-new-in-microsoft-defender-atp.md
+  - linkListType: video
+    links:
+    - text: Video di panoramica
+      url: https://www.microsoft.com/videoplayer/embed/RE4vnC4?rel=0
+- title: Valutare & distribuire il servizio
+  linkLists:
+  - linkListType: get-started
+    links:
+    - text: Valutare Microsoft Defender per Endpoint
+      url: evaluation-lab.md
+    - text: Pianificare la distribuzione
+      url: deployment-strategy.md
+  - linkListType: deploy
+    links:
+    - text: Guida alla distribuzione
+      url: deployment-phases.md
+    - text: Onboard dei dispositivi supportati
+      url: onboard-configure.md
+  - linkListType: how-to-guide
+    links:
+    - text: Migration guide
+      url: migration-guides.md
+  - linkListType: video
+    links:
+    - text: Video sull'onboarding
+      url: https://www.microsoft.com/en-us/videoplayer/embed/RE4bGqr
+- title: Operazioni di sicurezza
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Rilevamento endpoint e risposta
+      url: overview-endpoint-detection-response.md
+    - text: Blocco comportamentale e contenimento
+      url: behavioral-blocking-containment.md
+    - text: Analisi e risposta automatizzate (AIR)
+      url: automated-investigations.md
+    - text: Ricerca avanzata
+      url: advanced-hunting-overview.md
+    - text: Microsoft Threat Experts
+      url: microsoft-threat-experts.md
+    - text: Analisi delle minacce
+      url: threat-analytics.md
+- title: Usare Microsoft Defender per Endpoint su altre piattaforme
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Microsoft Defender per Endpoint per Mac
+      url: microsoft-defender-endpoint-mac.md
+    - text: Microsoft Defender for Endpoint per iOS
+      url: microsoft-defender-endpoint-ios.md
+    - text: Microsoft Defender per Endpoint per Linux
+      url: microsoft-defender-endpoint-linux.md
+    - text: Microsoft Defender per Endpoint per Android
+      url: microsoft-defender-endpoint-android.md
+- title: Riferimenti
+  linkLists:
+  - linkListType: reference
+    links:
+    - text: Gestione e API
+      url: management-apis.md
+    - text: Integrazione dei partner
+      url: partner-integration.md
+- title: Amministrazione della sicurezza
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Gestione delle & delle minacce
+      url: next-gen-threat-and-vuln-mgt.md
+    - text: Riduzione della superficie d'attacco
+      url: overview-attack-surface-reduction.md
+    - text: Protezione di nuova generazione
+      url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-in-windows-10
