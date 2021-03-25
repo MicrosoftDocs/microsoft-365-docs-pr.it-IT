@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 5b089159db56190a9774182c132c166714fc400e
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 965bacce0006f1435fc632ffbe0462f2f97dc858
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060893"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197789"
 ---
 >[!NOTE]
-><span data-ttu-id="6304b-104">Se sei un cliente us government, usa gli URI elencati in [Microsoft Defender for Endpoint per i clienti del governo statunitense.](/microsoft-365/security/defender-endpoint/gov.md#api)</span><span class="sxs-lookup"><span data-stu-id="6304b-104">If you are a US Government customer, please use the URIs listed in [Microsoft Defender for Endpoint for US Government customers](/microsoft-365/security/defender-endpoint/gov.md#api).</span></span>
+><span data-ttu-id="9745f-104">Se sei un cliente us government, usa gli URI elencati in [Microsoft Defender for Endpoint per i clienti del governo statunitense.](/microsoft-365/security/defender-endpoint/gov#api)</span><span class="sxs-lookup"><span data-stu-id="9745f-104">If you are a US Government customer, please use the URIs listed in [Microsoft Defender for Endpoint for US Government customers](/microsoft-365/security/defender-endpoint/gov#api).</span></span>
