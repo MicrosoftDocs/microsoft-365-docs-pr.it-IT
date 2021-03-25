@@ -11,12 +11,12 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: f3e4b434f1ca267d5bbfbc7e67cb20c7e2b9dbbb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 79b4d343326d722e42e09ae2794c05dcdd8eb603
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920565"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218737"
 ---
 # <a name="microsoft-managed-desktop-archived-devices"></a>Dispositivi archiviati di Microsoft Managed Desktop
 
@@ -40,11 +40,14 @@ Per essere registrato in Microsoft Managed Desktop, un dispositivo deve essere u
 |---------|---------|---------|---------|
 |Dell Precision 3530| 256 GB / Intel i5 / 8 GB di RAM | Fotocamera AR necessaria | **22 maggio 2023** |
 |Dell Latitude 5300 / 5300 2 in 1 / 5400 / 5500 | 256 GB / Intel i5 / 8 GB di RAM | Fotocamera AR necessaria | **1 giugno 2024**  |
+|Dell Latitude 5310 / 5310 2 in 1 / 256 GB / Intel i5 / 8 GB di RAM | Fotocamera AR necessaria | **28 aprile 2025**  |
+|Dell Latitude 5410 / 5410 2 in 1 / 256 GB / Intel i5 / 8 GB di RAM | Fotocamera AR necessaria | **28 aprile 2025**  |
 |Dell Latitude 5490 | 256 GB / Intel i5 / 8 GB di RAM | Fotocamera AR necessaria | **9 gennaio 2023** |
 |Dell Latitude 7200 2 in 1 | 256 GB / Intel i5 / 8 GB di RAM | Fotocamera AR necessaria | **1 maggio 2024** |
 |Dell Latitude 7300 / 7400 / 7400 2 in 1 | 256 GB / Intel i5 / 8 GB di RAM | Fotocamera AR necessaria | **1 maggio 2024**  |
 |Dell Latitude 7390 / 7390 2 in-1 / 7490 | 256 GB / Intel i5 / 8 GB di RAM   | Fotocamera AR necessaria | **9 gennaio 2023** |
 |Dell Latitude 7410 / 7410 2 in 1 | 256 GB / Intel i5 / 8 GB di RAM | Fotocamera AR necessaria | **19 maggio 2025**  |
+|Dell Latitude 9410 / 9410 2 in 1 | 256 GB / Intel i5 / 8 GB di RAM | Fotocamera AR necessaria | **05 maggio 2025**  |
 |Dell Optiplex 3070 | 128 GB / Intel i3 / 8 GB di RAM | Nessuno | **1 maggio 2025**  |
 |HP EliteBook 830 / 840 / 850 G5| 128 GB / Intel i5 / 8 GB di RAM | SKU con 5VS01AV, fotocamera IR o sensore di impronta digitale necessario  | **15 febbraio 2023** |
 |HP EliteBook 830 / 840 / 850 G6| 128 GB / Intel i5 / 8 GB di RAM | SKU con 5VS01AV, fotocamera IR o sensore di impronta digitale necessario  | **30 novembre 2023** |

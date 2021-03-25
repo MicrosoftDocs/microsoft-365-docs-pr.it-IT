@@ -21,17 +21,17 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 6a5e5c10e92d5c8c017360033d7c3fc23b707730
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 6d45e3aa0d3bf938e43201aca969613876ef1f31
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185480"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218713"
 ---
 # <a name="migrate-from-symantec---phase-2-set-up-microsoft-defender-for-endpoint"></a>Eseguire la migrazione da Symantec - Fase 2: configurare Microsoft Defender per Endpoint
 
 **Si applica a:**
-- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 |[![Fase 1: preparare](images/phase-diagrams/prepare.png)](symantec-to-microsoft-defender-atp-prepare.md)<br/>[Fase 1: preparare](symantec-to-microsoft-defender-atp-prepare.md) |![Fase 2: configurazione](images/phase-diagrams/setup.png)<br/>Fase 2: configurazione |[![Fase 3: onboard](images/phase-diagrams/onboard.png)](symantec-to-microsoft-defender-atp-onboard.md)<br/>[Fase 3: onboard](symantec-to-microsoft-defender-atp-onboard.md) |
@@ -39,7 +39,7 @@ ms.locfileid: "51185480"
 ||*Sei qui!* | |
 
 
-**Benvenuti nella fase di installazione della [migrazione da Symantec a Microsoft Defender per Endpoint.](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)** Questa fase include i passaggi seguenti:
+**Benvenuti nella fase di installazione della [migrazione da Symantec a Microsoft Defender per Endpoint.](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)** Questa fase include i passaggi seguenti:
 1. [Abilitare o reinstallare Microsoft Defender Antivirus (per determinate versioni di Windows).](#enable-or-reinstall-microsoft-defender-antivirus-for-certain-versions-of-windows)
 2. [Abilita Microsoft Defender Antivirus](#enable-microsoft-defender-antivirus).
 3. [Ottenere gli aggiornamenti per Microsoft Defender Antivirus](#get-updates-for-microsoft-defender-antivirus).
@@ -228,5 +228,5 @@ Usando Configuration Manager e le raccolte di dispositivi, configura i criteri a
 
 ## <a name="next-step"></a>Passaggio successivo
 
-**Congratulazioni**! Hai completato la fase di installazione della [migrazione da Symantec a Microsoft Defender per Endpoint!](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)
+**Congratulazioni**! Hai completato la fase di installazione della [migrazione da Symantec a Microsoft Defender per Endpoint!](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)
 - [Passare alla fase 3: eseguire l'onboard in Microsoft Defender per Endpoint](symantec-to-microsoft-defender-atp-onboard.md)

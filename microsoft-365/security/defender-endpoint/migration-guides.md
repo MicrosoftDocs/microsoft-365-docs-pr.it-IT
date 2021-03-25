@@ -17,19 +17,19 @@ ms.reviewer: chriggs, depicker, yongrhee
 f1.keywords: NOCSH
 ms.date: 09/24/2020
 ms.technology: mde
-ms.openlocfilehash: 0f9508038dd49e6c2d14d8e33a4fd40dfdfe83cb
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: c191e2006f42eda215508ba961dcbeb1ea282078
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198654"
+ms.locfileid: "51218629"
 ---
 # <a name="make-the-switch-to-microsoft-defender-for-endpoint-and-microsoft-defender-antivirus"></a>Passare a Microsoft Defender for Endpoint e Microsoft Defender Antivirus
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -43,7 +43,7 @@ Se stai valutando la possibilità di passare da una soluzione di protezione dall
 |Non hai ancora una soluzione di protezione degli endpoint e vuoi saperne di più sul funzionamento di Microsoft Defender for Endpoint & Microsoft Defender Antivirus.  |[Laboratorio di valutazione di Microsoft Defender for Endpoint](evaluation-lab.md)   |
 |Hai Microsoft Defender for Endpoint & Microsoft Defender Antivirus e hai bisogno di assistenza per ottenere tutto ciò che è configurato e configurato.  |[Guida alla distribuzione di Microsoft Defender for Endpoint](deployment-phases.md)  |
 |Si prevede di eseguire la migrazione da McAfee Endpoint Security (McAfee) a Microsoft Defender per Endpoint & Microsoft Defender Antivirus. |[Passare da McAfee a Microsoft Defender for Endpoint](mcafee-to-microsoft-defender-migration.md) |
-|Si prevede di eseguire la migrazione da Symantec Endpoint Protection (Symantec) a Microsoft Defender per Endpoint & Microsoft Defender Antivirus. |[Passare da Symantec a Microsoft Defender per Endpoint](symantec-to-microsoft-defender-atp-migration.md) |
+|Si prevede di eseguire la migrazione da Symantec Endpoint Protection (Symantec) a Microsoft Defender per Endpoint & Microsoft Defender Antivirus. |[Passare da Symantec a Microsoft Defender per Endpoint](symantec-to-microsoft-defender-endpoint-migration.md) |
 |Si prevede di eseguire la migrazione da una soluzione di protezione degli endpoint non Microsoft (diversa da McAfee o Symantec) a Microsoft Defender per Endpoint & Microsoft Defender Antivirus. |[Passare a Microsoft Defender per Endpoint](switch-to-microsoft-defender-migration.md)   |
 |È stata eseguita la migrazione a Microsoft Defender per Endpoint & Microsoft Defender Antivirus ed è necessaria assistenza per i passaggi successivi, ad esempio la configurazione di funzionalità aggiuntive o l'ottimizzazione delle impostazioni di sicurezza. | [Gestire Microsoft Defender for Endpoint, post-migrazione](manage-atp-post-migration.md) |
 

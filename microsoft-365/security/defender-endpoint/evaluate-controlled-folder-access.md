@@ -13,12 +13,12 @@ ms.author: ellevin
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: e5da8ec3e4555af062aad1a4ebfa96d972bee23b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e965e1a882dadfb565231074165507a6727b45c1
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51065874"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218749"
 ---
 # <a name="evaluate-controlled-folder-access"></a>Valutare l'accesso controllato alle cartelle
 
@@ -76,5 +76,5 @@ Vedi [Proteggere le cartelle importanti con](controlled-folders.md) accesso cont
 ## <a name="see-also"></a>Vedere anche
 
 * [Proteggere le cartelle importanti con l'accesso controllato alle cartelle](controlled-folders.md)
-* [Valutare Microsoft Defender per Endpoint](evaluate-atp.md)
+* [Valutare Microsoft Defender per Endpoint](evaluate-mde.md)
 * [Usare la modalità di controllo](audit-windows-defender.md)

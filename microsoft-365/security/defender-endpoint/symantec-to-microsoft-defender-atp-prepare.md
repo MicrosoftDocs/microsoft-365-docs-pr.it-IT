@@ -21,17 +21,17 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 8784c8d608666946461ddc27aa2e7f2b740276a0
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 87da8a558e1295f793600aae2fdd836667374052
+ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185492"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51218725"
 ---
 # <a name="migrate-from-symantec---phase-1-prepare-for-your-migration"></a>Eseguire la migrazione da Symantec - Fase 1: preparare la migrazione
 
 **Si applica a:**
-- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 |![Fase 1: preparare](images/phase-diagrams/prepare.png)<br/>Fase 1: preparare |[![Fase 2: configurazione](images/phase-diagrams/setup.png)](symantec-to-microsoft-defender-atp-setup.md)<br/>[Fase 2: configurazione](symantec-to-microsoft-defender-atp-setup.md) |[![Fase 3: onboard](images/phase-diagrams/onboard.png)](symantec-to-microsoft-defender-atp-onboard.md)<br/>[Fase 3: onboard](symantec-to-microsoft-defender-atp-onboard.md) |
@@ -39,7 +39,7 @@ ms.locfileid: "51185492"
 |*Sei qui!*| | |
 
 
-**Benvenuti nella fase di preparazione della [migrazione da Symantec a Microsoft Defender for Endpoint.](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)** 
+**Benvenuti nella fase di preparazione della [migrazione da Symantec a Microsoft Defender for Endpoint.](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)** 
 
 Questa fase di migrazione include i passaggi seguenti:
 1. [Ottenere Microsoft Defender per Endpoint](#get-microsoft-defender-for-endpoint).
@@ -89,5 +89,5 @@ Per abilitare la comunicazione tra i dispositivi e Microsoft Defender for Endpoi
 
 ## <a name="next-step"></a>Passaggio successivo
 
-**Congratulazioni**! Hai completato la **fase di preparazione** della migrazione da [Symantec a Microsoft Defender per Endpoint!](symantec-to-microsoft-defender-atp-migration.md#the-migration-process)
+**Congratulazioni**! Hai completato la **fase di preparazione** della migrazione da [Symantec a Microsoft Defender per Endpoint!](symantec-to-microsoft-defender-endpoint-migration.md#the-migration-process)
 - [Procedere alla configurazione di Microsoft Defender per Endpoint.](symantec-to-microsoft-defender-atp-setup.md)
