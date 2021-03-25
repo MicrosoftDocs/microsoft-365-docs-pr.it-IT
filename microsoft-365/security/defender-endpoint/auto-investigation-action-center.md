@@ -19,12 +19,12 @@ ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs
 ms.date: 01/28/2021
 ms.technology: mde
-ms.openlocfilehash: 6caa1cfe08a20aa824d85966c104a25988b8be53
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: af9e9315088a8dd5da9740b33135551d28664ed7
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165358"
+ms.locfileid: "51186114"
 ---
 # <a name="visit-the-action-center-to-see-remediation-actions"></a>Visitare il centro notifiche per visualizzare le azioni di correzione
 
@@ -32,7 +32,7 @@ Durante e dopo un'indagine automatizzata, vengono identificate le azioni di corr
 
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 ## <a name="new-a-unified-action-center"></a>(NEW!) Un centro notifiche unificato
@@ -46,14 +46,14 @@ Nella tabella seguente viene confrontato il nuovo centro notifiche unificato con
 
 |Il nuovo centro notifiche unificato  |Centro notifiche precedente  |
 |---------|---------|
-|Elenca le azioni in sospeso e completate per i dispositivi e la posta elettronica in un'unica posizione <br/>([Microsoft Defender per Endpoint](microsoft-defender-advanced-threat-protection.md) più Microsoft Defender per Office [365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-atp))|Elenca le azioni in sospeso e completate per i dispositivi <br/> ([Solo Microsoft Defender per Endpoint)](microsoft-defender-advanced-threat-protection.md)   |
+|Elenca le azioni in sospeso e completate per i dispositivi e la posta elettronica in un'unica posizione <br/>([Microsoft Defender per Endpoint](microsoft-defender-endpoint.md) più Microsoft Defender per Office [365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-atp))|Elenca le azioni in sospeso e completate per i dispositivi <br/> ([Solo Microsoft Defender per Endpoint)](microsoft-defender-endpoint.md)   |
 |Si trova in:<br/>[https://security.microsoft.com/action-center](https://security.microsoft.com/action-center)         |Si trova in:<br/>[https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center)     |
 | Nel Centro sicurezza Microsoft 365 scegliere **Centro notifiche.** <p>:::image type="content" source="images/action-center-nav-new.png" alt-text="Passaggio al Centro notifiche nel Centro sicurezza Microsoft 365"::: | In Microsoft Defender Security Center scegli **Centro notifiche** indagini  >  **automatizzate.** <p>:::image type="content" source="images/action-center-nav-old.png" alt-text="Passaggio al centro notifiche dal Microsoft Defender Security Center":::  |
 
 Il centro notifiche unificato riunisce le azioni di correzione in Defender for Endpoint e Defender per Office 365. Definisce un linguaggio comune per tutte le azioni di correzione e offre un'esperienza di indagine unificata. 
 
 È possibile utilizzare il centro notifiche unificato se si dispone delle autorizzazioni appropriate e di una o più delle sottoscrizioni seguenti:
-- [Defender per endpoint](microsoft-defender-advanced-threat-protection.md)
+- [Defender per endpoint](microsoft-defender-endpoint.md)
 - [Defender per Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/office-365-atp)
 - [Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/mtp/microsoft-threat-protection) 
 

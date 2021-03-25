@@ -21,17 +21,17 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 71428db81d5cd98e02cdb7c878c1f60562653ae3
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: fb6edf33b02671396fa4d078770d5b502e59d087
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060898"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185516"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>Passare a Microsoft Defender per Endpoint - Fase 2: installazione
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 |[![Fase 1: preparare](images/phase-diagrams/prepare.png)](switch-to-microsoft-defender-prepare.md)<br/>[Fase 1: preparare](switch-to-microsoft-defender-prepare.md) |![Fase 2: configurazione](images/phase-diagrams/setup.png)<br/>Fase 2: configurazione |[![Fase 3: Onboard3](images/phase-diagrams/onboard.png)](switch-to-microsoft-defender-onboard.md)<br/>[Fase 3: onboard](switch-to-microsoft-defender-onboard.md) |
@@ -100,7 +100,7 @@ Se si usa Windows Server 2016 e si verificano problemi nell'abilitazione di Micr
 `mpcmdrun -wdenable`
 
 > [!TIP]
-> Serve ulteriore assistenza? Vedi [Microsoft Defender Antivirus in Windows Server.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016)
+> Ulteriore assistenza Vedi [Microsoft Defender Antivirus in Windows Server.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016)
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-on-windows-server"></a>Impostare Microsoft Defender Antivirus sulla modalità passiva in Windows Server
 

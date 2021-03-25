@@ -17,19 +17,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 88e8c232788fa05bd2fa95108d8a20b6a7a01283
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: d13f13872954978a14454d8f3c0e66970606bd21
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164694"
+ms.locfileid: "51185756"
 ---
 # <a name="evaluate-microsoft-defender-for-endpoint"></a>Valutare Microsoft Defender per Endpoint 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
@@ -59,4 +59,4 @@ Le protezioni di nuova generazione consentono di rilevare e bloccare le minacce 
 
 ## <a name="see-also"></a>Vedere anche
 
-[Panoramica di Microsoft Defender for Endpoint](microsoft-defender-advanced-threat-protection.md)
+[Panoramica di Microsoft Defender for Endpoint](microsoft-defender-endpoint.md)

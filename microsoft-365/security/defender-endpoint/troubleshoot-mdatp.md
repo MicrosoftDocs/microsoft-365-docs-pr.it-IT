@@ -1,6 +1,6 @@
 ---
 title: Risolvere i problemi relativi al servizio Microsoft Defender for Endpoint
-description: Trovare soluzioni e risolvere i problemi noti, ad esempio gli errori del server quando si tenta di accedere al servizio.
+description: Trovare soluzioni e soluzioni alternative a problemi noti, ad esempio errori del server quando si tenta di accedere al servizio.
 keywords: risolvere i problemi di microsoft Defender per l'endpoint, risolvere i problemi di Windows ATP, errore del server, accesso negato, credenziali non valide, nessun dato, portale dashboard, consenti, visualizzatore eventi
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: bd211a56ee9ed6aa871c8d55149247a4755bc863
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 112f682836da37ddfb51c103282518ff74563727
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064866"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186018"
 ---
 # <a name="troubleshoot-service-issues"></a>Risolvere i problemi relativi ai servizi
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
@@ -41,9 +41,9 @@ Se si verifica un errore del server quando si tenta di accedere al servizio, è 
 Configurare il browser per consentire i cookie.
 
 ## <a name="elements-or-data-missing-on-the-portal"></a>Elementi o dati mancanti nel portale
-Se alcuni elementi o dati dell'interfaccia utente non sono presenti in Microsoft Defender Security Center, è possibile che le impostazioni proxy lo blocchino.
+Se alcuni elementi o dati non sono presenti in Microsoft Defender Security Center, è possibile che le impostazioni proxy lo blocchino.
 
-Assicurarsi che sia `*.securitycenter.windows.com` incluso l'elenco di proxy consentiti.
+Assicurati che sia `*.securitycenter.windows.com` incluso l'elenco di proxy consentiti.
 
 
 > [!NOTE]
@@ -51,7 +51,7 @@ Assicurarsi che sia `*.securitycenter.windows.com` incluso l'elenco di proxy con
 
 ## <a name="microsoft-defender-for-endpoint-service-shows-event-or-error-logs-in-the-event-viewer"></a>Il servizio Microsoft Defender for Endpoint mostra i registri eventi o di errore nel Visualizzatore eventi
 
-Vedi l'argomento [Review events and errors using Event Viewer](event-error-codes.md) per un elenco degli ID evento segnalati dal servizio Microsoft Defender for Endpoint. L'argomento contiene anche i passaggi per la risoluzione dei problemi relativi agli errori degli eventi.
+Vedi Esaminare gli eventi e gli errori tramite il [Visualizzatore](event-error-codes.md) eventi per un elenco degli ID evento segnalati dal servizio Microsoft Defender per endpoint. L'articolo contiene anche i passaggi per la risoluzione dei problemi relativi agli errori degli eventi.
 
 ## <a name="microsoft-defender-for-endpoint-service-fails-to-start-after-a-reboot-and-shows-error-577"></a>Microsoft Defender for Endpoint service fails to start after a reboot and shows error 577
 

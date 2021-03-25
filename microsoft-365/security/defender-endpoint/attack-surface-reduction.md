@@ -15,19 +15,19 @@ ms.reviewer: sugamar, jcedola
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: 2bd8442dd8e119a57c490773b6e01a7c5f7adcac
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 62f1f5f2d47482f642f00c870b3e0f3112f5f639
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067381"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185768"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Usare le regole di riduzione della superficie di attacco per prevenire l'infezione da malware
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -112,7 +112,7 @@ Puoi impostare regole di riduzione della superficie di attacco per i dispositivi
 - Windows Server, [versione 1803 (Canale semestraale)](https://docs.microsoft.com/windows-server/get-started/whats-new-in-windows-server-1803) o versione successiva
 - [Windows Server 2019](https://docs.microsoft.com/windows-server/get-started-19/whats-new-19)
 
-Anche se le regole di riduzione della superficie di attacco non richiedono una licenza di [Windows E5,](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses)se si dispone di Windows E5, si ottengono funzionalità di gestione avanzate. Queste funzionalità disponibili solo in Windows E5 includono monitoraggio, analisi e flussi di lavoro disponibili in [Defender for Endpoint,](microsoft-defender-advanced-threat-protection.md)nonché funzionalità di creazione di report e configurazione nel Centro sicurezza [Microsoft 365.](https://docs.microsoft.com/microsoft-365/security/defender/overview-security-center) Queste funzionalità avanzate non sono disponibili con una licenza di Windows Professional o Windows E3. Tuttavia, se hai queste licenze, puoi usare il Visualizzatore eventi e i registri di Microsoft Defender Antivirus per esaminare gli eventi delle regole di riduzione della superficie di attacco.
+Anche se le regole di riduzione della superficie di attacco non richiedono una licenza di [Windows E5,](https://docs.microsoft.com/windows/deployment/deploy-enterprise-licenses)se si dispone di Windows E5, si ottengono funzionalità di gestione avanzate. Queste funzionalità disponibili solo in Windows E5 includono monitoraggio, analisi e flussi di lavoro disponibili in [Defender for Endpoint,](microsoft-defender-endpoint.md)nonché funzionalità di creazione di report e configurazione nel Centro sicurezza [Microsoft 365.](https://docs.microsoft.com/microsoft-365/security/defender/overview-security-center) Queste funzionalità avanzate non sono disponibili con una licenza di Windows Professional o Windows E3. Tuttavia, se hai queste licenze, puoi usare il Visualizzatore eventi e i registri di Microsoft Defender Antivirus per esaminare gli eventi delle regole di riduzione della superficie di attacco.
 
 ## <a name="review-attack-surface-reduction-events-in-the-microsoft-defender-security-center"></a>Esaminare gli eventi di riduzione della superficie di attacco in Microsoft Defender Security Center
 

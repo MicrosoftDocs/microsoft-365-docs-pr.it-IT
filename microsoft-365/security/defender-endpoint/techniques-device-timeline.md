@@ -16,18 +16,18 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d6e2c18bd3710e659b5f9887844bc92528da4607
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 6b080c209292c8cac1aa64d748926734f4be964c
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51062101"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185468"
 ---
 # <a name="techniques-in-the-device-timeline"></a>Tecniche nella sequenza temporale del dispositivo
 
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
 Puoi ottenere maggiori informazioni in un'indagine analizzando gli eventi che si sono verificati in un dispositivo specifico. Prima di tutto, seleziona il dispositivo di interesse [nell'elenco Dispositivi](machines-view-overview.md). Nella pagina del dispositivo puoi selezionare la scheda **Sequenza** temporale per visualizzare tutti gli eventi che si sono verificati nel dispositivo.

@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: d0b7b600e0880bacda3588598387e5b1e8c82958
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 0902dce0af3c101cbaf7ff526beb71e9f46a1bf4
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060741"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51187518"
 ---
 # <a name="deploy-supported-services"></a>Distribuire i servizi supportati
 
@@ -46,7 +46,7 @@ Una licenza di Microsoft 365 E5, E5 Security, A5 o A5 Security o una combinazion
 
 | Servizio supportato | Descrizione |
 | ------ | ------ |
-| Microsoft Defender ATP | Suite di endpoint protection basata su potenti sensori comportamentali, analisi cloud e intelligence per le minacce |
+| Microsoft Defender per endpoint | Suite di endpoint protection basata su potenti sensori comportamentali, analisi cloud e intelligence per le minacce |
 |Microsoft Defender per Office 365 | Protezione avanzata per le app e i dati in Office 365, inclusi la posta elettronica e altri strumenti di collaborazione |
 | Microsoft Defender per identità | Difendersi da minacce avanzate, identità compromesse e utenti malintenzionati che usano segnali di Active Directory correlati |
 | Microsoft Cloud App Security | Identificare e contrastare le minacce informatiche nei servizi cloud Microsoft e di terze parti |
@@ -67,7 +67,7 @@ La tabella seguente elenca il modo in cui ogni servizio supportato fornisce dati
 
 | Servizio | Dati (segnali & informazioni correlate) | Remediation & response scope |
 | ------ | ------ | ------ |
-| Microsoft Defender ATP | - Stati degli endpoint ed eventi non elaborati<br />- Rilevamenti e avvisi degli endpoint, tra cui antivirus, EDR, riduzione della superficie di attacco<br />- Informazioni su file e altre entità osservate sugli endpoint | Endpoint |
+| Microsoft Defender per endpoint | - Stati degli endpoint ed eventi non elaborati<br />- Rilevamenti e avvisi degli endpoint, tra cui antivirus, EDR, riduzione della superficie di attacco<br />- Informazioni su file e altre entità osservate sugli endpoint | Endpoint |
 |Microsoft Defender per Office 365 | - Stati della posta e delle cassette postali ed eventi non elaborati<br />- Rilevamenti di posta elettronica, allegati e collegamenti | - Cassette postali<br />- Account di Microsoft 365 |
 | Microsoft Defender per identità | - Segnali di Active Directory, inclusi gli eventi di autenticazione<br />- Rilevamenti comportamentali correlati all'identità | Identità |
 | Microsoft Cloud App Security | - Rilevamento di app e servizi cloud non sanzionati (IT shadow)<br />- Esposizione dei dati alle app cloud<br />- Attività di minacce associate alle app cloud | App cloud |
@@ -77,7 +77,7 @@ La distribuzione di ogni servizio richiede in genere il provisioning nel tenant 
 
 | Servizio | Istruzioni per il provisioning | Configurazione iniziale |
 | ------ | ------ | ------ |
-| Microsoft Defender ATP | [Guida alla distribuzione di Microsoft Defender for Endpoint](../defender-endpoint/deployment-phases.md) | *Vedere le istruzioni per il provisioning* |
+| Microsoft Defender per endpoint | [Guida alla distribuzione di Microsoft Defender for Endpoint](../defender-endpoint/deployment-phases.md) | *Vedere le istruzioni per il provisioning* |
 |Microsoft Defender per Office 365 | *Nessuno, provisioning con Office 365* | [Configurazione criteri di Microsoft Defender per Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365#configure-atp-policies) |
 | Microsoft Defender per identità | [Guida introduttiva: Creare l'istanza di Microsoft Defender for Identity](/azure-advanced-threat-protection/install-atp-step1) | *Vedere le istruzioni per il provisioning* |
 | Microsoft Cloud App Security | *Nessuna* | [Guida introduttiva: Introduzione a Microsoft Cloud App Security](/cloud-app-security/getting-started-with-cloud-app-security) |
@@ -88,7 +88,7 @@ Dopo aver distribuito i servizi supportati, [attivare Microsoft 365 Defender](m3
 
 - [Panoramica di Microsoft 365 Defender](microsoft-365-defender.md)
 - [Attivare Microsoft 365 Defender](m365d-enable.md)
-- [Panoramica di Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-advanced-threat-protection.md)
+- [Panoramica di Microsoft Defender for Endpoint](../defender-endpoint/microsoft-defender-endpoint.md)
 - [Panoramica di Microsoft Defender per Office 365](../defender-365-security/defender-for-office-365.md)
 - [Panoramica di Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)
 - [Panoramica di Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp)

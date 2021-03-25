@@ -17,19 +17,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f7b2157fe710df2226fa8e57020dab8f51f1a544
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 79db436c2017c00e1b5d669797c5fb025f651a8a
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063949"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51186234"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Applicazioni partner in Microsoft Defender per Endpoint 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -92,7 +92,7 @@ Logo |Nome partner   | Descrizione
 
 
 
-### <a name="network-security"></a>Sicurezza di rete
+### <a name="network-security"></a>Sicurezza della rete
 Logo |Nome partner   | Descrizione 
 :---|:---|:---
 ![Immagine del logo di Aruba ClearPass Policy Manager](images/aruba-logo.png) | [Aruba ClearPass Policy Manager](https://go.microsoft.com/fwlink/?linkid=2127544) | Assicurati che Defender for Endpoint sia installato e aggiornato in ogni endpoint prima di consentire l'accesso alla rete

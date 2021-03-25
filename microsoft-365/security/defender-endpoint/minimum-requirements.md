@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7581c606a7903bd6d32c1e192f35992899289f30
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c6afa48fcee80c0b8fb7ed0563264932566b6321
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51061397"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185792"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Requisiti minimi per Microsoft Defender per Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2146631)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -51,7 +51,7 @@ Microsoft Defender for Endpoint richiede una delle seguenti offerte di contratti
 - Microsoft 365 A5 (M365 A5)
 - Microsoft 365 E5 Security
 - Microsoft 365 A5 Security
-- Microsoft Defender ATP
+- Microsoft Defender per endpoint
 
 > [!NOTE]
 > Gli utenti con licenza idonea possono usare Microsoft Defender per Endpoint su un massimo di cinque dispositivi simultanei.
@@ -65,7 +65,7 @@ Microsoft Defender for Endpoint per i server richiede una delle opzioni di licen
 > [!NOTE]
 > I clienti possono acquisire licenze server (una per server OSE)) per Microsoft Defender for Endpoint for Servers se hanno un minimo combinato di 50 licenze per una o più delle licenze utente seguenti:
 >
-> * Microsoft Defender ATP
+> * Microsoft Defender per endpoint
 > * Windows E5/A5
 > * Microsoft 365 E5/A5
 > * Microsoft 365 E5/A5 Security

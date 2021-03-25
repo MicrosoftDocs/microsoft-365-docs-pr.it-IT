@@ -16,19 +16,19 @@ ms.reviewer: v-maave
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: ae50d53fbc9bf01d4cd16b939461eecc9ec1a568
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: cd662dc130adc37b3bf8bd06839242ccc9a49f8e
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165178"
+ms.locfileid: "51185970"
 ---
 # <a name="protect-important-folders-with-controlled-folder-access"></a>Proteggere le cartelle importanti con l'accesso controllato alle cartelle
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -40,7 +40,7 @@ L'accesso controllato alle cartelle consente di proteggere i dati importanti da 
 > [!NOTE]
 > I motori di script non sono attendibili e non è possibile consentire loro l'accesso alle cartelle protette controllate.  Ad esempio, PowerShell non è considerato attendibile dall'accesso controllato alle cartelle, anche se si consente con [indicatori di file e certificati.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/indicator-certificates) 
 
-L'accesso controllato alle cartelle funziona meglio con [Microsoft Defender for Endpoint,](microsoft-defender-advanced-threat-protection.md)che fornisce report dettagliati sugli eventi di accesso controllato alle cartelle e sui blocchi nell'ambito dei soliti scenari di analisi [degli avvisi.](investigate-alerts.md)
+L'accesso controllato alle cartelle funziona meglio con [Microsoft Defender for Endpoint,](microsoft-defender-endpoint.md)che fornisce report dettagliati sugli eventi di accesso controllato alle cartelle e sui blocchi nell'ambito dei soliti scenari di analisi [degli avvisi.](investigate-alerts.md)
 
 > [!TIP]
 > I blocchi di accesso controllato alle cartelle non generano avvisi nella [coda avvisi.](alerts-queue.md) Tuttavia, puoi visualizzare le informazioni sui blocchi di accesso controllato alle cartelle nella visualizzazione sequenza temporale del [dispositivo,](investigate-machines.md)usando la ricerca avanzata [o](advanced-hunting-overview.md)con regole di [rilevamento personalizzate.](custom-detection-rules.md)

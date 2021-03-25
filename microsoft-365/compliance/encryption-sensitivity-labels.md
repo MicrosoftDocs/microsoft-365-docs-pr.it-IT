@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Configurare etichette di riservatezza per la crittografia per proteggere i dati con restrizioni di accesso e utilizzo.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 4b5d25c51560cfe7a4d55419a7de9ce36321e78f
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: e8080a282ef734490214dc5f2b9e18a1946b314c
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034175"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51185827"
 ---
 # <a name="restrict-access-to-content-by-using-sensitivity-labels-to-apply-encryption"></a>Limitare l'accesso al contenuto utilizzando la crittografia nelle etichette di riservatezza
 
@@ -230,9 +230,9 @@ Per altre informazioni, prerequisiti e istruzioni di configurazione, vedere [Cri
 > [!IMPORTANT]
 > Non tutti i client di etichettatura supportano tutte le opzioni che consentono agli utenti di assegnare le loro autorizzazioni. Usare questa sezione per ulteriori informazioni.
 
-È possibile usare queste opzioni per consentire agli utenti di assegnare autorizzazioni quando applicano manualmente un'etichetta di riservatezza al contenuto:
+È possibile usare le opzioni seguenti per consentire agli utenti di assegnare autorizzazioni quando applicano manualmente un'etichetta di riservatezza al contenuto:
 
-- In Outlook, un utente può selezionare restrizioni equivalenti all'opzione [Non inoltrare](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) o [Solo crittografia](/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails) per determinati destinatari.
+- In Outlook, un utente può selezionare restrizioni equivalenti all'opzione [Non inoltrare](/azure/information-protection/configure-usage-rights#do-not-forward-option-for-emails) o [Solo crittografia](/azure/information-protection/configure-usage-rights#encrypt-only-option-for-emails) (attualmente in distribuzione) per determinati destinatari.
     
     L'opzione Non inoltrare è supportata da tutti i client di posta elettronica che supportano le etichette di riservatezza. Tuttavia, l'applicazione dell'opzione **Solo crittografia** con un'etichetta di riservatezza è una release recente supportata solo dall'etichettatura integrata e non dal client di etichettatura unificata di Azure Information Protection. L'etichetta non sarà visibile per i client di posta elettronica che non supportano questa funzionalità.
     
