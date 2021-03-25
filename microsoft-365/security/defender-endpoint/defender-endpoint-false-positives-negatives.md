@@ -23,12 +23,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: 85e9a47c0180fd7582b2bc107ddf7d78f57e6329
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3ef625e813961c09bb6f74d85fd5a7c8033f9c2a
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067274"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51183874"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Risolvere i falsi positivi/negativi in Microsoft Defender for Endpoint
 
@@ -36,7 +36,7 @@ ms.locfileid: "51067274"
 
 **Si applica a**
 
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2146806)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2146806)
 
 Nelle soluzioni di protezione degli endpoint, un falso positivo è un'entità, ad esempio un file o un processo, che è stata rilevata e identificata come dannosa, anche se l'entità non è effettivamente una minaccia. Un falso negativo è un'entità che non è stata rilevata come minaccia, anche se in realtà è dannosa. I falsi positivi/negativi possono verificarsi con qualsiasi soluzione di protezione dalle minacce, incluso [Microsoft Defender per Endpoint.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection)
 
@@ -55,7 +55,7 @@ Inoltre, è possibile ottenere assistenza se si verificano ancora problemi con [
 ![Passaggi per risolvere falsi positivi e negativi](images/false-positives-step-diagram.png)
 
 > [!NOTE]
-> Questo articolo è destinato agli operatori della sicurezza e agli amministratori della sicurezza che usano [Microsoft Defender per Endpoint.](microsoft-defender-advanced-threat-protection.md)
+> Questo articolo è destinato agli operatori della sicurezza e agli amministratori della sicurezza che usano [Microsoft Defender per Endpoint.](microsoft-defender-endpoint.md)
 
 ## <a name="part-1-review-and-classify-alerts"></a>Parte 1: esaminare e classificare gli avvisi
 
@@ -355,7 +355,7 @@ A seconda del [livello di automazione](https://docs.microsoft.com/microsoft-365/
 > [!IMPORTANT]
 > Ti consigliamo di *usare l'automazione* completa per l'analisi e la correzione automatizzate. Non disattivare queste funzionalità a causa di un falso positivo. Usa invece gli [indicatori "consenti"](#indicators-for-microsoft-defender-for-endpoint)per definire le eccezioni e mantieni l'analisi e la correzione automatizzate impostate per eseguire automaticamente le azioni appropriate. Seguire [queste indicazioni consente](automation-levels.md#levels-of-automation) di ridurre il numero di avvisi che il team delle operazioni di sicurezza deve gestire. 
 
-## <a name="still-need-help"></a>Serve ulteriore assistenza?
+## <a name="still-need-help"></a>Ulteriore assistenza
 
 Se hai seguito tutti i passaggi descritti in questo articolo e hai ancora bisogno di assistenza, contatta il supporto tecnico.
 
