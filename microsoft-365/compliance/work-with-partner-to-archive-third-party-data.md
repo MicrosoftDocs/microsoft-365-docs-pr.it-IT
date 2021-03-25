@@ -16,12 +16,12 @@ ms.collection: M365-security-compliance
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come configurare un connettore personalizzato per importare dati di terze parti da origini dati come Salesforce Chatter, Yahoo Messenger o Yammer.
-ms.openlocfilehash: adf6583f397296361e8f0cb6f12e7054436fa34f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6e93ff765129296f62b43c93937701169bbf4b03
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928380"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164941"
 ---
 # <a name="work-with-a-partner-to-archive-third-party-data"></a>Collaborare con un partner per archiviare i dati di terze parti
 
@@ -70,7 +70,7 @@ Nelle sezioni seguenti sono elencati i partner Microsoft (e le origini dati di t
   
 [ArchiveSocial](#archivesocial)
   
-[Globanet](#globanet)
+[Veritas](#veritas)
   
 [OpenText](#opentext)
   
@@ -142,9 +142,9 @@ Nelle sezioni seguenti sono elencati i partner Microsoft (e le origini dati di t
     
 - Vimeo
   
-### <a name="globanet"></a>Globanet
+### <a name="veritas"></a>Veritas
 
-[Globanet](https://www.globanet.com) supporta le origini dati di terze parti seguenti: 
+[Veritas](https://www.globanet.com) supporta le origini dati di terze parti seguenti: 
   
 - AOL con Pivot Client  
     
@@ -198,7 +198,7 @@ Nelle sezioni seguenti sono elencati i partner Microsoft (e le origini dati di t
     
 - Mobile Guard
     
-- Pivot
+- Documento principale
     
 - Salesforce Chatter
 
@@ -372,7 +372,7 @@ Nelle sezioni seguenti sono elencati i partner Microsoft (e le origini dati di t
     
 - Pinterest
     
-- Pivot
+- Documento principale
     
 - QQ
     

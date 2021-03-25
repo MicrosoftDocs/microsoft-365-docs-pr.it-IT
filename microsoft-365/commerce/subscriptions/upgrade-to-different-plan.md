@@ -20,12 +20,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Informazioni su come eseguire l'aggiornamento a un piano diverso.
-ms.openlocfilehash: 62d6da5713a7785fde9e795bc22956d73616c3c3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5f853dcd0d247a6422489cbe5d0287765bfd72a6
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924315"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164450"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Eseguire l'aggiornamento a un piano diverso
 
@@ -92,7 +92,7 @@ Se nella scheda Aggiornamento non  è presente alcun piano, significa che il pia
 
 #### <a name="you-cant-upgrade-subscriptions-now-because-you-have-more-users-than-licenses"></a>Non è possibile aggiornare le sottoscrizioni ora perché sono disponibili più utenti che licenze.
 
-Per aggiornare automaticamente i piani, a tutti gli utenti devono essere assegnate licenze valide. Se sono state assegnate più licenze di quante ne sono state acquistate, nella pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenze</a> verrà visualizzato un avviso che informa della presenza di un conflitto di licenze che deve essere risolto. [Informazioni su come risolvere i conflitti di licenza](../../admin/manage/resolve-license-conflicts.md). Dopo aver risolto eventuali conflitti di licenza, i piani dovrebbero essere elencati nella **scheda** Aggiornamento. In caso contrario, è possibile [modificare i piani manualmente](change-plans-manually.md)oppure chiamare il [supporto](../../admin/contact-support-for-business-products.md)tecnico.
+Per aggiornare automaticamente i piani, a tutti gli utenti devono essere assegnate licenze valide. Se sono state assegnate più licenze di quante ne sono state acquistate, nella pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenze</a> verrà visualizzato un avviso che informa della presenza di un conflitto di licenze che deve essere risolto. [Informazioni su come risolvere i conflitti di licenza](../../commerce/licenses/buy-licenses.md). Dopo aver risolto eventuali conflitti di licenza, i piani dovrebbero essere elencati nella **scheda** Aggiornamento. In caso contrario, è possibile [modificare i piani manualmente](change-plans-manually.md)oppure chiamare il [supporto](../../admin/contact-support-for-business-products.md)tecnico.
 
 #### <a name="you-cant-upgrade-subscriptions-right-now-because-this-subscription-isnt-fully-set-up-or-the-service-isnt-available"></a>Non è possibile aggiornare le sottoscrizioni al momento perché questa sottoscrizione non è completamente impostata o il servizio non è disponibile.
 

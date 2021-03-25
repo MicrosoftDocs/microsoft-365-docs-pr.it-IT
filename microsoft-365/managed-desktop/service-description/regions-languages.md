@@ -4,15 +4,20 @@ description: Aree geografiche e lingue supportate da Microsoft Managed Desktop
 keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
+f1.keywords:
+- NOCSH
 ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.openlocfilehash: 36766b162c703c87967a017eac84945dd936ca2b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+manager: laurawi
+ms.topic: article
+audience: Admin
+ms.openlocfilehash: 5fbf18247626bdfcfe5dcb04c8ba892ffa7a140f
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920409"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51163472"
 ---
 # <a name="microsoft-managed-desktop-supported-regions-and-languages"></a>Lingue e aree geografiche supportate da Microsoft Managed Desktop
 
@@ -23,7 +28,7 @@ In questo articolo vengono fornite informazioni dettagliate sulle aree geografic
 L'inglese è l'unica lingua disponibile per gli utenti di Microsoft Managed Desktop. Questo criterio include tutte le interfacce utente sia per gli utenti che per gli amministratori e tutte le interazioni con il supporto [dell'amministratore](../working-with-managed-desktop/admin-support.md) e [degli utenti.](../working-with-managed-desktop/end-user-support.md)
 
 
-È comunque possibile usare dispositivi gestiti al di fuori delle aree geografiche di lingua inglese senza interrompere il servizio Microsoft Managed Desktop. Ad esempio, un dipendente con sede nel Regno Unito può lavorare in modo sicuro e ricevere aggiornamenti sul dispositivo gestito mentre viaggia in Asia, Europa o Sud America. 
+Puoi comunque usare dispositivi gestiti al di fuori delle aree geografiche di lingua inglese senza alcuna interruzione del servizio Microsoft Managed Desktop. Ad esempio, un dipendente con sede nel Regno Unito può lavorare in modo sicuro e ricevere aggiornamenti sul dispositivo gestito mentre viaggia in Asia, Europa o Sud America. 
 
 Per ulteriori informazioni sul supporto degli utenti con Microsoft Managed Desktop, vedere [Support for Microsoft Managed Desktop](./support.md).
 

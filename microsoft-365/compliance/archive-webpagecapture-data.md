@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Gli amministratori possono configurare un connettore per importare e archiviare i dati di Acquisizione pagine Web da Globanet in Microsoft 365. Questo connettore consente di archiviare i dati da origini dati di terze parti in Microsoft 365, in modo da poter utilizzare funzionalità di conformità come il blocco legale, la ricerca di contenuto e i criteri di conservazione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: de1e181670f1efc2e758b666dc3a26337a294ee2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Gli amministratori possono configurare un connettore per importare e archiviare i dati di Acquisizione pagine Web da Veritas in Microsoft 365. Questo connettore consente di archiviare i dati da origini dati di terze parti in Microsoft 365, in modo da poter utilizzare funzionalità di conformità come il blocco legale, la ricerca di contenuto e i criteri di conservazione per gestire i dati di terze parti dell'organizzazione.
+ms.openlocfilehash: d37ed5fdb6995fa9333181d254b1fccd2b08b43b
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920800"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51163859"
 ---
 # <a name="set-up-a-connector-to-archive-webpage-data"></a>Configurare un connettore per archiviare i dati della pagina Web
 
-Utilizzare un connettore Globanet nel Centro conformità Microsoft 365 per importare e archiviare i dati dalle pagine Web alle cassette postali degli utenti nell'organizzazione di Microsoft 365. Globanet fornisce un [connettore di](https://globanet.com/webpage-capture) acquisizione pagine Web che acquisisce pagine Web specifiche (ed eventuali collegamenti in tali pagine) in un sito Web specifico o in un intero dominio. Il connettore converte il contenuto della pagina Web in formato PDF, PNG o personalizzato, quindi allega i file convertiti a un messaggio di posta elettronica e quindi importa tali elementi di posta elettronica nelle cassette postali degli utenti in Microsoft 365.
+Utilizzare un connettore Veritas nel Centro conformità Microsoft 365 per importare e archiviare i dati dalle pagine Web alle cassette postali degli utenti nell'organizzazione di Microsoft 365. Veritas fornisce un [connettore di](https://globanet.com/webpage-capture) acquisizione pagine Web che acquisisce pagine Web specifiche (ed eventuali collegamenti in tali pagine) in un sito Web specifico o in un intero dominio. Il connettore converte il contenuto della pagina Web in formato PDF, PNG o personalizzato, quindi allega i file convertiti a un messaggio di posta elettronica e quindi importa tali elementi di posta elettronica nelle cassette postali degli utenti in Microsoft 365.
 
 Dopo aver archiviato il contenuto delle pagine Web nelle cassette postali degli utenti, è possibile applicare le funzionalità di conformità di Microsoft 365, ad esempio conservazione per controversia legale, eDiscovery, criteri di conservazione ed etichette di conservazione. L'utilizzo di un connettore di acquisizione pagine Web per importare e archiviare dati in Microsoft 365 può aiutare l'organizzazione a rimanere conforme ai criteri governativi e normativi.
 
@@ -33,17 +33,17 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
 
 1. L'organizzazione collabora con l'origine della pagina Web per configurare un sito di acquisizione pagine Web.
 
-2. Una volta ogni 24 ore, gli elementi delle origini della pagina Web vengono copiati nel sito Globanet Merge1. Il connettore inoltre converte e allega il contenuto di una pagina Web a un messaggio di posta elettronica.
+2. Una volta ogni 24 ore, gli elementi delle origini della pagina Web vengono copiati nel sito Veritas Merge1. Il connettore inoltre converte e allega il contenuto di una pagina Web a un messaggio di posta elettronica.
 
-3. Il connettore di acquisizione pagine Web creato nel Centro conformità Microsoft 365, si connette al sito Globanet Merge1 ogni giorno e trasferisce gli elementi della pagina Web in una posizione sicura di Archiviazione di Azure nel cloud Microsoft.
+3. Il connettore di acquisizione pagine Web creato nel Centro conformità Microsoft 365 si connette ogni giorno al sito Veritas Merge1 e trasferisce gli elementi della pagina Web in una posizione sicura di Archiviazione di Azure nel cloud Microsoft.
 
-4. Il connettore importa gli elementi della pagina Web convertiti nelle cassette postali di utenti specifici utilizzando il valore della proprietà *Email* del mapping automatico degli utenti, come descritto nel [passaggio 3.](#step-3-map-users-and-complete-the-connector-setup) Nelle cassette postali degli utenti viene creata una sottocartella nella cartella Posta in arrivo denominata **Acquisizione** pagine Web e gli elementi della pagina Web vengono importati in tale cartella. Il connettore esegue questa operazione utilizzando il valore della *proprietà Email.* Ogni elemento della pagina Web contiene questa proprietà, che viene popolata con gli indirizzi di posta elettronica forniti quando si configura il connettore di acquisizione pagine Web [nel passaggio 2.](#step-2-configure-the-webpage-capture-connector-on-the-globanet-merge1-site)
+4. Il connettore importa gli elementi della pagina Web convertiti nelle cassette postali di utenti specifici utilizzando il valore della proprietà *Email* del mapping automatico degli utenti, come descritto nel [passaggio 3.](#step-3-map-users-and-complete-the-connector-setup) Nelle cassette postali degli utenti viene creata una sottocartella nella cartella Posta in arrivo denominata **Acquisizione** pagine Web e gli elementi della pagina Web vengono importati in tale cartella. Il connettore esegue questa operazione utilizzando il valore della *proprietà Email.* Ogni elemento della pagina Web contiene questa proprietà, che viene popolata con gli indirizzi di posta elettronica forniti quando si configura il connettore di acquisizione pagine Web [nel passaggio 2.](#step-2-configure-the-webpage-capture-connector-on-the-veritas-merge1-site)
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-- Creare un account Globanet Merge1 per i connettori Microsoft. Per creare questo account, contattare il [Supporto clienti Globanet.](https://globanet.com/ms-connectors-contact/) Si accederà a questo account quando si crea il connettore nel passaggio 1.
+- Creare un account Veritas Merge1 per i connettori Microsoft. Per creare questo account, contattare il [supporto tecnico Veritas.](https://www.veritas.com/content/support/) Si accederà a questo account quando si crea il connettore nel passaggio 1.
 
-- È necessario utilizzare il supporto di Globanet per configurare un formato di file personalizzato in cui convertire gli elementi della pagina Web. Per ulteriori informazioni, vedere il Manuale dell'utente di Merge1 Third-Party Connectors in 
+- È necessario utilizzare il supporto Veritas per configurare un formato di file personalizzato in cui convertire gli elementi della pagina Web. Per ulteriori informazioni, vedere [merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Web%20Page%20Capture%20User%20Guide%20.pdf).
 
 - L'utente che crea il connettore di acquisizione pagine Web nel passaggio 1 (e lo completa nel passaggio 3) deve essere assegnato al ruolo Di esportazione importazione cassette postali in Exchange Online. Questo ruolo è necessario per aggiungere connettori nella pagina **Connettori dati** nel Centro conformità Microsoft 365. Per impostazione predefinita, questo ruolo non viene assegnato a un gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo Esportazione importazione cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. In caso contrario, è possibile creare un gruppo di ruoli, assegnare il ruolo Importazione/Esportazione cassette postali e quindi aggiungere gli utenti appropriati come membri. Per ulteriori informazioni, vedere le sezioni [Create role groups](/Exchange/permissions-exo/role-groups#create-role-groups) o Modify role [groups](/Exchange/permissions-exo/role-groups#modify-role-groups) nell'articolo "Manage role groups in Exchange Online".
 
@@ -61,9 +61,9 @@ Il primo passaggio consiste nell'accedere ai **connettori** dati e creare un con
 
 5. Accedere all'account Merge1 per configurare il connettore.
 
-## <a name="step-2-configure-the-webpage-capture-connector-on-the-globanet-merge1-site"></a>Passaggio 2: Configurare il connettore di acquisizione pagine Web nel sito Globanet Merge1
+## <a name="step-2-configure-the-webpage-capture-connector-on-the-veritas-merge1-site"></a>Passaggio 2: Configurare il connettore di acquisizione pagine Web nel sito Veritas Merge1
 
-Il secondo passaggio consiste nel configurare il connettore di acquisizione pagine Web nel sito Globanet Merge1. Per informazioni su come configurare il connettore di acquisizione pagine Web, vedere [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Web%20Page%20Capture%20User%20Guide%20.pdf).
+Il secondo passaggio consiste nel configurare il connettore di acquisizione pagine Web nel sito Veritas Merge1. Per informazioni su come configurare il connettore di acquisizione pagine Web, vedere [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Web%20Page%20Capture%20User%20Guide%20.pdf).
 
 Dopo aver fatto **clic su Salva & fine,** viene visualizzata la pagina **Mapping** utenti nella procedura guidata del connettore nel Centro conformità Microsoft 365.
 

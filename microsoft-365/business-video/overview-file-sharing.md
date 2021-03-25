@@ -1,5 +1,5 @@
 ---
-title: Condividere i file aziendali - Panoramica
+title: Condividere i file aziendali - panoramica
 f1.keywords:
 - NOCSH
 ms.author: sirkkuw
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Panoramica su come condividere i file aziendali.
-ms.openlocfilehash: b481e7564625fcd019a53ba9116acdb724b4af61
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 6066bb2b1f1ea4fb4fac6a2d9d08dbd19d6cb7b0
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422364"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164598"
 ---
 # <a name="overview-of-sharing-business-files"></a>Panoramica della condivisione di file aziendali
 
@@ -34,16 +34,20 @@ ms.locfileid: "50422364"
 |![Condividere in modo sicuro](../media/securely-share-file.png)<br/>[Condividere un file con un utente esterno all'azienda](#share-a-file-with-someone-outside-of-your-company)|![Collaborare con un client](../media/share-and-collab-with-partner.png) <br/>[Condividere e collaborare con un client o un partner commerciale](#share-and-collaborate-with-a-client-or-business-partner) | ![Condividere all'interno dell'organizzazione](../media/share-inside-your-org.png) <br/>[Condividere all'interno dell'azienda](#share-inside-your-business) |
 |--|--|--|
 
+Scarica un'infografica per ottenere una breve panoramica dei modi per condividere i file aziendali. 
+
+[PDF](https://go.microsoft.com/fwlink/?linkid=2079435)  |  [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438)
+
 ## <a name="share-a-file-with-someone-outside-of-your-company"></a>Condividere un file con un utente esterno all'azienda
 
 - Condividere un file con un utente esterno all'azienda (ad esempio un cliente o un cliente) tramite posta elettronica se è necessario solo per passare in un modo.
-- Se è necessaria una risposta o si desidera che inserisca alcune informazioni e le invii di nuovo, è possibile usare SharePoint o Microsoft Teams per condividerle con un collegamento di modifica.
+- Se è necessaria una risposta o si desidera che inserisca alcune informazioni e le invii di nuovo, è possibile utilizzare SharePoint o Microsoft Teams per condividerle con un collegamento di modifica.
 
-Ulteriori informazioni su come condividere [file all'esterno](securely-share-files-externally.md) dell'organizzazione con collegamenti sicuri e su come condividere [file con un collegamento chiunque.](share-files-externally.md)
+Ulteriori informazioni su come condividere [file all'esterno dell'organizzazione](securely-share-files-externally.md) con collegamenti sicuri e su come [condividere file con un collegamento chiunque.](share-files-externally.md)
 
-## <a name="share-and-collaborate-with-a-client-or-business-partner"></a>Condividere e collaborare con un cliente o un partner commerciale
+## <a name="share-and-collaborate-with-a-client-or-business-partner"></a>Condividere e collaborare con un client o un partner commerciale
 
-Condivisione come parte di un progetto O come parte di una relazione continua con un partner commerciale o un fornitore? È possibile inserire ancora un po' di tempo e configurare un team in Microsoft Teams e avere un luogo in cui condividere e collaborare. È facile lavorare con persone esterne all'azienda ed è anche possibile configurare canali separati per altri fornitori o partner per mantenere tutto chiaro.
+Condividere come parte di un progetto? O come parte di una relazione continua con un partner commerciale o un fornitore? È possibile inserire solo un po' di tempo e configurare un team in Microsoft Teams e avere un luogo in cui condividere e collaborare. È facile lavorare con persone esterne all'azienda e puoi anche configurare canali separati per altri fornitori o partner per mantenere tutto chiaro.
 
 1. Creare il team.
 1. Caricare i file.
@@ -53,12 +57,12 @@ Ulteriori informazioni su come condividere [file all'esterno dell'organizzazione
 
 ## <a name="share-inside-your-business"></a>Condividere all'interno dell'azienda
 
-Se si lavora con i file condivisi all'interno dell'azienda, è anche una buona idea configurare un team in Microsoft Teams. Condividere i file in questa posizione e tutti gli utenti dell'azienda possono trovarli e modificarli facilmente e si sa che tutti stanno lavorando nella stessa pagina.
+Se si lavora con i file condivisi all'interno dell'azienda, è anche buona idea configurare un team in Microsoft Teams. Condividere i file in questa posizione e tutti gli utenti dell'azienda possono trovarli e modificarli facilmente e si sa che tutti stanno lavorando sulla stessa pagina.
 
 1. Creare il team e invitarlo.
 1. Caricare i file.
 
-Altre informazioni [sull'archiviazione dei file aziendali e](https://support.microsoft.com/office/e4d98e10-3532-4eed-85d6-92728454e32b) sui file dei [dipendenti.](https://support.microsoft.com/office/12dbe3e4-dbef-48f8-a90e-87f1bc607073)
+Ulteriori informazioni [sull'archiviazione dei file aziendali e](https://support.microsoft.com/office/e4d98e10-3532-4eed-85d6-92728454e32b) [sull'archiviazione dei file dei dipendenti.](https://support.microsoft.com/office/12dbe3e4-dbef-48f8-a90e-87f1bc607073)
 
 ## <a name="how-to-get-it-done"></a>Come farlo
 
@@ -68,7 +72,3 @@ Serve aiuto? Scopri come:
 - [Condividere file e cartelle con OneDrive](https://support.microsoft.com/en-us/office/share-files-and-folders-with-microsoft-365-business-72f26d6c-bf9e-432c-8b96-e3c2437f5b65)
 - [Creare un team a livello aziendale](https://support.microsoft.com/en-us/office/create-an-org-wide-team-037bb27a-bcc9-48fe-8d72-44d9482420a3)
 - [Aggiungere utenti guest a un team](https://support.microsoft.com/en-us/office/add-guests-to-a-team-in-teams-fccb4fa6-f864-4508-bdde-256e7384a14f)
-
-Scarica un'infografica per ottenere una rapida panoramica dei modi per condividere i file aziendali. 
-
-[PDF](https://go.microsoft.com/fwlink/?linkid=2079435)  |  [PowerPoint](https://go.microsoft.com/fwlink/?linkid=2079438)

@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: e81e09d2-cd52-4212-8550-5405864b6d62
 ROBOTS: NOINDEX
 description: Comprendere i motivi per cui a volte il cambio di piano deve essere eseguito manualmente o chiamando il supporto.
-ms.openlocfilehash: d13b7290f4b5f9aede7406cf76ee60cac262c814
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0880337e4879c093119b98f4d0108ca65c17e705
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922269"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164462"
 ---
 # <a name="why-cant-i-switch-microsoft-365-for-business-plans"></a>Perché non è possibile cambiare piano di Microsoft 365 per le aziende?
 
@@ -63,19 +63,19 @@ Se il pulsante Cambia  piano non è visualizzato, il piano non può essere commu
 
 ::: moniker range="o365-worldwide"
 
-Per cambiare piano automaticamente con il pulsante **Cambia piano**, a tutti gli utenti devono essere assegnate licenze valide. Se sono state assegnate più licenze di quante ne sono state acquistate, nella pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenze</a> verrà visualizzato un avviso che informa della presenza di un conflitto di licenze che deve essere risolto. [Informazioni su come risolvere i conflitti di licenza](../../admin/manage/resolve-license-conflicts.md). Dopo aver risolto i conflitti di licenza, dovrebbe essere visualizzato il pulsante **Cambia piano**. In caso contrario, è possibile [cambiare piano manualmente](switch-plans-manually.md)o chiamare il [supporto](../../admin/contact-support-for-business-products.md)tecnico.
+Per cambiare piano automaticamente con il pulsante **Cambia piano**, a tutti gli utenti devono essere assegnate licenze valide. Se sono state assegnate più licenze di quante ne sono state acquistate, nella pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenze</a> verrà visualizzato un avviso che informa della presenza di un conflitto di licenze che deve essere risolto. [Informazioni su come risolvere i conflitti di licenza](../../commerce/licenses/buy-licenses.md). Dopo aver risolto i conflitti di licenza, dovrebbe essere visualizzato il pulsante **Cambia piano**. In caso contrario, è possibile [cambiare piano manualmente](switch-plans-manually.md)o chiamare il [supporto](../../admin/contact-support-for-business-products.md)tecnico.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-Per cambiare piano automaticamente con il pulsante **Cambia piano**, a tutti gli utenti devono essere assegnate licenze valide. Se sono state assegnate più licenze di quante ne sono state acquistate, nella pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenze</a> verrà visualizzato un avviso che informa della presenza di un conflitto di licenze che deve essere risolto. [Informazioni su come risolvere i conflitti di licenza](../../admin/manage/resolve-license-conflicts.md). Dopo aver risolto i conflitti di licenza, dovrebbe essere visualizzato il pulsante **Cambia piano**. In caso contrario, è possibile [cambiare piano manualmente](switch-plans-manually.md)o chiamare il [supporto](../../admin/contact-support-for-business-products.md)tecnico.
+Per cambiare piano automaticamente con il pulsante **Cambia piano**, a tutti gli utenti devono essere assegnate licenze valide. Se sono state assegnate più licenze di quante ne sono state acquistate, nella pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=848038" target="_blank">Licenze</a> verrà visualizzato un avviso che informa della presenza di un conflitto di licenze che deve essere risolto. [Informazioni su come risolvere i conflitti di licenza](../../commerce/licenses/buy-licenses.md). Dopo aver risolto i conflitti di licenza, dovrebbe essere visualizzato il pulsante **Cambia piano**. In caso contrario, è possibile [cambiare piano manualmente](switch-plans-manually.md)o chiamare il [supporto](../../admin/contact-support-for-business-products.md)tecnico.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-Per cambiare piano automaticamente con il pulsante **Cambia piano**, a tutti gli utenti devono essere assegnate licenze valide. Se sono state assegnate più licenze di quante ne sono state acquistate, nella pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenze</a> verrà visualizzato un avviso che informa della presenza di un conflitto di licenze che deve essere risolto. [Informazioni su come risolvere i conflitti di licenza](../../admin/manage/resolve-license-conflicts.md). Dopo aver risolto i conflitti di licenza, dovrebbe essere visualizzato il pulsante **Cambia piano**. In caso contrario, è possibile [cambiare piano manualmente](switch-plans-manually.md)o chiamare il [supporto](../../admin/contact-support-for-business-products.md)tecnico.
+Per cambiare piano automaticamente con il pulsante **Cambia piano**, a tutti gli utenti devono essere assegnate licenze valide. Se sono state assegnate più licenze di quante ne sono state acquistate, nella pagina <a href="https://go.microsoft.com/fwlink/p/?linkid=850625" target="_blank">Licenze</a> verrà visualizzato un avviso che informa della presenza di un conflitto di licenze che deve essere risolto. [Informazioni su come risolvere i conflitti di licenza](../../commerce/licenses/buy-licenses.md). Dopo aver risolto i conflitti di licenza, dovrebbe essere visualizzato il pulsante **Cambia piano**. In caso contrario, è possibile [cambiare piano manualmente](switch-plans-manually.md)o chiamare il [supporto](../../admin/contact-support-for-business-products.md)tecnico.
 
 ::: moniker-end
 

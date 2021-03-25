@@ -18,12 +18,12 @@ ms.collection:
 - M365-security-compliance
 description: Che si tratta di aggiungere nuove soluzioni al Centro conformità, aggiornare le funzionalità esistenti in base ai commenti e suggerimenti o inviare documentazione aggiornata e aggiornata, Microsoft 365 consente di rimanere al top del panorama di conformità in continua evoluzione. Scopri cosa abbiamo fatto fino a questo mese.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: ed29ad5186972f56609a596d88a48c7c460f295f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c695bc2632e766eb6f14c4e9f7eabbbddff66fd2
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905858"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51164975"
 ---
 # <a name="whats-new-in-microsoft-365-compliance"></a>Novità sulla conformità Microsoft 365
 
@@ -33,7 +33,7 @@ Che si tratta dell'aggiunta di nuove soluzioni al Centro conformità [Microsoft 
 > Alcune funzionalità di conformità vengono implementazioni a velocità diverse per i clienti. Se non vedi ancora una funzionalità, prova ad aggiungerti alla [versione mirata.](/office365/admin/manage/release-options-in-office-365)
 
 > [!TIP]
-> Ti interessa cosa succede in altre centri di amministrazione? Vedere questi articoli:<br>[Novità nell'interfaccia di amministrazione di Microsoft 365](/office365/admin/whats-new-in-preview)<br>[Novità nell'interfaccia di amministrazione di SharePoint](/sharepoint/what-s-new-in-admin-center)<br>[Novità di Microsoft 365 Defender](../security/mtp/whats-new.md)<br><br>
+> Ti interessa cosa succede in altre centri di amministrazione? Vedere questi articoli:<br>[Novità nell'interfaccia di amministrazione di Microsoft 365](/office365/admin/whats-new-in-preview)<br>[Novità nell'interfaccia di amministrazione di SharePoint](/sharepoint/what-s-new-in-admin-center)<br>[Novità di Microsoft 365 Defender](../security/defender/whats-new.md)<br><br>
 E visitare la roadmap di [Microsoft 365](https://www.microsoft.com/en-us/microsoft-365/roadmap) per informazioni sulle funzionalità di Microsoft 365 avviate, in fase di implementazione, in fase di sviluppo, annullate o rilasciate in precedenza.
 
 ## <a name="january-2021"></a>Gennaio 2021
@@ -78,7 +78,7 @@ Flusso di lavoro e funzionalità migliorate per l'aggiunta di [custodi](add-cust
 
 ### <a name="data-connectors"></a>Connettori dati
 
-[Rilasciati quattro nuovi connettori Globanet:](archiving-third-party-data.md#third-party-data-connectors)Redtail Speak, Salesforce Chatter, ServiceNow e Yieldbroker.
+[Quattro nuovi connettori Veritas](archiving-third-party-data.md#third-party-data-connectors)rilasciati: Redtail Speak, Salesforce Chatter, ServiceNow e Yieldbroker.
 
 ### <a name="encryption"></a>Crittografia
 
@@ -122,7 +122,7 @@ Per semplificare la gestione del contenuto crittografato nel flusso di lavoro di
 
 ### <a name="data-connectors"></a>Connettori dati
 
-[Cinque nuovi connettori Globanet in anteprima.](archiving-third-party-data.md#third-party-data-connectors) I nuovi connettori includono Reuters Dealing, Reuters FX, CellTrust, XIP, DATI GENERICI SQL database.
+[Cinque nuovi connettori Veritas in anteprima.](archiving-third-party-data.md#third-party-data-connectors) I nuovi connettori includono Reuters Dealing, Reuters FX, CellTrust, XIP, DATI GENERICI SQL database.
 
 ### <a name="retention-labels-disposition-review"></a>Etichette di conservazione (revisione dell'eliminazione)
 
@@ -169,7 +169,7 @@ Guarda il video seguente per scoprire come Compliance Manager può semplificare 
 
 ### <a name="data-connectors"></a>Connettori dati
 
-- [Nuovi connettori dati di terze parti](archiving-third-party-data.md#third-party-data-connectors). 25 nuovi connettori dati, inclusi 14 connettori da Globanet e 8 da Telemessage.
+- [Nuovi connettori dati di terze parti](archiving-third-party-data.md#third-party-data-connectors). 25 nuovi connettori dati, inclusi 14 connettori da Veritas e 8 da Telemessage.
 - [Connettore di badging fisico](import-physical-badging-data.md). Importare dati di badging fisici, ad esempio gli eventi di accesso fisico non elaborati dei dipendenti o eventuali allarmi di accesso fisico generati dal sistema di protezione da errori dell'organizzazione. Tra gli esempi sono incluse le voci relative a edifici, sale server o data center. I dati di badging fisico possono essere utilizzati dalla soluzione di gestione dei rischi insider per proteggere l'organizzazione da attività dannose o furti di dati all'interno dell'organizzazione.
 
 ### <a name="insider-risk-management"></a>Gestione dei rischi Insider
@@ -200,7 +200,7 @@ Questa nuova funzionalità è inclusa nelle funzionalità seguenti:
 > [!NOTE]
 > Per tutte le funzionalità, se fornisci almeno 30 risposte di feedback, creeremo una versione con training di tale classificatore che puoi esaminare. In caso di miglioramenti, è possibile ripubblicare il classificatore.
 
-- [Classificatori addestrabili](classifier-learn-about.md#retraining-classifiers). Per migliorare l'accuratezza dei classificatori pubblicati, puoi fornire un feedback sull'eventuale corrispondenza degli elementi rilevati con il classificatore.
+- [Classificatori sottoponibili a training](classifier-learn-about.md#retraining-classifiers) Per migliorare l'accuratezza dei classificatori pubblicati, puoi fornire un feedback sull'eventuale corrispondenza degli elementi rilevati con il classificatore.
 - [Conformità delle comunicazioni](classifier-how-to-retrain-comms-compliance.md). La nuova **azione Migliora correzione** classificazione consente di fornire un feedback se un elemento di un avviso di conformità alle comunicazioni corrisponde al classificatore configurato nei criteri di conformità delle comunicazioni.
 - [Esplora contenuto](classifier-how-to-retrain-content-explorer.md). Se si configura un criterio di etichettatura automatica di conservazione per applicare automaticamente le etichette ai messaggi di posta elettronica che corrispondono a classificatori addestrabili, è possibile utilizzare Esplora contenuto per esaminare gli elementi etichettati e fornire feedback se gli elementi corrispondono al classificatore.
 

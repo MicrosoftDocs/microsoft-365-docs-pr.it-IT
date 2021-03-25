@@ -11,17 +11,17 @@ ms.topic: how-to
 ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
-description: Gli amministratori possono configurare un connettore per importare e archiviare i dati da Workplace da Facebook, archiviato nel sito Merge1 di Globanet, in Microsoft 365. La configurazione di un connettore richiede l'utilizzo di Globanet Questo connettore consente di archiviare i dati da origini dati di terze parti in Microsoft 365, in modo da poter utilizzare funzionalità di conformità come il blocco legale, la ricerca di contenuto e i criteri di conservazione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: 843e758430b1fe05ac2977c5a06f12838c81cd42
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Gli amministratori possono configurare un connettore per importare e archiviare i dati da Workplace da Facebook, archiviato nel sito Merge1 di Veritas, in Microsoft 365. La configurazione di un connettore richiede l'utilizzo di Veritas Questo connettore consente di archiviare i dati da origini dati di terze parti in Microsoft 365, in modo da poter utilizzare funzionalità di conformità come il blocco legale, la ricerca di contenuto e i criteri di conservazione per gestire i dati di terze parti dell'organizzazione.
+ms.openlocfilehash: 25221b1d71fe106f0f6dcf9c629414aeb0de8709
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923384"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51163830"
 ---
 # <a name="set-up-a-connector-to-archive-workplace-from-facebook-data"></a>Configurare un connettore per archiviare Workplace dai dati di Facebook
 
-Utilizzare un connettore Globanet nel Centro conformità Microsoft 365 per importare e archiviare i dati da Workplace da Facebook alle cassette postali degli utenti nell'organizzazione di Microsoft 365. Globanet fornisce un connettore [Workplace da Facebook](https://globanet.com/workplace/) configurato per acquisire elementi dall'origine dati di terze parti (regolarmente) e importare tali elementi in Microsoft 365. Il connettore converte il contenuto, ad esempio chat, allegati, post e video da Workplace in un formato di messaggio di posta elettronica e quindi importa tali elementi nelle cassette postali degli utenti in Microsoft 365.
+Utilizzare un connettore Veritas nel Centro conformità Microsoft 365 per importare e archiviare i dati da Workplace da Facebook alle cassette postali degli utenti nell'organizzazione di Microsoft 365. Veritas fornisce un connettore [Workplace da Facebook](https://globanet.com/workplace/) configurato per acquisire elementi dall'origine dati di terze parti (regolarmente) e importare tali elementi in Microsoft 365. Il connettore converte il contenuto, ad esempio chat, allegati, post e video da Workplace in un formato di messaggio di posta elettronica e quindi importa tali elementi nelle cassette postali degli utenti in Microsoft 365.
 
 Dopo aver archiviato i dati di Workplace nelle cassette postali degli utenti, è possibile applicare le funzionalità di conformità di Microsoft 365, ad esempio conservazione per controversia legale, eDiscovery, criteri di conservazione ed etichette di conservazione e conformità delle comunicazioni. L'uso del connettore Workplace da Facebook per importare e archiviare i dati in Microsoft 365 può aiutare l'organizzazione a rimanere conforme ai criteri normativi e governativi.
 
@@ -33,15 +33,15 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
 
 1. L'organizzazione collabora con Workplace da Facebook per configurare e configurare un sito di Workplace.
 
-2. Una volta ogni 24 ore, gli elementi di Workplace vengono copiati nel sito Globanet Merge1. Il connettore converte anche il contenuto di questi elementi in un formato di messaggio di posta elettronica.
+2. Una volta ogni 24 ore, gli elementi di Workplace vengono copiati nel sito Veritas Merge1. Il connettore converte anche il contenuto di questi elementi in un formato di messaggio di posta elettronica.
 
-3. Il connettore Workplace from Facebook creato nel Centro conformità Microsoft 365, si connette ogni giorno a Globanet Merge1 e trasferisce gli elementi di Workplace in una posizione sicura di Archiviazione di Azure nel cloud Microsoft.
+3. Il connettore Workplace from Facebook creato nel Centro conformità Microsoft 365, si connette ogni giorno a Veritas Merge1 e trasferisce gli elementi di Workplace in una posizione sicura di Archiviazione di Azure nel cloud Microsoft.
 
 4. Il connettore importa gli elementi convertiti nelle cassette postali di utenti specifici utilizzando il valore della proprietà *Email* del mapping automatico degli utenti, come descritto nel passaggio 3. Viene creata una sottocartella nella cartella Posta in arrivo denominata **Workplace da Facebook** e gli elementi di Workplace vengono importati in tale cartella. Il connettore esegue questa operazione utilizzando il valore della *proprietà Email.* Ogni elemento workplace contiene questa proprietà, che viene popolata con l'indirizzo di posta elettronica di ogni partecipante di chat o post.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-- Creare un account Globanet Merge1 per i connettori Microsoft. Per creare questo account, contattare il [Supporto clienti Globanet.](https://globanet.com/ms-connectors-contact) Si accederà a questo account quando si crea il connettore nel passaggio 1.
+- Creare un account Veritas Merge1 per i connettori Microsoft. Per creare questo account, contattare il [supporto tecnico Veritas.](https://globanet.com/ms-connectors-contact) Si accederà a questo account quando si crea il connettore nel passaggio 1.
 
 - Creare un'integrazione personalizzata in per recuperare i dati da Workplace tramite API per https://my.workplace.com/work/admin/apps/ conformità ed eDiscovery.
 
@@ -63,7 +63,7 @@ Il primo passaggio consiste nell'accedere alla pagina **Connettori** dati nel Ce
 
 5. Accedere all'account Merge1 per configurare il connettore.
 
-## <a name="step-2-configure-the-workplace-from-facebook-connector-on-the-globanet-merge1-site"></a>Passaggio 2: Configurare il connettore Workplace from Facebook nel sito Globanet Merge1
+## <a name="step-2-configure-the-workplace-from-facebook-connector-on-the-veritas-merge1-site"></a>Passaggio 2: Configurare il connettore Workplace da Facebook nel sito Veritas Merge1
 
 Il secondo passaggio consiste nel configurare Workplace dal connettore Facebook nel sito Merge1. Per informazioni su come configurare Workplace dal connettore Facebook, vedere [Merge1 Third-Party Connectors User Guide](https://docs.ms.merge1.globanetportal.com/Merge1%20Third-Party%20Connectors%20Workplace%20from%20Facebook%20User%20Guide%20.pdf).
 
