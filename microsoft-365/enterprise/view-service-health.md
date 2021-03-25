@@ -26,12 +26,12 @@ search.appverid:
 - IWA160
 ms.assetid: 932ad3ad-533c-418a-b938-6e44e8bc33b0
 description: Visualizzare lo stato di integrità dei servizi di Microsoft 365 prima di chiamare il supporto per verificare se è attiva un'interruzione del servizio.
-ms.openlocfilehash: 3802ca01902d5b0d457d2a3d75b784d38f71bd42
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 30b677a80e5a08d75534a91aa04d735443660f18
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924685"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51215481"
 ---
 # <a name="how-to-check-microsoft-365-service-health"></a>Come verificare l'integrità dei servizi di Microsoft 365
 
@@ -47,7 +47,7 @@ Se non è possibile accedere all'interfaccia di [](https://status.office365.com)
 1. Accedere all'interfaccia di amministrazione di Microsoft 365 all'indirizzo [https://admin.microsoft.com](https://go.microsoft.com/fwlink/p/?linkid=2024339) e accedere con un account amministratore.
 
     > [!NOTE]
-    > Gli utenti a cui è assegnato il ruolo di amministratore globale o amministratore del servizio possono visualizzare le informazioni sull'integrità dei servizi. Per consentire agli amministratori di Exchange, SharePoint e Skype for Business di visualizzare tali informazioni, è necessario assegnare anche a loro il ruolo di amministratore del servizio. Per ulteriori informazioni sui ruoli che possono visualizzare l'integrità del servizio, vedere [Informazioni sui ruoli di amministratore.](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#roles-available-in-the-microsoft-365-admin-center)
+    > Gli utenti a cui è assegnato il ruolo di amministratore globale o amministratore del servizio possono visualizzare le informazioni sull'integrità dei servizi. Per consentire agli amministratori di Exchange, SharePoint e Skype for Business di visualizzare tali informazioni, è necessario assegnare anche a loro il ruolo di amministratore del servizio. Per ulteriori informazioni sui ruoli che possono visualizzare l'integrità del servizio, vedere [Informazioni sui ruoli di amministratore.](../admin/add-users/about-admin-roles.md?preserve-view=true&view=o365-worldwide#commonly-used-microsoft-365-admin-center-roles)
   
 2. Se non si utilizza la nuova interfaccia di amministrazione, nella **home** page selezionare l'interruttore Prova la nuova interfaccia di **amministrazione** nell'angolo superiore destro.
 
@@ -153,4 +153,5 @@ Per ulteriori informazioni sull'impegno per il tempo di attività, vedere [Trans
 ## <a name="related-topics"></a>Argomenti correlati
 
 [Report attività nell'interfaccia di amministrazione di Microsoft 365](https://support.office.com/article/0d6dfb17-8582-4172-a9a9-aed798150263) 
- [Preferenze centro messaggi](../admin/manage/message-center.md?preserve-view=true&view=o365-worldwide#preferences11)
+ [Preferenze centro messaggi](../admin/manage/message-center.md?preserve-view=true&view=o365-worldwide#preferences)<br/>
+[Come controllare l'integrità dei rilasci di Windows nell'interfaccia di amministrazione](https://docs.microsoft.com/windows/deployment/update/check-release-health)

@@ -13,12 +13,12 @@ ms.collection:
 - M365-security-compliance
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 423840ae62d0531da76044238bbeef05078a82c8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cc526371fdf12314f762c885ba1775fcf3f00d00
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907989"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51215553"
 ---
 # <a name="microsoft-365-productivity-illustrations"></a>Illustrazioni sulla produttività di Microsoft 365
 
@@ -33,7 +33,7 @@ L'architettura logica dei servizi di produttività in Microsoft 365, con Microso
 
 
 ### <a name="groups-in-microsoft-365-for-it-architects"></a>Gruppi in Microsoft 365 per architetti IT
-Cosa devono sapere gli architetti IT sui gruppi di Microsoft 365
+Questa illustrazione include informazioni per gli architetti IT sui gruppi di Microsoft 365. Per informazioni sulla configurazione e l'amministrazione di gruppi e team di Microsoft 365 per la collaborazione nell'organizzazione, vedere [Set up secure collaboration with Microsoft 365](/microsoft-365/solutions/setup-secure-collaboration-with-teams) e What is collaboration [governance?](/microsoft-365/solutions/collaboration-governance-overview).
 
 | Elemento | Descrizione |
 |:-----|:-----|
@@ -52,7 +52,7 @@ Questo set di illustrazioni usa uno dei settori più regolamentati, i servizi fi
 
 
 ### <a name="security-and-information-protection-for-multi-region-organizations"></a>Protezione della sicurezza e delle informazioni per le organizzazioni multi-area
-Protezione della sicurezza e delle informazioni per le organizzazioni multi-area con un singolo tenant di Microsoft 365
+Sicurezza e protezione delle informazioni per organizzazioni con più aree con un singolo tenant di Microsoft 365
 
 | Elemento | Descrizione |
 |:-----|:-----|

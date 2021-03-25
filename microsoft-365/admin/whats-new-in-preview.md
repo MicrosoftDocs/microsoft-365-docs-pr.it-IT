@@ -21,12 +21,12 @@ description: 'Interfaccia di amministrazione di Microsoft 365: informazioni sull
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: 833f782e071e06d837ca5eacfcb72e2d6e16c8fb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b670c6a333485bc3a19ae14b8e7c71f08181cac5
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913935"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51215577"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novità nell'interfaccia di amministrazione di Microsoft 365
 
@@ -48,6 +48,7 @@ E se si desidera sapere quali sono le novità con altri servizi cloud Microsoft:
 - [Novità di Microsoft 365 Defender](../security/mtp/whats-new.md)
 - [Novità nell'interfaccia di amministrazione di SharePoint](/sharepoint/what-s-new-in-admin-center)
 - [Aggiornamenti di Office](/OfficeUpdates/)
+- [Come controllare l'integrità dei rilasci di Windows](https://docs.microsoft.com/windows/deployment/update/check-release-health)
 
 ## <a name="ignite-2021-march"></a>Ignite 2021 (marzo)
 
@@ -426,7 +427,7 @@ Howdy, Partners! (Non ho potuto fare a me stesso.) Abbiamo anche un aggiornament
 1. Il cliente riceve un messaggio di posta elettronica di invito con un collegamento per accettare la relazione con il partner e l'mca.
 2. Dopo l'accesso, il cliente può visualizzare e accettare le autorizzazioni mca e partner, direttamente dall'interfaccia di amministrazione.
 
-### <a name="resource-mailboxes"></a>Cassette postali per la risorsa
+### <a name="resource-mailboxes"></a>Cassette postali per le risorse
 
 L'elenco Cassette postali risorsa è stato aggiornato al nuovo stile. Nell'interfaccia di amministrazione di Microsoft 365, andare a **Risorse** \> **Sale & attrezzature**.
 

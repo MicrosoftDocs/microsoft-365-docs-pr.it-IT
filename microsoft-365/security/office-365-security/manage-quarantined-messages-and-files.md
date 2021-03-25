@@ -19,12 +19,12 @@ ms.custom:
 description: Gli amministratori possono imparare a visualizzare e gestire i messaggi in quarantena per tutti gli utenti in Exchange Online Protection (EOP). Gli amministratori delle organizzazioni con Microsoft Defender per Office 365 possono anche gestire i file in quarantena in SharePoint Online, OneDrive for Business e Microsoft Teams.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 8c606daccfd037cad4d894ab7f33ff02fcf172b5
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 3dee441a3442454c5f2978422d18a2084f8377f3
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205345"
+ms.locfileid: "51215538"
 ---
 # <a name="manage-quarantined-messages-and-files-as-an-admin-in-eop"></a>Gestire i messaggi e i file messi in quarantena come amministratore in EOP
 
@@ -197,6 +197,8 @@ Dopo aver selezionato un messaggio, sono disponibili diverse opzioni per le azio
 
 - **Scarica il messaggio**: nel riquadro a comparsa visualizzato, selezionare **Sono consapevole dei rischi associati al download di questo messaggio** per salvare una copia locale del messaggio in formato .eml.
 
+- **Blocca mittente**: in questo modo il mittente non può inviare messaggi di posta elettronica alla cassetta postale del destinatario dell'amministratore.
+
 - **Invia messaggio**: nel riquadro a comparsa visualizzato scegliere le opzioni seguenti:
 
   - **Tipo di oggetto**: **Posta** elettronica (impostazione predefinita), **URL** o **Allegato.**
@@ -307,6 +309,6 @@ I cmdlet utilizzati per visualizzare e gestire i messaggi e i file in quarantena
 
 - [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage)
 
-- [Preview-QuarantineMessage:](/powershell/module/exchange/preview-quarantinemessage)si noti che questo cmdlet è solo per i messaggi, non per i file di malware provenienti da Allegati sicuri per SharePoint, OneDrive e Microsoft Teams.
+- [Preview-QuarantineMessage:](/powershell/module/exchange/preview-quarantinemessage)questo cmdlet è valido solo per i messaggi e non per i file in quarantena di Allegati sicuri per SharePoint, OneDrive e Microsoft Teams.
 
 - [Release-QuarantineMessage](/powershell/module/exchange/release-quarantinemessage)
