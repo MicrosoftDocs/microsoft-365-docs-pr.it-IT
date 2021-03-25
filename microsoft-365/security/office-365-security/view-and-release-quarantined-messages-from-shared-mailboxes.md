@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: Gli utenti possono imparare a visualizzare e agire sui messaggi in quarantena inviati alle cassette postali condivise per cui dispongono delle autorizzazioni.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9490a9d5b2b4191d6c039be2758e2e0ba0c981cd
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6e3bf4c84e7a762f7f54f42ff61f0fbdb9dc1edd
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206252"
+ms.locfileid: "51215505"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>Visualizzare e rilasciare i messaggi in quarantena dalle cassette postali condivise
 
@@ -50,6 +50,8 @@ Indipendentemente dal metodo, gli utenti possono evitare confusione includendo l
 - Il primo utente che agisce sul messaggio in quarantena decide la sorte del messaggio per tutti gli utenti che utilizzano la cassetta postale condivisa. Ad esempio, se si accede a una cassetta postale condivisa da 10 utenti e un utente decide di eliminare il messaggio di quarantena, il messaggio viene eliminato per tutti e 10 gli utenti. Analogamente, se un utente decide di rilasciare il messaggio, viene rilasciato nella cassetta postale condivisa ed è accessibile da tutti gli altri utenti della cassetta postale condivisa.
 
 - Attualmente, il **pulsante Blocca** mittente  non è disponibile nel riquadro a comparsa Dettagli per i messaggi in quarantena inviati alla cassetta postale condivisa.
+
+- Per quanto riguarda le operazioni di quarantena per le cassette postali condivise, se si utilizzano gruppi di sicurezza annidati per concedere l'accesso a una cassetta postale condivisa, è consigliabile non più di due livelli di gruppi annidati. Ad esempio, il gruppo A è un membro del Gruppo B, membro del Gruppo C. Per assegnare le autorizzazioni a una cassetta postale condivisa, non aggiungere l'utente al gruppo A e quindi assegnare il gruppo C alla cassetta postale condivisa.  
 
 - Per gestire i messaggi in quarantena per la cassetta postale condivisa in PowerShell di [Exchange Online,](/powershell/exchange/connect-to-exchange-online-powershell)l'utente finale dovrà utilizzare il cmdlet [Get-QuarantineMessage](/powershell/module/exchange/get-quarantinemessage) con l'indirizzo di posta elettronica della cassetta postale condivisa per il valore del parametro _RecipientAddress_ per identificare i messaggi. Ad esempio:
 

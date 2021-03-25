@@ -24,12 +24,12 @@ search.appverid:
 - GEA150
 ms.assetid: 758befc4-0888-4009-9f14-0d147402fd23
 description: Usare l'interfaccia di amministrazione per configurare l'organizzazione nel cloud e gestire utenti e abbonamenti. Per iniziare, accedere all'account con autorizzazioni di amministratore.
-ms.openlocfilehash: dca9e5dd4cc8a35721014fa06c0bb844b608778c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7d326629de4859819784af015292f99b044658d0
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903549"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51215493"
 ---
 # <a name="about-the-microsoft-365-admin-center"></a>Informazioni sull'interfaccia di amministrazione di Microsoft 365
 
@@ -84,7 +84,7 @@ Ecco le funzionalità e le impostazioni disponibili nel riquadro di spostamento 
 |**Impostazioni** <br/> |In questa pagina è possibile gestire le impostazioni globali per app come la posta elettronica, i siti e la famiglia di prodotti Office, cambiare i criteri delle password e la data di scadenza, aggiungere e aggiornare i nomi di dominio, come contoso.com, cambiare il profilo dell'organizzazione e le preferenze di rilascio, nonché scegliere se i partner possono accedere o meno all'interfaccia di amministrazione.  <br/> |
 |**Configurazione** <br/> |Qui è possibile gestire i domini esistenti, attivare e gestire l'autenticazione a più fattori, gestire l'accesso dell'amministratore, eseguire la migrazione delle cassette postali degli utenti in Office 365, gestire gli aggiornamenti delle funzionalità e aiutare gli utenti a installare le app di Office. |
 |**Report** <br/> |Scopri a colpo d'occhio come l'organizzazione usa Microsoft 365 con report dettagliati sull'uso della posta elettronica, sulle attivazioni di Office e altro ancora. Vedere come si usano i nuovi [report attività](../activity-reports/activity-reports.md).  <br/> |
-|**Integrità** <br/> |Consente di visualizzare lo stato di integrità dei servizi a colpo d'occhio, oltre ad altri dettagli e alla cronologia dell'integrità dei servizi. Vedere [Come verificare l'integrità dei servizi](../../enterprise/view-service-health.md).  <br/> Usare il Centro messaggi per tenersi aggiornati sulle imminenti modifiche a funzionalità e servizi. Vengono pubblicati annunci con informazioni utili per prepararsi al cambiamento e comprendere l'impatto che può avere sugli utenti. Per altre informazioni, vedere [Centro messaggi in Office 365](../manage/message-center.md).  <br/> |
+|**Integrità** <br/> |Visualizzare l'integrità a colpo d'occhio. Puoi anche consultare altri dettagli e la cronologia dell'integrità. Per [altre informazioni, vedi Come controllare l'integrità](https://docs.microsoft.com/microsoft-365/enterprise/view-service-health) del servizio e Come [controllare l'integrità dei rilasci](https://docs.microsoft.com/windows/deployment/update/check-release-health) di Windows.  <br/><br/>Usare il Centro messaggi per tenersi aggiornati sulle imminenti modifiche a funzionalità e servizi. Vengono pubblicati annunci con informazioni utili per prepararsi al cambiamento e comprendere l'impatto che può avere sugli utenti. Per ulteriori dettagli, vedere [Centro messaggi](../manage/message-center.md). <br/> |
 |**Interfacce di amministrazione** <br/> |Consente di aprire interfacce di amministrazione distinte per Exchange, Skype for Business, SharePoint, Yammer e Azure AD. Ogni interfaccia di amministrazione include tutte le impostazioni disponibili per il servizio corrispondente.  <br/> Ad esempio, nell'interfaccia di amministrazione di Exchange è possibile configurare e gestire la posta elettronica, i calendari, i gruppi di distribuzione e altro ancora. Nell'interfaccia di amministrazione di SharePoint è possibile creare e gestire raccolte siti, le impostazioni dei siti e OneDrive for Business. Nell'interfaccia di amministrazione di Skype for Business è possibile configurare le notifiche di messaggistica istantanea, le conferenze telefoniche con accesso esterno e la presenza online.  <br/> Vedere le informazioni sull'[interfaccia di amministrazione di Exchange](/exchange/exchange-admin-center) e sull' [interfaccia di amministrazione di SharePoint](/sharepoint/sharepoint-online).<br/> **Nota:** le interfacce di amministrazione disponibili variano in base al piano e all'area geografica.           |
    
 ## <a name="common-tasks-in-the-admin-center"></a>Attività comuni nell'interfaccia di amministrazione
