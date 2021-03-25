@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Informazioni su come spostare l'azienda in Microsoft 365 Business Premium da Office 365 E3.
-ms.openlocfilehash: 3f9fd70b2d31b32027981e638de249d92e98ea08
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: cb70260201686cae02428c715ac98ffe2f88787f
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164534"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198098"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migrazione da Office 365 E3 a Microsoft 365 Business Premium
 
@@ -122,7 +122,7 @@ Microsoft 365 Business Premium ha un limite di archiviazione di 50 GB in quanto 
 
 ### <a name="threat-protection"></a>Protezione dalle minacce
 
-Dopo la migrazione a Microsoft 365 Business Premium, si dispone di Defender per Office 365. Per [una panoramica, vedere Microsoft Defender per Office 365.](../security/defender-365-security/defender-for-office-365.md) Per la configurazione, vedere [set up Safe Links,](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa) [set up Safe Attachments](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)e set [up Anti-phishing in Defender for Office 365.](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)
+Dopo la migrazione a Microsoft 365 Business Premium, si dispone di Defender per Office 365. Per [una panoramica, vedere Microsoft Defender per Office 365.](../security/office-365-security/defender-for-office-365.md) Per la configurazione, vedere [set up Safe Links,](https://support.microsoft.com/office/61492713-53c2-47da-a6e7-fa97479e97fa) [set up Safe Attachments](https://support.microsoft.com/office/e7e68934-23dc-4b9c-b714-e82e27a8f8a5)e set [up Anti-phishing in Defender for Office 365.](https://support.microsoft.com/office/86c425e1-1686-430a-9151-f7176cce4f2c)
 
 ### <a name="sensitivity-labels"></a>Etichette di riservatezza
 

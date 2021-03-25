@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 25f1a177571862e92c502b584bbd51801141069a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 8940d1dd370f804f8539bf4e753b1112d3c8d3bf
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068661"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198198"
 ---
 # <a name="emailpostdeliveryevents"></a>EmailPostDeliveryEvents
 
@@ -58,8 +58,8 @@ Per ottenere ulteriori informazioni sui singoli messaggi di posta elettronica, �
 ## <a name="supported-event-types"></a>Tipi di evento supportati
 Questa tabella acquisisce gli eventi con i valori `ActionType` seguenti:
 
-- **Correzione manuale: un** amministratore ha preso manualmente un'azione su un messaggio di posta elettronica dopo che è stato recapitato alla cassetta postale dell'utente. Sono incluse le azioni eseguite manualmente tramite [Threat Explorer](../defender-365-security/threat-explorer.md) o le approvazioni di azioni di indagine e [risposta automatizzate (AIR).](m365d-autoir-actions.md)
-- **Phish ZAP-** [Zero-hour auto purge (ZAP)](../defender-365-security/zero-hour-auto-purge.md) ha preso azione su un messaggio di posta elettronica di phishing dopo il recapito.
+- **Correzione manuale: un** amministratore ha preso manualmente un'azione su un messaggio di posta elettronica dopo che è stato recapitato alla cassetta postale dell'utente. Sono incluse le azioni eseguite manualmente tramite [Threat Explorer](../office-365-security/threat-explorer.md) o le approvazioni di azioni di indagine e [risposta automatizzate (AIR).](m365d-autoir-actions.md)
+- **Phish ZAP-** [Zero-hour auto purge (ZAP)](../office-365-security/zero-hour-auto-purge.md) ha preso azione su un messaggio di posta elettronica di phishing dopo il recapito.
 - **MALWARE ZAP** : l'eliminazione automatica di zero ore (ZAP) ha preso azione su un messaggio di posta elettronica trovato contenente malware dopo il recapito.
 
 ## <a name="related-topics"></a>Argomenti correlati

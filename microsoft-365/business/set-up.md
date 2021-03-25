@@ -30,12 +30,12 @@ search.appverid:
 - MET150
 ms.assetid: 6e7a2dfd-8ec4-4eb7-8390-3ee103e5fece
 description: Scopri i passaggi di configurazione per Microsoft 365 Business Premium, tra cui l'aggiunta di un dominio e di utenti, la configurazione dei criteri di sicurezza e altro ancora.
-ms.openlocfilehash: 4d49ba7ccdb65691756aaa505d0856deb115595b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a06fb48ef5e1386a5c7b4df08500125f37943df6
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052235"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198443"
 ---
 # <a name="set-up-microsoft-365-business-premium-in-the-setup-wizard"></a>Configurare Microsoft 365 Business Premium nella configurazione guidata
 
@@ -107,7 +107,7 @@ Per configurare i servizi, occorre aggiornare alcuni record presso l'host DNS o 
 
 I criteri impostati nella procedura guidata vengono applicati automaticamente a un [gruppo di sicurezza](/office365/admin/create-groups/compare-groups#security-groups) denominato Tutti gli *utenti.* È inoltre possibile creare gruppi aggiuntivi a cui assegnare criteri nell'interfaccia di amministrazione.
 
-1. Nella pagina Aumentare la protezione dalle **minacce informatiche** avanzate è consigliabile accettare le impostazioni predefinite per consentire a [Office 365 Advance Threat Protection](../security/defender-365-security/defender-for-office-365.md) di analizzare file e collegamenti nelle app di Office.
+1. Nella pagina Aumentare la protezione dalle **minacce informatiche** avanzate è consigliabile accettare le impostazioni predefinite per consentire a [Office 365 Advance Threat Protection](../security/office-365-security/defender-for-office-365.md) di analizzare file e collegamenti nelle app di Office.
 
     ![Screenshot della pagina Aumenta protezione.](../media/increasetreatprotection.png)
 

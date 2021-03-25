@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: ab5eb117-0f22-4fa7-a662-3a6bdb0add74
 description: Configurare l'inoltro della posta elettronica a uno o più account di posta elettronica tramite Office365.
-ms.openlocfilehash: cdefab3df59f1c57abbc221943b58c978ff582a9
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: d7c9a37a066bd53e541cf623c1953fb572827b61
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050715"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197864"
 ---
 # <a name="configure-email-forwarding-in-microsoft-365"></a>Configurare l'inoltro della posta elettronica in Microsoft 365
 
@@ -42,7 +42,7 @@ ms.locfileid: "51050715"
 L'amministratore di un'organizzazione potrebbe avere requisiti aziendali per configurare l'inoltro della posta elettronica per la cassetta postale di un utente. L'inoltro della posta elettronica consente di inoltrare i messaggi inviati alla cassetta postale di un utente a quella di un altro utente all'interno o all'esterno dell'organizzazione.
 
 > [!IMPORTANT]
-> È possibile utilizzare i criteri di filtro della posta indesiderata in uscita per controllare l'inoltro automatico ai destinatari esterni. Per ulteriori informazioni, vedere [Control automatic external email forwarding in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/external-email-forwarding?view=o365-worldwide&preserve-view=true#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls).
+> È possibile utilizzare i criteri di filtro della posta indesiderata in uscita per controllare l'inoltro automatico ai destinatari esterni. Per ulteriori informazioni, vedere [Control automatic external email forwarding in Microsoft 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/external-email-forwarding?view=o365-worldwide&preserve-view=true#how-the-outbound-spam-filter-policy-settings-work-with-other-automatic-email-forwarding-controls).
 
 ## <a name="configure-email-forwarding"></a>Configurare l'inoltro della posta elettronica
 

@@ -13,12 +13,12 @@ ms.collection:
 - m365initiative-compliance
 localization_priority: Normal
 description: Informazioni sulle attività che consentono di iniziare rapidamente a utilizzare la conformità in Microsoft 365.
-ms.openlocfilehash: b8a6f98a38dcb6096287cbc2389648c0e7457e5c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 503e15c8b363dcd63c010d31384565f6e1a8af61
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052104"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197923"
 ---
 # <a name="quick-tasks-for-getting-started-with-microsoft-365-compliance"></a>Attività rapide per iniziare a usare il Centro conformità Microsoft 365
 
@@ -34,13 +34,13 @@ Dopo aver completato queste attività di conformità di base, è consigliabile e
 
 Per iniziare, assegnare autorizzazioni di conformità alle persone dell'organizzazione in modo che possano eseguire queste attività e impedire a persone non autorizzate di accedere ad aree esterne alle proprie responsabilità. Prima di iniziare a configurare e implementare soluzioni  di conformità incluse  in Microsoft 365, è necessario assicurarsi di aver assegnato le persone appropriate all'amministratore dei dati di conformità e ai ruoli di amministratore di conformità. Sarà inoltre necessario assegnare gli utenti al ruolo di lettore globale di Azure Active Directory per visualizzare i dati in Compliance Manager.
 
-Per istruzioni dettagliate sulla configurazione delle autorizzazioni e sull'assegnazione delle persone ai ruoli di amministratore, vedere Autorizzazioni nel [Centro sicurezza & conformità.](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md)
+Per istruzioni dettagliate sulla configurazione delle autorizzazioni e sull'assegnazione delle persone ai ruoli di amministratore, vedere Autorizzazioni nel [Centro sicurezza & conformità.](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
 
 ## <a name="task-2-know-your-state-of-compliance"></a>Attività 2: conoscere lo stato di conformità
 
 È difficile sapere dove andare se non si sa dove si trova. Soddisfare le esigenze di conformità include la comprensione del livello di rischio corrente e degli aggiornamenti che potrebbero essere necessari in questi tempi in continua evoluzione. Sia che l'organizzazione non sia nuova ai requisiti di conformità o abbia una profonda esperienza con gli standard e le normative che regolano il settore, l'unica cosa migliore da fare per migliorare la conformità è capire dove si trova l'organizzazione.
 
-[Microsoft Compliance Manager consente](compliance-manager.md) di comprendere la posizione di conformità dell'organizzazione ed evidenziare le aree che potrebbero richiedere miglioramenti. Compliance Manager usa un dashboard centralizzato per calcolare un punteggio basato sul rischio, misurando i progressi nel completamento di azioni che consentono di ridurre i rischi relativi alla protezione dei dati e agli standard normativi. È inoltre possibile utilizzare Compliance Manager come strumento per tenere traccia di tutte le valutazioni dei rischi. Offre funzionalità di flusso di lavoro che consentono di completare in modo efficiente le valutazioni dei rischi tramite uno strumento comune.
+[Microsoft Compliance Manager consente](compliance-manager.md) di comprendere la posizione di conformità dell'organizzazione ed evidenziare le aree che potrebbero richiedere miglioramenti. Compliance Manager usa un dashboard centralizzato per calcolare un punteggio basato sul rischio, misurando i progressi nel completamento di azioni che consentono di ridurre i rischi relativi alla protezione dei dati e agli standard normativi. È inoltre possibile utilizzare Compliance Manager come strumento per tenere traccia di tutte le valutazioni dei rischi. Fornisce funzionalità del flusso di lavoro che consentono di completare in modo efficiente la valutazione dei rischi tramite uno strumento comune.
 
 Per istruzioni dettagliate per iniziare a usare Compliance Manager, vedere [Introduzione a Compliance Manager.](compliance-manager-setup.md)
 
@@ -49,7 +49,7 @@ Per istruzioni dettagliate per iniziare a usare Compliance Manager, vedere [Intr
 >
 >Controllare il punteggio di protezione di [Microsoft 365](../security/defender/microsoft-secure-score.md) nel Centro sicurezza Microsoft 365 e completare le attività descritte negli articoli seguenti:
 >
-> - [Roadmap per la sicurezza - Priorità principali per i primi 30 giorni, 90 giorni e oltre](../security/defender-365-security/security-roadmap.md)
+> - [Roadmap per la sicurezza - Priorità principali per i primi 30 giorni, 90 giorni e oltre](../security/office-365-security/security-roadmap.md)
 > - [Le 12 attività principali per i team di sicurezza per supportare il lavoro da casa](../security/top-security-tasks-for-remote-work.md)
 
 ## <a name="task-3-enable-auditing-for-your-organization"></a>Attività 3: Abilitare il controllo per l'organizzazione

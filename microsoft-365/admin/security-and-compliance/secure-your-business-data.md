@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Proteggere la posta elettronica aziendale e i dati da minacce informatiche, inclusi ransomware, phishing e allegati dannosi. '
-ms.openlocfilehash: 7affa7a2adaa166861c2932ebe32177335236114
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e45130d101c6e730fd2d487f5f8898c7cd268ab8
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050679"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197852"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>10 modi principali per proteggere i piani di Microsoft 365 per le aziende
 
@@ -132,7 +132,7 @@ L'ambiente Microsoft 365 include la protezione dal malware, ma è possibile aume
 
 6. Selezionare **Salva.**
 
-Per ulteriori informazioni, vedere [Protezione antimalware in EOP.](https://docs.microsoft.com/microsoft-365/security/defender-365-security/anti-malware-protection)
+Per ulteriori informazioni, vedere [Protezione antimalware in EOP.](https://docs.microsoft.com/microsoft-365/security/office-365-security/anti-malware-protection)
 
 ## <a name="5-protect-against-ransomware"></a>5: Proteggere da ransomware
 <a name="ransomware"> </a>
@@ -170,7 +170,7 @@ Per creare una regola di trasporto della posta, visualizzare [un breve video di 
 > [!TIP]
 > È inoltre possibile aggiungere i file che si desidera bloccare all'elenco antimalware [nel passaggio 4.](#4-raise-the-level-of-protection-against-malware-in-mail)
 
-Per ulteriori informazioni, vedere:
+Per altre informazioni, vedere:
 
 - [Ransomware: come ridurre i rischi](https://www.microsoft.com/security/blog/2020/04/28/ransomware-groups-continue-to-target-healthcare-critical-services-heres-how-to-reduce-risk/)
 
@@ -254,7 +254,7 @@ Per creare un criterio anti-phishing in Defender per Office 365, visualizzare un
 
 4. Nella pagina Anti-phishing selezionare **+ Crea**. Viene avviata una procedura guidata che illustra come definire i criteri anti-phishing.
 
-5. Specifica il nome, la descrizione e le impostazioni per i criteri, come consigliato nel grafico seguente. Per ulteriori informazioni, vedere Informazioni [sui criteri anti-phishing in Microsoft Defender per le opzioni di Office 365.](https://docs.microsoft.com/microsoft-365/security/defender-365-security/set-up-anti-phishing-policies)
+5. Specifica il nome, la descrizione e le impostazioni per i criteri, come consigliato nel grafico seguente. Per ulteriori informazioni, vedere Informazioni [sui criteri anti-phishing in Microsoft Defender per le opzioni di Office 365.](https://docs.microsoft.com/microsoft-365/security/office-365-security/set-up-anti-phishing-policies)
 
 6. Dopo aver esaminato le impostazioni, selezionare **Crea questo criterio** o **Salva**, in base alle esigenze.
 
@@ -270,7 +270,7 @@ Per creare un criterio anti-phishing in Defender per Office 365, visualizzare un
 |Applicato a|Selezionare **Il dominio del destinatario è**. In **Uno dei seguenti**, selezionare **Scegli**. Selezionare **+ Aggiungi**. Selezionare la casella di controllo accanto al nome del dominio, ad esempio contoso.com, nell'elenco e quindi selezionare **Aggiungi**. Scegliere **Fatto**.|
 |
 
-Per ulteriori informazioni, vedere [Set up anti-phishing policies in Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/configure-atp-anti-phishing-policies).
+Per ulteriori informazioni, vedere [Set up anti-phishing policies in Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies).
 
 ## <a name="9-protect-against-malicious-attachments-and-files-with-safe-attachments"></a>9: Proteggere da allegati e file dannosi con allegati sicuri
 <a name="atp"> </a>
@@ -302,7 +302,7 @@ Per creare un criterio allegati sicuri, visualizzare un [breve video di formazio
 |Applicato a|Il dominio del destinatario è . . . selezionare il dominio.|
 |
 
-Per ulteriori informazioni, vedere [Set up anti-phishing policies in Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/defender-365-security/configure-atp-anti-phishing-policies).
+Per ulteriori informazioni, vedere [Set up anti-phishing policies in Defender for Office 365](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-atp-anti-phishing-policies).
 
 ## <a name="10-protect-against-phishing-attacks-with-safe-links"></a>10: Proteggere da attacchi di phishing con collegamenti sicuri
 <a name="phishingatp"> </a>
@@ -349,4 +349,4 @@ Per creare un nuovo criterio destinato a tutti i destinatari del dominio:
 |Applicato a|Il dominio del destinatario è . . . selezionare il dominio.|
 |
 
-Per ulteriori informazioni, vedere [Collegamenti sicuri in Microsoft Defender per Office 365.](https://docs.microsoft.com/microsoft-365/security/defender-365-security/atp-safe-links)
+Per ulteriori informazioni, vedere [Collegamenti sicuri in Microsoft Defender per Office 365.](https://docs.microsoft.com/microsoft-365/security/office-365-security/atp-safe-links)

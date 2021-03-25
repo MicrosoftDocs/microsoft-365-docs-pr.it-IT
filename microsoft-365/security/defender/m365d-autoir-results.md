@@ -22,12 +22,12 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 02/08/2021
-ms.openlocfilehash: 3d278c7fd06b2dd14bd9a8c0dcbe639d3c911828
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 05208dd8ba893d65db50430861ad5dd5ad9d34fb
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060717"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198970"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Dettagli e risultati di un'indagine automatizzata
 
@@ -42,7 +42,7 @@ Con Microsoft 365 Defender, quando viene eseguita un'indagine automatizzata, i d
 
 ## <a name="new-unified-investigation-page"></a>(NEW!) Pagina analisi unificata
 
-La pagina di indagine è stata aggiornata di recente per includere informazioni su dispositivi, posta elettronica e contenuti di collaborazione. La nuova pagina di indagine unificata definisce un linguaggio comune e offre un'esperienza unificata per le indagini automatiche in [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) e Microsoft Defender per Office [365.](../defender-365-security/defender-for-office-365.md) Per accedere alla pagina di indagine unificata, seleziona il collegamento nel banner giallo che vedrai in:
+La pagina di indagine è stata aggiornata di recente per includere informazioni su dispositivi, posta elettronica e contenuti di collaborazione. La nuova pagina di indagine unificata definisce un linguaggio comune e offre un'esperienza unificata per le indagini automatiche in [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) e Microsoft Defender per Office [365.](../office-365-security/defender-for-office-365.md) Per accedere alla pagina di indagine unificata, seleziona il collegamento nel banner giallo che vedrai in:
 - Qualsiasi pagina di indagine nel Centro sicurezza & e conformità di Office 365 ( [https://protection.office.com](https://protection.office.com) )
 - Qualsiasi pagina di indagine in Microsoft Defender Security Center ( [https://securitycenter.windows.com](https://securitycenter.windows.com) )
 - Qualsiasi evento imprevisto o centro notifiche nel Centro sicurezza Microsoft 365 migliorato ( [https://security.microsoft.com](https://security.microsoft.com) )

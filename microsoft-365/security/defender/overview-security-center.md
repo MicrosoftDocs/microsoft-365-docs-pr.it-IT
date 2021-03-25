@@ -19,12 +19,12 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 3b2e5d834caab9973006eda64e369a2a6aa17b5d
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 142bc305950f9322c90e0d207f255c14abbc6b8c
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163316"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197934"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>Panoramica del Centro sicurezza Microsoft 365 unificato
 
@@ -36,15 +36,15 @@ ms.locfileid: "51163316"
 
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 - [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender per Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365)
+- [Microsoft Defender per Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 
-> Vuoi provare Microsoft 365 Defender? È possibile [valutarlo in un ambiente lab o](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) eseguire il progetto pilota in [produzione.](m365d-pilot.md?ocid=cx-evalpilot)
+> Vuoi provare Microsoft 365 Defender? Puoi [valutarlo in un ambiente lab](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) o [eseguire il progetto pilota in produzione](m365d-pilot.md?ocid=cx-evalpilot).
 
 Il Centro sicurezza **Microsoft 365** migliorato ( ) combina protezione, rilevamento, indagine e risposta alla posta elettronica, alla collaborazione, all'identità e alle minacce dei [https://security.microsoft.com](https://security.microsoft.com) dispositivi, in un portale centrale.    
 
 Il Centro sicurezza Microsoft 365 riunisce le funzionalità dei portali di sicurezza Microsoft esistenti, come Microsoft Defender Security Center e il Centro sicurezza & e conformità di Office 365. Il centro sicurezza enfatizza l'accesso rapido alle informazioni, ai layout più semplici e alla raccolta delle informazioni correlate per un utilizzo più semplice. Questo centro include:
 
-- **[Microsoft Defender per Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365)** Microsoft Defender per Office 365 aiuta le organizzazioni a proteggere la propria azienda con un set di funzionalità di prevenzione, rilevamento, indagine e ricerca per proteggere la posta elettronica e le risorse di Office 365.
+- **[Microsoft Defender per Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)** Microsoft Defender per Office 365 aiuta le organizzazioni a proteggere la propria azienda con un set di funzionalità di prevenzione, rilevamento, indagine e ricerca per proteggere la posta elettronica e le risorse di Office 365.
 - **[Microsoft Defender for Endpoint](/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection)** offre protezione preventiva, rilevamento post-violazione, analisi automatizzata e risposta per i dispositivi nell'organizzazione.
 - **[Microsoft 365 Defender](microsoft-365-defender.md)** fa parte della soluzione XDR *(Extended Detection and Response)* di Microsoft che sfrutta il portfolio di sicurezza di Microsoft 365 per analizzare automaticamente i dati sulle minacce nei domini e creare un'immagine di un attacco in un singolo dashboard.
 
@@ -103,7 +103,7 @@ I controlli e il contenuto comuni vengono visualizzati nello stesso punto oppure
 
 ![Autorizzazioni & ruoli che mostra i ruoli endpoint & gruppi, ruoli e gruppi di dispositivi.](../../media/converged-roles-5.png)
 
- Access the Microsoft 365 security center is configured with Azure Active Directory global roles or by using custom roles. Per Defender for Endpoint, vedi [Assegnare l'accesso utente a Microsoft Defender Security Center.](/microsoft-365/security/defender-endpoint/assign-portal-access) Per Defender per Office 365, vedere Autorizzazioni nel Centro conformità Microsoft 365 e nel Centro sicurezza [Microsoft 365.](../defender-365-security/permissions-microsoft-365-compliance-security.md)
+ Access the Microsoft 365 security center is configured with Azure Active Directory global roles or by using custom roles. Per Defender for Endpoint, vedi [Assegnare l'accesso utente a Microsoft Defender Security Center.](/microsoft-365/security/defender-endpoint/assign-portal-access) Per Defender per Office 365, vedere Autorizzazioni nel Centro conformità Microsoft 365 e nel Centro sicurezza [Microsoft 365.](../office-365-security/permissions-microsoft-365-compliance-security.md)
 
 - Altre informazioni su come gestire [l'accesso a Microsoft 365 Defender](m365d-permissions.md)
 - Ulteriori informazioni su come creare [ruoli personalizzati](custom-roles.md) nel Centro sicurezza Microsoft 365
@@ -179,7 +179,7 @@ Continuare a esplorare le funzionalità e le funzionalità del Centro sicurezza 
 - [Cercare minacce tra dispositivi, posta elettronica, app e identità](./advanced-hunting-query-emails-devices.md)
 - [Regole di rilevamento personalizzate](./custom-detection-rules.md)
 - [Avvisi posta elettronica e collaborazione](../../compliance/alert-policies.md#default-alert-policies)
-- [Creare una simulazione di attacco di phishing](../defender-365-security/attack-simulation-training.md) e creare un payload per la formazione dei [team](/microsoft-365/security/defender-365-security/attack-simulation-training-payloads)
+- [Creare una simulazione di attacco di phishing](../office-365-security/attack-simulation-training.md) e creare un payload per la formazione dei [team](/microsoft-365/security/office-365-security/attack-simulation-training-payloads)
  
 ### <a name="related-information"></a>Informazioni correlate
 - [Centro sicurezza Microsoft 365](overview-security-center.md)

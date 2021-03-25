@@ -15,12 +15,13 @@ ms.reviewer: sugamar, jcedola
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
-ms.openlocfilehash: 62f1f5f2d47482f642f00c870b3e0f3112f5f639
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.topic: article
+ms.openlocfilehash: d88da04e91875e24b13478b17d6a1e3862e1062e
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185768"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197662"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Usare le regole di riduzione della superficie di attacco per prevenire l'infezione da malware
 
@@ -29,7 +30,6 @@ ms.locfileid: "51185768"
 **Si applica a:**
 - [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
-
 
 
 ## <a name="why-attack-surface-reduction-rules-are-important"></a>Perché le regole di riduzione della superficie di attacco sono importanti

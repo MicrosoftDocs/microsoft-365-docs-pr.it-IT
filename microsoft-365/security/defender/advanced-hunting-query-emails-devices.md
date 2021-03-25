@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 60de6ed5a53a5d778f041b1c609019d110d6b64b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e494bfe57c31c1d5044f72a8adb3e2548d531604
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068306"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199150"
 ---
 # <a name="hunt-for-threats-across-devices-emails-apps-and-identities"></a>Cercare minacce tra dispositivi, posta elettronica, app e identità
 
@@ -104,7 +104,7 @@ DeviceInfo
 ## <a name="hunting-scenarios"></a>Scenari di ricerca
 
 ### <a name="list-logon-activities-of-users-that-received-emails-that-were-not-zapped-successfully"></a>Elencare le attività di accesso degli utenti che hanno ricevuto messaggi di posta elettronica che non sono stati zapped correttamente
-[L'eliminazione automatica di](../defender-365-security/zero-hour-auto-purge.md) zero ore (ZAP) risolve i messaggi di posta elettronica dannosi dopo essere stati ricevuti. Se ZAP ha esito negativo, il codice dannoso potrebbe essere eseguito sul dispositivo e lasciare gli account compromessi. Questa query controlla l'attività di accesso effettuata dai destinatari dei messaggi di posta elettronica che non sono stati correttamente indirizzati da ZAP.
+[L'eliminazione automatica di](../office-365-security/zero-hour-auto-purge.md) zero ore (ZAP) risolve i messaggi di posta elettronica dannosi dopo essere stati ricevuti. Se ZAP ha esito negativo, il codice dannoso potrebbe essere eseguito sul dispositivo e lasciare gli account compromessi. Questa query controlla l'attività di accesso effettuata dai destinatari dei messaggi di posta elettronica che non sono stati correttamente indirizzati da ZAP.
 
 ```kusto
 EmailPostDeliveryEvents 

@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Per informazioni su come eseguire il pilota della funzionalità di posta elettronica dal dominio personalizzato a una cassetta postale di Microsoft 365 usando solo due account di test.
-ms.openlocfilehash: e710218a2a5cb9821abb213eb2ebb0c92c9bdc42
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: bdcf86474a7f2edb458075e884c20e56d231df6d
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51050691"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197840"
 ---
 # <a name="pilot-microsoft-365-from-my-custom-domain"></a>Eseguire il pilota Microsoft 365 dal dominio personalizzato
 
@@ -115,7 +115,7 @@ Esistono due procedure:
 
 Assicurarsi di aver completato le operazioni seguenti in Microsoft 365 o Office 365:
 
-1. Per configurare i connettori, è necessario ricevere le autorizzazioni prima di iniziare. Per sapere quali sono le autorizzazioni necessarie, vedere la voce relativa ai connettori Microsoft 365 e Office 365 nell'argomento[Autorizzazioni di funzionalità in EOP](https://docs.microsoft.com/microsoft-365/security/defender-365-security/feature-permissions-in-eop).
+1. Per configurare i connettori, è necessario ricevere le autorizzazioni prima di iniziare. Per sapere quali sono le autorizzazioni necessarie, vedere la voce relativa ai connettori Microsoft 365 e Office 365 nell'argomento[Autorizzazioni di funzionalità in EOP](https://docs.microsoft.com/microsoft-365/security/office-365-security/feature-permissions-in-eop).
 
 2. Se si desidera che EOP o Exchange Online inoltrino i messaggi dai server di posta elettronica a Internet, scegliere tra:
 

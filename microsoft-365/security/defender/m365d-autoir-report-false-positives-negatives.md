@@ -22,12 +22,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 8658b08f0d3948d6d23486ec885486e8bbfdf273
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 851fd05f0fec4b8d113e515783092eed0114db0f
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060722"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199114"
 ---
 # <a name="handle-false-positivesnegatives-in-automated-investigation-and-response-capabilities"></a>Gestire falsi positivi/negativi nelle funzionalità di analisi e risposta automatizzate
 
@@ -48,15 +48,15 @@ Nelle sezioni seguenti viene descritto come eseguire queste attività.
 
 |Elemento perso o rilevato in modo errato |Servizio  |Soluzione  |
 |---------|---------|---------|
-|- Messaggio di posta elettronica <br/>- Allegato di posta elettronica <br/>- URL in un messaggio di posta elettronica<br/>- URL in un file di Office      |[Microsoft Defender per Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365)        |[Inviare posta indesiderata sospetta, phish, URL e file a Microsoft per l'analisi](../defender-365-security/admin-submission.md)         |
-|File o app in un dispositivo    |[Microsoft Defender ATP](/windows/security/threat-protection)         |[Inviare un file a Microsoft per l'analisi del malware](https://www.microsoft.com/wdsi/filesubmission)         |
+|- Messaggio di posta elettronica <br/>- Allegato di posta elettronica <br/>- URL in un messaggio di posta elettronica<br/>- URL in un file di Office      |[Microsoft Defender per Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)        |[Inviare posta indesiderata sospetta, phish, URL e file a Microsoft per l'analisi](../office-365-security/admin-submission.md)         |
+|File o app in un dispositivo    |[Microsoft Defender per endpoint](/windows/security/threat-protection)         |[Inviare un file a Microsoft per l'analisi del malware](https://www.microsoft.com/wdsi/filesubmission)         |
 
 ## <a name="adjust-an-alert-to-prevent-false-positives-from-recurring"></a>Modificare un avviso per evitare che i falsi positivi si ricorrenti
 
 |Scenario |Servizio |Soluzione |
 |--------|--------|--------|
 |- Un avviso viene attivato da un uso legittimo <br/>- Un avviso non è accurato    |[Microsoft Cloud App Security](/cloud-app-security)<br/> oppure <br/>[Rilevamento delle minacce avanzate di Azure](/azure/security/fundamentals/threat-detection)         |[Gestire gli avvisi nel portale di Cloud App Security](/cloud-app-security/managing-alerts)         |
-|Un file, un indirizzo IP, un URL o un dominio viene considerato come malware in un dispositivo, anche se è sicuro|[Microsoft Defender ATP](/windows/security/threat-protection) |[Creare un indicatore personalizzato con un'azione "Consenti"](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
+|Un file, un indirizzo IP, un URL o un dominio viene considerato come malware in un dispositivo, anche se è sicuro|[Microsoft Defender per endpoint](/windows/security/threat-protection) |[Creare un indicatore personalizzato con un'azione "Consenti"](/windows/security/threat-protection/microsoft-defender-atp/manage-indicators) |
 
 ## <a name="undo-a-remediation-action-that-was-taken-on-a-device"></a>Annullare un'azione di correzione eseguita in un dispositivo
 

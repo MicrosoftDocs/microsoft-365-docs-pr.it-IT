@@ -13,12 +13,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: ad341de0d0aed45ff3bf734e3c933b423eac3353
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c51c002d263452142a1bcf6fc5603d6ec4ef4cf7
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060749"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51197970"
 ---
 # <a name="device-profile-page"></a>Pagina Profilo dispositivo
 
@@ -81,7 +81,7 @@ Le azioni disponibili nella pagina del profilo del dispositivo includono:
 * **Eseguire l'analisi antivirus** - Aggiorna Windows Defender definizioni antivirus ed esegue immediatamente un'analisi antivirus. Scegliere tra Analisi rapida o Analisi completa.
 * **Raccogli pacchetto di analisi:** raccoglie informazioni sul dispositivo. Al termine dell'indagine, è possibile scaricarla.
 * **Initiate Live Response Session** - Carica una shell remota nel dispositivo per indagini [approfondite sulla sicurezza.](/microsoft-365/security/defender-endpoint/live-response)
-* **Avviare un'indagine automatizzata-** Analizza [e correda automaticamente le minacce.](../defender-365-security/office-365-air.md) Sebbene sia possibile attivare manualmente l'esecuzione di indagini automatizzate da questa [pagina,](../../compliance/alert-policies.md?view=o365-worldwide#default-alert-policies) alcuni criteri di avviso attivano indagini automatiche per conto proprio.
+* **Avviare un'indagine automatizzata-** Analizza [e correda automaticamente le minacce.](../office-365-security/office-365-air.md) Sebbene sia possibile attivare manualmente l'esecuzione di indagini automatizzate da questa [pagina,](../../compliance/alert-policies.md?view=o365-worldwide#default-alert-policies) alcuni criteri di avviso attivano indagini automatiche per conto proprio.
 * **Centro notifiche:** visualizza informazioni sulle azioni di risposta attualmente in esecuzione.
 
 ## <a name="tabs-section"></a>Sezione Tabs
@@ -183,4 +183,4 @@ Se si seleziona un elemento, verrà aperto un riquadro a comparsa che si collega
 * [Panoramica di Microsoft 365 Defender](microsoft-365-defender.md)
 * [Attivare Microsoft 365 Defender](m365d-enable.md)
 * [Analizzare le entità nei dispositivi, usando la risposta in tempo reale](../defender-endpoint/live-response.md)
-* [Analisi e risposta automatizzate (AIR) in Office 365](../defender-365-security/office-365-air.md)
+* [Analisi e risposta automatizzate (AIR) in Office 365](../office-365-security/office-365-air.md)
