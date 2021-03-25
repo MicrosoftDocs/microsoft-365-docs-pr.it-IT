@@ -21,12 +21,12 @@ ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 02/01/2021
-ms.openlocfilehash: c91e5152fc7a64c8d26363383192d6b8d74611b8
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: d958f2787b9d66e42a32b8858139f7d13e83ddef
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186762"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199598"
 ---
 # <a name="the-action-center"></a>Centro operativo
 
@@ -61,7 +61,7 @@ Il centro notifiche unificato riunisce le azioni di correzione in Defender for E
 È possibile utilizzare il centro notifiche unificato se si dispone delle autorizzazioni appropriate e di una o più delle sottoscrizioni seguenti:
 
 - [Defender per endpoint](../defender-endpoint/microsoft-defender-endpoint.md)
-- [Defender per Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365)
+- [Defender per Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 
 > [!TIP]
@@ -113,11 +113,11 @@ Oltre alle azioni di correzione eseguite automaticamente [](m365d-autoir.md)a se
 | Valore di origine dell'azione | Descrizione |
 |:-----|:---|
 | **Azione manuale del dispositivo** | Azione manuale eseguita su un dispositivo. Alcuni esempi includono [l'isolamento del dispositivo](../defender-endpoint/respond-machine-alerts.md#isolate-devices-from-the-network) [o la quarantena dei file.](../defender-endpoint/respond-file-alerts.md#stop-and-quarantine-files) |
-| **Azione manuale per la posta elettronica** | Un'azione manuale eseguita sulla posta elettronica. Un esempio include l'eliminazione recidiva dei messaggi di posta elettronica [o la correzione di un messaggio di posta elettronica.](../defender-365-security/remediate-malicious-email-delivered-office-365.md) |
+| **Azione manuale per la posta elettronica** | Un'azione manuale eseguita sulla posta elettronica. Un esempio include l'eliminazione recidiva dei messaggi di posta elettronica [o la correzione di un messaggio di posta elettronica.](../office-365-security/remediate-malicious-email-delivered-office-365.md) |
 | **Azione automatica del dispositivo** | Azione automatizzata eseguita su un'entità, ad esempio un file o un processo. Esempi di azioni automatizzate includono l'invio di un file in quarantena, l'arresto di un processo e la rimozione di una chiave del Registro di sistema. (Vedere [Azioni di correzione in Microsoft Defender per Endpoint).](../defender-endpoint/manage-auto-investigation.md#remediation-actions) |
-| **Azione di posta elettronica automatizzata** | Azione automatizzata eseguita sul contenuto della posta elettronica, ad esempio un messaggio di posta elettronica, un allegato o un URL. Esempi di azioni automatizzate includono l'eliminazione recisa dei messaggi di posta elettronica, il blocco degli URL e la disattivazione dell'inoltro della posta esterna. Vedere [Azioni di correzione in Microsoft Defender per Office 365.](../defender-365-security/air-remediation-actions.md) |
+| **Azione di posta elettronica automatizzata** | Azione automatizzata eseguita sul contenuto della posta elettronica, ad esempio un messaggio di posta elettronica, un allegato o un URL. Esempi di azioni automatizzate includono l'eliminazione recisa dei messaggi di posta elettronica, il blocco degli URL e la disattivazione dell'inoltro della posta esterna. Vedere [Azioni di correzione in Microsoft Defender per Office 365.](../office-365-security/air-remediation-actions.md) |
 | **Azione di ricerca avanzata** | Azioni eseguite su dispositivi o posta elettronica con [ricerca avanzata.](./advanced-hunting-overview.md) |
-| **Azione Esplora risorse** | Azioni eseguite sul contenuto della posta elettronica con [Explorer](../defender-365-security/threat-explorer.md). |
+| **Azione Esplora risorse** | Azioni eseguite sul contenuto della posta elettronica con [Explorer](../office-365-security/threat-explorer.md). |
 | **Azione di risposta in tempo reale manuale** | Azioni eseguite su un dispositivo con [risposta in tempo reale.](../defender-endpoint/live-response.md) Alcuni esempi includono l'eliminazione di un file, l'interruzione di un processo e la rimozione di un'attività pianificata. |
 | **Azione di risposta in tempo reale** | Azioni eseguite su un dispositivo con LE API di [Microsoft Defender for Endpoint](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis). Esempi di azioni includono l'isolamento di un dispositivo, l'esecuzione di un'analisi antivirus e il recupero di informazioni su un file. |
 
@@ -128,7 +128,7 @@ Per eseguire attività quali l'approvazione o il rifiuto di azioni in sospeso ne
 |Azione correttiva |Ruoli e autorizzazioni necessari |
 |--|----|
 |Microsoft Defender for Endpoint remediation (dispositivi) |Ruolo di **amministratore della protezione** assegnato in Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) o nell'interfaccia di amministrazione di Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- o ---<br/>**Ruolo azioni di correzione attive** assegnato in Microsoft Defender per Endpoint <br/> <br/> Per altre informazioni, vedere le risorse seguenti: <br/>- [Autorizzazioni del ruolo di amministratore in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Creare e gestire ruoli per il controllo dell'accesso basato sui ruoli (Microsoft Defender for Endpoint)](../defender-endpoint/user-roles.md)  |
-|Correzione di Microsoft Defender per Office 365 (contenuto di Office e posta elettronica)  |Ruolo di **amministratore della protezione** assegnato in Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) o nell'interfaccia di amministrazione di Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- e --- <br/>**Ruolo di ricerca ed eliminazione** assegnato al Centro sicurezza & conformità ( [https://protection.office.com](https://protection.office.com) ) <br/><br/>**IMPORTANTE:** se il  ruolo Amministratore della sicurezza è assegnato solo nel Centro conformità di Office 365 Security & ( ), non sarà possibile accedere al Centro notifiche o alle funzionalità di [https://protection.office.com](https://protection.office.com) Microsoft 365 Defender. È necessario disporre del **ruolo amministratore della** sicurezza assegnato in Azure Active Directory o nell'interfaccia di amministrazione di Microsoft 365. <br/><br/>Per altre informazioni, vedere le risorse seguenti: <br/>- [Autorizzazioni del ruolo di amministratore in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Autorizzazioni nel Centro sicurezza & conformità](/microsoft-365/security/defender-365-security/permissions-in-the-security-and-compliance-center) |
+|Correzione di Microsoft Defender per Office 365 (contenuto di Office e posta elettronica)  |Ruolo di **amministratore della protezione** assegnato in Azure Active Directory ([https://portal.azure.com](https://portal.azure.com)) o nell'interfaccia di amministrazione di Microsoft 365 ([https://admin.microsoft.com](https://admin.microsoft.com))<br/>--- e --- <br/>**Ruolo di ricerca ed eliminazione** assegnato al Centro sicurezza & conformità ( [https://protection.office.com](https://protection.office.com) ) <br/><br/>**IMPORTANTE:** se il  ruolo Amministratore della sicurezza è assegnato solo nel Centro conformità di Office 365 Security & ( ), non sarà possibile accedere al Centro notifiche o alle funzionalità di [https://protection.office.com](https://protection.office.com) Microsoft 365 Defender. È necessario disporre del **ruolo amministratore della** sicurezza assegnato in Azure Active Directory o nell'interfaccia di amministrazione di Microsoft 365. <br/><br/>Per altre informazioni, vedere le risorse seguenti: <br/>- [Autorizzazioni del ruolo di amministratore in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles)<br/>- [Autorizzazioni nel Centro sicurezza & conformità](/microsoft-365/security/office-365-security/permissions-in-the-security-and-compliance-center) |
 
 > [!TIP]
 > Gli utenti che hanno il ruolo di **amministratore globale** assegnato in Azure Active Directory possono approvare o rifiutare qualsiasi azione in sospeso nel centro notifiche. Tuttavia, come procedura consigliata, l'organizzazione deve limitare il numero di persone a cui è assegnato il **ruolo amministratore** globale. È consigliabile utilizzare i ruoli **Amministratore** **sicurezza,** Azioni di correzione attive e Ricerca ed eliminazione elencati nella tabella precedente per le autorizzazioni del centro notifiche. 

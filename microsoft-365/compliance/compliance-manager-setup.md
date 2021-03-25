@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Impostare le autorizzazioni e i ruoli utente di Microsoft Compliance Manager e configurare test automatizzati delle azioni. Gestire la cronologia utente e filtrare la visualizzazione del dashboard.
-ms.openlocfilehash: 08a62a12e5f412781595ba7d54c3b63a03ae19aa
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3b32ac5a82bbc726c5bf61859266e0561ca7f53c
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052134"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199219"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introduzione a Compliance Manager
 
@@ -72,7 +72,7 @@ Per impostare le autorizzazioni e assegnare ruoli nel Centro sicurezza & e confo
 
 ##### <a name="more-about-the-office-365-security--compliance-center"></a>Altre informazioni sul Centro sicurezza e & conformità di Office 365
 
-Ulteriori informazioni sulle autorizzazioni sono disponibili nel Centro sicurezza [& e conformità di Office 365.](../security/defender-365-security/permissions-in-the-security-and-compliance-center.md)
+Ulteriori informazioni sulle autorizzazioni sono disponibili nel Centro sicurezza [& e conformità di Office 365.](../security/office-365-security/permissions-in-the-security-and-compliance-center.md)
 
 Se non si dispone dell'accesso al Centro sicurezza e conformità di Office 365 o se è necessario accedere alla versione classica di Compliance Manager in Microsoft Service Trust Portal, le impostazioni di amministrazione nel Service Trust Portal forniscono un altro modo per assegnare ruoli ( visualizzare le[istruzioni](meet-data-protection-and-regulatory-reqs-using-microsoft-cloud.md#assigning-compliance-manager-roles-to-users)). Tenere presente che tali ruoli sono più limitati nelle loro funzionalità.
 

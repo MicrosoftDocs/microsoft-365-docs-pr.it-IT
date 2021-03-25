@@ -22,12 +22,12 @@ ms.custom: autoir
 ms.date: 01/29/2021
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: fa73756aa9f350793c00a7e4a960c215627b712f
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c81f824a0faaca1c228aa650c003576cce210a67
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064714"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199208"
 ---
 # <a name="remediation-actions-in-microsoft-365-defender"></a>Azioni di correzione in Microsoft 365 Defender
 
@@ -45,7 +45,7 @@ Durante e dopo un'indagine automatizzata in Microsoft 365 Defender, vengono iden
 > Il fatto che le azioni di correzione siano eseguite automaticamente o solo dopo l'approvazione dipende da determinate impostazioni, ad esempio il modo in cui i livelli di automazione. Per ulteriori informazioni, vedere gli articoli seguenti:
 > - [Configurare le funzionalità di analisi e risposta automatizzate in Microsoft 365 Defender](m365d-configure-auto-investigation-response.md)
 > - [Modalità di correzione delle minacce nei dispositivi](../defender-endpoint/automated-investigations.md)
-> - [Minacce e azioni di correzione sui contenuti di collaborazione & posta elettronica](../defender-365-security/air-remediation-actions.md#threats-and-remediation-actions)
+> - [Minacce e azioni di correzione sui contenuti di collaborazione & posta elettronica](../office-365-security/air-remediation-actions.md#threats-and-remediation-actions)
 
 Nella tabella seguente sono riepilogate le azioni di correzione attualmente supportate in Microsoft 365 Defender: 
 
@@ -76,7 +76,7 @@ Oltre alle azioni di correzione che seguono indagini automatizzate, il team dell
 - Azione manuale del dispositivo, ad esempio isolamento del dispositivo o quarantena dei file.
 - Azione manuale della posta elettronica, ad esempio l'eliminazione recidiva dei messaggi di posta elettronica. 
 - [Azione di ricerca](../defender-endpoint/advanced-hunting-overview.md) avanzata su dispositivi o posta elettronica.
-- [Azione di Explorer](../defender-365-security/threat-explorer.md) sul contenuto della posta elettronica, ad esempio lo spostamento della posta elettronica nella posta indesiderata, l'eliminazione recisa della posta elettronica o l'eliminazione permanente della posta elettronica.
+- [Azione di Explorer](../office-365-security/threat-explorer.md) sul contenuto della posta elettronica, ad esempio lo spostamento della posta elettronica nella posta indesiderata, l'eliminazione recisa della posta elettronica o l'eliminazione permanente della posta elettronica.
 - Azione [di risposta in tempo](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/live-response) reale manuale, ad esempio l'eliminazione di un file, l'arresto di un processo e la rimozione di un'attività pianificata.
 - Azione di risposta in tempo reale con le API di [Microsoft Defender per endpoint,](../defender-endpoint/management-apis.md#microsoft-defender-for-endpoint-apis)ad esempio l'isolamento di un dispositivo, l'esecuzione di un'analisi antivirus e il recupero di informazioni su un file. 
 

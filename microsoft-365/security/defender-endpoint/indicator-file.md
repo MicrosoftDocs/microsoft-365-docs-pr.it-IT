@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d78f90e78a50d5902070f441a1d60693a5f531c8
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 35a0b66a4cdc4cf39c15329eda2e0aafced79f34
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185720"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199610"
 ---
 # <a name="create-indicators-for-files"></a>Creare indicatori per i file
 
@@ -35,7 +35,8 @@ ms.locfileid: "51185720"
 
 
 
->Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
+> [!TIP]
+> Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/en-us/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 È possibile impedire un'ulteriore propagazione di un attacco nell'organizzazione vietando file potenzialmente dannosi o malware sospetto. Se si conosce un file pe (Portable Executable) potenzialmente dannoso, è possibile bloccarlo. Questa operazione ne impedirà la lettura, la scrittura o l'esecuzione nei computer dell'organizzazione.
 
@@ -52,13 +53,13 @@ Prima di creare indicatori per i file, è importante comprendere i prerequisiti 
 - Per iniziare a bloccare i file, devi prima attivare [la **funzionalità Blocca**](advanced-features.md) o consenti in Impostazioni.
 - Questa funzionalità è progettata per impedire il download di malware sospetti (o file potenzialmente dannosi) dal Web. Attualmente supporta file eseguibili portabili (PE), inclusi i file _EXE_ _e DLL._ La copertura verrà estesa nel tempo.
 
->[!IMPORTANT]
->- La funzione consenti o blocca non può essere eseguita sui file se la classificazione del file esiste nella cache del dispositivo prima dell'azione consenti o blocca 
->- I file firmati attendibili verranno trattati in modo diverso. Defender for Endpoint è ottimizzato per gestire i file dannosi. Il tentativo di bloccare i file firmati attendibili, in alcuni casi, può avere implicazioni sulle prestazioni.
+Le prestazioni possono essere influenzate se si copiano file di grandi dimensioni da una condivisione di rete nel dispositivo locale, in particolare tramite una connessione VPN. 
 
- 
->[!NOTE]
->In genere, i blocchi di file vengono applicati entro un paio di minuti, ma possono richiedere fino a 30 minuti.
+> [!IMPORTANT]
+> - La funzione consenti o blocca non può essere eseguita sui file se la classificazione del file esiste nella cache del dispositivo prima dell'azione consenti o blocca 
+> - I file firmati attendibili verranno trattati in modo diverso. Defender for Endpoint è ottimizzato per gestire i file dannosi. Il tentativo di bloccare i file firmati attendibili, in alcuni casi, può avere implicazioni sulle prestazioni.
+> - In genere, i blocchi di file vengono applicati entro un paio di minuti, ma possono richiedere fino a 30 minuti.
+> - Se sono presenti criteri indicatore file in conflitto, viene applicato il criterio di applicazione dei criteri più sicuri. Ad esempio, un criterio indicatore hash file SHA-256 ha la precedenza su un criterio indicatore hash file MD5 se entrambi i tipi di hash definiscono lo stesso file.
 
 ### <a name="create-an-indicator-for-files-from-the-settings-page"></a>Creare un indicatore per i file dalla pagina delle impostazioni
 

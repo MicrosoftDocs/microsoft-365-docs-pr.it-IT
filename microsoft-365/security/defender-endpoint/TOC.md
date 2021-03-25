@@ -583,3 +583,7 @@
 #### [Risolvere i problemi di riduzione della superficie di attacco]()
 ##### [Protezione di rete](troubleshoot-np.md)
 ##### [Regole per la riduzione della superficie di attacco](troubleshoot-asr.md)
+
+# [Sicurezza di Microsoft 365](../index.yml)
+# [Microsoft 365 Defender](../defender/index.yml)
+# [Defender per Office 365](../office-365-security/overview.md)

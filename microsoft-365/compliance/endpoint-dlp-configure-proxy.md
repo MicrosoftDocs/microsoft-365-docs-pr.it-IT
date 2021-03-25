@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Informazioni su come configurare il proxy del dispositivo e le impostazioni di connessione Internet per la prevenzione della perdita di dati degli endpoint.
-ms.openlocfilehash: 3b8ebdbb08a6a866cc84df2031e77378925eaa0e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4d1aa3b75ec0a0720f3d92c847bf7c6cde6d966f
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907006"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199275"
 ---
 # <a name="configure-device-proxy-and-internet-connection-settings-for-endpoint-dlp"></a>Configurazione del proxy del dispositivo e delle impostazioni di connessione Internet per la prevenzione della perdita di dati degli endpoint
 
@@ -96,7 +96,7 @@ Per altre informazioni, vedere [Sintassi comando netsh, contesti e formattazione
 
 Se un proxy o un firewall blocca tutto il traffico per impostazione predefinita e consente solo domini specifici, aggiungere i domini elencati nel foglio di lavoro scaricabile all'elenco di domini consentiti.
 
-Il [foglio di calcolo scaricabile](https://github.com/MicrosoftDocs/windows-itpro-docs/raw/public/windows/security/threat-protection/microsoft-defender-atp/downloads/mdatp-urls.xlsx) elenca i servizi e gli URL associati a cui la rete deve essere in grado di connettersi. È necessario assicurarsi che non ci siano regole di filtro di rete o firewall che neghino l'accesso a questi URL, altrimenti potrebbe essere necessario creare una regola specifica per consentirgli l’accesso.
+Il [foglio di calcolo scaricabile](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) elenca i servizi e gli URL associati a cui la rete deve essere in grado di connettersi. È necessario assicurarsi che non ci siano regole di filtro di rete o firewall che neghino l'accesso a questi URL, altrimenti potrebbe essere necessario creare una regola specifica per consentirgli l’accesso.
 
 Se un proxy o un firewall ha l’analisi HTTPS (ispezione SSL) abilitata, bisogna escludere i domini elencati nella tabella di analisi HTTPS di cui sopra.
 Se un proxy o un firewall blocca il traffico anonimo, perché la Prevenzione della perdita dei dati degli endpoint si connette dal contesto di sistema, assicurarsi che il traffico anonimo sia consentito negli URL elencati in precedenza.
@@ -123,7 +123,7 @@ Sostituire *HardDrivePath* con il percorso in cui è stato scaricato lo strument
 
 6.  Aprire **MDATPClientAnalyzerResult.txt** e verificare di avere eseguito la procedura di configurazione del proxy per abilitare l'individuazione del server e l'accesso agli URL di servizio.  Lo strumento controlla la connettività degli URL del servizio Defender per Endpoint con cui è configurato per interagire. Quindi immette i risultati per ogni URL che potrebbe essere potenzialmente utilizzato per comunicare con il servizio Defender per l'endpoint nel file **MDATPClientAnalyzerResult.txt**. Ad esempio:
 
-    **Testing URL : https://xxx.microsoft.com/xxx </br> 1 - Default proxy: Succeeded (200) </br> 2 - Proxy auto discovery (WPAD): Succeeded (200)</br> 3 - Proxy disabled: Succeeded (200)</br> 4 - Named proxy: Doesn't exist</br> 5 - Command line proxy: Doesn't exist**</br>
+    **Testing URL: https://xxx.microsoft.com/xxx </br> 1 - Default proxy: Succeeded (200) </br> 2 - Proxy auto discovery (WPAD): Succeeded (200)</br> 3 - Proxy disabled: Succeeded (200)</br> 4 - Named proxy: Doesn't exist</br> 5 - Command-line proxy: Doesn't exist**</br>
 
 
 Se almeno una delle opzioni di connettività restituisce uno stato (200), il client Defender per Endpoint può comunicare correttamente con l'URL testato usando questo metodo di connettività. 

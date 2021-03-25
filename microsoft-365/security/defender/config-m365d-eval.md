@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 5ab4019751a26507fcc80007d3262f20f861d25c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 8bb80e032fd2eb4c618b60f4ab46829d5cf11b6d
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063450"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199230"
 ---
 # <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a>Configurare i pilastri di Microsoft 365 Defender per il laboratorio di valutazione o l'ambiente pilota
 
@@ -57,7 +57,7 @@ Questa sezione ti guiderà a configurare:
 -   Microsoft Defender per Office 365
 -   Microsoft Defender per identità 
 -   Microsoft Cloud App Security
--   Microsoft Defender ATP
+-   Microsoft Defender per endpoint
 
 
 ## <a name="configure-microsoft-defender-for-office-365"></a>Configurare Microsoft Defender per Office 365
@@ -96,7 +96,7 @@ Questa sezione ti guiderà a configurare:
  
 7. Selezionare quindi il criterio **Collegamenti sicuri,** quindi fare clic sull'icona a forma di matita per modificare il criterio predefinito.
 
-8. Assicurarsi che **l'opzione Non tenere traccia** quando gli utenti fanno clic su collegamenti sicuri non sia selezionata, mentre le altre opzioni sono selezionate. Per [informazioni dettagliate, vedere Safe Links settings.](/microsoft-365/security/defender-365-security/recommended-settings-for-eop-and-office365) Fare clic su **Salva**. 
+8. Assicurarsi che **l'opzione Non tenere traccia** quando gli utenti fanno clic su collegamenti sicuri non sia selezionata, mentre le altre opzioni sono selezionate. Per [informazioni dettagliate, vedere Safe Links settings.](/microsoft-365/security/office-365-security/recommended-settings-for-eop-and-office365) Fare clic su **Salva**. 
 
    ![Image of_Office 365 Security & Compliance Center che mostra che l'opzione Non tenere traccia quando gli utenti fanno clic su Sicuro non è selezionata](../../media/mtp-eval-38.png)
 

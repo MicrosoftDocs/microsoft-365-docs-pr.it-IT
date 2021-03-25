@@ -22,12 +22,12 @@ ms.custom: autoir
 ms.date: 01/29/2021
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: c12937c016875c26a7212117e41aac4349cb540d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 8ed6f1ccd6587d6c618974a123f0d5d42a44e753
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51065901"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199634"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Analisi e risposta automatizzate in Microsoft 365 Defender
 
@@ -41,7 +41,7 @@ Se l'organizzazione usa [Microsoft 365 Defender,](microsoft-365-defender.md)il t
 In questo articolo viene fornita una panoramica di AIR e vengono forniti collegamenti ai passaggi successivi e a risorse aggiuntive.
 
 > [!TIP]
-> Vuoi provare Microsoft 365 Defender? È possibile [valutarlo in un ambiente lab o](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) eseguire il progetto pilota in [produzione.](m365d-pilot.md?ocid=cx-evalpilot)
+> Vuoi provare Microsoft 365 Defender? Puoi [valutarlo in un ambiente lab](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) o [eseguire il progetto pilota in produzione](m365d-pilot.md?ocid=cx-evalpilot).
 
 ## <a name="how-automated-investigation-and-self-healing-works"></a>Funzionamento dell'indagine automatizzata e dell'auto-riparazione
 
@@ -89,8 +89,8 @@ In Microsoft 365 Defender, ogni indagine automatizzata correla i segnali tra Mic
 
 |Entità |Servizi di protezione dalle minacce  |
 |:---------|:---------|
-|Dispositivi (denominati anche endpoint e talvolta definiti computer)     |[Microsoft Defender ATP](../defender-endpoint/automated-investigations.md)<br/>[Microsoft Defender per identità](/azure-advanced-threat-protection/what-is-atp) |      
-|Contenuto della posta elettronica (messaggi di posta elettronica che possono contenere file e URL)     |[Microsoft Defender per Office 365](../defender-365-security/defender-for-office-365.md)         |
+|Dispositivi (denominati anche endpoint e talvolta definiti computer)     |[Microsoft Defender per endpoint](../defender-endpoint/automated-investigations.md)<br/>[Microsoft Defender per identità](/azure-advanced-threat-protection/what-is-atp) |      
+|Contenuto della posta elettronica (messaggi di posta elettronica che possono contenere file e URL)     |[Microsoft Defender per Office 365](../office-365-security/defender-for-office-365.md)         |
 
 > [!NOTE]
 > Non tutti gli avvisi attivano un'indagine automatizzata e non tutte le indagini generano azioni di correzione automatizzate; dipende dal modo in cui l'indagine e la risposta automatizzate sono configurate per l'organizzazione. Vedere [Configure automated investigation and response capabilities in Microsoft 365 Defender](m365d-configure-auto-investigation-response.md).

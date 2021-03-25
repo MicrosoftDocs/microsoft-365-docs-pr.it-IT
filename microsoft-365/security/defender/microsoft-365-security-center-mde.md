@@ -18,12 +18,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.openlocfilehash: dbbe692b3339a316f924ae4858753bbb961dd70c
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: b580c6f20ed3b242fc0bc239a49fe89ccc09d013
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165622"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199196"
 ---
 # <a name="microsoft-defender-for-endpoint-in-the-microsoft-365-security-center"></a>Microsoft Defender for Endpoint nel Centro sicurezza Microsoft 365
 
@@ -35,7 +35,7 @@ ms.locfileid: "51165622"
 
 - [Microsoft 365 Defender](microsoft-365-defender.md)
 - [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [Microsoft Defender per Office 365](/microsoft-365/security/defender-365-security/defender-for-office-365)
+- [Microsoft Defender per Office 365](/microsoft-365/security/office-365-security/defender-for-office-365)
 
 Il centro sicurezza [Microsoft 365](overview-security-center.md) migliorato combina funzionalità di sicurezza che proteggono, rilevano, analizzano e rispondono alle minacce di posta [https://security.microsoft.com](https://security.microsoft.com) elettronica, collaborazione, identità e dispositivi. Questo centro sicurezza riunisce le funzionalità dei portali di sicurezza Microsoft esistenti, tra cui Microsoft Defender Security Center e il Centro sicurezza e conformità di Office 365 & conformità.
 
@@ -94,7 +94,7 @@ Questa tabella è un riferimento rapido alle modifiche tra Microsoft Defender Se
 |---------|---------|
 | Report  | Vedi i report per gli endpoint e la & di posta elettronica, tra cui Protezione dalle minacce, Integrità e conformità dei dispositivi e Dispositivi vulnerabili. |
 | Sanità  |  Attualmente si collega alla pagina "Integrità del servizio" nell'interfaccia di amministrazione di [Microsoft 365.](https://admin.microsoft.com/) |
-| Impostazioni |  Gestire le impostazioni per il Centro sicurezza Microsoft 365, Microsoft 365 Defender, Endpoint, Collaborazione & posta elettronica, Identità e Individuazione dispositivi.   |
+| Settings |  Gestire le impostazioni per il Centro sicurezza Microsoft 365, Microsoft 365 Defender, Endpoint, Collaborazione & posta elettronica, Identità e Individuazione dispositivi.   |
 
 ## <a name="microsoft-365-security-navigation-and-capabilities"></a>Funzionalità e esplorazione della sicurezza di Microsoft 365
 

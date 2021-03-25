@@ -12,22 +12,20 @@ author: denisebmsft
 ms.author: deniseb
 ms.reviewer: jcedola, dbodorin, vladiso, nixanm, anvascon
 manager: dansimp
-ms.date: 01/06/2021
+ms.date: 03/24/2021
 ms.technology: mde
-ms.openlocfilehash: 64f96544361a672881c590716adea80f40777c6e
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.topic: how-to
+ms.openlocfilehash: 0962913df63e6837664cdb8ff79710d66e66977c
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163340"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51199912"
 ---
 # <a name="customize-controlled-folder-access"></a>Personalizzare l'accesso controllato alle cartelle
 
-[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
-
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -120,7 +118,7 @@ Un'applicazione o un servizio consentito ha accesso in scrittura a una cartella 
 
 4. Seleziona **Aggiungi un'app consentita** e segui le istruzioni per aggiungere app.
 
-    ![Screenshot di come aggiungere un pulsante dell'app consentito](/microsoft-365/security/defender-endpoint/images/cfa-allow-app)
+   :::image type="content" source="images/cfa-allow-app.png" alt-text="Pulsante Aggiungi un'app consentita":::
 
 ### <a name="use-group-policy-to-allow-specific-apps"></a>Usare Criteri di gruppo per consentire app specifiche
 
@@ -149,7 +147,7 @@ Un'applicazione o un servizio consentito ha accesso in scrittura a una cartella 
 
    Continua a usare `Add-MpPreference -ControlledFolderAccessAllowedApplications` per aggiungere altre app all'elenco. Le app aggiunte con questo cmdlet verranno visualizzate nell'app Sicurezza di Windows.
 
-![Screenshot of a PowerShell window with the above cmdlet entered](/microsoft-365/security/defender-endpoint/images/cfa-allow-app-ps)
+   :::image type="content" source="images/cfa-allow-app-ps.png" alt-text="Cmdlet di PowerShell per consentire un'app":::
 
 > [!IMPORTANT]
 > Usa `Add-MpPreference` per aggiungere o aggiungere app all'elenco. `Set-MpPreference`L'utilizzo del cmdlet sovrascriverà l'elenco esistente.

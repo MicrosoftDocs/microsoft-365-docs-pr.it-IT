@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: d54ab8eaa1e17be82752c480c963d3a24af56389
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: a04f3be1f13fb57cd76cda7115d014f2ba3aa8d6
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187578"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51198826"
 ---
 # <a name="create-indicators"></a>Creare indicatori
 
@@ -33,13 +33,14 @@ ms.locfileid: "51187578"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
+> [!TIP]
 > Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-automationexclusionlist-abovefoldlink)
 
 La corrispondenza degli indicatori di compromissione (IoC) è una funzionalità essenziale in ogni soluzione di protezione degli endpoint. Questa funzionalità offre a SecOps la possibilità di impostare un elenco di indicatori per il rilevamento e il blocco (prevenzione e risposta).
 
 Creare indicatori che definiscono il rilevamento, la prevenzione e l'esclusione delle entità. Puoi definire l'azione da eseguire, nonché la durata per l'applicazione dell'azione e l'ambito del gruppo di dispositivi a cui applicarla.
 
-Le origini attualmente supportate sono il motore di rilevamento cloud di Defender for Endpoint, il motore di analisi e correzione automatizzato e il motore di prevenzione degli endpoint (Microsoft Defender AV).
+Le origini attualmente supportate sono il motore di rilevamento cloud di Defender for Endpoint, il motore di analisi e correzione automatizzato e il motore di prevenzione degli endpoint (Microsoft Defender Antivirus).
 
 **Motore di rilevamento cloud**<br>
 Il motore di rilevamento cloud di Defender for Endpoint analizza regolarmente i dati raccolti e cerca di corrispondere agli indicatori impostati. In caso di corrispondenza, verrà eseguita un'azione in base alle impostazioni specificate per l'IoC.
@@ -63,8 +64,8 @@ Le azioni attualmente supportate sono:
 - [Certificati](indicator-certificates.md)
 
 
->[!NOTE]
->Esiste un limite di 15.000 indicatori per tenant.
+> [!NOTE]
+> Esiste un limite di 15.000 indicatori per tenant. Gli indicatori di file e certificati non [bloccano le esclusioni definite per Microsoft Defender Antivirus.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-exclusions-microsoft-defender-antivirus) Gli indicatori non sono supportati in Microsoft Defender Antivirus in modalità passiva. 
 
 
 ## <a name="related-topics"></a>Argomenti correlati
