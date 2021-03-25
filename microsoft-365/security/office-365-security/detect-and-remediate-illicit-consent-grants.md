@@ -1,0 +1,193 @@
+---
+title: Rilevare e correggere le concessioni di consenso illecito
+f1.keywords:
+- NOCSH
+ms.author: tracyp
+author: MSFTTracyp
+manager: dansimp
+ms.date: ''
+audience: ITPro
+ms.topic: article
+ms.collection:
+- o365_security_incident_response
+- M365-security-compliance
+localization_priority: Normal
+search.appverid:
+- MET150
+description: Scopri come riconoscere e correggere l'attacco delle concessioni di consenso illecito in Microsoft Office 365.
+ms.custom: seo-marvel-apr2020
+ms.technology: mdo
+ms.prod: m365-security
+ms.openlocfilehash: 4a9b3ff11acb32a4b3038cc18922f8e22fda0b4c
+ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "51205941"
+---
+# <a name="detect-and-remediate-illicit-consent-grants"></a><span data-ttu-id="e7c11-103">Rilevare e correggere le concessioni di consenso illecito</span><span class="sxs-lookup"><span data-stu-id="e7c11-103">Detect and Remediate Illicit Consent Grants</span></span>
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
+
+<span data-ttu-id="e7c11-104">**Si applica a**</span><span class="sxs-lookup"><span data-stu-id="e7c11-104">**Applies to**</span></span>
+- [<span data-ttu-id="e7c11-105">Microsoft Defender per Office 365 piano 1 e piano 2</span><span class="sxs-lookup"><span data-stu-id="e7c11-105">Microsoft Defender for Office 365 plan 1 and plan 2</span></span>](defender-for-office-365.md)
+- [<span data-ttu-id="e7c11-106">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="e7c11-106">Microsoft 365 Defender</span></span>](../defender/microsoft-365-defender.md)
+
+<span data-ttu-id="e7c11-107">**Riepilogo**  Informazioni su come riconoscere e correggere l'attacco di concessioni di consenso illecito in Office 365.</span><span class="sxs-lookup"><span data-stu-id="e7c11-107">**Summary**  Learn how to recognize and remediate the illicit consent grants attack in Office 365.</span></span>
+
+## <a name="what-is-the-illicit-consent-grant-attack-in-office-365"></a><span data-ttu-id="e7c11-108">Qual è l'attacco di concessione del consenso illecito in Office 365?</span><span class="sxs-lookup"><span data-stu-id="e7c11-108">What is the illicit consent grant attack in Office 365?</span></span>
+
+<span data-ttu-id="e7c11-109">In un attacco di concessione del consenso illecito, l'autore dell'attacco crea un'applicazione registrata in Azure che richiede l'accesso a dati quali informazioni di contatto, posta elettronica o documenti.</span><span class="sxs-lookup"><span data-stu-id="e7c11-109">In an illicit consent grant attack, the attacker creates an Azure-registered application that requests access to data such as contact information, email, or documents.</span></span> <span data-ttu-id="e7c11-110">L'utente malintenzionato inganna quindi un utente finale a concedere il consenso all'applicazione per accedere ai propri dati tramite un attacco di phishing o iniettando codice illecito in un sito Web attendibile.</span><span class="sxs-lookup"><span data-stu-id="e7c11-110">The attacker then tricks an end user into granting that application consent to access their data either through a phishing attack, or by injecting illicit code into a trusted website.</span></span> <span data-ttu-id="e7c11-111">Dopo che l'applicazione illecita ha ottenuto il consenso, ha accesso a livello di account ai dati senza la necessità di un account dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="e7c11-111">After the illicit application has been granted consent, it has account-level access to data without the need for an organizational account.</span></span> <span data-ttu-id="e7c11-112">I normali passaggi di correzione, come la reimpostazione delle password per gli account violati o la richiesta di Autenticazione a più fattori (MFA) sugli account, non sono efficaci contro questo tipo di attacco, poiché si tratta di applicazioni di terze parti e sono esterne all'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="e7c11-112">Normal remediation steps, like resetting passwords for breached accounts or requiring Multi-Factor Authentication (MFA) on accounts, are not effective against this type of attack, since these are third-party applications and are external to the organization.</span></span>
+
+<span data-ttu-id="e7c11-113">Questi attacchi sfruttano un modello di interazione che presuppone che l'entità che chiama le informazioni sia l'automazione e non un essere umano.</span><span class="sxs-lookup"><span data-stu-id="e7c11-113">These attacks leverage an interaction model which presumes the entity that is calling the information is automation and not a human.</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="e7c11-114">Si sospetta che si stiano verificando problemi con le concessioni di consenso illecite da un'app, in questo momento?</span><span class="sxs-lookup"><span data-stu-id="e7c11-114">Do you suspect you're experiencing problems with illicit consent-grants from an app, right now?</span></span> <span data-ttu-id="e7c11-115">Microsoft Cloud App Security (MCAS) include strumenti per rilevare, analizzare e correggere le app OAuth.</span><span class="sxs-lookup"><span data-stu-id="e7c11-115">Microsoft Cloud App Security (MCAS) has tools to detect, investigate, and remediate your OAuth apps.</span></span> <span data-ttu-id="e7c11-116">In questo articolo di MCAS è presente un'esercitazione che illustra come analizzare [le app OAuth rischiose.](/cloud-app-security/investigate-risky-oauth)</span><span class="sxs-lookup"><span data-stu-id="e7c11-116">This MCAS article has a tutorial that outlines how to go about [investigating risky OAuth apps](/cloud-app-security/investigate-risky-oauth).</span></span> <span data-ttu-id="e7c11-117">Puoi anche impostare i [criteri delle app OAuth](/cloud-app-security/app-permission-policy) per analizzare le autorizzazioni richieste dall'app, quali utenti autorizzano queste app e approvare o vietare ampiamente queste richieste di autorizzazioni.</span><span class="sxs-lookup"><span data-stu-id="e7c11-117">You can also set [OAuth app policies](/cloud-app-security/app-permission-policy) to investigate app-requested permissions, which users are authorizing these apps, and widely approve or ban these permissions requests.</span></span>
+
+## <a name="what-does-an-illicit-consent-grant-attack-look-like-in-office-365"></a><span data-ttu-id="e7c11-118">Che aspetto ha un attacco di concessione del consenso illecito in Office 365?</span><span class="sxs-lookup"><span data-stu-id="e7c11-118">What does an illicit consent grant attack look like in Office 365?</span></span>
+
+<span data-ttu-id="e7c11-119">È necessario eseguire una ricerca **nel log di** controllo per trovare i segni, denominati anche Indicatori di compromissione (IOC) di questo attacco.</span><span class="sxs-lookup"><span data-stu-id="e7c11-119">You need to search the **audit log** to find signs, also called Indicators of Compromise (IOC) of this attack.</span></span> <span data-ttu-id="e7c11-120">Per le organizzazioni con molte applicazioni registrate in Azure e una base di utenti di grandi dimensioni, la procedura consigliata consiste nel rivedere le concessioni di consenso delle organizzazioni su base settimanale.</span><span class="sxs-lookup"><span data-stu-id="e7c11-120">For organizations with many Azure-registered applications and a large user base, the best practice is to review your organizations consent grants on a weekly basis.</span></span>
+
+### <a name="steps-for-finding-signs-of-this-attack"></a><span data-ttu-id="e7c11-121">Passaggi per trovare i segni di questo attacco</span><span class="sxs-lookup"><span data-stu-id="e7c11-121">Steps for finding signs of this attack</span></span>
+
+1. <span data-ttu-id="e7c11-122">Aprire il **Centro sicurezza & conformità** all'indirizzo <https://protection.office.com> .</span><span class="sxs-lookup"><span data-stu-id="e7c11-122">Open the **Security & Compliance Center** at <https://protection.office.com>.</span></span>
+
+2. <span data-ttu-id="e7c11-123">Passare a **Cerca** e selezionare **Ricerca log di controllo**.</span><span class="sxs-lookup"><span data-stu-id="e7c11-123">Navigate to **Search** and select **Audit log search**.</span></span>
+
+3. <span data-ttu-id="e7c11-124">Cercare (tutte le attività e tutti gli utenti) e immettere la data di inizio e la data di fine, se necessario, e quindi fare clic su **Cerca**.</span><span class="sxs-lookup"><span data-stu-id="e7c11-124">Search (all activities and all users) and enter the start date and end date if required and then click **Search**.</span></span>
+
+4. <span data-ttu-id="e7c11-125">Fai **clic su Filtra risultati** e immetti Consenso per l'applicazione nel **campo** Attività.</span><span class="sxs-lookup"><span data-stu-id="e7c11-125">Click **Filter results** and enter Consent to application in the **Activity** field.</span></span>
+
+5. <span data-ttu-id="e7c11-126">Fare clic sul risultato per visualizzare i dettagli dell'attività.</span><span class="sxs-lookup"><span data-stu-id="e7c11-126">Click on the result to see the details of the activity.</span></span> <span data-ttu-id="e7c11-127">Fare **clic su Altre informazioni** per ottenere i dettagli dell'attività.</span><span class="sxs-lookup"><span data-stu-id="e7c11-127">Click **More Information** to get details of the activity.</span></span> <span data-ttu-id="e7c11-128">Verificare se IsAdminContent è impostato su True.</span><span class="sxs-lookup"><span data-stu-id="e7c11-128">Check to see if IsAdminContent is set to True.</span></span>
+
+> [!NOTE]
+>
+> <span data-ttu-id="e7c11-129">La visualizzazione della voce del registro di controllo corrispondente nei risultati della ricerca dopo un evento può richiedere da 30 minuti a 24 ore.</span><span class="sxs-lookup"><span data-stu-id="e7c11-129">It can take from 30 minutes up to 24 hours for the corresponding audit log entry to be displayed in the search results after an event occurs.</span></span>
+>
+> <span data-ttu-id="e7c11-130">Il periodo di conservazione e ricerca di un record di controllo nel log di controllo dipende dall'abbonamento a Microsoft 365 e in particolare dal tipo di licenza assegnato a un utente specifico.</span><span class="sxs-lookup"><span data-stu-id="e7c11-130">The length of time that an audit record is retained and searchable in the audit log depends on your Microsoft 365 subscription, and specifically the type of the license that is assigned to a specific user.</span></span> <span data-ttu-id="e7c11-131">Per ulteriori informazioni, vedere [Log di controllo](../../compliance/search-the-audit-log-in-security-and-compliance.md).</span><span class="sxs-lookup"><span data-stu-id="e7c11-131">For more information, see [Audit log](../../compliance/search-the-audit-log-in-security-and-compliance.md).</span></span>
+>
+> <span data-ttu-id="e7c11-132">Se questo valore è true, indica che un utente con accesso amministratore globale potrebbe aver concesso l'accesso generale ai dati.</span><span class="sxs-lookup"><span data-stu-id="e7c11-132">If this value is true, it indicates that someone with Global Administrator access may have granted broad access to data.</span></span> <span data-ttu-id="e7c11-133">In caso di imprevisto, eseguire le operazioni necessarie per [confermare un attacco.](#how-to-confirm-an-attack)</span><span class="sxs-lookup"><span data-stu-id="e7c11-133">If this is unexpected, take steps to [confirm an attack](#how-to-confirm-an-attack).</span></span>
+
+## <a name="how-to-confirm-an-attack"></a><span data-ttu-id="e7c11-134">Come confermare un attacco</span><span class="sxs-lookup"><span data-stu-id="e7c11-134">How to confirm an attack</span></span>
+
+<span data-ttu-id="e7c11-135">Se sono presenti una o più istanze delle operazioni di I/O elencate in precedenza, è necessario eseguire ulteriori indagini per verificare che l'attacco si sia verificato in modo positivo.</span><span class="sxs-lookup"><span data-stu-id="e7c11-135">If you have one or more instances of the IOCs listed above, you need to do further investigation to positively confirm that the attack occurred.</span></span> <span data-ttu-id="e7c11-136">È possibile utilizzare uno di questi tre metodi per confermare l'attacco:</span><span class="sxs-lookup"><span data-stu-id="e7c11-136">You can use any of these three methods to confirm the attack:</span></span>
+
+- <span data-ttu-id="e7c11-137">Inventario delle applicazioni e delle relative autorizzazioni tramite il portale di Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="e7c11-137">Inventory applications and their permissions using the Azure Active Directory portal.</span></span> <span data-ttu-id="e7c11-138">Questo metodo è accurato, ma è possibile controllare un solo utente alla volta che può richiedere molto tempo se si dispone di molti utenti da controllare.</span><span class="sxs-lookup"><span data-stu-id="e7c11-138">This method is thorough, but you can only check one user at a time which can be very time consuming if you have many users to check.</span></span>
+
+- <span data-ttu-id="e7c11-139">Eseguire l'inventario delle applicazioni e delle relative autorizzazioni tramite PowerShell.</span><span class="sxs-lookup"><span data-stu-id="e7c11-139">Inventory applications and their permissions using PowerShell.</span></span> <span data-ttu-id="e7c11-140">Questo è il metodo più rapido e accurato, con il minor sovraccarico.</span><span class="sxs-lookup"><span data-stu-id="e7c11-140">This is the fastest and most thorough method, with the least amount of overhead.</span></span>
+
+- <span data-ttu-id="e7c11-141">Fare in modo che gli utenti controllino singolarmente le proprie app e le proprie autorizzazioni e ne segnalano i risultati agli amministratori per la correzione.</span><span class="sxs-lookup"><span data-stu-id="e7c11-141">Have your users individually check their apps and permissions and report the results back to the administrators for remediation.</span></span>
+
+## <a name="inventory-apps-with-access-in-your-organization"></a><span data-ttu-id="e7c11-142">Inventario delle app con accesso nell'organizzazione</span><span class="sxs-lookup"><span data-stu-id="e7c11-142">Inventory apps with access in your organization</span></span>
+
+<span data-ttu-id="e7c11-143">È possibile eseguire questa operazione per gli utenti con il portale di Azure Active Directory o PowerShell oppure fare in modo che gli utenti enumerano singolarmente l'accesso alle applicazioni.</span><span class="sxs-lookup"><span data-stu-id="e7c11-143">You can do this for your users with either the Azure Active Directory Portal, or PowerShell or have your users individually enumerate their application access.</span></span>
+
+### <a name="steps-for-using-the-azure-active-directory-portal"></a><span data-ttu-id="e7c11-144">Passaggi per l'uso del portale di Azure Active Directory</span><span class="sxs-lookup"><span data-stu-id="e7c11-144">Steps for using the Azure Active Directory Portal</span></span>
+
+<span data-ttu-id="e7c11-145">È possibile cercare le applicazioni a cui ogni singolo utente ha concesso le autorizzazioni tramite il [portale di Azure Active Directory.](https://portal.azure.com/)</span><span class="sxs-lookup"><span data-stu-id="e7c11-145">You can look up the applications to which any individual user has granted permissions by using the [Azure Active Directory Portal](https://portal.azure.com/).</span></span>
+
+1. <span data-ttu-id="e7c11-146">Accedi al portale di Azure con diritti amministrativi.</span><span class="sxs-lookup"><span data-stu-id="e7c11-146">Sign in to the Azure Portal with administrative rights.</span></span>
+
+2. <span data-ttu-id="e7c11-147">Selezionare il pannello Azure Active Directory.</span><span class="sxs-lookup"><span data-stu-id="e7c11-147">Select the Azure Active Directory blade.</span></span>
+
+3. <span data-ttu-id="e7c11-148">Selezionare **Utenti**.</span><span class="sxs-lookup"><span data-stu-id="e7c11-148">Select **Users**.</span></span>
+
+4. <span data-ttu-id="e7c11-149">Selezionare l'utente che si desidera rivedere.</span><span class="sxs-lookup"><span data-stu-id="e7c11-149">Select the user that you want to review.</span></span>
+
+5. <span data-ttu-id="e7c11-150">Selezionare **Applicazioni**.</span><span class="sxs-lookup"><span data-stu-id="e7c11-150">Select **Applications**.</span></span>
+
+<span data-ttu-id="e7c11-151">In questo modo verranno mostrate le app assegnate all'utente e le autorizzazioni di cui dispongono le applicazioni.</span><span class="sxs-lookup"><span data-stu-id="e7c11-151">This will show you the apps that are assigned to the user and what permissions the applications have.</span></span>
+
+### <a name="steps-for-having-your-users-enumerate-their-application-access"></a><span data-ttu-id="e7c11-152">Passaggi per fare in modo che gli utenti enumerano l'accesso alle applicazioni</span><span class="sxs-lookup"><span data-stu-id="e7c11-152">Steps for having your users enumerate their application access</span></span>
+
+<span data-ttu-id="e7c11-153">Fare in modo che gli utenti https://myapps.microsoft.com vi accedono e rivedranno l'accesso alle proprie applicazioni.</span><span class="sxs-lookup"><span data-stu-id="e7c11-153">Have your users go to https://myapps.microsoft.com and review their own application access there.</span></span> <span data-ttu-id="e7c11-154">Dovrebbero essere in grado di visualizzare tutte le app con accesso, visualizzare i dettagli su di esse (incluso l'ambito di accesso) ed essere in grado di revocare i privilegi alle app sospette o illecite.</span><span class="sxs-lookup"><span data-stu-id="e7c11-154">They should be able to see all the apps with access, view details about them (including the scope of access), and be able to revoke privileges to suspicious or illicit apps.</span></span>
+
+### <a name="steps-for-doing-this-with-powershell"></a><span data-ttu-id="e7c11-155">Passaggi per eseguire questa operazione con PowerShell</span><span class="sxs-lookup"><span data-stu-id="e7c11-155">Steps for doing this with PowerShell</span></span>
+
+<span data-ttu-id="e7c11-156">Il modo più semplice per verificare l'attacco di concessione del consenso illecito è eseguireGet-AzureADPSPermissions.ps1, che eseguirà il dump di tutte le autorizzazioni OAuth e le app OAuth per tutti gli utenti della tenancy [ in ](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09)un unico file CSV.</span><span class="sxs-lookup"><span data-stu-id="e7c11-156">The simplest way to verify the Illicit Consent Grant attack is to run [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09), which will dump all the OAuth consent grants and OAuth apps for all users in your tenancy into one .csv file.</span></span>
+
+#### <a name="pre-requisites"></a><span data-ttu-id="e7c11-157">Prerequisiti</span><span class="sxs-lookup"><span data-stu-id="e7c11-157">Pre-requisites</span></span>
+
+- <span data-ttu-id="e7c11-158">Libreria di Azure AD PowerShell installata.</span><span class="sxs-lookup"><span data-stu-id="e7c11-158">The Azure AD PowerShell library installed.</span></span>
+
+- <span data-ttu-id="e7c11-159">Diritti di amministratore globale per il tenant su cui verrà eseguito lo script.</span><span class="sxs-lookup"><span data-stu-id="e7c11-159">Global administrator rights on the tenant that the script will be run against.</span></span>
+
+- <span data-ttu-id="e7c11-160">Amministratore locale nel computer da cui verranno eseguiti gli script.</span><span class="sxs-lookup"><span data-stu-id="e7c11-160">Local Administrator on the computer from which will run the scripts.</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="e7c11-161">È ***consigliabile richiedere*** l'autenticazione a più fattori nell'account amministrativo.</span><span class="sxs-lookup"><span data-stu-id="e7c11-161">We ***highly recommend*** that you require multi-factor authentication on your administrative account.</span></span> <span data-ttu-id="e7c11-162">Questo script supporta l'autenticazione AMF.</span><span class="sxs-lookup"><span data-stu-id="e7c11-162">This script supports MFA authentication.</span></span>
+
+1. <span data-ttu-id="e7c11-163">Accedere al computer da cui verrà eseguito lo script con diritti di amministratore locale.</span><span class="sxs-lookup"><span data-stu-id="e7c11-163">Sign in to the computer that you will run the script from with local administrator rights.</span></span>
+
+2. <span data-ttu-id="e7c11-164">Scarica o copia lo script [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) da GitHub in una cartella da cui eseguirai lo script.</span><span class="sxs-lookup"><span data-stu-id="e7c11-164">Download or copy the [Get-AzureADPSPermissions.ps1](https://gist.github.com/psignoret/41793f8c6211d2df5051d77ca3728c09) script from GitHub to a folder from which you will run the script.</span></span> <span data-ttu-id="e7c11-165">Questa sarà la stessa cartella in cui verrà scritto il file "permissions.csv" di output.</span><span class="sxs-lookup"><span data-stu-id="e7c11-165">This will be the same folder to which the output "permissions.csv" file will be written.</span></span>
+
+3. <span data-ttu-id="e7c11-166">Aprire un'istanza di PowerShell come amministratore e aprire la cartella in cui è stato salvato lo script.</span><span class="sxs-lookup"><span data-stu-id="e7c11-166">Open a PowerShell instance as an administrator and open to the folder you saved the script to.</span></span>
+
+4. <span data-ttu-id="e7c11-167">Connettersi alla directory utilizzando il cmdlet [Connect-AzureAD.](/powershell/module/azuread/connect-azuread)</span><span class="sxs-lookup"><span data-stu-id="e7c11-167">Connect to your directory using the [Connect-AzureAD](/powershell/module/azuread/connect-azuread) cmdlet.</span></span>
+
+5. <span data-ttu-id="e7c11-168">Eseguire questo comando di PowerShell:</span><span class="sxs-lookup"><span data-stu-id="e7c11-168">Run this PowerShell command:</span></span>
+
+   ```powershell
+   Get-AzureADPSPermissions.ps1 | Export-csv -Path "Permissions.csv" -NoTypeInformation
+   ```
+
+<span data-ttu-id="e7c11-169">Lo script produce un file denominato Permissions.csv.</span><span class="sxs-lookup"><span data-stu-id="e7c11-169">The script produces one file named Permissions.csv.</span></span> <span data-ttu-id="e7c11-170">Seguire questa procedura per cercare le autorizzazioni per le applicazioni illecite:</span><span class="sxs-lookup"><span data-stu-id="e7c11-170">Follow these steps to look for illicit application permission grants:</span></span>
+
+1. <span data-ttu-id="e7c11-171">Nella colonna ConsentType (colonna G) cercare il valore "AllPrinciples".</span><span class="sxs-lookup"><span data-stu-id="e7c11-171">In the ConsentType column (column G) search for the value "AllPrinciples".</span></span> <span data-ttu-id="e7c11-172">L'autorizzazione AllPrincipals consente all'applicazione client di accedere al contenuto di tutti gli utenti nella tenancy.</span><span class="sxs-lookup"><span data-stu-id="e7c11-172">The AllPrincipals permission allows the client application to access everyone's content in the tenancy.</span></span> <span data-ttu-id="e7c11-173">Le applicazioni native di Microsoft 365 necessitano di questa autorizzazione per funzionare correttamente.</span><span class="sxs-lookup"><span data-stu-id="e7c11-173">Native Microsoft 365 applications need this permission to work correctly.</span></span> <span data-ttu-id="e7c11-174">Ogni applicazione non Microsoft con questa autorizzazione deve essere esaminata con attenzione.</span><span class="sxs-lookup"><span data-stu-id="e7c11-174">Every non-Microsoft application with this permission should be reviewed carefully.</span></span>
+
+2. <span data-ttu-id="e7c11-175">Nella colonna Autorizzazione (colonna F) esaminare le autorizzazioni di cui dispone ogni applicazione delegata per il contenuto.</span><span class="sxs-lookup"><span data-stu-id="e7c11-175">In the Permission column (column F) review the permissions that each delegated application has to content.</span></span> <span data-ttu-id="e7c11-176">Cercare l'autorizzazione "Lettura" e "Scrittura" o "\*. Tutte le autorizzazioni e esamina queste con attenzione perché potrebbero non essere appropriate.</span><span class="sxs-lookup"><span data-stu-id="e7c11-176">Look for "Read" and "Write" permission or "\*.All" permission, and review these carefully because they may not be appropriate.</span></span>
+
+3. <span data-ttu-id="e7c11-177">Esaminare gli utenti specifici a cui sono stati concessi i consensi.</span><span class="sxs-lookup"><span data-stu-id="e7c11-177">Review the specific users that have consents granted.</span></span> <span data-ttu-id="e7c11-178">Se gli utenti di alto profilo o ad alto impatto hanno il consenso inappropriato concesso, è consigliabile analizzare ulteriormente.</span><span class="sxs-lookup"><span data-stu-id="e7c11-178">If high profile or high impact users have inappropriate consents granted, you should investigate further.</span></span>
+
+4. <span data-ttu-id="e7c11-179">Nella colonna ClientDisplayName (colonna C) cercare le app che sembrano sospette.</span><span class="sxs-lookup"><span data-stu-id="e7c11-179">In the ClientDisplayName column (column C) look for apps that seem suspicious.</span></span> <span data-ttu-id="e7c11-180">Le app con nomi con errori di ortografia, nomi super blando o nomi con suoni di hacker devono essere esaminate con attenzione.</span><span class="sxs-lookup"><span data-stu-id="e7c11-180">Apps with misspelled names, super bland names, or hacker-sounding names should be reviewed carefully.</span></span>
+
+## <a name="determine-the-scope-of-the-attack"></a><span data-ttu-id="e7c11-181">Determinare l'ambito dell'attacco</span><span class="sxs-lookup"><span data-stu-id="e7c11-181">Determine the scope of the attack</span></span>
+
+<span data-ttu-id="e7c11-182">Dopo aver completato l'inventario dell'accesso alle applicazioni, esaminare il **log di controllo per** determinare l'ambito completo della violazione.</span><span class="sxs-lookup"><span data-stu-id="e7c11-182">After you have finished inventorying application access, review the **audit log** to determine the full scope of the breach.</span></span> <span data-ttu-id="e7c11-183">Cercare gli utenti interessati, i tempi di accesso dell'applicazione illecita all'organizzazione e le autorizzazioni di cui disponeva l'app.</span><span class="sxs-lookup"><span data-stu-id="e7c11-183">Search on the affected users, the time frames that the illicit application had access to your organization, and the permissions the app had.</span></span> <span data-ttu-id="e7c11-184">È possibile eseguire ricerche **nel log di controllo** nel Centro sicurezza e conformità di Microsoft [365.](../../compliance/search-the-audit-log-in-security-and-compliance.md)</span><span class="sxs-lookup"><span data-stu-id="e7c11-184">You can search the **audit log** in the [Microsoft 365 Security and Compliance Center](../../compliance/search-the-audit-log-in-security-and-compliance.md).</span></span>
+
+> [!IMPORTANT]
+> <span data-ttu-id="e7c11-185">[Per ottenere](../../compliance/enable-mailbox-auditing.md) [](../../compliance/turn-audit-log-search-on-or-off.md) queste informazioni, è necessario che il controllo delle cassette postali e il controllo attività per amministratori e utenti siano stati abilitati prima dell'attacco.</span><span class="sxs-lookup"><span data-stu-id="e7c11-185">[Mailbox auditing](../../compliance/enable-mailbox-auditing.md) and [Activity auditing for admins and users](../../compliance/turn-audit-log-search-on-or-off.md) must have been enabled prior to the attack for you to get this information.</span></span>
+
+## <a name="how-to-stop-and-remediate-an-illicit-consent-grant-attack"></a><span data-ttu-id="e7c11-186">Come arrestare e correggere un attacco di concessione del consenso illecito</span><span class="sxs-lookup"><span data-stu-id="e7c11-186">How to stop and remediate an illicit consent grant attack</span></span>
+
+<span data-ttu-id="e7c11-187">Dopo aver identificato un'applicazione con autorizzazioni illecite, è possibile rimuovere tale accesso in diversi modi.</span><span class="sxs-lookup"><span data-stu-id="e7c11-187">After you have identified an application with illicit permissions, you have several ways to remove that access.</span></span>
+
+- <span data-ttu-id="e7c11-188">È possibile revocare l'autorizzazione dell'applicazione nel portale di Azure Active Directory:</span><span class="sxs-lookup"><span data-stu-id="e7c11-188">You can revoke the application's permission in the Azure Active Directory Portal by:</span></span>
+
+  - <span data-ttu-id="e7c11-189">Passare all'utente interessato nel **pannello Utente di Azure Active Directory.**</span><span class="sxs-lookup"><span data-stu-id="e7c11-189">Navigate to the affected user in the **Azure Active Directory User** blade.</span></span>
+
+  - <span data-ttu-id="e7c11-190">Selezionare **Applicazioni**.</span><span class="sxs-lookup"><span data-stu-id="e7c11-190">Select **Applications**.</span></span>
+
+  - <span data-ttu-id="e7c11-191">Selezionare l'applicazione illecita.</span><span class="sxs-lookup"><span data-stu-id="e7c11-191">Select the illicit application.</span></span>
+
+  - <span data-ttu-id="e7c11-192">Fare **clic su** Rimuovi nel drill-down.</span><span class="sxs-lookup"><span data-stu-id="e7c11-192">Click **Remove** in the drill down.</span></span>
+
+- <span data-ttu-id="e7c11-193">È possibile revocare la concessione del consenso OAuth con PowerShell seguendo la procedura descritta in [Remove-AzureADOAuth2PermissionGrant.](/powershell/module/azuread/Remove-AzureADOAuth2PermissionGrant)</span><span class="sxs-lookup"><span data-stu-id="e7c11-193">You can revoke the OAuth consent grant with PowerShell by following the steps in [Remove-AzureADOAuth2PermissionGrant](/powershell/module/azuread/Remove-AzureADOAuth2PermissionGrant).</span></span>
+
+- <span data-ttu-id="e7c11-194">È possibile revocare l'assegnazione del ruolo app di servizio con PowerShell seguendo la procedura descritta in [Remove-AzureADServiceAppRoleAssignment](/powershell/module/azuread/Remove-AzureADServiceAppRoleAssignment).</span><span class="sxs-lookup"><span data-stu-id="e7c11-194">You can revoke the Service App Role Assignment with PowerShell by following the steps in [Remove-AzureADServiceAppRoleAssignment](/powershell/module/azuread/Remove-AzureADServiceAppRoleAssignment).</span></span>
+
+- <span data-ttu-id="e7c11-195">Puoi anche disabilitare del tutto l'accesso per l'account interessato, che a sua volta disabiliterà l'accesso dell'app ai dati in tale account.</span><span class="sxs-lookup"><span data-stu-id="e7c11-195">You can also disable sign-in for the affected account altogether, which will in turn disable app access to data in that account.</span></span> <span data-ttu-id="e7c11-196">Questo non è l'ideale per la produttività dell'utente finale, naturalmente, ma se si sta lavorando per limitare rapidamente l'impatto, può essere una correzione a breve termine praticabile.</span><span class="sxs-lookup"><span data-stu-id="e7c11-196">This isn't ideal for the end user's productivity, of course, but if you are working to limit impact quickly, it can be a viable short-term remediation.</span></span>
+
+- <span data-ttu-id="e7c11-197">È possibile disattivare le applicazioni integrate per la tenancy.</span><span class="sxs-lookup"><span data-stu-id="e7c11-197">You can turn integrated applications off for your tenancy.</span></span> <span data-ttu-id="e7c11-198">Si tratta di un passaggio drastico che disabilita la possibilità per gli utenti finali di concedere il consenso a livello di tenant.</span><span class="sxs-lookup"><span data-stu-id="e7c11-198">This is a drastic step that disables the ability for end users to grant consent on a tenant-wide basis.</span></span> <span data-ttu-id="e7c11-199">In questo modo si impedisce agli utenti di concedere inavvertitamente l'accesso a un'applicazione dannosa.</span><span class="sxs-lookup"><span data-stu-id="e7c11-199">This prevents your users from inadvertently granting access to a malicious application.</span></span> <span data-ttu-id="e7c11-200">Questo non è consigliabile in quanto intasa gravemente la capacità degli utenti di essere produttivi con applicazioni di terze parti.</span><span class="sxs-lookup"><span data-stu-id="e7c11-200">This isn't strongly recommended as it severely impairs your users' ability to be productive with third party applications.</span></span> <span data-ttu-id="e7c11-201">A tale scopo, seguire la procedura descritta in Attivazione o disattivazione [delle app integrate.](../../admin/misc/user-consent.md)</span><span class="sxs-lookup"><span data-stu-id="e7c11-201">You can do this by following the steps in [Turning Integrated Apps on or off](../../admin/misc/user-consent.md).</span></span>
+
+## <a name="secure-microsoft-365-like-a-cybersecurity-pro"></a><span data-ttu-id="e7c11-202">Proteggere Microsoft 365 come un professionista della sicurezza informatica</span><span class="sxs-lookup"><span data-stu-id="e7c11-202">Secure Microsoft 365 like a cybersecurity pro</span></span>
+
+<span data-ttu-id="e7c11-203">L'abbonamento a Microsoft 365 include un potente set di funzionalità di protezione che consente di proteggere i propri dati e quelli degli altri utenti.</span><span class="sxs-lookup"><span data-stu-id="e7c11-203">Your Microsoft 365 subscription comes with a powerful set of security capabilities that you can use to protect your data and your users.</span></span> <span data-ttu-id="e7c11-204">Usare la [Roadmap della sicurezza di Microsoft 365: principali priorità per i primi 30 giorni, 90 giorni e oltre](security-roadmap.md) per implementare le procedure consigliate da Microsoft per proteggere il tenant di Microsoft 365.</span><span class="sxs-lookup"><span data-stu-id="e7c11-204">Use the [Microsoft 365 security roadmap - Top priorities for the first 30 days, 90 days, and beyond](security-roadmap.md) to implement Microsoft recommended best practices for securing your Microsoft 365 tenant.</span></span>
+
+- <span data-ttu-id="e7c11-205">Attività da eseguire i primi 30 giorni.</span><span class="sxs-lookup"><span data-stu-id="e7c11-205">Tasks to accomplish in the first 30 days.</span></span> <span data-ttu-id="e7c11-206">Queste hanno effetto immediato e sono a basso impatto per gli utenti.</span><span class="sxs-lookup"><span data-stu-id="e7c11-206">These have immediate affect and are low-impact to your users.</span></span>
+
+- <span data-ttu-id="e7c11-207">Attività da completare in 90 giorni.</span><span class="sxs-lookup"><span data-stu-id="e7c11-207">Tasks to accomplish in 90 days.</span></span> <span data-ttu-id="e7c11-208">Queste attività richiedono una quantità di tempo leggermente superiore per la pianificazione e l'implementazione, ma aumentano notevolmente il livello di sicurezza.</span><span class="sxs-lookup"><span data-stu-id="e7c11-208">These take a bit more time to plan and implement but greatly improve your security posture.</span></span>
+
+- <span data-ttu-id="e7c11-209">Dopo 90 giorni.</span><span class="sxs-lookup"><span data-stu-id="e7c11-209">Beyond 90 days.</span></span> <span data-ttu-id="e7c11-210">Questi miglioramenti si instaurano nei primi 90 giorni di lavoro effettuato.</span><span class="sxs-lookup"><span data-stu-id="e7c11-210">These enhancements build in your first 90 days work.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="e7c11-211">Vedere anche:</span><span class="sxs-lookup"><span data-stu-id="e7c11-211">See also:</span></span>
+
+- <span data-ttu-id="e7c11-212">[L'applicazione imprevista](/azure/active-directory/application-access-unexpected-application) nell'elenco delle applicazioni consente agli amministratori di eseguire varie azioni dopo aver verificato che sono presenti applicazioni impreviste con accesso ai dati.</span><span class="sxs-lookup"><span data-stu-id="e7c11-212">[Unexpected application in my applications list](/azure/active-directory/application-access-unexpected-application) walks administrators through various actions they may want to take after realizing there are unexpected applications with access to data.</span></span>
+
+- <span data-ttu-id="e7c11-213">[L'integrazione delle applicazioni con Azure Active Directory](/azure/active-directory/active-directory-apps-permissions-consent) è una panoramica generale del consenso e delle autorizzazioni.</span><span class="sxs-lookup"><span data-stu-id="e7c11-213">[Integrating applications with Azure Active Directory](/azure/active-directory/active-directory-apps-permissions-consent) is a high-level overview of consent and permissions.</span></span>
+
+- <span data-ttu-id="e7c11-214">[I problemi di sviluppo dell'applicazione](/azure/active-directory/active-directory-application-dev-development-content-map) forniscono collegamenti a vari articoli relativi al consenso.</span><span class="sxs-lookup"><span data-stu-id="e7c11-214">[Problems developing my application](/azure/active-directory/active-directory-application-dev-development-content-map) provides links to various consent related articles.</span></span>
+
+- <span data-ttu-id="e7c11-215">[Gli oggetti applicazione e entità servizio in Azure Active Directory (Azure AD)](/azure/active-directory/develop/active-directory-application-objects) forniscono una panoramica degli oggetti Application e Service Principal di base del modello di applicazione.</span><span class="sxs-lookup"><span data-stu-id="e7c11-215">[Application and service principal objects in Azure Active Directory (Azure AD)](/azure/active-directory/develop/active-directory-application-objects) provides an overview of the Application and Service principal objects that are core to the application model.</span></span>
+
+- <span data-ttu-id="e7c11-216">[Gestire l'accesso alle app](/azure/active-directory/active-directory-managing-access-to-apps) è una panoramica delle funzionalità necessarie agli amministratori per gestire l'accesso degli utenti alle app.</span><span class="sxs-lookup"><span data-stu-id="e7c11-216">[Manage access to apps](/azure/active-directory/active-directory-managing-access-to-apps) is an overview of the capabilities that administrators have to manage user access to apps.</span></span>
