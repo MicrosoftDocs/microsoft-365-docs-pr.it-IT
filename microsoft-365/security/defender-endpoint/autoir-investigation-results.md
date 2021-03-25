@@ -22,23 +22,23 @@ ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 ms.date: 02/02/2021
-ms.openlocfilehash: c11d9cd1ce4c2ca49315ec62b51c23ef981555f4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b66640736e9dc3835919e39d482b2d38b0c9dcc7
+ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067325"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51183682"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Dettagli e risultati di un'indagine automatizzata
 
 **Si applica a:**
-- Microsoft Defender ATP
+- Microsoft Defender per endpoint
 
 Con Microsoft Defender per [](automated-investigations.md) Endpoint, quando viene eseguita un'indagine automatizzata, i dettagli su tale indagine sono disponibili sia durante che dopo il processo di indagine automatizzata. Se di dispone delle autorizzazioni necessarie, è possibile visualizzare i dettagli in una visualizzazione dei dettagli dell'indagine. La vista dei dettagli dell'indagine consente di avere uno stato aggiornato e la possibilità di approvare eventuali azioni in sospeso. 
 
 ## <a name="new-unified-investigation-page"></a>(NEW!) Pagina analisi unificata
 
-La pagina di indagine è stata aggiornata di recente per includere informazioni su dispositivi, posta elettronica e contenuti di collaborazione. La nuova pagina di indagine unificata definisce un linguaggio comune e offre un'esperienza unificata per le indagini automatiche in [Microsoft Defender for Endpoint](microsoft-defender-advanced-threat-protection.md) e Microsoft Defender per Office [365.](/microsoft-365/security/defender-365-security/office-365-atp) 
+La pagina di indagine è stata aggiornata di recente per includere informazioni su dispositivi, posta elettronica e contenuti di collaborazione. La nuova pagina di indagine unificata definisce un linguaggio comune e offre un'esperienza unificata per le indagini automatiche in [Microsoft Defender for Endpoint](microsoft-defender-endpoint.md) e Microsoft Defender per Office [365.](/microsoft-365/security/defender-365-security/office-365-atp) 
 
 > [!TIP]
 > Per ulteriori informazioni sulle modifiche, vedere [(NEW!) Pagina di indagine unificata](/microsoft-365/security/mtp/mtp-autoir-results).

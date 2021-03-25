@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Riepilogo: comprendere le azioni e gli impatti delle fasi di migrazione del passaggio da Microsoft Cloud Germania (Microsoft Cloud Deutschland) ai servizi di Office 365 nella nuova area dati tedesca.'
-ms.openlocfilehash: 5e1bf9257cfd4751333e2e01789bb7dbaf2685fa
-ms.sourcegitcommit: 30c3054004ddc9d6059c11d55577552aa2464810
+ms.openlocfilehash: 53a8c9470093db9d57d8dc18f4242d1a596c6efd
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50939636"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51165634"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland-general"></a>Azioni e impatti delle fasi di migrazione per la migrazione da Microsoft Cloud Deutschland (generale)
 
@@ -62,7 +62,7 @@ Le sezioni seguenti contengono azioni ed effetti per i carichi di lavoro durante
 
 ## <a name="before-the-migration-starts"></a>Prima dell'inizio della migrazione
 
-Assicurarsi di avere familiarità con i passaggi di preparazione della migrazione che [si applicano a tutti i clienti.](ms-cloud-germany-transition-add-pre-work.md#applies-to-everyone)
+Assicurarsi di avere familiarità con i passaggi di preparazione [della migrazione che si applicano a tutti i clienti](ms-cloud-germany-transition-add-pre-work.md).
 
 Nel caso in cui sia stato impostato un CNAME DNS denominato _msoid_ in uno o più spazi dei nomi DNS di cui si è proprietari, è necessario rimuovere il CNAME fino alla fine della fase 8 al più tardi. È possibile rimuovere il _msoid_ CNAME in qualsiasi momento prima della fine della fase 8. Vedere la [documentazione preliminare per DNS](ms-cloud-germany-transition-add-pre-work.md#dns).
 
@@ -111,7 +111,7 @@ Se si utilizza exchange Online ibrido: gli amministratori della distribuzione ib
 
 Al termine della fase di migrazione **9** (quando viene pubblicato l'avviso del Centro messaggi), è necessario eseguire di nuovo HCW usando le impostazioni di Office 365 Worldwide per puntare i sistemi locali ai servizi globali di Office 365.
 
-Se vuoi modificare le foto degli utenti durante la fase 5, vedi [Set-UserPhoto](ms-cloud-germany-transition-add-experience.md#exchange-online-before-phase-5)
+Se si desidera modificare le foto degli utenti durante la fase 5, vedere [Exchange Online Set-UserPhoto durante la fase 5](ms-cloud-germany-transition-add-experience.md#exchange-online-set-userphoto-during-phase-5)
 
 | Step(s) | Descrizione | Impatto |
 |:-------|:-------|:-------|
@@ -211,11 +211,11 @@ I clienti con Dynamics 365 richiedono un impegno aggiuntivo per eseguire la migr
 
 I tenant di Office 365 che effettuano la transizione all'area "Germania" richiedono a tutti gli utenti di chiudere, disconnettersi da Office 365 e accedere di nuovo per tutte le applicazioni desktop di Office (Word, Excel, PowerPoint, Outlook e così via) e il client OneDrive for Business dopo che la migrazione del tenant ha raggiunto la fase 9. La disconnessione e l'accesso consentono ai servizi di Office di ottenere nuovi token di autenticazione dal servizio Azure AD globale.
 
-Assicurati di aver completato la [procedura preliminare per i dispositivi](ms-cloud-germany-transition-add-pre-work.md#mobile) mobili.
+Assicurati di aver completato la [procedura preliminare per i dispositivi](ms-cloud-germany-transition-add-pre-work.md#mobile-device-management) mobili.
 
 | Step(s) | Descrizione | Impatto |
 |:-------|:-------|:-------|
-| Client, Office Online durante il cutover del client di Office, Azure AD finalizza l'ambito tenant in modo che punti ai servizi di Office 365. | Questa modifica della configurazione consente ai client di Office di aggiornare e puntare agli endpoint dei servizi di Office 365. | <ul><li>Informare gli utenti di chiudere _tutte_ le app di Office e quindi accedere di nuovo (o forzare il riavvio dei client e gli utenti ad accedere) per consentire ai client di Office di ritirare la modifica. </li><li>Informare gli utenti e  il personale del supporto tecnico che gli utenti potrebbero visualizzare un banner di Office che richiede di riattivare le app di Office entro 72 ore dal cutover. </li><li>Tutte le applicazioni di Office nei computer personali devono essere chiuse e gli utenti devono disconnettersi e quindi accedere di nuovo. Nella barra di attivazione gialla, accedere per riattivare i servizi di Office 365.</li><li>I computer condivisi richiederanno azioni simili ai computer personali e non richiederanno una procedura speciale. </li><li>Nei dispositivi mobili, gli utenti devono disconnettersi dall'app, chiuderle e quindi accedere di nuovo. </li></ul>|
+| Client, Office Online durante il cutover del client di Office, Azure AD finalizza l'ambito tenant in modo che punti ai servizi di Office 365. | Questa modifica della configurazione consente ai client di Office di aggiornare e puntare agli endpoint dei servizi di Office 365. | <ul><li>Informare gli utenti di chiudere _tutte_ le app di Office e quindi accedere di nuovo (o forzare il riavvio dei client e gli utenti ad accedere) per consentire ai client di Office di ritirare la modifica. </li><li>Informare gli utenti e  il personale del supporto tecnico che gli utenti potrebbero visualizzare un banner di Office che richiede di riattivare le app di Office entro 72 ore dal cutover. </li><li>Tutte le applicazioni di Office nei computer personali devono essere chiuse e gli utenti devono disconnettersi e quindi accedere di nuovo. Nella barra di attivazione gialla, accedere per riattivare i servizi di Office 365.</li><li>I computer condivisi richiederanno azioni simili ai computer personali e non richiederanno una procedura speciale. </li><li>Nei dispositivi mobili, gli utenti devono disconnettersi dall'app, chiuderle e quindi accedere di nuovo.</li></ul>|
 ||||
 
 ## <a name="line-of-business-apps"></a>App line-of-business

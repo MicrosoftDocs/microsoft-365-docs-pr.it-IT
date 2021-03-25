@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Riepilogo: passaggi di migrazione di Active Directory Federation Services (AD FS) per la migrazione da Microsoft Cloud Deutschland.'
-ms.openlocfilehash: 146f476a43e46925d87763a800467bf52adc73e5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 12465acf5b4afe7e252586ddd076250628b57dd3
+ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50918907"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "51165658"
 ---
 # <a name="ad-fs-migration-steps-for-the-migration-from-microsoft-cloud-deutschland"></a>Passaggi di migrazione di AD FS per la migrazione da Microsoft Cloud Deutschland
 
@@ -59,11 +59,11 @@ Dopo aver completato e testato il backup di AD FS, eseguire la procedura seguent
 
 8. Per AD FS 2012: nella pagina **Scegli** regole di autorizzazione rilascio mantenere Selezionata l'opzione Consenti a tutti gli utenti di accedere a questa **relying party** e fare clic su **Avanti.**
 
-8. Per AD FS 2016 e AD FS 2019: nella pagina **Scegli** criteri di controllo di accesso selezionare il criterio di controllo di accesso appropriato e fare clic su **Avanti.** Se non si sceglie nessuno, l'attendibilità del componente **NON funzionerà.**
+9. Per AD FS 2016 e AD FS 2019: nella pagina **Scegli** criteri di controllo di accesso selezionare il criterio di controllo di accesso appropriato e fare clic su **Avanti.** Se non si sceglie nessuno, l'attendibilità del componente **NON funzionerà.**
 
-9. Fare **clic su** Avanti nella pagina Pronto per **aggiungere** attendibilità per completare la procedura guidata.
+10. Fare **clic su** Avanti nella pagina Pronto per **aggiungere** attendibilità per completare la procedura guidata.
 
-10. Fare **clic su** Chiudi nella **pagina** Fine.
+11. Fare **clic su** Chiudi nella **pagina** Fine.
 
 Chiudendo la procedura guidata, viene stabilita l'attendibilità relying party con il servizio globale di Office 365. Tuttavia, non sono ancora configurate regole di trasformazione rilascio.
 
@@ -74,7 +74,19 @@ Chiudendo la procedura guidata, viene stabilita l'attendibilità relying party c
 
 1. Eseguire **Generate Claims** on AD FS [Help](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) e copiare lo script di PowerShell usando l'opzione **Copy** nell'angolo superiore destro dello script.
 
-2. Seguire i passaggi descritti nella Guida [di AD FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) su come eseguire lo script di PowerShell nella farm AD FS per generare il trust relying party globale.
+2. Seguire i passaggi descritti nella Guida [di AD FS](https://adfshelp.microsoft.com/AadTrustClaims/ClaimsGenerator) su come eseguire lo script di PowerShell nella farm AD FS per generare il trust relying party globale. Prima di eseguire lo script, sostituire le righe di codice seguenti nello script generato come descritto di seguito:
+
+   ```powershell
+   # AD FS Help generated value
+   $claims = Get-AdfsRelyingPartyTrust -Identifier $(Get-RpIdentifier) | Select-Object IssuanceTransformRules;
+   # replace with
+   $claims = Get-AdfsRelyingPartyTrust -Identifier urn:federation:MicrosoftOnline | Select-Object IssuanceTransformRules;
+
+   # AD FS Help generated value
+   Set-AdfsRelyingPartyTrust -TargetIdentifier $(Get-RpIdentifier) -IssuanceTransformRules $RuleSet.ClaimRulesString;
+   # replace with
+   Set-AdfsRelyingPartyTrust -TargetIdentifier urn:federation:MicrosoftOnline -IssuanceTransformRules $RuleSet.ClaimRulesString;
+   ```
 
 3. Verificare che siano presenti due relying partyTtrust; uno per Microsoft Cloud Deutschland e uno per il servizio Office 365 Global. Il comando seguente può essere utilizzato per il controllo. Deve restituire due righe e i rispettivi nomi e identificatori.
 
@@ -86,9 +98,7 @@ Chiudendo la procedura guidata, viene stabilita l'attendibilità relying party c
 
 5. Durante la migrazione del tenant, verificare regolarmente che l'autenticazione AD FS funzioni con Microsoft Cloud Deutschland e microsoft global cloud nei vari passaggi di migrazione supportati.
 
-
 ## <a name="ad-fs-disaster-recovery-wid-database"></a>Ripristino di emergenza AD FS (database WID)
-
 
 Per ripristinare la farm AD FS in uno strumento di ripristino rapido [di ADFS](/windows-server/identity/ad-fs/operations/ad-fs-rapid-restore-tool) di emergenza deve essere utilizzato. Pertanto, lo strumento deve essere scaricato e prima dell'inizio della migrazione deve essere creato e archiviato in modo sicuro un backup. In questo esempio sono stati eseguiti i comandi seguenti per eseguire il backup di una farm in esecuzione in un database WID:
 
@@ -112,7 +122,6 @@ Per ripristinare la farm AD FS in uno strumento di ripristino rapido [di ADFS](/
 
 4. Archiviare il backup in modo sicuro in una destinazione desiderata.
 
-
 ### <a name="restore-an-ad-fs-farm"></a>Ripristinare una farm AD FS
 
 Se la farm ha avuto completamente esito negativo e non è possibile tornare alla farm precedente, eseguire le operazioni seguenti. 
@@ -126,7 +135,6 @@ Se la farm ha avuto completamente esito negativo e non è possibile tornare alla
    ```
 
 3. Puntare i nuovi record DNS o il servizio di bilanciamento del carico ai nuovi server AD FS.
-
 
 ## <a name="more-information"></a>Ulteriori informazioni
 
