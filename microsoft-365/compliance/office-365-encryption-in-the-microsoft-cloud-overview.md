@@ -17,12 +17,12 @@ ms.collection:
 - Strat_O365_Enterprise
 description: In questo articolo, leggere una panoramica delle varie forme di crittografia utilizzate per mantenere al sicuro i dati dei clienti nel cloud Microsoft.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a8e184fbe722de674db6f9bcc47e2ab5aa0723d1
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4a351215b7773574d5932b936e30c5d5ca7aa116
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926223"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222281"
 ---
 # <a name="encryption-in-the-microsoft-cloud"></a>Crittografia nel Microsoft Cloud
 
@@ -57,7 +57,7 @@ Per impostazione predefinita, tutti i server rivolti al cliente negoziano con TL
 - [Crittografia in Azure](office-365-azure-encryption.md)
 - [BitLocker e Distributed Key Manager (DKM) per la crittografia](office-365-bitlocker-and-distributed-key-manager-for-encryption.md)
 - [Servizio di crittografia di Office 365](office-365-service-encryption.md)
-- [Crittografia di Office 365 per Skype for Business, OneDrive for Business, SharePoint Online ed Exchange Online](./n/compliance/assurance/assurance-encryption-for-microsoft-365-services)
+- [Crittografia di Office 365 per Skype for Business, OneDrive for Business, SharePoint Online ed Exchange Online](https://docs.microsoft.com/compliance/assurance/assurance-encryption-for-microsoft-365-services) 
 - [Crittografia per i dati in transito](/compliance/assurance/assurance-encryption-in-transit)
 - [Funzionalità di crittografia gestite dai clienti](office-365-customer-managed-encryption-features.md)
 - [Protezione e rischi della crittografa](office-365-encryption-risks-and-protections.md)

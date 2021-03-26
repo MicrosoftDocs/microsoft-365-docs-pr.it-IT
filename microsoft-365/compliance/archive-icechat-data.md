@@ -12,12 +12,12 @@ ms.service: O365-seccomp
 localization_priority: Normal
 ms.collection: M365-security-compliance
 description: Gli amministratori possono configurare un connettore per importare e archiviare i dati dallo strumento ICE Chat in Microsoft 365. In questo modo è possibile archiviare i dati da origini dati di terze parti in Microsoft 365 in modo da poter utilizzare funzionalità di conformità come il blocco legale, la ricerca di contenuto e i criteri di conservazione per gestire i dati di terze parti dell'organizzazione.
-ms.openlocfilehash: 663b122ec81a3d2d448e8d0abe5da0bdd9dc7313
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 8c05e035f7a9cf310367680ec37256722c397437
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904184"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222355"
 ---
 # <a name="set-up-a-connector-to-archive-ice-chat-data"></a>Configurare un connettore per archiviare i dati di ICE Chat
 
@@ -41,7 +41,7 @@ Nella panoramica seguente viene illustrato il processo di utilizzo di un connett
 
    Oltre al mapping automatico degli utenti che utilizza i valori delle proprietà *SenderEmail* e *RecipientEmail* (che significa che il connettore importa un messaggio di chat nella cassetta postale del mittente e nelle cassette postali di ogni destinatario), è anche possibile definire il mapping utente personalizzato caricando un file di mapping CSV. Questo file di mapping contiene *l'IMId* di ICE Chat e l'indirizzo della cassetta postale di Microsoft 365 corrispondente per ogni utente dell'organizzazione. Se si abilita il mapping automatico degli utenti e si fornisce un file di mapping personalizzato, per ogni elemento di chat il connettore guarderà innanzitutto il file di mapping personalizzato. Se non viene trovato un account utente di Microsoft 365 valido che corrisponde all'IMId ice chat di un utente, il connettore utilizzerà le proprietà *SenderEmail* e *RecipientEmail* dell'elemento di chat per importare l'elemento nelle cassette postali dei partecipanti alla chat. Se il connettore non trova un utente di Microsoft 365 valido nel file di mapping personalizzato o nelle proprietà *SenderEmail* e *RecipientEmail,* l'elemento non verrà importato.
 
-## <a name="before-you-begin"></a>Prima di iniziare
+## <a name="before-you-set-up-a-connector"></a>Prima di configurare un connettore
 
 Alcuni dei passaggi di implementazione necessari per archiviare i dati di ICE Chat sono esterni a Microsoft 365 e devono essere completati prima di poter creare il connettore nel Centro conformità.
 
@@ -49,13 +49,21 @@ Alcuni dei passaggi di implementazione necessari per archiviare i dati di ICE Ch
 
 - È necessario configurare un sito SFTP ice chat prima di creare il connettore nel passaggio 3. Dopo aver lavorato con ICE Chat per configurare il sito SFTP, i dati di ICE Chat vengono caricati ogni giorno nel sito SFTP. Il connettore creato nel passaggio 3 si connette a questo sito SFTP e trasferisce i dati della chat alle cassette postali di Microsoft 365. SFTP crittografa anche i dati di ICE Chat inviati alle cassette postali durante il processo di trasferimento.
 
+- Per configurare un connettore ice chat, è necessario utilizzare chiavi e passphrase per Pretty Good Privacy (PGP) e Secure Shell (SSH). Queste chiavi vengono utilizzate per configurare il sito ICE Chat SFTP e utilizzate dal connettore per connettersi al sito ICE Chat SFTP per importare i dati in Microsoft 365. La chiave PGP viene utilizzata per configurare la crittografia dei dati trasferiti dal sito SFTP ice chat a Microsoft 365. La chiave SSH viene utilizzata per configurare la shell sicura per abilitare un accesso remoto sicuro quando il connettore si connette al sito ICE Chat SFTP.
+
+  Quando si configura un connettore, è possibile utilizzare le chiavi pubbliche e le passphrase fornite da Microsoft oppure è possibile utilizzare le proprie chiavi private e passphrase. Ti consigliamo di usare le chiavi pubbliche fornite da Microsoft. Tuttavia, se l'organizzazione ha già configurato un sito SFTP ice chat utilizzando chiavi private, è possibile creare un connettore utilizzando le stesse chiavi private.
+
 - Il connettore ICE Chat può importare un totale di 200.000 elementi in un solo giorno. Se nel sito SFTP sono presenti più di 200.000 elementi, nessuno di questi elementi verrà importato in Microsoft 365.
 
 - All'amministratore che crea il connettore ICE Chat nel passaggio 3 (e che scarica le chiavi pubbliche e l'indirizzo IP nel passaggio 1) deve essere assegnato il ruolo importazione/esportazione delle cassette postali in Exchange Online. Questo ruolo è necessario per aggiungere connettori nella pagina **Connettori dati** nel Centro conformità Microsoft 365. Per impostazione predefinita, questo ruolo non è assegnato ad alcun gruppo di ruoli in Exchange Online. È possibile aggiungere il ruolo Esportazione importazione cassette postali al gruppo di ruoli Gestione organizzazione in Exchange Online. In caso contrario, è possibile creare un gruppo di ruoli, assegnare il ruolo Importazione/Esportazione cassette postali e quindi aggiungere gli utenti appropriati come membri. Per ulteriori informazioni, vedere le sezioni [Create role groups](/Exchange/permissions-exo/role-groups#create-role-groups) o Modify role [groups](/Exchange/permissions-exo/role-groups#modify-role-groups) nell'articolo "Manage role groups in Exchange Online".
 
-## <a name="step-1-obtain-ssh-and-pgp-public-keys"></a>Passaggio 1: Ottenere le chiavi pubbliche SSH e PGP
+## <a name="set-up-a-connector-using-public-keys"></a>Configurare un connettore con chiavi pubbliche
 
-Il primo passaggio consiste nell'ottenere una copia delle chiavi pubbliche per Secure Shell (SSH) e Pretty Good Privacy (PGP). Queste chiavi vengono utilizzate nel passaggio 2 per configurare il sito ICE Chat SFTP per consentire al connettore (creato nel passaggio 3) di connettersi al sito SFTP e trasferire i dati di ICE Chat alle cassette postali di Microsoft 365. Verrà inoltre ottenuto un indirizzo IP in questo passaggio, che verrà utilizzato durante la configurazione del sito SFTP di ICE Chat.
+La procedura descritta in questa sezione illustra come configurare un connettore ice chat utilizzando le chiavi pubbliche per Pretty Good Privacy (PGP) e Secure Shell (SSH).
+
+### <a name="step-1-obtain-pgp-and-ssh-public-keys"></a>Passaggio 1: Ottenere le chiavi pubbliche PGP e SSH
+
+Il primo passaggio consiste nel ottenere una copia delle chiavi pubbliche per Pretty Good Privacy (PGP) e Secure Shell (SSH). Queste chiavi vengono utilizzate nel passaggio 2 per configurare il sito ICE Chat SFTP per consentire al connettore (creato nel passaggio 3) di connettersi al sito SFTP e trasferire i dati di ICE Chat alle cassette postali di Microsoft 365. Verrà inoltre ottenuto un indirizzo IP in questo passaggio, che verrà utilizzato durante la configurazione del sito SFTP di ICE Chat.
 
 1. Vai a [https://compliance.microsoft.com](https://compliance.microsoft.com) e fai clic su **Connettori dati** nel riquadro di spostamento sinistro.
 
@@ -65,21 +73,29 @@ Il primo passaggio consiste nell'ottenere una copia delle chiavi pubbliche per S
 
 4. Nella pagina **Condizioni di servizio** fare clic su **Accetta.**
 
-5. Nella pagina Aggiungi credenziali per il sito **SFTP** di ICE Chat al passaggio 1 fare clic sulla chiave **Scarica SSH,** scarica chiave **PGP** e Scarica collegamenti indirizzo **IP** per salvare una copia di ogni file nel computer locale. Questi file contengono gli elementi seguenti che vengono utilizzati per configurare il sito SFTP ice chat nel passaggio 2:
+5. Nella pagina **Aggiungi credenziali per l'origine** contenuto fare clic su Voglio usare le chiavi pubbliche PGP e **SSH fornite da Microsoft.**
 
-   - Chiave pubblica SSH: questa chiave viene utilizzata per configurare Secure SSH per abilitare un accesso remoto sicuro quando il connettore si connette al sito ICE Chat SFTP.
+   ![Selezionare l'opzione per l'utilizzo delle chiavi pubbliche](../media/ICEChatPublicKeysOption.png)
+
+6. Nel passaggio 1, fare clic sulla chiave **Download SSH,** **download PGP key** e Download IP **address** links per salvare una copia di ogni file nel computer locale.
+
+   ![Collegamenti per scaricare le chiavi pubbliche e l'indirizzo IP](../media/ICEChatPublicKeyDownloadLinks.png)
+
+   Questi file contengono gli elementi seguenti che vengono utilizzati per configurare il sito SFTP ice chat nel passaggio 2:
 
    - Chiave pubblica PGP: questa chiave viene utilizzata per configurare la crittografia dei dati trasferiti dal sito ICE Chat SFTP a Microsoft 365.
 
+   - Chiave pubblica SSH: questa chiave viene utilizzata per configurare Secure SSH per abilitare un accesso remoto sicuro quando il connettore si connette al sito ICE Chat SFTP.
+
    - Indirizzo IP: il sito ICE Chat SFTP è configurato per accettare una richiesta di connessione solo da questo indirizzo IP, che viene utilizzato dal connettore ICE Chat creato nel passaggio 3.
 
-6. Fare **clic su** Annulla per chiudere la procedura guidata. Si torna a questa procedura guidata nel passaggio 3 per creare il connettore.
+7. Fare **clic su** Annulla per chiudere la procedura guidata. Si torna a questa procedura guidata nel passaggio 3 per creare il connettore.
 
-## <a name="step-2-configure-the-ice-chat-sftp-site"></a>Passaggio 2: Configurare il sito SFTP di ICE Chat
+### <a name="step-2-configure-the-ice-chat-sftp-site"></a>Passaggio 2: Configurare il sito SFTP di ICE Chat
 
-Il passaggio successivo consiste nell'utilizzare le chiavi pubbliche SSH e PGP e l'indirizzo IP ottenuto nel passaggio 1 per configurare l'autenticazione SSH e la crittografia PGP per il sito SFTP di ICE Chat. Ciò consente al connettore ICE Chat creato nel passaggio 3 di connettersi al sito SFTP di ICE Chat e trasferire i dati di ICE Chat a Microsoft 365. Per configurare il sito ICE Chat SFTP, è necessario collaborare con il supporto tecnico ice chat.
+Il passaggio successivo consiste nell'utilizzare le chiavi pubbliche PGP e SSH e l'indirizzo IP ottenuto nel passaggio 1 per configurare la crittografia PGP e l'autenticazione SSH per il sito SFTP di ICE Chat. Ciò consente al connettore ICE Chat creato nel passaggio 3 di connettersi al sito SFTP di ICE Chat e trasferire i dati di ICE Chat a Microsoft 365. Per configurare il sito ICE Chat SFTP, è necessario collaborare con il supporto tecnico ice chat.
 
-## <a name="step-3-create-an-ice-chat-connector"></a>Passaggio 3: Creare un connettore ice chat
+### <a name="step-3-create-an-ice-chat-connector"></a>Passaggio 3: Creare un connettore ice chat
 
 L'ultimo passaggio consiste nel creare un connettore ice chat nel Centro conformità Microsoft 365. Il connettore utilizza le informazioni fornite per connettersi al sito ICE Chat SFTP e trasferire i messaggi di chat alle caselle delle cassette postali utente corrispondenti in Microsoft 365.
 
@@ -91,23 +107,100 @@ L'ultimo passaggio consiste nel creare un connettore ice chat nel Centro conform
 
 4. Nella pagina **Condizioni di servizio** fare clic su **Accetta.**
 
-5. Nella pagina Aggiungi credenziali per il sito **ICE Chat SFTP,** in Passaggio 3, immettere le informazioni necessarie nelle caselle seguenti e quindi fare clic su **Convalida connessione.**
+5. Nella pagina **Aggiungi credenziali per l'origine contenuto** fare clic su Voglio usare le chiavi pubbliche **PGP e SSH.**
+
+6. In Passaggio 3 immettere le informazioni necessarie nelle caselle seguenti e quindi fare clic su **Convalida connessione**.
 
    - **Codice fermo:** ID dell'organizzazione, utilizzato come nome utente per il sito SFTP di ICE Chat.
 
    - **Password:** Password per il sito SFTP di ICE Chat.
 
-   - **URL SFTP:** URL per il sito SFTP di ICE Chat (ad esempio, sftp.theice.com).
+   - **URL SFTP:** URL per il sito SFTP di ICE Chat (ad esempio, `sftp.theice.com` ). È inoltre possibile utilizzare un indirizzo IP per questo valore.
 
    - **Porta SFTP:** Numero di porta per il sito SFTP ice chat. Il connettore utilizza questa porta per connettersi al sito SFTP.
 
-6. Dopo la convalida della connessione, fare clic su **Avanti.**
+7. Dopo aver convalidato correttamente la connessione, fare clic su **Avanti.**
 
-7. Nella pagina **Mapping utenti esterni a utenti di Microsoft 365** abilitare il mapping automatico degli utenti e fornire il mapping utente personalizzato in base alle esigenze. È possibile scaricare una copia del file CSV di mapping degli utenti in questa pagina. È possibile aggiungere i mapping utente al file e quindi caricarlo.
+8. Nella pagina **Mapping utenti esterni a utenti di Microsoft 365** abilitare il mapping automatico degli utenti e fornire il mapping utente personalizzato in base alle esigenze. È possibile scaricare una copia del file CSV di mapping degli utenti in questa pagina. È possibile aggiungere i mapping utente al file e quindi caricarlo.
 
    > [!NOTE]
    > Come spiegato in precedenza, il file CSV del file di mapping personalizzato contiene l'imid ice chat e l'indirizzo della cassetta postale di Microsoft 365 corrispondente per ogni utente. Se si abilita il mapping automatico degli utenti e si fornisce un mapping personalizzato, per ogni elemento di chat, il connettore guarderà innanzitutto il file di mapping personalizzato. Se non trova un utente di Microsoft 365 valido che corrisponde all'imid ICE Chat di un utente, il connettore importerà l'elemento nelle cassette postali per gli utenti specificati nelle proprietà *SenderEmail* e *RecipientEmail* dell'elemento di chat. Se il connettore non trova un utente di Microsoft 365 valido tramite il mapping automatico o personalizzato dell'utente, l'elemento non verrà importato.
 
-8. Fare **clic su** Avanti, rivedere le impostazioni e quindi fare clic su **Fine** per creare il connettore.
+9. Fare **clic su** Avanti, rivedere le impostazioni e quindi fare clic su **Fine** per creare il connettore.
 
-9. Passare alla **pagina Connettori dati** per visualizzare l'avanzamento del processo di importazione per il nuovo connettore.
+10. Passare alla **pagina Connettori dati** per visualizzare l'avanzamento del processo di importazione per il nuovo connettore.
+
+## <a name="set-up-a-connector-using-private-keys"></a>Configurare un connettore con chiavi private
+
+La procedura descritta in questa sezione illustra come configurare un connettore ice chat utilizzando le chiavi private PGP e SSH. Questa opzione di configurazione del connettore è destinata alle organizzazioni che hanno già configurato un sito SFTP ice chat utilizzando chiavi private.
+
+### <a name="step-1-obtain-an-ip-address-to-configure-the-ice-chat-sftp-site"></a>Passaggio 1: Ottenere un indirizzo IP per configurare il sito SFTP di ICE Chat
+
+Se l'organizzazione ha utilizzato le chiavi private PGP e SSH per configurare un sito SFTP ice chat, è necessario ottenere un indirizzo IP e fornirlo al supporto clienti ice chat. Il sito ICE Chat SFTP deve essere configurato per accettare le richieste di connessione da questo indirizzo IP. Lo stesso indirizzo IP viene utilizzato dal connettore ICE Chat per connettersi al sito SFTP e trasferire i dati di ICE Chat a Microsoft 365.
+
+Per ottenere l'indirizzo IP:
+
+1. Vai a <https://compliance.microsoft.com> e fai clic su **Connettori dati** nel riquadro di spostamento sinistro.
+
+2. Nella pagina **Connettori dati** in **ICE Chat** fare clic su **Visualizza.**
+
+3. Nella pagina **Descrizione del prodotto ICE Chat** fare clic su Aggiungi **connettore**
+
+4. Nella pagina **Condizioni di servizio** fare clic su **Accetta.**
+
+5. Nella pagina **Aggiungi credenziali per l'origine contenuto** fare clic su Voglio usare le chiavi private **PGP e SSH.**
+
+   ![Selezionare l'opzione per usare le chiavi private](../media/ICEChatPrivateKeysOption.png)
+
+6. Nel passaggio 1 fare clic **su Scarica indirizzo IP** per salvare una copia del file dell'indirizzo IP nel computer locale.
+
+   ![Scaricare l'indirizzo IP](../media/ICEChatConnectorIPAddress.png)
+
+7. Fare **clic su** Annulla per chiudere la procedura guidata. Si torna a questa procedura guidata nel passaggio 2 per creare il connettore.
+
+È necessario collaborare con il supporto clienti ice chat per configurare il sito SFTP ice chat in modo da accettare le richieste di connessione da questo indirizzo IP.
+
+### <a name="step-2-create-an-ice-chat-connector"></a>Passaggio 2: Creare un connettore ice chat
+
+Dopo aver configurato il sito SFTP di ICE Chat, il passaggio successivo consiste nel creare un connettore ice chat nel Centro conformità Microsoft 365. Il connettore utilizza le informazioni fornite per connettersi al sito ICE Chat SFTP e trasferire i messaggi di posta elettronica alle caselle delle cassette postali utente corrispondenti in Microsoft 365. Per completare questo passaggio, assicurarsi di disporre di copie delle stesse passphrase e delle stesse chiavi private utilizzate per configurare il sito SFTP di ICE Chat.
+
+1. Vai a <https://compliance.microsoft.com> e fai clic su **Connettori dati** nel riquadro di spostamento sinistro.
+
+2. Nella pagina **Connettori dati** in **ICE Chat** fare clic su **Visualizza.**
+
+3. Nella pagina **Descrizione del prodotto ICE Chat** fare clic su Aggiungi **connettore**
+
+4. Nella pagina **Condizioni di servizio** fare clic su **Accetta.**
+
+5. Nella pagina **Aggiungi credenziali per l'origine contenuto** fare clic su Voglio usare le chiavi private **PGP e SSH.**
+
+6. In Passaggio 3 immettere le informazioni necessarie nelle caselle seguenti e quindi fare clic su **Convalida connessione**.
+
+      - **Nome:** Nome del connettore. Deve essere univoco nell'organizzazione.
+
+      - **Codice fermo:** ID dell'organizzazione utilizzato come nome utente per il sito SFTP di ICE Chat.
+
+      - **Password:** Password per il sito SFTP ICE Chat dell'organizzazione.
+
+      - **URL SFTP:** URL per il sito SFTP di ICE Chat (ad esempio, `sftp.theice.com` ). È inoltre possibile utilizzare un indirizzo IP per questo valore.
+
+      - **Porta SFTP:** Numero di porta per il sito SFTP ice chat. Il connettore utilizza questa porta per connettersi al sito SFTP.
+
+      - **Chiave privata PGP:** Chiave privata PGP per il sito SFTP di ICE Chat. Assicurarsi di includere l'intero valore della chiave privata, incluse le righe iniziale e finale del blocco di chiavi.
+
+      - **Passphrase chiave PGP:** Passphrase per la chiave privata PGP.
+
+      - **Chiave privata SSH:** Chiave privata SSH per il sito SFTP di ICE Chat. Assicurarsi di includere l'intero valore della chiave privata, incluse le righe iniziale e finale del blocco di chiavi.
+
+      - **Passphrase chiave SSH:** Passphrase per la chiave privata SSH.
+
+7. Dopo aver convalidato correttamente la connessione, fare clic su **Avanti.**
+
+8. Nella pagina Mappare gli utenti di Ice Chat agli utenti di **Microsoft 365** abilitare il mapping automatico degli utenti e fornire il mapping utente personalizzato in base alle esigenze.
+
+   > [!NOTE]
+   > Come spiegato in precedenza, il file CSV del file di mapping personalizzato contiene l'imid ice chat e l'indirizzo della cassetta postale di Microsoft 365 corrispondente per ogni utente. Se si abilita il mapping automatico degli utenti e si fornisce un mapping personalizzato, per ogni elemento di chat, il connettore guarderà innanzitutto il file di mapping personalizzato. Se non trova un utente di Microsoft 365 valido che corrisponde all'imid ICE Chat di un utente, il connettore importerà l'elemento nelle cassette postali per gli utenti specificati nelle proprietà *SenderEmail* e *RecipientEmail* dell'elemento di chat. Se il connettore non trova un utente di Microsoft 365 valido tramite il mapping automatico o personalizzato dell'utente, l'elemento non verrà importato.
+
+9. Fare **clic su** Avanti, rivedere le impostazioni e quindi fare clic su **Fine** per creare il connettore.
+
+10. Passare alla **pagina Connettori dati** per visualizzare l'avanzamento del processo di importazione per il nuovo connettore. Fare clic sul connettore per visualizzare la pagina a comparsa, che contiene informazioni sul connettore.

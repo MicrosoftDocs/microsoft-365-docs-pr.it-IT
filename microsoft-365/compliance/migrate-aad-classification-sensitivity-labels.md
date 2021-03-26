@@ -10,18 +10,18 @@ ms.topic: article
 ms.service: O365-seccomp
 localization_priority: Normal
 description: In questo articolo vengono illustrate le etichette classiche di classificazione e riservatezza di Azure Active Directory.
-ms.openlocfilehash: 1be7e31ee4091e561f7eedb34b41958efc69a339
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 07bc09afb3e490961a8cc5a88857ec49dd962856
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926334"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51221751"
 ---
 # <a name="azure-active-directory-classification-and-sensitivity-labels-for-microsoft-365-groups"></a>Etichette di classificazione e riservatezza di Azure Active Directory per i gruppi di Microsoft 365
 
 In questo articolo vengono illustrate le etichette classiche di classificazione e riservatezza di Azure Active Directory.
 
-Le etichette di riservatezza sono supportate [da questi servizi.](./sensitivity-labels-teams-groups-sites.md#support-for-the-sensitivity-labels)
+Le etichette di riservatezza sono supportate [da questi servizi.](./sensitivity-labels-teams-groups-sites.md)
 
 Per informazioni complete sulle etichette di riservatezza, vedi [Informazioni sulle etichette di riservatezza.](sensitivity-labels.md)
 
