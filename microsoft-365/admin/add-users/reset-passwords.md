@@ -1,5 +1,5 @@
 ---
-title: Reimpostare le password
+title: Reimpostare password
 f1.keywords:
 - NOCSH
 ms.author: kwekua
@@ -27,20 +27,20 @@ search.appverid:
 - GEA150
 ms.assetid: 7a5d073b-7fae-4aa5-8f96-9ecd041aba9c
 description: Informazioni su come reimpostare la password per un utente nell'abbonamento a Microsoft 365 per le aziende.
-ms.openlocfilehash: 985b9fbae68f12c3f6a23fe8a3e1add4a86df716
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: da2f2b7aced29cd121f7d597af5a518462d2623d
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903701"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222052"
 ---
-# <a name="reset-passwords"></a>Reimpostare le password
+# <a name="reset-passwords"></a>Reimpostare password
 
 Questo articolo spiega come reimpostare le password per se stessi e per gli utenti quando si dispone di un abbonamento a Microsoft 365 per le aziende.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-Questo articolo è per le persone che impostano criteri di scadenza delle password in un'azienda, un istituto di istruzione o un'organizzazione no profit. Per completare questa procedura, è necessario accedere con l'account amministratore di Microsoft 365. [Che cos'è un account amministratore?](../admin-overview/admin-overview.md).
+Questo articolo è per le persone che impostano criteri di scadenza delle password in un'azienda, un istituto di istruzione o un'organizzazione no profit. Per completare questa procedura, è necessario accedere con l'account amministratore di Microsoft 365. [Che cos'è un account amministratore?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview).
 
 Per eseguire questa [procedura, è](about-admin-roles.md) necessario essere un amministratore globale o un amministratore delle password.
 

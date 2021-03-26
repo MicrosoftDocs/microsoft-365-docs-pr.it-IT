@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Informazioni su come creare un estrattore in Microsoft SharePoint Syntex.
-ms.openlocfilehash: 8218d04d2f5cb4e8f8f67bdcd744b7f1a4a4d18a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e95df00c2601bccc5041f96c745048adc8dfc91f
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905813"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222792"
 ---
 # <a name="create-an-extractor-in-microsoft-sharepoint-syntex"></a>Creare un estrattore in Microsoft SharePoint Syntex.
 
@@ -91,7 +91,7 @@ Per identificare la *Data di avvio del servizio*, è possibile creare una spiega
 
 ### <a name="use-the-explanation-library"></a>Usare la raccolta di spiegazioni
 
-Per creare spiegazioni per elementi come le date, è più facile [usare la raccolta di spiegazioni](./explanation-types-overview.md#use-the-explanation-library) piuttosto che immettere manualmente tutte le varianti. La raccolta di spiegazioni è un set di spiegazioni predefinite di tipo frase o criteri. La raccolta cerca di fornire tutti i formati per elenchi di frasi o criteri comuni, come date, numeri di telefono, codici postali e molti altri. 
+Per creare spiegazioni per elementi come le date, è più facile [usare la raccolta di spiegazioni](./explanation-types-overview.md) piuttosto che immettere manualmente tutte le varianti. La raccolta di spiegazioni è un set di spiegazioni predefinite di tipo frase o criteri. La raccolta cerca di fornire tutti i formati per elenchi di frasi o criteri comuni, come date, numeri di telefono, codici postali e molti altri. 
 
 Per l'esempio *Data di avvio del servizio*, è più efficace usare la spiegazione predefinita per *Data* nella raccolta di spiegazioni:
 

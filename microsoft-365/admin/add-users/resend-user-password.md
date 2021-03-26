@@ -20,20 +20,20 @@ search.appverid:
 - MOE150
 ms.assetid: 9b838071-94aa-4b8e-8d84-d17ece1ee951
 description: Informazioni su come reimpostare la password e inviare un messaggio di posta elettronica a un nuovo utente di Microsoft 365.
-ms.openlocfilehash: 206e38929183fc280134a42e3febead2483d0f76
-ms.sourcegitcommit: fdb5f9d865037c0ae23aae34a5c0f06b625b2f69
+ms.openlocfilehash: 2b2c8657a4bbd4745a3fee34fc259244b83640d3
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/18/2020
-ms.locfileid: "48131747"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222100"
 ---
 # <a name="resend-a-users-password---admin-help"></a>Inviare nuovamente la password utente - Guida per amministratori
 
-Questo articolo spiega come inviare di nuovo il messaggio di posta elettronica di notifica a un nuovo utente in Office 365. Ciò può verificarsi quando si crea un nuovo utente e non viene visualizzato un messaggio di posta elettronica con la nuova password. A tale scopo, reimpostare la password dell'utente.
+Questo articolo spiega come inviare di nuovo il messaggio di posta elettronica di notifica a un nuovo utente in Office 365. Ciò può verificarsi quando crei un nuovo utente e non ottiene un messaggio di posta elettronica con la nuova password. A tale scopo, reimpostare la password dell'utente.
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-Questo articolo è per le persone che impostano criteri di scadenza delle password in un'azienda, un istituto di istruzione o un'organizzazione no profit. Per completare questa procedura, è necessario accedere con l'account amministratore di Microsoft 365. [Che cos'è un account amministratore?](../admin-overview/admin-overview.md).
+Questo articolo è per le persone che impostano criteri di scadenza delle password in un'azienda, un istituto di istruzione o un'organizzazione no profit. Per completare questa procedura, è necessario accedere con l'account amministratore di Microsoft 365. [Che cos'è un account amministratore?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview).
 
 Per eseguire questa [procedura, è](about-admin-roles.md) necessario essere un amministratore globale o un amministratore delle password.
 
@@ -57,11 +57,11 @@ Per eseguire questa [procedura, è](about-admin-roles.md) necessario essere un a
 
 ::: moniker-end
 
-2. Nella pagina **Utenti attivi** selezionare l'utente e quindi fare clic su **Reimposta password.**
+2. Nella pagina **Utenti attivi** selezionare l'utente e quindi Reimposta **password.**
 
-3. Seguire le istruzioni nella pagina Reimposta **password** per generare automaticamente una nuova password per l'utente o crearne una per l'utente, quindi selezionare **Reimposta.**  
+3. Seguire le istruzioni nella pagina **Reimposta password** per generare automaticamente una nuova password per l'utente o crearne una per loro, quindi selezionare **Reimposta**.  
 
-4. Immetti un indirizzo e-mail a cui l'utente può accedere per ricevere la nuova password e seguilo per assicurarti di ottenerla.
+4. Immetti un indirizzo di posta elettronica a cui l'utente può accedere in modo che riceva la nuova password e seguilo per assicurarti di ottenerla.
 
 ## <a name="related-content"></a>Contenuti correlati
 

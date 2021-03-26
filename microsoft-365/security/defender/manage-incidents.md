@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 4e216f841c8728b1cabd98a931e7326f53344a74
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3edc7e52e93bc08d46536a520bf57735983f493b
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064677"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222624"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Gestire gli eventi imprevisti in Microsoft 365 Defender
 
@@ -82,4 +82,4 @@ Ogni volta che viene apportata una modifica o aggiunto un commento a un avviso, 
 I commenti aggiunti vengono visualizzati istantaneamente nel pannello.
 
 ## <a name="add-incident-tags"></a>Aggiungere tag agli eventi
-È possibile aggiungere tag personalizzati a un evento, ad esempio per contrassegnare un insieme di eventi imprevisti con caratteristiche comuni. In seguito è possibile filtrare la coda di tutti gli eventi imprevisti che contengono un tag specifico.
+È possibile aggiungere tag personalizzati a un evento imprevisto, ad esempio per contrassegnare un gruppo di eventi imprevisti con una caratteristica comune. In seguito è possibile filtrare la coda di tutti gli eventi imprevisti che contengono un tag specifico.

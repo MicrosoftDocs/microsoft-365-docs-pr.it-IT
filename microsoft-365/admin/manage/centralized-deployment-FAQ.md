@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Leggere le risposte alle domande frequenti sulla distribuzione centralizzata dall'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 9f4841508701d4dd5878e99fcc51a436bc5824e2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 06e3b7973a209cdf40446c5a9511713d779373b8
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915471"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51221836"
 ---
 # <a name="centralized-deployment-faq"></a>Domande frequenti sulla distribuzione centralizzata
 
@@ -72,7 +72,7 @@ Sì. La distribuzione centralizzata offre agli amministratori la flessibilità d
 
 Sì. Gli amministratori possono caricare un nuovo file manifesto per supportare le modifiche dei metadati per i componenti aggiuntivi LOB distribuiti dall'amministratore. Il componente aggiuntivo viene aggiornato al successivo avvio delle applicazioni di Office. L'applicazione Web può essere modificata in qualsiasi momento.  
  
-Per ulteriori informazioni, vedere componente aggiuntivo [line-of-business](./manage-addins-in-the-admin-center.md#more-about-office-add-ins-security).  
+Per ulteriori informazioni, vedere componente aggiuntivo [line-of-business](./manage-addins-in-the-admin-center.md).  
 
 ## <a name="can-admins-turn-off-add-ins"></a>Gli amministratori possono disattivare i componenti aggiuntivi?  
 

@@ -22,18 +22,19 @@ description: Comprendere cos'è un dominio e come è possibile acquistare un dom
 ms.custom:
 - okr_smb
 - AdminSurgePortfolio
-ms.openlocfilehash: 9afc38aeda32870a248212f7b67f2fb4af8fd960
-ms.sourcegitcommit: 0a8b0186cc041db7341e57f375d0d010b7682b7d
+ROBOTS: NOINDEX, NOFOLLOW
+ms.openlocfilehash: 2527389634cda9912f45ecdcd3213f7d987b7bb8
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "49658076"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51221872"
 ---
 # <a name="what-is-a-domain"></a>Cos'è un dominio?
 
  Se non si trova ciò che si sta cercando, **[vedere le domande frequenti sui domini](../setup/domains-faq.yml)**. 
   
-Un dominio è un nome univoco che segue il segno **@** negli indirizzi di posta elettronica e **www.** negli indirizzi Web. In genere ha la forma del nome dell'organizzazione e di un suffisso Internet standard, ad esempio il nome *dell'azienda. <span> com* o *stateuniversity. <span> edu*. 
+Un dominio è un nome univoco che segue il segno **@** negli indirizzi di posta elettronica e **www.** negli indirizzi Web. In genere assume la forma del nome dell'organizzazione e di un suffisso Internet standard, ad esempio *l'azienda. <span> com* o *stateuniversity. <span> edu*. 
   
 Uso di un dominio personalizzato come *rob@contoso. <span> com* con Microsoft 365 può contribuire a creare credibilità e riconoscimento per il tuo marchio. 
   
@@ -56,6 +57,6 @@ Se si è già proprietari di un  *dominio come you@yourcompany. <span> com*  è 
   
 ## <a name="feeling-stuck"></a>Serve aiuto?
 
-Chiamare il supporto tecnico Microsoft - [Ottenere assistenza per la configurazione di un dominio](../contact-support-for-business-products.md)
+Chiamare il supporto Tecnico Microsoft - [Assistenza per la configurazione di un dominio](../contact-support-for-business-products.md)
   
 

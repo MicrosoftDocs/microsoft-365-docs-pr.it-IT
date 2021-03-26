@@ -18,12 +18,12 @@ ms.collection:
 ms.custom:
 - Ent_Solutions
 description: Come distribuire team con un livello di protezione di base.
-ms.openlocfilehash: cd5a88069b9947bd4dcb01f6ca76620bb8ed9a52
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 728a41bd521ed32c57c981be576e46eaee344099
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200294"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222744"
 ---
 # <a name="configure-teams-with-baseline-protection"></a>Configurare team con la protezione di base
 
@@ -39,7 +39,7 @@ Come primo passaggio, è consigliabile configurare criteri di base per le identi
 |:------|:-----------|
 |Allegati sicuri per SPO, OneDrive e Teams|[Allegati sicuri](../security/office-365-security/safe-attachments.md)<br>[Defender per Office 365 - SharePoint, OneDrive e Microsoft Teams](../security/office-365-security/mdo-for-spo-odb-and-teams.md)|
 |Sicurezza documenti|[Sicurezza documenti in Microsoft Defender per Office 365](../security/office-365-security/safe-docs.md)|
-|Collegamenti sicuri per Teams|[Collegamenti sicuri di Office 365 in Teams](../security/office-365-security/safe-links.md#safe-links-settings-for-microsoft-teamssafe-links-settings-for-microsoft-teams)<br>[Collegamenti sicuri](../security/office-365-security/safe-links.md)|
+|Collegamenti sicuri per Teams|[Collegamenti sicuri di Office 365 in Teams](../security/office-365-security/safe-links.md)<br>[Collegamenti sicuri](../security/office-365-security/safe-links.md)|
 
 ## <a name="teams-guest-sharing"></a>Condivisione con gli utenti guest in Teams
 

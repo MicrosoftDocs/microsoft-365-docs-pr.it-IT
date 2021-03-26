@@ -22,12 +22,12 @@ search.appverid:
 description: Ottenere supporto tecnico e per la fatturazione usando i numeri di telefono indicati per il proprio paese o area geografica o inviando una richiesta di assistenza online.
 feedback_system: None
 ms.date: 7/28/2020
-ms.openlocfilehash: aa843f0c81f38e53b525b6e56d7f3fa69696de79
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6e355a07584d45a85c363956d1bb4e45eae708be
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907039"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222040"
 ---
 # <a name="ways-to-contact-support-for-business-products---admin-help"></a>Modi di contattare il supporto tecnico per i prodotti per le aziende - Guida per l'amministratore
 
@@ -42,7 +42,7 @@ Per iniziare, [verificare lo stato di integrità corrente dei servizi](../enterp
 
 Per risparmiare tempo, avviare la richiesta di assistenza online. Ti aiuteremo a trovare una soluzione o a metterti in contatto con il supporto tecnico.
 
-1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. Se viene visualizzato il messaggio che informa che non si dispone dell'autorizzazione per accedere alla pagina o eseguire l'azione, non si è un amministratore. [Chi ha le autorizzazioni di amministratore nella mia organizzazione?](admin-overview/admin-overview.md#who-has-admin-permissions-in-my-business)
+1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>. Se viene visualizzato il messaggio che informa che non si dispone dell'autorizzazione per accedere alla pagina o eseguire l'azione, non si è un amministratore. [Chi ha le autorizzazioni di amministratore nella mia organizzazione?](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview?#who-has-admin-permissions-in-my-business)
 
 2. Selezionare il pulsante **Serve aiuto?**
 

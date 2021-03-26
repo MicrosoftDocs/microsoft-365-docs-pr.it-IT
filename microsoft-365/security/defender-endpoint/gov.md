@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1fd128a9b734606039438db1f6d9fbc36e93a3b9
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 059ff9ca6f0c93c6adbac3b1d552cbedcf308759
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199013"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222708"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender for Endpoint per i clienti us government
 
 **Si applica a:**
-- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
-Microsoft Defender for Endpoint per i clienti us government, creato nell'ambiente azure government statunitense, usa le stesse tecnologie sottostanti di Defender per Endpoint in Azure Commercial.
+Microsoft Defender for Endpoint per i clienti us government, creato nell'ambiente Azure US Government, usa le stesse tecnologie sottostanti di Defender per Endpoint in Azure Commercial.
 
 Questa offerta è disponibile per i clienti GCC, GCC High e DoD ed è basata sulla stessa prevenzione, rilevamento, indagine e correzione della versione commerciale. Tuttavia, esistono alcune differenze nella disponibilità delle funzionalità per questa offerta.
 
@@ -42,8 +42,8 @@ Microsoft Defender for Endpoint per i clienti del governo statunitense richiede 
 GCC | GCC High | DoD
 :---|:---|:---
 Windows 10 Enterprise E5 GCC | Windows 10 Enterprise E5 per GCC High | Windows 10 Enterprise E5 per DOD
-| | Microsoft 365 E5 per GCC High | 
-| | Microsoft 365 G5 Security for GCC High | 
+| | Microsoft 365 E5 per GCC High | Microsoft 365 G5 per DOD
+| | Microsoft 365 G5 Security for GCC High | Microsoft 365 G5 Security for DOD
 Microsoft Defender per endpoint - GCC | Microsoft Defender per Endpoint per GCC High | Microsoft Defender for Endpoint for DOD
 
 ### <a name="server-licensing"></a>Licenze server
@@ -51,9 +51,6 @@ GCC | GCC High | DoD
 :---|:---|:---
 Microsoft Defender per Endpoint Server GCC | Microsoft Defender per Endpoint Server per GCC High | Microsoft Defender per Endpoint Server per DOD
 Azure Defender per server | Azure Defender per server - Enti pubblici | Azure Defender per server - Enti pubblici
-
-> [!NOTE]
-> Le licenze DoD saranno disponibili solo a disponibilità generale DoD.
 
 <br>
 
@@ -64,7 +61,7 @@ Tipo di cliente | URL portale
 :---|:---
 GCC | https://gcc.securitycenter.microsoft.us
 GCC High | https://securitycenter.microsoft.us
-DoD (ANTEPRIMA) | https://securitycenter.microsoft.us
+DoD | https://securitycenter.microsoft.us
 
 <br>
 
@@ -73,7 +70,7 @@ DoD (ANTEPRIMA) | https://securitycenter.microsoft.us
 ### <a name="standalone-os-versions"></a>Versioni autonome del sistema operativo
 Sono supportate le versioni del sistema operativo seguenti:
 
-Versione del sistema operativo | GCC | GCC High | DoD (ANTEPRIMA)
+Versione del sistema operativo | GCC | GCC High | DoD
 :---|:---|:---|:---
 Windows 10, versione 20H2 (con [KB4586853](https://support.microsoft.com/help/4586853)) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
 Windows 10, versione 2004 (con [KB4586853](https://support.microsoft.com/help/4586853)) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
@@ -91,8 +88,8 @@ Windows 8.1 Enterprise | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/ch
 Windows 8 Pro | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
 Windows 7 SP1 Enterprise | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
 Windows 7 SP1 Pro | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
-Linux | ![No](images/svg/check-no.svg) In fase di sviluppo | ![No](images/svg/check-no.svg) In fase di sviluppo | ![No](images/svg/check-no.svg) In fase di sviluppo
-macOS | ![No](images/svg/check-no.svg) In fase di sviluppo | ![No](images/svg/check-no.svg) In fase di sviluppo | ![No](images/svg/check-no.svg) In fase di sviluppo
+Linux | ![No](images/svg/check-no.svg) Distribuzione | ![No](images/svg/check-no.svg) Distribuzione | ![No](images/svg/check-no.svg) Distribuzione
+macOS | ![No](images/svg/check-no.svg) Distribuzione | ![No](images/svg/check-no.svg) Distribuzione | ![No](images/svg/check-no.svg) Distribuzione
 Android | ![No](images/svg/check-no.svg) Backlog di progettazione | ![No](images/svg/check-no.svg) Backlog di progettazione | ![No](images/svg/check-no.svg) Backlog di progettazione
 iOS | ![No](images/svg/check-no.svg) Backlog di progettazione | ![No](images/svg/check-no.svg) Backlog di progettazione | ![No](images/svg/check-no.svg) Backlog di progettazione
 
@@ -105,7 +102,7 @@ iOS | ![No](images/svg/check-no.svg) Backlog di progettazione | ![No](images/svg
 ### <a name="os-versions-when-using-azure-defender-for-servers"></a>Versioni del sistema operativo quando si usa Azure Defender per i server
 Le versioni del sistema operativo seguenti sono supportate quando si usa [Azure Defender per i server:](https://docs.microsoft.com/azure/security-center/security-center-wdatp)
 
-Versione del sistema operativo | GCC | GCC High | DoD (ANTEPRIMA)
+Versione del sistema operativo | GCC | GCC High | DoD
 :---|:---|:---|:---
 Windows Server 2016 | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
 Windows Server 2012 R2 | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
@@ -125,14 +122,30 @@ Foglio di calcolo dell'elenco dei domini | Descrizione
 Per ulteriori informazioni, vedere [Configure device proxy and Internet connectivity settings.](configure-proxy-internet.md)
 
 > [!NOTE]
-> Il foglio di calcolo contiene anche URL commerciali, assicurati di controllare le schede "US Gov". <br> Quando si filtra, cercare i record etichettati come "US Gov" e il cloud specifico nella colonna geography.
+> Il foglio di calcolo contiene anche URL commerciali, assicurati di controllare le schede "US Gov".
+> 
+> Quando si filtra, cercare i record etichettati come "US Gov" e il cloud specifico nella colonna geography.
+
+### <a name="service-backend-ip-ranges"></a>Intervalli IP back-end del servizio
+
+Se i dispositivi di rete non supportano le regole basate su DNS, usa invece intervalli IP.
+
+Defender for Endpoint per i clienti us government è stato creato nell'ambiente Azure US Government, distribuito nelle aree geografiche seguenti:
+
+- AzureCloud.usgovtexas
+- AzureCloud.usgovvirginia
+
+Gli intervalli IP di Azure sono disponibili in [Azure IP Ranges and Service Tags – US Government Cloud.](https://www.microsoft.com/download/details.aspx?id=57063)
+
+> [!NOTE]
+> Come soluzione basata sul cloud, gli intervalli di indirizzi IP possono cambiare. È consigliabile passare a regole basate su DNS.
 
 <br>
 
 ## <a name="api"></a>API
 Anziché gli URI pubblici elencati nella documentazione [dell'API,](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/apis-intro)dovrai usare gli URI seguenti:
 
-Tipo di endpoint | GCC | GCC High & DoD (PREVIEW)
+Tipo di endpoint | GCC | GCC High & DoD
 :---|:---|:---
 Accesso | `https://login.microsoftonline.com` | `https://login.microsoftonline.us`
 Defender for Endpoint API | `https://api-gcc.securitycenter.microsoft.us` | `https://api-gov.securitycenter.microsoft.us`
@@ -141,18 +154,18 @@ SIEM | `https://wdatp-alertexporter-us.gcc.securitycenter.windows.us` | `https:/
 <br>
 
 ## <a name="feature-parity-with-commercial"></a>Parità delle funzionalità con commerciale
-Defender per Endpoint non ha la parità completa con l'offerta commerciale. Anche se il nostro obiettivo è fornire tutte le funzionalità e le funzionalità commerciali ai clienti del governo degli Stati Uniti, alcune funzionalità non sono ancora disponibili che vogliamo evidenziare.
+Defender for Endpoint per i clienti del governo statunitense non ha la parità completa con l'offerta commerciale. Anche se il nostro obiettivo è fornire tutte le funzionalità e le funzionalità commerciali ai clienti del governo degli Stati Uniti, alcune funzionalità non sono ancora disponibili che vogliamo evidenziare.
 
-Queste sono le lacune note a partire da febbraio 2021:
+Queste sono le lacune note a partire da marzo 2021:
 
-Nome della funzionalità | GCC | GCC High | DoD (ANTEPRIMA)
+Nome della funzionalità | GCC | GCC High | DoD
 :---|:---|:---|:---
 Analisi e correzione automatizzate: risposta live | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
 Analisi e correzione automatizzate: risposta agli avvisi di Office 365 | ![No](images/svg/check-no.svg) Backlog di progettazione | ![No](images/svg/check-no.svg) Backlog di progettazione | ![No](images/svg/check-no.svg) Backlog di progettazione
-Notifiche tramite posta elettronica | ![No](images/svg/check-no.svg) Distribuzione | ![No](images/svg/check-no.svg) Distribuzione | ![No](images/svg/check-no.svg) Distribuzione
+Notifiche tramite posta elettronica | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
 Laboratorio di valutazione | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
 Gestione e API: report di conformità e integrità dei dispositivi | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
-Gestione e API: integrazione con prodotti di terze parti | ![No](images/svg/check-no.svg) In fase di sviluppo | ![No](images/svg/check-no.svg) In fase di sviluppo | ![No](images/svg/check-no.svg) In fase di sviluppo
+Gestione e API: integrazione con prodotti di terze parti | ![No](images/svg/check-no.svg) Distribuzione | ![No](images/svg/check-no.svg) Distribuzione | ![No](images/svg/check-no.svg) Distribuzione
 Gestione e API: API di streaming | ![Sì](images/svg/check-yes.svg) | ![No](images/svg/check-no.svg) In fase di sviluppo | ![No](images/svg/check-no.svg) In fase di sviluppo
 Gestione e API: report di Protezione dalle minacce | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
 Gestione delle & delle minacce | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)

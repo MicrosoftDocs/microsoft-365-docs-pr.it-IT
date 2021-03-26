@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Informazioni sui ruoli utente in Viva Topics.
-ms.openlocfilehash: 6d93046a96b60779c3cd3bd6c6aa600cb443118f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e91eda6807634ad27bf6c15c2dd0d1c9434ce299
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917357"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222768"
 ---
 # <a name="microsoft-viva-topics-roles"></a>Ruoli di Microsoft Viva Topics 
 
@@ -49,7 +49,7 @@ Un collaboratore di argomenti può anche creare e pubblicare un nuovo argomento 
 Per creare e modificare un argomento, l'utente deve:
 
 -   [L'amministratore di](./set-up-topic-experiences.md#assign-licenses) Microsoft 365 deve assegnare una licenza Viva Topics.
--   [Assegnare le autorizzazioni per creare e modificare gli argomenti.](./topic-experiences-user-permissions.md#change-who-has-permissions-to-do-tasks-on-the-topic-center) Questa attività viene eseguita dall'amministratore della knowledge base nella pagina Delle impostazioni di Viva Topics nell'interfaccia di amministrazione di Microsoft 365.
+-   [Assegnare le autorizzazioni per creare e modificare gli argomenti.](./topic-experiences-user-permissions.md) Questa attività viene eseguita dall'amministratore della knowledge base nella pagina Delle impostazioni di Viva Topics nell'interfaccia di amministrazione di Microsoft 365.
 
 ## <a name="knowledge-managers"></a>Knowledge Manager
 
@@ -64,7 +64,7 @@ Inoltre, un responsabile della knowledge base può modificare gli argomenti esis
 
 Per gestire gli argomenti, l'utente deve:
 -   [L'amministratore di](./set-up-topic-experiences.md#assign-licenses) Microsoft 365 deve assegnare una licenza Viva Topics.
--   [Assegnare le autorizzazioni per gestire gli argomenti](./topic-experiences-user-permissions.md#change-who-has-permissions-to-do-tasks-on-the-topic-center). Questa attività viene eseguita dall'amministratore della knowledge base nella pagina Delle impostazioni di Viva Topics nell'interfaccia di amministrazione di Microsoft 365.
+-   [Assegnare le autorizzazioni per gestire gli argomenti](./topic-experiences-user-permissions.md). Questa attività viene eseguita dall'amministratore della knowledge base nella pagina Delle impostazioni di Viva Topics nell'interfaccia di amministrazione di Microsoft 365.
 
 Gli utenti che hanno una buona conoscenza generale dell'azienda possono essere buoni candidati per il ruolo di knowledge manager. Tali persone potrebbero non solo avere la conoscenza di sapere se gli argomenti sono validi o meno, ma potrebbero anche conoscere le persone all'interno dell'azienda che sono correlate a tali argomenti.
 

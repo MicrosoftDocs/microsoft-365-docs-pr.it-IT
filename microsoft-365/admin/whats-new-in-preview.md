@@ -21,12 +21,12 @@ description: 'Interfaccia di amministrazione di Microsoft 365: informazioni sull
 ms.custom:
 - MACDashWhatsNew
 - AdminSurgePortfolio
-ms.openlocfilehash: b670c6a333485bc3a19ae14b8e7c71f08181cac5
-ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
+ms.openlocfilehash: 7b802556e051200bf39bc4bd9b97974d4d2d4c47
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51215577"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222004"
 ---
 # <a name="whats-new-in-the-microsoft-365-admin-center"></a>Novità nell'interfaccia di amministrazione di Microsoft 365
 
@@ -37,7 +37,7 @@ ms.locfileid: "51215577"
 
 ::: moniker-end
 
-Stiamo continuamente aggiungendo nuove funzionalità all'interfaccia di amministrazione di [Microsoft 365,](microsoft-365-admin-center-preview.md)risolvendo i problemi a cui apprendiamo e apportando modifiche in base al tuo feedback. Dai un'occhiata qui sotto per vedere cosa è disponibile per te oggi. Alcune funzionalità vengono implementazioni a velocità diverse per i clienti. Se non vedi ancora una funzionalità, prova ad [aggiungerti alla versione mirata.](manage/release-options-in-office-365.md)
+Stiamo continuamente aggiungendo nuove funzionalità all'interfaccia di amministrazione di [Microsoft 365,](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview)risolvendo i problemi a cui apprendiamo e apportando modifiche in base al tuo feedback. Dai un'occhiata qui sotto per vedere cosa è disponibile per te oggi. Alcune funzionalità vengono implementazioni a velocità diverse per i clienti. Se non vedi ancora una funzionalità, prova ad [aggiungerti alla versione mirata.](manage/release-options-in-office-365.md)
 
 E se si desidera sapere quali sono le novità con altri servizi cloud Microsoft:
 

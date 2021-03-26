@@ -14,12 +14,12 @@ ms.collection:
 - M365solutions
 ms.custom: seo-marvel-jun2020
 f1.keywords: NOCSH
-ms.openlocfilehash: da70bbfe5c4dfa4f9eda16adec709826de1247b7
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: c94b387bbd73e2c4f9b3de243131ae023ddb4cb8
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200018"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222526"
 ---
 # <a name="to-identity-and-beyondone-architects-viewpoint"></a>Verso l'identità e oltre: il punto di vista di un architetto
 
@@ -133,7 +133,7 @@ La combinazione di tutti questi segnali consente criteri dinamici come questi:
 Se si accetta questa definizione estesa di autorizzazione, è necessario implementare soluzioni aggiuntive. Le soluzioni implementate dipendono dal livello di dinamicità del criterio e dalle minacce a cui assegnare la priorità. Alcuni esempi di tali sistemi sono:
 
 - [Azure AD Identity Protection](/azure/active-directory/identity-protection/) 
-- [Microsoft Defender per identità](/azure-advanced-threat-protection/)
+- [Che cosa è Microsoft Defender per identità?](/azure-advanced-threat-protection/)
 - [Microsoft Defender ATP](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)
 - [Microsoft Defender per Office 365](../security/office-365-security/defender-for-office-365.md?view=o365-worldwide)
 - [Microsoft Cloud App Security](/cloud-app-security/) (MCAS)
@@ -231,7 +231,7 @@ A volte gli scenari chiamano l'aggiunta di un utente esterno a un ruolo (vedere 
 
 In un certo senso, si tratta di un'evoluzione del modello dei gruppi di ruoli di Exchange. Tuttavia, Exchange Online dispone di una propria [interfaccia di gestione dei gruppi di](/exchange/permissions-exo) ruoli. Alcuni gruppi di ruoli in Exchange Online sono bloccati e gestiti da Azure AD o dal Centro sicurezza e conformità &, ma altri potrebbero avere lo stesso nome o nomi simili e sono gestiti in Exchange Online (aggiungendo confusione). È consigliabile evitare di utilizzare l'interfaccia utente di Exchange Online a meno che non siano necessari ambiti per la gestione di Exchange.
 
-Non è possibile creare ruoli personalizzati. I ruoli sono definiti dai servizi creati da Microsoft e aumentano man quando vengono introdotti nuovi servizi. Questo concetto è simile ai [ruoli definiti dalle applicazioni](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps) in Azure AD. Quando vengono abilitati nuovi servizi, spesso è necessario creare nuovi gruppi di ruoli per concedere o delegare l'accesso a tali servizi (ad esempio, gestione [dei rischi insider).](../compliance/insider-risk-management-configure.md?view=o365-worldwide#step-1-required-enable-permissions-for-insider-risk-management)
+Non è possibile creare ruoli personalizzati. I ruoli sono definiti dai servizi creati da Microsoft e aumentano man quando vengono introdotti nuovi servizi. Questo concetto è simile ai [ruoli definiti dalle applicazioni](/azure/active-directory/develop/howto-add-app-roles-in-azure-ad-apps) in Azure AD. Quando vengono abilitati nuovi servizi, spesso è necessario creare nuovi gruppi di ruoli per concedere o delegare l'accesso a tali servizi (ad esempio, gestione [dei rischi insider).](../compliance/insider-risk-management-configure.md?view=o365-worldwide)
 
 Questi gruppi di ruoli richiedono anche l'appartenenza diretta e non possono contenere gruppi di Azure AD. Purtroppo, oggi questi gruppi di ruoli non sono supportati da Azure AD PIM. Come i ruoli di Azure AD, tendo a consigliare la gestione di questi elementi tramite API o un prodotto di governance dei partner come Saviynt o altri.
 
@@ -279,7 +279,7 @@ Di seguito sono riportati alcuni esempi di log di Microsoft 365 a cui si accede 
 - [Verifica messaggi di Exchange](/powershell/module/exchange/get-messagetrace)
 - Sistemi threat/UEBA descritti in precedenza (ad esempio, Azure AD Identity Protection, Microsoft Cloud App Security, Microsoft Defender for Endpoint e così via)
 - [Protezione delle informazioni Microsoft](../compliance/data-classification-activity-explorer.md?view=o365-worldwide)
-- [Microsoft Defender per endpoint](/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)
+- [Microsoft Defender ATP](/windows/security/threat-protection/microsoft-defender-atp/api-power-bi)
 - [Microsoft Graph](https://graph.microsoft.com)
 
 È importante identificare innanzitutto tutte le origini dei registri necessarie per un programma di sicurezza e conformità. Tenere inoltre presente che log diversi hanno limiti di conservazione in linea diversi. 

@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Informazioni sull'elaborazione di moduli in Microsoft SharePoint Syntex
-ms.openlocfilehash: 84aeb7c4e3fc850e5e4c2336e576ff3bce3ecf4b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: e3cf8298a2db9383e5b88dde737efc84e75c7f19
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928309"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222258"
 ---
 # <a name="form-processing-overview"></a>Panoramica dell'elaborazione di moduli
 
@@ -30,7 +30,7 @@ Microsoft SharePoint Syntex usa l’elaborazione di moduli di [AI Builder](/ai-b
 Spesso le organizzazioni ricevono un gran numero di fatture da diverse origini, ad esempio via posta, fax, posta elettronica e così via. L'elaborazione di tali documenti e la loro immissione manuale in un database possono richiedere una considerevole quantità di tempo. Tramite l’uso dell’intelligenza artificiale, l'elaborazione dei moduli automatizza il processo di estrazione del testo, le coppie chiave-valore e le tabelle dai documenti. 
 
 > [!NOTE]
-> Per altri esempi di scenari di elaborazione dei moduli, vedere[Adozione di SharePoint Syntex: guida introduttiva](./adoption-getstarted.md#form-processing-scenario-example).
+> Per altri esempi di scenari di elaborazione dei moduli, vedere[Adozione di SharePoint Syntex: guida introduttiva](./adoption-getstarted.md).
 
 Ad esempio, è possibile creare un modello di elaborazione moduli che identifichi tutti i documenti relativi agli ordini di acquisto caricati nella raccolta documenti. Da ogni ordine di acquisto è quindi possibile estrarre e visualizzare dati specifici importanti per l'utente, come il *numero ordine d’acquisto*, la *data* o l’*ammontare totale*.
 
@@ -40,7 +40,7 @@ L’utente usa i file di esempio per eseguire il training del modello e definire
 
 Dopo aver eseguito il training del modello e averlo pubblicato, quest’ultimo crea un [flusso di Power Automate](/power-automate/getting-started). Il flusso viene eseguito quando un file è caricato nella raccolta documenti di SharePoint ed estrarrà i dati che sono stati identificati nel modello. I dati estratti saranno visualizzati nelle colonne di visualizzazione della raccolta documenti del modello.
 
-Gli amministratori di Office 365 devono [abilitare l'elaborazione del modulo](./set-up-content-understanding.md#to-set-up-content-understanding) per la raccolta documenti di SharePoint in modo che gli utenti possano [creare un modello di elaborazione moduli](create-a-form-processing-model.md) in essa. È possibile selezionare i siti durante l'installazione o dopo la configurazione nelle impostazioni di gestione.
+Gli amministratori di Office 365 devono [abilitare l'elaborazione del modulo](./set-up-content-understanding.md) per la raccolta documenti di SharePoint in modo che gli utenti possano [creare un modello di elaborazione moduli](create-a-form-processing-model.md) in essa. È possibile selezionare i siti durante l'installazione o dopo la configurazione nelle impostazioni di gestione.
 
 ### <a name="file-limitations"></a>Limitazioni relative ai file
 

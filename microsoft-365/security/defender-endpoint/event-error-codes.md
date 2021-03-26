@@ -1,7 +1,7 @@
 ---
 title: Esaminare eventi ed errori tramite il Visualizzatore eventi
 description: Ottenere descrizioni e ulteriori passaggi per la risoluzione dei problemi (se necessario) per tutti gli eventi segnalati dal servizio Microsoft Defender for Endpoint.
-keywords: risoluzione dei problemi, visualizzatore eventi, riepilogo del registro, codice di errore, non riuscito, Microsoft Defender per il servizio endpoint, non può essere avviato, interrotto, non può essere avviato
+keywords: risoluzione dei problemi, visualizzatore eventi, riepilogo del registro, codice di errore, non riuscito, Servizio Microsoft Defender per endpoint, non può essere avviato, interrotto, non può essere avviato
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 05/21/2018
 ms.technology: mde
-ms.openlocfilehash: 98c0f790c228989b261b95f3b87cdc9d18e4fa76
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1b8454107b6a2737f1236a066c3a24a2b9c776cb
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068581"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222655"
 ---
 # <a name="review-events-and-errors-using-event-viewer"></a>Esaminare eventi ed errori tramite il Visualizzatore eventi
 
@@ -64,7 +64,7 @@ Ad esempio, se i dispositivi non vengono visualizzati nell'elenco **Dispositivi,
 <tr>
 <td>1</td>
 <td>Servizio Microsoft Defender for Endpoint avviato (versione <code>variable</code> ).</td>
-<td>Si verifica durante l'avvio, l'arresto e l'onbboarding del sistema.</td>
+<td>Si verifica durante l'avvio, l'arresto e l'onboarding del sistema.</td>
 <td>Normale notifica operativa; non è necessaria alcuna azione.</td>
 </tr>
 <tr>
@@ -76,7 +76,7 @@ Ad esempio, se i dispositivi non vengono visualizzati nell'elenco **Dispositivi,
 <tr>
 <td>3 </td>
 <td>Avvio del servizio Microsoft Defender for Endpoint non riuscito. Codice di errore: <code>variable</code> .</td>
-<td>Servizio non avviato.</td>
+<td>Il servizio non è stato avviato.</td>
 <td>Esaminare altri messaggi per determinare le possibili cause e i passaggi per la risoluzione dei problemi.</td>
 </tr>
 <tr>
@@ -90,7 +90,7 @@ Questo URL corrisponde a quello visualizzato nel firewall o nell'attività di re
 <td>5 </td>
 <td>Microsoft Defender for Endpoint service failed to connect to the server at <code>variable</code> .</td>
 <td>Variabile = URL del Defender per i server di elaborazione degli endpoint.<br>
-Il servizio non è stato in grado di contattare i server di elaborazione esterni in tale URL.</td>
+Il servizio non è riuscito a contattare i server di elaborazione esterni in tale URL.</td>
 <td>Verificare la connessione all'URL. Vedere <a href="configure-proxy-internet.md" data-raw-source="[Configure proxy and Internet connectivity](configure-proxy-internet.md)">Configure proxy and Internet connectivity</a>.</td>
 </tr>
 <tr>
@@ -153,7 +153,7 @@ La visualizzazione del dispositivo nel portale potrebbe richiedere diverse ore.<
 <td>15 </td>
 <td>Microsoft Defender for Endpoint non può avviare il canale di comando con URL: <code>variable</code> .</td>
 <td>Variabile = URL del Defender per i server di elaborazione degli endpoint.<br>
-Il servizio non è stato in grado di contattare i server di elaborazione esterni in tale URL.</td>
+Il servizio non è riuscito a contattare i server di elaborazione esterni in tale URL.</td>
 <td>Verificare la connessione all'URL. Vedere <a href="configure-proxy-internet.md" data-raw-source="[Configure proxy and Internet connectivity](configure-proxy-internet.md)">Configure proxy and Internet connectivity</a>.</td>
 </tr>
 <tr>
@@ -245,7 +245,7 @@ Verificare che la protezione antimalware in tempo reale venga eseguita correttam
 <td>33</td>
 <td>Microsoft Defender for Endpoint service failed to persist SENSE GUID. Codice di errore: <code>variable</code> .</td>
 <td>Un identificatore univoco viene usato per rappresentare ogni dispositivo che segnala al portale.<br>
-Se l'identificatore non viene salvato in modo permanente, è possibile che lo stesso dispositivo venga visualizzato due volte nel portale.</td>
+Se l'identificatore non viene salvato in modo permanente, lo stesso dispositivo potrebbe comparire due volte nel portale.</td>
 <td>Controlla le autorizzazioni del Registro di sistema nel dispositivo per assicurarti che il servizio possa aggiornare il Registro di sistema.</td>
 </tr>
 <tr>
@@ -341,6 +341,270 @@ Vedi <a href="configure-endpoints.md" data-raw-source="[Onboard Windows 10 devic
 <td>Impossibile aggiungere un provider alla sessione ETW. Di conseguenza, gli eventi del provider non vengono segnalati.</td>
 <td>Controllare il codice di errore. Se l'errore persiste, contattare il supporto tecnico.</td>
 </tr>
+</tr>
+<tr>
+   <td>49</td>
+   <td>Comando di configurazione cloud non valido ricevuto e ignorato. Versione: %1, stato: %2, codice errore: %3, messaggio: %4</td>
+   <td>Ricevuto un file di configurazione non valido dal servizio cloud ignorato.</td>
+   <td>Se l'errore persiste, contattare il supporto tecnico.</td>
+</tr>
+<tr>
+   <td>50</td>
+   <td>Nuova configurazione cloud applicata correttamente. Versione: %1.</td>
+   <td>È stata applicata correttamente una nuova configurazione dal servizio cloud.</td>
+   <td>Normale notifica operativa; non è necessaria alcuna azione.</td>
+</tr>
+<tr>
+   <td>51</td>
+   <td>Impossibile applicare la nuova configurazione cloud, versione: %1. Applicazione dell'ultima configurazione valida nota, versione %2.</td>
+   <td>Ricevuto un file di configurazione non valido dal servizio cloud. L'ultima configurazione valida nota è stata applicata correttamente.</td>
+   <td>Se l'errore persiste, contattare il supporto tecnico.</td>
+</tr>
+<tr>
+   <td>52</td>
+   <td>Impossibile applicare la nuova configurazione cloud, versione: %1. Impossibile applicare anche l'ultima configurazione valida nota, versione %2. La configurazione predefinita è stata applicata correttamente.</td>
+   <td>Ricevuto un file di configurazione non valido dal servizio cloud. Impossibile applicare l'ultima configurazione valida nota e la configurazione predefinita è stata applicata.</td>
+   <td>Il servizio tenterà di scaricare un nuovo file di configurazione entro 5 minuti. Se non vedi l'evento #50 - contatta il supporto.</td>
+</tr>
+<tr>
+   <td>53</td>
+   <td>Configurazione cloud caricata dall'archiviazione persistente, versione: %1.</td>
+   <td>La configurazione è stata caricata dall'archiviazione permanente all'avvio del servizio.</td>
+   <td>Normale notifica operativa; non è necessaria alcuna azione.</td>
+</tr>
+<tr>
+   <td>55</td>
+   <td>Impossibile creare l'autologger Secure ETW. Codice errore: %1</td>
+   <td>Impossibile creare il logger ETW sicuro.</td>
+   <td>Riavviare il dispositivo. Se l'errore persiste, contattare il supporto tecnico.</td>
+</tr>
+<tr>
+   <td>56</td>
+   <td>Impossibile rimuovere l'autologger Secure ETW. Codice errore: %1</td>
+   <td>Impossibile rimuovere la sessione ETW sicura durante l'offboarding.</td>
+   <td>Contattare il supporto tecnico.</td>
+</tr>
+<tr>
+   <td>57</td>
+   <td>Acquisizione di uno snapshot del computer per la risoluzione dei problemi.</td>
+   <td>È in corso la raccolta di un pacchetto di indagine, noto anche come pacchetto forense.</td>
+   <td>Normale notifica operativa; non è necessaria alcuna azione.</td>
+</tr>
+<tr>
+   <td>59</td>
+   <td>Avvio del comando: %1</td>
+   <td>Avvio dell'esecuzione del comando di risposta.</td>
+   <td>Normale notifica operativa; non è necessaria alcuna azione.</td>
+</tr>
+<tr>
+   <td>60</td>
+   <td>Impossibile eseguire il comando %1, errore: %2.</td>
+   <td>Impossibile eseguire il comando di risposta.</td>
+   <td>Se l'errore persiste, contattare il supporto tecnico.</td>
+</tr>
+<tr>
+   <td>61</td>
+   <td>I parametri del comando di raccolta dati non sono validi: SasUri: %1, compressionLevel: %2.</td>
+   <td>Impossibile leggere o analizzare gli argomenti del comando di raccolta dati (argomenti non validi).</td>
+   <td>Se l'errore persiste, contattare il supporto tecnico.</td>
+</tr>
+<tr>
+   <td>62</td>
+   <td>Impossibile avviare il servizio Esperienze utente connesse e telemetria. Codice errore: %1</td>
+   <td>Avvio del servizio Esperienze utente connesse e telemetria (diagtrack) non riuscito. La telemetria non di Microsoft Defender for Endpoint non verrà inviata da questo computer.</td>
+   <td>Cercare altri suggerimenti per la risoluzione dei problemi nel registro eventi: Microsoft-Windows-UniversalTelemetryClient/Operational.</td>
+</tr>
+<tr>
+   <td>63</td>
+   <td>Aggiornamento del tipo di avvio del servizio esterno. Nome: %1, tipo di avvio effettivo: %2, tipo di avvio previsto: %3, codice di uscita: %4</td>
+   <td>Tipo di avvio aggiornato del servizio esterno.</td>
+   <td>Normale notifica operativa; non è necessaria alcuna azione.</td>
+</tr>
+<tr>
+   <td>64</td>
+   <td>Avvio del servizio esterno arrestato. Nome: %1, codice di uscita: %2</td>
+   <td>Avvio di un servizio esterno.</td>
+   <td>Normale notifica operativa; non è necessaria alcuna azione.</td>
+</tr>
+<tr>
+   <td>65</td>
+   <td>Impossibile caricare il driver Minifilter del componente Eventi di sicurezza Microsoft. Codice errore: %1</td>
+   <td>Impossibile caricare il minifiltro MsSecFlt.sys filesystem.</td>
+   <td>Riavviare il dispositivo. Se l'errore persiste, contattare il supporto tecnico.</td>
+</tr>
+<tr>
+   <td>66</td>
+   <td>Aggiornamento dei criteri: modalità latenza - %1</td>
+   <td>Il criterio C&C connection frequency è stato aggiornato.</td>
+   <td>Normale notifica operativa; non è necessaria alcuna azione.</td>
+</tr>
+<tr>
+   <td>68</td>
+   <td>Il tipo di avvio del servizio è imprevisto. Nome servizio: %1, tipo di avvio effettivo: %2, tipo di avvio previsto: %3</td>
+   <td>Tipo di avvio del servizio esterno imprevisto.</td>
+   <td>Correggere il tipo di avvio del servizio esterno.</td>
+</tr>
+<tr>
+   <td>69</td>
+   <td>Il servizio è stato arrestato. Nome servizio: %1</td>
+   <td>Il servizio esterno è stato arrestato.</td>
+   <td>Avviare il servizio esterno.</td>
+</tr>
+<tr>
+   <td>70</td>
+   <td>Aggiornamento dei criteri: consenti raccolta di esempio - %1</td>
+   <td>Il criterio di raccolta di esempio è stato aggiornato.</td>
+   <td>Normale notifica operativa; non è necessaria alcuna azione.</td>
+</tr>
+<tr>
+   <td>71</td>
+   <td>Esecuzione del comando completata: %1</td>
+   <td>Il comando è stato eseguito correttamente.</td>
+   <td>Normale notifica operativa; non è necessaria alcuna azione.</td>
+</tr>
+<tr>
+   <td>72</td>
+   <td>Tentativo di inviare il primo report del profilo computer completo. Codice risultato: %1</td>
+   <td>Solo informativo.</td>
+   <td>Normale notifica operativa; non è necessaria alcuna azione.</td>
+</tr>
+<tr>
+   <td>73</td>
+   <td>Avvio di Sense per la piattaforma: %1</td>
+   <td>Solo informativo.</td>
+   <td>Normale notifica operativa; non è necessaria alcuna azione.</td>
+</tr>
+<tr>
+   <td>74</td>
+   <td>Il tag del dispositivo nel Registro di sistema supera il limite di lunghezza. Nome tag: %2. Limite di lunghezza: %1.</td>
+   <td>Il tag del dispositivo supera il limite di lunghezza.</td>
+   <td>Usa un tag dispositivo più breve.</td>
+</tr>
+<tr>
+   <td>81</td>
+   <td>Non è stato possibile creare Windows Defender autologger ETW advanced threat protection. Codice errore: %1</td>
+   <td>Impossibile creare la sessione ETW.</td>
+   <td>Riavviare il dispositivo. Se l'errore persiste, contattare il supporto tecnico.</td>
+</tr>
+<tr>
+   <td>82</td>
+   <td>Impossibile rimuovere Windows Defender autologger ETW di Advanced Threat Protection. Codice errore: %1</td>
+   <td>Impossibile eliminare la sessione ETW.</td>
+   <td>Contattare il supporto tecnico.</td>
+</tr>
+<tr>
+   <td>84</td>
+   <td>Impostare Windows Defender in esecuzione antivirus. Forza modalità passiva: %1, codice risultato: %2.</td>
+   <td>Imposta la modalità di esecuzione del defender (attiva o passiva).</td>
+   <td>Normale notifica operativa; non è necessaria alcuna azione.</td>
+</tr>
+<tr>
+   <td>85</td>
+   <td>Impossibile attivare il Windows Defender Advanced Threat Protection. Codice errore: %1</td>
+   <td>Impossibile eseguire l'eseguibile SenseIR.</td>
+   <td>Riavviare il dispositivo. Se l'errore persiste, contattare il supporto tecnico.</td>
+</tr>
+<tr>
+   <td>86</td>
+   <td>L'avvio ha arrestato nuovamente il servizio esterno che dovrebbe essere in servizio. Nome: %1, codice di uscita: %2</td>
+   <td>Avvio del servizio esterno di nuovo.</td>
+   <td>Normale notifica operativa; non è necessaria alcuna azione.</td>
+</tr>
+<tr>
+   <td>87</td>
+   <td>Impossibile avviare il servizio esterno. Nome: %1</td>
+   <td>Impossibile avviare il servizio esterno.</td>
+   <td>Contattare il supporto tecnico.</td>
+</tr>
+<tr>
+   <td>88</td>
+   <td>Aggiornamento del tipo di avvio del servizio esterno di nuovo. Nome: %1, tipo di avvio effettivo: %2, tipo di avvio previsto: %3, codice di uscita: %4</td>
+   <td>È stato aggiornato il tipo di avvio del servizio esterno.</td>
+   <td>Normale notifica operativa; non è necessaria alcuna azione.</td>
+</tr>
+<tr>
+   <td>89</td>
+   <td>Impossibile aggiornare il tipo di avvio del servizio esterno. Nome: %1, tipo di avvio effettivo: %2, tipo di avvio previsto: %3</td>
+   <td>Impossibile aggiornare il tipo di avvio del servizio esterno.</td>
+   <td>Contattare il supporto tecnico.</td>
+</tr>
+<tr>
+   <td>90</td>
+   <td>Impossibile configurare System Guard Runtime Monitor per la connessione al servizio cloud nell'area geografica %1. Codice errore: %2</td>
+   <td>System Guard Runtime Monitor non invierà dati di attestazione al servizio cloud.</td>
+   <td>Controlla le autorizzazioni nel percorso di registrazione: "HKLM\Software\Microsoft\Windows\CurrentVersion\Sgrm". Se non vengono individuati problemi, contattare il supporto tecnico.</td>
+</tr>
+<tr>
+   <td>91</td>
+   <td>Impossibile rimuovere le informazioni sull'area geografica di System Guard Runtime Monitor. Codice errore: %1</td>
+   <td>System Guard Runtime Monitor non invierà dati di attestazione al servizio cloud.</td>
+   <td>Controlla le autorizzazioni nel percorso di registrazione: "HKLM\Software\Microsoft\Windows\CurrentVersion\Sgrm". Se non vengono individuati problemi, contattare il supporto tecnico.</td>
+</tr>
+<tr>
+   <td>92</td>
+   <td>Interruzione dell'invio della quota di dati informatici del sensore perché la quota dei dati viene superata. Riprenderà l'invio al termine del periodo di quota. State Mask: %1</td>
+   <td>Superare il limite di limitazione.</td>
+   <td>Normale notifica operativa; non è necessaria alcuna azione.</td>
+</tr>
+<tr>
+   <td>93</td>
+   <td>Ripresa dell'invio dei dati informatici del sensore. State Mask: %1</td>
+   <td>Riprendere l'invio di dati informatici.</td>
+   <td>Normale notifica operativa; non è necessaria alcuna azione.</td>
+</tr>
+<tr>
+   <td>94</td>
+   <td>Windows Defender eseguibile advanced threat protection avviato</td>
+   <td>L'eseguibile SenseCE è stato avviato.</td>
+   <td>Normale notifica operativa; non è necessaria alcuna azione.</td>
+</tr>
+<tr>
+   <td>95</td>
+   <td>Windows Defender eseguibile advanced threat protection è terminato</td>
+   <td>L'eseguibile SenseCE è terminato.</td>
+   <td>Normale notifica operativa; non è necessaria alcuna azione.</td>
+</tr>
+<tr>
+   <td>96</td>
+   <td>Windows Defender ha chiamato Advanced Threat Protection Init. Codice risultato: %2</td>
+   <td>L'eseguibile SenseCE ha chiamato inizializzazione MCE.</td>
+   <td>Normale notifica operativa; non è necessaria alcuna azione.</td>
+</tr>
+<tr>
+   <td>97</td>
+   <td>Ci sono problemi di connettività al cloud per lo scenario DLP</td>
+   <td>Esistono problemi di connettività di rete che influiscono sul flusso di classificazione DLP.</td>
+   <td>Controllare la connettività di rete.</td>
+</tr>
+<tr>
+   <td>98</td>
+   <td>La connettività al cloud per lo scenario DLP è stata ripristinata</td>
+   <td>La connettività alla rete è stata ripristinata e il flusso di classificazione DLP può continuare.</td>
+   <td>Normale notifica operativa; non è necessaria alcuna azione.</td>
+</tr>
+<tr>
+   <td>99</td>
+   <td>Rilevato l'errore seguente durante la comunicazione con il server: (%1). Risultato: (%2)</td>
+   <td>Si è verificato un errore di comunicazione.</td>
+   <td>Per ulteriori dettagli, controllare gli eventi seguenti nel registro eventi.</td>
+</tr>
+<tr>
+   <td>100</td>
+   <td>Windows Defender'avvio del file eseguibile di Advanced Threat Protection non è riuscito. Codice errore: %1</td>
+   <td>Impossibile avviare il file eseguibile SenseCE.</td>
+   <td>Riavviare il dispositivo. Se l'errore persiste, contattare il supporto tecnico.</td>
+</tr>
+<tr>
+   <td>102</td>
+   <td>Windows Defender file eseguibile di rilevamento e risposta di Advanced Threat Protection network detection and response è stato avviato</td>
+   <td>L'eseguibile SenseNdr è stato avviato.</td>
+   <td>Normale notifica operativa; non è necessaria alcuna azione.</td>
+</tr>
+<tr>
+   <td>103</td>
+   <td>Windows Defender file eseguibile advanced threat protection network detection and response è terminato</td>
+   <td>L'eseguibile SenseNdr è terminato.</td>
+   <td>Normale notifica operativa; non è necessaria alcuna azione.</td>
 </tr>
 </tbody>
 </table>

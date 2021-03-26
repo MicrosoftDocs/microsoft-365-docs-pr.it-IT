@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-syntex
 localization_priority: Priority
 description: Descrive la differenza principale tra i modelli di analisi dei documenti e dell’elaborazione dei moduli
-ms.openlocfilehash: 9640b028e4b5a9cbd914b183e61de9b8a7ba00bc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f12cc46e1ffcbc610f50ba327e22ad46a2591521
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905791"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222270"
 ---
 # <a name="difference-between-document-understanding-and-form-processing-models"></a>Differenza tra i modelli di analisi dei documenti e dell’elaborazione dei moduli 
 
@@ -34,7 +34,7 @@ Sono disponibili due tipi di modello che è possibile usare:
 Anche se vengono usati in genere per lo stesso scopo, le differenze principali elencate di seguito influiscono sulle opzioni che è possibile usare.
 
 > [!NOTE]
-> Per altri esempi sugli scenari dell’elaborazione dei moduli e sull’analisi dei documenti, vedere[Adozione di SharePoint Syntex: guida introduttiva](./adoption-getstarted.md#form-processing-scenario-example).
+> Per altri esempi sugli scenari dell’elaborazione dei moduli e sull’analisi dei documenti, vedere[Adozione di SharePoint Syntex: guida introduttiva](./adoption-getstarted.md).
 
 
 ## <a name="structured-versus-unstructured-and-semi-structured-content"></a>Contenuti strutturati contro non strutturati e semi-strutturati

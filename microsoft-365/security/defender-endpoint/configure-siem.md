@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0b9ce376736e5f00ee0f6a4f308d783e75052357
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 97a64c8537ff2a6f9948ed6ed056b8aa7379ce69
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163299"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222336"
 ---
 # <a name="pull-detections-to-your-siem-tools"></a>Eseguire il pull dei rilevamenti agli strumenti SIEM
 
@@ -53,7 +53,7 @@ Per utilizzare uno di questi strumenti SIEM supportati, è necessario:
 
 - [Abilitare l'integrazione SIEM in Defender for Endpoint](enable-siem-integration.md)
 - Configurare lo strumento SIEM supportato:
-     - [Configurare HP ArcSight per eseguire il pull di Defender per i rilevamenti degli endpoint](configure-arcsight.md)
+     - [Configurare Micro Focus ArcSight per eseguire il pull di Defender per i rilevamenti degli endpoint](configure-arcsight.md)
      - Configurare IBM QRadar per il pull defender per i rilevamenti degli endpoint Per ulteriori informazioni, vedere [IBM Knowledge Center.](https://www.ibm.com/support/knowledgecenter/SS42VS_DSM/com.ibm.dsm.doc/c_dsm_guide_MS_Win_Defender_ATP_overview.html?cp=SS42VS_7.3.1)
 
-Per altre informazioni sull'elenco dei campi esposti nell'API di rilevamento, vedi [Defender for Endpoint Detection fields.](api-portal-mapping.md)
+Per altre informazioni sull'elenco dei campi esposti nell'API di rilevamento, vedi [Defender per i campi di rilevamento degli endpoint.](api-portal-mapping.md)

@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 94cb92974b0e73a1254fd024c39d9a6ee620aad3
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 08cb16f6ae6e259d1bc92e7d2bed96f093a435f0
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199538"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222514"
 ---
 # <a name="intune-based-deployment-for-microsoft-defender-for-endpoint-for-mac"></a>Distribuzione basata su Intune per Microsoft Defender per Endpoint per Mac
 
@@ -136,8 +136,6 @@ Scaricare i pacchetti di installazione e onboarding da Microsoft Defender Securi
 Non è necessario alcun provisioning speciale per un dispositivo Mac oltre a un'installazione standard [del portale aziendale.](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-macos-cp)
 
 1. Confermare la gestione dei dispositivi.
-
-    ![Schermata di conferma della gestione dei dispositivi](./images/mdatp-3-confirmdevicemgmt.png)
 
     Selezionare **Apri preferenze di sistema,** individuare Profilo di **gestione** nell'elenco e selezionare **Approva...**. Il profilo di gestione verrà visualizzato come **Verificato:**
 

@@ -16,20 +16,18 @@ ms.custom: nextgen
 ms.date: 09/10/2020
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: 30e664aed74ed01944c67b139e6268fc3340ada4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: bfd447120e171fed063b3224e3a47c2ef38f0f16
+ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51061821"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51222612"
 ---
 # <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Onboard di dispositivi Windows 10 multi-sessione in Desktop virtuale Windows 
 6 minuti per leggere 
 
 Si applica a: 
 - Windows 10 multi-sessione in esecuzione su Desktop virtuale Windows (WVD) 
-> [!IMPORTANT]
-> Benvenuto in Microsoft Defender for Endpoint, il nuovo nome per Microsoft Defender per Endpoint. Qui sono disponibili altre informazioni su questo e altri aggiornamenti. A breve aggiorneremo i nomi nei prodotti e nei documenti.
 
 > [!WARNING]
 > Il supporto di Microsoft Defender for Endpoint per gli scenari multi-sessione di Desktop virtuale Windows è attualmente in anteprima e limita fino a 25 sessioni simultanee per host/macchina virtuale. Tuttavia, gli scenari a sessione singola in Desktop virtuale Windows sono completamente supportati.
@@ -44,12 +42,12 @@ Acquisire familiarità con le considerazioni [relative a VDI non persistente.](h
 > - Voce singola per ogni desktop virtuale 
 > - Più voci per ogni desktop virtuale 
 
-Microsoft consiglia l'onboarding di Desktop virtuale Windows come singola voce per ogni desktop virtuale. Ciò garantisce che l'esperienza di indagine nel portale di Microsoft Defender Endpoint sia nel contesto di un dispositivo basato sul nome del computer. Le organizzazioni che eliminano e distribuiscono di frequente host WVD devono prendere in considerazione l'uso di questo metodo perché impedisce la creazione di più oggetti per lo stesso computer nel portale di Microsoft Defender for Endpoint. Ciò può causare confusione durante l'analisi degli eventi imprevisti. Per ambienti di test o non volatili, è possibile scegliere in modo diverso. 
+Microsoft consiglia l'onboarding di Desktop virtuale Windows come singola voce per ogni desktop virtuale. Ciò garantisce che l'esperienza di indagine nel portale di Microsoft Defender Endpoint sia nel contesto di un dispositivo basato sul nome del computer. Le organizzazioni che eliminano e ridistribuino frequentemente gli host WVD devono prendere in considerazione l'uso di questo metodo perché impedisce la creazione di più oggetti per lo stesso computer nel portale di Microsoft Defender for Endpoint. Ciò può causare confusione durante l'analisi degli eventi imprevisti. Per ambienti di test o non volatili, è possibile scegliere in modo diverso. 
 
 Microsoft consiglia di aggiungere lo script di onboarding di Microsoft Defender for Endpoint all'immagine D'oro WVD. In questo modo, è possibile assicurarsi che questo script di onboarding venga eseguito immediatamente al primo avvio. Viene eseguito come script di avvio al primo avvio in tutti i computer WVD di cui viene eseguito il provisioning dall'immagine D'oro WVD. Tuttavia, se si utilizza una delle immagini della raccolta senza modifiche, posizionare lo script in un percorso condiviso e chiamarlo da Criteri di gruppo locali o di dominio. 
 
 > [!NOTE]
-> Il posizionamento e la configurazione dello script di avvio di onboarding VDI nell'immagine dorata WVD lo configura come script di avvio che viene eseguito all'avvio del WVD. NON è consigliabile eseguire l'onboardboard dell'immagine d'oro WVD effettiva. Un'altra considerazione è il metodo utilizzato per eseguire lo script. Dovrebbe essere eseguito il prima possibile nel processo di avvio/provisioning per ridurre il tempo tra il computer disponibile per ricevere le sessioni e l'onboarding del dispositivo nel servizio. Di seguito vengono descritti gli scenari 1 & 2.
+> Il posizionamento e la configurazione dello script di avvio di onboarding VDI nell'immagine dorata WVD lo configura come script di avvio che viene eseguito all'avvio del WVD. NON è consigliabile eseguire l'onboardboard dell'immagine D'oro WVD effettiva. Un'altra considerazione è il metodo utilizzato per eseguire lo script. Dovrebbe essere eseguito il prima possibile nel processo di avvio/provisioning per ridurre il tempo tra il computer disponibile per ricevere le sessioni e l'onboarding del dispositivo nel servizio. Di seguito vengono descritti gli scenari 1 & 2.
 
 ### <a name="scenarios"></a>Scenari
 Esistono diversi modi per eseguire l'onboard di un computer host WVD:There are several ways to onboard a WVD host machine:
@@ -103,7 +101,7 @@ Per altre informazioni, vedi: [Onboard di dispositivi Windows 10 con Configurati
 
 #### <a name="tagging-your-machines-when-building-your-golden-image"></a>Tagging dei computer durante la creazione dell'immagine d'oro 
 
-Nell'ambito dell'onboarding, è consigliabile impostare un tag computer per poter distinguere più facilmente i computer WVD nel Centro sicurezza Microsoft. Per altre informazioni, vedi [Aggiungere tag dispositivo impostando un valore di chiave del Registro di sistema.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-tags#add-device-tags-by-setting-a-registry-key-value) 
+Nell'ambito dell'onboarding, è consigliabile impostare un tag del computer su in grado di differenziare più facilmente i computer WVD nel Centro sicurezza Microsoft. Per altre informazioni, vedi [Aggiungere tag dispositivo impostando un valore di chiave del Registro di sistema.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/machine-tags#add-device-tags-by-setting-a-registry-key-value) 
 
 #### <a name="other-recommended-configuration-settings"></a>Altre impostazioni di configurazione consigliate 
 
