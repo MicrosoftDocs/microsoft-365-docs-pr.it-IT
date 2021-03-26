@@ -20,12 +20,12 @@ ms.custom:
 description: Informazioni su come gli utenti possono visualizzare e gestire i messaggi in quarantena in Exchange Online Protection (EOP) che avrebbero dovuto essere recapitati.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 961912427f9c343f8235f0ed8e990431669ff9e5
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: cc904132bc12f068571cfd86d9f5eb629d7f53f2
+ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
 ms.translationtype: HT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205592"
+ms.locfileid: "51215517"
 ---
 # <a name="find-and-release-quarantined-messages-as-a-user-in-eop"></a>Trovare e rilasciare i messaggi messi in quarantena come utente di EOP
 
@@ -155,6 +155,8 @@ Dopo aver selezionato un messaggio, sono disponibili diverse opzioni per le oper
   - **Visualizzazione testo**: Mostra il corpo del messaggio in testo normale.
 
 - **Rimuovi da quarantena**: dopo aver fatto clic su **Sì** nell'avviso che viene visualizzato, il messaggio viene eliminato immediatamente.
+
+- **Blocca mittente**: questa opzione impedisce al mittente di inviarti messaggi.
 
 Al termine, fare clic su **Chiudi**.
 
