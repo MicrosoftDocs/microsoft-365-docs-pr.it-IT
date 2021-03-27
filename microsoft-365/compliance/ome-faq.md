@@ -15,12 +15,12 @@ search.appverid:
 ms.assetid: 0432dce9-d9b6-4e73-8a13-4a932eb0081e
 description: Hai una domanda sul funzionamento delle nuove funzionalità di protezione dei messaggi? Verificare la disponibilità di una risposta qui.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 13d4181482bf8ad7460480a70c762fe60fd28ad0
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 2ad0ef4f16e5b458da80227b93fab574e3ce8dde
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051748"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394684"
 ---
 # <a name="message-encryption-faq"></a>Domande frequenti sulla crittografia dei messaggi
 
@@ -62,7 +62,7 @@ Per ulteriori informazioni su BYOK, vedere [Planning and implementing your Azure
   
 ## <a name="do-ome-and-byok-with-azure-information-protection-change-microsofts-approach-to-third-party-data-requests-such-as-subpoenas"></a>OME e BYOK con Azure Information Protection modificano l'approccio di Microsoft alle richieste di dati di terze parti, ad esempio i mandati di comparizione?
 
-No. OME e l'opzione per fornire e controllare le proprie chiavi di crittografia, denominate BYOK, da Azure Information Protection non sono state progettate per rispondere alle richieste di comparizione delle forze dell'ordine. OME, con BYOK per Azure Information Protection, è stato progettato per i clienti incentrati sulla conformità. Microsoft prende molto sul serio le richieste di terze parti per i dati dei clienti. In qualità di provider di servizi cloud, sosteniamo sempre la privacy dei dati dei clienti. Nel caso in cui riceviamo un mandato di comparizione, tentiamo sempre di reindirizzare la terza parte al cliente per ottenere le informazioni. (Si prega di leggere il blog di Brad Smith: Protezione dei dati [dei clienti da snooping governativo](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Microsoft pubblica periodicamente informazioni dettagliate sulla richiesta ricevuta. Per ulteriori informazioni sulle richieste di dati di terze parti, vedere [Risposta alle](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) richieste del governo e delle forze dell'ordine per accedere ai dati dei clienti nel Centro protezione Microsoft. Vedere anche "Divulgazione dei dati dei clienti" nelle Condizioni [dei servizi online (OST).](https://www.microsoft.com/Licensing/product-licensing/products.aspx)
+No. OME e l'opzione per fornire e controllare le proprie chiavi di crittografia, denominate BYOK, da Azure Information Protection non sono state progettate per rispondere alle richieste di comparizione delle forze dell'ordine. OME, con BYOK per Azure Information Protection, è stato progettato per i clienti incentrati sulla conformità. Microsoft prende sul serio le richieste di terze parti per i dati dei clienti. In qualità di provider di servizi cloud, sosteniamo sempre la privacy dei dati dei clienti. Nel caso in cui riceviamo un mandato di comparizione, tentiamo sempre di reindirizzare la terza parte al cliente per ottenere le informazioni. (Leggere il blog di Brad Smith: [Protezione dei dati dei clienti dallo snooping governativo](https://blogs.microsoft.com/blog/2013/12/04/protecting-customer-data-from-government-snooping/)). Microsoft pubblica periodicamente informazioni dettagliate sulla richiesta ricevuta. Per ulteriori informazioni sulle richieste di dati di terze parti, vedere [Risposta alle](https://www.microsoft.com/trustcenter/privacy/govt-requests-for-data) richieste del governo e delle forze dell'ordine per accedere ai dati dei clienti nel Centro protezione Microsoft. Vedere anche "Divulgazione dei dati dei clienti" nelle Condizioni [dei servizi online (OST).](https://www.microsoft.com/Licensing/product-licensing/products.aspx)
   
 ## <a name="how-is-this-feature-related-to-legacy-office-365-message-encryption-ome-and-information-rights-management-irm-features"></a>In che modo questa funzionalità è correlata alle funzionalità legacy di Crittografia messaggi di Office 365 (OME) e Information Rights Management (IRM) ?
 
@@ -165,7 +165,7 @@ Sì. Per informazioni sulla personalizzazione dei messaggi di posta elettronica 
   
 ## <a name="are-there-any-reporting-capabilities-or-insights-for-encrypted-emails"></a>Esistono funzionalità di creazione di report o informazioni dettagliate per i messaggi di posta elettronica crittografati?
 
-È presente un report Crittografia nel Centro sicurezza e conformità. Vedere [View email security reports in the Security & Compliance Center.](../security/defender-365-security/view-email-security-reports.md)
+È presente un report Crittografia nel Centro sicurezza e conformità. Vedere [View email security reports in the Security & Compliance Center.](../security/office-365-security/view-email-security-reports.md)
   
 ## <a name="can-i-use-message-encryption-with-compliance-features-such-as-ediscovery"></a>È possibile utilizzare la crittografia dei messaggi con funzionalità di conformità come eDiscovery?
 
@@ -173,7 +173,7 @@ Sì. Tutti i messaggi di posta elettronica crittografati sono individuabili dall
 
 ## <a name="can-i-remove-encryption-from-email"></a>È possibile rimuovere la crittografia dalla posta elettronica?
 
-Gli amministratori possono configurare una regola del flusso di posta per rimuovere la crittografia. Non è possibile rimuovere la crittografia utilizzando una regola del flusso di posta dalla posta applicata da un'altra organizzazione, a meno che la posta non venga incisa utilizzando la protezione di sola crittografia.
+Gli amministratori possono configurare una regola del flusso di posta per rimuovere la crittografia. Non è possibile rimuovere la crittografia utilizzando una regola del flusso di posta dalla posta applicata da un'altra organizzazione, a meno che la posta non venga crittografata utilizzando la protezione di sola crittografia.
 
 ## <a name="is-delegated-access-supported"></a>L'accesso delegato è supportato?
 

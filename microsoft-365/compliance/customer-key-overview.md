@@ -16,12 +16,12 @@ ms.collection:
 - m365initiative-compliance
 ms.custom: seo-marvel-apr2020
 description: In questo articolo verranno informazioni sul funzionamento della crittografia del servizio con la chiave del cliente in Microsoft 365.
-ms.openlocfilehash: 9ed4b523c77cf1fa80d23e8fbe5c93e938f222a2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 21291dc45cd634cd5b6a88c4e58972c17486724f
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916888"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394724"
 ---
 # <a name="service-encryption-with-customer-key"></a>Crittografia del servizio con Customer Key
 
@@ -37,7 +37,7 @@ Customer Key migliora la capacità dell'organizzazione di soddisfare le esigenze
 
 ## <a name="customer-key-encrypts-data-at-rest-in-office-365"></a>Customer Key crittografa i dati in pausa in Office 365
 
-Usando le chiavi fornite, customer key crittografa:
+Usando le chiavi fornite, customer key a livello di applicazione crittografa:
 
 - File di SharePoint Online, OneDrive for Business e Teams.
 - File caricati in OneDrive for Business.

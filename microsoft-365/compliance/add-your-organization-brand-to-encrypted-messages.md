@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 description: Informazioni su come gli amministratori globali di Office 365 possono applicare la personalizzazione dell'organizzazione ai messaggi di posta elettronica crittografati & contenuto del portale di crittografia.
-ms.openlocfilehash: 3c5dc089363a7dfe895e79f03e5a01cb57c2ad57
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2898e12ad00d11cd9eb2f3be5d817ef113607e79
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923506"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394714"
 ---
 # <a name="add-your-organizations-brand-to-your-microsoft-365-for-business-message-encryption-encrypted-messages"></a>Aggiungere il marchio dell'organizzazione ai messaggi crittografati di Crittografia messaggi di Microsoft 365 per le aziende
 
@@ -121,14 +121,13 @@ Per rimuovere tutte le modifiche dal modello predefinito, incluse le personalizz
 
    Nella tabella seguente vengono descritte le impostazioni predefinite dell'opzione di personalizzazione della crittografia.
 
-   **Per ripristinare il testo e l'immagine predefiniti per questa funzionalità dell'esperienza di crittografia**|**Usare questi comandi**|
+   |Per ripristinare il testo e l'immagine predefiniti per questa funzionalità dell'esperienza di crittografia|Usare questi comandi|
    |:-----|:-----|
-   |Testo predefinito fornito con messaggi di posta elettronica crittografati  <br/> Il testo predefinito viene visualizzato sopra le istruzioni per la visualizzazione di messaggi crittografati|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<empty string>"` <br/> **Esempio:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
+   |Testo predefinito fornito con messaggi di posta elettronica crittografati.  Il testo predefinito viene visualizzato sopra le istruzioni per la visualizzazione di messaggi crittografati|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -EmailText "<empty string>"` <br/> **Esempio:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -EmailText ""`|
    |dichiarazione di non responsabilità nella posta elettronica che contiene il messaggio crittografato|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" DisclaimerText "<empty string>"` <br/> **Esempio:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -DisclaimerText ""`|
    |testo visualizzato nella parte superiore del portale di visualizzazione del messaggio crittografato|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -PortalText "<empty string>"` <br/> **Esempio di ripristino dell'impostazione predefinita:** <br/>  `Set-OMEConfiguration -Identity "OME Configuration" -PortalText ""`|
    |Logo|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -Image <"$null">` <br/> **Esempio di ripristino dell'impostazione predefinita:** <br/>  `Set-OMEConfiguration -Identity "OME configuration" -Image $null`|
    |Colore di sfondo|`Set-OMEConfiguration -Identity "<OMEConfigurationName>" -BackgroundColor "$null">` <br/> **Esempio di ripristino dell'impostazione predefinita:** <br/> `Set-OMEConfiguration -Identity "OME configuration" -BackgroundColor $null`|
-   |
 
 ## <a name="remove-a-custom-branding-template-advanced-message-encryption"></a>Rimuovere un modello di personalizzazione (Crittografia avanzata messaggi)
 

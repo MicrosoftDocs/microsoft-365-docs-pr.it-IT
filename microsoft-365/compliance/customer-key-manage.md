@@ -13,12 +13,12 @@ search.appverid:
 ms.collection:
 - M365-security-compliance
 description: Dopo aver configurato Customer Key, scopri come gestirlo ripristinando le chiavi AKV e gestendo le autorizzazioni e i criteri di crittografia dei dati.
-ms.openlocfilehash: 8f55667254ce7f5cbd9d4de274623ca4a3c4aa9d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 284a8ff24fef2f7e8b807477c99e20aaf593552e
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909948"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394669"
 ---
 # <a name="manage-customer-key"></a>Gestire il codice Cliente
 
@@ -168,9 +168,11 @@ L'output di questo cmdlet include:
 
   - **Rolling:** È in corso un roll-key. Se la chiave per la posizione geografica è in esecuzione, verranno visualizzate anche informazioni sulla percentuale di siti che hanno completato l'operazione di rollio delle chiavi in modo da poter monitorare lo stato.
 
-## <a name="unassign-a-dep-from-a-mailbox"></a>Annullare l'assegnazione di protezione esecuzione programmi da una cassetta postale
+## <a name="roll-back-from-customer-key-to-microsoft-managed-keys"></a>Eseguire il rollback da Customer Key alle chiavi gestite da Microsoft
 
-Per annullare l'assegnazione di protezione esecuzione programmi da una cassetta postale, utilizzare il cmdlet Set-mailbox di PowerShell e impostare `DataEncryptionPolicy` su `$NULL` . L'esecuzione di questo cmdlet annulla l'assegnazione della protezione esecuzione programmi attualmente assegnata e ricrittografa la cassetta postale utilizzando la protezione esecuzione programmi associata alle chiavi gestite Microsoft predefinite. Non è possibile annullare l'assegnazione di Protezione esecuzione programmi utilizzata dalle chiavi gestite Microsoft. Se non si desidera utilizzare le chiavi gestite microsoft, è possibile assegnare un'altra protezione esecuzione programmi alla cassetta postale.
+Per customer key a livello di tenant, dovrai contattare Microsoft con una richiesta di "offboarding" da Customer Key. La richiesta verrà gestita dal team di progettazione on call.
+
+Per customer key a livello di applicazione, è possibile annullare l'assegnazione di una protezione esecuzione programmi dalle cassette postali utilizzando il cmdlet Set-mailbox di PowerShell e impostando su `DataEncryptionPolicy` `$NULL` . L'esecuzione di questo cmdlet annulla l'assegnazione della protezione esecuzione programmi attualmente assegnata e ricrittografa la cassetta postale utilizzando la protezione esecuzione programmi associata alle chiavi gestite Microsoft predefinite. Non è possibile annullare l'assegnazione di Protezione esecuzione programmi utilizzata dalle chiavi gestite Microsoft. Se non si desidera utilizzare le chiavi gestite microsoft, è possibile assegnare un'altra protezione esecuzione programmi chiave cliente alla cassetta postale.
 
 Per annullare l'assegnazione di Protezione esecuzione programmi da una cassetta postale utilizzando il cmdlet Set-Mailbox PowerShell, completare questi passaggi.
 
@@ -184,7 +186,7 @@ Per annullare l'assegnazione di Protezione esecuzione programmi da una cassetta 
 
 ## <a name="revoke-your-keys-and-start-the-data-purge-path-process"></a>Revocare le chiavi e avviare il processo del percorso di eliminazione dei dati
 
-Puoi controllare la revoca di tutte le chiavi radice, inclusa la chiave di disponibilità. Customer Key fornisce il controllo dell'aspetto della pianificazione dell'uscita dei requisiti normativi. Se si decide di revocare le chiavi per eliminare i dati e uscire dal servizio, il servizio elimina la chiave di disponibilità al termine del processo di eliminazione dei dati.
+Puoi controllare la revoca di tutte le chiavi radice, inclusa la chiave di disponibilità. Customer Key fornisce il controllo dell'aspetto della pianificazione dell'uscita dei requisiti normativi. Se si decide di revocare le chiavi per eliminare i dati e uscire dal servizio, il servizio elimina la chiave di disponibilità al termine del processo di eliminazione dei dati. Non è possibile eseguire un'eliminazione dei dati per un criterio a livello di tenant.
 
 Microsoft 365 controlla e convalida il percorso di eliminazione dei dati. Per ulteriori informazioni, vedere il report SSAE 18 SOC 2 disponibile nel [Service Trust Portal.](https://servicetrust.microsoft.com/) Inoltre, Microsoft consiglia i documenti seguenti:
 

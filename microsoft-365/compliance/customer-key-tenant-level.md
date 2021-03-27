@@ -3,7 +3,7 @@ title: Customer Key per Microsoft 365 a livello di tenant (anteprima pubblica)
 ms.author: krowley
 author: kccross
 manager: laurawi
-ms.date: 2/17/2021
+ms.date: 3/26/2021
 audience: ITPro
 ms.topic: article
 ms.service: O365-seccomp
@@ -14,17 +14,17 @@ ms.collection:
 - M365-security-compliance
 - m365solution-mip
 - m365initiative-compliance
-description: Informazioni su come configurare customer key per tutti i dati all'interno del tenant di Microsoft 365.
-ms.openlocfilehash: f50986b4e72808d4a1cd4dc8ee0182eb9c0a2455
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Informazioni su come configurare customer key per i dati in Microsoft 365 a livello di tenant.
+ms.openlocfilehash: 811b153d5b0a472c6e542851fec45f1f42bca59b
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922690"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394704"
 ---
 # <a name="overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview"></a>Panoramica del codice "Customer Key" per Microsoft 365 a livello di tenant (anteprima pubblica)
 
-Usando le chiavi fornite, è possibile creare un criterio di crittografia dei dati e assegnarlo al tenant. Protezione esecuzione programmi crittografa i dati nel tenant per questi carichi di lavoro:
+Usando le chiavi fornite, è possibile creare un criterio di crittografia dei dati e assegnarlo al tenant. La protezione esecuzione programmi a livello di tenant creata crittografa i dati seguenti:
 
 - Messaggi di chat di Teams (chat 1:1, chat di gruppo, chat di riunioni e conversazioni di canale)
 - Messaggi multimediali di Teams (immagini, frammenti di codice, messaggi video, messaggi audio, immagini wiki)
@@ -34,39 +34,51 @@ Usando le chiavi fornite, è possibile creare un criterio di crittografia dei da
 - Messaggi di stato di Teams
 - Informazioni su utenti e segnali per Exchange Online
 - Cassette postali di Exchange Online che non sono già crittografate DEP chiave cliente a livello di applicazione
+- Dati EDM (Exact Data Match) MIP : (schemi di file di dati, pacchetti di regole e salt utilizzati per eseguire l'hashing dei dati sensibili)
 
-Per Microsoft Teams, customer key a livello di tenant crittografa i nuovi dati dal momento in cui la protezione esecuzione programmi viene assegnata al tenant. L'anteprima pubblica non supporta la crittografia dei dati passati. Per Exchange Online, customer key crittografa tutti i dati esistenti e nuovi.
+Per Microsoft Information Protection e Microsoft Teams, customer key a livello di tenant crittografa i nuovi dati dal momento in cui si assegna la protezione esecuzione programmi al tenant. L'anteprima pubblica non supporta la crittografia dei dati passati. Per Exchange Online, customer key crittografa tutti i dati esistenti e nuovi.
 
-È possibile creare più criteri di protezione esecuzione per tenant, ma è possibile assegnare una sola protezione esecuzione programmi in qualsiasi momento. Quando si assegna Protezione esecuzione programmi, la crittografia inizia automaticamente, ma può richiedere del tempo a seconda delle dimensioni del tenant.
+È possibile creare più DEP per tenant, ma è possibile assegnare solo una protezione esecuzione programmi alla volta. Quando si assegna Protezione esecuzione programmi, la crittografia inizia automaticamente, ma richiede del tempo a seconda delle dimensioni del tenant.
 
 ## <a name="tenant-level-policies-add-broader-control-to-customer-key-for-microsoft-365"></a>I criteri a livello di tenant aggiungono un controllo più ampio a Customer Key per Microsoft 365
 
 Se è già stata impostata la chiave cliente per Exchange Online e Sharepoint Online, ecco come si inserisce la nuova anteprima pubblica a livello di tenant.
 
-Il criterio di crittografia a livello di tenant creato crittografa tutti i dati per i carichi di lavoro di Microsoft Teams ed Exchange Online in Microsoft 365. Tuttavia, per Exchange Online, se sono già stati assegnati DEP chiave cliente a singole cassette postali, i criteri a livello di tenant non sovrascrivono tali CRITERI. Il criterio a livello di tenant crittograferà solo le cassette postali a cui non è già assegnata una protezione esecuzione programmi chiave cliente a livello di cassetta postale.
+Il criterio di crittografia a livello di tenant creato crittografa tutti i dati per i carichi di lavoro di Microsoft Teams ed Exchange Online in Microsoft 365. Tuttavia, per Exchange Online, se sono già stati assegnati DEP chiave cliente a singole cassette postali, i criteri a livello di tenant non sovrascrivono tali CRITERI. Il criterio a livello di tenant crittograferà solo le cassette postali a cui non è già assegnata una protezione esecuzione programmi chiave cliente a livello di cassetta postale. Quando si crittografa una cassetta postale utente utilizzando una funzionalità Protezione esecuzione programmi a livello di tenant, tutto il relativo contenuto viene crittografato. Per informazioni su ciò che viene crittografato con protezione esecuzione programmi a livello di applicazione, vedere [Crittografia del servizio con chiave cliente](customer-key-overview.md).
 
-Ad esempio, i file di Microsoft Teams e alcune registrazioni di chiamate e riunioni di Teams salvate in OneDrive for Business e SharePoint vengono crittografate da una protezione esecuzione programmi di SharePoint Online. Una singola funzionalità Protezione esecuzione programmi di SharePoint Online crittografa il contenuto all'interno di un'unica area geografica.
+## <a name="data-that-isnt-encrypted-with-customer-key-at-the-tenant-level"></a>Dati non crittografati con customer key a livello di tenant
+
+Customer Key non crittografa i seguenti tipi di dati a livello di tenant. Al contrario, Microsoft 365 usa altri tipi di crittografia per proteggere questi dati.
+
+- Cassette postali di Exchange online che sono già state crittografate utilizzando una protezione esecuzione programmi chiave cliente a livello di applicazione. Le cassette postali a cui non è assegnata una funzionalità Protezione esecuzione programmi chiave cliente verranno crittografate utilizzando protezione esecuzione programmi a livello di tenant. Questa disposizione significa che alcune cassette postali potrebbero essere crittografate con protezione esecuzione programmi a livello di tenant e alcune cassette postali crittografate con DEP a livello di applicazione.
+- SharePoint e OneDrive for Business usano customer key a livello di applicazione. Una singola funzionalità Protezione esecuzione programmi crittografa il contenuto in SharePoint per una singola area geografica.
+- I file di Microsoft Teams e alcune registrazioni di chiamate e riunioni di Teams salvate in OneDrive for Business e SharePoint vengono crittografate da una protezione esecuzione programmi di SharePoint Online.
+
+Eventuali carichi di lavoro o scenari attualmente non supportati da Customer Key per Microsoft 365.
+
+- Altri carichi di lavoro di Microsoft 365, ad esempio Yammer, Planner e così via.
+- Eventi live di Teams e domande&A in eventi live. Per Teams, questo scenario è l'unico che non è crittografato da Customer Key a livello di tenant.
 
 ## <a name="set-up-customer-key-at-the-tenant-level-public-preview"></a>Configurare customer key a livello di tenant (anteprima pubblica)
 
-Questi passaggi sono simili ma non identici a quelli per la configurazione del codice "Customer Key" a livello di applicazione. È consigliabile usare questa anteprima pubblica solo con i dati di test nei tenant di test. Non usare questa versione con i dati di produzione o nell'ambiente di produzione. Se si dispone già di una distribuzione di produzione di Customer Key, eseguire questi passaggi per configurare customer key a livello di tenant in un ambiente di testing. Dopo aver assegnato una protezione esecuzione programmi a livello di tenant al tenant, è possibile avviare il processo di convalida e contattare m365ck@microsoft.com con domande o dubbi. È inoltre possibile trovare i passaggi di convalida documentati nell'anteprima pubblica di Istruzioni di convalida per la crittografia in stato di [in-rest per Microsoft 365.](https://aka.ms/CustomerKey/PublicPreviewValidation)
+Questi passaggi sono simili ma non identici a quelli per la configurazione del codice "Customer Key" a livello di applicazione. Usa questa anteprima pubblica solo con i dati di test nei tenant di test. Non usare questa versione con i dati di produzione o nell'ambiente di produzione. Se si dispone già di una distribuzione di produzione di Customer Key, eseguire questi passaggi per configurare customer key a livello di tenant in un ambiente di testing. Dopo aver assegnato una protezione esecuzione programmi a livello di tenant al tenant, è possibile avviare il processo di convalida e contattare m365ck@microsoft.com con domande o dubbi. È inoltre possibile trovare i passaggi di convalida documentati nell'anteprima pubblica di Istruzioni di convalida per la crittografia in stato di [in-rest per Microsoft 365.](https://aka.ms/CustomerKey/PublicPreviewValidation)
 
 La maggior parte di queste attività verrà completata connettendosi in remoto ad Azure PowerShell. Per ottenere risultati ottimali, usare la versione 4.4.0 o successiva di Azure PowerShell.
 
-Prima di iniziare, verificare quanto segue:
+Informazioni preliminari:
 
 - Dovrai usare un account aziendale o dell'istituto di istruzione con il ruolo di amministratore della conformità per configurare il codice "Customer Key" a livello di tenant.
-- Assicurarsi di disporre delle licenze appropriate per l'organizzazione. Usa una sottoscrizione di Azure a pagamento e fatturata usando un Contratto Enterprise o un provider di servizi cloud. Le sottoscrizioni di Azure acquistate con i piani Pay As You Go o con una carta di credito non sono supportate per customer key. A partire dal 1° aprile 2020, customer key in Office 365 è disponibile in Office 365 E5, M365 E5, M365 E5 Compliance e M365 E5 Information Protection & Governance SKU. Office 365 Advanced Compliance SKU non è più disponibile per la procura di nuove licenze. Le licenze esistenti di Office 365 Advanced Compliance continueranno a essere supportate. Anche se il servizio può essere abilitato con almeno una licenza nel tenant con la licenza appropriata, è comunque consigliabile assicurarsi che tutti gli utenti che beneficiano del servizio siano in grado di disporre di licenze appropriate.
+- Assicurarsi di disporre delle licenze appropriate per l'organizzazione. Usa una sottoscrizione di Azure a pagamento e fatturata usando un Contratto Enterprise o un provider di servizi cloud. Le sottoscrizioni di Azure acquistate con i piani Pay As You Go o con una carta di credito non sono supportate per customer key. A partire dal 1° aprile 2020, customer key in Office 365 è disponibile in Office 365 E5, Microsoft 365 E5, Conformità microsoft 365 E5 e SKU di governance di Microsoft 365 E5 Information Protection &. Office 365 Advanced Compliance SKU non è più disponibile per le nuove licenze. Le licenze esistenti di Office 365 Advanced Compliance continueranno a essere supportate. Anche se il servizio può essere abilitato con almeno un utente con licenza appropriata nel tenant, è comunque consigliabile assicurarsi che tutti gli utenti che beneficiano del servizio siano in grado di disporre di licenze appropriate.
 
 ### <a name="create-two-new-azure-subscriptions"></a>Creare due nuove sottoscrizioni di Azure
 
-Customer Key richiede due chiavi per ogni criterio di crittografia dei dati (DEP). A tale scopo, è necessario creare due sottoscrizioni di Azure. Come procedura consigliata, Microsoft consiglia di disporre di membri separati dell'organizzazione per configurare una chiave in ogni sottoscrizione. Usare queste sottoscrizioni di Azure solo per amministrare le chiavi di crittografia per Microsoft 365. Questo protegge l'organizzazione nel caso in cui uno degli operatori elimini accidentalmente, intenzionalmente o in modo dannoso o in altro modo maneggio le chiavi di cui sono responsabili.
+Customer Key richiede due chiavi per ogni criterio di crittografia dei dati (DEP). Per creare due chiavi, è necessario creare due sottoscrizioni di Azure. Come procedura consigliata, Microsoft consiglia di disporre di membri separati dell'organizzazione per configurare una chiave in ogni sottoscrizione. Usare queste sottoscrizioni di Azure solo per amministrare le chiavi di crittografia per Microsoft 365. Seguire queste linee guida consente di proteggere l'organizzazione nel caso in cui uno degli operatori elimini accidentalmente, intenzionalmente o intenzionalmente o in altro modo le chiavi di cui sono responsabili.
 
 Non esiste un limite pratico al numero di sottoscrizioni di Azure che è possibile creare per l'organizzazione. Seguire questa procedura consigliata consente di ridurre al minimo l'impatto dell'errore umano e allo stesso tempo di gestire le risorse utilizzate da Customer Key.
 
 ### <a name="register-azure-subscriptions-to-use-a-mandatory-retention-period"></a>Registrare le sottoscrizioni di Azure per usare un periodo di conservazione obbligatorio
 
-La perdita temporanea o permanente delle chiavi di crittografia radice può essere dannosa o addirittura catastrofica per il funzionamento del servizio e può causare la perdita di dati. Per questo motivo, le risorse utilizzate con Customer Key richiedono una protezione avanzata. Tutte le risorse di Azure usate con Customer Key offrono meccanismi di protezione oltre la configurazione predefinita. Le sottoscrizioni di Azure possono essere contrassegnate o registrate in modo da impedire l'annullamento immediato e irrevocabile. Questa operazione viene definita registrazione per un periodo di conservazione obbligatorio. I passaggi necessari per registrare le sottoscrizioni di Azure per un periodo di conservazione obbligatorio richiedono la collaborazione con Microsoft. Questo processo può richiedere fino a cinque giorni lavorativi. In precedenza, a volte questo è stato definito "Non annullare".
+La perdita temporanea o permanente delle chiavi di crittografia radice può essere dannosa o addirittura catastrofica per il funzionamento del servizio e può causare la perdita di dati. Per questo motivo, le risorse utilizzate con Customer Key richiedono una protezione avanzata. Tutte le risorse di Azure usate con Customer Key offrono meccanismi di protezione oltre la configurazione predefinita. Le sottoscrizioni di Azure possono essere contrassegnate o registrate in modo da impedire l'annullamento immediato e irrevocabile. Questo processo viene definito registrazione per un periodo di conservazione obbligatorio. I passaggi necessari per registrare le sottoscrizioni di Azure per un periodo di conservazione obbligatorio richiedono la collaborazione con Microsoft. Questo processo può richiedere fino a cinque giorni lavorativi. In precedenza, questo processo è stato talvolta definito "Non annullare".
   
 Prima di contattare il team di Microsoft 365, è necessario eseguire la procedura seguente per ogni sottoscrizione di Azure che si usa con customer key. Prima di iniziare, assicurati di avere installato il modulo Az di [Azure PowerShell.](/powershell/azure/new-azureps-module-az)
 
@@ -79,7 +91,7 @@ Prima di contattare il team di Microsoft 365, è necessario eseguire la procedur
    Register-AzProviderFeature -FeatureName mandatoryRetentionPeriodEnabled -ProviderNamespace Microsoft.Resources
    ```
 
-3. Contattare Microsoft per completare il processo [m365ck@microsoft.com](mailto:m365ck@microsoft.com). Includere quanto segue nel messaggio di posta elettronica:
+3. Contattare Microsoft per completare il processo [m365ck@microsoft.com](mailto:m365ck@microsoft.com). Includere il contenuto seguente nel messaggio di posta elettronica:
 
    **Subject**: Customer Key for \<*Your tenant's fully-qualified domain name*\>
 
@@ -113,11 +125,11 @@ Quando si crea un insieme di credenziali delle chiavi, è necessario scegliere u
 
 Usa un prefisso comune per gli insiemi di credenziali delle chiavi e includi un'abbreviazione dell'uso e dell'ambito dell'insieme di credenziali delle chiavi e delle chiavi. Ad esempio, per il servizio Contoso in cui si trovano gli insiemi di credenziali in Nord America, una possibile coppia di nomi è Contoso-O365-NA-VaultA1 e Contoso-O365-NA-VaultA2. I nomi degli insiemi di credenziali sono stringhe univoche a livello globale in Azure, quindi potrebbe essere necessario provare le varianti dei nomi desiderati nel caso in cui i nomi desiderati siano già stati rivendicati da altri clienti di Azure. Una volta configurati, i nomi dell'insieme di credenziali non possono essere modificati, quindi la procedura consigliata consiste nell'avere un piano scritto per la configurazione e utilizzare una seconda persona per verificare che il piano venga eseguito correttamente.
 
-Se possibile, creare gli insiemi di credenziali in aree non abbinate. Le aree di Azure abbinate offrono disponibilità elevata tra i domini di errore del servizio. Pertanto, le coppie regionali possono essere ritenute come l'area di backup reciproca. Ciò significa che una risorsa di Azure posizionata in un'area ottiene automaticamente la tolleranza di errore attraverso l'area associata. Per questo motivo, la scelta delle aree per due insiemi di credenziali utilizzati in un criterio di crittografia dei dati in cui le aree sono abbinate significa che sono in uso solo un totale di due aree di disponibilità. La maggior parte delle aree geografiche ha solo due aree, quindi non è ancora possibile selezionare aree non abbinate. Se possibile, scegliere due aree non associate per i due insiemi di credenziali utilizzati con un criterio di crittografia dei dati. Ciò trae vantaggio da un totale di quattro aree di disponibilità. Per altre informazioni, vedere Continuità aziendale e ripristino di emergenza [(BCDR):](/azure/best-practices-availability-paired-regions) Azure Paired Regions per un elenco corrente di coppie regionali.
+Se possibile, creare gli insiemi di credenziali in aree non abbinate. Le aree di Azure abbinate offrono disponibilità elevata tra i domini di errore del servizio. Pertanto, le coppie regionali possono essere ritenute come l'area di backup reciproca. Una risorsa di Azure posizionata in un'area ottiene automaticamente la tolleranza di errore attraverso l'area associata. La scelta delle aree per due insiemi di credenziali utilizzati in un criterio di crittografia dei dati in cui le aree sono abbinate significa che sono in uso solo un totale di due aree di disponibilità. La maggior parte delle aree geografiche ha solo due aree, quindi non è ancora possibile selezionare aree non abbinate. Se possibile, scegliere due aree non associate per i due insiemi di credenziali utilizzati con un criterio di crittografia dei dati. Questo scenario trae vantaggio da un totale di quattro aree di disponibilità. Per altre informazioni, vedere Continuità aziendale e ripristino di emergenza [(BCDR):](/azure/best-practices-availability-paired-regions) Azure Paired Regions per un elenco corrente di coppie regionali.
 
 ### <a name="assign-permissions-to-each-key-vault"></a>Assegnare autorizzazioni a ogni insieme di credenziali delle chiavi
 
-Per ogni insieme di credenziali delle chiavi, dovrai definire tre set separati di autorizzazioni per Customer Key, a seconda dell'implementazione. Ad esempio, sarà necessario definire un set di autorizzazioni per ognuno dei seguenti elementi:
+Per ogni insieme di credenziali delle chiavi, dovrai definire tre set separati di autorizzazioni per Customer Key, a seconda dell'implementazione. Ad esempio, è necessario definire un set di autorizzazioni per ognuna di queste:
   
 - **Amministratori dell'insieme di** credenziali delle chiavi che eseguiranno la gestione quotidiana dell'insieme di credenziali delle chiavi per l'organizzazione. Queste attività includono il backup, la creazione, il ripristino, l'importazione, l'elenco e il ripristino.
 
@@ -208,7 +220,7 @@ Add-AzKeyVaultKey -VaultName Contoso-O365EX-NA-VaultA1 -Name Contoso-O365EX-NA-V
 
 ### <a name="check-the-recovery-level-of-your-keys"></a>Controllare il livello di ripristino delle chiavi
 
-Microsoft 365 richiede che la sottoscrizione di Azure Key Vault sia impostata su Do Not Cancel e che le chiavi usate da Customer Key hanno l'eliminazione soft abilitata. Puoi confermarlo esaminando il livello di ripristino delle chiavi.
+Microsoft 365 richiede che la sottoscrizione di Azure Key Vault sia impostata su Do Not Cancel e che le chiavi usate da Customer Key hanno l'eliminazione soft abilitata. Puoi confermare queste impostazioni esaminando il livello di ripristino delle chiavi.
   
 Per controllare il livello di ripristino di una chiave, in Azure PowerShell eseguire il cmdlet Get-AzKeyVaultKey come indicato di seguito:
   
@@ -220,7 +232,7 @@ Se la proprietà _Recovery Level_ restituisce un valore diverso da **Recoverable
 
 ### <a name="back-up-azure-key-vault"></a>Eseguire il backup di Azure Key Vault
 
-Subito dopo la creazione o qualsiasi modifica apportata a una chiave, eseguire un backup e archiviare copie del backup, sia online che offline. Non connettere copie offline ad alcuna rete. Archiviarli invece in una struttura di archiviazione fisica sicura o commerciale. Almeno una copia del backup deve essere archiviata in un percorso accessibile in caso di emergenza. I BLOB di backup sono l'unico mezzo per ripristinare il materiale delle chiavi nel caso in cui una chiave dell'insieme di credenziali delle chiavi sia definitivamente distrutta o altrimenti resa inoperabile. Le chiavi esterne all'insieme di credenziali delle chiavi di Azure e che sono state importate in Azure Key Vault non sono idonee come backup perché i metadati necessari per l'uso della chiave da parte del cliente non esistono con la chiave esterna. Solo un backup eseguito da Azure Key Vault può essere usato per le operazioni di ripristino con Customer Key. Pertanto, è essenziale eseguire un backup di Azure Key Vault dopo aver caricato o creato una chiave.
+Subito dopo la creazione o qualsiasi modifica a una chiave, eseguire il backup della chiave e archiviare le copie del backup, sia online che offline. Non connettere copie offline ad alcuna rete. Archiviarli invece in una struttura di archiviazione fisica sicura o commerciale. Almeno una copia del backup deve essere archiviata in un percorso accessibile in caso di emergenza. I BLOB di backup sono l'unico mezzo per ripristinare il materiale delle chiavi nel caso in cui una chiave dell'insieme di credenziali delle chiavi sia definitivamente distrutta o altrimenti resa inoperabile. Le chiavi esterne a Azure Key Vault e importate in Azure Key Vault non sono idonee come backup perché i metadati necessari per customer key per usare la chiave non esistono con la chiave esterna. Solo un backup eseguito da Azure Key Vault può essere usato per le operazioni di ripristino con Customer Key. Pertanto, è essenziale eseguire un backup di Azure Key Vault dopo aver caricato o creato una chiave.
   
 Per creare un backup di una chiave di Azure Key Vault, eseguire il cmdlet [Backup-AzKeyVaultKey](/powershell/module/az.keyvault/backup-azkeyvaultkey) come segue:
 
@@ -321,7 +333,7 @@ Parametri:
 Set-M365DataAtRestEncryptionPolicyAssignment -DataEncryptionPolicy "<Default_PolicyName or Default_PolicyID>"
 ```
 
-Descrizione: questo cmdlet viene utilizzato per configurare i criteri di crittografia dei dati predefiniti. Questo criterio verrà usato per crittografare i dati in tutti i carichi di lavoro di supporto. 
+Descrizione: questo cmdlet viene utilizzato per configurare i criteri di crittografia dei dati predefiniti. Questo criterio verrà usato per crittografare i dati in tutti i carichi di lavoro di supporto.
 
 Esempio:
 
@@ -404,11 +416,11 @@ Get-M365DataAtRestEncryptionPolicyAssignment
 
 Descrizione: questo cmdlet elenca i criteri attualmente assegnati al tenant.
 
-## <a name="offboarding-from-customer-key"></a>Offboarding da Customer Key
+## <a name="offboarding-from-customer-key-at-the-tenant-level"></a>Offboarding da Customer Key a livello di tenant
 
 Se è necessario ripristinare le chiavi gestite da Microsoft, è possibile. Quando si esegue l'offboard, i dati vengono crittografati di nuovo utilizzando la crittografia predefinita supportata da ogni singolo carico di lavoro. Ad esempio, Exchange Online supporta la crittografia predefinita utilizzando le chiavi gestite da Microsoft.
 
-Se si è deciso di eseguire l'offboard del tenant da Customer Key a livello di tenant, contattare Microsoft con una richiesta tramite posta elettronica per "disabilitare" il servizio per il tenant [a m365ck@microsoft.com](mailto:m365ck@microsoft.com).
+Se si decide di eseguire l'offboard del tenant da Customer Key a [livello](mailto:m365ck@microsoft.com) di tenant, inviare un messaggio di posta elettronica m365ck@microsoft.com con una richiesta di "disabilitare" il servizio per il tenant.
 
 > [!IMPORTANT]
 > L'offboarding non corrisponde a un'eliminazione di dati. Un'eliminazione dei dati elimina definitivamente i dati dell'organizzazione da Microsoft 365, l'offboarding no. Non è possibile eseguire un'eliminazione dei dati per un criterio a livello di tenant. Per informazioni sul percorso di eliminazione dei dati, vedere [Revocare le chiavi e avviare il processo del percorso di](customer-key-manage.md#revoke-your-keys-and-start-the-data-purge-path-process)eliminazione dei dati.
@@ -419,9 +431,13 @@ Per informazioni sulla chiave di disponibilità, vedere [Informazioni sulla chia
 
 ## <a name="key-rotation"></a>Rotazione dei tasti
 
-Per informazioni sulla rotazione o la rotazione dei tasti utilizzati con Customer Key, vedere [Roll or rotate a Customer Key or an availability key](customer-key-availability-key-roll.md). Quando si aggiorna Protezione esecuzione programmi per l'utilizzo della nuova versione delle chiavi, si eseguirà il cmdlet Set-M365DataAtRestEncryptionPolicy come descritto in precedenza in questo articolo.
+Per informazioni sulla rotazione o la rotazione dei tasti utilizzati con Customer Key, vedere [Roll or rotate a Customer Key or an availability key.](customer-key-availability-key-roll.md) Quando si aggiorna Protezione esecuzione programmi per l'utilizzo della nuova versione delle chiavi, si eseguirà il cmdlet Set-M365DataAtRestEncryptionPolicy come descritto in precedenza in questo articolo.
 
-## <a name="related-articles"></a>Articoli correlati:
+## <a name="known-issues"></a>Problemi noti
+
+Quando si abilita customer key a livello di tenant, non è possibile creare un nuovo team in Microsoft Teams.
+
+## <a name="related-articles"></a>Articoli correlati
 
 - [Crittografia del servizio con Customer Key](customer-key-overview.md)
 
