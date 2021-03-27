@@ -2,10 +2,10 @@
 title: Proteggere gli account di amministratore
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Informazioni su come configurare e proteggere gli account amministratore.
-ms.openlocfilehash: ec5b971ba4f1fdc8834e10ddf90ff219f763f805
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0d687407fad1cec5da49dbc33ffeb84366f1c309
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912175"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398242"
 ---
 # <a name="protect-your-administrator-accounts"></a>Proteggere gli account di amministratore
 
@@ -36,13 +36,13 @@ Poiché gli account amministratore dispongono di privilegi elevati, sono obietti
 - Come configurare un account amministratore aggiuntivo per le emergenze.
 - Come proteggere questi account.
 
-Quando ti i iscrizione a Microsoft 365 e immetti le informazioni, diventi automaticamente l'amministratore globale. Un amministratore globale ha il controllo finale degli account utente e di tutte le altre impostazioni nell'interfaccia di amministrazione di Microsoft, ma esistono molti tipi diversi di account amministratore con diversi gradi di accesso. Per informazioni sui diversi livelli di accesso per ogni tipo di ruolo di amministratore, vedere about [admin roles.](/office365/admin/add-users/about-admin-roles)
+Quando ti i iscrizione a Microsoft 365 e immetti le informazioni, diventi automaticamente l'amministratore globale. Un amministratore globale ha il controllo finale degli account utente e di tutte le altre impostazioni nell'interfaccia di amministrazione di Microsoft, ma esistono molti tipi diversi di account di amministratore con diversi gradi di accesso. Per informazioni sui diversi livelli di accesso per ogni tipo di ruolo di amministratore, vedere about [admin roles.](/office365/admin/add-users/about-admin-roles)
 
 ## <a name="create-additional-admin-accounts"></a>Creare altri account amministratore
 
 Utilizzare gli account amministratore solo per l'amministrazione. Gli amministratori devono disporre di un account utente separato per l'uso regolare delle app di Office e usare il proprio account amministrativo solo se necessario per gestire account e dispositivi e mentre lavorano su altre funzioni di amministrazione. È anche buona idea rimuovere la licenza di Microsoft 365 dagli account di amministratore in modo da non doverli pagare.
 
-È necessario configurare almeno un altro account amministratore globale per concedere all'amministratore l'accesso a un altro dipendente attendibile. È inoltre possibile creare account amministratore distinti per la gestione degli utenti (questo ruolo è denominato **Amministratore gestione utenti**). Per ulteriori informazioni, vedere [About admin roles](/office365/admin/add-users/about-admin-roles).
+È necessario configurare almeno un altro account amministratore globale per concedere l'accesso di amministratore a un altro dipendente attendibile. È inoltre possibile creare account amministratore distinti per la gestione degli utenti (questo ruolo è denominato **Amministratore gestione utenti**). Per ulteriori informazioni, vedere [About admin roles](/office365/admin/add-users/about-admin-roles).
 
 Per creare altri account amministratore:
 
@@ -76,12 +76,11 @@ Per creare un nuovo account utente:
 3. Espandere la **sezione** Ruoli e scegliere **Utente (nessun accesso amministrativo)**.
 4. Nella sezione **Licenze prodotto** spostare il selettore per **Microsoft 365 Business** su **Su**.
 
-## <a name="register-each-of-these-accounts-for-multi-factor-authentication"></a>Registrare ognuno di questi account per l'autenticazione a più fattori
+## <a name="turn-on-security-defaults"></a>Attivare le impostazioni predefinite di sicurezza
 
-Verificare che questi account utilizzino [l'autenticazione a più fattori.](m365-campaigns-multifactor-authenication.md)
+Le impostazioni predefinite di sicurezza consentono di proteggere l'organizzazione da attacchi correlati all'identità fornendo impostazioni di sicurezza preconfigurate gestite da Microsoft per conto dell'organizzazione. Queste impostazioni includono l'abilitazione dell'autenticazione a più fattori (MFA) per tutti gli amministratori e gli account utente. Per ulteriori informazioni sulle impostazioni predefinite di sicurezza e per informazioni su come abilitarle, vedere [Attivare le impostazioni predefinite di sicurezza.](m365-campaigns-conditional-access.md)
 
 ## <a name="additional-recommendations"></a>Suggerimenti aggiuntivi
 
-- Assicurarsi che gli account amministratore siano impostati anche per l'autenticazione a più fattori. Verrà illustrato come eseguire questa operazione in [Configurare i criteri di accesso condizionale.](m365-campaigns-conditional-access.md)
 - Prima di usare gli account di amministratore, chiudi tutte le app e le sessioni del browser non correlate, inclusi gli account di posta elettronica personali. Puoi anche usare le finestre del browser private o in incognito.
 - Dopo aver completato le attività di amministrazione, assicurati di disconnettersi dalla sessione del browser.

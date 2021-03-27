@@ -2,10 +2,10 @@
 title: Configurare l'autenticazione a più fattori
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -24,21 +24,21 @@ search.appverid:
 - MET150
 - MOE150
 description: Configurare l'autenticazione a più fattori.
-ms.openlocfilehash: 35f96bc41eba9a903bdb3d377a523e2b82e8c428
-ms.sourcegitcommit: 1b30ac6e05906c8a014b1fed33fc71e1821f6ad2
+ms.openlocfilehash: 2a0c8b8fb8451d3d8868c493ad5e1f65adc30b6c
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 01/29/2021
-ms.locfileid: "50044433"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398206"
 ---
 # <a name="set-up-multifactor-authentication"></a>Configurare l'autenticazione a più fattori
 
-L'autenticazione a più fattori offre maggiore sicurezza per l'azienda. Dopo che l'amministratore ha richiesto l'uso dell'autenticazione a più fattori, puoi configurare l'app Microsoft Authenticator per consentirti di accedere in modo sicuro alle app chiave con il telefono. 
+L'autenticazione a più fattori garantisce maggiore sicurezza per l'azienda. Dopo che l'amministratore ha richiesto l'uso dell'autenticazione a più fattori, puoi configurare l'app Microsoft Authenticator per consentirti di accedere in modo sicuro alle app chiave con il telefono. 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2MmQR]
 
-Per altre [informazioni, vedere Configurare l'autenticazione a più fattori in Microsoft 365](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
+Per ulteriori [informazioni, vedere Configurare l'autenticazione a più fattori in Microsoft 365](https://support.office.com/article/a32541df-079c-420d-9395-9d59354f7225)
 
 ## <a name="use-the-outlook-app-in-your-devices"></a>Usare l'app Outlook nei dispositivi
 
-Dopo che l'amministratore ha richiesto di usare l'autenticazione a più fattori e aver configurato un'app di autenticazione come seconda forma di autenticazione, è consigliabile installare e usare solo l'app Outlook per accedere alla posta elettronica di Microsoft 365. Per [informazioni su come installare](../business/set-up-mobile-devices.md) le app di Office, incluso Outlook, nel telefono, vedere Configurare i dispositivi mobili.
+Dopo che l'amministratore ha richiesto di usare l'autenticazione a più fattori e aver configurato un'app di autenticazione come seconda forma di autenticazione, è consigliabile installare e usare solo l'app Outlook per accedere alla posta elettronica di Microsoft 365. Per [informazioni su come](../business/set-up-mobile-devices.md) installare le app di Office, incluso Outlook, nel telefono, vedere Configurare i dispositivi mobili.

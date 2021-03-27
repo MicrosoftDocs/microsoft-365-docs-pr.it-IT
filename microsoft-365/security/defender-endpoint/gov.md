@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 089614fab57950af5f60181ce7ed2116046ad347
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 320913058f1d3cab36b3a279996443c2e4ef117f
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379371"
+ms.locfileid: "51382914"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender for Endpoint per i clienti us government
 
@@ -100,7 +100,7 @@ iOS | ![No](images/svg/check-no.svg) Backlog di progettazione | ![No](images/svg
 > Si sta tentando di eseguire l'onboard di dispositivi Windows precedenti a Windows 10 o Windows Server 2019 con [Microsoft Monitoring Agent?](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma) È necessario scegliere "Azure US Government" in "Azure [](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)Cloud" se si [](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) utilizza la configurazione guidata o se si utilizza una riga di comando o uno [script,](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) impostare il parametro "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" su 1.
 
 > [!NOTE]
-> You'll need version 101.25.72 and above for Linux, and version 101.25.69 and above for macOS. Mentre siamo in anteprima, queste versioni sono disponibili solo nel canale "Insider Fast". Per istruzioni, vedi Configurare [l'archivio software Linux](linux-install-manually.md#configure-the-linux-software-repository) o Impostare il nome del canale [(macOS).](mac-updates.md#set-the-channel-name)
+> You'll need version 101.25.72 and above for Linux, and version 101.25.69 and above for macOS. Durante l'anteprima queste versioni sono disponibili solo nel canale "Insider Fast". Per istruzioni, vedi Configurare [l'archivio software Linux](linux-install-manually.md#configure-the-linux-software-repository) o Impostare il nome del canale [(macOS).](mac-updates.md#set-the-channel-name)
 
 ### <a name="os-versions-when-using-azure-defender-for-servers"></a>Versioni del sistema operativo quando si usa Azure Defender per i server
 Le versioni del sistema operativo seguenti sono supportate quando si usa [Azure Defender per i server:](https://docs.microsoft.com/azure/security-center/security-center-wdatp)
@@ -168,7 +168,7 @@ Analisi e correzione automatizzate: risposta agli avvisi di Office 365 | ![No](i
 Notifiche tramite posta elettronica | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
 Laboratorio di valutazione | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
 Gestione e API: report di conformità e integrità dei dispositivi | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
-Gestione e API: integrazione con prodotti di terze parti | ![No](images/svg/check-no.svg) Distribuzione | ![No](images/svg/check-no.svg) Distribuzione | ![No](images/svg/check-no.svg) Distribuzione
+Gestione e API: integrazione con prodotti di terze parti | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
 Gestione e API: API di streaming | ![Sì](images/svg/check-yes.svg) | ![No](images/svg/check-no.svg) In fase di sviluppo | ![No](images/svg/check-no.svg) In fase di sviluppo
 Gestione e API: report di Protezione dalle minacce | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
 Gestione delle & delle minacce | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)

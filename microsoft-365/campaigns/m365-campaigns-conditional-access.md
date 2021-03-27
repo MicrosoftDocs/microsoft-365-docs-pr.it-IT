@@ -1,11 +1,11 @@
 ---
-title: Configurare i criteri di accesso condizionale
+title: Attivare le impostazioni predefinite di sicurezza
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: SKjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
 localization_priority: Normal
@@ -23,62 +23,65 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come richiedere l'autenticazione a più fattori e configurare i criteri di accesso condizionale per Microsoft 365 per le aziende.
-ms.openlocfilehash: dcb79ed060dd15fd288cdcfb9e3739a788f5fbc2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Informazioni su come le impostazioni predefinite di sicurezza consentono di proteggere l'organizzazione da attacchi correlati all'identità fornendo impostazioni di sicurezza preconfigurate.
+ms.openlocfilehash: ea36ba45af26a767b08ee1e75931dca54dacea64
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912187"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398292"
 ---
-# <a name="require-multi-factor-authentication-and-set-up-conditional-access-policies"></a>Richiedere l'autenticazione a più fattori e configurare i criteri di accesso condizionale
+# <a name="turn-on-security-defaults"></a>Attivare le impostazioni predefinite di sicurezza
 
-È possibile proteggere l'accesso ai dati con l'autenticazione a più fattori e i criteri di accesso condizionale. Questi elementi aggiungono una sicurezza aggiuntiva sostanziale. Microsoft fornisce un set di criteri di accesso condizionale di base consigliati per tutti i clienti. I criteri di base sono un insieme di criteri predefiniti che consentono di proteggere le organizzazioni da molti attacchi comuni. Questi attacchi comuni possono includere password spray, replay e phishing.
+Le impostazioni predefinite di sicurezza consentono di proteggere l'organizzazione da attacchi correlati all'identità fornendo impostazioni di sicurezza preconfigurate gestite da Microsoft per conto dell'organizzazione. Queste impostazioni includono l'abilitazione dell'autenticazione a più fattori (MFA) per tutti gli amministratori e gli account utente. Per la maggior parte delle organizzazioni, le impostazioni predefinite di sicurezza offrono un buon livello di sicurezza aggiuntiva per l'accesso.
 
-Questi criteri richiedono agli amministratori e agli utenti di immettere una seconda forma di autenticazione (denominata autenticazione a più fattori o MFA) in determinate condizioni. Ad esempio, se un utente dell'organizzazione tenta di accedere a Microsoft 365 da un altro paese o da un dispositivo sconosciuto, l'accesso potrebbe essere considerato rischioso. L'utente deve fornire una forma aggiuntiva di autenticazione (ad esempio un'impronta digitale o un codice) per dimostrare la propria identità.
+Per ulteriori informazioni sulle impostazioni predefinite di sicurezza e sui criteri applicati, vedere [What are security defaults?](/azure/active-directory/fundamentals/concept-fundamentals-security-defaults)
 
-Attualmente, i criteri di base includono i criteri seguenti:
+Se l'abbonamento è stato creato il 22 ottobre 2019 o dopo il 22 ottobre 2019, è possibile che siano state abilitate automaticamente le impostazioni per verificare &mdash; le impostazioni.
 
-- Configurare nell'interfaccia di amministrazione di Microsoft 365:
-  - **Richiedi autenticazione a più** fattori per gli amministratori : richiede l'autenticazione a più fattori per i ruoli di amministratore con più privilegi, incluso l'amministratore globale.
-  - **Protezione dell'utente finale:** richiede l'autenticazione a più fattori per gli utenti solo quando un accesso è rischioso. 
-- Configurare nel portale di Azure Active Directory:
-  - **Blocca l'autenticazione legacy:** le app client meno recenti e alcune nuove app non usano protocolli di autenticazione più recenti e più sicuri. Queste app precedenti possono ignorare i criteri di accesso condizionale e ottenere l'accesso non autorizzato all'ambiente. Questo criterio blocca l'accesso dai client che non supportano l'accesso condizionale. 
-  - **Richiedi autenticazione a più** fattori per la gestione dei servizi : richiede l'autenticazione a più fattori per l'accesso agli strumenti di gestione, incluso il portale di Azure (in cui si configurano i criteri di base).
+Per abilitare le impostazioni predefinite di sicurezza in Azure Active Directory (Azure AD) o per verificare se sono già abilitate:
 
-È consigliabile abilitare tutti questi criteri di base. Dopo aver abilitato questi criteri, agli amministratori e agli utenti verrà richiesto di eseguire la registrazione per l'autenticazione a più fattori di Azure AD.
+1. Accedere all'interfaccia di amministrazione di <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">Microsoft 365</a> con le credenziali di amministratore globale.
 
-Per ulteriori informazioni su questi criteri, vedere [Che cosa sono i criteri di base](/azure/active-directory/conditional-access/concept-baseline-protection)?
+2. Nel riquadro sinistro selezionare **Mostra tutto e quindi** in Interfaccia di **amministrazione** selezionare Azure **Active Directory.**
 
-## <a name="require-mfa"></a>Richiedere la MFA
+3. Nel riquadro sinistro dell'interfaccia **di amministrazione di Azure Active Directory selezionare** Azure Active **Directory.**
 
-Per richiedere a tutti gli utenti di accedere con una seconda forma di ID:
+4. Nel menu a sinistra del  dashboard seleziona Proprietà nella sezione **Gestisci.**
 
-1. Accedere all'interfaccia di amministrazione in <a href="https://go.microsoft.com/fwlink/p/?linkid=837890" target="_blank">https://admin.microsoft.com</a> e scegliere **Installazione**.
+    :::image type="content" source="../media/m365-campaigns-conditional-access/azure-ad-properties.png" alt-text="Screenshot dell'interfaccia di amministrazione di Azure Active Directory che mostra il percorso della voce di menu Proprietà.":::
 
-2. Nella pagina Configurazione scegliere **Visualizza** nella scheda Rendi più **sicuro l'accesso.**
+5. Nella parte inferiore della **pagina Proprietà** selezionare Gestisci impostazioni **predefinite sicurezza.**
 
-    ![Rendi l'accesso più sicuro.](../media/setupmfa.png)
-3. Nella pagina Rendi l'accesso più sicuro scegliere **Introduzione.**
-
-4. Nel riquadro Rafforzare la sicurezza di accesso selezionare  le caselle di controllo accanto a Richiedi autenticazione a più fattori per gli amministratori e Richiedi agli utenti di registrarsi per l'autenticazione a più fattori e bloccare l'accesso se vengono rilevati **rischi.**
-    Assicurati di escludere [l'account](m365-campaigns-protect-admin-accounts.md#create-an-emergency-admin-account) amministratore di emergenza o "break-glass" dal requisito MFA nella **casella Trova** utenti.
-
-    ![Pagina Rafforzare la sicurezza del componente aggiuntivo.](../media/requiremfa.png)
-
-5. Scegliere **Crea criterio** nella parte inferiore della pagina.
-
-## <a name="set-up-baseline-policies"></a>Configurare i criteri di base
-
-1. Passare al portale [di Azure](https://portal.azure.com)e quindi passare ad Azure **Active Directory** \> **Security** \> **Conditional Access** per creare un nuovo **criterio.**
-
-Per ogni criterio, vedere le istruzioni specifiche seguenti: <br>
-    - [Richiedi MFA per gli amministratori](/azure/active-directory/conditional-access/howto-baseline-protect-administrators) <br>
-    - [Richiedi autenticazione a più fattori per gli utenti](/azure/active-directory/conditional-access/howto-baseline-protect-end-users) <br>
-    - [Bloccare l'autenticazione legacy](/azure/active-directory/conditional-access/howto-baseline-protect-legacy-auth) <br>
-    - [Richiedi MFA per la gestione dei servizi](/azure/active-directory/conditional-access/howto-baseline-protect-azure)
+6. Nel riquadro destro verrà visualizzata l'impostazione Abilita impostazioni **predefinite di** sicurezza. Se **si seleziona** Sì, le impostazioni predefinite di sicurezza sono già abilitate e non sono necessarie ulteriori azioni. Se le impostazioni predefinite di sicurezza non sono attualmente abilitate, selezionare **Sì** per abilitarle e quindi selezionare **Salva**.
 
 > [!NOTE]
-> I criteri di anteprima non esistono più e gli utenti dovranno creare i propri criteri.
+> Se si usano criteri di accesso condizionale, è necessario disattivarli prima di utilizzare le impostazioni predefinite di sicurezza.
+>
+> È possibile utilizzare impostazioni predefinite di sicurezza o criteri di accesso condizionale, ma non è possibile utilizzare entrambe le impostazioni contemporaneamente.
 
-Puoi configurare criteri aggiuntivi, ad esempio richiedere app client approvate. Per ulteriori informazioni, vedere la [documentazione relativa all'accesso condizionale.](/azure/active-directory/conditional-access/)
+## <a name="consider-using-conditional-access"></a>Prendere in considerazione l'uso dell'accesso condizionale
+
+Se l'organizzazione ha requisiti di sicurezza complessi o se è necessario un controllo più granulare sui criteri di sicurezza, è consigliabile utilizzare l'accesso condizionale anziché le impostazioni predefinite di sicurezza per ottenere una posizione di sicurezza simile o superiore. 
+
+L'accesso condizionale consente di creare e definire criteri che reagiscono agli eventi di accesso e richiedono azioni aggiuntive prima che a un utente venga concesso l'accesso a un'applicazione o a un servizio. I criteri di accesso condizionale possono essere granulari e specifici, per consentire agli utenti di essere produttivi ovunque e in qualsiasi momento, ma anche di proteggere l'organizzazione.
+
+Le impostazioni predefinite di sicurezza sono disponibili per tutti i clienti, mentre l'accesso condizionale richiede una licenza per uno dei piani seguenti:
+
+- Azure Active Directory Premium P1 o P2
+- Microsoft 365 Business Premium
+- Microsoft 365 E3 o E5
+- Enterprise Mobility & Security E3 o E5
+
+Se si desidera utilizzare l'accesso condizionale per configurare criteri equivalenti a quelli abilitati per le impostazioni predefinite di sicurezza, vedere le guide dettagliate seguenti:
+
+- [Richiedere la MFA per amministratori](/azure/active-directory/conditional-access/howto-conditional-access-policy-admin-mfa)
+- [Richiedi MFA per la gestione di Azure](/azure/active-directory/conditional-access/howto-conditional-access-policy-azure-management)
+- [Bloccare l'autenticazione legacy](/azure/active-directory/conditional-access/howto-conditional-access-policy-block-legacy)
+- [Richiedere la MFA per tutti gli utenti](/azure/active-directory/conditional-access/howto-conditional-access-policy-all-users-mfa)
+- [Richiedi registrazione MFA di Azure AD](/azure/active-directory/identity-protection/howto-identity-protection-configure-mfa-policy) - Richiede Azure AD Identity Protection, che fa parte di Azure Active Directory Premium P2
+
+Per ulteriori informazioni sull'accesso condizionale, vedere [Che cos'è l'accesso condizionale?](/azure/active-directory/conditional-access/overview) Per ulteriori informazioni sulla creazione di criteri di accesso condizionale, vedere [Create a Conditional Access policy](/azure/active-directory/authentication/tutorial-enable-azure-mfa#create-a-conditional-access-policy).
+
+> [!NOTE]
+> Se si dispone di un piano o di una licenza che fornisce l'accesso condizionale ma non sono stati ancora creati criteri di accesso condizionale, è possibile utilizzare le impostazioni predefinite di sicurezza. Tuttavia, è necessario disattivare le impostazioni predefinite di sicurezza prima di poter utilizzare i criteri di accesso condizionale.

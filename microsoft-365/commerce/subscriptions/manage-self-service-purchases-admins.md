@@ -10,26 +10,24 @@ ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
 ms.collection:
+- M365-subscription-management
+- Adm_O365
+- Adm_TOC
+ms.custom:
+- AdminSurgePortfolio
+- okr_smb
 - commerce
-ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Gli amministratori possono imparare a gestire gli acquisti self-service effettuati dagli utenti nell'organizzazione.
-ms.openlocfilehash: 2ce12b7dba4e765745a94fa10f4ba15e7013e3c8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: febf0ee470e735a454dc7a9e747de5025c7a4a51
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920181"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398182"
 ---
 # <a name="manage-self-service-purchases-admin"></a>Gestire acquisti in modalità self-service (amministratore)
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Gli amministratori possono visualizzare gli acquisti in modalità self-service effettuati da persone dell'organizzazione. Vengono visualizzati il nome del prodotto, il nome dell'acquirente, le sottoscrizioni acquistate, la data di scadenza, il prezzo di acquisto e gli utenti assegnati per ogni acquisto self-service. Se richiesto dall'organizzazione, è possibile disattivare gli acquisti self-service in base al prodotto tramite PowerShell. Si dispone degli stessi criteri di gestione dei dati e di accesso sui prodotti acquistati tramite acquisto self-service o centralmente.
 
@@ -37,13 +35,49 @@ Gli amministratori possono visualizzare gli acquisti in modalità self-service e
 
 ## <a name="view-self-service-subscriptions"></a>Visualizzare le sottoscrizioni self-service
 
-1. Nell'interfaccia di amministrazione, passare alla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
+::: moniker range="o365-worldwide"
+
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Nell'interfaccia di amministrazione</a>passare alla pagina **Fatturazione** > **prodotti.**
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Nell'interfaccia di amministrazione</a>passare alla pagina **Fatturazione** > **prodotti.**
+
+::: moniker-end
+
 2. Nella scheda **Prodotti** selezionare l'icona del filtro, quindi **selezionare Self-service**.
 3. Per visualizzare altri dettagli su una sottoscrizione, selezionarne uno dall'elenco.
 
 ## <a name="view-who-has-licenses-for-a-self-service-purchase-subscription"></a>Visualizzare chi dispone di licenze per una sottoscrizione di acquisto self-service
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Licenze**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">di</a> fatturazione.
+> [!NOTE]
+> Gli amministratori non possono assegnare o annullare l'assegnazione delle licenze per una sottoscrizione di acquisto self-service acquistata da un utente dell'organizzazione. È possibile prendere in consegna una sottoscrizione di acquisto [self-service](#take-over-a-self-service-purchase-subscription)e quindi assegnare o annullare l'assegnazione delle licenze.
+
+::: moniker range="o365-worldwide"
+
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842264" target="_blank">Licenze</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Nell'interfaccia di amministrazione</a>passare alla pagina Licenze  > **di** fatturazione.
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Nell'interfaccia di amministrazione</a>passare alla pagina Licenze  > **di** fatturazione.
+
+::: moniker-end
+
 2. Seleziona l'icona del filtro, quindi scegli **Self-service.**
 3. Selezionare un prodotto per visualizzare le licenze assegnate agli utenti.
     > [!NOTE]
@@ -67,7 +101,24 @@ Per ulteriori informazioni, vedere [Use AllowSelfServicePurchase for the MSComme
 
 È possibile assegnare licenze esistenti o acquistare abbonamenti aggiuntivi tramite contratti esistenti per gli utenti assegnati agli acquisti self-service. Dopo aver assegnato queste licenze acquistate centralmente, è possibile richiedere agli acquirenti di annullare le sottoscrizioni esistenti.
 
-1. Nell'interfaccia di amministrazione passare alla **pagina Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Acquisto servizi.</a>
+::: moniker range="o365-worldwide"
+
+1. Nell'interfaccia di amministrazione passare alla **pagina Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=868433" target="_blank">Acquisto servizi.</a>
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Nell'interfaccia di amministrazione</a>passare alla pagina **Fatturazione** > **Acquisto servizi.**
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Nell'interfaccia di amministrazione</a>passare alla pagina **Fatturazione** > **Acquisto servizi.**
+
+::: moniker-end
+
 2. Trova e scegli il prodotto che vuoi acquistare, quindi scegli **Acquista**.
 3. Completa i passaggi rimanenti per completare l'acquisto.
 4. Seguire i passaggi descritti in Visualizzare chi ha licenze per una sottoscrizione acquistata [in modalità self-service](#view-who-has-licenses-for-a-self-service-purchase-subscription) per esportare un elenco di utenti a cui fare riferimento nel passaggio successivo.
@@ -88,7 +139,24 @@ Quando si spostano gli utenti in un abbonamento diverso, la sottoscrizione prece
 > [!NOTE]
 > È necessario disporre di una licenza disponibile per ogni utente in cui si sta spostando l'abbonamento in cui si stanno spostando gli utenti.
 
-1. Nell'interfaccia di amministrazione, passare alla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
+::: moniker range="o365-worldwide"
+
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Nell'interfaccia di amministrazione</a>passare alla pagina **Fatturazione** > **prodotti.**
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Nell'interfaccia di amministrazione</a>passare alla pagina **Fatturazione** > **prodotti.**
+
+::: moniker-end
+
 2. Nella scheda **Prodotti** selezionare l'icona del filtro, quindi **selezionare Self-service**.
 3. Selezionare l'abbonamento che si desidera assumere.
 4. Nella sezione Sottoscrizioni e  impostazioni della pagina dei dettagli dell'abbonamento selezionare Prendi **il controllo della sottoscrizione.**
@@ -102,7 +170,24 @@ Quando si spostano gli utenti in un abbonamento diverso, la sottoscrizione prece
 
 Quando si sceglie di annullare una sottoscrizione di acquisto self-service, gli utenti con licenze perdono l'accesso al prodotto. L'utente che ha acquistato in origine la sottoscrizione di acquisto self-service riceve un messaggio di posta elettronica che indica che l'abbonamento è stato annullato.
 
-1. Nell'interfaccia di amministrazione, passare alla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
+::: moniker range="o365-worldwide"
+
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** > <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">Nell'interfaccia di amministrazione</a>passare alla pagina **Fatturazione** > **prodotti.**
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">Nell'interfaccia di amministrazione</a>passare alla pagina **Fatturazione** > **prodotti.**
+
+::: moniker-end
+
 2. Nella scheda **Prodotti** selezionare l'icona del filtro, quindi **selezionare Self-service**.
 3. Selezionare l'abbonamento che si desidera annullare.
 4. Nella sezione Sottoscrizioni e  impostazioni della pagina dei dettagli dell'abbonamento selezionare Prendi **il controllo della sottoscrizione.**

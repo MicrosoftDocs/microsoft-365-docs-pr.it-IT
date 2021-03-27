@@ -2,10 +2,10 @@
 title: Protezione avanzata dalle minacce
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: Skjerland
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -23,12 +23,12 @@ search.appverid:
 - MET150
 ms.assetid: 5abfef7b-5957-484a-b06b-a7c55e013e44
 description: Ottenere assistenza per aumentare il livello di protezione in Microsoft 365
-ms.openlocfilehash: 61ac32d3debe391794e85df8c129e5df72887e9e
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: a1f4714d5b7dcd8d6a22a07c118055e13b27e069
+ms.sourcegitcommit: c5d1528559953c6db7dca1d5cb453e0aa3215f02
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198376"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "51398278"
 ---
 # <a name="increase-threat-protection-for-microsoft-365-subscription"></a>Aumentare la protezione dalle minacce per l'abbonamento a Microsoft 365
 
