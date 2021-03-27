@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 059cfbf37c79ff9f99b5e46c8d4329c203aa9665
-ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
+ms.openlocfilehash: 684025441c8400775f469515df1bcd0423d6460b
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51215530"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394747"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configurare le funzionalità avanzate in Defender for Endpoint
 
@@ -63,6 +63,14 @@ Per ulteriori informazioni sulle assegnazioni di ruolo, vedere [Create and manag
 ## <a name="live-response-unsigned-script-execution"></a>Esecuzione di script non firmati in tempo reale
 
 L'abilitazione di questa funzionalità consente di eseguire script non firmati in una sessione di risposta in tempo reale.
+
+
+## <a name="restrict-correlation-to-within-scoped-device-groups"></a>Limitare la correlazione all'interno di gruppi di dispositivi con ambito
+Quando questa impostazione è attivata, gli avvisi vengono correlati in eventi imprevisti separati in base al gruppo di dispositivi con ambito. Per impostazione predefinita, la correlazione degli eventi imprevisti si verifica nell'intero ambito tenant.
+
+>[!NOTE]
+>La modifica di questa impostazione influisce solo sulle correlazioni degli avvisi futuri.
+
 
 ## <a name="autoresolve-remediated-alerts"></a>Risolvere in modo automatico gli avvisi corretti
 

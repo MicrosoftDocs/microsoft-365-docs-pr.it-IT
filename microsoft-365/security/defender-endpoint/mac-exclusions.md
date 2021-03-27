@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0ce77d55ece955fbf97b5c9f32859514b55acb5a
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: fb0cffb9716b2d0940e816dc69217486fd51a21d
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187650"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379336"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-for-mac"></a>Configurare e convalidare le esclusioni per Microsoft Defender per Endpoint per Mac
 
@@ -31,7 +31,7 @@ ms.locfileid: "51187650"
 
 
 **Si applica a:**
-- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -79,7 +79,7 @@ Per altre informazioni su come configurare le esclusioni da JAMF, Intune o un'al
 
 Apri l'applicazione Defender for Endpoint e passa a **Gestisci impostazioni** Aggiungi o  >  **rimuovi esclusione...**, come illustrato nello screenshot seguente:
 
-![Schermata Gestisci esclusioni](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-37-exclusions)
+![Schermata Gestisci esclusioni](images/mdatp-37-exclusions.png)
 
 Selezionare il tipo di esclusione che si desidera aggiungere e seguire le istruzioni visualizzate.
 

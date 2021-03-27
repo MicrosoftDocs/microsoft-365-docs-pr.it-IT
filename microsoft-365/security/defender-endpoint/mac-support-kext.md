@@ -1,6 +1,6 @@
 ---
-title: Risolvere i problemi relativi alle estensioni del kernel in Microsoft Defender ATP per Mac
-description: Risolvere i problemi relativi alle estensioni del kernel in Microsoft Defender ATP per Mac.
+title: Risolvere i problemi di estensione del kernel in Microsoft Defender per Endpoint per Mac
+description: Risolvere i problemi relativi alle estensioni del kernel in Microsoft Defender per Endpoint per Mac.
 keywords: microsoft, defender, atp, mac, kernel, estensione
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bdd5c6309a19863339b00e846c1c2670fc4f261b
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 877cc619d3ba048cdf6ecc8149f073461d9eac8e
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187602"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379509"
 ---
 # <a name="troubleshoot-kernel-extension-issues-in-microsoft-defender-for-endpoint-for-mac"></a>Risolvere i problemi di estensione del kernel in Microsoft Defender per Endpoint per Mac
 
@@ -33,7 +33,7 @@ ms.locfileid: "51187602"
 **Si applica a:**
 
 - [Microsoft Defender per Endpoint per Mac](microsoft-defender-endpoint-mac.md)
-- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -44,7 +44,7 @@ A partire da macOS High Sierra (10.13), macOS richiede che tutte le estensioni d
 
 Se non hai approvato l'estensione del kernel durante la distribuzione/installazione di Microsoft Defender per Endpoint per Mac, l'applicazione visualizza un banner in cui viene richiesto di abilitarla:
 
-   ![Schermata disabilitata RTP](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-32-main-app-fix)
+   ![Schermata disabilitata RTP](images/mdatp-32-main-app-fix.png)
 
 È inoltre possibile eseguire ```mdatp health``` . Segnala se la protezione in tempo reale è abilitata ma non disponibile. Questo indica che l'estensione del kernel non è approvata per l'esecuzione nel dispositivo.
 
@@ -73,7 +73,7 @@ Se sono trascorsi meno di 30 minuti dall'installazione del prodotto, passare a P
 
 Se non viene visualizzato questo prompt, significa che sono trascorsi 30 o più minuti e che l'estensione del kernel non è ancora stata approvata per l'esecuzione nel dispositivo:
 
-![Finestra sicurezza e privacy dopo la richiesta di schermata scaduta](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-33-securityprivacysettings-noprompt)
+![Finestra sicurezza e privacy dopo la richiesta di schermata scaduta](images/mdatp-33-securityprivacysettings-noprompt.png)
 
 In questo caso, è necessario eseguire i passaggi seguenti per attivare di nuovo il flusso di approvazione.
 

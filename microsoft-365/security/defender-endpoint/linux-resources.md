@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7196053ffef3dffc3c737d0df26a5d12bdfe8a4c
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: ab5400a197a1f0ac61c8b298a06165d217f44fd1
+ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187758"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51394735"
 ---
 # <a name="resources"></a>Risorse
 
@@ -32,7 +32,7 @@ ms.locfileid: "51187758"
 
 
 **Si applica a:**
-- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -105,6 +105,7 @@ Nella tabella seguente sono elencati i comandi per alcuni degli scenari più com
 |Gruppo                 |Scenario                                                |Comando                                                                |
 |----------------------|--------------------------------------------------------|-----------------------------------------------------------------------|
 |Configurazione         |Attivare/disattivare la protezione in tempo reale                        |`mdatp config real-time-protection --value [enabled\|disabled]`        |
+|Configurazione         |Attivare/disattivare il monitoraggio del comportamento                         |`mdatp config behavior-monitoring --value [enabled\|disabled]` 
 |Configurazione         |Attivare/disattivare la protezione cloud                            |`mdatp config cloud --value [enabled\|disabled]`                       |
 |Configurazione         |Attivare/disattivare la diagnostica del prodotto                         |`mdatp config cloud-diagnostic --value [enabled\|disabled]`            |
 |Configurazione         |Attivare/disattivare l'invio automatico di esempi                 |`mdatp config cloud-automatic-sample-submission [enabled\|disabled]`   |

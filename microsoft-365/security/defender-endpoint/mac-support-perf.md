@@ -1,6 +1,6 @@
 ---
-title: Risolvere i problemi di prestazioni per Microsoft Defender ATP per Mac
-description: Risolvere i problemi di prestazioni in Microsoft Defender ATP per Mac.
+title: Risolvere i problemi di prestazioni per Microsoft Defender per Endpoint per Mac
+description: Risolvere i problemi di prestazioni in Microsoft Defender per Endpoint per Mac.
 keywords: microsoft, defender, atp, mac, prestazioni
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f6dd5681dfafd069a4c52f72e1dc1733584283a2
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 87190d9e0bb62d42642374bd7c9f6f3acad3c80a
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185910"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379387"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-for-mac"></a>Risolvere i problemi di prestazioni per Microsoft Defender per Endpoint per Mac
 
@@ -33,7 +33,7 @@ ms.locfileid: "51185910"
 **Si applica a:**
 
 - [Microsoft Defender per Endpoint per Mac](microsoft-defender-endpoint-mac.md)
-- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -52,7 +52,7 @@ I passaggi seguenti possono essere utilizzati per risolvere e attenuare questi p
 
     - Dall'interfaccia utente. Apri Microsoft Defender per Endpoint per Mac e passa a **Gestisci impostazioni.**
 
-      ![Schermata Gestisci protezione in tempo reale](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-36-rtp)
+      ![Schermata Gestisci protezione in tempo reale](images/mdatp-36-rtp.png)
 
     - Dal terminale. Per motivi di sicurezza, questa operazione richiede l'elevazione.
 

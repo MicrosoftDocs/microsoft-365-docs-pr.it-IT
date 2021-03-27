@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e511c12240512af772b3552f63ad9ed98ff105af
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a9ca0af0c522205309ffdcbfd1ac28638bd197c7
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51062082"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382794"
 ---
 # <a name="fileprofile"></a>FileProfile()
 
@@ -38,23 +38,24 @@ ms.locfileid: "51062082"
 La funzione è una funzione di arricchimento nella ricerca avanzata che aggiunge i dati seguenti ai `FileProfile()` file trovati dalla query. [](advanced-hunting-overview.md)
 
 | Colonna | Tipo di dati | Descrizione |
-|------------|-------------|-------------|
-| SHA1 | stringa | SHA-1 del file a cui è stata applicata l'azione registrata |
-| SHA256 | stringa | SHA-256 del file a cui è stata applicata l'azione registrata |
-| MD5 | stringa | Hash MD5 del file a cui è stata applicata l'azione registrata |
-| FileSize | int | Dimensioni del file in byte |
-| GlobalPrevalence | int | Numero di istanze dell'entità osservate da Microsoft a livello globale |
-| GlobalFirstSeen | datetime | Data e ora in cui l'entità è stata osservata per la prima volta da Microsoft a livello globale |
-| GlobalLastSeen | datetime | Data e ora dell'ultima osservazione dell'entità da parte di Microsoft a livello globale |
-| Firmatario | stringa | Informazioni sul firmatario del file |
-| Autorità di certificazione | stringa | Informazioni sull'autorità di certificazione (CA) emittente |
-| SignerHash | stringa | Valore hash univoco che identifica il firmatario |
-| IsCertificateValid | boolean | Indica se il certificato utilizzato per firmare il file è valido |
-| IsRootSignerMicrosoft | boolean | Indica se il firmatario del certificato radice è Microsoft |
-| IsExecutable | boolean | Indica se il file è un file PE (Portable Executable) |
-| ThreatName | stringa | Nome di rilevamento per qualsiasi malware o altre minacce rilevate |
-| Publisher | stringa | Nome dell'organizzazione che ha pubblicato il file |
-| SoftwareName | stringa | Nome del prodotto software |
+|------------|---------------|-------------|
+| `SHA1` | stringa | SHA-1 del file a cui è stata applicata l'azione registrata |
+| `SHA256` | stringa | SHA-256 del file a cui è stata applicata l'azione registrata |
+| `MD5` | stringa | Hash MD5 del file a cui è stata applicata l'azione registrata |
+| `FileSize` | int | Dimensioni del file in byte |
+| `GlobalPrevalence` | int | Numero di istanze dell'entità osservate da Microsoft a livello globale |
+| `GlobalFirstSeen` | datetime | Data e ora in cui l'entità è stata osservata per la prima volta da Microsoft a livello globale |
+| `GlobalLastSeen` | datetime | Data e ora dell'ultima osservazione dell'entità da parte di Microsoft a livello globale |
+| `Signer` | stringa | Informazioni sul firmatario del file |
+| `Issuer` | stringa | Informazioni sull'autorità di certificazione (CA) emittente |
+| `SignerHash` | stringa | Valore hash univoco che identifica il firmatario |
+| `IsCertificateValid` | boolean | Indica se il certificato utilizzato per firmare il file è valido |
+| `IsRootSignerMicrosoft` | boolean | Indica se il firmatario del certificato radice è Microsoft |
+| `SignatureState` | stringa | Stato della firma del file: SignedValid - Il file è firmato con una firma valida, SignedInvalid - il file è firmato ma il certificato non è valido, Unsigned - il file non è firmato, Unknown - Le informazioni sul file non possono essere recuperate
+| `IsExecutable` | boolean | Indica se il file è un file PE (Portable Executable) |
+| `ThreatName` | stringa | Nome di rilevamento per qualsiasi malware o altre minacce rilevate |
+| `Publisher` | stringa | Nome dell'organizzazione che ha pubblicato il file |
+| `SoftwareName` | stringa | Nome del prodotto software |
 
 ## <a name="syntax"></a>Sintassi
 

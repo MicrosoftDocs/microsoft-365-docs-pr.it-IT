@@ -16,27 +16,25 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c6afa48fcee80c0b8fb7ed0563264932566b6321
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 6a8e1091490cb9f3fe1eedadec0b76a56ada936e
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185792"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379491"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Requisiti minimi per Microsoft Defender per Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+> Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-minreqs-abovefoldlink)
 
 
 Esistono alcuni requisiti minimi per l'onboarding dei dispositivi nel servizio. Informazioni sulle licenze, i requisiti hardware e software e altre impostazioni di configurazione per eseguire l'onboardment dei dispositivi nel servizio.
-
-> Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-minreqs-abovefoldlink)
 
 > [!TIP]
 > - Informazioni sui miglioramenti più recenti in Defender for Endpoint: [Defender for Endpoint Tech Community.](https://techcommunity.microsoft.com/t5/Windows-Defender-Advanced-Threat/ct-p/WindowsDefenderAdvanced)
@@ -80,7 +78,6 @@ Per una tabella di confronto dettagliata del confronto delle edizioni commercial
 L'accesso a Defender for Endpoint viene eseguito tramite un browser, che supporta i browser seguenti:
 
 - Microsoft Edge
-- Internet Explorer versione 11
 - Google Chrome
 
 > [!NOTE]
@@ -121,11 +118,12 @@ I requisiti hardware per Defender per Endpoint nei dispositivi sono gli stessi p
 
 ### <a name="other-supported-operating-systems"></a>Altri sistemi operativi supportati
 - Android
+- iOS
 - Linux
 - macOS
 
 > [!NOTE]
-> Per il funzionamento dell'integrazione, dovrai conoscere esattamente le distribuzioni Linux e le versioni di Android e macOS compatibili con Defender for Endpoint.
+> Dovrai confermare le distribuzioni Linux e le versioni di Android, iOS e macOS che hai compatibile con Defender for Endpoint per il funzionamento dell'integrazione.
 
 
 
@@ -164,7 +162,7 @@ Usa la riga di comando per controllare il tipo di avvio del servizio dati di dia
    ![Risultato del comando sc query per diagtrack](images/windefatp-sc-qc-diagtrack.png)
 
 
-Dovrai impostare l'avvio automatico del servizio se il START_TYPE **non** è impostato su **AUTO_START**.
+Dovrai impostare l'avvio automatico del servizio  se il START_TYPE non è impostato su **AUTO_START**.
 
 
 **Usa la riga di comando per impostare il servizio dati di diagnostica di Windows 10 per l'avvio automatico:**
@@ -191,7 +189,7 @@ Dovrai impostare l'avvio automatico del servizio se il START_TYPE **non** è imp
 #### <a name="internet-connectivity"></a>Connessione Internet
 La connettività Internet nei dispositivi è necessaria direttamente o tramite proxy.
 
-Il sensore Defender for Endpoint può utilizzare una larghezza di banda media giornaliera di 5 MB per comunicare con il servizio cloud Defender for Endpoint e segnalare i dati informatici. Le attività una-off come i caricamenti di file e la raccolta di pacchetti di analisi non sono incluse in questa larghezza di banda media giornaliera.
+Il sensore Defender for Endpoint può usare una larghezza di banda media giornaliera di 5 MB per comunicare con il servizio cloud Defender for Endpoint e segnalare i dati informatici. Le attività una-off come i caricamenti di file e la raccolta di pacchetti di analisi non sono incluse in questa larghezza di banda media giornaliera.
 
 Per ulteriori informazioni sulle impostazioni di configurazione del proxy aggiuntive, vedere [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
 
@@ -207,7 +205,7 @@ Quando Microsoft Defender Antivirus non è l'antimalware attivo nell'organizzazi
 
 Se l'organizzazione ha disattivato Microsoft Defender Antivirus tramite criteri di gruppo o altri metodi, i dispositivi che sono stati onboarded devono essere esclusi da questo criterio di gruppo.
 
-Se si stanno onboarding server e Microsoft Defender Antivirus non è l'antimalware attivo nei server, Microsoft Defender Antivirus dovrà essere configurato per passare alla modalità passiva o disinstallato. La configurazione dipende dalla versione del server. Per ulteriori informazioni, vedere [Compatibilità con Microsoft Defender Antivirus.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus-compatibility.md)
+Se stai onboarding dei server e Microsoft Defender Antivirus non è l'antimalware attivo nei server, Microsoft Defender Antivirus dovrà essere configurato per passare alla modalità passiva o disinstallarlo. La configurazione dipende dalla versione del server. Per ulteriori informazioni, vedere [Compatibilità con Microsoft Defender Antivirus.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus-compatibility.md)
 
 > [!NOTE]
 > I criteri di gruppo normali non si applicano a Protezione da manomissione e le modifiche alle impostazioni di Microsoft Defender Antivirus verranno ignorate quando Protezione da manomissione è impostata su Protezione da manomissione.

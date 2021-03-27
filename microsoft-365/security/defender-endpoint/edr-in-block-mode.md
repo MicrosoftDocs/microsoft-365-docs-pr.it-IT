@@ -20,12 +20,12 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: b31e7aeb9178cb6021434319e55ddef927d7c263
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 7bee6c99d2c1c5ad3cec8f2e317b729a0a4e1f8b
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165874"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379479"
 ---
 # <a name="endpoint-detection-and-response-edr-in-block-mode"></a>Rilevamento e risposta degli endpoint (EDR) in modalità blocco
 
@@ -132,6 +132,9 @@ Per ulteriori informazioni, vedere [Get-MpComputerStatus.](https://docs.microsof
 2. Digitare `sc query windefend`.
 
 3. Nella riga **STATE** dell'elenco dei risultati verificare che il servizio sia in esecuzione.
+
+### <a name="how-much-time-does-it-take-for-edr-in-block-mode-to-be-disabled"></a>Quanto tempo è necessario per la disattivazione di EDR in modalità blocco?
+Se si è scelto di disabilitare EDR in modalità blocco, il sistema può richiedere fino a 30 minuti per disabilitare questa funzionalità.
 
 ## <a name="see-also"></a>Vedere anche
 

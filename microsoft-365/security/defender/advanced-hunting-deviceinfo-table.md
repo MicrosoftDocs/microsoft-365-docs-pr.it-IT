@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 46efb531331cf76472c67c769c96804d11fb9e4b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: d56710f4933a8971230c78d7b3570f14b9bda335
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063525"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382626"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
@@ -55,10 +55,10 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `AadObjectId` | stringa | Identificatore univoco per il dispositivo in Azure AD |
 | `LoggedOnUsers` | stringa | Elenco di tutti gli utenti connessi al computer al momento dell'evento in formato matrice JSON |
 | `RegistryDeviceTag` | stringa | Tag computer aggiunto tramite il Registro di sistema |
-| `ReportId` | long | Identificatore di evento basato su un contatore ripetuto. Per identificare gli eventi univoci, è necessario utilizzare questa colonna insieme alle colonne DeviceName e Timestamp |
-|`AdditionalFields` | stringa | Informazioni aggiuntive sull'evento in formato matrice JSON |
 | `OSVersion` | stringa | Versione del sistema operativo in esecuzione sul computer |
 | `MachineGroup` | stringa | Gruppo di computer del computer. Questo gruppo viene utilizzato dal controllo di accesso basato sui ruoli per determinare l'accesso al computer |
+| `ReportId` | long | Identificatore di evento basato su un contatore ripetuto. Per identificare gli eventi univoci, è necessario utilizzare questa colonna insieme alle colonne DeviceName e Timestamp |
+|`AdditionalFields` | stringa | Informazioni aggiuntive sull'evento in formato matrice JSON |
 
 La `DeviceInfo` tabella fornisce informazioni sul dispositivo in base agli heartbeat, ovvero report periodici o segnali provenienti da un dispositivo. Ogni quindici minuti, il dispositivo invia un heartbeat parziale che contiene attributi che cambiano frequentemente, ad esempio `LoggedOnUsers` . Una volta al giorno, viene inviato un heartbeat completo contenente gli attributi del dispositivo.
 

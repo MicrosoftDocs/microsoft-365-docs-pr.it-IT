@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: cf37fe2aeac193c6b45f55fd5f5c850470ba6da4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3d991bc5e78fc7b33e20df1f86471a0969b7345f
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063461"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382596"
 ---
 # <a name="devicetvmsecureconfigurationassessment"></a>DeviceTvmSecureConfigurationAssessment
 
@@ -54,7 +54,7 @@ Per informazioni su altre tabelle nello schema di Ricerca avanzata vedere [le in
 | `IsCompliant` | booleano | Indica se la configurazione o i criteri sono configurati correttamente |
 | `IsApplicable` | boolean | Indica se la configurazione o il criterio si applica al dispositivo |
 | `Context` | stringa | Informazioni contestuali aggiuntive sulla configurazione o sui criteri |
-| `IsExpectedUserImpactCompliant` | boolean | Indica se l'impatto dell'utente sarà negativo se viene applicata la configurazione o il criterio |
+| `IsExpectedUserImpact` | boolean | Indica se l'impatto dell'utente sarà negativo se viene applicata la configurazione o il criterio |
 
 ## <a name="related-topics"></a>Argomenti correlati
 

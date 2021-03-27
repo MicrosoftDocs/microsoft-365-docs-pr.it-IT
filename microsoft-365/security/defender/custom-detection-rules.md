@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 9699b5e2bc2e33b94795b7c23bd3f34f0383a8cc
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 12a35a9f80da6b401495fcae7c245436b35b991c
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060813"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382890"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Creare e gestire regole di rilevamento personalizzate
 
@@ -116,12 +116,16 @@ Con la query nell'editor di query, selezionare Crea regola **di rilevamento** e 
 - **Azioni consigliate:** azioni aggiuntive che i risponditori potrebbero intraprendere in risposta a un avviso
 
 #### <a name="rule-frequency"></a>Frequenza delle regole
-Quando si salva o si modifica una nuova regola, viene eseguita e viene verificata la presenza di corrispondenze degli ultimi 30 giorni di dati. La regola viene quindi eseguita di nuovo a intervalli fissi, applicando una durata di lookback in base alla frequenza scelta:
+Quando si salva una nuova regola, viene eseguita e viene verificata la presenza di corrispondenze degli ultimi 30 giorni di dati. La regola viene quindi eseguita di nuovo a intervalli fissi, applicando una durata di lookback in base alla frequenza scelta:
 
 - **Ogni 24 ore:** viene eseguito ogni 24 ore, controllando i dati degli ultimi 30 giorni
 - **Ogni 12 ore:** viene eseguito ogni 12 ore, controllando i dati delle ultime 24 ore
 - **Ogni 3 ore:** viene eseguito ogni 3 ore, controllando i dati delle ultime 6 ore
 - **Ogni ora:** viene eseguito ogni ora, controllando i dati delle ultime 2 ore
+
+Quando si modifica una regola, questa verrà eseguita con le modifiche applicate nella successiva fase di esecuzione pianificata in base alla frequenza impostata.
+
+
 
 >[!TIP]
 > Associare i filtri tempo nella query alla durata del lookback. I risultati al di fuori della durata del lookback vengono ignorati.  

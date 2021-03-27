@@ -18,19 +18,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 83a56a74ff949b23843417942923d2b4b810b4ee
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 1386809778edeb92521a8656e9ece78591a682a4
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185929"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382902"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-for-mac"></a>Privacy per Microsoft Defender per Endpoint per Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
@@ -156,6 +156,18 @@ Vengono raccolti i campi seguenti:
 | motivo           | Messaggio di errore se l'aggiornamento è stato aggiornato. |
 
 #### <a name="product-and-service-performance-data-events"></a>Eventi dati di Prestazioni di prodotti e servizi
+
+**Chiusura imprevista (arresto anomalo) dell'applicazione**
+
+Raccoglie informazioni di sistema e lo stato di un'applicazione quando un'applicazione viene chiusa in modo imprevisto.
+
+Vengono raccolti i campi seguenti:
+
+| Campo                          | Descrizione |
+| ------------------------------ | ----------- |
+| v1_crash_count                 | Numero di arresti anomalo del processo del motore V1 ogni ora nel computer client  |
+| v2_crash_count                 | Numero di arresti anomalo del processo del motore V2 ogni ora nel computer client  |
+| EDR_crash_count                | Numero di arresti anomalo del processo EDR ogni ora nel computer client        |
 
 **Statistiche dell'estensione kernel**
 

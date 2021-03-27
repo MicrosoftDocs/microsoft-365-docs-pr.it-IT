@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 10009edab33d04ca01da9459c394634d0622cf3d
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 62989eca2fd00757ea02d03bf24a0049135d97b0
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063541"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382866"
 ---
 # <a name="devicefileevents"></a>DeviceFileEvents
 
@@ -63,11 +63,19 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `InitiatingProcessAccountName` | stringa | Nome utente dell'account che ha eseguito il processo responsabile dell'evento |
 | `InitiatingProcessAccountSid` | stringa | Identificatore di sicurezza (SID) dell'account che ha eseguito il processo responsabile dell'evento |
 | `InitiatingProcessAccountUpn` | stringa | Nome dell'entità utente (UPN) dell'account che ha eseguito il processo responsabile dell'evento |
+| `InitiatingProcessAccountObjectId` | stringa | ID oggetto di Azure AD dell'account utente che ha eseguito il processo responsabile dell'evento |
 | `InitiatingProcessMD5` | stringa | Hash MD5 del processo (file di immagine) che ha avviato l'evento |
 | `InitiatingProcessSHA1` | stringa | SHA-1 del processo (file di immagine) che ha avviato l'evento |
 | `InitiatingProcessSHA256` | stringa | SHA-256 del processo (file di immagine) che ha avviato l'evento. (questo campo in genere non viene popolato: usare la colonna SHA1, se disponibile). |
 | `InitiatingProcessFolderPath` | stringa | Cartella contenente il processo (file di immagine) che ha avviato l'evento |
 | `InitiatingProcessFileName` | stringa | Nome del processo che ha avviato l'evento |
+| `InitiatingProcessFileSize` | long | Dimensioni del processo (file di immagine) che ha avviato l'evento |
+| `InitiatingProcessVersionInfoCompanyName` | stringa | Nome della società dalle informazioni sulla versione del processo (file di immagine) responsabile dell'evento |
+| `InitiatingProcessVersionInfoProductName` | stringa | Nome del prodotto dalle informazioni sulla versione del processo (file di immagine) responsabile dell'evento |
+|` InitiatingProcessVersionInfoProductVersion` | stringa | Versione del prodotto dalle informazioni sulla versione del processo (file di immagine) responsabile dell'evento |
+|` InitiatingProcessVersionInfoInternalFileName` | stringa | Nome file interno dalle informazioni sulla versione del processo (file di immagine) responsabile dell'evento |
+| `InitiatingProcessVersionInfoOriginalFileName` | stringa | Nome del file originale dalle informazioni sulla versione del processo (file di immagine) responsabile dell'evento |
+| `InitiatingProcessVersionInfoFileDescription` | stringa | Descrizione dalle informazioni sulla versione del processo (file immagine) responsabile dell'evento |
 | `InitiatingProcessId` | int | ID processo (PID) del processo che ha avviato l'evento |
 | `InitiatingProcessCommandLine` | stringa | Riga di comando utilizzata per eseguire il processo che ha avviato l'evento |
 | `InitiatingProcessCreationTime` | datetime | Data e ora di inizio del processo che ha avviato l'evento |
@@ -77,20 +85,19 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `InitiatingProcessParentFileName` | stringa | Nome del processo padre che ha generato il processo responsabile dell'evento |
 | `InitiatingProcessParentCreationTime` | datetime | Data e ora in cui l'elemento padre del processo responsabile dell'evento è stato avviato |
 | `RequestProtocol` | stringa | Protocollo di rete, se applicabile, utilizzato per avviare l'attività: Sconosciuto, Locale, SMB o NFS |
-| `ShareName` | stringa | Nome della cartella condivisa contenente il file |
 | `RequestSourceIP` | stringa | Indirizzo IPv4 o IPv6 del dispositivo remoto che ha avviato l'attività |
 | `RequestSourcePort` | stringa | Porta di origine nel dispositivo remoto che ha avviato l'attività |
 | `RequestAccountName` | stringa | Nome utente dell'account utilizzato per avviare l'attività in remoto |
 | `RequestAccountDomain` | stringa | Dominio dell'account utilizzato per avviare l'attività in remoto |
 | `RequestAccountSid` | stringa | Identificatore di sicurezza (SID) dell'account utilizzato per avviare in remoto l'attività |
-| `ReportId` | long | Identificatore di evento basato su un contatore ripetuto. Per identificare gli eventi univoci, è necessario utilizzare questa colonna insieme alle colonne DeviceName e Timestamp. |
-| `AppGuardContainerId` | stringa | Identificatore del contenitore virtualizzato utilizzato da Application Guard per isolare l'attività del browser |
-| `AdditionalFields` | stringa | Informazioni aggiuntive sull'entità o sull'evento |
+| `ShareName` | stringa | Nome della cartella condivisa contenente il file |
 | `InitiatingProcessFileSize` | long | Dimensioni del file che ha eseguito il processo responsabile dell'evento |
 | `SensitivityLabel` | stringa | Etichetta applicata a un messaggio di posta elettronica, un file o altro contenuto per classificarlo per la protezione delle informazioni |
 | `SensitivitySubLabel` | stringa | Sottoetichetta applicata a un messaggio di posta elettronica, un file o altro contenuto per classificarlo per la protezione delle informazioni; Le sottoetichetta di riservatezza sono raggruppate sotto le etichette di riservatezza, ma vengono trattate in modo indipendente |
 | `IsAzureInfoProtectionApplied` | boolean | Indica se il file è crittografato da Azure Information Protection |
-
+| `ReportId` | long | Identificatore di evento basato su un contatore ripetuto. Per identificare gli eventi univoci, è necessario utilizzare questa colonna insieme alle colonne DeviceName e Timestamp. |
+| `AppGuardContainerId` | stringa | Identificatore del contenitore virtualizzato utilizzato da Application Guard per isolare l'attività del browser |
+| `AdditionalFields` | stringa | Informazioni aggiuntive sull'entità o sull'evento |
 >[!NOTE]
 > Le informazioni sull'hash dei file verranno sempre visualizzate quando sono disponibili. Tuttavia, esistono diversi motivi per cui non è possibile eseguire il calcolo di sha1, SHA256 o MD5. Ad esempio, il file potrebbe trovarsi in un archivio remoto, bloccato da un altro processo, compresso o contrassegnato come virtuale. In questi scenari, le informazioni sull'hash dei file vengono visualizzate vuote.
 

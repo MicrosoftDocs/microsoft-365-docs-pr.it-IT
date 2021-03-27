@@ -1,6 +1,6 @@
 ---
-title: Distribuzione manuale per Microsoft Defender ATP per macOS
-description: Installare Microsoft Defender ATP per macOS manualmente dalla riga di comando.
+title: Distribuzione manuale per Microsoft Defender for Endpoint per macOS
+description: Installare Manualmente Microsoft Defender per Endpoint per macOS dalla riga di comando.
 keywords: microsoft, defender, atp, mac, installazione, distribuire, disinstallazione, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,19 +18,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b2629eb3d13e6eb908644dfcade46a7ac2768637
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 044a3d48dc350a5663a27ab3c16c2da7a5e3f3f1
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187446"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51379443"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-for-macos"></a>Distribuzione manuale per Microsoft Defender for Endpoint per macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -64,20 +64,20 @@ Per completare questo processo, devi disporre dei privilegi di amministratore ne
 
 1. Passa al file wdav.pkg scaricato nel Finder e aprilo.
 
-    ![Screenshot1 per l'installazione dell'app](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-28-appinstall)
+    ![Screenshot1 per l'installazione dell'app](images/mdatp-28-appinstall.png)
 
 2. Selezionare **Continua**, accettare le condizioni di licenza e immettere la password quando richiesto.
 
-    ![Screenshot2 per l'installazione dell'app](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-29-appinstalllogin)
+    ![Screenshot2 per l'installazione dell'app](images/mdatp-29-appinstalllogin.png)
 
    > [!IMPORTANT]
    > Ti verrà richiesto di consentire l'installazione di un driver di Microsoft ("Estensione di sistema bloccata" o "L'installazione è in attesa" o entrambe. Il driver deve essere autorizzato a essere installato.
 
-   ![Screenshot3 per l'installazione dell'app](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-30-systemextension)
+   ![Screenshot3 per l'installazione dell'app](images/mdatp-30-systemextension.png)
 
 3. Seleziona **Apri preferenze di sicurezza** o Apri preferenze di sistema > Sicurezza & **Privacy.** Selezionare **Consenti**:
 
-    ![Screenshot della finestra Sicurezza e privacy](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-31-securityprivacysettings)
+    ![Screenshot della finestra Sicurezza e privacy](images/mdatp-31-securityprivacysettings.png)
 
    L'installazione procede.
 
@@ -97,7 +97,7 @@ Per completare questo processo, devi disporre dei privilegi di amministratore ne
 
 2. Selezionare **Continua**, accettare le condizioni di licenza e immettere la password quando richiesto.
 
-3. Al termine del processo di installazione, si verrà alzati di livello per approvare le estensioni di sistema utilizzate dal prodotto. Selezionare **Apri preferenze di sicurezza.**
+3. Al termine del processo di installazione, verrà promosso per approvare le estensioni di sistema utilizzate dal prodotto. Selezionare **Apri preferenze di sicurezza.**
 
     ![Approvazione dell'estensione di sistema](images/big-sur-install-2.png)
 
@@ -139,7 +139,7 @@ Per completare questo processo, devi disporre dei privilegi di amministratore ne
 
 Dopo l'installazione, vedrai l'icona di Microsoft Defender nella barra di stato di macOS nell'angolo in alto a destra.
 
-   ![Icona di Microsoft Defender nella schermata della barra di stato](/windows/security/threat-protection/microsoft-defender-antivirus/images/mdatp-icon-bar)
+   ![Icona di Microsoft Defender nella schermata della barra di stato](images/mdatp-icon-bar.png)
    
 
 ## <a name="how-to-allow-full-disk-access"></a>Come consentire l'accesso completo al disco

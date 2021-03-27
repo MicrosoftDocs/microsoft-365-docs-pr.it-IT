@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 247b8b8d8e18c8eecb09029581635ae907433f55
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: df96b57b9898dd973fab053918d763d1972bd50d
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068338"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382806"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>Ottenere una formazione esperta sulla ricerca avanzata
 
@@ -36,7 +36,6 @@ ms.locfileid: "51068338"
 - Microsoft 365 Defender
 
 Aumenta rapidamente la tua conoscenza della ricerca avanzata con _Tracking the adversary,_ una serie di webcast per i nuovi analisti della sicurezza e i cacciatori di minacce esperti. La serie illustra le nozioni di base per creare query sofisticate. Inizia con il primo video sulle nozioni fondamentali o passa a video più avanzati adatti al tuo livello di esperienza.
-
 
 | Titolo | Descrizione | Watch | Query | 
 |--|--|--|--|

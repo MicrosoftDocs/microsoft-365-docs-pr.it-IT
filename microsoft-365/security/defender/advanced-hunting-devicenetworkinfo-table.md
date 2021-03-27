@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 1c8a3f3ab91add9e057c4661677997e658f42386
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 9a3806d3e2bff66e04f4adb50217fc1c6f267364
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063509"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382604"
 ---
 # <a name="devicenetworkinfo"></a>DeviceNetworkInfo
 
@@ -46,7 +46,6 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `Timestamp` | datetime | Data e ora di registrazione dell'evento |
 | `DeviceId` | stringa | Identificatore univoco per il computer nel servizio |
 | `DeviceName` | stringa | Nome di dominio completo (FQDN) del computer |
-| `ReportId` | long | Identificatore di evento basato su un contatore ripetuto. Per identificare gli eventi univoci, è necessario utilizzare questa colonna insieme alle colonne DeviceName e Timestamp |
 | `NetworkAdapterName` | stringa | Nome della scheda di rete |
 | `MacAddress` | stringa | Indirizzo MAC della scheda di rete |
 | `NetworkAdapterType` | stringa | Tipo di scheda di rete. Per i valori possibili, fare riferimento a [questa enumerazione](/dotnet/api/system.net.networkinformation.networkinterfacetype?view=netframework-4.7.2) |
@@ -58,6 +57,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `IPv6Dhcp` | stringa | Indirizzo IPv6 del server DHCP |
 | `DefaultGateways` | stringa | Indirizzi gateway predefiniti in formato matrice JSON |
 | `IPAddresses` | stringa | Matrice JSON contenente tutti gli indirizzi IP assegnati alla scheda, insieme al rispettivo prefisso di subnet e allo spazio degli indirizzi IP, ad esempio pubblico, privato o locale di collegamento |
+| `ReportId` | long | Identificatore di evento basato su un contatore ripetuto. Per identificare gli eventi univoci, è necessario utilizzare questa colonna insieme alle colonne DeviceName e Timestamp |
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)

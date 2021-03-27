@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 059ff9ca6f0c93c6adbac3b1d552cbedcf308759
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 089614fab57950af5f60181ce7ed2116046ad347
+ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222708"
+ms.locfileid: "51379371"
 ---
 # <a name="microsoft-defender-for-endpoint-for-us-government-customers"></a>Microsoft Defender for Endpoint per i clienti us government
 
@@ -52,7 +52,7 @@ GCC | GCC High | DoD
 Microsoft Defender per Endpoint Server GCC | Microsoft Defender per Endpoint Server per GCC High | Microsoft Defender per Endpoint Server per DOD
 Azure Defender per server | Azure Defender per server - Enti pubblici | Azure Defender per server - Enti pubblici
 
-<br>
+<br />
 
 ## <a name="portal-urls"></a>URL portale
 Di seguito sono riportati gli URL del portale di Microsoft Defender for Endpoint per i clienti del governo statunitense:
@@ -63,7 +63,7 @@ GCC | https://gcc.securitycenter.microsoft.us
 GCC High | https://securitycenter.microsoft.us
 DoD | https://securitycenter.microsoft.us
 
-<br>
+<br />
 
 ## <a name="endpoint-versions"></a>Versioni degli endpoint
 
@@ -78,8 +78,8 @@ Windows 10, versione 1909 (con [KB4586819](https://support.microsoft.com/help/45
 Windows 10, versione 1903 (con [KB4586819](https://support.microsoft.com/help/4586819)) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
 Windows 10, versione 1809 (con [KB4586839](https://support.microsoft.com/help/4586839)) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
 Windows 10, versione 1803 (con [KB4598245](https://support.microsoft.com/help/4598245)) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
-Windows 10 versione 1709 | ![No](images/svg/check-no.svg)<br>Nota: non sarà supportato | ![Sì ](images/svg/check-yes.svg) con [KB4499147](https://support.microsoft.com/help/4499147)<br>Nota: [deprecato](https://docs.microsoft.com/lifecycle/announcements/revised-end-of-service-windows-10-1709), eseguire l'aggiornamento | ![No](images/svg/check-no.svg)<br>Nota: non sarà supportato
-Windows 10, versione 1703 e versioni precedenti | ![No](images/svg/check-no.svg)<br>Nota: non sarà supportato | ![No](images/svg/check-no.svg)<br>Nota: non sarà supportato | ![No](images/svg/check-no.svg)<br>Nota: non sarà supportato
+Windows 10 versione 1709 | ![No](images/svg/check-no.svg)<br />Nota: non sarà supportato | ![Sì ](images/svg/check-yes.svg) con [KB4499147](https://support.microsoft.com/help/4499147)<br />Nota: [deprecato](https://docs.microsoft.com/lifecycle/announcements/revised-end-of-service-windows-10-1709), eseguire l'aggiornamento | ![No](images/svg/check-no.svg)<br />Nota: non sarà supportato
+Windows 10, versione 1703 e versioni precedenti | ![No](images/svg/check-no.svg)<br />Nota: non sarà supportato | ![No](images/svg/check-no.svg)<br />Nota: non sarà supportato | ![No](images/svg/check-no.svg)<br />Nota: non sarà supportato
 Windows Server 2019 (con [KB4586839](https://support.microsoft.com/help/4586839)) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
 Windows Server 2016 | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
 Windows Server 2012 R2 | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
@@ -88,8 +88,8 @@ Windows 8.1 Enterprise | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/ch
 Windows 8 Pro | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
 Windows 7 SP1 Enterprise | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
 Windows 7 SP1 Pro | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
-Linux | ![No](images/svg/check-no.svg) Distribuzione | ![No](images/svg/check-no.svg) Distribuzione | ![No](images/svg/check-no.svg) Distribuzione
-macOS | ![No](images/svg/check-no.svg) Distribuzione | ![No](images/svg/check-no.svg) Distribuzione | ![No](images/svg/check-no.svg) Distribuzione
+Linux | ![Sì](images/svg/check-yes.svg) In anteprima<br />Vedi nota di seguito | ![Sì](images/svg/check-yes.svg) In anteprima<br />Vedi nota di seguito | ![Sì](images/svg/check-yes.svg) In anteprima<br />Vedi nota di seguito
+macOS | ![Sì](images/svg/check-yes.svg) In anteprima<br />Vedi nota di seguito | ![Sì](images/svg/check-yes.svg) In anteprima<br />Vedi nota di seguito | ![Sì](images/svg/check-yes.svg) In anteprima<br />Vedi nota di seguito
 Android | ![No](images/svg/check-no.svg) Backlog di progettazione | ![No](images/svg/check-no.svg) Backlog di progettazione | ![No](images/svg/check-no.svg) Backlog di progettazione
 iOS | ![No](images/svg/check-no.svg) Backlog di progettazione | ![No](images/svg/check-no.svg) Backlog di progettazione | ![No](images/svg/check-no.svg) Backlog di progettazione
 
@@ -98,6 +98,9 @@ iOS | ![No](images/svg/check-no.svg) Backlog di progettazione | ![No](images/svg
 
 > [!NOTE]
 > Si sta tentando di eseguire l'onboard di dispositivi Windows precedenti a Windows 10 o Windows Server 2019 con [Microsoft Monitoring Agent?](configure-server-endpoints.md#option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma) È necessario scegliere "Azure US Government" in "Azure [](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-setup-wizard)Cloud" se si [](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-command-line) utilizza la configurazione guidata o se si utilizza una riga di comando o uno [script,](https://docs.microsoft.com/azure/log-analytics/log-analytics-windows-agents#install-agent-using-dsc-in-azure-automation) impostare il parametro "OPINSIGHTS_WORKSPACE_AZURE_CLOUD_TYPE" su 1.
+
+> [!NOTE]
+> You'll need version 101.25.72 and above for Linux, and version 101.25.69 and above for macOS. Mentre siamo in anteprima, queste versioni sono disponibili solo nel canale "Insider Fast". Per istruzioni, vedi Configurare [l'archivio software Linux](linux-install-manually.md#configure-the-linux-software-repository) o Impostare il nome del canale [(macOS).](mac-updates.md#set-the-channel-name)
 
 ### <a name="os-versions-when-using-azure-defender-for-servers"></a>Versioni del sistema operativo quando si usa Azure Defender per i server
 Le versioni del sistema operativo seguenti sono supportate quando si usa [Azure Defender per i server:](https://docs.microsoft.com/azure/security-center/security-center-wdatp)
@@ -108,7 +111,7 @@ Windows Server 2016 | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check
 Windows Server 2012 R2 | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
 Windows Server 2008 R2 SP1 | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg) | ![Sì](images/svg/check-yes.svg)
 
-<br>
+<br />
 
 ## <a name="required-connectivity-settings"></a>Impostazioni di connettività necessarie
 Se un proxy o un firewall blocca tutto il traffico per impostazione predefinita e consente solo domini specifici, aggiungere i domini elencati nel foglio di lavoro scaricabile all'elenco di domini consentiti.
@@ -117,7 +120,7 @@ Il foglio di calcolo scaricabile seguente elenca i servizi e gli URL associati a
 
 Foglio di calcolo dell'elenco dei domini | Descrizione
 :-----|:-----
-![Immagine di scorrimento per il foglio di calcolo degli URL di Microsoft Defender for Endpoint](images/mdatp-urls.png)<br/> | Foglio di calcolo di record DNS specifici per le posizioni dei servizi, le posizioni geografiche e il sistema operativo. <br><br>[Scaricare il foglio di calcolo qui.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
+![Immagine di scorrimento per il foglio di calcolo degli URL di Microsoft Defender for Endpoint](images/mdatp-urls.png)<br/> | Foglio di calcolo di record DNS specifici per le posizioni dei servizi, le posizioni geografiche e il sistema operativo. <br /><br />[Scaricare il foglio di calcolo qui.](https://download.microsoft.com/download/8/a/5/8a51eee5-cd02-431c-9d78-a58b7f77c070/mde-urls.xlsx) 
 
 Per ulteriori informazioni, vedere [Configure device proxy and Internet connectivity settings.](configure-proxy-internet.md)
 
@@ -140,10 +143,10 @@ Gli intervalli IP di Azure sono disponibili in [Azure IP Ranges and Service Tags
 > [!NOTE]
 > Come soluzione basata sul cloud, gli intervalli di indirizzi IP possono cambiare. È consigliabile passare a regole basate su DNS.
 
-<br>
+<br />
 
 ## <a name="api"></a>API
-Anziché gli URI pubblici elencati nella documentazione [dell'API,](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/apis-intro)dovrai usare gli URI seguenti:
+Anziché gli URI pubblici elencati nella documentazione [dell'API,](apis-intro.md)dovrai usare gli URI seguenti:
 
 Tipo di endpoint | GCC | GCC High & DoD
 :---|:---|:---
@@ -151,7 +154,7 @@ Accesso | `https://login.microsoftonline.com` | `https://login.microsoftonline.u
 Defender for Endpoint API | `https://api-gcc.securitycenter.microsoft.us` | `https://api-gov.securitycenter.microsoft.us`
 SIEM | `https://wdatp-alertexporter-us.gcc.securitycenter.windows.us` | `https://wdatp-alertexporter-us.securitycenter.windows.us`
 
-<br>
+<br />
 
 ## <a name="feature-parity-with-commercial"></a>Parità delle funzionalità con commerciale
 Defender for Endpoint per i clienti del governo statunitense non ha la parità completa con l'offerta commerciale. Anche se il nostro obiettivo è fornire tutte le funzionalità e le funzionalità commerciali ai clienti del governo degli Stati Uniti, alcune funzionalità non sono ancora disponibili che vogliamo evidenziare.

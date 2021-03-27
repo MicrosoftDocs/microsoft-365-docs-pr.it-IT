@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: c1c9bac0fe29587bbc02c7974b83e2725a69c02b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e1d1284fa6132e37b31245bd45557e180d0135f2
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063522"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382674"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
@@ -50,19 +50,18 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `DeviceId` | stringa | Identificatore univoco per il computer nel servizio |
 | `DeviceName` | stringa | Nome di dominio completo (FQDN) del computer |
 | `ActionType` | stringa |Tipo di attività che ha attivato l'evento |
+| `LogonType` | stringa | Tipo di sessione di accesso, in particolare:<br><br> - **Interattivo-** L'utente interagisce fisicamente con il computer usando la tastiera e lo schermo locali<br><br> - **Accessi remoti interattivi (RDP):** l'utente interagisce con il computer in remoto utilizzando Desktop remoto, Servizi terminal, Assistenza remota o altri client RDP<br><br> - **Rete** - Sessione avviata quando si accede al computer tramite PsExec o quando si accede a risorse condivise nel computer, ad esempio stampanti e cartelle condivise.<br><br> - **Batch** - Sessione avviata da attività pianificate<br><br> - **Servizio** - Sessione avviata dai servizi all'avvio<br> |
 | `AccountDomain` | stringa | Dominio dell'account |
 | `AccountName` | stringa | Nome utente dell'account |
 | `AccountSid` | stringa | Identificatore di sicurezza (SID) dell'account |
 | `Protocol` | stringa | Protocollo utilizzato durante la comunicazione |
 | `FailureReason` | stringa | Informazioni che spiegano perché l'azione registrata non è riuscita |
-| `LogonType` | stringa | Tipo di sessione di accesso, in particolare:<br><br> - **Interattivo-** L'utente interagisce fisicamente con il computer usando la tastiera e lo schermo locali<br><br> - **Accessi remoti interattivi (RDP):** l'utente interagisce con il computer in remoto utilizzando Desktop remoto, Servizi terminal, Assistenza remota o altri client RDP<br><br> - **Rete** - Sessione avviata quando si accede al computer tramite PsExec o quando si accede a risorse condivise nel computer, ad esempio stampanti e cartelle condivise.<br><br> - **Batch** - Sessione avviata da attività pianificate<br><br> - **Servizio** - Sessione avviata dai servizi all'avvio<br> |
+| `IsLocalAdmin` | boolean | Indicatore booleano che indica se l'utente è un amministratore locale nel computer |
 | `LogonId` | stringa | Identificatore di una sessione di accesso. Questo identificatore è univoco nello stesso computer solo tra un riavvio e l'altro |
 | `RemoteDeviceName` | stringa | Nome del computer che ha eseguito un'operazione remota nel computer interessato. A seconda dell'evento segnalato, questo nome può essere un nome di dominio completo (FQDN), un nome NetBIOS o un nome host senza informazioni sul dominio |
 | `RemoteIP` | stringa | Indirizzo IP connesso a |
 | `RemoteIPType` | stringa | Tipo di indirizzo IP, ad esempio Public, Private, Reserved, Loopback, Teredo, FourToSixMapping e Broadcast |
 | `RemotePort` | int | Porta TCP nel dispositivo remoto a cui era in corso la connessione |
-| `AdditionalFields` | stringa | Informazioni aggiuntive sull'evento in formato matrice JSON |
-| `InitiatingProcessFileSize` | long | Dimensioni del file che ha eseguito il processo responsabile dell'evento |
 | `InitiatingProcessAccountDomain` | stringa | Dominio dell'account che ha eseguito il processo responsabile dell'evento |
 | `InitiatingProcessAccountName` | stringa | Nome utente dell'account che ha eseguito il processo responsabile dell'evento |
 | `InitiatingProcessAccountSid` | stringa | Identificatore di sicurezza (SID) dell'account che ha eseguito il processo responsabile dell'evento |
@@ -74,6 +73,13 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `InitiatingProcessSHA256` | stringa | SHA-256 del processo (file di immagine) che ha avviato l'evento. Questo campo in genere non viene popolato: utilizzare la colonna SHA1 quando disponibile |
 | `InitiatingProcessMD5` | stringa | Hash MD5 del processo (file di immagine) che ha avviato l'evento |
 | `InitiatingProcessFileName` | stringa | Nome del processo che ha avviato l'evento |
+| `InitiatingProcessFileSize` | long | Dimensioni del file che ha eseguito il processo responsabile dell'evento |
+| `InitiatingProcessVersionInfoCompanyName` | stringa | Nome della società dalle informazioni sulla versione del processo (file di immagine) responsabile dell'evento |
+| `InitiatingProcessVersionInfoProductName` | stringa | Nome del prodotto dalle informazioni sulla versione del processo (file di immagine) responsabile dell'evento |
+| `InitiatingProcessVersionInfoProductVersion` | stringa | Versione del prodotto dalle informazioni sulla versione del processo (file di immagine) responsabile dell'evento |
+| `InitiatingProcessVersionInfoInternalFileName` | stringa | Nome file interno dalle informazioni sulla versione del processo (file di immagine) responsabile dell'evento |
+| `InitiatingProcessVersionInfoOriginalFileName` | stringa | Nome del file originale dalle informazioni sulla versione del processo (file di immagine) responsabile dell'evento |
+| `InitiatingProcessVersionInfoFileDescription` | stringa | Descrizione dalle informazioni sulla versione del processo (file immagine) responsabile dell'evento |
 | `InitiatingProcessId` | int | ID processo (PID) del processo che ha avviato l'evento |
 | `InitiatingProcessCommandLine` | stringa | Riga di comando utilizzata per eseguire il processo che ha avviato l'evento |
 | `InitiatingProcessCreationTime` | datetime | Data e ora di inizio del processo che ha avviato l'evento |
@@ -83,7 +89,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `InitiatingProcessParentCreationTime` | datetime | Data e ora in cui l'elemento padre del processo responsabile dell'evento è stato avviato |
 | `ReportId` | long | Identificatore di evento basato su un contatore ripetuto. Per identificare gli eventi univoci, è necessario utilizzare questa colonna insieme alle colonne DeviceName e Timestamp |
 | `AppGuardContainerId` | stringa | Identificatore del contenitore virtualizzato utilizzato da Application Guard per isolare l'attività del browser |
-| `IsLocalAdmin` | boolean | Indicatore booleano che indica se l'utente è un amministratore locale nel computer |
+| `AdditionalFields` | stringa | Informazioni aggiuntive sull'evento in formato matrice JSON |
 
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica della ricerca avanzata](advanced-hunting-overview.md)

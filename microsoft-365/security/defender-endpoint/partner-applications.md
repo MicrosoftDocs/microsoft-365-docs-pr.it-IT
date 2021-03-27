@@ -17,19 +17,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 79db436c2017c00e1b5d669797c5fb025f651a8a
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 563dd2a5102ec66a1e953ae6ab30d56ea4f99036
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186234"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382943"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Applicazioni partner in Microsoft Defender per Endpoint 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -92,12 +92,13 @@ Logo |Nome partner   | Descrizione
 
 
 
-### <a name="network-security"></a>Sicurezza della rete
+### <a name="network-security"></a>Sicurezza di rete
 Logo |Nome partner   | Descrizione 
 :---|:---|:---
 ![Immagine del logo di Aruba ClearPass Policy Manager](images/aruba-logo.png) | [Aruba ClearPass Policy Manager](https://go.microsoft.com/fwlink/?linkid=2127544) | Assicurati che Defender for Endpoint sia installato e aggiornato in ogni endpoint prima di consentire l'accesso alla rete
 ![Immagine dell'esagono blu per il logo di rete](images/bluehexagon-logo.png) | [Esagono blu per rete](https://go.microsoft.com/fwlink/?linkid=2104613) | Blue Hexagon ha creato la prima piattaforma di deep learning in tempo reale del settore per la protezione dalle minacce di rete
 ![Immagine del logo CyberMDX](images/cybermdx-logo.png) | [CyberMDX](https://go.microsoft.com/fwlink/?linkid=2135620) | Cyber MDX integra la visibilità completa degli asset sanitari, la prevenzione delle minacce e il riposino nel tuo ambiente Defender for Endpoint
+![Immagine del logo HYAS Protect](images/hyas-logo.png) | [HYAS Protect](https://go.microsoft.com/fwlink/?linkid=2156763) | HYAS Protect utilizza una conoscenza autorevole dell'infrastruttura degli utenti malintenzionati per proteggere in modo proattivo gli endpoint di Microsoft Defender for Endpoint da attacchi informatici
 ![Immagine del logo di Rilevamento e risposta di rete Vectra (NDR)](images/vectra-logo.png) |[Vectra Network Detection and Response (NDR)](https://go.microsoft.com/fwlink/?linkid=866934)| Vectra applica l'ai & di sicurezza per rilevare e rispondere agli attacchi informatici in tempo reale
 
 

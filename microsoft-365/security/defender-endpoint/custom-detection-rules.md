@@ -18,12 +18,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/20/2020
 ms.technology: mde
-ms.openlocfilehash: fc4c15d2e391176ed0b4420c13fb865674da0361
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 48b1f1bf9506acc8491887fca49295d5e4ccbd69
+ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163588"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "51382710"
 ---
 # <a name="create-custom-detection-rules"></a>Creare regole di rilevamento personalizzate
 
@@ -98,8 +98,8 @@ Quando viene salvata, viene eseguita immediatamente una nuova regola di rilevame
 - **Ogni 3 ore:** viene eseguito ogni 3 ore, controllando i dati delle ultime 6 ore
 - **Ogni ora:** viene eseguito ogni ora, controllando i dati delle ultime 2 ore
 
-> [!IMPORTANT]
-> Quando si modifica una query già pianificata come rilevamento personalizzato, l'esecuzione immediata successiva avrà una finestra di visualizzazione di 30 giorni, esattamente come se fosse stata creata una nuova query. Le modifiche apportate a un numero elevato di query e con filtri temporità superiori alla durata di lookback predefinita per la frequenza selezionata potrebbero avere un impatto sul consumo complessivo delle quote di Ricerca avanzata e potrebbero esaurire la quota giornaliera.
+Quando si modifica una regola, questa verrà eseguita con le modifiche applicate nella successiva fase di esecuzione pianificata in base alla frequenza impostata.
+
 
 > [!TIP]
 > Associare i filtri tempo nella query alla durata del lookback. I risultati al di fuori della durata del lookback vengono ignorati.
