@@ -33,7 +33,7 @@
 #### [Fase 2: configurazione](mcafee-to-microsoft-defender-setup.md)
 #### [Fase 3: onboarding](mcafee-to-microsoft-defender-onboard.md)
 ### [Passare da Symantec a Microsoft Defender per endpoint]()
-#### [Panoramica della migrazione](symantec-to-microsoft-defender-atp-migration.md)
+#### [Panoramica della migrazione](symantec-to-microsoft-defender-endpoint-migration.md)
 #### [Fase 1: preparazione](symantec-to-microsoft-defender-atp-prepare.md)
 #### [Fase 2: configurazione](symantec-to-microsoft-defender-atp-setup.md)
 #### [Fase 3: onboarding](symantec-to-microsoft-defender-atp-onboard.md)
@@ -115,7 +115,7 @@
 ##### [Abilitare l’accesso controllato alle cartelle](enable-controlled-folders.md)
 ##### [Personalizzare l’accesso controllato alle cartelle](customize-controlled-folders.md)
 
-### [Microsoft Defender Advanced Threat Protection per Mac]()
+### [Microsoft Defender per endpoint per Mac]()
 #### [Panoramica di Microsoft Defender per endpoint per Mac](microsoft-defender-endpoint-mac.md)
 #### [Novità](mac-whatsnew.md)
 
@@ -140,7 +140,7 @@
 ###### [Panoramica controllo dispositivo](mac-device-control-overview.md)
 ###### [Esempi di JAMF](mac-device-control-jamf.md)
 ###### [Esempi di Intune](mac-device-control-intune.md)
-##### [Pianificare analisi](mac-schedule-scan-atp.md)
+##### [Pianificare analisi](mac-schedule-scan.md)
 
 #### [Risoluzione dei problemi]()
 ##### [Risolvere i problemi di installazione](mac-support-install.md)
@@ -354,7 +354,7 @@
 #### [Generale]()
 ##### [Verificare la posizione di archiviazione dei dati e aggiornare le impostazioni di conservazione dei dati](data-retention-settings.md)
 ##### [Configurare le notifiche di avviso](configure-email-notifications.md)
-##### [Configurare le caratteristiche avanzate] (advanced-features.md
+##### [Configurare le funzionalità avanzate](advanced-features.md)
 
 #### [Autorizzazioni]()
 ##### [Usare le autorizzazioni di base per accedere al portale](basic-permissions.md)
@@ -379,7 +379,9 @@
 
 #### [Configurare le impostazioni del fuso orario del Microsoft Defender Security Center](time-settings.md)
 
-### [Configurare l’integrazione con altre soluzioni di Microsoft]()
+### [Risolvere i falsi positivi/negativi in Microsoft Defender per endpoint](defender-endpoint-false-positives-negatives.md)
+
+### [Configurare l’integrazione con altre soluzioni Microsoft]()
 #### [Configurare l’accesso condizionale](configure-conditional-access.md)
 #### [Configurare l'integrazione di Microsoft Cloud App Security.](microsoft-cloud-app-security-config.md)
 
@@ -585,5 +587,5 @@
 ##### [Regole per la riduzione della superficie di attacco](troubleshoot-asr.md)
 
 # [Sicurezza di Microsoft 365](../index.yml)
-# [Microsoft 365 Defender](../defender/index.yml)
+# [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 # [Defender per Office 365](../office-365-security/overview.md)
