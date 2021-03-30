@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Questo articolo illustra le differenze tra le diverse versioni di Crittografia messaggi di Office 365.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e75a709be6141c4bd1df4e63df677dd263c0777a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5c8b0852220b2144c4ab92ec9b692299c9d2c860
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927734"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408569"
 ---
 # <a name="compare-versions-of-ome"></a>Confrontare le versioni di OME
 
@@ -37,21 +37,9 @@ Questo articolo fa parte di una serie più ampia di articoli sulla crittografia 
 
 Exchange Online include la funzionalità Information Rights Management (IRM) che fornisce protezione online e offline di messaggi di posta elettronica e allegati. Per impostazione predefinita, Exchange Online usa Azure Information Protection. Tuttavia, l'organizzazione potrebbe aver configurato IRM di Exchange Online per l'utilizzo di Active Directory Rights Management Service (AD RMS) locale. Il supporto di AD RMS in Exchange Online è in ritiro. Azure Information Protection sostituirà invece completamente AD RMS.
 
-Prima di iniziare, esaminare e valutare l'impatto per l'organizzazione. Se l'organizzazione usa già Azure Information Protection per crittografare la posta elettronica in Exchange Online, non c'è nulla da fare. Se si crittografa la posta elettronica utilizzando le regole del flusso di posta di Exchange, ad esempio utilizzando la crittografia dei messaggi di Office 365, non sarà necessario modificare la posta elettronica sicura. In caso contrario, è necessario prepararsi per la deprecazione di AD RMS passando ad Azure Information Protection.
+Per valutare se questa deprecazione influisce sull'organizzazione, vedere Come eseguire la migrazione di [AD RMS ad Azure RMS in Exchange Online.](https://support.microsoft.com/help/5001237) In questo articolo vengono forniti suggerimenti sulle opzioni di migrazione.
 
-### <a name="prepare-for-ad-rms-deprecation"></a>Preparare la deprecazione di AD RMS
-
-Se Azure Information Protection è già stato configurato ma non lo si utilizza, abilitare il servizio tramite PowerShell di Exchange Online. Nel computer locale, utilizzando un account aziendale o dell'istituto di istruzione con autorizzazioni di amministratore globale nell'organizzazione, connettersi a [PowerShell](/powershell/exchange/connect-to-exchange-online-powershell) di Exchange Online in una finestra Windows PowerShell locale.
-
-Per abilitare Azure Information Protection, utilizzare il cmdlet Set-IrmConfiguration digitando il comando seguente.
-
-```powershell
-Set-IrmConfiguration -AzureRMSLicensingEnabled $true
-```
-
-Se l'organizzazione non ha ancora configurato Azure Information Protection, sarà necessario eseguire la migrazione da AD RMS ad Azure Information Protection. Per istruzioni, vedere [Migrating from AD RMS to Azure Information Protection.](/azure/information-protection/migrate-from-ad-rms-to-azure-rms)
-
-## <a name="side-by-side-comparison-of-features-and-capabilities"></a>Confronto affiancato di funzionalità e funzionalità
+## <a name="side-by-side-comparison-of-ome-features-and-capabilities"></a>Confronto affiancato delle funzionalità e delle funzionalità OME
 
 |           **Situazione**           | **OME legacy**    | **IRM in AD RMS**        | **Nuove funzionalità OME** |
 |-----------------------------------|-------------------|-------------------|--------------------------|

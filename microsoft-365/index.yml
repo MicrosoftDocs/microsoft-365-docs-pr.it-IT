@@ -13,12 +13,12 @@ metadata:
   ms.author: robmazz
   ms.date: 11/08/2019
   localization_priority: Priority
-  ms.openlocfilehash: fdd4063947a262de2f4140412fa1b94362de4e96
-  ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+  ms.openlocfilehash: 721d017ecdf40ecce020b6298e87a9bddd999256
+  ms.sourcegitcommit: b56a8ff9bb496bf2bc1991000afca3d251f45b72
   ms.translationtype: HT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 03/25/2021
-  ms.locfileid: "51199946"
+  ms.lasthandoff: 03/30/2021
+  ms.locfileid: "51418081"
 highlightedContent:
   items:
   - title: Supportare i lavoratori remoti
@@ -89,7 +89,9 @@ productDirectory:
       text: Principali attività per i team di sicurezza per supportare il lavoro da casa
     - url: solutions/configure-teams-three-tiers-protection.md
       text: Configurare tre livelli di protezione con Microsoft Teams
-    - url: /windows/security/threat-protection/microsoft-defender-atp/deployment-phases
+    - url: security/defender/get-started.md
+      text: Introduzione a Microsoft 365 Defender
+    - url: security/defender-endpoint/deployment-phases.md
       text: Distribuire Microsoft Defender per endpoint
     - url: security/office-365-security/defender-for-office-365.md
       text: Distribuire Microsoft Defender per Office 365

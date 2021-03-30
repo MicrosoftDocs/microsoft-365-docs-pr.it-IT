@@ -12,12 +12,12 @@ ms.reviewer: esaggese
 localization_priority: Normal
 ms.collection:
 - M365-security-compliance
-ms.openlocfilehash: 10b29220e49dcb5fda8b1f7d18e52e10513fc599
-ms.sourcegitcommit: 30c3054004ddc9d6059c11d55577552aa2464810
+ms.openlocfilehash: 746f1345b47694f4a4122edc5d89cc924441ea81
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "50939657"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408177"
 ---
 # <a name="double-key-encryption-for-microsoft-365"></a>Crittografia a chiave doppia per Microsoft 365
 
@@ -242,6 +242,8 @@ Le impostazioni delle chiavi e del tenant DKE si trovano nel file **appsettings.
      "https://sts.windows.net/9c99431e-b513-44be-a7d9-e7b500002d4b/"
    ]
    ```
+> [!NOTE]
+> Se si desidera abilitare l'accesso B2B esterno all'archivio chiavi, sarà inoltre necessario includere questi tenant esterni come parte dell'elenco delle autorità emittente valide.
 
 Individuare `JwtAudience` il file . Sostituire `<yourhostname>` con il nome host del computer in cui verrà eseguito il servizio DKE. Ad esempio:
 
@@ -500,7 +502,7 @@ Per registrare il servizio DKE:
 
 9. In **Concessione implicita** seleziona la **casella di controllo Token ID.**
 
-10. Selezionare **Salva** per salvare le modifiche.
+10. Seleziona **Salva** per salvare le modifiche.
 
 11. Nel riquadro sinistro seleziona **Esponi un'API,** quindi accanto a URI ID applicazione seleziona **Imposta**.
 
