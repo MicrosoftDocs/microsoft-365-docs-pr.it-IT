@@ -57,7 +57,7 @@
     - name: Informazioni generali sull'interfaccia di amministrazione di Microsoft 365
       items:
         - name: Informazioni generali sull'interfaccia di amministrazione
-          href: admin-overview/about-the-admin-center.md
+          href: ../business-video/admin-center-overview.md
         - name: Informazioni sui ruoli di amministratore
           href: add-users/about-admin-roles.md
         - name: App Admin per dispositivi mobili
