@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cf903bd1b09370dd7de2706b078778137ea029fb
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 98b568206d4263a574c8de653fe5345dd344ba43
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187818"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408548"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-for-linux-manually"></a>Distribuire manualmente Microsoft Defender per Endpoint per Linux
 
@@ -87,7 +87,7 @@ Per visualizzare in anteprima le nuove funzionalità e fornire feedback anticipa
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    Ad esempio, se si esegue CentOS 7 e si desidera distribuire MDE per Linux dal *canale prod:*
+    Ad esempio, se si esegue CentOS 7 e si desidera distribuire Defender per Endpoint per Linux dal *canale prod:*
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/prod.repo
@@ -383,6 +383,27 @@ Vedere [Registrare i problemi](linux-resources.md#log-installation-issues) di in
 ## <a name="operating-system-upgrades"></a>Aggiornamenti del sistema operativo
 
 Durante l'aggiornamento del sistema operativo a una nuova versione principale, devi prima disinstallare Defender per Endpoint per Linux, installare l'aggiornamento e infine riconfigurare Defender per Endpoint per Linux nel dispositivo.
+
+## <a name="how-to-migrate-from-insiders-fast-to-production-channel"></a>Come eseguire la migrazione da Insiders-Fast al canale di produzione
+
+1. Disinstallare la versione "Insiders-Fast Channel" di MDE per macOS.
+
+    ``
+    sudo yum remove mdatp
+    ``
+
+1. Disabilitare mdE per Linux Insiders-Fast repo  ``
+    sudo yum repolist
+    ``
+
+    > [!NOTE]
+    > L'output dovrebbe mostrare "packages-microsoft-com-fast-prod".
+
+    ``
+    sudo yum-config-manager --disable packages-microsoft-com-fast-prod
+    ``
+1. Ridistribuire MDE per Linux usando il "canale di produzione".
+
 
 ## <a name="uninstallation"></a>Disinstallazione
 

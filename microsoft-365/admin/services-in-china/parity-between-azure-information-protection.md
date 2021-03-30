@@ -20,12 +20,12 @@ search.appverid:
 - GEA150
 description: Ulteriori informazioni su Azure Information Protection (AIP) per Office 365 gestito da 21Vianet e su come configurarlo per i clienti in Cina.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 77790249cbd544b2f11e9a16dd77bab297cac509
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: bddba69ecc8b7b80d2b2c7c48d820ec22d293362
+ms.sourcegitcommit: b56a8ff9bb496bf2bc1991000afca3d251f45b72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914319"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51418033"
 ---
 # <a name="azure-information-protection-support-for-office-365-operated-by-21vianet"></a>Supporto di Azure Information Protection per Office 365 gestito da 21Vianet
 
@@ -148,16 +148,24 @@ Le app AIP in Windows necessitano della chiave del Registro di sistema seguente 
 
 Installare lo scanner AIP locale per analizzare la rete e le condivisioni di contenuto alla ricerca di dati sensibili e applicare etichette di classificazione e protezione come configurato nei criteri dell'organizzazione.
 
-Quando si installa lo scanner e si gestiscono i processi di analisi del contenuto, utilizzare i cmdlet seguenti anziché l'interfaccia del portale di Azure utilizzata dalle offerte commerciali:<br><br>
+- Quando si creano e configurano le applicazioni di Azure AD per il  comando [Set-AIPAuthentication,](/powershell/module/azureinformationprotection/set-aipauthentication) nel riquadro Richiedi **autorizzazioni API** viene visualizzata la scheda API utilizzate dall'organizzazione anziché la scheda **API Microsoft.** Seleziona le **API utilizzate dall'organizzazione** per selezionare **Azure Rights Management Services.**
 
-| Cmdlet | Descrizione |
-|--|--|
-| [Add-AIPScannerRepository](/powershell/module/azureinformationprotection/add-aipscannerrepository) | Aggiunge un nuovo repository al processo di analisi del contenuto. |
-| [Get-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/get-aipscannercontentscanjob) | Ottiene informazioni dettagliate sul processo di analisi del contenuto. |
-| [Get-AIPScannerRepository](/powershell/module/azureinformationprotection/get-aipscannerrepository) | Ottiene i dettagli sugli archivi definiti per il processo di analisi del contenuto. |
-| [Remove-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/remove-aipscannercontentscanjob) | Elimina il processo di analisi del contenuto. |
-| [Remove-AIPScannerRepository](/powershell/module/azureinformationprotection/remove-aipscannerrepository) | Rimuove un repository dal processo di analisi del contenuto. |
-| [Set-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/set-aipscannercontentscanjob) | Definisce le impostazioni per il processo di analisi del contenuto. |
-| [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/set-aipscannerrepository) | Definisce le impostazioni per un archivio esistente nel processo di analisi del contenuto. |
+- Quando si installa lo scanner e si gestiscono i processi di analisi del contenuto, utilizzare i cmdlet seguenti anziché l'interfaccia del portale di Azure utilizzata dalle offerte commerciali:<br><br>
 
+    | Cmdlet | Descrizione |
+    |--|--|
+    | [Add-AIPScannerRepository](/powershell/module/azureinformationprotection/add-aipscannerrepository) | Aggiunge un nuovo repository al processo di analisi del contenuto. |
+    | [Get-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/get-aipscannercontentscanjob) | Ottiene informazioni dettagliate sul processo di analisi del contenuto. |
+    | [Get-AIPScannerRepository](/powershell/module/azureinformationprotection/get-aipscannerrepository) | Ottiene i dettagli sugli archivi definiti per il processo di analisi del contenuto. |
+    | [Remove-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/remove-aipscannercontentscanjob) | Elimina il processo di analisi del contenuto. |
+    | [Remove-AIPScannerRepository](/powershell/module/azureinformationprotection/remove-aipscannerrepository) | Rimuove un repository dal processo di analisi del contenuto. |
+    | [Set-AIPScannerContentScanJob](/powershell/module/azureinformationprotection/set-aipscannercontentscanjob) | Definisce le impostazioni per il processo di analisi del contenuto. |
+    | [Set-AIPScannerRepository](/powershell/module/azureinformationprotection/set-aipscannerrepository) | Definisce le impostazioni per un archivio esistente nel processo di analisi del contenuto. |
+    | | |
+
+> [!TIP]
+> Quando [si installa lo scanner,](/azure/information-protection/deploy-aip-scanner-configure-install#install-the-scanner)utilizzare lo stesso nome del cluster nel comando [Install-AIPScanner](/powershell/module/azureinformationprotection/install-aipscanner) per associare più nodi scanner allo stesso cluster. L'utilizzo dello stesso cluster per più nodi scanner consente a più scanner di lavorare insieme per eseguire le analisi.
+> 
+> Utilizzare il cmdlet [Get-AIPScannerConfiguration](/powershell/module/azureinformationprotection/get-aipscannerconfiguration) per restituire i dettagli sul cluster.
+> 
 Per ulteriori informazioni, vedere [Che cos'è lo scanner](/azure/information-protection/deploy-aip-scanner) di etichettatura unificato di Azure Information Protection? e Gestire i processi di analisi del contenuto solo tramite [PowerShell.](/azure/information-protection/deploy-aip-scanner-prereqs#use-powershell-with-a-disconnected-computer)

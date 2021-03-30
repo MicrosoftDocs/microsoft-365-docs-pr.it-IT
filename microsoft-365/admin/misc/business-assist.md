@@ -15,19 +15,19 @@ ms.custom:
 - AdminSurgePortfolio
 search.appverid:
 - MET150
-description: Informazioni sul programma Microsoft Business Assist e su come può aiutare l'organizzazione a migliorare la guida e l'utilizzo di Microsoft 365 per le aziende.
-ms.openlocfilehash: eb0309ae68bf4569d4cba8dd8501343304389e80
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+description: Informazioni sul programma Business Assist e su come può aiutare l'organizzazione a migliorare la guida e l'utilizzo di Microsoft 365 per le aziende.
+ms.openlocfilehash: 4531c841b4856e22b364906c180aa336cb8fd04a
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034297"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408526"
 ---
 # <a name="business-assist-for-microsoft-365"></a>Business Assist per Microsoft 365
 
 Ottenere il massimo dall'abbonamento con la consulenza di esperti esperti di piccole imprese.
 
-**Business Assist for Microsoft 365** è un servizio appositamente progettato per le aziende con meno di 5 utenti per offrire a te e ai tuoi dipendenti l'accesso 24 ore su 24 agli specialisti delle piccole imprese mantendo la crescita dell'azienda, dall'onboarding all'uso quotidiano.
+**Business Assist for Microsoft 365** è progettato per le aziende con meno di 5 utenti per offrire a te e ai tuoi dipendenti l'accesso 24 ore su 24 agli specialisti delle piccole imprese man man a che fare con la crescita dell'azienda, dall'onboarding all'uso quotidiano.
 
 ## <a name="business-assist-services"></a>Servizi di assistenza aziendale
 
@@ -38,7 +38,7 @@ Ottenere il massimo dall'abbonamento con la consulenza di esperti esperti di pic
 | | | |
 
 > [!div class="nextstepaction"]
-> [Acquista ora](https://go.microsoft.com/fwlink/p/?linkid=868433)
+> [Acquista ora](https://go.microsoft.com/fwlink/p/?linkid=2158423)
 
 ## <a name="eligibility-for-business-assist"></a>Idoneità per l'assistenza aziendale
 
@@ -58,4 +58,4 @@ Solo le organizzazioni idonee potranno acquistare Business Assist. L'assistenza 
 :::image type="content" source="../../media/projectgenie-purchase services.png" alt-text="Screeenshot: Acquistare assistenza aziendale dalla sezione Componenti aggiuntivi nella pagina Acquisto di servizi":::
 
 > [!div class="nextstepaction"]
-> [Acquista ora](https://go.microsoft.com/fwlink/p/?linkid=868433)
+> [Acquista ora](https://go.microsoft.com/fwlink/p/?linkid=2158423)

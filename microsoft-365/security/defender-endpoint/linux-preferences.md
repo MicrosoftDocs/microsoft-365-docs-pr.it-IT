@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ed28d3b5b7bafaea2d72b7a8c45f66bf69033bc2
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: a8595bae216911350d3f18fcceef729ef020a424
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187794"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408166"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-for-linux"></a>Impostare le preferenze per Microsoft Defender per Endpoint per Linux
 
@@ -61,6 +61,7 @@ La *sezione antivirusEngine* del profilo di configurazione viene utilizzata per 
 | **Chiave** | antivirusEngine |
 | **Data type** | Dizionario (preferenza annidata) |
 | **Comments** | Per una descrizione del contenuto del dizionario, vedi le sezioni seguenti. |
+|||
 
 #### <a name="enable--disable-real-time-protection"></a>Abilitare/disabilitare la protezione in tempo reale
 
@@ -71,6 +72,7 @@ Determina se la protezione in tempo reale (analizza i file quando vi si accede) 
 | **Chiave** | enableRealTimeProtection |
 | **Data type** | Booleano |
 | **Valori possibili** | true (impostazione predefinita) <br/> false |
+|||
 
 #### <a name="enable--disable-passive-mode"></a>Abilitare/disabilitare la modalità passiva
 
@@ -87,6 +89,7 @@ Determina se il motore antivirus viene eseguito in modalità passiva o meno. In 
 | **Data type** | Booleano |
 | **Valori possibili** | false (impostazione predefinita) <br/> true |
 | **Comments** | Disponibile in Defender per Endpoint versione 100.67.60 o successiva. |
+|||
 
 #### <a name="exclusion-merge-policy"></a>Criteri di unione esclusioni
 
@@ -98,6 +101,7 @@ Specifica i criteri di unione per le esclusioni. Può essere una combinazione di
 | **Data type** | Stringa |
 | **Valori possibili** | merge (impostazione predefinita) <br/> admin_only |
 | **Comments** | Disponibile in Defender per Endpoint versione 100.83.73 o successiva. |
+|||
 
 #### <a name="scan-exclusions"></a>Esclusioni analisi
 
@@ -108,6 +112,7 @@ Entità escluse dall'analisi. Le esclusioni possono essere specificate da percor
 | **Chiave** | esclusioni |
 | **Data type** | Dizionario (preferenza annidata) |
 | **Comments** | Per una descrizione del contenuto del dizionario, vedi le sezioni seguenti. |
+|||
 
 **Tipo di esclusione**
 
@@ -118,6 +123,7 @@ Specifica il tipo di contenuto escluso dall'analisi.
 | **Chiave** | $type |
 | **Data type** | Stringa |
 | **Valori possibili** | excludedPath <br/> excludedFileExtension <br/> excludedFileName |
+|||
 
 **Percorso del contenuto escluso**
 
@@ -129,6 +135,7 @@ Utilizzato per escludere il contenuto dall'analisi in base al percorso completo 
 | **Data type** | Stringa |
 | **Valori possibili** | percorsi validi |
 | **Comments** | Applicabile solo se *$type* *è excludedPath* |
+|||
 
 **Tipo di percorso (file/directory)**
 
@@ -140,6 +147,7 @@ Indica se la proprietà *path* fa riferimento a un file o a una directory.
 | **Data type** | Booleano |
 | **Valori possibili** | false (impostazione predefinita) <br/> true |
 | **Comments** | Applicabile solo se *$type* *è excludedPath* |
+|||
 
 **Estensione di file esclusa dall'analisi**
 
@@ -151,6 +159,7 @@ Usato per escludere il contenuto dall'analisi per estensione di file.
 | **Data type** | Stringa |
 | **Valori possibili** | estensioni di file valide |
 | **Comments** | Applicabile solo se *$type* *è excludedFileExtension* |
+|||
 
 **Processo escluso dall'analisi**
 
@@ -162,6 +171,7 @@ Specifica un processo per il quale tutte le attività di file vengono escluse da
 | **Data type** | Stringa |
 | **Valori possibili** | qualsiasi stringa |
 | **Comments** | Applicabile solo se *$type* *è excludedFileName* |
+|||
 
 #### <a name="allowed-threats"></a>Minacce consentite
 
@@ -171,6 +181,7 @@ Elenco delle minacce (identificate dal nome) che non sono bloccate dal prodotto 
 |:---|:---|
 | **Chiave** | allowedThreats |
 | **Data type** | Matrice di stringhe |
+|||
 
 #### <a name="disallowed-threat-actions"></a>Azioni di minaccia non consentite
 
@@ -182,6 +193,7 @@ Limita le azioni che l'utente locale di un dispositivo può intraprendere quando
 | **Data type** | Matrice di stringhe |
 | **Valori possibili** | allow (impedisce agli utenti di consentire minacce) <br/> restore (impedisce agli utenti di ripristinare le minacce dalla quarantena) |
 | **Comments** | Disponibile in Defender per Endpoint versione 100.83.73 o successiva. |
+|||
 
 #### <a name="threat-type-settings"></a>Impostazioni del tipo di minaccia
 
@@ -192,6 +204,7 @@ La *preferenza threatTypeSettings* nel motore antivirus viene utilizzata per con
 | **Chiave** | threatTypeSettings |
 | **Data type** | Dizionario (preferenza annidata) |
 | **Comments** | Per una descrizione del contenuto del dizionario, vedi le sezioni seguenti. |
+|||
 
 **Tipo di minaccia**
 
@@ -202,6 +215,7 @@ Tipo di minaccia per cui è configurato il comportamento.
 | **Chiave** | chiave |
 | **Data type** | Stringa |
 | **Valori possibili** | potentially_unwanted_application <br/> archive_bomb |
+|||
 
 **Procedura da seguire**
 
@@ -216,6 +230,7 @@ Azione da intraprendere quando si verifica una minaccia del tipo specificato nel
 | **Chiave** | valore |
 | **Data type** | Stringa |
 | **Valori possibili** | audit (impostazione predefinita) <br/> blocco <br/> off |
+|||
 
 #### <a name="threat-type-settings-merge-policy"></a>Criteri di unione delle impostazioni del tipo di minaccia
 
@@ -227,6 +242,7 @@ Specifica il criterio di unione per le impostazioni del tipo di minaccia. Può e
 | **Data type** | Stringa |
 | **Valori possibili** | merge (impostazione predefinita) <br/> admin_only |
 | **Comments** | Disponibile in Defender per Endpoint versione 100.83.73 o successiva. |
+|||
 
 #### <a name="antivirus-scan-history-retention-in-days"></a>Conservazione cronologia analisi antivirus (in giorni)
 
@@ -238,6 +254,7 @@ Specifica il numero di giorni in cui i risultati vengono conservati nella cronol
 | **Data type** | Stringa |
 | **Valori possibili** | 90 (impostazione predefinita). I valori consentiti sono da 1 giorno a 180 giorni. |
 | **Comments** | Disponibile in Defender per Endpoint versione 101.04.76 o successiva. |
+|||
 
 #### <a name="maximum-number-of-items-in-the-antivirus-scan-history"></a>Numero massimo di elementi nella cronologia dell'analisi antivirus
 
@@ -249,6 +266,7 @@ Specificare il numero massimo di voci da mantenere nella cronologia di analisi. 
 | **Data type** | Stringa |
 | **Valori possibili** | 10000 (impostazione predefinita). I valori consentiti sono da 5.000 elementi a 15.000 elementi. |
 | **Comments** | Disponibile in Defender per Endpoint versione 101.04.76 o successiva. |
+|||
 
 ### <a name="cloud-delivered-protection-preferences"></a>Preferenze di protezione per il cloud
 
@@ -259,6 +277,7 @@ La *voce cloudService* nel profilo di configurazione viene utilizzata per config
 | **Chiave** | cloudService |
 | **Data type** | Dizionario (preferenza annidata) |
 | **Comments** | Per una descrizione del contenuto del dizionario, vedi le sezioni seguenti. |
+|||
 
 #### <a name="enable--disable-cloud-delivered-protection"></a>Abilitare/disabilitare la protezione recapitata nel cloud
 
@@ -269,6 +288,7 @@ Determina se la protezione consegnata dal cloud è abilitata o meno nel disposit
 | **Chiave** | abilitati |
 | **Data type** | Booleano |
 | **Valori possibili** | true (impostazione predefinita) <br/> false |
+|||
 
 #### <a name="diagnostic-collection-level"></a>Livello raccolta diagnostica
 
@@ -279,6 +299,7 @@ I dati di diagnostica vengono usati per mantenere Defender per Endpoint sicuro e
 | **Chiave** | diagnosticLevel |
 | **Data type** | Stringa |
 | **Valori possibili** | facoltativo (impostazione predefinita) <br/> Obbligatorio |
+|||
 
 #### <a name="enable--disable-automatic-sample-submissions"></a>Abilitare/disabilitare gli invii di esempio automatici
 
@@ -293,6 +314,7 @@ Determina se i campioni sospetti (che potrebbero contenere minacce) vengono invi
 | **Chiave** | automaticSampleSubmissionConsent |
 | **Data type** | Stringa |
 | **Valori possibili** | nessuno <br/> safe (impostazione predefinita) <br/> all |
+|||
 
 #### <a name="enable--disable-automatic-security-intelligence-updates"></a>Abilitare/disabilitare gli aggiornamenti automatici delle funzionalità di intelligence per la sicurezza
 
@@ -303,6 +325,7 @@ Determina se gli aggiornamenti delle funzionalità di intelligence per la sicure
 | **Chiave** | automaticDefinitionUpdateEnabled |
 | **Data type** | Booleano |
 | **Valori possibili** | true (impostazione predefinita) <br/> false |
+|||
 
 ## <a name="recommended-configuration-profile"></a>Profilo di configurazione consigliato
 
@@ -339,6 +362,7 @@ Il profilo di configurazione seguente:
       "automaticDefinitionUpdateEnabled":true,
       "automaticSampleSubmissionConsent":"safe",
       "enabled":true
+      "proxy":"http://proxy.server:port/"
    }
 }
 ```
@@ -399,6 +423,7 @@ Il profilo di configurazione seguente contiene voci per tutte le impostazioni de
       "diagnosticLevel":"optional",
       "automaticSampleSubmissionConsent":"safe",
       "automaticDefinitionUpdateEnabled":true
+      "proxy": "http://proxy.server:port/"
    }
 }
 ```
@@ -412,6 +437,17 @@ python -m json.tool mdatp_managed.json
 ```
 
 Se json è ben formato, il comando precedente lo restituisce al terminale e restituisce un codice di uscita di `0` . In caso contrario, viene visualizzato un errore che descrive il problema e il comando restituisce un codice di uscita di `1` .
+
+## <a name="verifying-that-the-mdatp_managedjson-file-is-working-as-expected"></a>Verifica del funzionamento mdatp_managed.jsfile nel modo previsto
+Per verificare che /etc/opt/microsoft/mdatp/managed/mdatp_managed.jsfunzioni correttamente, dovrebbe essere visualizzato "[gestito]" accanto a queste impostazioni:  
+- cloud_enabled
+- cloud_automatic_sample_submission_consent
+- passice_mode_enabled
+- real_time_protection_enabled
+- automatic_definition_update_enabled
+
+> [!NOTE]
+> Per lmdatp_managed.jsè attivo, non è necessario riavviare il wdavdaemon.
 
 ## <a name="configuration-profile-deployment"></a>Distribuzione dei profili di configurazione
 

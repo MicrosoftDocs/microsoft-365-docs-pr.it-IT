@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Panoramica della connettività di rete nell'interfaccia di amministrazione di Microsoft 365 (anteprima)
-ms.openlocfilehash: 0bfcebff4ebbefdb77049119fef2402af1ca8f90
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2b80dd001bd2ee5d5725ea67c73aa34b4eb8816c
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926097"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408406"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Connettività di rete nell'interfaccia di amministrazione di Microsoft 365 (anteprima)
 
@@ -148,6 +148,10 @@ Nella scheda dettagli della pagina della posizione dell'ufficio vengono mostrati
 
 > [!div class="mx-imgBorder"]
 > ![Dettagli specifici della posizione](../media/m365-mac-perf/m365-mac-perf-locations-plan-details-all.png)
+
+## <a name="sharing-network-assessment-data-with-microsoft"></a>Condivisione dei dati di valutazione della rete con Microsoft
+
+Per impostazione predefinita, le valutazioni di rete per l'organizzazione e le informazioni dettagliate sulla rete sono condivise con i dipendenti Microsoft. Questo non include i dati personali del personale, ma solo le metriche specifiche di valutazione della rete e le informazioni dettagliate di rete mostrate nell'interfaccia di amministrazione per le posizioni dell'ufficio. Inoltre, non include i nomi delle località o gli indirizzi dell'ufficio, quindi è necessario indicare la città e l'ID di supporto dell'ufficio che si desidera discutere. Se questa opzione è disattivata, i tecnici Microsoft con cui si sta discutendo la connettività di rete non possono visualizzare queste informazioni. L'abilitazione di questa impostazione condivide solo i dati futuri a partire dal giorno successivo all'abilitazione.
 
 ## <a name="csv-import-for-lan-subnet-office-locations"></a>Csv Import for LAN subnet office locations
 

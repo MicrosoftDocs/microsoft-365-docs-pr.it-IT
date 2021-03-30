@@ -1,5 +1,5 @@
 ---
-title: Ricerca di dispositivi esposti
+title: Rilevare dispositivi esposti
 description: Informazioni su come è possibile utilizzare la gestione delle minacce e delle vulnerabilità per aiutare amministratori della sicurezza, amministratori IT e SecOps a collaborare.
 keywords: mdatp-tvm scenarios, mdatp, tvm, tvm scenarios, reduce threat & vulnerability exposure, reduce threat and vulnerability, improve security configuration, increase Microsoft Secure Score for Devices, increase threat & vulnerability Microsoft Secure Score for Devices, Microsoft Secure Score for Devices, exposure score, security controls
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9af7464d9cae06dc53abb019aa0b189d6e72e749
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 99e59005bc01a113567e64c921ddcdc1d66785d2
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060829"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408292"
 ---
 # <a name="hunt-for-exposed-devices---threat-and-vulnerability-management"></a>Ricerca di dispositivi esposti - gestione delle minacce e delle vulnerabilità
 
@@ -31,7 +31,7 @@ ms.locfileid: "51060829"
 
 **Si applica a:**
 
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Gestione di minacce e vulnerabilità](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -43,13 +43,13 @@ La ricerca avanzata è uno strumento di ricerca delle minacce basato sulla query
 
 ### <a name="schema-tables"></a>Tabelle dello schema
 
-- [DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md) - Inventario del software installato nei dispositivi, incluse le informazioni sulla versione e lo stato di fine del supporto
+- [DeviceTvmSoftwareInventory](advanced-hunting-devicetvmsoftwareinventory-table.md) - Inventario del software installato nei dispositivi, incluse le informazioni sulla versione e lo stato di fine del supporto.
 
-- [DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md) - Vulnerabilità software trovate nei dispositivi e l'elenco degli aggiornamenti della sicurezza disponibili che affrontano ogni vulnerabilità
+- [DeviceTvmSoftwareVulnerabilities](advanced-hunting-devicetvmsoftwarevulnerabilities-table.md) - Vulnerabilità software trovate nei dispositivi e l'elenco degli aggiornamenti della sicurezza disponibili che affrontano ogni vulnerabilità.
 
-- [DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md) - Knowledge Base di vulnerabilità divulgate pubblicamente, incluso se il codice di exploit è pubblicamente disponibile
+- [DeviceTvmSoftwareVulnerabilitiesKB](advanced-hunting-devicetvmsoftwarevulnerabilitieskb-table.md) - Knowledge base di vulnerabilità divulgate pubblicamente, incluso se il codice di exploit è pubblicamente disponibile.
 
-- [DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) - Eventi di valutazione della gestione delle minacce e delle vulnerabilità, che indicano lo stato di varie configurazioni di sicurezza nei dispositivi
+- [DeviceTvmSecureConfigurationAssessment](advanced-hunting-devicetvmsecureconfigurationassessment-table.md) - Eventi di valutazione della gestione delle minacce e delle vulnerabilità, che indicano lo stato di varie configurazioni di sicurezza nei dispositivi.
 
 - [DeviceTvmSecureConfigurationAssessmentKB](advanced-hunting-devicetvmsecureconfigurationassessmentkb-table.md) - Knowledge Base di varie configurazioni di sicurezza utilizzate da Threat & Vulnerability Management per valutare i dispositivi; include mapping a diversi standard e benchmark
 
@@ -81,5 +81,5 @@ DeviceName=any(DeviceName) by DeviceId, AlertId
 - [Consigli sulla sicurezza](tvm-security-recommendation.md)
 - [API](next-gen-threat-and-vuln-mgt.md#apis)
 - [Configurare l'accesso ai dati per i ruoli di gestione delle minacce e delle vulnerabilità](user-roles.md#create-roles-and-assign-the-role-to-an-azure-active-directory-group)
-- [Panoramica della ricerca avanzata](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
+- [Panoramica della rilevazione avanzata](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
 - [Tutte le tabelle di ricerca avanzate](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference.md)

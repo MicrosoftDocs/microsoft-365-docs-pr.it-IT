@@ -16,17 +16,17 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 684025441c8400775f469515df1bcd0423d6460b
-ms.sourcegitcommit: 94fa3e57fa6505551d84ae7b458150dceff30db7
+ms.openlocfilehash: bcb96ea29649bf3525b2ffcf6d5cbb5d299bacf3
+ms.sourcegitcommit: b56a8ff9bb496bf2bc1991000afca3d251f45b72
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51394747"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51418117"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configurare le funzionalità avanzate in Defender for Endpoint
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
@@ -72,6 +72,9 @@ Quando questa impostazione è attivata, gli avvisi vengono correlati in eventi i
 >La modifica di questa impostazione influisce solo sulle correlazioni degli avvisi futuri.
 
 
+## <a name="enable-edr-in-block-mode"></a>Abilitare EDR in modalità blocco
+Il rilevamento e la risposta degli endpoint (EDR) in modalità blocco forniscono protezione da artefatti dannosi, anche quando Microsoft Defender Antivirus è in esecuzione in modalità passiva. Se attivato, EDR in modalità blocco blocca artefatti o comportamenti dannosi rilevati in un dispositivo. EDR in modalità blocco funziona dietro le quinte per correggere gli artefatti dannosi rilevati dopo la violazione.
+
 ## <a name="autoresolve-remediated-alerts"></a>Risolvere in modo automatico gli avvisi corretti
 
 Per i tenant creati in Windows 10, versione 1809, la funzionalità di analisi e correzione automatizzata è configurata per impostazione predefinita per risolvere gli avvisi in cui lo stato del risultato dell'analisi automatica è "Nessuna minaccia trovata" o "Correzione".  Se non si desidera che gli avvisi vengono risolti automaticamente, è necessario disattivare manualmente la funzionalità.
@@ -115,6 +118,14 @@ Per ulteriori informazioni, vedere [Manage indicators.](manage-indicators.md)
 
 > [!NOTE]
 > La protezione di rete sfrutta i servizi di reputazione che elaborano le richieste in posizioni che potrebbero essere esterne alla posizione selezionata per i dati di Defender for Endpoint.
+
+
+## <a name="tamper-protection"></a>Protezione anti-manomissione
+Durante alcuni tipi di attacchi informatici, i malinti tentano di disabilitare le funzionalità di sicurezza, ad esempio la protezione antivirus, nei computer. Gli utenti malintenzionati desiderano disabilitare le funzionalità di sicurezza per ottenere un accesso più semplice ai dati, installare malware o sfruttare in altro modo i dati, l'identità e i dispositivi.
+
+La protezione anti-manomissione blocca essenzialmente Microsoft Defender Antivirus e impedisce che le impostazioni di sicurezza vengano modificate tramite app e metodi.
+
+Mantenere attivata la protezione anti-manomissione per evitare modifiche indesiderate alla soluzione di sicurezza e alle relative funzionalità essenziali.
 
 ## <a name="show-user-details"></a>Mostra dettagli utente
 
