@@ -23,12 +23,12 @@ search.appverid:
 ms.assetid: 8f0454b2-f51a-4d9c-bcde-2c48e41621c6
 description: Scopri come configurare l'autenticazione a più fattori per l'organizzazione.
 monikerRange: o365-worldwide
-ms.openlocfilehash: 54c862d8f7c25472d84557e177a9107d2c14d846
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: de5f8ffbc5c26015f6ff0eb2863b622273f96ca1
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914463"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408514"
 ---
 # <a name="set-up-multi-factor-authentication"></a>Configurare l'autenticazione a più fattori
 
@@ -102,8 +102,8 @@ Se l'autenticazione a più fattori per utente è stata attivata in precedenza, �
 - [Come eseguire l'accesso dopo la registrazione](https://support.microsoft.com/office/2b856342-170a-438e-9a4f-3c092394d3cb)
 - [Come cambiare il metodo di verifica aggiuntivo](https://support.microsoft.com/office/956ec8d0-7081-4518-a701-f8414cc20831)
 
-## <a name="related-topics"></a>Argomenti correlati
+## <a name="related-content"></a>Contenuto correlato
 
-[Video: Attivare l'autenticazione a più fattori](../../business-video/turn-on-mfa.md)
+[Attivare l'autenticazione a più fattori](../../business-video/turn-on-mfa.md) (video)
 
-[Video: Attivare l'autenticazione a più fattori per il telefono](../../business-video/set-up-mfa.md)
+[Attivare l'autenticazione a più fattori per il telefono](../../business-video/set-up-mfa.md) (video)
