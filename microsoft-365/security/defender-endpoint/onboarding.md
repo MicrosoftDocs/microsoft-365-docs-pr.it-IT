@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 56645553c43289995012d53d7caf879874e65c8a
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 56a62ca4ebbd140f507d1735c663924014ca4771
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186930"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445733"
 ---
 # <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>Onboard al servizio Microsoft Defender for Endpoint
 
@@ -40,7 +40,7 @@ Informazioni sulle varie fasi della distribuzione di Microsoft Defender for Endp
 
 La distribuzione di Defender per Endpoint è un processo in tre fasi:
 
-| [![fase di distribuzione - preparazione](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[Fase 1: preparare](prepare-deployment.md) | [![fase di distribuzione - installazione](images/phase-diagrams/setup.png)](production-deployment.md)<br>[Fase 2: installazione](production-deployment.md) | ![fase di distribuzione - onboard](images/phase-diagrams/onboard.png)<br>Fase 3: onboard |
+| [![fase di distribuzione - preparazione](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[Fase 1: preparazione](prepare-deployment.md) | [![fase di distribuzione - installazione](images/phase-diagrams/setup.png)](production-deployment.md)<br>[Fase 2: configurazione](production-deployment.md) | ![fase di distribuzione - onboard](images/phase-diagrams/onboard.png)<br>Fase 3: onboarding |
 | ----- | ----- | ----- |
 | | |*Sei qui!*|
 
@@ -86,7 +86,7 @@ Dopo l'onboarding degli endpoint, configurerai le varie funzionalità, ad esempi
 In questa guida alla distribuzione verrà illustrato come usare due strumenti di distribuzione per eseguire l'onboarding degli endpoint e come configurare le funzionalità.
 
 Gli strumenti nelle distribuzioni di esempio sono:
-- [Onboarding con Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
+- [Utilizzo di Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
 - [Onboarding con Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
 
 Usando gli strumenti di distribuzione menzionati in precedenza, sarai quindi guidato nella configurazione delle funzionalità di Defender for Endpoint seguenti:
@@ -95,5 +95,6 @@ Usando gli strumenti di distribuzione menzionati in precedenza, sarai quindi gui
 - Configurazione della riduzione della superficie di attacco
 
 ## <a name="related-topics"></a>Argomenti correlati
-- [Onboarding con Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
+- [Utilizzo di Microsoft Endpoint Configuration Manager](onboarding-endpoint-configuration-manager.md)
 - [Onboarding con Microsoft Endpoint Manager](onboarding-endpoint-manager.md)
+- [Sicurezza documenti in Microsoft 365 E5](../office-365-security/safe-docs.md)

@@ -1,6 +1,6 @@
 ---
-title: Aree geografiche e lingue supportate
-description: Aree geografiche e lingue supportate da Microsoft Managed Desktop
+title: Aree geografiche supportate
+description: Aree geografiche supportate da Microsoft Managed Desktop
 keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
@@ -12,25 +12,22 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 5fbf18247626bdfcfe5dcb04c8ba892ffa7a140f
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 99f44398bc95958ca890ddcd4203b50ff95034b4
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163472"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445311"
 ---
-# <a name="microsoft-managed-desktop-supported-regions-and-languages"></a>Lingue e aree geografiche supportate da Microsoft Managed Desktop
+# <a name="microsoft-managed-desktop-supported-regions"></a>Aree supportate da Microsoft Managed Desktop
 
-In questo articolo vengono fornite informazioni dettagliate sulle aree geografiche e le lingue supportate da Microsoft Managed Desktop e sulle aree geografiche in cui è possibile utilizzarlo.
+In questo articolo vengono fornite informazioni dettagliate sulle aree geografiche in cui è possibile utilizzare Microsoft Managed Desktop e dove è supportato. Per ulteriori informazioni sulle lingue supportate da Microsoft Managed Desktop per l'esperienza utente, vedi [Localizzare i dispositivi per gli utenti.](../get-started/localization.md)
 
-## <a name="supported-languages"></a>Lingue supportate
+Puoi comunque usare i dispositivi gestiti al di fuori di queste aree senza interrompere il servizio Microsoft Managed Desktop. Ad esempio, un dipendente con sede nel Regno Unito può lavorare in modo sicuro e ricevere aggiornamenti sul dispositivo gestito mentre viaggia in Asia, Europa o Sud America.
 
-L'inglese è l'unica lingua disponibile per gli utenti di Microsoft Managed Desktop. Questo criterio include tutte le interfacce utente sia per gli utenti che per gli amministratori e tutte le interazioni con il supporto [dell'amministratore](../working-with-managed-desktop/admin-support.md) e [degli utenti.](../working-with-managed-desktop/end-user-support.md)
+Per ulteriori informazioni sulle lingue supportate da Microsoft Managed Desktop per le esperienze utente e amministratore, vedere [Localizzare l'esperienza utente.](../get-started/localization.md)
 
-
-Puoi comunque usare dispositivi gestiti al di fuori delle aree geografiche di lingua inglese senza alcuna interruzione del servizio Microsoft Managed Desktop. Ad esempio, un dipendente con sede nel Regno Unito può lavorare in modo sicuro e ricevere aggiornamenti sul dispositivo gestito mentre viaggia in Asia, Europa o Sud America. 
-
-Per ulteriori informazioni sul supporto degli utenti con Microsoft Managed Desktop, vedere [Support for Microsoft Managed Desktop](./support.md).
+Per ulteriori informazioni sul supporto degli utenti con Microsoft Managed Desktop, vedere [Support for Microsoft Managed Desktop](support.md).
 
 ## <a name="availability-of-the-service"></a>Disponibilità del servizio
 
@@ -51,4 +48,3 @@ Le organizzazioni nei seguenti paesi possono sottoscrivere Microsoft Managed Des
 - Australia
 - Nuova Zelanda
 
-Sia gli utenti che gli amministratori di queste aree geografiche devono usare l'inglese per i dispositivi e gli strumenti di gestione.

@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Riepilogo: pre-lavorare quando si esegue il passaggio da Microsoft Cloud Germania (Microsoft Cloud Deutschland) ai servizi di Office 365 nella nuova area data center tedesca.'
-ms.openlocfilehash: d05b3fc06c4530a69c49962b0d2b793353033c99
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: fb352c17d9868cf5c42034e198be63b6e0543dbb
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165610"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445603"
 ---
 # <a name="pre-work-for-the-migration-from-microsoft-cloud-deutschland"></a>Pre-lavoro per la migrazione da Microsoft Cloud Deutschland
 
@@ -113,11 +113,14 @@ Leggere e applicare i [passaggi di migrazione adfs](ms-cloud-germany-transition-
 ### <a name="exchange-online-hybrid-configuration"></a>Configurazione ibrida di Exchange Online
 
 **Si applica a:** Tutti i clienti che utilizzano una configurazione ibrida di Exchange attiva con server Exchange locali<br>
-**Se applicato:** ogni volta che inizia la fase 5
+**Se applicata:** ogni volta che inizia la fase 5
+
+I clienti aziendali con una distribuzione ibrida di Exchange Online e un Exchange Server locale eseguono la procedura guidata di configurazione ibrida (HCW) per gestire e stabilire la configurazione ibrida. Durante la transizione da Microsoft Cloud Deutschland all'area di Office 365 Germany, l'amministratore deve eseguire di nuovo la build più recente di HCW in modalità "Office 365 Germany" prima dell'inizio della migrazione di Exchange (fase 5). Quindi, eseguire di nuovo HCW in modalità "Office 365 Worldwide" al termine della fase 5 per finalizzare la distribuzione locale con le impostazioni dell'area geografica di Office 365 Germany.
 
 | Step(s) | Descrizione | Impatto |
 |:-------|:-------|:-------|
-| Eseguire l'aggiornamento alla versione più recente della procedura guidata di configurazione ibrida (HCW) ogni volta che il tenant entra nella fase di migrazione 5. È possibile avviare questa attività subito dopo aver ricevuto la notifica del Centro messaggi che indica che la migrazione del tenant di Office 365 è iniziata (fase 1).<br>L'amministratore di Exchange deve disinstallare le versioni precedenti di HCW, quindi installare ed eseguire la versione più recente (17.0.5378.0 o successiva) da [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) . |<ul><li>La versione più recente di HCW include gli aggiornamenti necessari per supportare la migrazione di Exchange Online dall'istanza di Microsoft Cloud Deutschland ai servizi globali di Office 365.</li><li> Gli aggiornamenti includono modifiche alle impostazioni dei certificati locali per il connettore _di_ invio e il _connettore di ricezione._</li><li>Quando si esegue HCW prima della fase 5, selezionare "Office 365 Germany" nella seconda pagina di HCW in _Office 365 Exchange Online_ nella casella di riepilogo sotto L'organizzazione di Office _365_ è ospitata da</li><li>**NOTA:** al termine della migrazione del tenant di Office 365 dopo la fase 9, si rimuoverà e si installerà di nuovo HCW, questa volta utilizzando le impostazioni "Office 365 Worldwide" nella seconda pagina della HCW per completare la configurazione ibrida con il servizio globale Exchange Online.</li></ul>|La mancata esecuzione di HCW prima della fase 5 (migrazione di Exchange) può causare un errore del servizio o del client. |
+| (Pre-Stage 5) - Eseguire di nuovo HCW con le impostazioni di Office 365 Germany <br><br> <i>È possibile avviare questa attività subito dopo aver ricevuto la notifica del Centro messaggi che indica che la migrazione del tenant di Office 365 è iniziata (fase 1).</i>| La disinstallazione e la riesercizione di HCW (17.0.5378.0 o versione successiva) da prima della fase 5 garantiranno che la configurazione locale sia pronta per inviare e ricevere posta sia con gli utenti di Microsoft Cloud Deutschland che con gli utenti migrati nell'area [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) di Office 365 Germany. <p><li> In HCW, per la casella di riepilogo sotto L'organizzazione di **Office 365** è ospitata da , selezionare Office **365 Germany.** | Se non si riesce a completare questa attività prima dell'inizio della fase 5 [migrazione di Exchange], potrebbero verificarsi rapporti di mancato recapito per la posta instradata tra la distribuzione di Exchange locale e Office 365.  
+| (Post-Stage 5) - Rieseguono HCW con le impostazioni di Office 365 Worldwide <br><br> <i>È possibile avviare questa attività dopo aver ricevuto la notifica del Centro messaggi che indica che la migrazione di Exchange è stata completata (fase 5).</i>| La disinstallazione e la rieseguono di HCW dopo la fase 5 reimpostano la configurazione locale per la configurazione ibrida solo con [https://aka.ms/hybridwizard](https://aka.ms/hybridwizard) Office 365 globale. <p><li> Nella casella di riepilogo sotto **L'organizzazione di Office 365** è ospitata da , selezionare **Office 365 Worldwide**. | La mancata esecuzione di questa attività prima della fase 9 [migrazione completata] può comportare rapporti di mancato recapito per la posta instradata tra la distribuzione di Exchange locale e Office 365.  
 | Stabilire AuthServer locale che punta al servizio token di sicurezza globale (STS) per l'autenticazione | In questo modo si garantisce che le richieste di autenticazione per le richieste di disponibilità di Exchange provenienti da utenti in stato di migrazione che hanno come destinazione l'ambiente locale ibrido siano autenticate per accedere al servizio locale. Analogamente, in questo modo si garantirà l'autenticazione delle richieste dagli endpoint locali agli endpoint dei servizi globali di Office 365. | Al termine della migrazione di Azure AD (fase 2), l'amministratore della topologia locale di Exchange (ibrido) deve aggiungere un nuovo endpoint del servizio di autenticazione per i servizi globali di Office 365. Con questo comando di Exchange PowerShell, sostituire `<TenantID>` con l'ID tenant dell'organizzazione trovato nel portale di Azure in Azure Active Directory.<br>`New-AuthServer GlobalMicrosoftSts -AuthMetadataUrl https://accounts.accesscontrol.windows.net/<TenantId>/metadata/json/1`<br> Se non si completa questa attività, le richieste di disponibilità ibride potrebbero non fornire informazioni agli utenti delle cassette postali migrati da Microsoft Cloud Deutschland ai servizi di Office 365.  |
 ||||
 

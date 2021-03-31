@@ -17,19 +17,19 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/16/2020
 ms.technology: mde
-ms.openlocfilehash: 167db9b5da841528e95f167b3af6a840b6c71eb4
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: bf1e706562db06064409cb7cf11441d048ef8db6
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165562"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445287"
 ---
 # <a name="onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices"></a>Onboarding di dispositivi VDI (Virtual Desktop Infrastructure) non persistenti
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Dispositivi VDI (Virtual Desktop Infrastructure)
 - Windows 10, Windows Server 2019, Windows Server 2008R2/2012R2/2016
@@ -48,8 +48,11 @@ Quando si esegue l'onboarding di VDI, potrebbero verificarsi problemi associati.
 
 I dispositivi VDI possono essere visualizzati in Defender for Endpoint Portal come:
 
-- Voce singola per ogni dispositivo.  
-Si noti che in  questo caso, è necessario configurare lo stesso nome del dispositivo al momento della creazione della sessione, ad esempio utilizzando un file di risposta automatico.
+- Voce singola per ogni dispositivo.
+
+  > [!NOTE]
+  > In questo caso, è *necessario* configurare lo stesso nome del dispositivo al momento della creazione della sessione, ad esempio utilizzando un file di risposta automatico.
+
 - Più voci per ogni dispositivo- una per ogni sessione.
 
 I passaggi seguenti ti guideranno nell'onboarding dei dispositivi VDI e indicheranno i passaggi per una o più voci.
@@ -84,14 +87,15 @@ I passaggi seguenti ti guideranno nell'onboarding dei dispositivi VDI e indicher
    > [!NOTE]
    > I Criteri di gruppo di dominio possono essere utilizzati anche per l'onboarding di dispositivi VDI non persistenti.
 
-4. A seconda del metodo che vuoi implementare, segui la procedura appropriata: <br>
-   **Per una singola voce per ogni dispositivo:**<br>
+4. A seconda del metodo che vuoi implementare, segui la procedura appropriata:
+
+   - Per una singola voce per ogni dispositivo:
    
-   Seleziona la **scheda Script di PowerShell,** quindi fai clic su **Aggiungi** (Esplora risorse si aprirà direttamente nel percorso in cui hai copiato lo script di onboarding in precedenza). Passare a script di PowerShell di `Onboard-NonPersistentMachine.ps1` onboarding.
+     Seleziona la **scheda Script di PowerShell,** quindi fai clic su **Aggiungi** (Esplora risorse si aprirà direttamente nel percorso in cui hai copiato lo script di onboarding in precedenza). Passare a script di PowerShell di `Onboard-NonPersistentMachine.ps1` onboarding. Non è necessario specificare l'altro file, perché verrà attivato automaticamente.
    
-   **Per più voci per ogni dispositivo:**
+   - Per più voci per ogni dispositivo:
    
-   Seleziona la **scheda Script,** quindi fai clic su **Aggiungi** (Esplora risorse si aprirà direttamente nel percorso in cui hai copiato lo script di onboarding in precedenza). Passare allo script di onboarding bash `WindowsDefenderATPOnboardingScript.cmd` .
+     Seleziona la **scheda Script,** quindi fai clic su **Aggiungi** (Esplora risorse si aprirà direttamente nel percorso in cui hai copiato lo script di onboarding in precedenza). Passare allo script di onboarding bash `WindowsDefenderATPOnboardingScript.cmd` .
 
 5. Testare la soluzione:
 
@@ -103,8 +107,15 @@ I passaggi seguenti ti guideranno nell'onboarding dei dispositivi VDI e indicher
 
    1. Accedere al dispositivo con un altro utente.
       
-   1. **Per una singola voce per ogni dispositivo:** controlla una sola voce in Microsoft Defender Security Center.<br>
-      **Per più voci per ogni dispositivo:** controlla più voci in Microsoft Defender Security Center.
+   1. A seconda del metodo che vuoi implementare, segui la procedura appropriata:
+   
+      - Per una singola voce per ogni dispositivo: 
+    
+        Controlla solo una voce in Microsoft Defender Security Center.
+
+      - Per più voci per ogni dispositivo: 
+       
+        Controllare più voci in Microsoft Defender Security Center.
 
 6. Fare **clic su Elenco** dispositivi nel riquadro di spostamento.
 
@@ -118,14 +129,14 @@ I passaggi seguenti ti guideranno nell'onboarding dei dispositivi VDI e indicher
 
 1. Impostare il valore del Registro di sistema su:
 
-    ```reg
+    ```console
    [HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging]
     "VDI"="NonPersistent"
     ```
 
     o utilizzando la riga di comando:
 
-    ```
+    ```console
     reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection\DeviceTagging" /v VDI /t REG_SZ /d "NonPersistent" /f
     ```
 

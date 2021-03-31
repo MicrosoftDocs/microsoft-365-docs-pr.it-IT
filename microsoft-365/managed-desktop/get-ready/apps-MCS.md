@@ -1,20 +1,23 @@
 ---
 title: Lavorare con Microsoft Consulting Services
-description: preparazione e passaggi da seguire per lavorare con MCS per creare un pacchetto delle app
-keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione, app, MCS, creazione di pacchetti
+description: Preparazione e passaggi da seguire per lavorare con MCS per creare un pacchetto delle app
+keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
+f1.keywords:
+- NOCSH
+ms.author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
-ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 04b0c7905c83be2afa46abcfb2d4bb5cd9735e06
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: 1441ca3305a5f3e5a83ddd5e1547812f08d7d96b
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909227"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445697"
 ---
 # <a name="working-with-microsoft-consulting-services"></a>Lavorare con Microsoft Consulting Services
 
@@ -31,7 +34,7 @@ Per usare il pacchetto dell'app MCS, **devi fornire questi elementi:**
 **MCS si occuperà di queste azioni:**
 
 - Verifica se l'app è proibita o limitata nell'ambiente Microsoft Managed Desktop.
-- Test di installazione, avvio e disinstallazione dell'app per garantire la compatibilità con Windows 10. Se MCS rileva un problema di compatibilità, l'app verrà consegnata al programma [Desktop App Assure](/fasttrack/win-10-desktop-app-assure) per la correzione.
+- Test di installazione, avvio e disinstallazione dell'app per garantire la compatibilità con Windows 10. Se MCS rileva un problema di compatibilità, l'app verrà consegnata al [programma App Assure](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assure) per la correzione.
 - Creare il pacchetto dell'app per le specifiche e quindi testare la distribuzione dell'app tramite Microsoft Intune.
 
 ## <a name="app-delivery-schedule"></a>Pianificazione recapito app

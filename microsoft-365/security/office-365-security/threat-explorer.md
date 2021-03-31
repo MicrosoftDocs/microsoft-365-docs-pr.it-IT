@@ -19,12 +19,12 @@ description: Usa Esplora risorse e i rilevamenti in tempo reale nel Centro sicur
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: f48bad9d8ae6fc6d68ae27a655f4bdfdefd819d0
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 47bb14b90a94d0c8b542b12268bd6d5ed6e5c05a
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206173"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445721"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer e rilevamenti in tempo reale
 
@@ -58,7 +58,7 @@ Con questo report, è possibile:
 Oggi, se si passa da un avviso a Esplora minacce, viene aperta una visualizzazione filtrata all'interno di Esplora risorse, con la visualizzazione filtrata in base all'ID dei criteri di avviso (l'ID criterio è un identificatore univoco per un criterio di avviso).
 Stiamo rendendo questa integrazione più pertinente introducendo l'ID avviso (vedi un esempio di ID avviso di seguito) in Threat Explorer e rilevamenti in tempo reale in modo da visualizzare i messaggi pertinenti per l'avviso specifico, nonché un conteggio dei messaggi di posta elettronica. Sarà inoltre possibile vedere se un messaggio fa parte di un avviso e passare da tale messaggio all'avviso specifico.  
 
-L'ID avviso è disponibile all'interno dell'URL quando si visualizza un singolo avviso. un esempio è `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1`
+L'ID avviso è disponibile all'interno dell'URL quando si visualizza un singolo avviso. un esempio è `https://protection.office.com/viewalerts?id=372c9b5b-a6c3-5847-fa00-08d8abb04ef1` .
 
 > [!div class="mx-imgBorder"]
 > ![Filtro per l'ID avviso](../../media/AlertID-Filter.png)
@@ -177,7 +177,6 @@ Attualmente, viene visualizzata la posizione di recapito nella griglia della pos
 > - Saranno disponibili nuovi campi e valori per le **tecnologie di rilevamento** e azioni **aggiuntive** (in particolare per gli scenari ZAP). Sarà necessario valutare le query salvate e le query rilevate esistenti per assicurarsi che funzionino con i nuovi valori.
 
 > [!div class="mx-imgBorder"]
-
 > ![Azioni aggiuntive in Esplora risorse](../../media/Additional_Actions.png)
 
 ### <a name="system-overrides"></a>Sostituzioni di sistema
@@ -185,9 +184,13 @@ Attualmente, viene visualizzata la posizione di recapito nella griglia della pos
 *Le sostituzioni* di sistema consentono di creare eccezioni al percorso di recapito previsto di un messaggio. La posizione di recapito fornita dal sistema viene sovrascritta in base alle minacce e ad altri rilevamenti identificati dallo stack di filtro. Le sostituzioni di sistema possono essere impostate tramite criteri tenant o utente per recapitare il messaggio come suggerito dal criterio. Le sostituzioni possono identificare il recapito involontario di messaggi dannosi a causa di lacune nelle configurazioni, ad esempio un criterio Mittente sicuro troppo ampio impostato da un utente. Questi valori di override possono essere:
 
 - Consentito dai criteri utente: un utente crea criteri a livello di cassetta postale per consentire domini o mittenti.
+
 - Bloccato dai criteri utente: un utente crea criteri a livello di casella di posta per bloccare domini o mittenti.
+
 - Consentito dai criteri dell'organizzazione: i team di sicurezza dell'organizzazione impostano criteri o regole del flusso di posta di Exchange (note anche come regole di trasporto) per consentire a mittenti e domini per gli utenti dell'organizzazione. Può essere per un set di utenti o per l'intera organizzazione.
+
 - Bloccato dai criteri dell'organizzazione: i team di sicurezza dell'organizzazione impostano criteri o regole del flusso di posta per bloccare mittenti, domini, lingue dei messaggi o INDIRIZZI IP di origine per gli utenti dell'organizzazione. Può essere applicato a un set di utenti o all'intera organizzazione.
+
 - Estensione di file bloccata dai criteri dell'organizzazione: il team di sicurezza di un'organizzazione blocca un'estensione di file tramite le impostazioni dei criteri antimalware. Questi valori verranno ora visualizzati nei dettagli della posta elettronica per facilitare le indagini. I team di Secops possono anche usare la funzionalità di filtro avanzato per filtrare le estensioni di file bloccate.
 
 [![Sostituzioni di sistema in Esplora risorse](../../media/System_Overrides.png)](../../media/System_Overrides.png#lightbox)
@@ -233,7 +236,8 @@ Per migliorare il processo di ricerca, abbiamo aggiornato Threat Explorer e i ri
 > [!IMPORTANT]
 > Il filtro e l'ordinamento in base ai tag utente sono attualmente in anteprima pubblica. Questa funzionalità può essere sostanzialmente modificata prima che venga rilasciata commercialmente. Microsoft non fa alcuna garanzia, espressa o implicita, rispetto alle informazioni fornite.
 
-![Colonna Tag in Esplora risorse](../../media/threat-explorer-tags.png)
+> [!div class="mx-imgBorder"]
+> ![Colonna Tag in Esplora risorse](../../media/threat-explorer-tags.png)
 
 ### <a name="timezone-improvements"></a>Miglioramenti relativi al fuso orario
 
@@ -282,21 +286,20 @@ Come parte dell'arricchimento dei dati, sarà possibile visualizzare tutte le di
 
 Sarà possibile visualizzare sia il GUID che il nome delle regole di trasporto applicate al messaggio. Sarà possibile cercare i messaggi utilizzando il nome della regola di trasporto. Si tratta di una ricerca "Contiene", il che significa che è possibile eseguire anche ricerche parziali.
 
-#### <a name="important-note"></a>Nota importante:
-
-La ricerca ETR e la disponibilità del nome dipendono dal ruolo specifico assegnato all'utente. Per visualizzare i nomi ETR e la ricerca, è necessario disporre di uno dei ruoli/autorizzazioni seguenti. Se non è stato assegnato alcuno di questi ruoli, non è possibile visualizzare i nomi delle regole di trasporto o cercare i messaggi utilizzando i nomi ETR. Tuttavia, potresti visualizzare le informazioni sull'etichetta ETR e sul GUID nei Dettagli e-mail. Altre esperienze di visualizzazione dei record nelle griglie di posta elettronica, nei riquadri a comparsa di posta elettronica, nei filtri e nell'esportazione non sono interessate.
-
-- Solo EXO - Prevenzione della perdita di dati: Tutti
-- Solo EXO - O365SupportViewConfig: All
-- Microsoft Azure Active Directory o EXO - Amministratore della sicurezza: Tutti
-- AAD o EXO - Security Reader: All
-- Solo EXO - Regole di trasporto: Tutte
-- Solo EXO - Configurazione View-Only: Tutti
-
-All'interno della griglia di posta elettronica, del riquadro a comparsa Dettagli e del file CSV esportato, gli ETF vengono presentati con un nome/GUID, come illustrato di seguito.
-
-> [!div class="mx-imgBorder"]
-> ![Regole di trasporto di Exchange](../../media/ETR_Details.png)
+> [!IMPORTANT]
+> La ricerca ETR e la disponibilità del nome dipendono dal ruolo specifico assegnato all'utente. Per visualizzare i nomi ETR e la ricerca, è necessario disporre di uno dei ruoli/autorizzazioni seguenti. Se non è stato assegnato alcuno di questi ruoli, non è possibile visualizzare i nomi delle regole di trasporto o cercare i messaggi utilizzando i nomi ETR. Tuttavia, potresti visualizzare le informazioni sull'etichetta ETR e sul GUID nei Dettagli e-mail. Altre esperienze di visualizzazione dei record nelle griglie di posta elettronica, nei riquadri a comparsa di posta elettronica, nei filtri e nell'esportazione non sono interessate.
+> 
+> - Solo EXO - Prevenzione della perdita di dati: Tutti
+> - Solo EXO - O365SupportViewConfig: All
+> - Microsoft Azure Active Directory o EXO - Amministratore della sicurezza: Tutti
+> - AAD o EXO - Security Reader: All
+> - Solo EXO - Regole di trasporto: Tutte
+> - Solo EXO - Configurazione View-Only: Tutti
+> 
+> All'interno della griglia di posta elettronica, del riquadro a comparsa Dettagli e del file CSV esportato, gli ETF vengono presentati con un nome/GUID, come illustrato di seguito.
+> 
+> > [!div class="mx-imgBorder"]
+> > ![Regole di trasporto di Exchange](../../media/ETR_Details.png)
 
 ### <a name="inbound-connectors"></a>Connettori in ingresso
 
@@ -334,18 +337,23 @@ In questo esempio viene utilizzato Threat Explorer.
 
 4. Seleziona l'oggetto di qualsiasi messaggio nella scheda Posta > dettagli per visualizzare ulteriori informazioni sulla rappresentazione, ad esempio Dominio impersonato/Posizione rilevata.
 
-5. **OR** Selezionare **Utente rappresentato e** digitare l'indirizzo di posta elettronica di un utente protetto nella casella di testo.
+    **OR** 
 
-6. Selezionare **l'oggetto** di qualsiasi messaggio nella scheda **E-mail** Scheda Dettagli per visualizzare ulteriori informazioni sulla rappresentazione dell'utente o del dominio e  >   la *posizione rilevata.*
+    Selezionare **Utente rappresentato e** digitare l'indirizzo di posta elettronica di un utente protetto nella casella di testo.
 
-:::image type="content" source="../../media/threat-ex-views-impersonated-user-image.png" alt-text="Riquadro dei dettagli di Esplora minacce per un utente protetto che mostra la posizione di rilevamento e la minaccia rilevata (qui imitazione di un utente).":::
+    > [!TIP]
+    > **Per ottenere risultati ottimali,** utilizzare *indirizzi di posta elettronica completi per* cercare utenti protetti. L'utente protetto verrà trovato più rapidamente e con maggiore successo se si cerca *firstname.lastname@contoso.com,* ad esempio quando si analizza la rappresentazione dell'utente. Quando si cerca un dominio protetto, la ricerca prenderà il dominio radice (ad esempio, contoso.com) e il nome di dominio (*contoso*). La ricerca del dominio *radice contoso.com* restituirà entrambe le *contoso.com* e il nome di dominio *contoso*.
 
-> [!TIP]
-> **Per ottenere risultati ottimali,** utilizzare *indirizzi di posta elettronica completi per* cercare utenti protetti. L'utente protetto verrà trovato più rapidamente e con maggiore successo se si cerca *firstname.lastname@contoso.com,* ad esempio quando si analizza la rappresentazione dell'utente. Quando si cerca un dominio protetto, la ricerca prenderà il dominio radice (ad esempio, contoso.com) e il nome di dominio (*contoso*). La ricerca del dominio *radice contoso.com* restituirà entrambe le *contoso.com* e il nome di dominio *contoso*.
+5. Selezionare **l'oggetto** di qualsiasi messaggio nella scheda **E-mail** Scheda Dettagli per visualizzare ulteriori informazioni sulla rappresentazione dell'utente o del dominio e  >   la *posizione rilevata.*
+
+    :::image type="content" source="../../media/threat-ex-views-impersonated-user-image.png" alt-text="Riquadro dei dettagli di Esplora minacce per un utente protetto che mostra la posizione di rilevamento e la minaccia rilevata (qui imitazione di un utente).":::
+
+> [!NOTE]
+> Nel passaggio 3 o 5, se si sceglie  Tecnologia di rilevamento e si seleziona rispettivamente Dominio di rappresentazione o Utente di rappresentazione, le informazioni nella scheda E-mail Dettagli sull'utente o sul dominio e la posizione rilevata verrà visualizzata solo sui messaggi correlati all'utente o al dominio elencati nella pagina Dei criteri    >   *anti-phishing.*  
 
 ### <a name="preview-email-header-and-download-email-body"></a>Anteprima dell'intestazione della posta elettronica e download del corpo del messaggio di posta elettronica
 
-È ora possibile visualizzare in anteprima un'intestazione di posta elettronica e scaricare il corpo della posta elettronica in Threat Explorer Gli amministratori possono analizzare le intestazioni e i messaggi di posta elettronica scaricati per le minacce. Poiché il download dei messaggi di posta elettronica può rischiare l'esposizione delle informazioni, questo processo è controllato dal controllo di accesso basato sui ruoli (RBAC). Un nuovo ruolo, *Anteprima*, deve essere aggiunto a un altro gruppo di ruoli (ad esempio Operazioni di sicurezza o Amministratore sicurezza) per consentire il download dei messaggi di posta elettronica nella visualizzazione tutti i messaggi di posta elettronica. Tuttavia, la visualizzazione dell'intestazione della posta elettronica non richiede alcun ruolo aggiuntivo (a parte quello necessario per visualizzare i messaggi in Threat Explorer).
+Ora puoi visualizzare in anteprima un'intestazione di posta elettronica e scaricare il corpo del messaggio in Threat Explorer. Gli amministratori possono analizzare le intestazioni e i messaggi di posta elettronica scaricati alla ricerca di minacce. Poiché il download dei messaggi di posta elettronica può rischiare l'esposizione delle informazioni, questo processo è controllato dal controllo di accesso basato sui ruoli (RBAC). Un nuovo ruolo, *Anteprima*, deve essere aggiunto a un altro gruppo di ruoli (ad esempio Operazioni di sicurezza o Amministratore sicurezza) per consentire il download dei messaggi di posta elettronica nella visualizzazione tutti i messaggi di posta elettronica. Tuttavia, la visualizzazione dell'intestazione del messaggio di posta elettronica non richiede alcun ruolo aggiuntivo (a parte quello necessario per visualizzare i messaggi in Threat Explorer).
 
 Explorer e i rilevamenti in tempo reale otterranno anche nuovi campi che offrono un quadro più completo della posizione dei messaggi di posta elettronica. Queste modifiche semplificano la ricerca per Le operazioni di sicurezza. Ma il risultato principale è che puoi conoscere rapidamente la posizione dei messaggi di posta elettronica problematici.
 
