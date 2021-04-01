@@ -95,7 +95,7 @@
         - name: Sicuro per impostazione predefinita
           href: secure-by-default.md
         - name: Configurare i criteri anti-phishing in Defender per Office 365
-          href: configure-atp-anti-phishing-policies.md
+          href: configure-mdo-anti-phishing-policies.md
         - name: Configurare i criteri anti-malware
           href: configure-anti-malware-policies.md
         - name: Configurare criteri di protezione da posta indesiderata
