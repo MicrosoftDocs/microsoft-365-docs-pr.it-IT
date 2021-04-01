@@ -22,12 +22,12 @@ description: Usare le etichette di riservatezza di Microsoft Information Protect
 ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
-ms.openlocfilehash: 6c1f8b404ddcda45d782a6517880955a6199025d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a540529c174cc12b0e037be4af4e08c29e3835ea
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919592"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408601"
 ---
 # <a name="learn-about-sensitivity-labels"></a>Informazioni sulle etichette di riservatezza
 
@@ -49,9 +49,9 @@ Esempio che mostra le etichette di riservatezza disponibili in Excel dalla sched
 Per applicare le etichette di riservatezza, gli utenti devono aver eseguito l'accesso con l'account aziendale o dell'istituto di istruzione di Microsoft 365.
 
 > [!NOTE]
-> Le etichette di riservatezza sono ora supportate per i tenant delle entità governative degli Stati Uniti (GCC e GCC-H) Per altre informazioni, vedere le note sulla versione di Microsoft 365 Apps for enterprise, [Versione 2101: 26 gennaio](/officeupdates/current-channel#version-2101-january-26).
+> Per i tenant del governo degli Stati Uniti, le etichette di riservatezza sono [ora supportate per gli ambienti GCC e GCC High](/officeupdates/current-channel#version-2101-january-26) e attualmente vengono distribuite per gli ambienti DoD.
 >
-> Per l’etichettatura unificata del client e dello scanner di Azure Information Protection, vedere [Descrizione del servizio Azure Information Protection Premium Government](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
+> Se si usa il client e lo scanner di etichettatura unificata di Azure Information Protection per questi ambienti, vedere [Descrizione del servizio Azure Information Protection Premium Government](/enterprise-mobility-security/solutions/ems-aip-premium-govt-service-description).
 
 È possibile usare le etichette di riservatezza per:
   

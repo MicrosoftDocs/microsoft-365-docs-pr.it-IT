@@ -21,17 +21,14 @@ search.appverid:
 ms.assetid: c80a315a-af87-4996-94b9-fd2194f58a93
 description: Informazioni su come inviare la richiesta Fapiao al sistema di gestione 21Vianet Fapiao dopo aver effettuato un pagamento in Office 365 gestito da 21Vianet in Cina.
 monikerRange: o365-21vianet
-ms.openlocfilehash: 681d2d79c510c773d7597c62811256458e3d166d
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d9f75dfd00bb547e9d2e0f53826e5bc50926de39
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914475"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470954"
 ---
 # <a name="apply-for-a-fapiao-for-office-365-operated-by-21vianet"></a>Richiedere un Fapiao per Office 365 gestito da 21Vianet
-
-> [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 Puoi inviare la richiesta Fapiao al sistema di gestione 21Vianet Fapiao circa tre giorni dopo aver pagato. Dopo aver inviato la richiesta Fapiao, questa verrà elaborata tra due giorni.
   

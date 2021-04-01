@@ -20,21 +20,14 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Informazioni su come iniziare a raccogliere dati per il tenant usando l'app modello Analisi di utilizzo di Microsoft 365 in Power BI.
-ms.openlocfilehash: 1ef50380041650763961ffbe6e01c63b26800ee3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 734712994d47fcb234ba988bb4d185d09f3267d0
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913875"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51471058"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Abilitare l'analisi dell'utilizzo di Microsoft 365
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 L'analisi dell'utilizzo di Microsoft 365 non è ancora disponibile per Microsoft 365 US Government Community.
   

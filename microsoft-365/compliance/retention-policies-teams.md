@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione applicabili a Microsoft Teams.
-ms.openlocfilehash: 985131900a5e07188c0af641fb86f794d558f80b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cc17f89da743afce0d64b45f96493c050e61e343
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919782"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408361"
 ---
 # <a name="learn-about-retention-for-microsoft-teams"></a>Informazioni sulla conservazione per Microsoft Teams
 
@@ -43,33 +43,33 @@ Per altri carichi di lavoro, vedere:
 
 ## <a name="whats-included-for-retention-and-deletion"></a>Cosa è incluso per la conservazione e l'eliminazione
 
-Usando i criteri di conservazione per Teams è possibile conservare ed eliminare gli elementi di Teams seguenti: messaggi di chat e canali, inclusi immagini incorporate, tabelle, collegamenti ipertestuali e collegamenti ad altri messaggi e file di Teams, nonché il [contenuto della scheda](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Nei messaggi di chat sono inclusi tutti i nomi degli utenti presenti in chat e nei messaggi dei canali sono inclusi il nome del team e il titolo del messaggio (se disponibile). 
+Usando i criteri di conservazione per Teams è possibile eliminare i messaggi di chat e i messaggi di canale di Teams e per motivi di conformità è possibile conservare, oltre al testo nei messaggi, gli elementi seguenti: immagini incorporate, tabelle, collegamenti ipertestuali e collegamenti ad altri messaggi e file di Teams nonché il [contenuto della scheda](/microsoftteams/platform/task-modules-and-cards/what-are-cards). Nei messaggi di chat sono inclusi tutti i nomi degli utenti presenti in chat e nei messaggi dei canali sono inclusi il nome del team e il titolo del messaggio (se disponibile). 
 
 > [!NOTE]
 > L'inclusione del contenuto della scheda è un'aggiunta recente ed è ora completamente distribuita ai tenant. Per altre informazioni vedere [Funzionalità di conformità di Microsoft 365 ora disponibili per il contenuto delle schede adattive tramite le app in Teams](https://techcommunity.microsoft.com/t5/microsoft-teams-blog/microsoft-365-compliance-capabilities-for-adaptive-card-content/ba-p/2095869).
 
-I messaggi Teams nei canali privati non sono attualmente supportati per i criteri di conservazione. Quando si usano i criteri di conservazione per Teams, non vengono inclusi frammenti di codice, memo vocali registrati dal client per dispositivi mobili di Teams, anteprime, immagini di annunci e reazioni di altri utenti sotto forma di emoticon.
+I messaggi Teams nei canali privati non sono attualmente supportati per i criteri di conservazione. Quando si usano i criteri di conservazione per Teams, non vengono conservati frammenti di codice, memo vocali registrati dal client per dispositivi mobili di Teams, anteprime, immagini di annunci e reazioni di altri utenti sotto forma di emoticon.
 
 I messaggi di posta elettronica e i file usati con Teams non sono inclusi nei criteri di conservazione per Teams. Questi elementi hanno criteri di conservazione personalizzati.
 
 ## <a name="how-retention-works-with-microsoft-teams"></a>Come funziona la conservazione dei dati in Microsoft Teams
 
-È possibile usare i criteri di conservazione per conservare e cancellare dati dai messaggi di chat e canali in Teams. Dietro le quinte, le cassette postali di Exchange vengono usate per archiviare questi messaggi. I dati delle chat di Teams sono archiviati in una cartella nascosta nella cassetta postale di ogni utente della chat, mentre una cartella nascosta simile in una cassetta postale di gruppo viene usata per i messaggi dei canali di Teams.
+È possibile usare i criteri di conservazione per conservare i dati delle chat e dei messaggi di canale in Teams e per eliminare tali chat e messaggi. Nel frattempo, le cassette postali di Exchange vengono usate per archiviare i dati di questi messaggi. I dati delle chat di Teams sono archiviati in una cartella nascosta nella cassetta postale di ogni utente della chat, mentre una cartella nascosta simile in una cassetta postale di gruppo viene usata per i messaggi dei canali di Teams.
 
 Queste cassette postali sono elencate dall'attributo RecipientTypeDetails:
 
-- **MailUser**: queste cassette postali archiviano i messaggi per gli utenti di Teams basati sul cloud.
-- **UserMailbox**: queste cassette postali archiviano i messaggi per gli [utenti di Teams locali](search-cloud-based-mailboxes-for-on-premises-users.md).
-- **GroupMailbox**: queste cassette postali archiviano i messaggi per i canali di Teams.
+- **MailUser**: queste cassette postali archiviano i dati dei messaggi per gli utenti di Teams basati sul cloud.
+- **UserMailbox**: queste cassette postali archiviano i dati dei messaggi per gli [utenti di Teams locali](search-cloud-based-mailboxes-for-on-premises-users.md).
+- **GroupMailbox**: queste cassette postali archiviano i dati dei messaggi per i canali di Teams.
 
 Altri tipi di cassette postali, ad esempio RoomMailbox usato per le sale riunioni di Teams, non sono supportati per i criteri di conservazione di Teams.
 
-È importante sapere che Teams usa un servizio di chat con tecnologia Azure che archivia anche questi dati e che, per impostazione predefinita, questo servizio archivia i dati a tempo indeterminato. Per questo motivo, se bisogna cancellare i messaggi di Teams per motivi di conformità, raccomandiamo di usare criteri di conservazione di Teams che siano in grado di cancellare definitivamente questi dati sia dalle cassette postali di Exchange che dal servizio di chat sottostante basato su Azure. Per altre informazioni sull'architettura sottostante, vedere [Sicurezza e conformità in Microsoft Teams](/MicrosoftTeams/security-compliance-overview) e in particolare la sezione [Architettura di protezione delle informazioni](/MicrosoftTeams/security-compliance-overview#information-protection-architecture).
+È importante sapere che Teams usa un servizio di chat con tecnologia Azure come risorsa di archiviazione principale per tutti i messaggi (chat e messaggi di canale) e che, per impostazione predefinita, questo servizio archivia i dati a tempo indeterminato. Per questo motivo, se è necessario eliminare i messaggi di Teams per motivi di conformità, è consigliabile usare i criteri di conservazione per Teams che possono eliminare i messaggi dopo un periodo di tempo specifico, in base alla data di creazione. I messaggi vengono quindi eliminati definitivamente dalle cassette postali di Exchange e dal servizio di chat con tecnologia Azure sottostante. Per altre informazioni sull'architettura sottostante, vedere [Sicurezza e conformità in Microsoft Teams](/MicrosoftTeams/security-compliance-overview) e in particolare la sezione [Architettura di protezione delle informazioni](/MicrosoftTeams/security-compliance-overview#information-protection-architecture).
 
-Anche se i messaggi di chat e canali di Teams vengono archiviati nelle cassette postali, questi dati vengono inclusi solo da un criterio di conservazione configurato per le posizioni **Messaggi del canale di Teams** e **Chat di Teams**. I messaggi di chat e canali di Teams non sono interessati dai criteri di conservazione configurati per le cassette postali di utenti o gruppi di Exchange.
+Anche se i dati delle chat e dei messaggi di canale di Teams vengono archiviati nelle cassette postali, questi dati vengono inclusi solo da un criterio di conservazione configurato per le posizioni **Messaggi del canale di Teams** e **Chat di Teams**. Le chat e i messaggi di canale di Teams non sono interessati dai criteri di conservazione configurati per le cassette postali di utenti o gruppi di Exchange.
 
 > [!NOTE]
-> Se un utente è incluso in un criterio di conservazione attivo che conserva i dati di Teams e si eliminata una cassetta postale di un utente incluso in tale criterio, per conservare i dati di Teams la cassetta postale viene convertita in una [cassetta postale inattiva](inactive-mailboxes-in-office-365.md). Se non è necessario conservare i dati di Teams per l'utente, escludere l'account utente dal criterio di conservazione prima di eliminare la relativa cassetta postale.
+> Se un utente è incluso in un criterio di conservazione attivo che conserva i messaggi di Teams e si eliminata una cassetta postale di un utente incluso in tale criterio, per conservare i dati di Teams la cassetta postale viene convertita in una [cassetta postale inattiva](inactive-mailboxes-in-office-365.md). Se non è necessario conservare i dati di Teams per l'utente, escludere l'account utente dal criterio di conservazione prima di eliminare la relativa cassetta postale.
 
 Dopo che i criteri di conservazione sono stati configurati per messaggi di chat e canali, un processo timer del servizio Exchange valuterà periodicamente gli elementi nella cartella nascosta in cui vengono archiviati i messaggi di Teams. Il processo timer richiede fino a sette giorni per l'esecuzione. Quando il periodo di conservazione degli elementi scade, questi vengono spostati nella cartella SubstrateHolds, un'altra cartella nascosta presente in ogni cassetta postale utente o di gruppo in cui vengono archiviati gli elementi "eliminati temporaneamente" prima che vengano eliminati definitivamente.
 

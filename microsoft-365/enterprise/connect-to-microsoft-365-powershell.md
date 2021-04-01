@@ -17,12 +17,12 @@ ms.custom:
 - Ent_Office_Other
 ms.assetid: 5ebc0e21-b72d-46d8-96fa-00643b18eaec
 description: Connettersi al tenant di Microsoft 365 con PowerShell per Microsoft 365 per eseguire attività dell'interfaccia di amministrazione tramite riga di comando.
-ms.openlocfilehash: 58af42958e9b50ee8e39cbd7bd5aab53812e444c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 08005ba1cbdcbfec14585d22614129a9b33352b9
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919177"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445757"
 ---
 # <a name="connect-to-microsoft-365-with-powershell"></a>Collegare Microsoft 365 con PowerShell
 
@@ -84,7 +84,20 @@ Per le procedure che richiedono i nuovi cmdlet nel modulo di Azure Active Direct
     Install-Module -Name AzureAD
     ```
 
-   Se viene richiesto di installare un modulo da un archivio non attendibile, digitare **Y** e premere INVIO.
+  Per impostazione predefinita, PowerShell Gallery (PSGallery) non è configurata come repository affidabile per **PowerShellGet**. Al primo utilizzo di PSGallery, verrà visualizzato il seguente messaggio:
+
+```console
+Untrusted repository
+
+You are installing the modules from an untrusted repository. If you trust this repository, change
+its InstallationPolicy value by running the `Set-PSRepository` cmdlet.
+
+Are you sure you want to install the modules from 'PSGallery'?
+[Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"):
+```
+
+Rispondere **Sì** o **Sì a tutto** per continuare con l'installazione.
+
 
 ### <a name="step-2-connect-to-azure-ad-for-your-microsoft-365-subscription"></a>Passaggio 2: connettersi ad Azure AD per l'abbonamento a Microsoft 365
 

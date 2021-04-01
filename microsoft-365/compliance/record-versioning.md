@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui record che semplificano l’implementazione di una soluzione di gestione dei record in Microsoft 365.
-ms.openlocfilehash: f622e7e6a75cacf5b9cf283847e6b3eea718d542
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 52ca56436686faac1d414dac47e2e9e16c36fa90
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925572"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408559"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>Usare il controllo delle versioni per aggiornare i record archiviati in SharePoint o OneDrive
 
@@ -44,6 +44,9 @@ Per usare il controllo delle versioni dei record, è necessario prima di tutto [
   - **Archiviare automaticamente i record in un archivio dei record sul posto all'interno della raccolta siti.** Ogni raccolta siti di SharePoint e OneDrive mantiene il contenuto nella propria raccolta di archiviazione. Le versioni dei record vengono archiviate nella cartella Record della raccolta.
 
   - **Conservare un documento sempre valido che contiene tutte le versioni.** Per impostazione predefinita, ogni documento di SharePoint e OneDrive ha una cronologia delle versioni disponibile nel menu dell’elemento. In questa cronologia delle versioni è possibile individuare facilmente le versioni record e visualizzare tali documenti.
+
+> [!NOTE]
+> Quando si usa il controllo delle versioni dei record con un'etichetta di conservazione che include un'azione di eliminazione, è consigliabile configurare anche l'impostazione di conservazione **Avvia il periodo di conservazione in base a:** impostandola su **Quando gli elementi sono stati etichettati**. Con questa impostazione dell'etichetta, l'inizio del periodo di conservazione viene reimpostato per ogni nuova versione del record, in modo da garantire l'eliminazione delle versioni meno recenti prima di quelle più recenti.
 
 Il controllo delle versioni del record è automaticamente disponibile per qualsiasi documento con un'etichetta di conservazione che contrassegna l'elemento come record. Quando un utente visualizza le proprietà del documento tramite il riquadro dei dettagli, può cambiare lo **Stato del record** da **Bloccato** a **Sbloccato**. Questa azione crea un record nella cartella Record della raccolta di archiviazione, dove rimane fino alla fine del periodo di conservazione. 
 
@@ -75,7 +78,7 @@ Quando un utente blocca un record, il documento originale torna a non essere mod
 
 ## <a name="record-versions"></a>Versioni del record
 
-Ogni volta che un utente sblocca un record, la versione più recente viene copiata nella cartella Record della raccolta di archiviazione, che contiene il valore di **Record** nel campo **Commenti** della cronologia delle versioni.
+Ogni volta che un utente sblocca un record, la versione più recente viene copiata nella raccolta di archiviazione, che contiene il valore di **Record** nel campo **Commenti** della cronologia delle versioni.
 <br/><br/>
 
 ![Record mostrato nella raccolta di archiviazione](../media/recordversioning10.png)
@@ -93,16 +96,13 @@ I record vengono archiviati nella cartella Record della raccolta di archiviazion
 
 ![Cartella Record nella raccolta di archiviazione](../media/recordversioning12.png)
 
-La raccolta di archiviazione è visibile solo agli amministratori della raccolta siti. Inoltre, la raccolta di archiviazione non esiste per impostazione predefinita. Viene creata solo quando il contenuto soggetto a un'etichetta o a un criterio di conservazione viene eliminato per la prima volta nella raccolta siti.
+Per altre informazioni sul funzionamento della raccolta di archiviazione, vedere [Come funziona la conservazione per SharePoint e OneDrive](retention-policies-sharepoint.md#how-retention-works-for-sharepoint-and-onedrive).
 
 ## <a name="searching-the-audit-log-for-record-versioning-events"></a>Cercare nel log di controllo gli eventi di controllo delle versioni del record
 
-Le azioni per bloccare e sbloccare i record vengono registrate nel log di controllo. È possibile cercare le attività specifiche **Stato del record modificato in Bloccato** e **Stato del record modificato in Sbloccato**, che si trovano nella sezione **Attività su file e pagine** nell'elenco a discesa **Attività** nella pagina **Ricerca log di controllo** nel centro sicurezza e conformità.
-<br/><br/>
+Le azioni per bloccare e sbloccare i record vengono registrate nel log di controllo. In **Attività su file e pagine** selezionare **Stato del record modificato in Bloccato** e **Stato del record modificato in Sbloccato**.
 
-![Cercare nel log di controllo gli eventi di controllo delle versioni del record](../media/recordversioning13.png)
-
-Per altre informazioni su come cercare questi eventi, vedere la sezione "Attività su file e pagine" in [Ricerche nel log di controllo Centro sicurezza e conformità](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
+Per altre informazioni su come cercare questi eventi, vedere [Eseguire una ricerca nel log di controllo nel Centro sicurezza e conformità](search-the-audit-log-in-security-and-compliance.md#file-and-page-activities).
 
 ## <a name="next-steps"></a>Passaggi successivi
 

@@ -12,16 +12,18 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 2a21dfead9b1f1ba2f05fc7629ce4fcda9991017
-ms.sourcegitcommit: 8b1bd7ca8cd81e4270f0c1e06d2b6ca81804a6aa
+ms.openlocfilehash: 9fe1665eda882793a62315299a3cbf6667ec7988
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "50819978"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445654"
 ---
 # <a name="insider-risk-management-alerts"></a>Avvisi per la gestione dei rischi Insider
 
-Gli avvisi di gestione dei rischi Insider vengono generati automaticamente dagli indicatori di rischio definiti nei criteri di gestione dei rischi insider. Questi avvisi offrono agli analisti e agli investigatori della conformità una visione a tutto tondo dello stato di rischio corrente e consentono all'organizzazione di eseguire analisi ed azioni per i rischi individuati. Per impostazione predefinita, i criteri generano una determinata quantità di avvisi di gravità bassa, media e alta, ma è possibile aumentare o ridurre il [volume](insider-risk-management-settings.md#alert-volume) degli avvisi in base alle proprie esigenze. Inoltre, è possibile configurare la soglia di [avviso per gli indicatori dei](insider-risk-management-settings.md#indicator-level-settings-preview) criteri quando si crea un nuovo criterio con la procedura guidata dei criteri.
+Gli avvisi di gestione dei rischi Insider vengono generati automaticamente tramite gli indicatori di rischio definiti nei criteri di gestione dei rischi Insider. Questi avvisi offrono agli analisti e agli investigatori della conformità una visione d'insieme sullo stato di rischio corrente, consentendo all'organizzazione di valutare e di intraprendere azioni contro i rischi rilevati. Per impostazione predefinita, i criteri generano una determinata quantità di avvisi di gravità bassa, media e alta, ma è possibile aumentare o ridurre il [volume](insider-risk-management-settings.md#alert-volume) degli avvisi in base alle proprie esigenze. Inoltre, è possibile configurare la soglia di [avviso per gli indicatori dei](insider-risk-management-settings.md#indicator-level-settings-preview) criteri quando si crea un nuovo criterio con la procedura guidata dei criteri.
+
+Per una panoramica di come gli avvisi forniscono dettagli, contesto e contenuti correlati per attività rischiose e su come rendere più efficace il processo di analisi, vedere il video Insider [Risk Management Alerts Triage Experience.](https://www.youtube.com/watch?v=KgmpxBLJLPI)
 
 ## <a name="alert-dashboard"></a>Dashboard degli avvisi
 
@@ -30,14 +32,14 @@ Il dashboard di avviso **per il rischio** insider consente di visualizzare e agi
 - **Totale avvisi che devono essere esaminati**: viene elencato il numero totale di avvisi che necessitano di revisione e valutazione, inclusa una suddivisione in base alla gravità dell'avviso.
 - **Avvisi aperti negli ultimi 30** giorni: numero totale di avvisi creati dai criteri corrispondenti negli ultimi 30 giorni, ordinati in base ai livelli di gravità degli avvisi alti, medi e bassi.
 - **Tempo medio per la risoluzione degli avvisi**: riepilogo delle statistiche di avviso utili:
-    - Tempo medio per la risoluzione degli avvisi di gravità elevata, elencati in ore, giorni o mesi.
-    - Tempo medio per la risoluzione degli avvisi di gravità media, elencati in ore, giorni o mesi.
-    - Tempo medio per la risoluzione degli avvisi di gravità bassa, elencati in ore, giorni o mesi.
+    - Tempo medio di risoluzione degli avvisi di gravità elevata, elencato in ore, giorni o mesi.
+    - Tempo medio di risoluzione degli avvisi di gravità media, elencato in ore, giorni o mesi.
+    - Tempo medio di risoluzione degli avvisi di gravità bassa, elencato in ore, giorni o mesi.
 
 ![Dashboard di avviso per la gestione dei rischi Insider](../media/insider-risk-alerts-dashboard.png)
 
 >[!NOTE]
->La gestione dei rischi Insider usa la limitazione degli avvisi integrata per proteggere e ottimizzare l'analisi e l'esperienza di revisione dei rischi. Questa limitazione protegge da problemi che potrebbero causare un sovraccarico di avvisi dei criteri, ad esempio connettori di dati non configurati correttamente o criteri DLP. Di conseguenza, potrebbe verificarsi un ritardo nella visualizzazione di nuovi avvisi per un utente.
+>La gestione dei rischi Insider usa la limitazione degli avvisi incorporata al fine di contribuire alla protezione e ottimizzazione dell'esperienza di indagine e revisione dei rischi. Tale limitazione protegge da problemi che possono causare un sovraccarico di avvisi relativi a criteri, come ad esempio connettori di dati configurati in modo non corretto o criteri di prevenzione della perdita dei dati. Di conseguenza, potrebbe verificarsi un ritardo nella visualizzazione di nuovi avvisi per un utente.
 
 ## <a name="alert-status-and-severity"></a>Stato e gravità dell'avviso
 
@@ -53,21 +55,21 @@ I punteggi dei rischi di avviso vengono calcolati automaticamente da diversi ind
 I livelli di gravità del rischio di avviso sono:
 
 - **Gravità elevata:** le attività e gli indicatori per l'avviso rappresentano un rischio significativo. Le attività di rischio associate sono gravi, ripetitive e sono fortemente correlate ad altri fattori di rischio significativi.
-- **Gravità media:** le attività e gli indicatori per l'avviso rappresentano un rischio moderato. Le attività di rischio associate sono moderate, frequenti e hanno una correlazione con altri fattori di rischio.
+- **Gravità media:** le attività e gli indicatori per l'avviso rappresentano un rischio moderato. Le corrispondenti attività di rischio sono moderate, frequenti e in certa misura correlate ad altri fattori di rischio.
 - **Gravità bassa:** le attività e gli indicatori per l'avviso rappresentano un rischio minore. Le attività di rischio associate sono secondarie, più poco frequenti e non sono correlate ad altri fattori di rischio significativi.
 
 ## <a name="filter-alerts-on-the-alert-dashboard"></a>Filtrare gli avvisi nel dashboard degli avvisi
 
-A seconda del numero e del tipo di criteri di gestione dei rischi insider attivi nell'organizzazione, la revisione di una coda di avvisi di grandi dimensioni può essere difficile. L'uso di filtri di avviso può aiutare analisti e investigatori a ordinare gli avvisi in base a diversi attributi. Per filtrare gli avvisi nel **dashboard Avvisi,** selezionare il **controllo** Filtro. È possibile filtrare gli avvisi in base a uno o più attributi:
+A seconda del numero e del tipo di criteri di gestione dei rischi Insider adottati nell'organizzazione, la revisione di una lunga coda di avvisi può rappresentare una sfida. L'uso di filtri di avviso può aiutare analisti e investigatori a ordinare gli avvisi in base a diversi attributi. Per filtrare gli avvisi nel **dashboard Avvisi,** selezionare il **controllo** Filtro. È possibile filtrare gli avvisi in base a uno o più attributi:
 
-- **Stato:** selezionare uno o più valori di stato per filtrare l'elenco degli avvisi. Le opzioni sono *Confirmed,* *Dismissed,* *Needs review* e *Resolved.*
-- **Gravità:** selezionare uno o più livelli di gravità del rischio di avviso per filtrare l'elenco degli avvisi. Le opzioni sono *High,* *Medium* e *Low.*
+- **Stato:** selezionare uno o più valori di stato per filtrare l'elenco degli avvisi. Le opzioni sono *Confermato*, *Ignorato*, *Da rivedere* e *Risolto*.
+- **Gravità:** selezionare uno o più livelli di gravità del rischio di avviso per filtrare l'elenco degli avvisi. Le opzioni sono *Elevato*, *Medio* e *Basso*.
 - **Ora rilevata:** selezionare le date di inizio e di fine per la creazione dell'avviso.
 - **Criterio:** selezionare uno o più criteri per filtrare gli avvisi generati dai criteri selezionati.
 
 ## <a name="search-alerts-on-the-alert-dashboard"></a>Ricerca degli avvisi nel dashboard degli avvisi
 
-Per cercare una parola specifica nel nome dell'avviso, selezionare il **controllo Cerca** e digitare la parola da cercare. Nei risultati della ricerca viene visualizzato qualsiasi avviso per i criteri contenente la parola definita nella ricerca.
+Per cercare una parola specifica nel nome dell'avviso, selezionare il controllo **Ricerca** e digitare la parola desiderata. I risultati della ricerca mostreranno tutti gli avvisi relativi a tale criterio contenenti la parola cercata.
 
 ## <a name="triage-alerts"></a>Avvisi di triage
 

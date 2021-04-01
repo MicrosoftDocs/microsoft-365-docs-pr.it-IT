@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8965594789c3c96c043e3cd1a8922d9ba996ef47
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 7abf1c9e4115c928ae581da3789270fd8ed036d3
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222442"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476311"
 ---
 # <a name="set-up-microsoft-defender-for-endpoint-deployment"></a>Configurare Microsoft Defender per la distribuzione degli endpoint
 
@@ -39,7 +39,7 @@ ms.locfileid: "51222442"
 
 La distribuzione di Defender per Endpoint è un processo in tre fasi:
 
-| [![fase di distribuzione - preparazione](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[Fase 1: preparare](prepare-deployment.md) | ![fase di distribuzione - installazione](images/phase-diagrams/setup.png)<br>Fase 2: installazione | [![fase di distribuzione - onboard](images/phase-diagrams/onboard.png)](onboarding.md)<br>[Fase 3: onboard](onboarding.md) |
+| [![fase di distribuzione - preparazione](images/phase-diagrams/prepare.png)](prepare-deployment.md)<br>[Fase 1: preparazione](prepare-deployment.md) | ![fase di distribuzione - installazione](images/phase-diagrams/setup.png)<br>Fase 2: configurazione | [![fase di distribuzione - onboard](images/phase-diagrams/onboard.png)](onboarding.md)<br>[Fase 3: onboarding](onboarding.md) |
 | ----- | ----- | ----- |
 | | *Sei qui!*||
 
@@ -124,7 +124,7 @@ Il sensore Microsoft Defender per endpoint richiede che Microsoft Windows HTTP (
 
 -   WPAD (Web Proxy Autodiscovery Protocol)
 
-Se nella topologia di rete è stato implementato un proxy Trasparente o WPAD, non è necessario disporre di impostazioni di configurazione speciali. Per altre informazioni sulle esclusioni di URL di Microsoft Defender per endpoint nel proxy, vedi la sezione URL del servizio [proxy](production-deployment.md#proxy-service-urls) in questo documento per l'elenco url consentiti o in Configurare le impostazioni di connettività Internet e [proxy del dispositivo.](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
+Se nella topologia di rete è stato implementato un proxy Trasparente o WPAD, non è necessario disporre di impostazioni di configurazione speciali. Per ulteriori informazioni sulle esclusioni di URL di Microsoft Defender for Endpoint nel proxy, vedere la sezione URL del servizio [proxy](production-deployment.md#proxy-service-urls) in questo documento per l'elenco url consentiti o in Configurare le impostazioni di connettività Internet e [proxy del dispositivo.](configure-proxy-internet.md#enable-access-to-microsoft-defender-for-endpoint-service-urls-in-the-proxy-server)
 
 **Configurazione manuale del proxy statico:**
 

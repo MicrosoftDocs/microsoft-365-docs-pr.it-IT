@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione e sulle etichette di conservazione, utili per conservare tutto che serve ed eliminare ciò che non serve.
-ms.openlocfilehash: 0eaf89b3f49d8b69cb7b36e4e25df90946c19e32
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: dbb294cdb865fb01f931e2e9c3bc4f6afb3f1e09
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917208"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51471035"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -36,27 +36,29 @@ ms.locfileid: "50917208"
 > Le informazioni presenti in questa pagina sono destinate agli amministratori IT che possono creare i criteri e le etichette di conservazione per motivi di conformità.
 
 Per la maggior parte delle organizzazioni, il volume e la complessità dei dati aumentano giorno dopo giorno, a causa di posta elettronica, documenti, messaggi istantanei e altro ancora. La gestione o il controllo efficace di queste informazioni è importante perché è necessario:
-  
-- **Conformarsi in modo proattivo alle normative del settore e ai criteri interni** che richiedono di conservare il contenuto per un periodo di tempo minimo, ad esempio la norma Sarbanes-Oxley Act richiede che alcuni tipi di contenuto vengano conservati per sette anni. 
 
-- **Ridurre i rischi in caso di controversie legali o di violazioni della sicurezza** eliminando definitivamente i contenuti obsoleti che non è più necessario mantenere. 
-    
-- **Aiutare l'organizzazione a condividere le informazioni in modo efficace e a essere più flessibile** assicurando che gli utenti usino solo contenuti aggiornati e pertinenti. 
-    
-Le impostazioni di conservazione configurate consentono di raggiungere tutti questi obiettivi. La gestione dei contenuti in genere richiede due azioni:
-  
-- **Conservare** il contenuto in modo che non possa essere eliminato definitivamente prima del termine del periodo di conservazione. 
-    
-- **Eliminare** il contenuto in modo permanente alla fine del periodo di conservazione. 
-    
+- **Conformarsi in modo proattivo alle normative del settore e ai criteri interni** che richiedono di conservare il contenuto per un periodo di tempo minimo, ad esempio la norma Sarbanes-Oxley Act richiede che alcuni tipi di contenuto vengano conservati per sette anni.
+
+- **Ridurre i rischi in caso di controversie legali o di violazioni della sicurezza** eliminando definitivamente i contenuti obsoleti che non è più necessario mantenere.
+
+- **Aiutare l'organizzazione a condividere le informazioni in modo efficace e a essere più flessibile** assicurando che gli utenti usino solo contenuti aggiornati e pertinenti.
+
+Le impostazioni di conservazione configurate consentono di raggiungere questi obiettivi. La gestione dei contenuti in genere richiede due azioni:
+
+| Azione| Finalità |
+|:-----|:-----|
+|Conservare contenuto | Prevenire l'eliminazione definitiva e rimanere disponibile per eDiscovery |
+|Eliminare contenuto | Eliminare definitivamente il contenuto dall'organizzazione|
 
 Con queste due azioni di conservazione, è possibile configurare impostazioni di conservazione per ottenere i risultati seguenti:
 
 - Sola conservazione: conservare il contenuto per sempre o per un periodo di tempo specificato.
-- Sola eliminazione: eliminare il contenuto dopo un determinato periodo di tempo.
-- Conservazione ed eliminazione: conservare il contenuto per un periodo di tempo specificato e quindi eliminarlo.
+- Sola eliminazione: eliminare definitivamente il contenuto dopo un determinato periodo di tempo.
+- Conservazione ed eliminazione: conservare il contenuto per un periodo di tempo specifico, quindi eliminarlo definitivamente.
 
 Queste impostazioni di conservazione funzionano con il contenuto in locale, consentendo di risparmiare sui costi generali associati alla creazione e alla configurazione di spazio di archiviazione aggiuntivo quando è necessario conservare il contenuto per motivi di conformità. Inoltre, non è necessario implementare processi personalizzati per copiare e sincronizzare i dati.
+
+Usare le sezioni seguenti per scoprire ulteriori informazioni su come funzionano i criteri e le etichette di conservazione, quando usarli e come si integrano a vicenda. Ma se si desidera iniziare subito ad avviare e implementare le impostazioni di conservazione per alcuni scenari comuni, vedere [Informazioni sui criteri e sulle etichette di conservazione](get-started-with-retention.md).
 
 ## <a name="how-retention-settings-work-with-content-in-place"></a>Funzionamento delle impostazioni di conservazione con i contenuti in locale
 

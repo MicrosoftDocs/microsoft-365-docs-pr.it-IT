@@ -17,14 +17,16 @@ search.appverid:
 - MET150
 description: Informazioni su come creare un tipo di informazioni sensibili personalizzato con la classificazione basata su Exact Data Match.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 583419f6808d5b3d54d1f48d380e5b4110898ded
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 9288a7bc1bf93f1fa7ac329305bdc45c3cb1528c
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908350"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408645"
 ---
 # <a name="create-custom-sensitive-information-types-with-exact-data-match-based-classification"></a>Creare tipi di informazioni sensibili personalizzati con classificazione esatta basata su Exact Data Match
+
+
 
 I[ tipi di informazioni riservate personalizzati](sensitive-information-type-learn-about.md)vengono usate per identificare gli elementi sensibili in modo che sia possibile impedire la condivisione inavvertita o inappropriata. È possibile definire un tipo di informazioni sensibile personalizzato basato su:
 
@@ -35,7 +37,7 @@ I[ tipi di informazioni riservate personalizzati](sensitive-information-type-lea
 
  Questi tipi di informazioni sensibili personalizzati soddisfano le esigenze aziendali di molte organizzazioni.
 
-Ma cosa succede se si vuole un tipo di informazioni sensibili personalizzato che usi valori di dati esatti, anziché uno che trova le corrispondenze in base a criteri generici ? Con la classificazione basata su Exact Data Match (EDM) è possibile creare un tipo di informazioni sensibili personalizzato che sia progettato per:
+Ma cosa succede se si vuole un tipo di informazioni sensibili personalizzato che usi valori di dati esatti, anziché uno che trova le corrispondenze in base a criteri generici? Con la classificazione basata su Exact Data Match (EDM) è possibile creare un tipo di informazioni sensibili personalizzato che sia progettato per:
 
 - essere dinamico e facilmente aggiornabile
 - offrire maggiore scalabilità
@@ -56,6 +58,7 @@ La classificazione basata su EDM consente di creare tipi di informazioni sensibi
 > - Giapponese
 > 
 > Il supporto è disponibile per i tipi di informazioni sensibili. Per altre informazioni, vedere [Note sulla versione del supporto della protezione delle informazioni per i set di caratteri a due byte (anteprima)](mip-dbcs-relnotes.md).
+ 
 
 ## <a name="required-licenses-and-permissions"></a>Licenze e autorizzazioni obbligatorie
 
@@ -369,7 +372,10 @@ Se si vuole eseguire l'hashing e il caricamento da un computer, è necessario fa
 Se non si vuole esporre file dati di testo sensibili non crittografati, è possibile inserirlo in un computer in un percorso sicuro e quindi copiare il file hash e il file salt in un computer che può connettersi direttamente al tenant di Microsoft 365 per il caricamento. In questo scenario sarà necessario l’EDMUploadAgent su entrambi i computer.
 
 > [!IMPORTANT]
-> Se si usa lo schema Exact Data Match e la procedura guidata per il tipo di informazioni sensibili per creare il proprio schema e i file modello, è ***necessario** scaricare lo schema per questa procedura.
+> Se si usa lo schema Exact Data Match e la procedura guidata per il tipo di informazioni sensibili per creare il proprio schema e i file modello, è ***necessario*** scaricare lo schema per questa procedura.
+
+> [!NOTE]
+> Se l'organizzazione ha configurato [Customer Key per Microsoft 365 a livello di tenant (anteprima pubblica)](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview), Exact Data Match userà automaticamente la relativa funzionalità di crittografia. Questa opzione è disponibile solo per i tenant con licenza E5 nel cloud commerciale.
 
 #### <a name="prerequisites"></a>Prerequisiti
 

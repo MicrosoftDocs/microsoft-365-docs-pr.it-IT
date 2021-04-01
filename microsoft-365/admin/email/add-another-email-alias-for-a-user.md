@@ -22,21 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: 0b0bd900-68b1-4bf5-808b-5d240a7739f4
 description: "Informazioni su come è possibile associare più di un indirizzo di posta elettronica, denominato alias di posta elettronica, all'account di Microsoft 365 per le aziende. "
-ms.openlocfilehash: 590782f7b22b1d26abef83f884d45da567f0425c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a44271cdbf52136e61702697a960cc3cbcd8119d
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915951"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51471002"
 ---
 # <a name="add-another-email-alias-for-a-user"></a>Aggiungere un altro alias di posta elettronica per un utente
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
   
 Questo articolo è per gli amministratori di Microsoft 365 che hanno abbonamenti aziendali. Non è destinato agli utenti privati.
   

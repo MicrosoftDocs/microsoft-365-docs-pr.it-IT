@@ -15,16 +15,16 @@ ms.collection:
 - m365-security-compliance
 - m365solution-insiderrisk
 - m365initiative-compliance
-ms.openlocfilehash: ee4f18342304cf46f97a6ae7aa6e1ba76685bccd
-ms.sourcegitcommit: 3d3c446d5e2e90369be1339dd0a33e71432fbc36
+ms.openlocfilehash: b3a555ba41cee7c8272467de20962eb1e7f25cfc
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "50994618"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445614"
 ---
 # <a name="get-started-with-insider-risk-management-settings"></a>Introduzione alle impostazioni di gestione dei rischi insider
 
-Le impostazioni di gestione dei rischi insider si applicano a tutti i criteri di gestione dei rischi insider, indipendentemente dal modello scelto durante la creazione di un criterio. Le impostazioni vengono configurate utilizzando il **controllo delle** impostazioni dei rischi Insider nella parte superiore di tutte le schede di gestione dei rischi insider. Queste impostazioni controllano i componenti dei criteri per le aree seguenti:
+Le impostazioni di gestione dei rischi insider si applicano a tutti i criteri di gestione dei rischi insider, indipendentemente dal modello scelto durante la creazione di un criterio. Le impostazioni vengono configurate usando il controllo **Impostazioni rischi dei dipendenti** posto nella parte superiore di tutte le schede per la gestione dei rischi Insider. Queste impostazioni controllano i componenti dei criteri per le aree seguenti:
 
 - Privacy
 - Indicatori
@@ -41,9 +41,9 @@ Prima di iniziare e creare criteri di gestione dei rischi insider, è importante
 
 ## <a name="privacy"></a>Privacy
 
-Proteggere la privacy degli utenti che hanno corrispondenze ai criteri è importante e può contribuire a promuovere l'obiettività nell'analisi e nell'analisi dei dati per gli avvisi di rischio insider. Per gli utenti con criteri di rischio insider, è possibile scegliere una delle impostazioni seguenti:
+È fondamentale proteggere la privacy degli utenti che rientrano nei criteri, ciò può contribuire a promuovere l'oggettività nell'analisi dei dati e nelle revisioni dell'analisi per gli avvisi di rischio Insider. Per gli utenti con criteri di rischio insider, è possibile scegliere una delle impostazioni seguenti:
 
-- **Show anonymized versions of usernames**: I nomi degli utenti sono anonimi per impedire ad amministratori, investigatori e revisori di vedere chi è associato agli avvisi dei criteri. Ad esempio, un utente "Grace Taylor" verrebbe visualizzato con uno pseudonimo casuale, ad esempio "AnonIS8-988" in tutte le aree dell'esperienza di gestione dei rischi insider. La scelta di questa impostazione consente di anonimizzare tutti gli utenti con corrispondenze di criteri correnti e precedenti e si applica a tutti i criteri. Le informazioni del profilo utente nell'avviso per i rischi insider e nei dettagli del caso non saranno disponibili quando si sceglie questa opzione. Tuttavia, i nomi utente vengono visualizzati quando si aggiungono nuovi utenti ai criteri esistenti o quando si assegnano utenti a nuovi criteri. Se si sceglie di disattivare questa impostazione, verranno visualizzati i nomi utente per tutti gli utenti con corrispondenze di criteri correnti o precedenti.
+- **Show anonymized versions of usernames**: I nomi degli utenti sono anonimi per impedire ad amministratori, investigatori e revisori di vedere chi è associato agli avvisi dei criteri. Ad esempio, un utente "Grace Taylor" comparirebbe con uno pseudonimo casuale come "AnonIS8-988" in tutte le aree dell'esperienza di gestione dei rischi Insider. Quando si sceglie questa impostazione, vengono resi anonimi tutti gli utenti con corrispondenze con i criteri correnti e precedenti e si applica a tutti i criteri. Le informazioni del profilo utente nell'avviso per i rischi insider e nei dettagli del caso non saranno disponibili quando si sceglie questa opzione. Tuttavia, i nomi utente vengono visualizzati quando si aggiungono nuovi utenti ai criteri esistenti o quando si assegnano utenti a nuovi criteri. Se si sceglie di disattivare questa impostazione, verranno visualizzati i nomi utente per tutti gli utenti con corrispondenze di criteri correnti o precedenti.
 - **Non mostrare versioni anonime** dei nomi utente: i nomi utente vengono visualizzati per tutte le corrispondenze dei criteri correnti e precedenti per avvisi e casi. Le informazioni del profilo utente (nome, titolo, alias e organizzazione o reparto) vengono visualizzate per l'utente per tutti gli avvisi e i casi di gestione dei rischi insider.
 
 ![Impostazioni di privacy per la gestione dei rischi insider](../media/insider-risk-settings-privacy.png)
@@ -155,9 +155,9 @@ Per il primo livello di evento giornaliero, si imposta la soglia su *10* o più 
 - Se sono presenti 20-29 eventi di SharePoint che si verificano dopo un'attivazione, il punteggio di rischio è intrinsecamente superiore e i livelli di gravità degli avvisi tendono a essere di livello medio.
 - Se sono presenti 30 o più eventi di SharePoint che si verificano dopo un'attivazione, il punteggio di rischio è intrinsecamente superiore e i livelli di gravità degli avvisi tendono a essere di alto livello.
 
-## <a name="policy-timeframes"></a>Tempistiche dei criteri
+## <a name="policy-timeframes"></a>Timeframe dei criteri
 
-I periodi di tempo dei criteri consentono di definire i periodi di revisione passati e futuri che vengono attivati dopo le corrispondenze dei criteri in base a eventi e attività per i modelli di criteri di gestione dei rischi insider. A seconda del modello di criteri scelto, sono disponibili i seguenti tempi per i criteri:
+I timeframe dei criteri consentono di definire periodi di revisione passati e futuri, i quali sono attivati dopo le corrispondenze ai criteri, in base a eventi e attività relativi ai modelli di criteri di gestione dei rischi Insider. A seconda del modello di criteri scelto, sono disponibili i seguenti tempi per i criteri:
 
 - **Finestra di** attivazione: disponibile per  tutti i modelli di criteri, la finestra Attivazione è il numero definito di giorni che la finestra viene attivata dopo **un** evento di attivazione. La finestra viene attivata da 1 a 30 giorni dopo che si verifica un evento di attivazione per qualsiasi utente assegnato al criterio. Ad esempio, hai configurato un criterio di gestione dei rischi insider e hai impostato la *finestra di attivazione* su 30 giorni. Sono trascorsi diversi mesi dalla configurazione del criterio e si verifica un evento di attivazione per uno degli utenti inclusi nel criterio. L'evento di attivazione attiva la *finestra di* attivazione e il criterio è attivo per tale utente per 30 giorni dopo l'evento di attivazione.
 - **Rilevamento attività passate**: Disponibile per  tutti i modelli di criteri, il rilevamento delle attività passate è il numero definito di giorni in cui la finestra viene attivata **prima** di un evento di attivazione. La finestra viene attivata da 0 a 180 giorni prima che si verifichi un evento di attivazione per qualsiasi utente assegnato al criterio. Ad esempio, hai configurato un criterio di gestione dei rischi insider e hai impostato *il rilevamento delle* attività passate su 90 giorni. Sono trascorsi diversi mesi dalla configurazione del criterio e si verifica un evento di attivazione per uno degli utenti inclusi nel criterio. L'evento di attivazione  attiva il rilevamento delle attività passate e il criterio raccoglie le attività storiche per tale utente per 90 giorni prima dell'evento di attivazione.
@@ -170,7 +170,7 @@ Le impostazioni di rilevamento intelligente consentono di perfezionare il modo i
 
 ### <a name="file-type-exclusions"></a>Esclusioni di tipi di file
 
-Per escludere tipi di file specifici da tutti i criteri di gestione dei rischi insider, immettere le estensioni dei tipi di file separate da virgole. Ad esempio, per escludere determinati tipi di file musicali dalle corrispondenze dei criteri, è possibile immettere aac,mp3,wav,wma nel **campo Esclusioni tipi di** file. I file con queste estensioni verranno ignorati da tutti i criteri di gestione dei rischi insider.
+Per escludere tipi di file specifici da tutti i criteri di gestione dei rischi insider, immettere le estensioni dei tipi di file separate da virgole. Ad esempio, per escludere determinati tipi di file musicali dalle corrispondenze ai criteri, è possibile immettere aac,mp3,wav,wma nel campo **Esclusioni file**. I file con queste estensioni verranno ignorati da tutti i criteri di gestione dei rischi insider.
 
 ### <a name="threshold-for-unusual-file-activity"></a>Soglia per attività insolite nei file
 
@@ -241,7 +241,7 @@ I campi e i valori seguenti vengono esportati per gli avvisi di gestione dei ris
 |:------------------|:----------------|
 | AlertType | Il tipo dell'avviso è *Personalizzato.*  |
 | AlertId | GUID dell'avviso. Gli avvisi per la gestione dei rischi insider sono modificabili. Quando lo stato dell'avviso cambia, viene generato un nuovo registro con lo stesso AlertID. Questo AlertID può essere usato per correlare gli aggiornamenti per un avviso. |
-| Category | La categoria dell'avviso è *InsiderRiskManagement.* Questa categoria può essere usata per distinguere questi avvisi da altri avvisi di sicurezza & conformità. |
+| Categoria | La categoria dell'avviso è *InsiderRiskManagement.* Questa categoria può essere usata per distinguere questi avvisi da altri avvisi di sicurezza & conformità. |
 | Commenti | Commenti predefiniti per l'avviso. I valori *sono Nuovo avviso* (registrato quando viene creato un avviso) e Avviso *aggiornato* (registrato quando è presente un aggiornamento di un avviso). Utilizzare AlertID per correlare gli aggiornamenti per un avviso. |
 | Dati | I dati dell'avviso includono l'ID utente univoco, il nome dell'entità utente e la data e l'ora (UTC) quando l'utente è stato attivato in un criterio. |
 | Nome | Nome dei criteri per i criteri di gestione dei rischi insider che hanno generato l'avviso. |
@@ -502,12 +502,14 @@ L'analisi dei rischi Insider consente di eseguire una valutazione dei potenziali
 - Requisiti minimi per la privacy: i risultati dell'analisi e le informazioni dettagliate vengono restituiti come attività degli utenti anonimi, i singoli nomi utente non sono identificabili dai revisori.
 - Comprendere i potenziali rischi tramite informazioni approfondite consolidate: i risultati dell'analisi consentono di identificare rapidamente le potenziali aree di rischio per gli utenti e i criteri più utili per attenuare questi rischi.
 
+Guarda il [video Insider Risk Management Analytics](https://www.youtube.com/watch?v=5c0P5MCXNXk) per comprendere in che modo l'analisi può contribuire ad accelerare l'identificazione dei potenziali rischi insider e ad agire rapidamente.
+
 L'analisi analizza gli eventi di attività di rischio da diverse origini per identificare informazioni dettagliate sulle potenziali aree di rischio. A seconda della configurazione corrente, l'analisi cerca le attività di rischio idonee nelle aree seguenti:
 
-- Log di controllo di Microsoft 365: inclusa in tutte le analisi, questa è l'origine principale per identificare la maggior parte delle attività potenzialmente rischiose.
-- Exchange Online: incluso in tutte le analisi, l'attività di Exchange Online consente di identificare le attività in cui i dati negli allegati vengono inseriti tramite posta elettronica a contatti o servizi esterni.
-- Azure Active Directory: incluso in tutte le analisi, la cronologia di Azure Active Directory consente di identificare le attività rischiose associate agli utenti con account utente eliminati.
-- Connettore dati hr di Microsoft 365: se configurato, gli eventi del connettore HR consentono di identificare le attività rischiose associate agli utenti con date di chiusura imminenti o di dimissioni imminenti.
+- Log di controllo di **Microsoft 365**: inclusa in tutte le analisi, questa è l'origine principale per identificare la maggior parte delle attività potenzialmente rischiose.
+- **Exchange Online:** inclusa in tutte le analisi, l'attività di Exchange Online consente di identificare le attività in cui i dati negli allegati vengono inviato tramite posta elettronica a contatti o servizi esterni.
+- **Azure Active Directory:** incluso in tutte le analisi, la cronologia di Azure Active Directory consente di identificare le attività rischiose associate agli utenti con account utente eliminati.
+- **Connettore dati hr di Microsoft 365:** se configurato, gli eventi del connettore HR consentono di identificare le attività rischiose associate agli utenti con date di chiusura imminenti o di dimissioni imminenti.
 
 Le informazioni analitiche delle analisi si basano sugli stessi segnali di attività di rischio usati dai criteri di gestione dei rischi insider e sui risultati dei report in base alle attività degli utenti singoli e sequenziali. Tuttavia, il punteggio di rischio per l'analisi si basa su un massimo di 30 giorni di attività, mentre i criteri di rischio insider usano l'attività quotidiana per ottenere informazioni dettagliate. Quando abiliti ed esegui l'analisi per la prima volta nell'organizzazione, vedrai i risultati dell'analisi per un giorno. Se si lascia abilitata l'analisi, verranno visualizzati i risultati di ogni analisi giornaliera aggiunta ai report di analisi per un intervallo massimo dei 30 giorni di attività precedenti.
 

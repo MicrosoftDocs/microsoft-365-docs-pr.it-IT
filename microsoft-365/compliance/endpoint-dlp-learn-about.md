@@ -19,12 +19,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: 'La Prevenzione della perdita di dati degli endpoint di Microsoft 365 estende il monitoraggio delle attività dei file e le azioni di protezione agli endpoint. I file vengono resi visibili nelle soluzioni di conformità di Microsoft 365 '
-ms.openlocfilehash: d4a3fef03322912bf169cd195984a17d8dfe3b17
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5aaed57574f1ecabdf28442b30dcd42677243df1
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50907050"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445276"
 ---
 # <a name="learn-about-microsoft-365-endpoint-data-loss-prevention"></a>Informazioni sulla prevenzione della perdita di dati degli endpoint di Microsoft 365
 
@@ -36,7 +36,7 @@ La **prevenzione della perdita di dati degli endpoint** (Endpoint DLP) estende l
 
 Microsoft Endpoint DLP consente di controllare e gestire i tipi di attività seguenti, che gli utenti possono eseguire sugli elementi sensibili nei dispositivi che eseguono Windows 10. 
 
-|attività |descrizione  | controllabile/limitabile|
+|Attività |Descrizione  | Controllabile/limitabile|
 |---------|---------|---------|
 |caricare su servizio cloud o accedere con browser non consentiti    | Rileva quando un utente tenta di caricare un elemento in un dominio di servizio riservato o di accedere a un elemento attraverso un browser.  Se si utilizza un browser che è elencato in DLP come browser non consentito, l'attività di upload verrà bloccata e l'utente verrà reindirizzato all'utilizzo di Edge Chromium. Edge Chromium permetterà o bloccherà il caricamento o l'accesso in base alla configurazione dei criteri DLP         |controllabile e limitabile|
 |copiare su altra app    |Rileva quando un utente tenta di copiare le informazioni da un elemento protetto e poi le incolla in un'altra applicazione, processo o elemento. Il processo di copiare e incollare informazioni all'interno della stessa applicazione, processo o elemento non viene rilevato da questa attività.         | controllabile e limitabile|
@@ -67,7 +67,7 @@ Endpoint DLP supporta il monitoraggio di questi tipi di file:
 - File H
 - File Java
  
-Per impostazione predefinita, Endpoint DLP controlla le attività per questi tipi di file anche in mancanza di una corrispondenza dei criteri. Se si vogliono monitorare i dati solo se c'è una corrispondenza dei criteri, è possibile disattivare l'opzione **Controllare sempre le attività dei file per i dispositivi** nelle impostazioni globali di Endpoint DLP. Le attività in qualsiasi file di Word, PowerPoint, Excel, PDF e CSV vengono comunque sempre controllate.
+Per impostazione predefinita, Endpoint DLP controlla le attività per questi tipi di file anche in mancanza di una corrispondenza dei criteri. Se si vogliono monitorare i dati solo se c'è una corrispondenza dei criteri, è possibile disattivare l'opzione **Controllare sempre le attività dei file per i dispositivi** nelle impostazioni globali di Endpoint DLP. Se questa impostazione è attiva, le attività su qualsiasi file Word, PowerPoint, Excel, PDF e .csv vengono sempre controllate, anche se il dispositivo non dispone di alcun criterio.
 
 Endpoint DLP monitora le attività in base al tipo MIME, pertanto le attività verranno acquisite anche se l'estensione del file viene cambiata. 
 
@@ -102,15 +102,15 @@ Se è stato eseguito l'onboarding di dispositivi tramite [Microsoft Defender per
 
 ### <a name="viewing-endpoint-dlp-data"></a>Visualizzazione dei dati di Endpoint DLP
 
-
-
 È possibile visualizzare gli avvisi correlati ai criteri di prevenzione della perdita dei dati applicati ai dispositivi endpoint passando al [Dashboard di gestione avvisi DLP](dlp-configure-view-alerts-policies.md).
 
-![Info sugli avvisi](../media/Alert-info-1.png)
+> [!div class="mx-imgBorder"]
+> ![Info sugli avvisi](../media/Alert-info-1.png)
 
 È anche possibile visualizzare i dettagli dell'evento associato con metadati completi nello stesso dashboard
 
-![info sull'evento](../media/Event-info-1.png)
+> [!div class="mx-imgBorder"]
+> ![info sull'evento](../media/Event-info-1.png)
 
 Dopo l'onboarding di un dispositivo, le informazioni sulle attività controllate fluiscono in Esplora attività anche prima che vengano configurati e distribuiti criteri di prevenzione della perdita dei dati che usano dispositivi come posizione.
 

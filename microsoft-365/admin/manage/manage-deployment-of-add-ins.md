@@ -22,21 +22,14 @@ search.appverid:
 - MOE150
 ms.assetid: 737e8c86-be63-44d7-bf02-492fa7cd9c3f
 description: Informazioni su come distribuire componenti aggiuntivi a utenti e gruppi dell'organizzazione tramite distribuzione centralizzata nell'interfaccia di amministrazione.
-ms.openlocfilehash: 9ded0294912a3c3c99e62913bcdc349de7bae1b5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 996ef34f1fc8d9663f6fa59f13a56a169b7edd11
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915387"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470524"
 ---
 # <a name="deploy-add-ins-in-the-admin-center"></a>Distribuire i componenti aggiuntivi nell'interfaccia di amministrazione
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 I componenti aggiuntivi di Office consentono di personalizzare i documenti e semplificare il modo in cui si accede alle informazioni sul Web (vedere Iniziare a [usare il componente aggiuntivo di Office).](https://support.microsoft.com/office/82e665c4-6700-4b56-a3f3-ef5441996862) Gli amministratori possono distribuire componenti aggiuntivi di Office per gli utenti dell'organizzazione utilizzando la funzionalità Distribuzione centralizzata nell'interfaccia di amministrazione di Microsoft 365. La distribuzione centralizzata è il modo consigliato e più ricco di funzionalità per la maggior parte degli amministratori di distribuire componenti aggiuntivi a utenti e gruppi all'interno di un'organizzazione.
 

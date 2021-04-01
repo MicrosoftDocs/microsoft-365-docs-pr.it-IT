@@ -17,12 +17,12 @@ search.appverid:
 - MET150
 description: Informazioni su come modificare uno schema EDM per usare la corrispondenza configurabile.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: e00466e4648ebe93f0658383515d1543f858e1b0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: dea641072983163c6fbbcc5888d5ee6ea91f6990
+ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50919373"
+ms.lasthandoff: 03/29/2021
+ms.locfileid: "51408315"
 ---
 # <a name="modify-exact-data-match-schema-to-use-configurable-match"></a>Modificare lo schema Exact Data Match per usare la corrispondenza configurabile
 
@@ -102,6 +102,9 @@ Il contrassegno `ignoredDelimiters` non supporta:
 - \,
 
 6. Connettersi al Centro sicurezza e conformità seguendo le procedure contenute in [Connettersi a PowerShell per Centro sicurezza e conformità](/powershell/exchange/connect-to-scc-powershell).
+
+> [!NOTE]
+> Se l'organizzazione ha configurato [Customer Key per Microsoft 365 a livello di tenant (anteprima pubblica)](customer-key-tenant-level.md#overview-of-customer-key-for-microsoft-365-at-the-tenant-level-public-preview), Exact Data Match userà automaticamente la relativa funzionalità di crittografia. Questa opzione è disponibile solo per i tenant con licenza E5 nel cloud commerciale.
 
 7. Aggiornare lo schema eseguendo questi cmdlet uno alla volta:
 

@@ -12,16 +12,18 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: 96d265a7b909b439f960c951b10c84f4bc7a63b0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 23c2ed180606e61820c6e736e472aef0ae4933a5
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916830"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445686"
 ---
 # <a name="insider-risk-management-policies"></a>Criteri di gestione dei rischi Insider
 
 I criteri di gestione dei rischi insider determinano quali utenti sono nell'ambito e quali tipi di indicatori di rischio sono configurati per gli avvisi. È possibile creare rapidamente un criterio che si applica a tutti gli utenti dell'organizzazione o definire singoli utenti o gruppi per la gestione in un criterio. I criteri supportano le priorità del contenuto per concentrare le condizioni dei criteri su più o specifici microsoft Teams, siti di SharePoint, tipi di riservatezza dei dati ed etichette dati. Utilizzando i modelli, è possibile selezionare indicatori di rischio specifici e personalizzare le soglie degli eventi per gli indicatori dei criteri, personalizzando in modo efficace i punteggi di rischio e il livello e la frequenza degli avvisi. Inoltre, i ripetitori del punteggio di rischio e i rilevamenti di anomalie consentono di identificare le attività degli utenti di maggiore importanza o più insolite. Le finestre dei criteri consentono di definire l'intervallo di tempo per l'applicazione del criterio alle attività di avviso e vengono utilizzate per determinare la durata del criterio una volta attivato.
+
+Per una panoramica del modo in cui i criteri creati con i modelli di criteri predefiniti consentono di intervenire rapidamente sui rischi potenziali, vedere il [video](https://www.youtube.com/watch?v=kudK5ajZTUo) sulla configurazione dei criteri di gestione dei rischi Insider.
 
 ## <a name="policy-dashboard"></a>Dashboard dei criteri
 
@@ -44,7 +46,7 @@ Per altre informazioni sull'analisi dei rischi insider e sui suggerimenti per i 
 
 ## <a name="policy-templates"></a>Modelli dei criteri
 
-I modelli di gestione dei rischi insider sono condizioni dei criteri predefinite che definiscono i tipi di indicatori di rischio e il modello di punteggio dei rischi utilizzati dal criterio. Ogni criterio deve disporre di un modello assegnato nella procedura guidata per la creazione dei criteri prima della creazione del criterio. La gestione dei rischi insider supporta fino a cinque criteri per ogni modello di criteri. Quando si crea un nuovo criterio di rischio insider con la procedura guidata dei criteri, è possibile scegliere uno dei modelli di criteri seguenti:
+I modelli di gestione dei rischi insider sono condizioni dei criteri predefinite che definiscono i tipi di indicatori di rischio e il modello di punteggio dei rischi utilizzati dal criterio. Per poter creare i criteri, è necessario che a ogni criterio sia assegnato un modello nella procedura guidata. La gestione dei rischi insider supporta fino a cinque criteri per ogni modello di criteri. Quando si crea un nuovo criterio di rischio insider con la procedura guidata dei criteri, è possibile scegliere uno dei modelli di criteri seguenti:
 
 ### <a name="data-theft-by-departing-users"></a>Furto di dati da parte di utenti in partenza
 
@@ -123,7 +125,7 @@ A seconda del modello scelto per un criterio di gestione dei rischi insider, gli
 
 Nella tabella seguente sono elencati gli eventi di attivazione e i prerequisiti per i criteri creati da ogni modello di criteri di gestione dei rischi insider:
 
-| **Modello di criteri** | **Attivazione di eventi per i criteri** | **Prerequisiti** |
+| **Modello relativo ai criteri** | **Attivazione di eventi per i criteri** | **Prerequisiti** |
 | :------------------ | :--------------------------------- | :---------------- |
 | Furto di dati da parte di utenti in partenza | Indicatore della data di disdetta o di chiusura dal connettore HR | (facoltativo) Connettore hr di Microsoft 365 configurato per gli indicatori di data di chiusura e di chiusura o l'integrazione di Azure Active Directory abilitata |
 | Perdite di dati generali | Attività dei criteri di perdita dei dati che crea un avviso di gravità elevata | (facoltativo) Criteri DLP configurati per gli avvisi di gravità elevata o l'evento di attivazione dell'esfiltrazione dei dati incorporati |
@@ -237,14 +239,14 @@ Il limite per ogni criterio viene calcolato in base al numero totale di utenti u
 
 Utilizzare la tabella seguente per determinare il numero massimo di utenti nell'ambito supportati per ogni modello di criteri:
 
-|**Modello di criteri**|**Massimo utente corrente nell'ambito**|
+|**Modello relativo ai criteri**|**Massimo utente corrente nell'ambito**|
 |:------------------|:--------------------------------|
 | Perdita di dati generale | 15,000 |
 | Perdita di dati da parte di utenti scontenti | 7,500 |
-| Perdita di dati per utenti con priorità | 1.000 |
+| Perdita di dati per utenti con priorità | 1,000 |
 | Furto di dati da parte di utenti in partenza | 20,000 |
-| Violazioni generali dei criteri di sicurezza | 1.000 |
-| Violazione dei criteri di sicurezza per utenti con priorità | 1.000 |
+| Violazioni generali dei criteri di sicurezza | 1,000 |
+| Violazione dei criteri di sicurezza per utenti con priorità | 1,000 |
 | Violazioni dei criteri di sicurezza da parte degli utenti in partenza | 15,000 |
 | Violazioni dei criteri di sicurezza da parte di utenti scontenti | 7,500 |
 

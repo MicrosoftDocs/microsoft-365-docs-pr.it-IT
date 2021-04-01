@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7c0e8adde9b1ed66e401348d998ae5c1ad8a7442
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: b83e6682ce0c11d076e0bbef60fdef365c9be564
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166006"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51471102"
 ---
 # <a name="verify-data-storage-location-and-update-data-retention-settings-for-microsoft-defender-for-endpoint"></a>Verificare il percorso di archiviazione dei dati e aggiornare le impostazioni di conservazione dei dati per Microsoft Defender for Endpoint
 
@@ -29,7 +29,7 @@ ms.locfileid: "51166006"
 
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -45,6 +45,8 @@ Durante la [fase di configurazione,](production-deployment.md)è necessario sele
 È possibile verificare la posizione dei dati accedendo a **Impostazioni**  >  **Conservazione dati.**
 
 ## <a name="update-data-retention-settings"></a>Aggiornare le impostazioni di conservazione dei dati
+
+È possibile aggiornare le impostazioni di conservazione dei dati. Per impostazione predefinita, il periodo di conservazione è 180 giorni. 
 
 1. Nel riquadro di spostamento selezionare **Impostazioni**  >  **Conservazione dati**.
 

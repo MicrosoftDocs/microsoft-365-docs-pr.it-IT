@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: È possibile creare un'esenzione associata a un caso di eDiscovery di base per conservare il contenuto che potrebbe essere rilevante per un'indagine.
-ms.openlocfilehash: ca87b1b2ad35949de01622771b1ae78c5b3038e9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: c84d0be5a4a659ff9b64af14052bcf4033e2ed24
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908340"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470477"
 ---
 # <a name="create-an-ediscovery-hold"></a>Creare un blocco di eDiscovery
 
@@ -222,10 +222,10 @@ Nella tabella seguente sono elencati i limiti per i casi di eDiscovery e i blocc
   | Descrizione del limite | Limite |
   |:-----|:-----|
   |Numero massimo di casi per un'organizzazione.  <br/> |Nessun limite  <br/> |
-  |Numero massimo di blocchi di eDiscovery per un'organizzazione.  <br/> |10.000  <br/> |
-  |Numero massimo di cassette postali in un singolo blocco eDiscovery. Questo limite include il totale combinato delle cassette postali degli utenti e le cassette postali associate ai gruppi di Microsoft 365, Microsoft Teams e Gruppi di Yammer.  <br/> |1.000  <br/> |
+  |Numero massimo di blocchi di eDiscovery per un'organizzazione.  <br/> |10,000  <br/> |
+  |Numero massimo di cassette postali in un singolo blocco eDiscovery. Questo limite include il totale combinato delle cassette postali degli utenti e le cassette postali associate ai gruppi di Microsoft 365, Microsoft Teams e Gruppi di Yammer.  <br/> |1,000  <br/> |
   |Numero massimo di siti in un singolo blocco eDiscovery. Questo limite include il totale combinato dei siti di OneDrive for Business, dei siti di SharePoint e dei siti associati ai gruppi di Microsoft 365, Microsoft Teams e Yammer.  <br/> |100  <br/> |
-  |Numero massimo di casi visualizzati nella home page di eDiscovery e numero massimo di elementi visualizzati nelle schede Esenzioni, Ricerche ed Esportazione all'interno di un caso. <sup>1</sup> |1.000|
+  |Numero massimo di casi visualizzati nella home page di eDiscovery e numero massimo di elementi visualizzati nelle schede Esenzioni, Ricerche ed Esportazione all'interno di un caso. <sup>1</sup> |1,000|
   |||
 
    > [!NOTE]

@@ -14,13 +14,14 @@ ms.author: v-maave
 ms.reviewer: ''
 manager: dansimp
 ms.custom: asr
+ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7685bd70d85ecebe759ade762b78ee2c3639cea8
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 71c3f89b721039753709d65daa135cad74a81711
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51061797"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476453"
 ---
 # <a name="attack-surface-reduction-frequently-asked-questions-faq"></a>Domande frequenti sulla riduzione della superficie di attacco
 
@@ -37,7 +38,7 @@ AsR era originariamente una funzionalità della famiglia di funzionalità di exp
 
 ## <a name="do-i-need-to-have-an-enterprise-license-to-run-asr-rules"></a>È necessario disporre di una licenza enterprise per eseguire le regole asr?
 
-Il set completo di regole e funzionalità asr è supportato solo se hai una licenza enterprise per Windows 10. Un numero limitato di regole può funzionare senza una licenza enterprise. Se si dispone di Microsoft 365 Business, impostare Microsoft Defender Antivirus come soluzione di sicurezza principale e abilitare le regole tramite PowerShell. Tuttavia, l'utilizzo di Registrazione asr senza una licenza enterprise non è ufficialmente supportato e le funzionalità complete del ripristino asr non saranno disponibili.
+Il set completo di regole e funzionalità asr è supportato solo se hai una licenza enterprise per Windows 10. Un numero limitato di regole può funzionare senza una licenza enterprise. Se si dispone di Microsoft 365 Business, impostare Microsoft Defender Antivirus come soluzione di sicurezza principale e abilitare le regole tramite PowerShell. L'utilizzo di Ripristino asser senza una licenza enterprise non è ufficialmente supportato e non sarà possibile utilizzare tutte le funzionalità di Ripristino asser.
 
 Per altre informazioni sulle licenze di Windows, vedi [Licenze di Windows 10](https://www.microsoft.com/licensing/product-licensing/windows10?activetab=windows10-pivot:primaryr5) e ottieni la guida per i [contratti multilicenza per Windows 10.](https://download.microsoft.com/download/2/D/1/2D14FE17-66C2-4D4C-AF73-E122930B60F6/Windows-10-Volume-Licensing-Guide.pdf)
 
@@ -49,11 +50,56 @@ Sì. AsR è supportato per Windows Enterprise E3 e versioni successive.
 
 Tutte le regole supportate con E3 sono supportate anche con E5.
 
-E5 ha inoltre aggiunto una maggiore integrazione con Defender per Endpoint. Con E5, puoi usare [Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender/monitor-devices?view=o365-worldwide&preserve-view=true#monitor-and-manage-asr-rule-deployment-and-detections) per monitorare ed esaminare l'analisi degli avvisi in tempo reale, ottimizzare le esclusioni delle regole, configurare le regole asr e visualizzare elenchi di report sugli eventi.
+E5 aggiunge una maggiore integrazione con Defender per Endpoint. Con E5, è possibile visualizzare gli avvisi in tempo reale, ottimizzare le esclusioni delle regole, configurare le regole di registrazione asr e visualizzare elenchi di report eventi.
 
 ## <a name="what-are-the-currently-supported-asr-rules"></a>Quali sono le regole asr attualmente supportate?
+AsR attualmente supporta tutte le regole seguenti.
 
-AsR attualmente supporta tutte le regole seguenti:
+## <a name="what-rules-to-enable-all-or-can-i-turn-on-individual-rules"></a>Quali regole abilitare? Tutti o è possibile attivare singole regole?
+Per capire cosa è meglio per il proprio ambiente, è consigliabile abilitare le regole di registrazione asr in [modalità di controllo.](audit-windows-defender.md) Con questo approccio, si determinerà il possibile impatto sull'organizzazione. Ad esempio, le applicazioni line-of-business.
+
+## <a name="how-do-asr-rules-exclusions-work"></a>Come funzionano le esclusioni delle regole asr?
+Per le regole asr, se si aggiunge un'esclusione, questa avrà effetto su ogni regola asr.
+Le due regole specifiche seguenti non supportano le esclusioni:
+
+|Nome della regola|GUID|Esclusioni di & file|
+|:--|:--|:--|
+|Impedire a JavaScript o VBScript di avviare il contenuto eseguibile scaricato|D3E037E1-3EB8-44C8-A917-57927947596D|Non supportato|
+|Bloccare la persistenza tramite la sottoscrizione di eventi WMI|e6db77e5-3df2-4cf1-b95a-636979351e5b|Non supportato|
+
+Le esclusioni delle regole asr supportano caratteri jolly, percorsi e variabili ambientali. Per ulteriori informazioni su come utilizzare i caratteri jolly nelle regole asr, vedere [configure and validate exclusions based on file extension and folder location](/windows/security/threat-protection/microsoft-defender-antivirus/configure-extension-file-exclusions-microsoft-defender-antivirus).
+
+Tenere presenti gli elementi seguenti relativi alle esclusioni delle regole asr (inclusi i caratteri jolly e env. variabili):
+
+- Le esclusioni delle regole asr sono indipendenti dalle esclusioni di Defender AV
+- Non è possibile utilizzare caratteri jolly per definire una lettera di unità
+- Se si desidera escludere più di una cartella, in un percorso, utilizzare più istanze di \ per indicare più cartelle annidate \* (ad esempio, c:\Folder \* \* \Test)
+- Microsoft Endpoint Configuration Manager *non supporta* i caratteri jolly (* o ?)
+- Se si desidera escludere un file che contiene caratteri casuali (generazione automatica di file), è possibile utilizzare il simbolo '?' (ad esempio, C:\Folder\fileversion?. docx)
+- Le esclusioni asr in Criteri di gruppo non supportano le virgolette (il motore gestirà in modo nativo percorso lungo, spazi e così via, quindi non è necessario usare le virgolette)
+- Le regole asr vengono eseguite con l'account NT AUTHORITY\SYSTEM, quindi le variabili di ambiente sono limitate alle variabili del computer.
+
+
+
+## <a name="how-do-i-know-what-i-need-to-exclude"></a>Come è possibile sapere cosa è necessario escludere?
+Regole asr diverse avranno flussi di protezione diversi. È sempre necessario riflettere sulla regola asr da cui si sta configurando la protezione e sul modo in cui il flusso di esecuzione effettivo viene traslato.
+
+Esempio: bloccare il furto delle credenziali dal sottosistema dell'autorità di sicurezza locale di **Windows** Lettura direttamente dal processo LSASS (Local Security Authority Subsystem) può essere un rischio per la sicurezza, poiché potrebbe esporre le credenziali aziendali.
+
+Questa regola impedisce ai processi non attendibili di avere accesso diretto alla memoria LSASS. Ogni volta che un processo tenta di utilizzare la funzione OpenProcess() per accedere a LSASS, con un diritto di accesso di PROCESS_VM_READ, la regola blocterà in modo specifico tale diritto di accesso.
+
+:::image type="content" source="images/asrfaq1.png" alt-text="bloccare il furto di credenziali LSASS":::
+
+Osservando l'esempio precedente, se si è effettivamente dovuto creare un'eccezione per il processo in cui è stato bloccato il diritto di accesso, l'aggiunta del nome del file insieme al percorso completo escluderebbe il blocco e dopo aver consentito l'accesso alla memoria del processo LSASS. Il valore 0 indica che le regole di registrazione asr ignoreranno questo file/processo e non lo blocranno/controllano.
+
+:::image type="content" source="images/asrfaq2.png" alt-text="escludere file asr":::
+
+## <a name="what-are-the-rules-microsoft-recommends-enabling"></a>Quali sono le regole consigliate da Microsoft per abilitare?
+
+È consigliabile abilitare tutte le regole possibili. Tuttavia, in alcuni casi non è consigliabile abilitare una regola. Ad esempio, non è consigliabile abilitare la regola Blocca le creazioni di processi originate da PSExec e comandi WMI, se si usa Microsoft Endpoint Configuration Manager (o System Center Configuration Manager - SCCM) per gestire gli endpoint.
+
+È consigliabile leggere le informazioni e/o gli avvisi specifici delle regole, disponibili nella [documentazione pubblica.](/microsoft-365/security/defender-endpoint/attack-surface-reduction.md)
+che si estende su più pilastri di protezione, come Office, Credenziali, Script, Posta elettronica e così via. In Windows 1709 e versioni successive sono supportate tutte le regole asR, ad eccezione di Blocca la persistenza tramite sottoscrizione di eventi WMI:
 
 * [Bloccare il contenuto eseguibile dal client di posta elettronica e dalla webmail](attack-surface-reduction.md#block-executable-content-from-email-client-and-webmail)
 * [Impedire a tutte le applicazioni di Office di creare processi figlio](attack-surface-reduction.md#block-all-office-applications-from-creating-child-processes)
@@ -136,7 +182,7 @@ L'abilitazione di questa regola non offre ulteriore protezione se è abilitata a
 ## <a name="see-also"></a>Vedere anche
 
 * [Panoramica della riduzione della superficie di attacco](attack-surface-reduction.md)
-* [Valutare le regole di riduzione della superficie di attacco](evaluate-attack-surface-reduction.md)
-* [Personalizzare le regole di riduzione della superficie di attacco](customize-attack-surface-reduction.md)
-* [Abilitare le regole di riduzione della superficie di attacco](enable-attack-surface-reduction.md)
+* [Rilevare regole per la riduzione della superficie di attacco](evaluate-attack-surface-reduction.md)
+* [Personalizzare regole per la riduzione della superficie di attacco](customize-attack-surface-reduction.md)
+* [Abilitare regole per la riduzione della superficie di attacco](enable-attack-surface-reduction.md)
 * [Compatibilità di Microsoft Defender con altri antivirus/antimalware](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)

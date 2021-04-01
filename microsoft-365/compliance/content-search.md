@@ -21,12 +21,12 @@ ms.assetid: 53390468-eec6-45cb-b6cd-7511f9c909e4
 ms.custom:
 - seo-marvel-apr2020
 description: Usare lo strumento Ricerca contenuto nel Centro conformità di Microsoft per cercare contenuto nei diversi servizi di Microsoft 365.
-ms.openlocfilehash: 2e9dcde65a4f2728782fd300f962dfb3e80ed3c9
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f648d0d0a68db4db32297a407fb944571f702b8e
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908628"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470660"
 ---
 # <a name="content-search"></a>Ricerca contenuto
 
@@ -66,18 +66,18 @@ Per potere accedere alla pagina **Ricerca contenuto**, eseguire ricerche contenu
     
     ![Specificare parole chiave, condizioni e posizioni in cui eseguire la ricerca](../media/1e6de9dd-eac9-4e2a-819d-9740cf6c9106.png)
   
-   - **Parole chiave da cercare**: digitare una query di ricerca nella casella **Parole chiave**. È possibile specificare parole chiave, proprietà dei messaggi come le date di invio o ricezione o proprietà dei documenti come il nome file o la data dell'ultima modifica apportata. È anche possibile usare query più complesse che usano un operatore booleano, ad esempio **AND**, **OR**, **NOT** o **NEAR**. È inoltre possibile cercare informazioni sensibili (ad esempio numeri di codice fiscale) nei documenti o cercare documenti condivisi esternamente. Se si lascia vuota la casella delle parole chiave, nei risultati della ricerca verrà incluso tutto il contenuto disponibile nelle posizioni specificate.
+   1. **Parole chiave da cercare**: digitare una query di ricerca nella casella **Parole chiave**. È possibile specificare parole chiave, proprietà dei messaggi come le date di invio o ricezione o proprietà dei documenti come il nome file o la data dell'ultima modifica apportata. È anche possibile usare query più complesse che usano un operatore booleano, ad esempio **AND**, **OR**, **NOT** o **NEAR**. È inoltre possibile cercare informazioni sensibili (ad esempio numeri di codice fiscale) nei documenti o cercare documenti condivisi esternamente. Se si lascia vuota la casella delle parole chiave, nei risultati della ricerca verrà incluso tutto il contenuto disponibile nelle posizioni specificate.
 
       È anche possibile fare clic sulla casella di controllo **Mostra elenco di parole chiave** e digitare una parola chiave in ogni riga. Se si esegue questa operazione, le parole chiave in ogni riga sono collegate da un operatore logico (**c:s**) con funzionalità simili all’operatore **OR** nella query di ricerca creata. 
     
       Perché usare l'elenco di parole chiave? È possibile ottenere statistiche che mostrano il numero di elementi che corrispondono a ogni parola chiave. Questo è utile per identificare rapidamente le parole chiave più e meno efficaci. È possibile usare anche una frase chiave, racchiusa tra parentesi, in una riga. Per altre informazioni sulle statistiche di ricerca, vedere [Visualizzare statistiche delle parole chiave per i risultati di Ricerca contenuto](view-keyword-statistics-for-content-search.md).
 
-     > [!NOTE]
-     > Per ridurre i problemi causati dai grandi elenchi di parole chiave, è ora consentito un massimo di 20 righe nell'elenco di parole chiave.
+      > [!NOTE]
+      > Per ridurre i problemi causati dai grandi elenchi di parole chiave, è ora consentito un massimo di 20 righe nell'elenco di parole chiave.
     
-    - **Condizioni**: è possibile aggiungere delle condizioni di ricerca per circoscrivere una ricerca e ottenere un insieme di risultati più preciso. Ogni condizione aggiunge una clausola alla query di ricerca creata ed eseguita all'avvio della ricerca. Una condizione è collegata logicamente alla query con parole chiave, specificata nell'apposita casella, dall'operatore logico (**c:c**) che ha funzionalità simili all’operatore **AND**. Ciò significa che, per essere inclusi nei risultati, gli elementi devono soddisfare sia la query con parola chiave, sia una o più condizioni. Ecco in che modo le condizioni aiutano a limitare i risultati. Per un elenco e una descrizione delle condizioni che possono essere usate in una query di ricerca, vedere la sezione "Condizioni di ricerca" in [Query con parole chiave e condizioni di ricerca per la Ricerca contenuto](keyword-queries-and-search-conditions.md#search-conditions).
+    2. **Condizioni**: è possibile aggiungere delle condizioni di ricerca per circoscrivere una ricerca e ottenere un insieme di risultati più preciso. Ogni condizione aggiunge una clausola alla query di ricerca creata ed eseguita all'avvio della ricerca. Una condizione è collegata logicamente alla query con parole chiave, specificata nell'apposita casella, dall'operatore logico (**c:c**) che ha funzionalità simili all’operatore **AND**. Ciò significa che, per essere inclusi nei risultati, gli elementi devono soddisfare sia la query con parola chiave, sia una o più condizioni. Ecco in che modo le condizioni aiutano a limitare i risultati. Per un elenco e una descrizione delle condizioni che possono essere usate in una query di ricerca, vedere la sezione "Condizioni di ricerca" in [Query con parole chiave e condizioni di ricerca per la Ricerca contenuto](keyword-queries-and-search-conditions.md#search-conditions).
     
-       - **Percorsi**: scegliere i percorsi di contenuti in cui eseguire la ricerca.
+    3. **Percorsi**: scegliere i percorsi di contenuti in cui eseguire la ricerca.
     
       - **Tutti i percorsi**: selezionare questa opzione per cercare in tutti i percorsi di contenuto dell'organizzazione. Ciò include i messaggi di posta elettronica in tutte le cassette postali di Exchange, incluse tutte le cassette postali inattive, le cassette postali per tutti i gruppi di Yammer, i gruppi di Microsoft 365 e Microsoft Teams, tutte le conversazioni Skype for Business, tutti i siti di SharePoint e OneDrive for Business, inclusi i siti per tutti i gruppi di Yammer, i gruppi di Microsoft 365 e Microsoft Teams, e gli elementi in tutte le cartelle pubbliche di Exchange.
     
@@ -87,9 +87,11 @@ Per potere accedere alla pagina **Ricerca contenuto**, eseguire ricerche contenu
   
          È inoltre possibile aggiungere gruppi di distribuzione all'elenco di cassette postali di Exchange in cui eseguire la ricerca. Per i gruppi di distribuzione, la ricerca viene eseguita nelle cassette postali dei membri del gruppo. Non sono supportati i gruppi di distribuzione dinamici.
     
-       > [!NOTE]
-       > Se si esegue una ricerca in tutti i percorsi di cassette postali o solo in cassette postali specifiche, i dati provenienti da altre applicazioni di Office 365 salvati nelle cassette postali degli utenti sono inclusi quando si esportano i risultati di una Ricerca contenuto. I dati non vengono inclusi nei risultati della ricerca stimati e non vengono visualizzati in anteprima. Vengono inclusi quando si esportano e si scaricano i risultati della ricerca. Per ulteriori informazioni, vedere [Contenuto archiviato nelle cassette postali di Exchange Online](what-is-stored-in-exo-mailbox.md).
-   
+        > [!NOTE]
+        > Se si esegue una ricerca in tutti i percorsi di cassette postali o solo in cassette postali specifiche, i dati provenienti da altre applicazioni di Office 365 salvati nelle cassette postali degli utenti sono inclusi quando si esportano i risultati di una Ricerca contenuto. I dati non vengono inclusi nei risultati della ricerca stimati e non vengono visualizzati in anteprima. Vengono inclusi quando si esportano e si scaricano i risultati della ricerca. Per ulteriori informazioni, vedere [Contenuto archiviato nelle cassette postali di Exchange Online](what-is-stored-in-exo-mailbox.md).
+
+   4. **Aggiungi il contenuto delle app per gli utenti locali:** selezionare questa casella per includere i contenuti di Teams per gli utenti locali nella ricerca. Ad esempio, se si esegue una ricerca in tutte le cassette postali di Exchange nell'organizzazione e si seleziona questa casella di controllo, la risorsa di archiviazione basata sul cloud usata per archiviare i dati chat di Teams per gli utenti locali verrà inclusa nell'ambito della ricerca. Per altre informazioni, vedere [Cercare i dati delle chat di Teams degli utenti locali](search-cloud-based-mailboxes-for-on-premises-users.md).
+
 5. Dopo aver configurato la query di ricerca, fare clic su **Salva ed esegui**.
     
 6. Nella pagina **Salva ricerca** digitare il nome della ricerca e una descrizione facoltativa che consenta di identificare la ricerca. Il nome della ricerca deve essere univoco nell'organizzazione. 

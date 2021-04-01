@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5013d94277eeba7d1df100d2850cb950fe2e0742
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 1757160b37500e97586fbb6dfb16d81303bc54e4
+ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379350"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51476482"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Onboard dei server Windows nel servizio Microsoft Defender for Endpoint
 
@@ -80,7 +80,7 @@ In generale, è necessario eseguire la procedura seguente:
 > Dopo l'onboarding del dispositivo, puoi scegliere di eseguire un test di rilevamento per verificare che sia stato correttamente eseguito l'onboarding nel servizio. Per altre informazioni, vedi Eseguire un test di rilevamento su un defender appena [onboarded per endpoint](run-detection-test.md)endpoint.
 
 
-#### <a name="before-you-begin"></a>Prima di iniziare 
+#### <a name="before-you-begin"></a>Informazioni preliminari 
 Eseguire la procedura seguente per soddisfare i requisiti di onboarding:
 
  - Per Windows Server 2008 R2 SP1 o Windows Server 2012 R2, assicurarsi di installare l'hotfix seguente:
@@ -204,7 +204,7 @@ In questa integrazione sono incluse le funzionalità seguenti:
 - Onboarding automatico: il sensore Defender for Endpoint viene abilitato automaticamente nei server Windows onboarding nel Centro sicurezza Di Azure. Per ulteriori informazioni sull'onboarding del Centro sicurezza di Azure, vedere [Onboarding to Azure Security Center Standard for enhanced security](https://docs.microsoft.com/azure/security-center/security-center-onboarding).
 
     > [!NOTE]
-    > L'onboarding automatico è applicabile solo per Windows Server 2008 R2 SP1, Windows Server 2012 R2 e Windows Server 2016.
+    > L'integrazione tra Azure Defender for Servers e Microsoft Defender for Endpoint è stata estesa per supportare [Windows Server 2019 e Windows Virtual Desktop (WVD).](https://docs.microsoft.com/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
 
 - I server Windows monitorati dal Centro sicurezza di Azure saranno disponibili anche in Defender for Endpoint: Azure Security Center si connette senza problemi al tenant Defender for Endpoint, offrendo una singola visualizzazione tra client e server.  Inoltre, gli avvisi di Defender for Endpoint saranno disponibili nella console del Centro sicurezza Di Azure.
 - Indagine server: i clienti del Centro sicurezza Di Azure possono accedere a Microsoft Defender Security Center per eseguire indagini dettagliate per scoprire l'ambito di una potenziale violazione.
@@ -283,8 +283,8 @@ Per eseguire l'offboard del server Windows, è possibile utilizzare uno dei meto
 <br>
 
 ## <a name="related-topics"></a>Argomenti correlati
-- [Onboard di dispositivi Windows 10](configure-endpoints.md)
-- [Onboard di dispositivi non Windows](configure-endpoints-non-windows.md)
+- [Aggiungere di dispositivi Windows 10](configure-endpoints.md)
+- [Aggiungere dispositivi non Windows](configure-endpoints-non-windows.md)
 - [Configurare le impostazioni di connettività Proxy e Internet](configure-proxy-internet.md)
 - [Eseguire un test di rilevamento in un dispositivo Defender for Endpoint appena onboarded](run-detection-test.md)
 - [Risoluzione dei problemi di onboarding di Microsoft Defender per endpoint](troubleshoot-onboarding.md)

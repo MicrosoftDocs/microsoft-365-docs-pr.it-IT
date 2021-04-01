@@ -20,21 +20,15 @@ search.appverid:
 - MOE150
 ms.assetid: 767349fa-f646-46d9-9dab-4a65049bdd1f
 description: Aggiornare il numero di telefono e l'indirizzo di posta elettronica dell'amministratore nell'interfaccia di amministrazione. Queste informazioni sono necessarie se si desidera reimpostare la propria password di amministratore.
-ms.openlocfilehash: a5b1548ee6ac0fa6bac976758ea8f6753ea2853c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 39b68905c0d43608a0d0ce1d37167fd7d9aff8fb
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914991"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470918"
 ---
 # <a name="update-your-admin-phone-number-and-email-address"></a>Aggiornare il numero di telefono e l'indirizzo di posta elettronica dell'amministratore
 
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 Questo articolo spiega come l'amministratore può modificare il telefono e l'indirizzo di posta elettronica dell'azienda in Microsoft 365.
   
 Per sapere come cambiare le informazioni del profilo dell'organizzazione, ad esempio il nome, l'indirizzo e il numero di telefono della società e i dati del contatto tecnico, vedere [Cambiare l'indirizzo dell'organizzazione, l'indirizzo di posta elettronica del contatto tecnico e altre informazioni](change-address-contact-and-more.md).

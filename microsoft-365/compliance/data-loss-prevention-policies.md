@@ -22,12 +22,12 @@ search.appverid:
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni su come identificare, monitorare e proteggere automaticamente le informazioni riservate della tua organizzazione in tutta la suite Office 365.
-ms.openlocfilehash: 9ef369786aa4b79dbdec551c9750500f9c092906
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 737e556972ca8ab0f82e1c4fe9e8602f09e91fc8
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052074"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445430"
 ---
 # <a name="overview-of-data-loss-prevention"></a>Panoramica sulla prevenzione della perdita dei dati
 <!-- this topic needs to be split into smaller, more coherent ones. It is confusing as it is. -->
@@ -86,7 +86,7 @@ In un criterio DLP sono disponibili alcuni elementi di base:
 I criteri di prevenzione della perdita dei dati vengono applicati agli elementi sensibili nelle diverse posizioni di Microsoft 365 e l’ambito può essere ulteriormente definito come descritto in questa tabella.
 
 
-|posizione | includo/escluso da|
+|Posizione | Includere/escludere da|
 |---------|---------|
 |Posta elettronica di Exchange| gruppi di distribuzione|
 |Siti di SharePoint |siti |
@@ -96,9 +96,14 @@ I criteri di prevenzione della perdita dei dati vengono applicati agli elementi 
 |Microsoft Cloud App Security |istanza |
 
 
- Se si sceglie di includere gruppi di distribuzione specifici in Exchange, i criteri DLP verranno applicati solo ai membri di quel gruppo. Analogamente, escludendo un gruppo di distribuzione si escluderanno tutti i membri di quel gruppo di distribuzione dalla valutazione dei criteri. È possibile scegliere di applicare un criterio ai membri delle liste di distribuzione, dei gruppi di distribuzione dinamici e dei gruppi di sicurezza. Una politica DLP non può contenere più di 50 inclusioni ed esclusioni.
+Se si sceglie di includere gruppi di distribuzione specifici in Exchange, i criteri DLP verranno applicati solo ai membri di quel gruppo. Analogamente, escludendo un gruppo di distribuzione si escluderanno tutti i membri di quel gruppo di distribuzione dalla valutazione dei criteri. È possibile scegliere di applicare un criterio ai membri delle liste di distribuzione, dei gruppi di distribuzione dinamici e dei gruppi di sicurezza. Una politica DLP non può contenere più di 50 inclusioni ed esclusioni.
 
-Se si sceglie di includere o escludere specifici siti di SharePoint o account di OneDrive, i criteri di prevenzione della perdita dei dati possono contenere non più di 100 inclusioni ed esclusioni di questo tipo. Anche se questi limiti esistono, è importante sapere che possono essere superati applicando criteri a livello di organizzazione o validi per intere posizioni.
+Se si sceglie di includere o escludere specifici siti di SharePoint, i criteri di prevenzione della perdita dei dati possono contenere non più di 100 inclusioni ed esclusioni di questo tipo. Anche se questi limiti esistono, è importante sapere che possono essere superati applicando criteri a livello di organizzazione o validi per intere posizioni.
+
+Se si sceglie di includere o escludere account o gruppi specifici di OneDrive, un criterio di prevenzione della perdita di dati potrà contenere non oltre 100 account utente o 50 gruppi di inclusione o esclusione.
+
+> [!NOTE]
+> L'ambito dei criteri di OneDrive for Business che usa account o gruppi è in anteprima pubblica. Durante questa fase, sarà possibile includere o escludere gli account utente e i gruppi nell'ambito del criterio di prevenzione della perdita dei dati. Sia i processi di inclusione che quelli di esclusione nell'ambito dello stesso criterio non sono supportati.
   
 ### <a name="rules"></a>Regole
 
@@ -201,8 +206,9 @@ Ecco l'aspetto di un suggerimento per i criteri in un account di OneDrive for Bu
 Quando viene trovata una corrispondenza con una regola, è possibile inviare un avviso tramite posta elettronica al responsabile della conformità (o a chiunque si desideri) con i relativi dettagli. Questo avviso tramite posta elettronica includerà un collegamento del [Dashboard di gestione degli avvisi DLP](dlp-configure-view-alerts-policies.md), tramite cui il responsabile della conformità potrà visualizzare i dettagli dell'avviso e degli eventi. Il dashboard contiene dettagli dell'evento che ha attivato l'avviso, insieme alle informazioni sul criterio di prevenzione della perdita di dati e sui contenuti riservati rilevati.
 
 Inoltre, è possibile inviare un report degli incidenti con i dettagli dell'evento. Il report include informazioni sull'elemento con cui è stata trovata una corrispondenza, sull'effettivo contenuto che ha soddisfatto la regola, oltre al nome dell'ultima persona che ha modificato il contenuto. Per i messaggi di posta elettronica, il report include anche il messaggio originale che corrisponde ai criteri di prevenzione della perdita dei dati, sotto forma di allegato.
-  
-![Pagina per la configurazione di rapporti operazioni non consentite](../media/Alerts-and-incident-report.png)
+
+> [!div class="mx-imgBorder"]
+> ![Pagina per la configurazione di rapporti operazioni non consentite](../media/Alerts-and-incident-report.png)
 
 La prevenzione della perdita dei dati esegue la scansione della posta elettronica in modo diverso dagli elementi in SharePoint Online o OneDrive for Business. In SharePoint Online e OneDrive for Business, la prevenzione della perdita dei dati analizza gli elementi esistenti e quelli nuovi e genera un avviso e un report degli incidenti ogni volta in cui viene trovata una corrispondenza. In Exchange Online, la prevenzione della perdita dei dati esegue la scansione di nuovi messaggi di posta elettronica e genera un report in caso di corrispondenza dei criteri. La prevenzione della perdita dei dati ***non*** esegue la scansione o la corrispondenza di elementi di posta elettronica esistenti in precedenza archiviati in una cassetta postale o in un archivio.
   
@@ -252,13 +258,15 @@ Ad esempio, il criterio predefinito **Stati Uniti - HIPAA** ha una regola che us
   
 ## <a name="the-priority-by-which-rules-are-processed"></a>Priorità in base alla quale vengono elaborate le regole
 
-Quando si creano regole in un criterio, a ogni regola viene assegnata una priorità nell'ordine di creazione, ovvero la regola creata per prima avrà la priorità più alta, la regola creata per seconda avrà la seconda priorità e così via. 
-  
-![Regole in ordine di priorità](../media/dlp-rules-in-priority-order.png)
+Quando si creano regole in un criterio, a ogni regola viene assegnata una priorità nell'ordine di creazione, ovvero la regola creata per prima avrà la priorità più alta, la regola creata per seconda avrà la seconda priorità e così via.
+
+> [!div class="mx-imgBorder"]
+> ![Regole in ordine di priorità](../media/dlp-rules-in-priority-order.png)
   
 Dopo aver configurato più criteri di prevenzione della perdita dei dati, è possibile cambiare la priorità di uno o più criteri. Per farlo, selezionare un criterio, scegliere **Modifica criterio** e usare l'elenco **priorità** per specificare la priorità.
 
-![Impostare la priorità per un criterio](../media/dlp-set-policy-priority.png)
+> [!div class="mx-imgBorder"]
+> ![Impostare la priorità per un criterio](../media/dlp-set-policy-priority.png)
 
 Quando il contenuto viene valutato a fronte delle regole, queste vengono elaborate in ordine di priorità. Se il contenuto corrisponde a più regole, le regole vengono elaborate in ordine di priorità e viene applicata l'azione più restrittiva. Ad esempio, se il contenuto corrisponde a tutte le regole seguenti, viene applicata la regola 3 perché è quella più restrittiva con la priorità più alta:
   
@@ -295,8 +303,9 @@ Per risolvere questi problemi, è possibile ottimizzare le regole modificando il
 ### <a name="instance-count"></a>Numero di istanze
 
 Il numero di istanze indica semplicemente quante occorrenze di un determinato tipo di informazioni riservate devono essere presenti perché il contenuto soddisfi la regola. Ad esempio, il contenuto corrisponde alla regola riportata sotto se vengono identificati tra 1 e 9 numeri di passaporto univoci del Regno Unito o degli Stati Uniti.
-  
-Si noti che il conteggio delle istanze include solo le corrispondenze **univoche** per i tipi di informazioni riservate e parole chiave. Ad esempio, se un messaggio di posta elettronica contiene 10 occorrenze dello stesso numero di carta di credito, le 10 occorrenze vengono conteggiate come una singola istanza di un numero di carta di credito. 
+
+> [!NOTE]
+> Il conteggio delle istanze include solo le corrispondenze **univoche** per i tipi di informazioni riservate e parole chiave. Ad esempio, se un messaggio di posta elettronica contiene 10 occorrenze dello stesso numero di carta di credito, le 10 occorrenze vengono conteggiate come una singola istanza di un numero di carta di credito.
   
 Per usare il numero di istanze per ottimizzare le regole, le indicazioni sono semplici:
   
@@ -393,7 +402,7 @@ Quando si creano criteri di prevenzione della perdita dei dati, si può sceglier
     
 - Le **Impostazioni avanzate** usano l'editor di regole per offrire il controllo completo su tutte le impostazioni dei criteri di prevenzione della perdita dei dati. 
     
-In realtà le impostazioni semplici e avanzate funzionano esattamente allo stesso modo, ovvero applicando regole costituite da condizioni e azioni, solo che con le impostazioni semplici l'editor di regole non viene visualizzato. Si tratta di un modo rapido per creare criteri di prevenzione della perdita dei dati.
+In realtà, le impostazioni semplici e avanzate funzionano esattamente allo stesso modo, ovvero applicando regole costituite da condizioni e azioni, solo che con le impostazioni semplici l'editor di regole non viene visualizzato. Si tratta di un modo rapido per creare criteri di prevenzione della perdita dei dati.
   
 ### <a name="simple-settings"></a>Impostazioni semplici
 
@@ -443,7 +452,8 @@ Se si creano criteri DLP con un forte impatto potenziale, si consiglia di attene
 
     È anche possibile modificare la priorità di più regole in un criterio. Per farlo, aprire un criterio per modificarlo. In una riga per una regola, scegliere i puntini di sospensione (**...**), quindi scegliere un'opzione, ad esempio **Sposta giù** o **Porta su ultimo**.
 
-    ![Impostare la priorità delle regole](../media/dlp-set-rule-priority.png)
+    > [!div class="mx-imgBorder"]
+    > ![Impostare la priorità delle regole](../media/dlp-set-rule-priority.png)
   
 ## <a name="dlp-reports"></a>Report di prevenzione della perdita dei dati
 
@@ -534,7 +544,7 @@ I membri del team conformità addetti alla creazione dei criteri di prevenzione 
 
 È anche possibile creare un gruppo di ruoli con privilegi di sola visualizzazione per i report e i criteri DLP concedendo il ruolo di **solo visualizzazione per la gestione della conformità DLP**.
 
-Per altre informazioni, vedere [Concedere agli utenti l'accesso al Centro conformità di Office 365](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md).
+Per altre informazioni, vedere [Concedere agli utenti l'accesso al Centro conformità di Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
   
 Queste autorizzazioni sono necessarie solo per creare e applicare criteri di prevenzione della perdita dei dati. L'applicazione dei criteri non richiede l'accesso al contenuto.
   

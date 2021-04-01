@@ -21,17 +21,14 @@ search.appverid:
 ms.assetid: c29d38b5-53a6-4bd9-b7aa-ce12c902da83
 description: Visualizzare l'estratto conto o la fattura su Office 365 gestito da 21Vianet in Cina.
 monikerRange: o365-21vianet
-ms.openlocfilehash: aa6a83f7054488b4e8944010a24341daeb83c690
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: cf12a74a612cbdce366d7e3528a9aefaa0849ee0
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914295"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470906"
 ---
 # <a name="view-your-bill-or-get-a-fapiao-in-office-365-operated-by-21vianet"></a>Visualizzare la fattura o ottenere un Fapiao in Office 365 gestito da 21Vianet
-
-> [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
 
 È possibile visualizzare l'estratto conto o la fattura per informazioni sull'abbonamento a Office 365 gestito da 21Vianet. Puoi anche ottenere un Fapiao (la prova finale dell'acquisto). Puoi inviare la richiesta Fapiao al nostro sistema [di gestione Fapiao](https://go.microsoft.com/fwlink/p/?linkid=837465) circa tre giorni dopo aver pagato. 
   

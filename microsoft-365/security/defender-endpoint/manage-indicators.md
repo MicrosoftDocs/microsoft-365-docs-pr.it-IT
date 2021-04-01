@@ -17,19 +17,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 670c6449c1121bc329b1dfb37cd1d9948c99a3f8
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: 481051b74c1be88ba78bbd44e4fc0c174ed0bdad
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379299"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470894"
 ---
 # <a name="create-indicators"></a>Creare indicatori
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -50,6 +50,9 @@ Lo stesso elenco di indicatori viene rispettato dall'agente di prevenzione. Ciò
 
 **Motore di analisi e correzione automatizzato**<BR>
 L'analisi e la correzione automatizzate si comportano allo stesso modo. Se un indicatore è impostato su "Consenti", l'analisi e la correzione automatizzate ignoreranno un verdetto "negativo". Se impostato su "Blocca", l'analisi e la correzione automatizzate lo tratteranno come "non corretti".
+
+> [!NOTE]
+> L'impostazione EnableFileHashComputation calcola l'hash del file per il certificato e il file IoC durante le analisi dei file. Supporta l'imposizione IoC di hash e certificati appartenenti ad applicazioni attendibili. Verrà abilitato e disabilitato contemporaneamente con l'impostazione Consenti o blocca file. EnableFileHashComputation viene abilitato manualmente tramite Criteri di gruppo ed è disabilitato per impostazione predefinita.
 
 
 Le azioni attualmente supportate sono:

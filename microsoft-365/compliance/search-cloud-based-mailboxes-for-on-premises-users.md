@@ -16,14 +16,14 @@ search.appverid:
 - MST160
 - MET150
 ms.assetid: 3f7dde1a-a8ea-4366-86da-8ee6777f357c
-description: Usare lo strumento Ricerca contenuto nel Centro sicurezza e conformità per cercare ed esportare i dati delle chat di Microsoft Teams degli utenti locali in una distribuzione ibrida di Exchange.
+description: Usare gli strumenti eDiscovery in Microsoft 365 per cercare ed esportare i dati delle chat di Teams per gli utenti locali in un'implementazione ibrida di Exchange.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 39951ce125f86748beab12cf1998075e26ad734b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a5053eb54b59d55c428290987bcc8b2a8ce26b5b
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917188"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51471025"
 ---
 # <a name="search-for-teams-chat-data-for-on-premises-users"></a>Cercare i dati delle chat di Teams degli utenti locali
 
@@ -37,27 +37,26 @@ Di seguito sono elencati i requisiti e le limitazioni per l’abilitazione della
 
 - Se l'organizzazione non dispone di una distribuzione ibrida di Exchange, è necessario sincronizzare lo schema di Exchange locale con Azure Active Directory. Se non lo fai, potresti rischiare di creare cassette postali basate su cloud duplicate in Exchange Online per gli utenti che dispongono di una cassetta postale nell'organizzazione di Exchange locale.
 
-- Solo i dati delle chat di Teams associati all’utente locale sono archiviati nella risorsa di archiviazione basata sul cloud. L’utente locale non può accedere alla risorsa di archiviazione in alcun modo.
+- Solo i dati delle chat di Teams associati all'utente locale vengono archiviati nella risorsa di archiviazione basata sul cloud. L’utente locale non può accedere alla risorsa di archiviazione in alcun modo.
 
 > [!NOTE]
 > Le conversazioni che si svolgono nei canali di Teams vengono sempre archiviate nella cassetta postale basata sul cloud associata al team, il che significa che è possibile cercare le conversazioni del canale. Per altre informazioni sulla ricerca di conversazioni dei canali di Teams, vedere [Eseguire una ricerca nei Gruppi di Microsoft 365 e Microsoft Teams](content-search.md#searching-microsoft-teams-and-microsoft-365-groups).
   
 ## <a name="how-it-works"></a>Funzionamento
 
-Se un utente abilitato per Microsoft Teams dispone di una cassetta postale locale e la sua identità/account utente è stata sincronizzata con il cloud, Microsoft crea una risorsa di archiviazione basata sul cloud per associare i dati delle chat 1xN di Teams dell’utente locale. I dati delle chat di team degli utenti locali sono indicizzati per la ricerca. In questo modo è possibile usare Ricerca contenuto e le ricerche associate ai casi di eDiscovery Core and Adavanced per cercare, visualizzare in anteprima ed esportare i dati delle chat di Teams degli utenti locali. Per cercare dati delle chat di Teams per gli utenti locali è anche possibile usare i cmdlet **\*ComplianceSearch** in PowerShell per Centro sicurezza e conformità.
+Se un utente abilitato per Microsoft Teams dispone di una cassetta postale locale e la sua identità/account utente è stata sincronizzata con il cloud, Microsoft crea una risorsa di archiviazione basata sul cloud per associare i dati delle chat 1xN di Teams dell’utente locale. I dati delle chat di team degli utenti locali sono indicizzati per la ricerca. In questo modo, è possibile usare Ricerca contenuto (e le ricerche associate ai casi di Core eDiscovery e Adavanced eDiscovery) per cercare, visualizzare in anteprima ed esportare i dati delle chat di Teams degli utenti locali. Per cercare dati delle chat di Teams per gli utenti locali è anche possibile usare i cmdlet **\*ComplianceSearch** in PowerShell per Centro sicurezza e conformità.
   
 L'immagine seguente mostra il flusso di lavoro che consente di cercare, visualizzare in anteprima ed esportare i dati delle chat di Teams per gli utenti locali.
   
 ![Spazio di archiviazione basato sul cloud per gli utenti locali in Microsoft Teams](../media/EHAMShard1.png)
   
-Oltre a questa nuova funzionalità, si può continuare a usare Ricerca contenuto per cercare, visualizzare in anteprima ed esportare il contenuto di Teams nel sito di SharePoint basato sul cloud e nella cassetta postale di Exchange associata a ogni team di Microsoft Teams e dati delle chat 1xN di Teams in una cassetta postale di Exchange Online per gli utenti basati sul cloud.
+Oltre a questa funzionalità, è possibile usare gli strumenti eDiscovery per cercare, visualizzare in anteprima ed esportare i contenuti di Teams nel sito di SharePoint basato sul cloud e nella cassetta postale di Exchange associata ai dati delle chat di Microsoft Teams e delle chat 1xN di Teams in una cassetta postale di Exchange Online per gli utenti basati sul cloud.
 
+### <a name="how-this-feature-is-supported-in-content-search-and-core-ediscovery-search-tools"></a>In che modo questa funzionalità è supportata in Ricerca contenuto e negli strumenti di ricerca Core eDiscovery
 
-### <a name="what-happens-after-this-feature-is-enabled"></a>Cosa succede dopo l'abilitazione della funzionalità?
-
-Dopo la distribuzione di questa funzionalità nell'organizzazione, vengono apportate le modifiche seguenti in Ricerca contenuto e nelle ricerche associate a un caso di eDiscovery nel Centro sicurezza e conformità:
+I seguenti elementi di interfaccia utente in Ricerca contenuto e nello strumento di ricerca associato ai casi Core eDiscovery nel Centro conformità Microsoft 365:
   
-- La casella di controllo **Aggiungi il contenuto delle app di Office per gli utenti locali** viene aggiunta sotto **Posizioni** in Ricerca contenuto.
+- Viene visualizzata l'opzione **Aggiungi contenuti dell'app Office per gli utenti locali** in **Posizioni** in Ricerca contenuto. Selezionare questa casella di controllo per includere l'archiviazione basata su cloud per gli utenti locali in Ricerca contenuto.
 
     ![La casella di controllo Aggiungi il contenuto delle app di Office per gli utenti locali viene aggiunta all'interfaccia utente di Ricerca contenuto](../media/599e751e-17bd-408d-a18c-127538de6e85.png)
   
@@ -65,18 +64,18 @@ Dopo la distribuzione di questa funzionalità nell'organizzazione, vengono appor
 
 ## <a name="searching-for-teams-chat-content-for-on-premises-users"></a>Cercare contenuto delle chat di Teams degli utenti locali
 
-Una volta abilitata la funzionalità, è possibile usare Ricerca contenuto nel Centro sicurezza e conformità per cercare dati delle chat di Teams degli utenti locali.
+Ecco come usare Ricerca contenuto nel Centro conformità Microsoft 365 per cercare i dati delle chat di Teams per gli utenti locali.
   
-1. Nel Centro sicurezza e conformità passare a **Ricerca** \> **Ricerca contenuto**.
+1. Nel Centro conformità Microsoft 365, passare a **Ricerca contenuto**.
 
-2. Nella pagina **Ricerca** fare clic su ![Icona di aggiunta](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Nuova ricerca**.
+2. Nella scheda **Ricerche**, fare clic sull'![icona Aggiungi](../media/8ee52980-254b-440b-99a2-18d068de62d3.gif) **Nuova ricerca**.
 
     Come illustrato in precedenza, sotto **Posizioni** compare la casella di controllo **Aggiungi il contenuto delle app di Office per gli utenti locali**. Questa opzione è selezionata per impostazione predefinita.
 
 3. Se necessario, creare la query con parole chiave e aggiungere condizioni alla query di ricerca. Per cercare solo dati di chat di Teams, è possibile aggiungere la query seguente nella casella **Parole chiave**:
 
     ```text
-    kind:im
+    kind:im AND kind:microsoftteams
     ```
 
 4. A questo punto, è possibile scegliere una delle opzioni seguenti in **Posizioni**:
@@ -129,26 +128,26 @@ Per altre informazioni sull'uso di questi cmdlet, vedere:
 
 ## <a name="frequently-asked-questions"></a>Domande frequenti
 
+**Devo inviare una richiesta di supporto per cercare i messaggi di chat per gli utenti locali?**
+
+No. Questa funzionalità viene abilitata per impostazione predefinita per tutte le organizzazioni. A un certo punto, sarà necessario contattare il Supporto tecnico Microsoft, ma non è ancora il momento.
+  
+ **Gli strumenti eDiscovery possono trovare i dati delle chat di Teams più vecchi per gli utenti locali prima che questa funzionalità venisse abilitata per impostazione predefinita per tutte le organizzazioni?**
+  
+Microsoft ha iniziato ad archiviare i dati delle chat di Teams degli utenti locali il 31 gennaio 2018. Quindi, se l'identità di un utente di Teams locale è stata sincronizzata tra Active Directory e Azure Active Directory locali fin dalla data specificata in Microsoft 365, i dati delle chat di Teams sono archiviati nel cloud e sono disponibili per la ricerca tramite gli strumenti eDiscovery.
+
+ **Gli utenti locali hanno bisogno di una licenza per archiviare i loro dati delle chat di Teams nel cloud?**
+  
+Sì. Per archiviare i dati delle chat di Teams di un utente locale in una risorsa di archiviazione basata sul cloud, occorre assegnare all'utente una licenza di Microsoft Teams e una licenza di Exchange Online Piano in Office 365 (o Microsoft 365).
+
 **Dove si trova la risorsa di archiviazione basata sul cloud per gli utenti locali?**
   
 I dati delle chat di Teams vengono archiviati nel file PDL (Preferred Data Location) per un utente locale. Il file PDL viene rispettato negli ambienti a singola geo e multi geo. Per ulteriori informazioni, vedere [Microsoft 365 Multi-Geo](../enterprise/microsoft-365-multi-geo.md).
-  
- **Sono previsti altri requisiti oltre all'invio di una richiesta di supporto?**
-  
-Come descritto in precedenza, occorre sincronizzare le identità degli utenti con cassette postali locali con l'organizzazione basata sul cloud, in modo che venga creato un account di posta elettronica corrispondente per ogni account utente locale in Office 365. L'organizzazione deve avere anche un abbonamento a Office 365 Enterprise, ad esempio un abbonamento a Office 365 Enterprise E1, E3 o E5.
-  
- **Esiste il rischio di perdere i dati di chat di Teams se si esegue la migrazione della cassetta postale locale dell'utente nel cloud?**
+
+**Esiste il rischio di perdere i dati di chat di Teams se si esegue la migrazione della cassetta postale locale dell'utente nel cloud?**
   
 No. Quando si esegue la migrazione nel cloud della cassetta postale principale di un utente locale, i dati delle chat di Teams di quell'utente verranno spostati nella nuova cassetta postale principale basata sul cloud.
   
  **È possibile applicare un blocco di eDiscovery o criteri di conservazione agli utenti locali?**
   
-Sì. È possibile applicare criteri di conservazione o blocchi di eDiscovery alle chat di Teams e ai messaggi del canale degli utenti locali.
-  
- **Ricerca contenuto è in grado di trovare i dati delle chat di Teams meno recenti degli utenti locali, risalenti a prima che l'organizzazione inviasse la richiesta di abilitare questa funzionalità?**
-  
-Microsoft ha iniziato ad archiviare i dati delle chat di Teams degli utenti locali il 31 gennaio 2018. Quindi, se l'identità di un utente di Teams locale è stata sincronizzata tra Active Directory e Azure Active Directory fin dalla data specificata, i dati delle sue chat di Teams sono archiviati nel cloud e sono disponibili per la ricerca con Ricerca contenuto. Microsoft sta lavorando anche all'archiviazione dei dati delle chat di Teams precedenti al 31 gennaio 2018 nella risorsa di archiviazione basata sul cloud degli utenti locali. Altre informazioni su questo argomento saranno disponibili a breve.
-
- **Gli utenti locali hanno bisogno di una licenza per archiviare i loro dati delle chat di Teams nel cloud?**
-  
-Sì. Per archiviare i dati delle chat di Teams di un utente locale in una risorsa di archiviazione basata sul cloud, occorre assegnare all'utente una licenza di Microsoft Teams e una licenza di Exchange Online Piano in Office 365 (o Microsoft 365).
+Sì. È possibile applicare criteri di conservazione o blocchi di eDiscovery alle chat di Teams e ai messaggi del canale degli utenti locali. Tuttavia, per preservare o conservare i contenuti di Teams per gli utenti locali, un utente locale deve disporre di una licenza Exchange Online Plan 2.

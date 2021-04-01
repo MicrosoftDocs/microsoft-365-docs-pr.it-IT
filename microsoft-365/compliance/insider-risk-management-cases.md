@@ -12,12 +12,12 @@ author: robmazz
 manager: laurawi
 audience: itpro
 ms.collection: m365-security-compliance
-ms.openlocfilehash: f6f01a1bed296b6af2e6be973de6605910809fc3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 1648c648401086b296bd267fc1a9e7b011930e74
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926404"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445644"
 ---
 # <a name="insider-risk-management-cases"></a>Casi di gestione dei rischi insider
 
@@ -29,6 +29,8 @@ Dopo aver indagato sui dettagli di un caso, è possibile eseguire le azioni segu
 - risoluzione del caso come benigno
 - condivisione del caso con l'istanza serviceNow o con un destinatario di posta elettronica
 - escalation del caso per un'indagine advanced eDiscovery
+
+Guarda il [video insider Risk Management Investigation and Escalation](https://www.youtube.com/watch?v=UONUSmkRC8s) per una panoramica di come i casi vengono esaminati e gestiti nella gestione dei rischi insider.
 
 ## <a name="cases-dashboard"></a>Dashboard casi
 
@@ -53,8 +55,8 @@ Nella coda dei casi sono elencati tutti i casi attivi e chiusi per l'organizzazi
 Utilizzare il **controllo Search** per cercare nomi di maiuscole e minuscole per testo specifico e utilizzare il filtro maiuscole/minuscole per ordinare i casi in base agli attributi seguenti:
 
 - Stato
-- Caso di ora aperto, data di inizio e data di fine
-- Last updated, start date, and end date
+- Orario apertura del caso, data di inizio e data di fine
+- Ultimo aggiornamento, data di inizio e data di fine
 
 ## <a name="filter-cases"></a>Casi di filtro
 
@@ -68,23 +70,23 @@ A seconda del numero e del tipo di criteri di gestione dei rischi insider attivi
 
 Un'analisi approfondita degli avvisi di gestione dei rischi insider è fondamentale per eseguire azioni correttive appropriate. I casi di gestione dei rischi insider sono lo strumento di gestione centrale per approfondire la cronologia delle attività di rischio degli utenti, i dettagli degli avvisi, la sequenza degli eventi di rischio e per esplorare il contenuto e i messaggi esposti ai rischi. Gli analisti e gli investigatori del rischio usano anche i casi per centralizzare il feedback e le note delle recensioni e per elaborare la risoluzione dei casi.
 
-La selezione di un caso apre gli strumenti di gestione dei casi e consente ad analisti e investigatori di indagare nei dettagli dei casi.
+La selezione di un caso ne apre gli strumenti di gestione e consente ad analisti e investigatori di approfondirne i dettagli.
 
-### <a name="case-overview"></a>Panoramica del caso
+### <a name="case-overview"></a>Informazioni generali sul caso
 
-La **scheda Panoramica caso** riepiloga l'attività degli avvisi e la cronologia dei livelli di rischio per il caso. 
+La scheda **Informazioni generali sul caso** riepiloga l'attività di avviso e la cronologia dei livelli di rischio per il caso. 
 
 - Il widget **Avvisi** mostra le corrispondenze dei criteri per il caso, incluso lo stato dell'avviso, la gravità del rischio di avviso e il momento in cui è stato rilevato l'avviso. 
-- Il **grafico Cronologia livello di** rischio visualizza il livello di rischio utente negli ultimi 30 giorni. Il grafico a linee consente ad analisti e investigatori di vedere rapidamente la tendenza del rischio complessivo degli utenti nel tempo. 
-- Il widget **Contenuto attività di** rischio riepiloga i tipi di dati e di contenuto contenuti negli avvisi aggiunti al caso. Questo widget offre una visualizzazione all-up dell'intero set di dati e contenuti a rischio nel caso.
+- Il grafico della **cronologia del livello di rischio** mostra il livello di rischio dell'utente negli ultimi 30 giorni. Il grafico a linee consente ad analisti e investigatori di vedere rapidamente l'andamento nel tempo del rischio complessivo dell'utente. 
+- Il widget **Contenuto attività di rischio** riepiloga i tipi di dati e contenuti negli avvisi aggiunti al caso. Questo widget offre una visualizzazione completa dell'intero set di dati e contenuti a rischio nel caso.
 
 Il **riquadro Dettagli** caso è disponibile in tutte le schede di gestione dei casi e riepiloga i dettagli del caso per gli analisti e gli investigatori del rischio. Include le aree seguenti:
 
 - **Nome caso**: Nome del caso, preceduto da un numero di sequenza del caso generato automaticamente e dal nome del rischio associato al modello di criteri corrispondente al primo avviso confermato. 
 - **Stato del caso**: stato corrente del caso, *attivo* o *chiuso.*
-- **Punteggio di rischio dell'utente**: Livello di rischio calcolato corrente dell'utente per il caso. Questo punteggio viene calcolato ogni 24 ore e utilizza i punteggi di rischio degli avvisi di tutti gli avvisi attivi associati all'utente.
+- **Punteggio di rischio dell'utente**: Livello di rischio calcolato corrente dell'utente per il caso. Questo punteggio viene calcolato ogni 24 ore e utilizza i punteggi del rischio di avviso di tutti gli avvisi attivi associati all'utente.
 - **Avvisi confermati:** elenco di avvisi per l'utente confermato per il caso.
-- **Contenuto correlato:** elenco di contenuto, ordinato in base alle origini e ai tipi di contenuto. Ad esempio, per il contenuto degli avvisi caso in SharePoint Online, è possibile che siano elencati nomi di cartelle o file associati all'attività di rischio per gli avvisi nel caso.
+- **Contenuto correlato:** elenco di contenuto, ordinato in base alle origini e ai tipi di contenuto. Ad esempio, per il contenuto dell'avviso del caso in SharePoint Online, è possibile che siano elencati nomi di cartelle o file associati all'attività di rischio per gli avvisi nel caso.
 
 ![Dettagli del caso di gestione dei rischi insider](../media/insider-risk-case-details.png)
 
@@ -102,26 +104,26 @@ Utilizzare il controllo di ricerca per cercare i nomi degli avvisi per testo spe
 
 - Stato
 - Gravità
-- Ora rilevata, data di inizio e data di fine
+- Orario rilevamento, data di inizio e data di fine
 
 Utilizzare il controllo filtro per filtrare gli avvisi in base a diversi attributi, tra cui:
 
-- **Stato:** selezionare uno o più valori di stato per filtrare l'elenco degli avvisi. Le opzioni sono *Confirmed,* *Dismissed,* *Needs review* e *Resolved.*
-- **Gravità:** selezionare uno o più livelli di gravità del rischio di avviso per filtrare l'elenco degli avvisi. Le opzioni sono *High,* *Medium* e *Low.*
+- **Stato:** selezionare uno o più valori di stato per filtrare l'elenco degli avvisi. Le opzioni sono *Confermato*, *Ignorato*, *Da rivedere* e *Risolto*.
+- **Gravità:** selezionare uno o più livelli di gravità del rischio di avviso per filtrare l'elenco degli avvisi. Le opzioni sono *Elevato*, *Medio* e *Basso*.
 - **Ora rilevata:** selezionare le date di inizio e di fine per la creazione dell'avviso.
 - **Criterio:** selezionare uno o più criteri per filtrare gli avvisi generati dai criteri selezionati.
 
 ### <a name="user-activity"></a>Attività utente
 
-La **scheda Attività utente** è uno degli strumenti più potenti per l'analisi e l'analisi dei rischi interni per i casi nella soluzione di gestione dei rischi insider. Questa scheda è strutturata per consentire la revisione rapida di un caso, inclusa una cronologia di tutti gli avvisi, i dettagli degli avvisi, il punteggio di rischio corrente per l'utente nel caso, la sequenza di eventi di rischio e i controlli per intraprendere azioni efficaci per contenere i rischi nel caso.
+La scheda **Attività utente** è uno degli strumenti più potenti per l'analisi e l'indagine interna dei rischi per i casi nella soluzione di gestione dei rischi Insider. Questa scheda è strutturata per consentire la revisione rapida di un caso, inclusa una cronologia di tutti gli avvisi, i dettagli degli avvisi, il punteggio di rischio corrente per l'utente nel caso, la sequenza di eventi di rischio e i controlli per intraprendere azioni efficaci per contenere i rischi nel caso.
 
 ![Attività utente di gestione dei rischi Insider](../media/insider-risk-user-activities.png)
 
 1. **Filtri tempo:** per impostazione predefinita, gli ultimi sei mesi di avvisi confermati nel caso vengono visualizzati nel grafico Attività utente. È possibile filtrare facilmente la visualizzazione grafico selezionando le schede *6 Mesi*, *3* mesi o *1* mese nel grafico a bolle.
 2. **Attività e dettagli degli avvisi di** rischio : le attività di rischio vengono visualizzate visivamente come bolle colorate nel grafico Attività utente. Le bolle vengono create per diverse categorie di rischio e le dimensioni delle bolle sono proporzionali al numero di attività di rischio per la categoria. Selezionare una bolla per visualizzare i dettagli per ogni attività di rischio. I dettagli includono:
-    - **Data** dell'attività di rischio.
+    - **Data** dell'attività del rischio.
     - Categoria **di attività di rischio**. Ad esempio, *Messaggi di posta elettronica* con allegati inviati all'esterno dell'organizzazione o File *scaricati da SharePoint Online.*
-    - **Punteggio di rischio** per l'avviso. Questo punteggio è il punteggio numerico per il livello di gravità del rischio di avviso.
+    - **Punteggio del rischio** per l'avviso. Questo corrisponde al punteggio numerico per il livello di gravità del rischio di avviso.
     - Numero di eventi associati all'avviso. Sono inoltre disponibili collegamenti a ogni file o messaggio di posta elettronica associato all'attività di rischio.
 3. **Sequenza dei rischi (anteprima):** l'ordine cronologico delle attività rischiose è un aspetto importante dell'indagine sui rischi e l'identificazione di queste attività correlate è una parte importante della valutazione dei rischi complessivi per l'organizzazione. Le attività di avviso correlate vengono visualizzate con linee di connessione per evidenziare che queste attività sono associate a un'area di rischio più ampia. Questa visualizzazione delle attività può aiutare gli investigatori a "connettere letteralmente i puntini" per le attività di rischio che potrebbero essere state viste come eventi isolati o una sola volta. Selezionare una bolla nella sequenza per visualizzare i dettagli per tutte le attività di rischio associate. I dettagli includono:
 
@@ -146,15 +148,15 @@ Per altre informazioni su Esplora attività, vedi l'articolo [Avvisi per la gest
 
 ### <a name="content-explorer"></a>Esplora contenuto
 
-La **scheda Esplora contenuto** consente agli analisti e agli investigatori del rischio di esaminare le copie di tutti i singoli file e messaggi di posta elettronica associati agli avvisi di rischio. Ad esempio, se viene creato un avviso quando un utente scarica centinaia di file da SharePoint Online e l'attività attiva un avviso sui criteri, tutti i file scaricati per l'avviso vengono acquisiti e copiati nel caso di gestione dei rischi insider dalle origini di archiviazione originali.
+La scheda **Esplora contenuto** consente agli analisti e agli investigatori del rischio di esaminare le copie di tutti i singoli file e messaggi di posta elettronica associati agli avvisi di rischio. Ad esempio, se viene creato un avviso quando un utente scarica centinaia di file da SharePoint Online e l'attività attiva un avviso sui criteri, tutti i file scaricati per l'avviso vengono acquisiti e copiati nel caso di gestione dei rischi insider dalle origini di archiviazione originali.
 
 Esplora contenuto è uno strumento potente con funzionalità di ricerca e filtro di base e avanzate. Per altre informazioni sull'uso di Esplora contenuto, vedi [Gestione dei rischi insider Esplora contenuto.](insider-risk-management-content-explorer.md)
 
 ![Caso di gestione dei rischi insider Esplora contenuto](../media/insider-risk-content-explorer.png)
 
-### <a name="case-notes"></a>Note sul caso
+### <a name="case-notes"></a>Note del caso
 
-La **scheda Note caso** nel caso è in cui gli analisti e gli investigatori del rischio condividono commenti, feedback e informazioni dettagliate sul proprio lavoro per il caso. Le note sono aggiunte permanenti a un caso e non possono essere modificate o eliminate dopo il salvataggio della nota. Quando un caso viene creato da un avviso, i commenti immessi nella finestra di dialogo Conferma avviso e crea caso di rischio insider vengono aggiunti automaticamente come nota del caso. 
+La **scheda Note caso** nel caso è in cui gli analisti e gli investigatori del rischio condividono commenti, feedback e informazioni dettagliate sul proprio lavoro per il caso. Le note sono aggiunte permanenti a un caso e non possono essere modificate o eliminate dopo essere state salvate. Quando un caso viene creato da un avviso, i commenti inseriti nella finestra di dialogo **Conferma avviso e crea caso di gestione del rischio Insider** vengono aggiunti automaticamente come nota al caso.
 
 Nel dashboard delle note del caso vengono visualizzate le note dell'utente che ha creato la nota e il tempo passato dopo il salvataggio della nota. Per cercare una parola chiave specifica nel campo di testo della nota del caso, usa il pulsante **Cerca** nel dashboard del caso e immetti una parola chiave specifica.
 
@@ -167,12 +169,12 @@ Per aggiungere una nota a un caso:
 
 ### <a name="contributors"></a>Collaboratori
 
-La **scheda Collaboratori** nel caso è in cui gli analisti e gli investigatori del rischio possono aggiungere altri revisori al caso. Per impostazione predefinita, tutti gli utenti assegnati ai ruoli **Insider Risk Management Analysts** e **Insider Risk Management Investigators** sono elencati come collaboratori per ogni caso attivo e chiuso. Solo gli utenti assegnati al **ruolo Insider Risk Management Investigators** dispongono dell'autorizzazione per visualizzare file e messaggi in Esplora contenuto.
+La scheda **Collaboratori** nel caso è il luogo dove gli analisti e gli investigatori del rischio possono aggiungere altri revisori al caso. Per impostazione predefinita, tutti gli utenti assegnati ai ruoli **Insider Risk Management Analysts** e **Insider Risk Management Investigators** sono elencati come collaboratori per ogni caso attivo e chiuso. Solo gli utenti assegnati al **ruolo Insider Risk Management Investigators** dispongono dell'autorizzazione per visualizzare file e messaggi in Esplora contenuto.
 
 L'accesso temporaneo a un caso può essere concesso aggiungendo un utente come collaboratore. I collaboratori dispongono di tutti i controlli di gestione dei casi per il caso specifico, ad eccezione di:
 
-- Autorizzazione per confermare o ignorare gli avvisi
-- Autorizzazione per modificare i collaboratori per i casi
+- Autorizzazione a confermare o ignorare gli avvisi
+- Autorizzazione a modificare i collaboratori per i casi
 - Autorizzazione per visualizzare file e messaggi in Esplora contenuto
 
 Per aggiungere un collaboratore a un caso:
@@ -183,7 +185,7 @@ Per aggiungere un collaboratore a un caso:
 4. Nella finestra **di dialogo Aggiungi** collaboratore iniziare a digitare il nome dell'utente che si desidera aggiungere e quindi selezionare l'utente nell'elenco degli utenti suggeriti. Questo elenco viene generato da Azure Active Directory della sottoscrizione tenant.
 5. Selezionare **Aggiungi** per aggiungere l'utente come collaboratore oppure scegliere **Annulla** per chiudere la finestra di dialogo senza aggiungere l'utente come collaboratore.
 
-## <a name="case-actions"></a>Azioni caso
+## <a name="case-actions"></a>Azioni sul caso
 
 Gli analisti e gli investigatori del rischio possono intervenire su un caso in uno dei diversi metodi, a seconda della gravità del caso, della cronologia dei rischi dell'utente e delle linee guida per i rischi dell'organizzazione. In alcune situazioni potrebbe essere necessario inoltrare un caso a un utente o a un'indagine sui dati per collaborare con altre aree dell'organizzazione e approfondire le attività a rischio. La gestione dei rischi insider è strettamente integrata con altre soluzioni di conformità di Microsoft 365 per facilitare la gestione della risoluzione end-to-end.
 
@@ -191,7 +193,7 @@ Gli analisti e gli investigatori del rischio possono intervenire su un caso in u
 
 Nella maggior parte dei casi, le azioni degli utenti che creano avvisi di rischio insider sono accidentali o accidentali. L'invio di un avviso di promemoria all'utente tramite posta elettronica è un metodo efficace per documentare la revisione e l'azione dei casi ed è un metodo per ricordare agli utenti i criteri aziendali o per inviarli a corsi di aggiornamento. Gli avvisi vengono generati dai modelli [di avviso creati per](insider-risk-management-notices.md) l'infrastruttura di gestione dei rischi insider.
 
-È importante ricordare che l'invio di un avviso tramite posta elettronica a un utente ***non** risolve il caso come _Closed*. In alcuni casi, è possibile lasciare aperto un caso dopo aver inviato un avviso a un utente per cercare altre attività di rischio senza aprire un nuovo caso. Se si desidera risolvere un caso dopo l'invio di un avviso, è necessario selezionare il passaggio Risolvi caso come seguito dopo l'invio di un avviso. 
+È importante ricordare che l'invio di un avviso tramite posta elettronica a un utente ***non** risolve il caso come _Closed*. In alcuni casi, è possibile lasciare aperto un caso dopo aver inviato un avviso a un utente per cercare altre attività di rischio senza aprire un nuovo caso. Se si desidera risolvere un caso dopo aver inviato una notifica, è necessario selezionare **Risolvi caso** come passaggio successivo all'invio di una notifica.
 
 Per inviare un avviso all'utente assegnato a un caso:
 
@@ -201,9 +203,9 @@ Per inviare un avviso all'utente assegnato a un caso:
 4. Esaminare i campi di avviso e aggiornarsi in base alle esigenze. I valori immessi qui sostituiscono i valori del modello.
 5. Selezionare **Invia** per inviare l'avviso all'utente oppure scegliere **Annulla** per chiudere la finestra di dialogo senza inviare l'avviso all'utente. Tutti gli avvisi inviati vengono aggiunti alla coda delle note del caso nel dashboard **note caso.**
 
-### <a name="escalate-for-investigation"></a>Escalation per l'indagine
+### <a name="escalate-for-investigation"></a>Escalation dell'indagine
 
-Inoltrare il caso per le indagini degli utenti in situazioni in cui è necessaria un'ulteriore revisione legale per l'attività di rischio dell'utente. Questa escalation apre un nuovo caso advanced eDiscovery nell'organizzazione di Microsoft 365. Advanced eDiscovery offre un flusso di lavoro end-to-end per conservare, raccogliere, esaminare, analizzare ed esportare contenuto che risponde alle indagini legali interne ed esterne dell'organizzazione. Consente inoltre al team legale di gestire l'intero flusso di lavoro di notifica di blocco legale per comunicare con i custodi coinvolti in un caso. L'assegnazione di un revisore come responsabile in un caso advanced eDiscovery creato da un caso di gestione dei rischi insider consente al team legale di intraprendere le azioni appropriate e gestire la conservazione del contenuto. Per ulteriori informazioni sui casi di Advanced eDiscovery, vedere [Overview of Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
+Inoltrare il caso per le indagini degli utenti in situazioni in cui è necessaria un'ulteriore revisione legale per l'attività di rischio dell'utente. Questa operazione apre un nuovo caso di Advanced eDiscovery nell'organizzazione Microsoft 365. Advanced eDiscovery offre un flusso di lavoro end-to-end per conservare, raccogliere, rivedere, analizzare ed esportare contenuti rilevanti per le indagini legali interne ed esterne dell'organizzazione. Consente anche al team legale di gestire l'intero flusso di lavoro per le notifiche di blocco a fini giudiziari per comunicare con i responsabili coinvolti in un caso. Assegnare un revisore come responsabile in un caso di Advanced eDiscovery creato da un caso di gestione del rischio Insider aiuta il team legale a intraprendere le azioni appropriate e gestire la conservazione dei contenuti. Per maggiori informazioni sui casi di Advanced eDiscovery, consultare la [Panoramica di Advanced eDiscovery in Microsoft 365](overview-ediscovery-20.md).
 
 Per inoltrare un caso a un'indagine utente:
 
@@ -244,7 +246,7 @@ Per ulteriori informazioni su Microsoft Teams per la gestione dei rischi insider
 
 ### <a name="resolve-the-case"></a>Risolvere il caso
 
-Dopo che gli analisti e gli investigatori del rischio hanno completato la revisione e l'indagine, è possibile risolvere un caso per agire su tutti gli avvisi attualmente inclusi nel caso. La risoluzione di un caso aggiunge una classificazione di risoluzione, modifica lo stato del caso su *Chiuso* e i motivi dell'azione di risoluzione vengono aggiunti automaticamente alla coda delle note del caso nel dashboard **note caso.** I casi vengono risolti come:
+Dopo che gli analisti e gli investigatori del rischio hanno completato la revisione e l'indagine, è possibile risolvere un caso per agire su tutti gli avvisi attualmente inclusi nel caso. La risoluzione di un caso aggiunge una classificazione di risoluzione, modifica lo stato del caso su *Chiuso* e i motivi dell'azione di risoluzione vengono aggiunti automaticamente alla coda delle note del caso nel dashboard **note caso.** I casi vengono contrassegnati come segue:
 
 - **Benign**: classificazione per i casi in cui gli avvisi di corrispondenza dei criteri vengono valutati come a basso rischio, non grave o falso positivo.
 - **Violazione dei criteri confermata:** classificazione per i casi in cui gli avvisi di corrispondenza dei criteri vengono valutati come rischiosi, gravi o il risultato di intenti dannosi.

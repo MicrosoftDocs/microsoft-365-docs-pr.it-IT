@@ -21,21 +21,14 @@ search.appverid:
 ms.assetid: 89502322-bfbb-43d6-9207-4030f8ce26e0
 ROBOTS: NOINDEX
 description: "Informazioni su come condividere siti e file con persone esterne all'organizzazione. "
-ms.openlocfilehash: 585034580fd18d9584b4df3d0bec7026cf207f50
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 95698a36fe56d2c0d1a842425541e8aa7627d7dd
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915038"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51470930"
 ---
 # <a name="share-sites-and-files-with-guest-users"></a>Condividere siti e file con utenti guest
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Per collaborare con persone esterne all'organizzazione, è possibile condividere interi siti o file specifici esternamente. Se si vuole passare direttamente alla configurazione della condivisione, scegliere lo scenario che si desidera attivare:
 
