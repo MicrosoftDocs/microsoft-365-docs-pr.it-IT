@@ -20,12 +20,12 @@ ms.collection:
 search.appverid:
 - MET150
 - MOE150
-ms.openlocfilehash: aa3af1e3cf507178a5747cca28fbda543aecd334
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e4dcbeeda50c6229935bae8003d8db129d852451
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052124"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488203"
 ---
 # <a name="get-started-with-communication-compliance"></a>Introduzione alla conformità delle comunicazioni
 
@@ -112,7 +112,7 @@ Utilizzare questa opzione per assegnare utenti a gruppi di ruoli specifici per s
 
 9. Selezionare **Chiudi** per completare la procedura.
 
-Per ulteriori informazioni sui gruppi di ruoli e sulle autorizzazioni, vedere [Autorizzazioni nel Centro conformità.](../security/defender-365-security/protect-against-threats.md)
+Per ulteriori informazioni sui gruppi di ruoli e sulle autorizzazioni, vedere [Autorizzazioni nel Centro conformità.](../security/office-365-security/protect-against-threats.md)
 
 ## <a name="step-2-required-enable-the-audit-log"></a>Passaggio 2 (obbligatorio): abilitare il log di controllo
 
@@ -134,9 +134,6 @@ Utilizzare il grafico seguente per configurare i gruppi nell'organizzazione per 
 Quando si assegna un gruppo di distribuzione nel criterio, il criterio monitora tutti i messaggi di posta elettronica e le chat di Teams di ogni utente nel gruppo di distribuzione. Quando si assegna un gruppo di Microsoft 365 nel criterio, il criterio monitora tutti i messaggi di posta elettronica e le chat di Teams inviate a tale gruppo, non i singoli messaggi di posta elettronica e chat ricevuti da ogni membro del gruppo.
 
 Se si è un'organizzazione con una distribuzione di Exchange locale o un provider di posta elettronica esterno e si desidera monitorare le chat di Microsoft Teams per gli utenti, è necessario creare un gruppo di distribuzione per gli utenti con cassette postali locali o esterne da monitorare. Più avanti in questi passaggi, questo gruppo  di distribuzione verrà assegnato come selezione Di utenti e gruppi supervisionati nella procedura guidata dei criteri.
-
->[!IMPORTANT]
->Per cercare i dati delle chat di Teams degli utenti locali, è necessario presentare al Supporto tecnico Microsoft la richiesta di abilitare l'organizzazione all'uso dell'interfaccia utente grafica nel Centro sicurezza e conformità. Per ulteriori informazioni, vedere [Searching cloud-based mailboxes for on-premises users](search-cloud-based-mailboxes-for-on-premises-users.md).
 
 Per gestire gli utenti supervisionati nelle organizzazioni aziendali di grandi dimensioni, potrebbe essere necessario monitorare tutti gli utenti in gruppi di grandi dimensioni. È possibile utilizzare PowerShell per configurare un gruppo di distribuzione per un criterio di conformità delle comunicazioni globale per il gruppo assegnato. In questo modo è possibile monitorare migliaia di utenti con un singolo criterio e mantenere aggiornati i criteri di conformità delle comunicazioni quando i nuovi dipendenti aderiscono all'organizzazione.
 

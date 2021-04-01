@@ -22,12 +22,12 @@ ms.assetid: c4639c2e-7223-4302-8e0d-b6e10f1c3be3
 ms.custom:
 - seo-marvel-apr2020
 description: Informazioni sulle proprietà di posta elettronica e file che è possibile cercare utilizzando gli strumenti di ricerca ed eDiscovery in Microsoft 365.
-ms.openlocfilehash: e3282cd5b8bcc493e7c423db72c086f953d114ec
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b3b2410c899ec98f39a4f89e5ea0a86537e5b666
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903584"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488301"
 ---
 # <a name="keyword-queries-and-search-conditions-for-content-search-and-ediscovery"></a>Query con parole chiave e condizioni di ricerca per Ricerca contenuto ed eDiscovery
 
@@ -105,7 +105,7 @@ Per un elenco completo delle proprietà di SharePoint in cui è possibile esegui
 |FileName|Il nome di un file.|`filename:"marketing plan"`  <br/> `filename:estimate`|Il primo esempio restituisce i file con la frase esatta "marketing plan" nel titolo. Il secondo esempio restituisce i file con la parola "estimate" nel nome file.|
 |LastModifiedTime|La data dell'ultima modifica di un elemento.|`lastmodifiedtime>=05/01/2016`  <br/> `lastmodifiedtime>=05/10/2016 AND lastmodifiedtime<=06/1/2016`|Nel primo esempio vengono restituiti gli elementi modificati il 1° maggio 2016 o dopo il 1° maggio 2016. Nel secondo esempio vengono restituiti gli elementi modificati tra il 1° maggio 2016 e il 1 giugno 2016.|
 |ModifiedBy|L'autore dell'ultima modifica di un elemento. Assicurati di usare il nome visualizzato dell'utente per questa proprietà.|`modifiedby:"Garth Fort"`|Tutti gli elementi in cui l’ultima modifica è stata apportata da Garth Fort.|
-|Percorso|Percorso (URL) di un sito specifico in un sito di SharePoint o OneDrive for Business.  <br/> Per restituire gli elementi che si trovano nelle cartelle del sito specificato per la proprietà path, è necessario aggiungere / all'URL del \* sito specificato, ad esempio  `path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/> <br/> **Nota:** L'utilizzo della proprietà per cercare i percorsi di OneDrive non restituirà file multimediali, ad esempio file con estensione  `Path` png, tiff o wav, nei risultati della ricerca. Usare una proprietà del sito diversa nella query di ricerca per cercare file multimediali nelle cartelle di OneDrive. <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|Nel primo esempio vengono restituiti tutti gli elementi nel sito di OneDrive for Business specificato. Nel secondo esempio vengono restituiti i documenti nel sito specificato (e nelle cartelle del sito) che contengono la parola "confidential" nel nome del file.|
+|Percorso|Percorso (URL) di un sito specifico in un sito di SharePoint o OneDrive for Business.<br/><br/>Per restituire elementi solo dal sito specificato, è necessario aggiungere l'elemento finale alla `/` fine dell'URL, ad esempio `path: "https://contoso.sharepoint.com/sites/international/"` <br/><br/> Per restituire gli elementi che si trovano nelle cartelle del sito specificato nella proprietà path, è necessario aggiungere alla fine `/*` dell'URL, ad esempio  `path: "https://contoso.sharepoint.com/Shared Documents/*"`  <br/><br/> **Nota:** L'utilizzo della proprietà per cercare i percorsi di OneDrive non restituirà file multimediali, ad esempio file con estensione  `Path` png, tiff o wav, nei risultati della ricerca. Usare una proprietà del sito diversa nella query di ricerca per cercare file multimediali nelle cartelle di OneDrive. <br/>|`path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/"`  <br/> `path:"https://contoso-my.sharepoint.com/personal/garthf_contoso_com/*" AND filename:confidential`|Nel primo esempio vengono restituiti tutti gli elementi nel sito di OneDrive for Business specificato. Nel secondo esempio vengono restituiti i documenti nel sito specificato (e nelle cartelle del sito) che contengono la parola "confidential" nel nome del file.|
 |SharedWithUsersOWSUser|Documenti condivisi con l'utente specificato e visualizzati nella pagina Condivisi con **me** nel sito OneDrive for Business dell'utente. Si tratta di documenti che sono stati esplicitamente condivisi con l'utente specificato da altri utenti dell'organizzazione. Quando si esportano documenti che corrispondono a una query di ricerca che utilizza la proprietà SharedWithUsersOWSUser, i documenti vengono esportati dal percorso di contenuto originale della persona che ha condiviso il documento con l'utente specificato. Per ulteriori informazioni, vedere [Ricerca di contenuto del sito condiviso all'interno dell'organizzazione.](#searching-for-site-content-shared-within-your-organization)|`sharedwithusersowsuser:garthf`  <br/> `sharedwithusersowsuser:"garthf@contoso.com"`|Entrambi gli esempi restituiscono tutti i documenti interni che sono stati esplicitamente condivisi con Garth Fort e che vengono visualizzati nella pagina Condivisi con **me** nell'account OneDrive for Business di Garth Fort.|
 |Sito|L'URL di un sito o di un gruppo di siti nell'organizzazione.|`site:"https://contoso-my.sharepoint.com"`  <br/> `site:"https://contoso.sharepoint.com/sites/teams"`|Nel primo esempio vengono restituiti gli elementi dai siti di OneDrive for Business per tutti gli utenti dell'organizzazione. Il secondo esempio restituisce gli elementi di tutti i siti dei team.|
 |Dimensioni|Le dimensioni di un elemento, in byte.|`size>=1`  <br/> `size:1..10000`|Il primo esempio restituisce gli elementi di dimensioni maggiori di 1 byte. Il secondo esempio restituisce gli elementi di dimensioni comprese tra 1 e 10.000 byte.|
@@ -167,7 +167,7 @@ Per ulteriori informazioni sulla creazione di query utilizzando la proprietà , 
 
 Gli operatori di ricerca booleani, ad esempio **AND**, **OR** e **NOT,** consentono di definire ricerche più precise includendo o escludendo parole specifiche nella query di ricerca. Altre tecniche, ad esempio l'utilizzo di operatori di proprietà (ad esempio o ), virgolette, parentesi e caratteri jolly, consentono di perfezionare `>=` `..` una query di ricerca. Nella tabella seguente vengono elencati gli operatori che è possibile utilizzare per circoscrivere o ampliare i risultati della ricerca. 
   
-| Operatore | Usage | Descrizione |
+| Operatore | Utilizzo | Descrizione |
 |:-----|:-----|:-----|
 |E|keyword1 AND keyword2|Restituisce gli elementi che includono tutte le parole chiave o le espressioni  `property:value` specificate. Ad esempio,  `from:"Ann Beebe" AND subject:northwind` verrebbero restituiti tutti i messaggi inviati da Ann Beebe che contenevano la parola northwind nella riga dell'oggetto. <sup>2</sup>|
 |+|keyword1 + keyword2 + keyword3|Restituisce gli elementi che *contengono o* `keyword2` `keyword3` *e* che contengono anche `keyword1` .   Di conseguenza, questo esempio equivale alla query  `(keyword2 OR keyword3) AND keyword1` .  <br/> La `keyword1 + keyword2` query, con uno spazio dopo il **+** simbolo, non corrisponde all'utilizzo dell'operatore **AND.** Questa query equivale a restituire  `"keyword1 + keyword2"` gli elementi con la fase esatta  `"keyword1 + keyword2"` .|
@@ -366,7 +366,7 @@ Alcuni caratteri speciali non sono inclusi nell'indice di ricerca e pertanto non
     
 - Un collegamento guest anonimo, che consente a chiunque abbia questo collegamento di accedere alla risorsa senza dover essere autenticato.
     
-Ecco alcuni esempi:
+Di seguito vengono descritti alcuni esempi:
   
 - La query  `ViewableByExternalUsers:true AND SensitiveType:"Credit Card Number"` restituisce tutti gli elementi che sono stati condivisi con persone esterne all'organizzazione e contengono un numero di carta di credito. 
     
@@ -446,3 +446,5 @@ kind:im AND subject:conversation AND (received=startdate..enddate)
 - Per escludere i contenuti contrassegnati con un determinato valore della proprietà dai risultati della ricerca, inserire un segno meno (-) prima del nome della proprietà. Ad esempio, `-from:"Sara Davis"` esclude tutti i messaggi inviati da Sara Davis.
 
 - È possibile esportare gli elementi in base al tipo di messaggio. Ad esempio, per esportare conversazioni e chat Skype in Microsoft Teams, utilizzare la sintassi `kind:im` . Per restituire solo i messaggi di posta elettronica, utilizzare `kind:email` . Per restituire chat, riunioni e chiamate in Microsoft Teams, utilizzare `kind:microsoftteams` .
+
+- Come spiegato in precedenza, durante la ricerca nei siti è necessario aggiungere il finale alla fine dell'URL quando si utilizza la proprietà per restituire solo gli elementi `/` `path` in un sito specificato. Se non si include l'elemento finale, verranno restituiti anche gli elementi di un sito con un nome di percorso `/` simile. Ad esempio, se si utilizzano `path:sites/HelloWorld` gli elementi dei siti denominati o che `sites/HelloWorld_East` `sites/HelloWorld_West` verrebbero restituiti. Per restituire elementi solo dal sito HelloWorld, è necessario utilizzare `path:sites/HelloWorld/` .

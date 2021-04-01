@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: È possibile creare un'esenzione associata a un caso di eDiscovery di base per conservare il contenuto che potrebbe essere rilevante per un'indagine.
-ms.openlocfilehash: c84d0be5a4a659ff9b64af14052bcf4033e2ed24
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 1026de3b5357c3417a00a69b4ae6890e8036c091
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470477"
+ms.locfileid: "51488245"
 ---
 # <a name="create-an-ediscovery-hold"></a>Creare un blocco di eDiscovery
 
@@ -131,8 +131,8 @@ Le conversazioni che fanno parte di un canale di Microsoft Teams vengono archivi
 
 In alternativa, le conversazioni che fanno parte dell'elenco Chat in Teams (denominate *chat 1:1* o chat di gruppo *1:N)* vengono archiviate nelle cassette postali degli utenti che partecipano alla chat. I file condivisi dagli utenti nelle conversazioni di chat vengono archiviati nell'account OneDrive dell'utente che condivide il file. Pertanto, è necessario aggiungere le cassette postali dei singoli utenti e gli account di OneDrive a un blocco eDiscovery per conservare le conversazioni e i file nell'elenco di chat. È buona idea mettere un blocco sulle cassette postali dei membri di un team Microsoft oltre a mettere in attesa la cassetta postale del team e il sito.
 
-> [!IMPORTANT]
-> In un'organizzazione basata su cloud, gli utenti che partecipano a conversazioni che fanno parte dell'elenco di chat in Teams devono disporre di una cassetta postale di Exchange Online per conservare le conversazioni di chat quando la cassetta postale viene inserita in un blocco di eDiscovery. Questo perché le conversazioni che fanno parte dell'elenco di chat vengono archiviate nelle cassette postali basate sul cloud dei partecipanti alla chat. Se un partecipante alla chat non dispone di una cassetta postale di Exchange Online, non sarà possibile conservare tali conversazioni di chat. Ad esempio, in una distribuzione ibrida di Exchange, gli utenti con una cassetta postale locale possono essere in grado di partecipare a conversazioni che fanno parte dell'elenco di chat in Teams. In questo caso, tuttavia, il contenuto di queste conversazioni non può essere conservato perché questi utenti non dispongono di cassette postali basate sul cloud che possono essere conservate.
+> [!NOTE]
+> Se l'organizzazione ha una distribuzione ibrida di Exchange (o l'organizzazione sincronizza un'organizzazione di Exchange locale con Office 365) e ha abilitato Microsoft Teams, gli utenti locali possono utilizzare l'applicazione chat di Teams e partecipare a chat 1:1 e chat di gruppo 1:N. Queste conversazioni vengono archiviate nell'archiviazione basata su cloud associata a un utente locale. Se un utente locale viene posto in un blocco di eDiscovery, il contenuto della chat di Teams nell'archiviazione basata su cloud verrà conservato. Per altre informazioni, vedere [Cercare i dati delle chat di Teams degli utenti locali](search-cloud-based-mailboxes-for-on-premises-users.md).
 
 Per ulteriori informazioni sulla conservazione del contenuto di Teams, vedere [Place a Microsoft Teams user or team on legal hold.](/MicrosoftTeams/legal-hold)
 
@@ -222,10 +222,10 @@ Nella tabella seguente sono elencati i limiti per i casi di eDiscovery e i blocc
   | Descrizione del limite | Limite |
   |:-----|:-----|
   |Numero massimo di casi per un'organizzazione.  <br/> |Nessun limite  <br/> |
-  |Numero massimo di blocchi di eDiscovery per un'organizzazione.  <br/> |10,000  <br/> |
-  |Numero massimo di cassette postali in un singolo blocco eDiscovery. Questo limite include il totale combinato delle cassette postali degli utenti e le cassette postali associate ai gruppi di Microsoft 365, Microsoft Teams e Gruppi di Yammer.  <br/> |1,000  <br/> |
+  |Numero massimo di blocchi di eDiscovery per un'organizzazione.  <br/> |10.000  <br/> |
+  |Numero massimo di cassette postali in un singolo blocco eDiscovery. Questo limite include il totale combinato delle cassette postali degli utenti e le cassette postali associate ai gruppi di Microsoft 365, Microsoft Teams e Gruppi di Yammer.  <br/> |1.000  <br/> |
   |Numero massimo di siti in un singolo blocco eDiscovery. Questo limite include il totale combinato dei siti di OneDrive for Business, dei siti di SharePoint e dei siti associati ai gruppi di Microsoft 365, Microsoft Teams e Yammer.  <br/> |100  <br/> |
-  |Numero massimo di casi visualizzati nella home page di eDiscovery e numero massimo di elementi visualizzati nelle schede Esenzioni, Ricerche ed Esportazione all'interno di un caso. <sup>1</sup> |1,000|
+  |Numero massimo di casi visualizzati nella home page di eDiscovery e numero massimo di elementi visualizzati nelle schede Esenzioni, Ricerche ed Esportazione all'interno di un caso. <sup>1</sup> |1.000|
   |||
 
    > [!NOTE]
