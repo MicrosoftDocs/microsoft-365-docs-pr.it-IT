@@ -90,7 +90,7 @@
           items:
             - name: Panoramica
               href: defender/get-started.md
-            - name: Attivare Microsoft Threat Protection
+            - name: Attivare Microsoft 365 Defender
               href: defender/m365d-enable.md
             - name: Distribuire i servizi supportati
               href: defender/deploy-supported-services.md
@@ -140,6 +140,12 @@
                       href: defender/investigate-users.md
                 - name: Ricevere notifiche tramite posta elettronica
                   href: defender/get-incident-notifications.md
+            - name: Microsoft Threat Experts
+              items:
+                - name: Panoramica di Microsoft Threat Experts
+                  href: mtp/microsoft-threat-experts.md
+                - name: Configurare e gestire le funzionalità di Microsoft Threat Experts
+                  href: mtp/configure-microsoft-threat-experts.md
             - name: Analisi e risposta alle minacce automatizzate
               items:
                 - name: Panoramica di Analisi e risposta alle minacce automatizzate
@@ -422,7 +428,7 @@
             - name: Sicuro per impostazione predefinita
               href: ./office-365-security/secure-by-default.md
             - name: Configurare i criteri anti-phishing in Defender per Office 365
-              href: ./office-365-security/configure-atp-anti-phishing-policies.md
+              href: ./office-365-security/configure-mdo-anti-phishing-policies.md
             - name: Configurare i criteri anti-malware
               href: ./office-365-security/configure-anti-malware-policies.md
             - name: Configurare criteri di protezione da posta indesiderata
