@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 localization_priority: None
 description: Panoramica di Viva Topics.
-ms.openlocfilehash: 68a88e74a674a7bbc290ae0e8f88bfbe0277d910
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4598c47b07287789a7a194914232799de5ca7b85
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917381"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488158"
 ---
 # <a name="microsoft-viva-topics-overview"></a>Panoramica di Microsoft Viva Topics 
 
@@ -99,7 +99,7 @@ Vedere [Gestisci argomenti nel Centro argomenti](manage-topics.md) per ulteriori
 
 ## <a name="admin-controls"></a>Controlli amministratore
 
-I controlli amministratore nell'interfaccia di amministrazione di Microsoft 365 consentono di gestire la rete di informazioni. Consentono a un amministratore globale di Microsoft 365 o di SharePoint di:
+I controlli dell'amministratore nell'interfaccia di amministrazione di Microsoft 365 consentono di gestire Viva Topics. Consentono a un amministratore globale di Microsoft 365 o di SharePoint di:
 
 - Controllare quali utenti dell'organizzazione possono visualizzare gli argomenti nelle pagine moderne di SharePoint o nei risultati della ricerca di SharePoint.
 - Controllare quali siti di SharePoint verranno sottoposti a ricerca per indicizzazione per identificare gli argomenti.

@@ -1,5 +1,5 @@
 ---
-title: Filtro contenuto Web
+title: Filtro contenuti Web
 description: Usare il filtro contenuto Web in Microsoft Defender ATP per tenere traccia e regolare l'accesso ai siti Web in base alle categorie di contenuto.
 keywords: protezione Web, protezione dalle minacce Web, esplorazione Web, monitoraggio, report, schede, elenco di domini, sicurezza, phishing, malware, exploit, siti Web, protezione di rete, Edge, Internet Explorer, Chrome, Firefox, web browser
 search.product: eADQiWindows 10XVcnh
@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a8ab1ba1f0dc1bb629e438380b7b77e1ed221f08
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 16f0d96b75ec7035ca133f75a83df1f284ee5c4b
+ms.sourcegitcommit: 847b0920016ae20c82a0501bda6019cd940482df
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186030"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51484745"
 ---
-# <a name="web-content-filtering"></a>Filtro contenuto Web
+# <a name="web-content-filtering"></a>Filtro contenuti Web
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > [!IMPORTANT]
@@ -60,7 +60,7 @@ Per un'esperienza più facile da usare nel browser, prendi in considerazione l'u
 
 Prima di provare questa funzionalità, verificare di disporre dei requisiti seguenti:
 
-- Licenza di Windows 10 Enterprise E5 O componente aggiuntivo Microsoft 365 E3 + Microsoft 365 E5 Security.
+- Windows 10 Enterprise E5, Microsoft 365 E5, Microsoft 365 E5 Security, Microsoft 365 E3 + Componente aggiuntivo Microsoft 365 E5 Security o la licenza autonoma di Microsoft Defender for Endpoint. 
 - Accesso al portale di Microsoft Defender Security Center
 - Dispositivi che eseguono l'aggiornamento dell'anniversario di Windows 10 (versione 1607) o successiva con l'aggiornamento MoCAMP più recente.
 
@@ -160,9 +160,11 @@ Usa il filtro dell'intervallo di tempo nella parte superiore sinistra della pagi
 
 - I dispositivi non assegnati avranno dati non corretti visualizzati nel report. Nel pivot Report details > Device groups, you may see a row with a blank Device Group field. Questo gruppo contiene i dispositivi non assegnati prima di essere inseriti nel gruppo specificato. Il report per questa riga potrebbe non contenere un conteggio accurato dei dispositivi o dei conteggi di accesso.
 
+- I report filtro contenuto Web sono attualmente limitati alla visualizzazione dei primi 5.000 record. Ad esempio, il report "Domini" mostrerà solo un massimo di 5000 domini principali per una determinata query di filtro, se applicabile. 
+
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Panoramica della protezione Web](web-protection-overview.md)
-- [Protezione dalle minacce Web](web-threat-protection.md)
-- [Monitorare la sicurezza Web](web-protection-monitoring.md)
-- [Rispondere alle minacce Web](web-protection-response.md)
+- [Panoramica protezione Web](web-protection-overview.md)
+- [Protezione dalle minacce sul Web](web-threat-protection.md)
+- [Monitorare la sicurezza sul Web](web-protection-monitoring.md)
+- [Rispondere alle minacce sul Web](web-protection-response.md)

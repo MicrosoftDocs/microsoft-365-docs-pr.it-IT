@@ -1,5 +1,5 @@
 ---
-title: Onboard di dispositivi Windows 10 multi-sessione in Desktop virtuale Windows
+title: Aggiungere dispositivi Windows 10 multi-sessione in Windows Virtual Desktop
 description: Altre informazioni in questo articolo sull'onboarding di dispositivi Windows 10 multi-sessione in Desktop virtuale Windows
 keywords: Desktop virtuale Windows, WVD, microsoft defender, endpoint, onboard
 search.product: eADQiWindows 10XVcnh
@@ -13,28 +13,24 @@ ms.topic: article
 author: dansimp
 ms.author: dansimp
 ms.custom: nextgen
-ms.date: 09/10/2020
 ms.reviewer: ''
 manager: dansimp
-ms.openlocfilehash: bfd447120e171fed063b3224e3a47c2ef38f0f16
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 3f925fdc514c5e53b50f748d991f54d20fb49bd0
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222612"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488146"
 ---
-# <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Onboard di dispositivi Windows 10 multi-sessione in Desktop virtuale Windows 
+# <a name="onboard-windows-10-multi-session-devices-in-windows-virtual-desktop"></a>Aggiungere dispositivi Windows 10 multi-sessione in Windows Virtual Desktop 
 6 minuti per leggere 
 
 Si applica a: 
 - Windows 10 multi-sessione in esecuzione su Desktop virtuale Windows (WVD) 
 
-> [!WARNING]
-> Il supporto di Microsoft Defender for Endpoint per gli scenari multi-sessione di Desktop virtuale Windows è attualmente in anteprima e limita fino a 25 sessioni simultanee per host/macchina virtuale. Tuttavia, gli scenari a sessione singola in Desktop virtuale Windows sono completamente supportati.
-
 Microsoft Defender for Endpoint supporta il monitoraggio sia delle sessioni VDI che di Desktop virtuale Windows. A seconda delle esigenze dell'organizzazione, potrebbe essere necessario implementare sessioni VDI o Desktop virtuale Windows per consentire ai dipendenti di accedere ai dati aziendali e alle app da un dispositivo non gestito, da una posizione remota o da uno scenario simile. Con Microsoft Defender per Endpoint, puoi monitorare queste macchine virtuali per individuare attività anomase.
 
- ## <a name="before-you-begin"></a>Prima di iniziare
+ ## <a name="before-you-begin"></a>Informazioni preliminari
 Acquisire familiarità con le considerazioni [relative a VDI non persistente.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-endpoints-vdi#onboard-non-persistent-virtual-desktop-infrastructure-vdi-devices-1) Desktop [virtuale Windows](https://docs.microsoft.com/azure/virtual-desktop/overview) non offre opzioni di non persistenza, ma offre modi per usare un'immagine Windows dorata che può essere usata per effettuare il provisioning di nuovi host e ridistribuire i computer. Ciò aumenta la volatilità nell'ambiente e influisce quindi sulle voci create e gestite nel portale di Microsoft Defender for Endpoint, riducendo potenzialmente la visibilità per gli analisti della sicurezza.
 
 > [!NOTE]
