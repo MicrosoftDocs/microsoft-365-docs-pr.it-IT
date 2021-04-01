@@ -3,18 +3,19 @@ title: Microsoft Managed Desktop è la scelta giusta per te
 description: Orientamento su cosa sia il servizio e scorciatoie per articoli per pubblici diversi
 keywords: Microsoft Managed Desktop, Microsoft 365, servizi, documentazione
 ms.service: m365-md
+audience: ITpro
 author: jaimeo
 ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 07d3d50f012b2d93e9f7a75f47b0c35514b51350
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 73ce64bd83b475cc7cc0f78b6ac4a06683264144
+ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920621"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "51445555"
 ---
 # <a name="what-is-microsoft-managed-desktop"></a>Cos'è Microsoft Managed Desktop?
 
@@ -57,19 +58,22 @@ Gli amministratori IT traggono vantaggio da queste caratteristiche:
 Microsoft Managed Desktop gestisce i dispositivi registrati e il software Microsoft in uso.
 
 - **Hardware:** anziché far ricercare e verificare dal tuo reparto IT i dispositivi (e i relativi driver), i dispositivi specifici vengono testati con attenzione da Microsoft Managed Desktop, creando una [serie di dispositivi](../service-description/device-list.md) che soddisfano i requisiti di prestazioni a livello aziendale, garantiti per l'uso. È possibile procurarsi i dispositivi da se (o collaborare con un partner) o riutilizzare i dispositivi già esistenti, purché siano nell'elenco approvato. La registrazione dei dispositivi è facile e immediata. Prima di essere distribuiti, è anche possibile [personalizzare](../working-with-managed-desktop/config-setting-overview.md) alcuni caratteristiche del dispositivo per gli utenti.
+
 - **Aggiornamenti:** Microsoft Managed Desktop consente di configurare e gestire tutti gli aspetti dei [gruppi di distribuzione](../service-description/updates.md) per quanto riguarda aggiornamenti di qualità e funzionalità di Windows 10, driver, firmware, definizioni antivirus e app Microsoft 365 per gli aggiornamenti aziendali. Questo include test e verifica approfonditi di tutti gli aggiornamenti, assicurando che i dispositivi registrati siano sempre aggiornati, riducendo al minimo i disservizi, così da liberare il tuo reparto IT.
-- **App:** nell'ambito di Microsoft 365 Enterprise, Microsoft include (e gestisce) diverse app Microsoft fondamentali. Probabilmente ti occorrono anche altre app per la tua azienda. Anziché far testare, creare e distribuire le app dal tuo reparto IT, Microsoft ti aiuta a distribuirle e può assisterti con [Desktop App Assure](/fasttrack/win-10-desktop-app-assure) se necessario. Ulteriori informazioni su [App in Microsoft Managed Desktop](../get-ready/apps.md).
+
+- **App:** nell'ambito di Microsoft 365 Enterprise, Microsoft include (e gestisce) diverse app Microsoft fondamentali. Probabilmente ti occorrono anche altre app per la tua azienda. Il programma [FastTrack](https://www.microsoft.com/FastTrack) di Microsoft consente di distribuire facilmente tali app evitando di rivolgersi al reparto IT per testarle, crearne i pacchetti e distribuirle. Il programma [App Assure](https://docs.microsoft.com/fasttrack/products-and-capabilities#app-assuree) di Microsoft è inoltre utile per risolvere i problemi di compatibilità delle app che si verificano quando si esegue la migrazione alle versioni più recenti dei prodotti. Ulteriori informazioni su [App in Microsoft Managed Desktop](../get-ready/apps.md).
 
 
 ## <a name="device-monitoring"></a>Monitoraggio del dispositivo
 
 Microsoft contribuisce a mantenere la sicurezza dei propri dispositivi grazie a un centro operativo dedicato, che monitora i dispositivi e usa i dati delle minacce che vengono analizzati ogni mese. Tali caratteristiche di sicurezza sono integrate anziché aggiunte in un secondo momento.
 
-Il monitoraggio dell'integrità dei dispositivi include anche informazioni approfondite sulle prestazioni dei dispositivi. Maggiori informazioni su [Operazioni e monitoraggio per Microsoft Managed Desktop](../service-description/operations-and-monitoring.md)
+Il monitoraggio dell'integrità dei dispositivi include anche informazioni approfondite sulle prestazioni dei dispositivi. Per altre informazioni, vedere [Operazioni e monitoraggio per Microsoft Managed Desktop](../service-description/operations-and-monitoring.md).
 
 
-## <a name="need-more-details"></a>Ti servono altri dettagli?
-Per altre informazioni sul valore di Microsoft Managed Desktop, incluse le storie di clienti, consultare[Microsoft Managed Desktop](https://aka.ms/mmd). Le cose più interessanti da cui iniziare sono [Roadmap](https://aka.ms/AA6jiam), [Caso studio Forrester Total Economic Impact](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/forrester-tei-study.pdf), e una versione scaricabile con [una pagina di riepilogo](https://aka.ms/AA6ob3h). Per altre informazioni, consultare il [blog](https://aka.ms/AA6l2dd) di Microsoft Managed Desktop.
+## <a name="need-more-details"></a>Servono altre informazioni?
+
+Per altre informazioni sul valore di Microsoft Managed Desktop, incluse le storie di clienti, vedere [Microsoft Managed Desktop](https://aka.ms/mmd). Le cose più interessanti da cui iniziare sono [Roadmap](https://aka.ms/AA6jiam), [Caso studio Forrester Total Economic Impact](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/managed-desktop/intro/downloads/forrester-tei-study.pdf), e una versione scaricabile con [una pagina di riepilogo](https://aka.ms/AA6ob3h). Per altre informazioni, consultare il [blog](https://aka.ms/AA6l2dd) di Microsoft Managed Desktop.
 
 Se Microsoft Managed Desktop risulta più appropriato per la tua azienda, puoi approfondire la documentazione aggiuntiva che descrive il servizio in dettagli, in particolar modo su come preparare la tua azienda alla registrazione, come iniziare a usare il servizio e le operazioni in seguito, includendo l’assistenza per te e gli utenti, se necessario. Se sei già pronto a iniziare, contatta il [team degli account locali](https://pages.email.office.com/contactmmd/).
 
