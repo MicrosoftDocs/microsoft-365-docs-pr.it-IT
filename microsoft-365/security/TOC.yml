@@ -28,26 +28,14 @@
           href: ./office-365-security/sharepoint-file-access-policies.md
         - name: Criteri MCAS consigliati per le app SaaS
           href: ./office-365-security/mcas-saas-access-policies.md
-    - name: Centro sicurezza Microsoft 365
-      href: defender/overview-security-center.md
-    - name: Microsoft Secure Score
-      items:
-        - name: Panoramica su Secure Score
-          href: defender/microsoft-secure-score.md
-        - name: Valutazione del profilo di sicurezza
-          href: defender/microsoft-secure-score-improvement-actions.md
-        - name: Tenere traccia della cronologia del punteggio e raggiungere gli obiettivi
-          href: defender/microsoft-secure-score-history-metrics-trends.md
-        - name: Novità in arrivo
-          href: defender/microsoft-secure-score-whats-coming.md
-        - name: Novità
-          href: defender/microsoft-secure-score-whats-new.md
     - name: Microsoft 365 Defender
       items:
         - name: Panoramica
           items:
             - name: Che cos'è Microsoft 365 Defender?
               href: defender/microsoft-365-defender.md
+            - name: Centro sicurezza Microsoft 365
+              href: defender/overview-security-center.md
             - name: Novità di Microsoft 365 Defender
               href: defender/whats-new.md
             - name: Defender per endpoint nel Centro sicurezza Microsoft 365
@@ -116,6 +104,18 @@
               href: defender/m365d-pilot.md
             - name: Attivare le domande frequenti
               href: defender/m365d-enable-faq.md
+            - name: Microsoft Secure Score
+              items:
+                - name: Panoramica su Secure Score
+                  href: defender/microsoft-secure-score.md
+                - name: Valutazione del profilo di sicurezza
+                  href: defender/microsoft-secure-score-improvement-actions.md
+                - name: Tenere traccia della cronologia del punteggio e raggiungere gli obiettivi
+                  href: defender/microsoft-secure-score-history-metrics-trends.md
+                - name: Novità in arrivo
+                  href: defender/microsoft-secure-score-whats-coming.md
+                - name: Novità
+                  href: defender/microsoft-secure-score-whats-new.md
             - name: Analisi delle minacce
               items:
                 - name: Panoramica dell'analisi delle minacce

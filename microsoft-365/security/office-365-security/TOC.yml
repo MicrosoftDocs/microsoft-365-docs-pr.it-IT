@@ -379,8 +379,6 @@
               href: move-domains-and-settings-from-one-eop-organization-to-another-eop-organization.md
             - name: Gestire i gruppi di ruoli in Exchange Online Protection autonomo
               href: manage-admin-role-group-permissions-in-eop.md
-    - name: Sicurezza Microsoft 365
-      href: ../index.yml
     - name: Microsoft 365 Defender
       href: ../index.yml
     - name: Microsoft Defender per endpoint
