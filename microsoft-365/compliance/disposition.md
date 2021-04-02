@@ -16,12 +16,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Monitorare e gestire lo smaltimento del contenuto, sia che si utilizzi una revisione per l'eliminazione o che il contenuto venga eliminato automaticamente in base alle impostazioni configurate.
-ms.openlocfilehash: d9786b5e93801153e168784d51e37a00ee1822bc
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c49f669498424169a89fa99fcdd259de1f5c720b
+ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051928"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51488169"
 ---
 # <a name="disposition-of-content"></a>Eliminazione del contenuto
 
@@ -44,7 +44,7 @@ Per concedere agli utenti solo le autorizzazioni necessarie per le revisioni per
 
 Inoltre, per visualizzare il contenuto degli elementi durante il processo di eliminazione, aggiungere utenti ai due gruppi di ruoli seguenti: **Visualizzatore contenuto di Esplora contenuto** e **Visualizzatore elenco di Esplora contenuto**. Se gli utenti non hanno le autorizzazioni di questi gruppi di ruoli, possono comunque selezionare un'azione di revisione per l'eliminazione per completare l'operazione, ma devono farlo senza poter vedere il contenuto dell'elemento nel centro conformità.
 
-Per le istruzioni per configurare queste autorizzazioni, vedere [Fornire agli utenti l'accesso al Centro sicurezza e conformità di Office 365](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md).
+Per le istruzioni per configurare queste autorizzazioni, vedere [Fornire agli utenti l'accesso al Centro sicurezza e conformità di Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 ### <a name="enable-auditing"></a>Abilitazione del controllo
 
@@ -124,16 +124,21 @@ Il contenuto in attesa di una revisione per l'eliminazione viene eliminato solo 
 
 ## <a name="disposition-of-records"></a>Eliminazione dei record
 
-Usare la scheda **eliminazione** della pagina **gestione record** per identificare i record che vengono ora eliminati, automaticamente o dopo una revisione dell’eliminazione. Questi elementi visualizzano i **record eliminati** nella colonna **Tipo**. Ad esempio:
+Usare la scheda **Eliminazione** della pagina **Gestione record** per identificare:
+
+- Elementi eliminati in seguito a una revisione per l'eliminazione.
+- Elementi contrassegnati come record o record normativi che sono stati automaticamente eliminati alla fine del periodo di conservazione.
+
+Questi elementi visualizzano i **record eliminati** nella colonna **Tipo**. Ad esempio:
 
 ![Elementi eliminati senza revisione per l'eliminazione](../media/records-disposed2.png)
 
-Gli elementi visualizzati nella scheda **elementi eliminati** delle etichette dei record vengono conservati per un massimo di sette anni dalla data di eliminazione dell'elemento, con un limite di 1 milione di elementi per ogni record per quel periodo. Se la cifra di **Conteggio** visualizzata si avvicina al limite di 1 milione e occorre prova di eliminazione dei record, contattare il [supporto tecnico Microsoft](/office365/admin/contact-support-for-business-products).
+Gli elementi visualizzati nella scheda **Elementi eliminati** vengono conservati per un massimo di sette anni dalla data di eliminazione dell'elemento, con un limite di 1 milione di elementi per ogni record per quel periodo. Se la cifra di **Conteggio** visualizzata si avvicina al limite di 1 milione e occorre prova di eliminazione dei record, contattare il [supporto tecnico Microsoft](/office365/admin/contact-support-for-business-products).
 
 > [!NOTE]
-> Questa funzionalità si basa sulle informazioni provenienti dal [Log di controllo unificato](search-the-audit-log-in-security-and-compliance.md) e, di conseguenza, è necessario che il controllo sia [abilitato e con ricerca consentita](turn-audit-log-search-on-or-off.md) in modo da acquisire gli eventi corrispondenti.
+> Questa funzionalità usa le informazioni provenienti dal [Log di controllo unificato](search-the-audit-log-in-security-and-compliance.md) e, di conseguenza, è necessario che il controllo sia [abilitato e con ricerca consentita](turn-audit-log-search-on-or-off.md) in modo da acquisire gli eventi corrispondenti.
 
-Per il controllo, cercare **File eliminato contrassegnato come record** nella categoria **Attività su file e pagine**. Questo evento di controllo è applicabile ai documenti e ai messaggi di posta elettronica.
+Per il controllo degli elementi eliminati contrassegnati come record o come record normativi, cercare **File eliminato contrassegnato come record** nella categoria **Attività su file e pagine**. Questo evento di controllo è applicabile ai documenti e ai messaggi di posta elettronica.
 
 ## <a name="filter-and-export-the-views"></a>Filtrare ed esportare le visualizzazioni
 

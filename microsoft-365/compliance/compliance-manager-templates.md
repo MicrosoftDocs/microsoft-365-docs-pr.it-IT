@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come usare e gestire i modelli per la creazione di valutazioni in Microsoft Compliance Manager. Creare e modificare modelli utilizzando un file excel formattato.
-ms.openlocfilehash: 2d95aa4172d80a81e8c635edb01ab56579513c53
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ac5fe5f0a62c3b20021a9829499d8cec9339f72a
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922786"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499024"
 ---
 # <a name="working-with-assessment-templates-in-compliance-manager"></a>Utilizzo dei modelli di valutazione in Compliance Manager
 
@@ -38,17 +38,17 @@ Un modello è un framework di controlli per la creazione di una valutazione in C
 
 #### <a name="included-and-premium-templates"></a>Modelli inclusi e premium
 
-I modelli disponibili per l'utilizzo si basano sul contratto di licenza dell'organizzazione ([visualizzare i dettagli della licenza](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance)). Esistono due categorie di modelli: incluso e premium.
+I modelli disponibili per l'utilizzo si basano sul contratto di licenza dell'organizzazione ([visualizzare i dettagli della licenza](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)). Esistono due categorie di modelli: incluso e premium.
 
 1. **I modelli inclusi** sono disponibili per l'utilizzo nell'ambito del contratto di licenza dell'organizzazione.
-2. **I modelli** Premium devono essere acquistati per poter creare valutazioni da essi. Dopo l'acquisto, è possibile creare tutte le valutazioni da un modello in base alle esigenze.
+2. **I modelli** Premium devono essere acquistati per poter creare valutazioni da essi. Dopo l'acquisto, è possibile creare tutte le valutazioni da un modello in base alle esigenze. [Scopri come acquistare modelli premium.](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager)
 
 #### <a name="active-and-inactive-templates"></a>Modelli attivi e inattivi
 
 I modelli visualizzano lo stato di attivazione attivo o inattivo:
 
 - Un modello viene considerato **attivo** dopo aver creato una valutazione da tale modello.
-- Un modello viene considerato **inattivo** se l'organizzazione non lo usa come framework per una valutazione.
+- Un modello viene considerato **inattivo** se l'organizzazione non lo usa per una valutazione.
 
 Quando acquisti un modello premium e crei una valutazione da esso, tale modello è attivo per un anno. L'acquisto verrà rinnovato automaticamente a meno che non si annulli il rinnovo.
 
@@ -60,7 +60,7 @@ Ad esempio, se il contatore mostra 2/5, significa che l'organizzazione ha attiva
 
 Se il contatore indica 5/2, significa che l'organizzazione supera i limiti e deve acquistare 3 dei modelli premium in uso.
 
-Per [ulteriori dettagli, vedere Linee guida](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) per le licenze di Compliance Manager.
+Per [ulteriori dettagli, vedere Linee guida](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance#compliance-manager) per le licenze di Compliance Manager.
 
 ## <a name="viewing-and-managing-templates-from-the-assessment-templates-page"></a>Visualizzazione e gestione dei modelli dalla pagina dei modelli di valutazione
 

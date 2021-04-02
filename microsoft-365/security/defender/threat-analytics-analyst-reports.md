@@ -11,8 +11,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: dc534b7bec27784ccf25f92ab0282fdbecdc9196
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f916137be71dffeaed7e3718286032a17c9f8e04
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066733"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498473"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics"></a>Informazioni sul report degli analisti nell'analisi delle minacce
 
@@ -35,7 +35,7 @@ ms.locfileid: "51066733"
 **Si applica a:**
 - Microsoft 365 Defender
 
-> Vuoi provare Microsoft 365 Defender? È possibile [valutarlo in un ambiente lab o](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) eseguire il progetto pilota in [produzione.](m365d-pilot.md?ocid=cx-evalpilot)
+> Vuoi provare Microsoft 365 Defender? Puoi [valutarlo in un ambiente lab](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) o [eseguire il progetto pilota in produzione](m365d-pilot.md?ocid=cx-evalpilot).
 >
 
 [!INCLUDE [Prerelease](../includes/prerelease.md)]
@@ -56,7 +56,7 @@ Ogni sezione del report degli analisti è progettata per fornire informazioni ut
 | MiTRE ATT&CK osservate | Come vengono mappate le tecniche osservate al framework di attacco [MITRE ATT&CK](https://attack.mitre.org/) | 
 | [Mitigazioni](#apply-additional-mitigations) | Suggerimenti che possono arrestare o ridurre l'impatto della minaccia. Questa sezione include anche le mitigazioni che non vengono rilevate in modo dinamico come parte del report di analisi delle minacce. |
 | [Dettagli rilevamento](#understand-how-each-threat-can-be-detected) | Rilevamenti specifici e generici forniti da soluzioni di sicurezza Microsoft che possono visualizzare attività o componenti associati alla minaccia. | 
-| [Ricerca avanzata](#find-subtle-threat-artifacts-using-advanced-hunting) | [Query di ricerca avanzate per](advanced-hunting-overview.md) identificare in modo proattivo le possibili attività di minaccia. La maggior parte delle query viene fornita per integrare i rilevamenti, in particolare per individuare componenti o comportamenti potenzialmente dannosi che non possono essere valutati in modo dinamico come dannosi. | 
+| [Rilevazione avanzata](#find-subtle-threat-artifacts-using-advanced-hunting) | [Query di ricerca avanzate per](advanced-hunting-overview.md) identificare in modo proattivo le possibili attività di minaccia. La maggior parte delle query viene fornita per integrare i rilevamenti, in particolare per individuare componenti o comportamenti potenzialmente dannosi che non possono essere valutati in modo dinamico come dannosi. | 
 | Riferimenti | Pubblicazioni Microsoft e di terze parti a cui fanno riferimento gli analisti durante la creazione del report. Il contenuto dell'analisi delle minacce si basa sui dati convalidati dai ricercatori Microsoft. Le informazioni provenienti da fonti di terze parti disponibili pubblicamente sono chiaramente identificate come tali. | 
 | Log delle modifiche | Il momento in cui il report è stato pubblicato e quando sono state apportate modifiche significative al report. |
 

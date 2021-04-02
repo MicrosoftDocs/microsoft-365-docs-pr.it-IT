@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: acb259088717b2772ec9798027545f2ff6dbc5e0
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ab6bdefb457fb31df98d829ee801b72f4c8ae70a
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068669"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499696"
 ---
 # <a name="advanced-hunting-schema---naming-changes"></a>Schema di ricerca avanzata - Modifiche di denominazione
 
@@ -62,15 +62,15 @@ Le modifiche di denominazione vengono applicate automaticamente alle query salva
 | `DetectionSource` | CustomerTI |  Ti personalizzato | Rebranding |
 | `DetectionSource` | OfficeATP | Microsoft Defender per Office 365 | Rebranding |
 | `DetectionSource` | MTP   | Microsoft 365 Defender | Rebranding |
-| `DetectionSource` | AzureATP |    Microsoft Defender per identità | Rebranding |
+| `DetectionSource` | AzureATP |    Che cosa è Microsoft Defender per identità? | Rebranding |
 | `DetectionSource` | CustomDetection   | Rilevamento personalizzato | Rebranding |
 | `DetectionSource` | AutomatedInvestigation |Indagine automatizzata | Rebranding |
 | `DetectionSource` | ThreatExperts | Microsoft Threat Experts | Rebranding |
 | `DetectionSource` | TI di terze parti | Sensori di terze parti | Rebranding |
-| `ServiceSource` | Microsoft Defender ATP| Microsoft Defender ATP | Rebranding |
+| `ServiceSource` | Microsoft Defender ATP| Microsoft Defender per endpoint | Rebranding |
 |`ServiceSource` |Microsoft Threat Protection   | Microsoft 365 Defender | Rebranding |
 | `ServiceSource` | Office 365 ATP  |Microsoft Defender per Office 365 | Rebranding |
-| `ServiceSource` |Azure ATP    |Microsoft Defender per identità | Rebranding |
+| `ServiceSource` |Azure ATP    |Che cosa è Microsoft Defender per identità? | Rebranding |
 
 `DetectionSource`è disponibile nella [tabella AlertInfo.](advanced-hunting-alertinfo-table.md) `ServiceSource`è disponibile nelle [tabelle AlertEvidence](advanced-hunting-alertevidence-table.md) [e AlertInfo.](advanced-hunting-alertinfo-table.md) 
 
@@ -105,5 +105,5 @@ Le modifiche di denominazione vengono applicate automaticamente alle query salva
 
 
 ## <a name="related-topics"></a>Argomenti correlati
-- [Panoramica della ricerca avanzata](advanced-hunting-overview.md)
+- [Panoramica della rilevazione avanzata](advanced-hunting-overview.md)
 - [Comprensione dello schema](advanced-hunting-schema-tables.md)

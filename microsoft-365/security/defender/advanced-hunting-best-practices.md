@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 53ec8146080e88b913de1f58d16750ffa766a1b2
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e0744a01fc599b66f371b01194579f4845ed19fb
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063589"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498724"
 ---
 # <a name="advanced-hunting-query-best-practices"></a>Procedure consigliate per query in Ricerca avanzata
 
@@ -268,5 +268,5 @@ Per informazioni su tutte le funzioni di analisi supportate, [vedere Funzioni st
 - [Documentazione del linguaggio di query Kusto](/azure/data-explorer/kusto/query/)
 - [Quote e parametri di utilizzo](advanced-hunting-limits.md)
 - [Gestire gli errori di ricerca avanzata](advanced-hunting-errors.md)
-- [Panoramica della ricerca avanzata](advanced-hunting-overview.md)
+- [Panoramica della rilevazione avanzata](advanced-hunting-overview.md)
 - [Capire il linguaggio delle query](advanced-hunting-query-language.md)

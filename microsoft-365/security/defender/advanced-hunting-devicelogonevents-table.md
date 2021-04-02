@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: e1d1284fa6132e37b31245bd45557e180d0135f2
-ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
+ms.openlocfilehash: 781013878ee0aa097780ca6bb646cb956c93149d
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51382674"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498536"
 ---
 # <a name="devicelogonevents"></a>DeviceLogonEvents
 
@@ -92,7 +92,7 @@ Per informazioni su altre tabelle nello schema per Ricerca avanzata, [vedere il 
 | `AdditionalFields` | stringa | Informazioni aggiuntive sull'evento in formato matrice JSON |
 
 ## <a name="related-topics"></a>Argomenti correlati
-- [Panoramica della ricerca avanzata](advanced-hunting-overview.md)
+- [Panoramica della rilevazione avanzata](advanced-hunting-overview.md)
 - [Capire il linguaggio delle query](advanced-hunting-query-language.md)
 - [Utilizzare le query condivise](advanced-hunting-shared-queries.md)
 - [Cercare tra dispositivi, posta elettronica, app e identità](advanced-hunting-query-emails-devices.md)

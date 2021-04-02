@@ -9,20 +9,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 599eab29628d11d67843f89a0eb59bb4db1e66ad
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 2ebc826e21246381d3220855f7e8cb01741f12e9
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185456"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499382"
 ---
 # <a name="understand-the-analyst-report-in-threat-analytics"></a>Informazioni sul report degli analisti nell'analisi delle minacce
 
@@ -51,7 +51,7 @@ Ogni sezione del report degli analisti è progettata per fornire informazioni ut
 | MiTRE ATT&CK osservate | Come vengono mappate le tecniche osservate al framework di attacco [MITRE ATT&CK](https://attack.mitre.org/) | 
 | [Mitigazioni](#apply-additional-mitigations) | Suggerimenti che possono arrestare o ridurre l'impatto della minaccia. Questa sezione include anche le mitigazioni che non vengono rilevate in modo dinamico come parte del report di analisi delle minacce. |
 | [Dettagli rilevamento](#understand-how-each-threat-can-be-detected) | Rilevamenti specifici e generici forniti da soluzioni di sicurezza Microsoft che possono visualizzare attività o componenti associati alla minaccia. | 
-| [Ricerca avanzata](#find-subtle-threat-artifacts-using-advanced-hunting) | [Query di ricerca avanzate per](advanced-hunting-overview.md) identificare in modo proattivo le possibili attività di minaccia. La maggior parte delle query viene fornita per integrare i rilevamenti, in particolare per individuare componenti o comportamenti potenzialmente dannosi che non possono essere valutati in modo dinamico come dannosi. | 
+| [Rilevazione avanzata](#find-subtle-threat-artifacts-using-advanced-hunting) | [Query di ricerca avanzate per](advanced-hunting-overview.md) identificare in modo proattivo le possibili attività di minaccia. La maggior parte delle query viene fornita per integrare i rilevamenti, in particolare per individuare componenti o comportamenti potenzialmente dannosi che non possono essere valutati in modo dinamico come dannosi. | 
 | Riferimenti | Pubblicazioni Microsoft e di terze parti a cui fanno riferimento gli analisti durante la creazione del report. Il contenuto dell'analisi delle minacce si basa sui dati convalidati dai ricercatori Microsoft. Le informazioni provenienti da fonti di terze parti disponibili pubblicamente sono chiaramente identificate come tali. | 
 | Log delle modifiche | Il momento in cui il report è stato pubblicato e quando sono state apportate modifiche significative al report. |
 

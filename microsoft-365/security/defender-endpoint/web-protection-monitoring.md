@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 326e508fbf5a0e968e890f5727a6ae542de437c2
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 629e18c7387f6063254f3482f93a5e17023c7316
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186006"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499952"
 ---
 # <a name="monitor-web-browsing-security"></a>Monitorare la sicurezza dell'esplorazione Web
 
@@ -68,7 +68,7 @@ Seleziona un dominio per visualizzare l'elenco dei dispositivi che hanno tentato
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Panoramica della protezione Web](web-protection-overview.md)
-- [Filtro contenuto Web](web-content-filtering.md)
-- [Protezione dalle minacce Web](web-threat-protection.md)
-- [Rispondere alle minacce Web](web-protection-response.md)
+- [Panoramica protezione Web](web-protection-overview.md)
+- [Filtro contenuti Web](web-content-filtering.md)
+- [Protezione dalle minacce sul Web](web-threat-protection.md)
+- [Rispondere alle minacce sul Web](web-protection-response.md)

@@ -9,27 +9,27 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f6a7fc4d4141b19f9c5129eea9b89943d07695b2
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: b36521ada55fa3d60538beb981d487b153e7b1f9
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165778"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498750"
 ---
 # <a name="view-and-manage-custom-detection-rules"></a>Visualizzare e gestire regole di rilevamento personalizzate
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -74,5 +74,5 @@ Per visualizzare informazioni complete su una regola di rilevamento personalizza
 ## <a name="related-topics"></a>Argomenti correlati
 - [Panoramica dei rilevamenti personalizzati](overview-custom-detections.md)
 - [Creare regole di rilevamento](custom-detection-rules.md)
-- [Panoramica della ricerca avanzata](advanced-hunting-overview.md)
+- [Panoramica della rilevazione avanzata](advanced-hunting-overview.md)
 - [Visualizzare e organizzare gli avvisi](alerts-queue.md)

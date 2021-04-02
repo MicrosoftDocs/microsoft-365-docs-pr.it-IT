@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 19606b06ff1a1369614bab533a949bc383c90ad3
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ca79abfa95feb65f98ec32ae8dbc0093e34d58e6
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064733"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498425"
 ---
 # <a name="advanced-hunting-quotas-and-usage-parameters"></a>Quote di ricerca avanzate e parametri di utilizzo
 
@@ -53,5 +53,5 @@ Fare riferimento alla tabella seguente per comprendere le quote esistenti e i pa
 
 - [Procedure consigliate per la ricerca avanzata](advanced-hunting-best-practices.md)
 - [Gestire gli errori di ricerca avanzata](advanced-hunting-errors.md)
-- [Panoramica della ricerca avanzata](advanced-hunting-overview.md)
+- [Panoramica della rilevazione avanzata](advanced-hunting-overview.md)
 - [Panoramica dei rilevamenti personalizzati](custom-detections-overview.md)

@@ -19,12 +19,12 @@ ms.custom:
 description: Gli amministratori possono imparare a usare il portale invii nel Centro sicurezza e conformità & per inviare messaggi di posta elettronica sospetti, messaggi di phishing sospetti, posta indesiderata e altri messaggi, URL e file potenzialmente dannosi a Microsoft per l'analisi.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3dd566de3ba4b4281b19c423b8623f081c378bca
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6f1294335be5a82ef7219ef9096d84d840271c5b
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206733"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499326"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usare l'Invio dell'amministratore per inviare posta indesiderata sospetta, phishing, URL e file a Microsoft
 
@@ -122,9 +122,9 @@ Per altri modi per inviare messaggi di posta elettronica, URL e allegati a Micro
 
    ![Esempio di invio di allegati](../../media/submission-file-flyout.PNG)
 
-## <a name="view-admin-submissions"></a>Visualizzare gli invii di amministratori
+## <a name="view-items-submitted-for-analysis"></a>Visualizzare gli elementi inviati per l'analisi
 
-Nel Centro sicurezza & conformità passare  a Invii di gestione delle minacce, verificare di essere nella scheda \>  **Invii** dell'amministratore e quindi fare clic su **Nuovo invio.**
+Nel Centro sicurezza & conformità passare **a** Invii di gestione delle minacce , verificare di essere \> nella scheda Inviato **per l'analisi**
 
 Nella parte superiore della pagina è possibile immettere una data di inizio, una data di fine e, per impostazione predefinita, è possibile filtrare in base **all'ID** invio (un valore GUID assegnato a ogni invio) immettendo un valore nella casella e facendo clic sul pulsante ![ Aggiorna ](../../media/scc-quarantine-refresh.png) . È possibile immettere più valori separati da virgole.
 
@@ -254,6 +254,9 @@ Per esportare i risultati, fare clic **su Esporta** nella parte superiore della 
 Nella parte superiore della pagina è possibile immettere una data di inizio, una data di fine e filtrare in base a **Inviato** immettendo un valore nella casella e facendo clic sul ![ pulsante Aggiorna ](../../media/scc-quarantine-refresh.png) . È possibile immettere più valori separati da virgole.
 
 Per esportare i risultati, fare clic **su Esporta** nella parte superiore della pagina e selezionare **Dati grafico** o **Tabella.** Nella finestra di dialogo visualizzata salvare il file CSV.
+
+> [!NOTE]
+> Se le organizzazioni sono configurate per l'invio solo alla cassetta postale personalizzata, i messaggi segnalati non verranno inviati per la nuova analisi e i risultati nel portale Messaggi segnalati dall'utente saranno sempre vuoti.
 
 ## <a name="undo-user-submissions"></a>Annullare gli invii utente
 

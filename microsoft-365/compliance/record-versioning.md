@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui record che semplificano l’implementazione di una soluzione di gestione dei record in Microsoft 365.
-ms.openlocfilehash: 52ca56436686faac1d414dac47e2e9e16c36fa90
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: 5c828f06f2ce9e2bd18869f897f1f372c1a62f21
+ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408559"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "51471125"
 ---
 # <a name="use-record-versioning-to-update-records-stored-in-sharepoint-or-onedrive"></a>Usare il controllo delle versioni per aggiornare i record archiviati in SharePoint o OneDrive
 
@@ -45,7 +45,7 @@ Per usare il controllo delle versioni dei record, è necessario prima di tutto [
 
   - **Conservare un documento sempre valido che contiene tutte le versioni.** Per impostazione predefinita, ogni documento di SharePoint e OneDrive ha una cronologia delle versioni disponibile nel menu dell’elemento. In questa cronologia delle versioni è possibile individuare facilmente le versioni record e visualizzare tali documenti.
 
-> [!NOTE]
+> [!TIP]
 > Quando si usa il controllo delle versioni dei record con un'etichetta di conservazione che include un'azione di eliminazione, è consigliabile configurare anche l'impostazione di conservazione **Avvia il periodo di conservazione in base a:** impostandola su **Quando gli elementi sono stati etichettati**. Con questa impostazione dell'etichetta, l'inizio del periodo di conservazione viene reimpostato per ogni nuova versione del record, in modo da garantire l'eliminazione delle versioni meno recenti prima di quelle più recenti.
 
 Il controllo delle versioni del record è automaticamente disponibile per qualsiasi documento con un'etichetta di conservazione che contrassegna l'elemento come record. Quando un utente visualizza le proprietà del documento tramite il riquadro dei dettagli, può cambiare lo **Stato del record** da **Bloccato** a **Sbloccato**. Questa azione crea un record nella cartella Record della raccolta di archiviazione, dove rimane fino alla fine del periodo di conservazione. 

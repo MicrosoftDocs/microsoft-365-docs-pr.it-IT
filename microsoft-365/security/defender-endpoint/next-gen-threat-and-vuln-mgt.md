@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: overview
 ms.technology: mde
-ms.openlocfilehash: d1402d8486725559335a5edc5ee13c78a0125932
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 0c3c5ebbcd4483cae159fe9b46a6f4c376443be3
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186426"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499062"
 ---
 # <a name="threat-and-vulnerability-management"></a>Gestione di minacce e vulnerabilità
 
@@ -90,7 +90,7 @@ Area | Descrizione
 [**Correzione**](tvm-remediation.md) | Vedi le attività di correzione create e le eccezioni di raccomandazione.
 [**Inventario software**](tvm-software-inventory.md) | Vedi l'elenco dei software vulnerabili nell'organizzazione, insieme alle informazioni sulla debolezza e sulle minacce.
 [**Punti deboli**](tvm-weaknesses.md) | Vedi l'elenco delle vulnerabilità ed esposizioni comuni (CVE) nell'organizzazione.
-[**Sequenza temporale dell'evento**](threat-and-vuln-mgt-event-timeline.md) | Visualizzare gli eventi che possono influire sui rischi dell'organizzazione.
+[**Sequenza temporale eventi**](threat-and-vuln-mgt-event-timeline.md) | Visualizzare gli eventi che possono influire sui rischi dell'organizzazione.
 
 ## <a name="apis"></a>API
 
@@ -98,13 +98,13 @@ Eseguire chiamate API correlate alla gestione delle minacce e delle vulnerabilit
 
 Vedi gli articoli seguenti per le API correlate:
 
-- [API di Microsoft Defender per endpoint supportate](exposed-apis-list.md)
+- [Accedere a API di Microsoft Defender per endpoint](exposed-apis-list.md)
 - [API del computer](machine.md)
 - [API di raccomandazione](vulnerability.md)
 - [API punteggio](score.md)
 - [API software](software.md)
 - [API di vulnerabilità](vulnerability.md)
-- [Elencare le vulnerabilità in base al computer e al software](get-all-vulnerabilities-by-machines.md)
+- [Elencare le vulnerabilità per computer e software](get-all-vulnerabilities-by-machines.md)
 
 ## <a name="see-also"></a>Vedere anche
 

@@ -1,5 +1,5 @@
 ---
-title: Visualizzare e organizzare la coda eventi imprevisti
+title: Visualizzare e organizzare la coda degli incidenti
 ms.reviewer: ''
 description: Vedi l'elenco degli eventi imprevisti e scopri come applicare filtri per limitare l'elenco e ottenere una visualizzazione più mirata.
 keywords: visualizzazione, organizzazione, eventi imprevisti, aggregazione, indagini, coda, ttp
@@ -9,27 +9,27 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f25189ac6550d9c3349e08f7e7ac685d4b8031fc
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 93aa685f12e0241758bf86d3aa956717db052e5f
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063733"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499929"
 ---
 # <a name="view-and-organize-the-microsoft-defender-for-endpoint-incidents-queue"></a>Visualizzare e organizzare la coda eventi imprevisti di Microsoft Defender per endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
@@ -57,15 +57,15 @@ Nella barra di spostamento superiore è possibile:
 
 Gravità evento imprevisto | Descrizione
 :---|:---
-Alto </br>(Rosso) | Minacce spesso associate a minacce persistenti avanzate (APT). Questi eventi imprevisti indicano un rischio elevato a causa della gravità dei danni che possono infliggere ai dispositivi.
+Alta </br>(Rosso) | Minacce spesso associate a minacce persistenti avanzate (APT). Questi eventi imprevisti indicano un rischio elevato a causa della gravità dei danni che possono infliggere ai dispositivi.
 Medio </br>(Arancione) | Minacce raramente osservate nell'organizzazione, ad esempio modifiche anomali del Registro di sistema, esecuzione di file sospetti e comportamenti osservati tipici delle fasi di attacco.
-Basso </br>(Giallo) | Minacce associate a malware e strumenti di hacking prevalenti che non indicano necessariamente una minaccia avanzata per l'organizzazione.
+Bassa </br>(Giallo) | Minacce associate a malware e strumenti di hacking prevalenti che non indicano necessariamente una minaccia avanzata per l'organizzazione.
 Informativo </br>(Grigio) | Gli incidenti in informazioni potrebbero non essere considerati dannosi per la rete, ma potrebbero essere utili da tenere traccia.
 
 ## <a name="assigned-to"></a>Assegnata a
 Puoi scegliere di filtrare l'elenco selezionando gli eventi assegnati a un altro utente o quelli assegnati a te.
 
-### <a name="category"></a>Category
+### <a name="category"></a>Categoria
 Gli incidenti vengono categorizzati in base alla descrizione della fase in cui si trova la catena di kill chain della sicurezza informatica. Questa visualizzazione consente all'analista delle minacce di determinare la priorità, l'urgenza e la strategia di risposta corrispondente da distribuire in base al contesto.
 
 ### <a name="status"></a>Stato
@@ -85,7 +85,7 @@ Ad esempio: *evento imprevisto a più fasi in più endpoint segnalati da più or
 
 
 ## <a name="see-also"></a>Vedere anche
-- [Coda eventi imprevisti](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/view-incidents-queue)
-- [Gestire gli eventi imprevisti](manage-incidents.md)
-- [Indagare sugli eventi imprevisti](investigate-incidents.md)
+- [Coda incidenti](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/view-incidents-queue)
+- [Gestire gli incidenti](manage-incidents.md)
+- [Indagare sugli incidenti](investigate-incidents.md)
 

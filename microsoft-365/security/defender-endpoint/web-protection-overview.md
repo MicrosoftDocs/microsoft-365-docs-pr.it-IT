@@ -1,5 +1,5 @@
 ---
-title: Protezione Web
+title: Protezione sul Web
 description: Informazioni sulla protezione Web in Microsoft Defender ATP e su come può proteggere l'organizzazione
 keywords: protezione Web, protezione dalle minacce Web, esplorazione Web, sicurezza, phishing, malware, exploit, siti Web, protezione di rete, Edge, Internet Explorer, Chrome, Firefox, browser Web, siti Web dannosi
 search.product: eADQiWindows 10XVcnh
@@ -8,22 +8,22 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 059f960bae8a5a00f678bb6f52ef217b4f8ed7d6
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 4c04ce3479ac995e59c3bdfa9a2bdcca87eca17b
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185994"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499928"
 ---
-# <a name="web-protection"></a>Protezione Web
+# <a name="web-protection"></a>Protezione sul Web
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ La protezione Web in Microsoft Defender for Endpoint è una funzionalità di pro
 
 ![Immagine di tutte le schede di protezione Web](images/web-protection.png)
 
-## <a name="web-threat-protection"></a>Protezione dalle minacce Web
+## <a name="web-threat-protection"></a>Protezione dalle minacce sul Web
 
 Le schede che costituiscono la protezione dalle minacce Web sono i **rilevamenti** delle minacce Web nel tempo e **il riepilogo delle minacce Web.**
 
@@ -47,7 +47,7 @@ La protezione dalle minacce Web include:
 - Funzionalità di indagine sull'attività di minacce correlate al Web tramite avvisi e profili completi di URL e dispositivi che accedono a questi URL
 - Un set completo di funzionalità di sicurezza che tiene traccia delle tendenze generali di accesso a siti Web dannosi e indesiderati
 
-## <a name="web-content-filtering"></a>Filtro contenuto Web
+## <a name="web-content-filtering"></a>Filtro contenuti Web
 
 Le schede che costituiscono il filtro contenuto Web sono **Attività Web per categoria,** Riepilogo **filtro contenuto Web** e Riepilogo **attività Web.**
 
@@ -60,5 +60,5 @@ Il filtro contenuto Web include:
 
 Argomento | Descrizione
 :---|:---
-[Protezione dalle minacce Web](web-threat-protection.md) | Interrompere l'accesso a siti di phishing, vettori di malware, siti di exploit, siti non attendibili o con reputazione bassa, nonché siti bloccati.
-[Filtro contenuto Web](web-content-filtering.md) | Tenere traccia e regolare l'accesso ai siti Web in base alle categorie di contenuto.
+[Protezione dalle minacce sul Web](web-threat-protection.md) | Interrompere l'accesso a siti di phishing, vettori di malware, siti di exploit, siti non attendibili o con reputazione bassa, nonché siti bloccati.
+[Filtro contenuti Web](web-content-filtering.md) | Tenere traccia e regolare l'accesso ai siti Web in base alle categorie di contenuto.

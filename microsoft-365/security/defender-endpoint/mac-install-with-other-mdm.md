@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e3a20f0a356a32eddc05b3792c0c04c23197a7b0
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 5fa811b2419d107e91b301d5c9bad691fc016b5b
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185696"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498957"
 ---
 # <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-for-mac"></a>Distribuzione con un sistema mdm (Mobile Device Management) diverso per Microsoft Defender per Endpoint per Mac
 
@@ -43,7 +43,7 @@ Prima di iniziare, vedi la pagina principale di [Microsoft Defender per Endpoint
 ## <a name="approach"></a>Approccio
 
 > [!CAUTION]
-> Attualmente, Microsoft supporta solo Intune e JAMF per la distribuzione e la gestione di Microsoft Defender per Endpoint per Mac. Microsoft non fa alcuna garanzia, espressa o implicita, rispetto alle informazioni fornite di seguito.
+> Attualmente, Microsoft supporta ufficialmente solo Intune e JAMF per la distribuzione e la gestione di Microsoft Defender per Endpoint per Mac. Microsoft non fa alcuna garanzia, espressa o implicita, rispetto alle informazioni fornite di seguito.
 
 Se l'organizzazione usa una soluzione di gestione dei dispositivi mobili (MDM) non ufficialmente supportata, ciò non significa che non sei in grado di distribuire o eseguire Microsoft Defender per Endpoint per Mac.
 
@@ -84,6 +84,10 @@ MDM lo usa per distribuire il file di impostazioni in **/Library/Managed Prefere
 ### <a name="kernel-extension-policy"></a>Criteri di estensione kernel
 
 Configurare un criterio di estensione KEXT o kernel. Usa l'identificatore del team **UBF8T346G9** per consentire le estensioni del kernel fornite da Microsoft.
+
+> [!CAUTION]
+> Se l'ambiente è costituito da dispositivi Apple Silicon (M1), questi computer non devono ricevere profili di configurazione con criteri KEXT.
+> Apple non supporta KEXT su questi computer, la distribuzione di tale profilo non riesce nei computer M1.
 
 ### <a name="system-extension-policy"></a>Criteri di estensione di sistema
 

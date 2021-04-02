@@ -8,20 +8,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7754fa586b24fdedaa9691b45f5da4654c882a5b
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: aeeea02ca1ef2d37623e9ab434b162237c2f4946
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185982"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499901"
 ---
 # <a name="protect-your-organization-against-web-threats"></a>Proteggere l'organizzazione dalle minacce Web
 
@@ -36,7 +36,7 @@ ms.locfileid: "51185982"
 La protezione dalle minacce Web fa [parte della protezione Web](web-protection-overview.md) in Defender for Endpoint. Usa la [protezione di rete](network-protection.md) per proteggere i dispositivi dalle minacce Web. Grazie all'integrazione con Microsoft Edge e i browser di terze parti più diffusi come Chrome e Firefox, La protezione dalle minacce Web interrompe le minacce Web senza un proxy Web e può proteggere i dispositivi mentre sono in locale o in locale. La protezione dalle minacce Web interrompe l'accesso ai siti di phishing, ai vettori di malware, ai siti di exploit, a siti non attendibili o a bassa reputazione, nonché ai siti bloccati [nell'elenco degli indicatori personalizzati.](manage-indicators.md)
 
 >[!Note]
->I dispositivi possono richiedere fino a un'ora per ricevere nuovi indicatori dei clienti.
+>I dispositivi possono richiedere fino a un'ora per ricevere nuovi indicatori personalizzati.
 
 ## <a name="prerequisites"></a>Prerequisiti
 La protezione Web usa la protezione di rete per garantire la sicurezza dell'esplorazione Web in Microsoft Edge e nei Web browser di terze parti.
@@ -50,8 +50,8 @@ Per attivare la protezione di rete nei dispositivi:
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Panoramica della protezione Web](web-protection-overview.md)
-- [Protezione dalle minacce Web](web-threat-protection.md)
-- [Monitorare la sicurezza Web](web-protection-monitoring.md)
-- [Rispondere alle minacce Web](web-protection-response.md)
+- [Panoramica protezione Web](web-protection-overview.md)
+- [Protezione dalle minacce sul Web](web-threat-protection.md)
+- [Monitorare la sicurezza sul Web](web-protection-monitoring.md)
+- [Rispondere alle minacce sul Web](web-protection-response.md)
 - [Protezione di rete](network-protection.md)

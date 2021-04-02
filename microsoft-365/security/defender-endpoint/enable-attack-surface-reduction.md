@@ -1,5 +1,5 @@
 ---
-title: Abilitare le regole di riduzione della superficie di attacco
+title: Abilitare regole per la riduzione della superficie di attacco
 description: Abilita le regole di riduzione della superficie di attacco (ASR) per proteggere i dispositivi da attacchi che usano macro, script e tecniche di inserimento comuni.
 keywords: Riduzione della superficie di attacco, fianchi, sistema di prevenzione delle intrusioni host, regole di protezione, anti-exploit, antiexploit, exploit, prevenzione delle infezioni, abilitare, attivare
 search.product: eADQiWindows 10XVcnh
@@ -14,19 +14,19 @@ ms.author: ellevin
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 1deec767c6af777b23ab5a91c9e719f690e0c048
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: bf4fa88b3fbbf5d977d54a78c480129665049b23
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165142"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499398"
 ---
-# <a name="enable-attack-surface-reduction-rules"></a>Abilitare le regole di riduzione della superficie di attacco
+# <a name="enable-attack-surface-reduction-rules"></a>Abilitare regole per la riduzione della superficie di attacco
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -137,7 +137,7 @@ Esempio:
 
 2. **Nell'Editor Gestione Criteri di gruppo** passare a Configurazione **computer** e selezionare **Modelli amministrativi.**
 
-3. Espandi l'albero fino ai **componenti di Windows** Microsoft Defender Antivirus Windows Defender riduzione della superficie di attacco  >    >  di Exploit **Guard.**  >  
+3. Espandi l'albero fino ai **componenti di Windows** Microsoft Defender  >  **Antivirus** Microsoft Defender Exploit Guard Riduzione della  >  **superficie**  >  **di attacco.**
 
 4. Selezionare **Configura regole di riduzione della superficie di attacco** e selezionare **Abilitato.** È quindi possibile impostare il singolo stato per ogni regola nella sezione opzioni.
 
@@ -211,4 +211,4 @@ Esempio:
 
 - [Valutare la riduzione della superficie di attacco](evaluate-attack-surface-reduction.md)
 
-- [Domande frequenti sulla riduzione della superficie di attacco](attack-surface-reduction.md)
+- [FAQ per la riduzione della superficie d'attacco](attack-surface-reduction.md)

@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Impostare le autorizzazioni e i ruoli utente di Microsoft Compliance Manager e configurare test automatizzati delle azioni. Gestire la cronologia utente e filtrare la visualizzazione del dashboard.
-ms.openlocfilehash: 3b32ac5a82bbc726c5bf61859266e0561ca7f53c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 4558f6b2a75f1635c7984b386f217efa148b22af
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199219"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499028"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introduzione a Compliance Manager
 
@@ -91,7 +91,7 @@ La tabella seguente mostra le funzioni consentite da ogni ruolo in Compliance Ma
 | :------------- | :-------------: | :------------: |
 | **Lettura ma non modifica dei dati**| Lettore di Compliance Manager  | Lettore globale di Azure AD, lettore di sicurezza | 
 | **Modificare i dati**| Contributo di Compliance Manager | Amministratore conformità | 
-| **Modificare i risultati dei test**| Valutazione di Compliance Manager | Amministratore conformità | 
+| **Modificare i risultati dei test**| Esperto di Compliance Manager | Amministratore conformità | 
 | **Gestire le valutazioni e i dati di modello e tenant**| Amministrazione di Compliance Manager | Compliance Administrator, Compliance Data Administrator, Security Administrator  | 
 | **Assegnare utenti**| Amministratore globale | Amministratore globale | 
 
