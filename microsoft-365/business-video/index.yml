@@ -1,6 +1,6 @@
 ### YamlMime:Hub
 title: Formazione su Microsoft 365 Small Business
-summary: Informazioni su come configurare e gestire Microsoft 365 per la propria azienda.
+summary: Scopri come configurare e gestire Microsoft 365 per la tua azienda.
 brand: m365
 metadata:
   title: Formazione su Microsoft 365 Small Business
@@ -8,20 +8,20 @@ metadata:
   ms.service: O365-administration
   ms.prod: microsoft-365-business
   ms.topic: hub-page
-  author: Sirkkuw
-  ms.author: sirkkuw
+  author: twerner
+  ms.author: twernermsft
   ms.date: 12/16/2020
   localization_priority: Priority
   ms.custom: AdminSurgePortfolio
-  ms.openlocfilehash: 2a874179c9a3da778ff0757d9a883af44a462141
-  ms.sourcegitcommit: 9833f95ab6ab95aea20d68a277246dca2223f93d
+  ms.openlocfilehash: 0c9ba8560c2ee64b8e0da4d14afe869006bd6ed8
+  ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 01/11/2021
-  ms.locfileid: "49794161"
+  ms.lasthandoff: 04/02/2021
+  ms.locfileid: "51580571"
 productDirectory:
   items:
-  - title: Per iniziare
+  - title: Informazioni di base
     imageSrc: https://docs.microsoft.com/office/media/icons/get-started-blue.svg
     summary: Pianificare il passaggio a Microsoft 365 per le aziende.
     url: what-is-microsoft-365.md
@@ -51,7 +51,7 @@ productDirectory:
     url: business-voice.md
   - title: Configurare le app aziendali
     imageSrc: https://docs.microsoft.com/office/media/icons/task-list-planning-blue.svg
-    summary: Configurare e ottenere informazioni su Prenotazioni, Elenchi, Attività...
+    summary: Configurare e informazioni su Prenotazioni, Elenchi, Attività...
     url: overview-bookings.md
   - title: Gestire l'abbonamento
     imageSrc: https://docs.microsoft.com/office/media/icons/settings.svg
@@ -80,5 +80,5 @@ additionalContent:
       summary: Scopri come passare a Microsoft 365 per le aziende.
       url: moveto-microsoft-365/move-from-google-workspace-overview.md
     - title: Trovare altre risorse di amministrazione
-      summary: Accedere al sito della Guida dell'interfaccia di amministrazione di Microsoft 365.
+      summary: Passare al sito della Guida dell'interfaccia di amministrazione di Microsoft 365.
       url: ../admin/index.yml

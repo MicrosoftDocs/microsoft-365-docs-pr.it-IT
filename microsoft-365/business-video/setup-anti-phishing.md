@@ -2,8 +2,8 @@
 title: Configurare la protezione anti-phishing
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,31 +21,31 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come configurare la protezione anti-phishing.
-ms.openlocfilehash: 8cef8f916a8a3e2b27dd7f76ddecd921d59ca0c4
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 32494eda4496d99e5e5f4def213ba7876f6c3183
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422004"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580415"
 ---
-# <a name="set-up-anti-phishing"></a><span data-ttu-id="8dd14-103">Configurare l'anti-phishing</span><span class="sxs-lookup"><span data-stu-id="8dd14-103">Set up anti-phishing</span></span>
+# <a name="set-up-anti-phishing"></a><span data-ttu-id="324c5-103">Configurare l'anti-phishing</span><span class="sxs-lookup"><span data-stu-id="324c5-103">Set up anti-phishing</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWvt9r?autoplay=false]
 
-<span data-ttu-id="8dd14-104">Il phishing è un attacco dannoso in cui un messaggio di posta elettronica sembra essere stato inviato da una fonte familiare, ma tenta di raccogliere le informazioni personali.</span><span class="sxs-lookup"><span data-stu-id="8dd14-104">Phishing is a malicious attack where an email looks like it was sent from a familiar source, but it attempts to collect your personal information.</span></span> <span data-ttu-id="8dd14-105">Per impostazione predefinita, Microsoft 365 include una protezione anti-phishing, ma è possibile aumentare tale protezione perfezionando le impostazioni.</span><span class="sxs-lookup"><span data-stu-id="8dd14-105">By default, Microsoft 365 includes some anti-phishing protection, but you can increase that protection by refining the settings.</span></span> <span data-ttu-id="8dd14-106">Diamo un'occhiata.</span><span class="sxs-lookup"><span data-stu-id="8dd14-106">Let's take a look.</span></span>
+<span data-ttu-id="324c5-104">Il phishing è un attacco dannoso in cui un messaggio di posta elettronica sembra essere stato inviato da una fonte familiare, ma tenta di raccogliere le informazioni personali.</span><span class="sxs-lookup"><span data-stu-id="324c5-104">Phishing is a malicious attack where an email looks like it was sent from a familiar source, but it attempts to collect your personal information.</span></span> <span data-ttu-id="324c5-105">Per impostazione predefinita, Microsoft 365 include una protezione anti-phishing, ma è possibile aumentare tale protezione affinando le impostazioni.</span><span class="sxs-lookup"><span data-stu-id="324c5-105">By default, Microsoft 365 includes some anti-phishing protection, but you can increase that protection by refining the settings.</span></span> <span data-ttu-id="324c5-106">Diamo un'occhiata.</span><span class="sxs-lookup"><span data-stu-id="324c5-106">Let's take a look.</span></span>
 
-## <a name="try-it"></a><span data-ttu-id="8dd14-107">Perché non provarlo?</span><span class="sxs-lookup"><span data-stu-id="8dd14-107">Try it!</span></span>
+## <a name="try-it"></a><span data-ttu-id="324c5-107">Perché non provarlo?</span><span class="sxs-lookup"><span data-stu-id="324c5-107">Try it!</span></span>
 
-1. <span data-ttu-id="8dd14-108">Nell'interfaccia di amministrazione in [https://admin.microsoft.com](https://admin.microsoft.com) , selezionare **Sicurezza**, **Gestione minacce**, **Criteri** e quindi **Anti-phishing ATP.**</span><span class="sxs-lookup"><span data-stu-id="8dd14-108">In the admin center at [https://admin.microsoft.com](https://admin.microsoft.com), select **Security**, **Threat Management**, **Policy**, then **ATP Anti-phishing**.</span></span>
-1. <span data-ttu-id="8dd14-109">Selezionare **Criterio predefinito** per perfezionarlo.</span><span class="sxs-lookup"><span data-stu-id="8dd14-109">Select **Default Policy** to refine it.</span></span>
-1. <span data-ttu-id="8dd14-110">Nella sezione **Rappresentazione** selezionare **Modifica.**</span><span class="sxs-lookup"><span data-stu-id="8dd14-110">In the **Impersonation** section, select **Edit**.</span></span>
-1. <span data-ttu-id="8dd14-111">Passare ad **Aggiungi domini per proteggere e selezionare** l'interruttore per includere automaticamente i domini di cui si è proprietari.</span><span class="sxs-lookup"><span data-stu-id="8dd14-111">Go to **Add domains to protect** and select the toggle to automatically include the domains you own.</span></span>
-1. <span data-ttu-id="8dd14-112">Passare ad **Azioni,** aprire l'elenco a discesa Se la posta elettronica viene inviata da un utente rappresentato e scegliere l'azione desiderata.</span><span class="sxs-lookup"><span data-stu-id="8dd14-112">Go to **Actions**, open the drop-down **If email is sent by an impersonated user**, and choose the action you want.</span></span>
+1. <span data-ttu-id="324c5-108">Nell'interfaccia di amministrazione in [https://admin.microsoft.com](https://admin.microsoft.com) , selezionare **Sicurezza**, **Gestione minacce**, **Criteri**, quindi **ANTI-phishing ATP**.</span><span class="sxs-lookup"><span data-stu-id="324c5-108">In the admin center at [https://admin.microsoft.com](https://admin.microsoft.com), select **Security**, **Threat Management**, **Policy**, then **ATP Anti-phishing**.</span></span>
+1. <span data-ttu-id="324c5-109">Selezionare **Criterio predefinito** per affinarlo.</span><span class="sxs-lookup"><span data-stu-id="324c5-109">Select **Default Policy** to refine it.</span></span>
+1. <span data-ttu-id="324c5-110">Nella sezione **Rappresentazione** selezionare **Modifica**.</span><span class="sxs-lookup"><span data-stu-id="324c5-110">In the **Impersonation** section, select **Edit**.</span></span>
+1. <span data-ttu-id="324c5-111">Vai ad **Aggiungi domini da proteggere e** seleziona l'interruttore per includere automaticamente i domini di cui sei proprietario.</span><span class="sxs-lookup"><span data-stu-id="324c5-111">Go to **Add domains to protect** and select the toggle to automatically include the domains you own.</span></span>
+1. <span data-ttu-id="324c5-112">Vai a **Azioni**, apri l'elenco a discesa Se la **posta** elettronica viene inviata da un utente rappresentato e scegli l'azione desiderata.</span><span class="sxs-lookup"><span data-stu-id="324c5-112">Go to **Actions**, open the drop-down **If email is sent by an impersonated user**, and choose the action you want.</span></span>
 
-    <span data-ttu-id="8dd14-113">Aprire l'elenco a discesa **Se la posta elettronica** viene inviata da un dominio rappresentato e scegliere l'azione desiderata.</span><span class="sxs-lookup"><span data-stu-id="8dd14-113">Open the drop-down **If email is sent by an impersonated domain** and choose the action you want.</span></span>
-1. <span data-ttu-id="8dd14-114">Selezionare **Attiva suggerimenti per la sicurezza della rappresentazione.**</span><span class="sxs-lookup"><span data-stu-id="8dd14-114">Select **Turn on impersonation safety tips**.</span></span> <span data-ttu-id="8dd14-115">Scegli se devono essere forniti suggerimenti agli utenti quando il sistema rileva utenti, domini o caratteri insoliti rappresentati.</span><span class="sxs-lookup"><span data-stu-id="8dd14-115">Choose whether tips should be provided to users when the system detects impersonated users, domains, or unusual characters.</span></span> <span data-ttu-id="8dd14-116">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="8dd14-116">Select **Save**.</span></span>
-1. <span data-ttu-id="8dd14-117">Selezionare **Intelligence per le** cassette postali e verificare che sia attivata.</span><span class="sxs-lookup"><span data-stu-id="8dd14-117">Select **Mailbox intelligence** and verify that it's turned on.</span></span> <span data-ttu-id="8dd14-118">In questo modo la posta elettronica può essere più efficiente grazie all'apprendimento dei modelli di utilizzo.</span><span class="sxs-lookup"><span data-stu-id="8dd14-118">This allows your email to be more efficient by learning usage patterns.</span></span>
-1. <span data-ttu-id="8dd14-119">Scegliere **Aggiungi domini e mittenti attendibili.**</span><span class="sxs-lookup"><span data-stu-id="8dd14-119">Choose **Add trusted senders and domains**.</span></span> <span data-ttu-id="8dd14-120">Qui è possibile aggiungere indirizzi di posta elettronica o domini che non devono essere classificati come rappresentazione.</span><span class="sxs-lookup"><span data-stu-id="8dd14-120">Here you can add email addresses or domains that shouldn't be classified as an impersonation.</span></span>
-1. <span data-ttu-id="8dd14-121">Choose **Review your settings,** make sure everything is correct, select **Save**, then **Close.**</span><span class="sxs-lookup"><span data-stu-id="8dd14-121">Choose **Review your settings**, make sure everything is correct, select **Save**, then **Close**.</span></span>
+    <span data-ttu-id="324c5-113">Aprire l'elenco a discesa **Se la posta elettronica viene inviata da un** dominio rappresentato e scegliere l'azione desiderata.</span><span class="sxs-lookup"><span data-stu-id="324c5-113">Open the drop-down **If email is sent by an impersonated domain** and choose the action you want.</span></span>
+1. <span data-ttu-id="324c5-114">Seleziona **Attiva suggerimenti per la sicurezza per la rappresentazione.**</span><span class="sxs-lookup"><span data-stu-id="324c5-114">Select **Turn on impersonation safety tips**.</span></span> <span data-ttu-id="324c5-115">Scegliere se i suggerimenti devono essere forniti agli utenti quando il sistema rileva utenti, domini o caratteri insoliti.</span><span class="sxs-lookup"><span data-stu-id="324c5-115">Choose whether tips should be provided to users when the system detects impersonated users, domains, or unusual characters.</span></span> <span data-ttu-id="324c5-116">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="324c5-116">Select **Save**.</span></span>
+1. <span data-ttu-id="324c5-117">Selezionare **Intelligence cassetta postale** e verificare che sia attivato.</span><span class="sxs-lookup"><span data-stu-id="324c5-117">Select **Mailbox intelligence** and verify that it's turned on.</span></span> <span data-ttu-id="324c5-118">Ciò consente alla posta elettronica di essere più efficiente imparando i modelli di utilizzo.</span><span class="sxs-lookup"><span data-stu-id="324c5-118">This allows your email to be more efficient by learning usage patterns.</span></span>
+1. <span data-ttu-id="324c5-119">Scegliere **Aggiungi mittenti e domini attendibili**.</span><span class="sxs-lookup"><span data-stu-id="324c5-119">Choose **Add trusted senders and domains**.</span></span> <span data-ttu-id="324c5-120">Qui puoi aggiungere indirizzi di posta elettronica o domini che non devono essere classificati come rappresentazione.</span><span class="sxs-lookup"><span data-stu-id="324c5-120">Here you can add email addresses or domains that shouldn't be classified as an impersonation.</span></span>
+1. <span data-ttu-id="324c5-121">Scegliere **Rivedi le impostazioni,** assicurarsi che tutto sia corretto, selezionare **Salva**, quindi **Chiudi**.</span><span class="sxs-lookup"><span data-stu-id="324c5-121">Choose **Review your settings**, make sure everything is correct, select **Save**, then **Close**.</span></span>
 
-    <span data-ttu-id="8dd14-122">L'organizzazione ha ora una protezione migliore dalle minacce di phishing.</span><span class="sxs-lookup"><span data-stu-id="8dd14-122">Your organization now has better protection from phishing threats.</span></span>
+    <span data-ttu-id="324c5-122">L'organizzazione ora ha una protezione migliore dalle minacce di phishing.</span><span class="sxs-lookup"><span data-stu-id="324c5-122">Your organization now has better protection from phishing threats.</span></span>
