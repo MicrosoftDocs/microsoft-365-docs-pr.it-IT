@@ -2,8 +2,8 @@
 title: Eliminare un utente da Microsoft 365 per le aziende
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,36 +21,36 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come eliminare gli utenti in Microsoft 365 per le aziende.
-ms.openlocfilehash: 902bf9d22a904064562346d2451cef596b71cca6
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 8b2f0db242197aecb04df2261caac3688ad4f1b2
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422748"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578928"
 ---
 # <a name="delete-a-user"></a>Eliminare un utente
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FOfR?autoplay=false]
 
-Quando un dipendente lascia l'azienda, è necessario rimuoverlo da Microsoft 365 per le aziende. Prima di procedere, è consigliabile impedire loro di accedere ai file aziendali, conservare i documenti creati ed eseguire diverse altre attività amministrative associate alla rimozione di un utente.
+Quando un dipendente lascia l'azienda, è necessario rimuoverlo da Microsoft 365 per le aziende. Prima di eseguire questa operazione, è consigliabile impedire loro di accedere ai file aziendali, conservare i documenti creati ed eseguire diverse altre attività di amministrazione associate alla rimozione di un utente.
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-1. Nell'interfaccia di amministrazione selezionare **Utenti** e scegliere **Utenti attivi.**
+1. Nell'interfaccia di amministrazione seleziona **Utenti** e scegli **Utenti attivi.**
 1. Selezionare l'utente che si desidera rimuovere e quindi selezionare **Elimina utente.**
 1. Seleziona la casella per rimuovere la licenza e seleziona la casella per rimuovere gli alias di posta elettronica.
-1. Se l'utente disponeva di autorizzazioni delegate per la cassetta postale, è possibile rimuoverle qui.
+1. Se l'utente dispone delle autorizzazioni delegate per la cassetta postale, è possibile rimuoverle qui.
 1. Seleziona la casella per concedere a un altro utente l'accesso a OneDrive dell'ex dipendente e cerca tale utente.
 1. Selezionarne il nome.
 1. Questo utente avrà ora 30 giorni per spostare i file in un nuovo percorso.
 1. Selezionare la casella per concedere a un altro utente l'accesso alla posta elettronica dell'ex dipendente e scegliere Seleziona un **utente e impostare le opzioni di posta elettronica.**
-1. Scegliere l'utente e quindi selezionare **Avanti.**
-1. Se si desidera, è possibile creare un nuovo nome visualizzato che indica che la cassetta postale appartiene a un ex dipendente e quindi selezionare **Avanti.**
+1. Scegliere l'utente e quindi fare clic su **Avanti.**
+1. Se si desidera, è possibile creare un nuovo nome visualizzato che indica che la cassetta postale appartiene a un ex dipendente e quindi selezionare **Avanti**.
 1. Attivare le risposte automatiche e modificare il testo della risposta, se lo si desidera.
-1. Scegliere a chi inviare risposte automatiche, persone interne o esterne all'azienda e se la stessa risposta va alle persone esterne all'azienda e quindi selezionare **Avanti.**
+1. Scegliere a chi inviare risposte automatiche, persone all'interno o all'esterno dell'azienda e se la stessa risposta va alle persone esterne all'azienda e quindi selezionare **Avanti**.
 1. Per rimuovere gli alias di posta elettronica associati, selezionare **X** accanto ai relativi alias.
 1. Esaminare le informazioni sulla cassetta postale condivisa e selezionare **Fine.**
-1. Verificare che le opzioni siano impostate correttamente e scegliere **Assegna e converti.**
-1. Esaminare i risultati e selezionare **Chiudi.**
+1. Verificare che le opzioni siano impostate correttamente e scegliere **Assegna e converti**.
+1. Rivedere i risultati e selezionare **Chiudi**.
 
 Dopo aver rimosso un utente, hai fino a 30 giorni per ripristinare il suo account.

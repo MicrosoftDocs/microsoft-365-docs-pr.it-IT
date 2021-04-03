@@ -2,8 +2,8 @@
 title: 10 modi principali per proteggere i piani di Microsoft 365 per le aziende
 f1.keywords:
 - CSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: de2da300-dbb6-4725-bb12-b85a9d296e75
 description: 'Proteggere la posta elettronica aziendale e i dati da minacce informatiche, inclusi ransomware, phishing e allegati dannosi. '
-ms.openlocfilehash: e45130d101c6e730fd2d487f5f8898c7cd268ab8
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 77213ab7f63b87ba985e6e4ca43119acc2345e2d
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197852"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579147"
 ---
 # <a name="top-10-ways-to-secure-microsoft-365-for-business-plans"></a>10 modi principali per proteggere i piani di Microsoft 365 per le aziende
 
@@ -45,8 +45,8 @@ Microsoft consiglia di completare le attività elencate nella tabella seguente c
 ||Attività|Microsoft 365 Business Standard|Microsoft 365 Business Premium|
 |---|---|---|---|
 |1|[Configurare l'autenticazione a più fattori](secure-your-business-data.md#setup)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|2 |[Formazione degli utenti](secure-your-business-data.md#train)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
-|3 |[Usare account amministratore dedicati](secure-your-business-data.md#admin)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|2|[Formazione degli utenti](secure-your-business-data.md#train)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
+|3|[Usare account amministratore dedicati](secure-your-business-data.md#admin)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |4 |[Aumentare il livello di protezione dal malware nella posta](secure-your-business-data.md#malware)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |5 |[Proteggere l'ambiente da ransomware](secure-your-business-data.md#ransomware)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |6 |[Interrompere l'inoltro automatico per la posta elettronica](secure-your-business-data.md#forwarding)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
@@ -207,7 +207,7 @@ Per creare una regola di trasporto della posta:
 ## <a name="7-use-office-message-encryption"></a>7: Utilizzare la crittografia dei messaggi di Office
 <a name="encryption"> </a>
 
-La crittografia dei messaggi di Office è inclusa in Microsoft 365. È già configurato. Con Crittografia messaggi di Office, l'organizzazione può inviare e ricevere messaggi di posta elettronica crittografati tra persone interne ed esterne all'organizzazione. La crittografia dei messaggi di Office 365 funziona con Outlook.com, Yahoo!, Gmail e altri servizi di posta elettronica. La crittografia dei messaggi di posta elettronica garantisce che solo i destinatari previsti possano visualizzare il contenuto del messaggio.
+La crittografia dei messaggi di Office è inclusa in Microsoft 365. È già configurato. Con Crittografia messaggi di Office, l'organizzazione può inviare e ricevere messaggi di posta elettronica crittografati tra persone interne ed esterne all'organizzazione. La Crittografia dei messaggi di Office 365 è compatibile con Outlook.com, Yahoo!, Gmail e altri servizi di posta elettronica. La crittografia dei messaggi di posta elettronica garantisce che solo i destinatari previsti possano visualizzare il contenuto del messaggio.
 
 Crittografia messaggi di Office offre due opzioni di protezione per l'invio della posta:
 

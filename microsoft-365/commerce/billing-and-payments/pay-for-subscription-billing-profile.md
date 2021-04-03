@@ -19,21 +19,14 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - commerce
-ms.openlocfilehash: 750420b6fac8fff16130710ef96a9ceb6345a87a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: be89c2d355202dd8ca8698ac735cbb384bb8ef06
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911831"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579771"
 ---
 # <a name="how-to-pay-for-your-subscription-with-a-billing-profile"></a>Come pagare l'abbonamento con un profilo di fatturazione
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Quando si acquista un abbonamento, si paga con un profilo di fatturazione. Il profilo di fatturazione è collegato a un metodo di pagamento specifico e può essere una carta di credito o di debito o una fattura, ma non un conto corrente bancario.
 
@@ -234,7 +227,7 @@ Se il profilo di fatturazione è supportato da carta di credito o di debito, è 
 
 Se il profilo di fatturazione è supportato dai pagamenti tramite fattura, non è possibile modificare la modalità di pagamento. Puoi usare il pulsante **Paga ora** nella fattura per pagare con una carta di credito o di debito oppure tramite assegno o EFT.
 
-## <a name="related-content"></a>Contenuto correlato
+## <a name="related-content"></a>Contenuti correlati
 
 [Gestire i metodi di pagamento](manage-payment-methods.md) (articolo)\
 [Visualizzare l'estratto conto o la fattura](view-your-bill-or-invoice.md) (articolo)\

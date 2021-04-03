@@ -2,8 +2,8 @@
 title: Report di Microsoft 365 nell'interfaccia di amministrazione - Report attività di Yammer
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,17 +19,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: c7c9f938-5b8e-4d52-b1a2-c7c32cb2312a
-description: Ottenere il report Attività di Yammer e saperne di più sul numero di utenti che usano Yammer per pubblicare, aggiungere mi piace o leggere un messaggio.
-ms.openlocfilehash: 2bf02c0599f999b0eebb52d119096567bb09508b
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Ottenere il report Attività di Yammer e altre informazioni sul numero di utenti che usano Yammer per pubblicare, aggiungere mi piace o leggere un messaggio.
+ms.openlocfilehash: 5ebf180189b2785070c269ef15b6a6c6c9f7f61a
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387466"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579483"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---yammer-activity-report"></a>Report di Microsoft 365 nell'interfaccia di amministrazione - Report attività di Yammer
 
-In qualità di amministratore di Microsoft 365, il **dashboard** Report mostra i dati sull'utilizzo dei prodotti all'interno dell'organizzazione. Consultare i [report attività nell'interfaccia di amministrazione.](activity-reports.md) Il **report Attività su Yammer** consente di capire il livello di utilizzo di Yammer nell'organizzazione calcolando il numero di utenti che usano Yammer per pubblicare, aggiungere Mi piace o leggere un messaggio e la quantità di attività generata nell'intera organizzazione. 
+In qualità di amministratore di Microsoft 365, il dashboard **Report** mostra i dati sull'utilizzo dei prodotti all'interno dell'organizzazione. Consultare i [report attività nell'interfaccia di amministrazione.](activity-reports.md) Il **report Attività su Yammer** consente di capire il livello di utilizzo di Yammer nell'organizzazione calcolando il numero di utenti che usano Yammer per pubblicare, aggiungere Mi piace o leggere un messaggio e la quantità di attività generata nell'intera organizzazione. 
   
 > [!NOTE]
 > Per visualizzare i report, è necessario essere un amministratore globale, un lettore globale o un lettore di report in Microsoft 365 o un amministratore di Exchange, SharePoint, Teams Service, Teams Communications o Skype for Business. 
@@ -39,7 +39,7 @@ In qualità di amministratore di Microsoft 365, il **dashboard** Report mostra i
 1. Nell'interfaccia di amministrazione passare alla pagina **Report** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilizzo</a>.
 
     
-2. **Nell'elenco a discesa Selezionare un report** selezionare Attività di  \> **Yammer.**
+2. **Nell'elenco a discesa Selezionare un report** selezionare Attività di **Yammer.** \> 
   
 ## <a name="interpret-the-yammer-activity-report"></a>Interpretare il report Attività in Yammer
 
@@ -49,7 +49,7 @@ Per avere una visuale delle attività degli utenti in Yammer, è possibile osser
   
 Il report attività contiene le informazioni seguenti.
   
-- Usare le schede dei giorni per visualizzare il report **Attività in Yammer** per le tendenze degli ultimi 7, 30, 90 o 180 giorni. Tuttavia, se si seleziona un giorno specifico nel report, la tabella mostrerà i dati per un massimo di 28 giorni dalla data corrente (non la data in cui è stato generato il report). 
+- Usare le schede dei giorni per visualizzare il report **Attività in Yammer** per le tendenze degli ultimi 7, 30, 90 o 180 giorni. Tuttavia, se si seleziona un giorno specifico nel report, nella tabella verranno visualizzati i dati per un massimo di 28 giorni dalla data corrente (non la data in cui è stato generato il report). 
     
 - Ogni report include la data in cui è stato generato. In genere, i report presentano una latenza di 24-48 ore dal momento dell'attività.
     
@@ -67,9 +67,9 @@ Il report attività contiene le informazioni seguenti.
     
   - L'asse X in entrambi i grafici rappresenta l'intervallo di date selezionato per il report specifico.
     
-- È possibile filtrare la serie visualizzata nel grafico selezionando un elemento nella legenda. Nel grafico Attività, **ad** esempio, selezionare  **Pubblicato,** **Letto** o Mi piace per visualizzare solo le informazioni correlate a ognuno di essi. 
+- È possibile filtrare la serie visualizzata nel grafico selezionando un elemento nella legenda. Ad esempio, nel **grafico Attività** seleziona **Pubblicato,** **Letto** o **Mi** piace per visualizzare solo le informazioni correlate a ognuno di essi. 
     
-    ![Opzioni Pubblicate, Lette e Mi piace](../../media/8b832afc-415c-409b-816f-cb02b7a71e69.png)
+    ![Opzioni Postata, Lettura e Mi piace](../../media/8b832afc-415c-409b-816f-cb02b7a71e69.png)
   
     La modifica di questa selezione non cambia le informazioni nella tabella della griglia.
     
@@ -83,7 +83,7 @@ Il report attività contiene le informazioni seguenti.
     
   - **Nome utente** è l'indirizzo di posta elettronica dell'utente. È possibile visualizzare l'indirizzo di posta elettronica effettivo o rendere questo campo anonimo. 
     
-    Questa griglia mostra gli utenti che hanno effettuato l'accesso a Yammer con l'account Di Microsoft 365 o che hanno effettuato l'accesso alla rete con single sign-on.
+    Questa griglia mostra gli utenti che hanno effettuato l'accesso a Yammer utilizzando l'account Microsoft 365 o che hanno effettuato l'accesso alla rete con single sign-on.
     
   - **Nome visualizzato** è il nome completo dell'utente. È possibile visualizzare il nome effettivo o rendere questo campo anonimo. 
     
@@ -101,9 +101,9 @@ Il report attività contiene le informazioni seguenti.
     
   - **Apprezzati** è il numero di messaggi univoci a cui l'utente ha aggiunto Mi piace nel periodo specificato. 
     
-  - **I prodotti** assegnati sono i prodotti assegnati a questo utente. 
+  - **Il prodotto** assegnato è il prodotto assegnato a questo utente. 
     
-    Se i criteri dell'organizzazione impediscono la visualizzazione dei report in cui le informazioni degli utenti sono identificabili, è possibile modificare l'impostazione della privacy per tutti questi report. Vedere la sezione **Come nascondere i dettagli** a livello di utente in Report attività nell'interfaccia di amministrazione di Microsoft [365.](activity-reports.md)
+    Se i criteri dell'organizzazione impediscono la visualizzazione dei report in cui le informazioni degli utenti sono identificabili, è possibile modificare l'impostazione della privacy per tutti questi report. Vedere la sezione Come nascondere i dettagli a **livello di utente in** Report attività nell'interfaccia di amministrazione di Microsoft [365.](activity-reports.md)
     
 - È inoltre possibile esportare i dati del report in un file CSV di Excel selezionando il **collegamento Esporta.** Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriore analisi. Se gli utenti sono meno di 2000, è possibile ordinarli e filtrarli direttamente nella tabella del report. Se invece gli utenti sono più di 2000, per ordinarli e filtrarli occorre esportare i dati. 
     

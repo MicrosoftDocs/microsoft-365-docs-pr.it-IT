@@ -19,21 +19,14 @@ search.appverid:
 - MET150
 description: Scopri come leggere e comprendere la tua fattura per i prodotti aziendali Microsoft.
 keywords: account di fatturazione, informazioni sull'organizzazione, fatture
-ms.openlocfilehash: 98c42bf480db8be3d750ab9788e407b7064335a9
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 3752254fc6068381cd6effed0be4d5b8295f8a27
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164487"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579759"
 ---
 # <a name="understand-your-bill-or-invoice"></a>Come leggere la fattura
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 La fattura fornisce un riepilogo degli addebiti e le istruzioni per il pagamento. È possibile [visualizzare la propria fattura online](#view-your-online-invoice) nell’interfaccia di amministrazione di Microsoft 365. Puoi anche scaricarla in Portable Document Format (.pdf) per inviarla tramite e-mail.
 

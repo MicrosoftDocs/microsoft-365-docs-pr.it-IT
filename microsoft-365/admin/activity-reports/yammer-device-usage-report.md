@@ -1,7 +1,7 @@
 ---
-title: Report di Microsoft 365 nell'interfaccia di amministrazione - Report sull'utilizzo dei dispositivi Yammer
-ms.author: sirkkuw
-author: Sirkkuw
+title: Report di Microsoft 365 nell'interfaccia di amministrazione - Report utilizzo dispositivi Yammer
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -17,17 +17,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: b793ffdd-effa-43d0-849a-b1ca2e899f38
-description: "Ottenere il report sull'utilizzo dei dispositivi Yammer per conoscere i dispositivi in cui gli utenti usano Yammer. "
-ms.openlocfilehash: 17fcf6c7d46988f0783b5097d3381b9bc08cbbe7
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: "Ottenere il report sull'utilizzo dei dispositivi Yammer per sapere su quali dispositivi gli utenti usano Yammer. "
+ms.openlocfilehash: 17d4055d800922f021bdac4d8a9df3a02077d948
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44387454"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579459"
 ---
-# <a name="microsoft-365-reports-in-the-admin-center---yammer-device-usage-report"></a>Report di Microsoft 365 nell'interfaccia di amministrazione - Report sull'utilizzo dei dispositivi yammer
+# <a name="microsoft-365-reports-in-the-admin-center---yammer-device-usage-report"></a>Report di Microsoft 365 nell'interfaccia di amministrazione - Report utilizzo dispositivi Yammer
 
-Il **dashboard** report di Microsoft 365 mostra la panoramica delle attività tra i prodotti dell'organizzazione. Consente di eseguire il drill-down fino a visualizzare report a livello di singolo prodotto, per ottenere informazioni più dettagliate sulle attività in ogni prodotto. Vedere l' [argomento di panoramica sui report](activity-reports.md).
+Il **dashboard** dei report di Microsoft 365 mostra la panoramica delle attività tra i prodotti dell'organizzazione. Consente di eseguire il drill-down fino a visualizzare report a livello di singolo prodotto, per ottenere informazioni più dettagliate sulle attività in ogni prodotto. Vedere l' [argomento di panoramica sui report](activity-reports.md).
   
 I report sull'utilizzo di dispositivi Yammer forniscono informazioni sui dispositivi su cui gli utenti usano Yammer. È possibile visualizzare il numero di utenti giornalieri per tipo di dispositivo e il numero di utenti per il tipo di dispositivo in un periodo di tempo selezionato. È anche possibile visualizzare i dettagli per ogni utente.
   
@@ -39,7 +39,7 @@ I report sull'utilizzo di dispositivi Yammer forniscono informazioni sui disposi
 1. Nell'interfaccia di amministrazione passare alla pagina **Report** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2074756" target="_blank">Utilizzo</a>.
 
     
-2. **Nell'elenco a discesa Selezionare un report** selezionare Uso del dispositivo **Yammer.** \> 
+2. **Nell'elenco a discesa Select a report** selezionare **Yammer** \> **Device usage**.
   
 ## <a name="interpret-the-yammer-activity-report"></a>Interpretare il report Attività in Yammer
 
@@ -47,11 +47,11 @@ Per avere una visuale dell'utilizzo di dispositivi Yammer da parte degli utenti 
   
 Il report sull'utilizzo di dispositivi contiene le informazioni seguenti.
   
-- Usare le schede del giorno per visualizzare le tendenze del report attività di utilizzo dei dispositivi **Yammer** negli ultimi 7, 30, 90 o 180 giorni. Tuttavia, se si seleziona un giorno specifico nel report, la tabella mostrerà i dati per un massimo di 28 giorni dalla data corrente (non la data in cui è stato generato il report). 
+- Utilizzare le schede giorno per visualizzare le tendenze del report attività di utilizzo dei dispositivi **Yammer** negli ultimi 7, 30, 90 o 180 giorni. Tuttavia, se si seleziona un giorno specifico nel report, nella tabella verranno visualizzati i dati per un massimo di 28 giorni dalla data corrente (non la data in cui è stato generato il report). 
     
 - Ogni report include la data in cui è stato generato. In genere, i report presentano una latenza di 24-48 ore dal momento dell'attività.
     
-- Il grafico **Utenti** mostra il numero di utenti giornalieri per tipo di dispositivo.<br/>![Visualizzazione Utenti nel grafico di utilizzo dei dispositivi Yammer](../../media/ecfba1ec-fbea-4491-88da-1fb19b4d5629.png)<br/>![Report sull'utilizzo dei dispositivi yammer che mostra la visualizzazione Utenti](../../media/f396865a-ad6e-4f8b-a145-cc3865b352f4.png)
+- Il grafico **Utenti** mostra il numero di utenti giornalieri per tipo di dispositivo.<br/>![Visualizzazione utenti nel grafico di utilizzo dei dispositivi Yammer](../../media/ecfba1ec-fbea-4491-88da-1fb19b4d5629.png)<br/>![Report utilizzo dispositivi Yammer che mostra la visualizzazione Utenti](../../media/f396865a-ad6e-4f8b-a145-cc3865b352f4.png)
   
 - Il grafico **Distribuzione** mostra il numero di utenti per tipo di dispositivo.<br/>![Visualizzazione distribuzione nel report sull'utilizzo dei dispositivi Yammer](../../media/7a0b152e-2d2b-4d23-8dc2-046be53b724f.png)<br/>![Report utilizzo di dispositivi Yammer](../../media/780c351d-7a1d-451d-8c16-4c454ef58aa8.png)
   
@@ -61,7 +61,7 @@ Il report sull'utilizzo di dispositivi contiene le informazioni seguenti.
     
   - **Nome utente** è l'indirizzo di posta elettronica dell'utente. È possibile visualizzare l'indirizzo di posta elettronica effettivo o rendere questo campo anonimo. 
     
-    Questa griglia mostra gli utenti che hanno effettuato l'accesso a Yammer con l'account Di Microsoft 365 o che hanno effettuato l'accesso alla rete con single sign-on.
+    Questa griglia mostra gli utenti che hanno effettuato l'accesso a Yammer utilizzando l'account Microsoft 365 o che hanno effettuato l'accesso alla rete con single sign-on.
     
   - **Nome visualizzato** è il nome completo dell'utente. È possibile visualizzare il nome effettivo o rendere questo campo anonimo. 
     
@@ -81,7 +81,7 @@ Il report sull'utilizzo di dispositivi contiene le informazioni seguenti.
     
   - **Altro** indica se l'utente ha usato Yammer in un altro dispositivo non elencato in precedenza. 
     
-    Se i criteri dell'organizzazione impediscono la visualizzazione dei report in cui le informazioni degli utenti sono identificabili, è possibile modificare l'impostazione della privacy per tutti questi report. Vedere la sezione **Come nascondere i dettagli** a livello di utente nei report attività nell'interfaccia di amministrazione di Microsoft [365.](activity-reports.md)
+    Se i criteri dell'organizzazione impediscono la visualizzazione dei report in cui le informazioni degli utenti sono identificabili, è possibile modificare l'impostazione della privacy per tutti questi report. Vedere la **sezione Come nascondere i dettagli a livello di utente nelle** relazioni attività nell'interfaccia di amministrazione di Microsoft [365.](activity-reports.md)
     
 - È inoltre possibile esportare i dati del report in un file CSV di Excel selezionando il **collegamento Esporta.** Vengono esportati i dati di tutti gli utenti, che possono poi essere ordinati e filtrati per ulteriore analisi. Se gli utenti sono meno di 2000, è possibile ordinarli e filtrarli direttamente nella tabella del report. Se invece gli utenti sono più di 2000, per ordinarli e filtrarli occorre esportare i dati. 
     

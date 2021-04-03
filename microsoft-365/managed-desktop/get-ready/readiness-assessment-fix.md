@@ -9,12 +9,13 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 75c2967037ae83abca2aaa3cd02d1f6b2ae14caa
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: 5a22996ce9e39dc16191ddddc6aa9393de557bbc
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50925917"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579411"
 ---
 # <a name="fix-issues-found-by-the-readiness-assessment-tool"></a>Risolvere problemi trovati dallo strumento di valutazione dell'idoneità
 
@@ -26,7 +27,7 @@ Per ogni controllo, lo strumento segnala uno dei quattro possibili risultati:
 |Pronto     | Prima di completare la registrazione non è necessaria alcuna azione.        |
 |Avviso    | Seguire i passaggi nello strumento o in questo articolo per un'esperienza ottimale con la registrazione e per gli utenti. Puoi *completare* la registrazione, ma devi risolvere questi problemi prima di distribuire il primo dispositivo.        |
 |Non pronto | *La registrazione avrà esito negativo se questi problemi non vengono risolti.* Seguire i passaggi nello strumento o in questo articolo per risolverli.        |
-|Errore | Il ruolo di Azure Active Directory (AD) in uso non dispone di autorizzazioni sufficienti per eseguire questo controllo. |
+|Error | Il ruolo di Azure Active Directory (AD) in uso non dispone di autorizzazioni sufficienti per eseguire questo controllo. |
 
 > [!NOTE]
 > I risultati riportati da questo strumento riflettono lo stato delle impostazioni solo nel momento in cui è stato eseguito. Se successivamente si apportano modifiche ai criteri in Microsoft Intune, Azure Active Directory o Microsoft 365, gli elementi che erano "Pronti" possono diventare "Non pronti". Per evitare problemi con le operazioni di Microsoft Managed Desktop, controllare le impostazioni specifiche descritte in questo articolo prima di modificare i criteri.

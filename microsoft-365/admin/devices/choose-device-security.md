@@ -2,8 +2,8 @@
 title: Confrontare diversi metodi di protezione dei dati di dispositivi e app
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -18,12 +18,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Scegli tra diversi metodi MDM e MAM.
-ms.openlocfilehash: c4928f272c0bdd8a7b6883f506cebf9a153e9c49
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 462fe28b1240681380d6a1d26ae362575c0d7c86
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50910535"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579363"
 ---
 # <a name="options-for-protecting-your-devices-and-app-data"></a>Opzioni per proteggere i dispositivi e i dati dell'app
 
@@ -44,7 +44,7 @@ Sono disponibili diversi modi per proteggere i dispositivi e i dati delle organi
  
 - **Microsoft Intune** è un piano autonomo incluso anche in alcuni piani di Microsoft 365 per le aziende o per le aziende. Se intune è autonomo o parte dell'abbonamento, consente di ottimizzare la gestione dei dati delle app e del dispositivo. Per altre informazioni sulla disponibilità con Microsoft 365, vedi [disponibilità di Intune.](../basic-mobility-security/choose-between-basic-mobility-and-security-and-intune.md#availability-of-basic-mobility-and-security-and-intune)
 
-    Microsoft Intune è un servizio basato sul cloud che si concentra sulla gestione dei dispositivi mobili (MDM) e sulla gestione delle applicazioni mobili (MAM). Puoi controllare la modalità di utilizzo dei dispositivi dell'organizzazione, inclusi telefoni cellulari, tablet e portatili. È inoltre possibile configurare criteri specifici per controllare le applicazioni. Per ulteriori informazioni, vedere la [documentazione di Microsoft Intune.](/mem/intune/)
+    Microsoft Intune è un servizio basato sul cloud incentrato sulla gestione di dispositivi mobili (MDM) e sulla gestione di applicazioni mobili (MAM). Puoi controllare la modalità di utilizzo dei dispositivi dell'organizzazione, inclusi telefoni cellulari, tablet e portatili. È inoltre possibile configurare criteri specifici per controllare le applicazioni. Per ulteriori informazioni, vedere la [documentazione di Microsoft Intune.](/mem/intune/)
 
 - **I piani Di Azure Active Directory (AD) Premium** sono piani autonomi che vengono inoltre associati ad alcuni dei piani di Microsoft 365 per le aziende e le aziende. Per altre informazioni, vedi [Prezzi di Azure AD.](https://azure.microsoft.com/pricing/details/active-directory/)
 

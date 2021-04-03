@@ -2,8 +2,8 @@
 title: Configurare le opzioni di rilascio Standard o Mirato
 f1.keywords:
 - CSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - GEA150
 ms.assetid: 3b3adfa4-1777-4ff0-b606-fb8732101f47
 description: Informazioni su come configurare l'opzione di rilascio per gli aggiornamenti di nuovi prodotti e funzionalità nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 6c5d505f0ece47b0a47df8b7ed1dc015afe93e82
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: d3692f2e1cca58fec81f2ad492b9232d5576f99b
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51470572"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579255"
 ---
 # <a name="set-up-the-standard-or-targeted-release-options"></a>Configurare le opzioni di rilascio Standard o Mirato
 

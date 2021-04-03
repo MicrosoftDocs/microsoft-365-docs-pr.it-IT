@@ -2,8 +2,8 @@
 title: Scegliere un abbonamento a Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni sull'abbonamento a Microsoft 365 più giusto per l'organizzazione.
-ms.openlocfilehash: 19da01142bfe0abf2ad02c3a0ccab4ef25e09df4
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: d04d505edc8494112095246a8aaede57f0795b98
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164646"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578964"
 ---
 # <a name="choose-a-microsoft-365-subscription"></a>Scegliere un abbonamento a Microsoft 365
 

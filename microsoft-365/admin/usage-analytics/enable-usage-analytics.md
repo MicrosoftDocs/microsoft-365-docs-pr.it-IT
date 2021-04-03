@@ -2,8 +2,8 @@
 title: Abilitare l'analisi dell'utilizzo di Microsoft 365
 f1.keywords:
 - CSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9db96e9f-a622-4d5d-b134-09dcace55b6a
 description: Informazioni su come iniziare a raccogliere dati per il tenant usando l'app modello Analisi di utilizzo di Microsoft 365 in Power BI.
-ms.openlocfilehash: 734712994d47fcb234ba988bb4d185d09f3267d0
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 7c92fb643f9be6b5f1474f08df659c4f488a9a41
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51471058"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579063"
 ---
 # <a name="enable-microsoft-365-usage-analytics"></a>Abilitare l'analisi dell'utilizzo di Microsoft 365
 

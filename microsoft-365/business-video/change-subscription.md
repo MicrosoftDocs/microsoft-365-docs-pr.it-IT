@@ -2,8 +2,8 @@
 title: Spostare gli utenti in sottoscrizioni diverse
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: cmcatee
+author: cmcatee-MSFT
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,38 +21,38 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come spostare gli utenti in un abbonamento diverso.
-ms.openlocfilehash: 158201eb4bcdf7e4b7451c1811dcc68692f341ff
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 4f26e890e7c3c008c807dfed75829562dbebd087
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422964"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578978"
 ---
 # <a name="move-users-to-different-subscriptions"></a>Spostare gli utenti in sottoscrizioni diverse
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1SBE2?autoplay=false]
 
-Quando gli utenti cambiano ruolo, potrebbero aver bisogno di funzionalità non disponibili nell'abbonamento a Microsoft 365 Business Premium corrente. In questo caso, è possibile aggiungere un nuovo abbonamento che includa tali funzionalità e assegnare licenze agli utenti che ne hanno bisogno.
+Quando gli utenti cambiano ruolo, potrebbero aver bisogno di funzionalità non disponibili nell'abbonamento a Microsoft 365 Business Premium corrente. In questo caso, è possibile aggiungere un nuovo abbonamento che include tali funzionalità e assegnare licenze alle persone che ne hanno bisogno.
 
 ## <a name="try-it"></a>Perché non provarlo?
 
 ### <a name="add-a-new-subscription"></a>Aggiungere una nuova sottoscrizione
 
-1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft 365 selezionare **Fatturazione** e **quindi Acquistare servizi.**
-1. Scegliere l'abbonamento che si desidera aggiungere e quindi selezionare **Acquista.**
-1. Scegli la modalità di pagamento e il numero di licenze necessarie, quindi seleziona **Estrai ora.**
-1. Rivedere l'ordine e quindi scegliere **Avanti.**
-1. Confermare il totale e selezionare **Place order.**
+1. Nell'interfaccia di amministrazione di Microsoft 365, nel riquadro di spostamento sinistro, selezionare **Fatturazione** e **quindi Acquistare servizi.**
+1. Scegliere l'abbonamento che si desidera aggiungere e quindi selezionare **Acquista**.
+1. Scegli come vuoi pagare e il numero di licenze necessarie, quindi seleziona **Estrai ora.**
+1. Rivedere l'ordine e quindi scegliere **Avanti**.
+1. Confermare il totale e selezionare **Inserisci ordine.**
 
 ### <a name="change-the-license-assigned-to-a-user"></a>Modificare la licenza assegnata a un utente
 
 1. Nel riquadro di spostamento sinistro dell'interfaccia di amministrazione di Microsoft 365 selezionare **Utenti** e quindi **Utenti attivi.**
-1. Selezionare il nome dell'utente e quindi selezionare **Licenze e app.**
+1. Seleziona il nome dell'utente e quindi seleziona **Licenze e app.**
 1. In **Licenze** verrà visualizzato il nuovo abbonamento. Selezionare la casella di controllo accanto al nuovo abbonamento e deselezionare la casella di controllo accanto alla sottoscrizione precedente.
 1. Selezionare **Salva modifiche**. La licenza per la nuova sottoscrizione è ora assegnata a questo utente.
 
 ### <a name="remove-an-unused-license"></a>Rimuovere una licenza inutilizzata
 
-1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare **Fatturazione** e quindi Prodotti **& servizi.**
-1. Selezionare l'abbonamento che si desidera modificare e quindi **selezionare Aggiungi/rimuovi licenze.**
-1. Usare la freccia in giù per ridurre il numero di licenze per l'abbonamento e quindi selezionare **Invia modifica.** A questo punto si dispone del numero di licenze per gli utenti.
+1. Nell'interfaccia di amministrazione di Microsoft 365 seleziona **Fatturazione** e quindi **Prodotti & servizi**.
+1. Selezionare l'abbonamento che si desidera modificare e quindi selezionare **Aggiungi/rimuovi licenze.**
+1. Usa la freccia giù per ridurre il numero di licenze per questo abbonamento e quindi seleziona **Invia modifica.** Ora hai il numero giusto di licenze per gli utenti.

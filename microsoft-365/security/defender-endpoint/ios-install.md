@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7887f26cb8ca7e0e769249a10f008308149aaa42
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: c076a64b1e35978f09999b288b6849580df24972
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186690"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579699"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-for-ios"></a>Distribuire Microsoft Defender per Endpoint per iOS
 
@@ -58,7 +58,7 @@ Distribuire Defender per Endpoint per iOS tramite il portale aziendale di Intune
     > [!div class="mx-imgBorder"]
     > ![Immagine dell'interfaccia di amministrazione di Microsoft Endpoint Manager1](images/ios-deploy-1.png)
 
-1. Nella pagina Aggiungi app fai clic su **Cerca nell'App Store** e digita **Microsoft Defender ATP** nella barra di ricerca. Nella sezione dei risultati della ricerca fai clic su *Microsoft Defender ATP* e fai clic su **Seleziona.**
+1. Nella pagina Aggiungi app fai clic su **Cerca nell'App Store** e digita **Microsoft Defender Endpoint** nella barra di ricerca. Nella sezione dei risultati della ricerca fai clic su *Microsoft Defender Endpoint* e fai clic su **Seleziona.**
 
 1. Seleziona **iOS 11.0** come sistema operativo minimo. Esamina le altre informazioni sull'app e fai clic su **Avanti.**
 

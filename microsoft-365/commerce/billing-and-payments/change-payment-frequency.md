@@ -21,21 +21,14 @@ ms.custom:
 search.appverid:
 - MET150
 description: Informazioni su come modificare la frequenza di fatturazione per l'abbonamento aziendale.
-ms.openlocfilehash: ae3e3b4d0231fc5992215d243e141fb643d13626
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a7d2f60e25611025e5b06d4e78555d59c486626d
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911891"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579795"
 ---
 # <a name="change-your-billing-frequency"></a>Modificare la frequenza di fatturazione
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Quando si acquista un abbonamento, si sceglie la fatturazione mensile o annuale. Per modificare la frequenza di fatturazione di una sottoscrizione, eseguire la procedura seguente.
 

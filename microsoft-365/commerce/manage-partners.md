@@ -15,21 +15,14 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Informazioni su come collaborare con i provider di soluzioni (partner) certificati Microsoft per acquistare e gestire prodotti e servizi per l'organizzazione o l'istituto di istruzione.
-ms.openlocfilehash: 3297b2322983eabb793116a450a618b3a62a5a9c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a0c70f229ff11132beccf118f4158ab2880a8aa6
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911399"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51579735"
 ---
 # <a name="manage-partner-relationships"></a>Gestire le relazioni con i partner
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 È possibile collaborare con i provider di soluzioni (partner) certificati Microsoft per acquistare e gestire prodotti e servizi per l'organizzazione o l'istituto di istruzione. Ci sono alcuni passaggi necessari per configurare le cose.
 
