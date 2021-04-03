@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Impostare le autorizzazioni e i ruoli utente di Microsoft Compliance Manager e configurare test automatizzati delle azioni. Gestire la cronologia utente e filtrare la visualizzazione del dashboard.
-ms.openlocfilehash: 4558f6b2a75f1635c7984b386f217efa148b22af
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 8877a9a1e65a624708646c17a2517647c8a72f6a
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499028"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570558"
 ---
 # <a name="get-started-with-compliance-manager"></a>Introduzione a Compliance Manager
 
@@ -30,7 +30,7 @@ ms.locfileid: "51499028"
 
 ## <a name="who-can-access-compliance-manager"></a>Utenti autorizzati ad accedere a Compliance Manager
 
-Compliance Manager è disponibile per le organizzazioni con licenze di Office 365 e Microsoft 365 e per i clienti di US Government Community Cloud (GCC) Moderate e GCC High. La disponibilità della valutazione e le funzionalità di gestione dipendono dal contratto di licenza.  [Visualizzare i dettagli della descrizione del servizio](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
+Compliance Manager è disponibile per le organizzazioni con licenze di Office 365 e Microsoft 365 e per i clienti di US Government Community Cloud (GCC) Moderate, GCC High e Department of Defense (DoD). La disponibilità della valutazione e le funzionalità di gestione dipendono dal contratto di licenza.  [Visualizzare i dettagli della descrizione del servizio](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance).
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
@@ -52,7 +52,7 @@ Compliance Manager usa un modello di autorizzazione RBAC (Role-Based Access Cont
 La persona che ha il ruolo di amministratore globale per l'organizzazione può impostare le autorizzazioni utente per Compliance Manager. Le autorizzazioni possono essere impostate nel Centro sicurezza & e conformità di Office 365 e in Azure Active Directory (Azure AD).
 
 > [!NOTE]
-> I clienti negli ambienti High della US Government Community (GCC) possono impostare solo le autorizzazioni utente e i ruoli per Compliance Manager in Azure AD. Vedi di seguito per le istruzioni di Azure AD e le definizioni dei tipi di ruolo.
+> I clienti negli ambienti High and Department of Defense (DoD) della US Government Community (GCC) possono impostare solo le autorizzazioni utente e i ruoli per Compliance Manager in Azure AD. Vedi di seguito per le istruzioni di Azure AD e le definizioni dei tipi di ruolo.
 
 Per impostare le autorizzazioni e assegnare ruoli nel Centro sicurezza & e conformità di Office 365, eseguire la procedura seguente:
 
@@ -100,7 +100,7 @@ La tabella seguente mostra le funzioni consentite da ogni ruolo in Compliance Ma
 Le impostazioni di Compliance Manager nel Centro conformità Microsoft 365 consentono di abilitare e disabilitare il test automatico delle azioni di miglioramento. Le impostazioni consentono inoltre di gestire i dati degli utenti associati alle azioni di miglioramento, inclusa la possibilità di riassegnare le azioni di miglioramento a un altro utente.  Solo gli utenti con un ruolo di amministratore globale o amministratore di Compliance Manager possono accedere alle impostazioni di Compliance Manager.
 
 > [!NOTE]
-> La funzionalità di test automatizzato non è disponibile per i clienti in ambienti GCC High perché punteggio sicuro non è disponibile in questi ambienti. I clienti GCC High dovranno implementare e testare manualmente le azioni di miglioramento.
+> La funzionalità di test automatizzato non è disponibile per i clienti in ambienti GCC High e DoD perché Secure Score non è disponibile in questi ambienti. I clienti GCC High e DoD dovranno implementare e testare manualmente le azioni di miglioramento.
 
 ### <a name="set-up-automated-testing"></a>Configurare test automatizzati
 

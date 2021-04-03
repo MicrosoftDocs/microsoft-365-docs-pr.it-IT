@@ -19,12 +19,12 @@ search.appverid:
 ms.assetid: ''
 description: Informazioni su come conservare i custodi e le relative origini dati per conservare il contenuto pertinente per il caso advanced eDiscovery.
 ms.custom: seo-marvel-mar2020
-ms.openlocfilehash: 07edcb2707d1dffecfa5a2aac6c4340ac6cbe53f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 70390a933de788a6b1190e42b5087b85a175b9a2
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926374"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570590"
 ---
 # <a name="manage-holds-in-advanced-ediscovery"></a>Gestire i blocchi in Advanced eDiscovery
 
@@ -76,8 +76,6 @@ Per creare un blocco non di custodia per un caso advanced eDiscovery:
       > Quando si fa **clic su Scegli utenti,** gruppi o team per specificare le cassette postali da mettere in attesa, la selezione delle cassette postali visualizzata è vuota. Si tratta di un'impostazione predefinita per migliorare le prestazioni. Per aggiungere persone all'elenco, digitare un nome (un minimo di 3 caratteri) nella casella di ricerca.
 
    1. **Siti di SharePoint-** Fare  clic **su Scegli** siti e quindi su Scegli siti di nuovo per specificare i siti di SharePoint e OneDrive for Business da mettere in attesa. Digitare l'URL per ogni sito che si desidera conservare. È inoltre possibile aggiungere l'URL per il sito di SharePoint per un gruppo di Microsoft 365 o un team microsoft. Fare **clic su** Scegli e quindi su **Fine.**
-    
-      Vedere la **sezione Domande** frequenti per suggerimenti su come mettere in attesa i gruppi di Microsoft 365 e Microsoft Teams.
 
       > [!NOTE]
       > L'URL per l'account OneDrive di un utente include il nome dell'entità utente (UPN, User Principal Name), ad esempio `https://alpinehouse-my.sharepoint.com/personal/sarad_alpinehouse_onmicrosoft_com` . Nel raro caso in cui l'UPN di una persona viene modificato, anche l'URL di OneDrive cambierà per incorporare il nuovo UPN. Se l'account di OneDrive di un utente fa parte di un blocco non depositario e il relativo UPN viene modificato, è necessario aggiornare il blocco e puntare al nuovo URL di OneDrive. Per altre informazioni, vedere [Come le modifiche UPN influiscono sull'URL di OneDrive](/onedrive/upn-changes).
@@ -118,7 +116,7 @@ Tenere presente quanto segue sulle statistiche di blocco:
 
 ## <a name="place-a-hold-on-microsoft-teams-and-office-365-groups"></a>Blocco dei gruppi di Microsoft Teams e Office 365
 
-Microsoft Teams è basato sui gruppi di Office 365. Pertanto, la conservazione in Advanced eDiscovery è molto simile. 
+Microsoft Teams è basato sui gruppi di Office 365. Pertanto, la conservazione in Advanced eDiscovery è molto simile.
 
 - **Come si esegue il mapping di un altro sito di Microsoft 365 Groups o Microsoft Teams a un responsabile? E per quanto riguarda l'applicazione di un blocco non di custodia ai gruppi di Microsoft 365 e Microsoft Teams?** Microsoft Teams è basato sui gruppi di Microsoft 365. Di conseguenza, l'applicazione di un blocco in un caso di eDiscovery è molto simile. Tenere presente quanto segue quando si posizionano i gruppi di Microsoft 365 e Microsoft Teams in attesa.
   - Per mettere in attesa il contenuto presente nei gruppi di Microsoft 365 e Microsoft Teams, è necessario specificare la cassetta postale e il sito di SharePoint associati a un gruppo o a un team.

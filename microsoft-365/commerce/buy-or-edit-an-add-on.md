@@ -19,21 +19,14 @@ ms.custom:
 - okr_SMB
 - AdminSurgePortfolio
 - Commerce
-ms.openlocfilehash: ea9cdb6edf3aaac1575b1d2b14790bd28876ee26
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b470fb727ed55ba066cd0371e2e707c72b50ae99
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911645"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51576926"
 ---
 # <a name="buy-or-manage-add-ons"></a>Acquistare o gestire i componenti aggiuntivi
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Molti piani di Microsoft 365 per le aziende dispongono di componenti aggiuntivi che è possibile acquistare per gli abbonamenti. I componenti aggiuntivi offrono altre funzionalità per migliorare l'esperienza di sottoscrizione.
 
@@ -77,7 +70,7 @@ Per rimuovere una sottoscrizione di componente aggiuntivo autonomo, annulla la [
 
 Non è possibile rimuovere un componente aggiuntivo tradizionale. Se si desidera rimuovere un componente aggiuntivo tradizionale, contattare [il supporto tecnico per assistenza.](../admin/contact-support-for-business-products.md)
   
-## <a name="related-content"></a>Contenuto correlato
+## <a name="related-content"></a>Contenuti correlati
 
 [Aggiungere spazio di archiviazione per la sottoscrizione](add-storage-space.md) (articolo)\
 [Acquistare o rimuovere licenze di sottoscrizione](licenses/buy-licenses.md) (articolo)\

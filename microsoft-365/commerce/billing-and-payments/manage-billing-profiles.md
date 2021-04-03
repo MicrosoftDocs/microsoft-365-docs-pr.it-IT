@@ -20,21 +20,14 @@ ms.custom:
 search.appverid:
 - MET150
 description: Informazioni su come i profili di fatturazione supportano le fatture.
-ms.openlocfilehash: 2f56b9a3edbbbe14927df64bed8b699a68826c9e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 7f4c0aed1bccd0e5df5b09e15e6201933e937993
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911867"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51576950"
 ---
 # <a name="understand-billing-profiles"></a>Informazioni sui profili di fatturazione
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Per i clienti commerciali che acquistano prodotti e servizi da Microsoft, i profili di fatturazione consentono di personalizzare quali elementi sono inclusi nella fattura e come pagare le fatture.
 

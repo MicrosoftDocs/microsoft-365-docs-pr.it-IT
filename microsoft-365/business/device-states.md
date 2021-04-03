@@ -2,8 +2,8 @@
 title: Stati dei dispositivi
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: c3ac23c5-d4b4-4b1b-b7ce-ea759521bf8c
 description: Informazioni sui vari stati dei dispositivi nell'elenco Azioni dispositivo nella home page dell'amministratore in Microsoft 365 per le aziende.
-ms.openlocfilehash: 64138e2b6ae73c067709cde1912a96615d08ebf1
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: e6f1b428413d094e0a1ce3afb026528074038736
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44471180"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578468"
 ---
 # <a name="device-states"></a>Stati dei dispositivi
 
@@ -50,9 +50,9 @@ Ai dispositivi inclusi nell'elenco **Azioni dispositivo** (home page di amminist
 |Ritiro annullato  <br/> |L'azione di ritiro è stata annullata.  <br/> |
 |Cancellazione dei dati in sospeso  <br/> |In attesa dell'avvio del ripristino delle impostazioni predefinite.  <br/> |
 |Cancellazione dei dati in corso  <br/> |Il ripristino delle impostazioni predefinite è stato avviato.  <br/> |
-|Cancellazione dei dati non riuscita  <br/> |Impossibile eseguire il ripristino delle impostazioni di fabbrica.  <br/> |
+|Cancellazione dei dati non riuscita  <br/> |Impossibile eseguire la reimpostazione della factory.  <br/> |
 |Cancellazione annullata  <br/> |Cancellazione in fabbrica annullata.  <br/> |
-|Non integro  <br/> |Un'azione è in sospeso (o in corso), ma il dispositivo non è archiviato da oltre 30 giorni.  <br/> |
+|Non integro  <br/> |Un'azione è in sospeso (o in corso), ma il dispositivo non è archiviato da più di 30 giorni.  <br/> |
 |Eliminazione in sospeso  <br/> |L'azione di eliminazione è in sospeso.  <br/> |
 |Rilevato  <br/> |Microsoft 365 Business Premium ha rilevato il dispositivo.  <br/> |
    

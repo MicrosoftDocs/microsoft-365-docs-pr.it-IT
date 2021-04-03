@@ -2,8 +2,8 @@
 title: Aiutare gli utenti a connettersi a Microsoft 365 Business Premium
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -27,17 +27,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: f338e660-6483-4eef-acb9-53dee5bd4408
-description: Scopri cosa aspettarti dopo che la configurazione di Business Cloud Suite è stata completata e i criteri dei dispositivi predefiniti sono pronti per l'applicazione.
-ms.openlocfilehash: d3aad182f7e233f239b35e35c032e8ca09c57769
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Scopri cosa aspettarti dopo il completamento dell'installazione di Business Cloud Suite e l'applicazione dei criteri predefiniti per i dispositivi.
+ms.openlocfilehash: d3e47247197f2688388ed50057b16fde53e7e830
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400923"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578448"
 ---
 # <a name="help-users-connect-to-microsoft-365-business-premium"></a>Aiutare gli utenti a connettersi a Microsoft 365 Business Premium
 
-Dopo aver completato la configurazione, i criteri predefiniti per i dispositivi sono pronti per l'applicazione. Nei dispositivi mobili, gli utenti scaricano le app di Office. I criteri vengono quindi applicati quando l'utente accede con il proprio account aziendale o dell'istituto di istruzione. Prima di applicare i criteri a PC Windows, ad esempio per un aggiornamento sul posto, sono necessarie altre operazioni. Vedi e condividi gli argomenti seguenti per aiutare gli utenti a configurarsi e a collegarsi:
+Dopo aver completato l'installazione, i criteri dei dispositivi predefiniti sono pronti per l'applicazione. Nei dispositivi mobili, gli utenti scaricano le app di Office. I criteri vengono quindi applicati quando l'utente accede con il proprio account aziendale o dell'istituto di istruzione. Prima di applicare i criteri a PC Windows, ad esempio per un aggiornamento sul posto, sono necessarie altre operazioni. Vedi e condividi gli argomenti seguenti per aiutare gli utenti a configurarsi e a essere connessi:
   
 [Configurare i dispositivi Windows per gli utenti di Microsoft 365 Business Premium](set-up-windows-devices.md)
   

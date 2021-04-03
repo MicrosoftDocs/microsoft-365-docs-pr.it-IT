@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Audit avanzato in Microsoft 365 fornisce nuove funzionalità di audit per aiutare l'organizzazione nelle indagini forensi e di conformità.
-ms.openlocfilehash: 0a77a5c54ce328a3966a952fc8fef08553f42462
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 88308d173df79f55f38aba4b70d4b561667941bf
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923486"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574655"
 ---
 # <a name="advanced-audit-in-microsoft-365"></a>Audit avanzato in Microsoft 365
 
@@ -153,7 +153,7 @@ Per cercare i record di controllo dell'evento SearchQueryInitiatedSharePoint, ce
 È anche possibile eseguire [Search-UnifiedAuditLog -Operations SearchQueryInitiatedSharePoint](/powershell/module/exchange/search-unifiedauditlog) in PowerShell per Exchange Online.
 
 > [!NOTE]
-> Bisogna eseguire questo comando in PowerShell per Exchange Online, in modo che gli eventi SearchQueryInitiatedExchange (eseguiti dallo specifico utente E5) siano inclusi nei risultati della ricerca dei log di controllo: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`.<br/><br/>
+> Bisogna eseguire questo comando in PowerShell per Exchange Online, in modo che gli eventi SearchQueryInitiatedSharePoint (eseguiti dallo specifico utente E5) siano inclusi nei risultati della ricerca dei log di controllo: `Set-Mailbox <user identity> -AuditOwner @{Add="SearchQueryInitiated"}`.<br/><br/>
 In un ambiente multi-geografico, è necessario eseguire il comando **Set-Mailbox** nella foresta di domini in cui si trova la cassetta postale dell'utente. Per identificare la posizione della cassetta postale dell'utente, eseguire il comando seguente: `Get-Mailbox <user identity> | FL MailboxLocations`.
 Se il comando `Set-Mailbox -AuditOwner @{Add="SearchQueryInitiated"}` è stato eseguito in precedenza in una foresta diversa da quella della cassetta postale dell'utente, è necessario rimuovere il valore SearchQueryInitiated dalla cassetta postale, eseguendo `Set-Mailbox -AuditOwner @{Remove="SearchQueryInitiated"}`, e quindi aggiungerlo alla cassetta postale nella foresta in cui si trova la cassetta postale dell’utente.
 

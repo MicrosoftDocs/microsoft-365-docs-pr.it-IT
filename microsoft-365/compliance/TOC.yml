@@ -710,6 +710,8 @@
               href: download-documents-from-review-set.md
             - name: Esportare i documenti da un insieme da rivedere
               href: export-documents-from-review-set.md
+            - name: Esportare documenti in un account di Archiviazione di Azure
+              href: download-export-jobs.md
         - name: Gestire processi
           href: managing-jobs-ediscovery20.md
         - name: Configurare le impostazioni del caso

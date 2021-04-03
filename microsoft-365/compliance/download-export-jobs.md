@@ -1,5 +1,5 @@
 ---
-title: Scaricare i processi di esportazione per un caso advanced eDiscovery
+title: Esportare documenti nell'account di archiviazione di Azure dell'organizzazione
 f1.keywords:
 - NOCSH
 ms.author: markjjo
@@ -14,101 +14,121 @@ ms.collection: M365-security-compliance
 search.appverid:
 - MOE150
 - MET150
-ROBOTS: NOINDEX, NOFOLLOW
 ms.custom: seo-marvel-mar2020
-description: Installare e usare Azure Storage Explorer per scaricare i documenti esportati da un set di recensioni in Advanced eDiscovery.
-ms.openlocfilehash: 0a73d157b2661202507883dd6542cdf6c6b482f8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+description: Esportare i documenti in un set di revisione in un account di archiviazione di Azure e quindi usare Esplora archiviazione di Azure per scaricarli in un computer locale.
+ms.openlocfilehash: dfb3892f31e857d4744f6da337c924efaa87ab11
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50926622"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574710"
 ---
-# <a name="download-export-jobs-in-an-advanced-ediscovery-case"></a>Scaricare i processi di esportazione in un caso advanced eDiscovery
+# <a name="export-documents-in-a-review-set-to-an-azure-storage-account"></a>Esportare documenti in un set di revisione in un account di archiviazione di Azure
 
-Quando si esportano documenti da un set di revisione in un caso advanced eDiscovery, i documenti vengono caricati in una posizione di Archiviazione di Azure fornita da Microsoft o in una posizione di Archiviazione di Azure gestita dall'organizzazione. Il tipo di percorso di Archiviazione di Azure usato dipende dall'opzione selezionata al momento dell'esportazione dei documenti.
+Quando si esportano documenti da un set di revisione in un caso di Advanced eDiscovery, è possibile esportarli in un account di archiviazione di Azure gestito dall'organizzazione. Se hai usato questa opzione, i documenti vengono caricati nel percorso di Archiviazione di Azure. Dopo averli esportati, puoi accedere ai documenti (e scaricarli in un computer locale o in un altro percorso) usando Esplora archiviazione di Azure. In questo articolo vengono fornite istruzioni su come esportare documenti nell'account di archiviazione di Azure e sull'uso di Azure Storage Explorer per connettersi a un percorso di archiviazione di Azure per scaricare i documenti esportati. Per altre informazioni su Azure Storage Explorer, vedi [Usare Azure Storage Explorer.](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer)
 
-In questo articolo vengono fornite istruzioni su come usare Esplora risorse di archiviazione di Microsoft Azure per connettersi a un percorso di archiviazione di Azure per esplorare e scaricare i documenti esportati. Per altre informazioni su Azure Storage Explorer, vedere [Guida introduttiva: Usare Azure Storage Explorer.](/azure/storage/blobs/storage-quickstart-blobs-storage-explorer)
+## <a name="before-you-export-documents-from-a-review-set"></a>Prima di esportare documenti da un set di revisioni
 
-## <a name="step-1-install-the-azure-storage-explorer"></a>Passaggio 1: installare Azure Storage Explorer
+- È necessario fornire un token di firma di accesso condiviso (SAS) per l'account di archiviazione di Azure e l'URL di un contenitore specifico nell'account di archiviazione per esportare i documenti da un set di revisione. Assicurarsi di aver a portata di mano questi elementi (ad esempio, copiati in un file di testo) quando si esegue il passaggio 2
 
-Il primo passaggio consiste nel scaricare e installare Azure Storage Explorer. Per istruzioni, vedere [Strumento Azure Storage Explorer.](https://go.microsoft.com/fwlink/p/?LinkId=544842) Questo strumento consente di connettersi e scaricare i documenti esportati nel passaggio 3.
+  - **Token SAS:** assicurarsi di ottenere il token di firma di accesso condiviso per l'account di archiviazione di Azure (e non per il contenitore). È possibile generare un token di firma di accesso condiviso per l'account in Archiviazione di Azure. A tale scopo, passare all'account di archiviazione di Azure e selezionare Condividi firma **di accesso** nel **pannello Impostazioni** dell'account di archiviazione. Usa le impostazioni predefinite e consenti tutti i tipi di risorse quando generi il token di firma di accesso condiviso.
+
+  - **URL contenitore:** è necessario creare un contenitore in cui caricare i documenti del set di revisione e quindi ottenere una copia dell'URL per il contenitore. ad `https://ediscoverydata.blob.core.windows.net/exportdata` esempio. Per ottenere l'URL, passare al contenitore  in Archiviazione di Azure e selezionare Proprietà nella **sezione Impostazioni** nel pannello contenitore.
+
+- Scaricare e installare Azure Storage Explorer. Per istruzioni, vedere [Strumento Azure Storage Explorer.](https://go.microsoft.com/fwlink/p/?LinkId=544842) Questo strumento viene utilizzato per connettersi al contenitore nell'account di archiviazione di Azure e scaricare i documenti esportati nel passaggio 1.
+
+## <a name="step-1-export-the-documents-from-a-review-set"></a>Passaggio 1: Esportare i documenti da un set di revisioni
+
+Il primo passaggio consiste nel creare un processo di esportazione per esportare i documenti da un set di revisioni. Per istruzioni più dettagliate su tutte le opzioni di esportazione, vedere [Export documents from a review set.](export-documents-from-review-set.md) La procedura seguente evidenzia le impostazioni per esportare i documenti nell'account di archiviazione di Azure dell'organizzazione.
+
+1. Nel Centro conformità Microsoft 365 aprire il caso Advanced eDiscovery, selezionare la scheda **Review sets** e quindi selezionare il set di revisione che si desidera esportare.
+
+2. Nel set di revisioni fare clic **su Azione**  >  **Esporta.**
+
+3. Nella pagina **a comparsa Opzioni** di esportazione digitare un nome (obbligatorio) e una descrizione (facoltativo) per l'esportazione.
+
+4. Configurare le impostazioni nelle sezioni documenti, metadati, contenuto e opzioni. Per ulteriori informazioni su queste impostazioni, vedere [Export documents from a review set](export-documents-from-review-set.md).
+
+5. Nella sezione **Opzioni di output** selezionare l'opzione Struttura di directory **compressa esportata nell'account di archiviazione di Azure.**
+
+6. Incollare l'URL del contenitore e il token di firma di accesso condiviso per l'account di archiviazione nei campi corrispondenti.
+
+   ![Incollare l'URL di connessione e il token di firma di accesso condiviso nei campi corrispondenti](../media/AzureStorageOutputOptions.png)
+
+7. Fare **clic su** Esporta per creare il processo di esportazione.
 
 ## <a name="step-2-obtain-the-sas-url-from-the-export-job"></a>Passaggio 2: Ottenere l'URL della firma di accesso condiviso dal processo di esportazione
 
-Il passaggio successivo consiste nell'ottenere l'URL della firma di accesso condiviso (SAS) generato al momento della creazione del processo di esportazione per esportare i documenti [da un set di revisioni.](export-documents-from-review-set.md) È possibile copiare l'URL della firma di accesso condiviso per i documenti caricati in un percorso di archiviazione di Azure fornito da Microsoft o in un percorso di archiviazione di Azure gestito dall'organizzazione. In entrambi i casi, si usa l'URL della firma di accesso condiviso per connettersi al percorso di Archiviazione di Azure nel passaggio 3.
+Il passaggio successivo consiste nell'ottenere l'URL della firma di accesso condiviso generato dopo aver creato il processo di esportazione nel passaggio 1. L'URL della firma di accesso condiviso viene utilizzato per connettersi al contenitore nell'account di archiviazione di Azure in cui sono stati esportati i documenti del set di revisione.
 
 1. Nella pagina **Advanced eDiscovery** passare al caso e quindi fare clic sulla **scheda** Esportazioni.
 
-2. Nella scheda **Esportazioni** fare clic sul processo di esportazione che si desidera scaricare.
+2. Nella scheda **Esportazioni** fare clic sul processo di esportazione che si desidera scaricare. Questo è il processo di esportazione creato nel passaggio 1.
 
-3. Nella pagina a comparsa, in **Posizioni,** copiare l'URL della firma di accesso condiviso visualizzato. Se necessario, è possibile salvarlo in un file in modo da poterlo accedere al passaggio 3.
- 
+3. Nella pagina a comparsa, in **Posizioni,** copiare l'URL della firma di accesso condiviso visualizzato. Se necessario, è possibile salvarlo in un file di testo in modo da poter accedere al passaggio 3.
+
    ![Copiare l'URL della firma di accesso condiviso visualizzato in Percorsi](../media/eDiscoExportJob.png)
 
-## <a name="step-3-connect-to-the-azure-storage-location"></a>Passaggio 3: connettersi al percorso di archiviazione di Azure
+   > [!TIP]
+   > L'URL della firma di accesso condiviso visualizzato nel processo di esportazione è una concatenazione dell'URL del contenitore e del token SAS per l'account di archiviazione di Azure. È possibile copiarlo dal processo di esportazione o crearlo manualmente combinando l'URL e il token di firma di accesso condiviso.
 
-Il passaggio finale consiste nell'usare Azure Storage Explorer e l'URL della firma di accesso condiviso per connettersi al percorso di Archiviazione di Azure e scaricare i documenti esportati in un computer locale.
+## <a name="step-3-connect-to-the-azure-storage-container"></a>Passaggio 3: Connettersi al contenitore archiviazione di Azure
 
-1. Aprire Azure Storage Explorer installato nel passaggio 1.
+Il passaggio finale consiste nell'usare Azure Storage Explorer e l'URL della firma di accesso condiviso per connettersi al contenitore nell'account di archiviazione di Azure e scaricare i documenti esportati in un computer locale.
 
-2. Fai clic **sull'icona Aggiungi account.** In alternativa, è possibile fare clic con il pulsante destro **del mouse su Account di archiviazione**.
+1. Avviare Azure Storage Explorer scaricato e installato.
+
+2. Fare clic **sull'icona Apri finestra di dialogo** di connessione.
 
    ![Fare clic sull'icona Aggiungi account](../media/AzureStorageConnect.png)
 
-3. Nella pagina **Connetti a Archiviazione di Azure** fare clic su Usa URI firma di accesso condiviso **e** quindi su **Avanti.**
+3. Nella pagina **Connetti ad Archiviazione di Azure** fare clic su **Contenitore BLOB.**
 
-    ![Fare clic su Usa URI firma di accesso condiviso e quindi su Avanti](../media/AzureStorageConnect2.png)
+4. Nella pagina **Selezione metodo di autenticazione** selezionare **l'opzione Firma** di accesso condiviso e quindi fare clic su **Avanti.**
 
-4. Nella pagina **Allega con URI SAS** fare clic nella casella URI e quindi incollare l'URL della firma di accesso condiviso ottenuto nel passaggio 2. 
+5. Nella pagina **Immetti informazioni di** connessione incollare l'URL della firma di accesso condiviso (ottenuto nel processo di esportazione nel passaggio 2) nella casella URL firma di accesso condiviso del contenitore **BLOB.**
 
     ![Incollare l'URL della firma di accesso condiviso nella casella URI](../media/AzureStorageConnect3.png)
 
-    Si noti che una parte dell'URL della firma di accesso condiviso viene visualizzata nella **casella Nome** visualizzato. Verrà utilizzato come nome visualizzato del contenitore creato  nell'account di archiviazione dopo la connessione al percorso di archiviazione. Questo nome è costituito dall'ID del caso advanced eDiscovery e da un identificatore univoco. È possibile mantenere il nome visualizzato predefinito o modificarlo. Se viene modificato, il nome visualizzato deve essere univoco.
+    Si noti che il nome del contenitore viene visualizzato nella **casella Nome** visualizzato. È possibile modificare questo nome.
 
-5. Fare clic su **Avanti**.
-
-    Viene **visualizzata la** pagina Riepilogo connessione.
-
-    ![Fare clic su Connetti nella pagina Riepilogo connessione per connettersi al percorso di archiviazione di Azure](../media/AzureStorageConnect4.png)
-
-6. Nella pagina **Riepilogo connessione** esaminare le informazioni sulla connessione e quindi fare clic su **Connetti**.
+6. Fare **clic su** Avanti per visualizzare la pagina **di** riepilogo e quindi fare clic su **Connetti.**
 
     Viene aperto il nodo **Contenitori BLOB** (in **Account**  >  **di archiviazione (contenitori** \> allegati).
 
     ![Esportare processi nel nodo contenitori BLOB](../media/AzureStorageConnect5.png)
 
-    Contiene un contenitore denominato con il nome visualizzato del passaggio 4. Questo contenitore contiene una cartella per ogni processo di esportazione creato. Queste cartelle sono denominate con un ID corrispondente all'ID del processo di esportazione. Questi ID di esportazione (e il nome dell'esportazione) sono disponibili in  Informazioni di supporto nella pagina a comparsa per ogni processo di preparazione dei dati per l'esportazione elencato nella **scheda** Processi. 
+    Contiene un contenitore denominato con il nome visualizzato del passaggio 5. Questo contenitore contiene una cartella per ogni processo di esportazione scaricato nel contenitore nell'account di archiviazione di Azure. Queste cartelle sono denominate con un ID corrispondente all'ID del processo di esportazione. Questi ID di esportazione (e il nome dell'esportazione) sono disponibili in  Informazioni di supporto nella  pagina a comparsa per ogni processo di preparazione dei dati per l'esportazione elencato nella scheda Processi nel caso Advanced eDiscovery. 
 
 7. Fare doppio clic sulla cartella del processo di esportazione per aprirla.
 
    Viene visualizzato un elenco di cartelle e rapporti di esportazione.
-   
+
     ![La cartella di esportazione contiene i file esportati e i report di esportazione](../media/AzureStorageConnect6.png)
 
-   La cartella del processo di esportazione contiene gli elementi seguenti. Gli elementi effettivi nella cartella di esportazione sono determinati dalle opzioni di esportazione configurate al momento della creazione del processo di esportazione. Per ulteriori informazioni, vedere [Export documents from a review set.](export-documents-from-review-set.md)
-
-    - Export_load_file.csv: questo file CSV è un report di esportazione dettagli contenente informazioni su ogni documento esportato. Il file è costituito da una colonna per ogni proprietà di metadati di un documento. Per un elenco e una descrizione dei metadati inclusi in questo report, vedere la colonna **Nome** campo esportato nella tabella in Campi metadati documento [in Advanced eDiscovery.](document-metadata-fields-in-advanced-ediscovery.md)
-    
-    - Summary.txt: un file di testo contenente un riepilogo dell'esportazione, incluse le statistiche di esportazione.
-    
-    - Extracted_text_files: questa cartella contiene una versione di file di testo di ogni documento esportato.
-     
-    - NativeFiles: questa cartella contiene una versione file nativa di ogni documento esportato.
-    
-    - Error_files: questa cartella include gli elementi seguenti quando il processo di esportazione contiene file di errore: 
-        
-      - ExtractionError.csv: questo file CSV contiene i metadati disponibili per i file che non sono stati estratti correttamente dall'elemento padre.
-        
-      - ProcessingError: questa cartella contiene documenti con errori di elaborazione. Questo contenuto si trova a livello di elemento, il che significa che se un allegato ha avuto un errore di elaborazione, anche il documento contenente l'allegato verrà incluso in questa cartella.
- 
-8. Per esportare tutto il contenuto nell'esportazione, selezionare la cartella di esportazione e quindi fare clic su **Scarica.**
+8. Per esportare tutto il contenuto dal processo di esportazione, fare clic **sulla** freccia su per tornare alla cartella del processo di esportazione e quindi fare clic su **Scarica.**
 
 9. Specificare il percorso in cui si desidera scaricare i file esportati e quindi fare clic su Seleziona cartella.
 
-    Azure Storage Explorer avvia il processo di esportazione. Lo stato del download degli elementi esportati viene visualizzato nel **riquadro** Attività. Al termine del download viene visualizzato un messaggio.
-
-    ![Al termine del download viene visualizzato un messaggio](../media/AzureStorageConnect8.png)
+    Azure Storage Explorer avvia il processo di download. Lo stato del download degli elementi esportati viene visualizzato nel **riquadro** Attività. Al termine del download viene visualizzato un messaggio.
 
 > [!NOTE]
-> Anziché scaricare l'intero processo di esportazione, è possibile selezionare elementi specifici da scaricare. Anziché scaricare elementi, è possibile fare doppio clic su un elemento per visualizzarlo.
+> Anziché scaricare l'intero processo di esportazione in Esplora archivi di Azure, è possibile selezionare elementi specifici da scaricare e visualizzare.
+
+## <a name="more-information"></a>Ulteriori informazioni
+
+- La cartella del processo di esportazione contiene gli elementi seguenti. Gli elementi effettivi nella cartella di esportazione sono determinati dalle opzioni di esportazione configurate al momento della creazione del processo di esportazione. Per ulteriori informazioni su queste opzioni, vedere [Export documents from a review set.](export-documents-from-review-set.md)
+
+  - Export_load_file.csv: questo file CSV è un report di esportazione dettagli contenente informazioni su ogni documento esportato. Il file è costituito da una colonna per ogni proprietà di metadati di un documento. Per un elenco e una descrizione dei metadati inclusi in questo report, vedere la colonna **Nome** campo esportato nella tabella in Campi metadati documento [in Advanced eDiscovery.](document-metadata-fields-in-advanced-ediscovery.md)
+
+  - Summary.txt: un file di testo contenente un riepilogo dell'esportazione, incluse le statistiche di esportazione.
+
+  - Extracted_text_files: questa cartella contiene una versione di file di testo di ogni documento esportato.
+
+  - NativeFiles: questa cartella contiene una versione file nativa di ogni documento esportato.
+
+  - Error_files: questa cartella include gli elementi seguenti quando il processo di esportazione contiene file di errore:
+
+    - ExtractionError.csv: questo file CSV contiene i metadati disponibili per i file che non sono stati estratti correttamente dall'elemento padre.
+
+    - ProcessingError: questa cartella contiene documenti con errori di elaborazione. Questo contenuto si trova a livello di elemento, il che significa che se un allegato ha avuto un errore di elaborazione, anche il documento contenente l'allegato verrà incluso in questa cartella.

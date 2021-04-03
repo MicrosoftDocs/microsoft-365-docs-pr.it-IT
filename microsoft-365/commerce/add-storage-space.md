@@ -23,21 +23,14 @@ search.appverid:
 - MET150
 description: Informazioni su come aggiungere e ridurre l'archiviazione di file nell'abbonamento a Microsoft 365. Con spazio di archiviazione file aggiuntivo, è possibile archiviare più contenuto in SharePoint Online e OneDrive.
 ms.date: ''
-ms.openlocfilehash: b170924f40d517cb6bbdf8635ad3e163eadc8643
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d65677b9c078026343410b53acd48932258cb4b1
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911927"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51576962"
 ---
 # <a name="add-storage-space-for-your-subscription"></a>Aggiungere spazio di archiviazione per l'abbonamento
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Se lo spazio di archiviazione per le raccolte di siti di SharePoint Online sta per esaurirsi, è possibile aggiungere altro spazio all'abbonamento, se il piano è idoneo. Se l'archivio file aggiuntivo di **Office 365** non è presente nell'elenco dei componenti aggiuntivi disponibili, significa che il piano non è idoneo. Per ulteriori informazioni, vedere [Il piano è idoneo?](#is-my-plan-eligible-for-office-365-extra-file-storage)
 
@@ -109,7 +102,7 @@ Office 365 Extra File Storage è disponibile per gli abbonamenti seguenti:
 > [!NOTE]
 > Office 365 Extra File Storage è disponibile anche per i piani GCC, GCC High e DOD.
 
-## <a name="related-content"></a>Contenuto correlato
+## <a name="related-content"></a>Contenuti correlati
 
-[Gestire i limiti di archiviazione del sito](ttps://docs.microsoft.com/sharepoint/manage-site-collection-storage-limits) (articolo)\
+[Gestire i limiti di archiviazione del sito](https://docs.microsoft.com/sharepoint/manage-site-collection-storage-limits) (articolo)\
 [Impostare lo spazio di archiviazione predefinito per gli utenti di OneDrive](/onedrive/set-default-storage-space)(articolo)

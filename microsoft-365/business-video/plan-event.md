@@ -2,8 +2,8 @@
 title: Pianificare un evento con Microsoft Planner
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: twerner
+author: twernermsft
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -19,29 +19,29 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Informazioni su come pianificare un evento con Microsoft Planner.
-ms.openlocfilehash: 11453ae83f636e20cd67cc7a4202e8d6995e09a1
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+description: Scopri come pianificare un evento con Microsoft Planner.
+ms.openlocfilehash: a1fe282b7edc9d52db643b47a5dc15a214588e10
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422304"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578724"
 ---
-# <a name="use-microsoft-planner-to-plan-an-event"></a>Usare Microsoft Planner per pianificare un evento
+# <a name="use-microsoft-planner-to-plan-an-event"></a>Utilizzare Microsoft Planner per pianificare un evento
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/c8a41e1a-c30d-4adb-ab32-6eac922d0ec0?autoplay=false]
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-Usare Microsoft Planner per pianificare un evento, ad esempio tenere traccia dell'avvio di un prodotto.
+Usa Microsoft Planner per pianificare un evento, ad esempio tenere traccia dell'avvio di un prodotto.
 
 ### <a name="work-with-buckets"></a>Usare i bucket
 
-Usa i bucket per ordinare le attività in base al tipo, ad esempio pianificazione di eventi, marketing e materiale pubblicitario e PR.
+Usa i bucket per ordinare le attività in base al tipo, ad esempio la pianificazione degli eventi, il marketing e le garanzie pubblicitarie e le relazioni pubbliche.
 
-1. Selezionare  **Aggiungi nuovo contenitore**  e digitare una nuova categoria di attività.
-2. Selezionare  **+**  questa opzione per aggiungere attività a un contenitore e digitare un nome.
-3. Selezionare **Aggiungi attività.**
+1. Selezionare  **Aggiungi nuovo bucket e**  digitare una nuova categoria di attività.
+2. Selezionare  **+**  questa opzione per aggiungere attività a un bucket e digitare un nome.
+3. Selezionare  **Aggiungi attività**.
 
 ### <a name="work-with-labels"></a>Utilizzare le etichette
 
@@ -55,13 +55,13 @@ Usa le etichette per vedere quali attività necessitano della tua attenzione.
 Pubblicare un commento per discutere di un'attività con le persone a cui è assegnata.
 
 1. Digitare un messaggio nella  **casella**  Commenti.
-2. Selezionare **Invia.**
+2. Selezionare  **Invia**.
 
 ### <a name="keep-track-of-tasks"></a>Tenere traccia delle attività
 
 Utilizzare  **la visualizzazione**  Grafici  **e**  bacheca per monitorare lo stato di avanzamento di ogni membro del team e del progetto complessivo oppure per ordinare e organizzare le attività.
 
-- Selezionare  **Grafici,** quindi **Raggruppa per** e infine Data **scadenza**  per visualizzare l'attività successiva in scadenza.
-- Seleziona  **Bacheca,** quindi **Raggruppa per** e infine **Avanzamento**  per ordinare le attività in base all'avanzamento.
+- Selezionare **Grafici,** quindi **Raggruppa per** e infine Scadenza per visualizzare l'attività successiva. 
+- Seleziona **Bordo,** quindi **Raggruppa per** e infine Avanzamento per ordinare le attività in base all'avanzamento. 
 
-**Nota:**  Le attività sono organizzate per Non  **avviato,** **In** corso e Completato, in modo da sapere quando si è pronti per avviare il prodotto.
+**Nota:**  Le attività sono organizzate in base a  **Non** avviato,  **In** corso  **e**  Completato, in modo da sapere quando si è pronti per avviare il prodotto.

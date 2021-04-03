@@ -1,9 +1,9 @@
 ---
-title: In che modo i criteri in Microsoft 365 per le aziende proteggono i dati aziendali
+title: Come i criteri in Microsoft 365 per le aziende proteggono i dati aziendali
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -26,21 +26,21 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: 665485be-2389-4f1d-9ef8-dbef19c6acdf
-description: Per proteggere i dati aziendali nei dispositivi personali degli utenti, usare criteri specifici per dispositivi e gruppi di sicurezza specifici.
-ms.openlocfilehash: 18bf29d82b8020d31fec681b2114af86f52cad9c
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+description: Per proteggere i dati aziendali nei dispositivi personali degli utenti, usa criteri per dispositivi e gruppi di sicurezza specifici.
+ms.openlocfilehash: 5c6a4b85b080c6c1afaf6ac5bec046f2a539ee20
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44471160"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578428"
 ---
-# <a name="how-policies-in-microsoft-365-for-business-protect-company-data"></a>In che modo i criteri in Microsoft 365 per le aziende proteggono i dati aziendali
+# <a name="how-policies-in-microsoft-365-for-business-protect-company-data"></a>Come i criteri in Microsoft 365 per le aziende proteggono i dati aziendali
 
 Questo articolo si applica a Microsoft 365 Business Premium.
 
 I criteri creati sono specifici per il tipo di dispositivo e possono essere applicati a gruppi di utenti specifici. È quindi possibile creare un criterio applicabile ai dirigenti e un altro per tutti gli altri utenti.
   
-Per i dispositivi Android e iOS, è possibile aggiungere o modificare criteri di applicazione che proteggono le app di Office e i file di lavoro usati dalle app di Office. Siamo in grado di controllare un po' di più i dispositivi Windows 10, in modo che i criteri delle applicazioni possano includere più impostazioni, come la crittografia e la protezione per le posizioni di rete e cloud. Puoi anche creare criteri dispositivo per i dispositivi Windows 10 che applicano impostazioni come la protezione da virus e gli aggiornamenti automatici. È consigliabile attenersi ai criteri creati durante l'installazione, ma se si desidera ottimizzare i criteri o aggiungervi altri elementi, vedere questi articoli:
+Per i dispositivi Android e iOS, è possibile aggiungere o modificare criteri di applicazione che proteggono le app di Office e i file di lavoro usati dalle app di Office. Siamo in grado di controllare un po' di più i dispositivi Windows 10, in modo che i criteri delle applicazioni possano includere più impostazioni, come la crittografia e la protezione per le posizioni di rete e cloud. Puoi anche creare criteri dispositivo per i dispositivi Windows 10 che applicano impostazioni come la protezione da virus e gli aggiornamenti automatici. Ti consigliamo di attenerti ai criteri creati durante l'installazione, ma se vuoi ottimizzare i criteri o aggiungere altri criteri, vedi questi articoli:
   
 [Impostare le configurazioni delle app per dispositivi Android o iOS](app-protection-settings-for-android-and-ios.md)
   

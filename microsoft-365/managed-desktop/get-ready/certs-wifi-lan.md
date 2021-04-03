@@ -1,6 +1,6 @@
 ---
 title: Preparare certificati e profili di rete per Microsoft Managed Desktop
-description: certs/wifi/lan
+description: Requisiti dei certificati e connettività Wi-Fi
 keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
@@ -11,12 +11,13 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 9f4490711c1ea051afe9d8efb081a2f7a141f8ba
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: a59add6f6821824f189703b3dedd35fda313ec31
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909119"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574584"
 ---
 # <a name="prepare-certificates-and-network-profiles-for-microsoft-managed-desktop"></a>Preparare certificati e profili di rete per Microsoft Managed Desktop  
  
@@ -86,3 +87,14 @@ Per distribuire certificati e profili, attenersi alla seguente procedura:
 4. Creare un profilo per ogni VPN aziendale (vedere Impostazioni dei dispositivi [Windows 10 e Windows Holographic](/intune/vpn-settings-windows-10)per aggiungere connessioni VPN con Intune).
 5. Inviare una richiesta di supporto intitolata "Distribuzione di certificati" o "Distribuzione di profili Wi-Fi" a Microsoft Managed Desktop IT Operations usando il portale di amministrazione di Microsoft Managed Desktop per esaminare e distribuire il profilo di configurazione in "Modern Workplace Devices – Test". Microsoft Managed Desktop IT Operations ti permetterà di sapere quando la richiesta è stata completata tramite la richiesta di supporto nel portale di amministrazione. 
  
+## <a name="steps-to-get-ready"></a>Passaggi per prepararsi
+
+1. Esaminare [i prerequisiti per Microsoft Managed Desktop](prerequisites.md).
+2. Utilizzare [gli strumenti di valutazione della conformità](readiness-assessment-tool.md).
+3. [Prerequisiti per gli account Guest](guest-accounts.md)
+4. [Configurazione rete in Microsoft Managed Desktop](network.md)
+5. [Preparare certificati e profili di rete per Microsoft Managed Desktop](certs-wifi-lan.md) (questo articolo)
+6. [Preparare l'accesso alle risorse locali per Microsoft Managed Desktop](authentication.md)
+7. [App in Microsoft Managed Desktop](apps.md)
+8. [Preparare unità mappate per Microsoft Managed Desktop](mapped-drives.md)
+9. [Preparare risorse di stampa per Microsoft Managed Desktop](printing.md) 

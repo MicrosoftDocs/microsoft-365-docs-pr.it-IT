@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni su come usare Microsoft Compliance Configuration Analyzer per iniziare rapidamente a usare Microsoft Compliance Manager.
-ms.openlocfilehash: a77f38dcc0c0215e539c868e47135f5d7194f4b6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2b91ac274d7270f5be9530742cf711a3918b287d
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906038"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570375"
 ---
 # <a name="microsoft-compliance-configuration-analyzer-for-compliance-manager-preview"></a>Analizzatore configurazione conformità Microsoft per Compliance Manager (anteprima)
 
@@ -33,7 +33,7 @@ MCCA può aiutarti a vedere rapidamente quali azioni di miglioramento in Complia
 
 Una risorsa aggiuntiva per comprendere MCCA è visitare le istruzioni [README su GitHub.](https://github.com/OfficeDev/MCCA#overview) In questa pagina vengono fornite informazioni dettagliate sui prerequisiti e vengono fornite istruzioni complete per l'installazione. Non è necessario un account GitHub per accedere a questa pagina.
 
-**Disponibilità**: MCCA è disponibile per tutte le organizzazioni con le licenze di Office 365 e Microsoft 365 e i clienti di US Government Community (GCC) Moderate e GCC High, con piani in corso per espandere il servizio ai clienti DOD.
+**Disponibilità**: MCCA è disponibile per tutte le organizzazioni con licenze di Office 365 e Microsoft 365 e clienti della US Government Community (GCC) Moderate, GCC High e Department of Defense (DoD).
 
 ## <a name="install-mcca-and-run-a-report"></a>Installare MCCA ed eseguire un report
 
@@ -102,8 +102,8 @@ Seguire queste istruzioni per eseguire un report in base a un percorso specifico
   | Input |  Paese | 
   | :------------- | :------------: |
   | 1 | Asia-Pacifico |
-  | 2  | Australia |
-  | 3  | Canada |
+  | 2 | Australia |
+  | 3 | Canada |
   | 4  | Europa (Francia esclusa) / Medio Oriente / Africa |
   | 5  | Francia |
   | 6  | India |
@@ -113,7 +113,7 @@ Seguire queste istruzioni per eseguire un report in base a un percorso specifico
   | 10   | Sud America |
   | 11  | Sudafrica |
   | 12  | Svizzera |
-  | 13  | Emirati Arabi Uniti |
+  | 13 | Emirati Arabi Uniti |
   | 14  | Regno Unito |
 
 
@@ -129,11 +129,11 @@ La tabella seguente mostra quali ruoli hanno accesso alle sezioni del report. Al
 ![MCCA - ruoli](../media/compliance-manager-mcca-roles.png "Ruoli MCCA")
 
 Eccezioni:
-1. L'utente non sarà in grado di generare report per IP a parte la sezione "Utilizzare IRM per Exchange Online".
-2. L'utente sarà in grado di generare report per IP a parte la sezione "Utilizzare IRM per Exchange Online".
-3. L'utente sarà in grado di generare report per IP a parte la sezione "Abilitare la conformità delle comunicazioni in O365".
-4. L'utente non sarà in grado di generare report per IP oltre alla sezione "Abilitare il controllo in Office 365".
-5. L'utente sarà in grado di generare report per IP oltre alla sezione "Abilitare il controllo in Office 365".
+1. Gli utenti non saranno in grado di generare report per IP a parte la sezione "Utilizzare IRM per Exchange Online".
+2. Gli utenti saranno in grado di generare report per IP a parte la sezione "Utilizzare IRM per Exchange Online".
+3. Gli utenti saranno in grado di generare report per IP oltre alla sezione "Abilitare la conformità delle comunicazioni in O365".
+4. Gli utenti non saranno in grado di generare report per IP oltre alla sezione "Abilitare il controllo in Office 365".
+5. Gli utenti saranno in grado di generare report per IP a parte la sezione "Abilitare il controllo in Office 365".
 
 #### <a name="solutions-summary-section"></a>Sezione Riepilogo soluzioni
 

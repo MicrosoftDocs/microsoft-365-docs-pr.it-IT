@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Risposte alle domande frequenti su Microsoft Compliance Manager, che consentono alle organizzazioni di semplificare e automatizzare le valutazioni dei rischi.
-ms.openlocfilehash: a6ce93a39e242d5edf4806ad974296c8c007561e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: efa9de8506c088ceae64de26d32efe8553d0b574
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922830"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570395"
 ---
 # <a name="compliance-manager-frequently-asked-questions"></a>Domande frequenti su Compliance Manager
 
@@ -73,7 +73,7 @@ Compliance Manager è una soluzione end-to-end nel Centro conformità Microsoft 
 
 ## <a name="are-there-licensing-requirements-for-using-compliance-manager"></a>Esistono requisiti di licenza per l'utilizzo di Compliance Manager?
 
-Sì. La versione GA di Compliance Manager contiene nuove condizioni di licenza. Tutte le organizzazioni con licenze di Office 365 e Microsoft 365 e i clienti moderate e GCC High (US Government Community) hanno accesso a Compliance Manager. Tuttavia, le valutazioni disponibili per l'organizzazione e la modalità di gestione dei modelli di valutazione dipendono dal contratto di licenza. Per informazioni dettagliate, visitare le linee guida per la gestione delle licenze [di Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) per la sicurezza e la conformità.
+Sì. La versione GA di Compliance Manager contiene nuove condizioni di licenza. Tutte le organizzazioni con licenze di Office 365 e Microsoft 365 e i clienti moderati, GCC High e DoD (Department of Defense) della US Government Community (GCC) hanno accesso a Compliance Manager. Tuttavia, le valutazioni disponibili per l'organizzazione e la modalità di gestione dei modelli di valutazione dipendono dal contratto di licenza. Per informazioni dettagliate, visitare le linee guida per la gestione delle licenze [di Microsoft 365](/office365/servicedescriptions/microsoft-365-service-descriptions/microsoft-365-tenantlevel-services-licensing-guidance/microsoft-365-security-compliance-licensing-guidance) per la sicurezza e la conformità.
 
 ## <a name="if-i-have-a-high-score-does-it-mean-im-fully-compliant"></a>Se ho un punteggio elevato, significa che sono completamente conforme?
 

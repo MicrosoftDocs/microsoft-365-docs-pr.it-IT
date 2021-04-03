@@ -2,8 +2,8 @@
 title: Proteggere i file di lavoro in caso di perdita o di furto di un dispositivo mobile
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -26,12 +26,12 @@ search.appverid:
 - MOE150
 ms.assetid: c12164c7-6190-4294-b88a-590580c9869a
 description: Informazioni sulle impostazioni disponibili in Microsoft 365 per le aziende per proteggere i file di lavoro in caso di perdita o furto del dispositivo di un utente.
-ms.openlocfilehash: 89f9041a39ef0167d5b918622b68c9566e65d5b3
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 6b10ce73d3ebe936d3878724783d6076455a3552
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401263"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578248"
 ---
 # <a name="protect-work-files-when-a-mobile-device-is-lost-or-stolen"></a>Proteggere i file di lavoro in caso di perdita o di furto di un dispositivo mobile
 
@@ -44,8 +44,8 @@ Le impostazioni seguenti sono disponibili per la protezione dei file di lavoro i
 |||
 |:-----|:-----|
 |Impostazione  <br/> |Descrizione  <br/> |
-|Elimina i file di lavoro dai dispositivi inattivi dopo questo numero di giorni  <br/> |Se un dispositivo non viene usato per il numero di giorni specificato qui, tutti i file di lavoro archiviati nel dispositivo vengono eliminati automaticamente.  <br/> |
+|Elimina i file di lavoro dai dispositivi inattivi dopo questo numero di giorni  <br/> |Se un dispositivo non viene utilizzato per il numero di giorni specificato qui, tutti i file di lavoro archiviati nel dispositivo vengono eliminati automaticamente.  <br/> |
 |Forza gli utenti a salvare tutti i file di lavoro in OneDrive for Business  <br/> |Se questa impostazione è **attivata,** l'unico percorso di salvataggio disponibile per i file di lavoro è OneDrive for Business.  <br/> |
-|Crittografa i file di lavoro  <br/> |Mantenere **attivata** questa impostazione in modo che i file di lavoro siano protetti dalla crittografia. Anche se il dispositivo viene smarrito o rubato, nessuno può leggere i dati aziendali.  <br/> |
+|Crittografa i file di lavoro  <br/> |Mantenere **attivata** questa impostazione in modo che i file di lavoro siano protetti dalla crittografia. Anche se il dispositivo viene perso o rubato, nessuno può leggere i dati aziendali.  <br/> |
    
 

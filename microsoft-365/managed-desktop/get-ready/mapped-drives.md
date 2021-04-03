@@ -1,6 +1,6 @@
 ---
 title: Preparare unità mappate per Microsoft Managed Desktop
-description: Passaggi importanti per assicurarsi
+description: Passaggi importanti per assicurarsi che gli utenti possano accedere ai dati nelle unità mappate
 keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
@@ -9,12 +9,13 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: cd45d6155fc0e01f6a285f6182aa051281d160e0
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: f770f5083fe9193660b03e7971b09a127f2dae16
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922909"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574560"
 ---
 #  <a name="prepare-mapped-drives-for-microsoft-managed-desktop"></a>Preparare unità mappate per Microsoft Managed Desktop
 
@@ -52,4 +53,16 @@ Assicurarsi che le unità mappate non siano evitate e che i requisiti siano stat
 2. Inviare una richiesta di supporto intitolata "Distribuzione di unità mappate" e fornire tutti i dettagli necessari sulla condivisione file.  
 3. Microsoft Managed Desktop IT Operations avvisa, utilizzando gli aggiornamenti delle richieste di supporto, quando la richiesta è stata completata. Inizialmente questa configurazione verrà distribuita solo ai dispositivi nel gruppo di distribuzione Test.  
 4. È necessario verificare e verificare se la configurazione distribuita da Microsoft Managed Desktop IT Operations funziona come previsto. Rispondi usando la scheda Discussione nei dettagli della stessa richiesta di supporto per inviare una notifica a Microsoft Managed Desktop IT Operations dopo aver completato il test.  
-5. Il team Microsoft Managed Desktop IT Operations distribuirà quindi la configurazione agli altri gruppi di distribuzione.
+5. Il team Microsoft Managed Desktop IT Operations distribuirà quindi la configurazione agli altri gruppi di distribuzione. 
+
+## <a name="steps-to-get-ready"></a>Passaggi per prepararsi
+
+1. Esaminare [i prerequisiti per Microsoft Managed Desktop](prerequisites.md).
+2. [Utilizzare gli strumenti di valutazione della conformità](readiness-assessment-tool.md).
+3. [Prerequisiti per gli account Guest](guest-accounts.md)
+4. [Configurazione rete in Microsoft Managed Desktop](network.md)
+5. [Preparare certificati e profili di rete per Microsoft Managed Desktop](certs-wifi-lan.md)
+6. [Preparare l'accesso alle risorse locali per Microsoft Managed Desktop](authentication.md)
+7. [App in Microsoft Managed Desktop](apps.md)
+8. [Preparare le unità mappate per Microsoft Managed Desktop](mapped-drives.md) (questo articolo)
+9. [Preparare risorse di stampa per Microsoft Managed Desktop](printing.md)

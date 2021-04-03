@@ -17,12 +17,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Microsoft Compliance Manager aiuta le organizzazioni a semplificare e automatizzare le valutazioni dei rischi e suggerisce le azioni consigliate per affrontare i rischi.
-ms.openlocfilehash: 80d955f3d321ef8f82fe3654e4d7d08572ec72cc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: f938bb6b82ee7e24dd58b66597f0af7a3a00a9a2
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922730"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570453"
 ---
 # <a name="microsoft-compliance-manager"></a>Microsoft Compliance Manager
 
@@ -30,7 +30,7 @@ ms.locfileid: "50922730"
 
 ## <a name="whats-new-the-ga-release-of-compliance-manager"></a>Novità: la versione GA di Compliance Manager
 
-Compliance Manager è ora disponibile in generale come soluzione di gestione della conformità end-to-end all'interno del [Centro conformità Microsoft 365.](microsoft-365-compliance-center.md) Con questa versione, Compliance Manager completa la transizione dalla posizione precedente in Microsoft Service Trust Portal. Compliance Manager è ora disponibile anche per i clienti us government community (GCC) Moderate e GCC High.
+Compliance Manager è ora disponibile in generale come soluzione di gestione della conformità end-to-end all'interno del [Centro conformità Microsoft 365.](microsoft-365-compliance-center.md) Con questa versione, Compliance Manager completa la transizione dalla posizione precedente in Microsoft Service Trust Portal. Compliance Manager è disponibile anche per i clienti della community del governo statunitense (GCC) Moderate, GCC High e Department of Defense (DoD).
 
 L'anteprima pubblica del punteggio di conformità si è evoluta in uno strumento centralizzato con funzionalità di gestione della conformità avanzate e maggiore facilità di utilizzo.  La versione GA offre una raccolta più ampia di valutazioni predefinite per facilitare la scalabilità delle attività di conformità.
 
@@ -99,7 +99,7 @@ Una valutazione è il raggruppamento di controlli di un regolamento, uno standar
 
 Le valutazioni hanno diversi componenti:
 
-- **Servizi nell'ambito**: set specifico di servizi Microsoft applicabili alla valutazione
+- **Servizi nell'ambito**: il set specifico di servizi Microsoft applicabile alla valutazione
 - **Controlli gestiti Microsoft**: controlli per i servizi cloud Microsoft, implementati da Microsoft per conto dell'utente
 - **Controlli:** a volte definiti controlli gestiti dai clienti, si tratta di controlli implementati e gestiti dall'organizzazione
 - **Controlli condivisi:** si tratta di controlli che l'organizzazione e Microsoft condividono per l'implementazione
@@ -113,7 +113,7 @@ Quando crei valutazioni, le assegni a un gruppo. È possibile configurare i grup
 
 ### <a name="templates"></a>Modelli
 
-Compliance Manager fornisce modelli che consentono di creare rapidamente valutazioni. È possibile modificare questi modelli per creare una valutazione ottimizzata per le proprie esigenze. Puoi anche creare una valutazione personalizzata creando un modello con controlli e azioni personalizzati. Ad esempio, è possibile che si desideri che un modello riguardi un controllo dei processi aziendali interni o uno standard di protezione dei dati regionale non coperto da uno dei nostri oltre 150 modelli di valutazione predefiniti.
+Compliance Manager fornisce modelli che consentono di creare rapidamente valutazioni. È possibile modificare questi modelli per creare una valutazione ottimizzata per le proprie esigenze. Puoi anche creare una valutazione personalizzata creando un modello con controlli e azioni personalizzati. Ad esempio, è possibile che si desideri che un modello riguardi un controllo dei processi aziendali interni o uno standard di protezione dei dati regionale non coperto da uno dei nostri modelli di valutazione predefiniti di 325+.
 
 ##### <a name="learn-more"></a>Ulteriori informazioni
 

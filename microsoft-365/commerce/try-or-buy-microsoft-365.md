@@ -19,21 +19,14 @@ search.appverid:
 - MET150
 description: Informazioni su come ottenere una versione di valutazione gratuita o acquistare un abbonamento per Microsoft 365 per le aziende.
 ms.date: 08/07/2020
-ms.openlocfilehash: 05ac30ae25f4748751eee04c34d049b07d5b7511
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 9daa7022007aa3c71dc7291f592d3b166a2c45a5
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198437"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51576902"
 ---
 # <a name="try-or-buy-a-microsoft-365-for-business-subscription"></a>Provare o acquistare un abbonamento a Microsoft 365 per le aziende
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../admin/microsoft-365-admin-center-preview.md?view=o365-21vianet).
-
-::: moniker-end
 
 Microsoft 365 per le aziende è un servizio di sottoscrizione che consente di eseguire l'organizzazione nel cloud mentre Microsoft si occupa dell'IT. Microsoft gestisce i dispositivi, protegge dalle minacce reali e fornisce all'organizzazione il software aziendale più recente. È possibile iscriversi per una sottoscrizione di valutazione gratuita per Microsoft 365 Business Standard, Microsoft 365 Business Premium o Microsoft 365 Apps for business e provarla per 30 giorni.
 
@@ -111,6 +104,21 @@ Quando si acquista un'altra sottoscrizione tramite l'interfaccia di amministrazi
 > [!NOTE]
 > È necessario spostare gli utenti dalla sottoscrizione di valutazione gratuita al nuovo abbonamento prima che il periodo di tolleranza di 90 giorni termini dopo la scadenza della sottoscrizione di valutazione. In questo modo, si mantengono i dati, gli account e la configurazione. In caso contrario, le informazioni vengono eliminate.
 
+::: moniker range="o365-21vianet"
+## <a name="payment-options"></a>Opzioni di pagamento
+
+È possibile pagare l'abbonamento tramite:
+
+- Fattura
+
+- Pagamento online con Alipay o China UnionPay
+
+La prova del pagamento verrà fornita sotto forma di Fapiaos. Puoi inviare la richiesta Fapiao al nostro sistema [Fapiao](https://go.microsoft.com/fwlink/p/?LinkId=395314) circa tre (3) giorni dopo aver pagato. Per ulteriori informazioni, vedere [Apply for a Fapiao for Office 365 operated by 21Vianet](../admin/services-in-china/apply-for-a-fapiao.md).
+
+> [!NOTE]
+>  Le carte di credito internazionali non sono accettate.
+::: moniker-end
+
 ## <a name="next-steps"></a>Passaggi successivi
 
 Se si dispone di un nuovo account e si sta configurando il primo abbonamento, è possibile utilizzare gli articoli di configurazione guidati per iniziare.
@@ -122,7 +130,7 @@ Se si dispone di un nuovo account e si sta configurando il primo abbonamento, è
 
 Se si dispone già di una sottoscrizione e si sta aggiungendo una nuova sottoscrizione, è possibile spostarvi gli utenti. Per informazioni su come, vedere [Spostare gli utenti in un abbonamento diverso.](subscriptions/move-users-different-subscription.md)
 
-## <a name="related-content"></a>Contenuto correlato
+## <a name="related-content"></a>Contenuti correlati
 
 Video di formazione su [Microsoft 365 per le aziende](https://support.office.com/article/6ab4bbcd-79cf-4000-a0bd-d42ce4d12816) (video di formazione)\
 [Aggiungere utenti e assegnare licenze contemporaneamente](../admin/add-users/add-users.md) (articolo)\
