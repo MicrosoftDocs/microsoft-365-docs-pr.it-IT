@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: f789053e0922ee81155a243bbaa7b3ab5b0f6d87
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 687077b1c9ff2449d9994875419a97cf0c503c2f
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064658"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581083"
 ---
 # <a name="microsoft-365-defender"></a>Microsoft 365 Defender
 
@@ -35,7 +35,7 @@ ms.locfileid: "51064658"
 **Si applica a:**
 - Microsoft 365 Defender
 
-> Vuoi provare Microsoft 365 Defender? È possibile [valutarlo in un ambiente lab o](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) eseguire il progetto pilota in [produzione.](m365d-pilot.md?ocid=cx-evalpilot)
+> Vuoi provare Microsoft 365 Defender? Puoi [valutarlo in un ambiente lab](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) o [eseguire il progetto pilota in produzione](m365d-pilot.md?ocid=cx-evalpilot).
 >
 
 Microsoft 365 Defender è una famiglia di prodotti unificata di difesa aziendale pre e post-violazione che consente di coordinare in modo nativo rilevazione, prevenzione, indagini e risposta tra endpoint, identità, posta elettronica e applicazioni per offrire una protezione integrata dagli attacchi più sofisticati.
@@ -56,7 +56,7 @@ Con la soluzione integrata Microsoft 365 Defender, i professionisti della sicure
 
 In questa guida interattiva imparerai a proteggere l'organizzazione con Microsoft 365 Defender. Vedrai come Microsoft 365 Defender può aiutarti a rilevare i rischi per la sicurezza, analizzare gli attacchi all'organizzazione e prevenire automaticamente le attività dannose.
 
-> [!VIDEO https://aka.ms/M365Defender-InteractiveGuide]
+[Consultare la guida interattiva](https://aka.ms/M365Defender-InteractiveGuide)
 
 
 
@@ -92,7 +92,7 @@ Le funzionalità cross-product di Microsoft 365 Defender includono:
 - **Ricerca delle minacce** tra prodotti - I team di sicurezza possono sfruttare le proprie conoscenze organizzative uniche per cercare segni di compromissione creando query personalizzate sui dati non elaborati raccolti dai vari prodotti di protezione. Microsoft 365 Defender fornisce l'accesso basato su query a 30 giorni di segnali non elaborati storici e dati di avviso tra endpoint e dati di Microsoft Defender per Office 365. 
 
 
-## <a name="get-started"></a>Per iniziare
+## <a name="get-started"></a>Informazioni di base
 I requisiti di licenza di Microsoft 365 Defender devono essere soddisfatti prima di poter abilitare il servizio nel Centro sicurezza Microsoft 365 [in security.microsoft.com](https://security.microsoft.com). Per ulteriori informazioni, leggere:
 - [Requisiti relativi alle licenze](prerequisites.md#licensing-requirements)
 - [Attivare Microsoft 365 Defender](m365d-enable.md)

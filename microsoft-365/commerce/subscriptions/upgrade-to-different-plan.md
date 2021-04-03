@@ -20,21 +20,14 @@ ms.custom:
 search.appverid:
 - MET150
 description: Informazioni su come eseguire l'aggiornamento a un piano diverso.
-ms.openlocfilehash: 5f853dcd0d247a6422489cbe5d0287765bfd72a6
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 79ca18df28505c457e085dbd73c2fbd04eff53ca
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51164450"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580979"
 ---
 # <a name="upgrade-to-a-different-plan"></a>Eseguire l'aggiornamento a un piano diverso
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Quando l'azienda cambia o sono necessarie altre funzionalità, è possibile aggiornare i piani. Il modo più semplice per eseguire questa operazione è usare la **scheda Aggiornamento** nell'interfaccia di amministrazione. Tuttavia, **l'utilizzo della scheda** Aggiornamento non è supportato in tutte le situazioni. In alcuni casi, potrebbe essere possibile modificare i piani manualmente.
 

@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Panoramica della connettività di rete nell'interfaccia di amministrazione di Microsoft 365 (anteprima)
-ms.openlocfilehash: 2b80dd001bd2ee5d5725ea67c73aa34b4eb8816c
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: dd97a6d5cc9662f01854e1432660784358bce7b8
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408406"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581131"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Connettività di rete nell'interfaccia di amministrazione di Microsoft 365 (anteprima)
 
@@ -205,6 +205,10 @@ Una porta d'ingresso ottimale del servizio Microsoft 365 è quella più vicina a
 ### <a name="what-is-an-internet-egress-location"></a>Che cos'è una posizione di uscita da Internet?
 
 La posizione di uscita da Internet è la posizione in cui il traffico di rete esce dalla rete aziendale e si connette a Internet. Questo è anche identificato come la posizione in cui si dispone di un dispositivo NAT (Network Address Translation) e in genere in cui ci si connette con un provider di servizi Internet (ISP). Se viene visualizzata una lunga distanza tra la posizione e la posizione di uscita da Internet, questo potrebbe indicare un backhaul WAN significativo.
+
+### <a name="what-license-is-needed-for-this-capability"></a>Quale licenza è necessaria per questa funzionalità?
+
+È necessaria una licenza che consente l'accesso all'interfaccia di amministrazione di Microsoft 365.
 
 ## <a name="related-topics"></a>Argomenti correlati
 

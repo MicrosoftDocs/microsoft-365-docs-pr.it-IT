@@ -9,12 +9,13 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 5b5fb7185bb696bb6daae0a67a209cf3f7e77655
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: fcfddadf13e000156fa5431cc30bc72f4f3537e2
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924565"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51581047"
 ---
 # <a name="prerequisites-for-microsoft-managed-desktop"></a>Prerequisiti per Microsoft Managed Desktop
 
@@ -55,3 +56,15 @@ Microsoft Managed Desktop richiede alcune opzioni di licenza per funzionare. Per
 
 > [!TIP]
 > Microsoft Account Manager consente di esaminare le licenze e i piani di servizio correnti e di trovare il percorso più efficiente per ottenere eventuali licenze aggiuntive o piani di servizio necessari, evitando al contempo la duplicazione.
+
+## <a name="steps-to-get-ready"></a>Passaggi per prepararsi
+
+1. Esaminare [i prerequisiti per Microsoft Managed Desktop](prerequisites.md). (Questo articolo)
+2. Utilizzare [gli strumenti di valutazione della conformità](readiness-assessment-tool.md).
+3. [Prerequisiti per gli account Guest](guest-accounts.md)
+4. [Configurazione rete in Microsoft Managed Desktop](network.md)
+5. [Preparare certificati e profili di rete per Microsoft Managed Desktop](certs-wifi-lan.md)
+6. [Preparare l'accesso alle risorse locali per Microsoft Managed Desktop](authentication.md)
+7. [App in Microsoft Managed Desktop](apps.md)
+8. [Preparare unità mappate per Microsoft Managed Desktop](mapped-drives.md)
+9. [Preparare risorse di stampa per Microsoft Managed Desktop](printing.md)

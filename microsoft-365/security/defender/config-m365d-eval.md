@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 8bb80e032fd2eb4c618b60f4ab46829d5cf11b6d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 9b192a029704d1354867b169efdf0d489345030e
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199230"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580967"
 ---
 # <a name="configure-microsoft-365-defender-pillars-for-your-trial-lab-or-pilot-environment"></a>Configurare i pilastri di Microsoft 365 Defender per il laboratorio di valutazione o l'ambiente pilota
 
@@ -39,7 +39,7 @@ ms.locfileid: "51199230"
 
 La creazione di un laboratorio di valutazione o di un ambiente pilota di Microsoft 365 Defender e la distribuzione è un processo in tre fasi:
 
-|[![Fase 1: preparare](../../media/phase-diagrams/prepare.png)](prepare-m365d-eval.md)<br/>[Fase 1: preparare](prepare-m365d-eval.md) |[![Fase 2: configurazione](../../media/phase-diagrams/setup.png)](setup-m365deval.md)<br/>[Fase 2: configurazione](setup-m365deval.md) |![Fase 3: onboard](../../media/phase-diagrams/onboard.png)<br/>Fase 3: onboard | [![Torna al progetto pilota](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[Torna al playbook pilota](m365d-pilot.md) |
+|[![Fase 1: preparazione](../../media/phase-diagrams/prepare.png)](prepare-m365d-eval.md)<br/>[Fase 1: preparazione](prepare-m365d-eval.md) |[![Fase 2: configurazione](../../media/phase-diagrams/setup.png)](setup-m365deval.md)<br/>[Fase 2: configurazione](setup-m365deval.md) |![Phase 3: onboarding](../../media/phase-diagrams/onboard.png)<br/>Fase 3: onboarding | [![Torna al progetto pilota](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[Torna al playbook pilota](m365d-pilot.md) |
 |--|--|--|--|
 || |*Sei qui!* | |
 
@@ -55,7 +55,7 @@ Microsoft 365 Defender è costituito da quattro pilastri. Anche se un pilastro p
 
 Questa sezione ti guiderà a configurare:
 -   Microsoft Defender per Office 365
--   Microsoft Defender per identità 
+-   Che cosa è Microsoft Defender per identità? 
 -   Microsoft Cloud App Security
 -   Microsoft Defender per endpoint
 
@@ -285,8 +285,7 @@ Per una guida più completa, vedere [Attivare Microsoft 365 Defender.](m365d-ena
 
 Congratulazioni. Hai appena creato il lab di valutazione o l'ambiente pilota di Microsoft 365 Defender. Ora è possibile acquisire familiarità con l'interfaccia utente di Microsoft 365 Defender. Scopri cosa puoi imparare dalla seguente guida interattiva di Microsoft 365 Defender e scopri come usare ogni dashboard per le attività quotidiane relative alle operazioni di sicurezza.
 
-
->[!VIDEO https://aka.ms/MTP-Interactive-Guide]
+[Consultare la guida interattiva](https://aka.ms/MTP-Interactive-Guide)
 
 Successivamente, è possibile simulare un attacco e vedere come le funzionalità tra prodotti rilevano, creano avvisi e rispondono automaticamente a un attacco senza file su un endpoint.
 

@@ -2,8 +2,8 @@
 title: Traduzione dei post del Centro messaggi
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -13,19 +13,18 @@ ms.collection:
 - M365-subscription-management
 - Adm_O365
 - Adm_NonTOC
-ms.custom: AdminSurgePortfolio
 search.appverid:
 - BCS160
 - MET150
 - MOE150
 ms.assetid: 9f7c2ff2-af65-4557-8840-0b84ce96d9bc
 description: Informazioni su come impostare la lingua preferita nel Centro messaggi per la traduzione automatica dei post.
-ms.openlocfilehash: f998ee8f95ea9bd23ef16cef9e65eeaf4945680e
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
-ms.translationtype: HT
+ms.openlocfilehash: d0318763069e053fe2368b4906bc7d5ebb58c1fe
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44399741"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580931"
 ---
 # <a name="language-translation-for-message-center-posts"></a>Traduzione dei post del Centro messaggi
 
