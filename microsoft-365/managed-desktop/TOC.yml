@@ -57,23 +57,6 @@
       items:
         - name: Prerequisiti per Microsoft Managed Desktop
           href: get-ready/prerequisites.md
-        - name: Preparare la rete
-          href: get-ready/network.md
-        - name: Preparare l'accesso alle risorse locali
-          href: get-ready/authentication.md
-        - name: Preparare le unità mappate
-          href: get-ready/mapped-drives.md
-        - name: Preparare i certificati e i profili di rete
-          href: get-ready/certs-wifi-lan.md
-        - name: Prerequisiti per gli account Guest
-          href: get-ready/guest-accounts.md
-        - name: Preparare le risorse di stampa
-          href: get-ready/printing.md
-        - name: Preparare le app
-          href: get-ready/apps.md
-          items:
-            - name: Lavorare con Microsoft Consulting Services
-              href: get-ready/apps-MCS.md
         - name: Usare gli strumenti di valutazione dell'idoneità
           href: get-ready/readiness-assessment-tool.md
           items:
@@ -81,6 +64,23 @@
               href: get-ready/readiness-assessment-fix.md
             - name: Strumento di verifica di valutazione dell’idonietà scaricabile
               href: get-ready/readiness-assessment-downloadable.md
+        - name: Prerequisiti per gli account Guest
+          href: get-ready/guest-accounts.md
+        - name: Preparare la rete
+          href: get-ready/network.md
+        - name: Preparare i certificati e i profili di rete
+          href: get-ready/certs-wifi-lan.md
+        - name: Preparare l'accesso alle risorse locali
+          href: get-ready/authentication.md
+        - name: Preparare le app
+          href: get-ready/apps.md
+          items:
+            - name: Lavorare con Microsoft Consulting Services
+              href: get-ready/apps-MCS.md
+        - name: Preparare le unità mappate
+          href: get-ready/mapped-drives.md
+        - name: Preparare le risorse di stampa
+          href: get-ready/printing.md
     - name: Guida introduttiva a Microsoft Managed Desktop
       href: get-started/index.md
       items:

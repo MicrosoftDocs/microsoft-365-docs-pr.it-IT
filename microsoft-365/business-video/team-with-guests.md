@@ -2,8 +2,8 @@
 title: Creare un team con utenti Guest
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,28 +20,28 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come creare un team con utenti guest in Microsoft Teams.
-ms.openlocfilehash: 795e236ca94a8ac585b3c5ba3be90cf56ecb0751
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: a6d30684bed3a750a11e311f4e47d88940adbd0f
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421788"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51578592"
 ---
-# <a name="create-a-team-with-guests"></a><span data-ttu-id="d9a9d-103">Creare un team con utenti Guest</span><span class="sxs-lookup"><span data-stu-id="d9a9d-103">Create a team with guests</span></span>
+# <a name="create-a-team-with-guests"></a><span data-ttu-id="bc199-103">Creare un team con utenti Guest</span><span class="sxs-lookup"><span data-stu-id="bc199-103">Create a team with guests</span></span>
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE1FQMp?autoplay=false]
 
-## <a name="try-it"></a><span data-ttu-id="d9a9d-104">Perché non provarlo?</span><span class="sxs-lookup"><span data-stu-id="d9a9d-104">Try it!</span></span>
+## <a name="try-it"></a><span data-ttu-id="bc199-104">Perché non provarlo?</span><span class="sxs-lookup"><span data-stu-id="bc199-104">Try it!</span></span>
 
-<span data-ttu-id="d9a9d-105">È possibile usare Microsoft Teams per collaborare a un progetto con dipendenti e persone esterne all'azienda, come i clienti.</span><span class="sxs-lookup"><span data-stu-id="d9a9d-105">You can use Microsoft Teams to work together on a project with your employees and people outside the business, like your clients.</span></span>
+<span data-ttu-id="bc199-105">È possibile utilizzare Microsoft Teams per collaborare a un progetto con dipendenti e persone esterne all'azienda, come i clienti.</span><span class="sxs-lookup"><span data-stu-id="bc199-105">You can use Microsoft Teams to work together on a project with your employees and people outside the business, like your clients.</span></span>
 
-1. <span data-ttu-id="d9a9d-106">In Teams scegliere **Teams** nel riquadro di spostamento sinistro e quindi **scegliere Crea team.**</span><span class="sxs-lookup"><span data-stu-id="d9a9d-106">In Teams, choose  **Teams**  in the left navigation, and then choose  **Create team**.</span></span>
-2. <span data-ttu-id="d9a9d-107">Nella casella **Crea team immettere** un nome del team, fornire una breve descrizione, scegliere un'impostazione di privacy e quindi scegliere **Avanti.**</span><span class="sxs-lookup"><span data-stu-id="d9a9d-107">In the  **Create your team**  box, enter a team name, provide a short description, choose a privacy setting, and then choose  **Next**.</span></span>
-3. <span data-ttu-id="d9a9d-108">Nella casella  **Aggiungi membri**  immettere i nomi degli altri dipendenti dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="d9a9d-108">In the  **Add members**  box, enter the names of other employees in your organization.</span></span> <span data-ttu-id="d9a9d-109">Per gli utenti guest esterni, immettere il proprio indirizzo di posta elettronica.</span><span class="sxs-lookup"><span data-stu-id="d9a9d-109">For outside guests, enter their email address.</span></span>
+1. <span data-ttu-id="bc199-106">In Teams scegliere **Teams** nel riquadro di spostamento sinistro e quindi **Creare team.**</span><span class="sxs-lookup"><span data-stu-id="bc199-106">In Teams, choose  **Teams**  in the left navigation, and then choose  **Create team**.</span></span>
+2. <span data-ttu-id="bc199-107">Nella casella **Crea team immettere il** nome di un team, fornire una breve descrizione, scegliere un'impostazione di privacy e quindi scegliere **Avanti.**</span><span class="sxs-lookup"><span data-stu-id="bc199-107">In the  **Create your team**  box, enter a team name, provide a short description, choose a privacy setting, and then choose  **Next**.</span></span>
+3. <span data-ttu-id="bc199-108">Nella casella  **Aggiungi membri**  immettere i nomi degli altri dipendenti dell'organizzazione.</span><span class="sxs-lookup"><span data-stu-id="bc199-108">In the  **Add members**  box, enter the names of other employees in your organization.</span></span> <span data-ttu-id="bc199-109">Per gli utenti guest esterni, immettere il proprio indirizzo di posta elettronica.</span><span class="sxs-lookup"><span data-stu-id="bc199-109">For outside guests, enter their email address.</span></span>
 
-    <span data-ttu-id="d9a9d-110">Se viene visualizzato un messaggio che indica che non è possibile aggiungere un guest, visitare l'interfaccia di amministrazione di Teams e Skype per attivare l'accesso guest.</span><span class="sxs-lookup"><span data-stu-id="d9a9d-110">If you get a message that you can't add a guest, visit the Teams and Skype admin center to turn on guest access.</span></span>
+    <span data-ttu-id="bc199-110">Se viene visualizzato un messaggio che indica che non è possibile aggiungere un guest, visitare l'interfaccia di amministrazione di Teams e Skype per attivare l'accesso guest.</span><span class="sxs-lookup"><span data-stu-id="bc199-110">If you get a message that you can't add a guest, visit the Teams and Skype admin center to turn on guest access.</span></span>
 
-1. <span data-ttu-id="d9a9d-111">Scegliere **Aggiungi** e quindi **Chiudi.**</span><span class="sxs-lookup"><span data-stu-id="d9a9d-111">Choose  **Add** , and then choose  **Close**.</span></span>
-2. Nella parte inferiore della pagina immettere un breve messaggio di benvenuto per il nuovo team e quindi scegliere **Invia.** :::image type="icon" source="../media/teams-send-icon.png" border="false":::   
+1. <span data-ttu-id="bc199-111">Scegliere  **Aggiungi** e quindi  **Chiudi**.</span><span class="sxs-lookup"><span data-stu-id="bc199-111">Choose  **Add** , and then choose  **Close**.</span></span>
+2. Nella parte inferiore della pagina immettere un breve messaggio di benvenuto per il nuovo team e quindi scegliere **Invia** :::image type="icon" source="../media/teams-send-icon.png" border="false"::: .   
 
-<span data-ttu-id="d9a9d-113">Il client riceverà un invito tramite posta elettronica da Teams, che informerà l'utente che ha bisogno di un account Microsoft gratuito per entrare nel team.</span><span class="sxs-lookup"><span data-stu-id="d9a9d-113">Your client will receive an email invitation from Teams, which will inform them that they need a free Microsoft account to join the team.</span></span> <span data-ttu-id="d9a9d-114">Possono creare un account usando l'indirizzo di posta elettronica esistente seguendo le istruzioni fornite.</span><span class="sxs-lookup"><span data-stu-id="d9a9d-114">They can create an account using their existing email address by following the instructions provided.</span></span> <span data-ttu-id="d9a9d-115">Possono quindi usare Teams sul Web o installare l'app Teams nel computer.</span><span class="sxs-lookup"><span data-stu-id="d9a9d-115">They can then use Teams on the web or install the Teams app on their computer.</span></span>
+<span data-ttu-id="bc199-113">Il client riceverà un invito tramite posta elettronica da Teams, che li informerà della necessità di un account Microsoft gratuito per entrare a far parte del team.</span><span class="sxs-lookup"><span data-stu-id="bc199-113">Your client will receive an email invitation from Teams, which will inform them that they need a free Microsoft account to join the team.</span></span> <span data-ttu-id="bc199-114">Possono creare un account usando l'indirizzo di posta elettronica esistente seguendo le istruzioni fornite.</span><span class="sxs-lookup"><span data-stu-id="bc199-114">They can create an account using their existing email address by following the instructions provided.</span></span> <span data-ttu-id="bc199-115">Possono quindi usare Teams sul Web o installare l'app Teams nel computer.</span><span class="sxs-lookup"><span data-stu-id="bc199-115">They can then use Teams on the web or install the Teams app on their computer.</span></span>
