@@ -2,8 +2,8 @@
 title: Spostare file in OneDrive for Business
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -24,12 +24,12 @@ search.appverid:
 - MET150
 ms.assetid: eb8244aa-a302-481a-b2b5-d34e88b18ec7
 description: Informazioni su come spostare i file di lavoro personali e i file aziendali sensibili in OneDrive for Business in pochi semplici passaggi.
-ms.openlocfilehash: 561c9dee1080a50dea695f136df10be8e5d52959
-ms.sourcegitcommit: e5bc49f0a25954d008b6cc09c2b98bb7bfe1aa2f
+ms.openlocfilehash: d6bcf2b41f1052c521fda50557aac4bf6a3800fa
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/18/2020
-ms.locfileid: "44785913"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580075"
 ---
 # <a name="move-files-to-onedrive-for-business"></a>Spostare file in OneDrive for Business
 
@@ -44,7 +44,7 @@ Se il video è stato utile, consultare la [serie dei corsi di formazione complet
 
 Se un utente ha un computer che contiene molti file personali, occorre prima spostarli in OneDrive for Business:
   
-1. Passare a portal.office.com e accedere con le credenziali di Microsoft 365 per le aziende dell'utente.
+1. Vai a portal.office.com e accedi con le credenziali di Microsoft 365 per le aziende dell'utente.
 
 2. Fare clic sull'icona di avvio delle app ![The app launcher icon in Office 365](../media/7502f4ec-3c9a-435d-a7b4-b9cda85189a7.png) e passare a OneDrive. 
     

@@ -2,8 +2,8 @@
 title: Configurare la protezione anti-phishing
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -21,31 +21,31 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come configurare la protezione anti-phishing.
-ms.openlocfilehash: 8cef8f916a8a3e2b27dd7f76ddecd921d59ca0c4
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 32494eda4496d99e5e5f4def213ba7876f6c3183
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422004"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580415"
 ---
 # <a name="set-up-anti-phishing"></a>Configurare l'anti-phishing
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWvt9r?autoplay=false]
 
-Il phishing è un attacco dannoso in cui un messaggio di posta elettronica sembra essere stato inviato da una fonte familiare, ma tenta di raccogliere le informazioni personali. Per impostazione predefinita, Microsoft 365 include una protezione anti-phishing, ma è possibile aumentare tale protezione perfezionando le impostazioni. Diamo un'occhiata.
+Il phishing è un attacco dannoso in cui un messaggio di posta elettronica sembra essere stato inviato da una fonte familiare, ma tenta di raccogliere le informazioni personali. Per impostazione predefinita, Microsoft 365 include una protezione anti-phishing, ma è possibile aumentare tale protezione affinando le impostazioni. Diamo un'occhiata.
 
 ## <a name="try-it"></a>Perché non provarlo?
 
-1. Nell'interfaccia di amministrazione in [https://admin.microsoft.com](https://admin.microsoft.com) , selezionare **Sicurezza**, **Gestione minacce**, **Criteri** e quindi **Anti-phishing ATP.**
-1. Selezionare **Criterio predefinito** per perfezionarlo.
-1. Nella sezione **Rappresentazione** selezionare **Modifica.**
-1. Passare ad **Aggiungi domini per proteggere e selezionare** l'interruttore per includere automaticamente i domini di cui si è proprietari.
-1. Passare ad **Azioni,** aprire l'elenco a discesa Se la posta elettronica viene inviata da un utente rappresentato e scegliere l'azione desiderata.
+1. Nell'interfaccia di amministrazione in [https://admin.microsoft.com](https://admin.microsoft.com) , selezionare **Sicurezza**, **Gestione minacce**, **Criteri**, quindi **ANTI-phishing ATP**.
+1. Selezionare **Criterio predefinito** per affinarlo.
+1. Nella sezione **Rappresentazione** selezionare **Modifica**.
+1. Vai ad **Aggiungi domini da proteggere e** seleziona l'interruttore per includere automaticamente i domini di cui sei proprietario.
+1. Vai a **Azioni**, apri l'elenco a discesa Se la **posta** elettronica viene inviata da un utente rappresentato e scegli l'azione desiderata.
 
-    Aprire l'elenco a discesa **Se la posta elettronica** viene inviata da un dominio rappresentato e scegliere l'azione desiderata.
-1. Selezionare **Attiva suggerimenti per la sicurezza della rappresentazione.** Scegli se devono essere forniti suggerimenti agli utenti quando il sistema rileva utenti, domini o caratteri insoliti rappresentati. Selezionare **Salva**.
-1. Selezionare **Intelligence per le** cassette postali e verificare che sia attivata. In questo modo la posta elettronica può essere più efficiente grazie all'apprendimento dei modelli di utilizzo.
-1. Scegliere **Aggiungi domini e mittenti attendibili.** Qui è possibile aggiungere indirizzi di posta elettronica o domini che non devono essere classificati come rappresentazione.
-1. Choose **Review your settings,** make sure everything is correct, select **Save**, then **Close.**
+    Aprire l'elenco a discesa **Se la posta elettronica viene inviata da un** dominio rappresentato e scegliere l'azione desiderata.
+1. Seleziona **Attiva suggerimenti per la sicurezza per la rappresentazione.** Scegliere se i suggerimenti devono essere forniti agli utenti quando il sistema rileva utenti, domini o caratteri insoliti. Selezionare **Salva**.
+1. Selezionare **Intelligence cassetta postale** e verificare che sia attivato. Ciò consente alla posta elettronica di essere più efficiente imparando i modelli di utilizzo.
+1. Scegliere **Aggiungi mittenti e domini attendibili**. Qui puoi aggiungere indirizzi di posta elettronica o domini che non devono essere classificati come rappresentazione.
+1. Scegliere **Rivedi le impostazioni,** assicurarsi che tutto sia corretto, selezionare **Salva**, quindi **Chiudi**.
 
-    L'organizzazione ha ora una protezione migliore dalle minacce di phishing.
+    L'organizzazione ora ha una protezione migliore dalle minacce di phishing.

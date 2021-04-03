@@ -2,8 +2,8 @@
 title: Pianificare la configurazione di Microsoft 365 per le aziende
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: eb926624-018b-4486-bf11-5fba6ee4d645
 description: Informazioni sui requisiti e sulle considerazioni per il passaggio a Microsoft 365 per le aziende.
-ms.openlocfilehash: 7ec1fae211ec42afd510ee431a3ea7e17e2fd16b
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 24a5fd7fa101b24ed9c00612b359e572513eb099
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914067"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580799"
 ---
 # <a name="plan-your-setup-of-microsoft-365-for-business"></a>Pianificare la configurazione di Microsoft 365 per le aziende
 

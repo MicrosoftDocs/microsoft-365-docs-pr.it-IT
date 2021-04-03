@@ -1,9 +1,9 @@
 ---
-title: Guida rapida alla configurazione dei dipendenti
+title: Guida alla configurazione rapida dei dipendenti
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,24 +20,24 @@ search.appverid:
 - BCS160
 - MET150
 - MOE150
-description: Aiutare i dipendenti a configurare le app di Office che ottengono con Microsoft 365 Business Premium.
-ms.openlocfilehash: c336e12e05a0bb2f0967c7e7591913cbb2ce6742
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+description: Aiuta i dipendenti a configurare le app di Office che ottengono con Microsoft 365 Business Premium.
+ms.openlocfilehash: 72b05435de13ef0d020be74f619a140e188f79d8
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50422760"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580619"
 ---
 # <a name="employee-quick-setup"></a>Configurazione rapida per i dipendenti
 
-Sei nuovo di Microsoft 365 per le aziende? :::image type="icon" source="../media/video-call-icon.png" border="false":::[Guardare questo video](https://support.microsoft.com/office/d6466f0d-5d13-464a-adcb-00906ae87029) per informazioni. Eseguire quindi questa procedura.
+Sei una novità di Microsoft 365 per le aziende? :::image type="icon" source="../media/video-call-icon.png" border="false":::[Guarda questo video](https://support.microsoft.com/office/d6466f0d-5d13-464a-adcb-00906ae87029) per informazioni. Segui questi passaggi.
 
-:::image type="content" source="../media/m365-employee-quick-setup.png" alt-text="Immagine che mostra i passaggi rapidi di configurazione dei dipendenti.":::
+:::image type="content" source="../media/m365-employee-quick-setup.png" alt-text="Immagine che mostra la procedura di configurazione rapida dei dipendenti.":::
 
 ## <a name="1-sign-in-to-office"></a>1. Accedere a Office
 
 1. Passare a [Office.com](https://office.com) e scegliere **Accedi**.
-1. Digitare la password e la posta elettronica di Microsoft 365, quindi **accedere.**
+1. Digitare la posta elettronica e la password di Microsoft 365, quindi **accedere.**
 
 ## <a name="2-download-and-install-office-apps"></a>2. Scaricare e installare le app di Office
 
@@ -46,7 +46,7 @@ Sei nuovo di Microsoft 365 per le aziende? :::image type="icon" source="../media
     - In Microsoft Edge/Internet Explorer scegliere **Salva**, quindi **Esegui**.
     
         Se viene chiesto se consentire all'app di apportare modifiche, scegliere **Sì**. L'installazione di Office si avvia.
-    - In un Mac, aprire Microsoft **Office_2016_Installer.pkg**
+    - In un Mac apri Microsoft **Office_2016_Installer.pkg**
 
 ## <a name="3-open-outlook-and-add-your-account"></a>3. Aprire Outlook e aggiungere l'account
 
@@ -61,8 +61,8 @@ Sei nuovo di Microsoft 365 per le aziende? :::image type="icon" source="../media
 
 ## <a name="4-save-or-copy-files-to-onedrive"></a>4. Salvare o copiare file in OneDrive
 
-- Salvare documenti in **OneDrive** dal menu **Salva con nome** nelle app di Office.
-    :::image type="content" source="../media/save-onedrive.png" alt-text="Capire chi è il modo in cui salvare con nome in OneDrive.":::
+- Salvare i documenti **in OneDrive** dal menu **Salva con** nome nelle app di Office.
+    :::image type="content" source="../media/save-onedrive.png" alt-text="Indica chi è come salvare con nome in OneDrive.":::
 
 - Oppure copiare i file dal desktop o da Documenti in **OneDrive**.
 
@@ -86,4 +86,4 @@ Sei nuovo di Microsoft 365 per le aziende? :::image type="icon" source="../media
 - In alternativa, aprire Outlook in un dispositivo iOS o Android e passare a **Impostazioni**.
 
     Scegliere **Aggiungi Account**, **Aggiungi account e-mail**, quindi digitare indirizzo di posta elettronica e password.
-- In un **Windows Phone,** scegliere **Impostazioni,** **Posta elettronica + account,** **Aggiungere un account** e quindi **Exchange.**
+- In un **Windows Phone** scegliere **Impostazioni,** **Posta elettronica + account,** **Aggiungi un account** e quindi **Exchange.**

@@ -2,8 +2,8 @@
 title: Creare e modificare profili AutoPilot
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -27,12 +27,12 @@ search.appverid:
 - MOE150
 ms.assetid: 5cf7139e-cfa1-4765-8aad-001af1c74faa
 description: Scopri come creare un profilo AutoPilot e applicarlo a un dispositivo, nonché modificare o eliminare un profilo o rimuovere un profilo da un dispositivo.
-ms.openlocfilehash: e58418813ed0b4d23a5fa7e1d23aae33d8850e7f
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 414243da88fb6f39f8e6067d19d49ffe955f725f
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44400975"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580255"
 ---
 # <a name="create-and-edit-autopilot-profiles"></a>Creare e modificare profili AutoPilot
 
@@ -44,7 +44,7 @@ Un profilo si applica a un dispositivo o a un gruppo di dispositivi.
   
 2. Nella pagina **AutoPilot** scegliere la **scheda Profili** \> **Crea profilo.**
     
-3. Nella pagina **Crea profilo** immettere un nome per il profilo che consente di identificarlo, ad esempio Marketing. Attivare l'impostazione desiderata e quindi scegliere **Salva.** Per ulteriori informazioni sulle impostazioni del profilo AutoPilot, vedere [Informazioni sulle impostazioni del profilo AutoPilot.](autopilot-profile-settings.md)
+3. Nella pagina **Crea profilo** immettere un nome per il profilo che consente di identificarlo, ad esempio Marketing. Attivare l'impostazione desiderata e quindi scegliere **Salva**. Per ulteriori informazioni sulle impostazioni del profilo AutoPilot, vedere Informazioni sulle impostazioni del profilo [AutoPilot.](autopilot-profile-settings.md)
     
     ![Enter name and turn on settings in the Create profile panel.](../media/63b5a00d-6a5d-48d0-9557-e7531e80702a.png)
   
@@ -54,7 +54,7 @@ Dopo aver creato un profilo, puoi applicarlo a un dispositivo o a un gruppo di d
   
 1. Nella pagina **Prepara Windows** scegliere la scheda **Dispositivi**. 
     
-2. Seleziona la casella di controllo accanto al  nome di un dispositivo  e nel pannello Dispositivo scegli un profilo nell'elenco a discesa Profilo assegnato \> **Salva.**
+2. Seleziona la casella di controllo accanto al  nome di un dispositivo  e scegli un profilo nell'elenco a discesa Profilo assegnato Salva nel pannello \> **Dispositivo.**
     
     ![In the Device panel, select an Assigned profile to apply it.](../media/ed0ce33f-9241-4403-a5de-2dddffdc6fb9.png)
   

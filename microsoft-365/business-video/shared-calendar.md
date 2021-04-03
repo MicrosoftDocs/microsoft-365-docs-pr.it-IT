@@ -2,8 +2,8 @@
 title: Creare un calendario condiviso
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: kwekua
+author: kwekua
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come creare un calendario condiviso.
-ms.openlocfilehash: 22cf4473e7d370a3ae09b76e42d9ab29d0508a44
-ms.sourcegitcommit: 355bd51ab6a79d5c36a4e4f57df74ae6873eba19
+ms.openlocfilehash: 8877cce7234890dca5cd83a74c69b93d3b1dcd04
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "50421812"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580391"
 ---
 # <a name="create-a-shared-calendar"></a>Creare un calendario condiviso
 
@@ -35,7 +35,7 @@ ms.locfileid: "50421812"
 
 Un calendario condiviso consente di visualizzare rapidamente quando le persone sono disponibili per riunioni o altri eventi.
 
-1. In Outlook selezionare l'icona del calendario.
+1. In Outlook, selezionare l'icona del calendario.
 1. Nella scheda **Home** scegliere **Aggiungi calendario,** quindi **Da Rubrica.**
 1. Aggiungere utenti al calendario condiviso immettendo il proprio nome o selezionandolo nell'elenco e quindi scegliere **OK.**
 1. È ora possibile visualizzare il calendario e i calendari per le persone aggiunte.

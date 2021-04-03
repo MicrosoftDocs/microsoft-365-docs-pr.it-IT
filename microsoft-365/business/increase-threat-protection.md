@@ -2,8 +2,8 @@
 title: Aumentare la protezione dalle minacce per Microsoft 365 for Business
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Configurare Microsoft Defender per Office 365 e proteggere i dati sensibili da phishing, malware e altre minacce.
-ms.openlocfilehash: 6526ed9a849e83f19f74656004978089ce367ea9
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 8fb2c3881876cabea6d8907a85bc9397212126dc
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198392"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580195"
 ---
 # <a name="increase-threat-protection"></a>Protezione avanzata dalle minacce
 

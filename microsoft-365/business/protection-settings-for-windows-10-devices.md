@@ -2,8 +2,8 @@
 title: Modificare o impostare le impostazioni di protezione delle applicazioni per i dispositivi Windows 10
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -29,12 +29,12 @@ search.appverid:
 - MOE150
 ms.assetid: 02e74022-44af-414b-9d74-0ebf5c2197f0
 description: Scopri come creare o modificare i criteri di gestione delle app e proteggere i file di lavoro nei dispositivi Windows 10 personali degli utenti.
-ms.openlocfilehash: 64c6aa620171a373cd7564c7de3abbf4a4546c4e
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: aa270c563e6bdce6fd48f8713d7db3ce23921925
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50912823"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580015"
 ---
 # <a name="set-or-edit-application-protection-settings-for-windows-10-devices"></a>Impostare o modificare le impostazioni di protezione delle applicazioni per i dispositivi Windows 10
 

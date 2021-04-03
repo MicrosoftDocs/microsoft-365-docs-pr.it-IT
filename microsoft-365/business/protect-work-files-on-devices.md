@@ -2,8 +2,8 @@
 title: Proteggere i file di lavoro nei dispositivi
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: sharik
+author: skjerland
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -28,18 +28,18 @@ search.appverid:
 - MOE150
 ms.assetid: 52089919-9a5e-475f-a49a-f65369487861
 description: "Informazioni sulla configurazione predefinita e sull'aggiunta di criteri di gestione delle applicazioni per proteggere i dati aziendali nei dispositivi mobili personali degli utenti. "
-ms.openlocfilehash: 6dd6bc5c16ffbbd6ed62f16ad11e1eeb8e06a193
-ms.sourcegitcommit: 2d664a95b9875f0775f0da44aca73b16a816e1c3
+ms.openlocfilehash: 7e3967dad47508e938b760d0eb96ba8685d886a1
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 06/01/2020
-ms.locfileid: "44470908"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580035"
 ---
 # <a name="protect-work-files-on-devices"></a>Proteggere i file di lavoro nei dispositivi
 
 Questo articolo si applica a Microsoft 365 Business Premium.
 
-Nel mondo odierno, gli utenti sono legati ai propri dispositivi e, in caso di collisione tra la vita personale e quella professionale, i dati aziendali possono finire nel dispositivo personale di un dipendente. Le impostazioni configurate qui consentono di assumere il controllo e fornire protezione per i file di lavoro, senza influire sulle impostazioni o sui dati personali dell'utente.
+Nel mondo odierno, gli utenti sono legati ai propri dispositivi e, man mano che la vita personale e professionale si scontrano, i dati aziendali possono finire sul dispositivo personale di un dipendente. Le impostazioni configurate qui possono aiutare a prendere il controllo e fornire protezione per i file di lavoro, senza influire sulle impostazioni o sui dati personali dell'utente.
   
 ## <a name="configuring-policies-during-setup"></a>Configurazione dei criteri durante l'installazione
 

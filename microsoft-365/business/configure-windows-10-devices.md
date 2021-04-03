@@ -2,8 +2,8 @@
 title: Configurare i dispositivi Windows 10
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: conceptual
@@ -27,17 +27,17 @@ search.appverid:
 - MET150
 - MOE150
 ms.assetid: da60e08e-2547-491a-9c97-94ac6d715623
-description: Scopri come configurare i criteri dei dispositivi per Windows 10 che si applicano a tutti gli utenti dell'organizzazione, garantendo che si connettono in modo sicuro.
-ms.openlocfilehash: 811e948b33e8d305c88ff3e502c413356178696a
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+description: Informazioni sulla configurazione dei criteri dei dispositivi per Windows 10 che si applicano a tutti gli utenti dell'organizzazione, garantendo che si connettano in modo sicuro.
+ms.openlocfilehash: c7d27b903734f9348471bb7765b88650caeed9d5
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401015"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580275"
 ---
 # <a name="configure-windows-10-devices"></a>Configurare i dispositivi Windows 10
 
-Durante la configurazione, crei un criterio dispositivo per Windows 10 che si applica a tutti gli utenti dell'organizzazione. Quando un utente accede a un'app di Office nel dispositivo Windows 10 con l'account aziendale o dell'istituto di istruzione, le impostazioni configurate vengono applicate automaticamente per garantire che l'utente si connetta in modo sicuro.
+Durante l'installazione, crei un criterio dispositivo per Windows 10 che si applica a tutti gli utenti dell'organizzazione. Quando un utente accede a un'app di Office nel dispositivo Windows 10 con l'account aziendale o dell'istituto di istruzione, le impostazioni configurate vengono applicate automaticamente per assicurarsi che l'utente si connetta in modo sicuro.
   
 È consigliabile accettare la configurazione predefinita durante l'installazione. Dopo l'installazione, è possibile creare altri criteri e impostarli come destinazione per gruppi specifici di utenti.
   

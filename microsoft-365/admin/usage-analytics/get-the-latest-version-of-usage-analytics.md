@@ -2,8 +2,8 @@
 title: Ottenere la versione più recente dell'analisi dell'utilizzo di Microsoft 365
 f1.keywords:
 - NOCSH
-ms.author: sirkkuw
-author: Sirkkuw
+ms.author: efrene
+author: efrene
 manager: scotv
 audience: Admin
 ms.topic: article
@@ -20,15 +20,15 @@ search.appverid:
 - MOE150
 ms.assetid: 6561a052-02bb-479d-93ca-5a0f16faf2ee
 description: Ottenere la versione più recente dell'analisi dell'utilizzo di Microsoft 365.
-ms.openlocfilehash: 5fc02fb6688edb2355deed1733d6228fef9bb0c1
-ms.sourcegitcommit: 2d59b24b877487f3b84aefdc7b1e200a21009999
+ms.openlocfilehash: 2cc58814f1f2d01dd8e779751cdc6b0287faf29f
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 05/27/2020
-ms.locfileid: "44401495"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580763"
 ---
 # <a name="get-the-latest-version-of-microsoft-365-usage-analytics"></a>Ottenere la versione più recente dell'analisi dell'utilizzo di Microsoft 365
 
-L'app modello può essere aggiornata con nuovi dati o nuove visualizzazioni diverse volte all'anno. L'istanza esistente continuerà a funzionare, ma se si desidera ottenere la versione più recente, è necessario creare una nuova istanza e applicare eventuali personalizzazioni alla nuova istanza. Vedere [Abilitare l'analisi dell'utilizzo di Microsoft 365.](enable-usage-analytics.md) 
+L'app modello può essere aggiornata con nuovi dati o nuove visualizzazioni più volte all'anno. L'istanza esistente continuerà a funzionare, ma se si desidera ottenere la versione più recente, è necessario creare una nuova istanza e applicare eventuali personalizzazioni alla nuova istanza. Vedere [Abilitare l'analisi dell'utilizzo di Microsoft 365.](enable-usage-analytics.md) 
   
 
