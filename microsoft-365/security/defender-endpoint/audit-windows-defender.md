@@ -9,24 +9,24 @@ ms.sitesec: library
 ms.pagetype: security
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: dda0e58e587add2693f8448dd0833ce17706786c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7ce652d58be2d9ff28d82c088d5471a7bffdf6dc
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067354"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570973"
 ---
 # <a name="test-how-microsoft-defender-for-endpoint-features-work-in-audit-mode"></a>Verificare il funzionamento delle funzionalità di Microsoft Defender for Endpoint in modalità di controllo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -47,10 +47,10 @@ Puoi usare Defender for Endpoint per ottenere maggiori dettagli per ogni evento,
 
  **Opzioni di controllo** | **Come abilitare la modalità di controllo** | **Come visualizzare gli eventi**
 |---------|---------|---------|
-| Il controllo si applica a tutti gli eventi | [Abilitare l'accesso controllato alle cartelle](enable-controlled-folders.md) | [Eventi di accesso controllato alle cartelle](evaluate-controlled-folder-access.md#review-controlled-folder-access-events-in-windows-event-viewer)
-| Il controllo si applica a singole regole | [Abilitare le regole di riduzione della superficie di attacco](enable-attack-surface-reduction.md) | [Eventi delle regole di riduzione della superficie di attacco](evaluate-attack-surface-reduction.md#review-attack-surface-reduction-events-in-windows-event-viewer)
+| Il controllo si applica a tutti gli eventi | [Abilitare l’accesso controllato alle cartelle](enable-controlled-folders.md) | [Eventi di accesso controllato alle cartelle](evaluate-controlled-folder-access.md#review-controlled-folder-access-events-in-windows-event-viewer)
+| Il controllo si applica a singole regole | [Abilitare regole per la riduzione della superficie di attacco](enable-attack-surface-reduction.md) | [Eventi delle regole di riduzione della superficie di attacco](evaluate-attack-surface-reduction.md#review-attack-surface-reduction-events-in-windows-event-viewer)
 | Il controllo si applica a tutti gli eventi | [Abilitare la protezione di rete](enable-network-protection.md) | [Eventi di protezione di rete](evaluate-network-protection.md#review-network-protection-events-in-windows-event-viewer)
-| Il controllo si applica alle singole mitigazioni | [Abilitare la protezione da exploit](enable-exploit-protection.md) | [Eventi di protezione da exploit](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer)
+| Il controllo si applica alle singole mitigazioni | [Abilitare la protezione dagli exploit](enable-exploit-protection.md) | [Eventi di protezione da exploit](exploit-protection.md#review-exploit-protection-events-in-windows-event-viewer)
 
 ## <a name="related-topics"></a>Argomenti correlati
 

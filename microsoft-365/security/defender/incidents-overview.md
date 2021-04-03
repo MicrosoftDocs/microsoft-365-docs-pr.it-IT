@@ -9,8 +9,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: macapara
-author: mjcaparas
+ms.author: josephd
+author: JoeDavies-MSFT
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: ef05609da50bc73fa59fb582b77faa5d87b9ece3
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 6dd13c5f83d05be3c77e5f84608fb6aa5172d9a4
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060738"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500931"
 ---
 # <a name="incidents-overview-in-microsoft-365-defender"></a>Panoramica degli incidenti in Microsoft 365 Defender
 
@@ -37,7 +37,7 @@ ms.locfileid: "51060738"
 **Si applica a:**
 - Microsoft 365 Defender
 
-> Vuoi provare Microsoft 365 Defender? È possibile [valutarlo in un ambiente lab o](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) eseguire il progetto pilota in [produzione.](m365d-pilot.md?ocid=cx-evalpilot)
+> Vuoi provare Microsoft 365 Defender? Puoi [valutarlo in un ambiente lab](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) o [eseguire il progetto pilota in produzione](m365d-pilot.md?ocid=cx-evalpilot).
 >
 
 

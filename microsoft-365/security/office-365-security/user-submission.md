@@ -17,12 +17,12 @@ ms.collection:
 description: Gli amministratori possono imparare a configurare una cassetta postale per raccogliere posta indesiderata e phishing segnalati dagli utenti.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4d3f2640752f2dae152ef4be8b9ac2d2996c802a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: d86c79f0f0ab74d1dfbb88e7803f4ee4d691ea73
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206060"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51501177"
 ---
 # <a name="user-submissions-policy"></a>Criteri per gli invii di utenti
 
@@ -119,6 +119,9 @@ In **Opzioni per visualizzare quando vengono segnalati i messaggi** selezionare 
 
         > [!NOTE]
         > Le organizzazioni governative statunitensi (GCC, GCC-H e DoD) possono configurare solo **la cassetta postale personalizzata.** Le altre due opzioni sono disabilitate.
+
+        > [!NOTE]
+        > Se le organizzazioni sono configurate per l'invio solo alla cassetta postale personalizzata, i messaggi segnalati non verranno inviati per la nuova analisi e i risultati nel portale Messaggi segnalati dall'utente saranno sempre vuoti.
 
       Al termine, fare clic su **Conferma**.
 

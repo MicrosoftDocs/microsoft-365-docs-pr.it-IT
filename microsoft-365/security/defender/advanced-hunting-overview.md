@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 0338e87c103bef0f12a45277a14152ef429d0067
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3aa964f8e213d64f583738d8957899c1b7b5146c
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068309"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51501095"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>Ricerca proattiva di minacce con ricerca avanzata in Microsoft 365 Defender
 
@@ -36,7 +36,7 @@ ms.locfileid: "51068309"
 **Si applica a:**
 - Microsoft 365 Defender
 
-> Vuoi provare Microsoft 365 Defender? È possibile [valutarlo in un ambiente lab o](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) eseguire il progetto pilota in [produzione.](m365d-pilot.md?ocid=cx-evalpilot)
+> Vuoi provare Microsoft 365 Defender? Puoi [valutarlo in un ambiente lab](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) o [eseguire il progetto pilota in produzione](m365d-pilot.md?ocid=cx-evalpilot).
 >
 
 La ricerca avanzata è uno strumento di ricerca delle minacce basato sulla query che permette di esplorare dati non elaborati fino a 30 giorni. È possibile esaminare in modo proattivo gli eventi nella rete per individuare gli indicatori di minaccia e le entità. L'accesso flessibile ai dati consente la ricerca senza vincoli delle minacce note e potenziali.
@@ -48,10 +48,10 @@ La ricerca avanzata è uno strumento di ricerca delle minacce basato sulla query
 
 Questa funzionalità è simile alla ricerca [avanzata in Microsoft Defender for Endpoint.](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview) Disponibile nel Centro sicurezza Microsoft 365, questa funzionalità supporta le query che controllano un set di dati più ampio da:
 
-- Microsoft Defender ATP
+- Microsoft Defender per endpoint
 - Microsoft Defender per Office 365
 - Microsoft Cloud App Security
-- Microsoft Defender per identità
+- Che cosa è Microsoft Defender per identità?
 
 Per usare la ricerca avanzata, [attivare Microsoft 365 Defender.](m365d-enable.md)
 

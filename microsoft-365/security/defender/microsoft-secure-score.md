@@ -7,8 +7,8 @@ ms.mktglfcycl: deploy
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -21,12 +21,12 @@ ms.custom:
 - seo-marvel-apr2020
 - seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 98f335a38b2e4f581d4b08def39353e53e1bafd4
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 19b83fe7dd733bb8a0668039d4df2b692a398ad4
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064610"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570464"
 ---
 # <a name="microsoft-secure-score"></a>Microsoft Secure Score
 
@@ -34,13 +34,13 @@ ms.locfileid: "51064610"
 
 Microsoft Secure Score è una misurazione della postura di sicurezza di una organizzazione, in cui i numeri più alti indicano l'esecuzione di più azioni di miglioramento. È disponibile nel Centro sicurezza https://security.microsoft.com/securescore [Microsoft 365.](overview-security-center.md)
 
-Seguendo i consigli relativi al punteggio sicuro è possibile proteggere l'organizzazione dalle minacce. Da un dashboard centralizzato nel Centro sicurezza Microsoft 365, le organizzazioni possono monitorare e lavorare sulla sicurezza delle identità, delle app e dei dispositivi di Microsoft 365.
+Seguendo i consigli di Secure Score è possibile proteggere l'organizzazione dalle minacce. Da un dashboard centralizzato nel Centro sicurezza Microsoft 365, le organizzazioni possono monitorare e lavorare sulla sicurezza delle identità, delle app e dei dispositivi di Microsoft 365.
 
 Microsoft Secure Score aiuta le organizzazioni a:  
 
-* Produrre report sullo stato corrente della postura di sicurezza dell’organizzazione.
-* Migliorare la postura di sicurezza dell’organizzazione offrendo funzionalità di individuabilità, visibilità, linee guida e controllo.  
-* Confrontarsi con i benchmark e definire gli indicatori di prestazioni chiave (KPI).
+* Produrre report sullo stato corrente della postura di sicurezza dell'organizzazione.
+* Migliorare la postura di sicurezza dell'organizzazione offrendo funzionalità di individuazione, visibilità, linee guida e controllo.  
+* Confrontarsi con i benchmark e definire gli indicatori delle prestazioni chiave (KPI).
 
 Le organizzazioni ottengono l'accesso a visualizzazioni affidabili di metriche e tendenze, integrazione con altri prodotti Microsoft, confronto dei punteggi con organizzazioni simili e molto altro ancora. Il punteggio può anche riflettere quando soluzioni di terze parti hanno indirizzato le azioni consigliate.
 
@@ -56,11 +56,11 @@ Ti vengono dati punti per le azioni seguenti:
 
 Alcune azioni di miglioramento forniscono punti solo quando sono completate. Alcuni forniscono punti parziali se sono completati per alcuni dispositivi o utenti. Se non è possibile o non si desidera eseguire una delle azioni di miglioramento, è possibile scegliere di accettare il rischio o il rischio rimanente.
 
-Se si dispone di una licenza per uno dei prodotti Microsoft supportati, verranno visualizzati suggerimenti per tali prodotti. Viene illustrato il set completo di possibili miglioramenti per un prodotto, indipendentemente dall'edizione, dall'abbonamento o dal piano di licenza. In questo modo, è possibile comprendere le procedure consigliate per la sicurezza e migliorare il punteggio. La posizione di sicurezza assoluta, rappresentata da Secure Score, rimane la stessa indipendentemente dalle licenze di proprietà dell'organizzazione per un prodotto specifico. Tenere presente che la sicurezza deve essere bilanciata con l'usabilità e non tutte le raccomandazioni possono funzionare per l'ambiente.
+Se si dispone di una licenza per uno dei prodotti Microsoft supportati, verranno visualizzati suggerimenti per tali prodotti. Viene illustrato il set completo di possibili miglioramenti per un prodotto, indipendentemente dall'edizione, dall'abbonamento o dal piano di licenza. In questo modo, è possibile comprendere le procedure consigliate per la sicurezza e migliorare il punteggio. La posizione di sicurezza assoluta, rappresentata da Secure Score, rimane la stessa indipendentemente dalle licenze di proprietà dell'organizzazione per un prodotto specifico. Tenere presente che la sicurezza dovrebbe andare di pari passo con l'usabilità, ma non tutti i consigli possono essere adatti per tutti gli ambienti.
 
 Il punteggio viene aggiornato in tempo reale per riflettere le informazioni presentate nelle pagine delle visualizzazioni e delle azioni di miglioramento. Secure Score si sincronizza anche ogni giorno per ricevere i dati di sistema sui punti ottenuti per ogni azione.
 
-### <a name="key-scenarios"></a>Scenari chiave
+### <a name="key-scenarios"></a>Scenari principali
 
 - [Controllare il punteggio corrente](microsoft-secure-score-improvement-actions.md#check-your-current-score)
 - [Confrontare il punteggio con organizzazioni come la tua](microsoft-secure-score-history-metrics-trends.md#compare-your-score-to-organizations-like-yours)
@@ -79,8 +79,8 @@ Attualmente sono disponibili suggerimenti per i prodotti seguenti:
 
 - Microsoft 365 (incluso Exchange Online)
 - Azure Active Directory
-- Microsoft Defender ATP
-- Microsoft Defender per identità
+- Microsoft Defender per endpoint
+- Che cosa è Microsoft Defender per identità?
 - Cloud App Security
 - Microsoft Teams
 

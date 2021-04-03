@@ -18,13 +18,13 @@ ms.collection:
 search.appverid:
 - MOE150
 - MET150
-description: Pronti per iniziare a implementare le etichette di riservatezza per proteggere i dati dell'organizzazione, ma in dubbio su come iniziare? Leggere alcune guide pratiche utili per iniziare il percorso di implementazione dell'etichettatura.
-ms.openlocfilehash: a6b04bcce7d0fe505173a807fbc2d4105831419c
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+description: Pronti per distribuire le etichette di riservatezza per proteggere i dati dell'organizzazione, ma in dubbio su come iniziare? Leggere alcune guide pratiche utili per iniziare il percorso di implementazione dell'etichettatura.
+ms.openlocfilehash: d685b050d32ea7bf482a39ad8d72abe3ee74567d
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51051888"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51499682"
 ---
 # <a name="get-started-with-sensitivity-labels"></a>Iniziare a usare le etichette di riservatezza
 
@@ -32,9 +32,7 @@ ms.locfileid: "51051888"
 
 Per informazioni sulle etichette di riservatezza e su come favoriscono la protezione dei dati dell'organizzazione, vedere [informazioni sulle etichette di riservatezza](sensitivity-labels.md).
 
-Se si ha [Azure Information Protection](/azure/information-protection/what-is-information-protection), determinare se è necessario eseguire la migrazione delle etichette alla piattaforma di etichetta unificata e quale client di etichettatura usare:
-- [Come si può determinare se il tenant si trova nella piattaforma di etichettatura unificata?](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform)
-- [Scegliere la soluzione di etichettatura di Windows](/azure/information-protection/rms-client/use-client#choose-your-windows-labeling-solution)
+Se si ha [Azure Information Protection](/azure/information-protection/what-is-information-protection) e si usano ancora etichette di Azure Information Protection gestite dal portale di Azure, è necessario eseguire la migrazione di queste etichette alla [piattaforma di etichettatura unificata](/azure/information-protection/faqs#how-can-i-determine-if-my-tenant-is-on-the-unified-labeling-platform). Nei computer Windows è quindi possibile [scegliere il client di etichettatura da usare](/azure/information-protection/rms-client/use-client#choose-which-labeling-client-to-use-for-windows-computers) per le etichette di riservatezza pubblicate.
 
 Quando si è pronti per iniziare a proteggere i dati dell'organizzazione usando le etichette di riservatezza:
 
@@ -64,7 +62,7 @@ Per impostazione predefinita, gli amministratori globali del tenant hanno access
 
 In alternativa all'utilizzo dei ruoli predefiniti, è possibile creare un nuovo gruppo di ruoli e aggiungere l’**amministratore dell'etichetta di riservatezza** o la **configurazione dell’organizzazione** al gruppo. Per un ruolo di sola lettura, usare **Lettore di etichette di riservatezza**. 
 
-Per istruzioni su come aggiungere utenti ai ruoli predefiniti o creare i gruppi di ruoli, vedere [Concedere agli utenti l'accesso al Centro sicurezza e conformità di Office 365](../security/defender-365-security/grant-access-to-the-security-and-compliance-center.md).
+Per istruzioni su come aggiungere utenti ai ruoli predefiniti o creare i gruppi di ruoli, vedere [Concedere agli utenti l'accesso al Centro sicurezza e conformità di Office 365](../security/office-365-security/grant-access-to-the-security-and-compliance-center.md).
 
 Queste autorizzazioni sono necessarie solo per creare e configurare le etichette di riservatezza e i relativi criteri di etichetta. Non sono invece necessarie per applicare le etichette nelle app o nei servizi. Se sono necessarie autorizzazioni aggiuntive per configurazioni specifiche relative alle etichette di riservatezza, tali autorizzazioni verranno riportate nelle rispettive istruzioni nella documentazione.
 

@@ -8,27 +8,27 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: e86cba39663e96beffc00aa94d6cbcdf7a6e1e42
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e6a11af94a5d2b2099d14b660cf65c846532ebd1
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067066"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500825"
 ---
 # <a name="deviceinfo"></a>DeviceInfo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-advancedhuntingref-abovefoldlink)
@@ -55,6 +55,6 @@ Per informazioni sulle altre tabelle nello schema di ricerca avanzata, vedere la
 | `MachineGroup` | stringa | Gruppo di computer del computer. Questo gruppo viene utilizzato dal controllo di accesso basato sui ruoli per determinare l'accesso al computer |
 
 ## <a name="related-topics"></a>Argomenti correlati
-- [Panoramica della ricerca avanzata](advanced-hunting-overview.md)
+- [Panoramica della rilevazione avanzata](advanced-hunting-overview.md)
 - [Capire il linguaggio delle query](advanced-hunting-query-language.md)
 - [Comprensione dello schema](advanced-hunting-schema-reference.md)

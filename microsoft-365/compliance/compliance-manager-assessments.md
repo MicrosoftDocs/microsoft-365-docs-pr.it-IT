@@ -14,12 +14,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Creare valutazioni in Microsoft Compliance Manager per soddisfare i requisiti di normative e certificazioni importanti per l'organizzazione.
-ms.openlocfilehash: ff2aa41b91f3cb019dbed542c422d61c79c4ecb5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: b8051a036f2ffda2f3a2840880318466a2ec71af
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50908596"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500641"
 ---
 # <a name="build-and-manage-assessments-in-compliance-manager"></a>Creare e gestire valutazioni in Compliance Manager
 
@@ -53,7 +53,7 @@ Esistono tre modi per configurare le valutazioni:
 3. [Creare una valutazione personalizzata.](#create-your-own-custom-assessment)
 
 > [!NOTE]
-> Solo gli utenti che hanno un ruolo amministratore globale o amministratore di Compliance Manager possono creare e modificare le valutazioni. Ulteriori informazioni sui [ruoli e sulle autorizzazioni](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
+> Solo gli utenti che hanno un ruolo di amministratore globale, di amministrazione di Compliance Manager o di assessore di Compliance Manager possono creare e modificare le valutazioni. Ulteriori informazioni sui [ruoli e sulle autorizzazioni](compliance-manager-setup.md#set-user-permissions-and-assign-roles).
 
 **Usare una valutazione precompisa**
 

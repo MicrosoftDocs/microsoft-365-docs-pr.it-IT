@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: c0575b5eaf5a4683f86d4a48dd1076fa2c423acf
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: c0a29f93b9ea926beaeecb840ba108da04a89ebb
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068314"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51501139"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>Eseguire la migrazione di query di ricerca avanzate da Microsoft Defender per Endpoint
 
@@ -37,10 +37,10 @@ ms.locfileid: "51068314"
 
 Sposta i flussi di lavoro di ricerca avanzati da Microsoft Defender for Endpoint per cercare in modo proattivo le minacce usando un set più ampio di dati. In Microsoft 365 Defender, si ottiene l'accesso ai dati da altre soluzioni di sicurezza di Microsoft 365, tra cui:
 
-- Microsoft Defender ATP
+- Microsoft Defender per endpoint
 - Microsoft Defender per Office 365
 - Microsoft Cloud App Security
-- Microsoft Defender per identità
+- Che cosa è Microsoft Defender per identità?
 
 >[!NOTE]
 >La maggior parte dei clienti di Microsoft Defender per Endpoint [può usare Microsoft 365 Defender senza licenze aggiuntive.](prerequisites.md#licensing-requirements) Per avviare la transizione dei flussi di lavoro di ricerca avanzata da Defender for Endpoint, [attiva Microsoft 365 Defender.](m365d-enable.md)
@@ -180,6 +180,6 @@ AlertInfo
 
 ## <a name="see-also"></a>Vedere anche
 - [Attivare Microsoft 365 Defender](advanced-hunting-query-language.md)
-- [Panoramica della ricerca avanzata](advanced-hunting-overview.md)
+- [Panoramica della rilevazione avanzata](advanced-hunting-overview.md)
 - [Comprendere lo schema](advanced-hunting-schema-tables.md)
 - [Ricerca avanzata in Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)

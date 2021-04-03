@@ -1,5 +1,5 @@
 ---
-title: Visualizzare gli eventi di riduzione della superficie di attacco
+title: Visualizzare eventi per la riduzione della superficie di attacco
 description: Importa visualizzazioni personalizzate per visualizzare gli eventi di riduzione della superficie di attacco.
 keywords: visualizzazione eventi, exploit guard, controllo, revisione, eventi
 search.product: eADQiWindows 10XVcnh
@@ -8,24 +8,24 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: de605a667284c1218a3efe6e388d99b26b42e333
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 0a2ec16685ede2e625528fc3944943923bba3fc9
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068578"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51569744"
 ---
-# <a name="view-attack-surface-reduction-events"></a>Visualizzare gli eventi di riduzione della superficie di attacco
+# <a name="view-attack-surface-reduction-events"></a>Visualizzare eventi per la riduzione della superficie di attacco
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
@@ -147,32 +147,32 @@ Puoi accedere a questi eventi nel Visualizzatore eventi di Windows:
 
 Funzionalità | Provider/origine | ID evento | Descrizione
 :-|:-|:-:|:-
-Protezione da exploit | Security-Mitigations (modalità kernel/modalità utente) | 1 | Controllo ACG
-Protezione da exploit | Security-Mitigations (modalità kernel/modalità utente) | 2  | Applicazione ACG
-Protezione da exploit | Security-Mitigations (modalità kernel/modalità utente) | 3  | Non consentire il controllo dei processi figlio
-Protezione da exploit | Security-Mitigations (modalità kernel/modalità utente) | 4  | Non consentire il blocco dei processi figlio
-Protezione da exploit | Security-Mitigations (modalità kernel/modalità utente) | 5  | Bloccare il controllo delle immagini con integrità bassa
-Protezione da exploit | Security-Mitigations (modalità kernel/modalità utente) | 6  | Blocca il blocco di immagini con integrità bassa
-Protezione da exploit | Security-Mitigations (modalità kernel/modalità utente) | 7  | Bloccare il controllo delle immagini remote
-Protezione da exploit | Security-Mitigations (modalità kernel/modalità utente) | 8  | Bloccare il blocco di immagini remote
-Protezione da exploit | Security-Mitigations (modalità kernel/modalità utente) | 9  | Disabilitare il controllo delle chiamate di sistema win32k
-Protezione da exploit | Security-Mitigations (modalità kernel/modalità utente) | 10   | Disabilitare il blocco delle chiamate di sistema win32k
-Protezione da exploit | Security-Mitigations (modalità kernel/modalità utente) | 11  | Controllo di Protezione dell'integrità del codice
-Protezione da exploit | Security-Mitigations (modalità kernel/modalità utente) | 12  | Blocco di protezione dell'integrità del codice
-Protezione da exploit | Security-Mitigations (modalità kernel/modalità utente) | 13 | Controllo EAF
-Protezione da exploit | Security-Mitigations (modalità kernel/modalità utente) | 14  | Imposizione EAF
-Protezione da exploit | Security-Mitigations (modalità kernel/modalità utente) | 15  | Controllo EAF+
-Protezione da exploit | Security-Mitigations (modalità kernel/modalità utente) | 16  | Imposizione EAF+
-Protezione da exploit | Security-Mitigations (modalità kernel/modalità utente) | 17  | Controllo IAF
-Protezione da exploit | Security-Mitigations (modalità kernel/modalità utente) | 18  | Imposizione IAF
-Protezione da exploit | Security-Mitigations (modalità kernel/modalità utente) | 19 | Controllo ROP StackPivot
-Protezione da exploit | Security-Mitigations (modalità kernel/modalità utente) | 20 | Applicazione ROP StackPivot
-Protezione da exploit | Security-Mitigations (modalità kernel/modalità utente) |  21 | Controllo ROP CallerCheck
-Protezione da exploit | Security-Mitigations (modalità kernel/modalità utente) | 22 | ROP CallerCheck enforce
-Protezione da exploit | Security-Mitigations (modalità kernel/modalità utente) | 23 | Controllo ROP SimExec
-Protezione da exploit | Security-Mitigations (modalità kernel/modalità utente) | 24 | ROP SimExec enforce
-Protezione da exploit | WER-Diagnostics | 5  | Blocco CFG
-Protezione da exploit | Win32K (operativo) | 260 | Tipo di carattere non attendibile
+Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 1 | Controllo ACG
+Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 2 | Applicazione ACG
+Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 3 | Non consentire il controllo dei processi figlio
+Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 4  | Non consentire il blocco dei processi figlio
+Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 5  | Bloccare il controllo delle immagini con integrità bassa
+Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 6  | Blocca il blocco di immagini con integrità bassa
+Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 7  | Bloccare il controllo delle immagini remote
+Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 8  | Bloccare il blocco di immagini remote
+Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 9  | Disabilitare il controllo delle chiamate di sistema win32k
+Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 10   | Disabilitare il blocco delle chiamate di sistema win32k
+Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 11  | Controllo di Protezione dell'integrità del codice
+Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 12  | Blocco di protezione dell'integrità del codice
+Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 13 | Controllo EAF
+Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 14  | Imposizione EAF
+Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 15  | Controllo EAF+
+Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 16  | Imposizione EAF+
+Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 17  | Controllo IAF
+Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 18  | Imposizione IAF
+Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 19 | Controllo ROP StackPivot
+Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 20 | Applicazione ROP StackPivot
+Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) |  21 | Controllo ROP CallerCheck
+Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 22 | ROP CallerCheck enforce
+Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 23 | Controllo ROP SimExec
+Protezione dagli exploit | Security-Mitigations (modalità kernel/modalità utente) | 24 | ROP SimExec enforce
+Protezione dagli exploit | WER-Diagnostics | 5  | Blocco CFG
+Protezione dagli exploit | Win32K (operativo) | 260 | Tipo di carattere non attendibile
 Protezione di rete | Windows Defender (operativo) | 5007 | Evento quando vengono modificate le impostazioni
 Protezione di rete | Windows Defender (operativo) | 1125 | Evento quando protezione di rete viene attivata in modalità di controllo
 Protezione di rete | Windows Defender (operativo) | 1126 | Evento quando protezione di rete viene attivata in modalità blocco
@@ -181,6 +181,6 @@ Accesso controllato alle cartelle | Windows Defender (operativo) | 1124 | Evento
 Accesso controllato alle cartelle | Windows Defender (operativo) | 1123 | Evento accesso controllato bloccato alle cartelle
 Accesso controllato alle cartelle | Windows Defender (operativo) | 1127 | Evento blocco scrittura settore accesso controllato bloccato
 Accesso controllato alle cartelle | Windows Defender (operativo) | 1128 | Audited Controlled folder access sector write block event
-Riduzione della superficie d'attacco | Windows Defender (operativo) | 5007 | Evento quando vengono modificate le impostazioni
-Riduzione della superficie d'attacco | Windows Defender (operativo) | 1122 | Evento quando la regola viene attivata in modalità di controllo
-Riduzione della superficie d'attacco | Windows Defender (operativo) | 1121 | Evento quando la regola viene attivata in modalità blocco
+La riduzione della superficie di attacco | Windows Defender (operativo) | 5007 | Evento quando vengono modificate le impostazioni
+La riduzione della superficie di attacco | Windows Defender (operativo) | 1122 | Evento quando la regola viene attivata in modalità di controllo
+La riduzione della superficie di attacco | Windows Defender (operativo) | 1121 | Evento quando la regola viene attivata in modalità blocco

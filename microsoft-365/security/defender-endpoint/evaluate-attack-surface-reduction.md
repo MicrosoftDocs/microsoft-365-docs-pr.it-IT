@@ -1,5 +1,5 @@
 ---
-title: Valutare le regole di riduzione della superficie di attacco
+title: Rilevare regole per la riduzione della superficie di attacco
 description: Scopri come la riduzione della superficie di attacco potrebbe bloccare e impedire gli attacchi con lo strumento demo personalizzato.
 keywords: Riduzione della superficie di attacco, fianchi, sistema di prevenzione delle intrusioni host, regole di protezione, anti-exploit, antiexploit, exploit, prevenzione delle infezioni, valutare, testare, demo
 search.product: eADQiWindows 10XVcnh
@@ -8,25 +8,25 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 13b1ac5f71f2bc24ad6f52af6722e12fab935270
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 07573fd92643ce5fdf3e9140031bf5f15ae8f7aa
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067794"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570340"
 ---
-# <a name="evaluate-attack-surface-reduction-rules"></a>Valutare le regole di riduzione della superficie di attacco
+# <a name="evaluate-attack-surface-reduction-rules"></a>Rilevare regole per la riduzione della superficie di attacco
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
@@ -76,7 +76,7 @@ ID evento | Descrizione
  1121 | Evento quando viene attivata una regola di riduzione della superficie di attacco in modalità blocco
  1122 | Evento quando una regola di riduzione della superficie di attacco viene attivata in modalità di controllo
 
-## <a name="customize-attack-surface-reduction-rules"></a>Personalizzare le regole di riduzione della superficie di attacco
+## <a name="customize-attack-surface-reduction-rules"></a>Personalizzare regole per la riduzione della superficie di attacco
 
 Durante la valutazione, è possibile configurare ogni regola singolarmente o escludere determinati file e processi dalla valutazione da parte della funzionalità.
 
@@ -86,4 +86,4 @@ Vedi [Personalizzare le regole di riduzione della superficie](customize-attack-s
 
 * [Ridurre le superfici di attacco con le regole di riduzione della superficie di attacco](attack-surface-reduction.md)
 * [Usare la modalità di controllo per valutare Windows Defender](audit-windows-defender.md)
-* [Domande frequenti sulla riduzione della superficie di attacco](attack-surface-reduction.md)
+* [FAQ per la riduzione della superficie d'attacco](attack-surface-reduction.md)

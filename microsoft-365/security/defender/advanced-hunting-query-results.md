@@ -10,8 +10,8 @@ ms.sitesec: library
 ms.pagetype: security
 f1.keywords:
 - NOCSH
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: dd25d021d04dc5e8a831e327fedb16d28e32b32a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 7086108febc25c4ecaaa3015c1d9a49f9d8ee642
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068269"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500912"
 ---
 # <a name="work-with-advanced-hunting-query-results"></a>Utilizzare i risultati delle query di ricerca avanzata
 
@@ -154,7 +154,7 @@ Per affinare la query, selezionare i pulsanti o sui valori che si desidera inclu
 Dopo avere applicato il filtro per modificare la query e aver eseguito la query, i risultati vengono aggiornati di conseguenza.
 
 ## <a name="related-topics"></a>Argomenti correlati
-- [Panoramica della ricerca avanzata](advanced-hunting-overview.md)
+- [Panoramica della rilevazione avanzata](advanced-hunting-overview.md)
 - [Capire il linguaggio delle query](advanced-hunting-query-language.md)
 - [Utilizzare le query condivise](advanced-hunting-shared-queries.md)
 - [Cercare tra dispositivi, posta elettronica, app e identità](advanced-hunting-query-emails-devices.md)

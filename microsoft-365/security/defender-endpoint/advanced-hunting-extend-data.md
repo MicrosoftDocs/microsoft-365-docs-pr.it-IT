@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -17,19 +17,19 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 10/10/2020
 ms.technology: mde
-ms.openlocfilehash: 60e8710415e328d06fac4c02e428094e5e4bcc92
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ea2524cb214d3cf7c784162a472722727cf0d57c
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51067461"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500622"
 ---
 # <a name="extend-advanced-hunting-coverage-with-the-right-settings"></a>Estendere la copertura di ricerca avanzata con le impostazioni giuste
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 
 [La ricerca avanzata](advanced-hunting-overview.md) si basa sui dati provenienti da tutta l'organizzazione. Per ottenere i dati più completi possibili, verificare di disporre delle impostazioni corrette nelle origini dati corrispondenti.
 
@@ -45,7 +45,7 @@ Installazione del servizio | Eventi acquisiti con `ActionType` il valore , che i
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Panoramica della ricerca avanzata](advanced-hunting-overview.md)
+- [Panoramica della rilevazione avanzata](advanced-hunting-overview.md)
 - [Capire il linguaggio delle query](advanced-hunting-query-language.md)
 - [Comprendere lo schema](advanced-hunting-schema-reference.md)
 - [Usare i risultati delle query](advanced-hunting-query-results.md)

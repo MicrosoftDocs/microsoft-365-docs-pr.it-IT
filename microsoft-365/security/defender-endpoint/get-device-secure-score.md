@@ -1,5 +1,5 @@
 ---
-title: Ottenere il punteggio sicuro del dispositivo
+title: Ottenere punteggio di sicurezza dei dispositivi
 description: Recupera il punteggio di sicurezza del dispositivo dell'organizzazione.
 keywords: api, api del grafico, api supportate, ottenere, avvisi, recenti
 search.product: eADQiWindows 10XVcnh
@@ -7,27 +7,27 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 921334c937e3f211b032a5d24d4244d9a6fb3d61
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: db4682d0d2fccd7504eb46d9099a9783408cfb73
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166886"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570937"
 ---
-# <a name="get-device-secure-score"></a>Ottenere il punteggio sicuro del dispositivo
+# <a name="get-device-secure-score"></a>Ottenere punteggio di sicurezza dei dispositivi
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **Si applica a:** [Microsoft Defender for Endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)

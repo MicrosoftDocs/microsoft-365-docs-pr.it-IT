@@ -19,12 +19,12 @@ search.appverid:
 - MOE150
 - MET150
 description: Informazioni sui criteri di conservazione e sulle etichette di conservazione, utili per conservare tutto che serve ed eliminare ciò che non serve.
-ms.openlocfilehash: dbb294cdb865fb01f931e2e9c3bc4f6afb3f1e09
-ms.sourcegitcommit: d4604e333507c6f57d5bf327531a241b649052de
+ms.openlocfilehash: 42fe70d1360f45deb6f98f41c0ffec97de7e00a9
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51471035"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498343"
 ---
 # <a name="learn-about-retention-policies-and-retention-labels"></a>Informazioni sui criteri e sulle etichette di conservazione
 
@@ -259,7 +259,7 @@ Usare la tabella seguente per stabilire se usare criteri di conservazione o etic
 |Dichiarazione elemento come record| No | Sì |
 |Avviare il periodo di conservazione al momento dell'etichettatura o in base a un evento | No | Sì |
 |Revisione per l'eliminazione | No| Sì |
-|Prova di eliminazione per un massimo di 7 anni | No |Sì, quando l'elemento è dichiarato come record|
+|Prova di eliminazione per un massimo di 7 anni | No |Sì, quando si usa la revisione per l'eliminazione o quando un elemento viene contrassegnato come record|
 |Audit delle attività dell’amministratore| Sì | Sì|
 |Identificazione degli elementi soggetti a conservazione: <br /> - Ricerca contenuto <br /> - Pagina di classificazione dei dati, Esplora contenuto, Esplora attività | <br /> No <br /> No | <br /> Sì <br /> Sì|
 

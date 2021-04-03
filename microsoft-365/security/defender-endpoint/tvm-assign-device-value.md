@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: be578158e18d55bb25d450749c3fb4373854456b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3cecee8b80f179f67cb48f62e1d9238a51825bfd
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51065997"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500213"
 ---
 # <a name="assign-device-value---threat-and-vulnerability-management"></a>Assegnare il valore del dispositivo - gestione delle minacce e delle vulnerabilità
 
@@ -31,7 +31,7 @@ ms.locfileid: "51065997"
 
 **Si applica a:**
 
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Gestione di minacce e vulnerabilità](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -45,9 +45,9 @@ Puoi anche usare [l'API set device value](set-device-value.md).
 
 Opzioni valore dispositivo:
 
-- Basso
+- Bassa
 - Normale (impostazione predefinita)
-- Alto
+- Alta
 
 Esempi di dispositivi a cui assegnare un valore elevato:
 

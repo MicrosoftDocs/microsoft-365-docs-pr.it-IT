@@ -1,5 +1,5 @@
 ---
-title: Personalizzare le regole di riduzione della superficie di attacco
+title: Personalizzare regole per la riduzione della superficie di attacco
 description: Impostare singolarmente le regole nelle modalità di controllo, blocco o disabilitata e aggiungere file e cartelle che devono essere esclusi dalle regole di riduzione della superficie di attacco
 keywords: Riduzione della superficie di attacco, fianchi, sistema di prevenzione delle intrusioni host, regole di protezione, anti-exploit, antiexploit, exploit, prevenzione delle infezioni, personalizzare, configurare, escludere
 search.product: eADQiWindows 10XVcnh
@@ -8,25 +8,25 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 99a88a869c8a79f79cbc3a16fc73bf556416c51a
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 52a51b1035f1aa0fb152cf17dc9561cce378d59d
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163298"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570352"
 ---
-# <a name="customize-attack-surface-reduction-rules"></a>Personalizzare le regole di riduzione della superficie di attacco
+# <a name="customize-attack-surface-reduction-rules"></a>Personalizzare regole per la riduzione della superficie di attacco
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -116,6 +116,6 @@ Puoi personalizzare la notifica per l'attivazione di una regola e bloccare un'ap
 ## <a name="related-topics"></a>Argomenti correlati
 
 * [Ridurre le superfici di attacco con le regole di riduzione della superficie di attacco](attack-surface-reduction.md)
-* [Abilitare le regole di riduzione della superficie di attacco](enable-attack-surface-reduction.md)
-* [Valutare le regole di riduzione della superficie di attacco](evaluate-attack-surface-reduction.md)
-* [Domande frequenti sulla riduzione della superficie di attacco](attack-surface-reduction.md)
+* [Abilitare regole per la riduzione della superficie di attacco](enable-attack-surface-reduction.md)
+* [Rilevare regole per la riduzione della superficie di attacco](evaluate-attack-surface-reduction.md)
+* [FAQ per la riduzione della superficie d'attacco](attack-surface-reduction.md)

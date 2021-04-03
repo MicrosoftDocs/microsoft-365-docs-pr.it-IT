@@ -8,8 +8,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 594d4b5790f95abed966163e448d332467f35b51
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 35dd300d828bfa48ad753d7c65f36b2555cf4f60
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068754"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500179"
 ---
 # <a name="dashboard-insights---threat-and-vulnerability-management"></a>Informazioni dettagliate sul dashboard - gestione delle minacce e delle vulnerabilità
 
@@ -31,7 +31,7 @@ ms.locfileid: "51068754"
 
 **Si applica a:**
 
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Gestione di minacce e vulnerabilità](next-gen-threat-and-vuln-mgt.md)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
@@ -65,8 +65,8 @@ Guarda questo video per una breve panoramica di ciò che si trova nel dashboard 
 Area | Descrizione
 :---|:---
 **Gruppi di dispositivi selezionati (#/#)**   | Filtra i dati di gestione delle minacce e delle vulnerabilità che vuoi visualizzare nel dashboard e nelle schede in base ai gruppi di dispositivi. Ciò che si seleziona nel filtro si applica in tutte le pagine di gestione delle minacce e delle vulnerabilità.
-[**Punteggio di esposizione**](tvm-exposure-score.md)   | Visualizzare lo stato corrente dell'esposizione dei dispositivi dell'organizzazione a minacce e vulnerabilità. Diversi fattori influiscono sul punteggio di esposizione dell'organizzazione: punti deboli rilevati nei dispositivi, probabilità che i dispositivi siano violati, valore dei dispositivi per l'organizzazione e avvisi pertinenti rilevati con i dispositivi. L'obiettivo è ridurre il punteggio di esposizione dell'organizzazione per essere più sicuro. Per ridurre il punteggio, è necessario correggere i problemi di configurazione della sicurezza correlati elencati nei suggerimenti per la sicurezza.
-[**Microsoft Secure Score per i dispositivi**](tvm-microsoft-secure-score-devices.md) | Vedere la sicurezza del sistema operativo, delle applicazioni, della rete, degli account e dei controlli di sicurezza dell'organizzazione. L'obiettivo è correggere i problemi di configurazione della sicurezza correlati per aumentare il punteggio per i dispositivi. Selezionando le barre verrà visualizzata la **pagina Suggerimenti per la** sicurezza.
+[**Punteggio di esposizione.**](tvm-exposure-score.md)   | Visualizzare lo stato corrente dell'esposizione dei dispositivi dell'organizzazione a minacce e vulnerabilità. Diversi fattori influiscono sul punteggio di esposizione dell'organizzazione: punti deboli rilevati nei dispositivi, probabilità che i dispositivi siano violati, valore dei dispositivi per l'organizzazione e avvisi pertinenti rilevati con i dispositivi. L'obiettivo è ridurre il punteggio di esposizione dell'organizzazione per essere più sicuro. Per ridurre il punteggio, è necessario correggere i problemi di configurazione della sicurezza correlati elencati nei suggerimenti per la sicurezza.
+[**Punteggio di sicurezza Microsoft per dispositivi**](tvm-microsoft-secure-score-devices.md) | Vedere la sicurezza del sistema operativo, delle applicazioni, della rete, degli account e dei controlli di sicurezza dell'organizzazione. L'obiettivo è correggere i problemi di configurazione della sicurezza correlati per aumentare il punteggio per i dispositivi. Selezionando le barre verrà visualizzata la **pagina Suggerimenti per la** sicurezza.
 **Distribuzione dell'esposizione dei dispositivi** | Scopri quanti dispositivi vengono esposti in base al livello di esposizione. Selezionare una sezione nel grafico ad  anello per passare alla pagina elenco Dispositivi e visualizzare i nomi dei dispositivi interessati, il livello di esposizione, il livello di rischio e altri dettagli, ad esempio dominio, piattaforma del sistema operativo, stato di integrità, data dell'ultima visualizzazione e tag.
 **Principali suggerimenti per la sicurezza** | Vedere i consigli sulla sicurezza fascicolati ordinati e classificati in base all'esposizione ai rischi dell'organizzazione e all'urgenza necessaria. Selezionare **Mostra altro** per visualizzare il resto degli elementi consigliati per la sicurezza nell'elenco. Selezionare **Mostra eccezioni per** l'elenco dei suggerimenti che hanno un'eccezione.
 **Software più vulnerabile** | Ottieni visibilità in tempo reale nell'inventario software dell'organizzazione con un elenco in pila di software vulnerabile installato nei dispositivi della rete e il loro impatto sul punteggio di esposizione dell'organizzazione. Seleziona un elemento per i dettagli o **Mostra altro** per visualizzare il resto dell'elenco dei software vulnerabili nella **pagina Inventario** software.
@@ -79,9 +79,9 @@ Per altre informazioni sulle icone usate in tutto il portale, vedi [Icone di Mic
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [Panoramica della gestione delle minacce e delle vulnerabilità](next-gen-threat-and-vuln-mgt.md)
-- [Punteggio di esposizione](tvm-exposure-score.md)
-- [Microsoft Secure Score per i dispositivi](tvm-microsoft-secure-score-devices.md)
+- [Punteggio di esposizione.](tvm-exposure-score.md)
+- [Punteggio di sicurezza Microsoft per dispositivi](tvm-microsoft-secure-score-devices.md)
 - [Consigli sulla sicurezza](tvm-security-recommendation.md)
 - [Inventario software](tvm-software-inventory.md)
-- [Sequenza temporale dell'evento](threat-and-vuln-mgt-event-timeline.md)
+- [Sequenza temporale eventi](threat-and-vuln-mgt-event-timeline.md)
 

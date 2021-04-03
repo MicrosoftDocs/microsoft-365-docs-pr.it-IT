@@ -1,5 +1,5 @@
 ---
-title: Valutare l'accesso controllato alle cartelle
+title: Valutare l’accesso controllato alle cartelle
 description: Scopri in che modo l'accesso controllato alle cartelle consente di proteggere i file dalle modifiche da parte di app dannose.
 keywords: Protezione degli exploit, Windows 10, windows defender, ransomware, proteggere, valutare, testare, demo, provare
 search.product: eADQiWindows 10XVcnh
@@ -8,24 +8,24 @@ ms.mktglfcycl: manage
 ms.sitesec: library
 localization_priority: Normal
 audience: ITPro
-author: levinec
-ms.author: ellevin
+author: dansimp
+ms.author: dansimp
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: e965e1a882dadfb565231074165507a6727b45c1
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: f996a8fdaf630c8ea389ac9648369cc955a6e95d
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218749"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51569906"
 ---
-# <a name="evaluate-controlled-folder-access"></a>Valutare l'accesso controllato alle cartelle
+# <a name="evaluate-controlled-folder-access"></a>Valutare l’accesso controllato alle cartelle
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
@@ -76,5 +76,5 @@ Vedi [Proteggere le cartelle importanti con](controlled-folders.md) accesso cont
 ## <a name="see-also"></a>Vedere anche
 
 * [Proteggere le cartelle importanti con l'accesso controllato alle cartelle](controlled-folders.md)
-* [Valutare Microsoft Defender per Endpoint](evaluate-mde.md)
-* [Usare la modalità di controllo](audit-windows-defender.md)
+* [Valutare Microsoft Defender per endpoint.](evaluate-mde.md)
+* [Usare modalità di controllo](audit-windows-defender.md)

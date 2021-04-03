@@ -9,12 +9,13 @@ ms.localizationpriority: normal
 ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: 3decc7d67decc5557e7921e68108e2ddb447f0fd
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: 971644aafabda733bf745fae278bdfeeed3282e3
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924553"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574548"
 ---
 # <a name="prepare-printing-resources-for-microsoft-managed-desktop"></a>Preparare risorse di stampa per Microsoft Managed Desktop
 
@@ -37,3 +38,15 @@ Se si è deciso di distribuire le stampanti utilizzando uno script di PowerShell
 3.  Usando il portale di amministrazione, ti inseriamo quando la richiesta è stata completata. Inizialmente la configurazione verrà distribuita solo nei dispositivi nel gruppo di distribuzione Test.
 4.  È necessario verificare e verificare se la configurazione funziona come previsto. Rispondi usando la **scheda Discussione** nella richiesta di supporto per far sapere quando hai completato il test.
 5.  La configurazione verrà quindi distribuita agli altri gruppi di distribuzione.
+
+## <a name="steps-to-get-ready"></a>Passaggi per prepararsi
+
+1. Esaminare [i prerequisiti per Microsoft Managed Desktop](prerequisites.md).
+2. Utilizzare [gli strumenti di valutazione della conformità](readiness-assessment-tool.md).
+3. [Prerequisiti per gli account Guest](guest-accounts.md)
+4. [Configurazione rete in Microsoft Managed Desktop](network.md)
+5. [Preparare certificati e profili di rete per Microsoft Managed Desktop](certs-wifi-lan.md)
+6. [Preparare l'accesso alle risorse locali per Microsoft Managed Desktop](authentication.md)
+7. [App in Microsoft Managed Desktop](apps.md)
+8. [Preparare unità mappate per Microsoft Managed Desktop](mapped-drives.md)
+9. [Preparare le risorse di stampa per Microsoft Managed Desktop](printing.md) (questo articolo)

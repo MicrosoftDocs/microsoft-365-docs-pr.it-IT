@@ -1,5 +1,5 @@
 ---
-title: Proprietà e metodi di punteggio
+title: Metodi e proprietà di punteggio
 description: Recupera il punteggio di esposizione dell'organizzazione, il punteggio di sicurezza del dispositivo e il punteggio di esposizione per gruppo di dispositivi
 keywords: api, api del grafico, api supportate, punteggio, punteggio di esposizione, punteggio sicuro del dispositivo, punteggio di esposizione per gruppo di dispositivi
 search.product: eADQiWindows 10XVcnh
@@ -7,20 +7,20 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: ellevin
-author: levinec
+ms.author: dansimp
+author: dansimp
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 72dacca8529b54b082590d911f03aaa86bfe9097
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1c287a72318cfb2e6e4e3860ac90a90e561040fe
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200162"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500948"
 ---
 # <a name="score-resource-type"></a>Tipo di risorsa punteggio
 
@@ -44,8 +44,8 @@ ms.locfileid: "51200162"
 
 Metodo |Tipo restituito |Descrizione
 :---|:---|:---
-[Ottenere il punteggio di esposizione](get-exposure-score.md) | [Punteggio](score.md) | Ottenere il punteggio di esposizione dell'organizzazione.
-[Ottenere il punteggio sicuro del dispositivo](get-device-secure-score.md) | [Punteggio](score.md) | Ottenere il punteggio di sicurezza del dispositivo dell'organizzazione.
+[Ottenere punteggio di esposizione](get-exposure-score.md) | [Punteggio](score.md) | Ottenere il punteggio di esposizione dell'organizzazione.
+[Ottenere punteggio di sicurezza dei dispositivi](get-device-secure-score.md) | [Punteggio](score.md) | Ottenere il punteggio di sicurezza del dispositivo dell'organizzazione.
 [Elencare il punteggio di esposizione per gruppo di dispositivi](get-machine-group-exposure-score.md)| [Punteggio](score.md) | Elencare i punteggi per gruppo di dispositivi.
 
 ## <a name="properties"></a>Proprietà

@@ -9,12 +9,13 @@ ms.collection: M365-modern-desktop
 ms.author: jaimeo
 manager: laurawi
 ms.topic: article
-ms.openlocfilehash: ea0990e5f30aa45ec48bb2e6a7c957c187c74ebb
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+audience: Admin
+ms.openlocfilehash: d970ac1a28c62703f648e4fbf6f66e2f825a6188
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50922945"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51574620"
 ---
 # <a name="apps-in-microsoft-managed-desktop"></a>App in Microsoft Managed Desktop
 
@@ -75,3 +76,16 @@ Esistono tre opzioni per il pacchetto delle app:
 ## <a name="deploying-apps"></a>Distribuzione di app
 
 Qualunque sia il metodo che usi per ottenere le app in pacchetto, una volta che è stato completato, sei pronto a seguire i passaggi descritti in [Deploy apps to Microsoft Managed Desktop devices](../get-started/deploy-apps.md).
+
+
+## <a name="steps-to-get-ready"></a>Passaggi per prepararsi
+
+1. Esaminare [i prerequisiti per Microsoft Managed Desktop](prerequisites.md).
+2. Utilizzare [gli strumenti di valutazione della conformità](readiness-assessment-tool.md).
+3. [Prerequisiti per gli account Guest](guest-accounts.md)
+4. [Configurazione rete in Microsoft Managed Desktop](network.md)
+5. [Preparare certificati e profili di rete per Microsoft Managed Desktop](certs-wifi-lan.md)
+6. [Preparare l'accesso alle risorse locali per Microsoft Managed Desktop](authentication.md)
+7. [App in Microsoft Managed Desktop](apps.md) (questo articolo)
+8. [Preparare unità mappate per Microsoft Managed Desktop](mapped-drives.md)
+9. [Preparare risorse di stampa per Microsoft Managed Desktop](printing.md)

@@ -9,8 +9,8 @@ ms.prod: m365-security
 ms.mktglfcycl: deploy
 ms.sitesec: library
 ms.pagetype: security
-ms.author: lomayor
-author: lomayor
+ms.author: maccruz
+author: schmurky
 localization_priority: Normal
 manager: dansimp
 audience: ITPro
@@ -18,19 +18,19 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 09/20/2020
 ms.technology: mde
-ms.openlocfilehash: 48b1f1bf9506acc8491887fca49295d5e4ccbd69
-ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
+ms.openlocfilehash: 15dec5396a5ba95fe3ec7af5f9a72bbf15e07140
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51382710"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500492"
 ---
 # <a name="create-custom-detection-rules"></a>Creare regole di rilevamento personalizzate
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -156,6 +156,6 @@ Dopo aver esaminato la regola, selezionare **Crea** per salvarla. La regola di r
 
 - [Visualizzare e gestire regole di rilevamento personalizzate](custom-detections-manage.md)
 - [Panoramica dei rilevamenti personalizzati](overview-custom-detections.md)
-- [Panoramica della ricerca avanzata](advanced-hunting-overview.md)
+- [Panoramica della rilevazione avanzata](advanced-hunting-overview.md)
 - [Scoprire il linguaggio delle query in Ricerca avanzata](advanced-hunting-query-language.md)
 - [Visualizzare e organizzare gli avvisi](alerts-queue.md)

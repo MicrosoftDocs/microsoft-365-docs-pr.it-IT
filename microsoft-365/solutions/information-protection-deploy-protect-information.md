@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 description: Distribuire le funzionalità di sicurezza e conformità di Microsoft 365 e proteggere le informazioni personali.
-ms.openlocfilehash: 657b3c9c6416c8a38629a0d26253e1222aa6d242
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2d3a5baa063e6672760dda60ae6d76ea928ccd16
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50928473"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51500982"
 ---
 # <a name="protect-information-subject-to-data-privacy-regulation"></a>Proteggere le informazioni soggette alla normativa sulla privacy dei dati
 
@@ -90,14 +90,15 @@ Per informazioni su altre funzionalità di protezione delle informazioni esterne
 
 Le etichette di riservatezza del framework di Microsoft Information Protection consentono di classificare e proteggere i dati dell'organizzazione senza ostacolare la produttività degli utenti e la loro capacità di collaborare.
 
-![Etichette di riservatezza in Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-labels.png)
+> [!div class="mx-imgBorder"]
+> ![Etichette di riservatezza in Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-labels.png)
 
 ### <a name="prerequisites-for-sensitivity-labels"></a>Prerequisiti per le etichette di riservatezza
 
 Completare queste attività prima di implementare una delle funzionalità basate su etichette di riservatezza evidenziate di seguito:
 
 1. Comprendere quanto segue:
-   - **Requisiti aziendali.** Stabilire i motivi aziendali per l'applicazione di etichette di riservatezza nell'organizzazione. Ad esempio, i requisiti di privacy dei dati per la protezione delle informazioni.
+   - **Requisiti commerciali.** Stabilire i motivi aziendali per l'applicazione di etichette di riservatezza nell'organizzazione. Ad esempio, i requisiti di privacy dei dati per la protezione delle informazioni.
    - **Funzionalità delle etichette di riservatezza.** L'etichettatura di riservatezza può essere complessa, quindi assicurati di leggere la documentazione [relativa](../compliance/sensitivity-labels.md) alle etichette di riservatezza prima di iniziare.
    - **Aspetti chiave da ricordare** Le etichette di riservatezza vengono gestite nell'interfaccia di amministrazione di Conformità Microsoft, ma le opzioni di destinazione e applicazione variano in modo significativo.
       - Esistono etichette di riservatezza per siti, gruppi e Teams a livello di contenitore (le impostazioni non si applicano al contenuto all'interno del contenitore). Vengono pubblicati per gli utenti e i gruppi che li applicano quando viene eseguito il provisioning di un sito, un gruppo o un team.
@@ -115,7 +116,7 @@ Completare queste attività prima di implementare una delle funzionalità basate
 
       Se si prevede di utilizzare l'etichettatura di riservatezza moderna per la protezione della posta elettronica e sono stati applicati metodi di crittografia della posta elettronica esistenti come OME, possono coesistere, ma è consigliabile comprendere gli scenari in cui devono essere applicati entrambi. Vedere [Office 365 Message Encryption new capabilities (OME)](#office-365-message-encryption-ome-new-capabilities), che include una tabella che confronta la moderna protezione del tipo di etichetta di riservatezza con la protezione basata su OME.
 
-3. Pianificare l'integrazione in un più ampio schema di protezione delle informazioni. Oltre alla coesistenza con OME, le etichette di riservatezza correnti possono essere usate insieme a funzionalità come prevenzione della perdita dei dati (DLP) di Microsoft 365 e Microsoft Cloud App Security. Vedi [Etichette di riservatezza e Microsoft Cloud App Security](../compliance/sensitivity-labels.md#sensitivity-labels-and-microsoft-cloud-app-security) per raggiungere gli obiettivi di protezione delle informazioni correlati alla privacy dei dati.
+3. Pianificare l'integrazione in un più ampio schema di protezione delle informazioni. Oltre alla coesistenza con OME, le etichette di riservatezza possono essere usate insieme a funzionalità come la prevenzione della perdita dei dati (DLP) di Microsoft 365 e Microsoft Cloud App Security. Vedere [Microsoft Information Protection in Microsoft 365](../compliance/information-protection.md) per raggiungere gli obiettivi di protezione delle informazioni correlati alla privacy dei dati.
 
 4. Sviluppare una classificazione e uno schema di controllo delle etichette di riservatezza. Vedere [Classificazione dei dati e tassonomia delle etichette di riservatezza.](https://aka.ms/dataclassificationwhitepaper)
 
@@ -215,11 +216,13 @@ Ad esempio, è possibile identificare qualsiasi documento contenente un numero d
 
 È inoltre possibile monitorare e proteggere gli elementi sensibili nelle versioni installate localmente di Excel, PowerPoint e Word, che includono la possibilità di identificare gli elementi sensibili e applicare criteri DLP. DLP fornisce un monitoraggio continuo quando gli utenti condividono contenuto da queste app di Office.
 
-![Carichi di lavoro supportati per DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-supported-workloads.png)
+> [!div class="mx-imgBorder"]
+> ![Carichi di lavoro supportati per DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-supported-workloads.png)
 
 Questa figura mostra un esempio di prevenzione della perdita dei dati personali.
 
-![Esempio di protezione dei dati personali tramite DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-use.png)
+> [!div class="mx-imgBorder"]
+> ![Esempio di protezione dei dati personali tramite DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-example-use.png)
 
 DLP viene utilizzato per identificare un documento o un messaggio di posta elettronica contenente un record di integrità e quindi blocca automaticamente l'accesso a tale documento o blocca l'invio del messaggio di posta elettronica. DLP invia quindi una notifica al destinatario con un suggerimento per i criteri e invia un avviso all'utente finale e all'amministratore.
 
@@ -252,7 +255,8 @@ Anche se le etichette di riservatezza non possono essere utilizzate nelle condiz
 
 I criteri DLP vengono configurati nell'interfaccia di amministrazione di Conformità Microsoft e specificano il livello di protezione, il tipo di informazioni riservate ricercate dal criterio e i carichi di lavoro di destinazione. I componenti di base sono costituiti dall'identificazione della protezione e dei tipi di dati.
 
-![Configurazione dei criteri DLP in Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
+> [!div class="mx-imgBorder"]
+> ![Configurazione dei criteri DLP in Microsoft 365](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-dlp-config.png)
 
 Ecco un esempio di criterio DLP per la consapevolezza del GDPR.
 
@@ -270,7 +274,7 @@ La prima configurazione, Awareness, può essere usata come punto di partenza e l
 
 >[!Note]
 >Con l'aumentare dei livelli di protezione, la capacità degli utenti di condividere e accedere alle informazioni diminuisce in alcuni casi e potrebbe influire sulla produttività o sulla capacità di completare le attività quotidiane.
->
+
 
 Per aiutare i dipendenti a continuare a essere produttivi in un ambiente più sicuro quando aumentano i livelli di protezione, prendere il tempo necessario per formarli e istruirli sui nuovi criteri e procedure di sicurezza.
 
@@ -285,13 +289,14 @@ Le etichette di riservatezza possono collaborare con DLP per garantire la privac
 
 Una volta determinati questi elementi, è possibile utilizzare i tipi di informazioni riservate, la tassonomia di etichettatura di riservatezza e i criteri DLP insieme. Questa figura mostra un esempio.
 
-![Esempio di etichette di riservatezza che funzionano con DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
+> [!div class="mx-imgBorder"]
+> ![Esempio di etichette di riservatezza che funzionano con DLP](../media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
 [Vedi una versione più grande di questa immagine](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/media/information-protection-deploy-protect-information/information-protection-deploy-protect-information-sensitivity-lables-dlp.png)
 
 Ecco alcuni scenari di protezione dei dati che usano le etichette dlp e di riservatezza insieme, come illustrato nella figura.
 
-| Scenario | Procedura |
+| Scenario | Processo |
 |:-------|:-----|
 | A | <ol><li>Le etichette di riservatezza per il contenuto vengono pubblicate da un amministratore per utenti e gruppi per l'applicazione manuale o automatica al contenuto e alla posta elettronica. </li><li>L'utente A applica le etichette manualmente o automaticamente quando interagisce con il contenuto, con la crittografia o altre impostazioni applicate. </li><li>L'utente A invia un messaggio di posta elettronica o un file protetto all'utente B, un utente guest. </li></ol> |
 | B | Il criterio DLP pubblicato da un amministratore per l'utente A impedisce all'utente A di inviare il messaggio di posta elettronica e/o il file all'utente B. |

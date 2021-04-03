@@ -21,12 +21,12 @@ ms.custom:
 description: Gli amministratori possono ottenere informazioni sulle funzionalità di protezione anti-phishing in Exchange Online Protection (EOP) e Microsoft Defender per Office 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b0ca7a83e8e8d66bd58fddfc46f53df32f4f623c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: a100e28ddee1629b2fe35e28742a43b891d13e57
+ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206902"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51570613"
 ---
 # <a name="anti-phishing-protection-in-microsoft-365"></a>Protezione anti-phishing in Microsoft 365
 
@@ -43,7 +43,7 @@ ms.locfileid: "51206902"
 
 - **La caccia alle baleni** è rivolta ai dirigenti o ad altri obiettivi di alto valore all'interno di un'organizzazione per il massimo effetto.
 
-- La compromissione della posta elettronica aziendale **(BEC)** utilizza mittenti attendibili contraffatti (responsabili finanziari, clienti, partner attendibili e così via) per indurre i destinatari ad approvare pagamenti, trasferire fondi o rivelare i dati dei clienti.
+- La compromissione della posta elettronica aziendale **(BEC)** utilizza mittenti attendibili contraffatti (responsabili finanziari, clienti, partner attendibili e così via) per indurre i destinatari ad approvare pagamenti, trasferire fondi o rivelare i dati dei clienti. Per ulteriori informazioni, guardare [questo video.](https://www.youtube.com/watch?v=8Kn31h9HwIQ&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=2)
 
 - **Ransomware** che crittografa i dati e richiede il pagamento per decrittografarlo quasi sempre inizia nei messaggi di phishing. La protezione anti-phishing non può aiutarti a decrittografare i file crittografati, ma può aiutare a rilevare i messaggi di phishing iniziali associati alla campagna ransomware. Per ulteriori informazioni sul ripristino da un attacco ransomware, vedere [Recover from a ransomware attack in Microsoft 365](recover-from-ransomware.md).
 
