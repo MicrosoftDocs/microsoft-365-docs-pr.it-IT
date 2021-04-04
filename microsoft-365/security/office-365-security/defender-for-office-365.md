@@ -21,12 +21,12 @@ ms.custom:
 description: Microsoft Defender per Office 365 include allegati e collegamenti sicuri, strumenti avanzati anti-phishing, strumenti di report e funzionalità Threat Intelligence.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: ec60fc7063bdd4a2656385ed86098d6ae2b4abc0
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: dad2722a1f9e99fad53c83348d049fa9a60f8b62
+ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205953"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "51580991"
 ---
 # <a name="microsoft-defender-for-office-365"></a>Microsoft Defender per Office 365
 
@@ -52,7 +52,7 @@ Microsoft Defender per Office 365 protegge l'organizzazione dalle minacce dannos
 ## <a name="interactive-guide-to-microsoft-defender-for-office-365"></a>Guida interattiva di Defender per Office 365
 In questa guida interattiva imparerai a proteggere la tua organizzazione con Microsoft Defender per Office 365. Vedrai come Defender per Office 365 può aiutarti a definire criteri di protezione, analizzare le minacce per la tua organizzazione e rispondere agli attacchi.
 
-> [!VIDEO https://aka.ms/MSDO-IG]
+[Consulta la guida interattiva](https://aka.ms/MSDO-IG)
 
 ## <a name="getting-started"></a>Introduzione
 
@@ -97,6 +97,8 @@ La tabella seguente riepiloga cosa è incluso in ogni piano.
 ## <a name="configure-microsoft-defender-for-office-365-policies"></a>Configurazione criteri di Microsoft Defender per Office 365
 
 Con Microsoft Defender per Office 365, il team di sicurezza dell'organizzazione può configurare la protezione definendo i criteri nel Centro sicurezza e conformità (Andare a <https://protection.office.com> \> **Gestione delle minacce** \> **Criterio**.)
+
+Scopri di più guardando [questo video](https://www.youtube.com/watch?v=vivvTmWJ_3c). 
 
 > [!TIP]
 > Per un rapido elenco dei criteri da definire, vedere [Protezione dalle minacce](protect-against-threats.md).
