@@ -1,6 +1,6 @@
 ---
 title: Tipo di risorsa di indagine
-description: Entità Microsoft Defender ATP Investigation.
+description: Entità Microsoft Defender for Endpoint Investigation.
 keywords: api, api del grafico, api supportate, ottenere, avvisi, indagini
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 36adf0fa5c0de79fe0616f1216118a98ba2005a4
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 3872976717a5b472ab8d471db7eff9975dbc2258
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187248"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587684"
 ---
 # <a name="investigation-resource-type"></a>Tipo di risorsa di indagine
 
@@ -46,7 +46,7 @@ Metodo|Tipo restituito |Descrizione
 :---|:---|:---
 [Indagini elenco](get-investigation-collection.md) | Raccolta di indagini | Ottenere la raccolta di indagini
 [Ottenere un'indagine singola](get-investigation-object.md) | Entità di indagine | Ottiene una singola entità Investigation.
-[Avviare l'indagine](initiate-autoir-investigation.md) | Entità di indagine | Avvia l'analisi in un dispositivo.
+[Avviare indagine](initiate-autoir-investigation.md) | Entità di indagine | Avvia l'analisi in un dispositivo.
 
 
 ## <a name="properties"></a>Proprietà

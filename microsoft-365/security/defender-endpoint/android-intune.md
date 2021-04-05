@@ -1,7 +1,7 @@
 ---
-title: Distribuire Microsoft Defender ATP per Android con Microsoft Intune
-description: Descrive come distribuire Microsoft Defender ATP per Android con Microsoft Intune
-keywords: microsoft, defender, atp, android, installazione, distribuzione, disinstallazione,
+title: Distribuzione di Microsoft Defender per endpoint per Android con Microsoft Intune
+description: Descrive come distribuire Microsoft Defender for Endpoint per Android con Microsoft Intune
+keywords: microsoft, defender, atp, mde, android, installazione, distribuire, disinstallazione,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -15,22 +15,21 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e557f60346b2f68354df621b6e4812eac775d812
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: fdfc6e63945e15ce2d1f1a293c377f641eeb9bc4
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165670"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587696"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-for-android-with-microsoft-intune"></a>Distribuire Microsoft Defender per Endpoint per Android con Microsoft Intune 
+# <a name="deploy-microsoft-defender-for-endpoint-for-android-with-microsoft-intune"></a>Distribuzione di Microsoft Defender per endpoint per Android con Microsoft Intune 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
@@ -261,5 +260,5 @@ Selezionare **Crea**.
 
 
 ## <a name="related-topics"></a>Argomenti correlati
-- [Panoramica di Microsoft Defender per Endpoint per Android](microsoft-defender-endpoint-android.md)
-- [Configurare le funzionalità di Microsoft Defender per Endpoint per Android](android-configure.md)
+- [Panoramica di Microsoft Defender per endpoint per Android](microsoft-defender-endpoint-android.md)
+- [Configurare funzionalità di Microsoft Defender per endpoint per Android](android-configure.md)

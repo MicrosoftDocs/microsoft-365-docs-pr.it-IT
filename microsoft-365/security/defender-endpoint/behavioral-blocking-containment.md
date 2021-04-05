@@ -1,6 +1,6 @@
 ---
-title: Blocco comportamentale e contenimento
-description: Informazioni sulle funzionalità di blocco e contenimento comportamentali in Microsoft Defender ATP
+title: Blocco e contenimento comportamentale
+description: Informazioni sulle funzionalità di blocco e contenimento comportamentali in Microsoft Defender for Endpoint
 keywords: Microsoft Defender ATP, EDR in modalità blocco, blocco in modalità passiva
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -19,19 +19,19 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: dcad3b7233f2efd444d41c15916eaae195634c8c
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 7cea65292c427cb953e2e8e3ca866c89f83128b1
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166234"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587168"
 ---
-# <a name="behavioral-blocking-and-containment"></a>Blocco comportamentale e contenimento
+# <a name="behavioral-blocking-and-containment"></a>Blocco e contenimento comportamentale
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -42,7 +42,7 @@ Il panorama delle minacce di oggi è invaso da [malware senza file](https://docs
 
 Le funzionalità di blocco e contenimento comportamentali possono aiutare a identificare e arrestare le minacce, in base ai comportamenti e agli alberi di processo, anche quando la minaccia ha iniziato l'esecuzione. I componenti e le funzionalità di protezione di nuova generazione, EDR e Defender per endpoint funzionano insieme nelle funzionalità di blocco e contenimento comportamentali. 
 
-:::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="Blocco comportamentale e contenimento":::
+:::image type="content" source="images/mdatp-next-gen-EDR-behavblockcontain.png" alt-text="Blocco e contenimento comportamentale":::
 
 Le funzionalità di blocco e contenimento comportamentali funzionano con più componenti e funzionalità di Defender for Endpoint per arrestare immediatamente gli attacchi e impedire l'avanzamento degli attacchi.
 

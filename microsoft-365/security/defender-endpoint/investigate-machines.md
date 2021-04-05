@@ -1,5 +1,5 @@
 ---
-title: Analizzare i dispositivi nell'elenco Defender for Endpoint Defender ATP Devices
+title: Analizzare i dispositivi nell'elenco Defender for Endpoint Devices
 description: Analizzare i dispositivi interessati esaminando avvisi, informazioni sulla connessione di rete, aggiungendo tag e gruppi di dispositivi e controllando l'integrità del servizio.
 keywords: dispositivi, tag, gruppi, endpoint, coda avvisi, avvisi, nome del dispositivo, dominio, ultimo visto, IP interno, avvisi attivi, categoria di minacce, filtro, ordinamento, esaminare avvisi, rete, connessione, tipo, furto di password, ransomware, exploit, minaccia, bassa gravità, integrità del servizio
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8f5415b6337d21b780a75a192a565078a6cacc06
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 154ecd66399b031ef2e60eef16227bb9bc2f8785
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185732"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587720"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Analizzare i dispositivi nell'elenco Di Microsoft Defender per dispositivi endpoint
 
@@ -44,7 +44,7 @@ Analizzare i dettagli di un avviso generato su un dispositivo specifico per iden
 Puoi fare clic sui dispositivi interessati ogni volta che li vedi nel portale per aprire un report dettagliato su tale dispositivo. I dispositivi interessati sono identificati nelle aree seguenti:
 
 - [Elenco dispositivi](investigate-machines.md)
-- [Coda avvisi](alerts-queue.md)
+- [Coda di avvisi](alerts-queue.md)
 - [Dashboard delle operazioni di sicurezza](security-operations-dashboard.md)
 - Qualsiasi singolo avviso
 - Qualsiasi visualizzazione dei dettagli dei singoli file
@@ -69,9 +69,9 @@ Le azioni di risposta vengono eseguite nella parte superiore di una pagina speci
 
 - Gestire i tag
 - Isola dispositivo
-- Limitare l'esecuzione delle app
-- Eseguire l'analisi antivirus
-- Raccogliere il pacchetto di analisi
+- Limitare l'esecuzione dell'app
+- Eseguire ricerca del virus
+- Raccogliere un pacchetto di indagini
 - Avviare la sessione di risposta in tempo reale
 - Avviare un'indagine automatizzata
 - Consultare un esperto di minacce

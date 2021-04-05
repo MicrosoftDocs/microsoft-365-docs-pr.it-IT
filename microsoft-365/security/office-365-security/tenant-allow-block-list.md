@@ -16,12 +16,12 @@ ms.collection:
 description: Gli amministratori possono imparare a configurare gli elementi consentiti e i blocchi nell'elenco Consenti/Blocca tenant nel portale di sicurezza.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 55116ddac8fa25b63e50b7fba73f668855e2858d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 103ddc9aa0858f9203582ac07a655fd7f5506cf3
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206442"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587588"
 ---
 # <a name="manage-the-tenant-allowblock-list"></a>Gestire l'elenco di tenant consentiti/bloccati
 
@@ -33,9 +33,6 @@ ms.locfileid: "51206442"
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 > [!NOTE]
->
-> Le funzionalità descritte in questo articolo sono disponibili in Anteprima, sono soggette a modifiche e non sono disponibili in tutte le organizzazioni.
->
 > Non è possibile **configurare gli** elementi consentiti nell'elenco tenant consentiti/bloccati in questo momento.
 
 Nelle organizzazioni di Microsoft 365 con cassette postali in Exchange Online o in organizzazioni autonome di Exchange Online Protection (EOP) senza cassette postali di Exchange Online, è possibile che non si sia d'accordo con il verdetto del filtro EOP. Ad esempio, un buon messaggio potrebbe essere contrassegnato come non positivo (falso positivo) o un messaggio non positivo potrebbe essere consentito (un falso negativo).
@@ -176,7 +173,7 @@ Non è possibile modificare l'URL o i valori di file bloccati esistenti all'inte
 
    - **Nota facoltativa:** immettere un testo descrittivo per la voce.
 
-5. Al termine, scegliere **Salva**.
+5. Al termine, fare clic su **Salva**.
 
 ## <a name="use-the-security--compliance-center-to-remove-block-entries-from-the-tenant-allowblock-list"></a>Utilizzare il Centro sicurezza & conformità per rimuovere le voci di blocco dall'elenco tenant consentiti/bloccati
 

@@ -1,6 +1,6 @@
 ---
 title: Blocco comportamentale client
-description: Il blocco comportamentale client fa parte delle funzionalità di blocco e contenimento comportamentali in Microsoft Defender ATP
+description: Il blocco comportamentale client fa parte delle funzionalità di blocco e contenimento comportamentali in Microsoft Defender for Endpoint
 keywords: blocco comportamentale, protezione rapida, comportamento client, Microsoft Defender ATP
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -19,19 +19,19 @@ ms.collection:
 - m365-security-compliance
 - m365initiative-defender-endpoint
 ms.technology: mde
-ms.openlocfilehash: c37a1180f9def51daa4229418b05abe7cf787aa3
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 9fcff96b2583c6ef6bec05429ec50a71f3872e43
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165262"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587108"
 ---
 # <a name="client-behavioral-blocking"></a>Blocco comportamentale client
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -85,15 +85,15 @@ Se l'organizzazione usa Defender per Endpoint, il blocco comportamentale del cli
 
 - [Dispositivi onboarded in Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/onboard-configure)
 
-- [EDR in modalità blocco](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/edr-in-block-mode)
+- [EdR in modalità blocco](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/edr-in-block-mode)
 
-- [Riduzione della superficie d'attacco](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)
+- [Riduzione della superficie di attacco](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/attack-surface-reduction)
 
 - [Protezione di nuova generazione](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-microsoft-defender-antivirus-features) (antivirus)
 
 ## <a name="related-articles"></a>Articoli correlati
 
-- [Blocco comportamentale e contenimento](behavioral-blocking-containment.md)
+- [Blocco e contenimento comportamentale](behavioral-blocking-containment.md)
 
 - [Blocco del ciclo di feedback](feedback-loop-blocking.md)
 

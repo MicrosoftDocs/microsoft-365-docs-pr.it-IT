@@ -1,5 +1,5 @@
 ---
-title: Analizzare gli eventi di connessione che si verificano dietro proxy di inoltro
+title: Esaminare gli eventi di connessione che si verificano dietro i proxy di inoltro.
 description: Scopri come usare il monitoraggio avanzato del livello HTTP tramite la protezione di rete in Microsoft Defender ATP, che rappresenta una destinazione reale, anziché un proxy.
 keywords: proxy, protezione di rete, proxy di inoltro, eventi di rete, controllo, blocco, nomi di dominio, dominio
 search.product: eADQiWindows 10XVcnh
@@ -15,17 +15,16 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7eaa4bb76d7607f0b55c87482d1104a0897c9d36
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 28d8a113ed77e9624bd914571b1af4a7ece2aa5c
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186090"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587564"
 ---
-# <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>Analizzare gli eventi di connessione che si verificano dietro proxy di inoltro
+# <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>Esaminare gli eventi di connessione che si verificano dietro i proxy di inoltro.
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

@@ -16,12 +16,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: Informazioni sui criteri di scadenza dei gruppi di Microsoft 365.
-ms.openlocfilehash: 65a746751cd523a5dadce3eca573e6a9bfce0166
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: fdef06918ec2c35547c084e5f431aa7bef8d6a8c
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51052303"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587624"
 ---
 # <a name="microsoft-365-group-expiration-policy"></a>Criteri di scadenza dei gruppi di Microsoft 365
 
@@ -53,7 +53,7 @@ Si noti che l'unica attività di Yammer che attiverà un rinnovo automatico del 
 |Ruolo|Cosa possono fare|
 |---------|---------|
 |Amministratore globale di Office 365 (in Azure, amministratore della società), Amministratore utente|Creare, leggere, aggiornare o eliminare le impostazioni dei criteri di scadenza dei gruppi di Microsoft 365.|
-|User|Rinnovare [o ripristinare](/azure/active-directory/users-groups-roles/groups-restore-deleted) un gruppo di Microsoft 365 di cui sono proprietari|
+|Utente|Rinnovare [o ripristinare](/azure/active-directory/users-groups-roles/groups-restore-deleted) un gruppo di Microsoft 365 di cui sono proprietari|
 
 ## <a name="how-to-set-the-expiration-policy"></a>Come impostare i criteri di scadenza
 
@@ -63,7 +63,7 @@ La durata del gruppo è specificata in giorni e può essere impostata su 180, 36
 
 Se il gruppo non dispone di un proprietario, i messaggi di posta elettronica di scadenza verranno inviata all'amministratore specificato.
 
-È possibile impostare il criterio per tutti i gruppi, solo i gruppi selezionati o disattivarlo completamente selezionando **Nessuno.** Si noti che attualmente non è possibile avere criteri diversi per gruppi diversi.
+È possibile impostare il criterio per tutti i gruppi, solo i gruppi selezionati (fino a 500) o disattivarlo completamente selezionando **Nessuno.** Si noti che attualmente non è possibile avere criteri diversi per gruppi diversi.
 
 ![Screenshot delle impostazioni di scadenza dei gruppi in Azure Active Directory](../media/azure-groups-expiration-settings.png)
 

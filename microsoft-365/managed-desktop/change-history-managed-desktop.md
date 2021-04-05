@@ -13,16 +13,38 @@ f1.keywords:
 ms.author: jaimeo
 ms.article: article
 ms.localizationpriority: normal
-ms.openlocfilehash: 9176bfbbd015243266ba1c8cbad9d04787f6a6cc
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5e57f21690372b16c86a65fcfe4d00cb5c907391
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50909251"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587528"
 ---
 # <a name="change-history-for-microsoft-managed-desktop-documentation"></a>Cronologia modifiche per la documentazione di Microsoft Managed Desktop
 
 In questo articolo sono elencati gli articoli nuovi e aggiornati nella [documentazione di Microsoft Managed Desktop.](index.yml) Gli articoli "Aggiornati" hanno apportato correzioni o aggiunte di materiale. Le correzioni secondarie, ad esempio la correzione di errori di digitazione, stile o formattazione, non sono elencate. Puoi sempre visualizzare la cronologia di commit specifici (inclusi i dettagli di eventuali modifiche) visitando il [repository su GitHub.](https://github.com/MicrosoftDocs/microsoft-365-docs/tree/public/microsoft-365/managed-desktop)
+
+## <a name="march-2021"></a>Marzo 2021
+Articolo nuovo o modificato | Descrizione
+--- | ---
+[Supporto amministratore per Microsoft Managed Desktop](working-with-managed-desktop/admin-support.md) | Articolo aggiornato
+[Esperienza iniziale con Autopilot e pagina stato registrazione](get-started/esp-first-run.md) | Articolo aggiornato
+[Servizi di posizione di Windows 10](get-started/device-location.md) | Nuovo articolo
+[Immagini dispositivo](service-description/device-images.md) | Nuovo articolo
+[Aree supportate da Microsoft Managed Desktop](service-description/regions-languages.md) | Articolo aggiornato
+[Localizzare l'esperienza utente](get-started/localization.md) | Nuovo articolo
+
+## <a name="february-2021"></a>Febbraio 2021
+Articolo nuovo o modificato | Descrizione
+--- | ---
+[Accedere al portale di amministrazione](get-started/access-admin-portal.md) | Articolo aggiornato
+[Tecnologie Microsoft Managed Desktop](intro/technologies.md) | Articolo aggiornato
+[Requisiti dei dispositivi](service-description/device-requirements.md) | Articolo aggiornato
+[Risolvere problemi trovati dallo strumento di valutazione dell'idoneità](get-ready/readiness-assessment-fix.md) | Articolo aggiornato
+[Microsoft OneDrive](get-started/onedrive.md) | Nuovo articolo
+[Conformità](intro/compliance.md) | Aggiornato
+[App Microsoft 365 per grandi imprese](get-started/m365-apps.md) | Articolo aggiornato
+[Strumenti di valutazione della conformità](get-ready/readiness-assessment-tool.md) | Articolo aggiornato
 
 ## <a name="january-2021"></a>Gennaio 2021
 Articolo nuovo o modificato | Descrizione

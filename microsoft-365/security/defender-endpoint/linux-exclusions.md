@@ -15,15 +15,14 @@ manager: dansimp
 audience: ITPro
 ms.collection:
 - m365-security-compliance
-- m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 484869535c466435ab997f32bf858dd1ad52c841
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: f5e9c237f53351df0249f0a12d08b8ba61572f7e
+ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187494"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "51587084"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-for-linux"></a>Configurare e convalidare le esclusioni per Microsoft Defender for Endpoint per Linux
 
@@ -57,7 +56,7 @@ Esclusione | Definizione | Esempi
 Estensione del file | Tutti i file con estensione, ovunque nel dispositivo | `.test`
 File | Un file specifico identificato dal percorso completo | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
 Cartella | Tutti i file nella cartella specificata (in modo ricorsivo) | `/var/log/`<br/>`/var/*/`
-Processo | Un processo specifico (specificato dal percorso completo o dal nome del file) e tutti i file aperti da esso | `/bin/cat`<br/>`cat`<br/>`c?t`
+Procedura | Un processo specifico (specificato dal percorso completo o dal nome del file) e tutti i file aperti da esso | `/bin/cat`<br/>`cat`<br/>`c?t`
 
 > [!IMPORTANT]
 > I percorsi precedenti devono essere collegamenti rigidi, non collegamenti simbolici, per essere esclusi correttamente. È possibile verificare se un percorso è un collegamento simbolico eseguendo `file <path-name>` .
