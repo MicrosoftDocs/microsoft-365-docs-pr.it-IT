@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informazioni utili agli amministratori IT per gestire le etichette di riservatezza nelle app di Office per desktop, dispositivi mobili e Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 72b5422de2ee4b01e3209ec78ea0c10f1285d682
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: 5a82eba3801509ed2e8ffb46ab32045466204fab
+ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034195"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "51498824"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gestire le etichette di riservatezza nelle app di Office
 
@@ -119,7 +119,7 @@ Distribuire questa impostazione usando Criteri di gruppo o il [servizio di crite
 
 ### <a name="office-built-in-labeling-client-and-the-azure-information-protection-client"></a>Client di etichettatura incorporato di Office e client di Azure Information Protection.
 
-Se gli utenti hanno installato uno dei client di Azure Information Protection ([client di etichettatura unificata](/azure/information-protection/rms-client/aip-clientv2) o [client classico](/azure/information-protection/rms-client/aip-client)), per impostazione predefinita il client di etichettatura incorporato è disattivato nelle loro app Office. 
+Se gli utenti hanno [installato il client Azure Information Protection](/azure/information-protection/rms-client/aip-clientv2), per impostazione predefinita, il client di etichettatura incorporato viene disattivato nelle rispettive app di Office. 
 
 Per usare l'etichettatura predefinita invece del client di Azure Information Protection per le app di Office, raccomandiamo l'uso dell'impostazione dei criteri di gruppo **Elenco dei componenti aggiuntivi gestiti** come descritto in [Nessun componente aggiuntivo caricato a causa delle impostazioni dei criteri di gruppo per i programmi Office 2013 e Office 2016](https://support.microsoft.com/help/2733070/no-add-ins-loaded-due-to-group-policy-settings-for-office-2013-and-off).
 
