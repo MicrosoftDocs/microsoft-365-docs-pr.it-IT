@@ -19,15 +19,14 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.custom: autoir
-ms.date: 01/29/2021
 ms.reviewer: evaldm, isco
 ms.technology: m365d
-ms.openlocfilehash: 8ed6f1ccd6587d6c618974a123f0d5d42a44e753
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: be0423b0af8251347420d9e970dcfe10db0bb72b
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199634"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51591924"
 ---
 # <a name="automated-investigation-and-response-in-microsoft-365-defender"></a>Analisi e risposta automatizzate in Microsoft 365 Defender
 
@@ -89,11 +88,16 @@ In Microsoft 365 Defender, ogni indagine automatizzata correla i segnali tra Mic
 
 |Entità |Servizi di protezione dalle minacce  |
 |:---------|:---------|
-|Dispositivi (denominati anche endpoint e talvolta definiti computer)     |[Microsoft Defender per endpoint](../defender-endpoint/automated-investigations.md)<br/>[Microsoft Defender per identità](/azure-advanced-threat-protection/what-is-atp) |      
+|Dispositivi (denominati anche endpoint e talvolta definiti computer)     |[Microsoft Defender per endpoint](../defender-endpoint/automated-investigations.md)<br/>[Che cosa è Microsoft Defender per identità?](/azure-advanced-threat-protection/what-is-atp) |      
 |Contenuto della posta elettronica (messaggi di posta elettronica che possono contenere file e URL)     |[Microsoft Defender per Office 365](../office-365-security/defender-for-office-365.md)         |
 
 > [!NOTE]
 > Non tutti gli avvisi attivano un'indagine automatizzata e non tutte le indagini generano azioni di correzione automatizzate; dipende dal modo in cui l'indagine e la risposta automatizzate sono configurate per l'organizzazione. Vedere [Configure automated investigation and response capabilities in Microsoft 365 Defender](m365d-configure-auto-investigation-response.md).
+
+## <a name="viewing-a-list-of-investigations"></a>Visualizzazione di un elenco di indagini
+
+Per visualizzare le indagini, passare alla pagina Eventi **imprevisti.** Selezionare un evento imprevisto e quindi selezionare **la scheda** Indagini. Per ulteriori informazioni, vedere [Dettagli e risultati di un'indagine automatizzata.](m365d-autoir-results.md)
+
 
 ## <a name="next-steps"></a>Passaggi successivi
 

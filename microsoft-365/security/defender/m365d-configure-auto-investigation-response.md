@@ -12,17 +12,16 @@ localization_priority: Normal
 ms.collection:
 - M365-security-compliance
 - m365initiative-m365-defender
-ms.date: 02/08/2021
 ms.custom: autoir
 ms.reviewer: evaldm, isco
 f1.keywords: CSH
 ms.technology: m365d
-ms.openlocfilehash: afdf4b4ec8824fa49843074880bcd6f4f1857cca
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 164d4f52f5769d48249c1f4afcdf4be624f6aef7
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200270"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592049"
 ---
 # <a name="configure-automated-investigation-and-response-capabilities-in-microsoft-365-defender"></a>Configurare le funzionalità di analisi e risposta automatizzate in Microsoft 365 Defender
 
@@ -57,7 +56,7 @@ L'esecuzione di indagini automatizzate e l'esecuzione automatica o solo dopo l'a
 2. Vai a **Impostazioni**  >  **Autorizzazioni Gruppi** di  >  **dispositivi**.
 3. Esaminare i criteri di gruppo dei dispositivi. In particolare, esaminare la **colonna Livello di** correzione. Ti consigliamo di **usare Full - correggere automaticamente le minacce.**  Potrebbe essere necessario creare o modificare i gruppi di dispositivi per ottenere il livello di automazione desiderato. Per informazioni su questa attività, vedere gli articoli seguenti:
    - [Modalità di correzione delle minacce](/windows/security/threat-protection/microsoft-defender-atp/automated-investigations#how-threats-are-remediated)
-   - [Creare e gestire gruppi di dispositivi](/windows/security/threat-protection/microsoft-defender-atp/machine-groups)
+   - [Creazione e gestione di gruppi di dispositivi](/windows/security/threat-protection/microsoft-defender-atp/machine-groups)
 
 ## <a name="review-your-security-and-alert-policies-in-office-365"></a>Esaminare i criteri di sicurezza e avviso in Office 365
 

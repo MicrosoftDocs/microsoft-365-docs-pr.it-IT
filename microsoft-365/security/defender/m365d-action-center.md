@@ -20,13 +20,12 @@ ms.collection:
 ms.topic: how-to
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 02/01/2021
-ms.openlocfilehash: d958f2787b9d66e42a32b8858139f7d13e83ddef
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: edf809c5fbc257e1dacafeed931da1a2d1471f4a
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199598"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592085"
 ---
 # <a name="the-action-center"></a>Centro operativo
 
@@ -94,14 +93,14 @@ Quando si visita il centro notifiche, vengono visualizzate due schede: Azioni in
 
 Tutte le azioni, in attesa di approvazione o già eseguite, vengono rilevate nel centro notifiche. Le azioni disponibili includono:
 
-- Raccogliere il pacchetto di analisi 
+- Raccogliere un pacchetto di indagini 
 - Isola dispositivo (questa azione può essere annullata) 
-- Computer offboard 
+- Dispositivo offboard 
 - Esecuzione del codice di rilascio 
 - Rilascio dalla quarantena 
 - Esempio di richiesta 
 - Limitare l'esecuzione del codice (questa azione può essere annullata) 
-- Eseguire l'analisi antivirus 
+- Eseguire ricerca del virus 
 - Arrestare e mettere in quarantena 
 
 Oltre alle azioni di correzione eseguite automaticamente [](m365d-autoir.md)a seguito di indagini automatizzate, il centro notifiche tiene traccia delle azioni intraprese dal team di sicurezza per affrontare le minacce rilevate e le azioni intraprese a seguito delle funzionalità di protezione dalle minacce in Microsoft 365 Defender. Per ulteriori informazioni sulle azioni di correzione automatiche e manuali, vedere [Azioni di correzione.](m365d-remediation-actions.md)

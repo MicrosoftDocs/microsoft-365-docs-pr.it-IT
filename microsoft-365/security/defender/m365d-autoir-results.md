@@ -1,6 +1,6 @@
 ---
 title: Dettagli e risultati di un'indagine automatizzata
-description: Durante e dopo un'indagine automatizzata, è possibile visualizzare i risultati principali
+description: Visualizzare i risultati e i risultati principali dell'indagine automatizzata in Microsoft 365 Defender
 keywords: automatizzata, indagine, risultati, analizzare, dettagli, correzione, autoair
 search.appverid: met150
 ms.prod: m365-security
@@ -21,13 +21,12 @@ ms.collection:
 ms.topic: conceptual
 ms.custom: autoir
 ms.reviewer: evaldm, isco
-ms.date: 02/08/2021
-ms.openlocfilehash: 05208dd8ba893d65db50430861ad5dd5ad9d34fb
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: ca023ea49a8d92123467be640a097a72233d3198
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198970"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51592121"
 ---
 # <a name="details-and-results-of-an-automated-investigation"></a>Dettagli e risultati di un'indagine automatizzata
 
@@ -61,8 +60,11 @@ Il centro [notifiche migliorato](m365d-action-center.md) ( ) riunisce le azioni 
 > È necessario disporre [di determinate autorizzazioni](m365d-action-center.md#required-permissions-for-action-center-tasks) per approvare, rifiutare o annullare azioni.
 
 1. Andare su [https://security.microsoft.com](https://security.microsoft.com) ed eseguire l'accesso. 
+
 2. Nel riquadro di spostamento, scegliere **Centro notifiche**. 
+
 3. Nella scheda **In sospeso** o **Cronologia**, selezionare un elemento. Verrà visualizzato il riquadro a comparsa.
+
 4. Esaminare le informazioni nel riquadro a comparsa e quindi eseguire una delle operazioni seguenti:
    - Selezionare **Apri pagina di indagine** per visualizzare ulteriori dettagli sull'indagine.
    - Selezionare **Approva** per avviare un'azione in sospeso.
@@ -76,9 +78,13 @@ Utilizzare una pagina dei dettagli di un incidente per visualizzare informazioni
 ![Dettagli incidente](../../media/mtp-incidentdetails-tabs.png)
 
 1. Andare su [https://security.microsoft.com](https://security.microsoft.com) ed eseguire l'accesso. 
+
 2. Nel riquadro di spostamento scegliere **Eventi imprevisti & avvisi** Eventi  >  **imprevisti**. 
+
 3. Selezionare un elemento nell'elenco e quindi scegliere **Apri pagina evento imprevisto.**
+
 4. Selezionare la **scheda Indagini** e quindi selezionare un'indagine nell'elenco. Verrà visualizzato il riquadro a comparsa.
+
 5. Selezionare **Apri pagina di analisi**. 
 
 ## <a name="investigation-details"></a>Dettagli indagine

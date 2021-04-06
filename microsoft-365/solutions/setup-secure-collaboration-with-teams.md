@@ -16,18 +16,16 @@ ms.custom:
 - seo-marvel-jun2020
 f1.keywords: NOCSH
 description: Informazioni su come configurare la collaborazione sicura dei contenuti in Teams per proteggere i dati in base alla relativa riservatezza.
-ms.openlocfilehash: 88cb3557f1c150a9c9fd68ba362fcc9c424aa73a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 804307b3035f0d2246dc0ac541cce2d63506c351
+ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906469"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51591911"
 ---
-# <a name="set-up-secure-collaboration-with-microsoft-365"></a>Proteggere la collaborazione con Microsoft 365
+# <a name="set-up-secure-collaboration-with-microsoft-365-and-microsoft-teams"></a>Configurare una collaborazione sicura con Microsoft 365 e Microsoft Teams
 
 La possibilità di condividere facilmente le informazioni con le persone giuste evitando il sovrascivolamento è fondamentale per il successo di un'organizzazione. Ciò include la possibilità di condividere in modo sicuro i dati sensibili solo con coloro che dovrebbero avere accesso ad esso. A seconda del progetto, ciò potrebbe includere la condivisione di dati sensibili con persone esterne all'organizzazione.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxMmL?autoplay=false]
 
 Questa guida alla soluzione di collaborazione include due componenti utili:
 - Distribuire Microsoft Teams con il livello di protezione giusto per ogni progetto
@@ -36,6 +34,8 @@ Questa guida alla soluzione di collaborazione include due componenti utili:
 ![Distribuire Teams con una protezione appropriata e configurare la condivisione esterna con le impostazioni di sicurezza appropriate](..\media\solutions-architecture-center\secure-collaboration-overview.png)
 
 Se non sono disponibili strumenti di collaborazione del contenuto versatili e facili da usare, gli utenti spesso collaborano inviando tramite posta elettronica i documenti. Si tratta di un metodo di collaborazione noioso e rischioso e può aumentare il rischio di condivisione inappropriata delle informazioni. Se gli utenti trovano troppo difficile condividere le informazioni, potrebbero tornare a usare prodotti di consumo non regolamentati dall'IT. Questo può rappresentare un rischio ancora maggiore.
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxMmL?autoplay=false]
 
 Con Microsoft 365, è possibile distribuire Teams con un'ampia gamma di configurazioni che consentono di:
 
