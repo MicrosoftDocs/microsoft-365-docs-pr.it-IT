@@ -1,6 +1,6 @@
 ---
 title: Distribuire le funzionalità di protezione dalle minacce in Microsoft 365
-description: Panoramica dei servizi di protezione dalle minacce e della sicurezza in Microsoft 365 E5.
+description: Panoramica dei servizi di protezione dalle minacce e delle funzionalità di sicurezza in Microsoft 365 E5. Proteggere gli account utente, i dispositivi, il contenuto di posta elettronica e altro ancora con Microsoft 365 E5.
 keywords: protezione dalle minacce, sicurezza, E5, attacco informatico, malware, M365, soluzione
 ms.author: deniseb
 author: denisebmsft
@@ -17,16 +17,20 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 922e7b7ea8bceced7085af49485b3479a671d5cd
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 806c97a55b3cbe46d597566425cf71476586ecee
+ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599960"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51604379"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365-e5"></a>Distribuire le funzionalità di protezione dalle minacce in Microsoft 365 E5
 
-[Malware](/windows/security/threat-protection/intelligence/understanding-malware)e attacchi informatici sofisticati, ad esempio minacce [senza file,](/windows/security/threat-protection/intelligence/fileless-threats)sono un evento comune. Le aziende devono proteggere se stessi e i propri clienti con funzionalità di sicurezza IT efficaci. Gli attacchi informatici possono causare problemi importanti per l'organizzazione, dalla perdita di fiducia ai problemi finanziari, ai tempi di inattività che minacciano l'azienda e altro ancora. La protezione dalle minacce è importante, ma può essere difficile determinare dove concentrare il tempo, l'impegno e le risorse dell'organizzazione. 
+Questa soluzione descrive potenti funzionalità di protezione dalle minacce in Microsoft 365 E5. Leggere questa soluzione per ottenere una panoramica di cosa è incluso, come funziona e come iniziare a distribuire queste funzionalità nell'organizzazione.
+
+## <a name="why-protecting-against-threats-is-important"></a>Perché la protezione dalle minacce è importante 
+
+[Malware](/windows/security/threat-protection/intelligence/understanding-malware)e attacchi informatici sofisticati, ad esempio minacce [senza file,](/windows/security/threat-protection/intelligence/fileless-threats)sono un evento comune. Le aziende devono proteggere se stessi e i propri clienti con funzionalità di sicurezza IT efficaci. Gli attacchi informatici possono causare problemi importanti per l'organizzazione, dalla perdita di fiducia ai problemi finanziari, ai tempi di inattività che minacciano l'azienda e altro ancora. La protezione dalle minacce è importante, ma può essere difficile determinare dove concentrare il tempo, l'impegno e le risorse dell'organizzazione. Microsoft 365 E5 può essere utile. 
 
 Le soluzioni di sicurezza Microsoft sono integrate nei nostri prodotti e servizi. Le funzionalità di automazione e machine learning riducono il carico dei team di sicurezza per assicurarsi che gli elementi siano indirizzati. Inoltre, la forza delle soluzioni di sicurezza Microsoft si basa su trilioni di segnali che eserciteremo ogni giorno nel [nostro Intelligent Security Graph.](/graph/security-concept-overview) Le soluzioni di sicurezza di Microsoft 365 includono [Microsoft 365 Defender,](../security/defender/microsoft-365-defender.md)una soluzione che riunisce i segnali attraverso la posta elettronica, i dati, i dispositivi e le identità per disegnare un'immagine delle minacce avanzate contro l'organizzazione.
 
@@ -45,11 +49,13 @@ In Microsoft 365 E5 le funzionalità di protezione dalle minacce sono integrate 
 
 Microsoft 365 Defender riunisce i segnali e i dati in un Centro [sicurezza Microsoft 365 unificato.](/microsoft-365/security/defender/overview-security-center) 
 
-![Illustrazione concettuale del dashboard di Microsoft 365 Defender](../media/deploy-threat-protection/deploy-threat-protection-across-m365-mtp.png)
+> [!div class="mx-imgBorder"]
+> ![Illustrazione concettuale del dashboard di Microsoft 365 Defender](../media/deploy-threat-protection/deploy-threat-protection-across-m365-mtp.png)
 
 Nella figura seguente viene illustrato un percorso consigliato per la distribuzione di queste singole funzionalità. 
 
-![Segnali di protezione dalle minacce M365](../media/deploy-threat-protection/deploy-threat-protection-across-m365.png)
+> [!div class="mx-imgBorder"]
+> ![Segnali di protezione dalle minacce M365](../media/deploy-threat-protection/deploy-threat-protection-across-m365.png)
 
 |Soluzione/funzionalità  |Descrizione  |
 |---------|---------|
@@ -62,29 +68,27 @@ Nella figura seguente viene illustrato un percorso consigliato per la distribuzi
 > [!TIP]
 > Le organizzazioni che dispongono di più team di sicurezza possono implementare queste funzionalità in parallelo. 
 
-## <a name="deploy-your-threat-protection-solution"></a>Distribuire la soluzione di protezione dalle minacce
+## <a name="plan-to-deploy-your-threat-protection-solution"></a>Pianificare la distribuzione della soluzione di protezione dalle minacce
 
- Il diagramma seguente illustra il processo di alto livello per la distribuzione delle funzionalità di protezione dalle minacce. 
+Il diagramma seguente illustra il processo di alto livello per la distribuzione delle funzionalità di protezione dalle minacce. 
 
 ![Processo per la distribuzione delle funzionalità di protezione dalle minacce](../media/deploy-threat-protection/deploy-threat-protection-across-m365-grid.png)
 
-Per assicurarsi che l'organizzazione abbia la migliore protezione possibile, configurare e distribuire la soluzione di sicurezza con un processo che include i passaggi seguenti:
+Per assicurarsi che l'organizzazione abbia la migliore protezione possibile, configurare e distribuire la soluzione di sicurezza utilizzando un processo che include i passaggi seguenti:
 
-1. [Configurare l'autenticazione a più fattori e i criteri di accesso condizionale](deploy-threat-protection-configure.md#step-1-set-up-multi-factor-authentication-and-conditional-access-policies)
-2. [Configurare Microsoft Defender per l'identità](deploy-threat-protection-configure.md#step-2-configure-microsoft-defender-for-identity)
-3. [Attivare Microsoft 365 Defender](deploy-threat-protection-configure.md#step-3-turn-on-microsoft-365-defender)
-4. [Configurare Defender per Office 365](deploy-threat-protection-configure.md#step-4-configure-microsoft-defender-for-office-365)
-5. [Configurare Microsoft Defender per Endpoint](deploy-threat-protection-configure.md#step-5-configure-microsoft-defender-for-endpoint)
-6. [Configurare Microsoft Cloud App Security](deploy-threat-protection-configure.md#step-6-configure-microsoft-cloud-app-security)
-7. [Monitorare lo stato ed eseguire azioni](deploy-threat-protection-configure.md#step-7-monitor-status-and-take-actions)
-8. [Formare gli utenti](deploy-threat-protection-configure.md#step-8-train-users)
+1. [Configurare l'autenticazione a più fattori e i criteri di accesso condizionale.](deploy-threat-protection-configure.md#step-1-set-up-multi-factor-authentication-and-conditional-access-policies)
+2. [Configurare Microsoft Defender per l'identità](deploy-threat-protection-configure.md#step-2-configure-microsoft-defender-for-identity).
+3. [Attivare Microsoft 365 Defender](deploy-threat-protection-configure.md#step-3-turn-on-microsoft-365-defender).
+4. [Configurare Defender per Office 365](deploy-threat-protection-configure.md#step-4-configure-microsoft-defender-for-office-365).
+5. [Configurare Microsoft Defender per Endpoint](deploy-threat-protection-configure.md#step-5-configure-microsoft-defender-for-endpoint).
+6. [Configurare Microsoft Cloud App Security](deploy-threat-protection-configure.md#step-6-configure-microsoft-cloud-app-security).
+7. [Monitorare lo stato ed eseguire azioni](deploy-threat-protection-configure.md#step-7-monitor-status-and-take-actions).
+8. [Formare gli utenti](deploy-threat-protection-configure.md#step-8-train-users).
 
 Le funzionalità di protezione dalle minacce possono essere configurate in parallelo, quindi se si dispone di più team di sicurezza di rete responsabili di servizi diversi, possono configurare le funzionalità di protezione dell'organizzazione contemporaneamente.
 
 ## <a name="next-step"></a>Passaggio successivo
 
+Passare a [Configurare le funzionalità di protezione dalle minacce in Microsoft 365.](deploy-threat-protection-configure.md)
 
-![Processo per la distribuzione delle funzionalità di protezione dalle minacce](../media/deploy-threat-protection/deploy-threat-protection-across-m365-grid.png)
-
-Passare a [Configurare le funzionalità di protezione dalle minacce in Microsoft 365](deploy-threat-protection-configure.md)
 
