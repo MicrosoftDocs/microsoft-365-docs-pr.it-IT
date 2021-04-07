@@ -18,19 +18,19 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 16d78cf014e775ecb98a59d90b5734836eb3cbf2
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: 5cd1f64d006b5462634dd47df9083e1a89db0e8c
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476626"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615218"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-for-mac"></a>Novità di Microsoft Defender per Endpoint per Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
@@ -38,8 +38,10 @@ ms.locfileid: "51476626"
 > [!IMPORTANT]
 > In macOS 11 (Big Sur), Microsoft Defender for Endpoint richiede profili di configurazione aggiuntivi. Se sei un cliente esistente che esegue l'aggiornamento da versioni precedenti di macOS, assicurati di distribuire i profili di configurazione aggiuntivi elencati [in questa pagina.](mac-sysext-policies.md)
 
-> [!IMPORTANT]
-> Il supporto per macOS 10.13 (High Sierra) è stato interrotto il 15 febbraio 2021.
+## <a name="1012569-20121022125690"></a>101.25.69 (20.121022.12569.0)
+
+- Microsoft Defender per Endpoint per Mac è ora disponibile in anteprima per i clienti del governo statunitense. Per altre informazioni, vedi [Microsoft Defender for Endpoint per i clienti del governo statunitense.](gov.md)
+- Miglioramenti delle prestazioni (in particolare per la situazione in cui viene usata l'app XCode Simulator) & correzioni di bug
 
 ## <a name="1012364-20121021123640"></a>101.23.64 (20.121021.12364.0)
 

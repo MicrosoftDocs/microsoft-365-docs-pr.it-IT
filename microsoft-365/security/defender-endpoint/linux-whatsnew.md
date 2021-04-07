@@ -18,16 +18,22 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 02a446f47ce4292b214c868e773802c53f7e3353
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 7a55d254c20506913d0995bffc941a67bb34a38e
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51581003"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615436"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-for-linux"></a>Novità di Microsoft Defender per Endpoint per Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+## <a name="1012572-30121022125630"></a>101.25.72 (30.121022.12563.0)
+
+- Microsoft Defender per Endpoint per Linux è ora disponibile in anteprima per i clienti del governo degli Stati Uniti. Per altre informazioni, vedi [Microsoft Defender for Endpoint per i clienti del governo statunitense.](gov.md)
+- È stato risolto un problema a causa del quale l'uso di Microsoft Defender per Endpoint per Linux su sistemi con file system FUSE causava il blocco del sistema operativo
+- Miglioramenti delle prestazioni & altre correzioni di bug
 
 ## <a name="1012563-30121022125630"></a>101.25.63 (30.121022.12563.0)
 

@@ -23,43 +23,33 @@ search.appverid:
 ms.assetid: 82ba88fa-ebdf-4d44-a7b3-cea82b25d71a
 ROBOTS: NOINDEX
 description: Informazioni su come aggiungere licenze all'abbonamento a Microsoft 365 acquistato tramite il partner di terze parti, riconosciuto da Microsoft.
-ms.openlocfilehash: 7670a7eb8fffbb3aef8cc3e20f2170c1b2674bd4
-ms.sourcegitcommit: 628f195cbe3c00910f7350d8b09997a675dde989
+ms.openlocfilehash: 6a20955e83a05a46c1ac52c63dda374ec9d83f51
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "48638244"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615340"
 ---
 # <a name="add-licenses-to-a-subscription-purchased-through-the-volume-licensing-service-center"></a>Aggiungere licenze acquistate tramite il centro servizi per contratti multilicenza
 
-Se il piano di Microsoft 365 per le aziende o Office 365 Enterprise è stato acquistato tramite un partner di terze parti, è necessario acquistare licenze aggiuntive tramite tale partner. Se tale partner è noto a Microsoft, è possibile usare la procedura seguente per contattarlo.
-
-::: moniker range="o365-worldwide"
+Se è stato acquistato il piano di Microsoft 365 per le aziende o Office 365 Enterprise tramite un partner di terze parti, è necessario acquistare licenze aggiuntive tramite tale partner. Se tale partner è noto a Microsoft, è possibile usare la procedura seguente per contattarlo.
   
+::: moniker range="o365-worldwide"
+
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
-
-2. Selezionare l'abbonamento a cui si desidera aggiungere licenze, quindi selezionare il collegamento Centro servizi **per** contratti multilicenza.
-
-3. Seguire la procedura indicata nel centro servizi per contratti multilicenza per completare l'acquisto.
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
-
-2. Nella pagina Sottoscrizioni selezionare l'abbonamento a cui si desidera  aggiungere licenze, quindi selezionare il collegamento Centro servizi per contratti multilicenza.
-
-3. Seguire la procedura indicata nel centro servizi per contratti multilicenza per completare l'acquisto. 
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">I tuoi prodotti</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">I tuoi prodotti</a>.
+::: moniker-end
 
-2. Nella pagina Sottoscrizioni selezionare l'abbonamento a cui si desidera  aggiungere licenze, quindi selezionare il collegamento Centro servizi per contratti multilicenza.
+2. Selezionare l'abbonamento a cui si desidera aggiungere licenze, quindi selezionare il collegamento Centro servizi per contratti multilicenza **(VLSC).**
 
 3. Seguire la procedura indicata nel centro servizi per contratti multilicenza per completare l'acquisto.
-
-::: moniker-end

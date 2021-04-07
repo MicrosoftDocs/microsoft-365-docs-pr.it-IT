@@ -25,12 +25,12 @@ search.appverid:
 - BEA160
 ms.assetid: 0724b428-fb59-4962-8c37-6674166d7507
 description: Come interpretare i dati su addebiti, fatturazione e pagamenti nell’estratto conto o fattura di Microsoft 365 per le aziende e come cambiare il numero di ordine d'acquisto.
-ms.openlocfilehash: 99b52928d458e7883919ee46aaafaa7a66278447
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 56f1ba3e7cc328593873aaf06ddfe6dc82fc1a17
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911687"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615376"
 ---
 # <a name="understand-your-bill-or-invoice-for-microsoft-365-for-business"></a>Comprendi l’estratto conto o la fattura per Microsoft 365 per le aziende
 
@@ -106,36 +106,24 @@ Se si è scelto il pagamento tramite fattura, è possibile aggiungere o cambiare
 ::: moniker range="o365-worldwide"
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
-
-2. Se si è in Visualizzazione **Tabella**, selezionare **Schede** per cambiare visualizzazione.
-
-3. Trovare l'abbonamento da riattivare.
-
-4. Nella sezione **Fatturazione**, accanto a **fattura**, selezionare **Modificare**.
-
-5. Nella parte inferiore del riquadro **Modifica dettagli pagamento** immettere il numero di PO e quindi selezionare **Salva**.
-
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
-
-2. Selezionare l'abbonamento da cambiare e nella sezione **Modalità di pagamento** selezionare **Cambia dettagli pagamento**.
-
-3. Nella parte inferiore del riquadro **Modifica dettagli pagamento** immettere il numero di PO e quindi selezionare **Invia**.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">I tuoi prodotti</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
-
-2. Selezionare l'abbonamento da cambiare e nella sezione **Modalità di pagamento** selezionare **Cambia dettagli pagamento**.
-
-3. Nella parte inferiore del riquadro **Modifica dettagli pagamento** immettere il numero di PO e quindi selezionare **Invia**.
-
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">I tuoi prodotti</a>.
 ::: moniker-end
+
+1. Nella scheda **Prodotti**, selezionare l'abbonamento che si vuole cambiare.
+
+1. Nella sezione Impostazioni sottoscrizione e pagamento della pagina dei dettagli **dell'abbonamento** selezionare **Modifica fattura.** 
+
+1. Nella parte inferiore del riquadro **Modifica dettagli per** il pagamento tramite voce immettere il numero dell'ordine fornitore e quindi selezionare **Salva**.
 
 ## <a name="related-articles"></a>Articoli correlati
 

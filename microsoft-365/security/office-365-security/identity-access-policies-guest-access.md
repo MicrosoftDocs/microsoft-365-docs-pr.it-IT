@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 0baefab441b17aa4a9527536cead181bae8f8948
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 4ce52c40e622f55b0fd231ec634c4897fea1d6f5
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599996"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615496"
 ---
 # <a name="policies-for-allowing-guest-access-and-b2b-external-user-access"></a>Criteri per consentire l'accesso guest e l'accesso degli utenti esterni B2B
 
@@ -42,7 +42,7 @@ Questo diagramma mostra quali criteri aggiungere o aggiornare tra i criteri comu
 
 Nella tabella seguente sono elencati i criteri che è necessario creare e aggiornare. I criteri comuni sono link alle istruzioni di configurazione associate [nell'articolo Criteri di identità](identity-access-policies.md) e accesso ai dispositivi comuni.
 
-|Livello di protezione|Criteri|Ulteriori informazioni|
+|Livello di protezione|Criteri|Altre informazioni|
 |---|---|---|
 |**Protezione di base**|[Richiedi MFA sempre per utenti guest ed esterni](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Creare questo nuovo criterio e configurare: <ul><li>Per **Assegnazioni > utenti** e gruppi > Includi , scegliere **Seleziona** utenti e gruppi e quindi selezionare Tutti gli utenti guest **ed esterni**.</li><li>Per **Assegnazioni > condizioni >** accesso , lasciare deselezionate tutte le opzioni per applicare sempre l'autenticazione a più fattori (MFA).</li></ul>|
 ||[Richiedi autenticazione a più fattori quando il rischio di accesso *è medio* o *alto*](identity-access-policies.md#require-mfa-based-on-sign-in-risk)|Modificare questo criterio per escludere utenti guest ed utenti esterni.|
@@ -52,7 +52,7 @@ Per includere o escludere utenti guest ed esterni nei criteri di accesso condizi
 
 ![acquisizione dello schermo dei controlli per l'esclusione di utenti guest ed esterni](../../media/microsoft-365-policies-configurations/identity-access-exclude-guests-ui.png)
 
-## <a name="more-information"></a>Ulteriori informazioni
+## <a name="more-information"></a>Altre informazioni
 
 ### <a name="guests-and-external-user-access-with-microsoft-teams"></a>Accesso guest e utente esterno con Microsoft Teams
 
@@ -82,10 +82,12 @@ Solo un'organizzazione può gestire un dispositivo. Se non escludi guest ed uten
 
 ## <a name="next-step"></a>Passaggio successivo
 
-![Passaggio 4: Criteri per le app cloud di Microsoft 365](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
+![Passaggio 4: Criteri per le app cloud di Microsoft 365 e Microsoft Cloud App Security](../../media/microsoft-365-policies-configurations/identity-device-access-steps-next-step-4.png)
 
 Configurare i criteri di accesso condizionale per:
 
 - [Microsoft Teams](teams-access-policies.md)
 - [Exchange Online](secure-email-recommended-policies.md)
 - [SharePoint](sharepoint-file-access-policies.md)
+- [Microsoft Cloud App Security](mcas-saas-access-policies.md)
+ 

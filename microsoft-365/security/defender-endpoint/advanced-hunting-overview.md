@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4883a4f04f06774d02aa0d942edc841867eb36b6
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 9e5f29874ae42f2b82906a5ac0d2e615009d499f
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499516"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615484"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting"></a>Ricerca proattiva di minacce con ricerca avanzata
 
@@ -43,7 +43,8 @@ Guarda questo video per una breve panoramica della ricerca avanzata e una breve 
 È possibile usare le stesse query di ricerca delle minacce per creare regole di rilevamento personalizzate. Queste regole vengono eseguite automaticamente per cercare e quindi rispondere a attività sospette di violazione, computer non configurati correttamente e altri risultati.
 
 >[!TIP]
->Usa [la ricerca avanzata in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/defender/advanced-hunting-overview) per cercare minacce usando i dati di Defender for Endpoint, Microsoft Defender per Office 365, Microsoft Cloud App Security e Microsoft Defender for Identity. [Attivare Microsoft 365 Defender](https://docs.microsoft.com/microsoft-365/security/defender/mtp-enable)
+>Usa [la ricerca avanzata in Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview) per cercare minacce usando i dati di Defender for Endpoint, Microsoft Defender per Office 365, Microsoft Cloud App Security e Microsoft Defender for Identity. [Attivare Microsoft 365 Defender](/microsoft-365/security/defender/m365d-enable).<br><br>
+Per altre informazioni su come spostare i flussi di lavoro di ricerca avanzata da Microsoft Defender per Endpoint a Microsoft 365 Defender, vedere [Migrate advanced hunting queries from Microsoft Defender for Endpoint](/microsoft-365/security/defender/advanced-hunting-migrate-from-mde).
 
 ## <a name="get-started-with-advanced-hunting"></a>Introduzione alla ricerca avanzata
 

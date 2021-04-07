@@ -5,7 +5,7 @@ f1.keywords:
 ms.author: cmcatee
 author: cmcatee-MSFT
 manager: scotv
-ms.audience: Admin
+audience: Admin
 ms.topic: article
 ms.service: o365-administration
 localization_priority: Normal
@@ -20,21 +20,14 @@ search.appverid:
 - MET150
 description: Informazioni su come acquistare altre licenze o ridurre il numero di licenze per l'abbonamento a Microsoft 365 per le aziende.
 ms.date: ''
-ms.openlocfilehash: 904444790a7984ebce4f549c77bfd22e8f459c9c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: d4d0b73fb33d27f82a02b4ae0c6ecb009eb9d38d
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911543"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615136"
 ---
 # <a name="buy-or-remove-licenses"></a>Acquistare o rimuovere licenze
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 È possibile acquistare altre licenze o ridurre il numero di licenze per le sottoscrizioni utilizzando la procedura seguente.
 
@@ -60,29 +53,24 @@ Se sono state rimosse licenze da un abbonamento, l'operazione successiva da eseg
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione di Microsoft 365, passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
-2. Nella scheda **Prodotti** individuare l'abbonamento per cui si desidera acquistare o rimuovere licenze. Seleziona **Altre azioni** (tre puntini), quindi seleziona Acquista **licenze.** [Cosa succede se non vengono visualizzati i pulsanti Acquista licenze o Rimuovi licenze?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
-3. Se si desidera ridurre il numero di licenze, nella parte superiore del riquadro **Acquista licenze** selezionare **Rimuovi licenze**.
-4. Per acquistare o rimuovere licenze, in **Nuova** quantità nella **casella Totale** licenze immettere il numero totale di licenze desiderate per l'abbonamento. Ad esempio, se si dispone di 100 licenze e si desidera aggiungervi altre cinque, immettere 105. Se si desidera rimuoverli cinque, immettere 95.
-5. Selezionare **Salva**.
-
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
-2. Nella pagina **Abbonamenti** selezionare l'abbonamento a cui si desidera acquistare o rimuovere licenze e quindi selezionare **Aggiungi/Rimuovi licenze.** [Cosa succede se non vengono visualizzati i pulsanti Acquista licenze o Rimuovi licenze?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
-3. Nella casella **Totale licenze** immettere il numero totale di licenze desiderate per l'abbonamento, quindi selezionare **Invia** \> **chiudi.** Ad esempio, se si dispone di 100 licenze e si desidera aggiungervi altre cinque, immettere 105. Se si desidera rimuovere cinque licenze, immettere 95.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">I tuoi prodotti</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
-2. Nella pagina **Abbonamenti** selezionare l'abbonamento a cui si desidera acquistare o rimuovere licenze e quindi selezionare **Aggiungi/Rimuovi licenze.** [Cosa succede se non vengono visualizzati i pulsanti Acquista licenze o Rimuovi licenze?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
-3. Nella casella **Totale licenze** immettere il numero totale di licenze desiderate per l'abbonamento e quindi selezionare **Invia** \> **chiudi.** Se, ad esempio, si hanno 100 licenze e occorre aggiungerne altre 5, immettere 105. Se si desidera rimuoverli 5, immettere 95.
-
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">I tuoi prodotti</a>.
 ::: moniker-end
+
+2. Nella scheda **Prodotti** individuare l'abbonamento per cui si desidera acquistare o rimuovere licenze. Seleziona **Altre azioni** (tre puntini), quindi seleziona Acquista **licenze.** [Cosa succede se non vengono visualizzati i pulsanti Acquista licenze o Rimuovi licenze?](#what-if-i-dont-see-the-buy-licenses-or-remove-licenses-buttons)
+3. Se si desidera ridurre il numero di licenze, nella parte superiore del riquadro **Acquista licenze** selezionare **Rimuovi licenze**.
+4. Per acquistare o rimuovere licenze, in **Nuova** quantità nella **casella Totale** licenze immettere il numero totale di licenze desiderate per l'abbonamento. Ad esempio, se si dispone di 100 licenze e si desidera aggiungervi altre cinque, immettere 105. Se si desidera rimuoverli cinque, immettere 95.
+5. Selezionare **Salva**.
 
 > [!NOTE]
 > Non è possibile ridurre il numero di licenze per l'abbonamento se tutte le licenze sono attualmente assegnate agli utenti. Per ridurre il numero di licenze, annullare prima l'assegnazione di una o più licenze dagli [utenti,](../../admin/manage/remove-licenses-from-users.md)quindi rimuovere le licenze dall'abbonamento.
@@ -115,7 +103,7 @@ Se sono stati acquistati più licenze per l'abbonamento, è consigliabile assegn
 
 Se hai ridotto il numero di licenze per l'abbonamento perché qualcuno ha lasciato l'organizzazione, potresti voler rimuovere l'account dell'utente. Per ulteriori informazioni, vedere [Rimuovere un ex dipendente.](../../admin/add-users/remove-former-employee.md)
 
-## <a name="related-content"></a>Contenuto correlato
+## <a name="related-content"></a>Contenuti correlati
 
 [Assegnare licenze agli utenti](../../admin/manage/assign-licenses-to-users.md) (articolo)\
 [Informazioni su abbonamenti e licenze](subscriptions-and-licenses.md) (articolo)\
