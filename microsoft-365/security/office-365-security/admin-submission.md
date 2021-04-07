@@ -19,12 +19,12 @@ ms.custom:
 description: Gli amministratori possono imparare a usare il portale invii nel Centro sicurezza e conformità & per inviare messaggi di posta elettronica sospetti, messaggi di phishing sospetti, posta indesiderata e altri messaggi, URL e file potenzialmente dannosi a Microsoft per l'analisi.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 96a5469b1093c71997747b2c4c3b49bc1964f72b
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: e0975d5b6c2d29c94a30f7bbc703221b80217761
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51581071"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599876"
 ---
 # <a name="use-admin-submission-to-submit-suspected-spam-phish-urls-and-files-to-microsoft"></a>Usare l'Invio dell'amministratore per inviare posta indesiderata sospetta, phishing, URL e file a Microsoft
 
@@ -49,7 +49,7 @@ Quando invii un messaggio di posta elettronica, ottieni:
 
 Per altri modi per inviare messaggi di posta elettronica, URL e allegati a Microsoft, vedere [Segnalare messaggi e file a Microsoft](report-junk-email-messages-to-microsoft.md).
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla **pagina Invio,** usa <https://protection.office.com/reportsubmission> .
 
@@ -78,7 +78,7 @@ Per altri modi per inviare messaggi di posta elettronica, URL e allegati a Micro
    - **File**: fare clic **su Scegli file.** Nella finestra di dialogo visualizzata individuare e selezionare il file con estensione eml o msg e quindi fare clic su **Apri**.
 
    > [!NOTE]
-   > Gli amministratori con Defender per Office 365 Piano 1 o Piano 2 possono inviare messaggi vecchi fino a 30 giorni. Altri amministratori potranno tornare indietro di 7 giorni.
+   > La possibilità di inviare messaggi vecchi di 30 giorni è stata temporaneamente sospesa per Defender per i clienti di Office 365. Gli amministratori potranno tornare indietro di 7 giorni.
 
 2. Nella sezione **Destinatari** specificare uno o più destinatari per i quali si desidera eseguire un controllo dei criteri. Il controllo dei criteri determinerà se l'analisi dei messaggi di posta elettronica è stata ignorata a causa dei criteri dell'utente o dell'organizzazione.
 

@@ -17,12 +17,12 @@ ms.collection:
 description: Informazioni su come vengono utilizzati i pool di recapito per proteggere la reputazione dei server di posta elettronica nei datacenter di Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 461b5f9aa0407c5115ab84a075c793139a8b4305
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: ac3469150ef5cf5c1040fcddf7f0bc95e7a18805
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205395"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599912"
 ---
 # <a name="outbound-delivery-pools"></a>Pool di recapito in uscita
 
@@ -35,14 +35,14 @@ ms.locfileid: "51205395"
 
 I server di posta elettronica nei datacenter di Microsoft 365 potrebbero essere temporaneamente responsabili dell'invio di posta indesiderata. Ad esempio, un malware o un attacco di posta indesiderata dannoso in un'organizzazione di posta elettronica locale che invia posta in uscita tramite Microsoft 365 o account Microsoft 365 compromessi. Gli utenti malintenzionati cercano inoltre di evitare il rilevamento inoltrando i messaggi tramite l'inoltro di Microsoft 365.
 
-Questi scenari possono comportare la visualizzazione dell'indirizzo IP dei server datacenter di Microsoft 365 interessati negli elenchi di indirizzi di terze parti. Le organizzazioni di posta elettronica di destinazione che utilizzano questi elenchi di blocco rifiuteranno la posta elettronica da tali origini dei messaggi.
+Questi scenari possono comportare la visualizzazione dell'indirizzo IP dei server datacenter di Microsoft 365 interessati negli elenchi di indirizzi di terze parti. Le organizzazioni di posta elettronica di destinazione che utilizzano questi elenchi bloccanti rifiuteranno la posta elettronica da tali origini dei messaggi.
 
 ## <a name="high-risk-delivery-pool"></a>Pool di recapito ad alto rischio
 Per evitare questo problema, tutti i messaggi in uscita dai server datacenter di Microsoft 365 [](configure-the-outbound-spam-policy.md) che sono determinati come posta indesiderata o che superano i limiti di invio del servizio o dei criteri di posta indesiderata in uscita vengono inviati tramite il _pool_ di recapito ad alto rischio. [](/office365/servicedescriptions/exchange-online-service-description/exchange-online-limits#sending-limits-across-office-365-options)
 
-Il pool di recapito ad alto rischio è un pool di indirizzi IP separato per la posta elettronica in uscita che viene utilizzato solo per inviare messaggi di "bassa qualità" (ad esempio, posta indesiderata e [backscatter).](backscatter-messages-and-eop.md) L'utilizzo del pool di recapito ad alto rischio consente di impedire al normale pool di indirizzi IP per la posta elettronica in uscita di inviare posta indesiderata. Il normale pool di indirizzi IP per la posta elettronica in uscita mantiene la reputazione che invia messaggi di "alta qualità", riducendo la probabilità che questi indirizzi IP vengano visualizzati in elenchi di indirizzi IP bloccati.
+Il pool di recapito ad alto rischio è un pool di indirizzi IP separato per la posta elettronica in uscita che viene utilizzato solo per inviare messaggi di "bassa qualità" (ad esempio, posta indesiderata e [backscatter).](backscatter-messages-and-eop.md) L'utilizzo del pool di recapito ad alto rischio consente di impedire al normale pool di indirizzi IP per la posta elettronica in uscita di inviare posta indesiderata. Il normale pool di indirizzi IP per la posta elettronica in uscita mantiene la reputazione che invia messaggi di "alta qualità", riducendo così la probabilità che questi indirizzi IP vengano visualizzati sugli elenchi indirizzi IP bloccati.
 
-La possibilità molto reale che gli indirizzi IP nel pool di recapito ad alto rischio siano inseriti negli elenchi di indirizzi IP bloccati rimane, ma questo è da progettare. Il recapito ai destinatari previsti non è garantito, perché molte organizzazioni di posta elettronica non accettano messaggi dal pool di recapito ad alto rischio.
+La possibilità reale che gli indirizzi IP nel pool di recapito ad alto rischio siano inseriti negli elenchi indirizzi IP non validi rimane, ma questo è per progettazione. Il recapito ai destinatari previsti non è garantito, perché molte organizzazioni di posta elettronica non accettano messaggi dal pool di recapito ad alto rischio.
 
 Per ulteriori informazioni, vedere [Control outbound spam](outbound-spam-controls.md).
 
@@ -61,9 +61,3 @@ Le possibili cause di un aumento dei dati di mancato recapito includono:
 - Un server di posta elettronica non autorizzato.
 
 Tutti questi problemi possono comportare un aumento repentino del numero di NNDR elaborati dal servizio. Molte volte, questi nomi di mancato recapito sembrano essere posta indesiderata per altri server e servizi di posta elettronica (noto anche come _[backscatter).](backscatter-messages-and-eop.md)_
-
-## <a name="relay-pool"></a>Pool di inoltro
-
-I messaggi inoltrati o inoltrati da Microsoft 365 vengono inviati utilizzando uno speciale pool di inoltro, poiché la destinazione finale non deve considerare Microsoft 365 come mittente effettivo. È anche importante isolare questo traffico, perché esistono scenari legittimi e non validi per l'inoltro automatico o l'inoltro della posta elettronica da Microsoft 365. Analogamente al pool di recapito ad alto rischio, per l'inoltro della posta viene utilizzato un pool di indirizzi IP separato. Questo pool di indirizzi non viene pubblicato perché può cambiare spesso.
-
-Microsoft 365 deve verificare che il mittente originale sia legittimo per poter recapitare con sicurezza il messaggio inoltrato. A tale scopo, l'autenticazione della posta elettronica (SPF, DKIM e DMARC) deve passare quando il messaggio viene inviato. Nei casi in cui è possibile autenticare il mittente, viene utilizzata la riscrittura del mittente per aiutare il destinatario a sapere che il messaggio inoltrato è di origine attendibile. È possibile leggere altre informazioni sul funzionamento e sulle operazioni che è possibile eseguire per assicurarsi che il dominio di invio passi l'autenticazione in [Sender Rewriting Scheme (SRS).](/office365/troubleshoot/antispam/sender-rewriting-scheme)

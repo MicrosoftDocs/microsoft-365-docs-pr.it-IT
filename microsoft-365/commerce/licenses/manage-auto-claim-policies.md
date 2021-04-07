@@ -1,5 +1,5 @@
 ---
-title: Gestire i criteri di attestazione automatica
+title: Gestire i criteri di richiesta automatica
 f1.keywords:
 - CSH
 ms.author: cmcatee
@@ -18,14 +18,14 @@ ms.custom:
 - commerce
 search.appverid:
 - MET150
-ms.openlocfilehash: bf3f79e425b3f7cd86f1a5ab95a337ef5127e345
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 001b612820bb13873ec18733d68828837fcecd78
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50911472"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599452"
 ---
-# <a name="manage-auto-claim-policies"></a>Gestire i criteri di attestazione automatica
+# <a name="manage-auto-claim-policies"></a>Gestire i criteri di richiesta automatica
 
 Un criterio di attestazione automatica consente agli utenti di richiedere automaticamente una licenza per un prodotto al primo accesso a un'app. Gli amministratori assegnano in genere le licenze agli utenti manualmente o usando le licenze basate su gruppo. Utilizzando i criteri di attestazione automatica, puoi gestire i prodotti per i quali gli utenti possono richiedere automaticamente le licenze. Puoi anche controllare i prodotti da cui provengono le licenze.
 
@@ -43,7 +43,7 @@ Dopo aver creato un criterio di attestazione automatica, è possibile eseguire l
 
 ## <a name="before-you-begin"></a>Prima di iniziare
 
-Devi essere un amministratore globale per creare e gestire i criteri di attestazione automatica. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore di Microsoft 365](../../admin/add-users/about-admin-roles.md).
+Devi essere un amministratore globale, utente o licenza per creare e gestire i criteri di attestazione automatica. Per altre informazioni, vedere [Informazioni sui ruoli di amministratore di Microsoft 365](../../admin/add-users/about-admin-roles.md).
 
 ## <a name="turn-the-auto-claim-policy-feature-on-or-off"></a>Attivare o disattivare la funzionalità dei criteri di attestazione automatica
 
@@ -55,6 +55,8 @@ Per impostazione predefinita, la funzionalità dei criteri di attestazione autom
 2. Al centro della pagina seleziona il **pulsante Attiva impostazione.**
 
 ### <a name="turn-off-auto-claim-policies"></a>Disattivare i criteri di attestazione automatica
+
+Solo un amministratore globale può disattivare un'impostazione dei criteri di attestazione automatica.
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Impostazioni** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=2053743" target="_blank">organizzazione.</a>
 2. Nella parte inferiore della tabella seleziona App e servizi **di proprietà dell'utente.**
@@ -158,7 +160,7 @@ Se al criterio sono stati assegnati prodotti di backup, puoi modificare l'ordine
 
 È possibile tornare periodicamente alla **scheda** Criteri di attestazione automatica per visualizzare un elenco di utenti che hanno richiesto licenze in base ai criteri creati.
 
-## <a name="related-content"></a>Contenuto correlato
+## <a name="related-content"></a>Contenuti correlati
 
 [Assegnare licenze agli utenti](../../admin/manage/assign-licenses-to-users.md) (articolo)\
 [Acquistare o rimuovere licenze di sottoscrizione](buy-licenses.md) (articolo)\

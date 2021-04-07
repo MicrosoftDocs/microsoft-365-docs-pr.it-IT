@@ -18,12 +18,12 @@ ms.custom:
 localization_priority: Normal
 f1.keywords: NOCSH
 description: Informazioni su come configurare le app di Microsoft 365 come Teams, OneDrive e SharePoint per la collaborazione con persone esterne all'organizzazione.
-ms.openlocfilehash: 359e72c12c43ca1ea984f93d87ab4868e6d1eb66
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 85aa77982fa15adb62bd587856546d2828edb942
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916395"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599820"
 ---
 # <a name="collaborating-with-people-outside-your-organization"></a>Collaborare con persone esterne all'organizzazione
 
@@ -33,6 +33,8 @@ La collaborazione con persone esterne all'organizzazione è costituita da due co
 
 - **Abilitare la** condivisione: configurare i controlli di condivisione tra Azure Active Directory, Teams, Gruppi di Microsoft 365 e SharePoint per consentire il livello di condivisione desiderato per l'organizzazione.
 -  Abilitare sicurezza aggiuntiva: sebbene le funzionalità di condivisione di base possano essere configurate in modo da richiedere l'autenticazione a persone esterne all'organizzazione, Microsoft 365 offre molte funzionalità di sicurezza e conformità aggiuntive per proteggere i dati e mantenere i criteri di governance durante la condivisione esterna.
+
+Leggere [Configurare una collaborazione sicura con Microsoft 365](/microsoft-365/solutions/setup-secure-collaboration-with-teams) e Microsoft Teams per informazioni su come la condivisione esterna si lega con le indicazioni generali sulla collaborazione di Microsoft 365.
 
 ## <a name="enable-sharing"></a>Abilitare la condivisione
 

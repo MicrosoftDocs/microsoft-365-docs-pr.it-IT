@@ -17,12 +17,12 @@ ROBOTS: NOINDEX
 description: Gli utenti possono imparare a visualizzare e agire sui messaggi in quarantena inviati alle cassette postali condivise per cui dispongono delle autorizzazioni.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6e3bf4c84e7a762f7f54f42ff61f0fbdb9dc1edd
-ms.sourcegitcommit: 3d2261af22bebbbf7efa8a0d3135225a15bd6ba8
+ms.openlocfilehash: cb915ad6ad6e6130d8704339559f4c370cef3a20
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51215505"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599512"
 ---
 # <a name="view-and-release-quarantined-messages-from-shared-mailboxes"></a>Visualizzare e rilasciare i messaggi in quarantena dalle cassette postali condivise
 
@@ -35,7 +35,7 @@ In precedenza, la possibilità per gli utenti di gestire i messaggi in quaranten
 
 A questo punto, il mapping automatico non è più necessario per consentire agli utenti di gestire i messaggi in quarantena inviati alle cassette postali condivise. Funziona solo. Esistono due metodi diversi per accedere ai messaggi in quarantena inviati a una cassetta postale condivisa:
 
-- Se l'amministratore ha abilitato le notifiche di posta indesiderata dell'utente finale nei criteri di protezione da  posta indesiderata, qualsiasi utente che ha accesso alle notifiche di posta indesiderata dell'utente finale nella cassetta postale condivisa può fare clic sul pulsante Revisione nella notifica per andare in quarantena nel Centro sicurezza & Conformità. [](https://docs.microsoft.com/microsoft-365/security/office-365-security/configure-your-spam-filter-policies) Si noti che questo metodo consente solo agli utenti di gestire i messaggi in quarantena inviati alla cassetta postale condivisa. Gli utenti non possono gestire i propri messaggi di quarantena in questo contesto.
+- Se l'amministratore ha abilitato le notifiche di posta indesiderata dell'utente finale nei criteri di protezione da  posta [indesiderata,](configure-your-spam-filter-policies.md#configure-end-user-spam-notifications)qualsiasi utente che ha accesso alle notifiche di posta indesiderata dell'utente finale nella cassetta postale condivisa può fare clic sul pulsante Revisione nella notifica per andare in quarantena nel Centro sicurezza & Conformità. Si noti che questo metodo consente solo agli utenti di gestire i messaggi in quarantena inviati alla cassetta postale condivisa. Gli utenti non possono gestire i propri messaggi di quarantena in questo contesto.
 
 - L'utente [può passare alla quarantena nel Centro sicurezza & conformità](find-and-release-quarantined-messages-as-a-user.md). Per impostazione predefinita, vengono visualizzati solo i messaggi inviati all'utente. Tuttavia, l'utente può modificare i risultati dell'ordinamento **(il** pulsante **ID** messaggio per impostazione  predefinita) in Indirizzo di posta elettronica **destinatario,** immettere l'indirizzo di posta elettronica della cassetta postale condivisa e quindi fare clic su Aggiorna per visualizzare i messaggi in quarantena inviati alla cassetta postale condivisa.
 

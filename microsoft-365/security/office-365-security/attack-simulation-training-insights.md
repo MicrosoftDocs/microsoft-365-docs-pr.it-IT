@@ -12,12 +12,12 @@ ms.collection:
 - m365initiative-defender-office365
 description: Gli amministratori possono scoprire in che modo la formazione sulla simulazione di attacchi nel centro sicurezza Microsoft 365 influisce sui dipendenti e può ottenere informazioni dettagliate dai risultati della simulazione e della formazione.
 ms.technology: mdo
-ms.openlocfilehash: 93d8829f9fbc4271d33e3208e5564529b4022fc3
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 0fcb88406558f73b587d8452375c33dbbec1c78b
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205195"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51600008"
 ---
 # <a name="gain-insights-through-attack-simulation-training"></a>Acquisire informazioni approfondite attraverso la formazione del Simulatore di attacchi
 
@@ -45,7 +45,7 @@ Per visualizzare un report più dettagliato, fare clic su Visualizza simulazioni
 
 Nella scheda [ **Simulazioni** selezionare](https://security.microsoft.com/attacksimulator?viewid=simulations)una simulazione per visualizzare i dettagli della simulazione, dove è presente la **sezione Azioni consigliate.**
 
-Nella sezione azioni consigliate vengono fornite informazioni dettagliate sui suggerimenti disponibili in [Microsoft Secure Score.](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score) Questi suggerimenti si basano sul payload usato nella simulazione e consentono di proteggere i dipendenti e l'ambiente. Facendo clic su ogni azione di miglioramento, verranno fornite informazioni dettagliate.
+Nella sezione azioni consigliate vengono fornite informazioni dettagliate sui suggerimenti disponibili in [Microsoft Secure Score.](../defender/microsoft-secure-score.md) Questi suggerimenti si basano sul payload usato nella simulazione e consentono di proteggere i dipendenti e l'ambiente. Facendo clic su ogni azione di miglioramento, verranno fornite informazioni dettagliate.
 
 > [!div class="mx-imgBorder"]
 > ![Sezione Azioni consigliate sul training di simulazione degli attacchi](../../media/attack-sim-preview-recommended-actions.png)

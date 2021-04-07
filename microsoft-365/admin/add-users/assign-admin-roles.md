@@ -27,12 +27,12 @@ search.appverid:
 - GEA150
 ms.assetid: eac4d046-1afd-4f1a-85fc-8219c79e1504
 description: Informazioni su come assegnare ruoli di amministratore a uno o più utenti dell'azienda in modo che possano eseguire attività specifiche nell'interfaccia di amministrazione.
-ms.openlocfilehash: cfc4a7e106ca343435777aba1d0b9836f90a6f44
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5c40199823c93968be97302efc8e2d404f3cfed1
+ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904505"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51604334"
 ---
 # <a name="assign-admin-roles"></a>Assegnare i ruoli di amministratore
 
@@ -59,7 +59,7 @@ Se il video è stato utile, consultare la [serie dei corsi di formazione complet
 
 ### <a name="assign-admin-roles-to-users-using-roles"></a>Assegnare ruoli di amministratore agli utenti tramite Ruoli
 
-1. Nell'interfaccia di amministrazione passare a **Ruoli** > **Ruoli** per visualizzare tutti i ruoli di amministratore disponibili per l'organizzazione.
+1. Nell'interfaccia di amministrazione passare a **Ruoli**. Scegliere le **schede Azure AD** o **Intune** per visualizzare i ruoli di amministratore disponibili per l'organizzazione.
 2. Selezionare il ruolo di amministratore a cui si desidera assegnare l'utente.
 3. Selezionare **Amministratori assegnati** > **Aggiungi**.
 4. Digitare il nome visualizzato o il **nome** **utente** dell'utente e quindi selezionare l'utente nell'elenco dei suggerimenti.
@@ -70,7 +70,7 @@ Se il video è stato utile, consultare la [serie dei corsi di formazione complet
 
 1. Nell'interfaccia di amministrazione passare alla **pagina Utenti** > [utenti](https://go.microsoft.com/fwlink/p/?linkid=834822) attivi.
 
-2. Nella pagina **Utenti attivi** selezionare l'utente di cui si desidera modificare il ruolo di amministratore. Nel riquadro a comparsa, accanto a **Ruoli,** selezionare **Gestisci ruoli.**
+2. Nella pagina **Utenti attivi** selezionare l'utente di cui si desidera modificare il ruolo di amministratore. Nel riquadro a comparsa, in **Ruoli,** selezionare **Gestisci ruoli.**
 
 3. Selezionare il ruolo di amministratore che si desidera assegnare all'utente. Se il ruolo che si sta cercando non è visualizzato, selezionare **Mostra tutto** nella parte inferiore dell'elenco.
 

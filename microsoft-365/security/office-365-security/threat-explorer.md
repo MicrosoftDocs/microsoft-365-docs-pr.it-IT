@@ -19,12 +19,12 @@ description: Usa Esplora risorse e i rilevamenti in tempo reale nel Centro sicur
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1c5935115d7496aca22c3941f34983cddebe7b46
-ms.sourcegitcommit: 6e5c00f84b5201422aed094f2697016407df8fc2
+ms.openlocfilehash: 7c601169d76fe92ac3038ccb25c5c50aa390f714
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51570985"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599888"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer e rilevamenti in tempo reale
 
@@ -113,7 +113,7 @@ Le informazioni sui tag vengono visualizzate anche nel riquadro a comparsa dei c
 > [!div class="mx-imgBorder"]
 > ![Tag URL](../../media/tags-urls.png)
 > 
-Per ulteriori informazioni, guardare [questo video.](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4) 
+Scopri di più guardando [questo video](https://www.youtube.com/watch?v=UoVzN0lYbfY&list=PL3ZTgFEc7LystRja2GnDeUFqk44k7-KXf&index=4). 
 
 ## <a name="improvements-to-the-threat-hunting-experience-upcoming"></a>Miglioramenti all'esperienza di ricerca delle minacce (imminente)
 
@@ -339,7 +339,7 @@ In questo esempio viene utilizzato Threat Explorer.
 
 4. Seleziona l'oggetto di qualsiasi messaggio nella scheda Posta > dettagli per visualizzare ulteriori informazioni sulla rappresentazione, ad esempio Dominio impersonato/Posizione rilevata.
 
-    **OR** 
+    **OPPURE** 
 
     Selezionare **Utente rappresentato e** digitare l'indirizzo di posta elettronica di un utente protetto nella casella di testo.
 
@@ -520,7 +520,7 @@ Oltre agli scenari descritti in questo articolo, sono disponibili molte più opz
 - [Visualizzare i file dannosi rilevati in SharePoint Online, OneDrive e Microsoft Teams](./mdo-for-spo-odb-and-teams.md)
 - [Ottenere una panoramica delle visualizzazioni in Esplora minacce (e rilevamenti in tempo reale)](threat-explorer-views.md)
 - [Report dello stato di protezione dalle minacce](view-email-security-reports.md#threat-protection-status-report)
-- [Indagine e reazione automatizzate in Microsoft Threat Protection](https://docs.microsoft.com/microsoft-365/security/defender/mtp-autoir)
+- [Indagine e reazione automatizzate in Microsoft Threat Protection](../defender/m365d-autoir.md)
 
 ## <a name="required-licenses-and-permissions"></a>Licenze e autorizzazioni obbligatorie
 

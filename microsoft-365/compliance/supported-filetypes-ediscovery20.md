@@ -16,20 +16,20 @@ search.appverid:
 - MET150
 description: Elenco dei tipi di file supportati in Microsoft 365 Advanced eDiscovery, inclusi i tipi di file di immagine supportati dalla funzionalità OCR in Advanced eDiscovery.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: a552e6cf0d32e77c2a21bc959ae313e6fc53d4eb
-ms.sourcegitcommit: 9f5b136b96b3af4db4cc6f5b1f35130ae60d6b12
+ms.openlocfilehash: 719a0474d45825114cf4ea3fbd19082bb8df7622
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "47817129"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599831"
 ---
 # <a name="supported-file-types-in-advanced-ediscovery"></a>Tipi di file supportati in Advanced eDiscovery
 
-Advanced eDiscovery supporta molti tipi di file a diversi livelli. I tipi di file di supporto sono descritti nelle tabelle seguenti di questo articolo. Questo elenco non è stato finalizzato e verranno aggiunti nuovi tipi di file manteremo i test di convalida. Queste tabelle indicano se un tipo di file è supportato per l'estrazione di testo (e il riconoscimento ottico dei caratteri o l'estrazione di testo OCR per i file di immagine), visualizzabile nel visualizzatore nativo e anche il supporto nel visualizzatore di annotazioni in Advanced eDiscovery.
+Advanced eDiscovery supporta molti tipi di file a diversi livelli. I tipi di file di supporto sono descritti nelle tabelle seguenti di questo articolo. Questo elenco non è finalizzato e verranno aggiunti nuovi tipi di file mentre si prosegue il test di convalida. Queste tabelle indicano se un tipo di file è supportato per l'estrazione del testo (e riconoscimento ottico dei caratteri o estrazione del testo OCR per i file di immagine), visualizzabile nel visualizzatore nativo e supporto anche nel visualizzatore Annotate in Advanced eDiscovery.
 
 ## <a name="archive--container"></a>Archivio/Contenitore
 
-| Tipo mime | Identificazione del file | Estrazione dei metadati | Estrazione di contenitori | Estensioni possibili |
+| Tipo mime | Identificazione file | Estrazione metadati | Estrazione contenitore | Estensioni possibili |
 |:---- |:---- |:---- |:---- |:---- |
 |application/x-7z-compressed | Sì | Sì | Sì | .7z |
 |application/x-rar-compressed | Sì | Sì | Sì | .rar |
@@ -39,9 +39,9 @@ Advanced eDiscovery supporta molti tipi di file a diversi livelli. I tipi di fil
 
 ## <a name="audio--video"></a>Audio/Video
 
-| Tipo mime | Identificazione del file | Estrazione dei metadati | Estrazione di testo | Visualizzatore nativo | Annotate viewer | Estensioni possibili |
+| Tipo mime | Identificazione file | Estrazione metadati | Estrazione di testo | Visualizzatore nativo | Visualizzatore di annotazioni | Estensioni possibili |
 |:------| :------| :------| :------| :------| :------| :------|
-| application/mp4 | Sì | Sì | No | Sì | No | .f4v; .m4a; .m4v; .mp4v; .mp4v; .mpeg; .mpeg4 |
+| application/mp4 | Sì | Sì | No | Sì | No | .f4v; .m4a; .m4v; .mp4; .mp4v; .mpeg; .mpeg4 |
 |audio/mpeg | Sì | Sì | No | Sì | No | .mpeg |
 |video/3gpp | Sì | Sì | No | Sì | No | .3gp |
 |video/3gpp2 | Sì | Sì | No | Sì | No | .3g2; .3gp2 |
@@ -51,23 +51,23 @@ Advanced eDiscovery supporta molti tipi di file a diversi livelli. I tipi di fil
 
 ## <a name="database"></a>Database
 
-| Tipo mime | Identificazione del file | Estrazione dei metadati | Estrazione di testo | Visualizzatore nativo | Annotate viewer | Estensioni possibili |
+| Tipo mime | Identificazione file | Estrazione metadati | Estrazione di testo | Visualizzatore nativo | Visualizzatore di annotazioni | Estensioni possibili |
 |:------| :------| :------| :------| :------| :------| :------|
 |application/x-msaccess | Sì | Sì | Sì | No | No | .mdb |
 ||||||||
 
 ## <a name="email"></a>Posta elettronica
 
-|Tipo mime |Identificazione del file |Estrazione dei metadati |Estrazione di testo |Visualizzatore nativo |Annotate viewer | Estensioni possibili |
+|Tipo mime |Identificazione file |Estrazione metadati |Estrazione di testo |Visualizzatore nativo |Visualizzatore di annotazioni | Estensioni possibili |
 |:------| :------| :------| :------| :------| :------| :------|
 |application/vnd.ms-outlook | Sì | Sì | Sì | Sì | Sì | .msg |
 |message/rfc822 | Sì | Sì | Sì | Sì | Sì | .eml |
 |text/vcard-contact | Sì | Sì | Sì | Sì | Sì | .vcf |
 ||||||||
 
-## <a name="email-container"></a>Contenitore di posta elettronica
+## <a name="email-container"></a>Contenitore posta elettronica
 
-| Tipo mime | Identificazione del file | Estrazione dei metadati | Estrazione di contenitori | Estensioni possibili |
+| Tipo mime | Identificazione file | Estrazione metadati | Estrazione contenitore | Estensioni possibili |
 |:------| :------| :------| :------| :------|
 |application/mbox | Sì | Sì | Sì | .mbox |
 |application/vnd.ms-outlook-pst | Sì | Sì | Sì | .pst |
@@ -75,7 +75,7 @@ Advanced eDiscovery supporta molti tipi di file a diversi livelli. I tipi di fil
 
 ## <a name="html"></a>HTML
 
-| Tipo mime | Identificazione del file | Estrazione dei metadati | Estrazione di testo | Visualizzatore nativo | Annotate viewer | Estensioni possibili |
+| Tipo mime | Identificazione file | Estrazione metadati | Estrazione di testo | Visualizzatore nativo | Visualizzatore di annotazioni | Estensioni possibili |
 |:------| :------| :------| :------| :------| :------| :------|
 |application/xhtml+xml | Sì | Sì | Sì | Sì | Sì | .xhtml |
 |application/xml | Sì | Sì | Sì | Sì | Sì | .xml |
@@ -84,7 +84,7 @@ Advanced eDiscovery supporta molti tipi di file a diversi livelli. I tipi di fil
 
 ## <a name="image"></a>Immagine
 
-|Tipo mime |Identificazione del file |Estrazione dei metadati |Estrazione di testo OCR |Visualizzatore nativo |Annotate viewer |Estensioni possibili |
+|Tipo mime |Identificazione file |Estrazione metadati |Estrazione del testo OCR |Visualizzatore nativo |Visualizzatore di annotazioni |Estensioni possibili |
 |:------| :------| :------| :------| :------| :------| :------|
 |image/bmp | Sì | Sì | Sì | Sì | Sì | .bmp |
 |image/emf | Sì | Sì | Sì | Sì | Sì | .emf |
@@ -99,7 +99,7 @@ Advanced eDiscovery supporta molti tipi di file a diversi livelli. I tipi di fil
 
 ## <a name="microsoft-excel"></a>Microsoft Excel
 
-| Tipo mime | Identificazione del file | Estrazione dei metadati | Estrazione di testo | Visualizzatore nativo | Annotate viewer | Estensioni possibili |
+| Tipo mime | Identificazione file | Estrazione metadati | Estrazione di testo | Visualizzatore nativo | Visualizzatore di annotazioni | Estensioni possibili |
 |:------| :------| :------| :------| :------| :------| :------|
 |application/vnd.ms-excel | Sì | Sì | Sì | Sì | Sì | .dat; .xls |
 |application/vnd.ms-excel.sheet.binary.macroenabled.12 | Sì | Sì | Sì | Sì | No | .xlsb |
@@ -111,14 +111,14 @@ Advanced eDiscovery supporta molti tipi di file a diversi livelli. I tipi di fil
 
 ## <a name="microsoft-onenote"></a>Microsoft OneNote
 
-| Tipo mime | Identificazione del file | Estrazione dei metadati | Estrazione di testo | Visualizzatore nativo | Annotate viewer | Estensioni possibili |
+| Tipo mime | Identificazione file | Estrazione metadati | Estrazione di testo | Visualizzatore nativo | Visualizzatore di annotazioni | Estensioni possibili |
 |:------| :------| :------| :------| :------| :------| :------|
-|application/onenote | Sì | Sì | Sì | Sì | No | .one |
+|application/onenote | Sì | Sì | Sì | No | No | .one |
 ||||||||
 
 ## <a name="microsoft-powerpoint"></a>Microsoft PowerPoint
 
-| Tipo mime | Identificazione del file | Estrazione dei metadati | Estrazione di testo | Visualizzatore nativo | Annotate viewer | Estensioni possibili |
+| Tipo mime | Identificazione file | Estrazione metadati | Estrazione di testo | Visualizzatore nativo | Visualizzatore di annotazioni | Estensioni possibili |
 |:------| :------| :------| :------| :------| :------| :------|
 |application/vnd.ms-powerpoint | Sì | Sì | Sì | Sì | Sì | .pot; .pps; .ppt |
 |application/vnd.openxmlformats-officedocument.presentationml.presentation | Sì | Sì | Sì | Sì | Sì | .pptx |
@@ -128,21 +128,21 @@ Advanced eDiscovery supporta molti tipi di file a diversi livelli. I tipi di fil
 
 ## <a name="microsoft-project"></a>Microsoft Project
 
-| Tipo mime | Identificazione del file | Estrazione dei metadati | Estrazione di testo | Visualizzatore nativo | Annotate viewer | Estensioni possibili |
+| Tipo mime | Identificazione file | Estrazione metadati | Estrazione di testo | Visualizzatore nativo | Visualizzatore di annotazioni | Estensioni possibili |
 |:------| :------| :------| :------| :------| :------| :------|
 |application/vnd.ms-project | Sì | Sì | Sì | No | Sì | .mpp |
 ||||||||
 
 ## <a name="microsoft-publisher"></a>Microsoft Publisher
 
-|Tipo mime | Identificazione del file | Estrazione dei metadati | Estrazione di testo | Visualizzatore nativo | Annotate viewer | Estensioni possibili |
+|Tipo mime | Identificazione file | Estrazione metadati | Estrazione di testo | Visualizzatore nativo | Visualizzatore di annotazioni | Estensioni possibili |
 |:------| :------| :------| :------| :------| :------| :------|
 |application/x-mspublisher | Sì | Sì | Sì | Sì | Sì | .pub |
 ||||||||
 
 ## <a name="microsoft-visio"></a>Microsoft Visio
 
-| Tipo mime | Identificazione del file | Estrazione dei metadati | Estrazione di testo | Visualizzatore nativo | Annotate viewer | Estensioni possibili |
+| Tipo mime | Identificazione file | Estrazione metadati | Estrazione di testo | Visualizzatore nativo | Visualizzatore di annotazioni | Estensioni possibili |
 |:------| :------| :------| :------| :------| :------| :------|
 |application/vnd.ms-visio.drawing | Sì | Sì | Sì | Sì | No |  |
 |application/vnd.visio | Sì | Sì | Sì | Sì | Sì | .vsd |
@@ -150,7 +150,7 @@ Advanced eDiscovery supporta molti tipi di file a diversi livelli. I tipi di fil
 
 ## <a name="microsoft-word"></a>Microsoft Word
 
-| Tipo mime | Identificazione del file | Estrazione dei metadati | Estrazione di testo | Visualizzatore nativo | Annotate viewer | Estensioni possibili |
+| Tipo mime | Identificazione file | Estrazione metadati | Estrazione di testo | Visualizzatore nativo | Visualizzatore di annotazioni | Estensioni possibili |
 |:------| :------| :------| :------| :------| :------| :------|
 |application/msword | Sì | Sì | Sì | Sì | Sì | .dat; .doc |
 | application/rtf | Sì | Sì | Sì | Sì | Sì | .doc; .rtf |
@@ -162,22 +162,22 @@ Advanced eDiscovery supporta molti tipi di file a diversi livelli. I tipi di fil
 
 ## <a name="microsoft-works"></a>Microsoft Works
 
-| Tipo mime | Identificazione del file | Estrazione dei metadati | Estrazione di testo | Visualizzatore nativo | Annotate viewer | Estensioni possibili |
+| Tipo mime | Identificazione file | Estrazione metadati | Estrazione di testo | Visualizzatore nativo | Visualizzatore di annotazioni | Estensioni possibili |
 |:------| :------| :------| :------| :------| :------| :------|
 |application/vnd.ms-works-ss | Sì | Sì | No | No | No | .wps |
 |application/vnd.ms-works-wp | Sì | Sì | No | No | No | .wps |
 ||||||||
 
-## <a name="open-document-format"></a>Formato documento aperto
+## <a name="open-document-format"></a>Apri formato documento
 
-| Tipo mime | Identificazione del file | Estrazione dei metadati | Estrazione di testo | Visualizzatore nativo | Annotate viewer | Estensioni possibili |
+| Tipo mime | Identificazione file | Estrazione metadati | Estrazione di testo | Visualizzatore nativo | Visualizzatore di annotazioni | Estensioni possibili |
 |:------| :------| :------| :------| :------| :------| :------|
 |application/vnd.oasis.opendocument.text | Sì | Sì | Sì | Sì | Sì | .odt |
 ||||||||
 
 ## <a name="other"></a>Altro
 
-| Tipo mime | Identificazione del file | Estrazione dei metadati | Estrazione di testo | Visualizzatore nativo | Annotate viewer | Estensioni possibili |
+| Tipo mime | Identificazione file | Estrazione metadati | Estrazione di testo | Visualizzatore nativo | Visualizzatore di annotazioni | Estensioni possibili |
 |:------| :------| :------| :------| :------| :------| :------|
 |application/json | Sì | Sì | Sì | Sì | Sì | n/d |
 |application/vnd.ms-graph | Sì | Sì | No | No | No |  |
@@ -187,7 +187,7 @@ Advanced eDiscovery supporta molti tipi di file a diversi livelli. I tipi di fil
 
 ## <a name="plain-text"></a>Testo normale
 
-| Tipo mime | Identificazione del file | Estrazione dei metadati | Estrazione di testo | Visualizzatore nativo | Annotate viewer | Estensioni possibili |
+| Tipo mime | Identificazione file | Estrazione metadati | Estrazione di testo | Visualizzatore nativo | Visualizzatore di annotazioni | Estensioni possibili |
 |:------| :------| :------| :------| :------| :------| :------|
 |text/csv | Sì | Sì | Sì | Sì | Sì | .csv |
 |text/plain | Sì | Sì | Sì | Sì | Sì | .con; .css; .csv; .dat; .pl; .txt |
@@ -195,14 +195,14 @@ Advanced eDiscovery supporta molti tipi di file a diversi livelli. I tipi di fil
 
 ## <a name="portable-document-format"></a>PDF (Portable Document Format)
 
-| Tipo mime | Identificazione del file | Estrazione dei metadati | Estrazione di testo | Visualizzatore nativo | Annotate viewer | Estensioni possibili |
+| Tipo mime | Identificazione file | Estrazione metadati | Estrazione di testo | Visualizzatore nativo | Visualizzatore di annotazioni | Estensioni possibili |
 |:------| :------| :------| :------| :------| :------| :------|
 |application/pdf | Sì | Sì | Sì | Sì | Sì | .pdf |
 ||||||||
 
 ## <a name="word-perfect"></a>Word Perfect
 
-| Tipo mime | Identificazione del file | Estrazione dei metadati | Estrazione di testo | Visualizzatore nativo | Annotate viewer | Estensioni possibili |
+| Tipo mime | Identificazione file | Estrazione metadati | Estrazione di testo | Visualizzatore nativo | Visualizzatore di annotazioni | Estensioni possibili |
 |:------| :------| :------| :------| :------| :------| :------|
 |application/vnd.wordperfect; version=5.0 | Sì | Sì | Sì | No | No | .wpd |
 |application/vnd.wordperfect; version=5.1 | Sì | Sì | Sì | No | No | .wpd |
@@ -211,7 +211,7 @@ Advanced eDiscovery supporta molti tipi di file a diversi livelli. I tipi di fil
 
 ## <a name="word-pro"></a>Word Pro
 
-| Tipo mime | Identificazione del file | Estrazione dei metadati | Estrazione di testo | Visualizzatore nativo | Annotate viewer | Estensioni possibili |
+| Tipo mime | Identificazione file | Estrazione metadati | Estrazione di testo | Visualizzatore nativo | Visualizzatore di annotazioni | Estensioni possibili |
 |:------| :------| :------| :------| :------| :------| :------|
 |application/vnd.lotus-wordpro | Sì | Sì | No | No | No | .lwp |
 ||||||||

@@ -15,12 +15,12 @@ ms.custom:
 description: Gli amministratori delle organizzazioni autonome di Exchange Online Protection (EOP) possono imparare a creare, modificare e rimuovere gruppi di distribuzione e gruppi di sicurezza abilitati alla posta elettronica nell'interfaccia di amministrazione di Exchange (EAC) e in PowerShell di Exchange Online Protection (EOP) autonomo.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3b97e3fac0840753edada964252875a6e3a4fa04
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: b9d83f2fb59ee8f8d2d3035045ed438d5ba45851
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205055"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599570"
 ---
 # <a name="manage-groups-in-eop"></a>Gestire gruppi in Exchange Online Protection
 
@@ -43,7 +43,7 @@ Nelle organizzazioni di Exchange Online Protection (EOP) autonome senza cassette
 
 È possibile gestire i gruppi nell'interfaccia di amministrazione di Exchange (EAC) e in PowerShell EOP autonomo.
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Per aprire l'interfaccia di amministrazione di Exchange, vedere Interfaccia di amministrazione [di Exchange in EOP autonomo.](exchange-admin-center-in-exchange-online-protection-eop.md)
 
@@ -102,7 +102,7 @@ Nelle organizzazioni di Exchange Online Protection (EOP) autonome senza cassette
 
 3. Nella pagina delle proprietà del gruppo di distribuzione visualizzata fare clic su una delle schede seguenti per visualizzare o modificare le proprietà.
 
-   Al termine, scegliere **Salva**.
+   Al termine, fare clic su **Salva**.
 
 #### <a name="general"></a>Generale
 
@@ -216,7 +216,7 @@ $CurrentMemberNames += "Tyson Fawcett"
 Update-EOPDistributionGroupMember -Identity "Security Team" -Members $CurrentMemberNames
 ```
 
-Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Set-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/set-eopdistributiongroup) [e Update-EOPDistributionGroupMember](https://docs.microsoft.com/powershell/module/exchange/update-eopdistributiongroupmember).
+Per informazioni dettagliate sulla sintassi e sui parametri, vedere [Set-EOPDistributionGroup](/powershell/module/exchange/set-eopdistributiongroup) [e Update-EOPDistributionGroupMember](/powershell/module/exchange/update-eopdistributiongroupmember).
 
 ### <a name="remove-a-group-using-remote-windows-powershell"></a>Rimuovere un gruppo tramite l'Windows PowerShell
 
@@ -226,7 +226,7 @@ In questo esempio viene rimosso il gruppo di distribuzione denominato IT Adminis
 Remove-EOPDistributionGroup -Identity "IT Administrators"
 ```
 
-Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Remove-EOPDistributionGroup](https://docs.microsoft.com/powershell/module/exchange/remove-eopdistributiongroup).
+Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Remove-EOPDistributionGroup](/powershell/module/exchange/remove-eopdistributiongroup).
 
 ## <a name="how-do-you-know-these-procedures-worked"></a>Come verificare se queste procedure hanno avuto esito positivo?
 

@@ -20,12 +20,12 @@ description: Trovare e usare i report per Microsoft Defender per Office 365 nel 
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 28978dbca3f9e4039b4f8c21c49a2963802afa54
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 0b3e1ddf48ccd74b36c594d232c6761b921dee8c
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205604"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599900"
 ---
 # <a name="view-defender-for-office-365-reports-in-the-reports-dashboard-in-the-security--compliance-center"></a>Visualizzare i report di Defender per Office 365 nel dashboard Report nel Centro sicurezza & conformità
 
@@ -282,8 +282,8 @@ Il **report di protezione dalle** minacce URL include due visualizzazioni aggreg
 - **Azione di protezione clic URL**: Mostra il numero di clic sull'URL da parte degli utenti nell'organizzazione e i risultati del clic:
 
   - **Bloccato** (all'utente è stato impedito di passare all'URL)
-  - **Bloccato e su cui è stato fatto clic**
-  - **Fatto clic durante l'analisi**
+  - **Bloccato e su cui è stato fatto clic** (l'utente ha scelto di continuare a passare all'URL)
+  - **Fatto clic durante l'analisi** (l'utente ha fatto clic sul collegamento prima del completamento dell'analisi)
 
   Un clic indica che l'utente ha fatto clic attraverso la pagina di blocco al sito Web dannoso (gli amministratori possono disabilitare il clic nei criteri collegamenti sicuri).
 
@@ -350,7 +350,7 @@ Per visualizzare e utilizzare i report descritti in questo articolo, è necessar
 - **Gestione organizzazione**
 - **Amministratore della sicurezza**
 - **Lettore sicurezza**
-- **Lettore globale**
+- **Ruolo con autorizzazioni di lettura globali**
 
 Per altre informazioni, vedere [Autorizzazioni nel Centro sicurezza e conformità](permissions-in-the-security-and-compliance-center.md).
 

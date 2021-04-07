@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 1460deef11a87044530c54c8b10637284829a0cd
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6dfa22b2afb33c318eae8937888b5b75a1742938
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206682"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599465"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Analisi e risposta automatizzate (AIR) in Microsoft Defender per Office 365
 
@@ -81,11 +81,9 @@ Le funzionalità AIR sono incluse in [Microsoft Defender per Office 365,](defend
 - [Criteri antimalware](protect-against-threats.md#part-1---anti-malware-protection)
 - [Protezione antiphishing](protect-against-threats.md#part-2---anti-phishing-protection)
 - [Protezione dalla posta indesiderata](protect-against-threats.md#part-3---anti-spam-protection)
-- [Protezione antiphishing](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-2---anti-phishing-protection)
-- [Protezione dalla posta indesiderata](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-3---anti-spam-protection)
-- [Collegamenti sicuri e allegati sicuri](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
-- [Allegati sicuri per SharePoint, OneDrive e Microsoft Teams](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#part-5---verify-atp-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
-- [Eliminazione automatica zero ore per la posta elettronica](https://docs.microsoft.com/microsoft-365/security/office-365-security/protect-against-threats#zero-hour-auto-purge-for-email-in-eop)
+- [Collegamenti sicuri e allegati sicuri](protect-against-threats.md#part-4---protection-from-malicious-urls-and-files-safe-links-and-safe-attachments-in-defender-for-office-365)
+- [Allegati sicuri per SharePoint, OneDrive e Microsoft Teams](protect-against-threats.md#part-5---verify-safe-attachments-for-sharepoint-onedrive-and-microsoft-teams-is-turned-on)
+- [Eliminazione automatica zero ore per la posta elettronica](protect-against-threats.md#zero-hour-auto-purge-for-email-in-eop)
 
 Inoltre, assicurarsi di esaminare i criteri di avviso [dell'organizzazione,](../../compliance/alert-policies.md)in particolare i criteri [predefiniti nella categoria Gestione delle minacce.](../../compliance/alert-policies.md#default-alert-policies)
 
@@ -94,7 +92,7 @@ Inoltre, assicurarsi di esaminare i criteri di avviso [dell'organizzazione,](../
 Microsoft 365 fornisce molti criteri di avviso incorporati che consentono di identificare l'abuso delle autorizzazioni di amministratore di Exchange, l'attività di malware, potenziali minacce esterne e interne e rischi di governance delle informazioni. Diversi criteri [di avviso predefiniti possono](../../compliance/alert-policies.md#default-alert-policies) attivare indagini automatizzate. Nella tabella seguente vengono descritti gli avvisi che attivano indagini automatizzate, la gravità nel Centro sicurezza Microsoft 365 e il modo in cui vengono generati:
 
 |Avviso|Gravità|Modalità di generazione dell'avviso|
-|:---|:---|:---|
+|---|---|---|
 |È stato rilevato un clic sull'URL potenzialmente dannoso|**High**|Questo avviso viene generato quando si verifica una delle condizioni seguenti: <ul><li>Un utente protetto da [collegamenti sicuri nell'organizzazione](safe-links.md) fa clic su un collegamento dannoso</li><li>Le modifiche al verdetto per gli URL sono identificate da Microsoft Defender per Office 365</li><li>Gli utenti sostituiscono le pagine di avviso collegamenti sicuri (in base al criterio [Collegamenti sicuri dell'organizzazione).](set-up-safe-links-policies.md)</li></ul> <p> Per ulteriori informazioni sugli eventi che attivano questo avviso, vedere [Set up Safe Links policies.](set-up-safe-links-policies.md)|
 |Un messaggio di posta elettronica viene segnalato da un utente come malware o phish|**Informativo**|Questo avviso viene generato quando gli utenti dell'organizzazione segnalano i messaggi come posta elettronica di phishing utilizzando il componente aggiuntivo Segnala messaggio o Segnala [phishing](enable-the-report-phish-add-in.md). [](enable-the-report-message-add-in.md)|
 |I messaggi di posta elettronica contenenti malware vengono rimossi dopo il recapito|**Informativo**|Questo avviso viene generato quando i messaggi di posta elettronica contenenti malware vengono recapitati alle cassette postali dell'organizzazione. Se si verifica questo evento, Microsoft rimuove i messaggi infetti dalle cassette postali di Exchange Online utilizzando [l'eliminazione automatica di zero ore.](zero-hour-auto-purge.md)|
@@ -113,7 +111,7 @@ Le autorizzazioni vengono concesse tramite determinati ruoli, ad esempio quelli 
 |Attività|Ruolo(i) obbligatorio|
 |---|---|
 |Configurare le funzionalità AIR|Uno dei ruoli seguenti: <ul><li>Amministratore globale</li><li>Amministratore della sicurezza</li></ul> <p> Questi ruoli possono essere assegnati in [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o nel Centro sicurezza & [conformità](permissions-in-the-security-and-compliance-center.md).|
-|Avviare un'indagine automatizzata <p> --- o --- <p> Approvare o rifiutare le azioni consigliate|Uno dei ruoli seguenti, assegnato in [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o nel Centro sicurezza & [conformità](permissions-in-the-security-and-compliance-center.md): <ul><li>Amministratore globale</li><li>Amministratore della sicurezza</li><li>Operatore della sicurezza</li><li>Ruolo con autorizzazioni di lettura per la sicurezza <br> --- e --- </li><li>Ricerca ed eliminazione (questo ruolo viene assegnato solo nel [Centro sicurezza & conformità](permissions-in-the-security-and-compliance-center.md). Potrebbe essere necessario creare un nuovo gruppo di ruoli e aggiungere il ruolo Di ricerca ed eliminazione a tale nuovo gruppo di ruoli.</li></ul>|
+|Avviare un’indagine automatica <p> --- o --- <p> Approvare o rifiutare le azioni consigliate|Uno dei ruoli seguenti, assegnato in [Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles) o nel Centro sicurezza & [conformità](permissions-in-the-security-and-compliance-center.md): <ul><li>Amministratore globale</li><li>Amministratore della sicurezza</li><li>Operatore della sicurezza</li><li>Ruolo con autorizzazioni di lettura per la sicurezza <br> --- e --- </li><li>Ricerca ed eliminazione (questo ruolo viene assegnato solo nel [Centro sicurezza & conformità](permissions-in-the-security-and-compliance-center.md). Potrebbe essere necessario creare un nuovo gruppo di ruoli e aggiungere il ruolo Di ricerca ed eliminazione a tale nuovo gruppo di ruoli.</li></ul>|
 
 ## <a name="required-licenses"></a>Licenze necessarie
 
@@ -122,7 +120,6 @@ Le autorizzazioni vengono concesse tramite determinati ruoli, ad esempio quelli 
 - Amministratori della sicurezza (inclusi gli amministratori globali)
 - Team delle operazioni di sicurezza dell'organizzazione (inclusi i lettori di sicurezza e quelli con **il ruolo Di ricerca ed eliminazione)**
 - Utenti finali
-
 
 ## <a name="changes-are-coming-soon-in-your-security-center"></a>Le modifiche saranno presto disponibili nel centro sicurezza
 
@@ -152,9 +149,9 @@ Nella tabella seguente sono elencate le modifiche e i miglioramenti apportati a 
 |**Scheda Entità**|La **scheda Entità** ha uno stile di tabulazione che include una visualizzazione di riepilogo e la possibilità di filtrare in base al tipo di entità. La **scheda Entità** ora include un'opzione **Vai** a ricerca oltre all'opzione Apri **in Esplora** risorse. Ora puoi usare [Esplora](threat-explorer.md) minacce o [ricerca avanzata](../defender-endpoint/advanced-hunting-overview.md) per trovare entità e minacce e filtrare i risultati.|
 |**Scheda** Azioni|La scheda **Azioni** aggiornata ora include una scheda **Azioni in** sospeso e una **scheda Cronologia** azioni. Le azioni possono essere approvate (o rifiutate) in un riquadro laterale che viene aperto quando si seleziona un'azione in sospeso.|
 |**Scheda** Evidenza|Una nuova **scheda Evidenza** mostra i risultati chiave dell'entità correlati alle azioni. Le azioni correlate a ogni prova possono essere approvate (o rifiutate) in un riquadro laterale che si apre quando si seleziona un'azione in sospeso.|
-|**Centro notifiche**|Il centro **notifiche aggiornato** ( ) riunisce le azioni in sospeso e [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) completate tra posta elettronica, dispositivi e identità. Per altre informazioni, vedi Centro notifiche. Per altre informazioni, vedi [Il centro notifiche.](https://docs.microsoft.com/microsoft-365/security/defender/mtp-action-center)
-|**Pagina Eventi imprevisti**|La **pagina Eventi** imprevisti ora correla più indagini per fornire una migliore visione consolidata delle indagini. ([Ulteriori informazioni sugli eventi imprevisti](https://docs.microsoft.com/microsoft-365/security/defender/incidents-overview). )
-
+|**Centro notifiche**|Il centro **notifiche aggiornato** ( ) riunisce le azioni in sospeso e [https://security.microsoft.com/action-center](https://security.microsoft.com/action-center) completate tra posta elettronica, dispositivi e identità. Per altre informazioni, vedi Centro notifiche. Per altre informazioni, vedi [Il centro notifiche.](../defender/m365d-action-center.md)|
+|**Pagina Eventi imprevisti**|La **pagina Eventi** imprevisti ora correla più indagini per fornire una migliore visione consolidata delle indagini. ([Ulteriori informazioni sugli eventi imprevisti](../defender/incidents-overview.md). )|
+|
 
 ## <a name="next-steps"></a>Passaggi successivi
 

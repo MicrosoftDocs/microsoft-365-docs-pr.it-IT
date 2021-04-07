@@ -18,12 +18,12 @@ ms.custom:
 description: Panoramica dell'integrazione del server SiEM (Security Information and Event Management) con le applicazioni e i servizi cloud di Microsoft 365
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: d060b3c12304f6a23ad9421bb43e54c4cd561af5
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: bea8aa3914da4b813f3928eddbb6df9c98ef6605
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206822"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599948"
 ---
 # <a name="security-information-and-event-management-siem-server-integration-with-microsoft-365-services-and-applications"></a>Integrazione del server SiEM (Security Information and Event Management) con applicazioni e servizi di Microsoft 365
 
@@ -43,7 +43,7 @@ L'organizzazione utilizza o pianifica di ottenere un server SiEM (Security Infor
 
 ## <a name="do-i-need-a-siem-server"></a>È necessario un server SIEM?
 
-La necessità di un server SIEM dipende da molti fattori, ad esempio i requisiti di sicurezza dell'organizzazione e la posizione dei dati. Microsoft 365 include un'ampia gamma di funzionalità di sicurezza che soddisfano le esigenze di sicurezza di molte organizzazioni senza server aggiuntivi, ad esempio un server SIEM. Alcune organizzazioni hanno circostanze particolari che richiedono l'utilizzo di un server SIEM. Ecco alcuni esempi:
+La necessità di un server SIEM dipende da molti fattori, ad esempio i requisiti di sicurezza dell'organizzazione e la posizione dei dati. Microsoft 365 include un'ampia gamma di funzionalità di sicurezza che soddisfano le esigenze di sicurezza di molte organizzazioni senza server aggiuntivi, ad esempio un server SIEM. Alcune organizzazioni hanno circostanze particolari che richiedono l'utilizzo di un server SIEM. Di seguito vengono descritti alcuni esempi:
 
 - *Fabrikam* ha alcuni contenuti e applicazioni in locale e alcuni nel cloud (hanno una distribuzione cloud ibrida). Per ottenere report sulla sicurezza in tutto il contenuto e le applicazioni, Fabrikam ha implementato un server SIEM.
 
@@ -58,7 +58,7 @@ Un server SIEM può ricevere dati da un'ampia gamma di applicazioni e servizi di
 |Servizio o applicazione Microsoft 365|Input/metodi del server SIEM|Risorse per approfondire|
 |---|---|---|
 |[Microsoft Defender per Office 365](defender-for-office-365.md)|Log di controllo|[Integrazione SIEM con Microsoft Defender per Office 365](siem-integration-with-office-365-ti.md)|
-|[Microsoft Defender per endpoint](https://docs.microsoft.com/windows/security/threat-protection/)|Endpoint HTTPS ospitato in Azure <p> API REST|[Pull degli avvisi agli strumenti SIEM](../defender-endpoint/configure-siem.md)|
+|[Microsoft Defender per endpoint](/windows/security/threat-protection/)|Endpoint HTTPS ospitato in Azure <p> API REST|[Pull degli avvisi agli strumenti SIEM](../defender-endpoint/configure-siem.md)|
 |[Microsoft Cloud App Security](/cloud-app-security/what-is-cloud-app-security)|Integrazione dei log|[Integrazione SIEM con Microsoft Cloud App Security](/cloud-app-security/siem)|
 |
 

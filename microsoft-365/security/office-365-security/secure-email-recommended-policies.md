@@ -20,19 +20,18 @@ ms.collection:
 - m365solution-identitydevice
 - m365solution-scenario
 ms.technology: mdo
-ms.openlocfilehash: 5a705444c81d884c10b99e5f0d2bfbb9e4f057e2
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: c5f5837f4e4069a67bc080178fefd10bd2a08629
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206552"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599852"
 ---
 # <a name="policy-recommendations-for-securing-email"></a>Criteri consigliati per la protezione della posta elettronica
 
 **Si applica a**
 - [Exchange Online Protection](exchange-online-protection-overview.md)
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
-
 
 In questo articolo viene descritto come implementare i criteri di identità e accesso ai dispositivi consigliati per proteggere i client di posta elettronica e di posta elettronica dell'organizzazione che supportano l'autenticazione moderna e l'accesso condizionale. Queste indicazioni si basano sui [criteri di identità](identity-access-policies.md) e accesso ai dispositivi comuni e includono anche alcuni suggerimenti aggiuntivi.
 
@@ -103,7 +102,7 @@ Ecco la procedura:
 
 Per garantire che gli utenti di dispositivi iOS e Android possano accedere solo ai contenuti aziendali o dell'istituto di istruzione utilizzando Outlook per iOS e Android, è necessario un criterio di accesso condizionale destinato a tali potenziali utenti.
 
-Vedere la procedura per configurare questo criterio in [Gestire l'accesso alla collaborazione di messaggistica tramite Outlook per iOS e Android.]( https://docs.microsoft.com/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access)
+Vedere la procedura per configurare questo criterio in [Gestire l'accesso alla collaborazione di messaggistica tramite Outlook per iOS e Android.](/mem/intune/apps/app-configuration-policies-outlook#apply-conditional-access)
 
 ## <a name="set-up-message-encryption"></a>Configurare la crittografia dei messaggi
 

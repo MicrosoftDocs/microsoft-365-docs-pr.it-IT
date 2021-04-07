@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: I clienti di Microsoft Defender per Office 365 E5 e ATP P1 e ATP P2 possono ora ottenere una visualizzazione a 360 gradi di ogni messaggio di posta elettronica con la pagina entità di posta elettronica.
-ms.openlocfilehash: 0fbf3843aa6e6cef1e748d3b71a68a42efd6fc24
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 6d2777113e7e9f9ce760dab3b83252eceab520ff
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205314"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599488"
 ---
 # <a name="the-email-entity-page"></a>Pagina Entità posta elettronica
 
@@ -30,16 +30,16 @@ ms.locfileid: "51205314"
 - [Usare le schede della pagina dell'entità di posta elettronica](#use-email-entity-page-tabs)
 - [Novità della pagina dell'entità di posta elettronica](#new-to-the-email-entity-page)
 
-Gli amministratori di Microsoft Defender per Office 365 (o MDO) E5 e MDO P1 e P2 hanno una visualizzazione a 360 gradi della posta elettronica usando la pagina Entità di posta **elettronica**. Questa pagina di posta elettronica di accesso è stata creata per migliorare le informazioni recapitate nel riquadro a comparsa ["Dettagli posta elettronica" di Threat Explorer.](https://docs.microsoft.com/microsoft-365/security/office-365-security/threat-explorer-views)
+Gli amministratori di Microsoft Defender per Office 365 (o MDO) E5 e MDO P1 e P2 hanno una visualizzazione a 360 gradi della posta elettronica usando la pagina Entità di posta **elettronica**. Questa pagina di posta elettronica di accesso è stata creata per migliorare le informazioni recapitate nel riquadro a comparsa ["Dettagli posta elettronica" di Threat Explorer.](threat-explorer-views.md)
 
 ## <a name="reach-the-email-entity-page"></a>Raggiungere la pagina dell'entità di posta elettronica
 
 Il Centro sicurezza e conformità di Office esistente (protection.office.com) o il nuovo Centro sicurezza Microsoft 365 (security.microsoft.com) consentono di visualizzare e usare la pagina dell'entità di posta elettronica.
 
-|Centro  |URL  |Navigazione  |
-|---------|---------|---------|
-|Sicurezza e conformità |protection.office.com | Threat Management > Explorer   |
-|Centro sicurezza Microsoft 365 |security.microsoft.com | Email & Collaboration > Explorer |
+|Centro|URL|Navigazione|
+|---|---|---|
+|Sicurezza e conformità |protection.office.com|Esplora gestione \> delle minacce|
+|Centro sicurezza Microsoft 365 |security.microsoft.com|Esplora & posta \> elettronica|
 
 In Esplora minacce seleziona l'oggetto di un messaggio di posta elettronica che stai analizzando. Nella parte superiore del riquadro a comparsa della posta elettronica verrà visualizzata una barra d'oro. Questo invito alla nuova pagina, legge "Prova la nostra nuova pagina dell'entità di posta elettronica con dati arricchiti...". Selezionare questa opzione per visualizzare la nuova pagina.
 
@@ -81,22 +81,23 @@ Le schede nella parte superiore della pagina dell'entità consentono di analizza
 Esistono nuove funzionalità disponibili con questa pagina dell'entità di posta elettronica. Ecco l'elenco.
 
 ### <a name="email-preview-for-cloud-mailboxes"></a>Anteprima della posta elettronica per le cassette postali cloud
+
 Gli amministratori possono visualizzare in anteprima i messaggi di posta elettronica nelle cassette postali ***cloud,*** se i messaggi sono ancora presenti nel cloud. In caso di eliminazione recisa (da parte di un amministratore o di un utente) o ZAP (per la quarantena), i messaggi di posta elettronica non sono più presenti nella posizione cloud. In tal caso, gli amministratori non saranno in grado di visualizzare in anteprima i messaggi di posta elettronica specifici. I messaggi di posta elettronica che sono stati eliminati o in cui il recapito non è riuscito, non sono mai stati effettivamente resi nella cassetta postale. Di conseguenza, gli amministratori non saranno in grado di visualizzare in anteprima i messaggi di posta elettronica.
 
 > [!WARNING]
->L'anteprima dei messaggi di posta elettronica richiede un ruolo speciale denominato ***Anteprima** _ da assegnare agli amministratori. È possibile aggiungere questo ruolo andando a _ *Autorizzazioni & ruoli** > **Ruoli** di collaborazione & posta elettronica in *security.microsoft.com* o **Autorizzazioni** in *protection.office.com*. Aggiungere il ***ruolo Anteprima*** a uno qualsiasi dei gruppi di ruoli o una copia di un gruppo di ruoli che consente agli amministratori dell'organizzazione di lavorare in Esplora minacce.
+> L'anteprima dei messaggi di posta elettronica richiede un ruolo speciale denominato ***Anteprima** _ da assegnare agli amministratori. È possibile aggiungere questo ruolo andando a _ *Autorizzazioni & ruoli** > **Ruoli** di collaborazione & posta elettronica in *security.microsoft.com* o **Autorizzazioni** in *protection.office.com*. Aggiungere il ***ruolo Anteprima*** a uno qualsiasi dei gruppi di ruoli o una copia di un gruppo di ruoli che consente agli amministratori dell'organizzazione di lavorare in Esplora minacce.
 
 ### <a name="detonation-details"></a>Dettagli detonazione
 
 Questi dettagli sono specifici per gli url e gli allegati di posta elettronica.
 
 Gli utenti potranno visualizzare dettagli di detonazione arricchiti per allegati o collegamenti ipertestuali dannosi noti trovati nelle proprie cassette postali, tra cui catena di detonazione, riepilogo detonazione, screenshot e dettagli sul comportamento osservato per aiutare i clienti a capire perché l'allegato o l'URL è stato ritenuto dannoso e detonato.
- 
+
 - *Catena di detonazione:* una detonazione di un singolo file o URL può attivare più detonazioni. La catena di detonazione tiene traccia del percorso delle detonazioni, incluso il file o l'URL dannoso originale che ha causato il verdetto, e tutti gli altri file o URL emersi dalla detonazione. Questi URL o file allegati potrebbero non essere direttamente presenti nel messaggio di posta elettronica, ma l'inclusione di tale analisi è importante per determinare perché il file o l'URL è stato trovato dannoso.
 - *Riepilogo detonazione*: fornisce informazioni su:
-    - Intervallo di tempo di detonazione.
-    - Verdetto del file allegato o dell'URL.
-    - Informazioni correlate (numero di file, URL, IP o domini), che sono altre entità esaminate durante la detonazione.
+  - Intervallo di tempo di detonazione.
+  - Verdetto del file allegato o dell'URL.
+  - Informazioni correlate (numero di file, URL, IP o domini), che sono altre entità esaminate durante la detonazione.
 - *Schermata di detonazione:* mostra gli screenshot emersi durante il processo di detonazione.
 - *Dettagli di detonazione*: questi sono i dettagli esatti del comportamento di ogni processo che ha avuto luogo durante la detonazione.
 
@@ -111,45 +112,45 @@ Gli utenti potranno visualizzare dettagli di detonazione arricchiti per allegati
 *Dettagli posta elettronica*: dettagli necessari per una conoscenza approfondita della posta elettronica disponibile nella *scheda* Analisi.
 
 - *Regole di trasporto di Exchange (ETR* o regole del flusso di posta): queste regole vengono applicate a un messaggio a livello di trasporto e hanno la precedenza sui verdetti di phish e posta indesiderata. Questi possono essere creati e modificati solo nell'interfaccia di amministrazione di Exchange, ma se un ETR si applica a un messaggio, il nome ETR e il GUID verranno visualizzati qui. Informazioni preziose a scopo di monitoraggio.
-    
+
 - *Sostituzioni* di sistema: si tratta di un mezzo per fare eccezioni al percorso di recapito destinato a un messaggio ignorando il percorso di recapito fornito dal sistema (in base alla tecnologia di rilevamento e minaccia).
-    
+
 - *Regola cassetta postale indesiderata:* la regola di posta indesiderata è nascosta la regola della posta in arrivo abilitata per impostazione predefinita in ogni cassetta postale.
-    - Quando la regola di posta indesiderata è abilitata nella cassetta postale, Exchange Online Protection (EOP) è in grado di spostare i messaggi in Posta indesiderata in base ad alcuni criteri. Lo spostamento può essere basato sull'azione verdetto filtro posta indesiderata Sposta il messaggio nella cartella Posta indesiderata *o* nell'elenco Mittenti bloccati nella cassetta postale. La disabilitazione della regola di posta indesiderata impedisce il recapito dei messaggi nella cartella Posta indesiderata in base *all'elenco Mittenti attendibili* della cassetta postale.
-    - Quando la regola  di posta indesiderata è disabilitata nella cassetta postale, EOP non può spostare i messaggi nella cartella Posta indesiderata in base all'azione verdetto filtro posta indesiderata Spostare il messaggio nella cartella Posta indesiderata *o* nella raccolta dell'elenco di indirizzi attendibili nella cassetta postale.
-    
+  - Quando la regola di posta indesiderata è abilitata nella cassetta postale, Exchange Online Protection (EOP) è in grado di spostare i messaggi in Posta indesiderata in base ad alcuni criteri. Lo spostamento può essere basato sull'azione verdetto filtro posta indesiderata Sposta il messaggio nella cartella Posta indesiderata *o* nell'elenco Mittenti bloccati nella cassetta postale. La disabilitazione della regola di posta indesiderata impedisce il recapito dei messaggi nella cartella Posta indesiderata in base *all'elenco Mittenti attendibili* della cassetta postale.
+  - Quando la regola  di posta indesiderata è disabilitata nella cassetta postale, EOP non può spostare i messaggi nella cartella Posta indesiderata in base all'azione verdetto filtro posta indesiderata Spostare il messaggio nella cartella Posta indesiderata *o* nella raccolta dell'elenco di indirizzi attendibili nella cassetta postale.
+
 - *Livello BCL (Bulk Compliant Level):* livello di reclamo in blocco (BCL) del messaggio. Un livello di probabilità di posta indesiderata più elevato indica che è più probabile che un messaggio di posta elettronica in blocco generi reclami (il risultato naturale se è probabile che il messaggio di posta elettronica sia posta indesiderata).
-    
+
 - *Livello di probabilità di posta indesiderata (SCL):* livello di probabilità di posta indesiderata del messaggio. Più alto è il valore, maggiore è la probabilità che si tratti di un messaggio di posta indesiderata.
 
 - *Nome dominio*: è il nome di dominio del mittente.
-    
+
 - *Proprietario dominio*: Specifica il proprietario del dominio di invio.
-    
+
 - *Domain Location*: Specifica la posizione del dominio di invio.
-    
+
 - *Domain Created Date*: Specifica la data di creazione del dominio di invio. Un dominio appena creato è qualcosa di cui potresti essere cauto se altri segnali indicano un comportamento sospetto.
 
 *Autenticazione della* posta elettronica: i metodi di autenticazione della posta elettronica utilizzati da Microsoft 365 includono SPF, DKIM e DMARC.
 
 - Sender Policy Framework (**SPF**): Descrive i risultati del controllo SPF per il messaggio. I valori possibili possono essere:
-    - Pass (indirizzo IP): il controllo SPF per il messaggio passato e include l'indirizzo IP del mittente. Il client è autorizzato a inviare o inoltrare la posta elettronica per conto del dominio del mittente.
-    - Fail (indirizzo IP): il controllo SPF per il messaggio non è riuscito e include l'indirizzo IP del mittente. Talvolta viene definito controllo non riuscito.
-    - Softfail (motivo): il record SPF ha designato l'host come non autorizzato a inviare ma è in transizione.
-    - Neutro: il record SPF indica esplicitamente che non afferma se l'indirizzo IP è autorizzato a inviare.
-    - Nessuno: il dominio non dispone di un record SPF o il record SPF non restituisce un risultato.
-    - Temperror: si è verificato un errore temporaneo. Ad esempio, un errore DNS. Il medesimo controllo potrebbe avere esito positivo in seguito.
-    - Permerror: si è verificato un errore permanente. Ad esempio, il dominio presenta un record SPF con formato non valido.
+  - Pass (indirizzo IP): il controllo SPF per il messaggio passato e include l'indirizzo IP del mittente. Il client è autorizzato a inviare o inoltrare la posta elettronica per conto del dominio del mittente.
+  - Fail (indirizzo IP): il controllo SPF per il messaggio non è riuscito e include l'indirizzo IP del mittente. Talvolta viene definito controllo non riuscito.
+  - Softfail (motivo): il record SPF ha designato l'host come non autorizzato a inviare ma è in transizione.
+  - Neutro: il record SPF indica esplicitamente che non afferma se l'indirizzo IP è autorizzato a inviare.
+  - Nessuno: il dominio non dispone di un record SPF o il record SPF non restituisce un risultato.
+  - Temperror: si è verificato un errore temporaneo. Ad esempio, un errore DNS. Il medesimo controllo potrebbe avere esito positivo in seguito.
+  - Permerror: si è verificato un errore permanente. Ad esempio, il dominio presenta un record SPF con formato non valido.
 
 - DomainKeys Identified Mail (**DKIM**):
-    - Pass: indica il controllo DKIM per il messaggio passato.
-    - Fail (motivo): indica il controllo DKIM per il messaggio non riuscito e il motivo. ad esempio se il messaggio non è stato firmato o se la firma non è stata verificata.
-    - Nessuno: indica che il messaggio non è stato firmato. Ciò potrebbe indicare o meno che il dominio dispone di un record DKIM o che il record DKIM non restituisce un risultato, solo che il messaggio non è stato firmato.
+  - Pass: indica il controllo DKIM per il messaggio passato.
+  - Fail (motivo): indica il controllo DKIM per il messaggio non riuscito e il motivo. ad esempio se il messaggio non è stato firmato o se la firma non è stata verificata.
+  - Nessuno: indica che il messaggio non è stato firmato. Ciò potrebbe indicare o meno che il dominio dispone di un record DKIM o che il record DKIM non restituisce un risultato, solo che il messaggio non è stato firmato.
 
 - Autenticazione, creazione di report e conformità dei messaggi basati su dominio (**DMARC**):
-    - Pass: indica il controllo DMARC per il messaggio passato.
-    - Fail: indica che il controllo DMARC per il messaggio non è riuscito.
-    - Bestguesspass: indica che non esiste alcun record TXT DMARC per il dominio, ma se ne esistesse uno, il controllo DMARC per il messaggio sarebbe stato superato.
-    - Nessuno: indica che non esiste alcun record TXT DMARC per il dominio di invio in DNS.
+  - Pass: indica il controllo DMARC per il messaggio passato.
+  - Fail: indica che il controllo DMARC per il messaggio non è riuscito.
+  - Bestguesspass: indica che non esiste alcun record TXT DMARC per il dominio, ma se ne esistesse uno, il controllo DMARC per il messaggio sarebbe stato superato.
+  - Nessuno: indica che non esiste alcun record TXT DMARC per il dominio di invio in DNS.
 
 *Autenticazione composita:* si tratta di un valore utilizzato da Microsoft 365 per combinare l'autenticazione di posta elettronica come SPF, DKIM e DMARC, per determinare se il messaggio è autentico. Utilizza il *dominio From:* della posta come base di valutazione.

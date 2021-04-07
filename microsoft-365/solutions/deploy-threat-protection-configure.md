@@ -1,12 +1,13 @@
 ---
 title: Passaggi per configurare le funzionalità di protezione dalle minacce in Microsoft 365
-description: Informazioni su come distribuire servizi e funzionalità di protezione dalle minacce in Microsoft 365 E5.
+description: Usare questo articolo come guida per l'implementazione della soluzione di protezione dalle minacce. Informazioni su come distribuire servizi e funzionalità di protezione dalle minacce in Microsoft 365 E5.
+keywords: sicurezza, configurazione, configurazione, Microsoft 365 E5, protezione avanzata dalle minacce
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
 ms.audience: ITPro
 audience: Admin
-ms.topic: article
+ms.topic: how-to
 ms.prod: m365-security
 ms.technology: m365d
 localization_priority: Normal
@@ -16,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: bd7c98f5888f8dc93a8aa341b186ea744d5b2882
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 925c62e1c6201c54fcf09d0dd98b06906d9e057f
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199934"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599864"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Configurare le funzionalità di protezione dalle minacce in Microsoft 365
 
@@ -30,7 +31,7 @@ Seguire questa procedura per configurare la protezione dalle minacce in Microsof
 
 ## <a name="step-1-set-up-multi-factor-authentication-and-conditional-access-policies"></a>Passaggio 1: Configurare l'autenticazione a più fattori e i criteri di accesso condizionale
 
-[L'autenticazione a più](/azure/active-directory/authentication/concept-mfa-howitworks) fattori richiede agli utenti di verificare la propria identità con una chiamata telefonica o un'app di autenticazione. [I criteri di accesso](/azure/active-directory/conditional-access/overview) condizionale definiscono determinati requisiti che devono essere soddisfatti per consentire agli utenti di accedere alle app e ai dati in Microsoft 365. I criteri MFA e Accesso condizionale funzionano insieme per proteggere l'organizzazione. Ad esempio, se un utente tenta di accedere da un dispositivo mobile utilizzando un account non abilitato per la MFA e un criterio di accesso condizionale richiede che la MFA sia attiva, all'utente non sarà consentito l'accesso.  
+[L'autenticazione a più](/azure/active-directory/authentication/concept-mfa-howitworks) fattori richiede agli utenti di verificare la propria identità con una chiamata telefonica o un'app di autenticazione. [I criteri di accesso](/azure/active-directory/conditional-access/overview) condizionale definiscono determinati requisiti che devono essere soddisfatti per consentire agli utenti di accedere alle app e ai dati in Microsoft 365. I criteri MFA e Accesso condizionale funzionano insieme per proteggere l'organizzazione. Ad esempio, se un utente tenta di accedere da un dispositivo mobile utilizzando un account non abilitato per la MFA e un criterio di accesso condizionale richiede che l'autenticazione a più fattori sia attiva, l'utente non può eseguire l'accesso.  
 
 Microsoft ha testato e consigliato un set specifico di accesso condizionale e criteri correlati per proteggere l'accesso a tutte le applicazioni SaaS, in particolare Microsoft 365. I criteri sono consigliati per la protezione di base, sensibile e altamente regolamentata. Iniziare implementando i criteri per la protezione di base. 
 
@@ -53,7 +54,7 @@ Microsoft ha testato e consigliato un set specifico di accesso condizionale e cr
 
 ## <a name="step-2-configure-microsoft-defender-for-identity"></a>Passaggio 2: Configurare Microsoft Defender per l'identità
 
-[Microsoft Defender for Identity](/azure-advanced-threat-protection/what-is-atp) è una soluzione di sicurezza basata sul cloud che funziona con i segnali di Servizi di dominio Active Directory (AD DS) locali per identificare, rilevare e analizzare minacce avanzate, identità compromesse e azioni insider dannose indirizzate all'organizzazione.
+[Microsoft Defender for Identity](/defender-for-identity/what-is) è una soluzione di sicurezza basata sul cloud che funziona con i segnali di Servizi di dominio Active Directory (AD DS) locali per identificare, rilevare e analizzare minacce avanzate, identità compromesse e azioni insider dannose indirizzate all'organizzazione.
 
 Microsoft Defender for Identity consente agli analisti delle operazioni di sicurezza (SecOps) e ai professionisti della sicurezza che faticano a rilevare attacchi avanzati in ambienti ibridi per:
 - Monitorare gli utenti, il comportamento delle entità e le attività con l'analisi basata sull'apprendimento.
@@ -79,7 +80,7 @@ Microsoft Defender for Identity consente agli analisti delle operazioni di sicur
 
 [Microsoft 365 Defender](../security/defender/microsoft-365-defender.md) combina i segnali e orchestra le funzionalità in un'unica soluzione. Con la soluzione integrata Microsoft 365 Defender, i professionisti della sicurezza possono unire i segnali di minaccia che ognuno di questi prodotti riceve e determinare l'ambito e l'impatto completi della minaccia; come è entrato nell'ambiente, su cosa ne è interessato e su come attualmente influisce sull'organizzazione. Microsoft 365 Defender adotta un'azione automatica per impedire o arrestare l'attacco e auto-sanare le cassette postali, gli endpoint e le identità degli utenti interessati.
 
-Microsoft 365 Defender unifica avvisi, incidenti, indagini e risposte automatizzate e ricerca avanzata tra i carichi di lavoro (Microsoft Defender for Identity, Microsoft Defender per Office 365, Microsoft Defender for Endpoint e Microsoft Cloud App Security) in un unico riquadro di esperienza di vetro. Dopo aver configurato uno o più dei servizi defender per Office 365, attivare Microsoft 365 Defender. Nuove funzionalità vengono aggiunte continuamente a Microsoft 365 Defender; prendere in considerazione la possibilità di acconsentire esplicitamente alla ricezione delle funzionalità di anteprima.
+Microsoft 365 Defender unifica avvisi, incidenti, indagini e risposte automatizzate e ricerca avanzata tra i carichi di lavoro (Microsoft Defender for Identity, Microsoft Defender per Office 365, Microsoft Defender for Endpoint e Microsoft Cloud App Security) in un unico riquadro di esperienza di vetro. Nuove funzionalità vengono aggiunte continuamente a Microsoft 365 Defender; prendere in considerazione la possibilità di acconsentire esplicitamente alla ricezione delle funzionalità di anteprima.
 
 ### <a name="to-set-up-microsoft-365-defender"></a>Per configurare Microsoft 365 Defender
 
@@ -161,7 +162,7 @@ Dopo aver configurato e distribuito i servizi e le funzionalità di protezione d
 
 ![Centro sicurezza Microsoft 365](../media/solutions-architecture-center/m365-security-center.png)
 
-Il Centro sicurezza Microsoft 365 è destinato in modo specifico agli amministratori della sicurezza e ai team delle operazioni di sicurezza. Nel Centro sicurezza Microsoft 365 è possibile:
+Il Centro sicurezza Microsoft 365 è destinato agli amministratori della sicurezza e ai team delle operazioni di sicurezza. Nel Centro sicurezza Microsoft 365 è possibile:
 - Visualizzare l'integrità della sicurezza complessiva dell'organizzazione [con Punteggio sicuro](https://docs.microsoft.com/microsoft-365/security/defender/microsoft-secure-score).
 - [Monitorare e visualizzare report](https://docs.microsoft.com/microsoft-365/security/defender/monitoring-and-reporting) sullo stato delle identità, dei dati, dei dispositivi, delle app e dell'infrastruttura.
 - Connettere i punti sugli avvisi tramite [eventi imprevisti.](https://docs.microsoft.com/microsoft-365/security/defender/incident-queue)

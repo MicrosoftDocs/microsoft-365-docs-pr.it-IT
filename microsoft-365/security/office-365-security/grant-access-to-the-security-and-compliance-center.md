@@ -20,12 +20,12 @@ description: Gli utenti devono disporre delle autorizzazioni nel Centro sicurezz
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 16dbbe81d1131821dfdbf75caff5b5121f8cc45b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 7cd36ac0dec20851a423acd58e5ad7d38cb65d93
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206303"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599924"
 ---
 # <a name="give-users-access-to-the-security--compliance-center"></a>Concedere agli utenti l'accesso al Centro sicurezza e conformità
 
@@ -40,7 +40,7 @@ Gli utenti devono disporre delle autorizzazioni nel Centro sicurezza & conformit
 
 Per ulteriori informazioni sulle diverse autorizzazioni che è possibile concedere agli utenti nel Centro sicurezza & conformità, vedere Autorizzazioni nel [Centro sicurezza & conformità.](permissions-in-the-security-and-compliance-center.md)
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Per completare i passaggi descritti in questo articolo, è necessario essere un amministratore globale o un membro del gruppo di ruoli OrganizationManagement nel Centro sicurezza & conformità.
 
@@ -60,7 +60,7 @@ Per ulteriori informazioni sulle diverse autorizzazioni che è possibile concede
 
 4. Dopo aver selezionato tutti gli utenti che si desidera aggiungere al gruppo di ruoli, fare clic su **aggiungi- \>** e quindi **su OK.**
 
-5. Al termine, scegliere **Salva**.
+5. Al termine, fare clic su **Salva**.
 
 ## <a name="use-security--compliance-center-powershell-to-give-another-user-access-to-the-security--compliance-center"></a>Usare PowerShell & Centro sicurezza e conformità per concedere a un altro utente l'accesso al Centro sicurezza & conformità
 
@@ -80,7 +80,7 @@ Per ulteriori informazioni sulle diverse autorizzazioni che è possibile concede
    Add-RoleGroupMember -Identity "Organization Management" -Member MatildaS
    ```
 
-Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Add-RoleGroupMember](https://docs.microsoft.com/powershell/module/exchange/add-rolegroupmember)
+Per informazioni dettagliate sulla sintassi e sui parametri, [vedere Add-RoleGroupMember](/powershell/module/exchange/add-rolegroupmember)
 
 ### <a name="how-do-you-know-this-worked"></a>Come verificare se l'operazione ha avuto esito positivo
 
