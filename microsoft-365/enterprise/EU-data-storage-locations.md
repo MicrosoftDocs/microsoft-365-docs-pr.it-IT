@@ -16,12 +16,12 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: Determinare dove sono archiviati i dati dei clienti Microsoft 365 nell’Unione europea.
-ms.openlocfilehash: 28bfa7c18aff485e084e4d77bb2a36f0f5b7e95f
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 19df44a702d842d4171d867946fb818d3f36fd80
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50905681"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615232"
 ---
 # <a name="data-locations-for-the-european-union"></a>Posizioni dei dati per l'Unione europea
 
@@ -92,7 +92,7 @@ Microsoft protegge i dati usando più livelli di protocolli di sicurezza e critt
 
 Per impostazione predefinita, le chiavi gestite di Microsoft proteggono i dati dei clienti. I dati che rimangono permanenti su qualsiasi supporto fisico sono sempre crittografati con protocolli di crittografia conformi a FIPS 140-2. È anche possibile usare le chiavi gestite dal cliente (CMK), [Doppia crittografia](../compliance/double-key-encryption.md)e/o i moduli di sicurezza hardware (HSM) per una maggiore protezione dei dati.
 
-Tutto il traffico dei dati tra i data center è protetto anche con gli standard di sicurezza IEEE 802.1 AE MAC, evitando gli attacchi fisici "Man-in-the-Middle".
+In aggiunta, Microsoft usa per impostazione predefinita il protocollo [(TLS) Transport Layer Security](https://wikipedia.org/wiki/Transport_Layer_Security) per crittografare i dati quando sono in transito tra i servizi cloud e i clienti. I servizi Microsoft negoziano una connessione TLS con i sistemi client che si connettono ai servizi Microsoft 365. 
 
 Per impedire l'accesso fisico non autorizzato ai data center, vengono impiegati controlli e processi operativi rigorosi che includono videocontrolli continui, personale di sicurezza addestrato e processi specifici, nonché controlli di accesso multifattoriali come smart card o biometrici. Al termine del ciclo vitale, i dischi dati vengono eliminati e distrutti. Se un'unità disco usata per la risorsa di archiviazione subisce un errore hardware o raggiunge la fine del ciclo vitale, viene cancellata o eliminata in tutta sicurezza. I dati nell'unità vengono completamente sovrascritti per assicurare che non sia possibile recuperare i dati con alcun mezzo. Quando tali dispositivi vengono eliminati, vengono triturati e distrutti in linea con il NIST SP 800-88 R1, linee guida per la sanificazione dei supporti. Le registrazioni dell’avvenuta distruzione vengono conservate e riviste nell'ambito del processo di controllo e conformità Microsoft. Tutti i servizi di Microsoft 365 usano i servizi di gestione delle risorse di archiviazione e smaltimento di supporti approvati.
 

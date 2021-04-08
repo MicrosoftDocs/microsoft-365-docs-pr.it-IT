@@ -16,12 +16,12 @@ search.appverid:
 - MET150
 description: Informazioni utili agli amministratori IT per gestire le etichette di riservatezza nelle app di Office per desktop, dispositivi mobili e Web.
 ms.custom: seo-marvel-apr2020
-ms.openlocfilehash: 5a82eba3801509ed2e8ffb46ab32045466204fab
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 3aa5c8065b882dff670d6b829141955bf615d933
+ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498824"
+ms.lasthandoff: 04/06/2021
+ms.locfileid: "51599841"
 ---
 # <a name="manage-sensitivity-labels-in-office-apps"></a>Gestire le etichette di riservatezza nelle app di Office
 
@@ -85,18 +85,20 @@ I numeri elencati indicano la versione minima delle applicazioni di Office neces
 |[Richiedere una giustificazione per la modifica di un'etichetta.](sensitivity-labels.md#what-label-policies-can-do)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sì               |
 |[Fornire un collegamento a una pagina della Guida personalizzata.](sensitivity-labels.md#what-label-policies-can-do)                       | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sì               |
 |[Contrassegnare il contenuto](sensitivity-labels.md#what-sensitivity-labels-can-do)                                              | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sì               |
-|[Contrassegni dinamici con variabili](#dynamic-markings-with-variables).                                              | In revisione                     | In revisione                 | In revisione         | In revisione           | In revisione               |
+|[Contrassegni dinamici con variabili](#dynamic-markings-with-variables) <sup>1</sup>                                              | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sì               |
 |[Assegnare ora le autorizzazioni](encryption-sensitivity-labels.md#assign-permissions-now)                                 | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sì               |
 |[Consentire agli utenti di assegnare le autorizzazioni <br /> - Non inoltrare](encryption-sensitivity-labels.md#let-users-assign-permissions)                     | 1910+                     | 16.21+                 | 4.7.1+         | 4.0.39+           | Sì               |
 |[Consentire agli utenti di assegnare le autorizzazioni <br /> - Solo crittografia](encryption-sensitivity-labels.md#let-users-assign-permissions)  |2011+ | In revisione | In revisione  | In revisione | Distribuzione |
-|[Richiedere agli utenti di applicare un'etichetta alla posta elettronica e ai documenti](#require-users-to-apply-a-label-to-their-email-and-documents)   | In distribuzione: 2101+                        | 16.43+ <sup>\*</sup>                    | In revisione            | In revisione                | Sì                |
+|[Richiedere agli utenti di applicare un'etichetta alla posta elettronica e ai documenti](#require-users-to-apply-a-label-to-their-email-and-documents)   | In distribuzione: 2101+                        | 16.43+ <sup>2</sup>                    | In revisione            | In revisione                | Sì                |
 |[Controllare le attività degli utenti correlate alle etichette](data-classification-activity-explorer.md) | 2011+ | In revisione | In revisione           | In revisione               | In revisione |
-|[Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>\*</sup>                    | In revisione           | In revisione               | Sì |
+|[Applicare automaticamente un'etichetta di riservatezza al contenuto](apply-sensitivity-label-automatically.md)                    | 2009+                      | 16.44+ <sup>2</sup>                    | In revisione           | In revisione               | Sì |
 |
 
-**Nota a piè di pagina:**
+**Note a piè di pagina:**
 
-<sup>\*</sup> Richiede il [nuovo Outlook per Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)
+<sup>1</sup> Attualmente sono supportate solo le [variabili Item.Label e If.App](#dynamic-markings-with-variables)
+<br />
+<sup>2</sup> Richiede il [nuovo Outlook per Mac](https://support.microsoft.com/office/the-new-outlook-for-mac-6283be54-e74d-434e-babb-b70cefc77439)
 
 
 ## <a name="office-built-in-labeling-client-and-other-labeling-solutions"></a>Client di etichettatura incorporato di Office e altre soluzioni di etichettatura
@@ -293,18 +295,18 @@ Per questi scenari, usando le sue app Office, un utente che dispone di etichetta
 > [!IMPORTANT]
 > Attualmente, non tutte le app su tutte le piattaforme supportano i contrassegni del contenuto dinamici che è possibile specificare per intestazioni, piè di pagina e filigrane. Per le app che non supportano questa funzionalità, come contrassegno viene applicato il testo originale specificato nella configurazione dell'etichetta, invece di risolvere le variabili.
 > 
-> Il client di etichettatura unificata di Azure Information Protection supporta i contrassegni dinamici. Per l'etichettatura integrata in Office, vedere le tabelle nella sezione [funzionalità](#support-for-sensitivity-label-capabilities-in-apps) di questa pagina.
+> Il client di etichettatura unificata di Azure Information Protection supporta i contrassegni dinamici e tutte le variabili elencate. Per l'etichettatura predefinita in Office, vedere le tabelle nella sezione [funzionalità](#support-for-sensitivity-label-capabilities-in-apps) di questa pagina per le versioni minime e quindi la tabella seguente per identificare le variabili supportate.
 
 Quando si configura un'etichetta di riservatezza per i contrassegni del contenuto, è possibile usare le variabili seguenti nella stringa di testo per l'intestazione, il piè di pagina o la filigrana:
 
 | Variabile | Descrizione | Esempio quando viene applicata l'etichetta |
 | -------- | ----------- | ------- |
-| `${Item.Label}` | Nome visualizzato dell'etichetta applicata| **Generale**|
-| `${Item.Name}` | Nome file o oggetto del messaggio di posta elettronica del contenuto etichettato | **Vendite.docx** |
-| `${Item.Location}` | Percorso e nome file del documento etichettato oppure oggetto del messaggio di posta elettronica etichettato | **\\\Vendite\2020\Q3\Report.docx**|
-| `${User.Name}` | Nome visualizzato dell'utente che applica l'etichetta| **Luca Udinesi** |
-| `${User.PrincipalName}` | User Principal Name (UPN) di Azure AD dell'utente che applica l'etichetta | **ludinesi\@contoso.com** |
-| `${Event.DateTime}` | Data e ora di applicazione dell'etichetta al contenuto nel fuso orario locale dell'utente che applica l'etichetta | **8/10/2020 13:30** |
+| `${Item.Label}` | Nome visualizzato dell'etichetta applicata <br /><br> Etichettatura predefinita: supportata da Word, Excel, PowerPoint e Outlook | **Generale**|
+| `${Item.Name}` | Nome file o oggetto del messaggio di posta elettronica del contenuto etichettato <br /><br> Etichettatura predefinita: supportata da Word, Excel e PowerPoint | **Vendite.docx** |
+| `${Item.Location}` | Percorso e nome file del documento etichettato oppure oggetto del messaggio di posta elettronica etichettato <br /><br> Etichettatura predefinita: supportata da Word, Excel e PowerPoint | **\\\Vendite\2020\Q3\Report.docx**|
+| `${User.Name}` | Nome visualizzato dell'utente che applica l'etichetta <br /><br> Etichettatura predefinita: supportata da Word, Excel e PowerPoint | **Luca Udinesi** |
+| `${User.PrincipalName}` | User Principal Name (UPN) di Azure AD dell'utente che applica l'etichetta <br /><br> Etichettatura predefinita: supportata da Word, Excel e PowerPoint  | **ludinesi\@contoso.com** |
+| `${Event.DateTime}` | Data e ora di applicazione dell'etichetta al contenuto nel fuso orario locale dell'utente che applica l'etichetta <br /><br> Etichettatura predefinita: supportata da Word, Excel e PowerPoint  | **8/10/2020 13:30** |
 
 > [!NOTE]
 > La sintassi di queste variabili fa distinzione tra maiuscole e minuscole.
@@ -312,9 +314,6 @@ Quando si configura un'etichetta di riservatezza per i contrassegni del contenut
 #### <a name="setting-different-visual-markings-for-word-excel-powerpoint-and-outlook"></a>Impostazione di contrassegni visivi diversi per Word, Excel, PowerPoint e Outlook
 
 Come ulteriore opzione, è possibile configurare contrassegni visivi per ogni tipo di applicazione di Office usando un'istruzione della variabile "If.App" nella stringa di testo e identificare il tipo di applicazione usando i valori **Word**, **Excel**, **PowerPoint** o **Outlook**. È anche possibile abbreviare questi valori, il che è necessario se si vogliono specificare più valori nella stessa istruzione If.App.
-
-> [!NOTE]
-> Per completezza, sono incluse le istruzioni per Outlook, anche se attualmente la funzionalità è supportata solo dal client di etichetta unificata di Azure Information Protection.
 
 Usare la sintassi seguente:
 
