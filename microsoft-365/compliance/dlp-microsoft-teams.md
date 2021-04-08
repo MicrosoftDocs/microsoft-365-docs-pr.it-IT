@@ -15,12 +15,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: È ora possibile applicare i criteri DLP alle chat e ai canali di Microsoft Teams. Leggi questo articolo per altre informazioni su come funziona.
-ms.openlocfilehash: 40c55ed486efc75619b514a60b707ac75554953b
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: bd6fa1c04a57f64997d5646374007641afa0f958
+ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445664"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51632238"
 ---
 # <a name="data-loss-prevention-and-microsoft-teams"></a>Prevenzione della perdita dei dati e Microsoft Teams
 
@@ -34,7 +34,7 @@ Per altre informazioni sui requisiti di licenza, vedere [Linee guida per le lice
 Recentemente, [le funzionalità di prevenzione della](data-loss-prevention-policies.md) perdita dei dati (DLP) sono state estese per includere i messaggi di chat e canali di Microsoft Teams, inclusi i messaggi del canale **privato.** 
 
 > [!IMPORTANT]
-> Dlp attualmente si applica solo ai messaggi effettivi nel thread di chat o canale. Le notifiche di attività, che includono un'anteprima breve dei  messaggi e vengono visualizzate in base alle impostazioni di notifica di un utente, non sono incluse in Dlp di Teams in questo momento. Tutte le informazioni riservate presenti nella parte del messaggio visualizzata nell'anteprima rimarranno visibili nella notifica anche dopo l'applicazione del criterio DLP e la rimozione dell'inforamzione sensibile del messaggio stesso.
+> Dlp attualmente si applica solo ai messaggi effettivi nel thread di chat o canale. Le notifiche di attività, che includono un'anteprima breve dei  messaggi e vengono visualizzate in base alle impostazioni di notifica di un utente, non sono incluse in Dlp di Teams in questo momento. Tutte le informazioni riservate presenti nella parte del messaggio visualizzata nell'anteprima rimarranno visibili nella notifica anche dopo l'applicazione del criterio DLP e la rimozione delle informazioni riservate del messaggio stesso.
 
 Se l'organizzazione dispone di DLP, è ora possibile definire criteri che impediscono agli utenti di condividere informazioni riservate in un canale di Microsoft Teams o in una sessione di chat. Ecco alcuni esempi del funzionamento di questa protezione:
 

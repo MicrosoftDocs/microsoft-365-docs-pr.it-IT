@@ -20,12 +20,12 @@ ms.collection:
 description: Gli amministratori possono imparare a elevare le impostazioni di sicurezza e a usare report, avvisi e indagini per gli account con priorità nelle organizzazioni Di Microsoft 365.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 9bb2586c11a22286bde5be01f1e9b3e5e0d981ac
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 73be3832b2391b6f47e4c796daf76c884a17dcdd
+ms.sourcegitcommit: 58fbcfd6437bfb08966b79954ca09556e636ff4a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206543"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51632222"
 ---
 # <a name="security-recommendations-for-priority-accounts-in-microsoft-365"></a>Suggerimenti per la sicurezza per gli account con priorità in Microsoft 365
 
@@ -47,6 +47,9 @@ Microsoft 365 e Microsoft Defender per Office 365 contengono diverse funzionalit
 |[Monitorare gli account di priorità in avvisi, report e rilevamenti](#monitor-priority-accounts-in-alerts-reports-and-detections)|||![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |[Formare gli utenti](#train-users)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|![Incluso](../../media/d238e041-6854-4a78-9141-049224df0795.png)|
 |
+
+> [!NOTE]
+> Per informazioni sulla protezione degli _account con privilegi_ (account amministratore), vedere questo [argomento.](/azure/architecture/framework/security/critical-impact-accounts)
 
 ## <a name="increase-sign-in-security-for-priority-accounts"></a>Aumentare la sicurezza di accesso per gli account con priorità
 
