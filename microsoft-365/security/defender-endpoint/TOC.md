@@ -115,6 +115,8 @@
 ##### [Abilitare l’accesso controllato alle cartelle](enable-controlled-folders.md)
 ##### [Personalizzare l’accesso controllato alle cartelle](customize-controlled-folders.md)
 
+### [Dispositivi di rete](network-devices.md)
+
 ### [Microsoft Defender per endpoint per Mac]()
 #### [Panoramica di Microsoft Defender per endpoint per Mac](microsoft-defender-endpoint-mac.md)
 #### [Novità](mac-whatsnew.md)
