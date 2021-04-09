@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: 3aa964f8e213d64f583738d8957899c1b7b5146c
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 3532fd461fff02fac54e96e0a1a1e69c39c16907
+ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51501095"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51657020"
 ---
 # <a name="proactively-hunt-for-threats-with-advanced-hunting-in-microsoft-365-defender"></a>Ricerca proattiva di minacce con ricerca avanzata in Microsoft 365 Defender
 
@@ -54,6 +54,17 @@ Questa funzionalità è simile alla ricerca [avanzata in Microsoft Defender for 
 - Che cosa è Microsoft Defender per identità?
 
 Per usare la ricerca avanzata, [attivare Microsoft 365 Defender.](m365d-enable.md)
+
+### <a name="before-you-begin"></a>Prima di iniziare
+
+Gli utenti devono disporre di uno dei seguenti livelli di autorizzazioni per accedere a Microsoft Defender:
+
+- Accesso completo (lettura e scrittura)
+- Accesso in sola lettura
+
+**Accesso completo:** gli utenti con accesso completo possono salvare, modificare e condividere una query. L'assegnazione dei diritti di accesso completi richiede l'aggiunta degli utenti ai ruoli predefiniti "Amministratore della sicurezza" o "Amministratore globale" in Azure Active Directory (AAD).
+
+**Accesso di sola lettura:** gli utenti con accesso in sola lettura possono accedere e visualizzare tutti gli avvisi e le informazioni correlate. Non potranno salvare, modificare o condividere una query. L'assegnazione dei diritti di accesso di sola lettura richiede l'aggiunta degli utenti al ruolo predefinito "Lettore di sicurezza" in AAD.
 
 ## <a name="get-started-with-advanced-hunting"></a>Introduzione alla ricerca avanzata
 

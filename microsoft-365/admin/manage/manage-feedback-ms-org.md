@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Gestire il feedback che gli utenti possono inviare a Microsoft sui prodotti Microsoft.
-ms.openlocfilehash: 9c6ed46b21a5ee697c4c512c09defd66e6b961c9
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: c92adec1689d6f0c46b03ae4f46c567f054b6457
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644862"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650017"
 ---
 # <a name="manage-microsoft-feedback-for-your-organization"></a>Gestire i commenti e suggerimenti Microsoft per l'organizzazione
 
@@ -32,7 +32,7 @@ In quanto amministratore di un'organizzazione di Microsoft 365, ora sono disponi
 
 Per altre informazioni sui tipi di feedback e su come Microsoft usa il feedback degli utenti, vedi Informazioni sui commenti e suggerimenti [Microsoft per l'organizzazione.](../misc/feedback-user-control.md)
 
-La tabella seguente rappresenta le app e i servizi attualmente connessi ai criteri di feedback mostrati nella tabella dei criteri di feedback riportata di seguito.
+La tabella seguente rappresenta le app e i servizi attualmente connessi ai criteri di feedback mostrati nella tabella dei criteri di feedback riportata di seguito. Vedi sotto la tabella per esempi di screenshot.
 
 |**App & Services**|**Feedback nel prodotto** <br> |**Sondaggi all'in-product** <br> |**Raccolta metadati** <br> |**Coinvolgimento dei clienti** <br> |
 |:-----|:-----|:-----|:-----|:-----|
@@ -51,15 +51,7 @@ La tabella seguente rappresenta le app e i servizi attualmente connessi ai crite
 |**Visio**|Sì|Sì|Sì|Sì|
 |**Yammer**|Sì|Sì|Sì|Sì|
 
-Ecco alcuni esempi di feedback sui prodotti.
-
-**Feedback nel prodotto**
-
-:::image type="content" source="../../media/feedback-in-product-help.png" alt-text="Screenshot: In-product help example":::
-
-**Sondaggi all'in-product**
-
-:::image type="content" source="../../media/feedback-in-product-survey.png" alt-text="Screenshot: Esempio di sondaggio nel prodotto dell'app Microsoft":::
+[Vedi qui per alcuni esempi di sondaggi e feedback nel prodotto.](https://docs.microsoft.com/microsoft-365/admin/misc/feedback-user-control?view=o365-worldwide#in-product-surveys)
 
 **Raccolta metadati**
 

@@ -20,21 +20,14 @@ search.appverid:
 - MET150
 description: Informazioni su come annullare la versione di valutazione o l'abbonamento a pagamento a Microsoft 365 per le aziende.
 ms.date: ''
-ms.openlocfilehash: 7a2de2a261baeb4e64e12742810635f352217933
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 2163462ae206871d66155331096337c29d6a87c2
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916877"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644645"
 ---
 # <a name="cancel-your-subscription"></a>Annullare l'abbonamento
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 *Idoneità:* Se si hanno meno di 25 licenze assegnate a utenti, è possibile annullare la versione di valutazione o l'abbonamento a pagamento di Microsoft 365 per le aziende online nell'interfaccia di amministrazione di Microsoft 365 in qualsiasi momento. Se si hanno più di 25 licenze assegnate a utenti, ridurlo a meno di 25 o [contattare il supporto per annullare l'abbonamento](../../admin/contact-support-for-business-products.md).
 
@@ -53,46 +46,35 @@ Se si è aggiunto il nome del proprio dominio per usarlo con l’abbonamento, è
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>, quindi selezionare la scheda **Prodotti**.
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
 2. Trovare l'abbonamento da annullare. Selezionare **Altre azioni** (tre puntini), quindi selezionare **Annulla l’abbonamento**.
 3. Nel riquadro **Annulla abbonamento** scegliere un motivo per cui si vuole annullare l'abbonamento. Se si vuole, inviare un feedback.
 4. Selezionare **Salva**.
 
 L'abbonamento apparirà ora in uno stato **Disabilitato** e le sue funzionalità saranno limitate fino all'eliminazione. Per altre informazioni sulle conseguenze dell'annullamento di un abbonamento a pagamento a Microsoft 365 per le aziende, vedere [Cosa succede ai dati personali al termine dell'abbonamento a Microsoft 365 per le aziende?](what-if-my-subscription-expires.md)
 
+> [!NOTE]
+> Se si elimina esplicitamente un abbonamento, vengono ignorate le fasi Scaduto e Disabilitato e i dati e il contenuto di SharePoint Online, incluso OneDrive, vengono eliminati immediatamente.
+
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
-
-2. Nella pagina **Abbonamenti** selezionare un abbonamento.
-
-3. Selezionare **Annulla abbonamento** dal menu **Altre azioni**.
-
-    ![Primo piano del menu Altre azioni.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
-
-4. Verificare le date importanti, indicare il motivo dell'annullamento e quindi selezionare **Annulla abbonamento**.
-
-    L'abbonamento apparirà ora in uno stato **Disabilitato** e le sue funzionalità saranno limitate fino all'eliminazione. Per altre informazioni sulle conseguenze dell'annullamento di un abbonamento a pagamento a Microsoft 365 per le aziende, vedere [Cosa succede ai dati personali al termine dell'abbonamento a Microsoft 365 per le aziende?](what-if-my-subscription-expires.md)
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">I tuoi prodotti</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
-
-2. Nella pagina **Abbonamenti** selezionare un abbonamento.
-
-3. Selezionare **Annulla abbonamento** dal menu **Altre azioni**.
-
-    ![Primo piano del menu Altre azioni.](../../media/befa74b7-62c1-42a3-a38e-db76a1c97dba.png)
-
-4. Verificare le date importanti, indicare il motivo dell'annullamento e quindi selezionare **Annulla abbonamento**.
-
-    L'abbonamento apparirà ora in uno stato **Disabilitato** e le sue funzionalità saranno limitate fino all'eliminazione. Per altre informazioni sulle conseguenze dell'annullamento di un abbonamento a pagamento a Microsoft 365 per le aziende, vedere [Cosa succede ai dati personali al termine dell'abbonamento a Microsoft 365 per le aziende?](what-if-my-subscription-expires.md)
-
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">I tuoi prodotti</a>.
 ::: moniker-end
+
+2. Selezionare la scheda **Prodotti**.
+3. Trovare l'abbonamento da annullare. Selezionare **Altre azioni** (tre puntini), quindi selezionare **Annulla l’abbonamento**.
+4. Nel riquadro **Annulla abbonamento** scegliere un motivo per cui si vuole annullare l'abbonamento. Se si vuole, inviare un feedback.
+5. Selezionare **Salva**.
+
+L'abbonamento apparirà ora in uno stato **Disabilitato** e le sue funzionalità saranno limitate fino all'eliminazione. Per altre informazioni sulle conseguenze dell'annullamento di un abbonamento a pagamento a Microsoft 365 per le aziende, vedere [Cosa succede ai dati personali al termine dell'abbonamento a Microsoft 365 per le aziende?](what-if-my-subscription-expires.md).
 
 ## <a name="what-happens-when-you-cancel-a-subscription"></a>Che cosa accade quando si annulla un abbonamento
 

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni sui commenti e suggerimenti che gli utenti possono inviare a Microsoft sui prodotti Microsoft.
-ms.openlocfilehash: 0a6c895eacd7a1cf8077141c6a848236a53818e7
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: 29fe6b7f43b3c888c3848daeb6ab4c2152a9c44c
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644846"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650066"
 ---
 # <a name="learn-about-microsoft-feedback-for-your-organization"></a>Informazioni sui commenti e suggerimenti Microsoft per l'organizzazione
 
@@ -49,9 +49,9 @@ Se gli utenti usano una delle app di Microsoft e desiderano fornire commenti e s
 
 Gli utenti possono anche valutare la propria esperienza e fornire informazioni aggiuntive sulla propria esperienza tramite richieste di sondaggio avviate dal sistema. Queste istruzioni si verificano nei prodotti Microsoft 365 di tanto in tanto. Quando richiesto, gli utenti possono scegliere se inviare commenti e suggerimenti. I prompt del sondaggio in genere vengono visualizzati nella parte inferiore destra dell'app. Se l'utente decide di fornire commenti e suggerimenti, ignora il prompt o lascia che il prompt scompaia da solo, l'utente non sarà più in grado di visualizzare il sondaggio per un certo periodo di tempo. Microsoft sfrutta inoltre un processo di governance per limitare il numero di sondaggi avviati dal sistema.  Lo scopo della governance è garantire che gli utenti non siano sovraccaricati dal numero di richieste di sondaggio.
 
-:::image type="content" source="../../media/feedback-outlook-example.png" alt-text="Screenshot: Example of in-product feedback for Outlook":::
-:::image type="content" source="../../media/how-likely-recommend.png" alt-text="Screenshot: How likely are you to recommend Microsoft 365 survey":::
-:::image type="content" source="../../media/feedback-in-product1.png" alt-text="Screenshot: Examples of in-product feedback pages":::
+:::image type="content" source="../../media/feedback-love.png" alt-text="Screenshot: Example of in-product feedback request":::
+
+:::image type="content" source="../../media/feedback-excel.png" alt-text="Screenshot: Example of in-product feedback request":::
 
 ## <a name="what-kind-of-feedback-is-best"></a>Che tipo di feedback è meglio?
 
@@ -90,3 +90,7 @@ Lavoriamo per guadagnare fiducia assicurando che ci concentriamo sulla gestione 
 Ci assicuriamo che il feedback ricevuto sia archiviato e gestito in base alle regole di governance di Microsoft e che sia possibile accedervi solo per usi approvati.
 
 Abbiamo il controllo della privacy con strumenti facili da usare e scelte chiare. We're transparent about how we collect and use data, so you can make informed decisions about what you want to share. Microsoft protegge i dati che ci affida con sicurezza e crittografia avanzata. Rispettiamo le leggi sulla privacy locali e lottiamo per la protezione legale della privacy dell'utente come diritto umano. Non usiamo la posta elettronica, la chat, i file o altri contenuti personali per scegliere come target gli annunci. Quando raccogliamo i dati, li usiamo per migliorare le tue esperienze. Per altre informazioni sull'approccio di Microsoft alla [privacy, vedere](https://privacy.microsoft.com/). Altre informazioni sulla panoramica [sulla privacy.](/compliance/assurance/assurance-privacy)
+
+## <a name="how-can-i-see-my-users-feedback"></a>Come posso vedere il feedback dell'utente?
+
+Presto, verranno condivisi i dati di feedback raccolti per i prodotti Microsoft. Stiamo lavorando a una nuova esperienza nell'interfaccia di amministrazione di Microsoft 365 che consente di visualizzare, eliminare ed esportare i dati di feedback per l'organizzazione. Ciò offre trasparenza diretta e informazioni utili sulle esperienze degli utenti con i prodotti Microsoft 365.

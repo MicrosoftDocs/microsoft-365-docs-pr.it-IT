@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 06b52e937dd0260a50883c45c36389a6a955ad0e
-ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
+ms.openlocfilehash: d0ae82c2e284235d96531c04dc2240063d4e4183
+ms.sourcegitcommit: dcc6bfd228ca9070975ce9eb14574e084f9ed92c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51604537"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51657042"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>Individuazione dei dispositivi di rete e gestione delle vulnerabilità
 
@@ -46,7 +46,7 @@ Le funzionalità di individuazione della rete sono disponibili nella sezione **I
 
 Un dispositivo Microsoft Defender for Endpoint designato verrà usato in ogni segmento di rete per eseguire analisi periodiche autenticate di dispositivi di rete preconfigurati. Una volta individuate, le funzionalità di gestione delle minacce e delle vulnerabilità di Defender for Endpoint forniscono flussi di lavoro integrati per proteggere commutatori, router, controller WLAN, firewall e gateway VPN individuati.  
 
-Una volta individuati e classificati i dispositivi di rete, gli amministratori della sicurezza saranno in grado di ricevere i consigli più recenti sulla sicurezza ed esaminare le vulnerabilità individuate di recente per i dispositivi di rete distribuiti nelle loro organizzazioni.
+Una volta individuati e classificati i dispositivi di rete, gli amministratori della sicurezza saranno in grado di ricevere i consigli più recenti sulla sicurezza ed esaminare le vulnerabilità individuate di recente nei dispositivi di rete distribuiti nelle organizzazioni.
 
 ## <a name="approach"></a>Approccio
 
@@ -95,9 +95,9 @@ Il primo passaggio consiste nel selezionare un dispositivo che eseguirà le anal
     - login.windows.net  
     - *.securitycenter.windows.com
     - login.microsoftonline.com
-    - *.blob.core.windows.net/networkscannerstable/*
+    - *.blob.core.windows.net/networkscannerstable/ *
 
-    Nota: questi URL non sono specificati nell'elenco documentato di Defender for Endpoint della raccolta dati consentita.
+    Nota: non tutti gli URL non sono specificati nell'elenco documentato di Defender for Endpoint della raccolta dati consentita.
 
 ## <a name="permissions"></a>Autorizzazioni
 
