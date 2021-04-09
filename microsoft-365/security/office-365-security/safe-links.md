@@ -27,12 +27,12 @@ ms.assetid: dd6a1fef-ec4a-4cf4-a25a-bb591c5811e3
 description: In questo articolo, gli amministratori possono ottenere informazioni sulla protezione dei collegamenti sicuri in Defender per Office 365 per proteggere l'organizzazione da phishing e altri attacchi che usano URL dannosi.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 06ec3ab1a255e9eaa8c190ed5c248c9587273e03
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 1f27e1bbd051bd43d1f160707589db2bb7189b76
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206562"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644777"
 ---
 # <a name="safe-links-in-microsoft-defender-for-office-365"></a>Collegamenti sicuri in Microsoft Defender per Office 365
 
@@ -118,11 +118,11 @@ Le impostazioni dei criteri collegamenti sicuri applicabili ai messaggi di posta
 
 - **Non consentire agli utenti di passare all'URL** originale: consente o impedisce agli utenti di fare clic nella pagina di avviso [fino](#warning-pages-from-safe-links) all'URL originale. Il valore consigliato è abilitato.
 
-- **Visualizzare la personalizzazione dell'organizzazione nelle pagine di notifica e** avviso: questa opzione mostra la personalizzazione dell'organizzazione nelle pagine di avviso. La personalizzazione consente agli utenti di identificare gli avvisi legittimi, perché le pagine di avviso Microsoft predefinite vengono spesso utilizzate da utenti malintenzionati. Per ulteriori informazioni sulla personalizzazione, vedere Aggiungere il marchio alla pagina di accesso di [Azure Active Directory dell'organizzazione.](/azure/active-directory/fundamentals/customize-branding)
+- **Visualizzare la personalizzazione dell'organizzazione nelle pagine di notifica e** avviso: questa opzione mostra la personalizzazione dell'organizzazione nelle pagine di avviso. La personalizzazione consente agli utenti di identificare gli avvisi legittimi, perché le pagine di avviso Microsoft predefinite vengono spesso utilizzate da utenti malintenzionati. Per ulteriori informazioni sulla personalizzazione, vedere Personalizzare il tema [di Microsoft 365 per l'organizzazione.](../../admin/setup/customize-your-organization-theme.md)
 
 - **Non riscrivere gli URL seguenti:** lascia gli URL così come sono. Mantiene un elenco personalizzato di URL sicuri che non necessitano di analisi. L'elenco è univoco per ogni criterio collegamenti sicuri. Per ulteriori informazioni sull'elenco Non riscrivere gli **URL** seguenti, vedere la sezione "Non riscrivere gli [URL seguenti" in](#do-not-rewrite-the-following-urls-lists-in-safe-links-policies) Criteri collegamenti sicuri più avanti in questo articolo.
 
-Per ulteriori informazioni sui valori consigliati per le impostazioni dei criteri Standard e Strict per i criteri collegamenti sicuri, vedere [Safe Links policy settings.](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)
+  Per ulteriori informazioni sui valori consigliati per le impostazioni dei criteri Standard e Strict per i criteri collegamenti sicuri, vedere [Safe Links policy settings.](recommended-settings-for-eop-and-office365.md#safe-links-policy-settings)
 
 - **Filtri destinatari:** è necessario specificare le condizioni e le eccezioni del destinatario che determinano a chi si applica il criterio. È possibile utilizzare queste proprietà per le condizioni e le eccezioni:
 
@@ -167,7 +167,7 @@ Le impostazioni seguenti nei criteri collegamenti sicuri che si applicano ai col
 - **Non tenere traccia dei clic degli utenti**
 - **Non consentire agli utenti di passare all'URL originale**
 
-Queste impostazioni sono illustrate nella precedente sezione [Collegamenti sicuri per i messaggi di posta](#safe-links-settings-for-email-messages) elettronica.
+Queste impostazioni sono illustrate in precedenza in [Impostazioni collegamenti sicuri per i messaggi di posta elettronica.](#safe-links-settings-for-email-messages)
 
 Dopo aver attivata la protezione dei collegamenti sicuri per Microsoft Teams, gli URL in Teams vengono controllati in base a un elenco di collegamenti dannosi noti quando l'utente protetto fa clic sul collegamento (protezione basata sul clic). Gli URL non vengono riscritti. Se viene rilevato che un collegamento è dannoso, gli utenti avranno le esperienze seguenti:
 
@@ -256,22 +256,22 @@ Quando un utente in un criterio collegamenti sicuri attivo fa clic su un collega
 
 L'elenco degli URL viene configurato nelle impostazioni globali per i collegamenti sicuri. Per istruzioni, vedere [Configurare l'elenco "Blocca gli URL seguenti".](configure-global-settings-for-safe-links.md#configure-the-block-the-following-urls-list-in-the-security--compliance-center)
 
-**Note**:
-
-- Per un elenco veramente universale degli URL bloccati ovunque, vedere [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
-
-- Limiti:
-  - Il numero massimo di voci è 500.
-  - La lunghezza massima di una voce è di 128 caratteri.
-  - Tutte le voci non possono superare i 10.000 caratteri.
-
-- Non includere una barra ( `/` ) alla fine dell'URL. Ad esempio, utilizzare `https://www.contoso.com` , non `https://www.contoso.com/` .
-
-- Un URL solo dominio (ad esempio `contoso.com` o `tailspintoys.com` ) blocterà qualsiasi URL che contiene il dominio.
-
-- È possibile bloccare un sottodominio senza bloccare il dominio completo. Ad esempio, `toys.contoso.com*` blocca qualsiasi URL che contiene il sottodominio, ma non blocca gli URL che contengono il dominio completo `contoso.com` .
-
-- È possibile includere fino a tre caratteri jolly ( `*` ) per ogni voce url.
+> [!NOTE]
+> 
+> - Per un elenco veramente universale degli URL bloccati ovunque, vedere [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
+> 
+> - Limiti:
+>   - Il numero massimo di voci è 500.
+>   - La lunghezza massima di una voce è di 128 caratteri.
+>   - Tutte le voci non possono superare i 10.000 caratteri.
+> 
+> - Non includere una barra ( `/` ) alla fine dell'URL. Ad esempio, utilizzare `https://www.contoso.com` , non `https://www.contoso.com/` .
+> 
+> - Un URL solo dominio (ad esempio `contoso.com` o `tailspintoys.com` ) blocterà qualsiasi URL che contiene il dominio.
+> 
+> - È possibile bloccare un sottodominio senza bloccare il dominio completo. Ad esempio, `toys.contoso.com*` blocca qualsiasi URL che contiene il sottodominio, ma non blocca gli URL che contengono il dominio completo `contoso.com` .
+> 
+> - È possibile includere fino a tre caratteri jolly ( `*` ) per ogni voce url.
 
 ### <a name="entry-syntax-for-the-block-the-following-urls-list"></a>Sintassi delle voci per l'elenco "Blocca gli URL seguenti"
 
@@ -296,20 +296,20 @@ Ogni criterio Collegamenti sicuri contiene un elenco Non riscrivere gli **URL** 
 
 Per aggiungere voci all'elenco nei criteri collegamenti sicuri nuovi o esistenti, vedere [Create Safe Links policies](set-up-safe-links-policies.md#use-the-security--compliance-center-to-create-safe-links-policies) o Modify Safe Links [policies.](set-up-safe-links-policies.md#use-the-security--compliance-center-to-modify-safe-links-policies)
 
-**Note**:
-
-- I client seguenti non riconoscono gli elenchi **Non riscrivere** gli URL seguenti nei criteri Collegamenti sicuri. Agli utenti inclusi nei criteri può essere impedito di accedere agli URL in base ai risultati dell'analisi dei collegamenti sicuri in questi client:
-
-  - Microsoft Teams
-  - Office Web Apps
-
-  Per un elenco veramente universale degli URL consentiti ovunque, vedere [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
-
-- Prendi in considerazione l'aggiunta di URL interni di uso comune all'elenco per migliorare l'esperienza utente. Ad esempio, se si dispone di servizi locali, ad esempio Skype for Business o SharePoint, è possibile aggiungere tali URL per escluderli dalla scansione.
-
-- Se si dispone già di **Do not rewrite the following URL** entries in your Safe Links policies, assicurarsi di esaminare gli elenchi e aggiungere caratteri jolly in base alle esigenze. Ad esempio, l'elenco include una voce simile e `https://contoso.com/a` successivamente decidi di includere sottopercorso come `https://contoso.com/a/b` . Anziché aggiungere una nuova voce, aggiungere un carattere jolly alla voce esistente in modo che diventi `https://contoso.com/a/*` .
-
-- È possibile includere fino a tre caratteri jolly ( `*` ) per ogni voce url. I caratteri jolly includono in modo esplicito prefissi o sottodomini. Ad esempio, la voce non corrisponde a , perché consente agli utenti di visitare sottodomini e percorsi `contoso.com` `*.contoso.com/*` nel dominio `*.contoso.com/*` specificato.
+> [!NOTE]
+> 
+> - I client seguenti non riconoscono gli elenchi **Non riscrivere** gli URL seguenti nei criteri Collegamenti sicuri. Agli utenti inclusi nei criteri può essere impedito di accedere agli URL in base ai risultati dell'analisi dei collegamenti sicuri in questi client:
+> 
+>   - Microsoft Teams
+>   - Office Web Apps
+> 
+>   Per un elenco veramente universale degli URL consentiti ovunque, vedere [Manage the Tenant Allow/Block List](tenant-allow-block-list.md).
+> 
+> - Prendi in considerazione l'aggiunta di URL interni di uso comune all'elenco per migliorare l'esperienza utente. Ad esempio, se si dispone di servizi locali, ad esempio Skype for Business o SharePoint, è possibile aggiungere tali URL per escluderli dalla scansione.
+> 
+> - Se si dispone già di **Do not rewrite the following URL** entries in your Safe Links policies, assicurarsi di esaminare gli elenchi e aggiungere caratteri jolly in base alle esigenze. Ad esempio, l'elenco include una voce simile e `https://contoso.com/a` successivamente decidi di includere sottopercorso come `https://contoso.com/a/b` . Anziché aggiungere una nuova voce, aggiungere un carattere jolly alla voce esistente in modo che diventi `https://contoso.com/a/*` .
+> 
+> - È possibile includere fino a tre caratteri jolly ( `*` ) per ogni voce url. I caratteri jolly includono in modo esplicito prefissi o sottodomini. Ad esempio, la voce non corrisponde a , perché consente agli utenti di visitare sottodomini e percorsi `contoso.com` `*.contoso.com/*` nel dominio `*.contoso.com/*` specificato.
 
 ### <a name="entry-syntax-for-the-do-not-rewrite-the-following-urls-list"></a>Sintassi delle voci per l'elenco "Non riscrivere gli URL seguenti"
 

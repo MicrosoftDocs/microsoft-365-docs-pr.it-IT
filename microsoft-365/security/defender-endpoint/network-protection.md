@@ -17,12 +17,12 @@ ms.custom: asr
 ms.technology: mde
 ms.date: 03/08/2021
 ms.topic: how-to
-ms.openlocfilehash: be98bf810d00b6e39ba9d2674604a9fd2128a8cc
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2ef3fbeec65be512dfe07f1d533df4d8e9b31532
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51198655"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644501"
 ---
 # <a name="protect-your-network"></a>Proteggere la rete
 
@@ -90,6 +90,16 @@ Questa procedura crea una visualizzazione personalizzata che filtra in modo da v
 | 5007 | Evento quando vengono modificate le impostazioni |
 | 1125 | Evento quando viene attivata la protezione di rete in modalità di controllo |
 | 1126 | Evento quando viene attivata la protezione di rete in modalità blocco |
+
+## <a name="network-protection-troubleshooting"></a>Risoluzione dei problemi di protezione di rete
+
+A causa dell'ambiente in cui viene eseguito Protezione di rete, Microsoft potrebbe non essere in grado di rilevare le impostazioni proxy del sistema operativo. In alcuni casi, i client di Protezione di rete non sono in grado di raggiungere il servizio cloud. Per risolvere il problema di connettività, i clienti con licenze E5 devono configurare una delle seguenti chiavi del Registro di sistema defender:
+
+```console
+reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP address: Port>" /f
+reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
+
+```
 
 ## <a name="related-articles"></a>Articoli correlati
 

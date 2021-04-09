@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 228a8813bcfff052c7f861dcd2962a94cb58c0fb
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: e19c64c01c892a8a5f47f5892882feab1242f897
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165970"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644489"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Microsoft Defender per l'archiviazione e la privacy dei dati degli endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -94,6 +94,9 @@ No. I dati dei clienti sono isolati da altri clienti e non vengono condivisi. Tu
 
 **Alla scadenza o alla risoluzione del contratto**<br>
 I dati verranno mantenuti e saranno disponibili mentre la licenza è in modalità di tolleranza o sospesa. Al termine di questo periodo, tali dati verranno cancellati dai sistemi Microsoft per renderli irrecuperabili, non oltre 180 giorni dalla scadenza o dalla risoluzione del contratto.
+
+**Dati di ricerca avanzata**<br>
+La ricerca avanzata è uno strumento di ricerca delle minacce basato sulla query che permette di esplorare dati non elaborati fino a 30 giorni.
 
 
 ## <a name="can-microsoft-help-us-maintain-regulatory-compliance"></a>Microsoft può aiutarci a mantenere la conformità normativa?

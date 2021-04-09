@@ -14,15 +14,15 @@ search.appverid:
 ms.assetid: a5b03b3c-37dd-429e-8e9b-2c1b25031794
 ms.collection:
 - M365-security-compliance
-description: Gli amministratori possono ottenere informazioni sui valori BCL (Bulk Compliance Level) utilizzati in Exchange Online Protection (EOP).
+description: Gli amministratori possono ottenere informazioni sui valori BCL (Bulk Complaint Level) utilizzati in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3d85dca6e18ebdad4d8f2a5c5f6c5b613c23b47d
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 08924a7db0a5c4588ed70bc41e4caf46afb35b53
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205084"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650255"
 ---
 # <a name="bulk-complaint-level-bcl-in-eop"></a>Livello di reclamo in blocco (BCL) in EOP
 
@@ -33,7 +33,7 @@ ms.locfileid: "51205084"
 - [Microsoft Defender per Office 365 piano 1 e piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
-Nelle organizzazioni di Microsoft 365 con cassette postali in Exchange Online o in organizzazioni autonome di Exchange Online Protection (EOP) senza cassette postali di Exchange Online, EOP assegna un livello di conformità in blocco (BCL) ai messaggi in ingresso dai mailer in blocco. Il livello di probabilità di posta indesiderata viene aggiunto al messaggio in un X-header ed è simile al livello di probabilità di posta indesiderata [(SCL)](spam-confidence-levels.md) utilizzato per identificare i messaggi come posta indesiderata. Un livello di probabilità di posta indesiderata più elevato indica che un messaggio in blocco è più probabile che generi reclami (ed è quindi più probabile che sia posta indesiderata). Microsoft usa sia origini interne che di terze parti per identificare la posta in blocco e determinare il BCL appropriato.
+Nelle organizzazioni di Microsoft 365 con cassette postali in Exchange Online o in organizzazioni autonome di Exchange Online Protection (EOP) senza cassette postali di Exchange Online, EOP assegna un livello di reclamo in blocco (BCL) ai messaggi in ingresso dai mailer in blocco. Il livello di probabilità di posta indesiderata viene aggiunto al messaggio in un X-header ed è simile al livello di probabilità di posta indesiderata [(SCL)](spam-confidence-levels.md) utilizzato per identificare i messaggi come posta indesiderata. Un livello di probabilità di posta indesiderata più elevato indica che un messaggio in blocco è più probabile che generi reclami (ed è quindi più probabile che sia posta indesiderata). Microsoft usa sia origini interne che di terze parti per identificare la posta in blocco e determinare il BCL appropriato.
 
 I mailer in blocco variano in base ai modelli di invio, alla creazione di contenuto e alle procedure di acquisizione dei destinatari. I mailer in blocco inviano ai propri sottoscrittori i messaggi desiderati con contenuto pertinente. Questi messaggi generano pochi reclami da parte dei destinatari. Altri mailer in blocco inviano messaggi indesiderati che assomigliano molto alla posta indesiderata e generano molti reclami da parte dei destinatari. I messaggi provenienti da un mailer in blocco sono noti come posta in blocco o posta grigia.
 

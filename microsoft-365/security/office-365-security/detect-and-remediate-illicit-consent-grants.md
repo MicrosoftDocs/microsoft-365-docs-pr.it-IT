@@ -18,12 +18,12 @@ description: Scopri come riconoscere e correggere l'attacco delle concessioni di
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 4a9b3ff11acb32a4b3038cc18922f8e22fda0b4c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 7869419677ba1d5d6b480b7f0dea7f67880af0c7
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205941"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644681"
 ---
 # <a name="detect-and-remediate-illicit-consent-grants"></a>Rilevare e correggere le concessioni di consenso illecito
 
@@ -86,7 +86,7 @@ Se sono presenti una o più istanze delle operazioni di I/O elencate in preceden
 
 È possibile cercare le applicazioni a cui ogni singolo utente ha concesso le autorizzazioni tramite il [portale di Azure Active Directory.](https://portal.azure.com/)
 
-1. Accedi al portale di Azure con diritti amministrativi.
+1. Accedere al portale di Azure con diritti amministrativi.
 
 2. Selezionare il pannello Azure Active Directory.
 
@@ -128,7 +128,7 @@ Il modo più semplice per verificare l'attacco di concessione del consenso illec
 5. Eseguire questo comando di PowerShell:
 
    ```powershell
-   Get-AzureADPSPermissions.ps1 | Export-csv -Path "Permissions.csv" -NoTypeInformation
+   .\Get-AzureADPSPermissions.ps1 | Export-csv -Path "Permissions.csv" -NoTypeInformation
    ```
 
 Lo script produce un file denominato Permissions.csv. Seguire questa procedura per cercare le autorizzazioni per le applicazioni illecite:

@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b529b1c7fa5c4f9f81cb6bfbb5f1a6bd7823a9ad
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 97d1d50e2557cbb760248738b1f096614873958f
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587600"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644705"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurare le impostazioni del proxy del dispositivo e della connettività Internet
 
@@ -57,6 +57,13 @@ L'impostazione di configurazione WinHTTP è indipendente dalle impostazioni del 
 ## <a name="configure-the-proxy-server-manually-using-a-registry-based-static-proxy"></a>Configurare manualmente il server proxy con un proxy statico basato sul registro
 
 Configura un proxy statico basato sul Registro di sistema per consentire solo al sensore Defender for Endpoint di segnalare i dati di diagnostica e comunicare con Defender per i servizi endpoint se a un computer non è consentito connettersi a Internet.
+
+> [!NOTE]
+> - Quando si usa questa opzione in Windows 10 o Windows Server 2019, è consigliabile avere la build seguente (o successiva) e l'aggiornamento cumulativo cumulativo:</br>
+> Windows 10, versione 1909 - https://support.microsoft.com/kb/4601380</br>
+> Windows 10 versione 2004 - https://support.microsoft.com/kb/4601382</br>
+> Windows 10 versione 20H2 - https://support.microsoft.com/kb/4601382</br>
+> Questi aggiornamenti migliorano la connettività e l'affidabilità del canale CnC (Comando e controllo).</br>
 
 Il proxy statico è configurabile tramite Criteri di gruppo. I criteri di gruppo sono disponibili in:
 

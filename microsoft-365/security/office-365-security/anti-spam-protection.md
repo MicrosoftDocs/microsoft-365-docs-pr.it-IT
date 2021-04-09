@@ -21,12 +21,12 @@ ms.custom:
 description: Gli amministratori possono ottenere informazioni sulle impostazioni e sui filtri di protezione da posta indesiderata che consentono di evitare la posta indesiderata in Exchange Online Protection (EOP).
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5f19330d7af9c4a6601baa9562766eb5a6e7052a
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: eaff771d6fa0490819ec076b5a9a43ac843cf207
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206863"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650267"
 ---
 # <a name="anti-spam-protection-in-eop"></a>Protezione da posta indesiderata in EOP
 
@@ -91,7 +91,7 @@ Ecco alcune procedure consigliate che si applicano a entrambi gli scenari:
 
   - **DMARC**: Autenticazione dei messaggi basata su dominio, creazione di report e conformità consente ai sistemi di posta elettronica di destinazione di determinare cosa fare con i messaggi che non riescono a controllare SPF o DKIM e fornisce un altro livello di attendibilità per i partner di posta elettronica. Per ulteriori informazioni, vedere [Utilizzare DMARC per convalidare la posta elettronica in Microsoft 365.](use-dmarc-to-validate-email.md)
 
-- **Verificare le impostazioni** di posta elettronica in blocco : la soglia del livello di conformità in blocco configurata nei criteri di protezione da posta indesiderata determina se la posta elettronica in blocco (nota anche come posta grigia) è contrassegnata come posta indesiderata. Anche l'impostazione solo di _PowerShell MarkAsSpamBulkMail_ attivata per impostazione predefinita contribuisce ai risultati. Per ulteriori informazioni, vedere [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
+- **Verificare le impostazioni** di posta elettronica in blocco : la soglia del livello di reclamo in blocco (BCL) configurata nei criteri di protezione da posta indesiderata determina se la posta elettronica in blocco (nota anche come posta grigia) è contrassegnata come posta indesiderata. Anche l'impostazione solo di _PowerShell MarkAsSpamBulkMail_ attivata per impostazione predefinita contribuisce ai risultati. Per ulteriori informazioni, vedere [Configure anti-spam policies in Microsoft 365](configure-your-spam-filter-policies.md).
 
 ### <a name="prevent-the-delivery-of-spam-to-the-inbox"></a>Impedire il recapito della posta indesiderata nella posta in arrivo
 

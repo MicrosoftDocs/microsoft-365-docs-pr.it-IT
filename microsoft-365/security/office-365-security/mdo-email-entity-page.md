@@ -15,12 +15,12 @@ ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
 description: I clienti di Microsoft Defender per Office 365 E5 e ATP P1 e ATP P2 possono ora ottenere una visualizzazione a 360 gradi di ogni messaggio di posta elettronica con la pagina entità di posta elettronica.
-ms.openlocfilehash: 6d2777113e7e9f9ce760dab3b83252eceab520ff
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 7797e9f5965f43b856c2c34df1f99fddf72d5df5
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599488"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650339"
 ---
 # <a name="the-email-entity-page"></a>Pagina Entità posta elettronica
 
@@ -119,7 +119,7 @@ Gli utenti potranno visualizzare dettagli di detonazione arricchiti per allegati
   - Quando la regola di posta indesiderata è abilitata nella cassetta postale, Exchange Online Protection (EOP) è in grado di spostare i messaggi in Posta indesiderata in base ad alcuni criteri. Lo spostamento può essere basato sull'azione verdetto filtro posta indesiderata Sposta il messaggio nella cartella Posta indesiderata *o* nell'elenco Mittenti bloccati nella cassetta postale. La disabilitazione della regola di posta indesiderata impedisce il recapito dei messaggi nella cartella Posta indesiderata in base *all'elenco Mittenti attendibili* della cassetta postale.
   - Quando la regola  di posta indesiderata è disabilitata nella cassetta postale, EOP non può spostare i messaggi nella cartella Posta indesiderata in base all'azione verdetto filtro posta indesiderata Spostare il messaggio nella cartella Posta indesiderata *o* nella raccolta dell'elenco di indirizzi attendibili nella cassetta postale.
 
-- *Livello BCL (Bulk Compliant Level):* livello di reclamo in blocco (BCL) del messaggio. Un livello di probabilità di posta indesiderata più elevato indica che è più probabile che un messaggio di posta elettronica in blocco generi reclami (il risultato naturale se è probabile che il messaggio di posta elettronica sia posta indesiderata).
+- *Bulk Complaint Level (BCL):* livello di reclamo in blocco (BCL) del messaggio. Un livello di probabilità di posta indesiderata più elevato indica che è più probabile che un messaggio di posta elettronica in blocco generi reclami (il risultato naturale se è probabile che il messaggio di posta elettronica sia posta indesiderata).
 
 - *Livello di probabilità di posta indesiderata (SCL):* livello di probabilità di posta indesiderata del messaggio. Più alto è il valore, maggiore è la probabilità che si tratti di un messaggio di posta indesiderata.
 

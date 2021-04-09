@@ -14,12 +14,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 ROBOTS: NOINDEX, NOFOLLOW
 description: Trovare, testare e distribuire app partner Microsoft e Microsoft per utenti e gruppi nell'organizzazione dal portale delle app integrate nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: f806d48e0ed582b1b5c1ee262058ce987125bd99
-ms.sourcegitcommit: 7ebed5810480d7c49f8ca03207b5ea84993d253f
+ms.openlocfilehash: da67cbe5f8b6e5f2da42e1f4b57a55d7d4a768fb
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51488290"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644477"
 ---
 # <a name="test-and-deploy-microsoft-365-apps-by-partners-in-the-integrated-apps-portal"></a>Testare e distribuire Microsoft 365 Apps dai partner nel portale delle app integrate
 
@@ -29,7 +29,7 @@ Per ulteriori informazioni sull'acquisto e la gestione delle licenze delle app d
 
 Per altre info su come i partner creano queste app, vedi Come pianificare un'offerta [SaaS per il marketplace commerciale](https://go.microsoft.com/fwlink/?linkid=2158277)
 
-Il portale delle app integrate è accessibile solo agli amministratori globali e disponibile solo per i clienti di WorldWide. Questa funzionalità non è disponibile nei cloud sovrani e governativi.
+Il portale delle app integrate è accessibile solo agli amministratori globali e disponibile solo per i clienti di tutto il mondo. Questa funzionalità non è disponibile nei cloud sovrani e governativi.
 
 Il portale delle app integrate visualizza un elenco di app, che include singole app e app di Microsoft 365 dai partner distribuiti nell'organizzazione. Sono elencate solo le app Web, le app SPFx, i componenti aggiuntivi di Office e le app di Teams. Per le app Web, sono disponibili 2 tipi di app.
 

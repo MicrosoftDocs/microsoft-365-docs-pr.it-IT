@@ -1,7 +1,7 @@
 ---
 title: Distribuire le funzionalità di protezione dalle minacce in Microsoft 365
 description: Panoramica dei servizi di protezione dalle minacce e delle funzionalità di sicurezza in Microsoft 365 E5. Proteggere gli account utente, i dispositivi, il contenuto di posta elettronica e altro ancora con Microsoft 365 E5.
-keywords: protezione dalle minacce, sicurezza, E5, attacco informatico, malware, M365, soluzione
+keywords: protezione avanzata dalle minacce, sicurezza, Microsoft 365 E5, soluzione, proteggere i dispositivi, defender
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-threatprotection
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 806c97a55b3cbe46d597566425cf71476586ecee
-ms.sourcegitcommit: dc1ac43a57fac6f57438859dd668f927d94fdf34
+ms.openlocfilehash: ea28e9c244b6b8faaeb9b1f3685d57169605cbb9
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51604379"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650315"
 ---
 # <a name="deploy-threat-protection-capabilities-across-microsoft-365-e5"></a>Distribuire le funzionalità di protezione dalle minacce in Microsoft 365 E5
 

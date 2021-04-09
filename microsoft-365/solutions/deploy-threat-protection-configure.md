@@ -1,7 +1,7 @@
 ---
 title: Passaggi per configurare le funzionalità di protezione dalle minacce in Microsoft 365
 description: Usare questo articolo come guida per l'implementazione della soluzione di protezione dalle minacce. Distribuire servizi e funzionalità di protezione dalle minacce in Microsoft 365 E5.
-keywords: sicurezza, configurazione, configurazione, Microsoft 365 E5, protezione avanzata dalle minacce
+keywords: soluzione di sicurezza, configurazione, configurazione, Microsoft 365 E5, protezione avanzata dalle minacce, defender
 ms.author: deniseb
 author: denisebmsft
 manager: dansimp
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-scenario
 ms.custom: ''
 f1.keywords: NOCSH
-ms.openlocfilehash: 81a1a4ce2e99caaca1025c6ddbbdfdc7ab7c449d
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: a0c728e5f273752792f851c72df2dfe243116221
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615508"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650219"
 ---
 # <a name="configure-threat-protection-capabilities-across-microsoft-365"></a>Configurare le funzionalità di protezione dalle minacce in Microsoft 365
 

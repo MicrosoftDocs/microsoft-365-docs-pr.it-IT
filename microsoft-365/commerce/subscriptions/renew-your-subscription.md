@@ -21,21 +21,14 @@ search.appverid:
 - MET150
 ms.assetid: 8d83b530-f4ca-47f6-a666-e5791cbacc7e
 description: Scopri come rinnovare Microsoft 365 attivando o disattivando la fatturazione ricorrente.
-ms.openlocfilehash: 8b38336ccb7a0a29b5782e55117389f6a19a0d80
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 76be85fe3cbeafb275478e6236e051b6a252c099
+ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50903525"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "51615172"
 ---
 # <a name="renew-microsoft-365-for-business"></a>Rinnovare Microsoft 365 per le aziende
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../../admin/microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Questo articolo si applica alla maggior parte degli abbonamenti a pagamento a Microsoft 365 per le aziende.
   
@@ -53,6 +46,19 @@ Se l'abbonamento è stato pagato in anticipo con un codice Product Key, scadrà 
 ::: moniker range="o365-worldwide"
 
 1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=842054" target="_blank">I tuoi prodotti</a>.
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">I tuoi prodotti</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">I tuoi prodotti</a>.
+::: moniker-end
+
 2. Selezionare l'abbonamento per cui si desidera gestire la fatturazione ricorrente.
 3. Nella pagina Dettagli abbonamento, in **Impostazioni abbonamento e pagamento**, selezionare **Modifica fatturazione ricorrente**.
 4. Nel riquadro **Modifica impostazioni fatturazione ricorrente**, selezionare **Attiva**, **Attiva, ma rinnova una volta**, oppure **Disattiva**.
@@ -63,46 +69,6 @@ Se l'abbonamento è stato pagato in anticipo con un codice Product Key, scadrà 
     > - Disattivando la **Fatturazione ricorrente**, l'abbonamento non verrà annullato. Se si desidera mantenere attivo l'abbonamento, è necessario pagare la fattura manualmente.
     > - Se si disattiva la **Fatturazione ricorrente**, l'abbonamento rimarrà attivo fino alla scadenza. È possibile visualizzare la data di scadenza nella pagina dei dettagli dell'abbonamento nella sezione **Impostazioni abbonamento e pagamento**.
     > - Per informazioni su come annullare immediatamente l'abbonamento, vedere [Annullare l'abbonamento](cancel-your-subscription.md).
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-  
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847745" target="_blank">Abbonamenti</a>.
-
-2. Scegliere l'abbonamento per cui si vuole gestire la fatturazione ricorrente.
-
-3. Per attivare la **fatturazione ricorrente**, impostare l'interruttore su **Attivato**.
-
-    ![Primo piano di una scheda di abbonamento con la fatturazione ricorrente attivata.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
-  
-    È possibile disattivare la **fatturazione ricorrente** spostando l'interruttore su **Disattivato**.
-
-    > [!NOTE]
-    > - L'impostazione della **fatturazione ricorrente** può essere modificata solo per gli abbonamenti attivi. Se l'abbonamento è già scaduto o è disabilitato, sarà necessario [riattivarlo](reactivate-your-subscription.md) prima di attivare o disattivare la **fatturazione ricorrente**.
-    > - Quando si disattiva la **fatturazione ricorrente**, l'abbonamento non viene immediatamente annullato, ma rimane attivo fino alla scadenza. È possibile visualizzare la data di scadenza nella scheda dell'abbonamento
-    > - Per informazioni su come annullare immediatamente l'abbonamento, vedere [Annullare l'abbonamento](cancel-your-subscription.md).
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-  
-1. Nell'interfaccia di amministrazione passare alla pagina **Fatturazione** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850626" target="_blank">Abbonamenti</a>.
-
-2. Scegliere l'abbonamento per cui si vuole gestire la fatturazione ricorrente.
-
-3. Per attivare la **fatturazione ricorrente**, impostare l'interruttore su **Attivato**.
-
-    ![Primo piano di una scheda di abbonamento con la fatturazione ricorrente attivata.](../../media/984464dc-6b63-4b24-84e1-67f6c4b1d48e.png)
-  
-    È possibile disattivare la **fatturazione ricorrente** spostando l'interruttore su **Disattivato**.
-
-    > [!NOTE]
-    > - L'impostazione della **fatturazione ricorrente** può essere modificata solo per gli abbonamenti attivi. Se l'abbonamento è già scaduto o è disabilitato, sarà necessario [riattivarlo](reactivate-your-subscription.md) prima di attivare o disattivare la **fatturazione ricorrente**.
-    > - Quando si disattiva la **fatturazione ricorrente**, l'abbonamento non viene immediatamente annullato, ma rimane attivo fino alla scadenza. È possibile visualizzare la data di scadenza nella scheda dell'abbonamento.
-    > - Per informazioni su come annullare immediatamente l'abbonamento, vedere [Annullare l'abbonamento](cancel-your-subscription.md).
-
-::: moniker-end
 
 ## <a name="related-articles"></a>Articoli correlati
 

@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Riepilogo: comprendere le azioni e gli impatti delle fasi di migrazione del passaggio da Microsoft Cloud Germania (Microsoft Cloud Deutschland) ai servizi di Office 365 nella nuova area dati tedesca.'
-ms.openlocfilehash: 0cf1358b4170b69d3506062c336a1cf67a2da2de
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: e3ed1d76a755ce6326ac6ae53b990136a10b564a
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591733"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644717"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Azioni e impatti delle fasi di migrazione per la migrazione da Microsoft Cloud Deutschland
 
@@ -128,7 +128,7 @@ Considerazioni aggiuntive:
 
 **Si applica a:** Tutti i clienti che utilizzano Exchange Online
 
-Se si utilizza exchange Online ibrido: gli amministratori della distribuzione ibrida di Exchange Online devono eseguire la procedura guidata di configurazione ibrida  **(HCW)** più volte come parte di questa transizione. Applicare le [prelavorazioni di Exchange](ms-cloud-germany-transition-add-pre-work.md#exchange-online-hybrid-configuration) **prima dell'inizio della fase 5 della migrazione.** I clienti ibridi di Exchange Online devono eseguire la versione più recente della procedura guidata di configurazione ibrida di Exchange (HCW) in modalità "Office 365 Germany" per preparare la configurazione locale per la migrazione ai servizi globali di Office 365.
+Se si utilizza exchange Online ibrido: gli amministratori della distribuzione ibrida di Exchange Online devono eseguire la procedura guidata di configurazione ibrida  **(HCW)** più volte come parte di questa transizione. Applicare le [prelavorazioni di Exchange](ms-cloud-germany-transition-add-pre-work.md#exchange-online-hybrid-customers) **prima dell'inizio della fase 5 della migrazione.** I clienti ibridi di Exchange Online devono eseguire la versione più recente della procedura guidata di configurazione ibrida di Exchange (HCW) in modalità "Office 365 Germany" per preparare la configurazione locale per la migrazione ai servizi globali di Office 365.
 
 Al termine della fase di migrazione **9** (quando viene pubblicato l'avviso del Centro messaggi), è necessario eseguire di nuovo HCW usando le impostazioni di Office 365 Worldwide per puntare i sistemi locali ai servizi globali di Office 365.
 

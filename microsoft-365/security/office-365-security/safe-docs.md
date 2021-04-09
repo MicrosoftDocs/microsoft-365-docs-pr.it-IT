@@ -16,19 +16,18 @@ ms.collection:
 description: Informazioni su Documenti sicuri in Microsoft 365 E5 o Microsoft 365 E5 Security.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 78ae99158e30046923d24897e7ab9b45adff31d0
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 1186c7856d0b979c483cf6dd1c0a010ab582e2ce
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445397"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644753"
 ---
 # <a name="safe-documents-in-microsoft-365-e5"></a>Sicurezza documenti in Microsoft 365 E5
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender-for-office.md)]
 
 **Si applica a**
-- [Microsoft Defender per Office 365 Piano 2](defender-for-office-365.md)
 - [Microsoft 365 Defender](../defender/microsoft-365-defender.md)
 
 Documenti sicuri è una funzionalità di Microsoft 365 E5 o Microsoft 365 E5 Security che utilizza [Microsoft Defender for Endpoint](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection) per analizzare documenti e file aperti in [Visualizzazione](https://support.microsoft.com/office/d6f09ac7-e6b9-4495-8e43-2bbcdbcb6653) protetta o Application Guard [per Office.](https://support.microsoft.com/topic/9e0fb9c2-ffad-43bf-8ba3-78f785fdba46)
@@ -71,7 +70,7 @@ I file inviati da Documenti sicuri non vengono conservati in Defender oltre il t
 
    - **Consentire agli** utenti di fare clic su Visualizzazione protetta anche se Documenti sicuri identifica il file come dannoso: è consigliabile lasciare disattivata questa opzione (lasciare l'interruttore a sinistra: ![ Interruttore ](../../media/scc-toggle-off.png) disattivato).
 
-   Al termine, scegliere **Salva**.
+   Al termine, fare clic su **Salva**.
 
    ![Impostazioni documenti sicuri dopo aver selezionato Impostazioni globali nella pagina Allegati sicuri.](../../media/safe-docs.png)
 

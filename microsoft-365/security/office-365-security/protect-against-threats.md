@@ -20,12 +20,12 @@ description: Gli amministratori possono ottenere informazioni sulla protezione d
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 189325dab37a548c717cd554ecd1d37c19ae57ea
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 2df88df9f1f0e2c14c0adcf0d5772189a1276e9d
+ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205796"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "51650231"
 ---
 # <a name="protect-against-threats"></a>Protezione dalle minacce
 
@@ -60,7 +60,7 @@ Le funzionalità di protezione dalle minacce sono incluse in *tutti gli* abbonam
 |Protezione dalla posta indesiderata|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Eliminazione automatica zero ore (per la posta elettronica)|[EOP](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)|
 |Protezione da URL e file dannosi nei messaggi di posta elettronica e nei documenti di Office (collegamenti sicuri e allegati sicuri)|[Microsoft Defender per Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
-|Attivare allegati sicuri per i carichi di lavoro di SharePoint, OneDrive e Microsoft Teams|[Defender per Office 365 ](turn-on-mdo-for-spo-odb-and-teams.md)|
+|Attivare allegati sicuri per i carichi di lavoro di SharePoint, OneDrive e Microsoft Teams|[Defender per Office 365](turn-on-mdo-for-spo-odb-and-teams.md)|
 |Protezione anti-phishing avanzata|[Defender per Office 365](/office365/servicedescriptions/office-365-advanced-threat-protection-service-description)|
 
 ### <a name="roles-and-permissions"></a>Ruoli e autorizzazioni
@@ -188,7 +188,7 @@ Per configurare collegamenti [sicuri,](safe-links.md)esaminare e modificare le i
    - **Non tenere traccia quando gli utenti fanno clic su Collegamenti sicuri**: Disattiva questa impostazione per tenere traccia dei clic degli utenti: Disattiva ![ ](../../media/scc-toggle-off.png) .
    - Non consentire agli utenti di fare clic su collegamenti sicuri **all'URL originale:** verifica che questa impostazione sia attivata: ![ Attiva/ ](../../media/scc-toggle-on.png) attiva.
 
-   Al termine, scegliere **Salva**.
+   Al termine, fare clic su **Salva**.
 
 2. Tornare alla pagina collegamenti sicuri principale, fare clic su **Crea.**
 

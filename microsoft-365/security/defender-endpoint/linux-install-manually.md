@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 91dda662b12893fb010e8bb46541a87ea4a8cd27
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: c695eb0d786e73da5adb95bbca5c1747243d6203
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587672"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644741"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-for-linux-manually"></a>Distribuire manualmente Microsoft Defender per Endpoint per Linux
 
@@ -385,7 +385,7 @@ Durante l'aggiornamento del sistema operativo a una nuova versione principale, d
 
 ## <a name="how-to-migrate-from-insiders-fast-to-production-channel"></a>Come eseguire la migrazione da Insiders-Fast al canale di produzione
 
-1. Disinstallare la versione "Insiders-Fast Channel" di MDE per macOS.
+1. Disinstallare la versione "Insiders-Fast Channel" di MDE per Linux.
 
     ``
     sudo yum remove mdatp
