@@ -20,16 +20,18 @@ search.appverid:
 - MOE150
 ms.assetid: 613a845c-4b71-41de-b331-acdcf5b6625d
 description: "Informazioni su come configurare Posta in arrivo evidenziata per tutti gli utenti o per utenti specifici dell'organizzazione. "
-ms.openlocfilehash: 7059fbb886669af99c1471789cbbc623dc9719b8
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 62a38f911e4e1b878af6489f096f17644e070978
+ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914283"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "51644513"
 ---
 # <a name="configure-focused-inbox-for-everyone-in-your-organization"></a>Configurare Posta in arrivo evidenziata per tutti gli utenti nell'organizzazione
 
-  Se si è responsabili della configurazione della posta elettronica per TUTTI gli utenti di un'azienda, questo articolo contiene tutte le informazioni necessarie. Spiega come personalizzare o disattivare l'opzione per l'azienda e risponde alle [domande frequenti](#faq-for-focused-inbox).  <br/> Se si vuole disattivare la Posta in arrivo evidenziata solo per il proprio account, vedere [Disattivare Posta in arrivo evidenziata](https://support.microsoft.com/office/f714d94d-9e63-4217-9ccb-6cb2986aa1b2).  
+Se si è responsabili della configurazione della posta elettronica per TUTTI gli utenti di un'azienda, questo articolo contiene tutte le informazioni necessarie. Spiega come personalizzare o disattivare l'opzione per l'azienda e risponde alle [domande frequenti](#faq-for-focused-inbox).
+
+Se si vuole disattivare la Posta in arrivo evidenziata solo per il proprio account, vedere [Disattivare Posta in arrivo evidenziata](https://support.microsoft.com/office/f714d94d-9e63-4217-9ccb-6cb2986aa1b2).  
 
 Per essere certi che gli utenti ricevano specifici messaggi di posta elettronica aziendali, ad esempio dal reparto Risorse umane o Paghe e stipendi, è possibile configurare Posta in arrivo evidenziata in modo che questi messaggi siano inclusi nella visualizzazione Evidenziata. È anche possibile scegliere se consentire agli utenti dell'organizzazione di visualizzare Posta in arrivo evidenziata nella propria cassetta postale.
   
@@ -37,7 +39,7 @@ Per essere certi che gli utenti ricevano specifici messaggi di posta elettronica
 
 Per attivare o disattivare Posta in arrivo evidenziata per tutti gli utenti dell'organizzazione, si usa PowerShell. Si vuole eseguire questa operazione nell'interfaccia di amministrazione di Microsoft 365? È possibile comunicarlo al team di progettazione Microsoft. **[Votare qui.](https://go.microsoft.com/fwlink/?linkid=862489)**
   
- **Per disattivare la Posta in arrivo evidenziata:**
+**Per disattivare la Posta in arrivo evidenziata:**
   
 L'esempio di PowerShell seguente **disattiva** la Posta in arrivo evidenziata nell'organizzazione. La funzionalità rimane comunque disponibile per gli utenti, che, se vogliono, possono riabilitarla in ciascuno dei propri client. 
   
@@ -47,9 +49,9 @@ L'esempio di PowerShell seguente **disattiva** la Posta in arrivo evidenziata ne
 
 3. Eseguire il cmdlet **Get-OrganizationConfig**. 
 
- ``` PowerShell
-Get-OrganizationConfig
- ```
+    ```powershell
+    Get-OrganizationConfig
+    ```
 
 4. Cercare **FocusedInboxOn** per visualizzare l'impostazione corrente: 
 
@@ -57,20 +59,20 @@ Get-OrganizationConfig
   
 5. Eseguire il cmdlet seguente per disattivare la Posta in arrivo evidenziata.
 
- ``` PowerShell
- Set-OrganizationConfig -FocusedInboxOn $false
- ```
+    ```powershell
+    Set-OrganizationConfig -FocusedInboxOn $false
+    ```
 
 6. Eseguire di nuovo il cmdlet **Get-OrganizationConfig**. Si vedrà che FocusedInboxOn è impostato su $false, che indica che è disattivato. 
 
- **Per attivare la Posta in arrivo evidenziata:**
+**Per attivare la Posta in arrivo evidenziata:**
   
 - Nel passaggio 5 precedente eseguire il cmdlet seguente per attivare la Posta in arrivo evidenziata.
 
- ``` PowerShell
- Set-OrganizationConfig -FocusedInboxOn $true
- ```
-
+  ```powershell
+  Set-OrganizationConfig -FocusedInboxOn $true
+  ```
+    
 ## <a name="what-do-users-see-after-i-turn-on-focused-inbox"></a>Cosa vedono gli utenti dopo l'attivazione della Posta in arrivo evidenziata? 
 
 Per accedere alla visualizzazione Evidenziata, gli utenti devono chiudere e riavviare Outlook. Dopo il riavvio di Outlook, nell'interfaccia utente di Outlook vedranno una descrizione comando che consentirà loro di usare la nuova Posta in arrivo evidenziata.
@@ -85,7 +87,7 @@ Quando un utente decide di iniziare a usare la Posta in arrivo evidenziata, la f
   
 ## <a name="turn-focused-inbox-on-or-off-for-specific-users"></a>Attivare o disattivare la Posta in arrivo evidenziata per utenti specifici
 
-Questo esempio **disattiva** la Posta in arrivo evidenziata per Tim Matthews nell'organizzazione Contoso. La funzionalità rimarrà comunque disponibile per questo utente, che, se vuole, può abilitare di nuovo la Posta in arrivo evidenziata in ognuno dei suoi client. 
+Questo esempio **disattiva** Posta in arrivo evidenziata per Lorenzo Russo nell'organizzazione Contoso. La caratteristica rimarrà comunque disponibile per l’utente che, se vuole, può abilitare di nuovo Posta in arrivo evidenziata in ognuno dei propri client. 
   
 1. [Connettersi a Exchange Online tramite la sessione remota di PowerShell](/powershell/exchange/connect-to-exchange-online-powershell).
 
@@ -93,9 +95,9 @@ Questo esempio **disattiva** la Posta in arrivo evidenziata per Tim Matthews nel
 
 3. Eseguire il cmdlet **Get-FocusedInbox**, ad esempio: 
 
- ``` PowerShell
- Get-FocusedInbox -Identity <tim@contoso.com>
- ```
+    ```powershell
+    Get-FocusedInbox -Identity <tim@contoso.com>
+    ```
 
 4. Cercare FocusedInboxOn per visualizzare l'impostazione corrente:
 
@@ -103,15 +105,15 @@ Questo esempio **disattiva** la Posta in arrivo evidenziata per Tim Matthews nel
   
 5. Eseguire il cmdlet seguente per disattivare la Posta in arrivo evidenziata:
 
- ``` PowerShell
- Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $false
- ```
+    ```powershell
+    Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $false
+    ```
 
-6. OPPURE, eseguire il cmdlet seguente per attivarla:
+    OPPURE, eseguire il cmdlet seguente per attivarla:
 
- ``` PowerShell
- Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $true
- ```
+    ```powershell
+    Set-FocusedInbox -Identity <tim@contoso.com> -FocusedInboxOn $true
+    ```
 
 ## <a name="use-the-ui-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>Usare l'interfaccia utente per creare una regola di trasporto che indirizzi i messaggi di posta elettronica alla visualizzazione Evidenziata per tutti gli utenti
 
@@ -125,8 +127,8 @@ Questo esempio **disattiva** la Posta in arrivo evidenziata per Tim Matthews nel
 
     ![focusedinbox payroll](../../media/focusedinbox-transport-rule.PNG)
 
-> [!NOTE]
-> Il testo del valore dell’intestazione del messaggio in questo esempio è **X-MS-Exchange-Organization-BypassFocusedInbox**.
+    > [!NOTE]
+    > Il testo del valore dell’intestazione del messaggio in questo esempio è **X-MS-Exchange-Organization-BypassFocusedInbox**.
   
 ## <a name="use-powershell-to-create-a-transport-rule-to-direct-email-messages-to-the-focused-view-for-all-your-users"></a>Usare PowerShell per creare una regola di trasporto che indirizzi i messaggi di posta elettronica alla visualizzazione Evidenziata per tutti gli utenti
 
@@ -136,9 +138,9 @@ Questo esempio **disattiva** la Posta in arrivo evidenziata per Tim Matthews nel
 
 3. Eseguire questo comando per consentire il recapito di tutti i messaggi inviati, ad esempio, da "Reparto Retribuzioni" alla Posta in arrivo evidenziata.
 
- ``` PowerShell
- New-TransportRule -Name <name_of_the_rule> -From "Payroll Department" -SetHeaderName "X-MS-Exchange-Organization-BypassFocusedInbox" -SetHeaderValue "true"
- ```
+    ```powershell
+    New-TransportRule -Name <name_of_the_rule> -From "Payroll Department" -SetHeaderName "X-MS-Exchange-Organization-BypassFocusedInbox" -SetHeaderValue "true"
+    ```
 
 > [!IMPORTANT]
 > In questo esempio sia "X-MS-Exchange-Organization-BypassFocusedInbox" che "true" fanno distinzione tra maiuscole e minuscole.
@@ -147,6 +149,10 @@ Questo esempio **disattiva** la Posta in arrivo evidenziata per Tim Matthews nel
 ### <a name="how-do-you-know-this-worked"></a>Come verificare se l'operazione ha avuto esito positivo
 
 È possibile controllare le intestazioni dei messaggi di posta elettronica per vedere se i messaggi vengono spostati nella Posta in arrivo in seguito all'applicazione del bypass della regola di trasporto di Posta in arrivo evidenziata. Selezionare un messaggio di posta elettronica da una cassetta postale dell'organizzazione a cui è applicata la regola di trasporto Posta in arrivo evidenziata. Nelle intestazioni del messaggio cercare **X-MS-Exchange-Organization-BypassFocusedInbox: true**. Se è visualizzato, il bypass è stato applicato. Per informazioni su come trovare le informazioni sull'intestazione, consultare l'articolo [Visualizzare le informazioni di intestazione Internet per un messaggio di posta elettronica](https://go.microsoft.com/fwlink/p/?LinkId=822530).
+
+### <a name="what-will-the-user-see"></a>Cosa visualizza l'utente?
+
+Se è presente una regola di trasporto, verrà visualizzata una notifica per l'override. Outlook sul Web disabiliterà il messaggio "Sposta sempre in Altra" e mostrerà una descrizione comando. I client Outlook sul desktop consentiranno la selezione di "Sposta sempre in Altra" e apriranno una finestra di dialogo.
 
 ## <a name="turn-onoff-clutter"></a>Attivare/disattivare Messaggi secondari
 
@@ -201,3 +207,4 @@ Sono disponibili due cmdlet per il controllo di Posta in arrivo evidenziata. Qua
 ### <a name="can-i-run-a-script-to-see-who-has-turned-on-focused-inbox"></a>È possibile eseguire uno script per vedere chi ha attivato la Posta in arrivo evidenziata?
 
 No e si tratta di un comportamento da progettazione. L'abilitazione della Posta in arrivo evidenziata è un'impostazione sul lato client, quindi il cmdlet può solo indicare se la cassetta postale dell'utente è idonea per l'esperienza client. Questa funzionalità potrebbe essere abilitata in alcuni client e disabilitata in altri allo stesso momento, ad esempio abilitata nell'app Outlook e in Outlook Mobile, ma disabilitata in Outlook sul Web.
+
