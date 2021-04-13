@@ -1,6 +1,6 @@
 ---
-title: Onboard al servizio Microsoft Defender ATP
-description: Informazioni su come eseguire l'onboardboard degli endpoint nel servizio Microsoft Defender ATP
+title: Onboard al servizio Microsoft Defender for Endpoint
+description: Informazioni su come eseguire l'onboardboard degli endpoint a Microsoft Defender per il servizio endpoint
 keywords: ''
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 56a62ca4ebbd140f507d1735c663924014ca4771
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: cc538c887397d5bbea78f63c8a8acd318ec7fe9f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445733"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689534"
 ---
 # <a name="onboard-to-the-microsoft-defender-for-endpoint-service"></a>Onboard al servizio Microsoft Defender for Endpoint
 
@@ -71,7 +71,7 @@ Nella tabella seguente sono elencati gli strumenti disponibili in base all'endpo
 
 | Endpoint     | Opzioni degli strumenti                       |
 |--------------|------------------------------------------|
-| **Windows**  |  [Script locale (fino a 10 dispositivi)](configure-endpoints-script.md) <br>  [Criteri di gruppo](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobile Device Manager](configure-endpoints-mdm.md) <br>   [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Script VDI](configure-endpoints-vdi.md)   |
+| **Windows**  |  [Script locale (fino a 10 dispositivi)](configure-endpoints-script.md) <br>  [Criteri di gruppo](configure-endpoints-gp.md) <br>  [Microsoft Endpoint Manager/ Mobile Device Manager](configure-endpoints-mdm.md) <br> [Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md) <br> [Script VDI](configure-endpoints-vdi.md) <br> [Centro sicurezza di Azure](configure-server-endpoints.md#integration-with-azure-security-center) |
 | **macOS**    | [Script locali](mac-install-manually.md) <br> [Microsoft Endpoint Manager](mac-install-with-intune.md) <br> [JAMF Pro](mac-install-with-jamf.md) <br> [Gestione di dispositivi mobili](mac-install-with-other-mdm.md) |
 | **Linux Server** | [Script locale](linux-install-manually.md) <br> [Pupazzo](linux-install-with-puppet.md) <br> [Ansible](linux-install-with-ansible.md)|
 | **iOS**      | [Basato su app](ios-install.md)                                |

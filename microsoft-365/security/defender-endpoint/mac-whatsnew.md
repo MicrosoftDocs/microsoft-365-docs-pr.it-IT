@@ -1,6 +1,6 @@
 ---
-title: Novità di Microsoft Defender per Endpoint per Mac
-description: Informazioni sulle modifiche principali per le versioni precedenti di Microsoft Defender per Endpoint per Mac.
+title: Novità di Microsoft Defender per Endpoint su Mac
+description: Informazioni sulle modifiche principali per le versioni precedenti di Microsoft Defender per Endpoint su Mac.
 keywords: microsoft, defender, atp, mac, installazione, macos, novità
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5cd1f64d006b5462634dd47df9083e1a89db0e8c
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: 67bbc987dc339c0e1f0354e07d6d2db8c39ec8b9
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615218"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689042"
 ---
-# <a name="whats-new-in-microsoft-defender-for-endpoint-for-mac"></a>Novità di Microsoft Defender per Endpoint per Mac
+# <a name="whats-new-in-microsoft-defender-for-endpoint-on-mac"></a>Novità di Microsoft Defender per Endpoint su Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -40,7 +40,7 @@ ms.locfileid: "51615218"
 
 ## <a name="1012569-20121022125690"></a>101.25.69 (20.121022.12569.0)
 
-- Microsoft Defender per Endpoint per Mac è ora disponibile in anteprima per i clienti del governo statunitense. Per altre informazioni, vedi [Microsoft Defender for Endpoint per i clienti del governo statunitense.](gov.md)
+- Microsoft Defender per Endpoint su macOS è ora disponibile in anteprima per i clienti del governo degli Stati Uniti. Per altre informazioni, vedi [Microsoft Defender for Endpoint per i clienti del governo statunitense.](gov.md)
 - Miglioramenti delle prestazioni (in particolare per la situazione in cui viene usata l'app XCode Simulator) & correzioni di bug
 
 ## <a name="1012364-20121021123640"></a>101.23.64 (20.121021.12364.0)
@@ -61,7 +61,7 @@ ms.locfileid: "51615218"
 > [!NOTE]
 > La sintassi dello strumento da riga di comando precedente è stata deprecata con questa versione. Per informazioni sulla nuova sintassi, vedere [Resources](mac-resources.md#configuring-from-the-command-line).
 
-- È stata aggiunta una nuova opzione della riga di comando per disabilitare l'estensione di rete: `mdatp system-extension network-filter disable` . Questo comando può essere utile per risolvere i problemi di rete che potrebbero essere correlati a Microsoft Defender per Endpoint per Mac
+- È stata aggiunta una nuova opzione della riga di comando per disabilitare l'estensione di rete: `mdatp system-extension network-filter disable` . Questo comando può essere utile per risolvere i problemi di rete che potrebbero essere correlati a Microsoft Defender per Endpoint su Mac
 - Miglioramenti delle prestazioni & correzioni di bug
 
 ## <a name="1011921-20120101119210"></a>101.19.21 (20.120101.11921.0)
@@ -94,7 +94,7 @@ ms.locfileid: "51615218"
 
 - Questa versione del prodotto è stata convalidata in macOS Big Sur 11 beta 9
 
-- La nuova sintassi per `mdatp` lo strumento da riga di comando è ora quella predefinita. Per altre informazioni sulla nuova sintassi, vedi [Risorse per Microsoft Defender per Endpoint per Mac](mac-resources.md#configuring-from-the-command-line)
+- La nuova sintassi per `mdatp` lo strumento da riga di comando è ora quella predefinita. Per altre informazioni sulla nuova sintassi, vedi [Risorse per Microsoft Defender per Endpoint su macOS](mac-resources.md#configuring-from-the-command-line)
 
   > [!NOTE]
   > La sintassi dello strumento da riga di comando precedente verrà rimossa dal prodotto il **1° gennaio 2021.**
@@ -159,7 +159,7 @@ ms.locfileid: "51615218"
 
 ## <a name="1009027"></a>100.90.27
 
-- Ora puoi impostare [un canale di aggiornamento](mac-updates.md#set-the-channel-name) per Microsoft Defender per Endpoint per Mac diverso dal canale di aggiornamento a livello di sistema
+- Ora puoi impostare [un canale di](mac-updates.md#set-the-channel-name) aggiornamento per Microsoft Defender per Endpoint in macOS diverso dal canale di aggiornamento a livello di sistema
 - Icona Nuovo prodotto
 - Altri miglioramenti dell'esperienza utente
 - Correzioni di bug
@@ -196,7 +196,7 @@ ms.locfileid: "51615218"
 
 ## <a name="1007942"></a>100.79.42
 
-- È stato risolto un problema per cui Microsoft Defender per Endpoint per Mac a volte interferiva con Time Machine
+- È stato risolto un problema a causa del quale Microsoft Defender per Endpoint sul Mac interferiva con Time Machine
 - È stata aggiunta una nuova opzione all'utilità della riga di comando per testare la connettività con il servizio back-end
   ```bash
   mdatp connectivity test

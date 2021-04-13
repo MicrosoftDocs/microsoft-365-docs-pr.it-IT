@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender per endpoint per Mac
+title: Microsoft Defender per Endpoint su Mac
 ms.reviewer: ''
-description: Scopri come installare, configurare, aggiornare e usare Microsoft Defender per Endpoint per Mac.
+description: Scopri come installare, configurare, aggiornare e usare Microsoft Defender per Endpoint su Mac.
 keywords: microsoft, defender, atp, mac, installazione, distribuire, disinstallazione, intune, jamf, macos, big sur, catalina, mojave, mde per mac
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 22d35a42eb7fb7eadbba686c292729772951c05c
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 406a0e699ea563670f41355d122aa54ba8667a0e
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500685"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687746"
 ---
-# <a name="microsoft-defender-for-endpoint-for-mac"></a>Microsoft Defender per endpoint per Mac
+# <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender per Endpoint su Mac
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,23 +36,23 @@ ms.locfileid: "51500685"
 
 > Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-Questo argomento descrive come installare, configurare, aggiornare e usare Defender per Endpoint per Mac.
+Questo argomento descrive come installare, configurare, aggiornare e usare Defender per Endpoint su Mac.
 
 > [!CAUTION]
-> L'esecuzione di altri prodotti di protezione degli endpoint di terze parti insieme a Microsoft Defender per Endpoint per Mac può causare problemi di prestazioni ed effetti collaterali imprevedibili. Se la protezione degli endpoint non Microsoft è un requisito assoluto nell'ambiente, puoi comunque sfruttare in modo sicuro la funzionalità Defender for Endpoint per Mac EDR dopo aver configurato la funzionalità antivirus per l'esecuzione in [modalità passiva.](mac-preferences.md#enable--disable-passive-mode)
+> L'esecuzione di altri prodotti di protezione degli endpoint di terze parti insieme a Microsoft Defender per Endpoint su Mac può causare problemi di prestazioni ed effetti collaterali imprevedibili. Se la protezione degli endpoint non Microsoft è un requisito assoluto nell'ambiente, puoi comunque sfruttare in modo sicuro la funzionalità Defender for Endpoint on Mac EDR dopo aver configurato la funzionalità antivirus per l'esecuzione in [modalità passiva.](mac-preferences.md#enable--disable-passive-mode)
 
 ## <a name="whats-new-in-the-latest-release"></a>Novità della versione più recente
 
 [Novità di Microsoft Defender per Endpoint](whats-new-in-microsoft-defender-atp.md)
 
-[Novità di Microsoft Defender per Endpoint per Mac](mac-whatsnew.md)
+[Novità di Microsoft Defender per Endpoint su Mac](mac-whatsnew.md)
 
 > [!TIP]
-> Se hai commenti e suggerimenti che vuoi condividere, invialo aprendo Microsoft Defender per Endpoint per Mac nel dispositivo e accedendo alla guida Invia  >  **feedback.**
+> Se hai commenti e suggerimenti che vuoi condividere, invialo aprendo Microsoft Defender per Endpoint sul Mac nel dispositivo e accedendo alla guida Invia  >  **feedback.**
 
 Per ottenere le funzionalità più recenti, incluse le funzionalità di anteprima (ad esempio il rilevamento degli endpoint e la risposta per i dispositivi Mac), configura il dispositivo macOS che esegue Microsoft Defender for Endpoint come dispositivo "Insider".
 
-## <a name="how-to-install-microsoft-defender-for-endpoint-for-mac"></a>Come installare Microsoft Defender per Endpoint per Mac
+## <a name="how-to-install-microsoft-defender-for-endpoint-on-mac"></a>Come installare Microsoft Defender per Endpoint su Mac
 
 ### <a name="prerequisites"></a>Prerequisiti
 
@@ -62,7 +62,7 @@ Per ottenere le funzionalità più recenti, incluse le funzionalità di anteprim
 
 ### <a name="installation-instructions"></a>Istruzioni di installazione
 
-Esistono diversi metodi e strumenti di distribuzione che puoi usare per installare e configurare Defender per Endpoint per Mac.
+Esistono diversi metodi e strumenti di distribuzione che puoi usare per installare e configurare Defender per Endpoint su Mac.
 
 - Strumenti di gestione di terze parti:
     - [Distribuzione basata su Microsoft Intune](mac-install-with-intune.md)
@@ -91,7 +91,7 @@ Dopo aver abilitato il servizio, potrebbe essere necessario configurare la rete 
 
 ### <a name="licensing-requirements"></a>Requisiti per la licenza
 
-Microsoft Defender per Endpoint per Mac richiede una delle seguenti offerte per contratti multilicenza Microsoft:
+Microsoft Defender per Endpoint su Mac richiede una delle seguenti offerte per contratti multilicenza Microsoft:
 
 - Microsoft 365 E5 (M365 E5)
 - Microsoft 365 E5 Security
@@ -121,7 +121,7 @@ Se un proxy o un firewall blocca il traffico anonimo, assicurati che il traffico
 > [!WARNING]
 > I proxy autenticati non sono supportati. Assicurati che vengano usati solo PAC, WPAD o un proxy statico.
 >
-> Anche l'ispezione e l'intercettazione dei proxy SSL non sono supportati per motivi di sicurezza. Configura un'eccezione per l'ispezione SSL e il server proxy per passare direttamente i dati da Microsoft Defender per Endpoint per Mac agli URL rilevanti senza intercettazione. L'aggiunta del certificato di intercettazione all'archivio globale non consentirà l'intercettazione.
+> Anche l'ispezione e l'intercettazione dei proxy SSL non sono supportati per motivi di sicurezza. Configura un'eccezione per l'ispezione SSL e il server proxy per passare direttamente i dati da Microsoft Defender per Endpoint su macOS agli URL rilevanti senza intercettazione. L'aggiunta del certificato di intercettazione all'archivio globale non consentirà l'intercettazione.
 
 Per verificare che una connessione non sia bloccata, aprire [https://x.cp.wd.microsoft.com/api/report](https://x.cp.wd.microsoft.com/api/report) e [https://cdn.x.cp.wd.microsoft.com/ping](https://cdn.x.cp.wd.microsoft.com/ping) in un browser.
 
@@ -145,20 +145,20 @@ Dopo l'installazione di Microsoft Defender for Endpoint, è possibile convalidar
 mdatp connectivity test
 ```
 
-## <a name="how-to-update-microsoft-defender-for-endpoint-for-mac"></a>Come aggiornare Microsoft Defender per Endpoint per Mac
+## <a name="how-to-update-microsoft-defender-for-endpoint-on-mac"></a>Come aggiornare Microsoft Defender per Endpoint su Mac
 
-Microsoft pubblica regolarmente aggiornamenti software per migliorare le prestazioni, la sicurezza e offrire nuove funzionalità. Per aggiornare Microsoft Defender per Endpoint per Mac, viene utilizzato un programma denominato Microsoft AutoUpdate (MAU). Per altre informazioni, vedi [Distribuire gli aggiornamenti per Microsoft Defender per Endpoint per Mac.](mac-updates.md)
+Microsoft pubblica regolarmente aggiornamenti software per migliorare le prestazioni, la sicurezza e offrire nuove funzionalità. Per aggiornare Microsoft Defender per Endpoint su Mac, viene utilizzato un programma denominato Microsoft AutoUpdate (MAU). Per altre informazioni, vedi [Distribuire gli aggiornamenti per Microsoft Defender per Endpoint su Mac.](mac-updates.md)
 
-## <a name="how-to-configure-microsoft-defender-for-endpoint-for-mac"></a>Come configurare Microsoft Defender per Endpoint per Mac
+## <a name="how-to-configure-microsoft-defender-for-endpoint-on-mac"></a>Come configurare Microsoft Defender per Endpoint su Mac
 
-Le indicazioni su come configurare il prodotto in ambienti aziendali sono disponibili in Impostare le preferenze [per Microsoft Defender per Endpoint per Mac.](mac-preferences.md)
+Le indicazioni su come configurare il prodotto in ambienti aziendali sono disponibili in Impostare le preferenze [per Microsoft Defender per Endpoint su Mac.](mac-preferences.md)
 
 ## <a name="macos-kernel-and-system-extensions"></a>Estensioni del kernel e del sistema macOS
 
-In linea con l'evoluzione di macOS, stiamo preparando un aggiornamento di Microsoft Defender per Endpoint per Mac che sfrutta le estensioni di sistema anziché le estensioni del kernel. Per informazioni dettagliate, vedi [Novità di Microsoft Defender per Endpoint per Mac.](mac-whatsnew.md)
+In linea con l'evoluzione di macOS, stiamo preparando un aggiornamento di Microsoft Defender per Endpoint su Mac che sfrutta le estensioni di sistema anziché le estensioni del kernel. Per informazioni dettagliate, vedi [Novità di Microsoft Defender per Endpoint su Mac.](mac-whatsnew.md)
 
 ## <a name="resources"></a>Risorse
 
-- Per altre informazioni sulla registrazione, la disinstallazione o altri argomenti, vedi [Risorse per Microsoft Defender per Endpoint per Mac.](mac-resources.md)
+- Per altre informazioni sulla registrazione, la disinstallazione o altri argomenti, vedi [Risorse per Microsoft Defender per Endpoint su Mac.](mac-resources.md)
 
-- [Privacy per Microsoft Defender per Endpoint per Mac](mac-privacy.md).
+- [Privacy per Microsoft Defender per Endpoint su Mac](mac-privacy.md).

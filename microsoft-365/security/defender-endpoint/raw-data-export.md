@@ -1,6 +1,6 @@
 ---
 title: Flusso dell'evento Microsoft Defender for Endpoint
-description: Informazioni su come configurare Microsoft Defender ATP per trasmettere eventi di ricerca avanzata agli hub eventi o all'account di archiviazione di Azure
+description: Informazioni su come configurare Microsoft Defender per Endpoint per trasmettere eventi di ricerca avanzata agli hub eventi o all'account di archiviazione di Azure
 keywords: esportazione di dati non elaborati, API di streaming, API, hub eventi, archiviazione di Azure, account di archiviazione, Ricerca avanzata, condivisione di dati non elaborati
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 22f4e4c974b60e291273eb9bebfa34583f4e2fb7
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f6a45629d610ea3cc3ca7d517021a215b72b1439
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063845"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688754"
 ---
 # <a name="raw-data-streaming-api"></a>Raw Data Streaming API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
 

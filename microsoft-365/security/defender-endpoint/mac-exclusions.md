@@ -18,20 +18,20 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fb0cffb9716b2d0940e816dc69217486fd51a21d
-ms.sourcegitcommit: a965c498e6b3890877f895d5197898b306092813
+ms.openlocfilehash: b1282543a68ce4cb5c322423656d33c5db12b97b
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51379336"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688586"
 ---
-# <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-for-mac"></a>Configurare e convalidare le esclusioni per Microsoft Defender per Endpoint per Mac
+# <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>Configurare e convalidare le esclusioni per Microsoft Defender for Endpoint in macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
@@ -57,7 +57,7 @@ Esclusione | Definizione | Esempi
 Estensione del file | Tutti i file con estensione, in qualsiasi punto del computer | `.test`
 File | Un file specifico identificato dal percorso completo | `/var/log/test.log`<br/>`/var/log/*.log`<br/>`/var/log/install.?.log`
 Cartella | Tutti i file nella cartella specificata (in modo ricorsivo) | `/var/log/`<br/>`/var/*/`
-Processo | Un processo specifico (specificato dal percorso completo o dal nome del file) e tutti i file aperti da esso | `/bin/cat`<br/>`cat`<br/>`c?t`
+Procedura | Un processo specifico (specificato dal percorso completo o dal nome del file) e tutti i file aperti da esso | `/bin/cat`<br/>`cat`<br/>`c?t`
 
 Le esclusioni di file, cartelle e processi supportano i caratteri jolly seguenti:
 

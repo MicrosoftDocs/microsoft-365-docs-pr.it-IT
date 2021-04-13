@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1b203a29083aaa4a1f86abcd7e2c7b24bd63f186
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: 330406b3540becafb0ffac8cbbc36437a2e57f60
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445745"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688838"
 ---
 # <a name="minimum-requirements-for-microsoft-defender-for-endpoint"></a>Requisiti minimi per Microsoft Defender per Endpoint
 
@@ -118,10 +118,10 @@ I requisiti hardware per Defender per Endpoint nei dispositivi sono gli stessi p
 
 
 ### <a name="other-supported-operating-systems"></a>Altri sistemi operativi supportati
-- Android
-- iOS
-- Linux
-- macOS
+- [Android](microsoft-defender-endpoint-android.md)
+- [iOS](microsoft-defender-endpoint-ios.md)
+- [Linux](microsoft-defender-endpoint-linux.md)
+- [macOS](microsoft-defender-endpoint-mac.md)
 
 > [!NOTE]
 > Dovrai confermare le distribuzioni Linux e le versioni di Android, iOS e macOS che hai compatibile con Defender for Endpoint per il funzionamento dell'integrazione.

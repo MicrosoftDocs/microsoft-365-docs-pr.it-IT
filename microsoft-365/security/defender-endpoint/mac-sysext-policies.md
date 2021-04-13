@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: a4c92d27d45208634f99f9bfb2f756cfc5792fac
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: db24bea3bddc682eceda8e6ea3fe2749b6b2778f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186654"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689126"
 ---
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>Nuovi profili di configurazione per macOS Catalina e versioni più recenti di macOS
 
@@ -36,9 +36,9 @@ ms.locfileid: "51186654"
 
 > Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-In linea con l'evoluzione di macOS, stiamo preparando un aggiornamento di Microsoft Defender per Endpoint per Mac che sfrutta le estensioni di sistema anziché le estensioni del kernel. Questo aggiornamento sarà applicabile solo a macOS Catalina (10.15.4) e alle versioni più recenti di macOS.
+In linea con l'evoluzione di macOS, stiamo preparando un Microsoft Defender per Endpoint sull'aggiornamento macOS che sfrutta le estensioni di sistema anziché le estensioni del kernel. Questo aggiornamento sarà applicabile solo a macOS Catalina (10.15.4) e alle versioni più recenti di macOS.
 
-Se hai distribuito Microsoft Defender per Endpoint per Mac in un ambiente gestito (tramite JAMF, Intune o un'altra soluzione MDM), devi distribuire nuovi profili di configurazione. Se non si esegue questa procedura, gli utenti riceveranno richieste di approvazione per eseguire questi nuovi componenti.
+Se hai distribuito Microsoft Defender per Endpoint su macOS in un ambiente gestito (tramite JAMF, Intune o un'altra soluzione MDM), devi distribuire nuovi profili di configurazione. Se non si esegue questa procedura, gli utenti riceveranno richieste di approvazione per eseguire questi nuovi componenti.
 
 ## <a name="jamf"></a>JAMF
 
@@ -69,10 +69,10 @@ Aggiungi il payload JAMF seguente per concedere l'accesso completo al disco a Mi
 
 ### <a name="network-extension-policy"></a>Criteri di estensione di rete
 
-Come parte delle funzionalità di rilevamento e risposta degli endpoint, Microsoft Defender per Endpoint per Mac esamina il traffico socket e segnala queste informazioni al portale di Microsoft Defender Security Center. Il criterio seguente consente all'estensione di rete di eseguire questa funzionalità.
+Come parte delle funzionalità di rilevamento e risposta degli endpoint, Microsoft Defender for Endpoint su macOS esamina il traffico socket e segnala queste informazioni al portale di Microsoft Defender Security Center. Il criterio seguente consente all'estensione di rete di eseguire questa funzionalità.
 
 >[!NOTE]
->JAMF non dispone del supporto incorporato per i criteri di filtro dei contenuti, che sono un requisito preliminare per l'abilitazione delle estensioni di rete installate da Microsoft Defender per Endpoint per Mac nel dispositivo. Inoltre, JAMF a volte modifica il contenuto dei criteri distribuiti.
+>JAMF non dispone del supporto incorporato per i criteri di filtro dei contenuti, che sono un requisito preliminare per l'abilitazione delle estensioni di rete installate da Microsoft Defender per Endpoint su macOS nel dispositivo. Inoltre, JAMF a volte modifica il contenuto dei criteri distribuiti.
 >Di conseguenza, i passaggi seguenti forniscono una soluzione alternativa che implica la firma del profilo di configurazione.
 
 1. Salva il contenuto seguente nel dispositivo con `com.microsoft.network-extension.mobileconfig` un editor di testo:

@@ -1,6 +1,6 @@
 ---
 title: Controllo dispositivo per macOS
-description: Scopri come configurare Microsoft Defender per Endpoint per Mac per ridurre le minacce da archivi rimovibili come i dispositivi USB.
+description: Scopri come configurare Microsoft Defender per Endpoint su Mac per ridurre le minacce da archivi rimovibili, ad esempio dispositivi USB.
 keywords: microsoft, defender, atp, mac, dispositivo, controllo, usb, rimovibile, supporto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 098eb30764870e69c5b1b6c2cec3cf8e5cb11691
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 696bc45f7bb66313cc9353e252d76c2e9fd73259
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186570"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688682"
 ---
 # <a name="device-control-for-macos"></a>Controllo dispositivo per macOS
 
@@ -52,7 +52,7 @@ Il controllo del dispositivo per macOS presenta i prerequisiti seguenti:
 >   ```bash
 >   mdatp health --field real_time_protection_subsystem 
 >   ```
-> - Il dispositivo deve essere nel `Beta` canale di aggiornamento Microsoft AutoUpdate (denominato in `InsiderFast` precedenza). Per altre informazioni, vedi [Distribuire gli aggiornamenti per Microsoft Defender per Endpoint per Mac.](mac-updates.md)
+> - Il dispositivo deve essere nel `Beta` canale di aggiornamento Microsoft AutoUpdate (denominato in `InsiderFast` precedenza). Per altre informazioni, vedi [Distribuire gli aggiornamenti per Microsoft Defender per Endpoint su Mac.](mac-updates.md)
 > 
 >   Puoi controllare il canale di aggiornamento usando il comando seguente: 
 > 
@@ -66,7 +66,7 @@ Il controllo del dispositivo per macOS presenta i prerequisiti seguenti:
 >    defaults write com.microsoft.autoupdate2 ChannelName -string Beta
 >    ```
 >
->    In alternativa, se si è in un ambiente gestito (JAMF o Intune), è possibile configurare il canale di aggiornamento in remoto. Per altre informazioni, vedi [Distribuire gli aggiornamenti per Microsoft Defender per Endpoint per Mac.](mac-updates.md) 
+>    In alternativa, se si è in un ambiente gestito (JAMF o Intune), è possibile configurare il canale di aggiornamento in remoto. Per altre informazioni, vedi [Distribuire gli aggiornamenti per Microsoft Defender per Endpoint su Mac.](mac-updates.md) 
 
 ## <a name="device-control-policy"></a>Criteri di controllo dei dispositivi
 
@@ -76,7 +76,7 @@ Il criterio di controllo dei dispositivi è incluso nel profilo di configurazion
 
 All'interno del profilo di configurazione, i criteri di controllo dei dispositivi sono definiti nella sezione seguente:
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | deviceControl |
@@ -96,7 +96,7 @@ Quando il criterio di controllo del dispositivo che hai applicato a un dispositi
 
 Quando gli utenti finali selezionano questa notifica, viene aperta una pagina Web nel browser predefinito. È possibile configurare l'URL aperto quando gli utenti finali selezionano la notifica.
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | navigationTarget |
@@ -110,7 +110,7 @@ La sezione supporti rimovibili del criterio di controllo del dispositivo viene u
 > [!NOTE]
 > I seguenti tipi di supporti rimovibili sono attualmente supportati e possono essere inclusi nel criterio: dispositivi di archiviazione USB.
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | removableMediaPolicy |
@@ -143,7 +143,7 @@ Nella sezione Supporti rimovibili è disponibile un'opzione per impostare il liv
 - `audit` - Con questo livello di imposizione, se l'accesso a un dispositivo è limitato, viene visualizzata una notifica all'utente, ma il dispositivo può comunque essere usato. Questo livello di imposizione può essere utile per valutare l'efficacia di un criterio.
 - `block` - In questo livello di imposizione, le operazioni che l'utente può eseguire sul dispositivo sono limitate a quanto definito nel criterio. Inoltre, viene generata una notifica all'utente. 
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | enforcementLevel |
@@ -168,7 +168,7 @@ Questa impostazione può essere impostata su:
 > [!NOTE]
 > `execute`L'autorizzazione si riferisce solo all'esecuzione di file binari Mach-O. Non include l'esecuzione di script o altri tipi di payload.
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | autorizzazione |
@@ -183,7 +183,7 @@ Al livello superiore del criterio di supporto rimovibile, è possibile definire 
 
 Il dizionario contiene una o più voci, con ogni `vendors` voce identificata dall'ID fornitore.
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | fornitori |
@@ -191,7 +191,7 @@ Il dizionario contiene una o più voci, con ogni `vendors` voce identificata dal
 
 Per ogni fornitore, puoi specificare il livello di autorizzazione desiderato per i dispositivi di tale fornitore.
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | autorizzazione |
@@ -200,7 +200,7 @@ Per ogni fornitore, puoi specificare il livello di autorizzazione desiderato per
 
 È inoltre possibile specificare facoltativamente il set di prodotti appartenenti al fornitore per il quale sono definite autorizzazioni più granulari. Il dizionario contiene una o più voci, con ogni `products` voce identificata dall'ID prodotto. 
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | prodotti |
@@ -208,7 +208,7 @@ Per ogni fornitore, puoi specificare il livello di autorizzazione desiderato per
 
 Per ogni prodotto, è possibile specificare il livello di autorizzazione desiderato per tale prodotto.
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | autorizzazione |
@@ -219,7 +219,7 @@ Per ogni prodotto, è possibile specificare il livello di autorizzazione desider
 
 Il dizionario contiene una o più voci, con ogni `serialNumbers` voce identificata dal numero di serie.
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | serialNumbers |
@@ -227,7 +227,7 @@ Il dizionario contiene una o più voci, con ogni `serialNumbers` voce identifica
 
 Per ogni numero di serie, è possibile specificare il livello di autorizzazione desiderato.
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | autorizzazione |
@@ -336,7 +336,7 @@ DeviceEvents
 
 ## <a name="device-control-policy-deployment"></a>Distribuzione dei criteri di controllo dei dispositivi
 
-Il criterio di controllo del dispositivo deve essere incluso accanto alle altre impostazioni del prodotto, come descritto in Impostare le preferenze [per Microsoft Defender per Endpoint per Mac.](mac-preferences.md)
+Il criterio di controllo del dispositivo deve essere incluso accanto alle altre impostazioni del prodotto, come descritto in Impostare le preferenze per [Microsoft Defender per Endpoint in macOS.](mac-preferences.md)
 
 Questo profilo può essere distribuito usando le istruzioni elencate in [Distribuzione del profilo di configurazione](mac-preferences.md#configuration-profile-deployment).
 

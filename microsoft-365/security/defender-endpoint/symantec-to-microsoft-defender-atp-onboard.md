@@ -21,20 +21,20 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: cc005c559e0f91f1c5888f8d7e4e7a2a420894db
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: 1d332f6b0d6338d18c5a85dcf737f968f00f275f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218701"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689522"
 ---
 # <a name="migrate-from-symantec---phase-3-onboard-to-microsoft-defender-for-endpoint"></a>Eseguire la migrazione da Symantec - Fase 3: onboard a Microsoft Defender per Endpoint
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-|[![Fase 1: preparare](images/phase-diagrams/prepare.png)](symantec-to-microsoft-defender-atp-prepare.md)<br/>[Fase 1: preparare](symantec-to-microsoft-defender-atp-prepare.md) |[![Fase 2: configurazione](images/phase-diagrams/setup.png)](symantec-to-microsoft-defender-atp-setup.md)<br/>[Fase 2: configurazione](symantec-to-microsoft-defender-atp-setup.md) |![Fase 3: onboard](images/phase-diagrams/onboard.png)<br/>Fase 3: onboard |
+|[![Fase 1: preparazione](images/phase-diagrams/prepare.png)](symantec-to-microsoft-defender-atp-prepare.md)<br/>[Fase 1: preparazione](symantec-to-microsoft-defender-atp-prepare.md) |[![Fase 2: configurazione](images/phase-diagrams/setup.png)](symantec-to-microsoft-defender-atp-setup.md)<br/>[Fase 2: configurazione](symantec-to-microsoft-defender-atp-setup.md) |![Phase 3: onboarding](images/phase-diagrams/onboard.png)<br/>Fase 3: onboarding |
 |--|--|--|
 || |*Sei qui!* |
 
@@ -46,7 +46,7 @@ ms.locfileid: "51218701"
 3. [Disinstallare Symantec](#uninstall-symantec).
 4. [Assicurati che Microsoft Defender for Endpoint sia in modalità attiva.](#make-sure-microsoft-defender-for-endpoint-is-in-active-mode)
 
-## <a name="onboard-devices-to-microsoft-defender-for-endpoint"></a>Onboard dei dispositivi a Microsoft Defender for Endpoint
+## <a name="onboard-devices-to-microsoft-defender-for-endpoint"></a>Aggiungere dispositivi a Microsoft Defender for Endpoint
 
 1. Vai a Microsoft Defender Security Center ( [https://aka.ms/MDATPportal](https://aka.ms/MDATPportal) ) e accedi.
 2. Scegliere **Impostazioni**  >    >  **Onboarding gestione dispositivi**. 
@@ -63,7 +63,7 @@ I metodi di distribuzione variano a seconda del sistema operativo selezionato. P
 |- Windows 8.1 Enterprise <br/>- Windows 8.1 Pro <br/>- Windows 7 SP1 Enterprise <br/>- Windows 7 SP1 Pro     | [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)<br/><br/>**NOTA:** Microsoft Monitoring Agent è ora l'agente di Azure Log Analytics. Per ulteriori informazioni, vedere [Panoramica dell'agente di log analytics.](https://docs.microsoft.com/azure/azure-monitor/platform/log-analytics-agent)        |
 |- Windows Server 2019 e versioni successive <br/>- Windows Server 2019 Core Edition <br/>- Windows Server versione 1803 e successive |- [Script locale](configure-endpoints-script.md) <br/>- [Criteri di gruppo](configure-endpoints-gp.md) <br/>- [Configuration Manager](/configure-endpoints-sccm.md) <br/>- [System Center Configuration Manager](configure-endpoints-sccm.md#onboard-devices-using-system-center-configuration-manager)<br/>- [Script di onboarding VDI per dispositivi non persistenti](configure-endpoints-vdi.md) <br/><br/>**NOTA:** uno script locale è adatto per un modello di prova, ma non deve essere utilizzato per la distribuzione di produzione. Per una distribuzione di produzione, è consigliabile usare Criteri di gruppo, Microsoft Endpoint Configuration Manager o Intune.    |
 |- Windows Server 2016 <br/>- Windows Server 2012 R2 <br/>- Windows Server 2008 R2 SP1  |- [Microsoft Defender Security Center](configure-server-endpoints.md)<br/>- [Centro sicurezza di Azure](https://docs.microsoft.com/azure/security-center/security-center-wdatp) |
-|macOS<br/>- 10.15 (Catalina)<br/>- 10.14 (Mojave)<br/>- 10.13 (High Sierra)<br/><br/>iOS<br/><br/>Linux:<br/>- RHEL 7.2+<br/>- CentOS Linux 7.2+<br/>- Ubuntu 16 LTS o superiore<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2 |[Onboard di dispositivi non Windows](configure-endpoints-non-windows.md)  |
+|macOS<br/>- 10.15 (Catalina)<br/>- 10.14 (Mojave)<br/>- 10.13 (High Sierra)<br/><br/>iOS<br/><br/>Linux:<br/>- RHEL 7.2+<br/>- CentOS Linux 7.2+<br/>- Ubuntu 16 LTS o superiore<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2 |[Aggiungere dispositivi non Windows](configure-endpoints-non-windows.md)  |
 
 ## <a name="run-a-detection-test"></a>Eseguire un test di rilevamento
 
@@ -72,8 +72,8 @@ Per verificare che i dispositivi onboarded siano connessi correttamente a Micros
 |Sistema operativo  |Linee guida  |
 |---------|---------|
 |- Windows 10 <br/>- Windows Server 2019 <br/>- Windows Server, versione 1803 <br/>- Windows Server 2016 <br/>- Windows Server 2012 R2     |Vedere [Eseguire un test di rilevamento](run-detection-test.md). <br/><br/>Visita il sito degli scenari demo di Microsoft Defender for Endpoint ( ) e [https://demo.wd.microsoft.com](https://demo.wd.microsoft.com) prova uno o più degli scenari. Ad esempio, provare lo **scenario demo di protezione fornito dal** cloud.         |
-|macOS<br/>- 10.15 (Catalina)<br/>- 10.14 (Mojave)<br/>- 10.13 (High Sierra)     |Scarica e usa l'app FAI-da-to-app all'indirizzo [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy) . <br/><br/>Per altre informazioni, vedi [Microsoft Defender per Endpoint per Mac.](microsoft-defender-endpoint-mac.md)        |
-|Linux:<br/>- RHEL 7.2+<br/>- CentOS Linux 7.2+<br/>- Ubuntu 16 LTS o superiore<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2 |1. Eseguire il comando seguente e cercare il risultato **1**: <br/>`mdatp health --field real_time_protection_enabled`. <br/><br/>2. Aprire una finestra del terminale ed eseguire il comando seguente: <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <br/><br/>3. Eseguire il comando seguente per elencare eventuali minacce rilevate: <br/>`mdatp threat list`. <br/><br/>Per altre informazioni, vedi [Microsoft Defender per Endpoint per Linux.](microsoft-defender-endpoint-linux.md) |
+|macOS<br/>- 10.15 (Catalina)<br/>- 10.14 (Mojave)<br/>- 10.13 (High Sierra)     |Scarica e usa l'app FAI-da-to-app all'indirizzo [https://aka.ms/mdatpmacosdiy](https://aka.ms/mdatpmacosdiy) . <br/><br/>Per altre informazioni, vedi [Microsoft Defender per Endpoint su macOS.](microsoft-defender-endpoint-mac.md)        |
+|Linux:<br/>- RHEL 7.2+<br/>- CentOS Linux 7.2+<br/>- Ubuntu 16 LTS o superiore<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2 |1. Eseguire il comando seguente e cercare il risultato **1**: <br/>`mdatp health --field real_time_protection_enabled`. <br/><br/>2. Aprire una finestra del terminale ed eseguire il comando seguente: <br/>`curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt`. <br/><br/>3. Eseguire il comando seguente per elencare eventuali minacce rilevate: <br/>`mdatp threat list`. <br/><br/>Per altre informazioni, vedi [Microsoft Defender per Endpoint su Linux.](microsoft-defender-endpoint-linux.md) |
 
 ## <a name="uninstall-symantec"></a>Disinstallare Symantec
 

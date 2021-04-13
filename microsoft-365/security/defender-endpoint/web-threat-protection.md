@@ -1,6 +1,6 @@
 ---
 title: Proteggere l'organizzazione dalle minacce Web
-description: Informazioni sulla protezione Web in Microsoft Defender ATP e su come può proteggere l'organizzazione.
+description: Informazioni sulla protezione Web in Microsoft Defender for Endpoint e su come può proteggere l'organizzazione.
 keywords: protezione Web, protezione dalle minacce Web, esplorazione Web, sicurezza, phishing, malware, exploit, siti Web, protezione di rete, Edge, Internet Explorer, Chrome, Firefox, web browser
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: aeeea02ca1ef2d37623e9ab434b162237c2f4946
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 0c42c05e318390741b94b6d7d1b5394fca961714
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499901"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688946"
 ---
 # <a name="protect-your-organization-against-web-threats"></a>Proteggere l'organizzazione dalle minacce Web
 

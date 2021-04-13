@@ -16,17 +16,17 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: abb22b2e733d1e40bd4f2733ef2d25767c69ccf7
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: d38d7a54aa860049e1968e5b92c801107bea0514
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163328"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687962"
 ---
-#  <a name="microsoft-defender-for-endpoint-for-android---privacy-information"></a>Microsoft Defender per Endpoint per Android - Informazioni sulla privacy
+#  <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Microsoft Defender per Endpoint su Android - Informazioni sulla privacy
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 

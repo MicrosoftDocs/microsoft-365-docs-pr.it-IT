@@ -1,6 +1,6 @@
 ---
 title: Protezione sul Web
-description: Informazioni sulla protezione Web in Microsoft Defender ATP e su come può proteggere l'organizzazione
+description: Informazioni sulla protezione Web in Microsoft Defender for Endpoint e su come può proteggere l'organizzazione
 keywords: protezione Web, protezione dalle minacce Web, esplorazione Web, sicurezza, phishing, malware, exploit, siti Web, protezione di rete, Edge, Internet Explorer, Chrome, Firefox, browser Web, siti Web dannosi
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4c04ce3479ac995e59c3bdfa9a2bdcca87eca17b
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: a985719663ec23d41ce4da57aea9aa5e0cf7674c
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499928"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688970"
 ---
 # <a name="web-protection"></a>Protezione sul Web
 

@@ -1,6 +1,6 @@
 ---
 title: Ordine e precedenza della protezione della posta elettronica
-keywords: sicurezza, malware, Microsoft 365, M365, centro sicurezza, ATP, Microsoft Defender ATP, Office 365 ATP, Azure ATP
+keywords: sicurezza, malware, Microsoft 365, M365, centro sicurezza, ATP, Microsoft Defender for Endpoint, Office 365 ATP, Azure ATP
 f1.keywords:
 - NOCSH
 ms.author: chrisda
@@ -17,12 +17,12 @@ ms.custom:
 description: Gli amministratori possono ottenere informazioni sull'ordine delle applicazioni di protezione in Exchange Online Protection (EOP) e su come il valore di priorità nei criteri di protezione determina quale criterio viene applicato.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: b2a72420340993c027ec99820dcd3edddab1a304
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 3419cba5781e7ab1042f7312c721069d88fb8767
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51205365"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687650"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Ordine e precedenza della protezione della posta elettronica
 
@@ -46,8 +46,8 @@ Esistono due fattori principali che determinano quale criterio viene applicato a
   |Priority|Protezione della posta elettronica|Categoria|Dove gestire|
   |---|---|---|---|
   |1|Malware|CAT:MALW|[Configurare i criteri antimalware in EOP](configure-anti-malware-policies.md)|
-  |2 |Phishing|CAT:PHSH|[Configurare criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
-  |3 |Alta probabilità di posta indesiderata|CAT:HSPM|[Configurare criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
+  |2|Phishing|CAT:PHSH|[Configurare criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
+  |3|Alta probabilità di posta indesiderata|CAT:HSPM|[Configurare criteri di protezione dalla posta indesiderata in EOP](configure-your-spam-filter-policies.md)|
   |4 |Spoofing|CAT:SPOOF|[Configurare spoof intelligence in EOP](learn-about-spoof-intelligence.md)|
   |5<sup>\*</sup>|Rappresentazione utente (utenti protetti)|UIMP|[Configurare i criteri anti-phishing in Microsoft Defender per Office 365](configure-atp-anti-phishing-policies.md)|
   |6<sup>\*</sup>|Rappresentazione del dominio (domini protetti)|DIMP|[Configurare i criteri anti-phishing in Microsoft Defender per Office 365](configure-atp-anti-phishing-policies.md)|
@@ -68,7 +68,7 @@ Si considerino ad esempio i seguenti criteri anti-phishing in Microsoft Defender
   |Nome criterio|Priority|Rappresentazione utente|Anti-spoofing|
   |---|---|---|---|
   |Criterio A|1|Attivato|Disattivato|
-  |Criterio B|2 |Disattivato|Attivato|
+  |Criterio B|2|Disattivato|Attivato|
   |
 
 1. Il messaggio viene contrassegnato e considerato spoofing, perché lo spoofing ha una priorità più alta (4) rispetto alla rappresentazione dell'utente (5).

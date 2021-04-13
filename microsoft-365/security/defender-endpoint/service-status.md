@@ -1,6 +1,6 @@
 ---
-title: Controllare l'integrità del servizio Microsoft Defender ATP
-description: Controllare l'integrità del servizio Microsoft Defender ATP, verificare se si sono verificati problemi nel servizio ed esaminare i problemi precedenti che sono stati risolti.
+title: Controllare l'integrità del servizio endpoint in Microsoft Defender
+description: Controlla Microsoft Defender per l'integrità del servizio endpoint, verifica se si verificano problemi nel servizio ed esamina i problemi precedenti che sono stati risolti.
 keywords: dashboard, servizio, problemi, integrità del servizio, stato corrente, cronologia dello stato, riepilogo dell'impatto, causa radice preliminare, risoluzione, tempo di risoluzione, tempo di risoluzione previsto
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 45782fcce51e15adf61757d836d313d229558571
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 1b4545daace5df1a1a9c6e827f7d8f1b522a690c
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064877"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687626"
 ---
 # <a name="check-the-microsoft-defender-for-endpoint-service-health"></a>Controllare l'integrità del servizio endpoint in Microsoft Defender
 
@@ -29,7 +29,7 @@ ms.locfileid: "51064877"
 
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
 

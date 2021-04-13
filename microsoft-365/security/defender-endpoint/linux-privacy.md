@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b56e8a74875b3377b6f3228bbefb339680dbc6e1
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: aaf537c84adaba3d632367567cc569069650d21a
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187782"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688358"
 ---
-# <a name="privacy-for-microsoft-defender-for-endpoint-for-linux"></a>Privacy per Microsoft Defender per Endpoint per Linux
+# <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Privacy per Microsoft Defender per Endpoint su Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -37,7 +37,7 @@ Microsoft si impegna a fornire all'utente le informazioni e i controlli necessar
 
 In questo argomento vengono descritti i controlli della privacy disponibili all'interno del prodotto, come gestire questi controlli con le impostazioni dei criteri e altri dettagli sugli eventi dati raccolti.
 
-## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-for-linux"></a>Panoramica dei controlli della privacy in Microsoft Defender for Endpoint per Linux
+## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-linux"></a>Panoramica dei controlli della privacy in Microsoft Defender per Endpoint su Linux
 
 Questa sezione descrive i controlli della privacy per i diversi tipi di dati raccolti da Defender per Endpoint per Linux.
 

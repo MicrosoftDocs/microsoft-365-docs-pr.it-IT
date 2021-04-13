@@ -15,12 +15,12 @@ ms.custom:
 description: Informazioni su come Exchange Online Protection (EOP) consente di proteggere l'organizzazione di posta elettronica locale in ambienti autonomi e ibridi.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3df7b376d559535e168bfa21d2a8770b19569c4f
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: b699c0d6353d725b8d03cf4cf556a3e2ac798041
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51206782"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687054"
 ---
 # <a name="exchange-online-protection-overview"></a>Panoramica su Exchange Online Protection
 
@@ -70,6 +70,9 @@ I piani di sottoscrizione EOP disponibili sono:
 - **Exchange Enterprise CAL with Services**: Se si dispone di un'organizzazione exchange locale in cui sono state acquistate licenze Exchange Enterprise CAL with Services aggiuntive, EOP fa parte dei servizi inclusi.
 
 Per informazioni sui requisiti, i limiti importanti e la disponibilità delle funzionalità in tutti i piani di sottoscrizione EOP, vedere la descrizione del servizio [Exchange Online Protection.](/office365/servicedescriptions/exchange-online-protection-service-description/exchange-online-protection-service-description)
+
+> [!NOTE]
+> Se si dispone di un abbonamento a **Office 365 E3, include EOP**. Per la procedura per configurare la funzionalità di sicurezza di EOP nell'abbonamento e informazioni sulla sicurezza aggiunta che un abbonamento a Microsoft Defender per Office 365 può offrire, vedere Proteggere dalle [minacce.](protect-against-threats.md) Le impostazioni consigliate per la funzionalità EOP per l'installazione sono disponibili nell'articolo [Consigli,](best-practices-for-configuring-eop.md) in cui le impostazioni di EOP vengono chiamate in modo specifico.
 
 ## <a name="setting-up-eop-for-on-premises-email-organizations"></a>Configurazione di EOP per le organizzazioni di posta elettronica locali
 

@@ -1,7 +1,7 @@
 ---
 title: Assegnare il valore del dispositivo - gestione delle minacce e delle vulnerabilità
 description: Scopri come assegnare un valore basso, normale o elevato a un dispositivo per distinguere le priorità degli asset.
-keywords: valore del dispositivo microsoft defender atp, valore del dispositivo di gestione delle minacce e delle vulnerabilità, dispositivi ad alto valore, punteggio di esposizione al valore del dispositivo
+keywords: microsoft defender for endpoint device value, threat and vulnerability management device value, high value devices, device value exposure score
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3cecee8b80f179f67cb48f62e1d9238a51825bfd
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 1f5d90190418f84795bdd899ea0e48ac25831a96
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500213"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689390"
 ---
 # <a name="assign-device-value---threat-and-vulnerability-management"></a>Assegnare il valore del dispositivo - gestione delle minacce e delle vulnerabilità
 

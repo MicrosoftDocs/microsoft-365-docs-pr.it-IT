@@ -1,6 +1,6 @@
 ---
-title: Risolvere i problemi di connettività cloud per Microsoft Defender per Endpoint per Mac
-description: Questo argomento descrive come risolvere i problemi di connettività cloud per Microsoft Defender per Endpoint per Mac
+title: Risolvere i problemi di connettività cloud per Microsoft Defender for Endpoint in macOS
+description: Questo argomento descrive come risolvere i problemi di connettività cloud per Microsoft Defender for Endpoint in macOS
 keywords: microsoft, defender, atp, mac, installazione, distribuire, disinstallazione, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,24 +18,24 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: e522495fa86b5a71faa9f25cc863c29cc5d124c0
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: a8871274cabae0762cecc2ff513afe93c2d4811f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476686"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688502"
 ---
-# <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-for-mac"></a>Risolvere i problemi di connettività cloud per Microsoft Defender per Endpoint per Mac
+# <a name="troubleshoot-cloud-connectivity-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Risolvere i problemi di connettività cloud per Microsoft Defender for Endpoint in macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 **Piattaforma** macOS
 
-Questo argomento descrive come risolvere i problemi di connettività cloud per Microsoft Defender per Endpoint per Mac.
+Questo argomento descrive come risolvere i problemi di connettività cloud per Microsoft Defender per Endpoint in macOS.
 
 ## <a name="run-the-connectivity-test"></a>Eseguire il test di connettività
 Per verificare se Defender per Endpoint per Mac può comunicare con il cloud con le impostazioni di rete correnti, esegui un test di connettività dalla riga di comando:
@@ -72,7 +72,7 @@ Utilizzare la procedura seguente per verificare che una connessione non sia bloc
 Se un proxy o un firewall blocca il traffico anonimo, assicurati che il traffico anonimo sia consentito negli URL elencati in precedenza.
 
 > [!WARNING]
-> I proxy autenticati non sono supportati. Assicurati che vengano usati solo PAC, WPAD o un proxy statico. Anche l'ispezione e l'intercettazione dei proxy SSL non sono supportati per motivi di sicurezza. Configura un'eccezione per l'ispezione SSL e il server proxy per passare direttamente i dati da Microsoft Defender per Endpoint per Mac agli URL rilevanti senza intercettazione. L'aggiunta del certificato di intercettazione all'archivio globale non consentirà l'intercettazione.
+> I proxy autenticati non sono supportati. Assicurati che vengano usati solo PAC, WPAD o un proxy statico. Anche l'ispezione e l'intercettazione dei proxy SSL non sono supportati per motivi di sicurezza. Configura un'eccezione per l'ispezione SSL e il server proxy per passare direttamente i dati da Microsoft Defender per Endpoint su macOS agli URL rilevanti senza intercettazione. L'aggiunta del certificato di intercettazione all'archivio globale non consentirà l'intercettazione.
 Per verificare che una connessione non sia bloccata: in un browser come Microsoft Edge per Mac o Safari aprire https://x.cp.wd.microsoft.com/api/report e https://cdn.x.cp.wd.microsoft.com/ping .
 
 Facoltativamente, in Terminale eseguire il comando seguente:

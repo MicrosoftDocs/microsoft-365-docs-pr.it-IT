@@ -1,7 +1,6 @@
 ---
 title: Registrare manualmente i dispositivi già presenti
 description: Registrare i dispositivi riutilizzati che potresti già avere in modo che possano essere gestiti da Microsoft Managed Desktop
-keywords: Microsoft Managed Desktop, Microsoft 365, servizio, documentazione
 ms.service: m365-md
 author: jaimeo
 f1.keywords:
@@ -12,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 1703e4ed4ea0f3306edf6fdf07ab9c97a9266d4f
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: f2b3e109493331a4b63d669501525a48cb996809
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445567"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689222"
 ---
 # <a name="register-existing-devices-yourself"></a>Registrare manualmente i dispositivi già presenti
 
@@ -150,9 +149,11 @@ In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)seleziona Dispos
 Eseguire la procedura seguente:
 
 1. In **Caricamento file** specificare il percorso del file CSV creato in precedenza.
+2. Seleziona un [profilo di](../service-description/profiles.md) dispositivo nel menu a discesa.
+3. Selezionare **Registra dispositivi**. Il sistema aggiungerà i dispositivi all'elenco dei dispositivi nel **pannello Dispositivi,** contrassegnati come **Registrazione in sospeso.** La registrazione in genere richiede meno di 10 minuti e quando il dispositivo ha esito positivo il dispositivo viene visualizzato come **Pronto** per l'utente, ovvero è pronto e in attesa che un utente inizi a usare.
 
-1. Selezionare **Registra dispositivi**. Il sistema aggiungerà i dispositivi all'elenco dei dispositivi nel **pannello Dispositivi,** contrassegnati come **Registrazione in sospeso.** La registrazione in genere richiede meno di 10 minuti e quando il dispositivo ha esito positivo il dispositivo viene visualizzato come **Pronto** per l'utente, ovvero è pronto e in attesa che un utente inizi a usare.
-
+> [!NOTE]
+> Se si modifica manualmente l'appartenenza al gruppo di Azure Active Directory (AAD) di un dispositivo, questo verrà automaticamente riassegnato al gruppo per il profilo del dispositivo e rimosso da eventuali gruppi in conflitto.
 
 Puoi monitorare l'avanzamento della registrazione del dispositivo nella pagina principale. Tra i possibili stati segnalati vi sono:
 

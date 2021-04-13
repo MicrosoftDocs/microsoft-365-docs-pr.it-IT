@@ -1,6 +1,6 @@
 ---
 title: Trasmettere gli eventi di Microsoft Defender for Endpoint al tuo account di archiviazione
-description: Scopri come configurare Microsoft Defender ATP per trasmettere eventi di ricerca avanzata al tuo account di archiviazione.
+description: Scopri come configurare Microsoft Defender per Endpoint per trasmettere eventi di ricerca avanzata al tuo account di archiviazione.
 keywords: esportazione di dati non elaborati, API di streaming, API, hub eventi, archiviazione di Azure, account di archiviazione, ricerca avanzata, condivisione di dati non elaborati
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9f1eb79bbf617afad58b7e4d70e1f40e422f9046
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 19fe0c9c3dc6f2e4226a4aa9a6cd983bc95bae3a
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063850"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688790"
 ---
 # <a name="configure-microsoft-defender-for-endpoint-to-stream-advanced-hunting-events-to-your-storage-account"></a>Configurare Microsoft Defender per Endpoint per trasmettere eventi di ricerca avanzata al tuo account di archiviazione
 
@@ -29,7 +29,7 @@ ms.locfileid: "51063850"
 
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 > Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configuresiem-abovefoldlink) 
 

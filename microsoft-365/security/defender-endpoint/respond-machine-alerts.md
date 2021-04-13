@@ -1,5 +1,5 @@
 ---
-title: Eseguire azioni di risposta in un dispositivo in Microsoft Defender ATP
+title: Eseguire azioni di risposta in un dispositivo in Microsoft Defender for Endpoint
 description: Esegui azioni di risposta su un dispositivo, ad esempio isolando i dispositivi, raccogliendo un pacchetto di indagine, gestendo tag, eseguendo l'analisi av e limitando l'esecuzione dell'app.
 keywords: rispondere, isolare, isolare il dispositivo, raccogliere pacchetto di indagine, centro notifiche, limitare, gestire tag, analisi av, limitare l'app
 search.product: eADQiWindows 10XVcnh
@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f918d1673ef8a83c54f365dd06406c33bcc4d983
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f538bd33ad2f595aa9b3dafa8a13a5682161b52f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51060968"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688322"
 ---
-# <a name="take-response-actions-on-a-device"></a>Eseguire azioni di risposta in un dispositivo
+# <a name="take-response-actions-on-a-device"></a>Intraprendere azioni di risposta su un dispositivo
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-respondmachine-abovefoldlink) 
 
@@ -39,9 +39,9 @@ Le azioni di risposta vengono eseguite nella parte superiore di una pagina speci
 - Gestire i tag
 - Avviare un'indagine automatizzata
 - Avviare la sessione di risposta in tempo reale
-- Raccogliere il pacchetto di analisi
-- Eseguire l'analisi antivirus
-- Limitare l'esecuzione delle app
+- Raccogliere un pacchetto di indagini
+- Eseguire ricerca del virus
+- Limitare l'esecuzione dell'app
 - Isola dispositivo
 - Consultare un esperto di minacce
 - Centro notifiche
@@ -136,7 +136,7 @@ Il centro notifiche mostrerà le informazioni di analisi e la sequenza temporale
 >Quando si attiva un'analisi con Defender per l'azione di risposta endpoint, il valore "ScanAvgCPULoadFactor" dell'antivirus di Microsoft Defender si applica e limita l'impatto della CPU dell'analisi.<br> Se ScanAvgCPULoadFactor non è configurato, il valore predefinito è un limite del carico massimo della CPU del 50% durante un'analisi.<br>
 >Per ulteriori informazioni, vedere [configure-advanced-scan-types-microsoft-defender-antivirus](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-advanced-scan-types-microsoft-defender-antivirus).
 
-## <a name="restrict-app-execution"></a>Limitare l'esecuzione delle app
+## <a name="restrict-app-execution"></a>Limitare l'esecuzione dell'app
 
 Oltre a contenere un attacco arrestando processi dannosi, puoi anche bloccare un dispositivo e impedire l'esecuzione di successivi tentativi di programmi potenzialmente dannosi.
 
@@ -159,7 +159,7 @@ Quando un'app è limitata, viene visualizzata la notifica seguente per informare
 
 ![Immagine della restrizione dell'app](images/atp-app-restriction.png)
 
-## <a name="isolate-devices-from-the-network"></a>Isolare i dispositivi dalla rete
+## <a name="isolate-devices-from-the-network&quot;></a>Isolare i dispositivi dalla rete
 
 A seconda della gravità dell'attacco e della riservatezza del dispositivo, potresti voler isolare il dispositivo dalla rete. Questa azione può aiutare a impedire all'autore dell'attacco di controllare il dispositivo compromesso ed eseguire altre attività, come l'esfiltrazione dei dati e lo spostamento laterale.
 
@@ -169,7 +169,7 @@ A seconda della gravità dell'attacco e della riservatezza del dispositivo, potr
 
 Questa funzionalità di isolamento del dispositivo disconnette il dispositivo compromesso dalla rete mantenendo la connettività al servizio Defender for Endpoint, che continua a monitorare il dispositivo.
 
-In Windows 10, versione 1709 o successiva, avrai un controllo aggiuntivo sul livello di isolamento della rete. Puoi anche scegliere di abilitare la connettività Di Outlook, Microsoft Teams e Skype for Business (ovvero "Isolamento selettivo").
+In Windows 10, versione 1709 o successiva, avrai un controllo aggiuntivo sul livello di isolamento della rete. Puoi anche scegliere di abilitare la connettività Di Outlook, Microsoft Teams e Skype for Business (ovvero &quot;Isolamento selettivo").
 
 >[!NOTE]
 >Potrai riconnettere il dispositivo alla rete in qualsiasi momento. Il pulsante nella pagina del dispositivo cambierà in Rilascia dall'isolamento **e** quindi eseguire la stessa procedura dell'isolamento del dispositivo.
@@ -193,7 +193,7 @@ Puoi consultare un esperto di minacce Microsoft per ulteriori informazioni su un
 Per [informazioni dettagliate, vedere Consultare un esperto](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-microsoft-threat-experts#consult-a-microsoft-threat-expert-about-suspicious-cybersecurity-activities-in-your-organization) delle minacce Microsoft.
 
 
-## <a name="check-activity-details-in-action-center"></a>Controllare i dettagli dell'attività nel centro notifiche
+## <a name="check-activity-details-in-action-center"></a>Controllare i dettagli delle attività nel Centro operativo
 
 Il **centro notifiche** fornisce informazioni sulle azioni eseguite su un dispositivo o un file. Potrai visualizzare i dettagli seguenti:
 
@@ -207,5 +207,5 @@ Vengono visualizzati anche tutti gli altri dettagli correlati, ad esempio data/o
 ![Immagine del centro notifiche con informazioni](images/action-center-details.png)
 
 ## <a name="related-topic"></a>Argomento correlato
-- [Eseguire azioni di risposta su un file](respond-file-alerts.md)
+- [Intraprendere azioni di risposta su un file](respond-file-alerts.md)
 - [Imprecisione dei report](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation#report-inaccuracy)

@@ -1,6 +1,6 @@
 ---
-title: Risolvere i problemi di risposta live di Microsoft Defender ATP
-description: Risolvere i problemi che potrebbero verificarsi quando si usa la risposta in tempo reale in Microsoft Defender ATP
+title: Risolvere i problemi di risposta live di Microsoft Defender for Endpoint
+description: Risolvere i problemi che potrebbero verificarsi quando si usa la risposta in tempo reale in Microsoft Defender per Endpoint
 keywords: risolvere i problemi di risposta in tempo reale, live, risposta, bloccato, file
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 62525548be777a3187cea5ed4be622ac9d42079b
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 2601001687fc22da98ca3cd81010237d12705ea4
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51183820"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687412"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-live-response-issues"></a>Risolvere i problemi di risposta live di Microsoft Defender for Endpoint
 

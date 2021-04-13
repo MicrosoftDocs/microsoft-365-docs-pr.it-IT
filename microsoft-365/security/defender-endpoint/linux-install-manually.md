@@ -1,5 +1,5 @@
 ---
-title: Distribuire manualmente Microsoft Defender per Endpoint per Linux
+title: Distribuire manualmente Microsoft Defender per Endpoint su Linux
 ms.reviewer: ''
 description: Descrive come distribuire Microsoft Defender ATP per Linux manualmente dalla riga di comando.
 keywords: microsoft, defender, atp, linux, installazione, distribuire, disinstallazione, pupazzo, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
@@ -18,14 +18,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c695eb0d786e73da5adb95bbca5c1747243d6203
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: 78ea8b106253098791d71ef9ff788b7cf1df4ec7
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644741"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688406"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-for-linux-manually"></a>Distribuire manualmente Microsoft Defender per Endpoint per Linux
+# <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Distribuire manualmente Microsoft Defender per Endpoint su Linux
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,9 +36,9 @@ ms.locfileid: "51644741"
 
 > Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Questo articolo descrive come distribuire Manualmente Microsoft Defender for Endpoint per Linux. Una distribuzione corretta richiede il completamento di tutte le attività seguenti:
+Questo articolo descrive come distribuire Manualmente Microsoft Defender for Endpoint su Linux. Una distribuzione corretta richiede il completamento di tutte le attività seguenti:
 
-- [Distribuire manualmente Microsoft Defender per Endpoint per Linux](#deploy-microsoft-defender-for-endpoint-for-linux-manually)
+- [Distribuire manualmente Microsoft Defender per Endpoint su Linux](#deploy-microsoft-defender-for-endpoint-on-linux-manually)
   - [Prerequisiti e requisiti di sistema](#prerequisites-and-system-requirements)
   - [Configurare l'archivio software Linux](#configure-the-linux-software-repository)
     - [RHEL e varianti (CentOS e Oracle Linux)](#rhel-and-variants-centos-and-oracle-linux)
@@ -54,7 +54,7 @@ Questo articolo descrive come distribuire Manualmente Microsoft Defender for End
 
 ## <a name="prerequisites-and-system-requirements"></a>Prerequisiti e requisiti di sistema
 
-Prima di iniziare, vedi [Microsoft Defender per Endpoint per Linux](microsoft-defender-endpoint-linux.md) per una descrizione dei prerequisiti e dei requisiti di sistema per la versione software corrente.
+Prima di iniziare, vedi [Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md) per una descrizione dei prerequisiti e dei requisiti di sistema per la versione software corrente.
 
 ## <a name="configure-the-linux-software-repository"></a>Configurare l'archivio software Linux
 

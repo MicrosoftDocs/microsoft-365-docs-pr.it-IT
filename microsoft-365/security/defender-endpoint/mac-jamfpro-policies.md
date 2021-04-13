@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: be01d5908e4c79f642cdbbddd75115f6ebc2c713
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 9b00d81d3d51c343565ec4eb743181baa2750b01
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499596"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687734"
 ---
-# <a name="set-up-the-microsoft-defender-for-endpoint-for-macos-policies-in-jamf-pro"></a>Configurare i criteri di Microsoft Defender for Endpoint per macOS in Jamf Pro
+# <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Configurare i criteri di Microsoft Defender for Endpoint su macOS in Jamf Pro
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -56,9 +56,9 @@ Dovrai eseguire la procedura seguente:
 
 9. [Configurare l'estensione di rete](#step-9-configure-network-extension)
 
-10. [Pianificare le analisi con Microsoft Defender per Endpoint per Mac](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
+10. [Pianificare le analisi con Microsoft Defender per Endpoint in macOS](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
 
-11. [Distribuire Microsoft Defender per Endpoint per macOS](#step-11-deploy-microsoft-defender-for-endpoint-for-macos)
+11. [Distribuire Microsoft Defender per Endpoint in macOS](#step-11-deploy-microsoft-defender-for-endpoint-on-macos)
 
 
 ## <a name="step-1-get-the-microsoft-defender-for-endpoint-onboarding-package"></a>Passaggio 1: ottenere il pacchetto di onboarding di Microsoft Defender for Endpoint
@@ -360,7 +360,7 @@ Questi passaggi sono applicabili a macOS 10.15 (Catalina) o versioni successive.
         - **Metodo di distribuzione**: Installa *automaticamente (impostazione predefinita)*
         - **Level**: Computer Level *(impostazione predefinita)*
 
-        ![Immagine delle impostazioni di configurazione mdatpmdav](images/c9820a5ff84aaf21635c04a23a97ca93.png)
+        ![Immagine delle impostazioni del profilo di configurazione mdatpmdav](images/c9820a5ff84aaf21635c04a23a97ca93.png)
 
     - Scheda **Notifiche**, fare **clic su Aggiungi** e immettere i valori seguenti:
         - **ID bundle**: `com.microsoft.wdav.tray`
@@ -681,7 +681,7 @@ In alternativa, è possibile scaricare [kext.mobileconfig](https://github.com/mi
 
 ## <a name="step-9-configure-network-extension"></a>Passaggio 9: Configurare l'estensione di rete
 
-Come parte delle funzionalità di rilevamento e risposta degli endpoint, Microsoft Defender per Endpoint per Mac esamina il traffico socket e segnala queste informazioni al portale di Microsoft Defender Security Center. Il criterio seguente consente all'estensione di rete di eseguire questa funzionalità.
+Come parte delle funzionalità di rilevamento e risposta degli endpoint, Microsoft Defender for Endpoint su macOS esamina il traffico socket e segnala queste informazioni al portale di Microsoft Defender Security Center. Il criterio seguente consente all'estensione di rete di eseguire questa funzionalità.
 
 Questi passaggi sono applicabili a macOS 10.15 (Catalina) o versioni successive.
 
@@ -707,7 +707,7 @@ Questi passaggi sono applicabili a macOS 10.15 (Catalina) o versioni successive.
 
         Tieni presente **che i valori di Identifier,** Socket **Filter** e Socket **Filter Designated Requirement** sono esattamente come specificato in precedenza.
 
-        ![Immagine delle impostazioni di configurazione mdatpmdav](images/netext-create-profile.png)
+        ![Immagine dell'impostazione di configurazione mdatpmdav](images/netext-create-profile.png)
 
 3. Selezionare la **scheda** Ambito.
 
@@ -731,10 +731,10 @@ Questi passaggi sono applicabili a macOS 10.15 (Catalina) o versioni successive.
 
 In alternativa, è possibile scaricare [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) e caricarlo nei profili di configurazione JAMF come descritto in [Deploying Custom Configuration Profiles using Jamf Pro| Metodo 2: Caricare un profilo di configurazione in Jamf Pro.](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)
 
-## <a name="step-10-schedule-scans-with-microsoft-defender-for-endpoint-for-mac"></a>Passaggio 10: pianificare le analisi con Microsoft Defender per Endpoint per Mac
-Segui le istruzioni su [Pianifica analisi con Microsoft Defender per Endpoint per Mac.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
+## <a name="step-10-schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>Passaggio 10: pianificare le analisi con Microsoft Defender for Endpoint in macOS
+Segui le istruzioni su [Pianifica analisi con Microsoft Defender for Endpoint in macOS.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
 
-## <a name="step-11-deploy-microsoft-defender-for-endpoint-for-macos"></a>Passaggio 11: Distribuire Microsoft Defender per Endpoint per macOS
+## <a name="step-11-deploy-microsoft-defender-for-endpoint-on-macos"></a>Passaggio 11: Distribuire Microsoft Defender per Endpoint in macOS
 
 1. Passare al percorso in cui è stato salvato `wdav.pkg` .
 

@@ -19,14 +19,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7d4bc095a9fbc0b9cd166d3133ed291a2c8c01da
-ms.sourcegitcommit: 0ff6edbf52562138a69c6675cb0274ec984986c3
+ms.openlocfilehash: 6bf9691f390173ec86dcadd19707c980aa66336f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "51615424"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687770"
 ---
-# <a name="microsoft-defender-for-endpoint-for-ios"></a>Microsoft Defender per endpoint per iOS
+# <a name="microsoft-defender-for-endpoint-on-ios"></a>Microsoft Defender per Endpoint in iOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -36,7 +36,7 @@ ms.locfileid: "51615424"
 
 > Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-**Microsoft Defender for Endpoint per iOS** offrirà protezione da phishing e connessioni di rete non sicure da siti Web, messaggi di posta elettronica e app. Tutti gli avvisi saranno disponibili tramite un singolo riquadro di vetro in Microsoft Defender Security Center. Il portale offre ai team di sicurezza una visualizzazione centralizzata delle minacce nei dispositivi iOS insieme ad altre piattaforme.
+**Microsoft Defender for Endpoint su iOS** offrirà protezione da phishing e connessioni di rete non sicure da siti Web, messaggi di posta elettronica e app. Tutti gli avvisi saranno disponibili tramite un singolo riquadro di vetro in Microsoft Defender Security Center. Il portale offre ai team di sicurezza una visualizzazione centralizzata delle minacce nei dispositivi iOS insieme ad altre piattaforme.
 
 > [!CAUTION]
 > L'esecuzione di altri prodotti di protezione degli endpoint di terze parti insieme a Defender for Endpoint per iOS può causare problemi di prestazioni ed errori di sistema imprevedibili.
@@ -58,7 +58,7 @@ ms.locfileid: "51615424"
 - Accesso al portale di Microsoft Defender Security Center.
 
     > [!NOTE]
-    > Microsoft Intune è l'unica soluzione MDM (Mobile Device Management) supportata per la distribuzione di Microsoft Defender for Endpoint per iOS. Attualmente sono supportati solo i dispositivi registrati per l'applicazione di Defender for Endpoint per i criteri di conformità dei dispositivi correlati a iOS in Intune.
+    > Microsoft Intune è l'unica soluzione MDM (Mobile Device Management) supportata per la distribuzione di Microsoft Defender per Endpoint in iOS. Attualmente sono supportati solo i dispositivi registrati per l'applicazione di Defender for Endpoint per i criteri di conformità dei dispositivi correlati a iOS in Intune.
 
 - Accesso [all'interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)per distribuire l'app ai gruppi di utenti registrati nell'organizzazione.
 
@@ -73,16 +73,16 @@ ms.locfileid: "51615424"
 
 ## <a name="installation-instructions"></a>Istruzioni di installazione
 
-La distribuzione di Microsoft Defender per Endpoint per iOS è tramite Microsoft Intune (MDM) e sono supportati sia i dispositivi supervisionati che i dispositivi senza supervisione.
-Per altre informazioni, vedi [Distribuire Microsoft Defender for Endpoint per iOS.](ios-install.md)
+La distribuzione di Microsoft Defender per Endpoint su iOS è tramite Microsoft Intune (MDM) e sono supportati sia i dispositivi supervisionati che i dispositivi non supervisionati.
+Per altre informazioni, vedi [Distribuire Microsoft Defender per Endpoint in iOS.](ios-install.md)
 
 ## <a name="resources"></a>Risorse
 
-- Rimanere informati sulle prossime versioni [visitando Novità di Microsoft Defender per Endpoint per iOS](ios-whatsnew.md) o il [nostro blog.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)
+- Rimanere informati sulle prossime versioni [visitando Novità di Microsoft Defender per Endpoint su iOS](ios-whatsnew.md) o il [nostro blog.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/iOS)
 
 - Fornire feedback tramite il sistema di feedback in-app o tramite [il portale SecOps](https://securitycenter.microsoft.com)
 
 ## <a name="next-steps"></a>Passaggi successivi
 
-- [Distribuire Microsoft Defender per Endpoint per iOS](ios-install.md)
-- [Configurare Le funzionalità di Microsoft Defender per Endpoint per iOS](ios-configure-features.md)
+- [Distribuire Microsoft Defender per Endpoint in iOS](ios-install.md)
+- [Configurare Microsoft Defender per le funzionalità di Endpoint in iOS](ios-configure-features.md)

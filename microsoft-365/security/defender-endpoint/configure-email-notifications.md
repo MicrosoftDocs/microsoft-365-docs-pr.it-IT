@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0d9e63c5d89b13b02dfcf116c1555c8db319d23f
-ms.sourcegitcommit: 39609c4d8c432c8e7d7a31cb35c8020e5207385b
+ms.openlocfilehash: d5a19464b9d5d1b9659d7bfae2d853f7a640a00b
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "51445365"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687890"
 ---
-# <a name="configure-alert-notifications-in-microsoft-defender-atp"></a>Configurare le notifiche di avviso in Microsoft Defender ATP
+# <a name="configure-alert-notifications-in-microsoft-defender-for-endpoint"></a>Configurare le notifiche di avviso in Microsoft Defender per Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,7 +38,7 @@ Puoi configurare Defender per Endpoint per inviare notifiche tramite posta elett
 > [!NOTE]
 > Solo gli utenti con autorizzazioni "Gestisci impostazioni di sicurezza" possono configurare le notifiche di posta elettronica. Se si è scelto di utilizzare la gestione delle autorizzazioni di base, gli utenti con ruoli amministratore della sicurezza o amministratore globale possono configurare le notifiche di posta elettronica.
 
-Puoi impostare i livelli di gravità degli avvisi che attivano le notifiche. È inoltre possibile aggiungere o rimuovere destinatari della notifica di posta elettronica. I nuovi destinatari riceveranno una notifica sugli avvisi rilevati dopo l'aggiunta. Per ulteriori informazioni sugli avvisi, vedere [View and organize the Alerts queue.](alerts-queue.md)
+Puoi impostare i livelli di gravità degli avvisi che attivano le notifiche. È inoltre possibile aggiungere o rimuovere destinatari della notifica di posta elettronica. I nuovi destinatari riceveranno una notifica sugli avvisi attivati dopo l'aggiunta. Per ulteriori informazioni sugli avvisi, vedere [View and organize the Alerts queue.](alerts-queue.md)
 
 Se si utilizza il controllo di accesso basato sui ruoli, i destinatari riceveranno solo notifiche basate sui gruppi di dispositivi configurati nella regola di notifica.
 Gli utenti con l'autorizzazione appropriata possono solo creare, modificare o eliminare notifiche limitate all'ambito di gestione dei gruppi di dispositivi.
@@ -71,7 +71,7 @@ La notifica tramite posta elettronica include informazioni di base sull'avviso e
     
 5. Immettere l'indirizzo di posta elettronica del destinatario, quindi fare clic **su Aggiungi destinatario.** È possibile aggiungere più indirizzi di posta elettronica.
 
-6. Verificare che i destinatari di posta elettronica siano in grado di ricevere le notifiche tramite posta elettronica selezionando **Invia messaggio di posta elettronica di prova**.
+6. Verificare che i destinatari di posta elettronica possano ricevere le notifiche tramite posta elettronica selezionando **Invia messaggio di posta elettronica di prova.**
 
 7. Fare clic **su Salva regola di notifica.**
 
@@ -95,10 +95,10 @@ In questa sezione sono elencati i vari problemi che possono verificarsi quando s
 
 **Problema:** I destinatari previsti segnalano di non ricevere le notifiche.
 
-**Soluzione:** Assicurarsi che le notifiche non siano bloccate dai filtri di posta elettronica:
+**Soluzione:** Assicurati che le notifiche non siano bloccate dai filtri di posta elettronica:
 
 1. Verificare che le notifiche di posta elettronica di Defender for Endpoint non siano inviate alla cartella Posta indesiderata. Contrassegnarli come Non indesiderati.
-2. Verificare che il prodotto di sicurezza della posta elettronica non blocchi le notifiche di posta elettronica da Defender per Endpoint.
+2. Verifica che il prodotto di sicurezza della posta elettronica non blocchi le notifiche di posta elettronica da Defender per Endpoint.
 3. Controlla le regole dell'applicazione di posta elettronica che potrebbero intercettare e spostare defender per le notifiche di posta elettronica dell'endpoint.
 
 ## <a name="related-topics"></a>Argomenti correlati

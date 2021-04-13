@@ -1,5 +1,5 @@
 ---
-title: Report sulla protezione dalle minacce in Microsoft Defender ATP
+title: Report di protezione dalle minacce in Microsoft Defender for Endpoint
 description: Tenere traccia dei rilevamenti, delle categorie e della gravità degli avvisi tramite il report di protezione dalle minacce
 keywords: rilevamento degli avvisi, origine, avviso per categoria, gravità degli avvisi, classificazione degli avvisi, determinazione
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 4ecd2df31e1e03da5134d3d4180dcba75d3cee26
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: d32ab04f4acda60f65316719a4607c6c9bbd6447
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51183838"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688982"
 ---
 # <a name="threat-protection-report-in-microsoft-defender-for-endpoint"></a>Report di protezione dalle minacce in Microsoft Defender for Endpoint
 
@@ -44,7 +44,7 @@ Il dashboard è strutturato in due sezioni:
 Sezione | Descrizione 
 :---|:---
 1 | Tendenze degli avvisi
-2  | Riepilogo degli avvisi
+2 | Riepilogo degli avvisi
 
 ## <a name="alert-trends"></a>Tendenze degli avvisi
 Per impostazione predefinita, le tendenze degli avvisi visualizzano le informazioni sugli avvisi del periodo di 30 giorni che terminano con l'ultimo giorno completo. Per ottenere una prospettiva migliore sulle tendenze che si verificano nell'organizzazione, è possibile ottimizzare il periodo di reporting modificando il periodo di tempo visualizzato. Per regolare il periodo di tempo, selezionare un intervallo di tempo dalle opzioni a discesa:

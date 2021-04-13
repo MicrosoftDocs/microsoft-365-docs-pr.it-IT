@@ -1,7 +1,7 @@
 ---
 title: Creare e visualizzare le eccezioni per i suggerimenti per la sicurezza - gestione delle minacce e delle vulnerabilità
 description: Creare e monitorare le eccezioni per i suggerimenti sulla sicurezza nella gestione delle minacce e delle vulnerabilità.
-keywords: microsoft defender atp tvm remediation, mdatp tvm, threat and vulnerability management, threat & vulnerability management, threat & vulnerability management remediation, tvm remediation intune, tvm remediation sccm
+keywords: microsoft defender for endpoint tvm remediation, mdatp tvm, threat and vulnerability management, threat & vulnerability management, threat & vulnerability management remediation, tvm remediation intune, tvm remediation sccm
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 13ac09b1ad918ed945edec6167fd57ea02b616ea
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 4f37300a742ab8cac32e95863cb706f1fd5f5d66
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500191"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689414"
 ---
 # <a name="create-and-view-exceptions-for-security-recommendations---threat-and-vulnerability-management"></a>Creare e visualizzare le eccezioni per i suggerimenti per la sicurezza - gestione delle minacce e delle vulnerabilità
 
@@ -84,7 +84,7 @@ Verrà visualizzato un riquadro a comparsa in cui è possibile cercare e sceglie
 
 ### <a name="global-exceptions"></a>Eccezioni globali
 
-Se si dispone delle autorizzazioni di amministratore globale (denominato amministratore di Microsoft Defender ATP), sarà possibile creare e annullare un'eccezione globale. Influisce **su tutti** i gruppi di dispositivi correnti e futuri nell'organizzazione e solo un utente con autorizzazioni simili sarà in grado di modificarlo. Lo stato di raccomandazione cambierà da "attivo" a "eccezione completa".
+Se si dispone delle autorizzazioni di amministratore globale, sarà possibile creare e annullare un'eccezione globale. Influisce **su tutti** i gruppi di dispositivi correnti e futuri nell'organizzazione e solo un utente con autorizzazioni simili sarà in grado di modificarlo. Lo stato di raccomandazione cambierà da "attivo" a "eccezione completa".
 
 ![Opzione di eccezione globale visualizzata.](images/tvm-exception-global.png)
 

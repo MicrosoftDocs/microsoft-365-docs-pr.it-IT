@@ -1,5 +1,5 @@
 ---
-title: Rispondere alle minacce Web in Microsoft Defender ATP
+title: Rispondere alle minacce Web in Microsoft Defender for Endpoint
 description: Rispondere agli avvisi relativi a siti Web dannosi e indesiderati. Comprendere in che modo Protezione dalle minacce Web informa gli utenti finali tramite i web browser e le notifiche di Windows
 keywords: protezione Web, protezione dalle minacce Web, esplorazione Web, avvisi, risposta, sicurezza, phishing, malware, exploit, siti Web, protezione di rete, Edge, Internet Explorer, Chrome, Firefox, web browser, notifiche, utenti finali, notifiche di Windows, pagina di blocco,
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b0e6bb0d71c14bf7742f8d6508fbb95b76b10a34
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 110b379863b4c6e23c947c56faf831e136231237
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498362"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688478"
 ---
 # <a name="respond-to-web-threats"></a>Rispondere alle minacce sul Web
 

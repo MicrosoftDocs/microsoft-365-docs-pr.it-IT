@@ -18,28 +18,28 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 578830d44a9a69c3ccafd78ceaf59ddfe100e43f
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 951c51c767ba09ebc6056481b4fac45da09c5671
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068893"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688550"
 ---
-# <a name="set-preferences-for-microsoft-defender-for-endpoint-for-mac"></a>Impostare le preferenze per Microsoft Defender per Endpoint per Mac
+# <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>Impostare le preferenze per Microsoft Defender per Endpoint in macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Si applica a:**
 
-- [Microsoft Defender per Endpoint per Mac](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender per Endpoint in macOS](microsoft-defender-endpoint-mac.md)
 
 >[!IMPORTANT]
->Questo articolo contiene istruzioni su come impostare le preferenze per Microsoft Defender per Endpoint per Mac nelle organizzazioni aziendali. Per configurare Microsoft Defender per Endpoint per Mac usando l'interfaccia della riga di comando, vedi [Risorse](mac-resources.md#configuring-from-the-command-line).
+>Questo articolo contiene istruzioni su come impostare le preferenze per Microsoft Defender per Endpoint in macOS nelle organizzazioni aziendali. Per configurare Microsoft Defender per Endpoint in macOS tramite l'interfaccia della riga di comando, vedi [Risorse](mac-resources.md#configuring-from-the-command-line).
 
 ## <a name="summary"></a>Riepilogo
 
-Nelle organizzazioni aziendali, Microsoft Defender per Endpoint per Mac può essere gestito tramite un profilo di configurazione distribuito utilizzando uno dei diversi strumenti di gestione. Le preferenze gestite dal team delle operazioni di sicurezza hanno la precedenza sulle preferenze impostate localmente nel dispositivo. La modifica delle preferenze impostate tramite il profilo di configurazione richiede privilegi inoltrati e non è disponibile per gli utenti senza autorizzazioni amministrative.
+Nelle organizzazioni aziendali, Microsoft Defender for Endpoint in macOS può essere gestito tramite un profilo di configurazione distribuito utilizzando uno dei diversi strumenti di gestione. Le preferenze gestite dal team delle operazioni di sicurezza hanno la precedenza sulle preferenze impostate localmente nel dispositivo. La modifica delle preferenze impostate tramite il profilo di configurazione richiede privilegi inoltrati e non è disponibile per gli utenti senza autorizzazioni amministrative.
 
 Questo articolo descrive la struttura del profilo di configurazione, include un profilo consigliato che puoi usare per iniziare e fornisce istruzioni su come distribuire il profilo.
 
@@ -56,7 +56,7 @@ Il livello superiore del profilo di configurazione include le preferenze e le vo
 
 La *sezione antivirusEngine* del profilo di configurazione viene usata per gestire le preferenze del componente antivirus di Microsoft Defender for Endpoint.
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | antivirusEngine |
@@ -67,7 +67,7 @@ La *sezione antivirusEngine* del profilo di configurazione viene usata per gesti
 
 Specificare se abilitare la protezione in tempo reale, che analizza i file man a cui si accede.
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | enableRealTimeProtection |
@@ -83,7 +83,7 @@ Specificare se il motore antivirus viene eseguito in modalità passiva. La modal
 - Gli aggiornamenti delle funzionalità di intelligence per la sicurezza sono attivati
 - L'icona del menu Stato è nascosta
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | passiveMode |
@@ -95,7 +95,7 @@ Specificare se il motore antivirus viene eseguito in modalità passiva. La modal
 
 Specificare i criteri di unione per le esclusioni. Può trattarsi di una combinazione di esclusioni definite dall'amministratore e definite dall'utente ( ) o solo di esclusioni definite `merge` dall'amministratore ( `admin_only` ). Questa impostazione può essere utilizzata per impedire agli utenti locali di definire le proprie esclusioni.
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | exclusionsMergePolicy |
@@ -107,7 +107,7 @@ Specificare i criteri di unione per le esclusioni. Può trattarsi di una combina
 
 Specificare le entità escluse dall'analisi. Le esclusioni possono essere specificate da percorsi completi, estensioni o nomi di file.
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | esclusioni |
@@ -118,7 +118,7 @@ Specificare le entità escluse dall'analisi. Le esclusioni possono essere specif
 
 Specificare il contenuto escluso dall'analisi in base al tipo.
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | $type |
@@ -129,7 +129,7 @@ Specificare il contenuto escluso dall'analisi in base al tipo.
 
 Specificare il contenuto escluso dall'analisi tramite il percorso completo del file.
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | path |
@@ -141,7 +141,7 @@ Specificare il contenuto escluso dall'analisi tramite il percorso completo del f
 
 Indicare se la *proprietà path* fa riferimento a un file o a una directory. 
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | isDirectory |
@@ -153,7 +153,7 @@ Indicare se la *proprietà path* fa riferimento a un file o a una directory.
 
 Specificare il contenuto escluso dall'analisi per estensione di file.
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | extension |
@@ -165,7 +165,7 @@ Specificare il contenuto escluso dall'analisi per estensione di file.
 
 Specificare un processo per il quale tutte le attività dei file vengono escluse dall'analisi. Il processo può essere specificato in base al nome (ad esempio) o al `cat` percorso completo (ad `/bin/cat` esempio).
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | name |
@@ -177,7 +177,7 @@ Specificare un processo per il quale tutte le attività dei file vengono escluse
 
 Specifica le minacce in base al nome che non sono bloccate da Defender per Endpoint per Mac. L'esecuzione di queste minacce sarà consentita.
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | allowedThreats |
@@ -187,7 +187,7 @@ Specifica le minacce in base al nome che non sono bloccate da Defender per Endpo
 
 Limita le azioni che l'utente locale di un dispositivo può intraprendere quando vengono rilevate minacce. Le azioni incluse in questo elenco non vengono visualizzate nell'interfaccia utente.
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | disallowedThreatActions |
@@ -197,9 +197,9 @@ Limita le azioni che l'utente locale di un dispositivo può intraprendere quando
 
 #### <a name="threat-type-settings"></a>Impostazioni del tipo di minaccia
 
-Specifica come vengono gestiti determinati tipi di minacce da Microsoft Defender per Endpoint per Mac.
+Specifica come vengono gestiti determinati tipi di minacce da Microsoft Defender per Endpoint in macOS.
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | threatTypeSettings |
@@ -210,7 +210,7 @@ Specifica come vengono gestiti determinati tipi di minacce da Microsoft Defender
 
 Specificare i tipi di minaccia.
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | chiave |
@@ -225,7 +225,7 @@ Specificare l'azione da eseguire quando viene rilevata una minaccia del tipo spe
 - **Blocca**: il dispositivo è protetto da questo tipo di minaccia e si viene informati nell'interfaccia utente e nella console di sicurezza.
 - **Disattivato:** il dispositivo non è protetto da questo tipo di minaccia e non viene registrato nulla.
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | valore |
@@ -236,7 +236,7 @@ Specificare l'azione da eseguire quando viene rilevata una minaccia del tipo spe
 
 Specificare i criteri di unione per le impostazioni del tipo di minaccia. Può essere una combinazione di impostazioni definite dall'amministratore e definite dall'utente ( ) o solo impostazioni definite `merge` dall'amministratore ( `admin_only` ). Questa impostazione può essere usata per impedire agli utenti locali di definire le proprie impostazioni per diversi tipi di minacce.
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | threatTypeSettingsMergePolicy |
@@ -248,7 +248,7 @@ Specificare i criteri di unione per le impostazioni del tipo di minaccia. Può e
 
 Specifica il numero di giorni in cui i risultati vengono conservati nella cronologia dell'analisi nel dispositivo. I risultati dell'analisi precedente vengono rimossi dalla cronologia. Vecchi file in quarantena che vengono rimossi anche dal disco.
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | scanResultsRetentionDays |
@@ -260,7 +260,7 @@ Specifica il numero di giorni in cui i risultati vengono conservati nella cronol
 
 Specificare il numero massimo di voci da mantenere nella cronologia di analisi. Le voci includono tutte le analisi su richiesta eseguite in passato e tutti i rilevamenti antivirus.
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | scanHistoryMaximumItems |
@@ -270,9 +270,9 @@ Specificare il numero massimo di voci da mantenere nella cronologia di analisi. 
 
 ### <a name="cloud-delivered-protection-preferences"></a>Preferenze di protezione per il cloud
 
-Configurare le funzionalità di protezione basata sul cloud di Microsoft Defender per Endpoint per Mac.
+Configurare le funzionalità di protezione basata sul cloud di Microsoft Defender per Endpoint in macOS.
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | cloudService |
@@ -283,7 +283,7 @@ Configurare le funzionalità di protezione basata sul cloud di Microsoft Defende
 
 Specificare se abilitare o meno la protezione recapitata nel cloud. Per migliorare la sicurezza dei servizi, è consigliabile mantenere attivata questa funzionalità.
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | abilitati |
@@ -294,7 +294,7 @@ Specificare se abilitare o meno la protezione recapitata nel cloud. Per migliora
 
 I dati di diagnostica vengono usati per mantenere Microsoft Defender for Endpoint sicuro e aggiornato, rilevare, diagnosticare e risolvere i problemi e apportare miglioramenti al prodotto. Questa impostazione determina il livello di diagnostica inviato da Microsoft Defender per Endpoint a Microsoft.
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | diagnosticLevel |
@@ -305,7 +305,7 @@ I dati di diagnostica vengono usati per mantenere Microsoft Defender for Endpoin
 
 Determina se i campioni sospetti (che potrebbero contenere minacce) vengono inviati a Microsoft. Viene richiesto se è probabile che il file inviato contenga informazioni personali.
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | automaticSampleSubmission |
@@ -316,7 +316,7 @@ Determina se i campioni sospetti (che potrebbero contenere minacce) vengono invi
 
 Determina se gli aggiornamenti delle funzionalità di intelligence per la sicurezza vengono installati automaticamente:
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Chiave** | automaticDefinitionUpdateEnabled |
 | **Data type** | Booleano |
@@ -324,9 +324,9 @@ Determina se gli aggiornamenti delle funzionalità di intelligence per la sicure
 
 ### <a name="user-interface-preferences"></a>Preferenze dell'interfaccia utente
 
-Gestisci le preferenze per l'interfaccia utente di Microsoft Defender per Endpoint per Mac.
+Gestire le preferenze per l'interfaccia utente di Microsoft Defender per Endpoint in macOS.
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | userInterface |
@@ -337,7 +337,7 @@ Gestisci le preferenze per l'interfaccia utente di Microsoft Defender per Endpoi
 
 Specifica se mostrare o nascondere l'icona del menu di stato nell'angolo in alto a destra dello schermo.
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | hideStatusMenuIcon |
@@ -348,7 +348,7 @@ Specifica se mostrare o nascondere l'icona del menu di stato nell'angolo in alto
 
 Specificare se gli utenti possono inviare commenti e suggerimenti a Microsoft andando a `Help`  >  `Send Feedback` .
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | userInitiatedFeedback |
@@ -358,9 +358,9 @@ Specificare se gli utenti possono inviare commenti e suggerimenti a Microsoft an
 
 ### <a name="endpoint-detection-and-response-preferences"></a>Preferenze di risposta e rilevamento degli endpoint
 
-Gestire le preferenze del componente di rilevamento e risposta degli endpoint (EDR) di Microsoft Defender per Endpoint per Mac.
+Gestire le preferenze del componente di rilevamento e risposta degli endpoint (EDR) di Microsoft Defender per Endpoint in macOS.
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | edr |
@@ -373,7 +373,7 @@ Specificare un nome di tag e il relativo valore.
 
 - Il tag GROUP contrassegna il dispositivo con il valore specificato. Il tag si riflette nel portale nella pagina del dispositivo e può essere usato per filtrare e raggruppare i dispositivi.
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | tag |
@@ -384,7 +384,7 @@ Specificare un nome di tag e il relativo valore.
 
 Specifica il tipo di tag
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | chiave |
@@ -395,7 +395,7 @@ Specifica il tipo di tag
 
 Specifica il valore del tag
 
-|||
+|Sezione|Valore|
 |:---|:---|
 | **Dominio** | `com.microsoft.wdav` |
 | **Chiave** | valore |
@@ -542,7 +542,7 @@ Il profilo di configurazione seguente (o, nel caso di JAMF, un elenco di proprie
 
 ## <a name="full-configuration-profile-example"></a>Esempio di profilo di configurazione completo
 
-I modelli seguenti contengono voci per tutte le impostazioni descritte in questo documento e possono essere usati per scenari più avanzati in cui si desidera un maggiore controllo su Microsoft Defender per Endpoint per Mac.
+I modelli seguenti contengono voci per tutte le impostazioni descritte in questo documento e possono essere usati per scenari più avanzati in cui si desidera un maggiore controllo su Microsoft Defender for Endpoint in macOS.
 
 ### <a name="property-list-for-jamf-configuration-profile"></a>Elenco delle proprietà per il profilo di configurazione JAMF
 

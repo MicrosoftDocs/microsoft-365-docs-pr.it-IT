@@ -1,5 +1,5 @@
 ---
-title: Esempi di comandi di risposta in tempo reale
+title: Esempi di comandi di Live response
 description: Scopri come eseguire comandi di risposta in tempo reale di base o avanzati per Microsoft Defender per Endpoint e vedere esempi su come viene usato.
 keywords: ad esempio, command, cli, remote, shell, connection, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file
 search.product: eADQiWindows 10XVcnh
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 0e00464b5d5dcf348fcc76a3f093ac8bac373627
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: f08f20753a1f0926abbbce01fe97f20ef1c07f2c
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187710"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689090"
 ---
-# <a name="live-response-command-examples"></a>Esempi di comandi di risposta in tempo reale
+# <a name="live-response-command-examples"></a>Esempi di comandi di Live response
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -198,7 +198,11 @@ run script.ps1
 # Run PowerShell script from the library with arguments
 run get-process-by-name.ps1 -parameters "-processName Registry"
 ```
-
+>[!NOTE]
+>
+> Per i comandi a esecuzione lunga, ad esempio '**run**' o '**getfile**', è possibile utilizzare il simbolo ' ' alla fine del comando per eseguire l'azione **&** in background.
+> In questo modo sarà possibile continuare a analizzare il computer e tornare al comando in background al termine dell'uso del comando di base '**fg** ['.](live-response.md#basic-commands)
+>
 ## <a name="scheduledtask"></a>scheduledtask
 
 ```

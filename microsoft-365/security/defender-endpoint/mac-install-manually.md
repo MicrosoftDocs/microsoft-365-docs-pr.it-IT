@@ -1,6 +1,6 @@
 ---
-title: Distribuzione manuale per Microsoft Defender for Endpoint per macOS
-description: Installare Manualmente Microsoft Defender per Endpoint per macOS dalla riga di comando.
+title: Distribuzione manuale per Microsoft Defender per Endpoint in macOS
+description: Installare Microsoft Defender for Endpoint in macOS manualmente, dalla riga di comando.
 keywords: microsoft, defender, atp, mac, installazione, distribuire, disinstallazione, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,24 +18,24 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: a9e75441a8c4a336e8c657d27330c118fcac4788
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: 0e8faf95df6691828558175412a1de8aa844d93f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476318"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688598"
 ---
-# <a name="manual-deployment-for-microsoft-defender-for-endpoint-for-macos"></a>Distribuzione manuale per Microsoft Defender for Endpoint per macOS
+# <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Distribuzione manuale per Microsoft Defender per Endpoint in macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Questo argomento descrive come distribuire Manualmente Microsoft Defender for Endpoint per macOS. Una distribuzione corretta richiede il completamento di tutti i passaggi seguenti:
+Questo argomento descrive come distribuire Manualmente Microsoft Defender for Endpoint in macOS. Una distribuzione corretta richiede il completamento di tutti i passaggi seguenti:
 - [Scaricare i pacchetti di installazione e onboarding](#download-installation-and-onboarding-packages)
 - [Installazione dell'applicazione (macOS 10.15 e versioni precedenti)](#application-installation-macos-1015-and-older-versions)
 - [Installazione dell'applicazione (macOS 11 e versioni successive)](#application-installation-macos-11-and-newer-versions)
@@ -43,7 +43,7 @@ Questo argomento descrive come distribuire Manualmente Microsoft Defender for En
 
 ## <a name="prerequisites-and-system-requirements"></a>Prerequisiti e requisiti di sistema
 
-Prima di iniziare, vedi la pagina principale di [Microsoft Defender per Endpoint per macOS](microsoft-defender-endpoint-mac.md) per una descrizione dei prerequisiti e dei requisiti di sistema per la versione software corrente.
+Prima di iniziare, vedi la pagina principale di [Microsoft Defender per Endpoint su macOS](microsoft-defender-endpoint-mac.md) per una descrizione dei prerequisiti e dei requisiti di sistema per la versione software corrente.
 
 ## <a name="download-installation-and-onboarding-packages"></a>Scaricare i pacchetti di installazione e onboarding
 
@@ -105,9 +105,9 @@ Per completare questo processo, devi disporre dei privilegi di amministratore ne
 
     ![Preferenze di sicurezza delle estensioni di sistema1](images/big-sur-install-3.png)
 
-5. Ripeti i passaggi 3 & 4 per tutte le estensioni di sistema distribuite con Microsoft Defender per Endpoint per Mac.
+5. Ripeti i passaggi 3 & 4 per tutte le estensioni di sistema distribuite con Microsoft Defender per Endpoint su Mac.
 
-6. Come parte delle funzionalità di rilevamento e risposta degli endpoint, Microsoft Defender per Endpoint per Mac esamina il traffico socket e segnala queste informazioni al portale di Microsoft Defender Security Center. Quando viene richiesto di concedere a Microsoft Defender le autorizzazioni per Endpoint per filtrare il traffico di rete, selezionare **Consenti**.
+6. Come parte delle funzionalità di rilevamento e risposta degli endpoint, Microsoft Defender per Endpoint su Mac esamina il traffico socket e segnala queste informazioni al portale di Microsoft Defender Security Center. Quando viene richiesto di concedere a Microsoft Defender le autorizzazioni per Endpoint per filtrare il traffico di rete, selezionare **Consenti**.
 
     ![Preferenze di sicurezza delle estensioni di sistema2](images/big-sur-install-4.png)
 
@@ -117,7 +117,7 @@ Per completare questo processo, devi disporre dei privilegi di amministratore ne
 
 ## <a name="client-configuration"></a>Configurazione client
 
-1. Copia wdav.pkg e MicrosoftDefenderATPOnboardingMacOs.py nel dispositivo in cui distribuisci Microsoft Defender per Endpoint per macOS.
+1. Copia wdav.pkg e MicrosoftDefenderATPOnboardingMacOs.py nel dispositivo in cui distribuisci Microsoft Defender per Endpoint in macOS.
 
     Il dispositivo client non è associato a org_id. *L'attributo org_id* è vuoto.
 

@@ -17,14 +17,14 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 64a19e9dd3d373c8092553ca9d60c711bfb500bc
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 7d9dd82d8c1beee77ea1f95b11a12bcddf01115f
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186414"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688334"
 ---
-# <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>Microsoft Defender for Endpoint per piattaforme non Windows
+# <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>Microsoft Defender for Endpoint per piattaforme non-Windows
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -71,7 +71,7 @@ Gli utenti con licenza idonea possono usare Microsoft Defender per Endpoint su u
 
 I clienti possono ottenere Microsoft Defender per Endpoint su macOS tramite una licenza autonoma di Microsoft Defender for Endpoint, come parte di Microsoft 365 A5/E5 o Microsoft 365 Security.
 
-Le funzionalità annunciate di recente di Microsoft Defender per Endpoint per Android e iOS sono incluse nelle offerte menzionate in precedenza nell'ambito dei cinque dispositivi qualificati per gli utenti con licenza idonei.
+Le funzionalità annunciate di recente di Microsoft Defender per Endpoint su Android e iOS sono incluse nelle offerte menzionate in precedenza nell'ambito dei cinque dispositivi qualificati per gli utenti con licenza idonei.
 
 Defender per Endpoint su Linux è disponibile tramite lo SKU defender per Endpoint Server disponibile sia per i clienti commerciali che per i clienti dell'istruzione.
 

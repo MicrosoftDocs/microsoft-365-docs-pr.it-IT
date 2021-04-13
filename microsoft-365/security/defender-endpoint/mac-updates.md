@@ -18,29 +18,29 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 99f507ad381ee21ba91753716439180fafe37c24
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3321c1bd181b89c53e2618fc20fa7f733a20cfc1
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066306"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689054"
 ---
-# <a name="deploy-updates-for-microsoft-defender-for-endpoint-for-mac"></a>Distribuire gli aggiornamenti per Microsoft Defender per Endpoint per Mac
+# <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-macos"></a>Distribuire gli aggiornamenti per Microsoft Defender per Endpoint in macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
 **Si applica a:**
 
-- [Microsoft Defender per Endpoint per Mac](microsoft-defender-endpoint-mac.md)
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per Endpoint in macOS](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
 Microsoft pubblica regolarmente aggiornamenti software per migliorare le prestazioni, la sicurezza e offrire nuove funzionalità.
 
-Per aggiornare Microsoft Defender per Endpoint per Mac, viene utilizzato un programma denominato Microsoft AutoUpdate (MAU). Per impostazione predefinita, MAU controlla automaticamente la disponibilità di aggiornamenti ogni giorno, ma puoi modificarli in settimana, mensile o manualmente.
+Per aggiornare Microsoft Defender for Endpoint in macOS, viene utilizzato un programma denominato Microsoft AutoUpdate (MAU). Per impostazione predefinita, MAU controlla automaticamente la disponibilità di aggiornamenti ogni giorno, ma puoi modificarli in settimana, mensile o manualmente.
 
 ![Schermata MAU](images/MDATP-34-MAU.png)
 
@@ -50,7 +50,7 @@ Se decidi di distribuire gli aggiornamenti usando gli strumenti di distribuzione
 
 MAU include uno strumento da riga di comando, denominato *msupdate,* progettato per gli amministratori IT in modo che abbia un controllo più preciso sulla modalità di applicazione degli aggiornamenti. Le istruzioni per l'utilizzo di questo strumento sono disponibili in [Update Office for Mac by using msupdate](https://docs.microsoft.com/deployoffice/mac/update-office-for-mac-using-msupdate).
 
-In MAU, l'identificatore dell'applicazione per Microsoft Defender per Endpoint per Mac è *WDAV00.* Per scaricare e installare gli aggiornamenti più recenti per Microsoft Defender per Endpoint per Mac, eseguire il comando seguente da una finestra del terminale:
+In MAU, l'identificatore dell'applicazione per Microsoft Defender per Endpoint in macOS è *WDAV00*. Per scaricare e installare gli aggiornamenti più recenti per Microsoft Defender for Endpoint in macOS, eseguire il comando seguente da una finestra del terminale:
 
 ```
 ./msupdate --install --apps wdav00
@@ -76,7 +76,7 @@ Il `Current` canale contiene la versione più stabile del prodotto.
 >[!TIP]
 >Per visualizzare in anteprima le nuove funzionalità e fornire feedback anticipato, è consigliabile configurare alcuni dispositivi dell'organizzazione in `Beta` o `Preview` .
 
-|||
+|Sezione|Valore|
 |:--|:--|
 | **Dominio** | com.microsoft.autoupdate2 |
 | **Chiave** | ChannelName |
@@ -85,7 +85,7 @@ Il `Current` canale contiene la versione più stabile del prodotto.
 |||
 
 >[!WARNING]
->Questa impostazione modifica il canale per tutte le applicazioni aggiornate tramite Microsoft AutoUpdate. Per modificare il canale solo per Microsoft Defender per Endpoint per Mac, esegui il comando seguente dopo la sostituzione `[channel-name]` con il canale desiderato:
+>Questa impostazione modifica il canale per tutte le applicazioni aggiornate tramite Microsoft AutoUpdate. Per modificare il canale solo per Microsoft Defender for Endpoint in macOS, esegui il comando seguente dopo la sostituzione `[channel-name]` con il canale desiderato:
 > ```bash
 > defaults write com.microsoft.autoupdate2 Applications -dict-add "/Applications/Microsoft Defender ATP.app" " { 'Application ID' = 'WDAV00' ; 'App Domain' = 'com.microsoft.wdav' ; LCID = 1033 ; ChannelName = '[channel-name]' ; }"
 > ```
@@ -94,63 +94,63 @@ Il `Current` canale contiene la versione più stabile del prodotto.
 
 Modificare la frequenza di ricerca degli aggiornamenti da parte di MAU.
 
-|||
+|Sezione|Valore|
 |:--|:--|
 | **Dominio** | com.microsoft.autoupdate2 |
 | **Chiave** | UpdateCheckFrequency |
 | **Data type** | Numero intero |
 | **Valore predefinito** | 720 (minuti) |
 | **Commento** | Questo valore è impostato in minuti. |
-|||
+
 
 ### <a name="change-how-mau-interacts-with-updates"></a>Modificare il modo in cui MAU interagisce con gli aggiornamenti
 
 Modificare la modalità di ricerca degli aggiornamenti da parte di MAU.
 
-|||
+|Sezione|Valore|
 |:--|:--|
 | **Dominio** | com.microsoft.autoupdate2 |
 | **Chiave** | HowToCheck |
 | **Data type** | Stringa |
 | **Valori possibili** | Manuale <br/> AutomaticCheck <br/> AutomaticDownload |
 | **Commento** |  Nota che AutomaticDownload farà un download e l'installazione invisibile all'utente, se possibile. |
-|||
+
 
 ### <a name="change-whether-the-check-for-updates-button-is-enabled"></a>Modificare se il pulsante "Controlla aggiornamenti" è abilitato
 
 Modificare se gli utenti locali potranno fare clic sull'opzione "Controlla aggiornamenti" nell'interfaccia utente di Microsoft AutoUpdate.
 
-|||
+|Sezione|Valore|
 |:--|:--|
 | **Dominio** | com.microsoft.autoupdate2 |
 | **Chiave** | EnableCheckForUpdatesButton |
 | **Data type** | Booleano |
 | **Valori possibili** | True (impostazione predefinita) <br/> False |
-|||
+
 
 ### <a name="disable-insider-checkbox"></a>Casella di controllo Disattiva Insider
 
 Impostare su true per rendere "Partecipa al programma Office Insider..." casella di controllo non disponibile/ disattivata per gli utenti.
 
-|||
+|Sezione|Valore|
 |:--|:--|
 | **Dominio** | com.microsoft.autoupdate2 |
 | **Chiave** | DisableInsiderCheckbox |
 | **Data type** | Booleano |
 | **Valori possibili** | False (impostazione predefinita) <br/> Vero |
-|||
+
 
 ### <a name="limit-the-telemetry-that-is-sent-from-mau"></a>Limitare la telemetria inviata da MAU
 
 Impostare su false per inviare dati heartbeat minimi, nessun utilizzo dell'applicazione e nessun dettaglio dell'ambiente.
 
-|||
+|Sezione|Valore|
 |:--|:--|
 | **Dominio** | com.microsoft.autoupdate2 |
 | **Chiave** | SendAllTelemetryEnabled |
 | **Data type** | Booleano |
 | **Valori possibili** | True (impostazione predefinita) <br/> False |
-|||
+
 
 ## <a name="example-configuration-profile"></a>Profilo di configurazione di esempio
 

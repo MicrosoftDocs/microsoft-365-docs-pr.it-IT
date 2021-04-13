@@ -18,14 +18,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0a4dd551da8fcb38559360307a878edde3b3a1ba
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 48c34f2a8fb65cb0fc8ecbb616b9d041f61ae044
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587636"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688130"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-for-linux-with-ansible"></a>Distribuire Microsoft Defender per Endpoint per Linux con Ansible
+# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Distribuire Microsoft Defender per Endpoint su Linux con Ansible
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -174,7 +174,7 @@ Crea una sottoattività o file di ruolo che contribuiscono a un playbook o a un'
       baseurl: https://packages.microsoft.com/[distro]/[version]/[channel]/
       gpgcheck: yes
       enabled: Yes
-  when: ansible_os_family == "RedHat"
+    when: ansible_os_family == "RedHat"
   ```
 
 - Creare i file YAML di installazione e disinstallazione di Ansible.
@@ -189,7 +189,8 @@ Crea una sottoattività o file di ruolo che contribuiscono a un playbook o a un'
           tasks:
             - include: ../roles/onboarding_setup.yml
             - include: ../roles/add_apt_repo.yml
-            - apt:
+            - name: Install MDATP
+              apt:
                 name: mdatp
                 state: latest
                 update_cache: yes
@@ -200,36 +201,39 @@ Crea una sottoattività o file di ruolo che contribuiscono a un playbook o a un'
         ```
         ```Output
         - hosts: servers
-        tasks:
-            - apt:
+          tasks:
+            - name: Uninstall MDATP
+              apt:
                 name: mdatp
                 state: absent
         ```
 
-    - Per le distribuzioni basate su yum utilizzare il file YAML seguente:
+    - Per le distribuzioni basate su dnf utilizzare il file YAML seguente:
 
         ```bash
-        cat install_mdatp_yum.yml
+        cat install_mdatp_dnf.yml
         ```
         ```Output
         - hosts: servers
           tasks:
             - include: ../roles/onboarding_setup.yml
             - include: ../roles/add_yum_repo.yml
-            - yum:
-              name: mdatp
-              state: latest
-              enablerepo: packages-microsoft-com-prod-[channel]
+            - name: Install MDATP
+              dnf:
+                name: mdatp
+                state: latest
+                enablerepo: packages-microsoft-com-prod-[channel]
         ```
 
         ```bash
-        cat uninstall_mdatp_yum.yml
+        cat uninstall_mdatp_dnf.yml
         ```
         ```Output
         - hosts: servers
-        tasks:
-            - yum:
-               name: mdatp
+          tasks:
+            - name: Uninstall MDATP
+              dnf:
+                name: mdatp
                 state: absent
         ```
 
@@ -271,10 +275,10 @@ Durante l'aggiornamento del sistema operativo a una nuova versione principale, d
 
 ## <a name="references"></a>Riferimenti
 
-- [Aggiungere o rimuovere archivi YUM](https://docs.ansible.com/ansible/2.3/yum_repository_module.html)
+- [Aggiungere o rimuovere archivi YUM](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/yum_repository_module.html)
 
-- [Gestire i pacchetti con gestione pacchetti yum](https://docs.ansible.com/ansible/latest/modules/yum_module.html)
+- [Gestire i pacchetti con gestione pacchetti dnf](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/dnf_module.html)
 
-- [Aggiungere e rimuovere archivi APT](https://docs.ansible.com/ansible/latest/modules/apt_repository_module.html)
+- [Aggiungere e rimuovere archivi APT](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_repository_module.html)
 
-- [Gestire i pacchetti apt](https://docs.ansible.com/ansible/latest/modules/apt_module.html)
+- [Gestire i pacchetti apt](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html)

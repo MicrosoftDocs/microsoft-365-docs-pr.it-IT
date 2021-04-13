@@ -1,6 +1,6 @@
 ---
-title: Distribuzione di Microsoft Defender per endpoint per Android con Microsoft Intune
-description: Descrive come distribuire Microsoft Defender for Endpoint per Android con Microsoft Intune
+title: Distribuire Microsoft Defender per Endpoint su Android con Microsoft Intune
+description: Descrive come distribuire Microsoft Defender per Endpoint su Android con Microsoft Intune
 keywords: microsoft, defender, atp, mde, android, installazione, distribuire, disinstallazione,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,14 +17,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: fdfc6e63945e15ce2d1f1a293c377f641eeb9bc4
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 350345acbaadcdd6bc8ef901f03c419a7f8decff
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587696"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687722"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-for-android-with-microsoft-intune"></a>Distribuzione di Microsoft Defender per endpoint per Android con Microsoft Intune 
+# <a name="deploy-microsoft-defender-for-endpoint-on-android-with-microsoft-intune"></a>Distribuire Microsoft Defender per Endpoint su Android con Microsoft Intune 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -104,7 +104,7 @@ Per altre informazioni sulle opzioni di registrazione supportate da Intune, vedi
 
 **Attualmente, i dispositivi di proprietà personale con profilo di lavoro e le registrazioni di dispositivi utente completamente gestiti di proprietà dell'azienda sono supportati per la distribuzione.**
 
-## <a name="add-microsoft-defender-for-endpoint-for-android-as-a-managed-google-play-app"></a>Aggiungere Microsoft Defender per Endpoint per Android come app Google Play gestita
+## <a name="add-microsoft-defender-for-endpoint-on-android-as-a-managed-google-play-app"></a>Aggiungere Microsoft Defender per Endpoint su Android come app Google Play gestita
 
 Segui i passaggi seguenti per aggiungere l'app Microsoft Defender for Endpoint al tuo Google Play gestito.
 
@@ -240,7 +240,7 @@ Selezionare **Crea**.
 
 ## <a name="complete-onboarding-and-check-status"></a>Completare l'onboarding e controllare lo stato
 
-1. Confermare lo stato di installazione di Microsoft Defender per Endpoint per Android facendo clic su **Stato installazione dispositivo**. Verifica che il dispositivo sia visualizzato qui.
+1. Confermare lo stato di installazione di Microsoft Defender per Endpoint su Android facendo clic su **Stato installazione dispositivo**. Verifica che il dispositivo sia visualizzato qui.
 
     > [!div class="mx-imgBorder"]
     > ![Immagine dello stato di installazione del dispositivo](images/900c0197aa59f9b7abd762ab2b32e80c.png)
@@ -260,5 +260,5 @@ Selezionare **Crea**.
 
 
 ## <a name="related-topics"></a>Argomenti correlati
-- [Panoramica di Microsoft Defender per endpoint per Android](microsoft-defender-endpoint-android.md)
-- [Configurare funzionalità di Microsoft Defender per endpoint per Android](android-configure.md)
+- [Panoramica di Microsoft Defender per Endpoint su Android](microsoft-defender-endpoint-android.md)
+- [Configurare Le funzionalità di Microsoft Defender per Endpoint su Android](android-configure.md)

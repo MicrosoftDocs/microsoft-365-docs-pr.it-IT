@@ -1,6 +1,6 @@
 ---
-title: Monitoraggio della sicurezza dell'esplorazione Web in Microsoft Defender ATP
-description: Usare la protezione Web in Microsoft Defender ATP per monitorare la sicurezza dell'esplorazione Web
+title: Monitoraggio della sicurezza dell'esplorazione Web in Microsoft Defender for Endpoint
+description: Usare la protezione Web in Microsoft Defender for Endpoint per monitorare la sicurezza dell'esplorazione Web
 keywords: protezione Web, protezione dalle minacce Web, esplorazione Web, monitoraggio, report, schede, elenco di domini, sicurezza, phishing, malware, exploit, siti Web, protezione di rete, Edge, Internet Explorer, Chrome, Firefox, web browser
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 629e18c7387f6063254f3482f93a5e17023c7316
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: ee6388c779d2c5bc09a82f5e9064d1b981e885cb
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499952"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51687424"
 ---
 # <a name="monitor-web-browsing-security"></a>Monitorare la sicurezza dell'esplorazione Web
 

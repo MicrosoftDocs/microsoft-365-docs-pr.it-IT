@@ -1,6 +1,6 @@
 ---
 title: Filtro contenuti Web
-description: Usare il filtro contenuto Web in Microsoft Defender ATP per tenere traccia e regolare l'accesso ai siti Web in base alle categorie di contenuto.
+description: Usare il filtro contenuto Web in Microsoft Defender for Endpoint per tenere traccia e regolare l'accesso ai siti Web in base alle categorie di contenuto.
 keywords: protezione Web, protezione dalle minacce Web, esplorazione Web, monitoraggio, report, schede, elenco di domini, sicurezza, phishing, malware, exploit, siti Web, protezione di rete, Edge, Internet Explorer, Chrome, Firefox, web browser
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c5f44b4ab8354330ec9701261e8fb0dcc2e9fe52
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: c9a069deded237c5ded6bcd9f6c6a77f644e65a2
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499967"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689342"
 ---
 # <a name="web-content-filtering"></a>Filtro contenuti Web
 

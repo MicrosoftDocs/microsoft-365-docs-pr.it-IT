@@ -16,16 +16,16 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b4c2e4d80628dab40de9e99abb27237176b9f171
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a967333a58f74938ea70e32e0c48d2decb597e98
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51062466"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688802"
 ---
-# <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a>Pianificare un aggiornamento di Microsoft Defender for Endpoint (Linux)
+# <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a>Pianificare un aggiornamento di Microsoft Defender per Endpoint (Linux)
 
-Per eseguire un aggiornamento in Microsoft Defender for Endpoint per Linux, vedi [Distribuire gli aggiornamenti per Microsoft Defender per Endpoint per Linux.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-updates)
+Per eseguire un aggiornamento in Microsoft Defender for Endpoint su Linux, vedi [Distribuire gli aggiornamenti per Microsoft Defender per Endpoint su Linux.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-updates)
 
 Linux (e Unix) dispongono di uno strumento denominato **crontab** (simile all'Utilità di pianificazione) per poter eseguire attività pianificate.
 
@@ -127,7 +127,7 @@ Automazione con Puppet: processi Cron e attività pianificate
 
 Per altre informazioni, vedere [https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/).
 
-## <a name="additional-information"></a>Informazioni aggiuntive
+## <a name="additional-information"></a>Ulteriori informazioni
 
 **Per ottenere assistenza con crontab**
 
