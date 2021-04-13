@@ -18,44 +18,44 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0a4dd551da8fcb38559360307a878edde3b3a1ba
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 48c34f2a8fb65cb0fc8ecbb616b9d041f61ae044
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587636"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688130"
 ---
-# <a name="deploy-microsoft-defender-for-endpoint-for-linux-with-ansible"></a><span data-ttu-id="d5496-104">Distribuire Microsoft Defender per Endpoint per Linux con Ansible</span><span class="sxs-lookup"><span data-stu-id="d5496-104">Deploy Microsoft Defender for Endpoint for Linux with Ansible</span></span>
+# <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a><span data-ttu-id="9fe86-104">Distribuire Microsoft Defender per Endpoint su Linux con Ansible</span><span class="sxs-lookup"><span data-stu-id="9fe86-104">Deploy Microsoft Defender for Endpoint on Linux with Ansible</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="d5496-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="d5496-105">**Applies to:**</span></span>
-- [<span data-ttu-id="d5496-106">Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="d5496-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
-- [<span data-ttu-id="d5496-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="d5496-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+<span data-ttu-id="9fe86-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="9fe86-105">**Applies to:**</span></span>
+- [<span data-ttu-id="9fe86-106">Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="9fe86-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [<span data-ttu-id="9fe86-107">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="9fe86-107">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="d5496-108">Vuoi provare Defender per Endpoint?</span><span class="sxs-lookup"><span data-stu-id="d5496-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="d5496-109">Iscriversi per una versione di valutazione gratuita.</span><span class="sxs-lookup"><span data-stu-id="d5496-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
+> <span data-ttu-id="9fe86-108">Vuoi provare Defender per Endpoint?</span><span class="sxs-lookup"><span data-stu-id="9fe86-108">Want to experience Defender for Endpoint?</span></span> [<span data-ttu-id="9fe86-109">Iscriversi per una versione di valutazione gratuita.</span><span class="sxs-lookup"><span data-stu-id="9fe86-109">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-<span data-ttu-id="d5496-110">Questo articolo descrive come distribuire Defender for Endpoint per Linux usando Ansible.</span><span class="sxs-lookup"><span data-stu-id="d5496-110">This article describes how to deploy Defender for Endpoint for Linux using Ansible.</span></span> <span data-ttu-id="d5496-111">Una distribuzione corretta richiede il completamento di tutte le attività seguenti:</span><span class="sxs-lookup"><span data-stu-id="d5496-111">A successful deployment requires the completion of all of the following tasks:</span></span>
+<span data-ttu-id="9fe86-110">Questo articolo descrive come distribuire Defender for Endpoint per Linux usando Ansible.</span><span class="sxs-lookup"><span data-stu-id="9fe86-110">This article describes how to deploy Defender for Endpoint for Linux using Ansible.</span></span> <span data-ttu-id="9fe86-111">Una distribuzione corretta richiede il completamento di tutte le attività seguenti:</span><span class="sxs-lookup"><span data-stu-id="9fe86-111">A successful deployment requires the completion of all of the following tasks:</span></span>
 
-- [<span data-ttu-id="d5496-112">Scaricare il pacchetto di onboarding</span><span class="sxs-lookup"><span data-stu-id="d5496-112">Download the onboarding package</span></span>](#download-the-onboarding-package)
-- [<span data-ttu-id="d5496-113">Creare file YAML ansible</span><span class="sxs-lookup"><span data-stu-id="d5496-113">Create Ansible YAML files</span></span>](#create-ansible-yaml-files)
-- [<span data-ttu-id="d5496-114">Distribuzione</span><span class="sxs-lookup"><span data-stu-id="d5496-114">Deployment</span></span>](#deployment)
-- [<span data-ttu-id="d5496-115">Riferimenti</span><span class="sxs-lookup"><span data-stu-id="d5496-115">References</span></span>](#references)
+- [<span data-ttu-id="9fe86-112">Scaricare il pacchetto di onboarding</span><span class="sxs-lookup"><span data-stu-id="9fe86-112">Download the onboarding package</span></span>](#download-the-onboarding-package)
+- [<span data-ttu-id="9fe86-113">Creare file YAML ansible</span><span class="sxs-lookup"><span data-stu-id="9fe86-113">Create Ansible YAML files</span></span>](#create-ansible-yaml-files)
+- [<span data-ttu-id="9fe86-114">Distribuzione</span><span class="sxs-lookup"><span data-stu-id="9fe86-114">Deployment</span></span>](#deployment)
+- [<span data-ttu-id="9fe86-115">Riferimenti</span><span class="sxs-lookup"><span data-stu-id="9fe86-115">References</span></span>](#references)
 
-## <a name="prerequisites-and-system-requirements"></a><span data-ttu-id="d5496-116">Prerequisiti e requisiti di sistema</span><span class="sxs-lookup"><span data-stu-id="d5496-116">Prerequisites and system requirements</span></span>
+## <a name="prerequisites-and-system-requirements"></a><span data-ttu-id="9fe86-116">Prerequisiti e requisiti di sistema</span><span class="sxs-lookup"><span data-stu-id="9fe86-116">Prerequisites and system requirements</span></span>
 
-<span data-ttu-id="d5496-117">Prima di iniziare, vedi la [pagina principale di Defender per Endpoint per Linux](microsoft-defender-endpoint-linux.md) per una descrizione dei prerequisiti e dei requisiti di sistema per la versione software corrente.</span><span class="sxs-lookup"><span data-stu-id="d5496-117">Before you get started, see [the main Defender for Endpoint for Linux page](microsoft-defender-endpoint-linux.md) for a description of prerequisites and system requirements for the current software version.</span></span>
+<span data-ttu-id="9fe86-117">Prima di iniziare, vedi la [pagina principale di Defender per Endpoint per Linux](microsoft-defender-endpoint-linux.md) per una descrizione dei prerequisiti e dei requisiti di sistema per la versione software corrente.</span><span class="sxs-lookup"><span data-stu-id="9fe86-117">Before you get started, see [the main Defender for Endpoint for Linux page](microsoft-defender-endpoint-linux.md) for a description of prerequisites and system requirements for the current software version.</span></span>
 
-<span data-ttu-id="d5496-118">Inoltre, per la distribuzione di Ansible, devi avere familiarità con le attività di amministrazione di Ansible, avere Ansible configurato e sapere come distribuire playbook e attività.</span><span class="sxs-lookup"><span data-stu-id="d5496-118">In addition, for Ansible deployment, you need to be familiar with Ansible administration tasks, have Ansible configured, and know how to deploy playbooks and tasks.</span></span> <span data-ttu-id="d5496-119">Ansible ha molti modi per completare la stessa attività.</span><span class="sxs-lookup"><span data-stu-id="d5496-119">Ansible has many ways to complete the same task.</span></span> <span data-ttu-id="d5496-120">Queste istruzioni presuppongono la disponibilità di moduli ansible supportati, ad esempio *apt* e *unarchive* per facilitare la distribuzione del pacchetto.</span><span class="sxs-lookup"><span data-stu-id="d5496-120">These instructions assume availability of supported Ansible modules, such as *apt* and *unarchive* to help deploy the package.</span></span> <span data-ttu-id="d5496-121">L'organizzazione potrebbe utilizzare un flusso di lavoro diverso.</span><span class="sxs-lookup"><span data-stu-id="d5496-121">Your organization might use a different workflow.</span></span> <span data-ttu-id="d5496-122">Per informazioni dettagliate, fare riferimento alla documentazione relativa a [Ansible.](https://docs.ansible.com/)</span><span class="sxs-lookup"><span data-stu-id="d5496-122">Refer to the [Ansible documentation](https://docs.ansible.com/) for details.</span></span>
+<span data-ttu-id="9fe86-118">Inoltre, per la distribuzione di Ansible, devi avere familiarità con le attività di amministrazione di Ansible, avere Ansible configurato e sapere come distribuire playbook e attività.</span><span class="sxs-lookup"><span data-stu-id="9fe86-118">In addition, for Ansible deployment, you need to be familiar with Ansible administration tasks, have Ansible configured, and know how to deploy playbooks and tasks.</span></span> <span data-ttu-id="9fe86-119">Ansible ha molti modi per completare la stessa attività.</span><span class="sxs-lookup"><span data-stu-id="9fe86-119">Ansible has many ways to complete the same task.</span></span> <span data-ttu-id="9fe86-120">Queste istruzioni presuppongono la disponibilità di moduli ansible supportati, ad esempio *apt* e *unarchive* per facilitare la distribuzione del pacchetto.</span><span class="sxs-lookup"><span data-stu-id="9fe86-120">These instructions assume availability of supported Ansible modules, such as *apt* and *unarchive* to help deploy the package.</span></span> <span data-ttu-id="9fe86-121">L'organizzazione potrebbe utilizzare un flusso di lavoro diverso.</span><span class="sxs-lookup"><span data-stu-id="9fe86-121">Your organization might use a different workflow.</span></span> <span data-ttu-id="9fe86-122">Per informazioni dettagliate, fare riferimento alla documentazione relativa a [Ansible.](https://docs.ansible.com/)</span><span class="sxs-lookup"><span data-stu-id="9fe86-122">Refer to the [Ansible documentation](https://docs.ansible.com/) for details.</span></span>
 
-- <span data-ttu-id="d5496-123">Ansible deve essere installato in almeno un computer (lo chiameremo computer primario).</span><span class="sxs-lookup"><span data-stu-id="d5496-123">Ansible needs to be installed on at least one computer (we will call it the primary computer).</span></span>
-- <span data-ttu-id="d5496-124">SSH deve essere configurato per un account amministratore tra il computer primario e tutti i client ed è consigliabile configurarlo con l'autenticazione a chiave pubblica.</span><span class="sxs-lookup"><span data-stu-id="d5496-124">SSH must be configured for an administrator account between the primary computer and all clients, and it is recommended be configured with public key authentication.</span></span>
-- <span data-ttu-id="d5496-125">In tutti i client deve essere installato il software seguente:</span><span class="sxs-lookup"><span data-stu-id="d5496-125">The following software must be installed on all clients:</span></span>
-  - <span data-ttu-id="d5496-126">curl</span><span class="sxs-lookup"><span data-stu-id="d5496-126">curl</span></span>
-  - <span data-ttu-id="d5496-127">python-apt</span><span class="sxs-lookup"><span data-stu-id="d5496-127">python-apt</span></span>
+- <span data-ttu-id="9fe86-123">Ansible deve essere installato in almeno un computer (lo chiameremo computer primario).</span><span class="sxs-lookup"><span data-stu-id="9fe86-123">Ansible needs to be installed on at least one computer (we will call it the primary computer).</span></span>
+- <span data-ttu-id="9fe86-124">SSH deve essere configurato per un account amministratore tra il computer primario e tutti i client ed è consigliabile configurarlo con l'autenticazione a chiave pubblica.</span><span class="sxs-lookup"><span data-stu-id="9fe86-124">SSH must be configured for an administrator account between the primary computer and all clients, and it is recommended be configured with public key authentication.</span></span>
+- <span data-ttu-id="9fe86-125">In tutti i client deve essere installato il software seguente:</span><span class="sxs-lookup"><span data-stu-id="9fe86-125">The following software must be installed on all clients:</span></span>
+  - <span data-ttu-id="9fe86-126">curl</span><span class="sxs-lookup"><span data-stu-id="9fe86-126">curl</span></span>
+  - <span data-ttu-id="9fe86-127">python-apt</span><span class="sxs-lookup"><span data-stu-id="9fe86-127">python-apt</span></span>
 
-- <span data-ttu-id="d5496-128">Tutti gli host devono essere elencati nel formato seguente nel `/etc/ansible/hosts` file o pertinente:</span><span class="sxs-lookup"><span data-stu-id="d5496-128">All hosts must be listed in the following format in the `/etc/ansible/hosts` or relevant file:</span></span>
+- <span data-ttu-id="9fe86-128">Tutti gli host devono essere elencati nel formato seguente nel `/etc/ansible/hosts` file o pertinente:</span><span class="sxs-lookup"><span data-stu-id="9fe86-128">All hosts must be listed in the following format in the `/etc/ansible/hosts` or relevant file:</span></span>
 
     ```bash
     [servers]
@@ -63,23 +63,23 @@ ms.locfileid: "51587636"
     host2 ansible_ssh_host=51.143.50.51
     ```
 
-- <span data-ttu-id="d5496-129">Test ping:</span><span class="sxs-lookup"><span data-stu-id="d5496-129">Ping test:</span></span>
+- <span data-ttu-id="9fe86-129">Test ping:</span><span class="sxs-lookup"><span data-stu-id="9fe86-129">Ping test:</span></span>
 
     ```bash
     ansible -m ping all
     ```
 
-## <a name="download-the-onboarding-package"></a><span data-ttu-id="d5496-130">Scaricare il pacchetto di onboarding</span><span class="sxs-lookup"><span data-stu-id="d5496-130">Download the onboarding package</span></span>
+## <a name="download-the-onboarding-package"></a><span data-ttu-id="9fe86-130">Scaricare il pacchetto di onboarding</span><span class="sxs-lookup"><span data-stu-id="9fe86-130">Download the onboarding package</span></span>
 
-<span data-ttu-id="d5496-131">Scaricare il pacchetto di onboarding da Microsoft Defender Security Center:</span><span class="sxs-lookup"><span data-stu-id="d5496-131">Download the onboarding package from Microsoft Defender Security Center:</span></span>
+<span data-ttu-id="9fe86-131">Scaricare il pacchetto di onboarding da Microsoft Defender Security Center:</span><span class="sxs-lookup"><span data-stu-id="9fe86-131">Download the onboarding package from Microsoft Defender Security Center:</span></span>
 
-1. <span data-ttu-id="d5496-132">In Microsoft Defender Security Center, vai a **Impostazioni > Gestione dispositivi > onboarding**.</span><span class="sxs-lookup"><span data-stu-id="d5496-132">In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.</span></span>
-2. <span data-ttu-id="d5496-133">Nel primo menu a discesa seleziona **Linux Server** come sistema operativo.</span><span class="sxs-lookup"><span data-stu-id="d5496-133">In the first drop-down menu, select **Linux Server** as the operating system.</span></span> <span data-ttu-id="d5496-134">Nel secondo menu a discesa seleziona Lo strumento di gestione della **configurazione Linux preferito** come metodo di distribuzione.</span><span class="sxs-lookup"><span data-stu-id="d5496-134">In the second drop-down menu, select **Your preferred Linux configuration management tool** as the deployment method.</span></span>
-3. <span data-ttu-id="d5496-135">Seleziona **Scarica pacchetto di onboarding.**</span><span class="sxs-lookup"><span data-stu-id="d5496-135">Select **Download onboarding package**.</span></span> <span data-ttu-id="d5496-136">Salvare il file come WindowsDefenderATPOnboardingPackage.zip.</span><span class="sxs-lookup"><span data-stu-id="d5496-136">Save the file as WindowsDefenderATPOnboardingPackage.zip.</span></span>
+1. <span data-ttu-id="9fe86-132">In Microsoft Defender Security Center, vai a **Impostazioni > Gestione dispositivi > onboarding**.</span><span class="sxs-lookup"><span data-stu-id="9fe86-132">In Microsoft Defender Security Center, go to **Settings > Device Management > Onboarding**.</span></span>
+2. <span data-ttu-id="9fe86-133">Nel primo menu a discesa seleziona **Linux Server** come sistema operativo.</span><span class="sxs-lookup"><span data-stu-id="9fe86-133">In the first drop-down menu, select **Linux Server** as the operating system.</span></span> <span data-ttu-id="9fe86-134">Nel secondo menu a discesa seleziona Lo strumento di gestione della **configurazione Linux preferito** come metodo di distribuzione.</span><span class="sxs-lookup"><span data-stu-id="9fe86-134">In the second drop-down menu, select **Your preferred Linux configuration management tool** as the deployment method.</span></span>
+3. <span data-ttu-id="9fe86-135">Seleziona **Scarica pacchetto di onboarding.**</span><span class="sxs-lookup"><span data-stu-id="9fe86-135">Select **Download onboarding package**.</span></span> <span data-ttu-id="9fe86-136">Salvare il file come WindowsDefenderATPOnboardingPackage.zip.</span><span class="sxs-lookup"><span data-stu-id="9fe86-136">Save the file as WindowsDefenderATPOnboardingPackage.zip.</span></span>
 
     ![Screenshot di Microsoft Defender Security Center](images/atp-portal-onboarding-linux-2.png)
 
-4. <span data-ttu-id="d5496-138">Da un prompt dei comandi, verificare di disporre del file.</span><span class="sxs-lookup"><span data-stu-id="d5496-138">From a command prompt, verify that you have the file.</span></span> <span data-ttu-id="d5496-139">Estrarre il contenuto dell'archivio:</span><span class="sxs-lookup"><span data-stu-id="d5496-139">Extract the contents of the archive:</span></span>
+4. <span data-ttu-id="9fe86-138">Da un prompt dei comandi, verificare di disporre del file.</span><span class="sxs-lookup"><span data-stu-id="9fe86-138">From a command prompt, verify that you have the file.</span></span> <span data-ttu-id="9fe86-139">Estrarre il contenuto dell'archivio:</span><span class="sxs-lookup"><span data-stu-id="9fe86-139">Extract the contents of the archive:</span></span>
 
     ```bash
     ls -l
@@ -96,11 +96,11 @@ ms.locfileid: "51587636"
     inflating: mdatp_onboard.json
     ```
 
-## <a name="create-ansible-yaml-files"></a><span data-ttu-id="d5496-140">Creare file YAML ansible</span><span class="sxs-lookup"><span data-stu-id="d5496-140">Create Ansible YAML files</span></span>
+## <a name="create-ansible-yaml-files"></a><span data-ttu-id="9fe86-140">Creare file YAML ansible</span><span class="sxs-lookup"><span data-stu-id="9fe86-140">Create Ansible YAML files</span></span>
 
-<span data-ttu-id="d5496-141">Crea una sottoattività o file di ruolo che contribuiscono a un playbook o a un'attività.</span><span class="sxs-lookup"><span data-stu-id="d5496-141">Create a subtask or role files that contribute to an playbook or task.</span></span>
+<span data-ttu-id="9fe86-141">Crea una sottoattività o file di ruolo che contribuiscono a un playbook o a un'attività.</span><span class="sxs-lookup"><span data-stu-id="9fe86-141">Create a subtask or role files that contribute to an playbook or task.</span></span>
 
-- <span data-ttu-id="d5496-142">Creare l'attività di onboarding: `onboarding_setup.yml`</span><span class="sxs-lookup"><span data-stu-id="d5496-142">Create the onboarding task, `onboarding_setup.yml`:</span></span>
+- <span data-ttu-id="9fe86-142">Creare l'attività di onboarding: `onboarding_setup.yml`</span><span class="sxs-lookup"><span data-stu-id="9fe86-142">Create the onboarding task, `onboarding_setup.yml`:</span></span>
 
     ```bash
     - name: Create MDATP directories
@@ -127,23 +127,23 @@ ms.locfileid: "51587636"
       when: not mdatp_onboard.stat.exists
     ```
 
-- <span data-ttu-id="d5496-143">Aggiungi il repository e la chiave defender per endpoint.</span><span class="sxs-lookup"><span data-stu-id="d5496-143">Add the Defender for Endpoint repository and key.</span></span>
+- <span data-ttu-id="9fe86-143">Aggiungi il repository e la chiave defender per endpoint.</span><span class="sxs-lookup"><span data-stu-id="9fe86-143">Add the Defender for Endpoint repository and key.</span></span>
 
-    <span data-ttu-id="d5496-144">Defender per Endpoint per Linux può essere distribuito da uno dei seguenti canali (indicato di seguito come *[canale]*): *insiders-fast,* *insiders-slow* o *prod*. Ognuno di questi canali corrisponde a un archivio software Linux.</span><span class="sxs-lookup"><span data-stu-id="d5496-144">Defender for Endpoint for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insiders-fast*, *insiders-slow*, or *prod*. Each of these channels corresponds to a Linux software repository.</span></span>
+    <span data-ttu-id="9fe86-144">Defender per Endpoint per Linux può essere distribuito da uno dei seguenti canali (indicato di seguito come *[canale]*): *insiders-fast,* *insiders-slow* o *prod*. Ognuno di questi canali corrisponde a un archivio software Linux.</span><span class="sxs-lookup"><span data-stu-id="9fe86-144">Defender for Endpoint for Linux can be deployed from one of the following channels (denoted below as *[channel]*): *insiders-fast*, *insiders-slow*, or *prod*. Each of these channels corresponds to a Linux software repository.</span></span>
 
-    <span data-ttu-id="d5496-145">La scelta del canale determina il tipo e la frequenza degli aggiornamenti offerti al dispositivo.</span><span class="sxs-lookup"><span data-stu-id="d5496-145">The choice of the channel determines the type and frequency of updates that are offered to your device.</span></span> <span data-ttu-id="d5496-146">I dispositivi *in Insiders-fast* sono i primi a ricevere aggiornamenti e nuove funzionalità, seguiti successivamente da *insider lenti* e infine *da prod*.</span><span class="sxs-lookup"><span data-stu-id="d5496-146">Devices in *insiders-fast* are the first ones to receive updates and new features, followed later by *insiders-slow* and lastly by *prod*.</span></span>
+    <span data-ttu-id="9fe86-145">La scelta del canale determina il tipo e la frequenza degli aggiornamenti offerti al dispositivo.</span><span class="sxs-lookup"><span data-stu-id="9fe86-145">The choice of the channel determines the type and frequency of updates that are offered to your device.</span></span> <span data-ttu-id="9fe86-146">I dispositivi *in Insiders-fast* sono i primi a ricevere aggiornamenti e nuove funzionalità, seguiti successivamente da *insider lenti* e infine *da prod*.</span><span class="sxs-lookup"><span data-stu-id="9fe86-146">Devices in *insiders-fast* are the first ones to receive updates and new features, followed later by *insiders-slow* and lastly by *prod*.</span></span>
 
-    <span data-ttu-id="d5496-147">Per visualizzare in anteprima le nuove funzionalità e fornire feedback anticipato, è consigliabile configurare alcuni dispositivi nell'organizzazione per l'uso di *insiders-fast* o *insiders-slow*.</span><span class="sxs-lookup"><span data-stu-id="d5496-147">In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use either *insiders-fast* or *insiders-slow*.</span></span>
+    <span data-ttu-id="9fe86-147">Per visualizzare in anteprima le nuove funzionalità e fornire feedback anticipato, è consigliabile configurare alcuni dispositivi nell'organizzazione per l'uso di *insiders-fast* o *insiders-slow*.</span><span class="sxs-lookup"><span data-stu-id="9fe86-147">In order to preview new features and provide early feedback, it is recommended that you configure some devices in your enterprise to use either *insiders-fast* or *insiders-slow*.</span></span>
 
     > [!WARNING]
-    > <span data-ttu-id="d5496-148">Il cambio di canale dopo l'installazione iniziale richiede la reinstallazione del prodotto.</span><span class="sxs-lookup"><span data-stu-id="d5496-148">Switching the channel after the initial installation requires the product to be reinstalled.</span></span> <span data-ttu-id="d5496-149">Per cambiare il canale del prodotto: disinstalla il pacchetto esistente, ri-configura il dispositivo per l'uso del nuovo canale e segui i passaggi in questo documento per installare il pacchetto dal nuovo percorso.</span><span class="sxs-lookup"><span data-stu-id="d5496-149">To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.</span></span>
+    > <span data-ttu-id="9fe86-148">Il cambio di canale dopo l'installazione iniziale richiede la reinstallazione del prodotto.</span><span class="sxs-lookup"><span data-stu-id="9fe86-148">Switching the channel after the initial installation requires the product to be reinstalled.</span></span> <span data-ttu-id="9fe86-149">Per cambiare il canale del prodotto: disinstalla il pacchetto esistente, ri-configura il dispositivo per l'uso del nuovo canale e segui i passaggi in questo documento per installare il pacchetto dal nuovo percorso.</span><span class="sxs-lookup"><span data-stu-id="9fe86-149">To switch the product channel: uninstall the existing package, re-configure your device to use the new channel, and follow the steps in this document to install the package from the new location.</span></span>
 
-    <span data-ttu-id="d5496-150">Annotare la distribuzione e la versione e identificare la voce più vicina in `https://packages.microsoft.com/config/` .</span><span class="sxs-lookup"><span data-stu-id="d5496-150">Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/`.</span></span>
+    <span data-ttu-id="9fe86-150">Annotare la distribuzione e la versione e identificare la voce più vicina in `https://packages.microsoft.com/config/` .</span><span class="sxs-lookup"><span data-stu-id="9fe86-150">Note your distribution and version and identify the closest entry for it under `https://packages.microsoft.com/config/`.</span></span>
 
-    <span data-ttu-id="d5496-151">Nei comandi seguenti sostituisci *[distro]* e *[versione]* con le informazioni identificate.</span><span class="sxs-lookup"><span data-stu-id="d5496-151">In the following commands, replace *[distro]* and *[version]* with the information you've identified.</span></span>
+    <span data-ttu-id="9fe86-151">Nei comandi seguenti sostituisci *[distro]* e *[versione]* con le informazioni identificate.</span><span class="sxs-lookup"><span data-stu-id="9fe86-151">In the following commands, replace *[distro]* and *[version]* with the information you've identified.</span></span>
 
     > [!NOTE]
-    > <span data-ttu-id="d5496-152">Nel caso di Oracle Linux, sostituisci *[distro]* con "rhel".</span><span class="sxs-lookup"><span data-stu-id="d5496-152">In case of Oracle Linux, replace *[distro]* with “rhel”.</span></span>
+    > <span data-ttu-id="9fe86-152">Nel caso di Oracle Linux, sostituisci *[distro]* con "rhel".</span><span class="sxs-lookup"><span data-stu-id="9fe86-152">In case of Oracle Linux, replace *[distro]* with “rhel”.</span></span>
 
   ```bash
   - name: Add Microsoft APT key
@@ -174,12 +174,12 @@ ms.locfileid: "51587636"
       baseurl: https://packages.microsoft.com/[distro]/[version]/[channel]/
       gpgcheck: yes
       enabled: Yes
-  when: ansible_os_family == "RedHat"
+    when: ansible_os_family == "RedHat"
   ```
 
-- <span data-ttu-id="d5496-153">Creare i file YAML di installazione e disinstallazione di Ansible.</span><span class="sxs-lookup"><span data-stu-id="d5496-153">Create the Ansible install and uninstall YAML files.</span></span>
+- <span data-ttu-id="9fe86-153">Creare i file YAML di installazione e disinstallazione di Ansible.</span><span class="sxs-lookup"><span data-stu-id="9fe86-153">Create the Ansible install and uninstall YAML files.</span></span>
 
-    - <span data-ttu-id="d5496-154">Per le distribuzioni basate su apt usa il file YAML seguente:</span><span class="sxs-lookup"><span data-stu-id="d5496-154">For apt-based distributions use the following YAML file:</span></span>
+    - <span data-ttu-id="9fe86-154">Per le distribuzioni basate su apt usa il file YAML seguente:</span><span class="sxs-lookup"><span data-stu-id="9fe86-154">For apt-based distributions use the following YAML file:</span></span>
 
         ```bash
         cat install_mdatp.yml
@@ -189,7 +189,8 @@ ms.locfileid: "51587636"
           tasks:
             - include: ../roles/onboarding_setup.yml
             - include: ../roles/add_apt_repo.yml
-            - apt:
+            - name: Install MDATP
+              apt:
                 name: mdatp
                 state: latest
                 update_cache: yes
@@ -200,53 +201,56 @@ ms.locfileid: "51587636"
         ```
         ```Output
         - hosts: servers
-        tasks:
-            - apt:
+          tasks:
+            - name: Uninstall MDATP
+              apt:
                 name: mdatp
                 state: absent
         ```
 
-    - <span data-ttu-id="d5496-155">Per le distribuzioni basate su yum utilizzare il file YAML seguente:</span><span class="sxs-lookup"><span data-stu-id="d5496-155">For yum-based distributions use the following YAML file:</span></span>
+    - <span data-ttu-id="9fe86-155">Per le distribuzioni basate su dnf utilizzare il file YAML seguente:</span><span class="sxs-lookup"><span data-stu-id="9fe86-155">For dnf-based distributions use the following YAML file:</span></span>
 
         ```bash
-        cat install_mdatp_yum.yml
+        cat install_mdatp_dnf.yml
         ```
         ```Output
         - hosts: servers
           tasks:
             - include: ../roles/onboarding_setup.yml
             - include: ../roles/add_yum_repo.yml
-            - yum:
-              name: mdatp
-              state: latest
-              enablerepo: packages-microsoft-com-prod-[channel]
+            - name: Install MDATP
+              dnf:
+                name: mdatp
+                state: latest
+                enablerepo: packages-microsoft-com-prod-[channel]
         ```
 
         ```bash
-        cat uninstall_mdatp_yum.yml
+        cat uninstall_mdatp_dnf.yml
         ```
         ```Output
         - hosts: servers
-        tasks:
-            - yum:
-               name: mdatp
+          tasks:
+            - name: Uninstall MDATP
+              dnf:
+                name: mdatp
                 state: absent
         ```
 
-## <a name="deployment"></a><span data-ttu-id="d5496-156">Distribuzione</span><span class="sxs-lookup"><span data-stu-id="d5496-156">Deployment</span></span>
+## <a name="deployment"></a><span data-ttu-id="9fe86-156">Distribuzione</span><span class="sxs-lookup"><span data-stu-id="9fe86-156">Deployment</span></span>
 
-<span data-ttu-id="d5496-157">Eseguire ora i file delle attività nella `/etc/ansible/playbooks/` directory o nella directory pertinente.</span><span class="sxs-lookup"><span data-stu-id="d5496-157">Now run the tasks files under `/etc/ansible/playbooks/` or relevant directory.</span></span>
+<span data-ttu-id="9fe86-157">Eseguire ora i file delle attività nella `/etc/ansible/playbooks/` directory o nella directory pertinente.</span><span class="sxs-lookup"><span data-stu-id="9fe86-157">Now run the tasks files under `/etc/ansible/playbooks/` or relevant directory.</span></span>
 
-- <span data-ttu-id="d5496-158">Installazione:</span><span class="sxs-lookup"><span data-stu-id="d5496-158">Installation:</span></span>
+- <span data-ttu-id="9fe86-158">Installazione:</span><span class="sxs-lookup"><span data-stu-id="9fe86-158">Installation:</span></span>
 
     ```bash
     ansible-playbook /etc/ansible/playbooks/install_mdatp.yml -i /etc/ansible/hosts
     ```
 
 > [!IMPORTANT]
-> <span data-ttu-id="d5496-159">Quando il prodotto viene avviato per la prima volta, scarica le definizioni antimalware più recenti.</span><span class="sxs-lookup"><span data-stu-id="d5496-159">When the product starts for the first time, it downloads the latest antimalware definitions.</span></span> <span data-ttu-id="d5496-160">A seconda della connessione Internet, l'operazione può richiedere alcuni minuti.</span><span class="sxs-lookup"><span data-stu-id="d5496-160">Depending on your Internet connection, this can take up to a few minutes.</span></span>
+> <span data-ttu-id="9fe86-159">Quando il prodotto viene avviato per la prima volta, scarica le definizioni antimalware più recenti.</span><span class="sxs-lookup"><span data-stu-id="9fe86-159">When the product starts for the first time, it downloads the latest antimalware definitions.</span></span> <span data-ttu-id="9fe86-160">A seconda della connessione Internet, l'operazione può richiedere alcuni minuti.</span><span class="sxs-lookup"><span data-stu-id="9fe86-160">Depending on your Internet connection, this can take up to a few minutes.</span></span>
 
-- <span data-ttu-id="d5496-161">Convalida/configurazione:</span><span class="sxs-lookup"><span data-stu-id="d5496-161">Validation/configuration:</span></span>
+- <span data-ttu-id="9fe86-161">Convalida/configurazione:</span><span class="sxs-lookup"><span data-stu-id="9fe86-161">Validation/configuration:</span></span>
 
     ```bash
     ansible -m shell -a 'mdatp connectivity test' all
@@ -255,26 +259,26 @@ ms.locfileid: "51587636"
     ansible -m shell -a 'mdatp health' all
     ```
 
-- <span data-ttu-id="d5496-162">Disinstallazione:</span><span class="sxs-lookup"><span data-stu-id="d5496-162">Uninstallation:</span></span>
+- <span data-ttu-id="9fe86-162">Disinstallazione:</span><span class="sxs-lookup"><span data-stu-id="9fe86-162">Uninstallation:</span></span>
 
     ```bash
     ansible-playbook /etc/ansible/playbooks/uninstall_mdatp.yml -i /etc/ansible/hosts
     ```
 
-## <a name="log-installation-issues"></a><span data-ttu-id="d5496-163">Registrare i problemi di installazione</span><span class="sxs-lookup"><span data-stu-id="d5496-163">Log installation issues</span></span>
+## <a name="log-installation-issues"></a><span data-ttu-id="9fe86-163">Registrare i problemi di installazione</span><span class="sxs-lookup"><span data-stu-id="9fe86-163">Log installation issues</span></span>
 
-<span data-ttu-id="d5496-164">Vedere [Registrare i problemi](linux-resources.md#log-installation-issues) di installazione per ulteriori informazioni su come trovare il registro generato automaticamente creato dal programma di installazione quando si verifica un errore.</span><span class="sxs-lookup"><span data-stu-id="d5496-164">See [Log installation issues](linux-resources.md#log-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.</span></span>
+<span data-ttu-id="9fe86-164">Vedere [Registrare i problemi](linux-resources.md#log-installation-issues) di installazione per ulteriori informazioni su come trovare il registro generato automaticamente creato dal programma di installazione quando si verifica un errore.</span><span class="sxs-lookup"><span data-stu-id="9fe86-164">See [Log installation issues](linux-resources.md#log-installation-issues) for more information on how to find the automatically generated log that is created by the installer when an error occurs.</span></span>
 
-## <a name="operating-system-upgrades"></a><span data-ttu-id="d5496-165">Aggiornamenti del sistema operativo</span><span class="sxs-lookup"><span data-stu-id="d5496-165">Operating system upgrades</span></span>
+## <a name="operating-system-upgrades"></a><span data-ttu-id="9fe86-165">Aggiornamenti del sistema operativo</span><span class="sxs-lookup"><span data-stu-id="9fe86-165">Operating system upgrades</span></span>
 
-<span data-ttu-id="d5496-166">Durante l'aggiornamento del sistema operativo a una nuova versione principale, devi prima disinstallare Defender per Endpoint per Linux, installare l'aggiornamento e infine riconfigurare Defender per Endpoint per Linux nel dispositivo.</span><span class="sxs-lookup"><span data-stu-id="d5496-166">When upgrading your operating system to a new major version, you must first uninstall Defender for Endpoint for Linux, install the upgrade, and finally reconfigure Defender for Endpoint for Linux on your device.</span></span>
+<span data-ttu-id="9fe86-166">Durante l'aggiornamento del sistema operativo a una nuova versione principale, devi prima disinstallare Defender per Endpoint per Linux, installare l'aggiornamento e infine riconfigurare Defender per Endpoint per Linux nel dispositivo.</span><span class="sxs-lookup"><span data-stu-id="9fe86-166">When upgrading your operating system to a new major version, you must first uninstall Defender for Endpoint for Linux, install the upgrade, and finally reconfigure Defender for Endpoint for Linux on your device.</span></span>
 
-## <a name="references"></a><span data-ttu-id="d5496-167">Riferimenti</span><span class="sxs-lookup"><span data-stu-id="d5496-167">References</span></span>
+## <a name="references"></a><span data-ttu-id="9fe86-167">Riferimenti</span><span class="sxs-lookup"><span data-stu-id="9fe86-167">References</span></span>
 
-- [<span data-ttu-id="d5496-168">Aggiungere o rimuovere archivi YUM</span><span class="sxs-lookup"><span data-stu-id="d5496-168">Add or remove YUM repositories</span></span>](https://docs.ansible.com/ansible/2.3/yum_repository_module.html)
+- [<span data-ttu-id="9fe86-168">Aggiungere o rimuovere archivi YUM</span><span class="sxs-lookup"><span data-stu-id="9fe86-168">Add or remove YUM repositories</span></span>](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/yum_repository_module.html)
 
-- [<span data-ttu-id="d5496-169">Gestire i pacchetti con gestione pacchetti yum</span><span class="sxs-lookup"><span data-stu-id="d5496-169">Manage packages with the yum package manager</span></span>](https://docs.ansible.com/ansible/latest/modules/yum_module.html)
+- [<span data-ttu-id="9fe86-169">Gestire i pacchetti con gestione pacchetti dnf</span><span class="sxs-lookup"><span data-stu-id="9fe86-169">Manage packages with the dnf package manager</span></span>](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/dnf_module.html)
 
-- [<span data-ttu-id="d5496-170">Aggiungere e rimuovere archivi APT</span><span class="sxs-lookup"><span data-stu-id="d5496-170">Add and remove APT repositories</span></span>](https://docs.ansible.com/ansible/latest/modules/apt_repository_module.html)
+- [<span data-ttu-id="9fe86-170">Aggiungere e rimuovere archivi APT</span><span class="sxs-lookup"><span data-stu-id="9fe86-170">Add and remove APT repositories</span></span>](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_repository_module.html)
 
-- [<span data-ttu-id="d5496-171">Gestire i pacchetti apt</span><span class="sxs-lookup"><span data-stu-id="d5496-171">Manage apt-packages</span></span>](https://docs.ansible.com/ansible/latest/modules/apt_module.html)
+- [<span data-ttu-id="9fe86-171">Gestire i pacchetti apt</span><span class="sxs-lookup"><span data-stu-id="9fe86-171">Manage apt-packages</span></span>](https://docs.ansible.com/ansible/latest/collections/ansible/builtin/apt_module.html)

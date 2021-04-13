@@ -16,163 +16,163 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: b4c2e4d80628dab40de9e99abb27237176b9f171
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: a967333a58f74938ea70e32e0c48d2decb597e98
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51062466"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688802"
 ---
-# <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a><span data-ttu-id="70add-104">Pianificare un aggiornamento di Microsoft Defender for Endpoint (Linux)</span><span class="sxs-lookup"><span data-stu-id="70add-104">Schedule an update of the Microsoft Defender for Endpoint (Linux)</span></span>
+# <a name="schedule-an-update-of-the-microsoft-defender-for-endpoint-linux"></a><span data-ttu-id="6823e-104">Pianificare un aggiornamento di Microsoft Defender per Endpoint (Linux)</span><span class="sxs-lookup"><span data-stu-id="6823e-104">Schedule an update of the Microsoft Defender for Endpoint (Linux)</span></span>
 
-<span data-ttu-id="70add-105">Per eseguire un aggiornamento in Microsoft Defender for Endpoint per Linux, vedi [Distribuire gli aggiornamenti per Microsoft Defender per Endpoint per Linux.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-updates)</span><span class="sxs-lookup"><span data-stu-id="70add-105">To run an update on Microsoft Defender for Endpoint for Linux, see [Deploy updates for Microsoft Defender for Endpoint for Linux](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-updates).</span></span>
+<span data-ttu-id="6823e-105">Per eseguire un aggiornamento in Microsoft Defender for Endpoint su Linux, vedi [Distribuire gli aggiornamenti per Microsoft Defender per Endpoint su Linux.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-updates)</span><span class="sxs-lookup"><span data-stu-id="6823e-105">To run an update on Microsoft Defender for Endpoint on Linux, see [Deploy updates for Microsoft Defender for Endpoint on Linux](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-updates).</span></span>
 
-<span data-ttu-id="70add-106">Linux (e Unix) dispongono di uno strumento denominato **crontab** (simile all'Utilità di pianificazione) per poter eseguire attività pianificate.</span><span class="sxs-lookup"><span data-stu-id="70add-106">Linux (and Unix) have a tool called **crontab** (similar to Task Scheduler) to be able to run scheduled tasks.</span></span>
+<span data-ttu-id="6823e-106">Linux (e Unix) dispongono di uno strumento denominato **crontab** (simile all'Utilità di pianificazione) per poter eseguire attività pianificate.</span><span class="sxs-lookup"><span data-stu-id="6823e-106">Linux (and Unix) have a tool called **crontab** (similar to Task Scheduler) to be able to run scheduled tasks.</span></span>
 
-## <a name="pre-requisite"></a><span data-ttu-id="70add-107">Prerequisiti</span><span class="sxs-lookup"><span data-stu-id="70add-107">Pre-requisite</span></span>
+## <a name="pre-requisite"></a><span data-ttu-id="6823e-107">Prerequisiti</span><span class="sxs-lookup"><span data-stu-id="6823e-107">Pre-requisite</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="70add-108">Per ottenere un elenco di tutti i fusi orari, eseguire il comando seguente: `timedatectl list-timezones`</span><span class="sxs-lookup"><span data-stu-id="70add-108">To get a list of all the time zones, run the following command: `timedatectl list-timezones`</span></span><br>
-> <span data-ttu-id="70add-109">Esempi di fusi orario:</span><span class="sxs-lookup"><span data-stu-id="70add-109">Examples for timezones:</span></span> <br>
+> <span data-ttu-id="6823e-108">Per ottenere un elenco di tutti i fusi orari, eseguire il comando seguente: `timedatectl list-timezones`</span><span class="sxs-lookup"><span data-stu-id="6823e-108">To get a list of all the time zones, run the following command: `timedatectl list-timezones`</span></span><br>
+> <span data-ttu-id="6823e-109">Esempi di fusi orario:</span><span class="sxs-lookup"><span data-stu-id="6823e-109">Examples for timezones:</span></span> <br>
 > - `America/Los_Angeles`
 > - `America/New_York`
 > - `America/Chicago`
 > - `America/Denver`
 
-## <a name="to-set-the-cron-job"></a><span data-ttu-id="70add-110">Per impostare il processo Cron</span><span class="sxs-lookup"><span data-stu-id="70add-110">To set the Cron job</span></span>
-<span data-ttu-id="70add-111">Utilizzare i comandi seguenti:</span><span class="sxs-lookup"><span data-stu-id="70add-111">Use the following commands:</span></span>
+## <a name="to-set-the-cron-job"></a><span data-ttu-id="6823e-110">Per impostare il processo Cron</span><span class="sxs-lookup"><span data-stu-id="6823e-110">To set the Cron job</span></span>
+<span data-ttu-id="6823e-111">Utilizzare i comandi seguenti:</span><span class="sxs-lookup"><span data-stu-id="6823e-111">Use the following commands:</span></span>
 
-<span data-ttu-id="70add-112">**Per eseguire il backup delle voci crontab**</span><span class="sxs-lookup"><span data-stu-id="70add-112">**To backup crontab entries**</span></span>
+<span data-ttu-id="6823e-112">**Per eseguire il backup delle voci crontab**</span><span class="sxs-lookup"><span data-stu-id="6823e-112">**To backup crontab entries**</span></span>
 
 `sudo crontab -l > /var/tmp/cron_backup_201118.dat`
 
 > [!NOTE]
-> <span data-ttu-id="70add-113">Dove 201118 == AAMMDD</span><span class="sxs-lookup"><span data-stu-id="70add-113">Where 201118 == YYMMDD</span></span>
+> <span data-ttu-id="6823e-113">Dove 201118 == AAMMDD</span><span class="sxs-lookup"><span data-stu-id="6823e-113">Where 201118 == YYMMDD</span></span>
 
 > [!TIP]
-> <span data-ttu-id="70add-114">Eseguire questa operazione prima di modificare o rimuovere.</span><span class="sxs-lookup"><span data-stu-id="70add-114">Do this before you edit or remove.</span></span> <br>
+> <span data-ttu-id="6823e-114">Eseguire questa operazione prima di modificare o rimuovere.</span><span class="sxs-lookup"><span data-stu-id="6823e-114">Do this before you edit or remove.</span></span> <br>
 
-<span data-ttu-id="70add-115">Per modificare la crontab e aggiungere un nuovo processo come utente radice:</span><span class="sxs-lookup"><span data-stu-id="70add-115">To edit the crontab, and add a new job as a root user:</span></span> <br>
+<span data-ttu-id="6823e-115">Per modificare la crontab e aggiungere un nuovo processo come utente radice:</span><span class="sxs-lookup"><span data-stu-id="6823e-115">To edit the crontab, and add a new job as a root user:</span></span> <br>
 `sudo crontab -e`
 
 > [!NOTE]
-> <span data-ttu-id="70add-116">L'editor predefinito è VIM.</span><span class="sxs-lookup"><span data-stu-id="70add-116">The default editor is VIM.</span></span>
+> <span data-ttu-id="6823e-116">L'editor predefinito è VIM.</span><span class="sxs-lookup"><span data-stu-id="6823e-116">The default editor is VIM.</span></span>
 
-<span data-ttu-id="70add-117">Potrebbe essere visualizzato:</span><span class="sxs-lookup"><span data-stu-id="70add-117">You might see:</span></span>
+<span data-ttu-id="6823e-117">Potrebbe essere visualizzato:</span><span class="sxs-lookup"><span data-stu-id="6823e-117">You might see:</span></span>
 
-<span data-ttu-id="70add-118">0\*\*\*\*/etc/opt/microsoft/mdatp/logrorate.sh</span><span class="sxs-lookup"><span data-stu-id="70add-118">0\*\*\*\*/etc/opt/microsoft/mdatp/logrorate.sh</span></span>
+<span data-ttu-id="6823e-118">0\*\*\*\*/etc/opt/microsoft/mdatp/logrorate.sh</span><span class="sxs-lookup"><span data-stu-id="6823e-118">0\*\*\*\*/etc/opt/microsoft/mdatp/logrorate.sh</span></span>
 
-<span data-ttu-id="70add-119">E</span><span class="sxs-lookup"><span data-stu-id="70add-119">And</span></span>
+<span data-ttu-id="6823e-119">E</span><span class="sxs-lookup"><span data-stu-id="6823e-119">And</span></span>
 
-<span data-ttu-id="70add-120">02\*\*sat /bin/mdatp scan quick>~/mdatp_cron_job.log</span><span class="sxs-lookup"><span data-stu-id="70add-120">02\*\*sat /bin/mdatp scan quick>~/mdatp_cron_job.log</span></span>
+<span data-ttu-id="6823e-120">02\*\*sat /bin/mdatp scan quick>~/mdatp_cron_job.log</span><span class="sxs-lookup"><span data-stu-id="6823e-120">02\*\*sat /bin/mdatp scan quick>~/mdatp_cron_job.log</span></span>
 
-<span data-ttu-id="70add-121">Vedere [Pianificare le analisi con Microsoft Defender for Endpoint (Linux)](linux-schedule-scan-atp.md)</span><span class="sxs-lookup"><span data-stu-id="70add-121">See [Schedule scans with Microsoft Defender for Endpoint (Linux)](linux-schedule-scan-atp.md)</span></span>
+<span data-ttu-id="6823e-121">Vedere [Pianificare le analisi con Microsoft Defender for Endpoint (Linux)](linux-schedule-scan-atp.md)</span><span class="sxs-lookup"><span data-stu-id="6823e-121">See [Schedule scans with Microsoft Defender for Endpoint (Linux)](linux-schedule-scan-atp.md)</span></span>
 
-<span data-ttu-id="70add-122">Premere "Insert"</span><span class="sxs-lookup"><span data-stu-id="70add-122">Press “Insert”</span></span>
+<span data-ttu-id="6823e-122">Premere "Insert"</span><span class="sxs-lookup"><span data-stu-id="6823e-122">Press “Insert”</span></span>
 
-<span data-ttu-id="70add-123">Aggiungere le voci seguenti:</span><span class="sxs-lookup"><span data-stu-id="70add-123">Add the following entries:</span></span>
+<span data-ttu-id="6823e-123">Aggiungere le voci seguenti:</span><span class="sxs-lookup"><span data-stu-id="6823e-123">Add the following entries:</span></span>
 
-<span data-ttu-id="70add-124">CRON_TZ=America/Los_Angeles</span><span class="sxs-lookup"><span data-stu-id="70add-124">CRON_TZ=America/Los_Angeles</span></span>
+<span data-ttu-id="6823e-124">CRON_TZ=America/Los_Angeles</span><span class="sxs-lookup"><span data-stu-id="6823e-124">CRON_TZ=America/Los_Angeles</span></span>
 
-> #<a name="rhel-and-variants-centos-and-oracle-linux"></a><span data-ttu-id="70add-125">! RHEL e varianti (CentOS e Oracle Linux)</span><span class="sxs-lookup"><span data-stu-id="70add-125">!RHEL and variants (CentOS and Oracle Linux)</span></span>
+> #<a name="rhel-and-variants-centos-and-oracle-linux"></a><span data-ttu-id="6823e-125">! RHEL e varianti (CentOS e Oracle Linux)</span><span class="sxs-lookup"><span data-stu-id="6823e-125">!RHEL and variants (CentOS and Oracle Linux)</span></span>
 
 `06**sun[$(date +\%d) -le 15] sudo yum update mdatp>>~/mdatp_cron_job.log`
 
-> #<a name="sles-and-variants"></a><span data-ttu-id="70add-126">! SLES e varianti</span><span class="sxs-lookup"><span data-stu-id="70add-126">!SLES and variants</span></span>
+> #<a name="sles-and-variants"></a><span data-ttu-id="6823e-126">! SLES e varianti</span><span class="sxs-lookup"><span data-stu-id="6823e-126">!SLES and variants</span></span>
 
 `06**sun[$(date +\%d) -le 15] sudo zypper update mdatp>>~/mdatp_cron_job.log`
 
-> #<a name="ubuntu-and-debian-systems"></a><span data-ttu-id="70add-127">! Sistemi Ubuntu e Debian</span><span class="sxs-lookup"><span data-stu-id="70add-127">!Ubuntu and Debian systems</span></span>
+> #<a name="ubuntu-and-debian-systems"></a><span data-ttu-id="6823e-127">! Sistemi Ubuntu e Debian</span><span class="sxs-lookup"><span data-stu-id="6823e-127">!Ubuntu and Debian systems</span></span>
 
 `06**sun [$(date +\%d) -le 15] sudo apt-get install --only-upgrade mdatp>>~/mdatp_cron_job.log`
 
 > [!NOTE]
-> <span data-ttu-id="70add-128">Negli esempi precedenti, viene impostato su 00 minuti, alle 6.00 (ora in formato 24 ore), qualsiasi giorno del mese, qualsiasi mese, la domenica. [$(date + d) -le 15] == Non verrà eseguito a meno che non sia uguale o inferiore al \% 15° giorno (terza settimana).</span><span class="sxs-lookup"><span data-stu-id="70add-128">In the examples above, we are setting it to 00 minutes, 6 a.m.(hour in 24 hour format), any day of the month, any month, on Sundays.[$(date +\%d) -le 15] == Won’t run unless it’s equal or less than the 15th day (3rd week).</span></span> <span data-ttu-id="70add-129">Questo significa che verrà eseguito ogni 3 domeniche(7) del mese alle 6.00.</span><span class="sxs-lookup"><span data-stu-id="70add-129">Meaning it will run every 3rd Sundays(7) of the month at 6:00 a.m.</span></span> <span data-ttu-id="70add-130">Pacifico (UTC -8).</span><span class="sxs-lookup"><span data-stu-id="70add-130">Pacific (UTC -8).</span></span>
+> <span data-ttu-id="6823e-128">Negli esempi precedenti, viene impostato su 00 minuti, alle 6.00 (ora in formato 24 ore), qualsiasi giorno del mese, qualsiasi mese, la domenica. [$(date + d) -le 15] == Non verrà eseguito a meno che non sia uguale o inferiore al \% 15° giorno (terza settimana).</span><span class="sxs-lookup"><span data-stu-id="6823e-128">In the examples above, we are setting it to 00 minutes, 6 a.m.(hour in 24 hour format), any day of the month, any month, on Sundays.[$(date +\%d) -le 15] == Won’t run unless it’s equal or less than the 15th day (3rd week).</span></span> <span data-ttu-id="6823e-129">Questo significa che verrà eseguito ogni 3 domeniche(7) del mese alle 6.00.</span><span class="sxs-lookup"><span data-stu-id="6823e-129">Meaning it will run every 3rd Sundays(7) of the month at 6:00 a.m.</span></span> <span data-ttu-id="6823e-130">Pacifico (UTC -8).</span><span class="sxs-lookup"><span data-stu-id="6823e-130">Pacific (UTC -8).</span></span>
 
-<span data-ttu-id="70add-131">Premere "Esc"</span><span class="sxs-lookup"><span data-stu-id="70add-131">Press “Esc”</span></span>
+<span data-ttu-id="6823e-131">Premere "Esc"</span><span class="sxs-lookup"><span data-stu-id="6823e-131">Press “Esc”</span></span>
 
-<span data-ttu-id="70add-132">Digitare ":wq" w/o le virgolette doppie.</span><span class="sxs-lookup"><span data-stu-id="70add-132">Type “:wq” w/o the double quotes.</span></span>
+<span data-ttu-id="6823e-132">Digitare ":wq" w/o le virgolette doppie.</span><span class="sxs-lookup"><span data-stu-id="6823e-132">Type “:wq” w/o the double quotes.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="70add-133">w == write, q == quit</span><span class="sxs-lookup"><span data-stu-id="70add-133">w == write, q == quit</span></span>
+> <span data-ttu-id="6823e-133">w == write, q == quit</span><span class="sxs-lookup"><span data-stu-id="6823e-133">w == write, q == quit</span></span>
 
-<span data-ttu-id="70add-134">Per visualizzare i processi cron, digitare `sudo crontab -l`</span><span class="sxs-lookup"><span data-stu-id="70add-134">To view your cron jobs, type `sudo crontab -l`</span></span>
+<span data-ttu-id="6823e-134">Per visualizzare i processi cron, digitare `sudo crontab -l`</span><span class="sxs-lookup"><span data-stu-id="6823e-134">To view your cron jobs, type `sudo crontab -l`</span></span>
 
 :::image type="content" source="images/update-MDE-linux-4634577.jpg" alt-text="aggiornare MDE linux":::
 
-<span data-ttu-id="70add-136">Per esaminare l'esecuzione del processo cron: `sudo grep mdatp /var/log/cron`</span><span class="sxs-lookup"><span data-stu-id="70add-136">To inspect cron job runs: `sudo grep mdatp /var/log/cron`</span></span>
+<span data-ttu-id="6823e-136">Per esaminare l'esecuzione del processo cron: `sudo grep mdatp /var/log/cron`</span><span class="sxs-lookup"><span data-stu-id="6823e-136">To inspect cron job runs: `sudo grep mdatp /var/log/cron`</span></span>
 
-<span data-ttu-id="70add-137">Per esaminare il mdatp_cron_job.log `sudo nano mdatp_cron_job.log`</span><span class="sxs-lookup"><span data-stu-id="70add-137">To inspect the mdatp_cron_job.log `sudo nano mdatp_cron_job.log`</span></span>
+<span data-ttu-id="6823e-137">Per esaminare il mdatp_cron_job.log `sudo nano mdatp_cron_job.log`</span><span class="sxs-lookup"><span data-stu-id="6823e-137">To inspect the mdatp_cron_job.log `sudo nano mdatp_cron_job.log`</span></span>
 
-## <a name="for-those-who-use-ansible-chef-or-puppet"></a><span data-ttu-id="70add-138">Per coloro che usano Ansible, Chef o Puppet</span><span class="sxs-lookup"><span data-stu-id="70add-138">For those who use Ansible, Chef, or Puppet</span></span>
+## <a name="for-those-who-use-ansible-chef-or-puppet"></a><span data-ttu-id="6823e-138">Per coloro che usano Ansible, Chef o Puppet</span><span class="sxs-lookup"><span data-stu-id="6823e-138">For those who use Ansible, Chef, or Puppet</span></span>
 
-<span data-ttu-id="70add-139">Utilizzare i comandi seguenti:</span><span class="sxs-lookup"><span data-stu-id="70add-139">Use the following commands:</span></span>
-### <a name="to-set-cron-jobs-in-ansible"></a><span data-ttu-id="70add-140">Per impostare i processi cron in Ansible</span><span class="sxs-lookup"><span data-stu-id="70add-140">To set cron jobs in Ansible</span></span>
+<span data-ttu-id="6823e-139">Utilizzare i comandi seguenti:</span><span class="sxs-lookup"><span data-stu-id="6823e-139">Use the following commands:</span></span>
+### <a name="to-set-cron-jobs-in-ansible"></a><span data-ttu-id="6823e-140">Per impostare i processi cron in Ansible</span><span class="sxs-lookup"><span data-stu-id="6823e-140">To set cron jobs in Ansible</span></span>
 
 `cron – Manage cron.d and crontab entries`
 
-<span data-ttu-id="70add-141">Per altre informazioni, vedere [https://docs.ansible.com/ansible/latest/modules/cron_module.html](https://docs.ansible.com/ansible/latest/modules/cron_module.html).</span><span class="sxs-lookup"><span data-stu-id="70add-141">See [https://docs.ansible.com/ansible/latest/modules/cron_module.html](https://docs.ansible.com/ansible/latest/modules/cron_module.html) for more information.</span></span>
+<span data-ttu-id="6823e-141">Per altre informazioni, vedere [https://docs.ansible.com/ansible/latest/modules/cron_module.html](https://docs.ansible.com/ansible/latest/modules/cron_module.html).</span><span class="sxs-lookup"><span data-stu-id="6823e-141">See [https://docs.ansible.com/ansible/latest/modules/cron_module.html](https://docs.ansible.com/ansible/latest/modules/cron_module.html) for more information.</span></span>
 
-### <a name="to-set-crontabs-in-chef"></a><span data-ttu-id="70add-142">Per impostare i crontabs in Chef</span><span class="sxs-lookup"><span data-stu-id="70add-142">To set crontabs in Chef</span></span>
+### <a name="to-set-crontabs-in-chef"></a><span data-ttu-id="6823e-142">Per impostare i crontabs in Chef</span><span class="sxs-lookup"><span data-stu-id="6823e-142">To set crontabs in Chef</span></span>
 `cron resource`
 
-<span data-ttu-id="70add-143">Per altre informazioni, vedere [https://docs.chef.io/resources/cron/](https://docs.chef.io/resources/cron/).</span><span class="sxs-lookup"><span data-stu-id="70add-143">See [https://docs.chef.io/resources/cron/](https://docs.chef.io/resources/cron/) for more information.</span></span>
+<span data-ttu-id="6823e-143">Per altre informazioni, vedere [https://docs.chef.io/resources/cron/](https://docs.chef.io/resources/cron/).</span><span class="sxs-lookup"><span data-stu-id="6823e-143">See [https://docs.chef.io/resources/cron/](https://docs.chef.io/resources/cron/) for more information.</span></span>
 
-### <a name="to-set-cron-jobs-in-puppet"></a><span data-ttu-id="70add-144">Per impostare i processi cron in Puppet</span><span class="sxs-lookup"><span data-stu-id="70add-144">To set cron jobs in Puppet</span></span>
-<span data-ttu-id="70add-145">Tipo di risorsa: cron</span><span class="sxs-lookup"><span data-stu-id="70add-145">Resource Type: cron</span></span>
+### <a name="to-set-cron-jobs-in-puppet"></a><span data-ttu-id="6823e-144">Per impostare i processi cron in Puppet</span><span class="sxs-lookup"><span data-stu-id="6823e-144">To set cron jobs in Puppet</span></span>
+<span data-ttu-id="6823e-145">Tipo di risorsa: cron</span><span class="sxs-lookup"><span data-stu-id="6823e-145">Resource Type: cron</span></span>
 
-<span data-ttu-id="70add-146">Per altre informazioni, vedere [https://puppet.com/docs/puppet/5.5/types/cron.html](https://puppet.com/docs/puppet/5.5/types/cron.html).</span><span class="sxs-lookup"><span data-stu-id="70add-146">See [https://puppet.com/docs/puppet/5.5/types/cron.html](https://puppet.com/docs/puppet/5.5/types/cron.html) for more information.</span></span>
+<span data-ttu-id="6823e-146">Per altre informazioni, vedere [https://puppet.com/docs/puppet/5.5/types/cron.html](https://puppet.com/docs/puppet/5.5/types/cron.html).</span><span class="sxs-lookup"><span data-stu-id="6823e-146">See [https://puppet.com/docs/puppet/5.5/types/cron.html](https://puppet.com/docs/puppet/5.5/types/cron.html) for more information.</span></span>
 
-<span data-ttu-id="70add-147">Automazione con Puppet: processi Cron e attività pianificate</span><span class="sxs-lookup"><span data-stu-id="70add-147">Automating with Puppet: Cron jobs and scheduled tasks</span></span>
+<span data-ttu-id="6823e-147">Automazione con Puppet: processi Cron e attività pianificate</span><span class="sxs-lookup"><span data-stu-id="6823e-147">Automating with Puppet: Cron jobs and scheduled tasks</span></span>
 
-<span data-ttu-id="70add-148">Per altre informazioni, vedere [https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/).</span><span class="sxs-lookup"><span data-stu-id="70add-148">See [https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/) for more information.</span></span>
+<span data-ttu-id="6823e-148">Per altre informazioni, vedere [https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/).</span><span class="sxs-lookup"><span data-stu-id="6823e-148">See [https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/](https://puppet.com/blog/automating-puppet-cron-jobs-and-scheduled-tasks/) for more information.</span></span>
 
-## <a name="additional-information"></a><span data-ttu-id="70add-149">Informazioni aggiuntive</span><span class="sxs-lookup"><span data-stu-id="70add-149">Additional information</span></span>
+## <a name="additional-information"></a><span data-ttu-id="6823e-149">Ulteriori informazioni</span><span class="sxs-lookup"><span data-stu-id="6823e-149">Additional information</span></span>
 
-<span data-ttu-id="70add-150">**Per ottenere assistenza con crontab**</span><span class="sxs-lookup"><span data-stu-id="70add-150">**To get help with crontab**</span></span>
+<span data-ttu-id="6823e-150">**Per ottenere assistenza con crontab**</span><span class="sxs-lookup"><span data-stu-id="6823e-150">**To get help with crontab**</span></span>
 
 `man crontab`
 
-<span data-ttu-id="70add-151">**Per ottenere un elenco di file crontab dell'utente corrente**</span><span class="sxs-lookup"><span data-stu-id="70add-151">**To get a list of crontab file of the current user**</span></span>
+<span data-ttu-id="6823e-151">**Per ottenere un elenco di file crontab dell'utente corrente**</span><span class="sxs-lookup"><span data-stu-id="6823e-151">**To get a list of crontab file of the current user**</span></span>
 
 `crontab -l`
 
-<span data-ttu-id="70add-152">**Per ottenere un elenco di file crontab di un altro utente**</span><span class="sxs-lookup"><span data-stu-id="70add-152">**To get a list of crontab file of another user**</span></span>
+<span data-ttu-id="6823e-152">**Per ottenere un elenco di file crontab di un altro utente**</span><span class="sxs-lookup"><span data-stu-id="6823e-152">**To get a list of crontab file of another user**</span></span>
 
 `crontab -u username -l`
 
-<span data-ttu-id="70add-153">**Per eseguire il backup delle voci crontab**</span><span class="sxs-lookup"><span data-stu-id="70add-153">**To backup crontab entries**</span></span>
+<span data-ttu-id="6823e-153">**Per eseguire il backup delle voci crontab**</span><span class="sxs-lookup"><span data-stu-id="6823e-153">**To backup crontab entries**</span></span>
 
 `crontab -l > /var/tmp/cron_backup.dat`
 
 > [!TIP]
-> <span data-ttu-id="70add-154">Eseguire questa operazione prima di modificare o rimuovere.</span><span class="sxs-lookup"><span data-stu-id="70add-154">Do this before you edit or remove.</span></span> <br>
+> <span data-ttu-id="6823e-154">Eseguire questa operazione prima di modificare o rimuovere.</span><span class="sxs-lookup"><span data-stu-id="6823e-154">Do this before you edit or remove.</span></span> <br>
 
-<span data-ttu-id="70add-155">**Per ripristinare le voci crontab**</span><span class="sxs-lookup"><span data-stu-id="70add-155">**To restore crontab entries**</span></span>
+<span data-ttu-id="6823e-155">**Per ripristinare le voci crontab**</span><span class="sxs-lookup"><span data-stu-id="6823e-155">**To restore crontab entries**</span></span>
 
 `crontab /var/tmp/cron_backup.dat`
 
-<span data-ttu-id="70add-156">**Per modificare la crontab e aggiungere un nuovo processo come utente radice**</span><span class="sxs-lookup"><span data-stu-id="70add-156">**To edit the crontab and add a new job as a root user**</span></span>
+<span data-ttu-id="6823e-156">**Per modificare la crontab e aggiungere un nuovo processo come utente radice**</span><span class="sxs-lookup"><span data-stu-id="6823e-156">**To edit the crontab and add a new job as a root user**</span></span>
 
 `sudo crontab -e`
 
-<span data-ttu-id="70add-157">**Per modificare la crontab e aggiungere un nuovo processo**</span><span class="sxs-lookup"><span data-stu-id="70add-157">**To edit the crontab and add a new job**</span></span>
+<span data-ttu-id="6823e-157">**Per modificare la crontab e aggiungere un nuovo processo**</span><span class="sxs-lookup"><span data-stu-id="6823e-157">**To edit the crontab and add a new job**</span></span>
 
 `crontab -e`
 
-<span data-ttu-id="70add-158">**Per modificare le voci crontab di altri utenti**</span><span class="sxs-lookup"><span data-stu-id="70add-158">**To edit other user’s crontab entries**</span></span>
+<span data-ttu-id="6823e-158">**Per modificare le voci crontab di altri utenti**</span><span class="sxs-lookup"><span data-stu-id="6823e-158">**To edit other user’s crontab entries**</span></span>
 
 `crontab -u username -e`
 
-<span data-ttu-id="70add-159">**Per rimuovere tutte le voci crontab**</span><span class="sxs-lookup"><span data-stu-id="70add-159">**To remove all crontab entries**</span></span>
+<span data-ttu-id="6823e-159">**Per rimuovere tutte le voci crontab**</span><span class="sxs-lookup"><span data-stu-id="6823e-159">**To remove all crontab entries**</span></span>
 
 `crontab -r`
 
-<span data-ttu-id="70add-160">**Per rimuovere le voci crontab di altri utenti**</span><span class="sxs-lookup"><span data-stu-id="70add-160">**To remove other user’s crontab entries**</span></span>
+<span data-ttu-id="6823e-160">**Per rimuovere le voci crontab di altri utenti**</span><span class="sxs-lookup"><span data-stu-id="6823e-160">**To remove other user’s crontab entries**</span></span>
 
 `crontab -u username -r`
 
-<span data-ttu-id="70add-161">**Spiegazione**</span><span class="sxs-lookup"><span data-stu-id="70add-161">**Explanation**</span></span>
+<span data-ttu-id="6823e-161">**Spiegazione**</span><span class="sxs-lookup"><span data-stu-id="6823e-161">**Explanation**</span></span>
 
 <pre>
 +—————- minute (values: 0 – 59) (special characters: , – * /)  <br>
