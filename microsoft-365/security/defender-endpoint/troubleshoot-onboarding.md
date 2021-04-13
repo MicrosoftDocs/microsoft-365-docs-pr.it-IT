@@ -1,6 +1,6 @@
 ---
-title: Risolvere i problemi di onboarding di Microsoft Defender ATP
-description: Risolvere i problemi che potrebbero verificarsi durante l'onboarding dei dispositivi o nel servizio Microsoft Defender ATP.
+title: Risolvere i problemi di onboarding di Microsoft Defender per endpoint
+description: Risolvere i problemi che potrebbero verificarsi durante l'onboarding dei dispositivi o nel servizio Microsoft Defender for Endpoint.
 keywords: risolvere i problemi di onboarding, onboarding, visualizzatore eventi, raccolte dati e anteprime, dati dei sensori e diagnostica
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 3b2c944cd7fc9d629b47947db9d6e8856729e0d7
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4599741f501e9b55bc73e0eb8def9208bc988957
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066026"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689666"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Risolvere i problemi di onboarding di Microsoft Defender per endpoint
 
@@ -30,7 +30,7 @@ ms.locfileid: "51066026"
 
 **Si applica a:**
 
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - Windows Server 2012 R2
 - Windows Server 2016
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
@@ -136,7 +136,7 @@ Nome canale: Amministratore
 
 ID | Gravità | Descrizione dell'evento | Procedura di risoluzione dei problemi
 :---|:---|:---|:---
-1819 | Errore | CSP Di Microsoft Defender per endpoint: impossibile impostare il valore del nodo. NodeId: (%1), TokenName: (%2), Risultato: (%3). | Scaricare [l'aggiornamento cumulativo per Windows 10, 1607](https://go.microsoft.com/fwlink/?linkid=829760).
+1819 | Error | CSP Di Microsoft Defender per endpoint: impossibile impostare il valore del nodo. NodeId: (%1), TokenName: (%2), Risultato: (%3). | Scaricare [l'aggiornamento cumulativo per Windows 10, 1607](https://go.microsoft.com/fwlink/?linkid=829760).
 
 ## <a name="troubleshoot-onboarding-issues-on-the-device"></a>Risolvere i problemi di onboarding nel dispositivo
 
@@ -455,6 +455,6 @@ I passaggi seguenti forniscono indicazioni per lo scenario seguente:
 
 ## <a name="related-topics"></a>Argomenti correlati
 
-- [Risolvere i problemi di Microsoft Defender per Endpoint](troubleshoot-mdatp.md)
+- [Risolvere i problemi di Microsoft Defender per endpoint](troubleshoot-mdatp.md)
 - [Dispositivi onboard](onboard-configure.md)
 - [Configurare le impostazioni del proxy del dispositivo e della connettività Internet](configure-proxy-internet.md)

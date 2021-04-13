@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 37d31fe93a849871e7da92fff521b6a75beac531
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 71ebe48fdbb8f9995ef2f3429cb8a824ed76f244
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187638"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689642"
 ---
-# <a name="resources-for-microsoft-defender-for-endpoint-for-mac"></a>Risorse per Microsoft Defender per Endpoint per Mac
+# <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Risorse per Microsoft Defender per Endpoint in macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -80,7 +80,7 @@ Il registro dettagliato verrà salvato in `/Library/Logs/Microsoft/mdatp/install
 
 ## <a name="uninstalling"></a>Disinstallazione
 
-Esistono diversi modi per disinstallare Microsoft Defender per Endpoint per Mac. Tieni presente che, anche se la disinstallazione gestita centralmente è disponibile in JAMF, non è ancora disponibile per Microsoft Intune.
+Esistono diversi modi per disinstallare Microsoft Defender for Endpoint in macOS. Tieni presente che, anche se la disinstallazione gestita centralmente è disponibile in JAMF, non è ancora disponibile per Microsoft Intune.
 
 ### <a name="interactive-uninstallation"></a>Disinstallazione interattiva
 
@@ -143,7 +143,7 @@ Per abilitare il completamento automatico in zsh:
    echo "autoload -Uz compinit && compinit" >> ~/.zshrc
    ```
 
-- Eseguire i comandi seguenti per abilitare il completamento automatico per Microsoft Defender per Endpoint per Mac e riavviare la sessione terminal:
+- Eseguire i comandi seguenti per abilitare il completamento automatico per Microsoft Defender per Endpoint in macOS e riavviare la sessione terminal:
 
    ```zsh
    sudo mkdir -p /usr/local/share/zsh/site-functions

@@ -18,14 +18,14 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 5fa811b2419d107e91b301d5c9bad691fc016b5b
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 58e3b14dcb80db961f01b92f038ce4d32da7e2e8
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498957"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689705"
 ---
-# <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-for-mac"></a>Distribuzione con un sistema mdm (Mobile Device Management) diverso per Microsoft Defender per Endpoint per Mac
+# <a name="deployment-with-a-different-mobile-device-management-mdm-system-for-microsoft-defender-for-endpoint-on-macos"></a>Distribuzione con un sistema MDM (Mobile Device Management) diverso per Microsoft Defender for Endpoint in macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -38,16 +38,16 @@ ms.locfileid: "51498957"
  
 ## <a name="prerequisites-and-system-requirements"></a>Prerequisiti e requisiti di sistema
 
-Prima di iniziare, vedi la pagina principale di [Microsoft Defender per Endpoint per Mac](microsoft-defender-endpoint-mac.md) per una descrizione dei prerequisiti e dei requisiti di sistema per la versione software corrente.
+Prima di iniziare, vedi la pagina principale di [Microsoft Defender per Endpoint su macOS](microsoft-defender-endpoint-mac.md) per una descrizione dei prerequisiti e dei requisiti di sistema per la versione software corrente.
 
 ## <a name="approach"></a>Approccio
 
 > [!CAUTION]
-> Attualmente, Microsoft supporta ufficialmente solo Intune e JAMF per la distribuzione e la gestione di Microsoft Defender per Endpoint per Mac. Microsoft non fa alcuna garanzia, espressa o implicita, rispetto alle informazioni fornite di seguito.
+> Attualmente, Microsoft supporta ufficialmente solo Intune e JAMF per la distribuzione e la gestione di Microsoft Defender per Endpoint in macOS. Microsoft non fa alcuna garanzia, espressa o implicita, rispetto alle informazioni fornite di seguito.
 
-Se l'organizzazione usa una soluzione di gestione dei dispositivi mobili (MDM) non ufficialmente supportata, ciò non significa che non sei in grado di distribuire o eseguire Microsoft Defender per Endpoint per Mac.
+Se l'organizzazione usa una soluzione di gestione dei dispositivi mobili (MDM) non ufficialmente supportata, ciò non significa che non sei in grado di distribuire o eseguire Microsoft Defender for Endpoint in macOS.
 
-Microsoft Defender per Endpoint per Mac non dipende da funzionalità specifiche del fornitore. Può essere usato con qualsiasi soluzione MDM che supporti le funzionalità seguenti:
+Microsoft Defender per Endpoint in macOS non dipende da funzionalità specifiche del fornitore. Può essere usato con qualsiasi soluzione MDM che supporti le funzionalità seguenti:
 
 - Distribuisci un file pkg macOS nei dispositivi gestiti.
 - Distribuire i profili di configurazione del sistema macOS nei dispositivi gestiti.
@@ -72,7 +72,7 @@ Per distribuire il pacchetto nell'organizzazione, usa le istruzioni associate al
 
 ### <a name="license-settings"></a>Impostazioni delle licenze
 
-Configurare un [profilo di configurazione del sistema](mac-install-with-jamf.md). La soluzione MDM potrebbe chiamarla come "Profilo impostazioni personalizzate", poiché Microsoft Defender per Endpoint per Mac non fa parte di macOS.
+Configurare un [profilo di configurazione del sistema](mac-install-with-jamf.md). La soluzione MDM potrebbe chiamarla come "Profilo impostazioni personalizzate", poiché Microsoft Defender per Endpoint in macOS non fa parte di macOS.
 
 Usa l'elenco delle proprietà jamf/WindowsDefenderATPOnboarding.plist, che può essere estratto da un pacchetto di onboarding scaricato da [Microsoft Defender Security Center.](mac-install-with-jamf.md)
 Il sistema potrebbe supportare un elenco di proprietà arbitrario in formato XML. Puoi caricare il file jamf/WindowsDefenderATPOnboarding.plist così come è in questo caso.
@@ -112,7 +112,7 @@ Concedere l'accesso completo al disco ai componenti seguenti:
 
 ### <a name="network-extension-policy"></a>Criteri di estensione di rete
 
-Come parte delle funzionalità di rilevamento e risposta degli endpoint, Microsoft Defender per Endpoint per Mac esamina il traffico socket e segnala queste informazioni al portale di Microsoft Defender Security Center. Il criterio seguente consente all'estensione di rete di eseguire questa funzionalità.
+Come parte delle funzionalità di rilevamento e risposta degli endpoint, Microsoft Defender for Endpoint su macOS esamina il traffico socket e segnala queste informazioni al portale di Microsoft Defender Security Center. Il criterio seguente consente all'estensione di rete di eseguire questa funzionalità.
 
 - Tipo di filtro: Plug-in
 - Identificatore bundle plug-in: `com.microsoft.wdav`

@@ -1,0 +1,49 @@
+---
+title: Configurare Microsoft Defender Antivirus con WMI
+description: Informazioni su come configurare e gestire Microsoft Defender Antivirus utilizzando script WMI per recuperare, modificare e aggiornare le impostazioni in Microsoft Defender for Endpoint.
+keywords: wmi, script, strumentazione gestione Windows, configurazione
+search.product: eADQiWindows 10XVcnh
+ms.prod: m365-security
+ms.mktglfcycl: manage
+ms.sitesec: library
+ms.pagetype: security
+ms.localizationpriority: medium
+author: denisebmsft
+ms.author: deniseb
+ms.custom: nextgen
+ms.date: 09/03/2018
+ms.reviewer: ''
+manager: dansimp
+ms.technology: mde
+ms.openlocfilehash: 8d24a08ae3b8db710ca1727821690e5c87f056c3
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.translationtype: MT
+ms.contentlocale: it-IT
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51690534"
+---
+# <a name="use-windows-management-instrumentation-wmi-to-configure-and-manage-microsoft-defender-antivirus"></a>Utilizzare Strumentazione gestione Windows (WMI) per configurare e gestire Microsoft Defender Antivirus
+
+[!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
+
+
+**Si applica a:**
+
+- [Microsoft Defender per endpoint](/microsoft-365/security/defender-endpoint/)
+
+Strumentazione gestione Windows (WMI) è un'interfaccia di script che consente di recuperare, modificare e aggiornare le impostazioni.
+
+Per ulteriori informazioni su WMI, vedere la libreria [Microsoft Developer Network System Administration.](/windows/win32/wmisdk/wmi-start-page)
+
+Microsoft Defender Antivirus include diverse classi WMI specifiche che possono essere utilizzate per eseguire la maggior parte delle stesse funzioni di Criteri di gruppo e di altri strumenti di gestione. Molte delle classi sono analoghe ai [cmdlet di Defender PowerShell.](use-powershell-cmdlets-microsoft-defender-antivirus.md)
+
+La [libreria di riferimento Windows Defender provider WMIv2](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal) di MSDN elenca le classi WMI disponibili per Microsoft Defender Antivirus e include script di esempio.
+
+Le modifiche apportate con WMI influiranno sulle impostazioni locali nell'endpoint in cui le modifiche vengono distribuite o apportate. Ciò significa che le distribuzioni di criteri con Criteri di gruppo, Microsoft Endpoint Configuration Manager o Microsoft Intune possono sovrascrivere le modifiche apportate con WMI. 
+
+È possibile [configurare le impostazioni che possono essere ignorate localmente con le sostituzioni dei criteri locali.](configure-local-policy-overrides-microsoft-defender-antivirus.md)
+
+## <a name="related-topics"></a>Argomenti correlati
+
+- [Argomenti di riferimento per gli strumenti di gestione e configurazione](configuration-management-reference-microsoft-defender-antivirus.md)
+- [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)

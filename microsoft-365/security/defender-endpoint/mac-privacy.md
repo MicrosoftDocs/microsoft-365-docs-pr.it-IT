@@ -17,14 +17,14 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d1d4aa871438e10aed86ddd436757072fb6b5cc4
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 93715f761beded95cfaa91b4747a2e4b5a3c61c1
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587504"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51689678"
 ---
-# <a name="privacy-for-microsoft-defender-for-endpoint-for-mac"></a>Privacy per Microsoft Defender per Endpoint per Mac
+# <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>Privacy per Microsoft Defender per Endpoint in macOS
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -35,13 +35,13 @@ ms.locfileid: "51587504"
 > Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
-Microsoft si impegna a fornire all'utente le informazioni e i controlli necessari per effettuare scelte sulla modalità di raccolta e utilizzo dei dati quando si usa Microsoft Defender per Endpoint per Mac.
+Microsoft si impegna a fornire all'utente le informazioni e i controlli necessari per effettuare scelte sulla modalità di raccolta e utilizzo dei dati quando si usa Microsoft Defender for Endpoint in macOS.
 
 In questo argomento vengono descritti i controlli della privacy disponibili all'interno del prodotto, come gestire questi controlli con le impostazioni dei criteri e altri dettagli sugli eventi dati raccolti.
 
-## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-for-mac"></a>Panoramica dei controlli della privacy in Microsoft Defender per Endpoint per Mac
+## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-macos"></a>Panoramica dei controlli della privacy in Microsoft Defender for Endpoint in macOS
 
-Questa sezione descrive i controlli della privacy per i diversi tipi di dati raccolti da Microsoft Defender per Endpoint per Mac.
+Questa sezione descrive i controlli della privacy per i diversi tipi di dati raccolti da Microsoft Defender per Endpoint in macOS.
 
 ### <a name="diagnostic-data"></a>Dati di diagnostica
 
@@ -73,7 +73,7 @@ Quando questa funzionalità è abilitata e è probabile che l'esempio raccolto c
 
 Gli amministratori IT possono configurare questi controlli a livello aziendale. 
 
-I controlli della privacy per i vari tipi di dati descritti nella sezione precedente sono descritti in dettaglio in Impostare le preferenze per [Microsoft Defender per Endpoint per Mac.](mac-preferences.md)
+I controlli della privacy per i vari tipi di dati descritti nella sezione precedente sono descritti in dettaglio in Impostare le preferenze per [Microsoft Defender per Endpoint su macOS.](mac-preferences.md)
 
 Come per le nuove impostazioni dei criteri, è consigliabile testarle attentamente in un ambiente limitato e controllato per garantire che le impostazioni configurate siano effettive prima di implementare le impostazioni dei criteri in modo più ampio nell'organizzazione.
 
@@ -94,7 +94,7 @@ I campi seguenti sono considerati comuni per tutti gli eventi:
 | org_id                  | Identificatore univoco associato all'organizzazione a cui appartiene il dispositivo. Consente a Microsoft di identificare se i problemi influiscono su un set selezionato di aziende e su quante aziende sono influenzate. |
 | hostname                | Nome del dispositivo locale (senza suffisso DNS). Consente a Microsoft di identificare se i problemi influiscono su un set selezionato di installazioni e sul numero di utenti che ne sono influenzati. |
 | product_guid            | Identificatore univoco del prodotto. Consente a Microsoft di distinguere i problemi che influiscono sulle diverse versioni del prodotto. |
-| app_version             | Versione dell'applicazione Microsoft Defender for Endpoint per Mac. Consente a Microsoft di identificare le versioni del prodotto che mostrano un problema in modo che possa essere correttamente classificata in ordine di priorità.|
+| app_version             | Versione di Microsoft Defender per Endpoint in un'applicazione macOS. Consente a Microsoft di identificare le versioni del prodotto che mostrano un problema in modo che possa essere correttamente classificata in ordine di priorità.|
 | sig_version             | Versione del database di intelligence per la sicurezza. Consente a Microsoft di identificare le versioni dell'intelligence per la sicurezza che mostrano un problema in modo che possa essere assegnata correttamente la priorità. |
 | supported_compressions  | Elenco degli algoritmi di compressione supportati dall'applicazione, ad esempio `['gzip']` . Consente a Microsoft di comprendere quali tipi di compressione possono essere utilizzati quando comunica con l'applicazione. |
 | release_ring            | Anello a cui è associato il dispositivo (ad esempio Insider Fast, Insider Slow, Production). Consente a Microsoft di identificare in quale anello di rilascio potrebbe verificarsi un problema in modo che possa essere assegnata correttamente la priorità. |
@@ -174,7 +174,7 @@ Vengono raccolti i campi seguenti:
 
 | Campo            | Descrizione |
 | ---------------- | ----------- |
-| Versione          | Versione di Microsoft Defender per Endpoint per Mac. |
+| Versione          | Versione di Microsoft Defender per Endpoint in macOS. |
 | instance_id      | Identificatore univoco generato all'avvio dell'estensione del kernel. |
 | trace_level      | Livello di traccia dell'estensione del kernel. |
 | sottosistema        | Sottosistema sottostante utilizzato per la protezione in tempo reale. |
@@ -189,8 +189,8 @@ Vengono raccolti i campi seguenti:
 I log di diagnostica vengono raccolti solo con il consenso dell'utente come parte della funzionalità di invio del feedback. I file seguenti vengono raccolti come parte dei registri di supporto:
 
 - Tutti i file in */Library/Logs/Microsoft/mdatp/*
-- Sottoinsieme di file in */Library/Application Support/Microsoft/Defender/* creati e usati da Microsoft Defender per Endpoint per Mac
-- Sottoinsieme di file in */Library/Managed Preferences* usati da Microsoft Defender per Endpoint per Mac
+- Sottoinsieme di file in */Library/Application Support/Microsoft/Defender/* creati e usati da Microsoft Defender per Endpoint in macOS
+- Sottoinsieme di file in */Library/Managed Preferences* usati da Microsoft Defender per Endpoint in macOS
 - /Library/Logs/Microsoft/autoupdate.log
 - $HOME/Library/Preferences/com.microsoft.autoupdate2.plist
 
