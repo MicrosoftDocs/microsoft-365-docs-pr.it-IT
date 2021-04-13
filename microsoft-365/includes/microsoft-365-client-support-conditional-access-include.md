@@ -35,6 +35,6 @@
 |TO-DO|Pianificato|Pianificato|Pianificato|N/D|Pianificato|
 |VISIO|N/D|✔|N/D|Pianificato|N/D|
 |LAVAGNA|N/D|Pianificato|N/D|N/D|Pianificato|
-|WORD|✔|Pianificato|Pianificato|Pianificato|Pianificato|
+|WORD|✔|Pianificato|Pianificato|Pianificato|✔|
 |WORKPLACE ANALYTICS|N/D|N/D|N/D|N/D|N/D|
 |YAMMER|Pianificato|Pianificato|Pianificato|Pianificato|N/D|

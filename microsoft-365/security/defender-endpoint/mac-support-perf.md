@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 18bde560543fd1344a64cf1edd64f02f12831c25
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 8dfaf1dbf2c3742cc97060c7f9e811c83d0cb023
+ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689102"
+ms.locfileid: "51698221"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-macos"></a>Risolvere i problemi di prestazioni per Microsoft Defender per Endpoint in macOS
 
@@ -149,7 +149,7 @@ I passaggi seguenti possono essere utilizzati per risolvere e attenuare questi p
         125  CrashPlanService 164
       ```
 
-      Per migliorare le prestazioni di Defender per Endpoint per Mac, individua quello con il numero più alto nella riga Totale file analizzati e aggiungi un'esclusione. Per altre informazioni, vedi [Configurare e convalidare le esclusioni per Defender per Endpoint per Linux.](linux-exclusions.md)
+      Per migliorare le prestazioni di Defender per Endpoint su Mac, individua quello con il numero più alto nella riga Totale file analizzati e aggiungi un'esclusione. Per altre informazioni, vedi [Configurare e convalidare le esclusioni per Defender per Endpoint su Linux.](linux-exclusions.md)
 
       > [!NOTE]
       > L'applicazione archivia le statistiche in memoria e tiene traccia dell'attività dei file solo dopo l'avvio e l'attivazione della protezione in tempo reale. I processi avviati prima o durante i periodi in cui la protezione in tempo reale era disattivata non vengono conteggiati. Inoltre, vengono conteggiati solo gli eventi che hanno attivato le analisi.

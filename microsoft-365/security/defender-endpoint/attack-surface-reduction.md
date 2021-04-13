@@ -11,17 +11,17 @@ localization_priority: Normal
 audience: ITPro
 author: denisebmsft
 ms.author: deniseb
-ms.reviewer: sugamar, jcedola
+ms.reviewer: oogunrinde, sugamar, jcedola
 manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: d88da04e91875e24b13478b17d6a1e3862e1062e
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 8790d959dc41e3edea684c66e556a2ec67f85ae1
+ms.sourcegitcommit: 0fe5989b7ee2f7ae0181f2781e31db7f58689441
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197662"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51697528"
 ---
 # <a name="use-attack-surface-reduction-rules-to-prevent-malware-infection"></a>Usare le regole di riduzione della superficie di attacco per prevenire l'infezione da malware
 
@@ -80,7 +80,7 @@ Per ulteriori informazioni e per ottenere gli aggiornamenti, vedere [Update for 
 
 ### <a name="cases-where-warn-mode-is-not-supported"></a>Casi in cui la modalità avviso non è supportata
 
-La modalità avviso non è supportata per le seguenti regole di riduzione della superficie di attacco:
+La modalità avviso non è supportata per tre regole di riduzione della superficie di attacco quando le si configura in Microsoft Endpoint Manager. Se usi Criteri di gruppo per configurare le regole di riduzione della superficie di attacco, la modalità avviso è supportata. Le tre regole che non supportano la modalità avviso quando vengono configurate in Microsoft Endpoint Manager sono le seguenti:
 
 - [Impedire a JavaScript o VBScript di avviare il contenuto eseguibile](#block-javascript-or-vbscript-from-launching-downloaded-executable-content) scaricato (GUID) `d3e037e1-3eb8-44c8-a917-57927947596d`
 - [Bloccare la persistenza tramite la sottoscrizione di eventi WMI](#block-persistence-through-wmi-event-subscription) (GUID) `e6db77e5-3df2-4cf1-b95a-636979351e5b`
@@ -466,7 +466,7 @@ GUID: `c1db55ab-c21a-4637-bb3f-a12568109d35`
 
 ## <a name="see-also"></a>Vedere anche
 
-- [Domande frequenti sulla riduzione della superficie di attacco](attack-surface-reduction-faq.md)
-- [Abilitare le regole di riduzione della superficie di attacco](enable-attack-surface-reduction.md)
-- [Valutare le regole di riduzione della superficie di attacco](evaluate-attack-surface-reduction.md)
+- [FAQ per la riduzione della superficie d'attacco](attack-surface-reduction-faq.md)
+- [Abilitare regole per la riduzione della superficie di attacco](enable-attack-surface-reduction.md)
+- [Rilevare regole per la riduzione della superficie di attacco](evaluate-attack-surface-reduction.md)
 - [Compatibilità di Microsoft Defender Antivirus con altre soluzioni antivirus/antimalware](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-compatibility)

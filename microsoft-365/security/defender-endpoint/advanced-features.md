@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 3ad31e385ed1a3c32a261286b91912c7b2562f87
-ms.sourcegitcommit: a46532bb422ee51331f478ff50cc5444586bf6a9
+ms.openlocfilehash: c5e6edb40254ab905ef5ef3ddef9bf8bf54fc54b
+ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "51650291"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51698269"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configurare le funzionalità avanzate in Defender for Endpoint
 
@@ -228,6 +228,10 @@ Quando abiliti l'integrazione di Intune, Intune creerà automaticamente un crite
 
 > [!NOTE]
 > Il criterio CA classico creato da Intune è distinto dai criteri di [accesso](https://docs.microsoft.com/azure/active-directory/conditional-access/overview/)condizionale moderni, usati per configurare gli endpoint.
+
+
+## <a name="device-discovery"></a>Individuazione dei dispositivi
+Consente di individuare i dispositivi non gestiti connessi alla rete aziendale senza la necessità di dispositivi aggiuntivi o modifiche di processo ingombranti. Usando i dispositivi onboarded, puoi trovare dispositivi non gestiti nella rete e valutare vulnerabilità e rischi. Per altre informazioni, vedi [Individuazione dei dispositivi.](device-discovery.md)
 
 ## <a name="preview-features"></a>Funzionalità di anteprima
 
