@@ -7,7 +7,7 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
@@ -15,49 +15,49 @@ ms.date: 09/03/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 3975a18c2986ac7766664194a6d4b80ee1a503b1
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: f2b3060d7f0d9daf0f923c674f2fe45ba976fdfc
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690486"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764736"
 ---
-# <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-av-assessment"></a><span data-ttu-id="4b4ec-104">Raccogliere i dati di diagnostica di conformità degli aggiornamenti per la valutazione di Microsoft Defender AV</span><span class="sxs-lookup"><span data-stu-id="4b4ec-104">Collect Update Compliance diagnostic data for Microsoft Defender AV Assessment</span></span>
+# <a name="collect-update-compliance-diagnostic-data-for-microsoft-defender-av-assessment"></a><span data-ttu-id="a5927-104">Raccogliere i dati di diagnostica di conformità degli aggiornamenti per la valutazione di Microsoft Defender AV</span><span class="sxs-lookup"><span data-stu-id="a5927-104">Collect Update Compliance diagnostic data for Microsoft Defender AV Assessment</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="4b4ec-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="4b4ec-105">**Applies to:**</span></span>
+<span data-ttu-id="a5927-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="a5927-105">**Applies to:**</span></span>
 
-- [<span data-ttu-id="4b4ec-106">Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="4b4ec-106">Microsoft Defender for Endpoint</span></span>](/microsoft-365/security/defender-endpoint/)
+- [<span data-ttu-id="a5927-106">Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="a5927-106">Microsoft Defender for Endpoint</span></span>](/microsoft-365/security/defender-endpoint/)
 
-<span data-ttu-id="4b4ec-107">In questo articolo viene descritto come raccogliere i dati di diagnostica che possono essere utilizzati dai team di supporto e progettazione Microsoft per risolvere i problemi che possono verificarsi quando si usa la sezione Valutazione di Microsoft Defender AV nel componente aggiuntivo Conformità aggiornamenti.</span><span class="sxs-lookup"><span data-stu-id="4b4ec-107">This article describes how to collect diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues you may encounter when using the Microsoft Defender AV Assessment section in the Update Compliance add-in.</span></span>
+<span data-ttu-id="a5927-107">In questo articolo viene descritto come raccogliere i dati di diagnostica che possono essere utilizzati dai team di supporto e progettazione Microsoft per risolvere i problemi che possono verificarsi quando si usa la sezione Valutazione di Microsoft Defender AV nel componente aggiuntivo Conformità aggiornamenti.</span><span class="sxs-lookup"><span data-stu-id="a5927-107">This article describes how to collect diagnostic data that can be used by Microsoft support and engineering teams to help troubleshoot issues you may encounter when using the Microsoft Defender AV Assessment section in the Update Compliance add-in.</span></span>
 
-<span data-ttu-id="4b4ec-108">Prima di tentare questo processo, assicurati di aver letto Risoluzione dei problemi di segnalazione di [Microsoft Defender Antivirus,](troubleshoot-reporting.md)aver soddisfatto tutti i prerequisiti e aver eseguito qualsiasi altra procedura di risoluzione dei problemi suggerita.</span><span class="sxs-lookup"><span data-stu-id="4b4ec-108">Before attempting this process, ensure you have read [Troubleshoot Microsoft Defender Antivirus reporting](troubleshoot-reporting.md), met all require prerequisites, and taken any other suggested troubleshooting steps.</span></span>
+<span data-ttu-id="a5927-108">Prima di tentare questo processo, assicurati di aver letto Risoluzione dei problemi di segnalazione di [Microsoft Defender Antivirus,](troubleshoot-reporting.md)aver soddisfatto tutti i prerequisiti e aver eseguito qualsiasi altra procedura di risoluzione dei problemi suggerita.</span><span class="sxs-lookup"><span data-stu-id="a5927-108">Before attempting this process, ensure you have read [Troubleshoot Microsoft Defender Antivirus reporting](troubleshoot-reporting.md), met all require prerequisites, and taken any other suggested troubleshooting steps.</span></span>
 
-<span data-ttu-id="4b4ec-109">In almeno due dispositivi che non segnalano o non vengono visualizzati in Conformità aggiornamento, ottenere il file di diagnostica CAB seguendo la procedura seguente:On at least two devices that are not reporting or showing up in Update Compliance, obtain the .cab diagnostic file by taking the following steps:</span><span class="sxs-lookup"><span data-stu-id="4b4ec-109">On at least two devices that are not reporting or showing up in Update Compliance, obtain the .cab diagnostic file by taking the following steps:</span></span>
+<span data-ttu-id="a5927-109">In almeno due dispositivi che non segnalano o non vengono visualizzati in Conformità aggiornamento, ottenere il file di diagnostica CAB seguendo la procedura seguente:On at least two devices that are not reporting or showing up in Update Compliance, obtain the .cab diagnostic file by taking the following steps:</span><span class="sxs-lookup"><span data-stu-id="a5927-109">On at least two devices that are not reporting or showing up in Update Compliance, obtain the .cab diagnostic file by taking the following steps:</span></span>
 
-1. <span data-ttu-id="4b4ec-110">Aprire una versione a livello di amministratore del prompt dei comandi come segue:</span><span class="sxs-lookup"><span data-stu-id="4b4ec-110">Open an administrator-level version of the command prompt as follows:</span></span>
+1. <span data-ttu-id="a5927-110">Aprire una versione a livello di amministratore del prompt dei comandi come segue:</span><span class="sxs-lookup"><span data-stu-id="a5927-110">Open an administrator-level version of the command prompt as follows:</span></span>
         
-    <span data-ttu-id="4b4ec-111">a.</span><span class="sxs-lookup"><span data-stu-id="4b4ec-111">a.</span></span> <span data-ttu-id="4b4ec-112">Apri il menu **Start.**</span><span class="sxs-lookup"><span data-stu-id="4b4ec-112">Open the **Start** menu.</span></span>
+    <span data-ttu-id="a5927-111">a.</span><span class="sxs-lookup"><span data-stu-id="a5927-111">a.</span></span> <span data-ttu-id="a5927-112">Apri il menu **Start.**</span><span class="sxs-lookup"><span data-stu-id="a5927-112">Open the **Start** menu.</span></span>
 
-    <span data-ttu-id="4b4ec-113">b.</span><span class="sxs-lookup"><span data-stu-id="4b4ec-113">b.</span></span> <span data-ttu-id="4b4ec-114">Digitare **cmd**.</span><span class="sxs-lookup"><span data-stu-id="4b4ec-114">Type **cmd**.</span></span> <span data-ttu-id="4b4ec-115">Fare clic con il pulsante **destro del mouse su Prompt** dei comandi e scegliere Esegui come **amministratore.**</span><span class="sxs-lookup"><span data-stu-id="4b4ec-115">Right-click on **Command Prompt** and click **Run as administrator**.</span></span>
+    <span data-ttu-id="a5927-113">b.</span><span class="sxs-lookup"><span data-stu-id="a5927-113">b.</span></span> <span data-ttu-id="a5927-114">Digitare **cmd**.</span><span class="sxs-lookup"><span data-stu-id="a5927-114">Type **cmd**.</span></span> <span data-ttu-id="a5927-115">Fare clic con il pulsante **destro del mouse su Prompt** dei comandi e scegliere Esegui come **amministratore.**</span><span class="sxs-lookup"><span data-stu-id="a5927-115">Right-click on **Command Prompt** and click **Run as administrator**.</span></span>
 
-    <span data-ttu-id="4b4ec-116">c.</span><span class="sxs-lookup"><span data-stu-id="4b4ec-116">c.</span></span> <span data-ttu-id="4b4ec-117">Immettere le credenziali di amministratore o approvare il prompt.</span><span class="sxs-lookup"><span data-stu-id="4b4ec-117">Enter administrator credentials or approve the prompt.</span></span>
+    <span data-ttu-id="a5927-116">c.</span><span class="sxs-lookup"><span data-stu-id="a5927-116">c.</span></span> <span data-ttu-id="a5927-117">Immettere le credenziali di amministratore o approvare il prompt.</span><span class="sxs-lookup"><span data-stu-id="a5927-117">Enter administrator credentials or approve the prompt.</span></span>
         
-2. <span data-ttu-id="4b4ec-118">Passare alla directory Windows Defender.</span><span class="sxs-lookup"><span data-stu-id="4b4ec-118">Navigate to the Windows Defender directory.</span></span> <span data-ttu-id="4b4ec-119">Per impostazione predefinita, è `C:\Program Files\Windows Defender` .</span><span class="sxs-lookup"><span data-stu-id="4b4ec-119">By default, this is `C:\Program Files\Windows Defender`.</span></span>
+2. <span data-ttu-id="a5927-118">Passare alla directory Windows Defender.</span><span class="sxs-lookup"><span data-stu-id="a5927-118">Navigate to the Windows Defender directory.</span></span> <span data-ttu-id="a5927-119">Per impostazione predefinita, è `C:\Program Files\Windows Defender` .</span><span class="sxs-lookup"><span data-stu-id="a5927-119">By default, this is `C:\Program Files\Windows Defender`.</span></span>
 
-3. <span data-ttu-id="4b4ec-120">Digitare il comando seguente e quindi premere **INVIO**</span><span class="sxs-lookup"><span data-stu-id="4b4ec-120">Type the following command, and then press **Enter**</span></span>
+3. <span data-ttu-id="a5927-120">Digitare il comando seguente e quindi premere **INVIO**</span><span class="sxs-lookup"><span data-stu-id="a5927-120">Type the following command, and then press **Enter**</span></span>
         
     ```Dos
     mpcmdrun -getfiles
     ```
     
-4. <span data-ttu-id="4b4ec-121">Verrà generato un file CAB contenente diversi log di diagnostica.</span><span class="sxs-lookup"><span data-stu-id="4b4ec-121">A .cab file will be generated that contains various diagnostic logs.</span></span> <span data-ttu-id="4b4ec-122">Il percorso del file verrà specificato nell'output nel prompt dei comandi.</span><span class="sxs-lookup"><span data-stu-id="4b4ec-122">The location of the file will be specified in the output in the command prompt.</span></span> <span data-ttu-id="4b4ec-123">Per impostazione predefinita, il percorso è `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab` .</span><span class="sxs-lookup"><span data-stu-id="4b4ec-123">By default, the location is `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab`.</span></span>
+4. <span data-ttu-id="a5927-121">Verrà generato un file CAB contenente diversi log di diagnostica.</span><span class="sxs-lookup"><span data-stu-id="a5927-121">A .cab file will be generated that contains various diagnostic logs.</span></span> <span data-ttu-id="a5927-122">Il percorso del file verrà specificato nell'output nel prompt dei comandi.</span><span class="sxs-lookup"><span data-stu-id="a5927-122">The location of the file will be specified in the output in the command prompt.</span></span> <span data-ttu-id="a5927-123">Per impostazione predefinita, il percorso è `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab` .</span><span class="sxs-lookup"><span data-stu-id="a5927-123">By default, the location is `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab`.</span></span>
 
-5. <span data-ttu-id="4b4ec-124">Copiare questi file CAB in un percorso accessibile dal supporto Tecnico Microsoft.</span><span class="sxs-lookup"><span data-stu-id="4b4ec-124">Copy these .cab files to a location that can be accessed by Microsoft support.</span></span> <span data-ttu-id="4b4ec-125">Un esempio potrebbe essere una cartella di OneDrive protetta da password che puoi condividere con microsoft.</span><span class="sxs-lookup"><span data-stu-id="4b4ec-125">An example could be a password-protected OneDrive folder that you can share with us.</span></span>
+5. <span data-ttu-id="a5927-124">Copiare questi file CAB in un percorso accessibile dal supporto Tecnico Microsoft.</span><span class="sxs-lookup"><span data-stu-id="a5927-124">Copy these .cab files to a location that can be accessed by Microsoft support.</span></span> <span data-ttu-id="a5927-125">Un esempio potrebbe essere una cartella di OneDrive protetta da password che puoi condividere con microsoft.</span><span class="sxs-lookup"><span data-stu-id="a5927-125">An example could be a password-protected OneDrive folder that you can share with us.</span></span>
 
-6. <span data-ttu-id="4b4ec-126">Inviare un messaggio di posta elettronica utilizzando <a href="mailto:ucsupport@microsoft.com?subject=WDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a">il modello</a>di posta elettronica Supporto conformità aggiornamenti e compilare il modello con le informazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="4b4ec-126">Send an email using the <a href="mailto:ucsupport@microsoft.com?subject=WDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a">Update Compliance support email template</a>, and fill out the template with the following information:</span></span>
+6. <span data-ttu-id="a5927-126">Inviare un messaggio di posta elettronica utilizzando <a href="mailto:ucsupport@microsoft.com?subject=WDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a">il modello</a>di posta elettronica Supporto conformità aggiornamenti e compilare il modello con le informazioni seguenti:</span><span class="sxs-lookup"><span data-stu-id="a5927-126">Send an email using the <a href="mailto:ucsupport@microsoft.com?subject=WDAV assessment issue&body=I%20am%20encountering%20the%20following%20issue%20when%20using%20Windows%20Defender%20AV%20in%20Update%20Compliance%3a%20%0d%0aI%20have%20provided%20at%20least%202%20support%20.cab%20files%20at%20the%20following%20location%3a%20%3Caccessible%20share%2c%20including%20access%20details%20such%20as%20password%3E%0d%0aMy%20OMS%20workspace%20ID%20is%3a%20%0d%0aPlease%20contact%20me%20at%3a">Update Compliance support email template</a>, and fill out the template with the following information:</span></span>
   
     ```
     I am encountering the following issue when using Microsoft Defender Antivirus in Update Compliance:
@@ -69,6 +69,6 @@ ms.locfileid: "51690486"
     Please contact me at:
     ```
 
-## <a name="see-also"></a><span data-ttu-id="4b4ec-127">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="4b4ec-127">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a5927-127">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="a5927-127">See also</span></span>
 
-- [<span data-ttu-id="4b4ec-128">Risolvere i Windows Defender report di Microsoft Defender Antivirus</span><span class="sxs-lookup"><span data-stu-id="4b4ec-128">Troubleshoot Windows Defender Microsoft Defender Antivirus reporting</span></span>](troubleshoot-reporting.md)
+- [<span data-ttu-id="a5927-128">Risolvere i Windows Defender report di Microsoft Defender Antivirus</span><span class="sxs-lookup"><span data-stu-id="a5927-128">Troubleshoot Windows Defender Microsoft Defender Antivirus reporting</span></span>](troubleshoot-reporting.md)

@@ -9,104 +9,104 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.technology: mde
 ms.date: 02/10/2021
-ms.openlocfilehash: 555daac32b202b0b9f46c4f19fa6e4b04bcadda3
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 507edb980f671b2f39403cc41e540150f5e82891
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690318"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764342"
 ---
-# <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a><span data-ttu-id="cd65f-105">Configurare le esclusioni di Microsoft Defender Antivirus in Windows Server</span><span class="sxs-lookup"><span data-stu-id="cd65f-105">Configure Microsoft Defender Antivirus exclusions on Windows Server</span></span>
+# <a name="configure-microsoft-defender-antivirus-exclusions-on-windows-server"></a><span data-ttu-id="49699-105">Configurare le esclusioni di Microsoft Defender Antivirus in Windows Server</span><span class="sxs-lookup"><span data-stu-id="49699-105">Configure Microsoft Defender Antivirus exclusions on Windows Server</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="cd65f-106">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="cd65f-106">**Applies to:**</span></span>
+<span data-ttu-id="49699-106">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="49699-106">**Applies to:**</span></span>
 
-- [<span data-ttu-id="cd65f-107">Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="cd65f-107">Microsoft Defender for Endpoint</span></span>](/microsoft-365/security/defender-endpoint/)
+- [<span data-ttu-id="49699-107">Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="49699-107">Microsoft Defender for Endpoint</span></span>](/microsoft-365/security/defender-endpoint/)
 
-<span data-ttu-id="cd65f-108">Microsoft Defender Antivirus in Windows Server 2016 e Windows Server 2019 registra automaticamente l'utente in determinate esclusioni, come definito dal ruolo del server specificato.</span><span class="sxs-lookup"><span data-stu-id="cd65f-108">Microsoft Defender Antivirus on Windows Server 2016 and Windows Server 2019 automatically enrolls you in certain exclusions, as defined by your specified server role.</span></span> <span data-ttu-id="cd65f-109">Queste esclusioni non vengono visualizzate negli elenchi di esclusione standard visualizzati [nell'app Sicurezza di Windows.](microsoft-defender-security-center-antivirus.md)</span><span class="sxs-lookup"><span data-stu-id="cd65f-109">These exclusions do not appear in the standard exclusion lists that are shown in the [Windows Security app](microsoft-defender-security-center-antivirus.md).</span></span>
+<span data-ttu-id="49699-108">Microsoft Defender Antivirus in Windows Server 2016 e Windows Server 2019 registra automaticamente l'utente in determinate esclusioni, come definito dal ruolo del server specificato.</span><span class="sxs-lookup"><span data-stu-id="49699-108">Microsoft Defender Antivirus on Windows Server 2016 and Windows Server 2019 automatically enrolls you in certain exclusions, as defined by your specified server role.</span></span> <span data-ttu-id="49699-109">Queste esclusioni non vengono visualizzate negli elenchi di esclusione standard visualizzati [nell'app Sicurezza di Windows.](microsoft-defender-security-center-antivirus.md)</span><span class="sxs-lookup"><span data-stu-id="49699-109">These exclusions do not appear in the standard exclusion lists that are shown in the [Windows Security app](microsoft-defender-security-center-antivirus.md).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="cd65f-110">Le esclusioni automatiche si applicano solo all'analisi RTP (Real-Time Protection).</span><span class="sxs-lookup"><span data-stu-id="cd65f-110">Automatic exclusions only apply to Real-time protection (RTP) scanning.</span></span> <span data-ttu-id="cd65f-111">Le esclusioni automatiche non vengono rispettate durante un'analisi completa/rapida o su richiesta.</span><span class="sxs-lookup"><span data-stu-id="cd65f-111">Automatic exclusions are not honored during a Full/Quick or On-demand scan.</span></span>
+> <span data-ttu-id="49699-110">Le esclusioni automatiche si applicano solo all'analisi RTP (Real-Time Protection).</span><span class="sxs-lookup"><span data-stu-id="49699-110">Automatic exclusions only apply to Real-time protection (RTP) scanning.</span></span> <span data-ttu-id="49699-111">Le esclusioni automatiche non vengono rispettate durante un'analisi completa/rapida o su richiesta.</span><span class="sxs-lookup"><span data-stu-id="49699-111">Automatic exclusions are not honored during a Full/Quick or On-demand scan.</span></span>
 
-<span data-ttu-id="cd65f-112">Oltre alle esclusioni automatiche definite dal ruolo del server, è possibile aggiungere o rimuovere esclusioni personalizzate.</span><span class="sxs-lookup"><span data-stu-id="cd65f-112">In addition to server role-defined automatic exclusions, you can add or remove custom exclusions.</span></span> <span data-ttu-id="cd65f-113">A tale scopo, fare riferimento a questi articoli:</span><span class="sxs-lookup"><span data-stu-id="cd65f-113">To do that, refer to these articles:</span></span>
-- [<span data-ttu-id="cd65f-114">Configurare e convalidare le esclusioni in base al nome file, all'estensione e al percorso della cartella</span><span class="sxs-lookup"><span data-stu-id="cd65f-114">Configure and validate exclusions based on file name, extension, and folder location</span></span>](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
-- [<span data-ttu-id="cd65f-115">Configurare e convalidare le esclusioni per i file aperti dai processi</span><span class="sxs-lookup"><span data-stu-id="cd65f-115">Configure and validate exclusions for files opened by processes</span></span>](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
+<span data-ttu-id="49699-112">Oltre alle esclusioni automatiche definite dal ruolo del server, è possibile aggiungere o rimuovere esclusioni personalizzate.</span><span class="sxs-lookup"><span data-stu-id="49699-112">In addition to server role-defined automatic exclusions, you can add or remove custom exclusions.</span></span> <span data-ttu-id="49699-113">A tale scopo, fare riferimento a questi articoli:</span><span class="sxs-lookup"><span data-stu-id="49699-113">To do that, refer to these articles:</span></span>
+- [<span data-ttu-id="49699-114">Configurare e convalidare le esclusioni in base al nome file, all'estensione e al percorso della cartella</span><span class="sxs-lookup"><span data-stu-id="49699-114">Configure and validate exclusions based on file name, extension, and folder location</span></span>](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+- [<span data-ttu-id="49699-115">Configurare e convalidare le esclusioni per i file aperti dai processi</span><span class="sxs-lookup"><span data-stu-id="49699-115">Configure and validate exclusions for files opened by processes</span></span>](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
 
-## <a name="a-few-points-to-keep-in-mind"></a><span data-ttu-id="cd65f-116">Alcuni punti da tenere presenti</span><span class="sxs-lookup"><span data-stu-id="cd65f-116">A few points to keep in mind</span></span>
+## <a name="a-few-points-to-keep-in-mind"></a><span data-ttu-id="49699-116">Alcuni punti da tenere presenti</span><span class="sxs-lookup"><span data-stu-id="49699-116">A few points to keep in mind</span></span>
 
-<span data-ttu-id="cd65f-117">Tenere presenti i seguenti punti importanti:</span><span class="sxs-lookup"><span data-stu-id="cd65f-117">Keep the following important points in mind:</span></span>
+<span data-ttu-id="49699-117">Tenere presenti i seguenti punti importanti:</span><span class="sxs-lookup"><span data-stu-id="49699-117">Keep the following important points in mind:</span></span>
 
-- <span data-ttu-id="cd65f-118">Le esclusioni personalizzate hanno la precedenza rispetto alle esclusioni automatiche.</span><span class="sxs-lookup"><span data-stu-id="cd65f-118">Custom exclusions take precedence over automatic exclusions.</span></span>
-- <span data-ttu-id="cd65f-119">Le esclusioni automatiche si applicano solo all'analisi RTP (Real-Time Protection).</span><span class="sxs-lookup"><span data-stu-id="cd65f-119">Automatic exclusions only apply to Real-time protection (RTP) scanning.</span></span> <span data-ttu-id="cd65f-120">Le esclusioni automatiche non vengono rispettate durante un'analisi completa/rapida o su richiesta.</span><span class="sxs-lookup"><span data-stu-id="cd65f-120">Automatic exclusions are not honored during a Full/Quick or On-demand scan.</span></span>
-- <span data-ttu-id="cd65f-121">Le esclusioni personalizzate e duplicate non sono in conflitto con le esclusioni automatiche.</span><span class="sxs-lookup"><span data-stu-id="cd65f-121">Custom and duplicate exclusions do not conflict with automatic exclusions.</span></span>
-- <span data-ttu-id="cd65f-122">Microsoft Defender Antivirus usa gli strumenti Dism (Deployment Image Servicing and Management) per determinare quali ruoli sono installati nel computer.</span><span class="sxs-lookup"><span data-stu-id="cd65f-122">Microsoft Defender Antivirus uses the Deployment Image Servicing and Management (DISM) tools to determine which roles are installed on your computer.</span></span>
+- <span data-ttu-id="49699-118">Le esclusioni personalizzate hanno la precedenza rispetto alle esclusioni automatiche.</span><span class="sxs-lookup"><span data-stu-id="49699-118">Custom exclusions take precedence over automatic exclusions.</span></span>
+- <span data-ttu-id="49699-119">Le esclusioni automatiche si applicano solo all'analisi RTP (Real-Time Protection).</span><span class="sxs-lookup"><span data-stu-id="49699-119">Automatic exclusions only apply to Real-time protection (RTP) scanning.</span></span> <span data-ttu-id="49699-120">Le esclusioni automatiche non vengono rispettate durante un'analisi completa/rapida o su richiesta.</span><span class="sxs-lookup"><span data-stu-id="49699-120">Automatic exclusions are not honored during a Full/Quick or On-demand scan.</span></span>
+- <span data-ttu-id="49699-121">Le esclusioni personalizzate e duplicate non sono in conflitto con le esclusioni automatiche.</span><span class="sxs-lookup"><span data-stu-id="49699-121">Custom and duplicate exclusions do not conflict with automatic exclusions.</span></span>
+- <span data-ttu-id="49699-122">Microsoft Defender Antivirus usa gli strumenti Dism (Deployment Image Servicing and Management) per determinare quali ruoli sono installati nel computer.</span><span class="sxs-lookup"><span data-stu-id="49699-122">Microsoft Defender Antivirus uses the Deployment Image Servicing and Management (DISM) tools to determine which roles are installed on your computer.</span></span>
 
-## <a name="opt-out-of-automatic-exclusions"></a><span data-ttu-id="cd65f-123">Rifiutare esplicitamente le esclusioni automatiche</span><span class="sxs-lookup"><span data-stu-id="cd65f-123">Opt out of automatic exclusions</span></span>
+## <a name="opt-out-of-automatic-exclusions"></a><span data-ttu-id="49699-123">Rifiutare esplicitamente le esclusioni automatiche</span><span class="sxs-lookup"><span data-stu-id="49699-123">Opt out of automatic exclusions</span></span>
 
-<span data-ttu-id="cd65f-124">In Windows Server 2016 e Windows Server 2019, le esclusioni predefinite recapitate dagli aggiornamenti di Security Intelligence escludono solo i percorsi predefiniti per un ruolo o una funzionalità.</span><span class="sxs-lookup"><span data-stu-id="cd65f-124">In Windows Server 2016 and Windows Server 2019, the predefined exclusions delivered by Security intelligence updates only exclude the default paths for a role or feature.</span></span> <span data-ttu-id="cd65f-125">Se è stato installato un ruolo o una funzionalità in un percorso personalizzato o si desidera controllare manualmente il set di esclusioni, assicurarsi di rifiutare esplicitamente le esclusioni automatiche recapitate negli aggiornamenti di Security intelligence.</span><span class="sxs-lookup"><span data-stu-id="cd65f-125">If you installed a role or feature in a custom path, or you want to manually control the set of exclusions, make sure to opt out of the automatic exclusions delivered in Security intelligence updates.</span></span> <span data-ttu-id="cd65f-126">Tieni però presente che le esclusioni che vengono recapitate automaticamente sono ottimizzate per i ruoli di Windows Server 2016 e 2019.</span><span class="sxs-lookup"><span data-stu-id="cd65f-126">But keep in mind that the exclusions that are delivered automatically are optimized for Windows Server 2016 and 2019 roles.</span></span> <span data-ttu-id="cd65f-127">Vedere [Suggerimenti per la definizione delle esclusioni](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) prima di definire gli elenchi di esclusione.</span><span class="sxs-lookup"><span data-stu-id="cd65f-127">See [Recommendations for defining exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) before defining your exclusion lists.</span></span>
+<span data-ttu-id="49699-124">In Windows Server 2016 e Windows Server 2019, le esclusioni predefinite recapitate dagli aggiornamenti di Security Intelligence escludono solo i percorsi predefiniti per un ruolo o una funzionalità.</span><span class="sxs-lookup"><span data-stu-id="49699-124">In Windows Server 2016 and Windows Server 2019, the predefined exclusions delivered by Security intelligence updates only exclude the default paths for a role or feature.</span></span> <span data-ttu-id="49699-125">Se è stato installato un ruolo o una funzionalità in un percorso personalizzato o si desidera controllare manualmente il set di esclusioni, assicurarsi di rifiutare esplicitamente le esclusioni automatiche recapitate negli aggiornamenti di Security intelligence.</span><span class="sxs-lookup"><span data-stu-id="49699-125">If you installed a role or feature in a custom path, or you want to manually control the set of exclusions, make sure to opt out of the automatic exclusions delivered in Security intelligence updates.</span></span> <span data-ttu-id="49699-126">Tieni però presente che le esclusioni che vengono recapitate automaticamente sono ottimizzate per i ruoli di Windows Server 2016 e 2019.</span><span class="sxs-lookup"><span data-stu-id="49699-126">But keep in mind that the exclusions that are delivered automatically are optimized for Windows Server 2016 and 2019 roles.</span></span> <span data-ttu-id="49699-127">Vedere [Suggerimenti per la definizione delle esclusioni](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) prima di definire gli elenchi di esclusione.</span><span class="sxs-lookup"><span data-stu-id="49699-127">See [Recommendations for defining exclusions](configure-exclusions-microsoft-defender-antivirus.md#recommendations-for-defining-exclusions) before defining your exclusion lists.</span></span>
 
 > [!WARNING]
-> <span data-ttu-id="cd65f-128">Il rifiuto esplicito delle esclusioni automatiche può influire negativamente sulle prestazioni o causare il danneggiamento dei dati.</span><span class="sxs-lookup"><span data-stu-id="cd65f-128">Opting out of automatic exclusions may adversely impact performance, or result in data corruption.</span></span> <span data-ttu-id="cd65f-129">Le esclusioni che vengono recapitate automaticamente sono ottimizzate per i ruoli di Windows Server 2016 e Windows Server 2019.</span><span class="sxs-lookup"><span data-stu-id="cd65f-129">The exclusions that are delivered automatically are optimized for Windows Server 2016 and Windows Server 2019 roles.</span></span>
+> <span data-ttu-id="49699-128">Il rifiuto esplicito delle esclusioni automatiche può influire negativamente sulle prestazioni o causare il danneggiamento dei dati.</span><span class="sxs-lookup"><span data-stu-id="49699-128">Opting out of automatic exclusions may adversely impact performance, or result in data corruption.</span></span> <span data-ttu-id="49699-129">Le esclusioni che vengono recapitate automaticamente sono ottimizzate per i ruoli di Windows Server 2016 e Windows Server 2019.</span><span class="sxs-lookup"><span data-stu-id="49699-129">The exclusions that are delivered automatically are optimized for Windows Server 2016 and Windows Server 2019 roles.</span></span>
 
-<span data-ttu-id="cd65f-130">Poiché le esclusioni predefinite escludono solo i percorsi **predefiniti,** se si spostaNO NTDS e SYSVOL in un'altra unità o percorso diverso dal percorso *originale,* è necessario aggiungere le esclusioni manualmente utilizzando le informazioni [riportate qui.](configure-extension-file-exclusions-microsoft-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension)</span><span class="sxs-lookup"><span data-stu-id="cd65f-130">Because predefined exclusions only exclude **default paths**, if you move NTDS and SYSVOL to another drive or path that is *different from the original path*, you must add exclusions manually using the information [here](configure-extension-file-exclusions-microsoft-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension) .</span></span>
+<span data-ttu-id="49699-130">Poiché le esclusioni predefinite escludono solo i percorsi **predefiniti,** se si spostaNO NTDS e SYSVOL in un'altra unità o percorso diverso dal percorso *originale,* è necessario aggiungere le esclusioni manualmente utilizzando le informazioni [riportate qui.](configure-extension-file-exclusions-microsoft-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension)</span><span class="sxs-lookup"><span data-stu-id="49699-130">Because predefined exclusions only exclude **default paths**, if you move NTDS and SYSVOL to another drive or path that is *different from the original path*, you must add exclusions manually using the information [here](configure-extension-file-exclusions-microsoft-defender-antivirus.md#configure-the-list-of-exclusions-based-on-folder-name-or-file-extension) .</span></span>
 
-<span data-ttu-id="cd65f-131">È possibile disabilitare gli elenchi di esclusione automatica con Criteri di gruppo, cmdlet di PowerShell e WMI.</span><span class="sxs-lookup"><span data-stu-id="cd65f-131">You can disable the automatic exclusion lists with Group Policy, PowerShell cmdlets, and WMI.</span></span>
+<span data-ttu-id="49699-131">È possibile disabilitare gli elenchi di esclusione automatica con Criteri di gruppo, cmdlet di PowerShell e WMI.</span><span class="sxs-lookup"><span data-stu-id="49699-131">You can disable the automatic exclusion lists with Group Policy, PowerShell cmdlets, and WMI.</span></span>
 
-### <a name="use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a><span data-ttu-id="cd65f-132">Usare Criteri di gruppo per disabilitare l'elenco delle esclusioni automatici in Windows Server 2016 e Windows Server 2019</span><span class="sxs-lookup"><span data-stu-id="cd65f-132">Use Group Policy to disable the auto-exclusions list on Windows Server 2016 and Windows Server 2019</span></span>
+### <a name="use-group-policy-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a><span data-ttu-id="49699-132">Usare Criteri di gruppo per disabilitare l'elenco delle esclusioni automatici in Windows Server 2016 e Windows Server 2019</span><span class="sxs-lookup"><span data-stu-id="49699-132">Use Group Policy to disable the auto-exclusions list on Windows Server 2016 and Windows Server 2019</span></span>
 
-1. <span data-ttu-id="cd65f-133">Nel computer di gestione di Criteri di gruppo aprire Console [Gestione Criteri di gruppo.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11))</span><span class="sxs-lookup"><span data-stu-id="cd65f-133">On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11)).</span></span> <span data-ttu-id="cd65f-134">Fare clic con il pulsante destro del mouse sull'oggetto Criteri di gruppo che si desidera configurare e quindi scegliere **Modifica**.</span><span class="sxs-lookup"><span data-stu-id="cd65f-134">Right-click the Group Policy Object you want to configure, and then click **Edit**.</span></span>
-2. <span data-ttu-id="cd65f-135">**Nell'Editor Gestione Criteri di gruppo** passare a Configurazione **computer** e quindi fare clic su **Modelli amministrativi.**</span><span class="sxs-lookup"><span data-stu-id="cd65f-135">In the **Group Policy Management Editor** go to **Computer configuration**, and then click **Administrative templates**.</span></span>
-3. <span data-ttu-id="cd65f-136">Espandere l'albero fino **ai componenti di Windows**  >  **Esclusioni di Microsoft Defender Antivirus**  >  .</span><span class="sxs-lookup"><span data-stu-id="cd65f-136">Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Exclusions**.</span></span>
-4. <span data-ttu-id="cd65f-137">Fare doppio clic **su Disattiva esclusioni automatici** e impostare l'opzione su **Abilitato.**</span><span class="sxs-lookup"><span data-stu-id="cd65f-137">Double-click **Turn off Auto Exclusions**, and set the option to **Enabled**.</span></span> <span data-ttu-id="cd65f-138">Fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="cd65f-138">Then click **OK**.</span></span> 
+1. <span data-ttu-id="49699-133">Nel computer di gestione di Criteri di gruppo aprire Console [Gestione Criteri di gruppo.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11))</span><span class="sxs-lookup"><span data-stu-id="49699-133">On your Group Policy management computer, open the [Group Policy Management Console](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc725752(v=ws.11)).</span></span> <span data-ttu-id="49699-134">Fare clic con il pulsante destro del mouse sull'oggetto Criteri di gruppo che si desidera configurare e quindi scegliere **Modifica**.</span><span class="sxs-lookup"><span data-stu-id="49699-134">Right-click the Group Policy Object you want to configure, and then click **Edit**.</span></span>
+2. <span data-ttu-id="49699-135">**Nell'Editor Gestione Criteri di gruppo** passare a Configurazione **computer** e quindi fare clic su **Modelli amministrativi.**</span><span class="sxs-lookup"><span data-stu-id="49699-135">In the **Group Policy Management Editor** go to **Computer configuration**, and then click **Administrative templates**.</span></span>
+3. <span data-ttu-id="49699-136">Espandere l'albero fino **ai componenti di Windows**  >  **Esclusioni di Microsoft Defender Antivirus**  >  .</span><span class="sxs-lookup"><span data-stu-id="49699-136">Expand the tree to **Windows components** > **Microsoft Defender Antivirus** > **Exclusions**.</span></span>
+4. <span data-ttu-id="49699-137">Fare doppio clic **su Disattiva esclusioni automatici** e impostare l'opzione su **Abilitato.**</span><span class="sxs-lookup"><span data-stu-id="49699-137">Double-click **Turn off Auto Exclusions**, and set the option to **Enabled**.</span></span> <span data-ttu-id="49699-138">Fare clic su **OK**.</span><span class="sxs-lookup"><span data-stu-id="49699-138">Then click **OK**.</span></span> 
 
-### <a name="use-powershell-cmdlets-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-2019"></a><span data-ttu-id="cd65f-139">Utilizzare i cmdlet di PowerShell per disabilitare l'elenco di esclusioni automatici in Windows Server 2016 e 2019</span><span class="sxs-lookup"><span data-stu-id="cd65f-139">Use PowerShell cmdlets to disable the auto-exclusions list on Windows Server 2016 and 2019</span></span>
+### <a name="use-powershell-cmdlets-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-2019"></a><span data-ttu-id="49699-139">Utilizzare i cmdlet di PowerShell per disabilitare l'elenco di esclusioni automatici in Windows Server 2016 e 2019</span><span class="sxs-lookup"><span data-stu-id="49699-139">Use PowerShell cmdlets to disable the auto-exclusions list on Windows Server 2016 and 2019</span></span>
 
-<span data-ttu-id="cd65f-140">Utilizzare i cmdlet seguenti:</span><span class="sxs-lookup"><span data-stu-id="cd65f-140">Use the following cmdlets:</span></span>
+<span data-ttu-id="49699-140">Utilizzare i cmdlet seguenti:</span><span class="sxs-lookup"><span data-stu-id="49699-140">Use the following cmdlets:</span></span>
 
 ```PowerShell
 Set-MpPreference -DisableAutoExclusions $true
 ```
 
-<span data-ttu-id="cd65f-141">Per altre informazioni, vedere le risorse seguenti:</span><span class="sxs-lookup"><span data-stu-id="cd65f-141">To learn more, see the following resources:</span></span>
+<span data-ttu-id="49699-141">Per altre informazioni, vedere le risorse seguenti:</span><span class="sxs-lookup"><span data-stu-id="49699-141">To learn more, see the following resources:</span></span>
 
-- <span data-ttu-id="cd65f-142">[Utilizzare i cmdlet di PowerShell per configurare ed eseguire Microsoft Defender Antivirus.](use-powershell-cmdlets-microsoft-defender-antivirus.md)</span><span class="sxs-lookup"><span data-stu-id="cd65f-142">[Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md).</span></span>
-- <span data-ttu-id="cd65f-143">[Usare PowerShell con Microsoft Defender Antivirus](/powershell/module/defender/).</span><span class="sxs-lookup"><span data-stu-id="cd65f-143">[Use PowerShell with Microsoft Defender Antivirus](/powershell/module/defender/).</span></span>
+- <span data-ttu-id="49699-142">[Utilizzare i cmdlet di PowerShell per configurare ed eseguire Microsoft Defender Antivirus.](use-powershell-cmdlets-microsoft-defender-antivirus.md)</span><span class="sxs-lookup"><span data-stu-id="49699-142">[Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md).</span></span>
+- <span data-ttu-id="49699-143">[Usare PowerShell con Microsoft Defender Antivirus](/powershell/module/defender/).</span><span class="sxs-lookup"><span data-stu-id="49699-143">[Use PowerShell with Microsoft Defender Antivirus](/powershell/module/defender/).</span></span>
 
-### <a name="use-windows-management-instruction-wmi-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a><span data-ttu-id="cd65f-144">Usare Windows Management Instruction (WMI) per disabilitare l'elenco di esclusioni automatici in Windows Server 2016 e Windows Server 2019</span><span class="sxs-lookup"><span data-stu-id="cd65f-144">Use Windows Management Instruction (WMI) to disable the auto-exclusions list on Windows Server 2016 and Windows Server 2019</span></span>
+### <a name="use-windows-management-instruction-wmi-to-disable-the-auto-exclusions-list-on-windows-server-2016-and-windows-server-2019"></a><span data-ttu-id="49699-144">Usare Windows Management Instruction (WMI) per disabilitare l'elenco di esclusioni automatici in Windows Server 2016 e Windows Server 2019</span><span class="sxs-lookup"><span data-stu-id="49699-144">Use Windows Management Instruction (WMI) to disable the auto-exclusions list on Windows Server 2016 and Windows Server 2019</span></span>
 
-<span data-ttu-id="cd65f-145">Utilizzare il **metodo Set** della [classe MSFT_MpPreference](/previous-versions/windows/desktop/defender/msft-mppreference) per le proprietà seguenti:</span><span class="sxs-lookup"><span data-stu-id="cd65f-145">Use the **Set** method of the [MSFT_MpPreference](/previous-versions/windows/desktop/defender/msft-mppreference) class for the following properties:</span></span>
+<span data-ttu-id="49699-145">Utilizzare il **metodo Set** della [classe MSFT_MpPreference](/previous-versions/windows/desktop/defender/msft-mppreference) per le proprietà seguenti:</span><span class="sxs-lookup"><span data-stu-id="49699-145">Use the **Set** method of the [MSFT_MpPreference](/previous-versions/windows/desktop/defender/msft-mppreference) class for the following properties:</span></span>
 
 ```WMI
 DisableAutoExclusions
 ```
 
-<span data-ttu-id="cd65f-146">Per ulteriori informazioni e parametri consentiti, vedere:</span><span class="sxs-lookup"><span data-stu-id="cd65f-146">See the following for more information and allowed parameters:</span></span>
-- [<span data-ttu-id="cd65f-147">Windows Defender API WMIv2</span><span class="sxs-lookup"><span data-stu-id="cd65f-147">Windows Defender WMIv2 APIs</span></span>](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
+<span data-ttu-id="49699-146">Per ulteriori informazioni e parametri consentiti, vedere:</span><span class="sxs-lookup"><span data-stu-id="49699-146">See the following for more information and allowed parameters:</span></span>
+- [<span data-ttu-id="49699-147">Windows Defender API WMIv2</span><span class="sxs-lookup"><span data-stu-id="49699-147">Windows Defender WMIv2 APIs</span></span>](/previous-versions/windows/desktop/defender/windows-defender-wmiv2-apis-portal)
 
-## <a name="list-of-automatic-exclusions"></a><span data-ttu-id="cd65f-148">Elenco delle esclusioni automatiche</span><span class="sxs-lookup"><span data-stu-id="cd65f-148">List of automatic exclusions</span></span>
+## <a name="list-of-automatic-exclusions"></a><span data-ttu-id="49699-148">Elenco delle esclusioni automatiche</span><span class="sxs-lookup"><span data-stu-id="49699-148">List of automatic exclusions</span></span>
 
-<span data-ttu-id="cd65f-149">Le sezioni seguenti contengono le esclusioni che vengono recapitate con percorsi di file e tipi di file esclusioni automatiche.</span><span class="sxs-lookup"><span data-stu-id="cd65f-149">The following sections contain the exclusions that are delivered with automatic exclusions file paths and file types.</span></span>
+<span data-ttu-id="49699-149">Le sezioni seguenti contengono le esclusioni che vengono recapitate con percorsi di file e tipi di file esclusioni automatiche.</span><span class="sxs-lookup"><span data-stu-id="49699-149">The following sections contain the exclusions that are delivered with automatic exclusions file paths and file types.</span></span>
 
-### <a name="default-exclusions-for-all-roles"></a><span data-ttu-id="cd65f-150">Esclusioni predefinite per tutti i ruoli</span><span class="sxs-lookup"><span data-stu-id="cd65f-150">Default exclusions for all roles</span></span>
+### <a name="default-exclusions-for-all-roles"></a><span data-ttu-id="49699-150">Esclusioni predefinite per tutti i ruoli</span><span class="sxs-lookup"><span data-stu-id="49699-150">Default exclusions for all roles</span></span>
 
-<span data-ttu-id="cd65f-151">In questa sezione sono elencate le esclusioni predefinite per tutti i ruoli di Windows Server 2016 e 2019.</span><span class="sxs-lookup"><span data-stu-id="cd65f-151">This section lists the default exclusions for all Windows Server 2016 and 2019 roles.</span></span>
+<span data-ttu-id="49699-151">In questa sezione sono elencate le esclusioni predefinite per tutti i ruoli di Windows Server 2016 e 2019.</span><span class="sxs-lookup"><span data-stu-id="49699-151">This section lists the default exclusions for all Windows Server 2016 and 2019 roles.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="cd65f-152">I percorsi predefiniti potrebbero essere diversi da quelli elencati in questo articolo.</span><span class="sxs-lookup"><span data-stu-id="cd65f-152">The default locations could be different than what's listed in this article.</span></span>
+> <span data-ttu-id="49699-152">I percorsi predefiniti potrebbero essere diversi da quelli elencati in questo articolo.</span><span class="sxs-lookup"><span data-stu-id="49699-152">The default locations could be different than what's listed in this article.</span></span>
 
-#### <a name="windows-tempedb-files"></a><span data-ttu-id="cd65f-153">File "temp.edb" di Windows</span><span class="sxs-lookup"><span data-stu-id="cd65f-153">Windows "temp.edb" files</span></span>
+#### <a name="windows-tempedb-files"></a><span data-ttu-id="49699-153">File "temp.edb" di Windows</span><span class="sxs-lookup"><span data-stu-id="49699-153">Windows "temp.edb" files</span></span>
 
 - `%windir%\SoftwareDistribution\Datastore\*\tmp.edb`
 - `%ProgramData%\Microsoft\Search\Data\Applications\Windows\*\*.log`
 
-#### <a name="windows-update-files-or-automatic-update-files"></a><span data-ttu-id="cd65f-154">File di Windows Update o file di aggiornamento automatico</span><span class="sxs-lookup"><span data-stu-id="cd65f-154">Windows Update files or Automatic Update files</span></span>
+#### <a name="windows-update-files-or-automatic-update-files"></a><span data-ttu-id="49699-154">File di Windows Update o file di aggiornamento automatico</span><span class="sxs-lookup"><span data-stu-id="49699-154">Windows Update files or Automatic Update files</span></span>
 
 - `%windir%\SoftwareDistribution\Datastore\*\Datastore.edb`
 - `%windir%\SoftwareDistribution\Datastore\*\edb.chk`
@@ -114,7 +114,7 @@ DisableAutoExclusions
 - `%windir%\SoftwareDistribution\Datastore\*\Edb\*.jrs`
 - `%windir%\SoftwareDistribution\Datastore\*\Res\*.log`
 
-#### <a name="windows-security-files"></a><span data-ttu-id="cd65f-155">File di sicurezza di Windows</span><span class="sxs-lookup"><span data-stu-id="cd65f-155">Windows Security files</span></span>
+#### <a name="windows-security-files"></a><span data-ttu-id="49699-155">File di sicurezza di Windows</span><span class="sxs-lookup"><span data-stu-id="49699-155">Windows Security files</span></span>
 
 - `%windir%\Security\database\*.chk`
 - `%windir%\Security\database\*.edb`
@@ -122,13 +122,13 @@ DisableAutoExclusions
 - `%windir%\Security\database\*.log`
 - `%windir%\Security\database\*.sdb`
 
-#### <a name="group-policy-files"></a><span data-ttu-id="cd65f-156">File di Criteri di gruppo</span><span class="sxs-lookup"><span data-stu-id="cd65f-156">Group Policy files</span></span>
+#### <a name="group-policy-files"></a><span data-ttu-id="49699-156">File di Criteri di gruppo</span><span class="sxs-lookup"><span data-stu-id="49699-156">Group Policy files</span></span>
 
 - `%allusersprofile%\NTUser.pol`
 - `%SystemRoot%\System32\GroupPolicy\Machine\registry.pol`
 - `%SystemRoot%\System32\GroupPolicy\User\registry.pol`
 
-#### <a name="wins-files"></a><span data-ttu-id="cd65f-157">File WINS</span><span class="sxs-lookup"><span data-stu-id="cd65f-157">WINS files</span></span>
+#### <a name="wins-files"></a><span data-ttu-id="49699-157">File WINS</span><span class="sxs-lookup"><span data-stu-id="49699-157">WINS files</span></span>
 
 - `%systemroot%\System32\Wins\*\*.chk`
 - `%systemroot%\System32\Wins\*\*.log`
@@ -136,30 +136,30 @@ DisableAutoExclusions
 - `%systemroot%\System32\LogFiles\`
 - `%systemroot%\SysWow64\LogFiles\`
 
-#### <a name="file-replication-service-frs-exclusions"></a><span data-ttu-id="cd65f-158">Esclusioni del servizio Replica file</span><span class="sxs-lookup"><span data-stu-id="cd65f-158">File Replication Service (FRS) exclusions</span></span>
+#### <a name="file-replication-service-frs-exclusions"></a><span data-ttu-id="49699-158">Esclusioni del servizio Replica file</span><span class="sxs-lookup"><span data-stu-id="49699-158">File Replication Service (FRS) exclusions</span></span>
 
-- <span data-ttu-id="cd65f-159">File nella cartella di lavoro del servizio Replica file (FRS).</span><span class="sxs-lookup"><span data-stu-id="cd65f-159">Files in the File Replication Service (FRS) working folder.</span></span> <span data-ttu-id="cd65f-160">La cartella di lavoro FRS è specificata nella chiave del Registro di sistema `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NtFrs\Parameters\Working Directory`</span><span class="sxs-lookup"><span data-stu-id="cd65f-160">The FRS working folder is specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NtFrs\Parameters\Working Directory`</span></span>
+- <span data-ttu-id="49699-159">File nella cartella di lavoro del servizio Replica file (FRS).</span><span class="sxs-lookup"><span data-stu-id="49699-159">Files in the File Replication Service (FRS) working folder.</span></span> <span data-ttu-id="49699-160">La cartella di lavoro FRS è specificata nella chiave del Registro di sistema `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NtFrs\Parameters\Working Directory`</span><span class="sxs-lookup"><span data-stu-id="49699-160">The FRS working folder is specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NtFrs\Parameters\Working Directory`</span></span>
 
   - `%windir%\Ntfrs\jet\sys\*\edb.chk`
   - `%windir%\Ntfrs\jet\*\Ntfrs.jdb`
   - `%windir%\Ntfrs\jet\log\*\*.log`
 
-- <span data-ttu-id="cd65f-161">File di registro del database FRS.</span><span class="sxs-lookup"><span data-stu-id="cd65f-161">FRS Database log files.</span></span> <span data-ttu-id="cd65f-162">La cartella del file di registro del database FRS è specificata nella chiave del Registro di sistema `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Ntfrs\Parameters\DB Log File Directory`</span><span class="sxs-lookup"><span data-stu-id="cd65f-162">The FRS Database log file folder is specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Ntfrs\Parameters\DB Log File Directory`</span></span>
+- <span data-ttu-id="49699-161">File di registro del database FRS.</span><span class="sxs-lookup"><span data-stu-id="49699-161">FRS Database log files.</span></span> <span data-ttu-id="49699-162">La cartella del file di registro del database FRS è specificata nella chiave del Registro di sistema `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Ntfrs\Parameters\DB Log File Directory`</span><span class="sxs-lookup"><span data-stu-id="49699-162">The FRS Database log file folder is specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\Ntfrs\Parameters\DB Log File Directory`</span></span>
 
   - `%windir%\Ntfrs\*\Edb\*.log`
 
-- <span data-ttu-id="cd65f-163">Cartella di gestione temporanea FRS.</span><span class="sxs-lookup"><span data-stu-id="cd65f-163">The FRS staging folder.</span></span> <span data-ttu-id="cd65f-164">La cartella di gestione temporanea è specificata nella chiave del Registro di sistema `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NtFrs\Parameters\Replica Sets\GUID\Replica Set Stage`</span><span class="sxs-lookup"><span data-stu-id="cd65f-164">The staging folder is specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NtFrs\Parameters\Replica Sets\GUID\Replica Set Stage`</span></span>
+- <span data-ttu-id="49699-163">Cartella di gestione temporanea FRS.</span><span class="sxs-lookup"><span data-stu-id="49699-163">The FRS staging folder.</span></span> <span data-ttu-id="49699-164">La cartella di gestione temporanea è specificata nella chiave del Registro di sistema `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NtFrs\Parameters\Replica Sets\GUID\Replica Set Stage`</span><span class="sxs-lookup"><span data-stu-id="49699-164">The staging folder is specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NtFrs\Parameters\Replica Sets\GUID\Replica Set Stage`</span></span>
 
   - `%systemroot%\Sysvol\*\Ntfrs_cmp*\`
 
-- <span data-ttu-id="cd65f-165">Cartella di preinstallazione frs.</span><span class="sxs-lookup"><span data-stu-id="cd65f-165">The FRS preinstall folder.</span></span> <span data-ttu-id="cd65f-166">Questa cartella è specificata dalla cartella `Replica_root\DO_NOT_REMOVE_NtFrs_PreInstall_Directory`</span><span class="sxs-lookup"><span data-stu-id="cd65f-166">This folder is specified by the folder `Replica_root\DO_NOT_REMOVE_NtFrs_PreInstall_Directory`</span></span>
+- <span data-ttu-id="49699-165">Cartella di preinstallazione frs.</span><span class="sxs-lookup"><span data-stu-id="49699-165">The FRS preinstall folder.</span></span> <span data-ttu-id="49699-166">Questa cartella è specificata dalla cartella `Replica_root\DO_NOT_REMOVE_NtFrs_PreInstall_Directory`</span><span class="sxs-lookup"><span data-stu-id="49699-166">This folder is specified by the folder `Replica_root\DO_NOT_REMOVE_NtFrs_PreInstall_Directory`</span></span>
 
   - `%systemroot%\SYSVOL\domain\DO_NOT_REMOVE_NtFrs_PreInstall_Directory\*\Ntfrs*\`
 
-- <span data-ttu-id="cd65f-167">Database DFSR (Distributed File System Replication) e cartelle di lavoro.</span><span class="sxs-lookup"><span data-stu-id="cd65f-167">The Distributed File System Replication (DFSR) database and working folders.</span></span> <span data-ttu-id="cd65f-168">Queste cartelle sono specificate dalla chiave del Registro di sistema `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DFSR\Parameters\Replication Groups\GUID\Replica Set Configuration File`</span><span class="sxs-lookup"><span data-stu-id="cd65f-168">These folders are specified by the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DFSR\Parameters\Replication Groups\GUID\Replica Set Configuration File`</span></span>
+- <span data-ttu-id="49699-167">Database DFSR (Distributed File System Replication) e cartelle di lavoro.</span><span class="sxs-lookup"><span data-stu-id="49699-167">The Distributed File System Replication (DFSR) database and working folders.</span></span> <span data-ttu-id="49699-168">Queste cartelle sono specificate dalla chiave del Registro di sistema `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DFSR\Parameters\Replication Groups\GUID\Replica Set Configuration File`</span><span class="sxs-lookup"><span data-stu-id="49699-168">These folders are specified by the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DFSR\Parameters\Replication Groups\GUID\Replica Set Configuration File`</span></span>
 
   > [!NOTE]
-  > <span data-ttu-id="cd65f-169">Per le posizioni personalizzate, vedi [Rifiutare esplicitamente le esclusioni automatiche.](#opt-out-of-automatic-exclusions)</span><span class="sxs-lookup"><span data-stu-id="cd65f-169">For custom locations, see [Opt out of automatic exclusions](#opt-out-of-automatic-exclusions).</span></span>
+  > <span data-ttu-id="49699-169">Per le posizioni personalizzate, vedi [Rifiutare esplicitamente le esclusioni automatiche.](#opt-out-of-automatic-exclusions)</span><span class="sxs-lookup"><span data-stu-id="49699-169">For custom locations, see [Opt out of automatic exclusions](#opt-out-of-automatic-exclusions).</span></span>
 
   - `%systemdrive%\System Volume Information\DFSR\$db_normal$`
   - `%systemdrive%\System Volume Information\DFSR\FileIDTable_*`
@@ -174,20 +174,20 @@ DisableAutoExclusions
   - `%systemdrive%\System Volume Information\DFSR\Fsr*.jrs`
   - `%systemdrive%\System Volume Information\DFSR\Tmp.edb`
 
-#### <a name="process-exclusions"></a><span data-ttu-id="cd65f-170">Esclusioni di processi</span><span class="sxs-lookup"><span data-stu-id="cd65f-170">Process exclusions</span></span>
+#### <a name="process-exclusions"></a><span data-ttu-id="49699-170">Esclusioni di processi</span><span class="sxs-lookup"><span data-stu-id="49699-170">Process exclusions</span></span>
 
 - `%systemroot%\System32\dfsr.exe`
 - `%systemroot%\System32\dfsrs.exe`
 
-#### <a name="hyper-v-exclusions"></a><span data-ttu-id="cd65f-171">Esclusioni Hyper-V</span><span class="sxs-lookup"><span data-stu-id="cd65f-171">Hyper-V exclusions</span></span>
+#### <a name="hyper-v-exclusions"></a><span data-ttu-id="49699-171">Esclusioni Hyper-V</span><span class="sxs-lookup"><span data-stu-id="49699-171">Hyper-V exclusions</span></span>
 
-<span data-ttu-id="cd65f-172">Nella tabella seguente sono elencate le esclusioni dei tipi di file, le esclusioni di cartelle e le esclusioni di processo che vengono recapitate automaticamente quando si installa il ruolo Hyper-V.</span><span class="sxs-lookup"><span data-stu-id="cd65f-172">The following table lists the file type exclusions, folder exclusions, and process exclusions that are delivered automatically when you install the Hyper-V role.</span></span>
+<span data-ttu-id="49699-172">Nella tabella seguente sono elencate le esclusioni dei tipi di file, le esclusioni di cartelle e le esclusioni di processo che vengono recapitate automaticamente quando si installa il ruolo Hyper-V.</span><span class="sxs-lookup"><span data-stu-id="49699-172">The following table lists the file type exclusions, folder exclusions, and process exclusions that are delivered automatically when you install the Hyper-V role.</span></span>
 
-|<span data-ttu-id="cd65f-173">Esclusioni di tipi di file</span><span class="sxs-lookup"><span data-stu-id="cd65f-173">File type exclusions</span></span> |<span data-ttu-id="cd65f-174">Esclusioni di cartelle</span><span class="sxs-lookup"><span data-stu-id="cd65f-174">Folder exclusions</span></span>  | <span data-ttu-id="cd65f-175">Esclusioni di processi</span><span class="sxs-lookup"><span data-stu-id="cd65f-175">Process exclusions</span></span> |
+|<span data-ttu-id="49699-173">Esclusioni di tipi di file</span><span class="sxs-lookup"><span data-stu-id="49699-173">File type exclusions</span></span> |<span data-ttu-id="49699-174">Esclusioni di cartelle</span><span class="sxs-lookup"><span data-stu-id="49699-174">Folder exclusions</span></span>  | <span data-ttu-id="49699-175">Esclusioni di processi</span><span class="sxs-lookup"><span data-stu-id="49699-175">Process exclusions</span></span> |
 |:--|:--|:--|
 | `*.vhd` <br/> `*.vhdx` <br/> `*.avhd` <br/> `*.avhdx` <br/> `*.vsv` <br/> `*.iso` <br/> `*.rct` <br/> `*.vmcx` <br/> `*.vmrs` | `%ProgramData%\Microsoft\Windows\Hyper-V` <br/> `%ProgramFiles%\Hyper-V` <br/> `%SystemDrive%\ProgramData\Microsoft\Windows\Hyper-V\Snapshots` <br/> `%Public%\Documents\Hyper-V\Virtual Hard Disks` | `%systemroot%\System32\Vmms.exe` <br/> `%systemroot%\System32\Vmwp.exe` |
 
-#### <a name="sysvol-files"></a><span data-ttu-id="cd65f-176">File SYSVOL</span><span class="sxs-lookup"><span data-stu-id="cd65f-176">SYSVOL files</span></span>
+#### <a name="sysvol-files"></a><span data-ttu-id="49699-176">File SYSVOL</span><span class="sxs-lookup"><span data-stu-id="49699-176">SYSVOL files</span></span>
 
 - `%systemroot%\Sysvol\Domain\*.adm`
 - `%systemroot%\Sysvol\Domain\*.admx`
@@ -200,20 +200,20 @@ DisableAutoExclusions
 - `%systemroot%\Sysvol\Domain\Oscfilter.ini`
 
 
-### <a name="active-directory-exclusions"></a><span data-ttu-id="cd65f-177">Esclusioni di Active Directory</span><span class="sxs-lookup"><span data-stu-id="cd65f-177">Active Directory exclusions</span></span>
+### <a name="active-directory-exclusions"></a><span data-ttu-id="49699-177">Esclusioni di Active Directory</span><span class="sxs-lookup"><span data-stu-id="49699-177">Active Directory exclusions</span></span>
 
-<span data-ttu-id="cd65f-178">In questa sezione vengono elencate le esclusioni che vengono recapitate automaticamente quando si installa Servizi di dominio Active Directory.</span><span class="sxs-lookup"><span data-stu-id="cd65f-178">This section lists the exclusions that are delivered automatically when you install Active Directory Domain Services.</span></span>
+<span data-ttu-id="49699-178">In questa sezione vengono elencate le esclusioni che vengono recapitate automaticamente quando si installa Servizi di dominio Active Directory.</span><span class="sxs-lookup"><span data-stu-id="49699-178">This section lists the exclusions that are delivered automatically when you install Active Directory Domain Services.</span></span>
 
-#### <a name="ntds-database-files"></a><span data-ttu-id="cd65f-179">File di database NTDS</span><span class="sxs-lookup"><span data-stu-id="cd65f-179">NTDS database files</span></span>
+#### <a name="ntds-database-files"></a><span data-ttu-id="49699-179">File di database NTDS</span><span class="sxs-lookup"><span data-stu-id="49699-179">NTDS database files</span></span>
 
-<span data-ttu-id="cd65f-180">I file di database vengono specificati nella chiave del Registro di sistema `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\DSA Database File`</span><span class="sxs-lookup"><span data-stu-id="cd65f-180">The database files are specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\DSA Database File`</span></span>
+<span data-ttu-id="49699-180">I file di database vengono specificati nella chiave del Registro di sistema `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\DSA Database File`</span><span class="sxs-lookup"><span data-stu-id="49699-180">The database files are specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\DSA Database File`</span></span>
 
 - `%windir%\Ntds\ntds.dit`
 - `%windir%\Ntds\ntds.pat`
 
-#### <a name="the-ad-ds-transaction-log-files"></a><span data-ttu-id="cd65f-181">File di registro delle transazioni di Servizi di dominio Active Directory</span><span class="sxs-lookup"><span data-stu-id="cd65f-181">The AD DS transaction log files</span></span>
+#### <a name="the-ad-ds-transaction-log-files"></a><span data-ttu-id="49699-181">File di registro delle transazioni di Servizi di dominio Active Directory</span><span class="sxs-lookup"><span data-stu-id="49699-181">The AD DS transaction log files</span></span>
 
-<span data-ttu-id="cd65f-182">I file di registro delle transazioni sono specificati nella chiave del Registro di sistema `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\Database Log Files Path`</span><span class="sxs-lookup"><span data-stu-id="cd65f-182">The transaction log files are specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\Database Log Files Path`</span></span>
+<span data-ttu-id="49699-182">I file di registro delle transazioni sono specificati nella chiave del Registro di sistema `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\Database Log Files Path`</span><span class="sxs-lookup"><span data-stu-id="49699-182">The transaction log files are specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\Database Log Files Path`</span></span>
 
 - `%windir%\Ntds\EDB*.log`
 - `%windir%\Ntds\Res*.log`
@@ -221,21 +221,21 @@ DisableAutoExclusions
 - `%windir%\Ntds\Ntds*.pat`
 - `%windir%\Ntds\TEMP.edb`
 
-#### <a name="the-ntds-working-folder"></a><span data-ttu-id="cd65f-183">Cartella di lavoro NTDS</span><span class="sxs-lookup"><span data-stu-id="cd65f-183">The NTDS working folder</span></span>
+#### <a name="the-ntds-working-folder"></a><span data-ttu-id="49699-183">Cartella di lavoro NTDS</span><span class="sxs-lookup"><span data-stu-id="49699-183">The NTDS working folder</span></span>
 
-<span data-ttu-id="cd65f-184">Questa cartella è specificata nella chiave del Registro di sistema `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\DSA Working Directory`</span><span class="sxs-lookup"><span data-stu-id="cd65f-184">This folder is specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\DSA Working Directory`</span></span>
+<span data-ttu-id="49699-184">Questa cartella è specificata nella chiave del Registro di sistema `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\DSA Working Directory`</span><span class="sxs-lookup"><span data-stu-id="49699-184">This folder is specified in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\NTDS\Parameters\DSA Working Directory`</span></span>
 
 - `%windir%\Ntds\Temp.edb`
 - `%windir%\Ntds\Edb.chk`
 
-#### <a name="process-exclusions-for-ad-ds-and-ad-ds-related-support-files"></a><span data-ttu-id="cd65f-185">Esclusioni di processo per i file di supporto correlati a Servizi di dominio Active Directory e Servizi di dominio Active Directory</span><span class="sxs-lookup"><span data-stu-id="cd65f-185">Process exclusions for AD DS and AD DS-related support files</span></span>
+#### <a name="process-exclusions-for-ad-ds-and-ad-ds-related-support-files"></a><span data-ttu-id="49699-185">Esclusioni di processo per i file di supporto correlati a Servizi di dominio Active Directory e Servizi di dominio Active Directory</span><span class="sxs-lookup"><span data-stu-id="49699-185">Process exclusions for AD DS and AD DS-related support files</span></span>
 
 - `%systemroot%\System32\ntfrs.exe`
 - `%systemroot%\System32\lsass.exe`
 
-### <a name="dhcp-server-exclusions"></a><span data-ttu-id="cd65f-186">Esclusioni server DHCP</span><span class="sxs-lookup"><span data-stu-id="cd65f-186">DHCP Server exclusions</span></span>
+### <a name="dhcp-server-exclusions"></a><span data-ttu-id="49699-186">Esclusioni server DHCP</span><span class="sxs-lookup"><span data-stu-id="49699-186">DHCP Server exclusions</span></span>
 
-<span data-ttu-id="cd65f-187">In questa sezione sono elencate le esclusioni che vengono recapitate automaticamente quando si installa il ruolo server DHCP.</span><span class="sxs-lookup"><span data-stu-id="cd65f-187">This section lists the exclusions that are delivered automatically when you install the DHCP Server role.</span></span> <span data-ttu-id="cd65f-188">I percorsi dei file del server DHCP sono specificati dai *parametri DatabasePath,* *DhcpLogFilePath* e *BackupDatabasePath* nella chiave del Registro di sistema `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DHCPServer\Parameters`</span><span class="sxs-lookup"><span data-stu-id="cd65f-188">The DHCP Server file locations are specified by the *DatabasePath*, *DhcpLogFilePath*, and *BackupDatabasePath* parameters in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DHCPServer\Parameters`</span></span>
+<span data-ttu-id="49699-187">In questa sezione sono elencate le esclusioni che vengono recapitate automaticamente quando si installa il ruolo server DHCP.</span><span class="sxs-lookup"><span data-stu-id="49699-187">This section lists the exclusions that are delivered automatically when you install the DHCP Server role.</span></span> <span data-ttu-id="49699-188">I percorsi dei file del server DHCP sono specificati dai *parametri DatabasePath,* *DhcpLogFilePath* e *BackupDatabasePath* nella chiave del Registro di sistema `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DHCPServer\Parameters`</span><span class="sxs-lookup"><span data-stu-id="49699-188">The DHCP Server file locations are specified by the *DatabasePath*, *DhcpLogFilePath*, and *BackupDatabasePath* parameters in the registry key `HKEY_LOCAL_MACHINE\System\CurrentControlSet\Services\DHCPServer\Parameters`</span></span>
 
 - `%systemroot%\System32\DHCP\*\*.mdb`
 - `%systemroot%\System32\DHCP\*\*.pat`
@@ -243,53 +243,53 @@ DisableAutoExclusions
 - `%systemroot%\System32\DHCP\*\*.chk`
 - `%systemroot%\System32\DHCP\*\*.edb`
 
-### <a name="dns-server-exclusions"></a><span data-ttu-id="cd65f-189">Esclusioni server DNS</span><span class="sxs-lookup"><span data-stu-id="cd65f-189">DNS Server exclusions</span></span>
+### <a name="dns-server-exclusions"></a><span data-ttu-id="49699-189">Esclusioni server DNS</span><span class="sxs-lookup"><span data-stu-id="49699-189">DNS Server exclusions</span></span>
 
-<span data-ttu-id="cd65f-190">In questa sezione sono elencate le esclusioni di file e cartelle e le esclusioni di processo che vengono recapitate automaticamente quando si installa il ruolo Server DNS.</span><span class="sxs-lookup"><span data-stu-id="cd65f-190">This section lists the file and folder exclusions and the process exclusions that are delivered automatically when you install the DNS Server role.</span></span>
+<span data-ttu-id="49699-190">In questa sezione sono elencate le esclusioni di file e cartelle e le esclusioni di processo che vengono recapitate automaticamente quando si installa il ruolo Server DNS.</span><span class="sxs-lookup"><span data-stu-id="49699-190">This section lists the file and folder exclusions and the process exclusions that are delivered automatically when you install the DNS Server role.</span></span>
 
-#### <a name="file-and-folder-exclusions-for-the-dns-server-role"></a><span data-ttu-id="cd65f-191">Esclusioni di file e cartelle per il ruolo Server DNS</span><span class="sxs-lookup"><span data-stu-id="cd65f-191">File and folder exclusions for the DNS Server role</span></span>
+#### <a name="file-and-folder-exclusions-for-the-dns-server-role"></a><span data-ttu-id="49699-191">Esclusioni di file e cartelle per il ruolo Server DNS</span><span class="sxs-lookup"><span data-stu-id="49699-191">File and folder exclusions for the DNS Server role</span></span>
 
 - `%systemroot%\System32\Dns\*\*.log`
 - `%systemroot%\System32\Dns\*\*.dns`
 - `%systemroot%\System32\Dns\*\*.scc`
 - `%systemroot%\System32\Dns\*\BOOT`
 
-#### <a name="process-exclusions-for-the-dns-server-role"></a><span data-ttu-id="cd65f-192">Elaborare le esclusioni per il ruolo server DNS</span><span class="sxs-lookup"><span data-stu-id="cd65f-192">Process exclusions for the DNS Server role</span></span>
+#### <a name="process-exclusions-for-the-dns-server-role"></a><span data-ttu-id="49699-192">Elaborare le esclusioni per il ruolo server DNS</span><span class="sxs-lookup"><span data-stu-id="49699-192">Process exclusions for the DNS Server role</span></span>
 
 - `%systemroot%\System32\dns.exe`
 
-### <a name="file-and-storage-services-exclusions"></a><span data-ttu-id="cd65f-193">Esclusioni di Servizi file e archiviazione</span><span class="sxs-lookup"><span data-stu-id="cd65f-193">File and Storage Services exclusions</span></span>
+### <a name="file-and-storage-services-exclusions"></a><span data-ttu-id="49699-193">Esclusioni di Servizi file e archiviazione</span><span class="sxs-lookup"><span data-stu-id="49699-193">File and Storage Services exclusions</span></span>
 
-<span data-ttu-id="cd65f-194">In questa sezione vengono elencate le esclusioni di file e cartelle che vengono recapitate automaticamente quando si installa il ruolo Servizi file e archiviazione.</span><span class="sxs-lookup"><span data-stu-id="cd65f-194">This section lists the file and folder exclusions that are delivered automatically when you install the File and Storage Services role.</span></span> <span data-ttu-id="cd65f-195">Le esclusioni elencate di seguito non includono le esclusioni per il ruolo Clustering.</span><span class="sxs-lookup"><span data-stu-id="cd65f-195">The exclusions listed below do not include exclusions for the Clustering role.</span></span>
+<span data-ttu-id="49699-194">In questa sezione vengono elencate le esclusioni di file e cartelle che vengono recapitate automaticamente quando si installa il ruolo Servizi file e archiviazione.</span><span class="sxs-lookup"><span data-stu-id="49699-194">This section lists the file and folder exclusions that are delivered automatically when you install the File and Storage Services role.</span></span> <span data-ttu-id="49699-195">Le esclusioni elencate di seguito non includono le esclusioni per il ruolo Clustering.</span><span class="sxs-lookup"><span data-stu-id="49699-195">The exclusions listed below do not include exclusions for the Clustering role.</span></span>
 
 - `%SystemDrive%\ClusterStorage`
 - `%clusterserviceaccount%\Local Settings\Temp`
 - `%SystemDrive%\mscs`
 
-### <a name="print-server-exclusions"></a><span data-ttu-id="cd65f-196">Esclusioni server di stampa</span><span class="sxs-lookup"><span data-stu-id="cd65f-196">Print Server exclusions</span></span>
+### <a name="print-server-exclusions"></a><span data-ttu-id="49699-196">Esclusioni server di stampa</span><span class="sxs-lookup"><span data-stu-id="49699-196">Print Server exclusions</span></span>
 
-<span data-ttu-id="cd65f-197">In questa sezione sono elencate le esclusioni dei tipi di file, le esclusioni di cartelle e le esclusioni di processo che vengono recapitate automaticamente quando si installa il ruolo Server di stampa.</span><span class="sxs-lookup"><span data-stu-id="cd65f-197">This section lists the file type exclusions, folder exclusions, and the process exclusions that are delivered automatically when you install the Print Server role.</span></span>
+<span data-ttu-id="49699-197">In questa sezione sono elencate le esclusioni dei tipi di file, le esclusioni di cartelle e le esclusioni di processo che vengono recapitate automaticamente quando si installa il ruolo Server di stampa.</span><span class="sxs-lookup"><span data-stu-id="49699-197">This section lists the file type exclusions, folder exclusions, and the process exclusions that are delivered automatically when you install the Print Server role.</span></span>
 
-#### <a name="file-type-exclusions"></a><span data-ttu-id="cd65f-198">Esclusioni di tipi di file</span><span class="sxs-lookup"><span data-stu-id="cd65f-198">File type exclusions</span></span>
+#### <a name="file-type-exclusions"></a><span data-ttu-id="49699-198">Esclusioni di tipi di file</span><span class="sxs-lookup"><span data-stu-id="49699-198">File type exclusions</span></span>
 
 - `*.shd`
 - `*.spl`
 
-#### <a name="folder-exclusions"></a><span data-ttu-id="cd65f-199">Esclusioni di cartelle</span><span class="sxs-lookup"><span data-stu-id="cd65f-199">Folder exclusions</span></span>
+#### <a name="folder-exclusions"></a><span data-ttu-id="49699-199">Esclusioni di cartelle</span><span class="sxs-lookup"><span data-stu-id="49699-199">Folder exclusions</span></span>
 
-<span data-ttu-id="cd65f-200">Questa cartella è specificata nella chiave del Registro di sistema `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print\Printers\DefaultSpoolDirectory`</span><span class="sxs-lookup"><span data-stu-id="cd65f-200">This folder is specified in the registry key `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print\Printers\DefaultSpoolDirectory`</span></span>
+<span data-ttu-id="49699-200">Questa cartella è specificata nella chiave del Registro di sistema `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print\Printers\DefaultSpoolDirectory`</span><span class="sxs-lookup"><span data-stu-id="49699-200">This folder is specified in the registry key `HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Print\Printers\DefaultSpoolDirectory`</span></span>
 
 - `%system32%\spool\printers\*`
 
-#### <a name="process-exclusions"></a><span data-ttu-id="cd65f-201">Esclusioni di processi</span><span class="sxs-lookup"><span data-stu-id="cd65f-201">Process exclusions</span></span>
+#### <a name="process-exclusions"></a><span data-ttu-id="49699-201">Esclusioni di processi</span><span class="sxs-lookup"><span data-stu-id="49699-201">Process exclusions</span></span>
 
 - `spoolsv.exe`
 
-### <a name="web-server-exclusions"></a><span data-ttu-id="cd65f-202">Esclusioni server Web</span><span class="sxs-lookup"><span data-stu-id="cd65f-202">Web Server exclusions</span></span>
+### <a name="web-server-exclusions"></a><span data-ttu-id="49699-202">Esclusioni server Web</span><span class="sxs-lookup"><span data-stu-id="49699-202">Web Server exclusions</span></span>
 
-<span data-ttu-id="cd65f-203">In questa sezione vengono elencate le esclusioni di cartelle e le esclusioni di processo che vengono recapitate automaticamente quando si installa il ruolo server Web.</span><span class="sxs-lookup"><span data-stu-id="cd65f-203">This section lists the folder exclusions and the process exclusions that are delivered automatically when you install the Web Server role.</span></span>
+<span data-ttu-id="49699-203">In questa sezione vengono elencate le esclusioni di cartelle e le esclusioni di processo che vengono recapitate automaticamente quando si installa il ruolo server Web.</span><span class="sxs-lookup"><span data-stu-id="49699-203">This section lists the folder exclusions and the process exclusions that are delivered automatically when you install the Web Server role.</span></span>
 
-#### <a name="folder-exclusions"></a><span data-ttu-id="cd65f-204">Esclusioni di cartelle</span><span class="sxs-lookup"><span data-stu-id="cd65f-204">Folder exclusions</span></span>
+#### <a name="folder-exclusions"></a><span data-ttu-id="49699-204">Esclusioni di cartelle</span><span class="sxs-lookup"><span data-stu-id="49699-204">Folder exclusions</span></span>
 
 - `%SystemRoot%\IIS Temporary Compressed Files`
 - `%SystemDrive%\inetpub\temp\IIS Temporary Compressed Files`
@@ -297,22 +297,22 @@ DisableAutoExclusions
 - `%systemDrive%\inetpub\logs`
 - `%systemDrive%\inetpub\wwwroot`
 
-#### <a name="process-exclusions"></a><span data-ttu-id="cd65f-205">Esclusioni di processi</span><span class="sxs-lookup"><span data-stu-id="cd65f-205">Process exclusions</span></span>
+#### <a name="process-exclusions"></a><span data-ttu-id="49699-205">Esclusioni di processi</span><span class="sxs-lookup"><span data-stu-id="49699-205">Process exclusions</span></span>
 
 - `%SystemRoot%\system32\inetsrv\w3wp.exe`
 - `%SystemRoot%\SysWOW64\inetsrv\w3wp.exe`
 - `%SystemDrive%\PHP5433\php-cgi.exe`
 
-#### <a name="turning-off-scanning-of-files-in-the-sysvolsysvol-folder-or-the-sysvol_dfsrsysvol-folder"></a><span data-ttu-id="cd65f-206">Disattivazione dell'analisi dei file nella cartella Sysvol\Sysvol o nella cartella SYSVOL_DFSR\Sysvol</span><span class="sxs-lookup"><span data-stu-id="cd65f-206">Turning off scanning of files in the Sysvol\Sysvol folder or the SYSVOL_DFSR\Sysvol folder</span></span>
+#### <a name="turning-off-scanning-of-files-in-the-sysvolsysvol-folder-or-the-sysvol_dfsrsysvol-folder"></a><span data-ttu-id="49699-206">Disattivazione dell'analisi dei file nella cartella Sysvol\Sysvol o nella cartella SYSVOL_DFSR\Sysvol</span><span class="sxs-lookup"><span data-stu-id="49699-206">Turning off scanning of files in the Sysvol\Sysvol folder or the SYSVOL_DFSR\Sysvol folder</span></span>
 
-<span data-ttu-id="cd65f-207">Il percorso corrente della cartella o e di tutte le sottocartelle è la destinazione di analisi del file system della radice del `Sysvol\Sysvol` `SYSVOL_DFSR\Sysvol` set di repliche.</span><span class="sxs-lookup"><span data-stu-id="cd65f-207">The current location of the `Sysvol\Sysvol` or `SYSVOL_DFSR\Sysvol` folder and all the subfolders is the file system reparse target of the replica set root.</span></span> <span data-ttu-id="cd65f-208">Per `Sysvol\Sysvol` impostazione predefinita, le cartelle e `SYSVOL_DFSR\Sysvol` utilizzano i percorsi seguenti:</span><span class="sxs-lookup"><span data-stu-id="cd65f-208">The `Sysvol\Sysvol` and `SYSVOL_DFSR\Sysvol` folders use the following locations by default:</span></span>
+<span data-ttu-id="49699-207">Il percorso corrente della cartella o e di tutte le sottocartelle è la destinazione di analisi del file system della radice del `Sysvol\Sysvol` `SYSVOL_DFSR\Sysvol` set di repliche.</span><span class="sxs-lookup"><span data-stu-id="49699-207">The current location of the `Sysvol\Sysvol` or `SYSVOL_DFSR\Sysvol` folder and all the subfolders is the file system reparse target of the replica set root.</span></span> <span data-ttu-id="49699-208">Per `Sysvol\Sysvol` impostazione predefinita, le cartelle e `SYSVOL_DFSR\Sysvol` utilizzano i percorsi seguenti:</span><span class="sxs-lookup"><span data-stu-id="49699-208">The `Sysvol\Sysvol` and `SYSVOL_DFSR\Sysvol` folders use the following locations by default:</span></span>
 
 - `%systemroot%\Sysvol\Domain`
 - `%systemroot%\Sysvol_DFSR\Domain`
 
-<span data-ttu-id="cd65f-209">Il percorso dell'oggetto attualmente attivo fa riferimento alla condivisione NETLOGON e può essere determinato dal nome del valore `SYSVOL` SysVol nella sottochiave seguente: `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Netlogon\Parameters`</span><span class="sxs-lookup"><span data-stu-id="cd65f-209">The path to the currently active `SYSVOL` is referenced by the NETLOGON share and can be determined by the SysVol value name in the following subkey: `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Netlogon\Parameters`</span></span>
+<span data-ttu-id="49699-209">Il percorso dell'oggetto attualmente attivo fa riferimento alla condivisione NETLOGON e può essere determinato dal nome del valore `SYSVOL` SysVol nella sottochiave seguente: `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Netlogon\Parameters`</span><span class="sxs-lookup"><span data-stu-id="49699-209">The path to the currently active `SYSVOL` is referenced by the NETLOGON share and can be determined by the SysVol value name in the following subkey: `HKEY_LOCAL_MACHINE\SYSTEM\ControlSet001\Services\Netlogon\Parameters`</span></span>
 
-<span data-ttu-id="cd65f-210">Escludere i file seguenti da questa cartella e da tutte le relative sottocartelle:</span><span class="sxs-lookup"><span data-stu-id="cd65f-210">Exclude the following files from this folder and all its subfolders:</span></span>
+<span data-ttu-id="49699-210">Escludere i file seguenti da questa cartella e da tutte le relative sottocartelle:</span><span class="sxs-lookup"><span data-stu-id="49699-210">Exclude the following files from this folder and all its subfolders:</span></span>
 
 - `*.adm`
 - `*.admx`
@@ -325,20 +325,20 @@ DisableAutoExclusions
 - `*.ins`
 - `Oscfilter.ini`
 
-### <a name="windows-server-update-services-exclusions"></a><span data-ttu-id="cd65f-211">Esclusioni di Windows Server Update Services</span><span class="sxs-lookup"><span data-stu-id="cd65f-211">Windows Server Update Services exclusions</span></span>
+### <a name="windows-server-update-services-exclusions"></a><span data-ttu-id="49699-211">Esclusioni di Windows Server Update Services</span><span class="sxs-lookup"><span data-stu-id="49699-211">Windows Server Update Services exclusions</span></span>
 
-<span data-ttu-id="cd65f-212">In questa sezione sono elencate le esclusioni di cartelle che vengono recapitate automaticamente quando si installa il ruolo Windows Server Update Services (WSUS).</span><span class="sxs-lookup"><span data-stu-id="cd65f-212">This section lists the folder exclusions that are delivered automatically when you install the Windows Server Update Services (WSUS) role.</span></span> <span data-ttu-id="cd65f-213">La cartella WSUS è specificata nella chiave del Registro di sistema `HKEY_LOCAL_MACHINE\Software\Microsoft\Update Services\Server\Setup`</span><span class="sxs-lookup"><span data-stu-id="cd65f-213">The WSUS folder is specified in the registry key `HKEY_LOCAL_MACHINE\Software\Microsoft\Update Services\Server\Setup`</span></span>
+<span data-ttu-id="49699-212">In questa sezione sono elencate le esclusioni di cartelle che vengono recapitate automaticamente quando si installa il ruolo Windows Server Update Services (WSUS).</span><span class="sxs-lookup"><span data-stu-id="49699-212">This section lists the folder exclusions that are delivered automatically when you install the Windows Server Update Services (WSUS) role.</span></span> <span data-ttu-id="49699-213">La cartella WSUS è specificata nella chiave del Registro di sistema `HKEY_LOCAL_MACHINE\Software\Microsoft\Update Services\Server\Setup`</span><span class="sxs-lookup"><span data-stu-id="49699-213">The WSUS folder is specified in the registry key `HKEY_LOCAL_MACHINE\Software\Microsoft\Update Services\Server\Setup`</span></span>
 
 - `%systemroot%\WSUS\WSUSContent`
 - `%systemroot%\WSUS\UpdateServicesDBFiles`
 - `%systemroot%\SoftwareDistribution\Datastore`
 - `%systemroot%\SoftwareDistribution\Download`
 
-## <a name="see-also"></a><span data-ttu-id="cd65f-214">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="cd65f-214">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="49699-214">Vedere anche</span><span class="sxs-lookup"><span data-stu-id="49699-214">See also</span></span>
 
-- [<span data-ttu-id="cd65f-215">Configurare e convalidare le esclusioni per le analisi di Microsoft Defender Antivirus</span><span class="sxs-lookup"><span data-stu-id="cd65f-215">Configure and validate exclusions for Microsoft Defender Antivirus scans</span></span>](configure-exclusions-microsoft-defender-antivirus.md)
-- [<span data-ttu-id="cd65f-216">Configurare e convalidare le esclusioni in base al nome file, all'estensione e al percorso della cartella</span><span class="sxs-lookup"><span data-stu-id="cd65f-216">Configure and validate exclusions based on file name, extension, and folder location</span></span>](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
-- [<span data-ttu-id="cd65f-217">Configurare e convalidare le esclusioni per i file aperti dai processi</span><span class="sxs-lookup"><span data-stu-id="cd65f-217">Configure and validate exclusions for files opened by processes</span></span>](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
-- [<span data-ttu-id="cd65f-218">Errori comuni da evitare durante la definizione delle esclusioni</span><span class="sxs-lookup"><span data-stu-id="cd65f-218">Common mistakes to avoid when defining exclusions</span></span>](common-exclusion-mistakes-microsoft-defender-antivirus.md)
-- [<span data-ttu-id="cd65f-219">Personalizzare, avviare ed esaminare i risultati delle analisi e delle correzioni di Microsoft Defender Antivirus</span><span class="sxs-lookup"><span data-stu-id="cd65f-219">Customize, initiate, and review the results of Microsoft Defender Antivirus scans and remediation</span></span>](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
-- [<span data-ttu-id="cd65f-220">Microsoft Defender Antivirus in Windows 10</span><span class="sxs-lookup"><span data-stu-id="cd65f-220">Microsoft Defender Antivirus in Windows 10</span></span>](microsoft-defender-antivirus-in-windows-10.md)
+- [<span data-ttu-id="49699-215">Configurare e convalidare le esclusioni per le analisi di Microsoft Defender Antivirus</span><span class="sxs-lookup"><span data-stu-id="49699-215">Configure and validate exclusions for Microsoft Defender Antivirus scans</span></span>](configure-exclusions-microsoft-defender-antivirus.md)
+- [<span data-ttu-id="49699-216">Configurare e convalidare le esclusioni in base al nome file, all'estensione e al percorso della cartella</span><span class="sxs-lookup"><span data-stu-id="49699-216">Configure and validate exclusions based on file name, extension, and folder location</span></span>](configure-extension-file-exclusions-microsoft-defender-antivirus.md)
+- [<span data-ttu-id="49699-217">Configurare e convalidare le esclusioni per i file aperti dai processi</span><span class="sxs-lookup"><span data-stu-id="49699-217">Configure and validate exclusions for files opened by processes</span></span>](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md)
+- [<span data-ttu-id="49699-218">Errori comuni da evitare durante la definizione delle esclusioni</span><span class="sxs-lookup"><span data-stu-id="49699-218">Common mistakes to avoid when defining exclusions</span></span>](common-exclusion-mistakes-microsoft-defender-antivirus.md)
+- [<span data-ttu-id="49699-219">Personalizzare, avviare ed esaminare i risultati delle analisi e delle correzioni di Microsoft Defender Antivirus</span><span class="sxs-lookup"><span data-stu-id="49699-219">Customize, initiate, and review the results of Microsoft Defender Antivirus scans and remediation</span></span>](customize-run-review-remediate-scans-microsoft-defender-antivirus.md)
+- [<span data-ttu-id="49699-220">Microsoft Defender Antivirus in Windows 10</span><span class="sxs-lookup"><span data-stu-id="49699-220">Microsoft Defender Antivirus in Windows 10</span></span>](microsoft-defender-antivirus-in-windows-10.md)
