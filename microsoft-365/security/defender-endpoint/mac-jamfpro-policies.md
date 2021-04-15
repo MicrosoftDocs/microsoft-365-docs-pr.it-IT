@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 9b00d81d3d51c343565ec4eb743181baa2750b01
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 79f5837ae6bae6e6a9d952d90605f4cf7b31262e
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687734"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765132"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Configurare i criteri di Microsoft Defender for Endpoint su macOS in Jamf Pro
 
@@ -32,7 +32,7 @@ ms.locfileid: "51687734"
 
 **Si applica a:**
 
-- [Defender per Endpoint per Mac](microsoft-defender-endpoint-mac.md)
+- [Defender per Endpoint su Mac](microsoft-defender-endpoint-mac.md)
 
 Questa pagina illustra i passaggi da eseguire per configurare i criteri macOS in Jamf Pro.
 
@@ -731,8 +731,10 @@ Questi passaggi sono applicabili a macOS 10.15 (Catalina) o versioni successive.
 
 In alternativa, è possibile scaricare [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) e caricarlo nei profili di configurazione JAMF come descritto in [Deploying Custom Configuration Profiles using Jamf Pro| Metodo 2: Caricare un profilo di configurazione in Jamf Pro.](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)
 
+
 ## <a name="step-10-schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>Passaggio 10: pianificare le analisi con Microsoft Defender for Endpoint in macOS
 Segui le istruzioni su [Pianifica analisi con Microsoft Defender for Endpoint in macOS.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
+
 
 ## <a name="step-11-deploy-microsoft-defender-for-endpoint-on-macos"></a>Passaggio 11: Distribuire Microsoft Defender per Endpoint in macOS
 

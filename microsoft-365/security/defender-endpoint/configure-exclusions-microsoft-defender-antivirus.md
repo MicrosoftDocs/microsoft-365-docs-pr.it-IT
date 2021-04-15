@@ -1,24 +1,26 @@
 ---
-title: Configurare le esclusioni per le analisi di Microsoft Defender AV
+title: Configurare le esclusioni per le analisi di Microsoft Defender Antivirus
 description: Puoi escludere i file (inclusi i file modificati da processi specificati) e le cartelle dall'analisi da Parte di Microsoft Defender AV. Convalidare le esclusioni con PowerShell.
 keywords: ''
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.reviewer: ''
+ms.reviewer: ksarens
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 47db9b4451a885c92ca4fda0f87f0150415d3338
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.audience: ITPro
+ms.topic: how-to
+ms.openlocfilehash: 08f7f9d4a6e9e70d3ef071f30712b2ae53f4ea52
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51691509"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764664"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-antivirus-scans"></a>Configurare e convalidare le esclusioni per le analisi di Microsoft Defender Antivirus
 
@@ -40,7 +42,8 @@ Per configurare e convalidare le esclusioni, vedere quanto segue:
 - [Configurare e convalidare le esclusioni per i file aperti dai processi](configure-process-opened-file-exclusions-microsoft-defender-antivirus.md). In questo modo è possibile escludere i file dalle analisi aperte da un processo specifico.
 
 ## <a name="recommendations-for-defining-exclusions"></a>Suggerimenti per la definizione delle esclusioni
-
+[!IMPORTANT]
+Microsoft Defender Antivirus include molte esclusioni automatiche basate su comportamenti noti del sistema operativo e file di gestione tipici, ad esempio quelli utilizzati nella gestione aziendale, nella gestione dei database e in altri scenari e situazioni aziendali.  
 La definizione delle esclusioni riduce la protezione offerta da Microsoft Defender Antivirus. È consigliabile valutare sempre i rischi associati all'implementazione delle esclusioni e escludere solo i file che si è certi non siano dannosi.
 
 Di seguito è riportato un elenco di suggerimenti da tenere presenti quando si definiscono le esclusioni:  

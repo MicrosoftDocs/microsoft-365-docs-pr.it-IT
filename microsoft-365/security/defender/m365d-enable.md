@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 18564b2a5a47b2cf4a8bbd94a3e3a315c8f269ec
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: bf8fdb2a8a42ef7b70b744cbbb5663e6afe51989
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200258"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51764382"
 ---
 # <a name="turn-on-microsoft-365-defender"></a>Attivare Microsoft 365 Defender
 
@@ -72,12 +72,12 @@ Selezionare **Serve assistenza?** nel Centro sicurezza Microsoft 365 per contatt
 Dopo aver eseguito il provisioning il servizio aggiunge:
 
 - [Gestione degli eventi imprevisti](incidents-overview.md)
-- [Coda avvisi](investigate-alerts.md)
+- [Coda di avvisi](investigate-alerts.md)
 - Un centro operativo per la gestione delle [analisi e risposte automatiche](m365d-autoir.md)
 - [Funzionalità di ricerca](advanced-hunting-overview.md) avanzate
 - Analisi delle minacce
 
-![Immagine del riquadro di spostamento del Centro sicurezza Microsoft 365 con Microsoft 365 Defender con centro sicurezza Microsoft 365 con gestione degli incidenti e altre funzionalità di ](../../media/mtp-enable/mtp-on.png)
+![Immagine del riquadro di spostamento del Centro sicurezza Microsoft 365 con Microsoft 365 Defender con centro sicurezza Microsoft 365 con gestione degli incidenti e altre funzionalità di ](../../media/overview-incident.png)
  *Microsoft 365 Defender*
 
 ### <a name="getting-microsoft-defender-for-identity-data"></a>Recupero dei dati di Microsoft Defender for Identity 

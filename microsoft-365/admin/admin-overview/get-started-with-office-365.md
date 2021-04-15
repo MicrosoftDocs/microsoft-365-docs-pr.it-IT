@@ -28,7 +28,7 @@ ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/14/2021
-ms.locfileid: "51755643"
+ms.locfileid: "51759883"
 ---
 # <a name="get-started"></a>Per iniziare
 
