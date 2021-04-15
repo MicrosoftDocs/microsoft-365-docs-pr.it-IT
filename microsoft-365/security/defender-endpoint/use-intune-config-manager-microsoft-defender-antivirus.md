@@ -15,42 +15,44 @@ ms.date: 10/26/2018
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 16cd8492ceedaba200dea70a29c83401467ae8ee
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+audience: ITPro
+ms.topic: how-to
+ms.openlocfilehash: 647bda97cfbec5e1583ef66ebd3e9d445371d540
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690535"
+ms.locfileid: "51749867"
 ---
-# <a name="use-microsoft-endpoint-manager-and-microsoft-intune-to-configure-and-manage-microsoft-defender-antivirus"></a><span data-ttu-id="4e43a-104">Usare Microsoft Endpoint Manager e Microsoft Intune per configurare e gestire Microsoft Defender Antivirus</span><span class="sxs-lookup"><span data-stu-id="4e43a-104">Use Microsoft Endpoint Manager and Microsoft Intune to configure and manage Microsoft Defender Antivirus</span></span>
+# <a name="use-microsoft-endpoint-manager-and-microsoft-intune-to-configure-and-manage-microsoft-defender-antivirus"></a><span data-ttu-id="29f4d-104">Usare Microsoft Endpoint Manager e Microsoft Intune per configurare e gestire Microsoft Defender Antivirus</span><span class="sxs-lookup"><span data-stu-id="29f4d-104">Use Microsoft Endpoint Manager and Microsoft Intune to configure and manage Microsoft Defender Antivirus</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="4e43a-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="4e43a-105">**Applies to:**</span></span>
+<span data-ttu-id="29f4d-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="29f4d-105">**Applies to:**</span></span>
 
-- [<span data-ttu-id="4e43a-106">Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="4e43a-106">Microsoft Defender for Endpoint</span></span>](/microsoft-365/security/defender-endpoint/)
+- [<span data-ttu-id="29f4d-106">Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="29f4d-106">Microsoft Defender for Endpoint</span></span>](/microsoft-365/security/defender-endpoint/)
 
-<span data-ttu-id="4e43a-107">Se si usa Microsoft Endpoint Manager o Microsoft Intune per gestire gli endpoint nella rete, è ora possibile usare Microsoft Endpoint Manager per gestire le analisi di Microsoft Defender Antivirus.</span><span class="sxs-lookup"><span data-stu-id="4e43a-107">If you were using Microsoft Endpoint Manager or Microsoft Intune to manage the endpoints on your network, you can now use Microsoft Endpoint Manager to manage Microsoft Defender Antivirus scans.</span></span>
+<span data-ttu-id="29f4d-107">Se si usa Microsoft Endpoint Manager o Microsoft Intune per gestire gli endpoint nella rete, è ora possibile usare Microsoft Endpoint Manager per gestire le analisi di Microsoft Defender Antivirus.</span><span class="sxs-lookup"><span data-stu-id="29f4d-107">If you were using Microsoft Endpoint Manager or Microsoft Intune to manage the endpoints on your network, you can now use Microsoft Endpoint Manager to manage Microsoft Defender Antivirus scans.</span></span>
 
-1. <span data-ttu-id="4e43a-108">Nell'interfaccia di amministrazione di Microsoft Endpoint Manager ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ), accedere a Endpoint **Security**.</span><span class="sxs-lookup"><span data-stu-id="4e43a-108">In the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), navigate to **Endpoint Security**.</span></span>
+1. <span data-ttu-id="29f4d-108">Nell'interfaccia di amministrazione di Microsoft Endpoint Manager ( [https://endpoint.microsoft.com](https://endpoint.microsoft.com) ), accedere a Endpoint **Security**.</span><span class="sxs-lookup"><span data-stu-id="29f4d-108">In the Microsoft Endpoint Manager admin center ([https://endpoint.microsoft.com](https://endpoint.microsoft.com)), navigate to **Endpoint Security**.</span></span>
 
-2. <span data-ttu-id="4e43a-109">In **Gestisci** scegliere **Antivirus.**</span><span class="sxs-lookup"><span data-stu-id="4e43a-109">Under **Manage**, choose **Antivirus**.</span></span>
+2. <span data-ttu-id="29f4d-109">In **Gestisci** scegliere **Antivirus.**</span><span class="sxs-lookup"><span data-stu-id="29f4d-109">Under **Manage**, choose **Antivirus**.</span></span>
 
-3. <span data-ttu-id="4e43a-110">Seleziona i criteri di Microsoft Defender Antivirus.</span><span class="sxs-lookup"><span data-stu-id="4e43a-110">Select your Microsoft Defender Antivirus policy.</span></span> 
+3. <span data-ttu-id="29f4d-110">Seleziona i criteri di Microsoft Defender Antivirus.</span><span class="sxs-lookup"><span data-stu-id="29f4d-110">Select your Microsoft Defender Antivirus policy.</span></span> 
 
-4. <span data-ttu-id="4e43a-111">In **Gestisci** scegliere **Proprietà.**</span><span class="sxs-lookup"><span data-stu-id="4e43a-111">Under **Manage**, choose **Properties**.</span></span>
+4. <span data-ttu-id="29f4d-111">In **Gestisci** scegliere **Proprietà.**</span><span class="sxs-lookup"><span data-stu-id="29f4d-111">Under **Manage**, choose **Properties**.</span></span>
 
-5. <span data-ttu-id="4e43a-112">Accanto a **Impostazioni di configurazione** scegliere **Modifica.**</span><span class="sxs-lookup"><span data-stu-id="4e43a-112">Next to **Configuration settings**, choose **Edit**.</span></span>
+5. <span data-ttu-id="29f4d-112">Accanto a **Impostazioni di configurazione** scegliere **Modifica.**</span><span class="sxs-lookup"><span data-stu-id="29f4d-112">Next to **Configuration settings**, choose **Edit**.</span></span>
 
-6. <span data-ttu-id="4e43a-113">Espandere la **sezione Analisi** ed esaminare o modificare le impostazioni di analisi.</span><span class="sxs-lookup"><span data-stu-id="4e43a-113">Expand the **Scan** section, and review or edit your scanning settings.</span></span>
+6. <span data-ttu-id="29f4d-113">Espandere la **sezione Analisi** ed esaminare o modificare le impostazioni di analisi.</span><span class="sxs-lookup"><span data-stu-id="29f4d-113">Expand the **Scan** section, and review or edit your scanning settings.</span></span>
 
-7. <span data-ttu-id="4e43a-114">Scegliere **Revisione e salvataggio**</span><span class="sxs-lookup"><span data-stu-id="4e43a-114">Choose **Review + save**</span></span>
+7. <span data-ttu-id="29f4d-114">Scegliere **Revisione e salvataggio**</span><span class="sxs-lookup"><span data-stu-id="29f4d-114">Choose **Review + save**</span></span>
 
-<span data-ttu-id="4e43a-115">Hai bisogno di assistenza?</span><span class="sxs-lookup"><span data-stu-id="4e43a-115">Need help?</span></span> <span data-ttu-id="4e43a-116">Vedi [Gestire la sicurezza degli endpoint in Microsoft Intune.](/mem/intune/protect/endpoint-security)</span><span class="sxs-lookup"><span data-stu-id="4e43a-116">See [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security).</span></span>
+<span data-ttu-id="29f4d-115">Hai bisogno di assistenza?</span><span class="sxs-lookup"><span data-stu-id="29f4d-115">Need help?</span></span> <span data-ttu-id="29f4d-116">Vedi [Gestire la sicurezza degli endpoint in Microsoft Intune.](/mem/intune/protect/endpoint-security)</span><span class="sxs-lookup"><span data-stu-id="29f4d-116">See [Manage endpoint security in Microsoft Intune](/mem/intune/protect/endpoint-security).</span></span>
 
 
-## <a name="related-articles"></a><span data-ttu-id="4e43a-117">Articoli correlati</span><span class="sxs-lookup"><span data-stu-id="4e43a-117">Related articles</span></span>
+## <a name="related-articles"></a><span data-ttu-id="29f4d-117">Articoli correlati</span><span class="sxs-lookup"><span data-stu-id="29f4d-117">Related articles</span></span>
 
-- [<span data-ttu-id="4e43a-118">Argomenti di riferimento per gli strumenti di gestione e configurazione</span><span class="sxs-lookup"><span data-stu-id="4e43a-118">Reference topics for management and configuration tools</span></span>](configuration-management-reference-microsoft-defender-antivirus.md)
-- [<span data-ttu-id="4e43a-119">Microsoft Defender Antivirus in Windows 10</span><span class="sxs-lookup"><span data-stu-id="4e43a-119">Microsoft Defender Antivirus in Windows 10</span></span>](microsoft-defender-antivirus-in-windows-10.md)
+- [<span data-ttu-id="29f4d-118">Argomenti di riferimento per gli strumenti di gestione e configurazione</span><span class="sxs-lookup"><span data-stu-id="29f4d-118">Reference topics for management and configuration tools</span></span>](configuration-management-reference-microsoft-defender-antivirus.md)
+- [<span data-ttu-id="29f4d-119">Microsoft Defender Antivirus in Windows 10</span><span class="sxs-lookup"><span data-stu-id="29f4d-119">Microsoft Defender Antivirus in Windows 10</span></span>](microsoft-defender-antivirus-in-windows-10.md)

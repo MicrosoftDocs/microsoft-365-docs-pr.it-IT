@@ -1,9 +1,9 @@
 ### YamlMime:Landing
-title: Documentazione sulla sicurezza di Microsoft 365
-summary: Scopri le soluzioni e i servizi di sicurezza efficaci di Microsoft 365 Security che ti consentono di proteggere meglio la tua azienda dalle superfici di attacco.
+title: Documentazione di Microsoft Defender per Office 365
+summary: Informazioni sulle soluzioni di sicurezza affidabili in Defender per Office 365 per proteggere meglio la posta elettronica e gli strumenti di collaborazione.
 metadata:
-  title: Documentazione sulla sicurezza di Microsoft 365
-  description: Scopri le soluzioni e i servizi di sicurezza efficienti di Microsoft 365 Security, che ti consentono di proteggere meglio la tua azienda dalle superfici di attacco
+  title: Documentazione sulla sicurezza di Microsoft Defender per Office 365
+  description: Informazioni sulle soluzioni di sicurezza affidabili in Defender per Office 365 per proteggere meglio la posta elettronica e gli strumenti di collaborazione.
   services: office-365-security-compliance
   ms.service: O365-seccomp
   ms.subservice: subservice
@@ -11,74 +11,118 @@ metadata:
   ms.collection: m365-security-compliance
   author: mjcaparas
   ms.author: macapara
-  ms.date: 09/13/2019
+  ms.date: 04/13/2021
   localization_priority: Priority
-  ms.openlocfilehash: 82fe9cabd7fc5ff3c9b9be1b11db66eb0bea7dde
-  ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+  ms.openlocfilehash: a646d52b903a1ab16d2f552b456793492462c44b
+  ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
   ms.translationtype: MT
   ms.contentlocale: it-IT
-  ms.lasthandoff: 03/25/2021
-  ms.locfileid: "51205034"
+  ms.lasthandoff: 04/14/2021
+  ms.locfileid: "51760261"
 landingContent:
-- title: Microsoft 365 Defender
+- title: Defender per Office 365 & Exchange Online Protection
   linkLists:
   - linkListType: overview
     links:
-    - text: Che cos'è Microsoft 365 Defender?
-      url: ../defender/microsoft-365-defender.md
-    - text: Centro sicurezza Microsoft 365
-      url: ../defender/overview-security-center.md
-- title: Inizia con le versioni di valutazione gratuite
-  linkLists:
-  - linkListType: overview
-    links:
-    - text: Valutare Microsoft 365 Defender
-      url: ../defender/m365d-evaluation.md
-    - text: Playbook pilota di Microsoft 365 Defender
-      url: ../defender/m365d-pilot.md
-- title: Proteggere il personale remoto
+    - text: Panoramica sulla sicurezza di Office 365
+      url: overview.md
+    - text: Configurare con criteri di sicurezza predefiniti in EOP e Defender per Office 365
+      url: preset-security-policies.md
+- title: Introduzione a Defender per Office 365
   linkLists:
   - linkListType: get-started
     links:
-    - text: Proteggere il personale remoto
-      url: https://docs.microsoft.com/enterprise-mobility-security/remote-work/
-- title: Che cosa è Microsoft Defender per identità?
+    - text: Protezione dalle minacce
+      url: protect-against-threats.md
+    - text: Criteri di sicurezza predefiniti in EOP e Microsoft Defender per Office 365
+      url: preset-security-policies.md
+    - text: Novità di Microsoft Defender per Office 365
+      url: whats-new-in-defender-for-office-365.md
+- title: Valutare Defender per Office 365
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Valutare Defender per Office 365
+      url: office-365-evaluation.md
+    - text: Passare a Exchange Online Protection
+      url: switch-to-eop-from-google-postini-the-barracuda-spam-and-virus-firewall-or-cisco.md
+- title: Configurazione della protezione dell'autenticazione di posta elettronica
+  linkLists:
+  - linkListType: how-to-guide
+    links:
+    - text: Configurazione di SPF per evitare lo spoofing
+      url: set-up-spf-in-office-365-to-help-prevent-spoofing.md
+    - text: Usare DKIM per convalidare la posta elettronica in uscita inviata dal dominio personalizzato
+      url: use-dkim-to-validate-outbound-email.md
+    - text: Usare DMARC per convalidare la posta elettronica
+      url: use-dmarc-to-validate-email.md
+- title: Configurare Exchange Online Protection
   linkLists:
   - linkListType: overview
     links:
-    - text: Che cosa è Microsoft Defender per identità?
-      url: https://docs.microsoft.com/azure-advanced-threat-protection/what-is-atp
-    - text: Architettura di Microsoft Defender per identità
-      url: https://docs.microsoft.com/azure-advanced-threat-protection/atp-architecture
-- title: Defender per Office 365
+    - text: Panoramica su Exchange Online Protection
+      url: exchange-online-protection-overview.md
+    - text: Impostazioni consigliate per EOP e Microsoft Defender per la sicurezza di Office 365 per la configurazione
+      url: recommended-settings-for-eop-and-office365.md
+- title: Prevenire
   linkLists:
   - linkListType: overview
     links:
-    - text: Cos'è Defender per Office 365?
-      url: defender-for-office-365.md
-    - text: Descrizione del servizio Defender per Office 365
-      url: https://docs.microsoft.com/office365/servicedescriptions/office-365-advanced-threat-protection-service-description
-- title: Defender per endpoint
+    - text: Configurare il tenant di Microsoft 365 per una maggiore sicurezza
+      url: tenant-wide-setup-for-increased-security.md
+    - text: Analizzatore della configurazione in EOP e Defender per Office 365
+      url: configuration-analyzer-for-security-policies.md
+    - text: Acquisire informazioni approfondite attraverso la formazione del Simulatore di attacchi
+      url: attack-simulation-training-insights.md
+- title: Rilevamento
   linkLists:
   - linkListType: overview
     links:
-    - text: Cos'è Microsoft Defender per endpoint?
-      url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection
-    - text: Panoramica delle funzionalità
-      url: https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/overview
-- title: Azure Defender
+    - text: Regole del flusso di posta (regole di trasporto) in Exchange Online Protection autonomo
+      url: mail-flow-rules-transport-rules-0.md
+    - text: Tracker delle minacce
+      url: threat-trackers.md
+    - text: Report intelligenti e informazioni dettagliate nel Centro sicurezza e conformità
+      url: reports-and-insights-in-security-and-compliance.md
+- title: Investigare
   linkLists:
   - linkListType: overview
     links:
-    - text: Che cos'è Azure Defender?
-      url: https://docs.microsoft.com/azure/security-center/security-center-intro
-    - text: Funzionalità supportate
-      url: https://docs.microsoft.com/azure/security-center/security-center-services
-- title: Microsoft Cloud App Security
+    - text: Visualizzazioni in Esplora minacce e rilevamenti in tempo reale
+      url: threat-explorer-views.md
+    - text: Visualizzazioni della campagna in Microsoft Defender per Office 365
+      url: campaigns.md
+    - text: Analizzare la posta elettronica dannosa recapitata in Office 365
+      url: investigate-malicious-email-that-was-delivered.md
+    - text: Visualizzare i report di Defender per Office 365
+      url: view-reports-for-mdo.md
+- title: Analizzare in EOP
   linkLists:
   - linkListType: overview
     links:
-    - text: Che cos'è Microsoft Cloud App Security?
-      url: https://docs.microsoft.com/cloud-app-security/what-is-cloud-app-security
-    - text: Introduzione a Microsoft Cloud App Security
-      url: https://docs.microsoft.com/cloud-app-security/getting-started-with-cloud-app-security
+    - text: Creazione di report e traccia dei messaggi in EOP
+      url: reporting-and-message-trace-in-exchange-online-protection.md
+    - text: Visualizzare un log di controllo dell'amministratore in Exchange Online Protection autonomo
+      url: view-the-admin-audit-log-eop.md
+- title: Risposta
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Correggere i messaggi di posta elettronica dannosi recapitati in Office 365
+      url: remediate-malicious-email-delivered-office-365.md
+    - text: Rispondere a un account di posta elettronica compromesso
+      url: responding-to-a-compromised-email-account.md
+    - text: Correggere le regole di Outlook e gli attacchi iniezioni di moduli personalizzati
+      url: detect-and-remediate-outlook-rules-forms-attack.md
+    - text: Invia falsi positivi/falsi negativi
+      url: admin-submission.md
+- title: Automatizzare
+  linkLists:
+  - linkListType: overview
+    links:
+    - text: Funzionamento di AIR (Automated Investigation and Response) in Defender per Office 365
+      url: automated-investigation-response-office.md
+    - text: Introduzione a AIR in Defender per Office 365
+      url: office-365-air.md
+    - text: Risolvere gli account utente compromessi con AIR
+      url: address-compromised-users-quickly.md

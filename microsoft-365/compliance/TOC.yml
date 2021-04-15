@@ -245,6 +245,8 @@
               href: dlp-on-premises-scanner-learn.md
             - name: Informazioni sul Centro conformità Microsoft (anteprima)
               href: dlp-chrome-learn-about.md
+            - name: Informazioni sulla dashboard degli avvisi per la prevenzione delle perdita dei dati
+              href: dlp-alerts-dashboard-learn.md
         - name: Introduzione alla prevenzione della perdita dei dati
           items:
             - name: Introduzione ai criteri di prevenzione della perdita dei dati predefiniti
@@ -261,6 +263,8 @@
               href: endpoint-dlp-configure-proxy.md
             - name: Introduzione all'estensione della Conformità Microsoft (anteprima)
               href: dlp-chrome-get-started.md
+            - name: Introduzione alla dashboard degli avvisi per la prevenzione delle perdita dei dati
+              href: dlp-alerts-dashboard-get-started.md
             - name: Strumenti e metodi di onboarding della prevenzione della perdita di dati degli endpoint per i dispositivi Windows 10
               items:
                 - name: Strumenti e metodi di onboarding per i dispositivi Windows 10
@@ -594,6 +598,8 @@
               href: ediscovery-decryption.md
             - name: Raccogliere informazioni di diagnostica di eDiscovery
               href: ediscovery-diagnostic-info.md
+            - name: Risoluzione dei problemi di blocco di eDiscovery
+              href: hold-distribution-errors.md
             - name: Risolvere i problemi comuni di eDiscovery
               href: ediscovery-troubleshooting-common-issues.md
             - name: Eseguire nuovamente una ricerca non riuscita
@@ -748,6 +754,8 @@
               href: what-is-stored-in-exo-mailbox.md
             - name: Decrittografia negli strumenti di eDiscovery
               href: ediscovery-decryption.md
+            - name: Risoluzione dei problemi di blocco di eDiscovery
+              href: hold-distribution-errors.md
             - name: Raccogliere informazioni di diagnostica di eDiscovery
               href: ediscovery-diagnostic-info.md
             - name: Cercare le attività di eDiscovery nel log di controllo
@@ -766,6 +774,8 @@
       href: delete-items-in-the-recoverable-items-folder-of-mailboxes-on-hold.md
     - name: Aumentare la quota degli elementi ripristinabili per le cassette postali bloccate
       href: increase-the-recoverable-quota-for-mailboxes-on-hold.md
+    - name: Risoluzione dei problemi di blocco di eDiscovery
+      href: hold-distribution-errors.md
     - name: Mantenere Ccn e i destinatari del gruppo di distribuzione espanso
       href: preserve-bcc-and-expanded-distribution-group-recipients-for-ediscovery.md
 - name: Gestire i criteri di controllo e avviso
@@ -849,7 +859,7 @@
           href: configure-irm-to-use-an-on-premises-ad-rms-server.md
 - name: Microsoft 365 Enterprise
   href: ../enterprise/index.yml
-- name: Sicurezza Microsoft 365
+- name: Sicurezza di Microsoft 365
   href: ../security/index.yml
 - name: Microsoft 365 Apps for business
   href: /office365/admin/admin-home
