@@ -7,7 +7,7 @@ ms.mktglfcycl: deploy
 localization_priority: Normal
 f1.keywords:
 - NOCSH
-ms.date: 02/02/2021
+ms.date: 04/07/2021
 ms.author: tracyp
 author: msfttracyp
 manager: dansimp
@@ -19,18 +19,16 @@ ms.topic: conceptual
 search.appverid: met150
 ms.custom: seo-marvel-jun2020
 ms.technology: m365d
-ms.openlocfilehash: 142bc305950f9322c90e0d207f255c14abbc6b8c
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: d89e5dc29bfe7f980d40a9a5b139884750a966bc
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51197934"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760015"
 ---
 # <a name="the-unified-microsoft-365-security-center-overview"></a>Panoramica del Centro sicurezza Microsoft 365 unificato
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
-
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 **Si applica a:**
 
@@ -57,39 +55,39 @@ Se sono necessarie informazioni sulle modifiche dal Centro sicurezza & e conform
 
 Tutti i contenuti di sicurezza utilizzati nel Centro sicurezza e conformità di Office 365 (protection.office.com) e nel Centro sicurezza Microsoft Defender (securitycenter.microsoft.com) sono ora disponibili nel Centro sicurezza *Microsoft 365.*
 
-Il Centro sicurezza Microsoft 365 aiuta i team di sicurezza ad analizzare e rispondere agli attacchi, inondando i segnali provenienti da carichi di lavoro diversi in un'unica esperienza unificata:
+Il Centro sicurezza Microsoft 365 consente ai team di sicurezza di analizzare e rispondere agli attacchi, inviare segnali da carichi di lavoro diversi in un set di esperienze unificate per:
 
 - Eventi imprevisti & avvisi
 - Ricerca
 - Centro notifiche
 - Analisi delle minacce
 
-Il Centro sicurezza Microsoft 365 sottolinea *l'unità,* la chiarezza e gli obiettivi comuni in quanto unisce Microsoft Defender per Office 365 e Microsoft Defender for Endpoint. L'unione si basa sulle priorità elencate di seguito e viene effettuata senza sacrificare le funzionalità che ogni suite di sicurezza ha portato alla combinazione:
+Il Centro sicurezza Microsoft 365 sottolinea *l'unità,* la chiarezza e gli obiettivi comuni in quanto unisce Microsoft Defender per Office 365 e Microsoft Defender for Endpoint. L'unione si basa sulle priorità elencate di seguito e viene effettuata senza sacrificare le funzionalità che ogni suite di sicurezza ha apportato alla combinazione di:
 
-- blocchi predefiniti comuni
-- terminologia comune
-- entità comuni
-- parità delle funzionalità con altri carichi di lavoro
+- Blocchi predefiniti comuni
+- Terminologia comune
+- Entità comuni
+- Parità delle funzionalità con altri carichi di lavoro
 
 ## <a name="unified-investigations"></a>Indagini unificate
 
-La struttura dei centri di sicurezza crea un singolo riquadro per l'analisi di eventuali incidenti in un'organizzazione di Microsoft 365. Un esempio principale è il **nodo Eventi** imprevisti sulla barra di avvio veloce del Centro sicurezza Microsoft 365.
+I centri di sicurezza convergenza creano un'unica posizione per l'analisi degli incidenti di sicurezza in Microsoft 365. Un esempio principale è **Eventi imprevisti** in **Eventi & avvisi** sulla barra di avvio veloce del Centro sicurezza Microsoft 365.
 
-:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="Pagina Eventi imprevisti in MDO.":::
+:::image type="content" source="../../media/converged-incidents-2.png.png" alt-text="Pagina Eventi imprevisti nel Centro sicurezza Microsoft 365.":::
 
-Ad esempio, facendo doppio clic sul  nome di un evento imprevisto con gravità elevata viene visualizzata una pagina che dimostra il vantaggio dei centri convergenza.
+Se si seleziona un nome di evento imprevisto, verrà visualizzata una pagina in cui viene illustrato il valore dei Centri sicurezza convergenza.
 
-![Incidente in più fasi che implica l'escalation dei privilegi su più endpoint, che mostra vedere 16 dispositivi coinvolti e 9 utenti coinvolti.](../../media/converged-incident-info-3.png)
+:::image type="content" source="../../media/converged-incident-info-3.png" alt-text="Esempio della pagina Riepilogo per un evento imprevisto nel Centro sicurezza Microsoft 365":::
 
-> [!TIP]
-> La scheda **Utenti** convergenti è un buon punto per iniziare le richieste di informazioni. Questa singola pagina mostra informazioni per gli utenti provenienti da carichi di lavoro convergenti (Microsoft Defender for Endpoint, Microsoft Defender for Identity e MCAS, se lo si utilizza) e una serie di origini, ad esempio Active Directory locale, Azure Active Directory, utenti sincronizzati, locali e di terze parti. Ulteriori informazioni sulla [nuova esperienza degli utenti.](investigate-users.md)
+<!--
+![Example of the Summary page for an incident in the Microsoft 365 security center](../../media/converged-incident-info-3.png)
+--> 
 
-Le informazioni sugli incidenti mostrano le specifiche dell'utente/identità e i dispositivi a rischio, oltre alle cassette postali interessate. Inoltre, si riferisce a tutte **le informazioni di indagine** e alle prove **raccolte.** In questo modo, gli amministratori e i team delle operazioni di sicurezza possono eseguire il pivot da un avviso ad alto rischio agli utenti e alle cassette postali interessati. Osservando le **schede Operazioni** non consentite nella parte superiore di questa pagina, sono disponibili altri pivot di sicurezza chiave da questa singola posizione.
+Nella parte superiore della pagina di un evento imprevisto verranno visualizzate le schede **Riepilogo,** **Avvisi,** **Dispositivi,** **Utenti,** Cassette **postali,** Indagini **e** Prova. Selezionare queste schede per informazioni più dettagliate. Ad esempio,  nella scheda Utenti vengono visualizzate informazioni per gli utenti provenienti da carichi di lavoro convergenti (Microsoft Defender for Endpoint, Microsoft Defender for Identity e Microsoft Cloud App Security) e una serie di origini, ad esempio Servizi di dominio Active Directory locale, Azure Active Directory (Azure AD) e provider di identità di terze parti. Per ulteriori informazioni, vedere [analizzare gli utenti.](investigate-users.md)
 
-> [!IMPORTANT]
-> Nella parte superiore di qualsiasi pagina per un evento imprevisto specifico, verranno visualizzate le schede **Riepilogo,** **Avvisi,** **Dispositivi,** **Utenti,** Cassette **postali,** Indagini **e** Prova.
+Prendere il tempo necessario per esaminare gli eventi imprevisti nell'ambiente, eseguire il drill-down in queste schede e fare pratica per comprendere come accedere alle informazioni fornite per gli incidenti per diversi tipi di minacce.
 
-Selezionando **Indagini viene** aperta una pagina con un elemento grafico dell'analisi in corso ed è elencato uno stato (ad esempio in attesa di approvazione) per la correzione.  Prendere tempo per selezionare eventi imprevisti specifici nell'ambiente, eseguire il drill-down in queste schede e praticare la creazione di un profilo per diversi tipi di minacce. La familiarità trarrà vantaggio da eventuali indagini urgenti successive.
+Per ulteriori informazioni, vedere eventi imprevisti nel Centro sicurezza [Microsoft 365.](incidents-overview.md)
 
 ## <a name="improved-processes"></a>Processi migliorati
 

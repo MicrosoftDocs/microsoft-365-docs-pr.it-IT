@@ -10,16 +10,18 @@ ms.localizationpriority: medium
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
-ms.date: 03/31/2021
+ms.date: 04/13/2021
 ms.reviewer: ksarens, jtoole, pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 6c411507b834bd7f09f4688bda11e3ece9f6d7c8
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+audience: ITPro
+ms.topic: how-to
+ms.openlocfilehash: b8122807b8e26a848781f9f66f8e13032345f3fd
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/13/2021
-ms.locfileid: "51691294"
+ms.locfileid: "51749915"
 ---
 # <a name="use-group-policy-settings-to-configure-and-manage-microsoft-defender-antivirus"></a>Usare le impostazioni di Criteri di gruppo per configurare e gestire Microsoft Defender Antivirus
 
@@ -87,9 +89,9 @@ Nella tabella seguente in questo argomento sono elencate le impostazioni di Crit
 | Correzione | Specificare l'ora del giorno in cui eseguire un'analisi completa pianificata per completare la correzione | [Configurare le analisi pianificate di Microsoft Defender Antivirus](scheduled-catch-up-scans-microsoft-defender-antivirus.md) |
 | Creazione di report | Disattivare le notifiche avanzate | [Configurare le notifiche visualizzate sugli endpoint](configure-notifications-microsoft-defender-antivirus.md)
 | Radice | Disattivare Microsoft Defender Antivirus | Non usato (questa impostazione deve essere impostata su **Non configurato** per garantire il corretto funzionamento delle app antivirus di terze parti installate)
-| Radice | Definire gli indirizzi per ignorare il server proxy | Non più rilevante |
-| Radice | Definire la configurazione automatica del proxy (pac) per la connessione alla rete | Non più rilevante |
-| Radice | Definire il server proxy per la connessione alla rete | Non più rilevante |
+| Radice | Definire gli indirizzi per ignorare il server proxy | Non utilizzato |
+| Radice | Definire la configurazione automatica del proxy (pac) per la connessione alla rete | Non utilizzato |
+| Radice | Definire il server proxy per la connessione alla rete | Non utilizzato |
 | Radice | Configurare il comportamento di unione dell'amministratore locale per gli elenchi | [Impedire o consentire agli utenti di modificare localmente le impostazioni dei criteri](configure-local-policy-overrides-microsoft-defender-antivirus.md) |
 | Radice | Consenti avvio del servizio antimalware con priorità normale | [Configurare la correzione per le analisi di Microsoft Defender Antivirus](configure-remediation-microsoft-defender-antivirus.md) |
 | Radice | Consenti al servizio antimalware di rimanere sempre in esecuzione | [Configurare la correzione per le analisi di Microsoft Defender Antivirus](configure-remediation-microsoft-defender-antivirus.md) |

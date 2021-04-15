@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 784e73467efc114f05ebdfca9bc4034e2d75f6c6
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 235df8c84077311444c597b120a19477cfd0986a
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185708"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760417"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Analizzare le entità nei dispositivi che usano la risposta in tempo reale
 
@@ -144,11 +144,13 @@ I comandi seguenti sono disponibili per i ruoli utente a cui viene concessa la p
 |`connections` | Mostra tutte le connessioni attive. |
 |`dir` | Visualizza un elenco di file e sottodirectory in una directory. |
 |`download <file_path> &` | Scarica un file in background. |
-driver |  Mostra tutti i driver installati nel dispositivo. |
-|`fg <command ID>` | Restituisce un download di file in primo piano. |
+|`drivers` |  Mostra tutti i driver installati nel dispositivo. |
+|`fg <command ID>` | Posiziona il processo specificato in primo piano in primo piano, rendendolo il processo corrente. <br> NOTA: fg accetta un "ID comando" disponibile dai processi, non un PID |
 |`fileinfo` | Ottenere informazioni su un file. |
 |`findfile` | Individua i file con un nome specificato nel dispositivo. |
+|`getfile <file_path>` | Scarica un file. |
 |`help` | Fornisce informazioni della Guida per i comandi di risposta in tempo reale. |
+|`jobs` | Mostra i processi attualmente in esecuzione, il relativo ID e stato. |
 |`persistence` | Mostra tutti i metodi di persistenza noti nel dispositivo. |
 |`processes` | Mostra tutti i processi in esecuzione nel dispositivo. |
 |`registry` | Mostra i valori del Registro di sistema. |
@@ -162,7 +164,6 @@ I comandi seguenti sono disponibili per i ruoli utente a cui viene concessa la p
 | Comando | Descrizione |
 |---|---|
 | `analyze` | Analizza l'entità con vari motori di incriminazione per raggiungere un verdetto. |
-| `getfile` | Ottiene un file dal dispositivo. <br> NOTA: questo comando ha un comando prerequisito. È possibile utilizzare il `-auto` comando insieme a per eseguire `getfile` automaticamente il comando prerequisito. |
 | `run` | Esegue uno script di PowerShell dalla raccolta nel dispositivo. |
 | `library` | Elenca i file caricati nella raccolta di risposte in tempo reale. |
 | `putfile` | Inserisce un file dalla raccolta al dispositivo. I file vengono salvati in una cartella di lavoro e vengono eliminati al riavvio del dispositivo per impostazione predefinita. |
@@ -194,7 +195,7 @@ Per consentire al team delle operazioni di sicurezza di continuare a analizzare 
 - Se si è in attesa del download di un file, è possibile spostarlo in background utilizzando Ctrl + Z.
 - Per portare in primo piano il download di un file, nella console dei comandi di risposta in tempo reale digitare `fg <command_id>` .
 
-Ecco alcuni esempi:
+Di seguito vengono descritti alcuni esempi:
 
 
 |Comando  |Funzione  |
@@ -303,10 +304,9 @@ Seleziona la **scheda Registro** comandi per visualizzare i comandi usati nel di
 
 ## <a name="limitations"></a>Limitazioni
 
-- Le sessioni di risposta in tempo reale sono limitate a 10 sessioni di risposta in tempo reale alla volta.
-- L'esecuzione di comandi su larga scala non è supportata.
-- Il valore di timeout inattivo della sessione di risposta in tempo reale è 5 minuti. 
-- Un utente può avviare una sola sessione alla volta.
+- Le sessioni di risposta in tempo reale sono limitate a 25 sessioni di risposta in tempo reale alla volta.
+- Il valore di timeout inattiva della sessione di risposta in tempo reale è 30 minuti. 
+- Un utente può avviare fino a 10 sessioni simultanee.
 - Un dispositivo può essere in una sola sessione alla volta.
 - Si applicano i limiti di dimensione dei file seguenti:
    - `getfile` limite: 3 GB
@@ -314,4 +314,4 @@ Seleziona la **scheda Registro** comandi per visualizzare i comandi usati nel di
    - `library` limite: 250 MB
 
 ## <a name="related-article"></a>Articolo correlato
-- [Esempi di comandi di risposta in tempo reale](live-response-command-examples.md)
+- [Esempi di comandi di Live response](live-response-command-examples.md)

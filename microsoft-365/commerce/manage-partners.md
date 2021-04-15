@@ -15,12 +15,12 @@ ms.custom: AdminSurgePortfolio
 search.appverid:
 - MET150
 description: Informazioni su come collaborare con i provider di soluzioni (partner) certificati Microsoft per acquistare e gestire prodotti e servizi per l'organizzazione o l'istituto di istruzione.
-ms.openlocfilehash: a0c70f229ff11132beccf118f4158ab2880a8aa6
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: f4c270e179a3d52616f6d7efb049beac4d1a8e03
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579735"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51749855"
 ---
 # <a name="manage-partner-relationships"></a>Gestire le relazioni con i partner
 
@@ -85,7 +85,7 @@ Se non vuoi assegnare i ruoli di amministratore al partner, annulla l'invito inv
 
 È possibile rimuovere i ruoli di amministratore da un partner in qualsiasi momento. La rimozione dei ruoli di amministratore non rimuove la relazione partner. Possono comunque collaborare con te in una capacità diversa, ad esempio un rivenditore. Se decidi di non voler più collaborare con un partner, contatta il partner per terminare la relazione.
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Relazioni**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">con i partner di</a> fatturazione.
+1. Nell'interfaccia di amministrazione passare alla pagina **Impostazioni**  >  <a href="https://go.microsoft.com/fwlink/p/?linkid=2074649" target="_blank">Relazioni partner.</a>
 2. Nella pagina **Relazioni partner** selezionare la riga contenente il nome del partner che si desidera rimuovere.
 3. Selezionare la riga contenente il nome del partner.
 4. Nella pagina partner selezionare **Rimuovi ruoli.**

@@ -22,12 +22,12 @@ localization_priority: Priority
 description: Informazioni per amministratori sulle funzionalità anti-spoofing disponibili in Exchange Online Protection (EOP), che possono contribuire a ridurre gli attacchi di phishing da mittenti e domini contraffatti.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 746b00c7fbf1a90f8bda56c1ba031777f6dee409
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: 54b94e2d2cc0395ce7a9785887c253df3addf7fa
+ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408612"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51688778"
 ---
 # <a name="anti-spoofing-protection-in-eop"></a>Protezione anti-spoofing in EOP
 
@@ -122,7 +122,8 @@ Microsoft distingue tra due diversi tipi di spoofing dei messaggi:
 
   - SFTY è il livello di sicurezza del messaggio. 9 indica il phishing, .22 indica lo spoofing tra domini.
 
-Per altre informazioni sui valori di categoria e autenticazione composita (CompAuth) correlati allo spoofing, vedere [Intestazioni messaggi della protezione da posta indesiderata in Microsoft 365](anti-spam-message-headers.md).
+> [!NOTE]
+> Se è stato ricevuto un messaggio come ***compauth=fail reason=###** _ e devi conoscere l'autenticazione composita (compauth) e i valori correlati allo spoofing, vedi [_Intestazioni dei messaggi antispam in Microsoft 365*](anti-spam-message-headers.md). Oppure passa direttamente ai codici [*motivo*](anti-spam-message-headers.md).
 
 Per altre informazioni su DMARC, vedere [Usare DMARC per convalidare la posta elettronica in Microsoft 365](use-dmarc-to-validate-email.md).
 

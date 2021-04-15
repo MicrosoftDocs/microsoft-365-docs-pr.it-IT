@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 72d368cd92739e191dcb292000b8429a472aa981
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 2d2bf18c6cacb377e710f34b74ec8f83bb77d3b1
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498441"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760069"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Gestire gli eventi imprevisti in Microsoft 365 Defender
 
@@ -37,49 +37,63 @@ ms.locfileid: "51498441"
 **Si applica a:**
 - Microsoft 365 Defender
 
+La gestione degli incidenti è fondamentale per garantire che le minacce siano contenute e trattate.
 
+È possibile gestire gli eventi imprevisti da Eventi imprevisti & avvisi **> eventi** imprevisti sulla barra di avvio veloce del Centro sicurezza Microsoft 365 ([security.microsoft.com](https://security.microsoft.com)). Di seguito viene riportato un esempio.
 
-La gestione degli eventi è fondamentale per garantire il controllo e la soluzione delle minacce. In Microsoft 365 Defender hai accesso alla gestione degli eventi imprevisti su dispositivi, utenti e cassette postali. 
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Esempio di coda degli eventi imprevisti":::
 
+Ecco i modi in cui è possibile gestire gli eventi imprevisti:
 
-È possibile gestire gli eventi selezionandone uno dalla **Coda degli eventi imprevisti**. 
+- Modificare il nome dell'evento imprevisto
+- Aggiungere tag evento imprevisto.
+- Assegnare l'evento imprevisto a un account utente
+- Risolverli 
+- Impostare la classificazione e la determinazione
+- Aggiungere commenti.
 
-È possibile modificare il nome di un evento, risolverlo, impostarne la classificazione e la determinazione. Inoltre, è possibile assegnare l'evento a se stessi, aggiungere tag e commenti.
+È possibile gestire gli eventi imprevisti dal **riquadro Gestisci eventi imprevisti** per un evento imprevisto. Di seguito viene riportato un esempio.
 
-Se durante l'analisi si vogliono spostare gli avvisi da un evento all'altro è possibile eseguire l'operazione anche dalla scheda Avvisi, creando così un evento più grande oppure più piccolo che includa tutti gli avvisi pertinenti.
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-manage.png" alt-text="Esempio del riquadro Gestisci evento imprevisto di un evento imprevisto":::
 
-## <a name="edit-incident-name"></a>Modificare il nome di un evento imprevisto
-Agli eventi imprevisti viene assegnato automaticamente un nome in base agli attributi degli avvisi, ad esempio il numero di endpoint interessati, gli utenti interessati, le origini di rilevamento o le categorie. In questo modo è possibile comprendere rapidamente l'ambito dell'evento imprevisto.
+È possibile visualizzare questo riquadro dal **collegamento Gestisci operazioni** non consentite in:
 
-Ad esempio: *evento imprevisto a più fasi in più endpoint segnalati da più origini.*
+- Riquadro Proprietà di un evento imprevisto nella coda degli eventi imprevisti.
+- **Pagina di** riepilogo di un evento imprevisto.
 
-È possibile modificare il nome dell'evento per allinearlo alla convenzione di denominazione preferita.
+Nei casi in cui, durante l'analisi, si desidera spostare gli avvisi  da un evento imprevisto a un altro, è possibile farlo anche dalla scheda Avvisi, creando così un evento imprevisto più grande o più piccolo che include tutti gli avvisi rilevanti.
+
+## <a name="edit-the-incident-name"></a>Modificare il nome dell'evento imprevisto
+
+Agli eventi imprevisti viene assegnato automaticamente un nome in base agli attributi degli avvisi, ad esempio il numero di endpoint interessati, gli utenti interessati, le origini di rilevamento o le categorie. In questo modo è possibile comprendere rapidamente l'ambito dell'evento imprevisto. Ad esempio: *evento imprevisto a più fasi in più endpoint segnalati da più origini.*
+
+È possibile modificare il nome dell'evento imprevisto dal **campo Nome** evento imprevisto nel **riquadro Gestisci** evento imprevisto.
 
 > [!NOTE]
 > Gli eventi imprevisti che si verificavano prima dell'implementazione della funzionalità di denominazione automatica degli eventi imprevisti manterranno il nome.
 
+## <a name="add-incident-tags"></a>Aggiungere tag agli eventi
 
+È possibile aggiungere tag personalizzati a un evento imprevisto, ad esempio per contrassegnare un gruppo di eventi imprevisti con una caratteristica comune. In un secondo momento è possibile filtrare la coda degli eventi imprevisti per tutti gli eventi imprevisti che contengono un tag specifico.
+
+Quando si inizia a digitare, è possibile selezionare da un elenco di tag selezionati.
 
 ## <a name="assign-incidents"></a>Assegnare gli eventi imprevisti
-Se un evento non è stato ancora assegnato, è possibile selezionare **Assegna a me** per assegnare l'evento a se stessi. In questo modo si assume la proprietà non solo dell'evento, ma anche di tutti gli avvisi associati.
 
-## <a name="set-status-and-classification"></a>Impostare lo stato e la classificazione
-### <a name="incident-status"></a>Stato di un evento imprevisto
-È possibile categorizzare gli eventi imprevisti, ad esempio **Attivo** oppure **Risolto**, modificando lo stato durante il corso dell'analisi. Questo consente di organizzare e gestire il modo in cui il team può rispondere agli eventi imprevisti.
+Se non è stato ancora assegnato un evento imprevisto, è possibile selezionare **Assegna a** e specificare l'account utente. In questo modo viene assegnata la proprietà dell'evento imprevisto e tutti gli avvisi ad esso associati.
 
-Ad esempio, l'analista SOC può esaminare gli eventi **Attivi** e urgenti del giorno e decidere di assegnarli a se stesso per l'analisi.
+## <a name="resolve-incident"></a>Risolvere l'evento imprevisto
 
-In alternativa, può impostare l'evento come **Risolto** se l'evento è stato corretto. La risoluzione di un evento imprevisto chiude automaticamente tutti gli avvisi ancora aperti che fanno parte dell'evento. 
+Se l'evento imprevisto è stato risolto, selezionare **Risolvi evento imprevisto** per spostare l'interruttore verso destra. Si noti che la risoluzione di un evento imprevisto risolve anche tutti gli avvisi collegati e attivi correlati all'evento imprevisto.
 
-### <a name="classification-and-determination"></a>Classificazione e determinazione
-È possibile scegliere di non impostare una classificazione oppure decidere di specificare se un evento è vero o falso. Così facendo, il team può visualizzare i criteri e imparare a usarli. 
+Un evento imprevisto non risolto viene visualizzato come **Attivo.**
+
+## <a name="set-the-classification-and-determination"></a>Impostare la classificazione e la determinazione
+
+La classificazione degli eventi imprevisti è se si tratta di un avviso vero o falso, configurato dal **campo Classificazione.** 
+
+Se si tratta di un avviso vero, è necessario specificare anche il tipo di minaccia con il **campo Determinazione.** Se si specifica il tipo di minaccia, il team di sicurezza può visualizzare i modelli di minaccia e agire per difenderne l'organizzazione. 
 
 ## <a name="add-comments"></a>Aggiungere commenti
-È possibile aggiungere commenti e visualizzare gli eventi cronologici relativi a un imprevisto per visualizzare le precedenti modifiche apportate.
 
-Ogni volta che viene apportata una modifica o aggiunto un commento a un avviso, l'evento viene registrato nella sezione Commenti e cronologia.
-
-I commenti aggiunti vengono visualizzati istantaneamente nel pannello.
-
-## <a name="add-incident-tags"></a>Aggiungere tag agli eventi
-È possibile aggiungere tag personalizzati a un evento imprevisto, ad esempio per contrassegnare un gruppo di eventi imprevisti con una caratteristica comune. In seguito è possibile filtrare la coda di tutti gli eventi imprevisti che contengono un tag specifico.
+È possibile aggiungere più commenti a un evento imprevisto con il **campo** Commento. Ogni commento viene aggiunto agli eventi cronologici dell'evento imprevisto. È possibile visualizzare i commenti e la cronologia di un evento imprevisto dal collegamento Commenti **e cronologia** nella **pagina Riepilogo.**

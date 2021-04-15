@@ -1,8 +1,8 @@
 ---
-title: 'Panoramica sul centro argomenti '
+title: Panoramica del Centro argomenti in Microsoft Viva Topics
 description: Informazioni sul Centro argomenti in Microsoft Viva Topics.
-author: efrene
-ms.author: efrene
+author: chuckedmonson
+ms.author: chucked
 manager: pamgreen
 ms.reviewer: cjtan
 audience: admin
@@ -14,29 +14,29 @@ ms.collection:
 - m365initiative-viva-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 558d0fc9279c4b0d9e8c287fe4d99f5ac5884606
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 01b3310f5f822f3f6f38bf4d9e727d41fe2b179b
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50917489"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760111"
 ---
-# <a name="topic-center-overview"></a>Panoramica sul centro argomenti
+# <a name="topic-center-overview-in-microsoft-viva-topics"></a>Panoramica del Centro argomenti in Microsoft Viva Topics
 
 
-In Microsoft Viva Topics, il centro argomenti è un sito di SharePoint moderno che funge da centro di conoscenza per l'organizzazione. Viene creato durante [l'installazione di Viva Topics](set-up-topic-experiences.md) nell'interfaccia di amministrazione di Microsoft 365.
+In Microsoft Viva Topics, il Centro argomenti è un sito di SharePoint moderno che funge da centro di conoscenza per l'organizzazione. Viene creato durante [l'installazione di Viva Topics](set-up-topic-experiences.md) nell'interfaccia di amministrazione di Microsoft 365.
 
-Il Centro argomenti ha una home page predefinita con la web part Argomenti in cui tutti gli utenti con licenza possono visualizzare gli argomenti a cui hanno una connessione. 
+Il Centro argomenti ha una home page predefinita con la **web** part Argomenti in cui tutti gli utenti con licenza possono visualizzare gli argomenti a cui hanno una connessione. 
 
-Mentre tutti gli utenti con licenza che possono visualizzare gli argomenti avranno accesso al Centro argomenti, i responsabili della conoscenza possono gestire gli argomenti tramite **la pagina Gestisci** argomenti. La scheda Gestisci argomenti verrà visualizzata solo per gli utenti che dispongono **delle autorizzazioni Gestione** argomenti. 
+Mentre tutti gli utenti con licenza che possono visualizzare gli argomenti avranno accesso al Centro argomenti, i knowledge manager possono gestire gli argomenti anche tramite **la pagina Gestisci** argomenti. La **scheda Gestisci** argomenti verrà visualizzata solo per gli utenti che dispongono delle autorizzazioni Gestione argomenti. 
 
 ## <a name="where-is-my-topic-center"></a>Dove si trova il centro argomenti
 
 Il centro argomenti viene creato durante l'installazione di Viva Topics. Al termine dell'installazione, un amministratore può trovare l'URL nella [pagina Gestione centro argomenti.](./topic-experiences-administration.md#to-access-topics-management-settings)
 
 
-1. Nell'interfaccia di amministrazione di Microsoft 365, fare clic su **Impostazioni**, quindi **su Impostazioni organizzazione**.
-2. Nella scheda **Servizi** fare clic su **Esperienze argomento.**
+1. Nell'interfaccia di amministrazione di Microsoft 365 selezionare **Impostazioni** e quindi impostazioni **organizzazione.**
+2. Nella scheda **Servizi** selezionare **Esperienze argomento.**
 
     ![Connettere le persone alla conoscenza](../media/admin-org-knowledge-options-completed.png) </br>
 
@@ -70,9 +70,9 @@ Dopo aver confermato la connessione a un argomento, l'utente può apportare modi
 
 ## <a name="manage-topics-page"></a>Pagina Gestisci argomenti
 
-Per utilizzare la sezione **Gestisci argomenti** del Centro argomenti, è necessario disporre delle autorizzazioni necessarie per gestire gli argomenti necessarie per il ruolo di knowledge manager.  L'amministratore può assegnare [](set-up-topic-experiences.md)queste autorizzazioni agli utenti durante [](topic-experiences-knowledge-rules.md) la configurazione della gestione delle conoscenze oppure i nuovi utenti possono essere aggiunti successivamente da un amministratore tramite l'interfaccia di amministrazione di Microsoft 365.
+Per utilizzare la sezione **Gestisci argomenti** del Centro argomenti, è necessario disporre delle autorizzazioni necessarie per gestire l'argomento necessarie per il ruolo di knowledge manager. L'amministratore può assegnare [](set-up-topic-experiences.md)queste autorizzazioni agli utenti durante [](topic-experiences-knowledge-rules.md) la configurazione della gestione delle conoscenze oppure i nuovi utenti possono essere aggiunti successivamente da un amministratore tramite l'interfaccia di amministrazione di Microsoft 365.
 
-Nella pagina Gestisci argomenti, il dashboard degli argomenti mostra tutti gli argomenti a cui si ha accesso, identificati dalle posizioni di origine specificate. In ogni argomento verrà mostrata la data in cui l'argomento è stato individuato. Un utente a cui sono state assegnate **le** autorizzazioni Gestione argomenti può esaminare gli argomenti non confermati e scegliere di:
+Nella pagina Gestisci argomenti, il dashboard degli argomenti mostra tutti gli argomenti a cui si ha accesso, identificati dalle posizioni di origine specificate. In ogni argomento verrà mostrata la data in cui l'argomento è stato individuato. Un utente a cui sono state assegnate le autorizzazioni Gestione argomenti può esaminare gli argomenti non confermati e scegliere di:
 - Confermare l'argomento: evidenzia l'argomento per gli utenti che hanno accesso ai file e alle pagine correlati all'argomento e consente loro di visualizzare la scheda e la pagina dell'argomento associati.
 - Pubblicare l'argomento: modificare le informazioni sull'argomento per migliorare la qualità dell'argomento inizialmente identificato ed evidenziarlo per tutti gli utenti che hanno accesso agli argomenti. 
 - Rifiuta l'argomento: rende l'argomento non disponibile per gli utenti. L'argomento viene spostato nella **scheda Rifiutato** e può essere confermato in un secondo momento, se necessario. 
@@ -80,20 +80,15 @@ Nella pagina Gestisci argomenti, il dashboard degli argomenti mostra tutti gli a
 > [!Note] 
 > Per [ulteriori informazioni sulla](manage-topics.md) gestione degli argomenti, vedere Gestire gli argomenti nella pagina Gestisci argomenti.
 
-
 ## <a name="create-or-edit-a-topic"></a>Creare o modificare un argomento
 
-Se si dispone **delle autorizzazioni Per creare e modificare** argomenti, è possibile:
+Se si dispone delle autorizzazioni Per creare e modificare argomenti, è possibile:
 
 - [Modifica argomenti esistenti](edit-a-topic.md): è possibile apportare modifiche alle pagine degli argomenti esistenti create tramite l'individuazione.
 - [Creare nuovi argomenti](create-a-topic.md): è possibile creare nuovi argomenti per quelli che non sono stati trovati tramite l'individuazione o se gli strumenti di IA non hanno trovato prove sufficienti per creare un argomento.
 
 
-
-
-
-
 ## <a name="see-also"></a>Vedere anche
 
-
+[Gestire gli argomenti nel centro argomenti](manage-topics.md)
 

@@ -22,34 +22,31 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5aba1ab4bed0eeb5f6127ab865ceea674e8d5902
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 12207d69b0a1565caf762a265c1a0d32158ca291
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500995"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51759849"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Assegnare priorità agli incidenti in Microsoft 365 Defender
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../includes/microsoft-defender.md)]
 
-
 **Si applica a:**
 - Microsoft 365 Defender
 
+Microsoft 365 Defender applica l'analisi della correlazione e aggrega gli avvisi correlati e le indagini automatizzate di prodotti diversi in un evento imprevisto. Microsoft 365 Defender attiva anche avvisi univoci sulle attività che possono essere identificate come dannose solo in base alla visibilità end-to-end che Microsoft 365 Defender ha nell'intera famiglia di prodotti. Questa visualizzazione offre agli analisti della sicurezza la più ampia storia di attacco, che li aiuta a comprendere meglio e gestire le minacce complesse all'interno dell'organizzazione.
 
+La **coda eventi imprevisti** mostra una raccolta di eventi imprevisti creati su dispositivi, utenti e cassette postali. Ti aiuta a ordinare gli eventi imprevisti in base alla loro priorità e a definire una risposta di cybersecurity mirata. 
 
-Microsoft 365 Defender applica l'analisi di correlazione e aggrega tutti gli avvisi e le indagini correlati da prodotti diversi in un unico incidente. Microsoft 365 Defender attiva anche avvisi univoci sulle attività che possono essere identificate solo come dannose, data la visibilità end-to-end che Microsoft 365 Defender ha nell'intera proprietà e nella famiglia di prodotti. Questa visualizzazione offre all'analista delle operazioni di sicurezza la più ampia storia di attacco, che li aiuta a comprendere meglio e gestire le minacce complesse nell'organizzazione.
+È possibile accedere alla coda degli eventi imprevisti da Eventi imprevisti & avvisi **> eventi** imprevisti sulla barra di avvio veloce del Centro sicurezza Microsoft 365 ([security.microsoft.com](https://security.microsoft.com)).
 
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Esempio di coda degli eventi imprevisti":::
 
-La **coda degli eventi imprevisti** mostra una raccolta di eventi imprevisti contrassegnati da diversi dispositivi, utenti e cassette postali. Ti aiuta a ordinare gli eventi imprevisti in base alla loro priorità e a definire una risposta di cybersecurity mirata.
+Per impostazione predefinita, la coda nel Centro sicurezza Microsoft 365 visualizza gli eventi imprevisti osservati negli ultimi sei mesi. L'evento imprevisto più recente si trova all'inizio dell'elenco in modo da poterlo visualizzare per primo.
 
-
-![Immagine della coda eventi imprevisti](../../media/incidents-queue.png) 
-
-Per impostazione predefinita, la coda nel Centro sicurezza Microsoft 365 visualizza gli eventi imprevisti visualizzati negli ultimi 30 giorni. L'evento imprevisto più recente si trova all'inizio dell'elenco in modo da poterlo visualizzare per primo.
-
-La coda degli eventi imprevisti espone colonne personalizzabili che offrono visibilità sulle diverse caratteristiche dell'evento imprevisto o sulle entità contenute. In questo modo è possibile prendere una decisione informata sulla definizione della priorità degli eventi imprevisti da gestire.
+La coda eventi imprevisti include colonne personalizzabili **(selezionare** Scegli colonne) che offrono visibilità sulle diverse caratteristiche dell'evento imprevisto o sulle entità influenzate. Ciò consente di prendere una decisione informata sulla definizione di priorità degli incidenti per l'analisi.
 
 Per una maggiore visibilità a colpo d'occhio, la denominazione automatica degli eventi imprevisti genera nomi di eventi imprevisti in base agli attributi di avviso, ad esempio il numero di endpoint interessati, gli utenti interessati, le origini di rilevamento o le categorie. In questo modo è possibile comprendere rapidamente l'ambito dell'evento imprevisto.
 
@@ -62,52 +59,64 @@ La coda degli eventi imprevisti espone inoltre più opzioni di filtro, che, se a
 
 ## <a name="available-filters"></a>Filtri disponibili
 
-### <a name="assigned-to"></a>Assegnata a
-Puoi scegliere di visualizzare gli avvisi assegnati all'utente o a quelli gestiti dall'automazione.
+Dalla coda eventi imprevisti predefinita, è possibile selezionare **Filtri** per visualizzare un riquadro Filtri, da cui è possibile visualizzare un set filtrato di eventi imprevisti. Ecco un esempio.
 
-### <a name="categories"></a>Categorie
-Scegli le categorie per concentrarti su tattiche, tecniche o componenti di attacco specifici. 
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-filters.png" alt-text="Esempio del riquadro dei filtri per la coda eventi imprevisti":::
 
-### <a name="classification"></a>Classificazione
-Filtrare gli eventi imprevisti in base alle classificazioni impostate degli avvisi correlati. I valori includono avvisi true, falsi avvisi o non impostati.
+In questa tabella sono elencati i nomi dei filtri disponibili.
 
-### <a name="data-sensitivity"></a>Riservatezza dei dati
-Alcuni attacchi sono incentrati sull’estrazione di dati riservati o di valore. Applicando un filtro per vedere se sono coinvolte informazioni riservate nell'evento, puoi determinare rapidamente se le informazioni riservate sono potenzialmente compromesse e assegnare priorità all'intervento.
+| Nome filtro | Descrizione |
+|:-------|:-----|
+| Assegnata a | Puoi scegliere di visualizzare gli avvisi assegnati all'utente o a quelli gestiti dall'automazione. |
+| Categorie | Scegli le categorie per concentrarti su tattiche, tecniche o componenti di attacco specifici. |
+| Classificazione | Filtrare gli eventi imprevisti in base alle classificazioni impostate degli avvisi correlati. I valori includono avvisi true, falsi avvisi o non impostati. |
+| Riservatezza dei dati | Alcuni attacchi sono incentrati sull’estrazione di dati riservati o di valore. Applicando un filtro per vedere se sono coinvolte informazioni riservate nell'evento, puoi determinare rapidamente se le informazioni riservate sono potenzialmente compromesse e assegnare priorità all'intervento. <br><br> Applicabile solo se Microsoft Information Protection è attivo.|
+| Gruppo di dispositivi | Filtra in base ai gruppi di dispositivi definiti. |
+| Stato dell'indagine | Filtra gli incidenti in base allo stato dell'indagine automatizzata.  |
+| Più categorie | È possibile scegliere di visualizzare solo gli eventi imprevisti mappati a più categorie e quindi causare più danni. |
+| Più servizi di origine  | Filtra per visualizzare solo gli eventi imprevisti che contengono avvisi da origini diverse (Microsoft Defender per Endpoint, Microsoft Cloud App Security, Microsoft Defender for Identity, Microsoft Defender per Office 365). |
+| Piattaforma del sistema operativo | Limitare la visualizzazione della coda degli eventi imprevisti in base al sistema operativo. |
+| Servizi di origine | Scegliendo un’origine specifica puoi concentrarti sugli eventi imprevisti che contengono almeno un avviso dall'origine selezionata. |
+| Gravità | La gravità di un incidente è indicativa dell'impatto che può avere sulle risorse. Maggiore è la gravità, maggiore è l'impatto e in genere richiede l'attenzione più immediata. |
+| Stato | Puoi scegliere di limitare l'elenco degli eventi imprevisti visualizzati in base al loro stato per vedere quali sono attivi o risolti. |
+|||
 
->[!NOTE]
->Applicabile solo se Microsoft Information Protection è attivo.
+## <a name="incident-response-workflow"></a>Flusso di lavoro di risposta agli eventi imprevisti
 
-### <a name="device-group"></a>Gruppo di dispositivi
-Filtra in base ai gruppi di dispositivi definiti.
+Ecco il flusso di lavoro tipico per rispondere agli eventi imprevisti:
 
-### <a name="investigation-state"></a>Stato dell'indagine
-Filtra gli incidenti in base allo stato dell'indagine automatizzata. 
+1. Identificare e individuare gli incidenti con la priorità più alta per l'indagine e la risoluzione.
+2. Per ogni incidente ad alta priorità, avviare [un'indagine:](investigate-incidents.md)
 
-### <a name="multiple-categories"></a>Più categorie 
-È possibile scegliere di visualizzare solo gli eventi imprevisti mappati a più categorie e quindi causare più danni. 
+   a. Visualizzare il riepilogo dell'evento imprevisto per comprendere l'ambito, le entità interessate e la gravità **(scheda** Riepilogo).
 
-### <a name="multiple-service-sources"></a>Più servizi di origine 
-Filtra per visualizzare solo gli eventi imprevisti che contengono avvisi da origini diverse (Microsoft Defender per Endpoint, Microsoft Cloud App Security, Microsoft Defender for Identity, Microsoft Defender per Office 365).
+   b. Iniziare a visualizzare gli avvisi per comprenderne l'origine, l'ambito e la gravità **(scheda** Avvisi).
 
-### <a name="os-platform"></a>Piattaforma del sistema operativo
-Limitare la visualizzazione della coda degli eventi imprevisti in base al sistema operativo.
+   c. In base alle esigenze, raccogliere informazioni sui dispositivi, gli utenti e le cassette postali influenzati (le schede **Dispositivi,** **Utenti** e **Cassette** postali).
 
-### <a name="service-sources"></a>Servizi di origine
-Scegliendo un’origine specifica puoi concentrarti sugli eventi imprevisti che contengono almeno un avviso dall'origine selezionata. 
+   d. Scopri come Microsoft 365 Defender ha risolto automaticamente alcuni avvisi **(scheda** Indagini).
+   
+   e. Se necessario, usare le informazioni nel set di dati per l'evento imprevisto per ulteriori informazioni (scheda **Prova e** risposta).
 
-### <a name="severity"></a>Gravità
-La gravità di un incidente è indicativa dell'impatto che può avere sulle risorse. Maggiore è la gravità, maggiore è l'impatto e in genere richiede l'attenzione più immediata. 
+Durante l'analisi, è necessario preoccuparsi di:
 
-### <a name="status"></a>Stato
-Puoi scegliere di limitare l'elenco degli eventi imprevisti visualizzati in base al loro stato per vedere quali sono attivi o risolti.
+- Containment: riduzione di qualsiasi ulteriore impatto sul tenant.
+- Eliminazione: rimozione della minaccia alla sicurezza.
+- Ripristino: ripristino delle risorse del tenant allo stato in cui si trovavano prima dell'attacco.
 
+Dopo aver risolto l'evento imprevisto, prendere un momento per imparare da esso a:
 
+- Comprendere il tipo di attacco e il relativo impatto.
+- Ricercare l'attacco nella community di sicurezza per una tendenza di attacco alla sicurezza.
+- Richiamare il flusso di lavoro utilizzato per risolvere l'evento imprevisto e aggiornare i flussi di lavoro e i plalbook standard in base alle esigenze.
 
+Ecco un riepilogo del processo di base.
 
-## <a name="next-steps"></a>Passaggi successivi
-Dopo aver individuato l'evento che richiede maggiore priorità, puoi continuare eseguendo ulteriori operazioni di indagine su un evento.
-- [Indagare sugli eventi imprevisti](investigate-incidents.md)
+:::image type="content" source="../../media/incidents-queue/incidents-ss-incidents-process.png" alt-text="Processo di base per l'analisi degli incidenti":::
 
+## <a name="next-step"></a>Passaggio successivo
+
+Dopo aver determinato quale evento imprevisto richiede la priorità più alta, selezionarlo e avviare [l'indagine.](investigate-incidents.md)
 
 ## <a name="see-also"></a>Vedere anche
 - [Panoramica degli eventi imprevisti](incidents-overview.md)

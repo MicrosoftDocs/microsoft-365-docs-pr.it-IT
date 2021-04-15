@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 ms.assetid: da585eea-f576-4f55-a1e0-87090b6aaa9d
 description: I ruoli di amministratore sono associati a funzioni aziendali e forniscono le autorizzazioni per eseguire determinate attività nell'interfaccia di amministrazione. Ad esempio, l'amministratore del servizio può aprire ticket di supporto nell'interfaccia di amministrazione.
-ms.openlocfilehash: e0155ee9e263d4b62dced0e2bd943781ccf93a4c
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: d220ee918f70a56ba27bdad9d7d0f45025fad451
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644256"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755619"
 ---
 # <a name="about-admin-roles"></a>Informazioni sui ruoli di amministratore
 
@@ -61,11 +61,7 @@ Se nell'interfaccia di amministrazione viene visualizzato un messaggio che infor
 
 ## <a name="commonly-used-microsoft-365-admin-center-roles"></a>Ruoli dell'interfaccia di amministrazione di Microsoft 365 di uso comune
 
-::: moniker range="o365-worldwide"
-
 Nell'interfaccia di amministrazione di Microsoft 365 è possibile passare a **Ruoli** e quindi selezionare un ruolo per aprire il relativo riquadro dei dettagli. Selezionare la scheda **Autorizzazioni** per visualizzare l'elenco dettagliato delle autorizzazioni di cui dispongono gli amministratori a cui è assegnato quel ruolo. Selezionare la scheda **Assegnate** o **Amministratori assegnati** per aggiungere utenti ai ruoli.
-
-::: moniker-end
 
 Probabilmente sarà necessario assegnare solo i ruoli seguenti nell'organizzazione. Per impostazione predefinita, vengono visualizzati i ruoli usati dalla maggior parte delle organizzazioni. Se non si riesce a trovare un ruolo, selezionare **Mostra tutto per categoria** in fondo all'elenco. Per informazioni dettagliate, inclusi i cmdlet associati a un ruolo, vedere [Autorizzazioni del ruolo di amministratore in Azure Active Directory](/azure/active-directory/users-groups-roles/directory-assign-admin-roles#available-roles).
 

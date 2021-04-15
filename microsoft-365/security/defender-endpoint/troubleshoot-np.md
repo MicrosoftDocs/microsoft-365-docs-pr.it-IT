@@ -11,26 +11,26 @@ localization_priority: Normal
 audience: ITPro
 author: dansimp
 ms.author: dansimp
-ms.date: 01/26/2021
-ms.reviewer: ''
+ms.reviewer: oogunrinde
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 34bebddcf052a643529f1d2b8a8a869a0ffe4a91
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.topic: how-to
+ms.openlocfilehash: 9efc42441c2cb30f35abf658071088f7f7bbaf00
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51183821"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760099"
 ---
 # <a name="troubleshoot-network-protection"></a>Risolvere i problemi di protezione di rete
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-
 **Si applica a:**
 - [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
+> [!TIP]
 > Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-pullalerts-abovefoldlink) 
 
 
@@ -57,7 +57,7 @@ La protezione di rete funzionerà solo nei dispositivi con le condizioni seguent
 > - [La protezione consegnata dal cloud](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/enable-cloud-protection-microsoft-defender-antivirus) è abilitata.
 > - La modalità di controllo non è abilitata. Utilizzare [Criteri di gruppo](enable-network-protection.md#group-policy) per impostare la regola su **Disabilitato** (valore: **0**).
 
-## <a name="use-audit-mode"></a>Usare la modalità di controllo
+## <a name="use-audit-mode"></a>Usare modalità di controllo
 
 È possibile abilitare la protezione di rete in modalità di controllo e quindi visitare un sito Web creato per la dimostrazione della funzionalità. Tutte le connessioni al sito Web saranno consentite dalla protezione di rete, ma verrà registrato un evento per indicare qualsiasi connessione che sarebbe stata bloccata se la protezione di rete fosse stata abilitata.
 
@@ -103,9 +103,29 @@ Quando si segnala un problema con la protezione di rete, viene richiesto di racc
    mpcmdrun -getfiles
    ```
 
-3. Per impostazione predefinita, vengono salvati in C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab. Allegare il file al modulo di invio.
+3. Allegare il file al modulo di invio. Per impostazione predefinita, i log di diagnostica vengono salvati in `C:\ProgramData\Microsoft\Windows Defender\Support\MpSupportFiles.cab` . 
 
-## <a name="related-topics"></a>Argomenti correlati
+## <a name="resolve-connectivity-issues-with-network-protection-for-e5-customers"></a>Risolvere i problemi di connettività con la protezione di rete (per i clienti E5)
+
+A causa dell'ambiente in cui viene eseguita la protezione di rete, Microsoft non è in grado di visualizzare le impostazioni proxy del sistema operativo. In alcuni casi, i client di protezione di rete non sono in grado di raggiungere il servizio cloud. Per risolvere i problemi di connettività con la protezione di rete, configurare una delle seguenti chiavi del Registro di sistema in modo che la protezione di rete sia a conoscenza della configurazione del proxy:
+
+```powershell
+reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyServer /d "<proxy IP address: Port>" /f
+```
+
+---OR---
+
+
+```powershell
+reg add "HKLM\Software\Microsoft\Windows Defender" /v ProxyPacUrl /d "<Proxy PAC url>" /f
+```
+
+È possibile configurare la chiave del Registro di sistema utilizzando PowerShell, Microsoft Endpoint Manager o Criteri di gruppo. Ecco alcune risorse utili:
+- [Utilizzo delle chiavi del Registro di sistema](/powershell/scripting/samples/working-with-registry-keys)
+- [Configurare le impostazioni client personalizzate per Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure-client)
+- [Usare le impostazioni di Criteri di gruppo per gestire Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-group-policies)
+
+## <a name="see-also"></a>Vedere anche
 
 - [Protezione di rete](network-protection.md)
 - [Valutare la protezione di rete](evaluate-network-protection.md)

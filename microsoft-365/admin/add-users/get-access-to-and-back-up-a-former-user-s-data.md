@@ -23,12 +23,12 @@ search.appverid:
 - MOE150
 ms.assetid: a6f7f9ad-e3f5-43de-ade5-e5a0d7531604
 description: Informazioni su come conservare i file e i messaggi di posta elettronica di un dipendente quando la persona lascia l'organizzazione.
-ms.openlocfilehash: 38cc44bbe602f3c8c38ca54391d0967fbafbfcf7
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 17911e4a4551bba07d2c2ad034941bba737dcc1d
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906313"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755607"
 ---
 # <a name="get-access-to-and-back-up-a-former-users-data"></a>Accedere ai dati di un ex utente ed eseguirne il backup
 
@@ -44,8 +44,22 @@ Per conservare i file di OneDrive di un ex utente, concedere innanzitutto l'acce
 
 ::: moniker range="o365-worldwide"
 
-1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.  
-    
+1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=834822" target="_blank">Utenti attivi</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+ 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+ 1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>.
+
+::: moniker-end
+
 2. Selezionare un utente.
 
 3. Nel riquadro destro selezionare **OneDrive**. In **Ottieni accesso ai file** seleziona Crea collegamento ai **file**.
@@ -56,69 +70,27 @@ Per conservare i file di OneDrive di un ex utente, concedere innanzitutto l'acce
 > È possibile spostare o copiare fino a 500 MB di file e cartelle alla volta.<br/>
 > Quando si spostano o copiano documenti con cronologia delle versioni, viene spostata solo la versione più recente.  
 
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=847686" target="_blank">Utenti attivi</a>.  
-
-2. Selezionare un utente.
-
-3. Nel riquadro destro espandere Impostazioni **di OneDrive** e quindi accanto ad **Access** selezionare **Accedi ai file.**
-
-4. Selezionare il collegamento per aprire il percorso del file. Scaricare i file nel computer oppure  selezionare Sposta **in** o Copia in per spostarli o copiarli nel proprio OneDrive o in una raccolta condivisa. 
-
-> [!NOTE]
-> È possibile spostare o copiare fino a 500 MB di file e cartelle alla volta.<br/>
-> Quando si spostano o copiano documenti con cronologia delle versioni, viene spostata solo la versione più recente.  
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Nell'interfaccia di amministrazione passare alla pagina **Utenti** \> <a href="https://go.microsoft.com/fwlink/p/?linkid=850628" target="_blank">Utenti attivi</a>. 
-
-2. Selezionare un utente.
-
-3. Nel riquadro destro espandere Impostazioni **di OneDrive** e quindi accanto ad **Access** selezionare **Accedi ai file.**
-
-4. Selezionare il collegamento per aprire il percorso del file. Scaricare i file nel computer oppure  selezionare Sposta **in** o Copia in per spostarli o copiarli nel proprio OneDrive o in una raccolta condivisa.  
-
-> [!NOTE]
-> È possibile spostare o copiare fino a 500 MB di file e cartelle alla volta.<br/>
-> Quando si spostano o copiano documenti con cronologia delle versioni, viene spostata solo la versione più recente.  
-
-::: moniker-end
-    
-
-
 ## <a name="revoke-admin-access-to-a-users-onedrive"></a>Revocare l'accesso amministratore a OneDrive di un utente
 
 In quanto amministratore globale, puoi concedere l'accesso al contenuto in OneDrive di un utente, ma potresti voler rimuovere l'accesso quando non è più necessario. 
 
-::: moniker range="o365-worldwide"
+ ::: moniker range="o365-worldwide"
 
-1. Accedere <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">all'interfaccia di amministrazione</a> come amministratore globale o amministratore di SharePoint. 
-
-    Se viene visualizzato un messaggio che indica che non si dispone dell'autorizzazione per accedere all'interfaccia di amministrazione, non si dispone delle autorizzazioni di amministratore nell'organizzazione.
+1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-germany"
 
-1. Accedere <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">all'interfaccia di amministrazione</a> come amministratore globale o amministratore di SharePoint.
-
-    Se viene visualizzato un messaggio che indica che non si dispone dell'autorizzazione per accedere all'interfaccia di amministrazione, non si dispone delle autorizzazioni di amministratore nell'organizzazione.
+1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
 
 ::: moniker-end
 
 ::: moniker range="o365-21vianet"
 
-1. Accedere <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">all'interfaccia di amministrazione</a> come amministratore globale o amministratore di SharePoint.
+1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
 
-    Se viene visualizzato un messaggio che indica che non si dispone dell'autorizzazione per accedere all'interfaccia di amministrazione, non si dispone delle autorizzazioni di amministratore nell'organizzazione.
-
-::: moniker-end
+::: moniker-end 
 
 2. Nel riquadro sinistro selezionare **Interfaccia di amministrazione di** \> **SharePoint.** Potrebbe essere necessario selezionare **Mostra tutto** per vedere l'elenco di interfacce di amministrazione.
 

@@ -20,18 +20,22 @@ search.appverid: MOE150
 ms.assetid: 8a113a50-0071-4155-bb8e-eba5a8dbd4c8
 description: In questo articolo sono disponibili endpoint raggiungibili per i clienti che usano Office 365 in Germania.
 hideEdit: true
-ms.openlocfilehash: 8d3e8bfe2a52027b412aff87e063f2458ca47f74
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0d96300e77c67ac05ea18ab23d63c01d4f840dfb
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50923991"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51759895"
 ---
 # <a name="office-365-germany-endpoints"></a>Endpoint di Office 365 Germany
 
  *Si applica a: Office 365 Admin*
 
 Office 365 richiede la connettività a Internet. Gli endpoint seguenti devono essere raggiungibili solo per i clienti che usano **piani di Office 365 Germany.**
+
+> [!NOTE]
+> Per i clienti, che sono in fase di transizione alla nuova area data center di Microsoft 365 in Germania, gli endpoint cambieranno.
+> Per ulteriori informazioni, vedere Migrazione da Microsoft Cloud Deutschland ai servizi [di Office 365 nelle nuove aree data center tedesche.](ms-cloud-germany-transition.md)
   
  **Endpoint di Office 365:** [Worldwide (compreso GCC)](urls-and-ip-address-ranges.md)  | [Office 365 gestito da 21Vianet](urls-and-ip-address-ranges-21vianet.md)  | *Office 365 Germany* | [Office 365 U.S. Government DoD](microsoft-365-u-s-government-dod-endpoints.md) | [Office 365 U.S. Government GCC High](microsoft-365-u-s-government-gcc-high-endpoints.md)  |
   

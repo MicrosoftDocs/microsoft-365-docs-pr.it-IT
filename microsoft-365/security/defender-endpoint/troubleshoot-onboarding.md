@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 4599741f501e9b55bc73e0eb8def9208bc988957
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 193e7e634ecf8407816db10c820edcd241b94b12
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689666"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755799"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Risolvere i problemi di onboarding di Microsoft Defender per endpoint
 
@@ -292,8 +292,9 @@ Se la verifica ha esito negativo e l'ambiente utilizza un proxy per connettersi 
     ![Immagine della chiave del Registro di sistema per Microsoft Defender Antivirus](images/atp-disableantispyware-regkey.png)
 
    > [!NOTE]
-   > Inoltre, è necessario verificare che wdfilter.sys e wdboot.sys siano impostati sui valori iniziali predefiniti "0".
+   > Tutti Windows Defender servizi (wdboot, wdfilter, wdnisdrv, wdnissvc e windefend) devono essere nello stato predefinito. La modifica dell'avvio di questi servizi non è supportata e potrebbe forzare l'immagine del sistema.
    >
+   > Configurazioni predefinite di esempio per WdBoot e WdFilter:
    > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdBoot"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
    > - `<Key Path="SYSTEM\CurrentControlSet\Services\WdFilter"><KeyValue Value="0" ValueKind="DWord" Name="Start"/></Key>`
 

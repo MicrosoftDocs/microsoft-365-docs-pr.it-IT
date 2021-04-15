@@ -22,12 +22,12 @@ ms.collection:
 ms.topic: how-to
 ms.reviewer: ramarom, evaldm, isco, mabraitm, chriggs, yonghree, jcedola
 ms.custom: FPFN
-ms.openlocfilehash: ddd10e6164a8fae5d0d3d60c04ca854ef9771dba
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: f2615cf5ec49c9df27472f04c367f30511e9c0cc
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688742"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51759871"
 ---
 # <a name="address-false-positivesnegatives-in-microsoft-defender-for-endpoint"></a>Risolvere i falsi positivi/negativi in Microsoft Defender per endpoint
 
@@ -125,9 +125,11 @@ Se hai avvisi che sono falsi positivi o veri positivi, ma per eventi non importa
 Altre azioni, ad esempio l'avvio di un'analisi antivirus o la raccolta di un pacchetto di analisi, vengono eseguite manualmente o tramite [Live Response.](live-response.md) Le azioni eseguite tramite Live Response non possono essere annullate.
 
 Dopo aver esaminato gli avvisi, il passaggio successivo consiste nell'esaminare [le azioni di correzione.](manage-auto-investigation.md) Se sono state intraprese azioni a seguito di falsi positivi, è possibile annullare la maggior parte dei tipi di azioni correttive. In particolare, è possibile:
-- [Annullare un'azione alla volta;](#undo-an-action)
-- [Annullare più azioni contemporaneamente;](#undo-multiple-actions-at-one-time) e 
-- [Rimuovere un file dalla quarantena su più dispositivi](#remove-a-file-from-quarantine-across-multiple-devices). 
+
+- [Ripristinare un file in quarantena dal Centro notifiche](#restore-a-quarantined-file-from-the-action-center)
+- [Annullare più azioni contemporaneamente](#undo-multiple-actions-at-one-time)
+- [Rimuovere un file dalla quarantena su più dispositivi](#remove-a-file-from-quarantine-across-multiple-devices).  e 
+- [Ripristinare un file dalla quarantena](#restore-file-from-quarantine)
 
 Al termine dell'analisi e dell'annullamento delle azioni eseguite a seguito di falsi positivi, procedere alla revisione o [alla definizione delle esclusioni.](#part-3-review-or-define-exclusions)
 
@@ -139,7 +141,7 @@ Al termine dell'analisi e dell'annullamento delle azioni eseguite a seguito di f
 
 3. Selezionare un elemento per visualizzare ulteriori dettagli sull'azione di correzione eseguita.
 
-### <a name="undo-an-action"></a>Annullare un'azione
+### <a name="restore-a-quarantined-file-from-the-action-center"></a>Ripristinare un file in quarantena dal Centro notifiche
 
 1. Vai al centro notifiche ( [https://securitycenter.windows.com/action-center](https://securitycenter.windows.com/action-center) ) e accedi.
 
@@ -164,7 +166,33 @@ Al termine dell'analisi e dell'annullamento delle azioni eseguite a seguito di f
 
 2. Nella scheda **Cronologia** selezionare un file con il tipo di azione **File quarantena.**
 
+3. Nel riquadro sul lato destro dello schermo, selezionare Applica a X altre istanze **del file** e quindi scegliere **Annulla.**
+
+### <a name="restore-file-from-quarantine"></a>Ripristinare un file dalla quarantena
+
+È possibile eseguire il rollback e rimuovere un file dalla quarantena se si è stabilito che è pulito dopo un'indagine. Esegui il comando seguente in ogni dispositivo in cui il file è stato messo in quarantena.
+
+1. Apri un prompt della riga di comando con privilegi elevati nel dispositivo:
+
+   1. Passare a **Start** e digitare _cmd_.
+
+   1. Fai clic con il **pulsante destro del mouse** su Prompt dei comandi e scegli Esegui come **amministratore.**
+
+2. Immettere il comando seguente e premere **INVIO**:
+
+    ```console
+    "ProgramFiles%\Windows Defender\MpCmdRun.exe" –Restore –Name EUS:Win32/CustomEnterpriseBlock –All
+    ```
+
+    > [!NOTE]
+    > In alcuni scenari, **ThreatName** può essere visualizzato come: `EUS:Win32/
+CustomEnterpriseBlock!cl` . Defender for Endpoint ripristini tutti i file bloccati personalizzati messi in quarantena su questo dispositivo negli ultimi 30 giorni.
+
+    > [!IMPORTANT]
+    > Un file messo in quarantena come potenziale minaccia di rete potrebbe non essere recuperabile. Se un utente tenta di ripristinare il file dopo la quarantena, tale file potrebbe non essere accessibile. Ciò può essere dovuto al fatto che il sistema non ha più credenziali di rete per accedere al file. In genere, questo è il risultato di un accesso temporaneo a una cartella condivisa o di sistema e i token di accesso sono scaduti.
+
 3. Nel riquadro sul lato destro dello schermo, selezionare Applica a X altre istanze **del file** e quindi scegliere **Annulla.** 
+
 
 ## <a name="part-3-review-or-define-exclusions"></a>Parte 3: Esaminare o definire le esclusioni
 

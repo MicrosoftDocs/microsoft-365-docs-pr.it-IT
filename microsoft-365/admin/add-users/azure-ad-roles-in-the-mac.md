@@ -16,12 +16,12 @@ ms.collection:
 ms.custom:
 - AdminSurgePortfolio
 description: Gestisci questi ruoli di amministratore di Azure nell’interfaccia di amministrazione di Microsoft 365
-ms.openlocfilehash: b07174763384150a7ae8cda6709f5d0ec5cb40ec
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 72835a0f9fdf9a15fc3ffa07c0fab6ca6f0260cb
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50904493"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51759943"
 ---
 # <a name="azure-active-directory-roles-in-the-microsoft-365-admin-center"></a>Ruoli di Azure Active Directory nell'interfaccia di amministrazione di Microsoft 365
 
@@ -29,15 +29,11 @@ L'interfaccia di amministrazione di Microsoft 365 consente di gestire più di 30
 
 Un utente a cui è assegnato un ruolo di amministratore avrà lo stesso livello di accesso a tutti i servizi cloud a cui è abbonata l'organizzazione, indipendentemente da come viene assegnato il ruolo, con l'interfaccia di amministrazione di Microsoft 365, nel portale di Azure o con il modulo di Azure AD per Windows PowerShell.
 
-::: moniker range="o365-worldwide"
-
 Nell'interfaccia di amministrazione di Microsoft 365 è possibile passare a **Ruoli** e quindi selezionare un ruolo per aprire il relativo riquadro dei dettagli. Selezionare la scheda **Autorizzazioni** per visualizzare l'elenco dettagliato delle autorizzazioni di cui dispongono gli amministratori a cui è assegnato quel ruolo. Selezionare la scheda **Assegnate** o **Amministratori assegnati** per aggiungere utenti ai ruoli. Per altre informazioni sull'assegnazione di ruoli nell'interfaccia di amministrazione di Microsoft 365, vedere [Assegnare ruoli di amministratore](assign-admin-roles.md).
-
-::: moniker-end
 
 ## <a name="all-azure-ad-roles"></a>Tutti i ruoli di Azure AD
 
-Ecco un elenco dei ruoli di amministratore disponibili nell'interfaccia di amministrazione di Microsoft 365. Cerchi le descrizioni dettagliate dei ruoli di amministratore di Microsoft 365? Vedere [Informazioni sui ruoli di amministratore](./about-admin-roles.md?view=o365-worldwide)
+Ecco un elenco dei ruoli di amministratore disponibili nell'interfaccia di amministrazione di Microsoft 365. Cerchi le descrizioni dettagliate dei ruoli di amministratore di Microsoft 365? Vedere [Informazioni sui ruoli di amministratore](./about-admin-roles.md)
 
 |Ruolo di amministratore     |Descrizione  |
 |---------|---------|

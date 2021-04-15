@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: a6fe207773d2682ab68392269ac915030c67fa4b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: f408ed0fe77034f69fc6e51ada75012f752ee2e7
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063442"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51759823"
 ---
 # <a name="get-started-with-microsoft-365-for-defender"></a>Introduzione a Microsoft 365 per Defender
 
@@ -32,8 +32,6 @@ ms.locfileid: "51063442"
 
 **Si applica a:**
 - Microsoft 365 Defender
-
-[!INCLUDE [Prerelease](../includes/prerelease.md)]
 
 Microsoft 365 Defender è un'esperienza unificata in cui è possibile monitorare e gestire la sicurezza nell'organizzazione. Con gli avvisi integrati tra identità, endpoint, dati, app, posta elettronica e strumenti di collaborazione, l'analisi e la risposta alle minacce si verificano ora in una posizione centrale. 
 
@@ -58,9 +56,9 @@ L'attivazione di Microsoft 365 Defender e la distribuzione dei servizi consenton
 
 | Funzionalità | Descrizione |
 | ------ | ------ |
-| Microsoft Defender ATP | Suite di endpoint protection basata su potenti sensori comportamentali, analisi cloud e intelligence per le minacce |
+| Microsoft Defender per endpoint | Suite di endpoint protection basata su potenti sensori comportamentali, analisi cloud e intelligence per le minacce |
 |Microsoft Defender per Office 365 | Protezione avanzata per le app e i dati in Office 365, inclusi la posta elettronica e altri strumenti di collaborazione |
-| Microsoft Defender per identità | Difendersi da minacce avanzate, identità compromesse e utenti malintenzionati che usano segnali di Active Directory correlati |
+| Che cosa è Microsoft Defender per identità? | Difendersi da minacce avanzate, identità compromesse e utenti malintenzionati che usano segnali di Active Directory correlati |
 | Microsoft Cloud App Security | Identificare e contrastare le minacce informatiche nei servizi cloud Microsoft e di terze parti |
 
 

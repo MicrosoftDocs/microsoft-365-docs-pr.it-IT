@@ -23,23 +23,16 @@ search.appverid:
 - GEA150
 ms.assetid: d6466f0d-5d13-464a-adcb-00906ae87029
 description: Informazioni su come configurare e usare Microsoft 365 su computer, telefono e tablet.
-ms.openlocfilehash: 74821886832e699a90d9a54a9b8c7ce9a8cfab75
-ms.sourcegitcommit: 1244bbc4a3d150d37980cab153505ca462fa7ddc
+ms.openlocfilehash: 0bc2478375cdec231a00bade933680cb69578126
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51222028"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51755643"
 ---
-# <a name="get-started"></a>Introduzione
+# <a name="get-started"></a>Per iniziare
 
 L'organizzazione ha recentemente ottenuto Microsoft 365 e ora è necessario usarlo per iniziare a leggere la posta elettronica, condividere documenti e altro ancora. Informazioni su come configurare e usare Microsoft 365 su computer, telefono e tablet.
-  
-::: moniker range="o365-worldwide"
-
-****
-
-
-::: moniker-end
 
 ## <a name="training-resources-for-your-users"></a>Risorse di formazione per gli utenti
 

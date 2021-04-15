@@ -22,12 +22,12 @@ search.appverid:
 - BCS160
 - MET150
 description: Informazioni su come spostare l'azienda in Microsoft 365 Business Premium da Office 365 E3.
-ms.openlocfilehash: ffb82fa40f05383260ac1b97ed0bdf5f2f30c1df
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: f2b7962918186f4a1063c5a66596135c2972ec71
+ms.sourcegitcommit: 07dea2aa98daf0c4086f8590375167830027c802
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578328"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "51750001"
 ---
 # <a name="migrating-from-office-365-e3-to-microsoft-365-business-premium"></a>Migrazione da Office 365 E3 a Microsoft 365 Business Premium
 
@@ -49,8 +49,8 @@ Questa tabella mostra le differenze tra Microsoft 365 Business Premium e Office 
 | OneDrive for Business    | Limite di archiviazione di 1 TB per utente    | Illimitati | 
 | Yammer, SharePoint Online, Planner, Stream    | ![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)    | ![Incluso in Office 365 E3](../media/check-mark.png) | 
 | StaffHub    | ![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)    | ![Incluso in Office 365 E3](../media/check-mark.png) | 
-| Outlook Customer Manager    | ![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)    | | 
-| **Threat Protection**        | | | 
+| MileIQ    | ![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)    | | 
+| **Protezione dalle minacce**        | | | 
 | Defender per Office 365 Piano 1 | ![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)    | Non incluso, ma può essere aggiunto in | 
 | **Gestione delle identità**        | | | 
 | Reimpostazione della password self-service per gli account ibridi di Azure Active Directory (Azure AD), Autenticazione a più fattori (MFA) di Azure AD, Accesso condizionale, writeback delle password per le identità locali|     ![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)    |  | 
@@ -60,7 +60,7 @@ Questa tabella mostra le differenze tra Microsoft 365 Business Premium e Office 
 | Aggiornare i diritti a Windows 10 Pro dalle licenze Win 7/8.1 Pro|     ![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)    || 
 | **Protezione delle informazioni**        | | |
 |Prevenzione della perdita di dati di Office 365|    ![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)|![Incluso in Office 365 E3](../media/check-mark.png)|
-|Azure Information Protection Piano 1, Applicazione Bitlocker|![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)||
+|Azure Information Protection Piano 1, applicazione BitLocker|![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)||
 |Azure Information Protection Piano 1, etichette di riservatezza|![Incluso in Microsoft 365 Business Premium](../media/check-mark.png)||
 |**Licenza Accesso client (diritti CAL)**|||
 |Enterprise CAL Suite (Exchange, SharePoint, Skype)||![Incluso in Office 365 E3](../media/check-mark.png)|
