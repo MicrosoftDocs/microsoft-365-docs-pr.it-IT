@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 726a85969dab715a1b6244f14d1bf0259cf301e8
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 4c44e2c73eabcb89c178235bc3ce6738d2322dfa
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163376"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768987"
 ---
 # <a name="contact-microsoft-defender-for-endpoint-support"></a>Contattare il supporto di Microsoft Defender per endpoint
 
@@ -29,7 +29,7 @@ ms.locfileid: "51163376"
 
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)
@@ -79,8 +79,8 @@ Nel caso in cui gli articoli suggeriti non siano sufficienti, è possibile aprir
 
 Scopri come aprire i ticket di supporto contattando defender per il supporto endpoint. 
 
-
-
+> [!Note]
+> Se hai un contratto di supporto con Microsoft, nel widget verrà visualizzato il tag premier. In caso contrario, contattare il proprio account manager Microsoft.
 
 ### <a name="contact-support"></a>Contattare il supporto
 Questa opzione è disponibile facendo clic sull'icona che ha l'aspetto di una cuffia. Verrà quindi visualizzata la pagina seguente per inviare il caso di supporto:
@@ -95,5 +95,5 @@ Questa opzione è disponibile facendo clic sull'icona che ha l'aspetto di una cu
 
 
 ## <a name="related-topics"></a>Argomenti correlati
-- [Risolvere i problemi relativi ai servizi](troubleshoot-mdatp.md)
-- [Controllare l'integrità del servizio](service-status.md)
+- [Risolvere i problemi dei servizi](troubleshoot-mdatp.md)
+- [Verificare l'integrità dei servizi](service-status.md).

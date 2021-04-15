@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: ae7dbea7d476e8a8f6198378e1d1bb29e24c37a2
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 95c87330eec3cb557e5fea96148d626b7e0ee4b3
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688346"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768915"
 ---
 # <a name="protect-your-network"></a>Proteggere la rete
 
@@ -35,9 +35,9 @@ ms.locfileid: "51688346"
 
 La protezione di rete consente di ridurre la superficie di attacco dei dispositivi da eventi basati su Internet. Impedisce ai dipendenti di utilizzare qualsiasi applicazione per accedere a domini pericolosi che potrebbero ospitare tentativi di phishing, exploit e altri contenuti dannosi su Internet. La protezione di rete espande l'ambito di [Microsoft Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-smartscreen/microsoft-defender-smartscreen-overview) per bloccare tutto il traffico HTTP in uscita che tenta di connettersi a origini con reputazione scarsa (in base al dominio o al nome host).
 
-La protezione di rete è supportata in Windows, a partire da Windows 10 versione 1709. La protezione di rete non è ancora supportata in altri sistemi operativi, ma la protezione Web è supportata con il nuovo Microsoft Edge basato su Chromium. Per ulteriori informazioni, vedere [Protezione Web.](web-protection-overview.md)
+La protezione di rete è supportata in Windows, a partire da Windows 10 versione 1709. La protezione di rete non è ancora supportata in altri sistemi operativi, ma la protezione Web è supportata tramite il nuovo Microsoft Edge basato su Chromium. Per ulteriori informazioni, vedere [Protezione Web.](web-protection-overview.md)
 
-la protezione di rete estende la protezione della [protezione Web](web-protection-overview.md) al livello del sistema operativo. Fornisce funzionalità di protezione Web in Edge ad altri browser supportati e applicazioni non browser. Inoltre, la protezione di rete fornisce visibilità e blocco degli indicatori di compromissione (I/O) se usati con il rilevamento [e la risposta degli endpoint.](overview-endpoint-detection-response.md) Ad esempio, la protezione di rete funziona con [gli indicatori personalizzati](manage-indicators.md).
+La protezione di rete estende la protezione della [protezione Web](web-protection-overview.md) al livello del sistema operativo. Fornisce funzionalità di protezione Web in Edge ad altri browser supportati e applicazioni non browser. Inoltre, la protezione di rete fornisce visibilità e blocco degli indicatori di compromissione (I/O) se usati con il rilevamento [e la risposta degli endpoint.](overview-endpoint-detection-response.md) Ad esempio, la protezione di rete funziona con [gli indicatori personalizzati](manage-indicators.md).
 
 Per ulteriori informazioni su come abilitare la protezione di rete, vedere [Enable network protection](enable-network-protection.md). Usa Criteri di gruppo, PowerShell o CSP MDM per abilitare e gestire la protezione di rete nella rete.
 

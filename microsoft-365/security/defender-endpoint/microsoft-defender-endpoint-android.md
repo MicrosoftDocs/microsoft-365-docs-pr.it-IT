@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender ATP su Android
+title: Microsoft Defender per Endpoint su Android
 ms.reviewer: ''
-description: Descrive come installare e usare Microsoft Defender ATP per Android
+description: Descrive come installare e usare Microsoft Defender per Endpoint in Android
 keywords: microsoft, defender, atp, android, installazione, distribuire, disinstallazione, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8311cb703bc5232e1421d19892fec9cdbc94b052
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: 8a78fc7e07f89c2e13a698ee526403989f26dd65
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698194"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768843"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android"></a>Microsoft Defender per Endpoint su Android
 

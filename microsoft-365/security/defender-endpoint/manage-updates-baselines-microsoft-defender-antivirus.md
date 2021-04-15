@@ -7,19 +7,19 @@ ms.prod: m365-security
 ms.mktglfcycl: manage
 ms.sitesec: library
 ms.pagetype: security
-ms.localizationpriority: medium
+localization_priority: normal
 author: denisebmsft
 ms.author: deniseb
 ms.custom: nextgen
 ms.reviewer: pahuijbr
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: bf027dd7f5fad032d57d2dd0b686ccd129f568c7
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b70cf96cde7d4dff8e2a4db6ce2469090dba7eb1
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51690391"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765612"
 ---
 # <a name="manage-microsoft-defender-antivirus-updates-and-apply-baselines"></a>Gestire gli aggiornamenti di Microsoft Defender Antivirus e applicare le linee di base
 
@@ -454,7 +454,7 @@ Per ulteriori informazioni, vedere [Microsoft Defender update for Windows operat
 ### <a name="fixes"></a>Correzioni
 - Nessuno
 
-### <a name="additional-information"></a>Ulteriori informazioni
+### <a name="additional-information"></a>Informazioni aggiuntive
 - Nessuno  
 <br/>
 </details><details>
@@ -468,7 +468,7 @@ Per ulteriori informazioni, vedere [Microsoft Defender update for Windows operat
 ### <a name="fixes"></a>Correzioni
 - Nessuno
 
-### <a name="additional-information"></a>Ulteriori informazioni
+### <a name="additional-information"></a>Informazioni aggiuntive
 - Nessuno  
 <br/>
 </details><details>
@@ -482,7 +482,7 @@ Per ulteriori informazioni, vedere [Microsoft Defender update for Windows operat
 ### <a name="fixes"></a>Correzioni
 - Nessuno
 
-### <a name="additional-information"></a>Ulteriori informazioni
+### <a name="additional-information"></a>Informazioni aggiuntive
 - Nessuno  
 <br/>
 </details><details>
@@ -496,7 +496,7 @@ Per ulteriori informazioni, vedere [Microsoft Defender update for Windows operat
 ### <a name="fixes"></a>Correzioni
 - Nessuno
 
-### <a name="additional-information"></a>Ulteriori informazioni
+### <a name="additional-information"></a>Informazioni aggiuntive
 - Nessuno  
 <br/>
 </details><details>
@@ -510,7 +510,7 @@ Per ulteriori informazioni, vedere [Microsoft Defender update for Windows operat
 ### <a name="fixes"></a>Correzioni
 - Nessuno
 
-### <a name="additional-information"></a>Ulteriori informazioni
+### <a name="additional-information"></a>Informazioni aggiuntive
 - Nessuno  
 <br/>
 </details><details>
@@ -524,7 +524,7 @@ Per ulteriori informazioni, vedere [Microsoft Defender update for Windows operat
 ### <a name="fixes"></a>Correzioni
 - Nessuno
 
-### <a name="additional-information"></a>Ulteriori informazioni
+### <a name="additional-information"></a>Informazioni aggiuntive
 - Firme aggiornate di Microsoft Defender Antivirus  
 <br/>
 </details><details>
@@ -538,7 +538,7 @@ Per ulteriori informazioni, vedere [Microsoft Defender update for Windows operat
 ### <a name="fixes"></a>Correzioni
 - Nessuno
 
-### <a name="additional-information"></a>Ulteriori informazioni
+### <a name="additional-information"></a>Informazioni aggiuntive
 - Nessuno  
 <br/>
 </details><details>
@@ -552,7 +552,7 @@ Per ulteriori informazioni, vedere [Microsoft Defender update for Windows operat
 ### <a name="fixes"></a>Correzioni
 - Nessuno
 
-### <a name="additional-information"></a>Ulteriori informazioni
+### <a name="additional-information"></a>Informazioni aggiuntive
 - È stato aggiunto il supporto per le immagini di installazione del sistema operativo Windows 10 RS1 o versioni successive.  
 <br/>
 </details>

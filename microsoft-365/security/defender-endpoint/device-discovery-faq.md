@@ -12,7 +12,7 @@ f1.keywords:
 - NOCSH
 ms.author: macapara
 author: mjcaparas
-ms.localizationpriority: medium
+localization_priority: normal
 manager: dansimp
 audience: ITPro
 ms.collection:
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 7165d943fd39e298894531f1dabdec408144898d
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: b3fef3479fa2d36806e6657b31f5152c54b9251f
+ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698439"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51765000"
 ---
 # <a name="device-discovery-frequently-asked-questions"></a>Domande frequenti sull'individuazione dei dispositivi
 
@@ -70,7 +70,7 @@ Puoi disattivare l'individuazione dei dispositivi tramite la [pagina Funzionalit
  Poiché l'individuazione dei dispositivi usa metodi passivi per individuare i dispositivi nella rete, qualsiasi dispositivo che comunica con i dispositivi onboarded nella rete aziendale può essere individuato ed elencato nell'inventario. Puoi escludere solo i dispositivi dal probe attivo.
 
 ## <a name="how-frequent-is-the-active-probing"></a>Quanto è frequente il sondaggio attivo?
- I dispositivi verranno attivamente sondati quando vengono osservate modifiche alle caratteristiche dei dispositivi e una volta alla settimana per assicurarsi che le informazioni esistenti siano aggiornate.
+ I dispositivi verranno attivamente sondati quando vengono osservate modifiche nelle caratteristiche dei dispositivi (ogni 1-3 settimane) per verificare che le informazioni esistenti siano aggiornate.
 
 ## <a name="my-security-tool-raised-alert-on-unicastscannerps1-or-port-scanning-activity-initiated-by-it-what-should-i-do"></a>Lo strumento di sicurezza ha generato un avviso UnicastScanner.ps1'attività di scansione delle porte avviata da esso, cosa devo fare?
  Gli script di sondaggio attivi sono firmati da Microsoft e sono sicuri. È possibile aggiungere il percorso seguente all'elenco di esclusione: `C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\*.ps`

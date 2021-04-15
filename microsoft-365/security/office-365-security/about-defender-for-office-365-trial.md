@@ -18,12 +18,12 @@ ms.custom:
 - seo-marvel-apr2020
 ROBOTS: NOINDEX
 description: Gli amministratori possono conoscere la modalità di valutazione di Microsoft Defender per Office 365
-ms.openlocfilehash: 1a86a73dbdb8f2549fb5dc03ece56497c5ff0b1e
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: ba01fa45ca9a4e2e5b3597378bf7ddafc8be3f56
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599796"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768747"
 ---
 # <a name="about-the-microsoft-defender-for-office-365-trial"></a>Informazioni sulla versione di valutazione di Microsoft Defender per Office 365
 

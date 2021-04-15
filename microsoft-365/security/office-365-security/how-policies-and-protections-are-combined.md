@@ -17,12 +17,12 @@ ms.custom:
 description: Gli amministratori possono ottenere informazioni sull'ordine delle applicazioni di protezione in Exchange Online Protection (EOP) e su come il valore di priorità nei criteri di protezione determina quale criterio viene applicato.
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 3419cba5781e7ab1042f7312c721069d88fb8767
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b36e66f095ff81f551a55d2dc2af0693f8b3455a
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687650"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51769011"
 ---
 # <a name="order-and-precedence-of-email-protection"></a>Ordine e precedenza della protezione della posta elettronica
 
@@ -41,6 +41,8 @@ Esistono due fattori principali che determinano quale criterio viene applicato a
 
 - **La priorità del tipo di protezione della** posta elettronica : Questo ordine non è configurabile ed è descritto nella tabella seguente:
 
+  <br>
+
   ****
 
   |Priority|Protezione della posta elettronica|Categoria|Dove gestire|
@@ -57,19 +59,21 @@ Esistono due fattori principali che determinano quale criterio viene applicato a
 
   <sup>\*</sup> Queste funzionalità sono disponibili solo nei criteri anti-phishing in Microsoft Defender per Office 365.
 
-- La **priorità** del criterio : per ogni tipo di protezione (protezione da posta indesiderata, antimalware, anti-phishing e così via), esiste un criterio predefinito che si applica a tutti gli utenti, ma è possibile creare criteri personalizzati che si applicano a utenti specifici. Ogni criterio personalizzato ha un valore di priorità che determina l'ordine in cui vengono applicati i criteri. Il criterio predefinito viene sempre applicato per ultimo.
+- Priorità del **criterio:** per ogni tipo di criterio (protezione da posta indesiderata, antimalware, anti-phishing e così via), esiste un criterio predefinito che si applica a tutti gli utenti, ma è possibile creare criteri personalizzati che si applicano a utenti specifici. Ogni criterio personalizzato ha un valore di priorità che determina l'ordine in cui vengono applicati i criteri. Il criterio predefinito viene sempre applicato per ultimo.
 
   Se un utente è definito in più criteri dello stesso tipo, viene applicato solo il criterio con la priorità più alta. Gli eventuali criteri rimanenti di quel tipo non vengono valutati per l'utente (incluso il criterio predefinito).
 
 Si considerino ad esempio i seguenti criteri anti-phishing in Microsoft Defender per Office 365 che si applicano agli stessi utenti e un messaggio identificato sia come rappresentazione utente che come spoofing:
 
-  ****
+<br>
 
-  |Nome criterio|Priority|Rappresentazione utente|Anti-spoofing|
-  |---|---|---|---|
-  |Criterio A|1|Attivato|Disattivato|
-  |Criterio B|2|Disattivato|Attivato|
-  |
+****
+
+|Nome criterio|Priority|Rappresentazione utente|Anti-spoofing|
+|---|---|---|---|
+|Criterio A|1|Attivato|Disattivato|
+|Criterio B|2|Disattivato|Attivato|
+|
 
 1. Il messaggio viene contrassegnato e considerato spoofing, perché lo spoofing ha una priorità più alta (4) rispetto alla rappresentazione dell'utente (5).
 2. Il criterio A viene applicato agli utenti perché ha una priorità più alta rispetto al criterio B.

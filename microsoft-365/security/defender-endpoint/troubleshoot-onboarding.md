@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 193e7e634ecf8407816db10c820edcd241b94b12
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 4f3b2b54370e3481699a540dd8fd2acc30be7514
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760165"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768879"
 ---
 # <a name="troubleshoot-microsoft-defender-for-endpoint-onboarding-issues"></a>Risolvere i problemi di onboarding di Microsoft Defender per endpoint
 
@@ -302,8 +302,8 @@ Se la verifica ha esito negativo e l'ambiente utilizza un proxy per connettersi 
 
 Se si verificano problemi durante l'onboarding di un server, eseguire la procedura di verifica seguente per risolvere i possibili problemi.
 
-- [Verificare che Microsoft Monitoring Agent (MMA) sia installato e configurato per segnalare i dati del sensore al servizio](configure-server-endpoints.md#server-mma)
-- [Verificare che le impostazioni del proxy del server e della connettività Internet siano configurate correttamente](configure-server-endpoints.md#server-proxy)
+- [Verificare che Microsoft Monitoring Agent (MMA) sia installato e configurato per segnalare i dati del sensore al servizio](configure-server-endpoints.md)
+- [Verificare che le impostazioni del proxy del server e della connettività Internet siano configurate correttamente](configure-server-endpoints.md)
 
 Potrebbe inoltre essere necessario controllare quanto segue:
 

@@ -22,12 +22,12 @@ ms.custom:
 - seo-marvel-mar2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 6dfa22b2afb33c318eae8937888b5b75a1742938
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 9850506771f53b125c08b1df2149ee024191d823
+ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599465"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "51768867"
 ---
 # <a name="automated-investigation-and-response-air-in-microsoft-defender-for-office-365"></a>Analisi e risposta automatizzate (AIR) in Microsoft Defender per Office 365
 
@@ -123,7 +123,7 @@ Le autorizzazioni vengono concesse tramite determinati ruoli, ad esempio quelli 
 
 ## <a name="changes-are-coming-soon-in-your-security-center"></a>Le modifiche saranno presto disponibili nel centro sicurezza
 
-Se si usano già le funzionalità AIR in Microsoft Defender per Office 365, si stanno per vedere alcune modifiche nel Centro sicurezza [Microsoft 365 migliorato.](../defender/overview-security-center.md) 
+Se si usano già le funzionalità AIR in Microsoft Defender per Office 365, si stanno per vedere alcune modifiche nel Centro sicurezza [Microsoft 365 migliorato.](../defender/overview-security-center.md)
 
 :::image type="content" source="../../media/m3d-action-center-unified.png" alt-text="Centro notifiche unificato":::
 
