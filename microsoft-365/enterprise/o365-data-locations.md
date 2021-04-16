@@ -16,24 +16,20 @@ ms.custom:
 - Ent_TLGs
 ms.assetid: 706d5449-45e5-4b0c-a012-ab60501899ad
 description: 'Determinare dove sono archiviati i dati dei clienti Microsoft 365 in tutto il mondo '
-ms.openlocfilehash: a93f83e7efafa06aa65675342471c26f1b197864
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 4c55010508f2b5bde1641b9b7552e4acb95a12d3
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920789"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760237"
 ---
-<!--
-Note to new owner: Links in the Notes and FAQ sections need to be added from the source document at https://microsoft.sharepoint.com/:w:/t/golocalteam/Ebv6_Lw6FvNKucfA1eESTPUBy6O1MdvWEeT-L8O5a2HsIg?e=4%3AUfF1Uj&at=9&xsdata=MDR8MDF8am9zZXBoZEBtaWNyb3NvZnQuY29tfGM1ZTg1ODI0ZWRmMTRlN2E3MDkzMDhkNzgzNDMxYTczfDcyZjk4OGJmODZmMTQxYWY5MWFiMmQ3Y2QwMTFkYjQ3fDF8MHw2MzcxMjIxOTY1MzQ5NjM5NDl8VW5rbm93bnxUV0ZwYkdac2IzZDhleUpXSWpvaU1DNHdMakF3TURBaUxDSlFJam9pVjJsdU16SWlMQ0pCVGlJNklrMWhhV3dpTENKWFZDSTZNbjA9fC0x&sdata=MkxOUXhlZEdyR0I1SzBvd044d2hkd2RPaGN2RUpaS09jMkZTcys0dkZQRT0%3D
--->
-
 # <a name="where-your-microsoft-365-customer-data-is-stored"></a>Dove sono archiviati i dati del tuo cliente Microsoft 365
 
 Le tabelle seguenti mostrano le posizioni in cui sono archiviati i dati inattivi dei clienti per i servizi di Microsoft 365 in tutte le aree geografiche del cloud globale di Microsoft. Espandere la posizione del paese in cui si trova l'indirizzo di fatturazione per scoprire dove verranno archiviati i dati dei clienti per ogni servizio.
 
 Se l'organizzazione si trova nell'Unione europea, per altre informazioni, vedere [Posizioni dei dati per l'Unione europea](EU-data-storage-locations.md). 
 
-I clienti possono visualizzare informazioni sulla posizione di dati specifici del tenant nell'interfaccia di amministrazione di Microsoft 365 in **Impostazioni | Impostazioni organizzazione | Profilo organizzazione | Percorso dati**.
+I clienti possono visualizzare informazioni sulla posizione di dati specifici del tenant nell'interfaccia di amministrazione di Microsoft 365 in **Impostazioni | Impostazioni organizzazione | Profilo organizzazione | Percorso dati**. Se è [stato richiesto di passare a una nuova geo](request-your-data-move.md), le informazioni sulla posizione dei dati nell’interfaccia di amministrazione di Microsoft 365 potrebbero mostrare solo il nuovo geo anche se alcuni dati potrebbero essere archiviati temporaneamente nell’area geografica precedente durante la transizione. 
 
 Per impostazione predefinita, i nuovi tenant di Microsoft 365 vengono ospitati in un'area geografica in base al paese della transazione associata al primo abbonamento del tenant.
 
