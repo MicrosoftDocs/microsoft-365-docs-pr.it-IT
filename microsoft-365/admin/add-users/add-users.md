@@ -21,21 +21,14 @@ search.appverid:
 - MET150
 description: Informazioni su come aggiungere utenti e assegnare licenze a Microsoft 365 contemporaneamente.
 ms.date: 07/01/2020
-ms.openlocfilehash: 3c752bd12c0aeb3806ad7d5d90373aad13730944
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: a7c5fcf1a129a1d434b6e641688ce4c5d234817d
+ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50906301"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "51760003"
 ---
 # <a name="add-users-and-assign-licenses-at-the-same-time"></a>Aggiungere utenti e assegnare licenze contemporaneamente
-
-::: moniker range="o365-21vianet"
-
-> [!NOTE]
-> L'interfaccia di amministrazione sta cambiando. Se alcuni dettagli non corrispondono a quelli presentati qui, vedere [Informazioni sulla nuova interfaccia di amministrazione di Microsoft 365](../microsoft-365-admin-center-preview.md?preserve-view=true&view=o365-21vianet).
-
-::: moniker-end
 
 Per poter accedere a [Microsoft 365 per le aziende](https://www.microsoft.com/microsoft-365/business), è necessario che ogni persona del team abbia un account utente. Il modo più semplice per aggiungere account utente consiste nell'aggiungerli uno alla volta nell'interfaccia di amministrazione di Microsoft 365. Dopo questo passaggio, gli utenti hanno le licenze di Microsoft 365, le credenziali di accesso e le cassette postali di Microsoft 365.
 
@@ -52,10 +45,25 @@ Per aggiungere utenti e assegnare le licenze è necessario essere un amministrat
 
 ## <a name="add-users-one-at-a-time"></a>Aggiungere utenti uno alla volta
 
-::: moniker range="o365-worldwide"
+ ::: moniker range="o365-worldwide"
 
-1. Passare all'interfaccia di amministrazione all'indirizzo <https://admin.microsoft.com>.
-2. Andare a **Utenti** > **Utenti attivi** e selezionare **Aggiungi un utente**.
+1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=2024339" target="_blank">https://admin.microsoft.com</a>.
+
+::: moniker-end
+
+::: moniker range="o365-germany"
+
+1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=848041" target="_blank">https://portal.office.de</a>.
+
+::: moniker-end
+
+::: moniker range="o365-21vianet"
+
+1. Passare all'interfaccia di amministrazione all'indirizzo <a href="https://go.microsoft.com/fwlink/p/?linkid=850627" target="_blank">https://portal.partner.microsoftonline.cn</a>.
+
+::: moniker-end 
+
+2. Andare a **Utenti**  >  **Utenti attivi** e selezionare **Aggiungi un utente**.
 3. Nel riquadro **Configura le impostazioni di base**, inserire le informazioni di base dell'utente e quindi selezionare **Avanti**.
     - **Nome** Immettere il nome e il cognome, il nome visualizzato e il nome utente.
     - **Dominio** Scegliere il dominio per l'account utente. Se ad esempio il nome utente è Pio e il suo dominio è contoso.com, questo utente eseguirà l'accesso digitando pio@contoso.com.
@@ -65,36 +73,6 @@ Per aggiungere utenti e assegnare le licenze è necessario essere un amministrat
 4. Nel riquadro **Assegna licenze di prodotto**, selezionare la posizione e la licenza appropriata per l'utente. Se non ci sono licenze disponibili, è sempre possibile aggiungere un utente e acquistare licenze aggiuntive. Espandere **App** e selezionare o deselezionare le app per cui l'utente ha una licenza. Selezionare **Avanti**.
 5. Nel riquadro **Impostazioni facoltative** espandere **Ruoli** per rendere l'utente amministratore. Espandere **informazioni profilo** per aggiungere altre informazioni sull'utente.
 6. Selezionare **Avanti**, esaminare le impostazioni del nuovo utente, apportare le modifiche desiderate, quindi selezionare **Completa l'aggiunta**, quindi **Chiudi**.
-
-::: moniker-end
-
-::: moniker range="o365-germany"
-
-1. Passare all'interfaccia di amministrazione all'indirizzo <https://portal.office.de/adminportal>.
-2. Andare a **Utenti** > **Utenti attivi** e selezionare **Aggiungi un utente**.
-3. Inserire le informazioni seguenti nel riquadro **Nuovo utente**. Al termine, selezionare **Aggiungi**.
-    - **Nome** Inserire il nome, il cognome, il nome visualizzato e il nome utente.
-    - **Dominio** Se ad esempio il nome utente è Pio e il suo dominio è contoso.com, questo utente eseguirà l'accesso digitando pio@contoso.com.
-    - **Informazioni di contatto** Espandere per inserire il numero di telefono cellulare, l'indirizzo e così via.
-    - **Password** Usare la password generata automaticamente o espandere per specificare una password complessa per l'utente. L'utente dovrà cambiare la password dopo 90 giorni. Oppure si può selezionare **Chiedi all'utente di cambiare la password al primo accesso**.
-    - **Ruoli** Espandere se si vuole impostare l'utente come amministratore.
-    - **Licenze di prodotto** Espandere questa sezione e selezionare la licenza appropriata. Se non ci sono licenze disponibili, è sempre possibile aggiungere un utente e acquistare licenze aggiuntive.
-
-::: moniker-end
-
-::: moniker range="o365-21vianet"
-
-1. Passare all'interfaccia di amministrazione all'indirizzo <https://portal.partner.microsoftonline.cn>.
-2. Andare a **Utenti** > **Utenti attivi** e selezionare **Aggiungi un utente**.
-3. Inserire le informazioni seguenti nel riquadro **Nuovo utente**. Al termine, selezionare **Aggiungi**.
-    - **Nome** Inserire il nome, il cognome, il nome visualizzato e il nome utente.
-    - **Dominio** Se ad esempio il nome utente è Pio e il suo dominio è contoso.com, questo utente eseguirà l'accesso digitando pio@contoso.com.
-    - **Informazioni di contatto** Espandere per inserire il numero di telefono cellulare, l'indirizzo e così via.
-    - **Password** Usare la password generata automaticamente o espandere per specificare una password complessa per l'utente. L'utente dovrà cambiare la password dopo 90 giorni. Oppure si può selezionare **Chiedi all'utente di cambiare la password al primo accesso**.
-    - **Ruoli** Espandere se si vuole impostare l'utente come amministratore.
-    - **Licenze di prodotto** Espandere questa sezione e selezionare la licenza appropriata. Se non ci sono licenze disponibili, è sempre possibile aggiungere un utente e acquistare licenze aggiuntive.
-
-::: moniker-end
 
 ## <a name="add-multiple-users-at-the-same-time"></a>Aggiungere più utenti contemporaneamente
 
