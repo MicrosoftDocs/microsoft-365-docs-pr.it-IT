@@ -15,12 +15,12 @@ ms.collection:
 - Strat_O365_Enterprise
 - m365initiative-coredeploy
 description: Panoramica della connettività di rete nell'interfaccia di amministrazione di Microsoft 365 (anteprima)
-ms.openlocfilehash: cc01f2a22f6f8c89d0ae8fcd8b53498790930d3e
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 99c05c18f3825680824854f86e469ab4aa8bbcba
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768627"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860864"
 ---
 # <a name="network-connectivity-in-the-microsoft-365-admin-center-preview"></a>Connettività di rete nell'interfaccia di amministrazione di Microsoft 365 (anteprima)
 
@@ -63,7 +63,7 @@ I campioni di misurazione e le posizioni degli uffici dovrebbero iniziare a comp
 
 Per questa opzione, non sono necessari né i servizi di Wi-Fi Windows. La versione di OneDrive per Windows deve essere aggiornata e installata in almeno un computer nel percorso.
 
-È inoltre necessario aggiungere percorsi nella pagina **Percorsi** o importarli da un file CSV. Le posizioni aggiunte devono includere le informazioni sulla subnet LAN dell'ufficio.
+È inoltre necessario aggiungere percorsi nella **pagina Percorsi** o importarli da un file CSV. Le posizioni aggiunte devono includere le informazioni sulla subnet LAN dell'ufficio.
 
 Questa opzione consente di definire più uffici all'interno di una città.
 
@@ -121,6 +121,14 @@ La pagina di panoramica mostra anche la valutazione della rete per il cliente co
 
 > [!div class="mx-imgBorder"]
 > ![Percorsi di informazioni dettagliate di rete](../media/m365-mac-perf/m365-mac-perf-locations.png)
+
+## <a name="remote-worker-assessment-and-user-connection-metrics"></a>Valutazione dei lavoratori remoti e metriche di connessione utente
+
+I log del traffico di rete vengono classificati come utenti remoti o in sede e le percentuali vengono mostrate nella sezione delle metriche di connessione utente del riquadro di panoramica. Per le città in cui si dispone di utenti remoti, è possibile trovare il punteggio di valutazione della rete remota specifico per la posizione quando si apre la pagina di tale posizione. L'elenco delle posizioni avrà sedi di uffici e città di lavoro remote, che possono essere filtrate e ordinate. Forniamo il punteggio di valutazione dei lavoratori remoti, con la suddivisione dei punti per Exchange, SharePoint e Teams.
+
+Le informazioni dettagliate sulla rete degli utenti di casa vengono aggregate e segnalate a livello di città e limitate a città con un minimo di 5 dipendenti remoti. Non stiamo identificando singoli dipendenti che lavorano da casa.
+
+Le posizioni vengono classificate automaticamente come locali o remote, tuttavia, è possibile immettere manualmente tutti gli indirizzi IP in uscita sul posto per garantire una classificazione al 100%. Se si decide di eseguire questa route, sarà necessario selezionare la casella di controllo Immetti manualmente tutti gli indirizzi **IP** in uscita sul posto nel riquadro a comparsa Impostazioni posizioni dopo aver aggiunto tutti gli indirizzi IP in uscita. Al termine di questa operazione, tutti i registri del traffico di rete provenienti da indirizzi IP in uscita contrassegnati come in sede verranno sempre classificati come uffici e tutti gli altri indirizzi IP in uscita verranno classificati come remoti.
 
 ## <a name="specific-office-location-network-performance-summary-and-insights"></a>Riepilogo e approfondimenti specifici sulle prestazioni della rete di posizione dell'ufficio
 

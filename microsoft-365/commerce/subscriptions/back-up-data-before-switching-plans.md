@@ -22,12 +22,12 @@ search.appverid:
 - BEA160
 ms.assetid: a1da52c9-2167-4973-9e6d-492314a79b87
 description: Eseguire il backup del contenuto di Outlook, OneDrive, Yammer e SharePoint prima di modificare i piani di Microsoft 365.
-ms.openlocfilehash: d29d4e739a9328a63a491696ba26bee5b1947f0a
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: ecfd17d779cbb39ff786b192f72621bc94677776
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50924061"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860524"
 ---
 # <a name="back-up-data-before-switching-microsoft-365-for-business-plans"></a>Eseguire il backup dei dati prima di cambiare piano di Microsoft 365 per le aziende
 
@@ -66,6 +66,6 @@ https://<orgDomain>/_layouts/15/start.aspx#/SitePages/Home.aspx
 
 dove  _\<orgDomain\>_ è l'URL dell'organizzazione.
   
-Ad esempio, se il dominio dell'organizzazione è contoso.onmicrosoft.com, l'URL diretto del sito del team sarà https://contoso.onmicrosoft.com/_layouts/15/start.aspx#/SitePages/Home.aspx.
+Ad esempio, se il dominio dell'organizzazione è contoso.onmicrosoft.com, l'URL diretto del sito del team sarà `https://contoso.onmicrosoft.com/_layouts/15/start.aspx#/SitePages/Home.aspx`.
   
 Naturalmente gli utenti possono anche scaricare i documenti di SharePoint Online dal sito del team di SharePoint nel loro computer locale o in un'altra posizione in qualsiasi momento.

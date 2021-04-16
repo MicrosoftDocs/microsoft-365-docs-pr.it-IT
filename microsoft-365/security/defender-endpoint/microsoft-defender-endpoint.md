@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender per endpoint
 description: Microsoft Defender for Endpoint è una piattaforma di sicurezza degli endpoint aziendale che aiuta a difendersi dalle minacce persistenti avanzate.
-keywords: introduzione a Microsoft Defender for Endpoint, introduzione a Microsoft Defender Advanced Threat Protection, introduzione a Microsoft Defender ATP, cybersecurity, minacce persistenti avanzate, sicurezza aziendale, sensore comportamentale del computer, sicurezza cloud, analisi, intelligence sulle minacce, riduzione della superficie di attacco, protezione di nuova generazione, indagine e correzione automatizzate, esperti di minacce Microsoft, punteggio sicuro, ricerca avanzata, protezione dalle minacce Microsoft, ricerca di minacce informatiche
+keywords: introduzione a Microsoft Defender for Endpoint, introduzione a Microsoft Defender Advanced Threat Protection, introduzione a Microsoft Defender for Endpoint, cybersecurity, minacce persistenti avanzate, sicurezza aziendale, sensore comportamentale del computer, sicurezza cloud, analisi, intelligence per le minacce, riduzione della superficie di attacco, protezione di nuova generazione, indagine e correzione automatizzate, esperti di minacce Microsoft, punteggio sicuro, ricerca avanzata, protezione dalle minacce Microsoft, ricerca di minacce informatiche
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8c5d02a4d76ae7e031ad9f3af0db282cc4cb45ed
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: adc7d780c1af73d8cb4fe229720ac2ed74f90251
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187211"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861828"
 ---
 # <a name="microsoft-defender-for-endpoint"></a>Microsoft Defender per endpoint
 
@@ -49,7 +49,7 @@ Defender for Endpoint usa la seguente combinazione di tecnologia integrata in Wi
 
 -   **Intelligence** per le minacce: generata da microsoft, team di sicurezza e aumentata dall'intelligence per le minacce fornita dai partner, l'intelligence per le minacce consente a Defender for Endpoint di identificare strumenti, tecniche e procedure dell'utente malintenzionato e generare avvisi quando vengono osservati nei dati dei sensori raccolti.
 
-<center><h2>Microsoft Defender per endpoint</center></h2>
+<center><h2>Microsoft Defender per Endpoint</center></h2>
 <table>
 <tr>
 <td><a href="#tvm"><center><img src="images/TVM_icon.png" alt="Threat & Vulnerability Management"> <br><b>Gestione delle & delle minacce</b></center></a></td>
@@ -84,7 +84,7 @@ Questa funzionalità incorporata usa un approccio basato sul rischio che cambia 
 
 <a name="asr"></a>
 
-**[Riduzione della superficie d'attacco](overview-attack-surface-reduction.md)**<br>
+**[Riduzione della superficie di attacco](overview-attack-surface-reduction.md)**<br>
 Il set di funzionalità di riduzione della superficie di attacco fornisce la prima linea di difesa nello stack. Garantendo che le impostazioni di configurazione siano impostate correttamente e che le tecniche di mitigazione degli exploit siano applicate, le funzionalità resistono agli attacchi e allo sfruttamento. Questo set di [](network-protection.md) funzionalità include anche la protezione di rete e la protezione [Web,](web-protection-overview.md)che regolano l'accesso a indirizzi IP, domini e URL dannosi. 
 
 <a name="ngp"></a>
@@ -94,7 +94,7 @@ Per rafforzare ulteriormente il perimetro di sicurezza della rete, Microsoft Def
 
 <a name="edr"></a>
 
-**[Rilevamento endpoint e risposta](overview-endpoint-detection-response.md)**<br>
+**[Rilevamento e risposta di endpoint](overview-endpoint-detection-response.md)**<br>
 Le funzionalità di rilevamento e risposta degli endpoint vengono messe in atto per rilevare, analizzare e rispondere alle minacce avanzate che potrebbero aver fatto superare i primi due pilastri della sicurezza. [La ricerca avanzata](advanced-hunting-overview.md) offre uno strumento di ricerca delle minacce basato su query che consente di individuare in modo proattivo le violazioni e creare rilevamenti personalizzati.
 
 <a name="ai"></a>
@@ -104,7 +104,7 @@ Oltre a essere in grado di rispondere rapidamente agli attacchi avanzati, Micros
 
 <a name="ss"></a>
 
-**[Microsoft Secure Score per i dispositivi](tvm-microsoft-secure-score-devices.md)**<br>
+**[Punteggio di sicurezza Microsoft per dispositivi](tvm-microsoft-secure-score-devices.md)**<br>
 
 Defender for Endpoint include Microsoft Secure Score for Devices per aiutarti a valutare in modo dinamico lo stato di sicurezza della rete aziendale, identificare i sistemi non protetti ed eseguire azioni consigliate per migliorare la sicurezza complessiva dell'organizzazione.
 
@@ -130,7 +130,7 @@ Defender for Endpoint si integra direttamente con varie soluzioni Microsoft, tra
 - Azure Sentinel
 - Intune
 - Microsoft Cloud App Security
-- Microsoft Defender per identità
+- Che cosa è Microsoft Defender per identità?
 - Microsoft Defender per Office
 - Skype for Business
 

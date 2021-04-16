@@ -1,5 +1,5 @@
 ---
-title: Introduzione a Microsoft Teams nella tua piccola azienda
+title: Introduzione a Microsoft Teams per piccole aziende
 f1.keywords:
 - NOCSH
 ms.author: twerner
@@ -20,14 +20,14 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come usare Microsoft Teams nelle piccole aziende.
-ms.openlocfilehash: 592d5eda985239f79ce42291af840ff7762a903c
-ms.sourcegitcommit: 8998f70d3f7bd673f93f8d1cf12ce981b1b771c3
+ms.openlocfilehash: b77ad43722764895a4f89c623d4af9403aa25e5b
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51034288"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860560"
 ---
-# <a name="get-started-with-microsoft-teams-in-your-small-business"></a>Introduzione a Microsoft Teams nella tua piccola azienda
+# <a name="get-started-with-microsoft-teams-in-your-small-business"></a>Introduzione a Microsoft Teams per piccole aziende
 
 - [Usare Teams per la propria azienda (video)](#use-teams-for-your-business-video)
 - [Ospitare riunioni online per la propria azienda (video)](#host-online-meetings-for-your-business-video)
@@ -47,7 +47,7 @@ Per assistenza nell'utilizzo in remoto, è consigliabile iniziare con questi tre
 
 ## <a name="1-get-ready"></a>1. Prepararsi 
 
-Iniziare è facile. Se si dispone già di un abbonamento a Microsoft 365, assicurarsi che tutti gli utenti dispongono di una licenza che include Microsoft Teams. Se l'azienda non dispone ancora di Microsoft Teams, è possibile trovare Microsoft Teams giusto [per la propria azienda](https://aka.ms/TeamsBusinessBasic) e iscriversi.
+Iniziare è facile. Se si dispone già di un abbonamento a Microsoft 365, assicurarsi che tutti gli utenti dispongono di una licenza che include Microsoft Teams. Se l'azienda non dispone ancora di Microsoft Teams, è possibile trovare Microsoft Teams giusto [per la propria azienda](https://www.microsoft.com/microsoft-teams/teams-for-work) e iscriversi.
 
 ### <a name="get-microsoft-teams-ready-for-your-customers"></a>Prepara Microsoft Teams per i tuoi clienti
 
@@ -131,6 +131,6 @@ Per semplificare e semplificare la distribuzione nell'organizzazione, consultare
 
 Trasforma qualsiasi PC, Mac o dispositivo mobile in un telefono aziendale funzionante aggiungendo [Microsoft 365 Business Voice](https://aka.ms/getbusinessvoice) all'abbonamento. Assegnare ai dipendenti il proprio numero di telefono dell'ufficio per effettuare e ricevere chiamate, configurare un sistema di menu delle chiamate per instradare le chiamate, aggiungere audioconferenze e configurare sia numeri a numero verde che a numero verde per la propria azienda. Fai tutto questo sostituendo i tradizionali provider di telefonia e i sistemi di telefonia interno che possono essere costose e difficili da gestire.
 
-## <a name="related-content"></a>Contenuto correlato
+## <a name="related-content"></a>Contenuti correlati
 
-[Potenziare la piccola azienda con il lavoro remoto](https://docs.microsoft.com/microsoft-365/admin/misc/empower-your-small-business-with-remote-work.md) (articolo)
+[Potenziare la piccola azienda con il lavoro remoto](https://docs.microsoft.com/microsoft-365/admin/misc/empower-your-small-business-with-remote-work) (articolo)

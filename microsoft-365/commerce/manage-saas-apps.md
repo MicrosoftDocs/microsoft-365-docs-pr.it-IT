@@ -14,12 +14,12 @@ ms.collection:
 ms.custom: AdminSurgePortfolio
 search.appverid: MET150
 description: Informazioni su come attivare e gestire le app di terze parti nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 974ce99b55dcb078286d7f6dba35166e51ce62a7
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 457545282801829ca34de0318dd9eb7791866214
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51576914"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860536"
 ---
 # <a name="manage-third-party-app-subscriptions-for-your-organization"></a>Gestire le sottoscrizioni di app di terze parti per l'organizzazione
 
@@ -31,7 +31,7 @@ Puoi gestire le licenze e la fatturazione per le app di terze parti nell'interfa
 
 Esistono diversi modi per acquistare app di terze parti.
 
-- **Acquisto diretto:** i clienti possono acquistare direttamente sottoscrizioni da [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/)o [AppSource.](https://www.appsource.com/)
+- **Acquisto diretto:** i clienti possono acquistare direttamente sottoscrizioni da [Azure Marketplace](https://azuremarketplace.microsoft.com/marketplace/)o [AppSource.](https://appsource.microsoft.com/)
 - **Acquisto partner:** collaborare con un partner tramite il Centro per i partner per acquistare sottoscrizioni.
 - **Proposta Microsoft:** rispondere a una proposta di Microsoft Sales che include app di terze parti.
 
@@ -81,7 +81,7 @@ Ecco cosa puoi fare in ogni portale.
 
 Dopo l'attivazione, l'app rimane attiva a meno che non venga annullata, scada o se il pagamento non viene mantenuto attivo. Questi eventi modificano lo stato dell'app in disabilitato. Una volta disabilitata, un'app non può essere riattivata. Per continuare a usare l'app, acquistarne un'altra copia.
 
-## <a name="assign-licenses"></a>Assegnare le licenze
+## <a name="assign-licenses"></a>Assegnazione delle licenze
 
 Gli amministratori devono attivare le app di terze parti prima di assegnarle agli utenti. Vengono attivati nel portale dell'editore di terze parti. Nella pagina dell'app, in **Impostazioni & azioni**, selezionare il collegamento per assegnare le licenze.
 

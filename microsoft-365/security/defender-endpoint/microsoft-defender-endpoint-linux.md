@@ -1,7 +1,7 @@
 ---
 title: Microsoft Defender per Endpoint su Linux
 ms.reviewer: ''
-description: Descrive come installare e usare Microsoft Defender ATP per Linux.
+description: Descrive come installare e usare Microsoft Defender per Endpoint per Linux.
 keywords: microsoft, defender, atp, linux, installazione, distribuire, disinstallazione, pupazzo, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0fea9d4dd46be2a77ea27728787a43b5273f92f5
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: f67dd28902e8b45a5401b60c027faa89d7467cd8
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687758"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861396"
 ---
 # <a name="microsoft-defender-for-endpoint-on-linux"></a>Microsoft Defender per Endpoint su Linux
 
@@ -83,7 +83,7 @@ Se si verificano errori di installazione, fare riferimento a Risoluzione dei pro
   > L'esecuzione di Defender per Endpoint per Linux affiancata ad altre soluzioni di sicurezza basate su base non `fanotify` è supportata. Può portare a risultati imprevedibili, tra cui l'sospensione del sistema operativo.
 
 - Spazio su disco: 1 GB
-- /opt/microsoft/mdatp/sbin/wdavdaemon richiede l'autorizzazione eseguibile. Per ulteriori informazioni, vedere "Verificare che il daemon abbia l'autorizzazione eseguibile" in Risolvere i problemi di installazione [per Microsoft Defender ATP per Linux.](/microsoft-365/security/defender-endpoint/linux-support-install)
+- /opt/microsoft/mdatp/sbin/wdavdaemon richiede l'autorizzazione eseguibile. Per ulteriori informazioni, vedere "Verificare che il daemon abbia l'autorizzazione eseguibile" in Risolvere i problemi di installazione di [Microsoft Defender per Endpoint per Linux.](/microsoft-365/security/defender-endpoint/linux-support-install)
 - Memoria: 1 GB
     > [!NOTE]
     > Assicurati di avere spazio libero su disco in /var.

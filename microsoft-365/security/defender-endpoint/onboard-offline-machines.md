@@ -1,7 +1,7 @@
 ---
 title: Onboard dei dispositivi senza accesso a Internet a Microsoft Defender for Endpoint
 ms.reviewer: ''
-description: Onboard dei dispositivi senza accesso a Internet in modo che possano inviare i dati del sensore al sensore Microsoft Defender ATP
+description: Onboardare i dispositivi senza accesso a Internet in modo che possano inviare i dati del sensore al sensore Microsoft Defender for Endpoint
 keywords: onboard, server, vm, locale, gateway oms, analisi dei log, analisi dei log di Azure, mma
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b31705a4e6dc8cdd480c8b43c2154a2d6ddacddd
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: fb5a9a4d35af2d400cdff1e417727e662738514e
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186942"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861348"
 ---
 # <a name="onboard-devices-without-internet-access-to-microsoft-defender-for-endpoint"></a>Onboard dei dispositivi senza accesso a Internet a Microsoft Defender for Endpoint
 
@@ -48,7 +48,7 @@ Per eseguire l'onboardboard dei dispositivi senza accesso a Internet, è necessa
 > - Per ulteriori informazioni sull'aggiornamento dei CTL offline, vedere [Configure a file or web server to download the CTL files](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/dn265983(v=ws.11)#configure-a-file-or-web-server-to-download-the-ctl-files).
 
 Per ulteriori informazioni sui metodi di onboarding, vedere gli articoli seguenti:
-- [Onboard delle versioni precedenti di Windows](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/onboard-downlevel)
+- [Aggiungere versioni precedenti di Windows](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/onboard-downlevel)
 - [Onboard dei server al servizio Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-server-endpoints#windows-server-2008-r2-sp1--windows-server-2012-r2-and-windows-server-2016)
 - [Configurare le impostazioni del proxy del dispositivo e della connettività Internet](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/configure-proxy-internet#configure-the-proxy-server-manually-using-a-registry-based-static-proxy)
 

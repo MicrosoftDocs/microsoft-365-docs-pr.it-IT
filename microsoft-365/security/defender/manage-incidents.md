@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 2d2bf18c6cacb377e710f34b74ec8f83bb77d3b1
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: da5a2190a53dfe7f8dd0cc3cf7b410af92ca4ec5
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760069"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861732"
 ---
 # <a name="manage-incidents-in-microsoft-365-defender"></a>Gestire gli eventi imprevisti in Microsoft 365 Defender
 
@@ -65,12 +65,12 @@ Nei casi in cui, durante l'analisi, si desidera spostare gli avvisi  da un event
 
 ## <a name="edit-the-incident-name"></a>Modificare il nome dell'evento imprevisto
 
-Agli eventi imprevisti viene assegnato automaticamente un nome in base agli attributi degli avvisi, ad esempio il numero di endpoint interessati, gli utenti interessati, le origini di rilevamento o le categorie. In questo modo è possibile comprendere rapidamente l'ambito dell'evento imprevisto. Ad esempio: *evento imprevisto a più fasi in più endpoint segnalati da più origini.*
+Microsoft 365 Defender assegna automaticamente un nome in base agli attributi di avviso, ad esempio il numero di endpoint interessati, gli utenti interessati, le origini di rilevamento o le categorie. In questo modo è possibile comprendere rapidamente l'ambito dell'evento imprevisto. Ad esempio: *evento imprevisto a più fasi in più endpoint segnalati da più origini.*
 
 È possibile modificare il nome dell'evento imprevisto dal **campo Nome** evento imprevisto nel **riquadro Gestisci** evento imprevisto.
 
 > [!NOTE]
-> Gli eventi imprevisti che si verificavano prima dell'implementazione della funzionalità di denominazione automatica degli eventi imprevisti manterranno il nome.
+> Gli eventi imprevisti esistenti prima dell'implementazione della funzionalità di denominazione automatica degli eventi imprevisti manterranno il nome.
 
 ## <a name="add-incident-tags"></a>Aggiungere tag agli eventi
 
@@ -97,3 +97,9 @@ Se si tratta di un avviso vero, è necessario specificare anche il tipo di minac
 ## <a name="add-comments"></a>Aggiungere commenti
 
 È possibile aggiungere più commenti a un evento imprevisto con il **campo** Commento. Ogni commento viene aggiunto agli eventi cronologici dell'evento imprevisto. È possibile visualizzare i commenti e la cronologia di un evento imprevisto dal collegamento Commenti **e cronologia** nella **pagina Riepilogo.**
+
+## <a name="related-topics"></a>Argomenti correlati
+
+- [Panoramica sugli incidenti](incidents-overview.md)
+- [Assegnare priorità agli incidenti](incident-queue.md)
+- [Indagare sugli eventi imprevisti](investigate-incidents.md)

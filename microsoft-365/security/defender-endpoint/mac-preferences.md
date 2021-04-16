@@ -1,6 +1,6 @@
 ---
-title: Impostare le preferenze per Microsoft Defender ATP per Mac
-description: Configurare Microsoft Defender ATP per Mac nelle organizzazioni aziendali.
+title: Impostare le preferenze per Microsoft Defender per Endpoint per Mac
+description: Configurare Microsoft Defender per Endpoint per Mac nelle organizzazioni aziendali.
 keywords: microsoft, defender, atp, mac, gestione, preferenze, enterprise, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 951c51c767ba09ebc6056481b4fac45da09c5671
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: d2bea469031e2c5932e859fbad7d442ebe4d34ed
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688550"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860924"
 ---
 # <a name="set-preferences-for-microsoft-defender-for-endpoint-on-macos"></a>Impostare le preferenze per Microsoft Defender per Endpoint in macOS
 
@@ -32,7 +32,7 @@ ms.locfileid: "51688550"
 
 **Si applica a:**
 
-- [Microsoft Defender per Endpoint in macOS](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender per endpoint su macOS](microsoft-defender-endpoint-mac.md)
 
 >[!IMPORTANT]
 >Questo articolo contiene istruzioni su come impostare le preferenze per Microsoft Defender per Endpoint in macOS nelle organizzazioni aziendali. Per configurare Microsoft Defender per Endpoint in macOS tramite l'interfaccia della riga di comando, vedi [Risorse](mac-resources.md#configuring-from-the-command-line).
@@ -829,7 +829,7 @@ Dalla console JAMF apri **Profili** di configurazione computer, passa al profilo
 
 5. Apri il profilo di configurazione e carica il `com.microsoft.wdav.xml` file. Questo file è stato creato nel passaggio 3.
 
-6. Selezionare **OK**.
+6. Seleziona **OK**.
 
 7. Selezionare **Gestisci**  >  **assegnazioni**. Nella scheda **Includi** seleziona **Assegna a tutti gli utenti & Tutti i dispositivi**.
 

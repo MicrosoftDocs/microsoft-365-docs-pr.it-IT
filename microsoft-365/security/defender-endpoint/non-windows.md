@@ -1,6 +1,6 @@
 ---
-title: Microsoft Defender ATP per piattaforme non Windows
-description: Informazioni sulle funzionalità di Microsoft Defender ATP per piattaforme non Windows
+title: Microsoft Defender for Endpoint per piattaforme non-Windows
+description: Informazioni sulle funzionalità di Microsoft Defender for Endpoint per piattaforme non Windows
 keywords: non windows, mac, macos, linux, android
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 7d9dd82d8c1beee77ea1f95b11a12bcddf01115f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: dce9a3d41d8a9d7c260cda8a930867da8c2ae8ac
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688334"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862248"
 ---
 # <a name="microsoft-defender-for-endpoint-for-non-windows-platforms"></a>Microsoft Defender for Endpoint per piattaforme non-Windows
 
@@ -41,7 +41,7 @@ Le organizzazioni devono affrontare minacce su un'ampia gamma di piattaforme e d
 
 Con Microsoft Defender for Endpoint, i clienti possono usufruire di una visualizzazione unificata di tutte le minacce e gli avvisi in Microsoft Defender Security Center, su piattaforme Windows e non Windows, consentendo loro di ottenere un quadro completo di ciò che accade nel loro ambiente, consentendo loro di valutare e rispondere più rapidamente alle minacce.
 
-## <a name="microsoft-defender-for-endpoint-on-macos"></a>Microsoft Defender per Endpoint in macOS 
+## <a name="microsoft-defender-for-endpoint-on-macos"></a>Microsoft Defender per endpoint su macOS 
 
 Microsoft Defender for Endpoint su macOS offre funzionalità di rilevamento e risposta (EDR) antivirus ed endpoint per le tre versioni più recenti rilasciate di macOS. I clienti possono distribuire e gestire la soluzione tramite Microsoft Endpoint Manager e Jamf. Come per le Microsoft Office in macOS, Microsoft Auto Update viene usato per gestire Gli aggiornamenti di Microsoft Defender for Endpoint su Mac. Per informazioni sulle funzionalità e i vantaggi principali, leggere i [nostri annunci.](https://techcommunity.microsoft.com/t5/microsoft-defender-atp/bg-p/MicrosoftDefenderATPBlog/label-name/macOS)
 
@@ -59,7 +59,7 @@ Microsoft Defender per Endpoint su Android è la soluzione di difesa dalle minac
 
 Per altri dettagli su come iniziare, visita la documentazione di Microsoft Defender per Endpoint [su](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-atp-android)Android.
 
-## <a name="microsoft-defender-for-endpoint-on-ios"></a>Microsoft Defender per Endpoint in iOS
+## <a name="microsoft-defender-for-endpoint-on-ios"></a>Microsoft Defender per endpoint su iOS
 
 Microsoft Defender for Endpoint su iOS è la soluzione di difesa dalle minacce mobili per i dispositivi che eseguono iOS 11.0 e versioni successive. Sono supportati sia i dispositivi supervisionati che i dispositivi senza supervisione. In iOS, offriamo protezione Web che include anti-phishing, bloccando le connessioni non sicure e impostando indicatori personalizzati. Per ulteriori informazioni sulle funzionalità e i vantaggi principali, leggere i [nostri annunci.](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/bg-p/MicrosoftDefenderATPBlog/label-name/iOS) 
 

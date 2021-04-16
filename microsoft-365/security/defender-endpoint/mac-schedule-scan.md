@@ -1,6 +1,6 @@
 ---
 title: Come pianificare le analisi con MDATP per macOS
-description: Scopri come pianificare un tempo di analisi automatica per Microsoft Defender ATP in macOS per proteggere meglio le risorse dell'organizzazione.
+description: Scopri come pianificare un tempo di analisi automatica per Microsoft Defender for Endpoint in macOS per proteggere meglio le risorse dell'organizzazione.
 keywords: microsoft, defender, atp, mac, scansioni, antivirus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: ecfae62bdc092a0b2544bf6f6a76dad1e86b8ab4
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 71576c777f58aa193f2a73db7edea832d29a97c6
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689594"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860932"
 ---
 # <a name="schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a>Pianificare le analisi con Microsoft Defender per Endpoint in macOS
 

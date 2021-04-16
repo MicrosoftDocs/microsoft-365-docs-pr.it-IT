@@ -1,5 +1,5 @@
 ---
-title: Creare e gestire gruppi di dispositivi in Microsoft Defender ATP
+title: Creare e gestire gruppi di dispositivi in Microsoft Defender for Endpoint
 description: Creare gruppi di dispositivi e impostare livelli di correzione automatizzati su di essi confiando le regole applicabili al gruppo
 keywords: gruppi di dispositivi, gruppi, correzione, livello, regole, gruppo aad, ruolo, assegnare, classificare
 search.product: eADQiWindows 10XVcnh
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: dfc7c04bbde2b7061c92f5a25115b75a2f5b47b5
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: acd24e5c87a74bbb32835ec170a121c5c0b6bb33
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066301"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860304"
 ---
-# <a name="create-and-manage-device-groups"></a>Creare e gestire gruppi di dispositivi
+# <a name="create-and-manage-device-groups"></a>Creazione e gestione di gruppi di dispositivi
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -94,5 +94,5 @@ I dispositivi non corrispondenti ad alcun gruppo vengono aggiunti al gruppo Disp
 ## <a name="related-topics"></a>Argomenti correlati
 
 - [Gestire l'accesso al portale tramite il controllo dell'accesso basato sui ruoli](rbac.md)
-- [Creare e gestire tag dispositivo](machine-tags.md)
+- [Creare e gestire tag di dispositivi](machine-tags.md)
 - [Ottenere l'elenco dei gruppi di dispositivi tenant con l'API Graph](https://docs.microsoft.com/graph/api/device-list-memberof)

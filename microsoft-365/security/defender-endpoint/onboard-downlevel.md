@@ -1,6 +1,6 @@
 ---
-title: Onboard delle versioni precedenti di Windows in Microsoft Defender ATP
-description: Onboard ha supportato versioni precedenti dei dispositivi Windows in modo che possano inviare i dati del sensore al sensore Microsoft Defender ATP
+title: Onboard delle versioni precedenti di Windows in Microsoft Defender for Endpoint
+description: Onboard ha supportato le versioni precedenti dei dispositivi Windows in modo che possano inviare i dati del sensore al sensore Microsoft Defender for Endpoint
 keywords: onboard, windows, 7, 81, oms, sp1, enterprise, pro, livello inferiore
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: b180e7555bb3339324d3b99956d8f8ad73dc13c3
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 945645e0f20f316c094f746adb6ba193f6806f86
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186390"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861360"
 ---
-# <a name="onboard-previous-versions-of-windows"></a>Onboard delle versioni precedenti di Windows
+# <a name="onboard-previous-versions-of-windows"></a>Aggiungere versioni precedenti di Windows
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

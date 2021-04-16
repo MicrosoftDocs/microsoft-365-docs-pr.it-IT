@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: f4d65c1f730bfa8c1611f3f85da4b5c0e49312e5
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: e47631682b5620a3f42746c3e3848a8bc3ee1f76
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764520"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861792"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint-on-ios"></a>Novità di Microsoft Defender per Endpoint su iOS
 
@@ -34,6 +34,12 @@ ms.locfileid: "51764520"
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
+
+## <a name="1115140101"></a>1.1.15140101
+
+- Il nome del prodotto Microsoft Defender ATP è stato aggiornato a Microsoft Defender for Endpoint nell'app store.
+- Esperienza di accesso migliorata.
+- Correzione dei bug.
 
 ## <a name="1115010101"></a>1.1.15010101
 

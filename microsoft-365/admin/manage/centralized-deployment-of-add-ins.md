@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 ms.assetid: b4527d49-4073-4b43-8274-31b7a3166f92
 description: Determinare se il tenant e gli utenti soddisfano i requisiti, in modo da poter utilizzare la distribuzione centralizzata per distribuire i componenti aggiuntivi di Office.
-ms.openlocfilehash: 1516a10932158ba137f58900e0c19c5fea3bd119
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 7eb15563ca11e8fcce17dc6b505347475d18641e
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51580955"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860692"
 ---
 # <a name="determine-if-centralized-deployment-of-add-ins-works-for-your-organization"></a>Determinare se la distribuzione centralizzata dei componenti aggiuntivi funziona per l'organizzazione
 
@@ -155,5 +155,5 @@ Se l'utente o gli utenti riscontrano problemi durante il caricamento del compone
   
 |**Piattaforma**|**Informazioni di debug**|
 |:-----|:-----|
-|Ufficio  <br/> | Log di Charles/Fiddler  <br/>  ID tenant ( [informazioni](/onedrive/find-your-office-365-tenant-id.aspx))  <br/>  CorrelationID. Visualizzare l'origine di una delle pagine di Office e cercare il valore id correlazione e inviarlo al supporto:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
+|Ufficio  <br/> | Log di Charles/Fiddler  <br/>  ID tenant ( [informazioni](https://docs.microsoft.com/onedrive/find-your-office-365-tenant-id))  <br/>  CorrelationID. Visualizzare l'origine di una delle pagine di Office e cercare il valore id correlazione e inviarlo al supporto:  <br/>`<input name=" **wdCorrelationId**" type="hidden" value=" **{BC17079E-505F-3000-C177-26A8E27EB623}**">`  <br/>  `<input name="user_id" type="hidden" value="1003bffd96933623"></form>`  <br/> |
 |Rich client (Windows, Mac)  <br/> | Log di Charles/Fiddler  <br/>  Numeri di build dell'app client (preferibilmente come screenshot da **File/Account)**  <br/> |

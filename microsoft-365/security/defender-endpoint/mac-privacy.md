@@ -1,6 +1,6 @@
 ---
-title: Privacy per Microsoft Defender ATP per Mac
-description: Controlli sulla privacy, come configurare le impostazioni dei criteri che influiscono sulla privacy e informazioni sui dati di diagnostica raccolti in Microsoft Defender ATP per Mac.
+title: Privacy per Microsoft Defender per Endpoint per Mac
+description: Controlli sulla privacy, come configurare le impostazioni dei criteri che influiscono sulla privacy e sulle informazioni sui dati di diagnostica raccolti in Microsoft Defender per Endpoint per Mac.
 keywords: microsoft, defender, atp, mac, privacy, diagnostica
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: bf837dca5f05310045c06178b8fc587f3fc55137
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 26ae83dc8a8b3bb7d686e3674437a12999b5146f
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765780"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862236"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-macos"></a>Privacy per Microsoft Defender per Endpoint in macOS
 

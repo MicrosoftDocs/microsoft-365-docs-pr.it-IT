@@ -21,12 +21,12 @@ search.appverid:
 ms.assetid: e64ceac2-ae62-4d29-a9ee-6aab9870ae2b
 ROBOTS: NOINDEX
 description: Informazioni su come creare contatti nell'interfaccia di amministrazione e gestire l'elenco indirizzi globale.
-ms.openlocfilehash: 74618056c0b8635922c9f957dc8cd6d16c320fe3
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6eae98472d6be947d3f0698bd2e7a9409b56824b
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914811"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860596"
 ---
 # <a name="quick-help-contacts"></a>Guida rapida: Contatti
 
@@ -62,4 +62,4 @@ Usare Windows PowerShell e un file CSV (con valori delimitati da virgole) per im
   
 ## <a name="what-if-my-question-still-hasnt-been-answered"></a>Cosa si può fare se non è stata trovata risposta alle proprie domande?
 
-Visitare il resto della [Guida per amministratori](/microsoft-365/admin/misc/index) o immettere il proprio feedback di seguito.
+Visitare il resto della [Guida per amministratori](https://docs.microsoft.com/microsoft-365/admin/) o immettere il proprio feedback di seguito.

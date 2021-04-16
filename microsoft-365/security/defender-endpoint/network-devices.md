@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 43ade52e18ffc8e5db890cb0776090e9b32419e2
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: da15519211599bfc248c20c36cfab456c1661caa
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687674"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862068"
 ---
 # <a name="network-device-discovery-and-vulnerability-management"></a>Individuazione dei dispositivi di rete e gestione delle vulnerabilità
 
@@ -41,6 +41,9 @@ ms.locfileid: "51687674"
 > Per altre informazioni, vedi [Funzionalità di anteprima di Microsoft Defender per Endpoint.](preview.md)
 
 >Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+
+> [!NOTE]  
+> Il Blog [sulle](https://techcommunity.microsoft.com/t5/microsoft-defender-for-endpoint/network-device-discovery-and-vulnerability-assessments/ba-p/2267548) valutazioni dell'individuazione e della vulnerabilità dei dispositivi di rete pubblicato \( 04-13-2021 fornisce informazioni dettagliate sulle nuove funzionalità di individuazione dei dispositivi di rete \) in Defender for Endpoint.  Questo articolo fornisce una panoramica  della sfida progettata per l'individuazione dei dispositivi di rete e informazioni dettagliate su come iniziare a usare queste nuove funzionalità.
 
 Le funzionalità di individuazione della rete sono disponibili nella sezione **Inventario** dispositivi del Centro sicurezza Microsoft 365 e delle console di Microsoft Defender Security Center.  
 
@@ -97,20 +100,22 @@ Il primo passaggio consiste nel selezionare un dispositivo che eseguirà le anal
     - login.microsoftonline.com
     - *.blob.core.windows.net/networkscannerstable/ *
 
-    Nota: non tutti gli URL sono specificati nell'elenco documentato di Defender for Endpoint della raccolta dati consentita.
+    > [!NOTE]
+    > Non tutti gli URL sono specificati nell'elenco documentato di Defender for Endpoint della raccolta dati consentita.
 
 ## <a name="permissions"></a>Autorizzazioni
 
-Per configurare i processi di valutazione, è necessaria l'opzione di autorizzazione utente seguente: **Gestire le impostazioni di sicurezza nel Centro sicurezza.** Per trovare l'autorizzazione, accedere a **Impostazioni**  >  **Ruoli.** Per ulteriori informazioni, vedere [Create and manage roles for role-based access control](user-roles.md)
+Per configurare i processi di valutazione, è necessaria l'opzione di autorizzazione utente seguente: **Gestire le impostazioni di sicurezza nel Centro sicurezza.** Per trovare l'autorizzazione, accedere a **Impostazioni**  >  **Ruoli.** Per ulteriori informazioni, vedere [Create and manage roles for role-based access control](user-roles.md).
 
 ## <a name="install-the-network-scanner"></a>Installare lo scanner di rete
 
-1. Passare a **Impostazioni di sicurezza di Microsoft 365** Processi di valutazione degli  >    >  **endpoint**  >   (in "Valutazioni di rete").
+1. Passare a **Impostazioni di sicurezza di Microsoft 365** Processi di valutazione degli  >    >  **endpoint**  >   (in Valutazioni **di rete**).
     1. In Microsoft Defender Security Center passare a Impostazioni > processi di valutazione.
 
 2. Scarica lo scanner di rete e installalo nel dispositivo di valutazione Defender for Endpoint designato.
 
-![Pulsante Scarica scanner](images/assessment-jobs-download-scanner.png)
+    > [!div class="mx-imgBorder"]
+    > ![Pulsante Scarica scanner](images/assessment-jobs-download-scanner.png)
 
 ## <a name="network-scanner-installation--registration"></a>Installazione scanner di rete & registrazione
 
@@ -119,7 +124,9 @@ Il processo di accesso può essere completato sul dispositivo di valutazione des
 Per completare il processo di registrazione dello scanner di rete:
 
 1. Copiare e seguire l'URL visualizzato nella riga di comando e utilizzare il codice di installazione fornito per completare il processo di registrazione.
-    - Nota: potrebbe essere necessario modificare le impostazioni del prompt dei comandi per poter copiare l'URL.
+
+    > [!NOTE]
+    > Potrebbe essere necessario modificare le impostazioni del prompt dei comandi per poter copiare l'URL.
 
 2. Immetti il codice e accedi con un account Microsoft con l'autorizzazione Defender for Endpoint denominata "Gestire le impostazioni di sicurezza nel Centro sicurezza".
 
@@ -131,13 +138,17 @@ Nella pagina Processi di valutazione in **Impostazioni** selezionare **Aggiungi 
 
 Per impedire la duplicazione dei dispositivi nell'inventario dei dispositivi di rete, assicurati che ogni indirizzo IP sia configurato una sola volta tra più dispositivi di valutazione.
 
-![Pulsante Aggiungi processo di valutazione di rete](images/assessment-jobs-add.png)
+> [!div class="mx-imgBorder"]
+> ![Pulsante Aggiungi processo di valutazione di rete](images/assessment-jobs-add.png)
 
 Aggiunta dei passaggi di un processo di valutazione della rete:
 
-1. Scegliere il nome di un processo di valutazione e il "dispositivo di valutazione" in cui è stato installato lo scanner di rete. Questo dispositivo eseguirà le analisi periodiche autenticate. 
+1. Scegliere il nome di un processo di valutazione e il "dispositivo di valutazione" in cui è stato installato lo scanner di rete. Questo dispositivo eseguirà le analisi periodiche autenticate.
+
 2. Aggiungere gli indirizzi IP dei dispositivi di rete di destinazione da analizzare (o le subnet in cui questi dispositivi vengono distribuiti). 
+
 3. Aggiungere le credenziali SNMP necessarie dei dispositivi di rete di destinazione. 
+
 4. Salvare il processo di valutazione della rete appena configurato per avviare l'analisi periodica della rete. 
 
 ### <a name="scan-and-add-network-devices"></a>Analizzare e aggiungere dispositivi di rete
@@ -157,13 +168,14 @@ Una volta visualizzati i risultati, puoi scegliere quali dispositivi verranno in
 
 I nuovi dispositivi individuati verranno visualizzati nella nuova **scheda Dispositivi di** rete nella pagina **Inventario** dispositivi. L'aggiunta di un processo di valutazione può richiedere fino a due ore prima dell'aggiornamento dei dispositivi.
 
-![Sezione Dispositivi di rete nell'inventario dei dispositivi](images/assessment-jobs-device-inventory.png)
+> [!div class="mx-imgBorder"]
+> ![Sezione Dispositivi di rete nell'inventario dei dispositivi](images/assessment-jobs-device-inventory.png)
 
 ## <a name="troubleshooting"></a>Risoluzione dei problemi
 
 ### <a name="network-scanner-installation-has-failed"></a>Installazione scanner di rete non riuscita
 
-Verificare che gli URL necessari siano aggiunti ai domini consentiti nelle impostazioni del firewall. Verificare inoltre che le impostazioni proxy siano configurate come descritto in [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md)
+Verificare che gli URL necessari siano aggiunti ai domini consentiti nelle impostazioni del firewall. Verificare inoltre che le impostazioni proxy siano configurate come descritto in [Configure device proxy and Internet connectivity settings](configure-proxy-internet.md).
 
 ### <a name="the-microsoftcomdevicelogin-web-page-did-not-show-up"></a>La Microsoft.com/devicelogin web non è stata visualizzata
 

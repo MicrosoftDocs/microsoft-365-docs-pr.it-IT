@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 5fe594dca935b7377a385b487f1464c3f0a91151
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 99acc25c3949b758dab990a9c2e9104b9158accd
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760327"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861876"
 ---
 # <a name="investigate-incidents-in-microsoft-365-defender"></a>Analizzare gli incidenti in Microsoft 365 Defender
 
@@ -50,7 +50,7 @@ Prima di esaminare i dettagli, esaminare le proprietà e il riepilogo dell'event
 
 :::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-select.png" alt-text="Esempio di selezione di un evento imprevisto dalla colonna del segno di spunta":::
 
-In questo caso, viene visualizzato un riquadro di riepilogo con informazioni chiave sull'evento imprevisto, ad esempio la gravità, a chi è assegnato e le categorie [MITRE ATT &trade;&CK](https://attack.mitre.org/) per l'evento imprevisto. Di seguito viene riportato un esempio.
+Quando si esegue questa operazione, viene visualizzato un riquadro di riepilogo con informazioni chiave sull'evento imprevisto, ad esempio la gravità, a cui è assegnato e le categorie [MITRE ATT &trade;&CK](https://attack.mitre.org/) per l'evento imprevisto. Di seguito viene riportato un esempio.
 
 :::image type="content" source="../../media/investigate-incidents/incidents-ss-incident-side-panel.png" alt-text="Esempio del riquadro di riepilogo per un evento imprevisto":::
 
@@ -70,7 +70,7 @@ La sezione relativa all'ambito fornisce un elenco delle principali risorse inter
 
 La sequenza temporale degli avvisi fornisce un'anteprima dell'ordine cronologico in cui si sono verificati gli avvisi, nonché i motivi per cui questi avvisi sono collegati a questo evento imprevisto.
 
-Infine, la sezione delle prove fornisce un riepilogo di quanti artefatti diversi sono stati inclusi nell'incidente e il relativo stato di correzione, in modo da poter identificare immediatamente se sono necessarie azioni da parte dell'utente.
+Infine, la sezione delle prove fornisce un riepilogo del numero di artefatti diversi inclusi nell'evento imprevisto e del relativo stato di correzione, in modo da poter identificare immediatamente se è necessaria un'azione da parte dell'utente.
 
 Questa panoramica può essere di aiuto nella analisi iniziale dell'evento imprevisto fornendo informazioni dettagliate sulle caratteristiche principali dell'evento imprevisto di cui è necessario tenere conto.
 

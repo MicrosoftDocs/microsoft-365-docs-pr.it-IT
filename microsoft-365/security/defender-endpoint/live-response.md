@@ -1,5 +1,5 @@
 ---
-title: Analizzare le entità nei dispositivi che usano la risposta in tempo reale in Microsoft Defender ATP
+title: Analizzare le entità nei dispositivi che usano la risposta in tempo reale in Microsoft Defender for Endpoint
 description: Accedi a un dispositivo usando una connessione shell remota sicura per eseguire attività di indagine ed eseguire azioni di risposta immediate su un dispositivo in tempo reale.
 keywords: remote, shell, connection, live, response, real-time, command, script, remediate, hunt, export, log, drop, download, file,
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 235df8c84077311444c597b120a19477cfd0986a
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 4898081103faa27c19d3a09ffba1b59670833dd8
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760417"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860798"
 ---
 # <a name="investigate-entities-on-devices-using-live-response"></a>Analizzare le entità nei dispositivi che usano la risposta in tempo reale
 

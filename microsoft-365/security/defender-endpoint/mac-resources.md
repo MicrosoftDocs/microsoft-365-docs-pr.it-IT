@@ -1,6 +1,6 @@
 ---
-title: Risorse per Microsoft Defender ATP per Mac
-description: Risorse per Microsoft Defender ATP per Mac, tra cui come disinstallarlo, come raccogliere log di diagnostica, comandi CLI e problemi noti con il prodotto.
+title: Risorse per Microsoft Defender per Endpoint per Mac
+description: Risorse per Microsoft Defender per Endpoint per Mac, tra cui come disinstallarlo, come raccogliere log di diagnostica, comandi CLI e problemi noti con il prodotto.
 keywords: microsoft, defender, atp, mac, installazione, distribuire, disinstallazione, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 71ebe48fdbb8f9995ef2f3429cb8a824ed76f244
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 98e123ac4775096c968bc831965a562481c848b6
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689642"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862176"
 ---
 # <a name="resources-for-microsoft-defender-for-endpoint-on-macos"></a>Risorse per Microsoft Defender per Endpoint in macOS
 
@@ -84,7 +84,7 @@ Esistono diversi modi per disinstallare Microsoft Defender for Endpoint in macOS
 
 ### <a name="interactive-uninstallation"></a>Disinstallazione interattiva
 
-- Aprire **Il Finder > Applicazioni**. Fai clic con il pulsante destro del mouse su **Microsoft Defender ATP > sposta nel Cestino.**
+- Aprire **Il Finder > Applicazioni**. Fai clic con il pulsante destro del mouse su **Microsoft Defender per Endpoint > sposta nel Cestino.**
 
 ### <a name="from-the-command-line"></a>Dalla riga di comando
 

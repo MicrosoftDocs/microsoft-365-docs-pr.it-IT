@@ -1,5 +1,5 @@
 ---
-title: Funzionalità di anteprima di Microsoft Defender ATP
+title: Funzionalità di anteprima di Microsoft Defender per Endpoint
 description: Scopri come accedere alle funzionalità di anteprima di Microsoft Defender for Endpoint.
 keywords: anteprima, esperienza di anteprima, Microsoft Defender for Endpoint, funzionalità, aggiornamenti
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 4a91fa3c8ff55f46619c7b49eaf973ad94f60bfe
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: 817ed5e33505f691b11970e3da4c956afa7dc76c
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698190"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861060"
 ---
 # <a name="microsoft-defender-for-endpoint-preview-features"></a>Funzionalità di anteprima di Microsoft Defender per Endpoint
 
@@ -62,7 +62,7 @@ Attivare l'opzione esperienza di anteprima per essere tra i primi a provare le f
 
 Nella versione di anteprima sono incluse le funzionalità seguenti:
 
-- [Individuazione dei dispositivi](device-discovery.md) <br> Consente di individuare i dispositivi non gestiti connessi alla rete aziendale senza la necessità di dispositivi aggiuntivi o modifiche di processo ingombranti. Usando i dispositivi onboarded, puoi trovare dispositivi non gestiti nella rete e valutare vulnerabilità e rischi. Puoi quindi eseguire l'onboardboard dei dispositivi individuati per ridurre i rischi associati alla presenza di endpoint non gestiti nella rete.
+- [Device discovery](device-discovery.md) <br> Consente di individuare i dispositivi non gestiti connessi alla rete aziendale senza la necessità di dispositivi aggiuntivi o modifiche di processo ingombranti. Usando i dispositivi onboarded, puoi trovare dispositivi non gestiti nella rete e valutare vulnerabilità e rischi. Puoi quindi eseguire l'onboardboard dei dispositivi individuati per ridurre i rischi associati alla presenza di endpoint non gestiti nella rete.
 
    > [!IMPORTANT]
    > L'individuazione standard sarà la modalità predefinita per tutti i clienti di anteprima a partire dal 10 maggio 2021. Puoi scegliere di mantenere la modalità di base tramite la pagina delle impostazioni. 

@@ -18,12 +18,12 @@ search.appverid:
 - MOE150
 - GEA150
 description: Informazioni su come ottenere un report di Microsoft 365 Apps for usage usando il dashboard report di Microsoft 365 nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 5b45e7994126018701c409d4fbfc6f1172924773
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: d41a1680b46709c3f41b5238d309794c68101cee
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644268"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860750"
 ---
 # <a name="microsoft-365-reports-in-the-admin-center---microsoft-365-apps-usage"></a>Report di Microsoft 365 nell'interfaccia di amministrazione - Utilizzo di Microsoft 365 Apps
 
@@ -33,7 +33,7 @@ Il **dashboard** dei report di Microsoft 365 mostra la panoramica delle attivit�
 
 
  > [!NOTE]
- > Per visualizzare i report, è necessario essere un amministratore globale, un lettore globale o un lettore di report in Microsoft 365 o un amministratore di Exchange, SharePoint o Skype for Business. Le attivazioni di computer condivisi non sono supportate in questo report.
+ > Per visualizzare i report, è necessario essere un amministratore globale, un lettore globale o un lettore di report in Microsoft 365 o un amministratore di Exchange, SharePoint o Skype for Business. Le attivazioni di computer condivisi non sono incluse in questo report.
 
 ## <a name="how-to-get-to-the-microsoft-365-apps-usage-report"></a>Come accedere al report sull'utilizzo di Microsoft 365 Apps
 
@@ -50,7 +50,7 @@ Puoi visualizzare l'attività di Microsoft 365 Apps dell'utente esaminando i gra
 |Elemento|Descrizione|
  |:-----|:-----|
  |1. <br/> |Il report **sull'utilizzo di Microsoft 365 Apps** può essere visualizzato per le tendenze degli ultimi 7, 30, 90 o 180 giorni. Tuttavia, se si seleziona un giorno specifico nel report, la tabella (7) mostrerà i dati per un massimo di 28 giorni dalla data corrente (non la data di generazione del report). <br/> |
- |2. <br/> |I dati in ogni report in genere coprono fino agli ultimi sette giorni. <br/> |
+ |2. <br/> |I dati in ogni report in genere coprono fino agli ultimi due giorni. Ogni sei giorni, il report verrà aggiornato con aggiornamenti secondari per garantire la qualità dei dati. <br/> |
  |3. <br/> |La **visualizzazione** Utenti mostra la tendenza del numero di utenti attivi per ogni app: Outlook, Word, Excel, PowerPoint, OneNote e Teams. Gli "utenti attivi" sono tutti coloro che eseguono azioni intenzionali all'interno di queste app. <br/> |
  |4. <br/> |La **visualizzazione** Piattaforme mostra la tendenza degli utenti attivi in tutte le app per ogni piattaforma: Windows, Mac, Web e Mobile. <br/> |
  |5.<br/>|Nel grafico **Utenti,** l'asse Y è il numero di utenti attivi univoci per la rispettiva app. Nel grafico **Piattaforme,**   l'asse Y è il numero di utenti univoci per la rispettiva piattaforma. L'asse X in entrambi i grafici è la data in cui un'app è stata usata in una determinata piattaforma.<br/>|

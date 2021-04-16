@@ -16,12 +16,12 @@ manager: dansimp
 ms.custom: asr
 ms.technology: mde
 ms.topic: how-to
-ms.openlocfilehash: 95c87330eec3cb557e5fea96148d626b7e0ee4b3
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: a22cab9185b2ece2e8e30c00ea747cca823f4920
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768915"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861156"
 ---
 # <a name="protect-your-network"></a>Proteggere la rete
 
@@ -42,7 +42,7 @@ La protezione di rete estende la protezione della [protezione Web](web-protectio
 Per ulteriori informazioni su come abilitare la protezione di rete, vedere [Enable network protection](enable-network-protection.md). Usa Criteri di gruppo, PowerShell o CSP MDM per abilitare e gestire la protezione di rete nella rete.
 
 > [!TIP]
-> Per informazioni sul funzionamento della protezione di rete, vedere il sito di test di Microsoft Defender ATP [all'indirizzo demo.wd.microsoft.com.](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground)
+> Per informazioni sul funzionamento della protezione di rete, vedere il sito di test di Microsoft Defender for Endpoint [all'indirizzo demo.wd.microsoft.com](https://demo.wd.microsoft.com?ocid=cx-wddocs-testground) informazioni sul funzionamento della protezione di rete.
 
 La protezione di rete funziona in modo ottimale [con Microsoft Defender for Endpoint,](microsoft-defender-endpoint.md)che fornisce report dettagliati sugli eventi e i blocchi di protezione da exploit come parte degli scenari di analisi degli [avvisi.](investigate-alerts.md)
 
@@ -82,7 +82,7 @@ DeviceEvents
 
 1. [Copiare il codice XML direttamente](event-views.md).
 
-2. Selezionare **OK**.
+2. Seleziona **OK**.
 
 Questa procedura crea una visualizzazione personalizzata che filtra in modo da visualizzare solo gli eventi seguenti correlati alla protezione di rete:
 

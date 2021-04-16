@@ -1,5 +1,5 @@
 ---
-title: Report integrità e conformità dei dispositivi in Microsoft Defender ATP
+title: Report sull'integrità e la conformità dei dispositivi in Microsoft Defender for Endpoint
 description: Tenere traccia dei rilevamenti dello stato di integrità dei dispositivi, dello stato antivirus, della piattaforma del sistema operativo e delle versioni di Windows 10 usando il report di conformità e integrità del dispositivo
 keywords: stato di integrità, antivirus, piattaforma del sistema operativo, versione di Windows 10, versione, integrità, conformità, stato
 search.product: eADQiWindows 10XVcnh
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5229ba068672035c2dce3afee1919f9c2d7f9e44
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 35100a4b8bdaee23c427816450e948ced9ed3191
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186450"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860292"
 ---
 # <a name="device-health-and-compliance-report-in-microsoft-defender-for-endpoint"></a>Report sull'integrità e la conformità dei dispositivi in Microsoft Defender for Endpoint
 
@@ -42,7 +42,7 @@ Il dashboard è strutturato in due sezioni: ![ Immagine del report del dispositi
 Sezione | Descrizione
 :---|:---
 1 | Tendenze dei dispositivi
-2  | Riepilogo dispositivo (giorno corrente)
+2 | Riepilogo dispositivo (giorno corrente)
  
  
 ## <a name="device-trends"></a>Tendenze dei dispositivi 

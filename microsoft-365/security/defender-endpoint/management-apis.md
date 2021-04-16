@@ -1,7 +1,7 @@
 ---
-title: Panoramica della gestione e delle API
+title: Panoramica di gestione e API
 ms.reviewer: ''
-description: Informazioni sugli strumenti di gestione e sulle categorie di API in Microsoft Defender ATP
+description: Informazioni sugli strumenti di gestione e sulle categorie di API in Microsoft Defender for Endpoint
 keywords: onboarding, api, siem, rbac, accesso, portale, integrazione, indagine, risposta, entità, entità, contesto utente, contesto dell'applicazione, streaming
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,14 +17,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 94cfe1cc053be896c137e0c0b9ee02ea53dd2717
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 9e54fb5f2105f0a77c4b63e8d880135005c17168
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187554"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862092"
 ---
-# <a name="overview-of-management-and-apis"></a>Panoramica della gestione e delle API 
+# <a name="overview-of-management-and-apis"></a>Panoramica di gestione e API 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -85,5 +85,5 @@ Quando abiliti l'integrazione delle informazioni di sicurezza e della gestione d
 ## <a name="related-topics"></a>Argomenti correlati
 - [Accedere alle API di Microsoft Defender for Endpoint ](apis-intro.md)
 - [API supportate](exposed-apis-list.md)
-- [Opportunità per i partner tecnici](partner-integration.md)
+- [Opportunità tecniche per i partner](partner-integration.md)
 

@@ -17,12 +17,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Scopri come chiudere l'account con Microsoft.
-ms.openlocfilehash: 0ee0a649a9adb93ecdbb1cd9dbedbc04dfb46ba0
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 44428654946d31ad249bfd3e7a3609da3e3634a6
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51579747"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860548"
 ---
 # <a name="close-your-account"></a>Chiudere il proprio account
 
@@ -42,7 +42,7 @@ Se gli utenti vengono sincronizzati da locale, disattivare prima la sincronizzaz
 
 Per eliminare gli utenti, vedere <a href="/office365/admin/add-users/delete-a-user?view=o365-worldwide#user-management-admin-delete-one-or-more-users-from-office-365">Amministratore gestione utenti: Eliminare uno o più utenti</a>.
 
-È inoltre possibile utilizzare il cmdlet <a href="https://go.microsoft.com/fwlink/?linkid=842230">Remove-MsolUser</a> PowerShell per eliminare gli utenti in blocco.
+È inoltre possibile utilizzare il cmdlet <a href="https://docs.microsoft.com/powershell/module/msonline/remove-msoluser">Remove-MsolUser</a> PowerShell per eliminare gli utenti in blocco.
 
 Se l'organizzazione usa Active Directory che si sincronizza con Microsoft Azure Active Directory (Azure AD), eliminare invece l'account utente da Active Directory. Per istruzioni, vedere <a href="/azure/active-directory/users-groups-roles/users-bulk-delete">Eliminazione in blocco degli utenti in Azure Active Directory.</a>
 

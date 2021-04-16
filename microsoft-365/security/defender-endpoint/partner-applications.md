@@ -1,5 +1,5 @@
 ---
-title: Applicazioni partner in Microsoft Defender ATP
+title: Applicazioni partner in Microsoft Defender per Endpoint
 ms.reviewer: ''
 description: Visualizzare le applicazioni partner supportate per migliorare le funzionalità di rilevamento, indagine e intelligence sulle minacce della piattaforma
 keywords: partner, applicazioni, terze parti, connessioni, sentinelone, lookout, bitdefender, corrata, morphisec, paloalto, ziften, meglio mobile
@@ -17,19 +17,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 563dd2a5102ec66a1e953ae6ab30d56ea4f99036
-ms.sourcegitcommit: ef98b8a18d275e5b5961e63d2b0743d046321737
+ms.openlocfilehash: 60a2eca25090f60414e91eacfed090bc86a4cf93
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "51382943"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862212"
 ---
 # <a name="partner-applications-in-microsoft-defender-for-endpoint"></a>Applicazioni partner in Microsoft Defender per Endpoint 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 

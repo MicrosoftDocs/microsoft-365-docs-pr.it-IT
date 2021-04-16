@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 12207d69b0a1565caf762a265c1a0d32158ca291
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 8acd8d85826d7bda399c03cc60f2806af954c6c3
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759849"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861604"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Assegnare priorità agli incidenti in Microsoft 365 Defender
 
@@ -44,7 +44,7 @@ La **coda eventi imprevisti** mostra una raccolta di eventi imprevisti creati su
 
 :::image type="content" source="../../media/incidents-queue/incidents-ss-incidents.png" alt-text="Esempio di coda degli eventi imprevisti":::
 
-Per impostazione predefinita, la coda nel Centro sicurezza Microsoft 365 visualizza gli eventi imprevisti osservati negli ultimi sei mesi. L'evento imprevisto più recente si trova all'inizio dell'elenco in modo da poterlo visualizzare per primo.
+Per impostazione predefinita, nella coda degli eventi imprevisti nel Centro sicurezza Microsoft 365 vengono visualizzati gli eventi imprevisti visualizzati negli ultimi sei mesi. L'evento imprevisto più recente si trova all'inizio dell'elenco in modo da poterlo visualizzare per primo.
 
 La coda eventi imprevisti include colonne personalizzabili **(selezionare** Scegli colonne) che offrono visibilità sulle diverse caratteristiche dell'evento imprevisto o sulle entità influenzate. Ciò consente di prendere una decisione informata sulla definizione di priorità degli incidenti per l'analisi.
 
@@ -108,7 +108,7 @@ Dopo aver risolto l'evento imprevisto, prendere un momento per imparare da esso 
 
 - Comprendere il tipo di attacco e il relativo impatto.
 - Ricercare l'attacco nella community di sicurezza per una tendenza di attacco alla sicurezza.
-- Richiamare il flusso di lavoro utilizzato per risolvere l'evento imprevisto e aggiornare i flussi di lavoro e i plalbook standard in base alle esigenze.
+- Richiamare il flusso di lavoro utilizzato per risolvere l'evento imprevisto e aggiornare i flussi di lavoro e i playbook standard in base alle esigenze.
 
 Ecco un riepilogo del processo di base.
 

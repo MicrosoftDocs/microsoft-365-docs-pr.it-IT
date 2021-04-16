@@ -1,7 +1,7 @@
 ---
-title: Distribuire gli aggiornamenti per Microsoft Defender ATP per Linux
+title: Distribuire gli aggiornamenti per Microsoft Defender per Endpoint per Linux
 ms.reviewer: ''
-description: Descrive come distribuire gli aggiornamenti per Microsoft Defender ATP per Linux in ambienti aziendali.
+description: Descrive come distribuire gli aggiornamenti per Microsoft Defender for Endpoint per Linux in ambienti aziendali.
 keywords: microsoft, defender, atp, linux, aggiornamenti, distribuire
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2e4ea4942446317aef90288da9fb181935503fa9
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 77b428e359596e73e08dc04f15190ecf68db29be
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687467"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51861148"
 ---
 # <a name="deploy-updates-for-microsoft-defender-for-endpoint-on-linux"></a>Distribuire gli aggiornamenti per Microsoft Defender per Endpoint su Linux
 

@@ -23,12 +23,12 @@ ms.custom:
 - AdminSurgePortfolio
 ms.assetid: f6b00895-b5fd-4af6-a656-b7788ea20cbb
 description: Informazioni su come eseguire l'Microsoft Office al client Office più recente per gli utenti dell'organizzazione.
-ms.openlocfilehash: 14be8d63b2acb3e4838640dc399595c0ba3f97f5
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 3d2d5e54506d06662c6c2feef0d142f1e195163f
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50913995"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860572"
 ---
 # <a name="upgrade-your-microsoft-365-for-business-users-to-the-latest-office-client"></a>Aggiornare gli utenti di Microsoft 365 per le aziende all'ultimo client di Office
 
@@ -91,7 +91,7 @@ Passare a un abbonamento che include Office. Vedere [Passare a un piano di Micro
 
 **Opzione 2: Acquistare singoli acquisti di Office una sola volta o acquistare Office tramite un contratto multilicenza**
 
- - Acquistare un singolo acquisto di Office una sola volta. Vedere [Office Home &amp; Business](https://products.office.com/home-and-business) o [Office Professional](https://products.office.com/professional)
+ - Acquistare un singolo acquisto di Office una sola volta. Vedere [Office Home &amp; Business](https://www.microsoft.com/microsoft-365/buy/compare-all-microsoft-365-products-b) o [Office Professional](https://www.microsoft.com/microsoft-365/p/office-professional-2019/CFQ7TTC0K7C5/)
 
      OPPURE
 

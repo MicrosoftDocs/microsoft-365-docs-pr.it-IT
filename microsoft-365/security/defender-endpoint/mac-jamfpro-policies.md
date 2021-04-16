@@ -1,6 +1,6 @@
 ---
-title: Configurare i criteri di Microsoft Defender ATP per macOS in Jamf Pro
-description: Scopri come configurare i criteri di Microsoft Defender ATP per macOS in Jamf Pro
+title: Configurare i criteri di Microsoft Defender for Endpoint per macOS in Jamf Pro
+description: Scopri come configurare i criteri di Microsoft Defender Endpoint per macOS in Jamf Pro
 keywords: criteri, microsoft, defender, atp, mac, installazione, distribuire, disinstallazione, intune, jamfpro, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 79f5837ae6bae6e6a9d952d90605f4cf7b31262e
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 1a00d1c0863db7f4f5f853312f202b5e985b1512
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765132"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51862272"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Configurare i criteri di Microsoft Defender for Endpoint su macOS in Jamf Pro
 
@@ -360,7 +360,7 @@ Questi passaggi sono applicabili a macOS 10.15 (Catalina) o versioni successive.
         - **Metodo di distribuzione**: Installa *automaticamente (impostazione predefinita)*
         - **Level**: Computer Level *(impostazione predefinita)*
 
-        ![Immagine delle impostazioni del profilo di configurazione mdatpmdav](images/c9820a5ff84aaf21635c04a23a97ca93.png)
+        ![Immagine della schermata del nuovo profilo di configurazione macOS](images/c9820a5ff84aaf21635c04a23a97ca93.png)
 
     - Scheda **Notifiche**, fare **clic su Aggiungi** e immettere i valori seguenti:
         - **ID bundle**: `com.microsoft.wdav.tray`

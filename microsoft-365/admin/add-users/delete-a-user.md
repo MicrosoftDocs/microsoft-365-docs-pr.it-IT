@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 ms.assetid: d5155593-3bac-4d8d-9d8b-f4513a81479e
 description: Informazioni su come eliminare un account utente. Decidere cosa fare con la posta elettronica e il contenuto di OneDrive dell'utente. E decidi se mantenere la licenza del prodotto o smettere di pagarla.
-ms.openlocfilehash: 0069577b83c318fa57eaceddccc93b5832e634e0
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: d40f70534499b08073278ffc2bed2b098ae1c4da
+ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51759919"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51860738"
 ---
 # <a name="delete-a-user-from-your-organization"></a>Eliminare un utente dall'organizzazione
   
@@ -54,7 +54,7 @@ Prima di iniziare, pensa a cosa vuoi fare con la posta elettronica e il contenut
 |Posta elettronica  <br/> | Se si consente a un altro utente di accedere alla posta elettronica dell'utente eliminato, la cassetta postale dell'utente eliminato verrà convertita in una cassetta postale condivisa. Il nuovo proprietario della cassetta postale può quindi accedere alla cassetta postale e monitorare la nuova posta elettronica. Sono disponibili anche le opzioni seguenti:  <br/>  <br/>Modificare il nome visualizzato- È consigliabile modificare il nome visualizzato in modo che sia facile identificare la cassetta postale condivisa **nell'elenco Utenti** attivi.  <br/>  Attivare le risposte automatiche: è già stata scritta una risposta automatica educata. È possibile inviare risposte automatiche diverse a persone all'interno dell'organizzazione e a persone esterne all'organizzazione.  <br/> <br/> Pulire gli alias: gli alias sono indirizzi di posta elettronica aggiuntivi per gli utenti. Alcune organizzazioni non le usano, quindi se non hai bisogno di fare altre cose qui. Se l'utente dispone di alias, è consigliabile rimuoverli in modo da poter riutilizzare tali indirizzi di posta elettronica. In caso contrario, non è possibile riutilizzare tali indirizzi di posta elettronica fino al termine del periodo di conservazione per le cassette postali eliminate. Per impostazione predefinita, una cassetta postale eliminata è recuperabile per 30 giorni. Per ulteriori informazioni, vedere [Delete or restore user mailboxes in Exchange Online.](/exchange/recipients-in-exchange-online/delete-or-restore-mailboxes#delete-a-user-mailbox) <br/> |
 |Active Directory  <br/> |Se l'organizzazione usa **Active Directory** che si sincronizza con Azure AD, è necessario eliminare l'account utente da Active Directory. Non è possibile farlo da Office 365. Per istruzioni, vedere [Delete a User Account.](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/cc753730(v=ws.11))  <br/> |
 
-### <a name="get-started"></a>Per iniziare
+### <a name="get-started"></a>Introduzione
 
 Poiché l'esperienza guidata illustra i passaggi per eliminare un utente, ecco come iniziare.
 
@@ -155,7 +155,7 @@ In seguito, quando si esegue la procedura per aggiungere un'altra persona all'az
 
 ## <a name="delete-many-users-at-the-same-time"></a>Eliminare più utenti contemporaneamente
 
-Vedere il cmdlet [Remove-MsolUser](https://go.microsoft.com/fwlink/p/?linkid=842230) di PowerShell.
+Vedere il cmdlet [Remove-MsolUser](https://docs.microsoft.com/powershell/module/msonline/remove-msoluser) di PowerShell.
 
 ## <a name="fix-issues-with-deleting-a-user"></a>Risolvere i problemi relativi all'eliminazione di un utente
 
