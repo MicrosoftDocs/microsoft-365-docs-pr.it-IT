@@ -6,7 +6,6 @@
 |PORTALE AZIENDALE|Pianificato|Pianificato|Pianificato|N/D|Pianificato|
 |CORTANA|N/D|N/D|N/D|N/D|Pianificato|
 |DELVE|✔|✔|N/D|N/D|N/D|
-|EDGE|Pianificato|Pianificato|N/D|Pianificato|N/D|
 |EXCEL|✔|Pianificato|Pianificato|Pianificato|N/D|
 |AMMINISTRATORE DI EXCHANGE|N/D|N/D|N/D|✔|N/D|
 |FORMS|N/D|N/D|N/D|N/D|N/D|
