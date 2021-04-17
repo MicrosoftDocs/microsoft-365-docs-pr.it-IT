@@ -21,12 +21,12 @@ search.appverid:
 - MOE150
 ms.assetid: 9eec911d-5773-422c-9593-40e1147ffbde
 description: Informazioni su come verificare il dominio e configurare i record DNS per la posta elettronica, Skype for Business Online e altri servizi in DNS basato su Windows per Microsoft.
-ms.openlocfilehash: 9e5e42f847e740571944ea3db205282ec9a7a0e6
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: fd7c56b6db9fe5f5dbb0637ad5abcb40a64bef8f
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50916047"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876350"
 ---
 # <a name="create-dns-records-for-microsoft-using-windows-based-dns"></a>Creare record DNS per Microsoft con DNS basato su Windows
 
@@ -205,3 +205,11 @@ Se si prevede di sincronizzare Active Directory locale con Microsoft, è necessa
   
 > [!NOTE]
 >  In genere, l'applicazione delle modifiche ai record DNS richiede circa 15 minuti. A volte, tuttavia, l'aggiornamento di una modifica nel sistema DNS di Internet può richiedere più tempo. In caso di problemi relativi al flusso di posta o di altro tipo dopo l'aggiunta dei record DNS, vedere [Risolvere i problemi dopo la modifica del nome di dominio o dei record DNS](../get-help-with-domains/find-and-fix-issues.md). 
+
+## <a name="related-content"></a>Contenuti correlati
+
+[Trasferire un dominio da Micrsoft 365 a un altro host](https://docs.microsoft.com/microsoft-365/admin/get-help-with-domains/transfer-a-domain-from-microsoft-to-another-host) (articolo)
+
+[Pilotare Microsoft 365 dal dominio personalizzato](https://docs.microsoft.com/microsoft-365/admin/misc/pilot-microsoft-365-from-my-custom-domain) (articolo)
+
+[Domande frequenti sui](https://docs.microsoft.com/microsoft-365/admin/setup/domains-faq) domini (articolo)

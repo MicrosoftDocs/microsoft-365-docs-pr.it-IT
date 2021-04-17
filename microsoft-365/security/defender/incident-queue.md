@@ -22,12 +22,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 8acd8d85826d7bda399c03cc60f2806af954c6c3
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: cd571414512ce876e730199b21bf755e4c4b733f
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861604"
+ms.locfileid: "51876200"
 ---
 # <a name="prioritize-incidents-in-microsoft-365-defender"></a>Assegnare priorità agli incidenti in Microsoft 365 Defender
 
@@ -88,7 +88,7 @@ Ecco il flusso di lavoro tipico per rispondere agli eventi imprevisti:
 1. Identificare e individuare gli incidenti con la priorità più alta per l'indagine e la risoluzione.
 2. Per ogni incidente ad alta priorità, avviare [un'indagine:](investigate-incidents.md)
 
-   a. Visualizzare il riepilogo dell'evento imprevisto per comprendere l'ambito, le entità interessate e la gravità **(scheda** Riepilogo).
+   a. Visualizzare il riepilogo dell'evento imprevisto per comprendere l'ambito e la gravità e le entità interessate **(scheda** Riepilogo).
 
    b. Iniziare a visualizzare gli avvisi per comprenderne l'origine, l'ambito e la gravità **(scheda** Avvisi).
 
@@ -98,17 +98,18 @@ Ecco il flusso di lavoro tipico per rispondere agli eventi imprevisti:
    
    e. Se necessario, usare le informazioni nel set di dati per l'evento imprevisto per ulteriori informazioni (scheda **Prova e** risposta).
 
-Durante l'analisi, è necessario preoccuparsi di:
+   Durante l'analisi, è necessario preoccuparsi di:
 
-- Containment: riduzione di qualsiasi ulteriore impatto sul tenant.
-- Eliminazione: rimozione della minaccia alla sicurezza.
-- Ripristino: ripristino delle risorse del tenant allo stato in cui si trovavano prima dell'attacco.
+   - Containment: riduzione di qualsiasi ulteriore impatto sul tenant.
+   - Eliminazione: rimozione della minaccia alla sicurezza.
+   - Ripristino: ripristino delle risorse del tenant allo stato in cui si trovavano prima dell'attacco.
 
-Dopo aver risolto l'evento imprevisto, prendere un momento per imparare da esso a:
+3. Dopo aver risolto l'evento imprevisto, eseguire le operazioni seguenti:
 
-- Comprendere il tipo di attacco e il relativo impatto.
-- Ricercare l'attacco nella community di sicurezza per una tendenza di attacco alla sicurezza.
-- Richiamare il flusso di lavoro utilizzato per risolvere l'evento imprevisto e aggiornare i flussi di lavoro e i playbook standard in base alle esigenze.
+   - Comprendere il tipo di attacco e il relativo impatto.
+   - Ricercare l'attacco nella community di sicurezza per una tendenza di attacco alla sicurezza.
+   - Richiamare il flusso di lavoro utilizzato per risolvere l'evento imprevisto e aggiornare i flussi di lavoro e i playbook standard in base alle esigenze.
+   - Determinare se sono necessarie modifiche alla sicurezza ed eseguire le operazioni necessarie per implementarle.
 
 Ecco un riepilogo del processo di base.
 

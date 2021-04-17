@@ -18,12 +18,12 @@ description: Gli amministratori possono imparare a utilizzare i criteri di recap
 ms.technology: mdo
 ms.prod: m365-security
 ROBOTS: NOINDEX
-ms.openlocfilehash: 09e07d8406b470fd3dac25944d013b997f2f90c1
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 9d737472be5da2af0a0a36beb4b7914b8bfe3a10
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760432"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876066"
 ---
 # <a name="configure-the-delivery-of-third-party-phishing-simulations-to-users-and-unfiltered-messages-to-secops-mailboxes"></a>Configurare il recapito di simulazioni di phishing di terze parti agli utenti e messaggi non filtrati alle cassette postali secOps
 
@@ -35,7 +35,7 @@ ms.locfileid: "51760432"
 > [!NOTE]
 > La funzionalità descritta in questo articolo è disponibile in Anteprima, non è disponibile per tutti gli utenti ed è soggetta a modifiche.
 
-Vogliamo proteggere l'organizzazione per impostazione [predefinita,](secure-by-default.md)in modo che Exchange Online Protection (EOP) non consenta elenchi attendibili o bypass di filtro per i messaggi che causano malware o verdetti di phishing ad alta confidenza. Tuttavia, riconosciamo che esistono scenari specifici che richiedono il recapito di messaggi non filtrati. Ad esempio:
+Per proteggere [l'organizzazione](secure-by-default.md)per impostazione predefinita, Exchange Online Protection (EOP) non consente elenchi attendibili o bypass di filtro per i messaggi che causano malware o verdetti di phishing ad alta confidenza. Esistono tuttavia scenari specifici che richiedono il recapito di messaggi non filtrati. Ad esempio:
 
 - **Simulazioni di phishing di terze** parti: gli attacchi simulati consentono di identificare gli utenti vulnerabili prima che un attacco reale influisca sull'organizzazione.
 - Cassette postali delle operazioni di sicurezza **(SecOps):** cassette postali dedicate utilizzate dai team di sicurezza per raccogliere e analizzare i messaggi non filtrati (buoni e non).
@@ -47,7 +47,7 @@ Si utilizza il _criterio di recapito avanzato_ in Microsoft 365 per impedire che
 - [Gli avvisi di](alerts.md) sistema predefiniti non vengono attivati per questi scenari.
 - [AIR e il clustering in Defender per Office 365](office-365-air.md) ignora questi messaggi.
 - In particolare per simulazioni di phishing di terze parti:
-  - [Gli invii di](admin-submission.md) amministratori generano una risposta automatica che indica che il messaggio fa parte di una campagna di simulazione di phishing e non rappresenta una minaccia reale. Gli avvisi e AIR non verranno attivati.
+  - [Gli invii di](admin-submission.md) amministratori generano una risposta automatica che indica che il messaggio fa parte di una campagna di simulazione di phishing e non è una minaccia reale. Gli avvisi e AIR non verranno attivati.
   - [I collegamenti sicuri in Defender per Office 365](safe-links.md) non bloccano o detonano gli URL identificati in modo specifico in questi messaggi.
   - [Gli allegati sicuri in Defender per Office 365](safe-attachments.md) non detonano gli allegati in questi messaggi.
 
@@ -61,7 +61,7 @@ I messaggi identificati dal criterio di recapito avanzato non sono minacce alla 
 - [Ricerca avanzata in Microsoft Defender for Endpoint](../defender-endpoint/advanced-hunting-overview.md)
 - [Visualizzazioni campagna](campaigns.md)
 
-## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare
+## <a name="what-do-you-need-to-know-before-you-begin"></a>Che cosa è necessario sapere prima di iniziare?
 
 - Aprire il Centro sicurezza e conformità in<https://protection.office.com/>. Per passare direttamente alla **pagina Recapito avanzato,** aprire <https://protection.office.com/advanceddelivery> .
 
@@ -98,7 +98,7 @@ Le voci di simulazione di phishing di terze parti configurate vengono visualizza
 
 3. Nel riquadro a comparsa della cassetta postale **SecOps** che si apre, immettere gli indirizzi di posta elettronica delle cassette postali di Exchange Online esistenti che si desidera designare come cassette postali SecOps. I gruppi di distribuzione non sono consentiti.
 
-4. Al termine, fare clic su **Salva**.
+4. Al termine, scegliere **Salva**.
 
 Le voci della cassetta postale SecOps configurate vengono visualizzate nella scheda Cassetta postale **SecOps.** Per apportare modifiche, **fare clic su** Modifica nella scheda.
 
@@ -106,8 +106,8 @@ Le voci della cassetta postale SecOps configurate vengono visualizzate nella sch
 
 Oltre ai due scenari che possono essere utili per i criteri di recapito avanzati, esistono altri scenari che potrebbero richiedere l'esclusione del filtro:
 
-- **Filtri di terze parti:** se il record MX del dominio non punta a Office 365 (i messaggi vengono instradati da un'altra [parte),](secure-by-default.md) la protezione per impostazione predefinita non è disponibile.
+- **Filtri di terze parti:** se il *record* MX del dominio non punta a Office 365 (i messaggi vengono instradati da un'altra parte), [la](secure-by-default.md) protezione per impostazione predefinita non *è disponibile.*
 
   Per ignorare il filtro Microsoft per i messaggi che sono già stati valutati dal filtro di terze parti, utilizzare le regole del flusso di posta (note anche come regole di trasporto), vedere [Use mail flow rules to set the SCL in messages](use-mail-flow-rules-to-set-the-spam-confidence-level-scl-in-messages.md).
 
-- **Falsi positivi in** esame: è possibile consentire temporaneamente a Determinati messaggi ancora [](admin-submission.md) analizzati da Microsoft tramite invii da parte dell'amministratore di segnalare a Microsoft messaggi positivi noti erroneamente contrassegnati come non corretti (falsi positivi). Come per tutte le sostituzioni, è consigliabile che queste quote siano temporanee.
+- **Falsi positivi in** esame: è possibile consentire temporaneamente a Determinati messaggi ancora [](admin-submission.md) analizzati da Microsoft tramite invii da parte dell'amministratore di segnalare a Microsoft messaggi positivi noti erroneamente contrassegnati come non corretti (falsi positivi). Come per tutte le sostituzioni, è **_consigliabile_** che tali quote siano effettuate temporaneamente.

@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: d38d7a54aa860049e1968e5b92c801107bea0514
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 79f8882e21f23e75d85813cde03260ef17adf246
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687962"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876110"
 ---
 #  <a name="microsoft-defender-for-endpoint-on-android---privacy-information"></a>Microsoft Defender per Endpoint su Android - Informazioni sulla privacy
 
@@ -32,7 +32,9 @@ ms.locfileid: "51687962"
 > Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 
 
 
-Defender for Endpoint per Android raccoglie le informazioni dai dispositivi Android configurati e le archivia nello stesso tenant in cui si dispone di Defender per Endpoint.
+Defender for Endpoint per Android raccoglie le informazioni dai dispositivi Android configurati e le archivia nello stesso tenant in cui si dispone di Defender per Endpoint. Le informazioni vengono raccolte per mantenere Defender for Endpoint per iOS sicuro, aggiornato, che funzioni come previsto e supportare il servizio.
+
+Per altre informazioni sull'archiviazione dei dati, vedi [Microsoft Defender per l'archiviazione e la privacy dei dati degli endpoint.](data-storage-privacy.md)
 
 Vengono raccolte informazioni per mantenere Defender for Endpoint per Android sicuro, aggiornato, che funzioni come previsto e supporti il servizio.
 
@@ -42,7 +44,7 @@ I dati necessari sono costituiti dai dati necessari per far funzionare Defender 
 
 ### <a name="app-information"></a>Informazioni sull'app
 
-Informazioni sui pacchetti di applicazioni Android (APK) nel dispositivo, tra cui
+Informazioni sui **pacchetti di** applicazioni Android dannosi (APK) nel dispositivo, tra cui
 
 -  Origine installazione
 -  Percorso di archiviazione (percorso file) dell'APK
@@ -50,7 +52,7 @@ Informazioni sui pacchetti di applicazioni Android (APK) nel dispositivo, tra cu
 
 ### <a name="web-page--network-information"></a>Pagina Web / Informazioni di rete
 
-- URL completo (nei browser supportati), quando si fa clic su
+- URL completo del sito Web solo quando viene rilevata una connessione o una pagina Web dannosa.
 - Informazioni di connessione
 - Tipo di protocollo (ad esempio HTTP, HTTPS e così via)
 
@@ -73,6 +75,9 @@ Informazioni sui pacchetti di applicazioni Android (APK) nel dispositivo, tra cu
     -   Nome entità utente - ID posta elettronica dell'utente
 
 ### <a name="product-and-service-usage-data"></a>Dati sull'utilizzo di prodotti e servizi
+
+Le informazioni seguenti vengono raccolte solo per l'app Microsoft Defender for Endpoint installata nel dispositivo. 
+
 -   Informazioni sul pacchetto dell'app, tra cui nome, versione e stato dell'aggiornamento dell'app
 
 -   Azioni eseguite nell'app
