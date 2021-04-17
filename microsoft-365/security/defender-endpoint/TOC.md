@@ -221,7 +221,8 @@
 #### [Risorse](mac-resources.md)
 
 ### [Microsoft Defender per endpoint su iOS]()
-#### [Panoramica di Microsoft Defender per Endpoint su iOS](microsoft-defender-endpoint-ios.md)
+#### [Panoramica di Microsoft Defender per endpoint su iOS](microsoft-defender-endpoint-ios.md)
+#### [Novità](ios-whatsnew.md)
 
 #### [Distribuzione]()
 ##### [Distribuzione di Microsoft Defender per Endpoint su iOS via Intune](ios-install.md)
@@ -631,4 +632,5 @@
 ##### [Eseguire la migrazione a Regole per la riduzione della superficie di attacco](migrating-asr-rules.md)
 
 # [Microsoft 365 Defender](../index.yml)
-# [Defender per Office 365](../office-365-security/overview.md)
+# [Defender per Office 365](../office-365-security/index.yml)
+# [Defender per identità](https://docs.microsoft.com/defender-for-identity/)

@@ -301,7 +301,7 @@
               href: how-dlp-works-between-admin-centers.md
             - name: Configurare e visualizzare gli avvisi per i criteri di prevenzione della perdita dei dati (anteprima)
               href: dlp-configure-view-alerts-policies.md
-            - name: Usare le etichette di riservatezza come condizione nei criteri di prevenzione della perdita dei dati (anteprima)
+            - name: Usare le etichette di riservatezza come condizione nei criteri di prevenzione della perdita dei dati
               href: dlp-sensitivity-label-as-condition.md
             - name: Usare i criteri di prevenzione della perdita dei dati per le app cloud non Microsoft
               href: dlp-use-policies-non-microsoft-cloud-apps.md
@@ -385,8 +385,12 @@
           items:
             - name: CellTrust
               href: archive-celltrust-data.md
-            - name: Cisco Jabber
+            - name: Cisco Jabber su MS SQL
               href: archive-ciscojabberonmssql-data.md
+            - name: Cisco Jabber on Oracle (anteprima)
+              href: archive-ciscojabberonoracle-data.md
+            - name: Cisco Jabber su PostgreSQL (anteprima)
+              href: archive-ciscojabberonpostgresql-data.md
             - name: .EML
               href: archive-eml-data.md
             - name: Connessione FX
