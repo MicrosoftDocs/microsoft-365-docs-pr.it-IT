@@ -16,12 +16,12 @@ ms.date: 04/14/2021
 audience: ITPro
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 560eeb1e1099576f9f4babf02cc38eb842094fd1
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 5175d630dd5d80b62451b3a1eafc4c2f6350ac32
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862486"
+ms.locfileid: "51876338"
 ---
 # <a name="troubleshoot-performance-issues-related-to-real-time-protection"></a>Risolvere i problemi di prestazioni correlati alla protezione in tempo reale
 
@@ -60,7 +60,7 @@ In **MPLog-xxxxxxxx-xxxxxx.log** è possibile trovare le informazioni stimate su
 
 | Nome del campo | Descrizione |
 |---|---|
-|ProcessImageName   | Nome immagine processo |
+|ProcessImageName | Nome immagine processo |
 | TotalTime | Durata cumulativa in millisecondi trascorsa nelle analisi dei file a cui accede questo processo |
 |Count | Numero di file analizzati a cui accede questo processo |
 |MaxTime |  Durata in millisecondi nella singola analisi più lunga di un file a cui si accede da questo processo |
@@ -69,13 +69,13 @@ In **MPLog-xxxxxxxx-xxxxxx.log** è possibile trovare le informazioni stimate su
 
 Se l'impatto sulle prestazioni è elevato, provare ad aggiungere il processo alle esclusioni percorso/processo seguendo la procedura descritta in Configurare e convalidare le esclusioni per le analisi di [Microsoft Defender Antivirus.](collect-diagnostic-data.md)
 
-Se il passaggio precedente non risolve il problema, puoi raccogliere ulteriori informazioni tramite [Process Monitor](#capture-process-logs-using-process-monitor) o Windows [Performance Recorder](#capture-performance-logs-using-windows-performance-recorder) nelle sezioni seguenti. 
+Se il passaggio precedente non risolve il problema, puoi raccogliere ulteriori informazioni tramite [Process Monitor](#capture-process-logs-using-process-monitor) o Windows [Performance Recorder](#capture-performance-logs-using-windows-performance-recorder) nelle sezioni seguenti.
      
 ## <a name="capture-process-logs-using-process-monitor"></a>Acquisire i registri dei processi con Process Monitor
 
-Process Monitor (ProcMon) è uno strumento di monitoraggio avanzato che può mostrare processi in tempo reale. Puoi usarlo per acquisire il problema di prestazioni in corso. 
+Process Monitor (ProcMon) è uno strumento di monitoraggio avanzato che può mostrare processi in tempo reale. Puoi usarlo per acquisire il problema di prestazioni in corso.
 
-1. Scaricare [Process Monitor v3.60](/sysinternals/downloads/procmon) in una cartella come `C:\temp` . 
+1. Scaricare [Process Monitor v3.60](/sysinternals/downloads/procmon) in una cartella come `C:\temp` .
 
 2. Per rimuovere il contrassegno del file dal Web:
     1. Fare clic con il **pulsante destroProcessMonitor.zip** e scegliere **Proprietà.**
@@ -188,7 +188,9 @@ In alternativa, puoi anche usare lo strumento da riga di comando *wpr.exe*, disp
 6. Seleziona **Aggiungi profili...** e seleziona il percorso del `WD.wprp` file.
 
 7. Dopo di che, dovresti vedere un nuovo set di profili in *Misurazioni* personalizzate denominato *Microsoft Defender per l'analisi endpoint* sotto di esso.
+
     ![in-file](images/wpr-infile.png)
+
     >[!WARNING]
     >Se windows Server dispone di almeno 64 GB di RAM, usa la misura personalizzata `Microsoft Defender for Endpoint analysis for large servers` invece di `Microsoft Defender for Endpoint analysis` . In caso contrario, il sistema potrebbe consumare una quantità elevata di memoria o buffer del pool non di paging che può causare instabilità del sistema. È possibile scegliere i profili da aggiungere espandendo **Analisi risorse.** Questo profilo personalizzato fornisce il contesto necessario per un'analisi approfondita delle prestazioni.
  
@@ -227,8 +229,8 @@ In alternativa, puoi anche usare lo strumento da riga di comando *wpr.exe*, disp
 
     ![Riempire i dettagli](images/wpr-12.png)
 
-    1. Selezionare **Nome file:** per determinare dove verrà salvato il file di traccia. Per impostazione predefinita, 1.is salvato in `%user%\Documents\WPR Files\` . 
-    1. Selezionare **Salva**. 
+    1. Selezionare **Nome file:** per determinare dove verrà salvato il file di traccia. Per impostazione predefinita, 1.is salvato in `%user%\Documents\WPR Files\` .
+    1. Selezionare **Salva**.
 
 14. Attendere durante l'unione della traccia.
 

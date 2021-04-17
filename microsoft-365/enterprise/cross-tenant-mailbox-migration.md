@@ -14,12 +14,12 @@ ms.custom:
 - it-pro
 ms.collection:
 - M365-subscription-management
-ms.openlocfilehash: f24f519ec3bb12622d74c1d02fbc0bb017aa2b24
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: d52a0ca4a2dc9b799a32f70962416ffe190e16db
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476410"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876188"
 ---
 # <a name="cross-tenant-mailbox-migration-preview"></a>Migrazione delle cassette postali tra tenant (anteprima)
 
@@ -435,6 +435,10 @@ Una volta che la cassetta postale si sposta dall'origine alla destinazione, è n
 **È necessario aggiornare RemoteMailboxes nell'origine locale dopo lo spostamento?**
 
 Sì, è consigliabile aggiornare targetAddress (RemoteRoutingAddress/ExternalEmailAddress) degli utenti locali di origine quando la cassetta postale del tenant di origine si sposta nel tenant di destinazione.  Anche se il routing della posta può seguire le segnalazioni tra più utenti di posta con targetAddresses diversi, le ricerche sulla disponibilità per gli utenti di posta devono essere mirate alla posizione dell'utente della cassetta postale. Le ricerche sulla disponibilità non inseguono più reindirizzamenti. 
+
+**Eseguire la migrazione delle riunioni di Teams tra tenant?**  
+
+Le riunioni verranno spostate, ma l'URL della riunione di Teams non viene aggiornato quando gli elementi vengono migrati tra tenant. Poiché l'URL non sarà valido nel tenant di destinazione, sarà necessario rimuovere e ricreare le riunioni di Teams.
 
 **Il contenuto della cartella chat di Teams esegue la migrazione tra tenant?**  
 
