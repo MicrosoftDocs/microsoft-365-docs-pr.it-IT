@@ -140,6 +140,7 @@
 
 #### La risoluzione dei problemi Microsoft Defender Antivirus include:
 ##### [Risolvere i problemi relativi alla creazione di report di Microsoft Defender Antivirus nella procedura di aggiornamento per la conformità](troubleshoot-reporting.md)
+##### [Risolvere i problemi di prestazioni](troubleshoot-performance-issues.md)
 ##### [Esaminare i log eventi e i codici di errore per risolvere i problemi relativi a Microsoft Defender Antivirus](troubleshoot-microsoft-defender-antivirus.md)
 ##### [Risolvere i problemi relativi a Microsoft Defender Antivirus durante la migrazione da una soluzione di terze parti](troubleshoot-microsoft-defender-antivirus-when-migrating.md)
 
@@ -221,7 +222,7 @@
 #### [Risorse](mac-resources.md)
 
 ### [Microsoft Defender per endpoint su iOS]()
-#### [Panoramica di Microsoft Defender per endpoint su iOS](microsoft-defender-endpoint-ios.md)
+#### [Panoramica di Microsoft Defender per Endpoint su iOS](microsoft-defender-endpoint-ios.md)
 #### [Novità](ios-whatsnew.md)
 
 #### [Distribuzione]()
@@ -249,6 +250,7 @@
 ##### [Rilevare e bloccare applicazioni potenzialmente indesiderate](linux-pua.md)
 ##### [Pianificare analisi con Microsoft Defender per Endpoint su Linux](linux-schedule-scan-atp.md)
 ##### [Pianificare un aggiornamento di Microsoft Defender per Endpoint (Linux)](linux-update-MDE-Linux.md)
+##### [Distribuire Defender per endpoint su Linux con Chef](linux-deploy-defender-for-endpoint-with-chef.md)
 
 #### [Risoluzione dei problemi]()
 ##### [Risoverei problemi di installazione](linux-support-install.md)

@@ -19,12 +19,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Panoramica del punteggio della produttività Microsoft.
-ms.openlocfilehash: d818bd766f76f3df6c67a740d6ad1994a2be66de
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 0eac22eadd099ebe4c7efbdf1198f6dc576dc080
+ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50914583"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "51876132"
 ---
 # <a name="microsoft-productivity-score"></a>Punteggio della produttività Microsoft 
 
@@ -155,3 +155,11 @@ Questo report aiuta le organizzazioni a capire:
 ## <a name="we-want-to-hear-from-you"></a>L'opinione degli utenti è importante
 
 È possibile condividere la propria opinione sul punteggio della produttività e le proprie idee su come migliorarlo. Usare le sezioni **Feedback** all'interno del prodotto e/o contatta il team dedicato al Punteggio della produttività all'indirizzo prodscorefeedback@microsoft.com.
+
+## <a name="related-content"></a>Contenuto correlato
+
+[Monitorare l'attività Microsoft 365 utilizzando i report](https://docs.microsoft.com/microsoft-365/admin/activity-reports/activity-reports) (articolo)
+
+[Abilitare l'analisi dell'utilizzo di Microsoft 365](https://docs.microsoft.com/microsoft-365/admin/usage-analytics/enable-usage-analytics) (articolo)
+
+[Informazioni generali sull'interfaccia di amministrazione di Microsoft 365](https://docs.microsoft.com/microsoft-365/business-video/admin-center-overview) (video)

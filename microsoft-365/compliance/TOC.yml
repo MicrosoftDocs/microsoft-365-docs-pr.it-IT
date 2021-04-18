@@ -208,7 +208,7 @@
             - name: Confrontare le versioni di OME
               href: ome-version-comparison.md
             - name: Domande frequenti su Office 365 Message Encryption
-              href: ome-faq.md
+              href: ome-faq.yml
             - name: Modalità di protezione dei segreti di posta elettronica in Exchange Online
               href: exchange-online-secures-email-secrets.md
             - name: Modalità d'uso di TLS in Exchange Online per proteggere le connessioni di posta elettronica in Office 365
@@ -305,8 +305,10 @@
               href: dlp-sensitivity-label-as-condition.md
             - name: Usare i criteri di prevenzione della perdita dei dati per le app cloud non Microsoft
               href: dlp-use-policies-non-microsoft-cloud-apps.md
-            - name: Condizioni ed eccezioni criteri di prevenzione della perdita dei dati (anteprima)
+            - name: Condizioni ed eccezioni dei criteri di prevenzione della perdita dei dati
               href: dlp-conditions-and-exceptions.md
+            - name: Riferimento ai suggerimenti per i criteri di prevenzione della perdita dei dati
+              href: dlp-policy-tips-reference.md
 - name: Gestire la governance delle informazioni
   items:
     - name: Gestire i propri dati
