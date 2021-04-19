@@ -3,7 +3,7 @@ title: Altri endpoint non inclusi nel servizio Web per URL e indirizzo IP di Off
 ms.author: kvice
 author: kelleyvice-msft
 manager: laurawi
-ms.date: 04/29/2020
+ms.date: 04/19/2021
 audience: Admin
 ms.topic: conceptual
 ms.service: o365-administration
@@ -24,12 +24,12 @@ search.appverid:
 ms.assetid: ''
 description: 'Riepilogo: il nuovo servizio Web endpoint non include un numero limitato di endpoint per scenari specifici.'
 hideEdit: true
-ms.openlocfilehash: e9c9f28749691a8a2585c0865895718ea86d7141
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 6c545b6060b44ebe234baaebd3ae1eb2fdb0fb89
+ms.sourcegitcommit: 76f3c75413cc960289489d0ca29efadb8a9a5b31
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50927007"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "51887210"
 ---
 # <a name="additional-endpoints-not-included-in-the-office-365-ip-address-and-url-web-service"></a>Altri endpoint non inclusi nel servizio Web per URL e indirizzo IP di Office 365
 
@@ -46,8 +46,8 @@ Escluso il DNS, sono tutti facoltativi per la maggior parte dei clienti, a meno 
 | Riga | Scopo | Destinazione | Tipo |
 |:-----|:-----|:-----|:-----|
 | 1  | [Servizio di importazione](https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6) per l'inserimento di file e PST | Vedere il [servizio di importazione](https://support.office.com/article/use-network-upload-to-import-your-organization-pst-files-to-office-365-103f940c-0468-4e1a-b527-cc8ad13a5ea6) per i requisiti aggiuntivi. | Scenario in uscita non comune |
-| 2   | [Assistente supporto e ripristino Microsoft per Office 365](https://diagnostics.office.com/#/)  | https<span>://</span>autodiscover.outlook.com <BR> <span>https://</span>officecdn.microsoft.com <BR> <span>https://</span>api.diagnostics.office.com <BR> <span>https://</span>apibasic.diagnostics.office.com <BR> <span>https://</span>autodiscover-s.outlook.com <BR> <span>https://</span>cloudcheckenabler.azurewebsites.net <BR> <span>https://</span>dcs-staging.azure-api.net <BR> <span>https://</span>login.live.com <BR> <span>https://</span>login.microsoftonline.com <BR> <span>https://</span>login.windows.net <BR> <span>https://</span>o365diagtelemetry.trafficmanager.net <BR> <span>https://</span>odc.officeapps.live.com <BR> <span>https://</span>offcatedge.azureedge.net <BR> <span>https://</span>officeapps.live.com <BR> <span>https://</span>outlook.office365.com <BR> <span>https://</span>outlookdiagnostics.azureedge.net | Traffico del server in uscita |
-| 3   | Azure AD Connect (opzione con SSO) – WinRM e sessione remota di PowerShell | Ambiente STS del cliente (server AD FS e proxy AD FS) \| porte TCP 80 e 443 | Traffico del server in ingresso |
+| 2  | [Assistente supporto e ripristino Microsoft per Office 365](https://diagnostics.office.com/#/)  | https<span>://</span>autodiscover.outlook.com <BR> <span>https://</span>officecdn.microsoft.com <BR> <span>https://</span>api.diagnostics.office.com <BR> <span>https://</span>apibasic.diagnostics.office.com <BR> <span>https://</span>autodiscover-s.outlook.com <BR> <span>https://</span>cloudcheckenabler.azurewebsites.net <BR> <span>https://</span>login.live.com <BR> <span>https://</span>login.microsoftonline.com <BR> <span>https://</span>login.windows.net <BR> <span>https://</span>o365diagtelemetry.trafficmanager.net <BR> <span>https://</span>odc.officeapps.live.com <BR> <span>https://</span>offcatedge.azureedge.net <BR> <span>https://</span>officeapps.live.com <BR> <span>https://</span>outlook.office365.com <BR> <span>https://</span>outlookdiagnostics.azureedge.net | Traffico del server in uscita |
+| 3  | Azure AD Connect (opzione con SSO) – WinRM e sessione remota di PowerShell | Ambiente STS del cliente (server AD FS e proxy AD FS) \| porte TCP 80 e 443 | Traffico del server in ingresso |
 | 4   | STS come server proxy AD FS (solo per clienti federati) | STS del cliente (come proxy AD FS) \| porte TCP 443 o TCP 49443 con ClientTLS | Traffico del server in ingresso |
 | 5   | [Messaggistica unificata di Exchange Online/integrazione SBC](/exchange/voice-mail-unified-messaging/telephone-system-integration-with-um/configuration-notes-for-session-border-controllers) | Bidirezionale tra session border controller locale e *.um.outlook.com | Solo traffico del server in uscita |
 | 6   | Migrazione della cassetta postale. Quando viene avviata la migrazione della cassetta postale da [Exchange ibrido](/exchange/exchange-deployment-assistant) locale a Office 365, Office 365 si connette al server pubblicato di Servizi Web Exchange (EWS) / Servizi di replica delle cassette postali (MRS). Se sono necessari gli indirizzi IP NAT utilizzati dai server di Exchange Online per limitare le connessioni in ingresso da specifici intervalli IP di origine, questi sono elencati in [URL e intervalli IP di Office 365](urls-and-ip-address-ranges.md) nell'area dei servizi "Exchange Online". Occorre verificare che non sia influenzato l'accesso agli endpoint EWS pubblicati come OWA, assicurandosi che il proxy MRS si risolve in un FQDN e indirizzo IP pubblico separati prima di limitare i collegamenti TCP 443 da specifici intervalli IP di origine. | Proxy EWS/MRS locale del cliente<br> Porta TCP 443 | Traffico del server in ingresso |
@@ -57,7 +57,7 @@ Escluso il DNS, sono tutti facoltativi per la maggior parte dei clienti, a meno 
 | 10    | Il servizio di rilevamento automatico è usato negli scenari di [Exchange ibrido](/exchange/exchange-deployment-assistant) con [autenticazione moderna ibrida con Outlook per iOS e Android](/Exchange/clients/outlook-for-ios-and-android/use-hybrid-modern-auth) <BR> <BR> ```*.acompli.net``` <BR> <BR> ```*.outlookmobile.com``` <BR> <BR> ```*.outlookmobile.us``` <BR> <BR> ```52.125.128.0/20``` <BR> ```52.127.96.0/23``` <BR> | Server Exchange locale del cliente in TCP 443 | Traffico del server in ingresso |
 | 11   | Autenticazione di Azure AD ibrida di Exchange | *.msappproxy.net | Traffico solo server in uscita TCP |
 | 12   | Skype for Business in Office 2016 include la condivisione dello schermo basata su video che utilizza le porte UDP. I precedenti client di Skype for Business in Office 2013 e versioni precedenti utilizzavano la porta RDP su TCP 443. | Porta TCP 443 aperta su 52.112.0.0/14 | Client precedenti di Skype for Business in Office 2013 e versioni precedenti |
-| 13   | Connettività server ibrida locale di Skype for Business per Skype for Business online | 13.107.64.0/18, 52.112.0.0/14  <BR> Porte UDP 50.000-59.999 <BR>  Porte TCP 50.000-59.999; 5061 | Connettività in uscita del server Skype for Business locale |
+| 13  | Connettività server ibrida locale di Skype for Business per Skype for Business online | 13.107.64.0/18, 52.112.0.0/14  <BR> Porte UDP 50.000-59.999 <BR>  Porte TCP 50.000-59.999; 5061 | Connettività in uscita del server Skype for Business locale |
 | 14   | La rete PSTN cloud con connettività ibrida locale richiede la connettività di rete aperta agli host locali. Per ulteriori dettagli sulle configurazioni ibride di Skype for Business Online,  | Vedere [Pianificare la connettività ibrida tra Skype for Business Server e Office 365](/skypeforbusiness/hybrid/plan-hybrid-connectivity) | Ingresso ibrido locale di Skype for Business |
 | 15   | **FQDN di autenticazione e identità** <br> Il nome di dominio completo (FQDN) ```secure.aadcdn.microsoftonline-p.com``` deve essere situato nell'area siti attendibili di Edge o Internet Explorer (IE) del client per poter funzionare. |  | Siti attendibili |
 | 16   |  **FQDN di Microsoft Teams** <br> Se si usa Internet Explorer o Microsoft Edge, è necessario attivare i cookie dei siti Web visualizzati e di terze parti e aggiungere i nomi di dominio completo per Teams per i siti attendibili. Si tratta di un'aggiunta all'intera famiglia di FQDN, CDN e telemetrie elencata in riga 14. Vedere [Problemi noti di Microsoft Teams](/microsoftteams/known-issues) per ulteriori informazioni. |  | Siti attendibili |
@@ -74,7 +74,7 @@ Escluso il DNS, sono tutti facoltativi per la maggior parte dei clienti, a meno 
 
 [Gestione degli endpoint di Office 365](managing-office-365-endpoints.md)
   
-[Monitorare la connettività di Microsoft 365](./monitor-connectivity.md?view=o365-worldwide)
+[Monitorare la connettività di Microsoft 365](./monitor-connectivity.md)
   
 [Connettività client](https://support.office.com/article/client-connectivity-4232abcf-4ae5-43aa-bfa1-9a078a99c78b)
   
