@@ -18,12 +18,12 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Riepilogo: comprendere le azioni e gli impatti delle fasi di migrazione del passaggio da Microsoft Cloud Germania (Microsoft Cloud Deutschland) ai servizi di Office 365 nella nuova area dati tedesca.'
-ms.openlocfilehash: cd83d2abcc061562047aeb384856cc9ab04dcad3
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 121f2059e4a13684169ab40b7bfdaae13ef6045e
+ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760039"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51899249"
 ---
 # <a name="migration-phases-actions-and-impacts-for-the-migration-from-microsoft-cloud-deutschland"></a>Azioni e impatti delle fasi di migrazione per la migrazione da Microsoft Cloud Deutschland
 
@@ -131,11 +131,8 @@ Nel caso in cui si utilizzino ancora flussi di lavoro di SharePoint 2013, limita
 Considerazioni aggiuntive:
 
 - Se l'organizzazione utilizza ancora flussi di lavoro di SharePoint 2010, non funzioneranno più dopo il 31 dicembre 2021. I flussi di lavoro di SharePoint 2013 rimarranno supportati, anche se disattivati per impostazione predefinita per i nuovi tenant a partire dal 1 novembre 2020. Al termine della migrazione al servizio SharePoint Online, è consigliabile passare a Power Automate o ad altre soluzioni supportate.
- 
-- I clienti di Microsoft Cloud Deutschland la cui istanza di SharePoint Online non è ancora stata migrata devono rimanere nel modulo PowerShell di SharePoint Online/Microsoft.SharePointOnline.CSOM versione 16.0.20616.12000 o successiva. In caso contrario, le connessioni a SharePoint Online tramite PowerShell o il modello a oggetti sul lato client avranno esito negativo.
-
+ - I clienti di Microsoft Cloud Deutschland la cui istanza di SharePoint Online non è ancora stata migrata devono rimanere nel modulo PowerShell di SharePoint Online/Microsoft.SharePointOnline.CSOM versione 16.0.20616.12000 o successiva. In caso contrario, le connessioni a SharePoint Online tramite PowerShell o il modello a oggetti sul lato client avranno esito negativo.
 - Durante questa fase, gli indirizzi IP dietro gli URL di SharePoint cambieranno. Dopo la transizione ai servizi globali di Office 365, gli indirizzi per gli URL del tenant conservati (ad esempio, e ) verranno modificati negli URL e negli intervalli di indirizzi IP di `contoso.sharepoint.de` `contoso-my.sharepoint.de` Microsoft [365 (SharePoint Online e OneDrive for Business)](/microsoft-365/enterprise/urls-and-ip-address-ranges?view=o365-worldwide#sharepoint-online-and-onedrive-for-business).
-
 
 > [!NOTE]
 > Nel caso in cui si utilizzi eDiscovery, assicurarsi di essere a conoscenza [dell'esperienza di migrazione di eDiscovery.](ms-cloud-germany-transition-add-scc.md)
@@ -150,7 +147,8 @@ La nuova area geografica "Germania" viene aggiunta alla configurazione dell'orga
 - Eseguire la transizione di utenti e servizi dagli URL MCD legacy ( ) ai nuovi URL dei servizi di `https://outlook.office.de` Office 365 ( `https://outlook.office365.com` ).
 -  I servizi Exchange Online (Outlook Web Access e Interfaccia di amministrazione di Exchange) per la nuova area data center tedesca saranno disponibili da questa fase, ma non saranno disponibili prima.
 - Gli utenti possono continuare ad accedere al servizio tramite URL MCD legacy durante la migrazione, tuttavia devono smettere di usare gli URL legacy al termine della migrazione.
-- Gli utenti devono passare all'utilizzo del portale di Office globale per le funzionalità di Office Online (Calendario, Posta, Persone). L'esplorazione dei servizi non ancora migrati nei servizi di Office 365 non funzionerà finché non viene eseguita la migrazione.
+- Gli utenti devono passare all'utilizzo del portale di Office globale per le funzionalità di Office Online (Calendario, Posta, Persone). L'esplorazione dei servizi non ancora migrati nei servizi di Office 365 non funzionerà finché non viene eseguita la migrazione. 
+- Questa limitazione si applica anche a servizi in background come "Account personale". Il mio account per i servizi globali sarà disponibile dopo il completamento della fase 9. Fino a questo momento, gli utenti devono usare il portale MCD per gestire le impostazioni dell'account.
 - Outlook Web App non fornirà l'esperienza delle cartelle pubbliche durante la migrazione.
 
 Se si desidera modificare le foto degli utenti durante la fase 5, vedere [Exchange Online PowerShell - Set-UserPhoto durante la fase 5.](#exchange-online-powershell)
@@ -161,6 +159,9 @@ Se si desidera modificare le foto degli utenti durante la fase 5, vedere [Exchan
 Le impostazioni DNS gestite dal cliente per l'individuazione automatica che attualmente puntano a Microsoft Cloud Deutschland devono essere aggiornate per fare riferimento all'endpoint globale di Office 365 al completamento della fase di Exchange Online (fase 5). <br> Le voci DNS esistenti con CNAME che puntano autodiscover-outlook.office.de devono essere aggiornate in modo che puntino a **autodiscover.outlook.com**.
 
 I clienti che non eseguono questi aggiornamenti DNS al termine della fase di migrazione **9** potrebbero verificarsi problemi di servizio al termine della migrazione.
+
+> [!NOTE]
+> Gli errori di convalida nell'interfaccia di amministrazione per i domini personalizzati per la voce di individuazione automatica possono essere ignorati. I servizi funzionano correttamente solo quando il record CNAME è stato modificato in autodiscover.outlook.com.
 
 ### <a name="exchange-online-powershell"></a>Exchange Online PowerShell
 **Si applica a:** Amministratori di Exchange Online che utilizzano PowerShell di Exchange Online
@@ -182,29 +183,21 @@ L'utilizzo del cmdlet **Di PowerShell Set-UserPhoto** comporta un errore se è s
  dove `<user_email>` è il segnaposto per l'ID di posta elettronica della cassetta postale dell'utente. 
 
 Considerazioni aggiuntive:
-<!--
-    The statement below is not clear. What does myaccount.microsoft.com mean?
-
-
-- `myaccount.microsoft.com` will only work after the tenant cutover in phase 9. Links will produce "something went wrong" error messages until that time.
--->
 - Agli utenti di Outlook Web App che accedono a una cassetta postale condivisa nell'altro ambiente (ad esempio, un utente nell'ambiente MCD accede a una cassetta postale condivisa nell'ambiente globale) verrà richiesto di eseguire l'autenticazione una seconda volta. L'utente deve prima autenticare e accedere alla propria cassetta postale in `outlook.office.de` , quindi aprire la cassetta postale condivisa in `outlook.office365.com` . Dovranno eseguire l'autenticazione una seconda volta quando accedono alle risorse condivise ospitate nell'altro servizio.
 - Per i clienti Microsoft Cloud Deutschland esistenti o quelli in transizione, quando una cassetta postale condivisa viene aggiunta a Outlook utilizzando **File > Info > Aggiungi account**, la visualizzazione delle autorizzazioni del calendario potrebbe non riuscire (il client Outlook tenta di utilizzare l'API Rest `https://outlook.office.de/api/v2.0/Me/Calendars` ). I clienti che desiderano aggiungere un account per visualizzare le autorizzazioni del calendario possono aggiungere la chiave del Registro di sistema come descritto in [User experience changes for sharing a calendar in Outlook](https://support.microsoft.com/office/user-experience-changes-for-sharing-a-calendar-in-outlook-5978620a-fe6c-422a-93b2-8f80e488fdec) per garantire che questa azione abbia esito positivo. Questa chiave del Registro di sistema può essere distribuita a livello di organizzazione tramite Criteri di gruppo.
+- Tutti i clienti che utilizzano una configurazione ibrida di Exchange attiva non sono in grado di spostare le cassette postali da Exchange Server locale a Exchange Online, né a Microsoft Cloud Deutschland, né alla nuova area dati in Germania. I clienti devono assicurarsi che gli spostamenti continui delle cassette postali siano stati completati prima della fase 5 e che siano ripresi dopo il completamento di questa fase.
 - Assicurarsi che tutti gli utenti che utilizzano protocolli legacy (POP3/IMAP4/SMTP) per i propri dispositivi siano pronti a modificare gli endpoint nel client dopo che la cassetta postale di Exchange è stata spostata nella nuova area del datacenter tedesco, come descritto nei passaggi [di pre-migrazione](ms-cloud-germany-transition-add-pre-work.md#exchange-online)per Exchange Online.
+- La pianificazione delle riunioni skype for business in Outlook Web App non è più disponibile dopo la migrazione della cassetta postale. Se necessario, gli utenti devono invece utilizzare Outlook.
 
 Per ulteriori informazioni sulle differenze per le organizzazioni nella migrazione e dopo la migrazione delle risorse di Exchange Online, esaminare le informazioni in [Customer experience during the migration to Office 365 services in the new German datacenter regions](ms-cloud-germany-transition-experience.md).
-
 
 ## <a name="phase-6-exchange-online-protection--security-and-compliance"></a>Fase 6: Exchange Online Protection / Sicurezza e conformità
 
 **Si applica a:** Tutti i clienti che utilizzano Exchange Online<br>
 
-Le funzionalità back-end di Exchange Online Protection (EOP) vengono copiate nella nuova area geografica "Germania".
+Le funzionalità back-end di Exchange Online Protection (EOP) vengono copiate nella nuova area geografica "Germania". Exchange Online consente il routing da host esterni a Office 365 e vengono migrati i dettagli del tenant della cronologia, che include anche servizi back-end per le funzionalità di sicurezza e conformità.
 
-| Step(s) | Descrizione | Impatto |
-|:-------|:-------|:-------|
-| Migrazione del routing di Exchange Online e dei dettagli cronologici dei messaggi. | Exchange Online consente il routing da host esterni a Office 365. I record MX esterni vengono instradati al servizio EOP. Viene eseguita la migrazione della configurazione del tenant e dei dettagli cronologici. |<ul><li>Le voci DNS gestite da Microsoft vengono aggiornate da Office 365 Germany EOP ai servizi di Office 365.</li><li>I clienti devono attendere 30 giorni dopo la doppia scrittura EOP per la migrazione EOP. In caso contrario, potrebbe verificarsi una perdita di dati.</li></ul>|
-||||
+I clienti che utilizzano solo le funzionalità di Exchange Online (non ibrido) non devono prestare attenzione in questa fase.
 
 ### <a name="exchange-online-hybrid-deployments"></a>Distribuzioni ibride di Exchange Online
 **Si applica a:** Tutti i clienti che utilizzano una configurazione ibrida di Exchange attiva con server Exchange locali
@@ -223,19 +216,18 @@ Set-SendConnector -Identity <SendConnectorName> -TlsDomain "mail.protection.outl
 
 **Si applica a:** Tutti i clienti che usano Skype for Business online
 
-Assicurarsi di avere familiarità con la procedura di migrazione di [Skype for Business Online.](ms-cloud-germany-transition-add-pre-work.md#skype-for-business-online)
+Esaminare i [passaggi di pre-migrazione per la migrazione di Skype for Business Online](ms-cloud-germany-transition-add-pre-work.md#skype-for-business-online) e assicurarsi di aver completato tutti i passaggi.
+In questa fase, Skype for Business verrà migrato a Microsoft Teams. I clienti Skype for Business esistenti vengono migrati ai servizi globali di Office 365 in Europa e quindi vengono migrati a Microsoft Teams nell'area "Germania" dei servizi di Office 365.
 
-<!--
-    Question from ckinder
-    the PowerShell command seems to be incomplete
--->
+- Gli utenti non potranno accedere a Skype for Business alla data di migrazione. Dieci giorni prima della migrazione, il cliente riceverà un messaggio nell'interfaccia di amministrazione che annuncia quando avrà luogo la migrazione e di nuovo all'inizio della migrazione.
+- Viene eseguita la migrazione della configurazione dei criteri.
+- Gli utenti verranno migrati in Teams e non avranno più accesso a Skype for Business dopo la migrazione.
+- Gli utenti devono avere installato il client desktop di Microsoft Teams. L'installazione verrà eseguita durante i 10 giorni tramite criteri nell'infrastruttura di Skype for Business, ma in caso di errore, gli utenti dovranno comunque scaricare il client o connettersi con un browser supportato.
+- I contatti e le riunioni verranno migrati in Microsoft Teams.
+- Gli utenti non potranno accedere a Skype for Business tra le transizioni dei servizi di tempo ai servizi di Office 365 e non fino al completamento delle voci DNS dei clienti.
+- I contatti e le riunioni esistenti continueranno a funzionare come riunioni Skype for Business.
 
-| Step(s) | Descrizione | Impatto |
-|:-------|:-------|:-------|
-| Migrazione di Skype for Business a Teams. | I clienti Skype for Business esistenti vengono migrati ai servizi globali di Office 365 in Europa e quindi vengono migrati a Microsoft Teams nell'area "Germania" dei servizi di Office 365. |<ul><li>Gli utenti non potranno accedere a Skype for Business alla data di migrazione. Dieci giorni prima della migrazione, inseriamo nell'interfaccia di amministrazione per sapere quando verrà completata la migrazione e di nuovo quando inizieremo la migrazione.</li><li> Viene eseguita la migrazione della configurazione dei criteri. </li><li>Gli utenti verranno migrati in Teams e non avranno più Skype for Business dopo la migrazione. </li><li>Gli utenti devono avere installato il client desktop di Teams. L'installazione verrà eseguita durante i 10 giorni tramite criteri nell'infrastruttura di Skype for Business, ma in caso di errore, gli utenti dovranno comunque scaricare il client o connettersi con un browser supportato. </li><li>I contatti e le riunioni verranno migrati in Teams.</li><li>Gli utenti non potranno accedere a Skype for Business tra le transizioni dei servizi di tempo ai servizi di Office 365 e non fino al completamento delle voci DNS dei clienti. </li><li>I contatti e le riunioni esistenti continueranno a funzionare come riunioni Skype for Business. </li></ul>|
-||||
-
-Se devi connetterti a Skype for Business online con PowerShell dopo il completamento della fase di migrazione 9, usa il codice seguente per connetterti:
+Se devi connetterti a Skype for Business online con PowerShell dopo il completamento della fase di migrazione 9, usa il codice di PowerShell seguente per connetterti:
 
 ```powershell
 Import-Module MicrosoftTeams
@@ -294,13 +286,21 @@ Nel caso di app line-of-business, assicurati di aver completato la procedura pre
 
 **Si applica a:** Tutti i clienti
 
-Quando il tenant di Office 365 completa il passaggio finale della migrazione [Azure AD Finalization (Fase 9)] tutti i servizi vengono transitati a livello mondiale. Nessuna applicazione o utente deve accedere alle risorse per il tenant in uno qualsiasi degli endpoint di Microsoft Cloud Deutschland. Automaticamente, 30 giorni dopo il completamento della finalizzazione, il servizio Microsoft Cloud Deutschland Azure AD interromperà l'accesso degli endpoint per il tenant di transizione. Le richieste degli endpoint, ad esempio l'autenticazione, avranno esito negativo da questo punto in avanti nel servizio Microsoft Cloud Deutschland. 
+Quando il tenant di Office 365 completa il passaggio finale della migrazione (Azure AD Finalization (Fase 9)) tutti i servizi vengono transitati a livello mondiale. Nessuna applicazione o utente deve accedere alle risorse per il tenant in uno qualsiasi degli endpoint di Microsoft Cloud Deutschland. Automaticamente, 30 giorni dopo il completamento della finalizzazione, il servizio Microsoft Cloud Deutschland Azure AD interromperà l'accesso degli endpoint per il tenant di transizione. Le richieste degli endpoint, ad esempio l'autenticazione, avranno esito negativo da questo punto in avanti nel servizio Microsoft Cloud Deutschland. 
 
 | Step(s) | Descrizione | Impatto |
 |:-------|:-------|:-------|
 | Aggiornare gli endpoint utente | Verificare che tutti gli utenti accertano il servizio utilizzando gli endpoint Microsoft in tutto il mondo adeguati |30 giorni dopo la finalizzazione della migrazione, gli endpoint di Microsoft Cloud Deutschland smetteranno di rispettare le richieste; il traffico del client o dell'applicazione avrà esito negativo.  |
 | Aggiornare gli endpoint dell'applicazione Azure AD | È necessario aggiornare gli endpoint di Autenticazione, Azure Active Directory (Azure AD) e MS Graph per le applicazioni a quelli del servizio Microsoft Worldwide. | 30 giorni dopo la finalizzazione della migrazione, gli endpoint di Microsoft Cloud Deutschland smetteranno di rispettare le richieste; il traffico del client o dell'applicazione avrà esito negativo. |
 ||||
+
+### <a name="azure-ad-connect"></a>Azure AD Connect
+**Si applica a:** Tutti i clienti che sincronizzano le identità con Azure AD connect
+
+| Step(s) | Descrizione | Impatto |
+|:-------|:-------|:-------|
+| Aggiornare Azure AD Connect. | Una volta completato il cut over ad Azure AD, l'organizzazione usa completamente i servizi di Office 365 e non è più connessa a Microsoft Cloud Deutschland. A questo punto, il cliente deve assicurarsi che il processo di sincronizzazione delta sia stato finalizzato e, successivamente, modificare il valore stringa di `AzureInstance` da 3 (Microsoft Cloud Deutschland) a 0 nel percorso del Registro di `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Azure AD Connect` sistema. | Modificare il valore di `AzureInstance` , la chiave del Registro di sistema. In caso contrario, gli oggetti non verranno sincronizzati dopo che gli endpoint di Microsoft Cloud Deutschland non saranno più disponibili. |
+|||||
 
 ## <a name="post-migration"></a>Post-migrazione
 

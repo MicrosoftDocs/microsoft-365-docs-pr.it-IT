@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 964b7ee01277f396760543c45de8e6207df6bfcb
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 8c5173da14e1b1ae1820f00e79feb966ba7f15f6
+ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063445"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51899341"
 ---
 # <a name="provide-feedback-on-microsoft-365-defender"></a>Inviare commenti e suggerimenti su Microsoft 365 Defender
 
@@ -36,6 +36,11 @@ ms.locfileid: "51063445"
 - Microsoft 365 Defender
 
 Il tuo feedback ci aiuta a migliorare la protezione dell'ambiente dagli attacchi avanzati. Condividi l'esperienza, le impression e le richieste fornendo feedback.
+
+Guarda questo video per vedere quanto è facile fornire feedback.
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LWeP]
+
 
 1. Da qualsiasi parte del portale, selezionare **Invia feedback.** 
 

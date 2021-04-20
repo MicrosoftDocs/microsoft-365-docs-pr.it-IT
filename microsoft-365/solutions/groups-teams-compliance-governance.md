@@ -15,12 +15,12 @@ ms.custom:
 - M365solutions
 f1.keywords: NOCSH
 description: Informazioni sulle opzioni di conformità per i gruppi di Microsoft 365, Teams e la collaborazione di SharePoint.
-ms.openlocfilehash: 88083d88b274e750e0fc6f1907268c996312163c
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 5006f0cf9f7eb174082d4fc2508bf112864fcba3
+ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50920893"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51899353"
 ---
 # <a name="compliance-options-for-microsoft-365-groups-teams-and-sharepoint-collaboration"></a>Opzioni di conformità per i gruppi di Microsoft 365, Teams e la collaborazione di SharePoint
 
@@ -60,7 +60,7 @@ Le chat utente vengono mantenute a tempo indeterminato anche se un account utent
 
 - [Criteri di conservazione in Microsoft Teams](/microsoftteams/retention-policies)
 
-È possibile impostare un singolo criterio di conservazione per applicarlo ai messaggi di gruppi, chat di Teams e canali di Microsoft 365. 
+È possibile impostare un singolo criterio di conservazione per applicarlo ai messaggi di chat di Teams e al canale di Teams. 
 
 Risorse aggiuntive:
 

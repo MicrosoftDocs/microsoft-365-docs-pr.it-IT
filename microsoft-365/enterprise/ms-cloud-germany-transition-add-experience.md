@@ -18,26 +18,35 @@ f1.keywords:
 ms.custom:
 - Ent_TLGs
 description: 'Riepilogo: attività post-migrazione dopo il passaggio da Microsoft Cloud Germania (Microsoft Cloud Deutschland) ai servizi di Office 365 nella nuova area data center tedesca.'
-ms.openlocfilehash: 745589c1c997540094fc4a770e437de89015f88a
-ms.sourcegitcommit: e0a96e08b7dc29e074065e69a2a86fc3cf0dad01
+ms.openlocfilehash: ee8dedf7ffaf6bfc4246b1a8cc2522c15d763cd1
+ms.sourcegitcommit: 1c53f114a810e7aaa2dc876b84d66348492ea36c
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51591757"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51899365"
 ---
 # <a name="post-migration-activities-for-the-migration-from-microsoft-cloud-deutschland"></a>Attività post-migrazione per la migrazione da Microsoft Cloud Deutschland
 
 Le sezioni seguenti forniscono attività post-migrazione per più servizi dopo il passaggio da Microsoft Cloud Germania (Microsoft Cloud Deutschland) ai servizi di Office 365 nella nuova area data center tedesca.
 
 ## <a name="azure-ad"></a>Azure AD
+<!-- This AAD Endpoints comparison table could be added to the documentation, not finally decided.
+### Azure AD Endpoints
+**Applies to:** All customers
 
-### <a name="azure-ad-connect"></a>Azure AD Connect
-**Si applica a:** Tutti i clienti che sincronizzano le identità con Azure AD connect
+After the cut over to Azure AD is complete, the organization is fully using Office 365 services and is no longer connected to Microsoft Cloud Deutschland and the endpoints cannot be used anymore. At this point, the customer needs to ensure that all applications are using the endpoints for the new German datacenter region.
+The following table provides an overview about which endpoints will replace the previously used endpoints in Microsoft Cloud Germany (Microsoft Cloud Deutschland). 
 
-| Step(s) | Descrizione | Impatto |
-|:-------|:-------|:-------|
-| Aggiornare Azure AD Connect. | Una volta completato il cut over ad Azure AD, l'organizzazione usa completamente i servizi di Office 365 e non è più connessa a Microsoft Cloud Deutschland. A questo punto, il cliente deve assicurarsi che il processo di sincronizzazione delta sia stato finalizzato e, successivamente, modificare il valore stringa di `AzureInstance` da 3 (Microsoft Cloud Deutschland) a 0 nel percorso del Registro di `Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Azure AD Connect` sistema. | Modificare il valore di `AzureInstance` , la chiave del Registro di sistema. In caso contrario, gli oggetti non verranno sincronizzati dopo che gli endpoint di Microsoft Cloud Deutschland non saranno più disponibili. |
-|||||
+|Endpoint in Microsoft Cloud Germany  |Endpoint in the new German datacenter region  |
+|:---------|:---------|
+|becws.microsoftonline.de<br>provisioningapi.microsoftonline.de |becws.microsoftonline.com<br>provisioningapi.microsoftonline.com |
+|adminwebservice.microsoftonline.de |adminwebservice.microsoftonline.com |
+|login.microsoftonline.de<br>logincert.microsoftonline.de<br>sts.microsoftonline.de |login.microsoftonline.com<br>login.windows.net<br>logincert.microsoftonline.com<br>accounts.accesscontrol.windows.net |
+|enterpriseregistration.microsoftonline.de |enterpriseregistration.windows.net |
+|graph.cloudapi.de |graph.windows.net |
+|graph.microsoft.de |graph.microsoft.com |
+|||
+-->
 
 ### <a name="azure-ad-federated-authentication-with-ad-fs"></a>Autenticazione federata di Azure AD con ADFS
 **Si applica a:** Tutti i clienti che usano l'autenticazione federata con ADFS
