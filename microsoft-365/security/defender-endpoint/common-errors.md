@@ -1,6 +1,6 @@
 ---
-title: Errori comuni delle API di Microsoft Defender ATP
-description: Elenco degli errori comuni delle API di Microsoft Defender ATP con le descrizioni.
+title: Errori comuni dell'API di Microsoft Defender per endpoint
+description: Elenco degli errori comuni dell'API di Microsoft Defender per endpoint con le descrizioni.
 keywords: api, api mdatp, errori, risoluzione dei problemi
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -15,12 +15,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ddbbe07bc477ae3a5016feb795b5bad5ed82a30a
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 4fc2aeb6ee5a95f7eb121abdcf4431dc6d34cd49
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51064378"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893462"
 ---
 # <a name="common-rest-api-error-codes"></a>Codici di errore API REST comuni
 

@@ -1,6 +1,6 @@
 ---
-title: Accedere a Microsoft Defender for Endpoint Community Center
-description: Accedi al Microsoft Defender ATP Community Center per condividere esperienze, interagire e conoscere il prodotto.
+title: Accedere a Microsoft Defender for Endpoint Community Center
+description: Accedi a Microsoft Defender for Endpoint Community Center per condividere esperienze, interagire e conoscere il prodotto.
 keywords: community, community center, community tech, conversazione, annunci
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,19 +17,19 @@ ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 71dc2a004f188eac34258afb2200cfd4e67f47ab
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: ef1076fb5b8bfc38090374671998460190faaba9
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165238"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893426"
 ---
-# <a name="access-the-microsoft-defender-for-endpoint-community-center"></a>Accedere a Microsoft Defender for Endpoint Community Center
+# <a name="access-the-microsoft-defender-for-endpoint-community-center"></a>Accedere a Microsoft Defender for Endpoint Community Center
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-assignaccess-abovefoldlink)

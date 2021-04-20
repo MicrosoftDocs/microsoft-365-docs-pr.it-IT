@@ -1,5 +1,5 @@
 ---
-title: Microsoft Defender Antivirus in Windows Server
+title: Microsoft Defender Antivirus su Windows Server
 description: Scopri come abilitare e configurare Microsoft Defender Antivirus in Windows Server 2016 e Windows Server 2019.
 keywords: windows defender, server, scep, system center endpoint protection, server 2016, current branch, server 2012
 search.product: eADQiWindows 10XVcnh
@@ -13,14 +13,14 @@ ms.author: deniseb
 ms.reviewer: pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: d9452b6d2eeaad3880894b9ec66c8bc71797b429
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 50e6f9b16dbc633e75e86acdc54ac43580107ae3
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51764604"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893378"
 ---
-# <a name="microsoft-defender-antivirus-on-windows-server"></a>Microsoft Defender Antivirus in Windows Server
+# <a name="microsoft-defender-antivirus-on-windows-server"></a>Microsoft Defender Antivirus su Windows Server
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -181,7 +181,7 @@ Se si utilizza un prodotto antivirus non Microsoft come soluzione antivirus prin
 
 Se si usa Windows Server versione 1803 o Windows Server 2019, è possibile impostare Microsoft Defender Antivirus sulla modalità passiva impostando la chiave del Registro di sistema seguente:
 - Percorso: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
-- Nome: `ForcePassiveMode`
+- Nome: `ForceDefenderPassiveMode`
 - Digitare: `REG_DWORD`
 - Valore: `1`
 

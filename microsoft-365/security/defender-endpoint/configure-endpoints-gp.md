@@ -1,5 +1,5 @@
 ---
-title: Onboard di dispositivi Windows 10 in Microsoft Defender ATP tramite Criteri di gruppo
+title: Onboard di dispositivi Windows 10 a Microsoft Defender for Endpoint tramite Criteri di gruppo
 description: Usa Criteri di gruppo per distribuire il pacchetto di configurazione nei dispositivi Windows 10 in modo che siano onboarded nel servizio.
 keywords: configurare i dispositivi usando Criteri di gruppo, gestione dei dispositivi, configurare i dispositivi Windows ATP, onboard microsoft defender per dispositivi endpoint, criteri di gruppo
 search.product: eADQiWindows 10XVcnh
@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: fc4b17ef96e85d3bacd4e83c2de3f4bb7fbfa5c3
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: b839cf204e8ab042e0c88a8f8c48df79770e7b4f
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166172"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893635"
 ---
 # <a name="onboard-windows-10-devices-using-group-policy"></a>Onboardare dispositivi Windows 10 con Criteri di gruppo 
 
@@ -31,7 +31,7 @@ ms.locfileid: "51166172"
 **Si applica a:**
 
 - Criteri di gruppo
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-configureendpointsgp-abovefoldlink)
@@ -42,7 +42,7 @@ ms.locfileid: "51166172"
 > 
 > Per Windows Server 2019, potrebbe essere necessario sostituire NT AUTHORITY\Well-Known-System-Account con NT AUTHORITY\SYSTEM del file XML creato dalla preferenza di Criteri di gruppo.
 
-## <a name="onboard-devices-using-group-policy"></a>Onboardare i dispositivi con Criteri di gruppo
+## <a name="onboard-devices-using-group-policy"></a>Aggiungere dispositivi con Criteri di gruppo
 
 [![Immagine del PDF che mostra i vari percorsi di distribuzione](images/onboard-gp.png)](images/onboard-gp.png#lightbox)
 
@@ -148,7 +148,7 @@ Inviare esempi di file quando è necessaria un'ulteriore analisi | Enabled, Send
 
 Criteri | Impostazione 
 :---|:---
-Disattivare la protezione in tempo reale|Disattivato
+Disattivare la protezione in tempo reale|Disabilitato
 Attivare il monitoraggio del comportamento|Abilitato
 Analizzare tutti i file e gli allegati scaricati|Abilitato
 Monitorare le attività di file e programmi nel computer|Abilitato
@@ -242,6 +242,6 @@ Con Criteri di gruppo non è disponibile un'opzione per monitorare la distribuzi
 - [Onboard dei dispositivi Windows 10 con Microsoft Endpoint Configuration Manager](configure-endpoints-sccm.md)
 - [Onboarding di dispositivi Windows 10 con gli strumenti di Gestione dispositivi mobili](configure-endpoints-mdm.md)
 - [Onboarding di dispositivi Windows 10 con uno script locale](configure-endpoints-script.md)
-- [Onboarding di dispositivi VDI (Virtual Desktop Infrastructure) non persistenti](configure-endpoints-vdi.md)
+- [Aggiungere dispositivi VDI (Virtual Desktop Infrastructure) non persistenti](configure-endpoints-vdi.md)
 - [Eseguire un test di rilevamento su un Microsoft Defender per dispositivi endpoint appena onboarded](run-detection-test.md)
 - [Risolvere i problemi di onboarding di Microsoft Defender per endpoint](troubleshoot-onboarding.md)

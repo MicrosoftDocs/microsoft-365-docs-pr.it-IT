@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: f2b3e109493331a4b63d669501525a48cb996809
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 21b0062a337dbeb3c7dec8b715971dbbc4917db1
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689222"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893276"
 ---
 # <a name="register-existing-devices-yourself"></a>Registrare manualmente i dispositivi già presenti
 
@@ -136,7 +136,7 @@ Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformatio
 Con i dati hash uniti in un unico file CSV, ora puoi procedere alla [registrazione dei dispositivi](#register-devices-by-using-the-admin-portal).
 
 
-#### <a name="register-devices-by-using-the-admin-portal"></a>Registrare i dispositivi tramite il portale di amministrazione
+## <a name="register-devices-by-using-the-admin-portal"></a>Registrare i dispositivi tramite il portale di amministrazione
 
 In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)seleziona Dispositivi **nel** riquadro di spostamento a sinistra. Cerca la sezione Microsoft Managed Desktop del menu e seleziona **Dispositivi.** Nell'area di lavoro Dispositivi desktop gestiti Microsoft seleziona **+ Registra dispositivi**, che apre un riquadro a comparsa per registrare nuovi dispositivi.
 
@@ -146,7 +146,7 @@ In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)seleziona Dispos
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
 
 
-Eseguire la procedura seguente:
+Procedere come segue:
 
 1. In **Caricamento file** specificare il percorso del file CSV creato in precedenza.
 2. Seleziona un [profilo di](../service-description/profiles.md) dispositivo nel menu a discesa.
@@ -165,7 +165,7 @@ Puoi monitorare l'avanzamento della registrazione del dispositivo nella pagina p
 | Attivo | Il dispositivo è stato recapitato all'utente e si è registrato nel tenant. Questo indica anche che usano regolarmente il dispositivo. |
 | Inattivo | Il dispositivo è stato recapitato all'utente e si è registrato nel tenant. Tuttavia, non hanno usato il dispositivo di recente (negli ultimi 7 giorni).  | 
 
-#### <a name="troubleshooting-device-registration"></a>Risoluzione dei problemi di registrazione dei dispositivi
+### <a name="troubleshooting-device-registration"></a>Risoluzione dei problemi di registrazione dei dispositivi
 
 | Messaggio di errore | Dettagli |
 |---------------|-------------|
@@ -175,13 +175,13 @@ Puoi monitorare l'avanzamento della registrazione del dispositivo nella pagina p
 | Dispositivo richiesto da un'altra organizzazione | Questo dispositivo è già stato rivendicato da un'altra organizzazione. Rivolgersi al fornitore del dispositivo. |
 | Errore imprevisto | Impossibile elaborare automaticamente la richiesta. Contattare il supporto tecnico e fornire l'ID richiesta: <requestId> |
 
-### <a name="check-the-image"></a>Controllare l'immagine
+## <a name="check-the-image"></a>Controllare l'immagine
 
 Se il dispositivo è stato utilizzato da un fornitore di partner Microsoft Managed Desktop, l'immagine deve essere corretta.
 
 Se preferisci, puoi anche applicare l'immagine da solo. To get started, contact the Microsoft representative you're working with and they will provide you the location and steps for applying the image.
 
-### <a name="deliver-the-device"></a>Recapita il dispositivo
+## <a name="deliver-the-device"></a>Recapita il dispositivo
 
 > [!IMPORTANT]
 > Prima di consegnare il dispositivo all'utente, assicurati di aver ottenuto e applicato le [licenze appropriate](../get-ready/prerequisites.md) per tale utente.

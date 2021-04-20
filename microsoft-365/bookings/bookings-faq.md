@@ -8,12 +8,12 @@ ms.topic: article
 ms.service: bookings
 localization_priority: Normal
 description: Domande frequenti su Microsoft Bookings.
-ms.openlocfilehash: d357ae83d7fe6fdd9f3d0bff724b037e82a3f5d0
-ms.sourcegitcommit: 1df94f04f138ccf1a2356d26174335c44de7052b
+ms.openlocfilehash: 5338d710fa58ff9eba88b068f4fb412cecb83ae1
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "50999530"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892918"
 ---
 # <a name="microsoft-bookings-frequently-asked-questions"></a>Domande frequenti su Microsoft Bookings
 
@@ -118,7 +118,7 @@ Bookings è una soluzione ideale sia per i clienti aziendali che per le piccole 
 
 ### <a name="how-do-i-get-microsoft-bookings"></a>Come si ottiene Microsoft Bookings?
 
-Bookings è disponibile in Microsoft 365 per i clienti con licenze Microsoft 365 Business Premium, Microsoft 365 Business Standard, A3, A5, E3 ed E5, insieme a un'app complementare iOS e Android. Bookings non è disponibile come app autonoma. Outlook Web App o Outlook sul Web devono essere abilitati per l'utilizzo di Bookings, in quanto archivia i dati in Outlook.
+Bookings è disponibile per i clienti con Office 365 A3, A5, E3 ed E5, nonché Microsoft 365 Business Standard, Microsoft 365 Business Premium, A3, A5, E3 ed E5. Puoi usare Bookings con un'app complementare iOS e Android. Bookings non è disponibile come app autonoma. Outlook Web App o Outlook sul Web devono essere abilitati per l'utilizzo di Bookings, in quanto archivia i dati in Outlook.
 
 Una licenza di Bookings offre funzionalità complete al prodotto, inclusa la creazione e la gestione dei calendari. Consente inoltre agli utenti di visualizzare e modificare i calendari esistenti, quando questi utenti vengono aggiunti come personale in un ruolo amministratore o visualizzatore.
 

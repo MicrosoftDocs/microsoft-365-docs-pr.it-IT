@@ -1,6 +1,6 @@
 ---
 title: Strumenti e metodi di onboarding per i dispositivi Windows 10
-description: Onboard dei dispositivi Windows 10 in modo che possano inviare i dati del sensore al sensore Microsoft Defender ATP
+description: Onboard dei dispositivi Windows 10 in modo che possano inviare i dati del sensore al sensore Microsoft Defender for Endpoint
 keywords: Onboard dei dispositivi Windows 10, criteri di gruppo, gestione della configurazione degli endpoint, gestione dei dispositivi mobili, script locale, criteri di gruppo, sccm, mdm, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 77b843f9526d8b100845403bc8d2df4bf3259471
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: f1ef2670a1ca749e0a2f1ebc96300d4eca043bf8
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760213"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892830"
 ---
 # <a name="onboarding-tools-and-methods-for-windows-10-devices"></a>Strumenti e metodi di onboarding per i dispositivi Windows 10
 

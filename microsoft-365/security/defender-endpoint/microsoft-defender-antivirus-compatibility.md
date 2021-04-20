@@ -14,12 +14,12 @@ ms.custom: nextgen
 ms.reviewer: tewchen, pahuijbr, shwjha
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 131b9970572b1034ba5c9907a001f0497d450339
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.openlocfilehash: 8e179135f12ad6f4ea765eaf975a40534446b51f
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765444"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893390"
 ---
 # <a name="microsoft-defender-antivirus-compatibility"></a>Compatibilità con Microsoft Defender Antivirus
 
@@ -60,7 +60,7 @@ La tabella seguente riepiloga cosa accade con Microsoft Defender Antivirus quand
 
 Se si usa Windows Server, versione 1803 o successiva o Windows Server 2019, è possibile impostare Microsoft Defender Antivirus sulla modalità passiva impostando la chiave del Registro di sistema seguente:
 - Percorso: `HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection`
-- Nome: `ForcePassiveMode`
+- Nome: `ForceDefenderPassiveMode`
 - Digitare: `REG_DWORD`
 - Valore: `1`
 
@@ -125,7 +125,7 @@ Nella tabella di questa sezione sono riepilogate le funzionalità e le funzional
 ## <a name="see-also"></a>Vedere anche
 
 - [Microsoft Defender Antivirus in Windows 10](microsoft-defender-antivirus-in-windows-10.md)
-- [Microsoft Defender Antivirus in Windows Server](microsoft-defender-antivirus-on-windows-server.md)
+- [Microsoft Defender Antivirus su Windows Server](microsoft-defender-antivirus-on-windows-server.md)
 - [EdR in modalità blocco](edr-in-block-mode.md)
 - [Configurare Endpoint Protection](/mem/configmgr/protect/deploy-use/endpoint-protection-configure)
 - [Risolvere i falsi positivi/negativi in Microsoft Defender per endpoint](defender-endpoint-false-positives-negatives.md)

@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 02/07/2020
 ms.technology: mde
-ms.openlocfilehash: b477f302855cb5d4b00e0502bcfa9aa3aeb6b5c2
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 3550bec28945ab888efbe2ca46f12ca7f96aab4a
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165574"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51892864"
 ---
 # <a name="onboard-windows-10-devices-using-configuration-manager"></a>Onboarding di dispositivi Windows 10 con Configuration Manager
 
@@ -30,7 +30,7 @@ ms.locfileid: "51165574"
 
 **Si applica a:**
 
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 - Ramo corrente di Microsoft Endpoint Configuration Manager
 - System Center Configuration Manager 2012 R2
@@ -223,7 +223,7 @@ Se si usa System Center 2012 R2 Configuration Manager, il monitoraggio è costit
 
     ![Configuration Manager che mostra la corretta distribuzione senza errori](images/sccm-deployment.png)
 
-### <a name="check-that-the-devices-are-compliant-with-the-microsoft-defender-atp-service"></a>Verificare che i dispositivi siano conformi al servizio Microsoft Defender ATP
+### <a name="check-that-the-devices-are-compliant-with-the-microsoft-defender-for-endpoint-service"></a>Verificare che i dispositivi siano conformi al servizio Microsoft Defender for Endpoint
 
 È possibile impostare una regola di conformità per l'elemento di configurazione in System Center 2012 R2 Configuration Manager per monitorare la distribuzione.
 
@@ -243,6 +243,6 @@ Per ulteriori informazioni, vedere [Introduzione alle impostazioni di conformit�
 - [Onboardare dispositivi Windows 10 con Criteri di gruppo](configure-endpoints-gp.md)
 - [Onboarding di dispositivi Windows 10 con gli strumenti di Gestione dispositivi mobili](configure-endpoints-mdm.md)
 - [Onboarding di dispositivi Windows 10 con uno script locale](configure-endpoints-script.md)
-- [Onboarding di dispositivi VDI (Virtual Desktop Infrastructure) non persistenti](configure-endpoints-vdi.md)
-- [Eseguire un test di rilevamento su un dispositivo Microsoft Defender ATP appena onboarded](run-detection-test.md)
+- [Aggiungere dispositivi VDI (Virtual Desktop Infrastructure) non persistenti](configure-endpoints-vdi.md)
+- [Eseguire un test di rilevamento in un dispositivo Microsoft Defender for Endpoint appena onboarded](run-detection-test.md)
 - [Risolvere i problemi di onboarding di Microsoft Defender per endpoint](troubleshoot-onboarding.md)

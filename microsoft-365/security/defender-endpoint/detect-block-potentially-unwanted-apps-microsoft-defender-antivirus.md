@@ -14,38 +14,35 @@ audience: ITPro
 ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
-ms.openlocfilehash: 20d4767f9813b741c55109d617f78302feaa0f7e
-ms.sourcegitcommit: 7a339c9f7039825d131b39481ddf54c57b021b11
+ms.topic: article
+ms.openlocfilehash: 8350db473580fd4d1728c3473742da5b63196c52
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51765024"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893578"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>Rilevare e bloccare applicazioni potenzialmente indesiderate
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
-
 
 **Si applica a:**
 
 - [Microsoft Defender per endpoint](/microsoft-365/security/defender-endpoint/)
 - [Microsoft Edge](/microsoft-edge/deploy/microsoft-edge)
 
-> [!NOTE]
-> Le applicazioni potenzialmente indesiderate sono una categoria di software che può causare un'esecuzione lenta del computer, visualizzare annunci imprevisti o, nel peggiore dei casi, installare altro software che potrebbe essere imprevisto o indesiderato. Per impostazione predefinita in Windows 10 (versione 2004 e successive), Microsoft Defender Antivirus blocca le app considerate puA per i dispositivi Enterprise (E5).
-
-Le applicazioni potenzialmente indesiderate non sono considerate virus, malware o altri tipi di minacce, ma possono eseguire azioni sugli endpoint che influiscono negativamente sulle prestazioni o sull'uso degli endpoint. _PuA_ può anche fare riferimento a un'applicazione con una reputazione scarsa, come valutato da Microsoft Defender for Endpoint, a causa di alcuni tipi di comportamento indesiderato.
+Le applicazioni potenzialmente indesiderate sono una categoria di software che può causare un'esecuzione lenta del computer, visualizzare annunci imprevisti o, nel peggiore dei casi, installare altro software che potrebbe essere imprevisto o indesiderato. La puA non è considerata un virus, un malware o un altro tipo di minaccia, ma può eseguire azioni sugli endpoint che influiscono negativamente sulle prestazioni o sull'uso degli endpoint. Il termine *PUA* può anche fare riferimento a un'applicazione con una reputazione scarsa, come valutato da Microsoft Defender for Endpoint, a causa di alcuni tipi di comportamenti indesiderati.
 
 Di seguito vengono descritti alcuni esempi:
 
 - **Software pubblicitario** che visualizza annunci pubblicitari o promozioni, incluso il software che inserisce annunci pubblicitari nelle pagine Web.
-- **Software di aggregazione** che offre di installare altro software non firmato digitalmente dalla stessa entità. Inoltre, il software che offre di installare altro software idoneo come PUA.
+- **Software di aggregazione** che offre di installare altro software non firmato digitalmente dalla stessa entità. Inoltre, il software che offre l'installazione di altro software qualificato come PUA.
 - **Software di evasione** che tenta attivamente di eludere il rilevamento da parte dei prodotti di sicurezza, incluso il software che si comporta in modo diverso in presenza di prodotti di sicurezza.
 
 > [!TIP]
 > Per altri esempi e una descrizione dei criteri che usiamo per etichettare le applicazioni per un'attenzione particolare dalle funzionalità di sicurezza, vedi Come Microsoft identifica malware e [applicazioni potenzialmente indesiderate.](/windows/security/threat-protection/intelligence/criteria)
 
-Le applicazioni potenzialmente indesiderate possono aumentare il rischio che la rete sia infettata da malware effettivo, rendere più difficile identificare le infezioni da malware o sprecare risorse IT per pulirle. La protezione da accesso client è supportata in Windows 10, Windows Server 2019 e Windows Server 2016.
+Le applicazioni potenzialmente indesiderate possono aumentare il rischio che la rete sia infettata da malware effettivo, rendere più difficile identificare le infezioni da malware o sprecare risorse IT per pulirle. La protezione da accesso client è supportata in Windows 10, Windows Server 2019 e Windows Server 2016. In Windows 10 (versione 2004 e successive), Microsoft Defender Antivirus blocca le app considerate dispositivi PUA for Enterprise (E5) per impostazione predefinita.
 
 ## <a name="microsoft-edge"></a>Microsoft Edge
 
@@ -55,8 +52,10 @@ Il [nuovo Microsoft Edge,](https://support.microsoft.com/microsoft-edge/get-to-k
 
 Anche se la protezione delle applicazioni potenzialmente indesiderate in Microsoft Edge (basata su Chromium, versione 80.0.361.50) è disattivata per impostazione predefinita, può essere facilmente attivata dal browser.
 
-1. Selezionare i puntini di sospensione e quindi scegliere **Impostazioni.**
+1. Nel browser Edge seleziona i puntini di sospensione e quindi scegli **Impostazioni.**
+
 2. Seleziona **Privacy, ricerca e servizi.**
+
 3. Nella sezione **Sicurezza** attiva Blocca **app potenzialmente indesiderate.**
 
 > [!TIP]
@@ -68,7 +67,7 @@ In Edge basato su Chromium con la protezione PUA attivata, Microsoft Defender Sm
 
 Gli amministratori della sicurezza [possono configurare](/DeployEdge/configure-microsoft-edge) il modo in cui Microsoft Edge e Microsoft Defender SmartScreen lavorano insieme per proteggere i gruppi di utenti dagli URL associati alle APPLICAZIONI. Sono disponibili diverse [impostazioni di Criteri di](/DeployEdge/microsoft-edge-policies#smartscreen-settings) gruppo in modo esplicito per Microsoft Defender SmartScreen, tra cui una per bloccare [l'accesso pubblico](/DeployEdge/microsoft-edge-policies#smartscreenpuaenabled). Inoltre, gli amministratori possono configurare [Microsoft Defender SmartScreen](/microsoft-edge/deploy/available-policies?source=docs#configure-windows-defender-smartscreen) nel suo complesso, usando le impostazioni di Criteri di gruppo per attivare o disattivare Microsoft Defender SmartScreen.
 
-Anche se Microsoft Defender for Endpoint ha un proprio elenco di blocco basato su un set di dati gestito da Microsoft, puoi personalizzare questo elenco in base alle tue informazioni sulle minacce. Se [crei e gestisci indicatori](/microsoft-365/security/defender-endpoint/manage-indicators) nel portale di Microsoft Defender per endpoint, Microsoft Defender SmartScreen rispetta le nuove impostazioni.
+Anche se Microsoft Defender for Endpoint ha un proprio elenco di indirizzi in base a un set di dati gestito da Microsoft, puoi personalizzare questo elenco in base alla tua intelligence sulle minacce. Se [crei e gestisci indicatori](manage-indicators.md) nel portale di Microsoft Defender per endpoint, Microsoft Defender SmartScreen rispetta le nuove impostazioni.
 
 ## <a name="microsoft-defender-antivirus"></a>Microsoft Defender Antivirus
 
@@ -123,7 +122,7 @@ Per System Center 2012 Configuration Manager, vedere Come distribuire criteri di
 
 7. Selezionare **Abilitato** per abilitare la protezione puA.
 
-8. In **Opzioni** seleziona **Blocca per** bloccare le  applicazioni potenzialmente indesiderate oppure seleziona Modalità di controllo per verificare il funzionamento dell'impostazione nell'ambiente. Selezionare **OK**.
+8. In **Opzioni** seleziona **Blocca per** bloccare le  applicazioni potenzialmente indesiderate oppure seleziona Modalità di controllo per verificare il funzionamento dell'impostazione nell'ambiente. Seleziona **OK**.
 
 9. Distribuisci l'oggetto Criteri di gruppo come di solito.
 
@@ -153,7 +152,7 @@ Set-MpPreference -PUAProtection AuditMode
 Set-MpPreference -PUAProtection Disabled
 ```
 
-Se si imposta il valore per questo cmdlet `Disabled` in modo che la funzionalità sia disattivata, se è stata abilitata.
+Se si imposta il valore per questo cmdlet `Disabled` per disattivare la funzionalità, se è stata abilitata.
 
 Per ulteriori informazioni su come usare PowerShell con Microsoft [Defender Antivirus,](use-powershell-cmdlets-microsoft-defender-antivirus.md) vedere Utilizzare i cmdlet di PowerShell per configurare ed eseguire i cmdlet di Microsoft Defender Antivirus e [Defender.](/powershell/module/defender/index)
 
@@ -179,6 +178,17 @@ PSComputerName   :
 È possibile attivare le notifiche di posta elettronica per ricevere posta sui rilevamenti di messaggi di posta elettronica.
 
 Vedi [Risolvere i problemi relativi agli ID](troubleshoot-microsoft-defender-antivirus.md) evento per informazioni dettagliate sulla visualizzazione degli eventi di Microsoft Defender Antivirus. Gli eventi puA vengono registrati con ID evento **1160.**
+
+Se usi Microsoft Defender for Endpoint, puoi usare una query di ricerca avanzata per visualizzare gli eventi di ricerca avanzata. Ecco una query di esempio:
+
+```console
+DeviceEvents
+| where ActionType == "AntivirusDetection"
+| extend x = parse_json(AdditionalFields)
+| evaluate bag_unpack(x)
+| where ThreatName startswith_cs 'PUA:'
+| project Timestamp, DeviceName, FolderPath, FileName, SHA256, ThreatName, WasExecutingWhileDetected, WasRemediated
+```
 
 ## <a name="excluding-files"></a>Esclusione di file
 

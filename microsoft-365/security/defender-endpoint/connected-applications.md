@@ -1,7 +1,7 @@
 ---
-title: Applicazioni connesse in Microsoft Defender ATP
+title: Applicazioni connesse in Microsoft Defender for Endpoint
 ms.reviewer: ''
-description: Visualizzare le applicazioni partner connesse che usano il protocollo OAuth 2.0 standard per autenticare e fornire token da utilizzare con le API di Microsoft Defender ATP.
+description: Visualizza le applicazioni partner connesse che usano il protocollo OAuth 2.0 standard per autenticare e fornire token da usare con Le API di Microsoft Defender for Endpoint.
 keywords: partner, applicazioni, terze parti, connessioni, sentinelone, lookout, bitdefender, corrata, morphisec, paloalto, ziften, meglio mobile
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,19 +17,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 294d6cfa5f8bf6b883c37e527cb492e8d65fc94c
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 26c531c0544f92d664bfa0f1a21e4f33a0765d24
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163600"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893498"
 ---
 # <a name="connected-applications-in-microsoft-defender-for-endpoint"></a>Applicazioni connesse in Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 

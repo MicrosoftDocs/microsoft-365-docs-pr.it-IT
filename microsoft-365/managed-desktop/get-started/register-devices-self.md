@@ -11,12 +11,12 @@ ms.collection: M365-modern-desktop
 manager: laurawi
 ms.topic: article
 audience: Admin
-ms.openlocfilehash: 4de1d173a26005d32fb07117d93ee78582b77d54
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: b2976fc643eb433039d9595bc8e9632fd8cb60ea
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689210"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893474"
 ---
 # <a name="register-new-devices-yourself"></a>Registrare manualmente i nuovi dispositivi
 
@@ -77,7 +77,7 @@ Dovrai combinare i dati nei file CSV in un singolo file per completare la regist
 `Import-CSV -Path (Get-ChildItem -Filter *.csv) | ConvertTo-Csv -NoTypeInformation | % {$_.Replace('"', '')} | Out-File .\aggregatedDevices.csv`
 
 
-#### <a name="register-devices-by-using-the-admin-portal"></a>Registrare i dispositivi tramite il portale di amministrazione
+### <a name="register-devices-by-using-the-admin-portal"></a>Registrare i dispositivi tramite il portale di amministrazione
 
 In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)seleziona Dispositivi **nel** riquadro di spostamento a sinistra. Cerca la sezione Microsoft Managed Desktop del menu e seleziona **Dispositivi.** Nell'area di lavoro Dispositivi desktop gestiti Microsoft seleziona **+ Registra dispositivi**, che apre un riquadro a comparsa per registrare nuovi dispositivi.
 
@@ -87,7 +87,7 @@ In [Microsoft Endpoint Manager](https://endpoint.microsoft.com/)seleziona Dispos
 <!--Registering any existing devices with Managed Desktop will completely re-image them; make sure you've backed up any important data prior to starting the registration process.-->
 
 
-Eseguire la procedura seguente:
+Procedere come segue:
 
 1. In **Caricamento file** specificare il percorso del file CSV creato in precedenza.
 2. Seleziona un [profilo di](../service-description/profiles.md) dispositivo nel menu a discesa.

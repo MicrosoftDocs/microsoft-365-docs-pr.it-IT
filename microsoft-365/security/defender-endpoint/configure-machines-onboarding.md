@@ -1,6 +1,6 @@
 ---
-title: Eseguire l'onboarded dei dispositivi in Microsoft Defender ATP
-description: Tieni traccia dell'onboarding dei dispositivi gestiti da Intune in Microsoft Defender ATP e aumenta la frequenza di onboarding.
+title: Eseguire l'onboarded dei dispositivi in Microsoft Defender per Endpoint
+description: Tieni traccia dell'onboarding dei dispositivi gestiti da Intune in Microsoft Defender per Endpoint e aumenta la frequenza di onboarding.
 keywords: onboard, gestione intune, MDATP, WDATP, Microsoft Defender, Windows Defender, protezione avanzata dalle minacce, gestione della configurazione
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6145acd5e8e2743ff42dce3cf01af0128e8ca225
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 5e20c424f15561c8b6f0544b80aca6e30c56409d
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51166090"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893330"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>Eseguire l'onboarded dei dispositivi in Microsoft Defender per Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)

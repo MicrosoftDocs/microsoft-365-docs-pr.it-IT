@@ -1,6 +1,6 @@
 ---
 title: Onboard dei dispositivi non Windows nel servizio Microsoft Defender for Endpoint
-description: Configura i dispositivi non Windows in modo che possano inviare i dati del sensore al servizio Microsoft Defender ATP.
+description: Configura i dispositivi non Windows in modo che possano inviare i dati del sensore al servizio Microsoft Defender for Endpoint.
 keywords: onboardare dispositivi non Windows, macos, linux, gestione dei dispositivi, configurare i dispositivi Windows ATP, configurare Microsoft Defender per i dispositivi endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 71f230f557792d75659dc4dbfc5911811514d5ea
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: c78779cd4a8a329864b6ac7e0debfc30ca0b3a56
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687878"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893590"
 ---
 # <a name="onboard-non-windows-devices"></a>Aggiungere dispositivi non Windows
 
@@ -40,7 +40,7 @@ ms.locfileid: "51687878"
 
 Defender for Endpoint offre un'esperienza operativa di sicurezza centralizzata per Windows e per le piattaforme non Windows. Potrai visualizzare gli avvisi di vari sistemi operativi supportati in Microsoft Defender Security Center e proteggere meglio la rete dell'organizzazione. 
 
-Per il funzionamento dell'integrazione, devi conoscere esattamente le versioni di Linux e macOS compatibili con Defender for Endpoint. Per altre informazioni, vedere:
+Per il funzionamento dell'integrazione, devi conoscere esattamente le versioni di Linux e macOS compatibili con Defender for Endpoint. Per ulteriori informazioni, vedere:
 - [Requisiti di sistema di Microsoft Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md#system-requirements)  
 - Requisiti di sistema di [Microsoft Defender per Endpoint su macOS](microsoft-defender-endpoint-mac.md#system-requirements).
 
@@ -48,7 +48,7 @@ Per il funzionamento dell'integrazione, devi conoscere esattamente le versioni d
 Dovrai eseguire la procedura seguente per eseguire l'onboard di dispositivi non Windows:
 1. Seleziona il metodo di onboarding preferito:
 
-   - Per i dispositivi macOS, puoi scegliere di eseguire l'onboardboard tramite Microsoft Defender ATP o tramite una soluzione di terze parti. Per altre informazioni, vedi [Microsoft Defender per Endpoint per Mac.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)
+   - Per i dispositivi macOS, puoi scegliere di eseguire l'onboard tramite Microsoft Defender for Endpoint o tramite una soluzione di terze parti. Per altre informazioni, vedi [Microsoft Defender per Endpoint per Mac.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-endpoint-mac)
 
    - Per altri dispositivi non Windows scegli **Onboard di dispositivi non Windows tramite l'integrazione di terze parti.**   
     1. Nel riquadro di spostamento selezionare **Partner di**  >  **interoperabilità**. Verificare che la soluzione di terze parti sia elencata.

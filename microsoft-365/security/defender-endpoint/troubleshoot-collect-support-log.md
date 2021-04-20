@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: troubleshooting
 ms.technology: mde
-ms.openlocfilehash: 8b7fe8f0973cabfb5f5268be28ac606dfc4c6387
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 07593fac6ed9a3fbc00d904718380b386f31dba3
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51183718"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893414"
 ---
 # <a name="collect-support-logs-in-microsoft-defender-for-endpoint-using-live-response"></a>Raccogliere i log di supporto in Microsoft Defender for Endpoint usando la risposta in tempo reale 
 
@@ -66,7 +66,7 @@ In questo argomento vengono fornite istruzioni su come eseguire lo strumento tra
     GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDEClientAnalyzerResult.zip" -auto
     ```
 
-    ![Immagine dei comandi](images/analyzer-commands.png)
+    [![Immagine dei comandi ](images/analyzer-commands.png)](images/analyzer-commands.png#lightbox)
 
 
 >[!NOTE]
@@ -82,4 +82,4 @@ In questo argomento vengono fornite istruzioni su come eseguire lo strumento tra
 >   GetFile "C:\ProgramData\Microsoft\Windows Defender Advanced Threat Protection\Downloads\MDEClientAnalyzerResult.zip" -auto
 >   ```
 > 
-> - Per ulteriori informazioni sulla raccolta di dati in locale in un computer nel caso in cui il computer non comunichi con i servizi cloud di Microsoft Defender for Endpoint o non venga visualizzato nel portale di Microsoft Defender per endpoint come previsto, vedere Verificare la connettività client a Microsoft Defender per gli URL del servizio [endpoint.](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-atp-service-urls)
+> - Per ulteriori informazioni sulla raccolta di dati in locale in un computer nel caso in cui il computer non comunichi con i servizi cloud di Microsoft Defender for Endpoint o non venga visualizzato nel portale di Microsoft Defender per endpoint come previsto, vedere Verificare la connettività client a Microsoft Defender per gli URL del servizio [endpoint.](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)

@@ -1,6 +1,6 @@
 ---
 title: Configurare le impostazioni del proxy del dispositivo e della connessione Internet
-description: Configurare le impostazioni Internet e proxy di Microsoft Defender ATP per abilitare la comunicazione con il servizio cloud.
+description: Configurare le impostazioni di Microsoft Defender per proxy endpoint e Internet per abilitare la comunicazione con il servizio cloud.
 keywords: configurare, proxy, Internet, connettività Internet, impostazioni, impostazioni proxy, netsh, winhttp, server proxy
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 97d1d50e2557cbb760248738b1f096614873958f
-ms.sourcegitcommit: 437bdbf3f99610869811e80432a59b5f244f7a87
+ms.openlocfilehash: ebfff7721bc61012811a66146079ac9758889594
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "51644705"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893602"
 ---
 # <a name="configure-device-proxy-and-internet-connectivity-settings"></a>Configurare le impostazioni del proxy del dispositivo e della connettività Internet
 
@@ -178,7 +178,7 @@ L'endpoint URL *.blob.core.windows.net può essere sostituito con gli URL visual
 > [!NOTE]
 > Nel caso dell'onboarding tramite Il Centro sicurezza di Azure (ASC), possono essere usate più aree di lavoro.In the case of onboarding via Azure Security Center (ASC), multiple workspaces maybe used. Sarà necessario eseguire la procedura di TestCloudConnection.exe sopra descritta in un computer onboarded da ogni area di lavoro (per determinare se sono presenti modifiche agli URL *.blob.core.windows.net tra le aree di lavoro).
 
-## <a name="verify-client-connectivity-to-microsoft-defender-atp-service-urls"></a>Verificare la connettività client agli URL del servizio Microsoft Defender ATP
+## <a name="verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls"></a>Verificare la connettività client a Microsoft Defender per gli URL del servizio endpoint
 
 Verificare che la configurazione del proxy sia stata completata correttamente, che WinHTTP possa individuare e comunicare attraverso il server proxy nell’ambiente e che il server proxy consenta il traffico agli URL del servizio Defender per Endpoint.
 

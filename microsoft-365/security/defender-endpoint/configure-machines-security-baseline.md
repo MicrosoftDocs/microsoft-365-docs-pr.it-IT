@@ -1,7 +1,7 @@
 ---
-title: Aumentare la conformità alla linea di base della sicurezza di Microsoft Defender ATP
-description: La linea di base della sicurezza di Microsoft Defender ATP imposta i controlli di sicurezza di Microsoft Defender ATP in modo da garantire una protezione ottimale.
-keywords: Gestione di Intune, MDATP, WDATP, Microsoft Defender, ASR di protezione avanzata dalle minacce, baseline di sicurezza
+title: Aumentare la conformità alla linea di base di sicurezza di Microsoft Defender for Endpoint
+description: La linea di base per la sicurezza di Microsoft Defender per endpoint imposta i controlli di sicurezza per garantire una protezione ottimale.
+keywords: Gestione intune, MDATP, WDATP, MDE, Microsoft Defender for Endpoint, ASR di protezione avanzata dalle minacce, baseline di sicurezza
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 74073441ad7be89e0af278ff1e371133251b5ea7
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 19a2276955b253a23ee1552a3f1d4d0345dfe247
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163400"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893542"
 ---
 # <a name="increase-compliance-to-the-microsoft-defender-for-endpoint-security-baseline"></a>Aumentare la conformità alla linea di base di sicurezza di Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-onboardconfigure-abovefoldlink)
@@ -41,11 +41,11 @@ Prima di poter distribuire e tenere traccia della conformità alle linee di base
 - [Registrare i dispositivi nella gestione di Intune](configure-machines.md#enroll-devices-to-intune-management)
 - [Verificare di disporre delle autorizzazioni necessarie](configure-machines.md#obtain-required-permissions)
 
-## <a name="compare-the-microsoft-defender-atp-and-the-windows-intune-security-baselines"></a>Confrontare microsoft Defender ATP e le linee di base della sicurezza di Windows Intune
+## <a name="compare-the-microsoft-defender-for-endpoint-and-the-windows-intune-security-baselines"></a>Confronto tra Microsoft Defender per Endpoint e le linee di base della sicurezza di Windows Intune
 La linea di base per la sicurezza di Windows Intune fornisce un set completo di impostazioni consigliate necessarie per configurare in modo sicuro i dispositivi che eseguono Windows, incluse le impostazioni del browser, le impostazioni di PowerShell, nonché le impostazioni per alcune funzionalità di sicurezza come Microsoft Defender Antivirus. Al contrario, la linea di base di Defender for Endpoint fornisce impostazioni che ottimizzano tutti i controlli di sicurezza nello stack defender per endpoint, incluse le impostazioni per il rilevamento e la risposta degli endpoint (EDR) e le impostazioni disponibili anche nella linea di base di sicurezza di Windows Intune. Per ulteriori informazioni su ogni previsione, vedere:
 
 - [Impostazioni di base della sicurezza di Windows per Intune](https://docs.microsoft.com/intune/security-baseline-settings-windows)
-- [Impostazioni di base di Microsoft Defender ATP per Intune](https://docs.microsoft.com/intune/security-baseline-settings-defender-atp)
+- [Impostazioni di base di Microsoft Defender for Endpoint per Intune](https://docs.microsoft.com/intune/security-baseline-settings-defender-atp)
 
 Idealmente, i dispositivi onboarded in Defender for Endpoint vengono distribuiti entrambe le linee di base: la linea di base di sicurezza di Windows Intune per proteggere inizialmente Windows e quindi la linea di base di sicurezza di Defender for Endpoint su più livelli per configurare in modo ottimale i controlli di sicurezza defender per endpoint. Per trarre vantaggio dai dati più recenti su rischi e minacce e per ridurre al minimo i conflitti con l'evolversi delle linee di base, applicare sempre le versioni più recenti delle linee di base in tutti i prodotti non appena vengono rilasciati.
 

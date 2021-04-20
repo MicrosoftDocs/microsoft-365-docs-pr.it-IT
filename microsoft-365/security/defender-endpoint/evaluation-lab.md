@@ -17,19 +17,19 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: ead616b7af3df05f4c0c5755ad779f0251555734
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 2382281fbb975daa18ec21aabaf5acf8d3fbfb2f
+ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066546"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51893438"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Laboratorio di valutazione di Microsoft Defender for Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-enablesiem-abovefoldlink)
@@ -74,10 +74,10 @@ Puoi accedere al lab dal menu. Nel menu di spostamento seleziona **Valutazione e
 ![Immagine del laboratorio di valutazione nel menu](images/evaluation-lab-menu.png)
 
 >[!NOTE]
->- Viene eseguito il provisioning di ogni ambiente con un set limitato di dispositivi di test.
 >- A seconda del tipo di struttura dell'ambiente selezionato, i dispositivi saranno disponibili per il numero di ore specificato a partire dal giorno dell'attivazione.
->- Quando hai usato i dispositivi di cui è stato eseguito il provisioning, non vengono forniti nuovi dispositivi. Un dispositivo eliminato non aggiorna il numero di dispositivi di test disponibili.
->- Date le risorse limitate, è consigliabile usare i dispositivi con attenzione.
+>- Viene eseguito il provisioning di ogni ambiente con un set limitato di dispositivi di test. Quando hai usato i dispositivi di cui è stato eseguito il provisioning, non vengono forniti nuovi dispositivi. Un dispositivo eliminato non aggiorna il numero di dispositivi di test disponibili.
+>- Non è più possibile usare il lab quando le risorse sono state usate. Non viene reimpostato né aggiornato.
+>- È consigliabile utilizzare attentamente le risorse. Le risorse lab sono limitate. Non verranno reimpostati né aggiornati. 
 
 Hai già un lab? Assicurati di abilitare i nuovi simulatori di minacce e di avere dispositivi attivi.
 
@@ -122,13 +122,13 @@ Il dispositivo verrà automaticamente inserito nel tenant con i componenti di si
 
 I componenti di sicurezza seguenti sono preconfigurato nei dispositivi di test:
 
-- [Riduzione della superficie d'attacco](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
+- [Riduzione della superficie di attacco](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/attack-surface-reduction-exploit-guard)
 - [Blocco al primo avvistamento](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
 - [Accesso controllato alle cartelle](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/controlled-folders-exploit-guard)
-- [Protezione da exploit](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-exploit-protection)
+- [Protezione dagli exploit](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/enable-exploit-protection)
 - [Protezione di rete](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-exploit-guard/network-protection-exploit-guard)
 - [Rilevamento di applicazioni potenzialmente indesiderate](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/detect-block-potentially-unwanted-apps-microsoft-defender-antivirus)
-- [Protezione basata sul cloud](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
+- [Protezione fornita dal cloud](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
 - [Microsoft Defender SmartScreen](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-smartscreen/windows-defender-smartscreen-overview)
 
 >[!NOTE]
