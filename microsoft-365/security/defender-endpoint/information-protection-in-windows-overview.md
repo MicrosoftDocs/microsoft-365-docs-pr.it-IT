@@ -1,5 +1,5 @@
 ---
-title: Panoramica della protezione delle informazioni in Windows
+title: Panoramica di protezione delle informazioni in Windows
 ms.reviewer: ''
 description: Informazioni sul funzionamento della protezione delle informazioni in Windows per identificare e proteggere le informazioni riservate
 keywords: informazioni, protezione, dlp, dati, perdita, prevenzione, protezione
@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 733f86ed48b9cc7a68fb0cd346c7b15fdcc3ce65
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 803c0af0c495eedfd26023d4e71d98df6a1b1b64
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51187506"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904023"
 ---
-# <a name="information-protection-in-windows-overview"></a>Panoramica della protezione delle informazioni in Windows
+# <a name="information-protection-in-windows-overview"></a>Panoramica di protezione delle informazioni in Windows
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
@@ -41,7 +41,7 @@ La protezione delle informazioni è parte integrante della famiglia di prodotti 
 
 
 >[!TIP]
-> Leggi il post di blog su [come Microsoft Defender ATP](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)si integra con Microsoft Information Protection per individuare, proteggere e monitorare i dati sensibili nei dispositivi Windows.
+> Leggi il post di blog su come Microsoft Defender for Endpoint (in precedenza noto come Microsoft Defender ATP) si integra con Microsoft Information Protection per individuare, proteggere e monitorare i dati sensibili nei [dispositivi Windows.](https://cloudblogs.microsoft.com/microsoftsecure/2019/01/17/windows-defender-atp-integrates-with-microsoft-information-protection-to-discover-protect-and-monitor-sensitive-data-on-windows-devices/)
 
 Defender for Endpoint applica i metodi seguenti per individuare, classificare e proteggere i dati:
 
@@ -57,7 +57,7 @@ Le etichette di riservatezza classificano e proteggono i contenuti sensibili.
 
 I tipi di informazioni riservate nell'implementazione della prevenzione della perdita dei dati (DLP) di Office 365 rientrano in due categorie:
 
-- Predefiniti
+- Impostazione predefinita
 - Personalizzato
 
 I tipi di informazioni riservate predefiniti includono informazioni quali numeri di conto corrente bancario, numeri di previdenza sociale o ID nazionali. Per ulteriori informazioni, vedere [Ricerca del tipo di informazioni riservate](https://docs.microsoft.com/office365/securitycompliance/what-the-sensitive-information-types-look-for).

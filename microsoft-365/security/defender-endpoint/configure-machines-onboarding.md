@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5e20c424f15561c8b6f0544b80aca6e30c56409d
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 09ca9fb466efd7764f7459a4754cfb30c8100bdb
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893330"
+ms.locfileid: "51904141"
 ---
 # <a name="get-devices-onboarded-to-microsoft-defender-for-endpoint"></a>Eseguire l'onboarded dei dispositivi in Microsoft Defender per Endpoint
 
@@ -55,8 +55,8 @@ Defender for Endpoint offre diverse opzioni convenienti per [l'onboarding di dis
 
 Nella scheda **Onboarding** seleziona **Onboarding di altri** dispositivi per creare e assegnare un profilo in Intune. Il collegamento consente di accedere alla pagina di conformità del dispositivo in Intune, che fornisce una panoramica simile dello stato di onboarding.
 
-![Pagina conformità dei dispositivi Microsoft Defender ATP nella gestione dei dispositivi di Intune](images/secconmgmt_onboarding_1deviceconfprofile.png)<br>
-   *Pagina conformità dei dispositivi Microsoft Defender ATP nella gestione dei dispositivi di Intune*
+![Pagina conformità dispositivo Microsoft Defender for Endpoint nella gestione dei dispositivi intune](images/secconmgmt_onboarding_1deviceconfprofile.png)<br>
+   *Pagina conformità dispositivo Microsoft Defender for Endpoint nella gestione dei dispositivi intune*
 
 >[!TIP]
 >In alternativa, è possibile passare alla pagina Conformità onboarding di Defender for Endpoint nel portale di [Microsoft Azure](https://portal.azure.com/) da Tutti i servizi > Intune > Conformità dei dispositivi **> Microsoft Defender ATP**.

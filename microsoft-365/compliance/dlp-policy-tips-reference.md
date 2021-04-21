@@ -1,5 +1,5 @@
 ---
-title: Informazioni di riferimento sui suggerimenti per i criteri di prevenzione della perdita di dati
+title: Riferimento ai suggerimenti per i criteri di prevenzione della perdita dei dati
 f1.keywords: CSH
 ms.author: chrfox
 author: chrfox
@@ -18,14 +18,14 @@ ms.collection:
 - SPO_Content
 description: Informazioni su come aggiungere un suggerimento per i criteri a un criterio di prevenzione della perdita dei dati (DLP) informare un utente che sta lavorando con contenuto in conflitto con un criterio DLP.
 ms.custom: seo-marvel-apr2021
-ms.openlocfilehash: 693f511b6303fb07d393c62efb4a61631b844474
-ms.sourcegitcommit: 2655bb0ccd66279c35be2fadbd893c937d084109
+ms.openlocfilehash: 36e4d4f96146b51e0b31731c9e93222eed767045
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51876809"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903803"
 ---
-# <a name="data-loss-prevention-policy-tips-reference"></a>Informazioni di riferimento sui suggerimenti per i criteri di prevenzione della perdita di dati
+# <a name="data-loss-prevention-policy-tips-reference"></a>Riferimento ai suggerimenti per i criteri di prevenzione della perdita dei dati
 
 I suggerimenti per i criteri DLP in Outlook Web Access sono supportati per tutte le condizioni, le eccezioni e le azioni applicabili al carico di lavoro di Exchange in un criterio DLP ad eccezione delle seguenti:
 
@@ -63,7 +63,6 @@ I suggerimenti per i criteri DLP in Outlook Web Access sono supportati per tutte
 - Aggiungere la dichiarazione di non responsabilità HTML
 - Anteporre l'oggetto di posta elettronica
 - Rimuovere la crittografia dei messaggi di O365 e la protezione dei diritti
-- Rimuovere
 
 ## <a name="outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions"></a>Outlook 2013 e versioni successive supporta la visualizzazione di suggerimenti sui criteri solo per alcune condizioni ed eccezioni
 
@@ -72,11 +71,11 @@ Attualmente, Outlook 2013 e versioni successive supporta la visualizzazione di s
 - Il contenuto contiene (funziona solo per i tipi di informazioni riservate. Le etichette di riservatezza non sono supportate)
 - Il contenuto è condiviso
 
-Si noti che tutte le condizioni funzionano per i messaggi di posta elettronica creati nell'app client di Outlook, in cui corrisponderanno al contenuto e applieranno azioni di protezione sul contenuto. Tuttavia, la visualizzazione di suggerimenti per i criteri per gli utenti non è ancora supportata per tutte le condizioni utilizzate oltre a quelle menzionate in precedenza.
+Si noti che tutte le condizioni funzionano per i messaggi di posta elettronica creati nell'app client di Outlook, in cui corrisponderanno al contenuto e applieranno azioni di protezione sul contenuto. Tuttavia, la visualizzazione di suggerimenti per i criteri per gli utenti non è supportata per tutte le condizioni utilizzate oltre a quelle indicate in precedenza.
 
-## <a name="outlook-2013-and-later-supports-showing-policy-tips-for-only-some-sensitive-information-types"></a>Outlook 2013 e versioni successive supporta la visualizzazione di suggerimenti sui criteri solo per alcuni tipi di informazioni riservate
+## <a name="outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types"></a>Supporto di Outlook 2013 e versioni successive e delle app di Office sul desktop che mostrano suggerimenti sui criteri solo per alcuni tipi di informazioni riservate
 
-L'elenco dei tipi di informazioni riservate predefiniti che verranno rilevati per visualizzare i suggerimenti per i criteri DLP in Outlook sul desktop (2013 e versioni successive) sono i seguenti:
+L'elenco dei tipi di informazioni riservate predefiniti che verranno rilevati per visualizzare i suggerimenti per i criteri DLP in Outlook sul desktop (2013 e versioni successive) e nelle app di Office (Word, Excel, PowerPoint) sul desktop sono i seguenti:
 
 - Numero di registrazione ABA
 - Argentina - Numero di identità nazionale (DNI)
@@ -181,7 +180,7 @@ L'elenco dei tipi di informazioni riservate predefiniti che verranno rilevati pe
 
 Si noti che i tipi di informazioni riservate personalizzati sono supportati anche per i suggerimenti sui criteri DLP oltre ai tipi di informazioni riservate predefiniti precedenti.
 
-## <a name="data-loss-prevention-on-endpoint-supports-policy-tips-for-only-some-sensitive-information-types"></a>Prevenzione della perdita di dati nell'endpoint supporta suggerimenti sui criteri solo per alcuni tipi di informazioni riservate
+## <a name="data-loss-prevention-on-endpoint-devices-supports-policy-tips-for-only-some-sensitive-information-types"></a>Prevenzione della perdita di dati nei dispositivi endpoint supporta suggerimenti sui criteri solo per alcuni tipi di informazioni riservate
 
 L'elenco dei tipi di informazioni riservate predefiniti che verranno rilevati nei documenti che risiedono nei dispositivi endpoint è il seguente:
 
@@ -397,16 +396,16 @@ Si noti che verranno rilevati anche tipi di informazioni riservate personalizzat
 |**App e piattaforma**|**Supporto del suggerimento per i criteri DLP**|**Tipi di informazioni riservate supportati**|**Predicati e azioni supportati**|**Comments**|
 |:--|:--|:--|:--|:--|
 |**Outlook Web Access**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Tutti|Sottoinsieme|Vedere Informazioni di riferimento sui suggerimenti [per i criteri di prevenzione della perdita di dati](#data-loss-prevention-policy-tips-reference)|
-|**Outlook Win32 (Outlook 2013 e oltre)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Sottoinsieme|Sottoinsieme|Vedere [Outlook 2013](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions) e versioni successive supporta la visualizzazione di suggerimenti sui criteri solo per alcune condizioni ed eccezioni e [Outlook 2013](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-sensitive-information-types) e versioni successive supporta la visualizzazione di suggerimenti sui criteri solo per alcuni tipi di informazioni riservate per informazioni dettagliate sul supporto per i tipi di informazioni riservate e le condizioni DLP e le azioni supportate per la visualizzazione di suggerimenti sui criteri DLP in Outlook Win32.|
+|**Outlook Win32 (Outlook 2013 e oltre)**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Sottoinsieme|Sottoinsieme|Vedere [Outlook 2013](#outlook-2013-and-later-supports-showing-policy-tips-for-only-some-conditions-and-exceptions) e versioni successive supporta la visualizzazione di suggerimenti sui criteri solo per alcune condizioni ed eccezioni e [Outlook 2013](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) e versioni successive e Supporto delle app di Office sul desktop che mostra i suggerimenti per i criteri solo per alcuni tipi di informazioni riservate per informazioni dettagliate sul supporto per i tipi di informazioni riservate e le condizioni DLP e le azioni supportate per la visualizzazione di suggerimenti sui criteri DLP in Outlook Win32.|
 |**Outlook Mobile (iOS, Android)/Outlook Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Nessuno|Nessuno|I suggerimenti per i criteri DLP non sono supportati in Outlook Mobile|
 |**Client Web Sharepoint Online/One Drive for Business**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Tutti|Tutti i predicati e le azioni di SPO/ODB in DLP||
 |**Sharepoint Win32/ One Drive for Business Win32 client**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Nessuno|Nessuno|I suggerimenti per i criteri DLP non sono supportati nelle app client desktop di Sharepoint o OneDrive|
-|**Word, Excel, Powerpoint Web Client**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Tutti|Tutti i predicati e le azioni di SPO/ODB in DLP|Il suggerimento per i criteri DLP è supportato se il documento è ospitato nell'app Web ODB o SPO e il criterio DLP è già contrassegnato.|
-|**Word, Excel, Powerpoint Mobile Client**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Nessuno|Nessuno|I suggerimenti per i criteri DLP non sono supportati nelle app per dispositivi mobili per Office.|
+|**Word, Excel, PowerPoint Web Client**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Tutti|Tutti i predicati e le azioni di SPO/ODB in DLP|Il suggerimento per i criteri DLP è supportato se il documento è ospitato nell'app Web ODB o SPO e il criterio DLP è già contrassegnato.|
+|**Word, Excel, PowerPoint Mobile Client**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Nessuno|Nessuno|I suggerimenti per i criteri DLP non sono supportati nelle app per dispositivi mobili per Office.|
 |**Teams Web/ Teams Desktop/ Teams Mobile/ Teams Mac**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Tutti|Tutti i predicati di Teams nel criterio DLP|I suggerimenti per i criteri vengono visualizzati quando un messaggio è contrassegnato come "Questo messaggio è stato contrassegnato. Cosa posso fare?" Facendo clic sul collegamento, l'utente può esaminare i tipi di informazioni sensibili rilevati e ignorare o segnalare un problema, se consentito dall'amministratore. Si noti che non vengono visualizzati suggerimenti per i criteri per i file. Quando il destinatario tenta di accedere al documento, potrebbe ottenere l'accesso negato se non consentito.|
-|**Dispositivi endpoint Win32**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Sottoinsieme|Tutti i predicati e le azioni di Endpoint DLP nel criterio DLP|Vedi [Prevenzione della perdita di dati nell'endpoint supporta i suggerimenti per i criteri solo per alcuni tipi di informazioni riservate](#data-loss-prevention-on-endpoint-supports-policy-tips-for-only-some-sensitive-information-types)|
-|**Dispositivi Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Nessuno|Nessuno|La prevenzione della perdita dei dati non è attualmente applicata nei dispositivi Mac|
-|**App cloud di terze parti**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Nessuno|Nessuno|Prevenzione della perdita di dati|
+|**Dispositivi endpoint Win32**|:::image type="icon" source="../media/rightmrk.png" border="false":::|Sottoinsieme|Tutti i predicati e le azioni di Endpoint DLP nel criterio DLP|Vedi [Prevenzione della perdita di dati nell'endpoint supporta i suggerimenti per i criteri solo per alcuni tipi di informazioni riservate](#data-loss-prevention-on-endpoint-devices-supports-policy-tips-for-only-some-sensitive-information-types)|
+|**Dispositivi Mac**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Nessuno|Nessuno|I criteri di prevenzione della perdita dei dati non sono attualmente applicati nei dispositivi Mac|
+|**App cloud di terze parti**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Nessuno|Nessuno|I suggerimenti per i criteri di prevenzione della perdita dei dati non sono supportati nelle app cloud di terze parti|
 |**On-prem**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Nessuno|Nessuno||
-|**Word, Excel, Powerpoint Win32 Client**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Sottoinsieme|Sottoinsieme|I suggerimenti per i criteri per le app client WXP funzioneranno per i documenti archiviati nei siti di Sharepoint Online o One Drive for Business per tutti i criteri DLP che hanno esattamente le condizioni o un sottoinsieme di condizioni o azioni nel criterio DLP:</br> <ul><li>Il contenuto contiene tipi di informazioni riservate</li><li>Ambito di accesso (il contenuto è condiviso internamente/esternamente)</li><li>Notifica utente (suggerimenti per i criteri/notifiche utente)</li><li>Blocca tutti</li><li>Rapporti operazioni non consentite</li></ul></br> Se sono presenti altre condizioni o azioni, il suggerimento per il criterio DLP per tale criterio non verrà visualizzato nelle app desktop di Word, Excel o PowerPoint.|
+|**Word, Excel, PowerPoint Win32 Client**|:::image type="icon" source="../media/crsmrk.png" border="false":::|Sottoinsieme|Sottoinsieme|Vedere [Outlook 2013](#outlook-2013-and-later-and-office-apps-on-desktop-support-showing-policy-tips-for-only-some-sensitive-information-types) e versioni successive e Supporto delle app di Office sul desktop che mostra i suggerimenti per i criteri solo per alcuni tipi di informazioni riservate per l'elenco dei tipi di informazioni riservate supportati</br></br>I suggerimenti per i criteri per le app client WXP funzioneranno per i documenti archiviati nei siti di Sharepoint Online o One Drive for Business per tutti i criteri DLP che hanno esattamente le condizioni o un sottoinsieme di condizioni o azioni nel criterio DLP:</br> <ul><li>Il contenuto contiene tipi di informazioni riservate</li><li>Ambito di accesso (il contenuto è condiviso internamente/esternamente)</li><li>Notifica utente (suggerimenti per i criteri/notifiche utente)</li><li>Blocca tutti</li><li>Rapporti operazioni non consentite</li></ul></br> Se sono presenti altre condizioni o azioni, il suggerimento per il criterio DLP per tale criterio non verrà visualizzato nelle app desktop di Word, Excel o PowerPoint.</br>Per ulteriori informazioni, vedere Suggerimenti per i criteri [in Excel, PowerPoint](use-notifications-and-policy-tips.md#policy-tips-in-excel-powerpoint-and-word) e Word|
 ||||||

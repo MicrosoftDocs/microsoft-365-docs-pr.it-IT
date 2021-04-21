@@ -1,6 +1,6 @@
 ---
 title: Esaminare gli eventi di connessione che si verificano dietro i proxy di inoltro.
-description: Scopri come usare il monitoraggio avanzato del livello HTTP tramite la protezione di rete in Microsoft Defender ATP, che rappresenta una destinazione reale, anziché un proxy.
+description: Scopri come usare il monitoraggio avanzato del livello HTTP tramite la protezione di rete in Microsoft Defender for Endpoint, che rappresenta una destinazione reale, anziché un proxy.
 keywords: proxy, protezione di rete, proxy di inoltro, eventi di rete, controllo, blocco, nomi di dominio, dominio
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 28d8a113ed77e9624bd914571b1af4a7ece2aa5c
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: 47be07759a72a080a3687ed3bb50cef9d0a959b7
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587564"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904047"
 ---
 # <a name="investigate-connection-events-that-occur-behind-forward-proxies"></a>Esaminare gli eventi di connessione che si verificano dietro i proxy di inoltro.
 

@@ -14,12 +14,12 @@ ms.collection:
 - m365initiative-viva-topics
 ROBOTS: NOINDEX, NOFOLLOW
 localization_priority: None
-ms.openlocfilehash: 01b3310f5f822f3f6f38bf4d9e727d41fe2b179b
-ms.sourcegitcommit: 223a36a86753fe9cebee96f05ab4c9a144133677
+ms.openlocfilehash: 290c06d95c6569b5a446a7a7410d34ff3b57055d
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "51760111"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904071"
 ---
 # <a name="topic-center-overview-in-microsoft-viva-topics"></a>Panoramica del Centro argomenti in Microsoft Viva Topics
 
@@ -70,12 +70,12 @@ Dopo aver confermato la connessione a un argomento, l'utente può apportare modi
 
 ## <a name="manage-topics-page"></a>Pagina Gestisci argomenti
 
-Per utilizzare la sezione **Gestisci argomenti** del Centro argomenti, è necessario disporre delle autorizzazioni necessarie per gestire l'argomento necessarie per il ruolo di knowledge manager. L'amministratore può assegnare [](set-up-topic-experiences.md)queste autorizzazioni agli utenti durante [](topic-experiences-knowledge-rules.md) la configurazione della gestione delle conoscenze oppure i nuovi utenti possono essere aggiunti successivamente da un amministratore tramite l'interfaccia di amministrazione di Microsoft 365.
+Per utilizzare la sezione **Gestisci argomenti** del Centro argomenti, è necessario disporre delle autorizzazioni necessarie per gestire gli argomenti necessarie per il ruolo di knowledge manager. L'amministratore può assegnare [](set-up-topic-experiences.md)queste autorizzazioni agli utenti durante [](topic-experiences-knowledge-rules.md) la configurazione della gestione delle conoscenze oppure i nuovi utenti possono essere aggiunti successivamente da un amministratore tramite l'interfaccia di amministrazione di Microsoft 365.
 
 Nella pagina Gestisci argomenti, il dashboard degli argomenti mostra tutti gli argomenti a cui si ha accesso, identificati dalle posizioni di origine specificate. In ogni argomento verrà mostrata la data in cui l'argomento è stato individuato. Un utente a cui sono state assegnate le autorizzazioni Gestione argomenti può esaminare gli argomenti non confermati e scegliere di:
-- Confermare l'argomento: evidenzia l'argomento per gli utenti che hanno accesso ai file e alle pagine correlati all'argomento e consente loro di visualizzare la scheda e la pagina dell'argomento associati.
+- Confermare l'argomento: indica agli utenti che un argomento suggerito dall'IA è stato convalidato da un curatore umano. 
 - Pubblicare l'argomento: modificare le informazioni sull'argomento per migliorare la qualità dell'argomento inizialmente identificato ed evidenziarlo per tutti gli utenti che hanno accesso agli argomenti. 
-- Rifiuta l'argomento: rende l'argomento non disponibile per gli utenti. L'argomento viene spostato nella **scheda Rifiutato** e può essere confermato in un secondo momento, se necessario. 
+- Rifiuta l'argomento: rende l'argomento non riconoscibile per gli utenti finali. L'argomento viene spostato nella **scheda Rifiutato** e può essere confermato in un secondo momento, se necessario. 
 
 > [!Note] 
 > Per [ulteriori informazioni sulla](manage-topics.md) gestione degli argomenti, vedere Gestire gli argomenti nella pagina Gestisci argomenti.

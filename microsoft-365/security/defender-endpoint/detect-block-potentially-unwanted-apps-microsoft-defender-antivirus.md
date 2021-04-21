@@ -15,12 +15,12 @@ ms.reviewer: ''
 manager: dansimp
 ms.technology: mde
 ms.topic: article
-ms.openlocfilehash: 8350db473580fd4d1728c3473742da5b63196c52
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: 808eff2074dfe1573708264590b401f3d38db982
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893578"
+ms.locfileid: "51904011"
 ---
 # <a name="detect-and-block-potentially-unwanted-applications"></a>Rilevare e bloccare applicazioni potenzialmente indesiderate
 
@@ -61,7 +61,7 @@ Anche se la protezione delle applicazioni potenzialmente indesiderate in Microso
 > [!TIP]
 > Se si esegue Microsoft Edge (basato su Chromium), è possibile esplorare in modo sicuro la funzionalità di blocco degli URL della protezione puA testandolo in una delle pagine demo di [Microsoft Defender SmartScreen.](https://demo.smartscreen.msft.net/)
 
-### <a name="blocking-urls-with-microsoft-defender-smartscreen"></a>Blocco degli URL con Microsoft Defender SmartScreen
+### <a name="block-urls-with-microsoft-defender-smartscreen"></a>Bloccare gli URL con Microsoft Defender SmartScreen
 
 In Edge basato su Chromium con la protezione PUA attivata, Microsoft Defender SmartScreen ti protegge dagli URL associati alla PUA.
 
@@ -69,9 +69,9 @@ Gli amministratori della sicurezza [possono configurare](/DeployEdge/configure-m
 
 Anche se Microsoft Defender for Endpoint ha un proprio elenco di indirizzi in base a un set di dati gestito da Microsoft, puoi personalizzare questo elenco in base alla tua intelligence sulle minacce. Se [crei e gestisci indicatori](manage-indicators.md) nel portale di Microsoft Defender per endpoint, Microsoft Defender SmartScreen rispetta le nuove impostazioni.
 
-## <a name="microsoft-defender-antivirus"></a>Microsoft Defender Antivirus
+## <a name="microsoft-defender-antivirus-and-pua-protection"></a>Protezione di Microsoft Defender Antivirus e PUA
 
-La funzionalità di protezione delle applicazioni potenzialmente indesiderate (PUA) in Microsoft Defender Antivirus può rilevare e bloccare le applicazioni potenzialmente indesiderate negli endpoint della rete.
+La funzionalità di protezione delle applicazioni potenzialmente indesiderate (PUA) in Microsoft Defender Antivirus può rilevare e bloccare l'applicazione pubblica negli endpoint della rete.
 
 > [!NOTE]
 > Questa funzionalità è disponibile in Windows 10, Windows Server 2019 e Windows Server 2016.
@@ -80,7 +80,7 @@ Microsoft Defender Antivirus blocca i file PUA rilevati e qualsiasi tentativo di
 
 La notifica viene visualizzata nel consueto elenco [di quarantena all'interno dell'app Sicurezza di Windows.](microsoft-defender-security-center-antivirus.md)
 
-### <a name="configure-pua-protection-in-microsoft-defender-antivirus"></a>Configurare la protezione dei criteri di protezione da accesso pubblico in Microsoft Defender Antivirus
+## <a name="configure-pua-protection-in-microsoft-defender-antivirus"></a>Configurare la protezione dei criteri di protezione da accesso pubblico in Microsoft Defender Antivirus
 
 È possibile abilitare la protezione dell'applicazione con [Microsoft Intune,](/mem/intune/protect/device-protect) [Microsoft Endpoint Configuration Manager,](/mem/configmgr/protect/deploy-use/endpoint-protection) [Criteri di gruppo](/azure/active-directory-domain-services/manage-group-policy)o tramite i cmdlet [di PowerShell.](/powershell/module/defender/?preserve-view=true&view=win10-ps)
 
@@ -91,11 +91,11 @@ Puoi anche usare la protezione puA in modalità di controllo per rilevare le app
 
 La protezione delle applicazioni in modalità di controllo è utile se l'azienda esegue un controllo di conformità della sicurezza software interno e si desidera evitare falsi positivi.
 
-#### <a name="use-intune-to-configure-pua-protection"></a>Usare Intune per configurare la protezione delle app di accesso client
+### <a name="use-intune-to-configure-pua-protection"></a>Usare Intune per configurare la protezione delle app di accesso client
 
 Per [altri dettagli, vedi](/intune/device-restrictions-configure) Configurare le impostazioni di restrizione dei dispositivi in Microsoft Intune e Microsoft Defender Antivirus per [Windows 10 in Intune.](/intune/device-restrictions-windows-10#microsoft-defender-antivirus)
 
-#### <a name="use-configuration-manager-to-configure-pua-protection"></a>Utilizzare Configuration Manager per configurare la protezione dell'applicazione per accesso client
+### <a name="use-configuration-manager-to-configure-pua-protection"></a>Utilizzare Configuration Manager per configurare la protezione dell'applicazione per accesso client
 
 La protezione puA è abilitata per impostazione predefinita in Microsoft Endpoint Manager (Current Branch).
 
@@ -106,7 +106,7 @@ Per System Center 2012 Configuration Manager, vedere Come distribuire criteri di
 > [!NOTE]
 > Gli eventi puA bloccati da Microsoft Defender Antivirus vengono segnalati nel Visualizzatore eventi di Windows e non in Microsoft Endpoint Configuration Manager.
 
-#### <a name="use-group-policy-to-configure-pua-protection"></a>Utilizzare Criteri di gruppo per configurare la protezione dell'applicazione web
+### <a name="use-group-policy-to-configure-pua-protection"></a>Utilizzare Criteri di gruppo per configurare la protezione dell'applicazione web
 
 1. Scaricare e installare [modelli amministrativi (admx) per Windows 10 Ottobre 2020 Update (20H2)](https://www.microsoft.com/download/details.aspx?id=102157)
 
@@ -126,9 +126,9 @@ Per System Center 2012 Configuration Manager, vedere Come distribuire criteri di
 
 9. Distribuisci l'oggetto Criteri di gruppo come di solito.
 
-#### <a name="use-powershell-cmdlets-to-configure-pua-protection"></a>Utilizzare i cmdlet di PowerShell per configurare la protezione delle applicazioni di accesso utente
+### <a name="use-powershell-cmdlets-to-configure-pua-protection"></a>Utilizzare i cmdlet di PowerShell per configurare la protezione delle applicazioni di accesso utente
 
-##### <a name="to-enable-pua-protection"></a>Per abilitare la protezione da accesso alla posta elettronica
+#### <a name="to-enable-pua-protection"></a>Per abilitare la protezione da accesso alla posta elettronica
 
 ```PowerShell
 Set-MpPreference -PUAProtection Enabled
@@ -136,7 +136,7 @@ Set-MpPreference -PUAProtection Enabled
 
 L'impostazione del valore per questo cmdlet `Enabled` attiva la funzionalità se è stata disabilitata.
 
-##### <a name="to-set-pua-protection-to-audit-mode"></a>Per impostare la protezione delle voci di controllo sulla modalità di controllo
+#### <a name="to-set-pua-protection-to-audit-mode"></a>Per impostare la protezione delle voci di controllo sulla modalità di controllo
 
 ```PowerShell
 Set-MpPreference -PUAProtection AuditMode
@@ -144,7 +144,7 @@ Set-MpPreference -PUAProtection AuditMode
 
 `AuditMode`L'impostazione rileva i messaggi di accesso popup senza bloccarli.
 
-##### <a name="to-disable-pua-protection"></a>Per disabilitare la protezione dei criteri di protezione dall'accesso di posta elettronica
+#### <a name="to-disable-pua-protection"></a>Per disabilitare la protezione dei criteri di protezione dall'accesso di posta elettronica
 
 È consigliabile mantenere attivata la protezione puA. È tuttavia possibile disattivarlo utilizzando il cmdlet seguente:
 
@@ -154,9 +154,9 @@ Set-MpPreference -PUAProtection Disabled
 
 Se si imposta il valore per questo cmdlet `Disabled` per disattivare la funzionalità, se è stata abilitata.
 
-Per ulteriori informazioni su come usare PowerShell con Microsoft [Defender Antivirus,](use-powershell-cmdlets-microsoft-defender-antivirus.md) vedere Utilizzare i cmdlet di PowerShell per configurare ed eseguire i cmdlet di Microsoft Defender Antivirus e [Defender.](/powershell/module/defender/index)
+Per ulteriori informazioni, vedere [Use PowerShell cmdlets to configure and run Microsoft Defender Antivirus](use-powershell-cmdlets-microsoft-defender-antivirus.md) and Defender [cmdlets](/powershell/module/defender/index).
 
-## <a name="view-pua-events"></a>Visualizzare gli eventi puA
+## <a name="view-pua-events-using-powershell"></a>Visualizzare gli eventi puA con PowerShell
 
 Gli eventi puA vengono segnalati nel Visualizzatore eventi di Windows, ma non in Microsoft Endpoint Manager o intune. È inoltre possibile utilizzare il `Get-MpThreat` cmdlet per visualizzare le minacce gestite da Microsoft Defender Antivirus. Di seguito viene riportato un esempio:
 
@@ -175,11 +175,15 @@ TypeID           : 0
 PSComputerName   :
 ```
 
+## <a name="get-email-notifications-about-pua-detections"></a>Ricevere notifiche tramite posta elettronica sui rilevamenti di app di posta elettronica
+
 È possibile attivare le notifiche di posta elettronica per ricevere posta sui rilevamenti di messaggi di posta elettronica.
 
 Vedi [Risolvere i problemi relativi agli ID](troubleshoot-microsoft-defender-antivirus.md) evento per informazioni dettagliate sulla visualizzazione degli eventi di Microsoft Defender Antivirus. Gli eventi puA vengono registrati con ID evento **1160.**
 
-Se usi Microsoft Defender for Endpoint, puoi usare una query di ricerca avanzata per visualizzare gli eventi di ricerca avanzata. Ecco una query di esempio:
+## <a name="view-pua-events-using-advanced-hunting"></a>Visualizzare gli eventi puA con la ricerca avanzata
+
+Se si usa [Microsoft Defender for Endpoint,](microsoft-defender-endpoint.md)è possibile utilizzare una query di ricerca avanzata per visualizzare gli eventi puA. Ecco una query di esempio:
 
 ```console
 DeviceEvents
@@ -190,7 +194,9 @@ DeviceEvents
 | project Timestamp, DeviceName, FolderPath, FileName, SHA256, ThreatName, WasExecutingWhileDetected, WasRemediated
 ```
 
-## <a name="excluding-files"></a>Esclusione di file
+Per ulteriori informazioni sulla ricerca avanzata, vedere Ricerca proattiva per [le minacce con la ricerca avanzata.](advanced-hunting-overview.md)
+
+## <a name="exclude-files-from-pua-protection"></a>Escludi file dalla protezione di accesso alla posta elettronica
 
 A volte un file viene erroneamente bloccato dalla protezione PUA oppure è necessaria una funzionalità di un'applicazione per completare un'attività. In questi casi, è possibile aggiungere un file a un elenco di esclusione.
 

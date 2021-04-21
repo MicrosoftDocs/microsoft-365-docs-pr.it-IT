@@ -1,5 +1,5 @@
 ---
-title: Controllare lo stato di integrità del sensore in Microsoft Defender ATP
+title: Controllare lo stato di integrità del sensore in Microsoft Defender per Endpoint
 description: Controlla l'integrità del sensore nei dispositivi per identificare quelli configurati in modo erre, inattivi o che non segnalano i dati del sensore.
 keywords: sensore, integrità del sensore, configurazione errata, inattiva, nessun dato del sensore, dati del sensore, comunicazioni compromesse, comunicazione
 search.product: eADQiWindows 10XVcnh
@@ -17,19 +17,19 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 21313463519383f4bf052465a0d907d2df293ec8
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 0361b7956339670d006c9f050274e07d4e979bca
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51165274"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51904165"
 ---
 # <a name="check-sensor-health-state-in-microsoft-defender-for-endpoint"></a>Controllare lo stato di integrità del sensore in Microsoft Defender per Endpoint
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-checksensor-abovefoldlink)

@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 220e4e6546899dd00f3a02bf83039a928be4f8dc
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: bfc8724f8dc27aa2475c293e7370488b2ea392b8
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498842"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903755"
 ---
 # <a name="create-and-manage-custom-detections-rules"></a>Creare e gestire regole di rilevamento personalizzate
 
@@ -178,6 +178,9 @@ Dopo aver esaminato la regola, selezionare **Crea** per salvarla. La regola di r
 
 ## <a name="manage-existing-custom-detection-rules"></a>Gestire le regole di rilevamento personalizzate esistenti
 È possibile visualizzare l'elenco delle regole di rilevamento personalizzate esistenti, controllare le esecuzioni precedenti ed esaminare gli avvisi che hanno attivato. È inoltre possibile eseguire una regola su richiesta e modificarla.
+
+>[!TIP]
+> Gli avvisi generati dai rilevamenti personalizzati sono disponibili per gli avvisi e le API degli eventi imprevisti. Per altre informazioni, vedi [API supportate di Microsoft 365 Defender.](api-supported.md)
 
 ### <a name="view-existing-rules"></a>Visualizzare le regole esistenti
 

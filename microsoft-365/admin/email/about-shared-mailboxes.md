@@ -22,12 +22,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Le cassette postali condivise vengono utilizzate quando più persone devono accedere alla stessa cassetta postale. Informazioni su cosa è necessario sapere prima di creare una cassetta postale condivisa.
-ms.openlocfilehash: eb1947b5baffd97f067bfe4e0c6d71d5c1329d65
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 83e779d59a8e763b3d0c0482966e75604d5f1574
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50915987"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903215"
 ---
 # <a name="about-shared-mailboxes"></a>Informazioni sulle cassette postali condivise
 
@@ -61,9 +61,9 @@ Prima di [creare una cassetta postale condivisa,](create-a-shared-mailbox.md)ecc
 
 
 > [!NOTE]
-> Per accedere a una cassetta postale condivisa, un utente deve disporre di una licenza di Exchange Online, ma la cassetta postale condivisa non richiede una licenza separata. Ogni cassetta postale condivisa ha un account utente corrispondente. Anche se non è stata richiesta una password al momento della creazione della cassetta postale condivisa, l'account dispone di una password, ma è generata dal sistema (sconosciuta). Non utilizzare l'account per accedere alla cassetta postale condivisa. Senza una licenza, le cassette postali condivise sono limitate a 50 GB. Per aumentare il limite di dimensioni a 100 GB, alla cassetta postale condivisa deve essere assegnata una licenza di Exchange Online Piano 2 o una licenza di Exchange Online Piano 1 con una licenza del componente aggiuntivo Archiviazione Exchange Online. In questo modo sarà inoltre possibile abilitare l'archiviazione con espansione automatica per una quantità illimitata di capacità di archiviazione di archiviazione. Analogamente, se si desidera inserire una cassetta postale condivisa nel blocco per controversia legale, la cassetta postale condivisa deve disporre di una licenza di Exchange Online Piano 2 o di una licenza di Exchange Online Piano 1 con una licenza del componente aggiuntivo Archiviazione Exchange Online. Se si desidera applicare funzionalità avanzate come Microsoft Defender per Office 365, Advanced eDiscovery o criteri di conservazione automatici, la cassetta postale condivisa deve essere concessa in licenza per tali funzionalità.
+> Per accedere a una cassetta postale condivisa, un utente deve disporre di una licenza di Exchange Online, ma la cassetta postale condivisa non richiede una licenza separata. Ogni cassetta postale condivisa ha un account utente corrispondente. Anche se non è stata richiesta una password al momento della creazione della cassetta postale condivisa, l'account dispone di una password, ma è generata dal sistema (sconosciuta). Non utilizzare l'account per accedere alla cassetta postale condivisa. Senza licenza, le cassette postali condivise sono limitate a 50 GB. Per aumentare il limite delle dimensioni a 100 GB, la cassetta postale condivisa deve essere assegnata a una licenza Exchange Online (Piano 2),oppure a una licenza Exchange Online (Piano 1) con una licenza per il componente aggiuntivo Archiviazione Exchange Online. In questo modo sarà anche possibile abilitare l'archiviazione a espansione automatica per una quantità illimitata di capacità di archiviazione. Analogamente, se si vuole mettere una cassetta postale condivisa in blocco per controversia legale, la cassetta postale condivisa deve essere assegnata a una licenza Exchange Online (Piano 2), oppure a una licenza Exchange Online (Piano 1) con una licenza per il componente aggiuntivo Archiviazione Exchange Online. Se si desidera applicare funzionalità avanzate come Microsoft Defender per Office 365, Advanced eDiscovery o criteri di conservazione automatici, la cassetta postale condivisa deve essere concessa in licenza per tali funzionalità.
 
-## <a name="related-articles"></a>Articoli correlati
+## <a name="related-content"></a>Contenuto correlato
 
 [Creare una cassetta postale condivisa](create-a-shared-mailbox.md)
 

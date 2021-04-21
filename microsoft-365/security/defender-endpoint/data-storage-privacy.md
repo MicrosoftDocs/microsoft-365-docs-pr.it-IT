@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2b191c4a24ce170d23fc3d9e43293cc7bbe59e80
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: dfdfcdcfb8d76f95e3b866f5f95af7efd94ed59e
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/20/2021
-ms.locfileid: "51892818"
+ms.locfileid: "51904129"
 ---
 # <a name="microsoft-defender-for-endpoint-data-storage-and-privacy"></a>Microsoft Defender per l'archiviazione e la privacy dei dati degli endpoint
 
@@ -90,7 +90,7 @@ No. I dati dei clienti sono isolati da altri clienti e non vengono condivisi. Tu
 
 ## <a name="how-long-will-microsoft-store-my-data-what-is-microsofts-data-retention-policy"></a>Per quanto tempo Microsoft archivierà i miei dati? Qual è il criterio di conservazione dei dati di Microsoft?
 **Onboarding del servizio**<br>
-È possibile scegliere i criteri di conservazione dei dati per i dati. Questo determina per quanto tempo Window Defender for Endpoint archivierà i dati. È possibile scegliere tra un mese e sei mesi per soddisfare le esigenze di conformità normativa dell'azienda.
+Per impostazione predefinita, i dati vengono conservati per 180 giorni. tuttavia, è possibile specificare i criteri di conservazione dei dati per i dati. Questo determina per quanto tempo Window Defender for Endpoint archivierà i dati. È possibile scegliere tra un mese e sei mesi per soddisfare le esigenze di conformità normativa dell'azienda.
 
 **Alla scadenza o alla risoluzione del contratto**<br>
 I dati verranno mantenuti e saranno disponibili mentre la licenza è in modalità di tolleranza o sospesa. Al termine di questo periodo, tali dati verranno cancellati dai sistemi Microsoft per renderli irrecuperabili, non oltre 180 giorni dalla scadenza o dalla risoluzione del contratto.

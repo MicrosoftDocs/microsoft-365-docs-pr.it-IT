@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: c5e6edb40254ab905ef5ef3ddef9bf8bf54fc54b
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: 9c77cb19731e55976058ce2f628baf4026639949
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698269"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903791"
 ---
 # <a name="configure-advanced-features-in-defender-for-endpoint"></a>Configurare le funzionalità avanzate in Defender for Endpoint
 
@@ -71,8 +71,7 @@ Attivare questa funzionalità in modo che le applicazioni potenzialmente indesid
 
 
 ## <a name="restrict-correlation-to-within-scoped-device-groups"></a>Limitare la correlazione all'interno di gruppi di dispositivi con ambito
-Quando questa impostazione è attivata, gli avvisi vengono correlati in eventi imprevisti separati in base al gruppo di dispositivi con ambito. Per impostazione predefinita, la correlazione degli eventi imprevisti si verifica nell'intero ambito tenant.
-
+Questa configurazione può essere usata per scenari in cui le operazioni SOC locali desiderano limitare le correlazioni degli avvisi solo ai gruppi di dispositivi a cui possono accedere. Attivando questa impostazione, un evento imprevisto composto da avvisi che non verranno più considerati un singolo evento imprevisto tra gruppi di dispositivi. Il SOC locale può quindi intervenire sull'evento imprevisto perché ha accesso a uno dei gruppi di dispositivi coinvolti. Tuttavia, il SOC globale visualizza diversi incidenti in base al gruppo di dispositivi anziché a un evento imprevisto. Non è consigliabile attivare questa impostazione a meno che questa operazione non superi i vantaggi della correlazione degli incidenti nell'intera organizzazione
 >[!NOTE]
 >La modifica di questa impostazione influisce solo sulle correlazioni degli avvisi futuri.
 
@@ -230,7 +229,7 @@ Quando abiliti l'integrazione di Intune, Intune creerà automaticamente un crite
 > Il criterio CA classico creato da Intune è distinto dai criteri di [accesso](https://docs.microsoft.com/azure/active-directory/conditional-access/overview/)condizionale moderni, usati per configurare gli endpoint.
 
 
-## <a name="device-discovery"></a>Individuazione dei dispositivi
+## <a name="device-discovery"></a>Device discovery
 Consente di individuare i dispositivi non gestiti connessi alla rete aziendale senza la necessità di dispositivi aggiuntivi o modifiche di processo ingombranti. Usando i dispositivi onboarded, puoi trovare dispositivi non gestiti nella rete e valutare vulnerabilità e rischi. Per altre informazioni, vedi [Individuazione dei dispositivi.](device-discovery.md)
 
 ## <a name="preview-features"></a>Funzionalità di anteprima

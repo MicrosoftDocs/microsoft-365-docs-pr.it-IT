@@ -1,6 +1,6 @@
 ---
-title: Risolvere i problemi di prestazioni per Microsoft Defender for Endpoint per Linux
-description: Risolvere i problemi di prestazioni in Microsoft Defender Endpoint per Linux.
+title: Risolvere i problemi di prestazioni per Microsoft Defender per Endpoint su Linux
+description: Risolvere i problemi di prestazioni in Microsoft Defender Endpoint su Linux.
 keywords: microsoft, defender, atp, linux, prestazioni
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -18,12 +18,12 @@ mms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: cb43fd383606ab26ba2688ad5704bb7653e82a7f
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 5aaa95ef8202f3d0957113d8f20a39e4d3840227
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860340"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903987"
 ---
 # <a name="troubleshoot-performance-issues-for-microsoft-defender-for-endpoint-on-linux"></a>Risolvere i problemi di prestazioni per Microsoft Defender per Endpoint su Linux
 
@@ -145,6 +145,6 @@ I passaggi seguenti possono essere utilizzati per risolvere e attenuare questi p
     >[!NOTE]
     > L'applicazione archivia le statistiche in memoria e tiene traccia dell'attività dei file solo dopo l'avvio e l'attivazione della protezione in tempo reale. I processi avviati prima o durante i periodi in cui la protezione in tempo reale era disattivata non vengono conteggiati. Inoltre, vengono conteggiati solo gli eventi che hanno attivato le analisi.
 
-5. Configurare Microsoft Defender ATP per Linux con esclusioni per i processi o le posizioni del disco che contribuiscono ai problemi di prestazioni e ri-abilitare la protezione in tempo reale.
+5. Configurare Microsoft Defender Endpoint su Linux con esclusioni per i processi o i percorsi del disco che contribuiscono ai problemi di prestazioni e ri-abilitare la protezione in tempo reale.
 
-    Per altre informazioni, vedi [Configurare e convalidare le esclusioni per Microsoft Defender ATP per Linux.](linux-exclusions.md)
+    Per altre informazioni, vedi [Configurare e convalidare le esclusioni per Microsoft Defender per Endpoint per Linux.](linux-exclusions.md)

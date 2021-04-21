@@ -20,12 +20,12 @@ search.appverid:
 - MET150
 - MOE150
 description: Informazioni su come partecipare a un team come guest in Microsoft Teams.
-ms.openlocfilehash: 9e60882907021c11d906ce9cd778a0f1eef32beb
-ms.sourcegitcommit: 53acc851abf68e2272e75df0856c0e16b0c7e48d
+ms.openlocfilehash: 0260365e8a064dd96cda75c9becf9f82bc6871a3
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "51578856"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903719"
 ---
 # <a name="join-a-team-as-a-guest"></a>Partecipare a un team come Guest
 
@@ -48,3 +48,7 @@ Se si riceve un invito di Microsoft Teams a partecipare a un team, è necessario
 
 1. Basta aprire l'app Microsoft Teams e scegliere  **Sì**  per passare al team a cui si è invitati.  A questo punto è possibile collaborare al progetto in Teams.
 2. Per tornare al team dell'azienda, selezionarlo  **nell'elenco a**  discesa Organizzazione.
+
+## <a name="related-content"></a>Contenuto correlato
+
+[Esperienza guest in Teams](https://docs.microsoft.com/microsoftteams/guest-experience) (articolo) Gestire le impostazioni di [Microsoft Teams](https://docs.microsoft.com/microsoftteams/enable-features-office-365) per l'organizzazione (articolo) Usare l'accesso [guest](https://docs.microsoft.com/microsoftteams/communicate-with-users-from-other-organizations) e l'accesso esterno per collaborare con persone esterne all'organizzazione (articolo)

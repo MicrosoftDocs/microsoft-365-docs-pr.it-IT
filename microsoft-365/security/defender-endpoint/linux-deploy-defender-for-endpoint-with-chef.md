@@ -16,14 +16,14 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 362222e4737b1a8dd6b8a0a284bf3bfb1903c288
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: aa699aae24b1e6383f5a2afbe7fce31e0f53805c
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861447"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903929"
 ---
-# <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>Distribuire Defender per Endpoint su Linux con Chef
+# <a name="deploy-defender-for-endpoint-on-linux-with-chef"></a>Distribuire Defender per endpoint su Linux con Chef
 
 Informazioni preliminari:
 
@@ -110,7 +110,7 @@ end
 
 Assicurati di aggiornare il nome del percorso al percorso del file di onboarding.
 Per testare la distribuzione nella workstation Chef, è sufficiente eseguire ``sudo chef-client -z -o mdatp`` .
-Dopo la distribuzione, è consigliabile creare e distribuire un file di configurazione nei server in base a Imposta preferenze per  [Microsoft Defender ATP per Linux - Windows security | Documenti Microsoft](/windows/security/threat-protection/microsoft-defender-atp/linux-preferences).  
+Dopo la distribuzione, è consigliabile creare e distribuire un file di configurazione nei server in base a Imposta preferenze [per Microsoft Defender per Endpoint su Linux.](/linux-preferences.md)  
 Dopo aver creato e testato il file di configurazione, puoi posizionarlo nella cartella cookbook/mdatp/files in cui hai inserito anche il pacchetto di onboarding.  Puoi quindi creare un file settings_mdatp.rb nella cartella mdatp/recipies e aggiungere questo testo:
 
 ```powershell

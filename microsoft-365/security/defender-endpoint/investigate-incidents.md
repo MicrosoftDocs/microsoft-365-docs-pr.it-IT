@@ -1,5 +1,5 @@
 ---
-title: Analizzare gli eventi imprevisti in Microsoft Defender ATP
+title: Analizzare gli eventi imprevisti in Microsoft Defender for Endpoint
 description: Visualizzare gli avvisi associati, gestire l'evento imprevisto e visualizzare i metadati degli avvisi per analizzare un evento imprevisto
 keywords: analizzare, incidente, avvisi, metadati, rischio, origine di rilevamento, dispositivi interessati, modelli, correlazione
 search.product: eADQiWindows 10XVcnh
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 5a74da55d733d690cb218c78b87b67d6eba6b9d2
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 1d8f4452273047684a30db3b18d1281f40f46378
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186054"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903299"
 ---
 # <a name="investigate-incidents-in-microsoft-defender-for-endpoint"></a>Analizzare gli eventi imprevisti in Microsoft Defender for Endpoint
 
@@ -92,6 +92,6 @@ Il **grafico** narra la storia dell'attacco di cybersecurity. Ad esempio, mostra
 ![Immagine dei dettagli dell'evento imprevisto](images/atp-incident-graph-details.png)
 
 ## <a name="related-topics"></a>Argomenti correlati
-- [Coda eventi imprevisti](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/view-incidents-queue)
+- [Coda incidenti](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/view-incidents-queue)
 - [Analizzare gli eventi imprevisti in Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/investigate-incidents)
 - [Gestire gli eventi imprevisti di Microsoft Defender for Endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/manage-incidents)

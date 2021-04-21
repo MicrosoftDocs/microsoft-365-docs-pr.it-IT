@@ -1,7 +1,7 @@
 ---
-title: Condizioni di licenza di Microsoft Defender ATP per iOS Application
+title: Condizioni di licenza di Microsoft Defender for Endpoint on iOS Application
 ms.reviewer: ''
-description: Descrive le condizioni di licenza di Microsoft Defender ATP per iOS
+description: Descrive le condizioni di licenza di Microsoft Defender per Endpoint su iOS
 keywords: microsoft, defender, atp, iOS, licenza, termini, applicazione, uso, installazione, servizio, feedback, ambito,
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 hideEdit: true
 ms.technology: mde
-ms.openlocfilehash: 75bcf13120c05990abf2b20cd68f460219b73cd6
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: e2f2abbb27d1040f0fa9bcd1134103d54372b25b
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688934"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903963"
 ---
 # <a name="microsoft-defender-for-endpoint-on-ios-application-license-terms"></a>Condizioni di licenza di Microsoft Defender for Endpoint su applicazioni iOS
 

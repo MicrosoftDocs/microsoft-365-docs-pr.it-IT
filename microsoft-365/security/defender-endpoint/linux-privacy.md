@@ -1,6 +1,6 @@
 ---
-title: Privacy per Microsoft Defender ATP per Linux
-description: Controlli sulla privacy, come configurare le impostazioni dei criteri che influiscono sulla privacy e informazioni sui dati di diagnostica raccolti in Microsoft Defender ATP per Linux.
+title: Privacy per Microsoft Defender per Endpoint su Linux
+description: Controlli della privacy, come configurare le impostazioni dei criteri che influiscono sulla privacy e informazioni sui dati di diagnostica raccolti in Microsoft Defender per Endpoint su Linux.
 keywords: microsoft, defender, atp, linux, privacy, diagnostica
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: aaf537c84adaba3d632367567cc569069650d21a
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 69af56efa57f389842ed31afa5f0a74667bd8f7b
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688358"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903251"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Privacy per Microsoft Defender per Endpoint su Linux
 

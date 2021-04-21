@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 406a0e699ea563670f41355d122aa54ba8667a0e
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 705b1fffbc38282441f66e0dc411cf09699cb3f9
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51687746"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903767"
 ---
 # <a name="microsoft-defender-for-endpoint-on-mac"></a>Microsoft Defender per Endpoint su Mac
 
@@ -86,6 +86,8 @@ Sono supportate le tre versioni principali più recenti di macOS.
 - Spazio su disco: 1 GB
 
 Le versioni beta di macOS non sono supportate.
+
+I dispositivi macOS con processori M1 non sono supportati.
 
 Dopo aver abilitato il servizio, potrebbe essere necessario configurare la rete o il firewall per consentire le connessioni in uscita tra il servizio e gli endpoint.
 

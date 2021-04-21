@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: a7d13da6abfb2cd6c829b6fd04fdf94de8cd20b8
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 06028f64a3340aeeef52269bc8a1e739d18e6db7
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186870"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903119"
 ---
 # <a name="pull-microsoft-defender-for-endpoint-detections-using-siem-rest-api"></a>Eseguire il pull dei rilevamenti di Microsoft Defender per endpoint con l'API REST SIEM
 
@@ -125,7 +125,7 @@ sinceTimeUtc | DateTime | Definisce gli avvisi di tempo inferiore da cui vengono
 untilTimeUtc | DateTime | Definisce gli avvisi limite temporale superiore recuperati. <br> L'intervallo di tempo sarà: `sinceTimeUtc` di tanto in `untilTimeUtc` tanto. <br><br> **NOTA:** se non specificato, il valore predefinito sarà l'ora corrente.
 ago | stringa | Estrae gli avvisi nel seguente intervallo di tempo: `(current_time - ago)` di tanto in `current_time` tanto. <br><br> Il valore deve essere impostato in base al formato di durata **ISO 8601** <br> Esempio: `ago=PT10M` verranno pull degli avvisi ricevuti negli ultimi 10 minuti.
 limite | int | Definisce il numero di avvisi da recuperare. Gli avvisi più recenti verranno recuperati in base al numero definito.<br><br> **NOTA:** se non specificato, verranno recuperati tutti gli avvisi disponibili nell'intervallo di tempo.
-machinegroups | stringa | Specifica i gruppi di dispositivi da cui estrarre gli avvisi. <br><br> **NOTA:** se non specificato, verranno recuperati gli avvisi di tutti i gruppi di dispositivi. <br><br> Esempio: <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/Alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
+machinegroups | stringa | Specifica i gruppi di dispositivi da cui estrarre gli avvisi. <br><br> **NOTA:** se non specificato, verranno recuperati gli avvisi di tutti i gruppi di dispositivi. <br><br> Esempio: <br><br> ```https://wdatp-alertexporter-eu.securitycenter.windows.com/api/alerts/?machinegroups=UKMachines&machinegroups=FranceMachines```
 DeviceCreatedMachineTags | stringa | Tag dispositivo singolo dal Registro di sistema.
 CloudCreatedMachineTags | stringa | Tag del dispositivo creati in Microsoft Defender Security Center.
 

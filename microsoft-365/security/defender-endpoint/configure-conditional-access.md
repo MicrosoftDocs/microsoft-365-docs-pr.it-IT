@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 482f86d4a0a181b72a0a33eeb1a857dce0664584
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: e68a8c35fb1028fa8e60cf52a8e8bb411a534b19
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: MT
 ms.contentlocale: it-IT
 ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893650"
+ms.locfileid: "51903779"
 ---
 # <a name="configure-conditional-access-in-microsoft-defender-for-endpoint"></a>Configurare l'accesso condizionale in Microsoft Defender per Endpoint
 
@@ -98,7 +98,7 @@ Eseguire la procedura seguente per abilitare l'accesso condizionale:
 
 ### <a name="step-4-assign-the-policy"></a>Passaggio 4: Assegnare il criterio
 1. Nel portale [di Azure](https://portal.azure.com)seleziona Tutti **i servizi,** filtra **in Intune** e seleziona **Microsoft Intune.**
-2. Seleziona **Criteri di conformità**  >  **dei** dispositivi> i criteri di conformità di Microsoft Defender ATP.
+2. Seleziona **Criteri di conformità**  >  **dei** dispositivi> i criteri di conformità di Microsoft Defender for Endpoint.
 3. Selezionare **Attività**.
 4. Includi o escludi i gruppi di Azure AD per assegnare loro il criterio.
 5. Per distribuire il criterio ai gruppi, selezionare **Salva.** I dispositivi utente destinati ai criteri vengono valutati per la conformità.
@@ -114,6 +114,6 @@ Eseguire la procedura seguente per abilitare l'accesso condizionale:
 
 6. Selezionare **Abilita criterio** e quindi Crea **per** salvare le modifiche.
 
-Per altre informazioni, vedi [Abilitare Microsoft Defender ATP con accesso condizionale in Intune.](https://docs.microsoft.com/intune/advanced-threat-protection)
+Per altre informazioni, vedi [Applicare la conformità per Microsoft Defender per Endpoint con accesso condizionale in Intune.](https://docs.microsoft.com/intune/advanced-threat-protection)
 
 >Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-conditionalaccess-belowfoldlink)
