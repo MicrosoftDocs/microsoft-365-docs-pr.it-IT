@@ -23,12 +23,12 @@ search.appverid:
 - GEA150
 ms.assetid: 0f54736f-eb22-414c-8273-498a0918678f
 description: Informazioni su come impostare i criteri di scadenza delle password per l'organizzazione nell'interfaccia di amministrazione di Microsoft 365.
-ms.openlocfilehash: 0280f4fd43034f9ffb70104771fa4a099943af2d
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 14ff08126533d5c530fb56761a2ef1676d5864b8
+ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
 ms.translationtype: HT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500240"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "51903155"
 ---
 # <a name="set-the-password-expiration-policy-for-your-organization"></a>Impostare i criteri di scadenza delle password per l'organizzazione
 
@@ -45,7 +45,7 @@ Questo articolo è per le persone che impostano criteri di scadenza delle passwo
 
 Gli amministratori possono fare in modo che la password di un utente scada dopo un determinato numero di giorni o che non scada mai. Per impostazione predefinita, le password sono impostate per non scadere mai per l'organizzazione.
 
-Ricerche correnti indicano che le modifiche obbligatorie delle password sono più dannose che utili. Le modifiche frequenti inducono gli utenti a scegliere password più deboli, a riutilizzare le password o ad aggiornare le vecchie password in modi facilmente individuabili dai pirati informatici. È consigliabile abilitare l’[autenticazione a più fattori](../security-and-compliance/set-up-multi-factor-authentication.md).
+Ricerche correnti indicano che le modifiche obbligatorie delle password sono più dannose che utili. Le modifiche frequenti inducono gli utenti a scegliere password più deboli, a riutilizzare le password o ad aggiornare le vecchie password in modi facilmente individuabili dai pirati informatici. È consigliabile abilitare l’[autenticazione a più fattori](../security-and-compliance/set-up-multi-factor-authentication.md). Per altre informazioni sui criteri per le password, vedere [consigli sui criteri per le password](../misc/password-policy-recommendations.md).
 
 Per eseguire questi passaggi, è necessario essere un [amministratore globale](../add-users/about-admin-roles.md).
 

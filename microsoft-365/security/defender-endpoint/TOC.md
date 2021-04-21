@@ -475,6 +475,7 @@
 ####### [Ottenere consigli sulla sicurezza](get-security-recommendations.md)
 ####### [Aggiungere o rimuovere tag del computer](add-or-remove-machine-tags.md)
 ####### [Trovare computer per IP](find-machines-by-ip.md)
+####### [Trovare computer per tag](find-machines-by-tag.md)
 ####### [Recuperare i KB mancanti](get-missing-kbs-machine.md)
 ####### [Impostare un valore del dispositivo](set-device-value.md)
 
