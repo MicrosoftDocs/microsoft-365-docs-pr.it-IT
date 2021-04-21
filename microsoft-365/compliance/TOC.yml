@@ -138,6 +138,8 @@
           href: data-classification-content-explorer.md
         - name: Introduzione a Esplora attività
           href: data-classification-activity-explorer.md
+        - name: Azioni di etichettatura riportate in Esplora attività
+          href: data-classification-activity-explorer-available-events.md
         - name: Note sulla versione della classificazione dei dati
           href: data-classification-pub-preview-relnotes.md
     - name: Etichette di riservatezza

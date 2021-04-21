@@ -175,6 +175,9 @@
 ##### [Abilitare l’accesso controllato alle cartelle](enable-controlled-folders.md)
 ##### [Personalizzare l’accesso controllato alle cartelle](customize-controlled-folders.md)
 
+#### [Controllo dispositivo]()
+##### [Report controllo dispositivo](device-control-report.md)
+##### [Controllo dispositivi USB](control-usb-devices-using-intune.md)
 
 ### [Device discovery]()
 #### [Panoramica di Device discovery](device-discovery.md)
