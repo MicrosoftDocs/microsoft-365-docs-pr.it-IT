@@ -1,7 +1,7 @@
 ---
 title: Assegnare il valore del dispositivo - gestione delle minacce e delle vulnerabilità
 description: Scopri come assegnare un valore basso, normale o elevato a un dispositivo per distinguere le priorità degli asset.
-keywords: microsoft defender for endpoint device value, threat and vulnerability management device value, high value devices, device value exposure score
+keywords: Valore del dispositivo Microsoft Defender for Endpoint, valore del dispositivo di gestione delle minacce e delle vulnerabilità, dispositivi ad alto valore, punteggio di esposizione al valore del dispositivo
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,66 +18,66 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 1f5d90190418f84795bdd899ea0e48ac25831a96
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: ca6c88b08b331eb65035387a9c070d0914b1651d
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689390"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935198"
 ---
-# <a name="assign-device-value---threat-and-vulnerability-management"></a><span data-ttu-id="37b37-104">Assegnare il valore del dispositivo - gestione delle minacce e delle vulnerabilità</span><span class="sxs-lookup"><span data-stu-id="37b37-104">Assign device value - threat and vulnerability management</span></span>
+# <a name="assign-device-value---threat-and-vulnerability-management"></a><span data-ttu-id="2cabd-104">Assegnare il valore del dispositivo - gestione delle minacce e delle vulnerabilità</span><span class="sxs-lookup"><span data-stu-id="2cabd-104">Assign device value - threat and vulnerability management</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
-<span data-ttu-id="37b37-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="37b37-105">**Applies to:**</span></span>
+<span data-ttu-id="2cabd-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="2cabd-105">**Applies to:**</span></span>
 
-- [<span data-ttu-id="37b37-106">Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="37b37-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/?linkid=2154037)
-- [<span data-ttu-id="37b37-107">Gestione di minacce e vulnerabilità</span><span class="sxs-lookup"><span data-stu-id="37b37-107">Threat and vulnerability management</span></span>](next-gen-threat-and-vuln-mgt.md)
-- [<span data-ttu-id="37b37-108">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="37b37-108">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
+- [<span data-ttu-id="2cabd-106">Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="2cabd-106">Microsoft Defender for Endpoint</span></span>](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [<span data-ttu-id="2cabd-107">Gestione di minacce e vulnerabilità</span><span class="sxs-lookup"><span data-stu-id="2cabd-107">Threat and vulnerability management</span></span>](next-gen-threat-and-vuln-mgt.md)
+- [<span data-ttu-id="2cabd-108">Microsoft 365 Defender</span><span class="sxs-lookup"><span data-stu-id="2cabd-108">Microsoft 365 Defender</span></span>](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-> <span data-ttu-id="37b37-109">Vuoi provare Microsoft Defender per Endpoint?</span><span class="sxs-lookup"><span data-stu-id="37b37-109">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="37b37-110">Iscriversi per una versione di valutazione gratuita.</span><span class="sxs-lookup"><span data-stu-id="37b37-110">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
+> <span data-ttu-id="2cabd-109">Vuoi provare Microsoft Defender per Endpoint?</span><span class="sxs-lookup"><span data-stu-id="2cabd-109">Want to experience Microsoft Defender for Endpoint?</span></span> [<span data-ttu-id="2cabd-110">Iscriversi per una versione di valutazione gratuita.</span><span class="sxs-lookup"><span data-stu-id="2cabd-110">Sign up for a free trial.</span></span>](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-portaloverview-abovefoldlink)
 
 [!include[Prerelease information](../../includes/prerelease.md)]
 
-<span data-ttu-id="37b37-111">La definizione del valore di un dispositivo consente di distinguere le priorità degli asset.</span><span class="sxs-lookup"><span data-stu-id="37b37-111">Defining a device’s value helps you differentiate between asset priorities.</span></span> <span data-ttu-id="37b37-112">Il valore del dispositivo viene utilizzato per incorporare la propensione al rischio di un singolo asset nel calcolo del punteggio di esposizione alla gestione delle minacce e delle vulnerabilità.</span><span class="sxs-lookup"><span data-stu-id="37b37-112">The device value is used to incorporate the risk appetite of an individual asset into the threat and vulnerability management exposure score calculation.</span></span> <span data-ttu-id="37b37-113">I dispositivi assegnati come "valore elevato" riceveranno più peso.</span><span class="sxs-lookup"><span data-stu-id="37b37-113">Devices assigned as “high value” will receive more weight.</span></span>
+<span data-ttu-id="2cabd-111">La definizione del valore di un dispositivo consente di distinguere le priorità degli asset.</span><span class="sxs-lookup"><span data-stu-id="2cabd-111">Defining a device’s value helps you differentiate between asset priorities.</span></span> <span data-ttu-id="2cabd-112">Il valore del dispositivo viene utilizzato per incorporare la propensione al rischio di un singolo asset nel calcolo del punteggio di esposizione alla gestione delle minacce e delle vulnerabilità.</span><span class="sxs-lookup"><span data-stu-id="2cabd-112">The device value is used to incorporate the risk appetite of an individual asset into the threat and vulnerability management exposure score calculation.</span></span> <span data-ttu-id="2cabd-113">I dispositivi assegnati come "valore elevato" riceveranno più peso.</span><span class="sxs-lookup"><span data-stu-id="2cabd-113">Devices assigned as “high value” will receive more weight.</span></span>
 
-<span data-ttu-id="37b37-114">Puoi anche usare [l'API set device value](set-device-value.md).</span><span class="sxs-lookup"><span data-stu-id="37b37-114">You can also use the [set device value API](set-device-value.md).</span></span>
+<span data-ttu-id="2cabd-114">Puoi anche usare [l'API set device value](set-device-value.md).</span><span class="sxs-lookup"><span data-stu-id="2cabd-114">You can also use the [set device value API](set-device-value.md).</span></span>
 
-<span data-ttu-id="37b37-115">Opzioni valore dispositivo:</span><span class="sxs-lookup"><span data-stu-id="37b37-115">Device value options:</span></span>
+<span data-ttu-id="2cabd-115">Opzioni valore dispositivo:</span><span class="sxs-lookup"><span data-stu-id="2cabd-115">Device value options:</span></span>
 
-- <span data-ttu-id="37b37-116">Bassa</span><span class="sxs-lookup"><span data-stu-id="37b37-116">Low</span></span>
-- <span data-ttu-id="37b37-117">Normale (impostazione predefinita)</span><span class="sxs-lookup"><span data-stu-id="37b37-117">Normal (Default)</span></span>
-- <span data-ttu-id="37b37-118">Alta</span><span class="sxs-lookup"><span data-stu-id="37b37-118">High</span></span>
+- <span data-ttu-id="2cabd-116">Basso</span><span class="sxs-lookup"><span data-stu-id="2cabd-116">Low</span></span>
+- <span data-ttu-id="2cabd-117">Normale (impostazione predefinita)</span><span class="sxs-lookup"><span data-stu-id="2cabd-117">Normal (Default)</span></span>
+- <span data-ttu-id="2cabd-118">Alto</span><span class="sxs-lookup"><span data-stu-id="2cabd-118">High</span></span>
 
-<span data-ttu-id="37b37-119">Esempi di dispositivi a cui assegnare un valore elevato:</span><span class="sxs-lookup"><span data-stu-id="37b37-119">Examples of devices that should be assigned a high value:</span></span>
+<span data-ttu-id="2cabd-119">Esempi di dispositivi a cui assegnare un valore elevato:</span><span class="sxs-lookup"><span data-stu-id="2cabd-119">Examples of devices that should be assigned a high value:</span></span>
 
-- <span data-ttu-id="37b37-120">Controller di dominio, Active Directory</span><span class="sxs-lookup"><span data-stu-id="37b37-120">Domain controllers, Active Directory</span></span>
-- <span data-ttu-id="37b37-121">Dispositivi con connessione Internet</span><span class="sxs-lookup"><span data-stu-id="37b37-121">Internet facing devices</span></span>
-- <span data-ttu-id="37b37-122">Dispositivi VIP</span><span class="sxs-lookup"><span data-stu-id="37b37-122">VIP devices</span></span>
-- <span data-ttu-id="37b37-123">Dispositivi che ospitano servizi di produzione interni/esterni</span><span class="sxs-lookup"><span data-stu-id="37b37-123">Devices hosting internal/external production services</span></span>
+- <span data-ttu-id="2cabd-120">Controller di dominio, Active Directory</span><span class="sxs-lookup"><span data-stu-id="2cabd-120">Domain controllers, Active Directory</span></span>
+- <span data-ttu-id="2cabd-121">Dispositivi con connessione Internet</span><span class="sxs-lookup"><span data-stu-id="2cabd-121">Internet facing devices</span></span>
+- <span data-ttu-id="2cabd-122">Dispositivi VIP</span><span class="sxs-lookup"><span data-stu-id="2cabd-122">VIP devices</span></span>
+- <span data-ttu-id="2cabd-123">Dispositivi che ospitano servizi di produzione interni/esterni</span><span class="sxs-lookup"><span data-stu-id="2cabd-123">Devices hosting internal/external production services</span></span>
 
-## <a name="choose-device-value"></a><span data-ttu-id="37b37-124">Scegliere il valore del dispositivo</span><span class="sxs-lookup"><span data-stu-id="37b37-124">Choose device value</span></span>
+## <a name="choose-device-value"></a><span data-ttu-id="2cabd-124">Scegliere il valore del dispositivo</span><span class="sxs-lookup"><span data-stu-id="2cabd-124">Choose device value</span></span>
 
-1. <span data-ttu-id="37b37-125">Passare a qualsiasi pagina del dispositivo, il posto più semplice è dall'inventario dei dispositivi.</span><span class="sxs-lookup"><span data-stu-id="37b37-125">Navigate to any device page, the easiest place is from the device inventory.</span></span>
+1. <span data-ttu-id="2cabd-125">Passare a qualsiasi pagina del dispositivo, il posto più semplice è dall'inventario dei dispositivi.</span><span class="sxs-lookup"><span data-stu-id="2cabd-125">Navigate to any device page, the easiest place is from the device inventory.</span></span>
 
-2. <span data-ttu-id="37b37-126">Seleziona **Valore dispositivo** da tre punti accanto alla barra delle azioni nella parte superiore della pagina.</span><span class="sxs-lookup"><span data-stu-id="37b37-126">Select **Device value** from three dots next to the actions bar at the top of the page.</span></span>
+2. <span data-ttu-id="2cabd-126">Seleziona **Valore dispositivo** da tre punti accanto alla barra delle azioni nella parte superiore della pagina.</span><span class="sxs-lookup"><span data-stu-id="2cabd-126">Select **Device value** from three dots next to the actions bar at the top of the page.</span></span>
 
     ![Esempio dell'elenco a discesa del valore del dispositivo.](images/tvm-device-value-dropdown.png)
 
-3. <span data-ttu-id="37b37-128">Verrà visualizzato un riquadro a comparsa con il valore corrente del dispositivo e il relativo significato.</span><span class="sxs-lookup"><span data-stu-id="37b37-128">A flyout will appear with the current device value and what it means.</span></span> <span data-ttu-id="37b37-129">Esamina il valore del dispositivo e scegli quello più adatto al tuo dispositivo.</span><span class="sxs-lookup"><span data-stu-id="37b37-129">Review the value of the device and choose the one that best fits your device.</span></span>
-<span data-ttu-id="37b37-130">![Esempio del riquadro a comparsa del valore del dispositivo.](images/tvm-device-value-flyout.png)</span><span class="sxs-lookup"><span data-stu-id="37b37-130">![Example of the device value flyout.](images/tvm-device-value-flyout.png)</span></span>
+3. <span data-ttu-id="2cabd-128">Verrà visualizzato un riquadro a comparsa con il valore corrente del dispositivo e il relativo significato.</span><span class="sxs-lookup"><span data-stu-id="2cabd-128">A flyout will appear with the current device value and what it means.</span></span> <span data-ttu-id="2cabd-129">Esamina il valore del dispositivo e scegli quello più adatto al tuo dispositivo.</span><span class="sxs-lookup"><span data-stu-id="2cabd-129">Review the value of the device and choose the one that best fits your device.</span></span>
+<span data-ttu-id="2cabd-130">![Esempio del riquadro a comparsa del valore del dispositivo.](images/tvm-device-value-flyout.png)</span><span class="sxs-lookup"><span data-stu-id="2cabd-130">![Example of the device value flyout.](images/tvm-device-value-flyout.png)</span></span>
 
-## <a name="how-device-value-impacts-your-exposure-score"></a><span data-ttu-id="37b37-131">Impatto del valore del dispositivo sul punteggio di esposizione</span><span class="sxs-lookup"><span data-stu-id="37b37-131">How device value impacts your exposure score</span></span>
+## <a name="how-device-value-impacts-your-exposure-score"></a><span data-ttu-id="2cabd-131">Impatto del valore del dispositivo sul punteggio di esposizione</span><span class="sxs-lookup"><span data-stu-id="2cabd-131">How device value impacts your exposure score</span></span>
 
-<span data-ttu-id="37b37-132">Il punteggio di esposizione è una media ponderata in tutti i dispositivi.</span><span class="sxs-lookup"><span data-stu-id="37b37-132">The exposure score is a weighted average across all devices.</span></span> <span data-ttu-id="37b37-133">Se hai gruppi di dispositivi, puoi anche filtrare il punteggio in base al gruppo di dispositivi.</span><span class="sxs-lookup"><span data-stu-id="37b37-133">If you have device groups, you can also filter the score by device group.</span></span>
+<span data-ttu-id="2cabd-132">Il punteggio di esposizione è una media ponderata in tutti i dispositivi.</span><span class="sxs-lookup"><span data-stu-id="2cabd-132">The exposure score is a weighted average across all devices.</span></span> <span data-ttu-id="2cabd-133">Se hai gruppi di dispositivi, puoi anche filtrare il punteggio in base al gruppo di dispositivi.</span><span class="sxs-lookup"><span data-stu-id="2cabd-133">If you have device groups, you can also filter the score by device group.</span></span>
 
-- <span data-ttu-id="37b37-134">I dispositivi normali hanno un peso di 1</span><span class="sxs-lookup"><span data-stu-id="37b37-134">Normal devices have a weight of 1</span></span>
-- <span data-ttu-id="37b37-135">I dispositivi a basso valore hanno un peso di 0,75</span><span class="sxs-lookup"><span data-stu-id="37b37-135">Low value devices have a weight of 0.75</span></span>
-- <span data-ttu-id="37b37-136">I dispositivi ad alto valore hanno un peso di NumberOfAssets / 10.</span><span class="sxs-lookup"><span data-stu-id="37b37-136">High value devices have a weight of NumberOfAssets / 10.</span></span>
-    - <span data-ttu-id="37b37-137">Se hai 100 dispositivi, ogni dispositivo ad alto valore avrà un peso di 10 (100/10)</span><span class="sxs-lookup"><span data-stu-id="37b37-137">If you have 100 devices, each high value device will have a weight of 10 (100/10)</span></span>
+- <span data-ttu-id="2cabd-134">I dispositivi normali hanno un peso di 1</span><span class="sxs-lookup"><span data-stu-id="2cabd-134">Normal devices have a weight of 1</span></span>
+- <span data-ttu-id="2cabd-135">I dispositivi a basso valore hanno un peso di 0,75</span><span class="sxs-lookup"><span data-stu-id="2cabd-135">Low value devices have a weight of 0.75</span></span>
+- <span data-ttu-id="2cabd-136">I dispositivi ad alto valore hanno un peso di NumberOfAssets / 10.</span><span class="sxs-lookup"><span data-stu-id="2cabd-136">High value devices have a weight of NumberOfAssets / 10.</span></span>
+    - <span data-ttu-id="2cabd-137">Se hai 100 dispositivi, ogni dispositivo ad alto valore avrà un peso di 10 (100/10)</span><span class="sxs-lookup"><span data-stu-id="2cabd-137">If you have 100 devices, each high value device will have a weight of 10 (100/10)</span></span>
 
-## <a name="related-topics"></a><span data-ttu-id="37b37-138">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="37b37-138">Related topics</span></span>
+## <a name="related-topics"></a><span data-ttu-id="2cabd-138">Argomenti correlati</span><span class="sxs-lookup"><span data-stu-id="2cabd-138">Related topics</span></span>
 
-- [<span data-ttu-id="37b37-139">Panoramica della gestione delle minacce e delle vulnerabilità</span><span class="sxs-lookup"><span data-stu-id="37b37-139">Threat and vulnerability management overview</span></span>](next-gen-threat-and-vuln-mgt.md)
-- [<span data-ttu-id="37b37-140">Punteggio di esposizione</span><span class="sxs-lookup"><span data-stu-id="37b37-140">Exposure Score</span></span>](tvm-exposure-score.md)
-- [<span data-ttu-id="37b37-141">API</span><span class="sxs-lookup"><span data-stu-id="37b37-141">APIs</span></span>](next-gen-threat-and-vuln-mgt.md#apis)
+- [<span data-ttu-id="2cabd-139">Panoramica della gestione delle minacce e delle vulnerabilità</span><span class="sxs-lookup"><span data-stu-id="2cabd-139">Threat and vulnerability management overview</span></span>](next-gen-threat-and-vuln-mgt.md)
+- [<span data-ttu-id="2cabd-140">Punteggio di esposizione</span><span class="sxs-lookup"><span data-stu-id="2cabd-140">Exposure Score</span></span>](tvm-exposure-score.md)
+- [<span data-ttu-id="2cabd-141">API</span><span class="sxs-lookup"><span data-stu-id="2cabd-141">APIs</span></span>](next-gen-threat-and-vuln-mgt.md#apis)

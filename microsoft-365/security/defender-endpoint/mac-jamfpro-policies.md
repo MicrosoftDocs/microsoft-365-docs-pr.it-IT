@@ -1,7 +1,7 @@
 ---
-title: Configurare i criteri di Microsoft Defender for Endpoint per macOS in Jamf Pro
-description: Scopri come configurare i criteri di Microsoft Defender Endpoint per macOS in Jamf Pro
-keywords: criteri, microsoft, defender, atp, mac, installazione, distribuire, disinstallazione, intune, jamfpro, macos, catalina, mojave, high sierra
+title: Configurare i criteri di Microsoft Defender for Endpoint su macOS in Jamf Pro
+description: Informazioni su come configurare i criteri di Microsoft Defender for Endpoint su macOS in Jamf Pro
+keywords: criteri, microsoft, defender, Microsoft Defender for Endpoint, mac, installazione, distribuzione, disinstallazione, intune, jamfpro, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,154 +18,154 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1a00d1c0863db7f4f5f853312f202b5e985b1512
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 84d0b37632dc23615a37bbbd73c17fe509dedae5
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862272"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934682"
 ---
-# <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a><span data-ttu-id="4e8c4-104">Configurare i criteri di Microsoft Defender for Endpoint su macOS in Jamf Pro</span><span class="sxs-lookup"><span data-stu-id="4e8c4-104">Set up the Microsoft Defender for Endpoint on macOS policies in Jamf Pro</span></span>
+# <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a><span data-ttu-id="17089-104">Configurare i criteri di Microsoft Defender for Endpoint su macOS in Jamf Pro</span><span class="sxs-lookup"><span data-stu-id="17089-104">Set up the Microsoft Defender for Endpoint on macOS policies in Jamf Pro</span></span>
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 
-<span data-ttu-id="4e8c4-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-105">**Applies to:**</span></span>
+<span data-ttu-id="17089-105">**Si applica a:**</span><span class="sxs-lookup"><span data-stu-id="17089-105">**Applies to:**</span></span>
 
-- [<span data-ttu-id="4e8c4-106">Defender per Endpoint su Mac</span><span class="sxs-lookup"><span data-stu-id="4e8c4-106">Defender for Endpoint on Mac</span></span>](microsoft-defender-endpoint-mac.md)
+- [<span data-ttu-id="17089-106">Defender per Endpoint su Mac</span><span class="sxs-lookup"><span data-stu-id="17089-106">Defender for Endpoint on Mac</span></span>](microsoft-defender-endpoint-mac.md)
 
-<span data-ttu-id="4e8c4-107">Questa pagina illustra i passaggi da eseguire per configurare i criteri macOS in Jamf Pro.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-107">This page will guide you through the steps you need to take to set up macOS policies in Jamf Pro.</span></span>
+<span data-ttu-id="17089-107">Questa pagina illustra i passaggi da eseguire per configurare i criteri macOS in Jamf Pro.</span><span class="sxs-lookup"><span data-stu-id="17089-107">This page will guide you through the steps you need to take to set up macOS policies in Jamf Pro.</span></span>
 
-<span data-ttu-id="4e8c4-108">Dovrai eseguire la procedura seguente:</span><span class="sxs-lookup"><span data-stu-id="4e8c4-108">You'll need to take the following steps:</span></span>
+<span data-ttu-id="17089-108">Dovrai eseguire la procedura seguente:</span><span class="sxs-lookup"><span data-stu-id="17089-108">You'll need to take the following steps:</span></span>
 
-1. [<span data-ttu-id="4e8c4-109">Ottenere il pacchetto di onboarding di Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="4e8c4-109">Get the Microsoft Defender for Endpoint onboarding package</span></span>](#step-1-get-the-microsoft-defender-for-endpoint-onboarding-package)
+1. [<span data-ttu-id="17089-109">Ottenere il pacchetto di onboarding di Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="17089-109">Get the Microsoft Defender for Endpoint onboarding package</span></span>](#step-1-get-the-microsoft-defender-for-endpoint-onboarding-package)
 
-2. [<span data-ttu-id="4e8c4-110">Creare un profilo di configurazione in Jamf Pro usando il pacchetto di onboarding</span><span class="sxs-lookup"><span data-stu-id="4e8c4-110">Create a configuration profile in Jamf Pro using the onboarding package</span></span>](#step-2-create-a-configuration-profile-in-jamf-pro-using-the-onboarding-package)
+2. [<span data-ttu-id="17089-110">Creare un profilo di configurazione in Jamf Pro usando il pacchetto di onboarding</span><span class="sxs-lookup"><span data-stu-id="17089-110">Create a configuration profile in Jamf Pro using the onboarding package</span></span>](#step-2-create-a-configuration-profile-in-jamf-pro-using-the-onboarding-package)
 
-3. [<span data-ttu-id="4e8c4-111">Configurare le impostazioni di Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="4e8c4-111">Configure Microsoft Defender for Endpoint settings</span></span>](#step-3-configure-microsoft-defender-for-endpoint-settings)
+3. [<span data-ttu-id="17089-111">Configurare le impostazioni di Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="17089-111">Configure Microsoft Defender for Endpoint settings</span></span>](#step-3-configure-microsoft-defender-for-endpoint-settings)
 
-4. [<span data-ttu-id="4e8c4-112">Configurare le impostazioni di notifica di Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="4e8c4-112">Configure Microsoft Defender for Endpoint notification settings</span></span>](#step-4-configure-notifications-settings)
+4. [<span data-ttu-id="17089-112">Configurare le impostazioni di notifica di Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="17089-112">Configure Microsoft Defender for Endpoint notification settings</span></span>](#step-4-configure-notifications-settings)
 
-5. [<span data-ttu-id="4e8c4-113">Configurare Microsoft AutoUpdate (MAU)</span><span class="sxs-lookup"><span data-stu-id="4e8c4-113">Configure Microsoft AutoUpdate (MAU)</span></span>](#step-5-configure-microsoft-autoupdate-mau)
+5. [<span data-ttu-id="17089-113">Configurare Microsoft AutoUpdate (MAU)</span><span class="sxs-lookup"><span data-stu-id="17089-113">Configure Microsoft AutoUpdate (MAU)</span></span>](#step-5-configure-microsoft-autoupdate-mau)
 
-6. [<span data-ttu-id="4e8c4-114">Concedere l'accesso completo al disco a Microsoft Defender per Endpoint</span><span class="sxs-lookup"><span data-stu-id="4e8c4-114">Grant full disk access to Microsoft Defender for Endpoint</span></span>](#step-6-grant-full-disk-access-to-microsoft-defender-for-endpoint)
+6. [<span data-ttu-id="17089-114">Concedere l'accesso completo al disco a Microsoft Defender per Endpoint</span><span class="sxs-lookup"><span data-stu-id="17089-114">Grant full disk access to Microsoft Defender for Endpoint</span></span>](#step-6-grant-full-disk-access-to-microsoft-defender-for-endpoint)
 
-7. [<span data-ttu-id="4e8c4-115">Approvare l'estensione kernel per Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="4e8c4-115">Approve Kernel extension for Microsoft Defender for Endpoint</span></span>](#step-7-approve-kernel-extension-for-microsoft-defender-for-endpoint)
+7. [<span data-ttu-id="17089-115">Approvare l'estensione kernel per Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="17089-115">Approve Kernel extension for Microsoft Defender for Endpoint</span></span>](#step-7-approve-kernel-extension-for-microsoft-defender-for-endpoint)
 
-8. [<span data-ttu-id="4e8c4-116">Approvare le estensioni di sistema per Microsoft Defender per Endpoint</span><span class="sxs-lookup"><span data-stu-id="4e8c4-116">Approve System extensions for Microsoft Defender for Endpoint</span></span>](#step-8-approve-system-extensions-for-microsoft-defender-for-endpoint)
+8. [<span data-ttu-id="17089-116">Approvare le estensioni di sistema per Microsoft Defender per Endpoint</span><span class="sxs-lookup"><span data-stu-id="17089-116">Approve System extensions for Microsoft Defender for Endpoint</span></span>](#step-8-approve-system-extensions-for-microsoft-defender-for-endpoint)
 
-9. [<span data-ttu-id="4e8c4-117">Configurare l'estensione di rete</span><span class="sxs-lookup"><span data-stu-id="4e8c4-117">Configure Network Extension</span></span>](#step-9-configure-network-extension)
+9. [<span data-ttu-id="17089-117">Configurare l'estensione di rete</span><span class="sxs-lookup"><span data-stu-id="17089-117">Configure Network Extension</span></span>](#step-9-configure-network-extension)
 
-10. [<span data-ttu-id="4e8c4-118">Pianificare le analisi con Microsoft Defender per Endpoint in macOS</span><span class="sxs-lookup"><span data-stu-id="4e8c4-118">Schedule scans with Microsoft Defender for Endpoint on macOS</span></span>](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
+10. [<span data-ttu-id="17089-118">Pianificare le analisi con Microsoft Defender per Endpoint in macOS</span><span class="sxs-lookup"><span data-stu-id="17089-118">Schedule scans with Microsoft Defender for Endpoint on macOS</span></span>](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)
 
-11. [<span data-ttu-id="4e8c4-119">Distribuire Microsoft Defender per Endpoint in macOS</span><span class="sxs-lookup"><span data-stu-id="4e8c4-119">Deploy Microsoft Defender for Endpoint on macOS</span></span>](#step-11-deploy-microsoft-defender-for-endpoint-on-macos)
+11. [<span data-ttu-id="17089-119">Distribuire Microsoft Defender per Endpoint in macOS</span><span class="sxs-lookup"><span data-stu-id="17089-119">Deploy Microsoft Defender for Endpoint on macOS</span></span>](#step-11-deploy-microsoft-defender-for-endpoint-on-macos)
 
 
-## <a name="step-1-get-the-microsoft-defender-for-endpoint-onboarding-package"></a><span data-ttu-id="4e8c4-120">Passaggio 1: ottenere il pacchetto di onboarding di Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="4e8c4-120">Step 1: Get the Microsoft Defender for Endpoint onboarding package</span></span>
+## <a name="step-1-get-the-microsoft-defender-for-endpoint-onboarding-package"></a><span data-ttu-id="17089-120">Passaggio 1: ottenere il pacchetto di onboarding di Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="17089-120">Step 1: Get the Microsoft Defender for Endpoint onboarding package</span></span>
 
-1. <span data-ttu-id="4e8c4-121">In [Microsoft Defender Security Center](https://securitycenter.microsoft.com )passare a Impostazioni > **Onboarding.**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-121">In [Microsoft Defender Security Center](https://securitycenter.microsoft.com ), navigate to **Settings > Onboarding**.</span></span> 
+1. <span data-ttu-id="17089-121">In [Microsoft Defender Security Center](https://securitycenter.microsoft.com )passare a Impostazioni > **Onboarding.**</span><span class="sxs-lookup"><span data-stu-id="17089-121">In [Microsoft Defender Security Center](https://securitycenter.microsoft.com ), navigate to **Settings > Onboarding**.</span></span> 
 
-2. <span data-ttu-id="4e8c4-122">Seleziona macOS come sistema operativo e Gestione dispositivi mobili/ Microsoft Intune come metodo di distribuzione.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-122">Select macOS as the operating system and Mobile Device Management / Microsoft Intune as the deployment method.</span></span>
+2. <span data-ttu-id="17089-122">Seleziona macOS come sistema operativo e Gestione dispositivi mobili/ Microsoft Intune come metodo di distribuzione.</span><span class="sxs-lookup"><span data-stu-id="17089-122">Select macOS as the operating system and Mobile Device Management / Microsoft Intune as the deployment method.</span></span>
 
     ![Immagine di Microsoft Defender Security Center](images/onboarding-macos.png)
 
-3. <span data-ttu-id="4e8c4-124">Seleziona **Scarica pacchetto di onboarding** (WindowsDefenderATPOnboardingPackage.zip).</span><span class="sxs-lookup"><span data-stu-id="4e8c4-124">Select **Download onboarding package** (WindowsDefenderATPOnboardingPackage.zip).</span></span>
+3. <span data-ttu-id="17089-124">Seleziona **Scarica pacchetto di onboarding** (WindowsDefenderATPOnboardingPackage.zip).</span><span class="sxs-lookup"><span data-stu-id="17089-124">Select **Download onboarding package** (WindowsDefenderATPOnboardingPackage.zip).</span></span>
 
-4. <span data-ttu-id="4e8c4-125">`WindowsDefenderATPOnboardingPackage.zip`Estrai .</span><span class="sxs-lookup"><span data-stu-id="4e8c4-125">Extract `WindowsDefenderATPOnboardingPackage.zip`.</span></span>
+4. <span data-ttu-id="17089-125">`WindowsDefenderATPOnboardingPackage.zip`Estrai .</span><span class="sxs-lookup"><span data-stu-id="17089-125">Extract `WindowsDefenderATPOnboardingPackage.zip`.</span></span>
 
-5. <span data-ttu-id="4e8c4-126">Copiare il file nella posizione preferita.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-126">Copy the file to your preferred location.</span></span> <span data-ttu-id="4e8c4-127">Ad esempio,  `C:\Users\JaneDoe_or_JohnDoe.contoso\Downloads\WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso\jamf\WindowsDefenderATPOnboarding.plist`.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-127">For example,  `C:\Users\JaneDoe_or_JohnDoe.contoso\Downloads\WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso\jamf\WindowsDefenderATPOnboarding.plist`.</span></span>
+5. <span data-ttu-id="17089-126">Copiare il file nella posizione preferita.</span><span class="sxs-lookup"><span data-stu-id="17089-126">Copy the file to your preferred location.</span></span> <span data-ttu-id="17089-127">Ad esempio,  `C:\Users\JaneDoe_or_JohnDoe.contoso\Downloads\WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso\jamf\WindowsDefenderATPOnboarding.plist`.</span><span class="sxs-lookup"><span data-stu-id="17089-127">For example,  `C:\Users\JaneDoe_or_JohnDoe.contoso\Downloads\WindowsDefenderATPOnboardingPackage_macOS_MDM_contoso\jamf\WindowsDefenderATPOnboarding.plist`.</span></span>
 
 
-## <a name="step-2-create-a-configuration-profile-in-jamf-pro-using-the-onboarding-package"></a><span data-ttu-id="4e8c4-128">Passaggio 2: Creare un profilo di configurazione in Jamf Pro usando il pacchetto di onboarding</span><span class="sxs-lookup"><span data-stu-id="4e8c4-128">Step 2: Create a configuration profile in Jamf Pro using the onboarding package</span></span>
+## <a name="step-2-create-a-configuration-profile-in-jamf-pro-using-the-onboarding-package"></a><span data-ttu-id="17089-128">Passaggio 2: Creare un profilo di configurazione in Jamf Pro usando il pacchetto di onboarding</span><span class="sxs-lookup"><span data-stu-id="17089-128">Step 2: Create a configuration profile in Jamf Pro using the onboarding package</span></span>
 
-1. <span data-ttu-id="4e8c4-129">Individuare il file `WindowsDefenderATPOnboarding.plist` della sezione precedente.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-129">Locate the file `WindowsDefenderATPOnboarding.plist` from the previous section.</span></span>
+1. <span data-ttu-id="17089-129">Individuare il file `WindowsDefenderATPOnboarding.plist` della sezione precedente.</span><span class="sxs-lookup"><span data-stu-id="17089-129">Locate the file `WindowsDefenderATPOnboarding.plist` from the previous section.</span></span>
 
    ![Immagine del file WindowsDefenderATPOnboarding](images/plist-onboarding-file.png)
 
  
-2. <span data-ttu-id="4e8c4-131">Nel dashboard di Jamf Pro seleziona **Nuovo**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-131">In the Jamf Pro dashboard, select **New**.</span></span>
+2. <span data-ttu-id="17089-131">Nel dashboard di Jamf Pro seleziona **Nuovo**.</span><span class="sxs-lookup"><span data-stu-id="17089-131">In the Jamf Pro dashboard, select **New**.</span></span>
 
     ![Immagine della creazione di un nuovo dashboard jamf pro](images/jamf-pro-configure-profile.png)
 
-3. <span data-ttu-id="4e8c4-133">Immettere i dettagli seguenti:</span><span class="sxs-lookup"><span data-stu-id="4e8c4-133">Enter the following details:</span></span>
+3. <span data-ttu-id="17089-133">Immettere i dettagli seguenti:</span><span class="sxs-lookup"><span data-stu-id="17089-133">Enter the following details:</span></span>
 
-   <span data-ttu-id="4e8c4-134">**Generale**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-134">**General**</span></span>
-   - <span data-ttu-id="4e8c4-135">Nome: onboarding MDATP per macOS</span><span class="sxs-lookup"><span data-stu-id="4e8c4-135">Name: MDATP onboarding for macOS</span></span>
-   - <span data-ttu-id="4e8c4-136">Descrizione: onboarding edR MDATP per macOS</span><span class="sxs-lookup"><span data-stu-id="4e8c4-136">Description: MDATP EDR onboarding for macOS</span></span>
-   - <span data-ttu-id="4e8c4-137">Categoria: Nessuno</span><span class="sxs-lookup"><span data-stu-id="4e8c4-137">Category: None</span></span>
-   - <span data-ttu-id="4e8c4-138">Metodo di distribuzione: installazione automatica</span><span class="sxs-lookup"><span data-stu-id="4e8c4-138">Distribution Method: Install Automatically</span></span>
-   - <span data-ttu-id="4e8c4-139">Livello: Livello computer</span><span class="sxs-lookup"><span data-stu-id="4e8c4-139">Level: Computer Level</span></span>
+   <span data-ttu-id="17089-134">**Generale**</span><span class="sxs-lookup"><span data-stu-id="17089-134">**General**</span></span>
+   - <span data-ttu-id="17089-135">Nome: onboarding MDATP per macOS</span><span class="sxs-lookup"><span data-stu-id="17089-135">Name: MDATP onboarding for macOS</span></span>
+   - <span data-ttu-id="17089-136">Descrizione: onboarding edR MDATP per macOS</span><span class="sxs-lookup"><span data-stu-id="17089-136">Description: MDATP EDR onboarding for macOS</span></span>
+   - <span data-ttu-id="17089-137">Categoria: Nessuno</span><span class="sxs-lookup"><span data-stu-id="17089-137">Category: None</span></span>
+   - <span data-ttu-id="17089-138">Metodo di distribuzione: installazione automatica</span><span class="sxs-lookup"><span data-stu-id="17089-138">Distribution Method: Install Automatically</span></span>
+   - <span data-ttu-id="17089-139">Livello: Livello computer</span><span class="sxs-lookup"><span data-stu-id="17089-139">Level: Computer Level</span></span>
 
-4. <span data-ttu-id="4e8c4-140">In **Impostazioni & impostazioni personalizzate selezionare** **Configura**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-140">In **Application & Custom Settings** select **Configure**.</span></span>
+4. <span data-ttu-id="17089-140">In **Impostazioni & impostazioni personalizzate selezionare** **Configura**.</span><span class="sxs-lookup"><span data-stu-id="17089-140">In **Application & Custom Settings** select **Configure**.</span></span>
 
     ![Immagine dell'app configurata e delle impostazioni personalizzate](images/jamfpro-mac-profile.png)
 
-5. <span data-ttu-id="4e8c4-142">Seleziona **Carica file (file PLIST),** quindi in **Dominio preferenza** immetti: `com.microsoft.wdav.atp` .</span><span class="sxs-lookup"><span data-stu-id="4e8c4-142">Select **Upload File (PLIST file)** then in **Preference Domain** enter: `com.microsoft.wdav.atp`.</span></span> 
+5. <span data-ttu-id="17089-142">Seleziona **Carica file (file PLIST),** quindi in **Dominio preferenza** immetti: `com.microsoft.wdav.atp` .</span><span class="sxs-lookup"><span data-stu-id="17089-142">Select **Upload File (PLIST file)** then in **Preference Domain** enter: `com.microsoft.wdav.atp`.</span></span> 
 
     ![Immagine del file di caricamento jamfpro plist](images/jamfpro-plist-upload.png)
 
     ![Immagine del file di elenco delle proprietà del file di caricamento](images/jamfpro-plist-file.png)
 
-7. <span data-ttu-id="4e8c4-145">Selezionare **Apri** e selezionare il file di onboarding.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-145">Select **Open** and select the onboarding file.</span></span>
+7. <span data-ttu-id="17089-145">Selezionare **Apri** e selezionare il file di onboarding.</span><span class="sxs-lookup"><span data-stu-id="17089-145">Select **Open** and select the onboarding file.</span></span>
 
     ![Immagine del file di onboarding](images/jamfpro-plist-file-onboard.png)
 
-8. <span data-ttu-id="4e8c4-147">Selezionare **Carica**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-147">Select **Upload**.</span></span> 
+8. <span data-ttu-id="17089-147">Selezionare **Carica**.</span><span class="sxs-lookup"><span data-stu-id="17089-147">Select **Upload**.</span></span> 
 
     ![Immagine del caricamento del file plist](images/jamfpro-upload-plist.png)
 
 
-9. <span data-ttu-id="4e8c4-149">Selezionare la **scheda** Ambito.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-149">Select the **Scope** tab.</span></span>
+9. <span data-ttu-id="17089-149">Selezionare la **scheda** Ambito.</span><span class="sxs-lookup"><span data-stu-id="17089-149">Select the **Scope** tab.</span></span>
 
     ![Scheda Immagine dell'ambito](images/jamfpro-scope-tab.png)
 
-10. <span data-ttu-id="4e8c4-151">Selezionare i computer di destinazione.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-151">Select the target computers.</span></span>
+10. <span data-ttu-id="17089-151">Selezionare i computer di destinazione.</span><span class="sxs-lookup"><span data-stu-id="17089-151">Select the target computers.</span></span>
 
     ![Immagine dei computer di destinazione](images/jamfpro-target-computer.png)
 
     ![Immagine delle destinazioni](images/jamfpro-targets.png) 
 
-11. <span data-ttu-id="4e8c4-154">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-154">Select **Save**.</span></span>
+11. <span data-ttu-id="17089-154">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="17089-154">Select **Save**.</span></span>
 
     ![Immagine dei computer di destinazione della distribuzione](images/jamfpro-deployment-target.png)
 
     ![Immagine dei computer di destinazione selezionati](images/jamfpro-target-selected.png)
 
-12. <span data-ttu-id="4e8c4-157">Scegliere **Fatto**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-157">Select **Done**.</span></span>
+12. <span data-ttu-id="17089-157">Scegliere **Fatto**.</span><span class="sxs-lookup"><span data-stu-id="17089-157">Select **Done**.</span></span>
 
     ![Immagine dei computer del gruppo di destinazione](images/jamfpro-target-group.png)
 
     ![Elenco dei profili di configurazione](images/jamfpro-configuration-policies.png)
 
-## <a name="step-3-configure-microsoft-defender-for-endpoint-settings"></a><span data-ttu-id="4e8c4-160">Passaggio 3: Configurare Le impostazioni di Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="4e8c4-160">Step 3: Configure Microsoft Defender for Endpoint settings</span></span>
+## <a name="step-3-configure-microsoft-defender-for-endpoint-settings"></a><span data-ttu-id="17089-160">Passaggio 3: Configurare Le impostazioni di Microsoft Defender per endpoint</span><span class="sxs-lookup"><span data-stu-id="17089-160">Step 3: Configure Microsoft Defender for Endpoint settings</span></span>
 
-1.  <span data-ttu-id="4e8c4-161">Usa le impostazioni di configurazione di Microsoft Defender for Endpoint seguenti:</span><span class="sxs-lookup"><span data-stu-id="4e8c4-161">Use the following Microsoft Defender for Endpoint configuration settings:</span></span>
+1.  <span data-ttu-id="17089-161">Usa le impostazioni di configurazione di Microsoft Defender for Endpoint seguenti:</span><span class="sxs-lookup"><span data-stu-id="17089-161">Use the following Microsoft Defender for Endpoint configuration settings:</span></span>
 
-    - <span data-ttu-id="4e8c4-162">enableRealTimeProtection</span><span class="sxs-lookup"><span data-stu-id="4e8c4-162">enableRealTimeProtection</span></span>
-    - <span data-ttu-id="4e8c4-163">passiveMode</span><span class="sxs-lookup"><span data-stu-id="4e8c4-163">passiveMode</span></span>
+    - <span data-ttu-id="17089-162">enableRealTimeProtection</span><span class="sxs-lookup"><span data-stu-id="17089-162">enableRealTimeProtection</span></span>
+    - <span data-ttu-id="17089-163">passiveMode</span><span class="sxs-lookup"><span data-stu-id="17089-163">passiveMode</span></span>
     
     >[!NOTE]
-    ><span data-ttu-id="4e8c4-164">Non attivato per impostazione predefinita, se si prevede di eseguire un av di terze parti per macOS, impostarlo su `true` .</span><span class="sxs-lookup"><span data-stu-id="4e8c4-164">Not turned on by default, if you are planning to run a third-party AV for macOS, set it to `true`.</span></span>
+    ><span data-ttu-id="17089-164">Non attivato per impostazione predefinita, se si prevede di eseguire un av di terze parti per macOS, impostarlo su `true` .</span><span class="sxs-lookup"><span data-stu-id="17089-164">Not turned on by default, if you are planning to run a third-party AV for macOS, set it to `true`.</span></span>
 
-    - <span data-ttu-id="4e8c4-165">esclusioni</span><span class="sxs-lookup"><span data-stu-id="4e8c4-165">exclusions</span></span>
-    - <span data-ttu-id="4e8c4-166">excludedPath</span><span class="sxs-lookup"><span data-stu-id="4e8c4-166">excludedPath</span></span>
-    - <span data-ttu-id="4e8c4-167">excludedFileExtension</span><span class="sxs-lookup"><span data-stu-id="4e8c4-167">excludedFileExtension</span></span>
-    - <span data-ttu-id="4e8c4-168">excludedFileName</span><span class="sxs-lookup"><span data-stu-id="4e8c4-168">excludedFileName</span></span>
-    - <span data-ttu-id="4e8c4-169">exclusionsMergePolicy</span><span class="sxs-lookup"><span data-stu-id="4e8c4-169">exclusionsMergePolicy</span></span>
-    - <span data-ttu-id="4e8c4-170">allowedThreats</span><span class="sxs-lookup"><span data-stu-id="4e8c4-170">allowedThreats</span></span>
+    - <span data-ttu-id="17089-165">esclusioni</span><span class="sxs-lookup"><span data-stu-id="17089-165">exclusions</span></span>
+    - <span data-ttu-id="17089-166">excludedPath</span><span class="sxs-lookup"><span data-stu-id="17089-166">excludedPath</span></span>
+    - <span data-ttu-id="17089-167">excludedFileExtension</span><span class="sxs-lookup"><span data-stu-id="17089-167">excludedFileExtension</span></span>
+    - <span data-ttu-id="17089-168">excludedFileName</span><span class="sxs-lookup"><span data-stu-id="17089-168">excludedFileName</span></span>
+    - <span data-ttu-id="17089-169">exclusionsMergePolicy</span><span class="sxs-lookup"><span data-stu-id="17089-169">exclusionsMergePolicy</span></span>
+    - <span data-ttu-id="17089-170">allowedThreats</span><span class="sxs-lookup"><span data-stu-id="17089-170">allowedThreats</span></span>
     
     >[!NOTE]
-    ><span data-ttu-id="4e8c4-171">EICAR è nell'esempio, se si sta passando attraverso un modello di prova, rimuoverlo soprattutto se si sta testando EICAR.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-171">EICAR is on the sample, if you are going through a proof-of-concept, remove it especially if you are testing EICAR.</span></span>
+    ><span data-ttu-id="17089-171">EICAR è nell'esempio, se si sta passando attraverso un modello di prova, rimuoverlo soprattutto se si sta testando EICAR.</span><span class="sxs-lookup"><span data-stu-id="17089-171">EICAR is on the sample, if you are going through a proof-of-concept, remove it especially if you are testing EICAR.</span></span>
         
-    - <span data-ttu-id="4e8c4-172">disallowedThreatActions</span><span class="sxs-lookup"><span data-stu-id="4e8c4-172">disallowedThreatActions</span></span>
-    - <span data-ttu-id="4e8c4-173">potentially_unwanted_application</span><span class="sxs-lookup"><span data-stu-id="4e8c4-173">potentially_unwanted_application</span></span>
-    - <span data-ttu-id="4e8c4-174">archive_bomb</span><span class="sxs-lookup"><span data-stu-id="4e8c4-174">archive_bomb</span></span>
-    - <span data-ttu-id="4e8c4-175">cloudService</span><span class="sxs-lookup"><span data-stu-id="4e8c4-175">cloudService</span></span>
-    - <span data-ttu-id="4e8c4-176">automaticSampleSubmission</span><span class="sxs-lookup"><span data-stu-id="4e8c4-176">automaticSampleSubmission</span></span>
-    - <span data-ttu-id="4e8c4-177">tag</span><span class="sxs-lookup"><span data-stu-id="4e8c4-177">tags</span></span>
-    - <span data-ttu-id="4e8c4-178">hideStatusMenuIcon</span><span class="sxs-lookup"><span data-stu-id="4e8c4-178">hideStatusMenuIcon</span></span>
+    - <span data-ttu-id="17089-172">disallowedThreatActions</span><span class="sxs-lookup"><span data-stu-id="17089-172">disallowedThreatActions</span></span>
+    - <span data-ttu-id="17089-173">potentially_unwanted_application</span><span class="sxs-lookup"><span data-stu-id="17089-173">potentially_unwanted_application</span></span>
+    - <span data-ttu-id="17089-174">archive_bomb</span><span class="sxs-lookup"><span data-stu-id="17089-174">archive_bomb</span></span>
+    - <span data-ttu-id="17089-175">cloudService</span><span class="sxs-lookup"><span data-stu-id="17089-175">cloudService</span></span>
+    - <span data-ttu-id="17089-176">automaticSampleSubmission</span><span class="sxs-lookup"><span data-stu-id="17089-176">automaticSampleSubmission</span></span>
+    - <span data-ttu-id="17089-177">tag</span><span class="sxs-lookup"><span data-stu-id="17089-177">tags</span></span>
+    - <span data-ttu-id="17089-178">hideStatusMenuIcon</span><span class="sxs-lookup"><span data-stu-id="17089-178">hideStatusMenuIcon</span></span>
     
-     <span data-ttu-id="4e8c4-179">Per informazioni, vedere [Elenco delle proprietà per il profilo di configurazione Jamf.](mac-preferences.md#property-list-for-jamf-configuration-profile)</span><span class="sxs-lookup"><span data-stu-id="4e8c4-179">For information, see [Property list for Jamf configuration profile](mac-preferences.md#property-list-for-jamf-configuration-profile).</span></span>
+     <span data-ttu-id="17089-179">Per informazioni, vedere [Elenco delle proprietà per il profilo di configurazione Jamf.](mac-preferences.md#property-list-for-jamf-configuration-profile)</span><span class="sxs-lookup"><span data-stu-id="17089-179">For information, see [Property list for Jamf configuration profile](mac-preferences.md#property-list-for-jamf-configuration-profile).</span></span>
 
      ```XML
      <?xml version="1.0" encoding="UTF-8"?>
@@ -268,137 +268,137 @@ ms.locfileid: "51862272"
      </plist>
      ```
 
-2. <span data-ttu-id="4e8c4-180">Salvare il file con nome `MDATP_MDAV_configuration_settings.plist` .</span><span class="sxs-lookup"><span data-stu-id="4e8c4-180">Save the file as `MDATP_MDAV_configuration_settings.plist`.</span></span>
+2. <span data-ttu-id="17089-180">Salvare il file con nome `MDATP_MDAV_configuration_settings.plist` .</span><span class="sxs-lookup"><span data-stu-id="17089-180">Save the file as `MDATP_MDAV_configuration_settings.plist`.</span></span>
 
 
-3.  <span data-ttu-id="4e8c4-181">Nel dashboard jamf pro selezionare **Generale.**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-181">In the Jamf Pro dashboard, select **General**.</span></span>
+3.  <span data-ttu-id="17089-181">Nel dashboard jamf pro selezionare **Generale.**</span><span class="sxs-lookup"><span data-stu-id="17089-181">In the Jamf Pro dashboard, select **General**.</span></span>
 
     ![Immagine del nuovo dashboard jamf pro](images/644e0f3af40c29e80ca1443535b2fe32.png)
 
-4. <span data-ttu-id="4e8c4-183">Immettere i dettagli seguenti:</span><span class="sxs-lookup"><span data-stu-id="4e8c4-183">Enter the following details:</span></span>
+4. <span data-ttu-id="17089-183">Immettere i dettagli seguenti:</span><span class="sxs-lookup"><span data-stu-id="17089-183">Enter the following details:</span></span>
 
-    <span data-ttu-id="4e8c4-184">**Generale**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-184">**General**</span></span>
+    <span data-ttu-id="17089-184">**Generale**</span><span class="sxs-lookup"><span data-stu-id="17089-184">**General**</span></span>
     
-    - <span data-ttu-id="4e8c4-185">Nome: Impostazioni di configurazione MDATP MDAV</span><span class="sxs-lookup"><span data-stu-id="4e8c4-185">Name: MDATP MDAV configuration settings</span></span>
-    - <span data-ttu-id="4e8c4-186">Descrizione:\<blank\></span><span class="sxs-lookup"><span data-stu-id="4e8c4-186">Description:\<blank\></span></span>
-    - <span data-ttu-id="4e8c4-187">Categoria: Nessuna (impostazione predefinita)</span><span class="sxs-lookup"><span data-stu-id="4e8c4-187">Category: None (default)</span></span>
-    - <span data-ttu-id="4e8c4-188">Metodo di distribuzione: installa automaticamente (impostazione predefinita)</span><span class="sxs-lookup"><span data-stu-id="4e8c4-188">Distribution Method: Install Automatically(default)</span></span>
-    - <span data-ttu-id="4e8c4-189">Livello: Livello computer(impostazione predefinita)</span><span class="sxs-lookup"><span data-stu-id="4e8c4-189">Level: Computer Level(default)</span></span>
+    - <span data-ttu-id="17089-185">Nome: Impostazioni di configurazione MDATP MDAV</span><span class="sxs-lookup"><span data-stu-id="17089-185">Name: MDATP MDAV configuration settings</span></span>
+    - <span data-ttu-id="17089-186">Descrizione:\<blank\></span><span class="sxs-lookup"><span data-stu-id="17089-186">Description:\<blank\></span></span>
+    - <span data-ttu-id="17089-187">Categoria: Nessuna (impostazione predefinita)</span><span class="sxs-lookup"><span data-stu-id="17089-187">Category: None (default)</span></span>
+    - <span data-ttu-id="17089-188">Metodo di distribuzione: installa automaticamente (impostazione predefinita)</span><span class="sxs-lookup"><span data-stu-id="17089-188">Distribution Method: Install Automatically(default)</span></span>
+    - <span data-ttu-id="17089-189">Livello: Livello computer(impostazione predefinita)</span><span class="sxs-lookup"><span data-stu-id="17089-189">Level: Computer Level(default)</span></span>
 
     ![Immagine delle impostazioni di configurazione MDATP MDAV](images/3160906404bc5a2edf84d1d015894e3b.png)
 
-5. <span data-ttu-id="4e8c4-191">In **Impostazioni & impostazioni personalizzate selezionare** **Configura**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-191">In **Application & Custom Settings** select **Configure**.</span></span>
+5. <span data-ttu-id="17089-191">In **Impostazioni & impostazioni personalizzate selezionare** **Configura**.</span><span class="sxs-lookup"><span data-stu-id="17089-191">In **Application & Custom Settings** select **Configure**.</span></span>
 
     ![Immagine delle impostazioni personalizzate e dell'app](images/e1cc1e48ec9d5d688087b4d771e668d2.png)
 
-6. <span data-ttu-id="4e8c4-193">Selezionare **Carica file (file PLIST).**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-193">Select **Upload File (PLIST file)**.</span></span>
+6. <span data-ttu-id="17089-193">Selezionare **Carica file (file PLIST).**</span><span class="sxs-lookup"><span data-stu-id="17089-193">Select **Upload File (PLIST file)**.</span></span>
 
     ![Immagine del file plist delle impostazioni di configurazione](images/6f85269276b2278eca4bce84f935f87b.png)
 
-7. <span data-ttu-id="4e8c4-195">In **Preferences Domain** immettere , quindi selezionare Upload `com.microsoft.wdav`  **PLIST File**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-195">In **Preferences Domain**, enter `com.microsoft.wdav`, then select  **Upload PLIST File**.</span></span>
+7. <span data-ttu-id="17089-195">In **Preferences Domain** immettere , quindi selezionare Upload `com.microsoft.wdav`  **PLIST File**.</span><span class="sxs-lookup"><span data-stu-id="17089-195">In **Preferences Domain**, enter `com.microsoft.wdav`, then select  **Upload PLIST File**.</span></span>
 
     ![Immagine del dominio delle preferenze delle impostazioni di configurazione](images/db15f147dd959e872a044184711d7d46.png)
 
-8. <span data-ttu-id="4e8c4-197">Selezionare **Scegli file**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-197">Select **Choose File**.</span></span>
+8. <span data-ttu-id="17089-197">Selezionare **Scegli file**.</span><span class="sxs-lookup"><span data-stu-id="17089-197">Select **Choose File**.</span></span>
 
     ![Immagine del file di scelta delle impostazioni di configurazione](images/526e978761fc571cca06907da7b01fd6.png)
 
-9. <span data-ttu-id="4e8c4-199">Seleziona il **MDATP_MDAV_configuration_settings.plist** e quindi seleziona **Apri.**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-199">Select the **MDATP_MDAV_configuration_settings.plist**, then select **Open**.</span></span>
+9. <span data-ttu-id="17089-199">Seleziona il **MDATP_MDAV_configuration_settings.plist** e quindi seleziona **Apri.**</span><span class="sxs-lookup"><span data-stu-id="17089-199">Select the **MDATP_MDAV_configuration_settings.plist**, then select **Open**.</span></span>
 
     ![Immagine delle impostazioni di configurazione di mdatpmdav](images/98acea3750113b8dbab334296e833003.png)
 
-10. <span data-ttu-id="4e8c4-201">Selezionare **Carica**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-201">Select **Upload**.</span></span>
+10. <span data-ttu-id="17089-201">Selezionare **Carica**.</span><span class="sxs-lookup"><span data-stu-id="17089-201">Select **Upload**.</span></span>
 
     ![Immagine del caricamento delle impostazioni di configurazione](images/0adb21c13206861ba9b30a879ade93d3.png)
 
     ![Immagine dell'immagine di caricamento delle impostazioni di configurazione](images/f624de59b3cc86e3e2d32ae5de093e02.png)
 
     >[!NOTE]
-    ><span data-ttu-id="4e8c4-204">Se si carica il file di Intune, verrà visualizzato l'errore seguente:</span><span class="sxs-lookup"><span data-stu-id="4e8c4-204">If you happen to upload the Intune file, you'll get the following error:</span></span><br>
-    ><span data-ttu-id="4e8c4-205">![Immagine delle impostazioni di configurazione caricamento file intune](images/8e69f867664668796a3b2904896f0436.png)</span><span class="sxs-lookup"><span data-stu-id="4e8c4-205">![Image of configuration settings intune file upload](images/8e69f867664668796a3b2904896f0436.png)</span></span>
+    ><span data-ttu-id="17089-204">Se si carica il file di Intune, verrà visualizzato l'errore seguente:</span><span class="sxs-lookup"><span data-stu-id="17089-204">If you happen to upload the Intune file, you'll get the following error:</span></span><br>
+    ><span data-ttu-id="17089-205">![Immagine delle impostazioni di configurazione caricamento file intune](images/8e69f867664668796a3b2904896f0436.png)</span><span class="sxs-lookup"><span data-stu-id="17089-205">![Image of configuration settings intune file upload](images/8e69f867664668796a3b2904896f0436.png)</span></span>
 
 
-11. <span data-ttu-id="4e8c4-206">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-206">Select **Save**.</span></span> 
+11. <span data-ttu-id="17089-206">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="17089-206">Select **Save**.</span></span> 
 
     ![Immagine delle impostazioni di configurazione Salva immagine](images/1b6b5a4edcb42d97f1e70a6a0fa48e3a.png)
 
-12. <span data-ttu-id="4e8c4-208">Il file viene caricato.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-208">The file is uploaded.</span></span>
+12. <span data-ttu-id="17089-208">Il file viene caricato.</span><span class="sxs-lookup"><span data-stu-id="17089-208">The file is uploaded.</span></span>
 
     ![Immagine dell'immagine del file delle impostazioni di configurazione caricata](images/33e2b2a1611fdddf6b5b79e54496e3bb.png)
 
     ![Immagine del file delle impostazioni di configurazione caricato](images/a422e57fe8d45689227e784443e51bd1.png)
 
-13. <span data-ttu-id="4e8c4-211">Selezionare la **scheda** Ambito.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-211">Select the **Scope** tab.</span></span>
+13. <span data-ttu-id="17089-211">Selezionare la **scheda** Ambito.</span><span class="sxs-lookup"><span data-stu-id="17089-211">Select the **Scope** tab.</span></span>
 
     ![Immagine dell'ambito delle impostazioni di configurazione](images/9fc17529e5577eefd773c658ec576a7d.png)
 
-14. <span data-ttu-id="4e8c4-213">Selezionare **Gruppo di computer di Contoso**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-213">Select **Contoso's Machine Group**.</span></span> 
+14. <span data-ttu-id="17089-213">Selezionare **Gruppo di computer di Contoso**.</span><span class="sxs-lookup"><span data-stu-id="17089-213">Select **Contoso's Machine Group**.</span></span> 
 
-15. <span data-ttu-id="4e8c4-214">Seleziona **Aggiungi** e **quindi** Salva.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-214">Select **Add**, then select **Save**.</span></span>
+15. <span data-ttu-id="17089-214">Seleziona **Aggiungi** e **quindi** Salva.</span><span class="sxs-lookup"><span data-stu-id="17089-214">Select **Add**, then select **Save**.</span></span>
 
     ![Immagine delle impostazioni di configurazione addsav](images/cf30438b5512ac89af1d11cbf35219a6.png)
 
     ![Immagine delle impostazioni di configurazione salva aggiungi](images/6f093e42856753a3955cab7ee14f12d9.png)
 
-16. <span data-ttu-id="4e8c4-217">Scegliere **Fatto**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-217">Select **Done**.</span></span> <span data-ttu-id="4e8c4-218">Verrà visualizzato il nuovo profilo **di configurazione**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-218">You'll see the new **Configuration profile**.</span></span>
+16. <span data-ttu-id="17089-217">Scegliere **Fatto**.</span><span class="sxs-lookup"><span data-stu-id="17089-217">Select **Done**.</span></span> <span data-ttu-id="17089-218">Verrà visualizzato il nuovo profilo **di configurazione**.</span><span class="sxs-lookup"><span data-stu-id="17089-218">You'll see the new **Configuration profile**.</span></span>
 
     ![Immagine del profilo di configurazione delle impostazioni di configurazione](images/dd55405106da0dfc2f50f8d4525b01c8.png)
 
 
-## <a name="step-4-configure-notifications-settings"></a><span data-ttu-id="4e8c4-220">Passaggio 4: Configurare le impostazioni delle notifiche</span><span class="sxs-lookup"><span data-stu-id="4e8c4-220">Step 4: Configure notifications settings</span></span>
+## <a name="step-4-configure-notifications-settings"></a><span data-ttu-id="17089-220">Passaggio 4: Configurare le impostazioni delle notifiche</span><span class="sxs-lookup"><span data-stu-id="17089-220">Step 4: Configure notifications settings</span></span>
 
-<span data-ttu-id="4e8c4-221">Questi passaggi sono applicabili a macOS 10.15 (Catalina) o versioni successive.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-221">These steps are applicable of macOS 10.15 (Catalina) or newer.</span></span>
+<span data-ttu-id="17089-221">Questi passaggi sono applicabili a macOS 10.15 (Catalina) o versioni successive.</span><span class="sxs-lookup"><span data-stu-id="17089-221">These steps are applicable of macOS 10.15 (Catalina) or newer.</span></span>
 
-1. <span data-ttu-id="4e8c4-222">Nel dashboard di Jamf Pro seleziona **Computer**, quindi **Profili di configurazione**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-222">In the Jamf Pro dashboard, select **Computers**, then **Configuration Profiles**.</span></span>
+1. <span data-ttu-id="17089-222">Nel dashboard di Jamf Pro seleziona **Computer**, quindi **Profili di configurazione**.</span><span class="sxs-lookup"><span data-stu-id="17089-222">In the Jamf Pro dashboard, select **Computers**, then **Configuration Profiles**.</span></span>
 
-2. <span data-ttu-id="4e8c4-223">Fare **clic su** Nuovo e immettere i dettagli seguenti per **Opzioni:**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-223">Click **New**, and enter the following details for **Options**:</span></span>
+2. <span data-ttu-id="17089-223">Fare **clic su** Nuovo e immettere i dettagli seguenti per **Opzioni:**</span><span class="sxs-lookup"><span data-stu-id="17089-223">Click **New**, and enter the following details for **Options**:</span></span>
     
-    - <span data-ttu-id="4e8c4-224">Scheda **Generale**:</span><span class="sxs-lookup"><span data-stu-id="4e8c4-224">Tab **General**:</span></span> 
-        - <span data-ttu-id="4e8c4-225">**Name**: MDATP MDAV Notification settings</span><span class="sxs-lookup"><span data-stu-id="4e8c4-225">**Name**: MDATP MDAV Notification settings</span></span>
-        - <span data-ttu-id="4e8c4-226">**Descrizione**: macOS 10.15 (Catalina) o versione più recente</span><span class="sxs-lookup"><span data-stu-id="4e8c4-226">**Description**: macOS 10.15 (Catalina) or newer</span></span>
-        - <span data-ttu-id="4e8c4-227">**Category**: None *(impostazione predefinita)*</span><span class="sxs-lookup"><span data-stu-id="4e8c4-227">**Category**: None *(default)*</span></span>
-        - <span data-ttu-id="4e8c4-228">**Metodo di distribuzione**: Installa *automaticamente (impostazione predefinita)*</span><span class="sxs-lookup"><span data-stu-id="4e8c4-228">**Distribution Method**: Install Automatically *(default)*</span></span>
-        - <span data-ttu-id="4e8c4-229">**Level**: Computer Level *(impostazione predefinita)*</span><span class="sxs-lookup"><span data-stu-id="4e8c4-229">**Level**: Computer Level *(default)*</span></span>
+    - <span data-ttu-id="17089-224">Scheda **Generale**:</span><span class="sxs-lookup"><span data-stu-id="17089-224">Tab **General**:</span></span> 
+        - <span data-ttu-id="17089-225">**Name**: MDATP MDAV Notification settings</span><span class="sxs-lookup"><span data-stu-id="17089-225">**Name**: MDATP MDAV Notification settings</span></span>
+        - <span data-ttu-id="17089-226">**Descrizione**: macOS 10.15 (Catalina) o versione più recente</span><span class="sxs-lookup"><span data-stu-id="17089-226">**Description**: macOS 10.15 (Catalina) or newer</span></span>
+        - <span data-ttu-id="17089-227">**Category**: None *(impostazione predefinita)*</span><span class="sxs-lookup"><span data-stu-id="17089-227">**Category**: None *(default)*</span></span>
+        - <span data-ttu-id="17089-228">**Metodo di distribuzione**: Installa *automaticamente (impostazione predefinita)*</span><span class="sxs-lookup"><span data-stu-id="17089-228">**Distribution Method**: Install Automatically *(default)*</span></span>
+        - <span data-ttu-id="17089-229">**Level**: Computer Level *(impostazione predefinita)*</span><span class="sxs-lookup"><span data-stu-id="17089-229">**Level**: Computer Level *(default)*</span></span>
 
         ![Immagine della schermata del nuovo profilo di configurazione macOS](images/c9820a5ff84aaf21635c04a23a97ca93.png)
 
-    - <span data-ttu-id="4e8c4-231">Scheda **Notifiche**, fare **clic su Aggiungi** e immettere i valori seguenti:</span><span class="sxs-lookup"><span data-stu-id="4e8c4-231">Tab **Notifications**, click **Add**, and enter the following values:</span></span>
-        - <span data-ttu-id="4e8c4-232">**ID bundle**: `com.microsoft.wdav.tray`</span><span class="sxs-lookup"><span data-stu-id="4e8c4-232">**Bundle ID**: `com.microsoft.wdav.tray`</span></span>
-        - <span data-ttu-id="4e8c4-233">**Avvisi critici**: fare clic su **Disabilita**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-233">**Critical Alerts**: Click **Disable**</span></span>
-        - <span data-ttu-id="4e8c4-234">**Notifiche**: fare clic su **Abilita**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-234">**Notifications**: Click **Enable**</span></span>
-        - <span data-ttu-id="4e8c4-235">**Tipo di avviso banner:** selezionare **Includi** e **temporaneo** *(impostazione predefinita)*</span><span class="sxs-lookup"><span data-stu-id="4e8c4-235">**Banner alert type**: Select **Include** and **Temporary** *(default)*</span></span>
-        - <span data-ttu-id="4e8c4-236">**Notifiche nella schermata di blocco**: fare clic su **Nascondi**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-236">**Notifications on lock screen**: Click **Hide**</span></span>
-        - <span data-ttu-id="4e8c4-237">**Notifiche nel Centro notifiche**: fare clic **su Visualizza**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-237">**Notifications in Notification Center**: Click **Display**</span></span>
-        - <span data-ttu-id="4e8c4-238">**Icona dell'app Badge**: fare clic su **Visualizza**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-238">**Badge app icon**: Click **Display**</span></span>
+    - <span data-ttu-id="17089-231">Scheda **Notifiche**, fare **clic su Aggiungi** e immettere i valori seguenti:</span><span class="sxs-lookup"><span data-stu-id="17089-231">Tab **Notifications**, click **Add**, and enter the following values:</span></span>
+        - <span data-ttu-id="17089-232">**ID bundle**: `com.microsoft.wdav.tray`</span><span class="sxs-lookup"><span data-stu-id="17089-232">**Bundle ID**: `com.microsoft.wdav.tray`</span></span>
+        - <span data-ttu-id="17089-233">**Avvisi critici**: fare clic su **Disabilita**</span><span class="sxs-lookup"><span data-stu-id="17089-233">**Critical Alerts**: Click **Disable**</span></span>
+        - <span data-ttu-id="17089-234">**Notifiche**: fare clic su **Abilita**</span><span class="sxs-lookup"><span data-stu-id="17089-234">**Notifications**: Click **Enable**</span></span>
+        - <span data-ttu-id="17089-235">**Tipo di avviso banner:** selezionare **Includi** e **temporaneo** *(impostazione predefinita)*</span><span class="sxs-lookup"><span data-stu-id="17089-235">**Banner alert type**: Select **Include** and **Temporary** *(default)*</span></span>
+        - <span data-ttu-id="17089-236">**Notifiche nella schermata di blocco**: fare clic su **Nascondi**</span><span class="sxs-lookup"><span data-stu-id="17089-236">**Notifications on lock screen**: Click **Hide**</span></span>
+        - <span data-ttu-id="17089-237">**Notifiche nel Centro notifiche**: fare clic **su Visualizza**</span><span class="sxs-lookup"><span data-stu-id="17089-237">**Notifications in Notification Center**: Click **Display**</span></span>
+        - <span data-ttu-id="17089-238">**Icona dell'app Badge**: fare clic su **Visualizza**</span><span class="sxs-lookup"><span data-stu-id="17089-238">**Badge app icon**: Click **Display**</span></span>
 
         ![Immagine della barra delle notifiche mdatpmdav delle impostazioni di configurazione](images/7f9138053dbcbf928e5182ee7b295ebe.png)
 
-    - <span data-ttu-id="4e8c4-240">Scheda **Notifiche,** fare **clic su Aggiungi** ancora una volta, scorrere verso il basso fino a Nuove impostazioni **notifiche**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-240">Tab **Notifications**, click **Add** one more time, scroll down to **New Notifications Settings**</span></span>
-        - <span data-ttu-id="4e8c4-241">**ID bundle**: `com.microsoft.autoupdate2`</span><span class="sxs-lookup"><span data-stu-id="4e8c4-241">**Bundle ID**: `com.microsoft.autoupdate2`</span></span>
-        - <span data-ttu-id="4e8c4-242">Configurare il resto delle impostazioni con gli stessi valori di cui sopra</span><span class="sxs-lookup"><span data-stu-id="4e8c4-242">Configure the rest of the settings to the same values as above</span></span>
+    - <span data-ttu-id="17089-240">Scheda **Notifiche,** fare **clic su Aggiungi** ancora una volta, scorrere verso il basso fino a Nuove impostazioni **notifiche**</span><span class="sxs-lookup"><span data-stu-id="17089-240">Tab **Notifications**, click **Add** one more time, scroll down to **New Notifications Settings**</span></span>
+        - <span data-ttu-id="17089-241">**ID bundle**: `com.microsoft.autoupdate2`</span><span class="sxs-lookup"><span data-stu-id="17089-241">**Bundle ID**: `com.microsoft.autoupdate2`</span></span>
+        - <span data-ttu-id="17089-242">Configurare il resto delle impostazioni con gli stessi valori di cui sopra</span><span class="sxs-lookup"><span data-stu-id="17089-242">Configure the rest of the settings to the same values as above</span></span>
 
         ![Immagine delle impostazioni di configurazione mdatpmdav notifications mau](images/4bac6ce277aedfb4a674f2d9fcb2599a.png)
 
-        <span data-ttu-id="4e8c4-244">Tieni presente che ora hai due "tabelle" con configurazioni di notifica, una per **l'ID bundle: com.microsoft.wdav.tray** e un'altra per l'ID **bundle: com.microsoft.autoupdate2.**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-244">Note that now you have two 'tables' with notification configurations, one for **Bundle ID: com.microsoft.wdav.tray**, and another for **Bundle ID: com.microsoft.autoupdate2**.</span></span> <span data-ttu-id="4e8c4-245">Sebbene sia possibile configurare le impostazioni degli avvisi in base ai propri requisiti, gli ID bundle devono essere esattamente gli stessi descritti in precedenza e l'opzione **Includi** deve essere **attivata** per le **notifiche.**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-245">While you can configure alert settings per your requirements, Bundle IDs must be exactly the same as described before, and **Include** switch must be **On** for **Notifications**.</span></span>
+        <span data-ttu-id="17089-244">Tieni presente che ora hai due "tabelle" con configurazioni di notifica, una per **l'ID bundle: com.microsoft.wdav.tray** e un'altra per l'ID **bundle: com.microsoft.autoupdate2.**</span><span class="sxs-lookup"><span data-stu-id="17089-244">Note that now you have two 'tables' with notification configurations, one for **Bundle ID: com.microsoft.wdav.tray**, and another for **Bundle ID: com.microsoft.autoupdate2**.</span></span> <span data-ttu-id="17089-245">Sebbene sia possibile configurare le impostazioni degli avvisi in base ai propri requisiti, gli ID bundle devono essere esattamente gli stessi descritti in precedenza e l'opzione **Includi** deve essere **attivata** per le **notifiche.**</span><span class="sxs-lookup"><span data-stu-id="17089-245">While you can configure alert settings per your requirements, Bundle IDs must be exactly the same as described before, and **Include** switch must be **On** for **Notifications**.</span></span>
 
-3. <span data-ttu-id="4e8c4-246">Seleziona la **scheda Ambito,** quindi seleziona **Aggiungi.**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-246">Select the **Scope** tab, then select **Add**.</span></span>
+3. <span data-ttu-id="17089-246">Seleziona la **scheda Ambito,** quindi seleziona **Aggiungi.**</span><span class="sxs-lookup"><span data-stu-id="17089-246">Select the **Scope** tab, then select **Add**.</span></span>
 
     ![Immagine dell'ambito delle impostazioni di configurazione add](images/441aa2ecd36abadcdd8aed03556080b5.png)
 
-4. <span data-ttu-id="4e8c4-248">Selezionare **Gruppo di computer di Contoso**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-248">Select **Contoso's Machine Group**.</span></span> 
+4. <span data-ttu-id="17089-248">Selezionare **Gruppo di computer di Contoso**.</span><span class="sxs-lookup"><span data-stu-id="17089-248">Select **Contoso's Machine Group**.</span></span> 
 
-5. <span data-ttu-id="4e8c4-249">Seleziona **Aggiungi** e **quindi** Salva.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-249">Select **Add**, then select **Save**.</span></span>
+5. <span data-ttu-id="17089-249">Seleziona **Aggiungi** e **quindi** Salva.</span><span class="sxs-lookup"><span data-stu-id="17089-249">Select **Add**, then select **Save**.</span></span>
     
     ![Immagine delle impostazioni di configurazione contoso machine grp save](images/09a275e321268e5e3ac0c0865d3e2db5.png)
     
     ![Immagine delle impostazioni di configurazione aggiungi salvataggio](images/4d2d1d4ee13d3f840f425924c3df0d51.png)
 
-6. <span data-ttu-id="4e8c4-252">Scegliere **Fatto**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-252">Select **Done**.</span></span> <span data-ttu-id="4e8c4-253">Verrà visualizzato il nuovo profilo **di configurazione**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-253">You'll see the new **Configuration profile**.</span></span>
-    <span data-ttu-id="4e8c4-254">![Immagine dell'impostazione di configurazione eseguita img](images/633ad26b8bf24ec683c98b2feb884bdf.png)</span><span class="sxs-lookup"><span data-stu-id="4e8c4-254">![Image of configuration setting done img](images/633ad26b8bf24ec683c98b2feb884bdf.png)</span></span>
+6. <span data-ttu-id="17089-252">Scegliere **Fatto**.</span><span class="sxs-lookup"><span data-stu-id="17089-252">Select **Done**.</span></span> <span data-ttu-id="17089-253">Verrà visualizzato il nuovo profilo **di configurazione**.</span><span class="sxs-lookup"><span data-stu-id="17089-253">You'll see the new **Configuration profile**.</span></span>
+    <span data-ttu-id="17089-254">![Immagine dell'impostazione di configurazione eseguita img](images/633ad26b8bf24ec683c98b2feb884bdf.png)</span><span class="sxs-lookup"><span data-stu-id="17089-254">![Image of configuration setting done img](images/633ad26b8bf24ec683c98b2feb884bdf.png)</span></span>
 
-## <a name="step-5-configure-microsoft-autoupdate-mau"></a><span data-ttu-id="4e8c4-255">Passaggio 5: Configurare Microsoft AutoUpdate (MAU)</span><span class="sxs-lookup"><span data-stu-id="4e8c4-255">Step 5: Configure Microsoft AutoUpdate (MAU)</span></span>
+## <a name="step-5-configure-microsoft-autoupdate-mau"></a><span data-ttu-id="17089-255">Passaggio 5: Configurare Microsoft AutoUpdate (MAU)</span><span class="sxs-lookup"><span data-stu-id="17089-255">Step 5: Configure Microsoft AutoUpdate (MAU)</span></span>
 
-1. <span data-ttu-id="4e8c4-256">Usa le impostazioni di configurazione di Microsoft Defender for Endpoint seguenti:</span><span class="sxs-lookup"><span data-stu-id="4e8c4-256">Use the following Microsoft Defender for Endpoint configuration settings:</span></span>
+1. <span data-ttu-id="17089-256">Usa le impostazioni di configurazione di Microsoft Defender for Endpoint seguenti:</span><span class="sxs-lookup"><span data-stu-id="17089-256">Use the following Microsoft Defender for Endpoint configuration settings:</span></span>
 
       ```XML
    <?xml version="1.0" encoding="UTF-8"?>
@@ -419,56 +419,56 @@ ms.locfileid: "51862272"
    </plist>
    ```
 
-2. <span data-ttu-id="4e8c4-257">Salvarlo con nome `MDATP_MDAV_MAU_settings.plist` .</span><span class="sxs-lookup"><span data-stu-id="4e8c4-257">Save it as `MDATP_MDAV_MAU_settings.plist`.</span></span>
+2. <span data-ttu-id="17089-257">Salvarlo con nome `MDATP_MDAV_MAU_settings.plist` .</span><span class="sxs-lookup"><span data-stu-id="17089-257">Save it as `MDATP_MDAV_MAU_settings.plist`.</span></span>
 
-3. <span data-ttu-id="4e8c4-258">Nel dashboard jamf pro selezionare **Generale.**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-258">In the Jamf Pro dashboard, select **General**.</span></span> 
+3. <span data-ttu-id="17089-258">Nel dashboard jamf pro selezionare **Generale.**</span><span class="sxs-lookup"><span data-stu-id="17089-258">In the Jamf Pro dashboard, select **General**.</span></span> 
 
     ![Immagine dell'immagine generale dell'impostazione di configurazione](images/eaba2a23dd34f73bf59e826217ba6f15.png)
 
-4. <span data-ttu-id="4e8c4-260">Immettere i dettagli seguenti:</span><span class="sxs-lookup"><span data-stu-id="4e8c4-260">Enter the following details:</span></span>
+4. <span data-ttu-id="17089-260">Immettere i dettagli seguenti:</span><span class="sxs-lookup"><span data-stu-id="17089-260">Enter the following details:</span></span>
 
-    <span data-ttu-id="4e8c4-261">**Generale**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-261">**General**</span></span> 
+    <span data-ttu-id="17089-261">**Generale**</span><span class="sxs-lookup"><span data-stu-id="17089-261">**General**</span></span> 
     
-    - <span data-ttu-id="4e8c4-262">Nome: Impostazioni MDATP MDAV MAU</span><span class="sxs-lookup"><span data-stu-id="4e8c4-262">Name: MDATP MDAV MAU settings</span></span>
-    - <span data-ttu-id="4e8c4-263">Descrizione: impostazioni di Microsoft AutoUpdate per MDATP per macOS</span><span class="sxs-lookup"><span data-stu-id="4e8c4-263">Description: Microsoft AutoUpdate settings for MDATP for macOS</span></span>
-    - <span data-ttu-id="4e8c4-264">Categoria: Nessuna (impostazione predefinita)</span><span class="sxs-lookup"><span data-stu-id="4e8c4-264">Category: None (default)</span></span>
-    - <span data-ttu-id="4e8c4-265">Metodo di distribuzione: installa automaticamente (impostazione predefinita)</span><span class="sxs-lookup"><span data-stu-id="4e8c4-265">Distribution Method: Install Automatically(default)</span></span>
-    - <span data-ttu-id="4e8c4-266">Livello: Livello computer(impostazione predefinita)</span><span class="sxs-lookup"><span data-stu-id="4e8c4-266">Level: Computer Level(default)</span></span>
+    - <span data-ttu-id="17089-262">Nome: Impostazioni MDATP MDAV MAU</span><span class="sxs-lookup"><span data-stu-id="17089-262">Name: MDATP MDAV MAU settings</span></span>
+    - <span data-ttu-id="17089-263">Descrizione: impostazioni di Microsoft AutoUpdate per MDATP per macOS</span><span class="sxs-lookup"><span data-stu-id="17089-263">Description: Microsoft AutoUpdate settings for MDATP for macOS</span></span>
+    - <span data-ttu-id="17089-264">Categoria: Nessuna (impostazione predefinita)</span><span class="sxs-lookup"><span data-stu-id="17089-264">Category: None (default)</span></span>
+    - <span data-ttu-id="17089-265">Metodo di distribuzione: installa automaticamente (impostazione predefinita)</span><span class="sxs-lookup"><span data-stu-id="17089-265">Distribution Method: Install Automatically(default)</span></span>
+    - <span data-ttu-id="17089-266">Livello: Livello computer(impostazione predefinita)</span><span class="sxs-lookup"><span data-stu-id="17089-266">Level: Computer Level(default)</span></span>
 
-5. <span data-ttu-id="4e8c4-267">In **Impostazioni & impostazioni personalizzate selezionare** **Configura**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-267">In **Application & Custom Settings** select **Configure**.</span></span>
+5. <span data-ttu-id="17089-267">In **Impostazioni & impostazioni personalizzate selezionare** **Configura**.</span><span class="sxs-lookup"><span data-stu-id="17089-267">In **Application & Custom Settings** select **Configure**.</span></span>
 
     ![Immagine dell'app delle impostazioni di configurazione e delle impostazioni personalizzate](images/1f72e9c15eaafcabf1504397e99be311.png)
 
-6. <span data-ttu-id="4e8c4-269">Selezionare **Carica file (file PLIST).**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-269">Select **Upload File (PLIST file)**.</span></span>
+6. <span data-ttu-id="17089-269">Selezionare **Carica file (file PLIST).**</span><span class="sxs-lookup"><span data-stu-id="17089-269">Select **Upload File (PLIST file)**.</span></span>
 
     ![Immagine dell'impostazione di configurazione plist](images/1213872db5833aa8be535da57653219f.png)  
 
-7. <span data-ttu-id="4e8c4-271">In **Dominio preferenza** immettere: , quindi selezionare Carica file `com.microsoft.autoupdate2` **PLIST**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-271">In **Preference Domain** enter: `com.microsoft.autoupdate2`, then select **Upload PLIST File**.</span></span>
+7. <span data-ttu-id="17089-271">In **Dominio preferenza** immettere: , quindi selezionare Carica file `com.microsoft.autoupdate2` **PLIST**.</span><span class="sxs-lookup"><span data-stu-id="17089-271">In **Preference Domain** enter: `com.microsoft.autoupdate2`, then select **Upload PLIST File**.</span></span>
 
     ![Immagine del dominio pref dell'impostazione di configurazione](images/1213872db5833aa8be535da57653219f.png)
 
-8. <span data-ttu-id="4e8c4-273">Selezionare **Scegli file**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-273">Select **Choose File**.</span></span>
+8. <span data-ttu-id="17089-273">Selezionare **Scegli file**.</span><span class="sxs-lookup"><span data-stu-id="17089-273">Select **Choose File**.</span></span>
 
     ![Immagine dell'impostazione di configurazione choosefile](images/335aff58950ce62d1dabc289ecdce9ed.png)
 
-9. <span data-ttu-id="4e8c4-275">Selezionare **MDATP_MDAV_MAU_settings.plist**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-275">Select **MDATP_MDAV_MAU_settings.plist**.</span></span>
+9. <span data-ttu-id="17089-275">Selezionare **MDATP_MDAV_MAU_settings.plist**.</span><span class="sxs-lookup"><span data-stu-id="17089-275">Select **MDATP_MDAV_MAU_settings.plist**.</span></span>
 
     ![Immagine delle impostazioni di configurazione mdatpmdavmau](images/a26bd4967cd54bb113a2c8d32894c3de.png)
 
-10. <span data-ttu-id="4e8c4-277">Selezionare **Carica**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-277">Select **Upload**.</span></span>
-    <span data-ttu-id="4e8c4-278">![Immagine dell'impostazione di configurazione uplimage](images/4239ca0528efb0734e4ca0b490bfb22d.png)</span><span class="sxs-lookup"><span data-stu-id="4e8c4-278">![Image of configuration setting uplimage](images/4239ca0528efb0734e4ca0b490bfb22d.png)</span></span>
+10. <span data-ttu-id="17089-277">Selezionare **Carica**.</span><span class="sxs-lookup"><span data-stu-id="17089-277">Select **Upload**.</span></span>
+    <span data-ttu-id="17089-278">![Immagine dell'impostazione di configurazione uplimage](images/4239ca0528efb0734e4ca0b490bfb22d.png)</span><span class="sxs-lookup"><span data-stu-id="17089-278">![Image of configuration setting uplimage](images/4239ca0528efb0734e4ca0b490bfb22d.png)</span></span>
 
     ![Immagine dell'impostazione di configurazione uplimg](images/4ec20e72c8aed9a4c16912e01692436a.png)
 
-11. <span data-ttu-id="4e8c4-280">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-280">Select **Save**.</span></span>
+11. <span data-ttu-id="17089-280">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="17089-280">Select **Save**.</span></span>
 
     ![Immagine dell'impostazione di configurazione saveimg](images/253274b33e74f3f5b8d475cf8692ce4e.png)
 
-12. <span data-ttu-id="4e8c4-282">Selezionare la **scheda** Ambito.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-282">Select the **Scope** tab.</span></span>
+12. <span data-ttu-id="17089-282">Selezionare la **scheda** Ambito.</span><span class="sxs-lookup"><span data-stu-id="17089-282">Select the **Scope** tab.</span></span>
    
      ![Immagine dell'ambito dell'impostazione di configurazione](images/10ab98358b2d602f3f67618735fa82fb.png)
 
-13. <span data-ttu-id="4e8c4-284">Selezionare **Aggiungi**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-284">Select **Add**.</span></span>
+13. <span data-ttu-id="17089-284">Selezionare **Aggiungi**.</span><span class="sxs-lookup"><span data-stu-id="17089-284">Select **Add**.</span></span>
     
     ![Immagine dell'impostazione di configurazione addimg1](images/56e6f6259b9ce3c1706ed8d666ae4947.png)
 
@@ -476,373 +476,373 @@ ms.locfileid: "51862272"
 
     ![Immagine dell'impostazione di configurazione addimg3](images/321ba245f14743c1d5d51c15e99deecc.png)
 
-14. <span data-ttu-id="4e8c4-288">Scegliere **Fatto**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-288">Select **Done**.</span></span>
+14. <span data-ttu-id="17089-288">Scegliere **Fatto**.</span><span class="sxs-lookup"><span data-stu-id="17089-288">Select **Done**.</span></span>
     
     ![Immagine dell'impostazione di configurazione doneimage](images/ba44cdb77e4781aa8b940fb83e3c21f7.png)
 
-## <a name="step-6-grant-full-disk-access-to-microsoft-defender-for-endpoint"></a><span data-ttu-id="4e8c4-290">Passaggio 6: concedere l'accesso completo al disco a Microsoft Defender per Endpoint</span><span class="sxs-lookup"><span data-stu-id="4e8c4-290">Step 6: Grant full disk access to Microsoft Defender for Endpoint</span></span>
+## <a name="step-6-grant-full-disk-access-to-microsoft-defender-for-endpoint"></a><span data-ttu-id="17089-290">Passaggio 6: concedere l'accesso completo al disco a Microsoft Defender per Endpoint</span><span class="sxs-lookup"><span data-stu-id="17089-290">Step 6: Grant full disk access to Microsoft Defender for Endpoint</span></span>
 
-1. <span data-ttu-id="4e8c4-291">Nel dashboard di Jamf Pro seleziona **Profili di configurazione.**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-291">In the Jamf Pro dashboard, select **Configuration Profiles**.</span></span>
+1. <span data-ttu-id="17089-291">Nel dashboard di Jamf Pro seleziona **Profili di configurazione.**</span><span class="sxs-lookup"><span data-stu-id="17089-291">In the Jamf Pro dashboard, select **Configuration Profiles**.</span></span>
 
     ![Immagine del profilo di configurazione dell'impostazione di configurazione](images/264493cd01e62c7085659d6fdc26dc91.png)
 
-2. <span data-ttu-id="4e8c4-293">Selezionare **+ Nuovo**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-293">Select **+ New**.</span></span> 
+2. <span data-ttu-id="17089-293">Selezionare **+ Nuovo**.</span><span class="sxs-lookup"><span data-stu-id="17089-293">Select **+ New**.</span></span> 
 
-3. <span data-ttu-id="4e8c4-294">Immettere i dettagli seguenti:</span><span class="sxs-lookup"><span data-stu-id="4e8c4-294">Enter the following details:</span></span>
+3. <span data-ttu-id="17089-294">Immettere i dettagli seguenti:</span><span class="sxs-lookup"><span data-stu-id="17089-294">Enter the following details:</span></span>
 
-    <span data-ttu-id="4e8c4-295">**Generale**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-295">**General**</span></span> 
-    - <span data-ttu-id="4e8c4-296">Name: MDATP MDAV - grant Full Disk Access to EDR and AV</span><span class="sxs-lookup"><span data-stu-id="4e8c4-296">Name: MDATP MDAV - grant Full Disk Access to EDR and AV</span></span>
-    - <span data-ttu-id="4e8c4-297">Descrizione: in macOS Catalina o versioni più nuove, il nuovo controllo dei criteri delle preferenze sulla privacy</span><span class="sxs-lookup"><span data-stu-id="4e8c4-297">Description: On macOS Catalina or newer, the new Privacy Preferences Policy Control</span></span>
-    - <span data-ttu-id="4e8c4-298">Categoria: Nessuno</span><span class="sxs-lookup"><span data-stu-id="4e8c4-298">Category: None</span></span>
-    - <span data-ttu-id="4e8c4-299">Metodo di distribuzione: installazione automatica</span><span class="sxs-lookup"><span data-stu-id="4e8c4-299">Distribution method: Install Automatically</span></span>
-    - <span data-ttu-id="4e8c4-300">Livello: livello computer</span><span class="sxs-lookup"><span data-stu-id="4e8c4-300">Level: Computer level</span></span>
+    <span data-ttu-id="17089-295">**Generale**</span><span class="sxs-lookup"><span data-stu-id="17089-295">**General**</span></span> 
+    - <span data-ttu-id="17089-296">Name: MDATP MDAV - grant Full Disk Access to EDR and AV</span><span class="sxs-lookup"><span data-stu-id="17089-296">Name: MDATP MDAV - grant Full Disk Access to EDR and AV</span></span>
+    - <span data-ttu-id="17089-297">Descrizione: in macOS Catalina o versioni più nuove, il nuovo controllo dei criteri delle preferenze sulla privacy</span><span class="sxs-lookup"><span data-stu-id="17089-297">Description: On macOS Catalina or newer, the new Privacy Preferences Policy Control</span></span>
+    - <span data-ttu-id="17089-298">Categoria: Nessuno</span><span class="sxs-lookup"><span data-stu-id="17089-298">Category: None</span></span>
+    - <span data-ttu-id="17089-299">Metodo di distribuzione: installazione automatica</span><span class="sxs-lookup"><span data-stu-id="17089-299">Distribution method: Install Automatically</span></span>
+    - <span data-ttu-id="17089-300">Livello: livello computer</span><span class="sxs-lookup"><span data-stu-id="17089-300">Level: Computer level</span></span>
 
 
     ![Immagine dell'impostazione di configurazione generale](images/ba3d40399e1a6d09214ecbb2b341923f.png)
 
-4. <span data-ttu-id="4e8c4-302">In **Configure Privacy Preferences Policy Control** selezionare **Configure**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-302">In **Configure Privacy Preferences Policy Control** select **Configure**.</span></span>
+4. <span data-ttu-id="17089-302">In **Configure Privacy Preferences Policy Control** selezionare **Configure**.</span><span class="sxs-lookup"><span data-stu-id="17089-302">In **Configure Privacy Preferences Policy Control** select **Configure**.</span></span>
 
     ![Immagine del controllo dell'informativa sulla privacy della configurazione](images/715ae7ec8d6a262c489f94d14e1e51bb.png)
 
-5. <span data-ttu-id="4e8c4-304">In **Privacy Preferences Policy Control** immetti i dettagli seguenti:</span><span class="sxs-lookup"><span data-stu-id="4e8c4-304">In **Privacy Preferences Policy Control**, enter the following details:</span></span>
+5. <span data-ttu-id="17089-304">In **Privacy Preferences Policy Control** immetti i dettagli seguenti:</span><span class="sxs-lookup"><span data-stu-id="17089-304">In **Privacy Preferences Policy Control**, enter the following details:</span></span>
 
-    - <span data-ttu-id="4e8c4-305">Identificatore: `com.microsoft.wdav`</span><span class="sxs-lookup"><span data-stu-id="4e8c4-305">Identifier: `com.microsoft.wdav`</span></span>
-    - <span data-ttu-id="4e8c4-306">Tipo di identificatore: ID bundle</span><span class="sxs-lookup"><span data-stu-id="4e8c4-306">Identifier Type: Bundle ID</span></span>
-    - <span data-ttu-id="4e8c4-307">Requisiti del codice: `identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`</span><span class="sxs-lookup"><span data-stu-id="4e8c4-307">Code Requirement: `identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`</span></span>
+    - <span data-ttu-id="17089-305">Identificatore: `com.microsoft.wdav`</span><span class="sxs-lookup"><span data-stu-id="17089-305">Identifier: `com.microsoft.wdav`</span></span>
+    - <span data-ttu-id="17089-306">Tipo di identificatore: ID bundle</span><span class="sxs-lookup"><span data-stu-id="17089-306">Identifier Type: Bundle ID</span></span>
+    - <span data-ttu-id="17089-307">Requisiti del codice: `identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`</span><span class="sxs-lookup"><span data-stu-id="17089-307">Code Requirement: `identifier "com.microsoft.wdav" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`</span></span>
 
 
     ![Immagine dei dettagli del controllo dei criteri di preferenza della privacy dell'impostazione di configurazione](images/22cb439de958101c0a12f3038f905b27.png)
 
-6. <span data-ttu-id="4e8c4-309">Selezionare **+ Aggiungi**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-309">Select **+ Add**.</span></span>
+6. <span data-ttu-id="17089-309">Selezionare **+ Aggiungi**.</span><span class="sxs-lookup"><span data-stu-id="17089-309">Select **+ Add**.</span></span>
 
     ![Immagine dell'impostazione di configurazione aggiungi criteri di sistema a tutti i file](images/bd93e78b74c2660a0541af4690dd9485.png)
 
-    - <span data-ttu-id="4e8c4-311">In App o servizio: impostata su **SystemPolicyAllFiles**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-311">Under App or service: Set to **SystemPolicyAllFiles**</span></span>
+    - <span data-ttu-id="17089-311">In App o servizio: impostata su **SystemPolicyAllFiles**</span><span class="sxs-lookup"><span data-stu-id="17089-311">Under App or service: Set to **SystemPolicyAllFiles**</span></span>
 
-    - <span data-ttu-id="4e8c4-312">In "accesso": impostata su **Consenti**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-312">Under "access": Set to **Allow**</span></span>
+    - <span data-ttu-id="17089-312">In "accesso": impostata su **Consenti**</span><span class="sxs-lookup"><span data-stu-id="17089-312">Under "access": Set to **Allow**</span></span>
 
-7. <span data-ttu-id="4e8c4-313">Seleziona **Salva** (non quello in basso a destra).</span><span class="sxs-lookup"><span data-stu-id="4e8c4-313">Select **Save** (not the one at the bottom right).</span></span>
+7. <span data-ttu-id="17089-313">Seleziona **Salva** (non quello in basso a destra).</span><span class="sxs-lookup"><span data-stu-id="17089-313">Select **Save** (not the one at the bottom right).</span></span>
 
     ![Immagine dell'impostazione di configurazione salva le immagini](images/6de50b4a897408ddc6ded56a09c09fe2.png)
 
-8. <span data-ttu-id="4e8c4-315">Fare clic `+` sul segno accanto ad Accesso **app** per aggiungere una nuova voce.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-315">Click the `+` sign next to **App Access** to add a new entry.</span></span>
+8. <span data-ttu-id="17089-315">Fare clic `+` sul segno accanto ad Accesso **app** per aggiungere una nuova voce.</span><span class="sxs-lookup"><span data-stu-id="17089-315">Click the `+` sign next to **App Access** to add a new entry.</span></span>
 
     ![Immagine dell'impostazione di configurazione dell'accesso all'app](images/tcc-add-entry.png)
 
-9. <span data-ttu-id="4e8c4-317">Immettere i dettagli seguenti:</span><span class="sxs-lookup"><span data-stu-id="4e8c4-317">Enter the following details:</span></span>
+9. <span data-ttu-id="17089-317">Immettere i dettagli seguenti:</span><span class="sxs-lookup"><span data-stu-id="17089-317">Enter the following details:</span></span>
 
-    - <span data-ttu-id="4e8c4-318">Identificatore: `com.microsoft.wdav.epsext`</span><span class="sxs-lookup"><span data-stu-id="4e8c4-318">Identifier: `com.microsoft.wdav.epsext`</span></span>
-    - <span data-ttu-id="4e8c4-319">Tipo di identificatore: ID bundle</span><span class="sxs-lookup"><span data-stu-id="4e8c4-319">Identifier Type: Bundle ID</span></span>
-    - <span data-ttu-id="4e8c4-320">Requisiti del codice: `identifier "com.microsoft.wdav.epsext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`</span><span class="sxs-lookup"><span data-stu-id="4e8c4-320">Code Requirement: `identifier "com.microsoft.wdav.epsext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`</span></span>
+    - <span data-ttu-id="17089-318">Identificatore: `com.microsoft.wdav.epsext`</span><span class="sxs-lookup"><span data-stu-id="17089-318">Identifier: `com.microsoft.wdav.epsext`</span></span>
+    - <span data-ttu-id="17089-319">Tipo di identificatore: ID bundle</span><span class="sxs-lookup"><span data-stu-id="17089-319">Identifier Type: Bundle ID</span></span>
+    - <span data-ttu-id="17089-320">Requisiti del codice: `identifier "com.microsoft.wdav.epsext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`</span><span class="sxs-lookup"><span data-stu-id="17089-320">Code Requirement: `identifier "com.microsoft.wdav.epsext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`</span></span>
 
-10. <span data-ttu-id="4e8c4-321">Selezionare **+ Aggiungi**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-321">Select **+ Add**.</span></span>
+10. <span data-ttu-id="17089-321">Selezionare **+ Aggiungi**.</span><span class="sxs-lookup"><span data-stu-id="17089-321">Select **+ Add**.</span></span>
 
     ![Immagine della voce tcc epsext dell'impostazione di configurazione](images/tcc-epsext-entry.png)
 
-    - <span data-ttu-id="4e8c4-323">In App o servizio: impostata su **SystemPolicyAllFiles**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-323">Under App or service: Set to **SystemPolicyAllFiles**</span></span>
+    - <span data-ttu-id="17089-323">In App o servizio: impostata su **SystemPolicyAllFiles**</span><span class="sxs-lookup"><span data-stu-id="17089-323">Under App or service: Set to **SystemPolicyAllFiles**</span></span>
 
-    - <span data-ttu-id="4e8c4-324">In "accesso": impostata su **Consenti**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-324">Under "access": Set to **Allow**</span></span>
+    - <span data-ttu-id="17089-324">In "accesso": impostata su **Consenti**</span><span class="sxs-lookup"><span data-stu-id="17089-324">Under "access": Set to **Allow**</span></span>
 
-11. <span data-ttu-id="4e8c4-325">Seleziona **Salva** (non quello in basso a destra).</span><span class="sxs-lookup"><span data-stu-id="4e8c4-325">Select **Save** (not the one at the bottom right).</span></span>
+11. <span data-ttu-id="17089-325">Seleziona **Salva** (non quello in basso a destra).</span><span class="sxs-lookup"><span data-stu-id="17089-325">Select **Save** (not the one at the bottom right).</span></span>
 
     ![Immagine dell'impostazione di configurazione tcc epsext image2](images/tcc-epsext-entry2.png)
 
-12. <span data-ttu-id="4e8c4-327">Selezionare la **scheda** Ambito.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-327">Select the **Scope** tab.</span></span>
+12. <span data-ttu-id="17089-327">Selezionare la **scheda** Ambito.</span><span class="sxs-lookup"><span data-stu-id="17089-327">Select the **Scope** tab.</span></span>
 
     ![Immagine dell'ambito dell'impostazione di configurazione](images/2c49b16cd112729b3719724f581e6882.png)
 
-13. <span data-ttu-id="4e8c4-329">Selezionare **+ Aggiungi**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-329">Select **+ Add**.</span></span>
+13. <span data-ttu-id="17089-329">Selezionare **+ Aggiungi**.</span><span class="sxs-lookup"><span data-stu-id="17089-329">Select **+ Add**.</span></span>
 
     ![Immagine dell'impostazione di configurazione addimage](images/57cef926d1b9260fb74a5f460cee887a.png)
 
-14. <span data-ttu-id="4e8c4-331">Selezionare **Gruppi di** computer > in Nome gruppo **>** selezionare **MachineGroup di Contoso.**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-331">Select **Computer Groups** > under **Group Name** > select **Contoso's MachineGroup**.</span></span> 
+14. <span data-ttu-id="17089-331">Selezionare **Gruppi di** computer > in Nome gruppo **>** selezionare **MachineGroup di Contoso.**</span><span class="sxs-lookup"><span data-stu-id="17089-331">Select **Computer Groups** > under **Group Name** > select **Contoso's MachineGroup**.</span></span> 
 
     ![Immagine dell'impostazione di configurazione contoso machinegrp](images/368d35b3d6179af92ffdbfd93b226b69.png)
 
-15. <span data-ttu-id="4e8c4-333">Selezionare **Aggiungi**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-333">Select **Add**.</span></span> 
+15. <span data-ttu-id="17089-333">Selezionare **Aggiungi**.</span><span class="sxs-lookup"><span data-stu-id="17089-333">Select **Add**.</span></span> 
 
-16. <span data-ttu-id="4e8c4-334">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-334">Select **Save**.</span></span> 
+16. <span data-ttu-id="17089-334">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="17089-334">Select **Save**.</span></span> 
     
-17. <span data-ttu-id="4e8c4-335">Scegliere **Fatto**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-335">Select **Done**.</span></span>
+17. <span data-ttu-id="17089-335">Scegliere **Fatto**.</span><span class="sxs-lookup"><span data-stu-id="17089-335">Select **Done**.</span></span>
     
     ![Immagine dell'impostazione di configurazione donimg](images/809cef630281b64b8f07f20913b0039b.png)
     
     ![Immagine dell'impostazione di configurazione donimg2](images/6c8b406ee224335a8c65d06953dc756e.png)
 
-<span data-ttu-id="4e8c4-338">In alternativa, è possibile scaricare [fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) e caricarlo nei profili di configurazione JAMF come descritto in [Deploying Custom Configuration Profiles using Jamf Pro| Metodo 2: Caricare un profilo di configurazione in Jamf Pro.](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)</span><span class="sxs-lookup"><span data-stu-id="4e8c4-338">Alternatively, you can download [fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) and upload it to JAMF Configuration Profiles as described in [Deploying Custom Configuration Profiles using Jamf Pro|Method 2: Upload a Configuration Profile to Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).</span></span>
+<span data-ttu-id="17089-338">In alternativa, è possibile scaricare [fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) e caricarlo nei profili di configurazione JAMF come descritto in [Deploying Custom Configuration Profiles using Jamf Pro| Metodo 2: Caricare un profilo di configurazione in Jamf Pro.](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)</span><span class="sxs-lookup"><span data-stu-id="17089-338">Alternatively, you can download [fulldisk.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/fulldisk.mobileconfig) and upload it to JAMF Configuration Profiles as described in [Deploying Custom Configuration Profiles using Jamf Pro|Method 2: Upload a Configuration Profile to Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).</span></span>
 
-## <a name="step-7-approve-kernel-extension-for-microsoft-defender-for-endpoint"></a><span data-ttu-id="4e8c4-339">Passaggio 7: Approvare l'estensione kernel per Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="4e8c4-339">Step 7: Approve Kernel extension for Microsoft Defender for Endpoint</span></span>
+## <a name="step-7-approve-kernel-extension-for-microsoft-defender-for-endpoint"></a><span data-ttu-id="17089-339">Passaggio 7: Approvare l'estensione kernel per Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="17089-339">Step 7: Approve Kernel extension for Microsoft Defender for Endpoint</span></span>
 
 > [!CAUTION]
-> <span data-ttu-id="4e8c4-340">I dispositivi Apple Silicon (M1) non supportano KEXT.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-340">Apple Silicon (M1) devices do not support KEXT.</span></span> <span data-ttu-id="4e8c4-341">L'installazione di un profilo di configurazione costituito da criteri KEXT avrà esito negativo in questi dispositivi.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-341">Installation of a configuration profile consisting KEXT policies will fail on these devices.</span></span>
+> <span data-ttu-id="17089-340">I dispositivi Apple Silicon (M1) non supportano KEXT.</span><span class="sxs-lookup"><span data-stu-id="17089-340">Apple Silicon (M1) devices do not support KEXT.</span></span> <span data-ttu-id="17089-341">L'installazione di un profilo di configurazione costituito da criteri KEXT avrà esito negativo in questi dispositivi.</span><span class="sxs-lookup"><span data-stu-id="17089-341">Installation of a configuration profile consisting KEXT policies will fail on these devices.</span></span>
 
-1. <span data-ttu-id="4e8c4-342">In **Profili di configurazione** selezionare **+ Nuovo**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-342">In the **Configuration Profiles**, select **+ New**.</span></span>
+1. <span data-ttu-id="17089-342">In **Profili di configurazione** selezionare **+ Nuovo**.</span><span class="sxs-lookup"><span data-stu-id="17089-342">In the **Configuration Profiles**, select **+ New**.</span></span>
 
     ![Screenshot di un post di social media Descrizione generata automaticamente](images/6c8b406ee224335a8c65d06953dc756e.png)
 
-2. <span data-ttu-id="4e8c4-344">Immettere i dettagli seguenti:</span><span class="sxs-lookup"><span data-stu-id="4e8c4-344">Enter the following details:</span></span>
+2. <span data-ttu-id="17089-344">Immettere i dettagli seguenti:</span><span class="sxs-lookup"><span data-stu-id="17089-344">Enter the following details:</span></span>
 
-    <span data-ttu-id="4e8c4-345">**Generale**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-345">**General**</span></span> 
+    <span data-ttu-id="17089-345">**Generale**</span><span class="sxs-lookup"><span data-stu-id="17089-345">**General**</span></span> 
     
-    - <span data-ttu-id="4e8c4-346">Nome: MDATP MDAV Kernel Extension</span><span class="sxs-lookup"><span data-stu-id="4e8c4-346">Name: MDATP MDAV Kernel Extension</span></span>
-    - <span data-ttu-id="4e8c4-347">Descrizione: estensione del kernel MDATP (kext)</span><span class="sxs-lookup"><span data-stu-id="4e8c4-347">Description: MDATP kernel extension (kext)</span></span>
-    - <span data-ttu-id="4e8c4-348">Categoria: Nessuno</span><span class="sxs-lookup"><span data-stu-id="4e8c4-348">Category: None</span></span>
-    - <span data-ttu-id="4e8c4-349">Metodo di distribuzione: installazione automatica</span><span class="sxs-lookup"><span data-stu-id="4e8c4-349">Distribution Method: Install Automatically</span></span>
-    - <span data-ttu-id="4e8c4-350">Livello: Livello computer</span><span class="sxs-lookup"><span data-stu-id="4e8c4-350">Level: Computer Level</span></span>
+    - <span data-ttu-id="17089-346">Nome: MDATP MDAV Kernel Extension</span><span class="sxs-lookup"><span data-stu-id="17089-346">Name: MDATP MDAV Kernel Extension</span></span>
+    - <span data-ttu-id="17089-347">Descrizione: estensione del kernel MDATP (kext)</span><span class="sxs-lookup"><span data-stu-id="17089-347">Description: MDATP kernel extension (kext)</span></span>
+    - <span data-ttu-id="17089-348">Categoria: Nessuno</span><span class="sxs-lookup"><span data-stu-id="17089-348">Category: None</span></span>
+    - <span data-ttu-id="17089-349">Metodo di distribuzione: installazione automatica</span><span class="sxs-lookup"><span data-stu-id="17089-349">Distribution Method: Install Automatically</span></span>
+    - <span data-ttu-id="17089-350">Livello: Livello computer</span><span class="sxs-lookup"><span data-stu-id="17089-350">Level: Computer Level</span></span>
 
     ![Immagine delle impostazioni di configurazione del kernel mdatpmdav](images/24e290f5fc309932cf41f3a280d22c14.png)
 
-3. <span data-ttu-id="4e8c4-352">In **Configura estensioni kernel approvate** selezionare **Configura**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-352">In **Configure Approved Kernel Extensions** select **Configure**.</span></span>
+3. <span data-ttu-id="17089-352">In **Configura estensioni kernel approvate** selezionare **Configura**.</span><span class="sxs-lookup"><span data-stu-id="17089-352">In **Configure Approved Kernel Extensions** select **Configure**.</span></span>
 
     ![Immagine delle impostazioni di configurazione approvate kernel ext](images/30be88b63abc5e8dde11b73f1b1ade6a.png)
 
    
-4. <span data-ttu-id="4e8c4-354">In **Estensioni kernel approvate** immettere i dettagli seguenti:</span><span class="sxs-lookup"><span data-stu-id="4e8c4-354">In **Approved Kernel Extensions** Enter the following details:</span></span>
+4. <span data-ttu-id="17089-354">In **Estensioni kernel approvate** immettere i dettagli seguenti:</span><span class="sxs-lookup"><span data-stu-id="17089-354">In **Approved Kernel Extensions** Enter the following details:</span></span>
 
-    - <span data-ttu-id="4e8c4-355">Nome visualizzato: Microsoft Corp.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-355">Display Name: Microsoft Corp.</span></span>
-    - <span data-ttu-id="4e8c4-356">ID team: UBF8T346G9</span><span class="sxs-lookup"><span data-stu-id="4e8c4-356">Team ID: UBF8T346G9</span></span>
+    - <span data-ttu-id="17089-355">Nome visualizzato: Microsoft Corp.</span><span class="sxs-lookup"><span data-stu-id="17089-355">Display Name: Microsoft Corp.</span></span>
+    - <span data-ttu-id="17089-356">ID team: UBF8T346G9</span><span class="sxs-lookup"><span data-stu-id="17089-356">Team ID: UBF8T346G9</span></span>
 
     ![Immagine dell'estensione del kernel appr delle impostazioni di configurazione](images/39cf120d3ac3652292d8d1b6d057bd60.png)
 
-5. <span data-ttu-id="4e8c4-358">Selezionare la **scheda** Ambito.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-358">Select the **Scope** tab.</span></span>
+5. <span data-ttu-id="17089-358">Selezionare la **scheda** Ambito.</span><span class="sxs-lookup"><span data-stu-id="17089-358">Select the **Scope** tab.</span></span>
 
     ![Immagine della scheda img dell'ambito delle impostazioni di configurazione](images/0df36fc308ba569db204ee32db3fb40a.png)
 
-6. <span data-ttu-id="4e8c4-360">Selezionare **+ Aggiungi**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-360">Select **+ Add**.</span></span>
+6. <span data-ttu-id="17089-360">Selezionare **+ Aggiungi**.</span><span class="sxs-lookup"><span data-stu-id="17089-360">Select **+ Add**.</span></span>
 
-7. <span data-ttu-id="4e8c4-361">Selezionare **Gruppi di** > in Nome gruppo **>** selezionare Gruppo di computer **di Contoso**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-361">Select **Computer Groups** > under **Group Name** > select **Contoso's Machine Group**.</span></span>
+7. <span data-ttu-id="17089-361">Selezionare **Gruppi di** > in Nome gruppo **>** selezionare Gruppo di computer **di Contoso**.</span><span class="sxs-lookup"><span data-stu-id="17089-361">Select **Computer Groups** > under **Group Name** > select **Contoso's Machine Group**.</span></span>
 
-8. <span data-ttu-id="4e8c4-362">Selezionare **+ Aggiungi**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-362">Select **+ Add**.</span></span>
+8. <span data-ttu-id="17089-362">Selezionare **+ Aggiungi**.</span><span class="sxs-lookup"><span data-stu-id="17089-362">Select **+ Add**.</span></span>
 
     ![Immagine delle impostazioni di configurazione aggiungere immagini](images/0dde8a4c41110dbc398c485433a81359.png)
 
-9. <span data-ttu-id="4e8c4-364">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-364">Select **Save**.</span></span>
+9. <span data-ttu-id="17089-364">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="17089-364">Select **Save**.</span></span>
 
     ![Immagine delle impostazioni di configurazione saveimag](images/0add8019b85a453b47fa5c402c72761b.png)
 
-10. <span data-ttu-id="4e8c4-366">Scegliere **Fatto**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-366">Select **Done**.</span></span>
+10. <span data-ttu-id="17089-366">Scegliere **Fatto**.</span><span class="sxs-lookup"><span data-stu-id="17089-366">Select **Done**.</span></span>
 
     ![Immagine delle impostazioni di configurazione eseguite](images/1c9bd3f68db20b80193dac18f33c22d0.png)
 
-<span data-ttu-id="4e8c4-368">In alternativa, è possibile scaricare [kext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/kext.mobileconfig) e caricarlo nei profili di configurazione JAMF come descritto in [Deploying Custom Configuration Profiles using Jamf Pro| Metodo 2: Caricare un profilo di configurazione in Jamf Pro.](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)</span><span class="sxs-lookup"><span data-stu-id="4e8c4-368">Alternatively, you can download [kext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/kext.mobileconfig) and upload it to JAMF Configuration Profiles as described in [Deploying Custom Configuration Profiles using Jamf Pro|Method 2: Upload a Configuration Profile to Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).</span></span>
+<span data-ttu-id="17089-368">In alternativa, è possibile scaricare [kext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/kext.mobileconfig) e caricarlo nei profili di configurazione JAMF come descritto in [Deploying Custom Configuration Profiles using Jamf Pro| Metodo 2: Caricare un profilo di configurazione in Jamf Pro.](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)</span><span class="sxs-lookup"><span data-stu-id="17089-368">Alternatively, you can download [kext.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/kext.mobileconfig) and upload it to JAMF Configuration Profiles as described in [Deploying Custom Configuration Profiles using Jamf Pro|Method 2: Upload a Configuration Profile to Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).</span></span>
 
-## <a name="step-8-approve-system-extensions-for-microsoft-defender-for-endpoint"></a><span data-ttu-id="4e8c4-369">Passaggio 8: Approvare le estensioni di sistema per Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="4e8c4-369">Step 8: Approve System extensions for Microsoft Defender for Endpoint</span></span>
+## <a name="step-8-approve-system-extensions-for-microsoft-defender-for-endpoint"></a><span data-ttu-id="17089-369">Passaggio 8: Approvare le estensioni di sistema per Microsoft Defender for Endpoint</span><span class="sxs-lookup"><span data-stu-id="17089-369">Step 8: Approve System extensions for Microsoft Defender for Endpoint</span></span>
 
-1. <span data-ttu-id="4e8c4-370">In **Profili di configurazione** selezionare **+ Nuovo**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-370">In the **Configuration Profiles**, select **+ New**.</span></span>
+1. <span data-ttu-id="17089-370">In **Profili di configurazione** selezionare **+ Nuovo**.</span><span class="sxs-lookup"><span data-stu-id="17089-370">In the **Configuration Profiles**, select **+ New**.</span></span>
 
     ![Screenshot di un post di social media Descrizione generata automaticamente](images/6c8b406ee224335a8c65d06953dc756e.png)
 
-2. <span data-ttu-id="4e8c4-372">Immettere i dettagli seguenti:</span><span class="sxs-lookup"><span data-stu-id="4e8c4-372">Enter the following details:</span></span>
+2. <span data-ttu-id="17089-372">Immettere i dettagli seguenti:</span><span class="sxs-lookup"><span data-stu-id="17089-372">Enter the following details:</span></span>
 
-    <span data-ttu-id="4e8c4-373">**Generale**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-373">**General**</span></span>
+    <span data-ttu-id="17089-373">**Generale**</span><span class="sxs-lookup"><span data-stu-id="17089-373">**General**</span></span>
     
-    - <span data-ttu-id="4e8c4-374">Nome: MDATP MDAV System Extensions</span><span class="sxs-lookup"><span data-stu-id="4e8c4-374">Name: MDATP MDAV System Extensions</span></span>
-    - <span data-ttu-id="4e8c4-375">Descrizione: estensioni di sistema MDATP</span><span class="sxs-lookup"><span data-stu-id="4e8c4-375">Description: MDATP system extensions</span></span>
-    - <span data-ttu-id="4e8c4-376">Categoria: Nessuno</span><span class="sxs-lookup"><span data-stu-id="4e8c4-376">Category: None</span></span>
-    - <span data-ttu-id="4e8c4-377">Metodo di distribuzione: installazione automatica</span><span class="sxs-lookup"><span data-stu-id="4e8c4-377">Distribution Method: Install Automatically</span></span>
-    - <span data-ttu-id="4e8c4-378">Livello: Livello computer</span><span class="sxs-lookup"><span data-stu-id="4e8c4-378">Level: Computer Level</span></span>
+    - <span data-ttu-id="17089-374">Nome: MDATP MDAV System Extensions</span><span class="sxs-lookup"><span data-stu-id="17089-374">Name: MDATP MDAV System Extensions</span></span>
+    - <span data-ttu-id="17089-375">Descrizione: estensioni di sistema MDATP</span><span class="sxs-lookup"><span data-stu-id="17089-375">Description: MDATP system extensions</span></span>
+    - <span data-ttu-id="17089-376">Categoria: Nessuno</span><span class="sxs-lookup"><span data-stu-id="17089-376">Category: None</span></span>
+    - <span data-ttu-id="17089-377">Metodo di distribuzione: installazione automatica</span><span class="sxs-lookup"><span data-stu-id="17089-377">Distribution Method: Install Automatically</span></span>
+    - <span data-ttu-id="17089-378">Livello: Livello computer</span><span class="sxs-lookup"><span data-stu-id="17089-378">Level: Computer Level</span></span>
 
     ![Immagine delle impostazioni di configurazione sysext new prof](images/sysext-new-profile.png)
 
-3. <span data-ttu-id="4e8c4-380">In **Estensioni di sistema** selezionare **Configura**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-380">In **System Extensions** select **Configure**.</span></span>
+3. <span data-ttu-id="17089-380">In **Estensioni di sistema** selezionare **Configura**.</span><span class="sxs-lookup"><span data-stu-id="17089-380">In **System Extensions** select **Configure**.</span></span>
 
    ![Immagine delle impostazioni di configurazione sysext config](images/sysext-configure.png)
 
-4. <span data-ttu-id="4e8c4-382">In **Estensioni di sistema** immettere i dettagli seguenti:</span><span class="sxs-lookup"><span data-stu-id="4e8c4-382">In **System Extensions** enter the following details:</span></span>
+4. <span data-ttu-id="17089-382">In **Estensioni di sistema** immettere i dettagli seguenti:</span><span class="sxs-lookup"><span data-stu-id="17089-382">In **System Extensions** enter the following details:</span></span>
 
-   - <span data-ttu-id="4e8c4-383">Nome visualizzato: Microsoft Corp. Estensioni di sistema</span><span class="sxs-lookup"><span data-stu-id="4e8c4-383">Display Name: Microsoft Corp. System Extensions</span></span>
-   - <span data-ttu-id="4e8c4-384">Tipi di estensioni di sistema: estensioni di sistema consentite</span><span class="sxs-lookup"><span data-stu-id="4e8c4-384">System Extension Types: Allowed System Extensions</span></span>
-   - <span data-ttu-id="4e8c4-385">Identificatore del team: UBF8T346G9</span><span class="sxs-lookup"><span data-stu-id="4e8c4-385">Team Identifier: UBF8T346G9</span></span>
-   - <span data-ttu-id="4e8c4-386">Estensioni di sistema consentite:</span><span class="sxs-lookup"><span data-stu-id="4e8c4-386">Allowed System Extensions:</span></span>
-     - <span data-ttu-id="4e8c4-387">**com.microsoft.wdav.epsext**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-387">**com.microsoft.wdav.epsext**</span></span>
-     - <span data-ttu-id="4e8c4-388">**com.microsoft.wdav.netext**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-388">**com.microsoft.wdav.netext**</span></span>
+   - <span data-ttu-id="17089-383">Nome visualizzato: Microsoft Corp. Estensioni di sistema</span><span class="sxs-lookup"><span data-stu-id="17089-383">Display Name: Microsoft Corp. System Extensions</span></span>
+   - <span data-ttu-id="17089-384">Tipi di estensioni di sistema: estensioni di sistema consentite</span><span class="sxs-lookup"><span data-stu-id="17089-384">System Extension Types: Allowed System Extensions</span></span>
+   - <span data-ttu-id="17089-385">Identificatore del team: UBF8T346G9</span><span class="sxs-lookup"><span data-stu-id="17089-385">Team Identifier: UBF8T346G9</span></span>
+   - <span data-ttu-id="17089-386">Estensioni di sistema consentite:</span><span class="sxs-lookup"><span data-stu-id="17089-386">Allowed System Extensions:</span></span>
+     - <span data-ttu-id="17089-387">**com.microsoft.wdav.epsext**</span><span class="sxs-lookup"><span data-stu-id="17089-387">**com.microsoft.wdav.epsext**</span></span>
+     - <span data-ttu-id="17089-388">**com.microsoft.wdav.netext**</span><span class="sxs-lookup"><span data-stu-id="17089-388">**com.microsoft.wdav.netext**</span></span>
 
     ![Immagine delle impostazioni di configurazione sysextconfig2](images/sysext-configure2.png)
 
-5. <span data-ttu-id="4e8c4-390">Selezionare la **scheda** Ambito.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-390">Select the **Scope** tab.</span></span>
+5. <span data-ttu-id="17089-390">Selezionare la **scheda** Ambito.</span><span class="sxs-lookup"><span data-stu-id="17089-390">Select the **Scope** tab.</span></span>
 
     ![Immagine dell'ambito delle impostazioni di configurazione](images/0df36fc308ba569db204ee32db3fb40a.png)
 
-6. <span data-ttu-id="4e8c4-392">Selezionare **+ Aggiungi**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-392">Select **+ Add**.</span></span>
+6. <span data-ttu-id="17089-392">Selezionare **+ Aggiungi**.</span><span class="sxs-lookup"><span data-stu-id="17089-392">Select **+ Add**.</span></span>
 
-7. <span data-ttu-id="4e8c4-393">Selezionare **Gruppi di** > in Nome gruppo **>** selezionare Gruppo di computer **di Contoso**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-393">Select **Computer Groups** > under **Group Name** > select **Contoso's Machine Group**.</span></span>
+7. <span data-ttu-id="17089-393">Selezionare **Gruppi di** > in Nome gruppo **>** selezionare Gruppo di computer **di Contoso**.</span><span class="sxs-lookup"><span data-stu-id="17089-393">Select **Computer Groups** > under **Group Name** > select **Contoso's Machine Group**.</span></span>
 
-8. <span data-ttu-id="4e8c4-394">Selezionare **+ Aggiungi**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-394">Select **+ Add**.</span></span>
+8. <span data-ttu-id="17089-394">Selezionare **+ Aggiungi**.</span><span class="sxs-lookup"><span data-stu-id="17089-394">Select **+ Add**.</span></span>
 
    ![Immagine delle impostazioni di configurazione addima](images/0dde8a4c41110dbc398c485433a81359.png)
 
-9. <span data-ttu-id="4e8c4-396">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-396">Select **Save**.</span></span>
+9. <span data-ttu-id="17089-396">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="17089-396">Select **Save**.</span></span>
 
    ![Immagine dell'ambito sysext delle impostazioni di configurazione](images/sysext-scope.png)
 
-10. <span data-ttu-id="4e8c4-398">Scegliere **Fatto**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-398">Select **Done**.</span></span>
+10. <span data-ttu-id="17089-398">Scegliere **Fatto**.</span><span class="sxs-lookup"><span data-stu-id="17089-398">Select **Done**.</span></span>
 
     ![Immagine delle impostazioni di configurazione sysext-final](images/sysext-final.png)
 
-## <a name="step-9-configure-network-extension"></a><span data-ttu-id="4e8c4-400">Passaggio 9: Configurare l'estensione di rete</span><span class="sxs-lookup"><span data-stu-id="4e8c4-400">Step 9: Configure Network Extension</span></span>
+## <a name="step-9-configure-network-extension"></a><span data-ttu-id="17089-400">Passaggio 9: Configurare l'estensione di rete</span><span class="sxs-lookup"><span data-stu-id="17089-400">Step 9: Configure Network Extension</span></span>
 
-<span data-ttu-id="4e8c4-401">Come parte delle funzionalità di rilevamento e risposta degli endpoint, Microsoft Defender for Endpoint su macOS esamina il traffico socket e segnala queste informazioni al portale di Microsoft Defender Security Center.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-401">As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft Defender Security Center portal.</span></span> <span data-ttu-id="4e8c4-402">Il criterio seguente consente all'estensione di rete di eseguire questa funzionalità.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-402">The following policy allows the network extension to perform this functionality.</span></span>
+<span data-ttu-id="17089-401">Come parte delle funzionalità di rilevamento e risposta degli endpoint, Microsoft Defender for Endpoint su macOS esamina il traffico socket e segnala queste informazioni al portale di Microsoft Defender Security Center.</span><span class="sxs-lookup"><span data-stu-id="17089-401">As part of the Endpoint Detection and Response capabilities, Microsoft Defender for Endpoint on macOS inspects socket traffic and reports this information to the Microsoft Defender Security Center portal.</span></span> <span data-ttu-id="17089-402">Il criterio seguente consente all'estensione di rete di eseguire questa funzionalità.</span><span class="sxs-lookup"><span data-stu-id="17089-402">The following policy allows the network extension to perform this functionality.</span></span>
 
-<span data-ttu-id="4e8c4-403">Questi passaggi sono applicabili a macOS 10.15 (Catalina) o versioni successive.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-403">These steps are applicable of macOS 10.15 (Catalina) or newer.</span></span>
+<span data-ttu-id="17089-403">Questi passaggi sono applicabili a macOS 10.15 (Catalina) o versioni successive.</span><span class="sxs-lookup"><span data-stu-id="17089-403">These steps are applicable of macOS 10.15 (Catalina) or newer.</span></span>
 
-1. <span data-ttu-id="4e8c4-404">Nel dashboard di Jamf Pro seleziona **Computer**, quindi **Profili di configurazione**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-404">In the Jamf Pro dashboard, select **Computers**, then **Configuration Profiles**.</span></span>
+1. <span data-ttu-id="17089-404">Nel dashboard di Jamf Pro seleziona **Computer**, quindi **Profili di configurazione**.</span><span class="sxs-lookup"><span data-stu-id="17089-404">In the Jamf Pro dashboard, select **Computers**, then **Configuration Profiles**.</span></span>
 
-2. <span data-ttu-id="4e8c4-405">Fare **clic su** Nuovo e immettere i dettagli seguenti per **Opzioni:**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-405">Click **New**, and enter the following details for **Options**:</span></span>
+2. <span data-ttu-id="17089-405">Fare **clic su** Nuovo e immettere i dettagli seguenti per **Opzioni:**</span><span class="sxs-lookup"><span data-stu-id="17089-405">Click **New**, and enter the following details for **Options**:</span></span>
 
-    - <span data-ttu-id="4e8c4-406">Scheda **Generale**:</span><span class="sxs-lookup"><span data-stu-id="4e8c4-406">Tab **General**:</span></span> 
-        - <span data-ttu-id="4e8c4-407">**Nome**: Estensione di rete di Microsoft Defender ATP</span><span class="sxs-lookup"><span data-stu-id="4e8c4-407">**Name**: Microsoft Defender ATP Network Extension</span></span>
-        - <span data-ttu-id="4e8c4-408">**Descrizione**: macOS 10.15 (Catalina) o versione più recente</span><span class="sxs-lookup"><span data-stu-id="4e8c4-408">**Description**: macOS 10.15 (Catalina) or newer</span></span>
-        - <span data-ttu-id="4e8c4-409">**Category**: None *(impostazione predefinita)*</span><span class="sxs-lookup"><span data-stu-id="4e8c4-409">**Category**: None *(default)*</span></span>
-        - <span data-ttu-id="4e8c4-410">**Metodo di distribuzione**: Installa *automaticamente (impostazione predefinita)*</span><span class="sxs-lookup"><span data-stu-id="4e8c4-410">**Distribution Method**: Install Automatically *(default)*</span></span>
-        - <span data-ttu-id="4e8c4-411">**Level**: Computer Level *(impostazione predefinita)*</span><span class="sxs-lookup"><span data-stu-id="4e8c4-411">**Level**: Computer Level *(default)*</span></span>
+    - <span data-ttu-id="17089-406">Scheda **Generale**:</span><span class="sxs-lookup"><span data-stu-id="17089-406">Tab **General**:</span></span> 
+        - <span data-ttu-id="17089-407">**Nome**: Estensione di rete di Microsoft Defender ATP</span><span class="sxs-lookup"><span data-stu-id="17089-407">**Name**: Microsoft Defender ATP Network Extension</span></span>
+        - <span data-ttu-id="17089-408">**Descrizione**: macOS 10.15 (Catalina) o versione più recente</span><span class="sxs-lookup"><span data-stu-id="17089-408">**Description**: macOS 10.15 (Catalina) or newer</span></span>
+        - <span data-ttu-id="17089-409">**Category**: None *(impostazione predefinita)*</span><span class="sxs-lookup"><span data-stu-id="17089-409">**Category**: None *(default)*</span></span>
+        - <span data-ttu-id="17089-410">**Metodo di distribuzione**: Installa *automaticamente (impostazione predefinita)*</span><span class="sxs-lookup"><span data-stu-id="17089-410">**Distribution Method**: Install Automatically *(default)*</span></span>
+        - <span data-ttu-id="17089-411">**Level**: Computer Level *(impostazione predefinita)*</span><span class="sxs-lookup"><span data-stu-id="17089-411">**Level**: Computer Level *(default)*</span></span>
 
-    - <span data-ttu-id="4e8c4-412">Filtro **contenuto scheda**:</span><span class="sxs-lookup"><span data-stu-id="4e8c4-412">Tab **Content Filter**:</span></span>
-        - <span data-ttu-id="4e8c4-413">**Nome filtro**: Filtro contenuto di Microsoft Defender ATP</span><span class="sxs-lookup"><span data-stu-id="4e8c4-413">**Filter Name**: Microsoft Defender ATP Content Filter</span></span>
-        - <span data-ttu-id="4e8c4-414">**Identificatore**: `com.microsoft.wdav`</span><span class="sxs-lookup"><span data-stu-id="4e8c4-414">**Identifier**: `com.microsoft.wdav`</span></span>
-        - <span data-ttu-id="4e8c4-415">Lasciare **vuoto l'indirizzo** **del** servizio, l'organizzazione, **il** nome utente, la **password,** **il** certificato (**Include** *non è* selezionato)</span><span class="sxs-lookup"><span data-stu-id="4e8c4-415">Leave **Service Address**, **Organization**, **User Name**, **Password**, **Certificate** blank (**Include** is *not* selected)</span></span>
-        - <span data-ttu-id="4e8c4-416">**Filter Order**: Inspector</span><span class="sxs-lookup"><span data-stu-id="4e8c4-416">**Filter Order**: Inspector</span></span>
-        - <span data-ttu-id="4e8c4-417">**Filtro socket**: `com.microsoft.wdav.netext`</span><span class="sxs-lookup"><span data-stu-id="4e8c4-417">**Socket Filter**: `com.microsoft.wdav.netext`</span></span>
-        - <span data-ttu-id="4e8c4-418">**Socket Filter Designated Requirement**: `identifier "com.microsoft.wdav.netext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`</span><span class="sxs-lookup"><span data-stu-id="4e8c4-418">**Socket Filter Designated Requirement**: `identifier "com.microsoft.wdav.netext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`</span></span>
-        - <span data-ttu-id="4e8c4-419">Lasciare **vuoti i** campi filtro di rete **(l'opzione** Includi *non è* selezionata)</span><span class="sxs-lookup"><span data-stu-id="4e8c4-419">Leave **Network Filter** fields blank (**Include** is *not* selected)</span></span>
+    - <span data-ttu-id="17089-412">Filtro **contenuto scheda**:</span><span class="sxs-lookup"><span data-stu-id="17089-412">Tab **Content Filter**:</span></span>
+        - <span data-ttu-id="17089-413">**Nome filtro**: Filtro contenuto di Microsoft Defender ATP</span><span class="sxs-lookup"><span data-stu-id="17089-413">**Filter Name**: Microsoft Defender ATP Content Filter</span></span>
+        - <span data-ttu-id="17089-414">**Identificatore**: `com.microsoft.wdav`</span><span class="sxs-lookup"><span data-stu-id="17089-414">**Identifier**: `com.microsoft.wdav`</span></span>
+        - <span data-ttu-id="17089-415">Lasciare **vuoto l'indirizzo** **del** servizio, l'organizzazione, **il** nome utente, la **password,** **il** certificato (**Include** *non è* selezionato)</span><span class="sxs-lookup"><span data-stu-id="17089-415">Leave **Service Address**, **Organization**, **User Name**, **Password**, **Certificate** blank (**Include** is *not* selected)</span></span>
+        - <span data-ttu-id="17089-416">**Filter Order**: Inspector</span><span class="sxs-lookup"><span data-stu-id="17089-416">**Filter Order**: Inspector</span></span>
+        - <span data-ttu-id="17089-417">**Filtro socket**: `com.microsoft.wdav.netext`</span><span class="sxs-lookup"><span data-stu-id="17089-417">**Socket Filter**: `com.microsoft.wdav.netext`</span></span>
+        - <span data-ttu-id="17089-418">**Socket Filter Designated Requirement**: `identifier "com.microsoft.wdav.netext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`</span><span class="sxs-lookup"><span data-stu-id="17089-418">**Socket Filter Designated Requirement**: `identifier "com.microsoft.wdav.netext" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = UBF8T346G9`</span></span>
+        - <span data-ttu-id="17089-419">Lasciare **vuoti i** campi filtro di rete **(l'opzione** Includi *non è* selezionata)</span><span class="sxs-lookup"><span data-stu-id="17089-419">Leave **Network Filter** fields blank (**Include** is *not* selected)</span></span>
 
-        <span data-ttu-id="4e8c4-420">Tieni presente **che i valori di Identifier,** Socket **Filter** e Socket **Filter Designated Requirement** sono esattamente come specificato in precedenza.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-420">Note that **Identifier**, **Socket Filter** and **Socket Filter Designated Requirement** exact values as specified above.</span></span>
+        <span data-ttu-id="17089-420">Tieni presente **che i valori di Identifier,** Socket **Filter** e Socket **Filter Designated Requirement** sono esattamente come specificato in precedenza.</span><span class="sxs-lookup"><span data-stu-id="17089-420">Note that **Identifier**, **Socket Filter** and **Socket Filter Designated Requirement** exact values as specified above.</span></span>
 
         ![Immagine dell'impostazione di configurazione mdatpmdav](images/netext-create-profile.png)
 
-3. <span data-ttu-id="4e8c4-422">Selezionare la **scheda** Ambito.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-422">Select the **Scope** tab.</span></span>
+3. <span data-ttu-id="17089-422">Selezionare la **scheda** Ambito.</span><span class="sxs-lookup"><span data-stu-id="17089-422">Select the **Scope** tab.</span></span>
 
    ![Immagine della scheda sco delle impostazioni di configurazione](images/0df36fc308ba569db204ee32db3fb40a.png)
 
-4. <span data-ttu-id="4e8c4-424">Selezionare **+ Aggiungi**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-424">Select **+ Add**.</span></span>
+4. <span data-ttu-id="17089-424">Selezionare **+ Aggiungi**.</span><span class="sxs-lookup"><span data-stu-id="17089-424">Select **+ Add**.</span></span>
 
-5. <span data-ttu-id="4e8c4-425">Selezionare **Gruppi di** > in Nome gruppo **>** selezionare Gruppo di computer **di Contoso**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-425">Select **Computer Groups** > under **Group Name** > select **Contoso's Machine Group**.</span></span>
+5. <span data-ttu-id="17089-425">Selezionare **Gruppi di** > in Nome gruppo **>** selezionare Gruppo di computer **di Contoso**.</span><span class="sxs-lookup"><span data-stu-id="17089-425">Select **Computer Groups** > under **Group Name** > select **Contoso's Machine Group**.</span></span>
 
-6. <span data-ttu-id="4e8c4-426">Selezionare **+ Aggiungi**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-426">Select **+ Add**.</span></span>
+6. <span data-ttu-id="17089-426">Selezionare **+ Aggiungi**.</span><span class="sxs-lookup"><span data-stu-id="17089-426">Select **+ Add**.</span></span>
 
     ![Immagine delle impostazioni di configurazione adim](images/0dde8a4c41110dbc398c485433a81359.png)
 
-7. <span data-ttu-id="4e8c4-428">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-428">Select **Save**.</span></span>
+7. <span data-ttu-id="17089-428">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="17089-428">Select **Save**.</span></span>
 
     ![Immagine delle impostazioni di configurazione savimg netextscop](images/netext-scope.png)
 
-8. <span data-ttu-id="4e8c4-430">Scegliere **Fatto**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-430">Select **Done**.</span></span>
+8. <span data-ttu-id="17089-430">Scegliere **Fatto**.</span><span class="sxs-lookup"><span data-stu-id="17089-430">Select **Done**.</span></span>
 
     ![Immagine delle impostazioni di configurazione netextfinal](images/netext-final.png)
 
-<span data-ttu-id="4e8c4-432">In alternativa, è possibile scaricare [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) e caricarlo nei profili di configurazione JAMF come descritto in [Deploying Custom Configuration Profiles using Jamf Pro| Metodo 2: Caricare un profilo di configurazione in Jamf Pro.](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)</span><span class="sxs-lookup"><span data-stu-id="4e8c4-432">Alternatively, you can download [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) and upload it to JAMF Configuration Profiles as described in [Deploying Custom Configuration Profiles using Jamf Pro|Method 2: Upload a Configuration Profile to Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).</span></span>
+<span data-ttu-id="17089-432">In alternativa, è possibile scaricare [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) e caricarlo nei profili di configurazione JAMF come descritto in [Deploying Custom Configuration Profiles using Jamf Pro| Metodo 2: Caricare un profilo di configurazione in Jamf Pro.](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro)</span><span class="sxs-lookup"><span data-stu-id="17089-432">Alternatively, you can download [netfilter.mobileconfig](https://github.com/microsoft/mdatp-xplat/blob/master/macos/mobileconfig/profiles/netfilter.mobileconfig) and upload it to JAMF Configuration Profiles as described in [Deploying Custom Configuration Profiles using Jamf Pro|Method 2: Upload a Configuration Profile to Jamf Pro](https://www.jamf.com/jamf-nation/articles/648/deploying-custom-configuration-profiles-using-jamf-pro).</span></span>
 
 
-## <a name="step-10-schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a><span data-ttu-id="4e8c4-433">Passaggio 10: pianificare le analisi con Microsoft Defender for Endpoint in macOS</span><span class="sxs-lookup"><span data-stu-id="4e8c4-433">Step 10: Schedule scans with Microsoft Defender for Endpoint on macOS</span></span>
-<span data-ttu-id="4e8c4-434">Segui le istruzioni su [Pianifica analisi con Microsoft Defender for Endpoint in macOS.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)</span><span class="sxs-lookup"><span data-stu-id="4e8c4-434">Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint on macOS](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp).</span></span>
+## <a name="step-10-schedule-scans-with-microsoft-defender-for-endpoint-on-macos"></a><span data-ttu-id="17089-433">Passaggio 10: pianificare le analisi con Microsoft Defender for Endpoint in macOS</span><span class="sxs-lookup"><span data-stu-id="17089-433">Step 10: Schedule scans with Microsoft Defender for Endpoint on macOS</span></span>
+<span data-ttu-id="17089-434">Segui le istruzioni su [Pianifica analisi con Microsoft Defender for Endpoint in macOS.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp)</span><span class="sxs-lookup"><span data-stu-id="17089-434">Follow the instructions on [Schedule scans with Microsoft Defender for Endpoint on macOS](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-atp/mac-schedule-scan-atp).</span></span>
 
 
-## <a name="step-11-deploy-microsoft-defender-for-endpoint-on-macos"></a><span data-ttu-id="4e8c4-435">Passaggio 11: Distribuire Microsoft Defender per Endpoint in macOS</span><span class="sxs-lookup"><span data-stu-id="4e8c4-435">Step 11: Deploy Microsoft Defender for Endpoint on macOS</span></span>
+## <a name="step-11-deploy-microsoft-defender-for-endpoint-on-macos"></a><span data-ttu-id="17089-435">Passaggio 11: Distribuire Microsoft Defender per Endpoint in macOS</span><span class="sxs-lookup"><span data-stu-id="17089-435">Step 11: Deploy Microsoft Defender for Endpoint on macOS</span></span>
 
-1. <span data-ttu-id="4e8c4-436">Passare al percorso in cui è stato salvato `wdav.pkg` .</span><span class="sxs-lookup"><span data-stu-id="4e8c4-436">Navigate to where you saved `wdav.pkg`.</span></span>
+1. <span data-ttu-id="17089-436">Passare al percorso in cui è stato salvato `wdav.pkg` .</span><span class="sxs-lookup"><span data-stu-id="17089-436">Navigate to where you saved `wdav.pkg`.</span></span>
 
     ![Immagine di Esplora file wdav pkg](images/8dde76b5463047423f8637c86b05c29d.png)
 
-2. <span data-ttu-id="4e8c4-438">Rinominarlo in `wdav_MDM_Contoso_200329.pkg` .</span><span class="sxs-lookup"><span data-stu-id="4e8c4-438">Rename it to `wdav_MDM_Contoso_200329.pkg`.</span></span>
+2. <span data-ttu-id="17089-438">Rinominarlo in `wdav_MDM_Contoso_200329.pkg` .</span><span class="sxs-lookup"><span data-stu-id="17089-438">Rename it to `wdav_MDM_Contoso_200329.pkg`.</span></span>
 
     ![Immagine di esplora file1 wdavmdmpkg](images/fb2220fed3a530f4b3ef36f600da0c27.png)
 
-3. <span data-ttu-id="4e8c4-440">Apri il dashboard di Jamf Pro.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-440">Open the Jamf Pro dashboard.</span></span>
+3. <span data-ttu-id="17089-440">Apri il dashboard di Jamf Pro.</span><span class="sxs-lookup"><span data-stu-id="17089-440">Open the Jamf Pro dashboard.</span></span>
 
     ![Immagine delle impostazioni di configurazione jamfpro](images/990742cd9a15ca9fdd37c9f695d1b9f4.png)
 
-4. <span data-ttu-id="4e8c4-442">Seleziona il computer e fai clic sull'icona a forma di ingranaggio nella parte superiore, quindi seleziona **Gestione computer.**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-442">Select your computer and click the gear icon at the top, then select **Computer Management**.</span></span>
+4. <span data-ttu-id="17089-442">Seleziona il computer e fai clic sull'icona a forma di ingranaggio nella parte superiore, quindi seleziona **Gestione computer.**</span><span class="sxs-lookup"><span data-stu-id="17089-442">Select your computer and click the gear icon at the top, then select **Computer Management**.</span></span>
 
     ![Immagine delle impostazioni di configurazione compmgmt](images/b6d671b2f18b89d96c1c8e2ea1991242.png)
 
-5. <span data-ttu-id="4e8c4-444">In **Pacchetti** seleziona **+ Nuovo**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-444">In **Packages**, select **+ New**.</span></span> 
-    <span data-ttu-id="4e8c4-445">![Un'immagine contenente una descrizione del pacchetto generato automaticamente](images/57aa4d21e2ccc65466bf284701d4e961.png)</span><span class="sxs-lookup"><span data-stu-id="4e8c4-445">![A picture containing bird Description automatically generated package new](images/57aa4d21e2ccc65466bf284701d4e961.png)</span></span>
+5. <span data-ttu-id="17089-444">In **Pacchetti** seleziona **+ Nuovo**.</span><span class="sxs-lookup"><span data-stu-id="17089-444">In **Packages**, select **+ New**.</span></span> 
+    <span data-ttu-id="17089-445">![Un'immagine contenente una descrizione del pacchetto generato automaticamente](images/57aa4d21e2ccc65466bf284701d4e961.png)</span><span class="sxs-lookup"><span data-stu-id="17089-445">![A picture containing bird Description automatically generated package new](images/57aa4d21e2ccc65466bf284701d4e961.png)</span></span>
 
-6. <span data-ttu-id="4e8c4-446">In **Nuovo pacchetto** immetti i dettagli seguenti:</span><span class="sxs-lookup"><span data-stu-id="4e8c4-446">In **New Package** Enter the following details:</span></span>
+6. <span data-ttu-id="17089-446">In **Nuovo pacchetto** immetti i dettagli seguenti:</span><span class="sxs-lookup"><span data-stu-id="17089-446">In **New Package** Enter the following details:</span></span>
 
-    <span data-ttu-id="4e8c4-447">**Scheda Generale**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-447">**General tab**</span></span>
-    - <span data-ttu-id="4e8c4-448">Nome visualizzato: lasciare vuoto per il momento.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-448">Display Name: Leave it blank for now.</span></span> <span data-ttu-id="4e8c4-449">Perché verrà reimpostato quando scegli il tuo pkg.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-449">Because it will be reset when you choose your pkg.</span></span>
-    - <span data-ttu-id="4e8c4-450">Categoria: Nessuna (impostazione predefinita)</span><span class="sxs-lookup"><span data-stu-id="4e8c4-450">Category: None (default)</span></span>
-    - <span data-ttu-id="4e8c4-451">Filename: Choose File</span><span class="sxs-lookup"><span data-stu-id="4e8c4-451">Filename: Choose File</span></span>
+    <span data-ttu-id="17089-447">**Scheda Generale**</span><span class="sxs-lookup"><span data-stu-id="17089-447">**General tab**</span></span>
+    - <span data-ttu-id="17089-448">Nome visualizzato: lasciare vuoto per il momento.</span><span class="sxs-lookup"><span data-stu-id="17089-448">Display Name: Leave it blank for now.</span></span> <span data-ttu-id="17089-449">Perché verrà reimpostato quando scegli il tuo pkg.</span><span class="sxs-lookup"><span data-stu-id="17089-449">Because it will be reset when you choose your pkg.</span></span>
+    - <span data-ttu-id="17089-450">Categoria: Nessuna (impostazione predefinita)</span><span class="sxs-lookup"><span data-stu-id="17089-450">Category: None (default)</span></span>
+    - <span data-ttu-id="17089-451">Filename: Choose File</span><span class="sxs-lookup"><span data-stu-id="17089-451">Filename: Choose File</span></span>
 
     ![Immagine della scheda generale delle impostazioni di configurazione](images/21de3658bf58b1b767a17358a3f06341.png)
 
-    <span data-ttu-id="4e8c4-453">Aprire il file e puntare a `wdav.pkg` o `wdav_MDM_Contoso_200329.pkg` .</span><span class="sxs-lookup"><span data-stu-id="4e8c4-453">Open the file and point it to `wdav.pkg` or `wdav_MDM_Contoso_200329.pkg`.</span></span>
+    <span data-ttu-id="17089-453">Aprire il file e puntare a `wdav.pkg` o `wdav_MDM_Contoso_200329.pkg` .</span><span class="sxs-lookup"><span data-stu-id="17089-453">Open the file and point it to `wdav.pkg` or `wdav_MDM_Contoso_200329.pkg`.</span></span>
     
     ![Screenshot dello schermo di un computer Descrizione generata automaticamente](images/1aa5aaa0a387f4e16ce55b66facc77d1.png)
 
-7. <span data-ttu-id="4e8c4-455">Seleziona **Apri**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-455">Select **Open**.</span></span> <span data-ttu-id="4e8c4-456">Imposta il **nome visualizzato su** Microsoft Defender Advanced Threat Protection e Microsoft Defender **Antivirus.**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-456">Set the **Display Name** to **Microsoft Defender Advanced Threat Protection and Microsoft Defender Antivirus**.</span></span>
+7. <span data-ttu-id="17089-455">Seleziona **Apri**.</span><span class="sxs-lookup"><span data-stu-id="17089-455">Select **Open**.</span></span> <span data-ttu-id="17089-456">Imposta il **nome visualizzato su** Microsoft Defender Advanced Threat Protection e Microsoft Defender **Antivirus.**</span><span class="sxs-lookup"><span data-stu-id="17089-456">Set the **Display Name** to **Microsoft Defender Advanced Threat Protection and Microsoft Defender Antivirus**.</span></span>
 
-    <span data-ttu-id="4e8c4-457">**File manifesto** non obbligatorio.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-457">**Manifest File** is not required.</span></span> <span data-ttu-id="4e8c4-458">Microsoft Defender Advanced Threat Protection funziona senza file manifesto.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-458">Microsoft Defender Advanced Threat Protection works without Manifest File.</span></span>
+    <span data-ttu-id="17089-457">**File manifesto** non obbligatorio.</span><span class="sxs-lookup"><span data-stu-id="17089-457">**Manifest File** is not required.</span></span> <span data-ttu-id="17089-458">Microsoft Defender for Endpoint funziona senza file manifesto.</span><span class="sxs-lookup"><span data-stu-id="17089-458">Microsoft Defender for Endpoint works without Manifest File.</span></span>
     
-    <span data-ttu-id="4e8c4-459">**Scheda Opzioni**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-459">**Options tab**</span></span><br> <span data-ttu-id="4e8c4-460">Mantenere i valori predefiniti.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-460">Keep default values.</span></span>
+    <span data-ttu-id="17089-459">**Scheda Opzioni**</span><span class="sxs-lookup"><span data-stu-id="17089-459">**Options tab**</span></span><br> <span data-ttu-id="17089-460">Mantenere i valori predefiniti.</span><span class="sxs-lookup"><span data-stu-id="17089-460">Keep default values.</span></span>
 
-    <span data-ttu-id="4e8c4-461">**Scheda Limitazioni**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-461">**Limitations tab**</span></span><br> <span data-ttu-id="4e8c4-462">Mantenere i valori predefiniti.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-462">Keep default values.</span></span>
+    <span data-ttu-id="17089-461">**Scheda Limitazioni**</span><span class="sxs-lookup"><span data-stu-id="17089-461">**Limitations tab**</span></span><br> <span data-ttu-id="17089-462">Mantenere i valori predefiniti.</span><span class="sxs-lookup"><span data-stu-id="17089-462">Keep default values.</span></span>
     
      ![Immagine della scheda limitazione delle impostazioni di configurazione](images/56dac54634d13b2d3948ab50e8d3ef21.png)
    
-8. <span data-ttu-id="4e8c4-464">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-464">Select **Save**.</span></span> <span data-ttu-id="4e8c4-465">Il pacchetto viene caricato in Jamf Pro.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-465">The package is uploaded to Jamf Pro.</span></span> 
+8. <span data-ttu-id="17089-464">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="17089-464">Select **Save**.</span></span> <span data-ttu-id="17089-465">Il pacchetto viene caricato in Jamf Pro.</span><span class="sxs-lookup"><span data-stu-id="17089-465">The package is uploaded to Jamf Pro.</span></span> 
 
    ![Immagine delle impostazioni di configurazione pack upl jamf pro](images/33f1ecdc7d4872555418bbc3efe4b7a3.png)
 
-   <span data-ttu-id="4e8c4-467">La distribuzione del pacchetto può richiedere alcuni minuti.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-467">It can take a few minutes for the package to be available for deployment.</span></span>
+   <span data-ttu-id="17089-467">La distribuzione del pacchetto può richiedere alcuni minuti.</span><span class="sxs-lookup"><span data-stu-id="17089-467">It can take a few minutes for the package to be available for deployment.</span></span>
    
    ![Immagine delle impostazioni di configurazione pack upl](images/1626d138e6309c6e87bfaab64f5ccf7b.png)
 
-9. <span data-ttu-id="4e8c4-469">Passare alla **pagina** Criteri.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-469">Navigate to the **Policies** page.</span></span>
+9. <span data-ttu-id="17089-469">Passare alla **pagina** Criteri.</span><span class="sxs-lookup"><span data-stu-id="17089-469">Navigate to the **Policies** page.</span></span>
 
     ![Immagine delle impostazioni di configurazione](images/f878f8efa5ebc92d069f4b8f79f62c7f.png)
 
-10. <span data-ttu-id="4e8c4-471">Selezionare **+ Nuovo** per creare un nuovo criterio.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-471">Select **+ New** to create a new policy.</span></span>
+10. <span data-ttu-id="17089-471">Selezionare **+ Nuovo** per creare un nuovo criterio.</span><span class="sxs-lookup"><span data-stu-id="17089-471">Select **+ New** to create a new policy.</span></span>
 
     ![Immagine delle impostazioni di configurazione nuovo criterio](images/847b70e54ed04787e415f5180414b310.png)
 
 
-11. <span data-ttu-id="4e8c4-473">In **Generale** Immettere i dettagli seguenti:</span><span class="sxs-lookup"><span data-stu-id="4e8c4-473">In **General** Enter the following details:</span></span>
+11. <span data-ttu-id="17089-473">In **Generale** Immettere i dettagli seguenti:</span><span class="sxs-lookup"><span data-stu-id="17089-473">In **General** Enter the following details:</span></span>
 
-    - <span data-ttu-id="4e8c4-474">Nome visualizzato: MDATP Onboarding Contoso 200329 v100.86.92 o versione successiva</span><span class="sxs-lookup"><span data-stu-id="4e8c4-474">Display name: MDATP Onboarding Contoso 200329 v100.86.92 or later</span></span>
+    - <span data-ttu-id="17089-474">Nome visualizzato: MDATP Onboarding Contoso 200329 v100.86.92 o versione successiva</span><span class="sxs-lookup"><span data-stu-id="17089-474">Display name: MDATP Onboarding Contoso 200329 v100.86.92 or later</span></span>
 
-    ![<span data-ttu-id="4e8c4-475">Immagine delle impostazioni di configurazionemdatponboard</span><span class="sxs-lookup"><span data-stu-id="4e8c4-475">Image of configuration settingsmdatponboard</span></span> ](images/625ba6d19e8597f05e4907298a454d28.png)
+    ![<span data-ttu-id="17089-475">Immagine delle impostazioni di configurazionemdatponboard</span><span class="sxs-lookup"><span data-stu-id="17089-475">Image of configuration settingsmdatponboard</span></span> ](images/625ba6d19e8597f05e4907298a454d28.png)
 
-12. <span data-ttu-id="4e8c4-476">Selezionare **Archiviazione ricorrente.**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-476">Select **Recurring Check-in**.</span></span> 
+12. <span data-ttu-id="17089-476">Selezionare **Archiviazione ricorrente.**</span><span class="sxs-lookup"><span data-stu-id="17089-476">Select **Recurring Check-in**.</span></span> 
     
     ![Immagine dell'archiviazione ricorrente delle impostazioni di configurazione](images/68bdbc5754dfc80aa1a024dde0fce7b0.png)
 
   
-13. <span data-ttu-id="4e8c4-478">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-478">Select **Save**.</span></span> 
+13. <span data-ttu-id="17089-478">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="17089-478">Select **Save**.</span></span> 
  
-14. <span data-ttu-id="4e8c4-479">Selezionare **Pacchetti > Configura**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-479">Select **Packages > Configure**.</span></span>
+14. <span data-ttu-id="17089-479">Selezionare **Pacchetti > Configura**.</span><span class="sxs-lookup"><span data-stu-id="17089-479">Select **Packages > Configure**.</span></span>
  
     ![Immagine delle impostazioni di configurazione configurate](images/8fb4cc03721e1efb4a15867d5241ebfb.png)
 
-15. <span data-ttu-id="4e8c4-481">Seleziona il **pulsante** Aggiungi accanto a **Microsoft Defender Advanced Threat Protection e Microsoft Defender Antivirus.**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-481">Select the **Add** button next to **Microsoft Defender Advanced Threat Protection and Microsoft Defender Antivirus**.</span></span>
+15. <span data-ttu-id="17089-481">Seleziona il **pulsante** Aggiungi accanto a **Microsoft Defender Advanced Threat Protection e Microsoft Defender Antivirus.**</span><span class="sxs-lookup"><span data-stu-id="17089-481">Select the **Add** button next to **Microsoft Defender Advanced Threat Protection and Microsoft Defender Antivirus**.</span></span>
 
     ![Immagine delle impostazioni di configurazione MDATP e MDA add](images/526b83fbdbb31265b3d0c1e5fbbdc33a.png)
 
-16. <span data-ttu-id="4e8c4-483">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-483">Select **Save**.</span></span>
+16. <span data-ttu-id="17089-483">Selezionare **Salva**.</span><span class="sxs-lookup"><span data-stu-id="17089-483">Select **Save**.</span></span>
 
     ![Immagine delle impostazioni di configurazionesavimg](images/9d6e5386e652e00715ff348af72671c6.png)
 
-17. <span data-ttu-id="4e8c4-485">Selezionare la **scheda** Ambito.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-485">Select the **Scope** tab.</span></span>  
+17. <span data-ttu-id="17089-485">Selezionare la **scheda** Ambito.</span><span class="sxs-lookup"><span data-stu-id="17089-485">Select the **Scope** tab.</span></span>  
 
     ![Immagine delle impostazioni di configurazione scptab](images/8d80fe378a31143db9be0bacf7ddc5a3.png)
 
-18. <span data-ttu-id="4e8c4-487">Selezionare i computer di destinazione.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-487">Select the target computers.</span></span>
+18. <span data-ttu-id="17089-487">Selezionare i computer di destinazione.</span><span class="sxs-lookup"><span data-stu-id="17089-487">Select the target computers.</span></span>
 
     ![Immagine delle impostazioni di configurazione tgtcomp](images/6eda18a64a660fa149575454e54e7156.png)
 
-    <span data-ttu-id="4e8c4-489">**Ambito**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-489">**Scope**</span></span>
+    <span data-ttu-id="17089-489">**Ambito**</span><span class="sxs-lookup"><span data-stu-id="17089-489">**Scope**</span></span>
     
-    <span data-ttu-id="4e8c4-490">Selezionare **Aggiungi**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-490">Select **Add**.</span></span>
+    <span data-ttu-id="17089-490">Selezionare **Aggiungi**.</span><span class="sxs-lookup"><span data-stu-id="17089-490">Select **Add**.</span></span>
     
     ![Immagine delle impostazioni di configurazione ad1img](images/1c08d097829863778d562c10c5f92b67.png)
 
     ![Immagine delle impostazioni di configurazione ad2img](images/216253cbfb6ae738b9f13496b9c799fd.png)
 
-    <span data-ttu-id="4e8c4-493">**Self-Service**</span><span class="sxs-lookup"><span data-stu-id="4e8c4-493">**Self-Service**</span></span>
+    <span data-ttu-id="17089-493">**Self-Service**</span><span class="sxs-lookup"><span data-stu-id="17089-493">**Self-Service**</span></span>
     
     ![Immagine delle impostazioni di configurazione selfservice](images/c9f85bba3e96d627fe00fc5a8363b83a.png)
 
-19. <span data-ttu-id="4e8c4-495">Scegliere **Fatto**.</span><span class="sxs-lookup"><span data-stu-id="4e8c4-495">Select **Done**.</span></span> 
+19. <span data-ttu-id="17089-495">Scegliere **Fatto**.</span><span class="sxs-lookup"><span data-stu-id="17089-495">Select **Done**.</span></span> 
 
     ![Immagine delle impostazioni di configurazione do1img](images/99679a7835b0d27d0a222bc3fdaf7f3b.png)
 
