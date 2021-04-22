@@ -1,7 +1,7 @@
 ---
 title: Tabella AADSpnSignInEventsBeta nello schema di ricerca avanzata
 description: Informazioni sulle informazioni associate all'entità servizio di Azure Active Directory e alla tabella degli eventi di accesso delle identità gestite dello schema di ricerca avanzata
-keywords: ricerca avanzata, ricerca delle minacce, ricerca di minacce informatiche, Microsoft Threat Protection, Microsoft 365, mtp, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, AlertInfo, avviso, entità, prova, file, indirizzo IP, dispositivo, computer, utente, account, identità, AAD
+keywords: ricerca avanzata, ricerca delle minacce, ricerca di minacce informatiche, Microsoft 365 Defender, Microsoft 365, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, descrizione, AlertInfo, avviso, entità, prova, file, indirizzo IP, dispositivo, computer, utente, account, identità, AAD
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 64f3e1d51f94c4cd2578a1d512115aa717c3eaa8
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 984e945107b6e0b41459659a7f2e9f649981e4b5
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063613"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932596"
 ---
 # <a name="aadspnsignineventsbeta"></a>AADSpnSignInEventsBeta
 
@@ -35,7 +35,7 @@ ms.locfileid: "51063613"
 
 >[!IMPORTANT]
 > La tabella è attualmente in versione beta e viene offerta a breve termine per consentire la ricerca tramite l'entità servizio `AADSpnSignInEventsBeta` di Azure Active Directory (AAD) e gli eventi di accesso delle identità gestite. Alla fine verranno spostate tutte le informazioni sullo schema di accesso nella `IdentityLogonEvents` tabella.<br><br>
-> I clienti che possono accedere a Microsoft 365 Defender tramite la soluzione integrata Microsoft Defender for Endpoint del Centro sicurezza di Azure, ma non dispongono di licenze per Microsoft Defender per Office, Microsoft Defender for Identity o Microsoft Cloud App Security, non potranno visualizzare questo schema. 
+> I clienti che possono accedere a Microsoft 365 Defender tramite la soluzione Microsoft Defender for Endpoint integrata di Azure Defender, ma non dispongono di licenze per Microsoft Defender per Office, Microsoft Defender for Identity o Microsoft Cloud App Security, non potranno visualizzare questo schema. 
 
 
 
@@ -76,6 +76,6 @@ Per informazioni sulle altre tabelle nello schema per Ricerca avanzata vedere [l
 ## <a name="related-articles"></a>Articoli correlati
 
 -   [AADSignInEventsBeta](./advanced-hunting-aadsignineventsbeta-table.md)
--   [Panoramica della ricerca avanzata](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
+-   [Panoramica della rilevazione avanzata](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-overview)
 -   [Capire il linguaggio delle query](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-query-language)
 -   [Comprensione dello schema](/windows/security/threat-protection/microsoft-defender-atp/advanced-hunting-schema-reference)

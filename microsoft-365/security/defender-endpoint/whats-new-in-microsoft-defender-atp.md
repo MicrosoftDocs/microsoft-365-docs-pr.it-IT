@@ -1,7 +1,7 @@
 ---
 title: Novità di Microsoft Defender per Endpoint
 description: Scopri quali funzionalità sono generalmente disponibili (GA) nella versione più recente di Microsoft Defender per Endpoint, nonché le funzionalità di sicurezza in Windows 10 e Windows Server.
-keywords: novità di Microsoft Defender per endpoint, ga, generalmente disponibile, funzionalità, disponibili, nuove
+keywords: novità di Microsoft Defender for Endpoint, ga, generalmente disponibile, funzionalità, disponibili, nuove
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -17,12 +17,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: c9f4c0689739224b00c9c14db1482d54faab3512
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: abb20fe79077eda5c50c9aa36829e0dd45e756b8
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688238"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932620"
 ---
 # <a name="whats-new-in-microsoft-defender-for-endpoint"></a>Novità di Microsoft Defender per Endpoint
 
@@ -52,7 +52,7 @@ Per ulteriori informazioni sulle funzionalità di anteprima, vedere [Funzionalit
 - [Desktop virtuale Windows](https://azure.microsoft.com/services/virtual-desktop/) <br> Microsoft Defender for Endpoint ora aggiunge il supporto per Desktop virtuale Windows.
 
 ## <a name="december-2020"></a>Dicembre 2020
-- [Microsoft Defender per Endpoint in iOS](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender for Endpoint ora aggiunge il supporto per iOS. Scopri come installare, configurare, aggiornare e usare Microsoft Defender for Endpoint in iOS.
+- [Microsoft Defender per endpoint su iOS](microsoft-defender-endpoint-ios.md) <br> Microsoft Defender for Endpoint ora aggiunge il supporto per iOS. Scopri come installare, configurare, aggiornare e usare Microsoft Defender for Endpoint in iOS.
 
 ## <a name="september-2020"></a>Settembre 2020
 - [Microsoft Defender per Endpoint su Android](microsoft-defender-endpoint-android.md) <br> Microsoft Defender for Endpoint ora aggiunge il supporto per Android. Scopri come installare, configurare, aggiornare e usare Microsoft Defender per Endpoint su Android.
@@ -78,7 +78,7 @@ Per ulteriori informazioni sulle funzionalità di anteprima, vedere [Funzionalit
 
 ## <a name="november-december-2019"></a>November-December 2019
 
-- [Microsoft Defender per Endpoint in macOS](microsoft-defender-endpoint-mac.md) <BR> Microsoft Defender for Endpoint su macOS offre la protezione di nuova generazione per i dispositivi Mac. I componenti di base della piattaforma di sicurezza degli endpoint unificati saranno ora disponibili per i dispositivi Mac, tra cui [il rilevamento e la risposta degli endpoint.](microsoft-defender-endpoint-mac.md)
+- [Microsoft Defender per endpoint su macOS](microsoft-defender-endpoint-mac.md) <BR> Microsoft Defender for Endpoint su macOS offre la protezione di nuova generazione per i dispositivi Mac. I componenti di base della piattaforma di sicurezza degli endpoint unificati saranno ora disponibili per i dispositivi Mac, tra cui [il rilevamento e la risposta degli endpoint.](microsoft-defender-endpoint-mac.md)
  
 - [Informazioni & sulla versione finale dell'applicazione di gestione delle vulnerabilità e sulla versione dell'applicazione](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/tvm-security-recommendation) <BR>Le applicazioni e le versioni delle applicazioni che hanno raggiunto la fine del ciclo di vita vengono contrassegnate o etichettate come tali in modo da essere consapevoli del fatto che non saranno più supportate e possono eseguire azioni per disinstallare o sostituire. Questa operazione consente di ridurre i rischi correlati a diverse esposizioni di vulnerabilità dovute ad applicazioni senza applicazione.
 
@@ -150,7 +150,7 @@ Per ulteriori informazioni sulle funzionalità di anteprima, vedere [Funzionalit
 
 - [Rilevamento personalizzato](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/overview-custom-detections)<BR>Con i rilevamenti personalizzati, è possibile creare query personalizzate per monitorare gli eventi per qualsiasi tipo di comportamento, ad esempio minacce sospette o emergenti. Questo può essere fatto sfruttando la potenza della ricerca avanzata attraverso la creazione di regole di rilevamento personalizzate. 
 
-- [Integrazione con il Centro sicurezza di Azure](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection#integration-with-azure-security-center)<BR> Microsoft Defender for Endpoint si integra con Azure Security Center per fornire una soluzione completa di protezione dei server. Con questa integrazione Azure Security Center può sfruttare la potenza di Microsoft Defender for Endpoint per fornire un rilevamento delle minacce migliorato per i server Windows.
+- [Integrazione con AAzure Defender](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/configure-server-endpoints-windows-defender-advanced-threat-protection#integration-with-azure-security-center)<BR> Microsoft Defender for Endpoint si integra con Azure Defender per fornire una soluzione completa di protezione del server. Con questa integrazione Azure Defender può sfruttare la potenza di Microsoft Defender for Endpoint per fornire un rilevamento delle minacce migliorato per i server Windows.
 
 - [Supporto mssp (Managed Security Service Provider)](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/mssp-support-windows-defender-advanced-threat-protection)<BR> Microsoft Defender for Endpoint aggiunge supporto per questo scenario fornendo l'integrazione di MSSP. L'integrazione consentirà agli MSSP di eseguire le azioni seguenti: ottenere l'accesso al portale microsoft Defender Security Center del cliente MSSP, recuperare le notifiche di posta elettronica e recuperare gli avvisi tramite gli strumenti siem (Security Information and Event Management).
 

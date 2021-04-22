@@ -1,7 +1,7 @@
 ---
 title: Laboratorio di valutazione di Microsoft Defender for Endpoint
 description: Informazioni sulle funzionalità di Microsoft Defender for Endpoint, eseguire simulazioni di attacco e vedere come impedisce, rileva e correggere le minacce.
-keywords: valutare mdatp, valutazione, lab, simulazione, Windows 10, Windows Server 2019, laboratorio di valutazione
+keywords: valutare Microsoft Defender for Endpoint, valutazione, lab, simulazione, Windows 10, Windows Server 2019, laboratorio di valutazione
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -17,12 +17,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 2382281fbb975daa18ec21aabaf5acf8d3fbfb2f
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: ed2165c0102170256f50964180a550d8eccbce8c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893438"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932788"
 ---
 # <a name="microsoft-defender-for-endpoint-evaluation-lab"></a>Laboratorio di valutazione di Microsoft Defender for Endpoint
 

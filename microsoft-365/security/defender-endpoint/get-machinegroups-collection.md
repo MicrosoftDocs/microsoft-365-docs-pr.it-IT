@@ -1,6 +1,6 @@
 ---
 title: API per la raccolta di gruppi di computer RBAC
-description: Scopri come usare l'API Per recuperare una raccolta di gruppi di dispositivi RBAC in Microsoft Defender Advanced Threat Protection.
+description: Scopri come usare l'API Per recuperare una raccolta di gruppi di dispositivi RBAC in Microsoft Defender for Endpoint.
 keywords: api, api del grafico, api supportate, get, RBAC, gruppo
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 10/07/2018
-ms.openlocfilehash: 54a0edb47204fe6e48666f0927d05121af95e00a
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 18566025d79f02281c1d2c1509dd98f1e57879c2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51167021"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932776"
 ---
 # <a name="get-kb-collection-api"></a>Ottenere l'API di raccolta KB
 

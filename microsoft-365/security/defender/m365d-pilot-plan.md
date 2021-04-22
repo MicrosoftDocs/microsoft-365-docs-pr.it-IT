@@ -1,7 +1,7 @@
 ---
 title: Pianificazione del progetto pilota di Microsoft 365 Defender
 description: Pianificare il progetto pilota di Microsoft 365 Defender con gli stakeholder per gestire le aspettative e garantire risultati positivi.
-keywords: Microsoft Threat Protection pilot, plan pilot Microsoft Threat Protection project, evaluate Microsoft Threat Protection in production, Microsoft Threat Protection pilot project, cyber security, advanced persistent threat, enterprise security, devices, identity, users, data, applications, incidents, automated investigation and remediation, advanced hunting
+keywords: Microsoft 365 Defender pilot, pianificare un progetto pilota di Microsoft 365 Defender, valutare Microsoft 365 Defender in produzione, progetto pilota di Microsoft 365 Defender, sicurezza informatica, minaccia persistente avanzata, sicurezza aziendale, dispositivi, dispositivo, identità, utenti, dati, applicazioni, incidenti, analisi e correzione automatizzate, ricerca avanzata
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: aee508414b2388b04ab362eedb1f894a4c3d54fd
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 98f0c91a51cc2b73cc26e6fb53143a417a7a147e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51063437"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932548"
 ---
 # <a name="planning-your-pilot-microsoft-365-defender-project"></a>Pianificazione del progetto pilota di Microsoft 365 Defender 
 
@@ -50,7 +50,7 @@ Questa guida illustra come pianificare il progetto pilota.
 >Per ottenere risultati ottimali, seguire le istruzioni pilota il più possibile.
 
 
-## <a name="scope"></a>Scope
+## <a name="scope"></a>Ambito
 
 L'ambito del progetto pilota determinerà l'ampia portata del test, in base all'ambiente e ai metodi di test accettabili. Ecco alcuni ambiti di esempio da considerare:
 - Ambiente di sviluppo o test che include endpoint, server, controller di dominio.
@@ -86,7 +86,7 @@ I criteri di esito positivo sono in definitiva l'insieme di barre da misurare ri
 
 Un modo per riunire tutti gli elementi del piano può essere quello di creare una scorecard. Di seguito è riportata una scorecard di esempio:
 
-| Use Case | Requisiti | Requisiti di configurazione | Piano di testing | Risultato previsto | Stato test | Punteggio | Note |
+| Caso di utilizzo | Requisiti | Requisiti di configurazione | Piano di testing | Risultato previsto | Stato test | Punteggio | Note |
 |:-------|:-------|:-------|:-------|:-------|:-------|:-------|:-------|
 |Gestione degli incidenti|- Microsoft 365 Defender  </br></br>- Microsoft Defender for Identity </br></br>- Microsoft Defender per Endpoint </br></br>- Microsoft Cloud App Security (facoltativo)|Per informazioni [dettagliate,](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) vedere i prerequisiti per la preparazione, la configurazione e la configurazione |[Simula attacco](m365d-pilot-simulate.md) <br></br>[Analizzare l'evento imprevisto](./m365d-pilot-simulate.md#investigate-an-incident) |Gli investigatori possono comprendere l'ambito e l'impatto dell'incidente e gestire l'incidente||||
 |AutoIR|- Microsoft 365 Defender </br></br>- Microsoft Defender for Identity </br></br>- Microsoft Defender per Endpoint |Per informazioni [dettagliate,](m365d-evaluation.md?ocid=cx-docs-MTPtriallab) vedere i prerequisiti per la preparazione, la configurazione e la configurazione <br>Abilita AutoIR  |[Simula attacco](m365d-pilot-simulate.md) <br></br>[Indagine automatizzata](m365d-pilot-simulate.md#automated-investigation-and-remediation) |Gli avvisi e gli eventi imprevisti vengono corretti automaticamente da Microsoft 365 Defender||||

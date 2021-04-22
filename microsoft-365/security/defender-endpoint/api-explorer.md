@@ -1,5 +1,5 @@
 ---
-title: Esplora API in Microsoft Defender ATP
+title: Esplora API in Microsoft Defender per endpoint
 ms.reviewer: ''
 description: Usare Esplora API per creare ed eseguire query API, testare e inviare richieste per qualsiasi API disponibile
 keywords: api, explorer, inviare, richiedere, ottenere, pubblicare,
@@ -17,19 +17,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0cfe5227d5d1cdb1f1f4eaea2c859937d7e75264
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: b8d0d991e46464bae3b4d21d6218b9b3b2d2b4cb
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51065061"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930114"
 ---
 # <a name="api-explorer"></a>Esplora API
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 
 
 Microsoft Defender for Endpoint API Explorer è uno strumento che consente di esplorare in modo interattivo diverse API di Defender for Endpoint. 

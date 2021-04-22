@@ -1,7 +1,7 @@
 ---
 title: Eseguire la migrazione di query di ricerca avanzate da Microsoft Defender per Endpoint
 description: Informazioni su come modificare le query di Microsoft Defender for Endpoint in modo da poterle usare in Microsoft 365 Defender
-keywords: ricerca avanzata, ricerca delle minacce, ricerca di minacce informatiche, protezione dalle minacce Microsoft, Microsoft 365, mtp, m365, microsoft defender atp, mdatp, ricerca, query, telemetria, rilevamenti personalizzati, schema, kusto, Microsoft 365, mapping
+keywords: ricerca avanzata, ricerca delle minacce, ricerca di minacce informatiche, Microsoft 365 Defender, Microsoft 365, m365, Microsoft Defender for Endpoint, ricerca, query, telemetria, rilevamenti personalizzati, schema, kusto, mapping
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 ms.topic: article
 ms.custom: seo-marvel-apr2020
 ms.technology: m365d
-ms.openlocfilehash: c0a29f93b9ea926beaeecb840ba108da04a89ebb
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 5513c4b4fd8c5e24f9ada989113abc8a10e6a864
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51501139"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933446"
 ---
 # <a name="migrate-advanced-hunting-queries-from-microsoft-defender-for-endpoint"></a>Eseguire la migrazione di query di ricerca avanzate da Microsoft Defender per Endpoint
 
@@ -40,7 +40,7 @@ Sposta i flussi di lavoro di ricerca avanzati da Microsoft Defender for Endpoint
 - Microsoft Defender per endpoint
 - Microsoft Defender per Office 365
 - Microsoft Cloud App Security
-- Che cosa è Microsoft Defender per identità?
+- Microsoft Defender per identità
 
 >[!NOTE]
 >La maggior parte dei clienti di Microsoft Defender per Endpoint [può usare Microsoft 365 Defender senza licenze aggiuntive.](prerequisites.md#licensing-requirements) Per avviare la transizione dei flussi di lavoro di ricerca avanzata da Defender for Endpoint, [attiva Microsoft 365 Defender.](m365d-enable.md)

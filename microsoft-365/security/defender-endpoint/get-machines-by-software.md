@@ -1,7 +1,7 @@
 ---
 title: Elencare i dispositivi in base al software
 description: Recuperare un elenco di dispositivi in cui è installato questo software.
-keywords: api, api del grafico, api supportate, ottenere, elencare dispositivi, elenco dispositivi, elencare i dispositivi in base al software, api mdatp tvm
+keywords: api, api del grafico, api supportate, ottenere, elencare i dispositivi, elenco dei dispositivi, elencare i dispositivi in base al software, Api di Microsoft Defender for Endpoint tvm
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 78cccee6380f0c403aab21eac4f07b64b8f8d510
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: ff0bb9a6f17b8d4dc6432292ec98743d3eaf952c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51200390"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929098"
 ---
 # <a name="list-devices-by-software"></a>Elencare i dispositivi in base al software
 

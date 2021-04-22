@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 154ecd66399b031ef2e60eef16227bb9bc2f8785
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: c1e572910ad311daba18a8b0f5eeb546ffe36956
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587720"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929110"
 ---
 # <a name="investigate-devices-in-the-microsoft-defender-for-endpoint-devices-list"></a>Analizzare i dispositivi nell'elenco Di Microsoft Defender per dispositivi endpoint
 
@@ -172,12 +172,12 @@ Nella **scheda Blob** mancanti sono elencati gli aggiornamenti di sicurezza manc
 
 ### <a name="active-alerts"></a>Avvisi attivi
 
-La **scheda Azure Advanced Threat Protection** visualizza una panoramica generale degli avvisi relativi al dispositivo e al relativo livello di rischio, se è stata abilitata la funzionalità Azure ATP e sono presenti avvisi attivi. Ulteriori informazioni sono disponibili nel drill-down "Avvisi".
+La **scheda Azure Advanced Threat Protection** visualizza una panoramica generale degli avvisi relativi al dispositivo e al relativo livello di rischio, se è stata abilitata la funzionalità Microsoft Defender for Identity e sono presenti avvisi attivi. Ulteriori informazioni sono disponibili nel drill-down "Avvisi".
 
 ![Immagine della scheda avvisi attivi](images/risk-level-small.png)
 
 >[!NOTE]
->Dovrai abilitare l'integrazione sia in Azure ATP che in Defender for Endpoint per usare questa funzionalità. In Defender for Endpoint puoi abilitare questa funzionalità nelle funzionalità avanzate. Per ulteriori informazioni su come abilitare le funzionalità avanzate, vedere [Attivare le funzionalità avanzate.](advanced-features.md)
+>Dovrai abilitare l'integrazione sia in Microsoft Defender for Identity che in Defender for Endpoint per usare questa funzionalità. In Defender for Endpoint puoi abilitare questa funzionalità nelle funzionalità avanzate. Per ulteriori informazioni su come abilitare le funzionalità avanzate, vedere [Attivare le funzionalità avanzate.](advanced-features.md)
 
 ### <a name="logged-on-users"></a>Utenti connessi
 

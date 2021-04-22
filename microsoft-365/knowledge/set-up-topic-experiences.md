@@ -10,12 +10,12 @@ ms.service: o365-administration
 search.appverid: MET150
 localization_priority: Normal
 description: Informazioni su come configurare Microsoft Viva Topics
-ms.openlocfilehash: 629008e083d71e09632b05e21eaefb011d7d9ce2
-ms.sourcegitcommit: 27b2b2e5c41934b918cac2c171556c45e36661bf
+ms.openlocfilehash: 19395cf3a9ecc991f08f375425803cb81a2a1d35
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "50929445"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930222"
 ---
 # <a name="set-up-microsoft-viva-topics"></a>Configurare Gli argomenti di Microsoft Viva
 
@@ -36,6 +36,27 @@ Questo video mostra il processo di configurazione degli argomenti in Microsoft 3
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Li0E]  
 
 <br>
+
+## <a name="assign-licenses"></a>Assegnazione delle licenze
+
+È necessario assegnare licenze per gli utenti che utilizzano Argomenti. Solo gli utenti con una licenza possono visualizzare informazioni su argomenti quali evidenziazioni, schede argomento, pagine di argomenti e il Centro argomenti. 
+
+Per assegnare le licenze:
+
+1. Nell'interfaccia di amministrazione di Microsoft 365, in **Utenti** fare clic su **Utenti attivi**.
+
+2. Seleziona gli utenti di cui vuoi ottenere la licenza e fai clic **su Licenze e app.**
+
+3. In **Licenze** selezionare **Viva Topics.**
+
+4. In **App** assicurati che sia selezionata l'opzione Cerca connettori grafico con indice **(Argomenti Viva)** **e Viva Argomenti.**
+
+   > [!div class="mx-imgBorder"]
+   > ![Licenze di Microsoft Viva Topics nell'interfaccia di amministrazione di Microsoft 365](../media/topic-experiences-licenses.png)
+
+5. Fare clic su **Salva modifiche**.
+
+L'accesso agli argomenti dopo l'assegnazione delle licenze potrebbe richiedere fino a un'ora.
 
 ## <a name="set-up-topics"></a>Configurare Argomenti
 
@@ -124,25 +145,6 @@ Per configurare gli argomenti
     ![Impostazioni applicate](../media/ksetup7.png)    
 
 Si noti che la prima volta che l'individuazione degli argomenti è abilitata, potrebbero essere necessario fino a due settimane prima che tutti gli argomenti suggeriti vengano visualizzati nella visualizzazione Gestisci argomenti. L'individuazione degli argomenti continua quando vengono apportati nuovi contenuti o aggiornamenti al contenuto. È normale avere fluttuazioni nel numero di argomenti suggeriti nell'organizzazione poiché Viva Topics valuta nuove informazioni.
-
-## <a name="assign-licenses"></a>Assegna le licenze
-
-Dopo aver configurato le esperienze di argomento, è necessario assegnare le licenze per gli utenti che si baseranno su Argomenti. Solo gli utenti con una licenza possono visualizzare informazioni su argomenti quali evidenziazioni, schede argomento, pagine di argomenti e il Centro argomenti. 
-
-Per assegnare le licenze:
-
-1. Nell'interfaccia di amministrazione di Microsoft 365, in **Utenti** fare clic su **Utenti attivi**.
-
-2. Seleziona gli utenti di cui vuoi ottenere la licenza e fai clic **su Licenze e app.**
-
-3. In **Licenze** selezionare **Viva Topics.**
-
-4. In **App** assicurati che sia selezionata l'opzione Cerca connettori grafico con indice **(Argomenti Viva)** **e Viva Argomenti.**
-
-   > [!div class="mx-imgBorder"]
-   > ![Licenze di Microsoft Viva Topics nell'interfaccia di amministrazione di Microsoft 365](../media/topic-experiences-licenses.png)
-
-5. Fare clic su **Salva modifiche**.
 
 ## <a name="manage-topic-experiences"></a>Gestire le esperienze degli argomenti
 

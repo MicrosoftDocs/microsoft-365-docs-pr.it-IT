@@ -16,12 +16,12 @@ ms.custom:
 search.appverid:
 - MET150
 description: Informazioni sul programma Business Assist e su come può aiutare l'organizzazione a migliorare la guida e l'utilizzo di Microsoft 365 per le aziende.
-ms.openlocfilehash: 4531c841b4856e22b364906c180aa336cb8fd04a
-ms.sourcegitcommit: c75aac39ee8d93218a79585113ef6b36f47c9ddf
+ms.openlocfilehash: 767146cbbb68ff2e6632a7cae74a8b232834b01b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/29/2021
-ms.locfileid: "51408526"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929032"
 ---
 # <a name="business-assist-for-microsoft-365"></a>Business Assist per Microsoft 365
 
@@ -55,7 +55,7 @@ Solo le organizzazioni idonee potranno acquistare Business Assist. L'assistenza 
 
 2. Seleziona **Dettagli** su **Small Business Assist per Microsoft 365** e completa l'acquisto.
 
-:::image type="content" source="../../media/projectgenie-purchase services.png" alt-text="Screeenshot: Acquistare assistenza aziendale dalla sezione Componenti aggiuntivi nella pagina Acquisto di servizi":::
+:::image type="content" source="../../media/business-assist-april.png" alt-text="Screeenshot: Acquistare assistenza aziendale dalla sezione Componenti aggiuntivi nella pagina Acquisto di servizi":::
 
 > [!div class="nextstepaction"]
 > [Acquista ora](https://go.microsoft.com/fwlink/p/?linkid=2158423)

@@ -1,7 +1,7 @@
 ---
 title: Domande frequenti sull'attivazione di Microsoft 365 Defender
 description: Risposte alle domande più frequenti su licenze, autorizzazioni, impostazioni iniziali e altri prodotti e servizi correlati all'abilitazione di Microsoft 365 Defender
-keywords: domande frequenti, domande frequenti, GCC, introduzione, abilitare MTP, Microsoft Threat Protection, M365, sicurezza, posizione dei dati, autorizzazioni necessarie, idoneità alla licenza, pagina delle impostazioni
+keywords: domande frequenti, domande frequenti, GCC, iniziare, abilitare Microsoft 365 Defender, Microsoft 365 Defender, M365, sicurezza, posizione dati, autorizzazioni necessarie, idoneità alla licenza, pagina impostazioni
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: 7482bf614e7cb3ffad6596f3c5d8bc554d46d912
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 55c1a3807fe8e28ca12f4f638c1ab2ca717523ed
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068650"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933434"
 ---
 # <a name="frequently-asked-questions-when-turning-on-microsoft-365-defender"></a>Domande frequenti sull'attivazione di Microsoft 365 Defender
 
@@ -43,7 +43,7 @@ Per istruzioni su come attivare il servizio, [vedere Attivare Microsoft 365 Defe
 
 I clienti con le seguenti licenze non E5 possono usare Microsoft 365 Defender:
 
-- Microsoft Defender ATP
+- Microsoft Defender per endpoint
 - Microsoft Defender per identità
 - Microsoft Cloud App Security
 - Defender per Office 365 (Piano 2)

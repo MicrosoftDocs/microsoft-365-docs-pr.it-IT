@@ -14,12 +14,12 @@ ms.collection:
 search.appverid:
 - MET150
 description: gli scenari di minaccia e attacco più comuni attualmente affrontati dalle organizzazioni per i propri ambienti Microsoft 365 e le azioni consigliate per attenuare questi rischi.
-ms.openlocfilehash: 504a2d4628c265b387941e2e4de0461f7ac3be9b
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: 056e1e64a992f12f3bf9a4b76c29f723ac1b5f3a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199042"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51930174"
 ---
 # <a name="microsoft-365-security-for-business-decision-makers-bdms"></a>Microsoft 365 Security for Business Decision Makers (BDM)
 
@@ -29,7 +29,7 @@ Questo articolo è organizzato per priorità di lavoro, a partire dalla protezio
 
 [![Foglio di calcolo suggerimenti per la sicurezza di Microsoft 365 BDM con immagine thumb](../downloads/microsoft-365-bdm-security-recommendations-spreadsheet-thumb.png)](https://github.com/MicrosoftDocs/microsoft-365-docs/raw/public/microsoft-365/downloads/Microsoft-365-BDM-security-recommendations-spreadsheet.xlsx)
 
-Microsoft fornisce lo strumento Punteggio sicuro all'interno del tenant per analizzare automaticamente la posizione di sicurezza in base alle attività regolari, assegnare un punteggio e fornire suggerimenti per il miglioramento della sicurezza. Prima di eseguire le azioni consigliate in questo articolo, prendere nota del punteggio corrente e dei suggerimenti. Le azioni consigliate in questo articolo aumentano il punteggio. L'obiettivo non è raggiungere il punteggio massimo, ma essere consapevoli delle opportunità di protezione dell'ambiente in modo che non influiscano negativamente sulla produttività degli utenti. Vedere [Microsoft Secure Score](defender/microsoft-secure-score.md).
+Microsoft fornisce lo strumento Punteggio sicuro all'interno del tenant per analizzare automaticamente la posizione di sicurezza in base alle attività regolari, assegnare un punteggio e fornire suggerimenti per il miglioramento della sicurezza. Prima di eseguire le azioni consigliate in questo articolo, prendere nota del punteggio corrente e dei suggerimenti. Le azioni consigliate in questo articolo aumentano il punteggio. L'obiettivo non è raggiungere il punteggio massimo, ma essere consapevoli delle opportunità per proteggere l'ambiente in modo che non influisca negativamente sulla produttività degli utenti. Vedere [Microsoft Secure Score](defender/microsoft-secure-score.md).
 
 ![Seguire questa procedura per ridurre i rischi per l'azienda.](../media/security/security-for-bdms-overview.png)
 
@@ -37,7 +37,7 @@ Un'altra cosa prima di iniziare . . . assicurarsi di [attivare il registro di co
 
 ## <a name="protect-privileged-accounts"></a>Proteggere gli account con privilegi
 
-Come primo passaggio, è consigliabile garantire che agli account critici nell'ambiente venga assegnato un ulteriore livello di protezione, poiché questi account dispongono di accesso e autorizzazioni per gestire e modificare i servizi e le risorse critici che possono influire negativamente sull'intera organizzazione, se compromessi. La protezione degli account con privilegi è uno dei modi più efficaci per proteggersi da un utente malintenzionato che cerca di elevare le autorizzazioni di un account compromesso a un account amministrativo. 
+Come primo passaggio, è consigliabile garantire che agli account critici nell'ambiente venga assegnato un ulteriore livello di protezione, in quanto tali account dispongono di accesso e autorizzazioni per gestire e modificare i servizi e le risorse critici, che possono influire negativamente sull'intera organizzazione, se compromessi. La protezione degli account con privilegi è uno dei modi più efficaci per proteggersi da un utente malintenzionato che cerca di elevare le autorizzazioni di un account compromesso a un account amministrativo. 
 
 |Consiglio  |E3 |E5  |
 |---------|---------|---------|
@@ -50,7 +50,7 @@ Nel diagramma seguente vengono illustrate queste funzionalità.
 ![Funzionalità consigliate per la protezione degli account con privilegi](../media/m365-security-bdm-illustrations-privileged-accounts.png)
 
 Suggerimenti aggiuntivi:
-- Verificare che agli account sincronizzati da locale non siano assegnati ruoli di amministratore per i servizi cloud. Ciò consente di impedire a un utente malintenzionato di sfruttare gli account locali per ottenere l'accesso amministrativo ai servizi cloud. 
+- Verificare che agli account sincronizzati da locale non siano assegnati ruoli di amministratore per i servizi cloud. Ciò consente di impedire a un utente malintenzionato di applicare account locali per ottenere l'accesso amministrativo ai servizi cloud. 
 - Verificare che agli account di servizio non siano assegnati ruoli di amministratore. Questi account spesso non vengono monitorati e impostati con password che non scadono. Iniziare verificando che gli account dei servizi AADConnect e ADFS non siano amministratori globali per impostazione predefinita.
 - Rimuovere le licenze dagli account di amministratore. A meno che non vi sia un caso di utilizzo specifico per assegnare licenze a specifici account di amministratore, rimuovere le licenze da questi account. 
 
@@ -58,7 +58,7 @@ Suggerimenti aggiuntivi:
 
 L'area di messa a fuoco successiva è la riduzione della superficie di attacco. Questa operazione può essere eseguita con il minimo sforzo e impatto per gli utenti e i servizi. Riducendo la superficie di attacco, gli utenti malintenzionati hanno meno modi per lanciare un attacco contro l'organizzazione.
 
-Ecco alcuni esempi:
+Di seguito vengono descritti alcuni esempi:
 - Disabilitare i protocolli POP3, IMAP e SMTP. La maggior parte delle organizzazioni moderne non usa più questi protocolli precedenti. È possibile disabilitarli in modo sicuro e consentire le eccezioni solo in base alle esigenze. 
 - Ridurre e mantenere il numero di amministratori globali nel tenant al minimo necessario. In questo modo si riduce direttamente l'area di attacco per tutte le applicazioni cloud. 
 - Ritirare i server e le applicazioni non più utilizzati nell'ambiente. 
@@ -82,12 +82,12 @@ Nel diagramma seguente vengono illustrate queste funzionalità.
 
 ## <a name="protect-against-unknown-threats"></a>Protezione da minacce sconosciute
 
-Dopo aver aggiunto protezioni aggiuntive agli account con privilegi e aver protetto da attacchi noti, sposta l'attenzione sulla protezione da minacce sconosciute. Gli avversari più determinati e avanzati usano metodi innovativi e nuovi e sconosciuti per attaccare le organizzazioni. Con la vasta telemetria di Microsoft dei dati raccolti su miliardi di dispositivi, applicazioni e servizi, siamo in grado di eseguire Defender per Office 365 in Windows, Office 365 e Azure per evitare attacchi zero day, utilizzando ambienti sand box e controllando la validità prima di consentire l'accesso al contenuto. 
+Dopo aver aggiunto protezioni aggiuntive agli account con privilegi e aver protetto da attacchi noti, sposta l'attenzione sulla protezione da minacce sconosciute. Gli avversari più determinati e avanzati usano metodi innovativi e nuovi e sconosciuti per attaccare le organizzazioni. Con la vasta telemetria di Microsoft dei dati raccolti in più di miliardi di dispositivi, applicazioni e servizi, siamo in grado di eseguire Defender per Office 365 in Windows, Office 365 e Azure per evitare attacchi di Zero-Day, utilizzando ambienti sand box e controllando la validità prima di consentire l'accesso al contenuto. 
 
 
 |Consiglio  |E3  |E5  |
 |---------|---------|---------|
-|**Configurare Microsoft Defender per Office 365**:<br>* Allegati sicuri<br>* Collegamenti sicuri<br>* ATP per SharePoint, OneDrive e Microsoft Teams<br>* Anti-phishing in Defender for Office 365 protection|         |![segno di spunta verde](../media/green-check-mark.png) |
+|**Configurare Microsoft Defender per Office 365**:<br>* Allegati sicuri<br>* Collegamenti sicuri<br>* Microsoft Defender for Endpoint per SharePoint, OneDrive e Microsoft Teams<br>* Anti-phishing in Defender for Office 365 protection|         |![segno di spunta verde](../media/green-check-mark.png) |
 |**Configurare Microsoft Defender per le funzionalità dell'endpoint**:<br>* Windows Defender Antivirus <br>* Protezione da exploit <br> * Riduzione della superficie di attacco <br> * Isolamento basato su hardware <br>* Accesso controllato alle cartelle     |         |![segno di spunta verde](../media/green-check-mark.png) |
 |**Usa Microsoft Cloud App Security per** individuare le app SaaS e iniziare a usare l'analisi del comportamento e il rilevamento delle anomalie. |         |![segno di spunta verde](../media/green-check-mark.png) |
 
@@ -97,7 +97,7 @@ Nel diagramma seguente vengono illustrate queste funzionalità.
 Suggerimenti aggiuntivi:
 - Proteggere le comunicazioni del canale partner come i messaggi di posta elettronica tramite TLS.
 - Aprire la federazione di Teams solo ai partner con cui si comunica.
-- Non aggiungere domini mittente, singoli mittenti o indirizzi IP di origine all'elenco consenti, in quanto ciò consente di ignorare i controlli di posta indesiderata e malware. Una pratica comune con i clienti consiste nell'aggiungere i propri domini accettati o un numero di altri domini in cui potrebbero essere stati segnalati problemi del flusso di posta elettronica all'elenco consenti. Non aggiungere domini nell'elenco Filtro posta indesiderata e connessioni perché questa operazione potrebbe ignorare tutti i controlli della posta indesiderata. 
+- Non aggiungere domini mittente, singoli mittenti o indirizzi IP di origine all'elenco consenti, in quanto ciò consente loro di ignorare i controlli di posta indesiderata e malware. Una pratica comune con i clienti consiste nell'aggiungere i propri domini accettati o un certo numero di altri domini in cui potrebbero essere stati segnalati problemi del flusso di posta elettronica all'elenco consenti. Non aggiungere domini nell'elenco Filtro posta indesiderata e connessioni perché questa operazione potrebbe ignorare tutti i controlli della posta indesiderata. 
 - Abilitare le notifiche di posta indesiderata in uscita : abilitare le notifiche di posta indesiderata in uscita a una lista di distribuzione internamente al team di supporto tecnico o di amministratore IT per segnalare se uno degli utenti interni invia messaggi di posta indesiderata esternamente. Potrebbe trattarsi di un indicatore che indica che l'account è stato compromesso.
 - Disabilitare Remote PowerShell per tutti gli utenti: Remote PowerShell viene utilizzato principalmente dagli amministratori per accedere ai servizi per scopi amministrativi o per l'accesso alle API programmatiche. È consigliabile disabilitare questa opzione per gli utenti non amministratori per evitare ricognizioni, a meno che non abbia un requisito aziendale per accedervi. 
 - Bloccare l'accesso al portale di gestione di Microsoft Azure a tutti gli utenti non amministratori. A tale scopo, è possibile creare una regola di accesso condizionale per bloccare tutti gli utenti, ad eccezione degli amministratori. 
@@ -107,7 +107,7 @@ Suggerimenti aggiuntivi:
 
 Mentre Microsoft adotta tutte le misure possibili per prevenire minacce e attacchi, ti consigliamo di lavorare sempre con la mentalità "Presupporre violazione". Anche se un utente malintenzionato è riuscito a intromettersi nell'ambiente, è necessario assicurarsi che non sia in grado di esfiltrare dati o informazioni sull'identità dall'ambiente. Per questo motivo, è consigliabile abilitare la protezione da perdite di dati sensibili, ad esempio numeri di previdenza sociale, numeri di carte di credito, informazioni personali aggiuntive e altre informazioni riservate a livello di organizzazione. 
 
-La strategia "Presupporre violazione" richiede l'implementazione di una strategia di rete senza attendibilità, il che significa che gli utenti non sono completamente attendibili solo perché sono interni alla rete. Nell'ambito dell'autorizzazione delle operazioni che gli utenti possono eseguire, vengono invece specificati set di condizioni e, quando tali condizioni vengono soddisfatte, vengono applicati determinati controlli. Le condizioni possono includere lo stato di integrità del dispositivo, l'accesso all'applicazione, le operazioni eseguite e il rischio dell'utente. Ad esempio, un'azione di registrazione dei dispositivi deve sempre attivare l'autenticazione a più fattori per garantire che non siano stati aggiunti dispositivi rossi all'ambiente. 
+La strategia "Presupporre violazione" richiede l'implementazione di una strategia di rete senza attendibilità, il che significa che gli utenti non sono completamente attendibili solo perché sono interni alla rete. Nell'ambito dell'autorizzazione delle operazioni che gli utenti possono eseguire, vengono invece specificati set di condizioni e, quando tali condizioni vengono soddisfatte, vengono applicati determinati controlli. Le condizioni possono includere lo stato di integrità del dispositivo, l'accesso all'applicazione, l'esecuzione delle operazioni e il rischio dell'utente. Ad esempio, un'azione di registrazione dei dispositivi deve sempre attivare l'autenticazione a più fattori per garantire che non siano stati aggiunti dispositivi rossi all'ambiente. 
 
 Una strategia di rete zero trust richiede inoltre di sapere dove sono archiviate le informazioni e di applicare controlli appropriati per la classificazione, la protezione e la conservazione. Per proteggere in modo efficace gli asset più critici e sensibili, devi prima identificare dove si trovano e prendere l'inventario, il che può essere difficile. Successivamente, collaborare con l'organizzazione per definire una strategia di governance. La definizione di uno schema di classificazione per un'organizzazione e la configurazione di criteri, etichette e condizioni richiedono un'attenta pianificazione e preparazione. È importante tenere presente che non si tratta di un processo guidato dall'IT. Assicurarsi di collaborare con il team legale e di conformità per sviluppare uno schema di classificazione ed etichettatura appropriato per i dati dell'organizzazione.
 
@@ -116,7 +116,7 @@ Le funzionalità di protezione delle informazioni di Microsoft 365 consentono di
 
 |Consiglio |E3|E5 |
 |---------|---------|---------|
-|**Esaminare e ottimizzare l'accesso condizionale e i criteri** correlati per allinearsi agli obiettivi per una rete senza attendibilità. La protezione dalle minacce note include l'implementazione di un set di [criteri consigliati.](./office-365-security/microsoft-365-policies-configurations.md) Esamina l'implementazione di questi criteri per assicurarti di proteggere le app e i dati da hacker che hanno ottenuto l'accesso alla rete. Tieni presente che il criterio di protezione delle app intune consigliato per Windows 10 abilita Windows Information Protection (WIP). WiP protegge da perdite accidentali dei dati dell'organizzazione tramite app e servizi, come la posta elettronica, i social media e il cloud pubblico. |         |![segno di spunta verde](../media/green-check-mark.png)|
+|**Esaminare e ottimizzare l'accesso condizionale e i criteri** correlati per allinearsi agli obiettivi per una rete senza attendibilità. La protezione dalle minacce note include l'implementazione di un set di [criteri consigliati.](./office-365-security/microsoft-365-policies-configurations.md) Esamina l'implementazione di questi criteri per assicurarti di proteggere le app e i dati da hacker che hanno ottenuto l'accesso alla rete. Il criterio di protezione delle app di Intune consigliato per Windows 10 abilita Windows Information Protection (WIP). WiP protegge da perdite accidentali dei dati dell'organizzazione tramite app e servizi, come la posta elettronica, i social media e il cloud pubblico. |         |![segno di spunta verde](../media/green-check-mark.png)|
 |**Disabilitare l'inoltro esterno della posta elettronica**. Gli hacker che ottengono l'accesso alla cassetta postale di un utente possono rubare la posta impostando la cassetta postale per inoltrare automaticamente la posta elettronica. Questo può accadere anche senza la consapevolezza dell'utente. È possibile evitare questo problema configurando una regola del flusso di posta.|![segno di spunta verde](../media/green-check-mark.png) |![segno di spunta verde](../media/green-check-mark.png)|
 |**Disabilitare la condivisione di calendari esterni anonimi**. Per impostazione predefinita, la condivisione di calendari anonimi esterni è consentita. [Disabilitare la condivisione del](/exchange/sharing/sharing-policies/modify-a-sharing-policy) calendario per ridurre potenziali perdite di informazioni riservate.|![segno di spunta verde](../media/green-check-mark.png) |![segno di spunta verde](../media/green-check-mark.png)|
 |**Configurare i criteri di prevenzione della perdita dei dati per i dati sensibili**. Creare un criterio di prevenzione della perdita di dati nel Centro sicurezza e conformità per individuare e proteggere i dati sensibili, ad esempio numeri di carta di credito, numeri di previdenza sociale e numeri &amp; di conto corrente bancario. Microsoft 365 include molti tipi di informazioni riservate predefiniti che è possibile utilizzare nei criteri di prevenzione della perdita di dati. È inoltre possibile creare tipi di informazioni riservate personalizzati per l'ambiente. |![segno di spunta verde](../media/green-check-mark.png)|![segno di spunta verde](../media/green-check-mark.png)|

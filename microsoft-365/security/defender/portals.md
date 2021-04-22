@@ -1,7 +1,7 @@
 ---
 title: Portali di sicurezza Microsoft e centri di amministrazione
 description: Trovare l'interfaccia di amministrazione o il portale Microsoft giusto per la gestione di vari servizi correlati alla sicurezza di Microsoft 365
-keywords: sicurezza, portali, Microsoft 365, M365, centro sicurezza, interfaccia di amministrazione, URL, collegamento, MTP, Microsoft Defender ATP, Microsoft Defender Security Center, Azure ATP, Office 365 ATP, MCAS, WDSI, SCC, Intune, MDM, MEM, ASC, OATP, AATP, Cloud App Security, Azure AD, centro sicurezza & conformità
+keywords: sicurezza, portali, Microsoft 365, M365, centro sicurezza, interfaccia di amministrazione, URL, collegamento, Microsoft 365 Defender, Microsoft Defender for Endpoint, Microsoft Defender Security Center, Microsoft Defender for Identity, Microsoft Defender per Office 365, MCAS, WDSI, SCC, Intune, MDM, MEM, ASC, Cloud App Security, Azure AD, centro conformità & sicurezza
 ms.prod: m365-security
 ms.mktglfcycl: deploy
 localization_priority: Normal
@@ -17,12 +17,12 @@ ms.collection:
 ms.topic: article
 search.appverid: met150
 ms.technology: m365d
-ms.openlocfilehash: 66e1bfa8007a972a1963745857a25e1e255634b6
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: c304d8badd9bde11ad0f483b482628503569dc26
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51200186"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51931936"
 ---
 # <a name="microsoft-security-portals-and-admin-centers"></a>Portali di sicurezza Microsoft e centri di amministrazione
 

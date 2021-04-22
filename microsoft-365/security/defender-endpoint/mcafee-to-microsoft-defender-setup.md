@@ -1,7 +1,7 @@
 ---
 title: Da McAfee a Microsoft Defender for Endpoint - Installazione
 description: Questa è la fase 2 del programma di installazione per la migrazione da McAfee a Microsoft Defender per Endpoint.
-keywords: migrazione, windows defender advanced threat protection, atp, edr
+keywords: migrazione, Microsoft Defender for Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -22,12 +22,12 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: be39d64743979fe903193a388ce491523819f299
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: 36dc50aa66df932703e50a5d2c57afb42871e5b1
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51185612"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933086"
 ---
 # <a name="migrate-from-mcafee---phase-2-set-up-microsoft-defender-for-endpoint"></a>Eseguire la migrazione da McAfee - Fase 2: configurare Microsoft Defender per Endpoint
 
@@ -35,7 +35,7 @@ ms.locfileid: "51185612"
 - [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-|[![Fase 1: preparare](images/phase-diagrams/prepare.png)](mcafee-to-microsoft-defender-prepare.md)<br/>[Fase 1: preparare](mcafee-to-microsoft-defender-prepare.md) |![Fase 2: configurazione](images/phase-diagrams/setup.png)<br/>Fase 2: configurazione |[![Fase 3: onboard](images/phase-diagrams/onboard.png)](mcafee-to-microsoft-defender-onboard.md)<br/>[Fase 3: onboard](mcafee-to-microsoft-defender-onboard.md) |
+|[![Fase 1: preparazione](images/phase-diagrams/prepare.png)](mcafee-to-microsoft-defender-prepare.md)<br/>[Fase 1: preparazione](mcafee-to-microsoft-defender-prepare.md) |![Fase 2: configurazione](images/phase-diagrams/setup.png)<br/>Fase 2: configurazione |[![Fase 3: onboarding](images/phase-diagrams/onboard.png)](mcafee-to-microsoft-defender-onboard.md)<br/>[Fase 3: onboarding](mcafee-to-microsoft-defender-onboard.md) |
 |--|--|--|
 ||*Sei qui!* | |
 
@@ -113,7 +113,7 @@ Se si usa Windows Server 2016 e si verificano problemi nell'abilitazione di Micr
 `mpcmdrun -wdenable`
 
 > [!TIP]
-> Ulteriore assistenza Vedi [Microsoft Defender Antivirus in Windows Server 2016 e 2019.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016)
+> Serve ulteriore assistenza? Vedi [Microsoft Defender Antivirus in Windows Server 2016 e 2019.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016)
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-on-windows-server"></a>Impostare Microsoft Defender Antivirus sulla modalità passiva in Windows Server
 

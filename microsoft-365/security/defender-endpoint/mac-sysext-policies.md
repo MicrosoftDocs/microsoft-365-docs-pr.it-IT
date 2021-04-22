@@ -1,7 +1,7 @@
 ---
 title: Nuovi profili di configurazione per macOS Catalina e versioni più recenti di macOS
 description: In questo argomento vengono descritte le modifiche che devono essere apportate per trarre vantaggio dalle estensioni di sistema, che sostituggono le estensioni del kernel in macOS Catalina e le versioni più recenti di macOS.
-keywords: microsoft, defender, atp, mac, kernel, sistema, estensioni, catalina
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, kernel, sistema, estensioni, catalina
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: db24bea3bddc682eceda8e6ea3fe2749b6b2778f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: 28a332cec68521741bdda62aeecd25440552344a
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51689126"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932740"
 ---
 # <a name="new-configuration-profiles-for-macos-catalina-and-newer-versions-of-macos"></a>Nuovi profili di configurazione per macOS Catalina e versioni più recenti di macOS
 
@@ -308,7 +308,7 @@ Per distribuire questo profilo di configurazione personalizzato:
 1.  In Intune apri **Gestisci**  >  **configurazione dispositivo.** Selezionare **Gestisci**  >  **profili**  >  **Crea profilo.**
 2. Scegliere un nome per il profilo. Modificare **Platform=macOS** e **Profile type=Custom**. Selezionare **Configura**.
 3.  Apri il profilo di configurazione e carica **sysext.xml**. Questo file è stato creato nel passaggio precedente.
-4.  Selezionare **OK**.
+4.  Seleziona **OK**.
 
     ![Screenshot dell'estensione di sistema in Intune](images/mac-system-extension-intune.png)
 

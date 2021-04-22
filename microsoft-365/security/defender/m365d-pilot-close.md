@@ -1,7 +1,7 @@
 ---
 title: Riepilogo dei risultati del progetto pilota di Microsoft 365 Defender
 description: Concludere il progetto pilota di Microsoft 365 Defender completando la scorecard, analizzando i risultati dei report e decidendo come procedere.
-keywords: Pilota di Microsoft Threat Protection, decidere cosa fare dopo il progetto pilota Microsoft Threat Protection, cosa fare dopo aver valutato Microsoft Threat Protection in produzione, transizione dal progetto pilota di Microsoft Threat Protection alla distribuzione, sicurezza informatica, minaccia persistente avanzata, sicurezza aziendale, dispositivi, dispositivo, identità, utenti, dati, applicazioni, incidenti, analisi e correzione automatizzate, ricerca avanzata
+keywords: Microsoft 365 Defender pilot, decidi cosa fare dopo il progetto pilota Microsoft 365 Defender, cosa fare dopo aver valutato Microsoft 365 Defender in produzione, transizione dal progetto pilota di Microsoft 365 Defender alla distribuzione, cyber security, minaccia persistente avanzata, sicurezza aziendale, dispositivi, dispositivo, identità, utenti, dati, applicazioni, incidenti, analisi e correzione automatizzate, ricerca avanzata
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.collection:
 - m365solution-pilotmtpproject
 ms.topic: conceptual
 ms.technology: m365d
-ms.openlocfilehash: 2553e88992b7eca906b4697edee4cdf632929444
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 64cdb37b64780a651b2689e68e21c5a385df5ba9
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51068610"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932870"
 ---
 # <a name="closing-and-summarizing-your-microsoft-365-defender-pilot"></a>Chiusura e riepilogo del progetto pilota di Microsoft 365 Defender  
 

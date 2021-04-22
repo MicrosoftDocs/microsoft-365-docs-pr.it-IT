@@ -1,7 +1,7 @@
 ---
-title: Connettore di flusso di Microsoft Defender ATP
+title: Connettore Microsoft Defender for Endpoint Flow
 ms.reviewer: ''
-description: Usa il connettore di flusso di Microsoft Defender ATP per automatizzare la sicurezza e creare un flusso che verrà attivato ogni volta che si verifica un nuovo avviso nel tenant.
+description: Usa Microsoft Defender for Endpoint Flow connector per automatizzare la sicurezza e creare un flusso che verrà attivato ogni volta che si verifica un nuovo avviso nel tenant.
 keywords: flusso, api supportate, api, flusso Microsoft, query, automazione
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 6fd210ddfb8e3ab6e4f1f4ffc0635c8b813e3a07
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 33a7c7b1907ac761dfdde43a70bfb8f515235150
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51163388"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929300"
 ---
 # <a name="microsoft-power-automate-formerly-microsoft-flow-and-azure-functions"></a>Microsoft Power Automate (in precedenza Microsoft Flow) e funzioni di Azure
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 

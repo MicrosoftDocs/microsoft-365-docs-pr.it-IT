@@ -14,13 +14,13 @@ search.appverid: ''
 ms.collection:
 - M365-security-compliance
 - m365initiative-defender-office365
-description: I clienti di Microsoft Defender per Office 365 E5 e ATP P1 e ATP P2 possono ora ottenere una visualizzazione a 360 gradi di ogni messaggio di posta elettronica con la pagina entità di posta elettronica.
-ms.openlocfilehash: e96e83ce5e3af9e61599ab67ce9f91ac797cc6db
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+description: I clienti di Microsoft Defender per Office 365 E5 e P1 e P2 ora possono ottenere una visualizzazione a 360 gradi di ogni pagina di posta elettronica con entità di posta elettronica.
+ms.openlocfilehash: 8b531980852336679aad5f2013d63269c238e49c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768759"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933362"
 ---
 # <a name="the-email-entity-page"></a>Pagina Entità posta elettronica
 

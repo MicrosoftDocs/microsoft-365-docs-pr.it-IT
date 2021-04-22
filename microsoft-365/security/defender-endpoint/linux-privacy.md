@@ -1,7 +1,7 @@
 ---
 title: Privacy per Microsoft Defender per Endpoint su Linux
 description: Controlli della privacy, come configurare le impostazioni dei criteri che influiscono sulla privacy e informazioni sui dati di diagnostica raccolti in Microsoft Defender per Endpoint su Linux.
-keywords: microsoft, defender, atp, linux, privacy, diagnostica
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, privacy, diagnostica
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 69af56efa57f389842ed31afa5f0a74667bd8f7b
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: cbf68b6ce8397f0339b374a041ba2629b20db699
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903251"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51933338"
 ---
 # <a name="privacy-for-microsoft-defender-for-endpoint-on-linux"></a>Privacy per Microsoft Defender per Endpoint su Linux
 
@@ -33,13 +33,13 @@ ms.locfileid: "51903251"
 
 > Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Microsoft si impegna a fornire all'utente le informazioni e i controlli necessari per effettuare scelte sulla modalità di raccolta e utilizzo dei dati quando si usa Defender per Endpoint per Linux.
+Microsoft si impegna a fornire all'utente le informazioni e i controlli necessari per effettuare scelte sulla modalità di raccolta e utilizzo dei dati quando si usa Defender per Endpoint in Linux.
 
 In questo argomento vengono descritti i controlli della privacy disponibili all'interno del prodotto, come gestire questi controlli con le impostazioni dei criteri e altri dettagli sugli eventi dati raccolti.
 
 ## <a name="overview-of-privacy-controls-in-microsoft-defender-for-endpoint-on-linux"></a>Panoramica dei controlli della privacy in Microsoft Defender per Endpoint su Linux
 
-Questa sezione descrive i controlli della privacy per i diversi tipi di dati raccolti da Defender per Endpoint per Linux.
+Questa sezione descrive i controlli della privacy per i diversi tipi di dati raccolti da Defender per Endpoint su Linux.
 
 ### <a name="diagnostic-data"></a>Dati di diagnostica
 
@@ -75,7 +75,7 @@ Esistono tre livelli per controllare l'invio di campioni:
 
 Gli amministratori IT possono configurare questi controlli a livello aziendale. 
 
-I controlli della privacy per i vari tipi di dati descritti nella sezione precedente sono descritti in dettaglio in Impostare le preferenze per [Defender per Endpoint per Linux.](linux-preferences.md)
+I controlli della privacy per i vari tipi di dati descritti nella sezione precedente sono descritti in dettaglio in Impostare le preferenze [per Defender per Endpoint su Linux.](linux-preferences.md)
 
 Come per le nuove impostazioni dei criteri, è consigliabile testarle attentamente in un ambiente limitato e controllato per garantire che le impostazioni configurate siano effettive prima di implementare le impostazioni dei criteri in modo più ampio nell'organizzazione.
 
@@ -96,7 +96,7 @@ I campi seguenti sono considerati comuni per tutti gli eventi:
 | org_id                  | Identificatore univoco associato all'organizzazione a cui appartiene il dispositivo. Consente a Microsoft di identificare se i problemi influiscono su un set selezionato di aziende e su quante aziende sono influenzate. |
 | hostname                | Nome del dispositivo locale (senza suffisso DNS). Consente a Microsoft di identificare se i problemi influiscono su un set selezionato di installazioni e sul numero di utenti che ne sono influenzati. |
 | product_guid            | Identificatore univoco del prodotto. Consente a Microsoft di distinguere i problemi che influiscono sulle diverse versioni del prodotto. |
-| app_version             | Versione dell'applicazione Defender for Endpoint per Linux. Consente a Microsoft di identificare le versioni del prodotto che mostrano un problema in modo che possa essere correttamente classificata in ordine di priorità.|
+| app_version             | Versione dell'applicazione Defender for Endpoint in Linux. Consente a Microsoft di identificare le versioni del prodotto che mostrano un problema in modo che possa essere correttamente classificata in ordine di priorità.|
 | sig_version             | Versione del database di intelligence per la sicurezza. Consente a Microsoft di identificare le versioni dell'intelligence per la sicurezza che mostrano un problema in modo che possa essere assegnata correttamente la priorità. |
 | supported_compressions  | Elenco degli algoritmi di compressione supportati dall'applicazione, ad esempio `['gzip']` . Consente a Microsoft di comprendere quali tipi di compressione possono essere utilizzati quando comunica con l'applicazione. |
 | release_ring            | Anello a cui è associato il dispositivo (ad esempio Insider Fast, Insider Slow, Production). Consente a Microsoft di identificare in quale anello di rilascio potrebbe verificarsi un problema in modo che possa essere assegnata correttamente la priorità. |
@@ -163,7 +163,7 @@ Vengono raccolti i campi seguenti:
 
 | Campo            | Descrizione |
 | ---------------- | ----------- |
-| Versione          | Versione di Defender per Endpoint per Linux. |
+| Versione          | Versione di Defender per Endpoint su Linux. |
 | instance_id      | Identificatore univoco generato all'avvio dell'estensione del kernel. |
 | trace_level      | Livello di traccia dell'estensione del kernel. |
 | sottosistema        | Sottosistema sottostante utilizzato per la protezione in tempo reale. |
@@ -178,7 +178,7 @@ Vengono raccolti i campi seguenti:
 I log di diagnostica vengono raccolti solo con il consenso dell'utente come parte della funzionalità di invio del feedback. I file seguenti vengono raccolti come parte dei registri di supporto:
 
 - Tutti i file in */var/log/microsoft/mdatp*
-- Sottoinsieme di file in */etc/opt/microsoft/mdatp* creati e usati da Defender per Endpoint per Linux
+- Sottoinsieme di file in */etc/opt/microsoft/mdatp* creati e usati da Defender per Endpoint su Linux
 - Log di installazione e disinstallazione del prodotto in */var/log/microsoft_mdatp_ \* .log*
 
 ### <a name="optional-diagnostic-data"></a>Dati di diagnostica facoltativi

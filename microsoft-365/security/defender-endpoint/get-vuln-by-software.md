@@ -1,7 +1,7 @@
 ---
-title: Elencare le vulnerabilità in base al software
+title: Elencare le vulnerabilità per software
 description: Recuperare un elenco di vulnerabilità nel software installato.
-keywords: api, api del grafico, api supportate, get, elenco delle vulnerabilità, api mdatp tvm
+keywords: api, api del grafico, api supportate, get, elenco delle vulnerabilità, Api di Microsoft Defender per Endpoint tvm
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -15,19 +15,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 8f05c1a67c845e7f88cbcb3ee88cf7a664d5a4bf
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: c28417d9782d14d890e771ed401f8ee5d3c26bc0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51167210"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932764"
 ---
-# <a name="list-vulnerabilities-by-software"></a>Elencare le vulnerabilità in base al software
+# <a name="list-vulnerabilities-by-software"></a>Elencare le vulnerabilità per software
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 > Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink) 

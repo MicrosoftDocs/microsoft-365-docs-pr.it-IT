@@ -1,7 +1,7 @@
 ---
 title: Onboard dei server Windows nel servizio Microsoft Defender for Endpoint
 description: Onboard dei server Windows in modo che possano inviare i dati del sensore al sensore Microsoft Defender for Endpoint.
-keywords: onboarding di server, server, 2012r2, 2016, 2019, onboarding del server, gestione dei dispositivi, configurare i server Windows ATP, eseguire l'onboarding di Microsoft Defender per i server endpoint, eseguire l'onboarding di Microsoft Defender per i server endpoint
+keywords: onboarding di server, server, 2012r2, 2016, 2019, onboarding del server, gestione dei dispositivi, configurare Microsoft Defender per i server endpoint, eseguire l'onboarding di Microsoft Defender per i server endpoint, eseguire l'onboarding di Microsoft Defender per i server endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: f2660f19d4b6b0d5f8e2dbf48843002a2bfb7f1d
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 4eea2931196c192620812c1609c506e1fb99093d
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51769055"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932954"
 ---
 # <a name="onboard-windows-servers-to-the-microsoft-defender-for-endpoint-service"></a>Onboard dei server Windows nel servizio Microsoft Defender for Endpoint
 
@@ -55,7 +55,7 @@ Per indicazioni su come scaricare e usare Le linee di base della sicurezza di Wi
 Dopo aver completato i passaggi di onboarding usando una delle opzioni fornite, è necessario configurare e aggiornare i client [di System Center Endpoint Protection.](#configure-and-update-system-center-endpoint-protection-clients)
 
 > [!NOTE]
-> Defender for Endpoint è necessaria una licenza server autonoma per nodo per eseguire l'onboardboard di un server Windows tramite Microsoft Monitoring Agent (opzione 1) o Tramite Microsoft Endpoint Manager (opzione 3). In alternativa, è necessaria una licenza di Azure Defender for Servers, per nodo, per eseguire l'onboardboard di un server Windows tramite Il Centro sicurezza Di Azure (opzione 2), vedere Funzionalità supportate disponibili nel Centro sicurezza di [Azure.](https://docs.microsoft.com/azure/security-center/security-center-services)
+> Defender for Endpoint è necessaria una licenza server autonoma per nodo per eseguire l'onboardboard di un server Windows tramite Microsoft Monitoring Agent (opzione 1) o Tramite Microsoft Endpoint Manager (opzione 3). In alternativa, è necessaria una licenza di Azure Defender for Servers, per nodo, per eseguire l'onboardboard di un server Windows tramite Il Centro sicurezza Di Azure (opzione 2), vedere Funzionalità supportate disponibili [in Azure Defender.](https://docs.microsoft.com/azure/security-center/security-center-services)
 
 ### <a name="option-1-onboard-by-installing-and-configuring-microsoft-monitoring-agent-mma"></a>Opzione 1: eseguire l'onboarding installando e configurando Microsoft Monitoring Agent (MMA)
 
@@ -127,13 +127,13 @@ Al termine, nel portale dovrebbero essere visualizzati i server Windows onboarde
 
 3. Fare **clic su Onboard Servers nel Centro sicurezza di Azure.**
 
-4. Seguire le istruzioni di onboarding in [Microsoft Defender for Endpoint con Azure Security Center](https://docs.microsoft.com/azure/security-center/security-center-wdatp) e Se si usa Azure ARC, seguire le istruzioni di onboarding in Enabling the Microsoft Defender for Endpoint [integration](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration).
+4. Seguire le istruzioni di onboarding in [Microsoft Defender for Endpoint con Azure Defender](https://docs.microsoft.com/azure/security-center/security-center-wdatp) e Se si usa Azure ARC, seguire le istruzioni di onboarding in Enabling the Microsoft Defender for Endpoint [integration](https://docs.microsoft.com/azure/security-center/security-center-wdatp#enabling-the-microsoft-defender-for-endpoint-integration).
 
 Dopo aver completato i passaggi di onboarding, è necessario configurare e aggiornare i client [di System Center Endpoint Protection.](#configure-and-update-system-center-endpoint-protection-clients)
 
 > [!NOTE]
 >
-> - Perché l'onboarding tramite Azure Defender for Servers (in precedenza Azure Security Center Standard Edition) funzioni come previsto, il server deve avere un'area di lavoro e una chiave appropriate configurate nelle impostazioni di Microsoft Monitoring Agent (MMA).
+> - Perché l'onboarding tramite Azure Defender for Servers funzioni come previsto, il server deve avere un'area di lavoro e una chiave appropriate configurate nelle impostazioni di Microsoft Monitoring Agent (MMA).
 > - Una volta configurato, il Management Pack cloud appropriato viene distribuito nel computer e il processo del sensore (MsSenseS.exe) verrà distribuito e avviato.
 > - Questa operazione è necessaria anche se il server è configurato per l'utilizzo di un server gateway OMS come proxy.
 
@@ -188,26 +188,25 @@ Il supporto per Windows Server fornisce informazioni più approfondite sulle att
 
     Per informazioni su come usare Criteri di gruppo per configurare e gestire Microsoft Defender Antivirus nei server Windows, vedere Usare le impostazioni di Criteri di gruppo per configurare e gestire [Microsoft Defender Antivirus.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/use-group-policy-microsoft-defender-antivirus)
 
-## <a name="integration-with-azure-security-center"></a>Integrazione con il Centro sicurezza di Azure
+## <a name="integration-with-azure-defender"></a>Integrazione con Azure Defender
 
-Defender for Endpoint può integrarsi con Il Centro sicurezza Di Azure per fornire una soluzione completa di protezione dei server Windows. Con questa integrazione, Il Centro sicurezza di Azure può usare la potenza di Defender for Endpoint per fornire un rilevamento delle minacce migliorato per i server Windows.
+Defender for Endpoint può integrarsi con Azure Defender per fornire una soluzione completa di protezione dei server Windows. Con questa integrazione, Azure Defender può usare la potenza di Defender for Endpoint per fornire un rilevamento delle minacce migliorato per Windows Server.
 
 In questa integrazione sono incluse le funzionalità seguenti:
 
-- Onboarding automatico: il sensore Defender for Endpoint viene abilitato automaticamente nei server Windows onboarding nel Centro sicurezza Di Azure. Per ulteriori informazioni sull'onboarding del Centro sicurezza di Azure, vedere [Onboarding to Azure Security Center Standard for enhanced security](https://docs.microsoft.com/azure/security-center/security-center-onboarding).
+- Onboarding automatico: il sensore Defender for Endpoint viene abilitato automaticamente nei server Windows onboarding in Azure Defender. Per altre informazioni sull'onboarding di Azure Defender, vedi [Onboarding in Azure Defender Standard per la sicurezza avanzata.](https://docs.microsoft.com/azure/security-center/security-center-onboarding)
 
     > [!NOTE]
     > L'integrazione tra Azure Defender for Servers e Microsoft Defender for Endpoint è stata estesa per supportare [Windows Server 2019 e Windows Virtual Desktop (WVD).](https://docs.microsoft.com/azure/security-center/release-notes#microsoft-defender-for-endpoint-integration-with-azure-defender-now-supports-windows-server-2019-and-windows-10-virtual-desktop-wvd-in-preview)
 
-- I server Windows monitorati dal Centro sicurezza di Azure saranno disponibili anche in Defender for Endpoint: Azure Security Center si connette senza problemi al tenant Defender for Endpoint, offrendo una singola visualizzazione tra client e server.  Inoltre, gli avvisi di Defender for Endpoint saranno disponibili nella console del Centro sicurezza Di Azure.
-- Indagine server: i clienti del Centro sicurezza Di Azure possono accedere a Microsoft Defender Security Center per eseguire indagini dettagliate per scoprire l'ambito di una potenziale violazione.
+- I server Windows monitorati da Azure Defender saranno disponibili anche in Defender for Endpoint: Azure Defender si connette senza problemi al tenant Defender for Endpoint, offrendo una singola visualizzazione tra client e server.  Inoltre, gli avvisi defender per endpoint saranno disponibili nella console di Azure Defender.
+- Indagine server: i clienti di Azure Defender possono accedere a Microsoft Defender Security Center per eseguire un'indagine dettagliata per scoprire l'ambito di una potenziale violazione.
 
 > [!IMPORTANT]
->
-> - Quando si utilizza il Centro sicurezza di Azure per monitorare i server, viene creato automaticamente un tenant Defender for Endpoint (negli Stati Uniti per gli utenti statunitensi, nell'UE per gli utenti europei e del Regno Unito).
+> - Quando usi Azure Defender per monitorare i server, viene creato automaticamente un tenant defender per endpoint (negli Stati Uniti per gli utenti statunitensi, nell'UE per gli utenti europei e del Regno Unito).<br>
 I dati raccolti da Defender per Endpoint vengono archiviati nella posizione geografica del tenant come identificato durante il provisioning.
-> - Se usi Defender per Endpoint prima di usare Il Centro sicurezza di Azure, i dati verranno archiviati nella posizione specificata al momento della creazione del tenant anche se ti integri con Il Centro sicurezza Di Azure in un secondo momento.
-> - Dopo la configurazione, non è possibile modificare la posizione in cui sono archiviati i dati. Se è necessario spostare i dati in un'altra posizione, è necessario contattare il supporto tecnico Microsoft per reimpostare il tenant.
+> - Se usi Defender per Endpoint prima di usare Azure Defender, i dati verranno archiviati nella posizione specificata al momento della creazione del tenant anche se ti integri con Azure Defender in un secondo momento.
+> - Dopo la configurazione, non è possibile modificare la posizione in cui sono archiviati i dati. Se è necessario spostare i dati in un'altra posizione, è necessario contattare il supporto tecnico Microsoft per reimpostare il tenant. <br>
 Il monitoraggio degli endpoint del server che utilizza questa integrazione è stato disabilitato per i clienti di Office 365 GCC.
 
 ## <a name="configure-and-update-system-center-endpoint-protection-clients"></a>Configurare e aggiornare i client di System Center Endpoint Protection

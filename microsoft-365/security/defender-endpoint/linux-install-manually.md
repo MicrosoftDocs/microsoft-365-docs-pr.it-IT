@@ -2,7 +2,7 @@
 title: Distribuire manualmente Microsoft Defender per Endpoint su Linux
 ms.reviewer: ''
 description: Descrive come distribuire Manualmente Microsoft Defender for Endpoint su Linux dalla riga di comando.
-keywords: microsoft, defender, atp, linux, installazione, distribuire, disinstallazione, pupazzo, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installazione, distribuire, disinstallazione, pupazzo, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 2beb46c62de2e9720d1626e0e1e5ce806a6d7e19
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 0374c1a44a4d942ea631d97f51fa48df15d3ec13
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903917"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51929086"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-manually"></a>Distribuire manualmente Microsoft Defender per Endpoint su Linux
 
@@ -58,7 +58,7 @@ Prima di iniziare, vedi [Microsoft Defender for Endpoint on Linux](microsoft-def
 
 ## <a name="configure-the-linux-software-repository"></a>Configurare l'archivio software Linux
 
-Defender per Endpoint per Linux può essere distribuito da uno dei seguenti canali (indicato di seguito come *[canale]*): *insiders-fast,* *insiders-slow* o *prod*. Ognuno di questi canali corrisponde a un archivio software Linux. Le istruzioni per configurare il dispositivo per l'uso di uno di questi archivi sono disponibili di seguito.
+Defender per Endpoint su Linux può essere distribuito da uno dei seguenti canali (indicato di seguito come *[canale]*): *insiders-fast,* *insiders-slow* o *prod*. Ognuno di questi canali corrisponde a un archivio software Linux. Le istruzioni per configurare il dispositivo per l'uso di uno di questi archivi sono disponibili di seguito.
 
 La scelta del canale determina il tipo e la frequenza degli aggiornamenti offerti al dispositivo. I dispositivi *in Insiders-fast* sono i primi a ricevere aggiornamenti e nuove funzionalità, seguiti successivamente da *insider lenti* e infine *da prod*.
 
@@ -86,7 +86,7 @@ Per visualizzare in anteprima le nuove funzionalità e fornire feedback anticipa
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/[distro]/[version]/[channel].repo
     ```
 
-    Ad esempio, se si esegue CentOS 7 e si desidera distribuire Defender per Endpoint per Linux dal *canale prod:*
+    Ad esempio, se si esegue CentOS 7 e si desidera distribuire Defender for Endpoint su Linux dal *canale prod:*
 
     ```bash
     sudo yum-config-manager --add-repo=https://packages.microsoft.com/config/centos/7/prod.repo
@@ -328,7 +328,7 @@ Scaricare il pacchetto di onboarding da Microsoft Defender Security Center:
     > ```bash
     > mdatp health --field definitions_status
     > ```
-    > Tenere presente che potrebbe essere necessario configurare un proxy anche dopo aver completato l'installazione iniziale. Vedi [Configurare Defender per Endpoint per Linux per l'individuazione di proxy statici: configurazione post-installazione.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration)
+    > Tenere presente che potrebbe essere necessario configurare un proxy anche dopo aver completato l'installazione iniziale. Vedi [Configurare Defender per Endpoint su Linux per l'individuazione di proxy statici: configurazione post-installazione.](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/linux-static-proxy-configuration#post-installation-configuration)
 
 5. Eseguire un test di rilevamento per verificare che il dispositivo sia correttamente onboarded e che il servizio sia segnalato. Eseguire la procedura seguente nel dispositivo appena onboarded:
 
@@ -344,7 +344,7 @@ Scaricare il pacchetto di onboarding da Microsoft Defender Security Center:
         curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
-    - Il file dovrebbe essere stato messo in quarantena da Defender per Endpoint per Linux. Utilizzare il comando seguente per elencare tutte le minacce rilevate:
+    - Il file dovrebbe essere stato messo in quarantena da Defender per Endpoint su Linux. Utilizzare il comando seguente per elencare tutte le minacce rilevate:
 
         ```bash
         mdatp threat list
@@ -381,7 +381,7 @@ Vedere [Registrare i problemi](linux-resources.md#log-installation-issues) di in
 
 ## <a name="operating-system-upgrades"></a>Aggiornamenti del sistema operativo
 
-Durante l'aggiornamento del sistema operativo a una nuova versione principale, devi prima disinstallare Defender per Endpoint per Linux, installare l'aggiornamento e infine riconfigurare Defender per Endpoint per Linux nel dispositivo.
+Durante l'aggiornamento del sistema operativo a una nuova versione principale, devi prima disinstallare Defender per Endpoint in Linux, installare l'aggiornamento e infine riconfigurare Defender per Endpoint su Linux nel dispositivo.
 
 ## <a name="how-to-migrate-from-insiders-fast-to-production-channel"></a>Come eseguire la migrazione da Insiders-Fast al canale di produzione
 
@@ -406,4 +406,4 @@ Durante l'aggiornamento del sistema operativo a una nuova versione principale, d
 
 ## <a name="uninstallation"></a>Disinstallazione
 
-Vedi [Disinstallare](linux-resources.md#uninstall) per informazioni dettagliate su come rimuovere Defender per Endpoint per Linux dai dispositivi client.
+Vedi [Disinstallare](linux-resources.md#uninstall) per informazioni dettagliate su come rimuovere Defender per Endpoint su Linux dai dispositivi client.

@@ -1,7 +1,7 @@
 ---
 title: Tabella DeviceNetworkEvents nello schema di ricerca avanzata
 description: Informazioni sugli eventi di connessione di rete su cui è possibile eseguire query dalla tabella DeviceNetworkEvents dello schema di ricerca avanzata
-keywords: ricerca avanzata, ricerca delle minacce, ricerca di minacce informatiche, Microsoft Threat Protection, Microsoft 365, mtp, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, devicenetworkevents, NetworkCommunicationEvents, connessione di rete, ip remoto, ip locale
+keywords: ricerca avanzata, ricerca delle minacce, ricerca di minacce informatiche, Microsoft 365 Defender, Microsoft 365, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, devicenetworkevents, NetworkCommunicationEvents, connessione di rete, ip remoto, ip locale
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 64b6a1ea80bdb37a6fc4477cd18946bd23f8bfb4
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 38cc354429649d1380a3a823e53054267f4b869d
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498518"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51932572"
 ---
 # <a name="devicenetworkevents"></a>DeviceNetworkEvents
 
