@@ -1,7 +1,7 @@
 ---
 title: Sistemi operativi e piattaforme supportati per la gestione di minacce e vulnerabilità
 description: Assicurati di soddisfare i requisiti del sistema operativo o della piattaforma per la gestione delle minacce e delle vulnerabilità, in modo che le attività in tutti i dispositivi siano adeguatamente rappresentate.
-keywords: gestione & delle vulnerabilità, gestione delle minacce e delle vulnerabilità, sistema operativo, requisiti della piattaforma, prerequisiti, mdatp-tvm supportato os, mdatp-tvm,
+keywords: gestione delle & delle minacce, gestione delle minacce e delle vulnerabilità, sistema operativo, requisiti della piattaforma, prerequisiti, Microsoft Defender for Endpoint-tvm supported os, Microsoft Defender for Endpoint-tvm,
 search.appverid: met150
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: fd778b66e85507d5e6d91ed786b16454a5c0fc8f
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 55322d238839d347882ec1d74b767c68fd2be2b3
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51500436"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935522"
 ---
 # <a name="supported-operating-systems-and-platforms---threat-and-vulnerability-management"></a>Sistemi operativi e piattaforme supportati - gestione delle minacce e delle vulnerabilità
 

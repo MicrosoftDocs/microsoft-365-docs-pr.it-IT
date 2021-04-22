@@ -1,7 +1,7 @@
 ---
 title: Preparare l'ambiente lab di valutazione di Microsoft 365 Defender
 description: Preparare l'approvazione delle parti interessate, le tempistiche, le considerazioni sull'ambiente e l'ordine di adozione durante la configurazione del lab di valutazione o dell'ambiente pilota di Microsoft 365 Defender
-keywords: Preparazione di prova MTP, preparazione pilota MTP, preparazione per l'esecuzione di un progetto pilota MTP, esecuzione di un progetto pilota MTP, distribuzione, preparazione, parti interessate, sequenza temporale, ambiente, endpoint, server, gestione, adozione
+keywords: Preparazione della versione di valutazione di Microsoft 365 Defender, preparazione pilota di Microsoft 365 Defender, preparazione per l'esecuzione di un progetto pilota di Microsoft 365 Defender, esecuzione di un progetto pilota di Microsoft 365 Defender, distribuzione, preparazione, parti interessate, sequenza temporale, ambiente, endpoint, server, gestione, adozione
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 - m365solution-evalutatemtp
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: dada110faca71c9e8fcf384eb5bb0a78faefaad9
-ms.sourcegitcommit: dcb97fbfdae52960ae62b6faa707a05358193ed5
+ms.openlocfilehash: d5e98cead84c0be76ca252b23f3c2d062b22dd73
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51199138"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935618"
 ---
 # <a name="prepare-your-microsoft-365-defender-trial-lab-or-pilot-environment"></a>Preparare il laboratorio di valutazione o l'ambiente pilota di Microsoft 365 Defender
 
@@ -36,7 +36,7 @@ ms.locfileid: "51199138"
 
 La creazione di un laboratorio di valutazione o di un ambiente pilota di Microsoft 365 Defender e la distribuzione è un processo in tre fasi:
 
-|![Fase 1: preparare](../../media/phase-diagrams/prepare.png)<br/>Fase 1: preparare |[![Fase 2: configurazione](../../media/phase-diagrams/setup.png)](setup-m365deval.md)<br/>[Fase 2: configurazione](setup-m365deval.md) |[![Fase 3: onboard](../../media/phase-diagrams/onboard.png)](config-m365d-eval.md)<br/>[Fase 3: onboard](config-m365d-eval.md) | [![Torna al progetto pilota](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[Torna al playbook pilota](m365d-pilot.md) |
+|![Fase 1: preparazione](../../media/phase-diagrams/prepare.png)<br/>Fase 1: preparazione |[![Fase 2: configurazione](../../media/phase-diagrams/setup.png)](setup-m365deval.md)<br/>[Fase 2: configurazione](setup-m365deval.md) |[![Phase 3: onboarding](../../media/phase-diagrams/onboard.png)](config-m365d-eval.md)<br/>[Fase 3: onboarding](config-m365d-eval.md) | [![Torna al progetto pilota](../../media/phase-diagrams/backtopilot.png)](m365d-pilot.md)<br/>[Torna al playbook pilota](m365d-pilot.md) |
 |--|--|--|--|
 |*Sei qui!* | || |
 
@@ -106,10 +106,10 @@ La tabella seguente indica l'ordine consigliato da Microsoft per la configurazio
 | Componente                               | Descrizione                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Classificazione dell'ordine di configurazione |
 |-----------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------|
 |Microsoft Defender per Office 365|Microsoft Defender per Office 365 protegge l'organizzazione dalle minacce dannose rappresentate da messaggi di posta elettronica, collegamenti (URL) e strumenti di collaborazione. <br> [Ulteriori informazioni.](/microsoft-365/security/office-365-security/defender-for-office-365)                                                                                                                                                                                                                                             | 1                   |
-|Microsoft Defender per identità|Microsoft Defender for Identity usa i segnali di Active Directory per identificare, rilevare e analizzare minacce avanzate, identità compromesse e azioni insider dannose indirizzate all'organizzazione. <br> [Altre informazioni](/azure-advanced-threat-protection/).| 2  |
-|Microsoft Cloud App Security| Microsoft Cloud App Security è un Cloud Access Security Broker (CASB) che opera su più cloud. Offre una visibilità completa, un controllo sui trasferimenti di dati e analisi sofisticate per identificare e combattere le minacce informatiche in tutti i servizi cloud. <br> [Altre informazioni](/cloud-app-security/).                                                                                                                                                                                                                                                                                                                                                                       |3                    |
+|Microsoft Defender per identità|Microsoft Defender for Identity usa i segnali di Active Directory per identificare, rilevare e analizzare minacce avanzate, identità compromesse e azioni insider dannose indirizzate all'organizzazione. <br> [Altre informazioni](/azure-advanced-threat-protection/).| 2 |
+|Microsoft Cloud App Security| Microsoft Cloud App Security è un Cloud Access Security Broker (CASB) che opera su più cloud. Offre una visibilità completa, un controllo sui trasferimenti di dati e analisi sofisticate per identificare e combattere le minacce informatiche in tutti i servizi cloud. <br> [Altre informazioni](/cloud-app-security/).                                                                                                                                                                                                                                                                                                                                                                       |3                   |
 |Microsoft Defender per endpoint | Le funzionalità di rilevamento e di risposta degli endpoint disponibili in Microsoft Defender per endpoint forniscono il rilevamento di attacchi avanzati quasi in tempo reale. I responsabili della sicurezza possono assegnare priorità agli avvisi in modo efficace, ottenere una visibilità completa su una violazione e adottare azioni di risposta per correggere le minacce. <br> [Ulteriori informazioni.](/windows/security/threat-protection/microsoft-defender-atp/microsoft-defender-advanced-threat-protection)                                     |4                    |                                                                                                                                                                                                                                    
 
 ## <a name="next-step"></a>Passaggio successivo
-|![Fase 2: installazione](../../media/setup.png) <br>[Fase 2: installazione](setup-m365deval.md) | Configurare il laboratorio di valutazione o l'ambiente pilota di Microsoft 365 Defender
+|![Fase 2: configurazione](../../media/setup.png) <br>[Fase 2: configurazione](setup-m365deval.md) | Configurare il laboratorio di valutazione o l'ambiente pilota di Microsoft 365 Defender
 |:-------|:-----|

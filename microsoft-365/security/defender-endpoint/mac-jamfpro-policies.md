@@ -1,7 +1,7 @@
 ---
-title: Configurare i criteri di Microsoft Defender for Endpoint per macOS in Jamf Pro
-description: Scopri come configurare i criteri di Microsoft Defender Endpoint per macOS in Jamf Pro
-keywords: criteri, microsoft, defender, atp, mac, installazione, distribuire, disinstallazione, intune, jamfpro, macos, catalina, mojave, high sierra
+title: Configurare i criteri di Microsoft Defender for Endpoint su macOS in Jamf Pro
+description: Informazioni su come configurare i criteri di Microsoft Defender for Endpoint su macOS in Jamf Pro
+keywords: criteri, microsoft, defender, Microsoft Defender for Endpoint, mac, installazione, distribuzione, disinstallazione, intune, jamfpro, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1a00d1c0863db7f4f5f853312f202b5e985b1512
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: 84d0b37632dc23615a37bbbd73c17fe509dedae5
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51862272"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934682"
 ---
 # <a name="set-up-the-microsoft-defender-for-endpoint-on-macos-policies-in-jamf-pro"></a>Configurare i criteri di Microsoft Defender for Endpoint su macOS in Jamf Pro
 
@@ -772,7 +772,7 @@ Segui le istruzioni su [Pianifica analisi con Microsoft Defender for Endpoint in
 
 7. Seleziona **Apri**. Imposta il **nome visualizzato su** Microsoft Defender Advanced Threat Protection e Microsoft Defender **Antivirus.**
 
-    **File manifesto** non obbligatorio. Microsoft Defender Advanced Threat Protection funziona senza file manifesto.
+    **File manifesto** non obbligatorio. Microsoft Defender for Endpoint funziona senza file manifesto.
     
     **Scheda Opzioni**<br> Mantenere i valori predefiniti.
 

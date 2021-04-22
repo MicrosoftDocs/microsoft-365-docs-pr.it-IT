@@ -1,7 +1,7 @@
 ---
 title: Analizzare un account utente in Microsoft Defender for Endpoint
 description: Analizzare un account utente per individuare potenziali credenziali compromesse o eseguire il pivot sull'account utente associato durante un'indagine.
-keywords: analizzare, account, utente, entità utente, avviso, microsoft defender atp
+keywords: analizzare, account, utente, entità utente, avviso, Microsoft Defender per endpoint
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: article
 ms.date: 04/24/2018
 ms.technology: mde
-ms.openlocfilehash: 672867d107d005004201caab7d6497ceb048ac97
-ms.sourcegitcommit: 987f70e44e406ab6b1dd35f336a9d0c228032794
+ms.openlocfilehash: e98142e4076c5e695f16eb06c062bc69d3d7dd55
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/05/2021
-ms.locfileid: "51587708"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935066"
 ---
 # <a name="investigate-a-user-account-in-microsoft-defender-for-endpoint"></a>Analizzare un account utente in Microsoft Defender for Endpoint
 
@@ -51,7 +51,7 @@ In queste visualizzazioni è disponibile un collegamento all'account utente sele
 
 Quando si analizza un'entità account utente, viene visualizzato:
 
-- Dettagli dell'account utente, avvisi di Azure Advanced Threat Protection (Azure ATP) e dispositivi connessi, ruolo, tipo di accesso e altri dettagli
+- Dettagli dell'account utente, avvisi di Microsoft Defender per l'identità e dispositivi connessi, ruolo, tipo di accesso e altri dettagli
 - Panoramica degli eventi imprevisti e dei dispositivi dell'utente
 - Avvisi correlati a questo utente
 - Osservato nell'organizzazione (dispositivi connessi a)
@@ -60,10 +60,10 @@ Quando si analizza un'entità account utente, viene visualizzato:
 
 ### <a name="user-details"></a>Dettagli utente
 
-Il  riquadro Dettagli utente a sinistra fornisce informazioni sull'utente, ad esempio eventi imprevisti aperti correlati, avvisi attivi, nome SAM, SID, avvisi di Azure ATP, numero di dispositivi a cui l'utente è connesso, quando l'utente è stato visto per primo e per ultimo, ruolo e tipi di accesso. A seconda delle funzionalità di integrazione abilitate, verranno visualizzati altri dettagli. Ad esempio, se abiliti l'integrazione di Skype for business, potrai contattare l'utente dal portale. La sezione Avvisi di **Azure ATP** contiene un collegamento che consente di accedere alla pagina di Azure ATP, se è stata abilitata la funzionalità Azure ATP e sono presenti avvisi correlati all'utente. La pagina di Azure ATP fornirà ulteriori informazioni sugli avvisi.
+Il  riquadro Dettagli utente a sinistra fornisce informazioni sull'utente, ad esempio eventi imprevisti aperti correlati, avvisi attivi, nome SAM, SID, avvisi di Microsoft Defender per l'identità, numero di dispositivi a cui l'utente è connesso, quando l'utente è stato visto per primo e per ultimo, ruolo e tipi di accesso. A seconda delle funzionalità di integrazione abilitate, verranno visualizzati altri dettagli. Ad esempio, se abiliti l'integrazione di Skype for business, potrai contattare l'utente dal portale. La sezione Avvisi di **Azure ATP** contiene un collegamento che consente di accedere alla pagina Microsoft Defender for Identity, se è stata abilitata la funzionalità Microsoft Defender for Identity e sono presenti avvisi correlati all'utente. La pagina Microsoft Defender for Identity fornirà ulteriori informazioni sugli avvisi.
 
 >[!NOTE]
->Dovrai abilitare l'integrazione sia in Azure ATP che in Defender for Endpoint per usare questa funzionalità. In Defender for Endpoint puoi abilitare questa funzionalità nelle funzionalità avanzate. Per ulteriori informazioni su come abilitare le funzionalità avanzate, vedere [Attivare le funzionalità avanzate.](advanced-features.md)
+>Dovrai abilitare l'integrazione sia in Microsoft Defender for Identity che in Defender for Endpoint per usare questa funzionalità. In Defender for Endpoint puoi abilitare questa funzionalità nelle funzionalità avanzate. Per ulteriori informazioni su come abilitare le funzionalità avanzate, vedere [Attivare le funzionalità avanzate.](advanced-features.md)
 
 Le schede Panoramica, Avvisi e Osservati nell'organizzazione sono schede diverse che visualizzano vari attributi relativi all'account utente.
 

@@ -1,7 +1,7 @@
 ---
-title: Microsoft Defender per Endpoint per Mac - Estensioni di sistema (anteprima)
-description: Questo articolo contiene istruzioni per provare la funzionalità delle estensioni di sistema di Microsoft Defender per Endpoint per Mac. Questa funzionalità è attualmente in anteprima pubblica.
-keywords: microsoft, defender, atp, mac, kernel, sistema, estensioni, catalina
+title: Microsoft Defender per Endpoint su Mac - Estensioni di sistema (anteprima)
+description: Questo articolo contiene istruzioni per provare le funzionalità delle estensioni di sistema di Microsoft Defender per Endpoint su Mac. Questa funzionalità è attualmente in anteprima pubblica.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, kernel, sistema, estensioni, catalina
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 ms.topic: conceptual
 ROBOTS: noindex,nofollow
 ms.technology: mde
-ms.openlocfilehash: 0b593aa0046a28e558523c2f3ebc7da9976f62d3
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: cc148bcc0b2623eaaa8d31ef50708174264fa3b2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51860328"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934946"
 ---
 # <a name="microsoft-defender-for-endpoint-on-macos---system-extensions-public-preview"></a>Microsoft Defender for Endpoint su macOS - anteprima pubblica delle estensioni di sistema)
 
@@ -34,7 +34,7 @@ ms.locfileid: "51860328"
 
 > Vuoi provare Microsoft Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-exposedapis-abovefoldlink)
 
-In linea con l'evoluzione di macOS, stiamo preparando un aggiornamento defender per Endpoint per Mac che sfrutta le estensioni di sistema anziché le estensioni del kernel. Questo aggiornamento si applica solo a macOS Catalina (10.15.4) e alle versioni successive di macOS.
+In linea con l'evoluzione di macOS, stiamo preparando un aggiornamento di Defender per Endpoint su Mac che sfrutta le estensioni di sistema anziché le estensioni del kernel. Questo aggiornamento si applica solo a macOS Catalina (10.15.4) e alle versioni successive di macOS.
 
 Questa funzionalità è attualmente in anteprima pubblica. Questo articolo descrive come abilitare questa funzionalità nel dispositivo. Puoi provare questa funzionalità localmente nel tuo dispositivo o configurarla in remoto tramite uno strumento di gestione.
 
@@ -62,7 +62,7 @@ Questi passaggi presuppongono che Defender for Endpoint sia già in esecuzione n
   defaults write com.microsoft.autoupdate2 ChannelName -string Beta
   ```
 
-  In alternativa, se si è in un ambiente gestito (JAMF o Intune), è possibile configurare il canale di aggiornamento in remoto. Per altre informazioni, vedi [Distribuire gli aggiornamenti per Microsoft Defender per Endpoint per Mac: impostare il nome del canale.](mac-updates.md#set-the-channel-name)
+  In alternativa, se si è in un ambiente gestito (JAMF o Intune), è possibile configurare il canale di aggiornamento in remoto. Per altre informazioni, vedi [Distribuire gli aggiornamenti per Microsoft Defender per Endpoint su Mac: impostare il nome del canale.](mac-updates.md#set-the-channel-name)
 
 ## <a name="deployment-steps"></a>Fasi di distribuzione
 
@@ -74,7 +74,7 @@ Seguire i passaggi di distribuzione corrispondenti all'ambiente e al metodo pref
 
 1. Dopo aver soddisfatto tutti i prerequisiti di distribuzione, riavvia il dispositivo per avviare il processo di approvazione e attivazione dell'estensione di sistema.
 
-   Vedrai una serie di istruzioni di sistema per approvare le estensioni di sistema di Defender for Endpoint. Devi **approvare tutti** i prompt della serie, perché macOS richiede un'approvazione esplicita per ogni estensione che Defender per Endpoint per Mac installa nel dispositivo.
+   Vedrai una serie di istruzioni di sistema per approvare le estensioni di sistema di Defender for Endpoint. Devi approvare **tutti** i prompt della serie, perché macOS richiede un'approvazione esplicita per ogni estensione che Defender per Endpoint su Mac installa nel dispositivo.
    
    Per ogni approvazione, seleziona **Apri preferenze di sicurezza** e quindi seleziona **Consenti** per consentire l'esecuzione dell'estensione di sistema.
 

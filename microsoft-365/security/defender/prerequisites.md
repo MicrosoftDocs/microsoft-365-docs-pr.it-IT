@@ -1,7 +1,7 @@
 ---
 title: Prerequisiti di Microsoft 365 Defender
 description: Informazioni sulle licenze, i requisiti hardware e software e altre impostazioni di configurazione per Microsoft 365 Defender
-keywords: requisiti, prerequisiti, hardware, software, browser, MTP, M365, licenza, E5, A5, EMS, acquisto
+keywords: requisiti, prerequisiti, hardware, software, browser, Microsoft 365 Defender, M365, licenza, E5, A5, EMS, acquisto
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -20,12 +20,12 @@ search.appverid:
 - MOE150
 - MET150
 ms.technology: m365d
-ms.openlocfilehash: f9904ecb5b9ab0a0f634903a5dc0ee3049d06b38
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 930a3de078d6d003241bb6fcd5df71bc9f301962
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51066746"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935606"
 ---
 # <a name="microsoft-365-defender-prerequisites"></a>Prerequisiti di Microsoft 365 Defender
 
@@ -45,7 +45,7 @@ Una di queste licenze consente di accedere alle funzionalità di Microsoft 365 D
 - Windows 10 Enterprise E5 o A5
 - Enterprise Mobility + Security (EMS) E5 o A5 
 - Office 365 E5 o A5
-- Microsoft Defender ATP
+- Microsoft Defender per endpoint
 - Microsoft Defender per identità 
 - Microsoft Cloud App Security
 - Defender per Office 365 (Piano 2)

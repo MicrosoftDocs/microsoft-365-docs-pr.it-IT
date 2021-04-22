@@ -1,7 +1,7 @@
 ---
 title: Passare a Microsoft Defender for Endpoint - Installazione
 description: Questa è la fase 2, installazione, per il passaggio a Microsoft Defender per Endpoint.
-keywords: migrazione, windows defender advanced threat protection, atp, edr
+keywords: migrazione, Microsoft Defender for Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,17 +21,17 @@ ms.topic: article
 ms.custom: migrationguides
 ms.date: 03/03/2021
 ms.reviewer: jesquive, chventou, jonix, chriggs, owtho
-ms.openlocfilehash: 6f2104e38bd55806e0873166b07a31aff46e9c24
-ms.sourcegitcommit: 847b0920016ae20c82a0501bda6019cd940482df
+ms.openlocfilehash: 656ee0bda769cb5ff2cdbe406db2a95e791210c1
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51484757"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935558"
 ---
 # <a name="switch-to-microsoft-defender-for-endpoint---phase-2-setup"></a>Passare a Microsoft Defender per Endpoint - Fase 2: installazione
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 |[![Fase 1: preparazione](images/phase-diagrams/prepare.png)](switch-to-microsoft-defender-prepare.md)<br/>[Fase 1: preparazione](switch-to-microsoft-defender-prepare.md) |![Fase 2: configurazione](images/phase-diagrams/setup.png)<br/>Fase 2: configurazione |[![Fase 3: Onboard3](images/phase-diagrams/onboard.png)](switch-to-microsoft-defender-onboard.md)<br/>[Fase 3: onboarding](switch-to-microsoft-defender-onboard.md) |
@@ -100,7 +100,7 @@ Se si usa Windows Server 2016 e si verificano problemi nell'abilitazione di Micr
 `mpcmdrun -wdenable`
 
 > [!TIP]
-> Ulteriore assistenza Vedi [Microsoft Defender Antivirus in Windows Server.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016)
+> Serve ulteriore assistenza? Vedi [Microsoft Defender Antivirus in Windows Server.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016)
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-on-windows-server"></a>Impostare Microsoft Defender Antivirus sulla modalità passiva in Windows Server
 

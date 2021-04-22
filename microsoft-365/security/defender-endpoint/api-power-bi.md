@@ -1,5 +1,5 @@
 ---
-title: Connessione delle API di Microsoft Defender ATP a Power BI
+title: Connessione delle API di Microsoft Defender for Endpoint a Power BI
 ms.reviewer: ''
 description: Crea un report power business intelligence (BI) sopra le API di Microsoft Defender per endpoint.
 keywords: api, api supportate, Power BI, report
@@ -16,19 +16,19 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 696782ca03e5494c3fc5ca08943d1079c5d78f8a
-ms.sourcegitcommit: 2a708650b7e30a53d10a2fe3164c6ed5ea37d868
+ms.openlocfilehash: 7c99267d75c89b3484d207cd763131e4bcc91527
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51167033"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935042"
 ---
 # <a name="create-custom-reports-using-power-bi"></a>Creare report personalizzati con Power BI
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 
@@ -141,10 +141,10 @@ Nel primo esempio viene illustrato come connettere Power BI all'API Advanced Hun
 Per ulteriori informazioni, vedere Modelli [di report di Power BI.](https://github.com/microsoft/MicrosoftDefenderATP-PowerBI)
 
 ## <a name="sample-reports"></a>Report di esempio
-Visualizzare gli esempi di report di Power BI di Microsoft Defender ATP. Per ulteriori informazioni, vedere [Sfogliare gli esempi di codice.](https://docs.microsoft.com/samples/browse/?products=mdatp)
+Visualizzare gli esempi di report di Microsoft Defender per Endpoint Power BI. Per ulteriori informazioni, vedere [Sfogliare gli esempi di codice.](https://docs.microsoft.com/samples/browse/?products=mdatp)
 
 
 ## <a name="related-topic"></a>Argomento correlato
 - [API defender per endpoint](apis-intro.md)
 - [Rilevazione avanzata API](run-advanced-query-api.md)
-- [Utilizzo di query OData](exposed-apis-odata-samples.md)
+- [Uso di query OData](exposed-apis-odata-samples.md)

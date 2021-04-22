@@ -1,7 +1,7 @@
 ---
 title: Tabella DeviceRegistryEvents nello schema di ricerca avanzata
 description: Informazioni sugli eventi del Registro di sistema su cui è possibile eseguire query dalla tabella DeviceRegistryEvents dello schema di ricerca avanzata
-keywords: ricerca avanzata, ricerca delle minacce, ricerca di minacce informatiche, microsoft threat protection, Microsoft 365, mtp, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, registryevents, Registro di sistema, DeviceRegistryEvents, chiave, sottochiave, valore
+keywords: ricerca avanzata, ricerca delle minacce, ricerca di minacce informatiche, Microsoft 365 Defender, Microsoft 365, m365, ricerca, query, telemetria, riferimento allo schema, kusto, tabella, colonna, tipo di dati, registryevents, Registro di sistema, DeviceRegistryEvents, chiave, sottochiave, valore
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: ca348d600c79cbfddd3328c702127eadb80774c8
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: a256282ffd8afabae7ffe6dab9a2b132e4fee475
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499764"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934869"
 ---
 # <a name="deviceregistryevents"></a>DeviceRegistryEvents
 

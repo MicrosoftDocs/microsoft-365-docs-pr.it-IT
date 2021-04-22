@@ -1,7 +1,7 @@
 ---
-title: Configurare e convalidare le esclusioni per Microsoft Defender per Endpoint per Mac
-description: Fornire e convalidare le esclusioni per Microsoft Defender per Endpoint per Mac. È possibile impostare esclusioni per file, cartelle e processi.
-keywords: microsoft, defender, atp, mac, esclusioni, analisi, antivirus
+title: Configurare e convalidare le esclusioni per Microsoft Defender per Endpoint su Mac
+description: Fornire e convalidare le esclusioni per Microsoft Defender per Endpoint su Mac. È possibile impostare esclusioni per file, cartelle e processi.
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, esclusioni, analisi, antivirus
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 7b5254e9b4289219a08730d736c8f9738e7a65f0
-ms.sourcegitcommit: 22505ce322f68a2d0ce70d71caf3b0a657fa838a
+ms.openlocfilehash: c014447e51e5c5fcb96924e5e98c62f478a32ea7
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "51861588"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935030"
 ---
 # <a name="configure-and-validate-exclusions-for-microsoft-defender-for-endpoint-on-macos"></a>Configurare e convalidare le esclusioni per Microsoft Defender for Endpoint in macOS
 

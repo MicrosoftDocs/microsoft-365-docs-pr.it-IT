@@ -1,7 +1,7 @@
 ---
-title: List software version distribution
+title: Elencare distribuzione versione software
 description: Recupera un elenco della distribuzione delle versioni software dell'organizzazione
-keywords: api, api del grafico, api supportate, get, distribuzione della versione software, api mdatp tvm
+keywords: api, api del grafico, api supportate, get, distribuzione della versione software, Api Di Microsoft Defender per Endpoint tvm
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,14 +14,14 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: article
-ms.openlocfilehash: 88f446ddd87768817099c1a206bab17aa8be5b7b
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: e47a97477500491f634e3f5134a32241bd68985b
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51198578"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935294"
 ---
-# <a name="list-software-version-distribution"></a>List software version distribution 
+# <a name="list-software-version-distribution"></a>Elencare distribuzione versione software 
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 

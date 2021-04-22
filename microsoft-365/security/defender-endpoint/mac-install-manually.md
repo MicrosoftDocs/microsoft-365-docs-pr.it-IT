@@ -1,7 +1,7 @@
 ---
 title: Distribuzione manuale per Microsoft Defender per Endpoint in macOS
 description: Installare Microsoft Defender for Endpoint in macOS manualmente, dalla riga di comando.
-keywords: microsoft, defender, atp, mac, installazione, distribuire, disinstallazione, intune, jamf, macos, catalina, mojave, high sierra
+keywords: microsoft, defender, Microsoft Defender for Endpoint, mac, installazione, distribuzione, disinstallazione, intune, jamf, macos, catalina, mojave, high sierra
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 0e8faf95df6691828558175412a1de8aa844d93f
-ms.sourcegitcommit: 3fe7eb32c8d6e01e190b2b782827fbadd73a18e6
+ms.openlocfilehash: d8458f1bacc6577d83878a94c24e649371d90038
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51688598"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935330"
 ---
 # <a name="manual-deployment-for-microsoft-defender-for-endpoint-on-macos"></a>Distribuzione manuale per Microsoft Defender per Endpoint in macOS
 
@@ -164,7 +164,7 @@ Per completare questo processo, devi disporre dei privilegi di amministratore ne
         curl -o ~/Downloads/eicar.com.txt https://www.eicar.org/download/eicar.com.txt
         ```
 
-    1. Il file dovrebbe essere stato messo in quarantena da Defender per Endpoint per Mac. Utilizzare il comando seguente per elencare tutte le minacce rilevate:
+    1. Il file dovrebbe essere stato messo in quarantena da Defender per Endpoint su Mac. Utilizzare il comando seguente per elencare tutte le minacce rilevate:
 
         ```bash
         mdatp threat list
@@ -207,7 +207,7 @@ Per completare questo processo, devi disporre dei privilegi di amministratore ne
 
     Il sistema dovrebbe visualizzare il messaggio seguente:
 
-    > Microsoft Defender ATP - file di test fai da toy macOS EDR<br/>
+    > Microsoft Defender for Endpoint - file di test fai da toy macOS EDR<br/>
     > L'avviso corrispondente sarà disponibile nel portale MDATP.
 
 11. Fare clic su **Apri**. 
@@ -228,4 +228,4 @@ Per [ulteriori informazioni su](mac-resources.md#logging-installation-issues) co
 
 ## <a name="uninstallation"></a>Disinstallazione
 
-Vedi [Disinstallazione](mac-resources.md#uninstalling) per informazioni dettagliate su come rimuovere Microsoft Defender per Endpoint per macOS dai dispositivi client.
+Vedi [Disinstallazione](mac-resources.md#uninstalling) per informazioni dettagliate su come rimuovere Microsoft Defender per Endpoint su macOS dai dispositivi client.

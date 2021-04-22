@@ -19,12 +19,12 @@ description: Usa Esplora risorse e i rilevamenti in tempo reale nel Centro sicur
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 7c601169d76fe92ac3038ccb25c5c50aa390f714
-ms.sourcegitcommit: 7ee50882cb4ed37794a3cd82dac9b2f9e0a1f14a
+ms.openlocfilehash: 0dcda063fc544c88157cff21b8a28f7a84a6a6fb
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/06/2021
-ms.locfileid: "51599888"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934706"
 ---
 # <a name="threat-explorer-and-real-time-detections"></a>Threat Explorer e rilevamenti in tempo reale
 
@@ -339,7 +339,7 @@ In questo esempio viene utilizzato Threat Explorer.
 
 4. Seleziona l'oggetto di qualsiasi messaggio nella scheda Posta > dettagli per visualizzare ulteriori informazioni sulla rappresentazione, ad esempio Dominio impersonato/Posizione rilevata.
 
-    **OPPURE** 
+    **OR** 
 
     Selezionare **Utente rappresentato e** digitare l'indirizzo di posta elettronica di un utente protetto nella casella di testo.
 
@@ -520,7 +520,7 @@ Oltre agli scenari descritti in questo articolo, sono disponibili molte più opz
 - [Visualizzare i file dannosi rilevati in SharePoint Online, OneDrive e Microsoft Teams](./mdo-for-spo-odb-and-teams.md)
 - [Ottenere una panoramica delle visualizzazioni in Esplora minacce (e rilevamenti in tempo reale)](threat-explorer-views.md)
 - [Report dello stato di protezione dalle minacce](view-email-security-reports.md#threat-protection-status-report)
-- [Indagine e reazione automatizzate in Microsoft Threat Protection](../defender/m365d-autoir.md)
+- [Analisi e risposta automatizzate in Microsoft 365 Defender](../defender/m365d-autoir.md)
 
 ## <a name="required-licenses-and-permissions"></a>Licenze e autorizzazioni obbligatorie
 

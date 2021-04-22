@@ -1,7 +1,7 @@
 ---
 title: Trovare ransomware con ricerca avanzata
 description: Usa la ricerca avanzata per individuare i dispositivi potenzialmente interessati da ransomware.
-keywords: ricerca avanzata, ransomware, ricerca delle minacce, ricerca di minacce informatiche, ricerca, query, telemetria, Microsoft 365, Microsoft Threat Protection, Microsoft 365 Defender
+keywords: ricerca avanzata, ransomware, ricerca delle minacce, ricerca di minacce informatiche, ricerca, query, telemetria, Microsoft 365, Microsoft 365 Defender
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 97f2174f74e7866f75b901cd1609341548a1a7c5
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: b6d88f5383cef052ac1b0871b4f0556ba3ba160e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498222"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934814"
 ---
 # <a name="hunt-for-ransomware"></a>Ricerca ransomware
 

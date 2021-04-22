@@ -17,12 +17,12 @@ ms.collection: M365-security-compliance
 ms.topic: article
 ms.date: 11/06/2020
 ms.technology: mde
-ms.openlocfilehash: 3a26951a796d72237f992e520e1b793654e467e3
-ms.sourcegitcommit: 55791ddab9ae484f76b30f0470eec8a4cf7b46d1
+ms.openlocfilehash: c4cdc80170b49a111f476d2d17222c41e2b5c55f
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51893402"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935366"
 ---
 # <a name="fix-unhealthy-sensors-in-microsoft-defender-for-endpoint"></a>Risolvere i sensori non integri in Microsoft Defender for Endpoint
 
@@ -66,7 +66,7 @@ Questo stato indica che la comunicazione tra il dispositivo e il servizio è lim
 Le azioni suggerite seguenti possono aiutare a risolvere i problemi relativi a un dispositivo non configurato correttamente con comunicazioni con problemi di comunicazione:
 
 - [Verificare che il dispositivo abbia una connessione Internet](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-device)</br>
-  Il sensore Window Defender ATP richiede Microsoft Windows HTTP (WinHTTP) per segnalare i dati del sensore e comunicare con il servizio Microsoft Defender for Endpoint.
+  Il sensore Microsoft Defender per endpoint richiede che Microsoft Windows HTTP (WinHTTP) segnali dati dei sensori e comunichi con il servizio Microsoft Defender per endpoint.
 
 - [Verificare la connettività client a Microsoft Defender per gli URL del servizio endpoint](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)</br>
   Verificare che la configurazione del proxy sia stata completata correttamente, che WinHTTP sia in grado di individuare e comunicare tramite il server proxy nell'ambiente e che il server proxy consenta il traffico verso gli URL del servizio Microsoft Defender for Endpoint.
@@ -78,7 +78,7 @@ Un dispositivo non configurato correttamente con stato "Nessun dato sensore" è 
 Seguire queste azioni per correggere i problemi noti relativi a un dispositivo non configurato correttamente con stato "Nessun dato sensore":
 
 - [Verificare che il dispositivo abbia una connessione Internet](troubleshoot-onboarding.md#troubleshoot-onboarding-issues-on-the-device)</br>
-  Il sensore Window Defender ATP richiede Microsoft Windows HTTP (WinHTTP) per segnalare i dati del sensore e comunicare con il servizio Microsoft Defender for Endpoint.
+  Il sensore Microsoft Defender per endpoint richiede che Microsoft Windows HTTP (WinHTTP) segnali dati dei sensori e comunichi con il servizio Microsoft Defender per endpoint.
 
 - [Verificare la connettività client a Microsoft Defender per gli URL del servizio endpoint](configure-proxy-internet.md#verify-client-connectivity-to-microsoft-defender-for-endpoint-service-urls)</br>
   Verificare che la configurazione del proxy sia stata completata correttamente, che WinHTTP sia in grado di individuare e comunicare tramite il server proxy nell'ambiente e che il server proxy consenta il traffico verso gli URL del servizio Microsoft Defender for Endpoint.

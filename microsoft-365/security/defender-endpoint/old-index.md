@@ -1,7 +1,7 @@
 ---
 title: Threat Protection (Windows 10)
 description: Microsoft Defender per endpoint è una piattaforma unificata per la protezione preventiva, il rilevamento post-violazione, l'indagine automatizzata e la risposta.
-keywords: protezione dalle minacce, Microsoft Defender Advanced Threat Protection, riduzione della superficie di attacco, protezione di nuova generazione, rilevamento e risposta degli endpoint, analisi e risposta automatizzate, esperti di minacce Microsoft, Punteggio microsoft sicuro per i dispositivi, ricerca avanzata, ricerca di minacce informatiche, protezione dalle minacce Web
+keywords: protezione dalle minacce, Microsoft Defender for Endpoint, riduzione della superficie di attacco, protezione di nuova generazione, rilevamento e risposta degli endpoint, analisi e risposta automatizzate, esperti delle minacce Microsoft, Punteggio microsoft sicuro per i dispositivi, ricerca avanzata, ricerca di minacce informatiche, protezione dalle minacce Web
 search.product: eADQiWindows 10XVcnh
 ms.prod: w10
 ms.mktglfcycl: deploy
@@ -14,12 +14,12 @@ manager: dansimp
 audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
-ms.openlocfilehash: 4206519d62feb82bbc297659e01b0cc3902b83dc
-ms.sourcegitcommit: 956176ed7c8b8427fdc655abcd1709d86da9447e
+ms.openlocfilehash: 3098c2786874650ad14d226beacd5ec760decef0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "51061163"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934934"
 ---
 # <a name="threat-protection"></a>Protezione dalle minacce
 [Microsoft Defender per endpoint](https://docs.microsoft.com/microsoft-365/security/defender-endpoint/microsoft-defender-advanced-threat-protection) è una piattaforma unificata per la protezione preventiva, il rilevamento post-violazione, l'indagine automatizzata e la risposta. Defender for Endpoint protegge gli endpoint dalle minacce informatiche, rileva attacchi avanzati e violazioni dei dati, automatizza gli incidenti di sicurezza e migliora la sicurezza.
@@ -52,24 +52,24 @@ ms.locfileid: "51061163"
 
 >[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4obJq]
 
-**[Gestione delle & delle minacce](next-gen-threat-and-vuln-mgt.md)**<br>
+**[Gestione di minacce e vulnerabilità.](next-gen-threat-and-vuln-mgt.md)**<br>
 Questa funzionalità incorporata usa un approccio basato sul rischio che cambia il gioco per l'individuazione, la definizione delle priorità e la correzione delle vulnerabilità degli endpoint e delle configurazioni erre.
 
 - [Panoramica & gestione delle vulnerabilità delle minacce](next-gen-threat-and-vuln-mgt.md)
 - [Introduzione](tvm-prerequisites.md)
 - [Accedere al proprio ruolo di sicurezza](tvm-dashboard-insights.md)
 - [Migliorare la sicurezza e ridurre i rischi](tvm-security-recommendation.md)
-- [Comprendere le vulnerabilità nei dispositivi](tvm-software-inventory.md)
+- [Capire le vulnerabilità nei dispositivi](tvm-software-inventory.md)
 
 <a name="asr"></a>
 
-**[Riduzione della superficie d'attacco](overview-attack-surface-reduction.md)**<br>
+**[Riduzione della superficie di attacco](overview-attack-surface-reduction.md)**<br>
 Il set di funzionalità di riduzione della superficie di attacco fornisce la prima linea di difesa nello stack. Assicurandosi che le impostazioni di configurazione siano impostate correttamente e che le tecniche di mitigazione degli exploit siano applicate, questo set di funzionalità resiste agli attacchi e allo sfruttamento.
 
 - [Isolamento basato su hardware](overview-hardware-based-isolation.md)
 - [Controllo delle applicazioni](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-application-control/windows-defender-application-control)
 - [Controllo dispositivo](https://docs.microsoft.com/windows/security/threat-protection/device-guard/introduction-to-device-guard-virtualization-based-security-and-windows-defender-application-control)
-- [Protezione da exploit](exploit-protection.md)
+- [Protezione dagli exploit](exploit-protection.md)
 - [Protezione di rete](network-protection.md), [protezione Web](web-protection-overview.md)
 - [Accesso controllato alle cartelle](controlled-folders.md)
 - [Firewall di rete](https://docs.microsoft.com/windows/security/threat-protection/windows-firewall/windows-firewall-with-advanced-security)
@@ -82,13 +82,13 @@ Per rafforzare ulteriormente il perimetro di sicurezza della rete, Microsoft Def
 
 - [Monitoraggio del comportamento](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-real-time-protection-microsoft-defender-antivirus)
 - [Protezione basata su cloud](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-protection-features-microsoft-defender-antivirus)
-- [Machine learning](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
+- [Apprendimento automatico](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/utilize-microsoft-cloud-protection-microsoft-defender-antivirus)
 - [Protezione URL](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-network-connections-microsoft-defender-antivirus)
 - [Servizio sandbox automatizzato](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/configure-block-at-first-sight-microsoft-defender-antivirus)
 
 <a name="edr"></a>
 
-**[Rilevamento endpoint e risposta](overview-endpoint-detection-response.md)**<br>
+**[Rilevamento e risposta di endpoint](overview-endpoint-detection-response.md)**<br>
 Vengono messe in atto funzionalità di rilevamento e risposta degli endpoint per rilevare, analizzare e rispondere ai tentativi di intrusione e alle violazioni attive. Con ricerca avanzata, hai uno strumento di ricerca delle minacce basato su query che consente all'utente di individuare in modo proattivo le violazioni e creare rilevamenti personalizzati.
 
 - [Avvisi](alerts-queue.md)
@@ -97,7 +97,7 @@ Vengono messe in atto funzionalità di rilevamento e risposta degli endpoint per
 - [Raccolta forense](respond-machine-alerts.md#collect-investigation-package-from-devices)
 - [Intelligence per le minacce](threat-indicator-concepts.md)
 - [Servizio di detonazione e analisi avanzato](respond-file-alerts.md#deep-analysis)
-- [Ricerca avanzata](advanced-hunting-overview.md)
+- [Rilevazione avanzata](advanced-hunting-overview.md)
     - [Rilevamenti personalizzati](overview-custom-detections.md)
 
 <a name="ai"></a>
@@ -106,8 +106,8 @@ Vengono messe in atto funzionalità di rilevamento e risposta degli endpoint per
 Oltre a rispondere rapidamente agli attacchi avanzati, Microsoft Defender for Endpoint offre funzionalità di analisi e correzione automatiche che consentono di ridurre il volume di avvisi in minuti su larga scala.
 
 - [Indagine e correzione automatizzate](automated-investigations.md)
-- [Visualizza dettagli e risultati delle indagini automatizzate](auto-investigation-action-center.md)
-- [Visualizzare e approvare le azioni di correzione](manage-auto-investigation.md)
+- [Visualizzare dettagli e risultati delle indagini automatizzate](auto-investigation-action-center.md)
+- [Visualizzare e approvare le azioni correttive](manage-auto-investigation.md)
 
 <a name="mte"></a>
 

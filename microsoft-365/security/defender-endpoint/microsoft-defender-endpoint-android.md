@@ -2,7 +2,7 @@
 title: Microsoft Defender per Endpoint su Android
 ms.reviewer: ''
 description: Descrive come installare e usare Microsoft Defender per Endpoint in Android
-keywords: microsoft, defender, atp, android, installazione, distribuire, disinstallazione, intune
+keywords: microsoft, defender, Microsoft Defender for Endpoint, android, installazione, distribuzione, disinstallazione, intune
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -19,12 +19,12 @@ ms.collection:
 - m365initiative-defender-endpoint
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 8a78fc7e07f89c2e13a698ee526403989f26dd65
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 35a43aa7bfcd9ed8c83d10c2ec44a974b03bca72
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768843"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935570"
 ---
 # <a name="microsoft-defender-for-endpoint-on-android"></a>Microsoft Defender per Endpoint su Android
 
@@ -62,7 +62,7 @@ Questo argomento descrive come installare, configurare, aggiornare e usare Defen
     -   Accesso al portale di Microsoft Defender Security Center.
 
         > [!NOTE]
-        > Microsoft Intune è l'unica soluzione MDM (Mobile Device Management) supportata per la distribuzione di Microsoft Defender per Endpoint in Android. Attualmente sono supportati solo i dispositivi registrati per l'applicazione di Defender per Endpoint per i criteri di conformità dei dispositivi android correlati in Intune. 
+        > Microsoft Intune è l'unica soluzione MDM (Mobile Device Management) supportata per la distribuzione di Microsoft Defender per Endpoint in Android. Attualmente sono supportati solo i dispositivi registrati per l'applicazione di Defender per Endpoint nei criteri di conformità dei dispositivi correlati ad Android in Intune. 
 
     -   Accedere [all'interfaccia di amministrazione di Microsoft Endpoint Manager](https://go.microsoft.com/fwlink/?linkid=2109431)per distribuire l'app ai gruppi di utenti registrati nell'organizzazione.
 
@@ -90,6 +90,6 @@ Le indicazioni su come configurare Le funzionalità di Microsoft Defender per En
 
 
 ## <a name="related-topics"></a>Argomenti correlati
-- [Distribuire Microsoft Defender per Endpoint su Android con Microsoft Intune](android-intune.md)
-- [Configurare Le funzionalità di Microsoft Defender per Endpoint su Android](android-configure.md)
+- [Distribuzione di Microsoft Defender per Endpoint per Android con Microsoft Intune](android-intune.md)
+- [Configurare funzionalità di Microsoft Defender per Endpoint su funzionalità Android](android-configure.md)
 

@@ -1,7 +1,7 @@
 ---
 title: Ottenere una formazione esperta sulla ricerca avanzata
 description: Formazione e indicazioni gratuite da esperti di ricerca avanzata
-keywords: ricerca avanzata, ricerca delle minacce, ricerca di minacce informatiche, protezione dalle minacce Microsoft, Microsoft 365, mtp, m365, ricerca, query, lingua, formazione, scenari, da base a avanzata, video, istruzioni dettagliate
+keywords: ricerca avanzata, ricerca delle minacce, ricerca di minacce informatiche, Microsoft 365 Defender, Microsoft 365, m365, ricerca, query, lingua, formazione, scenari, da base a avanzata, video, istruzioni dettagliate
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 3aee0a210b9381174650a4a817be510bcfaa00c2
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: aee2d3204a5d30005c15199baa3af08f5e583a33
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51498522"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935438"
 ---
 # <a name="get-expert-training-on-advanced-hunting"></a>Ottenere una formazione esperta sulla ricerca avanzata
 

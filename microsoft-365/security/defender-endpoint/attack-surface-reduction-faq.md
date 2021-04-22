@@ -1,6 +1,6 @@
 ---
 title: Domande frequenti sulla riduzione della superficie di attacco
-description: Risposte alle domande frequenti sulle regole di riduzione della superficie di attacco di Microsoft Defender ATP.
+description: Risposte alle domande frequenti sulle regole di riduzione della superficie di attacco di Microsoft Defender for Endpoint.
 keywords: Regole di riduzione della superficie di attacco, asr, fianchi, sistema di prevenzione delle intrusioni host, regole di protezione, anti-exploit, antiexploit, exploit, prevenzione delle infezioni, microsoft defender per endpoint
 search.product: eADQiWindows 10XVcnh
 ms.pagetype: security
@@ -16,19 +16,19 @@ manager: dansimp
 ms.custom: asr
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 71c3f89b721039753709d65daa135cad74a81711
-ms.sourcegitcommit: 7b8104015a76e02bc215e1cf08069979c70650ae
+ms.openlocfilehash: cf41dda4ff61137d6b60b2fc735227f15418477e
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "51476453"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935594"
 ---
 # <a name="attack-surface-reduction-frequently-asked-questions-faq"></a>Domande frequenti sulla riduzione della superficie di attacco
 
 [!INCLUDE [Microsoft 365 Defender rebranding](../../includes/microsoft-defender.md)]
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
 

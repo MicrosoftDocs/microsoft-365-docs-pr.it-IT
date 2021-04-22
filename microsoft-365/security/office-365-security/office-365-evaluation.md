@@ -1,7 +1,7 @@
 ---
 title: Valutare Microsoft Defender per Office 365
 description: Defender per Office 365 in modalità di valutazione crea i criteri di posta elettronica di Defender per Office 365 che registrano i verdetti, ad esempio malware, ma non agiscono sui messaggi.
-keywords: valutare Office 365, Microsoft Defender per Office 365, valutazione di Office 365, provare Office 365, Microsoft Defender, ATP
+keywords: valutare Office 365, Microsoft Defender per Office 365, valutazione di Office 365, provare Office 365, Microsoft Defender, Microsoft Defender for Endpoint
 f1.keywords:
 - NOCSH
 ms.author: dansimp
@@ -18,12 +18,12 @@ ms.collection:
 ms.custom: seo-marvel-apr2020
 ms.technology: mdo
 ms.prod: m365-security
-ms.openlocfilehash: 5862361dbd3a220e4b37400dbb6515af91eaa959
-ms.sourcegitcommit: 4acf613587128cae27e0fd470d1216b509775529
+ms.openlocfilehash: 86433ef505cd1b9afca100dc731f1885e22c8401
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/15/2021
-ms.locfileid: "51768807"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935138"
 ---
 # <a name="evaluate-microsoft-defender-for-office-365"></a>Valutare Microsoft Defender per Office 365
 

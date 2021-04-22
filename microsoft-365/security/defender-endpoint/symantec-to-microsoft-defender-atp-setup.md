@@ -1,7 +1,7 @@
 ---
 title: Da Symantec a Microsoft Defender per endpoint - Fase 2, configurazione
 description: Questa è la fase 2 del programma di installazione della migrazione da Symantec a Microsoft Defender per Endpoint
-keywords: migrazione, windows defender advanced threat protection, atp, edr
+keywords: migrazione, Microsoft Defender for Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,20 +21,20 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: 6d45e3aa0d3bf938e43201aca969613876ef1f31
-ms.sourcegitcommit: 8685b0f7d53c99577fa65144ab60295dfa60f46f
+ms.openlocfilehash: 755eb54f848e0cc5da3ca1b7b613a951c77d0b4c
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "51218713"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935234"
 ---
 # <a name="migrate-from-symantec---phase-2-set-up-microsoft-defender-for-endpoint"></a>Eseguire la migrazione da Symantec - Fase 2: configurare Microsoft Defender per Endpoint
 
 **Si applica a:**
-- [Microsoft Defender ATP](https://go.microsoft.com/fwlink/p/?linkid=2154037)
+- [Microsoft Defender per endpoint](https://go.microsoft.com/fwlink/p/?linkid=2154037)
 - [Microsoft 365 Defender](https://go.microsoft.com/fwlink/?linkid=2118804)
 
-|[![Fase 1: preparare](images/phase-diagrams/prepare.png)](symantec-to-microsoft-defender-atp-prepare.md)<br/>[Fase 1: preparare](symantec-to-microsoft-defender-atp-prepare.md) |![Fase 2: configurazione](images/phase-diagrams/setup.png)<br/>Fase 2: configurazione |[![Fase 3: onboard](images/phase-diagrams/onboard.png)](symantec-to-microsoft-defender-atp-onboard.md)<br/>[Fase 3: onboard](symantec-to-microsoft-defender-atp-onboard.md) |
+|[![Fase 1: preparazione](images/phase-diagrams/prepare.png)](symantec-to-microsoft-defender-atp-prepare.md)<br/>[Fase 1: preparazione](symantec-to-microsoft-defender-atp-prepare.md) |![Fase 2: configurazione](images/phase-diagrams/setup.png)<br/>Fase 2: configurazione |[![Fase 3: onboarding](images/phase-diagrams/onboard.png)](symantec-to-microsoft-defender-atp-onboard.md)<br/>[Fase 3: onboarding](symantec-to-microsoft-defender-atp-onboard.md) |
 |--|--|--|
 ||*Sei qui!* | |
 
@@ -87,7 +87,7 @@ Se si usa Windows Server 2016 e si verificano problemi nell'abilitazione di Micr
 `mpcmdrun -wdenable`
 
 > [!TIP]
-> Ulteriore assistenza Vedi [Microsoft Defender Antivirus in Windows Server 2016 e 2019.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016)
+> Serve ulteriore assistenza? Vedi [Microsoft Defender Antivirus in Windows Server 2016 e 2019.](https://docs.microsoft.com/windows/security/threat-protection/microsoft-defender-antivirus/microsoft-defender-antivirus-on-windows-server-2016)
 
 ### <a name="set-microsoft-defender-antivirus-to-passive-mode-on-windows-server"></a>Impostare Microsoft Defender Antivirus sulla modalità passiva in Windows Server
 

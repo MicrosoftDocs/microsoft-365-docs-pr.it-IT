@@ -1,7 +1,7 @@
 ---
 title: Prerequisiti per & autorizzazioni - gestione delle minacce e delle vulnerabilità
 description: Prima di iniziare a utilizzare la gestione delle minacce e delle vulnerabilità, assicurarsi di disporre delle relative configurazioni e autorizzazioni.
-keywords: prerequisiti & autorizzazioni di gestione delle vulnerabilità, prerequisiti per le autorizzazioni di gestione delle minacce e vulnerabilità, prerequisiti per le autorizzazioni MDATP TVM, gestione delle vulnerabilità
+keywords: prerequisiti & di gestione delle vulnerabilità, prerequisiti per le autorizzazioni di gestione delle minacce e vulnerabilità, prerequisiti per le autorizzazioni di Microsoft Defender for Endpoint TVM, gestione delle vulnerabilità
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -16,12 +16,12 @@ audience: ITPro
 ms.collection: M365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 1d9c3233f72541ccd0463eefef93bde5e7d9900f
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: 0df348e3a5564720468d95d7b23578f9dcad9294
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499957"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935186"
 ---
 # <a name="prerequisites--permissions---threat-and-vulnerability-management"></a>Prerequisiti per & autorizzazioni - gestione delle minacce e delle vulnerabilità
 

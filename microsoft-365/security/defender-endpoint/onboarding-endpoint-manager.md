@@ -1,7 +1,7 @@
 ---
 title: Onboarding con Microsoft Endpoint Manager
 description: Scopri come eseguire l'onboard in Microsoft Defender for Endpoint usando Microsoft Endpoint Manager
-keywords: onboarding, configurazione, distribuzione, distribuzione, gestore endpoint, mdatp, protezione avanzata dalle minacce, creazione della raccolta, risposta al rilevamento degli endpoint, protezione di nuova generazione, riduzione della superficie di attacco, microsoft endpoint manager
+keywords: onboarding, configurazione, distribuzione, distribuzione, endpoint manager, Microsoft Defender for Endpoint, creazione della raccolta, risposta di rilevamento degli endpoint, protezione di nuova generazione, riduzione della superficie di attacco, microsoft endpoint manager
 search.product: eADQiWindows 10XVcnh
 ms.prod: m365-security
 ms.mktglfcycl: deploy
@@ -18,12 +18,12 @@ ms.collection:
 - m365solution-scenario
 ms.topic: article
 ms.technology: mde
-ms.openlocfilehash: 9edcceca2f6cc7c2377eb388d7394a23dfbae99d
-ms.sourcegitcommit: 6f2288e0c863496dfd0ee38de754bd43096ab3e1
+ms.openlocfilehash: e744262cfd63383e69abf02be9fbf91d2d229db2
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "51186258"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935258"
 ---
 # <a name="onboarding-using-microsoft-endpoint-manager"></a>Onboarding con Microsoft Endpoint Manager
 
@@ -123,12 +123,12 @@ Nella sezione seguente verranno creati diversi criteri di configurazione.
 
 In primo luogo, un criterio di configurazione consente di selezionare i gruppi di utenti o dispositivi di cui eseguire l'onboarded in Defender for Endpoint:
 
-- [Rilevamento endpoint e risposta](#endpoint-detection-and-response) 
+- [Rilevamento e risposta di endpoint](#endpoint-detection-and-response) 
 
 Si continuerà quindi creando diversi tipi di criteri di sicurezza degli endpoint:
 
 - [Protezione di nuova generazione](#next-generation-protection)
-- [Riduzione della superficie d'attacco](#attack-surface-reduction--attack-surface-reduction-rules)
+- [Riduzione della superficie di attacco](#attack-surface-reduction--attack-surface-reduction-rules)
 
 ### <a name="endpoint-detection-and-response"></a>Rilevamento endpoint e risposta
 

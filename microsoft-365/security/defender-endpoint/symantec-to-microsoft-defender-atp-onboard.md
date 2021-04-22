@@ -1,7 +1,7 @@
 ---
 title: Da Symantec a Microsoft Defender per Endpoint - Fase 3, Onboarding
 description: Questa è la fase 3, onboarding, della migrazione da Symantec a Microsoft Defender per Endpoint
-keywords: migrazione, windows defender advanced threat protection, atp, edr
+keywords: migrazione, Microsoft Defender for Endpoint, edr
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -21,12 +21,12 @@ ms.topic: article
 ms.date: 03/03/2021
 ms.custom: migrationguides
 ms.reviewer: depicker, yongrhee, chriggs
-ms.openlocfilehash: b42a33d975e1368ad25d4a7102ef44bf8b9824a8
-ms.sourcegitcommit: 72ae1b49e7a3d3199272fcb4c39f5daec0d66f1a
+ms.openlocfilehash: 63c870c5682e963e6ab29160218c7405cabb0838
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "51698281"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935546"
 ---
 # <a name="migrate-from-symantec---phase-3-onboard-to-microsoft-defender-for-endpoint"></a>Eseguire la migrazione da Symantec - Fase 3: onboard a Microsoft Defender per Endpoint
 
@@ -62,7 +62,7 @@ I metodi di distribuzione variano a seconda del sistema operativo selezionato. P
 |Windows 10     |- [Criteri di gruppo](configure-endpoints-gp.md)<br/>- [Configuration Manager](configure-endpoints-sccm.md)<br/>- [Gestione dei dispositivi mobili (Intune)](configure-endpoints-mdm.md)<br/>- [Script locale](configure-endpoints-script.md) <br/><br/>**NOTA:** uno script locale è adatto per un modello di prova, ma non deve essere utilizzato per la distribuzione di produzione. Per una distribuzione di produzione, è consigliabile usare Criteri di gruppo, Microsoft Endpoint Configuration Manager o Intune.         |
 |- Windows 8.1 Enterprise <br/>- Windows 8.1 Pro <br/>- Windows 7 SP1 Enterprise <br/>- Windows 7 SP1 Pro     | [Microsoft Monitoring Agent](onboard-downlevel.md#install-and-configure-microsoft-monitoring-agent-mma-to-report-sensor-data-to-microsoft-defender-for-endpoint)<br/><br/>**NOTA:** Microsoft Monitoring Agent è ora l'agente di Azure Log Analytics. Per ulteriori informazioni, vedere [Panoramica dell'agente di log analytics.](https://docs.microsoft.com/azure/azure-monitor/platform/log-analytics-agent)        |
 |- Windows Server 2019 e versioni successive <br/>- Windows Server 2019 Core Edition <br/>- Windows Server versione 1803 e successive |- [Script locale](configure-endpoints-script.md) <br/>- [Criteri di gruppo](configure-endpoints-gp.md) <br/>- [Configuration Manager](/configure-endpoints-sccm.md) <br/>- [System Center Configuration Manager](configure-endpoints-sccm.md#onboard-devices-using-system-center-configuration-manager)<br/>- [Script di onboarding VDI per dispositivi non persistenti](configure-endpoints-vdi.md) <br/><br/>**NOTA:** uno script locale è adatto per un modello di prova, ma non deve essere utilizzato per la distribuzione di produzione. Per una distribuzione di produzione, è consigliabile usare Criteri di gruppo, Microsoft Endpoint Configuration Manager o Intune.    |
-|- Windows Server 2016 <br/>- Windows Server 2012 R2 <br/>- Windows Server 2008 R2 SP1  |- [Microsoft Defender Security Center](configure-server-endpoints.md)<br/>- [Centro sicurezza di Azure](https://docs.microsoft.com/azure/security-center/security-center-wdatp) |
+|- Windows Server 2016 <br/>- Windows Server 2012 R2 <br/>- Windows Server 2008 R2 SP1  |- [Microsoft Defender Security Center](configure-server-endpoints.md)<br/>- [Azure Defender](https://docs.microsoft.com/azure/security-center/security-center-wdatp) |
 |macOS<br/>- 10.15 (Catalina)<br/>- 10.14 (Mojave)<br/>- 10.13 (High Sierra)<br/><br/>iOS<br/><br/>Linux:<br/>- RHEL 7.2+<br/>- CentOS Linux 7.2+<br/>- Ubuntu 16 LTS o superiore<br/>- SLES 12+<br/>- Debian 9+<br/>- Oracle Linux 7.2 |[Aggiungere dispositivi non Windows](configure-endpoints-non-windows.md)  |
 
 ## <a name="run-a-detection-test"></a>Eseguire un test di rilevamento
@@ -96,7 +96,7 @@ Dopo aver installato i dispositivi dell'organizzazione in Microsoft Defender for
 Dopo aver disinstallato Symantec, il passaggio successivo consiste nel verificare che Microsoft Defender Antivirus e Microsoft Defender for Endpoint siano abilitati e in modalità attiva.
 
 A tale scopo, visitare il sito degli scenari dimostrativi di Microsoft Defender for Endpoint ( [https://demo.wd.microsoft.com](https://demo.wd.microsoft.com) ). Prova uno o più degli scenari dimostrativi in tale pagina, inclusi almeno gli scenari seguenti:
-- Protezione basata sul cloud
+- Protezione fornita dal cloud
 - Applicazioni potenzialmente indesiderate
 - Protezione di rete
 

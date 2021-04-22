@@ -2,7 +2,7 @@
 title: Distribuire Microsoft Defender per Endpoint in Linux con Puppet
 ms.reviewer: ''
 description: Descrive come distribuire Microsoft Defender per Endpoint su Linux usando Puppet.
-keywords: microsoft, defender, atp, linux, installazione, distribuire, disinstallazione, pupazzo, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installazione, distribuire, disinstallazione, pupazzo, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 413f8113d2f782c0a57d648a6db8178f2e522270
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: d54732134e91b87b2639634c365556beda5312b0
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903883"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934574"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-puppet"></a>Distribuire Microsoft Defender per Endpoint in Linux con Puppet
 
@@ -36,7 +36,7 @@ ms.locfileid: "51903883"
 
 > Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Questo articolo descrive come distribuire Defender for Endpoint per Linux usando Puppet. Una distribuzione corretta richiede il completamento di tutte le attività seguenti:
+Questo articolo descrive come distribuire Defender for Endpoint in Linux usando Puppet. Una distribuzione corretta richiede il completamento di tutte le attività seguenti:
 
 - [Scaricare il pacchetto di onboarding](#download-the-onboarding-package)
 - [Creare il manifesto di Pupazzo](#create-a-puppet-manifest)
@@ -45,7 +45,7 @@ Questo articolo descrive come distribuire Defender for Endpoint per Linux usando
 
 ## <a name="prerequisites-and-system-requirements"></a>Prerequisiti e requisiti di sistema
 
- Per una descrizione dei prerequisiti e dei requisiti di sistema per la versione software corrente, vedi [la pagina principale di Defender per Endpoint per Linux.](microsoft-defender-endpoint-linux.md)
+ Per una descrizione dei prerequisiti e dei requisiti di sistema per la versione software corrente, vedi [la pagina principale di Defender per Endpoint su Linux.](microsoft-defender-endpoint-linux.md)
 
 Inoltre, per la distribuzione di Puppet, devi avere familiarità con le attività di amministrazione di Puppet, avere Configurato Pupazzo e sapere come distribuire i pacchetti. Puppet ha molti modi per completare la stessa attività. Queste istruzioni presuppongono la disponibilità dei moduli di Pupazzo supportati, ad esempio *apt* per facilitare la distribuzione del pacchetto. L'organizzazione potrebbe utilizzare un flusso di lavoro diverso. Per informazioni dettagliate, fai riferimento alla documentazione [di Puppet.](https://puppet.com/docs)
 
@@ -79,7 +79,7 @@ Scaricare il pacchetto di onboarding da Microsoft Defender Security Center:
 
 ## <a name="create-a-puppet-manifest"></a>Creare un manifesto di Pupazzo
 
-Devi creare un manifesto di Pupazzo per la distribuzione di Defender per Endpoint per Linux nei dispositivi gestiti da un server Puppet. Questo esempio usa i moduli *apt* e *yumrepo* disponibili da puppetlabs e presuppone che i moduli siano stati installati nel server Puppet.
+Devi creare un manifesto Di pupazzo per distribuire Defender per Endpoint su Linux nei dispositivi gestiti da un server Puppet. Questo esempio usa i moduli *apt* e *yumrepo* disponibili da puppetlabs e presuppone che i moduli siano stati installati nel server Puppet.
 
 Crea le cartelle *install_mdatp/file* *e install_mdatp/manifesti* nella cartella dei moduli dell'installazione di Puppet. Questa cartella si trova in genere in */etc/puppetlabs/code/environments/production/modules* sul server Puppet. Copiare mdatp_onboard.jsfile creato in precedenza *nella cartella install_mdatp/files.* Creare un *file init.pp* contenente le istruzioni di distribuzione:
 
@@ -103,7 +103,7 @@ install_mdatp
 
 ### <a name="contents-of-install_mdatpmanifestsinitpp"></a>Contenuto di `install_mdatp/manifests/init.pp`
 
-Defender per Endpoint per Linux può essere distribuito da uno dei seguenti canali (indicato di seguito come *[canale]*): *insiders-fast,* *insiders-slow* o *prod*. Ognuno di questi canali corrisponde a un archivio software Linux.
+Defender per Endpoint su Linux può essere distribuito da uno dei seguenti canali (indicato di seguito come *[canale]*): *insiders-fast,* *insiders-slow* o *prod*. Ognuno di questi canali corrisponde a un archivio software Linux.
 
 La scelta del canale determina il tipo e la frequenza degli aggiornamenti offerti al dispositivo. I dispositivi *in Insiders-fast* sono i primi a ricevere aggiornamenti e nuove funzionalità, seguiti successivamente da *insider lenti* e infine *da prod*.
 
@@ -238,7 +238,7 @@ Se il prodotto non è integro, il codice di uscita (che può essere controllato 
 
 ## <a name="operating-system-upgrades"></a>Aggiornamenti del sistema operativo
 
-Durante l'aggiornamento del sistema operativo a una nuova versione principale, devi prima disinstallare Defender per Endpoint per Linux, installare l'aggiornamento e infine riconfigurare Defender per Endpoint per Linux nel dispositivo.
+Durante l'aggiornamento del sistema operativo a una nuova versione principale, devi prima disinstallare Defender per Endpoint in Linux, installare l'aggiornamento e infine riconfigurare Defender per Endpoint su Linux nel dispositivo.
 
 ## <a name="uninstallation"></a>Disinstallazione
 

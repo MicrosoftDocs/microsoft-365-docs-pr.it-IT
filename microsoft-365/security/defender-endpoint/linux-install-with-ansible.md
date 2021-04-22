@@ -2,7 +2,7 @@
 title: Distribuire Microsoft Defender per Endpoint su Linux con Ansible
 ms.reviewer: ''
 description: Descrive come distribuire Microsoft Defender for Endpoint su Linux usando Ansible.
-keywords: microsoft, defender, atp, linux, installazione, distribuire, disinstallazione, pupazzo, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
+keywords: microsoft, defender, Microsoft Defender for Endpoint, linux, installazione, distribuire, disinstallazione, pupazzo, ansible, linux, redhat, ubuntu, debian, sles, suse, centos
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -18,12 +18,12 @@ ms.collection:
 - m365-security-compliance
 ms.topic: conceptual
 ms.technology: mde
-ms.openlocfilehash: 697fcddad595c6883fe1e1f7258ca6154c48b94d
-ms.sourcegitcommit: 13ce4b31303a1a21ca53700a54bcf8d91ad2f8c1
+ms.openlocfilehash: 15ee02d90e81c48bf5ec718e669bf8f88f6424ff
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "51903905"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51934778"
 ---
 # <a name="deploy-microsoft-defender-for-endpoint-on-linux-with-ansible"></a>Distribuire Microsoft Defender per Endpoint su Linux con Ansible
 
@@ -36,7 +36,7 @@ ms.locfileid: "51903905"
 
 > Vuoi provare Defender per Endpoint? [Iscriversi per una versione di valutazione gratuita.](https://www.microsoft.com/microsoft-365/windows/microsoft-defender-atp?ocid=docs-wdatp-investigateip-abovefoldlink)
 
-Questo articolo descrive come distribuire Defender for Endpoint per Linux usando Ansible. Una distribuzione corretta richiede il completamento di tutte le attività seguenti:
+Questo articolo descrive come distribuire Defender for Endpoint su Linux usando Ansible. Una distribuzione corretta richiede il completamento di tutte le attività seguenti:
 
 - [Scaricare il pacchetto di onboarding](#download-the-onboarding-package)
 - [Creare file YAML ansible](#create-ansible-yaml-files)
@@ -45,7 +45,7 @@ Questo articolo descrive come distribuire Defender for Endpoint per Linux usando
 
 ## <a name="prerequisites-and-system-requirements"></a>Prerequisiti e requisiti di sistema
 
-Prima di iniziare, vedi la [pagina principale di Defender per Endpoint per Linux](microsoft-defender-endpoint-linux.md) per una descrizione dei prerequisiti e dei requisiti di sistema per la versione software corrente.
+Prima di iniziare, vedi la [pagina principale di Defender for Endpoint on Linux](microsoft-defender-endpoint-linux.md) per una descrizione dei prerequisiti e dei requisiti di sistema per la versione software corrente.
 
 Inoltre, per la distribuzione di Ansible, devi avere familiarità con le attività di amministrazione di Ansible, avere Ansible configurato e sapere come distribuire playbook e attività. Ansible ha molti modi per completare la stessa attività. Queste istruzioni presuppongono la disponibilità di moduli ansible supportati, ad esempio *apt* e *unarchive* per facilitare la distribuzione del pacchetto. L'organizzazione potrebbe utilizzare un flusso di lavoro diverso. Per informazioni dettagliate, fare riferimento alla documentazione relativa a [Ansible.](https://docs.ansible.com/)
 
@@ -129,7 +129,7 @@ Crea una sottoattività o file di ruolo che contribuiscono a un playbook o a un'
 
 - Aggiungi il repository e la chiave defender per endpoint.
 
-    Defender per Endpoint per Linux può essere distribuito da uno dei seguenti canali (indicato di seguito come *[canale]*): *insiders-fast,* *insiders-slow* o *prod*. Ognuno di questi canali corrisponde a un archivio software Linux.
+    Defender per Endpoint su Linux può essere distribuito da uno dei seguenti canali (indicato di seguito come *[canale]*): *insiders-fast,* *insiders-slow* o *prod*. Ognuno di questi canali corrisponde a un archivio software Linux.
 
     La scelta del canale determina il tipo e la frequenza degli aggiornamenti offerti al dispositivo. I dispositivi *in Insiders-fast* sono i primi a ricevere aggiornamenti e nuove funzionalità, seguiti successivamente da *insider lenti* e infine *da prod*.
 
@@ -271,7 +271,7 @@ Vedere [Registrare i problemi](linux-resources.md#log-installation-issues) di in
 
 ## <a name="operating-system-upgrades"></a>Aggiornamenti del sistema operativo
 
-Durante l'aggiornamento del sistema operativo a una nuova versione principale, devi prima disinstallare Defender per Endpoint per Linux, installare l'aggiornamento e infine riconfigurare Defender per Endpoint per Linux nel dispositivo.
+Durante l'aggiornamento del sistema operativo a una nuova versione principale, devi prima disinstallare Defender per Endpoint in Linux, installare l'aggiornamento e infine riconfigurare Defender per Endpoint su Linux nel dispositivo.
 
 ## <a name="references"></a>Riferimenti
 

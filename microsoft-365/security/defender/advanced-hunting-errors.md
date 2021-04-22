@@ -1,7 +1,7 @@
 ---
 title: Gestire gli errori nella ricerca avanzata per Microsoft 365 Defender
 description: Comprendere gli errori visualizzati quando si utilizza la ricerca avanzata
-keywords: ricerca avanzata, ricerca delle minacce, ricerca di minacce informatiche, microsoft threat protection, Microsoft 365, mtp, m365, ricerca, query, telemetria, schema, kusto, timeout, risorse, errori, errore sconosciuto, limiti, quota, parametro, allocazione
+keywords: ricerca avanzata, ricerca delle minacce, ricerca di minacce informatiche, Microsoft 365 Defender, Microsoft 365, m365, ricerca, query, telemetria, schema, kusto, timeout, risorse, errori, errore sconosciuto, limiti, quota, parametro, allocazione
 search.product: eADQiWindows 10XVcnh
 search.appverid: met150
 ms.prod: m365-security
@@ -20,12 +20,12 @@ ms.collection:
 - m365initiative-m365-defender
 ms.topic: article
 ms.technology: m365d
-ms.openlocfilehash: 83f2603b00062633ce61a3a8f364e33cbc5b029d
-ms.sourcegitcommit: 582555d2b4ef5f2e2494ffdeab2c1d49e5d6b724
+ms.openlocfilehash: d8d165f39c45bd235800dc951d50934b47dd7ff5
+ms.sourcegitcommit: a8d8cee7df535a150985d6165afdfddfdf21f622
 ms.translationtype: MT
 ms.contentlocale: it-IT
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "51499734"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "51935450"
 ---
 # <a name="handle-advanced-hunting-errors"></a>Gestire gli errori di ricerca avanzata
 
